@@ -1,0 +1,5 @@
+
+.md-content h2 { margin-top: 2rem; border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: 0.5rem; }
+.md-content blockquote { border-left: 3px solid var(--md-accent-fg-color); font-size: 0.9em; }
+.md-content small { opacity: 0.7; }
+.md-content a { color: var(--md-accent-fg-color); }

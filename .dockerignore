@@ -1,0 +1,6 @@
+site/
+.git
+.gitignore
+README.md
+*.epub
+Ch*.md
