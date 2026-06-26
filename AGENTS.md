@@ -1,6 +1,6 @@
 # AGENTS.md — AI Agent Instructions
 
-This project builds the《AI 第一书：从入门到大师》static site using MkDocs Material + Docker.
+This project builds the《AI 工程》static site using MkDocs Material + Docker.
 
 ## Project Structure
 
