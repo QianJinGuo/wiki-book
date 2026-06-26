@@ -1,7 +1,8 @@
 site_name: "AI 工程"
 site_description: "全球第一部基于 2784 篇一手 AI 材料系统编撰的开源读物"
-repo_url: "https://github.com/QianJinGuo/wiki"
-repo_name: "QianJinGuo/wiki"
+repo_url: "https://github.com/QianJinGuo/wiki-book"
+repo_name: "QianJinGuo/wiki-book"
+site_url: "https://qianjinguo.github.io/wiki-book/"
 
 theme:
   name: material
