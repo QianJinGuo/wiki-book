@@ -2,6 +2,7 @@
 """Generate references.md from wiki raw articles."""
 import os, re, yaml
 from pathlib import Path
+from urllib.parse import urlparse
 
 WIKI = Path(os.path.expanduser("~/wiki"))
 BOOK = Path(os.path.expanduser("~/wiki-book"))
@@ -22,8 +23,12 @@ def extract_refs():
             if not url:
                 url_match = re.search(r"URL:\s*(https?://\S+)", content)
                 url = url_match.group(1) if url_match else ""
-            if url:
-                url = url.rstrip("]")
+            if not url:
+                continue
+            url = url.rstrip("]")
+            domain = urlparse(url).netloc.replace("www.", "")
+            if not domain or domain in ("unknown", "N/A"):
+                continue
             pub_date = fm.get("publish_date", "")
             refs.append({"title": title, "url": url, "date": pub_date, "slug": f.stem})
         except:
@@ -31,11 +36,8 @@ def extract_refs():
     return refs
 
 def group_by_domain(refs):
-    from urllib.parse import urlparse
     domains = {}
     for r in refs:
-        if not r["url"]:
-            continue
         domain = urlparse(r["url"]).netloc.replace("www.", "")
         domains.setdefault(domain, []).append(r)
     return dict(sorted(domains.items(), key=lambda x: -len(x[1])))
@@ -71,10 +73,7 @@ def generate_markdown(refs):
         lines.append("")
         for a in articles:
             date_str = f" ({a['date']})" if a["date"] else ""
-            if a["url"]:
-                lines.append(f"- [{a['title']}]({a['url']}){date_str}")
-            else:
-                lines.append(f"- {a['title']}{date_str}")
+            lines.append(f"- [{a['title']}]({a['url']}){date_str}")
         lines.append("")
     
     return "\n".join(lines)

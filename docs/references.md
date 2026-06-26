@@ -1,7 +1,7 @@
 # 参考文献
 
-> 本书基于 **2068** 篇一手 AI 材料系统编撰。
-> 涵盖 **412** 个来源站点。
+> 本书基于 **1927** 篇一手 AI 材料系统编撰。
+> 涵盖 **410** 个来源站点。
 
 ---
 
@@ -18,8 +18,6 @@
 | mp.weixi | 19 |
 | thehackernews.com | 16 |
 | netflixtechblog.com | 16 |
-|  | 16 |
-| unknown | 15 |
 | arxiv.org | 14 |
 | developer.nvidia.com | 14 |
 | deepmind.google | 11 |
@@ -29,6 +27,8 @@
 | hackread.com | 8 |
 | juejin.cn | 8 |
 | blog.crewai.com | 7 |
+| vercel.com | 7 |
+| claude.com | 7 |
 
 ---
 
@@ -1284,43 +1284,6 @@
 - [thinking-fast-slow-for-a-personalized-notification-system](https://netflixtechblog.com/thinking-fast-slow-for-a-personalized-notification-system-4d89b26525cd?source=rss----2615bd06b42e---4)
 - [toward-more-controllable-ai-video-editing-an-early-research-](https://netflixtechblog.com/toward-more-controllable-ai-video-editing-an-early-research-exploration-at-netflix-eb8160ed60a2?source=rss----2615bd06b42e---4)
 - [vmaf-v1-good-is-not-good-enough](https://netflixtechblog.com/vmaf-v1-good-is-not-good-enough-60d7e4244ea8?source=rss----2615bd06b42e---4)
-
-### （16 篇）
-
-- [agentcore-payments-x402-agentic-commerce](N/A)
-- [amazon bedrock model inference serverless architecture case study](unknown)
-- [bedrock-agentcore-payment-x402-agent](N/A)
-- [firecracker-bedrock-agentcore-multi-tenant](N/A)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](hermes-skill-system-winty)
-- [Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account | Amazon Web Services](introducing-claude-platform-on-aws)
-- [Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？](james-multi-agent-collaboration-modes)
-- [LLMjacking: what these attacks are, and how to protect AI servers](llm-raiders-private-ai-server)
-- [微软 Agent Framework 全栈指南：从 Hello Agent 到生产托管（Python）](microsoft-agent-framework-python-zizhi)
-- [Mystery Microsoft bug leaker keeps the zero-days coming](microsoft-zero-days-researcher-disgruntled)
-- [openclaw-amazon-bedrock-eks-printer-qc](N/A)
-- [promptqueue-opengorilla-project-analysis-ljguo](file:///Users/jinguo/.hermes/cache/documents/doc_c5d589919d48_PROJECT_ANALYSIS.md)
-- [多轮 Agent 场景下，滴滴的 EAGLE-3 训推加速实践](taobao-smart-shopping-guide-agent-evaluation-pzmx)
-- [清华大学：循环工程 (Loop Engineering) 研究报告](assets/清华大学：循环工程研究报告.pdf)
-- [你缺的不是更好的 AI，而是一个&quot;装自己&quot;的系统](vayne-lw-personal-agent-system)
-- [wiki evolver skill system design gpt55 copilot session](file:///Users/jinguo/wiki/copilot/copilot-conversations/copilot-session-vault-evolves-GPT5.5.md)
-
-### unknown（15 篇）
-
-- [agent-evolution-four-stages-six-dimensions-aliyun](https://unknown/agent-evolution-four-stages-six-dimensions-aliyun)
-- [autoresearch-taxonomy-chengzihong-chengzihong](https://unknown/autoresearch-taxonomy-chengzihong-chengzihong)
-- [claude-code-html-artifact-workflow-ifanr](https://unknown/claude-code-html-artifact-workflow-ifanr)
-- [claude-code-vs-codex-context-architecture-02](https://unknown/claude-code-vs-codex-context-architecture-02)
-- [cli-anything-wechat-demo-conglin](https://unknown/cli-anything-wechat-demo-conglin)
-- [codex-major-update-appshots-goal-xinzhiyuan](https://unknown/codex-major-update-appshots-goal-xinzhiyuan)
-- [deepseek-code-harness-competitor-tina](https://unknown/deepseek-code-harness-competitor-tina)
-- [demis-hassabis-yc-interview-jiedaotixi](https://unknown/demis-hassabis-yc-interview-jiedaotixi)
-- [hermes-agent-v014-architecture-shugex](https://unknown/hermes-agent-v014-architecture-shugex)
-- [langsmith-engine-self-improving-agent-trace-based](https://unknown/langsmith-engine-self-improving-agent-trace-based)
-- [opd-revisiting-failure-modes-simple-fixes-storm](https://unknown/opd-revisiting-failure-modes-simple-fixes-storm)
-- [opencli-browser-automation-jingxing](https://unknown/opencli-browser-automation-jingxing)
-- [skillsui-enterprise-agent-middle-layer](https://unknown/skillsui-enterprise-agent-middle-layer)
-- [thisisgoingtobebig-public-stealth](https://unknown/thisisgoingtobebig-public-stealth)
-- [yann-dubois-openai-post-training-matt-turck-interview](https://unknown/yann-dubois-openai-post-training-matt-turck-interview)
 
 ### arxiv.org（14 篇）
 
