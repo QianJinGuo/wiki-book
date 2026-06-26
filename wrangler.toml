@@ -1,6 +1,6 @@
 name = "ai-engineering"
-main = "worker.js"
-compatibility_date = "2024-01-01"
+pages_build_output_dir = "./site"
 
-[site]
-bucket = "./site"
+[[r2_buckets]]
+binding = "SEARCH_INDEX"
+bucket_name = "ai-engineering-search"
