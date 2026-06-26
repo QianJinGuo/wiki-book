@@ -4,3 +4,4 @@ site/
 README.md
 *.epub
 Ch*.md
+node_modules/
