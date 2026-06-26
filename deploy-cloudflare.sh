@@ -1,5 +1,6 @@
 #!/bin/bash
-# Deploy to Cloudflare Pages (search index excluded, exceeds 25MB file limit)
+# Deploy to Cloudflare Pages
+# Search index served from R2 when binding configured, otherwise search disabled
 set -e
 
 cd "$(dirname "$0")"
@@ -7,7 +8,7 @@ cd "$(dirname "$0")"
 echo "Building site..."
 .venv/bin/python -m mkdocs build
 
-echo "Removing search index (39MB exceeds Pages 25MB limit)..."
+echo "Removing search index from static files (served via R2 Function)..."
 rm -f site/search/search_index.json
 
 echo "Deploying to Cloudflare Pages..."
