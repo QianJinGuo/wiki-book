@@ -1,0 +1,27 @@
+{
+  "name": "wiki-book",
+  "version": "1.0.0",
+  "description": "> 全球第一部基于 2784 篇一手 AI 材料系统编撰的开源读物。 > 从零基础到 AI 专家到 AI 科学家，博采众长，一路到底。",
+  "main": "worker.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QianJinGuo/wiki-book.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/QianJinGuo/wiki-book/issues"
+  },
+  "homepage": "https://github.com/QianJinGuo/wiki-book#readme",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.5.0"
+  }
+}
