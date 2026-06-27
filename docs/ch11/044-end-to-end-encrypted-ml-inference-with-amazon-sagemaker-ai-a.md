@@ -6,7 +6,7 @@
 
 # End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
 
-> **Source archive**: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.md)
+> **Source archive**: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.md)
 
 # End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
 

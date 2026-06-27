@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/工作流的-skill-怎么写从-7-个顶级-skill-中提炼的模式与最佳实践.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/工作流的-skill-怎么写从-7-个顶级-skill-中提炼的模式与最佳实践.md)
-从微信文章 [工作流的 Skill 怎么写？从 7 个顶级 Skill 中提炼的模式与最佳实践](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/工作流的-skill-怎么写从-7-个顶级-skill-中提炼的模式与最佳实践.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/工作流的-skill-怎么写从-7-个顶级-skill-中提炼的模式与最佳实践.md)
+从微信文章 [工作流的 Skill 怎么写？从 7 个顶级 Skill 中提炼的模式与最佳实践](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/工作流的-skill-怎么写从-7-个顶级-skill-中提炼的模式与最佳实践.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/aoNwyY5ZkCRMkZirn1rElQ

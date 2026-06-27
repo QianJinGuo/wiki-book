@@ -6,7 +6,7 @@
 
 # Anthropic vs DoW 与开源模型的 5-10 年权力均衡
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-anthropic-vs-dow-impacts-open-interconnects.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-anthropic-vs-dow-impacts-open-interconnects.md)
 
 ## 背景
 
@@ -142,7 +142,7 @@ Lambert 是**模型能力 + 开源生态**专家（Interconnects 主理人），
 
 ## 原始引用
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-anthropic-vs-dow-impacts-open-interconnects.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-anthropic-vs-dow-impacts-open-interconnects.md)
 
 ---
 

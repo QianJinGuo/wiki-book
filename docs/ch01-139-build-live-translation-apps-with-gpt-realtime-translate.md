@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.9KB | `entities/build-live-translation-apps-with-gpt-realtime-translate.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-live-translation-apps-with-gpt-realtime-translate.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-live-translation-apps-with-gpt-realtime-translate.md)
 
 ## 相关实体
 - `Openai Gpt Realtime Voice Models Qbitai` — GPT Realtime Voice 模型的详细信息，与 gpt-realtime-translate 直接相关

@@ -6,7 +6,7 @@
 
 # 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
 
 > 来源：code秘密花园 ConardLi。本文是 2026 年 Harness Engineering 中文科普里引用最广的一篇 — 同一模型、同一 Prompt，放在不同 Harness 里效果完全不同，决定差距的不是模型参数，而是模型外面那套运行控制系统。本文系统梳理「Prompt → Context → Harness」三次重心迁移，以及 Harness 的六层构成，最后给出 OpenAI/Anthropic 在真实产品中的工程实践。
 

@@ -13,7 +13,7 @@
 
 两者串联：先用 skill-creator 确认「Skill 能被触发」，再用 SkillSentry 验证「触发后行为正确」。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-skill-skill-creator-源码拆解.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-skill-skill-creator-源码拆解.md)
 
 ## 能力一：触发率测评（run_eval.py）
 

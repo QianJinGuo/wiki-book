@@ -19,7 +19,7 @@ Claude Code的Skills实践及利器推荐：工欲善其事，必先利其器
 - [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
 - [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-skills-superpowers-practice.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-skills-superpowers-practice.md)
 
 ## 深度分析
 

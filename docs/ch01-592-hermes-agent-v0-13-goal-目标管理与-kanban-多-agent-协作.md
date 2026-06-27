@@ -79,7 +79,7 @@ hermes doctor   # 检查环境
 - [Hermes Agent Kanban Deep Test By Wjjagi 2026](/ch04-418-hermes-agent/)
 - [Hermes Agent Self Evolution Tengxun](/ch04-418-hermes-agent/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
 
 - `Self-Evolving Agent`
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.4KB | `entities/claude-code-agentic-harness-design-patterns.md`
 
-[Claude Code Agentic Harness Design Patterns](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-agentic-harness-design-patterns.md)
+[Claude Code Agentic Harness Design Patterns](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-agentic-harness-design-patterns.md)
 
 ##  记忆与上下文
 这五个模式其实是一条逐步演进的路径：一开始只是给 Agent 一份固定的  ** 规则文件  ** ，然后按目录去限制这些规则的  ** 作用范围  ** ，再把记忆做成  ** 分层结构  ** ，接着在后台  ** 做清理  ** ，最后在上下文快满的时候对对话本身  ** 做压缩  ** 。

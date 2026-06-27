@@ -93,7 +93,7 @@ Mollick 发现，当他对 Gemini 3 提出模糊但有空间的改进建议（"b
 - [Sign Of The Future Gpt 55 Mollick](/ch01-269-gpt-5-5-sign-of-the-future-mollick-的模型-apps-harnesses-三层框架/)
 - [Bitter Lesson Garbage Can Mollick](/ch04-272-bitter-lesson-vs-garbage-can-组织理论视角下的-ai-采用/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/three-years-from-gpt-3-to-gemini-3.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/three-years-from-gpt-3-to-gemini-3.md)
 
 ---
 

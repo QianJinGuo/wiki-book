@@ -18,7 +18,7 @@ In this post, we explore how Claude Platform on AWS works and how you can start 
 - [Claude For Small Business](/ch01-030-introducing-claude-for-small-business/)
 - [Anthropic Claude Managed Agents Platform 2026](/ch01-677-anthropic/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-claude-platform-on-aws.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-claude-platform-on-aws.md)
 
 - [Anthropic出手Ai的内心独白曝光了](/ch01-677-anthropic/)
 - [Claude Code Context Engineering Anthropic Thariq](/ch01-677-anthropic/)

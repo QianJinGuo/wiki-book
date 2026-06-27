@@ -14,7 +14,7 @@
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航/)
 - [Hermes Agent K2 6 Multi Agent](/ch04-411-万字保姆级教程-hermes-kimi-k2-6-打造7x24h-agent军团/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md)
 
 ## 深度分析
 
@@ -48,7 +48,7 @@ OpenClaw 被误读的那层记忆观，本质上是把"记住更多"当成了目
 
 **观测记忆使用是底线。** 至少要能回答：哪些条目进了 prompt、哪些来自历史检索、哪些 skill 被触发、压缩前写了什么。不观测记忆使用，系统迟早会积累一堆没人敢删的过期状态。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md)
 
 ---
 

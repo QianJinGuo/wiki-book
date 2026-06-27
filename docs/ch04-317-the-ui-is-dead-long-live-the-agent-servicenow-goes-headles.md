@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
 
 ## 核心要点
 - 来源：newsletter (kilo.ai/blog.kilo.ai)
 - 评分：v=7 × c=8 = 56 (strong)
 - 主要内容：The UI is dead, long live the agent: ServiceNow goes headless and opens its platform
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
 
 ## 深度分析
 **1. Action Fabric 本质是"工作流即资产"战略的开放化**

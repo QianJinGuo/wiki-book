@@ -19,7 +19,7 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 - [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
 - [Aliyun Agentrun 2Line Integration](/ch04-319-用两行代码将-agentrun-集成到你的应用/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prompt-debugger-compare-templates-winty.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/prompt-debugger-compare-templates-winty.md)
 
 - [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](/ch01-570-openai发布新一代实时语音模型-能够像人说话一样进行推理-翻译和转录/)
 
@@ -45,7 +45,7 @@ Temperature 配置应作为 Prompt 调试的必修步骤，而非凭经验随手
 
 对于团队协作场景，应指定专人负责 Prompt 评审，并将高分 Prompt 的调试过程（输入、变体、评分）作为团队知识沉淀。 Prompt 调试器的终极价值是让团队从"依赖少数人直觉"变为"依赖可追溯的数据积累"，实现 Prompt 能力的组织化传承。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prompt-debugger-compare-templates-winty.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/prompt-debugger-compare-templates-winty.md)
 
 ---
 

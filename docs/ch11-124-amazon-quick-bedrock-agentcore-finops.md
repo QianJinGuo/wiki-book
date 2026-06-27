@@ -75,7 +75,7 @@ AgentCore Runtime 用 Cognito Authorizer 校验 JWT
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-quick-bedrock-agentcore-finops-chat.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-quick-bedrock-agentcore-finops-chat.md)
 
 - MOC
 ## 深度分析

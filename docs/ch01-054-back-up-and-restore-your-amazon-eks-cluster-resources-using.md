@@ -13,7 +13,7 @@
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](/ch11-197-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](/ch04-007-announcing-genkit-middleware-intercept-extend-and-harden/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
 
 ## 深度分析
 **1. Kubernetes-native 备份架构的优势**

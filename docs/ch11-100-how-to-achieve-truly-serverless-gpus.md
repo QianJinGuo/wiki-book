@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/modal-truly-serverless-gpus.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/modal-truly-serverless-gpus.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/modal-truly-serverless-gpus.md)
 
 ## 深度分析
 **GPU Allocation Utilization 是推理工作负载中最容易被忽视的效率维度，但它往往比 MFU 更直接地决定实际成本。** 文章提出了一个三级利用率的框架：Model FLOP/s Utilization（最严格，衡量算法算力利用效率）→ nvidia-smi "GPU utilization"（kernel 在 GPU 上运行的时间比例）→ GPU Allocation Utilization（付费 GPU 秒数中实际运行应用程序代码的比例）。第三个指标是大多数公司在推理场景下实际亏损最大的盲区：在非峰值时段，多数组织的 GPU Allocation Utilization 仅 10-20%，意味着 80-90% 的 GPU 费用在为空闲容量付费。 这个指标与 MFU 并不矛盾——MFU 衡量给定 GPU 的计算效率，Allocation Utilization 衡量 GPU 是否被有效分配给工作负载；即使 MFU 高达 90%，如果 GPU 在 70% 的时间内等待请求，Allocation Utilization 仍然只有 30%。
@@ -23,7 +23,7 @@
 **5. 在容量规划中，不要将 100% GPU Allocation Utilization 作为目标——这往往是故障的前兆。** Modal 指出 100% utilization 的系统没有任何容错边际：任何 GPU 故障、任何流量尖峰都会直接转化为 service degradation。建议在 buffer 中维护约 10-20% 的空闲容量作为"运营缓冲"，这在工程上是与维护额外牙刷或手机充电器相同的风险管理逻辑。
 **6. 对于 agentic 或 development 工作负载（而非纯 production serving），serverless GPU 的价值在于消除"开发/生产环境差距"。** Modal 的 buffer_container 功能允许用户维护预热的开发环境，开发者可以获得 prod-equivalent 的 GPU 环境而无需自己管理基础设施。这对于需要频繁创建/销毁 GPU 容器的 AI 开发者工作流有显著的开发效率提升。
 **7. 在跨云或跨可用区部署时，权重加载带宽是关键瓶颈（而不是 GPU 计算速度）。** Modal 指出在跨 AZ 或跨区域场景下，RDMA weight server 可以提供 >3× 带宽提升（相比对象存储），但代价是工程复杂度和成本显著增加。对于中小规模模型，优先确保 weights 加载在同 AZ 内完成，避免跨区域 weight transfer。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/modal-truly-serverless-gpus.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/modal-truly-serverless-gpus.md)
 
 ## 相关实体
 > 主题导航

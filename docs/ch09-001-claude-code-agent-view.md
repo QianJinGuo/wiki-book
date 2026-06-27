@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 7.8KB | `entities/claude-code-agent-view.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-agent-view-huashu.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-agent-view-huashu.md)
 
 # Claude Code Agent View
 **Agent View** 是 Anthropic 在 Claude Code v2.1.139 中推出的多 Agent 可视化面板，被其工程 lead Thariq 称为「给 Claude Code 的 tmux」。它解决的不是 AI 能力问题，而是**人类在多 Agent 工作流中的注意力分配问题**——当同时运行 N 个 Claude Code 实例时，人的调度能力成为瓶颈。[^1]
@@ -95,7 +95,7 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 - [2026年最值得关注的15款开发者工具深度解读](/ch01-001-2026年最值得关注的15款开发者工具深度解读/)
 - MOC
 

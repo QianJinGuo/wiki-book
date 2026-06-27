@@ -6,7 +6,7 @@
 
 # How we built an internal data analytics agent
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/github-internal-data-analytics-agent-copilot.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/github-internal-data-analytics-agent-copilot.md)
 
 ## 核心内容
 

@@ -6,7 +6,7 @@
 
 # alibabacloud-cms-manage Skill：阿里云 CMS 2.0 可观测接入的 AI Agent Skill 化
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-cms2-cli-skill-natural-language-observability.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-cms2-cli-skill-natural-language-observability.md)
 
 阿里云云原生团队 2026-06-07 发布 **`alibabacloud-cms-manage` Skill**——基于 Claude Code 的 AI Agent Skill 化方案，**将 6 步 CLI 接入流程封装为开箱即用的 Skill**，让用户用**一句自然语言**即可让 AI Agent 自动编排 CLI 命令完成可观测接入。
 

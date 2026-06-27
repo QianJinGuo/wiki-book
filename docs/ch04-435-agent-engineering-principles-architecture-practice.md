@@ -44,7 +44,7 @@ Agent Loop 的核心实现逻辑抽象后其实不到 20 行代码：
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](/ch02-prompt/)
 - MOC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-engineering-principles-architecture-practice.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-engineering-principles-architecture-practice.md)
 
 ---
 

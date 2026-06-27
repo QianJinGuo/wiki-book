@@ -186,7 +186,7 @@ PowerShell
 - [Using Amazon Bedrock Agentcore Openclaw Multi 3](/ch11-186-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 6](/ch11-165-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
 
 ---
 

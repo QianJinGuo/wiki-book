@@ -47,7 +47,7 @@ Gemma4Defense-2B 采用完全相同的训练语料和超参数，仅更换基模
 ## 相关实体
 > 主题导航
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cybersecqwen-4b.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cybersecqwen-4b.md)
 
 ## 相关实体
 >

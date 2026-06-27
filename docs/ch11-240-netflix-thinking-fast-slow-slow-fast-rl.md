@@ -8,7 +8,7 @@
 
 Netflix 将 Kahneman 的"快慢思维"理论应用于通知系统设计，构建了 **Slow Policy + Fast Policy** 的分层 RL 架构。Slow 层做周级频率规划，Fast 层做实时消息选择，解决了短期 engagement 与长期用户健康的矛盾。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thinking-fast-slow-for-a-personalized-notification-system.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thinking-fast-slow-for-a-personalized-notification-system.md)
 
 ## 核心问题
 

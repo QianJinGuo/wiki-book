@@ -119,7 +119,7 @@ Auditor + Optimizer 的双 workflow 设计值得借鉴：每日扫描 → 标记
 不能用单一指标。GitHub Contribution Check 的 +5% ET 回归就是因为只看 per-run 指标没发现工作负载漂移（41% small PRs → 9% small PRs）掩盖了真实效率提升。正确的监控面板需要：runs/day + LLM turns/run + tokens/call + output tokens/call 四指标并列。
 
 ## 引用
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/github-agentic-token-efficiency.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/github-agentic-token-efficiency.md)
 
 ## 相关实体
 - [Improving token efficiency in GitHub Agentic Workflows](/ch04-297-improving-token-efficiency-in-github-agentic-workflows/)

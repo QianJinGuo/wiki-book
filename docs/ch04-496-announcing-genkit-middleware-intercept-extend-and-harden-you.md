@@ -6,7 +6,7 @@
 
 # Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps 1778979925
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps-1778979925.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps-1778979925.md)
 
 ## 深度分析
 

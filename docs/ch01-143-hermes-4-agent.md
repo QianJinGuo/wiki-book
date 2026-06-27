@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐ | 3.8KB | `entities/hermes-four-agents-setup.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-four-agents-setup.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-four-agents-setup.md)
 
 ## 摘要
 我给Hermes配了4个Agent
 
 ## 关键要点
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-four-agents-setup.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-four-agents-setup.md)
 
 ## 相关实体
 > ai agent platforms topic map（已删除）

@@ -22,7 +22,7 @@ Kiro CLI、Agent SDK、Client Protocol ^[https://aws.amazon.com/cn/blogs/china/u
 1. **快速集成 IM 平台**：企业若需将 AI 能力嵌入飞书、钉钉等 IM 平台，优先考虑 ACP 桥接方案，而非从零实现对话管理、流式输出、上下文窗口等功能，预计可节省 70% 以上的集成开发量。 ^[https://aws.amazon.com/cn/blogs/china/using-kiro-cli-agent-client-protocol-build-ai-chat/]
 2. **Custom Agent 资产复用**：将团队常见场景（Code Review、文档助手、客服机器人）固化为可配置的 Custom Agent JSON 模板，新成员可直接复用而非重复造轮子，形成组织级 Agent 资产积累。 ^[https://aws.amazon.com/cn/blogs/china/using-kiro-cli-agent-client-protocol-build-ai-chat/]
 3. **工具调用标准化**：在构建 Agent 应用时，通过 MCP 等标准化协议管理外部工具，Agent 运行时只需关注任务规划和上下文管理，工具扩展性与运行时稳定性分离。 ^[https://aws.amazon.com/cn/blogs/china/using-kiro-cli-agent-client-protocol-build-ai-chat/]
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/using-kiro-cli-agent-client-protocol-build-ai-chat.md) ^[https://aws.amazon.com/cn/blogs/china/using-kiro-cli-agent-client-protocol-build-ai-chat/]
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/using-kiro-cli-agent-client-protocol-build-ai-chat.md) ^[https://aws.amazon.com/cn/blogs/china/using-kiro-cli-agent-client-protocol-build-ai-chat/]
 
 ## 相关实体
 - [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](/ch11-187-把-kiro-cli-当作-agent-sdk-一键订阅即可构建你的agent应用-亚马逊aws官方博客/)

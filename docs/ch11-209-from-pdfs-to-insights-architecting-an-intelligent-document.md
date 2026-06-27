@@ -57,7 +57,7 @@ AWS 在 2026-06 发布的一篇 IDP（智能文档处理）架构深度文章，
 
 ## 原文链接
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-pdfs-to-insights-architecting-an-intelligent-document-p.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-pdfs-to-insights-architecting-an-intelligent-document-p.md)
 
 ---
 

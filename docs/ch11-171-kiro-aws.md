@@ -32,7 +32,7 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 - [从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 | 亚马逊AWS官方博客](/ch11-036-从手动到智能-用-kiro-cli-opensearch-mcp-让每个人都成为-opensearch-专家-亚/)
 - [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](/ch11-187-把-kiro-cli-当作-agent-sdk-一键订阅即可构建你的agent应用-亚马逊aws官方博客/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/autoresearch-software-development.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/autoresearch-software-development.md)
 
 - [AIDLC范式: 平台驱动到大数据工程的范式迁移](/ch11-155-aws-aidl-范式迁移-platform-driven-data-engineering/)
 

@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](/ch05-001-impeccable/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-software3-vibe-coding-dead-agentic-engineering.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-software3-vibe-coding-dead-agentic-engineering.md)
 
 - MOC
 ## 深度分析

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.0KB | `entities/inngest-ai-in-production-the-2026-benchmark-report.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/inngest-ai-in-production-the-2026-benchmark-report.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/inngest-ai-in-production-the-2026-benchmark-report.md)
 
 ## 相关实体
 - AI Gateway production index

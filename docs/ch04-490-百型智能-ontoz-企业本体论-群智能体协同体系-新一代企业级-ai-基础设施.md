@@ -6,7 +6,7 @@
 
 # 百型智能 OntoZ：企业本体论 + 群智能体协同体系，新一代企业级 AI 基础设施
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/baixing-ontoz-enterprise-ontology-xinzhiyuan.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/baixing-ontoz-enterprise-ontology-xinzhiyuan.md)
 
 ## 深度分析
 

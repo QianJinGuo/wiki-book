@@ -6,7 +6,7 @@
 
 # Management as AI superpower
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/management-as-ai-superpower.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/management-as-ai-superpower.md)
 
 ## 摘要
 

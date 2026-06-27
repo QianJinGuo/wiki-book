@@ -17,7 +17,7 @@ OpenAI今天在API中推出三款全新音频模型，面向开发者开放。
 - [2 Year 25 Ai Projects Summary](/ch01-013-这个五一节我做了个总结-在-2-年多的创业里-我一共做了-25-个-ai-项目/)
 - [Openai Realtime Api Architecture](/ch01-084-openai-realtime-api-架构首次公开/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai发布新一代实时语音模型能够像人说话一样进行推理翻译和转录.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai发布新一代实时语音模型能够像人说话一样进行推理翻译和转录.md)
 
 ## 深度分析
 

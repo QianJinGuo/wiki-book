@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/hermes-self-improving-overview-winty.md`
 
-[Hermes Self Improving Overview Winty](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-self-improving-overview-winty.md)
+[Hermes Self Improving Overview Winty](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-self-improving-overview-winty.md)
 
 点击上方 前端Q，关注公众号
 回复加群，加入前端Q技术交流群

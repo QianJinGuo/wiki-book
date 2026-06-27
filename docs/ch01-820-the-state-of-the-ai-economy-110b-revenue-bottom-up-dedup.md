@@ -51,7 +51,7 @@ Approach:
 | Methodology | Bottom-up P&L modeling | Strategic vision | Policy analysis |
 | Actionability | Investment/market judgment | Enterprise architecture decisions | Regulatory/compliance |
 
-→ [source archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-state-of-the-ai-economy.md)
+→ [source archive](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-state-of-the-ai-economy.md)
 → [Nadella Token Capital](/ch01-228-纳德拉-token-资本-论-microsoft-ceo-的-ai-时代企业战略宣言/)
 → Dario Amodei Policy
 

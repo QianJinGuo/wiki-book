@@ -19,7 +19,7 @@
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
 - [Agent Context Management Architecture Patterns](/ch04-460-智能体编排层中的上下文管理架构/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-architecture-8-part-summary.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-architecture-8-part-summary.md)
 
 - MOC
 ## 深度分析

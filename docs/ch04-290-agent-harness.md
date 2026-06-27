@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/agent架构关键变化harness正在成为新后端.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent架构关键变化harness正在成为新后端.md)
-从微信文章 [Agent架构关键变化：Harness正在成为新后端](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent架构关键变化harness正在成为新后端.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent架构关键变化harness正在成为新后端.md)
+从微信文章 [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent架构关键变化harness正在成为新后端.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/VYZq3CzaQ72-gq1FlzniMw

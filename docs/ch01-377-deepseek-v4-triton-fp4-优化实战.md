@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/deepseek-v4-triton-fp4-optimization.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-triton-fp4-optimization.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-triton-fp4-optimization.md)
 
 ## 核心贡献
 1. **SM121 FP4 kernel 反面案例**：Marlin 在 SM121 上不是"精度低"而是"数据布局解释错误"，导致静默算错
@@ -56,7 +56,7 @@
 
 ## 与现有知识关联
 - [LBS-IntentBench](/ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准/) — 靳岩岩也是作者之一
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-triton-fp4-optimization.md) — raw articles 中的完整版本
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-triton-fp4-optimization.md) — raw articles 中的完整版本
 
 ## 相关实体
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](/ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai/)

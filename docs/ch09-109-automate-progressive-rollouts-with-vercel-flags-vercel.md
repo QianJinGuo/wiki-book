@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/automate-progressive-rollouts-with-vercel-flags-vercel.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/automate-progressive-rollouts-with-vercel-flags-vercel.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/automate-progressive-rollouts-with-vercel-flags-vercel.md)
 
 ## 相关实体
 > 主题导航

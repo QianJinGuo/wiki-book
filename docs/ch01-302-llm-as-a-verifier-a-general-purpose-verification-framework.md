@@ -10,7 +10,7 @@
 - 核心洞察：传统 LLM-as-a-Judge 因粗粒度评分（1-8 离散分数）导致 27% 平局率，无法区分相似轨迹
 - 方法通用性强，可即插即用到任意 Agent Harness（ForgeCode、Terminus-Kira 等）
 - 来自 Stanford AI Lab、UC Berkeley Sky Computing Lab、NVIDIA，2026 年 4 月发表
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-as-a-verifierageneral-purposeverific.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-as-a-verifierageneral-purposeverific.md)
 
 ## 背景与动机
 ### 标准 LLM-as-a-Judge 的平局困境

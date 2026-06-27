@@ -112,7 +112,7 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 新模型发布后，用单代理 baseline 跑相同任务，对比有/无各组件的表现。先移除 sprint contract，再移除 planner，最后移除 evaluator——按这个顺序测试，因为越核心的组件移除影响越大，应该最后测试。如果移除某组件后质量下降明显，重新加入；如果质量不变，说明该组件对这个版本已经过期，可以简化。这个过程不是一次性的，每逢 major model update 都应该重复一次。
 
 ## 相关
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-design-long-running-apps.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-design-long-running-apps.md)
 -  — 七环节控制回路 + Generator/Evaluator 框架
 - Agent Harness 上下文管理：工作集视角 — compaction 光谱 + session/harness/sandbox 解耦
 - [LangChain Anatomy of Agent Harness](/ch04-425-the-anatomy-of-an-agent-harness-解读/) — Ralph 循环 + 规划/自我验证双闭环

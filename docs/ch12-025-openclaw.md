@@ -11,7 +11,7 @@
 ## 相关实体
 
 - [discord 全平台端到端加密](/ch12-082-discord-全平台端到端加密/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-security-and-feature-enhancement-practices.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-security-and-feature-enhancement-practices.md)
 
 - MOC
 ## 摘要

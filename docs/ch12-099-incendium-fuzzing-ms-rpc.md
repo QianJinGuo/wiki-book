@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/incendium-fuzzing-ms-rpc.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/incendium-fuzzing-ms-rpc.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/incendium-fuzzing-ms-rpc.md)
 
 # Incendium MS-RPC Fuzzing
 Incendium: Microsoft RPC 接口深度模糊测试，漏洞发现方法论
@@ -28,7 +28,7 @@ Incendium 项目展示了 MS-RPC 模糊测试的方法论演进：通过递归�
 ## 相关资源
 - [Agent Memory 架构](/ch04-146-agent-memory-架构本质/)
 - [Claude Managed Agents 开发者指南](/ch01-329-claude-managed-agents-开发者指南/)
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/incendium-fuzzing-ms-rpc.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/incendium-fuzzing-ms-rpc.md)
 
 ## 相关实体
 

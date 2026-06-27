@@ -30,7 +30,7 @@
 - [5亿视频炼出全球最大gui开源数据集、推理token省71%小模型反超大模型——小米ai团队多篇论文入选icml 202](/ch01-771-5亿视频炼出全球最大gui开源数据集-推理token省71-小模型反超大模型-小米ai团队多篇论文入选icml-202/)
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](/ch01-730-吴恩达2026新课上线-3小时包教包会-零代码小白也能成为ai超级玩家/)
 - [直播预约 | 数据引擎：具身智能的下一个决胜局](/ch01-676-直播预约-数据引擎-具身智能的下一个决胜局/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-as-agent-harness-survey-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/code-as-agent-harness-survey-2026.md)
 
 - MOC
 ## 深度分析

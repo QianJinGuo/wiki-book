@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md`
 
-> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
-从微信文章 [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/redis之父下场给deepseek-v4单独造了一台推理引擎.md) 提取。
+> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
+从微信文章 [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/redis之父下场给deepseek-v4单独造了一台推理引擎.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ

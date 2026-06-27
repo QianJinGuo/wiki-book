@@ -16,7 +16,7 @@
 - [Introducing Claude For Small Business](/ch01-030-introducing-claude-for-small-business/)
 - [Wetesteddeepseekv4Proandflashagainstclau](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 
 ## 深度分析
 ### AEO vs GEO：概念溯源与实际差异

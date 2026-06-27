@@ -6,7 +6,7 @@
 
 # 我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-autoresearch-software-development-niaowo.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-autoresearch-software-development-niaowo.md)
 
 ## 深度分析
 

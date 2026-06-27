@@ -87,7 +87,7 @@ Xero 与 Anthropic 的合作验证了几个趋势：
 - Xero — 新西兰小企业会计平台
 
 ## 关联阅读
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 
 ## 相关实体
 - [Anthropic Claude Managed Agents 平台正式发布](/ch01-181-anthropic-claude-managed-agents-平台正式发布/)

@@ -18,7 +18,7 @@
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](/ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件/)
 - [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](/ch05-057-准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-ha/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-harness-deep-understanding.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-harness-deep-understanding.md)
 
 - [Skillx Zhejiang University Hyman](/ch01-584-浙大开源skillx-全自动构建agent技能知识库-即插即用提升10-性能/)
 ## 深度分析

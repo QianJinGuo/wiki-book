@@ -10,7 +10,7 @@
 
 - [hermes新顶流agent skills闭环系统深度解析](/ch04-357-hermes新顶流agent-skills闭环系统深度解析/)
 - [淘天营销中后台生码工作流最佳实践](/ch01-723-淘天营销中后台生码工作流最佳实践/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-long-running-governance-five-cards-ruofei.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-long-running-governance-five-cards-ruofei.md)
 
 - MOC
 ## 深度分析

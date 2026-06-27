@@ -227,7 +227,7 @@ WorkSpaces Applications 的 Auto Scaling 机制基于 대기时间（waiting tim
 AppStream 2.0 支持 SAML 2.0 federated authentication，企业员工使用统一的企业账号登录，通过 IdP 的 MFA 验证后直接进入培训环境，无需额外的账号创建和链接分发流程。
 
 ## 相关产品
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-workspaces-applications-quick-build.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-workspaces-applications-quick-build.md)
 - [Amazon WorkSpaces Applications 开发者文档](https://docs.aws.amazon.com/appstream2/latest/developerguide/)
 - [AppStream 2.0 定价](https://aws.amazon.com/cn/workspaces/applications/pricing/)
 - [Amazon CloudFormation](https://aws.amazon.com/cn/cloudformation/) — 基础设施即代码服务

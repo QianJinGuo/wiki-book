@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 5.8KB | `entities/how-i-moved-my-digital-stack-to-europe.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-i-moved-my-digital-stack-to-europe.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-i-moved-my-digital-stack-to-europe.md)
 
 ## 相关实体
 
@@ -64,7 +64,7 @@
 2. 例外管理很重要，不必追求 100% 迁移
 3. S3 兼容性等开放标准是欧洲生态系统的关键黏合剂
 4. 自托管工具（Matomo、Bugsink）在隐私和功能之间找到了新的平衡点
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-i-moved-my-digital-stack-to-europe.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-i-moved-my-digital-stack-to-europe.md)
 
 ---
 

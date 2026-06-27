@@ -10,7 +10,7 @@
 - 两种配置方式：Global ACL 文件（适合稳定的文件夹结构）和 Document-level 元数据文件（适合频繁变更的权限） 
 - IAM policy assignment 可控制哪些用户可在特定 S3 bucket 上创建知识库，防止绕过 ACL 
 - QuickSight Flows 支持在自动化工作流中执行 ACL 感知的内容过滤 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for-.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for-.md)
 
 ## 深度分析
 Amazon QuickSight 的文档级 ACL 功能代表了企业 AI 搜索系统中访问控制模型的一次重要演进。传统上，知识库层面的粗粒度权限管理适用于大多数团队场景，但对于需要处理敏感文档（如 HR、财务、法律等受监管数据）的组织而言，这种粗粒度已无法满足合规和数据治理要求。QuickSight 通过引入 S3 知识库的文档级 ACL 支持，将访问控制下沉到单个文档或 S3 prefix 级别，使用户能够在同一知识库内实现"部分用户可见 / 部分用户不可见"的差异化访问策略 。

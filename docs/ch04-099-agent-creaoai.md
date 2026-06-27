@@ -8,7 +8,7 @@
 
 > Source: AI 技术立文 WeChat MP, 翻译 CreaoAI 联合创始人, 2026-06-06. URL: https://mp.weixin.qq.com/s/dz7bA_0Ki--izCUKp_krUw
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-techliwen-creaoai-cloud-agent-infrastructure-two-lessons-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-techliwen-creaoai-cloud-agent-infrastructure-two-lessons-20260606.md)
 
 ## 摘要
 

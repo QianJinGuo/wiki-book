@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 3.5KB | `entities/saastr-who-winning-enterprise-ai.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/saastr-who-winning-enterprise-ai.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/saastr-who-winning-enterprise-ai.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/saastr-who-winning-enterprise-ai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/saastr-who-winning-enterprise-ai.md)
 
 ## 深度分析
 **企业 AI 市场格局的结构性变化**：
@@ -29,7 +29,7 @@
 - Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](/ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
 
 - [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
 

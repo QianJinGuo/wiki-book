@@ -42,7 +42,7 @@ Doocs 微信号整理：https://mp.weixin.qq.com/s/Uirhm4KubbKmhF0CQGteVQ
 - [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
 - [Ai Coding Guide Tmall Deep Dive](/ch09-012-ai-coding-guide-tmall-deep-dive/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hackernews-ai-coding-why-python-20260513.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hackernews-ai-coding-why-python-20260513.md)
 
 ## 深度分析
 

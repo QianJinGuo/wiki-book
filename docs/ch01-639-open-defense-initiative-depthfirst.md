@@ -66,7 +66,7 @@ Open Defense Initiative 本质上是一种**防御性不对称策略**：
 - [Cline releases open-source agent runtime SDK](/ch01-102-cline-releases-open-source-agent-runtime-sdk/)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
 - [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/opendefenseinitiativedepthfirst.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/opendefenseinitiativedepthfirst.md)
 - [open defense initiative](/ch01-625-open-defense-initiative/)
 
 ---

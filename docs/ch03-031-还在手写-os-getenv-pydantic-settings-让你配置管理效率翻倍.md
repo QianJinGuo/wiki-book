@@ -14,7 +14,7 @@
 - [Strands Agents Cloud Cost Optimizer](/ch04-128-基于-strands-agents-构建亚马逊云科技云成本分析与优化-ai-助手/)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](/ch03-025-别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/还在手写-osgetenvpydantic-settings-让你配置管理效率翻倍.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/还在手写-osgetenvpydantic-settings-让你配置管理效率翻倍.md)
 
 ## 深度分析
 

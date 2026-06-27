@@ -101,7 +101,7 @@ Anthropic 研究了大量 AI 在长任务中的失败案例，发现 3 个反复
 
 本文是**行业证据维度**的补充——把抽象框架落到三家不同行业公司的实际部署数据上。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/wall-not-model-harness-three-case-studies-stripe-deerflow-ant.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/wall-not-model-harness-three-case-studies-stripe-deerflow-ant.md)
 
 ## 深度分析
 

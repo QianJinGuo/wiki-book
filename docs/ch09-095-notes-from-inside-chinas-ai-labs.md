@@ -18,7 +18,7 @@ The Chinese companies building language models are set up as the perfect fast-fo
 - [Anthropic Claude Managed Agents Platform 2026](/ch01-181-anthropic-claude-managed-agents-平台正式发布/)
 - [News Sap Com Sap Unveils The Autonomous Enterprise](/ch04-148-sap-unveils-the-autonomous-enterprise-sap-sapphire-2026/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/notes-from-inside-chinas-ai-labs.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/notes-from-inside-chinas-ai-labs.md)
 
 ## 深度分析
 

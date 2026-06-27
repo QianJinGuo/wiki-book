@@ -17,7 +17,7 @@
 - [Ai Agents Inside Perimeter Hackernews](/ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know/)
 - [Tsinghua Agent Security Fangcun](/ch04-402-细思极恐-agent暗藏风险-清华团队打出组合拳-全链路一网打尽/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/canvas-breach-disrupts-schools-colleges-nationwide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/canvas-breach-disrupts-schools-colleges-nationwide.md)
 
 ## 深度分析
 

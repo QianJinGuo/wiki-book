@@ -150,7 +150,7 @@ Loka 的架构设计考虑了大规模部署的需求：
 
 ## 参考
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-loka-built-a-natural-low-latency-voice-agent-with-amazon.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-loka-built-a-natural-low-latency-voice-agent-with-amazon.md)
 
 ---
 

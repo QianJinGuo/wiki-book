@@ -11,7 +11,7 @@
 - [vietnam to develop domestic cloud](/ch01-143-vietnam-to-develop-domestic-cloud/)
 - [akamai acquires israeli ai browser security startup layerx f](/ch01-040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/why-use-app-level-auth-when-every-database-has-auth-splunk-e.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/why-use-app-level-auth-when-every-database-has-auth-splunk-e.md)
 
 ## 核心要点
 

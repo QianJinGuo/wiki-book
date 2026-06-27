@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/ds4c-deepseek-v4-antirez.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4.md)
 
 # ds4.c — antirez 的 DeepSeek V4 专属本地推理引擎
 ## 核心定位

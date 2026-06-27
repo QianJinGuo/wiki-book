@@ -18,7 +18,7 @@
 - [Anthropic Pm Jess Yan Managed Agents](/ch04-348-anthropic-pm-jess-yan-managed-agents/)
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](/ch01-830-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-demystifying-evals-for-ai-agents.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-demystifying-evals-for-ai-agents.md)
 
 - MOC
 ## 深度分析

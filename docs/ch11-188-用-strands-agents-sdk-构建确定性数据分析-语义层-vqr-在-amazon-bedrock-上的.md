@@ -39,7 +39,7 @@ Strands Agent SDK、Amazon Bedrock、AgentCore
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](/ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚/)
 - [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](/ch11-043-amazon-bedrock-agentcore-为部署可信人工智能代理增加了质量评估和策略控制-亚马逊aws官方博/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md)
 
 - [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](/ch11-139-基于bedrock-agentcore-strands构建企业级智能搜索平台实践-亚马逊aws官方博客/)
 

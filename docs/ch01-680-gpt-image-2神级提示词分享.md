@@ -21,7 +21,7 @@ A crisp, printmaking-like aesthetic with bold outlines and natural deformation. 
 - [Useful Memories Become Faulty When Continuously Updated By Llms](/ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l/)
 - [Build Live Translation Apps With Gpt Realtime Translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-image-2神级提示词分享.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-image-2神级提示词分享.md)
 
 - MOC
 ## 深度分析

@@ -78,7 +78,7 @@ OpenAI、Google、Meta FAIR 的研究部门正在变成高级 AI 人才的中转
 - [Microsoft Agent Framework Python Full Guide Zizhi](/ch01-585-微软-agent-framework-全栈指南-从-hello-agent-到生产托管-python/)
 - [Kimi Work Codex Vibe Working Paradigm Shift](/ch01-159-kimi-work-通用-agent-战场从云端迁移到本地/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai.md)
 
 ---
 

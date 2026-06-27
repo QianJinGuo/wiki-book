@@ -15,7 +15,7 @@
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](/ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g/)
 - [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-open-sources-rampart-clarity.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-open-sources-rampart-clarity.md)
 
 ## 深度分析
 

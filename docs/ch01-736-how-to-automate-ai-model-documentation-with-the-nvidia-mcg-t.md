@@ -11,7 +11,7 @@
 - [stealing passwords via html injection under a strict csp](/ch09-114-stealing-passwords-via-html-injection-under-a-strict-csp/)
 - [reducing container cold start times using soci index on dlam](/ch01-823-reducing-container-cold-start-times-using-soci-index-on-dlam/)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](/ch01-692-大模型可控新突破-steering-机制-评估体系与开源落地/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 
 - MOC
 ## 深度分析

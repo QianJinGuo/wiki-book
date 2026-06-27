@@ -48,7 +48,7 @@ microVM 的临时性（空闲超时销毁）与用户工作区持久化需求之
 - [Aws Bedrock Agentcore Identity Security](/ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构/)
 - MOC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-multi-1.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-multi-1.md)
 
 ---
 

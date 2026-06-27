@@ -12,7 +12,7 @@
 
 Amazon Bedrock AgentCore Web Search 以全托管 MCP 兼容方式为 AI Agent 提供实时网页搜索能力。底层是 Amazon 自建的数百亿文档索引，持续分钟级刷新，查询流量不离开 AWS。定价 $7/1,000 次查询。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-web-search-on-amazon-bedrock-agentcore.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-web-search-on-amazon-bedrock-agentcore.md)
 
 ## 核心要点
 

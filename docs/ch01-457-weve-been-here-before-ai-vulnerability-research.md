@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/weve-been-here-before-ai-vulnerability-research.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/weve-been-here-before-ai-vulnerability-research.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/weve-been-here-before-ai-vulnerability-research.md)
 
 ## 摘要
 Title: We've Been Here Before: Decompilers, Fuzzers, and Now AI
@@ -22,7 +22,7 @@ Lately, the same conversation keeps coming up with colleagues, students, and fel
 - 评分：value=7, confidence=8, product=56
 
 ## 链接
-- [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/weve-been-here-before-ai-vulnerability-research.md)
+- [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/weve-been-here-before-ai-vulnerability-research.md)
 
 ## 深度分析
 **1. "VR 已死"论的历史先例：每个工具时代都重复出现**

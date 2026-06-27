@@ -16,7 +16,7 @@ Cybersecurity reporter
 - [Down Fall Of Bug Bounties](/ch12-064-the-down-fall-of-bug-bounties/)
 - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-zero-days-researcher-disgruntled.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-zero-days-researcher-disgruntled.md)
 
 ## 深度分析
 

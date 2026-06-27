@@ -6,7 +6,7 @@
 
 # Latest open artifacts (#21): Open model bonanza! Gemma 4, DeepSeek V4, Kimi K2.6, MiMo 2.5, GLM-5.1 & others. On CAISI's V4 assessment.
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md)
 
 > **Core insight**: CAISI V4 评估使用 IRT（Item Response Theory）方法论对开放模型进行 Elo 评分，但其结果受限于三个 benchmark 的异常值（CTF-Archive-Diamond、PortBench、ARC-AGI-2），且评估 harness（bash+for-loop）与模型实际训练环境（Claude Code/OpenCode）严重不匹配，导致能力对比系统性失真。Interconnects 两位作者对此持不同观点——Florian 认为开放前沿模型与闭源替代品的真实性能差距更小，Nathan 认为差距更大但基准测试同样不完美。
 
@@ -76,7 +76,7 @@ IRT 校准后的得分更能反映模型的真实能力，减少了"简单题目
 - [Wetesteddeepseekv4Proandflashagainstclau](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
 
 ## 相关引用
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md)
 
 ---
 

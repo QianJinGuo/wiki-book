@@ -7,7 +7,7 @@
 ## 核心要点
 - AI product announcement
 - Technical release details
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pytorch212releaseblogpytorch.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pytorch212releaseblogpytorch.md)
 
 ## 相关实体
 > 主题导航

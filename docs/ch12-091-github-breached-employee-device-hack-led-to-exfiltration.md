@@ -16,7 +16,7 @@
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](/ch12-056-grafana-github-token-breach-led-to-codebase-download-and-ext/)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)
 
 - MOC
 ## 深度分析

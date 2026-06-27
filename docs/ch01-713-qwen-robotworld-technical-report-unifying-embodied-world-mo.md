@@ -28,7 +28,7 @@ Authors:[Jie Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+J
 
 ## 相关
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/arxiv-2606.17030.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/arxiv-2606.17030.md)
 
 ---
 

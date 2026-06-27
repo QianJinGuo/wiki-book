@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 9.1KB | `entities/5-things-to-know-about-the-clarity-act.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5-things-to-know-about-the-clarity-act.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5-things-to-know-about-the-clarity-act.md)
 
 ## 概述
 
