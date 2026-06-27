@@ -69,13 +69,13 @@ Nathan 的核心论点：
 ## 关联与延伸
 
 - **同主题 deep entity**：
-  - [How Far Behind Are Open Models 2026](../ch01-393-how-far-behind-are-open-models-lesswrong-2026-05) — 能力差距量化
-  - [Chinese Ai Lab Insights Nathan](../ch01-317-所有实验室都怕字节-所有人都在夸deepseek-美国研究员36小时中国ai行) — Chinese labs 深度分析
-  - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi) — 训练后差距分析
+  - [How Far Behind Are Open Models 2026](/ch01-393-how-far-behind-are-open-models-lesswrong-2026-05/) — 能力差距量化
+  - [Chinese Ai Lab Insights Nathan](/ch01-317-所有实验室都怕字节-所有人都在夸deepseek-美国研究员36小时中国ai行/) — Chinese labs 深度分析
+  - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/) — 训练后差距分析
 - **方法论文**：
   - Nathan 的 [open-models-in-perpetual-catch-up](https://www.interconnects.ai/p/open-models-in-perpetual-catch-up) — 能力差距基础
   - [How much does distillation really matter](https://www.interconnects.ai/p/how-much-does-distillation-really) — distillation 实证
-- **Agent 时代背景**：[Opus 4 7 Launch Claude Code Best Practices Wechat](../ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践) — Claude Code 是闭源主导 RL 时代的样本
+- **Agent 时代背景**：[Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/) — Claude Code 是闭源主导 RL 时代的样本
 
 ## 上线状态与发布信息
 

@@ -109,9 +109,9 @@ Agent 系统的特殊性：行为**从 prompt + tool + data + MCP + model 的交
 
 ## 与相关 entity 的关系
 
-- `[Agent Harness 12 Components 7 Decisions](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)` — 复杂多 Agent 系统的设计参考（harness 12 组件 + 7 决策），本实体的下游
-- `[Agent Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey/)` — Harness Engineering 综述，提供"harness 是什么"的理论基础
-- `[Agent Development Crawl Walk Run Crewai Iterative](../ch04-166-agent-开发应小步快跑-第一个-agent-只需做一件事-哪怕很烂/)` — 当前实体（CrewAI 实证方法论）
+- `[Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架//)` — 复杂多 Agent 系统的设计参考（harness 12 组件 + 7 决策），本实体的下游
+- `[Agent Harness Engineering Survey 2026](/ch04-069-agent-harness-engineering-a-survey//)` — Harness Engineering 综述，提供"harness 是什么"的理论基础
+- `[Agent Development Crawl Walk Run Crewai Iterative](/ch04-166-agent-开发应小步快跑-第一个-agent-只需做一件事-哪怕很烂//)` — 当前实体（CrewAI 实证方法论）
 
 ## 深度分析
 

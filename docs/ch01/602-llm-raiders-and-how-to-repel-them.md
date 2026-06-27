@@ -38,7 +38,7 @@ LLM-Scanner 工具横跨 7 家云提供商、8 个国家，表明攻击者拥有
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-raiders-and-how-to-repel-them.md)
 
 ## 相关实体
-- [LLM raiders and how to repel them](../ch01-589-llm-raiders-and-how-to-repel-them/)
+- [LLM raiders and how to repel them](/ch01-589-llm-raiders-and-how-to-repel-them//)
 
 ---
 

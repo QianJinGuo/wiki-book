@@ -12,15 +12,15 @@
 - AI 钓鱼比传统钓鱼有效性高 24%（Hoxhunt）
 - LLM 可将钓鱼成本降低 95% 以上，同时保持同等成功率（Harvard Business Review）
 ## 相关实体
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
-- [Ai Agents Inside Perimeter Hackernews](../ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know/)
-- [Llm Raiders Private Ai Server](../ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se/)
-- [Bluekit](../ch12-075-meet-bluekit-the-ai-powered-all-in-one-phishing-kit/)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g/)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](/ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi//)
+- [Ai Agents Inside Perimeter Hackernews](/ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know//)
+- [Llm Raiders Private Ai Server](/ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se//)
+- [Bluekit](/ch12-075-meet-bluekit-the-ai-powered-all-in-one-phishing-kit//)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](/ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 
-- [Interpol Operation Ramz Mena Cybercrime](../ch12-039-interpol-operation-ramz-mena-cybercrime-networks/)
+- [Interpol Operation Ramz Mena Cybercrime](/ch12-039-interpol-operation-ramz-mena-cybercrime-networks//)
 - MOC
 ## 深度分析
 ### 攻击规模的几何级增长

@@ -53,15 +53,15 @@ The old tools will not vanish quickly. They have distribution, habits, enterpris
 The more interesting future is not only agents operating apps. It is applications designed so agents, humans, and existing tools can all work with the same underlying objects. Not because every app disappears but because the source of truth may move.
 
 ## 相关实体
-- [From System Of Record To System Of Intelligence](../ch04-253-from-system-of-record-to-system-of-intelligence/)
-- [Notebook Lm](../ch01-017-notebooklm/)
-- [Claude Code Founder Harness 100 Lines](../ch01-487-最新claude-code创始人-编程已经解决了-harness重要性持续降低-cc未来只有100行代码/)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch01-830-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
-- [Thehackernews Fake Openai Privacy Filter](../ch01-656-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra/)
+- [From System Of Record To System Of Intelligence](/ch04-253-from-system-of-record-to-system-of-intelligence//)
+- [Notebook Lm](/ch01-017-notebooklm//)
+- [Claude Code Founder Harness 100 Lines](/ch01-487-最新claude-code创始人-编程已经解决了-harness重要性持续降低-cc未来只有100行代码//)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](/ch01-830-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t//)
+- [Thehackernews Fake Openai Privacy Filter](/ch01-656-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/interface-commoditization-ai-era.md)
 
-- [Playerzero Request Demo](../ch03-041-book-a-demo-see-playerzero-in-action/)
+- [Playerzero Request Demo](/ch03-041-book-a-demo-see-playerzero-in-action//)
 ## 深度分析
 
 **1. 软件类别的"界面史"真相：一切类别都是历史偶然**

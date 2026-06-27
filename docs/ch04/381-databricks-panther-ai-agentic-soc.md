@@ -77,7 +77,7 @@ Panther 是 Databricks 第三个安全相关收购：
 
 ## 相关主题
 - Agent Harness Context Management — Agentic 工作流的上下文管理
-- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/) — 工程化框架设计方法论
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) — 工程化框架设计方法论
 
 ---
 

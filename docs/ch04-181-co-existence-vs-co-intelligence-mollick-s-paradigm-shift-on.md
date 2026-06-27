@@ -30,7 +30,7 @@ Ethan Mollick（沃顿商学院教授、One Useful Thing 作者）2024 年出版
 ## 三个独有贡献（不应合并到现有 entity）
 
 1. **从「Co-Intelligence」到「Co-Existence」的范式命名** — Mollick 给出了 AI 协作模式跃迁的可引用学术命名，便于后续讨论参考。Co-Intelligence（2024）是 prompt-loop；Co-Existence（2026）是 accept/reject-loop——人类不再是 prompt-engineer 而是 output-curator。
-2. **Anthropic 80% / 8x 一手叙述 + 17x SSRN 论文互证** — 这是 2026-06 出现的**首次由著名 AI 研究者引用的双源基准**，把"AI 写大多数代码"从传闻升级为可引用的工程现实。区别于 [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch01-362-ai科研超越人类-prime-intellect递归自改进实验) 的"自举训练"叙事，Mollick 强调的是**"AI 在生产环境直接生产商品代码"**的工程落地（与 harness/skill 体系互补但维度不同）。
+2. **Anthropic 80% / 8x 一手叙述 + 17x SSRN 论文互证** — 这是 2026-06 出现的**首次由著名 AI 研究者引用的双源基准**，把"AI 写大多数代码"从传闻升级为可引用的工程现实。区别于 [Ai Recursive Self Improvement Nanogpt Prime Intellect](/ch01-362-ai科研超越人类-prime-intellect递归自改进实验/) 的"自举训练"叙事，Mollick 强调的是**"AI 在生产环境直接生产商品代码"**的工程落地（与 harness/skill 体系互补但维度不同）。
 3. **"AI-as-reader / AI-as-gatekeeper" 问题** — Mollick 提出并亲身实验：随着 AI 越来越多地"读我的内容并决定是否推荐给人类用户"，**作者需要思考如何让 AI 喜欢自己的工作**。他从"隐藏 prompt injection（白底白字指令）"升级到"为 AI 单独写一版内容（co-existence.ai/for-ai）"——这是一个新生的 web 设计模式（"for-ai page"）。
 
 ## 「for-AI Page」模式（web 设计新兴模式）
@@ -112,8 +112,8 @@ Co-Existence 模式下，人类的核心技能不再是 prompt engineering，而
 
 ## 相关主题
 
-- [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch01-362-ai科研超越人类-prime-intellect递归自改进实验) — 同一时间窗口的 AI 自主研究叙事（自举训练 vs 自主编码生产）— 互补视角
-- [Stochastic Parrot Deep Mystery Llms](../ch01-572-stochastic-parrot-deep-mystery-llms) — 引述 Mollick 关于"next-word prediction 是否模拟思维"的挑战 — 同一作者不同议题
+- [Ai Recursive Self Improvement Nanogpt Prime Intellect](/ch01-362-ai科研超越人类-prime-intellect递归自改进实验/) — 同一时间窗口的 AI 自主研究叙事（自举训练 vs 自主编码生产）— 互补视角
+- [Stochastic Parrot Deep Mystery Llms](/ch01-572-stochastic-parrot-deep-mystery-llms/) — 引述 Mollick 关于"next-word prediction 是否模拟思维"的挑战 — 同一作者不同议题
 - Anthropic 80% / 8x 报告原始 URL: https://www.anthropic.com/institute/recursive-self-improvement
 - Ethan Mollick Twitter: https://x.com/emollick
 - 新书《Co-Existence》pre-order: https://co-existence.ai/

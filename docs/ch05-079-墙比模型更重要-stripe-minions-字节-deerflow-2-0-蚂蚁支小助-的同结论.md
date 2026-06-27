@@ -94,10 +94,10 @@ Anthropic 研究了大量 AI 在长任务中的失败案例，发现 3 个反复
 
 本文的核心贡献是**3 个具体行业案例**（Stripe/DeerFlow/支小助）的对照分析 + "墙比模型" 统一论断 + 3 阶段 AI 工程进化史。已有 entities 覆盖的角度：
 
-- [Harness Engineering 概念框架](../ch05-041-harness-engineering-概念框架/) — 抽象框架（Compaction vs Reset, Generator + Evaluator 分离）
-- [Agent Harness Engineering: A Survey](../ch04-069-agent-harness-engineering-a-survey) — 学术 7 层 ETCLOVG 分类法
-- [AHE：Agentic Harness Engineering](../ch04-212-ahe-agentic-harness-engineering) — 复旦/北大自动优化 Harness
-- [长周期 Agent：Ralph Loop → 可接管 Harness](../ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness) — Ralph Loop 漂移治理 + 5 张卡框架
+- [Harness Engineering 概念框架](/ch05-041-harness-engineering-概念框架//) — 抽象框架（Compaction vs Reset, Generator + Evaluator 分离）
+- [Agent Harness Engineering: A Survey](/ch04-069-agent-harness-engineering-a-survey/) — 学术 7 层 ETCLOVG 分类法
+- [AHE：Agentic Harness Engineering](/ch04-212-ahe-agentic-harness-engineering/) — 复旦/北大自动优化 Harness
+- [长周期 Agent：Ralph Loop → 可接管 Harness](/ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness/) — Ralph Loop 漂移治理 + 5 张卡框架
 
 本文是**行业证据维度**的补充——把抽象框架落到三家不同行业公司的实际部署数据上。
 
@@ -107,7 +107,7 @@ Anthropic 研究了大量 AI 在长任务中的失败案例，发现 3 个反复
 
 ### 1. 三家案例揭示的"墙"本质上是风险管理
 
-Stripe、字节、蚂蚁三家做法各异，但核心机制都指向同一个底层逻辑：**把 AI 的不确定性边界做死**。Stripe 的重试上限、DeerFlow 的独立隔离空间、支小助的分工评审，都是在给 AI 的失控风险设置物理边界。这与传统的 [Generator + Evaluator 分离](../ch05-041-harness-engineering-概念框架/) 原则一脉相承——让一个模块负责生产，另一个模块负责判断，而不是让同一个 AI 既生产又自评。
+Stripe、字节、蚂蚁三家做法各异，但核心机制都指向同一个底层逻辑：**把 AI 的不确定性边界做死**。Stripe 的重试上限、DeerFlow 的独立隔离空间、支小助的分工评审，都是在给 AI 的失控风险设置物理边界。这与传统的 [Generator + Evaluator 分离](/ch05-041-harness-engineering-概念框架//) 原则一脉相承——让一个模块负责生产，另一个模块负责判断，而不是让同一个 AI 既生产又自评。
 
 ### 2. Anthropic 失败模式的三层结构性根源
 

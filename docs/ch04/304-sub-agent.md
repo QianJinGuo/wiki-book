@@ -54,20 +54,20 @@ Teams 模式的工程挑战尤为突出。死锁检测（A 等 B，B 等 A）需
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/four-sub-agent-patterns-2026.md)
 
 ## 相关实体
-- [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路/)
-- [OpenCLAW 完全指南](../ch04-199-openclaw-完全指南/)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
-- [基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills/)
+- [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路//)
+- [OpenCLAW 完全指南](/ch04-199-openclaw-完全指南//)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布//)
+- [基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统//)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](/ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills//)
 
-- [Agent Workflows](../ch04-306-agent-workflows/)
+- [Agent Workflows](/ch04-306-agent-workflows//)
 - Hermes+Kimi K2.6 多Agent军团实战教程
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
-- [Garry Tan](../ch01-497-garry-tan/)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格//)
+- [Garry Tan](/ch01-497-garry-tan//)
 - Hermes Agent 新手上手指南
 - Multi-Agent Systems
-- [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图/)
-- [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice/)
+- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图//)
+- [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice//)
 - MOC
 
 ---

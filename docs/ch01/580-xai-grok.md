@@ -18,11 +18,11 @@ xAI 解散但 Grok 还活着。2026年5月6日马斯克官宣 xAI 解散并入 S
 - Grok 从独立公司旗舰产品转为 SpaceXAI 内部业务线，不再承担为公司估值续命的任务
 - 马斯克需要 Grok 作为 X 平台 AI 能力的核心，也是与 OpenAI/Anthropic 博弈的筹码
 ## 相关实体
-- [Xai Grok Musk Training New Model Wechat](../ch04-182-xai-grok-musk-training-new-model-wechat/)
+- [Xai Grok Musk Training New Model Wechat](/ch04-182-xai-grok-musk-training-new-model-wechat//)
 - Xai Dissolved Grok Colossus2 Analysis
-- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
-- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch01-055-快手首个打工人agent来了-工作秒变桌面软件-零代码-不烧token/)
-- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](../ch01-168-chatgpt-官宣-26-位未来之星-他们是-穿墙少年-街头摊贩-盲童的朋友/)
+- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了//)
+- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](/ch01-055-快手首个打工人agent来了-工作秒变桌面软件-零代码-不烧token//)
+- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](/ch01-168-chatgpt-官宣-26-位未来之星-他们是-穿墙少年-街头摊贩-盲童的朋友//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xai-shutdown-grok-still-alive.md)
 
@@ -43,7 +43,7 @@ xAI 解散但 Grok 还活着。2026年5月6日马斯克官宣 xAI 解散并入 S
 5. **关注 Grok 接下来的 benchmark 表现**：马斯克说"快了"但他在 Tesla FSD 和 Cybertruck 上也说过类似话。真正判断 Grok 能不能翻盘，要看基于 Colossus 2 训练的新模型能不能在权威 benchmark 上拿出对得起硬件投入的成绩。
 
 ## 相关实体
-- [xAI解散，但Grok还没死！马斯克声称新模型正在训练](../ch01-568-xai解散但grok还活着/)
+- [xAI解散，但Grok还没死！马斯克声称新模型正在训练](/ch01-568-xai解散但grok还活着//)
 
 ---
 

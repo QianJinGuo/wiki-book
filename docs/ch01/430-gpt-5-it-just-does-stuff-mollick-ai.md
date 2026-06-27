@@ -95,9 +95,9 @@ Vibecoding 新范式下，最有效的交互不是给出详细规格说明，而
 
 ## 相关主题
 
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch04-181-co-existence-vs-co-intelligence-mollick-s-paradigm-shift-on/) — Co-Existence 范式（Mollick 后续的完整框架，同一作者）
-- [Management As Ai Superpower Mollick](../ch04-273-管理作为-ai-超级能力-mollick-的-agentic-work-delegation-方程/) — 管理作为 AI 超级能力（同一作者，同期不同议题）
-- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick/) — 模型/应用/harness 选型指南（同一作者，2026-02 更新）
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](/ch04-181-co-existence-vs-co-intelligence-mollick-s-paradigm-shift-on//) — Co-Existence 范式（Mollick 后续的完整框架，同一作者）
+- [Management As Ai Superpower Mollick](/ch04-273-管理作为-ai-超级能力-mollick-的-agentic-work-delegation-方程//) — 管理作为 AI 超级能力（同一作者，同期不同议题）
+- [Guide Ai Agents Models Apps Harnesses Mollick](/ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick//) — 模型/应用/harness 选型指南（同一作者，2026-02 更新）
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-5-it-just-does-stuff.md)
 
 ---

@@ -25,11 +25,11 @@
 4. **充分利用内置工具减少自研成本** — Browser Run（浏览器控制）、Email（收件箱）、`call_service`（私有服务连接）、`image_generate`（Workers AI 图像生成）等内置工具均已与 Claude Agent 深度集成，启用即可使用，大幅降低自建工具链的工程投入。
 5. **通过自定义工具扩展构建差异化能力** — fork 仓库后，仅需在 `custom-tools.js` 中用 Zod 定义输入 schema 并实现 `run` 函数，即可将 R2 存储、Cloudflare Workers、第三方 API 等任何服务包装为 Agent 工具。这种低代码扩展方式适合在通用能力之上构建垂直场景的竞争壁垒。
 ## 相关实体
-- [Anthropic Puts Claude Agents On A Meter Across Its](../ch01-070-anthropic-puts-claude-agents-on-a-meter-across-its-subscript/)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch01-234-claude-managed-agents-新更新-专属云-模式-把agent的手放回企业内部/)
-- [Claude Managed Agents](../ch04-421-claude-managed-agents/)
-- [Anthropic Claude Managed Agents Platform Launch](../ch04-335-anthropic-claude-managed-agents-platform-launch/)
-- [Anthropic Claude Managed Agents Platform 2026](../ch01-181-anthropic-claude-managed-agents-平台正式发布/)
+- [Anthropic Puts Claude Agents On A Meter Across Its](/ch01-070-anthropic-puts-claude-agents-on-a-meter-across-its-subscript//)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](/ch01-234-claude-managed-agents-新更新-专属云-模式-把agent的手放回企业内部//)
+- [Claude Managed Agents](/ch04-421-claude-managed-agents//)
+- [Anthropic Claude Managed Agents Platform Launch](/ch04-335-anthropic-claude-managed-agents-platform-launch//)
+- [Anthropic Claude Managed Agents Platform 2026](/ch01-181-anthropic-claude-managed-agents-平台正式发布//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/announcing-claude-managed-agents-on-cloudflare.md)
 

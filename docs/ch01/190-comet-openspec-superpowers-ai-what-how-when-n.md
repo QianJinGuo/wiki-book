@@ -395,22 +395,22 @@ artifacts:
 
 ## 十一、与其他三器组合的关系
 
-- **vs [三器合一：gstack + Superpowers + OpenSpec](../ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战/)**（AgentBuff, 2026-05-12）：第三器不同（gstack vs Comet），视角也不同（AgentBuff 偏「HARD-GATE 串联」+「TDD 与 /review 互补」，术哥偏「源码机制 + 平台适配 + 工程取舍」）。术哥文章更深入到 Shell 脚本 + YAML 状态机 + 9 平台 Hook + SHA256 追踪的具体实现
-- **vs [Superpowers 深度拆解](../ch09-088-superpowers-深度解读-2-rule-gate-hook-与-iron-law-方法论/)**（开源圆桌）：单项目深度。本实体是三项目系统视角
-- **vs [Hermes Agent Skills 源码分析](../ch04-447-hermes-agent-skills-源码级拆解-3级渐进加载-6步调度-5维安全扫描/)**（术哥本人）：术哥对 Hermes 的源码分析风格一致（57 行 Shell、Markdown 为主、平台适配）。本实体是术哥对外部三项目（Comet/OpenSpec/Superpowers）的源码分析
-- **vs [OpenSpec 规范驱动开发 SDD](../ch05-023-openspec-规范驱动开发-sdd-框架-proposal-design-tasks-specs-四类文档意图锁/)**：OpenSpec 单项目视角（Trae 原生支持）。本实体是三项目流水线视角
+- **vs [三器合一：gstack + Superpowers + OpenSpec](/ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战//)**（AgentBuff, 2026-05-12）：第三器不同（gstack vs Comet），视角也不同（AgentBuff 偏「HARD-GATE 串联」+「TDD 与 /review 互补」，术哥偏「源码机制 + 平台适配 + 工程取舍」）。术哥文章更深入到 Shell 脚本 + YAML 状态机 + 9 平台 Hook + SHA256 追踪的具体实现
+- **vs [Superpowers 深度拆解](/ch09-088-superpowers-深度解读-2-rule-gate-hook-与-iron-law-方法论//)**（开源圆桌）：单项目深度。本实体是三项目系统视角
+- **vs [Hermes Agent Skills 源码分析](/ch04-447-hermes-agent-skills-源码级拆解-3级渐进加载-6步调度-5维安全扫描//)**（术哥本人）：术哥对 Hermes 的源码分析风格一致（57 行 Shell、Markdown 为主、平台适配）。本实体是术哥对外部三项目（Comet/OpenSpec/Superpowers）的源码分析
+- **vs [OpenSpec 规范驱动开发 SDD](/ch05-023-openspec-规范驱动开发-sdd-框架-proposal-design-tasks-specs-四类文档意图锁//)**：OpenSpec 单项目视角（Trae 原生支持）。本实体是三项目流水线视角
 
 ## 相关实体
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/three-tools-comet-openspec-superpowers-ai-coding-shuge-2026-06-17.md)
-→ [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](../ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战/) — 同期同主题：gstack 作为第三器的视角
-→ [Superpowers Deep Dive Kaiyuandakashuo](../ch09-088-superpowers-深度解读-2-rule-gate-hook-与-iron-law-方法论/) — Superpowers 单项目深度
-→ [Openspec Spec Driven Development Trae Solo](../ch05-023-openspec-规范驱动开发-sdd-框架-proposal-design-tasks-specs-四类文档意图锁/) — OpenSpec 单项目深度
-→ [Openspec 四步法深度复盘 流程完整不等于代码正确](../ch05-046-openspec-四步法深度复盘-流程完整-代码正确/) — OpenSpec 四步法实战复盘
-→ [Ai Production Development Workflow Openspec Superpowers Gstack](../ch05-019-ai-production-development-workflow-openspec-superpowers-gsta/) — gstack + OpenSpec + Superpowers 生产级实践
-→ [Claude Code Skills Superpowers Practice](../ch01-408-claude-code-skills-superpowers-practice/) — Claude Code + Superpowers 实践
-→ [Hermes Agent Skills Source Code Analysis Shuge](../ch04-447-hermes-agent-skills-源码级拆解-3级渐进加载-6步调度-5维安全扫描/) — 术哥本人对 Hermes Agent Skills 的源码分析（方法论参照）
-→ [缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记](../ch05-007-缝合怪识别与减法决策论-openspec-superpowers-融合方案下线记-2-周-3-次实测-3-个测试/) — 同期同作者 24h 后反思
+→ [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](/ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战//) — 同期同主题：gstack 作为第三器的视角
+→ [Superpowers Deep Dive Kaiyuandakashuo](/ch09-088-superpowers-深度解读-2-rule-gate-hook-与-iron-law-方法论//) — Superpowers 单项目深度
+→ [Openspec Spec Driven Development Trae Solo](/ch05-023-openspec-规范驱动开发-sdd-框架-proposal-design-tasks-specs-四类文档意图锁//) — OpenSpec 单项目深度
+→ [Openspec 四步法深度复盘 流程完整不等于代码正确](/ch05-046-openspec-四步法深度复盘-流程完整-代码正确//) — OpenSpec 四步法实战复盘
+→ [Ai Production Development Workflow Openspec Superpowers Gstack](/ch05-019-ai-production-development-workflow-openspec-superpowers-gsta//) — gstack + OpenSpec + Superpowers 生产级实践
+→ [Claude Code Skills Superpowers Practice](/ch01-408-claude-code-skills-superpowers-practice//) — Claude Code + Superpowers 实践
+→ [Hermes Agent Skills Source Code Analysis Shuge](/ch04-447-hermes-agent-skills-源码级拆解-3级渐进加载-6步调度-5维安全扫描//) — 术哥本人对 Hermes Agent Skills 的源码分析（方法论参照）
+→ [缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记](/ch05-007-缝合怪识别与减法决策论-openspec-superpowers-融合方案下线记-2-周-3-次实测-3-个测试//) — 同期同作者 24h 后反思
 
 ---
 

@@ -111,10 +111,10 @@ Most of the time you don’t think about it. You feed messages, you get tokens, 
 Multi-turn is where it starts to matter. When the assistant emits tokens, you d
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
-- [Skill Os Learning Skill Curation Self Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
-- [Hermes Agent Deep Dive](../ch04-418-hermes-agent)
-- [Baixing Ontoz Enterprise Ontology Multi Agent](../ch04-131-百型智能-ontoz-企业本体论-群智能体协同体系-出海企业数字大脑-palantir-中国类比)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Skill Os Learning Skill Curation Self Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
+- [Hermes Agent Deep Dive](/ch04-418-hermes-agent/)
+- [Baixing Ontoz Enterprise Ontology Multi Agent](/ch04-131-百型智能-ontoz-企业本体论-群智能体协同体系-出海企业数字大脑-palantir-中国类比/)
 - Yann Dubois Openai Post Training Interview
 - MOC
 

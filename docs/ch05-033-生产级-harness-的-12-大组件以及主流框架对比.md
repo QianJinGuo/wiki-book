@@ -132,11 +132,11 @@ Anthropic 和 OpenAI 都建议先把单 Agent 做到极限。过度设计多 Age
 ### 工具暴露需要克制
 按步骤懒加载工具、只暴露最小必要工具集，是控制复杂度最有效的手段。工具越多，参数校验、权限管理、出错处理的复杂度指数级上升。在没有看到具体需求之前，不要提前设计工具扩展机制。
 ## 相关实体
-- [Agent Memory Architecture Past Influence Future Ruofei](../ch04-029-agent-memory-architecture-past-influence-future-ruofei)
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch01-732-subagents-详解-claude-code-如何避免上下文污染)
-- [Memory Agent Systems Cobanov](../ch04-458-memory-agent-systems-cobanov)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
-- [Agentscope Java Harness Framework](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har)
+- [Agent Memory Architecture Past Influence Future Ruofei](/ch04-029-agent-memory-architecture-past-influence-future-ruofei/)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](/ch01-732-subagents-详解-claude-code-如何避免上下文污染/)
+- [Memory Agent Systems Cobanov](/ch04-458-memory-agent-systems-cobanov/)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](/ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
+- [Agentscope Java Harness Framework](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
 
 ---
 

@@ -104,15 +104,15 @@ AgentCore Memory 提供双层记忆系统：
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis/)
 
 ## 相关实体
-- [Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客](../ch11-021-dify集成amazon-bedrock-agentcore-browser-实现更强大的信息获取和分析能力-亚马)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro)
-- [基于Bedrock Agentcore 实现智能成本分析与告警系统 | 亚马逊AWS官方博客](../ch11-080-基于bedrock-agentcore-实现智能成本分析与告警系统-亚马逊aws官方博客)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04-432-openclaw-multi-1)
+- [Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客](/ch11-021-dify集成amazon-bedrock-agentcore-browser-实现更强大的信息获取和分析能力-亚马/)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](/ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚/)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](/ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
+- [基于Bedrock Agentcore 实现智能成本分析与告警系统 | 亚马逊AWS官方博客](/ch11-080-基于bedrock-agentcore-实现智能成本分析与告警系统-亚马逊aws官方博客/)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](/ch04-432-openclaw-multi-1/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-coding-guide-tmall-deep-dive.md)
 
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04-440-openclaw-multi-4)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](/ch04-440-openclaw-multi-4/)
 
 ---
 

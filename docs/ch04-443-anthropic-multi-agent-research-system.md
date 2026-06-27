@@ -18,11 +18,11 @@
 
 **1. 路径正确性 vs 结果正确性的评估范式转移**：传统软件测试关注"是否按预设步骤执行"，但多 agent 系统的本质是探索性任务执行——相同目标可能有多条等效路径。Anthropic 的研究明确指出，多 agent 评估应关注 outcome 正确性和过程合理性，而非路径一致性。这对整个 AI 评估领域都是范式层面的修正 。
 
-**2. 小样本早期测试的工程价值**：不必等到几百条样本才做评估——多 agent 系统的行为模式往往在 10-20 条样本时就已经暴露主要问题。这种"快速原型验证"思路与 [Thin Harness Fat Skills](../ch05-063-thin-harness-fat-skills-ai工程架构的本质) 中 Fat Skills"固化高质量反馈流程"的方法论相通，都是通过尽早获取有效信号来降低迭代成本 。
+**2. 小样本早期测试的工程价值**：不必等到几百条样本才做评估——多 agent 系统的行为模式往往在 10-20 条样本时就已经暴露主要问题。这种"快速原型验证"思路与 [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/) 中 Fat Skills"固化高质量反馈流程"的方法论相通，都是通过尽早获取有效信号来降低迭代成本 。
 
 **3. Eval Suite 设计应以真实使用模式为中心**：文章强调"优先围绕真实使用模式设计 eval suite"，而非依赖理论推导的合成任务。这意味着评估集的质量取决于对实际用户行为的理解深度，而不是合成任务的规模。这对任何生产级 AI 系统的评估体系设计都有指导意义 。
 
-**4. Orchestration 系统的评估特殊性**：wiki-evolver 等 orchestration 系统因为涉及多组件协调，评估难度更高。固定步骤完全一致作为正确性标准过于脆弱——它只能验证"没有偏离预设"，而无法验证"是否解决了真正的问题"。这与 [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析) 中 Claude Code 的 checkpoint/rollback/fork 机制形成有趣的呼应：两者都在解决"如何评估不确定性执行"的问题 。
+**4. Orchestration 系统的评估特殊性**：wiki-evolver 等 orchestration 系统因为涉及多组件协调，评估难度更高。固定步骤完全一致作为正确性标准过于脆弱——它只能验证"没有偏离预设"，而无法验证"是否解决了真正的问题"。这与 [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析/) 中 Claude Code 的 checkpoint/rollback/fork 机制形成有趣的呼应：两者都在解决"如何评估不确定性执行"的问题 。
 
 ## 实践启示
 

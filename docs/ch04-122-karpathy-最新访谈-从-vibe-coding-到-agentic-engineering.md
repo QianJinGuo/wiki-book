@@ -77,16 +77,16 @@ Karpathy 引用的那句话是本次访谈最值得反复咀嚼的命题：
 3. **关注 Agent-first 基础设施**：Karpathy 描述的愿景是"一句话构建并部署 MenuGen"——这意味着部署、配置、auth、payments 等基础设施都需要为 Agent 重写。这里存在创业机会。
 
 ## 相关实体
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-518-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04-366-从vibe-coding到agentic-engineering-重构后台开发全流程)
-- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox Transparent](../ch01-679-让-coding-agent-从黑盒到透明-阿里云-agent-观测审计数据采集实践)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [Ai Coding Agent Quality Defense Five Control Mechanisms Tutu Agi](../ch04-474-构建-ai-编程智能体的质量防线-5-个实用的代码质量控制机制)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch04-518-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](/ch04-366-从vibe-coding到agentic-engineering-重构后台开发全流程/)
+- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox Transparent](/ch01-679-让-coding-agent-从黑盒到透明-阿里云-agent-观测审计数据采集实践/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms Tutu Agi](/ch04-474-构建-ai-编程智能体的质量防线-5-个实用的代码质量控制机制/)
+- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
 - MOC
 
 ---

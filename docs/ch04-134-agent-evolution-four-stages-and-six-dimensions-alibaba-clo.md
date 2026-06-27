@@ -86,9 +86,9 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 ### 与本文观察的对应关系
 
 文中提及的代表性框架可对应到本仓库其他实体：
-- **Cloud Code / Codex / OpenClaw / Hermes** → [Claude Code](../ch01-558-claude-code-harness-深度分析) / [OpenClaw](../ch04-199-openclaw-完全指南) / Hermes Agent 等
+- **Cloud Code / Codex / OpenClaw / Hermes** → [Claude Code](/ch01-558-claude-code-harness-深度分析/) / [OpenClaw](/ch04-199-openclaw-完全指南/) / Hermes Agent 等
 - **Workflow 引擎 LangGraph / Dify** → Agent 编排基础设施
-- **Skills 体系（SKILL.md / CLAUDE.md / AGENTS.md）** → [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 的核心载体
+- **Skills 体系（SKILL.md / CLAUDE.md / AGENTS.md）** → [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 的核心载体
 - **LLM-Wiki / GBrain** → 本地知识库理念
 
 ## 实践启示
@@ -104,16 +104,16 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 
 ## 相关实体
 
-- [Claude Code 深度解析](../ch01-558-claude-code-harness-深度分析) — 自主 Agent 阶段（阶段三）代表
-- [OpenClaw 完整指南](../ch04-199-openclaw-完全指南) — 自主 Agent 阶段（阶段三）代表
-- [Claude Code Dynamic Workflows](../ch04-409-agent-orchestration) — 阶段三到阶段四过渡的 Dynamic Workflow 范式
-- [从氛围编程到智能体工程](../ch04-070-从氛围编程到智能体工程) — Agentic Engineering 范式演进
-- [Agent 记忆系统实践](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进) — Memory 模块工程化
-- [Hermes Agent Operator](../ch04-418-hermes-agent) — 自进化 Agent（阶段四）代表
-- [Agent YAML 评测](../ch01-746-从手动到自动化-用agenteval构建agent评测体系) — 自进化机制中的评估反馈环
-- [Harness Engineering](../ch05-041-harness-engineering-概念框架/) — 阶段二到阶段四贯穿的核心工程化思想
+- [Claude Code 深度解析](/ch01-558-claude-code-harness-深度分析/) — 自主 Agent 阶段（阶段三）代表
+- [OpenClaw 完整指南](/ch04-199-openclaw-完全指南/) — 自主 Agent 阶段（阶段三）代表
+- [Claude Code Dynamic Workflows](/ch04-409-agent-orchestration/) — 阶段三到阶段四过渡的 Dynamic Workflow 范式
+- [从氛围编程到智能体工程](/ch04-070-从氛围编程到智能体工程/) — Agentic Engineering 范式演进
+- [Agent 记忆系统实践](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/) — Memory 模块工程化
+- [Hermes Agent Operator](/ch04-418-hermes-agent/) — 自进化 Agent（阶段四）代表
+- [Agent YAML 评测](/ch01-746-从手动到自动化-用agenteval构建agent评测体系/) — 自进化机制中的评估反馈环
+- [Harness Engineering](/ch05-041-harness-engineering-概念框架//) — 阶段二到阶段四贯穿的核心工程化思想
 - Context Engineering — Prompt 解耦与渐进式加载的方法论
-- [gene/gep — evomap×清华 提出的「策略基因」经验对象框架（arxiv 2604.15097）](../ch09-011-gene-gep-evomap-清华-提出的-策略基因-经验对象框架-arxiv-2604-15097)
+- [gene/gep — evomap×清华 提出的「策略基因」经验对象框架（arxiv 2604.15097）](/ch09-011-gene-gep-evomap-清华-提出的-策略基因-经验对象框架-arxiv-2604-15097/)
 
 ---
 

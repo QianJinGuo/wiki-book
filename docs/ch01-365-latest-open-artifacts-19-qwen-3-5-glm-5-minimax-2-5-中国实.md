@@ -90,11 +90,11 @@ GLM-5 由智谱 Z.ai 推出：
 
 ## 关联实体
 
-- [DeepSeek V4](../ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai) — 业界关注度最高、即将发布的中国前沿模型
-- [CybersecQwen 4B](../ch01-038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize) — Qwen 在安全垂域的专用模型
-- [OpenClaw 完全指南](../ch04-199-openclaw-完全指南) — Agent 工具栈的实践参考
-- [Agent 记忆系统的工程实践](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进) — 长上下文在 Agent 记忆中的工程化
-- [Claude Code 源码核心机制](../ch01-734-两万字详解claude-code源码核心机制) — 编码场景的 Agent 实现细节
+- [DeepSeek V4](/ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai/) — 业界关注度最高、即将发布的中国前沿模型
+- [CybersecQwen 4B](/ch01-038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize/) — Qwen 在安全垂域的专用模型
+- [OpenClaw 完全指南](/ch04-199-openclaw-完全指南/) — Agent 工具栈的实践参考
+- [Agent 记忆系统的工程实践](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/) — 长上下文在 Agent 记忆中的工程化
+- [Claude Code 源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/) — 编码场景的 Agent 实现细节
 - Agent 循环设计 — Agent 评测与训练的核心范式
 
 ---

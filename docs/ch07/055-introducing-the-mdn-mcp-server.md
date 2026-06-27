@@ -49,10 +49,10 @@
 
 ## 相关主题
 
-- [Anthropic MCP 协议回顾](../ch07-044-anthropic-mcp-重新定义-tool-search-代码编排/) — MCP 协议本身的设计
-- [AWS Bedrock AgentCore MCP](../ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式/) — 商业 MCP server
-- [Claude Code MCP server](../ch07-024-claude-code-mcp-server/) — Claude Code 工具系统
-- [Hermes Agent 工具系统架构](../ch03-086-hermes-agent-工具系统架构分析/) — agent 工具调用一般化框架
+- [Anthropic MCP 协议回顾](/ch07-044-anthropic-mcp-重新定义-tool-search-代码编排//) — MCP 协议本身的设计
+- [AWS Bedrock AgentCore MCP](/ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式//) — 商业 MCP server
+- [Claude Code MCP server](/ch07-024-claude-code-mcp-server//) — Claude Code 工具系统
+- [Hermes Agent 工具系统架构](/ch03-086-hermes-agent-工具系统架构分析//) — agent 工具调用一般化框架
 
 ## References
 

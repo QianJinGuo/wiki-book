@@ -54,7 +54,7 @@ Nathan 给出了一个简洁的对比框架：
 | 适用场景 | 新手、需要观点、需要"温度" | 高级 agent 协调员、明确 TODO 列表 |
 | 风险 | 误解时仍会做 | 字面执行时易错 |
 
-这是两种截然不同的 agent 设计哲学：**意图推测 vs 字面执行**。对应 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 的不同分支——Claude harness 倾向于"宽松意图补全 + 安全感"，GPT harness 倾向于"严格指令执行 + 透明可控"。
+这是两种截然不同的 agent 设计哲学：**意图推测 vs 字面执行**。对应 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 的不同分支——Claude harness 倾向于"宽松意图补全 + 安全感"，GPT harness 倾向于"严格指令执行 + 透明可控"。
 
 ### 四、Agent 工具的下一形态 = Slack
 
@@ -62,7 +62,7 @@ Nathan 的预言很值得玩味：
 
 > "I expect them to eventually look like Slack (when multiple agents need to talk to each other, under my watch)."
 
-含义：未来 agent 工具不再是"我 → 单个 agent"的对话界面，而是"我 → 多个 agent 在频道里互相沟通"的协作界面。用户从"指挥单个 agent"变成"管理 agent 团队"——这与 [Karpathy 谈的 agentic engineering](../ch04-070-从氛围编程到智能体工程) 范式转变一致：从 vibe coding（人写代码）→ agentic engineering（人协调 agent）。
+含义：未来 agent 工具不再是"我 → 单个 agent"的对话界面，而是"我 → 多个 agent 在频道里互相沟通"的协作界面。用户从"指挥单个 agent"变成"管理 agent 团队"——这与 [Karpathy 谈的 agentic engineering](/ch04-070-从氛围编程到智能体工程/) 范式转变一致：从 vibe coding（人写代码）→ agentic engineering（人协调 agent）。
 
 ### 五、共同的"轻微遗忘"问题
 
@@ -84,9 +84,9 @@ Nathan 报告了一个跨模型的共同问题：
 
 ## 相关实体
 
-- [Yann Dubois Openai Post Training Matt Turck Interview](../ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [Harness Engineering](../ch05-041-harness-engineering-概念框架/)
+- [Yann Dubois Openai Post Training Matt Turck Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Harness Engineering](/ch05-041-harness-engineering-概念框架//)
 - **Agent 评估方法**
 - **Reasoning Efficiency**
 - Multi-Agent Orchestration

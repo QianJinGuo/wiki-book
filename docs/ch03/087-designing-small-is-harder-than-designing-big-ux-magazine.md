@@ -6,15 +6,15 @@
 
 ## Summary
 ## 相关实体
-- [Icon Pack Websites Designers Should Bookmark](../ch03-115-icon-pack-websites-designers-should-bookmark/)
-- [Blog.Tubikstudio.Com Form Over Function Mistakes](../ch03-034-form-over-function-mistakes-or-how-not-to-harm-your-busines/)
-- [Top 10 Design Gadgets Creative Professionals 2026](../ch03-024-top-10-design-gadgets-for-creative-professionals-that-will-c/)
-- [Codex Role Plugins Sites Annotations](../ch01-233-codex-三件套-6-职位插件-sites-annotations/)
-- [The Future Of Bmw Design A Conversation With Max Missoni](../ch01-020-the-future-of-bmw/)
+- [Icon Pack Websites Designers Should Bookmark](/ch03-115-icon-pack-websites-designers-should-bookmark//)
+- [Blog.Tubikstudio.Com Form Over Function Mistakes](/ch03-034-form-over-function-mistakes-or-how-not-to-harm-your-busines//)
+- [Top 10 Design Gadgets Creative Professionals 2026](/ch03-024-top-10-design-gadgets-for-creative-professionals-that-will-c//)
+- [Codex Role Plugins Sites Annotations](/ch01-233-codex-三件套-6-职位插件-sites-annotations//)
+- [The Future Of Bmw Design A Conversation With Max Missoni](/ch01-020-the-future-of-bmw//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/designing-small-is-harder-than-designing-big-ux-magazine.md)
 
-- [Activity Focused Design](../ch03-108-activity-focused-design/)
+- [Activity Focused Design](/ch03-108-activity-focused-design//)
 ## Notes
 - Value: 7/10, Confidence: 8/10
 

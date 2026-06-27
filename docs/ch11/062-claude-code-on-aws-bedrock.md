@@ -84,11 +84,11 @@ aws iam create-access-key --user-name claude-code-bedrock
 ## 参考来源
 
 ## 相关实体
-- [From Code To Molecules An Ai Driven Egfr Inhibitor Discovery Journey](../ch11-094-从代码到分子系列-一场由-ai-驱动的-egfr-抑制剂发现之旅-深度融合-aws-bedrock与-claude/)
-- [Bedrock Agentcore Payment X402 Agent](../ch11-006-用-amazon-bedrock-agentcore-payment-构建自主支付-ai-agent-x402-协议实战/)
-- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](../ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
-- [Easy Deployment Of Claude Agent Sdk In Production](../ch11-111-快时尚电商行业智能体设计思路与应用实践-五-借助-agentcore-runtime-与-bedrock-模型平台-轻松/)
-- [Claude Code Open Source Model Enterprise Practice](../ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客/)
+- [From Code To Molecules An Ai Driven Egfr Inhibitor Discovery Journey](/ch11-094-从代码到分子系列-一场由-ai-驱动的-egfr-抑制剂发现之旅-深度融合-aws-bedrock与-claude//)
+- [Bedrock Agentcore Payment X402 Agent](/ch11-006-用-amazon-bedrock-agentcore-payment-构建自主支付-ai-agent-x402-协议实战//)
+- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双//)
+- [Easy Deployment Of Claude Agent Sdk In Production](/ch11-111-快时尚电商行业智能体设计思路与应用实践-五-借助-agentcore-runtime-与-bedrock-模型平台-轻松//)
+- [Claude Code Open Source Model Enterprise Practice](/ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-aws-bedrock-guide.md)
 

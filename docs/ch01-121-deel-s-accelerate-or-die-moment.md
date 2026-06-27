@@ -63,11 +63,11 @@ Joe Kauffman 强调：
 6. **效率节省应再投资于增长**：成本削减的最终目的是为加速产品提供弹药，而非单纯提升利润率
 
 ## 相关实体
-- [5Thingstoknowabouttheclarityact](../ch01-093-5-things-to-know-about-the-clarity-act)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch01-040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04-003-agentrun)
-- [Running An Ai Native Engineering Org](../ch01-045-running-an-ai-native-engineering-org)
+- [5Thingstoknowabouttheclarityact](/ch01-093-5-things-to-know-about-the-clarity-act/)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](/ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g/)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](/ch01-040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f/)
+- [Clinereleasesopen Sourceagentruntimesdk](/ch04-003-agentrun/)
+- [Running An Ai Native Engineering Org](/ch01-045-running-an-ai-native-engineering-org/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deels-accelerate-or-die-moment.md)
 

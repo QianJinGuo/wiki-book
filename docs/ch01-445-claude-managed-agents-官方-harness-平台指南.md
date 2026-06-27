@@ -13,8 +13,8 @@ Claude Managed Agents官方Harness平台完整手册。本文来自 WeChat data-
 - **评分**: score=81
 
 ## 与现有知识库内容的关联
-- [Claude Managed Agents](../ch01-445-claude-managed-agents-官方-harness-平台指南) — 托管 Harness 平台
-- [Agent/Skills/Teams 架构演进与选型](../ch04-219-agent-skills-teams-架构演进过程及技术选型之道) — Anthropic Skills 认知一致性机制
+- [Claude Managed Agents](/ch01-445-claude-managed-agents-官方-harness-平台指南/) — 托管 Harness 平台
+- [Agent/Skills/Teams 架构演进与选型](/ch04-219-agent-skills-teams-架构演进过程及技术选型之道/) — Anthropic Skills 认知一致性机制
 - Skill 形式化理论 — Skill 的六元组定义与 DAG 步骤计划
 
 ## 原始存档
@@ -81,19 +81,19 @@ MCP 服务器的价值在于复用现有生态。如果你已经有 Slack、GitH
 - **SHA256**: fac150d4db129656134597c4791bc1b54dea6601f52cefe3227537858581d609
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch01-677-anthropic)
-- [Anthropic Claude Managed Agents 平台正式发布](../ch01-677-anthropic)
-- [Claude Managed Agents 开发者指南](../ch04-421-claude-managed-agents)
-- [claude managed agents official](../ch04-457-claude-managed-agents-official)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](/ch01-677-anthropic/)
+- [Anthropic Claude Managed Agents 平台正式发布](/ch01-677-anthropic/)
+- [Claude Managed Agents 开发者指南](/ch04-421-claude-managed-agents/)
+- [claude managed agents official](/ch04-457-claude-managed-agents-official/)
 
-- [obsidian claude code integration guide](../ch09-097-obsidian-claude-code-integration-guide)
-- [Anthropic puts Claude agents on a meter across its subscriptions](../ch01-677-anthropic)
-- [Introducing Claude for Small Business](../ch01-030-introducing-claude-for-small-business)
-- [Introducing Claude for Small Business](../ch01-030-introducing-claude-for-small-business)
-- [Xero Announces Integration with Anthropic's Claude](../ch01-677-anthropic)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](../ch01-677-anthropic)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南)
-- [Anthropic Computer Use 最佳实践](../ch01-677-anthropic)
+- [obsidian claude code integration guide](/ch09-097-obsidian-claude-code-integration-guide/)
+- [Anthropic puts Claude agents on a meter across its subscriptions](/ch01-677-anthropic/)
+- [Introducing Claude for Small Business](/ch01-030-introducing-claude-for-small-business/)
+- [Introducing Claude for Small Business](/ch01-030-introducing-claude-for-small-business/)
+- [Xero Announces Integration with Anthropic's Claude](/ch01-677-anthropic/)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](/ch01-677-anthropic/)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](/ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南/)
+- [Anthropic Computer Use 最佳实践](/ch01-677-anthropic/)
 - MOC
 
 ---

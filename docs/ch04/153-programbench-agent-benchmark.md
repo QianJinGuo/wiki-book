@@ -116,12 +116,12 @@ ProgramBench 的发布对 AI Agent 研究领域具有重要意义：
 
 ### 与 Harness Engineering 的关联
 
-ProgramBench 评估的场景与 [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/) 中描述的生产环境编程任务高度吻合。Agent 在这类任务中的局限性直接影响了  的可行性。
+ProgramBench 评估的场景与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) 中描述的生产环境编程任务高度吻合。Agent 在这类任务中的局限性直接影响了  的可行性。
 
 ## 参见
 
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/) — Claude Opus 4.7 发布详情
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch04-141-agenteval-yaml驱动的agent评测框架/) — 另一种 Agent 评估框架
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践//) — Claude Opus 4.7 发布详情
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](/ch04-141-agenteval-yaml驱动的agent评测框架//) — 另一种 Agent 评估框架
 -  — Agent 评估基准框架综述
 - Autonomous Agent Systems — 自主 Agent 系统概念
 - Coding Harness Engineering — 编码 Harness 工程概念

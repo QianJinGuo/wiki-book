@@ -23,10 +23,10 @@
 **5. 利用预渲染机制加速 SEO 收敛** — Lovable 的预渲染策略使新发布页面立即对爬手可见 。对于自建站点的团队，SSR/SSG 混合渲染模式（尤其是在 edge 运行时的预渲染）可以在保持交互体验的同时消除传统 SPA 的 SEO 冷启动问题，应在架构选型阶段优先考虑。
 ## 相关实体
 - Lovable Discoverability Intro
-- [Building Is Just The Beginning Introducing Discoverability](../ch12-076-building-is-just-the-beginning-introducing-discoverability/)
-- [Building The Agentic Future Developer Highlights From Io 2026](../ch04-016-building-the-agentic/)
-- [Introducing The Ettin Reranker Family](../ch01-361-introducing-the-ettin-reranker-family/)
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01-741-introducing-seer-agent-the-answer-is-already-in-sentry-now/)
+- [Building Is Just The Beginning Introducing Discoverability](/ch12-076-building-is-just-the-beginning-introducing-discoverability//)
+- [Building The Agentic Future Developer Highlights From Io 2026](/ch04-016-building-the-agentic//)
+- [Introducing The Ettin Reranker Family](/ch01-361-introducing-the-ettin-reranker-family//)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](/ch01-741-introducing-seer-agent-the-answer-is-already-in-sentry-now//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-is-just-the-beginning-introducing-discove.md)
 

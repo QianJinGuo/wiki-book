@@ -14,11 +14,11 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/self-learning-evolvable-agents-for-cultural-tourism-info-extraction-with-agentcore/)
 
 ## 相关实体
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
-- [Self-Evolving Agents 系统性综述](../ch04-203-self-evolving-agents-系统性综述)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚)
-- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch11-043-amazon-bedrock-agentcore-为部署可信人工智能代理增加了质量评估和策略控制-亚马逊aws官方博)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
+- [Self-Evolving Agents 系统性综述](/ch04-203-self-evolving-agents-系统性综述/)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](/ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚/)
+- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](/ch11-043-amazon-bedrock-agentcore-为部署可信人工智能代理增加了质量评估和策略控制-亚马逊aws官方博/)
 
 ## 深度分析
 **1. "近似文本"是文旅行业信息抽取的核心难题**

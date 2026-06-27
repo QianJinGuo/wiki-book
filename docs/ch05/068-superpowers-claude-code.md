@@ -62,10 +62,10 @@
 
 ## 相关实体
 
-- [Harness Engineering](../ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
-- [Claude Code Skills Superpowers 实践](../ch01-408-claude-code-skills-superpowers-practice/)
-- [AI Coding Agent Token 成本控制](../ch09-119-ai-coding-agent-token-成本控制五层模型/)
-- [Skill 版本对比五大原则](../ch07-049-skill-版本对比五大原则-从-两个数字比大小-到工程化质量门禁/)
+- [Harness Engineering](/ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式//)
+- [Claude Code Skills Superpowers 实践](/ch01-408-claude-code-skills-superpowers-practice//)
+- [AI Coding Agent Token 成本控制](/ch09-119-ai-coding-agent-token-成本控制五层模型//)
+- [Skill 版本对比五大原则](/ch07-049-skill-版本对比五大原则-从-两个数字比大小-到工程化质量门禁//)
 
 ---
 

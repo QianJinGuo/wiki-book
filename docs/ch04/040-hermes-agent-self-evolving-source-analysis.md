@@ -87,20 +87,20 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 
 ## 相关实体
 - 企业级AI记忆基质三层架构：事实/交互/行动记忆
-- [AI Coding Agent 记忆系统](../ch04-288-ai-coding-agent-记忆系统/)
-- [AI Agent 记忆系统架构](../ch04-145-how-ai-agent-memory-works/)
-- [Self-Evolving Agents 系统性综述](../ch04-203-self-evolving-agents-系统性综述/)
-- [Hermes Agent 记忆系统深度拆解](../ch04-068-hermes-agent-记忆系统深度拆解/)
+- [AI Coding Agent 记忆系统](/ch04-288-ai-coding-agent-记忆系统//)
+- [AI Agent 记忆系统架构](/ch04-145-how-ai-agent-memory-works//)
+- [Self-Evolving Agents 系统性综述](/ch04-203-self-evolving-agents-系统性综述//)
+- [Hermes Agent 记忆系统深度拆解](/ch04-068-hermes-agent-记忆系统深度拆解//)
 - Agent Memory System Design
 - KAIROS — Claude Code 常驻协作范式
 - 上下文工程：三种 Agent Memory 方案对比实验
 
-- [SkillClaw](../ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化/)
-- [Agent 自我改进的六条路](../ch04-047-agent-自我改进的六条路/)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
-- [GBrain](../ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策/)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch04-427-demis-hassabis-yc-专访-agent-才刚刚开始-ai-下一步是创造虚拟细胞/)
-- [OpenHuman: AI Agent 持久记忆框架](../ch04-284-1-6万-star-ai-agent-赛道又杀出一匹黑马/)
+- [SkillClaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化//)
+- [Agent 自我改进的六条路](/ch04-047-agent-自我改进的六条路//)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力//)
+- [GBrain](/ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策//)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](/ch04-427-demis-hassabis-yc-专访-agent-才刚刚开始-ai-下一步是创造虚拟细胞//)
+- [OpenHuman: AI Agent 持久记忆框架](/ch04-284-1-6万-star-ai-agent-赛道又杀出一匹黑马//)
 - Agent Memory System 设计指南
 - 上下文工程 - 三种Memory方案对比
 

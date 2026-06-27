@@ -12,11 +12,11 @@
 - transcript / trace / trajectory: 完整执行轨迹
 
 ## 相关实体
-- [Anthropic Claude Managed Agents Platform Launch](../ch01-677-anthropic)
-- [Anthropic Managed Agents Scaling](../ch01-677-anthropic)
-- [Oz Multi Harness Cloud Agent Orchestration](../ch04-409-agent-orchestration)
-- [Anthropic Pm Jess Yan Managed Agents](../ch01-677-anthropic)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04-245-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t)
+- [Anthropic Claude Managed Agents Platform Launch](/ch01-677-anthropic/)
+- [Anthropic Managed Agents Scaling](/ch01-677-anthropic/)
+- [Oz Multi Harness Cloud Agent Orchestration](/ch04-409-agent-orchestration/)
+- [Anthropic Pm Jess Yan Managed Agents](/ch01-677-anthropic/)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](/ch04-245-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-demystifying-evals-for-ai-agents.md)
 

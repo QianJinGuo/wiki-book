@@ -80,11 +80,11 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 
 ## 相关实体
 
-- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](../ch04-214-build-an-ai-powered-equipment-repair-assistant-using-amazon/) — AgentCore + Knowledge Base 的维修助手
-- [Building Web Search Enabled Agents With Strands And Exa](../ch04-373-building-web-search-enabled-agents-with-strands-and-exa/) — Strands SDK 搜索 Agent
-- [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](../ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客/) — Strands SDK 企业级方案
-- [Agentcore Harness](../ch04-206-agentcore-managed-harness/) — AgentCore 工程化
-- [Aws Bedrock Agentcore Doris Mcp Server](../ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式/) — AgentCore + MCP Server
+- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](/ch04-214-build-an-ai-powered-equipment-repair-assistant-using-amazon//) — AgentCore + Knowledge Base 的维修助手
+- [Building Web Search Enabled Agents With Strands And Exa](/ch04-373-building-web-search-enabled-agents-with-strands-and-exa//) — Strands SDK 搜索 Agent
+- [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](/ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客//) — Strands SDK 企业级方案
+- [Agentcore Harness](/ch04-206-agentcore-managed-harness//) — AgentCore 工程化
+- [Aws Bedrock Agentcore Doris Mcp Server](/ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式//) — AgentCore + MCP Server
 - Autonomous Agent Systems — 自主 Agent 系统
 - Agent Deployment Strategy — Agent 部署策略
 - Ai Safety Governance — AI 安全治理

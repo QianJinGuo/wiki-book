@@ -14,7 +14,7 @@ Claude Code 的市场表现：
 - GitHub 公开提交量的 4%
 - 首次采购 AI 服务的企业中，Anthropic 面对 OpenAI 正面竞争赢下约 70% 订单
 - 不到一年跑出数十亿美元的年化收入
-- 约 27% 的任务是开发者没有这个工具时原本不会尝试的（任务边界扩大） See also [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
+- 约 27% 的任务是开发者没有这个工具时原本不会尝试的（任务边界扩大） See also [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
 
 ## DeepSeek 招聘详情
 **核心团队成员：**

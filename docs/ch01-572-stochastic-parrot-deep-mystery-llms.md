@@ -6,16 +6,16 @@
 
 # On the deep mystery of language models
 [](<https://substackcdn.com/image/fetch/$s_!0jzu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89a5554b-665c-450c-997f-c1516c9b71f6_1024x1024.png>)
-A while back on [X](../ch01-<https://x.com/emollick/status/1960919256452796440>), Ethan Mollick posed this challeng:
+A while back on [X](/ch01-<https://x.com/emollick/status/1960919256452796440>/), Ethan Mollick posed this challeng:
 > We really have not made a lot of progress on explaining the deep mystery of LLMs:
 > How does a model using matrix multiplication to predict the next word manage to simulate human thought well enough to do all the very human-like things it does? And what does that mean about us?
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](../ch01-650-stochastic-parrot-thought-experiment)
-- [Stochastic Parrot Marcus Ai Productivity](../ch11-069-stochastic-parrot-marcus-ai-productivity)
-- [While Breathless In Stodgy Viridian](../ch01-436-while-breathless-in-stodgy-viridian)
-- [Aws Reinforcement Fine Tuning Llm As Judge](../ch01-437-aws-reinforcement-fine-tuning-llm-as-judge)
-- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01-301-aws-sagemaker-capacity-aware-inference-fallback)
+- [Stochastic Parrot Thought Experiment](/ch01-650-stochastic-parrot-thought-experiment/)
+- [Stochastic Parrot Marcus Ai Productivity](/ch11-069-stochastic-parrot-marcus-ai-productivity/)
+- [While Breathless In Stodgy Viridian](/ch01-436-while-breathless-in-stodgy-viridian/)
+- [Aws Reinforcement Fine Tuning Llm As Judge](/ch01-437-aws-reinforcement-fine-tuning-llm-as-judge/)
+- [Aws Sagemaker Capacity Aware Inference Fallback](/ch01-301-aws-sagemaker-capacity-aware-inference-fallback/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stochastic-parrot-deep-mystery-llms.md)
 

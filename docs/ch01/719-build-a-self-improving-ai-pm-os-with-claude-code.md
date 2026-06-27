@@ -11,8 +11,8 @@
 ## 相关实体
 
 - Hermes Agent 深度解析（阿里云/飞樰）
-- [Build Live Translation Apps with gpt-realtime-translate](../ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-170-深入理解-claude-code-源码中的-agent-harness-构建之道/)
+- [Build Live Translation Apps with gpt-realtime-translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate//)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-170-深入理解-claude-code-源码中的-agent-harness-构建之道//)
 
 ## 深度分析
 Pawel Huryn 的 PM OS 实践揭示了 Claude ecosystem 的真实分层——Chat、Cowork、Code、Dispatch 分别适用于不同场景，而非功能的简单堆叠。

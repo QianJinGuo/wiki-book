@@ -16,19 +16,19 @@
 
 **目录**
 
-01 [前言](../ch11-#section1)
+01 [前言](/ch11-#section1/)
 
-02 [业务背景与客户痛点](../ch11-#section2)
+02 [业务背景与客户痛点](/ch11-#section2/)
 
-03 [系统架构详细设计](../ch11-#section3)
+03 [系统架构详细设计](/ch11-#section3/)
 
-04 [经验总结](../ch11-#section4)
+04 [经验总结](/ch11-#section4/)
 
-05 [成本分析](../ch11-#section5)
+05 [成本分析](/ch11-#section5/)
 
-06 [结论](../ch11-#section6)
+06 [结论](/ch11-#section6/)
 
-07 [参考文档](../ch11-#section7)
+07 [参考文档](/ch11-#section7/)
 
 * * *
 
@@ -154,11 +154,11 @@ POC 可用 Long-term API Key 快速验证，但生产环境必须切换到 IRSA 
 ## 参考来源
 
 ## 相关实体
-- [Bedrock Agentcore Payment X402 Agent](../ch11-006-用-amazon-bedrock-agentcore-payment-构建自主支付-ai-agent-x402-协议实战)
-- [Ci T Based On Amazon Bedrock Agentcore Openclaw Enterprise Intelligent Operations Best Practices](../ch11-056-ci-amp-t基于-amazon-bedrock-agentcore-与-openclaw-的企业级智能运维最佳实践)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04-440-openclaw-multi-4)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch11-017-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多)
+- [Bedrock Agentcore Payment X402 Agent](/ch11-006-用-amazon-bedrock-agentcore-payment-构建自主支付-ai-agent-x402-协议实战/)
+- [Ci T Based On Amazon Bedrock Agentcore Openclaw Enterprise Intelligent Operations Best Practices](/ch11-056-ci-amp-t基于-amazon-bedrock-agentcore-与-openclaw-的企业级智能运维最佳实践/)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 4](/ch04-440-openclaw-multi-4/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](/ch11-017-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-amazon-bedrock-eks-printer-qc.md)
 

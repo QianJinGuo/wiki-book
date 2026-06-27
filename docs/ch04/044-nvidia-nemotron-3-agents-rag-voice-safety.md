@@ -9,10 +9,10 @@ Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safe
 
 ## 相关实体
 - Nvidia Multimodal Rag Knowledge Systems
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch01-830-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
-- [Nvidia Agentic Ai Subsurface Engineering](../ch04-313-nvidia-agentic-ai-subsurface-engineering/)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04-339-nvidia-secure-local-agent-nemoclaw-openclaw/)
-- [Nvidia Telco Reasoning Models Nemo](../ch01-178-nvidia-telco-reasoning-models-nemo/)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](/ch01-830-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t//)
+- [Nvidia Agentic Ai Subsurface Engineering](/ch04-313-nvidia-agentic-ai-subsurface-engineering//)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](/ch04-339-nvidia-secure-local-agent-nemoclaw-openclaw//)
+- [Nvidia Telco Reasoning Models Nemo](/ch01-178-nvidia-telco-reasoning-models-nemo//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-nemotron-3-agents-rag-voice-safety.md)
 

@@ -137,15 +137,15 @@ Hermes 当前已经实现了**原始数据派的核心能力**：
 - **vs `hermes-agent-memory-system-openclaw-comparison`**：原 entity 侧重 **Hermes vs OpenClaw 记忆观对比**，本文侧重**全行业 6 流派 + Hermes 启示**
 
 ## 相关实体
-- [Hermes Agent 12 Layer Full Configuration Guide](../ch04-418-hermes-agent)
-- [Hermes Agent Memory System Three Layer Architecture](../ch04-418-hermes-agent)
-- [Hermes Agent Self Evolving](../ch04-039-hermes-agent-self-evolving-source-analysis)
-- [Hermes Skill System](../ch01-298-hermes-agent-skill-系统深度解析)
-- [Hermes 9 Module Architecture](../ch01-336-hermes-9-module-architecture-winty)
+- [Hermes Agent 12 Layer Full Configuration Guide](/ch04-418-hermes-agent/)
+- [Hermes Agent Memory System Three Layer Architecture](/ch04-418-hermes-agent/)
+- [Hermes Agent Self Evolving](/ch04-039-hermes-agent-self-evolving-source-analysis/)
+- [Hermes Skill System](/ch01-298-hermes-agent-skill-系统深度解析/)
+- [Hermes 9 Module Architecture](/ch01-336-hermes-9-module-architecture-winty/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)
 
-- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch03-053-hermes-wiki-实战-obsidian-hermes-agent-自动生长知识网络的-9-步搭建法)
+- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](/ch03-053-hermes-wiki-实战-obsidian-hermes-agent-自动生长知识网络的-9-步搭建法/)
 
 - MOC
 ## 深度分析

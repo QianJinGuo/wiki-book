@@ -13,7 +13,7 @@
 
 ## 相关实体
 
-- [self-harness：上海ai lab 提出的 agent 自我改进 harness 范式](../ch04-049-self-harness-上海ai-lab-提出的-agent-自我改进-harness-范式)
+- [self-harness：上海ai lab 提出的 agent 自我改进 harness 范式](/ch04-049-self-harness-上海ai-lab-提出的-agent-自我改进-harness-范式/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
 → 系列：超级应用的 AI 原生研发模式探索（第 3 期）
 
@@ -269,31 +269,31 @@ Coding Agent 干活
 
 ## 与已有 wiki 实体的关系
 
-### vs [晓斌 Agent-Oriented Infra](../ch04-031-晓斌-从-people-oriented-到-agent-oriented-infra-意图驱动-代码沉淀的进)
+### vs [晓斌 Agent-Oriented Infra](/ch04-031-晓斌-从-people-oriented-到-agent-oriented-infra-意图驱动-代码沉淀的进/)
 - 晓斌 = 哲学框架（People-Oriented → Agent-Oriented）+ 4 层设计
 - 高德 = **具体落地实现**（AI 全托管 / 监督 Agent / Self-Healing / 质量门禁 / Benchmark）
 - 共同点：都强调"infra 决定 agent 自主空间"+"给 infra 补能力"
 
-### vs [wow-harness v3](../ch05-028-wow-harness-v3-ai-开发的治理协议)
+### vs [wow-harness v3](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - 高德 = **7×24 生产线层**（Self-Healing + Harness 反馈闭环 + Benchmark 体系）
 - 共同点：都强调"治理 + 自进化"是 AI Agent 长期可用的关键
 
-### vs [Kimi Work](../ch01-159-kimi-work-通用-agent-战场从云端迁移到本地)
+### vs [Kimi Work](/ch01-159-kimi-work-通用-agent-战场从云端迁移到本地/)
 - Kimi Work = Harness 搬到本地桌面（**单用户本地**）
 - 高德 = 7×24 永动生产线（**企业级 R&D 链路**）
 - 共同点：都是"人定规则 + AI 永动"哲学的具体落地
 
-### vs [Rein](../ch04-050-rein-4-模块-5-类型边界防止-agent-go-膨胀到-3000-行)
+### vs [Rein](/ch04-050-rein-4-模块-5-类型边界防止-agent-go-膨胀到-3000-行/)
 - Rein = 4 模块 + 5 类型边界（**单 agent 内部**架构）
 - 高德 = **多 agent 协作**（Coding Agent + 监督 Agent + 质量门禁 Agent）
 - 共同点：都强调"边界"是工程化关键
 
-### vs [Agent Harness 架构](../ch04-207-agent-harness-架构)
+### vs [Agent Harness 架构](/ch04-207-agent-harness-架构/)
 - 7 层 harness 模型 = 抽象框架
 - 高德 = "**工具定义、中间件和长期记忆三个模块贡献了最大的性能增益**" —— Harness Engineering 实证
 
-### vs [Microsoft Build 2026](../ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体)
+### vs [Microsoft Build 2026](/ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体/)
 - Microsoft = 全栈 AI（模型 + Harness + 平台 + 智能体 + 365 应用）
 - 高德 = **"在已跑通的系统上加调度层"**（不是从零搭建）—— 工程实操视角
 
@@ -345,12 +345,12 @@ Coding Agent 干活
 - **Benchmark 评测体系设计应包含持续扩展机制和版本对比能力**。静态 benchmark 容易被记忆逐渐失去区分能力。评测集应支持任务增量扩展、场景维度扩展、指标体系扩展，并建立版本对比机制（对不同规范版本、Skill 配置和 Agent 编排方式进行纵向比较）。目标不是建立排行榜，而是形成持续积累证据的机制，回答哪些规范真正降低了返工与漂移 
 
 ## 相关对照
-- [晓斌 Agent-Oriented Infra](../ch04-031-晓斌-从-people-oriented-到-agent-oriented-infra-意图驱动-代码沉淀的进) —— 哲学框架
-- [wow-harness v3](../ch05-028-wow-harness-v3-ai-开发的治理协议) —— 跨 session 治理
-- [Kimi Work](../ch01-159-kimi-work-通用-agent-战场从云端迁移到本地) —— 本地 Agent
-- [Rein](../ch04-050-rein-4-模块-5-类型边界防止-agent-go-膨胀到-3000-行) —— 单 agent 架构
-- [Agent Harness 架构](../ch04-207-agent-harness-架构) —— 7 层模型
-- [Microsoft Build 2026](../ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体) —— 全栈 AI
+- [晓斌 Agent-Oriented Infra](/ch04-031-晓斌-从-people-oriented-到-agent-oriented-infra-意图驱动-代码沉淀的进/) —— 哲学框架
+- [wow-harness v3](/ch05-028-wow-harness-v3-ai-开发的治理协议/) —— 跨 session 治理
+- [Kimi Work](/ch01-159-kimi-work-通用-agent-战场从云端迁移到本地/) —— 本地 Agent
+- [Rein](/ch04-050-rein-4-模块-5-类型边界防止-agent-go-膨胀到-3000-行/) —— 单 agent 架构
+- [Agent Harness 架构](/ch04-207-agent-harness-架构/) —— 7 层模型
+- [Microsoft Build 2026](/ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体/) —— 全栈 AI
 - Agent Harness 上下文管理 —— 工作集视角
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)

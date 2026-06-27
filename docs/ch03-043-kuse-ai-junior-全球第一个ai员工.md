@@ -58,7 +58,7 @@ Kuse内部案例中，客服端Junior发现投诉问题 → 传递给产品端Ju
 
 ## 与本文相关
 -  — OpenClaw生态（龙虾背景）
-- [Gstack Ai Workflow](../ch03-058-gstack-ai协作开发工作流-复杂度棘轮) — YC的AI协作工作流
+- [Gstack Ai Workflow](/ch03-058-gstack-ai协作开发工作流-复杂度棘轮/) — YC的AI协作工作流
 -  — 企业级Agent落地对比
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)

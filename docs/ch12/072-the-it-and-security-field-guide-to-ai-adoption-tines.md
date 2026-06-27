@@ -10,11 +10,11 @@
 - 人工介入最佳实践
 - 案例：Udemy、Canva、Jamf、Vimeo
 ## 相关实体
-- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g/)
-- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](../ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner/)
-- [Fedora Hummingbird Container Security](../ch12-074-fedora-hummingbird-brings-the-container-security-model-to-a/)
-- [Sysdig Headless Cloud Security](../ch11-137-headless-cloud-security-rewriting-security-without-the-ui/)
+- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi//)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](/ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g//)
+- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](/ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner//)
+- [Fedora Hummingbird Container Security](/ch12-074-fedora-hummingbird-brings-the-container-security-model-to-a//)
+- [Sysdig Headless Cloud Security](/ch11-137-headless-cloud-security-rewriting-security-without-the-ui//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-it-and-security-field-guide-to-ai-adoption-tines.md)
 

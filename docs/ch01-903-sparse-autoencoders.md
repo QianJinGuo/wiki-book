@@ -5,8 +5,8 @@
 > 📊 Level ⭐⭐⭐⭐ | 5.6KB | `entities/sparse-autoencoders.md`
 
 ## 关联
-- [Natural Language Autoencoders](../ch01-896-natural-language-autoencoders-anthropic-激活-文字可解释性方法) — NLA 在 SAE 基础上增加文字输出能力
-- [Anthropic](../ch07-044-anthropic-mcp-重新定义-tool-search-代码编排) — 主要研究机构
+- [Natural Language Autoencoders](/ch01-896-natural-language-autoencoders-anthropic-激活-文字可解释性方法/) — NLA 在 SAE 基础上增加文字输出能力
+- [Anthropic](/ch07-044-anthropic-mcp-重新定义-tool-search-代码编排/) — 主要研究机构
 - Mechanistic Interpretability — 所属研究领域
 
 ## 深度分析

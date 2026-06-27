@@ -8,12 +8,12 @@
 - **价值**：8/10 — 三框架 Gateway 设计哲学横向对比，视角独特，技术细节准确（端口号/bindings 配置/适配器数量）
 - **置信度**：8/10 — 公众号原创，源码级细节，与公开文档一致
 - **乘积**：64 — strong ★★★★
-- **策略对齐**：与 [DeerFlow vs Hermes vs OpenClaw](../ch04-398-deerflow-hermes-openclaw-架构区别深度对比) 互补（整体选型 vs Gateway 专深）
+- **策略对齐**：与 [DeerFlow vs Hermes vs OpenClaw](/ch04-398-deerflow-hermes-openclaw-架构区别深度对比/) 互补（整体选型 vs Gateway 专深）
 
 ## 与现有 wiki 的关系
 - **互补**：现有  侧重整体选型（三步选型法+效率五维表格），本文聚焦 **Gateway 单一架构层次的三框架深对比**
 - **填补空白**：wiki 目前有 OpenClaw 源码拆解、Claude Code Prompt/Context/Harness 拆解、Hermes 深度解析，但缺少以 **Gateway 为分析轴的三框架横向对比**
-- **交叉引用**：与 OpenClaw Prompt/Context/Harness、Claude Code Prompt/Context/Harness、[Hermes Agent 深度解析](../ch04-418-hermes-agent) 互为补充
+- **交叉引用**：与 OpenClaw Prompt/Context/Harness、Claude Code Prompt/Context/Harness、[Hermes Agent 深度解析](/ch04-418-hermes-agent/) 互为补充
 
 ## 文章导航
 - 本系列共（一）~（九）篇，本文为第（八）篇 Gateway 专题
@@ -68,14 +68,14 @@
 ## 相关实体
 - Claude Code vs OpenClaw Agent 记忆系统对比
 
-- [深度拆解 Hermes Agent 记忆系统](../ch04-418-hermes-agent)
-- [Hermes Agent vs OpenClaw 对比分析](../ch04-418-hermes-agent)
-- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件)
-- [Claude Code 设计原则与对照分析](../ch01-403-claude-code-设计原则与对照分析)
-- [Claude Code Integration Other Tools](../ch09-057-claude-code-集成其他工具指南)
+- [深度拆解 Hermes Agent 记忆系统](/ch04-418-hermes-agent/)
+- [Hermes Agent vs OpenClaw 对比分析](/ch04-418-hermes-agent/)
+- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](/ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件/)
+- [Claude Code 设计原则与对照分析](/ch01-403-claude-code-设计原则与对照分析/)
+- [Claude Code Integration Other Tools](/ch09-057-claude-code-集成其他工具指南/)
 - Local Vs Cloud Agent Deployment Strategy
 - Openclaw Architecture
-- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](../ch09-077-claude-dispatch-接口力量-ai-从-chatbot-到-agent-interface-的转变)
+- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](/ch09-077-claude-dispatch-接口力量-ai-从-chatbot-到-agent-interface-的转变/)
 
 ---
 

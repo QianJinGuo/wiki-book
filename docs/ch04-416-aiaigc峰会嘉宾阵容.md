@@ -18,19 +18,19 @@
 
 ## 相关实体
 - Coding Harness 工程本质
-- [Hermes Agent 记忆系统深度拆解](../ch04-418-hermes-agent)
+- [Hermes Agent 记忆系统深度拆解](/ch04-418-hermes-agent/)
 
-- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch01-079-特斯拉百万年薪招数据标注员-朝九晚五-无需ai经验)
-- [我给Hermes配了4个Agent，真正有用的是这些事](../ch01-127-我给hermes配了4个agent)
-- [Hermes Agent vs OpenClaw 对比分析](../ch04-418-hermes-agent)
-- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](../ch04-257-autoclaw-使用体验-自带-66-个-skill-可接入聊天工具-安全性高)
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch04-429-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏)
-- [OpenCLAW 完全指南](../ch04-199-openclaw-完全指南)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch04-338-你的-ai-agent-真的在受控运行吗)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群)
-- [Agent 上下文窗口管理对比](../ch04-149-agent-上下文窗口管理对比)
-- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制)
+- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](/ch01-079-特斯拉百万年薪招数据标注员-朝九晚五-无需ai经验/)
+- [我给Hermes配了4个Agent，真正有用的是这些事](/ch01-127-我给hermes配了4个agent/)
+- [Hermes Agent vs OpenClaw 对比分析](/ch04-418-hermes-agent/)
+- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](/ch04-257-autoclaw-使用体验-自带-66-个-skill-可接入聊天工具-安全性高/)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](/ch04-429-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [OpenCLAW 完全指南](/ch04-199-openclaw-完全指南/)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](/ch04-338-你的-ai-agent-真的在受控运行吗/)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](/ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群/)
+- [Agent 上下文窗口管理对比](/ch04-149-agent-上下文窗口管理对比/)
+- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](/ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制/)
 
 ## 深度分析
 **嘉宾构成反映AIGC产业发展三大趋势**

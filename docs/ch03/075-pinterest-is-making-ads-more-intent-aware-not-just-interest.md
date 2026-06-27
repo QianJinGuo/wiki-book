@@ -102,7 +102,7 @@ Pinterest 新广告定向整合了三类实时信号：
    构建自己的第一方意图信号，用于精准再营销。
 ## 相关实体
 - You Ll Soon Be Able To Bet On Bitcoin Volatility Not Just Price On Cme
-- [Almcorp Google Ads Expanded Experiment V24 1](../ch03-109-google-ads-expanded-experiment-support-in-v24-1-what-change/)
+- [Almcorp Google Ads Expanded Experiment V24 1](/ch03-109-google-ads-expanded-experiment-support-in-v24-1-what-change//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pinterest-intent-aware-ads-wersm.md)
 

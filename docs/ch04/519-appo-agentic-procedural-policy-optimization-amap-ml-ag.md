@@ -191,14 +191,14 @@ A = α · A_base + (1-α) · A_future
 > **Agent RL 的竞争正在从「能不能调工具」转向「能不能学会在正确的地方试错」。APPO 给出的答案很具体：别只在工具边界分叉，去序列里找真正改变命运的决策点。**
 
 ## 相关实体
-- [Agentic RL: Token-In Token-Out Done Right](../ch04-520-agentic-rl-token-in-token-out-done-right/)（相关：Token-In/Token-Out RL 训练框架，但 APPO 进一步细化到决策点）
-- [港中文 SLIM：动态技能生命周期管理](../ch04-132-slim-港中文动态技能生命周期管理-arxiv-2605-10923/)（相关：另一条 Agentic RL 主线——技能生命周期管理）
-- [高德 Harness/SDD 体系](../ch05-016-高德广告工程-harness-sdd-体系演进-从-氛围编程-治理到-ai-native-全流程闭环/)（同公司高德不同主题：SDD 体系 vs Agentic RL）
-- [Harness Engineering 综述](../ch04-069-agent-harness-engineering-a-survey/)（相关：APPO 是 Agentic RL 的"过程工程化"）
+- [Agentic RL: Token-In Token-Out Done Right](/ch04-520-agentic-rl-token-in-token-out-done-right//)（相关：Token-In/Token-Out RL 训练框架，但 APPO 进一步细化到决策点）
+- [港中文 SLIM：动态技能生命周期管理](/ch04-132-slim-港中文动态技能生命周期管理-arxiv-2605-10923//)（相关：另一条 Agentic RL 主线——技能生命周期管理）
+- [高德 Harness/SDD 体系](/ch05-016-高德广告工程-harness-sdd-体系演进-从-氛围编程-治理到-ai-native-全流程闭环//)（同公司高德不同主题：SDD 体系 vs Agentic RL）
+- [Harness Engineering 综述](/ch04-069-agent-harness-engineering-a-survey//)（相关：APPO 是 Agentic RL 的"过程工程化"）
 - Agent 编排范式（相关：过程级 credit 与编排的"阶段化"同源）
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/appo-agentic-procedural-policy-optimization-amap-ml-2026-06-16.md)
-- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](../ch01-854-高德路线规划双路线-mobilitybench-agent-基准-transitlm-端到端-rllm/)
+- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](/ch01-854-高德路线规划双路线-mobilitybench-agent-基准-transitlm-端到端-rllm//)
 - MOC
 
 ---

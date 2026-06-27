@@ -11,17 +11,17 @@
 - 来源：AWS Machine Learning Blog
 
 ## 相关实体
-- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore)
-- [Build Ai Powered Dashboard Automation Agents With Nlp On Amazon Bedrock Agentcor](../ch04-301-build-ai-powered-dashboard-automation-agents-with-nlp-on-ama)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](/ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock/)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [Build Ai Powered Dashboard Automation Agents With Nlp On Amazon Bedrock Agentcor](/ch04-301-build-ai-powered-dashboard-automation-agents-with-nlp-on-ama/)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](/ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo/)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](/ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
 
 ---
 
-- [stack overflow for agents — ephemeral intelligence gap 框架与 a](../ch04-248-stack-overflow-for-agents-ephemeral-intelligence-gap-框架与-a)
+- [stack overflow for agents — ephemeral intelligence gap 框架与 a](/ch04-248-stack-overflow-for-agents-ephemeral-intelligence-gap-框架与-a/)
 
 ## 案例概述
 

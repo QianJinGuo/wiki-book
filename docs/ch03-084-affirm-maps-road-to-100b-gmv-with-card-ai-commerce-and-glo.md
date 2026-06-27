@@ -15,7 +15,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion.md)
 
 ## 相关实体
-- [Affirm Maps Road to $100B GMV With Card, AI Commerce](../ch03-084-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo)
+- [Affirm Maps Road to $100B GMV With Card, AI Commerce](/ch03-084-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo/)
 
 ## 深度分析
 ### 网络效应的飞轮模型
