@@ -1,8 +1,8 @@
 site_name: "AI 工程"
-site_description: "全球第一部基于 2784 篇一手 AI 材料系统编撰的开源读物"
+site_description: "基于 2784 篇一手 AI 材料系统编撰的开源读物 — 覆盖 LLM、Agent、Harness、MCP、安全、训练、推理全栈"
 repo_url: "https://github.com/QianJinGuo/wiki-book"
 repo_name: "QianJinGuo/wiki-book"
-site_url: "https://qianjinguo.github.io/wiki-book/"
+site_url: "https://wiki.jinguo.tech"
 
 theme:
   name: material
@@ -10,6 +10,9 @@ theme:
   font:
     text: Noto Sans SC
     code: JetBrains Mono
+  icon:
+    logo: material/book-open-page-variant
+  favicon: assets/images/favicon.png
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -63,6 +66,21 @@ markdown_extensions:
 
 extra_css:
   - styles.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/QianJinGuo/wiki-book
+  generator: false
+  meta:
+    - name: og:title
+      content: "AI 工程 — 基于 2784 篇文章的系统化提炼"
+    - name: og:description
+      content: "覆盖 LLM、Agent、Harness、MCP、安全、训练、推理全栈的开源读物"
+    - name: og:type
+      content: website
+    - name: og:url
+      content: "https://wiki.jinguo.tech"
 
 nav:
   - 首页: index.md
