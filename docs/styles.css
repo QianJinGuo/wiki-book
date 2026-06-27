@@ -3,8 +3,3 @@
 .md-content blockquote { border-left: 3px solid var(--md-accent-fg-color); font-size: 0.9em; }
 .md-content small { opacity: 0.7; }
 .md-content a { color: var(--md-accent-fg-color); }
-
-/* 右侧目录字体缩小 */
-.md-sidebar--secondary .md-nav__link { font-size: 0.7rem; }
-.md-sidebar--secondary .md-nav__title { font-size: 0.7rem; }
-.md-sidebar--secondary .md-nav__list { padding-left: 0.6rem; }
