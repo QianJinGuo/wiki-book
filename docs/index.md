@@ -1,6 +1,6 @@
 # 《AI 工程》
 
-> 全球第一部基于 2784 篇一手 AI 材料系统编撰的开源读物。
+> 全球第一部基于 4169 篇一手 AI 材料系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家，博采众长，一路到底。
 
@@ -8,13 +8,19 @@
 
 ## 全书结构
 
-| 篇 | 定位 | 内容量 |
-|---|------|--------|
-| **第一篇 · 入门篇** — 从零理解 AI | 任何人 | 1080 篇 |
-| **第二篇 · 工程师篇** — 构建 AI 应用 | 有编程基础 | 879 篇 |
-| **第三篇 · 专家篇** — 深入系统架构 | 有 ML 基础 | 400 篇 |
-| **第四篇 · 科学家篇** — 研究与创新 | 研究者 | 90 篇 |
-| **第五篇 · 大师篇** — 哲学、安全与未来 | 思考者 | 29 篇 |
+| 篇 | 章节 | 定位 | 文章数 |
+|---|---|---|---|
+| **第一篇 · 入门篇** | Ch01 AI 与 LLM 基础 | 任何人 | 1807 篇 |
+| **第二篇 · 工程师篇** | Ch03 AI 工具与产品全景 | 有编程基础 | 192 篇 |
+| | Ch04 Agent 核心架构 | | 1041 篇 |
+| | Ch05 Harness 工程 | | 167 篇 |
+| | Ch07 技能、工具与 MCP | | 114 篇 |
+| | Ch09 AI 编程与代码生成 | | 229 篇 |
+| **第三篇 · 专家篇** | Ch11 云基础设施与部署 | 有 ML 基础 | 425 篇 |
+| | Ch12 安全与治理 | | 194 篇 |
+| **总计** | **8 个活跃章节** | | **4169 篇** |
+
+> Ch02/06/08/10/13-20 尚在编撰中。
 
 ---
 
@@ -31,7 +37,7 @@
   - ⭐ What happens in the log when an app crashes as it starts up?
   - ⭐ Backpressure is all you need
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
-  - ... 共 **926** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1807** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 31 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -57,7 +63,7 @@
   - ⭐ The 2026 SaaSOps checklist: Managing and securing your enterprise SaaS
   - ⭐ What the design-to-code loop unlocks
   - ⭐ Choosing to Stay Human
-  - ... 共 **123** 篇 → [完整章节](ch03-ai-tools.md)
+  - ... 共 **192** 篇 → [完整章节](ch03-ai-tools.md)
 
 > 📖 **本篇共 1080 篇**
 
@@ -76,7 +82,7 @@
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
   - ⭐ From idea to AI app: creating intelligent research assistants
-  - ... 共 **530** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **1041** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 86 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -89,7 +95,7 @@
   - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记（2 周 3 次实测 + 3 个测试 + 加法传播学 +
   - ⭐⭐ 阿里工程师 Harness 工程化实践 (双案例合并)
-  - ... 共 **86** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **167** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 35 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -115,7 +121,7 @@
   - ⭐⭐ claude code skills mcp rules source analysis
   - ⭐⭐ Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）
   - ⭐⭐ 重新定义Skill开发：保姆级教程&一站式开发助手
-  - ... 共 **62** 篇 → [完整章节](ch07-skill-tool.md)
+  - ... 共 **114** 篇 → [完整章节](ch07-skill-tool.md)
 
 ### [Ch08 多 Agent 协作](ch08-multi-agent.md) — 24 篇
 > 从单兵到团队：编排、通信、治理
@@ -141,7 +147,7 @@
   - ⭐⭐ Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
   - ⭐⭐ 小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化
   - ⭐⭐ 业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层
-  - ... 共 **121** 篇 → [完整章节](ch09-ai-coding.md)
+  - ... 共 **229** 篇 → [完整章节](ch09-ai-coding.md)
 
 ### [Ch10 RAG 与知识检索](ch10-rag.md) — 21 篇
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
@@ -173,7 +179,7 @@
   - ⭐⭐ 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
   - ⭐⭐ 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
   - ⭐⭐ AWS Bedrock 多智能体协作指南
-  - ... 共 **240** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **425** 篇 → [完整章节](ch11-infra.md)
 
 ### [Ch12 安全与治理](ch12-security.md) — 115 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
@@ -186,7 +192,7 @@
   - ⭐ Sandworm Hackers Shift From IT Breaches to Critical OT Targets
   - ⭐ 5 Things to Know about the CLARITY Act
   - ⭐ fedora hummingbird brings the container security model to a linux host
-  - ... 共 **115** 篇 → [完整章节](ch12-security.md)
+  - ... 共 **194** 篇 → [完整章节](ch12-security.md)
 
 ### [Ch13 MLOps 与评估](ch13-mlops.md) — 16 篇
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
