@@ -27,14 +27,14 @@ BigQuery 威胁模型覆盖了完整的 STRIDE 分类（Spoofing、Tampering、R
 5. **对 authorized views 和 row-level security 策略实施强制代码审查和测试**。这些安全机制的逻辑漏洞（漏写 WHERE 子句、逻辑错误）会导致数据访问范围超出预期，且不易通过常规监控发现 。
 
 ## 相关实体
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch01-677-anthropic)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch01-677-anthropic)
-- [Cloudsectidbits Masso Cognito Sso.Html](../ch11-209-cloudsectidbits)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01-743-mini-shai-hulud-strikes-again-tanstack-more-npm-packages)
-- [Aws Bedrock Halliburton Seismic Workflow Genai](../ch11-176-halliburton-enhances-seismic-workflow-creation-with-amazon-b)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](/ch01-677-anthropic/)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](/ch01-677-anthropic/)
+- [Cloudsectidbits Masso Cognito Sso.Html](/ch11-209-cloudsectidbits/)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](/ch01-743-mini-shai-hulud-strikes-again-tanstack-more-npm-packages/)
+- [Aws Bedrock Halliburton Seismic Workflow Genai](/ch11-176-halliburton-enhances-seismic-workflow-creation-with-amazon-b/)
 
-- [A History Of Ides At Google](../ch03-038-a-history-of-ides-at-google)
-- [gemini app rolling out](../ch01-670-gemini-app-rolling-out-extended-thinking-level-new-3rd-pa)
+- [A History Of Ides At Google](/ch03-038-a-history-of-ides-at-google/)
+- [gemini app rolling out](/ch01-670-gemini-app-rolling-out-extended-thinking-level-new-3rd-pa/)
 
 ---
 

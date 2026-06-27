@@ -8,21 +8,21 @@
 
 ## 相关实体
 
-- [从零构建大语言模型 —— 读完这篇你就懂了](../ch01-812-从零构建大语言模型-读完这篇你就懂了)
-- [canvas hackers shinyhunters say their official domain was su](../ch12-044-canvas-lms-攻击者-shinyhunters-官方域名被暂停-转向暗网的运营安全转向)
-- [canvas hackers shinyhunters say their official domain was su](../ch12-035-canvas-hackers-shinyhunters-say-their-official-domain-was-su)
-- [democratizing machine learning at netflix: building the mode](../ch11-224-democratizing-machine-learning-at-netflix-building-the-mode)
-- [from silos to service topology: why netflix built a real-tim](../ch11-138-from-silos-to-service-topology-why-netflix-built-a-real-tim)
-- [llmreaper - dom based ai conversation exfiltration via brows](../ch01-528-llmreaper-dom-based-ai-conversation-exfiltration)
-- [building is just the beginning: introducing discoverability](../ch12-076-building-is-just-the-beginning-introducing-discoverability)
-- [nemotron 3.5 content safety: customizable multimodal safety](../ch01-272-multimodal)
-- [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](../ch01-801-neurips-2026-使用闭源-ai-检测器-pangram-批量-desk-reject-论文事件)
+- [从零构建大语言模型 —— 读完这篇你就懂了](/ch01-812-从零构建大语言模型-读完这篇你就懂了/)
+- [canvas hackers shinyhunters say their official domain was su](/ch12-044-canvas-lms-攻击者-shinyhunters-官方域名被暂停-转向暗网的运营安全转向/)
+- [canvas hackers shinyhunters say their official domain was su](/ch12-035-canvas-hackers-shinyhunters-say-their-official-domain-was-su/)
+- [democratizing machine learning at netflix: building the mode](/ch11-224-democratizing-machine-learning-at-netflix-building-the-mode/)
+- [from silos to service topology: why netflix built a real-tim](/ch11-138-from-silos-to-service-topology-why-netflix-built-a-real-tim/)
+- [llmreaper - dom based ai conversation exfiltration via brows](/ch01-528-llmreaper-dom-based-ai-conversation-exfiltration/)
+- [building is just the beginning: introducing discoverability](/ch12-076-building-is-just-the-beginning-introducing-discoverability/)
+- [nemotron 3.5 content safety: customizable multimodal safety](/ch01-272-multimodal/)
+- [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](/ch01-801-neurips-2026-使用闭源-ai-检测器-pangram-批量-desk-reject-论文事件/)
 - qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件
-- [scaling camera file processing at netflix](../ch11-018-scaling-camera-file-processing-at-netflix)
-- [state of routing in model serving](../ch01-838-state-of-routing-in-model-serving)
-- [大模型可控新突破：steering 机制、评估体系与开源落地](../ch01-692-大模型可控新突破-steering-机制-评估体系与开源落地)
-- [the recent history of ai in 32 otters](../ch01-490-the-recent-history-of-ai-in-32-otters)
-- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](../ch01-730-吴恩达2026新课上线-3小时包教包会-零代码小白也能成为ai超级玩家)
+- [scaling camera file processing at netflix](/ch11-018-scaling-camera-file-processing-at-netflix/)
+- [state of routing in model serving](/ch01-838-state-of-routing-in-model-serving/)
+- [大模型可控新突破：steering 机制、评估体系与开源落地](/ch01-692-大模型可控新突破-steering-机制-评估体系与开源落地/)
+- [the recent history of ai in 32 otters](/ch01-490-the-recent-history-of-ai-in-32-otters/)
+- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](/ch01-730-吴恩达2026新课上线-3小时包教包会-零代码小白也能成为ai超级玩家/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 
 - MOC
@@ -56,12 +56,12 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
+- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch04-199-openclaw-完全指南/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

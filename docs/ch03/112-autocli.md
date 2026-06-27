@@ -32,7 +32,7 @@ AutoCLI 是一个用 Rust 实现的高速、内存安全的命令行网页信息
 - **云端增强**：AutoCLI.ai 加持
 
 ## autocli-skill
-专为 ClaudeCode / [OpenCLI](../ch03-080-opencli/) / [Hermes-Agent](../ch04-418-hermes-agent/) 设计的 Skill，让 AI Agent 能够获取整个互联网的信息、抓取任意网页内容。
+专为 ClaudeCode / [OpenCLI](/ch03-080-opencli//) / [Hermes-Agent](/ch04-418-hermes-agent//) 设计的 Skill，让 AI Agent 能够获取整个互联网的信息、抓取任意网页内容。
 
 ## 深度分析
 ### 定位与优势
@@ -52,12 +52,12 @@ autocli-skill（591 stars）作为 AutoCLI 的 AI Agent 接口层，其设计目
 4. **垂直场景也能做出影响力**：AutoCLI 聚焦网页抓取，而非追求功能大而全。对于工具类项目，在细分场景做到极致（如 55+ 平台覆盖）本身就是竞争力。
 
 ## Related
-- [CLI-Anything](../ch03-089-cli-anything/) — 让所有软件 Agent 原生化
-- [AgentBrowser](../ch04-451-agentbrowser/) — AI 专用浏览器
+- [CLI-Anything](/ch03-089-cli-anything//) — 让所有软件 Agent 原生化
+- [AgentBrowser](/ch04-451-agentbrowser//) — AI 专用浏览器
 - CLI-Tools 横向对比 — OpenCLI / CLI-Anything / AutoCLI / AgentBrowser 四项目对比
 
 ## 相关实体
-- [GBrain](../ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策/)
+- [GBrain](/ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策//)
 - MOC
 
 ---

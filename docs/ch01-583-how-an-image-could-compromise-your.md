@@ -33,11 +33,11 @@ CVE-2026-3102 是一次典型的 command injection（命令注入）漏洞，但
 - **供应链依赖审计**：使用 [Kaspersky Open Source Software Threats Data Feed](https://securelist.com/exiftool-compromise-mac/119866/) 持续监控开源组件，将 ExifTool 纳入软件物料清单（SBOM）管理范围
 
 ## 相关实体
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch12-020-how-an-image-could-compromise-your)
-- [Detect Ai Agent Traffic](../ch04-224-how-to-detect-ai-agents-on-your-website)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o)
-- [Detect Ai Agents Website](../ch04-011-how-to-detect-ai-agents-on-your-website-full-guide)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01-615-skill-issues-compromising-claude-code-with-malicious-skills)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](/ch12-020-how-an-image-could-compromise-your/)
+- [Detect Ai Agent Traffic](/ch04-224-how-to-detect-ai-agents-on-your-website/)
+- [Github Investigating Teampcp Claimed 17Cc77](/ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o/)
+- [Detect Ai Agents Website](/ch04-011-how-to-detect-ai-agents-on-your-website-full-guide/)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](/ch01-615-skill-issues-compromising-claude-code-with-malicious-skills/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/exiftool-compromise-mac-592994.md)
 

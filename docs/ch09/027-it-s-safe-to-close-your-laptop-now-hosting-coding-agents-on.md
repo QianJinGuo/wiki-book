@@ -84,13 +84,13 @@ Let’s see how AgentCore gets you both.
 **Any agent.** You can host Claude Code, Codex, Kiro, OpenCode, Cursor CLI, Gemini CLI, your own harness, and you can package anything into a container or a .zip. Push the container to Amazon Elastic Container Registry (Amazon ECR) or zip-deploy a [Python](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-toolkit.html>) or [Node.js](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-code-deploy-node.html>) project directly. You can bring your own dependencies in the image: language runtimes, build tools, git, system package
 
 ## 相关实体
-- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
-- [Amazon Quick Bedrock Agentcore Finops Chat](../ch11-124-用-amazon-quick-bedrock-agentcore-打造对话式-finops-助手/)
-- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04-200-deep-agents-bedrock-agentcore-多-agent-编排-隔离基础设施的端到端研究-ag/)
-- [development environments for your cloud agents](../ch09-090-development-environments-for-your-cloud-agents/)
+- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri//)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore//)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多//)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2//)
+- [Amazon Quick Bedrock Agentcore Finops Chat](/ch11-124-用-amazon-quick-bedrock-agentcore-打造对话式-finops-助手//)
+- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](/ch04-200-deep-agents-bedrock-agentcore-多-agent-编排-隔离基础设施的端到端研究-ag//)
+- [development environments for your cloud agents](/ch09-090-development-environments-for-your-cloud-agents//)
 - MOC
 
 ---

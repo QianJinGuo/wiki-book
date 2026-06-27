@@ -8,11 +8,11 @@
 - 评分：v=7 × c=8 = 56
 - Well-structured technical article explaining steering vectors with good clarity and logical flow. Demonstrates solid understanding of both naive and sophisticated steering approaches, referencing rele
 ## 相关实体
-- [Llm Steering Behavior Guidance](../ch01-432-llm-steering-行为引导/)
-- [Wetesteddeepseekv4Proandflashagainstclau](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- [Wetesteddeepseekv4Proandflashagainstclau](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](../ch01-860-deepseek-v4-flash-pro-million-token-context-and-trillion/)
-- [Deepseek V4 Pro Vs Claude](../ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
+- [Llm Steering Behavior Guidance](/ch01-432-llm-steering-行为引导//)
+- [Wetesteddeepseekv4Proandflashagainstclau](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7//)
+- [Wetesteddeepseekv4Proandflashagainstclau](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7//)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](/ch01-860-deepseek-v4-flash-pro-million-token-context-and-trillion//)
+- [Deepseek V4 Pro Vs Claude](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-flash-means-llm-steering-is-interesting-again.md)
 

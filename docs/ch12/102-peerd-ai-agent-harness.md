@@ -6,7 +6,7 @@
 
 # peerd: 浏览器原生的 AI Agent Harness
 
-peerd 是第一个完全运行在浏览器中的 [AI Agent Harness](../ch05-041-harness-engineering-概念框架/)——一个 Chrome/Firefox 扩展，在你现有的浏览器中运行完整的 agent loop，驱动你的标签页，启动沙箱化计算环境（JS Notebook、WASM Linux VM、客户端应用），并通过 WebRTC 网络实现 peer-to-peer 的 agent 间通信。
+peerd 是第一个完全运行在浏览器中的 [AI Agent Harness](/ch05-041-harness-engineering-概念框架//)——一个 Chrome/Firefox 扩展，在你现有的浏览器中运行完整的 agent loop，驱动你的标签页，启动沙箱化计算环境（JS Notebook、WASM Linux VM、客户端应用），并通过 WebRTC 网络实现 peer-to-peer 的 agent 间通信。
 
 ## 架构创新
 
@@ -76,9 +76,9 @@ Bring Your Own Key——用户可以连接任何模型提供商（OpenAI、Anthr
 
 ## 相关实体
 
-- [Agent Harness 工程框架](../ch05-041-harness-engineering-概念框架/)
+- [Agent Harness 工程框架](/ch05-041-harness-engineering-概念框架//)
 - Computer Use Agent
-- [Gemini 3.5 Flash Computer Use Agent Harness](../ch01-901-gemini-3-5-flash-内置-computer-use-能力/)
+- [Gemini 3.5 Flash Computer Use Agent Harness](/ch01-901-gemini-3-5-flash-内置-computer-use-能力//)
 - Agent 安全架构
 
 ---

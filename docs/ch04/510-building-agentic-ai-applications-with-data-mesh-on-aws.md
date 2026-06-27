@@ -56,7 +56,7 @@ Each step requires independent authorization. Single-point metadata filter canno
 ## Reference
 
 - Source: [Original Article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-agentic-ai-applications-with-a-modern-data-mesh-str.md)
-- Related: [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/)
+- Related: [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//)
 
 ---
 

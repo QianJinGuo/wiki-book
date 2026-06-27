@@ -11,15 +11,15 @@
 我猜可能是OpenAI真的在很努力跑分了，所以模型也在做题这事上优化得过度。以及，在GPT-5.5的System Card报告里，GPT-5.5有29%的情况会撒谎说自己完成了不可能完成的编程任务，远高于GPT-5.4和5.3版本。
 
 ## 相关实体
-- [Openai Gpt Realtime Voice Models Qbitai](../ch01-593-openai-gpt-realtime-voice-models-qbitai)
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](../ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价)
+- [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai/)
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](/ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价/)
 - Yann Dubois Openai Post Training Interview
-- [Openai Codex Super Computer Network Xinzhiyuan](../ch09-058-openai秘密矩阵曝光-codex将所有设备连成超级电脑)
-- [Gpt54 Codex Interconnects](../ch01-508-gpt-5-4-codex-评测-interconnects-的-agent-使用体验)
+- [Openai Codex Super Computer Network Xinzhiyuan](/ch09-058-openai秘密矩阵曝光-codex将所有设备连成超级电脑/)
+- [Gpt54 Codex Interconnects](/ch01-508-gpt-5-4-codex-评测-interconnects-的-agent-使用体验/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-55实测有点翻车nn写完文章后我已经拿codex中的gpt-55测了不少长步骤的复杂任务做动画做ppt做网站nn我的感受是这是个非常无聊的学霸会做题会尽.md)
 
-- [gpt -image 2神级提示词分享](../ch01-680-gpt-image-2神级提示词分享)
+- [gpt -image 2神级提示词分享](/ch01-680-gpt-image-2神级提示词分享/)
 
 ## 深度分析
 

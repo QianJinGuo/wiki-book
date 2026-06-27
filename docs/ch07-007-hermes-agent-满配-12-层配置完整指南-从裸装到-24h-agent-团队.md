@@ -25,7 +25,7 @@
 
 ## 相关实体
 
-- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch03-053-hermes-wiki-实战-obsidian-hermes-agent-自动生长知识网络的-9-步搭建法)
+- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](/ch03-053-hermes-wiki-实战-obsidian-hermes-agent-自动生长知识网络的-9-步搭建法/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-12-layer-full-configuration-guide.md)
 
 - MOC
@@ -255,7 +255,7 @@ hermes --continue
 
 - **使用 MemOS/memos-hermes-plugin 解决原生记忆的"记住但记得乱"问题**。该插件通过 LLM 判断去重（而非文本相似度）实现记忆库智能清理，并通过混合检索（关键词+语义）提升记忆召回率。对于长期高频使用 Hermes 的用户，这是 L3 Memory 层最重要的进阶配置 Memos Hermes Plugin。
 
-- **多 Agent 协作的起点是"研究与执行分离"，而非功能分工**。根据 [Hermes Four Agents Setup](../ch01-127-我给hermes配了4个agent) 的经验，多 Agent 架构的有效分工是按任务类型（研究 vs 执行）而非按功能模块（写代码 vs 写文档）。研究 Agent 需要长上下文和信息整合能力，执行 Agent 需要工具调用可靠性和步骤化执行能力，两者对模型能力的要求本质不同，混在一起会互相拖累。
+- **多 Agent 协作的起点是"研究与执行分离"，而非功能分工**。根据 [Hermes Four Agents Setup](/ch01-127-我给hermes配了4个agent/) 的经验，多 Agent 架构的有效分工是按任务类型（研究 vs 执行）而非按功能模块（写代码 vs 写文档）。研究 Agent 需要长上下文和信息整合能力，执行 Agent 需要工具调用可靠性和步骤化执行能力，两者对模型能力的要求本质不同，混在一起会互相拖累。
 
 ---
 

@@ -8,11 +8,11 @@
 - 来源：ciodive.com
 - 评分：v=5 c=12 (56分)
 ## 相关实体
-- [Engineering Roles Shift From Developing Code To Managing Ai](../ch05-059-engineering-roles-shift-from-developing-code-to-managing-ai/)
-- [From Doer To Director The Ai Mindset Shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift/)
-- [Gbhackers Sandworm Shift From It Breaches](../ch12-006-sandworm-hackers-shift-from-it-breaches-to-critical-ot-targe/)
-- [Hs.Playerzero Ai Code Review](../ch01-076-code-simulation-for-enterprise-engineering-playerzero/)
-- [Code Simulation For Enterprise Engineering Playerz](../ch01-119-code-simulation-for-enterprise-engineering-playerzero/)
+- [Engineering Roles Shift From Developing Code To Managing Ai](/ch05-059-engineering-roles-shift-from-developing-code-to-managing-ai//)
+- [From Doer To Director The Ai Mindset Shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift//)
+- [Gbhackers Sandworm Shift From It Breaches](/ch12-006-sandworm-hackers-shift-from-it-breaches-to-critical-ot-targe//)
+- [Hs.Playerzero Ai Code Review](/ch01-076-code-simulation-for-enterprise-engineering-playerzero//)
+- [Code Simulation For Enterprise Engineering Playerz](/ch01-119-code-simulation-for-enterprise-engineering-playerzero//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/engineering-roles-shift-from-developing-code-to-ma.md)
 

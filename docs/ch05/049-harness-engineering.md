@@ -90,8 +90,8 @@ Harness 的渐进披露信息系统：
 - Agent 总对自己的结果太宽容 → 验证流程更明确、更可观察、更可复盘
 
 ## 相关
-- [Harness Engineering 框架](../ch05-041-harness-engineering-概念框架/)
-- [Agent 工程实践](../ch04-435-agent-engineering-principles-architecture-practice/)
+- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架//)
+- [Agent 工程实践](/ch04-435-agent-engineering-principles-architecture-practice//)
 - OpenClaw 架构
 
 ## 深度分析
@@ -109,10 +109,10 @@ Harness 的渐进披露信息系统：
 5. **持续修正 Evaluator 本身**：提示词、评分标准、测试深度要根据真实误判不断修正——Evaluator 不是一次性建好就完事的，它本身也是需要被 Harness 的组件。
 
 ## 相关实体
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](../ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
-- [Harness Engineering 四根支柱与四要素架构](../ch05-077-harness-engineering-四根支柱与四要素架构/)
-- [Harness Engineering 指南（字节跳动TRAE）](../ch01-520-来自字节跳动trae的harness-engineering指南/)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](/ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务//)
+- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](/ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式//)
+- [Harness Engineering 四根支柱与四要素架构](/ch05-077-harness-engineering-四根支柱与四要素架构//)
+- [Harness Engineering 指南（字节跳动TRAE）](/ch01-520-来自字节跳动trae的harness-engineering指南//)
 
 ---
 

@@ -92,11 +92,11 @@
 - Budget Action 仅支持 IAM Policy 类操作（不直接支持 budget 调减）
 
 ## 相关实体
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
-- [Amazon Quick Bedrock Agentcore Finops Chat](../ch11-124-用-amazon-quick-bedrock-agentcore-打造对话式-finops-助手/)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
-- [Aws Bedrock Ops Alert](../ch11-093-amazon-bedrock-ops-alert-三层监控架构/)
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2//)
+- [Amazon Quick Bedrock Agentcore Finops Chat](/ch11-124-用-amazon-quick-bedrock-agentcore-打造对话式-finops-助手//)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多//)
+- [Aws Bedrock Ops Alert](/ch11-093-amazon-bedrock-ops-alert-三层监控架构//)
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-budget-bedrock-cost-governance.md)
 

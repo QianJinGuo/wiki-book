@@ -26,7 +26,7 @@
 4. **扩展用法**：Buildkite 支持在管道中调用外部服务（AWS、GCP）和自建工具，适合需要与内部系统深度集成的企业场景。可以将构建触发器嵌入到内部审批流程或监控系统中。  
 
 ## 相关实体
-- [Buildkite Pricing | Buildkite](../ch03-047-buildkite-pricing-buildkite)
+- [Buildkite Pricing | Buildkite](/ch03-047-buildkite-pricing-buildkite/)
 
 ---
 

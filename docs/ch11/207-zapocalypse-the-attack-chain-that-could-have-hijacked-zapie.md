@@ -75,12 +75,12 @@ def lambda_handler(event, context=None):
 
 ### 关联实体
 
-- [Google Brings Local Ai Agents To Laptops With Gemma 4 12B 20260606](../ch01-701-google-brings-local-ai-agents-to-laptops-with-gemma-4-12b/)
-- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch01-529-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务/)
-- [Ai Friendly Architecture Design Taobao](../ch01-634-面向-llm-的架构设计-什么是真正的-ai-friendly-架构/)
+- [Google Brings Local Ai Agents To Laptops With Gemma 4 12B 20260606](/ch01-701-google-brings-local-ai-agents-to-laptops-with-gemma-4-12b//)
+- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](/ch01-529-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务//)
+- [Ai Friendly Architecture Design Taobao](/ch01-634-面向-llm-的架构设计-什么是真正的-ai-friendly-架构//)
 - Headroom Context Compression Agent Vibecoder
-- [5237875](../ch12-047-ico-对-south-staffordshire-处以-96-3-万英镑罚款-2022-年-cl0p-勒索软件攻击暴露/)
-- [Demis Hassabis Yc Interview Jiedaotixi](../ch04-136-demis-hassabis-yc-interview-agi-时间线-记忆机制-agent-未来/)
+- [5237875](/ch12-047-ico-对-south-staffordshire-处以-96-3-万英镑罚款-2022-年-cl0p-勒索软件攻击暴露//)
+- [Demis Hassabis Yc Interview Jiedaotixi](/ch04-136-demis-hassabis-yc-interview-agi-时间线-记忆机制-agent-未来//)
 
 ## 实践启示
 

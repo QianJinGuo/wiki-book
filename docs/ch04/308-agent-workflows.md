@@ -76,19 +76,19 @@ ET = m × (1.0 × I + 0.1 × C + 4.0 × O)
 > Stub page — 内容待补充。
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
+- [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning//)
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/github-token-efficiency-agentic-workflows.md)
-- [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路/)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
-- [Garry Tan](../ch01-497-garry-tan/)
+- [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路//)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格//)
+- [Garry Tan](/ch01-497-garry-tan//)
 - Hermes Agent 新手上手指南
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
-- [四种 Sub Agent 模式](../ch04-302-四种-sub-agent-模式/)
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch04-024-qoder-skills-完全指南-agent-skill-迭代式编写-ai-按你的标准执行/)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化/)
-- [Agent Skill 设计模式](../ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
-- [柚漫剧 AI 全流程提效拆解](../ch01-356-柚漫剧-ai-全流程提效拆解/)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器/)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布//)
+- [四种 Sub Agent 模式](/ch04-302-四种-sub-agent-模式//)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](/ch04-024-qoder-skills-完全指南-agent-skill-迭代式编写-ai-按你的标准执行//)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](/ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化//)
+- [Agent Skill 设计模式](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段//)
+- [柚漫剧 AI 全流程提效拆解](/ch01-356-柚漫剧-ai-全流程提效拆解//)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](/ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器//)
 - MOC
 
 ---

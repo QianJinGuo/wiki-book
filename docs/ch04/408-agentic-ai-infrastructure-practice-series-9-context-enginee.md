@@ -93,8 +93,8 @@
 ## 相关实体
 
 - Context Engineering
-- [AI Coding 入门指南](../ch09-080-ai-coding-入门指南-如何更好地让-ai-真正帮你干活/)
-- [Harness Engineering](../ch05-041-harness-engineering-概念框架/)
+- [AI Coding 入门指南](/ch09-080-ai-coding-入门指南-如何更好地让-ai-真正帮你干活//)
+- [Harness Engineering](/ch05-041-harness-engineering-概念框架//)
 - MOC
 
 ---

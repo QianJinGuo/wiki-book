@@ -14,10 +14,10 @@
 ## 相关实体
 > 主题导航
 
-- [CloudSectiDbits: Masso - Cognito SSO Bypass](../ch11-209-cloudsectidbits)
-- [Vietnam to develop domestic cloud](../ch01-143-vietnam-to-develop-domestic-cloud)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)
+- [CloudSectiDbits: Masso - Cognito SSO Bypass](/ch11-209-cloudsectidbits/)
+- [Vietnam to develop domestic cloud](/ch01-143-vietnam-to-develop-domestic-cloud/)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](/ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
 
 - The Agency Model Dangers
 ## 深度分析

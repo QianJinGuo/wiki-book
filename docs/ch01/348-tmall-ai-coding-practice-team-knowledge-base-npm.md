@@ -148,11 +148,11 @@ AI 通过 curl 直接读取 npm cdn 资源（不依赖具体编码工具）
 ## Related
 
 ## 相关实体
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch09-066-tmall-ai-coding-practice-team-knowledge-base/)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
-- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](../ch01-645-柚漫剧-ai全流程提效拆解/)
-- [Boris Cherny Interview 2026 Ide To Agent Console](../ch04-315-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Tmall Ai Coding Practice Team Knowledge Base](/ch09-066-tmall-ai-coding-practice-team-knowledge-base//)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践//)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南//)
+- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](/ch01-645-柚漫剧-ai全流程提效拆解//)
+- [Boris Cherny Interview 2026 Ide To Agent Console](/ch04-315-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tmall-ai-coding-practice-team-knowledge-base-npm.md)
 

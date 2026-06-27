@@ -34,10 +34,10 @@
 5. **两阶段 AI 分类器** — 先 64t 快速判断放行，再 4096t 链式推理降低误报，都利用 prompt cache 复用
 
 ## 与现有知识关联
-- [Claude Code 架构解析](../ch01-571-claude-code-架构解析/) — 互补页面，本文更深更全面
+- [Claude Code 架构解析](/ch01-571-claude-code-架构解析//) — 互补页面，本文更深更全面
 - Claude Code Prompt/Context/Harness — 三层工程视角
-- [Prompt Caching 工程实践](../ch09-022-prompt-caching-工程实践-anthropic-claude-code-经验总结/) — 与 microCompact 相关
-- [Agent Harness 12 组件](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/) — Harness 通用框架
+- [Prompt Caching 工程实践](/ch09-022-prompt-caching-工程实践-anthropic-claude-code-经验总结//) — 与 microCompact 相关
+- [Agent Harness 12 组件](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架//) — Harness 通用框架
 - Claude Code Subagent 上下文卫生 — Sub-Agent 设计
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-source-deep-dive-warrior.md)
 
@@ -95,12 +95,12 @@ microCompact 通过 `cache_edits` 保留本地消息不变，解决的是"cache 
 在对 Claude Code 进行基准测试或功能对比时，必须使用 `--no-hooks` 参数禁用所有 Hooks，或者在测试报告中显式说明 Hooks 配置。因为 `PreToolUse` 可以修改工具输入、`PostToolUse` 可以修改工具输出、`UserPromptSubmit` 可以注入额外上下文——这些 Hook 行为会让测试结果无法复现，破坏评测的公平性。这个原则也适用于团队内部的 prompt 调优：调优过程中如果依赖 Hooks 注入上下文，调优得到的 prompt 参数在实际生产环境中可能表现不同。
 
 ## 相关实体
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
-- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制/)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层/)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](/ch07-006-claude-code-skills-mcp-rules-source-analysis//)
+- [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制//)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](/ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层//)
 - Claude Code Prompt 提示词体系源码解析
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-367-claude-code-harness-deep-understanding/)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](/ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客//)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-367-claude-code-harness-deep-understanding//)
 - MOC
 
 ---

@@ -7,9 +7,9 @@
 # System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Weight Models
 
 ## 相关实体
-- [unexpected lessons from an ai-assisted prototyping experimen](../ch01-033-unexpected-lessons-from-an-ai-assisted-prototyping-experimen/)
+- [unexpected lessons from an ai-assisted prototyping experimen](/ch01-033-unexpected-lessons-from-an-ai-assisted-prototyping-experimen//)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
-- [ai gpus probably live longer than three years](../ch01-044-ai-gpus-probably-live-longer-than-three-years/)
+- [ai gpus probably live longer than three years](/ch01-044-ai-gpus-probably-live-longer-than-three-years//)
 - ddosing software delivery pipelines
 
 ## 深度分析
@@ -29,12 +29,12 @@ System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Wei
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践/)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程/)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进//)
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制//)
+- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践//)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验//)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering//)
+- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程//)
 
 ## 实践启示
 1. **工程落地**: article领域方案需关注可观测性、可维护性和成本效率

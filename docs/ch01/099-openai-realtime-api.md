@@ -11,15 +11,15 @@
 > **参考原文**: https://openai.com/index/delivering-low-latency-voice-ai-at-scale/
 
 ## 相关实体
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake/)
-- [Openai Gpt Realtime Voice Models Qbitai](../ch01-593-openai-gpt-realtime-voice-models-qbitai/)
-- [Aliyun Agentrun 2Line Integration](../ch04-319-用两行代码将-agentrun-集成到你的应用/)
-- [Pi Mono Github](../ch01-608-pi-mono-github/)
-- [Prompt Debugger Compare Templates Winty](../ch01-606-prompt-debugger-compare-templates-winty/)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](/ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake//)
+- [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai//)
+- [Aliyun Agentrun 2Line Integration](/ch04-319-用两行代码将-agentrun-集成到你的应用//)
+- [Pi Mono Github](/ch01-608-pi-mono-github//)
+- [Prompt Debugger Compare Templates Winty](/ch01-606-prompt-debugger-compare-templates-winty//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-realtime-api-architecture.md)
 
-- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](../ch01-570-openai发布新一代实时语音模型-能够像人说话一样进行推理-翻译和转录/)
+- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](/ch01-570-openai发布新一代实时语音模型-能够像人说话一样进行推理-翻译和转录//)
 
 ## 深度分析
 

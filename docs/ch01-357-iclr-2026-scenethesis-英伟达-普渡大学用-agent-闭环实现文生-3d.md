@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](../ch04-263-iclr-2026-英伟达-普渡大学-用agent闭环实现文生3d)
+- [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](/ch04-263-iclr-2026-英伟达-普渡大学-用agent闭环实现文生3d/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/3CITzkDLeeDM0Olz9wudrg.md)
 
 - MOC
@@ -148,13 +148,13 @@ Scenethesis 的真正贡献在于范式层面：
 
 ## 关联实体
 
-- [Yann Dubois Openai Post Training Matt Turck Interview](../ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角) — OpenAI 后训练方法访谈
-- [Yann Lecun Llm Not Intelligence Jepa](../ch01-339-yann-lecun-谈-llm-不是智能与世界模型-jepa) — LeCun 关于 LLM 与空间智能的批判
-- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](../ch01-710-2026-年面向-llm-的-rl-方法总结-从-ppo-到-dpo-到-grpo-再到多智能体-rl) — 2026 LLM RL 算法综述
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on) — NVIDIA Isaac Lab 机器人 RL 扩展
-- [Minimax M3 Frontier Three Set Open Source](../ch01-814-国内首个-frontier-三件套开源大模型-minimax-m3-完整技术拆解) — MiniMax M3 开源前沿三件套
+- [Yann Dubois Openai Post Training Matt Turck Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/) — OpenAI 后训练方法访谈
+- [Yann Lecun Llm Not Intelligence Jepa](/ch01-339-yann-lecun-谈-llm-不是智能与世界模型-jepa/) — LeCun 关于 LLM 与空间智能的批判
+- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](/ch01-710-2026-年面向-llm-的-rl-方法总结-从-ppo-到-dpo-到-grpo-再到多智能体-rl/) — 2026 LLM RL 算法综述
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/) — NVIDIA Isaac Lab 机器人 RL 扩展
+- [Minimax M3 Frontier Three Set Open Source](/ch01-814-国内首个-frontier-三件套开源大模型-minimax-m3-完整技术拆解/) — MiniMax M3 开源前沿三件套
 - Nvidia Isaac Lab Sagemaker Robot Rl Humanoid — NVIDIA Isaac Lab + SageMaker 人形机器人 RL
-- [Four Sub Agent Patterns 2026](../ch04-287-agent-如何管理其他-agent-四种-sub-agent-模式) — 2026 四大子 Agent 模式
+- [Four Sub Agent Patterns 2026](/ch04-287-agent-如何管理其他-agent-四种-sub-agent-模式/) — 2026 四大子 Agent 模式
 
 ---
 

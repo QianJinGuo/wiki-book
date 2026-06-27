@@ -91,22 +91,22 @@ Point Estimate 对 AI Security Institute 基准测试的分析也印证了这一
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mythos_offensive_security_xbow_evaluatio.md)
 
 ## 相关实体
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题)
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07-029-qoder-skills-完全指南)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践)
-- [Claude Code Agent 工程设计](../ch04-015-claude-code-的-agent-工程)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01-677-anthropic)
-- [Agent Skill 设计模式](../ch01-677-anthropic)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题/)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](/ch07-029-qoder-skills-完全指南/)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
+- [Claude Code Agent 工程设计](/ch04-015-claude-code-的-agent-工程/)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](/ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化/)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](/ch01-677-anthropic/)
+- [Agent Skill 设计模式](/ch01-677-anthropic/)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](/ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器/)
 
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01-677-anthropic)
-- [Anthropic Claude Managed Agents 平台正式发布](../ch01-677-anthropic)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](/ch01-677-anthropic/)
+- [Anthropic Claude Managed Agents 平台正式发布](/ch01-677-anthropic/)
 
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch01-677-anthropic)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch01-677-anthropic)
-- [Anthropic Computer Use 最佳实践](../ch01-677-anthropic)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch01-677-anthropic/)
+- [Anthropic 14 个 Agent Skills 设计模式](/ch01-677-anthropic/)
+- [Anthropic Computer Use 最佳实践](/ch01-677-anthropic/)
 - MOC
 
 ---

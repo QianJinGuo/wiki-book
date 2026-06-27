@@ -117,12 +117,12 @@ Agent 和 Grader 两个接口的极简设计（各两个方法）降低了插件
 - 分布式执行
 
 ## 相关实体
-- [Anthropic Generator-Evaluator Harness](../ch05-080-claude-harness-设计-generator-evaluator-架构与-context-reset-演进/) — 另一种评测闭环思路
-- [Superpowers](../ch01-408-claude-code-skills-superpowers-practice/) — Agent 工作流规范
-- [Skill Writing Patterns](../ch07-003-工作流的-skill-怎么写-从-7-个顶级-skill-中提炼的模式与最佳实践/) — Skill 质量评估相关
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准/)
-- [AI Skill 测评指标体系](../ch01-383-ai-skill-测评指标体系/)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论/)
+- [Anthropic Generator-Evaluator Harness](/ch05-080-claude-harness-设计-generator-evaluator-架构与-context-reset-演进//) — 另一种评测闭环思路
+- [Superpowers](/ch01-408-claude-code-skills-superpowers-practice//) — Agent 工作流规范
+- [Skill Writing Patterns](/ch07-003-工作流的-skill-怎么写-从-7-个顶级-skill-中提炼的模式与最佳实践//) — Skill 质量评估相关
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](/ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准//)
+- [AI Skill 测评指标体系](/ch01-383-ai-skill-测评指标体系//)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](/ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论//)
 - Skills赏析：使用skills-refiner提升skill质量
 - MOC
 

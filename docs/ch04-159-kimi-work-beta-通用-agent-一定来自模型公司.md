@@ -98,13 +98,13 @@ Kimi Work Beta 的整体架构可以划分为四层：
 
 ## 相关实体
 
-- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01-159-kimi-work-通用-agent-战场从云端迁移到本地) — Vibe Working 范式的详细解析
-- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制) — Claude Code 的工程实现深度解读
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进) — Agent 记忆系统的架构设计
-- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践) — Agent 原理与工程实践全景
-- [Claude Code First Year Retrospective Boris Cat 2026](../ch09-010-claude-code-一周年回顾-boris-cherny-cat-wu-的完整时间线) — Claude Code 一周年回顾，验证「模型公司做 Agent」路线
-- [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务) — Harness 工程与 Agent 能力的关系
-- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01-677-anthropic) — 数据基础设施对 Agent 能力的制约
+- [Kimi Work Codex Vibe Working Paradigm Shift](/ch01-159-kimi-work-通用-agent-战场从云端迁移到本地/) — Vibe Working 范式的详细解析
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/) — Claude Code 的工程实现深度解读
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/) — Agent 记忆系统的架构设计
+- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/) — Agent 原理与工程实践全景
+- [Claude Code First Year Retrospective Boris Cat 2026](/ch09-010-claude-code-一周年回顾-boris-cherny-cat-wu-的完整时间线/) — Claude Code 一周年回顾，验证「模型公司做 Agent」路线
+- [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/) — Harness 工程与 Agent 能力的关系
+- [Anthropic Biology Agent Data Infrastructure Virbench](/ch01-677-anthropic/) — 数据基础设施对 Agent 能力的制约
 
 ---
 

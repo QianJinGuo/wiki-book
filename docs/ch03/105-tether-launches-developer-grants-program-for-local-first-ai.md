@@ -48,8 +48,8 @@ QVAC 平台的定位尤其值得关注：Tether CEO Paolo Ardoino 将 local-firs
 - **支付合规**：USDT 支付在某些地区存在监管模糊地带——在参与资助计划前，应评估所在司法管辖区的稳定币合规要求
 
 ## 相关实体
-- [Tether launches developer grants program for local AI payments](../ch09-115-tether-launches-developer-grants-program-for-local-ai-paymen/) — 同一事件的平行条目
-- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11-183-tether-launches-developer-grants-program-for-local-first-ai/) — 同一事件的平行条目
+- [Tether launches developer grants program for local AI payments](/ch09-115-tether-launches-developer-grants-program-for-local-ai-paymen//) — 同一事件的平行条目
+- [Tether launches developer grants program for local-first AI and payments infrastructure](/ch11-183-tether-launches-developer-grants-program-for-local-first-ai//) — 同一事件的平行条目
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tether-developer-grants-local-ai.md)
 [^1]: 原文为"research into decentralization and edge AI"，此处译为"去中心化与边缘 AI 研究"。
 

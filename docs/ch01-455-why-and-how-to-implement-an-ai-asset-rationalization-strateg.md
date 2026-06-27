@@ -13,9 +13,9 @@
 
 ## 相关实体
 
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级)
-- [LLM raiders and how to repel them](../ch01-589-llm-raiders-and-how-to-repel-them)
-- [LLM raiders and how to repel them](../ch01-590-llm-raiders-and-how-to-repel-them)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](/ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级/)
+- [LLM raiders and how to repel them](/ch01-589-llm-raiders-and-how-to-repel-them/)
+- [LLM raiders and how to repel them](/ch01-590-llm-raiders-and-how-to-repel-them/)
 
 ## 深度分析
 ### AI 资产理性化的本质

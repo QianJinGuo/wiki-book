@@ -19,12 +19,12 @@ Daniel San 给出的量化参考很有价值：半小时的探索性会话可能
 
 ## 相关实体
 - Claude Code vs OpenClaw Agent 记忆系统对比
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09-039-claude-md-12-条规则-karpathy-扩展模板/)
-- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制/)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南//)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](/ch09-039-claude-md-12-条规则-karpathy-扩展模板//)
+- [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制//)
 - Claude Code Subagent 上下文卫生
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
-- [claude-code-kairos-paradigm-2026](../ch01-282-claude-code-kairos-paradigm-2026/)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](/ch07-006-claude-code-skills-mcp-rules-source-analysis//)
+- [claude-code-kairos-paradigm-2026](/ch01-282-claude-code-kairos-paradigm-2026//)
 
 ---
 

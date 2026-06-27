@@ -522,11 +522,11 @@ PostToolUse hook 如果修改了文件，会再次触发 PostToolUse，形成连
 对于高安全要求的团队，建议至少部署一个 PostToolUse 的 Bash 审计日志 hook。所有 Claude 执行的操作都会被记录到 `.claude/audit.log`，并附 UTC 时间戳。这在事后回溯「当时执行了什么」时非常有用，也满足了合规审计的基本要求。记得把 audit.log 加到 `.gitignore`。
 
 ## 相关实体
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
-- [Claude Code Founder Harness 100 Lines](../ch01-487-最新claude-code创始人-编程已经解决了-harness重要性持续降低-cc未来只有100行代码/)
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch01-732-subagents-详解-claude-code-如何避免上下文污染/)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南//)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践//)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践//)
+- [Claude Code Founder Harness 100 Lines](/ch01-487-最新claude-code创始人-编程已经解决了-harness重要性持续降低-cc未来只有100行代码//)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](/ch01-732-subagents-详解-claude-code-如何避免上下文污染//)
 - MOC
 
 ---
