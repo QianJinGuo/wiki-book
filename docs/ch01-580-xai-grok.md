@@ -19,7 +19,7 @@ xAI 解散但 Grok 还活着。2026年5月6日马斯克官宣 xAI 解散并入 S
 - 马斯克需要 Grok 作为 X 平台 AI 能力的核心，也是与 OpenAI/Anthropic 博弈的筹码
 ## 相关实体
 - [Xai Grok Musk Training New Model Wechat](/ch04-182-xai-grok-musk-training-new-model-wechat/)
-- Xai Dissolved Grok Colossus2 Analysis
+- [Xai Dissolved Grok Colossus2 Analysis](/ch04-183-xai-grok-musk-training-new-model-wechat/)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](/ch01-055-快手首个打工人agent来了-工作秒变桌面软件-零代码-不烧token/)
 - [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](/ch01-168-chatgpt-官宣-26-位未来之星-他们是-穿墙少年-街头摊贩-盲童的朋友/)

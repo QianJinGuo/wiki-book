@@ -10,7 +10,7 @@ Opens in a new window Opens an external website Opens an external website in a n
 ## 相关实体
 - [Notion Ai Agents](/ch04-473-notion-just-turned-its-workspace-into-a-hub-for-ai-agents/)
 - [Amazon Turns Alexa Into Its Next Storefront](/ch01-050-amazon-turns-alexa-into-its-next-storefront/)
-- Senators Query Credit Bureaus On Bnpl 1
+- [Senators Query Credit Bureaus On Bnpl 1](/ch01-671-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra/)
 - [Openai Realtime Api Architecture](/ch01-084-openai-realtime-api-架构首次公开/)
 - [Tencent Ai Infra Backend Engineer Huangrunpeng](/ch01-285-tencent-ai-infra-backend-engineer-s-guide-to-ai-system-hard/)
 

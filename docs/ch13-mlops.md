@@ -1440,7 +1440,7 @@ SageMaker 训练 (PyTorch/TensorFlow)
 - [End To End Encrypted Ml Inference Sagemaker Fhe](/ch11-044-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a/)
 - [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](/ch11-047-基于-mig-技术在-amazon-sagemaker-hyperpod-上实现-gpu-虚拟化的最佳实践-亚马逊a/)
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](/ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake/)
-- Aws Sagemaker Sft Dpo Tool Calling
+- [Aws Sagemaker Sft Dpo Tool Calling](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-sagemaker-qualcomm-ai-hub-edge-npu-deployment.md)
 
@@ -1599,9 +1599,9 @@ pass@3 相比 pass@1 整体提升约 8pp，Sonnet 4.6 多模态任务提升 18.2
 
 ## 链接
 
-- Blog：https://unipat.ai/blog/SaaS-Bench
-- GitHub：https://github.com/UniPat-AI/SaaS-Bench
-- 论文：https://arxiv.org/abs/2605.15777
+- [Blog：https://unipat.ai/blog/SaaS-Bench](/ch03-050-ai-native-公司-dan-shipper-30-人做出-100-人产出-层次化思维-saas-6-维能力框架/)
+- [GitHub：https://github.com/UniPat-AI/SaaS-Bench](/ch11-065-microsoft-github-aws-ai-runtimewire-2026-06/)
+- [论文：https://arxiv.org/abs/2605.15777](/ch05-044-is-grep-all-you-need-harness-pwc-arxiv-2605-151/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/saas-bench-gui-agent-eval-unipat.md)
 
@@ -2078,9 +2078,9 @@ Oracle 将 MCG 部署在 OCI Container Engine for Kubernetes 上，结合 DAC（
 ## 相关实体
 - [Top 10 Design Gadgets Creative Professionals 2026](/ch03-024-top-10-design-gadgets-for-creative-professionals-that-will-c/)
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](/ch01-830-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
-- Context Engineering Three Memory Paradigms
+- [Context Engineering Three Memory Paradigms](/ch04-229-yidian-tianxia-context-engineering-agentic-ai/)
 - [Programbench Agent Benchmark](/ch04-152-programbench-agent-benchmark/)
-- Autoresearch Ai Scientific Discovery L0 L4 Challengehub
+- [Autoresearch Ai Scientific Discovery L0 L4 Challengehub](/ch04-078-高德-marketing-autoresearch-营销增长-ai-native-经营托管框架/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md)
 

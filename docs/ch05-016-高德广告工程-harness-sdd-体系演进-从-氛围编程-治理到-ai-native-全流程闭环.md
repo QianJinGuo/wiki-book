@@ -200,7 +200,7 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 - [Pi Openclaw Coding Harness](/ch05-032-coding-harness-工程本质-从-pi-到-openclaw/)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](/ch05-019-ai-production-development-workflow-openspec-superpowers-gsta/)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](/ch05-052-harness-engineering-ai-能在真正-出事会炸-的后端系统里写代码吗/)
-- K/S/T 知识底座（相关：K/S/T 是知识用途分类，本文在工程层落地）
+- [K/S/T 知识底座（相关：K/S/T 是知识用途分类，本文在工程层落地）](/ch04-246-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
 - [Harness Engineering 综述](/ch04-069-agent-harness-engineering-a-survey/)（相关：三阶段 Prompt→Context→Harness）
 - [Spec as AIOS (高德 App 平台)](/ch01-703-spec-as-aios-ai-native-全栈交付的抗熵架构/)（同团队同主题另一视角）
 

@@ -83,7 +83,7 @@ Model-Environment Co-Evolution 的两个方向：
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)
 - [17种Agent架构演进：控制流设计的完整演化史](/ch04-507-17种agent架构演进-控制流设计的完整演化史/)
 - [hermes-agent-self-evolving-source-analysis](/ch04-039-hermes-agent-self-evolving-source-analysis/)
-- Multi-Agent Systems
+- [Multi-Agent Systems](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
 - [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
 
 ---

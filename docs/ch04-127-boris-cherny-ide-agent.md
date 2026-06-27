@@ -16,7 +16,7 @@
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](/ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
-- Harness Design Peer Review Framework
+- [Harness Design Peer Review Framework](/ch11-235-agentscope-java-harness-framework-企业级-agent-分布式场景的-harness/)
 - [AutoResearch：多 Agent 自动化软件开发](/ch09-030-autoresearch-多-agent-自动化软件开发/)
 - [Agent 上下文窗口管理对比](/ch04-149-agent-上下文窗口管理对比/)
 - [Agent Harness 架构](/ch04-207-agent-harness-架构/)

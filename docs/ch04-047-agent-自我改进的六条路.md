@@ -151,7 +151,7 @@ graph TB
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](/ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
 - [hermes-agent-self-evolving-source-analysis](/ch04-039-hermes-agent-self-evolving-source-analysis/)
-- Harness Design Peer Review Framework
+- [Harness Design Peer Review Framework](/ch11-235-agentscope-java-harness-framework-企业级-agent-分布式场景的-harness/)
 - [Agent Memory 架构解析](/ch04-111-agent-memory-架构解析/)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-367-claude-code-harness-deep-understanding/)
 - [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制/)

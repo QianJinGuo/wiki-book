@@ -71,7 +71,7 @@ updated: 2026-06-19
 ## 相关实体
 - Pytorch In Kernel Recsys Optimization
 
-- Chroma To Qdrant 1M Vector Migration
+- [Chroma To Qdrant 1M Vector Migration](/ch11-175-向量数据库选型-chroma-vs-qdrant/)
 - [Unlocking Ai Flexibility In Europe A Guide To Cross Region I](/ch09-108-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region/)
 
 ---

@@ -329,7 +329,7 @@ Oz 和 AWS [AgentCore](/ch04-428-harness工程火遍硅谷-agentcore今天交卷
 - [Agent Harnesses Are Dead Long Live Agent Harnesses](/ch04-505-agent-harnesses-are-dead-long-live-agent-harnesses/) — Harness 演进观察
 - [Agent Memory Architecture](/ch04-146-agent-memory-架构本质/) — Agent Memory 架构综述
 - [57U6Xekcgtvkqxnnqg9Djq](/ch03-072-obsidian-claude-code-完整集成指南-五种知识管理策略/) — Obsidian + Claude Code 集成（个人版的跨 harness 记忆）
-- Agent Orchestration Patterns — Agent 编排模式
+- [Agent Orchestration Patterns — Agent 编排模式](/ch04-409-agent-orchestration/)
 - [Multi Agent Orchestration — 多 Agent 编排](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Harness 工程框架
 - [Agent Security Architecture — Agent 安全架构](/ch04-265-使用-aws-security-agent-构建应用安全闭环-从代码提交到漏洞修复的自动化之路/)
@@ -2424,7 +2424,7 @@ Agent 间交接时常见错误：把完整上下文塞给下一个 Agent。
 - [Owner Worker Verifier Architecture](/ch01-889-owner-worker-verifier-架构/)
 -
 
-- Cost Of Consensus
+- [Cost Of Consensus](/ch11-177-cost-effective-deployment-of-vision-language-models-for-pet/)
 - [Context Isolation](/ch01-892-上下文隔离/)
 - Adversarial Verification
 
@@ -3082,7 +3082,7 @@ Nature 2026 同日发表 Google Co-Scientist（Gemini 2.0 多智能体）和 Fut
 
 多智能体 + 领域专用文献接口 + 闭环实验能力 =下一代科研 AI 标配。
 ## 相关实体
-- Autoresearch Ai Scientific Discovery L0 L4 Challengehub
+- [Autoresearch Ai Scientific Discovery L0 L4 Challengehub](/ch04-078-高德-marketing-autoresearch-营销增长-ai-native-经营托管框架/)
 - [Rag技术框架的演进方向](/ch01-193-rag技术框架的演进方向/)
 - [构建基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
 - [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)

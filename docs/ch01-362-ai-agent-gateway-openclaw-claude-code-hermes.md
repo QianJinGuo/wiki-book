@@ -73,7 +73,7 @@
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](/ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件/)
 - [Claude Code 设计原则与对照分析](/ch01-403-claude-code-设计原则与对照分析/)
 - [Claude Code Integration Other Tools](/ch09-057-claude-code-集成其他工具指南/)
-- Local Vs Cloud Agent Deployment Strategy
+- [Local Vs Cloud Agent Deployment Strategy](/ch04-345-cloud-agent-development-environments-cursor-agent/)
 - Openclaw Architecture
 - [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](/ch09-077-claude-dispatch-接口力量-ai-从-chatbot-到-agent-interface-的转变/)
 

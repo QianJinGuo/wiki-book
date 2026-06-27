@@ -77,7 +77,7 @@ Bring Your Own Key——用户可以连接任何模型提供商（OpenAI、Anthr
 ## 相关实体
 
 - [Agent Harness 工程框架](/ch05-041-harness-engineering-概念框架/)
-- Computer Use Agent
+- [Computer Use Agent](/ch01-913-gemini-3-5-flash-computer-use/)
 - [Gemini 3.5 Flash Computer Use Agent Harness](/ch01-901-gemini-3-5-flash-内置-computer-use-能力/)
 - Agent 安全架构
 

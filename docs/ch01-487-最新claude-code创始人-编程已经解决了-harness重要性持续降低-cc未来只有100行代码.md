@@ -24,7 +24,7 @@ Claude Code创始人关于Harness和编程未来的观点。
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
 
 - Harness Component Expiry Evidence
-- Harness Component Expiry Build To Delete
+- [Harness Component Expiry Build To Delete](/ch04-393-how-to-build-audio-transcription-agent/)
 ## 深度分析
 ### 1. Product Overhang 是创新窗口，不是等完美再做事
 Boris 团队在 2024 年底判断模型能力已经「溢出」现有产品边界，选择在能力还未完全成熟时就启动产品构建。这是一种逆向思考方式——与其等待模型完美，不如在溢出节点就开始释放潜力。他们的判断从一开始就是确定的：「六个月内不会有 PMF，因为是在为下一代模型建产品」。这种预建未来产品的思维，与传统 MVP 思维完全相反，却是 AI 产品开发的特有节奏 。

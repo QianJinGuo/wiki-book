@@ -93,8 +93,8 @@ Yann 对 Harness 工程的判断务实但清醒：
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/)
-- **Post-Training**
-- **Reinforcement Learning**
+- [**Post-Training**](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/)
+- [**Reinforcement Learning**](/ch01-815-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
 - **Agent 评估方法**
 
 ---
