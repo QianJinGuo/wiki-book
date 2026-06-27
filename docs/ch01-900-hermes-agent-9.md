@@ -31,7 +31,7 @@
 - **学习拆成 6 块实体**：触发/审视/记录/回放/加载/执行，每块都可测、可治理、可企业化
 - **解耦原则**：主 Agent 专注干活，Review Agent 专注学习，Nudge Engine 负责触发，互不干扰
 - **工程化 > 玄学**：自进化不是 prompt 里的空话，是有真实代码、落盘文件、可复盘数据的工程系统
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-9-module-architecture-winty.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-9-module-architecture-winty.md)
 
 ## 深度分析
 ### 执行链与学习链的进程解耦

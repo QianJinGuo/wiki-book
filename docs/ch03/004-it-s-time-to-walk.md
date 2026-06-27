@@ -39,7 +39,7 @@ I am not sure what to call this. It is not a coworking space. It is not a coffee
 - [Defect Backlog Retention Report](/ch03-003-your-defect-backlog-is-a-retention-report/)
 - [Against Brain Damage](/ch03-016-against-brain-damage/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dictation-agents-human-workspace.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dictation-agents-human-workspace.md)
 
 ## 深度分析
 
@@ -75,7 +75,7 @@ Agent 吸收了生产层（typing → document、coding → implementation、mod
 
 5. **构建"隐私优先"的远程工作环境**：口述对隐私的要求天然限制了它的使用场景（不能在他人能听到的环境中口述机密信息）。这对于远程工作者是一个反向优势：在家中（或私密空间）工作的人在口述工具使用上反而比开放式办公室的同事更有优势。组织在设计混合办公策略时应考虑这一维度。 [^raw/articles/dictation-agents-human-workspace.md:43-46]
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dictation-agents-human-workspace.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dictation-agents-human-workspace.md)
 
 ---
 

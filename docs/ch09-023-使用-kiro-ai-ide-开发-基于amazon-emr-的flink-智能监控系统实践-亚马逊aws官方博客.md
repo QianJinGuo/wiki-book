@@ -83,7 +83,7 @@ MCP（Model Context Protocol）解决了 AI 无法实时获取外部信息和执
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
 - [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](/ch11-146-使用-kiro-ai-ide-开发-aws-cdk-部署架构-从模糊需求到三层堆栈的协作实战-亚马逊aws官方博客/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/developing-flink-monitoring-system-on-amazon-emr-with-kiro-ai-ide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/developing-flink-monitoring-system-on-amazon-emr-with-kiro-ai-ide.md)
 
 - [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](/ch11-110-ai-驱动的-graviton-迁移评估-kiro-power-实战指南-亚马逊aws官方博客/)
 

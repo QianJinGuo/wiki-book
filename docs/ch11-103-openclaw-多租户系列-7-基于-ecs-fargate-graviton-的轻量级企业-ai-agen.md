@@ -105,11 +105,11 @@ ECS Fargate 消除了集群管理负担——不需要管理 EC2 实例、不需
 ### 5. 从小规模验证开始
 不要一次性迁移到 ECS/Fargate 多租户架构——先从单租户 Fargate 部署验证，再逐步扩展到多租户。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-multi-7-ecs-fargate-graviton.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-multi-7-ecs-fargate-graviton.md)
 
 相关 entity：[Openclaw Multi 4](/ch04-440-openclaw-multi-4/)、[Openclaw Multi 1](/ch04-432-openclaw-multi-1/)、[Openclaw Multi Agent Team Practice V2](/ch04-038-openclaw-multi-agent-team-practice-v2/)、[Using Amazon Bedrock Agentcore Openclaw Multi 6](/ch11-165-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)、[Openclaw Comprehensive Guide](/ch04-199-openclaw-完全指南/)、[Multi Agent Architecture Retail Practice](/ch11-201-multi-agent-架构在零售供应链运营中的实践-贯穿数据-洞察与行动-亚马逊aws官方博客/)、[Agent Engineering Principles Architecture Practice](/ch04-435-agent-engineering-principles-architecture-practice/)
 
-相关 raw：[Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)、[Using Amazon Bedrock Agentcore Openclaw Multi 6](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-6.md)
+相关 raw：[Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)、[Using Amazon Bedrock Agentcore Openclaw Multi 6](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-6.md)
 
 ---
 

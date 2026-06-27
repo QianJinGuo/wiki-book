@@ -18,7 +18,7 @@
 - [Pi Mono Github](/ch01-608-pi-mono-github/)
 - [我用 Skillmd 做了一个简历生成器](/ch07-047-我用-skill-md-做了一个简历生成器/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/我用-skillmd-做了一个简历生成器.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/我用-skillmd-做了一个简历生成器.md)
 
 - MOC
 ## 深度分析

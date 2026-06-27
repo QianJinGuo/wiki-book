@@ -123,7 +123,7 @@ SOUL.md 作为人格层，解决的不是"Agent 说什么"的问题，而是"Age
 - Loongsuite Genai Semconv Alibaba
 - [Agent Evolution Four Stages Six Dimensions Aliyun](/ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-9-module-architecture-winty.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-9-module-architecture-winty.md)
 
 ---
 

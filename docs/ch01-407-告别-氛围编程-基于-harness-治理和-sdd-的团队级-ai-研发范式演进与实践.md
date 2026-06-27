@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/告别氛围编程基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/告别氛围编程基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践.md)
-从微信文章 [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/告别氛围编程基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/告别氛围编程基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践.md)
+从微信文章 [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/告别氛围编程基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ

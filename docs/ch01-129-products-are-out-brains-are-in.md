@@ -29,7 +29,7 @@
 - [Running An Ai Native Engineering Org](/ch01-045-running-an-ai-native-engineering-org/)
 - [White House Federal Identity Security Ai](/ch01-082-white-house-cyber-official-identity-security-matters-more/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/products-are-out-brains-are-in.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/products-are-out-brains-are-in.md)
 
 ---
 

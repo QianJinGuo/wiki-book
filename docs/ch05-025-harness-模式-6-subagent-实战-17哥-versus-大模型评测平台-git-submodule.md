@@ -16,7 +16,7 @@
 
 **量化结果**：1 天 → 约 2 小时，**效率提升 4 倍**（4 个功能升级统计）。vs OpenAI 10x 仍有差距。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-practical-17ge-versus-6-subagent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-practical-17ge-versus-6-subagent.md)
 
 ## 1. Vibe Coding → Harness 范式转变
 
@@ -260,7 +260,7 @@ next-step-prompt-e2e: "启动服务(后端8901/前端3001)并执行需求 {REQ-I
 - Peter Pang: Why Your "AI-First" Strategy Is Probably Wrong
 - Chrome DevTools MCP: https://github.com/ChromeDevTools/chrome-devtools-mcp
 - wangwei1237: 通过 Chrome DevTools MCP 增强 Agent 的浏览器操控能力
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-practical-17ge-versus-6-subagent.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-practical-17ge-versus-6-subagent.md)
 
 ## 相关实体
 

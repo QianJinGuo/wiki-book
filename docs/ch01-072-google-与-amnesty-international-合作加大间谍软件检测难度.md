@@ -4,16 +4,16 @@
 
 > 📊 Level ⭐ | 6.5KB | `entities/google-and-amnesty-international-teamed-up-to-make-it-harder.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
 
 ## 核心要点
 - 来源：cyberscoop.com
 - 评分：v=8, c=9, product=72
 - Google 推出 **Intrusion Logging** 功能，首个主流设备厂商专门针对高级手机间谍软件进行取证检测的特征
 - 与 Amnesty International、Reporters Without Borders 合作设计
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
 
 ## 相关实体
 - [Google and Amnesty International teamed up to make Android spyware detectable](/ch12-059-google-and-amnesty-international-teamed-up-to-make-android-s/)

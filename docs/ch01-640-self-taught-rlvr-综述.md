@@ -53,7 +53,7 @@
 - Baidu Wenxin Post Training Evolution
 - Vllm V0 To V1 Correctness Before Corrections
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/self-taught-rlvr-jd-cii-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/self-taught-rlvr-jd-cii-2026.md)
 
 ---
 

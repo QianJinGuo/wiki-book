@@ -94,7 +94,7 @@ Frida 在 Qt6 场景下的优势来自其 JavaScript 运行时允许动态构造
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](/ch01-019-nvidia-s-jensen-huang-bets-on-this-british-startup-to-build/)
 - [Why Im Leaving Github For Forgejo](/ch01-011-why-i-m-leaving-github-for-forgejo/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/runtime-instrumentation-of-qt6-apps-with-frida-part-1-getting-visibility.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/runtime-instrumentation-of-qt6-apps-with-frida-part-1-getting-visibility.md)
 
 ---
 

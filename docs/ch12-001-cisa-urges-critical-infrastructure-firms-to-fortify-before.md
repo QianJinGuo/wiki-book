@@ -10,7 +10,7 @@
 - **假设前提**：CISA 明确指出，在冲突场景下，第三方连接（电信、互联网、供应商、服务提供商、上游依赖）都不可靠，威胁行为者可能已获得 OT 网络访问权限
 - **双轨指导**：CISA 的 CI Fortify 指南涵盖两大核心能力——**Isolation（隔离）** 和 **Recovery（恢复）**
 - **评估服务**：除指南外，CISA 还提供"目标评估"服务，对参与组织进行韧性和隔离能力评估
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cisa-urges-critical-infrastructure-firms-to-fortify-before-i.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cisa-urges-critical-infrastructure-firms-to-fortify-before-i.md)
 
 ## 深度分析
 ### 1. CI Fortify 指南的战略背景

@@ -4,10 +4,10 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/基于-prowler-与-genai-构建金融行业智能合规中枢.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/基于-prowler-与-genai-构建金融行业智能合规中枢.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/基于-prowler-与-genai-构建金融行业智能合规中枢.md)
 
 ## Summary
-*(See [raw article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/基于-prowler-与-genai-构建金融行业智能合规中枢.md))*
+*(See [raw article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/基于-prowler-与-genai-构建金融行业智能合规中枢.md))*
 
 ## Notes
 *(Add your notes here)*
@@ -64,7 +64,7 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 该方案生成的合规审计报告分五个章节，分别服务 CISO/管理层（整体通过率、风险等级评估）、安全工程师（逐项：受影响资源、条款关联、风险说明）、运维团队（可执行的 CLI 命令和 IaC 代码片段）、合规/审计团队（失败条款交叉对照表）和项目经理（优先级路线图：紧急/短期/长期）。
 这种分层设计的核心洞察是：不同角色需要的信息粒度和形式是不同的。一份统一的合规报告服务多个角色，而不是每个角色准备一份独立的文档。在没有 AI 自动化的情况下，这种分层报告需要资深安全顾问数天时间才能完成；现在大语言模型可以在 30 秒内生成初稿。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/航班变更信息智能识别解决方案.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/航班变更信息智能识别解决方案.md)
 
 ### 5. 数据隐私的合规确认
 值得注意的是，该方案明确指出根据 Amazon Bedrock 的数据隐私合规标准，客户的提示词、安全扫描结果以及生成的报告都不会被用于训练底层的基座模型，确保金融级的数据隔离与隐私安全。 对于金融行业客户，这是一个关键的合规考量点——在使用云端 GenAI 服务时，需要确认服务提供商的数据处理政策，特别是涉及安全扫描结果等敏感信息时。

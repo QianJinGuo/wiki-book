@@ -14,7 +14,7 @@
 - [Introducing Claude Platform On Aws](/ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md)
 - [aws graviton5 m9g/m9gd 实例 ga 公告](/ch11-087-aws-graviton5-m9g-m9gd-实例-ga-公告/)
 
 ## 深度分析

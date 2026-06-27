@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.3KB | `entities/agent-skill-writing-guide.md`
 
-[Agent Skill Writing Guide](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-skill-writing-guide.md)
+[Agent Skill Writing Guide](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-skill-writing-guide.md)
 
 ## 核心价值
 Agent Skill = **岗位职责说明书 + 操作SOP + 避坑指南**的合集。让通用大模型秒变领域专家，不改变模型本身，通过结构化上下文注入实现。

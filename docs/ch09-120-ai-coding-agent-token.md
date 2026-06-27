@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 4.9KB | `entities/token-cost-control-coding-agent-devinyzeng-tencent.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/token-cost-control-coding-agent-devinyzeng-tencent.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/token-cost-control-coding-agent-devinyzeng-tencent.md)
 
 AI Coding Agent Token 成本优化的完整五层模型：使用习惯→模型路由→Context 工程→代码图谱→Agent 架构。devinyzeng/腾讯技术工程。
 

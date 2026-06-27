@@ -130,7 +130,7 @@
 - [Haptics Design — 交互设计](/ch01-488-haptics-design-and-implementation-microsoft-design/)
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-is-urban-density-design-a-clear-guide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-is-urban-density-design-a-clear-guide.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # 微软 1000 行代码，把 Claude Opus 干翻了 15 分
 
-> **来源**：前端Q / winty（2026-05-26）| 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/webwright-microsoft-1000-lines.md)
+> **来源**：前端Q / winty（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/webwright-microsoft-1000-lines.md)
 
 ## 深度分析
 
@@ -67,7 +67,7 @@ Webwright 将代码量级与主流框架对比：
 - [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
 - [Agent Memory Architecture Ruofei](/ch04-111-agent-memory-架构解析/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/webwright-microsoft-1000-lines.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/webwright-microsoft-1000-lines.md)
 
 ---
 

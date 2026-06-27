@@ -11,7 +11,7 @@
 - [agent-evalkit：aws 开源 cli agent 评测工具包](/ch11-026-agent-evalkit-aws-开源-cli-agent-评测工具包/)
 - [aws sagemaker ai agent guided workflows finetuning](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-cn-intelligent-device-assistant-consumer-agent-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-cn-intelligent-device-assistant-consumer-agent-2026.md)
 
 ## 核心要点
 
@@ -33,7 +33,7 @@
 - 消费级 agent 与企业级 agent 的对话模型差异显著：长上下文 + 品牌 voice vs 短上下文 + 结构化响应。
 - AgentCore 的 multi-agent 编排可以支撑 device + conversational 的混合 agent。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-cn-intelligent-device-assistant-consumer-agent-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-cn-intelligent-device-assistant-consumer-agent-2026.md)
 
 ---
 

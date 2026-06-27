@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/memory-agent-systems-cobanov.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/memory-agent-systems-cobanov.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/memory-agent-systems-cobanov.md)
 
 # AI Agent Memory Systems (Cobanov)
 Mert Cobanov: AI Agent Memory Systems 完整综述，向量DB/知识图谱/摘要/外部记忆模式
@@ -23,7 +23,7 @@ Mert Cobanov 的综述覆盖了 Agent 记忆系统的四种主流范式：向量
 **记忆质量保障**：在部署记忆系统之前，必须建立「记忆审计机制」（Memory Audit）——定期检查记忆内容的准确性、时效性和一致性。至少要实现：过时信息自动失效（TTL）、矛盾信息主动标记、关键决策点的记忆可追溯。
 **上下文窗口与记忆的边界**：记忆系统的存在不是为了无限扩展上下文，而是为了在有限的上下文窗口内提供「正确的信息」。理解这一点可以避免「给 Agent 越多记忆越好」的常见误区。记忆的粒度应该与任务需求匹配——过于粗糙的记忆无法有效检索，过于细粒度的记忆会产生检索噪音。
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/memory-agent-systems-cobanov.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/memory-agent-systems-cobanov.md)
 
 ## 相关资源
 - [Agent Memory 架构](/ch04-029-agent-memory-architecture-past-influence-future-ruofei/)

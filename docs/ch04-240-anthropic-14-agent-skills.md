@@ -18,7 +18,7 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - Skill 形式化理论 — Skill 的六元组定义与 DAG 步骤计划
 
 ## 原始存档
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-agent-skills-design-patterns-14.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-agent-skills-design-patterns-14.md)
 
 ## 元数据
 - **来源**: WeChat（data-flow）

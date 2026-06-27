@@ -51,7 +51,7 @@ Teams 模式的工程挑战尤为突出。死锁检测（A 等 B，B 等 A）需
 **Agent Pool 的状态管理是关键工程挑战**。当使用模式 3 时，主 Agent 需要准确追踪每个子 Agent 的状态——当前在做什么、是否在等待下一条消息、是否遇到了阻塞。这对模型的上下文管理能力有较高要求。建议在 Agent Pool 模式中引入显式的状态报告机制，让每个子 Agent 定期汇报自身状态，减少主 Agent 的状态追踪负担。
 **Teams 模式需要配套工程基础设施**。在启用模式 4 之前，需要确认以下能力已就位：死锁检测（超时机制 + 图遍历检测循环依赖）、冲突解决（文件锁或 OT/CRDT 类协同机制）、统一日志和 trace（追踪跨 Agent 消息链）、graceful shutdown 流程。没有这些基础设施，Teams 模式一旦出问题几乎无法调试。
 **混合模式是现实系统的常态**。大型工作流中，内联工具用于简单函数调用，Fan-Out 用于并行独立任务，Agent Pool 用于核心多步骤协作，Teams 用于需要真正分布式决策的子系统。理解每种模式的边界，才能在实际系统中做出正确的架构选择。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/four-sub-agent-patterns-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/four-sub-agent-patterns-2026.md)
 
 ## 相关实体
 - [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路/)

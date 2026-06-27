@@ -14,7 +14,7 @@
 - [Llm Raiders And How To Repel Them](/ch01-590-llm-raiders-and-how-to-repel-them/)
 - [How To Create Websites With Great Ux Designs](/ch01-114-how-to-create-websites-with-great-ux-designs-principles-and/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/huntress-edr-itdr.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/huntress-edr-itdr.md)
 
 ## 深度分析
 - **EDR 与 ITDR 的本质区别与协同必要性**：EDR（Endpoint Detection and Response）聚焦于端点层面的恶意行为监控——进程注入、文件写入、注册表修改等本地系统活动；而 ITDR（Identity Threat Detection and Response）专注于身份层——M365/Entra ID 中的异常登录、OAuth token 滥用、邮箱规则篡改等云身份行为。两者监控的是同一攻击链的不同阶段：EDR 看到攻击的「落地」，ITDR 看到攻击的「变现」。传统安全体系将二者割裂处理，导致响应滞后于攻击的横向移动。

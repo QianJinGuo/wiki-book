@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 12.8KB | `entities/factory-mission-multi-agent-architecture.md`
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/factory-mission-multi-agent-architecture.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/factory-mission-multi-agent-architecture.md)
 
 # Factory Mission — Multi-Agent 架构方法论
 ## 核心定位

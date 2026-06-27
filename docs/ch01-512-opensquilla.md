@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/opensquilla.md`
 
-→ [原文存档 — Meta Skill](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)
+→ [原文存档 — Meta Skill](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)
 
 ## Key Research
 ### OpenSquilla Launches Open-Source AI Agent

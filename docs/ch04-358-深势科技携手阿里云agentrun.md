@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/deeppotential-alibabacloud-agentrun-scientific-ai.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deeppotential-alibabacloud-agentrun-scientific-ai.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deeppotential-alibabacloud-agentrun-scientific-ai.md)
 
 ## 摘要
 深势科技携手阿里云AgentRun，加速科研 AI Agent 全速运行

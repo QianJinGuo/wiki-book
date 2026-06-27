@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐ | 4.6KB | `entities/why-internally-built-ai-fails-fund-accounting-audits.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/why-internally-built-ai-fails-fund-accounting-audits.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/why-internally-built-ai-fails-fund-accounting-audits.md)
 
 ## 核心要点
 - ...
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/why-internally-built-ai-fails-fund-accounting-audits.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/why-internally-built-ai-fails-fund-accounting-audits.md)
 
 ## 深度分析
 **AI 在基金会计中面临的是审计架构问题，而非性能问题。** COSO 2026 年生成式 AI 指引与 PCAOB AS 2201 共同将 AI 审计标准明确为两个核心问题：①能否证明 AI 看了什么（输入的可验证性）；②能否证明系统与上季度运行的是同一个（可重现性）。这两个问题对任何通用聊天界面包装的内部 AI 都是结构性挑战：会话历史可编辑、模型静默漂移、输出非确定性、缺乏版本控制。

@@ -138,7 +138,7 @@ Fan-out 触发时，确保并行节点之间**无状态依赖**。如果 `search
 ## 相关主题
 - [Anthropic Mcp Revisited](/ch07-044-anthropic-mcp-重新定义-tool-search-代码编排/) — MCP 是云端 Agent 标准化接入层，与 LangGraph 的工具调用层有协同关系
 -  — Skill 编写规范，LangGraph 可作为 Skill 的执行引擎
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langgraph-state-machine-under-the-hood.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langgraph-state-machine-under-the-hood.md)
 
 ---
 

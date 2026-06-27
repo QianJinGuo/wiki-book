@@ -17,7 +17,7 @@
 - [Agentic Ai System Architecture Harness Skill Mcp](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
 - [Agent Skill Writing Guide](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillsieve-agent-skill-security.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillsieve-agent-skill-security.md)
 
 ## 深度分析
 

@@ -168,7 +168,7 @@ export ANTHROPIC_API_KEY=sk-ant-...    # 唯一必需的 key
 - [Gray Swan](/ch01-900-red-teaming-after-mythos-zico-kolter-matt-fredrikson-gr/) — AI 安全与 red-teaming
 - [Role Confusion](/ch01-500-prompt-injection-as-role-confusion/) — Prompt injection 理论
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kipi-osint-autonomous-agent-investigation.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kipi-osint-autonomous-agent-investigation.md)
 
 ---
 

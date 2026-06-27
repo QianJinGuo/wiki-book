@@ -6,7 +6,7 @@
 
 # Apple corecrypto formal verification blueprint — post-quantum ML-KEM/ML-DSA in iMessage
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/apple-corecrypto-formal-verification-blueprint.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/apple-corecrypto-formal-verification-blueprint.md)
 
 Apple Security Engineering and Architecture (SEAR) 联合 Hardware Technologies Formal Verification 团队发布的第一方技术披露，详细介绍了 Apple 如何在 iMessage 部署 PQ3 协议栈（ML-KEM/ML-DSA，FIPS 203/204）时对 corecrypto 核心实现进行**形式化验证**。这是大型科技公司公开其核心密码学代码形式化验证方法论的少数案例之一，对安全工程、Harness Engineering、Post-Quantum 迁移都有借鉴价值。
 

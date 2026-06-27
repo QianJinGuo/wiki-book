@@ -121,7 +121,7 @@ hermes dashboard
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航/)
 - [我用 Skillmd 做了一个简历生成器](/ch07-047-我用-skill-md-做了一个简历生成器/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-getting-started-guide-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-getting-started-guide-2026.md)
 
 ---
 

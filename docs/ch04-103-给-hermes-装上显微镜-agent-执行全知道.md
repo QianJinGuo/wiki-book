@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.6KB | `entities/hermes-observability-aliyun.md`
 
-[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-observability-aliyun.md)
+[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-observability-aliyun.md)
 
 ## 背景
 Hermes 是 Nous Research 打造的一套自治式 AI Agent 运行框架。它不是单次问答式的模型封装，而是一个能够持续运行、调用工具、积累经验、并随着使用过程不断成长的 Agent Runtime。

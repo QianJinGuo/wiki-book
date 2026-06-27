@@ -8,7 +8,7 @@
 
 ## 相关实体
 - [unexpected lessons from an ai-assisted prototyping experimen](/ch01-033-unexpected-lessons-from-an-ai-assisted-prototyping-experimen/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
 - [ai gpus probably live longer than three years](/ch01-044-ai-gpus-probably-live-longer-than-three-years/)
 - [ddosing software delivery pipelines](/ch14-data/)
 

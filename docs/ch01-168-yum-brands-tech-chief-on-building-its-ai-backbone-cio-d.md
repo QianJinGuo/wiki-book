@@ -35,7 +35,7 @@
 - [Notion Dev Platform](/ch03-042-build-with-notion-s-developer-platform-notion/)
 - [Browser Harness Github](/ch05-066-browser-harness-github/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/819775.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/819775.md)
 
 ---
 

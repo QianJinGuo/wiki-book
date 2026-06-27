@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](/ch11-032-aws-network-firewall-审查-idc-vpc-流量-vgw-架构-bgp-路由传播实验/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
 
 - MOC
 ## 深度分析

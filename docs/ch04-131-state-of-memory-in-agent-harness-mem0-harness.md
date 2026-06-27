@@ -6,7 +6,7 @@
 
 # State of Memory in Agent Harness — mem0 视角的九大 harness 横评
 
-> 出处: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/state-of-memory-in-agent-harness-mem0-2026.md) · 作者 mem0 · 2026-06-11
+> 出处: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/state-of-memory-in-agent-harness-mem0-2026.md) · 作者 mem0 · 2026-06-11
 > 原帖: x.com/mem0ai/status/2061822612398014782
 
 ## TL;DR

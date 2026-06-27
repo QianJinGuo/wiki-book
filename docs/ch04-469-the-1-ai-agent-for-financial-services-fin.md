@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/the-1-ai-agent-for-financial-services-fin.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-1-ai-agent-for-financial-services-fin.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-1-ai-agent-for-financial-services-fin.md)
 
 ## 核心要点
 - AI Agent 解决方案，专为金融服务设计
 - 评分：value=7, confidence=8, product=56
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-1-ai-agent-for-financial-services-fin.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-1-ai-agent-for-financial-services-fin.md)
 
 ## 深度分析
 Fin 代表了当前 AI Agent 在垂直行业落地的一种成熟范式：领域适配型 Agent 系统。其核心架构（Fin AI Engine + Procedures）揭示了几个关键设计决策：

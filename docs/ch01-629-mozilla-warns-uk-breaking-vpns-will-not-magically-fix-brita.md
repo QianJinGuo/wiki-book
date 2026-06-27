@@ -13,7 +13,7 @@
 - [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](/ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess-1.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess-1.md)
 - [不用学ai了！圈内公开的秘密：顶级玩家已开始让ai用ai](/ch01-458-不用学ai了-圈内公开的秘密-顶级玩家已开始让ai用ai/)
 
 ## 深度分析

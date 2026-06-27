@@ -15,7 +15,7 @@
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](/ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
 - [Openclaw Multi 4](/ch04-440-openclaw-multi-4/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-aidl-paradigm-shift-platform-driven-data-engineering.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-aidl-paradigm-shift-platform-driven-data-engineering.md)
 
 ## 深度分析
 

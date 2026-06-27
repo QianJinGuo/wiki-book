@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/agentic-search-models-softwaredoug.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-search-models-softwaredoug.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-search-models-softwaredoug.md)
 
 ## Summary
 7×8=56 - Article ingested from newsletter candidate pipeline.
 
 ## Notes
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-search-models-softwaredoug.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-search-models-softwaredoug.md)
 
 ## 相关实体
 - [Claude Code开发负责人：为何放弃RAG而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)

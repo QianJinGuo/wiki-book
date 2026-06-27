@@ -77,7 +77,7 @@ Cursor 的快速/默认双版本策略提供了一个商业参考：当你的模
 - [Understand Anything Code Knowledge Graph Lum Jike](/ch09-061-老代码克星-36k-star的-ai-神器-跑一条命令就把项目结构整明白了/)
 - [Cloud Agent Development Environments](/ch04-342-cloud-agent-development-environments-cursor-云端-agent-开发环境/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cursor.com-composer-2-5.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor.com-composer-2-5.md)
 
 ---
 

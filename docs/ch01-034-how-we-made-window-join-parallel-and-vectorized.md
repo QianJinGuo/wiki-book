@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 8.8KB | `entities/how-we-made-window-join-parallel-and-vectorized.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-we-made-window-join-parallel-and-vectorized.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-we-made-window-join-parallel-and-vectorized.md)
 
 ## 相关实体
 

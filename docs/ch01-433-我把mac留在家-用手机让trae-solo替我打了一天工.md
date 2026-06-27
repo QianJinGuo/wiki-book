@@ -19,7 +19,7 @@ review_stars: 3
 - [Anthropic Claude Managed Agents Platform 2026](/ch01-677-anthropic/)
 - [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/我把mac留在家用手机让trae-solo替我打了一天工.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/我把mac留在家用手机让trae-solo替我打了一天工.md)
 
 - [trae solo work 模式 + 飞书多维表格 5 步教程](/ch04-349-trae-solo-work-模式-飞书多维表格-5-步教程/)
 

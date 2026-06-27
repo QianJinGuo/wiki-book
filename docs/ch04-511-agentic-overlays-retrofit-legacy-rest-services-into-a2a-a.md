@@ -51,7 +51,7 @@ For enterprises with large REST microservice estates (finance, telecom, governme
 
 ## Reference
 
-- Source: [Original Article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/retrofit-dont-rebuild-agentic-overlays-for-transforming-lega.md)
+- Source: [Original Article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/retrofit-dont-rebuild-agentic-overlays-for-transforming-lega.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/computerweekly-ico-fines-cl0p-south-staffs-water.md`
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/computerweekly-ico-fines-cl0p-south-staffs-water.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/computerweekly-ico-fines-cl0p-south-staffs-water.md)
 
 ## 核心要点
 - 英国 ICO 罚金 South Staffs Water，原因是 Cl0p 勒索软件攻击导致数据泄露
@@ -23,7 +23,7 @@
 2. **建立完善的漏洞管理流程**：及时安装安全补丁是基础，但更重要的是建立对第三方软件依赖的全面清单，了解每个组件的潜在风险，并制定应急预案。
 3. **关键基础设施运营商应主动进行合规审查**：定期对照 ICO/DPA 指南进行自我评估，确保数据保护措施与法律要求保持一致。特别关注特殊类别数据（健康、财务等）的保护。
 4. **将供应链安全纳入整体安全战略**：对供应商进行安全评估，在合同中加入安全条款，并建立供应商安全事件响应机制。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/computerweekly-ico-fines-cl0p-south-staffs-water.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/computerweekly-ico-fines-cl0p-south-staffs-water.md)
 
 ## 相关实体
 - [ICO fines South Staffordshire £963K over 2022 breach](/ch12-106-ico-fines-south-staffordshire-963k-over-2022-breach/)

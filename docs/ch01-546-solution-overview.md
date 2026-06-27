@@ -64,7 +64,7 @@ The next section describes the four documents tried as a part of this project an
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](/ch01-536-workflow-architecture/)
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](/ch01-295-一-关于-kollab/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/process-financial-documents-using-amazon-bedrock-data-automa.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/process-financial-documents-using-amazon-bedrock-data-automa.md)
 
 ## 相关主题
 

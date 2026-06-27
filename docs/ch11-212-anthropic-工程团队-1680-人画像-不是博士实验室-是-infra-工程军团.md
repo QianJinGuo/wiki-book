@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/anthropic-engineering-team-1680-portrait-sebastian-cuadros.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-engineering-team-1680-portrait-sebastian-cuadros.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-engineering-team-1680-portrait-sebastian-cuadros.md)
 
 Sebastian Cuadros 基于 LinkedIn 5306 人数据筛选出 1680 名 Anthropic 工程师的画像分析：不是"博士实验室"，而是高速扩张的基础设施公司。
 

@@ -17,7 +17,7 @@
 - Openclaw Prompt Context Harness
 - [Anthropic Managed Agents Scaling](/ch01-677-anthropic/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-prompt-to-harness-claude-official.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-prompt-to-harness-claude-official.md)
 
 ## 深度分析
 
@@ -43,7 +43,7 @@
 
 **每次会话结束执行"清洁状态五件事"**：构建通过、测试通过、进度更新、临时垃圾清掉、下一个会话能直接启动。这确保了下一次 Agent 接入时系统处于确定性的干净状态 。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-prompt-to-harness-claude-official.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-prompt-to-harness-claude-official.md)
 
 ---
 

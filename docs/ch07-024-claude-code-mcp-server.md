@@ -77,7 +77,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 5. **MCP 工具和内置工具对模型没有区别**
    `tools[]` 里格式完全一致，模型无法区分。区别只在 Agent 侧的执行路由：内置工具本地执行，MCP 工具转发到外部 Server。
 > 参考源码：claude-code-source-code v2.1.88（泄漏源码） https://github.com/anthropics/claude-code
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-skills-mcp-rules-source-analysis.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-skills-mcp-rules-source-analysis.md)
 
 ## 相关实体
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](/ch07-006-claude-code-skills-mcp-rules-source-analysis/)
@@ -103,7 +103,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
 - [Harness如何支撑Agent在生产环境稳定运行？](/ch04-127-harness如何支撑agent在生产环境稳定运行/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 
 - [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
 - MOC

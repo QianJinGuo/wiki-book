@@ -41,7 +41,7 @@ NEO-unify 架构的核心创新在于**移除了视觉编码器（VE）和变分
 - [Aws Sagemaker Ai Agent Guided Workflows Finetuning](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
 - [Genesis Ai Gene 25 Embodied Foundation Model](/ch01-624-蛰伏一年-周衔团队带来首个具身基础模型-烹饪做实验弹琴-效果炸场/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sensnova-u1-sensetime.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sensnova-u1-sensetime.md)
 
 ---
 

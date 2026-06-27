@@ -6,7 +6,7 @@
 
 # LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/blog-ai-chat-llmreaper.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/blog-ai-chat-llmreaper.md)
 
 ## 摘要
 
@@ -96,7 +96,7 @@ LLMReaper 的技术与 2024-2025 年 Chrome Web Store 大规模恶意扩展事�
 - `Shub Reaper Macos Stealer Attack Chain` — 类似命名（macOS stealer）的攻击链
 - `Llmshare Using Shared Chatbot Pages To Distribute Malware 20260606` — LLM 相关恶意软件分发
 - `Zapocalypse The Attack Chain That Could Have Hijacked Zapier 20260606` — AI 平台攻击链分析
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/blog-ai-chat-llmreaper.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/blog-ai-chat-llmreaper.md)
 
 ---
 

@@ -12,7 +12,7 @@
 
 ## 深入分析
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md)
 
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=7, stars=4。
 
@@ -79,7 +79,7 @@
 
 ## 相关主题
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md)
 
 ---
 

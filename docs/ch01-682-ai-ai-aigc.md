@@ -16,7 +16,7 @@
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](/ch01-055-快手首个打工人agent来了-工作秒变桌面软件-零代码-不烧token/)
 - [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](/ch01-168-chatgpt-官宣-26-位未来之星-他们是-穿墙少年-街头摊贩-盲童的朋友/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/快来-和ai实战派一起ai-aigc峰会最新嘉宾阵容来了.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/快来-和ai实战派一起ai-aigc峰会最新嘉宾阵容来了.md)
 
 ## 深度分析
 

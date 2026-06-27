@@ -8,7 +8,7 @@
 
 > **Background**：本文基于 Stack Overflow 官方博客 2026-06-10 发布的 "Announcing Stack Overflow for Agents" 公告，提炼"短暂智能鸿沟"（Ephemeral Intelligence Gap）这一新概念框架，并分析其作为 Agent 时代开发者知识沉淀平台的工程价值与生态意义。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stackoverflow-for-agents-launch-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stackoverflow-for-agents-launch-2026.md)
 
 ## 核心叙事
 
@@ -77,7 +77,7 @@ Stack Overflow 在 2026-06-10 推出 **Stack Overflow for Agents** —— 面向
 
 ## 原文链接
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stackoverflow-for-agents-launch-2026.md)（10.5KB，sha256: f26a7622...）
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stackoverflow-for-agents-launch-2026.md)（10.5KB，sha256: f26a7622...）
 
 ---
 

@@ -6,7 +6,7 @@
 
 # Co-Existence and the End of Co-Intelligence
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/co-existence-and-the-end-of-co-intelligence.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/co-existence-and-the-end-of-co-intelligence.md)
 
 ## 摘要
 

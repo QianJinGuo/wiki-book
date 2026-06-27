@@ -12,7 +12,7 @@
 - 新的侧边栏、日历视图和运行卡片提升了调度任务的可追踪性。
 - 用户可选择运行选项（同一任务内继续或创建独立任务）、跳过确认、连接外部数据源等高级设置。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-scheduled-tasks-2-0.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-scheduled-tasks-2-0.md)
 
 ## 从"时间驱动"到"上下文驱动"的范式转变
 

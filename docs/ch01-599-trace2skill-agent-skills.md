@@ -18,7 +18,7 @@
 - [Agentic Ai System Architecture Harness Skill Mcp](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
 - [Memory Agent Systems Cobanov](/ch04-458-memory-agent-systems-cobanov/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/trace2skill-trajectory-distillation-agent-skills.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/trace2skill-trajectory-distillation-agent-skills.md)
 
 ## 深度分析
 

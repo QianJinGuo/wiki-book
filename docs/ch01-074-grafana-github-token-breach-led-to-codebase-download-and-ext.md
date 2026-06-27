@@ -18,7 +18,7 @@
 - [Malware Crew Teampcp Opensources Its Shaihulud Worm On](/ch01-062-malware-crew-teampcp-open-sources-its-shai-hulud-worm-on-git/)
 - [What Political Censorship Looks Like Inside An Llm S Weights](/ch01-108-what-political-censorship-looks-like-inside-an-llm-s-weights/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md)
 
 - Cios Rise To The Global Challenge
 - [Dumb Ways For An Open Source Project To Die](/ch01-106-dumb-ways-for-an-open-source-project-to-die/)

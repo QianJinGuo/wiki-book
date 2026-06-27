@@ -15,7 +15,7 @@
 - [Ai Skill Metrics System](/ch01-383-ai-skill-测评指标体系/)
 - [Harness Engineering Systematic Explainer](/ch05-036-harness-engineering-systematic-explainer/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/spotify-llm-evals-funnel-not-fork.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spotify-llm-evals-funnel-not-fork.md)
 
 - MOC
 ## 深度分析

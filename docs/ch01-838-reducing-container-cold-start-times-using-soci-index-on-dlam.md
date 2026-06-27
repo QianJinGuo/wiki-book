@@ -6,7 +6,7 @@
 
 # Reducing container cold start times using SOCI index on DLAMI and DLC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/reducing-container-cold-start-times-using-soci-index-on-dlam.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/reducing-container-cold-start-times-using-soci-index-on-dlam.md)
 
 ## 深度分析
 

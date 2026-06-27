@@ -184,7 +184,7 @@ Status: success
 
 > **关联**：四层验证体系是 [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/) 在 AI Skill 评测场景的具体实现——Layer 0-1 对应 Harness 的执行基础设施，Layer 2a/2b 对应评估回路，Layer 3 对应可观测性管道。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-skill-四层验证体系.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-skill-四层验证体系.md)
 
 ## 深度分析
 

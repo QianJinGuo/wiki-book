@@ -20,7 +20,7 @@
 - [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
 - [Agentcore Harness](/ch04-206-agentcore-managed-harness/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcore-managed-harness.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentcore-managed-harness.md)
 
 - MOC
 ## 深度分析

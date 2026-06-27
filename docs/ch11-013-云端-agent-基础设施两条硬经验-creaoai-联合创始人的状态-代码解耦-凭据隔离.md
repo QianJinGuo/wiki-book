@@ -291,7 +291,7 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 - [ ] **可观测性**：所有进出沙箱的流量在桥接层集中审计
 - [ ] **失败兜底**：任何 hot-swap 失败立即换新沙箱，不允许半升级状态
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-techliwen-creaoai-cloud-agent-infrastructure-two-lessons-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-techliwen-creaoai-cloud-agent-infrastructure-two-lessons-20260606.md)
 
 ---
 

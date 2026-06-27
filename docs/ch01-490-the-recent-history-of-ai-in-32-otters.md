@@ -101,7 +101,7 @@ Mollick 的核心判断：我们正在逼近一个临界点——AI 生成的图
 - [OLMo Hybrid LLM Architectures](/ch01-370-olmo-hybrid-and-future-llm-architectures/)
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-recent-history-of-ai-in-32-otters.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-recent-history-of-ai-in-32-otters.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # Here's The Rub: We Don't Believe You
 
-> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/randsinrepose-we-dont-believe-you-rub.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/randsinrepose-we-dont-believe-you-rub.md)
 
 ## 核心要点
 
@@ -40,7 +40,7 @@ Before you arrive, we’re going to tell you what we think needs to be fixed. Yo
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 randsinrepose.com 视角
-- 引用源：[Randsinrepose We Dont Believe You Rub](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/randsinrepose-we-dont-believe-you-rub.md)
+- 引用源：[Randsinrepose We Dont Believe You Rub](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/randsinrepose-we-dont-believe-you-rub.md)
 ## 相关实体
 - [from doer to director: the ai mindset shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
 - [why internally-built ai fails fund accounting audits](/ch01-107-why-internally-built-ai-fails-fund-accounting-audits/)

@@ -73,7 +73,7 @@
 - [Amazon Bedrock Agentic Payments Guardrails](/ch04-059-enable-safe-agentic-payments-with-built-in-guardrails-using/)
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](/ch11-127-基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-software-supply-chain-security-well-architected.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-software-supply-chain-security-well-architected.md)
 
 - MOC
 ## 深度分析
@@ -104,7 +104,7 @@
 
 当前 wiki 中暂无与 AWS 软件供应链安全直接关联的实体或概念页面。相关概念如 Sigstore、SLSA、SBOM 的独立页面尚未建立，建议后续按需创建。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-software-supply-chain-security-well-architected.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-software-supply-chain-security-well-architected.md)
 
 ---
 

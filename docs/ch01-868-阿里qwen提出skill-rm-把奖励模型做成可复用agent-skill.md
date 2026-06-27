@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/skill-rm-qwen-agent-skill-reward-model.md`
 
->原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-rm-qwen-agent-skill-reward-model-hyman.md)
+>原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-rm-qwen-agent-skill-reward-model-hyman.md)
 
 #阿里Qwen提出Skill-RM：把奖励模型做成可复用Agent Skill
 

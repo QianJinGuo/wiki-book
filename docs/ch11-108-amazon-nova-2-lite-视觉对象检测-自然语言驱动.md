@@ -104,7 +104,7 @@ y_pixel = (y_norm / 1000) * image_height
 
 文章给出的 $0.0006/图 仅涵盖 Bedrock token 费用。生产环境中还应计入：Lambda 调用费（$0.20/M requests）、API Gateway 调用费、S3 存储费（如缓存原始图像）。 对于高吞吐场景（日均 >100K 图），Lambda + API Gateway 的调用费用可能达到 Bedrock费用的 10-20%。建议用 AWS Calculator 建模全链路成本，而不仅是 token 费用。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/object-detection-with-amazon-nova-2-lite.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/object-detection-with-amazon-nova-2-lite.md)
 
 ---
 

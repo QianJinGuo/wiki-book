@@ -6,7 +6,7 @@
 
 # 从人机协作到AI主导：我们是怎么把代码质量交给'数字SRE'的？
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/taobao-ai-sre-digital-employee-code-quality-governance.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/taobao-ai-sre-digital-employee-code-quality-governance.md)
 
 ## 深度分析
 

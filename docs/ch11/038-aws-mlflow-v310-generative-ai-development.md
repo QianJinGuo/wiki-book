@@ -86,7 +86,7 @@ MLflow 本身是云无关的开源框架，而 AWS 将其托管在 SageMaker 中
 - [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](/ch11-177-cost-effective-deployment-of-vision-language-models-for-pet/)
 - MOC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-mlflow-v310-generative-ai-development.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-mlflow-v310-generative-ai-development.md)
 
 ---
 

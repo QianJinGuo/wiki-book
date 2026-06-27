@@ -6,7 +6,7 @@
 
 # The Shape of the Thing
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-shape-of-the-thing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-shape-of-the-thing.md)
 
 > 来源：One Useful Thing (Ethan Mollick)，2026-03-12。Mollick 在 2023 年写过一篇《The Shape of the Shadow of the Thing》推测 AI 的形态。三年后这篇《The Shape of the Thing》直接给出他对当下形势的判断：**「我们能比以前更清楚地看到那个 Thing 了，也能看到它带来的一些后果」**。文章核心论点：AI 进入了 agentic 阶段 + 指数级能力提升 + 工作形态被激进重写，这三件事正在组合成一种「rolling disruption」的环境，每一周都可能发生一夜之间的格局变化。
 

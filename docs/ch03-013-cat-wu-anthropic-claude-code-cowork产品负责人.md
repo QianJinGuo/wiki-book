@@ -81,7 +81,7 @@ Cat 的逻辑很清晰：95% 自动化意味着你仍然需要人工介入，等
 5. **角色融合准备**：PM 需要具备基础工程判断力，工程师需要培养产品品味，设计师可能需要能提交代码——技能边界正在消失
 6. **模型进化适配**：定期审视产品中为模型弱点添加的 "拐杖"，在模型能力提升后主动移除，而非固守原有设计
 7. **并发思维**：从单任务向 50-100+ 并行 Agent 演进是必然方向，产品设计需要提前考虑远程任务管理、信任验证和介入时机
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cat-wu-anthropic-pm-interview.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cat-wu-anthropic-pm-interview.md)
 
 ---
 

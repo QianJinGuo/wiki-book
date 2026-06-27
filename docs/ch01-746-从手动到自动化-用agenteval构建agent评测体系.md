@@ -6,7 +6,7 @@
 
 # 从手动到自动化：用AgentEval构建Agent评测体系
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-eval-wallezhang-yaml-driven-agent-evaluation.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-eval-wallezhang-yaml-driven-agent-evaluation.md)
 
 ## 深度分析
 

@@ -8,7 +8,7 @@
 
 Netflix 将其自研的 Compute Managed Batch (CMB) 系统迁移到 Kubernetes 原生的 [Kueue](https://kueue.sigs.k8s.io/)，实现了百万级 batch job 的调度队列替换。核心收益：fair sharing + preemption + 多维度资源管理。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-netflix-simplified-batch-compute-with-kueue.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-netflix-simplified-batch-compute-with-kueue.md)
 
 ## CMB → Kueue 迁移动机
 

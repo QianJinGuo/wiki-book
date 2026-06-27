@@ -8,7 +8,7 @@
 
 > AWS 官方博客实战教程（2026-06-12 发布）。展示 Amazon Quick chat agent 通过 native MCP 集成编排 3 个 Cisco Webex MCP server（Meetings + Vidcast + Messaging），从单次 prompt 端到端完成 meeting 准备 + 跟进 draft，**meeting-lifecycle 闭环** 是 Amazon Quick + 第三方 MCP 集成模式的新案例。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-a-meeting-prep-and-follow-up-assistant-with-amazon-quick-and-cisco-webex-mcp-servers.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-a-meeting-prep-and-follow-up-assistant-with-amazon-quick-and-cisco-webex-mcp-servers.md)
 
 ## 核心要点
 

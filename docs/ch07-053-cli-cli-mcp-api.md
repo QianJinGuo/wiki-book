@@ -18,7 +18,7 @@ Scalekit 2026 年基准测试（75 次，同一 Agent 执行同一组 GitHub 任
 - [Pi Mono Github](/ch01-608-pi-mono-github/)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](/ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cli-mcp-sdk-agent-tool-selection.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cli-mcp-sdk-agent-tool-selection.md)
 
 - [crawler vs opencli doubao](/ch03-029-crawler-vs-opencli-doubao/)
 
@@ -46,7 +46,7 @@ Scalekit 2026 年基准测试（75 次，同一 Agent 执行同一组 GitHub 任
 
 **如果你的场景 Token 成本敏感且需要批量/多步操作，选择 CLI + Skills 或 Code Execution，而非 MCP Server。** MCP Server 适合低敏感度的探索性任务，不适合重度生产使用 。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cli-mcp-sdk-agent-tool-selection.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cli-mcp-sdk-agent-tool-selection.md)
 
 ---
 

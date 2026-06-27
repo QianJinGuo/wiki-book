@@ -14,7 +14,7 @@
 - [Impeccable](/ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析/)
 - [Impeccable Vibe Design Philosophy Anomaly](/ch05-001-impeccable/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Elena-Progressive-Web-Components.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/Elena-Progressive-Web-Components.md)
 
 ## 深度分析
 ### "渐进增强"理念的回归

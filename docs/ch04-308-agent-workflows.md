@@ -77,7 +77,7 @@ ET = m × (1.0 × I + 0.1 × C + 4.0 × O)
 
 ## 相关实体
 - [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/github-token-efficiency-agentic-workflows.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/github-token-efficiency-agentic-workflows.md)
 - [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路/)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
 - [Garry Tan](/ch01-497-garry-tan/)

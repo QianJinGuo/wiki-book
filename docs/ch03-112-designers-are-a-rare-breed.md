@@ -4,14 +4,14 @@
 
 > 📊 Level ⭐⭐ | 4.4KB | `entities/designers-are-a-rare-breed.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/designers-are-a-rare-breed.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/designers-are-a-rare-breed.md)
 
 ## 核心要点
 - 设计师是稀有品种——创意产业中专业设计人才的稀缺性
 - 设计思维与工程思维的结合日益重要
 - AI 工具辅助设计正在改变创意工作流程
 - 设计师的「稀有性」来自于难以被自动化的直觉和审美判断
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/designers-are-a-rare-breed.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/designers-are-a-rare-breed.md)
 
 ## 深度分析
 ### 设计师稀缺性的数据支撑

@@ -12,7 +12,7 @@
 - [code intelligence – changelog](/ch09-112-code-intelligence-changelog/)
 - [opd revisiting failure modes simple fixes storm](/ch01-760-opd-revisiting-failure-modes-simple-fixes-storm/)
 - what i’ve been building: atom report, post-training course,
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
 
 ## 深度分析
 

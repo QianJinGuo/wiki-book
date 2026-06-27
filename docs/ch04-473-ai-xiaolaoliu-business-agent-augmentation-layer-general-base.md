@@ -6,7 +6,7 @@
 
 # Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 
 ## 深度分析
 

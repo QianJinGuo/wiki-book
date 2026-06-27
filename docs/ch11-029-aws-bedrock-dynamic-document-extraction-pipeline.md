@@ -114,7 +114,7 @@ Lambda 处理流程：
 ## 相关实体
 
 - [from pdfs to insights: architecting an intelligent document](/ch11-206-from-pdfs-to-insights-architecting-an-intelligent-document/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/extract-data-with-on-demand-and-batch-pipelines-dynamically.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/extract-data-with-on-demand-and-batch-pipelines-dynamically.md)
 
 ## 深度分析
 

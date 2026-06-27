@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 23.7KB | `entities/openclacky-harness-engineering-100-percent-cache-hit.md`
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclacky-harness-engineering-100-percent-cache-hit.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclacky-harness-engineering-100-percent-cache-hit.md)
 
 ## 背景与核心结论
 

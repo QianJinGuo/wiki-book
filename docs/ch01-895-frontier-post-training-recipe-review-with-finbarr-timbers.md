@@ -6,7 +6,7 @@
 
 # Frontier post-training recipe review with Finbarr Timbers
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
 
 ## 核心要点
 
@@ -28,7 +28,7 @@
 - SFT → preference tuning 的两阶段 post-training 范式仍是主流，但 RLHF 的 reward model 训练数据质量是关键。
 - post-training 的 iteration speed 是 frontier labs 的核心能力（闭环从 data collection → training → eval）。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
 
 ## 相关实体
 

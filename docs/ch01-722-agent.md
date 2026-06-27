@@ -6,7 +6,7 @@
 
 # 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 
 ## 深度分析
 

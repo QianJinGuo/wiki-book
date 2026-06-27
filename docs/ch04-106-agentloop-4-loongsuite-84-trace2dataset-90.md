@@ -194,7 +194,7 @@ LLM 时代模型权重是资产，Agent 时代 trajectory 是资产。设计 Age
 
 ## 八、引用与延伸阅读
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-agentloop-enterprise-agent-evolution-flywheel-pku.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-agentloop-enterprise-agent-evolution-flywheel-pku.md)
 
 **学术参考**：
 - 《Agent-as-a-Judge: Evaluate Agents with Agents》https://arxiv.org/abs/2410.10934

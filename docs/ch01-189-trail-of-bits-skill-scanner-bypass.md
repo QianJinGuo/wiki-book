@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 25.2KB | `entities/trail-of-bits-skill-scanner-bypass-distribution.md`
 
-> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/trail-of-bits-skill-scanner-bypass-distribution.md)
+> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/trail-of-bits-skill-scanner-bypass-distribution.md)
 
 # Trail of Bits: Skill Scanner Bypass 实证研究
 
@@ -194,7 +194,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 
 ## 第 2 来源 — SkillTrustBench (港中文深圳 + 腾讯朱雀实验室 2026-06-16)
 
-> Source: [第2原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skilltrustbench-agent-skill-security-benchmark-cuhk-zhuque-2026-06-16.md)
+> Source: [第2原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skilltrustbench-agent-skill-security-benchmark-cuhk-zhuque-2026-06-16.md)
 > Author: 香港中文大学(深圳) 吴保元教授课题组 + 腾讯朱雀实验室
 > Date: 2026-06-16 17:33
 > 官网: https://matrix.tencent.com/skilltrustbench
@@ -326,7 +326,7 @@ OpenClaw 官方 67,453 个公开 Skill 三类信号对比:
 - **企业自建 curated marketplace**: 公共 marketplace 风险信号密集(36.82% 至少有一个安全问题) — 企业应自建 + 审计
 - **AI-Infra-Guard 工具集成**: 腾讯朱雀开源的红队安全测试平台,可直接用于自家 Skill 审计
 
-→ [第2原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skilltrustbench-agent-skill-security-benchmark-cuhk-zhuque-2026-06-16.md)
+→ [第2原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skilltrustbench-agent-skill-security-benchmark-cuhk-zhuque-2026-06-16.md)
 
 ---
 

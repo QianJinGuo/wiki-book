@@ -125,7 +125,7 @@ LLMReaper 演示的技术完整对应到 MITRE ATT&CK：
 - [What My Privacy and Security Stack Actually Looks Like](/ch12-019-what-my-privacy-and-security-stack-actually-looks-like/) — 个人安全栈案例
 - [Canvas Hackers ShinyHunters Domain Suspended](/ch12-035-canvas-hackers-shinyhunters-say-their-official-domain-was-su/) — 攻击者基础设施案例
 
-> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md)
+> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md)
 
 ---
 

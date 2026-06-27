@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/twelve-agent-design-patterns-yunduojun-datastudio.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/twelve-agent-design-patterns-yunduojun-datastudio.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/twelve-agent-design-patterns-yunduojun-datastudio.md)
 
 Bilgin Ibryam 提炼 Claude Code 12 个设计模式的中文深度解读，增加"什么时候过度设计"判断框架和完整 Python 代码实现。云朵君/数据STUDIO。
 

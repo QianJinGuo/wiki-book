@@ -18,7 +18,7 @@ L4 chip 的性能参数也值得关注：42.9 GMACs 处理能力、20 trillion p
 - **光线适应性**：Rev8 的lux 范围（1 到 2,000,000）意味着它可以同时处理夜间驾驶和隧道出口的瞬间高光——这对室外全天候运营的机器人（如配送、巡检）很有价值
 - **color depth 的实际意义**：48-bit color depth 和 116 dB dynamic range在语义层面意味着可以区分交通信号灯的细微色差、刹车灯的渐变、以及在不同天气条件下的颜色衰减——这些都是 monochrome LiDAR 做不到的
 - **生态锁定风险**：Ouster 的 Rev8 + StereoLabs 组合意味着这家公司正在垂直整合感知技术栈。早期采用者可以受益于快速迭代，但也要注意：如果未来感知平台的标准答案变成另一套（如图森的算法），硬件端的绑定可能成为迁移成本
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/technology-ouster-rev8-native-color-lidar.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/technology-ouster-rev8-native-color-lidar.md)
 
 ## 相关实体
 

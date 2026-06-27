@@ -6,7 +6,7 @@
 
 # State of Routing in Model Serving
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/state-of-routing-in-model-serving.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/state-of-routing-in-model-serving.md)
 
 ## 深度分析
 

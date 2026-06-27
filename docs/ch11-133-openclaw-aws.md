@@ -50,7 +50,7 @@ EFS 单个文件系统限制 1000 Access Point 的上限需要在规模化前提
 ### 4. 利用 AWS Secrets Manager 管理 OAuth2 Token 全生命周期
 通过 IRSA（Pod Identity）自动获取 IAM 临时凭证，Pod 启动时由 EKS 和 AWS STS 自动注入，无需在应用层管理 API Key 。配合 Secrets Manager 原生的 Rotation 能力挂载 Lambda 自动用 refresh_token 换取新 access_token，不需要自建 token 管理服务 。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/exploring-openclaw-use-cases-in-ecommerce-platforms.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/exploring-openclaw-use-cases-in-ecommerce-platforms.md)
 
 ### 5. 渐进式多渠道体验设计策略
 采用 WebChat（卖家后台）+ 飞书（运营群）+ Slack（海外团队）的渐进式渠道策略，不同渠道背后共享同一 Agent 引擎和同一套 Skills，保证数据一致性 。通过 identityLinks 配置身份映射，同一个运营人员在飞书和 Slack 上的对话历史可以打通，在飞书问过的数据切到 Slack 不用再问一遍 。

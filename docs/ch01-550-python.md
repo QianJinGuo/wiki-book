@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/一次构建随处复用python-中的泛型仓库模式.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/一次构建随处复用python-中的泛型仓库模式.md)
-从微信文章 [一次构建，随处复用：Python 中的泛型仓库模式](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/一次构建随处复用python-中的泛型仓库模式.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/一次构建随处复用python-中的泛型仓库模式.md)
+从微信文章 [一次构建，随处复用：Python 中的泛型仓库模式](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/一次构建随处复用python-中的泛型仓库模式.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/LIjNSJOVlsYoqnzoxjRYaw

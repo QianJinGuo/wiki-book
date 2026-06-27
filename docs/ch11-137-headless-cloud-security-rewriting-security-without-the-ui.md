@@ -8,8 +8,8 @@
 （见原文）
 
 ## 要点
-- 来源: [raw/articles/sysdig-headless-cloud-security.md](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sysdig-headless-cloud-security.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sysdig-headless-cloud-security.md)
+- 来源: [raw/articles/sysdig-headless-cloud-security.md](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sysdig-headless-cloud-security.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sysdig-headless-cloud-security.md)
 
 ## 相关实体
 > 主题导航

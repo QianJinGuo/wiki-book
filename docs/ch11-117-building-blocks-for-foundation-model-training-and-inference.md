@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
 
 ## 核心摘要
 AWS 提供从 P5 (H100/H200) 到 P6 (B200/B300) 的 GPU 实例家族，配合 EFA v2/v3/v4 OS-bypass 网络和 FSx for Lustre 分层存储，构成基础模型训练和推理的完整基础设施层。

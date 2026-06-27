@@ -17,7 +17,7 @@
 - [Hermes Agent Vs Openclaw Comparison](/ch04-188-hermes-agent-为什么火了-和-openclaw-龙虾比一比/)
 - Hermes Agent Deep Dive Alibaba
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deerflow-hermes-openclaw-comparison.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deerflow-hermes-openclaw-comparison.md)
 
 - MOC
 ## 深度分析

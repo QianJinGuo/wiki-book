@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 4.3KB | `entities/how-to-create-websites-with-great-ux-designs.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-to-create-websites-with-great-ux-designs.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-create-websites-with-great-ux-designs.md)
 
 ## 相关实体
 

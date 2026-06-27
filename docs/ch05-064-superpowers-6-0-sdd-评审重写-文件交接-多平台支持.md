@@ -98,7 +98,7 @@ server.cjs 增加的安全措施：
 - → [术哥反作弊视角分析](/ch05-084-superpowers-6-0-反作弊重写-reviewer-只读怀疑论者-上下文经济学-progress-le/) — 互补视角
 - → [三器合一工程化实战](/ch05-019-ai-production-development-workflow-openspec-superpowers-gsta/) — Superpowers + OpenSpec + gstack 串联
 - → [Superpowers 工作流入门](/ch01-775-给-claude-code-装上-超能力-它干活比我还靠谱/)
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/superpowers-6-sdd-review-redesign-file-handoff.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/superpowers-6-sdd-review-redesign-file-handoff.md)
 
 ---
 

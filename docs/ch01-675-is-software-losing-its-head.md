@@ -19,7 +19,7 @@
 ## 相关链接
 - [Is Software Losing Its Head A16Z](/ch01-491-is-software-losing-its-head/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/is-software-losing-its-head-1.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/is-software-losing-its-head-1.md)
 
 ## 实践启示
 **对 SaaS 创业者：** 重新评估你的护城河来源。如果主要是 UI 惯性和人肉流程，Agent 浪潮下你要加速向数据层迁移。invest 在 proprietary data 的积累上——那些你的产品 **独有地产生** 的行为数据、响应率、时序模式、流程结果、异常模式、Agent 性能 traces。

@@ -35,7 +35,7 @@
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-255-anthropic-博客-claude-code-大型代码库最佳实践/)
 - [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # Agent Loop 工程手册 8 个未解问题 + SELF Protocol 治理薄壳
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
 
 ## 一句话定位
 

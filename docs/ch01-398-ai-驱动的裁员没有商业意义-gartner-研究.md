@@ -6,7 +6,7 @@
 
 # AI 驱动的裁员没有商业意义 — Gartner 研究
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www.cio-4171054-ai-driven-layoffs-arent-making-business-sense.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.cio-4171054-ai-driven-layoffs-arent-making-business-sense.md)
 
 ## 摘要
 

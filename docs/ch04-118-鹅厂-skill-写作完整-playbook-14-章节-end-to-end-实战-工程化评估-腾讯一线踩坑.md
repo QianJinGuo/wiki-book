@@ -6,7 +6,7 @@
 
 # 鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tencent-skill-writing-complete-playbook-jackjchou.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tencent-skill-writing-complete-playbook-jackjchou.md)
 
 腾讯 jackjchou（2026-06-05）发布 **14 章节完整 Skill 写作 Playbook**——鹅厂一线团队踩坑经验 + Anthropic 官方做法整合。覆盖**从 0 入门到调试排错到团队管理**全流程，提供**5 大评估指标**（触发准确率 90% / 误报 5% / 一致性 85% / Token -30% / 完成 80%）和**Skill Creator 工程化评估 3 阶段**（触发评估 + 效果评估 + 综合报告）。
 

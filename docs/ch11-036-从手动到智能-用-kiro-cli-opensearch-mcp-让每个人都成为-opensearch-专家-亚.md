@@ -151,7 +151,7 @@ OpenSearch ISM（Index State Management）策略配置传统上需要理解 JSON
 - AI Agent 执行操作的风险需要监控机制
 - 建立操作日志和审计跟踪
 - 定义 AI Agent 的操作权限边界，避免意外影响生产环境
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
 
 ---
 

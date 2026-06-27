@@ -64,9 +64,9 @@ Stenberg 明确表示：
 
 ## 链接
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5238111.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5238111.md)
 
 ---
 

@@ -63,7 +63,7 @@ The decision came down to an asymmetric trade-off. Sorting by trace_id makes sea
 1.   A bloom_filter skip index on trace_id, which lets the engine prove a granule can’t contain a given ID without reading it.
 2.  
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/23-building-jaegers-clickhouse-backend-8-6x-compression-on-10-million-spans.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/23-building-jaegers-clickhouse-backend-8-6x-compression-on-10-million-spans.md)
 
 ---
 

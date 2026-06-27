@@ -6,7 +6,7 @@
 
 # SAP Unveils the Autonomous Enterprise
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sap-unveils-the-autonomous-enterprise.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sap-unveils-the-autonomous-enterprise.md)
 
 **SAP Autonomous Enterprise** 是 SAP 于 2026 年 5 月 12 日在 [SAP Sapphire 2026](https://news.sap.com/topics/sap-sapphire/) 大会上正式发布的 AI 驱动企业转型愿景，由 CEO Christian Klein 在 Orlando 主题演讲中正式揭晓。该战略旨在将 agentic AI（AI Agent） 深度嵌入企业核心业务流程，实现从 ERP 运营到财务、供应链、采购、人力资源、客户体验的全链路自动化。
 
@@ -189,7 +189,7 @@ SAP 在 AI 时代选择了与 Anthropic、NVIDIA、Google Cloud、Microsoft、Pa
 
 - [Harness Production Agent Engineering](/ch04-127-harness如何支撑agent在生产环境稳定运行/) — Agent 工程化挑战
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sap-unveils-the-autonomous-enterprise.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sap-unveils-the-autonomous-enterprise.md)
 
 - [nature | anthropic：蒸馏过程潜意识传递行为偏好](/ch01-596-nature-anthropic-蒸馏过程潜意识传递行为偏好/)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.9KB | `entities/gaode-marketing-autoresearch-ai-native-practice.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-marketing-autoresearch-ai-native-practice.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-marketing-autoresearch-ai-native-practice.md)
 
 # 高德 Marketing AutoResearch：营销增长 AI Native 经营托管框架
 
@@ -238,7 +238,7 @@
 ## 相关实体
 - [Autoresearch Marketing Growth Amap Ai Native](/ch01-691-高德-marketing-autoresearch-ai-native-营销增长经营托管框架/)
 
-→ [原文存档（高德技术 2026-06-09）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-marketing-autoresearch-ai-native-practice.md)
+→ [原文存档（高德技术 2026-06-09）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-marketing-autoresearch-ai-native-practice.md)
 
 ---
 

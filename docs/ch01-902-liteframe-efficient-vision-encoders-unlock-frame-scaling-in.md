@@ -73,7 +73,7 @@ LiteFrame 的 student encoder 采用：
 - [Rag技术框架的演进方向](/ch01-193-rag技术框架的演进方向/)
 - [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/liteframeefficientvisionencodersunlockframescalinginvideollms.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/liteframeefficientvisionencodersunlockframescalinginvideollms.md)
 
 ---
 

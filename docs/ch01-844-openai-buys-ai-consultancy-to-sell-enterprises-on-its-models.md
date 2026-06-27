@@ -10,7 +10,7 @@
 
 - [the inevitable need for an open model consortium](/ch01-816-the-inevitable-need-for-an-open-model-consortium/)
 - [ai-driven layoffs aren’t making business sense | cio](/ch01-398-ai-驱动的裁员没有商业意义-gartner-研究/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5238213.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5238213.md)
 
 - MOC
 ## 深度分析

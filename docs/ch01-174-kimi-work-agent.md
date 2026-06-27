@@ -12,7 +12,7 @@
 ## 相关实体
 - [Schemaflow Agentic Database Sql Generation Openai Cookbook](/ch04-499-schemaflow-agentic-database-change-impact-analysis-sql-gen/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
 
 - [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](/ch04-161-agivar-录屏教学桌面-agent-清华非十科技-大脑小脑双层架构-jittor-推理引擎-2-3-速度/)
 
@@ -195,7 +195,7 @@
 - Agent Harness 上下文管理 —— 工作集视角
 - [Karpathy Vibe Coding → Agentic Engineering](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) —— Vibe Coding 原始定义
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
 
 ## 第二来源补充：通用 Agent 一定来自模型公司
 

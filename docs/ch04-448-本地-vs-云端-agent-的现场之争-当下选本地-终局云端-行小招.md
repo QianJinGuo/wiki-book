@@ -11,7 +11,7 @@
 - [llmreaper - dom based ai conversation exfiltration via brows](/ch01-528-llmreaper-dom-based-ai-conversation-exfiltration/)
 - [review agent：后台复盘 agent 如何判断什么值得保存](/ch04-380-review-agent-后台复盘-agent-如何判断什么值得保存/)
 - [不用再学ai了！生成结果包稳的agent来了](/ch04-170-不用再学ai了-生成结果包稳的agent来了/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/local-vs-cloud-agent-onsite-context-debate-xingxiaozhao.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/local-vs-cloud-agent-onsite-context-debate-xingxiaozhao.md)
 
 - MOC
 ## 深度分析

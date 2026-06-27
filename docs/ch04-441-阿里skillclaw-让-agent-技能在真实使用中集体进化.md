@@ -17,7 +17,7 @@
 - [Skill Rag Tsinghua Sra](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/)
 - [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-alibaba-paperagent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw-alibaba-paperagent.md)
 
 ## 深度分析
 

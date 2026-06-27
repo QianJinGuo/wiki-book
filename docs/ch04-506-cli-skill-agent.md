@@ -6,7 +6,7 @@
 
 # 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md)
 
 ## 深度分析
 

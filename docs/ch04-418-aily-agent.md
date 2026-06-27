@@ -60,7 +60,7 @@ aily 的 AI编辑部引入了 6 种角色（总编虾、记者虾、编辑虾、
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](/ch07-017-hermes自进化完整闭环-skill创建复用修补链路/)
 - [Four Browser Automation Tools Comparison](/ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/feishu-aily-agent-lobster.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/feishu-aily-agent-lobster.md)
 
 ---
 

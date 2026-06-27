@@ -22,7 +22,7 @@
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](/ch01-190-agi-之路-可能从一开始就走错了/)
 - [18岁高中生用Ai挖出150万未知天体首批Chatgpt原住民毕业](/ch01-250-18岁高中生用ai挖出150万未知天体-首批chatgpt原住民毕业/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md)
 
 - [Openai官方Cli上线跟复杂的Sdk说拜拜](/ch01-718-openai官方cli上线-跟复杂的sdk说拜拜/)
 - [Ciodive Openai Daybreak Cyber Threats](/ch12-062-openai-launches-daybreak-to-combat-cyber-threats/)

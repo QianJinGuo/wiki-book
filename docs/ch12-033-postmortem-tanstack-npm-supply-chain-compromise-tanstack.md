@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
 
 ## 相关实体
 - [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](/ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha/)

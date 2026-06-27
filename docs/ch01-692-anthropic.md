@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.4KB | `entities/anthropic.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md)
 
 ## 核心产品
 - [Claude Managed Agents 平台](/ch01-181-anthropic-claude-managed-agents-平台正式发布/)

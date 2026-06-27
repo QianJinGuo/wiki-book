@@ -12,7 +12,7 @@
 - [垂类 ai 创企的自救：flashlabs 从 flashintel 到 ai native](/ch01-792-垂类-ai-创企的自救-flashlabs-从-flashintel-到-ai-native/)
 - [latest open artifacts (#19): qwen 3.5, glm 5, minimax 2.5 —](/ch01-365-latest-open-artifacts-19-qwen-3-5-glm-5-minimax-2-5-中国实/)
 - [perplexity 首次公开了内部 skill 设计指南](/ch07-059-perplexity-首次公开了内部-skill-设计指南/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-之后-状态边界与失败闭环-若飞.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-之后-状态边界与失败闭环-若飞.md)
 
 - MOC
 ## 深度分析

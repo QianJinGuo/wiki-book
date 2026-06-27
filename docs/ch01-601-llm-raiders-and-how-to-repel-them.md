@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/llm-raiders-how-to-repel.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-raiders-how-to-repel.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-raiders-how-to-repel.md)
 
 ## 核心要点
 - value=8, confidence=7, product=56
@@ -13,7 +13,7 @@
 - 蜜罐实验：Raspberry Pi 伪装高性能 AI 服务器，3 小时被 Shodan 发现，1 小时内开始收到探测请求
 - 113,000+ 请求来自数千个独立 IP，23% 流量定向探测 AI 能力和利用本地 LLM
 - 攻击工具 LLM-Scanner 在 7 家云提供商、8 个国家的基础设施中运行
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-raiders-how-to-repel.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-raiders-how-to-repel.md)
 
 ## 深度分析
 ### LLMjacking 的本质与盈利模式

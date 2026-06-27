@@ -6,7 +6,7 @@
 
 # Apple Foundation Models
 
-> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-apple-foundation-models-claude.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-apple-foundation-models-claude.md)
 
 ## 核心要点
 
@@ -38,7 +38,7 @@ Requests go directly from your app to the Claude API; Apple is not in the reques
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 platform.claude.com 视角
-- 引用源：[Anthropic Apple Foundation Models Claude](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-apple-foundation-models-claude.md)
+- 引用源：[Anthropic Apple Foundation Models Claude](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-apple-foundation-models-claude.md)
 ## 相关实体
 - [from doer to director: the ai mindset shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
 - [why internally-built ai fails fund accounting audits](/ch01-107-why-internally-built-ai-fails-fund-accounting-audits/)

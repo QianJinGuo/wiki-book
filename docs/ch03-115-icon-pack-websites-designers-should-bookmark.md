@@ -5,7 +5,7 @@
 > 📊 Level ⭐⭐ | 3.9KB | `entities/icon-pack-websites-designers-should-bookmark.md`
 
 ## Summary
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/icon-pack-websites-designers-should-bookmark.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/icon-pack-websites-designers-should-bookmark.md)
 
 ## Notes
 - Value: 7/10, Confidence: 8/10

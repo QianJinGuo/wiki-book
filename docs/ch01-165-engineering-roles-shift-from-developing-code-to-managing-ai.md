@@ -14,7 +14,7 @@
 - [Hs.Playerzero Ai Code Review](/ch01-076-code-simulation-for-enterprise-engineering-playerzero/)
 - [Code Simulation For Enterprise Engineering Playerz](/ch01-119-code-simulation-for-enterprise-engineering-playerzero/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/engineering-roles-shift-from-developing-code-to-ma.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/engineering-roles-shift-from-developing-code-to-ma.md)
 
 ## 深度分析
 这篇文章反映的是一场正在发生的**职业形态结构性转变**：软件工程师的核心能力正从「写代码」迁移到「管理 AI 系统」。这不是简单的工具升级，而是对工程角色定义的重新校准。

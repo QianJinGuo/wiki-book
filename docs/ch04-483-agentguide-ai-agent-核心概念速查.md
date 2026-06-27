@@ -6,7 +6,7 @@
 
 # AgentGuide AI Agent 核心概念速查
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-guide-core-concepts-overview.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-guide-core-concepts-overview.md)
 
 ## 深度分析
 

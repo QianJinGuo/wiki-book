@@ -11,7 +11,7 @@
 - [interconnects ai p open and closed models are on different](/ch01-527-open-and-closed-models-are-on-different-exponentials/)
 - [llmshare: using shared chatbot pages to distribute malware](/ch01-807-llmshare-using-shared-chatbot-pages-to-distribute-malware/)
 - [zapocalypse: the attack chain that could have hijacked zapie](/ch11-204-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-brings-local-ai-agents-to-laptops-with-gemma-4-12b-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-brings-local-ai-agents-to-laptops-with-gemma-4-12b-20260606.md)
 
 - MOC
 ## 深度分析

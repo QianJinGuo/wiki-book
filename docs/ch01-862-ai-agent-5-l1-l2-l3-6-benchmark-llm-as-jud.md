@@ -349,7 +349,7 @@ LLM-as-Judge + Arena + G-Eval + Eval-as-Service + 分层阶梯式 — 不是互�
 
 ## 十二、引用与延伸阅读
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-coding-practice-agent-eval-framework-five-dimensions-three-level-gating.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-coding-practice-agent-eval-framework-five-dimensions-three-level-gating.md)
 
 **评测框架官方资源**：
 - LangSmith https://www.langchain.com/langsmith

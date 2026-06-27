@@ -14,7 +14,7 @@ MNN-Sana-Edit-V2 是由淘宝 Meta 团队联合杭州电子科技大学研发的
 - **评分**: 42
 
 ## 原始内容
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mnn-sana-edit-v2端侧运行的图像漫画风编辑大模型.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mnn-sana-edit-v2端侧运行的图像漫画风编辑大模型.md)
 
 ## 技术架构
 MNN-Sana-Edit-V2 整体采用 Sana 图像生成模型的网络架构，同时为了更好地利用预训练 LLM 对 Prompt 的理解能力，结合 MetaQuery 论文中提出的 Learnable Query 思想，利用可学习的一组网络参数来桥接预训练 LLM 与图像生成与编辑过程。

@@ -9,7 +9,7 @@
 ## 相关实体
 
 - 蔚蓝babyalpha a3消费级机器狗撕开英伟达垄断
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-long-running-agent-architecture-6h-retroforge.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-long-running-agent-architecture-6h-retroforge.md)
 
 - MOC
 ## 深度分析

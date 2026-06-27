@@ -120,7 +120,7 @@ AI 时代的企业主权 = 业务知识的所有权 + 可迁移性，**不等于
 
 ## 相关实体
 
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nadella-token-capital-microsoft-ai-economy-2026.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nadella-token-capital-microsoft-ai-economy-2026.md)
 - [Token 经济 Pt2:智能公司搭建](/ch01-002-the-token-economy-pt2-the-intelligence-company-gets-built/)
 - 腾讯 Token 经济 AI 生产力
 - 企业 AI 记忆底座 三层架构

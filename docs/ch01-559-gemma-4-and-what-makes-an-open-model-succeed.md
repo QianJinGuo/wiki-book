@@ -6,7 +6,7 @@
 
 # Gemma 4 and what makes an open model succeed
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemma-4-and-what-makes-an-open-model-succeed.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemma-4-and-what-makes-an-open-model-succeed.md)
 
 ## 摘要
 

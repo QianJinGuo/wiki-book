@@ -25,7 +25,7 @@ type: entity
 - [U Of T Ai Worm Cleverhans Papernot 2026](/ch12-112-u-of-t-researchers-demonstrate-ai-worm-self-spreading-malwa/)
 - [How Far Behind Are Open Models 2026](/ch01-393-how-far-behind-are-open-models-lesswrong-2026-05/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
 
 # Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
 

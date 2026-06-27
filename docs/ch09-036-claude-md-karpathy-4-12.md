@@ -117,7 +117,7 @@ CLAUDE.md 本质上是 **Agent 的架构约束层（Architecture Constraints）*
 规则 6（Token 预算）和规则 10（检查点强制）是 Harness 思维在 CLAUDE.md 中的直接映射——前者防止语义漂移，后者确保长任务的可恢复性。这两条规则与  中定义的"状态管理"和"熔断机制"在逻辑上完全一致，说明 Mnilax 的实践实际上是在用更低成本的方式实现 Harness Engineering 的核心目标。 
 
 ## 相关链接
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-md-12-rules-mnilax-cf2019.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-md-12-rules-mnilax-cf2019.md)
 - [CLAUDE Code 创始人 100 条 Harness 规则](/ch01-487-最新claude-code创始人-编程已经解决了-harness重要性持续降低-cc未来只有100行代码/) — 另一位实践者的规则集合，可对比参考
 -  — working set 机制与 CLAUDE.md 的互补关系
 -  — 本文的 Token 预算和检查点机制在此框架中的定位

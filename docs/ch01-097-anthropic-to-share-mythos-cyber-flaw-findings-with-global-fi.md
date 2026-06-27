@@ -74,7 +74,7 @@ Mythos 案例展示了负责任的 AI 披露实践：
 - [Xero Announces Integration With Anthropics Claude](/ch01-677-anthropic/)
 - [Cisa Urges Critical Infrastructure Firms To Fortify Before I](/ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog.md)
 
 ---
 

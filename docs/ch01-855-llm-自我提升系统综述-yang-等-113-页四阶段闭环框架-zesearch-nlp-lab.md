@@ -180,7 +180,7 @@
   - [Agent Harness Engineering 综述](/ch01-277-agent-harness-engineering-a-survey-etclovg-taxonomy/)（harness 视角）
   - [Harness 演化论文集](/ch05-085-harness进化论文-m-记忆程序进化与autoharness动作约束/)（harness 论文集合）
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-self-improvement-system-survey-zesearch-nlp.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-self-improvement-system-survey-zesearch-nlp.md)
 
 ---
 

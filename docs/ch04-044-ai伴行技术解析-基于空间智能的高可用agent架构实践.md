@@ -259,7 +259,7 @@ Claude-Opus-4.7 在通用基准上顶级但在空间领域表现最差，DeepSee
 - [Elf Embedded Language Flows Hekaiming 105M](/ch01-318-何恺明首个语言模型-105m参数-不走gpt自回归老路/)
 - 2026 05 06 2201
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
 ## 参考文献
 [1] Maslych M et al. Mitigating Response Delays in Free-Form Conversations with LLM-Powered IVAs. CUI 2025.

@@ -11,7 +11,7 @@
 - [Ai Native Org Guide Slowdown](/ch04-396-ai-原生搭建指南-都在用ai-公司为什么更慢了/)
 - [Fanling Company As Agent Ai Org Reflection](/ch04-180-fanling-company-as-agent-ai-org-reflection-v2/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-team-building-yexiaochai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-native-team-building-yexiaochai.md)
 
 ## 评分
 | 维度 | 分数 |

@@ -143,7 +143,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
   - [阿里云 哈勃业务 Agent 评估](/ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者/)
 - MOC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-cloud-native-fable-5-safety-guardrails-evolution.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-cloud-native-fable-5-safety-guardrails-evolution.md)
 
 ---
 

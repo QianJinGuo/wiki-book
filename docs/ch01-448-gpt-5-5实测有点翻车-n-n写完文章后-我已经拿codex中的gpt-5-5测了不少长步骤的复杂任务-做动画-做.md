@@ -17,7 +17,7 @@
 - [Openai Codex Super Computer Network Xinzhiyuan](/ch09-058-openai秘密矩阵曝光-codex将所有设备连成超级电脑/)
 - [Gpt54 Codex Interconnects](/ch01-508-gpt-5-4-codex-评测-interconnects-的-agent-使用体验/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-55实测有点翻车nn写完文章后我已经拿codex中的gpt-55测了不少长步骤的复杂任务做动画做ppt做网站nn我的感受是这是个非常无聊的学霸会做题会尽.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-55实测有点翻车nn写完文章后我已经拿codex中的gpt-55测了不少长步骤的复杂任务做动画做ppt做网站nn我的感受是这是个非常无聊的学霸会做题会尽.md)
 
 - [gpt -image 2神级提示词分享](/ch01-680-gpt-image-2神级提示词分享/)
 

@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/anthropic-最新论文阻止-ai-叛变的方法.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md)
-从微信文章 [Anthropic 最新论文：阻止 AI 叛变的方法](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md)
+从微信文章 [Anthropic 最新论文：阻止 AI 叛变的方法](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/ZYZTTcel9_To123vcvoY4w

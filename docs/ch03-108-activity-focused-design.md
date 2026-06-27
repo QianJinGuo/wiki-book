@@ -70,7 +70,7 @@ Activity-Focused Design 的核心价值在于将设计视角从"用户是谁"转
 - [Deepmind Ai Pointer](/ch01-824-reimagining-the-mouse-pointer-for-the-ai-era/)
 - [Qoder Skill Ui](/ch03-062-qoder-skill-ui-agent-与人类的协作界面层/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/activity-focused-design.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/activity-focused-design.md)
 
 ---
 

@@ -17,7 +17,7 @@
 - London Met Police Big Tech Data Requests
 - [Clarity Act 5 Things](/ch12-007-5-things-to-know-about-the-clarity-act/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britai.md)
 
 - MOC
 ## 深度分析

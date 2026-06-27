@@ -6,7 +6,7 @@
 
 # CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3 层级架构与 execute_code 单工具设计
 
-> 本实体整理自 [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cpu-cache-analogy-agent-context-management-liwen-2026-06-12.md)。
+> 本实体整理自 [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cpu-cache-analogy-agent-context-management-liwen-2026-06-12.md)。
 > 把 CPU 缓存的 L1/L2/L3 层级结构**直接迁移到 Agent 上下文管理**，配套"一个工具而不是三十个"的设计原则、读取区间的三重压缩、写入 diff 的分组采样 + 问题分类等具体工程模式。
 
 ## 一句话总结
@@ -284,7 +284,7 @@ grep -n '"isEnum": true' api-reference.json -B2 -A10  # 枚举所有枚举值
 - Codex 上下文工程 LastWhisper — 另一家 Code 厂商的上下文视角
 - [上下文工程系列](/ch04-403-agentic-ai-infrastructure-practice-series-9-context-enginee/) — 系列化上下文工程讨论
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cpu-cache-analogy-agent-context-management-liwen-2026-06-12.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cpu-cache-analogy-agent-context-management-liwen-2026-06-12.md)
 
 ---
 

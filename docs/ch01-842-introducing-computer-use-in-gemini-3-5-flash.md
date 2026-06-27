@@ -74,7 +74,7 @@ Task Completion
 - [Gemini 3.5 Frontier Intelligence](/ch01-402-gemini-3-5-frontier-intelligence-with-action/)
 - [Agent Harness Engineering Survey 2026](/ch04-069-agent-harness-engineering-a-survey/)
 
--> [Original Archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemini-3-5-flash-computer-use.md)
+-> [Original Archive](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemini-3-5-flash-computer-use.md)
 
 ---
 

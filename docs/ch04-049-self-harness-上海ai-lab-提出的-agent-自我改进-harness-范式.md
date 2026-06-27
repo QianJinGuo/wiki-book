@@ -6,7 +6,7 @@
 
 # Self-Harness：上海AI Lab 提出的 Agent 自我改进 Harness 范式
 
-> 本实体整理自 [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/self-harness-shanghai-ai-lab-agent-improves-harness-hyman-2026-06-12.md)，并参考 Shanghai AI Lab 论文 *Self-Harness: Harnesses That Improve Themselves*（https://arxiv.org/abs/2606.09498 ）。
+> 本实体整理自 [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/self-harness-shanghai-ai-lab-agent-improves-harness-hyman-2026-06-12.md)，并参考 Shanghai AI Lab 论文 *Self-Harness: Harnesses That Improve Themselves*（https://arxiv.org/abs/2606.09498 ）。
 
 ## 一句话总结
 
@@ -287,7 +287,7 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 - [Harness Engineering 七层架构](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
 - Harness Component Expiry and Build-to-Delete — Self-Harness 的"接受门"是这一思想的工程化实现
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/self-harness-shanghai-ai-lab-agent-improves-harness-hyman-2026-06-12.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/self-harness-shanghai-ai-lab-agent-improves-harness-hyman-2026-06-12.md)
 
 ---
 

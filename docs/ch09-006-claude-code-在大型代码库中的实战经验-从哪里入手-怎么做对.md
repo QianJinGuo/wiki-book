@@ -233,8 +233,8 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 
 ## 相关资源
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md)
-- [QQ音乐 Harness Engineering 实践原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/qq-music-harness-engineering-monorepo-microservices.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md)
+- [QQ音乐 Harness Engineering 实践原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/qq-music-harness-engineering-monorepo-microservices.md)
 
 ## 相关实体
 - Claude Code Best Practices Prompt Engineering

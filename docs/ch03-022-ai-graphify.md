@@ -143,7 +143,7 @@ graphify-out/cost.json
 - [Openai Codex 521 Update Appshots Goal Computer Use](/ch09-073-codex-5-21-更新-ai-编程助手开始变成电脑工作代理/)
 - [Rag技术框架的演进方向](/ch01-193-rag技术框架的演进方向/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/graphify-software-engineering-knowledge-graph.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/graphify-software-engineering-knowledge-graph.md)
 
 ---
 

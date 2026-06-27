@@ -6,7 +6,7 @@
 
 # DiffusionGemma：扩散式文本生成模型（Google 26B MoE，4× 推理加速）
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/diffusiongemma-4x-faster-text-generation-google-2026-06.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/diffusiongemma-4x-faster-text-generation-google-2026-06.md)
 
 ## 概述
 

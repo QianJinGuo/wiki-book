@@ -10,7 +10,7 @@
 > 背景：2026 年 4 月，因 npm 打包未排除 `.map` 映射文件，1900+ TypeScript 文件、51 万行核心代码意外曝光
 > URL: https://mp.weixin.qq.com/s/uHbvBbANCU7fHwvGhsr9sw
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
 
 ## 摘要
 

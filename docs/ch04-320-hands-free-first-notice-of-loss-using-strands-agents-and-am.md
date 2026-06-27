@@ -6,7 +6,7 @@
 
 # Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md)
 
 ## 摘要
 

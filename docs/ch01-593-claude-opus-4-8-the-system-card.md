@@ -89,7 +89,7 @@ I don’t love that they used this as a reason to skip a bunch
 - [Anthropic Long Running Agent Adversarial Architecture](/ch04-252-anthropic-长时运行-agent-架构-对抗式设计-合同谈判-审美量化/)
 - MOC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-opus-4-8-system-card-zvi.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-opus-4-8-system-card-zvi.md)
 
 ---
 

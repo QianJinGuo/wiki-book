@@ -14,7 +14,7 @@
 - [知识库问答 @文档：从 dom 方案到 prosemirror 落地](/ch01-791-知识库问答-文档-从-dom-方案到-prosemirror-落地/)
 - [valkey 为什么这么快？盘点 valkey 中提升性能的黑科技](/ch01-522-valkey-为什么这么快-盘点-valkey-中提升性能的黑科技/)
 - [zapocalypse: the attack chain that could have hijacked zapie](/ch11-204-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
 
 ## 深度分析
 

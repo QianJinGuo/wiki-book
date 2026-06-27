@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 10.7KB | `entities/anthropic-claude-next-gen-alex-infoq.md`
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-claude-next-gen-alex-infoq.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-claude-next-gen-alex-infoq.md)
 
 ## 核心信号
 

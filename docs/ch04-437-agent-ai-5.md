@@ -19,7 +19,7 @@
 
 ## GEA (Generative Enterprise Agent)
 企业级 Agent 架构：不执着于单个 Agent，重点在 Context + Orchestration，在用户洞察、内容增长、产品创新等领域搭出企业专属 Agent 项目组。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fanling-company-as-agent-ai-org-reflection-v2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fanling-company-as-agent-ai-org-reflection-v2.md)
 
 ## 深度分析
 范凌的核心洞察在于"AI 是资源分配器而非提效工具"这一范式转换。传统组织是层级化的资源分配器（人 → 预算 → 产出），AI 时代的组织变成以 Context 为核心的分配器——Pod Leader 的核心能力从"管理人"变成"管理 Agent + 上下文工程"。

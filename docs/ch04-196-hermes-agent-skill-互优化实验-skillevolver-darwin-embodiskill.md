@@ -6,7 +6,7 @@
 
 # Hermes Agent Skill 互优化实验：SkillEvolver × Darwin × EmbodiSkill
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-skill-crossover-optimization-skillevolver-darwin.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-skill-crossover-optimization-skillevolver-darwin.md)
 
 ## 摘要
 

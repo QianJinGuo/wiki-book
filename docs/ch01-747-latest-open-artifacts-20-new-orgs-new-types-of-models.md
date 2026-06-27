@@ -16,7 +16,7 @@
 - [the distillation panic](/ch01-486-the-distillation-panic/)
 - sft, rl, and on-policy distillation through a distributional
 - [直播预约 | 数据引擎：具身智能的下一个决胜局](/ch01-676-直播预约-数据引擎-具身智能的下一个决胜局/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
 
 - MOC
 ## 深度分析

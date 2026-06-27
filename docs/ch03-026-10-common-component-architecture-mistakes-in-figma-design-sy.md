@@ -65,7 +65,7 @@
 ### 可访问性不是后期添加
 1. **在组件创建时就审核可访问性**：颜色对比度、键盘导航、屏幕阅读器支持——这些应该在组件创建时就被审核，而不是产品开发阶段发现缺失。建立一个可访问性 checklist 作为组件发布的必要条件 。
 2. **把设计系统视为产品而不是项目**：设计系统在发布第一版后不是结束，而是开始。建立持续维护的机制：定期 review 组件使用数据、收集设计债务、规划迭代节奏 。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/component-architecture-mistakes-figma-zeroheight.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/component-architecture-mistakes-figma-zeroheight.md)
 
 ## 相关实体
 

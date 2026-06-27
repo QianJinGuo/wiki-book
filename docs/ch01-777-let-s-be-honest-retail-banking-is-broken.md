@@ -14,7 +14,7 @@
 - [Chime Earnings Q1 2026 Ai Upmarket](/ch01-780-chime-turns-a-profit-as-members-hit-10-2-million/)
 - [Deels Accelerate Or Die Moment](/ch01-121-deel-s-accelerate-or-die-moment/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/finanser-retail-banking-broken.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/finanser-retail-banking-broken.md)
 
 ## 深度分析
 - 过去十年间，银行业激进地追求成本优化与数字效率，却在悄无声息中拆除了数百万人赖以生存的人文基础设施。英国自 2015 年以来已关闭超过 6,000 家银行网点，占全网络近一半；LINK ATM 网络自 2018 年以来损失超过 15,000 台免费 ATM，农村和弱势群体受冲击最重 

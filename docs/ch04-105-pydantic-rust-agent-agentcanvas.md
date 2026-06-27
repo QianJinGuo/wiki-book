@@ -176,7 +176,7 @@ agentcanvas 通过 Logfire 的 **Query API**（SQL + 读取 Token）把这些 sp
 
 ---
 
-→ [第 1 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pydantic-three-piece-suite-yunduo.md) · [第 2 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcanvas-logfire-flow-visualization-challengehub-2026-06-16.md)
+→ [第 1 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pydantic-three-piece-suite-yunduo.md) · [第 2 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentcanvas-logfire-flow-visualization-challengehub-2026-06-16.md)
 
 ---
 

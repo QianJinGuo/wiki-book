@@ -123,7 +123,7 @@ Agent Room的价值不只是"自动创建了变更、分支和环境"。真正�
 - [Hiclaw V110 K8S Hermes Worker](/ch11-086-hiclaw-v1-1-0-kubernetes-集群部署与-hermes-worker-运行时/)
 - MOC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/emergent-collaboration-ai-high-quality-decision-agent-room.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/emergent-collaboration-ai-high-quality-decision-agent-room.md)
 
 ---
 

@@ -152,7 +152,7 @@ ProgramBench 采取实质性预防措施确保评估的公正性：
 - **机构**：Meta Superintelligence Labs • Stanford University • Harvard University
 - **arXiv**：https://arxiv.org/abs/2605.03546
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/programbench-agent-benchmark.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/programbench-agent-benchmark.md)
 
 ---
 

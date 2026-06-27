@@ -123,7 +123,7 @@ Agent 像运维工程师一样执行完整诊断流程：
 - [Claude Code Multi Agent Harness Source Analysis](/ch05-062-claude-code-多-agent-harness-源码拆解-留纸条-抠上下文-抠缓存-捆手脚/)
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alibaba-devix-harness-ops-agent-7x24.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alibaba-devix-harness-ops-agent-7x24.md)
 
 ---
 

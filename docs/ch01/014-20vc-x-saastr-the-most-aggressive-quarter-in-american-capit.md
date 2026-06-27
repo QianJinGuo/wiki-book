@@ -11,7 +11,7 @@
 - $700B 2026 AI capex，540B 季度收入
 - Palantir RPO 增长 134% 至 $4.45B，Rule of 40 达 145%
 - Brian Armstrong 宣布 Coinbase 不再需要无法亲自执行的管理者
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md)
 
 ## 深度分析
 ### 超大规模资本支出的结构性逻辑

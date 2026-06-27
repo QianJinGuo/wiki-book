@@ -10,7 +10,7 @@ Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其
 
 与 [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](/ch07-006-claude-code-skills-mcp-rules-source-analysis/) 互补——源码分析侧重底层 API 注入位置，本文侧重官方使用指南和决策框架。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 
 ## 七种方法对比
 
@@ -126,7 +126,7 @@ Claude Code 中，钩子是唯一能保证"确定性触发、确定性执行"的
 - → [Claude Code 治理：软规则与硬约束](/ch09-067-claude-code-可控性-软规则无法变成硬约束/)
 - → [Claude Code 子智能体上下文卫生](/ch04-162-claude-code-subagents-深度指南-上下文卫生实战/)
 - → [Claude Code Hooks 完整指南](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 
 ---
 

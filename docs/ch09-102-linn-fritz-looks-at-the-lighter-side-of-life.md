@@ -10,7 +10,7 @@
 ## 相关实体
 - [Chinese Ai Lab Insights Nathan](/ch01-317-所有实验室都怕字节-所有人都在夸deepseek-美国研究员36小时中国ai行/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/linn-fritz-looks-at-the-lighter-side-of-life.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/linn-fritz-looks-at-the-lighter-side-of-life.md)
 
 ## 深度分析
 **1. 动态设计背景如何塑造独特的插画风格**

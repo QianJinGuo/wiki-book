@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.4KB | `entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
 
 ## 摘要
 本文提出了一套专为跨境金融机构打造的智能合规中枢架构方案，旨在解决面对多重监管框架（如 PCI DSS v4.0、MAS TRM-G、DORA、等保 2.0 三级等）时由于重复审计、术语壁垒和修复滞后带来的"规模化合规难题"。核心创新包括：Prowler ECS Fargate 按需扫描 + OCSF 标准输出 + 自定义框架 JSON 扩展 + Rationale 映射逻辑文档 + Bedrock GenAI 条款级分析，实现一次扫描覆盖 51 个合规框架。
@@ -80,7 +80,7 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](/ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/航班变更信息智能识别解决方案.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/航班变更信息智能识别解决方案.md)
 
 - [CloudSectiDbits](/ch11-209-cloudsectidbits/)
 - MOC

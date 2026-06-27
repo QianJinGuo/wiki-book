@@ -18,7 +18,7 @@
 - [Announcing Claude Managed Agents On Cloudflare](/ch01-087-announcing-claude-managed-agents-on-cloudflare/)
 - [Anthropic Claude Managed Agents Platform Launch](/ch01-677-anthropic/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-puts-claude-agents-on-a-meter-across-its.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-puts-claude-agents-on-a-meter-across-its.md)
 
 ## 深度分析
 Anthropic 的这一决策标志着 AI 订阅模式的一次根本性转变。"无限吃到饱"的时代正在终结，程序化使用与交互式使用之间的界限正在被明确划分。

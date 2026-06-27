@@ -69,7 +69,7 @@ I think there are a few considerations for founders/builders to decide whether t
 
 **Do you own the whole dataset/workflow, or a slice?** If you own the full picture for a workflow or set of workflows, you can credibly be the agent for it. If you own a slice that only becomes useful once it’s combined with other data, the orchestr
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/p-build-the-agent-or-power-the-agent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/p-build-the-agent-or-power-the-agent.md)
 
 ---
 

@@ -18,7 +18,7 @@ Published Time: Wed, 13 May 2026 15:55:13 GMT
 - Openchronicle Memory Layer
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](/ch04-482-opensquilla-launches-open-source-ai-agent-to-cut-token-costs/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-defense-initiative.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/open-defense-initiative.md)
 
 - MOC
 ## 深度分析

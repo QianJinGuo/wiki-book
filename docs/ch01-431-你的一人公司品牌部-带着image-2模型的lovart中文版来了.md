@@ -14,7 +14,7 @@
 - **评分**: 35
 
 ## 原始内容
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/你的一人公司品牌部带着image-2模型的lovart中文版来了.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/你的一人公司品牌部带着image-2模型的lovart中文版来了.md)
 
 ## 深度分析
 ### 1. 核心定位：设计能力的大众化

@@ -24,7 +24,7 @@
 - [Hermes Agent K2 6 Tutorial](/ch04-418-hermes-agent/)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/trae-solo-work-feishu-bitable-tutorial.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/trae-solo-work-feishu-bitable-tutorial.md)
 
 - [trae solo work 模式 + 飞书多维表格 5 步教程](/ch04-349-trae-solo-work-模式-飞书多维表格-5-步教程/)
 

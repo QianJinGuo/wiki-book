@@ -13,7 +13,7 @@
 ### 3. Multi-instance并发控制
 单个推理请求可能需要多个实例（模型并行），capacity-aware机制需要跟踪全局实例占用状态，避免oversubscription。
 ## 与知识库的连接
-- → [SQS异步管道](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-serverless-async-inference-sqs-lambda.md)：同样是高并发推理场景，但侧重点不同（管道式队列 vs 实例池调度）
+- → [SQS异步管道](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-bedrock-serverless-async-inference-sqs-lambda.md)：同样是高并发推理场景，但侧重点不同（管道式队列 vs 实例池调度）
 ---
 ## 深度分析
 ### 架构本质：从"绑定单一实例"到"容量抽象层"
@@ -78,7 +78,7 @@ Instance Pools改变了这一点：冷启动时会自动按优先级尝试可用
 - **容量规划**：通过InstanceCount per type的趋势，可以判断当前GPU可用性是否有结构性问题
 建议在迁移完成后立即更新Dashboard和Alarm，添加InstanceType维度，而不是等到事故发生时才想起这个新维度。
 ---
-*Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-sagemaker-capacity-aware-inference-fallback.md)*
+*Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-sagemaker-capacity-aware-inference-fallback.md)*
 ## 相关实体
 - [EC2 Capacity Blocks：GPU短期容量决策指南](/ch11-190-aws-ec2-capacity-blocks-gpu-ml/)
 - [GRPO+RLVR: Qwen数学推理3.7x提升的工程细节](/ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning/)

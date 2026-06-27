@@ -30,7 +30,7 @@ TOPICS
 - 评分：value=7, confidence=8, product=56
 
 ## 链接
-- [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5238213.md)
+- [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5238213.md)
 
 ## 相关实体
 - [OpenAI buys AI consultancy to sell enterprises on its models](/ch01-684-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/)
@@ -57,10 +57,10 @@ $4B+ 的投资规模、McKinsey/Bain/Capgemini 的参与，说明这不是一次
 - 传统战略咨询的 AI 能力正在被 FDE 模式颠覆——能写代码的执行能力比 PowerPoint 更重要
 - AI 咨询项目的核心竞争力在于"知道什么不该用 AI 自动化的"——复杂的组织政治、变革管理仍需人工介入
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 
 - 如果想进入 AI 咨询领域，应尽早掌握至少一个 AI 编程工具（Claude Code、Cursor 等）
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5238213.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5238213.md)
 
 ---
 

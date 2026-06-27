@@ -37,7 +37,7 @@ Drupal 此次安全更新的紧急程度体现在其发布的措辞中："exploi
 - [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](/ch12-020-how-an-image-could-compromise-your/)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](/ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/drupal-core-security-drupal-to-release-urgent-core-security.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/drupal-core-security-drupal-to-release-urgent-core-security.md)
 - new york design week is here, may 14–20 - core77
 
 ---

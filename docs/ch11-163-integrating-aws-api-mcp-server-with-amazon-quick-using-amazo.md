@@ -17,7 +17,7 @@
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](/ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco/)
 - [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](/ch04-261-build-ai-agents-for-business-intelligence-with-amazon-bedroc/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/integrating-aws-api-mcp-server-with-amazon-quick-suite-using-amazon-bedrock-agen.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/integrating-aws-api-mcp-server-with-amazon-quick-suite-using-amazon-bedrock-agen.md)
 
 ## 深度分析
 

@@ -214,7 +214,7 @@ Claude Code 把预算管理拆成了**四个独立的控制维度**：
 | 成本预算 | `maxBudgetUsd` 参数设置单次会话的最大美元成本上限 |
 | 工具结果预算 | 每个工具通过 `maxResultSizeChars` 声明单次结果的字符数上限 |
 | 轮次预算 | `maxTurns` 参数限制 Agent 循环的最大迭代次数 |
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-source-deep-dive-warrior.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-source-deep-dive-warrior.md)
 
 ## 深度分析
 ### 设计哲学：动态大于静态

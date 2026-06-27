@@ -5,7 +5,7 @@
 > 📊 Level ⭐ | 4.2KB | `entities/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md`
 
 ## 核心要点
-- ... → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
+- ... → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
 
 ## 深度分析
 CDK Mixins 的核心价值在于**解耦抽象与实现**，彻底解决了 CDK 传统 L1/L2/L3 架构中的根本性矛盾：团队必须在"快速获取新 AWS 特性"和"获得高级抽象"之间做出非此即彼的选择 。Mixin 模式让开发者可以在任意构造类型上组合所需能力，而无需继承不需要的行为。
@@ -27,7 +27,7 @@ CDK Mixins 的核心价值在于**解耦抽象与实现**，彻底解决了 CDK 
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](/ch11-197-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](/ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # Real AI Agents and Real Work
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/real-ai-agents-and-real-work.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/real-ai-agents-and-real-work.md)
 
 ## 摘要
 

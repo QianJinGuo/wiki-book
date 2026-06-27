@@ -177,7 +177,7 @@ Mollick 的关键警告：
 
 5. **建立组织级AI使用政策，而非依赖个人即兴使用** —— 个人用户容易陷入"无意识地用AI做更多任务"陷阱。组织需要自上而下地定义：哪些任务值得AI介入、什么时候需要人工审核、AI产出的质量门槛是什么。AI的能力已经足够，差距在于组织的判断力。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/real-ai-agents-and-real-work.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/real-ai-agents-and-real-work.md)
 
 ---
 

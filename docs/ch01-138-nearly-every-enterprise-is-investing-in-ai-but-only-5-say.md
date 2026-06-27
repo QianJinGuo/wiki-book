@@ -39,7 +39,7 @@
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](/ch01-040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f/)
 - [Clinereleasesopen Sourceagentruntimesdk](/ch01-102-cline-releases-open-source-agent-runtime-sdk/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
 
 ---
 

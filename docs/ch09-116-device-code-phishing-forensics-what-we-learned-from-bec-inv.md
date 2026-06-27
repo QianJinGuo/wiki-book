@@ -6,7 +6,7 @@
 
 # Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md)
 
 ## 深度分析
 

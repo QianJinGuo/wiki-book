@@ -5,7 +5,7 @@
 > 📊 Level ⭐⭐ | 15.3KB | `entities/cursor-harness-model-production-floor.md`
 
 # Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cursor-harness-model-production-floor.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor-harness-model-production-floor.md)
 
 * 这次重点不在解释 Harness 是什么，而在回答一个更实际的问题：当 Harness 开始承重，团队怎么持续运营它。 
 * Agent 质量不能只看模型分数。更准确的发布单元，是"模型 + Harness"的组合。 
@@ -154,7 +154,7 @@ Claude Code Subagents 的设计实际上就是这种路由抽象的具体实现 
 - [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](/ch11-001-anthropic-招人底牌-1680-份员工履历揭示-基础设施老兵-吃香/)
 - 新程alpha认知模型：4b参数端侧部署，群体智能以小搏大比肩gpt-5.4
 - MOC
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cursor-harness-model-production-floor.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor-harness-model-production-floor.md)
 
 ---
 

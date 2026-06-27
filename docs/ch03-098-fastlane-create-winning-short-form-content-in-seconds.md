@@ -6,7 +6,7 @@
 
 # Fastlane | Create Winning Short-Form Content In Seconds
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fastlane-create-winning-short-form-content-in-seconds.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastlane-create-winning-short-form-content-in-seconds.md)
 
 ## 摘要
 

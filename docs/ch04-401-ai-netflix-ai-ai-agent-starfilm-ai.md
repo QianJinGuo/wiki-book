@@ -42,7 +42,7 @@ Starfilm的出现折射出一个根本性的转变：AI视频工具正从"炫技
 - [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](/ch01-576-国产顶尖模型-benchmark-评分那么高-可实际效果为什么差-看完-anthropic-这篇博客-刷分的因素太单一了/)
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](/ch01-630-google-adds-llms-txt-check-to-chrome-lighthouse/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/starfilm-ai-agent-ai-short-film-platform.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/starfilm-ai-agent-ai-short-film-platform.md)
 
 ---
 

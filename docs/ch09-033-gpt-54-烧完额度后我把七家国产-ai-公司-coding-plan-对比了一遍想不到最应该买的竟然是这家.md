@@ -115,7 +115,7 @@
 - [Hermes Agent Vs Openclaw Comparison](/ch04-418-hermes-agent/)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](/ch05-019-ai-production-development-workflow-openspec-superpowers-gsta/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-54-烧完额度后我把七家国产-ai-公司-coding-plan-对比了一遍想不到最应该买的竟然是这家.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-54-烧完额度后我把七家国产-ai-公司-coding-plan-对比了一遍想不到最应该买的竟然是这家.md)
 - minimax token调用第一后：agentos现实与模型厂商的系统适配挑战
 
 ---

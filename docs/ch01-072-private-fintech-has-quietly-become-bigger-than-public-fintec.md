@@ -10,7 +10,7 @@
 
 Blue Dot Investors 与 FT Partners 联合报告揭示了金融科技行业的根本性结构转变：全球前 100 家私人金融科技公司总估值达 1.9 万亿美元，是过去 20 年成立的前 100 家上市金融科技公司市值总和的近 3 倍。 2025 年金融科技二级市场交易量同比增长 4 倍，标志着围绕长期私人公司持有的流动性基础设施正在快速成型。报告同时揭示了行业的两极分化：头部 10 家公司占总估值 60%，而 2014-2018 年间成立的中间层公司面临融资困难、退出路径收窄的「zombie land」困境。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/private-fintech-has-quietly-become-bigger-than-public-fintec-569278.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/private-fintech-has-quietly-become-bigger-than-public-fintec-569278.md)
 
 ## 核心要点
 

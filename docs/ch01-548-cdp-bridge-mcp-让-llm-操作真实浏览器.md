@@ -48,7 +48,7 @@
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cdp-bridge-mcp-real-browser-agent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cdp-bridge-mcp-real-browser-agent.md)
 
 ## 深度分析
 

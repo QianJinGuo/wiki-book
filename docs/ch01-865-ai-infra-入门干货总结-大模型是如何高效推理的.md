@@ -155,7 +155,7 @@ FlashAttention 的核心机制是 **Kernel Fusion + 分块计算 + Online Softma
 - [Opencli Browser Automation Jingxing](/ch03-080-opencli/)
 - MOC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-infra-llm-efficient-inference-vllm.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-infra-llm-efficient-inference-vllm.md)
 
 ---
 

@@ -44,7 +44,7 @@ Key defensive measures for private AI infrastructure
 - [我用 Skillmd 做了一个简历生成器](/ch07-047-我用-skill-md-做了一个简历生成器/)
 - [Skill Engineering Ai As Algorithm](/ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-raiders-private-ai-server.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-raiders-private-ai-server.md)
 
 ## 深度分析
 

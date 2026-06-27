@@ -63,7 +63,7 @@ Claude Code 启动 → /resume 加载 Obsidian 上下文
 - lucasrosati/claude-code-memory-setup
 - Graphify
 - Obsidian
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-memory-setup-token-71x楠楠自瑜.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-memory-setup-token-71x楠楠自瑜.md)
 
 ## 相关实体
 - Claude Code vs OpenClaw Agent 记忆系统对比

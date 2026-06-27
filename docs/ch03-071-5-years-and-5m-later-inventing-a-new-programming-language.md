@@ -8,7 +8,7 @@
 
 Wasp 创始人 Matija Sosic 公开复盘：花了 5 年、烧掉 500 万美金、走完 YC，才意识到「为 Web 开发发明一门新语言」是个错误决定。文章诚实拆解了「我们当初为什么觉得这是好主意」「开发者真实的反馈是什么」「IDE 工具链投入为什么是压垮骆驼的最后一根稻草」「为什么改用 TypeScript SDK 之后底层 Wasp 一切照旧」。核心结论：**Wasp 的护城河从来不是语言本身，而是「编译期对整个全栈应用的高层规范理解」**——既能让人类一眼看懂应用结构，也让 AI Agent 更容易推理与维护。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5-years-and-5m-later-inventing-a-new.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5-years-and-5m-later-inventing-a-new.md)
 
 ## 摘要
 

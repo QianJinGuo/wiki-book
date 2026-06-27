@@ -340,8 +340,8 @@ Anthropic 的 Activation Metadata 模式指出：一个好的 description 必须
 - Agent Skill 编写指南 — Skill 格式、渐进式披露、编写规范、评估迭代的基础知识
 - [Hermes Agent](/ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队/) — 支持 Skill 机制的核心开源 Agent
 - OpenClaw 架构解析 — 内置 Skill 系统实现
-- [Anthropic 14 模式原始文章](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-14-skill-patterns-best-practices.md)
-- [社区模式原始文章存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-writing-patterns-best-practices.md)
+- [Anthropic 14 模式原始文章](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-14-skill-patterns-best-practices.md)
+- [社区模式原始文章存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-writing-patterns-best-practices.md)
 
 ## 相关实体
 

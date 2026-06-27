@@ -60,7 +60,7 @@
 - [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
 - [Langchain Anatomy Agent Harness](/ch04-425-the-anatomy-of-an-agent-harness-解读/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md)
 
 ## 深度分析
 

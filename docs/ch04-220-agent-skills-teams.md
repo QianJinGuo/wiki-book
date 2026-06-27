@@ -142,7 +142,7 @@ Agent Teams（并行 + 共享 Context）
 - Token 消耗增长率超过业务价值增长率
 当出现以上信号，应回退到更简单的架构，用 P0 → P1 → P2 的逆向检视路径重新评估。
 ---
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-skills-teams-architecture-evolution-selection-guide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-skills-teams-architecture-evolution-selection-guide.md)
 
 ---
 

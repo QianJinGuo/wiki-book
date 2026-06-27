@@ -35,7 +35,7 @@
 - [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](/ch04-421-claude-managed-agents/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-newbie-guide-dotta.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-newbie-guide-dotta.md)
 
 ---
 

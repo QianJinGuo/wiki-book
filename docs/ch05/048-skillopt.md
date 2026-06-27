@@ -11,7 +11,7 @@
 
 **SkillOpt = "LoRA for skills"**。LoRA 冻结模型主体、只训练一个小参数适配层；**SkillOpt 冻结全部模型参数、只训练一份外挂 skill 文件**。部署阶段零额外模型调用 —— optimizer 只在训练阶段参与，产出纯文本 `.md`。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillopt-skill-document-training-microsoft-sjtu.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillopt-skill-document-training-microsoft-sjtu.md)
 
 ## 它要解决什么
 主流 skill 生产方式（人工手写 / LLM 一次性生成 / 自修订）**没有验证机制**。人工写的改一行不知影响；LLM 生成的 quality 看那次 prompt；自修订"看起来更聪明"实际可能更差。

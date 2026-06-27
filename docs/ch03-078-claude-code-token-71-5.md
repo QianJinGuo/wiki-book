@@ -109,7 +109,7 @@ CLAUDE.md 文件在此方案中承担双重角色：
 - Claude Code Prompt Source Analysis
 - [Claude Code Tool Design Evolution Anthropic](/ch01-360-claude-code-工具设计复盘-官方/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-memory-setup-token-71x楠楠自瑜.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-memory-setup-token-71x楠楠自瑜.md)
 
 ## 相关实体
 - `官方Memory Setup` — 同一工作流的官方版本

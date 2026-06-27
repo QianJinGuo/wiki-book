@@ -127,7 +127,7 @@ GitHub: https://github.com/shikaiqiu/epiplexity
 ## 相关实体
 - [Shannon Epiplexity Finite Compute Information Theory](/ch01-594-shannon-epiplexity-finite-compute-information-theory/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/shannon-epiplexity-finite-compute-information-theory.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/shannon-epiplexity-finite-compute-information-theory.md)
 
 - 涌现能力 — 有限算力下的涌现（实体不存在，待创建）
 

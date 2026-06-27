@@ -59,7 +59,7 @@ The more interesting future is not only agents operating apps. It is application
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](/ch04-245-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
 - [Thehackernews Fake Openai Privacy Filter](/ch01-656-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/interface-commoditization-ai-era.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/interface-commoditization-ai-era.md)
 
 - [Playerzero Request Demo](/ch03-041-book-a-demo-see-playerzero-in-action/)
 ## 深度分析
@@ -96,7 +96,7 @@ The more interesting future is not only agents operating apps. It is application
 
 5. **从"AI + 产品"转向"产品 = 结构层 + AI 渲染"**：不是问"我们如何在 X 产品中加入 AI 功能"，而是问"X 工作的真实对象是什么，我们需要什么结构来表示它，以及 AI 如何帮助维护这个结构"。这个框架重塑了产品优先级：最重要的投资可能不是新的 AI 模型，而是更好的数据模型设计。 [^raw/articles/interface-commoditization-ai-era.md:79-106]
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/interface-commoditization-ai-era.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/interface-commoditization-ai-era.md)
 
 ---
 

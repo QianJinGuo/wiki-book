@@ -105,11 +105,11 @@ Insightful and practical framework applying systems engineering backpressure to 
 - **AI 迭代轮次**：AI 在自动反压下自我修正的平均次数。正常情况下，AI 应该能在 1-3 轮内完成自我修正，轮次过多说明反压阈值可能设置过高或过低。
 - **「昂贵剪贴板」出现频率**：人类在两个 Agent 之间手动转发反馈的次数。该指标应随跨 Agent 直接通道的建立而趋近于零。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lucasfcostacom-blog-backpressure-is-all-you-need.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lucasfcostacom-blog-backpressure-is-all-you-need.md)
 
 ## 相关主题
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lucasfcostacom-blog-backpressure-is-all-you-need.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lucasfcostacom-blog-backpressure-is-all-you-need.md)
 - [Harness 工程核心模式](/ch05-042-harness-engineering-核心模式/) — 多层验证门禁的设计思想
 - Agentic 工作流模式 — 循环验证与迭代修正的实践框架
 - 生产级 Agent 工程 — 渐进式可信度建立的方法论

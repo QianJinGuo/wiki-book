@@ -18,7 +18,7 @@ Claude Managed Agents官方Harness平台完整手册。本文来自 WeChat data-
 - Skill 形式化理论 — Skill 的六元组定义与 DAG 步骤计划
 
 ## 原始存档
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-claude-managed-agents-guide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-claude-managed-agents-guide.md)
 
 ## 深度分析
 ### 架构定位：从 API 调用到平台即服务的范式跃迁

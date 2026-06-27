@@ -17,7 +17,7 @@
 - [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)
 - [Hermes Agent Getting Started Guide 2026](/ch04-418-hermes-agent/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillx-zhejiang-university-hyman.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillx-zhejiang-university-hyman.md)
 
 ## 深度分析
 

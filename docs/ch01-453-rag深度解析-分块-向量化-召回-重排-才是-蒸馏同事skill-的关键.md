@@ -6,7 +6,7 @@
 
 ## 核心要点
 微信文章：RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rag深度解析分块向量化召回重排才是蒸馏同事skill的关键.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rag深度解析分块向量化召回重排才是蒸馏同事skill的关键.md)
 
 ## 深度分析
 这篇文章的核心贡献是把"同事.skill"热潮拉回工程现实：**skill 复制动作，RAG 补足认知，二者合一才接近真正的"蒸馏同事"**。一个 top sales 的能力由三层构成——Workflow 层（他知道第一步做什么第二步做什么）、Knowledge 层（他知道做这件事要参考哪些资料）、Judgement 层（在复杂情况下如何权衡）。Skill 负责第一层，RAG 负责第二层，第三层取决于模型能力和人类兜底机制。绝大多数"同事.skill"项目只做了第一层，然后误以为完成了全部蒸馏。

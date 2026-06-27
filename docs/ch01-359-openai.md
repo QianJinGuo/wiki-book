@@ -17,7 +17,7 @@
 - [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](/ch01-168-chatgpt-官宣-26-位未来之星-他们是-穿墙少年-街头摊贩-盲童的朋友/)
 - [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](/ch01-576-国产顶尖模型-benchmark-评分那么高-可实际效果为什么差-看完-anthropic-这篇博客-刷分的因素太单一了/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/刚刚openai-放出三个语音模型顺便杀死了同传.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/刚刚openai-放出三个语音模型顺便杀死了同传.md)
 
 ## 深度分析
 ### 三模型架构的完整语音AI基础设施
@@ -57,7 +57,7 @@ GPT-Realtime系列模型打开了多个应用场景的可能性。**客服系统
 
 ## 相关链接
 -  — OpenAI Realtime语音架构深度分析
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/刚刚openai-放出三个语音模型顺便杀死了同传.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/刚刚openai-放出三个语音模型顺便杀死了同传.md)
 - [OpenAI博客](https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/)
 - [Realtime API文档](https://developers.openai.com/api/docs/guides/realtime)
 

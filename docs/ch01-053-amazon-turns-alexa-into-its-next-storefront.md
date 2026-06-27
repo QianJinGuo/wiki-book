@@ -14,7 +14,7 @@
 - [Code Simulation For Enterprise Engineering Playerz](/ch01-119-code-simulation-for-enterprise-engineering-playerzero/)
 - [Thrive Capital Bets 100 Million On Shopifys Ai Future](/ch01-086-thrive-capital-bets-100-million-on-shopify-s-ai-future/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 
 ## 深度分析
 ### 从搜索框到语音：零售 AI 的范式转移

@@ -17,7 +17,7 @@
 - [Harness Engineering Reliable Long Term Agent](/ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - [Harness Engineering Long Term Agent Tasks](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗-v2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗-v2.md)
 
 ## 深度分析
 

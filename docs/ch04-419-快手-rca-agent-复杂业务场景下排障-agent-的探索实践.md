@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/rca-agent-kuaishou-guo-yongliang-qcon-2026.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rca-agent-kuaishou-guo-yongliang-qcon-2026.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rca-agent-kuaishou-guo-yongliang-qcon-2026.md)
 
 快手主站归因排障 Agent 的生产级实践，覆盖四大挑战（业务理解/告警噪声/不确定性/幻觉）和完整的 Multi-Agent 架构设计。郭勇良（QCon 2026 北京）。
 

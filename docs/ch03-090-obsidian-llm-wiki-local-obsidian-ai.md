@@ -64,7 +64,7 @@ AI 第一版生成的概念页可能太泛（"这是一篇关于效率的文章"
 - **推荐模型**: qwen2.5:7b（中文效果好、门槛低）或 deepseek-r1:8b（推理能力强）
 - **依赖**: Python 3.10+
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/obsidian-llm-wiki-local-kytmanov-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/obsidian-llm-wiki-local-kytmanov-2026.md)
 
 ## 深度分析
 

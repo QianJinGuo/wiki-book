@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.9KB | `entities/self-evolving-agents-survey-papersagent.md`
 
-[Self Evolving Agents Survey Papersagent](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/self-evolving-agents-survey-papersagent.md)
+[Self Evolving Agents Survey Papersagent](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/self-evolving-agents-survey-papersagent.md)
 
 ## 摘要
 厦门大学、香港理工大学、马里兰大学、华盛顿大学圣路易斯分校、UIUC、新加坡管理大学等多机构联合发布系统性综述，系统回答：当 LLM Agent 能够主动探索、获得反馈、更新策略、积累经验时，如何理解其"自进化"？

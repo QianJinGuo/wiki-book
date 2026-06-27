@@ -6,7 +6,7 @@
 
 # Claude Code and What Comes Next
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-and-what-comes-next.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-and-what-comes-next.md)
 
 ## 摘要
 

@@ -56,7 +56,7 @@ Stepan Gershuni 在 cyber.fund 发布的这篇创始人指南，提出了 AI 原
 - [Gaode Ai Native 7X24 Pipeline Self Healing](/ch04-028-高德-ai-native-生产线-第-3-期-7x24-self-healing-pipeline-agent-自/)
 - [Harness Engineering Comprehensive Guide Conardli](/ch05-009-harness-engineering-综合性指南-conardli-系列-含-beautiful-article/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-startup-cyberfund-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-native-startup-cyberfund-2026.md)
 - [how frontier teams are reinventing ai-native development](/ch01-230-how-frontier-teams-are-reinventing-ai-native-development/)
 - MOC
 

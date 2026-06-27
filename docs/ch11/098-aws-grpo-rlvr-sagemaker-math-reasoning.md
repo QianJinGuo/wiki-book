@@ -140,7 +140,7 @@ env["NCCL_IB_DISABLE"] = "1"  # 禁用IB，使用EFA
 - Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn
 - MOC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-grpo-rlvr-sagemaker-math-reasoning.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-grpo-rlvr-sagemaker-math-reasoning.md)
 
 ---
 

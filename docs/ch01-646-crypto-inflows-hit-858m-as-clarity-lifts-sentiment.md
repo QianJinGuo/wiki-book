@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
 
 ## Summary
 *(AI-generated summary - TODO: manually review)*

@@ -16,7 +16,7 @@
 
 - [mountpoint s3 vs s3 files：eks 上 s3 数据接入的两种方案实战对比](/ch11-063-mountpoint-s3-vs-s3-files-eks-上-s3-数据接入的两种方案实战对比/)
 - [规划 amazon eks 从 1.32 升级到 1.35：关键变更识别与逐版本实施路径](/ch11-107-规划-amazon-eks-从-1-32-升级到-1-35-关键变更识别与逐版本实施路径/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载.md)
 
 - MOC
 ## 深度分析

@@ -7,7 +7,7 @@
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/entrypointhijacking.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/entrypointhijacking.md)
 
 ## 深度分析
 EntryPoint Hijacking 是一种**无新建线程**的代码注入技术，核心创新在于将恶意代码写入内存后不立即执行，而是等待进程正常创建新线程时触发。这与传统的 Thread Injection（CreateRemoteThread）等技术的根本区别在于：不依赖 API 调用产生新线程，不在进程上下文留下明显的线程创建痕迹，从而大幅提升 EDR 规避能力。

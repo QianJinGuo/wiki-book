@@ -6,7 +6,7 @@
 
 # Code Intelligence – Changelog
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-intelligence-changelog.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/code-intelligence-changelog.md)
 
 ## 深度分析
 

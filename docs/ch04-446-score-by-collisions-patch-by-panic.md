@@ -16,7 +16,7 @@
 - [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
 - [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)
 
 - MOC
 ## 深度分析

@@ -63,7 +63,7 @@
 - [Agentcore Harness](/ch04-206-agentcore-managed-harness/)
 - [Aws Bedrock Ops Alert](/ch11-093-amazon-bedrock-ops-alert-三层监控架构/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bedrock-image-content-precise-analysis.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/bedrock-image-content-precise-analysis.md)
 
 - MOC
 ## 深度分析

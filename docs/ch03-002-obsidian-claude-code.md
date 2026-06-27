@@ -148,7 +148,7 @@ last-session: 2026-05-10
 策略 3 MCP 桥接很优雅，但它是针对「代码仓库和知识库完全分离」这个问题的答案。如果你的代码仓库本身就需要放在 Vault 里（策略 2），MCP 反而多此一举。先想清楚「我的 Vault 和代码仓库是否必须分离」，再决定是否引入 MCP 层。
 
 ## 相关工具与资源
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/obsidian-claude-code-integration-guide.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/obsidian-claude-code-integration-guide.md)
 - [Agent Memory 架构](/ch04-146-agent-memory-架构本质/) — 与 Obsidian vault 记忆模式的思想关联
 - [Claude Code Hackathon 经验](/ch09-045-claude-code-黑客松-技艺数字化六项目/) — Claude Code 实战相关
 - Karpathy LLM Wiki — 本地知识管理系统的设计思路

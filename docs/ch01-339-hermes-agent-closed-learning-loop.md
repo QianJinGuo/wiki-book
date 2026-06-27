@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/hermes-agent-closed-learning-loop.md`
 
-[Hermes Agent Closed Learning Loop](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-closed-learning-loop.md)
+[Hermes Agent Closed Learning Loop](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-closed-learning-loop.md)
 
 ## 文章概要
 Hermes Agent 是 Nous Research 于 2025 年 2 月开源的自托管智能体框架，GitHub 50.6K star，被认为是 OpenClaw 的首个真正竞争对手。其核心差异在于内置**闭环学习循环**（A Closed Learning Loop），通过"触发 → review → 写回 → 再注入"把 self-improving 飞轮真正跑通。

@@ -18,7 +18,7 @@ Over the past years, the Digital Customer Experience and Engineering team has ev
 - [Aws Bedrock Multi Agent Collaboration Guide](/ch11-008-aws-bedrock-多智能体协作指南/)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-hapag-lloyd-bedrock-customer-feedback.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-hapag-lloyd-bedrock-customer-feedback.md)
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/skill-version-comparison-five-principles-winty.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-version-comparison-five-principles-winty.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-version-comparison-five-principles-winty.md)
 
 Skill 版本升级不能只看总分变化，需要多维度对比 + 分场景拆解 + 失败 case 人眼复核 + 统计显著性检验 + Token/时延纳入门禁。本文提出 5 条原则和完整的版本对比报告 YAML 模板。
 

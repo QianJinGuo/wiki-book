@@ -73,7 +73,7 @@ Google Ads 实验数据是平台级别的，但业务影响是全链路的。成
 - [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](/ch01-047-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p/)
 - [Building Blocks For Foundation Model Training And Inference On Aws](/ch11-117-building-blocks-for-foundation-model-training-and-inference/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/almcorp-google-ads-expanded-experiment-v24-1.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/almcorp-google-ads-expanded-experiment-v24-1.md)
 
 ---
 

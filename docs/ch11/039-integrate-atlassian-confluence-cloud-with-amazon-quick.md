@@ -118,7 +118,7 @@ Quick Flows 可自动化引用或更新 Confluence 内容的工作流。结合 A
 Knowledge Base 的 Sync Reports 是易被忽视的运维窗口。定期检查「skipped」和「failed」条目，可早期发现 Confluence 内容结构变化（如页面迁移、Space Key 变更）导致的索引不完整问题，避免用户发现答案缺失后才被动修复。
 
 ## 相关资源
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/integrate-atlassian-confluence-cloud-with-amazon-quick.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/integrate-atlassian-confluence-cloud-with-amazon-quick.md)
 - [Amazon Quick 文档](https://docs.aws.amazon.com/quicksuite/)
 - [Confluence Cloud Action 集成](https://docs.aws.amazon.com/quick/latest/userguide/confluence-action-integration.html)
 - [Confluence Knowledge Base ACL 配置](https://docs.aws.amazon.com/quick/latest/userguide/confluence-kb-acl.html)

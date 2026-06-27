@@ -64,7 +64,7 @@ when a request comes in, the buffer does three things in order. it resets its st
 
 ## 相关
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sunilpai.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sunilpai.md)
 
 ---
 

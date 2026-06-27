@@ -16,7 +16,7 @@ Data Security Platform
 - [Thehackernews Com The New Phishing Click How Oauth](/ch01-465-the-new-phishing-click-how-oauth-consent-bypasses-mfa/)
 - [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](/ch01-060-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bluekit.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/bluekit.md)
 
 ## 深度分析
 

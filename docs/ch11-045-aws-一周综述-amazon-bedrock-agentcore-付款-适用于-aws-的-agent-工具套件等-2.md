@@ -8,7 +8,7 @@
 - AWS 技术实践，覆盖 2026 年 5 月 5 日至 11 日这一周的重要发布
 - 评分：v=8, c=9, 推荐级别 worth-reading，4 星
 - 重点内容：AgentCore 支付功能预览、MCP 服务器 GA、Agent Toolkit for AWS、EC2 M8idn/R8idn 新实例
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
 
 ## Amazon Bedrock AgentCore 付款功能
 上周最令人振奋的消息是 [Amazon Bedrock AgentCore 预览版推出首款托管支付功能](https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-agentcore-payments-preview/)，使人工智能代理能够自主访问 API、MCP 服务器、Web 内容和其他代理并为其付费。该功能是与 Coinbase 和 Stripe 合作构建的，可省去为计费、凭证管理和合规性构建自定义系统的无差别繁重构建工作。

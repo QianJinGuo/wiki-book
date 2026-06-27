@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐ | 4.2KB | `entities/principals-ai-education.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/principals-ai-education.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/principals-ai-education.md)
 
 ## 核心要点
 - 待补充
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/principals-ai-education.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/principals-ai-education.md)
 
 ## 深度分析
 **中间层缺口是 AI 时代教育危机的核心。** 传统 philanthropy 聚焦于早期教育（0–5 岁）和高等教育（18+），却系统性忽视了中学阶段（初中，约 12–14 岁）——这个阶段学生最容易流失，而教育资源恰恰最匮乏。Salesforce 的 Principal Innovation Fund 直接将 $100K 交给校长自主支配，而非绑定用途，正是对这一结构性缺失的直接回应。

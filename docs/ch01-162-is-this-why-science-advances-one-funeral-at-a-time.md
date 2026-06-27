@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.2KB | `entities/is-this-why-science-advances-one-funeral-at.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/is-this-why-science-advances-one-funeral-at.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/is-this-why-science-advances-one-funeral-at.md)
 
 ## 相关实体
 

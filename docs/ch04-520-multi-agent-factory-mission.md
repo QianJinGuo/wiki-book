@@ -10,7 +10,7 @@
 > 演讲者：Luke Alvoeiro（Block → 开源 Goose 43.9k★ → Factory CTO）
 > 产品：Factory Droid（15 亿美元估值，Series C）
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/multi-agent-mission-factory-luke-aiengineer.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/multi-agent-mission-factory-luke-aiengineer.md)
 
 ## 摘要
 

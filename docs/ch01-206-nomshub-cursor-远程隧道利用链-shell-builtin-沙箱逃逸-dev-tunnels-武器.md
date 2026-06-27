@@ -8,7 +8,7 @@
 
 > **Background**: NomShub 是 2026 年 1 月由 Straiker 安全研究团队（Sumit Agrawal 等）发现、4 月披露、Cursor 3.0 修复的端到端 AI agent 供应链攻击链。它的特殊价值在于**完整公开了一个"AI agent 作为攻击执行器"的可复现 exploit**：单行 prompt injection 触发，AI agent 自主完成 7 步攻击链，零用户交互，影响 Cursor 全 macOS 用户。本文剖析其技术机制（特别是 shell builtin 沙箱逃逸 + Microsoft Dev Tunnels LOTL 武器化），并讨论其对所有 AI 编码助手的启示。
 >
-> 原文：→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md)
+> 原文：→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md)
 
 ## 一句话总结
 
@@ -121,7 +121,7 @@ Cursor/Anysphere 通过 HackerOne 独立评估 sandbox breakout 部分为 **High
 
 ## 原文链接
 
-→ [NomShub 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md)
+→ [NomShub 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md)
 
 ## 深度分析
 

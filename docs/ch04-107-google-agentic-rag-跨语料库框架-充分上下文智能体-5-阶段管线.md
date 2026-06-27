@@ -6,7 +6,7 @@
 
 # Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线
 
-> 原文链接：[原文链接](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md)
+> 原文链接：[原文链接](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md)
 
 ## 摘要
 
@@ -156,7 +156,7 @@ RAG 里的迭代 ≠ Agent 里的 ReAct 循环：
 
 ## 相关实体
 
-- [原文链接](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md)
+- [原文链接](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md)
 - [Agent 记忆系统的工程实践](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
 - [Karpathy: 从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 - [AgentOps: Amazon Bedrock 上的 Agent 运维](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)

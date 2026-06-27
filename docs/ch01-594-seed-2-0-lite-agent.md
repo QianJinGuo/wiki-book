@@ -18,7 +18,7 @@
 - [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
 - [Hermes Agent Newbie Guide Dotta](/ch01-655-paperclip-ai-公司操作系统-第-5-篇-完结/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/doubao-seed-2-lite-agent-multimodal.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/doubao-seed-2-lite-agent-multimodal.md)
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 12.2KB | `entities/why-im-leaving-github-for-forgejo.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/why-im-leaving-github-for-forgejo.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/why-im-leaving-github-for-forgejo.md)
 
 ## 核心要点
 - 作者 Jorijn Schrijvershof（荷兰 DevOps 顾问）将代码从 GitHub 迁移至自托管 Forgejo 实例（code.jorijn.com）
@@ -13,7 +13,7 @@
 - 美国法律管辖权风险（FISA Section 702 + CLOUD Act）无法通过「欧盟数据驻留」解决
 - 荷兰政府于 2026 年 4 月 27 日上线 code.overheid.nl（基于 Forgejo），成为机构层面的印证案例
 - Forgejo 优势：完全开源（无 open-core 分叉）、GPLv3+ 许可（非 MIT）、由德国非营利 Codeberg e.V. 治理
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/why-im-leaving-github-for-forgejo.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/why-im-leaving-github-for-forgejo.md)
 
 ## 相关实体
 
@@ -120,7 +120,7 @@ Docker 层：Forgejo v15 LTS + Postgres 17 + Traefik
 
 -  — AI 实施与企业合规风险
 -  — 开发者平台与 AI 工具链
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/why-im-leaving-github-for-forgejo.md) — Jorijn Schrijvershof 个人博客，2026-05-08 发布
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/why-im-leaving-github-for-forgejo.md) — Jorijn Schrijvershof 个人博客，2026-05-08 发布
 
 ---
 

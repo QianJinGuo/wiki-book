@@ -49,7 +49,7 @@
 1. **Gateway 是核心还是入口** → 重集中 vs 轻分散
 2. **永远在线 vs 按需启动** → 运营成本 vs 失去主动性
 3. **默认开放 vs 默认拒绝** → 社区增长 vs 安全基线
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gateway-architecture-openclaw-claude-hermes-comparison.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gateway-architecture-openclaw-claude-hermes-comparison.md)
 
 ## 深度分析
 1. **Gateway 哲学决定 Agent 本质，而非功能多寡** — 文章提出的核心命题是：Gateway 设计哲学决定了 Agent 是被动响应工具还是主动运行的数字员工。三框架给了完全不同的答案：OpenClaw 把 Gateway 做成了神经中枢（永远在线+心跳+Cron），Claude Code 压根没有原生 Gateway（CLI 生命周期），Hermes 把 Gateway 做成可选的薄适配层。这个视角比常见的"功能罗列对比"更接近架构本质

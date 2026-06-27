@@ -11,7 +11,7 @@
 - [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](/ch01-725-面向大型代码库的-claude-code-团队落地经验与扩展策略-agent-harness/)
 - [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](/ch01-831-面向大型代码库的-claude-code-团队落地经验与扩展策略-agent-harness/)
 - [知识库问答 @文档：从 dom 方案到 prosemirror 落地](/ch01-791-知识库问答-文档-从-dom-方案到-prosemirror-落地/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-core-patterns-claude-code.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-core-patterns-claude-code.md)
 
 - MOC
 ## 深度分析

@@ -530,7 +530,7 @@ owner 看完之后，做了三件事：
 
 ## 第 3 篇：Skill 生命周期 6 阶段治理（2026-06-17 发布）
 
-> Source: [第 3 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-lifecycle-6-stages-winty-2026-06-17.md)
+> Source: [第 3 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-lifecycle-6-stages-winty-2026-06-17.md)
 
 **核心金句**：
 
@@ -618,7 +618,7 @@ owner 看完之后，做了三件事：
 ## 相关实体
 
 - [review agent 机制深度解析（winty）](/ch04-077-review-agent-机制深度解析-winty/)
-→ [第 1 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-hub-organization-asset-winty.md) · [第 2 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-quality-gates-4-checks-winty-2026-06-16.md) · [第 3 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-lifecycle-6-stages-winty-2026-06-17.md) · ·
+→ [第 1 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-hub-organization-asset-winty.md) · [第 2 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-quality-gates-4-checks-winty-2026-06-16.md) · [第 3 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-lifecycle-6-stages-winty-2026-06-17.md) · ·
 
 > **系列收尾**：winty 在第 3 篇末尾预告"下一篇进入更具体的实战层面：企业级 Skill Hub 的架构设计"——`架构设计`将是 winty Skill Hub 系列的第 4 篇，可继续追踪入库。
 

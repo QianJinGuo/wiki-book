@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/llm-rl中的熵-part-1-熵的调控.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-rl中的熵-part-1-熵的调控.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-rl中的熵-part-1-熵的调控.md)
 
 ## Summary
 LLM RL中的熵：模型rollout多样性调控。熵随训练下降，维持适当熵水平重要。

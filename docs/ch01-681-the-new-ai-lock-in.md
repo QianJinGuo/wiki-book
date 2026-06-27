@@ -5,7 +5,7 @@
 > 📊 Level ⭐⭐ | 4.4KB | `entities/new-lock.md`
 
 ## 核心要点
-- source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/new-lock.md)
+- source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/new-lock.md)
 - review: v=7 × c=8 = 56
 
 ## 摘要
@@ -16,7 +16,7 @@
 - [P Ic Work Is The New Career Flex](/ch03-009-ic-work-is-the-new-career-flex/)
 - [Thehackernews Com The New Phishing Click How Oauth](/ch01-465-the-new-phishing-click-how-oauth-consent-bypasses-mfa/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/new-lock.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/new-lock.md)
 
 ## 深度分析
 文章核心命题：AI 供应商锁定（lock-in）并未消失，而是从模型层向上迁移到了编排层、工作流表面和服务层。

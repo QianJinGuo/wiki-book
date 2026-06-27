@@ -61,7 +61,7 @@ Model half-life 讨论背后反映的是 AI 行业的高度竞争焦虑。各实
 - [Llm Raiders Private Ai Server](/ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se/)
 - [Langgraph State Machine Under The Hood](/ch01-192-langgraph-底层原理-它是怎么把-llm-变成一台状态机的/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/model-half-life-aifoc.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/model-half-life-aifoc.md)
 
 ---
 

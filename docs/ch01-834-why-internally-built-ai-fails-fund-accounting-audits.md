@@ -6,7 +6,7 @@
 
 # Why Internally-Built AI Fails Fund Accounting Audits
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-fails-fund-accounting-audits.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-fails-fund-accounting-audits.md)
 
 ## 深度分析
 

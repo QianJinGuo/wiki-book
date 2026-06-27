@@ -94,7 +94,7 @@
 - [Skill Development Guide Aliyun 2026](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
 - [Strands Agents Cloud Cost Optimizer](/ch04-128-基于-strands-agents-构建亚马逊云科技云成本分析与优化-ai-助手/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
 - agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）
 
 ---

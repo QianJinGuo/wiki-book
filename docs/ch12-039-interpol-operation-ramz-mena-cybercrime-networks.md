@@ -81,7 +81,7 @@ Group-IB 和 Team Cymru 的参与表明私营部门威胁情报已成为执法�
 - [Japan Pm Cybersecurity Review Anthropic Mythos](/ch01-677-anthropic/)
 - [New Cybersecurity Coalition Us Policy](/ch11-004-new-cybersecurity-industry-coalition-aims-to-lead-us-critica/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/interpol-operation-ramz-mena-cybercrime.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/interpol-operation-ramz-mena-cybercrime.md)
 
 ---
 

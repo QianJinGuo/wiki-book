@@ -8,7 +8,7 @@
 
 把 Claude Code 当作 Markdown 生成器、把 Obsidian 当作知识管理前端，几乎是当下 PKM + Agent 工作流社区的共识组合。但「直接把 Obsidian 指向代码仓库」往往会立刻翻车——`node_modules`、PNG、lock 文件一股脑出现，Vault 视图迅速失控。本文整理了社区里五种主流集成策略，从最轻量的「符号链接 + 过滤」到 MCP 桥接、再到 QMD + 会话同步的进阶玩法，并给出文件混乱治理与插件清单。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/57U6XeKCGtVkQXnNqg9DJQ.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/57U6XeKCGtVkQXnNqg9DJQ.md)
 
 ## 摘要
 

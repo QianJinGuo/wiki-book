@@ -43,7 +43,7 @@
 - [Canvas Breach Disrupts Schools Colleges Nationwide](/ch12-031-canvas-breach-disrupts-schools-colleges-nationwide/)
 - MOC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ath-agent-trust-handshake-protocol.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ath-agent-trust-handshake-protocol.md)
 
 ---
 

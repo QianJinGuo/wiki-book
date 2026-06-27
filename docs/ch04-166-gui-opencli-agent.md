@@ -6,7 +6,7 @@
 
 # 浏览器自动化：从 GUI 到 OpenCLI — Agent 时代的可调用性竞争
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/opencli-browser-automation-jingxing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/opencli-browser-automation-jingxing.md)
 
 ## 摘要
 
@@ -139,7 +139,7 @@ opencli cascade https://api.example.com/hot
 - [Codex Goal Source Code Deep Dive](/ch09-041-codex-goal-源码深度解析-状态表-续跑条件-预算账本/)
 - [Impeccable Frontend Design Skill Harness Vibecoder](/ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/opencli-browser-automation-jingxing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/opencli-browser-automation-jingxing.md)
 - [how developers can build agentic agreement workflows on docu](/ch04-270-how-developers-can-build-agentic-agreement-workflows-on-docu/)
 - MOC
 

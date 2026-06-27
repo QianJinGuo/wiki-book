@@ -100,7 +100,7 @@ AHE 的演化曲线揭示了一个反直觉的现象：
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 - Agent Observability
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)
 
 ---
 

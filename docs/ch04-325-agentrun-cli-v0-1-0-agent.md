@@ -17,7 +17,7 @@ AgentRun 是以高代码为核心、生态开放、灵活组装的一站式 Agen
 - [Aliyun Agentrun 5Min Quickstart](/ch04-006-5-分钟上手-agentrun-从注册到第一个-agent-运行/)
 - Skills Registry 公测开启为企业打造私有的 Skill 管理中心
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentrun-cli-v010-正式开源一行命令运行您的托管-agent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentrun-cli-v010-正式开源一行命令运行您的托管-agent.md)
 
 ## 深度分析
 

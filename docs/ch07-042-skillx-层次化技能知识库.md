@@ -61,7 +61,7 @@ SkillX的三层技能体系（Planning / Functional / Atomic）揭示了Agent经
 - [Skill 设计模式](/ch07-002-skill-设计模式/)
 - [Hermes-Agent 自进化机制](/ch04-418-hermes-agent/)
 - [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/)
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillx-zhejiang-university.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillx-zhejiang-university.md)
 
 ## 相关实体
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)

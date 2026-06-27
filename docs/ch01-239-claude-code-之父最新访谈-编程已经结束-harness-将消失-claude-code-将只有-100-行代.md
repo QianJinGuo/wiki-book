@@ -13,7 +13,7 @@
 - 未来趋势：人人都能编程，跨学科通才崛起，10 倍数量创业公司将颠覆现有格局
 
 ## 相关资源
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md)
 
 ## 关于 Boris Cherny
 Boris Cherny 的履历相当硬核。他出生在乌克兰，1995 年随家人移民美国，祖父是苏联时期的程序员，家里曾堆满打孔卡片。他本科学的是经济学，编程完全自学，18 岁开始创业，后成为 YC 公司第一号员工，在对冲基金、广告技术、创业公司间摸爬滚打。

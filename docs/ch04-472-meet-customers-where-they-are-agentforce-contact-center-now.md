@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
 
 ## 核心要点
 - 来源：newsletter (kilo.ai/blog.kilo.ai)
 - 评分：v=7 × c=8 = 56 (strong)
 - 主要内容：Meet Customers Where They Are: Agentforce Contact Center Now Offers WhatsApp Voice
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
 
 ## 相关实体
 > ai agent platforms topic map（已删除）

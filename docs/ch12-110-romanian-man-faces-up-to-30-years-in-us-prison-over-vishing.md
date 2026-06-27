@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.8KB | `entities/romanian-man-30-years-us-prison-vishing.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/romanian-man-30-years-us-prison-vishing.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/romanian-man-30-years-us-prison-vishing.md)
 
 ## Summary
 A Romanian man has been extradited to the US and faces up to 30 years in prison for operating a vishing (voice phishing) scam operation that defrauded victims across the United States.
@@ -34,7 +34,7 @@ A Romanian man has been extradited to the US and faces up to 30 years in prison 
 - [Ath Agent Trust Handshake Protocol](/ch04-500-为了让agent更安全的工作-有多少人操碎了心/)
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](/ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/romanian-man-30-years-us-prison-vishing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/romanian-man-30-years-us-prison-vishing.md)
 
 ## 相关实体
 

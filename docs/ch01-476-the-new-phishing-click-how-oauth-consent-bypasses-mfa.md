@@ -46,7 +46,7 @@ MCP（ Model Context Protocol）服务正在成为下一个 OAuth 式的攻击�
 - [New Lock](/ch01-681-the-new-ai-lock-in/)
 - How To Calculate The Inference Efficiency Ratio
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thehackernews-com-the-new-phishing-click-how-oauth.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thehackernews-com-the-new-phishing-click-how-oauth.md)
 
 ---
 

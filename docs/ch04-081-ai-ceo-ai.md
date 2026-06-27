@@ -201,7 +201,7 @@
 
 > 说真的，**这真的挺不 AI、也挺不酷的**。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-team-building-failures-ceo-digital-twin-case.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-native-team-building-failures-ceo-digital-twin-case.md)
 
 ## 深度分析
 

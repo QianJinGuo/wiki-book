@@ -17,7 +17,7 @@ GitHub: https://github.com/Einsia/OpenChronicle
 - [Chatgpt Memory](/ch01-315-chatgpt-memory/)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](/ch07-017-hermes自进化完整闭环-skill创建复用修补链路/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openchronicle-opensource-memory-layer.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openchronicle-opensource-memory-layer.md)
 
 ## 深度分析
 

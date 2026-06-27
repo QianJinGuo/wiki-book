@@ -26,7 +26,7 @@
 ## 相关实体
 
 - [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](/ch03-053-hermes-wiki-实战-obsidian-hermes-agent-自动生长知识网络的-9-步搭建法/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-12-layer-full-configuration-guide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-12-layer-full-configuration-guide.md)
 
 - MOC
 ## 全文 20 章 + 4 部分结构

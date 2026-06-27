@@ -6,7 +6,7 @@
 
 # 主权云仅中美可行：Gartner 分析师的悲观预判
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5237660.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5237660.md)
 
 ## 摘要
 
@@ -71,7 +71,7 @@ Toombs 引用波士顿咨询集团的"三四法则"：稳定竞争市场中不�
 - 澳大利亚多云 Agent 编排
 - [5237660 补充](/ch11-196-sovereign-cloud-is-only-possible-if-you-re-chinese-or-americ/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5237660.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5237660.md)
 
 ---
 

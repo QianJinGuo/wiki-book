@@ -414,7 +414,7 @@ For reference, see the following resources:
 - [Introducing Claude Platform On Aws](/ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
 - [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](/ch11-050-基于-amazon-eks-和-graviton-构建多租户-ai-agent-平台-openclaw-on-kuber/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
 - [规划 amazon eks 从 1.32 升级到 1.35：关键变更识别与逐版本实施路径](/ch11-107-规划-amazon-eks-从-1-32-升级到-1-35-关键变更识别与逐版本实施路径/)
 
 ---

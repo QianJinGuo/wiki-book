@@ -6,7 +6,7 @@
 
 # DeepSeek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度-v2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度-v2.md)
 
 ## 深度分析
 

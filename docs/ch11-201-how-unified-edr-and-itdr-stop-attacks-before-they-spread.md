@@ -28,7 +28,7 @@
 - [Llm Raiders And How To Repel Them](/ch01-590-llm-raiders-and-how-to-repel-them/)
 - [How To Create Websites With Great Ux Designs](/ch01-114-how-to-create-websites-with-great-ux-designs-principles-and/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/huntress-edr-itdr-unified-detection.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/huntress-edr-itdr-unified-detection.md)
 
 ## 深度分析
 ### 1. 端点与身份融合的技术必然性

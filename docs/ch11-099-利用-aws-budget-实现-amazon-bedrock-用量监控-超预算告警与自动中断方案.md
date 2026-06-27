@@ -98,7 +98,7 @@
 - [Aws Bedrock Ops Alert](/ch11-093-amazon-bedrock-ops-alert-三层监控架构/)
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-budget-bedrock-cost-governance.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-budget-bedrock-cost-governance.md)
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/creativeboom-ai-views-changed.md`
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/creativeboom-ai-views-changed.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/creativeboom-ai-views-changed.md)
 
 ## 核心要点
 - Creative Boom 对其创意社区成员的一年期 AI 态度调查
@@ -41,7 +41,7 @@ Matthew Gallagher 的观察触及核心："When I speak with folks about AI, man
 3. **在 AI 讨论中澄清定义很重要**：当与团队或客户讨论 AI 时，先明确你们指的是"生成式 AI"还是"自动化工具"。这可以避免许多无谓的概念之争。
 4. **关注 AI 工具的定价和锁定策略**：Sarah Kobal 的抱怨——"you often end up paying for multiple app subscriptions just to test tools"——反映了当前 AI 工具市场的混乱。评估 AI 工具时，总成本（不只是 subscription，还包括学习曲线、锁定成本）应纳入考量。
 5. **创作者应参与 AI 政策的讨论**：Juliana Salcedo 的观点——"I no longer see it as an individual fight"——暗示集体行动的重要性。个人创作者的声音有限，但通过行业协会、专业社区可以更好地影响 AI 监管和标准化的发展方向。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/creativeboom-ai-views-changed.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/creativeboom-ai-views-changed.md)
 
 ## 相关实体
 - [Task Queue Priority and Fairness: Your Task Queue, Your Way](/ch11-161-task-queue-priority-and-fairness-your-task-queue-your-way/)

@@ -17,7 +17,7 @@ Review Agent 解决的就是这个问题。它换了个角色、换了个 prompt
 - Openclaw Prompt Context Harness
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)
 
 ## 深度分析
 

@@ -27,7 +27,7 @@
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](/ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/)
 - [Eks Gpu Operator Custom Driver Cuda Workload](/ch11-030-在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
 
 - Amazon Quick Mcp Kdbx Time Series
 - Transforming Rare Cancer Research With Amazon Quick Integrat
@@ -65,7 +65,7 @@
 
 5. **通过 MCP 协议将运维脚本封装为可组合工具**：这个工具的架构可以作为其他 AWS 运维自动化的参考模板。将现有的运维脚本（用 AWS CLI、bash、Python）通过 FastMCP 封装为 MCP 服务器，可以在不改变底层脚本的前提下，让任何 MCP-compatible 的 AI 工具调用这些运维能力。这比用 LLM 直接生成 bash 命令的可靠性高得多。 [^raw/articles/kiro-mcp-rds-mysql-upgrade.md:52-500]
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
 
 ---
 

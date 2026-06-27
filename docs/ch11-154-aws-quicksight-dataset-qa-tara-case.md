@@ -67,7 +67,7 @@ TARA 的本质突破在于**移除语义中间层**。传统 Topics 模式需要
 - [Aws Agent Orchestration Workshop](/ch04-409-agent-orchestration/)
 - MOC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-quicksight-dataset-qa-tara-case.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-quicksight-dataset-qa-tara-case.md)
 
 ---
 

@@ -181,7 +181,7 @@ EAGLE-3 相对 MTP 在 Mean TPOT 上有 59% 改善，但文章更强调 P95/P95 
 - [Mellum 2 Jetbrains Open 12B Moe Code Model](/ch01-442-mellum-2-jetbrains-open-weight-12b-moe-code-llm/)
 - [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/didi-eagle-3-speculative-decoding-agents.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/didi-eagle-3-speculative-decoding-agents.md)
 
 →
 

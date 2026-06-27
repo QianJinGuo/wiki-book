@@ -17,7 +17,7 @@ Together Mode 的核心设计目标是解决"视频会议疲劳"（video meeting
 **对产品经理：** 在评估是否停用一个功能时，问自己：它满足的需求是否已经被其他更常用的功能覆盖？如果是，这个功能的"粉丝群体"是否足够大到值得独立维护成本？Together Mode 的教训是：小众价值在产品决策中通常败给维护成本。
 **对企业 IT 管理员：** 关注 Microsoft 的产品路线图变化，提前规划替代方案。虽然 Together Mode 停用对大多数用户影响不大（Gallery view 是合格的替代），但如果你在 Teams 上有基于 Together Mode 的培训流程或特殊使用场景，需要在 6 月 30 日前迁移或重新设计。
 **对协作工具开发者：** Together Mode 的设计理念（增强共在感、减轻视频疲劳）仍然是有价值的产品方向，只是当前技术实现（虚拟场景渲染）可能过于笨重。关注 AI 驱动的更轻量的"presence"增强方式——比如基于面部表情分析的实时反馈、自动生成的会议摘要、基于语气的实时情感分析——这些可能是下一代"视频会议疲劳"解决方案。
-^[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-to-retire-together-mode-its-virtual-meeting-space-for-teams.md)
+^[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-to-retire-together-mode-its-virtual-meeting-space-for-teams.md)
 
 - 来自 newsletter 推荐的优质文章
 - 评分: v×c = 56
@@ -28,7 +28,7 @@ Together Mode 的核心设计目标是解决"视频会议疲劳"（video meeting
 - [Microsoft Startups](/ch01-687-microsoft-for-startups-microsoft/)
 - [Microsoft For Startups Microsoft](/ch01-110-microsoft-for-startups-microsoft/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-to-retire-together-mode-its-virtual-meeting-space-for-teams.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-to-retire-together-mode-its-virtual-meeting-space-for-teams.md)
 
 ---
 

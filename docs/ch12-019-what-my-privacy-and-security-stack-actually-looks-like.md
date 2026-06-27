@@ -121,7 +121,7 @@ Yael 的威胁情报来源形成了一个分层结构：
 - [OpenClaw 完整指南](/ch04-199-openclaw-完全指南/)
 - [LLMReaper Browser Extension Attack](/ch01-528-llmreaper-dom-based-ai-conversation-exfiltration/) — AI 对话的扩展窃取风险
 
-> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-my-privacy-and-security-stack-actually-looks-like.md)
+> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-my-privacy-and-security-stack-actually-looks-like.md)
 
 ---
 

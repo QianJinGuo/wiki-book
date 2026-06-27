@@ -17,7 +17,7 @@
 - [Hermes Agent Deep Dive Alibaba](/ch04-418-hermes-agent/)
 - [Claude Opus 47](/ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ml-intern-huggingface-autonomous-ml-agent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ml-intern-huggingface-autonomous-ml-agent.md)
 
 ## 深度分析
 

@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [dean ball on open models and government control](/ch01-841-dean-ball-on-open-models-and-government-control/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/my-bets-on-open-models-mid-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/my-bets-on-open-models-mid-2026.md)
 
 - MOC
 ## 摘要

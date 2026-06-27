@@ -12,7 +12,7 @@
 - [Codex Role Plugins Sites Annotations](/ch01-233-codex-三件套-6-职位插件-sites-annotations/)
 - [The Future Of Bmw Design A Conversation With Max Missoni](/ch01-020-the-future-of-bmw/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/designing-small-is-harder-than-designing-big-ux-magazine.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/designing-small-is-harder-than-designing-big-ux-magazine.md)
 
 - [Activity Focused Design](/ch03-108-activity-focused-design/)
 ## Notes

@@ -70,7 +70,7 @@ Mozilla 在意见书中指出了一个关键问题：政府未能提供 age veri
 Mozilla 测试浏览器内置 VPN 的事实表明，技术行业正在用集成化方式回应监管压力。这种趋势如果持续，将使任何针对独立 VPN 应用的监管措施逐渐失效。
 
 ## 相关事件
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess.md)
 ## 相关实体
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](/ch12-004-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita/)
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess 1](/ch12-004-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita/)

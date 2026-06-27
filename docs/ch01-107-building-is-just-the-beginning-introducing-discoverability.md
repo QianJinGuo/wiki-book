@@ -28,7 +28,7 @@
 - [Introducing The Ettin Reranker Family](/ch01-361-introducing-the-ettin-reranker-family/)
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](/ch01-741-introducing-seer-agent-the-answer-is-already-in-sentry-now/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-is-just-the-beginning-introducing-discove.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-is-just-the-beginning-introducing-discove.md)
 
 ---
 

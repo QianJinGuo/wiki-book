@@ -6,7 +6,7 @@
 
 # Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md)
 
 ## 摘要
 

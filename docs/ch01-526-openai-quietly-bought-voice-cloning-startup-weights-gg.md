@@ -64,7 +64,7 @@ OpenAI 已在 2026 年 2 月聘请 Instagram 前明星合作负责人 Charles Po
 - [Useful Memories Become Faulty When Continuously Updated By Llms](/ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l/)
 - [Build Live Translation Apps With Gpt Realtime Translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-quietly-bought-voice-cloning-star.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-quietly-bought-voice-cloning-star.md)
 
 ---
 

@@ -71,7 +71,7 @@ LTM 查询在 Agent 创建时一次性执行（非每次对话查询），max_ch
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](/ch11-191-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](/ch11-186-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md)
 
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](/ch11-165-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 

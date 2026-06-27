@@ -17,7 +17,7 @@
 1. **LLM 即界面** — 当模型直接处理用户交互时，传统的 MVC/MVP 模式需要重新思考
 2. **延迟隔离失效** — Headless 的部分动机是性能隔离，LLM 的同步特性挑战这一设计
 3. **成本模型不同** — 传统 API 按调用计费，LLM 按 token 计费，架构需要相应调整
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/is-software-losing-its-head-a16z.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/is-software-losing-its-head-a16z.md)
 
 ## 深度分析
 ### 1. Headless 架构范式的兴衰

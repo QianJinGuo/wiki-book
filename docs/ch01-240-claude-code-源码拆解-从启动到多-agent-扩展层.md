@@ -100,7 +100,7 @@ Claude Code 的 Task 统一表达了：主会话后台化、本地 subagent、in
 ### 坏路径的显式设计
 大多数 Agent 系统只设计happy path，遇到 prompt-too-long、max_output_tokens、fallback model 这些情况就靠 prompt 里加 if-else 兜底。Claude Code 把这些坏路径全部显式设计了 runtime 路径——上下文治理、失败恢复、工具回灌都是 runtime 课题，不是 prompt 技巧。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-source-architecture.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-source-architecture.md)
 
 ## 实践启示
 1. **先定义执行边界，再发起第一轮推理**：启动层不把模式/边界/权限/上下文装配清楚，后面每个宿主都会偷偷长出自己的运行语义。三段式启动（入口分流 → 进程级初始化 → 会话级准备）值得借鉴。

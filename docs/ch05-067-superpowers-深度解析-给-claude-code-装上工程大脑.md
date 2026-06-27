@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/superpowers-claude-code-engineering-brain-baidu-geek.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/superpowers-claude-code-engineering-brain-baidu-geek.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/superpowers-claude-code-engineering-brain-baidu-geek.md)
 
 17000+ 字深度解析 Claude Code Superpowers：14 技能拆解、brainstorming SKILL.md 源码解析、概率操控技巧、querit.ai 真实案例复盘、负向收益诚实评估。百度Geek说/奔跑的脆皮肠。
 

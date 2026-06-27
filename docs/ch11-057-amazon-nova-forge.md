@@ -125,7 +125,7 @@ CPT 阶段**最多只跑一个 epoch**——重复处理有限数据会导致过
 - Amazon Nova Manufacturing Intelligence
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md)
 
 ---
 

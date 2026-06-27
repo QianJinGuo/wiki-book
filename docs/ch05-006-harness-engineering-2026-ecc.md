@@ -345,7 +345,7 @@ iterative-retrieval
 
 - [loop engineering: 把反馈循环放进工程现场](/ch05-004-loop-engineering-把反馈循环放进工程现场/)
 - [Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环](/ch04-035-hermes-agent-eval-harness-可验证-skill-进化的-7-模块闭环-taskset-harne/)
-→ [第 1 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-2026-rahul-rauhul.md) · [第 2 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-everything-2026-ai-tech-article.md) · [第 3 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ecc-harness-os-everything-claude-code-vibecoder-2026-06-16.md)​
+→ [第 1 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-2026-rahul-rauhul.md) · [第 2 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-everything-2026-ai-tech-article.md) · [第 3 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ecc-harness-os-everything-claude-code-vibecoder-2026-06-16.md)​
 
 ---
 

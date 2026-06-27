@@ -102,7 +102,7 @@ Code as Agent Harness 可以被视为 Software 2.0（以神经网络替代手工
 5. **AHE 理念适用于所有 Agent 系统**：即使不实现完整的 AHE 框架，"观测-诊断-调整-验证"的循环思路也适用于任何生产级 Agent 系统的持续优化
 
 ## 关联阅读
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-as-agent-harness-survey-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/code-as-agent-harness-survey-2026.md)
 
 ## 相关实体
 - [Design Patterns for AI Agents 2026](/ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl/)

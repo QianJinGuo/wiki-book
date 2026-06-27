@@ -43,7 +43,7 @@ We find that:
 
 ## 原文存档
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-driven-feature-discovery.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-driven-feature-discovery.md)
 
 ---
 

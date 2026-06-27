@@ -13,7 +13,7 @@
 - [Harness Engineering Reliable Long Term Agent](/ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)
 
 - [一次构建，随处复用：python 中的泛型仓库模式](/ch01-538-一次构建-随处复用-python-中的泛型仓库模式/)
 

@@ -18,7 +18,7 @@
 - [Langsmith Trajectory Evals](/ch01-563-langsmith-trajectory-evals/)
 - [Ai Skill Metrics System](/ch01-383-ai-skill-测评指标体系/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/taobao-smart-shopping-guide-agent-evaluation-pzmx.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/taobao-smart-shopping-guide-agent-evaluation-pzmx.md)
 
 ## 深度分析
 

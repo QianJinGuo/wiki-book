@@ -17,7 +17,7 @@ https://developers.google.com/program/my-benefits
 - [Claude Opus 47](/ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus/)
 - [Hermes Agent Getting Started Guide 2026](/ch04-418-hermes-agent/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-开发者福利每月免费领取-10-美金别忘了来领啊.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-开发者福利每月免费领取-10-美金别忘了来领啊.md)
 
 ## 深度分析
 

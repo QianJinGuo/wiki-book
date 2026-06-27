@@ -6,7 +6,7 @@
 
 # Harness 工程搭建式业务 Agent 评测方案：Claude Code 作 Harness 搭建者
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
 
 阿里云泊予（2026-06-05）基于 6 个业务 Agent 评测实战，提出"用强 Agent 搭建评测 Harness"的工程范式：将评测逻辑从 Python 脚本（test_runner.py / report_generator.py）升级为 Agent 提示词（评测 Agent System Prompt）+ 三层指标框架 + system.question 数据列规范，单 Agent 评测全流程从 ~1.5 周压缩到 ~1-2 天。
 

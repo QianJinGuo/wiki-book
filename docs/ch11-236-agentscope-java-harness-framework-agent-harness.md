@@ -49,7 +49,7 @@ Local      Remote     Sandbox
 - [Harness Engineering](/ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/) — Agent 从"聪明"到"可靠"的第三代工程范式；本文是 Java 生态的具体实现
 - 上下文管理与 Working Set — AgentScope 的对话压缩 + 双层记忆沉淀 + FTS5 检索，是对 working set 理念的完整实现
 - [Browser Harness](/ch04-324-browser-harness-自愈型浏览器-agent-框架/) — 浏览器端 Agent Harness；AgentScope 覆盖服务端 Java 场景
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentscope-java-harness-framework-enterprise-distributed.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentscope-java-harness-framework-enterprise-distributed.md)
 
 ## 相关实体
 - [Harness Engineering 系统梳理](/ch05-049-harness-engineering-系统梳理/)

@@ -12,7 +12,7 @@
 - 灯光优先选择大窗户自然光；推荐分割照明（Split Lighting）和短照明（Short Lighting）布光技法
 - 领夹麦克风（如 DJI Lav Mic，<$100）是必备装备；确保环境安静
 - 表演时：眼神接触、眼睛里的笑意、自然手势
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa6efcef23c882e57.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa6efcef23c882e57.md)
 
 ## 深度分析
 ### 专业级手机拍摄的民主化趋势

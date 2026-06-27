@@ -18,7 +18,7 @@
 - [Agentscope Java Harness Framework Enterprise Distributed](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
 - Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从-30-分钟手搓-agent到-harness-成为新后端.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从-30-分钟手搓-agent到-harness-成为新后端.md)
 
 ## 深度分析
 

@@ -98,7 +98,7 @@ Allsopp 提供了几个可能的原因：
 
 ---
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/problem-with-mathematically-proven-claims-about-llms.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/problem-with-mathematically-proven-claims-about-llms.md)
 
 > 如果你只记住一件事：**「数学证明」的结论依赖于其假设条件。几乎所有声称 LLM 有根本性局限的证明，都在证明一个高度理想化的模型——而现实世界的 Agent 系统通过外部验证、工具调用和多 Agent 协作，绕过了这些理想化假设所设定的上限。**
 

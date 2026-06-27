@@ -7,7 +7,7 @@
 # The Code-as-Content Era
 
 > 文章核心论点：当 AI 把软件生产的摩擦降到趋近于零时，应用本身开始像模因（meme）一样被生产、消费、传播与遗忘——作者把这一阶段命名为 **Code-as-Content Era**。
-> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-code-as-content-era-20260606.md)
+> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-code-as-content-era-20260606.md)
 
 ## 摘要
 

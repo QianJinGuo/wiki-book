@@ -49,7 +49,7 @@ The specification is precise about its limits. In its opening section, [OKF list
 
 ## 相关
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/implicator.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/implicator.md)
 
 ---
 

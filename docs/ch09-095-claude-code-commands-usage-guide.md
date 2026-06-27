@@ -19,7 +19,7 @@
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-commands-usage-guide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-commands-usage-guide.md)
 
 ## 深度分析
 
@@ -55,7 +55,7 @@
 
 5. **`skills` 沉淀而非每次重写**：当一个任务执行超过3次时，应该用 `skills` 把它沉淀成可复用命令，而不是每次重新描述流程 。对于团队来说，把高频流程沉淀到 shared skills 中，可以让整个团队的 Claude Code 使用效率收敛到较高水平，而不需要每个人都从零开始积累。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-commands-usage-guide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-commands-usage-guide.md)
 
 ---
 

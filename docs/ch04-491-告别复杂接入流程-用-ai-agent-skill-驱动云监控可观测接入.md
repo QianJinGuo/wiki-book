@@ -6,7 +6,7 @@
 
 # 告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-cms2-cli-skill-natural-language-observability.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-cms2-cli-skill-natural-language-observability.md)
 
 ## 深度分析
 

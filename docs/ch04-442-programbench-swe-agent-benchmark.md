@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/programbench-swe-agent-benchmark.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/programbench-swe-agent-benchmark.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/programbench-swe-agent-benchmark.md)
 
 ## 摘要
 [Leaderboard](/) [Paper](https://arxiv.org/abs/2605.03546) [GitHub](https://github.com/facebookresearch/ProgramBench) [Team](/team/) [Blog](/blog/) [H...
 
 ## 原文存档
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/programbench-swe-agent-benchmark.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/programbench-swe-agent-benchmark.md)
 
 ## 相关资源
 ## 深度分析

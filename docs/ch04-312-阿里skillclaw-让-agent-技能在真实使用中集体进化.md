@@ -19,7 +19,7 @@
 - [Perplexity Search As Code Generation](/ch01-274-rethinking-search-as-code-generation/)
 - [Ai Agent Engineer Capability Map](/ch04-139-ai-agent-工程师能力地图/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw.md)
 
 ## 深度分析
 

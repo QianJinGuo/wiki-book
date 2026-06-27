@@ -12,7 +12,7 @@
 - Length: 10380 chars
 - SHA256: 6e90d73100b599239bdade1b39208c1d6a2dc972cfea5fe1560a5593b15af58d
 - Score: Value=8 × Confidence=8 = 64
-- Original: [Claude Code源码泄露分析](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-source-leak-lifecycle-analysis.md) 同系列
+- Original: [Claude Code源码泄露分析](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-source-leak-lifecycle-analysis.md) 同系列
 
 ## 微信正文
 在 Claude Code 源代码泄露事件之后，我们从源码里整理出了 12 种 Agentic Harness 模式。后来又结合 Anthropic 官方的 Agent Skills 构建指南，继续拆解出 14 种 Skill 编写模式。这次再往前走一步，问题就变得更现实了：当 Agent 真正进入生产系统，它到底应该怎么连接那些真实的业务工具、权限系统和数据源？
@@ -230,11 +230,11 @@ Anthropic 原文提到：Canva、Notion、Sentry 等已经在 Claude 中把 Skil
 ### 6. 插件打包要从「能力包」视角设计
 如果你的团队在规划 Claude Code Plugins 或类似的打包分发方案，不要把插件简单理解成「多个 MCP Server 的集合」。插件应该从用户的「任务目标」出发设计，而不是从系统的「能力列表」出发。例如一个「数据库查询插件」，不应该包含 Postgres MCP + MySQL MCP + Redis MCP，而应该包含「数据分析技能包」或「故障排查技能包」——每个包对应一个具体用户目标，内部可能涉及多个数据源的 MCP Server 和对应的 Skills。插件是对用户承诺的「一次安装，解决一类问题」，而不是技术层面的「打包压缩」。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-poc-why-fail-to-production.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-poc-why-fail-to-production.md)
 
 ### 7. Server-Distributed Skills 是下一阶段投入重点
 如果你的团队已经有稳定的 MCP Server 在运行，下一步提升竞争力的方向是**为 Server 编写配套 Skill/Playbook**。具体做法是：盘点 Agent 在使用这个 Server 时最常遇到的错误场景、最复杂的任务流程、最需要人工判断的节点，然后编写成结构化的操作指南。这些指南不应该只是文档，而应该封装成可执行的 Skill——有触发条件、有操作步骤、有验证方式。这是 MCP Server 下一阶段从「工具」到「产品」升级的核心路径。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-12-mcp-production-patterns.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-12-mcp-production-patterns.md)
 
 ## 相关实体
 

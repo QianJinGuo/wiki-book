@@ -69,7 +69,7 @@ Joe Kauffman 强调：
 - [Clinereleasesopen Sourceagentruntimesdk](/ch01-102-cline-releases-open-source-agent-runtime-sdk/)
 - [Running An Ai Native Engineering Org](/ch01-045-running-an-ai-native-engineering-org/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deels-accelerate-or-die-moment.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deels-accelerate-or-die-moment.md)
 
 ---
 

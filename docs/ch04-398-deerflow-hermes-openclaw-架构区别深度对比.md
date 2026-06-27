@@ -17,7 +17,7 @@
 - [Hermes Agent Vs Openclaw Comparison](/ch04-418-hermes-agent/)
 - [Hermes Agent Deep Dive Alibaba](/ch04-418-hermes-agent/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deerflow-hermes-openclaw-comparison.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deerflow-hermes-openclaw-comparison.md)
 
 - MOC
 ## 深度分析

@@ -36,7 +36,7 @@
 
 5. **在 wiki-evolver 等 orchestration 系统中引入 durable outcome 概念**：将"任务是否产生了持久价值"作为评估维度之一，而非仅关注即时结果。这与  中 Skill 文件"随使用自动复合进化"的理念相通——好的系统其价值应该是累积和持久的 。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-multi-agent-research-system.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-multi-agent-research-system.md)
 
 ## 相关实体
 

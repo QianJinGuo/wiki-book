@@ -5,7 +5,7 @@
 > 📊 Level ⭐⭐ | 13.0KB | `entities/skill-design-patterns-anthropic.md`
 
 ## Anthropic 官方 14 种设计模式（5 大类）
-> **来源：** Anthropic 官方技能编写最佳实践，[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-14-skill-patterns-best-practices.md)
+> **来源：** Anthropic 官方技能编写最佳实践，[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-14-skill-patterns-best-practices.md)
 与上面 5+1 种社区模式（提炼自顶级 Skill 仓库）互补，这 14 种模式来自 Anthropic **官方**的最佳实践文档，按 **技能生命周期**组织：从触发到执行到校准。
 
 ### 第一类：发现与选择（Discovery & Selection）

@@ -6,7 +6,7 @@
 
 # Accelerate LLM model loading and increase context windows with GPUDirect on Amazon FSx for Lustre and TurboQuant
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/accelerate-llm-model-loading-and-increase-context-windows-wi.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/accelerate-llm-model-loading-and-increase-context-windows-wi.md)
 
 ## 深度分析
 

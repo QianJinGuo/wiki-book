@@ -6,7 +6,7 @@
 
 # obsidian-llm-wiki-local: Obsidian本地AI知识图谱自动构建工具
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/obsidian-llm-wiki-local-kytmanov-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/obsidian-llm-wiki-local-kytmanov-2026.md)
 
 ## 深度分析
 

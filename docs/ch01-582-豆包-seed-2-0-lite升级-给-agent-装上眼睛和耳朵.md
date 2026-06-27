@@ -18,7 +18,7 @@
 - [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
 - [Hermes Agent Newbie Guide Dotta](/ch04-418-hermes-agent/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/doubao-seed-2-lite-agent-multimodal.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/doubao-seed-2-lite-agent-multimodal.md)
 
 ## 深度分析
 

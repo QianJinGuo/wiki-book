@@ -14,7 +14,7 @@ Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safe
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](/ch04-339-nvidia-secure-local-agent-nemoclaw-openclaw/)
 - [Nvidia Telco Reasoning Models Nemo](/ch01-178-nvidia-telco-reasoning-models-nemo/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-nemotron-3-agents-rag-voice-safety.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidia-nemotron-3-agents-rag-voice-safety.md)
 
 - MOC
 ## 深度分析
