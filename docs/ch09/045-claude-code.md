@@ -1,0 +1,122 @@
+# Claude Code 黑客松：技艺数字化六项目
+
+## Ch09.045 Claude Code 黑客松：技艺数字化六项目
+
+> 📊 Level ⭐⭐ | 11.8KB | `entities/claude-code-hackathon-expertise-digitization.md`
+
+## 概述
+Anthropic + Cerebral Valley 黑客松六组获奖项目（Opus 4.7 + Claude Code，一周时间）。六个项目覆盖医疗/维修/教育/创意/建筑/工业六个领域，共同内核：**把锁在少数人脑子里的专业知识，变成更多人能触及的工具**。
+
+## 六项目解析
+### MedKit（🇹🇷 金奖）——虚拟诊室
+**让医学生在 AI 病人身上练手。**
+
+- 语音驱动虚拟问诊，AI 病人有症状分支、诊断陷阱
+- 每次问诊按临床指南打分（沟通/病史采集/临床推理），每条扣分附文献引用
+- **技术核心**：Claude Managed Agents，一个 Opus 4.7 主治医师 Agent 管三个子 Agent（角色扮演/评估/复盘）；Opus 4.7 长时间会话不跑偏，自动生成了整个病例库
+> "在 AI 身上犯所有的错，然后再去面对真正的病人。"
+
+### Wrench Board（🇫🇷 银奖）——电路板维修
+**读完 80 页原理图后在主板上画诊断路径。**
+
+- 全球每年 5000 万吨电子垃圾，板级维修知识掌握在极少数人手里
+- 导入主板照片 + 原理图 PDF，Opus 4.7 视觉分批并行读取，两分钟编译成电气知识图谱
+- 25 个元件分类 / 33 种症状映射故障机制 / 10 条诊断规则（可验证来源）
+- 在主板照片上直接画诊断路径（该量哪里/该测什么值，标在板子上）
+- Agent 认识你：记录你的工具清单和维修经验，没有热风台就不让你做 BGA 返焊
+- 每块板子有记忆：之前修过哪里/试过什么方案/踩过什么坑
+- **硬约束**：每个元件编号必须来自工具查询，没查到的不展示
+> "当一个拿着万用表的普通技术员，能做到昨天只有 OEM 售后中心才能做的事，'维修权'才算真正落地了。"
+
+### Maieutic（🇨🇱 铜奖）——编程教学
+**学生不先写清楚要做什么，编辑器就锁着不让你碰。**
+
+- Paula Vasquez-Henriquez，智利发展大学计算机系副主任，6 年 Python 教学 200+ 学生
+- 三个常见问题：复制代码不知道干嘛 / 漏看题目要求 / 还没想清楚就开始敲
+- **核心机制**：学生先用自己话描述程序该干什么 → AI 追问没说清楚的地方 → spec 足够清晰了编辑器才解锁
+- 编辑器打开后自动补全关闭；可以问语法但 AI 引导思考，不直接给"怎么做"的答案
+- 提交后 AI 对齐 spec 和实际代码，让学生自己解释 gap
+- 教师面板：看到每个学生卡在哪里、在怎么推理、哪些错误反复出现
+> "未来的程序员，大部分时间都在写 prompt。但好的 prompt 来自于理解你要构建什么、什么可能出错、以及结果对不对。"
+
+### Virtual Puppet Theater（🇩🇰 最佳创意）——体感木偶剧场
+**用手势和语音操控屏幕上的木偶。**
+
+- MediaPipe 手部追踪（3D 关节位置）+ Web Speech API（免费语音识别）+ 11 Labs Flash（语音合成）
+- 两个模型共享缓存：Haiku 日常对话（快）/ Opus 道具生成（创意质量）
+- 冰淇淋帽子这类非常规道具是 Opus 实时用基础图形组合拼出来的
+> "一个用于玩耍的交互界面，一年前还不存在。"
+
+### MaestrIA（🇨🇱 Keep Thinking 特别奖）——木匠手艺数字化
+**把 30 年木匠手艺变成 AI 可用的诊断工具。**
+
+- Benjamin 的父亲 Juan Rodrigo Torralbo，做了 30 年木匠，8 年修复联合国世界遗产木教堂，但没有大学文凭在系统里不存在
+- 拍受损墙面照片 + 位置 → Opus 4.7 实时展示推理过程（先观察再诊断）→ 四个答案（修什么/多少钱/多久/不修会怎样）→ 推荐附近手艺人 → Agent 自动写 WhatsApp 消息附完整诊断报告
+- 分析过程模拟木匠 vs 泥瓦匠辩论，另一个 Agent 去建材超市实时查价验证预算
+- **测试结果：12 张照片与 30 年老师傅判断吻合率 81%**
+> "工具是我做的。知识是他的。"
+
+### ARIA（🇫🇷 最佳 Managed Agents）——工厂设备维护知识留存
+**5 个 Agent 像维修团队一样层层传递工单。**
+
+- 工业维修老问题：每个工厂都有"那个人"——能听出机器声音哪里不对劲，能在坏之前两天就知道要坏。然后他退休了，知识永远消失
+- 传统系统部署成本 50 万美元起步，超过一半工厂不装
+- **5 个 Agent 共享 17 个工具，通过 MCP 协作**，设备手册丢进去问三个问题系统就上线
+- **关键能力**：瓶盖机报振动异常，ARIA 查上下文发现振动值在下降→结论"无需处理"。大多数系统到"发警报"就结束，ARIA 多走一步判断值不值得理
+- 真正出故障时：调查 Agent 启动 extended thinking，写 Python 在云端沙箱跑回归分析，精确退化速率进工单
+- **记忆**：三个月前类似故障翻出来，告诉操作员上次换了什么零件好的
+- 日志/班次笔记/信号趋势/KPI/历史故障全部汇入设备知识库
+> "那个'什么都知道的人'，再也不会因为退休而消失了。"
+
+## 共同内核
+**专业知识锁在少数人的手感/直觉/判断力里，AI 正在接住这些正在断裂的经验。**
+| 领域 | 锁在谁手里 | 六个项目的解法 |
+|------|-----------|--------------|
+| 医疗 | 资深医生的临床直觉 | MedKit — AI 虚拟病人练手 |
+| 维修 | 少数硬件工程师 | Wrench Board — 原理图+视觉诊断 |
+| 教育 | 好老师几年积累的思维误区直觉 | Maieutic — 先想后写，教师面板 |
+| 创意 | — | Virtual Puppet Theater — 体感交互 |
+| 建筑 | 没有文凭的工匠 | MaestrIA — 拍墙→诊断报告→手艺人 |
+| 工业 | "什么都知道"的老工人 | ARIA — 5 Agent + MCP + 记忆 |
+
+## 启示
+1. **不需要硅谷连续创业者**——土耳其医生、智利大学老师、丹麦木匠的儿子、木匠的儿子
+2. **一周时间 + Opus 4.7 + Claude Code 就能做出可用的东西**
+3. **知识流失是无声的**——没有人宣布它的死亡，很少有人意识到自己失去了什么
+4. **AI 能接住这些正在断裂的经验**，让它变成工具和传承
+
+## 深度分析
+1. **Managed Agents 架构成为专家知识数字化的核心范式**——六组项目中，MedKit 和 ARIA 直接使用了 Anthropic 的 Managed Agents 框架，前者用 1 主 3 从结构模拟临床团队，后者用 5 Agent + 17 工具模拟工厂维修团队^
+2. **知识转化成本断崖式下降**——传统工业维修知识系统部署成本 50 万美元起步、需要半年专业咨询^；而 MaestrIA 仅凭 12 张照片就达到 81% 专家吻合率^，知识捕获的边际成本正在趋近于零
+3. **多 Agent 协作的关键价值在于判断的连续性而非警报的触发**——ARIA 最具区分度的能力不是发警报，而是多走一步判断"警报值不值得理"，在振动值下降的背景下给出"无需处理"的结论^；这揭示了当前行业系统的普遍缺陷
+4. **视觉理解 + 知识图谱是硬件领域知识数字化的最短路径**——Wrench Board 将 80+ 页原理图 PDF 在两分钟内转化为可查询的电气知识图谱^，证明多模态模型可以直接消化非结构化文档而不需要人工标注
+5. **实践知识的数字化需要"手感验证"而非"准确率验证"**——MaestrIA 的测试方法是拿给父亲（30 年木匠）直接对标，而不是与数据库比对；Maieutic 的核心设计是学生必须先说清楚再动手^；这表明专业知识数字化的质量标准应来自领域专家的主观认可，而非自动化指标
+
+## 实践启示
+1. **先建知识图谱，再做 Agent——文档是最低成本的入口**^
+   Wrench Board 的核心突破不是 Agent 设计，而是把 80 页原理图转化为结构化知识图谱的视觉解析能力。在做任何知识数字化项目之前，先评估现有文档（手册、图纸、病例指南）的可解析性
+2. **记忆系统和硬约束必须作为基础设施而非功能选项**^
+   Wrench Board 的"Agent 认识你"和 ARIA 的"三个月前类似故障翻出来"不是附加功能，而是驱动工具从工具变成协作者的核心能力；从项目第一天就把记忆和上下文感知纳入架构设计
+3. **用领域专家的"不认可"来验证，而非用准确率指标**^
+   MaestrIA 的做法——把 AI 诊断报告拿给父亲看——应该成为知识数字化项目的标准测试协议，而非依赖 Precision/Recall 等通用指标；专家发现一个错误比发现十个正确更有价值
+4. **用小模型处理节奏，大模型处理质量——双模型分工是体感/实时交互的必选项**^
+   Virtual Puppet Theater 用 Haiku 处理日常对话（低延迟）、Opus 处理道具生成（高质量）；任何涉及实时体感或对话响应的项目都应采用类似分层，避免大模型延迟破坏交互体验
+5. **在知识消失之前捕获它——非正式工匠群体是需要最优先关注的知识濒危物种**^
+   智利 28 万非正式建筑工人没有大学文凭因此在系统里"不存在"^；这类群体的知识一旦失传就无法重建，应该成为 AI 知识保存工作的最高优先级
+
+## 相关
+- [Claude Code 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture.md)
+- [Anthropic PM Agentic 工作流](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-pm-agentic-workflow.md)
+- [AutoResearch 多 Agent 开发](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-multi-agent-software.md)
+- [Agent Memory 模块化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-modular-framework.md)
+
+## 相关实体
+- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-12-rules-karpathy-extension.md)
+- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-20000-char-source-analysis.md)
+- [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-subagent-context-hygiene.md)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
+
+---
+

@@ -1,0 +1,170 @@
+# DeepSeek 成本迁移：从 KV Cache 到 Harness 的系统层
+
+## Ch05.034 DeepSeek 成本迁移：从 KV Cache 到 Harness 的系统层
+
+> 📊 Level ⭐⭐ | 15.6KB | `entities/deepseek-cost-migration-system-layer-kv-cache-harness.md`
+
+# DeepSeek 成本迁移：从 KV Cache 到 Harness 的系统层
+
+## 核心论点
+
+DeepSeek 值得看的地方，已经越过模型便宜本身，落到了"模型之外"的系统层。
+
+当模型越来越便宜，贵的东西会搬到哪里：缓存、内存、存储、编译器、调度、硬件适配，以及让模型变成 Agent 的 Harness。
+
+## 技术主线：成本如何从模型侧搬到系统层
+
+### V2→V4 效率演进
+- **V2 论文**：MLA（低秩潜在表示压缩 KV Cache）+ DeepSeekMoE（稀疏计算）
+  - 相比 DeepSeek 67B：训练成本↓42.5%，KV Cache↓93.3%，生成吞吐↑5.76倍
+- **V4 Preview（2026-04-24）**：1.6T 总参/49B 激活（Pro），284B 总参/13B 激活（Flash），默认 1M 上下文
+- 核心方向：不在最贵的矩阵乘法和稀缺显存上压所有成本
+
+### 成本分层策略
+| 技术 | 作用 |
+|------|------|
+| MoE | 稀疏激活，每个 token 只激活部分专家 |
+| MLA | KV Cache 压进更小潜在表示 |
+| DSA/CSA/HCA | 长上下文注意力优化 |
+| Engram (conditional memory) | 静态知识用查找替代反复计算 |
+
+**结论**：稀疏激活 + 压缩缓存 + 磁盘缓存 + 内存查找 + kernel/编译器优化
+
+### KV Cache 不是边角料
+长任务 Agent 反复携带：代码库、工具说明、长文档、日志、需求、历史决策、测试结果。
+
+KV Cache 一旦变便宜，团队会把更多东西放进去。反直觉边界：**Jevons Paradox**——效率提升后资源消耗反而扩大。
+
+Disk Caching（默认开启）：后续请求与前面有重叠前缀可命中缓存，best-effort，不保证 100%，数小时到数天后清理。
+
+缓存已经成为 API 语义的一部分：提示词怎么写、上下文怎么组织、工具说明怎么排列，都影响后续成本。
+
+**长任务 Agent 的新工程问题**：一个工作现场，能不能被缓存友好地组织起来？
+
+### Engram 的信号
+- MoE 解决：当前 token 该激活哪些专家
+- Engram 想补：哪些东西用可扩展查表拿出来，而非继续消耗神经计算
+- 硬件分工影响：计算更吃 GPU/矩阵乘法/HBM 带宽；查找更容易和大容量内存/预取/缓存层级发生关系
+
+### TileLang → TileKernels
+把 MoE、Engram、mHC、KV Cache 压缩和长上下文推到生产，落到 kernel、数据布局、通信、调度和硬件适配。
+
+意义：让模型团队把算法想法落到不同硬件上，减少每次换硬件都要重写底层优化的成本。
+
+## Harness 层：成本入口
+
+Model + Harness = Agent。模型只是引擎，模型外面怎么读文件、用工具、跑命令、收集测试反馈、保存上下文，才决定它能不能变成能干活的 Agent。
+
+### Agent Harness Engineering 七层（ETCLOVG）
+分两层看：
+- **结构层**：执行环境、工具接口、上下文与记忆、生命周期
+- **控制层**：可观测、验证、治理
+
+便宜模型 ≠ 便宜 Agent。模型调用便宜，只是把单次推理价格压下去。Agent 真跑起来后，成本在环境、工具、上下文、重试、评估、审计和回滚里重新出现。
+
+### Harness 承担的实际成本
+1. 上下文怎么组织 → 缓存命中能不能用起来
+2. 工具说明怎么裁剪 → 每轮上下文会不会浪费
+3. 文件读写/命令执行/测试反馈怎么进循环 → 一次任务要跑多少轮
+4. 观测和验证做得多深 → 质量风险变成隐藏成本
+5. 权限/审计/回滚怎么设计 → Agent 能不能进真实生产环境
+
+## 核心判断：DeepSeek 能不能定义工作负载
+
+能否用模型架构、推理接口、缓存机制、Agent Harness 和开源工程，让硬件厂商、云厂商、推理框架、开发者工具都围绕它的负载来优化。
+
+如果可以 → 位置超过"低价模型供应商"
+如果不行 → 再便宜也可能只是把价值让给下游
+
+## 五大后续观察信号
+
+1. **价格和缓存**：长上下文、缓存命中、多轮 Agent 调用的价格能否长期压住
+2. **硬件适配**：有没有针对 MoE/KV Cache/长上下文/Engram/kernel/调度做实质优化
+3. **开源工程**：kernel、推理引擎、调度器、基准测试、复现脚本、框架合入
+4. **Harness 产品**：能不能在真实用户愿意长期跑的工作现场里长期工作
+5. **商业协议**：硬件采购、联合优化、股权激励、生态基金或战略合作的公开披露
+
+## 深度分析
+
+### 成本转移的实质是一场硬件分工重构
+
+DeepSeek 这篇文章的核心洞察，并不在于某个具体技术的进步，而在于揭示了一个结构性趋势：当模型层变得足够便宜，成本会沿着价值链向"附近"更便宜的资源转移。MLA 把 KV Cache 压进低秩潜在空间，MoE 把激活稀疏化，这些都是在显存和算力约束下的工程选择。但，成本并没有消失——只是被重新分配。
+
+V2 时代，KV Cache 占用 93.3% 的 reduction 意味着团队在处理长文档、代码库这类场景时，需要在显存和计算之间做痛苦的选择。而 V4 的 1M 上下文默认开启，实质上把长上下文从"特权能力"变成了"基础设施"。这不只是一个产品决策，而是一次成本结构的重新定义：当上下文不再稀缺，围绕上下文的工程问题（如何组织、如何缓存、如何裁剪）就成了新的竞争边界。
+
+Engram 的引入更值得注意。它代表了一种思路转变：从"把所有知识编码进模型参数"转向"让模型在需要时去查表"。这对应着一种硬件分工的重组：计算更集中于 GPU 和矩阵乘法，查找更依赖大容量内存和缓存层级。如果这种分工成立，那么围绕 Engram 的存储系统和访问调度，就成了新的优化重点。
+
+### Jevons Paradox 在 AI 成本里的具象化
+
+Jevons Paradox 描述了一个反直觉现象：当效率提升导致资源使用成本下降时，人们倾向于使用更多该资源而非更少。在 KV Cache 场景下，这个悖论以特殊形式出现。当缓存变得便宜且高效，团队会倾向于把所有东西都往缓存里塞——代码库、文档、工具说明、历史对话。但这种"浪费"实际上创造了新的工程需求：如何让工作现场被缓存友好地组织？
+
+这个问题之所以重要，是因为它把工程问题从"如何降低单次成本"转移到了"如何提升整体吞吐量"。一个设计良好的工作现场，可能因为缓存命中率的提升，让单次任务成本下降 80%，而同时处理的请求量上升 300%。这不是线性优化，而是生态系统的重构。
+
+Context Caching 作为 API 语义的一部分，实际上在改变 prompt engineering 的含义。传统的 prompt engineering 关注如何写好指令，而缓存友好的 prompt engineering 还需要考虑如何组织上下文，使得前缀复用率最大化。这是一种新的工程学科的雏形。
+
+### Harness 是模型和真实工作现场的中间层
+
+文章提出的 Agent Harness Engineering 七层（ETCLOVG）框架，本质上是在说：模型的推理能力只是 Agent 的下限，真正的上限由 Harness 决定。这个观察在实践中被反复验证——同样的模型，在不同团队的 Agent 实现中，成本和效果可能相差一个数量级。
+
+便宜的模型把单次推理的价格压下去，但这只是把成本重新分布到了其他地方。上下文组织不当导致每次请求都要重传大量历史；工具说明没有裁剪导致每轮都浪费 token；文件读写和命令执行没有优化导致任务轮次增加；观测和验证缺失导致问题在后期才发现。这些"隐藏成本"往往比模型调用成本更难优化，因为它们不体现在 API 账单上，却实实在在地消耗着工程资源。
+
+Harness 设计的核心矛盾在于：它需要足够灵活以适配多样化的任务，又需要足够规范以保证可观测性和安全性。这个平衡的破坏是大多数 Agent 项目失败的根本原因。
+
+### TileLang/TileKernels 的工程化意图
+
+TileLang → TileKernels 这条技术路径的意图，是让算法团队的创新能够以更低的成本落到不同硬件上。在传统研发模式下，每次换硬件（从 NVIDIA 到 AMD，从 H100 到 H200），团队都需要重写底层优化。这是一个巨大的隐性成本，抑制了硬件多样性和算法创新。
+
+如果 TileKernels 能够提供一套统一的抽象，让算法团队描述计算需求而不必关心底层硬件细节，那么硬件适配的成本就会显著下降。这对于 DeepSeek 想要"定义工作负载"的目标至关重要——只有当硬件厂商和云厂商发现围绕 DeepSeek 的负载优化是有工程基础的，他们才会有动力去做这些优化。
+
+## 实践启示
+
+### 重新设计上下文策略
+
+对于已经在使用或计划使用 DeepSeek 的团队，这篇文章的第一个实践启示是：上下文管理需要被当作一等公民来对待。传统的做法是把所有相关信息都塞进上下文，然后祈祷模型能够理解。这种做法在模型便宜、上下文短的时候勉强可用，但在 DeepSeek 提供了 1M 上下文和 Disk Caching 之后，我们需要重新思考上下文策略。
+
+一个有效的方法是：为 Agent 工作现场设计专门的上下文架构。这包括：如何分层组织长期记忆、短期上下文和工作现场状态；如何设计工具说明使得它们在多次调用中能够被缓存复用；如何在保持模型对任务理解的同时最小化每轮传递的数据量。这些决策的影响往往比调参或换模型大得多。
+
+### 用缓存思维重新审视工作流
+
+Disk Caching 的默认开启是一个重要信号：DeepSeek 正在把缓存当成基础设施而不是可选项。对于 Agent 开发者，这意味着需要从缓存的角度重新审视工作流设计。哪些部分有公共前缀？哪些请求之间有重叠？如何设计任务使得前缀复用率最大化？
+
+具体来说，在设计长任务 Agent 时，应该考虑：如何把一个复杂任务分解成多个阶段，使得阶段之间有最大的公共前缀；如果任务涉及文件处理，是否可以先处理文件生成稳定的中间结果，再让 Agent 基于这些结果工作；如何组织工具说明和系统提示，使得它们在多次调用中被有效缓存。
+
+### 把 Harness 成本纳入 TCO 计算
+
+在评估使用 DeepSeek 构建 Agent 的总拥有成本（TCO）时，需要把 Harness 层的成本纳入考量。这包括：上下文管理的工程投入、工具接口的开发维护成本、观测和验证体系的搭建成本、以及处理 Agent 异常行为的运维成本。
+
+一个实用的框架是：为每个成本因素建立明确的指标和预算。例如，上下文管理团队应该关注每轮平均 token 消耗和缓存命中率；工具接口团队应该关注工具调用的平均延迟和错误率；观测团队应该关注任务成功率和平均修复时间。把这些成本显性化，是优化 Harness 层的第一步。
+
+### 关注 Engram 生态的成熟度
+
+Engram 作为一种"用查表替代计算"的范式，目前还处于早期阶段。对于技术团队来说，关注 Engram 生态的成熟度是一个长期任务。这包括：官方的实现和文档是否完整；社区是否有足够的最佳实践分享；以及在生产环境中使用 Engram 的真实案例。
+
+如果 Engram 生态能够成熟，它将成为 Agent 设计中不可或缺的一环。团队需要提前思考：哪些知识应该编码进模型参数，哪些应该作为 Engram 条目管理，以及如何设计 Engram 条目的更新机制。这些决策将影响 Agent 的长期维护成本和适应性。
+
+### 建立硬件适配的评估清单
+
+DeepSeek 想要"定义工作负载"，一个关键信号是硬件厂商和云厂商是否愿意围绕它做专门优化。对于评估 DeepSeek 部署的团队，一个实用的做法是建立硬件适配的评估清单：当前环境是否支持 DeepSeek 的特定优化（如 MoE 的专家并行、KV Cache 的压缩格式）？云厂商是否提供了针对 DeepSeek 负载的专用实例类型？调度器是否能够识别 DeepSeek 的负载特征并进行优化？
+
+这个清单的价值在于：它能够帮助团队识别出当前部署中尚未被充分利用的优化空间，也能够为未来的技术选型提供依据。
+
+## 相关实体
+- [Deepseek Code Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-code-harness.md)
+- [Openclacky Harness Prompt Cache](https://github.com/QianJinGuo/wiki/blob/main/entities/openclacky-harness-prompt-cache.md)
+- [Deepseek V4 Ds4C Antirez Local Inference Qbitai](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-ds4c-antirez-local-inference-qbitai.md)
+- [Deepseek Moe Parallel Strategy](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-moe-parallel-strategy.md)
+- [Deepseek V4 Triton Fp4 Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-triton-fp4-optimization.md)
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-cost-migration-system-layer-kv-cache-harness.md)
+
+- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](https://github.com/QianJinGuo/wiki/blob/main/entities/forgetrain-ai-written-training-framework-bidian-infoq.md)
+
+## 相关链接
+
+- [DeepSeek V4 Preview](https://api-docs.deepseek.com/news/news260424)
+- [Context Caching](https://api-docs.deepseek.com/guides/kv_cache)
+- [TileKernels](https://github.com/deepseek-ai/TileKernels)
+- [Agent Harness Engineering Survey](https://picrew.github.io/LLM-Harness/)
+
+---
+

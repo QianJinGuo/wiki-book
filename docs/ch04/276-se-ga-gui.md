@@ -1,0 +1,129 @@
+# SE-GA GUI 智能体记忆增强自进化
+
+## Ch04.276 SE-GA GUI 智能体记忆增强自进化
+
+> 📊 Level ⭐⭐ | 8.9KB | `entities/se-ga-memory-augmented-self-evolution-gui-agents.md`
+
+# SE-GA GUI 智能体记忆增强自进化
+
+> [!summary] 核心洞察
+> GUI 智能体的核心矛盾是「记不住」和「学不会」——上下文窗口受限导致信息丢失，静态策略无法从经验中学习。SE-GA（ICML 2026）通过 **TTME 三层记忆**（情景/语义/经验）解决记忆问题，**MASE 两阶段训练+GRPO+Hindsight Goal-Shifting** 解决学习问题。以 Qwen2.5-VL-7B 超越 72B 基线。
+
+## GUI 智能体的结构性矛盾
+
+GUI 导航任务本质上是**部分可观察马尔可夫决策过程（POMDP）**：智能体无法完全观察环境状态，只能基于局部截图文本来决策。这从根本上决定了「记不住」和「学不会」的双重困境。
+
+| 矛盾 | 原因 | 后果 |
+|------|------|------|
+| **记不住** | 依赖当前截图+有限上下文 | 早期关键信息被滑动丢失，误差累积 |
+| **学不会** | 策略静态固化（固定数据集训练） | 无法复用过往成功经验，不能适应动态环境 |
+
+核心矛盾：**缺乏统一机制将显式历史经验编码为隐式策略参数** 
+
+## TTME：三层记忆结构
+
+**Test-Time Memory Extension** — 借鉴人类认知架构：情景记忆对应前额叶工作记忆，语义记忆对应颞叶结构，经验记忆则类似海马体的情景编码系统，形成完整的时间-空间-语义三维记忆框架
+
+### 三层记忆
+
+| 记忆类型 | 定位 | 内容 |
+|----------|------|------|
+| **情景记忆** | 短期工作记忆 | 前一步观察→动作→新观察，跟踪"刚才做了什么" |
+| **语义记忆** | 通用规则库 | 跨任务通用交互规则（"需先登录"、"搜索在顶部"） |
+| **经验记忆** | 过往成功经历 | 任务轨迹+反思总结，复用"成功经验" |
+
+**混合检索机制：** 语义一致性 + 视觉相似性（文本+图像混合），比纯文本检索更精准定位相似历史经验
+
+## MASE：两阶段自我进化
+
+**Memory-Augmented Self-Evolution** — 将 TTME 经验转化为内在能力
+
+### 第一阶段：基础能力训练
+
+监督微调，专家轨迹行为克隆。目标：看懂屏幕、找对位置、做对动作 
+
+### 第二阶段：自我进化训练
+
+基于 **GRPO** 算法，从交互数据中持续学习 
+
+#### Hindsight Goal-Shifting
+
+将失败轨迹重新标注：如果前缀子序列已完成有效子目标，则将整条轨迹标注为该子目标的成功实例 
+
+> 变废为宝：失败样本转化为有价值的监督信号 
+
+## 实验结果
+
+Qwen2.5-VL-7B 基座，4K 轨迹训练，超越所有 72B 基线 
+
+| 基准 | SE-GA (7B) | 最佳基线 | 提升 |
+|------|-----------|---------|------|
+| ScreenSpot | **89.0%** | UI-TARS-72B (88.4%) | +0.6% |
+| GUIOdyssey 步骤成功 | **83.9%** | — | — |
+| GUIOdyssey 动作准确率 | **96.5%** | UI-TARS-72B | 超越 |
+| AndroidWorld | **39.0%** | UI-TARS-7B (33.0%) | +6% |
+| AndroidWorld | **39.0%** | GPT-4o (23.7%) | +15.3% |
+
+## 深度分析
+
+### 1. 认知架构类比的局限与启示
+
+TTME 三层记忆直接对标人类认知心理学中的工作记忆、语义记忆和情景记忆，但这种类比存在根本差异：人类记忆具有情绪编码和元认知监控能力，而 SE-GA 的经验记忆完全依赖任务成功/失败的二元反馈。纯粹的成败信号难以捕捉「差一点就成功」边缘案例中的潜在知识，未来或可引入细粒度奖励信号模拟人类的渐变式学习体验
+
+### 2. GRPO 算法的自适应进化机制
+
+第二阶段采用的 GRPO（Group Relative Policy Optimization）替代传统 PPO，无需 Critic 网络即可估计优势函数，显著降低了训练计算开销。在 GUI 场景中，这意味着智能体可以在有限算力下持续从交互中学习，而非依赖大规模预训练数据的一次性灌输
+
+### 3. Hindsight Goal-Shifting 的理论与实践价值
+
+该机制源于「后见之明」思想：将失败重新解释为部分成功。从信息论角度看，这是对训练数据负熵的有效利用——原本被丢弃的失败轨迹携带了关于子目标可行性的结构化信息。消融实验证明移除该机制后性能显著下降，印证了「变废为宝」的核心假设
+
+### 4. 7B 超越 72B 的规模悖论
+
+SE-GA 以 Qwen2.5-VL-7B 超越 UI-TARS-72B，表明在 GUI 任务中，**记忆机制和进化算法对性能的贡献可能超过模型参数量的增长**。这与「更大的模型=更好的 Agent」这一隐含假设相悖，指向一条不依赖超大规模模型的高效推理路径
+
+### 5. 经验记忆库的Scalability瓶颈
+
+论文明确指出经验记忆库规模持续增长会带来检索计算开销。这与人类长时记忆的「遗忘曲线」形成对比：人类会自然遗忘低价值记忆，而当前的记忆检索是无差别的全量扫描。分层记忆淘汰机制或近似最近邻检索是潜在的优化方向
+
+## 实践启示
+
+### 1. 设计记忆系统时优先考虑检索相关性而非存储容量
+
+TTME 的成功在于语义+视觉混合检索机制，而非简单堆叠历史上下文。在实际系统中，应在数据模型层面嵌入跨模态索引能力，使记忆检索服务于当前决策而非单纯存档
+
+### 2. 利用失败轨迹的增量价值
+
+传统监督学习将失败样本直接丢弃，而 SE-GA 证明部分完成的子目标具有独立训练价值。在标注成本高昂的 GUI 领域，这种自生成监督信号的方式可大幅降低数据需求，值得在更多序列决策任务中推广
+
+### 3. 两阶段训练是平衡基础能力与自适应进化的有效范式
+
+先通过行为克隆建立基础能力（学会看懂屏幕、做对动作），再通过强化学习持续适应（从交互中学习新模式）。这种「先固化再进化」的策略避免了纯 RL 训练的早期不稳定性，同时保留了持续学习的可能性
+
+### 4. 记忆增强应与模型进化协同设计，而非事后补救
+
+SE-GA 的创新不仅在于 TTME 或 MASE 各自的效果，更在于两者协同：记忆系统负责「记」，进化算法负责「学」，共同解决传统端到端训练的「记不住+学不会」困境。系统设计时应将记忆与学习视为一体两面
+
+### 5. 小模型+强机制 > 大模型+弱机制
+
+7B 参数模型配合精心设计的记忆和进化机制超越 72B 大模型，提示资源受限场景下应优先投资算法创新而非盲目追求模型规模。在边缘设备和部署成本敏感的应用中，这一结论具有重要实践意义
+
+## 局限与未来方向
+
+- 经验记忆库持续增长 → 检索计算开销
+- 未来：扩大数据集、分层任务分解、跨平台迁移学习
+
+## 相关实体
+- [Hermes Agent Self Evolution Tengxun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-self-evolution-tengxun.md)
+- [Self Learning Evolvable Agents For Cultural Tourism Info Extraction With Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/self-learning-evolvable-agents-for-cultural-tourism-info-extraction-with-agentcore.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
+- [World Knowledge Agent Self Evolution Tencent Hkustgz](https://github.com/QianJinGuo/wiki/blob/main/entities/world-knowledge-agent-self-evolution-tencent-hkustgz.md)
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/se-ga-memory-augmented-self-evolution-gui-agents.md)
+- [icml 2026 position paper — transformer 图灵完备性高度依赖上下文管理 (ruc 魏](https://github.com/QianJinGuo/wiki/blob/main/entities/icml-2026-position-turing-completeness-context-management-ruc-wei-2026.md)
+- [icml 2026 | prism: parallel residual iterative sequence mode](https://github.com/QianJinGuo/wiki/blob/main/entities/icml-2026-prism-parallel-residual-iterative-sequence-model.md)
+- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](https://github.com/QianJinGuo/wiki/blob/main/entities/thought-aligner-shanghai-fudan-icml-2026.md)
+
+---
+
