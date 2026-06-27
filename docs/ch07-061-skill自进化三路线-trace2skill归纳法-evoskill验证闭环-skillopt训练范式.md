@@ -18,12 +18,12 @@ Skill 自演进的三种方法：比较基于反馈的增量优化、基于反�
 
 ### 关联实体
 
-- [Agent Skills Comprehensive Survey](../ch04-340-agent-skills-系统性综述-表示-获取-检索-进化)
-- [Skillopt Microsoft Train Skill Like Neural Network](../ch05-048-skillopt)
-- [Alibaba Agentic Cloud](../ch04-295-阿里云-agentic-cloud)
-- [Skillopt Microsoft Train Skill Hyman'S Blog](../ch05-048-skillopt)
-- [Skillopt Skill Document Training Microsoft Sjtu](../ch05-048-skillopt)
-- [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch01-822-deepseek陈德里ai论文第二弹-从6分到8分-deliautoresearch-skill又进化了)
+- [Agent Skills Comprehensive Survey](/ch04-340-agent-skills-系统性综述-表示-获取-检索-进化/)
+- [Skillopt Microsoft Train Skill Like Neural Network](/ch05-048-skillopt/)
+- [Alibaba Agentic Cloud](/ch04-295-阿里云-agentic-cloud/)
+- [Skillopt Microsoft Train Skill Hyman'S Blog](/ch05-048-skillopt/)
+- [Skillopt Skill Document Training Microsoft Sjtu](/ch05-048-skillopt/)
+- [Deli Auto Research Skill V2 Continual Learning Self Improvement](/ch01-822-deepseek陈德里ai论文第二弹-从6分到8分-deliautoresearch-skill又进化了/)
 
 ## 实践启示
 

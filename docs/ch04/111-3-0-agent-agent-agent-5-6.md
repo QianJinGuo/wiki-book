@@ -200,10 +200,10 @@ Coze 3.0 提供的解决思路是**云端托管 + 统一消息总线**。本地 
 
 ## 相关实体
 - Coze 3 0 Collaboration System
-- [Coze 3 0 Local Agent Project Orchestration](../ch04-341-coze-3-0-本地-agent-项目编排/)
+- [Coze 3 0 Local Agent Project Orchestration](/ch04-341-coze-3-0-本地-agent-项目编排//)
 - Oz Multi Harness Cloud Agent Orchestration
-- [Agent Orchestration](../ch01-098-agent-orchestration/)
-- [Baidu Netdisk Three Layer Agent Architecture](../ch07-023-三层-agent-架构-skill-subagent-agent-team-工程实践/)
+- [Agent Orchestration](/ch01-098-agent-orchestration//)
+- [Baidu Netdisk Three Layer Agent Architecture](/ch07-023-三层-agent-架构-skill-subagent-agent-team-工程实践//)
 - MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/coze-3-multimagent-team-orchestration-wangheige.md)

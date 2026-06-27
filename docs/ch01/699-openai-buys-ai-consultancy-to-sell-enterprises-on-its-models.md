@@ -11,9 +11,9 @@
 - Value: 7/10, Confidence: 8/10
 
 ## 相关实体
-- [OpenAI buys AI consultancy to sell enterprises on its models](../ch01-721-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/)
-- [Interaction Models: A Scalable Approach to Human-AI Collaboration](../ch01-566-interaction-models-a-scalable-approach-to-human-ai-collabor/)
-- [OpenAI三个语音模型发布同传被杀死](../ch01-141-openai三个语音模型发布同传被杀死/)
+- [OpenAI buys AI consultancy to sell enterprises on its models](/ch01-721-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models//)
+- [Interaction Models: A Scalable Approach to Human-AI Collaboration](/ch01-566-interaction-models-a-scalable-approach-to-human-ai-collabor//)
+- [OpenAI三个语音模型发布同传被杀死](/ch01-141-openai三个语音模型发布同传被杀死//)
 
 ## 深度分析
 OpenAI 收购 Tomoro 并成立"部署公司"（Deployment Company）的背后是**企业 AI 落地成功率太低的系统性挑战**。The Register 的评论一针见血： incompetent consultants 正在用昂贵的失败案例破坏市场，OpenAI 不能坐视不管。本文揭示了一个冷酷的商业现实——**模型能力不等于商业价值**，中间的实施能力（Deployment）才是瓶颈。

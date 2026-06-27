@@ -8,11 +8,11 @@
 - 来自 newsletter 推荐的优质文章
 - 评分: v×c = 49
 ## 相关实体
-- [P Seo Is A Product Aeo Is Brand](../ch03-107-seo-is-a-product-aeo-is-brand)
-- [Amazon Turns Alexa Into Its Next Storefront](../ch01-050-amazon-turns-alexa-into-its-next-storefront)
-- [Spotify Llm Evals Funnel Not Fork](../ch01-628-better-experiments-with-llm-evals-a-funnel-not-a-fork-s)
-- [你的一人公司品牌部带着Image 2模型的Lovart中文版来了](../ch01-431-你的一人公司品牌部-带着image-2模型的lovart中文版来了)
-- [Top 10 Design Gadgets Creative Professionals 2026](../ch03-024-top-10-design-gadgets-for-creative-professionals-that-will-c)
+- [P Seo Is A Product Aeo Is Brand](/ch03-107-seo-is-a-product-aeo-is-brand/)
+- [Amazon Turns Alexa Into Its Next Storefront](/ch01-050-amazon-turns-alexa-into-its-next-storefront/)
+- [Spotify Llm Evals Funnel Not Fork](/ch01-628-better-experiments-with-llm-evals-a-funnel-not-a-fork-s/)
+- [你的一人公司品牌部带着Image 2模型的Lovart中文版来了](/ch01-431-你的一人公司品牌部-带着image-2模型的lovart中文版来了/)
+- [Top 10 Design Gadgets Creative Professionals 2026](/ch03-024-top-10-design-gadgets-for-creative-professionals-that-will-c/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md)
 

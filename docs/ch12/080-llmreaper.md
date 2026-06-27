@@ -15,9 +15,9 @@
 ---
 
 ## 相关实体
-- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](../ch12-010-飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线/)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04-023-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent/)
-- [Novee Security How To Get A 100 Conference Acceptance Rate The No](../ch01-481-how-to-get-a-100-conference-acceptance-rate-the-novee-way/)
+- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](/ch12-010-飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线//)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](/ch04-023-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent//)
+- [Novee Security How To Get A 100 Conference Acceptance Rate The No](/ch01-481-how-to-get-a-100-conference-acceptance-rate-the-novee-way//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md)
 

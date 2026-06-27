@@ -84,8 +84,8 @@ A²RD 展示了一个重要的设计模式：**将感知/记忆/规划/执行分
 特别是 Memory 的设计——不是简单存储历史输出，而是结构化存储不同模态的信息，并支持高效的 Retrieve 操作。这比将所有历史塞入 context window 是更可扩展的方案。
 
 ## 相关实体
-- [A²RD: Agentic Autoregressive Diffusion for Long Video Consistency](../ch04-410-a²rd-agentic-autoregressive-diffusion-for-long-video-consis/)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
+- [A²RD: Agentic Autoregressive Diffusion for Long Video Consistency](/ch04-410-a²rd-agentic-autoregressive-diffusion-for-long-video-consis//)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606//)
 - MOC
 
 ---

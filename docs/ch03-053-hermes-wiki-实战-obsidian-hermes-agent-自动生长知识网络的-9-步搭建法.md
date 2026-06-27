@@ -20,7 +20,7 @@
 
 **最后一行最关键**：文章越多，网络价值越大——**不是线性叠加，是指数增长**。这是从"收藏"到"网络"的范式跃迁。
 
-> 与 [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](../ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti) 在"知识管理从静态检索到动态自组织"维度同源——但本文是**Hermes-Wiki 的可操作搭建法**，前者是 **LLM Wiki / Obsidian-Wiki / GBrain 三种实现的架构分析**。**互补不重叠**：一个讲 what/why（架构哲学），一个讲 how（工程落地）。
+> 与 [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/) 在"知识管理从静态检索到动态自组织"维度同源——但本文是**Hermes-Wiki 的可操作搭建法**，前者是 **LLM Wiki / Obsidian-Wiki / GBrain 三种实现的架构分析**。**互补不重叠**：一个讲 what/why（架构哲学），一个讲 how（工程落地）。
 
 ## 文件夹结构：节点类型分离
 
@@ -96,7 +96,7 @@ Hermes-Wiki/
 
 **这对长期知识库是致命的**。
 
-> 与 [Hermes Skills + Karpathy LLM Wiki 让 AI 越用越懂你](../ch01-711-手把手-用-hermes-skills-karpathy-的-llm-wiki-让-ai-越用越懂你) 在"三层互相喂养（Memory + Skills + Wiki）"维度同源——本文把 Wiki 单层做深，给出 9 步可执行搭建法。
+> 与 [Hermes Skills + Karpathy LLM Wiki 让 AI 越用越懂你](/ch01-711-手把手-用-hermes-skills-karpathy-的-llm-wiki-让-ai-越用越懂你/) 在"三层互相喂养（Memory + Skills + Wiki）"维度同源——本文把 Wiki 单层做深，给出 9 步可执行搭建法。
 
 ## 9 步可执行搭建法
 
@@ -192,13 +192,13 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 
 2. **三层分离架构的深层逻辑**：`raw/`（证据层）+ `concepts/`（长期知识节点）+ `entities/`（工具/项目/公司）的分离，本质是让 Agent 在编译时就能区分"事实来源""抽象概念""具体实例"三类认知对象——这种区分能力直接决定 wikilink 能否形成有意义的语义网络，而非同质链接堆砌。
 
-3. **SCHEMA.md 是行为约束而非格式规范**：Agent 知识库失败的根本原因是 Agent 的"创意自由"——今天建 summary、明天建 note、后天换命名。SCHEMA.md 的核心价值在于把"如何维护知识库"变成一个**可执行的行为契约**，而不是一个可被忽略的建议。[Hermes Skills + LLM Wiki 越用越懂你](../ch01-711-手把手-用-hermes-skills-karpathy-的-llm-wiki-让-ai-越用越懂你)的三层互相喂养框架在这里有直接呼应——Wiki 层需要 Schema 层来稳定行为预期。
+3. **SCHEMA.md 是行为约束而非格式规范**：Agent 知识库失败的根本原因是 Agent 的"创意自由"——今天建 summary、明天建 note、后天换命名。SCHEMA.md 的核心价值在于把"如何维护知识库"变成一个**可执行的行为契约**，而不是一个可被忽略的建议。[Hermes Skills + LLM Wiki 越用越懂你](/ch01-711-手把手-用-hermes-skills-karpathy-的-llm-wiki-让-ai-越用越懂你/)的三层互相喂养框架在这里有直接呼应——Wiki 层需要 Schema 层来稳定行为预期。
 
-4. **"先只读再写"是初始化对齐而非谨慎措施**：步骤 5 的初始化检查（读 SCHEMA.md / index.md / log.md 并总结结构）的本质是**在 Agent 和 Wiki 之间建立共同认知基底**，确保 Agent 理解目录角色和操作规范。这与 [Karpathy LLM Wiki v2](../ch01-271-karpathy-llm-wiki-v2-2026) 的"LLM Wiki 是关于如何组织知识而非存储知识"的核心理念一脉相承。
+4. **"先只读再写"是初始化对齐而非谨慎措施**：步骤 5 的初始化检查（读 SCHEMA.md / index.md / log.md 并总结结构）的本质是**在 Agent 和 Wiki 之间建立共同认知基底**，确保 Agent 理解目录角色和操作规范。这与 [Karpathy LLM Wiki v2](/ch01-271-karpathy-llm-wiki-v2-2026/) 的"LLM Wiki 是关于如何组织知识而非存储知识"的核心理念一脉相承。
 
 **实践价值**：对于想构建自生长知识网络的团队，9 步法的最大启示是"**先规则后内容**"——不给 Agent 规则而直接给资料，最终得到的是一堆 AI 生成的新垃圾，命名混乱、链接无意义、不可追溯。
 
-[LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](../ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti)提供了架构层面的理论支撑，解释了为什么 wiki-based knowledge network 能实现从静态检索到动态自组织的范式跃迁。
+[LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)提供了架构层面的理论支撑，解释了为什么 wiki-based knowledge network 能实现从静态检索到动态自组织的范式跃迁。
 
 ## 实践启示
 
@@ -226,17 +226,17 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 ## 相关实体
 
 - **同 LLM Wiki / Obsidian 知识管理**：
-  - [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](../ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti)（架构分析）
-  - [Karpathy LLM Wiki v2](../ch01-271-karpathy-llm-wiki-v2-2026)（原始方法论）
-  - [Karpathy LLM Wiki 第二大脑](../ch01-321-卡帕西-llm-wiki-到底是什么-用-claude-obsidian-给自己造一个第二大脑的完整拆解)
-  - [Obsidian 工具概览](../ch09-097-obsidian-claude-code-integration-guide)
-  - [Claude Code Memory Setup (Obsidian + Graphify)](../ch01-666-claude-code-memory-setup-obsidian-graphify)
+  - [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)（架构分析）
+  - [Karpathy LLM Wiki v2](/ch01-271-karpathy-llm-wiki-v2-2026/)（原始方法论）
+  - [Karpathy LLM Wiki 第二大脑](/ch01-321-卡帕西-llm-wiki-到底是什么-用-claude-obsidian-给自己造一个第二大脑的完整拆解/)
+  - [Obsidian 工具概览](/ch09-097-obsidian-claude-code-integration-guide/)
+  - [Claude Code Memory Setup (Obsidian + Graphify)](/ch01-666-claude-code-memory-setup-obsidian-graphify/)
 - **同 Hermes Agent 生态**：
-  - [Hermes Skills + LLM Wiki 越用越懂你](../ch01-711-手把手-用-hermes-skills-karpathy-的-llm-wiki-让-ai-越用越懂你)（三层互相喂养）
-  - [Hermes Agent 自进化机制源码解析](../ch04-039-hermes-agent-self-evolving-source-analysis)
-  - [Hermes Agent Memory System vs OpenClaw](../ch04-418-hermes-agent)
+  - [Hermes Skills + LLM Wiki 越用越懂你](/ch01-711-手把手-用-hermes-skills-karpathy-的-llm-wiki-让-ai-越用越懂你/)（三层互相喂养）
+  - [Hermes Agent 自进化机制源码解析](/ch04-039-hermes-agent-self-evolving-source-analysis/)
+  - [Hermes Agent Memory System vs OpenClaw](/ch04-418-hermes-agent/)
 - **同上下文工程 / 记忆架构**：
-  - [AI Coding Agent 记忆系统](../ch04-288-ai-coding-agent-记忆系统)
+  - [AI Coding Agent 记忆系统](/ch04-288-ai-coding-agent-记忆系统/)
   - 上下文工程三种记忆范式对比
   - 企业 AI 记忆 substrate 三层架构
 

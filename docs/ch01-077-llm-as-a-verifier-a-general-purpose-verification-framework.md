@@ -55,8 +55,8 @@ LLM-as-a-Verifier 的核心洞察在于区分了「评判（Judge）」和「验
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-as-a-verifier-framework.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework)
-- [LLM-as-a-Verifier: A General-Purpose Verification](../ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](/ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework/)
+- [LLM-as-a-Verifier: A General-Purpose Verification](/ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework/)
 
 ---
 

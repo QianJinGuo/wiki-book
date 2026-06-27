@@ -11,11 +11,11 @@
 - CMU + 哈佛大学联合研究
 - 8B 参数 Qwen3-VL 后训练模型超越闭源 GPT-5 和 Gemini-3.1-Pro
 ## 相关实体
-- [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](../ch01-016-cvpr-2026-highlight-让ai像电影人一样-看-视频-8b小模型反超gpt-5与gemini-3-1-p/)
+- [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](/ch01-016-cvpr-2026-highlight-让ai像电影人一样-看-视频-8b小模型反超gpt-5与gemini-3-1-p//)
 - Cvpr 2026 Highlight 清华打破多模态音频生成的通才困境Omni2Sound 音频基础模型开源
-- [Three Years Gpt3 Gemini3 Mollick](../ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测/)
-- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
-- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch01-055-快手首个打工人agent来了-工作秒变桌面软件-零代码-不烧token/)
+- [Three Years Gpt3 Gemini3 Mollick](/ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测//)
+- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了//)
+- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](/ch01-055-快手首个打工人agent来了-工作秒变桌面软件-零代码-不烧token//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)
 

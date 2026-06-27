@@ -15,11 +15,11 @@ A crisp, printmaking-like aesthetic with bold outlines and natural deformation. 
 也可以提供主题，比如，主题:女孩，沙滩，海水
 
 ## 相关实体
-- [Gpt Image 2完全指南](../ch01-700-gpt-image-2完全指南/)
-- [Gpt Image 2 完全指南附大量玩法案例顺便开源我的生图 Skill](../ch01-654-gpt-image-2-完全指南-附大量玩法案例-顺便开源我的生图-skill/)
-- [Skill Rag Tsinghua Sra](../ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](../ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l/)
-- [Build Live Translation Apps With Gpt Realtime Translate](../ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
+- [Gpt Image 2完全指南](/ch01-700-gpt-image-2完全指南//)
+- [Gpt Image 2 完全指南附大量玩法案例顺便开源我的生图 Skill](/ch01-654-gpt-image-2-完全指南-附大量玩法案例-顺便开源我的生图-skill//)
+- [Skill Rag Tsinghua Sra](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag//)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](/ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l//)
+- [Build Live Translation Apps With Gpt Realtime Translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-image-2神级提示词分享.md)
 

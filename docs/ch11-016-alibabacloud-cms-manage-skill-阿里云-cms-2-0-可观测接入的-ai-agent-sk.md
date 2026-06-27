@@ -171,26 +171,26 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 
 ## 与现有实体差异化
 
-- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09-005-让-coding-agent-从黑盒到透明-阿里云-agent-观测审计数据采集实践-loongsuite-pilot) — **LoongSuite Pilot** 是 Agent 观测的**数据采集应用层**（OTel SemConv + 三类 Agent 形态 + 四大观测能力）。**alibabacloud-cms-manage Skill 是 Agent 接入层**（如何让 AI Agent 自己完成可观测接入）。**LoongSuite = 数据从 Agent 流出的标准化**；**alibabacloud-cms-manage = AI Agent 自动化完成接入编排**。两者**互补**：LoongSuite 让你能看到 Agent 行为，cms-manage Skill 让 Agent 自己接入观测。
-- [Hermes Observability Aliyun](../ch04-103-给-hermes-装上显微镜-agent-执行全知道) — Hermes 装上显微镜的 ARMS 观测实践（**Hermes-specific**）。本实体是**通用 CMS 2.0 接入**（不绑定具体 Agent 框架），适用更广。
-- [Aliyun Agentrun](../ch04-003-agentrun) / [Aliyun Agentrun 5Min Quickstart](../ch04-003-agentrun) / [Aliyun Agentrun 2Line Integration](../ch04-003-agentrun) — **AgentRun** 是阿里云 AI Agent 运行时（运行 Agent 的平台）。**alibabacloud-cms-manage Skill 是观测接入工具**（为已部署的 AI Agent 接入 CMS 监控）。两者**关系**：Agent 跑在 AgentRun 上 → 通过 cms-manage Skill 接入 CMS 监控 → 通过 LoongSuite 上报 Agent 行为数据。
-- [Skill Development Guide Aliyun 2026](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布) — Aliyun 团队发布的 **Skill 开发保姆级教程**（教你如何写 Skill）。**alibabacloud-cms-manage Skill 是 Skill 教程落地的一个具体生产 Skill 案例**——是 Skill 教程的"现身说法"。
+- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](/ch09-005-让-coding-agent-从黑盒到透明-阿里云-agent-观测审计数据采集实践-loongsuite-pilot/) — **LoongSuite Pilot** 是 Agent 观测的**数据采集应用层**（OTel SemConv + 三类 Agent 形态 + 四大观测能力）。**alibabacloud-cms-manage Skill 是 Agent 接入层**（如何让 AI Agent 自己完成可观测接入）。**LoongSuite = 数据从 Agent 流出的标准化**；**alibabacloud-cms-manage = AI Agent 自动化完成接入编排**。两者**互补**：LoongSuite 让你能看到 Agent 行为，cms-manage Skill 让 Agent 自己接入观测。
+- [Hermes Observability Aliyun](/ch04-103-给-hermes-装上显微镜-agent-执行全知道/) — Hermes 装上显微镜的 ARMS 观测实践（**Hermes-specific**）。本实体是**通用 CMS 2.0 接入**（不绑定具体 Agent 框架），适用更广。
+- [Aliyun Agentrun](/ch04-003-agentrun/) / [Aliyun Agentrun 5Min Quickstart](/ch04-003-agentrun/) / [Aliyun Agentrun 2Line Integration](/ch04-003-agentrun/) — **AgentRun** 是阿里云 AI Agent 运行时（运行 Agent 的平台）。**alibabacloud-cms-manage Skill 是观测接入工具**（为已部署的 AI Agent 接入 CMS 监控）。两者**关系**：Agent 跑在 AgentRun 上 → 通过 cms-manage Skill 接入 CMS 监控 → 通过 LoongSuite 上报 Agent 行为数据。
+- [Skill Development Guide Aliyun 2026](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/) — Aliyun 团队发布的 **Skill 开发保姆级教程**（教你如何写 Skill）。**alibabacloud-cms-manage Skill 是 Skill 教程落地的一个具体生产 Skill 案例**——是 Skill 教程的"现身说法"。
 - Skills Registry 公测开启为企业打造私有的 Skill 管理中心 — 阿里云 **Skills Registry 公测**（企业私有 Skill 管理中心）。**alibabacloud-cms-manage** 是部署在 Skills Registry（`skills.aliyun.com`）上的官方 Skill，是 Registry 生态的具体产品实例。
 阿里云 AI 工具链定位对照：本实体（CMS 观测接入）与阿里云 **MSE AI 网关** 90% 成本节约（任务调度 + Sandbox）属于阿里云 AI 工具链不同环节。
-- [Alibaba Eventhouse Enterprise Agent Context](../ch11-040-阿里云-eventhouse-企业级-agent-上下文构建五维框架) — 阿里 EventHouse 企业 Agent 上下文。本实体是 CMS 接入（**事件**层）—— EventHouse 处理**状态上下文**，CMS 处理**可观测性**。
+- [Alibaba Eventhouse Enterprise Agent Context](/ch11-040-阿里云-eventhouse-企业级-agent-上下文构建五维框架/) — 阿里 EventHouse 企业 Agent 上下文。本实体是 CMS 接入（**事件**层）—— EventHouse 处理**状态上下文**，CMS 处理**可观测性**。
 阿里云 **API 网关（Gateway API 标准）** 是**网络层**接入；本实体是**观测层**接入，定位不同。
-- [Aliyun Cio Ai Rd Efficiency](../ch04-175-阿里云cio-ai产研效能规模化提升实践-抛弃生码率-重构half-stack) — 阿里 CIO 视角的 AI 研发效率。本实体是具体工具（**Skill 化观测接入**），是该战略的工具落地。
-- [Agent Evolution Four Stages Six Dimensions Aliyun](../ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo) — Agent 演化的四个阶段六维度（阿里云视角）。本实体的 Skill + 自然语言接入模式属于该框架中"**降低接入门槛**"维度的具体实现。
-- [Cli Mcp Skill Architecture Decision Vibecoder](../ch07-030-cli-mcp-和-cli-skill-应该如何选) — VibeCoder 的 **CLI vs MCP vs CLI+Skill** 架构决策指南。本实体是**CLI+Skill 模式**的具体生产案例（CMS CLI 6 步流程 → Skill 化），是该架构决策的真实落地示例。
-- [Deeppotential Alibabacloud Agentrun Scientific Ai](../ch04-003-agentrun) / [Agent Evolution Four Stages Six Dimensions Aliyun](../ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo) — 阿里云 AgentRun 生态。本实体与之是**同一厂商不同产品线**（AgentRun vs CMS Skill）—— 都是阿里云 AI 工具链。
+- [Aliyun Cio Ai Rd Efficiency](/ch04-175-阿里云cio-ai产研效能规模化提升实践-抛弃生码率-重构half-stack/) — 阿里 CIO 视角的 AI 研发效率。本实体是具体工具（**Skill 化观测接入**），是该战略的工具落地。
+- [Agent Evolution Four Stages Six Dimensions Aliyun](/ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/) — Agent 演化的四个阶段六维度（阿里云视角）。本实体的 Skill + 自然语言接入模式属于该框架中"**降低接入门槛**"维度的具体实现。
+- [Cli Mcp Skill Architecture Decision Vibecoder](/ch07-030-cli-mcp-和-cli-skill-应该如何选/) — VibeCoder 的 **CLI vs MCP vs CLI+Skill** 架构决策指南。本实体是**CLI+Skill 模式**的具体生产案例（CMS CLI 6 步流程 → Skill 化），是该架构决策的真实落地示例。
+- [Deeppotential Alibabacloud Agentrun Scientific Ai](/ch04-003-agentrun/) / [Agent Evolution Four Stages Six Dimensions Aliyun](/ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/) — 阿里云 AgentRun 生态。本实体与之是**同一厂商不同产品线**（AgentRun vs CMS Skill）—— 都是阿里云 AI 工具链。
 
 ## 相关主题
 
 —
-- Agent Skill 生态 — [Agent Skills Comprehensive Survey](../ch04-340-agent-skills-系统性综述-表示-获取-检索-进化)
-- 可观测性 — [Hermes Observability Aliyun](../ch04-103-给-hermes-装上显微镜-agent-执行全知道)
-- OTel / APM 接入 — [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09-005-让-coding-agent-从黑盒到透明-阿里云-agent-观测审计数据采集实践-loongsuite-pilot)
-- K8s 自动注入 — [Higress Cncf Sandbox Ingress Nginx Replacement](../ch11-152-ingress-nginx已退役higress如何平滑替代)
+- Agent Skill 生态 — [Agent Skills Comprehensive Survey](/ch04-340-agent-skills-系统性综述-表示-获取-检索-进化/)
+- 可观测性 — [Hermes Observability Aliyun](/ch04-103-给-hermes-装上显微镜-agent-执行全知道/)
+- OTel / APM 接入 — [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](/ch09-005-让-coding-agent-从黑盒到透明-阿里云-agent-观测审计数据采集实践-loongsuite-pilot/)
+- K8s 自动注入 — [Higress Cncf Sandbox Ingress Nginx Replacement](/ch11-152-ingress-nginx已退役higress如何平滑替代/)
 
 ## 深度分析
 
@@ -273,7 +273,7 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 - **阿里云 CLI 安装指南**：https://help.aliyun.com/zh/cli/install-update-alibaba-cloud-cli
 ## 相关实体
 
-- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01-197-opentelemetry-ebpf-instrumentation-obi-零代码全栈可观测性的内核级实现)
+- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](/ch01-197-opentelemetry-ebpf-instrumentation-obi-零代码全栈可观测性的内核级实现/)
 - MOC
 
 ---

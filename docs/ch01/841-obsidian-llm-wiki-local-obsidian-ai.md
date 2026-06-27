@@ -56,12 +56,12 @@ obsidian-llm-wiki-local: Obsidian本地AI知识图谱自动构建工具 涉及da
 - **knowledge-mgmt趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [E9Ffy3R5Kwa1Ja5Pywbbrg](../ch01-708-e9ffy3r5kwa1ja5pywbbrg/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch01-702-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-215-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/)
+- [E9Ffy3R5Kwa1Ja5Pywbbrg](/ch01-708-e9ffy3r5kwa1ja5pywbbrg//)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch01-702-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏//)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏//)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-215-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed//)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进//)
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制//)
 
 ## 实践启示
 1. **工程落地**: data领域方案需关注可观测性、可维护性和成本效率

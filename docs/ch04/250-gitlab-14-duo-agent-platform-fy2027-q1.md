@@ -46,10 +46,10 @@ GitLab Duo Agent Platform 仍处于早期阶段——评估它是否已覆盖你
 
 ## 相关实体
 - Gitlab Layoffs Memo 2026 5
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](../ch04-279-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [Auto Improving Agent Platform Ashpreetbedi](../ch01-545-auto-improving-agent-platform-ashpreet-bedi/)
-- [The Ui Is Dead Long Live The Agent](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [Servicenow Ui Is Dead Agent](../ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](/ch04-279-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles//)
+- [Auto Improving Agent Platform Ashpreetbedi](/ch01-545-auto-improving-agent-platform-ashpreet-bedi//)
+- [The Ui Is Dead Long Live The Agent](/ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles//)
+- [Servicenow Ui Is Dead Agent](/ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gitlab-14pct-layoff-agent-platform-ai-2026q1.md)
 

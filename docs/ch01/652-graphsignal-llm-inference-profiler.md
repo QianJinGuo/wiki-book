@@ -83,14 +83,14 @@ Graphsignal 填补了推理引擎与基础设施监控之间的空白。与 MLOp
 
 - 社区版功能有限，生产级功能可能需要商业许可
 - 对自定义推理引擎的支持需要额外集成工作
-- 与 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 的集成模式尚未标准化
+- 与 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 的集成模式尚未标准化
 
 ## 相关实体
 
 - LangFuse — 应用侧 LLM 可观测性
-- [Graphsignal](../ch01-639-graphsignal-llm-inference-profiler/) — 本文实体
+- [Graphsignal](/ch01-639-graphsignal-llm-inference-profiler//) — 本文实体
 - MLOps — 机器学习运维方法论
-- [Model Serving Routing](../ch01-838-state-of-routing-in-model-serving/) — 推理服务的路由与调度
+- [Model Serving Routing](/ch01-838-state-of-routing-in-model-serving//) — 推理服务的路由与调度
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/graphsignal-inference-profiler.md)
 

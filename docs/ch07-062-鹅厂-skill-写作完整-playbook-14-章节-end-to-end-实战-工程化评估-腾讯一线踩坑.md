@@ -29,7 +29,7 @@
 **口播脚本**（MiniMax TTS 真实生成）：
 
 - 🎙️ `tts_s1_action_7wuR8qQE` — 大家好，欢迎来到本次关于 AI Agent Skill 写作的课程。我们课程的第一问，就是这个：为什么同样的 Skill 需求，效果能差 10 倍？
-  - [▶️ 播放](../ch07-
+  - [▶️ 播放](/ch07-
   - 路径：`/Users/jinguo//audio/tts_s1_action_7wuR8qQE.mp3`
 - 🎙️ `tts_s1_action_Cp9SnzGk` — 来看一个真实的案例。同一个团队，两位工程师分别写了一个“代码审查 Skill”。
   - [▶️ 播放](
@@ -143,7 +143,7 @@
 > frontmatter 为什么决定触发成败的 80%？
 > 📍 官方定论：frontmatter 是 Skill 最重要的部分——没有之一。
 > 核心 description 字段必须包含 四要素：
-> ❌ 反例 (过于宽泛)
+> ❌ 反例 (过于宽泛/)
 > "帮我写代码"触发条件模糊，导致泛滥触发
 > ✅ 正例 (触发精准)
 > "当用户需要按团队规范生成 React 组件时触发"含 ESLint + Prettier 规则
@@ -153,7 +153,7 @@
 **口播脚本**（MiniMax TTS 真实生成）：
 
 - 🎙️ `tts_s4_action_X4Z_nEhy` — 我们直接看这个标题。为什么 frontmatter 这个看似配置文件的地方，会决定 Skill 触发成败的80%？这背后的原理，是优化 Skill 的关键。
-  - [▶️ 播放](../ch07-
+  - [▶️ 播放](/ch07-
   - 路径：`/Users/jinguo//audio/tts_s4_action_X4Z_nEhy.mp3`
 - 🎙️ `tts_s4_action_47gyuJJY` — 这不是我夸张，这是 Anthropic 官方给出的定论。他们明确指出，frontmatter 是 Skill 最重要的部分——没有之一。为什么？因为它定义了 Skill 的‘基因’，决定了它会在什么情况下被唤醒。
   - [▶️ 播放](
@@ -260,13 +260,13 @@
 > 何时拆？触发条件
 > • SKILL.md 超过 5000 词（文件过大，难以维护和调试）• 涵盖 2+ 独立场景（职责耦合，修改易引发回归问题）
 > 怎么拆？架构原则
-> • 主 Skill (Orchestrator)路由调度，不含执行逻辑• 子 Skill (Specialist)聚焦单一职责，可独立测试• 依赖声明：includes 字段引用
+> • 主 Skill (Orchestrator/)路由调度，不含执行逻辑• 子 Skill (Specialist)聚焦单一职责，可独立测试• 依赖声明：includes 字段引用
 > 反面教材：什么都塞一个文件的 “上帝 Skill” → 难以维护、难以测试、难以复用
 
 **口播脚本**（MiniMax TTS 真实生成）：
 
 - 🎙️ `tts_s6_action_LeIDEyn6` — 好，同学们，我们这节课来解决一个实际开发中的关键问题：如何将一个庞大的、难以维护的 Skill 进行模块化拆分。我们主要探讨两个核心问题：什么时候该拆，以及拆分后应该遵循什么样的架构。
-  - [▶️ 播放](../ch07-
+  - [▶️ 播放](/ch07-
   - 路径：`/Users/jinguo//audio/tts_s6_action_LeIDEyn6.mp3`
 - 🎙️ `tts_s6_action_G6BrBAqN` — 首先，我们来看‘何时拆’。第一个明确的触发条件是，当你的主 SKILL.md 文件超过 5000 词时，它就变得过于庞大了。
   - [▶️ 播放](
@@ -367,7 +367,7 @@
 
 > 工程化评估：Skill Creator + 3 阶段评估
 > Skill Creator 5 步工作流
-> 用例定义 (Use Case Definition)
+> 用例定义 (Use Case Definition/)
 > frontmatter 生成 (Metadata Generation)
 > 指令编写 (Instruction Writing)
 > 验证 (Validation)

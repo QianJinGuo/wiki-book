@@ -28,7 +28,7 @@ The leaked memory contains u...
 - [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md)
 
 ## 相关实体
-> AI 安全与对齐 | > [Agent 记忆架构](../ch04-146-agent-memory-架构本质/)
+> AI 安全与对齐 | > [Agent 记忆架构](/ch04-146-agent-memory-架构本质//)
 
 ## 深度分析
 ### 漏洞根因分析
@@ -46,7 +46,7 @@ CVE-2026-7482 的核心问题在于 Ollama 使用 Go 语言编写，却在关键
 - **敏感数据种类多**：堆内存中包含用户提示词、系统提示词、其他用户与模型的对话内容、环境变量（可能含 API keys）、工具输出结果（如 Claude Code 的工具调用返回） 
 
 ### 与其他 LLM 推理框架的类比
-Ollama 的本地模型运行模式与 [面向电商直播场景的全模态大模型推理加速方案](../ch01-845-面向电商直播场景的全模态大模型推理加速方案) 中提到的 vLLM、SGLang、TensorRT-LLM 同属 LLM 推理加速方案。但 Ollama 的安全默认配置明显弱于其他框架——vLLM 和 SGLang 通常需要配合 API 网关或认证层使用，而 Ollama 的"开箱即用"特性使其在安全意识不足的用户手中成为定时炸弹。
+Ollama 的本地模型运行模式与 [面向电商直播场景的全模态大模型推理加速方案](/ch01-845-面向电商直播场景的全模态大模型推理加速方案/) 中提到的 vLLM、SGLang、TensorRT-LLM 同属 LLM 推理加速方案。但 Ollama 的安全默认配置明显弱于其他框架——vLLM 和 SGLang 通常需要配合 API 网关或认证层使用，而 Ollama 的"开箱即用"特性使其在安全意识不足的用户手中成为定时炸弹。
 
 ## 实践启示
 ### 立即行动

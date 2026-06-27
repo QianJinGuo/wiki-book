@@ -26,15 +26,15 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 5. **与 Bedrock 集成要注意 region 限制**：Kiro CLI 基于 Amazon Bedrock，需要注意中国区（aws.cn）和全球区（aws.com）的服务差异和合规要求。
 
 ## 相关实体
-- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch11-194-使用-kiro-cli-和-agent-client-protocol-构建飞书-ai-聊天机器人-亚马逊aws官方/)
-- [从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 | 亚马逊AWS官方博客](../ch11-036-从手动到智能-用-kiro-cli-opensearch-mcp-让每个人都成为-opensearch-专家-亚/)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch07-053-cli系列④-选型cli-mcp还是api/)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
-- [将 Kiro CLI 封装为 REST API：双通道架构实践 | 亚马逊AWS官方博客](../ch11-199-将-kiro-cli-封装为-rest-api-双通道架构实践-亚马逊aws官方博客/)
+- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](/ch11-194-使用-kiro-cli-和-agent-client-protocol-构建飞书-ai-聊天机器人-亚马逊aws官方//)
+- [从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 | 亚马逊AWS官方博客](/ch11-036-从手动到智能-用-kiro-cli-opensearch-mcp-让每个人都成为-opensearch-专家-亚//)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](/ch07-053-cli系列④-选型cli-mcp还是api//)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双//)
+- [将 Kiro CLI 封装为 REST API：双通道架构实践 | 亚马逊AWS官方博客](/ch11-199-将-kiro-cli-封装为-rest-api-双通道架构实践-亚马逊aws官方博客//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/freelance-designers-cant-compete-ai-subscription.md)
 
-- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](../ch11-169-使用-kiro-规范驱动开发加速数据质量建设-亚马逊aws官方博客/)
+- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](/ch11-169-使用-kiro-规范驱动开发加速数据质量建设-亚马逊aws官方博客//)
 
 ---
 

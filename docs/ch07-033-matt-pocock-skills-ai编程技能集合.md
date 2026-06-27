@@ -104,18 +104,18 @@ Matt Pocock Skills 不只是零散命令，它们串成一条完整开发流：
 | Superpowers | TDD + 评审纪律 | 重视测试质量 | 对测试纪律要求高 |
 | Spec-Kit | 规格驱动开发 | 企业项目、需求评审先行 | 前期投入大，过程可控 |
 
-→ [Superpowers 6.0 SDD 评审重写](../ch05-064-superpowers-6-0-sdd-评审重写-文件交接-多平台支持)
-→ [三器合一工程化实战](../ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战)
+→ [Superpowers 6.0 SDD 评审重写](/ch05-064-superpowers-6-0-sdd-评审重写-文件交接-多平台支持/)
+→ [三器合一工程化实战](/ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战/)
 
 ## 相关概念
 - SDD（Spec-Driven Development） — 规格驱动开发，与 grill-me/grill-with-docs 理念相通
 - TDT（Task-Driven Development） — 任务驱动开发，grill-me 追问后最终产出的即为 TDT
 ## 相关实体
-- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01-207-claude-md)
-- [Openai Codex 521 Update Appshots Goal Computer Use](../ch09-073-codex-5-21-更新-ai-编程助手开始变成电脑工作代理)
-- [Graphify Software Engineering Knowledge Graph](../ch03-022-开源-ai-编程可查询的软件工程知识图谱-graphify-完整上手攻略)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-677-anthropic)
-- [Stepan Gershuni Ai Native Startup Guide](../ch04-001-他的-agent-昨晚替他把公司运转了一遍-你的早会才刚开始)
+- [Andrej Karpathy Claude Md 134K Stars 2026](/ch01-207-claude-md/)
+- [Openai Codex 521 Update Appshots Goal Computer Use](/ch09-073-codex-5-21-更新-ai-编程助手开始变成电脑工作代理/)
+- [Graphify Software Engineering Knowledge Graph](/ch03-022-开源-ai-编程可查询的软件工程知识图谱-graphify-完整上手攻略/)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-677-anthropic/)
+- [Stepan Gershuni Ai Native Startup Guide](/ch04-001-他的-agent-昨晚替他把公司运转了一遍-你的早会才刚开始/)
 
 ---
 

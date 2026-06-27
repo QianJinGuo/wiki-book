@@ -10,11 +10,11 @@
 - value=7, confidence=8, product=56
 - Well-written Platformer article on AI job impact
 ## 相关实体
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes/)
-- [Principals Ai Education](../ch01-117-ceos-of-the-classroom-why-principals-are-the-key-to-the-ai/)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens 1](../ch12-083-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes/)
-- [Pixel 10 Zero Click Exploit Chain](../ch12-053-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes/)
-- [Anthropic_Cache_Tokenomics](../ch01-112-tokenomics-the-62-5-minute-rule-for-claude-s-cache/)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](/ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes//)
+- [Principals Ai Education](/ch01-117-ceos-of-the-classroom-why-principals-are-the-key-to-the-ai//)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens 1](/ch12-083-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes//)
+- [Pixel 10 Zero Click Exploit Chain](/ch12-053-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes//)
+- [Anthropic_Cache_Tokenomics](/ch01-112-tokenomics-the-62-5-minute-rule-for-claude-s-cache//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/platformer-ai-job-loss-levie.md)
 

@@ -39,12 +39,12 @@ Localmaxxing 不是"取代云端"而是"分流任务"。随着本地模型能力
 ## 相关实体
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/localmaxxing.md)
 
-- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](../ch01-646-crypto-inflows-hit-858m-as-clarity-lifts-sentiment)
-- [Ico Fines South Staffordshire 2022 Breach](../ch12-106-ico-fines-south-staffordshire-963k-over-2022-breach)
-- [Zeus Rwa Thread Reader](../ch01-132-thread-by-zeusrwa-on-thread-reader-app)
-- [Interaction Models](../ch01-566-interaction-models-a-scalable-approach-to-human-ai-collabor)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch01-292-we-ve-been-here-before-decompilers-fuzzers-and-now-ai)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09-106-automate-progressive-rollouts-with-vercel-flags-vercel)
+- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](/ch01-646-crypto-inflows-hit-858m-as-clarity-lifts-sentiment/)
+- [Ico Fines South Staffordshire 2022 Breach](/ch12-106-ico-fines-south-staffordshire-963k-over-2022-breach/)
+- [Zeus Rwa Thread Reader](/ch01-132-thread-by-zeusrwa-on-thread-reader-app/)
+- [Interaction Models](/ch01-566-interaction-models-a-scalable-approach-to-human-ai-collabor/)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](/ch01-292-we-ve-been-here-before-decompilers-fuzzers-and-now-ai/)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](/ch09-106-automate-progressive-rollouts-with-vercel-flags-vercel/)
 
 ---
 

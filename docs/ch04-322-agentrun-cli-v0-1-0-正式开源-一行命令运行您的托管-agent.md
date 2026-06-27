@@ -7,14 +7,14 @@
 # AgentRun CLI v0.1.0 正式开源：一行命令运行您的托管 Agent
 > 托管 Agent 的范式已经确立，接下来我们要做的，是让开发者能够通过一条命令将其运行起来。
 _ ** AgentRun 平台优势已立，开发者侧补位  ** _
-在上一篇文章  《  [ 托管 Agent 执行循环只是起点——AgentRun 托管的更是企业 AI 生产全链路  ](../ch04-<https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247583492&idx=1&sn=d6ce0429f03fb1042bfc377d38301685&scene=21#wechat_redirect>) 》  中，我们将阿里云 AgentRun 与 Claude Managed Agents (CMA) 进行了正面对比。结论非常清晰：托管式 Agent 已成为行业共识。
+在上一篇文章  《  [ 托管 Agent 执行循环只是起点——AgentRun 托管的更是企业 AI 生产全链路  ](/ch04-<https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247583492&idx=1&sn=d6ce0429f03fb1042bfc377d38301685&scene=21#wechat_redirect>/) 》  中，我们将阿里云 AgentRun 与 Claude Managed Agents (CMA) 进行了正面对比。结论非常清晰：托管式 Agent 已成为行业共识。
 AgentRun 是以高代码为核心、生态开放、灵活组装的一站式 Agentic AI 基础设施平台，为企业级 Agent 提供开发、调试、部署、运维的全生命周期管理。助力企业和开发者专注于 AI 业务创新，无需自建和管理底层基础设施，让 Agentic AI 真正进入企业生产环境。从定位上来讲，  ** AgentRun 是阿里云提供的 Managed Agents 平台  ** ，  与 CMA 相比具备企业级、无厂商锁定两大差异化优势。
 
 ## 相关实体
-- [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch04-418-hermes-agent)
-- [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](../ch04-003-agentrun)
-- [Minimal Cli Agent 250 Line Python Ollama 7 Stages](../ch04-075-ai-agent-的内核是-250-行-while-循环-用-python-ollama-从零搭建-cli-agen)
-- [Aliyun Agentrun 5Min Quickstart](../ch04-003-agentrun)
+- [Hermes Agent Kanban Deep Test By Wjjagi 2026](/ch04-418-hermes-agent/)
+- [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](/ch04-003-agentrun/)
+- [Minimal Cli Agent 250 Line Python Ollama 7 Stages](/ch04-075-ai-agent-的内核是-250-行-while-循环-用-python-ollama-从零搭建-cli-agen/)
+- [Aliyun Agentrun 5Min Quickstart](/ch04-003-agentrun/)
 - Skills Registry 公测开启为企业打造私有的 Skill 管理中心
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentrun-cli-v010-正式开源一行命令运行您的托管-agent.md)

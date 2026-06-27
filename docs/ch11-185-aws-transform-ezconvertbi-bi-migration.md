@@ -12,11 +12,11 @@ In this post, we walk through the full journey, from setting up your migration w
 If you're running a legacy BI tool, you face compounding pressures that go beyond licensing fees:
 
 ## 相关实体
-- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](../ch01-609-aws-一周综述-aws-transform-上线一周年-aws-云端-claude-platform-ec2-m3-u)
-- [Cloudsectidbits Masso Cognito Sso.Html](../ch11-209-cloudsectidbits)
-- [Amazon Bedrock Api Security Guide](../ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew)
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](../ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt)
+- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](/ch01-609-aws-一周综述-aws-transform-上线一周年-aws-云端-claude-platform-ec2-m3-u/)
+- [Cloudsectidbits Masso Cognito Sso.Html](/ch11-209-cloudsectidbits/)
+- [Amazon Bedrock Api Security Guide](/ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南/)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](/ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](/ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-transform-ezconvertbi-bi-migration.md)
 

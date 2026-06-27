@@ -13,7 +13,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-search-models-softwaredoug.md)
 
 ## 相关实体
-- [Claude Code开发负责人：为何放弃RAG而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
+- [Claude Code开发负责人：为何放弃RAG而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
 
 ## 深度分析
 传统搜索系统的架构根植于模块化的"乐高思维"：BM25 负责词项匹配，嵌入模型承担语义相似度计算，重排器优化结果顺序，查询分类器做意图识别。这些组件各自独立、边界清晰，通过预定义的管道串联组合。这种设计在过去 20 年被证明有效，但它存在根本性局限——**每个组件只"看见"自己负责的局部，无法从全局视角理解搜索过程**。

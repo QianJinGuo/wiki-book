@@ -171,13 +171,13 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 
 ## 相关实体
 
-- [Agent Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey/) — 学术 Survey 的 ETCLOVG 7 层分类（不同分类法）
+- [Agent Harness Engineering Survey 2026](/ch04-069-agent-harness-engineering-a-survey//) — 学术 Survey 的 ETCLOVG 7 层分类（不同分类法）
 - Agent Harness Context Management Working Set — 上下文管理的"工作集"视角
-- [Agent Harness 12 Components 7 Decisions](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/) — 12 组件 + 7 决策框架
-- [Agent Production Harness Engineering](../ch05-038-agent生产级harness工程指南/) — 工程赤字 + Demo vs 生产型判别
-- [Harness Engineering Systematic Framework](../ch05-049-harness-engineering-系统梳理/) — Harness 工程系统化
+- [Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架//) — 12 组件 + 7 决策框架
+- [Agent Production Harness Engineering](/ch05-038-agent生产级harness工程指南//) — 工程赤字 + Demo vs 生产型判别
+- [Harness Engineering Systematic Framework](/ch05-049-harness-engineering-系统梳理//) — Harness 工程系统化
 - Agent Skill Writing — Skill 编写实践（第三关深入）
-- [Agent Reliability Context Drift Tool Hallucination](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/) — 漂移与幻觉的关联分析
+- [Agent Reliability Context Drift Tool Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio//) — 漂移与幻觉的关联分析
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md)
 
@@ -194,15 +194,15 @@ P0-P3 上下文分诊的核心价值在于将 LLM 视作 CPU、Context 视作内
 
 ### 技术要点：Stop Hook 作为确定性工程契约
 
-"Prompt 是请求，Hook 是契约"这句话点出了 [Agent Reliability Context Drift Tool Hallucination](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/) 中幻觉问题的工程解法核心——不是靠更好的 Prompt 提示，而是靠 Hook 在响应交付前强制插入确定性检查环。blocking + 自愈循环（不通过则阻断→回喂 AI→重试）将概率性 AI 输出重新置于确定性工程的控制之下。
+"Prompt 是请求，Hook 是契约"这句话点出了 [Agent Reliability Context Drift Tool Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio//) 中幻觉问题的工程解法核心——不是靠更好的 Prompt 提示，而是靠 Hook 在响应交付前强制插入确定性检查环。blocking + 自愈循环（不通过则阻断→回喂 AI→重试）将概率性 AI 输出重新置于确定性工程的控制之下。
 
 ### 技术要点：三层模型路由的成本结构性压缩
 
-Haiku 60% / Sonnet 30% / Opus 10% 的路由比例背后有数据支撑：41% 的查询只是 SQL 模板填空，根本用不上 Opus。**月账单 48 万→12 万**不是通过压缩质量实现，而是通过正确的任务-模型匹配实现。[Agent Harness 12 Components 7 Decisions](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/) 的 12 组件框架可为此路由决策提供系统性组件视角。
+Haiku 60% / Sonnet 30% / Opus 10% 的路由比例背后有数据支撑：41% 的查询只是 SQL 模板填空，根本用不上 Opus。**月账单 48 万→12 万**不是通过压缩质量实现，而是通过正确的任务-模型匹配实现。[Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架//) 的 12 组件框架可为此路由决策提供系统性组件视角。
 
 ### 实践价值：Pre-task Gating 是防呆机制而非流程负担
 
-"不评估，不准写代码"的 Pre-task Gating 纪律，本质上是将 [Harness Engineering Systematic Framework](../ch05-049-harness-engineering-系统梳理/) 中的"工程赤字"概念落实为可执行规则。黄佳将其定位为"防呆"而非"审批"，是因为它防止的是 AI 在信息不完整时产生大量不可靠输出的情况——这种输出在长周期任务中的修复成本远高于前置评估的时间投入。
+"不评估，不准写代码"的 Pre-task Gating 纪律，本质上是将 [Harness Engineering Systematic Framework](/ch05-049-harness-engineering-系统梳理//) 中的"工程赤字"概念落实为可执行规则。黄佳将其定位为"防呆"而非"审批"，是因为它防止的是 AI 在信息不完整时产生大量不可靠输出的情况——这种输出在长周期任务中的修复成本远高于前置评估的时间投入。
 
 ### 实践价值：ADPS 共同体将个人踩坑经验转化为组织资产
 
@@ -210,15 +210,15 @@ Agent Skill Writing 解决个人级经验复用，而 ADPS 共同体解决跨组
 
 ## 实践启示
 
-1. **优先建立五层记忆 + P0-P3 分诊，而非直接上 Agent**：在[Agent Production Harness Engineering](../ch05-038-agent生产级harness工程指南/) 的"Demo vs 生产型"判别中，上线前的第一件事就是建立上下文管理基础设施。没有 P0-P3 分诊的 Agent 等于没有内存管理的 CPU——看起来在跑，实际上在受罪。
+1. **优先建立五层记忆 + P0-P3 分诊，而非直接上 Agent**：在[Agent Production Harness Engineering](/ch05-038-agent生产级harness工程指南//) 的"Demo vs 生产型"判别中，上线前的第一件事就是建立上下文管理基础设施。没有 P0-P3 分诊的 Agent 等于没有内存管理的 CPU——看起来在跑，实际上在受罪。
 
-2. **用 Stop Hook 将质量门禁自动化**：在 CI/CD pipeline 中嵌入 Stop Hook（`pnpm lint && pnpm test`，blocking=true），让每次 AI 交付都经过确定性检查。这是[Agent Reliability Context Drift Tool Hallucination](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/) 中"反馈回路丢失"问题的最低成本解法，无需改模型，只要改 Harness 配置。
+2. **用 Stop Hook 将质量门禁自动化**：在 CI/CD pipeline 中嵌入 Stop Hook（`pnpm lint && pnpm test`，blocking=true），让每次 AI 交付都经过确定性检查。这是[Agent Reliability Context Drift Tool Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio//) 中"反馈回路丢失"问题的最低成本解法，无需改模型，只要改 Harness 配置。
 
 3. **三层模型路由是 token 成本控制的第一优先级**：先用 Haiku 做路由分类（41% 查询根本不需要 Sonnet），再考虑压缩上下文。对应Agent Skill Writing 的渐进式披露原则——系统应该先判断"这个问题需要多少智能"，再分配对应算力。
 
-4. **HITL 人工审核不可省，特别是删除/部署/转账类操作**：第五关的爆炸半径分级是 Harness Engineering 的安全基线。[Agent Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey/) 的 ETCLOVG 7 层框架中"安全层"与此呼应——高爆炸半径操作的 HITL 不是流程繁琐，而是防止不可逆损失的最后防线。
+4. **HITL 人工审核不可省，特别是删除/部署/转账类操作**：第五关的爆炸半径分级是 Harness Engineering 的安全基线。[Agent Harness Engineering Survey 2026](/ch04-069-agent-harness-engineering-a-survey//) 的 ETCLOVG 7 层框架中"安全层"与此呼应——高爆炸半径操作的 HITL 不是流程繁琐，而是防止不可逆损失的最后防线。
 
-5. **三平面分立 + 草稿纸看板是长周期任务的必选项**：[Agent Reliability Context Drift Tool Hallucination](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/) 已记录漂移的危害，而三平面分立提供了结构化解法。叙事对齐平面（锚/账/集）确保目标不漂移，草稿纸看板确保崩溃可恢复。任何计划超过 2 小时的 Agent 任务都应该引入此架构。
+5. **三平面分立 + 草稿纸看板是长周期任务的必选项**：[Agent Reliability Context Drift Tool Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio//) 已记录漂移的危害，而三平面分立提供了结构化解法。叙事对齐平面（锚/账/集）确保目标不漂移，草稿纸看板确保崩溃可恢复。任何计划超过 2 小时的 Agent 任务都应该引入此架构。
 
 ---
 

@@ -68,11 +68,11 @@ x402 已成为代理商务支付协议的事实标准，新项目在评估付费
 ## 参考来源
 
 ## 相关实体
-- [Bedrock Agentcore Payment X402 Agent](../ch11-006-用-amazon-bedrock-agentcore-payment-构建自主支付-ai-agent-x402-协议实战/)
-- [Firecracker Bedrock Agentcore Multi Tenant](../ch11-007-基于-firecracker-microvm-与-bedrock-agentcore-的生产级多租户-ai-agent/)
-- [Claude Code Aws Bedrock Guide](../ch11-062-claude-code-on-aws-bedrock-配置指南/)
-- [Openclaw Amazon Bedrock Eks Printer Qc](../ch11-052-openclaw-amazon-bedrock-amazon-eks-联动实践-打印机包装质检助手实战/)
-- [Netflix Real Time Service Topology](../ch11-009-from-silos-to-service-topology-why-netflix-built-a-real-tim/)
+- [Bedrock Agentcore Payment X402 Agent](/ch11-006-用-amazon-bedrock-agentcore-payment-构建自主支付-ai-agent-x402-协议实战//)
+- [Firecracker Bedrock Agentcore Multi Tenant](/ch11-007-基于-firecracker-microvm-与-bedrock-agentcore-的生产级多租户-ai-agent//)
+- [Claude Code Aws Bedrock Guide](/ch11-062-claude-code-on-aws-bedrock-配置指南//)
+- [Openclaw Amazon Bedrock Eks Printer Qc](/ch11-052-openclaw-amazon-bedrock-amazon-eks-联动实践-打印机包装质检助手实战//)
+- [Netflix Real Time Service Topology](/ch11-009-from-silos-to-service-topology-why-netflix-built-a-real-tim//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcore-payments-x402-agentic-commerce.md)
 

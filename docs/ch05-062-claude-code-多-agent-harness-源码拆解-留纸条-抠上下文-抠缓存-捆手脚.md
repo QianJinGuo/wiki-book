@@ -67,9 +67,9 @@ Prompt Caching 折扣条件：**字节级完全相同**（byte-identical）。
 
 这篇文章是 Harness Engineering 理论的**源码级实证**：
 
-- [Harness Engineering 框架](../ch05-041-harness-engineering-概念框架/) 定义了"模型外面的脚手架"——本文展示了这层脚手架在工业级系统中长什么样
-- [Harness 实践指南 10步](../ch05-054-harness-engineering-实践指南-10-步路线图-8-失败模式-设计-checklist-系) 的 Step 3（上下文管理）和 Step 10（并行多 agent）在本文有源码级对照
-- [Claude Code Dynamic Workflows](../ch04-409-agent-orchestration) 侧重编排模式和实战场景，本文侧重底层通信/隔离/缓存/并行机制——**互补不重复**
+- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架//) 定义了"模型外面的脚手架"——本文展示了这层脚手架在工业级系统中长什么样
+- [Harness 实践指南 10步](/ch05-054-harness-engineering-实践指南-10-步路线图-8-失败模式-设计-checklist-系/) 的 Step 3（上下文管理）和 Step 10（并行多 agent）在本文有源码级对照
+- [Claude Code Dynamic Workflows](/ch04-409-agent-orchestration/) 侧重编排模式和实战场景，本文侧重底层通信/隔离/缓存/并行机制——**互补不重复**
 
 ## 关键洞察
 
@@ -78,12 +78,12 @@ Prompt Caching 折扣条件：**字节级完全相同**（byte-identical）。
 这是 Harness Engineering 的核心命题：**决定 AI 系统行不行的，不是里面那个模型，是外面这层 harness**。
 
 ## 相关实体
-- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/)
-- [Harness Engineering 10 Step Practical Guide 2026](../ch05-054-harness-engineering-实践指南-10-步路线图-8-失败模式-设计-checklist-系)
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch04-409-agent-orchestration)
-- [Long Running Agent Ralph Loop Harness Takeover](../ch01-808-长周期-agent-详解-从-ralph-loop-到可接管-harness)
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//)
+- [Harness Engineering 10 Step Practical Guide 2026](/ch05-054-harness-engineering-实践指南-10-步路线图-8-失败模式-设计-checklist-系/)
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](/ch04-409-agent-orchestration/)
+- [Long Running Agent Ralph Loop Harness Takeover](/ch01-808-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
 - Gufabiancheng Spec For Complex Tasks Cc Codex
-- [Production Harness 12 Components Framework Comparison](../ch05-033-生产级-harness-的-12-大组件以及主流框架对比)
+- [Production Harness 12 Components Framework Comparison](/ch05-033-生产级-harness-的-12-大组件以及主流框架对比/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-multi-agent-harness-source-analysis.md)
 

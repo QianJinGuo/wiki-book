@@ -8,14 +8,14 @@
 
 ## 相关实体
 
-- [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](../ch01-742-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度)
-- [dynamically splitting wide partitions in cassandra for time](../ch11-025-dynamically-splitting-wide-partitions-in-cassandra-for-time)
-- [interconnects ai p open and closed models are on different](../ch01-527-open-and-closed-models-are-on-different-exponentials)
-- [reducing container cold start times using soci index on dlam](../ch01-823-reducing-container-cold-start-times-using-soci-index-on-dlam)
-- [state of routing in model serving](../ch01-838-state-of-routing-in-model-serving)
-- [the distillation panic](../ch01-486-the-distillation-panic)
+- [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](/ch01-742-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度/)
+- [dynamically splitting wide partitions in cassandra for time](/ch11-025-dynamically-splitting-wide-partitions-in-cassandra-for-time/)
+- [interconnects ai p open and closed models are on different](/ch01-527-open-and-closed-models-are-on-different-exponentials/)
+- [reducing container cold start times using soci index on dlam](/ch01-823-reducing-container-cold-start-times-using-soci-index-on-dlam/)
+- [state of routing in model serving](/ch01-838-state-of-routing-in-model-serving/)
+- [the distillation panic](/ch01-486-the-distillation-panic/)
 - sft, rl, and on-policy distillation through a distributional
-- [直播预约 | 数据引擎：具身智能的下一个决胜局](../ch01-676-直播预约-数据引擎-具身智能的下一个决胜局)
+- [直播预约 | 数据引擎：具身智能的下一个决胜局](/ch01-676-直播预约-数据引擎-具身智能的下一个决胜局/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
 
 - MOC
@@ -42,12 +42,12 @@ This Artifacts Log post is unusual in how many diverse, quirky models there are 
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
 - Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch04-199-openclaw-完全指南/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

@@ -88,18 +88,18 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 **关系**：Harness Engineering 回答"如何构建可靠的 AI 系统"，AI Skill 测评体系回答"如何验证 AI 系统的输出质量"。两者是"控制系统"与"验证手段"的关系。
 
 ## 深度分析
-1. **Harness 是 AI 可靠性的决定性因素** — 原文提出 `Agent = Model + Harness`，Model 决定 AI 有多聪明，Harness 决定 AI 有多可靠。这与 Martin Fowler 的"非确定性引入研发链路"观点形成呼应：Harness 才是真正承重的部分。 → 见 [Martin Fowler AI 研发提醒](../ch05-040-martin-fowler-的-ai-研发提醒-非确定性进了研发链路-harness-才真正开始承重/)
+1. **Harness 是 AI 可靠性的决定性因素** — 原文提出 `Agent = Model + Harness`，Model 决定 AI 有多聪明，Harness 决定 AI 有多可靠。这与 Martin Fowler 的"非确定性引入研发链路"观点形成呼应：Harness 才是真正承重的部分。 → 见 [Martin Fowler AI 研发提醒](/ch05-040-martin-fowler-的-ai-研发提醒-非确定性进了研发链路-harness-才真正开始承重//)
 2. **六层架构的信息层核心洞察：上下文窗口不是数据库** — LLM 的上下文窗口天然会"忘记"，必须通过外部状态管理（短期用 Context 直接注入、长期用 Pinecone/pgvector 向量库、情节记忆用 Redis/DynamoDB、过程记录用 PostgreSQL）来补足。 → 见 AI Agent 记忆系统
-3. **MCP（Model Context Protocol）是动态知识实时注入的关键基础设施** — 静态知识通过 Git+向量库版本控制，动态知识通过 MCP 实时注入，这是信息层区分"慢知识"与"快知识"的核心能力。 → 见 [Anthropic MCP 设计模式](../ch04-058-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式/)
-4. **"用错误喂养规则库"是 Harness 最核心的运营哲学** — AI 每次犯错不仅仅修正这一次输出，而是转化为规则/测试/约束更新约束库，形成"AI 永不再犯、系统自我进化"的正循环。这使得 Harness 与 Fine-tuning 相比具有可解释性和迭代速度优势。 → 见 [Agent 自我改进六机制](../ch04-047-agent-自我改进的六条路/)
-5. **七大反模式揭示了 Harness 工程中的高频失败路径** — 层级混淆（把 Harness 逻辑写进 Prompt）、过早自治（跳过验证回路）、无状态设计（每次对话重新开始）、忽视熵管理（Agent 无限制产生副作用）都是实践中极易犯的错误。 → 见 [Harness Engineering 系统化框架](../ch05-049-harness-engineering-系统梳理/)
+3. **MCP（Model Context Protocol）是动态知识实时注入的关键基础设施** — 静态知识通过 Git+向量库版本控制，动态知识通过 MCP 实时注入，这是信息层区分"慢知识"与"快知识"的核心能力。 → 见 [Anthropic MCP 设计模式](/ch04-058-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式//)
+4. **"用错误喂养规则库"是 Harness 最核心的运营哲学** — AI 每次犯错不仅仅修正这一次输出，而是转化为规则/测试/约束更新约束库，形成"AI 永不再犯、系统自我进化"的正循环。这使得 Harness 与 Fine-tuning 相比具有可解释性和迭代速度优势。 → 见 [Agent 自我改进六机制](/ch04-047-agent-自我改进的六条路//)
+5. **七大反模式揭示了 Harness 工程中的高频失败路径** — 层级混淆（把 Harness 逻辑写进 Prompt）、过早自治（跳过验证回路）、无状态设计（每次对话重新开始）、忽视熵管理（Agent 无限制产生副作用）都是实践中极易犯的错误。 → 见 [Harness Engineering 系统化框架](/ch05-049-harness-engineering-系统梳理//)
 
 ## 实践启示
-1. **从最小可行 Harness（MVH）起步，先跑通反馈闭环** — 按"定义边界（harness_config.yaml）→ 建立验证回路 → 设计错误捕获管道"三步走，用 YAML 声明式管理约束而非硬编码，快速验证核心假设后再逐步叠加复杂度。 → 见 [Agent Harness 12 组件 7 决策](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)
+1. **从最小可行 Harness（MVH）起步，先跑通反馈闭环** — 按"定义边界（harness_config.yaml）→ 建立验证回路 → 设计错误捕获管道"三步走，用 YAML 声明式管理约束而非硬编码，快速验证核心假设后再逐步叠加复杂度。 → 见 [Agent Harness 12 组件 7 决策](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架//)
 2. **高风险场景（运维/金融/医疗）必须部署完整六层并加人工审核节点** — 不能心存侥幸。自动化运维 Agent 需额外配备回滚机制和变更审计日志，确保任何 destructive 操作都有可逆路径。
 3. **建立"错误→规则"的自动化管道，把每次失败变成系统进化机会** — AI 犯错后，不仅修正这一次的输出，还要把这次错误转化为一条规则/测试/约束，更新到约束库。让错误数据成为 Harness 迭代的核心燃料。
 4. **约束库内容缓存可节省 10-20% Token** — 约束库变化不频繁，缓存为系统提示前缀，避免每次推理都重新注入完整约束定义。按风险分级调用：低风险读/查询用轻量 Harness，高风险写/执行用完整 Harness。
-5. **用 Trace 监控熵增速度，在失控前主动干预** — 追踪 Agent 状态大小变化趋势，通过 LangSmith/Arize Phoenix 等工具建立熵增预警阈值。当系统熵增速度超过阈值时触发人工复核，防止副作用无限累积。 → 见 [多 Agent 深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统/)
+5. **用 Trace 监控熵增速度，在失控前主动干预** — 追踪 Agent 状态大小变化趋势，通过 LangSmith/Arize Phoenix 等工具建立熵增预警阈值。当系统熵增速度超过阈值时触发人工复核，防止副作用无限累积。 → 见 [多 Agent 深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统//)
 
 ## Harness Engineering 的未来演进
 
@@ -137,19 +137,19 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 > "不是教模型怎么做，而是决定模型为谁做、做什么、做到什么程度就该停。"
 
 ## 相关实体
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Harness Engineering 四根支柱与四要素架构](../ch05-077-harness-engineering-四根支柱与四要素架构/)
-- [Harness Engineering 指南（字节跳动TRAE）](../ch01-520-来自字节跳动trae的harness-engineering指南/)
-- [清华大学 Harness Engineering 研究报告](../ch05-060-清华大学-驾驭工程-harness-engineering-研究报告/)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](/ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务//)
+- [Harness Engineering 四根支柱与四要素架构](/ch05-077-harness-engineering-四根支柱与四要素架构//)
+- [Harness Engineering 指南（字节跳动TRAE）](/ch01-520-来自字节跳动trae的harness-engineering指南//)
+- [清华大学 Harness Engineering 研究报告](/ch05-060-清华大学-驾驭工程-harness-engineering-研究报告//)
 - Hermes Agent 深度解析（阿里云/飞樰）
-- [harness-engineering-systematic-explainer](../ch05-036-harness-engineering-systematic-explainer/)
-- [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice/)
-- [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图/)
+- [harness-engineering-systematic-explainer](/ch05-036-harness-engineering-systematic-explainer//)
+- [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice//)
+- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图//)
 
 - Harness Component Expiry Evidence
 - Harness Component Expiry Build To Delete
-- [Harness Engineering Theory To Practice Helen](../ch05-076-harness-engineering-从理论到实战-行为正确性死结-上下文腐烂-可驾驭性-ashby-定律/)
-- [Evaluating Netflix Show Synopses With Llm As A Judge](../ch01-249-evaluating-netflix-show-synopses-with-llm-as-a-judge/)
+- [Harness Engineering Theory To Practice Helen](/ch05-076-harness-engineering-从理论到实战-行为正确性死结-上下文腐烂-可驾驭性-ashby-定律//)
+- [Evaluating Netflix Show Synopses With Llm As A Judge](/ch01-249-evaluating-netflix-show-synopses-with-llm-as-a-judge//)
 - MOC
 - MOC
 - MOC

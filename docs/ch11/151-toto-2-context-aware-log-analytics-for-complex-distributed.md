@@ -52,11 +52,11 @@ Toto 2.0包含连续分块掩码（CPM）优化，允许模型在一次并行传
 2. **多模态是下一个前沿**：时间序列+文本的多模态研究已有不少，但可观测性的真正需求是时间序列+跟踪+日志+拓扑+代码变更+事件+警报的融合。ARFBench代表了评估这一方向的第一步 。
 3. **指标作为一种独特模态**：Datadog指标不是普通时间序列，而是具有独特属性的独特数据模态。不同指标类型、复杂季节性、复杂多变量结构都是需要专门建模的挑战 。
 ## 相关实体
-- [Nvidia Agentic Systems Extreme Co Design](../ch04-514-building-for-the-rising-complexity-of-agentic-systems-with-e/)
-- [Gemma 4 Qat Models Optimizing Compression](../ch01-401-gemma-4-qat-models-quantization-aware-training-for-mobile-a/)
-- [Datadog Pathfinding Labs Security](../ch11-075-pathfinding-labs-deploy-test-and-learn-from-100-intentio/)
-- [Task Queue Priority And Fairness](../ch11-184-task-queue-priority-and-fairness-your-task-queue-your-way/)
-- [Task Queue Priority And Fairness Your Task Queue Your Way](../ch11-161-task-queue-priority-and-fairness-your-task-queue-your-way/)
+- [Nvidia Agentic Systems Extreme Co Design](/ch04-514-building-for-the-rising-complexity-of-agentic-systems-with-e//)
+- [Gemma 4 Qat Models Optimizing Compression](/ch01-401-gemma-4-qat-models-quantization-aware-training-for-mobile-a//)
+- [Datadog Pathfinding Labs Security](/ch11-075-pathfinding-labs-deploy-test-and-learn-from-100-intentio//)
+- [Task Queue Priority And Fairness](/ch11-184-task-queue-priority-and-fairness-your-task-queue-your-way//)
+- [Task Queue Priority And Fairness Your Task Queue Your Way](/ch11-161-task-queue-priority-and-fairness-your-task-queue-your-way//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/toto-2-context-aware-log-analytics-for-complex-distributed-systems.md)
 

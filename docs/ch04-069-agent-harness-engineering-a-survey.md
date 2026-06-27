@@ -76,11 +76,11 @@ survey 指出一个值得注意的产业演化趋势：从 agent frameworks 到 
 **对于平台工程师**：以 cost-quality-speed trilemma 和 capability-control tradeoff 为核心度量维度设计系统。避免针对单一指标（如单纯降低 latency 或单纯提升 quality）的局部优化——harness 变更必须作为系统级变更进行测试。同时，在设计 pipeline 时预留 observability 和 governance 的接入点，而非事后补救。
 **对于评估和验证团队**：Verification & evaluation 当前在开源生态中已有 21 个主要项目，覆盖相对完整。但关键缺口在于 trace-native failure diagnosis——现有的评估方案多依赖事后 log 分析而非实时轨迹质量判断。建议投入资源建立以 trace 为核心对象的 evaluation 基础设施。
 ## 相关实体
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
-- [Harness Engineering Alibaba Java Case Study](../ch05-008-阿里工程师-harness-工程化实践-双案例合并)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
-- [Harness Engineering Systematic Framework](../ch05-049-harness-engineering-系统梳理)
-- [Agentscope Java Harness Framework](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](/ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
+- [Harness Engineering Alibaba Java Case Study](/ch05-008-阿里工程师-harness-工程化实践-双案例合并/)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
+- [Harness Engineering Systematic Framework](/ch05-049-harness-engineering-系统梳理/)
+- [Agentscope Java Harness Framework](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-engineering-survey-2026.md)
 

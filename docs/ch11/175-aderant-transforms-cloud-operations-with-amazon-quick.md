@@ -36,7 +36,7 @@ Aderant 没有一次性全量上线，而是三阶段推进：2025 年 10 月 Cl
 
 ## 关联阅读
 → Amazon Quick: 从企业数据到 AI 决策的加速路径 — Quick 平台整体能力介绍与定位
-→ [Confluence + Amazon Quick 集成](../ch11-039-integrate-atlassian-confluence-cloud-with-amazon-quick/) — MCP 风格连接器在知识管理场景的具体配置
+→ [Confluence + Amazon Quick 集成](/ch11-039-integrate-atlassian-confluence-cloud-with-amazon-quick//) — MCP 风格连接器在知识管理场景的具体配置
 
 ---
 

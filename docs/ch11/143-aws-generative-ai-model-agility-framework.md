@@ -15,7 +15,7 @@ AWS Generative AI Model Agility Solution提供6步框架：评估→选择→迁
 ### 3. 迁移不是一次性事件
 模型迁移是持续过程（模型每年大版本更新），框架设计为可重复运行，每次模型升级都可复用同一套评估-迁移-监控流程。
 ## 与知识库的连接
-- → [Vayne-LW](../ch01-597-你缺的不是更好的-ai-而是一个-装自己-的系统/)：个人Agent需要模型路由能力来选择最优性价比模型
+- → [Vayne-LW](/ch01-597-你缺的不是更好的-ai-而是一个-装自己-的系统//)：个人Agent需要模型路由能力来选择最优性价比模型
 ---
 ## 深度分析
 ### 框架的系统性价值
@@ -44,12 +44,12 @@ AWS Generative AI Model Agility Solution提供6步框架：评估→选择→迁
 ---
 *Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-generative-ai-model-agility-framework.md)*
 ## 相关实体
-- [MLflow v3.10：生成式AI开发新特性](../ch11-038-aws-mlflow-v310-generative-ai-development/)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级/)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客/)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
-- [Building Blocks for Foundation Model Training and Inference on AWS](../ch11-117-building-blocks-for-foundation-model-training-and-inference/)
-- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](../ch11-071-让-ai-理解你的组件库-新一代智能-d2c架构-基于-aws-kiro-mcp-skills-的智能转换实践/)
+- [MLflow v3.10：生成式AI开发新特性](/ch11-038-aws-mlflow-v310-generative-ai-development//)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](/ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级//)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](/ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客//)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双//)
+- [Building Blocks for Foundation Model Training and Inference on AWS](/ch11-117-building-blocks-for-foundation-model-training-and-inference//)
+- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](/ch11-071-让-ai-理解你的组件库-新一代智能-d2c架构-基于-aws-kiro-mcp-skills-的智能转换实践//)
 
 ---
 

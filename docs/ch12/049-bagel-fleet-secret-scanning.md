@@ -98,8 +98,8 @@
 
 ## 关联主题
 
-- [Bedrock Agentcore Secrets Manager Identity](../ch11-225-reference-your-own-aws-secrets-manager-secrets-in-amazon-bed/) — AWS Bedrock AgentCore 的 secret 管理视角（云端 secret 而非本地泄漏）
-- [Trail Of Bits Skill Scanner Bypass Distribution](../ch01-175-trail-of-bits-skill-scanner-bypass-实证研究/) — Trail of Bits 的 Skill scanner 工具，AI 编程安全的另一个维度
+- [Bedrock Agentcore Secrets Manager Identity](/ch11-225-reference-your-own-aws-secrets-manager-secrets-in-amazon-bed//) — AWS Bedrock AgentCore 的 secret 管理视角（云端 secret 而非本地泄漏）
+- [Trail Of Bits Skill Scanner Bypass Distribution](/ch01-175-trail-of-bits-skill-scanner-bypass-实证研究//) — Trail of Bits 的 Skill scanner 工具，AI 编程安全的另一个维度
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/recyclebin-zip-secret-scanning-fleet-bagel-2026.md)
 
 ## 相关实体

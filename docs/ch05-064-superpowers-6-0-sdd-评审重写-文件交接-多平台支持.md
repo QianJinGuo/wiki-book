@@ -8,7 +8,7 @@
 
 Superpowers 6.0（2026-06-16 发布，06-18 v6.0.3 修补）的核心主线不是新增平台或补安全策略，而是**重新设计了 AI Agent 软件工程中最贵、最容易跑偏的流程：任务后的代码评审**。
 
-与 [术哥的反作弊视角](../ch05-084-superpowers-6-0-反作弊重写-reviewer-只读怀疑论者-上下文经济学-progress-le) 互补——术哥聚焦 reviewer 隔离堵作弊路径，本文聚焦文件交接降低上下文成本 + 多平台 harness 映射。
+与 [术哥的反作弊视角](/ch05-084-superpowers-6-0-反作弊重写-reviewer-只读怀疑论者-上下文经济学-progress-le/) 互补——术哥聚焦 reviewer 隔离堵作弊路径，本文聚焦文件交接降低上下文成本 + 多平台 harness 映射。
 
 ## SDD 评审重写
 
@@ -95,9 +95,9 @@ server.cjs 增加的安全措施：
 
 ## 相关链接
 
-- → [术哥反作弊视角分析](../ch05-084-superpowers-6-0-反作弊重写-reviewer-只读怀疑论者-上下文经济学-progress-le) — 互补视角
-- → [三器合一工程化实战](../ch05-019-ai-production-development-workflow-openspec-superpowers-gsta) — Superpowers + OpenSpec + gstack 串联
-- → [Superpowers 工作流入门](../ch01-775-给-claude-code-装上-超能力-它干活比我还靠谱)
+- → [术哥反作弊视角分析](/ch05-084-superpowers-6-0-反作弊重写-reviewer-只读怀疑论者-上下文经济学-progress-le/) — 互补视角
+- → [三器合一工程化实战](/ch05-019-ai-production-development-workflow-openspec-superpowers-gsta/) — Superpowers + OpenSpec + gstack 串联
+- → [Superpowers 工作流入门](/ch01-775-给-claude-code-装上-超能力-它干活比我还靠谱/)
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/superpowers-6-sdd-review-redesign-file-handoff.md)
 
 ---

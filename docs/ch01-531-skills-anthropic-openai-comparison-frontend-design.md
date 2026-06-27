@@ -12,11 +12,11 @@
 Skill 的核心思路是**把提示词从对话框搬到文件系统**：一个文件夹，一个 SKILL.md，可以附带参考文档和脚本。搬到文件系统之后，它就可以被版本控制、被 PR review、被跨项目复用。
 
 ## 相关实体
-- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](../ch01-677-anthropic)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch01-677-anthropic)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](../ch01-677-anthropic)
-- [Anthropic Google Agent Skills Design Patterns](../ch01-677-anthropic)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch01-677-anthropic)
+- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](/ch01-677-anthropic/)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](/ch01-677-anthropic/)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](/ch01-677-anthropic/)
+- [Anthropic Google Agent Skills Design Patterns](/ch01-677-anthropic/)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](/ch01-677-anthropic/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skills-anthropic-openai-comparison-frontend-design.md)
 

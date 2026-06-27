@@ -327,10 +327,10 @@ Pilot 平台的 OTel 标准化输出意味着企业可以将 Coding Agent 的执
 
 ## 相关实体
 - 阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地
-- [Alibabacloud Cms Manage Skill Natural Language Observability](../ch11-016-alibabacloud-cms-manage-skill-阿里云-cms-2-0-可观测接入的-ai-agent-sk/)
-- [Baidu Comate Coding Agent Feedback Loop Wanpeng](../ch09-042-coding-agent在百度的落地实践-从反馈闭环到工程范式重构/)
-- [Harness Engineering Reliable Long Term Agent](../ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Anthropic Coding Agents Social Science Survey 2026](../ch09-037-anthropic-coding-agent-社会科学家采用调查/)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](/ch11-016-alibabacloud-cms-manage-skill-阿里云-cms-2-0-可观测接入的-ai-agent-sk//)
+- [Baidu Comate Coding Agent Feedback Loop Wanpeng](/ch09-042-coding-agent在百度的落地实践-从反馈闭环到工程范式重构//)
+- [Harness Engineering Reliable Long Term Agent](/ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务//)
+- [Anthropic Coding Agents Social Science Survey 2026](/ch09-037-anthropic-coding-agent-社会科学家采用调查//)
 
 → [第 1 来源原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md)
 ---

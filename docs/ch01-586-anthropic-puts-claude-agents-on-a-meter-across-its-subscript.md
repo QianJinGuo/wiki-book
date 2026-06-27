@@ -23,21 +23,21 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-claude-agents-meter-infoworld.md)
 
 ## 相关实体
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践)
-- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](../ch01-677-anthropic)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01-677-anthropic)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
+- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](/ch01-677-anthropic/)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](/ch01-677-anthropic/)
 > ai agent platforms topic map（已删除）
 
-- [Claude Managed Agents 开发者指南](../ch04-421-claude-managed-agents)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch01-677-anthropic)
-- [Introducing Claude for Small Business](../ch01-030-introducing-claude-for-small-business)
-- [Introducing Claude for Small Business](../ch01-030-introducing-claude-for-small-business)
-- [Xero Announces Integration with Anthropic's Claude](../ch01-677-anthropic)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](../ch01-677-anthropic)
-- [Anthropic Claude Managed Agents 平台正式发布](../ch01-677-anthropic)
-- [Claude Managed Agents 官方 Harness 平台指南](../ch01-677-anthropic)
-- [Anthropic Computer Use 最佳实践](../ch01-677-anthropic)
+- [Claude Managed Agents 开发者指南](/ch04-421-claude-managed-agents/)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](/ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南/)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](/ch01-677-anthropic/)
+- [Introducing Claude for Small Business](/ch01-030-introducing-claude-for-small-business/)
+- [Introducing Claude for Small Business](/ch01-030-introducing-claude-for-small-business/)
+- [Xero Announces Integration with Anthropic's Claude](/ch01-677-anthropic/)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](/ch01-677-anthropic/)
+- [Anthropic Claude Managed Agents 平台正式发布](/ch01-677-anthropic/)
+- [Claude Managed Agents 官方 Harness 平台指南](/ch01-677-anthropic/)
+- [Anthropic Computer Use 最佳实践](/ch01-677-anthropic/)
 
 ## 深度分析
 **从 Token 计费到 Agent-Aware 计费的范式转变**

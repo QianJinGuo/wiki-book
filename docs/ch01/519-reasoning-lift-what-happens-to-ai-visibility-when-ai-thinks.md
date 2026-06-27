@@ -11,11 +11,11 @@
 - 不同 reasoning 模式下引用的域名重叠仅 25.6%，几乎完全不同
 - TOFU 内容在 reasoning 模式下具有新的战略价值：品牌可持续从 Problem 阶段延续到 Selection 阶段
 ## 相关实体
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](../ch01-006-what-happens-in-the-log-when-an-app-crashes-as-it-starts-up/)
-- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
-- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](../ch03-092-when-growth-slows-is-it-sales-fault-or-the-product-s-fault/)
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch09-066-tmall-ai-coding-practice-team-knowledge-base/)
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](/ch01-006-what-happens-in-the-log-when-an-app-crashes-as-it-starts-up//)
+- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack//)
+- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us//)
+- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](/ch03-092-when-growth-slows-is-it-sales-fault-or-the-product-s-fault//)
+- [Tmall Ai Coding Practice Team Knowledge Base](/ch09-066-tmall-ai-coding-practice-team-knowledge-base//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/reasoning-lift.md)
 

@@ -107,7 +107,7 @@
 | 互补 | 偏「选哪种」 | 偏「怎么写好」 |
 | 重叠 | 循环迭代 ↔ 自纠正循环（类似） | 渐进式披露两者都有 |
 最佳实践：用社区模式的**决策树**选型，用 Anthropic 模式的**编写原则**指导具体实现。
-→ [返回总览](../ch07-002-skill-设计模式)
+→ [返回总览](/ch07-002-skill-设计模式/)
 
 ## 深度分析
 ### 系统性视角：5 类模式的内在逻辑
@@ -190,12 +190,12 @@ Anthropic 强调 description 是「最关键的信号」，实践中最有效的
 | 调试/修复已有技能 | 模式 6（解释 Why）+ ALL CAPS 扫描 |
 
 ## 相关实体
-- [Anthropic 14 个 Agent Skills 设计模式](../ch01-677-anthropic)
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch01-677-anthropic)
+- [Anthropic 14 个 Agent Skills 设计模式](/ch01-677-anthropic/)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](/ch01-677-anthropic/)
 
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01-531-skills-anthropic-openai-comparison-frontend-design)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](/ch01-531-skills-anthropic-openai-comparison-frontend-design/)
 - Claude Design 系统提示词 → web-design-engineer Skill
-- [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](../ch01-677-anthropic)
+- [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](/ch01-677-anthropic/)
 
 ---
 

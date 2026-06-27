@@ -169,11 +169,11 @@ Opus 4.7在安全方面"与4.6大致持平"，但在"受控物质的伤害减少
 4. **长期成本监控**：Token消耗的增加可能不会立即显现，建议建立细粒度的Token使用监控机制，及时发现异常消耗。
 5. **并行Claude实例的工作流**：Boris Cherny提到的"并行运行多个Claude实例"模式值得探索，特别是对于需要批量处理代码审查或重构任务的团队。
 ## 相关实体
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
-- [Anthropic Prompt Caching Claude Code Agihunt](../ch01-186-anthropic-最新博客-prompt-caching-是构建-claude-code-的一切/)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
-- [Claude Code Founder Harness 100 Lines](../ch01-487-最新claude-code创始人-编程已经解决了-harness重要性持续降低-cc未来只有100行代码/)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践//)
+- [Anthropic Prompt Caching Claude Code Agihunt](/ch01-186-anthropic-最新博客-prompt-caching-是构建-claude-code-的一切//)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南//)
+- [Claude Code Founder Harness 100 Lines](/ch01-487-最新claude-code创始人-编程已经解决了-harness重要性持续降低-cc未来只有100行代码//)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/opus-4-7-launch-claude-code-best-practices-wechat.md)
 

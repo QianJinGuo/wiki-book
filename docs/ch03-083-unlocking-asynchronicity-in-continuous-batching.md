@@ -12,9 +12,9 @@
 ## 相关实体
 > 主题导航
 
-- [Development environments for your cloud agents](../ch04-342-cloud-agent-development-environments-cursor-云端-agent-开发环境)
-- [AI Infra 系统性拆解：传统后台工程师视角](../ch01-285-tencent-ai-infra-backend-engineer-s-guide-to-ai-system-hard)
-- [ml-intern — Hugging Face 自主 ML 工程代理](../ch04-417-ml-intern-huggingface-autonomous-ml-agent)
+- [Development environments for your cloud agents](/ch04-342-cloud-agent-development-environments-cursor-云端-agent-开发环境/)
+- [AI Infra 系统性拆解：传统后台工程师视角](/ch01-285-tencent-ai-infra-backend-engineer-s-guide-to-ai-system-hard/)
+- [ml-intern — Hugging Face 自主 ML 工程代理](/ch04-417-ml-intern-huggingface-autonomous-ml-agent/)
 
 - MOC
 ## 深度分析

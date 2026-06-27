@@ -138,26 +138,26 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 - `Agent Skill Writing Evaluation` — Skill 评测相关
 
 ## 相关实体
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准/)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
-- [SkillX — 层次化技能知识库](../ch07-042-skillx-层次化技能知识库/)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04-239-anthropic-14-个-agent-skills-设计模式/)
-- [AI Skill 测评指标体系](../ch01-383-ai-skill-测评指标体系/)
-- [SkillClaw](../ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化/)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](/ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准//)
+- [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning//)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布//)
+- [SkillX — 层次化技能知识库](/ch07-042-skillx-层次化技能知识库//)
+- [Anthropic 14 个 Agent Skills 设计模式](/ch04-239-anthropic-14-个-agent-skills-设计模式//)
+- [AI Skill 测评指标体系](/ch01-383-ai-skill-测评指标体系//)
+- [SkillClaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化//)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力//)
 - Skills赏析：使用skills-refiner提升skill质量
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills/)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](/ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills//)
 
-- [Hermes Agent](../ch04-418-hermes-agent/)
-- [Qoder Skills 完全指南](../ch07-029-qoder-skills-完全指南/)
-- [AgentEval：YAML驱动的Agent评测框架](../ch04-141-agenteval-yaml驱动的agent评测框架/)
-- [你写的 Skill，及格了吗？](../ch07-046-你写的-skill-及格了吗/)
+- [Hermes Agent](/ch04-418-hermes-agent//)
+- [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南//)
+- [AgentEval：YAML驱动的Agent评测框架](/ch04-141-agenteval-yaml驱动的agent评测框架//)
+- [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗//)
 - Hermes Agent Skill
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 
-- [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice/)
+- [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice//)
 
 ---
 

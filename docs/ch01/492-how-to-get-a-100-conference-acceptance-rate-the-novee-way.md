@@ -64,11 +64,11 @@ An organizer searches. The dropdown renders the title. The iframe loads silently
 _De
 
 ## 相关实体
-- [Tomtunguz Com Software After Ai](../ch01-579-software-after-ai/)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch01-521-business-intelligence-at-scale-key-obstacles/)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch01-236-亚马逊aws官方博客-https-aws-amazon-com-cn-blogs-china/)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch01-532-solution-overview/)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch01-295-一-关于-kollab/)
+- [Tomtunguz Com Software After Ai](/ch01-579-software-after-ai//)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](/ch01-521-business-intelligence-at-scale-key-obstacles//)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](/ch01-236-亚马逊aws官方博客-https-aws-amazon-com-cn-blogs-china//)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](/ch01-532-solution-overview//)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](/ch01-295-一-关于-kollab//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
 

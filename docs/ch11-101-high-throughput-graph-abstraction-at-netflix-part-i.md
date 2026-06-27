@@ -72,11 +72,11 @@ Netflix 内部 1,500+ 微服务每日产生海量 ops 事件（service → servi
 Part II 将介绍 query engine、impact analysis 算法、client libraries。
 
 ## 相关实体
-- [High Throughput Graph Abstraction At Netflix Part I](../ch11-101-high-throughput-graph-abstraction-at-netflix-part-i)
-- [Netflix Druid Interval Aware Caching](../ch11-091-netflix-druid-区间感知缓存-指数-ttl-分桶查询去重)
-- [Netflix Metadata Service Model Lifecycle Graph](../ch11-034-netflix-metadata-service-and-model-lifecycle-graph)
-- [Netflix Live Operations Human Infrastructure](../ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构)
-- [Plaid Effects](../ch03-110-plaid-s-effects-on-the-financial-ecosystem)
+- [High Throughput Graph Abstraction At Netflix Part I](/ch11-101-high-throughput-graph-abstraction-at-netflix-part-i/)
+- [Netflix Druid Interval Aware Caching](/ch11-091-netflix-druid-区间感知缓存-指数-ttl-分桶查询去重/)
+- [Netflix Metadata Service Model Lifecycle Graph](/ch11-034-netflix-metadata-service-and-model-lifecycle-graph/)
+- [Netflix Live Operations Human Infrastructure](/ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构/)
+- [Plaid Effects](/ch03-110-plaid-s-effects-on-the-financial-ecosystem/)
 
 - MOC
 ## 相关主题

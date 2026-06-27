@@ -132,8 +132,8 @@ Bose 公开表态:
 
 ## 与现有 wiki 实体的关联
 
-- 与 **[claude-code-large-codebase-harness-configuration](../ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对/)** 的关系:Command by Asana 试图用 workflow 框架而非 coding agent 实现「人+代理协作」,与 Claude Code 在 coding 场景的 agentic 思路形成对比(work-graph orchestration vs direct coding agent)
-- 与 **[harness-engineering-framework](../ch05-041-harness-engineering-概念框架/)** 的关系:Asana 的「multiplayer interaction model + shared memory + audit trail」是 enterprise work graph 层的人类-代理协作 OS 案例(对比 Claude Code 是 coding 场景的 agent harness)
+- 与 **[claude-code-large-codebase-harness-configuration](/ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对//)** 的关系:Command by Asana 试图用 workflow 框架而非 coding agent 实现「人+代理协作」,与 Claude Code 在 coding 场景的 agentic 思路形成对比(work-graph orchestration vs direct coding agent)
+- 与 **[harness-engineering-framework](/ch05-041-harness-engineering-概念框架//)** 的关系:Asana 的「multiplayer interaction model + shared memory + audit trail」是 enterprise work graph 层的人类-代理协作 OS 案例(对比 Claude Code 是 coding 场景的 agent harness)
 - 引用 [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/asana-agentic-work-management-platform-lettertwo.md) 作为唯一 source,做 enterprise agentic work platform 的产品定位基线
 
 ## 深度分析
@@ -146,7 +146,7 @@ Bose 公开表态:
 
 4. **"displace 现有 ticketing 产品"的公开宣言是 SaaSpocalypse 生存逻辑的体现** — 在市值腰斩的背景下,Asana 不再满足于"补充"IT 票务工具,而是明确表示要 displace ServiceNow/Atlassian/ Salesforce Agentforce。这是防御性进攻:在一个被压迫的市场里,仅做"更好的项目管理工具"不够活下来,必须切入更大(且已有成熟玩家)的 ITSM 市场。$75M 收购 StackAI + 三个垂直应用 + displace 宣言,构成了一套连贯的生存策略。
 
-5. **Command by Asana 的"上层编排"定位避开了与 coding agent 的正面竞争** — Asana 明确不做 coding agent/CLI,而是做"整个开发生命周期的 orchestration layer"。这类似于平台玩家建 marketplace 而不是应用——Asana 承认自己在代码生成层面的相对弱势,选择在更靠近管理决策层的环节建立控制点。这一定位与 [harness-engineering-framework](../ch05-041-harness-engineering-概念框架/) 的思路形成有趣对比:harness 偏向 coding 场景的直接代理控制,而 Asana 选择在工作流层做编排整合。
+5. **Command by Asana 的"上层编排"定位避开了与 coding agent 的正面竞争** — Asana 明确不做 coding agent/CLI,而是做"整个开发生命周期的 orchestration layer"。这类似于平台玩家建 marketplace 而不是应用——Asana 承认自己在代码生成层面的相对弱势,选择在更靠近管理决策层的环节建立控制点。这一定位与 [harness-engineering-framework](/ch05-041-harness-engineering-概念框架//) 的思路形成有趣对比:harness 偏向 coding 场景的直接代理控制,而 Asana 选择在工作流层做编排整合。
 
 ## 实践启示
 

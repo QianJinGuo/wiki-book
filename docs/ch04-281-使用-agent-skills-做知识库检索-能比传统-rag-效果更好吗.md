@@ -46,21 +46,21 @@ Anthropic Skills 的渐进式加载策略在此场景中展现了独特的优势
 - rag-skill 开源实现：https://github.com/ConardLi/rag-skill/
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01-302-llm-as-a-verifier-a-general-purpose-verification-framework)
-- [你不知道的 Agent：原理、架构与工程实践](../ch01-505-你不知道的-agent-原理-架构与工程实践)
-- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch01-407-告别-氛围编程-基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04-003-agentrun)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch01-453-rag深度解析-分块-向量化-召回-重排-才是-蒸馏同事skill-的关键)
-- [别再把上下文当聊天记录](../ch01-456-别再把上下文当聊天记录)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch03-012-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](/ch01-302-llm-as-a-verifier-a-general-purpose-verification-framework/)
+- [你不知道的 Agent：原理、架构与工程实践](/ch01-505-你不知道的-agent-原理-架构与工程实践/)
+- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](/ch01-407-告别-氛围编程-基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践/)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](/ch04-003-agentrun/)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](/ch01-453-rag深度解析-分块-向量化-召回-重排-才是-蒸馏同事skill-的关键/)
+- [别再把上下文当聊天记录](/ch01-456-别再把上下文当聊天记录/)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](/ch03-012-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
 
-- [Hermes Agent /goal 长任务运行时架构](../ch04-418-hermes-agent)
-- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch04-418-hermes-agent)
-- [LoongSuite GenAI 可观测语义规范](../ch04-376-loongsuite-genai-可观测语义规范)
-- [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch04-354-低代码-agent-框架-agent-自研-agent-分别适合谁)
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战)
+- [Hermes Agent /goal 长任务运行时架构](/ch04-418-hermes-agent/)
+- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](/ch04-418-hermes-agent/)
+- [LoongSuite GenAI 可观测语义规范](/ch04-376-loongsuite-genai-可观测语义规范/)
+- [低代码 Agent、框架 Agent、自研 Agent 决策框架](/ch04-354-低代码-agent-框架-agent-自研-agent-分别适合谁/)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](/ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战/)
 
 ---
 

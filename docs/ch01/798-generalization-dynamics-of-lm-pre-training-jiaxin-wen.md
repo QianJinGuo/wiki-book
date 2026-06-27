@@ -22,14 +22,14 @@
 - `Anthropic Demystifying Evals For Ai Agents` — Anthropic 的评估实践，与预训练评估有技术重叠
 - `Generalization Dynamics Of Lm Pre Training Jiaxin Wen` — 同一论文的另一个版本
 
-- [fusedash -  generative analytics platform | ai dashboard sof](../ch01-289-fusedash-generative-analytics-platform-ai-dashboard-sof/)
+- [fusedash -  generative analytics platform | ai dashboard sof](/ch01-289-fusedash-generative-analytics-platform-ai-dashboard-sof//)
 
 ## 相关实体
 - Generalization Dynamics Of Lm Pre Training Jiaxin Wen
 - Generalization Dynamics Pre Training Jiaxin Wen
 - Generalization Dynamics Lm Pretraining
 - Multilingual Ai
-- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
+- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us//)
 - MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/generalization-dynamics-of-lm-pre-training-jiaxin-wen-1.md)

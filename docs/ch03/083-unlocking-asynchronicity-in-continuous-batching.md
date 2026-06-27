@@ -13,8 +13,8 @@
 > 主题导航
 
 - Development environments for your cloud agents
-- [AI Infra 系统性拆解：传统后台工程师视角](../ch01-285-tencent-ai-infra-backend-engineer-s-guide-to-ai-system-hard/)
-- [ml-intern — Hugging Face 自主 ML 工程代理](../ch04-417-ml-intern-huggingface-autonomous-ml-agent/)
+- [AI Infra 系统性拆解：传统后台工程师视角](/ch01-285-tencent-ai-infra-backend-engineer-s-guide-to-ai-system-hard//)
+- [ml-intern — Hugging Face 自主 ML 工程代理](/ch04-417-ml-intern-huggingface-autonomous-ml-agent//)
 
 - MOC
 ## 深度分析

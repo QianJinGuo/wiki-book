@@ -66,11 +66,11 @@ LangChain 的 4 层与清华 Loop Stack 六件套（Skill/Spec/Tool/Act/Eval/Sto
 
 **2. L4 爬坡循环是真正的护城河**
 
-前三层在 Addy Osmani、Boris/Peter、若飞等人的文章中已有充分讨论。L4 的独到之处在于将 trace 分析 Agent 作为一等公民——不是事后复盘而是持续自动化。这与 OpenAI Codex 的 trace-driven improvement 和 Anthropic 的 Agent 自改进循环方向一致。 [Loop Engineering Addy Osmani Challengehub](../ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad)
+前三层在 Addy Osmani、Boris/Peter、若飞等人的文章中已有充分讨论。L4 的独到之处在于将 trace 分析 Agent 作为一等公民——不是事后复盘而是持续自动化。这与 OpenAI Codex 的 trace-driven improvement 和 Anthropic 的 Agent 自改进循环方向一致。 [Loop Engineering Addy Osmani Challengehub](/ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad/)
 
 **3. 产品原语即架构约束**
 
-文章每层都绑定一个 LangChain 原语，这既是优势（可落地）也是局限（绑定特定产品）。使用 Hermes Agent 的团队可在 L1 用 agent loop、L2 用 pre-commit hook + lint、L3 用 cron + webhook、L4 用 session trace 分析来实现等价栈。 [Hermes Agent Skills Source Code Analysis Shuge](../ch04-418-hermes-agent)
+文章每层都绑定一个 LangChain 原语，这既是优势（可落地）也是局限（绑定特定产品）。使用 Hermes Agent 的团队可在 L1 用 agent loop、L2 用 pre-commit hook + lint、L3 用 cron + webhook、L4 用 session trace 分析来实现等价栈。 [Hermes Agent Skills Source Code Analysis Shuge](/ch04-418-hermes-agent/)
 
 **4. "辛辣教训"的可证伪性**
 
@@ -78,11 +78,11 @@ LangChain 的 4 层与清华 Loop Stack 六件套（Skill/Spec/Tool/Act/Eval/Sto
 
 ## 相关实体
 
-- [Loop Engineering — 12 来源合并](../ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad)
-- [Loop Engineering: 把反馈循环放进工程现场](../ch05-004-loop-engineering-把反馈循环放进工程现场)
+- [Loop Engineering — 12 来源合并](/ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad/)
+- [Loop Engineering: 把反馈循环放进工程现场](/ch05-004-loop-engineering-把反馈循环放进工程现场/)
 - 循环工程 — 清华 2026 框架
-- [Agent Loop 8 个未解问题](../ch04-143-agent-loop-工程手册-8-个未解问题-self-protocol-治理薄壳-腾讯陈进的二手解读与单-age)
-- [Hermes Agent Skills 源码分析](../ch04-418-hermes-agent)
+- [Agent Loop 8 个未解问题](/ch04-143-agent-loop-工程手册-8-个未解问题-self-protocol-治理薄壳-腾讯陈进的二手解读与单-age/)
+- [Hermes Agent Skills 源码分析](/ch04-418-hermes-agent/)
 - Loop Engineering 主题地图
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loop-engineering-langchain-four-layer-loopcraft.md)
 

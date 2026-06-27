@@ -26,7 +26,7 @@ ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive 
 
 2. **抛弃"Transformer 是图灵完备的 = 我们的 Agent 无所不能"的简化叙事**：当业务方问"为什么 Agent 还是会出错"，答案可能是"上下文管理选错了复杂度层级"或"用了缩放族假设支撑的"理论保证"。这一澄清对售前 / 架构沟通有直接价值。
 
-3. **为 Harness 设计建立"复杂度预算"指标**：在系统设计阶段明确 C 的复杂度层级（REG / DCSL / 图灵完备），并匹配业务任务的复杂度要求。这与 [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/) 的"资源预算"维度形成共鸣。
+3. **为 Harness 设计建立"复杂度预算"指标**：在系统设计阶段明确 C 的复杂度层级（REG / DCSL / 图灵完备），并匹配业务任务的复杂度要求。这与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) 的"资源预算"维度形成共鸣。
 
 4. **多 token 解码 (K≥2) 是"被忽视的能力增强杠杆"**：当前主流 LLM 都是 K=1 自回归，论文证明 K≥2 直接达到图灵完备。**对低延迟要求高的场景，多 token 解码 + 追加式上下文管理是性价比最高的"能力升级"**。关注 Anthropic / OpenAI 是否在内部生产中已用 K>1。
 
@@ -60,12 +60,12 @@ ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive 
 ## 相关实体
 
 - Agent Harness 上下文管理 工作集视角 — 工业 Harness 上下文管理实操
-- [CPU Cache 类比 Agent 上下文管理](../ch04-508-cpu-缓存类比下的-agent-上下文管理-l1-l2-l3-层级架构与-execute_code-单工具设计/) — 工程类比
-- [Agent 上下文管理架构模式](../ch04-460-智能体编排层中的上下文管理架构/) — 模式分类
-- [GSD Context Management Tool](../ch01-184-gsd-get-shit-done-context-management-tool/) — 工具实践
+- [CPU Cache 类比 Agent 上下文管理](/ch04-508-cpu-缓存类比下的-agent-上下文管理-l1-l2-l3-层级架构与-execute_code-单工具设计//) — 工程类比
+- [Agent 上下文管理架构模式](/ch04-460-智能体编排层中的上下文管理架构//) — 模式分类
+- [GSD Context Management Tool](/ch01-184-gsd-get-shit-done-context-management-tool//) — 工具实践
 - Headroom 上下文压缩 + 缓存稳定化 — 压缩算法
 - Codex Context Engineering
-- [Claude Code Context Engineering (Anthropic Thariq)](../ch01-753-claude-code-上下文工程-anthropic-团队的工程实践/)
+- [Claude Code Context Engineering (Anthropic Thariq)](/ch01-753-claude-code-上下文工程-anthropic-团队的工程实践//)
 - Claude Fable 5 提示词泄漏 — 同样指出 "系统 = 模型 + 上下文管理"
 - LLM Post-Training 全景指南 — 可学习性维度对照
 
