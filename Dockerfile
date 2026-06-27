@@ -8,6 +8,7 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY mkdocs.yml ./
+COPY overrides/ overrides/
 COPY docs/ docs/
 COPY scripts/ scripts/
 
