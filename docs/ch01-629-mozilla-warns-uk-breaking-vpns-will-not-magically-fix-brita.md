@@ -7,7 +7,7 @@
 ## 核心要点
 - Published Time: 2026-05-18T09:54:01.000Z # Mozilla warns UK: Breaking VPNs will not magically fix Britain's age-check mess [Jump to main content](https://www.theregister.com/security/2026/05/18/mozill
 ## 相关实体
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](../ch12/004-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.md)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](/ch12/004-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.md/)
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](/ch12-004-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita/)
 - [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
 - [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)

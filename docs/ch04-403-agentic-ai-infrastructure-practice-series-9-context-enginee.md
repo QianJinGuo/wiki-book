@@ -94,7 +94,7 @@
 
 - Context Engineering
 - [AI Coding 入门指南](/ch09-004-ai-coding-入门指南-如何更好地让ai真正帮你干活/)
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架//)
+- [Harness Engineering](/ch05-041-harness-engineering-概念框架/)
 - MOC
 
 ---

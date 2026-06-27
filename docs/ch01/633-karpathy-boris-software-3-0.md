@@ -12,10 +12,10 @@
 - SHA256: b7f08a9221689ae53f18651567d97f1e5110931bc8978d41d50159b7513e3810
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding//)
-- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档//)
-- [Ralph Loop 不够用长时间 Agent 还缺这 3 件事](/ch01-308-ralph-loop-不够用-长时间-agent-还缺这-3-件事//)
-- [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析//)
+- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
+- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
+- [Ralph Loop 不够用长时间 Agent 还缺这 3 件事](/ch01-308-ralph-loop-不够用-长时间-agent-还缺这-3-件事/)
+- [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析/)
 - wetesteddeepseekv4proandflashagainstclau.md-against-claude
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-boris-software3-llm-era-programming-2026.md)

@@ -97,7 +97,7 @@
 
 ## Cross-links
 - → [Anthropic](/ch07-044-anthropic-mcp-重新定义-tool-search-代码编排/)
-- → [Claude Code 深度架构分析](/ch01-846-claude-code-架构深度解析//)
+- → [Claude Code 深度架构分析](/ch01-846-claude-code-架构深度解析/)
 - → Claude Code 工具设计演化
 - → KAIROS Claude Code 常驻协作范式
 - → [Claude Code Agent 工程设计](/ch04-015-claude-code-的-agent-工程/)

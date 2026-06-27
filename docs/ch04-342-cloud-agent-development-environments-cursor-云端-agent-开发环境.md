@@ -82,7 +82,7 @@ Dockerfile 即代码的环境配置带来了几个关键工程优势：
 - [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/) — Claude Code 的 Agent 执行环境
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) — Agentic Engineering 的工程实践
 - [构建基于多智能体架构的深度思考交易系统 V2](/ch04-205-构建基于多智能体架构的深度思考交易系统/) — 多 Agent 系统的环境隔离
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) — Harness Engineering 中的环境管理
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Harness Engineering 中的环境管理
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/) — 云端 Agent 训练环境
 - MOC
 

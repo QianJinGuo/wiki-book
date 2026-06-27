@@ -184,7 +184,7 @@ Appshots（屏幕感知） + /goal（长周期自主） + Locked Use（物理边
 - [天猫新品营销技术团队Ai编码实战指南上](/ch09-029-天猫新品营销技术团队ai编码实战指南-上/) — AI 编码全流程工程化方法论
 - [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/) — vibe coding 到 agentic engineering 的演进
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) — 锯齿智能与 Codex 能力组合
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) — Agent harness 的工程框架
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Agent harness 的工程框架
 - Agent Harness Context Management Working Set — Appshots 引发的 working set 管理新挑战
 
 ## 信号判断

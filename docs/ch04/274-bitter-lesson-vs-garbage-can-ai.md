@@ -84,11 +84,11 @@ Manus 的改进路径需要更多精心手工定制和定制化工作，而 Chat
 培养组织对高质量输出的敏感度和定义能力。所有利益相关者需要能够判断什么是好的结果，什么是次优的。这可能需要引入新的评估流程和质量标准，但这是 AI 时代竞争的基础能力。
 
 ## 相关实体
-- [Using Ai Right Now Mollick Quick Guide](/ch01-525-mollick-实用-ai-选型指南-模型选择-deep-research-voice-mode-agent-工作流//)
-- [The Shape Of The Thing Mollick](/ch04-168-the-shape-of-the-thing-ai-指数曲线-软件工厂-滚动颠覆-mollick-2026-03//)
-- [Gpt5 Just Does Stuff Mollick](/ch01-418-gpt-5-it-just-does-stuff-mollick-的主动式-ai-原语//)
-- [Three Years Gpt3 Gemini3 Mollick](/ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测//)
-- [Guide Ai Agents Models Apps Harnesses Mollick](/ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick//)
+- [Using Ai Right Now Mollick Quick Guide](/ch01-525-mollick-实用-ai-选型指南-模型选择-deep-research-voice-mode-agent-工作流/)
+- [The Shape Of The Thing Mollick](/ch04-168-the-shape-of-the-thing-ai-指数曲线-软件工厂-滚动颠覆-mollick-2026-03/)
+- [Gpt5 Just Does Stuff Mollick](/ch01-418-gpt-5-it-just-does-stuff-mollick-的主动式-ai-原语/)
+- [Three Years Gpt3 Gemini3 Mollick](/ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测/)
+- [Guide Ai Agents Models Apps Harnesses Mollick](/ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-bitter-lesson-versus-the-garbage-can.md)
 

@@ -99,7 +99,7 @@ Mollick 的核心判断：我们正在逼近一个临界点——AI 生成的图
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 - [OLMo Hybrid LLM Architectures](/ch01-370-olmo-hybrid-and-future-llm-architectures/)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//)
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-recent-history-of-ai-in-32-otters.md)
 

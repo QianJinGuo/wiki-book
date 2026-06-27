@@ -10,11 +10,11 @@
 - value=8, confidence=7, product=56
 - Thorough Fedora Hummingbird technical overview
 ## 相关实体
-- [Fedora Hummingbird Brings The Container Security Model To Li](/ch12-008-fedora-hummingbird-brings-the-container-security-model-to-a//)
-- [Sysdig Headless Cloud Security](/ch11-137-headless-cloud-security-rewriting-security-without-the-ui//)
-- [The It And Security Field Guide To Ai Adoption Tines](/ch12-071-the-it-and-security-field-guide-to-ai-adoption-tines//)
-- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](/ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner//)
-- [Drinking Llms](/ch01-574-getting-llms-drunk-to-find-remote-linux-kernel-oob-writes-a//)
+- [Fedora Hummingbird Brings The Container Security Model To Li](/ch12-008-fedora-hummingbird-brings-the-container-security-model-to-a/)
+- [Sysdig Headless Cloud Security](/ch11-137-headless-cloud-security-rewriting-security-without-the-ui/)
+- [The It And Security Field Guide To Ai Adoption Tines](/ch12-071-the-it-and-security-field-guide-to-ai-adoption-tines/)
+- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](/ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner/)
+- [Drinking Llms](/ch01-574-getting-llms-drunk-to-find-remote-linux-kernel-oob-writes-a/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fedora-hummingbird-container-security.md)
 

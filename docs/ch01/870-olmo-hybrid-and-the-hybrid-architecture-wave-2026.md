@@ -117,9 +117,9 @@ Olmo Hybrid 是 Allen AI 第一次 post-train 一个**架构显著不同**的 ba
 
 → **互补**：先读 generalization-dynamics-lm-pretraining 理解 scaling law 框架，再读本文看架构选择如何影响 scaling law 中的"参数效率"。
 
-## 与 [Notes From Inside Chinas Ai Labs](/ch09-093-notes-from-inside-chinas-ai-labs//) 的关联
+## 与 [Notes From Inside Chinas Ai Labs](/ch09-093-notes-from-inside-chinas-ai-labs/) 的关联
 
-Chinese AI labs（Qwen 3.5, Kimi Linear）也在 2026 春季同时采用 hybrid 架构 — 这与 Nathan 在 [Nathan Lambert Open Models Bets 2026](/ch01-905-nathan-lambert-s-mid-2026-open-models-bets//) 预测 2-3 中"开放模型实验室在标准 benchmark 上技术能力极强"高度一致：**架构选择高度同步**反映**人才 + 算力平衡**的趋同。
+Chinese AI labs（Qwen 3.5, Kimi Linear）也在 2026 春季同时采用 hybrid 架构 — 这与 Nathan 在 [Nathan Lambert Open Models Bets 2026](/ch01-905-nathan-lambert-s-mid-2026-open-models-bets/) 预测 2-3 中"开放模型实验室在标准 benchmark 上技术能力极强"高度一致：**架构选择高度同步**反映**人才 + 算力平衡**的趋同。
 
 ## 三个独到洞察
 

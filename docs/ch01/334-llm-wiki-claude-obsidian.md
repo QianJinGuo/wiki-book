@@ -166,21 +166,21 @@ LLM Wiki 在企业级知识库场景面临结构性限制，不能简单替代 R
 | **权限管理** | 缺乏细粒度访问控制，难满足企业安全合规 | 文档级/段落级权限隔离成熟 |
 | **可溯源性** | 依赖模型理解重构，幻觉风险高，错误关联一旦写入会污染后续所有查询 | 可精确定位"回答来自哪篇文档哪一段" |
 
-> [!contradiction] 参见 [Karpathy LLM Wiki 第二大脑](/ch01-321-卡帕西-llm-wiki-到底是什么-用-claude-obsidian-给自己造一个第二大脑的完整拆解//) — 原始方案认为 LLM Wiki 的全局推理能力优于 RAG 切片，但企业场景下规模和溯源问题使这一优势反转
+> [!contradiction] 参见 [Karpathy LLM Wiki 第二大脑](/ch01-321-卡帕西-llm-wiki-到底是什么-用-claude-obsidian-给自己造一个第二大脑的完整拆解/) — 原始方案认为 LLM Wiki 的全局推理能力优于 RAG 切片，但企业场景下规模和溯源问题使这一优势反转
 
 **适用场景判断**：个人知识库、学习研究等低风险场景 → LLM Wiki 效率高体验好；企业知识库 → 需按数据规模、权限要求、引用准确性综合评估
 
 ## 相关实体
 - Llm Wiki Architecture
 - Karpathy Claude Md Rules
-- [Obsidian Llm Wiki Local Kytmanov](/ch03-090-obsidian-llm-wiki-local-obsidian本地ai知识图谱自动构建//)
-- [Claude Md 12 Rules Mnilax](/ch09-036-claude-md-规则从-karpathy-的-4-条增加到-12-条//)
-- [Karpathy Vibe Coding Agentic Engineering V3](/ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering//)
+- [Obsidian Llm Wiki Local Kytmanov](/ch03-090-obsidian-llm-wiki-local-obsidian本地ai知识图谱自动构建/)
+- [Claude Md 12 Rules Mnilax](/ch09-036-claude-md-规则从-karpathy-的-4-条增加到-12-条/)
+- [Karpathy Vibe Coding Agentic Engineering V3](/ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-llm-wiki-second-brain-awkthole.md)
-- [yc掌门人60天写了60万行代码：gstack开源](/ch01-358-yc掌门人60天写了60万行代码-gstack开源//)
-- [markdown 不会过时](/ch01-588-markdown-不会过时//)
-- [Hermes Skills + LLM Wiki 知识系统](/ch01-711-手把手-用-hermes-skills-karpathy-的-llm-wiki-让-ai-越用越懂你//)
+- [yc掌门人60天写了60万行代码：gstack开源](/ch01-358-yc掌门人60天写了60万行代码-gstack开源/)
+- [markdown 不会过时](/ch01-588-markdown-不会过时/)
+- [Hermes Skills + LLM Wiki 知识系统](/ch01-711-手把手-用-hermes-skills-karpathy-的-llm-wiki-让-ai-越用越懂你/)
 
 → [补充存档：WorkBuddy + LLM Wiki + Obsidian 实践](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/workbuddy-llm-wiki-obsidian-practice.md)
 

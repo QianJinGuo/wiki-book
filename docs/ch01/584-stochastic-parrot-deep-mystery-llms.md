@@ -11,11 +11,11 @@ A while back on [X](<https://x.com/emollick/status/1960919256452796440>), Ethan 
 > How does a model using matrix multiplication to predict the next word manage to simulate human thought well enough to do all the very human-like things it does? And what does that mean about us?
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](/ch01-650-stochastic-parrot-thought-experiment//)
-- [Stochastic Parrot Marcus Ai Productivity](/ch11-069-stochastic-parrot-marcus-ai-productivity//)
-- [While Breathless In Stodgy Viridian](/ch01-436-while-breathless-in-stodgy-viridian//)
-- [Aws Reinforcement Fine Tuning Llm As Judge](/ch01-437-aws-reinforcement-fine-tuning-llm-as-judge//)
-- [Aws Sagemaker Capacity Aware Inference Fallback](/ch01-301-aws-sagemaker-capacity-aware-inference-fallback//)
+- [Stochastic Parrot Thought Experiment](/ch01-650-stochastic-parrot-thought-experiment/)
+- [Stochastic Parrot Marcus Ai Productivity](/ch11-069-stochastic-parrot-marcus-ai-productivity/)
+- [While Breathless In Stodgy Viridian](/ch01-436-while-breathless-in-stodgy-viridian/)
+- [Aws Reinforcement Fine Tuning Llm As Judge](/ch01-437-aws-reinforcement-fine-tuning-llm-as-judge/)
+- [Aws Sagemaker Capacity Aware Inference Fallback](/ch01-301-aws-sagemaker-capacity-aware-inference-fallback/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stochastic-parrot-deep-mystery-llms.md)
 

@@ -20,7 +20,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cl-bench-life-tencent-context-learning.md)
 
-- [MOC](/ch04-146-agent-memory-架构本质//)
+- [MOC](/ch04-146-agent-memory-架构本质/)
 ## 深度分析
 
 CL-Bench Life 不是 CL-Bench 的升级版，而是一个互补的评测维度。 CL-Bench 评估的是模型在专业、结构化 context 中的表现，而 CL-Bench Life 面对的是日常生活中的混乱、碎片化、持续变化的 context，两者的难度来源完全不同。这意味着仅有长上下文能力并不足以应对真实场景，模型需要具备在高噪声、不完整、反复修改的信息中进行鲁棒推理的能力。

@@ -25,7 +25,7 @@ Allsopp 进一步指出，这类论证往往将「数学上优雅的简化模型
 **关键问题**：这些论文的研究对象是**纯参数化的知识存储系统**，而非现代知识增强型 LLM（Knowledge-Enhanced LLM）。论文作者明确指出结论不适用于外部知识检索增强的系统——而 RAG（检索增强生成）和工具调用正是解决幻觉的主流工程路径。
 
 > [!contradiction]
-> 另有研究表明，通过 [Tool Calling Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/) 机制和外部验证，Agent 系统可以显著降低幻觉率。与其将幻觉视为 LLM 的固有特性，不如将其视为 [Harness 工程](/ch05-041-harness-engineering-概念框架//) 需要解决的具体问题。
+> 另有研究表明，通过 [Tool Calling Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/) 机制和外部验证，Agent 系统可以显著降低幻觉率。与其将幻觉视为 LLM 的固有特性，不如将其视为 [Harness 工程](/ch05-041-harness-engineering-概念框架/) 需要解决的具体问题。
 
 此外，Allsopp 区分了两种幻觉：*记忆回溯错误*（将相似事件的细节混淆）和*推理杜撰*（完全无依据的断言）。前者通过 RAG 可以有效缓解，后者通过 CoT（Chain of Thought）推理和外部验证也能得到控制。将两者混为一谈并宣布「不可避免」是概念上的混淆。
 

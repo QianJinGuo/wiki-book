@@ -161,10 +161,10 @@ When the Asset Bundle APIs import the bundle into the target account, they autom
    「Access denied」错误的首要排查步骤：确认被授权的主体 ARN 与实际用户 ARN 完全一致，包括 account ID 和 namespace。其次检查资源是否处于 restricted folder——folder 级别限制会覆盖 ARN 级别权限声明。 
 
 ## 相关实体
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](/ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick//)
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](/ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a//)
-- [Amazon Quick Research Agentic Multi Source Citation](/ch04-183-amazon-quick-research-agentic-multi-source-research-workflo//)
-- [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](/ch11-046-amazon-bedrock-cross-region-inference-cris-eu-data-reside//)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](/ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](/ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
+- [Amazon Quick Research Agentic Multi Source Citation](/ch04-183-amazon-quick-research-agentic-multi-source-research-workflo/)
+- [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](/ch11-046-amazon-bedrock-cross-region-inference-cris-eu-data-reside/)
 - Build Real Time Voice Applications With Amazon Sagemaker Ai
 
 ---

@@ -99,7 +99,7 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [AI Coding Agent 记忆系统](/ch04-288-ai-coding-agent-记忆系统/)
 - [柚漫剧 AI 全流程提效拆解](/ch01-356-柚漫剧-ai-全流程提效拆解/)
 - [Agent Skill 设计模式](/ch01-677-anthropic/)
-- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架//)
+- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/)
 - Coding Harness 工程本质
 - [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/)
 - [Design Patterns for AI Agents 2026](/ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl/)

@@ -120,7 +120,7 @@
 >
 > 这样质量门禁就从"Agent 应该做"变成了"不做就推不上去"，是真正的工程化卡口，而不是靠提示词的自觉。
 
-**这与 [Agent Skill Writing Practices](/ch04-242-agent-skill-高质量编写规范//) 决策树替代模糊判断的关系**: Skill 用决策树替代模糊判断是 **prompt 层的硬约束**；这里的 pre-push hook 是 **git hook 层的硬约束**。两者是不同层级的"硬规则"实现。
+**这与 [Agent Skill Writing Practices](/ch04-242-agent-skill-高质量编写规范/) 决策树替代模糊判断的关系**: Skill 用决策树替代模糊判断是 **prompt 层的硬约束**；这里的 pre-push hook 是 **git hook 层的硬约束**。两者是不同层级的"硬规则"实现。
 
 ## 5. CR / Issue 协同：把人机反馈留下来
 
@@ -227,13 +227,13 @@
 
 ## 11. 与现有实体的差异化
 
-**与 [Multica Managed Agents Platform](/ch07-050-multica-开源-managed-agents-平台//)**: Multica entity 讲平台本身（开源、25,584⭐、Go 守护进程、独立 issue 工作区、pgvector 记忆）。新文章讲**业务需求 Agent 怎么在 Multica 之上编排 superai-* 技能跑通端到端交付闭环**。同一平台，不同视角（平台能力 vs. 业务交付实践）。
+**与 [Multica Managed Agents Platform](/ch07-050-multica-开源-managed-agents-平台/)**: Multica entity 讲平台本身（开源、25,584⭐、Go 守护进程、独立 issue 工作区、pgvector 记忆）。新文章讲**业务需求 Agent 怎么在 Multica 之上编排 superai-* 技能跑通端到端交付闭环**。同一平台，不同视角（平台能力 vs. 业务交付实践）。
 
-**与 [Alibaba Aone Agentic Rd Mode Xiangbangyu](/ch04-045-alibaba-aone-agentic-rd-mode-xiangbangyu//)**: Aone Agentic RD 模式（向邦煜）讲"组织层重构"——传统协作和分工在 Agent 时代成为效率阻碍，All-in-One 版本化管理。**新文章不讲组织重构，讲具体交付 pipeline 怎么运转**（澄清门 → 方案门 → 实现 → 验收 → 结项），是用具体工程实现验证 Aone 模式的可行性。
+**与 [Alibaba Aone Agentic Rd Mode Xiangbangyu](/ch04-045-alibaba-aone-agentic-rd-mode-xiangbangyu/)**: Aone Agentic RD 模式（向邦煜）讲"组织层重构"——传统协作和分工在 Agent 时代成为效率阻碍，All-in-One 版本化管理。**新文章不讲组织重构，讲具体交付 pipeline 怎么运转**（澄清门 → 方案门 → 实现 → 验收 → 结项），是用具体工程实现验证 Aone 模式的可行性。
 
-**与 [Harness Engineered Business Agent Evaluation Aliyun Boyu](/ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者//)**: 阿里泊予的 6 Agent 评测 Harness 视角，**聚焦"评测"环节**（L1/L2/L3 指标、test_runner.py → 评测 Agent 提示词）。新文章聚焦**研发交付全过程**（澄清→方案→实现→验收→结项），是兄弟文章，覆盖不同环节。两者是同一阿里云团队不同角色（泊予 评测 vs 阿里妹 研发交付）的实践。
+**与 [Harness Engineered Business Agent Evaluation Aliyun Boyu](/ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者/)**: 阿里泊予的 6 Agent 评测 Harness 视角，**聚焦"评测"环节**（L1/L2/L3 指标、test_runner.py → 评测 Agent 提示词）。新文章聚焦**研发交付全过程**（澄清→方案→实现→验收→结项），是兄弟文章，覆盖不同环节。两者是同一阿里云团队不同角色（泊予 评测 vs 阿里妹 研发交付）的实践。
 
-**与 [从提需求到部署发布全Ai全自动化后研发效能全面跃升](/ch09-065-从提需求到部署发布-全ai全自动化后-研发效能全面跃升//)**: 腾讯 CodeBuddy L1→L2→L3 演进视角，**6 个试点需求 90% 代码采纳率等数据**。新文章阿里云视角，**没有量化数据但有具体技能名（superai-*）+ 具体平台（Multica）+ 具体门禁（pre-push hook）**。两边互补：腾讯讲 L1→L3 演进框架，阿里讲具体某阶段的工程化深度。
+**与 [从提需求到部署发布全Ai全自动化后研发效能全面跃升](/ch09-065-从提需求到部署发布-全ai全自动化后-研发效能全面跃升/)**: 腾讯 CodeBuddy L1→L2→L3 演进视角，**6 个试点需求 90% 代码采纳率等数据**。新文章阿里云视角，**没有量化数据但有具体技能名（superai-*）+ 具体平台（Multica）+ 具体门禁（pre-push hook）**。两边互补：腾讯讲 L1→L3 演进框架，阿里讲具体某阶段的工程化深度。
 
 ## 12. 深度分析
 
@@ -253,17 +253,17 @@
 
 文章最关键的设计取舍在于：**门禁不能只靠提示词约束，必须变成 Agent 绕不过去的硬规则**。提示词再怎么写"push 前必须跑 PMD"，Agent 在复杂任务中还是可能跳过。解决方案是通过 git pre-push hook 把 PMD 校验和单元测试覆盖率检查注入到 push 流程里——Agent 执行 `git push` 时，hook 自动触发检查，不通过就直接拒绝 push。
 
-这与 [Agent Skill Writing Practices](/ch04-242-agent-skill-高质量编写规范//) 用**决策树替代模糊判断**是不同层级的"硬规则"实现：后者是 prompt 层的硬约束，前者是 git hook 层的硬约束。两者叠加，才构成真正意义上的工程化卡口，而不是靠自觉性。
+这与 [Agent Skill Writing Practices](/ch04-242-agent-skill-高质量编写规范/) 用**决策树替代模糊判断**是不同层级的"硬规则"实现：后者是 prompt 层的硬约束，前者是 git hook 层的硬约束。两者叠加，才构成真正意义上的工程化卡口，而不是靠自觉性。
 
 ### 阿里云 Agent 平台策略：Multica 的选择逻辑
 
-选择 Multica 而非自建平台，核心原因不是技术不可替代，而是**基础设施成本**。独立 issue 工作区带来上下文隔离，Agent 与 skill 绑定减少每次手动拼装，多运行时和沙箱让需求可以持续推进，不依赖本地开发机在线。这套方案本身不绑定特定平台，核心仍然是 skill 的组合编排和提示词设计——平台只是落地载体，[Multica Managed Agents Platform](/ch07-050-multica-开源-managed-agents-平台//) 的开源属性（25,584 ⭐、Go 守护进程、pgvector 记忆）提供了足够的定制灵活性。
+选择 Multica 而非自建平台，核心原因不是技术不可替代，而是**基础设施成本**。独立 issue 工作区带来上下文隔离，Agent 与 skill 绑定减少每次手动拼装，多运行时和沙箱让需求可以持续推进，不依赖本地开发机在线。这套方案本身不绑定特定平台，核心仍然是 skill 的组合编排和提示词设计——平台只是落地载体，[Multica Managed Agents Platform](/ch07-050-multica-开源-managed-agents-平台/) 的开源属性（25,584 ⭐、Go 守护进程、pgvector 记忆）提供了足够的定制灵活性。
 
 ### 双仓库上下文管理：知识升格的节奏控制
 
 "不直接升级"原则是双仓库设计最关键的设计哲学：项目过程中产生的事实先留在项目记忆层（feature 分支），只有经过结项审视和人工确认，才会选择性地进入长期 wiki。这样既**避免了噪声污染长期 wiki**，也保证了每次结项都能沉淀出真正有复用价值的业务知识。
 
-这与 Agent Memory Lifecycle Philosophies 的"提升"边界思路一致——[Agent Memory Architecture](/ch04-146-agent-memory-架构本质//) 强调的 provenance state（extracted | merged | inferred | ambiguous）在阿里云实践里被显式化为**结项审视 + 人工确认**两个可操作的动作节点，而不是依赖 LLM 自行判断何时该"升格"。
+这与 Agent Memory Lifecycle Philosophies 的"提升"边界思路一致——[Agent Memory Architecture](/ch04-146-agent-memory-架构本质/) 强调的 provenance state（extracted | merged | inferred | ambiguous）在阿里云实践里被显式化为**结项审视 + 人工确认**两个可操作的动作节点，而不是依赖 LLM 自行判断何时该"升格"。
 
 ### 效果度量先于自我迭代：Agent 成长的可验证路径
 
@@ -277,7 +277,7 @@
 
 2. **双仓库上下文设计是"长期 wiki 不被噪声污染"的关键** — 项目过程材料留在 feature 分支，结项审视后才选择性蒸馏回长期 wiki。比"all-in-one 一次性升级"更稳健。
 
-3. **TDD 翻转（测试定义对的，让实现去满足）** — 反"AI 写测试为覆盖率"的最常见失败模式。 **[!contradiction] 参见 [Agent Skill Writing Practices](/ch04-242-agent-skill-高质量编写规范//) 的"决策树替代模糊判断"思路** —— 两篇文章用不同方式解决同一个问题：让"行为正确"成为可验证约束。
+3. **TDD 翻转（测试定义对的，让实现去满足）** — 反"AI 写测试为覆盖率"的最常见失败模式。 **[!contradiction] 参见 [Agent Skill Writing Practices](/ch04-242-agent-skill-高质量编写规范/) 的"决策树替代模糊判断"思路** —— 两篇文章用不同方式解决同一个问题：让"行为正确"成为可验证约束。
 
 4. **人只在关键节点确认** — 需求澄清、方案确认、发布动作 3 个节点保留人工门禁，其余环节 Agent 自主推进。
 
@@ -287,18 +287,18 @@
 
 ## 相关实体
 
-- [Multica Managed Agents Platform](/ch07-050-multica-开源-managed-agents-平台//) — 新文章选用的运行时平台
-- [Alibaba Aone Agentic Rd Mode Xiangbangyu](/ch04-045-alibaba-aone-agentic-rd-mode-xiangbangyu//) — 阿里 Aone Agentic RD 模式（组织层重构视角）
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](/ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者//) — 阿里泊予 评测 Harness 视角（兄弟文章）
-- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](/ch09-065-从提需求到部署发布-全ai全自动化后-研发效能全面跃升//) — 腾讯 CodeBuddy L1→L2→L3 演进
-- [Ai Native Rd Org Design](/ch05-018-ai-native-时代研发组织何去何从//) — AI 原生研发组织设计
+- [Multica Managed Agents Platform](/ch07-050-multica-开源-managed-agents-平台/) — 新文章选用的运行时平台
+- [Alibaba Aone Agentic Rd Mode Xiangbangyu](/ch04-045-alibaba-aone-agentic-rd-mode-xiangbangyu/) — 阿里 Aone Agentic RD 模式（组织层重构视角）
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](/ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者/) — 阿里泊予 评测 Harness 视角（兄弟文章）
+- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](/ch09-065-从提需求到部署发布-全ai全自动化后-研发效能全面跃升/) — 腾讯 CodeBuddy L1→L2→L3 演进
+- [Ai Native Rd Org Design](/ch05-018-ai-native-时代研发组织何去何从/) — AI 原生研发组织设计
 - Agent Harness Context Management Working Set — Agent Harness 上下文管理
-- [Agent Skill Writing Guide](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则//) — Skill 编写基础
-- [Agent Skill Writing Practices](/ch04-242-agent-skill-高质量编写规范//) — Skill 编写实战（决策树替代模糊判断）
+- [Agent Skill Writing Guide](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/) — Skill 编写基础
+- [Agent Skill Writing Practices](/ch04-242-agent-skill-高质量编写规范/) — Skill 编写实战（决策树替代模糊判断）
 - Agent Role Specialization — 多角色 Agent 协作
 - Agent Self Improvement Loops — 度量驱动的 Agent 自我迭代
 - Agent Memory Lifecycle Philosophies — 记忆生命周期与"提升"边界
-- [Agent Memory Architecture](/ch04-146-agent-memory-架构本质//) — Agent 记忆架构
+- [Agent Memory Architecture](/ch04-146-agent-memory-架构本质/) — Agent 记忆架构
 - Agent Orchestration Patterns — Agent 编排模式
 - Agent Deployment Strategy — Agent 部署策略
 - MOC

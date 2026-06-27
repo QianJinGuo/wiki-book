@@ -29,7 +29,7 @@ aily 的 AI编辑部引入了 6 种角色（总编虾、记者虾、编辑虾、
 
 **3. Skills 配置是人设工程的落地实践**
 
-总编虾的 Skills 配置示例展示了如何将角色人设转化为机器可执行的指令集：核心职责描述 + 硬性规则 + 结束条件 。这与 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 中"约束即能力"的理念高度一致——越明确的边界定义，越能减少 Agent 的越权行为。对于企业级部署而言，Skills 配置的版本管理和灰度发布是生产级别的挑战，目前飞书尚未公开这一部分的能力。
+总编虾的 Skills 配置示例展示了如何将角色人设转化为机器可执行的指令集：核心职责描述 + 硬性规则 + 结束条件 。这与 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 中"约束即能力"的理念高度一致——越明确的边界定义，越能减少 Agent 的越权行为。对于企业级部署而言，Skills 配置的版本管理和灰度发布是生产级别的挑战，目前飞书尚未公开这一部分的能力。
 
 **4. 企业级优势的安全设计：操作权限与用户本人一致**
 
@@ -54,11 +54,11 @@ aily 的 AI编辑部引入了 6 种角色（总编虾、记者虾、编辑虾、
 ## 关联阅读
 
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议//)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航//)
-- [Ath Agent Trust Handshake Protocol](/ch04-500-为了让agent更安全的工作-有多少人操碎了心//)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](/ch07-017-hermes自进化完整闭环-skill创建复用修补链路//)
-- [Four Browser Automation Tools Comparison](/ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc//)
+- [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航/)
+- [Ath Agent Trust Handshake Protocol](/ch04-500-为了让agent更安全的工作-有多少人操碎了心/)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](/ch07-017-hermes自进化完整闭环-skill创建复用修补链路/)
+- [Four Browser Automation Tools Comparison](/ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/feishu-aily-agent-lobster.md)
 

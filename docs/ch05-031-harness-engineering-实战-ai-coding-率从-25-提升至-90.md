@@ -67,7 +67,7 @@
 - [OpenAI: Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/)
 
 ## 相关页面
-- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架//) — 六层结构与核心方程
+- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/) — 六层结构与核心方程
 - [Cursor Harness 复盘](/ch01-235-cursor-harness-model-production-floor/) — 模型决定上限，Harness 决定生产下限
 - [字节跳动 TRAE Harness Engineering 指南](/ch01-520-来自字节跳动trae的harness-engineering指南/) — R.E.S.T 框架/PPAF 循环/上下文 Token 流水线
 

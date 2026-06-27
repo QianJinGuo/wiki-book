@@ -13,11 +13,11 @@
 这正是 SkillClaw 要解决的问题：**如何让 Agent 技能在真实使用中持续进化，并将一个用户的经验转化为全系统的共享能力？**
 
 ## 相关实体
-- [Skillclaw Alibaba Paperagent](/ch04-441-阿里skillclaw-让-agent-技能在真实使用中集体进化//)
-- [Skillclaw Collective Intelligence](/ch04-423-高德-skillclaw-让-agent-skill-学会进化-跨会话-跨agent-跨设备-跨用户//)
-- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档//)
-- [Perplexity Search As Code Generation](/ch01-274-rethinking-search-as-code-generation//)
-- [Ai Agent Engineer Capability Map](/ch04-139-ai-agent-工程师能力地图//)
+- [Skillclaw Alibaba Paperagent](/ch04-441-阿里skillclaw-让-agent-技能在真实使用中集体进化/)
+- [Skillclaw Collective Intelligence](/ch04-423-高德-skillclaw-让-agent-skill-学会进化-跨会话-跨agent-跨设备-跨用户/)
+- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
+- [Perplexity Search As Code Generation](/ch01-274-rethinking-search-as-code-generation/)
+- [Ai Agent Engineer Capability Map](/ch04-139-ai-agent-工程师能力地图/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw.md)
 

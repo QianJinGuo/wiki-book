@@ -120,10 +120,10 @@ Agentium 的核心价值不在于成为一个生产级框架，而在于**演示
 
 ## 相关实体
 - Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
-- [Claude Code 架构解析](/ch01-571-claude-code-架构解析//)
-- [Agent 时代架构师技能指南](/ch04-346-agent-时代-我们架构师应该学什么//)
+- [Claude Code 架构解析](/ch01-571-claude-code-架构解析/)
+- [Agent 时代架构师技能指南](/ch04-346-agent-时代-我们架构师应该学什么/)
 
-- [基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统//)
+- [基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
 - MOC
 
 ---

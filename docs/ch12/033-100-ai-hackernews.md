@@ -13,7 +13,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/1-million-exposed-ai-services-hackernews.md)
 
 ## 相关实体
-- [Your AI Agents Are Already Inside the Perimeter. Do You Know Who They Are?](/ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know//)
+- [Your AI Agents Are Already Inside the Perimeter. Do You Know Who They Are?](/ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know/)
 
 - MOC
 ## 深度分析
@@ -51,7 +51,7 @@
 Ollama 本身不存储消息，所以没有直接的对话数据暴露风险。但这些实例中许多在包装来自 Anthropic、Deepseek、Moonshot、Google 和 OpenAI 的付费前沿模型。
 
 > [!related] 相关漏洞
-> [Bleeding Llama](/ch12-013-bleeding-llama-critical-unauthenticated-memory-leak-in-ollam//) (CVE-2026-7482, CVSS 9.1) 揭示了 Ollama 的更深层问题——不仅默认无认证，还存在未认证内存泄漏漏洞，可导致整个进程堆内存被窃取。300,000+ 台暴露的 Ollama 服务器面临严重威胁。
+> [Bleeding Llama](/ch12-013-bleeding-llama-critical-unauthenticated-memory-leak-in-ollam/) (CVE-2026-7482, CVSS 9.1) 揭示了 Ollama 的更深层问题——不仅默认无认证，还存在未认证内存泄漏漏洞，可导致整个进程堆内存被窃取。300,000+ 台暴露的 Ollama 服务器面临严重威胁。
 
 ### Agent 管理平台漏洞
 

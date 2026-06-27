@@ -185,7 +185,7 @@
 
 **高德 AI 战略的三层落地**：C 端用户助手 / 内部研发工具 / 业务决策托管——形成完整的"AI Native 业务操作系统"。
 
-### 与 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 的深度共鸣
+### 与 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 的深度共鸣
 
 **业务协议 = Harness 在业务域的具象化**：
 - Harness 提供**环境治理**（CI/CD、Review、Test）

@@ -79,7 +79,7 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 
 ### Harness 的必要性
 
-文章中提到的「每个智能体外面必须套一个防护层」直接呼应了 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 的核心原则。六个阶段的 harness 流程（预检→计划→审批→执行→验证→记录）与 [Claude Code](/ch01-734-两万字详解claude-code源码核心机制/) 的内部机制异曲同工。Replit 事件则是一个典型的反面案例——提示词层面的安全约束在实际工程中是不可靠的。
+文章中提到的「每个智能体外面必须套一个防护层」直接呼应了 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 的核心原则。六个阶段的 harness 流程（预检→计划→审批→执行→验证→记录）与 [Claude Code](/ch01-734-两万字详解claude-code源码核心机制/) 的内部机制异曲同工。Replit 事件则是一个典型的反面案例——提示词层面的安全约束在实际工程中是不可靠的。
 
 ### 评估驱动的复利增长
 

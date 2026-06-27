@@ -159,7 +159,7 @@ Skill 没触发
 - [Agent Skill Writing Guide](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/) — 21KB，"从 0 到 1" 入门级（岗位职责说明书 + SOP + 避坑指南）。本实体是**进阶 + 团队管理 + 工程化评估**的扩展版。
 - [Ai Skill Skill Creator 源码拆解](/ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南/) — 28KB，skill-creator 源码深度拆解（3 Agent 评审）。本实体是 Skill Creator **5 步工作流 + 3 阶段评估的实战使用**视角，那个是**源码内部机制**视角。
 - [Ai Skill 四层验证体系](/ch04-120-04-为什么不能让-ai-自己评审自己-ai-skill-四层验证体系完整解析/) — Skill 四层验证体系（已覆盖部分质量评估）。本实体是**5 大指标 + 工程化评估 3 阶段**的补充扩展。
-- [Ai Skill 测评指标体系](/ch01-383-ai-skill-测评指标体系/) / [Ai Skill 测评报告解读](/ch13-mlops//) / Ai Skill 测评体系进阶指南 / [Ai Skill 测试用例设计](/ch03-032-03-ai-skill-测试用例设计完整指南-8-种类型-断言自检-覆盖率从-40-到-90/) / [Ai Skill 测评指标体系](/ch01-383-ai-skill-测评指标体系/) — AI Skill 测评系列（覆盖部分指标体系）。本实体是**腾讯视角的工程化评估**，与系列互补。
+- [Ai Skill 测评指标体系](/ch01-383-ai-skill-测评指标体系/) / [Ai Skill 测评报告解读](/ch13-mlops/) / Ai Skill 测评体系进阶指南 / [Ai Skill 测试用例设计](/ch03-032-03-ai-skill-测试用例设计完整指南-8-种类型-断言自检-覆盖率从-40-到-90/) / [Ai Skill 测评指标体系](/ch01-383-ai-skill-测评指标体系/) — AI Skill 测评系列（覆盖部分指标体系）。本实体是**腾讯视角的工程化评估**，与系列互补。
 - [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](/ch01-677-anthropic/) — Anthropic 官方 14 patterns 译本。命名相似但内容不同。
 - [Agent Skill Writing Practices](/ch04-242-agent-skill-高质量编写规范/) / [Agent Skill Writing Advanced](/ch01-319-agent-skill-进阶模式与治理/) / Agent Skill Writing Evaluation — 系列其他 skill 写作视角。本实体是**鹅厂完整 Playbook 视角**。
 
@@ -196,7 +196,7 @@ Skill 没触发
 - Anthropic 95% 数据分析 Skill 栈 — [Anthropic 95Pct Data Analysis Skill Stack Architecture](/ch01-677-anthropic/)
 - AI 技能自动演进 — Ai Skill Evolution Framework
 - Claude Code 架构 — [Claude Code Architecture](/ch01-571-claude-code-架构解析/)
-- AHE 通用 Harness — [Ahe Agentic Harness Engineering](/ch04-212-ahe-agentic-harness-engineering//)
+- AHE 通用 Harness — [Ahe Agentic Harness Engineering](/ch04-212-ahe-agentic-harness-engineering/)
 
 ---
 

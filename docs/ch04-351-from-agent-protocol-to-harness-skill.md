@@ -41,7 +41,7 @@ Agent Protocol → MCP Tool Calling → A2A Collaboration → Harness Skill
 4. **Skill Composition 的核心挑战是"依赖冲突"而非"接口不兼容"**。当多个 Skill 同时修改同一个状态（如对话历史、工具列表）时，执行顺序和优先级变得关键。早期 Skill Composition 方案关注接口契约（Interface Contract），但实际失败案例更多来自运行时依赖冲突（Runtime Dependency Conflict），例如 Skill A 需要在 Skill B 之前执行但 B 先获得了执行权。当前研究焦点转向 Skill 间的动态协调协议。
 
 ## 实践启示
-1. **新 Agent 项目应从支持 MCP 的框架入手**。MCP 已获得主流 Agent 框架（LangChain、LlamaIndex、AgentSDK）的广泛支持。在项目启动时选择 MCP 原生支持的框架，可以直接复用社区已有的 MCP Tool 生态，避免重复造轮子。建议在 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) 框架下设计 Agent 架构。
+1. **新 Agent 项目应从支持 MCP 的框架入手**。MCP 已获得主流 Agent 框架（LangChain、LlamaIndex、AgentSDK）的广泛支持。在项目启动时选择 MCP 原生支持的框架，可以直接复用社区已有的 MCP Tool 生态，避免重复造轮子。建议在 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) 框架下设计 Agent 架构。
 2. **A2A 适用于跨组织边界的 Agent 协作场景**。当 Agent 需要与外部合作伙伴的 Agent 进行安全受控的信息交换时，A2A 提供了标准化的委托-结果协议。建议在 A2A 之上构建业务级的任务编排层，而非直接暴露 A2A 协议给业务调用方——后者会导致业务逻辑与通信协议耦合。
 3. **设计 Skill 时，优先声明前置条件（Precondition）和后置结果（Postcondition）**。Skill 的能力边界比 Skill 的实现细节更重要。例如：RAG-Skill 的 Precondition 是"存在向量数据库"，Postcondition 是"返回 top-k 相关文档"。这种声明式描述使得 Skill 组合时可以做前置条件检查，避免运行时错误。详细可参考 。
 4. **避免在单一 Skill 内实现过多功能，保持 Skill 的单一职责**。当一个 Skill 变得臃肿时，应该拆分为多个细粒度 Skill。经验法则是：如果一个 Skill 的工具列表超过 7 个，或者 prompt 长度超过 2000 tokens，应该考虑拆分。细粒度 Skill 更容易测试、版本管理和独立演进。

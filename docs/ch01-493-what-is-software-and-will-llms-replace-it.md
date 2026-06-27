@@ -69,7 +69,7 @@ Tomassetti 归纳了软件持续提供价值的四个维度：
 └─────────────────────────────────────┘
 ```
 
-这与 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 的核心理念完全一致：
+这与 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 的核心理念完全一致：
 - LLM 做意图理解和任务规划（概率层）
 - 工具做确定性执行（确定性层）
 - Harness 管理两层之间的边界
@@ -123,7 +123,7 @@ LLM 时代软件工程师的核心技能：
 
 ## 相关实体
 
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架//) — 概率层与确定性层的边界管理
+- [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — 概率层与确定性层的边界管理
 - [Agent Harnesses](/ch04-505-agent-harnesses-are-dead-long-live-agent-harnesses/) — Agent 架构的演进
 - [Claude Code Workflows](/ch09-070-claude-code-dynamic-workflows-实战模式与构建技巧/) — Agent 工作流设计
 - [本文实体](/ch01-493-what-is-software-and-will-llms-replace-it/) — Tomassetti 的分析

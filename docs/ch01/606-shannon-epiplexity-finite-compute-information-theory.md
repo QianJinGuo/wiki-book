@@ -11,11 +11,11 @@
 Shannon 1948 年创立信息论，假设观察者有**无限算力**。这个假设在通信领域无害，但 LLM 时代成了核心缺口：同样的数据，GPT-2 和 GPT-4 学到的东西不同；人类和 LLM 学到的也不同；同一个人精力充沛 vs 疲惫时学到也不同。
 
 ## 相关实体
-- [Llm From Scratch 7 Stage Pytorch Tutorial](/ch01-878-从零构建-llm-七阶段实战教程//)
-- [Karpathy Llm Wiki V2 2026](/ch01-271-karpathy-llm-wiki-v2-2026//)
-- [Chatgpt小心翼翼回复风格技术原因](/ch01-544-破案了-为啥chatgpt老想着-稳稳地接住你//)
-- [Skill Rag Tsinghua Sra](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag//)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](/ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l//)
+- [Llm From Scratch 7 Stage Pytorch Tutorial](/ch01-878-从零构建-llm-七阶段实战教程/)
+- [Karpathy Llm Wiki V2 2026](/ch01-271-karpathy-llm-wiki-v2-2026/)
+- [Chatgpt小心翼翼回复风格技术原因](/ch01-544-破案了-为啥chatgpt老想着-稳稳地接住你/)
+- [Skill Rag Tsinghua Sra](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](/ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/shannon-epiplexity-finite-compute-information-theory.md)
 

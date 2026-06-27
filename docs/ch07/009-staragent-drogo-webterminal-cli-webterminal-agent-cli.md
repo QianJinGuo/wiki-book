@@ -238,11 +238,11 @@ Program terminated with signal SIGSEGV, Segmentation fault.
 
 本文是 **"Agent 远程执行能力"** 的工程化实现：
 
-- [CLI / MCP / SDK 选型](/ch07-053-cli系列④-选型cli-mcp还是api//) — 工具原语选择（理论层）
-- [AgentCore OpenClaw 多租户](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多//) — AWS 视角的远程 Agent
-- [OpenClaw Security 部署](/ch11-090-企业级openclaw安全部署架构指南-亚马逊aws官方博客//) — OpenClaw 安全部署
-- [DIPG](/ch05-075-dipg-蚂蚁保-host-research-verify-三-agent-离线-verify-闭环-c-端-aigc//) — 蚂蚁保险 verify 闭环（也是 Agent 远程任务）
-- [250 行 CLI Agent 教程](/ch04-075-ai-agent-的内核是-250-行-while-循环-用-python-ollama-从零搭建-cli-agen//) — minimal 教学
+- [CLI / MCP / SDK 选型](/ch07-053-cli系列④-选型cli-mcp还是api/) — 工具原语选择（理论层）
+- [AgentCore OpenClaw 多租户](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/) — AWS 视角的远程 Agent
+- [OpenClaw Security 部署](/ch11-090-企业级openclaw安全部署架构指南-亚马逊aws官方博客/) — OpenClaw 安全部署
+- [DIPG](/ch05-075-dipg-蚂蚁保-host-research-verify-三-agent-离线-verify-闭环-c-端-aigc/) — 蚂蚁保险 verify 闭环（也是 Agent 远程任务）
+- [250 行 CLI Agent 教程](/ch04-075-ai-agent-的内核是-250-行-while-循环-用-python-ollama-从零搭建-cli-agen/) — minimal 教学
 
 本文的独特贡献：
 - **WebTerminal 而非 SSH**——企业内部治理链路的现实选择
