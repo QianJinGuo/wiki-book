@@ -174,7 +174,7 @@ TUI 显示：
 - [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
 - [Agent Reliability Engineering Skillify Continuous Improvement](/ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制/)
-- Agent Harness Context Management Working Set
+- [Agent Harness Context Management Working Set](/ch04-036-hermes-agent-eval-harness-skill-7-taskset-harnessadapt/)
 - [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](/ch01-677-anthropic/)
 - [Impeccable Frontend Design Skill Harness Vibecoder](/ch05-001-impeccable/)
 - MOC

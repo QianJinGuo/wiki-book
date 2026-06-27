@@ -279,7 +279,7 @@ Plain markdown、git history、versioned memory store 这类朴素设计不一�
 - [Agent Memory Architecture Ruofei](/ch04-111-agent-memory-架构解析/)
 - [Memory Agent Systems Cobanov](/ch04-458-memory-agent-systems-cobanov/)
 - [Factory Mission Multi Agent Architecture](/ch01-864-factory-mission-multi-agent-architecture/)
-- Context Engineering Three Memory Paradigms
+- [Context Engineering Three Memory Paradigms](/ch04-229-yidian-tianxia-context-engineering-agentic-ai/)
 - MOC
 
 ---

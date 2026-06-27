@@ -358,7 +358,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)（skill-judge 对照）
 - [Harness Engineering 90 Percent Pillars](/ch05-077-harness-engineering-四根支柱与四要素架构/)（与 Skill 同源的工程化思路）
 - [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南/)
-- qoder skills
+- [qoder skills](/ch07-029-qoder-skills/)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](/ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills/)
 - [让 AI 理解你的组件库：新一代智能 D2C 架构 — 基于 AWS Kiro MCP Skills 的智能转换实践](/ch11-071-让-ai-理解你的组件库-新一代智能-d2c架构-基于-aws-kiro-mcp-skills-的智能转换实践/)
@@ -382,9 +382,9 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 
 - [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
 - [Skillx Zhejiang University](/ch04-415-skillx-automatically-constructing-skill-knowledge-bases-for/)
-- Wiki Audit Skill
+- [Wiki Audit Skill](/ch07-037-wiki-evolver-skill-system-design-gpt-5-5-copilot-session/)
 - [Gemini Deep Guide Prompt](/ch01-378-gemini-深度导读生成器-prompt-让-ai-重写而非摘要/)
-- Promptqueue Opengorilla Project Analysis Ljguo
+- [Promptqueue Opengorilla Project Analysis Ljguo](/ch01-194-promptqueue-opengorilla-ai-native/)
 - qoder 团队知识引擎
 
 - MOC

@@ -17,7 +17,7 @@
 
 - [Who Winning Enterprise AI Now](/ch03-123-who-winning-enterprise-ai-now/)
 - [CEOs of the classroom: Why principals are the key to the AI era](/ch01-117-ceos-of-the-classroom-why-principals-are-the-key-to-the-ai/)
-- Late student-loan payments are rising. Is a domino effect coming
+- [Late student-loan payments are rising. Is a domino effect coming](/ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g/)
 
 ## 深度分析
 Salesforce Agentforce 接入 WhatsApp Voice 的战略意图远超渠道扩展本身。这是 Salesforce 在**全渠道 AI 原生客服**方向的关键一步——在 WhatsApp 这个全球覆盖最广的 messaging 平台上实现原生语音交互，将消费者习惯与企业服务彻底打通。

@@ -19,7 +19,7 @@
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](/ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
 
-- The Agency Model Dangers
+- [The Agency Model Dangers](/ch12-074-fedora-hummingbird-brings-the-container-security-model-to-a/)
 ## 深度分析
 ### 核心理念：从人类交互到机器原生安全
 Sysdig 提出的 **Headless Cloud Security** 代表了一种范式转变 —— 将安全能力从基于 Dashboard 的人机交互模式，迁移到 API-first、面向 AI Agent 的编程接口。其核心主张是：在 AI 驱动的攻击面前，人类本身就是瓶颈，安全系统必须能够被 AI Agent 直接调用和编排。

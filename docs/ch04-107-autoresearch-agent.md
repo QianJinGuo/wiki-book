@@ -153,7 +153,7 @@
 - [Yann Dubois Openai Post Training Matt Turck Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
 - [What Comes Next With Open Models](/ch01-322-开源模型的下一阶段-三类模型分类与生态化路径/)
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/)
-- Multi-Agent Orchestration
+- [Multi-Agent Orchestration](/ch04-451-anthropic-multi-agent-research-system/)
 - **Monte Carlo Tree Search**
 - **AutoML**
 - **Atomic Experiment Design**

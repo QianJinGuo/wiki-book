@@ -76,8 +76,8 @@ Agent Teams（并行 + 共享 Context）
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](/ch01-677-anthropic/)
 - [CLI、MCP、API 选型：Agent 接入层决策指南](/ch07-053-cli系列④-选型cli-mcp还是api/)
 
-- Data Agent Platform Architecture
-- Multi Agent Collaboration 2025 Top 10 Challenges
+- [Data Agent Platform Architecture](/ch04-441-agent-engineering-principles-architecture-practice/)
+- [Multi Agent Collaboration 2025 Top 10 Challenges](/ch04-451-anthropic-multi-agent-research-system/)
 - [Autoresearch Next Phase Async Multi Agent Ai寒武纪](/ch01-793-autoresearch-next-phase-async-multi-agent-ai寒武纪/)
 - MOC
 ## 深度分析

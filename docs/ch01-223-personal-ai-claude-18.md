@@ -219,8 +219,8 @@ good example:   ^[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw
 关键原则：**团队 Harness 定义"做什么"，Personal Harness 定义"怎么做"**。不要在 Personal Harness 里重复团队 Harness 的规则，而是让 Personal Harness 处理团队规范没有覆盖的个人偏好和习惯。   ^[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)]
 
 ## 关联阅读
-- 原文：https://mp.weixin.qq.com/s/pAVt6MeapUIDyVu256FI4w（若飞/架构师，2026-05-18）
-- 属于 JiaGouX 公众号 Harness 系列文章之一（Agent Harness、Memory、Goal、Skills、Personal Harness）
+- [原文：https://mp.weixin.qq.com/s/pAVt6MeapUIDyVu256FI4w（若飞/架构师，2026-05-18）](/ch01-393-how-far-behind-are-open-models-lesswrong-2026-05/)
+- [属于 JiaGouX 公众号 Harness 系列文章之一（Agent Harness、Memory、Goal、Skills、Personal Harness）](/ch05-026-mac-multi-agent-coding-skills-hooks-harness-0-20/)
 - [Agent Memory 架构本质](/ch04-146-agent-memory-架构本质/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md) ^[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)]

@@ -88,7 +88,7 @@ GPT-OSS 从发布时的混乱到最终的巨大成功，加上 Reflection、Arce
 
 - [DeepSeek Code Harness](/ch09-068-deepseek-code-harness/)
 - [OpenClaw 完全指南](/ch04-199-openclaw-完全指南/)
-- From AGI to ASI
+- [From AGI to ASI](/ch11-138-from-silos-to-service-topology-why-netflix-built-a-real-tim/)
 - MOC
 
 ---

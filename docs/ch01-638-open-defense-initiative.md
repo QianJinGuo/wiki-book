@@ -15,7 +15,7 @@ Published Time: Wed, 13 May 2026 15:55:13 GMT
 - [Opendefenseinitiativedepthfirst](/ch01-626-open-defense-initiative-depthfirst/)
 - [Open Defense Initiative Depthfirst](/ch01-153-open-defense-initiative-depthfirst/)
 - [Joyai Echo Long Video Framework Jd](/ch04-099-joyai-echo-京东开源长音视频生成框架-5-分钟一致性-7-5x-dmd-加速-director-age/)
-- Openchronicle Memory Layer
+- [Openchronicle Memory Layer](/ch01-857-claude-code-7-layer-memory-architecture/)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](/ch01-015-opensquilla-launches-open-source-ai-agent-to-cut-token-costs/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/open-defense-initiative.md)

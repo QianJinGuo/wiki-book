@@ -147,7 +147,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 - [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
 
 - Harness Component Expiry Evidence
-- Harness Component Expiry Build To Delete
+- [Harness Component Expiry Build To Delete](/ch04-393-how-to-build-audio-transcription-agent/)
 - [Harness Engineering Theory To Practice Helen](/ch05-076-harness-engineering-从理论到实战-行为正确性死结-上下文腐烂-可驾驭性-ashby-定律/)
 - [Evaluating Netflix Show Synopses With Llm As A Judge](/ch01-249-evaluating-netflix-show-synopses-with-llm-as-a-judge/)
 - MOC

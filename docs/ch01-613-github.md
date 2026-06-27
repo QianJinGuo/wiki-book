@@ -32,7 +32,7 @@
 - [是时候讨论人类配额制了应对Ai就业冲击的一种可能性探讨](/ch01-907-是时候讨论-人类配额制-了-应对ai就业冲击的一种可能性探讨/)
 - [Agi 之路 可能从一开始就走错了](/ch01-258-agi-之路-可能从一开始就走错了-腾讯研究院-王鹏/)
 - [Joyai Echo Long Video Framework Jd](/ch04-099-joyai-echo-京东开源长音视频生成框架-5-分钟一致性-7-5x-dmd-加速-director-age/)
-- Openchronicle Memory Layer
+- [Openchronicle Memory Layer](/ch01-857-claude-code-7-layer-memory-architecture/)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](/ch01-015-opensquilla-launches-open-source-ai-agent-to-cut-token-costs/)
 
 ---

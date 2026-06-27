@@ -19,7 +19,7 @@
 
 ## 相关实体
 - Multilingual Ai
-- Eagle 3 Speculative Decoding Optimization
+- [Eagle 3 Speculative Decoding Optimization](/ch04-114-多轮-agent-场景下-滴滴的-eagle-3-训推加速实践/)
 - [Didi Eagle 3 Speculative Decoding Agents](/ch04-114-多轮-agent-场景下-滴滴的-eagle-3-训推加速实践/)
 - [Be More Expressive To Close More Sales](/ch01-064-be-more-expressive-to-close-more-sales/)
 - [Datacomp For Language Models](/ch11-177-cost-effective-deployment-of-vision-language-models-for-pet/)

@@ -91,7 +91,7 @@
 
 - [Vibe Coding 到 Agentic Engineering](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)——了解「氛围编程」如何重塑开发流程
 - [Claude Code 架构](/ch01-571-claude-code-架构解析/)——Anthropic推出的AI编程代理，深入理解其设计哲学和能力边界
-- Coding Agent Architecture——从技术架构角度理解AI Agent与传统软件的根本差异
+- [Coding Agent Architecture——从技术架构角度理解AI Agent与传统软件的根本差异](/ch09-005-coding-agent-agent-loongsuite-pilot-3-agent/)
 
 ## 相关实体
 - [Claude Code Commands Usage Guide](/ch09-095-claude-code-commands-usage-guide/)

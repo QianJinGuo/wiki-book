@@ -14,7 +14,7 @@
 ## 相关实体
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](/ch12-004-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita/)
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess 1](/ch01-629-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita/)
-- You Ll Soon Be Able To Bet On Bitcoin Volatility Not Just Price On Cme
+- [You Ll Soon Be Able To Bet On Bitcoin Volatility Not Just Price On Cme](/ch01-684-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/)
 - London Met Police Big Tech Data Requests
 - [Clarity Act 5 Things](/ch12-007-5-things-to-know-about-the-clarity-act/)
 
