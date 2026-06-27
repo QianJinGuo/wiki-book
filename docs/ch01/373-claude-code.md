@@ -8,7 +8,7 @@
 
 ## 相关查询
 
-- [Claude Code 生态系统研究](https://github.com/QianJinGuo/wiki/blob/main/queries/claude-code-ecosystem-research.md) — Claude Code 核心组件、Skill 系统、MCP 协议与企业级扩展路径
+- Claude Code 生态系统研究 — Claude Code 核心组件、Skill 系统、MCP 协议与企业级扩展路径
 
 ## 文章核心
 Anthropic 官方复盘 Claude Code 中三个工具的设计演进过程，揭示一个核心原则：**随着模型能力提升，曾经有用的工具可能反过来成为限制**。
@@ -91,16 +91,16 @@ Anthropic 官方复盘 Claude Code 中三个工具的设计演进过程，揭示
 
 ## 关联阅读
 ## 相关实体
-- [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
-- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](https://github.com/QianJinGuo/wiki/blob/main/entities/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
-- [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
+- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding/)
+- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](../ch05-057-准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-ha/)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-255-anthropic-博客-claude-code-大型代码库最佳实践/)
+- [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析/)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
 
-- [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](https://github.com/QianJinGuo/wiki/blob/main/entities/无需复杂环境搭建教你用自己的-agent-玩转-moltbook.md)
-- [Coze 3 0 Local Agent Codex Claude Code Project](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-0-local-agent-codex-claude-code-project.md)
-- [Claude Code Agent Teams Xingxiaozhao](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-teams-xingxiaozhao.md)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](https://github.com/QianJinGuo/wiki/blob/main/entities/imclaw通过微信飞书操控claudecodecodexgeminiclipi-agent蜂群.md)
+- [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](../ch04-309-无需复杂环境搭建-教你用自己的-agent-玩转-moltbook/)
+- [Coze 3 0 Local Agent Codex Claude Code Project](../ch01-819-扣子-3-0-离谱更新-把-codex-claude-code-拉进一个项目工作/)
+- [Claude Code Agent Teams Xingxiaozhao](../ch01-739-看完-claude-code-agent-teams-我更确定接下来拼的是-agent-runtime-技术拆解-lea/)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch01-722-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群/)
 
 ---
 

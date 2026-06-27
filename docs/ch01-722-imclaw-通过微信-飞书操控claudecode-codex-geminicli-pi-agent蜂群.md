@@ -11,7 +11,7 @@
 - [我把 karpathy 的 autoresearch 搬到了软件开发领域，效果炸了](../ch01-740-我把-karpathy-的-autoresearch-搬到了软件开发领域-效果炸了)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/imclaw通过微信飞书操控claudecodecodexgeminiclipi-agent蜂群.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- MOC
 ## 深度分析
 
 IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群 涉及agent领域的核心技术议题。

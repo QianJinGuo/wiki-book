@@ -14,15 +14,15 @@
 Agent 在模糊需求前反复揣摩、多轮尝试、走了一半发现方向不对再重来——每一步都在烧 Token。
 
 ## 相关实体
-- [我用 Skillmd 做了一个简历生成器](https://github.com/QianJinGuo/wiki/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
-- [Hermes Agent Getting Started Guide 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-getting-started-guide-2026.md)
-- [Llm Raiders Private Ai Server](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-raiders-private-ai-server.md)
-- [Pi Mono Github](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-mono-github.md)
-- [我用 Skillmd 做了一个简历生成器](https://github.com/QianJinGuo/wiki/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
+- [我用 Skillmd 做了一个简历生成器](../ch07-047-我用-skill-md-做了一个简历生成器/)
+- [Hermes Agent Getting Started Guide 2026](../ch04-292-hermes-agent-保姆级教程-一句话组建你的-ai-打工团队/)
+- [Llm Raiders Private Ai Server](../ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se/)
+- [Pi Mono Github](../ch01-608-pi-mono-github/)
+- [我用 Skillmd 做了一个简历生成器](../ch07-047-我用-skill-md-做了一个简历生成器/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-engineering-ai-as-algorithm.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- MOC
 ## 深度分析
 
 **1. 概率模型与确定性执行的根本矛盾**

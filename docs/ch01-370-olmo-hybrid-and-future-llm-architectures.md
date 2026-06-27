@@ -104,7 +104,7 @@ The post-training difficulties point to a significant research gap: **architectu
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
 - [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
 - [Inference cost at scale with napkin math](../ch01-410-inference-cost-at-scale-with-napkin-math)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+- MOC
 
 ---
 

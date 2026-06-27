@@ -41,7 +41,7 @@
 - **关基企业**：电力、水务、医疗、制造等关键基础设施运营企业必须立即进行 OT 安全评估，摸清已连接互联网的 ICS 系统暴露面
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
 - [New cybersecurity industry coalition aims to lead US critical infrastructure protection](../ch11-004-new-cybersecurity-industry-coalition-aims-to-lead-us-critica)
 - [From Doer To Director: The AI Mindset Shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift)

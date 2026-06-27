@@ -10,11 +10,11 @@
 > 不是简单的"我们支持插件"的声明。扩展系统不是事后打补丁式的钩子集合，而是从架构第一天起就作为一等公民存在的能力注入层。
 
 ## 相关实体
-- [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
-- [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
-- [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
+- [Four Browser Automation Tools Comparison](../ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc/)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pi-agent-framework-event-bus-design.md)
 

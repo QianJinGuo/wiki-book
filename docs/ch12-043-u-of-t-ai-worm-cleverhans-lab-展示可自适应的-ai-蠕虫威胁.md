@@ -99,9 +99,9 @@ Papernot 团队的措辞很值得注意："It was imperative for us to understan
 - [构建基于多智能体架构的深度思考交易系统 V2](../ch04-205-构建基于多智能体架构的深度思考交易系统)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
-- [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)
-- [Agent Security Threat Models](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md)
-- [Llm Security Red Teaming](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-security-red-teaming.md)
+- Agent Security Architecture
+- Agent Security Threat Models
+- Llm Security Red Teaming
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
 

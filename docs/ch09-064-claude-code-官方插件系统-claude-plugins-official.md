@@ -125,7 +125,7 @@ Anthropic 采用「官方维护 30+ 内部插件 + 社区贡献 10+ 外部插件
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-official-plugins-anthropic.md)
 - [prosemirror @文档 mention：知识库 agent 输入框的工程化实现](../ch04-225-prosemirror-文档-mention-知识库-agent-输入框的工程化实现)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 
 ---
 

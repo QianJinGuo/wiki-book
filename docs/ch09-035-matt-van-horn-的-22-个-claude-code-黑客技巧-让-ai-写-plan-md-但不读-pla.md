@@ -105,7 +105,7 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 
 ### 实践价值：cmux 6 标签页并行 + 声音钩子是分布式认知的物理实现
 
-传统 Terminal 工作流是单线程的（一个任务完成后再开始下一个）。Matt 的 cmux 配置实现了真正的并行多 Agent 工作流：每个标签页是不同的认知进程，声音钩子（afplay Blow.aiff）是完成信号的人机交互协议。这个模式的深层洞察：**完成感知不是眼睛盯着进度条，而是听觉信号触发的注意力路由**。这与 [Llm Observability 4 Layer Model](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-observability-4-layer-model.md) 中的"交互控制系统"概念相通——但这里是声音驱动的，而非仪表盘驱动的。
+传统 Terminal 工作流是单线程的（一个任务完成后再开始下一个）。Matt 的 cmux 配置实现了真正的并行多 Agent 工作流：每个标签页是不同的认知进程，声音钩子（afplay Blow.aiff）是完成信号的人机交互协议。这个模式的深层洞察：**完成感知不是眼睛盯着进度条，而是听觉信号触发的注意力路由**。这与 Llm Observability 4 Layer Model 中的"交互控制系统"概念相通——但这里是声音驱动的，而非仪表盘驱动的。
 
 ### 深层博弈：Agent Cookie 让 CLI "登录真实世界"是 Agent 工具调用能力的质变
 

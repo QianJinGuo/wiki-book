@@ -78,21 +78,21 @@ AWS Samples 提供 `sample-your-opc-eks-agents` 仓库，包含：
 
 ## 相关主题
 
-- [多智能体编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)（概念层）
-- [AWS Bedrock AgentCore OS-level 浏览器工具](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-os-level-actions-browser.md)
-- [Aliyun AgentRun 5min 快速上手](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-agentrun.md)
+- 多智能体编排（概念层）
+- [AWS Bedrock AgentCore OS-level 浏览器工具](../ch04-156-agentcore-browser-os级操作-action-screenshot-reaction闭环/)
+- [Aliyun AgentRun 5min 快速上手](../ch04-003-agentrun/)
 
 ## 深度分析
 
-1. **Meta-Agent Pattern 是 Agent 平台规模化的必然演进**：当多 Agent 系统规模扩大时，平台自身的运维复杂度会指数级增长。Waylens 的解法——用 Admin Agent 管 Worker Agent——本质上是用同一套 Agent 逻辑治理 Agent 自身，这是 [多智能体编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) 从"单层协作"走向"多层自举"的关键转折点。相比传统的 SRE 手工运维或专用调度器，Meta-Agent 模式更具表达力：升级策略、故障判定、巡检节奏都可以用自然语言编写，而非硬编码规则。
+1. **Meta-Agent Pattern 是 Agent 平台规模化的必然演进**：当多 Agent 系统规模扩大时，平台自身的运维复杂度会指数级增长。Waylens 的解法——用 Admin Agent 管 Worker Agent——本质上是用同一套 Agent 逻辑治理 Agent 自身，这是 多智能体编排 从"单层协作"走向"多层自举"的关键转折点。相比传统的 SRE 手工运维或专用调度器，Meta-Agent 模式更具表达力：升级策略、故障判定、巡检节奏都可以用自然语言编写，而非硬编码规则。
 
-2. **EKS CRD + Operator 模式将"Agent 类型"提升为 Kubernetes 一等资源**：传统 Agent 编排平台往往自建调度层，而 Waylens 选择将 Agent 类型注册为 CRD，由 Operator 执行 reconcile。这意味着每个 Agent 实例的期望状态、实际状态、健康策略都可以复用 Kubernetes 生态的成熟工具链（Helm、kubectl、Vertical Pod Autoscaler）。[多智能体编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) 的工程化门槛因此大幅降低——不再需要从零实现自己的控制平面。
+2. **EKS CRD + Operator 模式将"Agent 类型"提升为 Kubernetes 一等资源**：传统 Agent 编排平台往往自建调度层，而 Waylens 选择将 Agent 类型注册为 CRD，由 Operator 执行 reconcile。这意味着每个 Agent 实例的期望状态、实际状态、健康策略都可以复用 Kubernetes 生态的成熟工具链（Helm、kubectl、Vertical Pod Autoscaler）。多智能体编排 的工程化门槛因此大幅降低——不再需要从零实现自己的控制平面。
 
-3. **Rex Backup Operator 揭示了 Meta-Redundancy 的必要性**：任何"管其他 Agent 的 Agent"本身都是一个单点故障。Waylens 引入第二层 EKS Operator（Rex）做备份，但这个设计引出了一个深层问题：当备份层本身也由 Agent 驱动时，是否需要第三层备份？这种递归冗余的终止条件是工程权衡问题，而非纯理论问题。从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md) 的视角看，Meta-Redundancy 是"高可靠性 Harness"设计的典型模式。
+3. **Rex Backup Operator 揭示了 Meta-Redundancy 的必要性**：任何"管其他 Agent 的 Agent"本身都是一个单点故障。Waylens 引入第二层 EKS Operator（Rex）做备份，但这个设计引出了一个深层问题：当备份层本身也由 Agent 驱动时，是否需要第三层备份？这种递归冗余的终止条件是工程权衡问题，而非纯理论问题。从 [Harness Engineering](../ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/) 的视角看，Meta-Redundancy 是"高可靠性 Harness"设计的典型模式。
 
-4. **S3 Files 替代 NFS 是跨 AZ Stateful Agent 场景的标准解法**：OpenClaw 多 Agent 共享状态在跨 AZ 漂移时，NFS 挂载会触发存储重建，导致 Agent 不可用。S3 Files（S3 挂载为文件系统）天然支持多 AZ 一致访问，且无需管理 NFS 服务端的高可用。这是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md) 中"存储 Harness 设计"在多 Agent 场景的具体应用。
+4. **S3 Files 替代 NFS 是跨 AZ Stateful Agent 场景的标准解法**：OpenClaw 多 Agent 共享状态在跨 AZ 漂移时，NFS 挂载会触发存储重建，导致 Agent 不可用。S3 Files（S3 挂载为文件系统）天然支持多 AZ 一致访问，且无需管理 NFS 服务端的高可用。这是 [Harness Engineering](../ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/) 中"存储 Harness 设计"在多 Agent 场景的具体应用。
 
-5. **平台自管理的本质是将 DevOps 问题转化为 Agent 决策问题**：传统 Agent 平台升级需要 SRE 执行 runbook，而 Waylens 的 Admin Agent 可以根据当前负载、版本兼容性、故障历史自动决定升级时机和回滚策略。这种"Agent 驱动的基础设施"代表了 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md) 的前沿方向：基础设施不再是被动的计算资源，而是可以被 Agent 感知、决策和操作的目标对象。
+5. **平台自管理的本质是将 DevOps 问题转化为 Agent 决策问题**：传统 Agent 平台升级需要 SRE 执行 runbook，而 Waylens 的 Admin Agent 可以根据当前负载、版本兼容性、故障历史自动决定升级时机和回滚策略。这种"Agent 驱动的基础设施"代表了 [Harness Engineering](../ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/) 的前沿方向：基础设施不再是被动的计算资源，而是可以被 Agent 感知、决策和操作的目标对象。
 
 ## 实践启示
 

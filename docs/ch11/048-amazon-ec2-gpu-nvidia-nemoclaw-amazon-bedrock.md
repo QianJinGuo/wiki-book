@@ -12,18 +12,18 @@
 - 生产化加固与成本优化考量
 
 ## 相关实体
-- [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
+- [Eks Gpu Operator Custom Driver Cuda Workload](../ch11-030-在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南/)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md)
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
-- [在 Amazon Eks 上使用 Nvidia Gpu Operator 管理自定义 Gpu 驱动与 Cuda 工作负载](https://github.com/QianJinGuo/wiki/blob/main/entities/在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载.md)
-- [Nvidia Nemotron 3 Ultra Now Available On Amazon Sagemaker Ju](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.md)
-- [miro-amazon-bedrock-bug-routing](https://github.com/QianJinGuo/wiki/blob/main/entities/miro-amazon-bedrock-bug-routing.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
+- [在 Amazon Eks 上使用 Nvidia Gpu Operator 管理自定义 Gpu 驱动与 Cuda 工作负载](../ch11-203-在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载/)
+- [Nvidia Nemotron 3 Ultra Now Available On Amazon Sagemaker Ju](../ch01-825-nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju/)
+- [miro-amazon-bedrock-bug-routing](../ch11-159-miro-amazon-bedrock-bug-routing/)
 
 ## 深度分析
 

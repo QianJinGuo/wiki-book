@@ -26,12 +26,12 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/modal-truly-serverless-gpus.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cloud-infrastructure.md)
+> 主题导航
 
 - [TiDB Cloud — Agent-native 数据库与 Kimi K2.6 合作](../ch11-077-tidb-cloud-agent-native-数据库与-kimi-k2-6-合作)
-- [Kimi K2.6 Agent Database：Agent-native 数据 Infra](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-k2-6-tidb-agent-database.md)
+- Kimi K2.6 Agent Database：Agent-native 数据 Infra
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](../ch11-040-阿里云-eventhouse-企业级-agent-上下文构建五维框架)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mcp-server-patterns.md)
+- MOC
 
 ---
 

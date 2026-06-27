@@ -162,7 +162,7 @@ RAG 里的迭代 ≠ Agent 里的 ReAct 循环：
 - [AgentOps: Amazon Bedrock 上的 Agent 运维](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
 - 谷歌研究博客: https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/
 - Gemini Enterprise: https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/rag-engine/cross-corpus-retrieval
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 
 ---
 

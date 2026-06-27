@@ -15,8 +15,8 @@
 - [LLM-as-a-Verifier: A General-Purpose Verification](../ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework)
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
+- MOC
+- MOC
 ## 深度分析
 LLM-as-a-Verifier 从根本上重新定义了 LLM-as-a-Judge 范式。传统方法将评分压缩为离散token（如1-8分），导致 27% 的平局率，无法区分复杂轨迹的细微差异。该框架通过三个维度实现细粒度反馈：
 1. **评分粒度扩展**：将离散评分改为概率分布，利用 top-K logprobs 近似连续奖励

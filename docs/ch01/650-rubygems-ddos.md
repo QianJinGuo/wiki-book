@@ -112,7 +112,7 @@ RubyGems 的响应体现了**纵深防御**理念：
 
 ## 相关实体
 
-- [软件安全](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)
+- 软件安全
 
 ---
 

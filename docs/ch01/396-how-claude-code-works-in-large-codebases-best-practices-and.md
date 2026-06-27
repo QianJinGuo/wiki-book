@@ -8,11 +8,11 @@
 - 评分：v=7 × c=8 = 56
 - The article is a well-structured, informative piece on deploying Claude Code at scale. It provides practical patterns, clear explanations of technical concepts (harness, extension points, LSP integrat
 ## 相关实体
-- [How_Claude_Code_Works_In_Large_Codebases](https://github.com/QianJinGuo/wiki/blob/main/entities/how_claude_code_works_in_large_codebases.md)
-- [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
-- [Code Review Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/code-review-graph.md)
-- [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-hackathon-winners-2026.md)
-- [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
+- [How_Claude_Code_Works_In_Large_Codebases](../ch09-013-how-claude-code-works-in-large-codebases-best-practices-and/)
+- [Claude Code Self Repair Hooks Memory Config](../ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
+- [Code Review Graph](../ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token/)
+- [Claude Code Hackathon Winners 2026](../ch01-772-claude-code-hackathon-winners-2026/)
+- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md)
 

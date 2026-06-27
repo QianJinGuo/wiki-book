@@ -12,7 +12,7 @@
 - [the code-as-content era](../ch01-397-the-code-as-content-era)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-wed-market-to-software-developers-at-startups-20260606.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 ## 深度分析
 
 How We’d Market to Software Developers at Startups 涉及article领域的核心技术议题。

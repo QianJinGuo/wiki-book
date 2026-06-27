@@ -25,11 +25,11 @@ Stainless成立于2022年，专注于将API规范自动转换为多语言SDK（T
 - `Openai Buys Ai Consultancy Enterprises` — OpenAI 收购相关案例，与 Anthropic 收购 Stainless 对比
 
 ## 相关实体
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](https://github.com/QianJinGuo/wiki/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
-- [Improve Bot Accuracy With Amazon Lex Assisted Nlu](https://github.com/QianJinGuo/wiki/blob/main/entities/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
-- [Opensquilla](https://github.com/QianJinGuo/wiki/blob/main/entities/opensquilla.md)
-- [Dictation Agents Human Workspace](https://github.com/QianJinGuo/wiki/blob/main/entities/dictation-agents-human-workspace.md)
-- [Google Deepmind Accelerator Asia Pacific](https://github.com/QianJinGuo/wiki/blob/main/entities/google-deepmind-accelerator-asia-pacific.md)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
+- [Improve Bot Accuracy With Amazon Lex Assisted Nlu](../ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu/)
+- [Opensquilla](../ch01-501-opensquilla/)
+- [Dictation Agents Human Workspace](../ch03-004-it-s-time-to-walk/)
+- [Google Deepmind Accelerator Asia Pacific](../ch11-202-we-re-launching-the-google-deepmind-accelerator-program-in-a/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-acquires-stainless.md)
 

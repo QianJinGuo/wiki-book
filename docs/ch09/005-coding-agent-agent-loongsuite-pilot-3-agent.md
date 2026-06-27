@@ -326,16 +326,16 @@ Pilot 平台的 OTel 标准化输出意味着企业可以将 Coding Agent 的执
 这一架构的另一个好处是**插桩库的可测试性**——插桩库只需要验证数据提取的准确性，而不需要关注遥测输出的正确性，大幅降低了单元测试的复杂度。
 
 ## 相关实体
-- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](https://github.com/QianJinGuo/wiki/blob/main/entities/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](https://github.com/QianJinGuo/wiki/blob/main/entities/alibabacloud-cms-manage-skill-natural-language-observability.md)
-- [Baidu Comate Coding Agent Feedback Loop Wanpeng](https://github.com/QianJinGuo/wiki/blob/main/entities/baidu-comate-coding-agent-feedback-loop-wanpeng.md)
-- [Harness Engineering Reliable Long Term Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-reliable-long-term-agent.md)
-- [Anthropic Coding Agents Social Science Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-coding-agents-social-science-survey-2026.md)
+- 阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地
+- [Alibabacloud Cms Manage Skill Natural Language Observability](../ch11-016-alibabacloud-cms-manage-skill-阿里云-cms-2-0-可观测接入的-ai-agent-sk/)
+- [Baidu Comate Coding Agent Feedback Loop Wanpeng](../ch09-042-coding-agent在百度的落地实践-从反馈闭环到工程范式重构/)
+- [Harness Engineering Reliable Long Term Agent](../ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
+- [Anthropic Coding Agents Social Science Survey 2026](../ch09-037-anthropic-coding-agent-社会科学家采用调查/)
 
 → [第 1 来源原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md)
 ---
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 ## 第 2 来源：从个人生产力到组织能力——LoongSuite-Pilot×SLS 的 AI Coding 度量实践
 
 > 作者：徐可甲（阿里云云原生）  

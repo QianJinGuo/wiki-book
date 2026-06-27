@@ -34,7 +34,7 @@ PHP 生态的供应链攻击揭示了一个深层问题：Composer 的插件机�
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 
 - [Semis Memo: Supply Chain Inheritance](../ch01-485-semis-memo-supply-chain-inheritance)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- MOC
 
 ---
 

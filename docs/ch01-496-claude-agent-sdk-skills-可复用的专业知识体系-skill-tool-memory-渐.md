@@ -112,7 +112,7 @@ Skills/Hooks/Subagents/MCP 四方分工不只是技术分类，更是产品化�
 - [Harness Engineering Core Patterns](../ch05-042-harness-engineering-核心模式)
 - [Claude Code + Superpowers 实践](../ch01-408-claude-code-skills-superpowers-practice)
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-agent-sdk-skills-reusable-knowledge.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 
 ---
 

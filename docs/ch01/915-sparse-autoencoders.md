@@ -5,9 +5,9 @@
 > 📊 Level ⭐⭐⭐⭐ | 5.6KB | `entities/sparse-autoencoders.md`
 
 ## 关联
-- [Natural Language Autoencoders](https://github.com/QianJinGuo/wiki/blob/main/entities/natural-language-autoencoders.md) — NLA 在 SAE 基础上增加文字输出能力
-- [Anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic.md) — 主要研究机构
-- [Mechanistic Interpretability](https://github.com/QianJinGuo/wiki/blob/main/concepts/mechanistic-interpretability.md) — 所属研究领域
+- [Natural Language Autoencoders](../ch01-896-natural-language-autoencoders-anthropic-激活-文字可解释性方法/) — NLA 在 SAE 基础上增加文字输出能力
+- [Anthropic](../ch01-677-anthropic/) — 主要研究机构
+- Mechanistic Interpretability — 所属研究领域
 
 ## 深度分析
 **SAE 是可解释性研究的"特征发现"工具**   ^[raw/anthropic-nla-natural-language-autoencoders-interpretability]
@@ -38,7 +38,7 @@ SAE 在 2023-2024 年成为 Mechanistic Interpretability 领域最活跃的子�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+- MOC
 
 ---
 

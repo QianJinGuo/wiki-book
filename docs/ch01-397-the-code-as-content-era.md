@@ -89,7 +89,7 @@
 - [17 种 agent 架构演进](../ch04-507-17种agent架构演进-控制流设计的完整演化史)
 - [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch01-745-karpathy加入anthropic后首讲-vibe-coding已死-software3-0来了)
 - [Erik Schluntz: vibe coding 在生产环境](../ch09-098-vibe-coding-in-production-erik-schluntz-anthropic)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering](../ch05-041-harness-engineering-概念框架/)
 
 ---
 

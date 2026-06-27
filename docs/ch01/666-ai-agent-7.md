@@ -12,11 +12,11 @@
 - Agent 岗位面试通过率：18.7%（Stanford AI Index 2026）
 
 ## 相关实体
-- [Claude Code Source Leak Lifecycle Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-source-leak-lifecycle-analysis.md)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](https://github.com/QianJinGuo/wiki/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md)
-- [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
-- [Pi Mono Github](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-mono-github.md)
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](https://github.com/QianJinGuo/wiki/blob/main/entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
+- [Claude Code Source Leak Lifecycle Analysis](../ch01-207-claude-md/)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch01-247-vibe-coding-and-agentic-engineering-convergence-simon-willi/)
+- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding/)
+- [Pi Mono Github](../ch01-608-pi-mono-github/)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-interview-7-capabilities.md)
 

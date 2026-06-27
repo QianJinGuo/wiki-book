@@ -40,7 +40,7 @@ Claude Managed Agents 官方发布的三大核心能力——dreaming、outcomes
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
 - [从 Prompt 到 Harness：最小实操指南](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- MOC
 
 ---
 

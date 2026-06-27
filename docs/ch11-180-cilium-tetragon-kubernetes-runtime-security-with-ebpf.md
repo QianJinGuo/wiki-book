@@ -82,7 +82,7 @@ Hubble Relay / Grafana / Falco Sidecar
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 
 ---
 

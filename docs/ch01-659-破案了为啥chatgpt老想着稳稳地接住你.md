@@ -17,7 +17,7 @@
 - source/wechat
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-ecosystem.md)
+> 主题导航
 
 - [奥特曼最险一战前女cto当庭翻脸openai权斗彻底打到台前](../ch01-513-奥特曼最险一战前女cto当庭翻脸openai权斗彻底打到台前)
 - [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](../ch01-275-openai携手五巨头开源革命性超算协议-一举解决超大集群llm训练不稳定和网络性能难题)

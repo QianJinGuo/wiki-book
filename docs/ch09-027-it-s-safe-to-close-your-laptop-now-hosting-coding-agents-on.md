@@ -91,7 +91,7 @@ Let’s see how AgentCore gets you both.
 - [Amazon Quick Bedrock Agentcore Finops Chat](../ch11-124-用-amazon-quick-bedrock-agentcore-打造对话式-finops-助手)
 - [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04-409-agent-orchestration)
 - [development environments for your cloud agents](../ch09-090-development-environments-for-your-cloud-agents)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 
 ---
 

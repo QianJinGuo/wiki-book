@@ -61,7 +61,7 @@ Gray Swan 的 Shade 工具在 red-teaming 领域实现了突破：**专用 red-t
 
 ### Agent 安全的新威胁模型
 
-随着 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的兴起，agent 获得了越来越多的工具调用能力。这带来了新的威胁模型：
+随着 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 的兴起，agent 获得了越来越多的工具调用能力。这带来了新的威胁模型：
 
 ```
 传统 LLM 威胁面：
@@ -105,7 +105,7 @@ AI 安全赛道正在从"学术研究"转向"商业产品"。Gray Swan 的 Serie
 
 - [Role Confusion](../ch01-500-prompt-injection-as-role-confusion) — Prompt injection 的理论框架
 - [AFine CSP Injection](../ch09-114-stealing-passwords-via-html-injection-under-a-strict-csp) — 具体的注入攻击案例
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 架构工程
+- [Harness Engineering](../ch05-041-harness-engineering-概念框架/) — Agent 架构工程
 - [Claude Tag](../ch01-886-introducing-claude-tag) — Anthropic 的 agent 安全实践
 - [OpenClaw](../ch01-835-openclaw-boris-cherny-agent-loop-design-patterns) — 计算机使用 agent 的安全挑战
 

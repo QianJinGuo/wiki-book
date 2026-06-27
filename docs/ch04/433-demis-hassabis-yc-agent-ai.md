@@ -12,11 +12,11 @@
 - 不存在的问题：他不认为几年后会有人说当前路线走错了
 
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
-- [Ath Agent Trust Handshake Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/ath-agent-trust-handshake-protocol.md)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md)
-- [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
+- [Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议/)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航/)
+- [Ath Agent Trust Handshake Protocol](../ch04-500-为了让agent更安全的工作-有多少人操碎了心/)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07-017-hermes自进化完整闭环-skill创建复用修补链路/)
+- [Four Browser Automation Tools Comparison](../ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/demis-hassabis-yc-interview-2026.md)
 

@@ -52,7 +52,7 @@ Slack 是整个 Agent 的交互界面。用户通过slash command（`/prepaid Ap
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](../ch03-019-turn-repeated-instructions-into-reusable-skills-in-lovable)
 - [Skillos Learning Skill Curation For Self Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](../ch04-013-automation-anywhere-collaborates-with-cisco-nvidia-okta-a)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-ai-agents-in-accounting.md)
 

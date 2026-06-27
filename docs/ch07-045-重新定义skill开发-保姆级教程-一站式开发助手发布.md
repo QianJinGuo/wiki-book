@@ -85,7 +85,7 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 ## 相关页面
 - [Skill 写作基础指南](../ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则) — 入门级别的 Skill 写作教程
 - [Skill 写作进阶](../ch01-319-agent-skill-进阶模式与治理) — 高级技巧
-- [Skill 评估方法](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-evaluation.md) — 如何评估 Skill 质量
+- Skill 评估方法 — 如何评估 Skill 质量
 
 ## 相关实体
 - [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路)
@@ -103,9 +103,9 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [Garry Tan](../ch01-497-garry-tan)
 - [Agent Workflows](../ch04-306-agent-workflows)
 - [Hermes Agent](../ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队)
-- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
+- Hermes Agent 新手上手指南
 - [你写的 Skill，及格了吗？](../ch07-046-你写的-skill-及格了吗)
-- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+- Hermes Agent Skill
 - [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图)
 - [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](../ch04-033-阿里云端到端业务需求专家-agent-multica-平台-superai-技能集群-tdd-pre-pus)
 

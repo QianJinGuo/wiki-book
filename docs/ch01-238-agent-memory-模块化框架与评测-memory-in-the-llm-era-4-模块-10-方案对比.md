@@ -45,7 +45,7 @@
 ## 相关主题
 -  — Agent Memory 架构本质（治理视角）
 - [Agent Self Improvement Six Mechanisms](../ch04-047-agent-自我改进的六条路) — Agent 自我改进机制，与 Memory 的"修正+遗忘"机制有交叉
-- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Hermes 的 Self-Evolving 机制与动态 Skill 沉淀，依赖有效 Memory 子系统
+- [Hermes Agent](../ch04-418-hermes-agent/) — Hermes 的 Self-Evolving 机制与动态 Skill 沉淀，依赖有效 Memory 子系统
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/memory-in-the-llm-era-iclr2026.md)
 
 ## 相关实体
@@ -54,9 +54,9 @@
 - [AI Agent 记忆系统架构](../ch04-145-how-ai-agent-memory-works)
 - [深度拆解 Hermes Agent 记忆系统](../ch04-418-hermes-agent)
 
-- [ai agent memory systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
+- ai agent memory systems
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
+- MOC
 ## 深度分析
 ### 框架本质：四组件是治理分工，不是功能切分
 论文将 Agent Memory 拆解为四组件（Information Extraction / Memory Management / Memory Storage / Information Retrieval），但这四个组件并非平等的"功能模块"。**治理的主轴在 Management 层**：Extraction 是入口过滤器，Storage 是组织结构，Retrieval 是读取策略——而 Management 决定哪些记忆被保留、演化或遗忘，直接决定了系统随时间是否保持有效。

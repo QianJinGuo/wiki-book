@@ -81,11 +81,11 @@ Aris Tsakpinis is a Senior Specialist Solutions Architect for Generative AI focu
 在 AgentCore Gateway 中配置 Cedar 策略引擎，拦截所有工具调用请求进行策略评估。每个工具通过 manifest 声明其归属（shared 或 application-specific）、认证方式和合规元数据，由 CI/CD pipeline 在 merge 时完成注册和验证。这种机制确保：即使攻击者通过 agent manipulation 尝试绕过，Policy 层仍会在 tool invocation 层面拒绝未授权操作，实现"纵深防御"。
 
 ## 相关实体
-- [Amazon Bedrock Agentic Payments Guardrails](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-agentic-payments-guardrails.md)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/secure-ai-agents-policy-lambda-interceptors-aws.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
+- [Amazon Bedrock Agentic Payments Guardrails](../ch04-059-enable-safe-agentic-payments-with-built-in-guardrails-using/)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco/)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz/)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 

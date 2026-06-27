@@ -35,11 +35,11 @@ NEO-unify 架构的核心创新在于**移除了视觉编码器（VE）和变分
 5. **关注 38B MoE 版本的能力跃升和配套推理成本**：38B MoE 在开源基准上的登顶意味着更强能力，但 MoE 的显存占用和推理调度复杂度也更高。在选型前需要实测 H100 单节点 vs 8B 版本的生成质量差距，判断是否值得为该差距付出额外的工程复杂度。
 
 ## 相关实体
-- [Sensnova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md)
-- [Loongsuite Genai Semconv Alibaba](https://github.com/QianJinGuo/wiki/blob/main/entities/loongsuite-genai-semconv-alibaba.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [Genesis Ai Gene 25 Embodied Foundation Model](https://github.com/QianJinGuo/wiki/blob/main/entities/genesis-ai-gene-25-embodied-foundation-model.md)
+- [Sensnova U1](../ch01-876-sensenova-u1-商汤原生统一多模态模型/)
+- Loongsuite Genai Semconv Alibaba
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
+- [Genesis Ai Gene 25 Embodied Foundation Model](../ch01-624-蛰伏一年-周衔团队带来首个具身基础模型-烹饪做实验弹琴-效果炸场/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sensnova-u1-sensetime.md)
 

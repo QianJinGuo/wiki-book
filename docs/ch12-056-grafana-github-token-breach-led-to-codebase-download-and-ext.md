@@ -63,7 +63,7 @@ Grafana 主动在 X 平台公布事件进展，遵循了 modern breach disclosur
 - [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch09-050-1-click-github-token-stealing-via-a-vscode-bug-ammaraskar)
 - [Github Investigating Teampcp Claimed 17Cc77](../ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o)
 - [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch12-087-github-breached-employee-device-hack-led-to-exfiltration)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt-2.md)
 

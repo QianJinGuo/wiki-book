@@ -35,15 +35,15 @@
 5. **回放不是严格复现**：模型有随机性，回放只能做相似条件下的验证，用于判断优化方向
 
 ## 相关实体
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
-- [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
-- [Agent Harness Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者/)
+- [Code As Agent Harness Survey](../ch09-046-code-as-agent-harness-综述/)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [Agent Harness Architecture](../ch04-207-agent-harness-架构/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-observability-production.md)
-- [perplexity computer empirical study: how ai agents reshape k](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-computer-knowledge-work-empirical-study.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- [perplexity computer empirical study: how ai agents reshape k](../ch04-085-perplexity-computer-empirical-study-how-ai-agents-reshape-k/)
+- MOC
 
 ---
 

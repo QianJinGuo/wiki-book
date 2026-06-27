@@ -44,16 +44,16 @@ Token 级可观测的第一个落地点是慢 Token 定位。当一个 token 的
 LoongSuite 当前支持 8+ 框架的 Invocation 统一抽象值得参考——它证明了跨框架语义对齐的可行性。但要注意，Invocation 数据类的设计必须足够抽象（只提取共性字段），否则每次框架 API 变化都会导致映射断裂。建议在贡献上游前，先在3个以上不同框架上验证抽象的完备性。
 
 ## 关联实体
-- [Hermes 可观测性](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability.md) — LoongSuite 已支持 Hermes Agent 插桩
+- Hermes 可观测性 — LoongSuite 已支持 Hermes Agent 插桩
 - 遵循 [OpenTelemetry](https://opentelemetry.io/) GenAI SemConv 标准，LoongSuite 是厂商增强扩展
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 可观测是 Harness 的关键维度
+- [Harness Engineering 框架](../ch05-041-harness-engineering-概念框架/) — 可观测是 Harness 的关键维度
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loongsuite-genai-semconv-alibaba.md)
 
 ## 相关实体
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch01-364-harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统)
 - [Claude Code Agent 工程设计](../ch04-015-claude-code-的-agent-工程)
 - [你不知道的 Agent 原理架构与工程实践](../ch04-300-agent-principle-architecture-engineering-practice)
-- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
+- Coding Harness 工程本质
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch01-308-ralph-loop-不够用-长时间-agent-还缺这-3-件事)
 
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](../ch01-288-在-rds-postgresql-中实现-rabitq-量化)

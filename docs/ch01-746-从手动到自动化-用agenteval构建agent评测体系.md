@@ -62,7 +62,7 @@ Claude/Agent 评测的核心痛点：
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
+- MOC
 
 ---
 

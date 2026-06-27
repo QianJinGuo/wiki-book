@@ -38,7 +38,7 @@ NVIDIA Nemotron 3 Ultra is an open large language model with 550 billion total p
 ### 关联实体
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
@@ -52,7 +52,7 @@ NVIDIA Nemotron 3 Ultra is an open large language model with 550 billion total p
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- MOC
 
 ---
 

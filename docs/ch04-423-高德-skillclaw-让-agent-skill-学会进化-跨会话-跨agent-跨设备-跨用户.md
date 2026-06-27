@@ -19,7 +19,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-collective-intelligence.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- MOC
 ## 深度分析
 
 **群体智能的实现需要突破"单实例经验孤岛"，而这需要分层递进的架构设计。** SkillClaw 将群体智能划分为四个层次：单个用户内跨会话汇聚压缩、多 Agent 间经验共享、多设备间技能库同步、多用户间团队经验沉淀 。每一层都解决不同范围的经验共享问题，但底层共享同一个进化机制。这四个层次的递进关系揭示了一个重要洞察：群体智能不是一蹴而就的，而是从最小单元（个人会话）开始，逐步扩展到更大范围。

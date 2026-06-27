@@ -11,15 +11,15 @@
 - **影响范围**：任何通过 `npx skills add`、GitHub仓库或 skills.sh 等平台安装未审查 Skill 的用户均受影响
 - **攻击前提**：用户需主动触发恶意 Skill，且 Claude Code 未启用沙箱隔离
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
-- [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-system-design-three-way-comparison.md)
-- [Claude Code Skills Mcp Rules Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
-- [Claude Code Skills Mcp Rules Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
-- [Claude Code Skills Mcp Rules Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01-615-skill-issues-compromising-claude-code-with-malicious-skills/)
+- [Skill System Design Three Way Comparison](../ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
+- [Claude Code Skills Mcp Rules Source Analysis](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
+- [Claude Code Skills Mcp Rules Source Analysis](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
+- [Claude Code Skills Mcp Rules Source Analysis](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents.md)
 
-- [xz-utils backdoor 2 years on — maintainer trust hijack patte](https://github.com/QianJinGuo/wiki/blob/main/entities/xz-utils-backdoor-maintainer-trust-hijack-2-years-on.md)
+- [xz-utils backdoor 2 years on — maintainer trust hijack patte](../ch12-027-xz-utils-backdoor-2-years-on-maintainer-trust-hijack-patte/)
 
 ## 深度分析
 - **Skill 供应链攻击的本质**：Skill 文件（`.claude/commands/*.md` 或 `.claude/skills/*/SKILL.md`）本质上是自然语言指令集，但通过 `allowed-tools` frontmatter 可以声明工具权限，这等同于要求操作系统授予特定权限。相比 PyPI/npm 的包管理生态，Skill 文件缺乏签名验证、版本锁定或来源审计机制，攻击门槛极低。

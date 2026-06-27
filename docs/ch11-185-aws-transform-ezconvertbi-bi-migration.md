@@ -20,7 +20,7 @@ If you're running a legacy BI tool, you face compounding pressures that go beyon
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-transform-ezconvertbi-bi-migration.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 ## 深度分析
 
 AWS Transform 与 Wavicle Data Solutions 的 EZConvertBI 合作，将 AI Agent 引入 BI 迁移领域，这代表了企业现代化工具正在经历代际跃迁。传统的 BI 迁移项目通常需要数月时间，涉及大量人工评估、依赖映射和资产重建工作。而基于 AI Agent 的自动化方法通过分析、转换两个阶段的 Agent 协同，能够在 AWS 账户内完成整个迁移流程，所有数据不离开客户环境，没有外部传输的安全顾虑。这种方法可能将数百个仪表板的迁移从月级别压缩到天级别，这对企业决策者来说是一个根本性的范式转变。

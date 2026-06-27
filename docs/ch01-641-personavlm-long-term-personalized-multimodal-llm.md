@@ -19,7 +19,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/personavlm-long-term-personalization.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+- MOC
 ## 深度分析
 
 **五类记忆分层是认知架构的工程化实现。** PersonaVLM 将心理学经典理论（大五人格）引入 LLM 个性化建模，将记忆划分为性格画像、核心记忆、语义记忆、情景记忆和程序性记忆。这一设计本质上是在模型之外构建了一个**可演进的用户模型（User Model）**，使个性化信息独立于模型权重存在，支持动态更新而不需要重训练 。

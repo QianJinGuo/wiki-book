@@ -147,7 +147,7 @@ Hermes 当前已经实现了**原始数据派的核心能力**：
 
 - [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch03-053-hermes-wiki-实战-obsidian-hermes-agent-自动生长知识网络的-9-步搭建法)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- MOC
 ## 深度分析
 
 ### 1. 流派之争的本质：人本设计 vs 系统本设计

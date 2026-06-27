@@ -175,13 +175,13 @@ AGENTS.md 只有 ~100 行充当"目录页"，指向仓库里的详细文档（AR
 
 ## 相关实体
 
-- [反向审计 prompt 范式 — 从 vb 50 行 codex 自我蒸馏到 5 行核心](https://github.com/QianJinGuo/wiki/blob/main/entities/reverse-audit-prompt-paradigm-codex-5-line-version.md)
+- 反向审计 prompt 范式 — 从 vb 50 行 codex 自我蒸馏到 5 行核心
 → [第 1 来源 ConardLi Harness 综合性指南原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-comprehensive-guide-conardli.md)
 → [第 2 来源 ConardLi Beautiful Article Skill 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/conardli-harness-practice-beautiful-article-reacticle-2026-06-18.md)
 
 ---
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- MOC
 ## 第 2 来源：Beautiful Article Skill 实证 + Reacticle 组件协议（2026-06-18）
 
 **核心命题**：**好的 Harness 是可以迁移的**——把视频 Skill 的骨架（4 阶段 + 2 Checkpoint + 文件化记忆）原样搬到文章生成任务上（8 阶段 + 3 Checkpoint + 同样的文件化记忆）。
@@ -294,7 +294,7 @@ Phase 8  Delivery             ★Checkpoint 3 必须停 → 交付 article.html
 ### 与 wiki 既有内容的关系
 
 - **与 [Harness Engineering 实体](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)（290 行 5 source merged）**：Harness 理论 + 5 制品 + 3 阵营 + 5 原则；本 ConardLi 实践 = Harness 理论的**工程实现**
-- **与 [古法程序员 spec 写作](https://github.com/QianJinGuo/wiki/blob/main/entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md)（2026-05-25）**：古法程序员 = spec 写作的通用框架（rule/docs/skill 三类目录 + skill 三层 + gate 四态 + edge 三种）；Beautiful Article = skill 三层架构的**特化应用**（编排层 + 阶段层 Phase 0-8 + 原子层 component-policy/raw-policy）；Beautiful Article 的 gate = ConardLi 9 套 Checkpoint + 三视角终审
+- **与 古法程序员 spec 写作（2026-05-25）**：古法程序员 = spec 写作的通用框架（rule/docs/skill 三类目录 + skill 三层 + gate 四态 + edge 三种）；Beautiful Article = skill 三层架构的**特化应用**（编排层 + 阶段层 Phase 0-8 + 原子层 component-policy/raw-policy）；Beautiful Article 的 gate = ConardLi 9 套 Checkpoint + 三视角终审
 
 ---
 
@@ -326,9 +326,9 @@ Phase 8  Delivery             ★Checkpoint 3 必须停 → 交付 article.html
 
 **补充阅读**：
 
-- [Agent Harness 与 Context Management：Working Set 管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Context Engineering 三种记忆范式](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
+- Agent Harness 与 Context Management：Working Set 管理
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/)
+- Context Engineering 三种记忆范式
 
 ---
 

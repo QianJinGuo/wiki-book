@@ -119,8 +119,8 @@ Dreaming 和 Outcomes 可以独立使用，也可以组合使用。先用 Outcom
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-dreaming-claude-managed-agents-ovZ5v7jJkqDKSu9xmxwt8w.md).md]
 
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Managed Agents 是 Anthropic 官方 Harness 产品
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- [Harness Engineering 框架](../ch05-041-harness-engineering-概念框架/) — Managed Agents 是 Anthropic 官方 Harness 产品
+- MOC
 
 ---
 

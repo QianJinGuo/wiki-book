@@ -17,7 +17,7 @@
 
 ## 相关实体
 - [Microsoft Agent Framework Structured Output](../ch03-102-microsoft-agent-framework-结构化输出-response_format-与-response-v)
-- [Microsoft Agent Framework Python Zizhi](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-agent-framework-python-zizhi.md)
+- Microsoft Agent Framework Python Zizhi
 - [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](../ch01-157-800行代码实现-open-claw-的-tool-消息总线-子agent管理架构)
 - [Open Claw Tool Bus Subagent Architecture](../ch01-237-800行代码实现-open-claw-的-tool-消息总线-子agent管理架构)
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)

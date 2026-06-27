@@ -15,9 +15,9 @@
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [我给Hermes配了4个Agent，真正有用的是这些事](https://github.com/QianJinGuo/wiki/blob/main/entities/我给hermes配了4个agent真正有用的是这些事.md)
-- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](https://github.com/QianJinGuo/wiki/blob/main/entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验.md)
+- [我给Hermes配了4个Agent，真正有用的是这些事](../ch01-065-我给hermes配了4个agent-真正有用的是这些事/)
+- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch01-079-特斯拉百万年薪招数据标注员-朝九晚五-无需ai经验/)
 
 ## 深度分析
 **从生活痛点出发而非技术栈出发**：vmiss 反复强调的核心观点是"先问自己日常生活里有哪些麻烦，而不是先研究技术栈"。他记录了一周的活动清单，找出重复性高、价值低的任务，然后才去配置对应的 Agent。这个方法论的本质是把 AI Agent 当作"外包苦力"而非"智能伙伴"——你指挥，它执行，你验证。这与当下许多 Agent 项目的宣推路径完全相反。

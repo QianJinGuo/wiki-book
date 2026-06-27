@@ -13,7 +13,7 @@
 - Anthropic 于 2026 年 2 月推出了 Claude Code 的手机到设备控制功能，但同样受限于设备锁屏后的限制 
 ## 相关实体
 - [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](../ch12-015-resecurity-cve-2026-20182-unauthenticated-cisco-sd-wan-co)
-- [Cve 2026 20182 Cisco Sd Wan Vhub Bypass](https://github.com/QianJinGuo/wiki/blob/main/entities/cve-2026-20182-cisco-sd-wan-vhub-bypass.md)
+- Cve 2026 20182 Cisco Sd Wan Vhub Bypass
 - [Google Workspace Updates Small Businesses Can Now Import Use](../ch01-749-google-workspace-updates-small-businesses-can-now-seamlessl)
 - [Computer Use 45X More Expensive Than Structured Apis](../ch04-241-computer-use-45x-more-expensive-than-structured-apis)
 - [Workspaceupdates Googleblog Com Google Workspace Updates](../ch01-324-google-workspace-updates-small-businesses-can-now-seamlessl)

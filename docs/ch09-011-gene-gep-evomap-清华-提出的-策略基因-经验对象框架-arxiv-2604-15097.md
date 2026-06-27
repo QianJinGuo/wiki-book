@@ -220,9 +220,9 @@ Benchmark70 任务全量复现：https://github.com/EvoMap/critpt-openclaw-repro
 4. **GEP 协议是 A2A 群体智能的基础设施**：若计划让多个 Agent 之间交换经验，传输结构化 Gene 对象（而非 Skill 文档）才能实现可匹配、可验证、可累积的群体进化——[Darwin Skill 互优化](../ch04-418-hermes-agent)的跨 Agent 经验交换实验可作为参考实现
 5. **结构宽容意味着 Gene 可以跨版本复用**：过时 Gene 只要控制框架对仍可用——在更新 Gene 池时优先更新 strategy 层和 AVOID 警告，而非推翻重来
 
-- [Agent Skill Writing](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing.md) — Agent Skill 编写指南（渐进式披露三阶段）
+- Agent Skill Writing — Agent Skill 编写指南（渐进式披露三阶段）
 - [Agent Skill Writing Advanced](../ch01-319-agent-skill-进阶模式与治理) — Skill 高级实践
-- [Agent Skill Writing Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-evaluation.md) — Skill 评估方法
+- Agent Skill Writing Evaluation — Skill 评估方法
 - [Agent Skill Writing Guide](../ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则) — Skill 编写完整指南
 - [Agent Skill Writing Practices](../ch04-242-agent-skill-高质量编写规范) — Skill 最佳实践
 - [Anthropic Agent Skills Design Patterns 14](../ch01-677-anthropic) — Anthropic 官方 14 个 Skill 设计模式

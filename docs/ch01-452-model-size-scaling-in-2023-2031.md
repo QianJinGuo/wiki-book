@@ -115,7 +115,7 @@ Sparsity 从 8x 到 30x 的演进是模型规模膨胀的关键驱动因素：
 
 ## 相关实体
 
-- [Moebius](https://github.com/QianJinGuo/wiki/blob/main/entities/moebius.md) — 模型压缩的极端案例（0.22B 替代 11.9B）
+- Moebius — 模型压缩的极端案例（0.22B 替代 11.9B）
 - MoE（Mixture of Experts）架构是 Sparsity 实现的核心技术
 - Chinchilla Scaling Law 是本文修正和扩展的理论基础
 - [模型服务路由](../ch01-838-state-of-routing-in-model-serving) — 推理时的模型选择策略

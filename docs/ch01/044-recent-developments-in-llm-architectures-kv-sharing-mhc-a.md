@@ -39,11 +39,11 @@ DeepSeek V4引入两项关键创新：
 **mHC对系统设计的影响值得关注**：mHC的多残差流意味着hidden state维度在层间会动态变化（n倍展开），这对内存带宽、流水线调度和显存分配都提出新的要求。在设计训练或推理系统时，需要考虑这种非均匀残差流带来的复杂度。
 **数据质量仍是核心驱动力**：尽管架构调整贡献显著，Sebastian Raschka在文末强调，模型质量的主要驱动力仍然是数据质量和训练配方，而非架构本身。  这提示在关注架构演进的同时，不应低估数据工程和训练稳定性的基础价值。
 ## 相关实体
-- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](https://github.com/QianJinGuo/wiki/blob/main/entities/recent-developments-in-llm-architectures-kv-sharing-mhc-and-compressed-attention.md)
-- [Recent Developments In Llm Architectures Jiqizhixin](https://github.com/QianJinGuo/wiki/blob/main/entities/recent-developments-in-llm-architectures-jiqizhixin.md)
-- [Why Im Leaving Github For Forgejo](https://github.com/QianJinGuo/wiki/blob/main/entities/why-im-leaving-github-for-forgejo.md)
-- [From Doer To Director The Ai Mindset Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
-- [Microsoft For Startups Microsoft](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-for-startups-microsoft.md)
+- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](../ch01-405-recent-developments-in-llm-architectures-kv-sharing-mhc-a/)
+- [Recent Developments In Llm Architectures Jiqizhixin](../ch01-847-recent-developments-in-llm-architectures-kv-sharing-mhc-a/)
+- [Why Im Leaving Github For Forgejo](../ch01-011-why-i-m-leaving-github-for-forgejo/)
+- [From Doer To Director The Ai Mindset Shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift/)
+- [Microsoft For Startups Microsoft](../ch01-110-microsoft-for-startups-microsoft/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/recent_developments_in_llm_architectures.md)
 

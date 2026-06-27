@@ -24,7 +24,7 @@ Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 - [突发Anthropic拿下马斯克Colossus 1全部算力Claude要放开用了](../ch01-677-anthropic)
 - [anthropic 最新播客：如何打造下一代 claude](../ch01-677-anthropic)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 ## 深度分析
 
 Anthropic 此次升级揭示了一个重要的模型优化规律：**模型能力的提升往往不是全面的，而是通过 trade-off 实现的**。Claude 4.7 在编程（SWE-bench Pro +10.9%）和视觉（XBOW +44%）上的显著提升，是以长上下文检索能力大幅退步为代价的（MRCR v2 256k 下 -32.7%，1M 下 -46.1%）。这种「此消彼长」的现象在 AI 模型迭代中并不罕见——当团队将更多参数和训练资源投向特定能力时，其他能力可能成为牺牲品。对于 AI 应用开发者而言，这意味着不能盲目追新，而需要根据自家产品的核心场景选择合适的模型版本。

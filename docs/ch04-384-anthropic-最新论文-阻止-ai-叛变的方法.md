@@ -37,7 +37,7 @@ source_url: https://mp.weixin.qq.com/s/ZYZTTcel9_To123vcvoY4w
 - [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](../ch01-677-anthropic)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01-677-anthropic)
 - [Yc Ryo Self Improving Company Ai](../ch04-308-如何用ai打造一家自我进化的公司)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 
 ---
 

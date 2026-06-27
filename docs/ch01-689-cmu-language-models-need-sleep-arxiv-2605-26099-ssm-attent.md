@@ -55,7 +55,7 @@ CMU Language Models Need Sleep (arxiv 2605.26099)：SSM-Attention 睡眠巩固�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 
 ---
 

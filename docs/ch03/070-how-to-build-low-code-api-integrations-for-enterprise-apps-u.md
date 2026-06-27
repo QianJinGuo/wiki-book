@@ -160,11 +160,11 @@ OIN + API Integration Actions 的组合创造了：
    - 低代码平台应该封装协议细节，而非将复杂性转移到用户配置
    - 错误处理、条件分支等能力要内置，而非要求用户自己实现
 ## 相关实体
-- [Build An Enterprise Observability Solution For Amazon Quick](https://github.com/QianJinGuo/wiki/blob/main/entities/build-an-enterprise-observability-solution-for-amazon-quick.md)
-- [Hs.Playerzero Ai Code Review](https://github.com/QianJinGuo/wiki/blob/main/entities/hs.playerzero-ai-code-review.md)
-- [Code Simulation For Enterprise Engineering Playerz](https://github.com/QianJinGuo/wiki/blob/main/entities/code-simulation-for-enterprise-engineering-playerz.md)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](https://github.com/QianJinGuo/wiki/blob/main/entities/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
-- [Top 10 Design Gadgets Creative Professionals 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
+- [Build An Enterprise Observability Solution For Amazon Quick](../ch11-020-build-an-enterprise-observability-solution-for-amazon-quick/)
+- [Hs.Playerzero Ai Code Review](../ch01-076-code-simulation-for-enterprise-engineering-playerzero/)
+- [Code Simulation For Enterprise Engineering Playerz](../ch01-119-code-simulation-for-enterprise-engineering-playerzero/)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake/)
+- [Top 10 Design Gadgets Creative Professionals 2026](../ch03-024-top-10-design-gadgets-for-creative-professionals-that-will-c/)
 
 ---
 

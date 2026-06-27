@@ -75,11 +75,11 @@ Karpathy 的原始规则用身份语言（"像资深工程师"）来传递行为
 ## 相关实体
 - [Claude Code 可控性：软规则无法变成硬约束](../ch09-067-claude-code-可控性-软规则无法变成硬约束) — 软规则 vs 硬约束的深度对比
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07-006-claude-code-skills-mcp-rules-source-analysis)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- Claude Code vs OpenClaw Agent 记忆系统对比
 - [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制)
-- [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-subagent-context-hygiene.md)
+- Claude Code Subagent 上下文卫生
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 
 ---
 

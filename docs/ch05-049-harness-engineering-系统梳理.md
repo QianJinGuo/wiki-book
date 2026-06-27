@@ -90,9 +90,9 @@ Harness 的渐进披露信息系统：
 - Agent 总对自己的结果太宽容 → 验证流程更明确、更可观察、更可复盘
 
 ## 相关
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering 框架](../ch05-041-harness-engineering-概念框架/)
 - [Agent 工程实践](../ch04-435-agent-engineering-principles-architecture-practice)
-- [OpenClaw 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)
+- OpenClaw 架构
 
 ## 深度分析
 1. **AI 决策仅占 1.6%**——VILA-Lab 分析 Claude Code 51.2 万行源码发现，98.4% 是确定性工程基础设施（权限网关、上下文管理、工具路由、错误恢复）。这说明工程复杂度不在模型本身，而在模型所依赖的系统环境。

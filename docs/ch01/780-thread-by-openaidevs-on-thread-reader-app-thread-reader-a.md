@@ -27,11 +27,11 @@ Programmatic Access Tokens 的推出是此次更新的另一条主线：Scoped c
 - **在安全敏感的代码库中谨慎启用 Hooks**：PostToolUse Hook 可修改 MCP 工具输出从而影响模型决策，在对 Codex 做基准测试或安全审查时，应使用 `--no-hooks` 模式排除干扰因素，确保评估结果的公平性 。
 
 ## 相关实体
-- [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
-- [Thread Patrickogrady](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-patrickogrady.md)
-- [Thread 0Xcheeezzyyyy](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-0xcheeezzyyyy.md)
+- [Zeus Rwa Thread Reader](../ch01-132-thread-by-zeusrwa-on-thread-reader-app/)
+- [Thread Patrickogrady](../ch03-010-thread-by-_patrickogrady-on-thread-reader-app/)
+- [Thread 0Xcheeezzyyyy](../ch01-748-thread-by-0xcheeezzyyyy-on-thread-reader-app-thread-reade/)
 - 
-- [Agi Road May Be Wrong From The Start Wang Peng Tencent](https://github.com/QianJinGuo/wiki/blob/main/entities/agi-road-may-be-wrong-from-the-start-wang-peng-tencent.md)
+- [Agi Road May Be Wrong From The Start Wang Peng Tencent](../ch01-190-agi-之路-可能从一开始就走错了/)
 
 ---
 

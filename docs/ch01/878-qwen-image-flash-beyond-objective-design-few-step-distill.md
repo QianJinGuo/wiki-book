@@ -68,12 +68,12 @@ The central message — "recipe matters as much as objective" — generalizes be
 The Qwen-Image-Flash paper is best read as a case study of a **recipe-first** approach to distillation, applicable wherever a multi-step teacher is being compressed into a few-step student.
 
 ## 相关实体
-- [Aws Sun Finance Ai Id Extraction Fraud Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sun-finance-ai-id-extraction-fraud-detection.md)
-- [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Bonsai Image 4B 1 Bit Ternary](https://github.com/QianJinGuo/wiki/blob/main/entities/bonsai-image-4b-1-bit-ternary.md)
-- [Liteframeefficientvisionencodersunlockframescalinginvideollms](https://github.com/QianJinGuo/wiki/blob/main/entities/liteframeefficientvisionencodersunlockframescalinginvideollms.md)
-- [Agentexecutorgooglesdistributedagentruntime](https://github.com/QianJinGuo/wiki/blob/main/entities/agentexecutorgooglesdistributedagentruntime.md)
-- [count anything - 文本引导的通用目标计数框架](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2605-30846-count-anything-2026.md)
+- Aws Sun Finance Ai Id Extraction Fraud Detection
+- [Trackingtamperedchefclustersviacertificateandcodereuse](../ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
+- Bonsai Image 4B 1 Bit Ternary
+- [Liteframeefficientvisionencodersunlockframescalinginvideollms](../ch01-890-liteframe-efficient-vision-encoders-unlock-frame-scaling-in/)
+- [Agentexecutorgooglesdistributedagentruntime](../ch01-411-agent-executor-google-s-distributed-agent-runtime/)
+- count anything - 文本引导的通用目标计数框架
 
 ## 关键引用
 

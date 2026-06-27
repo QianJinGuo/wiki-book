@@ -31,7 +31,7 @@ Claude Code 中有三个易混淆但本质不同的概念：[^1]
 4. **/loop 集成**：后台会话支持按 schedule 自迭代，带 ✢ 图标标识  
 
 ## 与 Hermes 的关联
-Agent View 解决的问题域与 Hermes 的 [Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 高度相关：  
+Agent View 解决的问题域与 Hermes 的 [Agent 编排](../ch04-418-hermes-agent/) 高度相关：  
 
 - Hermes 通过 wiki-pipeline 编排多个 agent 协作
 - Agent View 的 worktree 隔离方案是 Agent Harness 中多 agent 并行的参考模式
@@ -81,11 +81,11 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - [Claude Code Agent 工程设计](../ch04-015-claude-code-的-agent-工程)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道)
 - [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- Claude Code vs OpenClaw Agent 记忆系统对比
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09-039-claude-md-12-条规则-karpathy-扩展模板)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人)
-- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
+- Claude Code 工具设计演化
 - [AutoResearch：多 Agent 自动化软件开发](../ch09-030-autoresearch-多-agent-自动化软件开发)
 - [Claude Opus 4.7 发布分析](../ch01-314-claude-opus-4-7-发布分析)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch01-677-anthropic)
@@ -97,7 +97,7 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 - [2026年最值得关注的15款开发者工具深度解读](../ch01-001-2026年最值得关注的15款开发者工具深度解读)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- MOC
 
 ---
 

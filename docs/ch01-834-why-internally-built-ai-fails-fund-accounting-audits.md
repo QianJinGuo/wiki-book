@@ -55,7 +55,7 @@ COSO's 2026 generative-AI guidance and PCAOB AS 2201 raised the audit bar for AI
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 
 ---
 

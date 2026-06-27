@@ -115,14 +115,14 @@ Loop Engineering    → 怎么管（跨任务编排、验证、状态管理）
 
 ## 相关实体
 
-- [Loop Engineering 核心范式（13 来源合并）](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-addy-osmani-challengehub.md)
-- [Loop Engineering 反馈控制系统](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-feedback-control-system.md)
-- [Loop Engineering 四层循环栈（LangChain）](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-langchain-four-layer-loopcraft.md)
-- [Loop Engineering 清华框架](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-tsinghua-2026.md)
-- [Agent Loop 8 个未解问题（腾讯陈进）](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
-- [OpenClaw Agent Loop 设计范式](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-agent-loop-design-patterns.md)
-- [AI Agent Loops Claude Code Codex](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-loops-claude-code-codex.md)
-- [Hermes Agent Loop 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-loop-architecture.md)
+- [Loop Engineering 核心范式（13 来源合并）](../ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad/)
+- [Loop Engineering 反馈控制系统](../ch05-004-loop-engineering-把反馈循环放进工程现场/)
+- [Loop Engineering 四层循环栈（LangChain）](../ch04-377-loop-engineering-四层循环栈-从-agent-循环到爬坡循环-langchain-官方框架/)
+- Loop Engineering 清华框架
+- [Agent Loop 8 个未解问题（腾讯陈进）](../ch04-143-agent-loop-工程手册-8-个未解问题-self-protocol-治理薄壳-腾讯陈进的二手解读与单-age/)
+- [OpenClaw Agent Loop 设计范式](../ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式/)
+- [AI Agent Loops Claude Code Codex](../ch04-454-how-i-ai-how-to-write-ai-agent-loops-in-claude-code-and/)
+- [Hermes Agent Loop 架构](../ch04-218-hermes-agent-loop-架构/)
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loop-engineering-codebuddy-tencent-eliqiao-2026.md)
 
 ---

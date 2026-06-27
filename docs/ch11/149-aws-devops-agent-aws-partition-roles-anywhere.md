@@ -45,12 +45,12 @@
 **实战踩坑：RequestExpired 凭证一小时后全失效。** Roles Anywhere 签发的临时凭证默认有效期 1 小时，MCP Server 长时间运行不刷新会导致所有 API 调用返回 RequestExpired。修复：启动时初始化凭证刷新循环，每 50 分钟重新调用 CreateSession 获取新凭证。
 
 ## 相关实体
-- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md)
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
-- [Habby Game Aws Devops Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/habby-game-aws-devops-agent.md)
-- [Outlook Ai Agent Aws Fargate Claude Agent Sdk](https://github.com/QianJinGuo/wiki/blob/main/entities/outlook-ai-agent-aws-fargate-claude-agent-sdk.md)
-- [将 Aws Devops Agent 智能运维能力延伸到中国区](https://github.com/QianJinGuo/wiki/blob/main/entities/将-aws-devops-agent-智能运维能力延伸到中国区.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07-039-aws-devops-agent-mcp-server-打通混合云网络排障的最后一公里/)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议/)
+- [Habby Game Aws Devops Agent](../ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践/)
+- [Outlook Ai Agent Aws Fargate Claude Agent Sdk](../ch11-089-用-ai-agent-自动化日常办公工作流-在-aws-上构建-outlook-邮件助手/)
+- [将 Aws Devops Agent 智能运维能力延伸到中国区](../ch11-153-将-aws-devops-agent-智能运维能力延伸到中国区/)
+- MOC
 
 → [原文存档（第一篇）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-devops-agent-mcp-china-partition-bridge.md)
 → [原文存档（第二篇）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-devops-agent-mcp-china-part2-multi-account-roles-anywhere.md)

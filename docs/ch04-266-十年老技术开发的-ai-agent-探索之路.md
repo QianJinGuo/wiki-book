@@ -14,11 +14,11 @@
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器)
 
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格)
-- [ai agent memory systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
+- ai agent memory systems
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills)
 - [Garry Tan](../ch01-497-garry-tan)
 - [Agent Workflows](../ch04-306-agent-workflows)
-- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
+- Hermes Agent 新手上手指南
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布)
 - [十年老技术开发的 AI Agent 探索之路](../ch04-022-十年老技术开发的-ai-agent-探索之路)- [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](../ch04-022-十年老技术开发的-ai-agent-探索之路)- [四种 Sub Agent 模式](../ch04-302-四种-sub-agent-模式) 
 

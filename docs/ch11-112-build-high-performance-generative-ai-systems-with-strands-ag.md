@@ -124,23 +124,23 @@ GitHub: `aws-samples/sample-agentic-genai-agentcore/aws-genai-campaign-review-st
 
 ### 分离式架构的性能收益
 
-该方案将推理层与编排层彻底解耦——NVIDIA NIM 专注 GPU 加速推理，Strands Agents 负责多 Agent 协调。这种分离式架构允许独立扩缩：推理层可根据并发量单独扩展，不受编排层状态影响。NIM 暴露的 OpenAI 兼容 API 是关键设计选择，它使编排层无需为每个模型做定制适配，换模型时上层逻辑无需改动。这与 [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 中提到的"接口标准化"原则一致。
+该方案将推理层与编排层彻底解耦——NVIDIA NIM 专注 GPU 加速推理，Strands Agents 负责多 Agent 协调。这种分离式架构允许独立扩缩：推理层可根据并发量单独扩展，不受编排层状态影响。NIM 暴露的 OpenAI 兼容 API 是关键设计选择，它使编排层无需为每个模型做定制适配，换模型时上层逻辑无需改动。这与 Inference Optimization 中提到的"接口标准化"原则一致。
 
 ### 状态管理范式的演进
 
-AgentCore Memory 提供的跨 Agent 共享上下文代表了一种新的状态管理范式。与传统 stateless 设计相比，它让多轮对话状态成为平台内置能力而非应用层负担。检查点与恢复机制进一步降低了中断恢复的复杂度。结合 [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md) 中的设计原则，这种共享内存模式特别适合需要跨 Agent 维护上下文的复杂工作流。
+AgentCore Memory 提供的跨 Agent 共享上下文代表了一种新的状态管理范式。与传统 stateless 设计相比，它让多轮对话状态成为平台内置能力而非应用层负担。检查点与恢复机制进一步降低了中断恢复的复杂度。结合 Agent Memory System Design 中的设计原则，这种共享内存模式特别适合需要跨 Agent 维护上下文的复杂工作流。
 
 ### 可观测性驱动的运维转型
 
-AgentCore Observability 将可观测性提升为架构一等公民。每步执行路径可视化使得诊断 Agent 行为从黑盒变为白盒，开发者可检查中间输出、定位性能瓶颈。CloudWatch 集成将延迟、token 用量、错误率等指标统一管理，这是生产 Agent 系统运维的基础设施需求。与 [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) 中强调的"可观测性优先"原则相呼应。
+AgentCore Observability 将可观测性提升为架构一等公民。每步执行路径可视化使得诊断 Agent 行为从黑盒变为白盒，开发者可检查中间输出、定位性能瓶颈。CloudWatch 集成将延迟、token 用量、错误率等指标统一管理，这是生产 Agent 系统运维的基础设施需求。与 Production Agent Engineering 中强调的"可观测性优先"原则相呼应。
 
 ### 成本-控制权权衡矩阵
 
-三处关键 trade-off 构成了该架构的成本模型：用托管 NIM 换运维负担但失去自控能力；用 AgentCore Runtime 换 Agent 原生能力但锁定于 AWS；用 Strands 换 AWS 生态整合但损失自研灵活性。这反映了 [Multi Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) 中讨论的"平台选择悖论"——越高的抽象带来越低的控制权。
+三处关键 trade-off 构成了该架构的成本模型：用托管 NIM 换运维负担但失去自控能力；用 AgentCore Runtime 换 Agent 原生能力但锁定于 AWS；用 Strands 换 AWS 生态整合但损失自研灵活性。这反映了 Multi Agent Systems 中讨论的"平台选择悖论"——越高的抽象带来越低的控制权。
 
 ### 多 Agent 并发执行的一致性挑战
 
-Finalizer Agent 负责聚合多个并行 Agent 的输出，但这种架构在结果一致性上存在潜在挑战。当多个 Agent 并行运行时，中间结果的顺序、冲突检测、版本控制都需要编排层额外处理。Strands 的控制流管理能力在这里尤为关键——它需要确保 aggregator 收集到的结果完整且无重复。[Multi Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) 提供了这类并行聚合模式的更多设计参考。
+Finalizer Agent 负责聚合多个并行 Agent 的输出，但这种架构在结果一致性上存在潜在挑战。当多个 Agent 并行运行时，中间结果的顺序、冲突检测、版本控制都需要编排层额外处理。Strands 的控制流管理能力在这里尤为关键——它需要确保 aggregator 收集到的结果完整且无重复。Multi Agent Collaboration Patterns 提供了这类并行聚合模式的更多设计参考。
 
 ## 实践启示
 
@@ -150,7 +150,7 @@ Finalizer Agent 负责聚合多个并行 Agent 的输出，但这种架构在结
 
 ### 利用托管服务减少 Agent 运维负担
 
-生产级 Agent 系统需要关注推理加速、状态持久化、可观测性三条主线，而非全部自建。选择 AgentCore Runtime 这类托管服务，可将检查点、扩缩容、部署等运维工作交给平台，团队专注 Agent 逻辑和业务领域。这是 [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) 强调的"平台即基础设施"思路。
+生产级 Agent 系统需要关注推理加速、状态持久化、可观测性三条主线，而非全部自建。选择 AgentCore Runtime 这类托管服务，可将检查点、扩缩容、部署等运维工作交给平台，团队专注 Agent 逻辑和业务领域。这是 Production Agent Engineering 强调的"平台即基础设施"思路。
 
 ### 为每个 Agent 设计独立的可观测性出口
 
@@ -162,7 +162,7 @@ SAM 模板部署 + AgentCore 初始化是典型的不对称耗时模式——API
 
 ### 根据一致性需求选择聚合策略
 
-Finalizer Agent 的结果聚合策略应根据业务一致性需求选择：若允许最终一致可接受并行聚合；若需要强一致应引入协调机制（如分布式锁或两阶段提交）。在内容审核场景下，并行多视角评审后聚合是可接受的——但金融交易或医疗决策场景可能需要不同的聚合设计。[Multi Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) 的设计原则可作为参考框架。
+Finalizer Agent 的结果聚合策略应根据业务一致性需求选择：若允许最终一致可接受并行聚合；若需要强一致应引入协调机制（如分布式锁或两阶段提交）。在内容审核场景下，并行多视角评审后聚合是可接受的——但金融交易或医疗决策场景可能需要不同的聚合设计。Multi Agent Systems 的设计原则可作为参考框架。
 
 ---
 

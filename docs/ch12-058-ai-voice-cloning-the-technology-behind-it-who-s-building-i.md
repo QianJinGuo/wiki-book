@@ -105,7 +105,7 @@ Voice cloning 可以用于：
 - [Scammers Send Physical Phishing Letters To Steal Ledger Wall](../ch12-077-scammers-send-physical-phishing-letters-to-steal-ledger-wall)
 - [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack)
 - [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md)
 

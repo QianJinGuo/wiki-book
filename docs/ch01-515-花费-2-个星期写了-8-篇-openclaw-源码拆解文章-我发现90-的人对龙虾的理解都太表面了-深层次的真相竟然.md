@@ -21,7 +21,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-architecture-8-part-summary.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
+- MOC
 ## 深度分析
 
 OpenClaw的架构哲学可以归结为一句话：**"用已有的基础设施，不造新抽象。"** 消息用现有平台API，人格用Markdown文件，记忆用文件系统加SQLite，工具用Unix命令行，扩展用Markdown说明书。这不是一个技术能力不足的团队选择的方向，而是一个奥地利独立开发者（一个周末项目开始）在三个月内做出GitHub增长最快开源项目的真实路径。这个选择的战略价值在于：它把OpenClaw的复杂度从"建造新系统"降维到了"集成现有系统"，这是快速迭代和生态扩张的关键。

@@ -46,7 +46,7 @@ Mitiga 将云、 SaaS 、身份和 AI 遥测数据统一到单一取证系统的
 - [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](../ch01-038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize)
 - [Building Blocks For Foundation Model Training And Inference On Aws](../ch11-117-building-blocks-for-foundation-model-training-and-inference)
 - [Netflix Metadata Service Model Lifecycle Graph](../ch11-034-netflix-metadata-service-and-model-lifecycle-graph)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-detection-and-response-aidr-a-zero-impact-operating-model.md)
 

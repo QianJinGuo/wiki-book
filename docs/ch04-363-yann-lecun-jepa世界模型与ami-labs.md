@@ -49,7 +49,7 @@
 
 ## 与现有知识的链接
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/yann-lecun-llm-not-intelligence-jepa.md)
-- → [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md) — 技能系统
+- → Hermes Agent Skill — 技能系统
 
 ## 深度分析
 **LeCun对LLM的系统性批判**揭示了当前AI范式的根本性局限。LLM的核心问题不是规模不够，而是架构层面的根本缺陷：自回归token预测无法产生对世界的理解。
@@ -69,8 +69,8 @@ AMI Labs获得10亿美元融资并选择JEPA路线，表明世界模型已经从
 - [Baixing Ontoz Enterprise Ontology Multi Agent](../ch04-131-百型智能-ontoz-企业本体论-群智能体协同体系-出海企业数字大脑-palantir-中国类比)
 - [Tsinghua Self Evolving Skill Agent](../ch01-605-清华自进化skill双星-embodiskill-skillevolver)
 - [直播预约 数据引擎具身智能的下一个决胜局](../ch01-676-直播预约-数据引擎-具身智能的下一个决胜局)
-- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
-- [Nvidia Gamma World Multi Agent World Model](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-gamma-world-multi-agent-world-model.md)
+- Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606
+- Nvidia Gamma World Multi Agent World Model
 
 ---
 

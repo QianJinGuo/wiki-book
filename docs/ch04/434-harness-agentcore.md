@@ -14,15 +14,15 @@
 3. **Harness Engineering** — 怎么让 Agent 真正跑起来（2026 年新风潮）
 
 ## 相关实体
-- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
-- [Agent Harness 12 Components 7 Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-12-components-7-decisions.md)
-- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md)
+- Openclaw Prompt Context Harness
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/)
+- [Agent Harness 12 Components 7 Decisions](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)
+- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料/)
+- [Agentcore Harness](../ch04-206-agentcore-managed-harness/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcore-managed-harness.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 ## 深度分析
 
 1. **Harness 工程是 2026 年 AI Agent 领域的重心转移**

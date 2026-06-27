@@ -69,9 +69,9 @@ Anthropic 的总结：「找到模型里的缺口，用 Harness 补上，再用 
 
 DeepSeek 做 Harness 的逻辑不是「我们要做一个更好的工具」，而是「我们没有别的选择」。Anthropic 的封锁创造了一个明确的市场真空。但 DeepSeek 面临的真正挑战不是做出一个 Claude Code 的外壳，而是建立自己的**长时运行闭环**：让模型在真实代码库里工作，让 Harness 记录失败、分析原因，把失败变成下一轮产品设计和模型训练的输入。
 
-### 从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 视角看
+### 从 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 视角看
 
-DeepSeek 的公式 Model + Harness = Agent 是对 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 理念的商业化表达。核心挑战在于：
+DeepSeek 的公式 Model + Harness = Agent 是对 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 理念的商业化表达。核心挑战在于：
 1. **上下文压缩**：长时运行必须解决上下文窗口有限且越跑越乱的问题
 2. **任务边界控制**：模型总高估自己的完成度——明明半成品却说「好了」
 3. **失败路径学习**：Harness 的真正价值不在于让模型成功，而在于系统化地学习失败

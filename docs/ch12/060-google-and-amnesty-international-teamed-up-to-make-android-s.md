@@ -11,11 +11,11 @@
 - 针对商业间谍软件（如 NSO Group 的 Pegasus）提供持久化取证日志
 - 目前仅支持 Pixel 设备，需要 Android 16 和 Google 账户
 ## 相关实体
-- [Google Amnesty Spyware Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/google-amnesty-spyware-detection.md)
-- [Google And Amnesty International Teamed Up To Make Android S](https://github.com/QianJinGuo/wiki/blob/main/entities/google-and-amnesty-international-teamed-up-to-make-android-s.md)
-- [Shub Reaper Macos Stealer Attack Chain](https://github.com/QianJinGuo/wiki/blob/main/entities/shub-reaper-macos-stealer-attack-chain.md)
-- [Google And Amnesty International Teamed Up To Make It Harder](https://github.com/QianJinGuo/wiki/blob/main/entities/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
-- [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
+- [Google Amnesty Spyware Detection](../ch01-332-google-amnesty-international-联手打击商业间谍软件/)
+- [Google And Amnesty International Teamed Up To Make Android S](../ch12-059-google-and-amnesty-international-teamed-up-to-make-android-s/)
+- [Shub Reaper Macos Stealer Attack Chain](../ch12-014-shub-reaper-macos-stealer-spoofs-apple-google-and-microso/)
+- [Google And Amnesty International Teamed Up To Make It Harder](../ch01-072-google-与-amnesty-international-合作加大间谍软件检测难度/)
+- [Google Bigquery Threat Model](../ch01-644-bigquery-threat-model-report/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)
 

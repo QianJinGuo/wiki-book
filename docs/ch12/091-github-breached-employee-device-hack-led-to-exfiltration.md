@@ -10,15 +10,15 @@
 - 来源：https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html
 
 ## 相关实体
-- [Github Investigating Teampcp Claimed 17Cc77](https://github.com/QianJinGuo/wiki/blob/main/entities/github-investigating-teampcp-claimed-17cc77.md)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](https://github.com/QianJinGuo/wiki/blob/main/entities/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](https://github.com/QianJinGuo/wiki/blob/main/entities/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](https://github.com/QianJinGuo/wiki/blob/main/entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt-2.md)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](https://github.com/QianJinGuo/wiki/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o/)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01-630-google-adds-llms-txt-check-to-chrome-lighthouse/)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04-439-score-by-collisions-patch-by-panic/)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](../ch12-056-grafana-github-token-breach-led-to-codebase-download-and-ext/)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- MOC
 ## 深度分析
 
 GitHub 事件的核心攻击向量再次指向了开发工具生态系统的信任边界问题。攻击者通过一款被污染的 Microsoft Visual Studio Code 扩展入侵了员工设备，进而获取了 GitHub 内部仓库的访问权限，最终导致 3,800 多个内部仓库数据外泄。这一路径的精妙之处在于：VS Code 扩展拥有广泛的用户信任基础和极高的权限范围，同时 IDE 环境的持久性和对网络请求的天然允许使其成为理想的攻击驻留点。

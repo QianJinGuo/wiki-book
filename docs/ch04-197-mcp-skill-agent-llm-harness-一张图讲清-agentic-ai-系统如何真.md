@@ -21,7 +21,7 @@ External → MCP → Skill → Agent → Memory → LLM
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-ai-system-architecture-harness-skill-mcp.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- MOC
 ## 核心架构（三层结构）
 
 ### 1. 能力执行主链

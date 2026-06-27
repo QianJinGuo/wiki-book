@@ -84,7 +84,7 @@ Evals 不是孤立的测试环节，而是嵌入在完整的 AI Engineering Loop
 - **多轮交互**：评估 Agent 在多轮对话中的连贯性和状态管理
 
 ## 相关链接
-- [Ai Evals Methodology](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-evals-methodology.md)
+- [Ai Evals Methodology](../ch01-187-ai-evals-评估方法论/)
 
 ## 实践启示
 ### 1. 永远从人工审阅开始
@@ -149,15 +149,15 @@ Agent 评估需要额外的维度： ^["Evals到底在评什么？一文拆解AI
 - **模型变更后**：比较新旧模型在评估集上的表现
 - **定期生产监控**：确保生产质量没有漂移
 ## 相关实体
-- [Better Harness Eval Trace Methodology](https://github.com/QianJinGuo/wiki/blob/main/entities/better-harness-eval-trace-methodology.md)
-- [Anthropic Claude Next Gen Alex Infoq](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-next-gen-alex-infoq.md)
-- [Agent Skill Writing](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing.md)
-- [Programbench Agent Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/programbench-agent-benchmark.md)
-- [Llm As A Verifier Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-as-a-verifier-framework.md)
+- [Better Harness Eval Trace Methodology](../ch05-083-better-harness-agent-harness-自动优化方法论/)
+- [Anthropic Claude Next Gen Alex Infoq](../ch01-908-anthropic-首次揭秘下一代-claude-怎么造/)
+- Agent Skill Writing
+- [Programbench Agent Benchmark](../ch04-152-programbench-agent-benchmark/)
+- [Llm As A Verifier Framework](../ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework/)
 
 ---
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
+- MOC
 ## 第 2 来源 — 腾讯 TEG 网关测试团队「AI Agent & Skill 测评方案及落地实践」(2026-06-16)
 
 > Source: [第2原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tencent-teg-agent-skill-evaluation-tperf-martinskxu-2026-06-16.md)

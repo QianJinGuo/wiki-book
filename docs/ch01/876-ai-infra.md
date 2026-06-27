@@ -144,16 +144,16 @@ FlashAttention 的核心机制是 **Kernel Fusion + 分块计算 + Online Softma
 
 ## 相关实体
 
-- [Tokenspeed Agentic Inference Engine](https://github.com/QianJinGuo/wiki/blob/main/entities/tokenspeed-agentic-inference-engine.md)
-- [Google Io 2026 Agentic Gemini Era](https://github.com/QianJinGuo/wiki/blob/main/entities/google-io-2026-agentic-gemini-era.md)
-- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-infra-auto-driven-skills-v0-bbuf-giantpanda.md)
-- [Gemma 4 Multi Token Prediction Drafters](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-multi-token-prediction-drafters.md)
-- [Continuous Async](https://github.com/QianJinGuo/wiki/blob/main/entities/continuous-async.md)
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md)
-- [Codex Goal Source Code Deep Dive](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-goal-source-code-deep-dive.md)
-- [Impeccable Frontend Design Skill Harness Vibecoder](https://github.com/QianJinGuo/wiki/blob/main/entities/impeccable-frontend-design-skill-harness-vibecoder.md)
-- [Opencli Browser Automation Jingxing](https://github.com/QianJinGuo/wiki/blob/main/entities/opencli-browser-automation-jingxing.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- [Tokenspeed Agentic Inference Engine](../ch04-513-tokenspeed-agentic-inference-engine/)
+- [Google Io 2026 Agentic Gemini Era](../ch01-859-i-o-2026-welcome-to-the-agentic-gemini-era/)
+- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](../ch07-036-ai-infra-auto-driven-skills-v0-1-0-给-codex-claude-code-的推理/)
+- [Gemma 4 Multi Token Prediction Drafters](../ch01-214-gemma-4-multi-token-prediction-drafters/)
+- Continuous Async
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch01-284-数据级-harness-架构师-jiagoux-解读-anthropic-95-数据分析与-5-个反直觉边界/)
+- [Codex Goal Source Code Deep Dive](../ch09-041-codex-goal-源码深度解析-状态表-续跑条件-预算账本/)
+- [Impeccable Frontend Design Skill Harness Vibecoder](../ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析/)
+- [Opencli Browser Automation Jingxing](../ch04-165-浏览器自动化-从-gui-到-opencli-agent-时代的可调用性竞争/)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-infra-llm-efficient-inference-vllm.md)
 

@@ -52,8 +52,8 @@ Approach:
 | Actionability | Investment/market judgment | Enterprise architecture decisions | Regulatory/compliance |
 
 → [source archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-state-of-the-ai-economy.md)
-→ [Nadella Token Capital](https://github.com/QianJinGuo/wiki/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md)
-→ [Dario Amodei Policy](https://github.com/QianJinGuo/wiki/blob/main/entities/dario-amodei-policy-ai-exponential-2026.md)
+→ [Nadella Token Capital](../ch01-228-纳德拉-token-资本-论-microsoft-ceo-的-ai-时代企业战略宣言/)
+→ Dario Amodei Policy
 
 ---
 

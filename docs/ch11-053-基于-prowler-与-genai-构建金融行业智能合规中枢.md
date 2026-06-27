@@ -19,7 +19,7 @@
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- MOC
 ## 深度分析
 ### 1. "规模化合规难题"的本质：框架重复与术语壁垒
 跨境金融机构面临的合规挑战并非单一框架的复杂性，而是多重框架叠加后产生的"规模化"问题。以一家跨境支付公司为例，其业务覆盖新加坡、欧盟和中国，同时需要满足 PCI DSS v4.0、MAS TRM-G、DORA、等保 2.0 三级和 GDPR 五套框架。 问题的核心在于：不同框架对同一技术要求使用不同术语和条款编号。PCI DSS v4.0 Requirement 8.3、MAS TRM-G 第 9.1.2 条和 DORA Article 9 实际上都在描述同一件事——多因素认证（MFA）的启用。但传统审计流程将它们视为三个独立的检查项，导致重复评估、重复证据准备和重复报告。 这种结构性重复使得合规成本随框架数量线性增长，而非收敛。

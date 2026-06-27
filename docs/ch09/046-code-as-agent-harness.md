@@ -105,20 +105,20 @@ Code as Agent Harness 可以被视为 Software 2.0（以神经网络替代手工
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-as-agent-harness-survey-2026.md)
 
 ## 相关实体
-- [Design Patterns for AI Agents 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/design-patterns-for-ai-agents-2026.md)
-- [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)
-- [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [harness-engineering-systematic-explainer](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-explainer.md)
+- [Design Patterns for AI Agents 2026](../ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl/)
+- [Agent Harness 架构](../ch04-207-agent-harness-架构/)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统/)
+- [Agent架构关键变化：Harness正在成为新后端](../ch04-027-agent架构关键变化-harness正在成为新后端/)
+- [harness-engineering-systematic-explainer](../ch05-036-harness-engineering-systematic-explainer/)
 
-- [Claude Code 架构深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-deep-architecture-analysis.md)
-- [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-source-analysis.md)
-- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](https://github.com/QianJinGuo/wiki/blob/main/entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
-- [AgentCore Managed Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md)
-- [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
-- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- [Claude Code 架构深度解析](../ch01-846-claude-code-架构深度解析/)
+- Claude Code Prompt 提示词体系源码解析
+- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件/)
+- [AgentCore Managed Harness](../ch04-206-agentcore-managed-harness/)
+- [gsd-get-shit-done-context-management-tool](../ch01-184-gsd-get-shit-done-context-management-tool/)
+- [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图/)
+- MOC
 
 ---
 

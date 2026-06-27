@@ -12,11 +12,11 @@
 每天用 Comate 写代码，但配额是月度的。经常到月底才发现快用完了，或者不知道哪个模型消耗最快。
 
 ## 相关实体
-- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](https://github.com/QianJinGuo/wiki/blob/main/entities/2-小时0-行手写代码我用-claude-做了一个生产级-vscode-插件.md)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](https://github.com/QianJinGuo/wiki/blob/main/entities/www.infoworld-4171274-anthropic-puts-claude-agents-on-a-meter-across-its-subscri.md)
-- [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
-- [Skill Factory Yueheng](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-factory-yueheng.md)
-- [Code Review Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/code-review-graph.md)
+- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](../ch09-096-2-小时-0-行手写代码-我用-claude-做了一个生产级-vscode-插件/)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](../ch01-557-anthropic-puts-claude-agents-on-a-meter-across-its-subscript/)
+- [Claude Code Self Repair Hooks Memory Config](../ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
+- [Skill Factory Yueheng](../ch05-065-skill-factory-三天手搓面向harness设计的技能工厂/)
+- [Code Review Graph](../ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-vscode-plugin-zero-code.md)
 

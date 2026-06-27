@@ -75,7 +75,7 @@ Agent 工作流通常需要长时间记忆和上下文窗口。架构层面的 K
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+- MOC
 
 ---
 

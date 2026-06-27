@@ -23,7 +23,7 @@
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch04-390-openclaw-multi-3)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch04-156-agentcore-browser-os级操作-action-screenshot-reaction闭环)
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11-067-amazon-bedrock-model-inference-serverless-architecture-case)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
+- Amazon Nova Multimodal Embeddings 制造业智能应用
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](../ch04-204-航班变更信息智能识别解决方案)

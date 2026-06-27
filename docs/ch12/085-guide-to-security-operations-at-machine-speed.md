@@ -25,12 +25,12 @@
 5. **不要在没有基线的情况下购买新平台。** 先完成函数级评估，再决定平台采购。否则只是用更贵的工具重复已有的运营模式，是最常见的安全投资浪费。 ^[arctic-wolf-security-operations-machine-speed]
 
 ## 相关实体
-- [The It And Security Field Guide To Ai Adoption Tines](https://github.com/QianJinGuo/wiki/blob/main/entities/the-it-and-security-field-guide-to-ai-adoption-tines.md)
-- [Http2 Hpack Bomb Codex Ai Discovery 32Gb Dos](https://github.com/QianJinGuo/wiki/blob/main/entities/http2-hpack-bomb-codex-ai-discovery-32gb-dos.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [The It And Security Field Guide To Ai Adoption Tines](../ch12-071-the-it-and-security-field-guide-to-ai-adoption-tines/)
+- [Http2 Hpack Bomb Codex Ai Discovery 32Gb Dos](../ch09-032-http-2-hpack-bomb-codex-discovered-ai-discovered-dos/)
+- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
+- [Funnel Builder Flaw Woocommerce Checkout Skimm](../ch12-084-funnel-builder-flaw-under-active-exploitation-enables-woocom/)
+- MOC
 
 ---
 

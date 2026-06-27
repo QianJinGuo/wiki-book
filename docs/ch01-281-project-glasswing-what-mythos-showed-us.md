@@ -99,7 +99,7 @@ Cloudflare 总结出四方面经验，最终形成八阶段管道 ：
 
 ## 相关实体
 - [Autonomous Vulnerability Hunting with MCP](../ch12-052-autonomous-vulnerability-hunting-with-mcp)
-- [Anthropic Managed Agents 架构：脑手分离设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/managed-agents-architecture.md)
+- Anthropic Managed Agents 架构：脑手分离设计
 
 - [LLM raiders and how to repel them](../ch01-589-llm-raiders-and-how-to-repel-them)
 - [LLM raiders and how to repel them](../ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se)

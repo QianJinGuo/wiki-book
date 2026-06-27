@@ -11,7 +11,7 @@
 
 ## 相关实体
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
+- Amazon Nova Multimodal Embeddings 制造业智能应用
 - [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](../ch11-054-amazon-nova-lite-fine-tuning-高性价比的视觉检测模型微调案例与实践-亚马逊aws官方博)
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](../ch11-130-build-financial-document-processing-with-pulse-ai-and-amazon)
@@ -29,8 +29,8 @@
 - [Amazon Quick Arns Cross Account Migration And Namespace Perm](../ch11-223-amazon-quick-arns-cross-account-migration-and-namespace-per)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch01-809-fundamental-s-large-tabular-model-nexus-is-now-available-on)
 - [The Art And Science Of Hyperparameter Optimization On Amazon Nova Forge](../ch11-220-the-art-and-science-of-hyperparameter-optimization-on-amazon)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-misc-topics-frontier.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
+- MOC
+- MOC
 ## 深度分析
 1. **Speech-to-Speech 统一架构 vs. 级联 pipeline 的本质差异**
    Nova Sonic 采用 unified speech-to-speech 而非传统的 ASR→LLM→TTS 三段式架构，这意味着延迟瓶颈从三次网络往返压缩为单次，解释了为何能实现"低延迟实时对话"。传统方案中每次语义理解都要等待完整识别完成，而 Nova Sonic 在语音层面就完成理解和生成闭环。

@@ -10,11 +10,11 @@ Introducing Varonis Atlas: Secure everything you build and run with AI [Learn mo
 Data Security Platform
 
 ## 相关实体
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
-- [Thehackernews Com The New Phishing Click How Oauth](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-com-the-new-phishing-click-how-oauth.md)
-- [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
+- Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions
+- [Thehackernews Com The New Phishing Click How Oauth](../ch01-465-the-new-phishing-click-how-oauth-consent-bypasses-mfa/)
+- [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](../ch01-060-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bluekit.md)
 

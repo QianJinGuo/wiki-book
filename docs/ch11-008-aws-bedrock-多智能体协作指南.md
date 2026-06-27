@@ -896,7 +896,7 @@ events.put_targets(
 
 ## 十、相关资源
 
-- → [Multi Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) — 多智能体协作模式通用理论
+- → Multi Agent Collaboration Patterns — 多智能体协作模式通用理论
 - → [Openclaw Multi Agent Team Practice](../ch04-038-openclaw-multi-agent-team-practice-v2) — OpenClaw 多智能体团队实践
 - → [Building Enterprise Agentic Ai With Kiro On Aws](../ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客) — Kiro 在 AWS 上的企业 Agent 构建
 
@@ -931,9 +931,9 @@ events.put_targets(
 *本文档基于 AWS Bedrock 官方文档和行业最佳实践编写，适用于生产环境部署参考。*
 
 ## 相关实体
-- [Multi Agent Collaboration 2025 Top 10 Challenges](https://github.com/QianJinGuo/wiki/blob/main/queries/multi-agent-collaboration-2025-top-10-challenges.md)
+- Multi Agent Collaboration 2025 Top 10 Challenges
 - [aws bedrock dynamic document extraction pipeline](../ch11-029-aws-bedrock-dynamic-document-extraction-pipeline)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 
 ---
 

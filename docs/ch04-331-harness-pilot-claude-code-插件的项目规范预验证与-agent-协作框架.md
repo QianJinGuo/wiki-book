@@ -96,7 +96,7 @@ claude-code-go 项目（~19,912 行 Go 代码，23 个 internal packages）：
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- MOC
 
 ---
 

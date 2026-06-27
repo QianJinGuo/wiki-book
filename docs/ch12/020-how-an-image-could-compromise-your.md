@@ -134,11 +134,11 @@ ExifTool 13.50 的修复方案代表了处理此类漏洞的最佳实践：
 3. **不要依赖单一安全措施**: 组合使用多种安全实践（系统更新、安全软件、谨慎的上网习惯）才能获得最佳防护效果。
 
 ## 相关实体
-- [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki/blob/main/entities/exiftool-compromise-mac-592994.md)
-- [Shub Reaper Macos Stealer Attack Chain](https://github.com/QianJinGuo/wiki/blob/main/entities/shub-reaper-macos-stealer-attack-chain.md)
-- [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](https://github.com/QianJinGuo/wiki/blob/main/entities/cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-compromise-via-vhub-au.md)
-- [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](https://github.com/QianJinGuo/wiki/blob/main/entities/claw-chain-cyera-research-unveil-four-chainable-vulnerabilities-in-openclaw.md)
+- [Exiftool Compromise Mac 592994](../ch01-583-how-an-image-could-compromise-your/)
+- [Shub Reaper Macos Stealer Attack Chain](../ch12-014-shub-reaper-macos-stealer-spoofs-apple-google-and-microso/)
+- [Trackingtamperedchefclustersviacertificateandcodereuse](../ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
+- [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](../ch12-015-resecurity-cve-2026-20182-unauthenticated-cisco-sd-wan-co/)
+- [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](../ch09-060-claw-chain-cyera-research-unveil-four-chainable-vulnerabili/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md)
 

@@ -11,15 +11,15 @@
 Hooks 将 Agent 工作流从"模型记住规则"变成"确定性自动化"——把可重复的规则从模型记忆里挪出来，搬进会在已知生命周期节点上自动运行的代码。
 
 ## 相关实体
-- [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
-- [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
-- [Claude Code Agent Teams Task Decomposition Ruofei](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-teams-task-decomposition-ruofei.md)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
-- [Anthropic Pm Agentic Workflow](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-pm-agentic-workflow.md)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档/)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据/)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Anthropic Pm Agentic Workflow](../ch04-383-anthropic-pm-的-agentic-工作流/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-hooks-programmable-workflow.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 ## 核心论点
 Hooks 将 Agent 工作流从"模型记住规则"变成"确定性自动化"——把可重复的规则从模型记忆里挪出来，搬进会在已知生命周期节点上自动运行的代码。
 > 提示词负责"引导"，Hooks 负责"那些每次都必须发生的行为"。

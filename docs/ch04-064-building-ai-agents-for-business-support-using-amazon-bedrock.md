@@ -92,7 +92,7 @@ Through these improvements, we optimized costs while successfully handling more 
 
 LangGraph 的单体式配置——所有逻辑运行在同一个 Amazon ECS Task 中——在业务复杂度增长时成为瓶颈。当子智能体数量增加时，单体架构导致扩展困难、隔离性差、以及运维复杂度线性膨胀。迁移的核心目标是将子智能体独立部署到 AgentCore Runtime，使每个子智能体成为独立扩展单元。
 
-更关键的驱动因素是供应商锁定问题。使用 LangGraph 配合专有实现（proprietary implementation）导致团队在尝试迁移到 Strands Agents 时遇到显著困难——这不是框架本身的问题，而是抽象层缺失导致的耦合。多智能体系统应从设计初期就考虑[Multi Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md)的标准化，使核心业务逻辑与底层编排框架解耦。
+更关键的驱动因素是供应商锁定问题。使用 LangGraph 配合专有实现（proprietary implementation）导致团队在尝试迁移到 Strands Agents 时遇到显著困难——这不是框架本身的问题，而是抽象层缺失导致的耦合。多智能体系统应从设计初期就考虑Multi Agent Collaboration Patterns的标准化，使核心业务逻辑与底层编排框架解耦。
 
 ### 2. 成本削减 97% 的三层优化框架
 
@@ -100,9 +100,9 @@ LangGraph 的单体式配置——所有逻辑运行在同一个 Amazon ECS Task
 
 **第一层：提示词缓存** — 通过 Bedrock 的 Prompt Caching 功能，识别用户消息中可复用的上下文模式，将这部分成本从 $14.5 降至 $2.1，降幅 86%。提示词缓存的本质是减少重复计算，对抗大模型推理中的上下文冗余。
 
-**第二层：智能体行为精简** — 通过重写子智能体提示词（sub-agent prompts），减少不必要的操作步骤，将成本从 $2.1 降至 $1.0。这属于[Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)的范畴——在模型调用层面而非模型选择层面的优化。
+**第二层：智能体行为精简** — 通过重写子智能体提示词（sub-agent prompts），减少不必要的操作步骤，将成本从 $2.1 降至 $1.0。这属于Inference Optimization的范畴——在模型调用层面而非模型选择层面的优化。
 
-**第三层：模型分层** — 将 Claude Sonnet 4.5 替换为 Haiku 4.5，将成本从 $1.0 降至 $0.4。这反映了[Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)中"任务特化模型选择"的核心原则：简单分类/路由任务不需要大模型的推理能力。97% 的总体降幅中，模型替换贡献了约 60%。
+**第三层：模型分层** — 将 Claude Sonnet 4.5 替换为 Haiku 4.5，将成本从 $1.0 降至 $0.4。这反映了Inference Optimization中"任务特化模型选择"的核心原则：简单分类/路由任务不需要大模型的推理能力。97% 的总体降幅中，模型替换贡献了约 60%。
 
 三层优化的递进关系揭示了一个重要的 Agent 成本设计原则：**先优化提示词和流程，再考虑模型降级**。模型降级是最简单但也可能引入质量风险的手段，应在其他优化充分实施后再评估。
 
@@ -110,7 +110,7 @@ LangGraph 的单体式配置——所有逻辑运行在同一个 Amazon ECS Task
 
 浏览器操作智能体面临的核心挑战不是"如何操作"，而是"如何保证长时间运行的稳定性"。
 
-88% 的 token 削减来自三个关键技术手段：去除对话历史中不必要的部分（conversation history between AI and Playwright MCP）、精简 Playwright MCP 返回值、以及对 TOOL 部分使用提示词缓存。第一个措施本质上是对[Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)的简化应用——浏览器操作任务不需要跨会话的完整对话历史。
+88% 的 token 削减来自三个关键技术手段：去除对话历史中不必要的部分（conversation history between AI and Playwright MCP）、精简 Playwright MCP 返回值、以及对 TOOL 部分使用提示词缓存。第一个措施本质上是对Agent Memory Lifecycle Philosophies的简化应用——浏览器操作任务不需要跨会话的完整对话历史。
 
 但稳定性问题需要超越"削减 token"的视角来审视。对于需要长时间运行的浏览器操作任务，关键设计包括：操作超时检测与自动重试、页面元素变更的适应机制、以及必要时的人类介入通道。Browser Operation Agent 的"三步骤工作流"（搜索模板→生成手册→执行操作）之所以值得借鉴，正是因为它将复杂的长任务分解为可管理、可监控的阶段。
 
@@ -118,15 +118,15 @@ LangGraph 的单体式配置——所有逻辑运行在同一个 Amazon ECS Task
 
 HR 系统等企业核心系统通常有严格的 IP 白名单要求，这对 AI Agent 的部署架构提出挑战。
 
-解决方案是在 VPC 内部署 AgentCore Runtime，并通过 NAT 网关使用固定 IP 访问外部被限制的系统。这是一个经典的企业[Enterprise Ai Adoption](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption.md)模式：安全约束（IP 白名单）不应成为障碍，而应被视为架构设计的输入条件。
+解决方案是在 VPC 内部署 AgentCore Runtime，并通过 NAT 网关使用固定 IP 访问外部被限制的系统。这是一个经典的企业Enterprise Ai Adoption模式：安全约束（IP 白名单）不应成为障碍，而应被视为架构设计的输入条件。
 
-配合这一模式的知识库架构（存放操作模板和辅助信息）本质上是一个[Retrieval Augmented Generation Rag](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-rag.md)系统——知识库的内容质量直接决定了 Agent 操作手册的质量，进而影响操作成功率。
+配合这一模式的知识库架构（存放操作模板和辅助信息）本质上是一个Retrieval Augmented Generation Rag系统——知识库的内容质量直接决定了 Agent 操作手册的质量，进而影响操作成功率。
 
 ### 5. 多租户隔离与可观测性：企业级 Agent 平台的两大基础设施
 
 Commuting Allowance Agent 案例揭示了企业级 Agent 平台建设的两个关键技术决策。
 
-**多租户隔离** — 使用 Amazon DynamoDB + Amazon Cognito 管理租户，实现租户间的数据隔离和认证授权。这一选择的关键考量是"保持灵活性"——让 WHI 能够自主构建和管理租户系统，而不是被某个锁定方案约束。这呼应了[Agent Backend Unification](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)的主题：统一的后端抽象支撑上层的差异化业务逻辑。
+**多租户隔离** — 使用 Amazon DynamoDB + Amazon Cognito 管理租户，实现租户间的数据隔离和认证授权。这一选择的关键考量是"保持灵活性"——让 WHI 能够自主构建和管理租户系统，而不是被某个锁定方案约束。这呼应了Agent Backend Unification的主题：统一的后端抽象支撑上层的差异化业务逻辑。
 
 **可观测性替换** — 从自托管的 Langfuse 迁移到 AgentCore Observability，消除了运营负担（服务器维护、监控配置等），同时获得了更集成的日志和追踪能力。这是"用托管服务替代自运维"思路的典型案例，在 AI Agent 平台建设中具有普遍参考价值。
 

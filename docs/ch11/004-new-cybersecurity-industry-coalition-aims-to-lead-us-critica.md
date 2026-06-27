@@ -43,11 +43,11 @@ CISA 已经运营着 Automated Indicator Sharing（AIS）项目和一个行业-s
 - 关注联盟在跨境关键基础设施（如美加电网互联、跨太平洋光缆）安全上的协调能力——这是单一国家监管无法覆盖的领域
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
-- [CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](https://github.com/QianJinGuo/wiki/blob/main/entities/cisa-urges-critical-infrastructure-firms-to-fortify-before-i.md)
-- [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
-- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](https://github.com/QianJinGuo/wiki/blob/main/entities/japan-pm-cybersecurity-review-anthropic-mythos.md)
+- [CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](../ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before/)
+- [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](../ch12-097-sandworm-hackers-shift-from-it-breaches-to-critical-ot-targe/)
+- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](../ch12-113-japan-s-pm-orders-cybersecurity-review-to-defend-against-ant/)
 
 ---
 

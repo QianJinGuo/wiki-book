@@ -22,7 +22,7 @@ MIT Technology Review 在为期两个月的调查中发现了 22 个中越英语
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)
 - [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 ## 相关主题
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Cyberscammers-are-bypassing-banks-security-with-illicit-tool.md)

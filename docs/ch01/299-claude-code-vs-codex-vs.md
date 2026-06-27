@@ -154,13 +154,13 @@ Auto Memory 不用向量检索而用 LLM 驱动选取——这意味着你可以
 由于没有 CLAUDE.md 等效机制，Codex 高度依赖模型主动读取 README 和代码来推断项目约定。这意味着**高质量的 README 和代码注释的密度直接影响了 Codex 的执行质量**。在大型代码库中维护一份结构清晰的 ARCHITECTURE.md（说明关键文件位置和模块边界）是提高 Codex 准确率的最有效手段。
 
 ## 相关主题
-- [Claude Code 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture.md) — Claude Code 完整架构分析
-- [context window management comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md) — 多框架上下文管理对比（Aparna Dhinakura）
-- [Claude Code Harness Deep Dive](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md) — Founder Park 深度分析（含 Auto-compaction）
+- [Claude Code 架构](../ch01-571-claude-code-架构解析/) — Claude Code 完整架构分析
+- context window management comparison — 多框架上下文管理对比（Aparna Dhinakura）
+- [Claude Code Harness Deep Dive](../ch01-558-claude-code-harness-深度分析/) — Founder Park 深度分析（含 Auto-compaction）
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- MOC
 
 ---
 

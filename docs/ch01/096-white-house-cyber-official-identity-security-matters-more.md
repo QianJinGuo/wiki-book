@@ -11,11 +11,11 @@
 - AI Agent 自身可演化为内部威胁，绕过既有安全 guardrail
 - 联邦机构需将身份安全列为 AI 时代最高优先级，同时为 AI Agent 失效做容灾规划
 ## 相关实体
-- [Why Im Leaving Github For Forgejo](https://github.com/QianJinGuo/wiki/blob/main/entities/why-im-leaving-github-for-forgejo.md)
-- [From Doer To Director The Ai Mindset Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
-- [Microsoft For Startups Microsoft](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-for-startups-microsoft.md)
-- [Running An Ai Native Engineering Org](https://github.com/QianJinGuo/wiki/blob/main/entities/running-an-ai-native-engineering-org.md)
-- [How I Moved My Digital Stack To Europe](https://github.com/QianJinGuo/wiki/blob/main/entities/how-i-moved-my-digital-stack-to-europe.md)
+- [Why Im Leaving Github For Forgejo](../ch01-011-why-i-m-leaving-github-for-forgejo/)
+- [From Doer To Director The Ai Mindset Shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift/)
+- [Microsoft For Startups Microsoft](../ch01-110-microsoft-for-startups-microsoft/)
+- [Running An Ai Native Engineering Org](../ch01-045-running-an-ai-native-engineering-org/)
+- [How I Moved My Digital Stack To Europe](../ch01-083-how-i-moved-my-digital-stack-to-europe/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/white-house-federal-identity-security-ai.md)
 

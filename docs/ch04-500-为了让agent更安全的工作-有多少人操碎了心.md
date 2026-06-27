@@ -41,7 +41,7 @@
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security V2](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)
 - [Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议)
 - [Canvas Breach Disrupts Schools Colleges Nationwide](../ch12-031-canvas-breach-disrupts-schools-colleges-nationwide)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ath-agent-trust-handshake-protocol.md)
 

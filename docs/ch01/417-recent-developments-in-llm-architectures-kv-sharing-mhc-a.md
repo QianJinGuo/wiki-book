@@ -40,7 +40,7 @@ DeepSeek V4 引入两大架构变化：
 
 - **MLA 系列**：压缩的是每条 entry 的表示维度（per-token latent representation），KV cache 长度不变、宽度收窄
 - **CSA/HCA 系列**：压缩的是序列长度本身，多个 token 被合并为一个压缩 entry
-DeepSeek V4 的 CSA/HCA 代价更高（丢失 token 级细节），但通过 CSA（轻压缩+稀疏选择）和 HCA（重压缩+密集注意力）的交替使用，在效率和建模质量间取得平衡。 See also [Context Window Management](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
+DeepSeek V4 的 CSA/HCA 代价更高（丢失 token 级细节），但通过 CSA（轻压缩+稀疏选择）和 HCA（重压缩+密集注意力）的交替使用，在效率和建模质量间取得平衡。 See also [Context Window Management](../ch04-149-agent-上下文窗口管理对比/)
 
 ### mHC 的意义：从"注意力改造"到"残差流改造"
 大多数架构改进聚焦于注意力机制（MQA→GQA→MLA→DSA→CCA）或 MoE 路由，而 mHC 首次在生产级大模型中验证了"残差路径宽化"的价值。传统观点认为残差连接已足够高效，但 mHC 证明通过多条并行残差流 + 约束性映射，可以在几乎不增加 FLOPs 的前提下提升信息流动性。这与 CSA/HCA 在注意力侧的优化形成正交互补。
@@ -75,7 +75,7 @@ Agent 工作流通常需要长时间记忆和上下文窗口。架构层面的 K
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+- MOC
 
 ---
 

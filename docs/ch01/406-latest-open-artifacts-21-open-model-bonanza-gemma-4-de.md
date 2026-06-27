@@ -69,11 +69,11 @@ IRT 校准后的得分更能反映模型的真实能力，减少了"简单题目
 主流 benchmark 的区分度在下降，关注 LiveCodeBench、SWE-bench 等动态更新的评测，它们更能反映模型的真实能力。
 
 ## 相关实体
-- [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-19-qwen-glm-minimax-interconnects.md)
-- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](https://github.com/QianJinGuo/wiki/blob/main/entities/interconnects-latest-open-artifacts-20-new-orgs-new-types-of-models-with-nemotron-super-sarvam.md)
-- [Reading Todays Open Closed Performance Gap](https://github.com/QianJinGuo/wiki/blob/main/entities/reading-todays-open-closed-performance-gap.md)
-- [How Open Model Ecosystems Compound](https://github.com/QianJinGuo/wiki/blob/main/entities/how-open-model-ecosystems-compound.md)
-- [Wetesteddeepseekv4Proandflashagainstclau](https://github.com/QianJinGuo/wiki/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
+- [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](../ch01-435-latest-open-artifacts-19-qwen-3-5-glm-5-minimax-m2-5-中国开源模型/)
+- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](../ch01-204-latest-open-artifacts-20-new-orgs-new-types-of-models/)
+- [Reading Todays Open Closed Performance Gap](../ch01-382-reading-today-s-open-closed-performance-gap/)
+- [How Open Model Ecosystems Compound](../ch01-651-how-open-model-ecosystems-compound/)
+- [Wetesteddeepseekv4Proandflashagainstclau](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
 
 ## 相关引用
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md)

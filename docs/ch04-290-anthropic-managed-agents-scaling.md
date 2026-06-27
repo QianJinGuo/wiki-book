@@ -22,7 +22,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-managed-agents-scaling.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 ## 深度分析
 
 ### 从宠物到牛群：Agent 架构范式转移

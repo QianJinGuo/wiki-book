@@ -14,7 +14,7 @@
 - Python 3.12+，基于 GitHub 发行 
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
 - [Cline releases open-source agent runtime SDK](../ch04-003-agentrun)
 - [Spring AI AI Agent Demo](../ch04-414-ai实践-基于-spring-ai-从0到1构建-ai-agent)

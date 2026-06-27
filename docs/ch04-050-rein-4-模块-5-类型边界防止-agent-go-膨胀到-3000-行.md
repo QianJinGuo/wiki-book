@@ -234,7 +234,7 @@ WithWorkingDir(cwd)            // 工作目录
 - Claude Code 98.4% 基础设施 + 1.6% AI 决策
 - Rein 用 4 模块 + 5 类型边界把 3000 行结构化
 
-### vs Agent Harness 上下文管理（[Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)）
+### vs Agent Harness 上下文管理（Agent Harness Context Management Working Set）
 - 工作集视角：logical_messages 原样保留 + 投影 = Rein 的"存储完整，发送压缩"
 
 ### vs wow-harness v3 事件溯源（[Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议)）
@@ -293,13 +293,13 @@ WithWorkingDir(cwd)            // 工作目录
 
 ## 相关对照
 - [Claude Code 20000 字符源码分析](../ch09-056-两万字详解claude-code源码核心机制)
-- [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) —— 工作集视角
+- Agent Harness 上下文管理 —— 工作集视角
 - [wow-harness v3](../ch05-028-wow-harness-v3-ai-开发的治理协议) —— 事件溯源 + 概念图
 - [PilotDeck](../ch04-124-小龙虾彻底凉了-清华团队连夜开源agent神器pilotdeck-token成本狂降70) —— 白盒记忆
 - [Agent Harness 架构](../ch04-207-agent-harness-架构) —— 7 层 harness 模型
 - [17 种 agent 架构演进](../ch04-507-17种agent架构演进-控制流设计的完整演化史) —— 类型边界视角
 - [Agent 工程原则](../ch04-435-agent-engineering-principles-architecture-practice) —— 模块化设计实践
-- [短期记忆压缩](https://github.com/QianJinGuo/wiki/blob/main/entities/tencentdb-agent-memory-short-term-compression.md) —— 投影压缩对比
+- 短期记忆压缩 —— 投影压缩对比
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
 

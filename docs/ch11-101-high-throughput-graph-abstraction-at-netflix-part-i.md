@@ -78,7 +78,7 @@ Part II 将介绍 query engine、impact analysis 算法、client libraries。
 - [Netflix Live Operations Human Infrastructure](../ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构)
 - [Plaid Effects](../ch03-110-plaid-s-effects-on-the-financial-ecosystem)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 ## 相关主题
 
 - 分布式追踪 (OpenTelemetry, Jaeger) — 跨服务调用追踪基础
