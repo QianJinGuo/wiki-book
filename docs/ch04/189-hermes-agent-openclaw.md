@@ -111,13 +111,13 @@ Hermes 在中国社区的爆发，微信集成、Notion 知识管理、股票盯
 
 ## 相关实体
 
-- [Hermes Agent 记忆系统深度拆解](/ch04-068-hermes-agent-记忆系统深度拆解//)
-- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](/ch01-349-ai-agent-gateway-架构设计-openclaw-claude-code-hermes-三框架对比//)
-- [DeerFlow vs Hermes vs OpenClaw 深度对比](/ch04-398-deerflow-hermes-openclaw-架构区别深度对比//)
+- [Hermes Agent 记忆系统深度拆解](/ch04-068-hermes-agent-记忆系统深度拆解/)
+- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](/ch01-349-ai-agent-gateway-架构设计-openclaw-claude-code-hermes-三框架对比/)
+- [DeerFlow vs Hermes vs OpenClaw 深度对比](/ch04-398-deerflow-hermes-openclaw-架构区别深度对比/)
 - Hermes Agent 深度解析
-- [OpenClaw 架构八部总结](/ch01-515-花费-2-个星期写了-8-篇-openclaw-源码拆解文章-我发现90-的人对龙虾的理解都太表面了-深层次的真相竟然//)
+- [OpenClaw 架构八部总结](/ch01-515-花费-2-个星期写了-8-篇-openclaw-源码拆解文章-我发现90-的人对龙虾的理解都太表面了-深层次的真相竟然/)
 - Hermes Agent 记忆系统
-- [深度拆解 Hermes 记忆系统：它修正了 OpenClaw 的哪层误区](/ch04-382-深度拆解-hermes-agent-记忆系统-它修正了-openclaw-的哪层误区//)
+- [深度拆解 Hermes 记忆系统：它修正了 OpenClaw 的哪层误区](/ch04-382-深度拆解-hermes-agent-记忆系统-它修正了-openclaw-的哪层误区/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-vs-openclaw-comparison.md)
 

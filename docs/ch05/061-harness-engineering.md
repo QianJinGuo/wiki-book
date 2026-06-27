@@ -63,7 +63,7 @@
 
 ### 与 Harness Engineering 概念体系的关系
 
-本文的"主权线"框架为 [Harness Engineering](/ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式//) 概念提供了时间维度的演进视角。它回答了一个关键问题：当模型越来越强时，Harness Engineering 师的角色如何变化？
+本文的"主权线"框架为 [Harness Engineering](/ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/) 概念提供了时间维度的演进视角。它回答了一个关键问题：当模型越来越强时，Harness Engineering 师的角色如何变化？
 
 答案不是"消失"，而是"上移"——从技术实现层上移到治理决策层。这与软件工程中"抽象层次不断提升"的历史规律一致：汇编程序员没有消失，而是演化为系统架构师和安全工程师。
 
@@ -90,13 +90,13 @@
 
 ## 相关实体
 
-- [Harness Engineering](/ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式//)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道//)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering//)
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制//)
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践//)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验//)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](/ch01-170-深入理解-claude-code-源码中的-agent-harness-构建之道//)
+- [Harness Engineering](/ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
+- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](/ch01-170-深入理解-claude-code-源码中的-agent-harness-构建之道/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-future-persistence-vs-erosion.md)
 

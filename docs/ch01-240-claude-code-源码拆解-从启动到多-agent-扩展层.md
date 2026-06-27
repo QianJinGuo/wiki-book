@@ -34,7 +34,7 @@
 - **[Claude Code Agent Engineering](/ch04-015-claude-code-的-agent-工程/)**（SooKool）侧重 StreamingToolExecutor/主循环/压缩/小模型/Hook
 - **Openclaw Architecture**（800行轻量架构）与 Claude Code 同体系但更精简
 - **Agent Skill Writing** Skill 编写规范对应 Fat Skills 理念
-- **[Hermes Agent](/ch04-418-hermes-agent//)** Hermes 的 Self-Evolving 与 Claude Code 架构的关系
+- **[Hermes Agent](/ch04-418-hermes-agent/)** Hermes 的 Self-Evolving 与 Claude Code 架构的关系
 
 ## 相关实体
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](/ch07-006-claude-code-skills-mcp-rules-source-analysis/)
@@ -45,7 +45,7 @@
 - [Claude Code 源码深度解析（13 核心机制）](/ch01-231-claude-code-源码深度解析-13-核心机制/)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](/ch03-069-boris-cherny-从-ide-到-agent-控制台/)
 - Agent 与后端统一架构
-- [Claude Code 架构深度分析](/ch01-846-claude-code-架构深度解析//)
+- [Claude Code 架构深度分析](/ch01-846-claude-code-架构深度解析/)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](/ch01-305-从多智能体编排到ai自主决策-资损防控体系的架构演进/)
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](/ch04-418-hermes-agent/)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](/ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件/)

@@ -8,11 +8,11 @@
 - Cybersecurity 相关技术分析
 - 内容来源：huntress
 ## 相关实体
-- [Huntress Edr Itdr Unified Detection](/ch11-198-how-unified-edr-and-itdr-stop-attacks-before-they-spread//)
-- [Llm Raiders Private Ai Server](/ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se//)
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](/ch01-384-how-claude-code-works-in-large-codebases-best-practices-and//)
-- [Llm Raiders And How To Repel Them](/ch01-590-llm-raiders-and-how-to-repel-them//)
-- [How To Create Websites With Great Ux Designs](/ch01-114-how-to-create-websites-with-great-ux-designs-principles-and//)
+- [Huntress Edr Itdr Unified Detection](/ch11-198-how-unified-edr-and-itdr-stop-attacks-before-they-spread/)
+- [Llm Raiders Private Ai Server](/ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se/)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](/ch01-384-how-claude-code-works-in-large-codebases-best-practices-and/)
+- [Llm Raiders And How To Repel Them](/ch01-590-llm-raiders-and-how-to-repel-them/)
+- [How To Create Websites With Great Ux Designs](/ch01-114-how-to-create-websites-with-great-ux-designs-principles-and/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/huntress-edr-itdr.md)
 

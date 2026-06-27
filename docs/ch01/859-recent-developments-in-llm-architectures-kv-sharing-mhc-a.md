@@ -44,11 +44,11 @@ DeepSeek V4 的 CSA/HCA 压缩的是序列维度本身（每 128 token 压缩为
 5. **警惕过度复杂化**：从 GPT-2 到 DeepSeek V4，Attention 变体的代码复杂度增长了约 10 倍，在生产引入新架构变体时需权衡实现维护成本与效率收益。
 
 ## 相关实体
-- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](/ch01-405-recent-developments-in-llm-architectures-kv-sharing-mhc-a//)
-- [Recent_Developments_In_Llm_Architectures](/ch01-043-recent-developments-in-llm-architectures-kv-sharing-mhc-a//)
-- [Memory In The Llm Era Iclr2026](/ch01-853-memory-in-the-llm-era-modular-architectures-and-strategies//)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem//)
-- [Llm Raiders How To Repel](/ch01-589-llm-raiders-and-how-to-repel-them//)
+- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](/ch01-405-recent-developments-in-llm-architectures-kv-sharing-mhc-a/)
+- [Recent_Developments_In_Llm_Architectures](/ch01-043-recent-developments-in-llm-architectures-kv-sharing-mhc-a/)
+- [Memory In The Llm Era Iclr2026](/ch01-853-memory-in-the-llm-era-modular-architectures-and-strategies/)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
+- [Llm Raiders How To Repel](/ch01-589-llm-raiders-and-how-to-repel-them/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/recent-developments-in-llm-architectures-jiqizhixin.md)
 

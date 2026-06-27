@@ -174,7 +174,7 @@
 - MOC
 ## 相关主题
 
-- [Ahe Agentic Harness Engineering](/ch04-212-ahe-agentic-harness-engineering//) — AHE 通用 Harness 工程框架
+- [Ahe Agentic Harness Engineering](/ch04-212-ahe-agentic-harness-engineering/) — AHE 通用 Harness 工程框架
 - [Claude Code Architecture](/ch01-571-claude-code-架构解析/) — Claude Code 架构（作为 Harness 搭建者的能力来源）
 - LLM-as-Judge 通用方法
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](/ch09-016-ai-编程智能体的质量防线-5-个代码质量控制机制-反馈传感器-语义评估-重构边界-来源追溯-智能体攻击/) — AI Coding Agent 质量防御五机制（评测即其中一环）

@@ -11,9 +11,9 @@
 
 ## 相关实体
 
-- [10 common component architecture mistakes in Figma design systems](/ch03-026-10-common-component-architecture-mistakes-in-figma-design-sy//)
-- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](/ch04-514-building-for-the-rising-complexity-of-agentic-systems-with-e//)
-- [What the design-to-code loop unlocks](/ch03-007-what-the-design-to-code-loop-unlocks//)
+- [10 common component architecture mistakes in Figma design systems](/ch03-026-10-common-component-architecture-mistakes-in-figma-design-sy/)
+- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](/ch04-514-building-for-the-rising-complexity-of-agentic-systems-with-e/)
+- [What the design-to-code loop unlocks](/ch03-007-what-the-design-to-code-loop-unlocks/)
 
 ## 深度分析
 本文系统性地梳理了Figma设计系统中组件架构的十大错误，这些问题直接关系到设计系统的可维护性、可扩展性以及设计-开发协作效率。

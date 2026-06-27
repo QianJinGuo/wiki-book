@@ -9,10 +9,10 @@
 
 ## 相关实体
 - Skills Registry 公测开启为企业打造私有的 Skill 管理中心
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段//)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](/ch04-321-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段//)
-- [阿里云可观测 2026 年 4 月产品动态](/ch04-337-阿里云可观测-2026-年-4-月产品动态//)
-- [Agent 从能用到管好中间差了什么](/ch04-379-agent-从-能用-到-管好-中间差了什么//)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](/ch04-321-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
+- [阿里云可观测 2026 年 4 月产品动态](/ch04-337-阿里云可观测-2026-年-4-月产品动态/)
+- [Agent 从能用到管好中间差了什么](/ch04-379-agent-从-能用-到-管好-中间差了什么/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/看-agentrun-如何玩转记忆存储最佳实践来了.md)
 

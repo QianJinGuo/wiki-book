@@ -82,9 +82,9 @@
 > 主题导航
 
 - Building is just the beginning: Introducing Discoverability
-- [柚漫剧 AI全流程提效拆解](/ch01-645-柚漫剧-ai全流程提效拆解//)
-- [10 common component architecture mistakes in Figma design systems](/ch03-026-10-common-component-architecture-mistakes-in-figma-design-sy//)
-- [figma make, now on your local code: closing the design-to-co](/ch03-063-figma-make-now-on-your-local-code-closing-the-design-to-co//)
+- [柚漫剧 AI全流程提效拆解](/ch01-645-柚漫剧-ai全流程提效拆解/)
+- [10 common component architecture mistakes in Figma design systems](/ch03-026-10-common-component-architecture-mistakes-in-figma-design-sy/)
+- [figma make, now on your local code: closing the design-to-co](/ch03-063-figma-make-now-on-your-local-code-closing-the-design-to-co/)
 
 ---
 

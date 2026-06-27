@@ -67,12 +67,12 @@ else:
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/building-enterprise-agentic-ai-with-kiro-on-aws/)
 
 ## 相关实体
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双//)
-- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](/ch11-071-让-ai-理解你的组件库-新一代智能-d2c架构-基于-aws-kiro-mcp-skills-的智能转换实践//)
-- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](/ch09-092-让-kiro-和-claude-code-响应-im-消息-用-acp-bridge-打造异步-ai-编程工作流-亚//)
-- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](/ch11-194-使用-kiro-cli-和-agent-client-protocol-构建飞书-ai-聊天机器人-亚马逊aws官方//)
-- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](/ch11-146-使用-kiro-ai-ide-开发-aws-cdk-部署架构-从模糊需求到三层堆栈的协作实战-亚马逊aws官方博客//)
-- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](/ch11-110-ai-驱动的-graviton-迁移评估-kiro-power-实战指南-亚马逊aws官方博客//)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
+- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](/ch11-071-让-ai-理解你的组件库-新一代智能-d2c架构-基于-aws-kiro-mcp-skills-的智能转换实践/)
+- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](/ch09-092-让-kiro-和-claude-code-响应-im-消息-用-acp-bridge-打造异步-ai-编程工作流-亚/)
+- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](/ch11-194-使用-kiro-cli-和-agent-client-protocol-构建飞书-ai-聊天机器人-亚马逊aws官方/)
+- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](/ch11-146-使用-kiro-ai-ide-开发-aws-cdk-部署架构-从模糊需求到三层堆栈的协作实战-亚马逊aws官方博客/)
+- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](/ch11-110-ai-驱动的-graviton-迁移评估-kiro-power-实战指南-亚马逊aws官方博客/)
 
 ---
 

@@ -22,7 +22,7 @@ type: entity
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-distillation-panic.md)
 
 - [Qwen Image Flash Beyond Objective Design](/ch01-866-qwen-image-flash-beyond-objective-design-few-step-distill/)
-- [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](/ch15-training//)
+- [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](/ch15-training/)
 - [Interconnects The Inevitable Need For An Open Model Consortium](/ch01-816-the-inevitable-need-for-an-open-model-consortium/)
 ## 深度分析
 

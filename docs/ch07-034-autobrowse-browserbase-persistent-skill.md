@@ -77,7 +77,7 @@ Objective → Run → Study → Iterate → Graduate (SKILL.md)
 - 不依赖神秘新模型能力，只需方法递归应用
 
 ## 相关概念
-- [Hermes Agent](/ch04-418-hermes-agent//) — self-improving 方向相通，但 Autobrowse 通过显式技能文件实现而非隐式记忆
+- [Hermes Agent](/ch04-418-hermes-agent/) — self-improving 方向相通，但 Autobrowse 通过显式技能文件实现而非隐式记忆
 - [Browser Harness](/ch04-324-browser-harness-自愈型浏览器-agent-框架/) — Autobrowse 是 Browser Harness 持久记忆问题的具体答案
 - Agent Skill 编写指南 — SKILL.md 格式与 Skill 编写规范高度一致，Autobrowse 是这一原则在浏览器场景的工程化实践
 - [Factory Mission](/ch01-864-factory-mission-multi-agent-architecture/) — 两者都解决"历史探索知识无法积累"问题，但 Factory 侧重多 Agent 协作，Autobrowse 侧重单 Agent 的跨会话持久化

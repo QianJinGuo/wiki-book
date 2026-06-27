@@ -89,12 +89,12 @@
 ## 关联实体
 
 - Claude Code Dynamic Workflows Multi Agent Orchestration — 主条目，51KB 完整多 Agent 编排指南
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制//) — Claude Code 源码级机制
-- [Gsd Get Shit Done Context Management Tool](/ch01-184-gsd-get-shit-done-context-management-tool//) — GSD 上下文管理工具
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道//) — Claude Code 中的 agent harness 构建
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进//) — Agent 记忆系统
-- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding//) — Claude Code harness 深度解析
-- [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析//) — Founder Park 的 Claude Code harness 深度文章
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/) — Claude Code 源码级机制
+- [Gsd Get Shit Done Context Management Tool](/ch01-184-gsd-get-shit-done-context-management-tool/) — GSD 上下文管理工具
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/) — Claude Code 中的 agent harness 构建
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/) — Agent 记忆系统
+- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/) — Claude Code harness 深度解析
+- [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析/) — Founder Park 的 Claude Code harness 深度文章
 
 ## 相关实体
 

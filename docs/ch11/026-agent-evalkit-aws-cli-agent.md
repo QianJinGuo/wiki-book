@@ -88,15 +88,15 @@ Agent-EvalKit 团队在 Strands Agents SDK + Bedrock 旅行研究 agent 上跑 1
 
 ## 相关实体
 
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](/ch04-141-agenteval-yaml驱动的agent评测框架//) — YAML 驱动的 AgentEval 框架，Go 实现
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](/ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者//) — 阿里云泊予用 Claude Code 搭建评测 Harness
-- [Langsmith Evaluation Concepts](/ch03-119-langsmith-evaluation-concepts//) — LangSmith 评测概念框架
-- [Agent Harness Observability Production](/ch04-468-agent-harness-可观测性-生产级-ai-项目必须补上的一课//) — Agent harness 生产可观测性
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](/ch04-141-agenteval-yaml驱动的agent评测框架/) — YAML 驱动的 AgentEval 框架，Go 实现
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](/ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者/) — 阿里云泊予用 Claude Code 搭建评测 Harness
+- [Langsmith Evaluation Concepts](/ch03-119-langsmith-evaluation-concepts/) — LangSmith 评测概念框架
+- [Agent Harness Observability Production](/ch04-468-agent-harness-可观测性-生产级-ai-项目必须补上的一课/) — Agent harness 生产可观测性
 - Agent Memory Evaluation Landscape Taobao Survey — Agent 记忆评估方法论全景
-- [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](/ch04-494-基于-aws-智能设备助手行业资产-构建社交渠道触达的消费级-agent-交互应用//)
-- [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](/ch04-265-使用-aws-security-agent-构建应用安全闭环-从代码提交到漏洞修复的自动化之路//)
+- [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](/ch04-494-基于-aws-智能设备助手行业资产-构建社交渠道触达的消费级-agent-交互应用/)
+- [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](/ch04-265-使用-aws-security-agent-构建应用安全闭环-从代码提交到漏洞修复的自动化之路/)
 
-- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](/ch09-020-基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践//)
+- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](/ch09-020-基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践/)
 
 - MOC
 ## 深度分析

@@ -90,14 +90,14 @@ Amazon Web Services (AWS)
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/cloud-ai-mobile-testing-new-era-amazon-device-farm-mcp-server-practical-guide-en/)
 
 ## 相关实体
-- [AgentCore Runtime部署Apache Doris MCP Server](/ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt//)
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](/ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f//)
-- [停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南](/ch09-071-停止编码的那天-就是失去架构判断力的开始-一位-30-年架构师的-ai-生存指南//)
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](/ch01-189-ai-时代的-git-版本管理最佳实践//)
+- [AgentCore Runtime部署Apache Doris MCP Server](/ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt/)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](/ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f/)
+- [停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南](/ch09-071-停止编码的那天-就是失去架构判断力的开始-一位-30-年架构师的-ai-生存指南/)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](/ch01-189-ai-时代的-git-版本管理最佳实践/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-agentcore-doris-mcp-server.md)
 
-- [Agent 时代架构师技能指南](/ch04-346-agent-时代-我们架构师应该学什么//)
+- [Agent 时代架构师技能指南](/ch04-346-agent-时代-我们架构师应该学什么/)
 
 ---
 

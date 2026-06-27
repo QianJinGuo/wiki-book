@@ -190,11 +190,11 @@ A: Shadow AI是Shadow IT的子集，专指未批准的AI工具使用。清单将
 A: 可以从ROI最高的项开始：用户生命周期管理自动化（#2）和SaaS可视化（#3）是最佳起点，成本节约和安全提升效果最明显。
 
 ## 相关实体
-- [Ai Agents Inside Perimeter Hackernews](/ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know//)
-- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](/ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner//)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm//)
-- [The It And Security Field Guide To Ai Adoption Tines](/ch12-071-the-it-and-security-field-guide-to-ai-adoption-tines//)
-- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi//)
+- [Ai Agents Inside Perimeter Hackernews](/ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know/)
+- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](/ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner/)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
+- [The It And Security Field Guide To Ai Adoption Tines](/ch12-071-the-it-and-security-field-guide-to-ai-adoption-tines/)
+- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www.bettercloud.com-the-saasops-mini-checklist-managing-and-securing-your-enterprise-saas-applications.md)
 - 5 ways to curb ai sprawl without stifling innovation

@@ -41,11 +41,11 @@ cURL 项目创始人 Daniel Stenberg 测试了 Anthropic 的 Mythos AI 安全扫
 - `MCP生产模式` — Anthropic的工具调用安全实践
 
 ## 相关实体
-- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us//)
-- [Anthropic Mythos Bug Hunting Marketing](/ch01-675-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt//)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](/ch01-557-anthropic-puts-claude-agents-on-a-meter-across-its-subscript//)
-- [Harness Engineering Three Evolutions](/ch05-030-harness-engineering-ai工程的三次进化//)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](/ch01-392-introducing-claude-platform-on-aws-anthropic-s-native-platf//)
+- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
+- [Anthropic Mythos Bug Hunting Marketing](/ch01-675-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt/)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](/ch01-557-anthropic-puts-claude-agents-on-a-meter-across-its-subscript/)
+- [Harness Engineering Three Evolutions](/ch05-030-harness-engineering-ai工程的三次进化/)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](/ch01-392-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
 - MOC
 
 ---

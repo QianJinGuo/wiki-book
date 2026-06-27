@@ -80,7 +80,7 @@
 > **Meta Skill 的可能性**：专为 Agent 团队设计的白皮书，赋予模型更宏观的全局上下文 —— **从单兵作战到团队作战**。
 
 ## 与 SkillOpt 的对比
-| 维度 | [SkillOpt](/ch05-048-skillopt//) | Meta Skill |
+| 维度 | [SkillOpt](/ch05-048-skillopt/) | Meta Skill |
 |---|---|---|
 | **目标** | 训练出**更好的单个 Skill** 文档 | **编排多个 Skill** 完成长程任务 |
 | **方法** | 冻结模型 + 验证集门控 + 优化 skill 文本 | 在 SKILL.md 里写"步骤 N 调用哪个原子 Skill" |
@@ -91,7 +91,7 @@
 > **互补关系**：SkillOpt 让 Skill 变好；Meta Skill 让 Skill 变多；两者一起 = Skill 2.0 闭环。
 
 ## 与 Impeccable 的对比
-| 维度 | [Impeccable](/ch05-001-impeccable//) | Meta Skill |
+| 维度 | [Impeccable](/ch05-001-impeccable/) | Meta Skill |
 |---|---|---|
 | **范围** | 单个 Skill（前端设计） | 多个 Skill 的编排 |
 | **抽象层** | skill 内命令 (23 commands) | skill 间编排 (SKILL.md) |
@@ -105,14 +105,14 @@
 5. **个人信号 × 社区匹配** = Skill 发现的新范式，超越关键词搜索
 
 ## 相关对照
-- [OpenSquilla](/ch01-501-opensquilla//) —— Meta Skill 的实现载体
-- [SkillOpt](/ch05-048-skillopt//) —— 互补（Skill 变好 vs Skill 变多）
-- [Impeccable](/ch05-001-impeccable//) —— skill 内命令的范例
+- [OpenSquilla](/ch01-501-opensquilla/) —— Meta Skill 的实现载体
+- [SkillOpt](/ch05-048-skillopt/) —— 互补（Skill 变好 vs Skill 变多）
+- [Impeccable](/ch05-001-impeccable/) —— skill 内命令的范例
 - Agent Skill 编写指南
-- [10 篇论文看懂 AI Agent Skill](/ch04-036-10篇论文看懂ai-agent-skill-表示-执行-评估与进化//)
-- [Agent Skills 系统性综述](/ch04-340-agent-skills-系统性综述-表示-获取-检索-进化//)
-- [Skills 系统设计三路对比](/ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age//)
-- [Agent/Skills/Teams 架构演进](/ch04-219-agent-skills-teams-架构演进过程及技术选型之道//)
+- [10 篇论文看懂 AI Agent Skill](/ch04-036-10篇论文看懂ai-agent-skill-表示-执行-评估与进化/)
+- [Agent Skills 系统性综述](/ch04-340-agent-skills-系统性综述-表示-获取-检索-进化/)
+- [Skills 系统设计三路对比](/ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
+- [Agent/Skills/Teams 架构演进](/ch04-219-agent-skills-teams-架构演进过程及技术选型之道/)
 
 ## 深度分析
 - **流程知识资产化**：Meta Skill 将隐性的 SOP 流程转化为显性的可执行文档，赋予模型超越单步工具调用的宏观上下文理解能力 
@@ -123,7 +123,7 @@
 
 ## 实践启示
 - **先有清晰 SOP 再谈 Meta Skill**：单个 Meta Skill 需 400+ 行 SKILL.md 和约 30 分钟迭代，没有清晰的流程定义就无法有效抽象，先在业务层把 SOP 跑通是前置条件 
-- **用 [SkillOpt](/ch05-048-skillopt//) 优化单 Skill、用 Meta Skill 组织多 Skill**：两者是互补关系而非竞争关系，单个 Skill 的质量决定了编排层的下限，两层一起才能构成完整闭环 
+- **用 [SkillOpt](/ch05-048-skillopt/) 优化单 Skill、用 Meta Skill 组织多 Skill**：两者是互补关系而非竞争关系，单个 Skill 的质量决定了编排层的下限，两层一起才能构成完整闭环 
 - **智能路由是成本控制关键**：按子任务复杂度选择模型是 Meta Skill 的核心优势，建议默认开启路由，仅在特定场景（如合规审查）才锁定使用高端模型 
 - **关注个人信号 × 社区匹配机制**：未来 Skill 发现将从关键词搜索转向基于使用行为和偏好的智能推荐，提前布局信号采集和社区共享可获得先发优势 
 - **为 Agent 团队准备 Meta Skill 白皮书**：多 Agent 协作的瓶颈不在模型能力而在全局上下文赋予，Meta Skill 是赋予模型"团队视野"的关键载体，提前储备可加速团队作战能力建设

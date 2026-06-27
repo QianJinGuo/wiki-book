@@ -199,11 +199,11 @@ MCP 作为 AI 模型与外部工具的标准化连接协议，在本案例中展
 > 本篇作者：田培军，亚马逊云科技解决方案架构师
 
 ## 相关实体
-- [以 Kiro 快速部署云上 Agent：只需几个小时，从业务需求到部署于 Amazon Bedrock AgentCore 落地 | 亚马逊 AWS 官方博客](/ch11-064-以kiro快速部署云上agent-只需几个小时-从业务需求到部署于amazon-bedrock-agentcore落地//)
-- [AgentCore Runtime 部署 Apache Doris MCP Server](/ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt//)
-- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊 AWS 官方博客](/ch11-194-使用-kiro-cli-和-agent-client-protocol-构建飞书-ai-聊天机器人-亚马逊aws官方//)
-- [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的 Agent 应用 | 亚马逊 AWS 官方博客](/ch11-187-把-kiro-cli-当作-agent-sdk-一键订阅即可构建你的agent应用-亚马逊aws官方博客//)
-- [Amazon Bedrock AgentCore + Quick Suite 构建 AI Analytics](/ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南//)
+- [以 Kiro 快速部署云上 Agent：只需几个小时，从业务需求到部署于 Amazon Bedrock AgentCore 落地 | 亚马逊 AWS 官方博客](/ch11-064-以kiro快速部署云上agent-只需几个小时-从业务需求到部署于amazon-bedrock-agentcore落地/)
+- [AgentCore Runtime 部署 Apache Doris MCP Server](/ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt/)
+- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊 AWS 官方博客](/ch11-194-使用-kiro-cli-和-agent-client-protocol-构建飞书-ai-聊天机器人-亚马逊aws官方/)
+- [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的 Agent 应用 | 亚马逊 AWS 官方博客](/ch11-187-把-kiro-cli-当作-agent-sdk-一键订阅即可构建你的agent应用-亚马逊aws官方博客/)
+- [Amazon Bedrock AgentCore + Quick Suite 构建 AI Analytics](/ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南/)
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/quick-suite-agent-core-kiro-logistics-quote-assistant.md)
 
 ---

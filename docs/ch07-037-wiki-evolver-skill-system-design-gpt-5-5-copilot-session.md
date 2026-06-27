@@ -100,7 +100,7 @@ raw source → claim → mechanism → pattern → comparison
 
 传统知识管理工具（RSS 阅读器、书签管理器、笔记应用）的共同局限是：它们是**被动的存储系统**。`wiki-evolver` 的设计理念跳出了这个范式——它是一个**主动的认知系统**，其产出不仅是存储的信息，还包括新的问题、矛盾的发现、原创的综合、可复用的实践和改进的 Skill。
 
-这与 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 的理念高度一致：wiki-evolver 本质上是知识库的 Harness——它不改变底层模型（LLM 的能力），而是通过精心设计的编排流程，把模型能力转化为持续的知识产出。
+这与 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 的理念高度一致：wiki-evolver 本质上是知识库的 Harness——它不改变底层模型（LLM 的能力），而是通过精心设计的编排流程，把模型能力转化为持续的知识产出。
 
 ### Knowledge Ladder 的层次设计
 

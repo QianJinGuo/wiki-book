@@ -14,12 +14,12 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、Strands A
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/building-enterprise-level-with-bedrock-agentcore-and-strands/)
 
 ## 相关实体
-- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](/ch11-056-ci-amp-t基于-amazon-bedrock-agentcore-与-openclaw-的企业级智能运维最佳实践//)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](/ch04-156-agentcore-browser-os级操作-action-screenshot-reaction闭环//)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](/ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro//)
-- [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](/ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客//)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](/ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客//)
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](/ch11-078-基于-strands-agents-sdk-和-amazon-bedrock-agentcore-的商品广告图审查-ag//)
+- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](/ch11-056-ci-amp-t基于-amazon-bedrock-agentcore-与-openclaw-的企业级智能运维最佳实践/)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](/ch04-156-agentcore-browser-os级操作-action-screenshot-reaction闭环/)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](/ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
+- [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](/ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客/)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](/ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客/)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](/ch11-078-基于-strands-agents-sdk-和-amazon-bedrock-agentcore-的商品广告图审查-ag/)
 
 ## 深度分析
 ### 架构解耦：多层抽象的工程价值

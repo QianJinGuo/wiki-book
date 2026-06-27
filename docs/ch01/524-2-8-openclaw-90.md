@@ -13,11 +13,11 @@
 拆解 OpenClaw 架构（一）：6 阶段流水线与 20+ 平台的消息归一化
 
 ## 相关实体
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航//)
-- [Agent Memory Architecture Ruofei](/ch04-111-agent-memory-架构解析//)
-- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述//)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南//)
-- [Agent Context Management Architecture Patterns](/ch04-460-智能体编排层中的上下文管理架构//)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航/)
+- [Agent Memory Architecture Ruofei](/ch04-111-agent-memory-架构解析/)
+- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
+- [Agent Context Management Architecture Patterns](/ch04-460-智能体编排层中的上下文管理架构/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-architecture-8-part-summary.md)
 

@@ -259,7 +259,7 @@ nanobot 把所有决策路径强塞进一个 while 循环，与 LangGraph 的 DA
 - [Codex Major Update Appshots Goal Xinzhiyuan](/ch01-261-codex-重磅升级-appshots-goal-毕业-锁屏远程操控/) — Codex 同样采用单循环 + 长寿命任务设计
 - [天猫新品营销技术团队Ai编码实战指南上](/ch09-029-天猫新品营销技术团队ai编码实战指南-上/) — AGENT.md 持续约定模式的实战
 - [腾讯研究院Ai速递 20260506](/ch01-506-腾讯研究院ai速递-20260506/) — CL-Bench Life 揭示的"上下文误用"问题，呼应 nanobot 的 progressive loading 设计
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) — Agent harness 的工程框架
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Agent harness 的工程框架
 
 ## 相关链接
 

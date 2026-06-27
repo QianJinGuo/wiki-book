@@ -12,9 +12,9 @@
 ## 相关实体
 > 主题导航
 
-- [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](/ch03-084-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo//)
-- [Affirm Maps Road to $100B GMV With Card, AI Commerce](/ch03-081-affirm-maps-road-to-100b-gmv-with-card-ai-commerce//)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm//)
+- [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](/ch03-084-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo/)
+- [Affirm Maps Road to $100B GMV With Card, AI Commerce](/ch03-081-affirm-maps-road-to-100b-gmv-with-card-ai-commerce/)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
 
 - MOC
 ## 深度分析

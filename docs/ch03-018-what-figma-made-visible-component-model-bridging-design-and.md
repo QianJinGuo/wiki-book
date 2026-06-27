@@ -112,7 +112,7 @@ Trueman 坦诚地承认，他自己也不确定这是真正的结构性问题还
 - [Design-to-Code Loop: Figma](/ch03-007-what-the-design-to-code-loop-unlocks/)
 - [Figma Make](/ch03-063-figma-make-now-on-your-local-code-closing-the-design-to-co/)
 - [Agent Harnesses](/ch04-505-agent-harnesses-are-dead-long-live-agent-harnesses/)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//)
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 - [Haptics Design — Microsoft](/ch01-488-haptics-design-and-implementation-microsoft-design/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-figma-made-visible.md)

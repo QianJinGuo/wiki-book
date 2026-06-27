@@ -131,11 +131,11 @@ TamperedChef攻击链展现出高度结构化的入侵策略：
 3. **垂直整合深化**：广告公司与恶意软件开发商的整合模式可能成为行业新常态
 
 ## 相关实体
-- [Tracking Tampered Chef Clusters Aef374](/ch01-517-tracking-tamperedchef-clusters-via-certificate-and-code-reus//)
-- [Agentexecutorgooglesdistributedagentruntime](/ch01-411-agent-executor-google-s-distributed-agent-runtime//)
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](/ch12-020-how-an-image-could-compromise-your//)
-- [Shub Reaper Macos Stealer Attack Chain](/ch12-014-shub-reaper-macos-stealer-spoofs-apple-google-and-microso//)
-- [Liteframeefficientvisionencodersunlockframescalinginvideollms](/ch01-890-liteframe-efficient-vision-encoders-unlock-frame-scaling-in//)
+- [Tracking Tampered Chef Clusters Aef374](/ch01-517-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
+- [Agentexecutorgooglesdistributedagentruntime](/ch01-411-agent-executor-google-s-distributed-agent-runtime/)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](/ch12-020-how-an-image-could-compromise-your/)
+- [Shub Reaper Macos Stealer Attack Chain](/ch12-014-shub-reaper-macos-stealer-spoofs-apple-google-and-microso/)
+- [Liteframeefficientvisionencodersunlockframescalinginvideollms](/ch01-890-liteframe-efficient-vision-encoders-unlock-frame-scaling-in/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/trackingtamperedchefclustersviacertificateandcodereuse.md)
 

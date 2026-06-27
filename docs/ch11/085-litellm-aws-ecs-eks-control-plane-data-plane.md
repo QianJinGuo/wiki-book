@@ -102,7 +102,7 @@ autoscaling:
 
 ## 深度分析
 
-1. **LiteLLM AI Gateway 的本质是"统一接口层"而非简单代理** — 它不只是把请求转发给 Bedrock，而是承担了 [成本治理](/ch11-041-litellm-驱动的-amazon-bedrock-成本治理-四层防护体系//)（预算控制、速率限制）、Key 管理（Master Key + 用户级 Key）、响应缓存（Redis）和负载均衡多副本等企业级职责。内部开发者只需要对接一个 OpenAI 兼容 API，底层切换模型或 Provider 对上游完全透明。
+1. **LiteLLM AI Gateway 的本质是"统一接口层"而非简单代理** — 它不只是把请求转发给 Bedrock，而是承担了 [成本治理](/ch11-041-litellm-驱动的-amazon-bedrock-成本治理-四层防护体系/)（预算控制、速率限制）、Key 管理（Master Key + 用户级 Key）、响应缓存（Redis）和负载均衡多副本等企业级职责。内部开发者只需要对接一个 OpenAI 兼容 API，底层切换模型或 Provider 对上游完全透明。
 
 2. **ECS Fargate vs EKS 的选择本质是"运维模式 vs 灵活控制"** — Fargate 零节点管理、按容器运行时间计费，适合 <100 RPS中小规模；EKS 引入 Karpenter + Spot + Graviton 可节省 60%+ 成本，但要求团队熟悉 K8s 概念（HPA、IRSA、NetworkPolicy）。选 EKS 而非 Fargate 的理由永远是"团队已有 K8s 技术栈"，而非"LiteLLM 需要 K8s"。
 
@@ -123,9 +123,9 @@ autoscaling:
 ## 关键引用清单
 
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/litellm-生产级部署基于-aws-ecseks-的-ai-gateway-架构.md)
-- [LiteLLM Bedrock 成本治理](/ch11-041-litellm-驱动的-amazon-bedrock-成本治理-四层防护体系//) — 姐妹篇（运行时限额 + 审计）
-- [LiteLLM + QuickSight 可视化](/ch11-109-litellm-amazon-quicksight-数据可视化配置-s3-athena-aurora-三层数//) — 姐妹篇（运维监控）
-- [AWS NFW AI 冲突检测](/ch11-122-aws-network-firewall-规则冲突-ai-实时检测方案-部署小指南六//) — NFW 与 ECS/EKS 部署组合使用
+- [LiteLLM Bedrock 成本治理](/ch11-041-litellm-驱动的-amazon-bedrock-成本治理-四层防护体系/) — 姐妹篇（运行时限额 + 审计）
+- [LiteLLM + QuickSight 可视化](/ch11-109-litellm-amazon-quicksight-数据可视化配置-s3-athena-aurora-三层数/) — 姐妹篇（运维监控）
+- [AWS NFW AI 冲突检测](/ch11-122-aws-network-firewall-规则冲突-ai-实时检测方案-部署小指南六/) — NFW 与 ECS/EKS 部署组合使用
 
 ---
 

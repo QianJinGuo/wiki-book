@@ -13,11 +13,11 @@
 由 **jinguo** 独立设计开发，**2 天 38 commits 完成 7,760 行 TypeScript**，Monorepo 4 包架构（Hono API + Worker + Next.js 15 Dashboard + CLI），测试覆盖率 ~33%。OpenGorilla 集成让系统"越用越聪明"。
 
 ## 相关实体
-- [Schemaflow Openai Cookbook Staged Agentic Workflow](/ch04-185-schemaflow-openai-cookbook-partner-agentic-database-chang//)
+- [Schemaflow Openai Cookbook Staged Agentic Workflow](/ch04-185-schemaflow-openai-cookbook-partner-agentic-database-chang/)
 - Prompt Context Harness Three Evolutions
-- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料//)
-- [Claude Code Large Codebase Harness Configuration](/ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对//)
-- [Openai Skills Shell Compaction Agent Primitives](/ch05-024-openai-skills-shell-compaction-终结提示词工程的三位一体agent原语//)
+- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
+- [Claude Code Large Codebase Harness Configuration](/ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对/)
+- [Openai Skills Shell Compaction Agent Primitives](/ch05-024-openai-skills-shell-compaction-终结提示词工程的三位一体agent原语/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/promptqueue-opengorilla-project-analysis-ljguo.md)
 

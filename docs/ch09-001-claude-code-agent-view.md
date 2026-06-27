@@ -31,7 +31,7 @@ Claude Code 中有三个易混淆但本质不同的概念：[^1]
 4. **/loop 集成**：后台会话支持按 schedule 自迭代，带 ✢ 图标标识  
 
 ## 与 Hermes 的关联
-Agent View 解决的问题域与 Hermes 的 [Agent 编排](/ch04-418-hermes-agent//) 高度相关：  
+Agent View 解决的问题域与 Hermes 的 [Agent 编排](/ch04-418-hermes-agent/) 高度相关：  
 
 - Hermes 通过 wiki-pipeline 编排多个 agent 协作
 - Agent View 的 worktree 隔离方案是 Agent Harness 中多 agent 并行的参考模式

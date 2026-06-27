@@ -49,11 +49,11 @@ EntryPoint Hijacking 的本质是"滥用 Windows 加载器的正常调度机制"
 **通用建议**
 代码注入技术的检测已从"监控恶意 API"向"完整性校验 + 行为关联"演进。EntryPoint Hijacking 的短窗口特性意味着：没有持续性内存监控能力的 EDR 将难以检测，组织应评估自身 EDR 的进程内存完整性检测能力，并将此类高级注入技术纳入检测规则迭代规划中。
 ## 相关实体
-- [Entrypointhijacking](/ch01-128-entrypoint-hijacking//)
-- [Entrypointhijacking](/ch01-128-entrypoint-hijacking//)
-- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack//)
+- [Entrypointhijacking](/ch01-128-entrypoint-hijacking/)
+- [Entrypointhijacking](/ch01-128-entrypoint-hijacking/)
+- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
 - How We Built Cognitive Memory For Agentic Systems
-- [Stripe Sessions 2026 Ai Agents](/ch04-305-stripe-sessions-2026-ai-agents//)
+- [Stripe Sessions 2026 Ai Agents](/ch04-305-stripe-sessions-2026-ai-agents/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/entrypoint-hijacking.md)
 

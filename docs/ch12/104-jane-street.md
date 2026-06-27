@@ -40,9 +40,9 @@ Jane Street 工程师在 2026-06 发表的一篇立场文章，**核心论点是
 
 ## 与其他工作的关联
 
-- [Claude Code 大型代码库 Harness](/ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对//) — 同主题 AI 编程 vs 验证
-- [AI Friendly 架构](/ch05-022-ai-friendly-架构设计-后端系统面向无人值守开发时代的标准与路径//) — 形式化 spec 是 AI-friendly 的一种表达
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架//) — spec 即 harness 的一种特殊形式
+- [Claude Code 大型代码库 Harness](/ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对/) — 同主题 AI 编程 vs 验证
+- [AI Friendly 架构](/ch05-022-ai-friendly-架构设计-后端系统面向无人值守开发时代的标准与路径/) — 形式化 spec 是 AI-friendly 的一种表达
+- [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — spec 即 harness 的一种特殊形式
 
 ## 原文链接
 

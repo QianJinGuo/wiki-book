@@ -6,15 +6,15 @@
 
 # Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶
 ## 相关实体
-- [Pi Mono Github](/ch01-608-pi-mono-github//)
-- [Prompt Debugger Compare Templates Winty](/ch01-606-prompt-debugger-compare-templates-winty//)
-- [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai//)
-- [Harness Engineering Three Evolutions](/ch05-030-harness-engineering-ai工程的三次进化//)
-- [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](/ch01-343-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度//)
+- [Pi Mono Github](/ch01-608-pi-mono-github/)
+- [Prompt Debugger Compare Templates Winty](/ch01-606-prompt-debugger-compare-templates-winty/)
+- [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai/)
+- [Harness Engineering Three Evolutions](/ch05-030-harness-engineering-ai工程的三次进化/)
+- [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](/ch01-343-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)
 
-- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](/ch11-212-anthropic-工程团队-1680-人画像-不是博士实验室-是-infra-工程军团//)
+- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](/ch11-212-anthropic-工程团队-1680-人画像-不是博士实验室-是-infra-工程军团/)
 
 - MOC
 ## 深度分析

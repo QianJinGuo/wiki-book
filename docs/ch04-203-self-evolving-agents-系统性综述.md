@@ -30,7 +30,7 @@
 - **发布**：2026-05-04 | 来源：PaperAgent 公众号
 
 ## 与 Wiki 现有页面的关系
-- [Hermes Agent](/ch04-418-hermes-agent//) — Hermes 的自进化机制，侧重 Skill 生成 + RL 训练双路径
+- [Hermes Agent](/ch04-418-hermes-agent/) — Hermes 的自进化机制，侧重 Skill 生成 + RL 训练双路径
 - [Memento Skills Agent Self Evolving](/ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化/) — 技能外部记忆维度，与 Environment-Centric Static Knowledge Evolution 相关
 - [Agent Self Improvement Six Mechanisms](/ch04-047-agent-自我改进的六条路/) — Agent 自我改进六条路，与本文 taxonomy 有重叠但视角不同
 - [Agent Memory Modular Framework](/ch01-238-agent-memory-模块化框架与评测-memory-in-the-llm-era-4-模块-10-方案对比/) — Memory 模块化框架，与 Environment-Centric Modular Architecture Evolution 相关

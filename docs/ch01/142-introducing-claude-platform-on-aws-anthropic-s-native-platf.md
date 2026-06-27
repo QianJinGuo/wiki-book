@@ -12,17 +12,17 @@ In this post, we explore how Claude Platform on AWS works and how you can start 
 ## Claude Platform experience through AWS
 
 ## 相关实体
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](/ch01-392-introducing-claude-platform-on-aws-anthropic-s-native-platf//)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](/ch11-197-restrict-access-to-sensitive-documents-in-your-amazon-quick//)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](/ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using//)
-- [Claude For Small Business](/ch01-029-introducing-claude-for-small-business//)
-- [Anthropic Claude Managed Agents Platform 2026](/ch01-181-anthropic-claude-managed-agents-平台正式发布//)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](/ch01-392-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](/ch11-197-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](/ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
+- [Claude For Small Business](/ch01-029-introducing-claude-for-small-business/)
+- [Anthropic Claude Managed Agents Platform 2026](/ch01-181-anthropic-claude-managed-agents-平台正式发布/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-claude-platform-on-aws.md)
 
-- [Anthropic出手Ai的内心独白曝光了](/ch01-912-anthropic出手-ai的内心独白曝光了-nla研究解读//)
-- [Claude Code Context Engineering Anthropic Thariq](/ch01-753-claude-code-上下文工程-anthropic-团队的工程实践//)
-- [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](/ch01-524-anthropic创始人行动手册-打造一家ai-native创业公司-附36页中文pdf//)
+- [Anthropic出手Ai的内心独白曝光了](/ch01-912-anthropic出手-ai的内心独白曝光了-nla研究解读/)
+- [Claude Code Context Engineering Anthropic Thariq](/ch01-753-claude-code-上下文工程-anthropic-团队的工程实践/)
+- [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](/ch01-524-anthropic创始人行动手册-打造一家ai-native创业公司-附36页中文pdf/)
 
 - MOC
 - MOC

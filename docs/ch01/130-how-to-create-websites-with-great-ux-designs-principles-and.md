@@ -8,10 +8,10 @@
 
 ## 相关实体
 
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm//)
-- [How we made WINDOW JOIN parallel and vectorized](/ch01-034-how-we-made-window-join-parallel-and-vectorized//)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](/ch01-875-what-is-urban-density-design-a-clear-guide-to-how-cities-ge//)
-- [how dropbox uses mcp and dash to close the design-to-code se](/ch01-134-how-dropbox-uses-mcp-and-dash-to-close-the-design-to-code-se//)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
+- [How we made WINDOW JOIN parallel and vectorized](/ch01-034-how-we-made-window-join-parallel-and-vectorized/)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](/ch01-875-what-is-urban-density-design-a-clear-guide-to-how-cities-ge/)
+- [how dropbox uses mcp and dash to close the design-to-code se](/ch01-134-how-dropbox-uses-mcp-and-dash-to-close-the-design-to-code-se/)
 
 ## 深度分析
 **UX 设计的六项核心原则是递进关系**：User first → Usability → Consistency → Accessibility → Hierarchy → Context，这六项原则并非并列关系，而是从"战略层"到"表现层"的递进。User first 是设计决策的出发点；Usability 是功能可用性的底线；Consistency 降低用户认知负担；Accessibility 扩展用户边界；Hierarchy 引导视觉注意力；Context 提供恰到好处的信息时机。一个网站如果只做到前三项，只能算"能用"；只有六项全部做到，才能算真正的好 UX。

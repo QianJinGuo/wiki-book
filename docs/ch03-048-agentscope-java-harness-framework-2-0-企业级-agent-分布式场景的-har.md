@@ -448,7 +448,7 @@ Msg reply = agent.call(userMessage, ctx).block();
 AgentScope Java 1.1.0 的发布标志着 Java 生态首次拥有了成熟的 Harness Framework。在此之前，Harness 理念主要在 Python 生态（如 LangChain Agents）中落地，Java 开发者缺乏统一框架来工程化 Agent 应用。企业级场景对多租户、分布式、隔离执行的要求，与个人助手型 Agent 的简单本地运行范式存在根本差异，AgentScope 通过 Workspace、AbstractFilesystem、RuntimeContext、Memory 四大核心抽象，系统性地解决了这一 gap。
 
 > [!significance]
-> 从 [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架//) 的视角看，AgentScope 是 Java 生态对"第三代工程范式"的首次完整实现。
+> 从 [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/) 的视角看，AgentScope 是 Java 生态对"第三代工程范式"的首次完整实现。
 
 ## 当前局限性
 

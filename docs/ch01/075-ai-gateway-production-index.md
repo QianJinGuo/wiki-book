@@ -42,8 +42,8 @@ Claude Sonnet 4.6 在发布后第一个完整月就吸收了 Sonnet 系列的大
 > 主题导航
 
 - AI Gateway production index
-- [AI Gateway production index](/ch01-066-ai-gateway-production-index//)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm//)
+- [AI Gateway production index](/ch01-066-ai-gateway-production-index/)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
 - MOC
 
 ---

@@ -37,10 +37,10 @@ Agent Loop 的核心实现逻辑抽象后其实不到 20 行代码：
 5. **先建评测体系再优化 Agent**：区分 Pass@k（探索能力上限）和 Pass^k（上线回归），按确定性选择评分器（代码 > 模型 > 人工）
 
 ## 相关实体
-- [Agent Principle Architecture Engineering Practice](/ch04-300-agent-principle-architecture-engineering-practice//)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](/ch04-071-harness-engineering-让-coding-agent-可靠完成长程任务//)
-- [Factory Mission Multi Agent Architecture](/ch01-864-factory-mission-multi-agent-architecture//)
-- [Harness Engineering Long Term Agent Tasks](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务//)
+- [Agent Principle Architecture Engineering Practice](/ch04-300-agent-principle-architecture-engineering-practice/)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](/ch04-071-harness-engineering-让-coding-agent-可靠完成长程任务/)
+- [Factory Mission Multi Agent Architecture](/ch01-864-factory-mission-multi-agent-architecture/)
+- [Harness Engineering Long Term Agent Tasks](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent
 - MOC
 

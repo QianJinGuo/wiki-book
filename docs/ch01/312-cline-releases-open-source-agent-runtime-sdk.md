@@ -126,12 +126,12 @@ npx skills add cline/sdk-skill
 - **官方推文**：@cline (2026-05-13)
 
 ## 相关实体
-- [Cline releases open-source agent runtime SDK](/ch04-391-cline-releases-open-source-agent-runtime-sdk//)
-- [腾讯混元Hy3-preview发布](/ch01-094-腾讯混元hy3-preview发布//)
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](/ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客//)
-- [Codex /goal：长任务Agent的目标运行时](/ch04-094-codex-goal-长任务agent的目标运行时//)
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](/ch11-078-基于-strands-agents-sdk-和-amazon-bedrock-agentcore-的商品广告图审查-ag//)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](/ch07-053-cli系列④-选型cli-mcp还是api//)
+- [Cline releases open-source agent runtime SDK](/ch04-391-cline-releases-open-source-agent-runtime-sdk/)
+- [腾讯混元Hy3-preview发布](/ch01-094-腾讯混元hy3-preview发布/)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](/ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客/)
+- [Codex /goal：长任务Agent的目标运行时](/ch04-094-codex-goal-长任务agent的目标运行时/)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](/ch11-078-基于-strands-agents-sdk-和-amazon-bedrock-agentcore-的商品广告图审查-ag/)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](/ch07-053-cli系列④-选型cli-mcp还是api/)
 
 ## 深度分析
 ### SDK 分层架构的设计哲学

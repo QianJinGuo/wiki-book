@@ -96,23 +96,23 @@
 相对 4.6，这是一次极具意义的升级，精准命中 Anthropic 核心客户群的三个痛点：**Agent 编程可靠性**、**Computer-Use Agent 视觉能力**、**知识工作基准表现**（GDPval-AA）。
 
 ## Cross-links
-- → [Anthropic](/ch01-677-anthropic//)
-- → [Claude Code 深度架构分析](/ch01-846-claude-code-架构深度解析//)
+- → [Anthropic](/ch01-677-anthropic/)
+- → [Claude Code 深度架构分析](/ch01-846-claude-code-架构深度解析/)
 - → Claude Code 工具设计演化
 - → KAIROS Claude Code 常驻协作范式
-- → [Claude Code Agent 工程设计](/ch04-015-claude-code-的-agent-工程//)
-- → [Claude Harness 设计：Generator-Evaluator](/ch05-080-claude-harness-设计-generator-evaluator-架构与-context-reset-演进//)
+- → [Claude Code Agent 工程设计](/ch04-015-claude-code-的-agent-工程/)
+- → [Claude Harness 设计：Generator-Evaluator](/ch05-080-claude-harness-设计-generator-evaluator-架构与-context-reset-演进/)
 
 ## 相关实体
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践//)
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](/ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人//)
-- [claude-code-agent-view](/ch09-001-claude-code-agent-view//)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch04-084-anthropic-官方技能最佳实践-14-个可复用的-agent-skills-设计模式//)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](/ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具//)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](/ch01-354-anthropic发布-ai原生创业公司-手册-涵盖全流程四大核心阶段-一人公司法典来了//)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](/ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南//)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台//)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题//)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](/ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人/)
+- [claude-code-agent-view](/ch09-001-claude-code-agent-view/)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch04-084-anthropic-官方技能最佳实践-14-个可复用的-agent-skills-设计模式/)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](/ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具/)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](/ch01-354-anthropic发布-ai原生创业公司-手册-涵盖全流程四大核心阶段-一人公司法典来了/)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](/ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南/)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题/)
 
 - Harness Engineering 七层框架
 

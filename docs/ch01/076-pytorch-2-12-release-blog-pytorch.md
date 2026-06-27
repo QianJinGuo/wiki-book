@@ -16,7 +16,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pytorch-2-12-release-blog.md)
 
 ## 相关实体
-- [Pytorch 2 12 Release](/ch01-171-pytorch-2-12-release-blog//) — 同一博客的平行存档
+- [Pytorch 2 12 Release](/ch01-171-pytorch-2-12-release-blog/) — 同一博客的平行存档
 
 - profiling in pytorch (part 2): from nn.linear to a fused mlp
 

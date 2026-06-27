@@ -15,7 +15,7 @@
 - [User Journey Map](/ch01-165-user-journey-maps-how-ux-teams-turn-friction-into-better-pr/)
 - [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](/ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes/)
-- [Unitree Ipo Robotics Market](/ch18-robotics//)
+- [Unitree Ipo Robotics Market](/ch18-robotics/)
 - Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/user-interviews-guide-pro.md)

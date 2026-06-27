@@ -85,7 +85,7 @@ npm i -g @aws/agentcore@preview   # 安装CLI
 | 成本 | 用多少算多少 | 固定人力成本 |   
 
 ## 关联分析
-本文与 [Claude Code 架构解析](/ch01-571-claude-code-架构解析//) 高度相关：
+本文与 [Claude Code 架构解析](/ch01-571-claude-code-架构解析/) 高度相关：
 
 - Claude Code 拆解的七大模块（Tool Runtime / Permission / Query Loop / Task System / 扩展层）本质都是 **Harness 的一部分**
 - AgentCore 是云厂商对"每个团队都在重复造轮子"这一痛点的**平台化回应**
@@ -141,25 +141,25 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 
 ## Related
 - [原始文章存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcore-managed-harness.md)
-- [OpenClaw多租户迁移: Phase 2&3部署](/ch04-440-openclaw-multi-4//)
-- [AgentCore Runtime部署Apache Doris MCP Server](/ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt//)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](/ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构//)
-- [OpenClaw多租户迁移: 背景与架构概览](/ch04-432-openclaw-multi-1//)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](/ch04-390-openclaw-multi-3//)
-- [柚漫剧 AI 全流程提效拆解](/ch01-356-柚漫剧-ai-全流程提效拆解//)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](/ch04-156-agentcore-browser-os级操作-action-screenshot-reaction闭环//)
-- [Amazon Bedrock模型推理的Serverless异步架构](/ch11-067-amazon-bedrock-model-inference-serverless-architecture-case//)
+- [OpenClaw多租户迁移: Phase 2&3部署](/ch04-440-openclaw-multi-4/)
+- [AgentCore Runtime部署Apache Doris MCP Server](/ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt/)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](/ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构/)
+- [OpenClaw多租户迁移: 背景与架构概览](/ch04-432-openclaw-multi-1/)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](/ch04-390-openclaw-multi-3/)
+- [柚漫剧 AI 全流程提效拆解](/ch01-356-柚漫剧-ai-全流程提效拆解/)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](/ch04-156-agentcore-browser-os级操作-action-screenshot-reaction闭环/)
+- [Amazon Bedrock模型推理的Serverless异步架构](/ch11-067-amazon-bedrock-model-inference-serverless-architecture-case/)
 - 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
-- [Code as Agent Harness 综述](/ch09-046-code-as-agent-harness-综述//)
-- [harness-engineering-systematic-explainer](/ch05-036-harness-engineering-systematic-explainer//)
-- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图//)
+- [Code as Agent Harness 综述](/ch09-046-code-as-agent-harness-综述/)
+- [harness-engineering-systematic-explainer](/ch05-036-harness-engineering-systematic-explainer/)
+- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](/ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro//)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](/ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
 
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](/ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议//)
-- [Your Chief Agent Operator Lobehub](/ch04-368-your-chief-agent-operator-lobehub//)
-- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](/ch04-051-当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架//)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](/ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议/)
+- [Your Chief Agent Operator Lobehub](/ch04-368-your-chief-agent-operator-lobehub/)
+- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](/ch04-051-当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架/)
 - MOC
 
 ---

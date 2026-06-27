@@ -13,16 +13,16 @@ Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 办公任务：OfficeQA Pro 从 57.1% 干到 80.6%，简单理解就是让它处理 Excel 和 Doc 这些文件更靠谱了。
 
 ## 相关实体
-- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料//)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-255-anthropic-博客-claude-code-大型代码库最佳实践//)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search//)
-- [Anthropic Claude Managed Agents Platform 2026](/ch01-181-anthropic-claude-managed-agents-平台正式发布//)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践//)
+- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-255-anthropic-博客-claude-code-大型代码库最佳实践/)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Anthropic Claude Managed Agents Platform 2026](/ch01-181-anthropic-claude-managed-agents-平台正式发布/)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-opus-47.md)
 
-- [突发Anthropic拿下马斯克Colossus 1全部算力Claude要放开用了](/ch01-420-突发-anthropic拿下马斯克colossus-1全部算力-claude要放开用了//)
-- [anthropic 最新播客：如何打造下一代 claude](/ch01-467-anthropic-最新播客-如何打造下一代-claude//)
+- [突发Anthropic拿下马斯克Colossus 1全部算力Claude要放开用了](/ch01-420-突发-anthropic拿下马斯克colossus-1全部算力-claude要放开用了/)
+- [anthropic 最新播客：如何打造下一代 claude](/ch01-467-anthropic-最新播客-如何打造下一代-claude/)
 
 - MOC
 ## 深度分析

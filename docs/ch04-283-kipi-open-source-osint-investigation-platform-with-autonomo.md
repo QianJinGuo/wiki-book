@@ -81,7 +81,7 @@ kipi 的核心理念："The machine proposes. You decide."
 
 ### Agent 架构在情报分析中的应用
 
-kipi 是 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 在情报分析领域的优秀实践：
+kipi 是 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 在情报分析领域的优秀实践：
 
 1. **任务分解**：从"调查一个组织"分解为"查询 WHOIS → 分析 DNS → 检查证书 → 抓取网站 → 关联分析"
 2. **工具链**：每个子任务对应一个确定性工具（WHOIS 查询、DNS 解析、证书透明度日志）
@@ -162,7 +162,7 @@ export ANTHROPIC_API_KEY=sk-ant-...    # 唯一必需的 key
 
 ## 相关实体
 
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架//) — Agent 架构工程
+- [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — Agent 架构工程
 - [Claude Code Workflows](/ch09-070-claude-code-dynamic-workflows-实战模式与构建技巧/) — Agent 动态工作流
 - [SchemaFlow](/ch04-499-schemaflow-agentic-database-change-impact-analysis-sql-gen/) — 结构化数据的 LLM 约束
 - [Gray Swan](/ch01-900-red-teaming-after-mythos-zico-kolter-matt-fredrikson-gr/) — AI 安全与 red-teaming

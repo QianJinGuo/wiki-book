@@ -268,7 +268,7 @@ OpenAI 提出的"Entropy Garbage Collection"是一个极具工程价值的概念
 **边界**: 依赖 "**过程可观测**"。如果 AI 任务中间产物无法落盘 (如纯创意生成), 失效; 模型强到能自我保证纪律, harness 功成身退。
 
 ## 相关链接
-- 参考：[Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//)
+- 参考：[Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 - 参考：Coding Harness Engineering
 - 参考：Managed Agents Architecture
 ## 相关实体

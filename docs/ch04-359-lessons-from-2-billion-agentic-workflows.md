@@ -80,7 +80,7 @@ CrewAI 处理 20 亿次工作流的数据量足以过滤掉小样本偏差。三
 - Agent Framework Comparison — Agent 框架对比
 - Multi Agent Orchestration — 多 Agent 编排
 - Ai Safety Governance — AI 安全治理
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) — Harness 工程框架
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Harness 工程框架
 
 ---
 

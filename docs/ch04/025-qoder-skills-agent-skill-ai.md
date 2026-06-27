@@ -350,40 +350,40 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 3. **迭代式开发**：借助 skill-creator 和 skill-judge 等工具，通过"生成 → 评估 → 修订"的快速循环提升 Skill 质量
 
 ## 相关实体
-- [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南//)（同主题旧版）
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则//)（同主题不同 MP — 实操指引）
-- [Anthropic 14 个 Agent Skills 设计模式](/ch04-239-anthropic-14-个-agent-skills-设计模式//)
-- [Agent Skill 设计模式](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段//)（Anthropic → Google 演进）
-- [重新定义Skill开发：保姆级教程](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布//)
-- [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗//)（skill-judge 对照）
-- [Harness Engineering 90 Percent Pillars](/ch05-077-harness-engineering-四根支柱与四要素架构//)（与 Skill 同源的工程化思路）
-- [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南//)
+- [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南/)（同主题旧版）
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)（同主题不同 MP — 实操指引）
+- [Anthropic 14 个 Agent Skills 设计模式](/ch04-239-anthropic-14-个-agent-skills-设计模式/)
+- [Agent Skill 设计模式](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)（Anthropic → Google 演进）
+- [重新定义Skill开发：保姆级教程](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
+- [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)（skill-judge 对照）
+- [Harness Engineering 90 Percent Pillars](/ch05-077-harness-engineering-四根支柱与四要素架构/)（与 Skill 同源的工程化思路）
+- [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南/)
 - qoder skills
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格//)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](/ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills//)
-- [让 AI 理解你的组件库：新一代智能 D2C 架构 — 基于 AWS Kiro MCP Skills 的智能转换实践](/ch11-071-让-ai-理解你的组件库-新一代智能-d2c架构-基于-aws-kiro-mcp-skills-的智能转换实践//)
-- [Anthropic 14 个 Agent Skills 设计模式](/ch04-239-anthropic-14-个-agent-skills-设计模式//)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布//)
-- [Agent Skill 设计模式](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段//)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](/ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化//)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](/ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器//)
-- [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路//)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则//)
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](/ch04-178-从-anthropic-到-google-agent-skills-进入设计模式阶段//)
-- [Garry Tan](/ch01-497-garry-tan//)
-- [Agent Workflows](/ch04-306-agent-workflows//)
-- [Hermes Agent](/ch04-418-hermes-agent//)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](/ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills/)
+- [让 AI 理解你的组件库：新一代智能 D2C 架构 — 基于 AWS Kiro MCP Skills 的智能转换实践](/ch11-071-让-ai-理解你的组件库-新一代智能-d2c架构-基于-aws-kiro-mcp-skills-的智能转换实践/)
+- [Anthropic 14 个 Agent Skills 设计模式](/ch04-239-anthropic-14-个-agent-skills-设计模式/)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
+- [Agent Skill 设计模式](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](/ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化/)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](/ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器/)
+- [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路/)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](/ch04-178-从-anthropic-到-google-agent-skills-进入设计模式阶段/)
+- [Garry Tan](/ch01-497-garry-tan/)
+- [Agent Workflows](/ch04-306-agent-workflows/)
+- [Hermes Agent](/ch04-418-hermes-agent/)
 - Hermes Agent 新手上手指南
-- [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗//)
-- [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation//)
+- [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)
+- [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
 - Hermes Agent Skill
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图//)
-- [Skillx Zhejiang University](/ch04-415-skillx-automatically-constructing-skill-knowledge-bases-for//)
+- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
+- [Skillx Zhejiang University](/ch04-415-skillx-automatically-constructing-skill-knowledge-bases-for/)
 - Wiki Audit Skill
-- [Gemini Deep Guide Prompt](/ch01-378-gemini-深度导读生成器-prompt-让-ai-重写而非摘要//)
+- [Gemini Deep Guide Prompt](/ch01-378-gemini-深度导读生成器-prompt-让-ai-重写而非摘要/)
 - Promptqueue Opengorilla Project Analysis Ljguo
 - qoder 团队知识引擎
 

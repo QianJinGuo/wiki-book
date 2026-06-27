@@ -12,11 +12,11 @@
 - 令牌窃取后通过 GitHub 提交搜索实现 P2P 中继，绕过一切 C2 阻断
 - 持久化 `gh-token-monitor` 含真实 `rm -rf ~/` 逻辑，构成死亡开关； revocation 必须在移除持久化单元之后
 ## 相关实体
-- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](/ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack//)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](/ch01-743-mini-shai-hulud-strikes-again-tanstack-more-npm-packages//)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](/ch01-019-nvidia-s-jensen-huang-bets-on-this-british-startup-to-build//)
-- [Why Im Leaving Github For Forgejo](/ch01-011-why-i-m-leaving-github-for-forgejo//)
-- [From Doer To Director The Ai Mindset Shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift//)
+- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](/ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](/ch01-743-mini-shai-hulud-strikes-again-tanstack-more-npm-packages/)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](/ch01-019-nvidia-s-jensen-huang-bets-on-this-british-startup-to-build/)
+- [Why Im Leaving Github For Forgejo](/ch01-011-why-i-m-leaving-github-for-forgejo/)
+- [From Doer To Director The Ai Mindset Shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cybersecurityreach-revoke-token-wipe-computer.md)
 

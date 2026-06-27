@@ -197,11 +197,11 @@ LiteTopic 适合以下场景：
 一个可行的集成路径：ADK Agent 作为 LiteTopic 的生产者，将任务分发写入父 Topic + 对应 LiteTopic；ADK 的回调机制接收来自另一个 LiteTopic 的结果。框架侧无需感知 LiteTopic 的存在，只需配置正确的 Topic 和回调地址。
 
 ## 相关实体
-- [Rocket Mq 5 Litetopic Ai Agent Async Cloudnative](/ch04-138-apache-rocketmq-5-5-0-litetopic-ai-agent-异步通信消息模型//)
-- [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议//)
-- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述//)
-- [Agent Skills Teams Architecture Evolution Selection Guide](/ch04-219-agent-skills-teams-架构演进过程及技术选型之道//)
-- [Hermes Agent K2 6 Multi Agent](/ch04-411-万字保姆级教程-hermes-kimi-k2-6-打造7x24h-agent军团//)
+- [Rocket Mq 5 Litetopic Ai Agent Async Cloudnative](/ch04-138-apache-rocketmq-5-5-0-litetopic-ai-agent-异步通信消息模型/)
+- [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
+- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
+- [Agent Skills Teams Architecture Evolution Selection Guide](/ch04-219-agent-skills-teams-架构演进过程及技术选型之道/)
+- [Hermes Agent K2 6 Multi Agent](/ch04-411-万字保姆级教程-hermes-kimi-k2-6-打造7x24h-agent军团/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rocketmq-5-5-0-litetopics-ai-agent-messaging.md)
 

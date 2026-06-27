@@ -55,14 +55,14 @@ LLM 默认不理解"高优先级 Rule Group 截获流量后低优先级不再匹
 AI 生成的文本分析应配合 SVG/HTML 可视化图，并通过邮件/IM 主动推送，而不是让用户登录到某个 dashboard 查看。这种"推"模式比"拉"模式采用率显著更高。设计原则：管理员应该在做出配置变更后 1-2 分钟内就在自己的收件箱里看到"我刚做的事对不对"的反馈，而不是事后去查询。
 
 ## 相关实体
-- [Amazon Bedrock Api Security Guide](/ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南//)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](/ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew//)
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](/ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt//)
-- [Aws Bedrock Serverless Async Inference Multimodal](/ch11-073-amazon-bedrock模型推理的serverless异步架构-处理在线多模态高负载案例//)
-- [Aws Bedrock Agentcore Identity Security](/ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构//)
+- [Amazon Bedrock Api Security Guide](/ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南/)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](/ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](/ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt/)
+- [Aws Bedrock Serverless Async Inference Multimodal](/ch11-073-amazon-bedrock模型推理的serverless异步架构-处理在线多模态高负载案例/)
+- [Aws Bedrock Agentcore Identity Security](/ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
-- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](/ch11-032-aws-network-firewall-审查-idc-vpc-流量-vgw-架构-bgp-路由传播实验//)
+- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](/ch11-032-aws-network-firewall-审查-idc-vpc-流量-vgw-架构-bgp-路由传播实验/)
 - MOC
 
 ---

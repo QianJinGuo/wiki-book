@@ -49,11 +49,11 @@
 ### 关联实体
 
 - Headroom Context Compression Agent Vibecoder
-- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](/ch01-529-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务//)
-- [Hermes Agent V014 Architecture Shugex](/ch01-806-简单接口-返回最终响应字符串//)
-- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](/ch11-227-extending-mcp-support-for-amazon-bedrock-agentcore-gateway//)
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation](/ch01-746-从手动到自动化-用agenteval构建agent评测体系//)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](/ch04-121-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升//)
+- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](/ch01-529-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务/)
+- [Hermes Agent V014 Architecture Shugex](/ch01-806-简单接口-返回最终响应字符串/)
+- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](/ch11-227-extending-mcp-support-for-amazon-bedrock-agentcore-gateway/)
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation](/ch01-746-从手动到自动化-用agenteval构建agent评测体系/)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](/ch04-121-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升/)
 
 ## 实践启示
 

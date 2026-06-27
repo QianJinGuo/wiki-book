@@ -213,11 +213,11 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 - Agent 自进化
 
 ## 相关实体
-- [Hermes Agent Loop Architecture](/ch04-218-hermes-agent-loop-架构//)
-- [Small Hermes Self Evolving Agent Architecture](/ch04-109-small-hermes-自我进化-agent-架构//)
-- [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](/ch04-067-hermes-agent-operator-上手-把一个-agent-养成可运营系统//)
-- [Hermes Observability Aliyun](/ch04-103-给-hermes-装上显微镜-agent-执行全知道//)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](/ch01-349-ai-agent-gateway-架构设计-openclaw-claude-code-hermes-三框架对比//)
+- [Hermes Agent Loop Architecture](/ch04-218-hermes-agent-loop-架构/)
+- [Small Hermes Self Evolving Agent Architecture](/ch04-109-small-hermes-自我进化-agent-架构/)
+- [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](/ch04-067-hermes-agent-operator-上手-把一个-agent-养成可运营系统/)
+- [Hermes Observability Aliyun](/ch04-103-给-hermes-装上显微镜-agent-执行全知道/)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](/ch01-349-ai-agent-gateway-架构设计-openclaw-claude-code-hermes-三框架对比/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-loop-source-code-anatomy.md)
 
@@ -230,7 +230,7 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 > Original: https://x.com/IBuzovskyi/status/2064377155476193362
 > Date: 2026-06-12 09:53
 
-本来源是 [第 1 来源 winty 源码解剖](/ch04-053-agent-loop-源码导读-一次-hermes-任务的完整生命周期//) 的**同主题 1 个月后的演进**——把"Hermes 单一主循环"扩展为**"8 个 Loop 跨时间尺度同时运行"**的复利系统。本来源补全了第 1 来源**未涉及的**关键维度: 跨 Loop 复利 / FlowZap 4 类 taxonomy / 迭代预算分层 / 可中断 API / ThreadPoolExecutor 并发。
+本来源是 [第 1 来源 winty 源码解剖](/ch04-053-agent-loop-源码导读-一次-hermes-任务的完整生命周期/) 的**同主题 1 个月后的演进**——把"Hermes 单一主循环"扩展为**"8 个 Loop 跨时间尺度同时运行"**的复利系统。本来源补全了第 1 来源**未涉及的**关键维度: 跨 Loop 复利 / FlowZap 4 类 taxonomy / 迭代预算分层 / 可中断 API / ThreadPoolExecutor 并发。
 
 ### 核心数据
 
@@ -281,9 +281,9 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 - judge 把卡片 title + body 视为 acceptance criteria
 
 #### Loop 3-8(本来源概览)
-- **Memory Loop**: 跨 session 持久化经验(与 [Hermes Agent Memory System Architecture](/ch04-210-hermes-agent-记忆系统//) 同源)
-- **Skill Loop**: 把 procedure 编码为 SKILL.md 改变未来执行(与 [Hermes Skill System](/ch01-298-hermes-agent-skill-系统深度解析//) 同源)
-- **Reflection Loop**: 输出经另一 agent 评价后进入下一 pass(与 [Hermes Self Improving Loop Winty](/ch04-193-hermes-self-improving-闭环详解-winty//) 同源)
+- **Memory Loop**: 跨 session 持久化经验(与 [Hermes Agent Memory System Architecture](/ch04-210-hermes-agent-记忆系统/) 同源)
+- **Skill Loop**: 把 procedure 编码为 SKILL.md 改变未来执行(与 [Hermes Skill System](/ch01-298-hermes-agent-skill-系统深度解析/) 同源)
+- **Reflection Loop**: 输出经另一 agent 评价后进入下一 pass(与 [Hermes Self Improving Loop Winty](/ch04-193-hermes-self-improving-闭环详解-winty/) 同源)
 - **Orchestration Loop**: 跨 agent 跨时间协调(本来源独家扩展)
 - **Retry Loop**: 失败自动重试(基础能力)
 - **Compression Loop**: >50% 触发,Loop 1 内部步骤
@@ -314,19 +314,19 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 
 ### 与其他 Hermes 实体的关系
 
-- **Memory Loop** 与 [Hermes Agent Memory System Architecture](/ch04-210-hermes-agent-记忆系统//) 直接对应 — Hermes 记忆系统
-- **Skill Loop** 与 [Hermes Skill System](/ch01-298-hermes-agent-skill-系统深度解析//) 直接对应 — Hermes 技能系统
-- **Reflection Loop** 与 [Hermes Self Improving Loop Winty](/ch04-193-hermes-self-improving-闭环详解-winty//) 直接对应 — Hermes 自进化
-- **Orchestration Loop** 与 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](/ch04-067-hermes-agent-operator-上手-把一个-agent-养成可运营系统//) 互补 — Loop 视角 vs Operator 视角
-- **Core Loop / Ralph Loop** 与 [Hermes Agent Loop Architecture](/ch04-218-hermes-agent-loop-架构//) 直接对应 — 主循环概念
-- **Core Loop 9 步** 与 [Hermes Agent Goal And Kanban](/ch01-592-hermes-agent-v0-13-goal-目标管理与-kanban-多-agent-协作//) 的 `/goal` + kanban 集成直接对应 — 同一架构的两种视角
+- **Memory Loop** 与 [Hermes Agent Memory System Architecture](/ch04-210-hermes-agent-记忆系统/) 直接对应 — Hermes 记忆系统
+- **Skill Loop** 与 [Hermes Skill System](/ch01-298-hermes-agent-skill-系统深度解析/) 直接对应 — Hermes 技能系统
+- **Reflection Loop** 与 [Hermes Self Improving Loop Winty](/ch04-193-hermes-self-improving-闭环详解-winty/) 直接对应 — Hermes 自进化
+- **Orchestration Loop** 与 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](/ch04-067-hermes-agent-operator-上手-把一个-agent-养成可运营系统/) 互补 — Loop 视角 vs Operator 视角
+- **Core Loop / Ralph Loop** 与 [Hermes Agent Loop Architecture](/ch04-218-hermes-agent-loop-架构/) 直接对应 — 主循环概念
+- **Core Loop 9 步** 与 [Hermes Agent Goal And Kanban](/ch01-592-hermes-agent-v0-13-goal-目标管理与-kanban-多-agent-协作/) 的 `/goal` + kanban 集成直接对应 — 同一架构的两种视角
 
 ### 关键独到判断
 
 - **8 Loop 复利是 Hermes 与其他 agent framework 的本质差距**: 单 Loop 看不出价值,8 Loop 叠在一起形成复利
 - **FlowZap 4 类 taxonomy 是业界首个系统化 Loop 分类法**: Retry/Reflection/Memory/Skill 是 Loop 设计的"自然认知映射"
 - **Core Loop 9 步补全 winty 5 阶段**: 更具体到每步代码定位(`prompt_builder.py` / compression 检查 / prompt caching markers 等)
-- **迭代预算三层分层**: session 90 / subagent 50 / Ralph 20 — 三层独立预算,互不干扰(对比 [Hermes Agent Loop Architecture](/ch04-218-hermes-agent-loop-架构//) 早期版本 25/50 轮简化)
+- **迭代预算三层分层**: session 90 / subagent 50 / Ralph 20 — 三层独立预算,互不干扰(对比 [Hermes Agent Loop Architecture](/ch04-218-hermes-agent-loop-架构/) 早期版本 25/50 轮简化)
 - **可中断 API call 是工程底线**: interrupt event + 放弃 API 线程 — 比 winty 早期版本"用户打断处理"更精细
 - **40% 提速是 Loop 复利的可量化证据**: TokenMix benchmark 是 Loop 系统价值的"客观度量",其他 framework 应学这种度量
 

@@ -87,12 +87,12 @@ Teams 模式下 Agent 间直接 `send_message`，主 Agent 退到监督位。这
 
 ## 相关实体
 
-- [Openai Codex 521 Update Appshots Goal Computer Use](/ch09-073-codex-5-21-更新-ai-编程助手开始变成电脑工作代理//)
-- [Codex Goal Six Hour Run](/ch09-052-codex-goal-six-hour-run//)
-- [Agent Self Improvement Six Mechanisms](/ch04-047-agent-自我改进的六条路//)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进//)
-- [Kimi Work Codex Vibe Working Paradigm Shift](/ch01-159-kimi-work-通用-agent-战场从云端迁移到本地//)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering//)
+- [Openai Codex 521 Update Appshots Goal Computer Use](/ch09-073-codex-5-21-更新-ai-编程助手开始变成电脑工作代理/)
+- [Codex Goal Six Hour Run](/ch09-052-codex-goal-six-hour-run/)
+- [Agent Self Improvement Six Mechanisms](/ch04-047-agent-自我改进的六条路/)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [Kimi Work Codex Vibe Working Paradigm Shift](/ch01-159-kimi-work-通用-agent-战场从云端迁移到本地/)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
 - MOC
 
 ---

@@ -43,7 +43,7 @@ Hermes Agent 是 **Nous Research** 开源的自主演式 AI Agent 框架，GitHu
 | 多平台 | 40+ 聊天平台接入 |
 
 ## Related
-- [Hermes-Agent 自进化机制](/ch04-418-hermes-agent//) — Skill 生成 + RL 训练双路径详解
+- [Hermes-Agent 自进化机制](/ch04-418-hermes-agent/) — Skill 生成 + RL 训练双路径详解
 - [原始调研存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-tools-research.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](/ch07-029-qoder-skills-完全指南/)
 - [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/)

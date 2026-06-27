@@ -45,7 +45,7 @@
 ## 相关主题
 -  — Agent Memory 架构本质（治理视角）
 - [Agent Self Improvement Six Mechanisms](/ch04-047-agent-自我改进的六条路/) — Agent 自我改进机制，与 Memory 的"修正+遗忘"机制有交叉
-- [Hermes Agent](/ch04-418-hermes-agent//) — Hermes 的 Self-Evolving 机制与动态 Skill 沉淀，依赖有效 Memory 子系统
+- [Hermes Agent](/ch04-418-hermes-agent/) — Hermes 的 Self-Evolving 机制与动态 Skill 沉淀，依赖有效 Memory 子系统
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/memory-in-the-llm-era-iclr2026.md)
 
 ## 相关实体

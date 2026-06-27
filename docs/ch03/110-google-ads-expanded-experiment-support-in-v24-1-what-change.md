@@ -67,11 +67,11 @@ Google Ads 实验数据是平台级别的，但业务影响是全链路的。成
 - 每个实验关联决策 owner
 - 建立实验库，记录所有历史实验和结论
 ## 相关实体
-- [3Rdfsmp](/ch11-166-archera-insured-cloud-commitments-for-aws-azure-and-goog//)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](/ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake//)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](/ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock//)
-- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](/ch01-047-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p//)
-- [Building Blocks For Foundation Model Training And Inference On Aws](/ch11-117-building-blocks-for-foundation-model-training-and-inference//)
+- [3Rdfsmp](/ch11-166-archera-insured-cloud-commitments-for-aws-azure-and-goog/)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](/ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake/)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](/ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock/)
+- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](/ch01-047-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p/)
+- [Building Blocks For Foundation Model Training And Inference On Aws](/ch11-117-building-blocks-for-foundation-model-training-and-inference/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/almcorp-google-ads-expanded-experiment-v24-1.md)
 

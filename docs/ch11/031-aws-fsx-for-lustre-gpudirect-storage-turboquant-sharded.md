@@ -112,7 +112,7 @@ lfs setstripe -c 8 -S 1m /lustre/checkpoints/llama-405b/
 
 ## 与现有实体的差异化
 
-| 维度 | 现有 [Foundation Model Building Blocks](/ch03-082-foundation-model-building-blocks//) | 本文 |
+| 维度 | 现有 [Foundation Model Building Blocks](/ch03-082-foundation-model-building-blocks/) | 本文 |
 |------|----------------------------------|------|
 | 主题层级 | AWS FM 训练/推理全栈概述 | 单点优化：模型加载 |
 | 技术深度 | 概览各组件 | 4 阶段工程实施 + benchmark |

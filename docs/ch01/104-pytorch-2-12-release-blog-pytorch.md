@@ -12,8 +12,8 @@
 ## 相关实体
 > 主题导航
 
-- [PyTorch 2.12 Release Blog – PyTorch](/ch01-067-pytorch-2-12-release-blog-pytorch//)
-- [PyTorch 2.12 Release Blog – PyTorch](/ch01-089-pytorch-2-12-release-blog-pytorch//)
+- [PyTorch 2.12 Release Blog – PyTorch](/ch01-067-pytorch-2-12-release-blog-pytorch/)
+- [PyTorch 2.12 Release Blog – PyTorch](/ch01-089-pytorch-2-12-release-blog-pytorch/)
 
 ## 深度分析
 PyTorch 2.12 标志着 PyTorch 从研究优先框架向统一硬件无关生产平台的转型进入关键阶段。

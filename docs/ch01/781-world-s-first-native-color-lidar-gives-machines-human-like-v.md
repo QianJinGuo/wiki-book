@@ -22,7 +22,7 @@ L4 chip 的性能参数也值得关注：42.9 GMACs 处理能力、20 trillion p
 
 ## 相关实体
 
-- [Tether launches developer grants program for local-first AI and payments infrastructure](/ch11-183-tether-launches-developer-grants-program-for-local-first-ai//)
+- [Tether launches developer grants program for local-first AI and payments infrastructure](/ch11-183-tether-launches-developer-grants-program-for-local-first-ai/)
 
 ---
 

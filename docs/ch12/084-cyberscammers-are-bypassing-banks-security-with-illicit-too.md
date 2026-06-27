@@ -16,11 +16,11 @@
 MIT Technology Review 在为期两个月的调查中发现了 22 个中越英语言 Telegram 公开频道，这些频道售卖用于绕过"了解你的客户"（KYC）面部扫描的非法工具包和被盗生物特征数据。这些工具使诈骗者能够开设 mule 账户并洗钱，主要针对 Binance、西班牙 BBVA、英国 Revolut 等主流金融机构。攻击手法利用虚拟摄像头（VCam）替换真实视频流，用静态图片或 deepfake 视频骗过活体检测。2024 年虚拟摄像头攻击较 2023 年增长超过 25 倍，"复杂"欺诈尝试几乎翻了三倍。
 
 ## 相关实体
-- [Cyberscammers Bypassing Bank Telegram](/ch12-040-cyberscammers-are-bypassing-banks-security-with-illicit-too//)
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess 1](/ch01-629-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita//)
-- [Weve Been Here Before Ai Vulnerability Research](/ch01-457-weve-been-here-before-ai-vulnerability-research//)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](/ch04-370-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s//)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](/ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha//)
+- [Cyberscammers Bypassing Bank Telegram](/ch12-040-cyberscammers-are-bypassing-banks-security-with-illicit-too/)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess 1](/ch01-629-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita/)
+- [Weve Been Here Before Ai Vulnerability Research](/ch01-457-weve-been-here-before-ai-vulnerability-research/)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](/ch04-370-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](/ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha/)
 
 - MOC
 ## 相关主题

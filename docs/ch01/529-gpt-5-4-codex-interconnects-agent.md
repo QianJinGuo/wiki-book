@@ -73,11 +73,11 @@ GPT 5.4 在所有四个维度都感觉是意义重大的进步，不只是纸面
 GPT 5.4 是把极强软件基础（GPT 5.3 Codex）和更多简单可用性/Agent 特性结合的 Agentic 模型。大步前进，期待两家公司下一个更新。
 
 ## 相关实体
-- [Codex Goal Six Hour Run](/ch09-052-codex-goal-six-hour-run//)
-- [Three Years Gpt3 Gemini3 Mollick](/ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测//)
+- [Codex Goal Six Hour Run](/ch09-052-codex-goal-six-hour-run/)
+- [Three Years Gpt3 Gemini3 Mollick](/ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测/)
 - GPT-5.5 实测
-- [Kimi Work Codex Vibe Working Paradigm Shift](/ch01-159-kimi-work-通用-agent-战场从云端迁移到本地//)
-- [Openai Codex Super Computer Network Xinzhiyuan](/ch09-058-openai秘密矩阵曝光-codex将所有设备连成超级电脑//)
+- [Kimi Work Codex Vibe Working Paradigm Shift](/ch01-159-kimi-work-通用-agent-战场从云端迁移到本地/)
+- [Openai Codex Super Computer Network Xinzhiyuan](/ch09-058-openai秘密矩阵曝光-codex将所有设备连成超级电脑/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-54-is-a-big-step-for-codex.md)
 

@@ -87,7 +87,7 @@ SkillOpt 优化的 Skill 具有跨模型和跨环境的迁移能力：
 
 ### 对 Harness Engineering 的启示
 
-SkillOpt 的发现直接支持了 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 的核心理念：**Agent 系统的性能瓶颈不在模型本身，而在 harness（上下文、指令、工具配置）**。
+SkillOpt 的发现直接支持了 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 的核心理念：**Agent 系统的性能瓶颈不在模型本身，而在 harness（上下文、指令、工具配置）**。
 
 关键启示：
 - **Skill 不应手写后固定**：应该像模型权重一样持续迭代优化
@@ -110,7 +110,7 @@ SkillOpt 的发现直接支持了 [Harness Engineering](/ch05-041-harness-engine
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
 - [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//)
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 
 ---
 

@@ -69,7 +69,7 @@
 
 ## 与现有实体的关系
 
-- **支撑 [Ahe Agentic Harness Engineering](/ch04-212-ahe-agentic-harness-engineering//)** — K-Dense 提供 4 个科学 AI 案例佐证 "harness 决定上限"
+- **支撑 [Ahe Agentic Harness Engineering](/ch04-212-ahe-agentic-harness-engineering/)** — K-Dense 提供 4 个科学 AI 案例佐证 "harness 决定上限"
 - **呼应 [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/)** — Anthropic 主张 harness > pretraining；K-Dense 用科学 AI 数据给出量化证明
 - **支持 Miroflow Deep Research Agent Harness Mirothinker** — Deep Research 类 harness 是设计典范，单模型质量不及 harness
 - **补充 [Agent Harness Engineering Survey 2026](/ch04-069-agent-harness-engineering-a-survey/)** — Survey 中 "context engineering" 一节的科学 AI 实例

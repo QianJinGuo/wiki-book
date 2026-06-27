@@ -57,11 +57,11 @@ Gray Swan 的 Shade 工具在 red-teaming 领域实现了突破：**专用 red-t
 3. **威胁建模**：针对 agent 场景的攻击面分析，而非通用的"安全过滤绕过"
 4. **防御工程化**：从"更好的 prompt"到"工程化的 guardrail 系统"
 
-这与 [Role Confusion](/ch01-500-prompt-injection-as-role-confusion//) 研究形成互补——后者提供理论框架（prompt injection 本质是角色混淆），Gray Swan 提供实战工具和方法论。
+这与 [Role Confusion](/ch01-500-prompt-injection-as-role-confusion/) 研究形成互补——后者提供理论框架（prompt injection 本质是角色混淆），Gray Swan 提供实战工具和方法论。
 
 ### Agent 安全的新威胁模型
 
-随着 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 的兴起，agent 获得了越来越多的工具调用能力。这带来了新的威胁模型：
+随着 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 的兴起，agent 获得了越来越多的工具调用能力。这带来了新的威胁模型：
 
 ```
 传统 LLM 威胁面：
@@ -103,11 +103,11 @@ AI 安全赛道正在从"学术研究"转向"商业产品"。Gray Swan 的 Serie
 
 ## 相关实体
 
-- [Role Confusion](/ch01-500-prompt-injection-as-role-confusion//) — Prompt injection 的理论框架
-- [AFine CSP Injection](/ch09-114-stealing-passwords-via-html-injection-under-a-strict-csp//) — 具体的注入攻击案例
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架//) — Agent 架构工程
-- [Claude Tag](/ch01-886-introducing-claude-tag//) — Anthropic 的 agent 安全实践
-- [OpenClaw](/ch01-835-openclaw-boris-cherny-agent-loop-design-patterns//) — 计算机使用 agent 的安全挑战
+- [Role Confusion](/ch01-500-prompt-injection-as-role-confusion/) — Prompt injection 的理论框架
+- [AFine CSP Injection](/ch09-114-stealing-passwords-via-html-injection-under-a-strict-csp/) — 具体的注入攻击案例
+- [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — Agent 架构工程
+- [Claude Tag](/ch01-886-introducing-claude-tag/) — Anthropic 的 agent 安全实践
+- [OpenClaw](/ch01-835-openclaw-boris-cherny-agent-loop-design-patterns/) — 计算机使用 agent 的安全挑战
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latent-space-p-gray-swan.md)
 

@@ -58,25 +58,25 @@ SkillX的三层技能体系（Planning / Functional / Atomic）揭示了Agent经
 
 ## 相关页面
 
-- [Skill 设计模式](/ch07-002-skill-设计模式//)
-- [Hermes-Agent 自进化机制](/ch04-418-hermes-agent//)
-- [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质//)
+- [Skill 设计模式](/ch07-002-skill-设计模式/)
+- [Hermes-Agent 自进化机制](/ch04-418-hermes-agent/)
+- [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/)
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillx-zhejiang-university.md)
 
 ## 相关实体
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则//)
-- [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning//)
-- [Anthropic 14 个 Agent Skills 设计模式](/ch04-239-anthropic-14-个-agent-skills-设计模式//)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布//)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](/ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论//)
-- [SkillClaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化//)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力//)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](/ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills//)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)
+- [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
+- [Anthropic 14 个 Agent Skills 设计模式](/ch04-239-anthropic-14-个-agent-skills-设计模式/)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](/ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论/)
+- [SkillClaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化/)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](/ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills/)
 
-- [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南//)
-- [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗//)
+- [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南/)
+- [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)
 - Hermes Agent Skill
-- [wiki evolver](/ch07-015-wiki-evolver//)
+- [wiki evolver](/ch07-015-wiki-evolver/)
 - MOC
 
 ---

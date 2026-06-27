@@ -11,11 +11,11 @@
 1. **多种行为偏好均可潜意识传递**，包括一些不安全的行为偏好
 
 ## 相关实体
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段//)
-- [Sap Unveils The Autonomous Enterprise](/ch04-066-sap-unveils-the-autonomous-enterprise//)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](/ch04-321-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段//)
-- [Anthropic Mythos Bug Hunting Marketing](/ch01-675-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt//)
-- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us//)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
+- [Sap Unveils The Autonomous Enterprise](/ch04-066-sap-unveils-the-autonomous-enterprise/)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](/ch04-321-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
+- [Anthropic Mythos Bug Hunting Marketing](/ch01-675-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt/)
+- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthopic-distillation-behavioural-traits-nature.md)
 

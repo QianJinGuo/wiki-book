@@ -7,11 +7,11 @@
 > -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
 
 ## 相关实体
-- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](/ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha//)
-- [Semis Memo: Supply Chain Inheritance](/ch01-473-semis-memo-supply-chain-inheritance//)
-- [Amazon launches Supply Chain Services for businesses of all sizes](/ch11-210-amazon-launches-supply-chain-services-for-businesses-of-all//)
-- [Semis Memo: Supply Chain Inheritance](/ch01-485-semis-memo-supply-chain-inheritance//)
-- [semgrep intercom php supply chain](/ch12-100-semgrep-intercom-php-supply-chain//)
+- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](/ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha/)
+- [Semis Memo: Supply Chain Inheritance](/ch01-473-semis-memo-supply-chain-inheritance/)
+- [Amazon launches Supply Chain Services for businesses of all sizes](/ch11-210-amazon-launches-supply-chain-services-for-businesses-of-all/)
+- [Semis Memo: Supply Chain Inheritance](/ch01-485-semis-memo-supply-chain-inheritance/)
+- [semgrep intercom php supply chain](/ch12-100-semgrep-intercom-php-supply-chain/)
 
 - MOC
 ## 深度分析

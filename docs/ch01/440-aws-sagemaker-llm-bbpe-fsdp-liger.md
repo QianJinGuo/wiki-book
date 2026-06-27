@@ -66,11 +66,11 @@ AWS 教程展示了"可以做到"，但未讨论"如何做好"——生产级低
 AWS 教程提供了可运行的基础流水线，但生产化需要自行补齐：持续数据更新、用户反馈循环、A/B 测试框架和监控告警。
 
 ## 相关实体
-- [Aws Reinforcement Fine Tuning Llm As Judge](/ch01-437-aws-reinforcement-fine-tuning-llm-as-judge//)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem//)
-- [Aws Sagemaker Capacity Aware Inference Fallback](/ch01-301-aws-sagemaker-capacity-aware-inference-fallback//)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning//)
-- [Aws Grpo Rlvr Sagemaker Math Reasoning](/ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning//)
+- [Aws Reinforcement Fine Tuning Llm As Judge](/ch01-437-aws-reinforcement-fine-tuning-llm-as-judge/)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
+- [Aws Sagemaker Capacity Aware Inference Fallback](/ch01-301-aws-sagemaker-capacity-aware-inference-fallback/)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](/ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning/)
 
 ## 相关引用
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-sagemaker-azerbaijani-lm.md)

@@ -42,9 +42,9 @@ Before you arrive, we’re going to tell you what we think needs to be fixed. Yo
 - 与现有实体的差异化角度：本文来自 randsinrepose.com 视角
 - 引用源：[Randsinrepose We Dont Believe You Rub](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/randsinrepose-we-dont-believe-you-rub.md)
 ## 相关实体
-- [from doer to director: the ai mindset shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift//)
-- [why internally-built ai fails fund accounting audits](/ch01-107-why-internally-built-ai-fails-fund-accounting-audits//)
-- [back up and restore your amazon eks cluster resources using](/ch01-051-back-up-and-restore-your-amazon-eks-cluster-resources-using//)
+- [from doer to director: the ai mindset shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
+- [why internally-built ai fails fund accounting audits](/ch01-107-why-internally-built-ai-fails-fund-accounting-audits/)
+- [back up and restore your amazon eks cluster resources using](/ch01-051-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
 
 ---
 

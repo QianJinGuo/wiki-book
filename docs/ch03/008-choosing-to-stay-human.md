@@ -83,11 +83,11 @@ ChatGPT 的 /learn、Gemini 的 Guided Learning、Claude 的 learning style sele
 - **AI ≠ 代理**：主动选择使用 AI 而非被设计默认推向 frictionless use
 
 ## 相关实体
-- [Against Brain Damage](/ch03-016-against-brain-damage//)
-- [Frontier Code Cognition Mergeability Benchmark](/ch01-257-frontiercode-cognition-ai-的-pr-mergeability-编码基准//)
-- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了//)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](/ch03-056-yc-ceo-garry-tan-200美元重构400万美元项目-ai-agent协作开发实践//)
-- [Defect Backlog Retention Report](/ch03-003-your-defect-backlog-is-a-retention-report//)
+- [Against Brain Damage](/ch03-016-against-brain-damage/)
+- [Frontier Code Cognition Mergeability Benchmark](/ch01-257-frontiercode-cognition-ai-的-pr-mergeability-编码基准/)
+- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](/ch03-056-yc-ceo-garry-tan-200美元重构400万美元项目-ai-agent协作开发实践/)
+- [Defect Backlog Retention Report](/ch03-003-your-defect-backlog-is-a-retention-report/)
 
 ## 相关引用
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/choosing-to-stay-human.md)

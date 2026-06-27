@@ -12,11 +12,11 @@
 * ** 零外部依赖  ** ：不需要API Key、数据库、网络。任何人克隆下来就能跑。
 
 ## 相关实体
-- [Skill Engineering Ai As Algorithm](/ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程//)
-- [Hermes Agent Getting Started Guide 2026](/ch04-292-hermes-agent-保姆级教程-一句话组建你的-ai-打工团队//)
-- [Llm Raiders Private Ai Server](/ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se//)
-- [Pi Mono Github](/ch01-608-pi-mono-github//)
-- [我用 Skillmd 做了一个简历生成器](/ch07-047-我用-skill-md-做了一个简历生成器//)
+- [Skill Engineering Ai As Algorithm](/ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程/)
+- [Hermes Agent Getting Started Guide 2026](/ch04-292-hermes-agent-保姆级教程-一句话组建你的-ai-打工团队/)
+- [Llm Raiders Private Ai Server](/ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se/)
+- [Pi Mono Github](/ch01-608-pi-mono-github/)
+- [我用 Skillmd 做了一个简历生成器](/ch07-047-我用-skill-md-做了一个简历生成器/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/我用-skillmd-做了一个简历生成器.md)
 

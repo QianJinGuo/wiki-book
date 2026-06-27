@@ -48,17 +48,17 @@ CloudWatch 告警的 AlarmDescription 字段应包含结构化业务上下文（
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
 
 ## 相关实体
-- [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](/ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践//)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](/ch07-060-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式//)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s//)
+- [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](/ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践/)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](/ch07-060-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式/)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
 
-- [Agent orchestration](/ch04-409-agent-orchestration//)
-- [AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](/ch07-039-aws-devops-agent-mcp-server-打通混合云网络排障的最后一公里//)
-- [AWS Reinvent Game Demo 2024-25](/ch11-207-aws-reinvent-game-demo-2024-25//)
+- [Agent orchestration](/ch04-409-agent-orchestration/)
+- [AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](/ch07-039-aws-devops-agent-mcp-server-打通混合云网络排障的最后一公里/)
+- [AWS Reinvent Game Demo 2024-25](/ch11-207-aws-reinvent-game-demo-2024-25/)
 - AI Agent 探索之路：从 Task-Driven 到 Goal-Driven
-- [AgentCore Managed Harness](/ch04-206-agentcore-managed-harness//)
-- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图//)
-- [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](/ch11-149-aws-devops-agent-接入-aws-中国区系列-partition-隔离-多账号扩展与-roles-anyw//)
+- [AgentCore Managed Harness](/ch04-206-agentcore-managed-harness/)
+- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
+- [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](/ch11-149-aws-devops-agent-接入-aws-中国区系列-partition-隔离-多账号扩展与-roles-anyw/)
 - MOC
 
 ---

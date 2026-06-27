@@ -111,7 +111,7 @@ Lambert 是**模型能力 + 开源生态**专家（Interconnects 主理人），
 
 ## 与现有实体的差异化
 
-| 维度 | 本实体 | [Interconnects: 未来开源模型](/ch01-169-what-comes-next-with-open-models//) | [2028 全球 AI 领导力两情景](/ch01-005-2028-two-scenarios-for-global-ai-leadership//) |
+| 维度 | 本实体 | [Interconnects: 未来开源模型](/ch01-169-what-comes-next-with-open-models/) | [2028 全球 AI 领导力两情景](/ch01-005-2028-two-scenarios-for-global-ai-leadership/) |
 |------|--------|------------------------------|----------------|
 | 时间锚点 | 2026-03（Anthropic 事件） | 2026 持续追踪 | 2028 远景预测 |
 | 主轴 | 政府/主权 vs 开源均衡 | 开源能力 vs 闭源 | 全球领导权竞争 |
@@ -134,11 +134,11 @@ Lambert 是**模型能力 + 开源生态**专家（Interconnects 主理人），
 
 ## 相关实体
 
-- [Interconnects: 未来开源模型](/ch01-169-what-comes-next-with-open-models//) — 同作者的开源能力追踪
-- [2028 全球 AI 领导力两情景](/ch01-005-2028-two-scenarios-for-global-ai-leadership//) — 远景地缘战略
-- [Cohere North Mini](/ch01-440-cohere-north-mini-code-30b-moe-agentic-coding-model//) — 涉及主权 AI
-- [Claude Fable 5 与 AI 安全寓言](/ch01-649-claude-fable-5-and-new-ai-safety-fables//) — Anthropic 政策方向
-- [2026 年中开源模型下注](/ch01-404-my-bets-on-open-models-mid-2026//) — Lambert 同期评估
+- [Interconnects: 未来开源模型](/ch01-169-what-comes-next-with-open-models/) — 同作者的开源能力追踪
+- [2028 全球 AI 领导力两情景](/ch01-005-2028-two-scenarios-for-global-ai-leadership/) — 远景地缘战略
+- [Cohere North Mini](/ch01-440-cohere-north-mini-code-30b-moe-agentic-coding-model/) — 涉及主权 AI
+- [Claude Fable 5 与 AI 安全寓言](/ch01-649-claude-fable-5-and-new-ai-safety-fables/) — Anthropic 政策方向
+- [2026 年中开源模型下注](/ch01-404-my-bets-on-open-models-mid-2026/) — Lambert 同期评估
 
 ## 原始引用
 

@@ -130,8 +130,8 @@ graph TB
 
 ## 与现有 Wiki 的关联
 与 [Hermes Agent Deep Dive](/ch04-418-hermes-agent/) 互补：Hermes Agent 的 Skill 提炼和 nudging 在本文有更系统化的分类定位。
-与 [Hermes Agent](/ch04-418-hermes-agent//) 互补：self-evolution 主题的完整六条路归类，ADCA-GRPO/HyperAgents/Meta-Harness 是新维度。
-与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) 互补：第六条"编排自优化"是 Harness 工程化的最新前沿（Stanford Meta-Harness）。
+与 [Hermes Agent](/ch04-418-hermes-agent/) 互补：self-evolution 主题的完整六条路归类，ADCA-GRPO/HyperAgents/Meta-Harness 是新维度。
+与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) 互补：第六条"编排自优化"是 Harness 工程化的最新前沿（Stanford Meta-Harness）。
 与 [Agent Engineering Principles Architecture Practice](/ch04-435-agent-engineering-principles-architecture-practice/) 互补：后者 Harness 比模型关键 → 前者第六条机制具体展示如何自动化 Harness。
 
 ## 核心命题

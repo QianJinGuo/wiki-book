@@ -47,10 +47,10 @@ NVIDIA 将 subsurface 仿真整合到 Omniverse（工业数字化平台）和 DR
 2. **DRIVE 生态的类比扩展路径**：DRIVE 是自动驾驶的仿真平台，Omniverse 是通用工业仿真平台。两者在 Agentic AI 方向的演进路径可能相互借鉴——例如 DRIVE 中的场景感知 → Omniverse 中的物理场感知
 ---
 ## 相关实体
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend//)
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](/ch01-189-ai-时代的-git-版本管理最佳实践//)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](/ch01-189-ai-时代的-git-版本管理最佳实践/)
 - Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering//)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 - MOC
 
 ---

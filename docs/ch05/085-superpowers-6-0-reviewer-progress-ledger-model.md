@@ -73,9 +73,9 @@ subagent 读文件而非接收粘贴。controller context 只剩一行路径。*
 
 ## Wiki 关联
 
-- reviewer 重写是 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 在 multi-agent review 场景的具体实现
+- reviewer 重写是 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 在 multi-agent review 场景的具体实现
 - progress ledger 与 Agent 记忆系统设计 模式一致
-- 委托代理隔离 → [Loop Engineering](/ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad//) 中 evaluator 与 executor 分离的同构解法
+- 委托代理隔离 → [Loop Engineering](/ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad/) 中 evaluator 与 executor 分离的同构解法
 - "harder to game" → 对应 对抗验证 原则
 
 ---

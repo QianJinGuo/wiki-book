@@ -106,11 +106,11 @@ A model registry (`models.yaml`) maps short aliases like `claude-haiku` to full 
 5. **单次测试结果不足以代表质量——对关键场景使用 `--repeat N` 测量方差**。由于 Nova Sonic 响应具有非确定性，单次运行结果可能存在偶然性。建议对核心场景至少重复 3-5 次，观察 pass rate 稳定性后再判断变更质量。
 
 ## 相关实体
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon//)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
 - Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](/ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov//)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](/ch11-197-restrict-access-to-sensitive-documents-in-your-amazon-quick//)
-- [Bedrock Agentcore Coding Agent Hosting](/ch09-027-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on//)
+- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](/ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov/)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](/ch11-197-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
+- [Bedrock Agentcore Coding Agent Hosting](/ch09-027-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on/)
 - MOC
 
 ---

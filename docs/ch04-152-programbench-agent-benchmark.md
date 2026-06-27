@@ -116,7 +116,7 @@ ProgramBench 的发布对 AI Agent 研究领域具有重要意义：
 
 ### 与 Harness Engineering 的关联
 
-ProgramBench 评估的场景与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) 中描述的生产环境编程任务高度吻合。Agent 在这类任务中的局限性直接影响了  的可行性。
+ProgramBench 评估的场景与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) 中描述的生产环境编程任务高度吻合。Agent 在这类任务中的局限性直接影响了  的可行性。
 
 ## 参见
 

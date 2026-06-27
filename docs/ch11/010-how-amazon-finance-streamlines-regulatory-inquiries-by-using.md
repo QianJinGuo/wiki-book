@@ -116,11 +116,11 @@ If you're ready to modernize your knowledge-intensive processes with generative 
 **4. 防御 Prompt 注入应成为 AI 系统的标准 Checklist 项**
 文章中"检测到 Prompt 注入时返回固定回复"的设计反映了一种防御哲学：宁可拒答，不可误答。对于面向外部用户的 AI 系统，这应该是标准配置。但需要注意：检测本身可能产生误判（用户正常询问中包含类似攻击的词汇），需要有机制让用户申诉或重试。建议将这一防御机制设计为可配置的，允许在不同安全级别下调整阈值。
 ## 相关实体
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2//)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](/ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo//)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](/ch11-017-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多//)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多//)
-- [Introducing Claude Platform On Aws](/ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf//)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](/ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](/ch11-017-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
+- [Introducing Claude Platform On Aws](/ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
 
 ---
 

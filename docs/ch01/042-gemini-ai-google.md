@@ -92,8 +92,8 @@ Google 的独立 AI 对话产品，任何人可用（需 Google 账号）。
 
 ## Related
 - AI 知识管理工具横向对比
-- [NotebookLM](/ch01-017-notebooklm//) — Google 专用研究助手
-- [ChatGPT Memory](/ch01-315-chatgpt-memory//) — 对话式记忆
+- [NotebookLM](/ch01-017-notebooklm/) — Google 专用研究助手
+- [ChatGPT Memory](/ch01-315-chatgpt-memory/) — 对话式记忆
 - Obsidian — 本地笔记
 
 ---

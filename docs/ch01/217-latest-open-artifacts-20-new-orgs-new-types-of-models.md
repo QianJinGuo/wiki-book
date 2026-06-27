@@ -19,11 +19,11 @@ type: entity
 # Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
 
 ## 相关实体
-- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](/ch01-394-latest-open-artifacts-21-open-model-bonanza-gemma-4-de//)
-- [Interconnects What Comes Next With Open Models](/ch01-169-what-comes-next-with-open-models//)
-- [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](/ch01-435-latest-open-artifacts-19-qwen-3-5-glm-5-minimax-m2-5-中国开源模型//)
-- [U Of T Ai Worm Cleverhans Papernot 2026](/ch12-112-u-of-t-researchers-demonstrate-ai-worm-self-spreading-malwa//)
-- [How Far Behind Are Open Models 2026](/ch01-393-how-far-behind-are-open-models-lesswrong-2026-05//)
+- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](/ch01-394-latest-open-artifacts-21-open-model-bonanza-gemma-4-de/)
+- [Interconnects What Comes Next With Open Models](/ch01-169-what-comes-next-with-open-models/)
+- [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](/ch01-435-latest-open-artifacts-19-qwen-3-5-glm-5-minimax-m2-5-中国开源模型/)
+- [U Of T Ai Worm Cleverhans Papernot 2026](/ch12-112-u-of-t-researchers-demonstrate-ai-worm-self-spreading-malwa/)
+- [How Far Behind Are Open Models 2026](/ch01-393-how-far-behind-are-open-models-lesswrong-2026-05/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
 

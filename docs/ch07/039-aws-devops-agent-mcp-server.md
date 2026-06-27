@@ -45,9 +45,9 @@ Tool 名字与 docstring 是 Agent 决策的唯一依据——这对工具开发
 飞书卡片采用"三秒决策"设计原则：Action 说明要改什么、Reasoning 说明为什么要改、Execution plan 只预览第一步 headline，需要细节再点按钮跳转。这种设计反映了一个重要的产品原则：ChatOps 的核心不是信息密度，而是信息层次——在聊天窗口内只展示决策所需的最低信息量，把详细的技术细节留给需要时再获取。对于任何计划在 IM 平台推送运维告警的团队，这种分层信息设计值得参考。
 
 ## 相关实体
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](/ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议//)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](/ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式//)
-- [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](/ch11-149-aws-devops-agent-接入-aws-中国区系列-partition-隔离-多账号扩展与-roles-anyw//)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](/ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议/)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](/ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式/)
+- [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](/ch11-149-aws-devops-agent-接入-aws-中国区系列-partition-隔离-多账号扩展与-roles-anyw/)
 - MOC
 
 ---

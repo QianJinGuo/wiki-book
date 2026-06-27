@@ -28,7 +28,7 @@ Observe → Read → Act → Feedback → Write
 - **Feedback**：Judge 给出正确/错误反馈
 - **Write**：更新 skill utility、做 failure 归因和 file-level rewrite、必要时进入 skill discovery
 
-**三层写回策略**：局部修补优先，只在 utility 降至阈值时才生成新技能，避免破坏已有能力。这种策略在 [Agent Self Improvement Six Mechanisms](/ch04-047-agent-自我改进的六条路//) 中被称为"输出自审"的工程化升级版——从单次执行的反射进化为跨 session 的持久化技能积累。
+**三层写回策略**：局部修补优先，只在 utility 降至阈值时才生成新技能，避免破坏已有能力。这种策略在 [Agent Self Improvement Six Mechanisms](/ch04-047-agent-自我改进的六条路/) 中被称为"输出自审"的工程化升级版——从单次执行的反射进化为跨 session 的持久化技能积累。
 
 ## 技能路由器：行为对齐而非语义相似
 
@@ -66,7 +66,7 @@ Biology/Humanities 提升最明显（可抽象程度高）。
 - GAIA：5 个 atomic skills → 41 个技能
 - HLE：5 个 atomic skills → 235 个技能（形成主题簇）
 
-技能库的增长模式很有意思：从少量通用 atomic skills 出发，通过 feedback 驱动分裂成专门化技能，最终形成有结构的主题簇。这与 [Memento Skills Agent Self Evolving](/ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化//) 描述的"将状态从 s_t 扩展为 x_t = (s_t, M_t)"的马尔可夫性重建在精神上一致——但 Memento-Skills 更强调技能作为一等公民的可维护性。
+技能库的增长模式很有意思：从少量通用 atomic skills 出发，通过 feedback 驱动分裂成专门化技能，最终形成有结构的主题簇。这与 [Memento Skills Agent Self Evolving](/ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化/) 描述的"将状态从 s_t 扩展为 x_t = (s_t, M_t)"的马尔可夫性重建在精神上一致——但 Memento-Skills 更强调技能作为一等公民的可维护性。
 
 ## 论文真正有价值的地方
 

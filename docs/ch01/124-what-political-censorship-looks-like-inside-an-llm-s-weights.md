@@ -10,11 +10,11 @@
 - **中文中间表示**：在 L24 左右，判决以中文 token 形式在模型内部"承诺"，后续层再翻译为英文输出
 - ** graded classifier 过泛化**：审查分类器按结构模式触发而非精确内容匹配，Kosovo、Arab Spring 等非 PRC 话题可能被错误映射
 ## 相关实体
-- [How We Made Window Join Parallel And Vectorized](/ch01-034-how-we-made-window-join-parallel-and-vectorized//)
-- [Products Are Out Brains Are In](/ch01-113-products-are-out-brains-are-in//)
+- [How We Made Window Join Parallel And Vectorized](/ch01-034-how-we-made-window-join-parallel-and-vectorized/)
+- [Products Are Out Brains Are In](/ch01-113-products-are-out-brains-are-in/)
 - Investing In Stitch
-- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](/ch01-099-gemini-3-5-flash-more-expensive-but-google-plan-to-use-it//)
-- [Offline Llm Energy Use Html](/ch01-081-apple-silicon-costs-more-than-openrouter//)
+- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](/ch01-099-gemini-3-5-flash-more-expensive-but-google-plan-to-use-it/)
+- [Offline Llm Energy Use Html](/ch01-081-apple-silicon-costs-more-than-openrouter/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-political-censorship-looks-like-inside-an-llm-s-weights.md)
 

@@ -37,7 +37,7 @@
 
 ### 3. 文档角色在 Software 3.0 里被重新定义
 
-Karpathy 用 OpenClaw 的安装例子说清了一件容易忽略的事：传统 README、API 文档、Runbook 是给人读的，未来要同时满足「人能理解、Agent 能执行、系统能验证执行结果」三件事。 这条线连到过程资产——稳定的排障路径、发布检查、PR review 清单、安全红线——它们以前是经验，存在老员工脑子里或者零散的 wiki 页面；以后要变成 Agent 能读取、调用、累积的工程材料。这个变化和 [Harness Engineering](/ch05-041-harness-engineering-概念框架//)、上下文工作集、Subagent 模式 其实是同一件事的不同切片。访谈里特别提了一个反面教材：用户用 Google 登录、Stripe 付款，Agent 把 Stripe 邮箱当 user ID 关联 credits——代码能跑、局部测试能过，但系统语义错了。 这类业务语义错误最危险的地方在于它不在代码语法里，而在身份、权限、状态、责任的关系里——这恰恰是架构师最该守的口子。
+Karpathy 用 OpenClaw 的安装例子说清了一件容易忽略的事：传统 README、API 文档、Runbook 是给人读的，未来要同时满足「人能理解、Agent 能执行、系统能验证执行结果」三件事。 这条线连到过程资产——稳定的排障路径、发布检查、PR review 清单、安全红线——它们以前是经验，存在老员工脑子里或者零散的 wiki 页面；以后要变成 Agent 能读取、调用、累积的工程材料。这个变化和 [Harness Engineering](/ch05-041-harness-engineering-概念框架/)、上下文工作集、Subagent 模式 其实是同一件事的不同切片。访谈里特别提了一个反面教材：用户用 Google 登录、Stripe 付款，Agent 把 Stripe 邮箱当 user ID 关联 credits——代码能跑、局部测试能过，但系统语义错了。 这类业务语义错误最危险的地方在于它不在代码语法里，而在身份、权限、状态、责任的关系里——这恰恰是架构师最该守的口子。
 
 ### 4. 锯齿状智能决定护栏必须默认开启
 

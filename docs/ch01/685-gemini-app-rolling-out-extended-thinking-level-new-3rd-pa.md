@@ -36,11 +36,11 @@ Meanwhile, the Gemini app is preparing to add more integrations with third-party
 5. **由于功能灰度上线，若当前账号未收到Extended选项，可使用Google AI Studio作为过渡方案**，AI Studio同样提供Low/Medium/High思维深度调节。
 
 ## 相关实体
-- [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai//)
-- [Google Bigquery Threat Model](/ch01-644-bigquery-threat-model-report//)
-- [Rag技术框架的演进方向](/ch01-193-rag技术框架的演进方向//)
-- [Restive Ventures Announces 45M Fund Iii To Back Ai Native Financial Services Tar](/ch01-662-restive-ventures-announces-45m-fund-iii-to-back-ai-native-f//)
-- [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d//)
+- [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai/)
+- [Google Bigquery Threat Model](/ch01-644-bigquery-threat-model-report/)
+- [Rag技术框架的演进方向](/ch01-193-rag技术框架的演进方向/)
+- [Restive Ventures Announces 45M Fund Iii To Back Ai Native Financial Services Tar](/ch01-662-restive-ventures-announces-45m-fund-iii-to-back-ai-native-f/)
+- [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/9to5google-gemini-app-extended-thinking.md)
 
