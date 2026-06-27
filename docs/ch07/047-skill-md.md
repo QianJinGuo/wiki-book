@@ -12,15 +12,15 @@
 * ** 零外部依赖  ** ：不需要API Key、数据库、网络。任何人克隆下来就能跑。
 
 ## 相关实体
-- [Skill Engineering Ai As Algorithm](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-engineering-ai-as-algorithm.md)
-- [Hermes Agent Getting Started Guide 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-getting-started-guide-2026.md)
-- [Llm Raiders Private Ai Server](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-raiders-private-ai-server.md)
-- [Pi Mono Github](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-mono-github.md)
-- [我用 Skillmd 做了一个简历生成器](https://github.com/QianJinGuo/wiki/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
+- [Skill Engineering Ai As Algorithm](../ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程/)
+- [Hermes Agent Getting Started Guide 2026](../ch04-292-hermes-agent-保姆级教程-一句话组建你的-ai-打工团队/)
+- [Llm Raiders Private Ai Server](../ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se/)
+- [Pi Mono Github](../ch01-608-pi-mono-github/)
+- [我用 Skillmd 做了一个简历生成器](../ch07-047-我用-skill-md-做了一个简历生成器/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/我用-skillmd-做了一个简历生成器.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- MOC
 ## 深度分析
 
 SKILL.md 规范的核心理念是"渐进式披露"（Progressive Disclosure）——这是一个在 UI 设计领域早已成熟的模式，核心思想是只展示当前步骤需要的信息，不提前加载无关内容。在 AI Skill 场景下，这个模式的价值被进一步放大：LLM 的上下文窗口是稀缺资源，Skill 的设计者需要决定什么信息在什么时候进入上下文。文章演示的三层架构（前置元数据 ~100 token → 正文 ~1350 token → 按需加载的外部文件）本质上是一套严格的资源分配协议，确保每个 token 都花在刀刃上^。

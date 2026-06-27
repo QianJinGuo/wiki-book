@@ -40,7 +40,7 @@
 - [Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606](../ch01-755-xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-2026)
 - [Openai Codex Jasonliu Maxxing Playbook](../ch09-111-openai大神教你如何榨干codex)
 - [5238213](../ch01-829-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-ecosystem.md)
+- MOC
 ## 深度分析
 
 ### 1. OpenAI 的治理失败是结构性的，而非偶发的

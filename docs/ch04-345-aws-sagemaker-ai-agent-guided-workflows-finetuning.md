@@ -20,7 +20,7 @@ What makes this experience truly powerful is [agent Skills for model customizati
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 ## 深度分析
 
 SageMaker AI 的 Agent 化工作流代表了企业 AI 定制领域的一次范式转变。传统微调需要团队具备深厚的 ML 专业知识，掌握 SFT/DPO/RLVR 等多种技术，理解碎片化的 API 和模型特定数据格式，并投入数月的实验周期。这种复杂性导致大多数组织无法真正释放定制化模型的价值。SageMaker AI 通过将整个生命周期编码为模块化 Agent 技能，使这一门槛大幅降低 。

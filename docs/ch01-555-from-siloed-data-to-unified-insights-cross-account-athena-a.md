@@ -12,9 +12,9 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
 
 ## 相关实体
-- [基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理与增量同步](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)
-- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
+- 基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理与增量同步
+- Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
+- Amazon Nova Multimodal Embeddings 制造业智能应用
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](../ch04-204-航班变更信息智能识别解决方案)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri)
@@ -37,7 +37,7 @@
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11-067-amazon-bedrock-model-inference-serverless-architecture-case)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- MOC
 ## 深度分析
 Cross-account Athena Access for Amazon Quick 本质上是一个**企业级数据治理架构问题**的 AWS 原生解决方案。它解决的并非新问题——跨账户数据访问、成本归属、数据主权——而是首次将这些需求落地为 QuickSight 与 Athena 的原生集成能力。
 文章提出的三种架构模式（Basic、Hub-and-Spoke、Data Mesh）对应了企业数据成熟度的三个阶段。值得注意的是** Hub-and-Spoke 被推荐为默认选择**，这反映了 AWS 的务实立场：大多数企业并不需要完整的 Data Mesh 复杂度，但需要一个可扩展、成本清晰、信任边界简单的方案。

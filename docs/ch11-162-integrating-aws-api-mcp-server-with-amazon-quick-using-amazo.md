@@ -25,7 +25,7 @@
 
 本文展示的解决方案核心价值在于**将自然语言转换为结构化 AWS API 调用**的范式转变。传统 AWS 运维场景中，SRE 和 DevOps 工程师需要在多个界面之间切换——AWS Management Console、CLI 文档、各服务 Dashboard——并手动将业务需求翻译成正确的 API 语法。这种模式在大规模基础设施管理中效率极低，且容易出错。
 
-该方案采用 **Amazon Bedrock AgentCore Runtime** 作为运行时核心，配合 **Model Context Protocol (MCP)** 实现与 AWS API MCP Server 的集成。MCP 作为一种标准化协议，定义了 AI 模型与外部工具之间的通信规范，使得不同来源的工具可以被统一调用。这种设计模式与 [Agentic AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) 框架中的 tool-use 模式高度一致，体现了 AI Agent 架构中"规划-执行-反馈"的典型工作流。
+该方案采用 **Amazon Bedrock AgentCore Runtime** 作为运行时核心，配合 **Model Context Protocol (MCP)** 实现与 AWS API MCP Server 的集成。MCP 作为一种标准化协议，定义了 AI 模型与外部工具之间的通信规范，使得不同来源的工具可以被统一调用。这种设计模式与 Agentic AI 框架中的 tool-use 模式高度一致，体现了 AI Agent 架构中"规划-执行-反馈"的典型工作流。
 
 ### 身份认证与安全模型
 

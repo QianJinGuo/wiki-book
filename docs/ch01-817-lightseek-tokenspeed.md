@@ -25,7 +25,7 @@ TokenSpeed 的核心竞争力来自三个正交的技术决策，针对 agentic 
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- MOC
 
 ---
 

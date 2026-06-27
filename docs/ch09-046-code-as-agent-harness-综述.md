@@ -113,12 +113,12 @@ Code as Agent Harness 可以被视为 Software 2.0（以神经网络替代手工
 - [harness-engineering-systematic-explainer](../ch05-036-harness-engineering-systematic-explainer)
 
 - [Claude Code 架构深度解析](../ch01-846-claude-code-架构深度解析)
-- [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-source-analysis.md)
+- Claude Code Prompt 提示词体系源码解析
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件)
 - [AgentCore Managed Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施)
 - [gsd-get-shit-done-context-management-tool](../ch01-184-gsd-get-shit-done-context-management-tool)
 - [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- MOC
 
 ---
 

@@ -119,12 +119,12 @@ Nightmare-Eclipse 事件揭示了安全研究激励结构的深层问题：
 
 ## 相关实体
 
-- [同事件 TheRegister 主报道](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled-theregister.md)
-- [研究者背景与历史披露](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
-- [Cisco SD-WAN CVE 类似案例](https://github.com/QianJinGuo/wiki/blob/main/entities/cve-2026-20182-cisco-sd-wan-vhub-bypass.md)
-- [VSCode GitHub Token 窃取事件](https://github.com/QianJinGuo/wiki/blob/main/entities/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md)
-- [金融行业 GenAI 合规](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-prowler-与-genai-构建金融行业智能合规中枢.md)
-- [Exaforce Agentic SOC 平台](https://github.com/QianJinGuo/wiki/blob/main/entities/exaforce-agentic-soc-platform-and-mdr.md)
+- [同事件 TheRegister 主报道](../ch12-037-disgruntled-researcher-releases-two-more-microsoft-zero-days/)
+- [研究者背景与历史披露](../ch12-061-disgruntled-researcher-releases-two-more-microsoft-zero-days/)
+- Cisco SD-WAN CVE 类似案例
+- [VSCode GitHub Token 窃取事件](../ch09-050-1-click-github-token-stealing-via-a-vscode-bug-ammaraskar/)
+- [金融行业 GenAI 合规](../ch11-053-基于-prowler-与-genai-构建金融行业智能合规中枢/)
+- [Exaforce Agentic SOC 平台](../ch04-018-exaforce-agentic-soc-platform-and-mdr/)
 
 ---
 

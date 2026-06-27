@@ -48,7 +48,7 @@ CrewAI 强调的"crawl, walk, run"迭代哲学与 Karpathy 提出的 vibe coding
 
 ### 5. 多 Agent 架构的"复杂度税"
 
-多 agent 架构是**强力的同时是高代价的**——调试面倍增，每个 agent 都有自己的失败模式与互相干扰。文中建议把"添加 agent"视为"挣来的复杂度"：你必须有证据证明需要，而不是直觉。这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的"最小可行 harness"原则同源——先用最简单 harness 跑起来，再按需添加 subagent、MCP 等组件。
+多 agent 架构是**强力的同时是高代价的**——调试面倍增，每个 agent 都有自己的失败模式与互相干扰。文中建议把"添加 agent"视为"挣来的复杂度"：你必须有证据证明需要，而不是直觉。这与 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 的"最小可行 harness"原则同源——先用最简单 harness 跑起来，再按需添加 subagent、MCP 等组件。
 
 ### 与相邻观点的张力
 
@@ -73,9 +73,9 @@ CrewAI 强调的"crawl, walk, run"迭代哲学与 Karpathy 提出的 vibe coding
 - [Management As Ai Superpower](../ch01-412-management-as-ai-superpower)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
-- [Harness Loop Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-loop-architecture.md)
+- [Harness Engineering](../ch05-041-harness-engineering-概念框架/)
+- Agentic Engineering Paradigm
+- Harness Loop Architecture
 
 ---
 

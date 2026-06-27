@@ -112,12 +112,12 @@ def review_content(self, content):
 - [Agentcore Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施) — AgentCore 工程化
 - [Hands Free First Notice Of Loss Using Strands Agents And Ama](../ch04-320-hands-free-first-notice-of-loss-using-strands-agents-and-am) — 保险 FNOL 中的人类角色重置
 - [Build An Ai Powered Equipment Repair Assistant Using Amazon ](../ch04-214-build-an-ai-powered-equipment-repair-assistant-using-amazon) — AgentCore 维修助手的记忆层设计
-- [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) — 生产级 Agent 工程
-- [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
-- [Ai Safety Governance](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-safety-governance.md) — AI 安全治理
-- [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统
-- [Agent Framework Comparison](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-framework-comparison.md) — Agent 框架对比
-- [Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 多 Agent 编排
+- Production Agent Engineering — 生产级 Agent 工程
+- Agent Deployment Strategy — Agent 部署策略
+- Ai Safety Governance — AI 安全治理
+- Autonomous Agent Systems — 自主 Agent 系统
+- Agent Framework Comparison — Agent 框架对比
+- Multi Agent Orchestration — 多 Agent 编排
 
 ---
 

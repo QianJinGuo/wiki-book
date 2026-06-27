@@ -237,7 +237,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [QQ音乐 Harness Engineering 实践原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/qq-music-harness-engineering-monorepo-microservices.md)
 
 ## 相关实体
-- [Claude Code Best Practices Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-best-practices-prompt-engineering.md)
+- Claude Code Best Practices Prompt Engineering
 
 - [Feishu Aily Agent Lobster](../ch04-413-飞书aily-企业级agent智能伙伴)
 - [Colaos Listenhub Agency Native Organization Juzi](../ch04-194-colaos-与-ai-原生组织)
@@ -257,7 +257,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Iclr 2026 英伟达 普渡大学用Agent闭环实现文生3D](../ch01-417-scenethesis-iclr-2026-英伟达-普渡大学用-agent-闭环实现文生-3d)
 - [Agent Guide Core Concepts Overview](../ch04-483-agentguide-ai-agent-核心概念速查)
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch04-121-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升)
-- [Headroom Context Compression Agent Vibecoder](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-agent-vibecoder.md)
+- Headroom Context Compression Agent Vibecoder
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
 - [Kimi Work Beta Foundation Model Company Advantage](../ch04-159-kimi-work-beta-通用-agent-一定来自模型公司)
 - [Agent Paradigm Evolution Feipeng Alibaba](../ch04-471-agent核心技术概念与范式发生了哪些演变以及背后的思考)
@@ -273,14 +273,14 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Lessons From 2 Billion Agentic Workflows](../ch04-359-lessons-from-2-billion-agentic-workflows)
 - [Local Vs Cloud Agent Onsite Context Debate Xingxiaozhao](../ch04-448-本地-vs-云端-agent-的现场之争-当下选本地-终局云端-行小招)
 - [Volcengine Data Agent Marketing Strategy Agent](../ch04-478-使用营销策略助手-数据智能体-火山引擎)
-- [Phoneworld Mobile Agent Scaling Mock Environments Tencent Hunyuan Arxiv 2605 29486](https://github.com/QianJinGuo/wiki/blob/main/entities/phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan-arxiv-2605-29486.md)
+- Phoneworld Mobile Agent Scaling Mock Environments Tencent Hunyuan Arxiv 2605 29486
 - [Hermes Agent Self Evolution 源码解析](../ch04-418-hermes-agent)
 - [Real Ai Agents And Real Work](../ch04-209-real-ai-agents-and-real-work)
 - [Volcengine Data Agent Intelligent Query Agent](../ch04-472-智能问数agent-数据智能体-火山引擎)
 - [Hermes Agent Tool System Analysis](../ch04-418-hermes-agent)
 - [How To Build Agents Where Data Already Lives](../ch04-506-how-to-build-agents-where-data-already-lives)
 - [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](../ch01-757-apache-rocketmq-5-5-0-开源-litetopic-百万级-ai-会话专属通道)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- MOC
 
 ---
 

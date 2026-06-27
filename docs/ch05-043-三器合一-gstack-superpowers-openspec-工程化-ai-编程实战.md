@@ -65,7 +65,7 @@ TDD 铁律（先写失败测试再写代码）作为 skill 文件规则自动执
 - [Claude Code Agent 工程设计](../ch04-015-claude-code-的-agent-工程)
 - [你不知道的 Agent 原理架构与工程实践](../ch04-300-agent-principle-architecture-engineering-practice)
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch01-308-ralph-loop-不够用-长时间-agent-还缺这-3-件事)
-- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
+- Coding Harness 工程本质
 
 ## 深度分析
 ### 三层架构的协同逻辑

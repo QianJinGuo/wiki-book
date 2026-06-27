@@ -13,15 +13,15 @@ Anthropic 的 Alex Albert 最近上了一期播客，聊了聊他们内部是怎
 前 Claude Relations 负责人
 
 ## 相关实体
-- [Claude Opus 47](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-47.md)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](https://github.com/QianJinGuo/wiki/blob/main/entities/www.infoworld-4171274-anthropic-puts-claude-agents-on-a-meter-across-its-subscri.md)
-- [Anthropic Claude Managed Agents Platform 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
-- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-enterprise-deployment-anthropic-aihanshijì.md)
+- [Claude Opus 47](../ch01-363-claude-opus-4-7-并不是一次全面升级-甚至部分能力大幅衰退-n-n大家应该在合适的场景下选择使用/)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](../ch01-557-anthropic-puts-claude-agents-on-a-meter-across-its-subscript/)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01-181-anthropic-claude-managed-agents-平台正式发布/)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-255-anthropic-博客-claude-code-大型代码库最佳实践/)
+- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](../ch01-444-大厂代码库几百万行-claude-code怎么跑起来的-anthropic首次公开全套打法/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-building-next-claude.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 ## 深度分析
 
 **1. 模型即产品的开发范式**

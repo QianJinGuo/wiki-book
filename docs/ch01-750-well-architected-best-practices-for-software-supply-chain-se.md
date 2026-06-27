@@ -36,7 +36,7 @@ Well-architected best practices for software supply chain security 涉及archite
 ### 关联实体
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
@@ -50,7 +50,7 @@ Well-architected best practices for software supply chain security 涉及archite
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 
 ---
 

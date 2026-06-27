@@ -87,7 +87,7 @@ I don’t love that they used this as a reason to skip a bunch
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践)
 - [Tokenomics The 625 Minute Rule For Claudes Cache](../ch01-385-tokenomics-the-62-5-minute-rule-for-claude-s-cache)
 - [Anthropic Long Running Agent Adversarial Architecture](../ch01-677-anthropic)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-opus-4-8-system-card-zvi.md)
 

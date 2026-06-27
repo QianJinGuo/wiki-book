@@ -12,7 +12,7 @@
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05-020-martin-fowler-ai-研发-harness-非确定性承重层)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
+- Harness Design Peer Review Framework
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-367-claude-code-harness-deep-understanding)
 - [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制)
 - [Agent Harness 架构](../ch04-207-agent-harness-架构)
@@ -25,8 +25,8 @@
 - [你不知道的 Agent 原理架构与工程实践](../ch04-300-agent-principle-architecture-engineering-practice)
 - [Agent Skill 设计模式](../ch01-677-anthropic)
 - [柚漫剧 AI 全流程提效拆解](../ch01-356-柚漫剧-ai-全流程提效拆解)
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
+- [Harness Engineering 框架](../ch05-041-harness-engineering-概念框架/)
+- Coding Harness 工程本质
 - [Thin Harness Fat Skills](../ch05-063-thin-harness-fat-skills-ai工程架构的本质)
 - [Design Patterns for AI Agents 2026](../ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl)
 

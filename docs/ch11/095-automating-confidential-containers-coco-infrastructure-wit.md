@@ -39,15 +39,15 @@ Kyverno 本身运行在 CoCo 信任模型中标记为不可信的 Kubernetes 控
 4. **条件密钥分发**：凭证或密钥仅在证明成功后才会送达，确保敏感数据仅在已验证的可信运行环境中可用
 
 ## 相关实体
-- [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
-- [From Kubernetes Dev Setup To Production What Actually Change](https://github.com/QianJinGuo/wiki/blob/main/entities/from-kubernetes-dev-setup-to-production-what-actually-change.md)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](https://github.com/QianJinGuo/wiki/blob/main/entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-.md)
-- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://github.com/QianJinGuo/wiki/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
+- [Eks Gpu Operator Custom Driver Cuda Workload](../ch11-030-在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载/)
+- [From Kubernetes Dev Setup To Production What Actually Change](../ch11-083-from-kubernetes-dev-setup-to-production-what-actually-chang/)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
+- [Hiclaw V110 K8S Hermes Worker](../ch11-086-hiclaw-v1-1-0-kubernetes-集群部署与-hermes-worker-运行时/)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch11-050-基于-amazon-eks-和-graviton-构建多租户-ai-agent-平台-openclaw-on-kuber/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/automating-confidential-containers-coco-infrastructure-with-kyverno.md)（CNCF Blog, 2026-05-19）
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 ## 深度分析
 ### 1. 零信任安全模型的工程化代价
 CoCo 将"控制平面不可信"作为核心安全公理，这从设计上是对的——但这把安全验证的复杂度从基础设施层推到了应用层。Kyverno 的价值在于将这部分复杂度重新封装回平台层，让应用开发者无需理解 TEE、RTMR、initdata 等底层概念即可部署可信工作负载。这是一种典型的**平台工程（Platform Engineering）** 思路：通过 API 抽象掉安全复杂性。

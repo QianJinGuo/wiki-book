@@ -35,9 +35,9 @@ Ghostty 案例的示范效应值得重视。作为 Mitchell Hashimoto 的个人�
 - [Microsoft Mxc Execution Containers Agent Sandbox Origin](../ch01-211-microsoft-mxc-跨-os-代理代码执行容器-appcontainer-sandbox-hyperligh)
 - [Github Copilot Individual Plans Flex Allotments](../ch01-578-github-copilot-individual-plans-flex-allotments-in-pro-and)
 - [Joyai Echo Long Video Framework Jd](../ch04-099-joyai-echo-京东开源长音视频生成框架-5-分钟一致性-7-5x-dmd-加速-director-age)
-- [Openchronicle Memory Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/openchronicle-memory-layer.md)
+- Openchronicle Memory Layer
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-source-projects-leaving-github.md)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](https://github.com/QianJinGuo/wiki/blob/main/entities/github-multilingual-repositories-dataset-cc0.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-source-projects-leaving-github.md)- github multilingual repositories dataset — 4000 万仓库多语言元数据
 
 ---
 

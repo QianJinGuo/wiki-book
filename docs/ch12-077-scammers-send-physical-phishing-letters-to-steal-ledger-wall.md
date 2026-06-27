@@ -20,7 +20,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 ## 深度分析
 ### 攻击维度的升级：从数字到物理
 传统钓鱼攻击聚焦于数字渠道（email、SMS、仿冒网站），但此案代表攻击维度的实质性扩展——实体邮件。

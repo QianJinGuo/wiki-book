@@ -11,7 +11,7 @@
 - [anthropic 最新播客：如何打造下一代 claude](../ch01-677-anthropic)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-context-engineering-anthropic-thariq.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- MOC
 ## 深度分析
 
 Claude Code 上下文工程 —— Anthropic 团队的工程实践 涉及agent领域的核心技术议题。

@@ -65,25 +65,25 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 值得注意的是，该方案明确指出根据 Amazon Bedrock 的数据隐私合规标准，客户的提示词、安全扫描结果以及生成的报告都不会被用于训练底层的基座模型，确保金融级的数据隔离与隐私安全。 对于金融行业客户，这是一个关键的合规考量点——在使用云端 GenAI 服务时，需要确认服务提供商的数据处理政策，特别是涉及安全扫描结果等敏感信息时。
 
 ## 相关实体
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-claude-prompt-cache-strategy.md)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](https://github.com/QianJinGuo/wiki/blob/main/entities/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
+- Amazon Nova Multimodal Embeddings 制造业智能应用
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda/)
+- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](../ch11-058-在-amazon-bedrock-上为-claude-应用设计稳健的-prompt-cache-策略/)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](../ch11-049-build-custom-code-based-evaluators-in-amazon-bedrock-agentco/)
 
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](https://github.com/QianJinGuo/wiki/blob/main/entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](https://github.com/QianJinGuo/wiki/blob/main/entities/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
-- [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](https://github.com/QianJinGuo/wiki/blob/main/entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for-.md)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](https://github.com/QianJinGuo/wiki/blob/main/entities/zenjoy-aiops-agent-bedrock-eks-prometheus.md)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](https://github.com/QianJinGuo/wiki/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu/)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
+- [航班变更信息智能识别解决方案 | Amazon Web Services](../ch04-204-航班变更信息智能识别解决方案/)
+- [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](../ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11-144-zenjoy-基于-amazon-bedrock-和-eks-构建-aiops-agent-打通-prometheus/)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/航班变更信息智能识别解决方案.md)
 
-- [CloudSectiDbits](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudsectidbits.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [CloudSectiDbits](../ch11-209-cloudsectidbits/)
+- MOC
 
 ---
 

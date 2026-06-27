@@ -96,7 +96,7 @@ gstack → /browse 截图验证 → /qa 端到端测试 → /ship → /land-and-
 2. **OpenSpec Token 降低 30~50%，返工降低 60%**（实测数据）
 3. **Superpowers 每步不可跳过**——这是生产环境的底线，不是官僚主义
 4. **gstack 填补了"AI 写完代码但无法验证页面渲染"的空白**
-5. 与 [Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md) 一脉相承：通过 Skill 组合 + 开发规范 + 流程约束推动 AI 产出收敛
+5. 与 Coding Harness Engineering 一脉相承：通过 Skill 组合 + 开发规范 + 流程约束推动 AI 产出收敛
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-production-development-workflow-openspec-superpowers-gstack.md)
 
@@ -224,7 +224,7 @@ Carl 文章的 tag 贡献：
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 
 ---
 

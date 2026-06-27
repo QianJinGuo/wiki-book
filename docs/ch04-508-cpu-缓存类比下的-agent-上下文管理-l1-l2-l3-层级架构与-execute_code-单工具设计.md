@@ -239,7 +239,7 @@ grep -n '"isEnum": true' api-reference.json -B2 -A10  # 枚举所有枚举值
 
 **但层级结构本身不会消失**——因为相对于所有可以放入的内容，上下文始终稀缺，多余内容始终损耗准确率。**没有任何模型强大到让"在正确时机把正确内容放在它面前"失去意义**。
 
-这是 [注意力机制](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md) 的 LLM 时代回响——CPU 时代有缓存层级；LLM 时代有上下文层级；都是**"在正确的层放正确的内容"**。
+这是 注意力机制 的 LLM 时代回响——CPU 时代有缓存层级；LLM 时代有上下文层级；都是**"在正确的层放正确的内容"**。
 
 ### 5. "摘要放在缓存，细节按需取用，原始底层兜底"的工程化
 
@@ -274,14 +274,14 @@ grep -n '"isEnum": true' api-reference.json -B2 -A10  # 枚举所有枚举值
 ## 与现有实体的互补关系
 
 - [AI Agent 工具数量陷阱](../ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具) — "5-10 工具"是 Anthropic 答案；"1 execute_code"是本文答案（更激进的同向论述）
-- [Agent Harness 上下文管理工作集视角](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — 工作集是 **L1 内部**的精细化设计；本文是工作集的 L1/L2/L3 宏观扩展
+- Agent Harness 上下文管理工作集视角 — 工作集是 **L1 内部**的精细化设计；本文是工作集的 L1/L2/L3 宏观扩展
 - [智能体编排层中的上下文管理架构](../ch04-460-智能体编排层中的上下文管理架构) — 框架主动约束 vs 模型自主管理的权衡；本文是同向的更激进的 execute_code 推论
-- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 上下文工程的概念基础
+- Context Engineering — 上下文工程的概念基础
 - [Code as Agent Harness Survey](../ch09-046-code-as-agent-harness-综述) — 编程语言作为 Agent 接口的更广义论述
 - [Claude Code 工具设计演进](../ch01-677-anthropic) — Anthropic 工具设计的演进
-- [上下文工程三种记忆范式对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md) — 记忆/上下文/信息的层级
+- 上下文工程三种记忆范式对比 — 记忆/上下文/信息的层级
 - [Claude Code 上下文工程 Thariq](../ch01-677-anthropic) — 官方 Anthropic 视角
-- [Codex 上下文工程 LastWhisper](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-context-engineering-lastwhisper-thinking-in-context.md) — 另一家 Code 厂商的上下文视角
+- Codex 上下文工程 LastWhisper — 另一家 Code 厂商的上下文视角
 - [上下文工程系列](../ch04-403-agentic-ai-infrastructure-practice-series-9-context-enginee) — 系列化上下文工程讨论
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cpu-cache-analogy-agent-context-management-liwen-2026-06-12.md)

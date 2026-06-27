@@ -12,7 +12,7 @@
 - [现在如何使用 ai：一份快速指南（ethan mollick）](../ch01-320-现在如何使用-ai-一份快速指南-ethan-mollick)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-dynamic-workflows-thariq-blog-gaia.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 ## 深度分析
 
 从 Harness 到动态工作流：Claude Code 多智能体任务编排的新范式 涉及agent领域的核心技术议题。

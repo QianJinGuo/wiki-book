@@ -28,11 +28,11 @@ source_url: https://mp.weixin.qq.com/s/zYnWWSUptDtRMOelZMLkVw
 - ###  Uvicorn + Lifespan 最佳实践
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
+> 主题导航
 
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](https://github.com/QianJinGuo/wiki/blob/main/entities/精选-10-个开发者常用的-ai-智能体技能agent-skills.md)
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/民生银行基于规格驱动开发sdd的-codeagent-私域研发探索与实践.md)
-- [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills/)
+- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch04-177-民生银行基于规格驱动开发-sdd-的-codeagent-私域研发探索与实践/)
+- [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](../ch04-240-我把-karpathy-的-autoresearch-搬到了软件开发领域-效果炸了/)
 
 ## 深度分析
 ### 1. 认证的本质：信任链的建立而非简单的token验证

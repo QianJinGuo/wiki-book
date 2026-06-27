@@ -138,7 +138,7 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 ## 相关实体
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov) — 同一技术栈的 WebRTC 集成方案
 - [Amazon Nova Lite Fine-Tuning](../ch11-054-amazon-nova-lite-fine-tuning-高性价比的视觉检测模型微调案例与实践-亚马逊aws官方博) — Nova 视觉模型微调实践
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md) — Nova 多模态嵌入能力
+- Amazon Nova Multimodal Embeddings 制造业智能应用 — Nova 多模态嵌入能力
 - [Nemotron 3 Multi-Agent System](../ch04-043-nvidia-nemotron-3-agents-rag-voice-safety) — NVIDIA 多Agent系统参考
 - [Amazon Bedrock AgentCore Memory](../ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚) — Bedrock Agent 记忆哲学
 - [Strands Agents SDK](../ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的) — 确定性数据分析实践
@@ -164,7 +164,7 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](../ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](../ch11-058-在-amazon-bedrock-上为-claude-应用设计稳健的-prompt-cache-策略)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](../ch11-049-build-custom-code-based-evaluators-in-amazon-bedrock-agentco)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- MOC
 
 ---
 

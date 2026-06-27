@@ -89,7 +89,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 
 ## 深度分析
 1. **Harness 是 AI 可靠性的决定性因素** — 原文提出 `Agent = Model + Harness`，Model 决定 AI 有多聪明，Harness 决定 AI 有多可靠。这与 Martin Fowler 的"非确定性引入研发链路"观点形成呼应：Harness 才是真正承重的部分。 → 见 [Martin Fowler AI 研发提醒](../ch05-040-martin-fowler-的-ai-研发提醒-非确定性进了研发链路-harness-才真正开始承重)
-2. **六层架构的信息层核心洞察：上下文窗口不是数据库** — LLM 的上下文窗口天然会"忘记"，必须通过外部状态管理（短期用 Context 直接注入、长期用 Pinecone/pgvector 向量库、情节记忆用 Redis/DynamoDB、过程记录用 PostgreSQL）来补足。 → 见 [AI Agent 记忆系统](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
+2. **六层架构的信息层核心洞察：上下文窗口不是数据库** — LLM 的上下文窗口天然会"忘记"，必须通过外部状态管理（短期用 Context 直接注入、长期用 Pinecone/pgvector 向量库、情节记忆用 Redis/DynamoDB、过程记录用 PostgreSQL）来补足。 → 见 AI Agent 记忆系统
 3. **MCP（Model Context Protocol）是动态知识实时注入的关键基础设施** — 静态知识通过 Git+向量库版本控制，动态知识通过 MCP 实时注入，这是信息层区分"慢知识"与"快知识"的核心能力。 → 见 [Anthropic MCP 设计模式](../ch01-677-anthropic)
 4. **"用错误喂养规则库"是 Harness 最核心的运营哲学** — AI 每次犯错不仅仅修正这一次输出，而是转化为规则/测试/约束更新约束库，形成"AI 永不再犯、系统自我进化"的正循环。这使得 Harness 与 Fine-tuning 相比具有可解释性和迭代速度优势。 → 见 [Agent 自我改进六机制](../ch04-047-agent-自我改进的六条路)
 5. **七大反模式揭示了 Harness 工程中的高频失败路径** — 层级混淆（把 Harness 逻辑写进 Prompt）、过早自治（跳过验证回路）、无状态设计（每次对话重新开始）、忽视熵管理（Agent 无限制产生副作用）都是实践中极易犯的错误。 → 见 [Harness Engineering 系统化框架](../ch05-049-harness-engineering-系统梳理)
@@ -146,13 +146,13 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 - [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice)
 - [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图)
 
-- [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md)
-- [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-build-to-delete.md)
+- Harness Component Expiry Evidence
+- Harness Component Expiry Build To Delete
 - [Harness Engineering Theory To Practice Helen](../ch05-076-harness-engineering-从理论到实战-行为正确性死结-上下文腐烂-可驾驭性-ashby-定律)
 - [Evaluating Netflix Show Synopses With Llm As A Judge](../ch01-249-evaluating-netflix-show-synopses-with-llm-as-a-judge)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)
+- MOC
+- MOC
+- MOC
 ## Related
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-engineering-survey-2026.md)

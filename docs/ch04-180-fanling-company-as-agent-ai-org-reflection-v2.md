@@ -13,7 +13,7 @@
 ## 相关实体
 - [Acker Agent Evolution Three Routes Convergence](../ch04-112-agent演化-三条路线汇聚框架)
 - [Agent Context Management Architecture Patterns](../ch04-460-智能体编排层中的上下文管理架构)
-- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
+- Openclaw Prompt Context Harness
 - [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架)
 - [Agent Harness 12 Components 7 Decisions](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架)
 

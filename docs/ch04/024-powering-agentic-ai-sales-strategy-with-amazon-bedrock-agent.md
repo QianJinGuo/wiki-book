@@ -211,25 +211,25 @@ Field Advisor 的演进揭示了企业 AI 落地中一个核心矛盾：早期 A
 
 ### 2. Supervisor 模式对认知负载管理的启示
 
-超过 20 个领域专用 Agent 带来的核心问题是用户需要做"系统导航"决策。Field Advisor 的 Supervisor 模式将这个决策负担回收到 AI 层——用户只需表达意图，Supervisor 分析并路由。这一设计选择体现了 [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) 中的核心原则：编排层不应暴露给用户，多 Agent 协作应对用户透明。Pass-through 模式作为补充，允许高级用户在明确场景下绕过 Supervisor 直接调用特定 Agent，这两种模式的共存反映了企业 AI 系统设计中"默认智能路由、保留专家控制"的有效实践。
+超过 20 个领域专用 Agent 带来的核心问题是用户需要做"系统导航"决策。Field Advisor 的 Supervisor 模式将这个决策负担回收到 AI 层——用户只需表达意图，Supervisor 分析并路由。这一设计选择体现了 Agent Orchestration Patterns 中的核心原则：编排层不应暴露给用户，多 Agent 协作应对用户透明。Pass-through 模式作为补充，允许高级用户在明确场景下绕过 Supervisor 直接调用特定 Agent，这两种模式的共存反映了企业 AI 系统设计中"默认智能路由、保留专家控制"的有效实践。
 
 ### 3. 中断机制作为跨边界协同的统一协议
 
-Strands Interrupt 的设计值得特别关注：它不仅处理工具调用中的用户确认，更被扩展为跨 Agent 边界的状态同步机制。当远程 Agent 产生中断时，本地工具包装器将其翻译为原生 Strands Interrupt，使跨 MicroVM 的暂停/恢复成为框架原生能力而非自定义基础设施。这一设计避免了在 [Long-Running Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/long-running-agent-architecture.md) 中常见的"构建独立 HITL 服务 + 消息队列 + 轮询"的过度工程化路径，体现了用框架原生能力解决问题的工程哲学。
+Strands Interrupt 的设计值得特别关注：它不仅处理工具调用中的用户确认，更被扩展为跨 Agent 边界的状态同步机制。当远程 Agent 产生中断时，本地工具包装器将其翻译为原生 Strands Interrupt，使跨 MicroVM 的暂停/恢复成为框架原生能力而非自定义基础设施。这一设计避免了在 Long-Running Agent Architecture 中常见的"构建独立 HITL 服务 + 消息队列 + 轮询"的过度工程化路径，体现了用框架原生能力解决问题的工程哲学。
 
 ### 4. Prompt Caching 作为多轮对话延迟优化的工程现实
 
-自定义 PromptCachingBedrockModel 的实现揭示了生产环境中一个常被忽视的问题：模型供应商的缓存机制有严格的 TTL 和数量限制，而多轮对话的自然结构（system prompt → tools → history → new message）与这些限制并不对齐。Field Advisor 团队通过"滚动缓存点"策略——每轮移除旧缓存点、在最新消息设置新缓存点——实现增量计算，这一工程技巧在 [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 语境下具有普遍参考价值。41% 延迟降低的数字也证明了这类底层优化对用户体验的直接贡献。
+自定义 PromptCachingBedrockModel 的实现揭示了生产环境中一个常被忽视的问题：模型供应商的缓存机制有严格的 TTL 和数量限制，而多轮对话的自然结构（system prompt → tools → history → new message）与这些限制并不对齐。Field Advisor 团队通过"滚动缓存点"策略——每轮移除旧缓存点、在最新消息设置新缓存点——实现增量计算，这一工程技巧在 Inference Optimization 语境下具有普遍参考价值。41% 延迟降低的数字也证明了这类底层优化对用户体验的直接贡献。
 
 ### 5. MCP 作为 Agent 工具生态的标准化路径
 
-Field Advisor 在数分钟内接入超过 20 个 MCP 工具的能力，验证了 [Model Context Protocol](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) 作为工具集成协议的企业价值。AgentCore Gateway 作为 MCP 工具的单一注册中心，使新工具接入无需修改运行时部署——这与传统的点对点工具集成方式形成鲜明对比。值得注意的是，Remote Agent 与 MCP Tool 使用完全相同的接口包装，这意味着"MCP 生态"和"Remote Agent 生态"在 Supervisor 看来没有本质区别，统一了 [Multi-Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) 中的工具/代理边界。
+Field Advisor 在数分钟内接入超过 20 个 MCP 工具的能力，验证了 Model Context Protocol 作为工具集成协议的企业价值。AgentCore Gateway 作为 MCP 工具的单一注册中心，使新工具接入无需修改运行时部署——这与传统的点对点工具集成方式形成鲜明对比。值得注意的是，Remote Agent 与 MCP Tool 使用完全相同的接口包装，这意味着"MCP 生态"和"Remote Agent 生态"在 Supervisor 看来没有本质区别，统一了 Multi-Agent Collaboration Patterns 中的工具/代理边界。
 
 ## 实践启示
 
 ### 1. 优先评估平台成熟度，而非功能集合
 
-在企业 AI 落地中，团队常陷入"自建还是购买"的二元思维。Field Advisor 的案例表明，真正值得评估的不是某平台有多少功能，而是横切关注点（安全、观测、身份、内存）是否已被平台解决到生产级别。七个独立 AWS 账户 consolidation 到单一 AgentCore Runtime 的收益——包括 41% 延迟降低——正是平台整合后基础设施协同效应的直接体现。[Enterprise AI Adoption](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption.md) 决策者应将"基础设施税削减"作为平台选型的核心评估维度。
+在企业 AI 落地中，团队常陷入"自建还是购买"的二元思维。Field Advisor 的案例表明，真正值得评估的不是某平台有多少功能，而是横切关注点（安全、观测、身份、内存）是否已被平台解决到生产级别。七个独立 AWS 账户 consolidation 到单一 AgentCore Runtime 的收益——包括 41% 延迟降低——正是平台整合后基础设施协同效应的直接体现。Enterprise AI Adoption 决策者应将"基础设施税削减"作为平台选型的核心评估维度。
 
 ### 2. 从单一 Supervisor 开始，工具增量接入
 
@@ -237,22 +237,22 @@ AWS 推荐的方法论值得借鉴：不要试图一开始就设计完整的 Age
 
 ### 3. 用 Hook 机制处理横切关注点，而非装饰器或中间件
 
-Strands Hook 系统提供了一个重要设计原则：横切行为（错误熔断、写确认、引用提取）应通过扩展点注入，而非修改核心推理循环。这与 [Agent Memory Lifecycle](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 中"模块化而非单体"的设计哲学一致。对于构建类似系统的团队，Hooks 天然是可组合的扩展点，避免了中间件链或装饰器栈的复杂度累积。
+Strands Hook 系统提供了一个重要设计原则：横切行为（错误熔断、写确认、引用提取）应通过扩展点注入，而非修改核心推理循环。这与 Agent Memory Lifecycle 中"模块化而非单体"的设计哲学一致。对于构建类似系统的团队，Hooks 天然是可组合的扩展点，避免了中间件链或装饰器栈的复杂度累积。
 
 ### 4. 生产流量在线评估优于离线测试集
 
-AWS 明确建议从生产流量在线评估开始，而非先构建离线测试集。这一原则反直觉但重要：真实用户查询会暴露合成测试遗漏的边界情况，且 AgentCore Evaluations 的内置评估器提供了无需自定义指标开发的基线。对于在 [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) 早期阶段的团队，这意味着评估基础设施应与 Agent 同步建设，而非作为后期补充。
+AWS 明确建议从生产流量在线评估开始，而非先构建离线测试集。这一原则反直觉但重要：真实用户查询会暴露合成测试遗漏的边界情况，且 AgentCore Evaluations 的内置评估器提供了无需自定义指标开发的基线。对于在 Production Agent Engineering 早期阶段的团队，这意味着评估基础设施应与 Agent 同步建设，而非作为后期补充。
 
 ### 5. Human-in-the-Loop 应基于框架原生能力，而非独立服务
 
 构建跨 Agent 边界的 HITL 工作流时，Field Advisor 选择了纯粹基于 Strands Interrupt 的代码方案，而非独立服务+消息队列+轮询。这一决策的依据是：框架原生能力已足够，且状态持久化由 Session Manager 管理。对于企业 AI 系统，这意味着 HITL 的核心是"状态暂停/恢复"的语义，而非基础设施组件。团队应优先探索框架边界能力，而非默认构建独立服务。
 
 ## 相关实体
-- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](https://github.com/QianJinGuo/wiki/blob/main/entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](https://github.com/QianJinGuo/wiki/blob/main/entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
+- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](../ch12-010-飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线/)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch01-521-business-intelligence-at-scale-key-obstacles/)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch01-236-亚马逊aws官方博客-https-aws-amazon-com-cn-blogs-china/)
+- Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch01-532-solution-overview/)
 
 ---
 

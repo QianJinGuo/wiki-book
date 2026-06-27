@@ -137,8 +137,8 @@ env["NCCL_IB_DISABLE"] = "1"  # 禁用IB，使用EFA
 - [Aws Sagemaker Capacity Aware Inference Fallback](../ch01-301-aws-sagemaker-capacity-aware-inference-fallback)
 - [Stochastic Parrot Thought Experiment](../ch01-650-stochastic-parrot-thought-experiment)
 - [Stochastic Parrot Thought Experiment](../ch01-650-stochastic-parrot-thought-experiment)
-- [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-grpo-rlvr-sagemaker-math-reasoning.md)
 

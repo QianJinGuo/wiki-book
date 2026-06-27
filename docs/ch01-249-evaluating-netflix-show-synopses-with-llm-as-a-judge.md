@@ -77,7 +77,7 @@ Solid industry application of LLM-as-a-Judge methodology with meaningful technic
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- MOC
 ## 深度分析
 
 ### 1. 专用判官架构优于单提示词过载

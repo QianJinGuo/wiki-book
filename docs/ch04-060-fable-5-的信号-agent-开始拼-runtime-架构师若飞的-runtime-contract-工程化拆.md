@@ -178,7 +178,7 @@
 - vs **[Anthropic Claude Fable 5 on AWS:Mythos 级功能](../ch01-677-anthropic)** — 那是**AWS 官方产品介绍**(功能/部署/内置保护),本文是**架构师工程化拆解**(Runtime 协议层)。两者互补。
 - vs **[Claude Fable 5 and new AI safety fables](../ch01-649-claude-fable-5-and-new-ai-safety-fables)** — Nathan Lambert 的**政策分析**(数据保留/prompt 过滤/用户未告知模型修改),本文**不**涉及政策。
 - vs **[Claude Fable 5 — Mollick patron vs wizard](../ch01-242-claude-fable-5-ethan-mollick-hands-on-qualitative-evaluati)** — Mollick 的**hands-on 用户体验视角**(4 用例 + patron vs wizard 框架),本文是**架构师工程视角**。两者对应"产品体验"vs"产品架构"。
-- vs **[Claude Fable 5 提示词泄漏 — Runtime Control Plane 安全工程启示](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-fable-5-prompt-leak-runtime-control-plane-vibecoder-2026.md)** — 同样用"Runtime"概念,但**VibeCoder 重点在安全工程** (Prompt 不能当保险箱 / 攻击面像系统 / 分类器组合风险),**本文重点在工程协议** (Task Brief / 能力路由 / 状态账本 / 治理层)。两者**完全互补**: 一个看 Runtime 怎么被攻击,一个看 Runtime 怎么被设计。
+- vs **Claude Fable 5 提示词泄漏 — Runtime Control Plane 安全工程启示** — 同样用"Runtime"概念,但**VibeCoder 重点在安全工程** (Prompt 不能当保险箱 / 攻击面像系统 / 分类器组合风险),**本文重点在工程协议** (Task Brief / 能力路由 / 状态账本 / 治理层)。两者**完全互补**: 一个看 Runtime 怎么被攻击,一个看 Runtime 怎么被设计。
 
 **若飞同系列延伸**(本文是若飞"Agent 治理"的 Runtime 工程化主轴):
 
@@ -206,7 +206,7 @@ Mike Krieger / Every 团队给出的 Fable 5 prompt library 核心是 9 字段 T
 
 ### 3. 能力路由 8 维度揭示了工具膨胀的失控风险
 
-若飞提出的 8 维度能力路由(MCP/Skill/搜索/Artifact/子代理/内置工具/网页/只回答),指向了一个核心矛盾:**工具越多,Agent 越容易乱**。这不是模型能力问题,而是系统设计问题。当一个 Agent 拥有 50 个工具时,"什么时候用哪个"如果全靠模型自行判断,失败模式是不可预测的。Fable 5 的路由思想是把触发条件显式化:MCP 必须先发现→再建议→等用户选择;Skill 创建文件前必须读;搜索遇到新实体主动用。这与 [Harness Loop 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-loop-architecture.md) 中的"工具调用必须可观测和可干预"原则呼应——**路由的本质不是限制 Agent,而是把决策权责显性化,让人能审计和接管**。
+若飞提出的 8 维度能力路由(MCP/Skill/搜索/Artifact/子代理/内置工具/网页/只回答),指向了一个核心矛盾:**工具越多,Agent 越容易乱**。这不是模型能力问题,而是系统设计问题。当一个 Agent 拥有 50 个工具时,"什么时候用哪个"如果全靠模型自行判断,失败模式是不可预测的。Fable 5 的路由思想是把触发条件显式化:MCP 必须先发现→再建议→等用户选择;Skill 创建文件前必须读;搜索遇到新实体主动用。这与 Harness Loop 架构 中的"工具调用必须可观测和可干预"原则呼应——**路由的本质不是限制 Agent,而是把决策权责显性化,让人能审计和接管**。
 
 ### 4. 执行状态账本设计是长任务 Agent 的核心工程难题
 
@@ -238,7 +238,7 @@ Anthropic 因美国政府出口管制指令暂停 Fable 5 访问,这件事在表
 ## 相关实体
 
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-fable-5-agent-runtime-contract-ruofei-2026.md)
-- [Claude Fable 5 提示词泄漏 — Runtime Control Plane](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-fable-5-prompt-leak-runtime-control-plane-vibecoder-2026.md)
+- Claude Fable 5 提示词泄漏 — Runtime Control Plane
 - [Anthropic Claude Fable 5 on AWS](../ch01-677-anthropic)
 - [Claude Fable 5 and new AI safety fables](../ch01-649-claude-fable-5-and-new-ai-safety-fables)
 - [Claude Fable 5 — Mollick patron vs wizard](../ch01-242-claude-fable-5-ethan-mollick-hands-on-qualitative-evaluati)

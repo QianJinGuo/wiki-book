@@ -24,7 +24,7 @@
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01-677-anthropic)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- MOC
 ## 深度分析
 Google ADK 提出的 5 种 Skill 设计模式——Tool Wrapper、Generator、Reviewer、Inversion、Pipeline——并非简单的分类标签，而是一套经过实践验证的工作流结构化方案。这套模式的演进轨迹清晰地呈现出 Agent 工程的一个核心趋势：从"如何让模型理解指令"转向"如何让模型按正确顺序执行任务"。
 **设计模式本质上是 5 类失败模式的解决方案。** 每一模式都对应 Agent 在实际场景中的典型失败：

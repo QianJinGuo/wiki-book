@@ -19,7 +19,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deerflow-hermes-openclaw-comparison.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
+- MOC
 ## 深度分析
 
 **1. 三种架构哲学代表三种不同的 Agent 设计世界观**

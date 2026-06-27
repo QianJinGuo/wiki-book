@@ -47,7 +47,7 @@ Custom quality metrics c
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 ## 相关主题
 
 ---

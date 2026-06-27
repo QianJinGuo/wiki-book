@@ -93,21 +93,21 @@ OpenAI 的"garbage collection"思路值得借鉴：后台定期运行清理 Agen
 每个 skill 都是对当前模型能力边界的假设。Anthropic 的演进经验：context reset 先被淘汰，sprint 分解随后被淘汰，evaluator 仍然有价值。正确的做法：**逐一移除旧组件，测试质量是否真的下降**，而不是继续叠加新组件。Skill 腐朽有 Context Rot 式、数据漂移式、架构错位式三种形态。
 
 ## 相关概念
-- [GBrain 自进化体系](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md) — skillify 是 gbrain 自演化的核心机制
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-framework.md) — 传感器失效是 latent space 工作分类错位的体现
-- [Harness 从 Prompt 到工程体系](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md) — 约束与自主权的辩证关系
-- [AIAIGC峰会嘉宾阵容](https://github.com/QianJinGuo/wiki/blob/main/entities/aiaigc-summit-guest-lineup.md)
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-comprehensive-guide-32k-chars.md)
-- [从提需求到部署发布全AI全自动化后研发效能全面跃升](https://github.com/QianJinGuo/wiki/blob/main/entities/从提需求到部署发布全ai全自动化后研发效能全面跃升.md)
-- [Hermes Agent vs OpenClaw 对比分析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-vs-openclaw-comparison.md)
-- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](https://github.com/QianJinGuo/wiki/blob/main/entities/autoclaw-使用体验自带-66-个-skill可接入聊天工具安全性高.md)
-- [Harness Engineering 实战：AI Coding 率从 25% 提升至 90%](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-90-percent-ai-coding-rate.md)
-- [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
-- [OpenCLAW 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-comprehensive-guide.md)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-agent-observability-session-logs-otel-sls.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
-- [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
+- [GBrain 自进化体系](../ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/) — skillify 是 gbrain 自演化的核心机制
+- [Harness Engineering](../ch05-049-harness-engineering-系统梳理/) — 传感器失效是 latent space 工作分类错位的体现
+- [Harness 从 Prompt 到工程体系](../ch01-664-从-prompt-到-harness-claude-官方学习资料/) — 约束与自主权的辩证关系
+- [AIAIGC峰会嘉宾阵容](../ch04-416-aiaigc峰会嘉宾阵容/)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch04-429-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [从提需求到部署发布全AI全自动化后研发效能全面跃升](../ch09-065-从提需求到部署发布-全ai全自动化后-研发效能全面跃升/)
+- [Hermes Agent vs OpenClaw 对比分析](../ch04-188-hermes-agent-为什么火了-和-openclaw-龙虾比一比/)
+- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](../ch04-257-autoclaw-使用体验-自带-66-个-skill-可接入聊天工具-安全性高/)
+- [Harness Engineering 实战：AI Coding 率从 25% 提升至 90%](../ch05-031-harness-engineering-实战-ai-coding-率从-25-提升至-90/)
+- AI 领域专家学习路径
+- [OpenCLAW 完全指南](../ch04-199-openclaw-完全指南/)
+- [Agent 上下文窗口管理对比](../ch04-149-agent-上下文窗口管理对比/)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch04-338-你的-ai-agent-真的在受控运行吗/)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群/)
+- Harness Engineering 七层框架
 
 ## 深度分析
 ### 自举循环的本质：智能制造约束，约束反过来限制智能
@@ -159,7 +159,7 @@ Harness Engineering 的核心悖论在实践中经常被误解：增加约束不
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-reliability-engineering-skillify-continuous-improvement.md)
 
-- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)
+- [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice/)
 
 ---
 

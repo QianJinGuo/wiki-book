@@ -11,11 +11,11 @@
 - 潜在风险：若败诉，OpenAI 和 Microsoft 可能被迫"disgorge"高达 $1500 亿
 - Musk 已表示将上诉
 ## 相关实体
-- [奥特曼最险一战 前女Cto当庭翻脸 Openai权斗彻底打到台前 6Bf26E92E29B](https://github.com/QianJinGuo/wiki/blob/main/entities/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md)
-- [Thehackernews Fake Openai Privacy Filter](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-fake-openai-privacy-filter.md)
-- [Openai Buys Ai Consultancy Enterprises](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-buys-ai-consultancy-enterprises.md)
-- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](https://github.com/QianJinGuo/wiki/blob/main/entities/全球ai新王诞生anthropic估值冲爆12万亿首次反超openai.md)
-- [Ai Native Undergrads Graduation 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-undergrads-graduation-2026.md)
+- [奥特曼最险一战 前女Cto当庭翻脸 Openai权斗彻底打到台前 6Bf26E92E29B](../ch01-443-奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前/)
+- [Thehackernews Fake Openai Privacy Filter](../ch01-656-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra/)
+- [Openai Buys Ai Consultancy Enterprises](../ch01-721-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/)
+- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](../ch01-729-全球ai新王诞生-anthropic估值冲爆1-2万亿-首次反超openai/)
+- [Ai Native Undergrads Graduation 2026](../ch01-022-第一批-ai原生-本科生-要毕业了/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md)
 

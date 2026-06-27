@@ -12,14 +12,14 @@
 
 ## 相关实体
 - [Agent Harness 12 Components 7 Decisions](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch02-prompt/)
 - [Code As Agent Harness Survey](../ch09-046-code-as-agent-harness-综述)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langchain-anatomy-agent-harness.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
+- MOC
 ## 深度分析
 
 **Model 与 Harness 的本质分离是 Agent 架构的第一性原理。** 模型的本质是输入到输出的函数映射——它无法自行维持跨轮对话的状态、无法执行代码、无法获取实时信息、无法操作外部环境。这些能力缺陷并非模型本身的缺陷，而是模型作为"能力来源"这一定位的固有局限。所有这些缺失的能力，都必须在 Harness 层补足 。这意味着当我们评估一个 Agent 系统的能力时，不能仅看模型参数大小，更需要审视其 Harness 是否完整、是否设计合理。

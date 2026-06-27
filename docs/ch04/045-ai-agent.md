@@ -231,7 +231,7 @@ Supervisor 的角色至关重要——它不只是路由，还定义了执行边
 Skill 动态注入解决的不只是"规则太多放不下"的问题，而是"规则出现的时机和位置"问题。L1/L2/L3 三层筛选确保：只有当前相关的 Skill 才会被激活，并且它们会出现在 Prompt 的关键位置。
 
 ## 相关链接
-- [Gaode Ai Companion Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/gaode-ai-companion-agent-architecture.md)
+- [Gaode Ai Companion Agent Architecture](../ch04-044-ai伴行技术解析-基于空间智能的高可用agent架构实践/)
 
 ## 实践启示
 ### 1. 在实时性敏感的垂直场景中，双内核架构是值得参考的模式
@@ -253,11 +253,11 @@ Claude-Opus-4.7 在通用基准上顶级但在空间领域表现最差，DeepSee
 高德在原生 ReAct 基础上增加了：轮数硬上限、格式异常熔断、幻觉循环检测、信息增量检测。这些保护机制确保 ReAct 循环不会在异常情况下失控。实现 ReAct 时，判停机制的设计优先级应该高于推理循环本身。
 
 ## 相关实体
-- [Claude Code Tool Design Evolution Anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-tool-design-evolution-anthropic.md)
-- [Claude Code Memory Setup Token 71X楠楠自瑜](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-memory-setup-token-71x楠楠自瑜.md)
-- [Codex Goal Implementation Breakdown](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-goal-implementation-breakdown.md)
-- [Elf Embedded Language Flows Hekaiming 105M](https://github.com/QianJinGuo/wiki/blob/main/entities/elf-embedded-language-flows-hekaiming-105m.md)
-- [2026 05 06 2201](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-05-06-2201.md)
+- [Claude Code Tool Design Evolution Anthropic](../ch01-360-claude-code-工具设计复盘-官方/)
+- [Claude Code Memory Setup Token 71X楠楠自瑜](../ch03-078-claude-code-实践-token-效率提高-71-5-倍的工作流/)
+- [Codex Goal Implementation Breakdown](../ch04-179-codex-goal-实现拆解-长任务-agent-不只是多跑几轮/)
+- [Elf Embedded Language Flows Hekaiming 105M](../ch01-318-何恺明首个语言模型-105m参数-不走gpt自回归老路/)
+- 2026 05 06 2201
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 

@@ -147,14 +147,14 @@ Mollick 结尾那句 Premonition 特别值得抄下来：**「我们会搞清楚
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
 - [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
 - [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](../ch01-546-chatgpt默认模型大升级-gpt-5-5-instant正式上线-新增记忆来源功能)
 - [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](../ch01-438-cvpr-2026-highlight-让ai像电影人一样-看-视频-8b小模型反超gpt-5与gemini-3-1-p)
 - [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](../ch01-016-cvpr-2026-highlight-让ai像电影人一样-看-视频-8b小模型反超gpt-5与gemini-3-1-p)
 - [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](../ch01-115-a-recent-experience-with-chatgpt-5-5-pro-gowers-s-weblog)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- MOC
 
 ---
 

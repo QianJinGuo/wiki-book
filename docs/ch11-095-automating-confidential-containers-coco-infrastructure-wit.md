@@ -47,7 +47,7 @@ Kyverno 本身运行在 CoCo 信任模型中标记为不可信的 Kubernetes 控
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/automating-confidential-containers-coco-infrastructure-with-kyverno.md)（CNCF Blog, 2026-05-19）
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 ## 深度分析
 ### 1. 零信任安全模型的工程化代价
 CoCo 将"控制平面不可信"作为核心安全公理，这从设计上是对的——但这把安全验证的复杂度从基础设施层推到了应用层。Kyverno 的价值在于将这部分复杂度重新封装回平台层，让应用开发者无需理解 TEE、RTMR、initdata 等底层概念即可部署可信工作负载。这是一种典型的**平台工程（Platform Engineering）** 思路：通过 API 抽象掉安全复杂性。

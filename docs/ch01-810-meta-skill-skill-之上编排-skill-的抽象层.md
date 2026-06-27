@@ -57,7 +57,7 @@ Meta Skill：Skill 之上编排 Skill 的抽象层 涉及agent领域的核心技
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- MOC
 
 ---
 

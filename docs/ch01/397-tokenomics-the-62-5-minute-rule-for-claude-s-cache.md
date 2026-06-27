@@ -11,7 +11,7 @@
 - 如果预计超过 62.5 分钟才需要 → 放任缓存过期，下次重新写入更划算
 - 该临界值**不随模型型号变化**（Opus/Sonnet/Haiku 均相同）
 - 该临界值**不随前缀 token 规模变化**（5K 或 500K 均相同）
---- See also [Claude Code Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture.md)
+--- See also [Claude Code Architecture](../ch01-571-claude-code-架构解析/)
 
 ## 深度分析
 ### 1. 定价结构的数学本质

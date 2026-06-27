@@ -88,7 +88,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03-069-boris-cherny-从-ide-到-agent-控制台)
 - [读完 Claude Code 源码才发现 Skills/MCP/Rules 的区别远没有你想的那么大](../ch07-006-claude-code-skills-mcp-rules-source-analysis)
-- [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)
+- AI Agent 探索之路：从 Task-Driven 到 Goal-Driven
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-367-claude-code-harness-deep-understanding)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01-677-anthropic)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群)
@@ -106,7 +106,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 
 - [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- MOC
 
 ---
 

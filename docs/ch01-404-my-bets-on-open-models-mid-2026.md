@@ -11,7 +11,7 @@
 - [dean ball on open models and government control](../ch01-841-dean-ball-on-open-models-and-government-control)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/my-bets-on-open-models-mid-2026.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- MOC
 ## 摘要
 
 Nathan Lambert（Interconnects AI）2026 年 4 月发表的这篇长文把"开源 vs 闭源模型谁会赢"这个常见但失焦的问题，拆成了 13 个具体可下注的判断。核心论断：这是一个经济学问题，而不是能力问题 — 闭源在 RL 训练范式下占据真实使用场景的数据优势，开源在重复性自动化场景的 API 份额会继续扩大；中国开源实验室的"benchmark 焦点"和"美国开源实验室的复苏"会同时发生。
@@ -92,7 +92,7 @@ RL 训练时代真正的新护城河不是公开 benchmark 上的分数，而是
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
-- [Rlhf Dpo Grpo Alignment](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md)
+- Rlhf Dpo Grpo Alignment
 
 ---
 

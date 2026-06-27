@@ -57,11 +57,11 @@ When code was much more expensive to write, we needed a lot more of the codebase
 Confidence in your codebase can't be automated away. It's ultimately your job as the builder to bear responsibility for what you're releasing into the world. So why not use agents to not simply make things faster, but make them _better_?
 
 ## 相关实体
-- [Apple Corecrypto Formal Verification Blueprint](https://github.com/QianJinGuo/wiki/blob/main/entities/apple-corecrypto-formal-verification-blueprint.md)
-- [Is Software Losing Its Head 1](https://github.com/QianJinGuo/wiki/blob/main/entities/is-software-losing-its-head-1.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
+- [Apple Corecrypto Formal Verification Blueprint](../ch12-024-apple-corecrypto-formal-verification-blueprint-post-quantu/)
+- [Is Software Losing Its Head 1](../ch01-660-is-software-losing-its-head/)
+- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
+- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](../ch03-092-when-growth-slows-is-it-sales-fault-or-the-product-s-fault/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-formal-verification-ai-code.md)
 

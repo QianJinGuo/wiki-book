@@ -25,11 +25,11 @@ Agent 365 的 GA 标志着 Microsoft 的战略重心：**不只做 Agent 构建�
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](https://github.com/QianJinGuo/wiki/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](https://github.com/QianJinGuo/wiki/blob/main/entities/servicenow-ui-is-dead-agent.md)
-- [Agent-to-Agent (A2A) 协议标准 — Agent间通信协议](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04-314-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
+- [Agent-to-Agent (A2A) 协议标准 — Agent间通信协议](../ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级/)
+- MOC
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-copilot-studio-agent-governance.md)
 
 ---

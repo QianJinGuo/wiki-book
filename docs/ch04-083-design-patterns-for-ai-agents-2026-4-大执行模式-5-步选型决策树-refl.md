@@ -63,16 +63,16 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch01-305-从多智能体编排到ai自主决策-资损防控体系的架构演进)
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)
-- [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
-- [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
+- Transformer Architecture
+- Agent 与后端统一架构
+- Harness Design Peer Review Framework
 
 - [Thin Harness Fat Skills](../ch05-063-thin-harness-fat-skills-ai工程架构的本质)
 - [你不知道的 Agent 原理架构与工程实践](../ch04-300-agent-principle-architecture-engineering-practice)
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering 框架](../ch05-041-harness-engineering-概念框架/)
 - [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- MOC
 ## 第 2 来源：前端 T 站 4 模式选型决策树（2026-06-07）
 
 tabzhan / 前端T站 2026-06-07 发布的 4 执行模式对比 + 5 步选型决策树 + AgentScope 3 完整 Demo — 补齐了第 1 来源（综合设计模式概览）**只列模式不教选型** 的缺口。

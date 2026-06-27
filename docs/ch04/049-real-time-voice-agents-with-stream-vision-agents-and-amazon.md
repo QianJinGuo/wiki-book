@@ -136,35 +136,35 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 5. **For high-volume inbound phone support, design voice agents as the first-line resolution layer**: The architectural emphasis on deflecting repetitive requests to voice agents and escalating to human agents only when confidence thresholds are exceeded suggests a specific design philosophy: treat voice AI as the primary resolver, not a fallback. This means designing your escalation criteria carefully, ensuring structured context is attached when escalating, and measuring containment rate as a key performance indicator for the voice agent system.
 
 ## 相关实体
-- [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md) — 同一技术栈的 WebRTC 集成方案
-- [Amazon Nova Lite Fine-Tuning](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) — Nova 视觉模型微调实践
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md) — Nova 多模态嵌入能力
-- [Nemotron 3 Multi-Agent System](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md) — NVIDIA 多Agent系统参考
-- [Amazon Bedrock AgentCore Memory](https://github.com/QianJinGuo/wiki/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md) — Bedrock Agent 记忆哲学
-- [Strands Agents SDK](https://github.com/QianJinGuo/wiki/blob/main/entities/strands-agents-sdk-build-analytics-layer-vqr-amazon-bedrock-practice.md) — 确定性数据分析实践
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](https://github.com/QianJinGuo/wiki/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](https://github.com/QianJinGuo/wiki/blob/main/entities/zenjoy-aiops-agent-bedrock-eks-prometheus.md)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md)
-- [OpenClaw多租户迁移: Phase 2&3部署](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-4.md)
-- [AgentCore Runtime部署Apache Doris MCP Server](https://github.com/QianJinGuo/wiki/blob/main/entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-identity-security.md)
-- [OpenClaw多租户迁移: 背景与架构概览](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-1.md)
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-api-security-guide.md)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-3.md)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-os-level-actions-browser.md)
-- [Amazon Bedrock模型推理的Serverless异步架构](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
+- [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov/) — 同一技术栈的 WebRTC 集成方案
+- [Amazon Nova Lite Fine-Tuning](../ch11-054-amazon-nova-lite-fine-tuning-高性价比的视觉检测模型微调案例与实践-亚马逊aws官方博/) — Nova 视觉模型微调实践
+- Amazon Nova Multimodal Embeddings 制造业智能应用 — Nova 多模态嵌入能力
+- [Nemotron 3 Multi-Agent System](../ch04-043-nvidia-nemotron-3-agents-rag-voice-safety/) — NVIDIA 多Agent系统参考
+- [Amazon Bedrock AgentCore Memory](../ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚/) — Bedrock Agent 记忆哲学
+- [Strands Agents SDK](../ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的/) — 确定性数据分析实践
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11-144-zenjoy-基于-amazon-bedrock-和-eks-构建-aiops-agent-打通-prometheus/)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式/)
+- [OpenClaw多租户迁移: Phase 2&3部署](../ch04-440-openclaw-multi-4/)
+- [AgentCore Runtime部署Apache Doris MCP Server](../ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt/)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构/)
+- [OpenClaw多租户迁移: 背景与架构概览](../ch04-432-openclaw-multi-1/)
+- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南/)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch04-390-openclaw-multi-3/)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch04-156-agentcore-browser-os级操作-action-screenshot-reaction闭环/)
+- [Amazon Bedrock模型推理的Serverless异步架构](../ch11-067-amazon-bedrock-model-inference-serverless-architecture-case/)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南/)
+- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
 
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](https://github.com/QianJinGuo/wiki/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-claude-prompt-cache-strategy.md)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](https://github.com/QianJinGuo/wiki/blob/main/entities/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda/)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](../ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt/)
+- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](../ch11-058-在-amazon-bedrock-上为-claude-应用设计稳健的-prompt-cache-策略/)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](../ch11-049-build-custom-code-based-evaluators-in-amazon-bedrock-agentco/)
+- MOC
 
 ---
 

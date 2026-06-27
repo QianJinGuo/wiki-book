@@ -216,8 +216,8 @@ Skills 同时适用于托管 Shell 和本地 Shell 模式，且在同一 API 下
 
 ## 相关主题
 - [Skills Anthropic Openai Comparison Frontend Design](../ch01-531-skills-anthropic-openai-comparison-frontend-design) — Anthropic/Google Skills 设计模式对比
-- [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md) — OpenClaw vs Claude Code 内存对比
-- [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md) — 上下文窗口管理方案对比
+- Claude Code Openclaw Memory Comparison — OpenClaw vs Claude Code 内存对比
+- Context Window Management Comparison — 上下文窗口管理方案对比
 - [Harness Engineering Long Term Agent Tasks](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务) — 长周期 Agent 的 Harness 设计
 
 ---

@@ -63,7 +63,7 @@
 - [ds4c deepseek v4 antirez](../ch01-419-ds4c-deepseek-v4-antirez)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](../ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
 - [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](../ch01-552-redis之父下场-给deepseek-v4单独造了一台推理引擎)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- MOC
 
 ---
 

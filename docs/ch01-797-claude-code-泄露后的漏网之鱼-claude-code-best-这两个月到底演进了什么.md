@@ -53,7 +53,7 @@ Claude Code 自 2.
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 
 ---
 

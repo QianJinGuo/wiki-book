@@ -51,7 +51,7 @@ Without a centralized gateway, every MCP server that your organization builds mu
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 
 ---
 

@@ -82,12 +82,12 @@ They go over the evals and keep saying ‘Mythos is better.’ Again, reasonably
 I don’t love that they used this as a reason to skip a bunch
 
 ## 相关实体
-- [Claude Opus 47](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-47.md)
-- [Claude 4 5 Sonnet Opus Release Notes](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-4-5-sonnet-opus-release-notes.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
-- [Tokenomics The 625 Minute Rule For Claudes Cache](https://github.com/QianJinGuo/wiki/blob/main/entities/tokenomics-the-625-minute-rule-for-claudes-cache.md)
-- [Anthropic Long Running Agent Adversarial Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-long-running-agent-adversarial-architecture.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [Claude Opus 47](../ch01-363-claude-opus-4-7-并不是一次全面升级-甚至部分能力大幅衰退-n-n大家应该在合适的场景下选择使用/)
+- [Claude 4 5 Sonnet Opus Release Notes](../ch01-227-claude-4-5-sonnet-opus-release-notes/)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
+- [Tokenomics The 625 Minute Rule For Claudes Cache](../ch01-385-tokenomics-the-62-5-minute-rule-for-claude-s-cache/)
+- [Anthropic Long Running Agent Adversarial Architecture](../ch04-252-anthropic-长时运行-agent-架构-对抗式设计-合同谈判-审美量化/)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-opus-4-8-system-card-zvi.md)
 

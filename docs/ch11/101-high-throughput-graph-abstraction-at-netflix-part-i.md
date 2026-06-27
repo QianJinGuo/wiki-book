@@ -72,13 +72,13 @@ Netflix 内部 1,500+ 微服务每日产生海量 ops 事件（service → servi
 Part II 将介绍 query engine、impact analysis 算法、client libraries。
 
 ## 相关实体
-- [High Throughput Graph Abstraction At Netflix Part I](https://github.com/QianJinGuo/wiki/blob/main/entities/high-throughput-graph-abstraction-at-netflix-part-i.md)
-- [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
-- [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
-- [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Plaid Effects](https://github.com/QianJinGuo/wiki/blob/main/entities/plaid-effects.md)
+- [High Throughput Graph Abstraction At Netflix Part I](../ch11-135-netflix-高吞吐图抽象层-pb-级图数据的统一-api-与实时遍历/)
+- [Netflix Druid Interval Aware Caching](../ch11-091-netflix-druid-区间感知缓存-指数-ttl-分桶查询去重/)
+- [Netflix Metadata Service Model Lifecycle Graph](../ch11-034-netflix-metadata-service-and-model-lifecycle-graph/)
+- [Netflix Live Operations Human Infrastructure](../ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构/)
+- [Plaid Effects](../ch03-110-plaid-s-effects-on-the-financial-ecosystem/)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 ## 相关主题
 
 - 分布式追踪 (OpenTelemetry, Jaeger) — 跨服务调用追踪基础

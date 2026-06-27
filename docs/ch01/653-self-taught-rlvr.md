@@ -47,11 +47,11 @@
 **Near-Future Checkpoint的选取**：不应仅看loss下降，核心指标是S=Q/V的综合最优。在实践中建议监控每个checkpoint的Q和V，优先选取Q提升明显且V保持低位的checkpoint作为teacher。
 **CoPD落地路径**：对于已有独立expert的团队，建议先做mutual OPD双向蒸馏拉近行为模式，再进行各expert的持续RLVR能力拓展。overlap度量需嵌入训练流程实时追踪。
 ## 相关实体
-- [Llm Post Training Full Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-post-training-full-guide.md)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](https://github.com/QianJinGuo/wiki/blob/main/entities/mellum-2-jetbrains-open-12b-moe-code-model.md)
-- [Reading Todays Open Closed Performance Gap](https://github.com/QianJinGuo/wiki/blob/main/entities/reading-todays-open-closed-performance-gap.md)
-- [Baidu Wenxin Post Training Evolution](https://github.com/QianJinGuo/wiki/blob/main/entities/baidu-wenxin-post-training-evolution.md)
-- [Vllm V0 To V1 Correctness Before Corrections](https://github.com/QianJinGuo/wiki/blob/main/entities/vllm-v0-to-v1-correctness-before-corrections.md)
+- Llm Post Training Full Guide
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch01-442-mellum-2-jetbrains-open-weight-12b-moe-code-llm/)
+- [Reading Todays Open Closed Performance Gap](../ch01-382-reading-today-s-open-closed-performance-gap/)
+- Baidu Wenxin Post Training Evolution
+- Vllm V0 To V1 Correctness Before Corrections
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/self-taught-rlvr-jd-cii-2026.md)
 

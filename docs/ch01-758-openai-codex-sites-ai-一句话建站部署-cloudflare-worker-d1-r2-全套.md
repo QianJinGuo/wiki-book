@@ -53,7 +53,7 @@ OpenAI 给 Codex 塞了个新功能叫 Sites。
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- MOC
 
 ---
 

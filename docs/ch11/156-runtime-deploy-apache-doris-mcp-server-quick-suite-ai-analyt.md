@@ -29,11 +29,11 @@
 5. **按调用计费模式适合"按需使用"场景，自建常驻服务适合"高频使用"场景。** AgentCore Runtime 的 Pay as You Go 模式对于"业务人员偶尔查询"的场景 TCO 优势明显，但如果是 7×24 高并发查询场景，长期常驻的计算资源可能更经济。可以通过 A/B 对照（用 AgentCore Runtime 运行一周 vs 自建服务运行一周）获得真实成本数据后再做决策。
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](https://github.com/QianJinGuo/wiki/blob/main/entities/integrating-aws-api-mcp-server-with-amazon-quick-suite-using-amazon-bedrock-agen.md)
-- [Aws Bedrock Agentcore Doris Mcp Server](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md)
-- [Claude Code Mcp Server](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-mcp-server.md)
-- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南/)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo/)
+- [Aws Bedrock Agentcore Doris Mcp Server](../ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式/)
+- [Claude Code Mcp Server](../ch07-024-claude-code-mcp-server/)
+- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07-039-aws-devops-agent-mcp-server-打通混合云网络排障的最后一公里/)
 
 ---
 

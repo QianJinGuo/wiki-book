@@ -26,13 +26,13 @@
 - [scaling camera file processing at netflix](../ch11-018-scaling-camera-file-processing-at-netflix)
 - [the shape of the thing](../ch01-182-the-shape-of-the-thing)
 - [protecting against token theft](../ch01-276-protecting-against-token-theft)
-- [蔚蓝babyalpha a3消费级机器狗撕开英伟达垄断](https://github.com/QianJinGuo/wiki/blob/main/entities/weilan-babyalpha-a3-machine-dog.md)
+- 蔚蓝babyalpha a3消费级机器狗撕开英伟达垄断
 - [5亿视频炼出全球最大gui开源数据集、推理token省71%小模型反超大模型——小米ai团队多篇论文入选icml 202](../ch01-771-5亿视频炼出全球最大gui开源数据集-推理token省71-小模型反超大模型-小米ai团队多篇论文入选icml-202)
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](../ch01-730-吴恩达2026新课上线-3小时包教包会-零代码小白也能成为ai超级玩家)
 - [直播预约 | 数据引擎：具身智能的下一个决胜局](../ch01-676-直播预约-数据引擎-具身智能的下一个决胜局)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-as-agent-harness-survey-2026.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 ## 深度分析
 
 UIUC、Meta、斯坦福等最新综述！Code as Agent Harness 涉及agent领域的核心技术议题。

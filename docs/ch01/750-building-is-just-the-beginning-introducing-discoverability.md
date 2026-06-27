@@ -40,12 +40,12 @@ Get started
 - **data趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程/)
 
 ## 实践启示
 1. **工程落地**: code领域方案需关注可观测性、可维护性和成本效率
@@ -55,7 +55,7 @@ Get started
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- MOC
 
 ---
 

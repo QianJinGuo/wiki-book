@@ -172,13 +172,13 @@ Claude Code 的 7 层记忆架构本质上是一个**成本递增、能力递增
 - [From Agent Protocol to Harness Skill](../ch04-351-from-agent-protocol-to-harness-skill)
 - [Agent Memory 架构解析](../ch04-111-agent-memory-架构解析)
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
+- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-7-layer-memory-architecture.md)
 
 - [harness-engineering-systematic-explainer](../ch05-036-harness-engineering-systematic-explainer)
 - [claude code 多智能体协作体系设计：从单agent到多agent工作流](../ch01-856-claude-code-多智能体协作体系设计-从单agent到多agent工作流)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- MOC
 
 ---
 

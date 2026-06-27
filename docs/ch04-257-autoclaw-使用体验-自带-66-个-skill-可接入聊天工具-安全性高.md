@@ -82,7 +82,7 @@ AutoClaw 目前仍处于早期阶段，建议持续关注：
 - 更多办公工具（钉钉、企业微信）的接入支持
 
 ## 相关实体
-- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
+- Coding Harness 工程本质
 - [Hermes Agent 记忆系统深度拆解](../ch04-418-hermes-agent)
 
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了)
@@ -96,7 +96,7 @@ AutoClaw 目前仍处于早期阶段，建议持续关注：
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群)
 - [Agent 上下文窗口管理对比](../ch04-149-agent-上下文窗口管理对比)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- MOC
 
 ---
 

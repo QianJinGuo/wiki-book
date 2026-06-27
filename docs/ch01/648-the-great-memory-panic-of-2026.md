@@ -27,12 +27,12 @@
 
 ## 相关实体
 
-- [Inngest - AI in Production: The 2026 Benchmark Report](https://github.com/QianJinGuo/wiki/blob/main/entities/inngest-ai-in-production-the-2026-benchmark-report.md)
-- [How Superset built the IDE for AI agents on Vercel](https://github.com/QianJinGuo/wiki/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
-- [Toto 2.0: Time series forecasting enters the scaling era](https://github.com/QianJinGuo/wiki/blob/main/entities/toto-2.md)
-- [Personavlm Long Term Personalization](https://github.com/QianJinGuo/wiki/blob/main/entities/personavlm-long-term-personalization.md)
-- [lightseek token speed inference](https://github.com/QianJinGuo/wiki/blob/main/entities/lightseek-token-speed-inference.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [Inngest - AI in Production: The 2026 Benchmark Report](../ch01-150-inngest-ai-in-production-the-2026-benchmark-report/)
+- [How Superset built the IDE for AI agents on Vercel](../ch01-058-how-superset-built-the-ide-for-ai-agents-on-vercel/)
+- [Toto 2.0: Time series forecasting enters the scaling era](../ch01-027-toto-2-0-time-series-forecasting-enters-the-scaling-era/)
+- [Personavlm Long Term Personalization](../ch01-641-personavlm-long-term-personalized-multimodal-llm/)
+- lightseek token speed inference
+- MOC
 
 ---
 

@@ -63,7 +63,7 @@ AI 生成的文本分析应配合 SVG/HTML 可视化图，并通过邮件/IM 主
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
 - [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch11-032-aws-network-firewall-审查-idc-vpc-流量-vgw-架构-bgp-路由传播实验)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 ---
 

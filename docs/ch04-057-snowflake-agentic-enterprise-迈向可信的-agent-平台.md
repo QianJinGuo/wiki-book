@@ -240,7 +240,7 @@ Cortex Sense 从 Snowflake 已有数据和活动中构建信号，自动增强 A
 - [Taobao Ai Sre Digital Employee Code Quality Governance](../ch01-770-从人机协作到ai主导-我们是怎么把代码质量交给-数字sre-的)（数字员工治理 — 行业对照）
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)（AgentOps — 智能体可观测性对照）
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)（企业 Agent 安全风险同主题）
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)（Amazon Quick — 另一家企业数据分析平台）
+- Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions（Amazon Quick — 另一家企业数据分析平台）
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/snowflake-agentic-enterprise-summit-2026-infoq.md)
 

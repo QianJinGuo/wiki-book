@@ -17,7 +17,7 @@ Seismic data analysis is an essential component of energy exploration, but confi
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-halliburton-seismic-workflow-genai.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
+- MOC
 ## 深度分析
 
 Halliburton 将 Amazon Bedrock 上的生成式 AI 能力集成到其 Seismic Engine 中，标志着能源行业油气勘探工作流自动化的重要进展。传统的地震数据处理流程需要地球物理工程师手动编写大量参数配置，不仅耗时且容易因人为失误导致数据处理质量不稳定。通过引入生成式 AI，Halliburton 能够将自然语言描述的勘探需求自动转换为复杂的处理管线配置，大幅降低了专业门槛的同时提升了工作流的构建效率。这一实践表明，生成式 AI 在工业级专业工具中的应用已从实验阶段进入生产级部署。

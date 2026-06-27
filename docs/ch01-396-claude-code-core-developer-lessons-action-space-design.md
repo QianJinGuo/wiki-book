@@ -22,7 +22,7 @@
 
 - new york design week is here, may 14–20 - core77
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
+- MOC
 ## 深度分析
 
 **Action Space 设计的本质是接口契约，而非功能堆砌**。Thariq 在总结 Claude Code 开发经验时指出，很多人在构建 Agent 时第一反应是不断叠加工具和能力，但真正上线后暴露的核心问题往往不是"能力不够"，而是"模型不知道什么时候该用哪个工具"以及"出了问题无法回放和定位"。这揭示了一个重要的工程认知：Agent 的 Action Space 本质上是一个接口契约系统，而不是功能清单。每一个新增工具都是对模型认知负载的增加，同时也是对系统风险面的扩展。工具的数量并不是优势，反而是复杂度的直接来源 。

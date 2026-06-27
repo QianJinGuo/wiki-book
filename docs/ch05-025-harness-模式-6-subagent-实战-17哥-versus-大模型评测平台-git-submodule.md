@@ -264,7 +264,7 @@ next-step-prompt-e2e: "启动服务(后端8901/前端3001)并执行需求 {REQ-I
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- MOC
 
 ---
 

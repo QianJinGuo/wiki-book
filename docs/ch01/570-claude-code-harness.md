@@ -37,9 +37,9 @@ Claude Code 实现了 fake_tool_injection 防御以污染训练数据，connecto
 
 ## 深度分析
 
-**1. Thin Harness 作为架构哲学的落地**：Claude Code 的 50 行 Orchestrator + 4 种工具原语是"Thin Harness"理念的极致实践。与 [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/thin-harness-fat-skills.md) 描述的"~200行轻量框架"一脉相承——脚手架不承载业务逻辑，模型越强框架越薄 。
+**1. Thin Harness 作为架构哲学的落地**：Claude Code 的 50 行 Orchestrator + 4 种工具原语是"Thin Harness"理念的极致实践。与 [Thin Harness Fat Skills](../ch05-063-thin-harness-fat-skills-ai工程架构的本质/) 描述的"~200行轻量框架"一脉相承——脚手架不承载业务逻辑，模型越强框架越薄 。
 
-**2. 六层记忆系统是 Context 工程的完整范式**：Claude Code 的记忆层次覆盖从组织策略到会话上下文的全光谱，且记忆是"索引而非存储"的设计让系统可以主动编辑和去重。这是 [Agentmemory Coding Agent Local Memory](https://github.com/QianJinGuo/wiki/blob/main/entities/agentmemory-coding-agent-local-memory.md) 讨论的本地记忆系统在产品级实现中的完整形态 。
+**2. 六层记忆系统是 Context 工程的完整范式**：Claude Code 的记忆层次覆盖从组织策略到会话上下文的全光谱，且记忆是"索引而非存储"的设计让系统可以主动编辑和去重。这是 [Agentmemory Coding Agent Local Memory](../ch09-034-agentmemory/) 讨论的本地记忆系统在产品级实现中的完整形态 。
 
 **3. 五档权限光谱是 Agent 信任分级的基础设施**：从 plan（仅规划）到 bypassPermissions（完全放权），配合 23 项安全检查，是 Agent 安全架构的完整实践。这种权限光谱设计解决了"Agent 应该有多少自主权"这个核心问题 。
 
@@ -57,13 +57,13 @@ Claude Code 实现了 fake_tool_injection 防御以污染训练数据，connecto
 
 4. **为 Sub-Agent 设计独立 Context 预算**：当多 Agent 协作时，强制每个 Agent 使用独立上下文预算，避免单一 Agent 的上下文膨胀拖垮整个系统。这是多 Agent 系统的必备隔离机制 。
 
-5. **在模型 API 层面防御蒸馏**：如果你的产品输出包含高价值推理过程，考虑实现 connector-text 摘要+签名机制，使外部调用无法获取完整推理链。这在 [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) 的安全设计中有类似体现 。
+5. **在模型 API 层面防御蒸馏**：如果你的产品输出包含高价值推理过程，考虑实现 connector-text 摘要+签名机制，使外部调用无法获取完整推理链。这在 Agent Harness Context Management Working Set 的安全设计中有类似体现 。
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-harness-deep-dive-founder-park.md)
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 
 ---
 

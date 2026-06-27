@@ -106,12 +106,12 @@ A model registry (`models.yaml`) maps short aliases like `claude-haiku` to full 
 5. **单次测试结果不足以代表质量——对关键场景使用 `--repeat N` 测量方差**。由于 Nova Sonic 响应具有非确定性，单次运行结果可能存在偶然性。建议对核心场景至少重复 3-5 次，观察 pass rate 稳定性后再判断变更质量。
 
 ## 相关实体
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](https://github.com/QianJinGuo/wiki/blob/main/entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
-- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](https://github.com/QianJinGuo/wiki/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](https://github.com/QianJinGuo/wiki/blob/main/entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for--2.md)
-- [Bedrock Agentcore Coding Agent Hosting](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-agentcore-coding-agent-hosting.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
+- Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session
+- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](../ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov/)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](../ch11-197-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
+- [Bedrock Agentcore Coding Agent Hosting](../ch09-027-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on/)
+- MOC
 
 ---
 

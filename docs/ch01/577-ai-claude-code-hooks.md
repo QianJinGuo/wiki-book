@@ -32,12 +32,12 @@ v2.1.85 引入的 `if` 字段是配置复杂度管理的重要里程碑。以前
 3. **Prompt Hook 成本意识**：每触发一次 Prompt Hook 等于多一次模型调用，应仅限于真正需要主观判断的场景（如数据库迁移危险性评估），而非替代简单的规则判断
 
 ## 相关实体
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-network-claude-code-kiro-cli-implement-aws-ipsec-vpn.md)
-- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-12-rules-karpathy-extension.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-20000-char-source-analysis.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
+- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](../ch09-092-让-kiro-和-claude-code-响应-im-消息-用-acp-bridge-打造异步-ai-编程工作流-亚/)
+- Claude Code vs OpenClaw Agent 记忆系统对比
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09-039-claude-md-12-条规则-karpathy-扩展模板/)
+- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制/)
 
 ---
 
