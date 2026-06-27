@@ -17,7 +17,7 @@
 - [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-hyman-nightly-evolution-alibaba.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw-hyman-nightly-evolution-alibaba.md)
 
 ## 深度分析
 

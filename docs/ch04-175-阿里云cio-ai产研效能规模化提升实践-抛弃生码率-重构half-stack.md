@@ -11,7 +11,7 @@
 - [Hermes Observability Aliyun](/ch04-103-给-hermes-装上显微镜-agent-执行全知道/)
 - [Aliyun Agentrun](/ch04-003-agentrun/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-cio-ai-rd-efficiency.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-cio-ai-rd-efficiency.md)
 
 # 阿里云CIO：AI产研效能规模化提升
 阿里云 CIO 蒋林泉团队一年实战复盘：前端有效代码 3x、后端 2x、缺陷率-30%/-55%，在不增人力前提下实现 。

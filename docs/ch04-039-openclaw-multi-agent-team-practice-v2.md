@@ -281,7 +281,7 @@ subagents: {
 
 ## 相关资源
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
 - [OpenClaw 完全指南](https://mp.weixin.qq.com/s?__biz=Mzk0MDMwMzQyOA==&mid=2247505640&idx=1&sn=5904cfc3460dd7caea09c1eb7796efcf)（同一作者7.3万阅读量教程）
 - [EasyAI AI日报](https://mmh1.top/#/ai-daily/)
 - [clawhub.ai](https://clawhub.ai/) OpenClaw 技能市场

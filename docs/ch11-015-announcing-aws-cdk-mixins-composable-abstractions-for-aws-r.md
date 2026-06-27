@@ -343,7 +343,7 @@ class PipelineStack extends cdk.Stack {
 - Mixin 市场/社区分享平台
 
 ## 关联阅读
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
 - [CDK Mixins 文档](https://github.com/aws/aws-cdk/tree/main/packages/aws-cdk-lib#mixins)
 - [CDK Mixins RFC](https://github.com/aws/aws-cdk-rfcs/pull/824)
 

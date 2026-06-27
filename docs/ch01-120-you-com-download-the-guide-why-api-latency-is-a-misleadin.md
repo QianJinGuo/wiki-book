@@ -21,7 +21,7 @@
 **对 AI 供应商的产品团队：** 如果你在做 AI API 产品，这个指南提醒你：客户需要的不是最便宜的 API，而是最可预测的 API。可预测性（consistent latency、consistent quality）应该成为你的核心卖点，而不是单纯的"最低延迟"。
 ^[（来源：raw）]
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 
 - Published Time: Thu, 14 May 2026 19:22:14 GMT
 Markdown Content:

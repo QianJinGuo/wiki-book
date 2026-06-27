@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/www.infoworld-4171274-anthropic-puts-claude-agents-on-a-meter-across-its-subscri.md`
 
-> -> [Anthropic puts Claude agents on a meter across its subscriptions](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www.infoworld-4171274-anthropic-puts-claude-agents-on-a-meter-across-its-subscri.md)
+> -> [Anthropic puts Claude agents on a meter across its subscriptions](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.infoworld-4171274-anthropic-puts-claude-agents-on-a-meter-across-its-subscri.md)
 
 ## 事件概述
 Anthropic 宣布从 6 月 15 日起，将把程序化 Claude 使用（Agent SDK、GitHub Actions、OpenClaw 等第三方框架）与标准聊天订阅分开计费，引入独立的月度信用额度系统，费率对标 API 定价模式 。Program 用户月费 $20 获得 $20 额度，Max 5x 用户 $100，Max 20x 用户 $200 。此前，程序化工作负载与交互式 Claude 使用共享同一订阅池，使开发者能够以相对可预测的订阅价格运行大规模自动化 。

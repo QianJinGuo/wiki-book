@@ -139,7 +139,7 @@ Lambda MicroVMs 的定价更接近 Fargate 而非 Lambda，这传递了一个重
 - E2B — 应用层 sandbox 方案，Lambda MicroVMs 的替代选择
 - Agent Runtime — agent 运行环境的整体概念
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/theburningmonk-com-2026-06-what-you-need-to-know-about-lambda-microvms.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/theburningmonk-com-2026-06-what-you-need-to-know-about-lambda-microvms.md)
 
 ---
 

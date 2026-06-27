@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/xai-shutdown-grok-still-alive.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xai-shutdown-grok-still-alive.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xai-shutdown-grok-still-alive.md)
 
 ## 摘要
 xAI 解散但 Grok 还活着。2026年5月6日马斯克官宣 xAI 解散并入 SpaceX，更名 SpaceXAI。次日他把 Colossus 1 全部算力租给 Anthropic。第三天他发推反驳 Grok 死亡论，强调 Colossus 2 正在同时训练多款新 Grok。三天内三件事：xAI 公司解散，Colossus 1 的 Hopper 老卡折现，但 Grok 产品线没死。
@@ -24,7 +24,7 @@ xAI 解散但 Grok 还活着。2026年5月6日马斯克官宣 xAI 解散并入 S
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](/ch01-055-快手首个打工人agent来了-工作秒变桌面软件-零代码-不烧token/)
 - [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](/ch01-168-chatgpt-官宣-26-位未来之星-他们是-穿墙少年-街头摊贩-盲童的朋友/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xai-shutdown-grok-still-alive.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xai-shutdown-grok-still-alive.md)
 
 - perceptron mk1 shocks with highly performant video analysis
 

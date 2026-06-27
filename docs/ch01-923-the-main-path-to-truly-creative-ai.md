@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 7.3KB | `entities/the-main-path-to-truly-creative-ai.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-main-path-to-truly-creative-ai.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-main-path-to-truly-creative-ai.md)
 
 ## 摘要
 Title: The Main Path to Truly Creative AI
@@ -16,7 +16,7 @@ May 11, 2026
 [](https://danielmiessler.com/images/the-main-path-to-truly-creative-ai.webp)
 I think the main reason AI is not creative in the way that humans are is because our creativity is powered by intrinsic drives.
 We want to survive, thrive, and reproduce....
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-main-path-to-truly-creative-ai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-main-path-to-truly-creative-ai.md)
 
 ## 深度分析
 **1. 创造力根植于内在驱动力，而非算法优化**

@@ -71,7 +71,7 @@ Tokens are short-lived, with a lifetime that depends on the provider. The SDK re
 
 5. **将 Connect 与 eve 框架结合使用**：如果你在 Vercel 生态内构建 agent，Connect + eve 是最佳组合——eve 处理 agent 编排，Connect 处理外部服务认证，AI Gateway 处理 LLM 路由。这种分层架构比单一平台方案更可维护。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-vercel-connect.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-vercel-connect.md)
 
 ---
 

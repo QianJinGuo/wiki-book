@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/你写的-skill及格了吗.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/你写的-skill及格了吗.md)
-从微信文章 [你写的 Skill，及格了吗？](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/你写的-skill及格了吗.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/你写的-skill及格了吗.md)
+从微信文章 [你写的 Skill，及格了吗？](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/你写的-skill及格了吗.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/kPW5lgHmhn4vUihRcNo7uQ

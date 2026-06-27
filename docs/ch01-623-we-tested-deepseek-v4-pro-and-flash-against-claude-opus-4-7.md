@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/deepseek-v4-pro-vs-claude.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-pro-vs-claude.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-pro-vs-claude.md)
 
 ## 核心要点
 - value=8, confidence=9, product=72
 - Well-structured technical benchmarking
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-pro-vs-claude.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-pro-vs-claude.md)
 
 ## 相关实体
 - We Tested DeepSeek V4 Pro and Flash Against Claude

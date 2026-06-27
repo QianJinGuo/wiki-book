@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 9.9KB | `entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
-从微信文章 [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
+从微信文章 [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/JFvYo9RCn9Xm8ilx1Chd6g

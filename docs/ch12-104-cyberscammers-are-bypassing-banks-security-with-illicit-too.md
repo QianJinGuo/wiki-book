@@ -12,7 +12,7 @@
 - [canvas hackers shinyhunters say their official domain was su](/ch12-035-canvas-hackers-shinyhunters-say-their-official-domain-was-su/)
 - [private fintech has quietly become bigger than public fintec](/ch03-096-private-fintech-has-quietly-become-bigger-than-public-fintec/)
 - [private fintech has quietly become bigger than public fintec](/ch03-096-private-fintech-has-quietly-become-bigger-than-public-fintec/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-04-15.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-04-15.md)
 
 - MOC
 ## 深度分析

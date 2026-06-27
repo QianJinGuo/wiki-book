@@ -19,7 +19,7 @@ Anthropic 的 Alex Albert 最近上了一期播客，聊了聊他们内部是怎
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-255-anthropic-博客-claude-code-大型代码库最佳实践/)
 - [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](/ch01-444-大厂代码库几百万行-claude-code怎么跑起来的-anthropic首次公开全套打法/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-building-next-claude.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-building-next-claude.md)
 
 - MOC
 ## 深度分析

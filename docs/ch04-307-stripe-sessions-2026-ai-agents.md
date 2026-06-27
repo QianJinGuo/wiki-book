@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/stripe-sessions-2026-ai-agents.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stripe-sessions-2026-ai-agents.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stripe-sessions-2026-ai-agents.md)
 
 ## 摘要
 * [Pricing](/pricing) [Dashboard  ](https://dashboard.stripe.com/) [Sign in  ](https://dashboard.stripe.com/login)
 
 ## 原文存档
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stripe-sessions-2026-ai-agents.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stripe-sessions-2026-ai-agents.md)
 
 ## 相关资源
 - [Agent Memory 架构](/ch04-146-agent-memory-架构本质/)

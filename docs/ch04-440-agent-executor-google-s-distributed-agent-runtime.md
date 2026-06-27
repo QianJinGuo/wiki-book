@@ -43,7 +43,7 @@ Agent Executor 的开放性设计——支持 LangChain/LangGraph、ADK、以及
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](/ch04-321-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-executor-googles-distributed-agent-runtime-da1bb4.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-executor-googles-distributed-agent-runtime-da1bb4.md)
 
 ---
 

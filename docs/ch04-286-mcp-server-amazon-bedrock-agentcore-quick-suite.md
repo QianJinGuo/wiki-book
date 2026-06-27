@@ -9,7 +9,7 @@
 
 ## 要点
 - 来源: 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mcp-serveramazon-bedrock-agentcorequick-suite.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mcp-serveramazon-bedrock-agentcorequick-suite.md)
 
 ## 相关实体
 - [AgentCore Runtime部署Apache Doris MCP Server](/ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt/)

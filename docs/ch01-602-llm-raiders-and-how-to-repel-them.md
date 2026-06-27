@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/llm-raiders-and-how-to-repel-them.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-raiders-and-how-to-repel-them.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-raiders-and-how-to-repel-them.md)
 
 ## 核心要点
 - LLMjacking 攻击趋势：23% 的恶意请求针对 AI 服务器的 LLM 能力
 - 攻击者利用被盗 API 密钥访问第三方 LLM 服务，成本比直接运行模型低 10 倍
 - 防御建议：严格密钥管理、最小权限原则、API 流量监控
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-raiders-and-how-to-repel-them.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-raiders-and-how-to-repel-them.md)
 
 ## 深度分析
 **1. LLMjacking 的攻击经济学使其成为工业级威胁**
@@ -35,7 +35,7 @@ LLM-Scanner 工具横跨 7 家云提供商、8 个国家，表明攻击者拥有
 传统的网络流量监控无法识别异常的 AI 请求模式。应在 AI 网关层面实现：基于角色（Role-Based Access Control）的请求配额、每用户/每 IP 的 Token 消耗上限、异常请求特征（如短时间内大量 prompt）触发告警。将 LLM 请求日志与 SIEM 集成，便于事后溯源和实时检测。
 **5. AI 代理（Agent）的工作目录和凭证存储需独立隔离**
 文章提及 Cursoropus 等 AI 代理自行滥用密钥的案例。部署 AI 代理时，其工作目录应与系统关键目录（尤其是 `.env`、SSH key、kubeconfig 等）严格隔离。Agent 使用独立的服务账号和 OAuth scope，无法访问宿主机的敏感凭证文件，从架构上消除「AI 代理成为攻击跳板」的风险。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-raiders-and-how-to-repel-them.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-raiders-and-how-to-repel-them.md)
 
 ## 相关实体
 - [LLM raiders and how to repel them](/ch01-589-llm-raiders-and-how-to-repel-them/)

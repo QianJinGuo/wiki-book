@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/securityaffairs-bwh-hotels-breach.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/securityaffairs-bwh-hotels-breach.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/securityaffairs-bwh-hotels-breach.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/securityaffairs-bwh-hotels-breach.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/securityaffairs-bwh-hotels-breach.md)
 
 ## 深度分析
 **酒店业数据泄露的长期潜伏特征与影响**：
@@ -29,7 +29,7 @@
 - [Why I'm leaving GitHub for Forgejo](/ch01-011-why-i-m-leaving-github-for-forgejo/)
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](/ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/shinyhunters-7-eleven-data-breach.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/shinyhunters-7-eleven-data-breach.md)
 
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](/ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over/)
 

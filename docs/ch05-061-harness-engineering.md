@@ -98,7 +98,7 @@
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](/ch01-170-深入理解-claude-code-源码中的-agent-harness-构建之道/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-future-persistence-vs-erosion.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-future-persistence-vs-erosion.md)
 
 ---
 

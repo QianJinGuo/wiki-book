@@ -58,7 +58,7 @@ Pit Crew 不需要写品牌调性指南，营销人员不需要配置 MCP 服务
 - [Ibm Forward Deployed Units Ai Deployment](/ch11-051-ibm-forward-deployed-units-fdu-ai-部署模型/)
 - from-system-of-record-to-system-of-intelligence.md-intelligence-1
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/here-comes-forward-deployed-everybody.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/here-comes-forward-deployed-everybody.md)
 
 ---
 

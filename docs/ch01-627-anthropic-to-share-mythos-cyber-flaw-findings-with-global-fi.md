@@ -13,7 +13,7 @@
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](/ch01-104-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo/)
 - [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)
 
 ## 深度分析
 **AI 网络能力的"进化而非革命"之争**

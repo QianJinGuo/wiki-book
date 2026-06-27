@@ -79,7 +79,7 @@ A sequence item isn’t just an ID; it’s a structured token combining three co
 *   **Item Embedding (128 d):** A dense SKU vector, initialised from pre-trained embeddings and fine tuned during training.
 *   **Action Embedding:** Differentiates interaction types. An _Add-to-Cart (ATC)_ carries heavier 
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/zepto-real-time-personalisation-dual-sequence-ranker.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/zepto-real-time-personalisation-dual-sequence-ranker.md)
 
 ---
 

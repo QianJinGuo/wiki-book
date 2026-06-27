@@ -6,7 +6,7 @@
 
 # 一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/factory-missions-multi-agent-shipping-for-days-luke.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/factory-missions-multi-agent-shipping-for-days-luke.md)
 
 ## 深度分析
 

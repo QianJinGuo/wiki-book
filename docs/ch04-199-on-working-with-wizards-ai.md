@@ -6,7 +6,7 @@
 
 # On Working with Wizards: AI 从协作到召唤的范式转变
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/on-working-with-wizards.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/on-working-with-wizards.md)
 
 > **Core insight**: Mollick 观察到 AI 使用范式的根本转变——从"co-intelligence"（与 AI 作为共同工作者，引导、纠正、合作）到"wizard"（召唤 AI 执行任务，输出惊艳但过程不透明）。这不仅是工具能力提升，而是人类与 AI 关系性质的改变。
 
@@ -79,7 +79,7 @@ Mollick 提出了三个应对策略。首先，发展新的 literacy：学习何
 
 ## 相关引用
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/on-working-with-wizards.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/on-working-with-wizards.md)
 
 ---
 

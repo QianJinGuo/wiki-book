@@ -133,7 +133,7 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 
 ## 关联阅读
 - 原始文章：https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity
-- [Perplexity Internal Skill Design Guide Xiaojianke](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/perplexity-internal-skill-design-guide-xiaojianke.md) — 原始文章存档
+- [Perplexity Internal Skill Design Guide Xiaojianke](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/perplexity-internal-skill-design-guide-xiaojianke.md) — 原始文章存档
 - `Agent Skill Writing Guide` — 低配版 Skill 写作指南（质量较低，仅供参考）
 - `Agent Skill Writing Evaluation` — Skill 评测相关
 
@@ -155,7 +155,7 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 - [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)
 - Hermes Agent Skill
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 
 - [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice/)
 

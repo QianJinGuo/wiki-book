@@ -13,7 +13,7 @@
 - [Karpathy Vibe Coding Agentic Engineering V4](/ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 - [Fudan Peking Ahe Agentic Harness Engineering](/ch04-220-fudan-peking-ahe-agentic-harness-engineering/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从vibe-coding到agentic-engineering重构后台开发全流程.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从vibe-coding到agentic-engineering重构后台开发全流程.md)
 
 ## 深度分析
 

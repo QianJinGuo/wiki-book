@@ -43,7 +43,7 @@ AI 辅助开发正在从根本上改变代码生产节奏。Stack Overflow 2025 
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
 - [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-is-writing-more-code-your-ci-pipeline.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-is-writing-more-code-your-ci-pipeline.md)
 
 ---
 

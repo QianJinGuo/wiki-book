@@ -101,9 +101,9 @@ ADLC 的独特贡献是**将评估定义为 Agent 开发生命周期的一等公
 
 ## 来源
 
-- → [Part 1: 为什么评估是起点](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-china-enterprise-intelligent-why-evaluation.md)
-- → [Part 2: 从原型验证到生产就绪](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-china-enterprise-intelligent-validation-prototype-to-production.md)
-- → [Part 3: 如何构建企业级智能体](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-china-how-to-build-enterprise-intelligent-agent.md)
+- → [Part 1: 为什么评估是起点](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-china-enterprise-intelligent-why-evaluation.md)
+- → [Part 2: 从原型验证到生产就绪](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-china-enterprise-intelligent-validation-prototype-to-production.md)
+- → [Part 3: 如何构建企业级智能体](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-china-how-to-build-enterprise-intelligent-agent.md)
 
 ---
 

@@ -14,7 +14,7 @@
 - [Thrive Capital Bets 100 Million On Shopifys Ai Future](/ch01-086-thrive-capital-bets-100-million-on-shopify-s-ai-future/)
 - [Microsoft Is Quietly Shopping For An Openai Replac](/ch01-036-microsoft-is-quietly-shopping-for-an-openai-replacement/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
 
 ## 交易概况
 - **收购方**：Akamai Technologies

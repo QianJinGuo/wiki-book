@@ -181,7 +181,7 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 
 4. **团队能力建设**：培养具备 AI 时代所需技能的工程团队
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-the-ettin-reranker-family.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-the-ettin-reranker-family.md)
 
 ---
 

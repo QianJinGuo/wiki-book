@@ -10,7 +10,7 @@
 
 - [figma make, now on your local code: closing the design-to-co](/ch03-063-figma-make-now-on-your-local-code-closing-the-design-to-co/)
 - [huashu-design 2.0 — agent skill 反收敛三套逻辑](/ch04-100-huashu-design-2-0-agent-skill-反收敛三套逻辑/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-boris-cherny-agent-loop-design-patterns.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-boris-cherny-agent-loop-design-patterns.md)
 
 ## 深度分析
 

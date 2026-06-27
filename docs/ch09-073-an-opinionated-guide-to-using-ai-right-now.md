@@ -113,7 +113,7 @@ Mollick 明确指出：如果你的使用场景在图表中显示免费模型就
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/an-opinionated-guide-to-using-ai-right-now.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/an-opinionated-guide-to-using-ai-right-now.md)
 
 ---
 

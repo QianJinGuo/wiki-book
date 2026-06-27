@@ -6,7 +6,7 @@
 
 # A backdoor in a LinkedIn job offer
 
-> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/roman-linkedin-backdoor-supply-chain.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/roman-linkedin-backdoor-supply-chain.md)
 
 ## 核心要点
 
@@ -44,7 +44,7 @@ The repo felt like a React frontend with a Node backend. The trap was in `app/te
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 roman.pt 视角
-- 引用源：[Roman Linkedin Backdoor Supply Chain](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/roman-linkedin-backdoor-supply-chain.md)
+- 引用源：[Roman Linkedin Backdoor Supply Chain](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/roman-linkedin-backdoor-supply-chain.md)
 ## 相关实体
 - [from doer to director: the ai mindset shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
 - [why internally-built ai fails fund accounting audits](/ch01-834-why-internally-built-ai-fails-fund-accounting-audits/)

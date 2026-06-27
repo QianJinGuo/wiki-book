@@ -6,7 +6,7 @@
 
 # 阿里云 MSE AI 任务调度 + Agent Sandbox：动态休眠/唤醒 OpenClaw Agent 成本下降 90%+
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-mse-ai-task-scheduling-agent-sandbox-cost-90-percent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-mse-ai-task-scheduling-agent-sandbox-cost-90-percent.md)
 
 ## 深度分析
 

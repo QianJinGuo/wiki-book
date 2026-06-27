@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/superpowers-deep-dive-kaiyuandakashuo.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/superpowers-deep-dive-kaiyuandakashuo.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/superpowers-deep-dive-kaiyuandakashuo.md)
 
 Superpowers 第二篇深度解读：聚焦 Rule/Gate/Hook 核心哲学、Iron Law、TDD 应用到 prompt engineering、SDLC 范式映射。开元大咖说/原作者。
 

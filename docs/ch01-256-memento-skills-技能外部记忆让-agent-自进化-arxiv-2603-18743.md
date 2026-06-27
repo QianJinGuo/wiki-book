@@ -106,7 +106,7 @@ Biology/Humanities 提升最明显（可抽象程度高）。
 
 > Memento-Skills 展示了"权重冻结下 Agent 持续进化"的工程化路径：不是靠更大的模型，而是靠把每一次执行经验固化成可维护的技能工件。经验从隐式的历史轨迹变成显式的 skill library——这让 Agent 的成长从玄学变成工程。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/memento-skills-let-agents-design-agents.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/memento-skills-let-agents-design-agents.md)
 
 ---
 

@@ -74,7 +74,7 @@ x402 已成为代理商务支付协议的事实标准，新项目在评估付费
 - [Openclaw Amazon Bedrock Eks Printer Qc](/ch11-052-openclaw-amazon-bedrock-amazon-eks-联动实践-打印机包装质检助手实战/)
 - [Netflix Real Time Service Topology](/ch11-009-from-silos-to-service-topology-why-netflix-built-a-real-tim/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcore-payments-x402-agentic-commerce.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentcore-payments-x402-agentic-commerce.md)
 
 ---
 

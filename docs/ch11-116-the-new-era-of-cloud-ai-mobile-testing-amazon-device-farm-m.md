@@ -95,7 +95,7 @@ Amazon Web Services (AWS)
 - [停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南](/ch09-071-停止编码的那天-就是失去架构判断力的开始-一位-30-年架构师的-ai-生存指南/)
 - [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](/ch01-189-ai-时代的-git-版本管理最佳实践/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-agentcore-doris-mcp-server.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-bedrock-agentcore-doris-mcp-server.md)
 
 - [Agent 时代架构师技能指南](/ch04-346-agent-时代-我们架构师应该学什么/)
 

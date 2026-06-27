@@ -10,7 +10,7 @@
 
 - [claude skill 质检工具 skill craft](/ch07-043-skill-craft-claude-skill-质量工程工具/)
 - [karpathy × boris 访谈：software 3.0 时代编程完整地图](/ch01-620-karpathy-boris-访谈-software-3-0-时代编程完整地图/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-team-10-tips-boris-data派THU.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-team-10-tips-boris-data派THU.md)
 
 - MOC
 ## 深度分析

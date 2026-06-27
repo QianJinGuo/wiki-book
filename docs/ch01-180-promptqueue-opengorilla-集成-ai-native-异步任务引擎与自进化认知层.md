@@ -19,7 +19,7 @@
 - [Claude Code Large Codebase Harness Configuration](/ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对/)
 - [Openai Skills Shell Compaction Agent Primitives](/ch05-024-openai-skills-shell-compaction-终结提示词工程的三位一体agent原语/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/promptqueue-opengorilla-project-analysis-ljguo.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/promptqueue-opengorilla-project-analysis-ljguo.md)
 
 ## 一、立项背景（Purpose）
 

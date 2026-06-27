@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/fastapi-apirouter如何正确组织路由.md`
 
-> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fastapi-apirouter如何正确组织路由.md)
-从微信文章 [FastAPI APIRouter：如何正确组织路由](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fastapi-apirouter如何正确组织路由.md) 提取。
+> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi-apirouter如何正确组织路由.md)
+从微信文章 [FastAPI APIRouter：如何正确组织路由](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi-apirouter如何正确组织路由.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/qkMW9of3yj_sk1f3rKBQEg

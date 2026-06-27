@@ -284,7 +284,7 @@ Service Topology 同时服务于人类工程师（UI 探索）和自动化系统
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
 - [Netflix Metadata Service Model Lifecycle Graph](/ch11-034-netflix-metadata-service-and-model-lifecycle-graph/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/netflix-real-time-service-topology.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/netflix-real-time-service-topology.md)
 
 ---
 

@@ -16,7 +16,7 @@ Published Time: 2026-05-19T14:00:52+00:00
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](/ch01-677-anthropic/)
 - [How Amazon Finance Streamlines Regulatory Inquiries By Using](/ch11-010-how-amazon-finance-streamlines-regulatory-inquiries-by-using/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www-a16z-news-need-series-c-call-a16z.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www-a16z-news-need-series-c-call-a16z.md)
 
 ## 深度分析
 

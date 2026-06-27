@@ -17,7 +17,7 @@
 - [Deepseek Moe Parallel Strategy](/ch01-673-deepseek-moe-并行策略与gpu通信优化/)
 - Deepseek V4 Training Methodology
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/chinese-ai-lab-insights-nathan.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/chinese-ai-lab-insights-nathan.md)
 
 - [Linn Fritz Looks At The Lighter Side Of Life](/ch09-100-linn-fritz-looks-at-the-lighter-side-of-life/)
 - [deepseek-v4深度拆解一篇论文同时做了五件大事](/ch01-461-deepseek-v4深度拆解一篇论文同时做了五件大事/)

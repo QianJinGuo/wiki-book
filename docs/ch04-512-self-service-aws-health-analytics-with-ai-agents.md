@@ -35,7 +35,7 @@ The pattern of wrapping AWS Health API as MCP tools is reusable for other AWS se
 
 ## Reference
 
-- Source: [Original Article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-self-service-aws-health-analytics-to-find-actionable-h.md)
+- Source: [Original Article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-self-service-aws-health-analytics-to-find-actionable-h.md)
 
 ---
 

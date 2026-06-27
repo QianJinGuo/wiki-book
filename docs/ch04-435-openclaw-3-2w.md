@@ -6,7 +6,7 @@
 
 ## 关键洞察
 本页面分析了 OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏） 的核心内容。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-comprehensive-guide-32k-chars.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-comprehensive-guide-32k-chars.md)
 
 ## 深度分析
 OpenClaw 的爆火并非偶然，而是精准击中了 AI Agent 落地的三个核心矛盾。

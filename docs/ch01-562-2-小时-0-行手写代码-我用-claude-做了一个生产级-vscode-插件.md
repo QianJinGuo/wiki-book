@@ -18,7 +18,7 @@
 - [Skill Factory Yueheng](/ch05-065-skill-factory-三天手搓面向harness设计的技能工厂/)
 - [Code Review Graph](/ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-vscode-plugin-zero-code.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-vscode-plugin-zero-code.md)
 
 ## 深度分析
 

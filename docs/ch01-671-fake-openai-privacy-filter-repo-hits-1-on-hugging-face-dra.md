@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/thehackernews-fake-openai-privacy-filter.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thehackernews-fake-openai-privacy-filter.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thehackernews-fake-openai-privacy-filter.md)
 
 ## 关键要点
 - 攻击者在 Hugging Face 上发布假冒 OpenAI 隐私过滤器仓库
 - 仓库被下载 244,000 次，实际为恶意软件
 - 攻击者利用 AI 社区对隐私工具的信任
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thehackernews-fake-openai-privacy-filter.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thehackernews-fake-openai-privacy-filter.md)
 
 ## 深度分析
 这起事件是 AI 开源生态系统中供应链攻击的典型案例，具有多个值得深入剖析的维度：
@@ -41,7 +41,7 @@ Hugging Face 的开放上传机制 + Trending 排名算法创造了两个安全�
 - [ml-intern — Hugging Face 自主 ML 工程代理](/ch04-417-ml-intern-huggingface-autonomous-ml-agent/)
 - [Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](/ch12-036-adversaries-leverage-ai-for-vulnerability-exploitation-augm/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 
 - [LLM raiders and how to repel them](/ch01-590-llm-raiders-and-how-to-repel-them/)
 

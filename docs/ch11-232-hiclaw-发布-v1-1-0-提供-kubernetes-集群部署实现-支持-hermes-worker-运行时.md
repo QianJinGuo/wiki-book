@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 11.3KB | `entities/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md`
 
-[Hiclaw 发布 V110提供 Kubernetes 集群部署实现支持 Hermes Worker 运行时](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md)
+[Hiclaw 发布 V110提供 Kubernetes 集群部署实现支持 Hermes Worker 运行时](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md)
 
 在小说阅读器读本章
 去阅读
@@ -59,7 +59,7 @@ HiClaw v1.1.0 是该项目从"单容器玩具"向"企业级 Cloud Native 产品"
 - Ai 驱动的大数据工程 从平台驱动到 Aidlc 的范式迁移
 - [Pi Agent Framework](/ch01-887-pi-agent-极简核心-事件总线扩展框架/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md)
 
 ---
 

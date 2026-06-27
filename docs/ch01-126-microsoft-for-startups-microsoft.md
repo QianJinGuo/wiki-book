@@ -39,7 +39,7 @@ Microsoft for Startups 是微软面向早期初创企业打造的综合性支持
 - [Why Im Leaving Github For Forgejo](/ch01-011-why-i-m-leaving-github-for-forgejo/)
 - [From Doer To Director The Ai Mindset Shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-for-startups-microsoft.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-for-startups-microsoft.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/auto-improving-agent-platform-ashpreetbedi.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/auto-improving-agent-platform-ashpreetbedi-shensi.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/auto-improving-agent-platform-ashpreetbedi-shensi.md)
 
 # Auto-Improving Agent Platform (Ashpreet Bedi)
 **作者**：Ashpreet Bedi（前 Airbnb/Facebook，Agno 创始人）    

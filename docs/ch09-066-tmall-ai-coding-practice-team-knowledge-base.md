@@ -109,7 +109,7 @@ AI 生码
 - [腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](/ch05-053-腾讯-ai-team-知识沉淀体系-harness-engineering-实践/)
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](/ch04-038-openclaw-multi-agent-team-practice-v2/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tmall-ai-coding-practice-team-knowledge-base-npm.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tmall-ai-coding-practice-team-knowledge-base-npm.md)
 
 - [OpenClaw 多智能体团队搭建实战经验](/ch04-038-openclaw-multi-agent-team-practice-v2/)
 

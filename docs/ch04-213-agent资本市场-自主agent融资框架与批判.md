@@ -93,7 +93,7 @@ Wright用1970s MBS→1980s高收益债→2000s Shopify Capital来论证"Agent资
 - Claude Code Openclaw Memory Vector Db Doubt
 - [Codex Goal Six Hour Run](/ch09-052-codex-goal-six-hour-run/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-capital-markets-wright-shensiquan.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-capital-markets-wright-shensiquan.md)
 
 ---
 

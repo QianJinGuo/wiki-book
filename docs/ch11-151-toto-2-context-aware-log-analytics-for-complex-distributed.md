@@ -58,7 +58,7 @@ Toto 2.0包含连续分块掩码（CPM）优化，允许模型在一次并行传
 - [Task Queue Priority And Fairness](/ch11-214-task-queue-priority-and-fairness-your-task-queue-your-way/)
 - [Task Queue Priority And Fairness Your Task Queue Your Way](/ch11-214-task-queue-priority-and-fairness-your-task-queue-your-way/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/toto-2-context-aware-log-analytics-for-complex-distributed-systems.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/toto-2-context-aware-log-analytics-for-complex-distributed-systems.md)
 
 ---
 

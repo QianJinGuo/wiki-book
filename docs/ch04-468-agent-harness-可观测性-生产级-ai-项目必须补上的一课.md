@@ -41,7 +41,7 @@
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
 - [Agent Harness Architecture](/ch04-207-agent-harness-架构/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-observability-production.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-harness-observability-production.md)
 - [perplexity computer empirical study: how ai agents reshape k](/ch04-085-perplexity-computer-empirical-study-how-ai-agents-reshape-k/)
 - MOC
 

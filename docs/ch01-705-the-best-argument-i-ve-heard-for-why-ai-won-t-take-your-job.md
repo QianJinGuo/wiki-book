@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/platformer-ai-job-loss-levie.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/platformer-ai-job-loss-levie.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/platformer-ai-job-loss-levie.md)
 
 ## 核心要点
 - value=7, confidence=8, product=56
@@ -16,7 +16,7 @@
 - [Pixel 10 Zero Click Exploit Chain](/ch12-053-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes/)
 - [Anthropic_Cache_Tokenomics](/ch01-677-anthropic/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/platformer-ai-job-loss-levie.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/platformer-ai-job-loss-levie.md)
 
 ## 深度分析
 **「前 80%」陷阱。** Levie 的核心论点是：AI 能替代的往往是一份工作的前 80%（可文本化、可描述的部分），而真正创造价值的恰恰是剩余那 20%——专业知识、上下文判断、伦理考量、关系建立。这与许多「AI 将取代 X 职业」的头条新闻形成鲜明对比：外行看到 AI 完成了律师写的合同文本，就以为律师要被取代；但那份合同背后关于客户利益、谈判策略、风险敞口的判断，才是最难自动化的部分。

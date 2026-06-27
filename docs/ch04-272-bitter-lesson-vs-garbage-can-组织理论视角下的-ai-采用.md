@@ -90,7 +90,7 @@ Manus 的改进路径需要更多精心手工定制和定制化工作，而 Chat
 - [Three Years Gpt3 Gemini3 Mollick](/ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测/)
 - [Guide Ai Agents Models Apps Harnesses Mollick](/ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-bitter-lesson-versus-the-garbage-can.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-bitter-lesson-versus-the-garbage-can.md)
 
 ---
 

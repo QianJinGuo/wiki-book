@@ -6,7 +6,7 @@
 
 ## 关键洞察
 本页分析了 两万字详解Claude Code源码核心机制 的核心内容。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-20000-char-source-analysis.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-20000-char-source-analysis.md)
 
 ## 深度分析
 Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：不是依赖模型自身的推理能力来管理复杂任务，而是通过多层机制将不确定性转化为可控行为。与 OpenCode、Codex、Gemini-CLI 等竞品相比，Claude Code 在以下维度展现了更成熟的工程思考。

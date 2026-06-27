@@ -110,8 +110,8 @@ AgentRun 基于函数计算计费，核心优势是**按实际调用计费 + 零
 - 多租户隔离是 Workspace 粒度，涉及高敏感数据的 Agent 需确认隔离边界是否满足业务要求
 
 ## 相关实体
-→ [原文存档：5分钟上手](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
-→ [原文存档：2行代码集成](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-agentrun-2line-integration.md)
+→ [原文存档：5分钟上手](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
+→ [原文存档：2行代码集成](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-agentrun-2line-integration.md)
 
 - [GBrain](/ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策/)
 

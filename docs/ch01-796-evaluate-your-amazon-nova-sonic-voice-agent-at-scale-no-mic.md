@@ -6,7 +6,7 @@
 
 # Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-micr.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-micr.md)
 
 ## 深度分析
 

@@ -17,7 +17,7 @@
 - [Trace2Skill Trajectory Distillation Agent Skills](/ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills/)
 - [05 11 The Great Memory Panic Of 2026](/ch01-635-the-great-memory-panic-of-2026/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/personavlm-long-term-personalization.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/personavlm-long-term-personalization.md)
 
 - MOC
 ## 深度分析
@@ -44,7 +44,7 @@
 
 **让模型具备"理解用户"而非仅仅"回答问题"的设计目标。** 个性化的真正价值不在于给用户打标签，而在于建立一个持续演化的用户理解过程。每次交互结束后都应该触发性格演变机制和记忆更新 。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/personavlm-long-term-personalization.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/personavlm-long-term-personalization.md)
 
 ---
 

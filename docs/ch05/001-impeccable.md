@@ -9,7 +9,7 @@
 
 `pbakaus/impeccable` 是当前规模最大的 **AI 前端设计 skill 项目**（截至 2026-06-04：**34,108 ⭐**，Apache-2.0，主语言 JavaScript）。它把"前端设计经验"打包成可安装的 skill，配合 23 个命令、41 条确定性检测规则、CLI、Chrome 扩展和 live 浏览器变体模式。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)
 
 ## 它解决的问题
 AI 编码助手做前端时，代码能跑只是第一步——更麻烦的是页面会"一眼看出 AI 味"：

@@ -20,7 +20,7 @@
 2. **价值衡量变化** — 一个完成复杂研究的代理比一个简单问答更有价值
 3. **商业模式创新** — 为企业客户提供更可预测的成本结构
 市场影响：可能为 AI 代理服务商业化设立新标准
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-claude-agents-meter-infoworld.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-claude-agents-meter-infoworld.md)
 
 ## 相关实体
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)

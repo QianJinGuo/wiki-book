@@ -59,7 +59,7 @@ AWS Interconnect 扩展至 Oracle Cloud（预览），加上已有的 Google Clo
 - [Aws Aidl Paradigm Shift Platform Driven Data Engineering](/ch11-155-aws-aidl-范式迁移-platform-driven-data-engineering/)
 - [Aws Reinvent Game Demo 2024 25](/ch11-207-aws-reinvent-game-demo-2024-25/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-一周综述aws-transform-上线一周年aws-云端-claude-platformec2-m3-ultr.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-一周综述aws-transform-上线一周年aws-云端-claude-platformec2-m3-ultr.md)
 
 ---
 

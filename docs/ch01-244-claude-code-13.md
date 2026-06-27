@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.4KB | `entities/claude-code-source-deep-dive-warrior.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-source-deep-dive-warrior.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-source-deep-dive-warrior.md)
 
 # Claude Code 源码深度解析（13 核心机制）
 > 22,873 字源码深度拆解，每节均与 Codex/OpenCode/Gemini-CLI 横向对比
@@ -39,7 +39,7 @@
 - [Prompt Caching 工程实践](/ch09-022-prompt-caching-工程实践-anthropic-claude-code-经验总结/) — 与 microCompact 相关
 - [Agent Harness 12 组件](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/) — Harness 通用框架
 - Claude Code Subagent 上下文卫生 — Sub-Agent 设计
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-source-deep-dive-warrior.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-source-deep-dive-warrior.md)
 
 ## 深度分析
 ### System Prompt 动态组装的工程价值

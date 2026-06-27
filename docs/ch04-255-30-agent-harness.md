@@ -17,7 +17,7 @@
 - [Agentscope Java Harness Framework Enterprise Distributed](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
 - Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
 
 - [yoonho lee: text optimization as a legitimate learning mecha](/ch01-334-yoonho-lee-text-optimization-as-a-legitimate-learning-mecha/)
 

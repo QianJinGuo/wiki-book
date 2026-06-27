@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 26.7KB | `entities/skill-formal-theory-survey-10papers.md`
 
-[Skill Formal Theory Survey 10Papers](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-formal-theory-survey-10papers.md)
+[Skill Formal Theory Survey 10Papers](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-formal-theory-survey-10papers.md)
 
 # 10篇论文看懂AI Agent Skill：表示、执行、评估与进化
 
@@ -259,7 +259,7 @@ PrefixSpan/CloSpan只能挖掘**行为模式**，无法挖掘**语义意图**。
 - [Agent Skill Writing Guide](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](/ch02-prompt/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-formal-theory-survey-10papers.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-formal-theory-survey-10papers.md)
 
 ---
 

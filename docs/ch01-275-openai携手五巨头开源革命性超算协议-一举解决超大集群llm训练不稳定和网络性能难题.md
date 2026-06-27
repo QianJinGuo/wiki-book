@@ -6,7 +6,7 @@
 
 ## 背景：为什么需要MRC
 
-在[Stargate](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md)（星际之门）之前，OpenAI已与合作伙伴历时数年，共同开发、部署并维护了三代超级计算机。这段经历让OpenAI深刻认识到，要在Stargate这样的规模下高效使用算力，必须重新思考并大幅降低整个技术栈每一层的复杂度，网络设计也不例外。
+在[Stargate](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md)（星际之门）之前，OpenAI已与合作伙伴历时数年，共同开发、部署并维护了三代超级计算机。这段经历让OpenAI深刻认识到，要在Stargate这样的规模下高效使用算力，必须重新思考并大幅降低整个技术栈每一层的复杂度，网络设计也不例外。
 
 训练大模型时，每一步都可能涉及数百万次数据传输。只要有一次传输延迟，影响就会在整个训练任务中扩散，让GPU白白等待。网络拥塞、链路故障、设备故障，是造成这类延迟的最常见原因。
 
@@ -16,7 +16,7 @@
 
 MRC（Multipath Reliable Connection，多路径可靠连接）的目标，不只是快，还要做到性能可预期，即便面对故障也如此。
 
-OpenAI的Scaling团队与[AMD、Broadcom、英特尔、微软、英伟达](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md)合作，历时两年开发出了这个协议。MRC内置于最新的800Gb/s网络接口，可以把单次传输分散到数百条路径上，在微秒级别绕过故障，同时运行更简单的网络控制平面。
+OpenAI的Scaling团队与[AMD、Broadcom、英特尔、微软、英伟达](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md)合作，历时两年开发出了这个协议。MRC内置于最新的800Gb/s网络接口，可以把单次传输分散到数百条路径上，在微秒级别绕过故障，同时运行更简单的网络控制平面。
 
 MRC基于RoCE（RDMA over Converged Ethernet）扩展而来，RoCE是IBTA标准，支持GPU和CPU之间的硬件加速远程直接内存访问。MRC在此基础上借鉴了超以太网联盟（UEC, Ultra Ethernet Consortium）的技术，并进一步引入基于SRv6（IPv6 Segment Routing）的源路由，以支持大规模AI网络架构。
 
@@ -78,7 +78,7 @@ MRC带来三个关键优势：
 
 ---
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md)
 
 ## 深度分析
 

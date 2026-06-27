@@ -6,7 +6,7 @@
 
 # Better decisions at scale: How mathematical optimization delivers where intuition fails
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/better-decisions-at-scale-how-mathematical-optimization-deli.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/better-decisions-at-scale-how-mathematical-optimization-deli.md)
 
 ## 深度分析
 

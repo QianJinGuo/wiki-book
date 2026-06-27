@@ -18,7 +18,7 @@
 - [Gpt 5 Is Here And Openai Has Some Tips](/ch01-489-gpt-5-is-here-and-openai-has-some-tips/)
 - [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](/ch01-603-anthropic最危险路线图曝光-无限记忆-多智能体-硅谷ai终局仅剩双雄决顶/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-gpt-realtime-voice-models-qbitai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-gpt-realtime-voice-models-qbitai.md)
 
 - [gemini app rolling out](/ch01-670-gemini-app-rolling-out-extended-thinking-level-new-3rd-pa/)
 - [gpt -image 2神级提示词分享](/ch01-680-gpt-image-2神级提示词分享/)

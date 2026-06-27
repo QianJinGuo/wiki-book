@@ -42,7 +42,7 @@ Anthropic Skills 的渐进式加载策略在此场景中展现了独特的优势
 文中提供的开源 Skill（https://github.com/ConardLi/rag-skill/）可作为起点，根据自身知识库结构进行微调，而非从零构建 。
 
 ## 相关资源
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/使用-agent-skills-做知识库检索能比传统-rag-效果更好吗.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/使用-agent-skills-做知识库检索能比传统-rag-效果更好吗.md)
 - rag-skill 开源实现：https://github.com/ConardLi/rag-skill/
 
 ## 相关实体

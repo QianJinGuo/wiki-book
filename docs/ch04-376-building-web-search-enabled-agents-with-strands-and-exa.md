@@ -4,10 +4,10 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/building-web-search-enabled-agents-with-strands-and-exa.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-web-search-enabled-agents-with-strands-and-exa.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-web-search-enabled-agents-with-strands-and-exa.md)
 
 ## Summary
-See [source article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-web-search-enabled-agents-with-strands-and-exa.md) for full content.
+See [source article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-web-search-enabled-agents-with-strands-and-exa.md) for full content.
 
 ## 相关实体
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](/ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的/)

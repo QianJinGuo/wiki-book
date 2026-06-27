@@ -16,7 +16,7 @@
 - [Aws Bedrock Agentcore Identity Security](/ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构/)
 - [Github Investigating Teampcp Claimed 17Cc77](/ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tsinghua-agent-security-fangcun.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tsinghua-agent-security-fangcun.md)
 
 ## 深度分析
 

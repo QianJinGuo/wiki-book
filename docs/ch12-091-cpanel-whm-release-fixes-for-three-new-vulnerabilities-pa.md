@@ -17,7 +17,7 @@ Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](http
 - [Airbyte Agents](/ch04-256-airbyte-agents-a-new-era-for-airbyte/)
 - [5 Years And 5M Later Inventing A New](/ch03-071-5-years-and-5m-later-inventing-a-new-programming-language/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)
 
 ## 深度分析
 

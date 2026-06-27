@@ -56,7 +56,7 @@ Curious to dig more into Claude / ChatGPT tech stacks? Check out the tools they 
 
 You can navigate to SDKs to view even more detailed breakdowns of specific parts as well as unmapped SDK paths.
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/25-the-unbearable-cheapness-of-open-weight-models.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/25-the-unbearable-cheapness-of-open-weight-models.md)
 
 ---
 

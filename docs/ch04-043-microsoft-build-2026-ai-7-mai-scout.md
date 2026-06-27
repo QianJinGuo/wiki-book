@@ -12,8 +12,8 @@
 ## 相关实体
 - [Microsoft Build 2026 Qbitai Full Scope](/ch01-717-microsoft-build-2026-全景-7-款-mai-模型-scout-openclaw-登-wind/)
 
-→ [原文存档（AI 前线版）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-build-2026-mai-models-scout-agent.md)
-→ [原文存档（量子位全景版）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-build-2026-qbitai-full-scope.md)
+→ [原文存档（AI 前线版）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-build-2026-mai-models-scout-agent.md)
+→ [原文存档（量子位全景版）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-build-2026-qbitai-full-scope.md)
 → [Microsoft Build 2026 MAI Keynote](https://microsoft.ai/news/microsoft-build-2026-mai-keynote-transcript/) · [Semafor 报道](https://www.semafor.com/article/06/02/2026/microsofts-ai-chief-on-the-greatest-game-of-catchup-ever-played)
 
 ## 一句话定位
@@ -300,8 +300,8 @@
 
 5. **"全栈 AI"是模型公司的终局形态参考**：无论你是模型公司还是使用模型的组织，"微软模式"（模型 + Foundry/Harness + 平台 + 智能体四层一体化）是目前最完整的企业级参考架构。对模型公司而言，这意味**单纯的模型性能领先已不够，分发平台和 Agent 生态成为新护城河**。
 
-→ [原文存档（AI 前线版）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-build-2026-mai-models-scout-agent.md)
-→ [原文存档（量子位全景版）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-build-2026-qbitai-full-scope.md)
+→ [原文存档（AI 前线版）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-build-2026-mai-models-scout-agent.md)
+→ [原文存档（量子位全景版）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-build-2026-qbitai-full-scope.md)
 
 ---
 

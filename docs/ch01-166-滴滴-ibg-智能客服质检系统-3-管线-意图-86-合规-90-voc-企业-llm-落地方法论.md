@@ -24,7 +24,7 @@
 - [Be More Expressive To Close More Sales](/ch01-064-be-more-expressive-to-close-more-sales/)
 - Datacomp For Language Models
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)
 
 - MOC
 ## 4 大业务挑战

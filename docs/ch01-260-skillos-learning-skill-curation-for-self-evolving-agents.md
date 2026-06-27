@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 14.0KB | `entities/skillos-learning-skill-curation-for-self-evolving-agents.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillos-learning-skill-curation-for-self-evolving-agents.md)
-来自 newsletter 文章 [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillos-learning-skill-curation-for-self-evolving-agents.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillos-learning-skill-curation-for-self-evolving-agents.md)
+来自 newsletter 文章 [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillos-learning-skill-curation-for-self-evolving-agents.md) 提取。
 
 ## 核心内容
 SkillOS 来自 Google Cloud AI Research 与 UIUC 的联合研究，提出了一个**经验驱动的强化学习训练方案**，用于让 self-evolving agents 学习技能策展（skill curation）能力。核心设计：将 agent executor（负责执行）冻结，仅训练 skill curator（负责更新 SkillRepo），形成 executor 与 curator 的模块化分离。训练时，将相关任务打包成组，早期任务更新 SkillRepo，后期任务评估更新质量，用 GRPO 算法优化 curator。实验覆盖 ALFWorld、WebShop 和数学推理任务，RL 训练的 8B curator 超越直接使用 Gemini-2.5-Pro 作为 curator 的版本

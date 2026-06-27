@@ -48,7 +48,7 @@ Mitiga 将云、 SaaS 、身份和 AI 遥测数据统一到单一取证系统的
 - [Netflix Metadata Service Model Lifecycle Graph](/ch11-034-netflix-metadata-service-and-model-lifecycle-graph/)
 - MOC
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-detection-and-response-aidr-a-zero-impact-operating-model.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-detection-and-response-aidr-a-zero-impact-operating-model.md)
 
 ---
 

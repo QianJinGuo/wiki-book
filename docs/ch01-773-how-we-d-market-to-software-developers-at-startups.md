@@ -10,7 +10,7 @@
 
 - [llmshare: using shared chatbot pages to distribute malware](/ch01-807-llmshare-using-shared-chatbot-pages-to-distribute-malware/)
 - [the code-as-content era](/ch01-397-the-code-as-content-era/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-wed-market-to-software-developers-at-startups-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-wed-market-to-software-developers-at-startups-20260606.md)
 
 - MOC
 ## 深度分析

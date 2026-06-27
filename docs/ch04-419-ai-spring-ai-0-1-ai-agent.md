@@ -18,7 +18,7 @@ Linux说过一句很经典的话：Talk is cheap, show me the code.
 - [Harness Engineering 第三代工程范式](/ch01-602-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
 - [Agentic Ai System Architecture Harness Skill Mcp](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/spring-ai-aiagentdemo.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spring-ai-aiagentdemo.md)
 
 ## 深度分析
 

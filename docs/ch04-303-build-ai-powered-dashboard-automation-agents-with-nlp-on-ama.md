@@ -17,7 +17,7 @@
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](/ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo/)
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](/ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md)
 
 ## 深度分析
 
@@ -128,7 +128,7 @@ AgentCore 的托管运行时按调用计费，需评估业务量级是否匹配�
 
 ---
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md)
 
 ---
 

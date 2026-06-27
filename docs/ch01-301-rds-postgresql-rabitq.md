@@ -64,7 +64,7 @@ RaBitQ 的理论基础来自论文《RaBitQ: Quantizing High-Dimensional Vectors
 **5. SQL 接口降低了向量量化的使用门槛。** 阿里云提供了与 pgvector 社区版完全兼容的 SQL 语法，仅需在创建索引时指定 `USING ivfflat (embedding rabitq_vector_cosine_ops)` 或 `USING hnsw (embedding rabitq_vector_cosine_ops)`，无需额外的学习成本和运维改造。这意味着现有的 pgvector 应用可以以极低的迁移成本获得量化加速能力。
 
 ## 相关资源
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/在-rds-postgresql-中实现-rabitq-量化.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/在-rds-postgresql-中实现-rabitq-量化.md)
 
 ## 相关实体
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](/ch01-302-llm-as-a-verifier-a-general-purpose-verification-framework/)

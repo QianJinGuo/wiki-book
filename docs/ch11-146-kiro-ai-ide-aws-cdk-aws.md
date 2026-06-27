@@ -81,7 +81,7 @@ FrontendStack（前端应用，经常更新）
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
 - [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](/ch11-169-使用-kiro-规范驱动开发加速数据质量建设-亚马逊aws官方博客/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/autoresearch-software-development.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/autoresearch-software-development.md)
 
 - [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](/ch11-110-ai-驱动的-graviton-迁移评估-kiro-power-实战指南-亚马逊aws官方博客/)
 

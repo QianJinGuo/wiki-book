@@ -15,7 +15,7 @@ Seismic data analysis is an essential component of energy exploration, but confi
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-halliburton-seismic-workflow-genai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-bedrock-halliburton-seismic-workflow-genai.md)
 
 - MOC
 ## 深度分析

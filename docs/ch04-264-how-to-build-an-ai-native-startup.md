@@ -109,7 +109,7 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
 - [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-startup-cyberfund-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-native-startup-cyberfund-2026.md)
 
 ---
 

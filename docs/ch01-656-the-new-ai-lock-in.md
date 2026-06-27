@@ -13,7 +13,7 @@
 - [Anthropic Nla Natural Language Autoencoders Interpretability](/ch01-279-claude思考黑箱终结了-anthropic-祭出ai读心术-揭秘claude的隐藏想法/)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-new-ai-lock-in.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-new-ai-lock-in.md)
 
 ## 深度分析
 **锁定的本质从未消失，只是上移了层级**

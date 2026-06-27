@@ -108,7 +108,7 @@
 
 - [AI Infra 入门：vLLM 推理管线](/ch01-865-ai-infra-入门干货总结-大模型是如何高效推理的/) — 同作者同系列第一篇
 - 模型推理对比
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-infra-math-foundations-rmsnorm-softmax-causal-mask-sampling-binnnliu-2026-06-17.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-infra-math-foundations-rmsnorm-softmax-causal-mask-sampling-binnnliu-2026-06-17.md)
 
 ## 相关实体
 

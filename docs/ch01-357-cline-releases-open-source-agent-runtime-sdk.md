@@ -6,7 +6,7 @@
 
 # Cline releases open-source agent runtime SDK
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cline-agent-runtime-sdk.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cline-agent-runtime-sdk.md)
 
 ## 摘要
 

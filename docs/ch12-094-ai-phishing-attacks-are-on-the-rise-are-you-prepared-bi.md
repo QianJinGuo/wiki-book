@@ -18,7 +18,7 @@
 - [Bluekit](/ch12-075-meet-bluekit-the-ai-powered-all-in-one-phishing-kit/)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](/ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 
 - [Interpol Operation Ramz Mena Cybercrime](/ch12-039-interpol-operation-ramz-mena-cybercrime-networks/)
 - MOC

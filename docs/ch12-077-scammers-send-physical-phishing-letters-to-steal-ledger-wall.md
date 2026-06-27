@@ -18,7 +18,7 @@
 - [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](/ch12-084-funnel-builder-flaw-under-active-exploitation-enables-woocom/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md)
 
 - MOC
 ## 深度分析

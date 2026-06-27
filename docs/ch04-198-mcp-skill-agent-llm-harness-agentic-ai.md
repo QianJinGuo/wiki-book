@@ -19,7 +19,7 @@ External → MCP → Skill → Agent → Memory → LLM
 - [From Agent Protocol To Harness Skill](/ch04-351-from-agent-protocol-to-harness-skill/)
 - [Ai Skill Skill Creator 源码拆解](/ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-ai-system-architecture-harness-skill-mcp.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-ai-system-architecture-harness-skill-mcp.md)
 
 - MOC
 ## 核心架构（三层结构）

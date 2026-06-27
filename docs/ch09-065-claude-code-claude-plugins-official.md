@@ -123,7 +123,7 @@ Anthropic 采用「官方维护 30+ 内部插件 + 社区贡献 10+ 外部插件
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-255-anthropic-博客-claude-code-大型代码库最佳实践/)
 - [Claude Code 7 Layer Memory Architecture](/ch01-857-claude-code-7-layer-memory-architecture/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-official-plugins-anthropic.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-official-plugins-anthropic.md)
 - [prosemirror @文档 mention：知识库 agent 输入框的工程化实现](/ch04-225-prosemirror-文档-mention-知识库-agent-输入框的工程化实现/)
 - MOC
 

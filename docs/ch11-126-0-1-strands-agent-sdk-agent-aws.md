@@ -48,7 +48,7 @@ Lenovo在技术选型时提出了三个核心需求：**上手快、复杂度低
 - [Cline releases open-source agent runtime SDK](/ch01-299-cline-releases-open-source-agent-runtime-sdk/)
 - [CLI、MCP、API 选型：Agent 接入层决策指南](/ch07-053-cli系列④-选型cli-mcp还是api/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5-ways-to-curb-ai-sprawl-without-stifling-innovation.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5-ways-to-curb-ai-sprawl-without-stifling-innovation.md)
 
 - [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](/ch11-111-快时尚电商行业智能体设计思路与应用实践-五-借助-agentcore-runtime-与-bedrock-模型平台-轻松/)
 

@@ -8,7 +8,7 @@
 
 Netflix 开源 VMAF v1——视频质量度量的行业标准全面升级。核心改进：CSF 调制统一多设备模型、CAMBI 带状伪影检测、chroma 特征、NEG 默认启用、运动特征修正。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vmaf-v1-good-is-not-good-enough.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vmaf-v1-good-is-not-good-enough.md)
 
 ## VMAF v0 → v1 关键改进
 
