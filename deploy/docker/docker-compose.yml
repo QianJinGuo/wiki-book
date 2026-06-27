@@ -1,0 +1,7 @@
+services:
+  wiki-book:
+    build: .
+    container_name: wiki-book
+    ports:
+      - "8002:8080"
+    restart: unless-stopped
