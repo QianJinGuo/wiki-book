@@ -11,11 +11,11 @@
 在 Agent 生态里，Skill 正在变成一个很现实的新攻击面。一个 Skill 往往既包含 SKILL.md 里的自然语言说明，也可能带着脚本、依赖和权限声明。它看起来像一个"小插件"，但实际拿到的是 Agent 的执行能力、环境变量访问能力、文件系统访问能力，甚至网络请求能力。
 
 ## 相关实体
-- [Skillclaw Collective Intelligence](../ch04-423-高德-skillclaw-让-agent-skill-学会进化-跨会话-跨agent-跨设备-跨用户/)
-- [Hermes Skill System Winty](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
-- [Ai Skill Skill Creator 源码拆解](../ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南/)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
-- [Agent Skill Writing Guide](../ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)
+- [Skillclaw Collective Intelligence](/ch04-423-高德-skillclaw-让-agent-skill-学会进化-跨会话-跨agent-跨设备-跨用户//)
+- [Hermes Skill System Winty](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力//)
+- [Ai Skill Skill Creator 源码拆解](/ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南//)
+- [Agentic Ai System Architecture Harness Skill Mcp](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真//)
+- [Agent Skill Writing Guide](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillsieve-agent-skill-security.md)
 

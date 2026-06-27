@@ -12,11 +12,11 @@
 Mohamed bin Zayed AI University VILA-Lab 发表的论文（arxiv: 2604.14228）系统性分析了 Claude Code v2.1.88 版本 51.2 万行 TypeScript 源码：
 
 ## 相关实体
-- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01-207-claude-md)
-- [Claude Code Self Repair Hooks Memory Config](../ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码)
-- [Code Review Graph](../ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token)
-- [Claude Code Hackathon Winners 2026](../ch01-772-claude-code-hackathon-winners-2026)
-- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding)
+- [Andrej Karpathy Claude Md 134K Stars 2026](/ch01-207-claude-md/)
+- [Claude Code Self Repair Hooks Memory Config](/ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
+- [Code Review Graph](/ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token/)
+- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
+- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-engineering-truth-1.6-98.4.md)
 

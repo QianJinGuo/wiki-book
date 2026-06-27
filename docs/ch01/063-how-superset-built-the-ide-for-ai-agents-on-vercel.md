@@ -59,12 +59,12 @@ Hacker News "Show HN" 发布期间，用户数一夜间翻了三倍，Superset �
 
 ## 相关概念
 ## 相关实体
-- [Why Internally-Built AI Fails Fund Accounting Audits](../ch01-107-why-internally-built-ai-fails-fund-accounting-audits/)
-- [Why Internally-Built AI Fails Fund Accounting Audits](../ch01-834-why-internally-built-ai-fails-fund-accounting-audits/)
-- [Why Internally-Built AI Fails Fund Accounting Audits](../ch01-107-why-internally-built-ai-fails-fund-accounting-audits/)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
-- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](../ch09-023-使用-kiro-ai-ide-开发-基于amazon-emr-的flink-智能监控系统实践-亚马逊aws官方博客/)
-- [How to Detect AI Agents on Your Website | Full Guide](../ch04-011-how-to-detect-ai-agents-on-your-website-full-guide/)
+- [Why Internally-Built AI Fails Fund Accounting Audits](/ch01-107-why-internally-built-ai-fails-fund-accounting-audits//)
+- [Why Internally-Built AI Fails Fund Accounting Audits](/ch01-834-why-internally-built-ai-fails-fund-accounting-audits//)
+- [Why Internally-Built AI Fails Fund Accounting Audits](/ch01-107-why-internally-built-ai-fails-fund-accounting-audits//)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri//)
+- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](/ch09-023-使用-kiro-ai-ide-开发-基于amazon-emr-的flink-智能监控系统实践-亚马逊aws官方博客//)
+- [How to Detect AI Agents on Your Website | Full Guide](/ch04-011-how-to-detect-ai-agents-on-your-website-full-guide//)
 
 ---
 

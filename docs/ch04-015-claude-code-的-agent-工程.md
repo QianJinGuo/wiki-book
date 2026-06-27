@@ -36,11 +36,11 @@ Claude Code 的 Hook 系统用 AI 来审查 AI ^。Prompt Hook 调用 Claude Son
 用 AI 审查 AI 时，区分单步判断（Prompt Hook）和多步验证（Agent Hook）的适用场景 ^。单步风险判断用小模型（如 Sonnet）快速判断；复杂流程验证（如安全检查、权限审查）用更小的专注模型跑完整 Agent 流程 ^。Hook 适合语义理解类约束，但安全底线、权限控制、审计记录应下沉到确定性更强的机制 ^。
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
-- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据)
-- [Claude Code Source Architecture](../ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-677-anthropic)
-- [Claude Code Tool Design Evolution Anthropic](../ch01-677-anthropic)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Claude Code Agent Teams Task Decomposition Ruofei](/ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据/)
+- [Claude Code Source Architecture](/ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层/)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-677-anthropic/)
+- [Claude Code Tool Design Evolution Anthropic](/ch01-677-anthropic/)
 - MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-agent-engineering.md)

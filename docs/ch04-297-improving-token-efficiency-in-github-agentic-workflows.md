@@ -58,7 +58,7 @@ Auto-Triage Issues工作流每天平均触发6.8次（最高15次），每次节
 Daily Syntax Error Quality工作流的案例说明：一个bash allowlist配置错误（仅允许相对路径glob模式，但工作流复制测试文件到/tmp/后调用`gh aw compile *`）导致Agent无法使用所需工具，陷入64 Turn的回退循环，手动阅读源码重建编译器输出。单行配置错误可造成极大Token浪费。建议在Agentic Workflow配置中加入：Tool调用失败计数阈值、超时中断机制、以及沙箱权限的严格验证，防止配置错误演变为失控的Token消耗。
 
 ## Related Topics
-- [Agent Workflows](../ch04-306-agent-workflows)
+- [Agent Workflows](/ch04-306-agent-workflows/)
 
 ## References
 - Source: [Improving token efficiency in GitHub Agentic Workflows](https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/)

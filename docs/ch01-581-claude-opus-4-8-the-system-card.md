@@ -82,11 +82,11 @@ They go over the evals and keep saying ‘Mythos is better.’ Again, reasonably
 I don’t love that they used this as a reason to skip a bunch
 
 ## 相关实体
-- [Claude Opus 47](../ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus)
-- [Claude 4 5 Sonnet Opus Release Notes](../ch01-227-claude-4-5-sonnet-opus-release-notes)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践)
-- [Tokenomics The 625 Minute Rule For Claudes Cache](../ch01-385-tokenomics-the-62-5-minute-rule-for-claude-s-cache)
-- [Anthropic Long Running Agent Adversarial Architecture](../ch01-677-anthropic)
+- [Claude Opus 47](/ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus/)
+- [Claude 4 5 Sonnet Opus Release Notes](/ch01-227-claude-4-5-sonnet-opus-release-notes/)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
+- [Tokenomics The 625 Minute Rule For Claudes Cache](/ch01-385-tokenomics-the-62-5-minute-rule-for-claude-s-cache/)
+- [Anthropic Long Running Agent Adversarial Architecture](/ch01-677-anthropic/)
 - MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-opus-4-8-system-card-zvi.md)

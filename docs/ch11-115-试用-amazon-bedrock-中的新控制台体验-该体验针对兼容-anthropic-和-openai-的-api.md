@@ -106,8 +106,8 @@ curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
 
 ### 相关实体
 
-- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](../ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和) — Bedrock runtime 体系深度解析，与 bedrock-mantle 兼容端点互补
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed) — Bedrock 上 agent 的 production 化路径，包含 Guardrails / 知识库等安全机制
+- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](/ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和/) — Bedrock runtime 体系深度解析，与 bedrock-mantle 兼容端点互补
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/) — Bedrock 上 agent 的 production 化路径，包含 Guardrails / 知识库等安全机制
 
 ## 实践启示
 

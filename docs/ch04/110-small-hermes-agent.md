@@ -146,11 +146,11 @@ Small Hermes的核心贡献在于**同时给出七个解法，且七个解法相
 
 | 篇 | 关系 | 说明 |
 |----|------|------|
-| [hermes-agent-self-evolving-source-analysis](../ch04-039-hermes-agent-self-evolving-source-analysis/) | 同系列 | Hermes官方Agent的self-improve机制源码解析，与small Hermes互相印证 |
-| [hermes-self-evolution-closed-loop-skill-reuse-winty](../ch07-017-hermes自进化完整闭环-skill创建复用修补链路/) | 补充 | 6阶段完整闭环的具体实现（npm发包案例） |
+| [hermes-agent-self-evolving-source-analysis](/ch04-039-hermes-agent-self-evolving-source-analysis//) | 同系列 | Hermes官方Agent的self-improve机制源码解析，与small Hermes互相印证 |
+| [hermes-self-evolution-closed-loop-skill-reuse-winty](/ch07-017-hermes自进化完整闭环-skill创建复用修补链路//) | 补充 | 6阶段完整闭环的具体实现（npm发包案例） |
 | hermes-agent-deep-dive | 扩展 | 阿里云飞樰的深度解析，包含RL训练闭环和Harness Engineering |
-| [acker-agent-evolution-three-routes-convergence](../ch04-112-agent演化-三条路线汇聚框架/) | 框架 | 三路线汇聚框架：small Hermes对应"学习层（进化）" |
-| [openclaw-hermes-source-code-agent-architecture-review](../ch01-202-openclaw与hermes源码架构对比/) | 对比 | OpenClaw与Hermes架构对比，Channel契约和Gateway设计 |
+| [acker-agent-evolution-three-routes-convergence](/ch04-112-agent演化-三条路线汇聚框架//) | 框架 | 三路线汇聚框架：small Hermes对应"学习层（进化）" |
+| [openclaw-hermes-source-code-agent-architecture-review](/ch01-202-openclaw与hermes源码架构对比//) | 对比 | OpenClaw与Hermes架构对比，Channel契约和Gateway设计 |
 
 ## 实践启示
 

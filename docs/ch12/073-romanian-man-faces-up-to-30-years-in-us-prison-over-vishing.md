@@ -85,11 +85,11 @@ Sandu 在犯罪链条中担任 money mule——负责将数字盗窃转化为物
 
 ## 相关实体
 
-- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
-- [Funnel Builder Flaw Woocommerce Checkout Skimm](../ch12-084-funnel-builder-flaw-under-active-exploitation-enables-woocom/)
-- [Ath Agent Trust Handshake Protocol](../ch04-500-为了让agent更安全的工作-有多少人操碎了心/)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att/)
+- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack//)
+- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us//)
+- [Funnel Builder Flaw Woocommerce Checkout Skimm](/ch12-084-funnel-builder-flaw-under-active-exploitation-enables-woocom//)
+- [Ath Agent Trust Handshake Protocol](/ch04-500-为了让agent更安全的工作-有多少人操碎了心//)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](/ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/romanian-man-30-years-us-prison-vishing.md)
 

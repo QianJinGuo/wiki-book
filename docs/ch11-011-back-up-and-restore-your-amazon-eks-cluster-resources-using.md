@@ -408,14 +408,14 @@ For reference, see the following resources:
 
 ## 关联阅读
 ## 相关实体
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](../ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using)
-- [Eks Gpu Operator Custom Driver Cuda Workload](../ch11-030-在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](../ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick)
-- [Introducing Claude Platform On Aws](../ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch11-050-基于-amazon-eks-和-graviton-构建多租户-ai-agent-平台-openclaw-on-kuber)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](/ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
+- [Eks Gpu Operator Custom Driver Cuda Workload](/ch11-030-在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载/)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](/ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
+- [Introducing Claude Platform On Aws](/ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](/ch11-050-基于-amazon-eks-和-graviton-构建多租户-ai-agent-平台-openclaw-on-kuber/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
-- [规划 amazon eks 从 1.32 升级到 1.35：关键变更识别与逐版本实施路径](../ch11-107-规划-amazon-eks-从-1-32-升级到-1-35-关键变更识别与逐版本实施路径)
+- [规划 amazon eks 从 1.32 升级到 1.35：关键变更识别与逐版本实施路径](/ch11-107-规划-amazon-eks-从-1-32-升级到-1-35-关键变更识别与逐版本实施路径/)
 
 ---
 

@@ -114,11 +114,11 @@ AI加速了一切，包括焦虑本身。「不用这个工具就会被淘汰」
 实操方法：在团队内部推动关于「AI提升的效率如何分配」的透明讨论。不是抱怨，不是谈判，而是用数据和逻辑呈现这个问题的结构。一个可操作的切入点是：记录AI工具在具体项目中的效率提升数据（节省的时间、减少的bug数、提升的产出量），然后用这些数据向管理层提出具体诉求——比如「我们团队用AI工具把迭代速度提升了X%，建议将其中Y%转化为团队的学习和探索时间，而不是全部用于追加需求」。透明的数据比情绪化的诉求更有说服力。
 
 ## 相关实体
-- [Karpathy Llm Full Stack Course 2026井底之硅](../ch04-519-karpathy-3-5-小时免费-llm-全栈课-再登-x-热榜-640-万播放-11-万点赞/)
-- [Joyai Echo Long Video Framework Jd](../ch04-099-joyai-echo-京东开源长音视频生成框架-5-分钟一致性-7-5x-dmd-加速-director-age/)
-- [Kiro Job Scheduler Eventbridge Ecs Fargate](../ch11-024-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务/)
-- [Bitter Lesson Garbage Can Mollick](../ch04-272-bitter-lesson-vs-garbage-can-组织理论视角下的-ai-采用/)
-- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11-079-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno/)
+- [Karpathy Llm Full Stack Course 2026井底之硅](/ch04-519-karpathy-3-5-小时免费-llm-全栈课-再登-x-热榜-640-万播放-11-万点赞//)
+- [Joyai Echo Long Video Framework Jd](/ch04-099-joyai-echo-京东开源长音视频生成框架-5-分钟一致性-7-5x-dmd-加速-director-age//)
+- [Kiro Job Scheduler Eventbridge Ecs Fargate](/ch11-024-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务//)
+- [Bitter Lesson Garbage Can Mollick](/ch04-272-bitter-lesson-vs-garbage-can-组织理论视角下的-ai-采用//)
+- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](/ch11-079-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-vibe-engineering-silicon-era-jiangtao.md)
 

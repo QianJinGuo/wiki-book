@@ -140,11 +140,11 @@ Connor JonesConnor JonesCybersecurity reporter
 Published wed 13 May 2026 // 17:16 UTC
 [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.theregister.com%2Fsecurity%2F2026%2F05%2F13%2Fdisgruntled-researcher-
 ## 相关实体
-- [Disgruntled Researcher Microsoft Zero Days](../ch12-061-disgruntled-researcher-releases-two-more-microsoft-zero-days.md)
-- [13 Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](../ch12-028-disgruntled-researcher-releases-two-more-microsoft-zero-days)
-- [Microsoft Zero Days Researcher Disgruntled](../ch12-089-mystery-microsoft-bug-leaker-keeps-the-zero-days-coming)
-- [Defense_At_Ai_Speed_Microsofts_New_Multi](../ch04-260-defense-at-ai-speed-microsoft-s-new-multi-model-agentic-sec)
-- [Microsoft Open Sources Rampart Clarity](../ch01-611-microsoft-open-sources-rampart-and-clarity-to-secure-ai-agen)
+- [Disgruntled Researcher Microsoft Zero Days](/ch12-061-disgruntled-researcher-releases-two-more-microsoft-zero-days.md/)
+- [13 Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](/ch12-028-disgruntled-researcher-releases-two-more-microsoft-zero-days/)
+- [Microsoft Zero Days Researcher Disgruntled](/ch12-089-mystery-microsoft-bug-leaker-keeps-the-zero-days-coming/)
+- [Defense_At_Ai_Speed_Microsofts_New_Multi](/ch04-260-defense-at-ai-speed-microsoft-s-new-multi-model-agentic-sec/)
+- [Microsoft Open Sources Rampart Clarity](/ch01-611-microsoft-open-sources-rampart-and-clarity-to-secure-ai-agen/)
 
 ---
 

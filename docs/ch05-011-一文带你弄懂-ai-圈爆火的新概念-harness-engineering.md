@@ -200,16 +200,16 @@ Harness Engineering 的核心信号：**AI 落地的核心挑战，正在从"让
 
 ## 相关实体
 
-- [Harness Engineering](../ch05-041-harness-engineering-概念框架/) — 本文是该概念的权威中文系统阐述
+- [Harness Engineering](/ch05-041-harness-engineering-概念框架//) — 本文是该概念的权威中文系统阐述
 - Context Engineering — 第二层重心迁移
 - Prompt Engineering — 第一层重心迁移
-- [Claude Code 深度解析](../ch01-558-claude-code-harness-深度分析) — Anthropic Harness 的具体实现
-- [Claude Code Dynamic Workflows](../ch04-409-agent-orchestration) — Harness 第三层执行编排的 Dynamic Workflow 实现
-- [OpenClaw 完整指南](../ch04-199-openclaw-完全指南) — OpenAI-style 渐进式披露 + Agent-first 工程环境
-- [Agent Evolution 四阶段六维](../ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo) — Harness 维度在六维框架中的对应
-- [Hermes Agent Operator](../ch04-418-hermes-agent) — 自进化 Agent 的 Harness 实现
-- [Agent YAML 评测](../ch01-746-从手动到自动化-用agenteval构建agent评测体系) — Harness 第五层评估与观测的工程实现
-- [深入理解 Claude Code Agent Harness](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道) — Harness 在 Claude Code 源码层的具体构建
+- [Claude Code 深度解析](/ch01-558-claude-code-harness-深度分析/) — Anthropic Harness 的具体实现
+- [Claude Code Dynamic Workflows](/ch04-409-agent-orchestration/) — Harness 第三层执行编排的 Dynamic Workflow 实现
+- [OpenClaw 完整指南](/ch04-199-openclaw-完全指南/) — OpenAI-style 渐进式披露 + Agent-first 工程环境
+- [Agent Evolution 四阶段六维](/ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/) — Harness 维度在六维框架中的对应
+- [Hermes Agent Operator](/ch04-418-hermes-agent/) — 自进化 Agent 的 Harness 实现
+- [Agent YAML 评测](/ch01-746-从手动到自动化-用agenteval构建agent评测体系/) — Harness 第五层评估与观测的工程实现
+- [深入理解 Claude Code Agent Harness](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/) — Harness 在 Claude Code 源码层的具体构建
 
 ---
 

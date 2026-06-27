@@ -9,11 +9,11 @@
 - 营销技术（Martech）系统的复杂性已堪比企业级 IT 环境，但营销团队仍采用项目制思维而非服务制思维来管理技术栈 
 
 ## 相关实体
-- [Google Workspace Updates Small Businesses Can Now Import Use](../ch01-749-google-workspace-updates-small-businesses-can-now-seamlessl/)
-- [Workspaceupdates Googleblog Com Google Workspace Updates](../ch01-324-google-workspace-updates-small-businesses-can-now-seamlessl/)
-- [B2B Email Marketing What Still Works](../ch01-133-b2b-email-marketing-what-still-works/)
-- [What Do Your Startup Advisors Say About You Charlie Odonnell   Coach Author Vc](../ch01-118-what-do-your-startup-advisors-say-about-you-charlie-o-don/)
-- [From Kubernetes Dev Setup To Production What Actually Change](../ch11-083-from-kubernetes-dev-setup-to-production-what-actually-chang/)
+- [Google Workspace Updates Small Businesses Can Now Import Use](/ch01-749-google-workspace-updates-small-businesses-can-now-seamlessl//)
+- [Workspaceupdates Googleblog Com Google Workspace Updates](/ch01-324-google-workspace-updates-small-businesses-can-now-seamlessl//)
+- [B2B Email Marketing What Still Works](/ch01-133-b2b-email-marketing-what-still-works//)
+- [What Do Your Startup Advisors Say About You Charlie Odonnell   Coach Author Vc](/ch01-118-what-do-your-startup-advisors-say-about-you-charlie-o-don//)
+- [From Kubernetes Dev Setup To Production What Actually Change](/ch11-083-from-kubernetes-dev-setup-to-production-what-actually-chang//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-marketing-can-learn-from-it-about-running-complex-technology.md)
 

@@ -57,11 +57,11 @@ Code Interpreter 的持久化会话是一把双刃剑——它提供了必要的
 对于已有向量数据库或知识库的企业，RLM 可以作为**向量检索的上层编排层**：先用向量相似度找到 Top-K 相关文档块，将这些块加载至 Code Interpreter 沙盒，再由 RLM 进行深度推理。这种混合架构兼顾了向量检索的精准召回和 RLM 的深度推理能力，特别适合"先广泛定位再深度分析"的两阶段工作流。
 
 ## 相关实体
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore)
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04-261-build-ai-agents-for-business-intelligence-with-amazon-bedroc)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](/ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo/)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](/ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz/)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](/ch04-261-build-ai-agents-for-business-intelligence-with-amazon-bedroc/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md)
 

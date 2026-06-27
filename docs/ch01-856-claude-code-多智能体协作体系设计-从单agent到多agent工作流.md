@@ -484,7 +484,7 @@ const agentTrace = {
 ## 相关实体
 
 - Claude Code Prompt Context Harness - Claude Code Prompt/Context/Harness设计
-- [Hermes Agent Memory System](../ch04-418-hermes-agent) - Hermes记忆系统
+- [Hermes Agent Memory System](/ch04-418-hermes-agent/) - Hermes记忆系统
 - MOC
 
 ---

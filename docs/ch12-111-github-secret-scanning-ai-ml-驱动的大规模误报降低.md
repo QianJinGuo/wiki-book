@@ -30,8 +30,8 @@
 | 规模 | GitHub 全平台级 | 单组织 fleet 级 |
 
 ## 相关主题
-- [bagel Fleet 级 Secret Scanning](../ch12-049-bagel-fleet-级-secret-scanning-守护开发工作站)
-- [Claude Code Security Incident](../ch01-677-anthropic)
+- [bagel Fleet 级 Secret Scanning](/ch12-049-bagel-fleet-级-secret-scanning-守护开发工作站/)
+- [Claude Code Security Incident](/ch01-677-anthropic/)
 
 -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
 

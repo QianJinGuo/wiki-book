@@ -51,11 +51,11 @@
 5. **上下文窗口管理是工程难点**：实际部署时需要像作者一样，用 token 计算工具动态裁剪输入，而非简单截断。
 6. **开源工具链可行性**：整个链路（Docker + Ollama + n8n + Qdrant + Ghidra）均可免费搭建，对于资源有限的独立安全研究员具有较高的参考价值。
 ## 相关实体
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch01-104-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo/)
-- [Amazon Quick Research Agentic Multi Source Citation](../ch04-183-amazon-quick-research-agentic-multi-source-research-workflo/)
-- [Building Web Search Enabled Agents With Strands And Exa](../ch04-373-building-web-search-enabled-agents-with-strands-and-exa/)
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](../ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov/)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](/ch01-104-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo//)
+- [Amazon Quick Research Agentic Multi Source Citation](/ch04-183-amazon-quick-research-agentic-multi-source-research-workflo//)
+- [Building Web Search Enabled Agents With Strands And Exa](/ch04-373-building-web-search-enabled-agents-with-strands-and-exa//)
+- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](/ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov//)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ghostbyt3-github-io-blog-nday-research-ai.md)
 

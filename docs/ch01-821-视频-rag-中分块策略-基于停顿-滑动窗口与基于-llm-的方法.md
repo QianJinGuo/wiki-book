@@ -37,12 +37,12 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch04-199-openclaw-完全指南/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
+- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

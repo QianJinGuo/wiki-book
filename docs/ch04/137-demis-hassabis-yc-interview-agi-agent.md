@@ -173,7 +173,7 @@ Hassabis 提出一个科学推理能力的测试标准：
 
 - `Tencent Ai Infra Backend Engineer Huangrunpeng` — AI Infra 视角
 - `Pydantic Ai Progressive Agent Skills Automatorrunner` — Agent 框架视角
-- [Harness Engineering](../ch05-041-harness-engineering-概念框架/) — 工程化方法论
+- [Harness Engineering](/ch05-041-harness-engineering-概念框架//) — 工程化方法论
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/demis-hassabis-yc-interview-jiedaotixi.md)
 - MOC
 

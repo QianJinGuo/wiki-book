@@ -15,9 +15,9 @@
 ## 相关实体
 > 主题导航
 
-- [时间序列预测数据增强方法](../ch01-569-时间序列预测数据增强方法)
-- [CEOs of the classroom: Why principals are the key to the AI era](../ch01-117-ceos-of-the-classroom-why-principals-are-the-key-to-the-ai)
-- [How Superset built the IDE for AI agents on Vercel](../ch01-058-how-superset-built-the-ide-for-ai-agents-on-vercel)
+- [时间序列预测数据增强方法](/ch01-569-时间序列预测数据增强方法/)
+- [CEOs of the classroom: Why principals are the key to the AI era](/ch01-117-ceos-of-the-classroom-why-principals-are-the-key-to-the-ai/)
+- [How Superset built the IDE for AI agents on Vercel](/ch01-058-how-superset-built-the-ide-for-ai-agents-on-vercel/)
 
 ## 深度分析
 **时间序列基础模型的"BERT 时刻"已经到来**

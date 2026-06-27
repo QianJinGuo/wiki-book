@@ -8,11 +8,11 @@
 - 来源：https://letsdatascience.com/news/igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09
 - 评分：v=7 × c=8 = 56
 ## 相关实体
-- [Letsdatascience Igor Babuschkin Seeks Up To 1 Billion For River Ai 8C36Ce09](../ch01-053-igor-babuschkin-seeks-up-to-1-billion-for-river-ai/)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch01-040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f/)
-- [Amazon Turns Alexa Into Its Next Storefront](../ch01-050-amazon-turns-alexa-into-its-next-storefront/)
-- [Code Simulation For Enterprise Engineering Playerz](../ch01-119-code-simulation-for-enterprise-engineering-playerzero/)
-- [Thrive Capital Bets 100 Million On Shopifys Ai Future](../ch01-086-thrive-capital-bets-100-million-on-shopify-s-ai-future/)
+- [Letsdatascience Igor Babuschkin Seeks Up To 1 Billion For River Ai 8C36Ce09](/ch01-053-igor-babuschkin-seeks-up-to-1-billion-for-river-ai//)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](/ch01-040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f//)
+- [Amazon Turns Alexa Into Its Next Storefront](/ch01-050-amazon-turns-alexa-into-its-next-storefront//)
+- [Code Simulation For Enterprise Engineering Playerz](/ch01-119-code-simulation-for-enterprise-engineering-playerzero//)
+- [Thrive Capital Bets 100 Million On Shopifys Ai Future](/ch01-086-thrive-capital-bets-100-million-on-shopify-s-ai-future//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
 

@@ -12,15 +12,15 @@
 博客链接：https://hy.tencent.com/research/100039
 
 ## 相关实体
-- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架)
-- [Microsoft Agent Framework Python Full Guide Zizhi](../ch01-585-微软-agent-framework-全栈指南-从-hello-agent-到生产托管-python)
-- [Hermes Agent Deep Dive Alibaba](../ch04-418-hermes-agent)
-- [Aws Bedrock Agentcore Quality Optimization Flywheel](../ch11-118-aws-bedrock-agentcore-quality-optimization-flywheel)
-- [Agent Harness 12 Components 7 Decisions](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架)
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
+- [Microsoft Agent Framework Python Full Guide Zizhi](/ch01-585-微软-agent-framework-全栈指南-从-hello-agent-到生产托管-python/)
+- [Hermes Agent Deep Dive Alibaba](/ch04-418-hermes-agent/)
+- [Aws Bedrock Agentcore Quality Optimization Flywheel](/ch11-118-aws-bedrock-agentcore-quality-optimization-flywheel/)
+- [Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cl-bench-life-tencent-context-learning.md)
 
-- [MOC](../ch04-146-agent-memory-架构本质/)
+- [MOC](/ch04-146-agent-memory-架构本质//)
 ## 深度分析
 
 CL-Bench Life 不是 CL-Bench 的升级版，而是一个互补的评测维度。 CL-Bench 评估的是模型在专业、结构化 context 中的表现，而 CL-Bench Life 面对的是日常生活中的混乱、碎片化、持续变化的 context，两者的难度来源完全不同。这意味着仅有长上下文能力并不足以应对真实场景，模型需要具备在高噪声、不完整、反复修改的信息中进行鲁棒推理的能力。

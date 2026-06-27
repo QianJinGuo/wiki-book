@@ -57,11 +57,11 @@ When code was much more expensive to write, we needed a lot more of the codebase
 Confidence in your codebase can't be automated away. It's ultimately your job as the builder to bear responsibility for what you're releasing into the world. So why not use agents to not simply make things faster, but make them _better_?
 
 ## 相关实体
-- [Apple Corecrypto Formal Verification Blueprint](../ch12-024-apple-corecrypto-formal-verification-blueprint-post-quantu/)
-- [Is Software Losing Its Head 1](../ch01-660-is-software-losing-its-head/)
-- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
-- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](../ch03-092-when-growth-slows-is-it-sales-fault-or-the-product-s-fault/)
+- [Apple Corecrypto Formal Verification Blueprint](/ch12-024-apple-corecrypto-formal-verification-blueprint-post-quantu//)
+- [Is Software Losing Its Head 1](/ch01-660-is-software-losing-its-head//)
+- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack//)
+- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us//)
+- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](/ch03-092-when-growth-slows-is-it-sales-fault-or-the-product-s-fault//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-formal-verification-ai-code.md)
 

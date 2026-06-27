@@ -90,7 +90,7 @@
 - 反幻觉规则：`"Never reshape evidence to fit earlier assumptions"`
 
 ## Anthropic 14 种实现模式（5 大类）
-> 详细解读参见 [Anthropic 官方 14 种设计模式](../ch01-283-anthropic-官方-14-种-skill-设计模式/)
+> 详细解读参见 [Anthropic 官方 14 种设计模式](/ch01-283-anthropic-官方-14-种-skill-设计模式//)
 
 ### 发现与选择（2 模式）
 | 模式 | 核心问题 | 关键做法 |
@@ -338,7 +338,7 @@ Anthropic 的 Activation Metadata 模式指出：一个好的 description 必须
 
 ## Related
 - Agent Skill 编写指南 — Skill 格式、渐进式披露、编写规范、评估迭代的基础知识
-- [Hermes Agent](../ch04-418-hermes-agent/) — 支持 Skill 机制的核心开源 Agent
+- [Hermes Agent](/ch04-418-hermes-agent//) — 支持 Skill 机制的核心开源 Agent
 - OpenClaw 架构解析 — 内置 Skill 系统实现
 - [Anthropic 14 模式原始文章](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-14-skill-patterns-best-practices.md)
 - [社区模式原始文章存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-writing-patterns-best-practices.md)

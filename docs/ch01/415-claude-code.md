@@ -64,25 +64,25 @@ MCP、Skill、Plugin 这些外部扩展机制可能在持续变化，但 Claude 
 5. **连续运行场景下，状态机模型优于函数调用模型**：显式状态转换和恢复路径是多轮交互系统可靠性的基础。
 
 ## 相关实体
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](/ch07-006-claude-code-skills-mcp-rules-source-analysis//)
 - Claude Code Prompt 提示词体系源码解析
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层/)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](/ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层//)
 
-- [Claude Code 七大模块详解](../ch01-406-claude-code-七大模块详解/)
-- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制/)
-- [Claude Code 可控性：软规则无法变成硬约束](../ch09-067-claude-code-可控性-软规则无法变成硬约束/)
-- [Claude Code 架构深度分析](../ch01-846-claude-code-架构深度解析/)
-- [AI Native 时代 —— 研发组织何去何从](../ch01-191-ai-native-时代-研发组织何去何从/)
-- [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch01-399-hermes-agent-kanban-实测-商业-cli-作为上层-orchestrator/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-367-claude-code-harness-deep-understanding/)
-- [AutoResearch：多 Agent 自动化软件开发](../ch09-030-autoresearch-多-agent-自动化软件开发/)
-- [Agent Harness 架构](../ch04-207-agent-harness-架构/)
-- [Claude Code 源码核心机制详解](../ch01-162-claude-code-源码核心机制详解/)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南/)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-126-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
-- [Harness如何支撑Agent在生产环境稳定运行？](../ch04-127-harness如何支撑agent在生产环境稳定运行/)
-- [Agent架构关键变化：Harness正在成为新后端](../ch04-027-agent架构关键变化-harness正在成为新后端/)
-- [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice/)
+- [Claude Code 七大模块详解](/ch01-406-claude-code-七大模块详解//)
+- [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制//)
+- [Claude Code 可控性：软规则无法变成硬约束](/ch09-067-claude-code-可控性-软规则无法变成硬约束//)
+- [Claude Code 架构深度分析](/ch01-846-claude-code-架构深度解析//)
+- [AI Native 时代 —— 研发组织何去何从](/ch01-191-ai-native-时代-研发组织何去何从//)
+- [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](/ch01-399-hermes-agent-kanban-实测-商业-cli-作为上层-orchestrator//)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-367-claude-code-harness-deep-understanding//)
+- [AutoResearch：多 Agent 自动化软件开发](/ch09-030-autoresearch-多-agent-自动化软件开发//)
+- [Agent Harness 架构](/ch04-207-agent-harness-架构//)
+- [Claude Code 源码核心机制详解](/ch01-162-claude-code-源码核心机制详解//)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](/ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南//)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-126-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台//)
+- [Harness如何支撑Agent在生产环境稳定运行？](/ch04-127-harness如何支撑agent在生产环境稳定运行//)
+- [Agent架构关键变化：Harness正在成为新后端](/ch04-027-agent架构关键变化-harness正在成为新后端//)
+- [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice//)
 - MOC
 
 ---

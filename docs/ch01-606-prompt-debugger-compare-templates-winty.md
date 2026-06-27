@@ -13,15 +13,15 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 数据库设计：experiments 表（固定输入）下挂 experiment_runs 表（不同 Prompt/参数的结果），同一输入对比任意变体。
 
 ## 相关实体
-- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](../ch01-677-anthropic)
-- [Claude Opus 47](../ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus)
-- [Pi Mono Github](../ch01-608-pi-mono-github)
-- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
-- [Aliyun Agentrun 2Line Integration](../ch04-003-agentrun)
+- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](/ch01-677-anthropic/)
+- [Claude Opus 47](/ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus/)
+- [Pi Mono Github](/ch01-608-pi-mono-github/)
+- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
+- [Aliyun Agentrun 2Line Integration](/ch04-003-agentrun/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prompt-debugger-compare-templates-winty.md)
 
-- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](../ch01-570-openai发布新一代实时语音模型-能够像人说话一样进行推理-翻译和转录)
+- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](/ch01-570-openai发布新一代实时语音模型-能够像人说话一样进行推理-翻译和转录/)
 
 ## 深度分析
 

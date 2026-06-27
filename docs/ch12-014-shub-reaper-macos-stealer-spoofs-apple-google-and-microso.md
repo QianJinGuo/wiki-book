@@ -12,11 +12,11 @@
 - 该木马建立持久化后门，每 60 秒向 C2 发送心跳，可接收远程代码执行指令
 
 ## 相关实体
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch12-020-how-an-image-could-compromise-your)
-- [Fake Job Interview Apps Drop Jobstealer Malware On Windows And Macos](../ch12-046-fake-job-interview-apps-drop-jobstealer-malware-on-windows-a)
-- [Trackingtamperedchefclustersviacertificateandcodereuse](../ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](/ch12-020-how-an-image-could-compromise-your/)
+- [Fake Job Interview Apps Drop Jobstealer Malware On Windows And Macos](/ch12-046-fake-job-interview-apps-drop-jobstealer-malware-on-windows-a/)
+- [Trackingtamperedchefclustersviacertificateandcodereuse](/ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](/ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att/)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](/ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/shub-reaper-macos-stealer-attack-chain.md)
 

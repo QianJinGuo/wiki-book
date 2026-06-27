@@ -58,11 +58,11 @@ Grafana 主动在 X 平台公布事件进展，遵循了 modern breach disclosur
 - Grafana 可通过监控 dark web 论坛判断其代码是否已被公开或出售
 - 将 CoinbaseCartel 的 TTPs（战术、技术、流程）纳入 SOC 检测规则
 ## 相关实体
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12-056-grafana-github-token-breach-led-to-codebase-download-and-ext)
-- [Grafana Github Token Breach Led To Html](../ch01-096-grafana-github-token-breach-led-to-codebase-download-and-ext)
-- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch09-050-1-click-github-token-stealing-via-a-vscode-bug-ammaraskar)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o)
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch12-087-github-breached-employee-device-hack-led-to-exfiltration)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](/ch12-056-grafana-github-token-breach-led-to-codebase-download-and-ext/)
+- [Grafana Github Token Breach Led To Html](/ch01-096-grafana-github-token-breach-led-to-codebase-download-and-ext/)
+- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](/ch09-050-1-click-github-token-stealing-via-a-vscode-bug-ammaraskar/)
+- [Github Investigating Teampcp Claimed 17Cc77](/ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o/)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](/ch12-087-github-breached-employee-device-hack-led-to-exfiltration/)
 - MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt-2.md)

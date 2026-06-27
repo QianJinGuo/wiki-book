@@ -8,8 +8,8 @@
 
 ## 相关实体
 
-- [hermes新顶流agent skills闭环系统深度解析](../ch04-357-hermes新顶流agent-skills闭环系统深度解析/)
-- [淘天营销中后台生码工作流最佳实践](../ch01-723-淘天营销中后台生码工作流最佳实践/)
+- [hermes新顶流agent skills闭环系统深度解析](/ch04-357-hermes新顶流agent-skills闭环系统深度解析//)
+- [淘天营销中后台生码工作流最佳实践](/ch01-723-淘天营销中后台生码工作流最佳实践//)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-long-running-governance-five-cards-ruofei.md)
 
 - MOC
@@ -50,12 +50,12 @@ Hermes 的官方扩展路径是"主 Agent → 专职 Agent → orchestrator → 
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程/)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch01-702-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践//)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering//)
+- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程//)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验//)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch01-702-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏//)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏//)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

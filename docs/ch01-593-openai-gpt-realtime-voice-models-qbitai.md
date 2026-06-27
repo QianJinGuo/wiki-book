@@ -12,16 +12,16 @@
 - **GPT-Realtime-Whisper**：流式转写
 
 ## 相关实体
-- [Build Live Translation Apps With Gpt Realtime Translate](../ch01-123-build-live-translation-apps-with-gpt-realtime-translate)
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](../ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价)
-- [Gpt 55实测有点翻车Nn写完文章后我已经拿Codex中的Gpt 55测了不少长步骤的复杂任务做动画做Ppt做网站Nn我的感受是这是个非常无聊的学霸会做题会尽](../ch01-448-gpt-5-5实测有点翻车-n-n写完文章后-我已经拿codex中的gpt-5-5测了不少长步骤的复杂任务-做动画-做)
-- [Gpt 5 Is Here And Openai Has Some Tips](../ch01-489-gpt-5-is-here-and-openai-has-some-tips)
-- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](../ch01-677-anthropic)
+- [Build Live Translation Apps With Gpt Realtime Translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](/ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价/)
+- [Gpt 55实测有点翻车Nn写完文章后我已经拿Codex中的Gpt 55测了不少长步骤的复杂任务做动画做Ppt做网站Nn我的感受是这是个非常无聊的学霸会做题会尽](/ch01-448-gpt-5-5实测有点翻车-n-n写完文章后-我已经拿codex中的gpt-5-5测了不少长步骤的复杂任务-做动画-做/)
+- [Gpt 5 Is Here And Openai Has Some Tips](/ch01-489-gpt-5-is-here-and-openai-has-some-tips/)
+- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](/ch01-677-anthropic/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-gpt-realtime-voice-models-qbitai.md)
 
-- [gemini app rolling out](../ch01-670-gemini-app-rolling-out-extended-thinking-level-new-3rd-pa)
-- [gpt -image 2神级提示词分享](../ch01-680-gpt-image-2神级提示词分享)
+- [gemini app rolling out](/ch01-670-gemini-app-rolling-out-extended-thinking-level-new-3rd-pa/)
+- [gpt -image 2神级提示词分享](/ch01-680-gpt-image-2神级提示词分享/)
 
 ## 深度分析
 

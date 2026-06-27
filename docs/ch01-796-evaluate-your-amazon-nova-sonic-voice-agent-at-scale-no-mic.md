@@ -35,12 +35,12 @@ Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required 涉
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
-- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
+- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

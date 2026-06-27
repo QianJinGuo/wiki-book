@@ -37,7 +37,7 @@ Agent 读自己的 trace，对自身行为做元认知反思：
 - 在哪里卡住了？
 - 在哪里靠猜测蒙混过关？
 - 哪些步骤消耗了不必要的 token？
-- 有没有可以用更轻量的确定性工具替代的步骤？ See also [Agent Memory Architecture](../ch04-146-agent-memory-架构本质/)
+- 有没有可以用更轻量的确定性工具替代的步骤？ See also [Agent Memory Architecture](/ch04-146-agent-memory-架构本质//)
 
 ### 第四步：迭代（Iterate）
 外层循环维护一个 `strategy.md` 文件——相当于 Agent 的学习笔记。每次迭代结束把观察写进去，下次迭代开始时 Agent 先读这份笔记，从上次的改进成果出发。**知识在迭代间叠加**，而不是每次从零归零。

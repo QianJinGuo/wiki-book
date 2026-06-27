@@ -898,7 +898,7 @@ events.put_targets(
 
 - → Multi Agent Collaboration Patterns — 多智能体协作模式通用理论
 - → Openclaw Multi Agent Team Practice — OpenClaw 多智能体团队实践
-- → [Building Enterprise Agentic Ai With Kiro On Aws](../ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客/) — Kiro 在 AWS 上的企业 Agent 构建
+- → [Building Enterprise Agentic Ai With Kiro On Aws](/ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客//) — Kiro 在 AWS 上的企业 Agent 构建
 
 ---
 
@@ -932,7 +932,7 @@ events.put_targets(
 
 ## 相关实体
 - Multi Agent Collaboration 2025 Top 10 Challenges
-- [aws bedrock dynamic document extraction pipeline](../ch11-029-aws-bedrock-dynamic-document-extraction-pipeline/)
+- [aws bedrock dynamic document extraction pipeline](/ch11-029-aws-bedrock-dynamic-document-extraction-pipeline//)
 - MOC
 
 ---

@@ -62,10 +62,10 @@
 
 ## 相关实体
 
-- [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
-- [Claude Code Skills Superpowers 实践](../ch01-408-claude-code-skills-superpowers-practice)
-- [AI Coding Agent Token 成本控制](../ch09-119-ai-coding-agent-token-成本控制五层模型)
-- [Skill 版本对比五大原则](../ch07-049-skill-版本对比五大原则-从-两个数字比大小-到工程化质量门禁)
+- [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
+- [Claude Code Skills Superpowers 实践](/ch01-408-claude-code-skills-superpowers-practice/)
+- [AI Coding Agent Token 成本控制](/ch09-119-ai-coding-agent-token-成本控制五层模型/)
+- [Skill 版本对比五大原则](/ch07-049-skill-版本对比五大原则-从-两个数字比大小-到工程化质量门禁/)
 
 ---
 

@@ -75,9 +75,9 @@
 ## 相关实体
 > 主题导航
 
-- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](../ch03-024-top-10-design-gadgets-for-creative-professionals-that-will-c/)
-- [the token economy](../ch01-696-the-token-economy/)
-- [Consumer Confidence](../ch01-909-consumer-confidence/)
+- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](/ch03-024-top-10-design-gadgets-for-creative-professionals-that-will-c//)
+- [the token economy](/ch01-696-the-token-economy//)
+- [Consumer Confidence](/ch01-909-consumer-confidence//)
 
 ---
 

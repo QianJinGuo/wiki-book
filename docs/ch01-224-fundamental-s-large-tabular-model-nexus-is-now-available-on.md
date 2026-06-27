@@ -20,23 +20,23 @@ type: entity
 # Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
 
 ## 相关实体
-- [Openai Models Codex Amazon Bedrock Ga](../ch09-048-openai-models-and-codex-on-amazon-bedrock-are-now-generally)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
-- [End To End Encrypted Ml Inference Sagemaker Fhe](../ch11-044-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a)
+- [Openai Models Codex Amazon Bedrock Ga](/ch09-048-openai-models-and-codex-on-amazon-bedrock-are-now-generally/)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](/ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake/)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
+- [End To End Encrypted Ml Inference Sagemaker Fhe](/ch11-044-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a/)
 - Amazon Sagemaker Qualcomm Ai Hub Edge Npu Deployment
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
 
 # Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
 
-Today, we’re announcing support for Fundamental’s NEXUS model on [Amazon SageMaker AI](../ch01-<https://aws.amazon.com/sagemaker/ai/>). With this launch, you can deploy a foundation model (FM) purpose-built for tabular data prediction. This model helps your enterprise generate accurate, deterministic predictions from structured data in days instead of months.
+Today, we’re announcing support for Fundamental’s NEXUS model on [Amazon SageMaker AI](/ch01-<https://aws.amazon.com/sagemaker/ai/>/). With this launch, you can deploy a foundation model (FM) purpose-built for tabular data prediction. This model helps your enterprise generate accurate, deterministic predictions from structured data in days instead of months.
 
-In this post, we show you how to get started with NEXUS on [Amazon SageMaker JumpStart](../ch01-<https://aws.amazon.com/sagemaker/ai/jumpstart/>), walk through the deployment process, and demonstrate how to run predictions against your enterprise datasets.
+In this post, we show you how to get started with NEXUS on [Amazon SageMaker JumpStart](/ch01-<https://aws.amazon.com/sagemaker/ai/jumpstart/>/), walk through the deployment process, and demonstrate how to run predictions against your enterprise datasets.
 
 ## What is NEXUS?
 
-NEXUS is a foundation model developed by [Fundamental](../ch01-<https://fundamental.tech/>) and built for tabular data prediction. Large language models (LLMs) are designed for text, and traditional machine learning (ML) approaches require extensive feature engineering and model training. NEXUS takes a different approach. It’s pre-trained on billions of real-world prediction tasks across structured datasets, so it arrives already knowing how to find signal in your data.
+NEXUS is a foundation model developed by [Fundamental](/ch01-<https://fundamental.tech/>/) and built for tabular data prediction. Large language models (LLMs) are designed for text, and traditional machine learning (ML) approaches require extensive feature engineering and model training. NEXUS takes a different approach. It’s pre-trained on billions of real-world prediction tasks across structured datasets, so it arrives already knowing how to find signal in your data.
 
 As a Large Tabular Model, NEXUS is built for structured data analysis and offers these key innovations:
 
@@ -64,9 +64,9 @@ The following figure illustrates the end-to-end flow for deploying and running p
 
 NEXUS runs on a dedicated, single-tenant, network-isolated GPU instance within the SageMaker AI managed environment. The workflow consists of the following steps:
 
-  1. **Subscribe and deploy** – Subscribe to the NEXUS model package on [AWS Marketplace](../ch01-<https://aws.amazon.com/marketplace>), then deploy it as a SageMaker AI managed inference endpoint on an `ml.p5en.48xlarge` instance (8× NVIDIA H200 GPUs).
+  1. **Subscribe and deploy** – Subscribe to the NEXUS model package on [AWS Marketplace](/ch01-<https://aws.amazon.com/marketplace>/), then deploy it as a SageMaker AI managed inference endpoint on an `ml.p5en.48xlarge` instance (8× NVIDIA H200 GPUs).
   2. **Install the SDK** – Install the Fundamental Python SDK and connect it to your SageMaker endpoint. The SDK provides a familiar scikit-learn compatible API with `NEXUSClassifier` and `NEXUSRegressor` estimators.
-  3. **Upload data to Amazon S3** – The SDK serializes your tabular data and uploads it to an [Amazon Simple Storage Service (Amazon S3)](../ch01-<https://aws.amazon.com/s3/>) bucket in your account.
+  3. **Upload data to Amazon S3** – The SDK serializes your tabular data and uploads it to an [Amazon Simple Storage Service (Amazon S3)](/ch01-<https://aws.amazon.com/s3/>/) bucket in your account.
   4. **Train a model** – Call `clf.fit(X_train, y_train)` to train. NEXUS handles data cleanup and feature engineering automatically, with no manual pipeline required.
   5. **Generate predictions** – Call `clf.predict(X_test)` for deterministic predictions or `clf.predict_proba(X_test)` for probability estimates. Results are stored back in your Amazon S3 bucket.
 
@@ -74,7 +74,7 @@ Your data stays in your AWS environment throughout this process. The endpoint is
 
 ## Get started with NEXUS on Amazon SageMaker AI
 
-To get started, navigate to [Amazon SageMaker JumpStart](../ch01-<https://aws.amazon.com/sagemaker/ai/jumpstart/>), search for _Fundamental NEXUS_ , and choose from the following:
+To get started, navigate to [Amazon SageMaker JumpStart](/ch01-<https://aws.amazon.com/sagemaker/ai/jumpstart/>/), search for _Fundamental NEXUS_ , and choose from the following:
 
   * Base model (pre-trained on over 10B tabular rows).
   * Industry-specific variants (finance, healthcare, and manufacturing).
@@ -115,7 +115,7 @@ Deploying a model is only half the equation. The infrastructure you run it on de
   * **Cost efficiency** – The managed infrastructure of SageMaker AI reduces operational overhead.
   * **Scalability** – Automatically scales to petabyte-scale datasets.
   * **Compliance ready** – Meets GDPR, HIPAA, and SOC 2 requirements by default.
-  * **Continuous learning** – Native integration with [Amazon SageMaker Pipelines](../ch01-<https://aws.amazon.com/sagemaker/pipelines/>) for model retraining.
+  * **Continuous learning** – Native integration with [Amazon SageMaker Pipelines](/ch01-<https://aws.amazon.com/sagemaker/pipelines/>/) for model retraining.
   * **Multiplex support** – Supports multiple fit and predict operations on a single SageMaker AI endpoint, which removes the need for dedicated resources for each use case.
 
 ## Strategic AWS partnership
@@ -130,8 +130,8 @@ Fundamental has entered a strategic partnership with AWS to accelerate enterpris
 
 Ready to transform your data-driven decisions?
 
-  * [Contact the Fundamental team](../ch01-<https://fundamental.tech/contact#topsales>) to learn more.
-  * Try the [managed example notebook](../ch01-<https://github.com/Fundamental-Technologies/fundamental-cookbook/tree/main/examples>) in a JupyterLab space on Amazon SageMaker AI.
+  * [Contact the Fundamental team](/ch01-<https://fundamental.tech/contact#topsales>/) to learn more.
+  * Try the [managed example notebook](/ch01-<https://github.com/Fundamental-Technologies/fundamental-cookbook/tree/main/examples>/) in a JupyterLab space on Amazon SageMaker AI.
 
 ## Conclusion
 
@@ -139,8 +139,8 @@ In this post, we showed how NEXUS model support on Amazon SageMaker AI helps you
 
 To learn more, see the following resources:
 
-  * [Fundamental NEXUS documentation](../ch01-<https://github.com/Fundamental-Technologies/fundamental-cookbook/tree/main/examples>)
-  * [Amazon SageMaker AI Developer Guide](../ch01-<https://docs.aws.amazon.com/sagemaker/latest/dg/what-is-sagemaker.html>)
+  * [Fundamental NEXUS documentation](/ch01-<https://github.com/Fundamental-Technologies/fundamental-cookbook/tree/main/examples>/)
+  * [Amazon SageMaker AI Developer Guide](/ch01-<https://docs.aws.amazon.com/sagemaker/latest/dg/what-is-sagemaker.html>/)
 
 * * *
 

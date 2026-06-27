@@ -10,13 +10,13 @@
 
 Before implementing this solution, you need:
 
-  * [An AWS account](../ch04-<https://aws.amazon.com/free/?trk=04d587d8-77d6-4750-bffa-2bc5a475e1a9&sc_channel=ps&ef_id=EAIaIQobChMI7NLH8eDRkwMVJ0n_AR2_lTPDEAAYASAAEgKGlPD_BwE:G:s&s_kwcid=AL!4422!3!798517281036!e!!g!!create%20aws%20account!23610836392!199347046688&gad_campaignid=23610836392&gclid=EAIaIQobChMI7NLH8eDRkwMVJ0n_AR2_lTPDEAAYASAAEgKGlPD_BwE>).
-  * Access to the [GitHub repository](../ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/02-use-cases/lakehouse-agent>).
-  * [AWS Identity and Access Management (IAM) permissions](../ch04-<https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html>) to set up the [prerequisites](../ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/02-use-cases/lakehouse-agent#prerequisites>).
+  * [An AWS account](/ch04-<https://aws.amazon.com/free/?trk=04d587d8-77d6-4750-bffa-2bc5a475e1a9&sc_channel=ps&ef_id=EAIaIQobChMI7NLH8eDRkwMVJ0n_AR2_lTPDEAAYASAAEgKGlPD_BwE:G:s&s_kwcid=AL!4422!3!798517281036!e!!g!!create%20aws%20account!23610836392!199347046688&gad_campaignid=23610836392&gclid=EAIaIQobChMI7NLH8eDRkwMVJ0n_AR2_lTPDEAAYASAAEgKGlPD_BwE>/).
+  * Access to the [GitHub repository](/ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/02-use-cases/lakehouse-agent>/).
+  * [AWS Identity and Access Management (IAM) permissions](/ch04-<https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html>/) to set up the [prerequisites](/ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/02-use-cases/lakehouse-agent#prerequisites>/).
 
 ## Solution overview
 
-The lakehouse data agent is an AI assistant that lets insurance company employees query claims data. The data is stored in [Amazon S3 Tables](../ch04-<https://aws.amazon.com/s3/features/tables/>) (Apache Iceberg) and queried through [Amazon Athena](../ch04-<https://aws.amazon.com/athena/>) and [AWS Lake Formation](../ch04-<https://aws.amazon.com/lake-formation/>). Three user roles exist in the application: policyholders (who can only view their own claims), adjusters (who manage assigned claims), and administrators (who have full data access including audit logs). A Streamlit UI authenticates users through [Amazon Cognito](../ch04-<https://aws.amazon.com/cognito/>) and passes JSON Web Tokens (JWT) to the agent.
+The lakehouse data agent is an AI assistant that lets insurance company employees query claims data. The data is stored in [Amazon S3 Tables](/ch04-<https://aws.amazon.com/s3/features/tables/>/) (Apache Iceberg) and queried through [Amazon Athena](/ch04-<https://aws.amazon.com/athena/>/) and [AWS Lake Formation](/ch04-<https://aws.amazon.com/lake-formation/>/). Three user roles exist in the application: policyholders (who can only view their own claims), adjusters (who manage assigned claims), and administrators (who have full data access including audit logs). A Streamlit UI authenticates users through [Amazon Cognito](/ch04-<https://aws.amazon.com/cognito/>/) and passes JSON Web Tokens (JWT) to the agent.
 
 The MCP Server exposes five tools: `query_claims`, `get_claim_details`, `get_claims_summary`, `query_login_audit`, and `text_to_sql`. Role-to-tool access, tenant IAM role mappings, and user `geography` are stored in Amazon DynamoDB. AWS Lake Formation enforces row-level and column-level security at query time. In this case, even if an agent constructs a broad SQL query, the results are automatically scoped to what the caller’s IAM role is permitted to see.
 
@@ -40,7 +40,7 @@ We use Cedar policies for fine-grained access control when the authorization rul
 
 ### Design 1: Policy only
 
-First, let’s look at an example of a policy acting as a security layer for the lakehouse agent. Consider the scenario where the business decides that policyholders should not be able to call `get_claims_summary`. Policyholders can view their own individual claims, but the aggregate summary is reserved for adjusters and administrators. To do this, you can [attach a Policy Engine to the Gateway](../ch04-<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy-getting-started.html>) and define two Cedar policies that work together: a baseline `permit` rule and a targeted `forbid` rule.
+First, let’s look at an example of a policy acting as a security layer for the lakehouse agent. Consider the scenario where the business decides that policyholders should not be able to call `get_claims_summary`. Policyholders can view their own individual claims, but the aggregate summary is reserved for adjusters and administrators. To do this, you can [attach a Policy Engine to the Gateway](/ch04-<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy-getting-started.html>/) and define two Cedar policies that work together: a baseline `permit` rule and a targeted `forbid` rule.
 
 When a Policy Engine is attached to a Gateway, it follows deny-by-default semantics. If no policy explicitly permits a request, it is denied. Therefore, you first need a baseline `permit` policy that allows the agent to invoke tools on the Gateway:
     
@@ -92,9 +92,9 @@ Cedar policies provide three key benefits for securing AI agents:
 
 ## Interceptors for dynamic control
 
-Interceptors are custom Lambda functions that AgentCore Gateway invokes at two stages in the request lifecycle. A `REQUEST` interceptor runs before the request reaches the downstream tool, and a `RESPONSE` interceptor runs before the response is returned to the agent. The Gateway passes each interceptor a JSON event under the `mcp` key, containing the original request headers and body. The interceptor transforms the request content and returns it in the same structure. Interceptors work with all Gateway target types including Lambda functions, OpenAPI endpoints, and MCP servers. For the full payload contract and a detailed walkthrough, see [this post](../ch04-<https://aws.amazon.com/blogs/machine-learning/apply-fine-grained-access-control-with-bedrock-agentcore-gateway-interceptors/>).
+Interceptors are custom Lambda functions that AgentCore Gateway invokes at two stages in the request lifecycle. A `REQUEST` interceptor runs before the request reaches the downstream tool, and a `RESPONSE` interceptor runs before the response is returned to the agent. The Gateway passes each interceptor a JSON event under the `mcp` key, containing the original request headers and body. The interceptor transforms the request content and returns it in the same structure. Interceptors work with all Gateway target types including Lambda functions, OpenAPI endpoints, and MCP servers. For the full payload contract and a detailed walkthrough, see [this post](/ch04-<https://aws.amazon.com/blogs/machine-learning/apply-fine-grained-access-control-with-bedrock-agentcore-gateway-interceptors/>/).
 
-When an agent invokes tools on behalf of the user, a critical security decision is how identity propagates through the call chain. The impersonation approach is to pass the original user JWT unchanged to each downstream service. This is simpler, but it also allows downstream services to receive more permissions than they need. A compromised service can then reuse the overly privileged token elsewhere (the [confused deputy problem](../ch04-<https://en.wikipedia.org/wiki/Confused_deputy_problem>)). An alternate approach is “act-on-behalf”, where each downstream target receives a separate, least-privileged token scoped specifically for that service. The user’s identity context flows through for auditing. Design 2 implements this pattern. The `REQUEST` interceptor exchanges the user’s Cognito JWT for short-lived, tenant-scoped IAM credentials through `sts:AssumeRole`, and those scoped credentials are what reaches the MCP Server.
+When an agent invokes tools on behalf of the user, a critical security decision is how identity propagates through the call chain. The impersonation approach is to pass the original user JWT unchanged to each downstream service. This is simpler, but it also allows downstream services to receive more permissions than they need. A compromised service can then reuse the overly privileged token elsewhere (the [confused deputy problem](/ch04-<https://en.wikipedia.org/wiki/Confused_deputy_problem>/)). An alternate approach is “act-on-behalf”, where each downstream target receives a separate, least-privileged token scoped specifically for that service. The user’s identity context flows through for auditing. Design 2 implements this pattern. The `REQUEST` interceptor exchanges the user’s Cognito JWT for short-lived, tenant-scoped IAM credentials through `sts:AssumeRole`, and those scoped credentials are what reaches the MCP Server.
 
 ### Design 2: Interceptor only — act-on-behalf token exchange and context propagation
 
@@ -173,7 +173,7 @@ When the lakehouse agent sends an incoming request, AgentCore Gateway validates 
 
 ### Dynamic tool filtering with the Response interceptor
 
-A Response interceptor also gives you control over what the agent sees after a tool responds. The most common use is filtering the tools list and semantic search responses to show each user only the tools they are permitted to call. You can also integrate with services such as [Amazon Bedrock Guardrails](../ch04-<https://aws.amazon.com/bedrock/guardrails/>) for use cases like personally identifiable information (PII) redaction. This improves security by hiding unauthorized tools from the agent and preventing sensitive information like PII from leaking. It also improves reliability by giving the LLM a smaller, correctly scoped tool list, reducing erroneous tool-selection decisions.
+A Response interceptor also gives you control over what the agent sees after a tool responds. The most common use is filtering the tools list and semantic search responses to show each user only the tools they are permitted to call. You can also integrate with services such as [Amazon Bedrock Guardrails](/ch04-<https://aws.amazon.com/bedrock/guardrails/>/) for use cases like personally identifiable information (PII) redaction. This improves security by hiding unauthorized tools from the agent and preventing sensitive information like PII from leaking. It also improves reliability by giving the LLM a smaller, correctly scoped tool list, reducing erroneous tool-selection decisions.
 
 ## When to use Policy compared to Lambda interceptors
 
@@ -310,7 +310,7 @@ any user | RESTRICTED | any tool | DENY | Cedar: RESTRICTED geography forbid
   
 ## End-to-end implementation walkthrough
 
-To try this solution yourself, start by cloning the [Amazon Bedrock AgentCore samples repository](../ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples>) and navigating to the [lakehouse-agent directory](../ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/02-use-cases/lakehouse-agent>):
+To try this solution yourself, start by cloning the [Amazon Bedrock AgentCore samples repository](/ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples>/) and navigating to the [lakehouse-agent directory](/ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/02-use-cases/lakehouse-agent>/):
     
     
     git clone https://github.com/awslabs/amazon-bedrock-agentcore-samples.git
@@ -352,11 +352,11 @@ AgentCore Gateway integrates with AgentCore Observability and Amazon CloudWatch,
 
 ## Next steps
 
-The sample code for all three designs is available in the [GitHub repository](../ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/02-use-cases/lakehouse-agent/deployment/advanced-agentcore-policy-gateway-interceptor>). Start with the policy rules demonstrated in Design pattern 1, then build out Designs 2 and 3 incrementally as your security and compliance requirements grow.
+The sample code for all three designs is available in the [GitHub repository](/ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/02-use-cases/lakehouse-agent/deployment/advanced-agentcore-policy-gateway-interceptor>/). Start with the policy rules demonstrated in Design pattern 1, then build out Designs 2 and 3 incrementally as your security and compliance requirements grow.
 
 ## Clean up
 
-We recommend that you clean up any resources you do not plan to continue using. This avoids any unexpected charges. Follow [the instructions](../ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/02-use-cases/lakehouse-agent>) to clean up after you have explored the solution.
+We recommend that you clean up any resources you do not plan to continue using. This avoids any unexpected charges. Follow [the instructions](/ch04-<https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/02-use-cases/lakehouse-agent>/) to clean up after you have explored the solution.
 
 ## Conclusion
 
@@ -413,11 +413,11 @@ Lambda 拦截器可以作为 AgentCore Gateway 的中间件——Gateway 负责�
 低频/高风险工具用拦截器（灵活策略），高频/低风险工具用内嵌安全（低延迟）——不要一刀切。
 
 ## 相关实体
-- [Amazon Bedrock Agentic Payments Guardrails](../ch04-059-enable-safe-agentic-payments-with-built-in-guardrails-using)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew)
+- [Amazon Bedrock Agentic Payments Guardrails](/ch04-059-enable-safe-agentic-payments-with-built-in-guardrails-using/)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](/ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco/)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](/ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock/)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](/ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
 

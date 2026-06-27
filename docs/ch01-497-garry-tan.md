@@ -105,21 +105,21 @@ Garry的80-90%标准：
 - 将省下的时间用于更高价值的决策
 
 ## 相关实体
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07-029-qoder-skills-完全指南)
-- [Agent Skill 设计模式](../ch01-677-anthropic)
-- [柚漫剧 AI 全流程提效拆解](../ch01-356-柚漫剧-ai-全流程提效拆解)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](/ch07-029-qoder-skills-完全指南/)
+- [Agent Skill 设计模式](/ch01-677-anthropic/)
+- [柚漫剧 AI 全流程提效拆解](/ch01-356-柚漫剧-ai-全流程提效拆解/)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](/ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化/)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](/ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器/)
 > 主题导航
 
-- [Improving token efficiency in GitHub Agentic Workflows](../ch04-297-improving-token-efficiency-in-github-agentic-workflows)
-- [复杂度棘轮：AI编程的质量只升不降机制](../ch01-309-复杂度棘轮-ai编程的质量只升不降机制)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格)
-- [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路)
-- [Agent Workflows](../ch04-306-agent-workflows)
+- [Improving token efficiency in GitHub Agentic Workflows](/ch04-297-improving-token-efficiency-in-github-agentic-workflows/)
+- [复杂度棘轮：AI编程的质量只升不降机制](/ch01-309-复杂度棘轮-ai编程的质量只升不降机制/)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
+- [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路/)
+- [Agent Workflows](/ch04-306-agent-workflows/)
 - Hermes Agent 新手上手指南
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布)
-- [四种 Sub Agent 模式](../ch04-302-四种-sub-agent-模式)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
+- [四种 Sub Agent 模式](/ch04-302-四种-sub-agent-模式/)
 
 ---
 

@@ -399,7 +399,7 @@ $$r_g = \frac{H_g - \bar{H}}{std(H)}$$
 - 内在奖励（Intrinsic Reward）
 - 好奇心驱动学习（Curiosity-driven Learning）
 - 自我反思（Self-reflection）
-- [LLM RL中的熵 Part 1: 熵的调控](../ch01-612-llm-rl中的熵-part-1-熵的调控)
+- [LLM RL中的熵 Part 1: 熵的调控](/ch01-612-llm-rl中的熵-part-1-熵的调控/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-rl中的熵-part-2-熵对训练的调控.md)
 

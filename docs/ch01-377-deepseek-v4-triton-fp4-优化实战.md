@@ -55,14 +55,14 @@
    NVIDIA 产品线分层是现实约束，不能假设一个 kernel 在 SM100 上正确就在 SM121 上正确。建议建立不同硬件型号的自动化数值回归测试矩阵，覆盖 SM100/SM120/SM121，对 FP4/FP8/FP16/BF16 分别验证。Marlin 在 SM121 上的静默错误就是这个原则的反面教材。
 
 ## 与现有知识关联
-- [LBS-IntentBench](../ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准) — 靳岩岩也是作者之一
+- [LBS-IntentBench](/ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准/) — 靳岩岩也是作者之一
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-triton-fp4-optimization.md) — raw articles 中的完整版本
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai)
-- [ds4c deepseek v4 antirez](../ch01-419-ds4c-deepseek-v4-antirez)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](../ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
-- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](../ch01-552-redis之父下场-给deepseek-v4单独造了一台推理引擎)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](/ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai/)
+- [ds4c deepseek v4 antirez](/ch01-419-ds4c-deepseek-v4-antirez/)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
+- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](/ch01-552-redis之父下场-给deepseek-v4单独造了一台推理引擎/)
 - MOC
 
 ---

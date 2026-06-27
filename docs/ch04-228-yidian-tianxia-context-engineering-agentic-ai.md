@@ -68,17 +68,17 @@ Layer 5: 强制回滚机制 — 所有修改类工具必须附带降级回滚逻
 3. Token 如何**花在刀刃上**（L0/L1/L2 三级分层 + PreCompact 压缩续接）  
 
 ## 相关概念
-- [Factory Mission](../ch01-864-factory-mission-multi-agent-architecture) — 同为 Agent Loop 架构，但 Mission 侧重多 Agent 编排，易点天下侧重企业级单 Agent 深度工程
+- [Factory Mission](/ch01-864-factory-mission-multi-agent-architecture/) — 同为 Agent Loop 架构，但 Mission 侧重多 Agent 编排，易点天下侧重企业级单 Agent 深度工程
 ---  
 *Last updated: 2026-05-08*  
 *评审：Value 8 × Confidence 7 = 56 | ★★★★ | STRONG PASS*  
 
 ## 相关实体
-- [Agentic AI for Subsurface Engineering Simulation (NVIDIA)](../ch04-313-nvidia-agentic-ai-subsurface-engineering)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend)
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch01-189-ai-时代的-git-版本管理最佳实践)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Agentic AI for Subsurface Engineering Simulation (NVIDIA)](/ch04-313-nvidia-agentic-ai-subsurface-engineering/)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](/ch01-189-ai-时代的-git-版本管理最佳实践/)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 
 ## 深度分析
 **1. 六层上下文体系（L1–L6）的系统性工程视角**  

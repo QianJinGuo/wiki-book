@@ -83,31 +83,31 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - **持续进化**：Reflection Agent 思路可推广至其他 AI 工作流，将人工修复经验结构化为可复用的 patch 资产
 
 ## 相关页面
-- [Skill 写作基础指南](../ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/) — 入门级别的 Skill 写作教程
-- [Skill 写作进阶](../ch01-319-agent-skill-进阶模式与治理/) — 高级技巧
+- [Skill 写作基础指南](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则//) — 入门级别的 Skill 写作教程
+- [Skill 写作进阶](/ch01-319-agent-skill-进阶模式与治理//) — 高级技巧
 - Skill 评估方法 — 如何评估 Skill 质量
 
 ## 相关实体
-- [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路/)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
-- [SkillX — 层次化技能知识库](../ch07-042-skillx-层次化技能知识库/)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04-239-anthropic-14-个-agent-skills-设计模式/)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论/)
-- [SkillClaw](../ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化/)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
-- [四种 Sub Agent 模式](../ch04-302-四种-sub-agent-模式/)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills/)
+- [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路//)
+- [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning//)
+- [SkillX — 层次化技能知识库](/ch07-042-skillx-层次化技能知识库//)
+- [Anthropic 14 个 Agent Skills 设计模式](/ch04-239-anthropic-14-个-agent-skills-设计模式//)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](/ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论//)
+- [SkillClaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化//)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力//)
+- [四种 Sub Agent 模式](/ch04-302-四种-sub-agent-模式//)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](/ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills//)
 
-- [Qoder Skills 完全指南](../ch07-029-qoder-skills-完全指南/)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
-- [Garry Tan](../ch01-497-garry-tan/)
-- [Agent Workflows](../ch04-306-agent-workflows/)
-- [Hermes Agent](../ch04-418-hermes-agent/)
+- [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南//)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格//)
+- [Garry Tan](/ch01-497-garry-tan//)
+- [Agent Workflows](/ch04-306-agent-workflows//)
+- [Hermes Agent](/ch04-418-hermes-agent//)
 - Hermes Agent 新手上手指南
-- [你写的 Skill，及格了吗？](../ch07-046-你写的-skill-及格了吗/)
+- [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗//)
 - Hermes Agent Skill
-- [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图/)
-- [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](../ch04-033-阿里云端到端业务需求专家-agent-multica-平台-superai-技能集群-tdd-pre-pus/)
+- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图//)
+- [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](/ch04-033-阿里云端到端业务需求专家-agent-multica-平台-superai-技能集群-tdd-pre-pus//)
 
 ---
 

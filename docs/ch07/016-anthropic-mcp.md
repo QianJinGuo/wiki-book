@@ -121,14 +121,14 @@ Anthropic 明确定义了两者关系：
 ## 相关链接
 - Anthropic 博客原文：https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp
 ## 相关实体
-- [Anthropic Mcp Revisited](../ch07-044-anthropic-mcp-重新定义-tool-search-代码编排/)
-- [Anthropic 12 Mcp Production Patterns](../ch04-032-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式/)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch04-058-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式/)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04-118-鹅厂-skill-写作完整-playbook-14-章节-end-to-end-实战-工程化评估-腾讯一线踩坑/)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch07-060-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式/)
+- [Anthropic Mcp Revisited](/ch07-044-anthropic-mcp-重新定义-tool-search-代码编排//)
+- [Anthropic 12 Mcp Production Patterns](/ch04-032-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式//)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](/ch04-058-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式//)
+- [Tencent Skill Writing Complete Playbook Jackjchou](/ch04-118-鹅厂-skill-写作完整-playbook-14-章节-end-to-end-实战-工程化评估-腾讯一线踩坑//)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](/ch07-060-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式//)
 
-- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](../ch04-108-打造-ai-智能体专属的代码知识库-gitnexus-完整上手攻略/)
-- [Cursor Recall Anthropic Daily Release Cat Wu](../ch09-044-从cursor返聘归来-90后华裔女高管带claude开启日更模式/)
+- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](/ch04-108-打造-ai-智能体专属的代码知识库-gitnexus-完整上手攻略//)
+- [Cursor Recall Anthropic Daily Release Cat Wu](/ch09-044-从cursor返聘归来-90后华裔女高管带claude开启日更模式//)
 - Wiki Audit Skill
 - MOC
 

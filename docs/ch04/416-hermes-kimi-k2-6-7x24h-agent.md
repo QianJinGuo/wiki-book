@@ -10,10 +10,10 @@
 
 ## 相关实体
 - Hermes Agent K2 6 Tutorial
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航/)
-- [Small Hermes Self Evolving Agent Architecture](../ch04-109-small-hermes-自我进化-agent-架构/)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航//)
+- [Small Hermes Self Evolving Agent Architecture](/ch04-109-small-hermes-自我进化-agent-架构//)
 - Kimi K2 Tidb Agent Database Huangdongxu 20260513
-- [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](../ch04-382-深度拆解-hermes-agent-记忆系统-它修正了-openclaw-的哪层误区/)
+- [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](/ch04-382-深度拆解-hermes-agent-记忆系统-它修正了-openclaw-的哪层误区//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-k2-6-multi-agent.md)
 

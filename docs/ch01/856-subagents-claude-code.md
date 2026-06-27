@@ -354,11 +354,11 @@ description字段的本质是**路由契约**而非说明文档。它告诉Claud
 - 观察子代理返回的结论是否主Agent能直接使用
 - 模式稳定后再考虑沉淀为团队规范
 ## 相关实体
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch01-170-深入理解-claude-code-源码中的-agent-harness-构建之道/)
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch01-732-subagents-详解-claude-code-如何避免上下文污染/)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
-- [Claude Code Source Architecture](../ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层/)
-- [Skill System Design Three Way Comparison](../ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](/ch01-170-深入理解-claude-code-源码中的-agent-harness-构建之道//)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](/ch01-732-subagents-详解-claude-code-如何避免上下文污染//)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南//)
+- [Claude Code Source Architecture](/ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层//)
+- [Skill System Design Three Way Comparison](/ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age//)
 
 ---
 

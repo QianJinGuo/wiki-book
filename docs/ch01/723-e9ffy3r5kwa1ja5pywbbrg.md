@@ -58,12 +58,12 @@ DeepSeek上线识图模式并开始灰测，网页版和App均可体验，标志
 
 ### 关联实体
 
-- [Hermes Agent V014 Architecture Shugex](../ch01-806-简单接口-返回最终响应字符串/)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](../ch01-747-latest-open-artifacts-20-new-orgs-new-types-of-models/)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch04-121-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch01-702-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
-- [Deepseek V4 Training 58 Page Paper Deep Dive](../ch01-751-deepseek-v4是怎么训练出来的-58页论文深入解读/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [Hermes Agent V014 Architecture Shugex](/ch01-806-简单接口-返回最终响应字符串//)
+- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](/ch01-747-latest-open-artifacts-20-new-orgs-new-types-of-models//)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](/ch04-121-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升//)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch01-702-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏//)
+- [Deepseek V4 Training 58 Page Paper Deep Dive](/ch01-751-deepseek-v4是怎么训练出来的-58页论文深入解读//)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏//)
 
 ## 实践启示
 

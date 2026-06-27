@@ -7,14 +7,14 @@
 ## 核心要点
 -
 ## 相关实体
-- [Tokenomics The 625 Minute Rule For Claudes Cache](../ch01-385-tokenomics-the-62-5-minute-rule-for-claude-s-cache)
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](../ch01-058-how-superset-built-the-ide-for-ai-agents-on-vercel)
-- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](../ch01-047-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p)
-- [Introducing Claude For Small Business](../ch01-030-introducing-claude-for-small-business)
-- [Granola The Ai Notepad For Backtoback Meetings](../ch03-046-granola-the-ai-notepad-for-back-to-back-meetings)
+- [Tokenomics The 625 Minute Rule For Claudes Cache](/ch01-385-tokenomics-the-62-5-minute-rule-for-claude-s-cache/)
+- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](/ch01-058-how-superset-built-the-ide-for-ai-agents-on-vercel/)
+- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](/ch01-047-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p/)
+- [Introducing Claude For Small Business](/ch01-030-introducing-claude-for-small-business/)
+- [Granola The Ai Notepad For Backtoback Meetings](/ch03-046-granola-the-ai-notepad-for-back-to-back-meetings/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic_cache_tokenomics.md)
-- [the golden rule of customizable select](../ch01-145-the-golden-rule-of-customizable-select)
+- [the golden rule of customizable select](/ch01-145-the-golden-rule-of-customizable-select/)
 
 ## 深度分析
 62.5 分钟规则的核心推导来自一个简单的比值：Anthropic 的缓存写入费用是读取费用的 12.5 倍（写入 = 1.25x 基线输入价格，读取 = 0.10x 基线输入价格）。每 5 分钟刷新一次缓存，每次刷新成本为 R 美元；完整重写成本为 W = 12.5R 美元。保持缓存活跃 T 分钟的总成本为 `W + R × (T/5)`，而放弃缓存并重写的成本为 `2W`。令二者相等得 `T = 5 × (W/R) = 62.5 分钟`。

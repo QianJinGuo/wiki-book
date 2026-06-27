@@ -314,19 +314,19 @@ Agent输出：{agent_output}
 
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
-| [Ai Evals Methodology](../ch01-187-ai-evals-评估方法论) | **方法论概念层** | 概念页：人工/代码/LLM-as-Judge 三大评估类型 + 何时需要评估器的判断框架；本文是其在 Agent 场景的工程化展开 |
-| [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch04-141-agenteval-yaml驱动的agent评测框架) | **YAML 驱动框架** | AgentEval 工具（130 行）：YAML 驱动的 Agent 评测框架 + pass@k + Golang + CI-CD |
-| [Agent Evalkit Aws Opensource Cli Agent Eval Toolkit](../ch11-026-agent-evalkit-aws-开源-cli-agent-评测工具包) | **AWS 开源工具** | AgentEvalKit：AWS 开源的 CLI Agent 评测工具包 |
-| [Aws Reinforcement Fine Tuning Llm As Judge](../ch01-437-aws-reinforcement-fine-tuning-llm-as-judge) | **LLM-as-Judge RFT** | AWS 用 LLM-as-Judge 做 RLHF/RFT 的实践 |
-| [Spotify Llm Evals Funnel Not Fork](../ch01-628-better-experiments-with-llm-evals-a-funnel-not-a-fork-s) | **评测漏斗** | Spotify：评测要 funnel 而非 fork |
-| [Langsmith Trajectory Evals](../ch01-563-langsmith-trajectory-evals) | **LangSmith trace 评测** | LangSmith trajectory 级评测 |
+| [Ai Evals Methodology](/ch01-187-ai-evals-评估方法论/) | **方法论概念层** | 概念页：人工/代码/LLM-as-Judge 三大评估类型 + 何时需要评估器的判断框架；本文是其在 Agent 场景的工程化展开 |
+| [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](/ch04-141-agenteval-yaml驱动的agent评测框架/) | **YAML 驱动框架** | AgentEval 工具（130 行）：YAML 驱动的 Agent 评测框架 + pass@k + Golang + CI-CD |
+| [Agent Evalkit Aws Opensource Cli Agent Eval Toolkit](/ch11-026-agent-evalkit-aws-开源-cli-agent-评测工具包/) | **AWS 开源工具** | AgentEvalKit：AWS 开源的 CLI Agent 评测工具包 |
+| [Aws Reinforcement Fine Tuning Llm As Judge](/ch01-437-aws-reinforcement-fine-tuning-llm-as-judge/) | **LLM-as-Judge RFT** | AWS 用 LLM-as-Judge 做 RLHF/RFT 的实践 |
+| [Spotify Llm Evals Funnel Not Fork](/ch01-628-better-experiments-with-llm-evals-a-funnel-not-a-fork-s/) | **评测漏斗** | Spotify：评测要 funnel 而非 fork |
+| [Langsmith Trajectory Evals](/ch01-563-langsmith-trajectory-evals/) | **LangSmith trace 评测** | LangSmith trajectory 级评测 |
 | Saas Bench Gui Agent Eval Unipat | **GUI Agent 评测** | SaaS-Bench：GUI Agent 评测基准 |
-| [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch04-332-多轮-agent-场景下-滴滴的-eagle-3-训推加速实践) | **电商导购 Agent 评测** | 淘天智能导购 Agent 评测实践 |
-| [Aliyun Agentloop Enterprise Agent Self Evolution Flywheel](../ch04-105-阿里云-agentloop-企业级智能体自进化飞轮-4-环闭环-loongsuite-84-字段覆盖-trac) | **阿里 AgentLoop** | 4 环飞轮中"评估环"的产品化（Agent-as-a-Judge 13 个评估器） |
-| [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者) | **业务 Agent 评测** | 阿里"伯禹"业务 Agent 评测实践 |
-| [Better Harness Eval Trace Harness Hill Climbing](../ch05-058-从-autoresearch-到-better-harness-自动优化真正难在评价信号) | **trace 评测** | trace 级 harness 爬坡的工程方法 |
-| [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](../ch09-049-claw-swe-bench-首个独立测量harness对编程agent影响的基准) | **SWE-Bench 评测** | Claw-SWE-Bench：harness 对编程 Agent 影响的独立基准 |
-| [Anthropic Demystifying Evals For Ai Agents](../ch01-677-anthropic) | **Anthropic evals** | Anthropic Agent 评测揭秘 |
+| [Taobao Smart Shopping Guide Agent Evaluation Pzmx](/ch04-332-多轮-agent-场景下-滴滴的-eagle-3-训推加速实践/) | **电商导购 Agent 评测** | 淘天智能导购 Agent 评测实践 |
+| [Aliyun Agentloop Enterprise Agent Self Evolution Flywheel](/ch04-105-阿里云-agentloop-企业级智能体自进化飞轮-4-环闭环-loongsuite-84-字段覆盖-trac/) | **阿里 AgentLoop** | 4 环飞轮中"评估环"的产品化（Agent-as-a-Judge 13 个评估器） |
+| [Harness Engineered Business Agent Evaluation Aliyun Boyu](/ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者/) | **业务 Agent 评测** | 阿里"伯禹"业务 Agent 评测实践 |
+| [Better Harness Eval Trace Harness Hill Climbing](/ch05-058-从-autoresearch-到-better-harness-自动优化真正难在评价信号/) | **trace 评测** | trace 级 harness 爬坡的工程方法 |
+| [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](/ch09-049-claw-swe-bench-首个独立测量harness对编程agent影响的基准/) | **SWE-Bench 评测** | Claw-SWE-Bench：harness 对编程 Agent 影响的独立基准 |
+| [Anthropic Demystifying Evals For Ai Agents](/ch01-677-anthropic/) | **Anthropic evals** | Anthropic Agent 评测揭秘 |
 
 ## 十一、实践启示
 

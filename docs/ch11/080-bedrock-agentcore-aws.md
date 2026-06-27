@@ -62,15 +62,15 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/intelligent-cost-analysis-and-alerting-system-powered-by-bedrock-agentcore/)
 
 ## 相关实体
-- [Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客](../ch11-021-dify集成amazon-bedrock-agentcore-browser-实现更强大的信息获取和分析能力-亚马/)
-- [快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客](../ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和/)
-- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch11-056-ci-amp-t基于-amazon-bedrock-agentcore-与-openclaw-的企业级智能运维最佳实践/)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚/)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
+- [Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客](/ch11-021-dify集成amazon-bedrock-agentcore-browser-实现更强大的信息获取和分析能力-亚马//)
+- [快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客](/ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和//)
+- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](/ch11-056-ci-amp-t基于-amazon-bedrock-agentcore-与-openclaw-的企业级智能运维最佳实践//)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](/ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚//)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](/ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
 
-- [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11-118-aws-bedrock-agentcore-quality-optimization-flywheel/)
+- [AgentCore质量优化飞轮：推荐-验证-部署闭环](/ch11-118-aws-bedrock-agentcore-quality-optimization-flywheel//)
 
 ---
 

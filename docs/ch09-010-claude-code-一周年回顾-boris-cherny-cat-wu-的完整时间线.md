@@ -209,15 +209,15 @@ Claude Code 用一年时间，从两个 Slack 点赞走到了一个 PM 在写代
 
 ## 相关实体
 
-- [Loop Engineering Addy Osmani Challengehub](../ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad) — Loop 架构的工程实践
-- [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](../ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台) — Boris Cherny 对开发工具演进方向的判断
-- [Claude Opus 4 7 Launch](../ch01-314-claude-opus-4-7-发布分析) — Opus 4.7 的能力跃升
-- [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01-677-anthropic) — Skills 系统的架构设计
-- [Anthropic Mcp Revisited Tool Search Code Orchestration](../ch01-677-anthropic) — 工具调用与代码编排
-- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制) — Claude Code 源码的工程实现深度解读
-- [Kimi Work Beta Foundation Model Company Advantage](../ch04-159-kimi-work-beta-通用-agent-一定来自模型公司) — 模型公司做 Agent 的战略逻辑
-- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01-677-anthropic) — 数据基础设施对 Agent 能力的影响
-- [claude code 一周年回顾：boris cherny + cat wu 对话](../ch09-021-claude-code-一周年回顾-boris-cherny-cat-wu-对话)
+- [Loop Engineering Addy Osmani Challengehub](/ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad/) — Loop 架构的工程实践
+- [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/) — Boris Cherny 对开发工具演进方向的判断
+- [Claude Opus 4 7 Launch](/ch01-314-claude-opus-4-7-发布分析/) — Opus 4.7 的能力跃升
+- [Anthropic 95Pct Data Analysis Skill Stack Architecture](/ch01-677-anthropic/) — Skills 系统的架构设计
+- [Anthropic Mcp Revisited Tool Search Code Orchestration](/ch01-677-anthropic/) — 工具调用与代码编排
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/) — Claude Code 源码的工程实现深度解读
+- [Kimi Work Beta Foundation Model Company Advantage](/ch04-159-kimi-work-beta-通用-agent-一定来自模型公司/) — 模型公司做 Agent 的战略逻辑
+- [Anthropic Biology Agent Data Infrastructure Virbench](/ch01-677-anthropic/) — 数据基础设施对 Agent 能力的影响
+- [claude code 一周年回顾：boris cherny + cat wu 对话](/ch09-021-claude-code-一周年回顾-boris-cherny-cat-wu-对话/)
 
 ---
 

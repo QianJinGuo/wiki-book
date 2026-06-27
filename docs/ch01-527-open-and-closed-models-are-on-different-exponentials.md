@@ -92,7 +92,7 @@ coding agent 是当前唯一明确展示"用户愿意为更好智能支付大幅
 ## 相关实体
 
 - 模型经济学
-- [Karpathy: Vibe Coding 到 Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
 - Anthropic Claude
 - OpenAI
 - 开源 AI

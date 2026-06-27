@@ -140,11 +140,11 @@ SQS 和 Lambda 的成本结构：
 - [Amazon Bedrock Converse API 文档](https://docs.aws.amazon.com/bedrock/latest/userguide/converse-api.html)
 - [Using AWS Lambda with Amazon SQS](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html)
 ## 相关实体
-- [Aws Bedrock Serverless Async Inference Sqs Lambda](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda/)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南/)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](../ch11-216-gemma-4-模型发布-google-deepmind-开源权重家族在-amazon-bedrock-上线/)
+- [Aws Bedrock Serverless Async Inference Sqs Lambda](/ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda//)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多//)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](/ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南//)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore//)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](/ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro//)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](/ch11-216-gemma-4-模型发布-google-deepmind-开源权重家族在-amazon-bedrock-上线//)
 - MOC
 
 ---

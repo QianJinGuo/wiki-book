@@ -13,11 +13,11 @@
 
 ## 相关实体
 - We Tested DeepSeek V4 Pro and Flash Against Claude
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01-519-deepseek-v4深度拆解-一篇论文同时做了五件大事/)
-- [ds4c deepseek v4 antirez](../ch01-419-ds4c-deepseek-v4-antirez/)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7//)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](/ch01-519-deepseek-v4深度拆解-一篇论文同时做了五件大事//)
+- [ds4c deepseek v4 antirez](/ch01-419-ds4c-deepseek-v4-antirez//)
 
-- [deepseek-v4深度拆解一篇论文同时做了五件大事](../ch01-461-deepseek-v4深度拆解一篇论文同时做了五件大事/)
+- [deepseek-v4深度拆解一篇论文同时做了五件大事](/ch01-461-deepseek-v4深度拆解一篇论文同时做了五件大事//)
 
 - MOC
 ## 深度分析

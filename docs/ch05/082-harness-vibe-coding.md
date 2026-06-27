@@ -12,7 +12,7 @@
 - Length: 2736 chars
 - SHA256: eb360a1d53e4e50062cf033f21b666fbc1ddef1d7081a50f8e189249da10086f
 - Score: Value=7 × Confidence=7 = 49
-- Tool: Routa Desktop v0.12.1 (https://github.com/phodal/routa/releases/tag/v0.12.1) See also [Harness Engineering](../ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
+- Tool: Routa Desktop v0.12.1 (https://github.com/phodal/routa/releases/tag/v0.12.1) See also [Harness Engineering](/ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式//)
 
 ## 微信正文
 在最新的 Routa Desktop 中，我们引入了 Harness 工程可视化系统。它并不是一个展示"AI 写了多少代码"的界面，也不是为了给生成式开发增加一层炫目的仪表盘，而是试图回答一个更关键的问题：当 AI 逐渐成为软件交付链路中的执行者，团队如何依然保持对工程系统的理解、约束与控制？

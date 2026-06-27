@@ -138,11 +138,11 @@ ChatGPT Futures名单揭示的机会图谱表明，AI的真正价值在于使此
 ## 参考资料
 
 ## 相关实体
-- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](../ch01-677-anthropic)
-- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](../ch01-618-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope)
-- [Thehackernews Fake Openai Privacy Filter](../ch01-656-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra)
-- [Openai Buys Ai Consultancy Enterprises](../ch01-721-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models)
-- [Microsoft Is Quietly Shopping For An Openai Replac](../ch01-036-microsoft-is-quietly-shopping-for-an-openai-replacement)
+- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](/ch01-677-anthropic/)
+- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](/ch01-618-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope/)
+- [Thehackernews Fake Openai Privacy Filter](/ch01-656-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra/)
+- [Openai Buys Ai Consultancy Enterprises](/ch01-721-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/)
+- [Microsoft Is Quietly Shopping For An Openai Replac](/ch01-036-microsoft-is-quietly-shopping-for-an-openai-replacement/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/18岁高中生用ai挖出150万未知天体首批chatgpt原住民毕业.md)
 

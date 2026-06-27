@@ -18,11 +18,11 @@
 
 ### 关联实体
 
-- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](../ch01-710-2026-年面向-llm-的-rl-方法总结-从-ppo-到-dpo-到-grpo-再到多智能体-rl)
-- [Claude Code Large Codebase Harness Configuration](../ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对)
-- [Joyai Echo Long Video Framework Jd](../ch04-099-joyai-echo-京东开源长音视频生成框架-5-分钟一致性-7-5x-dmd-加速-director-age)
-- [Building Web Search Enabled Agents With Strands And Exa](../ch04-373-building-web-search-enabled-agents-with-strands-and-exa)
-- [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch01-822-deepseek陈德里ai论文第二弹-从6分到8分-deliautoresearch-skill又进化了)
+- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](/ch01-710-2026-年面向-llm-的-rl-方法总结-从-ppo-到-dpo-到-grpo-再到多智能体-rl/)
+- [Claude Code Large Codebase Harness Configuration](/ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对/)
+- [Joyai Echo Long Video Framework Jd](/ch04-099-joyai-echo-京东开源长音视频生成框架-5-分钟一致性-7-5x-dmd-加速-director-age/)
+- [Building Web Search Enabled Agents With Strands And Exa](/ch04-373-building-web-search-enabled-agents-with-strands-and-exa/)
+- [Deli Auto Research Skill V2 Continual Learning Self Improvement](/ch01-822-deepseek陈德里ai论文第二弹-从6分到8分-deliautoresearch-skill又进化了/)
 - 相关领域: agent
 
 ## 实践启示

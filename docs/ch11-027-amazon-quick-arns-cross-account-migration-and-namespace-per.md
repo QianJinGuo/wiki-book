@@ -14,7 +14,7 @@ You migrate dashboards from development to production, but the permissions don�
 
 These are real tasks that Amazon Quick administrators tackle regularly, and getting them right requires a clear understanding of how Amazon Resource Names (ARNs) work.
 
-[Amazon Quick](../ch11-<https://aws.amazon.com/quicksight/>) is a unified, AI-powered business intelligence service that helps you build interactive dashboards, query data in natural language, automate workflows, and embed analytics directly into applications. As you scale your deployments across multiple AWS accounts and namespaces, understanding how Amazon Quick identifies and secures resources through ARNs becomes critical.
+[Amazon Quick](/ch11-<https://aws.amazon.com/quicksight/>/) is a unified, AI-powered business intelligence service that helps you build interactive dashboards, query data in natural language, automate workflows, and embed analytics directly into applications. As you scale your deployments across multiple AWS accounts and namespaces, understanding how Amazon Quick identifies and secures resources through ARNs becomes critical.
 
 In this post, we cover the structure of Amazon Quick ARNs and provide a practical mental model for working with them. By the end, you can look at an ARN and immediately understand what it means for your migration strategy, diagnose permission issues faster, and design multi-tenant architectures with confidence.
 
@@ -27,7 +27,7 @@ Throughout this post, you see ARNs like:
     
     arn:aws:quicksight:us-east-1:123456789012:dashboard/...
 
-The “quicksight” portion refers to the Quick Sight capability within Amazon Quick. Existing code, IAM policies, and CLI commands continue to work without modification for current implementations. For more information, see [Amazon Quick Sight Resource ARNs](../ch11-<https://docs.aws.amazon.com/quicksight/latest/APIReference/qs-resource-arns.html>).
+The “quicksight” portion refers to the Quick Sight capability within Amazon Quick. Existing code, IAM policies, and CLI commands continue to work without modification for current implementations. For more information, see [Amazon Quick Sight Resource ARNs](/ch11-<https://docs.aws.amazon.com/quicksight/latest/APIReference/qs-resource-arns.html>/).
 
 ## Think of ARNs as postal addresses
 
@@ -59,7 +59,7 @@ Saanvi, a data analyst at AnyCompany, builds a sales dashboard in Development:
     
     arn:aws:quicksight:us-east-1:111111111111:dashboard/sales-dash-001
 
-She uses the [Asset Bundle APIs](../ch11-<https://docs.aws.amazon.com/quicksight/latest/developerguide/asset-bundle-ops.html>) to migrate it to QA. The dashboard now has a new ARN:
+She uses the [Asset Bundle APIs](/ch11-<https://docs.aws.amazon.com/quicksight/latest/developerguide/asset-bundle-ops.html>/) to migrate it to QA. The dashboard now has a new ARN:
     
     
     arn:aws:quicksight:us-east-1:222222222222:dashboard/sales-dash-001
@@ -161,10 +161,10 @@ When the Asset Bundle APIs import the bundle into the target account, they autom
    「Access denied」错误的首要排查步骤：确认被授权的主体 ARN 与实际用户 ARN 完全一致，包括 account ID 和 namespace。其次检查资源是否处于 restricted folder——folder 级别限制会覆盖 ARN 级别权限声明。 
 
 ## 相关实体
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick)
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a)
-- [Amazon Quick Research Agentic Multi Source Citation](../ch04-183-amazon-quick-research-agentic-multi-source-research-workflo)
-- [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](../ch11-046-amazon-bedrock-cross-region-inference-cris-eu-data-reside)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](/ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](/ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
+- [Amazon Quick Research Agentic Multi Source Citation](/ch04-183-amazon-quick-research-agentic-multi-source-research-workflo/)
+- [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](/ch11-046-amazon-bedrock-cross-region-inference-cris-eu-data-reside/)
 - Build Real Time Voice Applications With Amazon Sagemaker Ai
 
 ---

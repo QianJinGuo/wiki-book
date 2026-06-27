@@ -100,11 +100,11 @@ Voice cloning 可以用于：
 - 特殊口音
 - 跨语言切换
 ## 相关实体
-- [Openai Quietly Bought Voice Cloning Star](../ch01-526-openai-quietly-bought-voice-cloning-startup-weights-gg)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
-- [Scammers Send Physical Phishing Letters To Steal Ledger Wall](../ch12-077-scammers-send-physical-phishing-letters-to-steal-ledger-wall)
-- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack)
-- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us)
+- [Openai Quietly Bought Voice Cloning Star](/ch01-526-openai-quietly-bought-voice-cloning-startup-weights-gg/)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](/ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
+- [Scammers Send Physical Phishing Letters To Steal Ledger Wall](/ch12-077-scammers-send-physical-phishing-letters-to-steal-ledger-wall/)
+- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
+- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
 - MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md)

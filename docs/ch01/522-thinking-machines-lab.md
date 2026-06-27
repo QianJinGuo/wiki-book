@@ -72,11 +72,11 @@ OpenAI、Google、Meta FAIR 的研究部门正在变成高级 AI 人才的中转
 63 家前沿实验室大量融资，但目前没有任何一个国家建立了针对"基础模型突破性研究"的监管框架。这类实验室的研究方向（通用智能、具身智能、安全对齐）一旦失控，后果远超现有 AI 应用。监管框架的前瞻性设计已迫在眉睫。
 
 ## 相关实体
-- [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](../ch01-270-估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai/)
-- [Thinking Machines Interaction Models](../ch04-278-thinking-machines-交互模型-interaction-models/)
+- [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](/ch01-270-估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai//)
+- [Thinking Machines Interaction Models](/ch04-278-thinking-machines-交互模型-interaction-models//)
 - Yann Dubois Openai Post Training Interview
-- [Microsoft Agent Framework Python Full Guide Zizhi](../ch01-585-微软-agent-framework-全栈指南-从-hello-agent-到生产托管-python/)
-- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01-159-kimi-work-通用-agent-战场从云端迁移到本地/)
+- [Microsoft Agent Framework Python Full Guide Zizhi](/ch01-585-微软-agent-framework-全栈指南-从-hello-agent-到生产托管-python//)
+- [Kimi Work Codex Vibe Working Paradigm Shift](/ch01-159-kimi-work-通用-agent-战场从云端迁移到本地//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai.md)
 

@@ -90,10 +90,10 @@
 
 ## 相关实体
 
-- [Harness Engineering](../ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
-- [Claw-SWE-Bench](../ch09-049-claw-swe-bench-首个独立测量harness对编程agent影响的基准/) — harness 独立评测基准
-- [Skill 版本对比五大原则](../ch07-049-skill-版本对比五大原则-从-两个数字比大小-到工程化质量门禁/) — 评估方法论
-- [OpenClaw Agent Loop 设计模式](../ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式/)
+- [Harness Engineering](/ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式//)
+- [Claw-SWE-Bench](/ch09-049-claw-swe-bench-首个独立测量harness对编程agent影响的基准//) — harness 独立评测基准
+- [Skill 版本对比五大原则](/ch07-049-skill-版本对比五大原则-从-两个数字比大小-到工程化质量门禁//) — 评估方法论
+- [OpenClaw Agent Loop 设计模式](/ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式//)
 
 ---
 

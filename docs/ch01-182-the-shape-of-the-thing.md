@@ -200,21 +200,21 @@ Mollick 结尾给出的判断值得专门拆开：「我们能看到那个 Thing
 
 ## 相关实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
-- [Claude Opus 48 The System Card B8460F](../ch01-244-claude-opus-4-8-the-system-card)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
-- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
-- [Agent Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey)
-- [Gpt 5 It Just Does Stuff](../ch01-418-gpt-5-it-just-does-stuff-mollick-的主动式-ai-原语)
-- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01-207-claude-md)
-- [Ahe Agentic Harness Engineering](../ch04-212-ahe-agentic-harness-engineering/)
-- [Agentic Harness Engineering Ahe](../ch04-212-ahe-agentic-harness-engineering)
-- [Agent Harness Architecture](../ch04-207-agent-harness-架构)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
+- [Claude Opus 48 The System Card B8460F](/ch01-244-claude-opus-4-8-the-system-card/)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch04-199-openclaw-完全指南/)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
+- [Agent Harness Engineering Survey 2026](/ch04-069-agent-harness-engineering-a-survey/)
+- [Gpt 5 It Just Does Stuff](/ch01-418-gpt-5-it-just-does-stuff-mollick-的主动式-ai-原语/)
+- [Andrej Karpathy Claude Md 134K Stars 2026](/ch01-207-claude-md/)
+- [Ahe Agentic Harness Engineering](/ch04-212-ahe-agentic-harness-engineering//)
+- [Agentic Harness Engineering Ahe](/ch04-212-ahe-agentic-harness-engineering/)
+- [Agent Harness Architecture](/ch04-207-agent-harness-架构/)
 
 ---
 

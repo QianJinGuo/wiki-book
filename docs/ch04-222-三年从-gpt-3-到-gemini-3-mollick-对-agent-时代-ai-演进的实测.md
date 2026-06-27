@@ -87,11 +87,11 @@ Mollick 强调 Agent"在需要批准时会 ping 你"——这意味着有效的 
 Mollick 发现，当他对 Gemini 3 提出模糊但有空间的改进建议（"build it out more, make it better"），Agent 的表现提升显著——"就像指导学生一样"。  这提示 Agentic AI 的最佳交互模式不是"一次性给出完整指令"，而是**迭代式引导**：给方向而非给细节，让 AI 自己补全执行路径。这要求工作者具备"模糊指令精确化"的能力——既能给出战略方向，又能为 AI 的创造性执行留出空间。
 
 ## 相关实体
-- [Using Ai Right Now Mollick Quick Guide](../ch01-525-mollick-实用-ai-选型指南-模型选择-deep-research-voice-mode-agent-工作流)
-- [Gpt5 Just Does Stuff Mollick](../ch01-418-gpt-5-it-just-does-stuff-mollick-的主动式-ai-原语)
-- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick)
-- [Sign Of The Future Gpt 55 Mollick](../ch01-269-gpt-5-5-sign-of-the-future-mollick-的模型-apps-harnesses-三层框架)
-- [Bitter Lesson Garbage Can Mollick](../ch04-272-bitter-lesson-vs-garbage-can-组织理论视角下的-ai-采用)
+- [Using Ai Right Now Mollick Quick Guide](/ch01-525-mollick-实用-ai-选型指南-模型选择-deep-research-voice-mode-agent-工作流/)
+- [Gpt5 Just Does Stuff Mollick](/ch01-418-gpt-5-it-just-does-stuff-mollick-的主动式-ai-原语/)
+- [Guide Ai Agents Models Apps Harnesses Mollick](/ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick/)
+- [Sign Of The Future Gpt 55 Mollick](/ch01-269-gpt-5-5-sign-of-the-future-mollick-的模型-apps-harnesses-三层框架/)
+- [Bitter Lesson Garbage Can Mollick](/ch04-272-bitter-lesson-vs-garbage-can-组织理论视角下的-ai-采用/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/three-years-from-gpt-3-to-gemini-3.md)
 

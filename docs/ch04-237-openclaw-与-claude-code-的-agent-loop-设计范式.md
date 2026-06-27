@@ -55,9 +55,9 @@ Boris 提出了 5 条让 Opus 系统自动运行数小时或数天的技巧：
 
 ## 与已有实体的关联
 
-- [OpenClaw 技术架构分析](../ch01-157-800行代码实现-open-claw-的-tool-消息总线-子agent管理架构) — 本文补充了设计哲学层面的循环范式
-- [Agent 架构演进](../ch04-507-17种agent架构演进-控制流设计的完整演化史) — 可作为循环阶段的系统性补充
-- [Hermes Agent 0.14 架构](../ch04-418-hermes-agent) — 具体实现层面的循环机制
+- [OpenClaw 技术架构分析](/ch01-157-800行代码实现-open-claw-的-tool-消息总线-子agent管理架构/) — 本文补充了设计哲学层面的循环范式
+- [Agent 架构演进](/ch04-507-17种agent架构演进-控制流设计的完整演化史/) — 可作为循环阶段的系统性补充
+- [Hermes Agent 0.14 架构](/ch04-418-hermes-agent/) — 具体实现层面的循环机制
 
 ## 核心论点
 
@@ -116,7 +116,7 @@ Claude Code 的 agent loop 遵循"tool call → observation → reasoning → ne
 多步 loop 需要维护跨步骤的状态——使用 working set / scratchpad 模式，避免上下文溢出。
 
 ## 相关实体
-- [Steipete Skill Cleaner Liangzide](../ch07-051-龙虾之父教你省钱-开源skill给你的skill减肥)
+- [Steipete Skill Cleaner Liangzide](/ch07-051-龙虾之父教你省钱-开源skill给你的skill减肥/)
 
 ---
 

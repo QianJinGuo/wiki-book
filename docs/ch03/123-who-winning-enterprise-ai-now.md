@@ -24,13 +24,13 @@
 - **投资视角**：Claude 的高速增长说明"可信替代者"战略在企业市场有效；关注模型公司在编码、医疗、法律等垂直场景的专有数据积累
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s//)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri//)
 - Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客/)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](/ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
 
-- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](../ch04-370-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
+- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](/ch04-370-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s//)
 
 ---

@@ -67,7 +67,7 @@ LLM 的输入本质上是一个**单一的、连续的文本流**。这与人类
 
 ### 对 Agent 安全的深远影响
 
-这个框架对 [Hermes Agent Self-Evolving](../ch04-039-hermes-agent-self-evolving-source-analysis) 和其他 Agent 系统的安全设计有直接启示：
+这个框架对 [Hermes Agent Self-Evolving](/ch04-039-hermes-agent-self-evolving-source-analysis/) 和其他 Agent 系统的安全设计有直接启示：
 
 1. **架构层面的角色隔离**：真正的防御需要在架构层面建立角色隔离，而非依赖 prompt 层的软约束。Agent 系统应该确保 tool 输出在物理上与 user 指令分离，而不是仅靠标签区分。
 
@@ -103,10 +103,10 @@ LLM 的输入本质上是一个**单一的、连续的文本流**。这与人类
 
 ## 相关实体
 
-- [Hermes Agent Self-Evolving](../ch04-039-hermes-agent-self-evolving-source-analysis) — Agent 安全治理
+- [Hermes Agent Self-Evolving](/ch04-039-hermes-agent-self-evolving-source-analysis/) — Agent 安全治理
 - Agent Security Threat Model — Agent 安全威胁模型
 - Agent Harness Context Management — 上下文管理中的安全挑战
-- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/) — Harness 工程中的安全设计
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) — Harness 工程中的安全设计
 
 ## 参考
 

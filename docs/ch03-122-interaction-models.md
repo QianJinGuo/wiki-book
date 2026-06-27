@@ -26,11 +26,11 @@
 
 ## 相关实体
 
-- [Thinking Machines 交互模型（Interaction Models）](../ch01-510-thinking-machines-interaction-models-ai-cold)
+- [Thinking Machines 交互模型（Interaction Models）](/ch01-510-thinking-machines-interaction-models-ai-cold/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/genesis-ai-gene-25-embodied-foundation-model.md)
 
-- [Interaction Models: A Scalable Approach to Human-AI Collaboration](../ch03-122-interaction-models)
+- [Interaction Models: A Scalable Approach to Human-AI Collaboration](/ch03-122-interaction-models/)
 
 ---
 

@@ -10,9 +10,9 @@
 
 ## 相关实体
 
-- [SEO is a product, AEO is brand](../ch03-107-seo-is-a-product-aeo-is-brand)
+- [SEO is a product, AEO is brand](/ch03-107-seo-is-a-product-aeo-is-brand/)
 
-- [Spotify Logo Gets A Makeover Turns Into A Disco Ball](../ch03-114-spotify-logo-gets-a-makeover-turns-into-a-disco-ball)
+- [Spotify Logo Gets A Makeover Turns Into A Disco Ball](/ch03-114-spotify-logo-gets-a-makeover-turns-into-a-disco-ball/)
 ## 深度分析
 Eli Schwartz 的核心论点是"SEO is a product, AEO is brand"——这是一个组织结构和预算分配的问题，而非技术问题。
 **SEO 作为产品的本质：** SEO manager 应该像 PM 一样运作，需要 cross-functional 的软技能而非技术实现能力。SEO 的问题从来不在于"怎么做"，而在于"谁能决定资源分配"。当 SEO 归市场部门时，它只能请求工程团队协助，而这些请求不是 requirements——这解释了为什么大多数 SEO 计划死在 committee 里。

@@ -77,11 +77,11 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 
 ## 与现有实体的关系
 
-- **与 [Claude Code 1 周年回顾](../ch09-010-claude-code-一周年回顾-boris-cherny-cat-wu-的完整时间线/)** 互补：1 周年是时间线 + 团队视角；本文是开发者工作流哲学
-- **与 [Harness Engineering 核心模式](../ch01-698-深入浅出-harness-engineering-之核心模式与理念/)** 互补：CE plan.md 循环是 harness engineering 的具体实现
-- **与 [工作流 Skill 模式](../ch07-003-工作流的-skill-怎么写-从-7-个顶级-skill-中提炼的模式与最佳实践/)** 呼应：「任何做超过 2 次的事 → 做成技能」是 SkillOS 哲学的实战版
+- **与 [Claude Code 1 周年回顾](/ch09-010-claude-code-一周年回顾-boris-cherny-cat-wu-的完整时间线//)** 互补：1 周年是时间线 + 团队视角；本文是开发者工作流哲学
+- **与 [Harness Engineering 核心模式](/ch01-698-深入浅出-harness-engineering-之核心模式与理念//)** 互补：CE plan.md 循环是 harness engineering 的具体实现
+- **与 [工作流 Skill 模式](/ch07-003-工作流的-skill-怎么写-从-7-个顶级-skill-中提炼的模式与最佳实践//)** 呼应：「任何做超过 2 次的事 → 做成技能」是 SkillOS 哲学的实战版
 - **与 Hermes 自进化** 平行：Matt 用 OpenClaw + Hermes 跑远程工作
-- **与 [Agent 六机制](../ch04-047-agent-自我改进的六条路/)** 呼应：「先 plan 后 work」是六机制中"计划-执行分离"的具体实现
+- **与 [Agent 六机制](/ch04-047-agent-自我改进的六条路//)** 呼应：「先 plan 后 work」是六机制中"计划-执行分离"的具体实现
 
 ## 工程可复现项
 
@@ -97,11 +97,11 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 
 ### 核心观点：80% 计划 + 20% 执行是 AI 时代人机协作的结构性反转
 
-传统软件工程中，开发者的时间大量投入"执行"（写代码、调试），计划只是前期铺垫。Matt Van Horn 的实验揭示了一个结构性反转：当 AI 能承担高质量执行时，人类的价值迁移到**计划质量本身**。写计划强迫 Agent 研究、承诺方法、列出验收标准——这是防止 Agent 偷懒的机制，而不是给人类自己看的文档。[Agent Self Improvement Six Mechanisms](../ch04-047-agent-自我改进的六条路/) 中的"计划-执行分离"与此呼应，但本文的贡献在于将这个原则 operationalize 为日常工具使用行为（每件事都先 /ce-plan）。
+传统软件工程中，开发者的时间大量投入"执行"（写代码、调试），计划只是前期铺垫。Matt Van Horn 的实验揭示了一个结构性反转：当 AI 能承担高质量执行时，人类的价值迁移到**计划质量本身**。写计划强迫 Agent 研究、承诺方法、列出验收标准——这是防止 Agent 偷懒的机制，而不是给人类自己看的文档。[Agent Self Improvement Six Mechanisms](/ch04-047-agent-自我改进的六条路//) 中的"计划-执行分离"与此呼应，但本文的贡献在于将这个原则 operationalize 为日常工具使用行为（每件事都先 /ce-plan）。
 
 ### 技术要点："让 AI 写 plan.md 但不读 plan.md"本质是委托-代理最优分离
 
-这个看似反直觉的做法有深刻的工程逻辑：plan.md 是 Agent 的作业而非人类的阅读材料。人类只需要扫一眼标题判断方向，然后 /ce-work 内联提问 TLDR/eli5。这意味着人类扮演的是**评审者而非消费者**——计划的生产者和计划的执行者是同一个 Agent，但人类只消费计划的摘要而非完整内容。这与 [Harness Engineering Core Patterns Claude Code](../ch01-698-深入浅出-harness-engineering-之核心模式与理念/) 中描述的 Harness Engineering 原则一致：人类定义验收标准，Agent 负责实现路径。
+这个看似反直觉的做法有深刻的工程逻辑：plan.md 是 Agent 的作业而非人类的阅读材料。人类只需要扫一眼标题判断方向，然后 /ce-work 内联提问 TLDR/eli5。这意味着人类扮演的是**评审者而非消费者**——计划的生产者和计划的执行者是同一个 Agent，但人类只消费计划的摘要而非完整内容。这与 [Harness Engineering Core Patterns Claude Code](/ch01-698-深入浅出-harness-engineering-之核心模式与理念//) 中描述的 Harness Engineering 原则一致：人类定义验收标准，Agent 负责实现路径。
 
 ### 实践价值：cmux 6 标签页并行 + 声音钩子是分布式认知的物理实现
 
@@ -113,17 +113,17 @@ Agent Cookie（将真实浏览器会话交给 CLI）解决了 AI Agent 落地最
 
 ### 技术判断：成瘾是真实风险，而非边缘警告
 
-Matt 坦诚提到"成瘾是真实问题，不是休息"，这个判断值得认真对待。AI coding 的反馈循环（快速产出 → 即时满足 → 更大目标）在神经机制上与游戏/社交媒体类似，但产出的社会价值完全不同。这不是道德说教，而是可持续性问题。当"努力工作"变成了 Agent 代为执行、人类负责批准的状态时，职业身份的瓦解可能比工作效率的提升来得更快。这与 [Agentic Ai System Architecture Harness Skill Mcp](../ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/) 中讨论的"AI 影子采纳率"问题（77.55% 管理者无法分辨 AI 使用）形成微观-宏观对应：成瘾是个人层面的影子采纳，影子采纳是组织层面的成瘾。
+Matt 坦诚提到"成瘾是真实问题，不是休息"，这个判断值得认真对待。AI coding 的反馈循环（快速产出 → 即时满足 → 更大目标）在神经机制上与游戏/社交媒体类似，但产出的社会价值完全不同。这不是道德说教，而是可持续性问题。当"努力工作"变成了 Agent 代为执行、人类负责批准的状态时，职业身份的瓦解可能比工作效率的提升来得更快。这与 [Agentic Ai System Architecture Harness Skill Mcp](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真//) 中讨论的"AI 影子采纳率"问题（77.55% 管理者无法分辨 AI 使用）形成微观-宏观对应：成瘾是个人层面的影子采纳，影子采纳是组织层面的成瘾。
 
 ## 实践启示
 
-1. **所有任务都从 /ce-plan 开始，哪怕只是"写一个脚本"**：计划不是给人类看的文档，而是强迫 Agent 做深度研究的机制。直接索要交付物 → 偷工减料版本；先 plan 如何生成交付物 → 每次都是深度版本。这个原则与 [Skill Writing Patterns Best Practices](../ch07-003-工作流的-skill-怎么写-从-7-个顶级-skill-中提炼的模式与最佳实践/) 中"做超过 2 次的事 → 做成技能"的精神一致：都是将重复行为升级为系统性工程。
+1. **所有任务都从 /ce-plan 开始，哪怕只是"写一个脚本"**：计划不是给人类看的文档，而是强迫 Agent 做深度研究的机制。直接索要交付物 → 偷工减料版本；先 plan 如何生成交付物 → 每次都是深度版本。这个原则与 [Skill Writing Patterns Best Practices](/ch07-003-工作流的-skill-怎么写-从-7-个顶级-skill-中提炼的模式与最佳实践//) 中"做超过 2 次的事 → 做成技能"的精神一致：都是将重复行为升级为系统性工程。
 
 2. **6 标签页并行是 Agent 时代的"多线程"**：设置 cmux 为 4-6 个标签页，分别运行 /ce-plan（研究）、/ce-work（构建）、/last30days（研究）、修 bug（调试）。用声音钩子区分完成信号（不同 tab 完成后播放不同声音）。这是分布式认知的物理实现，让人类同时"监控"多个 Agent 进程而不过载。
 
 3. **语音输入将瓶颈从打字速度切换到判断力**：Mac 上用 Monologue/Wispr Flow + 鹅颈麦，语音转文字 + LLM 纠错。核心洞察：LLM 能填补转录错误——这意味着语音输入的质量下限由 LLM 的容错能力决定，而非麦克风质量。这个模式将人类的竞争优势锁定在"判断力"而非"执行速度"，这正是 Agent 时代最稀缺的资源。
 
-4. **构建自己的技能库作为复利资产**：任何做超过 2 次的事 → 做成技能。[Skill Writing Patterns Best Practices](../ch07-003-工作流的-skill-怎么写-从-7-个顶级-skill-中提炼的模式与最佳实践/) 是技能编写的最佳实践，Matt 的实践进一步说明：让 Agent 读优秀技能（如 CE 体系）模仿结构，是技能积累的正向飞轮。每一次技能封装都是可复用资产的下一次复利。
+4. **构建自己的技能库作为复利资产**：任何做超过 2 次的事 → 做成技能。[Skill Writing Patterns Best Practices](/ch07-003-工作流的-skill-怎么写-从-7-个顶级-skill-中提炼的模式与最佳实践//) 是技能编写的最佳实践，Matt 的实践进一步说明：让 Agent 读优秀技能（如 CE 体系）模仿结构，是技能积累的正向飞轮。每一次技能封装都是可复用资产的下一次复利。
 
 5. **警惕"整个人消失在构建过程中"**：Matt 的警告值得每个 Agent 时代工程师认真对待：Agent 本该替人类工作，但相反所有人都在比以往更努力地工作。破解方法：有意识地保留"非 AI 时间"——与人的真实连接、线下的身体感知、离开屏幕的判断力训练。Agent 是强大的，但判断力只有在持续使用中才能保持锐度。
 

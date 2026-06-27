@@ -75,11 +75,11 @@ RLVR 的结果更可复现、更难刷榜，是评估模型真实能力的更好
 "开源永远追不上"和"开源很快会超越"都是叙事，不是数据。用具体 benchmark 的历史趋势做决策。
 
 ## 相关实体
-- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](../ch01-394-latest-open-artifacts-21-open-model-bonanza-gemma-4-de)
-- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch01-874-nvidia-nemotron-3-ultra-hybrid-transformer-mamba-moe-for-ag)
-- [Ai Job Interview Model Evaluation Mollick](../ch01-460-给-ai-做工作面试-mollick-的模型评估方法论)
-- [Claude Code Performance Benchmarking](../ch09-031-claude-code-性能基准评测)
-- [Mythos_Offensive_Security_Xbow_Evaluatio](../ch01-291-mythos-for-offensive-security-xbow-s-evaluation)
+- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](/ch01-394-latest-open-artifacts-21-open-model-bonanza-gemma-4-de/)
+- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](/ch01-874-nvidia-nemotron-3-ultra-hybrid-transformer-mamba-moe-for-ag/)
+- [Ai Job Interview Model Evaluation Mollick](/ch01-460-给-ai-做工作面试-mollick-的模型评估方法论/)
+- [Claude Code Performance Benchmarking](/ch09-031-claude-code-性能基准评测/)
+- [Mythos_Offensive_Security_Xbow_Evaluatio](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
 
 ## 相关引用
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/reading-todays-open-closed-performance-gap.md)

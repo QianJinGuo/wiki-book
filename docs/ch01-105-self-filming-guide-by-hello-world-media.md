@@ -68,9 +68,9 @@
 ## 相关实体
 > 主题导航
 
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](../ch01-875-what-is-urban-density-design-a-clear-guide-to-how-cities-ge)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](/ch01-875-what-is-urban-density-design-a-clear-guide-to-how-cities-ge/)
 
-- [World's first native color LiDAR gives machines human-like vision](../ch01-767-world-s-first-native-color-lidar-gives-machines-human-like-v)
+- [World's first native color LiDAR gives machines human-like vision](/ch01-767-world-s-first-native-color-lidar-gives-machines-human-like-v/)
 
 ---
 

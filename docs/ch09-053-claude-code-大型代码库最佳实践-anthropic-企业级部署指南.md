@@ -64,29 +64,29 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 - ⚠️ **需要额外配置**：大量二进制资产的游戏引擎、非 Git 版本控制、非工程师贡献内容
 
 ## 相关实体
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具)
-- [claude-code-agent-view](../ch09-001-claude-code-agent-view)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-367-claude-code-harness-deep-understanding)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch01-677-anthropic)
-- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制)
-- [AutoResearch：多 Agent 自动化软件开发](../ch09-030-autoresearch-多-agent-自动化软件开发)
-- [Claude Opus 4.7 发布分析](../ch01-314-claude-opus-4-7-发布分析)
-- [Claude Code 设计原则与对照分析](../ch01-403-claude-code-设计原则与对照分析)
-- [Claude Managed Agents 官方 Harness 平台指南](../ch01-677-anthropic)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch01-677-anthropic)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-126-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](/ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具/)
+- [claude-code-agent-view](/ch09-001-claude-code-agent-view/)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-367-claude-code-harness-deep-understanding/)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](/ch01-677-anthropic/)
+- [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制/)
+- [AutoResearch：多 Agent 自动化软件开发](/ch09-030-autoresearch-多-agent-自动化软件开发/)
+- [Claude Opus 4.7 发布分析](/ch01-314-claude-opus-4-7-发布分析/)
+- [Claude Code 设计原则与对照分析](/ch01-403-claude-code-设计原则与对照分析/)
+- [Claude Managed Agents 官方 Harness 平台指南](/ch01-677-anthropic/)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch01-677-anthropic/)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-126-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题/)
 
-- [Harness如何支撑Agent在生产环境稳定运行？](../ch04-127-harness如何支撑agent在生产环境稳定运行)
+- [Harness如何支撑Agent在生产环境稳定运行？](/ch04-127-harness如何支撑agent在生产环境稳定运行/)
 > 主题导航
 
-- [Claude Code 源码深度解析（13 核心机制）](../ch01-231-claude-code-源码深度解析-13-核心机制)
-- [Claude Code 源码核心机制详解](../ch01-162-claude-code-源码核心机制详解)
-- [柚漫剧 AI全流程提效拆解](../ch01-645-柚漫剧-ai全流程提效拆解)
-- [Claude Code 可控性：软规则无法变成硬约束](../ch09-067-claude-code-可控性-软规则无法变成硬约束)
-- [Claude Managed Agents 开发者指南](../ch04-421-claude-managed-agents)
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人)
+- [Claude Code 源码深度解析（13 核心机制）](/ch01-231-claude-code-源码深度解析-13-核心机制/)
+- [Claude Code 源码核心机制详解](/ch01-162-claude-code-源码核心机制详解/)
+- [柚漫剧 AI全流程提效拆解](/ch01-645-柚漫剧-ai全流程提效拆解/)
+- [Claude Code 可控性：软规则无法变成硬约束](/ch09-067-claude-code-可控性-软规则无法变成硬约束/)
+- [Claude Managed Agents 开发者指南](/ch04-421-claude-managed-agents/)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](/ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人/)
 - Claude Code 工具设计演化
 
 - MOC

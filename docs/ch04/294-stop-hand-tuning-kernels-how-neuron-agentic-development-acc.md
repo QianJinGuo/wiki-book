@@ -74,9 +74,9 @@ Step 3-4 展示 SwiGLU MLP 内核的性能分析：
 
 ## 相关实体
 
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/) — AgentCore 安全配置
-- [Agentcore Harness](../ch04-206-agentcore-managed-harness/) — AgentCore 工程化
-- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](../ch04-214-build-an-ai-powered-equipment-repair-assistant-using-amazon/) — AgentCore + Strands 实践
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](/ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew//) — AgentCore 安全配置
+- [Agentcore Harness](/ch04-206-agentcore-managed-harness//) — AgentCore 工程化
+- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](/ch04-214-build-an-ai-powered-equipment-repair-assistant-using-amazon//) — AgentCore + Strands 实践
 - Agent Deployment Strategy — Agent 部署策略
 - Agent Loop Design — Agent 循环设计
 - Aws Ai Services — AWS AI 服务

@@ -80,12 +80,12 @@ Instance Pools改变了这一点：冷启动时会自动按优先级尝试可用
 ---
 *Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-sagemaker-capacity-aware-inference-fallback.md)*
 ## 相关实体
-- [EC2 Capacity Blocks：GPU短期容量决策指南](../ch11-190-aws-ec2-capacity-blocks-gpu-ml)
-- [GRPO+RLVR: Qwen数学推理3.7x提升的工程细节](../ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning)
-- [Building Blocks for Foundation Model Training and Inference on AWS](../ch11-117-building-blocks-for-foundation-model-training-and-inference)
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning)
-- [redis agentic ai flowers with iris](../ch01-891-redis-agentic-ai-flowers-with-iris)
+- [EC2 Capacity Blocks：GPU短期容量决策指南](/ch11-190-aws-ec2-capacity-blocks-gpu-ml/)
+- [GRPO+RLVR: Qwen数学推理3.7x提升的工程细节](/ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning/)
+- [Building Blocks for Foundation Model Training and Inference on AWS](/ch11-117-building-blocks-for-foundation-model-training-and-inference/)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](/ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda/)
+- [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
+- [redis agentic ai flowers with iris](/ch01-891-redis-agentic-ai-flowers-with-iris/)
 - MOC
 
 ---

@@ -11,11 +11,11 @@
 解法是：多个 Agent 协作，每个只干一件事。
 
 ## 相关实体
-- [构建基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统)
-- [Factory Mission Multi Agent Architecture](../ch01-864-factory-mission-multi-agent-architecture)
-- [Anthropic Multi Agent Research System](../ch01-677-anthropic)
-- [Multi Agent Mission Factory Luke Aiengineer](../ch04-512-multi-agent-架构-factory-mission-系统的方法论)
-- [构建基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [构建基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
+- [Factory Mission Multi Agent Architecture](/ch01-864-factory-mission-multi-agent-architecture/)
+- [Anthropic Multi Agent Research System](/ch01-677-anthropic/)
+- [Multi Agent Mission Factory Luke Aiengineer](/ch04-512-multi-agent-架构-factory-mission-系统的方法论/)
+- [构建基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/james-multi-agent-collaboration-modes.md)
 

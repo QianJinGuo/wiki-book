@@ -8,11 +8,11 @@
 大家好，欢迎来到 code秘密花园，我是花园老师（ConardLi）
 
 ## 相关实体
-- [Skill Development Guide Aliyun 2026](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布)
-- [Manus.Im Manus Schedules](../ch03-036-introducing-scheduled-tasks-2-0)
-- [Openclaw Multi Agent Team Practice](../ch04-038-openclaw-multi-agent-team-practice-v2)
-- [Strands Agents Cloud Cost Optimizer](../ch04-128-基于-strands-agents-构建亚马逊云科技云成本分析与优化-ai-助手)
-- [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](../ch03-025-别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个)
+- [Skill Development Guide Aliyun 2026](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
+- [Manus.Im Manus Schedules](/ch03-036-introducing-scheduled-tasks-2-0/)
+- [Openclaw Multi Agent Team Practice](/ch04-038-openclaw-multi-agent-team-practice-v2/)
+- [Strands Agents Cloud Cost Optimizer](/ch04-128-基于-strands-agents-构建亚马逊云科技云成本分析与优化-ai-助手/)
+- [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](/ch03-025-别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验.md)
 

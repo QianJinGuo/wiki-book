@@ -43,9 +43,9 @@
 ## 相关实体
 > 主题导航
 
-- [New cybersecurity industry coalition aims to lead US critical infrastructure protection](../ch11-004-new-cybersecurity-industry-coalition-aims-to-lead-us-critica)
-- [From Doer To Director: The AI Mindset Shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift)
-- [CISA urges critical infrastructure firms to ‘fortify’ before it’s too late | Cybersecurity Dive](../ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before)
+- [New cybersecurity industry coalition aims to lead US critical infrastructure protection](/ch11-004-new-cybersecurity-industry-coalition-aims-to-lead-us-critica/)
+- [From Doer To Director: The AI Mindset Shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
+- [CISA urges critical infrastructure firms to ‘fortify’ before it’s too late | Cybersecurity Dive](/ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before/)
 
 ---
 

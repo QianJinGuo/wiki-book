@@ -8,7 +8,7 @@
 
 Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其对比。每种方法影响三件事：指令何时加载进上下文、压缩后是否持续生效、指令权重有多高。
 
-与 [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07-006-claude-code-skills-mcp-rules-source-analysis/) 互补——源码分析侧重底层 API 注入位置，本文侧重官方使用指南和决策框架。
+与 [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](/ch07-006-claude-code-skills-mcp-rules-source-analysis//) 互补——源码分析侧重底层 API 注入位置，本文侧重官方使用指南和决策框架。
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 
@@ -32,7 +32,7 @@ Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其
 - monorepo 中给每个团队目录放自己的子目录 CLAUDE.md，用 `claudeMdExcludes` 跳过不相关团队文件
 - 组织级标准（安全策略、合规）通过 MDM 部署，不允许个人排除
 
-→ [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09-039-claude-md-12-条规则-karpathy-扩展模板/)
+→ [CLAUDE.md 12 条规则：Karpathy 扩展模板](/ch09-039-claude-md-12-条规则-karpathy-扩展模板//)
 
 ## 规则：路径作用域是关键
 
@@ -53,7 +53,7 @@ All API handlers must validate input with Zod before processing.
 
 部署流程、发布检查清单、审查流程 → 技能，不是 CLAUDE.md。
 
-→ [Claude Code 源码解析](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
+→ [Claude Code 源码解析](/ch07-006-claude-code-skills-mcp-rules-source-analysis//)
 
 ## 子智能体：隔离是核心价值
 
@@ -61,7 +61,7 @@ All API handlers must validate input with Zod before processing.
 
 深度搜索、日志分析、依赖审计 → 子智能体。流程在主线程展开方便调整 → 技能。
 
-→ [Claude Code 子智能体上下文卫生](../ch04-162-claude-code-subagents-深度指南-上下文卫生实战/)
+→ [Claude Code 子智能体上下文卫生](/ch04-162-claude-code-subagents-深度指南-上下文卫生实战//)
 
 ## 钩子：确定性执行
 
@@ -69,7 +69,7 @@ All API handlers must validate input with Zod before processing.
 
 上下文成本低——配置位于主上下文之外。PreToolUse hook 可以用退出码 2 拒绝工具调用。
 
-→ [Claude Code Hooks 完整指南](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
+→ [Claude Code Hooks 完整指南](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南//)
 
 ## 输出风格：权重最高，谨慎使用
 
@@ -122,10 +122,10 @@ Claude Code 中，钩子是唯一能保证"确定性触发、确定性执行"的
 ## 相关链接
 
 - 原文：https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more
-- → [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
-- → [Claude Code 治理：软规则与硬约束](../ch09-067-claude-code-可控性-软规则无法变成硬约束/)
-- → [Claude Code 子智能体上下文卫生](../ch04-162-claude-code-subagents-深度指南-上下文卫生实战/)
-- → [Claude Code Hooks 完整指南](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
+- → [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](/ch07-006-claude-code-skills-mcp-rules-source-analysis//)
+- → [Claude Code 治理：软规则与硬约束](/ch09-067-claude-code-可控性-软规则无法变成硬约束//)
+- → [Claude Code 子智能体上下文卫生](/ch04-162-claude-code-subagents-深度指南-上下文卫生实战//)
+- → [Claude Code Hooks 完整指南](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南//)
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 
 ---

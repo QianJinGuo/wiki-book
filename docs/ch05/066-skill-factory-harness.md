@@ -12,9 +12,9 @@
 
 ## 相关实体
 - Claude Code Prompt Context Harness
-- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料/)
-- [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析/)
-- [Anthropic Managed Agents Scaling](../ch04-290-anthropic-managed-agents-scaling/)
+- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料//)
+- [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析//)
+- [Anthropic Managed Agents Scaling](/ch04-290-anthropic-managed-agents-scaling//)
 - Hermes Agent Deep Dive Alibaba
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-factory-yueheng.md)

@@ -161,10 +161,10 @@ Anthropic 将"分离执行与评判"描述为"强杠杆"，背后有一个深刻
 团队中存在大量隐性知识（Tacit Knowledge）——价格字段的单位约束、某条链路是高频变更区、某个配置类在全项目有近百处引用——这些知识从未被系统化记录。Harness 体系将这些隐性知识转化为显性规范的过程应该遵循工程优先级：**优先记录高频影响项**，如跨文件引用的配置类、核心业务字段的类型约束、已知的架构陷阱；**次优先记录低频但高影响项**，如特殊链路的边界条件、只在特定场景下生效的约束；**避免过早规范化低频项**，以免规范文档膨胀导致信息过载。规范体系的建设是持续迭代的过程，不是一次性的完美设计。
 
 ## 相关实体
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](../ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
-- [Harness Engineering 指南（字节跳动TRAE）](../ch01-520-来自字节跳动trae的harness-engineering指南/)
-- [清华大学 Harness Engineering 研究报告](../ch05-060-清华大学-驾驭工程-harness-engineering-研究报告/)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](/ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务//)
+- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](/ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式//)
+- [Harness Engineering 指南（字节跳动TRAE）](/ch01-520-来自字节跳动trae的harness-engineering指南//)
+- [清华大学 Harness Engineering 研究报告](/ch05-060-清华大学-驾驭工程-harness-engineering-研究报告//)
 - Harness 组件保质期——Model-Harness Fit 与 Build to Delete 原则
 
 ---

@@ -9,11 +9,11 @@ Seismic data analysis is an essential component of energy exploration, but confi
 (Halliburton Bedrock GenAI article content - 15,222 chars fetched from AWS)
 
 ## 相关实体
-- [Amazon Quick Research Agentic Multi Source Citation](../ch04-183-amazon-quick-research-agentic-multi-source-research-workflo)
-- [Build Financial Document Processing With Pulse Ai And Amazon Bedrock](../ch11-130-build-financial-document-processing-with-pulse-ai-and-amazon)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
+- [Amazon Quick Research Agentic Multi Source Citation](/ch04-183-amazon-quick-research-agentic-multi-source-research-workflo/)
+- [Build Financial Document Processing With Pulse Ai And Amazon Bedrock](/ch11-130-build-financial-document-processing-with-pulse-ai-and-amazon/)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](/ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz/)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-halliburton-seismic-workflow-genai.md)
 

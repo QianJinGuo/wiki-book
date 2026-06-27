@@ -42,13 +42,13 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stochastic-parrot-language-models-and-meaning.md)
 
 ## 相关实体
-- [Language Models and Meaning](../ch01-373-language-models-and-meaning/)
+- [Language Models and Meaning](/ch01-373-language-models-and-meaning//)
 - Reinforcing Recursive Language Models | alphaXiv
-- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](../ch11-177-cost-effective-deployment-of-vision-language-models-for-pet/)
-- [On the Deep Mystery of Language Models](../ch01-572-stochastic-parrot-deep-mystery-llms/)
-- [A Thought Experiment](../ch01-650-stochastic-parrot-thought-experiment/)
-- [Marcus on AI Productivity](../ch11-069-stochastic-parrot-marcus-ai-productivity/)
-- [While Breathless In Stodgy Viridian](../ch01-436-while-breathless-in-stodgy-viridian/)
+- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](/ch11-177-cost-effective-deployment-of-vision-language-models-for-pet//)
+- [On the Deep Mystery of Language Models](/ch01-572-stochastic-parrot-deep-mystery-llms//)
+- [A Thought Experiment](/ch01-650-stochastic-parrot-thought-experiment//)
+- [Marcus on AI Productivity](/ch11-069-stochastic-parrot-marcus-ai-productivity//)
+- [While Breathless In Stodgy Viridian](/ch01-436-while-breathless-in-stodgy-viridian//)
 
 ---
 

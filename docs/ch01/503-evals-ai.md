@@ -11,11 +11,11 @@
 AI Evals 的本质：**把"好不好"变成可重复判断的工程机制**。
 
 ## 相关实体
-- [Ai Skill Skill Creator 源码拆解](../ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南/)
-- [Ai Skill Metrics System](../ch01-383-ai-skill-测评指标体系/)
-- [Langsmith Trajectory Evals](../ch01-563-langsmith-trajectory-evals/)
-- [Aws Bedrock Agentcore Quality Optimization Flywheel](../ch11-118-aws-bedrock-agentcore-quality-optimization-flywheel/)
-- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen 1](../ch01-784-generalization-dynamics-of-lm-pre-training-jiaxin-wen/)
+- [Ai Skill Skill Creator 源码拆解](/ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南//)
+- [Ai Skill Metrics System](/ch01-383-ai-skill-测评指标体系//)
+- [Langsmith Trajectory Evals](/ch01-563-langsmith-trajectory-evals//)
+- [Aws Bedrock Agentcore Quality Optimization Flywheel](/ch11-118-aws-bedrock-agentcore-quality-optimization-flywheel//)
+- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen 1](/ch01-784-generalization-dynamics-of-lm-pre-training-jiaxin-wen//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evals-three-methods-of-ai-evaluation.md)
 

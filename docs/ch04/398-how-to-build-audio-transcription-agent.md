@@ -56,7 +56,7 @@
 1. **优先评估 Faster-Whisper（ctranslate2 量化版）而非原生 Whisper**。Faster-Whisper 在保持精度的同时，将推理速度提升 2-4x，内存占用降低 50%+。对于需要本地部署或高吞吐量的场景，这是性价比最优的开源选择。量化版本（INT8）进一步降低硬件门槛，RTX 3080 即可运行 large-v3 模型。
 2. **对于会议记录场景，必须集成 Diarization**。推荐使用 pyannote.audio 3.0 搭配 Whisper。需要注意 pyannote 3.0 对采样率先决条件（必须 16kHz），需要在预处理阶段完成重采样。集成后需要标定：短句（<3秒）和噪声环境下的说话人混淆率仍偏高，必要时可加入"人声活性检测（VAD）"作为辅助判断依据。
 3. **实时转录的音频缓冲策略需要根据内容类型调优**。通用场景建议 30fps（每 333ms 一个音频chunk）；对于快速交替对话场景，建议降低到 100-150ms chunk 以减少说话人切换延迟，但会略微增加总体延迟。实现上可使用动态 VAD（Voice Activity Detection）触发非固定长度chunk，在静音和语音活跃状态间自适应切换。
-4. **构建端到端转录+分析 Agent 时，使用双 buffer 架构**。音频片段先进入转录 buffer（Whisper 处理），转录文本进入 LLM 分析 buffer（Claude 处理）。两个 buffer 独立运行，通过任务队列解耦。这种架构使得转录和分析可以独立扩缩容（转录吃 GPU，分析吃 CPU），也避免了单次长音频阻塞整个 pipeline。参考 [From Agent Protocol To Harness Skill](../ch04-351-from-agent-protocol-to-harness-skill/) 的 Skill Composition 模式。
+4. **构建端到端转录+分析 Agent 时，使用双 buffer 架构**。音频片段先进入转录 buffer（Whisper 处理），转录文本进入 LLM 分析 buffer（Claude 处理）。两个 buffer 独立运行，通过任务队列解耦。这种架构使得转录和分析可以独立扩缩容（转录吃 GPU，分析吃 CPU），也避免了单次长音频阻塞整个 pipeline。参考 [From Agent Protocol To Harness Skill](/ch04-351-from-agent-protocol-to-harness-skill//) 的 Skill Composition 模式。
 5. **生产环境必须实现音频格式的自动检测和预处理标准化**。用户上传的音频可能来自不同设备（手机/会议软件/录音笔），格式（MP3/OGG/WAV/FLAC）、采样率（8kHz/16kHz/48kHz）和声道（单声道/立体声）差异巨大。建议接入 FFmpeg 作为预处理标准工具，所有音频统一转换为 16kHz 单声道 WAV后再送入 Whisper。提前处理格式问题可以避免 20% 以上的隐性转录失败率。
 
 ---

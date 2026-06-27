@@ -8,11 +8,11 @@
 - 文章分析了零售银行业务的核心问题
 - 涉及 AI 在金融领域的应用
 ## 相关实体
-- [Microsoft Startups](../ch01-687-microsoft-for-startups-microsoft)
-- [5Thingstoknowabouttheclarityact](../ch01-093-5-things-to-know-about-the-clarity-act)
-- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch03-059-the-stablecoin-24x7-money-loop-business-case-for-banks)
-- [Chime Earnings Q1 2026 Ai Upmarket](../ch01-780-chime-turns-a-profit-as-members-hit-10-2-million)
-- [Deels Accelerate Or Die Moment](../ch01-121-deel-s-accelerate-or-die-moment)
+- [Microsoft Startups](/ch01-687-microsoft-for-startups-microsoft/)
+- [5Thingstoknowabouttheclarityact](/ch01-093-5-things-to-know-about-the-clarity-act/)
+- [The Stablecoin 24X7 Money Loop Fintechbrainfood](/ch03-059-the-stablecoin-24x7-money-loop-business-case-for-banks/)
+- [Chime Earnings Q1 2026 Ai Upmarket](/ch01-780-chime-turns-a-profit-as-members-hit-10-2-million/)
+- [Deels Accelerate Or Die Moment](/ch01-121-deel-s-accelerate-or-die-moment/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/finanser-retail-banking-broken.md)
 

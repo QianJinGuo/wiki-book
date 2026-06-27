@@ -16,7 +16,7 @@ Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI 
 
 1. # Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI
 2. Physical AI is moving from research into production
-3. The full code of this solution is available in the [accompanying GitHub repository](../ch01-<https://github
+3. The full code of this solution is available in the [accompanying GitHub repository](/ch01-<https://github
 4. Why Amazon SageMaker AI for Physical AI training
 
 ### 内容结构
@@ -38,11 +38,11 @@ Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI 
 
 ### 与现有知识体系的关联
 
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://../ch08-228-nvidia-isaac-lab-sagemaker-robot-rl-humanoid/)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://../ch08-228-nvidia-isaac-lab-sagemaker-robot-rl-humanoid//)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch04-199-openclaw-完全指南/)
 
 ## 实践启示
 

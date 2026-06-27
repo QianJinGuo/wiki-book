@@ -63,8 +63,8 @@ Deep Research 让 AI 进行 10-15 分钟网络研究后给出报告，质量往�
 
 ## 相关主题
 
-- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick/) — 同一作者的 2026-02 更新版（更聚焦 agentic era）
-- [Gpt5 Just Does Stuff Mollick](../ch01-418-gpt-5-it-just-does-stuff-mollick-的主动式-ai-原语/) — GPT-5 模型能力侧写（同一作者）
+- [Guide Ai Agents Models Apps Harnesses Mollick](/ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick//) — 同一作者的 2026-02 更新版（更聚焦 agentic era）
+- [Gpt5 Just Does Stuff Mollick](/ch01-418-gpt-5-it-just-does-stuff-mollick-的主动式-ai-原语//) — GPT-5 模型能力侧写（同一作者）
 - Jagged Ai Frontier Mollick — Jagged Frontier / GDPval 实际工作评估（同一作者）
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/an-opinionated-guide-to-using-ai-right-now.md)
 

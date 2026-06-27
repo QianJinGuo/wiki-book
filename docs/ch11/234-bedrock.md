@@ -57,11 +57,11 @@
 - 误识别时的安全回退（人工复核）
 
 ## 相关实体
-- [Aws Bedrock Serverless Async Inference Multimodal](../ch11-073-amazon-bedrock模型推理的serverless异步架构-处理在线多模态高负载案例/)
-- [Verizon Connect Agentic Ai 100K Users](../ch04-097-verizon-connect-agentic-ai-10万用户规模的工程实践/)
-- [Deepseek Vision Primitives](../ch01-863-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度/)
-- [Agentcore Harness](../ch04-206-agentcore-managed-harness/)
-- [Aws Bedrock Ops Alert](../ch11-093-amazon-bedrock-ops-alert-三层监控架构/)
+- [Aws Bedrock Serverless Async Inference Multimodal](/ch11-073-amazon-bedrock模型推理的serverless异步架构-处理在线多模态高负载案例//)
+- [Verizon Connect Agentic Ai 100K Users](/ch04-097-verizon-connect-agentic-ai-10万用户规模的工程实践//)
+- [Deepseek Vision Primitives](/ch01-863-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度//)
+- [Agentcore Harness](/ch04-206-agentcore-managed-harness//)
+- [Aws Bedrock Ops Alert](/ch11-093-amazon-bedrock-ops-alert-三层监控架构//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bedrock-image-content-precise-analysis.md)
 

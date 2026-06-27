@@ -33,11 +33,11 @@ Which means the office, if there even is one anymore, probably looks more like t
 I am not sure what to call this. It is not a coworking space. It is not a coffee shop. It is not a corporate office. It is not a home office, which has its own problems. It might be closer to a private club, or a boutique hotel you live near, or something that does not have a word yet. What I keep coming back to is that the most valuable work in the world is now the work of direction, and the people doing it are working in environments built for a workload that no longer exists. There is something to build here. I do not know its full shape.
 
 ## 相关实体
-- [刚刚Openai 放出三个语音模型顺便杀死了同传](../ch01-346-刚刚-openai-放出三个语音模型-顺便杀死了-同传/)
-- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch03-056-yc-ceo-garry-tan-200美元重构400万美元项目-ai-agent协作开发实践/)
-- [Defect Backlog Retention Report](../ch03-003-your-defect-backlog-is-a-retention-report/)
-- [Against Brain Damage](../ch03-016-against-brain-damage/)
+- [刚刚Openai 放出三个语音模型顺便杀死了同传](/ch01-346-刚刚-openai-放出三个语音模型-顺便杀死了-同传//)
+- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了//)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](/ch03-056-yc-ceo-garry-tan-200美元重构400万美元项目-ai-agent协作开发实践//)
+- [Defect Backlog Retention Report](/ch03-003-your-defect-backlog-is-a-retention-report//)
+- [Against Brain Damage](/ch03-016-against-brain-damage//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dictation-agents-human-workspace.md)
 

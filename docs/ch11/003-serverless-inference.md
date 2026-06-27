@@ -12,9 +12,9 @@
 > 主题导航
 
 - How to Calculate the Inference Efficiency Ratio
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda/)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](/ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda//)
 
-- [55+ models, every modality. one api key, one bill.](../ch11-238-55-models-every-modality-one-api-key-one-bill/)
+- [55+ models, every modality. one api key, one bill.](/ch11-238-55-models-every-modality-one-api-key-one-bill//)
 
 ## 深度分析
 ### Serverless Inference 的定位与市场逻辑

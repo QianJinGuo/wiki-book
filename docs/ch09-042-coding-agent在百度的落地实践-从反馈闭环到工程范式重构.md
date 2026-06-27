@@ -131,11 +131,11 @@ Skill和MCP的选择本质上是「按需加载」和「全量加载」的选择
 原文：https://mp.weixin.qq.com/s/rKnNaGJnlfhdIufpGDuHuQ
 
 ## 相关实体
-- [Harness Engineering Reliable Long Term Agent](../ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务)
-- [Harness Engineering Jk Launcher Baijiajie](../ch05-029-万字干货-harness-engineering如何工程化落地)
-- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09-005-让-coding-agent-从黑盒到透明-阿里云-agent-观测审计数据采集实践-loongsuite-pilot)
-- [Anthropic Coding Agents Social Science Survey 2026](../ch01-677-anthropic)
-- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](../ch01-645-柚漫剧-ai全流程提效拆解)
+- [Harness Engineering Reliable Long Term Agent](/ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
+- [Harness Engineering Jk Launcher Baijiajie](/ch05-029-万字干货-harness-engineering如何工程化落地/)
+- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](/ch09-005-让-coding-agent-从黑盒到透明-阿里云-agent-观测审计数据采集实践-loongsuite-pilot/)
+- [Anthropic Coding Agents Social Science Survey 2026](/ch01-677-anthropic/)
+- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](/ch01-645-柚漫剧-ai全流程提效拆解/)
 - MOC
 
 ---

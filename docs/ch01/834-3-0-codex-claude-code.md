@@ -8,8 +8,8 @@
 
 ## 相关实体
 
-- [你的ai代码越写越乱，他72小时合了14个pr——差距只在一个机制](../ch04-269-你的ai代码越写越乱-他72小时合了14个pr-差距只在一个机制/)
-- [karpathy × boris 访谈：software 3.0 时代编程完整地图](../ch01-620-karpathy-boris-访谈-software-3-0-时代编程完整地图/)
+- [你的ai代码越写越乱，他72小时合了14个pr——差距只在一个机制](/ch04-269-你的ai代码越写越乱-他72小时合了14个pr-差距只在一个机制//)
+- [karpathy × boris 访谈：software 3.0 时代编程完整地图](/ch01-620-karpathy-boris-访谈-software-3-0-时代编程完整地图//)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/coze-3-0-local-agent-codex-claude-code-project.md)
 
 - MOC
@@ -43,12 +43,12 @@ Coze（扣子）3.
 - **claude趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践/)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制//)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道//)
+- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践//)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验//)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering//)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606//)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

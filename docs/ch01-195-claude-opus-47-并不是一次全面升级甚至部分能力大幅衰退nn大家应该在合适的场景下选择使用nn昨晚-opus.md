@@ -87,7 +87,7 @@ __
 __
 名称已清空
 **微信扫一扫赞赏作者**
-喜欢作者  [ 其它金额 ](../ch01-<>)
+喜欢作者  [ 其它金额 ](/ch01-<>/)
 __
 赞赏后展示我的头像
 作品
@@ -121,12 +121,12 @@ __
 __
 天津  ,  2026年4月17日 10:17
 ## 相关实体
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践)
-- [Claude Opus 4 7 Launch](../ch01-314-claude-opus-4-7-发布分析)
-- [Claude Opus 47](../ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus)
-- [claude opus 4.8 系统卡片深度分析](../ch01-898-claude-opus-4-8-系统卡片深度分析)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
+- [Claude Opus 4 7 Launch](/ch01-314-claude-opus-4-7-发布分析/)
+- [Claude Opus 47](/ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus/)
+- [claude opus 4.8 系统卡片深度分析](/ch01-898-claude-opus-4-8-系统卡片深度分析/)
 
 ---
 

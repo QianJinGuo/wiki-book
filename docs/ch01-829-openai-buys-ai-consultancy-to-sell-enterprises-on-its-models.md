@@ -8,8 +8,8 @@
 
 ## 相关实体
 
-- [the inevitable need for an open model consortium](../ch01-816-the-inevitable-need-for-an-open-model-consortium)
-- [ai-driven layoffs aren’t making business sense | cio](../ch01-398-ai-驱动的裁员没有商业意义-gartner-研究)
+- [the inevitable need for an open model consortium](/ch01-816-the-inevitable-need-for-an-open-model-consortium/)
+- [ai-driven layoffs aren’t making business sense | cio](/ch01-398-ai-驱动的裁员没有商业意义-gartner-研究/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5238213.md)
 
 - MOC
@@ -48,12 +48,12 @@ Search
 - **aws趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
 - Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch04-199-openclaw-完全指南/)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

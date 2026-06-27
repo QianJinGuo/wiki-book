@@ -10,15 +10,15 @@
 - Structured（XML/JSON）与 Free-form 两种 prompt 策略对比
 - Nova 2 Lite 三项公开基准测试平均 F1 75.70%，优于同期对照模型
 ## 相关实体
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践)
-- [Build An Enterprise Observability Solution For Amazon Quick](../ch11-020-build-an-enterprise-observability-solution-for-amazon-quick)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](../ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick)
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
+- [Build An Enterprise Observability Solution For Amazon Quick](/ch11-020-build-an-enterprise-observability-solution-for-amazon-quick/)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](/ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prompting-amazon-nova-2-for-content-moderation.md)
 
-- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](../ch01-497-garry-tan)
+- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](/ch01-497-garry-tan/)
 
 ## 深度分析
 ### AILuminate 分类体系：12 类危害Taxonomy

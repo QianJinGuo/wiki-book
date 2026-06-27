@@ -33,7 +33,7 @@
 5. **独立验证**（sub-agent/reviewer/测试）——避免「自写自审」的反馈缺失
 6. **状态记忆**（plan.md、issue、日志）——让下一轮能接上前一轮
 
-这个清单与 [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务) 的核心组件（tool / context / verifier）有强对应关系，但**Loop 比 Harness 高一层**：Harness 管「这一次任务怎么跑」，Loop 管「这类任务怎么持续发生」。
+这个清单与 [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/) 的核心组件（tool / context / verifier）有强对应关系，但**Loop 比 Harness 高一层**：Harness 管「这一次任务怎么跑」，Loop 管「这类任务怎么持续发生」。
 
 ### 单 Agent 循环 vs Fleet 循环
 
@@ -156,7 +156,7 @@ Peter Steinberger 提出的成本结构揭示了一个反直觉事实：Loop Eng
 | 权限模型 | 无（全自动） | 7 种渐进模式 |
 | 上下文管理 | 无（每轮独立） | 5 层渐进压缩管线 |
 
-这个表印证了 [VILA-Lab 1.6% vs 98.4%](../ch01-631-撕开claude-code真相-让它好用的98-4-是工程不是ai) 的核心发现：**循环决策逻辑应该占代码总量的 < 10%，复杂度放在循环之外的基础设施里**。
+这个表印证了 [VILA-Lab 1.6% vs 98.4%](/ch01-631-撕开claude-code真相-让它好用的98-4-是工程不是ai/) 的核心发现：**循环决策逻辑应该占代码总量的 < 10%，复杂度放在循环之外的基础设施里**。
 
 **5 个核心决策**（设计任何 Loop 前必须回答的问题）：
 
@@ -195,11 +195,11 @@ Peter Steinberger 提出的成本结构揭示了一个反直觉事实：Loop Eng
 
 ## 与库内相关实体的交叉
 
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch04-409-agent-orchestration)：Bun→Rust 75 万行移植使用的 Claude Code Dynamic Workflows（10 大实战场景 + Thariq 6 模式 + 3 类失败模式）
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](/ch04-409-agent-orchestration/)：Bun→Rust 75 万行移植使用的 Claude Code Dynamic Workflows（10 大实战场景 + Thariq 6 模式 + 3 类失败模式）
 - Verifier Driven Development：Verifier-driven Development（"每个 AI 产出必须有 verifier"，与本文"verifier 封顶产出质量"互相印证）
 - Ai R And D Bottleneck Shift：AI R&D 瓶颈迁移（"当 verifier 的成本下降时，loop 才能规模化"，与本文"经济可行性取决于验证成本"同源）
 - Agent Self Improvement Loops：Agent 自我改进循环（与本文"外循环 = 教训持久化"深度交叉）
-- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](../ch01-176-三器合一-comet-openspec-superpowers-用文件系统给-ai-编程上工程纪律-术哥源)：同日入库的 Comet 工程取舍深度文，含完整的 harness 工程取舍 + 9 平台 PreToolUse Hook 嵌套 Skill 触发规范
+- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](/ch01-176-三器合一-comet-openspec-superpowers-用文件系统给-ai-编程上工程纪律-术哥源/)：同日入库的 Comet 工程取舍深度文，含完整的 harness 工程取舍 + 9 平台 PreToolUse Hook 嵌套 Skill 触发规范
 
 ## 相关实体
 

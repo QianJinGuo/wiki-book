@@ -31,11 +31,11 @@ Drupal 此次安全更新的紧急程度体现在其发布的措辞中："exploi
 4. **备份验证**：更新前确认完整备份可用，包括数据库和文件
 5. **增量升级策略**：建议先升级到受支持版本的最新的安全补丁，再计划后续的主要版本升级
 ## 相关实体
-- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](../ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner/)
-- [Funnel Builder Flaw Under Active Exploitation Enables Woocommerce Checkout Skimm](../ch12-050-funnel-builder-flaw-under-active-exploitation-enables-woocom/)
-- [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](../ch12-015-resecurity-cve-2026-20182-unauthenticated-cisco-sd-wan-co/)
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch12-020-how-an-image-could-compromise-your/)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes/)
+- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](/ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner//)
+- [Funnel Builder Flaw Under Active Exploitation Enables Woocommerce Checkout Skimm](/ch12-050-funnel-builder-flaw-under-active-exploitation-enables-woocom//)
+- [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](/ch12-015-resecurity-cve-2026-20182-unauthenticated-cisco-sd-wan-co//)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](/ch12-020-how-an-image-could-compromise-your//)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](/ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/drupal-core-security-drupal-to-release-urgent-core-security.md)
 - new york design week is here, may 14–20 - core77

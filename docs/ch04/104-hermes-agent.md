@@ -180,12 +180,12 @@ Time To First Token 的单独记录是一个看似小但实际非常关键的 fe
 - 演示示例：https://sls.aliyun.com/doc/playground/cmsdemo.html
 - CMS 2.0 控制台：https://cmsnext.console.aliyun.com/
 ## 相关实体
-- [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch04-067-hermes-agent-operator-上手-把一个-agent-养成可运营系统/)
-- [Hermes Agent Memory System Vs Openclaw](../ch04-068-hermes-agent-记忆系统深度拆解/)
-- [Hermes Agent Vs Openclaw Comparison](../ch04-188-hermes-agent-为什么火了-和-openclaw-龙虾比一比/)
-- [Hermes Agent Self Evolving Source Analysis](../ch04-039-hermes-agent-self-evolving-source-analysis/)
-- [Small Hermes Self Evolving Agent Architecture](../ch04-109-small-hermes-自我进化-agent-架构/)
-- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01-197-opentelemetry-ebpf-instrumentation-obi-零代码全栈可观测性的内核级实现/)
+- [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](/ch04-067-hermes-agent-operator-上手-把一个-agent-养成可运营系统//)
+- [Hermes Agent Memory System Vs Openclaw](/ch04-068-hermes-agent-记忆系统深度拆解//)
+- [Hermes Agent Vs Openclaw Comparison](/ch04-188-hermes-agent-为什么火了-和-openclaw-龙虾比一比//)
+- [Hermes Agent Self Evolving Source Analysis](/ch04-039-hermes-agent-self-evolving-source-analysis//)
+- [Small Hermes Self Evolving Agent Architecture](/ch04-109-small-hermes-自我进化-agent-架构//)
+- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](/ch01-197-opentelemetry-ebpf-instrumentation-obi-零代码全栈可观测性的内核级实现//)
 
 ---
 

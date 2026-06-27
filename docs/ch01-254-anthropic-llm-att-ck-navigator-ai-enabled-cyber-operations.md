@@ -75,7 +75,7 @@ ARiES 采**加性评分**（0-100），三个维度：
 
 ## 与 N-days 研究的互补
 
-本文与 [N-days Frontier Agent 研究](../ch01-677-anthropic) 构成 Anthropic 2026-06 的**双联报告**：
+本文与 [N-days Frontier Agent 研究](/ch01-677-anthropic/) 构成 Anthropic 2026-06 的**双联报告**：
 
 | 维度 | N-days 研究 | ATT&CK Navigator |
 |------|-------------|------------------|
@@ -120,12 +120,12 @@ ARiES 采**加性评分**（0-100），三个维度：
 -
 ## 相关实体
 
-- [hackers accessed bwh hotels reservation system for months](../ch12-105-hackers-accessed-bwh-hotels-reservation-system-for-months)
+- [hackers accessed bwh hotels reservation system for months](/ch12-105-hackers-accessed-bwh-hotels-reservation-system-for-months/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-llm-attck-navigator-cyber-operations.md)
-- → [同 Anthropic 红队研究：前沿模型 N-day 利用能力](../ch01-677-anthropic)
-- → [Mythos 营销角度](../ch01-677-anthropic)
-- → [Cloudflare Glasswing 视角 Mythos 安全](../ch01-281-project-glasswing-what-mythos-showed-us)
-- → [Arctic Wolf SOC 机器速度运营](../ch12-081-guide-to-security-operations-at-machine-speed)
+- → [同 Anthropic 红队研究：前沿模型 N-day 利用能力](/ch01-677-anthropic/)
+- → [Mythos 营销角度](/ch01-677-anthropic/)
+- → [Cloudflare Glasswing 视角 Mythos 安全](/ch01-281-project-glasswing-what-mythos-showed-us/)
+- → [Arctic Wolf SOC 机器速度运营](/ch12-081-guide-to-security-operations-at-machine-speed/)
 - → MITRE ATT&CK 框架（V18，外部参考）
 
 ## 元数据

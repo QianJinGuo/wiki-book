@@ -121,14 +121,14 @@ Anthropic 明确定义了两者关系：
 ## 相关链接
 - Anthropic 博客原文：https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp
 ## 相关实体
-- [Anthropic Mcp Revisited](../ch01-677-anthropic)
-- [Anthropic 12 Mcp Production Patterns](../ch01-677-anthropic)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01-677-anthropic)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04-118-鹅厂-skill-写作完整-playbook-14-章节-end-to-end-实战-工程化评估-腾讯一线踩坑)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01-677-anthropic)
+- [Anthropic Mcp Revisited](/ch01-677-anthropic/)
+- [Anthropic 12 Mcp Production Patterns](/ch01-677-anthropic/)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](/ch01-677-anthropic/)
+- [Tencent Skill Writing Complete Playbook Jackjchou](/ch04-118-鹅厂-skill-写作完整-playbook-14-章节-end-to-end-实战-工程化评估-腾讯一线踩坑/)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](/ch01-677-anthropic/)
 
-- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](../ch04-108-打造-ai-智能体专属的代码知识库-gitnexus-完整上手攻略)
-- [Cursor Recall Anthropic Daily Release Cat Wu](../ch01-677-anthropic)
+- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](/ch04-108-打造-ai-智能体专属的代码知识库-gitnexus-完整上手攻略/)
+- [Cursor Recall Anthropic Daily Release Cat Wu](/ch01-677-anthropic/)
 - Wiki Audit Skill
 - MOC
 

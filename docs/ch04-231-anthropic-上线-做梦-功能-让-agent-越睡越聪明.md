@@ -111,15 +111,15 @@ Dreaming 和 Outcomes 可以独立使用，也可以组合使用。先用 Outcom
 ## 关联概念
 
 ## 相关实体
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01-677-anthropic)
-- [Anthropic 12 Mcp Production Patterns](../ch01-677-anthropic)
-- [Anthropic 14 Skill Patterns Best Practices](../ch01-677-anthropic)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](../ch01-677-anthropic)
-- [Anthropic Multi Agent Research System](../ch01-677-anthropic)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](/ch01-677-anthropic/)
+- [Anthropic 12 Mcp Production Patterns](/ch01-677-anthropic/)
+- [Anthropic 14 Skill Patterns Best Practices](/ch01-677-anthropic/)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](/ch01-677-anthropic/)
+- [Anthropic Multi Agent Research System](/ch01-677-anthropic/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-dreaming-claude-managed-agents-ovZ5v7jJkqDKSu9xmxwt8w.md).md]
 
-- [Harness Engineering 框架](../ch05-041-harness-engineering-概念框架/) — Managed Agents 是 Anthropic 官方 Harness 产品
+- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架//) — Managed Agents 是 Anthropic 官方 Harness 产品
 - MOC
 
 ---

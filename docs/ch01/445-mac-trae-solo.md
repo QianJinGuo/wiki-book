@@ -13,15 +13,15 @@ review_stars: 3
 👆这个场景你大概再熟悉不过。工作日下午，星巴克长桌前长满了人。每个人都低着头，眉头微皱，看上去像在拯救世界。
 
 ## 相关实体
-- [Trae Solo Work Feishu Bitable Pipeline Tutorial](../ch04-063-trae-solo-work-模式-飞书多维表格-5-步搭建全自动作品采集系统-3400-帖子稳定运行/)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](../ch01-557-anthropic-puts-claude-agents-on-a-meter-across-its-subscript/)
-- [Anthropic Pm Jess Yan Managed Agents](../ch04-348-anthropic-pm-jess-yan-managed-agents/)
-- [Anthropic Claude Managed Agents Platform 2026](../ch01-181-anthropic-claude-managed-agents-平台正式发布/)
-- [Claude Code Hackathon Winners 2026](../ch01-772-claude-code-hackathon-winners-2026/)
+- [Trae Solo Work Feishu Bitable Pipeline Tutorial](/ch04-063-trae-solo-work-模式-飞书多维表格-5-步搭建全自动作品采集系统-3400-帖子稳定运行//)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](/ch01-557-anthropic-puts-claude-agents-on-a-meter-across-its-subscript//)
+- [Anthropic Pm Jess Yan Managed Agents](/ch04-348-anthropic-pm-jess-yan-managed-agents//)
+- [Anthropic Claude Managed Agents Platform 2026](/ch01-181-anthropic-claude-managed-agents-平台正式发布//)
+- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/我把mac留在家用手机让trae-solo替我打了一天工.md)
 
-- [trae solo work 模式 + 飞书多维表格 5 步教程](../ch04-349-trae-solo-work-模式-飞书多维表格-5-步教程/)
+- [trae solo work 模式 + 飞书多维表格 5 步教程](/ch04-349-trae-solo-work-模式-飞书多维表格-5-步教程//)
 
 ## 深度分析
 

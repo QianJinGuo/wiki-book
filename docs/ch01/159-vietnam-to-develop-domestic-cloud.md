@@ -25,9 +25,9 @@
 ## 相关实体
 > 主题导航
 
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch01-068-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over/)
-- [Vietnam to develop domestic cloud](../ch11-168-vietnam-to-develop-domestic-cloud/)
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over/)- [anthropic](../ch01-148-anthropic-s-zero-trust-for-ai-agents-sets-the-right-test-th/)- [inference cost at scale with napkin math](../ch01-410-inference-cost-at-scale-with-napkin-math/)- [why use app-level auth when every database has auth? (splunk](../ch01-147-why-use-app-level-auth-when-every-database-has-auth-splunk/)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](/ch01-068-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over//)
+- [Vietnam to develop domestic cloud](/ch11-168-vietnam-to-develop-domestic-cloud//)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](/ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over//)- [anthropic](/ch01-148-anthropic-s-zero-trust-for-ai-agents-sets-the-right-test-th//)- [inference cost at scale with napkin math](/ch01-410-inference-cost-at-scale-with-napkin-math//)- [why use app-level auth when every database has auth? (splunk](/ch01-147-why-use-app-level-auth-when-every-database-has-auth-splunk//)
 
 ---
 

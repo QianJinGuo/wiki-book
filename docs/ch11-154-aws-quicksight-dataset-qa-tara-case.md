@@ -60,11 +60,11 @@ TARA 的本质突破在于**移除语义中间层**。传统 Topics 模式需要
 6. **程序负责人现在可以在几分钟内回答战略问题**——替代以往需要导航多个仪表板、重新应用过滤器、人工拼接数据的耗时流程
 
 ## 相关实体
-- [Aws Quicksight Dataset Qa Natural Language](../ch11-160-aws-quicksight-dataset-qa-natural-language)
-- [Mathematical Optimization Aws Innovation Center Enterprise](../ch11-060-mathematical-optimization-at-enterprise-scale-aws-innovatio)
+- [Aws Quicksight Dataset Qa Natural Language](/ch11-160-aws-quicksight-dataset-qa-natural-language/)
+- [Mathematical Optimization Aws Innovation Center Enterprise](/ch11-060-mathematical-optimization-at-enterprise-scale-aws-innovatio/)
 - Build Real Time Voice Applications With Amazon Sagemaker Ai
-- [Cisa Admin Leaked Aws Govcloud Keys On Github](../ch11-119-cisa-admin-leaked-aws-govcloud-keys-on-github)
-- [Aws Agent Orchestration Workshop](../ch04-409-agent-orchestration)
+- [Cisa Admin Leaked Aws Govcloud Keys On Github](/ch11-119-cisa-admin-leaked-aws-govcloud-keys-on-github/)
+- [Aws Agent Orchestration Workshop](/ch04-409-agent-orchestration/)
 - MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-quicksight-dataset-qa-tara-case.md)

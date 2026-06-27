@@ -52,8 +52,8 @@ Agent 依赖无障碍树（accessibility tree）作为其主要数据模型。Li
 - WebMCP 从实验性 API 进入主流开发者工具链
 
 ## 相关主题
-- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](../ch01-047-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p/) — AI 搜索引擎优化
-- [Agentic Design System From Chatbot To Orchestration](../ch01-012-agentic-design-system-from-chatbot-to-orchestration/) — Agent 设计系统
+- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](/ch01-047-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p//) — AI 搜索引擎优化
+- [Agentic Design System From Chatbot To Orchestration](/ch01-012-agentic-design-system-from-chatbot-to-orchestration//) — Agent 设计系统
 
 ---
 

@@ -159,12 +159,12 @@ response = client.chat.completions.create(
 
 ## 关联实体
 
-- [Ai Infra Llm Efficient Inference Vllm](../ch01-865-ai-infra-入门干货总结-大模型是如何高效推理的) — LLM 高效推理基础设施综述（vLLM 推荐 0.20.0+）
-- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](../ch01-847-recent-developments-in-llm-architectures-kv-sharing-mhc-a) — LLM 架构最新进展：KV Sharing、mHC 与压缩注意力
-- [Deepseek Moe Parallel Strategy](../ch01-673-deepseek-moe-并行策略与gpu通信优化) — DeepSeek MoE 并行策略
-- [Msa Sparse Attention Three Kingdoms Huashu](../ch01-188-msa-稀疏注意力三国杀-nsa-dsa-moba-msa-四方案深度对比) — MSA 稀疏注意力（三国华术）
-- [Kimi Attention Residuals Prenorm Dilution Block Attnres](../ch01-880-kimi-attention-residuals-attnres-prenorm-稀释问题与-block-折中方案) — Kimi 注意力残差与 PreNorm 稀释
-- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](../ch01-710-2026-年面向-llm-的-rl-方法总结-从-ppo-到-dpo-到-grpo-再到多智能体-rl) — 2026 LLM RL 算法综述（DeepSeek V4 训练方法背景）
+- [Ai Infra Llm Efficient Inference Vllm](/ch01-865-ai-infra-入门干货总结-大模型是如何高效推理的/) — LLM 高效推理基础设施综述（vLLM 推荐 0.20.0+）
+- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](/ch01-847-recent-developments-in-llm-architectures-kv-sharing-mhc-a/) — LLM 架构最新进展：KV Sharing、mHC 与压缩注意力
+- [Deepseek Moe Parallel Strategy](/ch01-673-deepseek-moe-并行策略与gpu通信优化/) — DeepSeek MoE 并行策略
+- [Msa Sparse Attention Three Kingdoms Huashu](/ch01-188-msa-稀疏注意力三国杀-nsa-dsa-moba-msa-四方案深度对比/) — MSA 稀疏注意力（三国华术）
+- [Kimi Attention Residuals Prenorm Dilution Block Attnres](/ch01-880-kimi-attention-residuals-attnres-prenorm-稀释问题与-block-折中方案/) — Kimi 注意力残差与 PreNorm 稀释
+- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](/ch01-710-2026-年面向-llm-的-rl-方法总结-从-ppo-到-dpo-到-grpo-再到多智能体-rl/) — 2026 LLM RL 算法综述（DeepSeek V4 训练方法背景）
 
 ---
 

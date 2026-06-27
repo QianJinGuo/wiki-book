@@ -41,12 +41,12 @@ Autoresearch Next Phase Async Multi Agent Ai寒武纪 涉及agent领域的核心
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
-- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
 - Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

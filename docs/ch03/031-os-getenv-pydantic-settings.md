@@ -8,11 +8,11 @@
 #####  一个真实场景：凌晨三点，线上服务突然报错，翻遍日志发现是因为某个环境变量没传对类型，字符串当成了数字用。你盯着代码里散  落的  ` os.getenv  ` ，  想骂人却不知从何骂起。
 
 ## 相关实体
-- [Skill Development Guide Aliyun 2026](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
-- [Manus.Im Manus Schedules](../ch03-036-introducing-scheduled-tasks-2-0/)
+- [Skill Development Guide Aliyun 2026](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布//)
+- [Manus.Im Manus Schedules](/ch03-036-introducing-scheduled-tasks-2-0//)
 - Openclaw Multi Agent Team Practice
-- [Strands Agents Cloud Cost Optimizer](../ch04-128-基于-strands-agents-构建亚马逊云科技云成本分析与优化-ai-助手/)
-- [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](../ch03-025-别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个/)
+- [Strands Agents Cloud Cost Optimizer](/ch04-128-基于-strands-agents-构建亚马逊云科技云成本分析与优化-ai-助手//)
+- [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](/ch03-025-别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/还在手写-osgetenvpydantic-settings-让你配置管理效率翻倍.md)
 

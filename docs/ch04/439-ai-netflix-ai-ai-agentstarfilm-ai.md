@@ -21,9 +21,9 @@ source:
 - source/wechat
 ## 相关实体
 > 主题导航
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器/)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化/)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格//)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](/ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器//)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](/ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化//)
 ## 深度分析
 **Starfilm的定位与核心创新**
 恒星AI推出的Starfilm定位为"全球首个影视级AI Agent"，瞄准AI短漫剧制作赛道。从文章描述来看，Starfilm试图解决个体创作者在短剧制作过程中的三大核心痛点：团队成本、人物一致性、多工具协同。

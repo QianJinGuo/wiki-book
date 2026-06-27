@@ -8,11 +8,11 @@
 "AI跃迁者调研"  是 AI 透镜的深度对谈系列。跃迁不是线性的进化，而是推翻迭代再重建。我们每期会邀请一位AI跃迁者—AI 原生创业者、AI转型的企业一号位或用 AI 重做自己的超级个体，分享他们想的结论、拆的过程、建的逻辑、交的学费，和在持续变化里守住的东西，给同样走在这条路上的人一些真实的参照。  第一期，我们邀请到特赞 Tezign 创始人兼 CEO、同济大学教授、博士生导师，设计人工智能实验室主任范凌博士。特赞是一家成立 10 年的企业级 Agentic AI 公司，致力于基于自研Generative Enterprise Agent  （  GEA）  架构，构建能够理解企业业务语境、参与复杂决策并持续推动结果产生的企业级智能体系统，帮助企业实现增长、创新与生产力提升，长期服务企业的用户洞察、产品创新和营销增长。更重要的是，它自己也在用 AI 重做组织：从 pod 变革，到 community 培养，再到用 skills、context 和 orchestration 搭建 Generative Enterprise Agent。  我们和范凌聊了 AI 如何改变组织架构、人才密度、客户交付和产品壁垒，也聊了这些变化背后没被解决的问题。
 
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-418-hermes-agent)
-- [Ath Agent Trust Handshake Protocol](../ch04-500-为了让agent更安全的工作-有多少人操碎了心)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07-017-hermes自进化完整闭环-skill创建复用修补链路)
-- [Four Browser Automation Tools Comparison](../ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc)
+- [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-418-hermes-agent/)
+- [Ath Agent Trust Handshake Protocol](/ch04-500-为了让agent更安全的工作-有多少人操碎了心/)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](/ch07-017-hermes自进化完整闭环-skill创建复用修补链路/)
+- [Four Browser Automation Tools Comparison](/ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/范凌当公司变成agent关于-ai-时代组织的-5-个反思.md)
 

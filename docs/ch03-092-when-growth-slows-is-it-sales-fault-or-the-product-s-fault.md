@@ -42,11 +42,11 @@ Lemkin 提供了系统的诊断框架来定位增长放缓的根本原因：
 **5. 将"产品速度"作为核心 KPI**
 除了收入指标，将产品发布速度、功能竞争力评分、AI 能力成熟度纳入核心管理层仪表盘。这些指标是收入的先行指标，而非滞后指标。
 ## 相关实体
-- [How To Encode Experience Into Skills](../ch03-067-如何把经验装到skills)
-- [P Ai Pms Guide To Claude](../ch01-704-build-a-self-improving-ai-pm-os-with-claude-code)
-- [Deels Accelerate Or Die Moment](../ch01-121-deel-s-accelerate-or-die-moment)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g)
-- [Asana Agentic Work Management Platform Lettertwo](../ch04-510-asana-agentic-work-management-platform-work-graph-as-agent)
+- [How To Encode Experience Into Skills](/ch03-067-如何把经验装到skills/)
+- [P Ai Pms Guide To Claude](/ch01-704-build-a-self-improving-ai-pm-os-with-claude-code/)
+- [Deels Accelerate Or Die Moment](/ch01-121-deel-s-accelerate-or-die-moment/)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](/ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g/)
+- [Asana Agentic Work Management Platform Lettertwo](/ch04-510-asana-agentic-work-management-platform-work-graph-as-agent/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 

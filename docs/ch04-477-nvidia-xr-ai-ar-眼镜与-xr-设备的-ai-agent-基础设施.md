@@ -70,7 +70,7 @@ XR Media Hub（路由层）
 
 ## 相关主题
 
-- [Harness Engineering 框架](../ch05-041-harness-engineering-概念框架/)
+- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架//)
 - MCP 集成模式
 
 ---

@@ -5,11 +5,11 @@
 > 📊 Level ⭐⭐ | 11.3KB | `entities/ai-native-team-building-yexiaochai.md`
 
 ## 相关实体
-- [Ai Native Team Building Failures Ceo Digital Twin Case](../ch04-080-ai-原生团队的脏乱差-ceo-数字分身失败案例与-ai-销售线索分配的兴衰)
-- [Ai Native Rd Org Design](../ch05-018-ai-native-时代研发组织何去何从)
-- [Ai Native 时代 研发组织何去何从](../ch01-311-ai-native-时代-研发组织何去何从)
-- [Ai Native Org Guide Slowdown](../ch04-396-ai-原生搭建指南-都在用ai-公司为什么更慢了)
-- [Fanling Company As Agent Ai Org Reflection](../ch04-180-fanling-company-as-agent-ai-org-reflection-v2)
+- [Ai Native Team Building Failures Ceo Digital Twin Case](/ch04-080-ai-原生团队的脏乱差-ceo-数字分身失败案例与-ai-销售线索分配的兴衰/)
+- [Ai Native Rd Org Design](/ch05-018-ai-native-时代研发组织何去何从/)
+- [Ai Native 时代 研发组织何去何从](/ch01-311-ai-native-时代-研发组织何去何从/)
+- [Ai Native Org Guide Slowdown](/ch04-396-ai-原生搭建指南-都在用ai-公司为什么更慢了/)
+- [Fanling Company As Agent Ai Org Reflection](/ch04-180-fanling-company-as-agent-ai-org-reflection-v2/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-team-building-yexiaochai.md)
 

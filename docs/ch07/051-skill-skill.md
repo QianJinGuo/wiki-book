@@ -72,10 +72,10 @@ user happy
 
 ## 相关实体
 - Openclaw Prompt Context Harness
-- [Skill System Design Three Way Comparison](../ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
-- [Openclaw Agent Loop Design Patterns](../ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式/)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04-118-鹅厂-skill-写作完整-playbook-14-章节-end-to-end-实战-工程化评估-腾讯一线踩坑/)
-- [Ai Skill Skill Creator 源码拆解](../ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南/)
+- [Skill System Design Three Way Comparison](/ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age//)
+- [Openclaw Agent Loop Design Patterns](/ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式//)
+- [Tencent Skill Writing Complete Playbook Jackjchou](/ch04-118-鹅厂-skill-写作完整-playbook-14-章节-end-to-end-实战-工程化评估-腾讯一线踩坑//)
+- [Ai Skill Skill Creator 源码拆解](/ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/steipete-skill-cleaner-liangzide.md)
 

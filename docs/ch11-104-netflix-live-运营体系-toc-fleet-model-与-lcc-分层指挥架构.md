@@ -66,11 +66,11 @@ LOL 分级的核心价值不是"更快响应"，而是"避免倦怠"——如果
 多时区运营的最大风险不是时差而是交接时的信息损失。设计标准化的交接协议（当前状态、活跃事件、待解决异常），而非依赖口头沟通。
 
 ## 相关实体
-- [Netflix Metadata Service Model Lifecycle Graph](../ch11-034-netflix-metadata-service-and-model-lifecycle-graph)
-- [Netflix Druid Interval Aware Caching](../ch11-091-netflix-druid-区间感知缓存-指数-ttl-分桶查询去重)
-- [High Throughput Graph Abstraction At Netflix](../ch11-101-high-throughput-graph-abstraction-at-netflix-part-i)
-- [High Throughput Graph Abstraction At Netflix Part I](../ch11-101-high-throughput-graph-abstraction-at-netflix-part-i)
-- [Netflix Nebula Archrules](../ch11-088-netflix-nebula-archrules-跨越数千个-java-仓库的-archunit-规模化实践)
+- [Netflix Metadata Service Model Lifecycle Graph](/ch11-034-netflix-metadata-service-and-model-lifecycle-graph/)
+- [Netflix Druid Interval Aware Caching](/ch11-091-netflix-druid-区间感知缓存-指数-ttl-分桶查询去重/)
+- [High Throughput Graph Abstraction At Netflix](/ch11-101-high-throughput-graph-abstraction-at-netflix-part-i/)
+- [High Throughput Graph Abstraction At Netflix Part I](/ch11-101-high-throughput-graph-abstraction-at-netflix-part-i/)
+- [Netflix Nebula Archrules](/ch11-088-netflix-nebula-archrules-跨越数千个-java-仓库的-archunit-规模化实践/)
 
 ## 相关引用
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/netflix-live-operations-human-infrastructure.md)

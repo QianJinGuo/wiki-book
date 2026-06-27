@@ -9,11 +9,11 @@ Until recently, the complaints about AI have always been about the models. That 
 Agents are powerful, but they are not wise. To operate at their best, they need fresh context delivered in the right format and at the right time. From our experience, current ways of moving data simply aren't enough:
 
 ## 相关实体
-- [Airbyte Agents A New Era For Airbyte Airbyte](../ch04-256-airbyte-agents-a-new-era-for-airbyte)
-- [Skillos Learning Skill Curation For Self Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock)
-- [Oz Multi Harness Cloud Agent Orchestration](../ch04-409-agent-orchestration)
-- [Skill Os Learning Skill Curation Self Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
+- [Airbyte Agents A New Era For Airbyte Airbyte](/ch04-256-airbyte-agents-a-new-era-for-airbyte/)
+- [Skillos Learning Skill Curation For Self Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](/ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock/)
+- [Oz Multi Harness Cloud Agent Orchestration](/ch04-409-agent-orchestration/)
+- [Skill Os Learning Skill Curation Self Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/airbyte-agents.md)
 

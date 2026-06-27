@@ -88,11 +88,11 @@ Frida 在 Qt6 场景下的优势来自其 JavaScript 运行时允许动态构造
 **4. Invokable call 是绕过 UI 自动化的银弹** — 在需要大规模测试 Qt 应用业务逻辑的场景（如模糊测试、持续集成安全回归），加载三个脚本后通过 REPL 直接调用方法比模拟用户交互更可靠、更高效 。
 **5. Part 2 预告的攻击链值得持续关注** — 文章预告将覆盖 premium-gate bypass、五点 anti-debug 完整hook、vault 解密边界、SSL pinning bypass 等，说明第一部分只是可见性获取，后续还有完整的客户端防护突破路径 。
 ## 相关实体
-- [Build Live Translation Apps With Gpt Realtime Translate](../ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01-615-skill-issues-compromising-claude-code-with-malicious-skills/)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents](../ch09-084-skill-issues-compromising-claude-code-with-malicious-skills/)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch01-019-nvidia-s-jensen-huang-bets-on-this-british-startup-to-build/)
-- [Why Im Leaving Github For Forgejo](../ch01-011-why-i-m-leaving-github-for-forgejo/)
+- [Build Live Translation Apps With Gpt Realtime Translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate//)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](/ch01-615-skill-issues-compromising-claude-code-with-malicious-skills//)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents](/ch09-084-skill-issues-compromising-claude-code-with-malicious-skills//)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](/ch01-019-nvidia-s-jensen-huang-bets-on-this-british-startup-to-build//)
+- [Why Im Leaving Github For Forgejo](/ch01-011-why-i-m-leaving-github-for-forgejo//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/runtime-instrumentation-of-qt6-apps-with-frida-part-1-getting-visibility.md)
 

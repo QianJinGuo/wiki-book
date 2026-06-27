@@ -12,11 +12,11 @@
 真正上线后你会发现，最先出问题的往往是两件事：
 
 ## 相关实体
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-677-anthropic)
-- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
-- [Claude Code Tool Design Evolution Anthropic](../ch01-677-anthropic)
-- [Claude Code Hackathon Winners 2026](../ch01-772-claude-code-hackathon-winners-2026)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-677-anthropic/)
+- [Claude Code Agent Teams Task Decomposition Ruofei](/ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据/)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Claude Code Tool Design Evolution Anthropic](/ch01-677-anthropic/)
+- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-core-developer-lessons-action-space-design.md)
 

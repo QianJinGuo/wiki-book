@@ -79,8 +79,8 @@ AWS Samples 提供 `sample-your-opc-eks-agents` 仓库，包含：
 ## 相关主题
 
 - 多智能体编排（概念层）
-- [AWS Bedrock AgentCore OS-level 浏览器工具](../ch04-156-agentcore-browser-os级操作-action-screenshot-reaction闭环)
-- [Aliyun AgentRun 5min 快速上手](../ch04-003-agentrun)
+- [AWS Bedrock AgentCore OS-level 浏览器工具](/ch04-156-agentcore-browser-os级操作-action-screenshot-reaction闭环/)
+- [Aliyun AgentRun 5min 快速上手](/ch04-003-agentrun/)
 
 ## 深度分析
 
@@ -88,11 +88,11 @@ AWS Samples 提供 `sample-your-opc-eks-agents` 仓库，包含：
 
 2. **EKS CRD + Operator 模式将"Agent 类型"提升为 Kubernetes 一等资源**：传统 Agent 编排平台往往自建调度层，而 Waylens 选择将 Agent 类型注册为 CRD，由 Operator 执行 reconcile。这意味着每个 Agent 实例的期望状态、实际状态、健康策略都可以复用 Kubernetes 生态的成熟工具链（Helm、kubectl、Vertical Pod Autoscaler）。多智能体编排 的工程化门槛因此大幅降低——不再需要从零实现自己的控制平面。
 
-3. **Rex Backup Operator 揭示了 Meta-Redundancy 的必要性**：任何"管其他 Agent 的 Agent"本身都是一个单点故障。Waylens 引入第二层 EKS Operator（Rex）做备份，但这个设计引出了一个深层问题：当备份层本身也由 Agent 驱动时，是否需要第三层备份？这种递归冗余的终止条件是工程权衡问题，而非纯理论问题。从 [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务) 的视角看，Meta-Redundancy 是"高可靠性 Harness"设计的典型模式。
+3. **Rex Backup Operator 揭示了 Meta-Redundancy 的必要性**：任何"管其他 Agent 的 Agent"本身都是一个单点故障。Waylens 引入第二层 EKS Operator（Rex）做备份，但这个设计引出了一个深层问题：当备份层本身也由 Agent 驱动时，是否需要第三层备份？这种递归冗余的终止条件是工程权衡问题，而非纯理论问题。从 [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/) 的视角看，Meta-Redundancy 是"高可靠性 Harness"设计的典型模式。
 
-4. **S3 Files 替代 NFS 是跨 AZ Stateful Agent 场景的标准解法**：OpenClaw 多 Agent 共享状态在跨 AZ 漂移时，NFS 挂载会触发存储重建，导致 Agent 不可用。S3 Files（S3 挂载为文件系统）天然支持多 AZ 一致访问，且无需管理 NFS 服务端的高可用。这是 [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务) 中"存储 Harness 设计"在多 Agent 场景的具体应用。
+4. **S3 Files 替代 NFS 是跨 AZ Stateful Agent 场景的标准解法**：OpenClaw 多 Agent 共享状态在跨 AZ 漂移时，NFS 挂载会触发存储重建，导致 Agent 不可用。S3 Files（S3 挂载为文件系统）天然支持多 AZ 一致访问，且无需管理 NFS 服务端的高可用。这是 [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/) 中"存储 Harness 设计"在多 Agent 场景的具体应用。
 
-5. **平台自管理的本质是将 DevOps 问题转化为 Agent 决策问题**：传统 Agent 平台升级需要 SRE 执行 runbook，而 Waylens 的 Admin Agent 可以根据当前负载、版本兼容性、故障历史自动决定升级时机和回滚策略。这种"Agent 驱动的基础设施"代表了 [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务) 的前沿方向：基础设施不再是被动的计算资源，而是可以被 Agent 感知、决策和操作的目标对象。
+5. **平台自管理的本质是将 DevOps 问题转化为 Agent 决策问题**：传统 Agent 平台升级需要 SRE 执行 runbook，而 Waylens 的 Admin Agent 可以根据当前负载、版本兼容性、故障历史自动决定升级时机和回滚策略。这种"Agent 驱动的基础设施"代表了 [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/) 的前沿方向：基础设施不再是被动的计算资源，而是可以被 Agent 感知、决策和操作的目标对象。
 
 ## 实践启示
 

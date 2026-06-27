@@ -117,10 +117,10 @@ Runtime 关键能力：
 
 | 实体 | 关注点 | 本文差异 |
 |------|--------|---------|
-| [Agentcore Harness](../ch04-206-agentcore-managed-harness/) | AgentCore 平台概念 + Harness 趋势 | 偏理论，无代码 |
-| [Agentcore Managed Harness](../ch04-428-harness工程火遍硅谷-agentcore今天交卷/) | 托管 Harness 平台 overview | 无具体 subagent 编排 |
-| [Langchain Harrison Chase Sandbox Architecture](../ch04-176-langchain创始人解读-ai智能体两种沙盒架构/) | LangChain 沙箱架构演进 | 聚焦 sandbox，不涉及 Bedrock AgentCore 集成 |
-| [Production Harness 12 Components Framework Comparison](../ch05-033-生产级-harness-的-12-大组件以及主流框架对比/) | 12 组件框架对比 | 偏理论框架，无 AWS 端到端代码 |
+| [Agentcore Harness](/ch04-206-agentcore-managed-harness//) | AgentCore 平台概念 + Harness 趋势 | 偏理论，无代码 |
+| [Agentcore Managed Harness](/ch04-428-harness工程火遍硅谷-agentcore今天交卷//) | 托管 Harness 平台 overview | 无具体 subagent 编排 |
+| [Langchain Harrison Chase Sandbox Architecture](/ch04-176-langchain创始人解读-ai智能体两种沙盒架构//) | LangChain 沙箱架构演进 | 聚焦 sandbox，不涉及 Bedrock AgentCore 集成 |
+| [Production Harness 12 Components Framework Comparison](/ch05-033-生产级-harness-的-12-大组件以及主流框架对比//) | 12 组件框架对比 | 偏理论框架，无 AWS 端到端代码 |
 
 **本文独特价值**：是 **LangChain Deep Agents + Bedrock AgentCore** 这一特定组合的**官方端到端实现**（含完整 Python 代码、IAM 权限、4 步部署、cleanup 流程）。
 

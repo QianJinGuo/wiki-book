@@ -19,7 +19,7 @@ for root, dirs, files in os.walk(docs_dir):
 slug_only = {k.split('/')[-1]: v for k, v in slug_map.items()}
 print(f"Mapping: {len(slug_map)} exact, {len(slug_only)} slug-only")
 
-# Replace all GitHub URLs in ALL files (recursive)
+# Replace all GitHub URLs with ABSOLUTE paths (not relative)
 counter = [0]
 files_mod = [0]
 
@@ -27,13 +27,20 @@ def repl_link(m):
     counter[0] += 1
     text, wiki_path = m.group(1), m.group(2)
     book = slug_map.get(wiki_path) or slug_only.get(wiki_path.split('/')[-1])
-    return f'[{text}](../{book}/)' if book else text
+    # Use absolute path: /ch04-090-slug/
+    return f'[{text}](/{book}/)' if book else text
 
 def repl_bare(m):
     counter[0] += 1
     wiki_path = m.group(1)
     book = slug_map.get(wiki_path) or slug_only.get(wiki_path.split('/')[-1])
-    return f'../{book}/' if book else wiki_path.split('/')[-1]
+    return f'/{book}/' if book else wiki_path.split('/')[-1]
+
+# Also fix existing relative links: ../ch04-xxx/ → /ch04-xxx/
+def fix_relative(m):
+    counter[0] += 1
+    text, slug = m.group(1), m.group(2)
+    return f'[{text}](/{slug}/)'
 
 for root, dirs, files in os.walk(docs_dir):
     for f in files:
@@ -44,6 +51,7 @@ for root, dirs, files in os.walk(docs_dir):
             content = fh.read()
         orig = content
         
+        # Fix GitHub URLs
         content = re.sub(
             r'\[([^\]]+)\]\((?:https?://)?github\.com/QianJinGuo/wiki/blob/main/([^)]+)\.md\)',
             repl_link, content
@@ -53,9 +61,15 @@ for root, dirs, files in os.walk(docs_dir):
             repl_bare, content
         )
         
+        # Fix existing relative links: ../ch04-xxx/ → /ch04-xxx/
+        content = re.sub(
+            r'\[([^\]]+)\]\(\.\./(ch\d+-[^)]+)\)',
+            fix_relative, content
+        )
+        
         if content != orig:
             with open(filepath, 'w', encoding='utf-8') as fh:
                 fh.write(content)
             files_mod[0] += 1
 
-print(f"Replaced: {counter[0]}, Files: {files_mod[0]}")
+print(f"Fixed: {counter[0]}, Files: {files_mod[0]}")

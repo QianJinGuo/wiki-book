@@ -43,12 +43,12 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进//)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on//)
 - Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
-- [Qy_Zacztcs1Ql3Bifmbmgg](../ch04-276-claude-code-subagent-详解-把探索过程关进独立工作区/)
-- [天猫新品营销技术团队Ai编码实战指南上 V2](../ch09-103-天猫新品营销技术团队ai编码实战指南-上/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch01-702-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [Qy_Zacztcs1Ql3Bifmbmgg](/ch04-276-claude-code-subagent-详解-把探索过程关进独立工作区//)
+- [天猫新品营销技术团队Ai编码实战指南上 V2](/ch09-103-天猫新品营销技术团队ai编码实战指南-上//)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch01-702-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏//)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

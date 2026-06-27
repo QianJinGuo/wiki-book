@@ -10,11 +10,11 @@
 
 ## 摘要
 ## 相关实体
-- [The New Ai Lock In](../ch01-643-the-new-ai-lock-in/)
-- [New Ai Lock In](../ch07-031-the-new-ai-lock-in/)
-- [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](../ch11-116-the-new-era-of-cloud-ai-mobile-testing-amazon-device-farm-m/)
-- [P Ic Work Is The New Career Flex](../ch03-009-ic-work-is-the-new-career-flex/)
-- [Thehackernews Com The New Phishing Click How Oauth](../ch01-465-the-new-phishing-click-how-oauth-consent-bypasses-mfa/)
+- [The New Ai Lock In](/ch01-643-the-new-ai-lock-in//)
+- [New Ai Lock In](/ch07-031-the-new-ai-lock-in//)
+- [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](/ch11-116-the-new-era-of-cloud-ai-mobile-testing-amazon-device-farm-m//)
+- [P Ic Work Is The New Career Flex](/ch03-009-ic-work-is-the-new-career-flex//)
+- [Thehackernews Com The New Phishing Click How Oauth](/ch01-465-the-new-phishing-click-how-oauth-consent-bypasses-mfa//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/new-lock.md)
 

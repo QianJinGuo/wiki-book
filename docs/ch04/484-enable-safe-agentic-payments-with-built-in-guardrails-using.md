@@ -35,12 +35,12 @@ Enable safe agentic payments with built-in guardrails using Amazon Bedrock Agent
 - **aws趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程/)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-215-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制//)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering//)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道//)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering//)
+- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程//)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-215-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed//)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

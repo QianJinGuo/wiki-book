@@ -9,11 +9,11 @@
 - v×c = 7×8 = 56，stars = 4
 
 ## 相关实体
-- [Google Deepmind Accelerator Asia Pacific](../ch11-202-we-re-launching-the-google-deepmind-accelerator-program-in-a/)
-- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents](../ch09-084-skill-issues-compromising-claude-code-with-malicious-skills/)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [Google Deepmind Accelerator Asia Pacific](/ch11-202-we-re-launching-the-google-deepmind-accelerator-program-in-a//)
+- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri//)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon//)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents](/ch09-084-skill-issues-compromising-claude-code-with-malicious-skills//)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/intelligent-radiology-workflow-optimization-with-ai-agents.md)
 

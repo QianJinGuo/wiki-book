@@ -102,17 +102,17 @@ Cline 的核心差异化在于：(1) 把 agent loop 做成 portable kernel；(2)
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制) — Claude Code 的源码级解读，与 Cline SDK 形成"闭源深度 vs 开源可移植"对照
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道) — Claude Code harness 设计的深度剖析
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进) — Agent 记忆系统的工程实践，与"持久化在文件系统"理念呼应
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering) — 从 vibe coding 到 agentic engineering 的范式跃迁
-- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程) — Vibe Coding 与 Agentic Engineering 的同源访谈
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed) — AWS Bedrock AgentOps 的规模化运营实践
-- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding) — Claude Code harness 的另一深度解析
-- [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析) — 同主题的另一种解读视角
-- [scaling archunit with nebula archrules](../ch11-236-scaling-archunit-with-nebula-archrules)
-- [the code-as-content era](../ch01-397-the-code-as-content-era)
-- [the shape of the thing](../ch01-182-the-shape-of-the-thing)
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/) — Claude Code 的源码级解读，与 Cline SDK 形成"闭源深度 vs 开源可移植"对照
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/) — Claude Code harness 设计的深度剖析
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/) — Agent 记忆系统的工程实践，与"持久化在文件系统"理念呼应
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) — 从 vibe coding 到 agentic engineering 的范式跃迁
+- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/) — Vibe Coding 与 Agentic Engineering 的同源访谈
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/) — AWS Bedrock AgentOps 的规模化运营实践
+- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/) — Claude Code harness 的另一深度解析
+- [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析/) — 同主题的另一种解读视角
+- [scaling archunit with nebula archrules](/ch11-236-scaling-archunit-with-nebula-archrules/)
+- [the code-as-content era](/ch01-397-the-code-as-content-era/)
+- [the shape of the thing](/ch01-182-the-shape-of-the-thing/)
 - MOC
 
 ---

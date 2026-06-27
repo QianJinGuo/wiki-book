@@ -15,10 +15,10 @@
 
 ## 相关实体
 - Openclaw Prompt Context Harness
-- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架)
-- [Agent Harness 12 Components 7 Decisions](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架)
-- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
-- [Agentcore Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施)
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
+- [Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)
+- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
+- [Agentcore Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcore-managed-harness.md)
 

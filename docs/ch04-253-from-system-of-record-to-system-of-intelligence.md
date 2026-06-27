@@ -88,16 +88,16 @@ GTM 调查中，CRM 使用量在 AI 工具大规模采用后实际上**上升了
 
 ## 相关研究与关联实体
 
-这篇文章与 a16z 同期发表的 [Is Software Losing Its Head?](../ch01-491-is-software-losing-its-head) 构成姊妹篇，后者探讨软件本身的结构性挑战。Investing in Stitch 一文则从投资视角讨论了同一核心判断：没有干净的 SOR，就没有可靠的 AI 层。
+这篇文章与 a16z 同期发表的 [Is Software Losing Its Head?](/ch01-491-is-software-losing-its-head/) 构成姊妹篇，后者探讨软件本身的结构性挑战。Investing in Stitch 一文则从投资视角讨论了同一核心判断：没有干净的 SOR，就没有可靠的 AI 层。
 
-[Salesforce Headless](../ch03-055-salesforce-主动砍掉了界面-a16z-合伙人说-护城河从来不在那里) 战略可视为 CRM 巨头应对这一迁移的防御性布局。[Enterprise Software Moats in the Agent Era](../ch04-184-enterprise-software-moats-in-the-agent-era-系统性护城河分析框架) 则从护城河视角分析了同一趋势。
+[Salesforce Headless](/ch03-055-salesforce-主动砍掉了界面-a16z-合伙人说-护城河从来不在那里/) 战略可视为 CRM 巨头应对这一迁移的防御性布局。[Enterprise Software Moats in the Agent Era](/ch04-184-enterprise-software-moats-in-the-agent-era-系统性护城河分析框架/) 则从护城河视角分析了同一趋势。
 
 ## 结论
 
 GTM 软件的 TAM 正在从"软件支出"扩展到"软件+AI 驱动的工作流优化"——一个数量级更大的市场。下一个十年，企业 GTM 价值将在 System of Intelligence 层积累，而非在 System of Record 层。这一转变并不意味着 CRM 的终结——Salesforce 仍然拥有其数据库；HubSpot 仍然拥有其数据库——但价值 locus 正在向上迁移，进入读取和写入数据库并进行实际思考的层级。在这个过程中，饼在变大，而非变小。
 
 ## 相关实体
-- [Here Comes Forward Deployed Everybody](../ch11-148-here-comes-forward-deployed-everybody)
+- [Here Comes Forward Deployed Everybody](/ch11-148-here-comes-forward-deployed-everybody/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-system-of-record-to-system-of-intelligence.md)
 

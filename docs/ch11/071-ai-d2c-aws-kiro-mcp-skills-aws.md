@@ -75,15 +75,15 @@ Steering 文件中配置的 `AUTONOMOUS MODE` 使 AI 能够完整执行 Step 1-6
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills/)
 
 ## 相关实体
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客/)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级/)
-- [Agentic AI 系统架构与分层模型](../ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
-- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](../ch09-092-让-kiro-和-claude-code-响应-im-消息-用-acp-bridge-打造异步-ai-编程工作流-亚/)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](/ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客//)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双//)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](/ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级//)
+- [Agentic AI 系统架构与分层模型](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真//)
+- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](/ch09-092-让-kiro-和-claude-code-响应-im-消息-用-acp-bridge-打造异步-ai-编程工作流-亚//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md)
 
-- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch11-194-使用-kiro-cli-和-agent-client-protocol-构建飞书-ai-聊天机器人-亚马逊aws官方/)
+- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](/ch11-194-使用-kiro-cli-和-agent-client-protocol-构建飞书-ai-聊天机器人-亚马逊aws官方//)
 - MOC
 
 ---

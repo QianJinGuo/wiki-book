@@ -136,7 +136,7 @@ Reducer 不是简单的状态合并工具，它体现了**不可变数据结构*
 Fan-out 触发时，确保并行节点之间**无状态依赖**。如果 `search_web` 和 `search_db` 共享某个 state 字段且使用了非交换的 Reducer（如覆盖型），执行顺序会导致结果不确定。
 
 ## 相关主题
-- [Anthropic Mcp Revisited](../ch01-677-anthropic) — MCP 是云端 Agent 标准化接入层，与 LangGraph 的工具调用层有协同关系
+- [Anthropic Mcp Revisited](/ch01-677-anthropic/) — MCP 是云端 Agent 标准化接入层，与 LangGraph 的工具调用层有协同关系
 -  — Skill 编写规范，LangGraph 可作为 Skill 的执行引擎
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langgraph-state-machine-under-the-hood.md)
 

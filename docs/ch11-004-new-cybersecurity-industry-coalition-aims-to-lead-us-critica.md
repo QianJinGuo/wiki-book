@@ -45,9 +45,9 @@ CISA 已经运营着 Automated Indicator Sharing（AIS）项目和一个行业-s
 ## 相关实体
 > 主题导航
 
-- [CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](../ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before)
-- [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](../ch12-097-sandworm-hackers-shift-from-it-breaches-to-critical-ot-targe)
-- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](../ch01-677-anthropic)
+- [CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](/ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before/)
+- [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](/ch12-097-sandworm-hackers-shift-from-it-breaches-to-critical-ot-targe/)
+- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](/ch01-677-anthropic/)
 
 ---
 

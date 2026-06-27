@@ -59,7 +59,7 @@ John Hollander的_Coiled Alizarine_则更进一步：他直接使用Chomsky的�
 _Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/while-breathless-in-stodgy-viridian.md)_
 
 ## 相关实体
-- [While Breathless, in Stofy Viridian](../ch01-436-while-breathless-in-stodgy-viridian)
+- [While Breathless, in Stofy Viridian](/ch01-436-while-breathless-in-stodgy-viridian/)
 
 ---
 

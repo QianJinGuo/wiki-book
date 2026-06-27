@@ -32,7 +32,7 @@ AutoCLI 是一个用 Rust 实现的高速、内存安全的命令行网页信息
 - **云端增强**：AutoCLI.ai 加持
 
 ## autocli-skill
-专为 ClaudeCode / [OpenCLI](../ch04-165-浏览器自动化-从-gui-到-opencli-agent-时代的可调用性竞争) / [Hermes-Agent](../ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队) 设计的 Skill，让 AI Agent 能够获取整个互联网的信息、抓取任意网页内容。
+专为 ClaudeCode / [OpenCLI](/ch04-165-浏览器自动化-从-gui-到-opencli-agent-时代的可调用性竞争/) / [Hermes-Agent](/ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队/) 设计的 Skill，让 AI Agent 能够获取整个互联网的信息、抓取任意网页内容。
 
 ## 深度分析
 ### 定位与优势
@@ -52,12 +52,12 @@ autocli-skill（591 stars）作为 AutoCLI 的 AI Agent 接口层，其设计目
 4. **垂直场景也能做出影响力**：AutoCLI 聚焦网页抓取，而非追求功能大而全。对于工具类项目，在细分场景做到极致（如 55+ 平台覆盖）本身就是竞争力。
 
 ## Related
-- [CLI-Anything](../ch04-336-cli-anything-让-agent-自主驱动任意-gui-软件) — 让所有软件 Agent 原生化
-- [AgentBrowser](../ch04-451-agentbrowser) — AI 专用浏览器
+- [CLI-Anything](/ch04-336-cli-anything-让-agent-自主驱动任意-gui-软件/) — 让所有软件 Agent 原生化
+- [AgentBrowser](/ch04-451-agentbrowser/) — AI 专用浏览器
 - CLI-Tools 横向对比 — OpenCLI / CLI-Anything / AutoCLI / AgentBrowser 四项目对比
 
 ## 相关实体
-- [GBrain](../ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策)
+- [GBrain](/ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策/)
 - MOC
 
 ---

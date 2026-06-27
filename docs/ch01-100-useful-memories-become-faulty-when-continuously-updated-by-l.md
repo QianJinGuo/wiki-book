@@ -31,8 +31,8 @@
 
 ## 相关实体
 
-- [Build Live Translation Apps with gpt-realtime-translate](../ch01-123-build-live-translation-apps-with-gpt-realtime-translate)
-- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](../ch01-115-a-recent-experience-with-chatgpt-5-5-pro-gowers-s-weblog)
+- [Build Live Translation Apps with gpt-realtime-translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
+- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](/ch01-115-a-recent-experience-with-chatgpt-5-5-pro-gowers-s-weblog/)
 
 ---
 

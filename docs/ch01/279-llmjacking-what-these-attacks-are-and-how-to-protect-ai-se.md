@@ -38,11 +38,11 @@ Key defensive measures for private AI infrastructure
 - Maintain detailed logs of LLM responses and requests made to the model and its supporting tools. Integrate these data sources with [your SIEM](https://www.kaspersky.com/enterprise-security/unified-monitoring-and-analysis-platform?icid=gl_kdailyplacehold_acq_ona_smm__onl_b2b_kasperskydaily_wpplaceholder____). Ensure logs are resilient against tampering or deletion.
 
 ## 相关实体
-- [Ai Agents Inside Perimeter Hackernews](../ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know/)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
-- [Llm Raiders How To Repel](../ch01-589-llm-raiders-and-how-to-repel-them/)
-- [我用 Skillmd 做了一个简历生成器](../ch07-047-我用-skill-md-做了一个简历生成器/)
-- [Skill Engineering Ai As Algorithm](../ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程/)
+- [Ai Agents Inside Perimeter Hackernews](/ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know//)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](/ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi//)
+- [Llm Raiders How To Repel](/ch01-589-llm-raiders-and-how-to-repel-them//)
+- [我用 Skillmd 做了一个简历生成器](/ch07-047-我用-skill-md-做了一个简历生成器//)
+- [Skill Engineering Ai As Algorithm](/ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-raiders-private-ai-server.md)
 

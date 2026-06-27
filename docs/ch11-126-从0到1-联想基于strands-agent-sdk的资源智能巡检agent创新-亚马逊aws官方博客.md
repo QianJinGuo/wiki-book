@@ -42,15 +42,15 @@ Lenovo在技术选型时提出了三个核心需求：**上手快、复杂度低
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/strands-agent-sdk-resource-intelligent-inspection-agent-innovation/)
 
 ## 相关实体
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](../ch11-078-基于-strands-agents-sdk-和-amazon-bedrock-agentcore-的商品广告图审查-ag)
-- [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](../ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客)
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的)
-- [Cline releases open-source agent runtime SDK](../ch01-299-cline-releases-open-source-agent-runtime-sdk)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch07-053-cli系列④-选型cli-mcp还是api)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](/ch11-078-基于-strands-agents-sdk-和-amazon-bedrock-agentcore-的商品广告图审查-ag/)
+- [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](/ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客/)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](/ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的/)
+- [Cline releases open-source agent runtime SDK](/ch01-299-cline-releases-open-source-agent-runtime-sdk/)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](/ch07-053-cli系列④-选型cli-mcp还是api/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5-ways-to-curb-ai-sprawl-without-stifling-innovation.md)
 
-- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](../ch11-111-快时尚电商行业智能体设计思路与应用实践-五-借助-agentcore-runtime-与-bedrock-模型平台-轻松)
+- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](/ch11-111-快时尚电商行业智能体设计思路与应用实践-五-借助-agentcore-runtime-与-bedrock-模型平台-轻松/)
 
 ---
 

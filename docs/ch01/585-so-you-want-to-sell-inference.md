@@ -79,7 +79,7 @@ Distillation 是唯一可持续的优化策略：生产流量通过 frontier tea
 
 ### Harness 的价值与陷阱
 
-文章提到了一个关键概念：**harness**（产品、工作流、UX 包装在模型周围）。这与 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 的理念高度吻合。
+文章提到了一个关键概念：**harness**（产品、工作流、UX 包装在模型周围）。这与 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 的理念高度吻合。
 
 但 harness 存在一个陷阱：
 
@@ -121,8 +121,8 @@ Tom Tunguz 的分析对投资者有明确的指引：
 
 ## 相关实体
 
-- [Harness Engineering](../ch05-041-harness-engineering-概念框架/) — harness 的价值与陷阱
-- [AgentCore](../ch04-206-agentcore-managed-harness/) — 平台层产品的定位参考
+- [Harness Engineering](/ch05-041-harness-engineering-概念框架//) — harness 的价值与陷阱
+- [AgentCore](/ch04-206-agentcore-managed-harness//) — 平台层产品的定位参考
 - Inference Economics — 推理经济学的更广泛讨论
 - Sierra — value-based pricing 的案例
 - Devin — ACU 定价模型的案例

@@ -69,10 +69,10 @@ The Qwen-Image-Flash paper is best read as a case study of a **recipe-first** ap
 
 ## 相关实体
 - Aws Sun Finance Ai Id Extraction Fraud Detection
-- [Trackingtamperedchefclustersviacertificateandcodereuse](../ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
+- [Trackingtamperedchefclustersviacertificateandcodereuse](/ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus//)
 - Bonsai Image 4B 1 Bit Ternary
-- [Liteframeefficientvisionencodersunlockframescalinginvideollms](../ch01-890-liteframe-efficient-vision-encoders-unlock-frame-scaling-in/)
-- [Agentexecutorgooglesdistributedagentruntime](../ch01-411-agent-executor-google-s-distributed-agent-runtime/)
+- [Liteframeefficientvisionencodersunlockframescalinginvideollms](/ch01-890-liteframe-efficient-vision-encoders-unlock-frame-scaling-in//)
+- [Agentexecutorgooglesdistributedagentruntime](/ch01-411-agent-executor-google-s-distributed-agent-runtime//)
 - count anything - 文本引导的通用目标计数框架
 
 ## 关键引用

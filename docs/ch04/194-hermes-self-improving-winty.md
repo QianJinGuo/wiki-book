@@ -93,7 +93,7 @@ Hermes 设计成纯文本读写是刻意降低人工干预门槛。winty 建议"
 ## 相关实体
 - Hermes Agent 自进化机制源码解析
 
-- [review agent 机制深度解析（winty）](../ch04-077-review-agent-机制深度解析-winty/)
+- [review agent 机制深度解析（winty）](/ch04-077-review-agent-机制深度解析-winty//)
 
 ## Related
 

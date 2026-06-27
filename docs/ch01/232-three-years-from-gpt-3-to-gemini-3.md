@@ -37,7 +37,7 @@ Ethan Mollick 通过让 Gemini 3 复刻自己三年前 GPT-3 时代的"糖果驱
 2. **通用工具与专用工具的分野**：能编码的 Agent 是通用工具，不能编码的 Agent 是专用工具。
 3. **编程语言作为 Agent 的元能力**：编程语言不只是给程序员用的，而是 Agent 系统能力的元层级。
 
-这与 [Code as Agent Harness Survey](../ch01-599-uiuc-meta-斯坦福等最新综述-code-as-agent-harness/) 中关于"代码即 Agent Harness"的论述形成强对应——编程能力是 Agent 系统能力的"乘数因子"，而不是"附属技能"。
+这与 [Code as Agent Harness Survey](/ch01-599-uiuc-meta-斯坦福等最新综述-code-as-agent-harness//) 中关于"代码即 Agent Harness"的论述形成强对应——编程能力是 Agent 系统能力的"乘数因子"，而不是"附属技能"。
 
 ### 2. Antigravity Inbox：从 Chatbox 到 Coworker 的产品形态
 
@@ -50,7 +50,7 @@ Google 配套 Gemini 3 推出的 Antigravity 工具引入 **Inbox** 概念——
 - **多 Agent 并行**：可以同时管理多个 Agent，识别"哪个在工作、哪个需要你的帮助"
 - **权限模型**：Agent 自主工作时，遇到关键决策点会 ping 用户等待授权
 
-Mollick 截图展示的工作场景："同时有四个不同 Agent 在工作，一个在工作，另一个需要你的帮助才能继续"——这与 [Factory Mission](../ch04-512-multi-agent-架构-factory-mission-系统的方法论/) 中 Orchestrator 协调多 Worker 的模式有异曲同工之妙，但 Inbox 把"协调者"角色直接交给了用户。
+Mollick 截图展示的工作场景："同时有四个不同 Agent 在工作，一个在工作，另一个需要你的帮助才能继续"——这与 [Factory Mission](/ch04-512-multi-agent-架构-factory-mission-系统的方法论//) 中 Orchestrator 协调多 Worker 的模式有异曲同工之妙，但 Inbox 把"协调者"角色直接交给了用户。
 
 ### 3. "管理数字同事"的人机协作模式
 
@@ -68,7 +68,7 @@ Mollick 描述的真实工作流：
 
 Mollick 的总结："我感觉自己掌控着 AI 正在做的选择，因为 AI 检查了，它的工作是可见的。"
 
-**与 [Harness Engineering Core Patterns](../ch01-698-深入浅出-harness-engineering-之核心模式与理念/) 的对照**：harness engineering 的核心是"控制面应当外置给人类"——Antigravity 的 Inbox 模式正是这一原则的产品化实现。
+**与 [Harness Engineering Core Patterns](/ch01-698-深入浅出-harness-engineering-之核心模式与理念//) 的对照**：harness engineering 的核心是"控制面应当外置给人类"——Antigravity 的 Inbox 模式正是这一原则的产品化实现。
 
 ### 4. PhD 级智能的真实测试
 
@@ -113,11 +113,11 @@ Mollick 给整篇文章的总结：
 
 > "三年前，我们对机器能写关于水獭的诗印象深刻。不到 1000 天后，我在与一个建立自己研究环境的 Agent 争论统计方法论。chatbot 时代正在变成数字同事时代。"
 
-**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
+**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering//) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
 
 ### 7. 与 OpenAI Codex 演进的方向对照
 
-Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](../ch01-388-gpt-5-4-是-codex-的一次大跨越-四维评估视角与-agent-战争回归/) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
+Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](/ch01-388-gpt-5-4-是-codex-的一次大跨越-四维评估视角与-agent-战争回归//) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
 
 ## 实践启示
 
@@ -187,18 +187,18 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 
 ## 相关实体
 
-- [Code as Agent Harness Survey](../ch01-599-uiuc-meta-斯坦福等最新综述-code-as-agent-harness/)
-- [GPT-5.4 Codex 进展](../ch01-388-gpt-5-4-是-codex-的一次大跨越-四维评估视角与-agent-战争回归/)
-- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Karpathy Agentic Engineering 综述](../ch04-070-从氛围编程到智能体工程/)
-- [AgentOps on Bedrock](../ch04-215-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
-- [Yann Dubois OpenAI 后训练访谈](../ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
-- [GPT-5.5 Copilot Session 设计](../ch07-037-wiki-evolver-skill-system-design-gpt-5-5-copilot-session/)
-- [AI Agent Harness 构建](../ch04-420-深度拆解-ai-智能体-harness-的构造-译/)
-- [Harness 状态边界与失败闭环](../ch04-452-harness-之后-agent-可靠性的关键-是状态边界和失败闭环/)
+- [Code as Agent Harness Survey](/ch01-599-uiuc-meta-斯坦福等最新综述-code-as-agent-harness//)
+- [GPT-5.4 Codex 进展](/ch01-388-gpt-5-4-是-codex-的一次大跨越-四维评估视角与-agent-战争回归//)
+- [Karpathy Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering//)
+- [Karpathy Agentic Engineering 综述](/ch04-070-从氛围编程到智能体工程//)
+- [AgentOps on Bedrock](/ch04-215-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed//)
+- [Yann Dubois OpenAI 后训练访谈](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角//)
+- [GPT-5.5 Copilot Session 设计](/ch07-037-wiki-evolver-skill-system-design-gpt-5-5-copilot-session//)
+- [AI Agent Harness 构建](/ch04-420-深度拆解-ai-智能体-harness-的构造-译//)
+- [Harness 状态边界与失败闭环](/ch04-452-harness-之后-agent-可靠性的关键-是状态边界和失败闭环//)
 - Agent Vibecoder 上下文压缩
-- [腾讯混元 HY3 开源预览](../ch01-665-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升/)
-- [Agent 记忆系统工程实践](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [腾讯混元 HY3 开源预览](/ch01-665-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升//)
+- [Agent 记忆系统工程实践](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进//)
 
 ---
 

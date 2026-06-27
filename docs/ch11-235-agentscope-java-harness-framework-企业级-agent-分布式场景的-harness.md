@@ -24,9 +24,9 @@ workspace/
 ```
 对比 vault 中其他工作区方案：
 
-- [Agent Harness 架构](../ch04-207-agent-harness-架构) — 7层金字塔模型，Harness 定位为 Agent 的"后台基础设施"
+- [Agent Harness 架构](/ch04-207-agent-harness-架构/) — 7层金字塔模型，Harness 定位为 Agent 的"后台基础设施"
 - OpenClaw Prompt/Harness — 个人单机假设，workspace 即本地目录
-- [Thin Harness Fat Skills](../ch05-063-thin-harness-fat-skills-ai工程架构的本质) — Thin Harness 理念：Harness 做薄（最小协调层），Skill 做厚（业务逻辑）
+- [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/) — Thin Harness 理念：Harness 做薄（最小协调层），Skill 做厚（业务逻辑）
 
 ### 支柱二：AbstractFilesystem 抽象
 ```
@@ -46,14 +46,14 @@ Local      Remote     Sandbox
 
 ## 与 vault 知识关联
 -  — 通用 7 层金字塔模型，HarnessAgent 入口类对应其中的"执行引擎 + 上下文工程"层
-- [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务) — Agent 从"聪明"到"可靠"的第三代工程范式；本文是 Java 生态的具体实现
+- [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/) — Agent 从"聪明"到"可靠"的第三代工程范式；本文是 Java 生态的具体实现
 - 上下文管理与 Working Set — AgentScope 的对话压缩 + 双层记忆沉淀 + FTS5 检索，是对 working set 理念的完整实现
-- [Browser Harness](../ch04-324-browser-harness-自愈型浏览器-agent-框架) — 浏览器端 Agent Harness；AgentScope 覆盖服务端 Java 场景
+- [Browser Harness](/ch04-324-browser-harness-自愈型浏览器-agent-框架/) — 浏览器端 Agent Harness；AgentScope 覆盖服务端 Java 场景
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentscope-java-harness-framework-enterprise-distributed.md)
 
 ## 相关实体
-- [Harness Engineering 系统梳理](../ch05-049-harness-engineering-系统梳理)
-- [OpenHuman: AI Agent 持久记忆框架](../ch04-284-1-6万-star-ai-agent-赛道又杀出一匹黑马)
+- [Harness Engineering 系统梳理](/ch05-049-harness-engineering-系统梳理/)
+- [OpenHuman: AI Agent 持久记忆框架](/ch04-284-1-6万-star-ai-agent-赛道又杀出一匹黑马/)
 
 - MOC
 ## 深度分析

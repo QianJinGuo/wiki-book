@@ -58,11 +58,11 @@ GP at Theory Ventures. Former Google PM. Sharing data-driven insights on AI, web
 [Bloomberg](https://www.bloomberg.com/news/articles/2025-04-30/google-places-ads-inside-chatbot-conversations-with-ai-startups "Quoted on AI monetization strategies") • [WSJ](https://www.wsj.com/tech/tech-media-telecom-roundup-market-talk-f8f0355a "Featured in tech market analysis") • [Economist](https://www.economist.com/business/2023/07/25/next-generation-googles-run-a-tighter-ship "Quoted on next-generation tech leadership")
 
 ## 相关实体
-- [Novee Security How To Get A 100 Conference Acceptance Rate The No](../ch01-481-how-to-get-a-100-conference-acceptance-rate-the-novee-way)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch01-521-business-intelligence-at-scale-key-obstacles)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch01-236-亚马逊aws官方博客-https-aws-amazon-com-cn-blogs-china)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch01-532-solution-overview)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch01-295-一-关于-kollab)
+- [Novee Security How To Get A 100 Conference Acceptance Rate The No](/ch01-481-how-to-get-a-100-conference-acceptance-rate-the-novee-way/)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](/ch01-521-business-intelligence-at-scale-key-obstacles/)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](/ch01-236-亚马逊aws官方博客-https-aws-amazon-com-cn-blogs-china/)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](/ch01-532-solution-overview/)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](/ch01-295-一-关于-kollab/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tomtunguz-com-software-after-ai.md)
 

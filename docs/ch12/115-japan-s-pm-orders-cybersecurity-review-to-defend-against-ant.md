@@ -29,13 +29,13 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/japan-pm-cybersecurity-review-anthropic-mythos.md)
 
 ## 相关实体
-- [Anthropic PM 的 Agentic 工作流](../ch04-383-anthropic-pm-的-agentic-工作流/)
-- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](../ch01-366-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt/)
+- [Anthropic PM 的 Agentic 工作流](/ch04-383-anthropic-pm-的-agentic-工作流//)
+- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](/ch01-366-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 
-- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](../ch01-675-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt/)
-- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](../ch01-906-anthropic-vs-dow-department-of-war-与开源模型的-5-10-年权力均衡/)
+- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](/ch01-675-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt//)
+- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](/ch01-906-anthropic-vs-dow-department-of-war-与开源模型的-5-10-年权力均衡//)
 - dario amodei 2026 policy on the ai exponential
 
 ---

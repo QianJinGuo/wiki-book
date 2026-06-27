@@ -43,9 +43,9 @@
 ## 相关实体
 > 主题导航
 
-- [Reinforcing Recursive Language Models | alphaXiv](../ch01-636-reinforcing-recursive-language-models-alphaxiv)
-- [Language Models and Meaning](../ch01-373-language-models-and-meaning)
-- [Language Models and Meaning](../ch01-373-language-models-and-meaning)
+- [Reinforcing Recursive Language Models | alphaXiv](/ch01-636-reinforcing-recursive-language-models-alphaxiv/)
+- [Language Models and Meaning](/ch01-373-language-models-and-meaning/)
+- [Language Models and Meaning](/ch01-373-language-models-and-meaning/)
 
 ---
 

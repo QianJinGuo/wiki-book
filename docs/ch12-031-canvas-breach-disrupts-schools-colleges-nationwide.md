@@ -11,11 +11,11 @@
 [![Image 3: Krebs on Security](https://krebsonsecurity.com/wp-content/uploads/2021/03/kos-27-03-2021.jpg)](https://krebsonsecurity.com/ "Krebs on Security")
 
 ## 相关实体
-- [Ath Agent Trust Handshake Protocol](../ch04-500-为了让agent更安全的工作-有多少人操碎了心)
-- [Aws Bedrock Agentcore Identity Security](../ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o)
-- [Ai Agents Inside Perimeter Hackernews](../ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know)
-- [Tsinghua Agent Security Fangcun](../ch04-402-细思极恐-agent暗藏风险-清华团队打出组合拳-全链路一网打尽)
+- [Ath Agent Trust Handshake Protocol](/ch04-500-为了让agent更安全的工作-有多少人操碎了心/)
+- [Aws Bedrock Agentcore Identity Security](/ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构/)
+- [Github Investigating Teampcp Claimed 17Cc77](/ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o/)
+- [Ai Agents Inside Perimeter Hackernews](/ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know/)
+- [Tsinghua Agent Security Fangcun](/ch04-402-细思极恐-agent暗藏风险-清华团队打出组合拳-全链路一网打尽/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/canvas-breach-disrupts-schools-colleges-nationwide.md)
 

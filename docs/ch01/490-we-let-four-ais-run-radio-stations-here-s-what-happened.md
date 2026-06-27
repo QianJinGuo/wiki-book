@@ -10,11 +10,11 @@
 - AI 个性化发展路径差异显著
 - AI 在无监督环境下易形成极端行为模式
 ## 相关实体
-- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
-- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](../ch03-092-when-growth-slows-is-it-sales-fault-or-the-product-s-fault/)
-- [Reasoning Lift](../ch01-509-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks/)
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch09-066-tmall-ai-coding-practice-team-knowledge-base/)
+- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack//)
+- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us//)
+- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](/ch03-092-when-growth-slows-is-it-sales-fault-or-the-product-s-fault//)
+- [Reasoning Lift](/ch01-509-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks//)
+- [Tmall Ai Coding Practice Team Knowledge Base](/ch09-066-tmall-ai-coding-practice-team-knowledge-base//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/we-let-four-ais-run-radio-stations-heres-what-happened.md)
 

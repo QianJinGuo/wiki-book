@@ -42,12 +42,12 @@
 
 ### 关联实体
 
-- [Ai Friendly Architecture Design Taobao](../ch01-634-面向-llm-的架构设计-什么是真正的-ai-friendly-架构)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01-677-anthropic)
-- [Harness 之后 状态边界与失败闭环 若飞](../ch05-015-harness-之后-状态边界与失败闭环-若飞续篇)
-- [Ai Agent Harness Construction Akshay Baoyu](../ch04-420-深度拆解-ai-智能体-harness-的构造-译)
-- [Harness Engineering Core Patterns Claude Code](../ch01-698-深入浅出-harness-engineering-之核心模式与理念)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04-450-ai-agent-工程师学习路线-面向资深后端-大数据工程师的能力地图)
+- [Ai Friendly Architecture Design Taobao](/ch01-634-面向-llm-的架构设计-什么是真正的-ai-friendly-架构/)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](/ch01-677-anthropic/)
+- [Harness 之后 状态边界与失败闭环 若飞](/ch05-015-harness-之后-状态边界与失败闭环-若飞续篇/)
+- [Ai Agent Harness Construction Akshay Baoyu](/ch04-420-深度拆解-ai-智能体-harness-的构造-译/)
+- [Harness Engineering Core Patterns Claude Code](/ch01-698-深入浅出-harness-engineering-之核心模式与理念/)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](/ch04-450-ai-agent-工程师学习路线-面向资深后端-大数据工程师的能力地图/)
 
 ## 实践启示
 

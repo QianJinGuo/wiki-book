@@ -24,11 +24,11 @@
 > "**写任何一行代码之前，先让人类和 AI 就'要做什么'达成明确一致，并把这份共识记录成结构化的规范文档。**"
 
 ## 相关实体
-- [Openspec 四步法深度复盘 流程完整不等于代码正确](../ch05-046-openspec-四步法深度复盘-流程完整-代码正确)
-- [Spec Kit Bmad Sdd Practice Yexiaocha](../ch04-096-spec-kit-vs-bmad-ai-原生-sdd-双框架实战对比-叶小钗重构迁移案例)
-- [民生银行基于规格驱动开发Sdd的 Codeagent 私域研发探索与实践](../ch04-177-民生银行基于规格驱动开发-sdd-的-codeagent-私域研发探索与实践)
-- [24H Worker Agent](../ch04-009-24h打工人)
-- [十年老技术开发的 Ai Agent 探索之路 V2](../ch04-266-十年老技术开发的-ai-agent-探索之路)
+- [Openspec 四步法深度复盘 流程完整不等于代码正确](/ch05-046-openspec-四步法深度复盘-流程完整-代码正确/)
+- [Spec Kit Bmad Sdd Practice Yexiaocha](/ch04-096-spec-kit-vs-bmad-ai-原生-sdd-双框架实战对比-叶小钗重构迁移案例/)
+- [民生银行基于规格驱动开发Sdd的 Codeagent 私域研发探索与实践](/ch04-177-民生银行基于规格驱动开发-sdd-的-codeagent-私域研发探索与实践/)
+- [24H Worker Agent](/ch04-009-24h打工人/)
+- [十年老技术开发的 Ai Agent 探索之路 V2](/ch04-266-十年老技术开发的-ai-agent-探索之路/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openspec-spec-driven-development-trae-solo.md)
 

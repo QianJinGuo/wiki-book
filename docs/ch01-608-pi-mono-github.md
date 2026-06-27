@@ -11,15 +11,15 @@
 pi-mono 是一个 npm workspace monorepo 的 TypeScript 项目，提供构建 AI Agent 的工具链。OpenClaw 的 Agent 执行引擎几乎全部构建在 pi-mono 之上。
 
 ## 相关实体
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch01-677-anthropic)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch01-677-anthropic)
-- [Cursor Harness Model Production Floor](../ch01-235-cursor-harness-model-production-floor)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch01-247-vibe-coding-and-agentic-engineering-convergence-simon-willi)
-- [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](../ch01-343-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](/ch01-677-anthropic/)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](/ch01-677-anthropic/)
+- [Cursor Harness Model Production Floor](/ch01-235-cursor-harness-model-production-floor/)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](/ch01-247-vibe-coding-and-agentic-engineering-convergence-simon-willi/)
+- [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](/ch01-343-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pi-mono-github.md)
 
-- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](../ch01-677-anthropic)
+- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](/ch01-677-anthropic/)
 
 ## 深度分析
 

@@ -93,10 +93,10 @@ You can view the code and download the project on [GitHub - LLMReaper](https://g
 ## 与现有实体对比
 
 - **差异化**: 新威胁类型（LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions），现有安全实体侧重传统 Web 攻击
-- **相关实体**: [Llmreaper Dom Based Ai Exfiltration](../ch01-528-llmreaper-dom-based-ai-conversation-exfiltration)、[Llmreaper Dom Conversation Exfiltration](../ch12-078-llmreaper-浏览器扩展的对话窃取攻击)
+- **相关实体**: [Llmreaper Dom Based Ai Exfiltration](/ch01-528-llmreaper-dom-based-ai-conversation-exfiltration/)、[Llmreaper Dom Conversation Exfiltration](/ch12-078-llmreaper-浏览器扩展的对话窃取攻击/)
 
 ## 相关实体
-- [llmreaper - dom based ai conversation exfiltration via brows](../ch01-454-llmreaper-dom-based-ai-conversation-exfiltration-via-brows)
+- [llmreaper - dom based ai conversation exfiltration via brows](/ch01-454-llmreaper-dom-based-ai-conversation-exfiltration-via-brows/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser.md)
 
 ## 深度分析

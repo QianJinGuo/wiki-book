@@ -10,11 +10,11 @@ Security pros warn YellowKey claim could make stolen laptops a much bigger probl
 Cybersecurity reporter
 
 ## 相关实体
-- [Microsoft Zero Days Researcher Disgruntled Theregister](../ch12-037-disgruntled-researcher-releases-two-more-microsoft-zero-days/)
-- [Disgruntled Researcher Microsoft Zero Days](../ch12-061-disgruntled-researcher-releases-two-more-microsoft-zero-days/)
-- [13 Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](../ch12-029-disgruntled-researcher-releases-two-more-microsoft-zero-days/)
-- [Down Fall Of Bug Bounties](../ch12-064-the-down-fall-of-bug-bounties/)
-- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/)
+- [Microsoft Zero Days Researcher Disgruntled Theregister](/ch12-037-disgruntled-researcher-releases-two-more-microsoft-zero-days//)
+- [Disgruntled Researcher Microsoft Zero Days](/ch12-061-disgruntled-researcher-releases-two-more-microsoft-zero-days//)
+- [13 Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](/ch12-029-disgruntled-researcher-releases-two-more-microsoft-zero-days//)
+- [Down Fall Of Bug Bounties](/ch12-064-the-down-fall-of-bug-bounties//)
+- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-zero-days-researcher-disgruntled.md)
 

@@ -73,11 +73,11 @@
 - 原版下载：claude.com/blog/the-founders-playbook
 - Anthropic Startups Program（免费API credits + 最高档rate limits）
 ## 相关实体
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-255-anthropic-博客-claude-code-大型代码库最佳实践/)
-- [Claude Code Large Codebase Enterprise Deployment](../ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南/)
-- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](../ch01-444-大厂代码库几百万行-claude-code怎么跑起来的-anthropic首次公开全套打法/)
-- [Anthropic Prompt Caching Claude Code Agihunt](../ch01-186-anthropic-最新博客-prompt-caching-是构建-claude-code-的一切/)
-- [Cat Wu Claude Code Pm](../ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人/)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-255-anthropic-博客-claude-code-大型代码库最佳实践//)
+- [Claude Code Large Codebase Enterprise Deployment](/ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南//)
+- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](/ch01-444-大厂代码库几百万行-claude-code怎么跑起来的-anthropic首次公开全套打法//)
+- [Anthropic Prompt Caching Claude Code Agihunt](/ch01-186-anthropic-最新博客-prompt-caching-是构建-claude-code-的一切//)
+- [Cat Wu Claude Code Pm](/ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-founders-playbook-huashu-2026.md)
 

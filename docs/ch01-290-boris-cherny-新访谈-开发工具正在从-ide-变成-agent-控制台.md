@@ -52,7 +52,7 @@ Claude Code 的爆发曲线违反直觉：前半年几乎没有 PMF（Product-Ma
 - 代码作者是"人" → 代码作者是"Agent"，审查者是"人"
 - 实时响应（小补全）→ 长任务执行（小时级 multi-step loop）
 
-这与 [Harness Engineering Core Patterns](../ch01-698-深入浅出-harness-engineering-之核心模式与理念) 中"控制面应当外置给人类"的工程原则一致——Human-in-the-Loop 不是降级方案，而是 Agent 系统设计的核心约束。
+这与 [Harness Engineering Core Patterns](/ch01-698-深入浅出-harness-engineering-之核心模式与理念/) 中"控制面应当外置给人类"的工程原则一致——Human-in-the-Loop 不是降级方案，而是 Agent 系统设计的核心约束。
 
 ### 3. "coding is solved"的前提条件分析
 
@@ -98,7 +98,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - 传统调用：用户请求 → Agent 一次性回答 → 结束
 - Loop 模式：用户定义目标 → Agent 持续观察 → 执行任务 → 检测失败 → 自动修复 → 汇报进展 → 继续循环，直到目标达成或失败不可恢复
 
-这与 [Claude Code Harness 深度解析](../ch01-558-claude-code-harness-深度分析) 中的 harness 设计哲学一致——harness 的核心价值就是为 Agent 提供持续运行的工程环境，而非一次性对话界面。
+这与 [Claude Code Harness 深度解析](/ch01-558-claude-code-harness-深度分析/) 中的 harness 设计哲学一致——harness 的核心价值就是为 Agent 提供持续运行的工程环境，而非一次性对话界面。
 
 ### 6. 治理边界问题的工程框架
 
@@ -111,7 +111,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - **审计层**：所有动作的完整记录
 - **责任层**：失败的归属与决策追溯
 
-这些边界问题在 [Agent 记忆系统工程实践](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进) 中被称为"过程资产"——Agent 系统不仅要完成任务，还要留下可审查、可重放、可学习的中间表示。
+这些边界问题在 [Agent 记忆系统工程实践](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/) 中被称为"过程资产"——Agent 系统不仅要完成任务，还要留下可审查、可重放、可学习的中间表示。
 
 ### 7. 与 Karpathy Software 3.0 的呼应
 
@@ -122,7 +122,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - Karpathy（理论侧）：Software 3.0——执行层自动化后，方向层变得更重要
 - Boris（工程侧）：控制点迁移——人从写代码的人变成管 Agent 工作流的人
 
-这与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering) 中的论述相互印证——"Vibe Coding"是 Agent 时代的临时形态，"Agentic Engineering"才是稳定形态。
+这与 [Karpathy Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) 中的论述相互印证——"Vibe Coding"是 Agent 时代的临时形态，"Agentic Engineering"才是稳定形态。
 
 ## 实践启示
 
@@ -172,17 +172,17 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 
 ## 相关实体
 
-- [两万字详解 Claude Code 源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
-- [Claude Code Harness 深度解析](../ch01-558-claude-code-harness-深度分析)
-- [Claude Code Harness 深度理解](../ch01-367-claude-code-harness-deep-understanding)
-- [深入理解 Claude Code Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道)
-- [GSD 上下文管理工具](../ch01-184-gsd-get-shit-done-context-management-tool)
-- [Agent 记忆系统工程实践](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
-- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [Anthropic 内部实践](../ch01-708-e9ffy3r5kwa1ja5pywbbrg)
-- [DeepSeek V4 Flash Pro](../ch01-726-deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元)
-- [加速 LLM 模型加载与上下文窗口](../ch01-802-accelerate-llm-model-loading-and-increase-context-windows-wi)
-- [大型表格模型基础](../ch01-809-fundamental-s-large-tabular-model-nexus-is-now-available-on)
+- [两万字详解 Claude Code 源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
+- [Claude Code Harness 深度解析](/ch01-558-claude-code-harness-深度分析/)
+- [Claude Code Harness 深度理解](/ch01-367-claude-code-harness-deep-understanding/)
+- [深入理解 Claude Code Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
+- [GSD 上下文管理工具](/ch01-184-gsd-get-shit-done-context-management-tool/)
+- [Agent 记忆系统工程实践](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [Karpathy Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Anthropic 内部实践](/ch01-708-e9ffy3r5kwa1ja5pywbbrg/)
+- [DeepSeek V4 Flash Pro](/ch01-726-deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元/)
+- [加速 LLM 模型加载与上下文窗口](/ch01-802-accelerate-llm-model-loading-and-increase-context-windows-wi/)
+- [大型表格模型基础](/ch01-809-fundamental-s-large-tabular-model-nexus-is-now-available-on/)
 
 ---
 

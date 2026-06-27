@@ -16,15 +16,15 @@
 - In this blog, we'll share more about Agent Executor and how you can get started.
 
 ## 相关实体
-- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch04-434-agent-executor-google-s-distributed-agent-runtime/)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04-321-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90/)
-- [Anthropic Google Agent Skills Design Patterns](../ch04-178-从-anthropic-到-google-agent-skills-进入设计模式阶段/)
+- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](/ch04-434-agent-executor-google-s-distributed-agent-runtime//)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段//)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](/ch04-321-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段//)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](/ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90//)
+- [Anthropic Google Agent Skills Design Patterns](/ch04-178-从-anthropic-到-google-agent-skills-进入设计模式阶段//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
 
-- [Design Md Google Stitch Voltagent Ai Design Agent](../ch04-074-design-md-ai-设计-agent-的视觉约束对齐文件-google-stitch-voltagent/)
+- [Design Md Google Stitch Voltagent Ai Design Agent](/ch04-074-design-md-ai-设计-agent-的视觉约束对齐文件-google-stitch-voltagent//)
 - MOC
 ## 深度分析
 

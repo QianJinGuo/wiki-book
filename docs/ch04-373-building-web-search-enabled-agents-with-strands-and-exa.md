@@ -10,8 +10,8 @@
 See [source article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-web-search-enabled-agents-with-strands-and-exa.md) for full content.
 
 ## 相关实体
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的)
-- [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](../ch11-139-基于bedrock-agentcore-strands构建企业级智能搜索平台实践-亚马逊aws官方博客)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](/ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的/)
+- [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](/ch11-139-基于bedrock-agentcore-strands构建企业级智能搜索平台实践-亚马逊aws官方博客/)
 
 ## 深度分析
 1. **工具调用模式从硬编码流程转向模型驱动决策** — Strands Agents 的核心理念是让 LLM 决定何时调用哪些工具，而非预设执行顺序。agent loop 通过积累对话历史（每一步 tool call 及其结果）形成上下文，使得多步骤研究任务可以在单一调用内完成多轮 search→extract→synthesize。这种模式与传统 if-this-then-that 的工作流引擎有本质区别，模型成为 runtime 的调度者而非脚本的奴隶。
@@ -31,9 +31,9 @@ See [source article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/
 -
 -
 
-- [Agentic Scheduler with Strands AgentCore for Multi-Region GPU Inference](../ch04-167-基于strands和agentcore-实现agentic-scheduler-在多region自动编排推理gpu算力)
-- [Product Ad Review Agent with Strands SDK and Bedrock](../ch11-078-基于-strands-agents-sdk-和-amazon-bedrock-agentcore-的商品广告图审查-ag)
-- [基于 Strands SDK 的企业级智能数据查询解决方案实践](../ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客)
+- [Agentic Scheduler with Strands AgentCore for Multi-Region GPU Inference](/ch04-167-基于strands和agentcore-实现agentic-scheduler-在多region自动编排推理gpu算力/)
+- [Product Ad Review Agent with Strands SDK and Bedrock](/ch11-078-基于-strands-agents-sdk-和-amazon-bedrock-agentcore-的商品广告图审查-ag/)
+- [基于 Strands SDK 的企业级智能数据查询解决方案实践](/ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客/)
 - AI Agent Memory Systems
 
 ---

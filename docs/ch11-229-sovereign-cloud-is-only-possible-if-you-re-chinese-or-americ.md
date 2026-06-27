@@ -33,10 +33,10 @@
 - `阿里云CIO` — 非中美云厂商的主权困境
 
 ## 相关实体
-- [5237660 1](../ch11-196-sovereign-cloud-is-only-possible-if-you-re-chinese-or-americ)
-- [Vietnam To Develop Domestic Cloud](../ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over)
-- [Vietnam Domestic Cloud](../ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over)
-- [Oz Multi Harness Cloud Agent Orchestration](../ch04-409-agent-orchestration)
+- [5237660 1](/ch11-196-sovereign-cloud-is-only-possible-if-you-re-chinese-or-americ/)
+- [Vietnam To Develop Domestic Cloud](/ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over/)
+- [Vietnam Domestic Cloud](/ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over/)
+- [Oz Multi Harness Cloud Agent Orchestration](/ch04-409-agent-orchestration/)
 
 ---
 

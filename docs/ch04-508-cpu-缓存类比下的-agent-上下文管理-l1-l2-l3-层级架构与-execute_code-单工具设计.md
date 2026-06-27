@@ -72,7 +72,7 @@ Agent 写代码 → 代码调函数 → 函数操作电子表格。**没有 read
 2. **execute_code 把所有决策折叠成一步**——让模型用编程语言的完整表达力组合各种能力，而非拼凑僵硬的工具调用
 3. **三个缓存层从同一个入口触达**——模型始终在写代码，L1/L2/L3 只决定它知道哪些函数可调用，以及找到这些函数要付出多少代价
 
-### 与 [Anthropic 工具数量陷阱](../ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具) 的对比
+### 与 [Anthropic 工具数量陷阱](/ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具/) 的对比
 
 | 维度 | Anthropic 答案 | 本文答案 |
 |------|----------------|----------|
@@ -273,16 +273,16 @@ grep -n '"isEnum": true' api-reference.json -B2 -A10  # 枚举所有枚举值
 
 ## 与现有实体的互补关系
 
-- [AI Agent 工具数量陷阱](../ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具) — "5-10 工具"是 Anthropic 答案；"1 execute_code"是本文答案（更激进的同向论述）
+- [AI Agent 工具数量陷阱](/ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具/) — "5-10 工具"是 Anthropic 答案；"1 execute_code"是本文答案（更激进的同向论述）
 - Agent Harness 上下文管理工作集视角 — 工作集是 **L1 内部**的精细化设计；本文是工作集的 L1/L2/L3 宏观扩展
-- [智能体编排层中的上下文管理架构](../ch04-460-智能体编排层中的上下文管理架构) — 框架主动约束 vs 模型自主管理的权衡；本文是同向的更激进的 execute_code 推论
+- [智能体编排层中的上下文管理架构](/ch04-460-智能体编排层中的上下文管理架构/) — 框架主动约束 vs 模型自主管理的权衡；本文是同向的更激进的 execute_code 推论
 - Context Engineering — 上下文工程的概念基础
-- [Code as Agent Harness Survey](../ch09-046-code-as-agent-harness-综述) — 编程语言作为 Agent 接口的更广义论述
-- [Claude Code 工具设计演进](../ch01-677-anthropic) — Anthropic 工具设计的演进
+- [Code as Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/) — 编程语言作为 Agent 接口的更广义论述
+- [Claude Code 工具设计演进](/ch01-677-anthropic/) — Anthropic 工具设计的演进
 - 上下文工程三种记忆范式对比 — 记忆/上下文/信息的层级
-- [Claude Code 上下文工程 Thariq](../ch01-677-anthropic) — 官方 Anthropic 视角
+- [Claude Code 上下文工程 Thariq](/ch01-677-anthropic/) — 官方 Anthropic 视角
 - Codex 上下文工程 LastWhisper — 另一家 Code 厂商的上下文视角
-- [上下文工程系列](../ch04-403-agentic-ai-infrastructure-practice-series-9-context-enginee) — 系列化上下文工程讨论
+- [上下文工程系列](/ch04-403-agentic-ai-infrastructure-practice-series-9-context-enginee/) — 系列化上下文工程讨论
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cpu-cache-analogy-agent-context-management-liwen-2026-06-12.md)
 

@@ -10,11 +10,11 @@
 - 来源：https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html
 
 ## 相关实体
-- [Github Investigating Teampcp Claimed 17Cc77](../ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o/)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01-630-google-adds-llms-txt-check-to-chrome-lighthouse/)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04-439-score-by-collisions-patch-by-panic/)
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](../ch12-056-grafana-github-token-breach-led-to-codebase-download-and-ext/)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
+- [Github Investigating Teampcp Claimed 17Cc77](/ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o//)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](/ch01-630-google-adds-llms-txt-check-to-chrome-lighthouse//)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](/ch04-439-score-by-collisions-patch-by-panic//)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](/ch12-056-grafana-github-token-breach-led-to-codebase-download-and-ext//)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)
 

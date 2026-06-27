@@ -115,11 +115,11 @@ hermes dashboard
 5. **关注 profile 配置的正确性**：在创建 kanban 任务前先用 `hermes kanban assignees` 确认所有 profile 已配置，避免静默失败。profile 是 agent 执行权限和模型偏好的载体，配置错误是最隐蔽的失败模式。
 
 ## 相关实体
-- [Hermes Agent Deep Dive Alibaba](../ch04-418-hermes-agent)
-- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](../ch04-418-hermes-agent)
-- [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch04-418-hermes-agent)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-418-hermes-agent)
-- [我用 Skillmd 做了一个简历生成器](../ch07-047-我用-skill-md-做了一个简历生成器)
+- [Hermes Agent Deep Dive Alibaba](/ch04-418-hermes-agent/)
+- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](/ch04-418-hermes-agent/)
+- [Hermes Agent Kanban Deep Test By Wjjagi 2026](/ch04-418-hermes-agent/)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-418-hermes-agent/)
+- [我用 Skillmd 做了一个简历生成器](/ch07-047-我用-skill-md-做了一个简历生成器/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-getting-started-guide-2026.md)
 

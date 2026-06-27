@@ -26,12 +26,12 @@
 ## 相关实体
 > 主题导航
 
-- [Why I'm leaving GitHub for Forgejo](../ch01-011-why-i-m-leaving-github-for-forgejo/)
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch01-068-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over/)
+- [Why I'm leaving GitHub for Forgejo](/ch01-011-why-i-m-leaving-github-for-forgejo//)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](/ch01-068-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over//)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/shinyhunters-7-eleven-data-breach.md)
 
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over/)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](/ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over//)
 
 ---
 

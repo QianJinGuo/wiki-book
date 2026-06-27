@@ -11,11 +11,11 @@
 RAG改换换了！清华提出Skill-RAG
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
-- [Hermes Agent Newbie Guide Dotta](../ch04-418-hermes-agent)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90)
-- [Three Rag Architectures Classic Graph Agentic](../ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Hermes Agent Newbie Guide Dotta](/ch04-418-hermes-agent/)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](/ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90/)
+- [Three Rag Architectures Classic Graph Agentic](/ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-rag-tsinghua-sra.md)
 

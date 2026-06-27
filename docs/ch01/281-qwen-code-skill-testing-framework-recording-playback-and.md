@@ -172,11 +172,11 @@ Issue 本身处于 proposal 阶段（v1），距离生产可用还需解决：
 ## 相关链接
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/qwen-code-skill-testing-framework-issue-2447.md)
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01-615-skill-issues-compromising-claude-code-with-malicious-skills/)
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01-384-how-claude-code-works-in-large-codebases-best-practices-and/)
-- [Claude Code Skill Writing Guide](../ch07-020-claude-code-skill-md-写作指南/)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](/ch01-615-skill-issues-compromising-claude-code-with-malicious-skills//)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](/ch01-384-how-claude-code-works-in-large-codebases-best-practices-and//)
+- [Claude Code Skill Writing Guide](/ch07-020-claude-code-skill-md-写作指南//)
 - Ai Skill Evolution Framework
-- [Tracking Tampered Chef Clusters Aef374](../ch01-517-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
+- [Tracking Tampered Chef Clusters Aef374](/ch01-517-tracking-tamperedchef-clusters-via-certificate-and-code-reus//)
 
 ---
 

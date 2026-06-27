@@ -41,11 +41,11 @@ ASCS 三大模块——Move（全球 freight 网络）、Store（warehouse + 第
 ## Tags
 #amazon #logistics #supply-chain #ecommerce
 ## 相关实体
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](../ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick)
-- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](../ch11-015-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens 1](../ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes)
-- [Introducing Claude Platform On Aws](../ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](/ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
+- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](/ch11-015-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r/)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens 1](/ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes/)
+- [Introducing Claude Platform On Aws](/ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](/ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake/)
 
 ---
 

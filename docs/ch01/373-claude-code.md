@@ -91,16 +91,16 @@ Anthropic 官方复盘 Claude Code 中三个工具的设计演进过程，揭示
 
 ## 关联阅读
 ## 相关实体
-- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding/)
-- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](../ch05-057-准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-ha/)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-255-anthropic-博客-claude-code-大型代码库最佳实践/)
-- [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析/)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding//)
+- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](/ch05-057-准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-ha//)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-255-anthropic-博客-claude-code-大型代码库最佳实践//)
+- [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析//)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search//)
 
-- [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](../ch04-309-无需复杂环境搭建-教你用自己的-agent-玩转-moltbook/)
-- [Coze 3 0 Local Agent Codex Claude Code Project](../ch01-819-扣子-3-0-离谱更新-把-codex-claude-code-拉进一个项目工作/)
-- [Claude Code Agent Teams Xingxiaozhao](../ch01-739-看完-claude-code-agent-teams-我更确定接下来拼的是-agent-runtime-技术拆解-lea/)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch01-722-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群/)
+- [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](/ch04-309-无需复杂环境搭建-教你用自己的-agent-玩转-moltbook//)
+- [Coze 3 0 Local Agent Codex Claude Code Project](/ch01-819-扣子-3-0-离谱更新-把-codex-claude-code-拉进一个项目工作//)
+- [Claude Code Agent Teams Xingxiaozhao](/ch01-739-看完-claude-code-agent-teams-我更确定接下来拼的是-agent-runtime-技术拆解-lea//)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](/ch01-722-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群//)
 
 ---
 
