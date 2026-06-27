@@ -95,7 +95,7 @@
 - [Strands Agents Cloud Cost Optimizer](/ch04-128-基于-strands-agents-构建亚马逊云科技云成本分析与优化-ai-助手/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
-- agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）
+- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](/ch04-495-逆天的架构-用-harness-langgraph-a2a-写一个-agent-team/)
 
 ---
 

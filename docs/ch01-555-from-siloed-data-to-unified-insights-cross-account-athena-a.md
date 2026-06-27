@@ -13,8 +13,8 @@
 
 ## 相关实体
 - 基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理与增量同步
-- Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
-- Amazon Nova Multimodal Embeddings 制造业智能应用
+- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](/ch01-667-architecture-data-foundations-for-ai-powered-search/)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](/ch01-285-multimodal/)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](/ch04-204-航班变更信息智能识别解决方案/)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)

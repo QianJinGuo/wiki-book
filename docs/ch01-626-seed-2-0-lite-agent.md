@@ -36,7 +36,7 @@
 - [Doubao Seed 2 Lite Agent Multimodal](/ch01-582-豆包-seed-2-0-lite升级-给-agent-装上眼睛和耳朵/)
 - [Hermes Agent Newbie Guide Dotta](/ch01-655-paperclip-ai-公司操作系统-第-5-篇-完结/)
 - [Skill Rag Tsinghua Sra](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/)
-- Doubao Seed 2 Lite
+- [Doubao Seed 2 Lite](/ch01-613-豆包-seed-2-0-lite升级-给-agent-装上眼睛和耳朵/)
 - [Deepseek Code Harness](/ch09-068-deepseek-code-harness/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md)

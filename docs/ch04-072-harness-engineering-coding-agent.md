@@ -26,7 +26,7 @@
 - [Agent Skill 设计模式](/ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
 - [柚漫剧 AI 全流程提效拆解](/ch01-356-柚漫剧-ai-全流程提效拆解/)
 - [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/)
-- Coding Harness 工程本质
+- [Coding Harness 工程本质](/ch05-032-coding-harness-pi-openclaw/)
 - [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/)
 - [Design Patterns for AI Agents 2026](/ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl/)
 

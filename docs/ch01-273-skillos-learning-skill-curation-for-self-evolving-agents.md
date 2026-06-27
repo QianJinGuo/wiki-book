@@ -54,7 +54,7 @@ r = r_task + λ_f·r_fc + λ_u·r_cnt + λ_c·r_comp 这四个奖励项各有其
 - [基于AgentCore构建自学习、可进化的文旅行业近似信息抽取Agents | 亚马逊AWS官方博客](/ch11-123-基于agentcore构建自学习-可进化的文旅行业近似信息抽取agents-亚马逊aws官方博客/)
 - [Self-Evolving Agents 系统性综述](/ch04-203-self-evolving-agents-系统性综述/)
 - [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](/ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化/)
-- Hermes Agent 自进化机制源码解析
+- [Hermes Agent 自进化机制源码解析](/ch04-418-hermes-agent/)
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](/ch01-302-llm-as-a-verifier-a-general-purpose-verification-framework/)
 - [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](/ch04-177-民生银行基于规格驱动开发-sdd-的-codeagent-私域研发探索与实践/)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](/ch01-164-llm-agent脚手架如何具备自进化能力-以hermes-agent为例/)

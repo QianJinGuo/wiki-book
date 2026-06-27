@@ -54,7 +54,7 @@
 - [AI Agent 记忆系统架构](/ch04-145-how-ai-agent-memory-works/)
 - [深度拆解 Hermes Agent 记忆系统](/ch04-418-hermes-agent/)
 
-- ai agent memory systems
+- [ai agent memory systems](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
 
 - MOC
 ## 深度分析

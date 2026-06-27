@@ -11,7 +11,7 @@
 
 ## 相关实体
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
-- Amazon Nova Multimodal Embeddings 制造业智能应用
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](/ch01-285-multimodal/)
 - [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](/ch11-054-amazon-nova-lite-fine-tuning-高性价比的视觉检测模型微调案例与实践-亚马逊aws官方博/)
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](/ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的/)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](/ch11-130-build-financial-document-processing-with-pulse-ai-and-amazon/)

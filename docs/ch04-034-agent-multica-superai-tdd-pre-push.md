@@ -292,12 +292,12 @@
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](/ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者/) — 阿里泊予 评测 Harness 视角（兄弟文章）
 - [从提需求到部署发布全Ai全自动化后研发效能全面跃升](/ch09-065-从提需求到部署发布-全ai全自动化后-研发效能全面跃升/) — 腾讯 CodeBuddy L1→L2→L3 演进
 - [Ai Native Rd Org Design](/ch05-018-ai-native-时代研发组织何去何从/) — AI 原生研发组织设计
-- Agent Harness Context Management Working Set — Agent Harness 上下文管理
+- [Agent Harness Context Management Working Set — Agent Harness 上下文管理](/ch05-038-agent生产级harness工程指南/)
 - [Agent Skill Writing Guide](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/) — Skill 编写基础
 - [Agent Skill Writing Practices](/ch04-242-agent-skill-高质量编写规范/) — Skill 编写实战（决策树替代模糊判断）
 - Agent Role Specialization — 多角色 Agent 协作
-- Agent Self Improvement Loops — 度量驱动的 Agent 自我迭代
-- Agent Memory Lifecycle Philosophies — 记忆生命周期与"提升"边界
+- [Agent Self Improvement Loops — 度量驱动的 Agent 自我迭代](/ch04-028-高德-ai-native-生产线-第-3-期-7x24-self-healing-pipeline-agent-自/)
+- [Agent Memory Lifecycle Philosophies — 记忆生命周期与"提升"边界](/ch04-087-agent-memory-架构本质/)
 - [Agent Memory Architecture](/ch04-146-agent-memory-架构本质/) — Agent 记忆架构
 - Agent Orchestration Patterns — Agent 编排模式
 - Agent Deployment Strategy — Agent 部署策略

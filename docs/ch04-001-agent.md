@@ -115,7 +115,7 @@ AI 原生创业公司每周改进一次自己的操作系统。
 - [Ai Native Startup Cyberfund Guide](/ch04-449-how-to-build-an-ai-native-startup/)
 - [Ai Agent Harness Construction Akshay](/ch04-065-深度拆解-ai-智能体-harness-的构造-译/)
 - [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](/ch05-035-cursor-复盘-harness-模型决定能力上限-harness-决定生产下限/)
-- Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
 - [Guide Ai Agents Models Apps Harnesses Mollick](/ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stepan-gershuni-ai-native-startup-guide.md)

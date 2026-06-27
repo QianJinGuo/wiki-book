@@ -102,7 +102,7 @@ Nova Act 采用浏览器优先的自动化架构，这与传统的 API 驱动 RP
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
 - [Prompting Amazon Nova 2 For Content Moderation](/ch01-387-prompting-amazon-nova-2-for-content-moderation/)
 - [Evaluate Amazon Nova Sonic Voice Agent Scale No Mic](/ch11-033-evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-mic/)
-- Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session
+- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](/ch04-305-how-loka-built-a-natural-low-latency-voice-agent-with-amazo/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-nova-act-is-now-hipaa-eligible.md)
 

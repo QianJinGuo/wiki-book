@@ -115,7 +115,7 @@ NLAs 擅长读取"整体语义意图"，SAE 擅长定位具体激活特征。两
 NLAs 当前的高成本限制了其作为实时监控工具的可行性，但可以规划分阶段落地路径：第一阶段（当前）用于离线安全审计和模型发布前评估；第二阶段（模型压缩或硬件进步后）用于高风险场景的准实时监控；第三阶段才考虑面向用户的透明性工具。切忌在第一阶段就试图将 NLAs 内嵌到面向消费者的产品中。 
 
 ## 相关实体
-- Natural Language Autoencoders (Anthropic)
+- [Natural Language Autoencoders (Anthropic)](/ch01-692-anthropic/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-natural-language-autoencoders.md)
 

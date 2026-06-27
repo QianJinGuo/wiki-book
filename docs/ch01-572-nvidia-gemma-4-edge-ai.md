@@ -10,7 +10,7 @@ Bringing AI Closer to the Edge and On&#x2d;Device with Gemma 4 | NVIDIA Technica
 ## 相关实体
 - [Nvidia Telco Reasoning Models Nemo](/ch01-178-nvidia-telco-reasoning-models-nemo/)
 - [Nvidia Edge First Llms Av Robotics](/ch01-194-nvidia-edge-first-llms-av-robotics/)
-- Nvidia Multimodal Rag Knowledge Systems
+- [Nvidia Multimodal Rag Knowledge Systems](/ch01-285-multimodal/)
 - [Nvidia Agentic Ai Subsurface Engineering](/ch04-313-nvidia-agentic-ai-subsurface-engineering/)
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](/ch04-339-nvidia-secure-local-agent-nemoclaw-openclaw/)
 

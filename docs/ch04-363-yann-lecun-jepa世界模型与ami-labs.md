@@ -69,7 +69,7 @@ AMI Labs获得10亿美元融资并选择JEPA路线，表明世界模型已经从
 - [Baixing Ontoz Enterprise Ontology Multi Agent](/ch04-131-百型智能-ontoz-企业本体论-群智能体协同体系-出海企业数字大脑-palantir-中国类比/)
 - [Tsinghua Self Evolving Skill Agent](/ch01-605-清华自进化skill双星-embodiskill-skillevolver/)
 - [直播预约 数据引擎具身智能的下一个决胜局](/ch01-676-直播预约-数据引擎-具身智能的下一个决胜局/)
-- Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606
+- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
 - Nvidia Gamma World Multi Agent World Model
 
 ---

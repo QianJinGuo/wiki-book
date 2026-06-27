@@ -134,7 +134,7 @@
 
 ## 相关实体
 - [Anthropic AI 原生创业手册](/ch01-354-anthropic发布-ai原生创业公司-手册-涵盖全流程四大核心阶段-一人公司法典来了/)（同公司同主题的人才战略另一视角）
-- Claude Code 招聘工程师（不同主题：用 Claude Code 辅助招聘 vs 本文 Anthropic 招什么样的人）
+- [Claude Code 招聘工程师（不同主题：用 Claude Code 辅助招聘 vs 本文 Anthropic 招什么样的人）](/ch01-692-anthropic/)
 - [Harness Engineering 综述](/ch04-069-agent-harness-engineering-a-survey/)（相关：构建大规模生产系统的工程能力）
 - [Harness 架构](/ch04-207-agent-harness-架构/)（相关：Anthropic 40% 基础设施背景与 Harness 实践的组织基础）
 

@@ -13,7 +13,7 @@
 
 ## 相关实体
 - [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](/ch01-613-豆包-seed-2-0-lite升级-给-agent-装上眼睛和耳朵/)
-- Claude Code Prompt Context Harness
+- [Claude Code Prompt Context Harness](/ch05-081-claude-harness-generator-evaluator-context-reset/)
 - [Tencent Vibe Coding To Agentic Engineering Backend](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
 - [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
 - [Hermes Agent Newbie Guide Dotta](/ch04-418-hermes-agent/)

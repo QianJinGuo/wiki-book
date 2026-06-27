@@ -142,7 +142,7 @@ description 字段的编写应该围绕"在什么情况下 Agent 应该考虑这
 ## 相关实体
 - [Agent Skill 进阶模式与治理](/ch01-319-agent-skill-进阶模式与治理/)
 
-- Agent Skill 评估与迭代
+- [Agent Skill 评估与迭代](/ch04-498-skillclaw-nacos-从一次-agent-会话到可治理-skill-registry-的自动演化闭环/)
 - [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](/ch04-369-skillsieve-agent-skill-安全检测三层框架/)
 
 ---

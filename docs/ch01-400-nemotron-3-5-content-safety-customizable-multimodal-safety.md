@@ -111,7 +111,7 @@ Nemotron 在 Hugging Face + NVIDIA NIM 部署，意味着推理侧有 NIM 的 Te
 ## 相关实体
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/) — NVIDIA Isaac Lab 的机器人 RL 规模化
-- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid — NVIDIA Isaac + SageMaker 人形机器人 RL
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid — NVIDIA Isaac + SageMaker 人形机器人 RL](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) — AI Coding 范式跃迁的多模态视角
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/) — 多模态视频 agent 的另一前沿
 - [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/) — Vibe Coding 与 Agentic Engineering 的同源访谈

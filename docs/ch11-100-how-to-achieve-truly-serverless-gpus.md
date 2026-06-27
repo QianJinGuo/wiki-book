@@ -29,7 +29,7 @@
 > 主题导航
 
 - [TiDB Cloud — Agent-native 数据库与 Kimi K2.6 合作](/ch11-077-tidb-cloud-agent-native-数据库与-kimi-k2-6-合作/)
-- Kimi K2.6 Agent Database：Agent-native 数据 Infra
+- [Kimi K2.6 Agent Database：Agent-native 数据 Infra](/ch04-159-kimi-work-beta-通用-agent-一定来自模型公司/)
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](/ch11-040-阿里云-eventhouse-企业级-agent-上下文构建五维框架/)
 - MOC
 

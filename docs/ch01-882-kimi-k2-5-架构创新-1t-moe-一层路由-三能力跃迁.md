@@ -49,7 +49,7 @@ Kimi K2.5（Moonshot AI）是 K2 之后的开源 1T MoE 升级版本，核心架
 
 ## 相关实体
 
-- Kimi K2.6 Agent Database — K2.6 的 TiDB Cloud 基础设施实践
+- [Kimi K2.6 Agent Database — K2.6 的 TiDB Cloud 基础设施实践](/ch04-159-kimi-work-beta-通用-agent-一定来自模型公司/)
 - [Kimi AttnRes](/ch01-880-kimi-attention-residuals-attnres-prenorm-稀释问题与-block-折中方案/) — Kimi 的 attention 残差机制
 - [DeepSeek MoE](/ch01-673-deepseek-moe-并行策略与gpu通信优化/) — DeepSeek MoE 架构对比
 - openJiuwen Swarm — Kimi 关联的开源 harness

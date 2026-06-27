@@ -289,7 +289,7 @@ const baseInputSchema = z.object({
 
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — 本文是 Harness Engineering 的具体源码实现验证
 - [Claude Code 深度解析](/ch01-558-claude-code-harness-深度分析/) — Claude Code 架构的另一次深度解读
-- Claude Code Dynamic Workflows — AgentTool 子智能体 + Dynamic Workflow 范式
+- [Claude Code Dynamic Workflows — AgentTool 子智能体 + Dynamic Workflow 范式](/ch03-002-obsidian-claude-code-集成指南/)
 - [Claude Code 架构](/ch01-571-claude-code-架构解析/) — Claude Code 整体架构概览
 - [Agent Evolution 四阶段六维](/ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/) — 阶段三/阶段四对应 Claude Code 的生产实践
 - [OpenClaw 完整指南](/ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/) — 开源对应物（Worktree 隔离模式实现）

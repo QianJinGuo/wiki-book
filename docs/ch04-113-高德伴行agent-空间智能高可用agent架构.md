@@ -166,7 +166,7 @@ L3层（必要时）：确定性规则只在确实存在强绑定场景时才引
 
 - [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路/)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
-- ai agent memory systems
+- [ai agent memory systems](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
 
 ---
 

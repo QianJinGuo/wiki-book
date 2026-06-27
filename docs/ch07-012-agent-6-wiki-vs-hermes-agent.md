@@ -139,7 +139,7 @@ Hermes 当前已经实现了**原始数据派的核心能力**：
 ## 相关实体
 - [Hermes Agent 12 Layer Full Configuration Guide](/ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队/)
 - [Hermes Agent Memory System Three Layer Architecture](/ch04-275-拆解-hermes-agent-的记忆系统-一个生产级-ai-记忆是怎么设计的/)
-- Hermes Agent Self Evolving
+- [Hermes Agent Self Evolving](/ch04-418-hermes-agent/)
 - [Hermes Skill System](/ch01-298-hermes-agent-skill-系统深度解析/)
 - [Hermes 9 Module Architecture](/ch01-888-hermes-agent-9-模块系统架构/)
 

@@ -12,7 +12,7 @@
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](/ch01-384-how-claude-code-works-in-large-codebases-best-practices-and/)
 - [Low Code Api Integration](/ch03-070-how-to-build-low-code-api-integrations-for-enterprise-apps-u/)
 - [How_Claude_Code_Works_In_Large_Codebases](/ch09-013-how-claude-code-works-in-large-codebases-best-practices-and/)
-- Karpathy Claude Md Rules
+- [Karpathy Claude Md Rules](/ch01-765-mnilax-claude-md-规则从-karpathy-的-4-条增加到-12-条-claude-错误率从-41/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-avoid-ai-code-slop.md)
 
