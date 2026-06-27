@@ -1,5 +1,144 @@
+/* AI 工程 - Custom Styles */
 
-.md-content h2 { margin-top: 2rem; border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: 0.5rem; }
-.md-content blockquote { border-left: 3px solid var(--md-accent-fg-color); font-size: 0.9em; }
+/* 正文排版优化 */
+.md-content {
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+.md-content h2 {
+  margin-top: 2.5rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.md-content h3 {
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.md-content p {
+  margin-bottom: 1rem;
+}
+
+.md-content blockquote {
+  border-left: 3px solid var(--md-accent-fg-color);
+  font-size: 0.92em;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  background-color: var(--md-default-fg-color--lightest);
+  border-radius: 0 4px 4px 0;
+}
+
 .md-content small { opacity: 0.7; }
 .md-content a { color: var(--md-accent-fg-color); }
+
+/* 表格优化 */
+.md-content table {
+  display: table;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.md-content table th {
+  background-color: var(--md-primary-fg-color--lightest);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.md-content table td {
+  padding: 0.6rem 1rem;
+}
+
+/* 列表优化 */
+.md-content ul {
+  margin-bottom: 1rem;
+}
+
+.md-content li {
+  margin-bottom: 0.3rem;
+}
+
+/* 代码块 */
+.md-content code {
+  font-size: 0.85em;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+.md-content pre code {
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+/* 右侧目录字体缩小 */
+.md-sidebar--secondary .md-nav__link {
+  font-size: 0.72rem;
+  line-height: 1.4;
+  padding: 0.15rem 0;
+}
+
+.md-sidebar--secondary .md-nav__title {
+  font-size: 0.75rem;
+}
+
+.md-sidebar--secondary .md-nav__list {
+  padding-left: 0.6rem;
+}
+
+/* 章节链接卡片化 */
+.md-content h3 a {
+  text-decoration: none;
+  border-bottom: 1px dashed var(--md-accent-fg-color--transparent);
+  transition: border-color 0.2s;
+}
+
+.md-content h3 a:hover {
+  border-bottom-style: solid;
+}
+
+/* 入门篇等章节标题强调 */
+.md-content h2 + blockquote {
+  margin-top: 0;
+}
+
+/* 导航栏优化 */
+.md-tabs__link {
+  font-size: 0.85rem;
+}
+
+/* 首页统计数字 */
+.md-content strong {
+  color: var(--md-accent-fg-color);
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .md-content blockquote {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-md-color-scheme="slate"] .md-content table th {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* 响应式优化 */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--secondary {
+    font-size: 0.7rem;
+  }
+}
+
+/* 打印优化 */
+@media print {
+  .md-sidebar,
+  .md-header,
+  .md-footer,
+  .md-top {
+    display: none !important;
+  }
+  
+  .md-content {
+    max-width: 100%;
+  }
+}
