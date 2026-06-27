@@ -55,7 +55,7 @@ Agent 系统的 Harness 层（系统提示词、工具包装器、规划-执行�
 ## 参考
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hidden-technical-debt-agent-harness.md)
-→ [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架//)
+→ [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/)
 
 ---
 

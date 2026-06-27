@@ -10,10 +10,10 @@
 
 ## 相关实体
 
-- [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](/ch03-074-amazon-quick-cisco-webex-mcp-会议准备与跟进助手-meeting-lifecycle-m//)
-- [introducing the mdn mcp server](/ch07-055-introducing-the-mdn-mcp-server//)
-- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](/ch04-164-从-pi-main-源码拆解-顶尖-ai-agent-的工程设计-17-维度全解//)
-- [万级实时推理的商品领域agent实践思考和总结](/ch04-486-万级实时推理的商品领域agent实践思考和总结//)
+- [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](/ch03-074-amazon-quick-cisco-webex-mcp-会议准备与跟进助手-meeting-lifecycle-m/)
+- [introducing the mdn mcp server](/ch07-055-introducing-the-mdn-mcp-server/)
+- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](/ch04-164-从-pi-main-源码拆解-顶尖-ai-agent-的工程设计-17-维度全解/)
+- [万级实时推理的商品领域agent实践思考和总结](/ch04-486-万级实时推理的商品领域agent实践思考和总结/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-an-agentic-incident-triage-assistant-with-amazon-quick-and-new-relic.md)
 
 - MOC
@@ -31,7 +31,7 @@
 
 Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色，与 Aderant 案例中作为"统一搜索入口"的角色互补：
 
-- **Aderant 场景**（[Aderant Transforms Cloud Operations With Amazon Quick](/ch11-173-aderant-transforms-cloud-operations-with-amazon-quick//)）：Quick 接入 6 个供应商系统的 MCP servers，专注 cross-source RAG 搜索
+- **Aderant 场景**（[Aderant Transforms Cloud Operations With Amazon Quick](/ch11-173-aderant-transforms-cloud-operations-with-amazon-quick/)）：Quick 接入 6 个供应商系统的 MCP servers，专注 cross-source RAG 搜索
 - **本场景**：Quick 通过单 agent 同时编排 2 个 tool 类别——observability tools（New Relic 推理 + 查询）+ action tools（Asana 任务创建）
 
 这种"单 agent + 多 tool 类别"的模式是当前 agentic AI 落地的标准形态，与 Claude Code Dynamic Workflows Multi Agent Orchestration 描述的动态 fan-out 模式形成对比——Amazon Quick 提供的是 **预定义工具集的稳定编排**，而非 Claude Code 的动态 sub-agent 生成。
@@ -64,11 +64,11 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 
 这一设计直接解决 SRE 实践中的核心痛点：**shift handoff 时的 knowledge loss**。无论当班工程师是谁，AI 生成的 RCA 都遵循相同结构，下一班工程师可在 30 秒内快速理解 incident 状态。
 
-与 [Hermes Agent Tool System Architecture](/ch03-086-hermes-agent-工具系统架构分析//) 等"工具架构"主题 entity 的差异：本 entity 关注 **incident response 流程标准化** 而非 agent 内部工具系统设计。
+与 [Hermes Agent Tool System Architecture](/ch03-086-hermes-agent-工具系统架构分析/) 等"工具架构"主题 entity 的差异：本 entity 关注 **incident response 流程标准化** 而非 agent 内部工具系统设计。
 
 ### 4. 异步补全 vs 实时编排的对比
 
-本架构中 **Amazon Quick 是同步编排**（单 prompt 触发 → 5 工具调用 → RCA 输出 → Asana 任务创建），与 [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](/ch07-036-ai-infra-auto-driven-skills-v0-1-0-给-codex-claude-code-的推理//) 描述的"长时自驱动 agent"模式相反：
+本架构中 **Amazon Quick 是同步编排**（单 prompt 触发 → 5 工具调用 → RCA 输出 → Asana 任务创建），与 [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](/ch07-036-ai-infra-auto-driven-skills-v0-1-0-给-codex-claude-code-的推理/) 描述的"长时自驱动 agent"模式相反：
 
 - **同步编排（Quick 模式）**：用户给 prompt → AI 立即完成 → 人类 review + confirm Asana 任务创建（"Yes, create an Asana task..."）
 - **异步自驱动（auto-driven 模式）**：AI 在 background 持续运行 → 周期性输出 → 人类异步 review
@@ -94,7 +94,7 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 
 ## 与现有 wiki 实体的差异化
 
-| 维度 | 本 entity | [Aderant Transforms Cloud Operations With Amazon Quick](/ch11-173-aderant-transforms-cloud-operations-with-amazon-quick//) | [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](/ch01-532-solution-overview//) |
+| 维度 | 本 entity | [Aderant Transforms Cloud Operations With Amazon Quick](/ch11-173-aderant-transforms-cloud-operations-with-amazon-quick/) | [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](/ch01-532-solution-overview/) |
 |------|----------|------------------|------------------|
 | 场景 | SRE incident triage + RCA + handoff | 律师事务所 cross-source 知识搜索 | 金融 AML 告警 triage |
 | 集成广度 | 2 个集成（New Relic + Asana） | 6 个供应商系统 MCP | 1 个 Snowflake 集成 |
@@ -114,11 +114,11 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 
 ## 相关主题
 
-- [Aderant Transforms Cloud Operations With Amazon Quick](/ch11-173-aderant-transforms-cloud-operations-with-amazon-quick//) — Amazon Quick 在法律行业的 cross-source RAG 案例（同一产品不同应用场景）
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](/ch11-014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway//) — Amazon Bedrock AgentCore 的 MCP gateway 扩展（MCP 在 AWS 的另一面）
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](/ch01-532-solution-overview//) — Amazon Quick 在金融 AML 告警分流的应用（同一产品的规则化分流场景）
-- [Aws Bedrock Agentcore Doris Mcp Server](/ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式//) — AWS Bedrock AgentCore + Doris MCP server 的另一个生产实战
-- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](/ch07-036-ai-infra-auto-driven-skills-v0-1-0-给-codex-claude-code-的推理//) — 长时自驱动 agent 模式（与本 entity 的同步编排模式形成对比）
+- [Aderant Transforms Cloud Operations With Amazon Quick](/ch11-173-aderant-transforms-cloud-operations-with-amazon-quick/) — Amazon Quick 在法律行业的 cross-source RAG 案例（同一产品不同应用场景）
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](/ch11-014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway/) — Amazon Bedrock AgentCore 的 MCP gateway 扩展（MCP 在 AWS 的另一面）
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](/ch01-532-solution-overview/) — Amazon Quick 在金融 AML 告警分流的应用（同一产品的规则化分流场景）
+- [Aws Bedrock Agentcore Doris Mcp Server](/ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式/) — AWS Bedrock AgentCore + Doris MCP server 的另一个生产实战
+- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](/ch07-036-ai-infra-auto-driven-skills-v0-1-0-给-codex-claude-code-的推理/) — 长时自驱动 agent 模式（与本 entity 的同步编排模式形成对比）
 
 ---
 

@@ -8,11 +8,11 @@
 - 来自 newsletter 推荐的优质文章
 - 评分: v×c = 49
 ## 相关实体
-- [Netflix Metadata Service Model Lifecycle Graph](/ch11-034-netflix-metadata-service-and-model-lifecycle-graph//)
-- [Netflix Live Operations Human Infrastructure](/ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构//)
-- [Netflix Nebula Archrules](/ch11-088-netflix-nebula-archrules-跨越数千个-java-仓库的-archunit-规模化实践//)
-- [Netflix Switchboard Lightbulb Model Routing](/ch11-074-netflix-switchboard-lightbulb-百万请求-秒-ml-模型路由架构演进//)
-- [Netflix Druid Interval Aware Caching](/ch11-091-netflix-druid-区间感知缓存-指数-ttl-分桶查询去重//)
+- [Netflix Metadata Service Model Lifecycle Graph](/ch11-034-netflix-metadata-service-and-model-lifecycle-graph/)
+- [Netflix Live Operations Human Infrastructure](/ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构/)
+- [Netflix Nebula Archrules](/ch11-088-netflix-nebula-archrules-跨越数千个-java-仓库的-archunit-规模化实践/)
+- [Netflix Switchboard Lightbulb Model Routing](/ch11-074-netflix-switchboard-lightbulb-百万请求-秒-ml-模型路由架构演进/)
+- [Netflix Druid Interval Aware Caching](/ch11-091-netflix-druid-区间感知缓存-指数-ttl-分桶查询去重/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/netflix-is-building-an-ai-animation-studio.md)
 

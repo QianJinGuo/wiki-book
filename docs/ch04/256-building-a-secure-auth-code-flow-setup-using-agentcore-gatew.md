@@ -59,11 +59,11 @@ Gateway 的令牌验证设计具有显著的架构灵活性。文档明确指出
 5. **验证 Gateway 认证配置后立即测试端到端流程**：文章提供的 `curl` 测试命令（POST 无令牌到 `/mcp` 端点，期望 401）是验证 Gateway 认证是否正确生效的关键一步。这个测试应在配置 IdP 和 Gateway 后、生产部署前执行，以确保认证防线在请求到达 MCP 服务器之前就已生效，避免未授权请求穿透到后端工具层。
 
 ## 相关实体
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](/ch11-014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway//)
-- [Spec Review Agent Baz Bedrock Agentcore Multi Agent](/ch04-217-spec-review-agent-multi-agent-code-to-product-validation-wi//)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](/ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南//)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore//)
-- [Amazon Bedrock Agentic Payments Guardrails](/ch04-059-enable-safe-agentic-payments-with-built-in-guardrails-using//)
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](/ch11-014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway/)
+- [Spec Review Agent Baz Bedrock Agentcore Multi Agent](/ch04-217-spec-review-agent-multi-agent-code-to-product-validation-wi/)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](/ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南/)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [Amazon Bedrock Agentic Payments Guardrails](/ch04-059-enable-safe-agentic-payments-with-built-in-guardrails-using/)
 
 - MOC
 ## 相关主题

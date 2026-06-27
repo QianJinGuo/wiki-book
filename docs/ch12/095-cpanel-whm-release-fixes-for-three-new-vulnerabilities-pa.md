@@ -11,11 +11,11 @@ Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](http
 [__](javascript:void(0))
 
 ## 相关实体
-- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](/ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner//)
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](/ch01-741-introducing-seer-agent-the-answer-is-already-in-sentry-now//)
-- [Airbyte Agents A New Era For Airbyte Airbyte](/ch04-256-airbyte-agents-a-new-era-for-airbyte//)
-- [Airbyte Agents](/ch04-445-airbyte-agents-a-new-era-for-airbyte-airbyte//)
-- [5 Years And 5M Later Inventing A New](/ch03-071-5-years-and-5m-later-inventing-a-new-programming-language//)
+- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](/ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner/)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](/ch01-741-introducing-seer-agent-the-answer-is-already-in-sentry-now/)
+- [Airbyte Agents A New Era For Airbyte Airbyte](/ch04-256-airbyte-agents-a-new-era-for-airbyte/)
+- [Airbyte Agents](/ch04-445-airbyte-agents-a-new-era-for-airbyte-airbyte/)
+- [5 Years And 5M Later Inventing A New](/ch03-071-5-years-and-5m-later-inventing-a-new-programming-language/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)
 

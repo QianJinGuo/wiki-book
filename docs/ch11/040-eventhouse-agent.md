@@ -109,9 +109,9 @@ EventHouse 的定位是 AI 时代面向 Agent 的"标准插座"。
 ## 相关概念
 
 - Agent Harness 上下文管理：工作集视角：从 Harness 视角看上下文工作集管理
-- [Agent Memory 架构本质](/ch04-146-agent-memory-架构本质//)：记忆管理层
+- [Agent Memory 架构本质](/ch04-146-agent-memory-架构本质/)：记忆管理层
 - Context Management in Agent Systems：Agent 系统中的上下文管理框架
-- [智能体编排层中的上下文管理架构](/ch04-460-智能体编排层中的上下文管理架构//)：上下文管理架构模式
+- [智能体编排层中的上下文管理架构](/ch04-460-智能体编排层中的上下文管理架构/)：上下文管理架构模式
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alibaba-eventhouse-enterprise-agent-context.md)
 

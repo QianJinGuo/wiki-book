@@ -13,8 +13,8 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - **评分**: score=80
 
 ## 与现有知识库内容的关联
-- [Claude Managed Agents](/ch04-421-claude-managed-agents//) — 托管 Harness 平台
-- [Agent/Skills/Teams 架构演进与选型](/ch04-219-agent-skills-teams-架构演进过程及技术选型之道//) — Anthropic Skills 认知一致性机制
+- [Claude Managed Agents](/ch04-421-claude-managed-agents/) — 托管 Harness 平台
+- [Agent/Skills/Teams 架构演进与选型](/ch04-219-agent-skills-teams-架构演进过程及技术选型之道/) — Anthropic Skills 认知一致性机制
 - Skill 形式化理论 — Skill 的六元组定义与 DAG 步骤计划
 
 ## 原始存档
@@ -27,31 +27,31 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - **SHA256**: b86edc6b7fd2278a2e205739e276ed9e303e16467d5b600254cc879cf2bea8e4
 
 ## 相关实体
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](/ch04-178-从-anthropic-到-google-agent-skills-进入设计模式阶段//)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch04-084-anthropic-官方技能最佳实践-14-个可复用的-agent-skills-设计模式//)
-- [Anthropic 官方 14 种 Skill 设计模式](/ch01-283-anthropic-官方-14-种-skill-设计模式//)
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](/ch01-531-skills-anthropic-openai-comparison-frontend-design//)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格//)
-- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](/ch04-460-智能体编排层中的上下文管理架构//)
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](/ch04-024-qoder-skills-完全指南-agent-skill-迭代式编写-ai-按你的标准执行//)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则//)
-- [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南//)
-- [Hermes Agent](/ch04-418-hermes-agent//)
-- [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗//)
-- [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation//)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](/ch04-178-从-anthropic-到-google-agent-skills-进入设计模式阶段/)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch04-084-anthropic-官方技能最佳实践-14-个可复用的-agent-skills-设计模式/)
+- [Anthropic 官方 14 种 Skill 设计模式](/ch01-283-anthropic-官方-14-种-skill-设计模式/)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](/ch01-531-skills-anthropic-openai-comparison-frontend-design/)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
+- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](/ch04-460-智能体编排层中的上下文管理架构/)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](/ch04-024-qoder-skills-完全指南-agent-skill-迭代式编写-ai-按你的标准执行/)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)
+- [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南/)
+- [Hermes Agent](/ch04-418-hermes-agent/)
+- [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)
+- [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
 - Hermes Agent Skill
-- [Anthropic Claude Managed Agents 平台正式发布](/ch01-181-anthropic-claude-managed-agents-平台正式发布//)
-- [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning//)
-- [SkillX — 层次化技能知识库](/ch07-042-skillx-层次化技能知识库//)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布//)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台//)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](/ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论//)
-- [Anthropic Computer Use 最佳实践](/ch01-658-anthropic-发布-computer-use-最佳实践//)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题//)
-- [SkillClaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化//)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力//)
+- [Anthropic Claude Managed Agents 平台正式发布](/ch01-181-anthropic-claude-managed-agents-平台正式发布/)
+- [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
+- [SkillX — 层次化技能知识库](/ch07-042-skillx-层次化技能知识库/)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](/ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论/)
+- [Anthropic Computer Use 最佳实践](/ch01-658-anthropic-发布-computer-use-最佳实践/)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题/)
+- [SkillClaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化/)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
 
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](/ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills//)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](/ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills/)
 
 - MOC
 - MOC

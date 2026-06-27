@@ -7,9 +7,9 @@
 # 基于 AWS 智能设备助手行业资产，构建社交渠道触达的消费级 Agent 交互应用
 
 ## 相关实体
-- [habby 游戏借助 aws devops agent 实现智能运维最佳实践](/ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践//)
-- [agent-evalkit：aws 开源 cli agent 评测工具包](/ch11-026-agent-evalkit-aws-开源-cli-agent-评测工具包//)
-- [aws sagemaker ai agent guided workflows finetuning](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning//)
+- [habby 游戏借助 aws devops agent 实现智能运维最佳实践](/ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践/)
+- [agent-evalkit：aws 开源 cli agent 评测工具包](/ch11-026-agent-evalkit-aws-开源-cli-agent-评测工具包/)
+- [aws sagemaker ai agent guided workflows finetuning](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-cn-intelligent-device-assistant-consumer-agent-2026.md)
 

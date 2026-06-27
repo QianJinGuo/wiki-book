@@ -26,7 +26,7 @@ xAI 解散但 Grok 还活着。2026年5月6日马斯克官宣 xAI 解散并入 S
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xai-shutdown-grok-still-alive.md)
 
-- [perceptron mk1 shocks with highly performant video analysis](/ch17-multimodal//)
+- [perceptron mk1 shocks with highly performant video analysis](/ch17-multimodal/)
 
 ## 深度分析
 **xAI 解散的本质是资本效率的必然结果**。从财务数据看，xAI 2025年月烧10亿美元，前9个月消耗现金80亿美元，Q3单季净亏损14.6亿美元，全年预计亏损约130亿美元。即便融资200亿美元估值2300亿美元，这种烧钱速度也难以为继。并入 SpaceX 后，整个集团总估值1.25万亿美元，融资能力上一个量级——这是典型的"大船抗风浪"逻辑。

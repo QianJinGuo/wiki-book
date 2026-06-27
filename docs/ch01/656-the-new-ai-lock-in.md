@@ -7,11 +7,11 @@
 ## 核心要点
 - Published Time: 2026-05-16T22:36:49-06:00 Even as models get easier to swap, the work that surrounds them is not. Developers already move among Claude Code, Codex, Gemini, and local models with less c
 ## 相关实体
-- [New Lock](/ch01-681-the-new-ai-lock-in//)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](/ch01-392-introducing-claude-platform-on-aws-anthropic-s-native-platf//)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践//)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](/ch01-279-claude思考黑箱终结了-anthropic-祭出ai读心术-揭秘claude的隐藏想法//)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践//)
+- [New Lock](/ch01-681-the-new-ai-lock-in/)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](/ch01-392-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](/ch01-279-claude思考黑箱终结了-anthropic-祭出ai读心术-揭秘claude的隐藏想法/)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-new-ai-lock-in.md)
 

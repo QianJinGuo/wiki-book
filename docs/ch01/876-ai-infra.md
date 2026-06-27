@@ -144,15 +144,15 @@ FlashAttention 的核心机制是 **Kernel Fusion + 分块计算 + Online Softma
 
 ## 相关实体
 
-- [Tokenspeed Agentic Inference Engine](/ch04-513-tokenspeed-agentic-inference-engine//)
-- [Google Io 2026 Agentic Gemini Era](/ch01-859-i-o-2026-welcome-to-the-agentic-gemini-era//)
-- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](/ch07-036-ai-infra-auto-driven-skills-v0-1-0-给-codex-claude-code-的推理//)
-- [Gemma 4 Multi Token Prediction Drafters](/ch01-214-gemma-4-multi-token-prediction-drafters//)
+- [Tokenspeed Agentic Inference Engine](/ch04-513-tokenspeed-agentic-inference-engine/)
+- [Google Io 2026 Agentic Gemini Era](/ch01-859-i-o-2026-welcome-to-the-agentic-gemini-era/)
+- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](/ch07-036-ai-infra-auto-driven-skills-v0-1-0-给-codex-claude-code-的推理/)
+- [Gemma 4 Multi Token Prediction Drafters](/ch01-214-gemma-4-multi-token-prediction-drafters/)
 - Continuous Async
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](/ch01-284-数据级-harness-架构师-jiagoux-解读-anthropic-95-数据分析与-5-个反直觉边界//)
-- [Codex Goal Source Code Deep Dive](/ch09-041-codex-goal-源码深度解析-状态表-续跑条件-预算账本//)
-- [Impeccable Frontend Design Skill Harness Vibecoder](/ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析//)
-- [Opencli Browser Automation Jingxing](/ch04-165-浏览器自动化-从-gui-到-opencli-agent-时代的可调用性竞争//)
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](/ch01-284-数据级-harness-架构师-jiagoux-解读-anthropic-95-数据分析与-5-个反直觉边界/)
+- [Codex Goal Source Code Deep Dive](/ch09-041-codex-goal-源码深度解析-状态表-续跑条件-预算账本/)
+- [Impeccable Frontend Design Skill Harness Vibecoder](/ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析/)
+- [Opencli Browser Automation Jingxing](/ch04-165-浏览器自动化-从-gui-到-opencli-agent-时代的可调用性竞争/)
 - MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-infra-llm-efficient-inference-vllm.md)

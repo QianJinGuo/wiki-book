@@ -68,10 +68,10 @@ LiteFrame 的 student encoder 采用：
 
 ## 相关实体
 - Liteframe Efficient Vision Encoders
-- [Agentexecutorgooglesdistributedagentruntime](/ch01-411-agent-executor-google-s-distributed-agent-runtime//)
-- [Trackingtamperedchefclustersviacertificateandcodereuse](/ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus//)
-- [Rag技术框架的演进方向](/ch01-193-rag技术框架的演进方向//)
-- [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d//)
+- [Agentexecutorgooglesdistributedagentruntime](/ch01-411-agent-executor-google-s-distributed-agent-runtime/)
+- [Trackingtamperedchefclustersviacertificateandcodereuse](/ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
+- [Rag技术框架的演进方向](/ch01-193-rag技术框架的演进方向/)
+- [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/liteframeefficientvisionencodersunlockframescalinginvideollms.md)
 

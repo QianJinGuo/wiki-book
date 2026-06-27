@@ -12,7 +12,7 @@ Apple Security Engineering and Architecture (SEAR) 联合 Hardware Technologies 
 
 ## 三个独有贡献（不应合并到现有 entity）
 
-1. **核心密码学代码的形式化验证 pipeline**（不是 TLA+ 系统建模）— 与现有 [antfly 博客](/ch09-025-cheap-code-means-formal-verification-is-reasonable-now-ant//)（AI agent 在 TLA+/Coq 证明上 hill-climb）属于**不同技术层**。前者是 *软件工程层*（让 AI 写出可验证代码），后者是 *密码学实现层*（用 ACL2/Sawmill 等证明助手验证汇编级恒定时间 + 正确性）。
+1. **核心密码学代码的形式化验证 pipeline**（不是 TLA+ 系统建模）— 与现有 [antfly 博客](/ch09-025-cheap-code-means-formal-verification-is-reasonable-now-ant/)（AI agent 在 TLA+/Coq 证明上 hill-climb）属于**不同技术层**。前者是 *软件工程层*（让 AI 写出可验证代码），后者是 *密码学实现层*（用 ACL2/Sawmill 等证明助手验证汇编级恒定时间 + 正确性）。
 2. **Post-quantum 算法（ML-KEM/ML-DSA）的工业级验证方法** — FIPS 203/204 标准算法的 reference implementation 形式化验证，包含 Montgomery reduction、polynomial multiplication、NTT 等核心子程序证明。
 3. **Side-channel resistance 形式化** — 恒定时间（constant-time）属性在汇编层被形式化证明，覆盖 Apple Silicon 特有的 NEON 加速路径。
 
@@ -91,8 +91,8 @@ Apple 公开的方法涉及多个工具和层次：
 
 ## 链接到现有实体
 
-- [Agent Formal Verification Ai Code](/ch09-025-cheap-code-means-formal-verification-is-reasonable-now-ant//) — 互补层：软件工程层（AI 写证明）vs 密码学实现层（人工 ACL2 证明）
-- [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d//) — 同样在"AI × 形式化"边界，但走 discovery 路线而非验证路线
+- [Agent Formal Verification Ai Code](/ch09-025-cheap-code-means-formal-verification-is-reasonable-now-ant/) — 互补层：软件工程层（AI 写证明）vs 密码学实现层（人工 ACL2 证明）
+- [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/) — 同样在"AI × 形式化"边界，但走 discovery 路线而非验证路线
 - How Ethereum Plans To Replace Bls With Post Quantum Signatur 20260606 — 同样 post-quantum 主题，但关注 BLS aggregate signatures 而非核心 KEM/DSA
 
 ## 上线状态

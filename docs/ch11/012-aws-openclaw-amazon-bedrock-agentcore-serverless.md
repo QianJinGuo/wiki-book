@@ -310,22 +310,22 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
 
 ## 相关实体
-- [OpenClaw多租户迁移: Phase 2&3部署](/ch04-440-openclaw-multi-4//)
+- [OpenClaw多租户迁移: Phase 2&3部署](/ch04-440-openclaw-multi-4/)
 - Amazon Nova Multimodal Embeddings 制造业智能应用
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon//)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](/ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu//)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2//)
-- [航班变更信息智能识别解决方案 | Amazon Web Services](/ch04-204-航班变更信息智能识别解决方案//)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](/ch11-144-zenjoy-基于-amazon-bedrock-和-eks-构建-aiops-agent-打通-prometheus//)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](/ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a//)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri//)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](/ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu/)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
+- [航班变更信息智能识别解决方案 | Amazon Web Services](/ch04-204-航班变更信息智能识别解决方案/)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](/ch11-144-zenjoy-基于-amazon-bedrock-和-eks-构建-aiops-agent-打通-prometheus/)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](/ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
 
-- [AgentCore Runtime部署Apache Doris MCP Server](/ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt//)
-- [OpenClaw多租户迁移: 背景与架构概览](/ch04-432-openclaw-multi-1//)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](/ch04-390-openclaw-multi-3//)
-- [Amazon Bedrock模型推理的Serverless异步架构](/ch11-067-amazon-bedrock-model-inference-serverless-architecture-case//)
-- [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice//)
-- [from pdfs to insights: architecting an intelligent document](/ch11-206-from-pdfs-to-insights-architecting-an-intelligent-document//)
+- [AgentCore Runtime部署Apache Doris MCP Server](/ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt/)
+- [OpenClaw多租户迁移: 背景与架构概览](/ch04-432-openclaw-multi-1/)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](/ch04-390-openclaw-multi-3/)
+- [Amazon Bedrock模型推理的Serverless异步架构](/ch11-067-amazon-bedrock-model-inference-serverless-architecture-case/)
+- [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice/)
+- [from pdfs to insights: architecting an intelligent document](/ch11-206-from-pdfs-to-insights-architecting-an-intelligent-document/)
 
 ---
 

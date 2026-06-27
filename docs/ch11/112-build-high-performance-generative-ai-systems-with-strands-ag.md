@@ -110,15 +110,15 @@ NVIDIA NIM (GPU 加速推理 via build.nvidia.com)
 GitHub: `aws-samples/sample-agentic-genai-agentcore/aws-genai-campaign-review-strands-agentcore`
 
 ## 相关实体
-- [Bedrock Agentcore Coding Agent Hosting](/ch09-027-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on//)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore//)
-- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri//)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](/ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew//)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2//)
+- [Bedrock Agentcore Coding Agent Hosting](/ch09-027-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on/)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](/ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/strands-agents-high-performance-genai-systems.md)
 
-- [aws bedrock agentcore 多账户对话式运维助手：基于 strands agents + devops](/ch11-072-aws-bedrock-agentcore-多账户对话式运维助手-基于-strands-agents-devops//)
+- [aws bedrock agentcore 多账户对话式运维助手：基于 strands agents + devops](/ch11-072-aws-bedrock-agentcore-多账户对话式运维助手-基于-strands-agents-devops/)
 
 ## 深度分析
 

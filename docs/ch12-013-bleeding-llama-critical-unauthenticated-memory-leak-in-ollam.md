@@ -28,7 +28,7 @@ The leaked memory contains u...
 - [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md)
 
 ## 相关实体
-> AI 安全与对齐 | > [Agent 记忆架构](/ch04-146-agent-memory-架构本质//)
+> AI 安全与对齐 | > [Agent 记忆架构](/ch04-146-agent-memory-架构本质/)
 
 ## 深度分析
 ### 漏洞根因分析

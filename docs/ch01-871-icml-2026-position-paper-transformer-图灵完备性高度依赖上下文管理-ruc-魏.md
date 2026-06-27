@@ -26,7 +26,7 @@ ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive 
 
 2. **抛弃"Transformer 是图灵完备的 = 我们的 Agent 无所不能"的简化叙事**：当业务方问"为什么 Agent 还是会出错"，答案可能是"上下文管理选错了复杂度层级"或"用了缩放族假设支撑的"理论保证"。这一澄清对售前 / 架构沟通有直接价值。
 
-3. **为 Harness 设计建立"复杂度预算"指标**：在系统设计阶段明确 C 的复杂度层级（REG / DCSL / 图灵完备），并匹配业务任务的复杂度要求。这与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) 的"资源预算"维度形成共鸣。
+3. **为 Harness 设计建立"复杂度预算"指标**：在系统设计阶段明确 C 的复杂度层级（REG / DCSL / 图灵完备），并匹配业务任务的复杂度要求。这与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) 的"资源预算"维度形成共鸣。
 
 4. **多 token 解码 (K≥2) 是"被忽视的能力增强杠杆"**：当前主流 LLM 都是 K=1 自回归，论文证明 K≥2 直接达到图灵完备。**对低延迟要求高的场景，多 token 解码 + 追加式上下文管理是性价比最高的"能力升级"**。关注 Anthropic / OpenAI 是否在内部生产中已用 K>1。
 

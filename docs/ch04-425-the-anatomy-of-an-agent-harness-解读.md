@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](/ch02-prompt//)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](/ch02-prompt/)
 - [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)

@@ -74,11 +74,11 @@ Google 发布了网站 agent-ready 指南，明确包含视觉 UI 优化（Agent
 
 ## 相关实体
 
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](/ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚//)
-- [Your AI Agents Are Already Inside the Perimeter](/ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know//)
-- [Chrome Enterprise Policies on Amazon Bedrock AgentCore](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri//)
-- [AI-powered honeypots](/ch01-060-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age//)
-- [Securing AI agents: AWS and Cisco AI Defense](/ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级//)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](/ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚/)
+- [Your AI Agents Are Already Inside the Perimeter](/ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know/)
+- [Chrome Enterprise Policies on Amazon Bedrock AgentCore](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
+- [AI-powered honeypots](/ch01-060-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age/)
+- [Securing AI agents: AWS and Cisco AI Defense](/ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级/)
 
 ---
 

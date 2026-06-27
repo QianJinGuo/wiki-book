@@ -31,7 +31,7 @@ Claude Code 中有三个易混淆但本质不同的概念：[^1]
 4. **/loop 集成**：后台会话支持按 schedule 自迭代，带 ✢ 图标标识  
 
 ## 与 Hermes 的关联
-Agent View 解决的问题域与 Hermes 的 [Agent 编排](/ch04-418-hermes-agent//) 高度相关：  
+Agent View 解决的问题域与 Hermes 的 [Agent 编排](/ch04-418-hermes-agent/) 高度相关：  
 
 - Hermes 通过 wiki-pipeline 编排多个 agent 协作
 - Agent View 的 worktree 隔离方案是 Agent Harness 中多 agent 并行的参考模式
@@ -72,31 +72,31 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - **跨 vendor 工具的窗口期**：官方方案只管 Claude Code，第三方跨 vendor 工具仍有存在价值，尤其在多生态并行的工作场景
 
 ## 参考来源
-[^1]: 花叔. *Claude Code 发布 Agent View，多任务流的 ADHD 患者有救了*. 微信公众号, 2026-05-12. [raw](/ch09-001-claude-code-agent-view//)
+[^1]: 花叔. *Claude Code 发布 Agent View，多任务流的 ADHD 患者有救了*. 微信公众号, 2026-05-12. [raw](/ch09-001-claude-code-agent-view/)
 
 - 官方博客: https://claude.com/blog/agent-view-in-claude-code
 - Release v2.1.139: https://github.com/anthropics/claude-code/releases/tag/v2.1.139
 
 ## 相关实体
-- [Claude Code Agent 工程设计](/ch04-015-claude-code-的-agent-工程//)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-170-深入理解-claude-code-源码中的-agent-harness-构建之道//)
-- [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](/ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群//)
+- [Claude Code Agent 工程设计](/ch04-015-claude-code-的-agent-工程/)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-170-深入理解-claude-code-源码中的-agent-harness-构建之道/)
+- [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](/ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群/)
 - Claude Code vs OpenClaw Agent 记忆系统对比
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南//)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](/ch09-039-claude-md-12-条规则-karpathy-扩展模板//)
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](/ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人//)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](/ch09-039-claude-md-12-条规则-karpathy-扩展模板/)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](/ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人/)
 - Claude Code 工具设计演化
-- [AutoResearch：多 Agent 自动化软件开发](/ch09-030-autoresearch-多-agent-自动化软件开发//)
-- [Claude Opus 4.7 发布分析](/ch01-314-claude-opus-4-7-发布分析//)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch04-084-anthropic-官方技能最佳实践-14-个可复用的-agent-skills-设计模式//)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](/ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具//)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](/ch01-354-anthropic发布-ai原生创业公司-手册-涵盖全流程四大核心阶段-一人公司法典来了//)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](/ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南//)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台//)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题//)
+- [AutoResearch：多 Agent 自动化软件开发](/ch09-030-autoresearch-多-agent-自动化软件开发/)
+- [Claude Opus 4.7 发布分析](/ch01-314-claude-opus-4-7-发布分析/)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch04-084-anthropic-官方技能最佳实践-14-个可复用的-agent-skills-设计模式/)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](/ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具/)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](/ch01-354-anthropic发布-ai原生创业公司-手册-涵盖全流程四大核心阶段-一人公司法典来了/)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](/ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南/)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
-- [2026年最值得关注的15款开发者工具深度解读](/ch01-001-2026年最值得关注的15款开发者工具深度解读//)
+- [2026年最值得关注的15款开发者工具深度解读](/ch01-001-2026年最值得关注的15款开发者工具深度解读/)
 - MOC
 
 ---

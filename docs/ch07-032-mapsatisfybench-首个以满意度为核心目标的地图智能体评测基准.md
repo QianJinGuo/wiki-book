@@ -101,7 +101,7 @@
 - 与 [高德 Uplift 模型迭代 Agent](/ch05-047-面向复杂算法任务的-ai-agent-高德-long-running-harness-架构与-uplift-模型迭代应用/) 同源（高德 AI 团队），但聚焦地图交互而非营销算法
 - "隐式决策因素"概念与 Agent 编排范式 中"意图恢复"问题呼应——Agent 不应仅执行显式指令，还需主动推断未言明的约束
 - AR = ECR × IISR 的"乘法衰减"设计与 [Agent 可靠性](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/) 的"单点失败传播"模式一致
-- 12 模型的 ECR vs IISR 差距（任务完成 vs 隐式需求）与 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 中"验证 ≠ 满意"的核心命题呼应
+- 12 模型的 ECR vs IISR 差距（任务完成 vs 隐式需求）与 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 中"验证 ≠ 满意"的核心命题呼应
 
 ## 实践启示
 

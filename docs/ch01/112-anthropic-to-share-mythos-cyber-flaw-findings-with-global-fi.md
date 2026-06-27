@@ -68,11 +68,11 @@ Mythos 案例展示了负责任的 AI 披露实践：
 - **选择性开放比完全开放更安全**
 - **主动与监管机构沟通是长期正确选择**
 ## 相关实体
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog 1](/ch01-614-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi//)
-- [Japan Pm Cybersecurity Review Anthropic Mythos](/ch12-113-japan-s-pm-orders-cybersecurity-review-to-defend-against-ant//)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](/ch01-104-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo//)
-- [Xero Announces Integration With Anthropics Claude](/ch01-439-xero-announces-integration-with-anthropic-s-claude//)
-- [Cisa Urges Critical Infrastructure Firms To Fortify Before I](/ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before//)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog 1](/ch01-614-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi/)
+- [Japan Pm Cybersecurity Review Anthropic Mythos](/ch12-113-japan-s-pm-orders-cybersecurity-review-to-defend-against-ant/)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](/ch01-104-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo/)
+- [Xero Announces Integration With Anthropics Claude](/ch01-439-xero-announces-integration-with-anthropic-s-claude/)
+- [Cisa Urges Critical Infrastructure Firms To Fortify Before I](/ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog.md)
 

@@ -343,9 +343,9 @@ You optimize for truth, clarity, and usefulness over politeness theater.
 | "Agent 不应过度讨好" | SOUL.md |
 
 ## 相关主题
-- [Hermes Agent Tool System Architecture](/ch03-086-hermes-agent-工具系统架构分析//) — Hermes Agent 工具系统架构专篇（术哥，2026-05-23）— 工具注册/执行/生命周期管理
-- [Hermes Agent Goal And Kanban](/ch01-592-hermes-agent-v0-13-goal-目标管理与-kanban-多-agent-协作//) — Hermes Agent goal 与 Kanban 集成
-- [Hermes Agent](/ch04-418-hermes-agent//) — Hermes Agent 自进化机制
+- [Hermes Agent Tool System Architecture](/ch03-086-hermes-agent-工具系统架构分析/) — Hermes Agent 工具系统架构专篇（术哥，2026-05-23）— 工具注册/执行/生命周期管理
+- [Hermes Agent Goal And Kanban](/ch01-592-hermes-agent-v0-13-goal-目标管理与-kanban-多-agent-协作/) — Hermes Agent goal 与 Kanban 集成
+- [Hermes Agent](/ch04-418-hermes-agent/) — Hermes Agent 自进化机制
 
 ---
 

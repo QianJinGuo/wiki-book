@@ -274,7 +274,7 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 - [Agent Harness 工程学调研 2026](/ch04-069-agent-harness-engineering-a-survey/) — Self-Harness 是该领域的最新论文
 - [Agent Harness 工程学调研 etcvlovg Taxonomy](/ch01-277-agent-harness-engineering-a-survey-etclovg-taxonomy/)
 - [Agent Production Harness Engineering](/ch05-038-agent生产级harness工程指南/)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//)
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 - Harness as Product Surface
 - Agent 自我改进循环
 - AI 自我改进自举

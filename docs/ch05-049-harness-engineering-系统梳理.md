@@ -90,7 +90,7 @@ Harness 的渐进披露信息系统：
 - Agent 总对自己的结果太宽容 → 验证流程更明确、更可观察、更可复盘
 
 ## 相关
-- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架//)
+- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/)
 - [Agent 工程实践](/ch04-435-agent-engineering-principles-architecture-practice/)
 - OpenClaw 架构
 

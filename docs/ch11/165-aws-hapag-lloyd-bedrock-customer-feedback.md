@@ -12,11 +12,11 @@ Over the past years, the Digital Customer Experience and Engineering team has ev
 ## **Understanding user impact.**
 
 ## 相关实体
-- [Aws Bedrock Agentcore Quality Optimization Flywheel](/ch11-118-aws-bedrock-agentcore-quality-optimization-flywheel//)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多//)
-- [Aws Bedrock Serverless Async Inference Sqs Lambda](/ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda//)
-- [Aws Bedrock Multi Agent Collaboration Guide](/ch11-008-aws-bedrock-多智能体协作指南//)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2//)
+- [Aws Bedrock Agentcore Quality Optimization Flywheel](/ch11-118-aws-bedrock-agentcore-quality-optimization-flywheel/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
+- [Aws Bedrock Serverless Async Inference Sqs Lambda](/ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda/)
+- [Aws Bedrock Multi Agent Collaboration Guide](/ch11-008-aws-bedrock-多智能体协作指南/)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-hapag-lloyd-bedrock-customer-feedback.md)
 

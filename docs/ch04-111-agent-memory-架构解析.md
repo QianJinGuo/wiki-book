@@ -69,7 +69,7 @@ Memory 不只是存储，而是 Harness 里的一层控制面——解决"哪些
 - [Hermes Agent 记忆系统](/ch04-418-hermes-agent/) — 本文的 memory 管理理念与 Hermes 实现直接对应
 - Agent Harness 上下文管理 — Memory 是 Harness 控制面的一层
 - [Claude Code Agent 工程化](/ch04-015-claude-code-的-agent-工程/) — CLAUDE.md / AGENTS.md 工作区文件实践
-- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架//) — 工程化控制面
+- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/) — 工程化控制面
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-memory-architecture-past-influence-future-ruofei.md)
 
 ## 深度分析

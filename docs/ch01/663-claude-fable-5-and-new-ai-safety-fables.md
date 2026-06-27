@@ -18,12 +18,12 @@ Claude Fable 5 与 AI 安全寓言新篇：通过寓言式叙事探讨 AI 安全
 
 ### 关联实体
 
-- [Nathan Lambert Claude Mythos Open Weights](/ch01-355-nathan-lambert-开源权重安全论的三个认知陷阱//)
-- [Introducing Claude Platform On Aws](/ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf//)
-- [Chinese Ai Lab Insights Nathan](/ch01-317-所有实验室都怕字节-所有人都在夸deepseek-美国研究员36小时中国ai行//)
-- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026//)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践//)
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制//)
+- [Nathan Lambert Claude Mythos Open Weights](/ch01-355-nathan-lambert-开源权重安全论的三个认知陷阱/)
+- [Introducing Claude Platform On Aws](/ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
+- [Chinese Ai Lab Insights Nathan](/ch01-317-所有实验室都怕字节-所有人都在夸deepseek-美国研究员36小时中国ai行/)
+- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
 
 ## 实践启示
 

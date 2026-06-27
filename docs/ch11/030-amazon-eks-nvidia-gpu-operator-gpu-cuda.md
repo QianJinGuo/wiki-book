@@ -14,8 +14,8 @@
 
 ## 相关实体
 
-- [mountpoint s3 vs s3 files：eks 上 s3 数据接入的两种方案实战对比](/ch11-063-mountpoint-s3-vs-s3-files-eks-上-s3-数据接入的两种方案实战对比//)
-- [规划 amazon eks 从 1.32 升级到 1.35：关键变更识别与逐版本实施路径](/ch11-107-规划-amazon-eks-从-1-32-升级到-1-35-关键变更识别与逐版本实施路径//)
+- [mountpoint s3 vs s3 files：eks 上 s3 数据接入的两种方案实战对比](/ch11-063-mountpoint-s3-vs-s3-files-eks-上-s3-数据接入的两种方案实战对比/)
+- [规划 amazon eks 从 1.32 升级到 1.35：关键变更识别与逐版本实施路径](/ch11-107-规划-amazon-eks-从-1-32-升级到-1-35-关键变更识别与逐版本实施路径/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载.md)
 
 - MOC
@@ -177,25 +177,25 @@ CUDA workload image nvidia/cuda:12.2.2-runtime-ubuntu22.04
 
 | 实体 | 焦点 | 与本文关系 |
 |------|------|----------|
-| [Building Blocks For Foundation Model Training And Inference On Aws](/ch11-117-building-blocks-for-foundation-model-training-and-inference//) | AWS 训练/推理基础设施通用构件 | 上层基础设施视角，本文专注 GPU 节点驱动管理 |
-| [Foundation Model Building Blocks](/ch03-082-foundation-model-building-blocks//) | 训练/inference building blocks | 同上，更上层 |
-| [在 Amazon Ec2 Gpu 实例上部署 Nvidia Nemoclaw 以 Amazon Bedrock 作为推理](/ch11-048-在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为//) | Nemoclaw 安全沙箱 + Bedrock 混合推理 | 应用层，本文是底层 driver 管理 |
-| [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](/ch11-205-用-kiro-cli-自动搭建-fluentbit-日志采集方案-两种-eks-埋点数据落地-s3-parquet-的实//) | EKS 日志采集 + S3 Parquet + Kiro CLI | 同样使用 Kiro CLI 但场景是日志，不是 GPU 运维 |
-| [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](/ch11-036-从手动到智能-用-kiro-cli-opensearch-mcp-让每个人都成为-opensearch-专家-亚//) | Kiro + OpenSearch MCP | MCP 通用方法论，本文是 GPU + EKS MCP 应用 |
-| [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](/ch11-047-基于-mig-技术在-amazon-sagemaker-hyperpod-上实现-gpu-虚拟化的最佳实践-亚马逊a//) | SageMaker HyperPod MIG 虚拟化 | SageMaker 路径，与 EKS 路径平行 |
+| [Building Blocks For Foundation Model Training And Inference On Aws](/ch11-117-building-blocks-for-foundation-model-training-and-inference/) | AWS 训练/推理基础设施通用构件 | 上层基础设施视角，本文专注 GPU 节点驱动管理 |
+| [Foundation Model Building Blocks](/ch03-082-foundation-model-building-blocks/) | 训练/inference building blocks | 同上，更上层 |
+| [在 Amazon Ec2 Gpu 实例上部署 Nvidia Nemoclaw 以 Amazon Bedrock 作为推理](/ch11-048-在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为/) | Nemoclaw 安全沙箱 + Bedrock 混合推理 | 应用层，本文是底层 driver 管理 |
+| [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](/ch11-205-用-kiro-cli-自动搭建-fluentbit-日志采集方案-两种-eks-埋点数据落地-s3-parquet-的实/) | EKS 日志采集 + S3 Parquet + Kiro CLI | 同样使用 Kiro CLI 但场景是日志，不是 GPU 运维 |
+| [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](/ch11-036-从手动到智能-用-kiro-cli-opensearch-mcp-让每个人都成为-opensearch-专家-亚/) | Kiro + OpenSearch MCP | MCP 通用方法论，本文是 GPU + EKS MCP 应用 |
+| [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](/ch11-047-基于-mig-技术在-amazon-sagemaker-hyperpod-上实现-gpu-虚拟化的最佳实践-亚马逊a/) | SageMaker HyperPod MIG 虚拟化 | SageMaker 路径，与 EKS 路径平行 |
 
 **本文填补的空白**：EKS + GPU Operator + 自定义 driver 管理的完整版本矩阵 + 失败模式实证 + AI 运维闭环。现有 entities 中无 GPU Operator 主题覆盖。
 
 ## 相关主题
 
-- [Building Blocks For Foundation Model Training And Inference On Aws](/ch11-117-building-blocks-for-foundation-model-training-and-inference//)
-- [Foundation Model Building Blocks](/ch03-082-foundation-model-building-blocks//)
-- [在 Amazon Ec2 Gpu 实例上部署 Nvidia Nemoclaw 以 Amazon Bedrock 作为推理](/ch11-048-在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为//)
-- [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](/ch11-205-用-kiro-cli-自动搭建-fluentbit-日志采集方案-两种-eks-埋点数据落地-s3-parquet-的实//)
-- [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](/ch11-036-从手动到智能-用-kiro-cli-opensearch-mcp-让每个人都成为-opensearch-专家-亚//)
-- [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](/ch11-047-基于-mig-技术在-amazon-sagemaker-hyperpod-上实现-gpu-虚拟化的最佳实践-亚马逊a//)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](/ch11-050-基于-amazon-eks-和-graviton-构建多租户-ai-agent-平台-openclaw-on-kuber//)
-- [Openclaw Amazon Bedrock Eks Printer Qc](/ch11-052-openclaw-amazon-bedrock-amazon-eks-联动实践-打印机包装质检助手实战//)
+- [Building Blocks For Foundation Model Training And Inference On Aws](/ch11-117-building-blocks-for-foundation-model-training-and-inference/)
+- [Foundation Model Building Blocks](/ch03-082-foundation-model-building-blocks/)
+- [在 Amazon Ec2 Gpu 实例上部署 Nvidia Nemoclaw 以 Amazon Bedrock 作为推理](/ch11-048-在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为/)
+- [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](/ch11-205-用-kiro-cli-自动搭建-fluentbit-日志采集方案-两种-eks-埋点数据落地-s3-parquet-的实/)
+- [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](/ch11-036-从手动到智能-用-kiro-cli-opensearch-mcp-让每个人都成为-opensearch-专家-亚/)
+- [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](/ch11-047-基于-mig-技术在-amazon-sagemaker-hyperpod-上实现-gpu-虚拟化的最佳实践-亚马逊a/)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](/ch11-050-基于-amazon-eks-和-graviton-构建多租户-ai-agent-平台-openclaw-on-kuber/)
+- [Openclaw Amazon Bedrock Eks Printer Qc](/ch11-052-openclaw-amazon-bedrock-amazon-eks-联动实践-打印机包装质检助手实战/)
 
 ---
 

@@ -118,8 +118,8 @@ Ethan 给出的核心警示：
 
 ## 相关实体
 
-- [Gpt 54 Is A Big Step For Codex](/ch01-388-gpt-5-4-是-codex-的一次大跨越-四维评估视角与-agent-战争回归//)
-- [Yann Dubois Openai Post Training Matt Turck Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角//)
+- [Gpt 54 Is A Big Step For Codex](/ch01-388-gpt-5-4-是-codex-的一次大跨越-四维评估视角与-agent-战争回归/)
+- [Yann Dubois Openai Post Training Matt Turck Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
 - **Prompt Engineering**
 - **Deep Research**
 - **Multi-Modal Agent**
