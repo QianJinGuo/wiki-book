@@ -167,16 +167,16 @@ TUI 显示：
 
 ## 相关实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践//)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering//)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering//)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程//)
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制//)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验//)
-- [Agent Reliability Engineering Skillify Continuous Improvement](/ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制//)
+- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
+- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
+- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
+- [Agent Reliability Engineering Skillify Continuous Improvement](/ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制/)
 - Agent Harness Context Management Working Set
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](/ch01-284-数据级-harness-架构师-jiagoux-解读-anthropic-95-数据分析与-5-个反直觉边界//)
-- [Impeccable Frontend Design Skill Harness Vibecoder](/ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析//)
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](/ch01-284-数据级-harness-架构师-jiagoux-解读-anthropic-95-数据分析与-5-个反直觉边界/)
+- [Impeccable Frontend Design Skill Harness Vibecoder](/ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析/)
 - MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/codex-goal-source-code-deep-dive.md)

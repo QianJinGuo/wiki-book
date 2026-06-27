@@ -11,8 +11,8 @@ Global Privacy Control Signal Detected
 ![Image 6: Optro](http://optro.ai/static/images/logo-optro.svg)
 
 ## 相关实体
-- [五一活动来啦](/ch03-117-五一活动来啦//)
-- [升职那天我才明白自己是来填坑的](/ch03-105-升职那天我才明白自己是来填坑的//)
+- [五一活动来啦](/ch03-117-五一活动来啦/)
+- [升职那天我才明白自己是来填坑的](/ch03-105-升职那天我才明白自己是来填坑的/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/grcnow.md)
 

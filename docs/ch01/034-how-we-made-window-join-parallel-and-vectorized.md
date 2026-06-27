@@ -8,9 +8,9 @@
 
 ## 相关实体
 
-- [How to create websites with great UX designs: Principles and examples](/ch01-114-how-to-create-websites-with-great-ux-designs-principles-and//)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm//)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](/ch01-875-what-is-urban-density-design-a-clear-guide-to-how-cities-ge//)
+- [How to create websites with great UX designs: Principles and examples](/ch01-114-how-to-create-websites-with-great-ux-designs-principles-and/)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](/ch01-875-what-is-urban-density-design-a-clear-guide-to-how-cities-ge/)
 
 - MOC
 ## 深度分析

@@ -12,11 +12,11 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/task-queue-priority-and-fairness.md)
 
 ## 相关实体
-- [Task Queue Priority and Fairness: Your Task Queue, your way](/ch11-214-task-queue-priority-and-fairness-your-task-queue-your-way//)
-- [Task Queue Priority and Fairness: Your Task Queue, Your Way](/ch11-161-task-queue-priority-and-fairness-your-task-queue-your-way//)
+- [Task Queue Priority and Fairness: Your Task Queue, your way](/ch11-214-task-queue-priority-and-fairness-your-task-queue-your-way/)
+- [Task Queue Priority and Fairness: Your Task Queue, Your Way](/ch11-161-task-queue-priority-and-fairness-your-task-queue-your-way/)
 
 - Neurips 2026 Pangram Controversy
-- [Toto 2 Context Aware Log Analytics For Complex Distributed Systems](/ch11-151-toto-2-context-aware-log-analytics-for-complex-distributed//)
+- [Toto 2 Context Aware Log Analytics For Complex Distributed Systems](/ch11-151-toto-2-context-aware-log-analytics-for-complex-distributed/)
 ## 深度分析
 Temporal平台发布的Task Queue Priority and Fairness功能代表了任务调度领域的一个重要进化。这些功能直接回应了多租户SaaS平台和有差异化服务等级需求的企业所面临的共同挑战：如何在共享基础设施上实现可预测的性能保证。
 Priority机制的设计体现了分层调度的经典思想。通过将整数优先级（1到5）分配给不同类型的Workflow和Activity，Temporal创造了一个明确的执行顺序契约。这种设计的优雅之处在于它的简单性：优先级数字本身就是一个完整的契约，不需要额外的元数据来解释其含义。在实践中，这意味着开发团队可以快速建立优先级策略，而不需要复杂的学习曲线。

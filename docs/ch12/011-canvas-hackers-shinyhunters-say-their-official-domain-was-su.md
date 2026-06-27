@@ -285,12 +285,12 @@ Canvas LMS 攻击影响全球数百所大学，凸显了教育机构在网络安
 2. **了解暗网风险的局限性** — 虽然 Tor 提供了匿名性，但它也是欺诈者和攻击者的避风港，对任何暗网内容的信任都应保持谨慎。
 
 ## 相关实体
-- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](/ch01-122-nearly-every-enterprise-is-investing-in-ai-but-only-5-say//)
-- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack//)
-- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us//)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](/ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att//)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](/ch01-743-mini-shai-hulud-strikes-again-tanstack-more-npm-packages//)
-- [a route to root in a 4g industrial router](/ch01-759-a-route-to-root-in-a-4g-industrial-router//)
+- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](/ch01-122-nearly-every-enterprise-is-investing-in-ai-but-only-5-say/)
+- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
+- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](/ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att/)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](/ch01-743-mini-shai-hulud-strikes-again-tanstack-more-npm-packages/)
+- [a route to root in a 4g industrial router](/ch01-759-a-route-to-root-in-a-4g-industrial-router/)
 
 ---
 

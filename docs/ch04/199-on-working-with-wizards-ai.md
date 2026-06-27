@@ -71,11 +71,11 @@ Mollick 提出了三个应对策略。首先，发展新的 literacy：学习何
 - **失去 expertise 的风险**：每次把工作交给 wizard，就失去了发展自己判断力和专业知识的机会——这对教育影响深远
 
 ## 相关实体
-- [Oneusefulthing Claude Code What Comes Next](/ch09-017-ethan-mollick-claude-code-and-what-comes-next-practitioner//)
-- [Openai Gdpval Real Ai Agents Threshold](/ch04-091-openai-gdpval-and-the-real-ai-agents-threshold-mollick-view//)
-- [Mass Intelligence](/ch01-426-mass-intelligence-ai-普及的拐点//)
-- [Sign Of The Future Gpt 55 Mollick](/ch01-269-gpt-5-5-sign-of-the-future-mollick-的模型-apps-harnesses-三层框架//)
-- [Three Years Gpt3 Gemini3 Mollick](/ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测//)
+- [Oneusefulthing Claude Code What Comes Next](/ch09-017-ethan-mollick-claude-code-and-what-comes-next-practitioner/)
+- [Openai Gdpval Real Ai Agents Threshold](/ch04-091-openai-gdpval-and-the-real-ai-agents-threshold-mollick-view/)
+- [Mass Intelligence](/ch01-426-mass-intelligence-ai-普及的拐点/)
+- [Sign Of The Future Gpt 55 Mollick](/ch01-269-gpt-5-5-sign-of-the-future-mollick-的模型-apps-harnesses-三层框架/)
+- [Three Years Gpt3 Gemini3 Mollick](/ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测/)
 
 ## 相关引用
 

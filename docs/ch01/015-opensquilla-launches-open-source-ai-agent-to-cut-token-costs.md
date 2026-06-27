@@ -16,11 +16,11 @@
 ## 相关实体
 > 主题导航
 
-- [Cline releases open-source agent runtime SDK](/ch01-102-cline-releases-open-source-agent-runtime-sdk//)
-- [Spring AI AI Agent Demo](/ch04-414-ai实践-基于-spring-ai-从0到1构建-ai-agent//)
-- [SkillX — 层次化技能知识库](/ch07-042-skillx-层次化技能知识库//)
+- [Cline releases open-source agent runtime SDK](/ch01-102-cline-releases-open-source-agent-runtime-sdk/)
+- [Spring AI AI Agent Demo](/ch04-414-ai实践-基于-spring-ai-从0到1构建-ai-agent/)
+- [SkillX — 层次化技能知识库](/ch07-042-skillx-层次化技能知识库/)
 
-- [intercom, now called fin, launches an ai agent whose only jo](/ch04-333-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo//)
+- [intercom, now called fin, launches an ai agent whose only jo](/ch04-333-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo/)
 
 ## 深度分析
 ### 核心问题诊断：为什么大多数 Agent 部署在浪费 Token？

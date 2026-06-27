@@ -28,12 +28,12 @@ Masso 漏洞揭示了 AWS Cognito SSO 实现中一个系统性的认证绕过问
 - **第三方安全研究订阅**：Doyensec 的 CloudSectiDbits 系列持续关注 AWS 安全研究，建议订阅其博客或 RSS feed，及时了解新发现的 Cognito、IAM、Lambda 等服务的漏洞和利用方式。
 
 ## 相关实体
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](/ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt//)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](/ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构//)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](/ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt/)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](/ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md) ^[raw/cloudsectidbits-masso-cognito-sso.html]
 
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](/ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南//)
+- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](/ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南/)
 
 ---
 

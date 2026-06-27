@@ -110,11 +110,11 @@
 - Google Workspace Admin Help：[Migrate data from Exchange Online](https://knowledge.workspace.google.com/admin/migrate/migrate-data-from-an-exchange-online-account)
 
 ## 相关实体
-- [Google Workspace Updates Small Businesses Can Now Import Use](/ch01-749-google-workspace-updates-small-businesses-can-now-seamlessl//)
-- [Codex Can Now Control Other Desktop Devices Via Computer Use](/ch09-099-codex-can-now-control-other-desktop-devices-via-computer-use//)
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](/ch01-741-introducing-seer-agent-the-answer-is-already-in-sentry-now//)
-- [Google Debuts Gemini Focused Updates At Io 2026](/ch01-073-google-debuts-gemini-focused-updates-at-i-o-2026//)
-- [Shub Reaper Macos Stealer Attack Chain](/ch12-014-shub-reaper-macos-stealer-spoofs-apple-google-and-microso//)
+- [Google Workspace Updates Small Businesses Can Now Import Use](/ch01-749-google-workspace-updates-small-businesses-can-now-seamlessl/)
+- [Codex Can Now Control Other Desktop Devices Via Computer Use](/ch09-099-codex-can-now-control-other-desktop-devices-via-computer-use/)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](/ch01-741-introducing-seer-agent-the-answer-is-already-in-sentry-now/)
+- [Google Debuts Gemini Focused Updates At Io 2026](/ch01-073-google-debuts-gemini-focused-updates-at-i-o-2026/)
+- [Shub Reaper Macos Stealer Attack Chain](/ch12-014-shub-reaper-macos-stealer-spoofs-apple-google-and-microso/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/workspaceupdates-googleblog-com-google-workspace-updates.md)
 

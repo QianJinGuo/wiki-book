@@ -7,15 +7,15 @@
 > -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-doer-to-director-the-ai-mindset-shift.md)
 
 ## 相关实体
-- [独家对话罗福莉：AI范式已然巨变！](/ch01-475-独家对话罗福莉-ai范式已然巨变//)
-- [agentic code review](/ch01-142-agentic-code-review//)
-- [apple foundation models](/ch01-129-apple-foundation-models//)
-- [the oracle and the firm](/ch01-137-the-oracle-and-the-firm//)
-- [what job interviews taught me about kubernetes](/ch01-138-what-job-interviews-taught-me-about-kubernetes//)
-- [here](/ch01-130-here-s-the-rub-we-don-t-believe-you//)
-- [a backdoor in a linkedin job offer](/ch01-136-a-backdoor-in-a-linkedin-job-offer//)
-- [every frame perfect](/ch01-140-every-frame-perfect//)
-- [the golden rule of customizable select](/ch01-145-the-golden-rule-of-customizable-select//)
+- [独家对话罗福莉：AI范式已然巨变！](/ch01-475-独家对话罗福莉-ai范式已然巨变/)
+- [agentic code review](/ch01-142-agentic-code-review/)
+- [apple foundation models](/ch01-129-apple-foundation-models/)
+- [the oracle and the firm](/ch01-137-the-oracle-and-the-firm/)
+- [what job interviews taught me about kubernetes](/ch01-138-what-job-interviews-taught-me-about-kubernetes/)
+- [here](/ch01-130-here-s-the-rub-we-don-t-believe-you/)
+- [a backdoor in a linkedin job offer](/ch01-136-a-backdoor-in-a-linkedin-job-offer/)
+- [every frame perfect](/ch01-140-every-frame-perfect/)
+- [the golden rule of customizable select](/ch01-145-the-golden-rule-of-customizable-select/)
 
 ## 文章摘要
 AI 正在从根本上改变我们工作的本质——不是让我们变得更快，而是改变工作的性质。作者 Paul Boag 认为 AI 正在将我们从"执行者"转变为"指挥者"，这需要一种完全不同的思维模式。从设计师到设计主管的转型与这一 AI 转型高度相似，那些能够提前适应这种思维转变的人将在 AI 增强的世界中脱颖而出。

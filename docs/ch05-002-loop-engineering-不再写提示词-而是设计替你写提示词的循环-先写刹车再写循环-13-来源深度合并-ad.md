@@ -44,7 +44,7 @@ Addy Osmani 提出 Loop Engineering——比 Agent Harness Engineering 再高一
 
 ### Loop vs Harness：层级关系而非替代
 
-Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层。Harness 解决单个 Agent 的环境约束（CLAUDE.md、hooks、权限）；Loop 解决多个 Agent + 自动化 + 状态追踪的**系统级编排**。映射到已有 wiki 概念：Harness = [单 Agent 约束系统](/ch05-041-harness-engineering-概念框架//)；Loop = 多 Agent + cron + 状态 + 自驱动。
+Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层。Harness 解决单个 Agent 的环境约束（CLAUDE.md、hooks、权限）；Loop 解决多个 Agent + 自动化 + 状态追踪的**系统级编排**。映射到已有 wiki 概念：Harness = [单 Agent 约束系统](/ch05-041-harness-engineering-概念框架/)；Loop = 多 Agent + cron + 状态 + 自驱动。
 
 ### 技能的"复利效应"
 
@@ -128,12 +128,12 @@ InfoQ 对同一 Loop Engineering 事件的深度报道，侧重**工程实现细
 ###核心创新 /关键数据
 
 - **5阶段循环骨架**：发现 →规划 →执行 →验证 →迭代（通过验证就交付，未通过就继续循环）——这是 Loop Engineering 最底层的循环结构，前2 来源都未明确给出
-- **单 Agent循环 vs Fleet循环**：单 Agent是一个人反复修改草稿，Fleet是编排者 →专家 Agent → 子 Agent 的整棵树协同——为 [AHE](/ch04-212-ahe-agentic-harness-engineering//) 的多 Agent进化框架提供了非进化的"实例"对照
+- **单 Agent循环 vs Fleet循环**：单 Agent是一个人反复修改草稿，Fleet是编排者 →专家 Agent → 子 Agent 的整棵树协同——为 [AHE](/ch04-212-ahe-agentic-harness-engineering/) 的多 Agent进化框架提供了非进化的"实例"对照
 - **2026 年最重要的区分：开放 vs封闭循环**：开放循环 token消耗巨大（每周数百万），适合探索；封闭循环有边界 +评估门禁 +停止点，适合生产。**没有质量门禁 AI 会漂移，有了质量门禁 AI 会改进**——这是与第2 来源"三个搞不定的问题"中"验证仍在人头上"的工程答案
 - **6 构建模块体系化**：Automations（心跳）、Worktree（隔离）、Skills（项目知识）、Plugins/Connectors（落地）、Subagents（验证诚实）、Memory（持久性）——与第1 来源"五模块对照表"对照，本来源多出"Worktree"作为独立模块，且明确定义每个模块对应5阶段中的哪个
 - **Token经济学深度量化**：单 Agent5-20万 /任务；Fleet50-200万 /任务；每天早上定时跑 →每周数百万 token；认真做一周 Loop工程的成本可超过月预算——为第2 来源"Opus vs Haiku成本差异"提供了更系统的总账
 - **Prompt工程师 vs Loop工程师对比表**：从语言能力 →软件工程能力，从单次输出 →持续验证，从人当反馈循环 →系统当反馈循环——这是 Boris Cherny "我的工作就是写循环"的具体能力映射
-- **AI 工程四次重心演进**：Prompt Engineering → Context Engineering → Harness Engineering → Loop Engineering——补全了 [Harness Engineering框架](/ch05-041-harness-engineering-概念框架//) 中"三次重心演进"的最新第四阶段
+- **AI 工程四次重心演进**：Prompt Engineering → Context Engineering → Harness Engineering → Loop Engineering——补全了 [Harness Engineering框架](/ch05-041-harness-engineering-概念框架/) 中"三次重心演进"的最新第四阶段
 - **低成本模型战略价值**：DeepSeek、Kimi、MiniMax 等让 Agent循环在经济上变得可行——百万上下文 + 低 token定价是 Loop Engineering普及的物质基础
 
 ### 三来源维度对比表
@@ -156,7 +156,7 @@ InfoQ 对同一 Loop Engineering 事件的深度报道，侧重**工程实现细
 - **封闭循环 +质量门禁**（第3 来源独有）与第2 来源"理解债/认知投降"形成完整闭环：理解债是封闭循环失控的产物，质量门禁是封闭循环的安全阀——两者结合起来给出"先封闭 →评估门禁 →再开放"的工程实施顺序
 - **6 构建模块**（第3 来源独有）补全第1 来源"五模块"中 Worktree 的缺位：Worktree 是隔离并行执行的关键，对应"执行"阶段——在 Fleet循环中尤其关键（多个子 Agent 同时编辑时）
 - **Token经济学系统量化**（第3 来源独有）把第2 来源"Opus vs Haiku"和"480次/8h"的具体数字串联为完整成本结构：单 Agent → Fleet →定时循环的三级成本递增，为循环经济门槛提供了**预算决策框架**
-- **AI 工程4阶段演进谱系**（第3 来源独有）补全了 [Harness Engineering框架](/ch05-041-harness-engineering-概念框架//) 的"3阶段演进"——Loop Engineering 是 Harness 之上的第4 层抽象，与 [AHE](/ch04-212-ahe-agentic-harness-engineering//) 共同构成 Harness 的两个延伸方向（AHE = 自动进化 Harness；Loop = 设计自驱 Harness）
+- **AI 工程4阶段演进谱系**（第3 来源独有）补全了 [Harness Engineering框架](/ch05-041-harness-engineering-概念框架/) 的"3阶段演进"——Loop Engineering 是 Harness 之上的第4 层抽象，与 [AHE](/ch04-212-ahe-agentic-harness-engineering/) 共同构成 Harness 的两个延伸方向（AHE = 自动进化 Harness；Loop = 设计自驱 Harness）
 - **低成本模型战略意义**（第3 来源独有）解释了2026 年开源模型崛起的部分原因：**不是模型能力突破，而是循环经济的可负担性**——为 [harness缩小开源闭源 bug-finding gap](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/) 提供了经济学视角
 
 ###实践启示
@@ -308,9 +308,9 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 
 ### 与已有 source 呼应
 
-- **6 问翻译的"模式收敛"**(第 5 来源 + 第 4 来源若飞 独立给出): Addy 5 模块的 6 工程化翻译,被两个独立公众号(架构师 + TechFarrari)同时给出,**强烈信号这是 Loop Engineering 的"自然认知映射"**——非偶然。这与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) 的"3 阶段演进谱系"被 4+ 个 entity 独立复述的模式一致
+- **6 问翻译的"模式收敛"**(第 5 来源 + 第 4 来源若飞 独立给出): Addy 5 模块的 6 工程化翻译,被两个独立公众号(架构师 + TechFarrari)同时给出,**强烈信号这是 Loop Engineering 的"自然认知映射"**——非偶然。这与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) 的"3 阶段演进谱系"被 4+ 个 entity 独立复述的模式一致
 - **责任批判补全了前 4 来源的"乐观叙事"**(第 5 来源独家视角): 前 4 来源(Addy / InfoQ / 微信公众号教科书 / 若飞)都集中在"如何设计更好 loop",**没有一篇**对 loop 提出成本/责任/商业动机的批判——第 5 来源填补了"loop 局限性的诚实讨论"维度。这是 Loop Engineering 主题"五维分析"(概念 / 工程 / 落地 / 批判 / 跨域)的**最后一块拼图**
-- **跨域应用案例**(第 5 来源独家): 与 [Harness Engineering](/ch05-041-harness-engineering-概念框架//) 在 SaaS / DevOps / 客服 / 编程 的多领域应用模式相同,Loop Engineering 也已扩展到**内容选题**。这是 Loop 工具链成熟的标志——"凌晨 4 点 bot → 8 点选题会 agenda"是 24h Agent 工作流在内容产业的真实落地
+- **跨域应用案例**(第 5 来源独家): 与 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 在 SaaS / DevOps / 客服 / 编程 的多领域应用模式相同,Loop Engineering 也已扩展到**内容选题**。这是 Loop 工具链成熟的标志——"凌晨 4 点 bot → 8 点选题会 agenda"是 24h Agent 工作流在内容产业的真实落地
 - **范式迁移叙事 4 阶段时间线**(第 5 来源独家): 与前 4 来源的"Loop > Harness > Prompt"层级关系**互为表里**——前 4 来源给"层级",第 5 来源给"时间线",合起来是"Loop 演化的完整画像"
 - **生命周期短预言**(第 5 来源独家): 与 [Anthropic 缓存 Token 经济](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic_cache_tokenomics.md) 等 raw 中对"AI 圈造词速度"的批评态度**一致**——"每过几个月就有个新词,每个新词都宣称自己要杀死上一个"——但**保持冷静的"造词速度观察期"**是工程师理性态度
 - **商业动机批判**(第 5 来源独家): 与 [纳德拉「Token 资本」论](/ch01-228-纳德拉-token-资本-论-microsoft-ceo-的-ai-时代企业战略宣言/) 的"前沿模型 ≠ 价值"警告**同源**——都反对"造词 = 价值"的偷换;与 [Fable 5 Runtime Contract](/ch04-060-fable-5-的信号-agent-开始拼-runtime-架构师若飞的-runtime-contract-工程化拆/) 的"系统能不能跑完任务"判断**同源**——都强调工程责任换形态

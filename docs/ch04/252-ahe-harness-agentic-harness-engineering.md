@@ -30,7 +30,7 @@ Harness Engineering 迭代依赖人工经验，但模型以月为单位进化、
 
 ### 核心问题：Harness 迭代速度跟不上模型进化
 
-Harness Engineering 的实践已经证明"Harness matters more than the model"（参见 [Harness Engineering Core Patterns Claude Code](/ch01-698-深入浅出-harness-engineering-之核心模式与理念//)），但 Harness 本身的迭代仍是人工经验驱动的。模型以月为单位迭代到 GPT-5.4、Claude 4.5、Gemini 3.1 这种代际，任务场景又往长尾分布发展——工程师手动调 prompt 写 tool description 配 middleware 的速度，已经追不上"模型升级 + 任务扩展"的复合速度。
+Harness Engineering 的实践已经证明"Harness matters more than the model"（参见 [Harness Engineering Core Patterns Claude Code](/ch01-698-深入浅出-harness-engineering-之核心模式与理念/)），但 Harness 本身的迭代仍是人工经验驱动的。模型以月为单位迭代到 GPT-5.4、Claude 4.5、Gemini 3.1 这种代际，任务场景又往长尾分布发展——工程师手动调 prompt 写 tool description 配 middleware 的速度，已经追不上"模型升级 + 任务扩展"的复合速度。
 
 AHE 的回答是：把 Harness 的迭代本身也变成一个 Agent 任务。让 Evolve Agent 在结构化环境里，基于真实执行证据自动修改 Harness。
 
@@ -92,12 +92,12 @@ AHE 的演化曲线揭示了一个反直觉的现象：
 
 ## 相关实体
 
-- [Harness Engineering Core Patterns Claude Code](/ch01-698-深入浅出-harness-engineering-之核心模式与理念//)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进//)
-- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding//)
-- [Ai Job Interview Model Evaluation Mollick](/ch01-460-给-ai-做工作面试-mollick-的模型评估方法论//)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](/ch04-450-ai-agent-工程师学习路线-面向资深后端-大数据工程师的能力地图//)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//)
+- [Harness Engineering Core Patterns Claude Code](/ch01-698-深入浅出-harness-engineering-之核心模式与理念/)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
+- [Ai Job Interview Model Evaluation Mollick](/ch01-460-给-ai-做工作面试-mollick-的模型评估方法论/)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](/ch04-450-ai-agent-工程师学习路线-面向资深后端-大数据工程师的能力地图/)
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 - Agent Observability
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)

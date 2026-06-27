@@ -115,19 +115,19 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-design-long-running-apps.md)
 -  — 七环节控制回路 + Generator/Evaluator 框架
 - Agent Harness 上下文管理：工作集视角 — compaction 光谱 + session/harness/sandbox 解耦
-- [LangChain Anatomy of Agent Harness](/ch04-425-the-anatomy-of-an-agent-harness-解读//) — Ralph 循环 + 规划/自我验证双闭环
+- [LangChain Anatomy of Agent Harness](/ch04-425-the-anatomy-of-an-agent-harness-解读/) — Ralph 循环 + 规划/自我验证双闭环
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](/ch01-280-anthropic-官方-agent-harness-平台-claude-managed-agents-完整指南//)
-- [Ai Agent Harness Construction Akshay Baoyu](/ch04-420-深度拆解-ai-智能体-harness-的构造-译//)
-- [Code As Agent Harness Survey 2026](/ch01-599-uiuc-meta-斯坦福等最新综述-code-as-agent-harness//)
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](/ch04-505-agent-harnesses-are-dead-long-live-agent-harnesses//)
-- [Harness 之后 状态边界与失败闭环 若飞](/ch04-452-harness-之后-agent-可靠性的关键-是状态边界和失败闭环//)
-- [Agentscope Java 2.0 Enterprise Distributed Harness](/ch11-231-agentscope-java-2-0-企业级分布式-harness-框架//)
-- [Gaode Uplift Model Iteration Agent Long Running Harness](/ch01-720-gaode-uplift-model-iteration-agent-long-running-harness//)
-- [Long Running Agent Ralph Loop Harness Takeover](/ch01-808-长周期-agent-详解-从-ralph-loop-到可接管-harness//)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](/ch01-682-anthropic-institute-when-ai-builds-itself-深度解读-ai-进入-ai-研发执行//)
-- [Langgraph A2A Adversarial Agent Team](/ch04-495-逆天的架构-用-harness-langgraph-a2a-写一个-agent-team//)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](/ch01-280-anthropic-官方-agent-harness-平台-claude-managed-agents-完整指南/)
+- [Ai Agent Harness Construction Akshay Baoyu](/ch04-420-深度拆解-ai-智能体-harness-的构造-译/)
+- [Code As Agent Harness Survey 2026](/ch01-599-uiuc-meta-斯坦福等最新综述-code-as-agent-harness/)
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](/ch04-505-agent-harnesses-are-dead-long-live-agent-harnesses/)
+- [Harness 之后 状态边界与失败闭环 若飞](/ch04-452-harness-之后-agent-可靠性的关键-是状态边界和失败闭环/)
+- [Agentscope Java 2.0 Enterprise Distributed Harness](/ch11-231-agentscope-java-2-0-企业级分布式-harness-框架/)
+- [Gaode Uplift Model Iteration Agent Long Running Harness](/ch01-720-gaode-uplift-model-iteration-agent-long-running-harness/)
+- [Long Running Agent Ralph Loop Harness Takeover](/ch01-808-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](/ch01-682-anthropic-institute-when-ai-builds-itself-深度解读-ai-进入-ai-研发执行/)
+- [Langgraph A2A Adversarial Agent Team](/ch04-495-逆天的架构-用-harness-langgraph-a2a-写一个-agent-team/)
 
 ---
 

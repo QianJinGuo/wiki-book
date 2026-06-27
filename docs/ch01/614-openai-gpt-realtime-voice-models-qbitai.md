@@ -12,16 +12,16 @@
 - **GPT-Realtime-Whisper**：流式转写
 
 ## 相关实体
-- [Build Live Translation Apps With Gpt Realtime Translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate//)
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](/ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价//)
+- [Build Live Translation Apps With Gpt Realtime Translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](/ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价/)
 - GPT-5.5 实测
-- [Gpt 5 Is Here And Openai Has Some Tips](/ch01-489-gpt-5-is-here-and-openai-has-some-tips//)
-- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](/ch01-603-anthropic最危险路线图曝光-无限记忆-多智能体-硅谷ai终局仅剩双雄决顶//)
+- [Gpt 5 Is Here And Openai Has Some Tips](/ch01-489-gpt-5-is-here-and-openai-has-some-tips/)
+- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](/ch01-603-anthropic最危险路线图曝光-无限记忆-多智能体-硅谷ai终局仅剩双雄决顶/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-gpt-realtime-voice-models-qbitai.md)
 
-- [gemini app rolling out](/ch01-670-gemini-app-rolling-out-extended-thinking-level-new-3rd-pa//)
-- [gpt -image 2神级提示词分享](/ch01-680-gpt-image-2神级提示词分享//)
+- [gemini app rolling out](/ch01-670-gemini-app-rolling-out-extended-thinking-level-new-3rd-pa/)
+- [gpt -image 2神级提示词分享](/ch01-680-gpt-image-2神级提示词分享/)
 
 ## 深度分析
 

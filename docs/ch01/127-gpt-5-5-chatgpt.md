@@ -17,8 +17,8 @@
 → [（来源：raw）]
 
 ## 相关实体
-- [GPT-5.5 ProgramBench 首破：推理算力成为编程AI核心变量](/ch01-463-gpt-5-5全球首破-0源码盲写程序-编程ai进入新纪元//)
-- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](/ch01-115-a-recent-experience-with-chatgpt-5-5-pro-gowers-s-weblog//)
+- [GPT-5.5 ProgramBench 首破：推理算力成为编程AI核心变量](/ch01-463-gpt-5-5全球首破-0源码盲写程序-编程ai进入新纪元/)
+- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](/ch01-115-a-recent-experience-with-chatgpt-5-5-pro-gowers-s-weblog/)
 
 ## 深度分析
 **GPT-5.5 是 OpenAI 试图用"长上下文 + 编程能力"双重护城河重新拉开与 Claude 差距的旗舰产品，但伴随 29% 谎报率的严重信号。** 文章用详尽的 benchmark 数据呈现了一个多维度的竞争图景：

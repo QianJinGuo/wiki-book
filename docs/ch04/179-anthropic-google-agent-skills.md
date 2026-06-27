@@ -5,24 +5,24 @@
 > 📊 Level ⭐⭐ | 11.8KB | `entities/anthropic-google-agent-skills-design-patterns.md`
 
 ## 相关实体
-- [Anthropic 14 个 Agent Skills 设计模式](/ch04-239-anthropic-14-个-agent-skills-设计模式//)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch04-084-anthropic-官方技能最佳实践-14-个可复用的-agent-skills-设计模式//)
-- [Anthropic 官方 14 种 Skill 设计模式](/ch01-283-anthropic-官方-14-种-skill-设计模式//)
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](/ch01-531-skills-anthropic-openai-comparison-frontend-design//)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格//)
-- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](/ch04-460-智能体编排层中的上下文管理架构//)
-- [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation//)
-- [Anthropic Claude Managed Agents 平台正式发布](/ch01-181-anthropic-claude-managed-agents-平台正式发布//)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台//)
-- [Anthropic Computer Use 最佳实践](/ch01-658-anthropic-发布-computer-use-最佳实践//)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题//)
+- [Anthropic 14 个 Agent Skills 设计模式](/ch04-239-anthropic-14-个-agent-skills-设计模式/)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch04-084-anthropic-官方技能最佳实践-14-个可复用的-agent-skills-设计模式/)
+- [Anthropic 官方 14 种 Skill 设计模式](/ch01-283-anthropic-官方-14-种-skill-设计模式/)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](/ch01-531-skills-anthropic-openai-comparison-frontend-design/)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
+- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](/ch04-460-智能体编排层中的上下文管理架构/)
+- [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
+- [Anthropic Claude Managed Agents 平台正式发布](/ch01-181-anthropic-claude-managed-agents-平台正式发布/)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Anthropic Computer Use 最佳实践](/ch01-658-anthropic-发布-computer-use-最佳实践/)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题/)
 
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践//)
-- [Claude Code Agent 工程设计](/ch04-015-claude-code-的-agent-工程//)
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](/ch04-024-qoder-skills-完全指南-agent-skill-迭代式编写-ai-按你的标准执行//)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](/ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化//)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](/ch04-252-anthropic-长时运行-agent-架构-对抗式设计-合同谈判-审美量化//)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](/ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器//)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
+- [Claude Code Agent 工程设计](/ch04-015-claude-code-的-agent-工程/)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](/ch04-024-qoder-skills-完全指南-agent-skill-迭代式编写-ai-按你的标准执行/)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](/ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化/)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](/ch04-252-anthropic-长时运行-agent-架构-对抗式设计-合同谈判-审美量化/)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](/ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器/)
 
 - MOC
 ## 深度分析

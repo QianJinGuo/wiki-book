@@ -35,11 +35,11 @@ Mini Shai-Hulud 攻击标志着 AI 开源生态系统的供应链攻击进入新
 4. **内部镜像**：建立内部包镜像进行安全扫描，而非直接依赖官方仓库
 5. **凭据管理**：最小权限原则 + 定期轮换 + MFA，保护 CI/CD 环境中的所有凭据
 ## 相关实体
-- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](/ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack//)
-- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack//)
-- [Teampcp Claims Sale Of Mistral Ai Repositories Amid Mini Shai Hulud Attack 1](/ch12-055-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha//)
-- [Cybersecurityreach Revoke Token Wipe Computer](/ch01-021-ifyourevokethistokenitwillwipethecomputeroftheowner//)
-- [Thehackernews Fake Openai Privacy Filter](/ch01-656-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra//)
+- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](/ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
+- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
+- [Teampcp Claims Sale Of Mistral Ai Repositories Amid Mini Shai Hulud Attack 1](/ch12-055-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha/)
+- [Cybersecurityreach Revoke Token Wipe Computer](/ch01-021-ifyourevokethistokenitwillwipethecomputeroftheowner/)
+- [Thehackernews Fake Openai Privacy Filter](/ch01-656-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www-wiz-io-mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised.md)
 -

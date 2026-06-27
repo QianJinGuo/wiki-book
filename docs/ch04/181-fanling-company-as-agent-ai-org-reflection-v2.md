@@ -11,11 +11,11 @@
 【调研速览】特赞的 AI 原生组织实验  变革触发点：用 C  ursor 最好的不是  研发  范凌一直在观察公司内部谁把 AI 工具用得最好。答案出乎意料——不是研发，而是产品经理和设计师。他们用 Cursor 拿到了过去必须排期等研发才能获得的资源。这让范凌意识到，AI 不是让专业分工更快，而是让一个人跨越多个角色。工业革命以来"一人一岗、逐级晋升"的组织假设，正在被从底层动摇。他把这叫作"AI 是反工业革命的"。  组织  动刀：p  od + community 双轨制  基于这个判断，范凌对组织开了两刀。第一刀是把全公司切成 pod——3 到 10 人的跨职能小队，内部闭环交付，不再依赖跨部门拉通。三年前特赞就试过一次 pod，失败了，因为大家心理上还没准备好。但 AI 让团队自发减少了横向调配，pod 的土壤成熟了。第二刀是在 pod 之外建 community：横向社区帮所有人补齐销售、产品、代码等跨界能力，并专设 Leadership community——范凌判断，AI 时代带 100 个 Agent 比带 10 个人更难，pod leader 需要的不只是 AI 能力，还有 P&L、商业直觉和耐心。  一个伴随组织变革出现的现象是角色边界在溶解。Marketing 的人开始用 Claude Code 写脚本抓 LinkedIn 联系人，实质上已经是 Marketing Engineer；产品经理和设计师用 Cursor 直接出功能，不再等研发排期。研发占比从过去的 50% 持续下降，但"会写代码的人"反而变多了。  文化引擎：创始人下场 build  组织架构只是骨架，真正让 AI 跑起来的是文化。特赞也做系统培训  （ABC Plus 项目）  ，但范凌发现更有效的推动力是创始人亲自下场。他和 CTO、产品负责人三人组成的小团队，用 AI 做新产品，带来的用户增长远超其他 7 人团队。午饭、咖啡时间给同事秀 demo，其他 pod leader 也跟着秀。久而久之，内部形成了"自豪地展示自己 build 的东西"的习惯。这种 dogfooding 文化的传染力，远超自上而下的推广。  基础设施：分层上下文系统  特赞是一家有深厚文档文化的公司，连会议录音都会转成文档。范凌正在搭建分层的上下文系统：公司级放 schema.md 等指导性文件，像索引一样指向过去积累的几亿个文档；pod 级是各小队的专属上下文；个人级是每个人自己的对话和偏好管理。他强调上下文不是越丰富越好——有些场景需要的是框架而不是细节。企业级上下文还必须处理权限和保密，范凌举了个例子：他在投屏时搜 Wi-Fi 密码，AI 顺带把只有他权限能看的保密密码也搜了出来。他倾向于把某些核心数据压根不放进上下文系统。  产品分享：GEA，Atypica  产品层面，特赞的布局围绕一个核心逻辑：积累 AI 不能压缩时间的东西。  GEA  （Generative Enterprise Agent）  是企业级 Agent 架构。不执着于单个 Agent，而是把重点放在 Context 和 Orchestration 上——一个 Lead Agent 带若干 Sub-Agent，配上企业的 Skills 和 Context，在用户洞察、内容增长、产品创新等领域搭出企业专属的 Agent 项目组，相当于 7x24 小时运转的虚拟公司。  Atypica 做的是"理解人的 AI"。基于约 100 万个真实用户的表达、故事、认知和行为数据，用 AI 构建主观世界模型来模拟消费者和专业用户。一个典型案例：美国教授用 2 万个真实家庭样本，让 AI 生成 1000 个典型人物画像，模拟夫妻和双方父母围绕生育话题的讨论，再不断注入政策变量观察行为变化——这是把 AI 用在社会科学研究上。  Game Lab  （game.atypica.ai)  解决的是 AI 模拟人的准确性问题。让真人和 AI 玩同样的经济学博弈游戏  （电车难题、最后通牒博弈）  ，用真人数据不断调优 AI 的表现，直到 AI 的决策和真人无限接近。这是特赞做 evals 的核心手段。  商业闭环：场景发现驱动客户对话  pod 在内部跑起来之后，对外的打法也变了。pod leader 实际上成了"场景发现官"：用 AI 从 600 多个客户需求中提炼出约 100 个共性场景，再用 SPIS 方法（Situation-Pain-Impact-Solution）结构化。拿着"别人的痛点"去和客户聊，比拿产品 demo 更容易打开对话——客户会觉得"你懂我"。pod leader 大约花 30%-40% 的时间在场景收集上。  代价与未解的张力  最会用 AI 的人反而最累——能力边界扩张后，...
 
 ## 相关实体
-- [Acker Agent Evolution Three Routes Convergence](/ch04-112-agent演化-三条路线汇聚框架//)
-- [Agent Context Management Architecture Patterns](/ch04-460-智能体编排层中的上下文管理架构//)
+- [Acker Agent Evolution Three Routes Convergence](/ch04-112-agent演化-三条路线汇聚框架/)
+- [Agent Context Management Architecture Patterns](/ch04-460-智能体编排层中的上下文管理架构/)
 - Openclaw Prompt Context Harness
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//)
-- [Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架//)
+- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
+- [Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fanling-company-as-agent-ai-org-reflection-v2.md)
 

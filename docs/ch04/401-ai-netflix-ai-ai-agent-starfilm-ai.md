@@ -36,11 +36,11 @@ Starfilm的出现折射出一个根本性的转变：AI视频工具正从"炫技
 - "超级个体"叙事背后的长尾创作者市场值得关注——AI视频工具的真正机会可能不在大厂，而在被传统制作门槛压制多年的大量"准创作者"的释放
 
 ## 相关实体
-- [Ai 内容创作开始进入画布 Agent时代](/ch04-405-ai-内容创作开始进入画布-agent-时代//)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](/ch04-439-score-by-collisions-patch-by-panic//)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](/ch11-016-alibabacloud-cms-manage-skill-阿里云-cms-2-0-可观测接入的-ai-agent-sk//)
-- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](/ch01-576-国产顶尖模型-benchmark-评分那么高-可实际效果为什么差-看完-anthropic-这篇博客-刷分的因素太单一了//)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](/ch01-630-google-adds-llms-txt-check-to-chrome-lighthouse//)
+- [Ai 内容创作开始进入画布 Agent时代](/ch04-405-ai-内容创作开始进入画布-agent-时代/)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](/ch04-439-score-by-collisions-patch-by-panic/)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](/ch11-016-alibabacloud-cms-manage-skill-阿里云-cms-2-0-可观测接入的-ai-agent-sk/)
+- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](/ch01-576-国产顶尖模型-benchmark-评分那么高-可实际效果为什么差-看完-anthropic-这篇博客-刷分的因素太单一了/)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](/ch01-630-google-adds-llms-txt-check-to-chrome-lighthouse/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/starfilm-ai-agent-ai-short-film-platform.md)
 

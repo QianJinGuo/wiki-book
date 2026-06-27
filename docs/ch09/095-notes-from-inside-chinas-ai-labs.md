@@ -12,11 +12,11 @@ Interconnects AI is a reader-supported publication. Consider becoming a subscrib
 The Chinese companies building language models are set up as the perfect fast-followers for the technology, building on long-standing cultural traditions in education and work, along with subtly different approaches to building technology companies. When you look at the outputs, the latest, biggest models enabling agentic workflows, and the ingredients, excellent scientists, large-scale data, and accelerated computing, the Chinese and American labs look largely similar. The lasting differences emerge in how these are organized and conditioned.
 
 ## 相关实体
-- [Notes Inside China Ai Labs Lambert](/ch09-079-notes-inside-china-ai-labs-lambert//)
-- [Anthropic](/ch01-677-anthropic//)
-- [Datadog Pathfinding Labs Security](/ch11-075-pathfinding-labs-deploy-test-and-learn-from-100-intentio//)
-- [Anthropic Claude Managed Agents Platform 2026](/ch01-181-anthropic-claude-managed-agents-平台正式发布//)
-- [News Sap Com Sap Unveils The Autonomous Enterprise](/ch04-148-sap-unveils-the-autonomous-enterprise-sap-sapphire-2026//)
+- [Notes Inside China Ai Labs Lambert](/ch09-079-notes-inside-china-ai-labs-lambert/)
+- [Anthropic](/ch01-677-anthropic/)
+- [Datadog Pathfinding Labs Security](/ch11-075-pathfinding-labs-deploy-test-and-learn-from-100-intentio/)
+- [Anthropic Claude Managed Agents Platform 2026](/ch01-181-anthropic-claude-managed-agents-平台正式发布/)
+- [News Sap Com Sap Unveils The Autonomous Enterprise](/ch04-148-sap-unveils-the-autonomous-enterprise-sap-sapphire-2026/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/notes-from-inside-chinas-ai-labs.md)
 

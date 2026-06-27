@@ -76,11 +76,11 @@ DMuon 将 Muon 优化器的开销降低 100 倍，使得原本理论上优越但
 
 梯度桥 + 语义 Tokenizer + 动作空间监督 + DMuon = 让主干真正"经历"动作，而非只是"见过"动作数据。
 ## 相关实体
-- [Yann Lecun Jepa World Model](/ch04-363-yann-lecun-jepa世界模型与ami-labs//)
-- [Tsinghua Self Evolving Skill Agent](/ch01-605-清华自进化skill双星-embodiskill-skillevolver//)
-- [直播预约 数据引擎具身智能的下一个决胜局](/ch01-676-直播预约-数据引擎-具身智能的下一个决胜局//)
-- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us//)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](/ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes//)
+- [Yann Lecun Jepa World Model](/ch04-363-yann-lecun-jepa世界模型与ami-labs/)
+- [Tsinghua Self Evolving Skill Agent](/ch01-605-清华自进化skill双星-embodiskill-skillevolver/)
+- [直播预约 数据引擎具身智能的下一个决胜局](/ch01-676-直播预约-数据引擎-具身智能的下一个决胜局/)
+- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](/ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes/)
 
 ---
 

@@ -70,8 +70,8 @@ GitHub 采用的是典型的"广度+深度"两级安全架构：
 
 ## 相关实体
 
-- [bagel Fleet 级 Secret Scanning](/ch12-049-bagel-fleet-级-secret-scanning-守护开发工作站//)
-- [Claude Code Security Incident](/ch01-223-claude-code-1-0-24-工具调用安全事故-静默删-gitignore-与-redis-flush-复盘//)
+- [bagel Fleet 级 Secret Scanning](/ch12-049-bagel-fleet-级-secret-scanning-守护开发工作站/)
+- [Claude Code Security Incident](/ch01-223-claude-code-1-0-24-工具调用安全事故-静默删-gitignore-与-redis-flush-复盘/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
 

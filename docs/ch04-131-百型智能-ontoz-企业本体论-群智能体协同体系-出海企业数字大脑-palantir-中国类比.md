@@ -180,7 +180,7 @@
 
 - 多智能体协同 — [Openclaw Multi Agent Team Practice V2](/ch04-038-openclaw-multi-agent-team-practice-v2/)
 - 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](/ch01-035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode/)
-- 智能体协议 — [Ahe Agentic Harness Engineering](/ch04-212-ahe-agentic-harness-engineering//)
+- 智能体协议 — [Ahe Agentic Harness Engineering](/ch04-212-ahe-agentic-harness-engineering/)
 - Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](/ch01-159-kimi-work-通用-agent-战场从云端迁移到本地/)
 - Claude Code 架构 — [Claude Code Architecture](/ch01-571-claude-code-架构解析/)
 - Harness 工程 — [Harness Engineering Systematic Framework](/ch05-049-harness-engineering-系统梳理/)

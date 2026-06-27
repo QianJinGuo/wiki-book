@@ -351,11 +351,11 @@ class PipelineStack extends cdk.Stack {
 - `AI安全全景` — 基础设施安全与AI防护的交叉领域
 - `Harness架构` — 云原生基础设施的抽象设计
 ## 相关实体
-- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](/ch01-116-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r//)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](/ch11-177-cost-effective-deployment-of-vision-language-models-for-pet//)
-- [Us Bank Aws Ai Migration](/ch01-542-u-s-bank-shifts-critical-apps-to-aws-for-ai-push-cio-dive//)
-- [3Rdfsmp](/ch11-166-archera-insured-cloud-commitments-for-aws-azure-and-goog//)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](/ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake//)
+- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](/ch01-116-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r/)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](/ch11-177-cost-effective-deployment-of-vision-language-models-for-pet/)
+- [Us Bank Aws Ai Migration](/ch01-542-u-s-bank-shifts-critical-apps-to-aws-for-ai-push-cio-dive/)
+- [3Rdfsmp](/ch11-166-archera-insured-cloud-commitments-for-aws-azure-and-goog/)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](/ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake/)
 
 ---
 

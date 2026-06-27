@@ -86,7 +86,7 @@ Sandbox worker（microVM 级别硬件隔离）本身就是一个 worker，这意
 
 ## 相关页面
 [Agentcore Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/) — AWS 托管 Harness 平台，同样探索 Agent 基础设施抽象
-[Harness Engineering Framework](/ch05-041-harness-engineering-概念框架//) — Harness Engineering 六层框架
+[Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Harness Engineering 六层框架
 [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/) — YC/Garry Tan 的 Fat Skills + Thin Harness 思路
 Openclaw Architecture — OpenClaw 同样探索 Agent 基础设施薄抽象
 
