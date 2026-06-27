@@ -69,10 +69,10 @@
 
 ## 与现有实体的关系
 
-- **支撑 [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)** — K-Dense 提供 4 个科学 AI 案例佐证 "harness 决定上限"
-- **呼应 [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)** — Anthropic 主张 harness > pretraining；K-Dense 用科学 AI 数据给出量化证明
-- **支持 [Miroflow Deep Research Agent Harness Mirothinker](https://github.com/QianJinGuo/wiki/blob/main/entities/miroflow-deep-research-agent-harness-mirothinker.md)** — Deep Research 类 harness 是设计典范，单模型质量不及 harness
-- **补充 [Agent Harness Engineering Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md)** — Survey 中 "context engineering" 一节的科学 AI 实例
+- **支撑 Ahe Agentic Harness Engineering** — K-Dense 提供 4 个科学 AI 案例佐证 "harness 决定上限"
+- **呼应 [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/)** — Anthropic 主张 harness > pretraining；K-Dense 用科学 AI 数据给出量化证明
+- **支持 Miroflow Deep Research Agent Harness Mirothinker** — Deep Research 类 harness 是设计典范，单模型质量不及 harness
+- **补充 [Agent Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey/)** — Survey 中 "context engineering" 一节的科学 AI 实例
 
 ## 实践启示
 
@@ -98,7 +98,7 @@
 1. **科学 AI 的瓶颈已从"模型能做什么"转向"系统让模型做什么"**
    - 核心观点：Anthropic 的 Chemistry 结果（通用模型在 NMR 任务上击败专用软件）证明模型能力已不再是科学 AI 的瓶颈。真正的限制是模型周围的 scaffolding——数据接入、代码执行、验证机制、审计输出。
    - 技术要点：K-Dense 公式 **Effective Capability = Model IQ × Context Quality × Harness Design** 说明在 2026 年，Model IQ 的边际收益已递减，而 Context Quality 和 Harness Design 成为新的价值杠杆。
-   - 实践价值：当"用更强的模型"带来的提升<5%时，工程资源应转向 harness 设计。这与 [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md) 中 Anthropic 的主张呼应。
+   - 实践价值：当"用更强的模型"带来的提升<5%时，工程资源应转向 harness 设计。这与 [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/) 中 Anthropic 的主张呼应。
 
 2. **4 个 case 提供了 harness 设计量化价值的稀缺证据**
    - 核心观点：K-Dense 的 4 个科学 AI case（材料/药物/气候/蛋白质）是少数提供了"同一模型 + 不同 harness → 4.3× 质量差异"量化数据的来源。这打破了"harness 只是锦上添花"的误解。
@@ -113,12 +113,12 @@
 4. **多 agent 协作的协调 overhead 小于并行收益（气候 case: 4× 加速，质量 2.8× 提升）**
    - 核心观点：气候模拟 case 中，4 agent 并行（各负责 1 季度）比单 agent 快 4×，质量还提升 2.8×。这说明多 agent 的协调成本在很多科学 AI 场景下是净正收益。
    - 技术要点：关键发现是"多 agent 之间的协调 overhead 小于并行收益"。这要求任务可分解、子任务间依赖少、agent 间通信开销低。
-   - 实践价值：对 [Multi Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) 和 [Orchestrator Worker Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/orchestrator-worker-architecture.md) 提供了科学 AI 领域的实证支撑。
+   - 实践价值：对 Multi Agent Collaboration Patterns 和 Orchestrator Worker Architecture 提供了科学 AI 领域的实证支撑。
 
 5. **反馈循环（dry-lab + wet-lab）是蛋白质设计 harness 的关键**
    - 核心观点：蛋白质设计 case 中，4 轮迭代后 binder 亲和力提升 12×，而单次生成仅 1×。关键在于 harness 包含数据回流机制，让模型在每一轮 dry-lab 评分后接收 wet-lab 实验反馈。
    - 技术要点：这是"模型在环"（model-in-the-loop）的具体实现——不是一次性生成，而是生成→评分→反馈→再生成的迭代循环。
-   - 实践价值：对 [Harness Loop Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-loop-architecture.md) 提供了wet-lab 实验数据闭环的案例。
+   - 实践价值：对 Harness Loop Architecture 提供了wet-lab 实验数据闭环的案例。
 
 ## 实践启示
 
@@ -126,11 +126,11 @@
 
 2. **科学 AI harness 设计应包含四层：数据→分析→验证→审计** — 缺少任何一层都会导致"chatbot answer"而非"research result"。特别是验证层（检查候选答案而非直接输出）被普遍忽视。
 
-3. **多 agent 协作在任务可分解场景下是净正收益** — 气候/材料/蛋白质设计的 case 表明，当子任务间依赖少时，多 agent 协调 overhead 小于并行收益。可以参考 [Orchestrator Worker Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/orchestrator-worker-architecture.md) 设计这类 harness。
+3. **多 agent 协作在任务可分解场景下是净正收益** — 气候/材料/蛋白质设计的 case 表明，当子任务间依赖少时，多 agent 协调 overhead 小于并行收益。可以参考 Orchestrator Worker Architecture 设计这类 harness。
 
-4. **建立反馈循环机制是 harness 的核心竞争力** — 无论是 critic+revised（代码场景）还是 dry-lab+wet-lab（科学实验场景），迭代反馈循环带来的质量提升远超单次生成。对照 [Harness Loop Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-loop-architecture.md) 设计反馈机制。
+4. **建立反馈循环机制是 harness 的核心竞争力** — 无论是 critic+revised（代码场景）还是 dry-lab+wet-lab（科学实验场景），迭代反馈循环带来的质量提升远超单次生成。对照 Harness Loop Architecture 设计反馈机制。
 
-5. **Context Quality 是 2026 年 harness 工程的首要投入方向** — K-Dense 公式显示 Context Quality 占比从 20%→35%，与 [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) 的重要性趋势一致。Structured context、RAG、multi-modal context 都是提升 Context Quality 的手段。
+5. **Context Quality 是 2026 年 harness 工程的首要投入方向** — K-Dense 公式显示 Context Quality 占比从 20%→35%，与 Context Engineering 的重要性趋势一致。Structured context、RAG、multi-modal context 都是提升 Context Quality 的手段。
 
 ---
 

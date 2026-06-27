@@ -20,7 +20,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-demystifying-evals-for-ai-agents.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- MOC
 ## 深度分析
 
 Anthropic 这篇文章系统性地拆解了 AI Agent 评估的核心概念框架，其价值在于将评估问题从「模糊的质量判断」转化为「可度量的工程系统」。

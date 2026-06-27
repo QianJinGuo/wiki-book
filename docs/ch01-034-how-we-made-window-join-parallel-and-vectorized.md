@@ -12,7 +12,7 @@
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm)
 - [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](../ch01-875-what-is-urban-density-design-a-clear-guide-to-how-cities-ge)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
+- MOC
 ## 深度分析
 ### 专用算子 vs 通用查询重写：性能差距的本质
 QuestDB WINDOW JOIN 展现出比 Timescale、DuckDB、ClickHouse 快 25 倍的性能，其根本原因在于**专用算子知道窗口结构而通用查询重写不知道** ^。

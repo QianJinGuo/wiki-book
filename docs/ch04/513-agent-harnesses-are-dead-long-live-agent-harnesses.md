@@ -18,12 +18,12 @@
 
 ### 关联实体
 
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-institute-when-ai-builds-itself-jiagoux-interpretation.md)
-- [Claude Code Dynamic Workflows Thariq Blog Gaia](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-dynamic-workflows-thariq-blog-gaia.md)
-- [Harness Generator Evaluator Anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-generator-evaluator-anthropic.md)
-- [Harness Engineering Core Patterns Claude Code](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
-- [Agent Reliability Engineering Skillify Continuous Improvement](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-reliability-engineering-skillify-continuous-improvement.md)
-- [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-operator上手-把一个-agent-养成可运营系统-若飞.md)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01-682-anthropic-institute-when-ai-builds-itself-深度解读-ai-进入-ai-研发执行/)
+- [Claude Code Dynamic Workflows Thariq Blog Gaia](../ch01-805-从-harness-到动态工作流-claude-code-多智能体任务编排的新范式/)
+- [Harness Generator Evaluator Anthropic](../ch05-080-claude-harness-设计-generator-evaluator-架构与-context-reset-演进/)
+- [Harness Engineering Core Patterns Claude Code](../ch01-698-深入浅出-harness-engineering-之核心模式与理念/)
+- [Agent Reliability Engineering Skillify Continuous Improvement](../ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制/)
+- [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch04-067-hermes-agent-operator-上手-把一个-agent-养成可运营系统/)
 
 ## 实践启示
 

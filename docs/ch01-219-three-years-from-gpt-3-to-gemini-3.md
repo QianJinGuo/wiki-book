@@ -196,7 +196,7 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 - [GPT-5.5 Copilot Session 设计](../ch07-015-wiki-evolver)
 - [AI Agent Harness 构建](../ch04-420-深度拆解-ai-智能体-harness-的构造-译)
 - [Harness 状态边界与失败闭环](../ch05-015-harness-之后-状态边界与失败闭环-若飞续篇)
-- [Agent Vibecoder 上下文压缩](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-agent-vibecoder.md)
+- Agent Vibecoder 上下文压缩
 - [腾讯混元 HY3 开源预览](../ch01-665-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升)
 - [Agent 记忆系统工程实践](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
 

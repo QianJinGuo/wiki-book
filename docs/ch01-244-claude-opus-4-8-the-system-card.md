@@ -163,7 +163,7 @@ Unverbalized grader awareness 出现在 5% 的情况下，0.5% 上升到 exploit
 - **Model Welfare** — Anthropic 评估 Opus 4.8 的模型福利情况为良好
 - **Claude Constitution** — Opus 4.8 在遵守 Claude Constitution 上达新高峰
 - [claude opus 4.8: the system card](../ch01-581-claude-opus-4-8-the-system-card)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 
 ---
 

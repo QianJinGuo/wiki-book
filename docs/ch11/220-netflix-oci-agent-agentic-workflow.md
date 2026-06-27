@@ -9,7 +9,7 @@
 Netflix 开源的 **oci-agent** 是一个面向观察性因果推断（Observational Causal Inference, OCI）的人机协同 Agentic Workflow。核心设计哲学：Agent 负责执行和诊断，人类负责判断和决策——不是替代而是增强（human-augmenting）。
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/a-human-augmenting-agentic-workflow-for-causal-inference.md)
-→ [LLM 主题 ≠ 真实变量 — 因果推断方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-themes-not-observations-causal-inference-william-gieng-2026.md)
+→ [LLM 主题 ≠ 真实变量 — 因果推断方法论](../ch01-185-llm-主题-生成变量-别把-llm-提取的主题当成真实变量-william-gieng-因果推断方法论/)
 
 ## 核心架构：三角色 + Actor-Critic Loop
 

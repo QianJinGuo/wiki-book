@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 26.9KB | `entities/sota-ai-hermes-agent-eval-harness-skillopt-implementation.md`
 
-strategic_context: "[Frontier 1 — Harness/Skill 从个人能力到组织资产](https://github.com/QianJinGuo/wiki/blob/main/queries/research-frontier-map.md)"
+strategic_context: "Frontier 1 — Harness/Skill 从个人能力到组织资产"
 provenance_state: inferred
 ---
 
@@ -260,7 +260,7 @@ regression_failures | rejection_reason | review_notes
 | [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch01-362-ai科研超越人类-prime-intellect递归自改进实验) | **递归自改进** | nanogpt + Prime Intellect |
 | [Darwin Skill 2 Huashu](../ch04-323-达尔文-skill-2-0正式开源发布-让你的所有skill左脚踩右脚实现自我进化) | **Darwin Skill 2** | Darwin Skill 进化 |
 | [Embabel](../ch07-019-embabel) | **Embabel** | Embabel 自进化框架 |
-| [Pith Train Agent Native Moe Training Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/pith-train-agent-native-moe-training-framework.md) | **Pith 训练框架** | Agent 原生 MoE 训练 |
+| Pith Train Agent Native Moe Training Framework | **Pith 训练框架** | Agent 原生 MoE 训练 |
 | [Hermes Agent 12 Layer Full Configuration Guide](../ch04-418-hermes-agent) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
 | [Hermes 9 Module Architecture](../ch01-336-hermes-9-module-architecture-winty) | **Hermes 9 模块** | Hermes 9 模块架构 |
 | [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |

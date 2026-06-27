@@ -113,21 +113,21 @@ AgentRun 基于函数计算计费，核心优势是**按实际调用计费 + 零
 → [原文存档：5分钟上手](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
 → [原文存档：2行代码集成](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-agentrun-2line-integration.md)
 
-- [GBrain](https://github.com/QianJinGuo/wiki/blob/main/entities/gbrain.md)
+- [GBrain](../ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策/)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)
+> 主题导航
 
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](https://github.com/QianJinGuo/wiki/blob/main/entities/看-agentrun-如何玩转记忆存储最佳实践来了.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-6.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-4.md)
-- [OpenCLI](https://github.com/QianJinGuo/wiki/blob/main/entities/opencli.md)
-- [AutoCLI](https://github.com/QianJinGuo/wiki/blob/main/entities/autocli.md)
-- [阿里巴巴 Aone 面向 Agent 的研发模式探索](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-aone-agentic-rd-mode-xiangbangyu.md)
-- [CLI-Anything](https://github.com/QianJinGuo/wiki/blob/main/entities/cli-anything.md)
-- [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
-- [AgentBrowser](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-browser.md)
-- [24h打工人](https://github.com/QianJinGuo/wiki/blob/main/entities/24h-worker-agent.md)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04-394-看-agentrun-如何玩转记忆存储-最佳实践来了/)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](../ch11-165-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch11-191-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- [OpenCLI](../ch03-080-opencli/)
+- [AutoCLI](../ch03-111-autocli/)
+- [阿里巴巴 Aone 面向 Agent 的研发模式探索](../ch04-045-alibaba-aone-agentic-rd-mode-xiangbangyu/)
+- [CLI-Anything](../ch03-089-cli-anything/)
+- CLI-Tools 横向对比
+- [AgentBrowser](../ch04-451-agentbrowser/)
+- [24h打工人](../ch04-009-24h打工人/)
 
 ---
 

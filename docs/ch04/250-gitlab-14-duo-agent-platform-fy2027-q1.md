@@ -45,11 +45,11 @@ GitLab Duo Agent Platform 仍处于早期阶段——评估它是否已覆盖你
 当 AI agent 可以自主修改代码和部署时，治理框架（审批流程、权限控制、审计日志）必须在 agent 上线前就位。
 
 ## 相关实体
-- [Gitlab Layoffs Memo 2026 5](https://github.com/QianJinGuo/wiki/blob/main/entities/gitlab-layoffs-memo-2026-5.md)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md)
-- [Auto Improving Agent Platform Ashpreetbedi](https://github.com/QianJinGuo/wiki/blob/main/entities/auto-improving-agent-platform-ashpreetbedi.md)
-- [The Ui Is Dead Long Live The Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent.md)
-- [Servicenow Ui Is Dead Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/servicenow-ui-is-dead-agent.md)
+- Gitlab Layoffs Memo 2026 5
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](../ch04-279-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
+- [Auto Improving Agent Platform Ashpreetbedi](../ch01-545-auto-improving-agent-platform-ashpreet-bedi/)
+- [The Ui Is Dead Long Live The Agent](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
+- [Servicenow Ui Is Dead Agent](../ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gitlab-14pct-layoff-agent-platform-ai-2026q1.md)
 

@@ -172,11 +172,11 @@ Tigress-obfuscated binary 要求 harness 能处理控制流图简化、间接跳
 | **Action** | create new entity + raw article + index entry + log entry |
 
 ## 相关实体
-- [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md)
-- [The It And Security Field Guide To Ai Adoption Tines](https://github.com/QianJinGuo/wiki/blob/main/entities/the-it-and-security-field-guide-to-ai-adoption-tines.md)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](https://github.com/QianJinGuo/wiki/blob/main/entities/mellum-2-jetbrains-open-12b-moe-code-model.md)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [How Open Model Ecosystems Compound](https://github.com/QianJinGuo/wiki/blob/main/entities/how-open-model-ecosystems-compound.md)
+- [Microsoft Open Sources Rampart Clarity](../ch01-611-microsoft-open-sources-rampart-and-clarity-to-secure-ai-agen/)
+- [The It And Security Field Guide To Ai Adoption Tines](../ch12-071-the-it-and-security-field-guide-to-ai-adoption-tines/)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch01-442-mellum-2-jetbrains-open-weight-12b-moe-code-llm/)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
+- [How Open Model Ecosystems Compound](../ch01-651-how-open-model-ecosystems-compound/)
 
 ---
 

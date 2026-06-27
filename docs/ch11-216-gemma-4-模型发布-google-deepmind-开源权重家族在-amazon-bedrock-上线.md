@@ -83,7 +83,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-gemma-4-models-on-amazon-bedrock.md)
 - [diffusiongemma：扩散式文本生成模型（google 26b moe，4× 推理加速）](../ch01-688-diffusiongemma-扩散式文本生成模型-google-26b-moe-4-推理加速)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- MOC
 
 ---
 

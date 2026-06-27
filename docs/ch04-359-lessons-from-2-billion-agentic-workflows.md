@@ -75,12 +75,12 @@ CrewAI 处理 20 亿次工作流的数据量足以过滤掉小样本偏差。三
 - [A Missing Layer In Agentic Systems](../ch04-311-a-missing-layer-in-agentic-systems) — HITL 作为 Agentic 系统第三层的论述
 - [Agentcore Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施) — AgentCore 工程化实践
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed) — AgentOps 可观测性实践
-- [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) — 生产级 Agent 工程
-- [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
-- [Agent Framework Comparison](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-framework-comparison.md) — Agent 框架对比
-- [Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 多 Agent 编排
-- [Ai Safety Governance](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-safety-governance.md) — AI 安全治理
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
+- Production Agent Engineering — 生产级 Agent 工程
+- Agent Deployment Strategy — Agent 部署策略
+- Agent Framework Comparison — Agent 框架对比
+- Multi Agent Orchestration — 多 Agent 编排
+- Ai Safety Governance — AI 安全治理
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/) — Harness 工程框架
 
 ---
 

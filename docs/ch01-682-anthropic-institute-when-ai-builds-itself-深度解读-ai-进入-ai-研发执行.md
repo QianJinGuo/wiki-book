@@ -11,7 +11,7 @@
 - [淘天营销中后台生码工作流最佳实践](../ch01-723-淘天营销中后台生码工作流最佳实践)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-institute-when-ai-builds-itself-jiagoux-interpretation.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 ## 深度分析
 
 Anthropic Institute《When AI builds itself》深度解读：AI 进入 AI 研发执行层、瓶颈迁移与研发级 Harness（架构师 JiaGouX） 涉及agent领域的核心技术议题。

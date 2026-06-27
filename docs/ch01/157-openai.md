@@ -25,7 +25,7 @@ OpenAI三个语音模型发布同传被杀死
 
 ## 相关实体
 
-- [OpenAI buys AI consultancy to sell enterprises on its models](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.md)
+- [OpenAI buys AI consultancy to sell enterprises on its models](../ch01-684-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/)
 
 ---
 

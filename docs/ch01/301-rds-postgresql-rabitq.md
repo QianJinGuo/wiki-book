@@ -67,22 +67,22 @@ RaBitQ 的理论基础来自论文《RaBitQ: Quantizing High-Dimensional Vectors
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/在-rds-postgresql-中实现-rabitq-量化.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-as-a-verifierageneral-purposeverific.md)
-- [你不知道的 Agent：原理、架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践.md)
-- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/告别氛围编程基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践.md)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](https://github.com/QianJinGuo/wiki/blob/main/entities/看-agentrun-如何玩转记忆存储最佳实践来了.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
-- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](https://github.com/QianJinGuo/wiki/blob/main/entities/rag深度解析分块向量化召回重排才是蒸馏同事skill的关键.md)
-- [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](https://github.com/QianJinGuo/wiki/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验.md)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01-302-llm-as-a-verifier-a-general-purpose-verification-framework/)
+- [你不知道的 Agent：原理、架构与工程实践](../ch01-505-你不知道的-agent-原理-架构与工程实践/)
+- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch01-407-告别-氛围编程-基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践/)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04-394-看-agentrun-如何玩转记忆存储-最佳实践来了/)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch01-453-rag深度解析-分块-向量化-召回-重排-才是-蒸馏同事skill-的关键/)
+- [别再把上下文当聊天记录](../ch01-456-别再把上下文当聊天记录/)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch03-012-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
 
-- [Hermes Agent /goal 长任务运行时架构](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-runtime-architecture.md)
-- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-agent脚手架如何具备自进化能力以hermes-agent为例.md)
-- [LoongSuite GenAI 可观测语义规范](https://github.com/QianJinGuo/wiki/blob/main/entities/loongsuite-genai-semconv.md)
-- [低代码 Agent、框架 Agent、自研 Agent 决策框架](https://github.com/QianJinGuo/wiki/blob/main/entities/lowcode-framework-custom-agent-decision-framework-hello-agents.md)
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](https://github.com/QianJinGuo/wiki/blob/main/entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md)
-- [卡片式对话的协议方案探索和思考](https://github.com/QianJinGuo/wiki/blob/main/entities/卡片式对话的协议方案探索和思考.md)
+- [Hermes Agent /goal 长任务运行时架构](../ch04-317-hermes-agent-goal-长任务运行时架构/)
+- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch01-164-llm-agent脚手架如何具备自进化能力-以hermes-agent为例/)
+- [LoongSuite GenAI 可观测语义规范](../ch04-376-loongsuite-genai-可观测语义规范/)
+- [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch04-354-低代码-agent-框架-agent-自研-agent-分别适合谁/)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战/)
+- [卡片式对话的协议方案探索和思考](../ch01-160-卡片式对话的协议方案探索和思考/)
 
 ---
 

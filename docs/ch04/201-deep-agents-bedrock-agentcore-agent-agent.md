@@ -117,24 +117,24 @@ Runtime 关键能力：
 
 | 实体 | 关注点 | 本文差异 |
 |------|--------|---------|
-| [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) | AgentCore 平台概念 + Harness 趋势 | 偏理论，无代码 |
-| [Agentcore Managed Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-managed-harness.md) | 托管 Harness 平台 overview | 无具体 subagent 编排 |
-| [Langchain Harrison Chase Sandbox Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/langchain-harrison-chase-sandbox-architecture.md) | LangChain 沙箱架构演进 | 聚焦 sandbox，不涉及 Bedrock AgentCore 集成 |
-| [Production Harness 12 Components Framework Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/production-harness-12-components-framework-comparison.md) | 12 组件框架对比 | 偏理论框架，无 AWS 端到端代码 |
+| [Agentcore Harness](../ch04-206-agentcore-managed-harness/) | AgentCore 平台概念 + Harness 趋势 | 偏理论，无代码 |
+| [Agentcore Managed Harness](../ch04-428-harness工程火遍硅谷-agentcore今天交卷/) | 托管 Harness 平台 overview | 无具体 subagent 编排 |
+| [Langchain Harrison Chase Sandbox Architecture](../ch04-176-langchain创始人解读-ai智能体两种沙盒架构/) | LangChain 沙箱架构演进 | 聚焦 sandbox，不涉及 Bedrock AgentCore 集成 |
+| [Production Harness 12 Components Framework Comparison](../ch05-033-生产级-harness-的-12-大组件以及主流框架对比/) | 12 组件框架对比 | 偏理论框架，无 AWS 端到端代码 |
 
 **本文独特价值**：是 **LangChain Deep Agents + Bedrock AgentCore** 这一特定组合的**官方端到端实现**（含完整 Python 代码、IAM 权限、4 步部署、cleanup 流程）。
 
 ## 深度分析
 
-1. **双层编排的架构价值**：框架层（Deep Agents）和基础设施层（AgentCore）的职责分离是本文的核心设计模式[Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)。框架层负责 subagent 的生命周期管理、生成和消息路由，基础设施层提供隔离的 MicroVM 执行环境。这种分层使编排逻辑与执行环境可以独立演进——框架可以在不同后端 runtime 间迁移，而不必重写编排策略。
+1. **双层编排的架构价值**：框架层（Deep Agents）和基础设施层（AgentCore）的职责分离是本文的核心设计模式Multi Agent Orchestration。框架层负责 subagent 的生命周期管理、生成和消息路由，基础设施层提供隔离的 MicroVM 执行环境。这种分层使编排逻辑与执行环境可以独立演进——框架可以在不同后端 runtime 间迁移，而不必重写编排策略。
 
-2. **Subagent 并发压缩时间的本质**：三个 research subagent 并行执行将端到端耗时从串行的 12-18 分钟压缩至 4-6 分钟（3x 提升）。这一收益的来源不是并发本身，而是 coordinator 只接收结构化摘要而非原始网页内容，从而保持 context window 高效利用[Harness Context Window Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-context-window-management.md)。如果 subagent 返回完整页面内容，coordinator 的 context window 会在并发时更快被填满，反而抵消并发收益。
+2. **Subagent 并发压缩时间的本质**：三个 research subagent 并行执行将端到端耗时从串行的 12-18 分钟压缩至 4-6 分钟（3x 提升）。这一收益的来源不是并发本身，而是 coordinator 只接收结构化摘要而非原始网页内容，从而保持 context window 高效利用Harness Context Window Management。如果 subagent 返回完整页面内容，coordinator 的 context window 会在并发时更快被填满，反而抵消并发收益。
 
-3. **MicroVM 隔离是并发的物理基础[Multi Agent Context Isolation](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-context-isolation.md)**：每个 research subagent 在独立 MicroVM 中运行，拥有独立 Chromium 实例和独立 session_id。这不仅消除了并发 subagent 间的状态共享和互相干扰，还使调试可重复——每个 MicroVM 的状态是隔离的，不会因其他 subagent 的操作而改变。AgentCore Runtime 的 ARM64 容器架构进一步将这种隔离扩展到运行时长 8 小时的会话级别。
+3. **MicroVM 隔离是并发的物理基础Multi Agent Context Isolation**：每个 research subagent 在独立 MicroVM 中运行，拥有独立 Chromium 实例和独立 session_id。这不仅消除了并发 subagent 间的状态共享和互相干扰，还使调试可重复——每个 MicroVM 的状态是隔离的，不会因其他 subagent 的操作而改变。AgentCore Runtime 的 ARM64 容器架构进一步将这种隔离扩展到运行时长 8 小时的会话级别。
 
-4. **Memory 的"主动提取"vs"原始存储"陷阱**：AgentCore Memory 必须配置至少一个 extraction strategy 才能实现真正的长期 recall。如果未配置，`create_event` 只存储原始事件，不提取可用于检索的洞察[Agent Memory Substrate Three Layer](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-substrate-three-layer.md)。这意味着 Memory 组件在未配置 extraction strategy 时形同虚设——看似存储了信息，实则无法在后续会话中被检索。这是该框架最容易被忽视的配置陷阱。
+4. **Memory 的"主动提取"vs"原始存储"陷阱**：AgentCore Memory 必须配置至少一个 extraction strategy 才能实现真正的长期 recall。如果未配置，`create_event` 只存储原始事件，不提取可用于检索的洞察Agent Memory Substrate Three Layer。这意味着 Memory 组件在未配置 extraction strategy 时形同虚设——看似存储了信息，实则无法在后续会话中被检索。这是该框架最容易被忽视的配置陷阱。
 
-5. **框架无关 + 模型无关降低锁定风险**：AgentCore 工具集（Browser MicroVM、Code Interpreter、Memory）在不同模型间行为一致[Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)。切换模型只需替换一行 model 调用代码，AgentCore 工具保持不变。这种设计使团队在评估不同模型供应商时可以保持基础设施不变，降低了厂商锁定风险。
+5. **框架无关 + 模型无关降低锁定风险**：AgentCore 工具集（Browser MicroVM、Code Interpreter、Memory）在不同模型间行为一致Multi Agent Orchestration。切换模型只需替换一行 model 调用代码，AgentCore 工具保持不变。这种设计使团队在评估不同模型供应商时可以保持基础设施不变，降低了厂商锁定风险。
 
 ---
 
@@ -163,7 +163,7 @@ Runtime 关键能力：
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- MOC
 
 ---
 

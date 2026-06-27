@@ -16,7 +16,7 @@
 # 阿里云CIO：AI产研效能规模化提升
 阿里云 CIO 蒋林泉团队一年实战复盘：前端有效代码 3x、后端 2x、缺陷率-30%/-55%，在不增人力前提下实现 。
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 ## 评分
 | 维度 | 分数 |
 |------|------|

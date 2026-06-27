@@ -44,7 +44,7 @@ MCP（ Model Context Protocol）服务正在成为下一个 OAuth 式的攻击�
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens 1](../ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes)
 - [Pixel 10 Zero Click Exploit Chain](../ch12-053-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes)
 - [New Lock](../ch01-681-the-new-ai-lock-in)
-- [How To Calculate The Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
+- How To Calculate The Inference Efficiency Ratio
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thehackernews-com-the-new-phishing-click-how-oauth.md)
 

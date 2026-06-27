@@ -82,21 +82,21 @@ AutoClaw 目前仍处于早期阶段，建议持续关注：
 - 更多办公工具（钉钉、企业微信）的接入支持
 
 ## 相关实体
-- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Hermes Agent 记忆系统深度拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-vs-openclaw.md)
+- Coding Harness 工程本质
+- [Hermes Agent 记忆系统深度拆解](../ch04-068-hermes-agent-记忆系统深度拆解/)
 
-- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](https://github.com/QianJinGuo/wiki/blob/main/entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验.md)
-- [我给Hermes配了4个Agent，真正有用的是这些事](https://github.com/QianJinGuo/wiki/blob/main/entities/我给hermes配了4个agent真正有用的是这些事.md)
-- [AIAIGC峰会嘉宾阵容](https://github.com/QianJinGuo/wiki/blob/main/entities/aiaigc-summit-guest-lineup.md)
-- [Hermes Agent vs OpenClaw 对比分析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-vs-openclaw-comparison.md)
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-comprehensive-guide-32k-chars.md)
-- [OpenCLAW 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-comprehensive-guide.md)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-agent-observability-session-logs-otel-sls.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-reliability-engineering-skillify-continuous-improvement.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch01-079-特斯拉百万年薪招数据标注员-朝九晚五-无需ai经验/)
+- [我给Hermes配了4个Agent，真正有用的是这些事](../ch01-065-我给hermes配了4个agent-真正有用的是这些事/)
+- [AIAIGC峰会嘉宾阵容](../ch04-416-aiaigc峰会嘉宾阵容/)
+- [Hermes Agent vs OpenClaw 对比分析](../ch04-188-hermes-agent-为什么火了-和-openclaw-龙虾比一比/)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch04-429-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [OpenCLAW 完全指南](../ch04-199-openclaw-完全指南/)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch04-338-你的-ai-agent-真的在受控运行吗/)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群/)
+- [Agent 上下文窗口管理对比](../ch04-149-agent-上下文窗口管理对比/)
+- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制/)
+- MOC
 
 ---
 

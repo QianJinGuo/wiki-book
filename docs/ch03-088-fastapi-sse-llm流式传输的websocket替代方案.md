@@ -68,7 +68,7 @@ async def event_generator():
 ❌ **用长轮询**：仅作为无 SSE/WebSocket 支持的老旧系统兼容方案   ^[https://mp.weixin.qq.com/s/7FWjN0GDBgVyvEDiaC1AMQ]
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov)
 - [Thinking Machines 交互模型（Interaction Models）](../ch01-510-thinking-machines-interaction-models-ai-cold)

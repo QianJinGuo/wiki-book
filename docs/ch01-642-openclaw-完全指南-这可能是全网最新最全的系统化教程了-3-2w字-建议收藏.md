@@ -13,7 +13,7 @@
 - [what it feels like to work with mythos](../ch01-842-what-it-feels-like-to-work-with-mythos)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- MOC
 ## 深度分析
 
 source: wechat

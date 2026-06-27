@@ -19,7 +19,7 @@ class PersonInfo(BaseModel):
     age: int | None = None
     occupation: str | None = None
 ```
-字段类型与 `required` 语义映射为 JSON Schema 发给模型；模型被约束在 Schema 内生成，降低幻觉字段与格式错误 。 See also [Agent Harness Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
+字段类型与 `required` 语义映射为 JSON Schema 发给模型；模型被约束在 Schema 内生成，降低幻觉字段与格式错误 。 See also [Agent Harness Architecture](../ch04-207-agent-harness-架构/)
 
 ### 方式二：JSON Schema dict
 ```python
@@ -91,7 +91,7 @@ Agent Framework 的 structured output 本质上是把 LLM 的自由文本输出*
 **4. 换 Provider 前验证 structured output 支持。** 这是跨云/跨厂商迁移时的隐性风险点，需要在架构选型阶段纳入评估。
 ## 相关实体
 
-- [announcing genkit middleware](https://github.com/QianJinGuo/wiki/blob/main/entities/developers.googleblog-announcing-genkit-middleware-intercept-extend-and-harden-y.md)
+- [announcing genkit middleware](../ch03-077-announcing-genkit-middleware/)
 
 ---
 

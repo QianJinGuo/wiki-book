@@ -21,11 +21,11 @@ CDK Mixins 的核心价值在于**解耦抽象与实现**，彻底解决了 CDK 
 4. **合理选择行为控制模式**：`graceful`（默认，静默跳过）、`requireAll()`（任一不支持则抛错）、`requireAny()`（全不支持才抛错）三种模式分别适用于不同场景——安全策略类用 `requireAll()`，可选功能类用 `requireAny()` 。
 5. **分离 Cfn Property Mixin 的使用场景**：对于 L2 构造的底层属性覆盖，使用 `@aws-cdk/cfn-property-mixins` 包提供的类型安全回退方案，而非直接操作底层 CloudFormation 属性 。
 ## 相关实体
-- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Re](https://github.com/QianJinGuo/wiki/blob/main/entities/announcing-aws-cdk-mixins-composable-abstractions-for-aws-re.md)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](https://github.com/QianJinGuo/wiki/blob/main/entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
-- [Introducing Claude Platform On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-platform-on-aws.md)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](https://github.com/QianJinGuo/wiki/blob/main/entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for--2.md)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](https://github.com/QianJinGuo/wiki/blob/main/entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-.md)
+- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Re](../ch11-015-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r/)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](../ch01-051-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
+- [Introducing Claude Platform On Aws](../ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](../ch11-197-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
 

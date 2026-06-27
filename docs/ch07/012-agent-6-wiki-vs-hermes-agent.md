@@ -137,17 +137,17 @@ Hermes 当前已经实现了**原始数据派的核心能力**：
 - **vs `hermes-agent-memory-system-openclaw-comparison`**：原 entity 侧重 **Hermes vs OpenClaw 记忆观对比**，本文侧重**全行业 6 流派 + Hermes 启示**
 
 ## 相关实体
-- [Hermes Agent 12 Layer Full Configuration Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-12-layer-full-configuration-guide.md)
-- [Hermes Agent Memory System Three Layer Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-three-layer-architecture.md)
-- [Hermes Agent Self Evolving](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-self-evolving.md)
-- [Hermes Skill System](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system.md)
-- [Hermes 9 Module Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-9-module-architecture.md)
+- [Hermes Agent 12 Layer Full Configuration Guide](../ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队/)
+- [Hermes Agent Memory System Three Layer Architecture](../ch04-275-拆解-hermes-agent-的记忆系统-一个生产级-ai-记忆是怎么设计的/)
+- Hermes Agent Self Evolving
+- [Hermes Skill System](../ch01-298-hermes-agent-skill-系统深度解析/)
+- [Hermes 9 Module Architecture](../ch01-888-hermes-agent-9-模块系统架构/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)
 
-- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-wiki-9-step-auto-growing-knowledge-network.md)
+- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch03-053-hermes-wiki-实战-obsidian-hermes-agent-自动生长知识网络的-9-步搭建法/)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- MOC
 ## 深度分析
 
 ### 1. 流派之争的本质：人本设计 vs 系统本设计

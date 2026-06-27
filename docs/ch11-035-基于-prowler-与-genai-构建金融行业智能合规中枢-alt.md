@@ -65,7 +65,7 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 值得注意的是，该方案明确指出根据 Amazon Bedrock 的数据隐私合规标准，客户的提示词、安全扫描结果以及生成的报告都不会被用于训练底层的基座模型，确保金融级的数据隔离与隐私安全。 对于金融行业客户，这是一个关键的合规考量点——在使用云端 GenAI 服务时，需要确认服务提供商的数据处理政策，特别是涉及安全扫描结果等敏感信息时。
 
 ## 相关实体
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
+- Amazon Nova Multimodal Embeddings 制造业智能应用
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](../ch11-058-在-amazon-bedrock-上为-claude-应用设计稳健的-prompt-cache-策略)
@@ -83,7 +83,7 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/航班变更信息智能识别解决方案.md)
 
 - [CloudSectiDbits](../ch11-209-cloudsectidbits)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 ---
 

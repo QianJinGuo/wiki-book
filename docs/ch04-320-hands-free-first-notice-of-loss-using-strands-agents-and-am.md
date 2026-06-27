@@ -64,7 +64,7 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 
 ### 人在环路的位置重置
 
-方案的核心论点不是移除人，而是重置人参与的位置：从"验证摄入完整性"（重复性、注意力密集型）转向"应用判断做决策"（专家价值所在）。这呼应了 [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) 的核心主张——生产级 Agent 系统的关键不在智能本身，而在将人的注意力从低价值任务重新分配到高价值决策。
+方案的核心论点不是移除人，而是重置人参与的位置：从"验证摄入完整性"（重复性、注意力密集型）转向"应用判断做决策"（专家价值所在）。这呼应了 Production Agent Engineering 的核心主张——生产级 Agent 系统的关键不在智能本身，而在将人的注意力从低价值任务重新分配到高价值决策。
 
 ### 合规性内建于执行轨迹
 
@@ -85,10 +85,10 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 - [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](../ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客) — Strands SDK 企业级方案
 - [Agentcore Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施) — AgentCore 工程化
 - [Aws Bedrock Agentcore Doris Mcp Server](../ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式) — AgentCore + MCP Server
-- [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统
-- [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
-- [Ai Safety Governance](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-safety-governance.md) — AI 安全治理
-- [Aws Ai Services](https://github.com/QianJinGuo/wiki/blob/main/concepts/aws-ai-services.md) — AWS AI 服务
+- Autonomous Agent Systems — 自主 Agent 系统
+- Agent Deployment Strategy — Agent 部署策略
+- Ai Safety Governance — AI 安全治理
+- Aws Ai Services — AWS AI 服务
 
 ---
 

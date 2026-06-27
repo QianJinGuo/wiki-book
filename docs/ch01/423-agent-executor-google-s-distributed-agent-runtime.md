@@ -16,16 +16,16 @@
 - In this blog, we'll share more about Agent Executor and how you can get started.
 
 ## 相关实体
-- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-executor-googles-distributed-agent-runtime-da1bb4.md)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
-- [Anthropic Google Agent Skills Design Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-google-agent-skills-design-patterns.md)
+- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch04-434-agent-executor-google-s-distributed-agent-runtime/)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04-321-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90/)
+- [Anthropic Google Agent Skills Design Patterns](../ch04-178-从-anthropic-到-google-agent-skills-进入设计模式阶段/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
 
-- [Design Md Google Stitch Voltagent Ai Design Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/design-md-google-stitch-voltagent-ai-design-agent.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [Design Md Google Stitch Voltagent Ai Design Agent](../ch04-074-design-md-ai-设计-agent-的视觉约束对齐文件-google-stitch-voltagent/)
+- MOC
 ## 深度分析
 
 ### 1. 问题定位：长时运行 Agent 的运维困境

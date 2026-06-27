@@ -175,18 +175,18 @@ bootstrap → spec-lint → build → lint → unit-test → ac-coverage → int
 
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
-| [Ssd Spec Driven Development Harness Asd Shuge 2026 06 17](https://github.com/QianJinGuo/wiki/blob/main/entities/ssd-spec-driven-development-harness-asd-shuge-2026-06-17.md) | **同作者昨日（6/17）ASD 实战文** | 116 行深度文档：4 条设计约束 + ASD 三层架构 + 8 步闸门管道 + 5 Agent Skill；本文是其次日（6/18）的反思篇，专攻"缝合怪识别 + 减法决策论" |
-| [Openspec 四步法深度复盘 流程完整不等于代码正确](https://github.com/QianJinGuo/wiki/blob/main/entities/openspec-四步法深度复盘-流程完整不等于代码正确.md) | **同主题批判视角** | OpenSpec 流程完整 ≠ 代码正确（与本文"流程完整不等于工程有效"同脉） |
-| [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](https://github.com/QianJinGuo/wiki/blob/main/entities/three-tools-comet-openspec-superpowers-ai-coding-shuge-2026-06-17.md) | **同作者 6/17 三件套** | 术哥 6/17 OpenSpec+Superpowers+Comet 三件套（420 行）；与本文 6/18 OpenSpec+Superpowers **主动下线**形成强烈对照 — 同作者 24 小时内从"整合"到"拆分"的决策弧 |
-| [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](https://github.com/QianJinGuo/wiki/blob/main/entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md) | **同三件套范式** | gstack + Superpowers + OpenSpec 三器合一工程化（114 行） |
-| [Ai Production Development Workflow Openspec Superpowers Gstack](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-production-development-workflow-openspec-superpowers-gstack.md) | **gstack 三件套** | 同上 gstack 三件套另一角度（233 行） |
-| [Claude Code Superpowers Workflow By Xinlingyuanyuanyuan](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-superpowers-workflow-by-xinlingyuanyuanyuan.md) | **Superpowers 单独实战** | Superpowers 工作流详细解读（无 OpenSpec） |
-| [Claude Code Skills Superpowers Practice](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-superpowers-practice.md) | **Superpowers 技能实践** | Superpowers Skills 实践 |
-| [Spec Kit Bmad Sdd Practice Yexiaocha](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-kit-bmad-sdd-practice-yexiaocha.md) | **Spec-Kit + BMAD** | Spec-Kit + BMAD SDD 实践（不同 SDD 流派） |
-| [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md) | **Spec-as-AIOS** | 高德 Spec-as-AIOS 反熵架构（Spec 即操作系统的不同视角） |
-| [Openspec Spec Driven Development Trae Solo](https://github.com/QianJinGuo/wiki/blob/main/entities/openspec-spec-driven-development-trae-solo.md) | **OpenSpec 单独实战** | OpenSpec + TRAE 单独使用 |
-| [Harness Engineering Alibaba Java Case Study](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-alibaba-java-case-study.md) | **阿里 Harness 工程** | 阿里 Harness 工程实践（与 SDD 互补） |
-| [Harness Pilot Claude Code Plugin Yangtong 2026 06 17](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-pilot-claude-code-plugin-yangtong-2026-06-17.md) | **Harness Pilot** | Claude Code Harness 插件 |
+| [Ssd Spec Driven Development Harness Asd Shuge 2026 06 17](../ch05-045-ssd-spec-驱动开发实战-从四条约束到-asd-harness-的工程落地/) | **同作者昨日（6/17）ASD 实战文** | 116 行深度文档：4 条设计约束 + ASD 三层架构 + 8 步闸门管道 + 5 Agent Skill；本文是其次日（6/18）的反思篇，专攻"缝合怪识别 + 减法决策论" |
+| [Openspec 四步法深度复盘 流程完整不等于代码正确](../ch05-046-openspec-四步法深度复盘-流程完整-代码正确/) | **同主题批判视角** | OpenSpec 流程完整 ≠ 代码正确（与本文"流程完整不等于工程有效"同脉） |
+| [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](../ch01-176-三器合一-comet-openspec-superpowers-用文件系统给-ai-编程上工程纪律-术哥源/) | **同作者 6/17 三件套** | 术哥 6/17 OpenSpec+Superpowers+Comet 三件套（420 行）；与本文 6/18 OpenSpec+Superpowers **主动下线**形成强烈对照 — 同作者 24 小时内从"整合"到"拆分"的决策弧 |
+| [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](../ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战/) | **同三件套范式** | gstack + Superpowers + OpenSpec 三器合一工程化（114 行） |
+| [Ai Production Development Workflow Openspec Superpowers Gstack](../ch05-019-ai-production-development-workflow-openspec-superpowers-gsta/) | **gstack 三件套** | 同上 gstack 三件套另一角度（233 行） |
+| [Claude Code Superpowers Workflow By Xinlingyuanyuanyuan](../ch01-775-给-claude-code-装上-超能力-它干活比我还靠谱/) | **Superpowers 单独实战** | Superpowers 工作流详细解读（无 OpenSpec） |
+| [Claude Code Skills Superpowers Practice](../ch01-408-claude-code-skills-superpowers-practice/) | **Superpowers 技能实践** | Superpowers Skills 实践 |
+| [Spec Kit Bmad Sdd Practice Yexiaocha](../ch04-096-spec-kit-vs-bmad-ai-原生-sdd-双框架实战对比-叶小钗重构迁移案例/) | **Spec-Kit + BMAD** | Spec-Kit + BMAD SDD 实践（不同 SDD 流派） |
+| [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05-013-spec-as-aios-ai-native-全栈交付的抗熵架构-高德技术系列第二期/) | **Spec-as-AIOS** | 高德 Spec-as-AIOS 反熵架构（Spec 即操作系统的不同视角） |
+| [Openspec Spec Driven Development Trae Solo](../ch05-023-openspec-规范驱动开发-sdd-框架-proposal-design-tasks-specs-四类文档意图锁/) | **OpenSpec 单独实战** | OpenSpec + TRAE 单独使用 |
+| [Harness Engineering Alibaba Java Case Study](../ch05-008-阿里工程师-harness-工程化实践-双案例合并/) | **阿里 Harness 工程** | 阿里 Harness 工程实践（与 SDD 互补） |
+| [Harness Pilot Claude Code Plugin Yangtong 2026 06 17](../ch04-331-harness-pilot-claude-code-插件的项目规范预验证与-agent-协作框架/) | **Harness Pilot** | Claude Code Harness 插件 |
 
 ## 八、关键金句（直接引用）
 
@@ -235,7 +235,7 @@ ASD ⑤ 注入点的核心洞察：**verification 不能让 Agent 自查**。Age
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openspec-superpowers-decommissioning-frankenstein-test-three-questions-shuge-2026-06-18.md)
 
 **同作者系列**：
-- 03 篇（SSD 实战 / 6/17）：[Ssd Spec Driven Development Harness Asd Shuge 2026 06 17](https://github.com/QianJinGuo/wiki/blob/main/entities/ssd-spec-driven-development-harness-asd-shuge-2026-06-17.md)
+- 03 篇（SSD 实战 / 6/17）：[Ssd Spec Driven Development Harness Asd Shuge 2026 06 17](../ch05-045-ssd-spec-驱动开发实战-从四条约束到-asd-harness-的工程落地/)
 - 04 篇（本反思 / 6/18）：本文
 - 预告：05 篇 — 业界工具全景对比（Spec Kit / OpenSpec / Kiro / Plan Mode）+ 下线 OpenSpec 的完整决策过程
 

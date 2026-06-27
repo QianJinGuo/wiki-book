@@ -10,17 +10,17 @@
 - Source: https://aws.amazon.com/blogs/machine-learning/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock/
 
 ## 相关实体
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md)
-- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-agentcore-adds-quality-evaluations-and-policy-controls-for-deploying-trusted-ai-agents.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/strands-agents-sdk-build-analytics-layer-vqr-amazon-bedrock-practice.md)
-- [Automate Schema Generation for Intelligent Document Processing](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-schema-generation-for-intelligent-document-processing.md)
-- [Navigating EU AI Act Requirements for LLM Fine-Tuning](https://github.com/QianJinGuo/wiki/blob/main/entities/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-api-security-guide.md)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚/)
+- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch11-043-amazon-bedrock-agentcore-为部署可信人工智能代理增加了质量评估和策略控制-亚马逊aws官方博/)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch11-076-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改/)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的/)
+- [Automate Schema Generation for Intelligent Document Processing](../ch11-157-automate-schema-generation-for-intelligent-document-processi/)
+- [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01-330-navigating-eu-ai-act-requirements-for-llm-fine-tuning/)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级/)
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
+- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南/)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- MOC
 ## 深度分析
 ### 1. 为什么金融文档处理是 OCR 的死亡区
 传统 OCR 将文档视为图像，逐行识别字符，忽略结构关系。金融文档（资产负债表、SEC 文件、审计报告）的复杂性在于：合并单元格的表格、多栏布局且栏间相互引用、依赖上下文的语义信息（如"去年净利润"需要结合报表周期理解）。单一 OCR 错误会在关联计算中逐级放大，导致系统性分析偏差。

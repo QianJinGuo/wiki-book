@@ -50,10 +50,10 @@ Agent Teams（并行 + 共享 Context）
 ---
 
 ## 与 Wiki 已有内容的关系
-- 补充 [Agent 工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)的"架构演进路径"章节（增加量化数据）
-- 补充 [Hermes Agent 深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-deep-dive.md)的 Multi-Agent 协作部分（Google 论文 5 条结论）
-- 补充 [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)的错误放大效应数据
-- 补充 [Anthropic MCP 重新定义](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mcp-revisited.md)的 Skills 机制解析
+- 补充 [Agent 工程实践](../ch04-435-agent-engineering-principles-architecture-practice/)的"架构演进路径"章节（增加量化数据）
+- 补充 Hermes Agent 深度解析的 Multi-Agent 协作部分（Google 论文 5 条结论）
+- 补充 OpenClaw 架构解析的错误放大效应数据
+- 补充 [Anthropic MCP 重新定义](../ch07-044-anthropic-mcp-重新定义-tool-search-代码编排/)的 Skills 机制解析
 ---
 
 ## 来源
@@ -69,17 +69,17 @@ Agent Teams（并行 + 共享 Context）
 - **入库日期**：2026-04-28
 
 ## 相关实体
-- [Agent 时代架构师技能指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-era-architect-skills-guide.md)
-- [factory mission multi agent architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/factory-mission-multi-agent-architecture.md)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](https://github.com/QianJinGuo/wiki/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
-- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-context-management-architecture-patterns.md)
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-google-agent-skills-design-patterns.md)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](https://github.com/QianJinGuo/wiki/blob/main/entities/cli-mcp-sdk-agent-tool-selection.md)
+- [Agent 时代架构师技能指南](../ch04-346-agent-时代-我们架构师应该学什么/)
+- [factory mission multi agent architecture](../ch01-864-factory-mission-multi-agent-architecture/)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
+- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch04-460-智能体编排层中的上下文管理架构/)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04-178-从-anthropic-到-google-agent-skills-进入设计模式阶段/)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch07-053-cli系列④-选型cli-mcp还是api/)
 
-- [Data Agent Platform Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/data-agent-platform-architecture.md)
-- [Multi Agent Collaboration 2025 Top 10 Challenges](https://github.com/QianJinGuo/wiki/blob/main/queries/multi-agent-collaboration-2025-top-10-challenges.md)
-- [Autoresearch Next Phase Async Multi Agent Ai寒武纪](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-next-phase-async-multi-agent-ai寒武纪.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- Data Agent Platform Architecture
+- Multi Agent Collaboration 2025 Top 10 Challenges
+- [Autoresearch Next Phase Async Multi Agent Ai寒武纪](../ch01-793-autoresearch-next-phase-async-multi-agent-ai寒武纪/)
+- MOC
 ## 深度分析
 ### 从技术演进视角重新理解四种架构范式
 四种架构并非线性替代关系，而是针对不同问题域的正交解：

@@ -112,7 +112,7 @@ Aparna 提出的"Agent as new hire"管理框架的真正价值在于：它把一
 3. **投资跨领域判断力**：当执行工作被 Agent 接管，人类独有的价值在于跨领域整合判断——这是纯任务执行型 Agent 目前最弱的能力
 
 ## 相关概念
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — "可插拔>微调"洞察与 Harness Engineering 的核心命题完全一致：框架比模型更持久
+- Harness Engineering — "可插拔>微调"洞察与 Harness Engineering 的核心命题完全一致：框架比模型更持久
 - [Factory Mission](../ch01-864-factory-mission-multi-agent-architecture) — 多 Agent 协作框架 vs. Foundation Capital 的 Agent 主用户原则相互印证
 - [Autobrowse](../ch07-034-autobrowse-browserbase-persistent-skill) — 同样的"反馈循环=产品"洞察，Autobrowse 通过技能文件实现自我改进闭环
 - [Anthropic Claude Managed Agents](../ch01-677-anthropic) — Claude Managed Agents 的 Outcomes Loop 自我评估是"反馈闭环=产品"的具体工程实现

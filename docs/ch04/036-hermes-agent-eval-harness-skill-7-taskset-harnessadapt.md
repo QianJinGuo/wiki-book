@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 26.9KB | `entities/sota-ai-hermes-agent-eval-harness-skillopt-implementation.md`
 
-strategic_context: "[Frontier 1 — Harness/Skill 从个人能力到组织资产](https://github.com/QianJinGuo/wiki/blob/main/queries/research-frontier-map.md)"
+strategic_context: "Frontier 1 — Harness/Skill 从个人能力到组织资产"
 provenance_state: inferred
 ---
 ---
@@ -17,7 +17,7 @@ provenance_state: inferred
 
 ## 一、定位：从 SkillOpt 学术到 Eval Harness 工程
 
-[Skillopt](https://github.com/QianJinGuo/wiki/blob/main/entities/skillopt.md)（Microsoft + SJTU SkillOpt 论文 arxiv 2605.23904）提出了"把 SKILL.md 当成冻结模型之外的可训练状态"——通过 rollout、bounded edits 和 held-out validation gate 优化 agent skills。但 SkillOpt 学术框架在生产环境落地需要完整的工程实施：
+[Skillopt](../ch05-048-skillopt/)（Microsoft + SJTU SkillOpt 论文 arxiv 2605.23904）提出了"把 SKILL.md 当成冻结模型之外的可训练状态"——通过 rollout、bounded edits 和 held-out validation gate 优化 agent skills。但 SkillOpt 学术框架在生产环境落地需要完整的工程实施：
 
 1. **轨迹采集**：没有完整执行轨迹，reflection 只能看结果，无法诊断失败
 2. **可比较分数**：不同任务需要不同 verifier（精确/产物/执行/轨迹/策略/Judge）
@@ -252,22 +252,22 @@ regression_failures | rejection_reason | review_notes
 
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
-| [Skillopt](https://github.com/QianJinGuo/wiki/blob/main/entities/skillopt.md) | **SkillOpt 学术理论** | Microsoft + SJTU SkillOpt 训练范式（121 行）：把 SKILL.md 当可训练状态、bounded edits、held-out validation gate；本文是其在 Hermes Agent 的工程实施蓝图 |
-| [Skillopt Microsoft Train Skill Like Neural Network](https://github.com/QianJinGuo/wiki/blob/main/entities/skillopt-microsoft-train-skill-like-neural-network.md) | **SkillOpt 产品视角** | 别再手写 Skill！像神经网络一样训练（58 行）：SkillOpt 产品介绍 |
-| [Skillopt Microsoft Train Skill Hyman'S Blog](https://github.com/QianJinGuo/wiki/blob/main/entities/skillopt-microsoft-train-skill-hyman's-blog.md) | **SkillOpt Hyman 视角** | 微软等 SkillOpt 解读（64 行） |
-| [Hermes Agent Skill Crossover Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-skill-crossover-optimization.md) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
-| [Skill Self Evolution Three Approaches](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-self-evolution-three-approaches.md) | **Skill 自进化 3 路线** | Trace2Skill 归纳法 / EvoSkill 验证闭环 / SkillOpt 训练范式（45 行）；本文是 SkillOpt + EvoSkill 的工程化展开 |
-| [Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md) | **6 大自改进机制** | Agent 自改进的 6 大机制 |
-| [Ai Recursive Self Improvement Nanogpt Prime Intellect](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md) | **递归自改进** | nanogpt + Prime Intellect |
-| [Darwin Skill 2 Huashu](https://github.com/QianJinGuo/wiki/blob/main/entities/darwin-skill-2-huashu.md) | **Darwin Skill 2** | Darwin Skill 进化 |
-| [Embabel](https://github.com/QianJinGuo/wiki/blob/main/entities/embabel.md) | **Embabel** | Embabel 自进化框架 |
-| [Pith Train Agent Native Moe Training Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/pith-train-agent-native-moe-training-framework.md) | **Pith 训练框架** | Agent 原生 MoE 训练 |
-| [Hermes Agent 12 Layer Full Configuration Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-12-layer-full-configuration-guide.md) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
-| [Hermes 9 Module Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-9-module-architecture.md) | **Hermes 9 模块** | Hermes 9 模块架构 |
-| [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1aNu.md) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
-| [Slim Cuhk Skill Lifecycle Agentic Rl](https://github.com/QianJinGuo/wiki/blob/main/entities/slim-cuhk-skill-lifecycle-agentic-rl.md) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
-| [Deli Auto Research Skill V2 Continual Learning Self Improvement](https://github.com/QianJinGuo/wiki/blob/main/entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md) | **Deli Auto Research** | Continual learning + self-improvement |
-| [Claude Code Vs Hermes Session Vs Goal Lifecycle](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-vs-hermes-session-vs-goal-lifecycle.md) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |
+| [Skillopt](../ch05-048-skillopt/) | **SkillOpt 学术理论** | Microsoft + SJTU SkillOpt 训练范式（121 行）：把 SKILL.md 当可训练状态、bounded edits、held-out validation gate；本文是其在 Hermes Agent 的工程实施蓝图 |
+| [Skillopt Microsoft Train Skill Like Neural Network](../ch01-469-别再手写-skill-了-微软最新研究-像神经网络一样训练-skill/) | **SkillOpt 产品视角** | 别再手写 Skill！像神经网络一样训练（58 行）：SkillOpt 产品介绍 |
+| [Skillopt Microsoft Train Skill Hyman'S Blog](../ch01-813-微软等提出-skillopt-把-skill-当成模型一样训练/) | **SkillOpt Hyman 视角** | 微软等 SkillOpt 解读（64 行） |
+| [Hermes Agent Skill Crossover Optimization](../ch04-041-hermes-agent-skill-互优化-skillevolver-darwin-embodiskill-4/) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
+| [Skill Self Evolution Three Approaches](../ch07-061-skill自进化三路线-trace2skill归纳法-evoskill验证闭环-skillopt训练范式/) | **Skill 自进化 3 路线** | Trace2Skill 归纳法 / EvoSkill 验证闭环 / SkillOpt 训练范式（45 行）；本文是 SkillOpt + EvoSkill 的工程化展开 |
+| [Agent Self Improvement Six Mechanisms](../ch04-047-agent-自我改进的六条路/) | **6 大自改进机制** | Agent 自改进的 6 大机制 |
+| [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch01-362-ai科研超越人类-prime-intellect递归自改进实验/) | **递归自改进** | nanogpt + Prime Intellect |
+| [Darwin Skill 2 Huashu](../ch04-323-达尔文-skill-2-0正式开源发布-让你的所有skill左脚踩右脚实现自我进化/) | **Darwin Skill 2** | Darwin Skill 进化 |
+| [Embabel](../ch07-019-embabel/) | **Embabel** | Embabel 自进化框架 |
+| Pith Train Agent Native Moe Training Framework | **Pith 训练框架** | Agent 原生 MoE 训练 |
+| [Hermes Agent 12 Layer Full Configuration Guide](../ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队/) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
+| [Hermes 9 Module Architecture](../ch01-888-hermes-agent-9-模块系统架构/) | **Hermes 9 模块** | Hermes 9 模块架构 |
+| [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
+| [Slim Cuhk Skill Lifecycle Agentic Rl](../ch04-132-slim-港中文动态技能生命周期管理-arxiv-2605-10923/) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
+| [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch01-822-deepseek陈德里ai论文第二弹-从6分到8分-deliautoresearch-skill又进化了/) | **Deli Auto Research** | Continual learning + self-improvement |
+| [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch01-222-claude-code-vs-hermes-session-工程师-vs-goal-runtime/) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |
 
 ## 十四、关键金句
 

@@ -133,9 +133,9 @@ ListenHub 由一人 + Agents 维护 20 个 repo、覆盖全栈产出，证明 AI
 - **敢于押注下一代交互范式**：语音优先、极简界面等"反直觉"设计需要长期投入，但可能成为定义行业的关键判断。选择交互形态的战略赌注而非渐进优化。
 
 ## 相关实体
-- [Ai Native Team Building Failures Ceo Digital Twin Case](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-team-building-failures-ceo-digital-twin-case.md)
+- [Ai Native Team Building Failures Ceo Digital Twin Case](../ch04-080-ai-原生团队的脏乱差-ceo-数字分身失败案例与-ai-销售线索分配的兴衰/)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 ## 相关主题
 
 - Harness Engineering 核心模式 — 参考 `Harness Engineering Core Patterns`

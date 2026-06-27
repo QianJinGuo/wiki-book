@@ -11,7 +11,7 @@
 - [hermes新顶流agent skills闭环系统深度解析](../ch04-357-hermes新顶流agent-skills闭环系统深度解析)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-skills-source-code-analysis-shuge.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 ## 深度分析
 
 Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描 涉及agent领域的核心技术议题。

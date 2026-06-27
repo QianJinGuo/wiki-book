@@ -73,11 +73,11 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/consumer-confidence-economy-cnbc.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
+> 主题导航
 
-- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
-- [the token economy](https://github.com/QianJinGuo/wiki/blob/main/entities/the-token-economy.md)
-- [Consumer Confidence](https://github.com/QianJinGuo/wiki/blob/main/entities/consumer-confidence-us-economy-inflation-iran-war-trade-html.md)
+- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](../ch03-024-top-10-design-gadgets-for-creative-professionals-that-will-c/)
+- [the token economy](../ch01-696-the-token-economy/)
+- [Consumer Confidence](../ch01-909-consumer-confidence/)
 
 ---
 

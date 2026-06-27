@@ -18,7 +18,7 @@ AI 工程三阶段：
 
 ## 相关查询
 
-- [AWS AI Topic Map](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md) — AWS Bedrock、SageMaker、QuickSight 等服务支撑企业级 Agent 应用的完整生态 
+- AWS AI Topic Map — AWS Bedrock、SageMaker、QuickSight 等服务支撑企业级 Agent 应用的完整生态 
 
 ## AgentCore Managed Harness 核心功能
 ### 1. 模型随便换
@@ -149,7 +149,7 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 - [柚漫剧 AI 全流程提效拆解](../ch01-356-柚漫剧-ai-全流程提效拆解)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch04-156-agentcore-browser-os级操作-action-screenshot-reaction闭环)
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11-067-amazon-bedrock-model-inference-serverless-architecture-case)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
+- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 - [Code as Agent Harness 综述](../ch09-046-code-as-agent-harness-综述)
 - [harness-engineering-systematic-explainer](../ch05-036-harness-engineering-systematic-explainer)
 - [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图)
@@ -160,7 +160,7 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议)
 - [Your Chief Agent Operator Lobehub](../ch04-368-your-chief-agent-operator-lobehub)
 - [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](../ch04-051-当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- MOC
 
 ---
 

@@ -19,7 +19,7 @@ Hooks 将 Agent 工作流从"模型记住规则"变成"确定性自动化"——
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-hooks-programmable-workflow.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 ## 核心论点
 Hooks 将 Agent 工作流从"模型记住规则"变成"确定性自动化"——把可重复的规则从模型记忆里挪出来，搬进会在已知生命周期节点上自动运行的代码。
 > 提示词负责"引导"，Hooks 负责"那些每次都必须发生的行为"。

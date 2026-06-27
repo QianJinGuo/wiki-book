@@ -11,11 +11,11 @@
 - 来源：AWS Machine Learning Blog
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](https://github.com/QianJinGuo/wiki/blob/main/entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南/)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco/)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04-261-build-ai-agents-for-business-intelligence-with-amazon-bedroc/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/integrating-aws-api-mcp-server-with-amazon-quick-suite-using-amazon-bedrock-agen.md)
 
@@ -25,7 +25,7 @@
 
 本文展示的解决方案核心价值在于**将自然语言转换为结构化 AWS API 调用**的范式转变。传统 AWS 运维场景中，SRE 和 DevOps 工程师需要在多个界面之间切换——AWS Management Console、CLI 文档、各服务 Dashboard——并手动将业务需求翻译成正确的 API 语法。这种模式在大规模基础设施管理中效率极低，且容易出错。
 
-该方案采用 **Amazon Bedrock AgentCore Runtime** 作为运行时核心，配合 **Model Context Protocol (MCP)** 实现与 AWS API MCP Server 的集成。MCP 作为一种标准化协议，定义了 AI 模型与外部工具之间的通信规范，使得不同来源的工具可以被统一调用。这种设计模式与 [Agentic AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) 框架中的 tool-use 模式高度一致，体现了 AI Agent 架构中"规划-执行-反馈"的典型工作流。
+该方案采用 **Amazon Bedrock AgentCore Runtime** 作为运行时核心，配合 **Model Context Protocol (MCP)** 实现与 AWS API MCP Server 的集成。MCP 作为一种标准化协议，定义了 AI 模型与外部工具之间的通信规范，使得不同来源的工具可以被统一调用。这种设计模式与 Agentic AI 框架中的 tool-use 模式高度一致，体现了 AI Agent 架构中"规划-执行-反馈"的典型工作流。
 
 ### 身份认证与安全模型
 

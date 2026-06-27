@@ -28,8 +28,8 @@ Themida 的 VJCC handler 与 VMP 不同：条件先被求值并将结果写入 `
 5. **MBA 表达式已可被还原**：通过 MBA 表达式隐藏分支目标的技术现在可以被轻易还原（参见相关演示）。更强的技术（如 CodeDefender 的重保护层）使符号执行在通用情况下变得不可行。
 
 ## 相关实体
-- [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki/blob/main/entities/static-devirtualization-themida.md)
-- [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki/blob/main/entities/static-devirtualization-of-themida.md)
+- [Static Devirtualization of Themida](../ch12-017-static-devirtualization-of-themida/)
+- [Static Devirtualization of Themida](../ch12-054-static-devirtualization-of-themida/)
 
 ---
 

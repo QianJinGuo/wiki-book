@@ -29,11 +29,11 @@
 5. **通过 SaaS 平台构建 AI 能力输出路径**：Byte by Yum 不仅服务于内部餐厅，还面向客户的 AI 驱动工具平台，体现了大型餐饮集团将技术能力产品化的战略思路。
 
 ## 相关实体
-- [Yum Brands Ai Backbone Tech Chief](https://github.com/QianJinGuo/wiki/blob/main/entities/yum-brands-ai-backbone-tech-chief.md)
-- [Openai Realtime Api Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-realtime-api-architecture.md)
-- [Tencent Ai Infra Backend Engineer Huangrunpeng](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-ai-infra-backend-engineer-huangrunpeng.md)
-- [Notion Dev Platform](https://github.com/QianJinGuo/wiki/blob/main/entities/notion-dev-platform.md)
-- [Browser Harness Github](https://github.com/QianJinGuo/wiki/blob/main/entities/browser-harness-github.md)
+- [Yum Brands Ai Backbone Tech Chief](../ch03-116-yum-brands-tech-chief-on-building-its-ai-backbone/)
+- [Openai Realtime Api Architecture](../ch01-084-openai-realtime-api-架构首次公开/)
+- [Tencent Ai Infra Backend Engineer Huangrunpeng](../ch01-285-tencent-ai-infra-backend-engineer-s-guide-to-ai-system-hard/)
+- [Notion Dev Platform](../ch03-042-build-with-notion-s-developer-platform-notion/)
+- [Browser Harness Github](../ch05-066-browser-harness-github/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/819775.md)
 

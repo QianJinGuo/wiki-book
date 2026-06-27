@@ -108,16 +108,16 @@ def review_content(self, content):
 
 ## 相关实体
 
-- [Lessons From 2 Billion Agentic Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/lessons-from-2-billion-agentic-workflows.md) — 20 亿次工作流的三核心模式
-- [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) — AgentCore 工程化
-- [Hands Free First Notice Of Loss Using Strands Agents And Ama](https://github.com/QianJinGuo/wiki/blob/main/entities/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md) — 保险 FNOL 中的人类角色重置
-- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](https://github.com/QianJinGuo/wiki/blob/main/entities/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md) — AgentCore 维修助手的记忆层设计
-- [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) — 生产级 Agent 工程
-- [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
-- [Ai Safety Governance](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-safety-governance.md) — AI 安全治理
-- [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统
-- [Agent Framework Comparison](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-framework-comparison.md) — Agent 框架对比
-- [Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 多 Agent 编排
+- [Lessons From 2 Billion Agentic Workflows](../ch04-359-lessons-from-2-billion-agentic-workflows/) — 20 亿次工作流的三核心模式
+- [Agentcore Harness](../ch04-206-agentcore-managed-harness/) — AgentCore 工程化
+- [Hands Free First Notice Of Loss Using Strands Agents And Ama](../ch04-320-hands-free-first-notice-of-loss-using-strands-agents-and-am/) — 保险 FNOL 中的人类角色重置
+- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](../ch04-214-build-an-ai-powered-equipment-repair-assistant-using-amazon/) — AgentCore 维修助手的记忆层设计
+- Production Agent Engineering — 生产级 Agent 工程
+- Agent Deployment Strategy — Agent 部署策略
+- Ai Safety Governance — AI 安全治理
+- Autonomous Agent Systems — 自主 Agent 系统
+- Agent Framework Comparison — Agent 框架对比
+- Multi Agent Orchestration — 多 Agent 编排
 
 ---
 

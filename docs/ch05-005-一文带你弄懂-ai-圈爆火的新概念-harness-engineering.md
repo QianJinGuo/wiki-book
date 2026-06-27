@@ -298,24 +298,24 @@ OpenAI 那条铁律特别值得抄下来：「当出了问题，修复方案几�
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
 - [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
-- [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
+- Agent Harness Context Management Working Set
 - [Agent Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey)
 - [Agent Harness Architecture](../ch04-207-agent-harness-架构)
 - [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架)
-- [Harness Engineering 7 Layers Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
-- [Harness Context Window Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-context-window-management.md)
-- [Harness Tool Design Evolution](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-tool-design-evolution.md)
-- [Harness Loop Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-loop-architecture.md)
-- [Harness As Product Surface](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-as-product-surface.md)
-- [Harness Long Running Task](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-long-running-task.md)
-- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
+- Harness Engineering 7 Layers Framework
+- Harness Context Window Management
+- Harness Tool Design Evolution
+- Harness Loop Architecture
+- Harness As Product Surface
+- Harness Long Running Task
+- Context Engineering
 - [Agentic Harness Engineering Ahe](../ch04-212-ahe-agentic-harness-engineering)
-- [Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
-- [Evaluation Harness Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
-- [Harness Gate Evaluation](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-gate-evaluation.md)
+- Coding Harness Engineering
+- [Ahe Agentic Harness Engineering](../ch04-212-ahe-agentic-harness-engineering/)
+- Evaluation Harness Design
+- Harness Gate Evaluation
 - [harness engineering 的未来——什么会消失，什么不会](../ch05-071-harness-engineering-的未来-什么会消失-什么不会)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- MOC
 
 ---
 

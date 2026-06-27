@@ -144,7 +144,7 @@ Pi 的 read 截断时给 offset、edit 拒绝时说明原因（oldText 不唯一
 ## 相关
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pi-openclaw-coding-harness.md)
 ## 相关实体
-- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
+- Openclaw Prompt Context Harness
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
 - [Harness Engineering Long Term Agent Tasks](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧)

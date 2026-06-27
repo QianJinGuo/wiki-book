@@ -41,12 +41,12 @@ Mitiga 将云、 SaaS 、身份和 AI 遥测数据统一到单一取证系统的
 4. **以 90% 调查时间压缩为目标设计响应流程**： Mitiga 宣称的 90% 调查时间压缩背后需要 playbook 自动化和 AI 辅助取证，而非人工流程优化。团队应审视现有应急响应流程中哪些环节是纯人工的，这些环节在真正的实时攻击中必然成为瓶颈。
 
 ## 相关实体
-- [Fedora Hummingbird Brings The Container Security Model To Li](https://github.com/QianJinGuo/wiki/blob/main/entities/fedora-hummingbird-brings-the-container-security-model-to-li.md)
-- [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
-- [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](https://github.com/QianJinGuo/wiki/blob/main/entities/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md)
-- [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
-- [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [Fedora Hummingbird Brings The Container Security Model To Li](../ch12-008-fedora-hummingbird-brings-the-container-security-model-to-a/)
+- [Google Bigquery Threat Model](../ch01-644-bigquery-threat-model-report/)
+- [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](../ch01-038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize/)
+- [Building Blocks For Foundation Model Training And Inference On Aws](../ch11-117-building-blocks-for-foundation-model-training-and-inference/)
+- [Netflix Metadata Service Model Lifecycle Graph](../ch11-034-netflix-metadata-service-and-model-lifecycle-graph/)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-detection-and-response-aidr-a-zero-impact-operating-model.md)
 

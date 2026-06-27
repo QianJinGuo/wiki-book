@@ -184,7 +184,7 @@ Agent Team 的隐性成本容易在概念阶段被低估：
 ## 相关实体
 - [Four Sub Agent Patterns](../ch04-302-四种-sub-agent-模式)
 - [Minimax Agent Team Mavis Owner Worker Verifier](../ch04-137-一个-ai-还是不够的-minimax-agent-team-mavis)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch02-prompt/)
 - [Sub Agent Vs Agent Team Selection](../ch04-102-sub-agent-vs-agent-team-selection-guide)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-418-hermes-agent)
 

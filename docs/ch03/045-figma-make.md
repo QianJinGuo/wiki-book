@@ -38,11 +38,11 @@ Figma Make 新的本地代码库编辑功能，支持直接代码库连接和注
 
 4. **关注设计工具与代码库的双向同步机制。** Figma Make 支持将代码变更「粘贴」回 Figma 画布作为图层，这为设计-代码一致性维护提供了技术基础。团队应该建立设计源文件和代码的同步流程，避免两者随时间漂移
 
-5. **评估 Figma Make 与现有 [低代码/框架 Agent 路线](https://github.com/QianJinGuo/wiki/blob/main/entities/lowcode-framework-custom-agent-decision-framework-hello-agents.md) 的协同价值。** 如果组织已经在使用低代码或框架 Agent 构建内部工具，Figma Make 的设计优先编程能力可以作为这些 Agent 的上游输入源——设计师的视觉输出直接驱动代码生成，而非通过 prompt 工程触发 Agent
+5. **评估 Figma Make 与现有 [低代码/框架 Agent 路线](../ch04-354-低代码-agent-框架-agent-自研-agent-分别适合谁/) 的协同价值。** 如果组织已经在使用低代码或框架 Agent 构建内部工具，Figma Make 的设计优先编程能力可以作为这些 Agent 的上游输入源——设计师的视觉输出直接驱动代码生成，而非通过 prompt 工程触发 Agent
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 
 ---
 

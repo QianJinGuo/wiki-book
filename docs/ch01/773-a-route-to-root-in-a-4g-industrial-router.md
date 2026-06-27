@@ -27,11 +27,11 @@
 - **避免在设备中留下未文档化的后门账户**：这不仅是不良实践，在许多司法管辖区可能违法
 - **实施安全的默认配置**：新设备应强制要求用户更改默认密码，或在首次启动时进行安全配置向导
 ## 相关实体
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](https://github.com/QianJinGuo/wiki/blob/main/entities/www-wiz-io-mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised.md)
-- [Clinereleasesopen Sourceagentruntimesdk](https://github.com/QianJinGuo/wiki/blob/main/entities/clinereleasesopen-sourceagentruntimesdk.md)
+- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att/)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01-743-mini-shai-hulud-strikes-again-tanstack-more-npm-packages/)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch01-102-cline-releases-open-source-agent-runtime-sdk/)
 
 ---
 

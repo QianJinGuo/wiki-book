@@ -10,7 +10,7 @@
 
 **核心洞察**：Memento-Skills 把经验固化成 **skill（技能包）**，而非原始轨迹。Skill 是有 `SKILL.md`、可执行脚本、辅助 prompt、declarative spec 的真正可复用工件——这让经验从不可见的隐式行为变成可审计、可版本化、可测试的显式资产。
 
-这与 [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md) 中描述的 RAG/MSA 等记忆范式形成鲜明对比：RAG 擅长精确回溯，但 skill 不是检索出来的，是**生成出来并固化下来的**。
+这与 Context Engineering Three Memory Paradigms 中描述的 RAG/MSA 等记忆范式形成鲜明对比：RAG 擅长精确回溯，但 skill 不是检索出来的，是**生成出来并固化下来的**。
 
 ## Memento-Skills 五步闭环
 

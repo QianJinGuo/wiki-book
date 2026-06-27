@@ -69,7 +69,7 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](../ch11-058-在-amazon-bedrock-上为-claude-应用设计稳健的-prompt-cache-策略)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](../ch11-049-build-custom-code-based-evaluators-in-amazon-bedrock-agentco)- [aws graviton5 m9g/m9gd 实例 ga 公告](../ch11-087-aws-graviton5-m9g-m9gd-实例-ga-公告)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](../ch11-097-ec2-nat-实例选型与部署实践-aws-中国宁夏区域)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- MOC
 
 ---
 

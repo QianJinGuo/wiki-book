@@ -14,16 +14,16 @@
 - 小米SVOR
 - 视频消除三大顽疾
 ## 相关实体
-- [A2Rd Agentic Autoregressive Diffusion Long Video](https://github.com/QianJinGuo/wiki/blob/main/entities/a2rd-agentic-autoregressive-diffusion-long-video.md)
-- [Yumanju Ai Full Flow Efficiency](https://github.com/QianJinGuo/wiki/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
-- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md)
-- [腾讯研究院Ai速递 20260430](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯研究院ai速递-20260430.md)
-- [Gbrain Garry Tan Yanfa Zhili](https://github.com/QianJinGuo/wiki/blob/main/entities/gbrain-garry-tan-yanfa-zhili.md)
+- [A2Rd Agentic Autoregressive Diffusion Long Video](../ch04-410-a²rd-agentic-autoregressive-diffusion-for-long-video-consis/)
+- [Yumanju Ai Full Flow Efficiency](../ch01-356-柚漫剧-ai-全流程提效拆解/)
+- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](../ch01-158-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
+- [腾讯研究院Ai速递 20260430](../ch01-338-腾讯研究院ai速递-20260430/)
+- [Gbrain Garry Tan Yanfa Zhili](../ch01-333-yc-总裁开源了自己亲手写的-ai-agent-大脑-1-周就-1-万点赞/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cvpr-xiaomi-svor-video-masking.md)
 
-- [Joyai Echo Long Video Jd Qbitai](https://github.com/QianJinGuo/wiki/blob/main/entities/joyai-echo-long-video-jd-qbitai.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [Joyai Echo Long Video Jd Qbitai](../ch01-763-5分钟ai长视频不翻车-国产开源框架杀到全球第一梯队/)
+- MOC
 ## 深度分析
 ### 技术架构：从单点优化到系统协同
 SVOR的设计哲学并非追求单一指标的SOTA，而是**在不完美条件下保证可用性**。

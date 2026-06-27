@@ -66,16 +66,16 @@
 4. **长期**：构建可复现构建基础设施、零信任 CI/CD 体系
 
 ## 相关实体
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](https://github.com/QianJinGuo/wiki/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
-- [Restrict Access To Sensitive Documents In Your Amazon Q S3 Knowledge Bases](https://github.com/QianJinGuo/wiki/blob/main/entities/restrict-access-to-sensitive-documents-in-your-amazon-q-s3-knowledge-bases.md)
-- [Aws Cognito Multi Region Replication](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-cognito-multi-region-replication.md)
-- [Aws Transform Ezconvertbi Bi Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-transform-ezconvertbi-bi-migration.md)
-- [Amazon Bedrock Agentic Payments Guardrails](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-agentic-payments-guardrails.md)
-- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](../ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt/)
+- [Restrict Access To Sensitive Documents In Your Amazon Q S3 Knowledge Bases](../ch11-022-restrict-access-to-sensitive-documents-in-your-amazon-q-s3-k/)
+- [Aws Cognito Multi Region Replication](../ch11-070-amazon-cognito-多区域复制-跨区域用户认证韧性方案/)
+- [Aws Transform Ezconvertbi Bi Migration](../ch11-185-aws-transform-ezconvertbi-bi-migration/)
+- [Amazon Bedrock Agentic Payments Guardrails](../ch04-059-enable-safe-agentic-payments-with-built-in-guardrails-using/)
+- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](../ch11-127-基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-software-supply-chain-security-well-architected.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 ## 深度分析
 
 1. **临时凭证是供应链安全的基石**：Shai-Hulud 成功的核心原因是 long-term npm token 和 GitHub token 被窃取后可直接传播恶意代码。OIDC federation 让 CI/CD job 每次获取短期凭证，token 泄漏的窗口期从"永久"缩小到"本次构建"，从根本上限制了攻击者的横向移动能力。

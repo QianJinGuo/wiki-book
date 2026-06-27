@@ -11,7 +11,7 @@
 - [浏览器 agent 的失忆问题：autobrowse 如何让每次探索变成永久技能](../ch07-034-autobrowse-browserbase-persistent-skill)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/autobrowse-browser-agent-persistent-skills-sense-ai.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 ## 深度分析
 
 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能 涉及agent领域的核心技术议题。

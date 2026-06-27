@@ -21,18 +21,18 @@
 
 ## 与本文相关
 - [Claude Code Agent Engineering](../ch04-015-claude-code-的-agent-工程) — Claude Code工程设计
-- [Claude Code Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md) — Claude Code Prompt/Harness分析
+- Claude Code Prompt Context Harness — Claude Code Prompt/Harness分析
 - [Hermes Agent Deep Dive](../ch04-418-hermes-agent) — Anthropic的Self-Evolution对照
 -  — 详细访谈内容（raw）
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- Claude Code vs OpenClaw Agent 记忆系统对比
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09-039-claude-md-12-条规则-karpathy-扩展模板)
 - [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制)
-- [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-subagent-context-hygiene.md)
+- Claude Code Subagent 上下文卫生
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07-006-claude-code-skills-mcp-rules-source-analysis)
-- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
+- Claude Code 工具设计演化
 - [claude-code-agent-view](../ch09-001-claude-code-agent-view)
 - [Claude Opus 4.7 发布分析](../ch01-314-claude-opus-4-7-发布分析)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch01-677-anthropic)

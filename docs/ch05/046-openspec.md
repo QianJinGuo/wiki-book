@@ -56,7 +56,7 @@ OpenSpec 四步法构建了一条完整的文档链路：Proposal → Specs → 
 - **边界条件**：空指针、越界、类型转换错误往往藏在边缘路径
 - **并发处理**：竞态条件、死锁、线程安全——文本审查无法暴露
 - **性能问题**：时间复杂度、内存泄漏、资源未释放
-这些问题的共同点是：它们不会出现在文档里，但会出现在运行时。 See also [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
+这些问题的共同点是：它们不会出现在文档里，但会出现在运行时。 See also [Harness Engineering](../ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
 
 ### Verify 的定位偏差：暴露问题 ≠ 解决问题
 Verify 被设计为"surface issues"——暴露问题，而非"block progress"——阻塞进度。这个设计选择本身并无问题，但它释放了一个信号：**四步法不打算在代码质量上做强制约束**。

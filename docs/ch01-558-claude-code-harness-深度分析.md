@@ -57,13 +57,13 @@ Claude Code 实现了 fake_tool_injection 防御以污染训练数据，connecto
 
 4. **为 Sub-Agent 设计独立 Context 预算**：当多 Agent 协作时，强制每个 Agent 使用独立上下文预算，避免单一 Agent 的上下文膨胀拖垮整个系统。这是多 Agent 系统的必备隔离机制 。
 
-5. **在模型 API 层面防御蒸馏**：如果你的产品输出包含高价值推理过程，考虑实现 connector-text 摘要+签名机制，使外部调用无法获取完整推理链。这在 [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) 的安全设计中有类似体现 。
+5. **在模型 API 层面防御蒸馏**：如果你的产品输出包含高价值推理过程，考虑实现 connector-text 摘要+签名机制，使外部调用无法获取完整推理链。这在 Agent Harness Context Management Working Set 的安全设计中有类似体现 。
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-harness-deep-dive-founder-park.md)
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 
 ---
 

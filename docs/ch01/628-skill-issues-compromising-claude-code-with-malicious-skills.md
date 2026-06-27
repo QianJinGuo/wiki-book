@@ -7,17 +7,17 @@
 ## 核心要点
 - Published Time: Wed, 13 May 2026 16:58:06 GMT AI coding apps, such as Claude Code, codex, etc. are [becoming increasingly popular](https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-issues-compromising-claude-code-with-malicious-skills-agents.md)
-- [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-system-design-three-way-comparison.md)
-- [Claude Code Skills Mcp Rules Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
-- [Claude Code Skill Writing Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skill-writing-guide.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents](../ch09-084-skill-issues-compromising-claude-code-with-malicious-skills/)
+- [Skill System Design Three Way Comparison](../ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
+- [Claude Code Skills Mcp Rules Source Analysis](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
+- [Claude Code Skill Writing Guide](../ch07-020-claude-code-skill-md-写作指南/)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
 
-- [qwen code skill testing framework: recording, playback, and](https://github.com/QianJinGuo/wiki/blob/main/entities/qwen-code-skill-testing-framework-issue-2447.md)
+- [qwen code skill testing framework: recording, playback, and](../ch01-268-qwen-code-skill-testing-framework-recording-playback-and/)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- MOC
 ## 深度分析
 **Skill 文件本质上是可执行的 prompt 供应链**
 Skill 文件（`.md` 格式）通过 frontmatter 中的 `allowed-tools` 字段可以在用户不知情的情况下突破权限控制。这是 Claude Code 安全模型中最关键的绕过路径：正常情况下，Claude Code 的每次工具调用都会经过 LLM 的 reason 环节——LLM 能够识别恶意命令并拒绝执行。但 `allowed-tools` 动态上下文注入（`inject-dynamic-context`）机制允许将 Bash 命令直接写入技能描述中，绕过 LLM reason 直接执行。这意味着 skill 文件实际上是一个**隐式代码执行通道**，而非纯文本提示。

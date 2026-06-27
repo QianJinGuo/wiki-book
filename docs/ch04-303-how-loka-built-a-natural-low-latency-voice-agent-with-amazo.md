@@ -145,8 +145,8 @@ Loka 的架构设计考虑了大规模部署的需求：
 
 - [医疗预约 Agent](../ch04-470-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni) — Nova 2 Sonic 在医疗场景的应用
 - Voice Agent Architecture — 语音 Agent 架构设计
-- [Agent Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
+- Agent Harness Context Management — Agent 上下文管理
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/) — Harness 工程框架
 
 ## 参考
 

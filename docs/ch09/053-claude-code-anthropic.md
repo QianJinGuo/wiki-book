@@ -64,32 +64,32 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 - ⚠️ **需要额外配置**：大量二进制资产的游戏引擎、非 Git 版本控制、非工程师贡献内容
 
 ## 相关实体
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-tool-count-trap.md)
-- [claude-code-agent-view](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-view.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-ai-native-startup-handbook.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-20000-char-source-analysis.md)
-- [AutoResearch：多 Agent 自动化软件开发](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-multi-agent-software.md)
-- [Claude Opus 4.7 发布分析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-4-7-launch.md)
-- [Claude Code 设计原则与对照分析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture-analysis.md)
-- [Claude Managed Agents 官方 Harness 平台指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-guide.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台-v2.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-发布官方报告承认存在-3-处质量退化问题.md)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04-243-ai-agent工具数量陷阱-5个边界清楚的工具胜过20个模糊工具/)
+- [claude-code-agent-view](../ch09-001-claude-code-agent-view/)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-367-claude-code-harness-deep-understanding/)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch01-354-anthropic发布-ai原生创业公司-手册-涵盖全流程四大核心阶段-一人公司法典来了/)
+- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制/)
+- [AutoResearch：多 Agent 自动化软件开发](../ch09-030-autoresearch-多-agent-自动化软件开发/)
+- [Claude Opus 4.7 发布分析](../ch01-314-claude-opus-4-7-发布分析/)
+- [Claude Code 设计原则与对照分析](../ch01-403-claude-code-设计原则与对照分析/)
+- [Claude Managed Agents 官方 Harness 平台指南](../ch01-445-claude-managed-agents-官方-harness-平台指南/)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04-084-anthropic-官方技能最佳实践-14-个可复用的-agent-skills-设计模式/)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-126-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题/)
 
-- [Harness如何支撑Agent在生产环境稳定运行？](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-production-agent-engineering-deficit.md)
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch04-127-harness如何支撑agent在生产环境稳定运行/)
+> 主题导航
 
-- [Claude Code 源码深度解析（13 核心机制）](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-source-deep-dive-warrior.md)
-- [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-core-internals.md)
-- [柚漫剧 AI全流程提效拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/柚漫剧-ai全流程提效拆解-从单点提效到工程融合.md)
-- [Claude Code 可控性：软规则无法变成硬约束](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-governance-soft-rules.md)
-- [Claude Managed Agents 开发者指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-developer-guide.md)
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](https://github.com/QianJinGuo/wiki/blob/main/entities/cat-wu-claude-code-pm.md)
-- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
+- [Claude Code 源码深度解析（13 核心机制）](../ch01-231-claude-code-源码深度解析-13-核心机制/)
+- [Claude Code 源码核心机制详解](../ch01-162-claude-code-源码核心机制详解/)
+- [柚漫剧 AI全流程提效拆解](../ch01-645-柚漫剧-ai全流程提效拆解/)
+- [Claude Code 可控性：软规则无法变成硬约束](../ch09-067-claude-code-可控性-软规则无法变成硬约束/)
+- [Claude Managed Agents 开发者指南](../ch01-329-claude-managed-agents-开发者指南/)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人/)
+- Claude Code 工具设计演化
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- MOC
 ## 深度分析
 ### Agent 式搜索为何优于 RAG：代码库动态性的根本矛盾
 RAG 在大型代码库中的根本缺陷不是算法问题，而是信息论的必然：索引的离散性（embedding 向量）与代码库的连续性（每天几百次提交、重命名、删除）之间存在不可消除的张力。当工程师问「这个函数现在在哪里」，RAG 答案可能是两周前的快照，且没有任何提示告诉你它已经过期。  

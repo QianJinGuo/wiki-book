@@ -8,11 +8,11 @@
 - 来源：https://www.pymnts.com/news/ecommerce/2026/thrive-capital-bets-100-million-on-shopifys-ai-future/
 - 评分：v=7 c=8
 ## 相关实体
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki/blob/main/entities/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
-- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
-- [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
-- [Code Simulation For Enterprise Engineering Playerz](https://github.com/QianJinGuo/wiki/blob/main/entities/code-simulation-for-enterprise-engineering-playerz.md)
-- [Microsoft Is Quietly Shopping For An Openai Replac](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-is-quietly-shopping-for-an-openai-replac.md)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch01-040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f/)
+- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](../ch01-135-igor-babuschkin-seeks-up-to-1-billion-for-river-ai/)
+- [Amazon Turns Alexa Into Its Next Storefront](../ch01-050-amazon-turns-alexa-into-its-next-storefront/)
+- [Code Simulation For Enterprise Engineering Playerz](../ch01-119-code-simulation-for-enterprise-engineering-playerzero/)
+- [Microsoft Is Quietly Shopping For An Openai Replac](../ch01-036-microsoft-is-quietly-shopping-for-an-openai-replacement/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future.md)
 

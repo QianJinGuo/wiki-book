@@ -14,12 +14,12 @@ Claude Code、Amazon Bedrock、Kiro CLI
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/easy-deployment-of-claude-agent-sdk-in-production/)
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
-- [Claude Code Agent 工程设计](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-engineering.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md)
-- [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](https://github.com/QianJinGuo/wiki/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
-- [Claude Code Agent View](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-view.md)
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/product-ad-review-agent-with-strands-sdk-bedrock.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch01-280-anthropic-官方-agent-harness-平台-claude-managed-agents-完整指南/)
+- [Claude Code Agent 工程设计](../ch04-015-claude-code-的-agent-工程/)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-170-深入理解-claude-code-源码中的-agent-harness-构建之道/)
+- [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群/)
+- [Claude Code Agent View](../ch09-001-claude-code-agent-view/)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](../ch11-078-基于-strands-agents-sdk-和-amazon-bedrock-agentcore-的商品广告图审查-ag/)
 
 ## 深度分析
 ### 1. AgentCore Runtime 的 microVM 隔离架构与 8 小时执行窗口

@@ -11,11 +11,11 @@
 - CMU + 哈佛大学联合研究
 - 8B 参数 Qwen3-VL 后训练模型超越闭源 GPT-5 和 Gemini-3.1-Pro
 ## 相关实体
-- [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/cvpr-2026-highlight让ai像电影人一样看视频8b小模型反超gpt-5与gemini-31-pro.md)
-- [Cvpr 2026 Highlight 清华打破多模态音频生成的通才困境Omni2Sound 音频基础模型开源](https://github.com/QianJinGuo/wiki/blob/main/entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
-- [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
-- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](https://github.com/QianJinGuo/wiki/blob/main/entities/快手首个打工人agent来了工作秒变桌面软件零代码不烧token.md)
+- [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](../ch01-016-cvpr-2026-highlight-让ai像电影人一样-看-视频-8b小模型反超gpt-5与gemini-3-1-p/)
+- Cvpr 2026 Highlight 清华打破多模态音频生成的通才困境Omni2Sound 音频基础模型开源
+- [Three Years Gpt3 Gemini3 Mollick](../ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测/)
+- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
+- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch01-055-快手首个打工人agent来了-工作秒变桌面软件-零代码-不烧token/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)
 
@@ -37,7 +37,7 @@ CHAI 的创新在于构建了一套完整的精准视频语言方案，由四块
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-ecosystem.md)
+> 主题导航
 
 ---
 

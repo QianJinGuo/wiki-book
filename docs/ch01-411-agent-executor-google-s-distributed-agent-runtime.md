@@ -25,7 +25,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
 
 - [Design Md Google Stitch Voltagent Ai Design Agent](../ch04-074-design-md-ai-设计-agent-的视觉约束对齐文件-google-stitch-voltagent)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- MOC
 ## 深度分析
 
 ### 1. 问题定位：长时运行 Agent 的运维困境

@@ -11,7 +11,7 @@
 - [claude opus 4.8 系统卡片深度分析](../ch01-898-claude-opus-4-8-系统卡片深度分析)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- MOC
 ## 摘要
 
 Anthropic 于 2026-04-16 发布 Opus 4.7，定价保持 $5/$25 per million tokens 不变，定位为公开可用的最强通用模型。本文汇总 Opus 4.7 相对 4.6 的核心能力升级（自我验证、视觉、指令遵循、长程记忆、金融/法律知识工作），Claude Code 配套新功能（xhigh effort、auto mode、`/ultrareview`、`/fewer-permission-prompts`、`/focus`、Recaps），以及 Anthropic 官方推荐的 Claude Code 最佳实践。

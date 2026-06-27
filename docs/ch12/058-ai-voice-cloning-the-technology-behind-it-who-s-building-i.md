@@ -100,12 +100,12 @@ Voice cloning 可以用于：
 - 特殊口音
 - 跨语言切换
 ## 相关实体
-- [Openai Quietly Bought Voice Cloning Star](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-quietly-bought-voice-cloning-star.md)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Scammers Send Physical Phishing Letters To Steal Ledger Wall](https://github.com/QianJinGuo/wiki/blob/main/entities/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [Openai Quietly Bought Voice Cloning Star](../ch01-526-openai-quietly-bought-voice-cloning-startup-weights-gg/)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
+- [Scammers Send Physical Phishing Letters To Steal Ledger Wall](../ch12-077-scammers-send-physical-phishing-letters-to-steal-ledger-wall/)
+- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md)
 

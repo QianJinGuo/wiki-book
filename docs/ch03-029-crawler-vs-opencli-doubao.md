@@ -21,7 +21,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/crawler-vs-opencli-doubao.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
+- MOC
 ## 深度分析
 
 这篇文章揭示了网页数据采集领域一次根本性的范式转移。传统爬虫的核心运作逻辑是"伪装成浏览器"，通过 HTTP 请求模拟或无头浏览器逆向目标网站，这个过程本质上是与目标站点反爬机制持续对抗的零和博弈——每次页面改版、接口参数变化或反爬策略升级都需要人工迭代维护，成本极高。而 OpenCLI 通过复用浏览器内部原生会话直连网站后端 API，从根源上规避了反爬问题：所有请求与用户手动操作发起的请求完全一致，攻击面从"破解反爬规则"变成了"是否有权限操作自己的账号"。这是两种截然不同的安全模型——外部模拟 vs 内部复用。

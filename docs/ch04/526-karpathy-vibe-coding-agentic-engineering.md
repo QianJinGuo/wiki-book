@@ -47,8 +47,8 @@ Agentic Engineering 需要接口级约定：Agent 能看到哪些上下文、能
 验证能力（测试、编译、静态扫描、安全审查、运行回放）决定了 Agent 在真实工程系统中能走多远。  
 
 ## 关联条目
-- [同主题入库（宝玉解读、不同角度）](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
-- [Harness Engineering — Agent 工程化落地的实践体系](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-framework.md)
+- [同主题入库（宝玉解读、不同角度）](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Harness Engineering — Agent 工程化落地的实践体系](../ch05-049-harness-engineering-系统梳理/)
 - [Vibe Coding 主题入库文章](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-vibe-coding-to-agentic-engineering.md)
 
 ## 深度分析
@@ -66,15 +66,15 @@ Agentic Engineering 需要接口级约定：Agent 能看到哪些上下文、能
 5. **区分"品味问题"和"能力问题"来调整优化方向：** 如果 Agent 生成的代码能跑但臃肿、缺乏优雅抽象，这大概率是因为审美和简洁性尚未进入 RL 奖励环境，而非模型理解力不足。对此的应对策略是：建立代码审查规范，用 human-in-the-loop 弥补 RL 训练的空缺，而不是指望模型自我进化。  
 
 ## 相关实体
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v3.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
 
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](https://github.com/QianJinGuo/wiki/blob/main/entities/从vibe-coding到agentic-engineering重构后台开发全流程.md)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04-366-从vibe-coding到agentic-engineering-重构后台开发全流程/)
 
 ---
 

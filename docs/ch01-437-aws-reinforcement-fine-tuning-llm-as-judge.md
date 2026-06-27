@@ -22,8 +22,8 @@ Reinforcement Fine-Tuning can use any reward signal, straightforward hand‑craf
 
 - [stop hand-tuning kernels: how neuron agentic development acc](../ch04-293-stop-hand-tuning-kernels-how-neuron-agentic-development-acc)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
+- MOC
+- MOC
 ## 深度分析
 
 RLAIF 本质上是用一个 LLM 裁判替代手工设计的奖励函数，但其核心价值在于引入了**多维度推理评估能力**。传统 RLVR 依赖精确的规则匹配（如 substring matching），只能捕捉表面特征；而 LLM-as-a-judge 能够跨越正确性、语气、安全性、相关性等多个维度进行上下文感知评分。AWS 的实验证明，当奖励信号模糊、难以手工定义时（如法律合同审查中"评论是否有价值"这类主观判断），基于规则的奖励函数很快失效，而 LLM 法官却能通过系统化的评分维度（TargetDocument_Grounding、Reference_Consistency、Actionability）给出可靠的相对评估^。

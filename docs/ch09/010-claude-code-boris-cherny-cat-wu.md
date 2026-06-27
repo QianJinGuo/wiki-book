@@ -209,15 +209,15 @@ Claude Code 用一年时间，从两个 Slack 点赞走到了一个 PM 在写代
 
 ## 相关实体
 
-- [Loop Engineering Addy Osmani Challengehub](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-addy-osmani-challengehub.md) — Loop 架构的工程实践
-- [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md) — Boris Cherny 对开发工具演进方向的判断
-- [Claude Opus 4 7 Launch](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-4-7-launch.md) — Opus 4.7 的能力跃升
-- [Anthropic 95Pct Data Analysis Skill Stack Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-95pct-data-analysis-skill-stack-architecture.md) — Skills 系统的架构设计
-- [Anthropic Mcp Revisited Tool Search Code Orchestration](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mcp-revisited-tool-search-code-orchestration.md) — 工具调用与代码编排
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md) — Claude Code 源码的工程实现深度解读
-- [Kimi Work Beta Foundation Model Company Advantage](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-beta-foundation-model-company-advantage.md) — 模型公司做 Agent 的战略逻辑
-- [Anthropic Biology Agent Data Infrastructure Virbench](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-biology-agent-data-infrastructure-virbench.md) — 数据基础设施对 Agent 能力的影响
-- [claude code 一周年回顾：boris cherny + cat wu 对话](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-first-year-retrospective-agi-hunt.md)
+- [Loop Engineering Addy Osmani Challengehub](../ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad/) — Loop 架构的工程实践
+- [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](../ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/) — Boris Cherny 对开发工具演进方向的判断
+- [Claude Opus 4 7 Launch](../ch01-314-claude-opus-4-7-发布分析/) — Opus 4.7 的能力跃升
+- [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch09-003-anthropic-内部-95-数据分析自动化-分析-agent-技术栈-skill-框架-21-95-准确率/) — Skills 系统的架构设计
+- [Anthropic Mcp Revisited Tool Search Code Orchestration](../ch07-016-anthropic-最新博客-mcp-没死-它又来了/) — 工具调用与代码编排
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/) — Claude Code 源码的工程实现深度解读
+- [Kimi Work Beta Foundation Model Company Advantage](../ch04-159-kimi-work-beta-通用-agent-一定来自模型公司/) — 模型公司做 Agent 的战略逻辑
+- [Anthropic Biology Agent Data Infrastructure Virbench](../ch04-089-anthropic-生物学agent的瓶颈不在模型-而在数据基础设施/) — 数据基础设施对 Agent 能力的影响
+- [claude code 一周年回顾：boris cherny + cat wu 对话](../ch09-021-claude-code-一周年回顾-boris-cherny-cat-wu-对话/)
 
 ---
 

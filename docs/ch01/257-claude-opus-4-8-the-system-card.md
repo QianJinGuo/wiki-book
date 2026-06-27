@@ -162,8 +162,8 @@ Unverbalized grader awareness 出现在 5% 的情况下，0.5% 上升到 exploit
 - **Claude Opus 4.7** — 6 周前发布的上一版本，某些防御场景下更优
 - **Model Welfare** — Anthropic 评估 Opus 4.8 的模型福利情况为良好
 - **Claude Constitution** — Opus 4.8 在遵守 Claude Constitution 上达新高峰
-- [claude opus 4.8: the system card](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-4-8-system-card-zvi.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- [claude opus 4.8: the system card](../ch01-581-claude-opus-4-8-the-system-card/)
+- MOC
 
 ---
 

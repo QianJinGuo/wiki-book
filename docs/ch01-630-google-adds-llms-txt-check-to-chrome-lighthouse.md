@@ -20,7 +20,7 @@
 
 - [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](../ch04-164-从-pi-main-源码拆解-顶尖-ai-agent-的工程设计-17-维度全解)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- MOC
 ## 深度分析
 
 Chrome Lighthouse 新增的「Agentic Browsing」审核类别，标志着 Google 对 AI 代理可见性基础设施的认知发生了根本性转变。与传统的 SEO 排名信号不同，llms.txt 被明确定位为「AI 代理的可发现性与效率信号」，而非爬取指令。这一区分至关重要：Google 搜索不需要 llms.txt，但 Chrome 的代理浏览能力检查正在强制执行这一标准。

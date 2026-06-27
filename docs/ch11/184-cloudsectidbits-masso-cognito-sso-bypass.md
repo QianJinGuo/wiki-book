@@ -29,11 +29,11 @@
 **使用maSSO进行Cognito多租户平台的OIDC/SAML入站测试。** Doyensec开源的maSSO工具（doyensec/maSSO）可模拟恶意IdP向目标SP发送可控的OIDC code flow、SAML断言和/userinfo响应，是发现本文所述各类攻击面的标准化测试工具。建议在CI/CD流程中集成基于maSSO的模糊测试用例，覆盖triggerSource分支和sub字段注入场景 。
 
 ## 相关实体
-- [Aws Transform Ezconvertbi Bi Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-transform-ezconvertbi-bi-migration.md)
-- [Amazon Cloudfront Deploy Guide Cloudfront Domain Multi Tenant Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture.md)
-- [Amazon Bedrock Api Security Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-api-security-guide.md)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](https://github.com/QianJinGuo/wiki/blob/main/entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](https://github.com/QianJinGuo/wiki/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
+- [Aws Transform Ezconvertbi Bi Migration](../ch11-185-aws-transform-ezconvertbi-bi-migration/)
+- [Amazon Cloudfront Deploy Guide Cloudfront Domain Multi Tenant Architecture](../ch11-102-amazon-cloudfront部署小指南-二十四-将cloudfront-多域名-改造为-多租户-架构/)
+- [Amazon Bedrock Api Security Guide](../ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南/)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](../ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cloudsectidbits-masso-cognito-sso.html.md)
 -

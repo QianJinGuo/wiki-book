@@ -122,7 +122,7 @@ DeepSeek 目前无法自主判断"是否需要用视觉原语"，必须由外部
 
 ## 相关实体
 - [DeepSeek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」](../ch01-863-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- MOC
 
 ---
 

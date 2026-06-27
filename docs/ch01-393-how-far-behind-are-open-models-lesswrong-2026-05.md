@@ -148,12 +148,12 @@ Public benchmark 由于数据公开且分数透明，开源社区可以针对性
 ## 相关实体
 - [Mollick Ai 32 Otters Benchmark](../ch01-441-mollick-ai-进展的-32-只水獭基准)
 - [Some Ideas For What Comes Next May 2026](../ch01-910-some-ideas-for-what-comes-next-may-2026-interconnects)
-- [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)
+- Good Qc For Rl Data
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch04-141-agenteval-yaml驱动的agent评测框架)
 - [Langsmith Evaluation Concepts](../ch03-119-langsmith-evaluation-concepts)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-far-behind-are-open-models-2026.md)
-- [nice：浙大提出的理论驱动型 llm 社会智能诊断基准](https://github.com/QianJinGuo/wiki/blob/main/entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md)
+- nice：浙大提出的理论驱动型 llm 社会智能诊断基准
 
 ---
 

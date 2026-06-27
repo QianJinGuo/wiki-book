@@ -60,12 +60,12 @@ TARA 的本质突破在于**移除语义中间层**。传统 Topics 模式需要
 6. **程序负责人现在可以在几分钟内回答战略问题**——替代以往需要导航多个仪表板、重新应用过滤器、人工拼接数据的耗时流程
 
 ## 相关实体
-- [Aws Quicksight Dataset Qa Natural Language](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-quicksight-dataset-qa-natural-language.md)
-- [Mathematical Optimization Aws Innovation Center Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/mathematical-optimization-aws-innovation-center-enterprise.md)
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
-- [Cisa Admin Leaked Aws Govcloud Keys On Github](https://github.com/QianJinGuo/wiki/blob/main/entities/cisa-admin-leaked-aws-govcloud-keys-on-github.md)
-- [Aws Agent Orchestration Workshop](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-agent-orchestration-workshop.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
+- [Aws Quicksight Dataset Qa Natural Language](../ch11-160-aws-quicksight-dataset-qa-natural-language/)
+- [Mathematical Optimization Aws Innovation Center Enterprise](../ch11-060-mathematical-optimization-at-enterprise-scale-aws-innovatio/)
+- Build Real Time Voice Applications With Amazon Sagemaker Ai
+- [Cisa Admin Leaked Aws Govcloud Keys On Github](../ch11-119-cisa-admin-leaked-aws-govcloud-keys-on-github/)
+- [Aws Agent Orchestration Workshop](../ch04-409-agent-orchestration/)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-quicksight-dataset-qa-tara-case.md)
 

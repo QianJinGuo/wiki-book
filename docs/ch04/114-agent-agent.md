@@ -157,16 +157,16 @@ L3层（必要时）：确定性规则只在确实存在强绑定场景时才引
 
 ## 相关页面
 - [原文存档：高德伴行Agent技术解析](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-companion-agent-architecture.md)
-- [AI Skill进化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-evolution-framework.md)（Skill沉淀相关）
-- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent.md)（被本文分析对比）
+- AI Skill进化框架（Skill沉淀相关）
+- [Hermes Agent](../ch04-418-hermes-agent/)（被本文分析对比）
 
 ## 相关实体
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f/)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
 
-- [十年老技术开发的 AI Agent 探索之路](https://github.com/QianJinGuo/wiki/blob/main/entities/十年老技术开发的-ai-agent-探索之路-v2.md)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](https://github.com/QianJinGuo/wiki/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
-- [ai agent memory systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
+- [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路/)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
+- ai agent memory systems
 
 ---
 

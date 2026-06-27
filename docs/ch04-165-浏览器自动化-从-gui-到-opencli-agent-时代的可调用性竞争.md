@@ -141,7 +141,7 @@ opencli cascade https://api.example.com/hot
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/opencli-browser-automation-jingxing.md)
 - [how developers can build agentic agreement workflows on docu](../ch04-270-how-developers-can-build-agentic-agreement-workflows-on-docu)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- MOC
 
 ---
 

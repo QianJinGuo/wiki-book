@@ -84,15 +84,15 @@ SOP 概念源自企业管理：成熟公司都有 SOP，因为让员工自由发
 
 -  — 提示词工程，优化与 AI 对话的技术
 -  — 模型上下文协议
-- [Agentic Workflow](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) — Agent 任务编排与工作流模式
-- [Tool Use Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/tool-use-patterns-ai-agents.md) — AI Agent 工具调用模式
+- Agentic Workflow — Agent 任务编排与工作流模式
+- Tool Use Patterns — AI Agent 工具调用模式
 - **SOP** — 标准作业流程，胖鹅 AI 的核心技术底座
 - **意图驱动** — 第三代 AI 交互范式，用户表达大概意图，系统补全细节并交付结果
 
 ## 相关实体
 
 - [NVIDIA Agentic Systems](../ch04-514-building-for-the-rising-complexity-of-agentic-systems-with-e) — 英伟达在 Agent 系统层面的超大规模协同设计实践
-- [Kimi K2 Agent 数据库](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-k2-6-tidb-agent-database.md) — 国产 Agent 在数据库场景的应用
+- Kimi K2 Agent 数据库 — 国产 Agent 在数据库场景的应用
 - [Claude Managed Agents](../ch04-421-claude-managed-agents) — Claude 的托管 Agent 架构与 MCP 集成
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/不用再学ai了生成结果包稳的agent来了.md)（机器之心，2026-05-12）

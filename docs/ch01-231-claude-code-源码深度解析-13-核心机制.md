@@ -35,10 +35,10 @@
 
 ## 与现有知识关联
 - [Claude Code 架构解析](../ch01-571-claude-code-架构解析) — 互补页面，本文更深更全面
-- [Claude Code Prompt/Context/Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md) — 三层工程视角
+- Claude Code Prompt/Context/Harness — 三层工程视角
 - [Prompt Caching 工程实践](../ch01-677-anthropic) — 与 microCompact 相关
 - [Agent Harness 12 组件](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架) — Harness 通用框架
-- [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-subagent-context-hygiene.md) — Sub-Agent 设计
+- Claude Code Subagent 上下文卫生 — Sub-Agent 设计
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-source-deep-dive-warrior.md)
 
 ## 深度分析
@@ -98,10 +98,10 @@ microCompact 通过 `cache_edits` 保留本地消息不变，解决的是"cache 
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07-006-claude-code-skills-mcp-rules-source-analysis)
 - [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层)
-- [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-source-analysis.md)
+- Claude Code Prompt 提示词体系源码解析
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-367-claude-code-harness-deep-understanding)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- MOC
 
 ---
 

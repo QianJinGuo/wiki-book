@@ -136,7 +136,7 @@ Skill和MCP的选择本质上是「按需加载」和「全量加载」的选择
 - [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09-005-让-coding-agent-从黑盒到透明-阿里云-agent-观测审计数据采集实践-loongsuite-pilot)
 - [Anthropic Coding Agents Social Science Survey 2026](../ch01-677-anthropic)
 - [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](../ch01-645-柚漫剧-ai全流程提效拆解)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- MOC
 
 ---
 

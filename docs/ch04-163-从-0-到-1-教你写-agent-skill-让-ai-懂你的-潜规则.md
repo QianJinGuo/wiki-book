@@ -170,7 +170,7 @@ Ruby：`bundler/inline`
 - [SkillClaw](../ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
+- MOC
 
 ---
 

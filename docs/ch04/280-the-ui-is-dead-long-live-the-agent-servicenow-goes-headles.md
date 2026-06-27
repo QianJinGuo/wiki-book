@@ -54,11 +54,11 @@
 *   [Awards](https://awards.thehackernews.com/)
 
 ## 相关实体
-- [Servicenow Ui Is Dead Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/servicenow-ui-is-dead-agent.md)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
-- [The Ui Is Dead Long Live The Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent.md)
-- [Alphaevolve Deepmind Discovery Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaevolve-deepmind-discovery-agent.md)
-- [Langchain Anatomy Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/langchain-anatomy-agent-harness.md)
+- [Servicenow Ui Is Dead Agent](../ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](../ch04-314-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
+- [The Ui Is Dead Long Live The Agent](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
+- [Alphaevolve Deepmind Discovery Agent](../ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
+- [Langchain Anatomy Agent Harness](../ch04-425-the-anatomy-of-an-agent-harness-解读/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md)
 

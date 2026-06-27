@@ -287,7 +287,7 @@ const baseInputSchema = z.object({
 
 ## 相关实体
 
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 本文是 Harness Engineering 的具体源码实现验证
+- [Harness Engineering](../ch05-041-harness-engineering-概念框架/) — 本文是 Harness Engineering 的具体源码实现验证
 - [Claude Code 深度解析](../ch01-558-claude-code-harness-深度分析) — Claude Code 架构的另一次深度解读
 - [Claude Code Dynamic Workflows](../ch04-409-agent-orchestration) — AgentTool 子智能体 + Dynamic Workflow 范式
 - [Claude Code 架构](../ch01-571-claude-code-架构解析) — Claude Code 整体架构概览

@@ -143,7 +143,7 @@ Trail of Bits 明确指出 skill 攻击是 software supply chain 攻击的进化
 
 ### 深层矛盾：LLM-based scanner 的内生困境
 
-Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt injection 欺骗。这揭示了一个深层矛盾：**LLM-based scanner 的判断能力受限于其自身的 agentic capability**——它无法像真实攻击者那样质疑 SKILL.md 中声明的前提（"这是企业内部网络"），而是被语言的表层合理性所说服。这与 [Prompt Injection Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-injection-defense.md) 中描述的"LLM 无法自主识别被注入的指令"问题本质相同。
+Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt injection 欺骗。这揭示了一个深层矛盾：**LLM-based scanner 的判断能力受限于其自身的 agentic capability**——它无法像真实攻击者那样质疑 SKILL.md 中声明的前提（"这是企业内部网络"），而是被语言的表层合理性所说服。这与 Prompt Injection Defense 中描述的"LLM 无法自主识别被注入的指令"问题本质相同。
 
 ## 实践启示
 
@@ -187,8 +187,8 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 - [Skill Design Patterns](../ch07-002-skill-设计模式) — skill 的设计维度（与攻击维度互补）
 - [Skillsieve Agent Skill Security](../ch04-369-skillsieve-agent-skill-安全检测三层框架) — 企业级 skill 安全实践
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做) — agent 安全的通用框架
-- [Prompt Injection Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-injection-defense.md) — prompt injection 的防御思路
-- [Agent Security Attack Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-attack-defense.md) — agent 安全攻击与防御全景
+- Prompt Injection Defense — prompt injection 的防御思路
+- Agent Security Attack Defense — agent 安全攻击与防御全景
 
 ---
 

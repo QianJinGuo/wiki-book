@@ -93,7 +93,7 @@ result2 = subprocess.run(
 - 日志不再滚动
 - `kill` 掉进程后重新启动 qmd embed，进度立刻开始推进
 
-这种情况表明 worker 进程并未真正僵死，而是处于某种阻塞状态，可能与 [任务编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) 的异常处理机制有关。
+这种情况表明 worker 进程并未真正僵死，而是处于某种阻塞状态，可能与 任务编排 的异常处理机制有关。
 
 ### Bug 5：Triage Specifier 缺失配置时任务无限挂起
 
@@ -137,7 +137,7 @@ Gateway (127.0.0.1:8642)
 各平台 Adapter (Telegram/Discord/Slack...)
 ```
 
-该架构体现了 [多智能体系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) 中的典型分层设计：Orchestrator 负责高层决策和任务分解，执行层负责具体任务执行。
+该架构体现了 多智能体系统 中的典型分层设计：Orchestrator 负责高层决策和任务分解，执行层负责具体任务执行。
 
 ## 实操建议
 

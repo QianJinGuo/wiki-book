@@ -66,7 +66,7 @@
 - ❌ 镜头不擦（指纹和灰尘影响画质）
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
+> 主题导航
 
 - [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](../ch01-875-what-is-urban-density-design-a-clear-guide-to-how-cities-ge)
 

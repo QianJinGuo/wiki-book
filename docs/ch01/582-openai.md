@@ -11,11 +11,11 @@ OpenAI今天在API中推出三款全新音频模型，面向开发者开放。
 ** GPT-Realtime-Translate  ** ：实时翻译模型，支持70多种输入语言翻译成13种输出语言，翻译速度与说话者同步。
 
 ## 相关实体
-- [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
-- [Aliyun Agentrun 2Line Integration](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-agentrun-2line-integration.md)
-- [Pi Mono Github](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-mono-github.md)
-- [2 Year 25 Ai Projects Summary](https://github.com/QianJinGuo/wiki/blob/main/entities/2-year-25-ai-projects-summary.md)
-- [Openai Realtime Api Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-realtime-api-architecture.md)
+- [Prompt Debugger Compare Templates Winty](../ch01-606-prompt-debugger-compare-templates-winty/)
+- [Aliyun Agentrun 2Line Integration](../ch04-319-用两行代码将-agentrun-集成到你的应用/)
+- [Pi Mono Github](../ch01-608-pi-mono-github/)
+- [2 Year 25 Ai Projects Summary](../ch01-013-这个五一节我做了个总结-在-2-年多的创业里-我一共做了-25-个-ai-项目/)
+- [Openai Realtime Api Architecture](../ch01-084-openai-realtime-api-架构首次公开/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai发布新一代实时语音模型能够像人说话一样进行推理翻译和转录.md)
 

@@ -16,8 +16,8 @@ Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo | NVIDI
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-telco-reasoning-models-nemo.md)
 
-- [emo: pretraining mixture of experts for emergent modularity](https://github.com/QianJinGuo/wiki/blob/main/entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md)
-- [时间序列预测增强方法总结：频域、分解、patch](https://github.com/QianJinGuo/wiki/blob/main/entities/time-series-forecasting-augmentation-methods.md)
+- emo: pretraining mixture of experts for emergent modularity
+- 时间序列预测增强方法总结：频域、分解、patch
 
 ## 深度分析
 

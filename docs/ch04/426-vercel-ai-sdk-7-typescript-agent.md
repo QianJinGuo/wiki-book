@@ -104,8 +104,8 @@ AI SDK 7 在 Agent 开发生态中的位置：
 
 ## 相关主题
 
-- [Agent Harness 12 组件](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-12-components-7-decisions.md)
-- [MOC: LLM 核心技术](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- [Agent Harness 12 组件](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)
+- MOC: LLM 核心技术
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vercel-ai-sdk-7-typescript-ai-apps.md)
 

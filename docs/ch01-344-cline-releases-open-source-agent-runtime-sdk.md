@@ -113,7 +113,7 @@ Cline 的核心差异化在于：(1) 把 agent loop 做成 portable kernel；(2)
 - [scaling archunit with nebula archrules](../ch11-236-scaling-archunit-with-nebula-archrules)
 - [the code-as-content era](../ch01-397-the-code-as-content-era)
 - [the shape of the thing](../ch01-182-the-shape-of-the-thing)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 
 ---
 

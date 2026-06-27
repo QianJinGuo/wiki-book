@@ -11,15 +11,15 @@
 让模型具备"长期个性化能力"——记忆、推理与对齐三能力协同。
 
 ## 相关实体
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
-- [Two Harness Papers Microsoft Google](https://github.com/QianJinGuo/wiki/blob/main/entities/two-harness-papers-microsoft-google.md)
-- [Trace2Skill Trajectory Distillation Agent Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/trace2skill-trajectory-distillation-agent-skills.md)
-- [05 11 The Great Memory Panic Of 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/05-11-the-great-memory-panic-of-2026.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [Two Harness Papers Microsoft Google](../ch01-567-两篇harness论文-微软m-记忆进化-谷歌autoharness动作约束/)
+- [Trace2Skill Trajectory Distillation Agent Skills](../ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills/)
+- [05 11 The Great Memory Panic Of 2026](../ch01-635-the-great-memory-panic-of-2026/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/personavlm-long-term-personalization.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+- MOC
 ## 深度分析
 
 **五类记忆分层是认知架构的工程化实现。** PersonaVLM 将心理学经典理论（大五人格）引入 LLM 个性化建模，将记忆划分为性格画像、核心记忆、语义记忆、情景记忆和程序性记忆。这一设计本质上是在模型之外构建了一个**可演进的用户模型（User Model）**，使个性化信息独立于模型权重存在，支持动态更新而不需要重训练 。

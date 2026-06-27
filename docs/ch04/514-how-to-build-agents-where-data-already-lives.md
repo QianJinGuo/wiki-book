@@ -18,11 +18,11 @@
 
 ### 关联实体
 
-- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
-- [Claude Code Large Codebase Harness Configuration](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-harness-configuration.md)
-- [Joyai Echo Long Video Framework Jd](https://github.com/QianJinGuo/wiki/blob/main/entities/joyai-echo-long-video-framework-jd.md)
-- [Building Web Search Enabled Agents With Strands And Exa](https://github.com/QianJinGuo/wiki/blob/main/entities/building-web-search-enabled-agents-with-strands-and-exa.md)
-- [Deli Auto Research Skill V2 Continual Learning Self Improvement](https://github.com/QianJinGuo/wiki/blob/main/entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
+- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](../ch01-710-2026-年面向-llm-的-rl-方法总结-从-ppo-到-dpo-到-grpo-再到多智能体-rl/)
+- [Claude Code Large Codebase Harness Configuration](../ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对/)
+- [Joyai Echo Long Video Framework Jd](../ch04-099-joyai-echo-京东开源长音视频生成框架-5-分钟一致性-7-5x-dmd-加速-director-age/)
+- [Building Web Search Enabled Agents With Strands And Exa](../ch04-373-building-web-search-enabled-agents-with-strands-and-exa/)
+- [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch01-822-deepseek陈德里ai论文第二弹-从6分到8分-deliautoresearch-skill又进化了/)
 - 相关领域: agent
 
 ## 实践启示

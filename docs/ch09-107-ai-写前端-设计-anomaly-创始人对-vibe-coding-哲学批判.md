@@ -57,7 +57,7 @@ AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判 涉
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 
 ---
 

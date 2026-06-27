@@ -18,7 +18,7 @@ _Meta engineers burned 60 trillion AI tokens in 30 days. Anthropic has compresse
 - source/newsletter
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
 - [Americans still feel pessimistic about the economy. When will it change?](../ch01-909-consumer-confidence)
 

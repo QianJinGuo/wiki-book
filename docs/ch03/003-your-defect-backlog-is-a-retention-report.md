@@ -37,11 +37,11 @@ Customers who watch you fix bugs fast become advocates. Customers who accumulate
 How many paper cuts are your customers bleeding through right now, while you're busy shipping the next feature?
 
 ## 相关实体
-- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](https://github.com/QianJinGuo/wiki/blob/main/entities/yc-ceo-garry-tan-200-dollar-vs-4-million.md)
-- [Against Brain Damage](https://github.com/QianJinGuo/wiki/blob/main/entities/against-brain-damage.md)
-- [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](https://github.com/QianJinGuo/wiki/blob/main/entities/www.cio-4171054-ai-driven-layoffs-arent-making-bus.md)
-- [Alibaba Cloud Cio Ai Productivity Reframe](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-cloud-cio-ai-productivity-reframe.md)
+- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch03-056-yc-ceo-garry-tan-200美元重构400万美元项目-ai-agent协作开发实践/)
+- [Against Brain Damage](../ch03-016-against-brain-damage/)
+- [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](../ch03-035-ai-driven-layoffs-aren-t-making-businesses-more-efficient/)
+- [Alibaba Cloud Cio Ai Productivity Reframe](../ch03-011-阿里云cio产研效能规模化提升实践/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/defect-backlog-retention-report.md)
 

@@ -124,9 +124,9 @@ Scenethesis 论文反复强调"具身智能"和"仿真环境搭建"：
 - 英伟达项目页: https://research.nvidia.com/labs/dir/scenethesis/
 - [Karpathy: 从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
 - [Cosmos & Grok Imagine 视频 Agent](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
-- [NVIDIA Isaac Lab 机器人 RL](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- NVIDIA Isaac Lab 机器人 RL
 - [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](../ch04-263-iclr-2026-英伟达-普渡大学-用agent闭环实现文生3d)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 
 ---
 

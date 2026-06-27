@@ -129,8 +129,8 @@ Anthropic 明确定义了两者关系：
 
 - [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](../ch04-108-打造-ai-智能体专属的代码知识库-gitnexus-完整上手攻略)
 - [Cursor Recall Anthropic Daily Release Cat Wu](../ch01-677-anthropic)
-- [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- Wiki Audit Skill
+- MOC
 
 ---
 

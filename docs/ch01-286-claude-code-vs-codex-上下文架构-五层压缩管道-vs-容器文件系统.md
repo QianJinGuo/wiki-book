@@ -155,12 +155,12 @@ Auto Memory 不用向量检索而用 LLM 驱动选取——这意味着你可以
 
 ## 相关主题
 - [Claude Code 架构](../ch01-571-claude-code-架构解析) — Claude Code 完整架构分析
-- [context window management comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md) — 多框架上下文管理对比（Aparna Dhinakura）
+- context window management comparison — 多框架上下文管理对比（Aparna Dhinakura）
 - [Claude Code Harness Deep Dive](../ch01-558-claude-code-harness-深度分析) — Founder Park 深度分析（含 Auto-compaction）
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- MOC
 
 ---
 

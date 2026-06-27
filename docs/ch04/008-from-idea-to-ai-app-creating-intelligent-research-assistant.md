@@ -63,11 +63,11 @@ Strands 的 @tool decorator 机制展示了工具增强型代理（Tool-Augmente
 ## 参考来源
 
 ## 相关实体
-- [Claude Code Aws Bedrock Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-aws-bedrock-guide.md)
-- [Bedrock Agentcore Payment X402 Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-agentcore-payment-x402-agent.md)
-- [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-real-time-service-topology.md)
-- [Firecracker Bedrock Agentcore Multi Tenant](https://github.com/QianJinGuo/wiki/blob/main/entities/firecracker-bedrock-agentcore-multi-tenant.md)
-- [Serverless Langgraph Multi Agent Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/serverless-langgraph-multi-agent-aws.md)
+- [Claude Code Aws Bedrock Guide](../ch11-062-claude-code-on-aws-bedrock-配置指南/)
+- [Bedrock Agentcore Payment X402 Agent](../ch11-006-用-amazon-bedrock-agentcore-payment-构建自主支付-ai-agent-x402-协议实战/)
+- [Netflix Real Time Service Topology](../ch11-009-from-silos-to-service-topology-why-netflix-built-a-real-tim/)
+- [Firecracker Bedrock Agentcore Multi Tenant](../ch11-007-基于-firecracker-microvm-与-bedrock-agentcore-的生产级多租户-ai-agent/)
+- [Serverless Langgraph Multi Agent Aws](../ch11-234-build-a-highly-scalable-serverless-langgraph-multi-agent-sys/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-research-assistant-from-idea-to-app.md)
 

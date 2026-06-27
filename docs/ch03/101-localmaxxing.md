@@ -39,12 +39,12 @@ Localmaxxing 不是"取代云端"而是"分流任务"。随着本地模型能力
 ## 相关实体
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/localmaxxing.md)
 
-- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](https://github.com/QianJinGuo/wiki/blob/main/entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
-- [Ico Fines South Staffordshire 2022 Breach](https://github.com/QianJinGuo/wiki/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
-- [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
-- [Interaction Models](https://github.com/QianJinGuo/wiki/blob/main/entities/interaction-models.md)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/weve-been-here-before-decompilers-fuzzers-and-now-ai.md)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-progressive-rollouts-with-vercel-flags-vercel.md)
+- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](../ch01-646-crypto-inflows-hit-858m-as-clarity-lifts-sentiment/)
+- [Ico Fines South Staffordshire 2022 Breach](../ch12-106-ico-fines-south-staffordshire-963k-over-2022-breach/)
+- [Zeus Rwa Thread Reader](../ch01-132-thread-by-zeusrwa-on-thread-reader-app/)
+- [Interaction Models](../ch03-122-interaction-models/)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch01-292-we-ve-been-here-before-decompilers-fuzzers-and-now-ai/)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09-106-automate-progressive-rollouts-with-vercel-flags-vercel/)
 
 ---
 

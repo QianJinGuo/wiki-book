@@ -7,13 +7,13 @@
 > -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
 
 ## 相关实体
-- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](https://github.com/QianJinGuo/wiki/blob/main/entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
-- [Semis Memo: Supply Chain Inheritance](https://github.com/QianJinGuo/wiki/blob/main/entities/semis-memo-supply-chain-inheritance.md)
-- [Amazon launches Supply Chain Services for businesses of all sizes](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-supply-chain-services.md)
-- [Semis Memo: Supply Chain Inheritance](https://github.com/QianJinGuo/wiki/blob/main/entities/citriniresearch-supply-chain-inheritance.md)
-- [semgrep intercom php supply chain](https://github.com/QianJinGuo/wiki/blob/main/entities/semgrep-intercom-php-supply-chain.md)
+- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha/)
+- [Semis Memo: Supply Chain Inheritance](../ch01-473-semis-memo-supply-chain-inheritance/)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch11-210-amazon-launches-supply-chain-services-for-businesses-of-all/)
+- [Semis Memo: Supply Chain Inheritance](../ch01-485-semis-memo-supply-chain-inheritance/)
+- [semgrep intercom php supply chain](../ch12-100-semgrep-intercom-php-supply-chain/)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- MOC
 ## 深度分析
 这起事件是一个三漏洞链式攻击的典型案例，其杀伤力在于每两个漏洞之间的"信任桥接"。攻击者没有使用任何零日漏洞，而是将三个已知攻击面组合：pull_request_target 的 Pwn Request 模式、GitHub Actions 缓存污染跨信任边界、运行时内存提取 OIDC Token。整个攻击从准备到执行历时约 26 小时，84 个恶意版本在 6 分钟内发布到 42 个 TanStack npm 包。
 **第一层漏洞：pull_request_target 的信任假设错误。** `bundle-size.yml` 使用 `pull_request_target` 触发器处理 fork PR，并在该上下文中检出 fork 的 PR-merge ref 执行构建。这是一个长期已知危险的模式——pull_request_target 在 base repo 的信任上下文中运行，而非 fork 的隔离环境。workflow 作者尝试了信任拆分（comment-pr 与 benchmark-pr 分离），意图让 benchmark-pr "不信任、只读权限"，但这个拆分有两个致命缺陷：首先，`actions/cache@v5` 的 post-job 保存不受 `permissions: contents: read` 限制——缓存写入使用 runner 内部 Token 而非 workflow GITHUB_TOKEN；其次，缓存作用域是按 repo 的，pull_request_target runs 与 push to main 共享同一个缓存命名空间，fork PR 写入的缓存条目可被 main 分支的后续 workflow 读取。这两个缺陷使得攻击者可以在 fork 中写入恶意内容，污染 main 分支 workflow 将要使用的缓存。

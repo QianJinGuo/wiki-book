@@ -40,7 +40,7 @@
 - **Planning Skills** = Agent 的"方法论知识"（面对新任务的策略思维）
 - **Functional Skills** = Agent 的"技能插件"（可复用工具调用流程）
 - **Atomic Skills** = Agent 的"肌肉记忆"（底层工具操作模式）
-与 [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing.md) 的实践视角互补： SkillX 从学习角度建立技能体系，Agent Skill 指南从编写规范角度约束技能格式。
+与 Agent Skill 编写指南 的实践视角互补： SkillX 从学习角度建立技能体系，Agent Skill 指南从编写规范角度约束技能格式。
 
 ## 相关页面
 ## 深度分析
@@ -59,7 +59,7 @@ SkillX的三层技能体系（Planning / Functional / Atomic）揭示了Agent经
 ## 相关页面
 
 - [Skill 设计模式](../ch07-002-skill-设计模式)
-- [Hermes-Agent 自进化机制](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)
+- [Hermes-Agent 自进化机制](../ch04-418-hermes-agent/)
 - [Thin Harness Fat Skills](../ch05-063-thin-harness-fat-skills-ai工程架构的本质)
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillx-zhejiang-university.md)
 
@@ -75,9 +75,9 @@ SkillX的三层技能体系（Planning / Functional / Atomic）揭示了Agent经
 
 - [Qoder Skills 完全指南](../ch07-029-qoder-skills-完全指南)
 - [你写的 Skill，及格了吗？](../ch07-046-你写的-skill-及格了吗)
-- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+- Hermes Agent Skill
 - [wiki evolver](../ch07-015-wiki-evolver)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- MOC
 
 ---
 

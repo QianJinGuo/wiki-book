@@ -14,12 +14,12 @@ Amazon Web Services (AWS)
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/multi-agent-architecture-retail-practice/)
 
 ## 相关实体
-- [你不知道的 Agent 原理架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-principle-architecture-engineering-practice.md)
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-agent-team-practice-v2.md)
-- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)
-- [OpenClaw 多智能体团队搭建实战经验](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-agent-team-practice.md)
-- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
-- [factory mission multi agent architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/factory-mission-multi-agent-architecture.md)
+- [你不知道的 Agent 原理架构与工程实践](../ch04-300-agent-principle-architecture-engineering-practice/)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04-038-openclaw-multi-agent-team-practice-v2/)
+- [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice/)
+- OpenClaw 多智能体团队搭建实战经验
+- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](../ch11-050-基于-amazon-eks-和-graviton-构建多租户-ai-agent-平台-openclaw-on-kuber/)
+- [factory mission multi agent architecture](../ch01-864-factory-mission-multi-agent-architecture/)
 
 ## 深度分析
 本文揭示了零售供应链中从 data-informed 到 data-driven 的本质瓶颈：**查询壁垒、洞察缺位、行动脱节**。传统数字化解决了数据采集问题，但"从查询到行动"的链路仍高度依赖人工。研究显示供应链团队 60-70% 的时间花在数据查询和格式对齐上，真正的分析时间被压缩。

@@ -19,7 +19,7 @@ RAG改换换了！清华提出Skill-RAG
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-rag-tsinghua-sra.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- MOC
 ## 深度分析
 
 **1. 技能库规模爆炸导致上下文窗口成为 Agent 瓶颈。** 截至 2026 年 4 月，仅 SkillsMP 平台就托管超过一百万个技能，OpenClaw、Claude Code 等系统也在快速增长。当技能数量从十几个增长到成千上万个时，将所有技能摘要塞进上下文的传统方法导致判断准确率断崖式下降。SRA-Bench 规模达到 26,262 个干扰技能——这不是夸张，而是真实场景的准确刻画。

@@ -58,7 +58,7 @@ Stepan Gershuni 在 cyber.fund 发布的这篇创始人指南，提出了 AI 原
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-startup-cyberfund-2026.md)
 - [how frontier teams are reinventing ai-native development](../ch01-230-how-frontier-teams-are-reinventing-ai-native-development)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- MOC
 
 ---
 

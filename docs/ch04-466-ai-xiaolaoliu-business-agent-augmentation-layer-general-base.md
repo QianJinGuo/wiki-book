@@ -47,7 +47,7 @@ Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606 涉及agen
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 
 ---
 

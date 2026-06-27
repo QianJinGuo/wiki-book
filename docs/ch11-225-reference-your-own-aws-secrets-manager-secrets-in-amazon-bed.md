@@ -52,7 +52,7 @@ AI agents are only as powerful as the tools they can access.
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 
 ---
 

@@ -28,7 +28,7 @@
 
 - [一个文件让 ai coding 效率翻倍：agents.md 实践指南](../ch04-230-一个文件让-ai-coding-效率翻倍-agents-md-实践指南)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- MOC
 ## 深度分析
 
 主流多模态模型在视觉能力上的竞争维度，长期被锁定在「看得更清楚」这一条路上——通过高分辨率切割、动态分块将图像 token 数量不断推高，以求在 VQA 任务上刷新 benchmark 分数。Anthropic 将 Opus 4.7 的图像内部分辨率从 1568px 提升到 2576px，Google 的 Gemini 从初代发布起就走 natively multimodal 路线，这些动作都在强化一个隐含前提：视觉推理的瓶颈在于感知清晰度。DeepSeek 这篇论文的核心反驳是「看见 ≠ 看清楚 ≠ 说清楚指哪个」，论文原文直接点破：「The inherent ambiguity of natural language often fails to provide precise, unambiguous pointers to complex spatial layouts, leading to logical collapse in tasks requiring rigorous grounding.」这个 Reference Gap（指代鸿沟）才是真正卡住多模态推理的地方，而非 Perception Gap（感知鸿沟）。

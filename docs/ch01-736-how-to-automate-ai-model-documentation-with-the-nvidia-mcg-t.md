@@ -13,7 +13,7 @@
 - [大模型可控新突破：steering 机制、评估体系与开源落地](../ch01-692-大模型可控新突破-steering-机制-评估体系与开源落地)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 ## 深度分析
 
 How to Automate AI Model Documentation with the NVIDIA MCG Toolkit 涉及architecture领域的核心技术议题。

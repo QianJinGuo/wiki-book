@@ -29,7 +29,7 @@ sources:
 related:
 
   - [Harness 工程化体系](../ch05-036-harness-engineering-systematic-explainer)
-  - [Context Management 与 Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
+  - Context Management 与 Working Set
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch01-677-anthropic)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道)

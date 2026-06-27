@@ -120,12 +120,12 @@ Cola DLM 的"语义部 + 文字部"分层，在多模态语境下有天然优势
 
 ## 相关实体
 
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元.md)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/读完这篇你就搞懂-deepseek-v4-了-v2.md)
-- [Harness Engineering Core Patterns Claude Code](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Diffusion Model Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/diffusion-model-architecture.md)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](../ch01-726-deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元/)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](../ch01-216-读完这篇你就搞懂-deepseek-v4-了/)
+- [Harness Engineering Core Patterns Claude Code](../ch01-698-深入浅出-harness-engineering-之核心模式与理念/)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- Diffusion Model Architecture
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
 

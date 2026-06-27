@@ -51,7 +51,7 @@ NVIDIA 将 subsurface 仿真整合到 Omniverse（工业数字化平台）和 DR
 - [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch01-189-ai-时代的-git-版本管理最佳实践)
 - Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- MOC
 
 ---
 

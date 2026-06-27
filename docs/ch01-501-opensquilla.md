@@ -40,7 +40,7 @@ OpenSquilla 通过 bundled ONNX inference 在设备上完成 embedding 计算，
 Bubblewrap（Linux）+ Seatbelt（macOS）实现 syscall 级隔离，而非依赖 Docker。这类方案的优势在于：无容器运行时依赖、宿主机内核直接参与安全控制、overhead 更低。劣势是平台绑定强（Windows 无等效实现，文章中 Windows 默认为 no-op 安全模式）。[EdgeClaw](../ch01-663-edgeclaw-端云两栖龙虾框架) 等项目采用类似思路，在边缘部署场景下更具实际价值。
 
 ### 5. Microkernel 架构的插件经济学
-100 行核心 orchestrator + 5 行 duck-typed class 即完成插件开发，无 SDK、无 manifest。这种极简接口设计降低了贡献门槛，但长期看版本兼容性维护和插件质量治理会变成隐性成本。与 [OpenClaw 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) 的模块化思路相比，OpenSquilla 更激进但也更具实验性。
+100 行核心 orchestrator + 5 行 duck-typed class 即完成插件开发，无 SDK、无 manifest。这种极简接口设计降低了贡献门槛，但长期看版本兼容性维护和插件质量治理会变成隐性成本。与 OpenClaw 架构 的模块化思路相比，OpenSquilla 更激进但也更具实验性。
 
 ## 实践启示
 ### 1. 构建本地 Token 监控看板

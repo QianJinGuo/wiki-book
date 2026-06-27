@@ -20,12 +20,12 @@
 
 ### 关联实体
 
-- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元.md)
-- [Autoresearch Next Phase Async Multi Agent Ai寒武纪](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-next-phase-async-multi-agent-ai寒武纪.md)
-- [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](https://github.com/QianJinGuo/wiki/blob/main/entities/rocketmq-5-5-0-litetopics-ai-agent-messaging.md)
-- [Gaode Uplift Model Iteration Agent Long Running Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/gaode-uplift-model-iteration-agent-long-running-harness.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](../ch01-710-2026-年面向-llm-的-rl-方法总结-从-ppo-到-dpo-到-grpo-再到多智能体-rl/)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](../ch01-726-deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元/)
+- [Autoresearch Next Phase Async Multi Agent Ai寒武纪](../ch01-793-autoresearch-next-phase-async-multi-agent-ai寒武纪/)
+- [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](../ch01-757-apache-rocketmq-5-5-0-开源-litetopic-百万级-ai-会话专属通道/)
+- [Gaode Uplift Model Iteration Agent Long Running Harness](../ch01-720-gaode-uplift-model-iteration-agent-long-running-harness/)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
 
 ## 实践启示
 

@@ -12,7 +12,7 @@
 *   [Community](https://lovable.dev/community)
 
 ## 相关实体
-- [Lovable Discoverability Intro](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
+- Lovable Discoverability Intro
 - [Building Is Just The Beginning Introducing Discove](../ch12-076-building-is-just-the-beginning-introducing-discoverability)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](../ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner)
 - [Introducing The Ettin Reranker Family](../ch01-361-introducing-the-ettin-reranker-family)

@@ -11,11 +11,11 @@
 - **泛化能力弱**：高质量训练数据稀缺，技能难以迁移到新任务
 
 ## 相关实体
-- [我用 Skillmd 做了一个简历生成器](https://github.com/QianJinGuo/wiki/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
-- [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
-- [Skill Engineering Ai As Algorithm](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-engineering-ai-as-algorithm.md)
-- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
-- [Hermes Agent Getting Started Guide 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-getting-started-guide-2026.md)
+- [我用 Skillmd 做了一个简历生成器](../ch07-047-我用-skill-md-做了一个简历生成器/)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档/)
+- [Skill Engineering Ai As Algorithm](../ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程/)
+- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](../ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)
+- [Hermes Agent Getting Started Guide 2026](../ch04-292-hermes-agent-保姆级教程-一句话组建你的-ai-打工团队/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillx-zhejiang-university-hyman.md)
 

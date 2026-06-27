@@ -131,8 +131,8 @@ Prompt 提供了三种输出模式：
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
-- [Prompt Engineering Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-patterns.md)
-- [Prompt Engineering Fundamentals](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)
+- Prompt Engineering Patterns
+- Prompt Engineering Fundamentals
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemini-deep-guide-prompt.md)
 

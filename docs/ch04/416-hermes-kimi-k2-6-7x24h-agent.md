@@ -9,15 +9,15 @@
 > 作者苍何（521篇原创）分享了用 Hermes Agent + Kimi K2.6 搭建 7×24h 不间断运行的 AI 研发军团的完整教程。从飞书下达需求到最终交付，市场调研、PRD、架构设计、开发、测试全部由不同 Agent 自主完成。
 
 ## 相关实体
-- [Hermes Agent K2 6 Tutorial](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-k2-6-tutorial.md)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
-- [Small Hermes Self Evolving Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/small-hermes-self-evolving-agent-architecture.md)
-- [Kimi K2 Tidb Agent Database Huangdongxu 20260513](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-k2-tidb-agent-database-huangdongxu-20260513.md)
-- [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](https://github.com/QianJinGuo/wiki/blob/main/entities/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md)
+- Hermes Agent K2 6 Tutorial
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航/)
+- [Small Hermes Self Evolving Agent Architecture](../ch04-109-small-hermes-自我进化-agent-架构/)
+- Kimi K2 Tidb Agent Database Huangdongxu 20260513
+- [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](../ch04-382-深度拆解-hermes-agent-记忆系统-它修正了-openclaw-的哪层误区/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-k2-6-multi-agent.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- MOC
 ## 深度分析
 
 **1. 总管（Commander）模式是多 Agent 协作的核心调度枢纽。** 整个工作流以"需求输入（飞书）→ 总管（commander）→ 市场调研 → 产品设计 → 架构设计 → 开发实现 → 测试验收"为主线，Commander 作为总控节点负责任务分发和流程推进。这种星型拓扑结构适合任务类型明确、流程顺序相对固定的企业研发场景，但单点故障风险需要关注。

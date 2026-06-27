@@ -152,11 +152,11 @@ H2D/D2H 带宽因卡而异的特性，说明不同 GPU 型号对 PPCIe 的支持
 
 ## 关联阅读
 ## 相关实体
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](https://github.com/QianJinGuo/wiki/blob/main/entities/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md)
-- [Baidu Confidential Computing Cpu Gpu Full Chain](https://github.com/QianJinGuo/wiki/blob/main/entities/baidu-confidential-computing-cpu-gpu-full-chain.md)
-- [Nemotron 3 5 Content Safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nemotron-3-5-content-safety.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-secure-local-agent-nemoclaw-openclaw.md)
-- [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch01-830-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
+- [Baidu Confidential Computing Cpu Gpu Full Chain](../ch01-059-百度智能云新一代ai机密计算实例-从cpu到gpu全链路可信/)
+- Nemotron 3 5 Content Safety
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04-339-nvidia-secure-local-agent-nemoclaw-openclaw/)
+- Fine Tuning Cosmos
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从-cpu-到-gpu-全链路可信百度智能云新一代-ai-机密计算实例的探索与落地.md)
 

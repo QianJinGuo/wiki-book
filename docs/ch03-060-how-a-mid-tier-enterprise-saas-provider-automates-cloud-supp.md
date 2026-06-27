@@ -71,13 +71,13 @@ guardrails.
 
 ## 深度分析
 
-### 1. 五智能体工作流的设计逻辑与[多智能体协作模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md)的对应关系
+### 1. 五智能体工作流的设计逻辑与多智能体协作模式的对应关系
 
-该案例的五智能体架构（Intake Router → SOP Validator → Upgrade Triage → Recap Writer → Handoff Coordinator）体现了[多智能体协作模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md)中的**管道式串行协作**特征：每个智能体承担单一职责，通过结构化数据传递下一环节，形成单向依赖链 。这种设计避免了共享内存竞争和状态同步复杂性，但要求每个节点的输入输出格式高度标准化。值得注意的是，Recap Writer 嵌入在 Handoff Coordinator 之前，表明信息加工与路由决策在时序上解耦——这与[智能体编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)中强调的"决策与执行分离"原则一致 。
+该案例的五智能体架构（Intake Router → SOP Validator → Upgrade Triage → Recap Writer → Handoff Coordinator）体现了多智能体协作模式中的**管道式串行协作**特征：每个智能体承担单一职责，通过结构化数据传递下一环节，形成单向依赖链 。这种设计避免了共享内存竞争和状态同步复杂性，但要求每个节点的输入输出格式高度标准化。值得注意的是，Recap Writer 嵌入在 Handoff Coordinator 之前，表明信息加工与路由决策在时序上解耦——这与智能体编排模式中强调的"决策与执行分离"原则一致 。
 
-### 2. "Ticket Triage Triangle"困境的根因分析与[企业AI采用](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption.md)的阶段性特征
+### 2. "Ticket Triage Triangle"困境的根因分析与企业AI采用的阶段性特征
 
-文章揭示的三个困境——Completeness（完整性缺失）、Handoffs（路由混乱）、Eventing Gaps（事件盲区）——本质上是**信息熵增问题**：随着票务 volume 增长，人工处理的错误率呈非线性上升 。传统规则引擎和 RPA 失败的根本原因在于它们缺乏**自适应验证能力**——无法应对 SOP 演化和票务格式变化 。这印证了[企业AI采用](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption.md)中常见的"自动化孤岛"问题：单点优化而忽视端到端流程的整体性。
+文章揭示的三个困境——Completeness（完整性缺失）、Handoffs（路由混乱）、Eventing Gaps（事件盲区）——本质上是**信息熵增问题**：随着票务 volume 增长，人工处理的错误率呈非线性上升 。传统规则引擎和 RPA 失败的根本原因在于它们缺乏**自适应验证能力**——无法应对 SOP 演化和票务格式变化 。这印证了企业AI采用中常见的"自动化孤岛"问题：单点优化而忽视端到端流程的整体性。
 
 ### 3. 从"Brittle Automation"到"Agentic Workflow"的范式转变
 
@@ -87,7 +87,7 @@ guardrails.
 - **RPA 机械臂**：无迭代验证能力
 - **外包人力**：无法处理复杂度和 SOP 演化
 
-CrewAI 方案的本质是引入**带 SOP guardrails 的 LLM 推理层**，使自动化具备上下文理解和自适应判断能力。这与[智能体工作流模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md)中"guardrails + LLM 判断"的核心范式完全吻合 。从 AI 成熟度曲线看，该案例处于**生产级可靠运行阶段**（年 ticket 量 15,000-20,000），而非实验或试点阶段。
+CrewAI 方案的本质是引入**带 SOP guardrails 的 LLM 推理层**，使自动化具备上下文理解和自适应判断能力。这与智能体工作流模式中"guardrails + LLM 判断"的核心范式完全吻合 。从 AI 成熟度曲线看，该案例处于**生产级可靠运行阶段**（年 ticket 量 15,000-20,000），而非实验或试点阶段。
 
 ### 4. SLA 驱动的架构约束：45分钟响应窗口如何影响技术选型
 
@@ -104,7 +104,7 @@ CrewAI 方案的本质是引入**带 SOP guardrails 的 LLM 推理层**，使自
 | 医疗 IT | 事件分级和 HIPAA 合规 | 数据脱敏和审计日志 |
 | 电商支持 | 促销季流量峰谷波动 | 弹性扩缩容 |
 
-这些场景的共同特征是**高 volume + 标准 SOP + 多系统集成**，恰好匹配五智能体管道的核心能力。该模式的可迁移性已超越具体行业技术栈，接近[自主智能体系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md)中定义的"通用业务流程自动化"范畴。
+这些场景的共同特征是**高 volume + 标准 SOP + 多系统集成**，恰好匹配五智能体管道的核心能力。该模式的可迁移性已超越具体行业技术栈，接近自主智能体系统中定义的"通用业务流程自动化"范畴。
 
 ---
 

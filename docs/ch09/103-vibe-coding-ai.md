@@ -53,7 +53,7 @@ GitHub accessibility designer **Eric Bailey** 2026-06-15 发表的内部反思�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 
 ---
 

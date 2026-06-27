@@ -40,7 +40,7 @@ The art and science of hyperparameter optimization on Amazon Nova Forge 涉及aw
 - [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
 - [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
 
 ## 实践启示
 1. **工程落地**: aws领域方案需关注可观测性、可维护性和成本效率

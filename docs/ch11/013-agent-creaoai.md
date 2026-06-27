@@ -259,25 +259,25 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 ## 与现有 Wiki 的关系
 
 ### 与 Cloud Agent 基础设施
-- [Development environments for your cloud agents](https://github.com/QianJinGuo/wiki/blob/main/entities/cloud-agent-development-environments.md) = Cursor 视角：dev environment 配置工具 + 多 repo 环境——**关注 dev tooling**，本文关注 **production runtime 隔离与凭据**
-- [Cloudflare + Claude Managed Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/announcing-claude-managed-agents-on-cloudflare.md) = "脑手分离"架构：推理在 Anthropic 平台 + 代码执行在 Cloudflare Sandboxes——**关注架构分工**，本文关注 **平台自身的 hot-swap + 凭据隔离**
-- [Claude Managed Agents 企业边界更新](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-enterprise.md) = 同一系列，**关注企业 hybrid control plane**（self-hosted + Anthropic 推理）
+- Development environments for your cloud agents = Cursor 视角：dev environment 配置工具 + 多 repo 环境——**关注 dev tooling**，本文关注 **production runtime 隔离与凭据**
+- [Cloudflare + Claude Managed Agents](../ch01-087-announcing-claude-managed-agents-on-cloudflare/) = "脑手分离"架构：推理在 Anthropic 平台 + 代码执行在 Cloudflare Sandboxes——**关注架构分工**，本文关注 **平台自身的 hot-swap + 凭据隔离**
+- [Claude Managed Agents 企业边界更新](../ch04-517-claude-managed-agents-企业边界更新/) = 同一系列，**关注企业 hybrid control plane**（self-hosted + Anthropic 推理）
 
 ### 与多租户 / Serverless Agent
-- [OpenClaw → Bedrock AgentCore 多租户迁移](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md) = 阿里云/AWS 的多租户 serverless 路径，**关注迁移路径**
-- [AgentScope Builder](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-builder-enterprise-self-evolving-agent-harness.md) = 阿里云 Harness 框架 + 平台化，**关注 harness 框架**
-- [Stripe Agent 经济基础设施 5 套图谱](https://github.com/QianJinGuo/wiki/blob/main/entities/stripe-agent-economic-infrastructure-5-products.md) = 关注 **agent 经济层基础设施**（支付/钱包/订阅），**与本文 runtime 隔离互补**
+- [OpenClaw → Bedrock AgentCore 多租户迁移](../ch11-076-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改/) = 阿里云/AWS 的多租户 serverless 路径，**关注迁移路径**
+- [AgentScope Builder](../ch04-233-agentscope-builder-快速体验-用-harness-框架快速构建企业自进化智能体/) = 阿里云 Harness 框架 + 平台化，**关注 harness 框架**
+- [Stripe Agent 经济基础设施 5 套图谱](../ch03-057-stripe-agent-经济基础设施-5-套图谱-mpp-link-projects-metronome/) = 关注 **agent 经济层基础设施**（支付/钱包/订阅），**与本文 runtime 隔离互补**
 
 ### 与 RAG / Agent 评估
-- [RAG 技术框架的演进方向](https://github.com/QianJinGuo/wiki/blob/main/entities/rag技术框架的演进方向.md) = 关注 **retrieval 充分性**（充分上下文智能体 = 信息的"够不够"判断）
+- [RAG 技术框架的演进方向](../ch01-193-rag技术框架的演进方向/) = 关注 **retrieval 充分性**（充分上下文智能体 = 信息的"够不够"判断）
 - **本文 = 关注 runtime 充分性**（状态 / 代码 / 凭据的"够不够"判断 + ownership 边界）
 
 ### 与上下文隔离
-- [上下文隔离](https://github.com/QianJinGuo/wiki/blob/main/entities/context-isolation.md) = 关注 **context window 内的多任务隔离**
+- [上下文隔离](../ch01-892-上下文隔离/) = 关注 **context window 内的多任务隔离**
 - **本文 = 关注 execution boundary 内的多租户隔离**——**两者维度不同，但思想相通**："默认不可信 + 强制隔离 + 边界归一"
 
 ### 与阿里云 Agentic Cloud
-- [阿里云 Agentic Cloud](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-agentic-cloud.md) = 关注 **云平台级别的 agent-as-a-service**（Bailian/Qwen/MaaS）——**关注平台对外的能力**
+- [阿里云 Agentic Cloud](../ch04-295-阿里云-agentic-cloud/) = 关注 **云平台级别的 agent-as-a-service**（Bailian/Qwen/MaaS）——**关注平台对外的能力**
 - **本文 = 关注平台对内的工程化**（snapshot + hot-swap + 凭据隔离）——**关注平台自身的建设**
 
 ## 实战检查清单（4 条铁律 → 9 项检查）

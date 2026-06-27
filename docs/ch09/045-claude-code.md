@@ -105,18 +105,18 @@ Anthropic + Cerebral Valley 黑客松六组获奖项目（Opus 4.7 + Claude Code
    智利 28 万非正式建筑工人没有大学文凭因此在系统里"不存在"^；这类群体的知识一旦失传就无法重建，应该成为 AI 知识保存工作的最高优先级
 
 ## 相关
-- [Claude Code 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture.md)
-- [Anthropic PM Agentic 工作流](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-pm-agentic-workflow.md)
-- [AutoResearch 多 Agent 开发](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-multi-agent-software.md)
-- [Agent Memory 模块化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-modular-framework.md)
+- [Claude Code 架构](../ch01-571-claude-code-架构解析/)
+- [Anthropic PM Agentic 工作流](../ch04-383-anthropic-pm-的-agentic-工作流/)
+- [AutoResearch 多 Agent 开发](../ch09-030-autoresearch-多-agent-自动化软件开发/)
+- [Agent Memory 模块化框架](../ch01-238-agent-memory-模块化框架与评测-memory-in-the-llm-era-4-模块-10-方案对比/)
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-12-rules-karpathy-extension.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-20000-char-source-analysis.md)
-- [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-subagent-context-hygiene.md)
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
+- Claude Code vs OpenClaw Agent 记忆系统对比
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09-039-claude-md-12-条规则-karpathy-扩展模板/)
+- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制/)
+- Claude Code Subagent 上下文卫生
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
 
 ---
 

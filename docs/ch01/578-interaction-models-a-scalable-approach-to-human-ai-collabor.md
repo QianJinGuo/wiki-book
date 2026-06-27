@@ -19,9 +19,9 @@ We train an interaction model from...
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/interaction-models-human-ai.md)
 
 ## 相关实体
-- [OpenAI buys AI consultancy to sell enterprises on its models](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.md)
-- [Interaction Models](https://github.com/QianJinGuo/wiki/blob/main/entities/interaction-models.md)
-- [Thinking Machines 交互模型（Interaction Models）](https://github.com/QianJinGuo/wiki/blob/main/entities/thinking-machines-interaction-models.md)
+- [OpenAI buys AI consultancy to sell enterprises on its models](../ch01-684-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/)
+- [Interaction Models](../ch03-122-interaction-models/)
+- [Thinking Machines 交互模型（Interaction Models）](../ch04-278-thinking-machines-交互模型-interaction-models/)
 
 ## 深度分析
 **1. "协作瓶颈"揭示的人机交互根本矛盾**

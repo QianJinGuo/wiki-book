@@ -15,7 +15,7 @@
 ## Related
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/digital-commerce-ai-agent-scenarios-challenges.md)
+> 主题导航
 
 - [Ico Fines South Staffordshire 2022 Breach](../ch12-106-ico-fines-south-staffordshire-963k-over-2022-breach)
 - [Zeus Rwa Thread Reader](../ch01-132-thread-by-zeusrwa-on-thread-reader-app)
@@ -27,7 +27,7 @@
 - [Fastlane Create Winning Short Form Content In Seconds](../ch03-097-fastlane-create-winning-short-form-content-in-seconds)
 - [Mira Mpa Deep Principle Ai4S 40 Sota](../ch01-183-mira-mpa-深度原理-ai-scientist-递归自训练打造材料基座模型-40-项实验全面-sota)
 - [Localmaxxing](../ch03-100-localmaxxing)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 ## 深度分析
 ### 资金流向结构与市场情绪
 根据 CoinShares 报告，2026 年 5 月当周加密 ETP 净流入 8.58 亿美元，较前一周 1.18 亿美元大幅回升，实现连续第六周净流入，创 2025 年 4-7 月以来最长的连续流入纪录，六周累计流入 49 亿美元。

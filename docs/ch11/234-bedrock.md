@@ -57,15 +57,15 @@
 - 误识别时的安全回退（人工复核）
 
 ## 相关实体
-- [Aws Bedrock Serverless Async Inference Multimodal](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-serverless-async-inference-multimodal.md)
-- [Verizon Connect Agentic Ai 100K Users](https://github.com/QianJinGuo/wiki/blob/main/entities/verizon-connect-agentic-ai-100k-users.md)
-- [Deepseek Vision Primitives](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-vision-primitives.md)
-- [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md)
-- [Aws Bedrock Ops Alert](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-ops-alert.md)
+- [Aws Bedrock Serverless Async Inference Multimodal](../ch11-073-amazon-bedrock模型推理的serverless异步架构-处理在线多模态高负载案例/)
+- [Verizon Connect Agentic Ai 100K Users](../ch04-097-verizon-connect-agentic-ai-10万用户规模的工程实践/)
+- [Deepseek Vision Primitives](../ch01-863-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度/)
+- [Agentcore Harness](../ch04-206-agentcore-managed-harness/)
+- [Aws Bedrock Ops Alert](../ch11-093-amazon-bedrock-ops-alert-三层监控架构/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bedrock-image-content-precise-analysis.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- MOC
 ## 深度分析
 
 ### 两阶段管道的设计哲学：任务解耦

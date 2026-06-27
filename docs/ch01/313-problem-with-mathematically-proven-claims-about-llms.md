@@ -16,7 +16,7 @@ John Allsopp 在 Web Directions 博客发表文章，系统性批判了近年来
 
 **问题所在**：该证明明确假设系统没有外部验证器（external validator）。然而现实中几乎所有生产级 Agent 系统都配备了外部验证器：代码有编译器检查、数学有求解器验证、搜索结果有人类反馈。Zenil 论文的结论**不适用于有外部验证器的系统**，这是证明本身的假设条件，而非 LLM 的内在限制。
 
-Allsopp 进一步指出，这类论证往往将「数学上优雅的简化模型」等同于「现实系统的根本限制」。LLM 在有外部反馈回路的系统中表现出的能力提升——如 [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md)、Claude Code 的 [Harness 自我优化](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)——直接证伪了「自我改进不可能」的普遍性声明。
+Allsopp 进一步指出，这类论证往往将「数学上优雅的简化模型」等同于「现实系统的根本限制」。LLM 在有外部反馈回路的系统中表现出的能力提升——如 [Agent 自我改进的六条路](../ch04-047-agent-自我改进的六条路/)、Claude Code 的 [Harness 自我优化](../ch05-010-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)——直接证伪了「自我改进不可能」的普遍性声明。
 
 ### 2. 幻觉不可避免——定义过于宽泛
 
@@ -25,7 +25,7 @@ Allsopp 进一步指出，这类论证往往将「数学上优雅的简化模型
 **关键问题**：这些论文的研究对象是**纯参数化的知识存储系统**，而非现代知识增强型 LLM（Knowledge-Enhanced LLM）。论文作者明确指出结论不适用于外部知识检索增强的系统——而 RAG（检索增强生成）和工具调用正是解决幻觉的主流工程路径。
 
 > [!contradiction]
-> 另有研究表明，通过 [Tool Calling Hallucination](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-reliability-context-drift-tool-hallucination.md) 机制和外部验证，Agent 系统可以显著降低幻觉率。与其将幻觉视为 LLM 的固有特性，不如将其视为 [Harness 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 需要解决的具体问题。
+> 另有研究表明，通过 [Tool Calling Hallucination](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/) 机制和外部验证，Agent 系统可以显著降低幻觉率。与其将幻觉视为 LLM 的固有特性，不如将其视为 [Harness 工程](../ch05-041-harness-engineering-概念框架/) 需要解决的具体问题。
 
 此外，Allsopp 区分了两种幻觉：*记忆回溯错误*（将相似事件的细节混淆）和*推理杜撰*（完全无依据的断言）。前者通过 RAG 可以有效缓解，后者通过 CoT（Chain of Thought）推理和外部验证也能得到控制。将两者混为一谈并宣布「不可避免」是概念上的混淆。
 
@@ -33,9 +33,9 @@ Allsopp 进一步指出，这类论证往往将「数学上优雅的简化模型
 
 第三类论据援引 Hartmanis-Stearns 定理（关于计算复杂性与可计算函数的经典结论），声称 LLM 的计算能力存在不可逾越的数学上限。
 
-**核心错误**：Hartmanis-Stearns 定理适用于**单一固定计算模型**。现代 AI 系统很少以单一 LLM 运行——实际上几乎所有生产级部署都是 [多 Agent 协作](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) + 工具调用 + 外部验证器的组合。这些系统的计算能力等价于**通用图灵机加 Oracles（谕示机）**，而非单一有限状态机。
+**核心错误**：Hartmanis-Stearns 定理适用于**单一固定计算模型**。现代 AI 系统很少以单一 LLM 运行——实际上几乎所有生产级部署都是 多 Agent 协作 + 工具调用 + 外部验证器的组合。这些系统的计算能力等价于**通用图灵机加 Oracles（谕示机）**，而非单一有限状态机。
 
-这意味着即使 LLM 本身有理论计算上限，多 LLM 协作 + 工具使用可以将系统能力提升到更高层次。这与 [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) 研究领域的发现一致：协作 Agent 系统可以突破单 Agent 的能力边界。
+这意味着即使 LLM 本身有理论计算上限，多 LLM 协作 + 工具使用可以将系统能力提升到更高层次。这与 Multi-Agent Systems 研究领域的发现一致：协作 Agent 系统可以突破单 Agent 的能力边界。
 
 ## 共同论证模式
 
@@ -56,7 +56,7 @@ Allsopp 提供了几个可能的原因：
 
 **认知层面**：理论模型天然具有优雅性和确定性。现实世界的嘈杂（外部验证器、外部知识、工具调用）破坏了理论美感，因此容易被忽视或「假设掉」。
 
-**传播层面**：学术论文的 nuance（假设、适用范围、限制条件）在摘要和推特传播中被丢弃，只留下最强结论。这与 [Karpathy](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-llm-wiki-v2-2026.md) 多次强调的「LLM 能力边界是模糊的」形成鲜明对比。
+**传播层面**：学术论文的 nuance（假设、适用范围、限制条件）在摘要和推特传播中被丢弃，只留下最强结论。这与 [Karpathy](../ch01-271-karpathy-llm-wiki-v2-2026/) 多次强调的「LLM 能力边界是模糊的」形成鲜明对比。
 
 ## 深度分析
 

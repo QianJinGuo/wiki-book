@@ -115,18 +115,18 @@ Computer Use 的高成本并非没有场景价值 ：
 
 ## 相关实体
 
-- [Anthropic 发布 Computer Use 最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-computer-use-best-practices.md) — Anthropic 官方的 Computer Use 优化建议，包括截图降采样等技巧
-- [Codex 支持通过 Computer Use 控制桌面设备](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-can-now-control-other-desktop-devices-via-computer-use.md) — Codex 的 Computer Use 扩展应用
-- [Claude Code Tool Design 演化](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-tool-design-evolution-anthropic.md) — Anthropic 在 Agent 工具设计上的持续演进
-- [Ettin Reranker Family](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-the-ettin-reranker-family.md) — 高效的排序模型，可用于优化 Agent 任务路由
+- [Anthropic 发布 Computer Use 最佳实践](../ch01-658-anthropic-发布-computer-use-最佳实践/) — Anthropic 官方的 Computer Use 优化建议，包括截图降采样等技巧
+- [Codex 支持通过 Computer Use 控制桌面设备](../ch09-099-codex-can-now-control-other-desktop-devices-via-computer-use/) — Codex 的 Computer Use 扩展应用
+- [Claude Code Tool Design 演化](../ch01-360-claude-code-工具设计复盘-官方/) — Anthropic 在 Agent 工具设计上的持续演进
+- [Ettin Reranker Family](../ch01-361-introducing-the-ettin-reranker-family/) — 高效的排序模型，可用于优化 Agent 任务路由
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- MOC
 ## 相关概念
 
-- [Tool Use Patterns in AI Agents](https://github.com/QianJinGuo/wiki/blob/main/concepts/tool-use-patterns-ai-agents.md) — Agent 工具设计原则，包括 API 封装 vs 视觉感知的权衡
-- [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) — Agent 工作流设计模式，任务分解与工具选择策略
-- [推理系统优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — Token 消耗优化是推理成本控制的核心，与 Computer Use 的高开销直接相关
-- [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统架构，包括感知-决策-执行的完整链路
+- Tool Use Patterns in AI Agents — Agent 工具设计原则，包括 API 封装 vs 视觉感知的权衡
+- Agentic Workflow Patterns — Agent 工作流设计模式，任务分解与工具选择策略
+- 推理系统优化 — Token 消耗优化是推理成本控制的核心，与 Computer Use 的高开销直接相关
+- Autonomous Agent Systems — 自主 Agent 系统架构，包括感知-决策-执行的完整链路
 
 ## 实践建议
 

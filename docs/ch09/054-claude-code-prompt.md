@@ -154,11 +154,11 @@ coordinator/worker/verifier/planner 四种 Agent 角色通过强角色边界 SOP
 **硬覆盖 > 协调者 > Agent > Custom > Default**：当多个 prompt 来源共存时，这个优先级顺序确保行为可预测。在设计自定义 prompt 机制时，需要明确它处于哪个优先级层级。
 
 ## 相关实体
-- [Anthropic Prompt Caching Claude Code Agihunt](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-prompt-caching-claude-code-agihunt.md)
-- [Anthropic Prompt Caching Claude Code](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-prompt-caching-claude-code.md)
-- [Claude Code Prompt Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-source-analysis.md)
-- [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
+- [Anthropic Prompt Caching Claude Code Agihunt](../ch01-186-anthropic-最新博客-prompt-caching-是构建-claude-code-的一切/)
+- [Anthropic Prompt Caching Claude Code](../ch09-022-prompt-caching-工程实践-anthropic-claude-code-经验总结/)
+- Claude Code Prompt Source Analysis
+- [Claude Code Self Repair Hooks Memory Config](../ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
 
 ---
 

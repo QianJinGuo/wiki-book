@@ -123,8 +123,8 @@ Agent 和 Grader 两个接口的极简设计（各两个方法）降低了插件
 - [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准)
 - [AI Skill 测评指标体系](../ch01-383-ai-skill-测评指标体系)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论)
-- [Skills赏析：使用skills-refiner提升skill质量](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-refiner-design-quality-evaluation-framework.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- Skills赏析：使用skills-refiner提升skill质量
+- MOC
 
 ---
 

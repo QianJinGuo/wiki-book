@@ -14,10 +14,10 @@
 
 ## 相关实体
 - [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析)
-- [Claude Code Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md)
+- Claude Code Prompt Context Harness
 - [Hermes Agent Deep Dive Alibaba](../ch04-418-hermes-agent)
 - [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档)
-- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
+- Openclaw Prompt Context Harness
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
 

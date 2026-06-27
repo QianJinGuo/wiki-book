@@ -146,14 +146,14 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 - [AI Skill 测评指标体系](../ch01-383-ai-skill-测评指标体系)
 - [SkillClaw](../ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力)
-- [Skills赏析：使用skills-refiner提升skill质量](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-refiner-design-quality-evaluation-framework.md)
+- Skills赏析：使用skills-refiner提升skill质量
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills)
 
 - [Hermes Agent](../ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队)
 - [Qoder Skills 完全指南](../ch07-029-qoder-skills-完全指南)
 - [AgentEval：YAML驱动的Agent评测框架](../ch04-141-agenteval-yaml驱动的agent评测框架)
 - [你写的 Skill，及格了吗？](../ch07-046-你写的-skill-及格了吗)
-- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+- Hermes Agent Skill
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 

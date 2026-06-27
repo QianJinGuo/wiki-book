@@ -50,7 +50,7 @@ Enable safe agentic payments with built-in guardrails using Amazon Bedrock Agent
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 
 ---
 

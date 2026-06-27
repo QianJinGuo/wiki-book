@@ -237,7 +237,7 @@ AppStream 2.0 支持 SAML 2.0 federated authentication，企业员工使用统�
 
 ## 相关实体
 - [Building Blocks for Foundation Model Training and Inference on AWS](../ch11-117-building-blocks-for-foundation-model-training-and-inference)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 
 ---
 

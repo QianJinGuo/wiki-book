@@ -141,7 +141,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
   - [Aliyun AgentRun](../ch04-003-agentrun)
   - [阿里云 CMS CLI 可观测](../ch04-491-告别复杂接入流程-用-ai-agent-skill-驱动云监控可观测接入)
   - [阿里云 哈勃业务 Agent 评估](../ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-cloud-native-fable-5-safety-guardrails-evolution.md)
 

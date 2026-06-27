@@ -51,7 +51,7 @@ April 1st started with the kind of phishing reports we receive all the time from
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 
 ---
 

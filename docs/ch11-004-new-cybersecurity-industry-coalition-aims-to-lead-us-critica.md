@@ -43,7 +43,7 @@ CISA 已经运营着 Automated Indicator Sharing（AIS）项目和一个行业-s
 - 关注联盟在跨境关键基础设施（如美加电网互联、跨太平洋光缆）安全上的协调能力——这是单一国家监管无法覆盖的领域
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
 - [CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](../ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before)
 - [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](../ch12-097-sandworm-hackers-shift-from-it-breaches-to-critical-ot-targe)

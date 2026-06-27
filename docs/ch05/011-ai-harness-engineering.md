@@ -200,16 +200,16 @@ Harness Engineering 的核心信号：**AI 落地的核心挑战，正在从"让
 
 ## 相关实体
 
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 本文是该概念的权威中文系统阐述
-- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 第二层重心迁移
-- [Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md) — 第一层重心迁移
-- [Claude Code 深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md) — Anthropic Harness 的具体实现
-- [Claude Code Dynamic Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) — Harness 第三层执行编排的 Dynamic Workflow 实现
-- [OpenClaw 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md) — OpenAI-style 渐进式披露 + Agent-first 工程环境
-- [Agent Evolution 四阶段六维](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md) — Harness 维度在六维框架中的对应
-- [Hermes Agent Operator](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-operator上手-把一个-agent-养成可运营系统-若飞.md) — 自进化 Agent 的 Harness 实现
-- [Agent YAML 评测](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation.md) — Harness 第五层评估与观测的工程实现
-- [深入理解 Claude Code Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md) — Harness 在 Claude Code 源码层的具体构建
+- [Harness Engineering](../ch05-041-harness-engineering-概念框架/) — 本文是该概念的权威中文系统阐述
+- Context Engineering — 第二层重心迁移
+- Prompt Engineering — 第一层重心迁移
+- [Claude Code 深度解析](../ch01-558-claude-code-harness-深度分析/) — Anthropic Harness 的具体实现
+- Claude Code Dynamic Workflows — Harness 第三层执行编排的 Dynamic Workflow 实现
+- [OpenClaw 完整指南](../ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/) — OpenAI-style 渐进式披露 + Agent-first 工程环境
+- [Agent Evolution 四阶段六维](../ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/) — Harness 维度在六维框架中的对应
+- [Hermes Agent Operator](../ch04-067-hermes-agent-operator-上手-把一个-agent-养成可运营系统/) — 自进化 Agent 的 Harness 实现
+- [Agent YAML 评测](../ch01-746-从手动到自动化-用agenteval构建agent评测体系/) — Harness 第五层评估与观测的工程实现
+- [深入理解 Claude Code Agent Harness](../ch01-170-深入理解-claude-code-源码中的-agent-harness-构建之道/) — Harness 在 Claude Code 源码层的具体构建
 
 ---
 

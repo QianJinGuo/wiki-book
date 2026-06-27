@@ -5,11 +5,11 @@
 > 📊 Level ⭐⭐ | 4.2KB | `entities/gpt-image-2完全指南.md`
 
 ## 相关实体
-- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-image-2-完全指南附大量玩法案例顺便开源我的生图-skill.md)
+- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](../ch01-654-gpt-image-2-完全指南-附大量玩法案例-顺便开源我的生图-skill/)
 
-- [agent 开发范式演进：从环境工程出发](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-开发范式演进从环境工程出发.md)
+- [agent 开发范式演进：从环境工程出发](../ch04-072-agent-开发范式演进-从环境工程出发/)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- MOC
 ## 深度分析
 GPT-Image-2 在 Arena.AI Text-to-Image 排行榜以 1512 分登顶，领先第二名谷歌 Nano-Banana-2 共 242 分，是迄今为止最强大的图像生成模型。
 **核心能力矩阵：**

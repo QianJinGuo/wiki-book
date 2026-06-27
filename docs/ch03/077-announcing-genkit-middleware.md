@@ -104,11 +104,11 @@ Middleware 链会增加每次调用的延迟：
 
 ## 相关资源
 ## 相关实体
-- [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](https://github.com/QianJinGuo/wiki/blob/main/entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
-- [Pi Mono](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-mono.md)
-- [Microsoft Agent Framework Structured Output](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-agent-framework-structured-output.md)
-- [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
-- [Skillsui](https://github.com/QianJinGuo/wiki/blob/main/entities/skillsui.md)
+- [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](../ch04-007-announcing-genkit-middleware-intercept-extend-and-harden/)
+- [Pi Mono](../ch03-068-pi-mono-模块化-ai-agent-构建平台-openclaw-执行引擎核心/)
+- [Microsoft Agent Framework Structured Output](../ch03-102-microsoft-agent-framework-结构化输出-response_format-与-response-v/)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
+- [Skillsui](../ch03-093-skillsui/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/developers.googleblog-announcing-genkit-middleware-intercept-extend-and-harden-y.md)
 

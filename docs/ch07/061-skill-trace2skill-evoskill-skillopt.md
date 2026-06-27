@@ -18,12 +18,12 @@ Skill 自演进的三种方法：比较基于反馈的增量优化、基于反�
 
 ### 关联实体
 
-- [Agent Skills Comprehensive Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skills-comprehensive-survey.md)
-- [Skillopt Microsoft Train Skill Like Neural Network](https://github.com/QianJinGuo/wiki/blob/main/entities/skillopt-microsoft-train-skill-like-neural-network.md)
-- [Alibaba Agentic Cloud](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-agentic-cloud.md)
-- [Skillopt Microsoft Train Skill Hyman'S Blog](https://github.com/QianJinGuo/wiki/blob/main/entities/skillopt-microsoft-train-skill-hyman's-blog.md)
-- [Skillopt Skill Document Training Microsoft Sjtu](https://github.com/QianJinGuo/wiki/blob/main/entities/skillopt-skill-document-training-microsoft-sjtu.md)
-- [Deli Auto Research Skill V2 Continual Learning Self Improvement](https://github.com/QianJinGuo/wiki/blob/main/entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
+- [Agent Skills Comprehensive Survey](../ch04-340-agent-skills-系统性综述-表示-获取-检索-进化/)
+- [Skillopt Microsoft Train Skill Like Neural Network](../ch01-469-别再手写-skill-了-微软最新研究-像神经网络一样训练-skill/)
+- [Alibaba Agentic Cloud](../ch04-295-阿里云-agentic-cloud/)
+- [Skillopt Microsoft Train Skill Hyman'S Blog](../ch01-813-微软等提出-skillopt-把-skill-当成模型一样训练/)
+- [Skillopt Skill Document Training Microsoft Sjtu](../ch01-769-skillopt-把-agent-技能文档变成可训练对象/)
+- [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch01-822-deepseek陈德里ai论文第二弹-从6分到8分-deliautoresearch-skill又进化了/)
 
 ## 实践启示
 

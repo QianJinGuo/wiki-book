@@ -18,7 +18,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- MOC
 ## 深度分析
 
 文章提出的核心论点是漏洞严重性应由"碰撞计数"（collision count）驱动——同一漏洞被多少独立研究员同时发现，是判断该漏洞被攻击者掌握概率的最直接信号。这一框架颠覆了传统 CVD（ Coordinated Vulnerability Disclosure ）模型中将单个报告视为孤立事件的假设，将漏洞生态视为一个信息不对称的竞争市场。Linus Torvalds 在 LKML 上的表态进一步印证了这一趋势：AI 辅助的代码审查工具正在系统性地压缩研究员与攻击者之间的发现时间差。

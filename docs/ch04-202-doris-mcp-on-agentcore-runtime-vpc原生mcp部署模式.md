@@ -74,7 +74,7 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](../ch04-204-航班变更信息智能识别解决方案)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
+- Amazon Nova Multimodal Embeddings 制造业智能应用
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11-144-zenjoy-基于-amazon-bedrock-和-eks-构建-aiops-agent-打通-prometheus)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2)
@@ -90,7 +90,7 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 - [Hands Free First Notice Of Loss Using Strands Agents And Ama](../ch04-320-hands-free-first-notice-of-loss-using-strands-agents-and-am)
 - [How Baz Improved Its Ai Agent Code Review Accuracy Using Ama](../ch09-110-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama)
 - [Secure Ai Agents With Policy And Lambda Interceptors In Amaz](../ch11-226-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- MOC
 
 ---
 

@@ -78,15 +78,15 @@ AWS Samples 提供 `sample-your-opc-eks-agents` 仓库，包含：
 
 ## 相关主题
 
-- [多智能体编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)（概念层）
+- 多智能体编排（概念层）
 - [AWS Bedrock AgentCore OS-level 浏览器工具](../ch04-156-agentcore-browser-os级操作-action-screenshot-reaction闭环)
 - [Aliyun AgentRun 5min 快速上手](../ch04-003-agentrun)
 
 ## 深度分析
 
-1. **Meta-Agent Pattern 是 Agent 平台规模化的必然演进**：当多 Agent 系统规模扩大时，平台自身的运维复杂度会指数级增长。Waylens 的解法——用 Admin Agent 管 Worker Agent——本质上是用同一套 Agent 逻辑治理 Agent 自身，这是 [多智能体编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) 从"单层协作"走向"多层自举"的关键转折点。相比传统的 SRE 手工运维或专用调度器，Meta-Agent 模式更具表达力：升级策略、故障判定、巡检节奏都可以用自然语言编写，而非硬编码规则。
+1. **Meta-Agent Pattern 是 Agent 平台规模化的必然演进**：当多 Agent 系统规模扩大时，平台自身的运维复杂度会指数级增长。Waylens 的解法——用 Admin Agent 管 Worker Agent——本质上是用同一套 Agent 逻辑治理 Agent 自身，这是 多智能体编排 从"单层协作"走向"多层自举"的关键转折点。相比传统的 SRE 手工运维或专用调度器，Meta-Agent 模式更具表达力：升级策略、故障判定、巡检节奏都可以用自然语言编写，而非硬编码规则。
 
-2. **EKS CRD + Operator 模式将"Agent 类型"提升为 Kubernetes 一等资源**：传统 Agent 编排平台往往自建调度层，而 Waylens 选择将 Agent 类型注册为 CRD，由 Operator 执行 reconcile。这意味着每个 Agent 实例的期望状态、实际状态、健康策略都可以复用 Kubernetes 生态的成熟工具链（Helm、kubectl、Vertical Pod Autoscaler）。[多智能体编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) 的工程化门槛因此大幅降低——不再需要从零实现自己的控制平面。
+2. **EKS CRD + Operator 模式将"Agent 类型"提升为 Kubernetes 一等资源**：传统 Agent 编排平台往往自建调度层，而 Waylens 选择将 Agent 类型注册为 CRD，由 Operator 执行 reconcile。这意味着每个 Agent 实例的期望状态、实际状态、健康策略都可以复用 Kubernetes 生态的成熟工具链（Helm、kubectl、Vertical Pod Autoscaler）。多智能体编排 的工程化门槛因此大幅降低——不再需要从零实现自己的控制平面。
 
 3. **Rex Backup Operator 揭示了 Meta-Redundancy 的必要性**：任何"管其他 Agent 的 Agent"本身都是一个单点故障。Waylens 引入第二层 EKS Operator（Rex）做备份，但这个设计引出了一个深层问题：当备份层本身也由 Agent 驱动时，是否需要第三层备份？这种递归冗余的终止条件是工程权衡问题，而非纯理论问题。从 [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务) 的视角看，Meta-Redundancy 是"高可靠性 Harness"设计的典型模式。
 

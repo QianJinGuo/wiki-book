@@ -135,7 +135,7 @@ ListenHub 由一人 + Agents 维护 20 个 repo、覆盖全栈产出，证明 AI
 ## 相关实体
 - [Ai Native Team Building Failures Ceo Digital Twin Case](../ch04-080-ai-原生团队的脏乱差-ceo-数字分身失败案例与-ai-销售线索分配的兴衰)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 ## 相关主题
 
 - Harness Engineering 核心模式 — 参考 `Harness Engineering Core Patterns`

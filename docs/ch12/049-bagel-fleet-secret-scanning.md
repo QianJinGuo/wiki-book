@@ -94,17 +94,17 @@
 - AI 编程助手（Cursor / Continue / Claude Code 等）在企业内部推广时，必须同步制定 IDE plugin 文件访问策略，限制其在包含敏感配置的工作目录中的活动权限
 - 评估 bagel 或类似 fleet 级工具时，重点关注组织的规则维护能力和误报反馈闭环机制，而非仅看工具功能本身；每 100 台开发机的持续运营需要 2-3 名 SRE 兼职投入
 - 借助 MDM（Jamf / Intune）和 `fleet.yaml` 实现 daemon 全量推送，确保开机自启和扫描策略与组织拓扑同步更新，是 fleet 级secret scanning 落地的关键步骤
-- 配合 [Agent Security Attack Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-attack-defense.md) 中定义的"防御层级"框架，将 secret scanning 从单点 CI 检查升级为 OS 层持续监控，是 DevSecOps 在 2026 年的重要进化方向
+- 配合 Agent Security Attack Defense 中定义的"防御层级"框架，将 secret scanning 从单点 CI 检查升级为 OS 层持续监控，是 DevSecOps 在 2026 年的重要进化方向
 
 ## 关联主题
 
-- [Bedrock Agentcore Secrets Manager Identity](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-agentcore-secrets-manager-identity.md) — AWS Bedrock AgentCore 的 secret 管理视角（云端 secret 而非本地泄漏）
-- [Trail Of Bits Skill Scanner Bypass Distribution](https://github.com/QianJinGuo/wiki/blob/main/entities/trail-of-bits-skill-scanner-bypass-distribution.md) — Trail of Bits 的 Skill scanner 工具，AI 编程安全的另一个维度
+- [Bedrock Agentcore Secrets Manager Identity](../ch11-225-reference-your-own-aws-secrets-manager-secrets-in-amazon-bed/) — AWS Bedrock AgentCore 的 secret 管理视角（云端 secret 而非本地泄漏）
+- [Trail Of Bits Skill Scanner Bypass Distribution](../ch01-175-trail-of-bits-skill-scanner-bypass-实证研究/) — Trail of Bits 的 Skill scanner 工具，AI 编程安全的另一个维度
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/recyclebin-zip-secret-scanning-fleet-bagel-2026.md)
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 ---
 

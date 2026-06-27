@@ -386,7 +386,7 @@ but branch -a feat/refresh-token feat/token-revocation
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-era-git-version-control-agentic-coding-practices.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
+- MOC
 ## 深度分析
 
 **一、Agentic Coding 重新定义了版本管理的责任主体**：传统 Git 工作流假设人是所有提交决策的唯一主体，每个 commit 都对应一个有意图的操作。然而 LLM coding agent 的引入打破了这一假设——agent 在没有持续人工监督的情况下自主生成大量代码，这意味着版本历史的「责任链条」出现了真空地带。传统的 blame 和 commit message 机制无法追溯到真正的决策者（是人的意图还是模型的幻觉？），这个问题在 agent 长时间运行多步骤任务时会急剧放大。

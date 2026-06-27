@@ -154,11 +154,11 @@
 
 ## 深度分析
 
-- **本体竞争取代工具竞争**：OntoZ 的核心命题是「2B AI 从工具辅助进入本体竞争新阶段」——企业间竞争的不再是谁买了更多 SaaS，而是谁的数字分身（企业本体）更懂业务、更能自迭代。这一判断与 [Rag Vector Knowledge Graph Ontology](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-vector-knowledge-graph-ontology.md) 中知识图谱本体是数据驱动成交基础设施的观点高度一致。 
+- **本体竞争取代工具竞争**：OntoZ 的核心命题是「2B AI 从工具辅助进入本体竞争新阶段」——企业间竞争的不再是谁买了更多 SaaS，而是谁的数字分身（企业本体）更懂业务、更能自迭代。这一判断与 Rag Vector Knowledge Graph Ontology 中知识图谱本体是数据驱动成交基础设施的观点高度一致。 
 
 - **二阶控制论架构的工程验证**：马尔可夫毯 + 强化学习任务规划器（2024 验证）与带先验因果结构的图神经网络（2024 验证），构成二阶控制论（控制控制系统）的工程实现。这使得多智能体协作有了「可控边界」，解决了单点 Agent「止步于部门墙之前」的根本缺陷。对照 [Anthropic Multi Agent Research System](../ch01-677-anthropic) 中多智能体系统需要显式协调机制的设计原则，百型的马尔可夫毯方法提供了一种无需中心化调度的去中心化控制路径。 
 
-- **RL + Reflection 的无人化知识蒸馏**：百型以「强化学习 + Reflection 架构」实现企业知识库的无人化、短时间蒸馏，形成 cognition infra。这与传统的知识工程（专家建模、RDF 本体）有本质区别——不是工程师将知识注入系统，而是系统在买卖交互中自主涌现结构。对照 [Enterprise Ai Investment Data Readiness Cio](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-ai-investment-data-readiness-cio.md) 中企业 AI 落地依赖数据质量和结构化程度的前提，OntoZ 的冷启动能力直接绕过了这一瓶颈。 
+- **RL + Reflection 的无人化知识蒸馏**：百型以「强化学习 + Reflection 架构」实现企业知识库的无人化、短时间蒸馏，形成 cognition infra。这与传统的知识工程（专家建模、RDF 本体）有本质区别——不是工程师将知识注入系统，而是系统在买卖交互中自主涌现结构。对照 Enterprise Ai Investment Data Readiness Cio 中企业 AI 落地依赖数据质量和结构化程度的前提，OntoZ 的冷启动能力直接绕过了这一瓶颈。 
 
 - **强结果信号驱动的飞轮效应**：买卖行为天然具备可量化的强结果信号（成交/不成交），是强化学习最理想的训练场景。系统通过持续捕获买家行为模式形成越用越准的飞轮，这与传统的显性知识学习（FAQ、产品手册）截然不同——行为数据比文本语料更能反映真实的决策逻辑。 
 
@@ -180,19 +180,19 @@
 
 - 多智能体协同 — [Openclaw Multi Agent Team Practice V2](../ch04-038-openclaw-multi-agent-team-practice-v2)
 - 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01-035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode)
-- 智能体协议 — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
+- 智能体协议 — [Ahe Agentic Harness Engineering](../ch04-212-ahe-agentic-harness-engineering/)
 - Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01-159-kimi-work-通用-agent-战场从云端迁移到本地)
 - Claude Code 架构 — [Claude Code Architecture](../ch01-571-claude-code-架构解析)
 - Harness 工程 — [Harness Engineering Systematic Framework](../ch05-049-harness-engineering-系统梳理)
 - A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo)
-- 本体论 / 知识图谱 — [Rag Vector Knowledge Graph Ontology](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-vector-knowledge-graph-ontology.md)
+- 本体论 / 知识图谱 — Rag Vector Knowledge Graph Ontology
 - 多智能体研究系统 — [Anthropic Multi Agent Research System](../ch01-677-anthropic)
 - Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01-014-20vc-x-saastr-the-most-aggressive-quarter-in-american-capit)
-- 企业 AI 数据准备 — [Enterprise Ai Investment Data Readiness Cio](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-ai-investment-data-readiness-cio.md)
+- 企业 AI 数据准备 — Enterprise Ai Investment Data Readiness Cio
 ## 相关实体
 
-- [how grab is using ai agents to boost team productivity](https://github.com/QianJinGuo/wiki/blob/main/entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- how grab is using ai agents to boost team productivity
+- MOC
 
 ---
 

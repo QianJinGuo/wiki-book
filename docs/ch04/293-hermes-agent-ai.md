@@ -115,11 +115,11 @@ hermes dashboard
 5. **关注 profile 配置的正确性**：在创建 kanban 任务前先用 `hermes kanban assignees` 确认所有 profile 已配置，避免静默失败。profile 是 agent 执行权限和模型偏好的载体，配置错误是最隐蔽的失败模式。
 
 ## 相关实体
-- [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
-- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-agent脚手架如何具备自进化能力以hermes-agent为例.md)
-- [Hermes Agent Kanban Deep Test By Wjjagi 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-kanban-deep-test-by-wjjagi-2026.md)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
-- [我用 Skillmd 做了一个简历生成器](https://github.com/QianJinGuo/wiki/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
+- Hermes Agent Deep Dive Alibaba
+- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](../ch01-164-llm-agent脚手架如何具备自进化能力-以hermes-agent为例/)
+- [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch01-312-hermes-agent-官方-kanban-深度实测-让商业-cli-工具当-orchestrator/)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航/)
+- [我用 Skillmd 做了一个简历生成器](../ch07-047-我用-skill-md-做了一个简历生成器/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-getting-started-guide-2026.md)
 

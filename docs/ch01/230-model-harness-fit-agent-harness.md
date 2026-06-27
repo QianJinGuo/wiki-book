@@ -206,11 +206,11 @@ Rajasekaran 的案例极具说明性：为 Sonnet 4.5 精心设计的 context re
 - `Cursor Harness Model`
 
 ## 相关实体
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
-- [Browser Use Runtime Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/browser-use-runtime-harness.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务.md)
-- [Agent Harness 12 Components 7 Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-12-components-7-decisions.md)
+- Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent
+- [Browser Use Runtime Harness](../ch04-101-browser-use-为-agent-构建-runtime-harness/)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
+- [Agent Harness 12 Components 7 Decisions](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)
 
 ---
 

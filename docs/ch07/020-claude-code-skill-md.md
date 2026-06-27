@@ -200,13 +200,13 @@ Skill 写完后，不要直接投入生产使用。验证方式：
 - [sanyuan-skills](https://github.com/sanyuan0704/sanyuan-skills)
 - [Anthropic 官方 Skills 仓库](https://github.com/anthropics/skills)
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
-- [Claude Design Skill Web Design Engineer](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-design-skill-web-design-engineer.md)
-- [Claude Design Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-design-skill.md)
-- [Claude Code Prompt Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-source-analysis.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
-- [using claude](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-html-artifacts.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01-615-skill-issues-compromising-claude-code-with-malicious-skills/)
+- [Claude Design Skill Web Design Engineer](../ch07-011-我把-claude-design-做成了-skill-人人都能成为顶级网站设计师/)
+- Claude Design Skill
+- Claude Code Prompt Source Analysis
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
+- using claude
+- MOC
 
 ---
 

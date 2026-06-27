@@ -8,10 +8,10 @@
 
 ## 相关实体
 
-- [蔚蓝babyalpha a3消费级机器狗撕开英伟达垄断](https://github.com/QianJinGuo/wiki/blob/main/entities/weilan-babyalpha-a3-machine-dog.md)
+- 蔚蓝babyalpha a3消费级机器狗撕开英伟达垄断
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-long-running-agent-architecture-6h-retroforge.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 ## 深度分析
 
 Anthropic 实战分享：如何让 AI Agent 持续工作几天？ 涉及agent领域的核心技术议题。

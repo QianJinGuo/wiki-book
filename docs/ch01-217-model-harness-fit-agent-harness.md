@@ -206,7 +206,7 @@ Rajasekaran 的案例极具说明性：为 Sonnet 4.5 精心设计的 context re
 - `Cursor Harness Model`
 
 ## 相关实体
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch02-prompt/)
 - [Browser Use Runtime Harness](../ch04-101-browser-use-为-agent-构建-runtime-harness)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)

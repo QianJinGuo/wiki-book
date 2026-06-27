@@ -63,7 +63,7 @@
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则)
 - [Hermes Agent](../ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队)
 - [Qoder Skills 完全指南](../ch07-029-qoder-skills-完全指南)
-- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+- Hermes Agent Skill
 - [9个Agent技能模块化SageMaker微调生命周期](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论)
 - [SkillClaw](../ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化)

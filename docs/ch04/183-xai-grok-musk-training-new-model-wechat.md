@@ -122,11 +122,11 @@ xAI作为独立公司，过去两年面对四个无解的问题。
 ** 第二，模型差异化窗口已经关闭。  **
 Grok 1到Grok 4一路推下来，bench
 ## 相关实体
-- [Xai Dissolved Grok Colossus2 Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/xai-dissolved-grok-colossus2-analysis.md)
-- [Xai Shutdown Grok Still Alive](https://github.com/QianJinGuo/wiki/blob/main/entities/xai-shutdown-grok-still-alive.md)
-- [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
-- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
-- [Hermes Skill System Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system-winty.md)
+- Xai Dissolved Grok Colossus2 Analysis
+- [Xai Shutdown Grok Still Alive](../ch01-568-xai解散但grok还活着/)
+- [Building Blocks For Foundation Model Training And Inference On Aws](../ch11-117-building-blocks-for-foundation-model-training-and-inference/)
+- Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606
+- [Hermes Skill System Winty](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
 
 ---
 

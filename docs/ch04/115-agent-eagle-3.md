@@ -6,11 +6,11 @@
 
 ## 背景：为什么 Agent 场景对推理速度要求更高
 
-过去两年，大语言模型（LLM）的应用形态从 ChatBot 快速演进为 [AI Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-patterns.md)。在自动化代码工程、长文档分析、多轮工具调用等复杂工作流中，上下文长度已从千级 token 扩展至数十万级；与此同时，LLM 的自回归生成具有强串行特性，导致延迟和吞吐成为制约用户体验与成本的核心瓶颈。
+过去两年，大语言模型（LLM）的应用形态从 ChatBot 快速演进为 AI Agent。在自动化代码工程、长文档分析、多轮工具调用等复杂工作流中，上下文长度已从千级 token 扩展至数十万级；与此同时，LLM 的自回归生成具有强串行特性，导致延迟和吞吐成为制约用户体验与成本的核心瓶颈。
 
 Agent 执行"思考—行动—观察—再规划"多轮循环，生成 500 tokens 的"思考过程"在 20 tokens/s 速度下需 25 秒，10 轮循环可达分钟级。这种延迟复合放大效应使得 Agent 场景对推理速度的要求远超单轮对话场景。
 
-LLM 的自回归生成是典型的 [memory-bound](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 瓶颈：每生成一个 token 都需执行一次前向计算并伴随对显存的高频访问（权重访问 + KV cache 读写），而自回归的串行依赖使整个生成过程难以并行优化。
+LLM 的自回归生成是典型的 memory-bound 瓶颈：每生成一个 token 都需执行一次前向计算并伴随对显存的高频访问（权重访问 + KV cache 读写），而自回归的串行依赖使整个生成过程难以并行优化。
 
 ## 投机解码（Speculative Decoding）核心逻辑
 
@@ -175,19 +175,19 @@ EAGLE-3 相对 MTP 在 Mean TPOT 上有 59% 改善，但文章更强调 P95/P95 
 ## 相关技术链接
 
 ## 相关实体
-- [Eagle 3 Speculative Decoding Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/eagle-3-speculative-decoding-optimization.md)
-- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-smart-shopping-guide-agent-evaluation-pzmx.md)
-- [Gemma 4 Multi Token Prediction Drafters](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-multi-token-prediction-drafters.md)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](https://github.com/QianJinGuo/wiki/blob/main/entities/mellum-2-jetbrains-open-12b-moe-code-model.md)
-- [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
+- Eagle 3 Speculative Decoding Optimization
+- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch04-332-多轮-agent-场景下-滴滴的-eagle-3-训推加速实践/)
+- [Gemma 4 Multi Token Prediction Drafters](../ch01-214-gemma-4-multi-token-prediction-drafters/)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch01-442-mellum-2-jetbrains-open-weight-12b-moe-code-llm/)
+- [Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/didi-eagle-3-speculative-decoding-agents.md)
 
 →
 
-→ [Transformer 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
+→ Transformer 架构
 
-→ [Attention 机制](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md)
+→ Attention 机制
 
 ---
 

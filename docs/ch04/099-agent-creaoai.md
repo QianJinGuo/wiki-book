@@ -63,7 +63,7 @@ CreaoAI 的凭据隔离设计有一个非常硬的安全特性：**即使 prompt
 
 ### 5. IP 白名单 + JWT 双层校验的纵深防御
 
-桥接层用了两层校验：① IP 白名单（仅沙箱宿主内网）做网络层隔离；② 每次运行的短期 JWT 做应用层身份校验。 两层校验的纵深防御价值在于：① 攻击者必须同时突破网络层（拿到内网 IP）和应用层（伪造 JWT 签名）才能成功调用桥接层；② 即使一层被突破，另一层仍能防御；③ 两层在物理层面绑定——IP 白名单把桥接层绑定到特定物理基础设施，外部拿到地址也没用。这条线连到 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 强调的「多层 control plane」设计——Context/Permission/Runtime/Verification/Audit 各层独立、相互验证。
+桥接层用了两层校验：① IP 白名单（仅沙箱宿主内网）做网络层隔离；② 每次运行的短期 JWT 做应用层身份校验。 两层校验的纵深防御价值在于：① 攻击者必须同时突破网络层（拿到内网 IP）和应用层（伪造 JWT 签名）才能成功调用桥接层；② 即使一层被突破，另一层仍能防御；③ 两层在物理层面绑定——IP 白名单把桥接层绑定到特定物理基础设施，外部拿到地址也没用。这条线连到 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 强调的「多层 control plane」设计——Context/Permission/Runtime/Verification/Audit 各层独立、相互验证。
 
 ### 6. 统一 `executeAgent` 函数是触发面抽象的关键
 
@@ -85,18 +85,18 @@ CreaoAI 给出的可推广设计原则是：「对于云平台上持久化的每
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](https://github.com/QianJinGuo/wiki/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
-- [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch01-247-vibe-coding-and-agentic-engineering-convergence-simon-willi/)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程/)
+- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding/)
+- [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析/)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [构建基于多智能体架构的深度思考交易系统 V2](../ch01-728-构建基于多智能体架构的深度思考交易系统/)
+- MOC
 
 ---
 

@@ -46,11 +46,11 @@
 > [!contradiction] 参见 **持相反观点**：当前 AI 辅助编程范式（包括 vibe coding）已被广泛应用于生产环境，其可行性不应被全盘否定。
 > 关于 Vibe Coding 的生产可行性，另一种观点认为当前的 AI 能力尚未成熟，不应完全依赖 AI 生成代码。
 ## 相关实体
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md)
-- [Tmall Marketing Ai Workflow](https://github.com/QianJinGuo/wiki/blob/main/entities/tmall-marketing-ai-workflow.md)
-- [Harness Engineering Alibaba Java Case Study](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-alibaba-java-case-study.md)
-- [Skill Formal Theory Survey 10Papers](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-formal-theory-survey-10papers.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
+- [Tmall Marketing Ai Workflow](../ch01-424-淘天营销中后台-ai-生码工作流最佳实践/)
+- [Harness Engineering Alibaba Java Case Study](../ch05-008-阿里工程师-harness-工程化实践-双案例合并/)
+- [Skill Formal Theory Survey 10Papers](../ch04-036-10篇论文看懂ai-agent-skill-表示-执行-评估与进化/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代的生产力悖论当协作本身成为最大的瓶颈.md)
 三、Agent 在交付和稳定性链路中的缺席

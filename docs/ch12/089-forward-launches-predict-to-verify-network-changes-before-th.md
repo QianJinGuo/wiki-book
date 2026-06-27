@@ -9,15 +9,15 @@
 - Forward Networks Predict: Network Formal Verification
 
 ## 相关实体
-- [Huntress Edr Itdr](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr.md)
-- [Huntress Edr Itdr Unified Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr-unified-detection.md)
-- [From Kubernetes Dev Setup To Production What Actually Change](https://github.com/QianJinGuo/wiki/blob/main/entities/from-kubernetes-dev-setup-to-production-what-actually-change.md)
-- [Habby Game Aws Devops Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/habby-game-aws-devops-agent.md)
-- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md)
+- [Huntress Edr Itdr](../ch12-079-how-unified-edr-and-itdr-stop-attacks-before-they-spread/)
+- [Huntress Edr Itdr Unified Detection](../ch11-198-how-unified-edr-and-itdr-stop-attacks-before-they-spread/)
+- [From Kubernetes Dev Setup To Production What Actually Change](../ch11-083-from-kubernetes-dev-setup-to-production-what-actually-chang/)
+- [Habby Game Aws Devops Agent](../ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践/)
+- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07-039-aws-devops-agent-mcp-server-打通混合云网络排障的最后一公里/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/forward-networks-predict-network-verification.md)
 
-- [jane street — 形式化方法与编程的未来](https://github.com/QianJinGuo/wiki/blob/main/entities/jane-street-formal-methods-future-programming.md)
+- [jane street — 形式化方法与编程的未来](../ch12-099-jane-street-形式化方法与编程的未来/)
 
 ## 深度分析
 

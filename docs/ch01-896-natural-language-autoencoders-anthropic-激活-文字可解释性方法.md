@@ -81,9 +81,9 @@ NLAs（本文）— 激活 → 文字闭环，直接输出人类可读的解释
 
 ## 相关概念
 - [Anthropic](../ch07-044-anthropic-mcp-重新定义-tool-search-代码编排) — 研究机构，NLAs 是其可解释性研究的最新成果
-- [Mechanistic Interpretability](https://github.com/QianJinGuo/wiki/blob/main/concepts/mechanistic-interpretability.md) — 机械可解释性方法论，NLAs 是该领域的前沿工具
+- Mechanistic Interpretability — 机械可解释性方法论，NLAs 是该领域的前沿工具
 - [Sparse Autoencoders](../ch01-903-sparse-autoencoders) — 前代可解释性方法，NLAs 在其基础上发展出文字翻译能力
-- [Activation Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/activation-engineering.md) — 激活工程方法体系，NLAs 提供了读取和解释激活的新手段
+- Activation Engineering — 激活工程方法体系，NLAs 提供了读取和解释激活的新手段
 - [原文存档（中文）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-nla-natural-language-autoencoders-interpretability.md)
 ---  
 *Last updated: 2026-05-19*  

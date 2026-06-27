@@ -56,7 +56,7 @@
 
 > 项目过程中产生的事实先留在项目记忆层，只有经过结项审视和人工确认，才会选择性地进入长期知识。这样既避免了噪声污染长期 wiki，也保证了每次结项都能沉淀出真正有复用价值的业务知识。
 
-**这与 [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的关系**: 阿里实践把"成熟 → 提升" 的边界明确划在"结项审视和人工确认"，与 Hermes 项目的 `extracted | merged | inferred | ambiguous` provenance state 思路一致，但更早地把"提升"动作显式纳入流程。
+**这与 Agent Memory Lifecycle Philosophies 的关系**: 阿里实践把"成熟 → 提升" 的边界明确划在"结项审视和人工确认"，与 Hermes 项目的 `extracted | merged | inferred | ambiguous` provenance state 思路一致，但更早地把"提升"动作显式纳入流程。
 
 ## 4. 两道质量门 + 一道硬门禁
 
@@ -241,7 +241,7 @@
 
 阿里云的 Agent Team 模式揭示了一个关键设计约束：**共享长期 wiki，各自维护视角**。PD Agent、前端 Agent、后端 Agent、测试 Agent 共享同一份长期业务知识，保证对业务理解的一致性；但每个 Agent 从整体需求中只拆解出跟自己职责相关的部分，各自维护 requirements、plan 和过程产物。队长负责各方产物对齐，确保前后端接口契约一致、测试覆盖完整。
 
-这一模式与 [Agent Role Specialization](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-role-specialization.md) 的多角色 Agent 协作思想同源——不是按流程步骤机械切分，而是看是否真的存在**独立判断、独立产物、并行执行和责任隔离**的需要。在没有足够多真实复杂需求验证之前，不急于提前铺设，体现了工程化节奏的克制。
+这一模式与 Agent Role Specialization 的多角色 Agent 协作思想同源——不是按流程步骤机械切分，而是看是否真的存在**独立判断、独立产物、并行执行和责任隔离**的需要。在没有足够多真实复杂需求验证之前，不急于提前铺设，体现了工程化节奏的克制。
 
 ### 端到端闭环的本质：上下文 → 编排 → 执行 → 反馈的四层循环
 
@@ -263,13 +263,13 @@
 
 "不直接升级"原则是双仓库设计最关键的设计哲学：项目过程中产生的事实先留在项目记忆层（feature 分支），只有经过结项审视和人工确认，才会选择性地进入长期 wiki。这样既**避免了噪声污染长期 wiki**，也保证了每次结项都能沉淀出真正有复用价值的业务知识。
 
-这与 [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的"提升"边界思路一致——[Agent Memory Architecture](../ch04-029-agent-memory-architecture-past-influence-future-ruofei) 强调的 provenance state（extracted | merged | inferred | ambiguous）在阿里云实践里被显式化为**结项审视 + 人工确认**两个可操作的动作节点，而不是依赖 LLM 自行判断何时该"升格"。
+这与 Agent Memory Lifecycle Philosophies 的"提升"边界思路一致——[Agent Memory Architecture](../ch04-029-agent-memory-architecture-past-influence-future-ruofei) 强调的 provenance state（extracted | merged | inferred | ambiguous）在阿里云实践里被显式化为**结项审视 + 人工确认**两个可操作的动作节点，而不是依赖 LLM 自行判断何时该"升格"。
 
 ### 效果度量先于自我迭代：Agent 成长的可验证路径
 
 文章指出现有最大短板之一是**缺少 Agent 效果的度量体系**。4 个观测维度（人力投入/需求质量/线上稳定性/协作效率）的基线必须先建立，才能判断每一轮 skill / 提示词迭代到底是改进还是退化，Agent 的自我成长才有据可循。
 
-这与 [Agent Self Improvement Loops](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) 的"度量驱动迭代"思想一致——没有基线就没有改进，没有改进基线就永远停在原点。
+这与 Agent Self Improvement Loops 的"度量驱动迭代"思想一致——没有基线就没有改进，没有改进基线就永远停在原点。
 
 ## 12. 实践启示
 
@@ -281,9 +281,9 @@
 
 4. **人只在关键节点确认** — 需求澄清、方案确认、发布动作 3 个节点保留人工门禁，其余环节 Agent 自主推进。
 
-5. **多 Agent 协作的边界 — 共享长期 wiki，各自维护视角** — 各 Agent 共享业务知识但独立维护自己的过程产物。这与 [Agent Role Specialization](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-role-specialization.md) 的多角色 Agent 思想同源。
+5. **多 Agent 协作的边界 — 共享长期 wiki，各自维护视角** — 各 Agent 共享业务知识但独立维护自己的过程产物。这与 Agent Role Specialization 的多角色 Agent 思想同源。
 
-6. **效果度量先于自我迭代** — 4 维度（人力/质量/稳定/协作）基线先建立，再判断 skill/prompt 迭代是改进还是退化。这与 [Agent Self Improvement Loops](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) 的"度量驱动迭代"思想一致。
+6. **效果度量先于自我迭代** — 4 维度（人力/质量/稳定/协作）基线先建立，再判断 skill/prompt 迭代是改进还是退化。这与 Agent Self Improvement Loops 的"度量驱动迭代"思想一致。
 
 ## 相关实体
 
@@ -292,16 +292,16 @@
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者) — 阿里泊予 评测 Harness 视角（兄弟文章）
 - [从提需求到部署发布全Ai全自动化后研发效能全面跃升](../ch09-065-从提需求到部署发布-全ai全自动化后-研发效能全面跃升) — 腾讯 CodeBuddy L1→L2→L3 演进
 - [Ai Native Rd Org Design](../ch05-018-ai-native-时代研发组织何去何从) — AI 原生研发组织设计
-- [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Agent Harness 上下文管理
+- Agent Harness Context Management Working Set — Agent Harness 上下文管理
 - [Agent Skill Writing Guide](../ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则) — Skill 编写基础
 - [Agent Skill Writing Practices](../ch04-242-agent-skill-高质量编写规范) — Skill 编写实战（决策树替代模糊判断）
-- [Agent Role Specialization](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-role-specialization.md) — 多角色 Agent 协作
-- [Agent Self Improvement Loops](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) — 度量驱动的 Agent 自我迭代
-- [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — 记忆生命周期与"提升"边界
+- Agent Role Specialization — 多角色 Agent 协作
+- Agent Self Improvement Loops — 度量驱动的 Agent 自我迭代
+- Agent Memory Lifecycle Philosophies — 记忆生命周期与"提升"边界
 - [Agent Memory Architecture](../ch04-029-agent-memory-architecture-past-influence-future-ruofei) — Agent 记忆架构
-- [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — Agent 编排模式
-- [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- Agent Orchestration Patterns — Agent 编排模式
+- Agent Deployment Strategy — Agent 部署策略
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-end-to-end-business-requirements-agent-multica-2026.md)
 

@@ -73,7 +73,7 @@ Karpathy 的"bits"框架揭示了 AI Agent 时代程序员价值重构的核心�
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-ai-agent-7-bits-value-decline-2026-allentan.md)
 
-- [ai agent memory systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
+- ai agent memory systems
 
 ---
 

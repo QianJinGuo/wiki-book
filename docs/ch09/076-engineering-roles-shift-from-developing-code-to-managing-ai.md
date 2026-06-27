@@ -8,10 +8,10 @@
 
 ## 相关实体
 
-- [scaling archunit with nebula archrules](https://github.com/QianJinGuo/wiki/blob/main/entities/scaling-archunit-with-nebula-archrules.md)
+- [scaling archunit with nebula archrules](../ch11-236-scaling-archunit-with-nebula-archrules/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/820297.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 ## 摘要
 
 CIO Dive 2026-05-14 报道 Harness 公司发布的《State of Engineering Excellence 2026》调研结果：在 700 名企业开发者与工程负责人中，**81% 表示 AI 节省下来的编码时间现在被用来审查 AI 的产出**；近三分之一的开发者工作时间被这种"看不见的工作"占据。该报告揭示了 AI 编码工具大规模落地后，工程角色正从"开发者"转向"AI 管理者"，但企业现有的生产力衡量框架仍然停留在上一个时代。
@@ -84,12 +84,12 @@ Harness 报告给出的建议可以归纳为四个层面：
 
 ## 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Karpathy 关于 AI 时代工程师角色转变的访谈
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md) — Vibe Coding 到 Agentic Engineering 范式转变
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md) — Claude Code 源码机制详解
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md) — Agent 原理架构与工程实践
-- [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md) — 多智能体交易系统架构
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md) — OpenClaw 完全指南
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) — Karpathy 关于 AI 时代工程师角色转变的访谈
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程/) — Vibe Coding 到 Agentic Engineering 范式转变
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/) — Claude Code 源码机制详解
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践/) — Agent 原理架构与工程实践
+- [构建基于多智能体架构的深度思考交易系统 V2](../ch01-728-构建基于多智能体架构的深度思考交易系统/) — 多智能体交易系统架构
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/) — OpenClaw 完全指南
 
 ---
 

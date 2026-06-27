@@ -39,8 +39,8 @@ Meta Superintelligence Lab（超级智能实验室）是继 FAIR 之后 Meta 在
 2. subagent multitasking 的实现路径（视觉、购物、对话 subagents 协同）将是多模态 agent 架构的重要参考
 
 ## 相关实体
-- [Meta's AI Chief On AI Beef, New Models And Life With Zuck - EP 71 Alex Wang](https://github.com/QianJinGuo/wiki/blob/main/entities/meta-ai-chief-alex-wang-muse-spark-ai-wars.md)
-- [Ai Hardware Cambrian Baidu Intelligent Cloud Catalyst](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-hardware-cambrian-baidu-intelligent-cloud-catalyst.md)
+- [Meta's AI Chief On AI Beef, New Models And Life With Zuck - EP 71 Alex Wang](../ch01-564-meta-s-ai-chief-on-ai-beef-new-models-and-life-with-zuck/)
+- [Ai Hardware Cambrian Baidu Intelligent Cloud Catalyst](../ch01-177-ai-硬件寒武纪时刻-百度智能云如何成为爆发催化剂-3-类玩家-4-个深度案例/)
 
 ---
 

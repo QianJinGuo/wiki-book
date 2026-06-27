@@ -61,7 +61,7 @@ Factory 核心 agent 基础设施负责人 Luke Alvoeiro 的核心论点：**人
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- MOC
 
 ---
 

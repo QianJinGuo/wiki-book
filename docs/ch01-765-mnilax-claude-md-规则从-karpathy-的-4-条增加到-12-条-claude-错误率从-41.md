@@ -13,7 +13,7 @@
 - [你的ai代码越写越乱，他72小时合了14个pr——差距只在一个机制](../ch01-497-garry-tan)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-md-12-rules-mnilax-cf2019.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 ## 深度分析
 
 Mnilax：CLAUDE.md 规则从 Karpathy 的 4 条增加到 12 条，Claude 错误率从 41% 降到 3% 涉及agent领域的核心技术议题。

@@ -9,7 +9,7 @@
 
 - [agent 开发范式演进：从环境工程出发](../ch04-072-agent-开发范式演进-从环境工程出发)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- MOC
 ## 深度分析
 GPT-Image-2 在 Arena.AI Text-to-Image 排行榜以 1512 分登顶，领先第二名谷歌 Nano-Banana-2 共 242 分，是迄今为止最强大的图像生成模型。
 **核心能力矩阵：**

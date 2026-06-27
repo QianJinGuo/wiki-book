@@ -29,7 +29,7 @@ Agent 365 的 GA 标志着 Microsoft 的战略重心：**不只做 Agent 构建�
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
 - [Agent-to-Agent (A2A) 协议标准 — Agent间通信协议](../ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-copilot-studio-agent-governance.md)
 
 ---

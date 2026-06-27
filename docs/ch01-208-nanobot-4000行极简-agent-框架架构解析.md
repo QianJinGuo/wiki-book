@@ -184,7 +184,7 @@ nanobot 把所有决策路径强塞进一个 while 循环，与 LangGraph 的 DA
 - 大型代码库：只放目录树，LLM 需要时调用 `read_file`
 - 长对话历史：只放主题摘要，LLM 需要时 grep HISTORY.md
 
-参见 [working set 管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)。这种模式的代价是**额外的 tool call 延迟**——但对长寿命 Agent 而言，延迟的代价远小于 context 污染的代价。
+参见 working set 管理。这种模式的代价是**额外的 tool call 延迟**——但对长寿命 Agent 而言，延迟的代价远小于 context 污染的代价。
 
 ### 4. "错误恢复委托给 LLM"是健壮性的范式转移
 
@@ -254,12 +254,12 @@ nanobot 把所有决策路径强塞进一个 while 循环，与 LangGraph 的 DA
 
 ## 关联实体
 
-- [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Progressive Loading 与 working set 管理理论
+- Agent Harness Context Management Working Set — Progressive Loading 与 working set 管理理论
 - [Loop Engineering Addy Osmani Challengehub](../ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad) — ReAct 循环工程化的另一视角
 - [Codex Major Update Appshots Goal Xinzhiyuan](../ch01-261-codex-重磅升级-appshots-goal-毕业-锁屏远程操控) — Codex 同样采用单循环 + 长寿命任务设计
 - [天猫新品营销技术团队Ai编码实战指南上](../ch09-029-天猫新品营销技术团队ai编码实战指南-上) — AGENT.md 持续约定模式的实战
 - [腾讯研究院Ai速递 20260506](../ch01-506-腾讯研究院ai速递-20260506) — CL-Bench Life 揭示的"上下文误用"问题，呼应 nanobot 的 progressive loading 设计
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent harness 的工程框架
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/) — Agent harness 的工程框架
 
 ## 相关链接
 

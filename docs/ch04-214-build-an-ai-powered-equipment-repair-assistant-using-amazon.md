@@ -92,10 +92,10 @@ Strands Agent 的 `@tool` 装饰器模式使得能力扩展无需基础设施变
 - [Agentcore Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施) — AgentCore 工程化实践
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew) — AgentCore 安全认证流程
 - [Aws Bedrock Agentcore Doris Mcp Server](../ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式) — AgentCore + MCP Server 集成
-- [Retrieval Augmented Generation Advanced](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-advanced.md) — RAG 高级模式
-- [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
-- [Aws Ai Services](https://github.com/QianJinGuo/wiki/blob/main/concepts/aws-ai-services.md) — AWS AI 服务全景
-- [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) — 生产级 Agent 工程
+- Retrieval Augmented Generation Advanced — RAG 高级模式
+- Agent Deployment Strategy — Agent 部署策略
+- Aws Ai Services — AWS AI 服务全景
+- Production Agent Engineering — 生产级 Agent 工程
 
 ---
 

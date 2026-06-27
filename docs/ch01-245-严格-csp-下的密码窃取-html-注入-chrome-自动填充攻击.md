@@ -190,7 +190,7 @@ Content-Security-Policy:
 - [incendium fuzzing ms rpc](../ch12-095-incendium-fuzzing-ms-rpc)
 - [the interface is no longer the product](../ch03-001-the-interface-is-no-longer-the-product)
 - [a route to root in a 4g industrial router](../ch01-759-a-route-to-root-in-a-4g-industrial-router)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 ---
 

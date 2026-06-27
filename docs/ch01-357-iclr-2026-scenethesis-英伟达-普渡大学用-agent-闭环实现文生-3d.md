@@ -11,7 +11,7 @@
 - [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](../ch04-263-iclr-2026-英伟达-普渡大学-用agent闭环实现文生3d)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/3CITzkDLeeDM0Olz9wudrg.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- MOC
 ## 摘要
 
 英伟达 Cosmos Lab 与普渡大学联合提出 **Scenethesis**（ICLR 2026），用"语言 + 视觉 + 物理" 三模态 Agent 闭环实现可交互的 3D 场景生成。该工作将"文生 3D" 从一次性生成重塑为"规划 → 落地 → 物理优化 → 自检修复" 的四阶段闭环流程，核心创新在于引入有符号距离场（SDF）做细粒度物理约束，并加入 judge 模块做一致性自检。实验显示碰撞率从 6.1% 降至 0.8%，首轮通过率从 72% 提升至 91%，在户外开放场景同样有效。
@@ -153,7 +153,7 @@ Scenethesis 的真正贡献在于范式层面：
 - [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](../ch01-710-2026-年面向-llm-的-rl-方法总结-从-ppo-到-dpo-到-grpo-再到多智能体-rl) — 2026 LLM RL 算法综述
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on) — NVIDIA Isaac Lab 机器人 RL 扩展
 - [Minimax M3 Frontier Three Set Open Source](../ch01-814-国内首个-frontier-三件套开源大模型-minimax-m3-完整技术拆解) — MiniMax M3 开源前沿三件套
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md) — NVIDIA Isaac Lab + SageMaker 人形机器人 RL
+- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid — NVIDIA Isaac Lab + SageMaker 人形机器人 RL
 - [Four Sub Agent Patterns 2026](../ch04-287-agent-如何管理其他-agent-四种-sub-agent-模式) — 2026 四大子 Agent 模式
 
 ---

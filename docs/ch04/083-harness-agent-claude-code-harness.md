@@ -160,24 +160,24 @@
 
 **本实体关注"工程实施"：具体的 prompt 模板、数据列规范、5 步搭建法、6 个 Agent 实战数据**（1.5 周 → 1-2 天 5x 加速比）。
 
-- [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md) — 关注"AI 全自动做评测 + 系统级自动优化循环"（产品/平台视角，AI 自主从入口到分析）。本实体是"评测方案设计"的方法论层，那个是"评测平台产品"的实现层；两者形成"方法论 ↔ 平台实现"互补。
-- [Ai Evals Methodology](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-evals-methodology.md) — Langfuse 出品的通用 AI Evals 三种方法（人工 / 自动 / LLM-as-Judge）。本实体是"业务 Agent 评测"的具体工程方案；那个是评估方法论的科普。
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md) — Go 语言 YAML 驱动的 AgentEval 框架（pass@k + pass^k + SQLite + CI/CD）。本实体是"Prompt 即评测逻辑"路线（评测逻辑编码为自然语言）；那个是"YAML 配置驱动"路线（评测逻辑仍是代码）。两条互补路径。
-- [Cursor Harness Model Production Floor](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-harness-model-production-floor.md) — Cursor 复盘"模型 + Harness 组合发布" + 三层评估（离线/线上/代理）。本实体是"Harness 评测自身"的方法论；那个是"被评测的 Harness"如何运营。
-- [Better Harness Eval Trace Harness Hill Climbing](https://github.com/QianJinGuo/wiki/blob/main/entities/better-harness-eval-trace-harness-hill-climbing.md) — Trace-driven 评测 + Harness hill-climbing 自优化循环。本实体是"评测方案设计"的人工智能辅助；那个是"评测驱动的 Harness 优化"反馈环。
+- [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](../ch01-364-harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统/) — 关注"AI 全自动做评测 + 系统级自动优化循环"（产品/平台视角，AI 自主从入口到分析）。本实体是"评测方案设计"的方法论层，那个是"评测平台产品"的实现层；两者形成"方法论 ↔ 平台实现"互补。
+- [Ai Evals Methodology](../ch01-187-ai-evals-评估方法论/) — Langfuse 出品的通用 AI Evals 三种方法（人工 / 自动 / LLM-as-Judge）。本实体是"业务 Agent 评测"的具体工程方案；那个是评估方法论的科普。
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch04-141-agenteval-yaml驱动的agent评测框架/) — Go 语言 YAML 驱动的 AgentEval 框架（pass@k + pass^k + SQLite + CI/CD）。本实体是"Prompt 即评测逻辑"路线（评测逻辑编码为自然语言）；那个是"YAML 配置驱动"路线（评测逻辑仍是代码）。两条互补路径。
+- [Cursor Harness Model Production Floor](../ch01-235-cursor-harness-model-production-floor/) — Cursor 复盘"模型 + Harness 组合发布" + 三层评估（离线/线上/代理）。本实体是"Harness 评测自身"的方法论；那个是"被评测的 Harness"如何运营。
+- [Better Harness Eval Trace Harness Hill Climbing](../ch05-058-从-autoresearch-到-better-harness-自动优化真正难在评价信号/) — Trace-driven 评测 + Harness hill-climbing 自优化循环。本实体是"评测方案设计"的人工智能辅助；那个是"评测驱动的 Harness 优化"反馈环。
 
 ## 相关实体
-- [Claude Code Best Practices Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-best-practices-prompt-engineering.md)
+- Claude Code Best Practices Prompt Engineering
 
-- [perplexity computer empirical study: how ai agents reshape k](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-computer-knowledge-work-empirical-study.md)
+- [perplexity computer empirical study: how ai agents reshape k](../ch04-085-perplexity-computer-empirical-study-how-ai-agents-reshape-k/)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- MOC
 ## 相关主题
 
-- [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md) — AHE 通用 Harness 工程框架
-- [Claude Code Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture.md) — Claude Code 架构（作为 Harness 搭建者的能力来源）
+- Ahe Agentic Harness Engineering — AHE 通用 Harness 工程框架
+- [Claude Code Architecture](../ch01-571-claude-code-架构解析/) — Claude Code 架构（作为 Harness 搭建者的能力来源）
 - LLM-as-Judge 通用方法
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-coding-agent-quality-defense-five-control-mechanisms.md) — AI Coding Agent 质量防御五机制（评测即其中一环）
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch09-016-ai-编程智能体的质量防线-5-个代码质量控制机制-反馈传感器-语义评估-重构边界-来源追溯-智能体攻击/) — AI Coding Agent 质量防御五机制（评测即其中一环）
 
 ---
 

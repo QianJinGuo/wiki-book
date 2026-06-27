@@ -11,14 +11,14 @@ Anthropic's official Claude managed agents: persistent sessions, tool use, memor
 **Source**: [raw article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-managed-agents-official.md) | **Review**: value=8 confidence=9    
 
 ## 相关实体
-- [Claude Managed Agents 官方 Harness 平台指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-guide.md)
-- [claude managed agents official](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-official.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
-- [Anthropic Claude Managed Agents 平台正式发布](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
-- [Claude Managed Agents 开发者指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-developer-guide.md)
-- [Multica — 开源 Managed Agents 平台](https://github.com/QianJinGuo/wiki/blob/main/entities/multica-managed-agents-platform.md)
+- [Claude Managed Agents 官方 Harness 平台指南](../ch01-445-claude-managed-agents-官方-harness-平台指南/)
+- [claude managed agents official](../ch04-457-claude-managed-agents-official/)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch01-280-anthropic-官方-agent-harness-平台-claude-managed-agents-完整指南/)
+- [Anthropic Claude Managed Agents 平台正式发布](../ch01-181-anthropic-claude-managed-agents-平台正式发布/)
+- [Claude Managed Agents 开发者指南](../ch01-329-claude-managed-agents-开发者指南/)
+- [Multica — 开源 Managed Agents 平台](../ch07-050-multica-开源-managed-agents-平台/)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- MOC
 ## 深度分析
 Claude Managed Agents 的发布标志着 Anthropic 从模型提供商向平台提供商的关键跃迁。2026年5月6日的更新引入三项核心能力：**Dreaming**（自省式记忆优化）、**Outcomes**（基于评分 rubric 的结果导向执行）和**Multi-Agent Orchestration**（多智能体协作编排），三者共同构成了一个完整的 Agent 生命周期管理系统。    
 **Dreaming 的意义**超出自愈记忆本身——它是一种跨会话的元学习机制。Agent 在会话结束后，系统性地回顾记忆存储、提取模式、重组高价值记忆，使后续会话的起点持续提升。这与人类认知中的"睡眠时记忆巩固"高度类比，区别在于 AI 可以精确追踪每一次工具调用失败的原因并显式改写记忆结构。Harvey 在测试中将完成率提升约 6 倍印证了这一机制的有效性。    

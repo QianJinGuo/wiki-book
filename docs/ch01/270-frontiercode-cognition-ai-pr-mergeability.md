@@ -143,15 +143,15 @@ Claude Opus 4.8 在 Diamond 上仅得 13.4%，意味着即使是最强的模型�
 
 ## 相关阅读
 
-- [ProgramBench](https://github.com/QianJinGuo/wiki/blob/main/entities/programbench-agent-benchmark.md) — 程序化编码基准 (与 FrontierCode 的 maintainer-rubric 范式对比)
-- [Claude Code Performance Benchmarking](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-performance-benchmarking.md) — 单 agent 性能基准
+- [ProgramBench](../ch04-152-programbench-agent-benchmark/) — 程序化编码基准 (与 FrontierCode 的 maintainer-rubric 范式对比)
+- [Claude Code Performance Benchmarking](../ch09-031-claude-code-性能基准评测/) — 单 agent 性能基准
 - **Devin Self-Improving Agent** — FrontierCode 的核心用户之一
 - **LLM-as-Judge** — mutagent 是 LLM-as-judge 的进阶范式
 - **Agent Evaluation Methodology** — 评估方法论综述
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- MOC
 
 ---
 

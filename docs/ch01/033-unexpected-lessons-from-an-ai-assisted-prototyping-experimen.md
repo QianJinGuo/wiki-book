@@ -90,11 +90,11 @@ Adobe Design 的 Veronica Peitong Chen 在 2026 年 6 月复盘了一个在 Adob
 
 ## 相关实体
 
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](https://github.com/QianJinGuo/wiki/blob/main/entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验.md)
-- [system over model, tested: reproducing mythos's freebsd find](https://github.com/QianJinGuo/wiki/blob/main/entities/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
-- [from doer to director: the ai mindset shift](https://github.com/QianJinGuo/wiki/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
-- [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
-- [How my non-engineering team at Sentry learned to ship](https://github.com/QianJinGuo/wiki/blob/main/entities/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](../ch01-079-特斯拉百万年薪招数据标注员-朝九晚五-无需ai经验/)
+- [system over model, tested: reproducing mythos's freebsd find](../ch01-754-system-over-model-tested-reproducing-mythos-s-freebsd-find/)
+- [from doer to director: the ai mindset shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift/)
+- DDoSing Software Delivery Pipelines
+- [How my non-engineering team at Sentry learned to ship](../ch01-372-how-my-non-engineering-team-at-sentry-learned-to-ship/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 

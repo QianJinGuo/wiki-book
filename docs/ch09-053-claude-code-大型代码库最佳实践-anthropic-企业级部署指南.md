@@ -79,7 +79,7 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题)
 
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch04-127-harness如何支撑agent在生产环境稳定运行)
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
+> 主题导航
 
 - [Claude Code 源码深度解析（13 核心机制）](../ch01-231-claude-code-源码深度解析-13-核心机制)
 - [Claude Code 源码核心机制详解](../ch01-162-claude-code-源码核心机制详解)
@@ -87,9 +87,9 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 - [Claude Code 可控性：软规则无法变成硬约束](../ch09-067-claude-code-可控性-软规则无法变成硬约束)
 - [Claude Managed Agents 开发者指南](../ch04-421-claude-managed-agents)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人)
-- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
+- Claude Code 工具设计演化
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- MOC
 ## 深度分析
 ### Agent 式搜索为何优于 RAG：代码库动态性的根本矛盾
 RAG 在大型代码库中的根本缺陷不是算法问题，而是信息论的必然：索引的离散性（embedding 向量）与代码库的连续性（每天几百次提交、重命名、删除）之间存在不可消除的张力。当工程师问「这个函数现在在哪里」，RAG 答案可能是两周前的快照，且没有任何提示告诉你它已经过期。  

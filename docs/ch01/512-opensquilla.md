@@ -24,23 +24,23 @@ OpenSquilla 推出 **9 个内置 Meta Skill**，代表从 Skill 1.0（单 Skill 
 
 **实测**：meta-kid-project-planner 5 步流程（立项/可行性/执行/外部信息/安全审查）跑 20+ 分钟，交付 3000 字 md + HTML 交互页面（哈利波特风格）。整体比龙虾类 Agent 省 **60-80%** token。
 
-**范式三线交点**：(1) 模型复杂指令理解能力飞升 (2) 社区 Skill 爆发需要更高抽象 (3) 大模型成本压力大 → Meta Skill 把 trial-and-error 烧 token 前置到 Skill 层。详见 [Meta Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/meta-skill.md) 实体页。
+**范式三线交点**：(1) 模型复杂指令理解能力飞升 (2) 社区 Skill 爆发需要更高抽象 (3) 大模型成本压力大 → Meta Skill 把 trial-and-error 烧 token 前置到 Skill 层。详见 [Meta Skill](../ch07-022-meta-skill/) 实体页。
 
 ## 深度分析
 ### 1. 路由决策的分层复杂性
-OpenSquilla 的 token 节省并非来自单一技术，而是多层路由策略的协同效果：ML 分类器基于消息长度、代码块存在性、关键词模式等手工特征，结合基于 embedding 的语义特征对请求复杂度打分。简单查询路由至廉价模型，轻量任务禁用深度推理（chain-of-thought），Skills 按需加载而非全量塞入上下文。这与 [GitHub Agentic Token 效率](https://github.com/QianJinGuo/wiki/blob/main/entities/github-agentic-token-efficiency.md) 中"消灭未使用的 MCP 工具注册"思路一脉相承——都是在 proxy 层削减不必要的 token 消耗。
+OpenSquilla 的 token 节省并非来自单一技术，而是多层路由策略的协同效果：ML 分类器基于消息长度、代码块存在性、关键词模式等手工特征，结合基于 embedding 的语义特征对请求复杂度打分。简单查询路由至廉价模型，轻量任务禁用深度推理（chain-of-thought），Skills 按需加载而非全量塞入上下文。这与 [GitHub Agentic Token 效率](../ch04-169-improving-token-efficiency-in-github-agentic-workflows-git/) 中"消灭未使用的 MCP 工具注册"思路一脉相承——都是在 proxy 层削减不必要的 token 消耗。
 
 ### 2. 四层认知架构的工程对标
-OpenSquilla 的 Working/Episodic/Semantic/Raw 四层记忆结构，直接对标认知科学中的人类记忆模型。与 [Agent Memory 模块化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-modular-framework.md) 中的 Information Extraction + Memory Management + Memory Storage + Information Retrieval 组件有系统性对应——两者都承认"记忆的核心问题是治理而非容量"。OpenSquilla 的 Memory Dream Consolidation（每 24 小时将分散记忆重组为更密集的知识）对应框架中的"整合碎片 + 层级迁移"操作。
+OpenSquilla 的 Working/Episodic/Semantic/Raw 四层记忆结构，直接对标认知科学中的人类记忆模型。与 [Agent Memory 模块化框架](../ch01-238-agent-memory-模块化框架与评测-memory-in-the-llm-era-4-模块-10-方案对比/) 中的 Information Extraction + Memory Management + Memory Storage + Information Retrieval 组件有系统性对应——两者都承认"记忆的核心问题是治理而非容量"。OpenSquilla 的 Memory Dream Consolidation（每 24 小时将分散记忆重组为更密集的知识）对应框架中的"整合碎片 + 层级迁移"操作。
 
 ### 3. 本地 embedding 的隐私-成本平衡
 OpenSquilla 通过 bundled ONNX inference 在设备上完成 embedding 计算，无需外部向量服务。这与  中"向量检索的语义近≠任务相关"问题形成互补：本地推理避免了数据外流，但 embedding 模型质量受限于本地算力。实战中需在隐私合规和模型精度间做明确权衡。
 
 ### 4. Syscall 隔离的容器替代方案
-Bubblewrap（Linux）+ Seatbelt（macOS）实现 syscall 级隔离，而非依赖 Docker。这类方案的优势在于：无容器运行时依赖、宿主机内核直接参与安全控制、overhead 更低。劣势是平台绑定强（Windows 无等效实现，文章中 Windows 默认为 no-op 安全模式）。[EdgeClaw](https://github.com/QianJinGuo/wiki/blob/main/entities/edgeclaw-openbmb.md) 等项目采用类似思路，在边缘部署场景下更具实际价值。
+Bubblewrap（Linux）+ Seatbelt（macOS）实现 syscall 级隔离，而非依赖 Docker。这类方案的优势在于：无容器运行时依赖、宿主机内核直接参与安全控制、overhead 更低。劣势是平台绑定强（Windows 无等效实现，文章中 Windows 默认为 no-op 安全模式）。[EdgeClaw](../ch01-663-edgeclaw-端云两栖龙虾框架/) 等项目采用类似思路，在边缘部署场景下更具实际价值。
 
 ### 5. Microkernel 架构的插件经济学
-100 行核心 orchestrator + 5 行 duck-typed class 即完成插件开发，无 SDK、无 manifest。这种极简接口设计降低了贡献门槛，但长期看版本兼容性维护和插件质量治理会变成隐性成本。与 [OpenClaw 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) 的模块化思路相比，OpenSquilla 更激进但也更具实验性。
+100 行核心 orchestrator + 5 行 duck-typed class 即完成插件开发，无 SDK、无 manifest。这种极简接口设计降低了贡献门槛，但长期看版本兼容性维护和插件质量治理会变成隐性成本。与 OpenClaw 架构 的模块化思路相比，OpenSquilla 更激进但也更具实验性。
 
 ## 实践启示
 ### 1. 构建本地 Token 监控看板

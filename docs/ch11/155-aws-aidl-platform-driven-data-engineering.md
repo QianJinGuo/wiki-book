@@ -9,11 +9,11 @@
 07 七、落地路径：成熟度模型与五步实施建议
 
 ## 相关实体
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-platform-on-aws-anthropics-native-platfor.md)
-- [Introducing Claude Platform On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-platform-on-aws.md)
-- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-一周综述aws-transform-上线一周年aws-云端-claude-platformec2-m3-ultr.md)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
-- [Openclaw Multi 4](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-4.md)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01-392-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
+- [Introducing Claude Platform On Aws](../ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
+- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](../ch01-609-aws-一周综述-aws-transform-上线一周年-aws-云端-claude-platform-ec2-m3-u/)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
+- [Openclaw Multi 4](../ch04-440-openclaw-multi-4/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-aidl-paradigm-shift-platform-driven-data-engineering.md)
 

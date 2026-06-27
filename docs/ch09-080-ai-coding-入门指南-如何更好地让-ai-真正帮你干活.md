@@ -99,11 +99,11 @@
 
 ## 相关实体
 
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
-- [Spec Coding](https://github.com/QianJinGuo/wiki/blob/main/concepts/specification-driven-agent-development.md)
+- [Harness Engineering](../ch05-041-harness-engineering-概念框架/)
+- Context Engineering
+- Spec Coding
 - [Claude Code Dynamic Workflows](../ch09-070-claude-code-dynamic-workflows-实战模式与构建技巧)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- MOC
 
 ---
 

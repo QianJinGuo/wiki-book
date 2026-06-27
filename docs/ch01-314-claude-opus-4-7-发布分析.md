@@ -97,9 +97,9 @@
 
 ## Cross-links
 - → [Anthropic](../ch07-044-anthropic-mcp-重新定义-tool-search-代码编排)
-- → [Claude Code 深度架构分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
-- → [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
-- → [KAIROS Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
+- → [Claude Code 深度架构分析](../ch01-846-claude-code-架构深度解析/)
+- → Claude Code 工具设计演化
+- → KAIROS Claude Code 常驻协作范式
 - → [Claude Code Agent 工程设计](../ch04-015-claude-code-的-agent-工程)
 - → [Claude Harness 设计：Generator-Evaluator](../ch01-677-anthropic)
 
@@ -114,9 +114,9 @@
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题)
 
-- [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
+- Harness Engineering 七层框架
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- MOC
 ## 深度分析
 ### 战略定位：从工具到代理的范式跃迁
 Opus 4.7 的核心叙事不是「更强」，而是**从辅助工具向自主代理**的角色转变。Boris Cherny 强调的 Auto mode 并行化、「Claude 做某某任务 /go」组合技能、以及 2-3 倍效率提升的验证机制，都在重新定义 human-AI 协作的边界——人类从「监督者」变成「发起者」。

@@ -15,7 +15,7 @@ FastAPI生产级认证+限流实战；零停机部署方案；一套代码覆盖
 ## 与现有知识库内容的关联
 - [Claude Managed Agents](../ch01-445-claude-managed-agents-官方-harness-平台指南) — 托管 Harness 平台
 - [Agent/Skills/Teams 架构演进与选型](../ch04-219-agent-skills-teams-架构演进过程及技术选型之道) — Anthropic Skills 认知一致性机制
-- [Skill 形式化理论](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) — Skill 的六元组定义与 DAG 步骤计划
+- Skill 形式化理论 — Skill 的六元组定义与 DAG 步骤计划
 
 ## 原始存档
 

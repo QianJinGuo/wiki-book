@@ -9,11 +9,11 @@
 - v×c = 7×8 = 56，stars = 4
 
 ## 相关实体
-- [Intelligent Radiology Workflow Optimization With Ai Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/intelligent-radiology-workflow-optimization-with-ai-agents.md)
-- [Amazon Nova Act Is Now Hipaa Eligible](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-act-is-now-hipaa-eligible.md)
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](https://github.com/QianJinGuo/wiki/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
-- [Improve Bot Accuracy With Amazon Lex Assisted Nlu](https://github.com/QianJinGuo/wiki/blob/main/entities/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
-- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](https://github.com/QianJinGuo/wiki/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
+- [Intelligent Radiology Workflow Optimization With Ai Agents](../ch04-286-intelligent-radiology-workflow-optimization-with-ai-agents/)
+- [Amazon Nova Act Is Now Hipaa Eligible](../ch04-392-amazon-nova-act-is-now-hipaa-eligible/)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
+- [Improve Bot Accuracy With Amazon Lex Assisted Nlu](../ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu/)
+- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-deepmind-accelerator-asia-pacific.md)
 

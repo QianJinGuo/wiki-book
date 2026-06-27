@@ -104,7 +104,7 @@ Apple 公开的方法涉及多个工具和层次：
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 ---
 

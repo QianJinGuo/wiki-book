@@ -14,7 +14,7 @@
 - [private fintech has quietly become bigger than public fintec](../ch03-096-private-fintech-has-quietly-become-bigger-than-public-fintec)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-04-15.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 ## 深度分析
 
 Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram 涉及code领域的核心技术议题。

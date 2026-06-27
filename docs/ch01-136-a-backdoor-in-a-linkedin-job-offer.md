@@ -49,7 +49,7 @@ The repo felt like a React frontend with a Node backend. The trap was in `app/te
 - [from doer to director: the ai mindset shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift)
 - [why internally-built ai fails fund accounting audits](../ch01-834-why-internally-built-ai-fails-fund-accounting-audits)
 - [back up and restore your amazon eks cluster resources using](../ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- MOC
 
 ---
 

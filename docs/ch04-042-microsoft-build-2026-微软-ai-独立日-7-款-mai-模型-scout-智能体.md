@@ -274,7 +274,7 @@
 - [wow-harness v3](../ch05-028-wow-harness-v3-ai-开发的治理协议) —— 跨 session 事件时间线
 - [OpenClaw](../ch01-515-花费-2-个星期写了-8-篇-openclaw-源码拆解文章-我发现90-的人对龙虾的理解都太表面了-深层次的真相竟然) —— 开源 AI 编程框架（Scout 基于它）
 - [Agent Harness 架构](../ch04-207-agent-harness-架构) —— 7 层 harness 模型
-- [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) —— 工作集视角
+- Agent Harness 上下文管理 —— 工作集视角
 
 ## 深度分析
 

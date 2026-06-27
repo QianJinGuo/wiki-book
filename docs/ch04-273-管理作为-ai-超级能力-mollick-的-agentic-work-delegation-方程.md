@@ -118,7 +118,7 @@ AI 素养不应仅包含"如何使用 ChatGPT"，还应包含"如何评估 AI �
 
 ## 相关主题
 
-- [Jagged Ai Frontier Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/jagged-ai-frontier-mollick.md) — Jagged Frontier（Mollick 提出的 AI 能力不规则分布概念，是 delegation equation 的背景）
+- Jagged Ai Frontier Mollick — Jagged Frontier（Mollick 提出的 AI 能力不规则分布概念，是 delegation equation 的背景）
 - [Gpt5 Just Does Stuff Mollick](../ch01-418-gpt-5-it-just-does-stuff-mollick-的主动式-ai-原语) — GPT-5 "It Just Does Stuff"（同一作者，agentic AI 能力侧写）
 - [Ai Job Interview Model Evaluation Mollick](../ch01-460-给-ai-做工作面试-mollick-的模型评估方法论) — AI 面试方法论（同一作者，GDPval 评估框架）
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/management-as-ai-superpower.md)

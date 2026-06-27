@@ -42,7 +42,7 @@ Figma Make 新的本地代码库编辑功能，支持直接代码库连接和注
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 
 ---
 

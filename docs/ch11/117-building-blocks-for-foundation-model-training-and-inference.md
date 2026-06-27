@@ -49,17 +49,17 @@ DCGM-Exporter 暴露 GPU 指标中，SM activity (DCGM_FI_PROF_SM_ACTIVE) 比基
 生产环境推荐 AMP (Managed Prometheus) + AMG (Managed Grafana) 组合消除运维负担，同时保持与现有 Prometheus exporters 和 Grafana dashboards 的兼容性。
 
 ## 相关实体
-- [Foundation Model Building Blocks](https://github.com/QianJinGuo/wiki/blob/main/entities/foundation-model-building-blocks.md)
-- [AWS Model Agility: 6步LLM跨代际迁移框架](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-generative-ai-model-agility-framework.md)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/building-enterprise-agentic-ai-with-kiro-on-aws.md)
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md)
-- [EC2 Capacity Blocks：GPU短期容量决策指南](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-ec2-capacity-blocks-gpu-ml.md)
-- [SageMaker容量感知推理：实例池+优先级Fallback](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-capacity-aware-inference-fallback.md)
-- [AI Infra 系统性拆解：传统后台工程师视角](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-ai-infra-backend-engineer-huangrunpeng.md)
-- [基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-workspaces-applications-quick-build.md)
-- [End To End Encrypted Ml Inference With Amazon Sagemaker Ai A](https://github.com/QianJinGuo/wiki/blob/main/entities/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.md)
-- [notes on pretraining parallelisms and failed training runs.](https://github.com/QianJinGuo/wiki/blob/main/entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- [Foundation Model Building Blocks](../ch03-082-foundation-model-building-blocks/)
+- [AWS Model Agility: 6步LLM跨代际迁移框架](../ch11-143-aws-generative-ai-model-agility-framework/)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客/)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda/)
+- [EC2 Capacity Blocks：GPU短期容量决策指南](../ch11-190-aws-ec2-capacity-blocks-gpu-ml/)
+- [SageMaker容量感知推理：实例池+优先级Fallback](../ch01-301-aws-sagemaker-capacity-aware-inference-fallback/)
+- [AI Infra 系统性拆解：传统后台工程师视角](../ch01-285-tencent-ai-infra-backend-engineer-s-guide-to-ai-system-hard/)
+- [基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境](../ch11-023-基于-amazon-workspaces-applications-快速搭建企业级应用培训环境/)
+- End To End Encrypted Ml Inference With Amazon Sagemaker Ai A
+- notes on pretraining parallelisms and failed training runs.
+- MOC
 
 ---
 

@@ -200,9 +200,9 @@ Harness Engineering 的核心信号：**AI 落地的核心挑战，正在从"让
 
 ## 相关实体
 
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 本文是该概念的权威中文系统阐述
-- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 第二层重心迁移
-- [Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md) — 第一层重心迁移
+- [Harness Engineering](../ch05-041-harness-engineering-概念框架/) — 本文是该概念的权威中文系统阐述
+- Context Engineering — 第二层重心迁移
+- Prompt Engineering — 第一层重心迁移
 - [Claude Code 深度解析](../ch01-558-claude-code-harness-深度分析) — Anthropic Harness 的具体实现
 - [Claude Code Dynamic Workflows](../ch04-409-agent-orchestration) — Harness 第三层执行编排的 Dynamic Workflow 实现
 - [OpenClaw 完整指南](../ch04-199-openclaw-完全指南) — OpenAI-style 渐进式披露 + Agent-first 工程环境

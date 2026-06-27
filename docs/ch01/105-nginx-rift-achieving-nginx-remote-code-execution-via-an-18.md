@@ -8,11 +8,11 @@
 - 来源：depthfirst.com
 - 评分：v=5 c=12 (56分)
 ## 相关实体
-- [Nginx Rift Achieving Nginx Rce Via An 18 Year Old Vulnerability](https://github.com/QianJinGuo/wiki/blob/main/entities/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability.md)
-- [Cogalpha Acl2026 Alpha Mining](https://github.com/QianJinGuo/wiki/blob/main/entities/cogalpha-acl2026-alpha-mining.md)
-- [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
-- [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Runtime Instrumentation Of Qt6 Apps With Frida Part 1 Getting Visibility](https://github.com/QianJinGuo/wiki/blob/main/entities/runtime-instrumentation-of-qt6-apps-with-frida-part-1-getting-visibility.md)
+- [Nginx Rift Achieving Nginx Rce Via An 18 Year Old Vulnerability](../ch12-045-nginx-rift-achieving-nginx-remote-code-execution-via-an-18/)
+- [Cogalpha Acl2026 Alpha Mining](../ch01-530-cognitive-alpha-mining-via-llm-driven-code-based-evolution/)
+- [Tracking Tampered Chef Clusters Aef374](../ch01-517-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
+- [Trackingtamperedchefclustersviacertificateandcodereuse](../ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
+- [Runtime Instrumentation Of Qt6 Apps With Frida Part 1 Getting Visibility](../ch01-010-runtime-instrumentation-of-qt6-apps-with-frida-part-1-get/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nginx-rift-achieving-nginx-remote-code-execution-v.md)
 

@@ -13,9 +13,9 @@ Claude Managed Agents官方Harness平台完整手册。本文来自 WeChat data-
 - **评分**: score=81
 
 ## 与现有知识库内容的关联
-- [Claude Managed Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents.md) — 托管 Harness 平台
-- [Agent/Skills/Teams 架构演进与选型](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skills-teams-architecture-evolution-selection-guide.md) — Anthropic Skills 认知一致性机制
-- [Skill 形式化理论](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) — Skill 的六元组定义与 DAG 步骤计划
+- [Claude Managed Agents](../ch04-421-claude-managed-agents/) — 托管 Harness 平台
+- [Agent/Skills/Teams 架构演进与选型](../ch04-219-agent-skills-teams-架构演进过程及技术选型之道/) — Anthropic Skills 认知一致性机制
+- Skill 形式化理论 — Skill 的六元组定义与 DAG 步骤计划
 
 ## 原始存档
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-claude-managed-agents-guide.md)
@@ -81,20 +81,20 @@ MCP 服务器的价值在于复用现有生态。如果你已经有 Slack、GitH
 - **SHA256**: fac150d4db129656134597c4791bc1b54dea6601f52cefe3227537858581d609
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
-- [Anthropic Claude Managed Agents 平台正式发布](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
-- [Claude Managed Agents 开发者指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-developer-guide.md)
-- [claude managed agents official](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-official.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch01-280-anthropic-官方-agent-harness-平台-claude-managed-agents-完整指南/)
+- [Anthropic Claude Managed Agents 平台正式发布](../ch01-181-anthropic-claude-managed-agents-平台正式发布/)
+- [Claude Managed Agents 开发者指南](../ch01-329-claude-managed-agents-开发者指南/)
+- [claude managed agents official](../ch04-457-claude-managed-agents-official/)
 
-- [obsidian claude code integration guide](https://github.com/QianJinGuo/wiki/blob/main/entities/obsidian-claude-code-integration-guide.md)
-- [Anthropic puts Claude agents on a meter across its subscriptions](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-agents-meter-infoworld.md)
-- [Introducing Claude for Small Business](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-for-small-business.md)
-- [Introducing Claude for Small Business](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-for-small-business.md)
-- [Xero Announces Integration with Anthropic's Claude](https://github.com/QianJinGuo/wiki/blob/main/entities/xero-announces-integration-with-anthropics-claude.md)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-next-gen-alex-infoq.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)
-- [Anthropic Computer Use 最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-computer-use-best-practices.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- [obsidian claude code integration guide](../ch09-097-obsidian-claude-code-integration-guide/)
+- [Anthropic puts Claude agents on a meter across its subscriptions](../ch01-586-anthropic-puts-claude-agents-on-a-meter-across-its-subscript/)
+- [Introducing Claude for Small Business](../ch01-029-introducing-claude-for-small-business/)
+- [Introducing Claude for Small Business](../ch01-030-introducing-claude-for-small-business/)
+- [Xero Announces Integration with Anthropic's Claude](../ch01-439-xero-announces-integration-with-anthropic-s-claude/)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](../ch01-908-anthropic-首次揭秘下一代-claude-怎么造/)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南/)
+- [Anthropic Computer Use 最佳实践](../ch01-658-anthropic-发布-computer-use-最佳实践/)
+- MOC
 
 ---
 

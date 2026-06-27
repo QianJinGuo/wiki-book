@@ -18,12 +18,12 @@ Mythos Agent 的使用体验：从开发者视角描述与 AI Agent 协作的真
 
 ### 关联实体
 
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-institute-when-ai-builds-itself-jiagoux-interpretation.md)
-- [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
-- [Hermes Agent V014 Architecture Shugex](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-v014-architecture-shugex.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-techliwen-creaoai-cloud-agent-infrastructure-two-lessons-20260606.md)
-- [Aliyun Cms2 Cli Skill Natural Language Observability](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-cms2-cli-skill-natural-language-observability.md)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01-682-anthropic-institute-when-ai-builds-itself-深度解读-ai-进入-ai-研发执行/)
+- [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](../ch11-218-network-firewall-部署小指南-六-利用-amazon-bedrock-ai-实现network-fi/)
+- [Hermes Agent V014 Architecture Shugex](../ch01-806-简单接口-返回最终响应字符串/)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/)
+- [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](../ch04-098-云端-agent-基础设施两条硬经验-creaoai-状态-代码解耦-凭据隔离/)
+- [Aliyun Cms2 Cli Skill Natural Language Observability](../ch04-491-告别复杂接入流程-用-ai-agent-skill-驱动云监控可观测接入/)
 
 ## 实践启示
 

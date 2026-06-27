@@ -28,13 +28,13 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 6. **Kiro MCP Skills 可以封装质量规范**：将团队的数据质量规范封装为 Kiro MCP Skills，可以让 AI 在数据处理过程中自动遵循这些规范，实现"AI帮手即质量守护者"。
 
 ## 相关实体
-- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/blog-03-kiro-ai-cdk-development.md)
-- [从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
-- [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/use-kiro-cli-as-agent-sdk-build-your-agent-app-with-one-click-subscription.md)
+- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](../ch11-146-使用-kiro-ai-ide-开发-aws-cdk-部署架构-从模糊需求到三层堆栈的协作实战-亚马逊aws官方博客/)
+- [从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 | 亚马逊AWS官方博客](../ch11-036-从手动到智能-用-kiro-cli-opensearch-mcp-让每个人都成为-opensearch-专家-亚/)
+- [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](../ch11-187-把-kiro-cli-当作-agent-sdk-一键订阅即可构建你的agent应用-亚马逊aws官方博客/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/autoresearch-software-development.md)
 
-- [AIDLC范式: 平台驱动到大数据工程的范式迁移](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-aidl-paradigm-shift-platform-driven-data-engineering.md)
+- [AIDLC范式: 平台驱动到大数据工程的范式迁移](../ch11-155-aws-aidl-范式迁移-platform-driven-data-engineering/)
 
 ---
 

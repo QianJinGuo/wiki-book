@@ -50,7 +50,7 @@
 - [Habby Game Aws Devops Agent](../ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践)
 - [Outlook Ai Agent Aws Fargate Claude Agent Sdk](../ch11-089-用-ai-agent-自动化日常办公工作流-在-aws-上构建-outlook-邮件助手)
 - [将 Aws Devops Agent 智能运维能力延伸到中国区](../ch11-153-将-aws-devops-agent-智能运维能力延伸到中国区)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- MOC
 
 → [原文存档（第一篇）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-devops-agent-mcp-china-partition-bridge.md)
 → [原文存档（第二篇）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-devops-agent-mcp-china-part2-multi-account-roles-anywhere.md)

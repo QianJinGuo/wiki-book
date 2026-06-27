@@ -10,13 +10,13 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/affirmmapsroadto100bgmvwithcardaicommerc.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
-- [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](https://github.com/QianJinGuo/wiki/blob/main/entities/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion.md)
-- [Affirm Maps Road to $100B GMV With Card, AI Commerce](https://github.com/QianJinGuo/wiki/blob/main/entities/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](https://github.com/QianJinGuo/wiki/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
+- [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](../ch03-084-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo/)
+- [Affirm Maps Road to $100B GMV With Card, AI Commerce](../ch03-081-affirm-maps-road-to-100b-gmv-with-card-ai-commerce/)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 ## 深度分析
 Affirm 在 2026 年投资者论坛上披露的 $100B GMV 路线图，揭示了这家 BNPL 公司正在从支付工具向全栈金融网络转型。
 **闭环网络的结构性优势。** Max Levchin 强调 Affirm 已构建了一个"闭环且信息保留"的支付网络，同时扮演发行方、收单方、征信传输方和风险管理方四重角色。这种垂直整合使 Affirm 能够在交易粒度上进行实时风险定价，而传统银行依赖的征信模型往往只能基于账户级别汇总数据。

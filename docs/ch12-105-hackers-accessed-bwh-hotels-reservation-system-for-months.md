@@ -24,7 +24,7 @@
 - **支付隔离**：支付相关信息应与预订系统物理隔离存储，使用独立的 PCI DSS 合规支付网关
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
 - [Why I'm leaving GitHub for Forgejo](../ch01-011-why-i-m-leaving-github-for-forgejo)
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over)

@@ -47,7 +47,7 @@ Alpamayo 1 使用 Flow Matching 轨迹解码（超越简单回归）、历史轨
 - [Nvidia Gpu Kernel Translation Cute Python Julia](../ch03-054-nvidia-gpu-kernel-translation-cute-python-julia)
 - [Nvidia Cut Checkpoint Costs Nvcomp](../ch03-030-nvidia-cut-checkpoint-costs-nvcomp)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-misc-topics-frontier.md)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-edge-first-llms-av-robotics.md)
 

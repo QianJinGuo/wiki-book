@@ -17,7 +17,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/spotify-llm-evals-funnel-not-fork.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
+- MOC
 ## 深度分析
 
 Spotify 的实验文化由来已久，其 A/B 测试体系是公司产品迭代的核心驱动力。然而，文章揭示了一个关键洞察：只有约 12% 的 A/B 测试最终产生正向的、上线的结果，而约 64% 的测试产生了有效学习——无论是发现了回归问题、排除了某个想法，还是细化了某个假设 。这一数据表明，实验的 win rate 实际上低估了实验本身的价值。更重要的是，LLM Evals 的引入为这个体系增加了一个上游过滤器，通过在实验前筛选掉前景不佳的候选方案，间接提升了实验的 hit rate 。

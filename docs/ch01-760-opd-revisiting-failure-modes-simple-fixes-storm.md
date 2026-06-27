@@ -46,7 +46,7 @@ Opd Revisiting Failure Modes Simple Fixes Storm 涉及agent领域的核心技术
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- MOC
 
 ---
 

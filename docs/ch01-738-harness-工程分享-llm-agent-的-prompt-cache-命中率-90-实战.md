@@ -11,7 +11,7 @@
 - [yoonho lee: text optimization as a legitimate learning mecha](../ch01-334-yoonho-lee-text-optimization-as-a-legitimate-learning-mecha)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- MOC
 ## 深度分析
 
 Harness 工程分享：LLM Agent 的 prompt cache 命中率 90% 实战 涉及agent领域的核心技术议题。

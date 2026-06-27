@@ -172,16 +172,16 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 ## 相关实体
 
 - [Agent Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey) — 学术 Survey 的 ETCLOVG 7 层分类（不同分类法）
-- [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — 上下文管理的"工作集"视角
+- Agent Harness Context Management Working Set — 上下文管理的"工作集"视角
 - [Agent Harness 12 Components 7 Decisions](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架) — 12 组件 + 7 决策框架
 - [Agent Production Harness Engineering](../ch05-038-agent生产级harness工程指南) — 工程赤字 + Demo vs 生产型判别
 - [Harness Engineering Systematic Framework](../ch05-049-harness-engineering-系统梳理) — Harness 工程系统化
-- [Agent Skill Writing](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing.md) — Skill 编写实践（第三关深入）
+- Agent Skill Writing — Skill 编写实践（第三关深入）
 - [Agent Reliability Context Drift Tool Hallucination](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio) — 漂移与幻觉的关联分析
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- MOC
 ## 深度分析
 
 ### 核心洞察：Harness 是比模型更大的变量
@@ -190,7 +190,7 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 
 ### 技术要点：上下文分诊的 OS 虚拟内存类比
 
-P0-P3 上下文分诊的核心价值在于将 LLM 视作 CPU、Context 视作内存、文件系统视作磁盘，从而借用 OS 虚拟内存的分页调度思想。**18K→2K Token 的实测压缩**不是 magic，而是"只调相关段"的工程必然。[Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) 的"工作集"视角与此处 P0-P3 分诊本质同构，但黄佳的 OS 类比更易于向传统工程师传达。
+P0-P3 上下文分诊的核心价值在于将 LLM 视作 CPU、Context 视作内存、文件系统视作磁盘，从而借用 OS 虚拟内存的分页调度思想。**18K→2K Token 的实测压缩**不是 magic，而是"只调相关段"的工程必然。Agent Harness Context Management Working Set 的"工作集"视角与此处 P0-P3 分诊本质同构，但黄佳的 OS 类比更易于向传统工程师传达。
 
 ### 技术要点：Stop Hook 作为确定性工程契约
 
@@ -206,7 +206,7 @@ Haiku 60% / Sonnet 30% / Opus 10% 的路由比例背后有数据支撑：41% 的
 
 ### 实践价值：ADPS 共同体将个人踩坑经验转化为组织资产
 
-[Agent Skill Writing](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing.md) 解决个人级经验复用，而 ADPS 共同体解决跨组织级经验沉淀。Harness Engineering 的坑多数是共通的（上下文压缩、Token 成本、状态漂移），但行业内缺乏共享词汇表。ADPS 的价值在于建立共同的工程语言，使"某团队已解决的第 7 关问题"能快速映射为"另一团队的启动手册"。
+Agent Skill Writing 解决个人级经验复用，而 ADPS 共同体解决跨组织级经验沉淀。Harness Engineering 的坑多数是共通的（上下文压缩、Token 成本、状态漂移），但行业内缺乏共享词汇表。ADPS 的价值在于建立共同的工程语言，使"某团队已解决的第 7 关问题"能快速映射为"另一团队的启动手册"。
 
 ## 实践启示
 
@@ -214,7 +214,7 @@ Haiku 60% / Sonnet 30% / Opus 10% 的路由比例背后有数据支撑：41% 的
 
 2. **用 Stop Hook 将质量门禁自动化**：在 CI/CD pipeline 中嵌入 Stop Hook（`pnpm lint && pnpm test`，blocking=true），让每次 AI 交付都经过确定性检查。这是[Agent Reliability Context Drift Tool Hallucination](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio) 中"反馈回路丢失"问题的最低成本解法，无需改模型，只要改 Harness 配置。
 
-3. **三层模型路由是 token 成本控制的第一优先级**：先用 Haiku 做路由分类（41% 查询根本不需要 Sonnet），再考虑压缩上下文。对应[Agent Skill Writing](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing.md) 的渐进式披露原则——系统应该先判断"这个问题需要多少智能"，再分配对应算力。
+3. **三层模型路由是 token 成本控制的第一优先级**：先用 Haiku 做路由分类（41% 查询根本不需要 Sonnet），再考虑压缩上下文。对应Agent Skill Writing 的渐进式披露原则——系统应该先判断"这个问题需要多少智能"，再分配对应算力。
 
 4. **HITL 人工审核不可省，特别是删除/部署/转账类操作**：第五关的爆炸半径分级是 Harness Engineering 的安全基线。[Agent Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey) 的 ETCLOVG 7 层框架中"安全层"与此呼应——高爆炸半径操作的 HITL 不是流程繁琐，而是防止不可逆损失的最后防线。
 

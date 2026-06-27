@@ -76,7 +76,7 @@ AI 能力溢出的概念在 2025-2026 年成为行业共识。模型能力的增
 
 Dispatch 不仅是一个产品功能，而是 Anthropic 界面战略的关键一步。它解决了 AI 代理的「最后一公里」问题：用户不必坐在电脑前就能指挥代理工作。这本质上是把 AI 代理从「同步工具」变成了「异步助手」——你在手机上下达指令，代理在台式机上执行，完成后通知你。这种模式如果成熟，将根本改变知识工作者与 AI 的协作方式。
 
-### 与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的关联
+### 与 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 的关联
 
 界面是 Harness 的最外层。Claude Code 的成功证明了 Harness 对模型能力的放大效应（同样的模型，Harness 不同，性能差距可达 53 个百分点），而界面设计决定了用户能否有效利用这套 Harness。Chat 界面对应裸模型，专用工具对应精心设计的 Harness，按需生成界面则代表 Harness 的自适应形态。
 

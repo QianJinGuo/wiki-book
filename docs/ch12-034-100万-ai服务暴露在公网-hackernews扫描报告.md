@@ -15,7 +15,7 @@
 ## 相关实体
 - [Your AI Agents Are Already Inside the Perimeter. Do You Know Who They Are?](../ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 ## 深度分析
 
 本次安全扫描揭示了 AI 基础设施安全的严峻现状，其严重程度远超传统软件应用。Intruder 团队通过证书透明度日志扫描了超过 200 万台主机，发现约 100 万个暴露的 AI 服务，发现的结果令人警醒。

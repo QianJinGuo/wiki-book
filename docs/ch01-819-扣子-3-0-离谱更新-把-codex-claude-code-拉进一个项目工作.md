@@ -12,7 +12,7 @@
 - [karpathy × boris 访谈：software 3.0 时代编程完整地图](../ch01-620-karpathy-boris-访谈-software-3-0-时代编程完整地图)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/coze-3-0-local-agent-codex-claude-code-project.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 ## 深度分析
 
 扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？ 涉及agent领域的核心技术议题。

@@ -132,7 +132,7 @@ LLM 当 judge 互打分会漂移——**上午 0.85，下午同样的输出 0.6*
 → [Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey) — 同样社区层面的 Agent 工程化范式整理，但**侧重 12 组件分类**
 → [Harness Architecture Production Guide](../ch04-021-agent-harness-架构设计与实现-生产级-agent-系统落地指南) — Harness 12 组件 vs Agent Loop 7 件套（不同抽象层级）
 → [腾讯 Skill 写作 Playbook](../ch04-118-鹅厂-skill-写作完整-playbook-14-章节-end-to-end-实战-工程化评估-腾讯一线踩坑) — 同样腾讯系但讲 **Skill 写作**（如何写好一个 Skill）
-→ [从 Prompt 到 Harness 工程三次进化](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-context-harness-three-evolutions-tencent.md) — 同样腾讯系但讲**进化论**（从 Prompt 到 Harness 的迁移）
+→ 从 Prompt 到 Harness 工程三次进化 — 同样腾讯系但讲**进化论**（从 Prompt 到 Harness 的迁移）
 → [Harness Observability Production](../ch04-468-agent-harness-可观测性-生产级-ai-项目必须补上的一课) — 同样讲 Harness 但侧重**可观测性**
 
 ## 与其他腾讯系 entity 的对比定位
@@ -141,7 +141,7 @@ LLM 当 judge 互打分会漂移——**上午 0.85，下午同样的输出 0.6*
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- MOC
 
 ---
 

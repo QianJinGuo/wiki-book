@@ -266,12 +266,12 @@ OWL适合以下场景：
 - **引入多模态能力**：结合视觉理解处理图文混合任务
 - **优化Critic机制**：使用更精细的评估标准提升输出质量
 ## 相关实体
-- [Agent Framework Owl Principles](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-framework-owl-principles.md)
-- [Karpathy Ai Agent 7 Bits Value Decline](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-ai-agent-7-bits-value-decline.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
-- [Gepa Optimize Anything](https://github.com/QianJinGuo/wiki/blob/main/entities/gepa-optimize-anything.md)
-- [Tmall Marketing Ai Workflow Best Practices](https://github.com/QianJinGuo/wiki/blob/main/entities/tmall-marketing-ai-workflow-best-practices.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [Agent Framework Owl Principles](../ch01-348-agent框架owl原理详解/)
+- [Karpathy Ai Agent 7 Bits Value Decline](../ch04-375-karpathy-ai-agent-七-bits-与程序员价值/)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
+- [Gepa Optimize Anything](../ch01-263-gepa-optimize-anything/)
+- [Tmall Marketing Ai Workflow Best Practices](../ch01-196-淘天营销中后台生码工作流最佳实践/)
+- MOC
 
 ---
 

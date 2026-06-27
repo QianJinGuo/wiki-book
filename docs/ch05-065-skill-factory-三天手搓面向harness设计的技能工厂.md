@@ -11,7 +11,7 @@
 | **模式二：OpenClaw/Claude Code** | 对话驱动，依赖 Prompt 技巧 | 高 | 随机性强 | 无自动化闭环 | 串行迭代 | 不可控 & 缺乏工程验证 |
 
 ## 相关实体
-- [Claude Code Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md)
+- Claude Code Prompt Context Harness
 - [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
 - [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析)
 - [Anthropic Managed Agents Scaling](../ch01-677-anthropic)

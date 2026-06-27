@@ -173,7 +173,7 @@ EFA 在用户态暴露两套接口，这些通信库分别走不同路径：
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 
 ---
 

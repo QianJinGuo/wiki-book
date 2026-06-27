@@ -96,7 +96,7 @@ ds4.c 在 M3 Ultra 128GB 配置下达到 **468 token/s 预填充速度** 和 **2
 
 ## 成本计算框架：IER 视角
 
-[Inference Efficiency Ratio（IER）](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md) 提供了一个更系统的成本评估框架：
+Inference Efficiency Ratio（IER） 提供了一个更系统的成本评估框架：
 
 - **AI-infused 产品**（AI 是附加功能）：需要 10:1 以上的健康 IER 才能保持与传统 SaaS 可比的毛利率
 - **AI-native 产品**（AI 是核心价值交付）：接受低至 5:1 的健康 IER
@@ -107,7 +107,7 @@ ds4.c 在 M3 Ultra 128GB 配置下达到 **468 token/s 预填充速度** 和 **2
 
 ## 推理优化技术对本地部署的启示
 
-[推理系统优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)领域的关键技术（如 KV Cache 优化、连续批处理、Prefix Caching）对本地 Apple Silicon 部署有直接意义 ：
+推理系统优化领域的关键技术（如 KV Cache 优化、连续批处理、Prefix Caching）对本地 Apple Silicon 部署有直接意义 ：
 
 - **KV Cache 磁盘化**（ds4.c 采用）：用 SSD 带宽换 GPU 计算，对 Apple Silicon 统一内存架构下的超大规模模型特别有价值
 - **Prefix Caching**：系统 prompt 和工具描述在多轮对话中复用，可以显著降低重复计算成本

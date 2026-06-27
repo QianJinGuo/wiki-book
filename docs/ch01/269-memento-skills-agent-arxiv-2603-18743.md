@@ -10,7 +10,7 @@
 
 **核心洞察**：Memento-Skills 把经验固化成 **skill（技能包）**，而非原始轨迹。Skill 是有 `SKILL.md`、可执行脚本、辅助 prompt、declarative spec 的真正可复用工件——这让经验从不可见的隐式行为变成可审计、可版本化、可测试的显式资产。
 
-这与 [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md) 中描述的 RAG/MSA 等记忆范式形成鲜明对比：RAG 擅长精确回溯，但 skill 不是检索出来的，是**生成出来并固化下来的**。
+这与 Context Engineering Three Memory Paradigms 中描述的 RAG/MSA 等记忆范式形成鲜明对比：RAG 擅长精确回溯，但 skill 不是检索出来的，是**生成出来并固化下来的**。
 
 ## Memento-Skills 五步闭环
 
@@ -28,7 +28,7 @@ Observe → Read → Act → Feedback → Write
 - **Feedback**：Judge 给出正确/错误反馈
 - **Write**：更新 skill utility、做 failure 归因和 file-level rewrite、必要时进入 skill discovery
 
-**三层写回策略**：局部修补优先，只在 utility 降至阈值时才生成新技能，避免破坏已有能力。这种策略在 [Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md) 中被称为"输出自审"的工程化升级版——从单次执行的反射进化为跨 session 的持久化技能积累。
+**三层写回策略**：局部修补优先，只在 utility 降至阈值时才生成新技能，避免破坏已有能力。这种策略在 [Agent Self Improvement Six Mechanisms](../ch04-047-agent-自我改进的六条路/) 中被称为"输出自审"的工程化升级版——从单次执行的反射进化为跨 session 的持久化技能积累。
 
 ## 技能路由器：行为对齐而非语义相似
 
@@ -66,7 +66,7 @@ Biology/Humanities 提升最明显（可抽象程度高）。
 - GAIA：5 个 atomic skills → 41 个技能
 - HLE：5 个 atomic skills → 235 个技能（形成主题簇）
 
-技能库的增长模式很有意思：从少量通用 atomic skills 出发，通过 feedback 驱动分裂成专门化技能，最终形成有结构的主题簇。这与 [Memento Skills Agent Self Evolving](https://github.com/QianJinGuo/wiki/blob/main/entities/memento-skills-agent-self-evolving.md) 描述的"将状态从 s_t 扩展为 x_t = (s_t, M_t)"的马尔可夫性重建在精神上一致——但 Memento-Skills 更强调技能作为一等公民的可维护性。
+技能库的增长模式很有意思：从少量通用 atomic skills 出发，通过 feedback 驱动分裂成专门化技能，最终形成有结构的主题簇。这与 [Memento Skills Agent Self Evolving](../ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化/) 描述的"将状态从 s_t 扩展为 x_t = (s_t, M_t)"的马尔可夫性重建在精神上一致——但 Memento-Skills 更强调技能作为一等公民的可维护性。
 
 ## 论文真正有价值的地方
 
@@ -84,7 +84,7 @@ Biology/Humanities 提升最明显（可抽象程度高）。
 3. 单技能检索可能限制更长链任务（需多技能串联/并行/动态组合）
 4. 安全性（Judge 误判、sandbox 风险）尚未系统性量化
 
-第三点是当前最大工程障碍：当一个任务需要多个 skill 协同（先做数据清洗、再做分析、再做可视化）时，Memento-Skills 的单技能检索模型无法处理技能间的依赖图。这与 [Hermes Agent Self Evolving](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-self-evolving.md) 中"定期回顾 nudging"的设计形成互补——Hermes 的方式更适合长链任务的状态管理。
+第三点是当前最大工程障碍：当一个任务需要多个 skill 协同（先做数据清洗、再做分析、再做可视化）时，Memento-Skills 的单技能检索模型无法处理技能间的依赖图。这与 Hermes Agent Self Evolving 中"定期回顾 nudging"的设计形成互补——Hermes 的方式更适合长链任务的状态管理。
 
 ## 未来改进方向
 

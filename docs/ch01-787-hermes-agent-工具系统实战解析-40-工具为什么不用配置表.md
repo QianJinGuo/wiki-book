@@ -11,7 +11,7 @@
 - [codex discovered a hidden http/2 bomb](../ch09-074-codex-discovered-a-hidden-http-2-bomb)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-tool-system-analysis.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- MOC
 ## 深度分析
 
 Hermes Agent 工具系统实战解析：40+ 工具为什么不用配置表 涉及agent领域的核心技术议题。

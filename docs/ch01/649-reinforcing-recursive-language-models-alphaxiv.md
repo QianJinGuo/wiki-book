@@ -41,11 +41,11 @@
 文章的 ablation 实验表明，简化 prompt 收敛略低且不稳定，但经过课程学习可能可以解决 。长远目标不是优化执行，而是让更大的 RLM-native 模型自主发现人类未曾想到的新策略来分解和解决长上下文难题。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
+> 主题导航
 
-- [Reinforcing Recursive Language Models | alphaXiv](https://github.com/QianJinGuo/wiki/blob/main/entities/reinforcing-recursive-language-models-alphaxiv.md)
-- [Language Models and Meaning](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
-- [Language Models and Meaning](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
+- Reinforcing Recursive Language Models | alphaXiv
+- [Language Models and Meaning](../ch01-373-language-models-and-meaning/)
+- [Language Models and Meaning](../ch01-373-language-models-and-meaning/)
 
 ---
 

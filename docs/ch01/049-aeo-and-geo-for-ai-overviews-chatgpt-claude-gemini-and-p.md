@@ -10,11 +10,11 @@
 - 技术层面的可访问性（渲染、爬取、snippet 配置）是一切优化工作的前提 
 - AI surfaces 的爬取生态与传统的 SEO bot 完全不同，需要分别管理索引爬虫和训练爬虫 
 ## 相关实体
-- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Tether Launches Developer Grants Program For Local First Ai ](https://github.com/QianJinGuo/wiki/blob/main/entities/tether-launches-developer-grants-program-for-local-first-ai-.md)
-- [Anthropic_Cache_Tokenomics](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic_cache_tokenomics.md)
-- [Introducing Claude For Small Business](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-for-small-business.md)
-- [Wetesteddeepseekv4Proandflashagainstclau](https://github.com/QianJinGuo/wiki/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
+- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](../ch01-099-gemini-3-5-flash-more-expensive-but-google-plan-to-use-it/)
+- [Tether Launches Developer Grants Program For Local First Ai ](../ch01-154-tether-launches-developer-grants-program-for-local-first-ai/)
+- [Anthropic_Cache_Tokenomics](../ch01-112-tokenomics-the-62-5-minute-rule-for-claude-s-cache/)
+- [Introducing Claude For Small Business](../ch01-030-introducing-claude-for-small-business/)
+- [Wetesteddeepseekv4Proandflashagainstclau](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 

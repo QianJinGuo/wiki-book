@@ -192,7 +192,7 @@
 - [PilotDeck](../ch04-124-小龙虾彻底凉了-清华团队连夜开源agent神器pilotdeck-token成本狂降70) —— 多项目隔离
 - [Agent Harness 架构](../ch04-207-agent-harness-架构) —— 7 层 harness 模型
 - [Rein](../ch04-050-rein-4-模块-5-类型边界防止-agent-go-膨胀到-3000-行) —— 4 模块代码架构
-- [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) —— 工作集视角
+- Agent Harness 上下文管理 —— 工作集视角
 - [Karpathy Vibe Coding → Agentic Engineering](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering) —— Vibe Coding 原始定义
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)

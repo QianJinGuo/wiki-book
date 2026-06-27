@@ -98,11 +98,11 @@ Nova Act 采用浏览器优先的自动化架构，这与传统的 API 驱动 RP
 3. **定价评估**：建议在 pilot 阶段详细评估 token 消耗成本，避免生产环境产生意外费用
 
 ## 相关实体
-- [Bedrock Agentcore Coding Agent Hosting](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-agentcore-coding-agent-hosting.md)
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](https://github.com/QianJinGuo/wiki/blob/main/entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
-- [Prompting Amazon Nova 2 For Content Moderation](https://github.com/QianJinGuo/wiki/blob/main/entities/prompting-amazon-nova-2-for-content-moderation.md)
-- [Evaluate Amazon Nova Sonic Voice Agent Scale No Mic](https://github.com/QianJinGuo/wiki/blob/main/entities/evaluate-amazon-nova-sonic-voice-agent-scale-no-mic.md)
-- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](https://github.com/QianJinGuo/wiki/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
+- [Bedrock Agentcore Coding Agent Hosting](../ch09-027-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on/)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
+- [Prompting Amazon Nova 2 For Content Moderation](../ch01-387-prompting-amazon-nova-2-for-content-moderation/)
+- [Evaluate Amazon Nova Sonic Voice Agent Scale No Mic](../ch11-033-evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-mic/)
+- Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-nova-act-is-now-hipaa-eligible.md)
 

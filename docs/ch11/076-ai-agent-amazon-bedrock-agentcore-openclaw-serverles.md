@@ -13,11 +13,11 @@
 <div style="line-height: 1.8;margin: 0;padding: 0">
 
 ## 相关实体
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 4](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-4.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 1](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-1.md)
-- [Openclaw Multi 5](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-5.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch11-017-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch11-191-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 1](../ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- [Openclaw Multi 5](../ch11-120-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
 

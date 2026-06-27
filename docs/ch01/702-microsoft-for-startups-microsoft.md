@@ -34,11 +34,11 @@ $1,000 → $150,000 的阶梯式解锁机制，本质上是将云厂商常见的
 3. **多云不等于零云**：计划允许保留现有云环境，这对已有一定云支出的公司是重要信号——无需做全有或全无的迁移决策，可以选择性迁移对 Microsoft 生态有协同效应的部分（如 Teams 集成、Dynamics 挂钩的应用）。
 4. **生态深度影响技术决策**：如果初创公司的产品规划涉及 Copilot 插件、工作流自动化或企业数据集成，Microsoft 生态的集成收益远大于对抗性选择。
 ## 相关实体
-- [Finanser Retail Banking Broken](https://github.com/QianJinGuo/wiki/blob/main/entities/finanser-retail-banking-broken.md)
-- [Microsoft For Startups Microsoft V2](https://github.com/QianJinGuo/wiki/blob/main/entities/Microsoft-for-Startups-Microsoft-v2.md)
-- [Microsoft Is Quietly Shopping For An Openai Replac](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-is-quietly-shopping-for-an-openai-replac.md)
-- [Microsoft For Startups Microsoft](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-for-startups-microsoft.md)
-- [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
+- [Finanser Retail Banking Broken](../ch01-777-let-s-be-honest-retail-banking-is-broken/)
+- [Microsoft For Startups Microsoft V2](../ch01-422-microsoft-for-startups-microsoft/)
+- [Microsoft Is Quietly Shopping For An Openai Replac](../ch01-036-microsoft-is-quietly-shopping-for-an-openai-replacement/)
+- [Microsoft For Startups Microsoft](../ch01-110-microsoft-for-startups-microsoft/)
+- [5Thingstoknowabouttheclarityact](../ch01-093-5-things-to-know-about-the-clarity-act/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-startups.md)
 

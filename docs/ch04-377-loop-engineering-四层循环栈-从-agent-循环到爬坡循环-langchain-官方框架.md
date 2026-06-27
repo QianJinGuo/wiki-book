@@ -80,10 +80,10 @@ LangChain 的 4 层与清华 Loop Stack 六件套（Skill/Spec/Tool/Act/Eval/Sto
 
 - [Loop Engineering — 12 来源合并](../ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad)
 - [Loop Engineering: 把反馈循环放进工程现场](../ch05-004-loop-engineering-把反馈循环放进工程现场)
-- [循环工程 — 清华 2026 框架](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-tsinghua-2026.md)
+- 循环工程 — 清华 2026 框架
 - [Agent Loop 8 个未解问题](../ch04-143-agent-loop-工程手册-8-个未解问题-self-protocol-治理薄壳-腾讯陈进的二手解读与单-age)
 - [Hermes Agent Skills 源码分析](../ch04-418-hermes-agent)
-- [Loop Engineering 主题地图](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)
+- Loop Engineering 主题地图
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loop-engineering-langchain-four-layer-loopcraft.md)
 
 ---

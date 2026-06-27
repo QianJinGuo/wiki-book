@@ -49,7 +49,7 @@
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch09-096-2-小时-0-行手写代码-我用-claude-做了一个生产级-vscode-插件)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch01-677-anthropic)
 - [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- MOC
 
 ---
 

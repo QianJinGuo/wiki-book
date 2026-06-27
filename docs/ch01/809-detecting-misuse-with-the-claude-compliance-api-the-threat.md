@@ -61,8 +61,8 @@ The article shows multiple real detection cases:
 
 ## Related
 
-- [Agent Security Three-Step Sequence](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-security-three-step-sequence-harness-governance-identity-crewai.md)
-- [Agent Harness Observability](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-observability-production.md)
+- [Agent Security Three-Step Sequence](../ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做/)
+- [Agent Harness Observability](../ch04-468-agent-harness-可观测性-生产级-ai-项目必须补上的一课/)
 
 -> [Original Archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-compliance-api-misuse-detection-papermtn.md)
 

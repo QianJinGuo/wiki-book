@@ -78,7 +78,7 @@ ACI 接下来 18 个月的工作包括：建立工作组、定义试点项目、
 - [5238213](../ch01-829-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models)
 - [5237875](../ch12-047-ico-对-south-staffordshire-处以-96-3-万英镑罚款-2022-年-cl0p-勒索软件攻击暴露)
 - [820297](../ch09-075-engineering-roles-shift-from-developing-code-to-managing-ai)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 ---
 

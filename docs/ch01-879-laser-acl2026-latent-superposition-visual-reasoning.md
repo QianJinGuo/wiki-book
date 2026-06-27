@@ -69,9 +69,9 @@ Laser 用"概率叠加"在隐空间实现多模态推理，Token 消耗降低 97
 updated: 2026-06-19
 
 ## 相关实体
-- [Pytorch In Kernel Recsys Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch-in-kernel-recsys-optimization.md)
+- Pytorch In Kernel Recsys Optimization
 
-- [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md)
+- [Chroma To Qdrant 1M Vector Migration](../ch16-inference/)
 - [Unlocking Ai Flexibility In Europe A Guide To Cross Region I](../ch09-108-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region)
 
 ---

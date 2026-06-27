@@ -60,10 +60,10 @@ Fastlane 采用了教科书级的 PLG（Product-Led Growth）策略：
 
 ## 相关实体
 
-- [AI Video Tools](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-video-tools-third-stage-1779303117.md)
+- [AI Video Tools](../ch04-062-ai视频工具悄悄走到了第三阶段/)
 - AI Video Generation
 - Agent Harness
-- [MOC: Vision & Multimodal](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- MOC: Vision & Multimodal
 
 ---
 

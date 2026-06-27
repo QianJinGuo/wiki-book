@@ -29,8 +29,8 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
 
-- [Amazon Quick Mcp Kdbx Time Series](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-mcp-kdbx-time-series.md)
-- [Transforming Rare Cancer Research With Amazon Quick Integrat](https://github.com/QianJinGuo/wiki/blob/main/entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md)
+- Amazon Quick Mcp Kdbx Time Series
+- Transforming Rare Cancer Research With Amazon Quick Integrat
 ## 深度分析
 
 **1. "Agent + MCP + Shell"三层架构的工程实践意义**

@@ -42,7 +42,7 @@
 - [Verizon Connect Agentic Ai 100K Users](../ch04-097-verizon-connect-agentic-ai-10万用户规模的工程实践)
 - [Skillos Learning Skill Curation For Self Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
 - [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch04-181-co-existence-vs-co-intelligence-mollick-s-paradigm-shift-on)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch02-prompt/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/taobao-product-domain-agent-architecture.md)
 

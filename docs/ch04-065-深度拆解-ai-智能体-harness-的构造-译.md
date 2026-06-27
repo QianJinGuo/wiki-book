@@ -302,7 +302,7 @@ OpenAI SDK 的三层护栏（输入→工具→输出）体现了**纵深防御*
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-677-anthropic)
 - [Claude Code Routines Proactive Agent](../ch09-055-claude-code-routines-从工具到队友的主动-agent-模式)
 - [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 

@@ -16,7 +16,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-flash-means-llm-steering-is-interesting-again.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- MOC
 ## 深度分析
 1. **Steering 的核心原理**：通过比较同一 prompt 在有无目标概念时的激活值差异，提取" steering vector"，在推理时注入以影响模型行为
 2. **Steering 的"中产阶级"困境**：大型 AI 实验室直接训练模型，不需要这种"脑外科手术"式的干预；普通用户通过 API 调用，无法访问模型权重和激活值

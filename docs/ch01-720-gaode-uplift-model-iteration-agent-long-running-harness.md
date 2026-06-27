@@ -12,10 +12,10 @@
 - [一个 mission 跑 16 天、烧 7.78 亿 token：factory 公开了多 agent 系统的构建哲学](../ch01-694-一个-mission-跑-16-天-烧-7-78-亿-token-factory-公开了多-agent-系统的构建哲学)
 - [gemma 4 and what makes an open model succeed](../ch01-547-gemma-4-and-what-makes-an-open-model-succeed)
 - [model-harness-fit-agent-harness](../ch01-217-model-harness-fit-agent-harness)
-- [what i’ve been building: atom report, post-training course,](https://github.com/QianJinGuo/wiki/blob/main/entities/what-ive-been-building-atom-report-post-training-course-fini.md)
+- what i’ve been building: atom report, post-training course,
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-uplift-model-iteration-agent-long-running-harness.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 ## 深度分析
 
 Gaode Uplift Model Iteration Agent Long Running Harness 涉及agent领域的核心技术议题。

@@ -59,11 +59,11 @@ Skill 文件结构支持主文件和支撑文件的分离：主 SKILL.md 保持�
 
 ## 相关实体
 
-- [Lovable Discoverability 介绍](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
+- Lovable Discoverability 介绍
 
-- [Claude Code Skills 超能力实战](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-superpowers-practice.md)
-- [Anthropic Agent Skills 设计模式14条](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-agent-skills-design-patterns-14.md)
-- [Matt Pocock Skills Grill](https://github.com/QianJinGuo/wiki/blob/main/entities/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
+- [Claude Code Skills 超能力实战](../ch01-408-claude-code-skills-superpowers-practice/)
+- [Anthropic Agent Skills 设计模式14条](../ch04-239-anthropic-14-个-agent-skills-设计模式/)
+- [Matt Pocock Skills Grill](../ch07-033-matt-pocock-skills-ai编程技能集合/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md)
 
 ---

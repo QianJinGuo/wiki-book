@@ -107,16 +107,16 @@
 
 ## 相关实体（Related Entities）
 
-- [Mythos For Offensive Security Xbows Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos-for-offensive-security-xbows-evaluation.md) — Claude Mythos 攻防评估
-- [Llm Raiders Private Ai Server](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-raiders-private-ai-server.md) — LLM Raiders 私人 AI 服务器
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md) — AWS + Cisco AI Defense MCP/A2A
-- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md) — AI gateway 安全
-- [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](https://github.com/QianJinGuo/wiki/blob/main/entities/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp.md) — Linux 内核权限提升
-- [The Agentic Trust Management Platform Drata](https://github.com/QianJinGuo/wiki/blob/main/entities/the-agentic-trust-management-platform-drata.md) — Drata agentic trust 平台
-- [Enterprise Openclaw Security Deploy Architecture Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-openclaw-security-deploy-architecture-guide.md) — OpenClaw 部署安全
-- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md) — Bishop Fox AI agent 安全测试
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog.md) — Anthropic Mythos 漏洞共享
-- [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — Microsoft Rampart/Clarity 开源
+- [Mythos For Offensive Security Xbows Evaluation](../ch12-072-mythos-for-offensive-security-xbow-s-evaluation/) — Claude Mythos 攻防评估
+- [Llm Raiders Private Ai Server](../ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se/) — LLM Raiders 私人 AI 服务器
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级/) — AWS + Cisco AI Defense MCP/A2A
+- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11-079-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno/) — AI gateway 安全
+- Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp — Linux 内核权限提升
+- [The Agentic Trust Management Platform Drata](../ch04-017-the-agentic-trust-management-platform-drata/) — Drata agentic trust 平台
+- [Enterprise Openclaw Security Deploy Architecture Guide](../ch11-090-企业级openclaw安全部署架构指南-亚马逊aws官方博客/) — OpenClaw 部署安全
+- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f/) — Bishop Fox AI agent 安全测试
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01-097-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi/) — Anthropic Mythos 漏洞共享
+- [Microsoft Open Sources Rampart Clarity](../ch01-611-microsoft-open-sources-rampart-and-clarity-to-secure-ai-agen/) — Microsoft Rampart/Clarity 开源
 
 ---
 

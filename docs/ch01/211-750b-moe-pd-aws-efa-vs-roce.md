@@ -163,17 +163,17 @@ EFA 在用户态暴露两套接口，这些通信库分别走不同路径：
 
 ## 相关主题
 
-- [AWS FSx Lustre GPUDirect 加载](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-fsx-lustre-gpudirect-sharded-llm-loading.md) — AWS 训练/推理数据加载栈
-- [AWS GRPO RLVR SageMaker](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — AWS 后训练栈
-- [Foundation Model Building Blocks on AWS](https://github.com/QianJinGuo/wiki/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md) — AWS 训练与推理基础组件
-- [Foundation Model Building Blocks](https://github.com/QianJinGuo/wiki/blob/main/entities/foundation-model-building-blocks.md) — 通用基础组件
-- [GLM-5 Scaling Pain](https://github.com/QianJinGuo/wiki/blob/main/entities/glm5-scaling-pain.md) — GLM 系列规模化的工程挑战
+- [AWS FSx Lustre GPUDirect 加载](../ch11-031-aws-fsx-for-lustre-gpudirect-storage-turboquant-sharded/) — AWS 训练/推理数据加载栈
+- [AWS GRPO RLVR SageMaker](../ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning/) — AWS 后训练栈
+- [Foundation Model Building Blocks on AWS](../ch11-117-building-blocks-for-foundation-model-training-and-inference/) — AWS 训练与推理基础组件
+- [Foundation Model Building Blocks](../ch03-082-foundation-model-building-blocks/) — 通用基础组件
+- [GLM-5 Scaling Pain](../ch09-120-glm-5-scaling-pain-推理复盘/) — GLM 系列规模化的工程挑战
 
 > [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/750b-moe-model-roce-cluster-migration-aws-efa-prefill-decode-disaggregation.md)
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 
 ---
 

@@ -42,7 +42,7 @@ Eat Marketing 交付的成果是一座尊重历史但不被历史囚禁的品牌
 
 ## 相关实体
 
-- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
+- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](../ch01-099-gemini-3-5-flash-more-expensive-but-google-plan-to-use-it/)
 ## 相关概念
 
 - Heritage Brand Evolution — Heritage Brand 在现代市场中的演变策略

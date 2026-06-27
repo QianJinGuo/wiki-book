@@ -87,7 +87,7 @@
 - [Codex 自主赚钱](../ch01-425-codex-autonomous-earning-money)
 - [Claude Code vs Codex 上下文架构](../ch01-286-claude-code-vs-codex-上下文架构-五层压缩管道-vs-容器文件系统)
 - [Meta Skill](../ch07-022-meta-skill)（Skill 2.0 抽象）
-- [扣子 3.0 协作系统](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-0-collaboration-system.md)（同类协作产品）
+- 扣子 3.0 协作系统（同类协作产品）
 - [Embabel](../ch07-019-embabel)（可解释+类型系统集成）
 
 ## 深度分析
@@ -208,7 +208,7 @@
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- MOC
 
 ---
 

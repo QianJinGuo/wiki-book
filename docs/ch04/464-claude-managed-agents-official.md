@@ -28,19 +28,19 @@ Claude Managed Agents 官方发布的三大核心能力——dreaming、outcomes
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-managed-agents-official.md)
 
 ## 相关资源
-- [Agent Memory 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)
-- [Claude Managed Agents 开发者指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-developer-guide.md)
+- [Agent Memory 架构](../ch04-146-agent-memory-架构本质/)
+- [Claude Managed Agents 开发者指南](../ch01-329-claude-managed-agents-开发者指南/)
 
 ## 相关实体
-- [Claude Managed Agents 官方 Harness 平台指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-guide.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
-- [Anthropic Claude Managed Agents 平台正式发布](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
-- [claude managed agents](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents.md)
+- [Claude Managed Agents 官方 Harness 平台指南](../ch01-445-claude-managed-agents-官方-harness-平台指南/)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch01-280-anthropic-官方-agent-harness-平台-claude-managed-agents-完整指南/)
+- [Anthropic Claude Managed Agents 平台正式发布](../ch01-181-anthropic-claude-managed-agents-平台正式发布/)
+- [claude managed agents](../ch04-421-claude-managed-agents/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [从 Prompt 到 Harness：最小实操指南](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- [从 Prompt 到 Harness：最小实操指南](../ch01-664-从-prompt-到-harness-claude-官方学习资料/)
+- MOC
 
 ---
 

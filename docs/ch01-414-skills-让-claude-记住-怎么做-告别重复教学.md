@@ -90,7 +90,7 @@ description: 按标准流程 review API 代码，发现问题列出修复建议
 
 **Skill 作为记忆系统的工程化演进**：Skills 解决了 prompt 每次需要重建上下文的根本痛点，把"怎么做"封装为持久化资产。与 [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进) 中的记忆系统不同，Skill 不是靠向量检索召回历史，而是直接定义工作流执行步骤——这是一种"程序性记忆"而非"陈述性记忆"。两者结合可以构建更完整的 agent 知识管理体系。
 
-**context: fork 的隔离设计哲学**：Subagent 隔离模式体现了"最小权限"原则——Skill 的工作上下文与主 session 隔离，防止副作用扩散。这一设计理念与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的 harness 隔离机制高度一致，都是为了在多 agent 协作时保护主控制平面的稳定性。fork 模式尤其适合大规模代码库扫描等高上下文消耗操作。
+**context: fork 的隔离设计哲学**：Subagent 隔离模式体现了"最小权限"原则——Skill 的工作上下文与主 session 隔离，防止副作用扩散。这一设计理念与 [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/) 中的 harness 隔离机制高度一致，都是为了在多 agent 协作时保护主控制平面的稳定性。fork 模式尤其适合大规模代码库扫描等高上下文消耗操作。
 
 **安全栏杆机制的本质**：disable-model-invocation: true 是一个"人类在环"（human-in-the-loop）强制门禁，防止 autonomous agent 执行不可逆操作。与传统软件中的"双击确认"或"删除二次确认"相同，这是对 AI 执行危险操作的安全校验。该设计呼应了 [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验) 中的多 agent 权限管控思路——不同技能的自动化等级应该可配置。
 
@@ -116,12 +116,12 @@ description: 按标准流程 review API 代码，发现问题列出修复建议
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Claude Code Deep Architecture Analysis](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/)
+- [Claude Code Deep Architecture Analysis](../ch01-846-claude-code-架构深度解析/)
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 
 ---
 

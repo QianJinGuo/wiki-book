@@ -114,7 +114,7 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 ## 相关
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-design-long-running-apps.md)
 -  — 七环节控制回路 + Generator/Evaluator 框架
-- [Agent Harness 上下文管理：工作集视角](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — compaction 光谱 + session/harness/sandbox 解耦
+- Agent Harness 上下文管理：工作集视角 — compaction 光谱 + session/harness/sandbox 解耦
 - [LangChain Anatomy of Agent Harness](../ch04-425-the-anatomy-of-an-agent-harness-解读) — Ralph 循环 + 规划/自我验证双闭环
 
 ## 相关实体

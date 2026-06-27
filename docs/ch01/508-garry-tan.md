@@ -105,21 +105,21 @@ Garry的80-90%标准：
 - 将省下的时间用于更高价值的决策
 
 ## 相关实体
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
-- [Agent Skill 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
-- [柚漫剧 AI 全流程提效拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-employment-eight-changes-tencent-research.md)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](https://github.com/QianJinGuo/wiki/blob/main/entities/cdp-bridge-mcp-real-browser-agent.md)
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch04-024-qoder-skills-完全指南-agent-skill-迭代式编写-ai-按你的标准执行/)
+- [Agent Skill 设计模式](../ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
+- [柚漫剧 AI 全流程提效拆解](../ch01-356-柚漫剧-ai-全流程提效拆解/)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化/)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器/)
+> 主题导航
 
-- [Improving token efficiency in GitHub Agentic Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/github-token-efficiency-agentic-workflows.md)
-- [复杂度棘轮：AI编程的质量只升不降机制](https://github.com/QianJinGuo/wiki/blob/main/entities/complexity-ratchet.md)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](https://github.com/QianJinGuo/wiki/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
-- [十年老技术开发的 AI Agent 探索之路](https://github.com/QianJinGuo/wiki/blob/main/entities/十年老技术开发的-ai-agent-探索之路-v2.md)
-- [Agent Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-workflows.md)
-- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-development-guide-aliyun-2026.md)
-- [四种 Sub Agent 模式](https://github.com/QianJinGuo/wiki/blob/main/entities/four-sub-agent-patterns.md)
+- [Improving token efficiency in GitHub Agentic Workflows](../ch04-297-improving-token-efficiency-in-github-agentic-workflows/)
+- [复杂度棘轮：AI编程的质量只升不降机制](../ch01-309-复杂度棘轮-ai编程的质量只升不降机制/)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
+- [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路/)
+- [Agent Workflows](../ch04-306-agent-workflows/)
+- Hermes Agent 新手上手指南
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
+- [四种 Sub Agent 模式](../ch04-302-四种-sub-agent-模式/)
 
 ---
 

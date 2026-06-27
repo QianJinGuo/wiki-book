@@ -12,15 +12,15 @@
 - transcript / trace / trajectory: 完整执行轨迹
 
 ## 相关实体
-- [Anthropic Claude Managed Agents Platform Launch](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-launch.md)
-- [Anthropic Managed Agents Scaling](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-managed-agents-scaling.md)
-- [Oz Multi Harness Cloud Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/entities/oz-multi-harness-cloud-agent-orchestration.md)
-- [Anthropic Pm Jess Yan Managed Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-pm-jess-yan-managed-agents.md)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](https://github.com/QianJinGuo/wiki/blob/main/entities/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md)
+- [Anthropic Claude Managed Agents Platform Launch](../ch04-335-anthropic-claude-managed-agents-platform-launch/)
+- [Anthropic Managed Agents Scaling](../ch04-290-anthropic-managed-agents-scaling/)
+- Oz Multi Harness Cloud Agent Orchestration
+- [Anthropic Pm Jess Yan Managed Agents](../ch04-348-anthropic-pm-jess-yan-managed-agents/)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch01-830-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-demystifying-evals-for-ai-agents.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- MOC
 ## 深度分析
 
 Anthropic 这篇文章系统性地拆解了 AI Agent 评估的核心概念框架，其价值在于将评估问题从「模糊的质量判断」转化为「可度量的工程系统」。

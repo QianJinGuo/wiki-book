@@ -14,15 +14,15 @@
 - Prompt injection 攻击面大：不可信代码和凭证在同一环境
 
 ## 相关实体
-- [Anthropic Pm Jess Yan Managed Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-pm-jess-yan-managed-agents.md)
-- [Anthropic Claude Managed Agents Platform 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
-- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [Anthropic Demystifying Evals For Ai Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-demystifying-evals-for-ai-agents.md)
+- [Anthropic Pm Jess Yan Managed Agents](../ch04-348-anthropic-pm-jess-yan-managed-agents/)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01-181-anthropic-claude-managed-agents-平台正式发布/)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch01-234-claude-managed-agents-新更新-专属云-模式-把agent的手放回企业内部/)
+- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料/)
+- [Anthropic Demystifying Evals For Ai Agents](../ch04-387-anthropic-demystifying-evals-for-ai-agents/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-managed-agents-scaling.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 ## 深度分析
 
 ### 从宠物到牛群：Agent 架构范式转移

@@ -12,15 +12,15 @@
 - 地区针对性：信件已在意大利用户中发现，多语言本地化版本
 - Ledger 官方确认：永远不会通过网站、QR 码、电话或实体信件要求用户透露 seed phrase
 ## 相关实体
-- [Ai Voice Cloning The Technology Behind It Whos Building It A](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
+- [Ai Voice Cloning The Technology Behind It Whos Building It A](../ch12-058-ai-voice-cloning-the-technology-behind-it-who-s-building-i/)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
+- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
+- [Funnel Builder Flaw Woocommerce Checkout Skimm](../ch12-084-funnel-builder-flaw-under-active-exploitation-enables-woocom/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 ## 深度分析
 ### 攻击维度的升级：从数字到物理
 传统钓鱼攻击聚焦于数字渠道（email、SMS、仿冒网站），但此案代表攻击维度的实质性扩展——实体邮件。

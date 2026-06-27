@@ -22,15 +22,15 @@
 - `Anthropic Demystifying Evals For Ai Agents` — Anthropic 的评估实践，与预训练评估有技术重叠
 - `Generalization Dynamics Of Lm Pre Training Jiaxin Wen` — 同一论文的另一个版本
 
-- [fusedash -  generative analytics platform | ai dashboard sof](https://github.com/QianJinGuo/wiki/blob/main/entities/fusedash-generative-analytics-platform.md)
+- [fusedash -  generative analytics platform | ai dashboard sof](../ch01-289-fusedash-generative-analytics-platform-ai-dashboard-sof/)
 
 ## 相关实体
-- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
-- [Generalization Dynamics Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-pre-training-jiaxin-wen.md)
-- [Generalization Dynamics Lm Pretraining](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-lm-pretraining.md)
-- [Multilingual Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/multilingual-ai.md)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- Generalization Dynamics Of Lm Pre Training Jiaxin Wen
+- Generalization Dynamics Pre Training Jiaxin Wen
+- Generalization Dynamics Lm Pretraining
+- Multilingual Ai
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/generalization-dynamics-of-lm-pre-training-jiaxin-wen-1.md)
 

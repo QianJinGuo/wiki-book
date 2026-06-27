@@ -19,7 +19,7 @@ AI Evals 的本质：**把"好不好"变成可重复判断的工程机制**。
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evals-three-methods-of-ai-evaluation.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
+- MOC
 ## 深度分析
 
 **AI Evals 将"质量判断"从主观评价转化为可重复验证的工程系统，这一转变对 AI 应用开发至关重要。** 传统软件开发中，代码路径是确定的——给定相同输入，相同代码总是产生相同输出，测试可以精确验证预期行为。但 AI 系统具有概率性：同一功能可能因 prompt 措辞、模型版本、检索数据变化、工具调用结果、上下文组织方式甚至用户场景差异而表现不同。Evals 通过将质量边界转化为可运行的检查，实现了对 AI 系统输出的持续、可信、可量化的评估——这是 AI 应用工程化从"艺术"走向"科学"的关键基础设施。

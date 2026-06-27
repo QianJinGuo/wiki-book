@@ -11,11 +11,11 @@
 https://developers.google.com/program/my-benefits
 
 ## 相关实体
-- [Pi Mono Github](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-mono-github.md)
-- [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
-- [Edgeclaw Bemit Lobster](https://github.com/QianJinGuo/wiki/blob/main/entities/edgeclaw-bemit-lobster.md)
-- [Claude Opus 47](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-47.md)
-- [Hermes Agent Getting Started Guide 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-getting-started-guide-2026.md)
+- [Pi Mono Github](../ch01-608-pi-mono-github/)
+- [Google Workspace Updates Small Businesses Can Now Import Use](../ch01-749-google-workspace-updates-small-businesses-can-now-seamlessl/)
+- [Edgeclaw Bemit Lobster](../ch04-426-edgeclaw-端云两栖龙虾框架/)
+- [Claude Opus 47](../ch01-363-claude-opus-4-7-并不是一次全面升级-甚至部分能力大幅衰退-n-n大家应该在合适的场景下选择使用/)
+- [Hermes Agent Getting Started Guide 2026](../ch04-292-hermes-agent-保姆级教程-一句话组建你的-ai-打工团队/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-开发者福利每月免费领取-10-美金别忘了来领啊.md)
 

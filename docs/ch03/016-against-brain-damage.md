@@ -69,11 +69,11 @@ AI 虽是单一智能复制，其"多样性"输出被训练数据模式限制。
 在看到 AI 摘要前先以文字记录自己的观点，建立思维锚点后再让 AI 作为推动力。
 
 ## 相关实体
-- [Choosing To Stay Human](https://github.com/QianJinGuo/wiki/blob/main/entities/choosing-to-stay-human.md)
-- [Lightfield Introducing Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/lightfield-introducing-skills.md)
-- [Claude Code Team 10 Tips Boris](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-team-10-tips-boris.md)
-- [Learning Path To Senior](https://github.com/QianJinGuo/wiki/blob/main/entities/learning-path-to-senior.md)
-- [The Main Path To Truly Creative Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/the-main-path-to-truly-creative-ai.md)
+- [Choosing To Stay Human](../ch03-008-choosing-to-stay-human/)
+- [Lightfield Introducing Skills](../ch03-121-lightfield/)
+- [Claude Code Team 10 Tips Boris](../ch09-063-claude-code团队10个使用技巧-boris二刷/)
+- [Learning Path To Senior](../ch03-021-百万年薪学习计划/)
+- [The Main Path To Truly Creative Ai](../ch01-911-the-main-path-to-truly-creative-ai/)
 
 ## 相关引用
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/against-brain-damage.md)

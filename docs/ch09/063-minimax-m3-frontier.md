@@ -130,15 +130,15 @@ MiniMax M3 的三件套不是功能堆砌，而是一个系统能力的三个接
 5. **API 经济性已经发生结构性变化：** 同等价位下 M3 提供约 2 倍的 token 容量，DeepSeek API 的低价策略正在被主流厂商跟进。成本下行意味着 Agent 应用的大规模部署门槛降低，商业模式需要重新评估单位经济性。
 
 ## 相关实体
-- [Claude Code Open Source Model Enterprise Practice](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-open-source-model-enterprise-practice.md)
-- [Tencent Hunyuan Hy3 Preview Open Source Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-hunyuan-hy3-preview-open-source-agent.md)
-- [Cline Open Source Agent Runtime Sdk](https://github.com/QianJinGuo/wiki/blob/main/entities/cline-open-source-agent-runtime-sdk.md)
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](https://github.com/QianJinGuo/wiki/blob/main/entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
-- [How Open Model Ecosystems Compound](https://github.com/QianJinGuo/wiki/blob/main/entities/how-open-model-ecosystems-compound.md)
+- [Claude Code Open Source Model Enterprise Practice](../ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客/)
+- [Tencent Hunyuan Hy3 Preview Open Source Agent](../ch01-094-腾讯混元hy3-preview发布/)
+- [Cline Open Source Agent Runtime Sdk](../ch01-299-cline-releases-open-source-agent-runtime-sdk/)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01-015-opensquilla-launches-open-source-ai-agent-to-cut-token-costs/)
+- [How Open Model Ecosystems Compound](../ch01-651-how-open-model-ecosystems-compound/)
 
-- [minimax token调用第一后：agentos现实与模型厂商的系统适配挑战](https://github.com/QianJinGuo/wiki/blob/main/entities/agentos-minimax-forge-model-adaptation-yaoge.md)
+- minimax token调用第一后：agentos现实与模型厂商的系统适配挑战
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 ## 相关主题
 
 - MiniMax M2.7 模型 — 参考 `Minimax M2 7`

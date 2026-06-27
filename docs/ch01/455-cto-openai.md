@@ -16,31 +16,31 @@
 本文报道 2026 年 OpenAI 内部权力斗争公开化的关键庭审过程，涉及 Musk 对 OpenAI 改组的诉讼以及公司内部高管矛盾的公开化。来源为新智元（量子位公众号），属于科技媒体对公开庭审事件的报道性文章。
 
 ## 相关实体
-- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](https://github.com/QianJinGuo/wiki/blob/main/entities/jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md)
-- [奥特曼最险一战前女Cto当庭翻脸Openai权斗彻底打到台前](https://github.com/QianJinGuo/wiki/blob/main/entities/奥特曼最险一战前女cto当庭翻脸openai权斗彻底打到台前.md)
-- [Openai Buys Ai Consultancy Enterprises](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-buys-ai-consultancy-enterprises.md)
-- [Agi Road May Be Wrong From The Start Wang Peng Tencent](https://github.com/QianJinGuo/wiki/blob/main/entities/agi-road-may-be-wrong-from-the-start-wang-peng-tencent.md)
-- [18岁高中生用Ai挖出150万未知天体首批Chatgpt原住民毕业](https://github.com/QianJinGuo/wiki/blob/main/entities/18岁高中生用ai挖出150万未知天体首批chatgpt原住民毕业.md)
+- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](../ch01-618-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope/)
+- [奥特曼最险一战前女Cto当庭翻脸Openai权斗彻底打到台前](../ch01-513-奥特曼最险一战前女cto当庭翻脸openai权斗彻底打到台前/)
+- [Openai Buys Ai Consultancy Enterprises](../ch01-721-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/)
+- [Agi Road May Be Wrong From The Start Wang Peng Tencent](../ch01-190-agi-之路-可能从一开始就走错了/)
+- [18岁高中生用Ai挖出150万未知天体首批Chatgpt原住民毕业](../ch01-250-18岁高中生用ai挖出150万未知天体-首批chatgpt原住民毕业/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md)
 
-- [Openai官方Cli上线跟复杂的Sdk说拜拜](https://github.com/QianJinGuo/wiki/blob/main/entities/openai官方cli上线跟复杂的sdk说拜拜.md)
-- [Ciodive Openai Daybreak Cyber Threats](https://github.com/QianJinGuo/wiki/blob/main/entities/ciodive-openai-daybreak-cyber-threats.md)
-- [快来和Ai实战派一起Aiaigc峰会最新嘉宾阵容来了](https://github.com/QianJinGuo/wiki/blob/main/entities/快来和ai实战派一起aiaigc峰会最新嘉宾阵容来了.md)
-- [Ai True Moat Organizational Capability](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-true-moat-organizational-capability.md)
-- [The Anti Singularity](https://github.com/QianJinGuo/wiki/blob/main/entities/the-anti-singularity.md)
-- [Wiki Evolver Skill System Design Gpt55 Copilot Session](https://github.com/QianJinGuo/wiki/blob/main/entities/wiki-evolver-skill-system-design-gpt55-copilot-session.md)
-- [Gpt 54 Is A Big Step For Codex](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-54-is-a-big-step-for-codex.md)
-- [Yann Dubois Openai Post Training Matt Turck Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-matt-turck-interview.md)
-- [Codex Sites Cloudflare Worker One Click Deploy Geekhome](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-sites-cloudflare-worker-one-click-deploy-geekhome.md)
-- [Prime Intellect Auto Nanogpt Opus 2930](https://github.com/QianJinGuo/wiki/blob/main/entities/prime-intellect-auto-nanogpt-opus-2930.md)
-- [Gpt 5 It Just Does Stuff](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-5-it-just-does-stuff.md)
-- [Three Years From Gpt 3 To Gemini 3](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-from-gpt-3-to-gemini-3.md)
-- [Openai Symphony Codex Orchestration Linear Control Plane Tutuai](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-symphony-codex-orchestration-linear-control-plane-tutuai.md)
-- [Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
-- [Openai Codex Jasonliu Maxxing Playbook](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-codex-jasonliu-maxxing-playbook.md)
-- [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-ecosystem.md)
+- [Openai官方Cli上线跟复杂的Sdk说拜拜](../ch01-718-openai官方cli上线-跟复杂的sdk说拜拜/)
+- [Ciodive Openai Daybreak Cyber Threats](../ch12-062-openai-launches-daybreak-to-combat-cyber-threats/)
+- [快来和Ai实战派一起Aiaigc峰会最新嘉宾阵容来了](../ch01-678-快来和ai实战派一起aiaigc峰会最新嘉宾阵容来了/)
+- [Ai True Moat Organizational Capability](../ch01-638-ai-true-moat-organizational-capability/)
+- [The Anti Singularity](../ch01-913-the-anti-singularity/)
+- [Wiki Evolver Skill System Design Gpt55 Copilot Session](../ch07-037-wiki-evolver-skill-system-design-gpt-5-5-copilot-session/)
+- [Gpt 54 Is A Big Step For Codex](../ch01-388-gpt-5-4-是-codex-的一次大跨越-四维评估视角与-agent-战争回归/)
+- [Yann Dubois Openai Post Training Matt Turck Interview](../ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
+- [Codex Sites Cloudflare Worker One Click Deploy Geekhome](../ch01-758-openai-codex-sites-ai-一句话建站部署-cloudflare-worker-d1-r2-全套/)
+- [Prime Intellect Auto Nanogpt Opus 2930](../ch01-434-ai第一次科研竞赛中击败人类-opus-4-7狂飙2930步创世界纪录/)
+- [Gpt 5 It Just Does Stuff](../ch01-205-gpt-5-it-just-does-stuff/)
+- [Three Years From Gpt 3 To Gemini 3](../ch01-219-three-years-from-gpt-3-to-gemini-3/)
+- [Openai Symphony Codex Orchestration Linear Control Plane Tutuai](../ch01-818-一文看懂-openai-开源的-codex-编排规范-symphony/)
+- [Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606](../ch01-755-xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-2026/)
+- [Openai Codex Jasonliu Maxxing Playbook](../ch09-111-openai大神教你如何榨干codex/)
+- [5238213](../ch01-829-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/)
+- MOC
 ## 深度分析
 
 ### 1. OpenAI 的治理失败是结构性的，而非偶发的

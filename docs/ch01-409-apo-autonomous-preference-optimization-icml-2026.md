@@ -92,7 +92,7 @@ APO 将这个问题重新形式化为**约束满足问题（Constraint Satisfact
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/apo-icml2026-multi-teacher-drift-uts-20260513.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
+> 主题导航
 
 - [小米AI — ICML 2026 论文矩阵（11篇）](../ch01-872-小米ai-icml-2026-论文矩阵-11篇)
 - [OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](../ch05-039-openclacky-prompt-cache-命中率-90-的-harness-工程实践)

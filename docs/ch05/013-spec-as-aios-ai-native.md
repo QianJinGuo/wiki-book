@@ -253,17 +253,17 @@ AIOS 范式的核心突破在于：**将规范从"文档"重构为"操作系统"
 - **vs `harness-engineering-90-percent-pillars`**：原 entity 是 **Harness 4 根支柱概念**，本文是 **AIOS 在规范体系维度的具体落地**
 
 ## 相关实体
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-coding-agent-quality-defense-five-control-mechanisms.md)
-- [Business Agent Augmentation Layer Practitioner Methodology 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/business-agent-augmentation-layer-practitioner-methodology-20260606.md)
-- [Ai Native Project Management Git](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-project-management-git.md)
-- [Claude Code Founder Harness 100 Lines](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-founder-harness-100-lines.md)
-- [Claude Code Skills Mcp Rules Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch09-016-ai-编程智能体的质量防线-5-个代码质量控制机制-反馈传感器-语义评估-重构边界-来源追溯-智能体攻击/)
+- [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch09-008-业务-agent-增强层架构-复用通用-agent-基座-把业务能力做成可验证增强层/)
+- [Ai Native Project Management Git](../ch04-056-让项目管理也ai-native-两个git仓库干掉了周报-洞察和效能报表/)
+- [Claude Code Founder Harness 100 Lines](../ch01-487-最新claude-code创始人-编程已经解决了-harness重要性持续降低-cc未来只有100行代码/)
+- [Claude Code Skills Mcp Rules Source Analysis](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md)
 
-- [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md)
-- [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-build-to-delete.md)
-- [Wiki Entities Architecture Map](https://github.com/QianJinGuo/wiki/blob/main/queries/wiki-entities-architecture-map.md)
+- Harness Component Expiry Evidence
+- Harness Component Expiry Build To Delete
+- Wiki Entities Architecture Map
 
 ---
 

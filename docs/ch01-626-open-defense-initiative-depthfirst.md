@@ -61,7 +61,7 @@ Open Defense Initiative 本质上是一种**防御性不对称策略**：
 ---
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
 - [Cline releases open-source agent runtime SDK](../ch04-003-agentrun)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm)

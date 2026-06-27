@@ -39,12 +39,12 @@ Claude Sonnet 4.6 在发布后第一个完整月就吸收了 Sonnet 系列的大
 5. **持续监控 agentic workload 的 token intensity**：Agent 架构的 token 消耗速度远超 chat architecture，需要单独计量和预算控制，而不是假设 agent 会比 chat 更便宜。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
 - AI Gateway production index
 - [AI Gateway production index](../ch01-066-ai-gateway-production-index)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 ---
 

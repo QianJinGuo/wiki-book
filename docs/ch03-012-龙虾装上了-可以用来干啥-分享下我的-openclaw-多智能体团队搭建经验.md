@@ -16,7 +16,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- MOC
 ## 深度分析
 
 这篇文章的核心洞察并非某个具体的 OpenClaw 配置技巧，而是对「**专精智能体优于全能智能体**」这一设计原则的实证。作者从自己两个月内迭代出六个专精 Agent 的实践经验出发，总结出了三个阻碍全能 Agent 的根本原因：上下文污染、技能冲突和人设冲突。这三个问题本质上都是**单一 Agent 上下文窗口容量有限性与多场景需求之间的结构性矛盾**——在 LLM 的上下文窗口有物理限制的前提下，往里面塞入的异质性内容越多，每个子任务能分配到的注意力密度就越低，最终表现为 Agent 在每个任务上的表现都不够专业。专精 Agent 的设计通过将上下文空间按职能领域做隔离，让每个 Agent 的注意力资源始终高度集中，这是该方法论的有效性来源 。

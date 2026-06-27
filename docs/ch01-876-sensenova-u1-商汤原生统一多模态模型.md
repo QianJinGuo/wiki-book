@@ -94,8 +94,8 @@ SenseNova-U1 的开源选择（GitHub + HuggingFace + arXiv）是一个完整的
 ## 相关技术
 - [DeepSeek Visual Primitives](../ch09-118-deepseek-visual-primitives-视觉原语作为思考媒介) — 视觉原语作为思考媒介（同期多模态前沿）
 - [Kimi AttnRes](../ch01-880-kimi-attention-residuals-attnres-prenorm-稀释问题与-block-折中方案) — 训练效率优化
-- [Attention Mechanism](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md) — 注意力机制基础
-- [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md) — Transformer 架构演进
+- Attention Mechanism — 注意力机制基础
+- Transformer Architecture — Transformer 架构演进
 
 ## 局限
 - 上下文 32K 上限

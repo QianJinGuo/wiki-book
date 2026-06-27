@@ -66,11 +66,11 @@
 - ❌ 镜头不擦（指纹和灰尘影响画质）
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
+> 主题导航
 
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](https://github.com/QianJinGuo/wiki/blob/main/entities/what-is-urban-density-design-a-clear-guide.md)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](../ch01-875-what-is-urban-density-design-a-clear-guide-to-how-cities-ge/)
 
-- [World's first native color LiDAR gives machines human-like vision](https://github.com/QianJinGuo/wiki/blob/main/entities/technology-ouster-rev8-native-color-lidar.md)
+- [World's first native color LiDAR gives machines human-like vision](../ch01-767-world-s-first-native-color-lidar-gives-machines-human-like-v/)
 
 ---
 

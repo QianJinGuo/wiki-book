@@ -112,7 +112,7 @@ Ronacher 描述的 Harness Loop 可以形式化为以下架构模式：
 - 如何评估代码质量？
 - 如何避免循环放大模型的系统性偏差？
 
-### 与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的关系
+### 与 [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/) 的关系
 
 Ronacher 的文章为 Harness 工程框架提供了重要的维度补充：
 
@@ -176,16 +176,16 @@ Ronacher 的"软件作为有机体"隐喻捕捉了软件工程正在经历的范
 
 ## 相关实体
 
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程的系统化框架
-- [Agent Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架/) — Harness 工程的系统化框架
+- Agent Harness Context Management — Agent 上下文管理
 - Vibe Coding Reality Gap — 代码生成速度与质量的权衡
-- [AI Agent Hype Meets Reality](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-hype-reality-churn.md) — Agent 产品的市场现实
-- [Hidden Technical Debt in Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/hidden-technical-debt-agent-harness.md) — Agent 系统的技术债务
+- [AI Agent Hype Meets Reality](../ch04-014-ai-agent-hype-meets-reality/) — Agent 产品的市场现实
+- [Hidden Technical Debt in Agent Harness](../ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/) — Agent 系统的技术债务
 
 ## 参考
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-coming-loop.md)
-→ [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+→ [Harness Engineering 框架](../ch05-041-harness-engineering-概念框架/)
 
 ---
 

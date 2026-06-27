@@ -35,9 +35,9 @@ Google shipped Gemini 3.1 Flash-Lite in General Availability
 - source/newsletter
 ## 相关实体
 > 主题导航
-- [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md)
-- [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md)
-- [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
+- [NotebookLM](../ch01-017-notebooklm/)
+- Google's Gemini Omni video model surfaces ahead of I/O debut
+- [Google's Gemini Omni video model surfaces ahead of I/O debut](../ch01-345-google-s-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/)
 
 ---
 

@@ -20,7 +20,7 @@
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- MOC
 ## 深度分析
 ### 1. 为什么金融文档处理是 OCR 的死亡区
 传统 OCR 将文档视为图像，逐行识别字符，忽略结构关系。金融文档（资产负债表、SEC 文件、审计报告）的复杂性在于：合并单元格的表格、多栏布局且栏间相互引用、依赖上下文的语义信息（如"去年净利润"需要结合报表周期理解）。单一 OCR 错误会在关联计算中逐级放大，导致系统性分析偏差。

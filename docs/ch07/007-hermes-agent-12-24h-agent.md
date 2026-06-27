@@ -25,10 +25,10 @@
 
 ## 相关实体
 
-- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-wiki-9-step-auto-growing-knowledge-network.md)
+- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch03-053-hermes-wiki-实战-obsidian-hermes-agent-自动生长知识网络的-9-步搭建法/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-12-layer-full-configuration-guide.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- MOC
 ## 全文 20 章 + 4 部分结构
 
 |  部分 | 章节 | 主题 |
@@ -253,9 +253,9 @@ hermes --continue
 
 - **Cron 任务优先选择"高频率、低风险、可验证"的场景**。日报生成、雷达巡检这类定时任务是最容易验证效果的选择，因为输出结果有明确标准且失败影响可控。避免在一开始就配置"每天自动发送 10 封邮件"这类高风险 Cron 任务——一旦出错，Agent 的信任成本会非常高。
 
-- **使用 MemOS/memos-hermes-plugin 解决原生记忆的"记住但记得乱"问题**。该插件通过 LLM 判断去重（而非文本相似度）实现记忆库智能清理，并通过混合检索（关键词+语义）提升记忆召回率。对于长期高频使用 Hermes 的用户，这是 L3 Memory 层最重要的进阶配置 [Memos Hermes Plugin](https://github.com/QianJinGuo/wiki/blob/main/entities/memos-hermes-plugin.md)。
+- **使用 MemOS/memos-hermes-plugin 解决原生记忆的"记住但记得乱"问题**。该插件通过 LLM 判断去重（而非文本相似度）实现记忆库智能清理，并通过混合检索（关键词+语义）提升记忆召回率。对于长期高频使用 Hermes 的用户，这是 L3 Memory 层最重要的进阶配置 Memos Hermes Plugin。
 
-- **多 Agent 协作的起点是"研究与执行分离"，而非功能分工**。根据 [Hermes Four Agents Setup](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-four-agents-setup.md) 的经验，多 Agent 架构的有效分工是按任务类型（研究 vs 执行）而非按功能模块（写代码 vs 写文档）。研究 Agent 需要长上下文和信息整合能力，执行 Agent 需要工具调用可靠性和步骤化执行能力，两者对模型能力的要求本质不同，混在一起会互相拖累。
+- **多 Agent 协作的起点是"研究与执行分离"，而非功能分工**。根据 [Hermes Four Agents Setup](../ch01-127-我给hermes配了4个agent/) 的经验，多 Agent 架构的有效分工是按任务类型（研究 vs 执行）而非按功能模块（写代码 vs 写文档）。研究 Agent 需要长上下文和信息整合能力，执行 Agent 需要工具调用可靠性和步骤化执行能力，两者对模型能力的要求本质不同，混在一起会互相拖累。
 
 ---
 

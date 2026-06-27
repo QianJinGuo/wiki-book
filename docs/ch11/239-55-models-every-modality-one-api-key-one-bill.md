@@ -12,11 +12,11 @@
 - 支持多模态：图像（Stable Diffusion 3.5）、视频（Wan 2.2）、语音（Qwen3 TTS）、视觉语言（Nemotron、Kimi）
 - VPC + 默认零数据保留，平台内置 guardrails
 ## 相关实体
-- [Serverless Inference](https://github.com/QianJinGuo/wiki/blob/main/entities/serverless-inference.md)
-- [Aws Bedrock Serverless Async Inference Sqs Lambda](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md)
-- [Aws Network Firewall Ai Conflict Detection Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-network-firewall-ai-conflict-detection-bedrock.md)
-- [Kiro Job Scheduler Eventbridge Ecs Fargate](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
+- [Serverless Inference](../ch11-003-serverless-inference/)
+- [Aws Bedrock Serverless Async Inference Sqs Lambda](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda/)
+- [Aws Network Firewall Ai Conflict Detection Bedrock](../ch11-122-aws-network-firewall-规则冲突-ai-实时检测方案-部署小指南六/)
+- [Kiro Job Scheduler Eventbridge Ecs Fargate](../ch11-024-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/digitalocean-serverless-inference-55-models.md)
 

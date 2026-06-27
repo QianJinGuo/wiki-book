@@ -250,13 +250,13 @@
 ---
 
 ## 相关实体
-- [Ara Agent Native Research Artifact 37Authors](https://github.com/QianJinGuo/wiki/blob/main/entities/ara-agent-native-research-artifact-37authors.md)
-- [Memento Skills Let Agents Design Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/memento-skills-let-agents-design-agents.md)
+- [Ara Agent Native Research Artifact 37Authors](../ch04-208-ara-agent-native-research-artifact-37-作者-arxiv-2604-24658/)
+- [Memento Skills Let Agents Design Agents](../ch01-256-memento-skills-技能外部记忆让-agent-自进化-arxiv-2603-18743/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/muse-autoskill-bytebrain-self-evolving-agent-arxiv-2605-27366.md)
 
-- [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2606-03979-language-models-need-sleep.md)
-- [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-product-philosophy-guicang-爆款经验-2026-06-12.md)
+- language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式
+- [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](../ch07-014-skill-产品哲学-歸藏做了爆款-skill-后的产品反思/)
 
 ## 深度分析
 

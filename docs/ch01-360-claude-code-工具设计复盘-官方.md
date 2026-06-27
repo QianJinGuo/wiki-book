@@ -8,7 +8,7 @@
 
 ## 相关查询
 
-- [Claude Code 生态系统研究](https://github.com/QianJinGuo/wiki/blob/main/queries/claude-code-ecosystem-research.md) — Claude Code 核心组件、Skill 系统、MCP 协议与企业级扩展路径
+- Claude Code 生态系统研究 — Claude Code 核心组件、Skill 系统、MCP 协议与企业级扩展路径
 
 ## 文章核心
 Anthropic 官方复盘 Claude Code 中三个工具的设计演进过程，揭示一个核心原则：**随着模型能力提升，曾经有用的工具可能反过来成为限制**。

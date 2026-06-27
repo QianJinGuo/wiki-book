@@ -296,29 +296,29 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 **5. 多 Agent 协作时，用 Fan-out 而非在一个节点里串行调用**
 新手实现「同时查天气、查新闻、查股价」的做法是在一个 LLM 节点里 `await Promise.all([weather(), news(), stock()])`——这破坏了图的可见性：外部无法观测到有三个子任务在执行，也不知道哪个先完成。正确做法：用 Fan-out 图结构，三个节点并行执行，一个 merge 节点汇总结果。这样 `stream()` 输出里每个 chunk 都能看到具体是哪个子节点完成了，前端可以精确渲染每个数据源的加载状态。
 ## 相关实体
-- [Gepa Optimize Anything](https://github.com/QianJinGuo/wiki/blob/main/entities/gepa-optimize-anything.md)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [How Open Model Ecosystems Compound](https://github.com/QianJinGuo/wiki/blob/main/entities/how-open-model-ecosystems-compound.md)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/读完这篇你就搞懂-deepseek-v4-了-v2.md)
-- [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md)
+- [Gepa Optimize Anything](../ch01-263-gepa-optimize-anything/)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
+- [How Open Model Ecosystems Compound](../ch01-651-how-open-model-ecosystems-compound/)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](../ch01-216-读完这篇你就搞懂-deepseek-v4-了/)
+- Context Window Management Comparison
 
-- [Tomtunguz Ai Model Inflation](https://github.com/QianJinGuo/wiki/blob/main/entities/tomtunguz-ai-model-inflation.md)
-- [Hiclaw 发布 V110提供 Kubernetes 集群部署实现支持 Hermes Worker 运行时](https://github.com/QianJinGuo/wiki/blob/main/entities/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md)
-- [Llava Onevision 2 Full Frame Rate Vlm Glintlab](https://github.com/QianJinGuo/wiki/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
-- [We Let Four Ais Run Radio Stations Heres What Happened](https://github.com/QianJinGuo/wiki/blob/main/entities/we-let-four-ais-run-radio-stations-heres-what-happened.md)
-- [Liangzi Recruitment](https://github.com/QianJinGuo/wiki/blob/main/entities/liangzi-Recruitment.md)
-- [Lightfield Ai Pipeline Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/lightfield-ai-pipeline-generation.md)
-- [Creativeboom Ai Views Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/creativeboom-ai-views-changed.md)
-- [Netflix Is Building An Ai Animation Studio](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-is-building-an-ai-animation-studio.md)
-- [Minicpm V 46 13B Xinazhiyuan](https://github.com/QianJinGuo/wiki/blob/main/entities/minicpm-v-46-13b-xinazhiyuan.md)
-- [不改模型不降质量谷歌让Gemma 4快了3倍本地跑大模型彻底变天](https://github.com/QianJinGuo/wiki/blob/main/entities/不改模型不降质量谷歌让gemma-4快了3倍本地跑大模型彻底变天.md)
-- [Model Half Life Aifoc](https://github.com/QianJinGuo/wiki/blob/main/entities/model-half-life-aifoc.md)
-- [Ghostbyt3 Github Io Blog Nday Research Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/ghostbyt3-github-io-blog-nday-research-ai.md)
-- [Ai Friendly Architecture Design](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-friendly-architecture-design.md)
-- [Obsidian Llm Wiki Local Kytmanov 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/obsidian-llm-wiki-local-kytmanov-2026.md)
-- [Olmo Hybrid And Future Llm Architectures](https://github.com/QianJinGuo/wiki/blob/main/entities/olmo-hybrid-and-future-llm-architectures.md)
-- [Ai Friendly Architecture Design Taobao](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-friendly-architecture-design-taobao.md)
-- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md)
+- [Tomtunguz Ai Model Inflation](../ch01-553-the-unsustainable-subsidy/)
+- [Hiclaw 发布 V110提供 Kubernetes 集群部署实现支持 Hermes Worker 运行时](../ch11-232-hiclaw-发布-v1-1-0-提供-kubernetes-集群部署实现-支持-hermes-worker-运行时/)
+- [Llava Onevision 2 Full Frame Rate Vlm Glintlab](../ch01-600-对话灵感实验室-全帧率-vlm-低成本与分层部署/)
+- [We Let Four Ais Run Radio Stations Heres What Happened](../ch01-479-we-let-four-ais-run-radio-stations-here-s-what-happened/)
+- [Liangzi Recruitment](../ch01-580-量子位编辑作者招聘/)
+- Lightfield Ai Pipeline Generation
+- [Creativeboom Ai Views Changed](../ch01-617-have-your-views-on-ai-changed/)
+- [Netflix Is Building An Ai Animation Studio](../ch11-200-netflix-is-building-an-ai-animation-studio/)
+- [Minicpm V 46 13B Xinazhiyuan](../ch01-556-清华系团队出手-一张4090即可-爆改-1-3b小钢炮震撼开源/)
+- [不改模型不降质量谷歌让Gemma 4快了3倍本地跑大模型彻底变天](../ch01-507-不改模型-不降质量-谷歌让gemma-4快了3倍-本地跑大模型彻底变天/)
+- [Model Half Life Aifoc](../ch01-697-model-half-life/)
+- [Ghostbyt3 Github Io Blog Nday Research Ai](../ch01-533-n-day-research-with-ai-using-ollama-and-n8n-nikhil-x27-s/)
+- [Ai Friendly Architecture Design](../ch05-022-ai-friendly-架构设计-后端系统面向无人值守开发时代的标准与路径/)
+- [Obsidian Llm Wiki Local Kytmanov 2026](../ch01-826-obsidian-llm-wiki-local-obsidian本地ai知识图谱自动构建工具/)
+- [Olmo Hybrid And Future Llm Architectures](../ch01-370-olmo-hybrid-and-future-llm-architectures/)
+- [Ai Friendly Architecture Design Taobao](../ch01-634-面向-llm-的架构设计-什么是真正的-ai-friendly-架构/)
+- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](../ch01-703-spec-as-aios-ai-native-全栈交付的抗熵架构/)
 
 ---
 

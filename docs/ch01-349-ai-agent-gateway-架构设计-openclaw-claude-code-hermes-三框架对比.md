@@ -13,7 +13,7 @@
 ## 与现有 wiki 的关系
 - **互补**：现有  侧重整体选型（三步选型法+效率五维表格），本文聚焦 **Gateway 单一架构层次的三框架深对比**
 - **填补空白**：wiki 目前有 OpenClaw 源码拆解、Claude Code Prompt/Context/Harness 拆解、Hermes 深度解析，但缺少以 **Gateway 为分析轴的三框架横向对比**
-- **交叉引用**：与 [OpenClaw Prompt/Context/Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)、[Claude Code Prompt/Context/Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md)、[Hermes Agent 深度解析](../ch04-418-hermes-agent) 互为补充
+- **交叉引用**：与 OpenClaw Prompt/Context/Harness、Claude Code Prompt/Context/Harness、[Hermes Agent 深度解析](../ch04-418-hermes-agent) 互为补充
 
 ## 文章导航
 - 本系列共（一）~（九）篇，本文为第（八）篇 Gateway 专题
@@ -66,15 +66,15 @@
 5. **Gateway 的下一阶段演进方向是 ACP 式的上下文聚合，而非更多消息渠道接入** — 文章揭示了一个被低估的趋势：Hermes 的 ACP 将 Gateway 从"消息桥接层"升级为"上下文聚合层"，VS Code 的编辑器状态成为 Agent 实时感知的上下文。对已有 18 渠道适配器的团队，下一步投入应优先做 IDE/编辑器 MCP 集成（文件树、语法树、linter 输出），而不是继续增加消息平台适配器数量
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- Claude Code vs OpenClaw Agent 记忆系统对比
 
 - [深度拆解 Hermes Agent 记忆系统](../ch04-418-hermes-agent)
 - [Hermes Agent vs OpenClaw 对比分析](../ch04-418-hermes-agent)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件)
 - [Claude Code 设计原则与对照分析](../ch01-403-claude-code-设计原则与对照分析)
 - [Claude Code Integration Other Tools](../ch09-057-claude-code-集成其他工具指南)
-- [Local Vs Cloud Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/local-vs-cloud-agent-deployment-strategy.md)
-- [Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
+- Local Vs Cloud Agent Deployment Strategy
+- Openclaw Architecture
 - [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](../ch09-077-claude-dispatch-接口力量-ai-从-chatbot-到-agent-interface-的转变)
 
 ---

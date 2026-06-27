@@ -11,7 +11,7 @@
 - `Openai Realtime Api Architecture` — OpenAI Realtime API 的架构说明
 - `Openai Three Voice Models Kill Simultaneous Translation` — OpenAI 三个语音模型的发布，与实时翻译相关
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- MOC
 ## 深度分析
 OpenAI的Cookbook指南详细介绍了如何使用gpt-realtime-translate构建实时翻译应用。该功能基于GPT模型的实时语音处理能力，结合翻译管线实现流式口译。
 **核心技术路径**：构建实时翻译应用涉及多个技术环节——音频捕获、语音识别（STT）、实时翻译、语音合成（TTS）。gpt-realtime-translate提供了端到端的解决方案，开发者可以通过WebSocket或WebRTC连接实现低延迟的实时翻译。

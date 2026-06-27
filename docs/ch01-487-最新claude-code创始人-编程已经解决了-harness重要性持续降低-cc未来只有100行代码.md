@@ -19,12 +19,12 @@ Claude Code创始人关于Harness和编程未来的观点。
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失，Claude Code 将只有 100 行代码，loop 才是未来](../ch01-239-claude-code-之父最新访谈-编程已经结束-harness-将消失-claude-code-将只有-100-行代)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-367-claude-code-harness-deep-understanding)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道)
-- [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- 深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践
+- Claude Code vs OpenClaw Agent 记忆系统对比
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南)
 
-- [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md)
-- [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-build-to-delete.md)
+- Harness Component Expiry Evidence
+- Harness Component Expiry Build To Delete
 ## 深度分析
 ### 1. Product Overhang 是创新窗口，不是等完美再做事
 Boris 团队在 2024 年底判断模型能力已经「溢出」现有产品边界，选择在能力还未完全成熟时就启动产品构建。这是一种逆向思考方式——与其等待模型完美，不如在溢出节点就开始释放潜力。他们的判断从一开始就是确定的：「六个月内不会有 PMF，因为是在为下一代模型建产品」。这种预建未来产品的思维，与传统 MVP 思维完全相反，却是 AI 产品开发的特有节奏 。

@@ -104,7 +104,7 @@ Claude Code 每一次真实使用都在收集问题/失败轨迹/用户修正，
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 
 ---
 

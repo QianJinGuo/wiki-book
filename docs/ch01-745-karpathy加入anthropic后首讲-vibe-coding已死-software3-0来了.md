@@ -11,7 +11,7 @@
 - [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](../ch05-001-impeccable)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-software3-vibe-coding-dead-agentic-engineering.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 ## 深度分析
 
 Karpathy加入Anthropic后首讲：Vibe Coding已死，Software3.0来了 涉及agent领域的核心技术议题。
