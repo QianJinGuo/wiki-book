@@ -158,7 +158,7 @@ last-session: 2026-05-10
 - [obsidian claude code integration guide](/ch09-097-obsidian-claude-code-integration-guide/)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
 - [Claude Code Memory Setup (Obsidian + Graphify)](/ch01-666-claude-code-memory-setup-obsidian-graphify/)
-- Claude Code vs OpenClaw Agent 记忆系统对比
+- [Claude Code vs OpenClaw Agent 记忆系统对比](/ch01-309-claude-code-agent-teams/)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](/ch09-039-claude-md-12-条规则-karpathy-扩展模板/)
 - [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制/)
 - [gstack — AI协作开发工作流 & 复杂度棘轮](/ch03-058-gstack-ai协作开发工作流-复杂度棘轮/)

@@ -81,7 +81,7 @@ ET = m × (1.0 × I + 0.1 × C + 4.0 × O)
 - [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路/)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
 - [Garry Tan](/ch01-497-garry-tan/)
-- Hermes Agent 新手上手指南
+- [Hermes Agent 新手上手指南](/ch04-418-hermes-agent/)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
 - [四种 Sub Agent 模式](/ch04-302-四种-sub-agent-模式/)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](/ch07-029-qoder-skills-完全指南/)

@@ -177,8 +177,8 @@ Ronacher 的"软件作为有机体"隐喻捕捉了软件工程正在经历的范
 ## 相关实体
 
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Harness 工程的系统化框架
-- Agent Harness Context Management — Agent 上下文管理
-- Vibe Coding Reality Gap — 代码生成速度与质量的权衡
+- [Agent Harness Context Management — Agent 上下文管理](/ch05-038-agent生产级harness工程指南/)
+- [Vibe Coding Reality Gap — 代码生成速度与质量的权衡](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 - [AI Agent Hype Meets Reality](/ch04-014-ai-agent-hype-meets-reality/) — Agent 产品的市场现实
 - [Hidden Technical Debt in Agent Harness](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/) — Agent 系统的技术债务
 

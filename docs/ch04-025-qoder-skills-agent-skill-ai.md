@@ -373,10 +373,10 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [Garry Tan](/ch01-497-garry-tan/)
 - [Agent Workflows](/ch04-306-agent-workflows/)
 - [Hermes Agent](/ch04-418-hermes-agent/)
-- Hermes Agent 新手上手指南
+- [Hermes Agent 新手上手指南](/ch04-418-hermes-agent/)
 - [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)
 - [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
-- Hermes Agent Skill
+- [Hermes Agent Skill](/ch04-418-hermes-agent/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 

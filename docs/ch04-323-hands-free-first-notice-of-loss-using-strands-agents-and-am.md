@@ -88,7 +88,7 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 - Autonomous Agent Systems — 自主 Agent 系统
 - Agent Deployment Strategy — Agent 部署策略
 - Ai Safety Governance — AI 安全治理
-- Aws Ai Services — AWS AI 服务
+- [Aws Ai Services — AWS AI 服务](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
 
 ---
 

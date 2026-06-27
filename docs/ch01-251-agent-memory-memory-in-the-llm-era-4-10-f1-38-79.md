@@ -50,11 +50,11 @@
 
 ## 相关实体
 - [memory agent systems cobanov](/ch04-458-memory-agent-systems-cobanov/)
-- Hermes Agent 记忆系统 vs OpenClaw 记忆观
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](/ch04-418-hermes-agent/)
 - [AI Agent 记忆系统架构](/ch04-145-how-ai-agent-memory-works/)
-- 深度拆解 Hermes Agent 记忆系统
+- [深度拆解 Hermes Agent 记忆系统](/ch04-418-hermes-agent/)
 
-- ai agent memory systems
+- [ai agent memory systems](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
 
 - MOC
 ## 深度分析

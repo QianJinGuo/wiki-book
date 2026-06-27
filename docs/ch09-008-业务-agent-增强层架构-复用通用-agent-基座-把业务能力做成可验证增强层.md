@@ -310,7 +310,7 @@ business_agent_profile:
 
 ## 相关实体
 
-- 循环工程 (loop engineering) — 清华 2026 框架
+- [循环工程 (loop engineering) — 清华 2026 框架](/ch05-004-loop-engineering-把反馈循环放进工程现场/)
 - MOC
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 

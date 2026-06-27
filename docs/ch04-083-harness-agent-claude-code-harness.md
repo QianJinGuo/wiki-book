@@ -167,7 +167,7 @@
 - [Better Harness Eval Trace Harness Hill Climbing](/ch05-058-从-autoresearch-到-better-harness-自动优化真正难在评价信号/) — Trace-driven 评测 + Harness hill-climbing 自优化循环。本实体是"评测方案设计"的人工智能辅助；那个是"评测驱动的 Harness 优化"反馈环。
 
 ## 相关实体
-- Claude Code Best Practices Prompt Engineering
+- [Claude Code Best Practices Prompt Engineering](/ch09-054-claude-code-prompt/)
 
 - [perplexity computer empirical study: how ai agents reshape k](/ch04-085-perplexity-computer-empirical-study-how-ai-agents-reshape-k/)
 

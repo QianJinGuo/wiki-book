@@ -12,7 +12,7 @@
 ## 一、识别 AI Coding 的三大核心问题
 
 ## 相关实体
-- Claude Code Prompt Context Harness
+- [Claude Code Prompt Context Harness](/ch05-081-claude-harness-generator-evaluator-context-reset/)
 - [Fudan Peking Ahe Agentic Harness Engineering](/ch04-220-fudan-peking-ahe-agentic-harness-engineering/)
 - [Pi Openclaw Coding Harness](/ch05-032-coding-harness-工程本质-从-pi-到-openclaw/)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](/ch05-019-ai-production-development-workflow-openspec-superpowers-gsta/)
@@ -195,7 +195,7 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 两篇是同一团队（高德广告工程 / 高德技术公众号）在 6 周内的演进：先讲"为什么要 Harness"，再讲"具体 Harness 体系长什么样"。
 
 ## 相关实体（更新）
-- Claude Code Prompt Context Harness
+- [Claude Code Prompt Context Harness](/ch05-081-claude-harness-generator-evaluator-context-reset/)
 - [Fudan Peking Ahe Agentic Harness Engineering](/ch04-220-fudan-peking-ahe-agentic-harness-engineering/)
 - [Pi Openclaw Coding Harness](/ch05-032-coding-harness-工程本质-从-pi-到-openclaw/)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](/ch05-019-ai-production-development-workflow-openspec-superpowers-gsta/)

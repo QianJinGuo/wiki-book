@@ -95,8 +95,8 @@ vision Agent 的 system prompt 中最值得借鉴的是「**严格排除**」清
 - [Agentcore Payments X402 Agentic Commerce](/ch11-066-agentcore-payments-与代理商务创新-技术深度解析/) — AgentCore 在支付场景的应用
 - [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](/ch04-167-基于strands和agentcore-实现agentic-scheduler-在多region自动编排推理gpu算力/) — Strands + AgentCore 调度案例
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/) — Bedrock Agent 运维
-- Multi Agent Collaboration Patterns — 多 Agent 协作模式
-- Multi Agent Orchestration — 多 Agent 编排
+- [Multi Agent Collaboration Patterns — 多 Agent 协作模式](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
+- [Multi Agent Orchestration — 多 Agent 编排](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
 - Agent Deployment Strategy — Agent 部署策略
 - [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](/ch04-200-deep-agents-bedrock-agentcore-多-agent-编排-隔离基础设施的端到端研究-ag/)
 - [aws bedrock agentcore 多账户对话式运维助手：基于 strands agents + devops](/ch11-072-aws-bedrock-agentcore-多账户对话式运维助手-基于-strands-agents-devops/)

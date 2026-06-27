@@ -237,7 +237,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [QQ音乐 Harness Engineering 实践原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/qq-music-harness-engineering-monorepo-microservices.md)
 
 ## 相关实体
-- Claude Code Best Practices Prompt Engineering
+- [Claude Code Best Practices Prompt Engineering](/ch09-054-claude-code-prompt/)
 
 - [Feishu Aily Agent Lobster](/ch04-413-飞书aily-企业级agent智能伙伴/)
 - [Colaos Listenhub Agency Native Organization Juzi](/ch04-194-colaos-与-ai-原生组织/)
@@ -273,7 +273,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Lessons From 2 Billion Agentic Workflows](/ch04-359-lessons-from-2-billion-agentic-workflows/)
 - [Local Vs Cloud Agent Onsite Context Debate Xingxiaozhao](/ch04-448-本地-vs-云端-agent-的现场之争-当下选本地-终局云端-行小招/)
 - [Volcengine Data Agent Marketing Strategy Agent](/ch04-478-使用营销策略助手-数据智能体-火山引擎/)
-- Phoneworld Mobile Agent Scaling Mock Environments Tencent Hunyuan Arxiv 2605 29486
+- [Phoneworld Mobile Agent Scaling Mock Environments Tencent Hunyuan Arxiv 2605 29486](/ch04-047-muse-autoskill-bytebrain-agent-arxiv-2605-27366/)
 - [Hermes Agent Self Evolution 源码解析](/ch04-418-hermes-agent/)
 - [Real Ai Agents And Real Work](/ch04-209-real-ai-agents-and-real-work/)
 - [Volcengine Data Agent Intelligent Query Agent](/ch04-472-智能问数agent-数据智能体-火山引擎/)

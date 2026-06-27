@@ -160,8 +160,8 @@ Protocol-H 的核心贡献在于揭示了**企业级 RAG 的主要瓶颈不是 L
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise.md)
 
 ## 相关实体
-- `Harness架构` — 分层Agent拓扑的编排设计
-- `Bedrock多Agent` — 企业RAG的Agentic实践对比
+- [`Harness架构` — 分层Agent拓扑的编排设计](/ch05-038-agent生产级harness工程指南/)
+- [`Bedrock多Agent` — 企业RAG的Agentic实践对比](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 
 ---
 

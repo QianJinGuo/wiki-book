@@ -12,7 +12,7 @@
 ## 相关实体
 - [Ath Agent Trust Handshake Protocol](/ch04-500-为了让agent更安全的工作-有多少人操碎了心/)
 - [Canvas Breach Disrupts Schools Colleges Nationwide](/ch12-031-canvas-breach-disrupts-schools-colleges-nationwide/)
-- Skills Registry 公测开启为企业打造私有的 Skill 管理中心
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](/ch04-498-skillclaw-nacos-从一次-agent-会话到可治理-skill-registry-的自动演化闭环/)
 - [Aws Bedrock Agentcore Identity Security](/ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构/)
 - [Github Investigating Teampcp Claimed 17Cc77](/ch12-069-github-breached-employee-device-hack-led-to-exfiltration-o/)
 

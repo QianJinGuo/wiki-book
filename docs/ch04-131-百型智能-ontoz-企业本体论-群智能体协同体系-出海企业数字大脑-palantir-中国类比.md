@@ -191,7 +191,7 @@
 - 企业 AI 数据准备 — Enterprise Ai Investment Data Readiness Cio
 ## 相关实体
 
-- how grab is using ai agents to boost team productivity
+- [how grab is using ai agents to boost team productivity](/ch04-065-building-ai-agents-for-business-support-using-amazon-bedrock/)
 - MOC
 
 ---

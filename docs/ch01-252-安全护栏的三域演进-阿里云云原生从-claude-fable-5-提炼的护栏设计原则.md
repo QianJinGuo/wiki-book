@@ -126,7 +126,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 ## 相关实体
 
-- **同 Fable 5 主题**（互补不重叠）：
+- [**同 Fable 5 主题**（互补不重叠）：](/ch04-060-fable-5-的信号-agent-开始拼-runtime-架构师若飞的-runtime-contract-工程化拆/)
   - [Fable 5 AWS 中文译本](/ch01-677-anthropic/)（产品视角）
   - [Claude Fable 5 Safety Fables (Lambert)](/ch01-649-claude-fable-5-and-new-ai-safety-fables/)（政策视角）
   - [Fable 5 Mollick hands-on](/ch01-242-claude-fable-5-ethan-mollick-hands-on-qualitative-evaluati/)（用户体验视角）

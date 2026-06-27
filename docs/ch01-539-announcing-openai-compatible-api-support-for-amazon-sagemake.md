@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [Amazon Bedrock Api Security Guide](/ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南/)
-- Build Real Time Voice Applications With Amazon Sagemaker Ai
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](/ch04-470-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni/)
 - [Amazon Bedrock Agentcore Gateway Mcp Extension](/ch11-014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway/)
 - [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](/ch04-261-build-ai-agents-for-business-intelligence-with-amazon-bedroc/)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)

@@ -12,7 +12,7 @@
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-pro-vs-claude.md)
 
 ## 相关实体
-- We Tested DeepSeek V4 Pro and Flash Against Claude
+- [We Tested DeepSeek V4 Pro and Flash Against Claude](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](/ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai/)
 - [ds4c deepseek v4 antirez](/ch01-419-ds4c-deepseek-v4-antirez/)

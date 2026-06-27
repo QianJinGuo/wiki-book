@@ -149,17 +149,17 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 - [memory agent systems cobanov](/ch04-458-memory-agent-systems-cobanov/)
 
 - [AI Agent 记忆系统架构](/ch04-145-how-ai-agent-memory-works/)
-- 深度拆解 Hermes Agent 记忆系统
-- ai agent memory systems
+- [深度拆解 Hermes Agent 记忆系统](/ch04-418-hermes-agent/)
+- [ai agent memory systems](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
 - [你不知道的 Agent 原理架构与工程实践](/ch04-300-agent-principle-architecture-engineering-practice/)
-- Agent Memory System 设计指南
+- [Agent Memory System 设计指南](/ch04-087-agent-memory-架构本质/)
 - [Agent Harness 架构](/ch04-207-agent-harness-架构/)
 - [Agent 自我改进的六条路](/ch04-047-agent-自我改进的六条路/)
 - [Agent架构关键变化：Harness正在成为新后端](/ch04-027-agent架构关键变化-harness正在成为新后端/)
-- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
 - [AI Coding Agent 记忆系统](/ch04-288-ai-coding-agent-记忆系统/)
 - Agent Memory System Design
-- Coding Harness 工程本质
+- [Coding Harness 工程本质](/ch05-032-coding-harness-pi-openclaw/)
 - [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/)
 - [Hermes Agent 记忆系统深度拆解](/ch04-068-hermes-agent-记忆系统深度拆解/)
 - [Design Patterns for AI Agents 2026](/ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl/)

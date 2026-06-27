@@ -46,7 +46,7 @@ source_url: https://mp.weixin.qq.com/s/ieQhpziDVspRQ0Kun_mYzw
 - [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
 
 - [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路/)
-- ai agent memory systems
+- [ai agent memory systems](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
 - [Agent架构关键变化：Harness正在成为新后端](/ch04-289-agent架构关键变化-harness正在成为新后端/)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](/ch01-280-anthropic-官方-agent-harness-平台-claude-managed-agents-完整指南/)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](/ch01-018-anthropic-联创-2028-年实现-ai-自我构建的概率超过-60/)

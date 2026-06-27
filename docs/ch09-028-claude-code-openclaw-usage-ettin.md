@@ -174,8 +174,8 @@ scores = model.predict([("query", "document")])
 Ettin Reranker Family 的 **六档参数量 + SoTA 性能 + 长上下文 + Flash Attention 2** 组合，为 Agent 记忆系统的检索升级提供了实用选择。17M 到 1B 的灵活规格让不同场景（在线延迟敏感 vs 离线精度优先）都能找到合适平衡点。
 
 ## 相关实体
-- Claude Code Openclaw Memory Vector Db Doubt
-- Claude Code Openclaw Memory Comparison
+- [Claude Code Openclaw Memory Vector Db Doubt](/ch01-681-claude-code-memory-setup-obsidian-graphify/)
+- [Claude Code Openclaw Memory Comparison](/ch01-681-claude-code-memory-setup-obsidian-graphify/)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
 - [Skill System Design Three Way Comparison](/ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
 - [Openclaw Agent Loop Design Patterns](/ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式/)
@@ -229,10 +229,10 @@ Claude Code 是延迟敏感型场景——每次对话都需要检索，32M 的 
 
 ## 相关实体
 
-- `Ettin Reranker Family` — 模型详情
-- `Claude Code vs OpenClaw 记忆系统对比` — 两者检索机制原状
-- `向量数据库必要性反思` — LLM 路由 vs 向量检索哲学讨论
-- `Agent Memory 架构本质` — 记忆系统设计模式
+- [`Ettin Reranker Family` — 模型详情](/ch01-374-introducing-the-ettin-reranker-family/)
+- [`Claude Code vs OpenClaw 记忆系统对比` — 两者检索机制原状](/ch03-002-obsidian-claude-code-集成指南/)
+- [`向量数据库必要性反思` — LLM 路由 vs 向量检索哲学讨论](/ch01-039-rag-vs-llm-wiki-深度对比-企业知识库架构选型指南/)
+- [`Agent Memory 架构本质` — 记忆系统设计模式](/ch04-088-agent-memory/)
 - OpenClaw 架构解析 — OpenClaw 整体架构
 
 ---

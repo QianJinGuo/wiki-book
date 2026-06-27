@@ -80,10 +80,10 @@ Pydantic AI 不是 LangChain 的竞品——LangChain 用链式调用组织 LLM 
 ## 相关实体
 
 - **OpenTelemetry** — Logfire 基于的标准，可观测性跨厂商互操作
-- **Agent Harness Engineering** — Pydantic AI 是 harness 工程的类型安全实现
+- [**Agent Harness Engineering** — Pydantic AI 是 harness 工程的类型安全实现](/ch05-031-harness-engineering-实战-ai-coding-率从-25-提升至-90/)
 - **Instructor** — 同为 LLM 结构化输出方案，但定位单次调用
-- **LangChain** — 链式调用范式代表，与 Pydantic AI 互补而非竞争
-- **Type-Driven Development** — Pydantic AI 把类型驱动从静态语言推广到 Agent 运行时
+- [**LangChain** — 链式调用范式代表，与 Pydantic AI 互补而非竞争](/ch04-176-langchain创始人解读-ai智能体两种沙盒架构/)
+- [**Type-Driven Development** — Pydantic AI 把类型驱动从静态语言推广到 Agent 运行时](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 
 ---
 

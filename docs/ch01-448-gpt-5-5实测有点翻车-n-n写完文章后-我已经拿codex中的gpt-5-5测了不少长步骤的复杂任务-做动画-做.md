@@ -13,7 +13,7 @@
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai/)
 - [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](/ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价/)
-- Yann Dubois Openai Post Training Interview
+- [Yann Dubois Openai Post Training Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
 - [Openai Codex Super Computer Network Xinzhiyuan](/ch09-058-openai秘密矩阵曝光-codex将所有设备连成超级电脑/)
 - [Gpt54 Codex Interconnects](/ch01-508-gpt-5-4-codex-评测-interconnects-的-agent-使用体验/)
 

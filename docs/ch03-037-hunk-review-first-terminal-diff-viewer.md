@@ -107,9 +107,9 @@ Hunk 聚焦于 **review 环节**，与 [Harness Engineering](/ch05-041-harness-e
 
 ## 相关实体
 
-- Agentic Coding — Hunk 为 agentic coding 工作流设计
-- Claude Code — 典型的 agentic coder，Hunk 的主要集成目标
-- Human-in-the-loop — Hunk 的核心价值主张
+- [Agentic Coding — Hunk 为 agentic coding 工作流设计](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Claude Code — 典型的 agentic coder，Hunk 的主要集成目标](/ch03-002-obsidian-claude-code-集成指南/)
+- [Human-in-the-loop — Hunk 的核心价值主张](/ch01-395-explicit-vs-implicit-in-the-age-of-intelligences-le-secré/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hunk-diff-viewer.md)
 

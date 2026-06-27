@@ -111,10 +111,10 @@ The article documents a "subtle vibe shift" in banks over 2026 Q1-Q2: from loudl
 ## 相关实体（Related Entities）
 
 - [Clarity Act Financial](/ch01-003-5-things-to-know-about-the-clarity-act/) — CLARITY Act 立法细节
-- CLARITY Act — CLARITY Act 5 个关键点
+- [CLARITY Act — CLARITY Act 5 个关键点](/ch01-108-5-things-to-know-about-the-clarity-act/)
 - [Agentcore Payments X402 Agentic Commerce](/ch11-066-agentcore-payments-与代理商务创新-技术深度解析/) — AWS Bedrock AgentCore x402 协议（agent-to-agent 支付）
 - [Amazon Bedrock Agentic Payments Guardrails](/ch04-059-enable-safe-agentic-payments-with-built-in-guardrails-using/) — Bedrock agentic payments 护栏
-- enable safe agentic payments with built in guardrails using  — 安全 agent 支付
+- [enable safe agentic payments with built in guardrails using  — 安全 agent 支付](/ch04-305-how-loka-built-a-natural-low-latency-voice-agent-with-amazo/)
 - [Coinbase Becomes Hyperliquids Official Usdc Treasury Deployer As Usdh Sunsets](/ch01-054-coinbase-becomes-hyperliquid-s-official-usdc-treasury-deploy/) — Coinbase USDC treasury
 - [Tether Launches Developer Grants Program For Local Ai Paymen](/ch09-115-tether-launches-developer-grants-program-for-local-ai-paymen/) — Tether 本地 AI 支付开发者资助
 - [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](/ch01-646-crypto-inflows-hit-858m-as-clarity-lifts-sentiment/) — 加密基金 6 周连续流入

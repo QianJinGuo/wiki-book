@@ -32,11 +32,11 @@
 
 ## 相关实体
 - [Hermes Agent vs OpenClaw 对比分析](/ch04-188-hermes-agent-为什么火了-和-openclaw-龙虾比一比/)
-- Hermes Agent 记忆系统 vs OpenClaw 记忆观
-- Hermes Agent 自进化机制源码解析
-- 深度拆解 Hermes Agent 记忆系统
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](/ch04-418-hermes-agent/)
+- [Hermes Agent 自进化机制源码解析](/ch04-418-hermes-agent/)
+- [深度拆解 Hermes Agent 记忆系统](/ch04-418-hermes-agent/)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](/ch04-382-深度拆解-hermes-agent-记忆系统-它修正了-openclaw-的哪层误区/)
-- Hermes+Kimi K2.6 多Agent军团实战教程
+- [Hermes+Kimi K2.6 多Agent军团实战教程](/ch03-053-hermes-wiki-实战-obsidian-hermes-agent-自动生长知识网络的-9-步搭建法/)
 
 ---
 

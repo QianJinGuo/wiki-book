@@ -100,7 +100,7 @@
 ## 相关实体
 
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/)
-- Context Engineering
+- [Context Engineering](/ch04-403-agentic-ai-infrastructure-practice-series-9-context-enginee/)
 - Spec Coding
 - [Claude Code Dynamic Workflows](/ch09-070-claude-code-dynamic-workflows-实战模式与构建技巧/)
 - MOC

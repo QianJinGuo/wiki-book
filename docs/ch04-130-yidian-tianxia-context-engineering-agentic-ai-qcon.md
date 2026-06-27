@@ -160,7 +160,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/yidian-tianxia-context-engineering-agentic-ai-qcon.md)
 
-- `Agentic AI`
+- [`Agentic AI`](/ch04-273-管理作为-ai-超级能力-mollick-的-agentic-work-delegation-方程/)
 
 ---
 

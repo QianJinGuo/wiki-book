@@ -14,7 +14,7 @@
 
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- We Tested DeepSeek V4 Pro and Flash Against Claude
+- [We Tested DeepSeek V4 Pro and Flash Against Claude](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
 
 ## 深度分析
 ### 1. 复杂工作流测试揭示模型间真实差距

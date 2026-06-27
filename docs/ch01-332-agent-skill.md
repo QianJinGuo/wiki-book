@@ -107,7 +107,7 @@ SaaS 产品经理每周评估 1-10 家客户定制需求工作量，认真做完
 ## 相关实体
 - [Agent Skill 高质量编写规范](/ch04-242-agent-skill-高质量编写规范/)
 
-- Agent Skill 评估与迭代
+- [Agent Skill 评估与迭代](/ch04-498-skillclaw-nacos-从一次-agent-会话到可治理-skill-registry-的自动演化闭环/)
 - [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](/ch04-369-skillsieve-agent-skill-安全检测三层框架/)
 
 ## 深度分析

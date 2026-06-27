@@ -77,7 +77,7 @@
 ## 原文链接
 
 ## 相关实体
-- gemma 4 12b：google 多模态本地模型 —— 扔掉编码器
+- [gemma 4 12b：google 多模态本地模型 —— 扔掉编码器](/ch01-716-google-brings-local-ai-agents-to-laptops-with-gemma-4-12b/)
 - [amazon bedrock模型推理的serverless异步架构 – 处理在线多模态高负载案例](/ch11-073-amazon-bedrock模型推理的serverless异步架构-处理在线多模态高负载案例/)
 - [gemma 4 multi token prediction drafters](/ch01-214-gemma-4-multi-token-prediction-drafters/)
 

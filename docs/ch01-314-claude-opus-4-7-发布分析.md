@@ -114,7 +114,7 @@
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题/)
 
-- Harness Engineering 七层框架
+- [Harness Engineering 七层框架](/ch05-031-harness-engineering-实战-ai-coding-率从-25-提升至-90/)
 
 - MOC
 ## 深度分析

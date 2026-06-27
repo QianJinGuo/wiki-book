@@ -12,7 +12,7 @@
 ## 相关实体
 > 主题导航
 
-- How to Calculate the Inference Efficiency Ratio
+- [How to Calculate the Inference Efficiency Ratio](/ch01-492-how-to-get-a-100-conference-acceptance-rate-the-novee-way/)
 - [From Doer To Director: The AI Mindset Shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
 
 - [ai芯片架构：从逻辑门到矩阵乘法](/ch01-861-ai芯片架构-从逻辑门到矩阵乘法/)

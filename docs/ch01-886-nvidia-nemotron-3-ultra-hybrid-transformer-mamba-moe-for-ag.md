@@ -159,7 +159,7 @@ NIM 专门为 NVIDIA GPU 优化推理——如果你的基础设施是 NVIDIA GP
 - [Nvidia Agentic Systems Extreme Co Design](/ch04-514-building-for-the-rising-complexity-of-agentic-systems-with-e/)
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](/ch01-830-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](/ch04-043-nvidia-nemotron-3-agents-rag-voice-safety/)
-- Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation
+- [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](/ch01-885-accelerating-transformers-fine-tuning-with-nvidia-nemo-autom/)
 
 ---
 

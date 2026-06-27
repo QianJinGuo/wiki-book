@@ -141,7 +141,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 - [Harness Engineering 四根支柱与四要素架构](/ch05-077-harness-engineering-四根支柱与四要素架构/)
 - [Harness Engineering 指南（字节跳动TRAE）](/ch01-520-来自字节跳动trae的harness-engineering指南/)
 - [清华大学 Harness Engineering 研究报告](/ch05-060-清华大学-驾驭工程-harness-engineering-研究报告/)
-- Hermes Agent 深度解析（阿里云/飞樰）
+- [Hermes Agent 深度解析（阿里云/飞樰）](/ch04-418-hermes-agent/)
 - [harness-engineering-systematic-explainer](/ch05-036-harness-engineering-systematic-explainer/)
 - [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice/)
 - [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)

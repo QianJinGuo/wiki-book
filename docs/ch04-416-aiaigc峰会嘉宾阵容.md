@@ -17,7 +17,7 @@
 - 将揭晓「2026年度值得关注的AIGC企业&产品榜单」
 
 ## 相关实体
-- Coding Harness 工程本质
+- [Coding Harness 工程本质](/ch05-032-coding-harness-pi-openclaw/)
 - [Hermes Agent 记忆系统深度拆解](/ch04-418-hermes-agent/)
 
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)

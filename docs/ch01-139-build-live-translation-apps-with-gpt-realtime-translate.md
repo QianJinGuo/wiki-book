@@ -7,9 +7,9 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-live-translation-apps-with-gpt-realtime-translate.md)
 
 ## 相关实体
-- `Openai Gpt Realtime Voice Models Qbitai` — GPT Realtime Voice 模型的详细信息，与 gpt-realtime-translate 直接相关
-- `Openai Realtime Api Architecture` — OpenAI Realtime API 的架构说明
-- `Openai Three Voice Models Kill Simultaneous Translation` — OpenAI 三个语音模型的发布，与实时翻译相关
+- [`Openai Gpt Realtime Voice Models Qbitai` — GPT Realtime Voice 模型的详细信息，与 gpt-realtime-translate 直接相关](/ch01-139-build-live-translation-apps-with-gpt-realtime-translate/)
+- [`Openai Realtime Api Architecture` — OpenAI Realtime API 的架构说明](/ch01-099-openai-realtime-api/)
+- [`Openai Three Voice Models Kill Simultaneous Translation` — OpenAI 三个语音模型的发布，与实时翻译相关](/ch01-614-openai-gpt-realtime-voice-models-qbitai/)
 
 - MOC
 ## 深度分析

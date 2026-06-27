@@ -152,7 +152,7 @@ Claude Code Subagents 的设计实际上就是这种路由抽象的具体实现 
 ## 相关实体
 
 - [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](/ch11-001-anthropic-招人底牌-1680-份员工履历揭示-基础设施老兵-吃香/)
-- 新程alpha认知模型：4b参数端侧部署，群体智能以小搏大比肩gpt-5.4
+- [新程alpha认知模型：4b参数端侧部署，群体智能以小搏大比肩gpt-5.4](/ch01-463-gpt-5-5全球首破-0源码盲写程序-编程ai进入新纪元/)
 - MOC
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor-harness-model-production-floor.md)
 

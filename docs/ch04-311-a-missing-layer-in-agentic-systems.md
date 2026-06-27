@@ -112,12 +112,12 @@ def review_content(self, content):
 - [Agentcore Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/) — AgentCore 工程化
 - [Hands Free First Notice Of Loss Using Strands Agents And Ama](/ch04-320-hands-free-first-notice-of-loss-using-strands-agents-and-am/) — 保险 FNOL 中的人类角色重置
 - [Build An Ai Powered Equipment Repair Assistant Using Amazon ](/ch04-214-build-an-ai-powered-equipment-repair-assistant-using-amazon/) — AgentCore 维修助手的记忆层设计
-- Production Agent Engineering — 生产级 Agent 工程
+- [Production Agent Engineering — 生产级 Agent 工程](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - Agent Deployment Strategy — Agent 部署策略
 - Ai Safety Governance — AI 安全治理
 - Autonomous Agent Systems — 自主 Agent 系统
-- Agent Framework Comparison — Agent 框架对比
-- Multi Agent Orchestration — 多 Agent 编排
+- [Agent Framework Comparison — Agent 框架对比](/ch07-063-microsoft-agent-framework-tools-总览-4-类工具-provider-矩阵-too/)
+- [Multi Agent Orchestration — 多 Agent 编排](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
 
 ---
 

@@ -14,7 +14,7 @@
 ## 相关实体
 - [Build Live Translation Apps With Gpt Realtime Translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
 - [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](/ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价/)
-- GPT-5.5 实测
+- [GPT-5.5 实测](/ch01-463-gpt-5-5全球首破-0源码盲写程序-编程ai进入新纪元/)
 - [Gpt 5 Is Here And Openai Has Some Tips](/ch01-489-gpt-5-is-here-and-openai-has-some-tips/)
 - [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](/ch01-603-anthropic最危险路线图曝光-无限记忆-多智能体-硅谷ai终局仅剩双雄决顶/)
 

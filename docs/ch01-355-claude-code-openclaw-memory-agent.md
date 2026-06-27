@@ -13,8 +13,8 @@
 
 ## 相关实体
 - [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
-- Claude Code Openclaw Memory Vector Db Doubt
-- Claude Code Openclaw Memory Comparison
+- [Claude Code Openclaw Memory Vector Db Doubt](/ch01-681-claude-code-memory-setup-obsidian-graphify/)
+- [Claude Code Openclaw Memory Comparison](/ch01-681-claude-code-memory-setup-obsidian-graphify/)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-255-anthropic-博客-claude-code-大型代码库最佳实践/)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
 

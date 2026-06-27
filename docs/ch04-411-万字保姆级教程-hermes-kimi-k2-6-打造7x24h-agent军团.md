@@ -12,7 +12,7 @@
 - [Hermes Agent K2 6 Tutorial](/ch04-418-hermes-agent/)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-418-hermes-agent/)
 - [Small Hermes Self Evolving Agent Architecture](/ch04-109-small-hermes-自我进化-agent-架构/)
-- Kimi K2 Tidb Agent Database Huangdongxu 20260513
+- [Kimi K2 Tidb Agent Database Huangdongxu 20260513](/ch11-077-tidb-cloud-agent-native-数据库与-kimi-k2-6-合作/)
 - [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](/ch04-418-hermes-agent/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-k2-6-multi-agent.md)

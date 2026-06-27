@@ -140,14 +140,14 @@ graph TB
 
 ## 相关实体
 - [foundation capital agent era six insights](/ch04-173-foundation-capital-agent-era-six-insights/)
-- Hermes Agent 自进化机制源码解析
+- [Hermes Agent 自进化机制源码解析](/ch04-418-hermes-agent/)
 - [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](/ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化/)
 - [AI Coding Agent 记忆系统](/ch04-288-ai-coding-agent-记忆系统/)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](/ch05-020-martin-fowler-ai-研发-harness-非确定性承重层/)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](/ch04-071-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- Karpathy LLM Wiki V2
+- [Karpathy LLM Wiki V2](/ch01-550-llm-wiki-架构解析-karpathy-的-markdown-知识库模式/)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](/ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
 - [hermes-agent-self-evolving-source-analysis](/ch04-039-hermes-agent-self-evolving-source-analysis/)
@@ -157,8 +157,8 @@ graph TB
 - [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制/)
 - [Agent Harness 架构](/ch04-207-agent-harness-架构/)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
-- Agent Memory System 设计指南
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
+- [Agent Memory System 设计指南](/ch04-087-agent-memory-架构本质/)
 - 企业级AI记忆基质三层架构：事实/交互/行动记忆
 - [GBrain](/ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策/)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-126-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
@@ -173,7 +173,7 @@ graph TB
 - [Chatgpt Dreaming V3 Long Term Memory Xinzhiyuan](/ch01-799-chatgpt记忆大升级-十亿人免费用/)
 - [Chatgpt Dreaming V3 Long Term Memory Openai](/ch01-768-chatgpt-的-失忆症-终于被治好了-dreaming-v3-让大模型拥有长期记忆/)
 - [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](/ch01-855-llm-自我提升系统综述-yang-等-113-页四阶段闭环框架-zesearch-nlp-lab/)
-- recursive first steps toward automated ai research：sota 三基准自
+- [recursive first steps toward automated ai research：sota 三基准自](/ch01-525-mollick-实用-ai-选型指南-模型选择-deep-research-voice-mode-agent-工作流/)
 
 - MOC
 ## 深度分析

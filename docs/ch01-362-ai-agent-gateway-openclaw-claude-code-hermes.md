@@ -66,9 +66,9 @@
 5. **Gateway 的下一阶段演进方向是 ACP 式的上下文聚合，而非更多消息渠道接入** — 文章揭示了一个被低估的趋势：Hermes 的 ACP 将 Gateway 从"消息桥接层"升级为"上下文聚合层"，VS Code 的编辑器状态成为 Agent 实时感知的上下文。对已有 18 渠道适配器的团队，下一步投入应优先做 IDE/编辑器 MCP 集成（文件树、语法树、linter 输出），而不是继续增加消息平台适配器数量
 
 ## 相关实体
-- Claude Code vs OpenClaw Agent 记忆系统对比
+- [Claude Code vs OpenClaw Agent 记忆系统对比](/ch01-309-claude-code-agent-teams/)
 
-- 深度拆解 Hermes Agent 记忆系统
+- [深度拆解 Hermes Agent 记忆系统](/ch04-418-hermes-agent/)
 - [Hermes Agent vs OpenClaw 对比分析](/ch04-188-hermes-agent-为什么火了-和-openclaw-龙虾比一比/)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](/ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件/)
 - [Claude Code 设计原则与对照分析](/ch01-403-claude-code-设计原则与对照分析/)

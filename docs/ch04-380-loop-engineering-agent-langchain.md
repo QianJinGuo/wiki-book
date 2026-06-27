@@ -83,7 +83,7 @@ LangChain 的 4 层与清华 Loop Stack 六件套（Skill/Spec/Tool/Act/Eval/Sto
 - 循环工程 — 清华 2026 框架
 - [Agent Loop 8 个未解问题](/ch04-143-agent-loop-工程手册-8-个未解问题-self-protocol-治理薄壳-腾讯陈进的二手解读与单-age/)
 - [Hermes Agent Skills 源码分析](/ch04-447-hermes-agent-skills-源码级拆解-3级渐进加载-6步调度-5维安全扫描/)
-- Loop Engineering 主题地图
+- [Loop Engineering 主题地图](/ch05-004-loop-engineering-把反馈循环放进工程现场/)
 - → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/loop-engineering-langchain-four-layer-loopcraft.md)
 
 ---

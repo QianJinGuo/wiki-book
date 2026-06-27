@@ -65,7 +65,7 @@ MCP、Skill、Plugin 这些外部扩展机制可能在持续变化，但 Claude 
 
 ## 相关实体
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](/ch07-006-claude-code-skills-mcp-rules-source-analysis/)
-- Claude Code Prompt 提示词体系源码解析
+- [Claude Code Prompt 提示词体系源码解析](/ch03-002-obsidian-claude-code-集成指南/)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](/ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层/)
 
 - [Claude Code 七大模块详解](/ch01-406-claude-code-七大模块详解/)

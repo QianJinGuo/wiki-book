@@ -45,7 +45,7 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 ## 相关实体
 - Tcjndrk4Frmumngmboih W
 - [Google Workspace Updates Small Businesses Can Now Import Use](/ch01-749-google-workspace-updates-small-businesses-can-now-seamlessl/)
-- Identity Behavior Context Itdr Solution
+- [Identity Behavior Context Itdr Solution](/ch01-117-identity-behavior-context-itdr-solution-teleport/)
 - Openclaw Cloud Storage Config Guide Wechat
 - [Microsoft Is Quietly Shopping For An Openai Replac](/ch01-036-microsoft-is-quietly-shopping-for-an-openai-replacement/)
 
@@ -502,14 +502,14 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 
 ## 相关实体
 - [Three Rag Architectures Classic Graph Agentic](/ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag/)
-- Nvidia Multimodal Rag Knowledge Systems
+- [Nvidia Multimodal Rag Knowledge Systems](/ch01-285-multimodal/)
 - [Rag技术框架的演进方向](/ch01-193-rag技术框架的演进方向/)
 - [Skill Rag Tsinghua Sra](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/)
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rag-vector-knowledge-graph-ontology.md)
 
-- knowledge base layer architecture: from rag to agent-native
+- [knowledge base layer architecture: from rag to agent-native](/ch04-028-高德-ai-native-生产线-第-3-期-7x24-self-healing-pipeline-agent-自/)
 
 - MOC
 ## 深度分析
@@ -2198,8 +2198,8 @@ PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机
 
 ## 相关实体
 - [Pgpkc04Xff7Ilmdb9Vocnq](/ch10-rag/)
-- Identity Behavior Context Itdr Solution
-- Oz Multi Harness Cloud Agent Orchestration
+- [Identity Behavior Context Itdr Solution](/ch01-117-identity-behavior-context-itdr-solution-teleport/)
+- [Oz Multi Harness Cloud Agent Orchestration](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
 - Senators Query Credit Bureaus On Bnpl 1
 - [看 Agentrun 如何玩转记忆存储最佳实践来了](/ch04-394-看-agentrun-如何玩转记忆存储-最佳实践来了/)
 
@@ -2445,7 +2445,7 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 - Continuous Async
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ettin-reranker-family.md)
-- the next generation of speculative decoding: dflash and spec
+- [the next generation of speculative decoding: dflash and spec](/ch01-379-the-shape-of-ai-jaggedness-bottlenecks-and-salients/)
 
 ## 参考文献
 

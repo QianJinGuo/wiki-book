@@ -145,7 +145,7 @@
 ---
 
 ## 相关实体
-- Agent Skill 设计模式 — 撞/借/请 / 资产前置 / 第 0 原则 是 Skill 设计的通用模式
+- [Agent Skill 设计模式 — 撞/借/请 / 资产前置 / 第 0 原则 是 Skill 设计的通用模式](/ch07-002-skill/)
 - [Harness 模式 6-SubAgent 实战 — 17哥 vs 评测平台](/ch05-025-harness-模式-6-subagent-实战-17哥-versus-大模型评测平台-git-submodule/) — 互补 (决策者 vs 动手者)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/huashu-design-2-0-flower-uncle-3-pitfalls.md)

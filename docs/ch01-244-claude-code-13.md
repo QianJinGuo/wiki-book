@@ -98,7 +98,7 @@ microCompact 通过 `cache_edits` 保留本地消息不变，解决的是"cache 
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](/ch07-006-claude-code-skills-mcp-rules-source-analysis/)
 - [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制/)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](/ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层/)
-- Claude Code Prompt 提示词体系源码解析
+- [Claude Code Prompt 提示词体系源码解析](/ch03-002-obsidian-claude-code-集成指南/)
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](/ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客/)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-367-claude-code-harness-deep-understanding/)
 - MOC

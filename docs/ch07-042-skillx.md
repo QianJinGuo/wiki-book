@@ -75,7 +75,7 @@ SkillX的三层技能体系（Planning / Functional / Atomic）揭示了Agent经
 
 - [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南/)
 - [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)
-- Hermes Agent Skill
+- [Hermes Agent Skill](/ch04-418-hermes-agent/)
 - [wiki evolver](/ch07-015-wiki-evolver/)
 - MOC
 

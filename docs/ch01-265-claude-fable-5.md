@@ -126,7 +126,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 ## 相关实体
 
-- **同 Fable 5 主题**（互补不重叠）：
+- [**同 Fable 5 主题**（互补不重叠）：](/ch04-060-fable-5-的信号-agent-开始拼-runtime-架构师若飞的-runtime-contract-工程化拆/)
   - [Fable 5 AWS 中文译本](/ch01-293-anthropic-claude-fable-5-on-aws-内置保护措施的-mythos-级功能现已推出/)（产品视角）
   - [Claude Fable 5 Safety Fables (Lambert)](/ch01-649-claude-fable-5-and-new-ai-safety-fables/)（政策视角）
   - [Fable 5 Mollick hands-on](/ch01-242-claude-fable-5-ethan-mollick-hands-on-qualitative-evaluati/)（用户体验视角）
@@ -135,7 +135,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
   - [NVIDIA Nemotron 3 Agents RAG Voice Safety](/ch04-043-nvidia-nemotron-3-agents-rag-voice-safety/)
   - [Amazon Bedrock Agentic Payments Guardrails](/ch04-059-enable-safe-agentic-payments-with-built-in-guardrails-using/)
   - [Enable Safe Agentic Payments with Built-in Guardrails](/ch04-476-enable-safe-agentic-payments-with-built-in-guardrails-using/)
-  - Nemotron 3.5 Content Safety
+  - [Nemotron 3.5 Content Safety](/ch01-411-nemotron-3-5-content-safety-customizable-multimodal-safety/)
   - [阿里集团 AI 代码评审安全带](/ch01-310-给-氛围编程-系上安全带-阿里集团-ai-代码评审实践与-benchmark-开源/)
 - **同阿里云生态**：
   - [Aliyun AgentRun](/ch04-003-agentrun/)

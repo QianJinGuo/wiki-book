@@ -41,7 +41,7 @@ OpenAI 发布的 GPT-5 使用建议：
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai/)
 - [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](/ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价/)
-- Yann Dubois Openai Post Training Interview
+- [Yann Dubois Openai Post Training Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
 - [Openai Models Codex Amazon Bedrock Ga](/ch09-048-openai-models-and-codex-on-amazon-bedrock-are-now-generally/)
 - [Openai Gdpval Real Ai Agents Threshold](/ch04-091-openai-gdpval-and-the-real-ai-agents-threshold-mollick-view/)
 

@@ -110,10 +110,10 @@ Agent 生态系统正处于类似阶段：
 
 ## 相关实体
 
-- Agent Security — 本报告的核心议题
+- [Agent Security — 本报告的核心议题](/ch04-265-使用-aws-security-agent-构建应用安全闭环-从代码提交到漏洞修复的自动化之路/)
 - MCP — 报告中已普及的协议
 - A2A — 报告中有限采用的协议
-- Agent Identity — 报告中指出的关键缺失领域
+- [Agent Identity — 报告中指出的关键缺失领域](/ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做/)
 - E2B — 报告中提到的主要 sandbox 方案
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/n8n-io-reports-2026-ai-agent-development-tools.md)

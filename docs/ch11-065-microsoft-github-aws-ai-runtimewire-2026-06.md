@@ -73,7 +73,7 @@ GitHub 路由到 AWS 不是孤例。TechCrunch 报道 Google 同意从 2026 年 
 - [AWS GRPO RLVR SageMaker](/ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning/) — AWS 后训练栈
 - [Foundation Model Building Blocks](/ch03-082-foundation-model-building-blocks/) — 通用基础组件
 - [750B MoE PD 分离推理 EFA vs RoCE](/ch01-198-750b-moe-pd-分离推理-aws-efa-vs-自建-roce-通信架构实战对比/) — AWS 上的 MoE 推理对比
-- NVIDIA Blackwell MLPerf Training 6.0 — Blackwell 训练性能基准
+- [NVIDIA Blackwell MLPerf Training 6.0 — Blackwell 训练性能基准](/ch05-084-superpowers-6-0-反作弊重写-reviewer-只读怀疑论者-上下文经济学-progress-le/)
 - [5237660](/ch11-229-sovereign-cloud-is-only-possible-if-you-re-chinese-or-americ/) — Sovereign Cloud 相关实体
 
 > [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/runtimewire-microsoft-github-aws-ai-capacity-crunch-2026-06.md)

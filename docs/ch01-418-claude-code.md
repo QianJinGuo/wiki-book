@@ -59,7 +59,7 @@ Claude Code 的七大模块设计，本质上是在回答一个问题：**当 Ag
 - [Claude Code 设计原则与对照分析](/ch01-403-claude-code-设计原则与对照分析/)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](/ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层/)
 
-- Claude Code vs OpenClaw Agent 记忆系统对比
+- [Claude Code vs OpenClaw Agent 记忆系统对比](/ch01-309-claude-code-agent-teams/)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](/ch09-039-claude-md-12-条规则-karpathy-扩展模板/)
 - [Claude Code 架构深度分析](/ch01-846-claude-code-架构深度解析/)

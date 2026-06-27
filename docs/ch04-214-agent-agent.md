@@ -90,7 +90,7 @@ Wright用1970s MBS→1980s高收益债→2000s Shopify Capital来论证"Agent资
 - [Co Existence Paradigm Shift Agentic Ai Mollick 2026](/ch04-181-co-existence-vs-co-intelligence-mollick-s-paradigm-shift-on/)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](/ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/)
 - [构建基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- Claude Code Openclaw Memory Vector Db Doubt
+- [Claude Code Openclaw Memory Vector Db Doubt](/ch01-681-claude-code-memory-setup-obsidian-graphify/)
 - [Codex Goal Six Hour Run](/ch09-052-codex-goal-six-hour-run/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-capital-markets-wright-shensiquan.md)

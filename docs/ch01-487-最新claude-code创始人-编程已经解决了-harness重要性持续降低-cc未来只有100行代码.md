@@ -19,8 +19,8 @@ Claude Code创始人关于Harness和编程未来的观点。
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失，Claude Code 将只有 100 行代码，loop 才是未来](/ch01-239-claude-code-之父最新访谈-编程已经结束-harness-将消失-claude-code-将只有-100-行代/)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-367-claude-code-harness-deep-understanding/)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
-- 深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践
-- Claude Code vs OpenClaw Agent 记忆系统对比
+- [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](/ch03-002-obsidian-claude-code-集成指南/)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](/ch01-309-claude-code-agent-teams/)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
 
 - Harness Component Expiry Evidence

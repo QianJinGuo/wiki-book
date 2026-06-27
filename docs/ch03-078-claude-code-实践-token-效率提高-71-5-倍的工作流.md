@@ -106,14 +106,14 @@ CLAUDE.md 文件在此方案中承担双重角色：
 - [Claude Code Self Repair Hooks Memory Config](/ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
 - [Claude Code Memory Setup Obsidian Graphify](/ch01-666-claude-code-memory-setup-obsidian-graphify/)
 - [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
-- Claude Code Prompt Source Analysis
+- [Claude Code Prompt Source Analysis](/ch09-054-claude-code-prompt/)
 - [Claude Code Tool Design Evolution Anthropic](/ch01-677-anthropic/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-memory-setup-token-71x楠楠自瑜.md)
 
 ## 相关实体
 - `官方Memory Setup` — 同一工作流的官方版本
-- `Hermes自我进化` — AI记忆系统的架构设计
+- [`Hermes自我进化` — AI记忆系统的架构设计](/ch01-349-ai-agent-gateway-架构设计-openclaw-claude-code-hermes-三框架对比/)
 - MOC
 
 ---

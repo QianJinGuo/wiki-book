@@ -238,7 +238,7 @@ Anthropic 因美国政府出口管制指令暂停 Fable 5 访问,这件事在表
 ## 相关实体
 
 - → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-fable-5-agent-runtime-contract-ruofei-2026.md)
-- Claude Fable 5 提示词泄漏 — Runtime Control Plane
+- [Claude Fable 5 提示词泄漏 — Runtime Control Plane](/ch01-306-anthropic-claude-fable-5-on-aws-mythos/)
 - [Anthropic Claude Fable 5 on AWS](/ch01-677-anthropic/)
 - [Claude Fable 5 and new AI safety fables](/ch01-649-claude-fable-5-and-new-ai-safety-fables/)
 - [Claude Fable 5 — Mollick patron vs wizard](/ch01-242-claude-fable-5-ethan-mollick-hands-on-qualitative-evaluati/)

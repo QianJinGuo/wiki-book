@@ -72,7 +72,7 @@ AgentCore Identity的Token Vault存储access token和refresh token（当OAuth pr
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](/ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu/)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](/ch04-204-航班变更信息智能识别解决方案/)
-- Amazon Nova Multimodal Embeddings 制造业智能应用
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](/ch01-285-multimodal/)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](/ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](/ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
 - [AgentCore Managed Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/)

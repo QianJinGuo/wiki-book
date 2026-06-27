@@ -199,9 +199,9 @@ Coze 3.0 提供的解决思路是**云端托管 + 统一消息总线**。本地 
 ---
 
 ## 相关实体
-- Coze 3 0 Collaboration System
+- [Coze 3 0 Collaboration System](/ch04-344-coze-3-0-agent/)
 - [Coze 3 0 Local Agent Project Orchestration](/ch04-341-coze-3-0-本地-agent-项目编排/)
-- Oz Multi Harness Cloud Agent Orchestration
+- [Oz Multi Harness Cloud Agent Orchestration](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
 - [Agent Orchestration](/ch01-098-agent-orchestration/)
 - [Baidu Netdisk Three Layer Agent Architecture](/ch07-023-三层-agent-架构-skill-subagent-agent-team-工程实践/)
 - MOC

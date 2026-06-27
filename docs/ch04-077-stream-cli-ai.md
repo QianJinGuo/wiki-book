@@ -260,12 +260,12 @@ Stream 模式的多实例冲突问题（消息重复处理）是典型的"开发
 - [Claude Code Core Internals](/ch01-162-claude-code-源码核心机制详解/)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-255-anthropic-博客-claude-code-大型代码库最佳实践/)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](/ch04-058-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式/)
-- Agentmemory Source Analysis Coding Agent Local Memory
+- [Agentmemory Source Analysis Coding Agent Local Memory](/ch04-039-hermes-agent-self-evolving-source-analysis/)
 - [Aws Devops Agent 实战云网络故障自主调查与修复建议](/ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dingtalk-qoder-claudecode-dual-engine-ai-assistant.md)
 
-- Claude Code Best Practices Prompt Engineering
+- [Claude Code Best Practices Prompt Engineering](/ch09-054-claude-code-prompt/)
 - MOC
 
 ---

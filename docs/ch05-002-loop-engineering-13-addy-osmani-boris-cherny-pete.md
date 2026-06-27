@@ -75,7 +75,7 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 ---
 
 - [loop engineering: 把反馈循环放进工程现场](/ch05-004-loop-engineering-把反馈循环放进工程现场/)
-- 循环工程 (loop engineering) — 清华 2026 框架
+- [循环工程 (loop engineering) — 清华 2026 框架](/ch05-004-loop-engineering-把反馈循环放进工程现场/)
 
 - MOC
 - MOC

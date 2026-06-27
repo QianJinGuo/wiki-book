@@ -39,7 +39,7 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - [Hermes Agent](/ch04-418-hermes-agent/)
 - [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)
 - [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
-- Hermes Agent Skill
+- [Hermes Agent Skill](/ch04-418-hermes-agent/)
 - [Anthropic Claude Managed Agents 平台正式发布](/ch01-181-anthropic-claude-managed-agents-平台正式发布/)
 - [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
 - [SkillX — 层次化技能知识库](/ch07-042-skillx-层次化技能知识库/)

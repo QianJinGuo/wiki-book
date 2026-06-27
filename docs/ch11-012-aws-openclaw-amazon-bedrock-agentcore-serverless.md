@@ -311,7 +311,7 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 
 ## 相关实体
 - [OpenClaw多租户迁移: Phase 2&3部署](/ch04-440-openclaw-multi-4/)
-- Amazon Nova Multimodal Embeddings 制造业智能应用
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](/ch01-285-multimodal/)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](/ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu/)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)

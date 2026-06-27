@@ -171,8 +171,8 @@ Hassabis 提出一个科学推理能力的测试标准：
 
 ## 相关实体
 
-- `Tencent Ai Infra Backend Engineer Huangrunpeng` — AI Infra 视角
-- `Pydantic Ai Progressive Agent Skills Automatorrunner` — Agent 框架视角
+- [`Tencent Ai Infra Backend Engineer Huangrunpeng` — AI Infra 视角](/ch01-285-tencent-ai-infra-backend-engineer-s-guide-to-ai-system-hard/)
+- [`Pydantic Ai Progressive Agent Skills Automatorrunner` — Agent 框架视角](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — 工程化方法论
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/demis-hassabis-yc-interview-jiedaotixi.md)
 - MOC

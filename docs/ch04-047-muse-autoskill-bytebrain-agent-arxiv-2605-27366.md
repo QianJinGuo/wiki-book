@@ -255,7 +255,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/muse-autoskill-bytebrain-self-evolving-agent-arxiv-2605-27366.md)
 
-- language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式
+- [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](/ch04-046-muse-autoskill-字节-bytebrain-自进化-agent-五阶段技能生命周期-arxiv-2605-2/)
 - [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](/ch07-014-skill-产品哲学-歸藏做了爆款-skill-后的产品反思/)
 
 ## 深度分析

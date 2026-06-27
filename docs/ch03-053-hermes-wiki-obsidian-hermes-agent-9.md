@@ -225,15 +225,15 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 
 ## 相关实体
 
-- **同 LLM Wiki / Obsidian 知识管理**：
+- [**同 LLM Wiki / Obsidian 知识管理**：](/ch03-053-hermes-wiki-实战-obsidian-hermes-agent-自动生长知识网络的-9-步搭建法/)
   - [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)（架构分析）
   - [Karpathy LLM Wiki v2](/ch01-271-karpathy-llm-wiki-v2-2026/)（原始方法论）
   - [Karpathy LLM Wiki 第二大脑](/ch01-321-卡帕西-llm-wiki-到底是什么-用-claude-obsidian-给自己造一个第二大脑的完整拆解/)
   - Obsidian 工具概览
   - [Claude Code Memory Setup (Obsidian + Graphify)](/ch01-666-claude-code-memory-setup-obsidian-graphify/)
-- **同 Hermes Agent 生态**：
+- [**同 Hermes Agent 生态**：](/ch04-418-hermes-agent/)
   - [Hermes Skills + LLM Wiki 越用越懂你](/ch01-711-手把手-用-hermes-skills-karpathy-的-llm-wiki-让-ai-越用越懂你/)（三层互相喂养）
-  - Hermes Agent 自进化机制源码解析
+  - [Hermes Agent 自进化机制源码解析](/ch04-418-hermes-agent/)
   - [Hermes Agent Memory System vs OpenClaw](/ch04-068-hermes-agent-记忆系统深度拆解/)
 - **同上下文工程 / 记忆架构**：
   - [AI Coding Agent 记忆系统](/ch04-288-ai-coding-agent-记忆系统/)

@@ -204,7 +204,7 @@ Harness Engineering 的核心信号：**AI 落地的核心挑战，正在从"让
 - Context Engineering — 第二层重心迁移
 - Prompt Engineering — 第一层重心迁移
 - [Claude Code 深度解析](/ch01-558-claude-code-harness-深度分析/) — Anthropic Harness 的具体实现
-- Claude Code Dynamic Workflows — Harness 第三层执行编排的 Dynamic Workflow 实现
+- [Claude Code Dynamic Workflows — Harness 第三层执行编排的 Dynamic Workflow 实现](/ch03-002-obsidian-claude-code-集成指南/)
 - [OpenClaw 完整指南](/ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/) — OpenAI-style 渐进式披露 + Agent-first 工程环境
 - [Agent Evolution 四阶段六维](/ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/) — Harness 维度在六维框架中的对应
 - [Hermes Agent Operator](/ch04-067-hermes-agent-operator-上手-把一个-agent-养成可运营系统/) — 自进化 Agent 的 Harness 实现

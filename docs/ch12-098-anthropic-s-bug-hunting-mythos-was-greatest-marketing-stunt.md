@@ -38,7 +38,7 @@ cURL 项目创始人 Daniel Stenberg 测试了 Anthropic 的 Mythos AI 安全扫
 
 ## 相关实体
 - `AI安全全景` — AI代码分析工具的安全与攻击全景
-- `MCP生产模式` — Anthropic的工具调用安全实践
+- [`MCP生产模式` — Anthropic的工具调用安全实践](/ch01-692-anthropic/)
 
 ## 相关实体
 - [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)

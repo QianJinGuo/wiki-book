@@ -7,8 +7,8 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/inngest-ai-in-production-the-2026-benchmark-report.md)
 
 ## 相关实体
-- AI Gateway production index
-- 吴恩达2026新课上线！3小时包教包会，零代码小白也能成为AI超级玩家
+- [AI Gateway production index](/ch01-075-ai-gateway-production-index/)
+- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为AI超级玩家](/ch01-745-2026-3-ai/)
 - [很多企业做完 AI PoC，为什么还是上不了生产](/ch01-482-很多企业做完-ai-poc-为什么还是上不了生产/)
 - [Chime Turns a Profit as Members Hit 10.2 Million](/ch01-780-chime-turns-a-profit-as-members-hit-10-2-million/)
 

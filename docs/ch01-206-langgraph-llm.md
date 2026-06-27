@@ -307,7 +307,7 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 - [Llava Onevision 2 Full Frame Rate Vlm Glintlab](/ch01-600-对话灵感实验室-全帧率-vlm-低成本与分层部署/)
 - [We Let Four Ais Run Radio Stations Heres What Happened](/ch01-479-we-let-four-ais-run-radio-stations-here-s-what-happened/)
 - [Liangzi Recruitment](/ch01-580-量子位编辑作者招聘/)
-- Lightfield Ai Pipeline Generation
+- [Lightfield Ai Pipeline Generation](/ch03-121-lightfield/)
 - [Creativeboom Ai Views Changed](/ch01-617-have-your-views-on-ai-changed/)
 - [Netflix Is Building An Ai Animation Studio](/ch11-200-netflix-is-building-an-ai-animation-studio/)
 - [Minicpm V 46 13B Xinazhiyuan](/ch01-556-清华系团队出手-一张4090即可-爆改-1-3b小钢炮震撼开源/)

@@ -18,7 +18,7 @@
 ## 相关实体
 - [Pytorch 2 12 Release](/ch01-067-pytorch-2-12-release-blog-pytorch/) — 同一博客的平行存档
 
-- profiling in pytorch (part 2): from nn.linear to a fused mlp
+- [profiling in pytorch (part 2): from nn.linear to a fused mlp](/ch01-849-llm-rl中的熵-part-2-熵对训练的调控/)
 
 ## 深度分析
 ### 从研究框架到生产平台的演变
