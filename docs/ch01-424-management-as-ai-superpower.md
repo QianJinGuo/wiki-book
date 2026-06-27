@@ -116,8 +116,8 @@ Mollick 的三变量公式（Human Baseline Time、Probability of Success、AI P
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/)
-- Agentic Engineering Paradigm
-- Agent Orchestration Patterns
+- [Agentic Engineering Paradigm](/ch04-316-nvidia-agentic-ai-subsurface-engineering/)
+- [Agent Orchestration Patterns](/ch04-409-agent-orchestration/)
 - MOC
 
 ---

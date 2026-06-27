@@ -197,7 +197,7 @@ A: 可以从ROI最高的项开始：用户生命周期管理自动化（#2）和
 - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.bettercloud.com-the-saasops-mini-checklist-managing-and-securing-your-enterprise-saas-applications.md)
-- 5 ways to curb ai sprawl without stifling innovation
+- [5 ways to curb ai sprawl without stifling innovation](/ch01-133-ceos-of-the-classroom-why-principals-are-the-key-to-the-ai/)
 
 ---
 

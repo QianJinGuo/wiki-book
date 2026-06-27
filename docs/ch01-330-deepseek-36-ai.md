@@ -15,7 +15,7 @@
 - [Nathan Lambert Claude Mythos Open Weights](/ch01-355-nathan-lambert-开源权重安全论的三个认知陷阱/)
 - [Deepseek V4 Pro Vs Claude](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
 - [Deepseek Moe Parallel Strategy](/ch01-673-deepseek-moe-并行策略与gpu通信优化/)
-- Deepseek V4 Training Methodology
+- [Deepseek V4 Training Methodology](/ch01-741-deepseek-v4-flash-pro/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/chinese-ai-lab-insights-nathan.md)
 

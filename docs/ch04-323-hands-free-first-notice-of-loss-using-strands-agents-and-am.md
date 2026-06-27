@@ -85,9 +85,9 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 - [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](/ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客/) — Strands SDK 企业级方案
 - [Agentcore Harness](/ch04-206-agentcore-managed-harness/) — AgentCore 工程化
 - [Aws Bedrock Agentcore Doris Mcp Server](/ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式/) — AgentCore + MCP Server
-- Autonomous Agent Systems — 自主 Agent 系统
-- Agent Deployment Strategy — Agent 部署策略
-- Ai Safety Governance — AI 安全治理
+- [Autonomous Agent Systems — 自主 Agent 系统](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
+- [Agent Deployment Strategy — Agent 部署策略](/ch04-023-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent/)
+- [Ai Safety Governance — AI 安全治理](/ch01-649-claude-fable-5-and-new-ai-safety-fables/)
 - [Aws Ai Services — AWS AI 服务](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
 
 ---

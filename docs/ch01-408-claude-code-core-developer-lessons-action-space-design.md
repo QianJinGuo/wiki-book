@@ -20,7 +20,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-core-developer-lessons-action-space-design.md)
 
-- new york design week is here, may 14–20 - core77
+- [new york design week is here, may 14–20 - core77](/ch03-009-ic-work-is-the-new-career-flex/)
 
 - MOC
 ## 深度分析

@@ -295,12 +295,12 @@
 - [Agent Harness Context Management Working Set — Agent Harness 上下文管理](/ch05-038-agent生产级harness工程指南/)
 - [Agent Skill Writing Guide](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/) — Skill 编写基础
 - [Agent Skill Writing Practices](/ch04-242-agent-skill-高质量编写规范/) — Skill 编写实战（决策树替代模糊判断）
-- Agent Role Specialization — 多角色 Agent 协作
+- [Agent Role Specialization — 多角色 Agent 协作](/ch01-592-hermes-agent-v0-13-goal-目标管理与-kanban-多-agent-协作/)
 - [Agent Self Improvement Loops — 度量驱动的 Agent 自我迭代](/ch04-028-高德-ai-native-生产线-第-3-期-7x24-self-healing-pipeline-agent-自/)
 - [Agent Memory Lifecycle Philosophies — 记忆生命周期与"提升"边界](/ch04-087-agent-memory-架构本质/)
 - [Agent Memory Architecture](/ch04-146-agent-memory-架构本质/) — Agent 记忆架构
-- Agent Orchestration Patterns — Agent 编排模式
-- Agent Deployment Strategy — Agent 部署策略
+- [Agent Orchestration Patterns — Agent 编排模式](/ch04-409-agent-orchestration/)
+- [Agent Deployment Strategy — Agent 部署策略](/ch04-023-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent/)
 - MOC
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-end-to-end-business-requirements-agent-multica-2026.md)

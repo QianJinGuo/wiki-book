@@ -73,7 +73,7 @@ Hy3 preview可以视为混元快速探索实用性大模型、解决真实世界
 - [Autobrowse Browserbase Persistent Skill](/ch07-034-autobrowse-browserbase-persistent-skill/)
 - [Lightseek Tokenspeed](/ch01-817-lightseek-tokenspeed/)
 
-- Eva Bench Data 2 Voice Agent Evaluation
+- [Eva Bench Data 2 Voice Agent Evaluation](/ch04-303-how-loka-built-a-natural-low-latency-voice-agent-with-amazo/)
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation](/ch01-746-从手动到自动化-用agenteval构建agent评测体系/)
 
 ---

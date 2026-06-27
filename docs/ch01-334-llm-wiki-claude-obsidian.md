@@ -171,7 +171,7 @@ LLM Wiki 在企业级知识库场景面临结构性限制，不能简单替代 R
 **适用场景判断**：个人知识库、学习研究等低风险场景 → LLM Wiki 效率高体验好；企业知识库 → 需按数据规模、权限要求、引用准确性综合评估
 
 ## 相关实体
-- Llm Wiki Architecture
+- [Llm Wiki Architecture](/ch01-334-llm-wiki-claude-obsidian/)
 - [Karpathy Claude Md Rules](/ch01-765-mnilax-claude-md-规则从-karpathy-的-4-条增加到-12-条-claude-错误率从-41/)
 - [Obsidian Llm Wiki Local Kytmanov](/ch03-090-obsidian-llm-wiki-local-obsidian本地ai知识图谱自动构建/)
 - [Claude Md 12 Rules Mnilax](/ch09-036-claude-md-规则从-karpathy-的-4-条增加到-12-条/)

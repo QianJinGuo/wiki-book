@@ -43,7 +43,7 @@
 - [Vector Db Chroma Vs Qdrant](/ch11-175-向量数据库选型-chroma-vs-qdrant/)
 - [Deepseek V4 Pro Vs Claude](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](/ch01-349-ai-agent-gateway-架构设计-openclaw-claude-code-hermes-三框架对比/)
-- Context Engineering Three Memory Paradigms Comparison
+- [Context Engineering Three Memory Paradigms Comparison](/ch04-229-yidian-tianxia-context-engineering-agentic-ai/)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](/ch03-025-别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/chroma-to-qdrant-1m-vector-migration.md)
@@ -653,7 +653,7 @@ GLM-5的Scaling Pain案例揭示了高并发Coding Agent场景下推理系统面
 4. **修复应优先于优化**：在两个竞态Bug修复之前，LayerSplit等优化方案的效果会被系统不稳定掩盖。先修Bug，再做优化，才能获得可衡量的效果提升。
 ## 相关实体
 
-- lightseek token speed inference
+- [lightseek token speed inference](/ch12-023-inference-theft-as-ai-endpoint-attack-surface-vercel-token/)
 - MOC
 
 ---

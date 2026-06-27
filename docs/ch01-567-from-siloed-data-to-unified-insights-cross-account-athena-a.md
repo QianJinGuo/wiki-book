@@ -12,7 +12,7 @@
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
 
 ## 相关实体
-- 基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理与增量同步
+- [基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理与增量同步](/ch11-099-利用-aws-budget-实现-amazon-bedrock-用量监控-超预算告警与自动中断方案/)
 - [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](/ch01-667-architecture-data-foundations-for-ai-powered-search/)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](/ch01-285-multimodal/)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)

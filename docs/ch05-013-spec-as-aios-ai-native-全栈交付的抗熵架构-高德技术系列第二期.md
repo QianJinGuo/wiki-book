@@ -262,7 +262,7 @@ AIOS 范式的核心突破在于：**将规范从"文档"重构为"操作系统"
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md)
 
 - Harness Component Expiry Evidence
-- Harness Component Expiry Build To Delete
+- [Harness Component Expiry Build To Delete](/ch04-393-how-to-build-audio-transcription-agent/)
 - Wiki Entities Architecture Map
 
 ---

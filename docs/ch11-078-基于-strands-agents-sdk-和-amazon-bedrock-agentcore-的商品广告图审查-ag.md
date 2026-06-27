@@ -97,7 +97,7 @@ vision Agent 的 system prompt 中最值得借鉴的是「**严格排除**」清
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/) — Bedrock Agent 运维
 - [Multi Agent Collaboration Patterns — 多 Agent 协作模式](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
 - [Multi Agent Orchestration — 多 Agent 编排](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
-- Agent Deployment Strategy — Agent 部署策略
+- [Agent Deployment Strategy — Agent 部署策略](/ch04-023-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent/)
 - [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](/ch04-409-agent-orchestration/)
 - [aws bedrock agentcore 多账户对话式运维助手：基于 strands agents + devops](/ch11-072-aws-bedrock-agentcore-多账户对话式运维助手-基于-strands-agents-devops/)
 
