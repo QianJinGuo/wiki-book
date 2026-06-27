@@ -1,27 +1,20 @@
-import { getAssetFromKV } from "@cloudflare/kv-asset-handler";
-
-addEventListener("fetch", (event) => {
-  event.respondWith(handleEvent(event));
-});
-
-async function handleEvent(event) {
-  try {
-    return await getAssetFromKV(event, {
-      mapRequestToAsset: (req) => {
-        const url = new URL(req.url);
-        // Serve index.html for paths ending with /
-        if (url.pathname.endsWith("/")) {
-          url.pathname += "index.html";
-        }
-        // Try adding .html for clean URLs
-        if (!url.pathname.includes(".")) {
-          url.pathname += ".html";
-        }
-        return new Request(url.toString(), req);
-      },
-    });
-  } catch (e) {
-    // Fallback to 404
-    return new Response("Not Found", { status: 404 });
-  }
-}
+// Worker: serve search_index.json from R2
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    if (url.pathname === '/search/search_index.json') {
+      const object = await env.SEARCH_INDEX.get('search_index.json');
+      if (!object) {
+        return new Response('Not Found', { status: 404 });
+      }
+      return new Response(object.body, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Cache-Control': 'public, max-age=3600',
+          'Access-Control-Allow-Origin': '*',
+        },
+      });
+    }
+    return fetch(request);
+  },
+};

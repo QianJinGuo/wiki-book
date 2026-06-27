@@ -1,4 +1,3 @@
-// Pages Function: serve search_index.json from R2
 export async function onRequest(context) {
   const object = await context.env.SEARCH_INDEX.get("search_index.json");
   if (!object) {
@@ -8,6 +7,7 @@ export async function onRequest(context) {
     headers: {
       "Content-Type": "application/json",
       "Cache-Control": "public, max-age=3600",
+      "Access-Control-Allow-Origin": "*",
     },
   });
 }
