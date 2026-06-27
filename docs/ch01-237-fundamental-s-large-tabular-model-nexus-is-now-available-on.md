@@ -26,7 +26,7 @@ type: entity
 - [End To End Encrypted Ml Inference Sagemaker Fhe](/ch11-044-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a/)
 - Amazon Sagemaker Qualcomm Ai Hub Edge Npu Deployment
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
 
 # Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
 

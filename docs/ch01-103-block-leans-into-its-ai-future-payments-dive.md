@@ -14,7 +14,7 @@ Opens in a new window Opens an external website Opens an external website in a n
 - [Openai Realtime Api Architecture](/ch01-084-openai-realtime-api-架构首次公开/)
 - [Tencent Ai Infra Backend Engineer Huangrunpeng](/ch01-285-tencent-ai-infra-backend-engineer-s-guide-to-ai-system-hard/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/block-leans-into-its-ai-future-payments-dive.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/block-leans-into-its-ai-future-payments-dive.md)
 
 ## 深度分析
 

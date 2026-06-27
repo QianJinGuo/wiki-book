@@ -19,7 +19,7 @@
 - [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](/ch04-023-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent/)
 - [Novee Security How To Get A 100 Conference Acceptance Rate The No](/ch01-481-how-to-get-a-100-conference-acceptance-rate-the-novee-way/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md)
 
 ## 深度分析
 

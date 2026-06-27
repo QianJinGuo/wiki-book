@@ -6,7 +6,7 @@
 
 # Amazon Quick ARNs: Cross-account migration and namespace permissions
 
-> **Source archive**: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-quick-arns-cross-account-migration-and-namespace-perm.md)
+> **Source archive**: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-quick-arns-cross-account-migration-and-namespace-perm.md)
 
 # Amazon Quick ARNs: Cross-account migration and namespace permissions
 

@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐ | 2.9KB | `entities/open-defense-initiative-depthfirst.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-defense-initiative-depthfirst.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/open-defense-initiative-depthfirst.md)
 
 ## 核心要点
 - Open Defense Initiative | depthfirst
 - v×c=56 分
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-defense-initiative-depthfirst.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/open-defense-initiative-depthfirst.md)
 
 ## 相关实体
 

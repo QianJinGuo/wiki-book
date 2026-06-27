@@ -17,7 +17,7 @@
 - [Agent Skill Writing Guide](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)
 - [Agent Memory Engineering Tax Aws China 2026](/ch04-073-agent-记忆系统工程税-写入纪律-prompt-cache-冲突-跨模型容量-embedding-迁移-自产-ski/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-collective-intelligence.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw-collective-intelligence.md)
 
 - MOC
 ## 深度分析

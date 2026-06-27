@@ -17,7 +17,7 @@
 - [Apple Silicon Costs More Than Openrouter](/ch01-352-apple-silicon-costs-more-than-openrouter/)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](/ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/somethings-rotten-in-the-state-of-macos-icon-design.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/somethings-rotten-in-the-state-of-macos-icon-design.md)
 
 ## 深度分析
 

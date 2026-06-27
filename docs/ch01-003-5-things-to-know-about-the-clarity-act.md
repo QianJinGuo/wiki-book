@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 19.4KB | `entities/clarity-act-financial.md`
 
-[Clarity Act Financial](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/clarity-act-financial.md)
+[Clarity Act Financial](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/clarity-act-financial.md)
 
 # "5 Things to Know about the CLARITY Act"
 # 5 Things to Know about the CLARITY Act
@@ -148,7 +148,7 @@ CLARITY Act 是美国参议院银行委员会于 2026 年 5 月提出的最新�
 - Student Loan Payments Domino
 - [Running An Ai Native Engineering Org](/ch01-045-running-an-ai-native-engineering-org/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/clarity-act-financial.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/clarity-act-financial.md)
 
 ---
 

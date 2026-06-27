@@ -127,7 +127,7 @@ VOC 管线采用三阶段 pipeline：并行提取 → 问题聚类 → 报告生
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](/ch01-536-workflow-architecture/)
 - [Process Financial Documents Using Amazon Bedrock Data Automa](/ch01-534-solution-overview/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
 
 ## 相关主题
 

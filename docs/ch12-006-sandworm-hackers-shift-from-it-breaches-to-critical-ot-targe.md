@@ -48,7 +48,7 @@ DXGW + TGW 的混合云架构在本文多个场景中出现。关键启示：OT 
 - [Engineering Roles Shift From Developing Code To Ma](/ch05-059-engineering-roles-shift-from-developing-code-to-managing-ai/)
 - [Engineering Roles Shift From Developing Code To Managing Ai](/ch05-059-engineering-roles-shift-from-developing-code-to-managing-ai/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gbhackers-sandworm-shift-from-it-breaches.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gbhackers-sandworm-shift-from-it-breaches.md)
 
 ---
 

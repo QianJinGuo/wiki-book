@@ -6,7 +6,7 @@
 
 # 两万字详解Claude Code源码核心机制
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/两万字详解claude-code源码核心机制.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/两万字详解claude-code源码核心机制.md)
 
 ## 深度分析
 

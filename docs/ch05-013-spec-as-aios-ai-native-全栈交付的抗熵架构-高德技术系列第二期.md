@@ -259,7 +259,7 @@ AIOS 范式的核心突破在于：**将规范从"文档"重构为"操作系统"
 - [Claude Code Founder Harness 100 Lines](/ch01-487-最新claude-code创始人-编程已经解决了-harness重要性持续降低-cc未来只有100行代码/)
 - [Claude Code Skills Mcp Rules Source Analysis](/ch07-006-claude-code-skills-mcp-rules-source-analysis/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md)
 
 - Harness Component Expiry Evidence
 - Harness Component Expiry Build To Delete

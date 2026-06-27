@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.2KB | `entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md`
 
-> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
+> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
 
 ## 核心要点
 - IMClaw：支持 ACP 协议的 AI Agent 网关，实现远程操控多种 Coding Agent

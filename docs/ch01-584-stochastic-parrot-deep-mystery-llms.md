@@ -17,7 +17,7 @@ A while back on [X](<https://x.com/emollick/status/1960919256452796440>), Ethan 
 - [Aws Reinforcement Fine Tuning Llm As Judge](/ch01-437-aws-reinforcement-fine-tuning-llm-as-judge/)
 - [Aws Sagemaker Capacity Aware Inference Fallback](/ch01-301-aws-sagemaker-capacity-aware-inference-fallback/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stochastic-parrot-deep-mystery-llms.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stochastic-parrot-deep-mystery-llms.md)
 
 ## 深度分析
 

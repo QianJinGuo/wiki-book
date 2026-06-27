@@ -17,7 +17,7 @@
 - [Multi Agent Mission Factory Luke Aiengineer](/ch04-512-multi-agent-架构-factory-mission-系统的方法论/)
 - [构建基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/james-multi-agent-collaboration-modes.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/james-multi-agent-collaboration-modes.md)
 
 ## 深度分析
 

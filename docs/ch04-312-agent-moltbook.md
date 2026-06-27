@@ -19,7 +19,7 @@ review_stars: 3
 - [Agentscope Java Harness Framework Enterprise Distributed](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
 - [Hermes Agent Newbie Guide Dotta](/ch01-655-paperclip-ai-公司操作系统-第-5-篇-完结/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/无需复杂环境搭建教你用自己的-agent-玩转-moltbook.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/无需复杂环境搭建教你用自己的-agent-玩转-moltbook.md)
 
 ## 深度分析
 

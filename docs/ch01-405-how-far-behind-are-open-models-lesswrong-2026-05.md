@@ -152,7 +152,7 @@ Public benchmark 由于数据公开且分数透明，开源社区可以针对性
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](/ch04-141-agenteval-yaml驱动的agent评测框架/)
 - [Langsmith Evaluation Concepts](/ch03-119-langsmith-evaluation-concepts/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-far-behind-are-open-models-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-far-behind-are-open-models-2026.md)
 - nice：浙大提出的理论驱动型 llm 社会智能诊断基准
 
 ---

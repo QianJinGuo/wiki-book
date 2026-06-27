@@ -11,7 +11,7 @@
 
 **ANOLISA v0.3** = **阿里在传统 OS 上叠加的一层 Agentic 转换层**（Agentic Nexus Operating Layer & Interface System Architecture）——3 大核心新能力：**AgentSecCore 4 层安全防护**（prompt 注入拦截 / 代码执行拦截 / Skill 供应链签名校验 / 系统安全基线）+ **SkillFS 3-21% Token 节省**（叠 tokenless 可达 30%+）+ **ws-ckpt 毫秒级工作区快照**（10000 文件 10ms 创建 / 50ms 回滚）。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anolisa-v03-alibaba-agentic-os.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anolisa-v03-alibaba-agentic-os.md)
 → [GitHub 开源](https://github.com/alibaba/anolisa) · [阿里云产品文档](https://help.aliyun.com/zh/alinux/agentic-os-getting-started)
 
 ## 一句话定位
@@ -276,7 +276,7 @@ ANOLISA v0.3 架构
 - [Microsoft Build 2026](/ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体/) —— 全栈 AI
 - [PilotDeck](/ch04-124-小龙虾彻底凉了-清华团队连夜开源agent神器pilotdeck-token成本狂降70/) —— 多项目隔离
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anolisa-v03-alibaba-agentic-os.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anolisa-v03-alibaba-agentic-os.md)
 
 ---
 

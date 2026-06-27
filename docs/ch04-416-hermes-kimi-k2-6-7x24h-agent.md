@@ -15,7 +15,7 @@
 - Kimi K2 Tidb Agent Database Huangdongxu 20260513
 - [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](/ch04-382-深度拆解-hermes-agent-记忆系统-它修正了-openclaw-的哪层误区/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-k2-6-multi-agent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-k2-6-multi-agent.md)
 
 - MOC
 ## 深度分析

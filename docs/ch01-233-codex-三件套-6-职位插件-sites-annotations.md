@@ -9,7 +9,7 @@
 
 **Codex 三件套 = (1) 6 个职位插件（62 应用 + 110 技能） + (2) Sites 网站生成 + 托管 + (3) Annotations 精准批注**。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/codex-role-plugins-sites-annotations.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/codex-role-plugins-sites-annotations.md)
 
 ## 关键数据
 - **每周 500 万+ 人在用 Codex**
@@ -127,7 +127,7 @@
 
 ## 2nd Source：极客之家译介（2026-06-05）——Sites 落地细节与三层权限
 
-> 来源：[极客之家译介 OpenAI 官方](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/codex-sites-cloudflare-worker-one-click-deploy-geekhome.md)（2026-06-05）
+> 来源：[极客之家译介 OpenAI 官方](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/codex-sites-cloudflare-worker-one-click-deploy-geekhome.md)（2026-06-05）
 > **关系**：与 1st source 同源不同公众号的报道，OpenAI 官方同一天发布 + 极客之家译介（公众号 极客之家 / 2026-06-05 / 字数 1774）。**保留独家数据**——极客之家版本补充了大量 1st source 未覆盖的工程落地细节。
 
 ### Sites 工程架构细节（极客之家独家）

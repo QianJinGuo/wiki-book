@@ -63,7 +63,7 @@ OpenAI不是"更努力的Google"，它是一种全新的组织物种。在开始
 - [Anthropic S Bug Hunting Mythos Was Greatest Marketing Stunt Ever Says Curl Creat](/ch01-366-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt/)
 - [第一批Ai原生本科生要毕业了](/ch01-779-第一批ai原生本科生要毕业了/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-true-moat-not-llm-but-organization.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-true-moat-not-llm-but-organization.md)
 
 ## 相关实体
 

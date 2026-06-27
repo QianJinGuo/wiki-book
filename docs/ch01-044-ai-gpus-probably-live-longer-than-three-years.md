@@ -6,7 +6,7 @@
 
 # AI GPUs probably live longer than three years
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
 
 ## 摘要
 
@@ -79,7 +79,7 @@ Oak Ridge Summit（27,000+ V100，2018-2024）和前代 Cray Titan（2012-2019�
 - [DDoSing Software Delivery Pipelines](/ch14-data/)
 - [Unexpected lessons from an AI-assisted prototyping experiment](/ch01-033-unexpected-lessons-from-an-ai-assisted-prototyping-experimen/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
 
 ---
 

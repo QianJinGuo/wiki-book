@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/claude-code-prompt-source-analysis-fanone.md`
 
-[Claude Code Prompt Source Analysis Fanone](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-prompt-source-analysis-fanone.md)
+[Claude Code Prompt Source Analysis Fanone](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-prompt-source-analysis-fanone.md)
 
 ## 六大 Prompt 模块概览
 Claude Code 的提示词体系分为六大模块：

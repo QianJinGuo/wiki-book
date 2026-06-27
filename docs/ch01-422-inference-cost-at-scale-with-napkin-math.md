@@ -6,7 +6,7 @@
 
 # Inference cost at scale with napkin math
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/napkin-inference-cost-injuly-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/napkin-inference-cost-injuly-2026.md)
 
 ## Summary
 

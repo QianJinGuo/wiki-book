@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 19.0KB | `entities/hermes-agent-memory-system-vs-openclaw.md`
 
-[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-memory-system-vs-openclaw.md)
+[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-memory-system-vs-openclaw.md)
 
 # Hermes Agent 记忆系统深度拆解
 > Source: https://mp.weixin.qq.com/s/0n5aw2I0yoyHS7W5fQ6ydA

@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [yoonho lee: text optimization as a legitimate learning mecha](/ch01-334-yoonho-lee-text-optimization-as-a-legitimate-learning-mecha/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md)
 
 - MOC
 ## 深度分析

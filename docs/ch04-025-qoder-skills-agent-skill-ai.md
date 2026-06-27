@@ -378,7 +378,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
 - Hermes Agent Skill
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
 - [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
 - [Skillx Zhejiang University](/ch04-415-skillx-automatically-constructing-skill-knowledge-bases-for/)
@@ -389,7 +389,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 
 - MOC
 ## 2nd Source 原文存档
-→ [Agent skill 迭代式编写实战 — 淘天物流其林 2026-06-12](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-skill-iterative-writing-taobao-logistics.md)
+→ [Agent skill 迭代式编写实战 — 淘天物流其林 2026-06-12](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-skill-iterative-writing-taobao-logistics.md)
 
 ---
 

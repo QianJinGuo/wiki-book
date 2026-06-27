@@ -13,7 +13,7 @@
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs 1](/ch04-482-opensquilla-launches-open-source-ai-agent-to-cut-token-costs/)
 - [The 1 Ai Agent For Financial Services Fin](/ch04-469-the-1-ai-agent-for-financial-services-fin/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md)
 
 ## 深度分析
 ### 1. 元认知型 AI Agent 的商业首例

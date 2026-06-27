@@ -8,7 +8,7 @@
 
 > Latent Space 播客对 GitHub COO Kyle Daigle 的深度访谈，讨论 GitHub 在 AI Agent 时代的战略方向、内部 AI 工作流、开源生态面临的挑战，以及 Copilot 从代码补全到云 Agent 的演进路径。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www-latent-space-p-github.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www-latent-space-p-github.md)
 
 ## 摘要
 

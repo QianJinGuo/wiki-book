@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 19.0KB | `entities/agentic-engineering-leadership.md`
 
-[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-engineering-leadership.md)
+[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-engineering-leadership.md)
 
 Late in 2025, leadership had made the call: the company was going all in on AI. The CTO's vision was straightforward. Engineers would define the work in tickets. Agents would implement it overnight. Engineers would return in the morning to review the output and get the code over the finish line. This was the reality facing an engineering manager I was mentoring at another company. That conversation stuck with me.
 
@@ -87,7 +87,7 @@ So let the work correct your assumptions, because you cannot afford to lead agen
 - [Tokenspeed Agentic Inference Engine](/ch04-513-tokenspeed-agentic-inference-engine/)
 - [Gemini 3 5 Frontier Intelligence](/ch01-061-gemini-3-5-frontier-intelligence-with-action/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-engineering-leadership.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-engineering-leadership.md)
 
 ## 深度分析
 
@@ -123,7 +123,7 @@ So let the work correct your assumptions, because you cannot afford to lead agen
 
 5. **接受并谈论恐惧，而不是压制它**：工程师对 AI 的恐惧（担心自己被取代、技能被贬值、被要求产出更多而质量标准更难捍卫）往往是合理的担忧，而非单纯的阻力。创造安全空间让团队坦诚讨论这些恐惧，比假装一切顺利更有利于建立信任和推动真正的变革。 [^raw/articles/agentic-engineering-leadership.md:59-64]
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-engineering-leadership.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-engineering-leadership.md)
 
 ---
 

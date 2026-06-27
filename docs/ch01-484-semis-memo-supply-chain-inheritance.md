@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/semis-memo-supply-chain-inheritance.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/semis-memo-supply-chain-inheritance.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/semis-memo-supply-chain-inheritance.md)
 
 ## 相关实体
 - [Semis Memo: Supply Chain Inheritance](/ch01-485-semis-memo-supply-chain-inheritance/)

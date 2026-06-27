@@ -137,7 +137,7 @@ Claude Tag 的特性对 Agent 基础设施提出了新的要求：
 
 ## 参考
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-claude-tag.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-claude-tag.md)
 
 ---
 

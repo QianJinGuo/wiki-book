@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 31.3KB | `entities/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md`
 
-> -> [harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md)
+> -> [harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md)
 
 ## 摘要
 

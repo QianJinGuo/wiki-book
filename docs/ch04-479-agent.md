@@ -13,7 +13,7 @@
 - [explicit vs. implicit in the age of intelligences — le secré](/ch01-395-explicit-vs-implicit-in-the-age-of-intelligences-le-secré/)
 - [review agent：后台复盘 agent 如何判断什么值得保存](/ch04-380-review-agent-后台复盘-agent-如何判断什么值得保存/)
 - [不用再学ai了！生成结果包稳的agent来了](/ch04-170-不用再学ai了-生成结果包稳的agent来了/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-paradigm-evolution-feipeng-alibaba.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-paradigm-evolution-feipeng-alibaba.md)
 
 - MOC
 ## 深度分析

@@ -20,7 +20,7 @@ sources:
 
 # AgentScope Java 2.0：企业级分布式 Harness 框架
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentscope-java-2.0-enterprise-distributed-harness.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentscope-java-2.0-enterprise-distributed-harness.md)
 
 ## 摘要
 
@@ -317,7 +317,7 @@ feishu:<tenantKey>:<chatId>  → SHA-256 → UUID → coding agent thread
 3. **参数截断**：`write_file` 大入参截掉（已写进文件）
 4. **溢出兜底**：撞 `context_length_exceeded` 紧急压缩后重试
 
-→ [第 2 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/coding-agent-second-half-org-level-rd-system-agentscope-2026.md)
+→ [第 2 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/coding-agent-second-half-org-level-rd-system-agentscope-2026.md)
 
 ## 深度分析
 
@@ -339,7 +339,7 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 
 ### Open SWE 与 AgentScope 的殊途同归
 
-从 [第 2 源](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/coding-agent-second-half-org-level-rd-system-agentscope-2026.md) 可以看到，Stripe Minions / Ramp Inspect / Coinbase Cloudbot 三个团队独立开发，最终收敛到相同架构：per-session 沙箱 + 确定性 thread ID 路由 + middleware 拦截链 + draft PR 契约。这是"工程问题倒逼架构收敛"的典型案例，说明企业级 Coding Agent 的核心挑战（隔离、路由、降级、安全输出）具有普遍性，AgentScope 是这一收敛趋势在 Java 生态中的具体实现。
+从 [第 2 源](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/coding-agent-second-half-org-level-rd-system-agentscope-2026.md) 可以看到，Stripe Minions / Ramp Inspect / Coinbase Cloudbot 三个团队独立开发，最终收敛到相同架构：per-session 沙箱 + 确定性 thread ID 路由 + middleware 拦截链 + draft PR 契约。这是"工程问题倒逼架构收敛"的典型案例，说明企业级 Coding Agent 的核心挑战（隔离、路由、降级、安全输出）具有普遍性，AgentScope 是这一收敛趋势在 Java 生态中的具体实现。
 
 ## 相关实体
 

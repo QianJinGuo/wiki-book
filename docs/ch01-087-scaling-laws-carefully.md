@@ -72,7 +72,7 @@ Fitting the parametric error model on small-scale configurations and extrapolati
 
 Side note: These early works lean on 
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/posts-2026-06-24-scaling-laws.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/posts-2026-06-24-scaling-laws.md)
 
 ---
 

@@ -10,7 +10,7 @@
 
 - [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](/ch01-290-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
 - [现在如何使用 ai：一份快速指南（ethan mollick）](/ch01-320-现在如何使用-ai-一份快速指南-ethan-mollick/)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-dynamic-workflows-thariq-blog-gaia.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-dynamic-workflows-thariq-blog-gaia.md)
 
 - MOC
 ## 深度分析

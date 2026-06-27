@@ -6,7 +6,7 @@
 
 # JoyAI-Echo：京东开源长音视频生成框架
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/joyai-echo-long-video-jd-qbitai.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/joyai-echo-long-video-jd-qbitai.md)
 
 京东 2026-06-07 开源长音视频生成框架 **JoyAI-Echo**——直击长视频生成"角色变脸、音色漂移、速度慢、修改难"四大行业痛点。**三大技术栈**（跨模态音视频记忆库 + 记忆驱动后训练 + 轻量化实时超分） + **Director Agent** 三阶段（策划/生成/点评修改）让长视频生成"看见即可得"。开源让长视频生成从头部公司专属能力 → 开发者共同验证调用的开放工具。
 

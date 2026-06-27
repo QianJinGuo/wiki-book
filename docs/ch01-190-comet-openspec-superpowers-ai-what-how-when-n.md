@@ -402,7 +402,7 @@ artifacts:
 
 ## 相关实体
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/three-tools-comet-openspec-superpowers-ai-coding-shuge-2026-06-17.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/three-tools-comet-openspec-superpowers-ai-coding-shuge-2026-06-17.md)
 → [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](/ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战/) — 同期同主题：gstack 作为第三器的视角
 → [Superpowers Deep Dive Kaiyuandakashuo](/ch09-088-superpowers-深度解读-2-rule-gate-hook-与-iron-law-方法论/) — Superpowers 单项目深度
 → [Openspec Spec Driven Development Trae Solo](/ch05-023-openspec-规范驱动开发-sdd-框架-proposal-design-tasks-specs-四类文档意图锁/) — OpenSpec 单项目深度

@@ -38,7 +38,7 @@ In this hands-on tutorial, Claire explains the difference between heartbeats, cr
 
 ## 原文存档
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-loops-claude-code-codex.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-agent-loops-claude-code-codex.md)
 
 ---
 

@@ -17,7 +17,7 @@
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 - [Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fanling-company-as-agent-ai-org-reflection-v2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fanling-company-as-agent-ai-org-reflection-v2.md)
 
 ## 深度分析
 

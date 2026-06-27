@@ -85,7 +85,7 @@ Prompt Caching 折扣条件：**字节级完全相同**（byte-identical）。
 - Gufabiancheng Spec For Complex Tasks Cc Codex
 - [Production Harness 12 Components Framework Comparison](/ch05-033-生产级-harness-的-12-大组件以及主流框架对比/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-multi-agent-harness-source-analysis.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-multi-agent-harness-source-analysis.md)
 
 ---
 

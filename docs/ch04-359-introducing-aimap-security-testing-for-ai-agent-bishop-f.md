@@ -14,7 +14,7 @@
 - [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
 - [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](/ch01-035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md)
 
 ## 深度分析
 

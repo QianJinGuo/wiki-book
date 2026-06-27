@@ -177,12 +177,12 @@ LLM Wiki 在企业级知识库场景面临结构性限制，不能简单替代 R
 - [Claude Md 12 Rules Mnilax](/ch09-036-claude-md-规则从-karpathy-的-4-条增加到-12-条/)
 - [Karpathy Vibe Coding Agentic Engineering V3](/ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-llm-wiki-second-brain-awkthole.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-llm-wiki-second-brain-awkthole.md)
 - [yc掌门人60天写了60万行代码：gstack开源](/ch01-358-yc掌门人60天写了60万行代码-gstack开源/)
 - [markdown 不会过时](/ch01-588-markdown-不会过时/)
 - [Hermes Skills + LLM Wiki 知识系统](/ch01-711-手把手-用-hermes-skills-karpathy-的-llm-wiki-让-ai-越用越懂你/)
 
-→ [补充存档：WorkBuddy + LLM Wiki + Obsidian 实践](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/workbuddy-llm-wiki-obsidian-practice.md)
+→ [补充存档：WorkBuddy + LLM Wiki + Obsidian 实践](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/workbuddy-llm-wiki-obsidian-practice.md)
 
 ---
 

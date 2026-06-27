@@ -25,7 +25,7 @@
 
 - 来源：a16z.news
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/is-software-losing-its-head.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/is-software-losing-its-head.md)
 
 - 评分：v=5 c=10 (54分)
 → [（来源：raw）]

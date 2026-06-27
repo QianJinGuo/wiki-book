@@ -73,7 +73,7 @@
 - 同一架构平移到不同办公场景
 - 判断密集型任务（邮件分拣、会议待办、合同进度）自动化
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/outlook-ai-agent-aws-fargate-claude-agent-sdk.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/outlook-ai-agent-aws-fargate-claude-agent-sdk.md)
 
 ## 深度分析
 

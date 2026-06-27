@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/fastapi上线实战认证限流零停机一套代码搞定.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md)
-从微信文章 [FastAPI上线实战：认证、限流、零停机，一套代码搞定](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md)
+从微信文章 [FastAPI上线实战：认证、限流、零停机，一套代码搞定](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/zYnWWSUptDtRMOelZMLkVw

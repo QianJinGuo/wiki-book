@@ -311,7 +311,7 @@ for tool in tools:
 ### 一个日常习惯的养成
 **拿到新需求时，从底往上问**：先问"10 行 Bash 能搞定吗？"再问"一次 LLM 调用够吗？"最后才考虑 Agent。这个习惯会帮你省掉 80% 的过度工程。
 ---
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-exploration-path-legacy-tech.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-agent-exploration-path-legacy-tech.md)
 
 ---
 

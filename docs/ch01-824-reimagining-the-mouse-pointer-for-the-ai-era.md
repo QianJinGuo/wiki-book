@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/deepmind-ai-pointer.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepmind-ai-pointer.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepmind-ai-pointer.md)
 
 ## 深度分析
 这篇文章的隐含核心洞察是：**AI 正在从"你需要把工作带进 AI"向"AI 来到你的工作中间"转变**。这是人机交互范式的一次根本性迁移。过去的 AI 工具（ChatGPT、Copilot sidebar）都需要用户主动切换上下文，把内容复制进 AI 工具；DeepMind 的 AI Pointer 尝试逆转这个过程——AI 主动理解用户当前正在看的内容，然后提供帮助。
@@ -17,7 +17,7 @@
 2. **重新思考 GUI 设计假设**：当用户可以用"指着那个图表问它的含义"时，传统的数据可视化仪表板设计逻辑需要更新——图表需要自带语义描述，表格头需要是机器可理解的
 3. **监控 Spatial AI 交互的标准化进程**：DeepMind 的 pointer semantics 和 Google 的产品集成如果形成标准，应用开发者需要提前准备 API 层面的语义化改造
 4. **"This/That" 交互模式适合复杂但局部的操作**：当用户可以说"Fix this"并用指针指定问题时，不需要完整描述整个任务上下文——这对工具类应用和生产力软件有直接的交互设计启示
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepmind-ai-pointer.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepmind-ai-pointer.md)
 
 ## 相关概念
 ## 相关实体

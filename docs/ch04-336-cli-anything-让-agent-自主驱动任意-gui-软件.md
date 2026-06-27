@@ -6,7 +6,7 @@
 
 # CLI-Anything：让 Agent 自主驱动任意 GUI 软件
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cli-anything-wechat-demo-conglin.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cli-anything-wechat-demo-conglin.md)
 
 ## 摘要
 

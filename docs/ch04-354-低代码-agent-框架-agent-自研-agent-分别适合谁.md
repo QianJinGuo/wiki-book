@@ -17,7 +17,7 @@
 - Ai Context Layer Kgc 2026
 - [Skillsieve Agent Skill Security](/ch04-369-skillsieve-agent-skill-安全检测三层框架/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lowcode-framework-custom-agent-decision-framework-hello-agents.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lowcode-framework-custom-agent-decision-framework-hello-agents.md)
 
 ## 深度分析
 

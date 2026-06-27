@@ -6,7 +6,7 @@
 
 # U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
 
 ## 摘要
 
@@ -103,7 +103,7 @@ Papernot 团队的措辞很值得注意："It was imperative for us to understan
 - Agent Security Threat Models
 - Llm Security Red Teaming
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
 
 ---
 

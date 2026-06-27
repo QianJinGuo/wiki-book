@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/multica-managed-agents-platform.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/multica-managed-agents-platform.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/multica-managed-agents-platform.md)
 
 ## 核心定位
 开源 Managed Agents 平台。不提供 Agent 智能本身，而是给 Agent 一个"工作环境"——把 Agent 从对话窗口拉到项目看板上，变成为有名字、有任务、会汇报进度的团队成员。
@@ -34,7 +34,7 @@
 - [Skill-RAG：清华 SRA](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/) — Skill 检索增强相关
 - [Agent自我改进六条路](/ch04-047-agent-自我改进的六条路/) — Skill 积累属于经验沉淀
 - Paperclip — 定位对比（个人AI公司模拟）
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/multica-managed-agents-platform.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/multica-managed-agents-platform.md)
 
 ## 关键洞察
 1. Multica 的 Skill 沉淀机制与清华 SRA 的"技能检索"方向一致，但应用场景不同

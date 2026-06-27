@@ -18,7 +18,7 @@ What makes this experience truly powerful is [agent Skills for model customizati
 - [Habby Game Aws Devops Agent](/ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践/)
 - [将 Aws Devops Agent 智能运维能力延伸到中国区](/ch11-153-将-aws-devops-agent-智能运维能力延伸到中国区/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 
 - MOC
 ## 深度分析

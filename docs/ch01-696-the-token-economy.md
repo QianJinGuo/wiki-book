@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/the-token-economy.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-token-economy-pt2-the-intelligence-company-gets-built.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-token-economy-pt2-the-intelligence-company-gets-built.md)
 
 ## 摘录
 > Title: 🧠 The Token Economy: Tokenmaxxing Is Stupid Until It Isn't

@@ -15,7 +15,7 @@
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
 - [Garry Tan Yc Ceo](/ch01-497-garry-tan/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md)
 
 ## 深度分析
 

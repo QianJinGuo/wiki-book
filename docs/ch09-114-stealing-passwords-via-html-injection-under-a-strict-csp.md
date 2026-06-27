@@ -6,7 +6,7 @@
 
 # Stealing Passwords via HTML Injection Under a Strict CSP
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/afine-csp-html-injection-password-exfiltration.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/afine-csp-html-injection-password-exfiltration.md)
 
 ## 深度分析
 

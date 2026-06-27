@@ -66,7 +66,7 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - **Spark on Kubernetes**：无 SSH 依赖，迁移路径清晰
 - **Whitecastle 完成**：主账号 EMR 集群迁移到子账号，网络隔离合规
 - **平台可演进性**：Airflow 与 EMR 基础设施细节解耦，集群替换对 DAG 无感
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
 ## 相关实体
 - [Wetesteddeepseekv4Proandflashagainstclau](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
 - [Entrypointhijacking](/ch01-128-entrypoint-hijacking/)

@@ -13,7 +13,7 @@
 - [Introducing Claude For Small Business](/ch01-030-introducing-claude-for-small-business/)
 - [Granola The Ai Notepad For Backtoback Meetings](/ch03-046-granola-the-ai-notepad-for-back-to-back-meetings/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic_cache_tokenomics.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic_cache_tokenomics.md)
 - [the golden rule of customizable select](/ch01-145-the-golden-rule-of-customizable-select/)
 
 ## 深度分析
@@ -32,7 +32,7 @@
 - **大 prefix + 长时间 idle = 放弃缓存：** 500K token idle 超过 62.5 分钟后刷新成本已超过重写，此时应主动终止缓存
 
 ## 关联阅读
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic_cache_tokenomics.md) — 本文完整原文与推导细节
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic_cache_tokenomics.md) — 本文完整原文与推导细节
 
 ---
 

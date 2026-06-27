@@ -28,7 +28,7 @@
 - [Products Are Out Brains Are In](/ch01-113-products-are-out-brains-are-in/)
 - Investing In Stitch
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dumb-ways-for-an-open-source-project-to-die.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dumb-ways-for-an-open-source-project-to-die.md)
 
 ---
 

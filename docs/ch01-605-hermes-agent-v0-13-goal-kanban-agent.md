@@ -79,7 +79,7 @@ hermes doctor   # 检查环境
 - [Hermes Agent Kanban Deep Test By Wjjagi 2026](/ch01-312-hermes-agent-官方-kanban-深度实测-让商业-cli-工具当-orchestrator/)
 - [Hermes Agent Self Evolution Tengxun](/ch09-091-hermes-agent自我进化机制与openclaw对比/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
 
 - `Self-Evolving Agent`
 

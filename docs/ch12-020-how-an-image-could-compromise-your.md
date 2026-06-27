@@ -140,7 +140,7 @@ ExifTool 13.50 的修复方案代表了处理此类漏洞的最佳实践：
 - [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](/ch12-015-resecurity-cve-2026-20182-unauthenticated-cisco-sd-wan-co/)
 - [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](/ch09-060-claw-chain-cyera-research-unveil-four-chainable-vulnerabili/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md)
 
 ---
 

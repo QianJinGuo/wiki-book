@@ -79,7 +79,7 @@
 - [Anthropic Prompt Caching Claude Code Agihunt](/ch01-677-anthropic/)
 - [Cat Wu Claude Code Pm](/ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-founders-playbook-huashu-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-founders-playbook-huashu-2026.md)
 
 ---
 

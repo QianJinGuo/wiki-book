@@ -7,7 +7,7 @@
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/clinereleasesopen-sourceagentruntimesdk.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/clinereleasesopen-sourceagentruntimesdk.md)
 
 ## 深度分析
 ### SDK 架构的分层设计

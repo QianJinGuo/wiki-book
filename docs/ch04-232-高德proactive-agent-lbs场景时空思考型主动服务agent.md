@@ -68,7 +68,7 @@ GenUI（Generated UI）是一个常被忽视但至关重要的设计理念。传
 ## 相关实体
 - [Lbs Intent Bench Lbs Intentbench](/ch04-424-智能时空思考agent-首个真实出行隐式意图评测基准lbs-intentbench正式开源/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amap-proactive-agent-lbs-spacetime.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amap-proactive-agent-lbs-spacetime.md)
 
 ---
 

@@ -17,7 +17,7 @@ Now, let's consider two training scenarios:
 - [Stochastic Parrot Marcus Ai Productivity](/ch11-069-stochastic-parrot-marcus-ai-productivity/)
 - [Aws Grpo Rlvr Sagemaker Math Reasoning](/ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning/)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stochastic-parrot-thought-experiment.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stochastic-parrot-thought-experiment.md)
 
 ## 深度分析
 
