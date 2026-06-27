@@ -19,12 +19,12 @@
 - [from silos to service topology: why netflix built a real-tim](../ch11-138-from-silos-to-service-topology-why-netflix-built-a-real-tim)
 - [nemotron 3.5 content safety: customizable multimodal safety](../ch01-272-multimodal)
 - [perplexity 首次公开了内部 skill 设计指南](../ch07-059-perplexity-首次公开了内部-skill-设计指南)
-- [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-team-knowledge-engine-compiled-knowledge.md)
+- qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件
 - [天猫新品团队ai编码实战指南（下）](../ch09-105-天猫新品团队ai编码实战指南-下)
 - [我把 claude design 做成了 skill，人人都能成为顶级网站设计师](../ch01-785-我把-claude-design-做成了-skill-人人都能成为顶级网站设计师)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-friendly-architecture-design-taobao.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 ## 深度分析
 
 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？ 涉及agent领域的核心技术议题。

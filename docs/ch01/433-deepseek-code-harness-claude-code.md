@@ -69,14 +69,14 @@ Anthropic 的总结：「找到模型里的缺口，用 Harness 补上，再用 
 
 DeepSeek 做 Harness 的逻辑不是「我们要做一个更好的工具」，而是「我们没有别的选择」。Anthropic 的封锁创造了一个明确的市场真空。但 DeepSeek 面临的真正挑战不是做出一个 Claude Code 的外壳，而是建立自己的**长时运行闭环**：让模型在真实代码库里工作，让 Harness 记录失败、分析原因，把失败变成下一轮产品设计和模型训练的输入。
 
-### 从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 视角看
+### 从 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 视角看
 
-DeepSeek 的公式 Model + Harness = Agent 是对 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 理念的商业化表达。核心挑战在于：
+DeepSeek 的公式 Model + Harness = Agent 是对 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 理念的商业化表达。核心挑战在于：
 1. **上下文压缩**：长时运行必须解决上下文窗口有限且越跑越乱的问题
 2. **任务边界控制**：模型总高估自己的完成度——明明半成品却说「好了」
 3. **失败路径学习**：Harness 的真正价值不在于让模型成功，而在于系统化地学习失败
 
-### 与 [Claude Code 内部机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md) 的对比
+### 与 [Claude Code 内部机制](../ch01-734-两万字详解claude-code源码核心机制/) 的对比
 
 Claude Code 的核心是一个 loop：调用模型 → 运行工具 → 拿到反馈 → 继续调用。真正的护城河在外围：权限控制、上下文压缩、MCP 工具、插件、Skills、Hooks、Subagent 调度、会话存储和安全策略。DeepSeek 需要在每个环节建立自己的工程积累，这不可能通过简单复制完成。
 
@@ -96,12 +96,12 @@ Anthropic 已经建立了一个正向飞轮：模型越强 → Harness 越顺手
 
 ## 相关实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
-- [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch01-702-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
+- [构建基于多智能体架构的深度思考交易系统 V2](../ch01-728-构建基于多智能体架构的深度思考交易系统/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-code-harness-competitor-tina.md)
 

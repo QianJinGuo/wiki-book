@@ -16,11 +16,11 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-6.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-4.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-3.md)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](../ch11-165-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch11-191-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](../ch11-186-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
+- MOC
 ## 深度分析
 ### 1. "编译型"到"解释型"：Skill 范式的本质变革
 传统卖家助手的能力扩展方式类似"编译型语言"：需求 → 工程师编码 → 定义 Function Schema → 测试 → 编译打包 → 部署上线，每个新功能都需要经过完整的开发流水线 。OpenClaw 的 Skill 方式则是"解释型"：运营人员写 SKILL.md → 放到 skills 目录 → 立即生效，周期从天级压缩到分钟级 。这一变革意味着能力构建门槛从"会写代码"降到"会写 curl + jq 即可"，从依赖工程团队排期变为运营人员自主完成。

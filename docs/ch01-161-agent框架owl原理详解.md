@@ -271,7 +271,7 @@ OWL适合以下场景：
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南)
 - [Gepa Optimize Anything](../ch01-263-gepa-optimize-anything)
 - [Tmall Marketing Ai Workflow Best Practices](../ch01-196-淘天营销中后台生码工作流最佳实践)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- MOC
 
 ---
 

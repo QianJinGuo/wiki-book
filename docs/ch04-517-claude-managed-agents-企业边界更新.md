@@ -147,7 +147,7 @@ Outcomes grader 的有效性取决于 rubric 质量。建议 rubric 设计原则
 - [Claude Managed Agents](../ch01-445-claude-managed-agents-官方-harness-平台指南)
 - [Anthropic Claude Managed Agents Platform Launch](../ch01-677-anthropic)
 - [Anthropic Claude Managed Agents Platform 2026](../ch01-677-anthropic)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- MOC
 
 ---
 

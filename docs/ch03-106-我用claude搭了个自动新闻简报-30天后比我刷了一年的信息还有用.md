@@ -93,7 +93,7 @@ Filesystem MCP + Brave Search MCP构建了一个完整的读写-搜索闭环。C
 - [Loop Engineering Addy Osmani Challengehub](../ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad)
 - [Kiro Mcp Rds Mysql Upgrade](../ch07-035-使用-kiro-和-mcp-自动化大规模升级-rds-mysql-8-0-至-rds-mysql-8-4)
 - [Yumanju Ai Full Flow Efficiency](../ch01-356-柚漫剧-ai-全流程提效拆解)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 
 ---
 

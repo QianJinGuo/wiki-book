@@ -154,7 +154,7 @@
 
 ### 核心观点：Skill 的"反收敛"问题是 AI 能力提升后的普遍矛盾
 
-Huashu-Design 2.0 的 3 个真实坑（设计收敛成安全极简、内容网站无真图、AI 一本正经瞎编事实）揭示了一个在 AI 能力大幅提升后才会暴露的**系统性问题：当 AI"能做"之后，它反而倾向于做最安全、最保守的选择**。这不是花叔工具独有的问题，而是所有高能力 AI 辅助工具面临的共同矛盾——AI 越强，越容易收敛到"最不容易出错"的解法，而非"最优"的解法。这与 [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) 中描述的"AI 能力提升后，harness 设计需要重新思考人机协作模式"问题一脉相承。
+Huashu-Design 2.0 的 3 个真实坑（设计收敛成安全极简、内容网站无真图、AI 一本正经瞎编事实）揭示了一个在 AI 能力大幅提升后才会暴露的**系统性问题：当 AI"能做"之后，它反而倾向于做最安全、最保守的选择**。这不是花叔工具独有的问题，而是所有高能力 AI 辅助工具面临的共同矛盾——AI 越强，越容易收敛到"最不容易出错"的解法，而非"最优"的解法。这与 Harness Engineering Paradigm Shift 中描述的"AI 能力提升后，harness 设计需要重新思考人机协作模式"问题一脉相承。
 
 ### 技术要点：3 套并行逻辑的设计原理
 
@@ -214,8 +214,8 @@ Huashu-Design 的 3 个坑和 3 个原则，本质上是在回答一个问题：
 - [Skill Design Patterns](../ch07-002-skill-设计模式) — skill 设计维度的通用模式
 - [Harness Engineering Practical 17Ge Versus 6 Subagent](../ch05-025-harness-模式-6-subagent-实战-17哥-versus-大模型评测平台-git-submodule) — 互补的 Harness 模式（决策者 vs 动手者）
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道) — Claude Code harness 架构参考
-- [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — AI 能力提升后的 harness 设计范式转移
-- [Agent Role Specialization](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-role-specialization.md) — agent 在"做决策"和"动手"之间的角色分化
+- Harness Engineering Paradigm Shift — AI 能力提升后的 harness 设计范式转移
+- Agent Role Specialization — agent 在"做决策"和"动手"之间的角色分化
 
 ---
 

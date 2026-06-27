@@ -92,10 +92,10 @@
 
 ## 相关实体
 
-- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
+- Context Engineering
 - [AI Coding 入门指南](../ch09-004-ai-coding-入门指南-如何更好地让ai真正帮你干活)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [Harness Engineering](../ch05-041-harness-engineering-概念框架/)
+- MOC
 
 ---
 

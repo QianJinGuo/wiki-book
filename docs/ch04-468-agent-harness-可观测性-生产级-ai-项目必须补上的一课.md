@@ -43,7 +43,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-observability-production.md)
 - [perplexity computer empirical study: how ai agents reshape k](../ch04-085-perplexity-computer-empirical-study-how-ai-agents-reshape-k)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- MOC
 
 ---
 

@@ -13,7 +13,7 @@
 - [知识库问答 @文档：从 dom 方案到 prosemirror 落地](../ch01-791-知识库问答-文档-从-dom-方案到-prosemirror-落地)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-core-patterns-claude-code.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 ## 深度分析
 
 深入浅出 Harness Engineering 之核心模式与理念 涉及agent领域的核心技术议题。

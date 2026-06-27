@@ -16,7 +16,7 @@
 
 - [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](../ch01-677-anthropic)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- MOC
 ## 深度分析
 
 **一、算力集中化正在重塑AI竞争格局，资源禀赋成为决定性变量。** xAI解散后22万张顶级GPU整编租借给Anthropic，叠加谷歌既有算力支持，使其拥有远超竞争对手的硬件资源优势。这种"算力归队"事件意味着AI下半场的竞争逻辑已从算法创新转向资源整合能力，单靠算法领先已无法独立支撑竞争壁垒 。

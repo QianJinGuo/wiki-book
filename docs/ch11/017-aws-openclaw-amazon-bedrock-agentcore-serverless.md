@@ -180,11 +180,11 @@ PowerShell
 4. **冷启动延迟需要纳入 UX 设计**：首次消息触发 microVM 创建约需 10-15 秒，用户体验上这是"等待但有响应"。建议在 Bot 欢迎消息或文档中告知用户首次交互会有稍长延迟，避免用户误以为 Bot 无响应而重复发送消息。
 5. **监控大盘是运维的主入口**：CloudWatch 的 Router Lambda 日志是排查消息路由失败的第一站；AgentCore 容器日志用于排查 OpenClaw 本身的问题；Token Analytics 大盘用于实时评估 AI 成本。三个视角缺一不可，建议运维团队为每个视角准备标准化的查询过滤条件。
 ## 相关实体
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
-- [Openclaw Multi 2](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-2.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 3](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-3.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 6](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-6.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch11-076-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改/)
+- [Openclaw Multi 2](../ch11-141-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 3](../ch11-186-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch11-165-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
 

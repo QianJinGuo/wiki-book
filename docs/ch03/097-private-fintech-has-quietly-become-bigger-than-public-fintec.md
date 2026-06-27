@@ -44,11 +44,11 @@ Steve, who has been in the middle of these transactions for 25 years, sees the c
 Here’s where the report’s headline finding gets complicated. The top 10 are minting wealth. The next 90 are doing fine. But there are thousands of
 
 ## 相关实体
-- [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
-- [Plaid Effects](https://github.com/QianJinGuo/wiki/blob/main/entities/plaid-effects.md)
-- [The Stablecoin 24X7 Money Loop Fintechbrainfood](https://github.com/QianJinGuo/wiki/blob/main/entities/the-stablecoin-24x7-money-loop-fintechbrainfood.md)
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](https://github.com/QianJinGuo/wiki/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
-- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](https://github.com/QianJinGuo/wiki/blob/main/entities/klarna-delivers-strong-start-to-2026-with-1bn-revenue-and-68m-adj-operating-prof.md)
+- [5Thingstoknowabouttheclarityact](../ch01-093-5-things-to-know-about-the-clarity-act/)
+- [Plaid Effects](../ch03-110-plaid-s-effects-on-the-financial-ecosystem/)
+- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch03-059-the-stablecoin-24x7-money-loop-business-case-for-banks/)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](../ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt/)
+- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01-057-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/private-fintech-vs-public-fintech.md)
 

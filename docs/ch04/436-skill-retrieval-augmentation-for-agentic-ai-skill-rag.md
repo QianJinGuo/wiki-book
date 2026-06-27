@@ -11,15 +11,15 @@
 RAG改换换了！清华提出Skill-RAG
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
-- [Hermes Agent Newbie Guide Dotta](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-newbie-guide-dotta.md)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
-- [Three Rag Architectures Classic Graph Agentic](https://github.com/QianJinGuo/wiki/blob/main/entities/three-rag-architectures-classic-graph-agentic.md)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Hermes Agent Newbie Guide Dotta](../ch01-655-paperclip-ai-公司操作系统-第-5-篇-完结/)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90/)
+- [Three Rag Architectures Classic Graph Agentic](../ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-rag-tsinghua-sra.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- MOC
 ## 深度分析
 
 **1. 技能库规模爆炸导致上下文窗口成为 Agent 瓶颈。** 截至 2026 年 4 月，仅 SkillsMP 平台就托管超过一百万个技能，OpenClaw、Claude Code 等系统也在快速增长。当技能数量从十几个增长到成千上万个时，将所有技能摘要塞进上下文的传统方法导致判断准确率断崖式下降。SRA-Bench 规模达到 26,262 个干扰技能——这不是夸张，而是真实场景的准确刻画。

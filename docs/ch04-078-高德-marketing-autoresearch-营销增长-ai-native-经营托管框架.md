@@ -140,7 +140,7 @@
 
 | 现有 entity | 应用域 | 核心方法 |
 |-------------|--------|---------|
-| [AI 自主科研 L0-L4](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md) (6KB) | 科学发现 (AlphaFold / The AI Scientist) | L0-L4 五级自主性框架 |
+| AI 自主科研 L0-L4 (6KB) | 科学发现 (AlphaFold / The AI Scientist) | L0-L4 五级自主性框架 |
 | [AutoResearch 多 Agent 软件开发](../ch09-030-autoresearch-多-agent-自动化软件开发) (14KB) | 软件开发 (Codex / Claude Code) | 多 Agent 异步 + 评审者回路 |
 | Karpathy AutoResearch (Query Engine Bug) | 个人研究循环 | Nightly research loop |
 
@@ -185,7 +185,7 @@
 
 **高德 AI 战略的三层落地**：C 端用户助手 / 内部研发工具 / 业务决策托管——形成完整的"AI Native 业务操作系统"。
 
-### 与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的深度共鸣
+### 与 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 的深度共鸣
 
 **业务协议 = Harness 在业务域的具象化**：
 - Harness 提供**环境治理**（CI/CD、Review、Test）
@@ -220,7 +220,7 @@
 
 ## 与已有实体的差异化定位
 
-- vs [AI 科研 L0-L4](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md) — 科学发现域，本文是营销业务域
+- vs AI 科研 L0-L4 — 科学发现域，本文是营销业务域
 - vs [多 Agent 软件开发](../ch09-030-autoresearch-多-agent-自动化软件开发) — 软件开发域，本文是营销业务域
 - vs [高德 7x24 Self-Healing Pipeline](../ch04-028-高德-ai-native-生产线-第-3-期-7x24-self-healing-pipeline-agent-自) — 同公司研发线，本文是营销业务线
 - vs [高德 AI Companion Agent](../ch04-044-ai伴行技术解析-基于空间智能的高可用agent架构实践) — C 端用户交互，本文是 B 端业务托管

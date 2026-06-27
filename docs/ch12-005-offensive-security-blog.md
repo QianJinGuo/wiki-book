@@ -6,7 +6,7 @@
 
 > -> [offensive-security-blog](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/offensive-security-blog.md)
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
 - [CloudSectiDbits: Masso - Cognito SSO Bypass](../ch11-209-cloudsectidbits)
 

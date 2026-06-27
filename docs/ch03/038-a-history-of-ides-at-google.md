@@ -8,11 +8,11 @@
 Like in many companies, engineers at Google have been able to pick their IDE of choice, and this resulted in a lot of fragmentation. In 2011, some of the most senior engineers were asked a question: "Is there a way to get a good uniform IDE for all Googlers?" The answer was essentially "No". Among others, [Jeff Dean](https://en.wikipedia.org/wiki/Jeff_Dean) replied:
 
 ## 相关实体
-- [Cli Mcp Sdk Agent Tool Selection](https://github.com/QianJinGuo/wiki/blob/main/entities/cli-mcp-sdk-agent-tool-selection.md)
-- [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
-- [Pi Mono Github](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-mono-github.md)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
+- [Cli Mcp Sdk Agent Tool Selection](../ch07-053-cli系列④-选型cli-mcp还是api/)
+- [Google Bigquery Threat Model](../ch01-644-bigquery-threat-model-report/)
+- [Pi Mono Github](../ch01-608-pi-mono-github/)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04-321-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/a-history-of-ides-at-google.md)
 

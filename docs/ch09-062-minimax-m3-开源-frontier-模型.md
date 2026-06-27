@@ -136,9 +136,9 @@ MiniMax M3 的三件套不是功能堆砌，而是一个系统能力的三个接
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch04-482-opensquilla-launches-open-source-ai-agent-to-cut-token-costs)
 - [How Open Model Ecosystems Compound](../ch01-651-how-open-model-ecosystems-compound)
 
-- [minimax token调用第一后：agentos现实与模型厂商的系统适配挑战](https://github.com/QianJinGuo/wiki/blob/main/entities/agentos-minimax-forge-model-adaptation-yaoge.md)
+- minimax token调用第一后：agentos现实与模型厂商的系统适配挑战
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 ## 相关主题
 
 - MiniMax M2.7 模型 — 参考 `Minimax M2 7`

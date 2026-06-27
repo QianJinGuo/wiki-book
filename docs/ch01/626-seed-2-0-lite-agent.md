@@ -33,16 +33,16 @@
 5. **集成建议**：对于已经在用 Claude Code、Codex、OpenClaw、Hermes Agent 或 Trae 的用户，把豆包 Seed 2.0 Lite 作为前置感知层接入现有工作流即可实现"眼睛+耳朵"能力，无需迁移工作台或学习新工具。
 
 ## 相关实体
-- [Doubao Seed 2 Lite Agent Multimodal](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite-agent-multimodal.md)
-- [Hermes Agent Newbie Guide Dotta](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-newbie-guide-dotta.md)
-- [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-rag-tsinghua-sra.md)
-- [Doubao Seed 2 Lite](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite.md)
-- [Deepseek Code Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-code-harness.md)
+- [Doubao Seed 2 Lite Agent Multimodal](../ch01-582-豆包-seed-2-0-lite升级-给-agent-装上眼睛和耳朵/)
+- [Hermes Agent Newbie Guide Dotta](../ch01-655-paperclip-ai-公司操作系统-第-5-篇-完结/)
+- [Skill Rag Tsinghua Sra](../ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/)
+- Doubao Seed 2 Lite
+- [Deepseek Code Harness](../ch09-068-deepseek-code-harness/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md)
 
-- [注定改变历史的一代人](https://github.com/QianJinGuo/wiki/blob/main/entities/注定改变历史的一代人.md)
-- [这张信息图居然是8B开源模型做的](https://github.com/QianJinGuo/wiki/blob/main/entities/这张信息图居然是8b开源模型做的.md)
+- [注定改变历史的一代人](../ch01-337-注定改变历史的一代人/)
+- [这张信息图居然是8B开源模型做的](../ch01-669-这张信息图-居然是8b开源模型做的/)
 
 ---
 

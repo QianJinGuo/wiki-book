@@ -42,11 +42,11 @@
 - 三黄工作室第二个开源项目
 
 ## 相关实体
-- [Agentic Ai System Architecture Harness Skill Mcp](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
-- [Browser Harness Github](https://github.com/QianJinGuo/wiki/blob/main/entities/browser-harness-github.md)
-- [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
+- [Browser Harness Github](../ch05-066-browser-harness-github/)
+- [Four Browser Automation Tools Comparison](../ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc/)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cdp-bridge-mcp-real-browser-agent.md)
 

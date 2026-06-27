@@ -15,7 +15,7 @@
 - [不用再学ai了！生成结果包稳的agent来了](../ch04-170-不用再学ai了-生成结果包稳的agent来了)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-paradigm-evolution-feipeng-alibaba.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 ## 深度分析
 
 Agent核心技术概念与范式发生了哪些演变以及背后的思考 涉及agent领域的核心技术议题。

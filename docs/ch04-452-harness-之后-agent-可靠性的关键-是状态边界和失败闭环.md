@@ -14,7 +14,7 @@
 - [perplexity 首次公开了内部 skill 设计指南](../ch07-059-perplexity-首次公开了内部-skill-设计指南)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-之后-状态边界与失败闭环-若飞.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 ## 深度分析
 
 Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环 涉及agent领域的核心技术议题。

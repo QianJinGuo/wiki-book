@@ -12,11 +12,11 @@
 - 「Claude Opus 4.7」→「Claude 四点七」
 
 ## 相关实体
-- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](https://github.com/QianJinGuo/wiki/blob/main/entities/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md)
-- [Claude Code Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md)
-- [Tencent Vibe Coding To Agentic Engineering Backend](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-vibe-coding-to-agentic-engineering-backend.md)
-- [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
-- [Hermes Agent Newbie Guide Dotta](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-newbie-guide-dotta.md)
+- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](../ch01-613-豆包-seed-2-0-lite升级-给-agent-装上眼睛和耳朵/)
+- Claude Code Prompt Context Harness
+- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档/)
+- [Hermes Agent Newbie Guide Dotta](../ch01-655-paperclip-ai-公司操作系统-第-5-篇-完结/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/doubao-seed-2-lite-agent-multimodal.md)
 

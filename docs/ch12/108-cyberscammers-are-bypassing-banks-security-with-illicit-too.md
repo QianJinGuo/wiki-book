@@ -8,13 +8,13 @@
 
 ## 相关实体
 
-- [canvas hackers shinyhunters say their official domain was su](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md)
-- [canvas hackers shinyhunters say their official domain was su](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md)
-- [private fintech has quietly become bigger than public fintec](https://github.com/QianJinGuo/wiki/blob/main/entities/private-fintech-has-quietly-become-bigger-than-public-fintec.md)
-- [private fintech has quietly become bigger than public fintec](https://github.com/QianJinGuo/wiki/blob/main/entities/private-fintech-has-quietly-become-bigger-than-public-fintec-569278.md)
+- [canvas hackers shinyhunters say their official domain was su](../ch12-044-canvas-lms-攻击者-shinyhunters-官方域名被暂停-转向暗网的运营安全转向/)
+- [canvas hackers shinyhunters say their official domain was su](../ch12-035-canvas-hackers-shinyhunters-say-their-official-domain-was-su/)
+- [private fintech has quietly become bigger than public fintec](../ch01-470-private-fintech-has-quietly-become-bigger-than-public-fintec/)
+- [private fintech has quietly become bigger than public fintec](../ch01-063-private-fintech-has-quietly-become-bigger-than-public-fintec/)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-04-15.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 ## 深度分析
 
 Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram 涉及code领域的核心技术议题。
@@ -38,12 +38,12 @@ Cyberscammers are bypassing banks’ security with illicit tools sold on Telegra
 - **data趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程/)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践/)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-215-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
 
 ## 实践启示
 1. **工程落地**: code领域方案需关注可观测性、可维护性和成本效率

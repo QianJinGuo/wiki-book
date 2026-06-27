@@ -200,21 +200,21 @@ Mollick 结尾给出的判断值得专门拆开：「我们能看到那个 Thing
 
 ## 相关实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [Claude Opus 48 The System Card B8460F](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-48-the-system-card-b8460f.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [Agent Harness Engineering Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md)
-- [Gpt 5 It Just Does Stuff](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-5-it-just-does-stuff.md)
-- [Andrej Karpathy Claude Md 134K Stars 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/andrej-karpathy-claude-md-134k-stars-2026.md)
-- [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
-- [Agentic Harness Engineering Ahe](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-harness-engineering-ahe.md)
-- [Agent Harness Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程/)
+- [Claude Opus 48 The System Card B8460F](../ch01-244-claude-opus-4-8-the-system-card/)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-215-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch01-702-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
+- [Agent Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey/)
+- [Gpt 5 It Just Does Stuff](../ch01-205-gpt-5-it-just-does-stuff/)
+- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01-306-最佳-claude-code-配置-andrej-karpathy-的-claude-md-134-k-star了/)
+- Ahe Agentic Harness Engineering
+- [Agentic Harness Engineering Ahe](../ch04-212-ahe-agentic-harness-engineering/)
+- [Agent Harness Architecture](../ch04-207-agent-harness-架构/)
 
 ---
 

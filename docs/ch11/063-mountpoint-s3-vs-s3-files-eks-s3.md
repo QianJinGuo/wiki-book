@@ -106,7 +106,7 @@ Mountpoint S3 的核心设计理念是"不尝试模拟 S3 无法实现的操作"
 
 ### 2. 混合部署是 EKS 上的最优解
 
-同一 EKS 集群中同时部署 Mountpoint S3 CSI 和 S3 Files + EFS CSI 是当前 AWS 上 S3 数据接入的最佳实践。大文件顺序读（模型加载、checkpoint 保存）用 Mountpoint S3，小文件随机访问（训练数据加载、Embedding 查找）用 S3 Files。两种 CSI Driver 可以共存，根据不同业务的 PV 配置选择对应的方案。这种混合部署模式充分发挥了各自优势：[Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md) 等 GPU 运维场景下，数据加载性能直接影响 GPU 利用率，尤其需要这种精细化的存储选型。
+同一 EKS 集群中同时部署 Mountpoint S3 CSI 和 S3 Files + EFS CSI 是当前 AWS 上 S3 数据接入的最佳实践。大文件顺序读（模型加载、checkpoint 保存）用 Mountpoint S3，小文件随机访问（训练数据加载、Embedding 查找）用 S3 Files。两种 CSI Driver 可以共存，根据不同业务的 PV 配置选择对应的方案。这种混合部署模式充分发挥了各自优势：[Eks Gpu Operator Custom Driver Cuda Workload](../ch11-030-在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载/) 等 GPU 运维场景下，数据加载性能直接影响 GPU 利用率，尤其需要这种精细化的存储选型。
 
 ### 3. FUSE 用户态文件系统的内在限制
 
@@ -132,10 +132,10 @@ S3 Files 采用 NFS close-to-open 一致性模型：当一个客户端 close 文
 
 | 实体 | 关注点 | 本文差异 |
 |------|--------|---------|
-| [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md) | Kiro CLI + FluentBit 日志采集 + EKS S3 Parquet | 偏日志管道，非 S3 挂载方案 |
-| [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md) | EKS + GPU Operator + 自定义驱动 | 算力层，非存储层 |
-| [Openclaw Leveraging Nova Mme S3 Vector Implement Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-leveraging-nova-mme-s3-vector-implement-skill.md) | S3 Vector + Nova MME 实现 Skill 按需召回 | S3 Vector 语义检索，非挂载方案 |
-| [Litellm Aws Ecs Eks Ai Gateway Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/litellm-aws-ecs-eks-ai-gateway-architecture.md) | LiteLLM AI 网关 + ECS/EKS | 推理网关，非存储 |
+| [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](../ch11-205-用-kiro-cli-自动搭建-fluentbit-日志采集方案-两种-eks-埋点数据落地-s3-parquet-的实/) | Kiro CLI + FluentBit 日志采集 + EKS S3 Parquet | 偏日志管道，非 S3 挂载方案 |
+| [Eks Gpu Operator Custom Driver Cuda Workload](../ch11-030-在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载/) | EKS + GPU Operator + 自定义驱动 | 算力层，非存储层 |
+| [Openclaw Leveraging Nova Mme S3 Vector Implement Skill](../ch11-121-给-openclaw瘦身-利用nova-mme-和-s3-vector实现skill按需召回-亚马逊aws官方博客/) | S3 Vector + Nova MME 实现 Skill 按需召回 | S3 Vector 语义检索，非挂载方案 |
+| [Litellm Aws Ecs Eks Ai Gateway Architecture](../ch11-085-litellm-生产级部署-aws-ecs-eks-双方案-control-plane-data-plane-分/) | LiteLLM AI 网关 + ECS/EKS | 推理网关，非存储 |
 
 **本文独特价值**：是 **Mountpoint S3 CSI vs S3 Files + EFS CSI** 这一**特定 S3 挂载方案对决**的**AWS 官方端到端实战**（含 PV/PVC YAML、架构图、性能数据、选型决策树）。
 
@@ -148,7 +148,7 @@ S3 Files 采用 NFS close-to-open 一致性模型：当一个客户端 close 文
 → 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mountpoint-s3-与-s3-files-在-eks-上的实战对比.md)
 ## 相关实体
 
-- [databricks storage ecosystem & opensharing：企业数据治理从 migrate e](https://github.com/QianJinGuo/wiki/blob/main/entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md)
+- databricks storage ecosystem & opensharing：企业数据治理从 migrate e
 
 ---
 

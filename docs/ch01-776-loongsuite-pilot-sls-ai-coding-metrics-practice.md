@@ -53,7 +53,7 @@ Loongsuite Pilot Sls Ai Coding Metrics Practice 涉及agent领域的核心技术
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 
 ---
 

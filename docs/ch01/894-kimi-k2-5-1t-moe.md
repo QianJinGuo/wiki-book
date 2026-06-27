@@ -49,11 +49,11 @@ Kimi K2.5（Moonshot AI）是 K2 之后的开源 1T MoE 升级版本，核心架
 
 ## 相关实体
 
-- [Kimi K2.6 Agent Database](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-k2-6-tidb-agent-database.md) — K2.6 的 TiDB Cloud 基础设施实践
-- [Kimi AttnRes](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-attention-residuals-preNorm-dilution-block-attnres.md) — Kimi 的 attention 残差机制
-- [DeepSeek MoE](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-moe-parallel-strategy.md) — DeepSeek MoE 架构对比
-- [openJiuwen Swarm](https://github.com/QianJinGuo/wiki/blob/main/entities/jiuwenswarm-coordination-engineering.md) — Kimi 关联的开源 harness
-- [MiMo Code](https://github.com/QianJinGuo/wiki/blob/main/entities/mimo-code-xiaomi-coding-harness-2026.md) — 类似的全开源策略对比
+- Kimi K2.6 Agent Database — K2.6 的 TiDB Cloud 基础设施实践
+- [Kimi AttnRes](../ch01-880-kimi-attention-residuals-attnres-prenorm-稀释问题与-block-折中方案/) — Kimi 的 attention 残差机制
+- [DeepSeek MoE](../ch01-673-deepseek-moe-并行策略与gpu通信优化/) — DeepSeek MoE 架构对比
+- openJiuwen Swarm — Kimi 关联的开源 harness
+- [MiMo Code](../ch09-007-小米-mimo-code-长程编程-agent-三大主线-计算-记忆-进化-与-claude-code-工程分化/) — 类似的全开源策略对比
 
 ---
 

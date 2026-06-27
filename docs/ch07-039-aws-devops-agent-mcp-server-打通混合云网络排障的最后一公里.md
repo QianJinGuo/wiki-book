@@ -48,7 +48,7 @@ Tool 名字与 docstring 是 Agent 决策的唯一依据——这对工具开发
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式)
 - [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](../ch11-149-aws-devops-agent-接入-aws-中国区系列-partition-隔离-多账号扩展与-roles-anyw)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- MOC
 
 ---
 

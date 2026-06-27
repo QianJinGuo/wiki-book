@@ -16,7 +16,7 @@ Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safe
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-nemotron-3-agents-rag-voice-safety.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- MOC
 ## 深度分析
 
 **1. Agentic AI的核心是specialized models的协同栈，而非单一超大模型**

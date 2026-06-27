@@ -17,7 +17,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
 → 系列：超级应用的 AI 原生研发模式探索（第 3 期）
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- MOC
 ## 一句话定位
 
 **"Human on the Loop" 范式转移** —— 减少 Human in the Loop = 释放 AI 产能。**指数级（10x+）效率跃迁** = 时间解放（24h）× 注意力解放（决策审查）的乘法。
@@ -351,7 +351,7 @@ Coding Agent 干活
 - [Rein](../ch04-050-rein-4-模块-5-类型边界防止-agent-go-膨胀到-3000-行) —— 单 agent 架构
 - [Agent Harness 架构](../ch04-207-agent-harness-架构) —— 7 层模型
 - [Microsoft Build 2026](../ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体) —— 全栈 AI
-- [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) —— 工作集视角
+- Agent Harness 上下文管理 —— 工作集视角
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
 

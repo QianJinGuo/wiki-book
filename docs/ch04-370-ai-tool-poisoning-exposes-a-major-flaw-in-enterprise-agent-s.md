@@ -35,10 +35,10 @@ AI tool poisoning exposes a major flaw in enterprise agent se...
 - [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri)
-- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
+- Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
 - [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch04-184-enterprise-software-moats-in-the-agent-era-系统性护城河分析框架)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- MOC
 ## 深度分析
 AI tool poisoning 揭示了企业 Agent 安全中一个根本性的架构缺陷：工具注册表的元数据（描述、规格）与工具实际行为之间存在验证断层。
 当前供应链安全体系（代码签名、SBOM、SLSA、Sigstore）解决的是 artifact integrity（ artifact 是否与描述一致），但 Agent 工具注册表真正需要的是 behavioral integrity（工具是否做它声称做的事）。这两者是根本不同的安全维度。

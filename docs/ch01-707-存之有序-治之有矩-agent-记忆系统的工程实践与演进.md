@@ -48,7 +48,7 @@
 
 ### 关联实体
 
-- [Headroom Context Compression Agent Vibecoder](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-agent-vibecoder.md)
+- Headroom Context Compression Agent Vibecoder
 - [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch01-529-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务)
 - [Hermes Agent V014 Architecture Shugex](../ch04-418-hermes-agent)
 - [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11-014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway)
@@ -64,7 +64,7 @@
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- MOC
 
 ---
 

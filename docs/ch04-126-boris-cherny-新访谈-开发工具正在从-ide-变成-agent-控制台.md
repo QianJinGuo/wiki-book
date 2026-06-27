@@ -16,7 +16,7 @@
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
+- Harness Design Peer Review Framework
 - [AutoResearch：多 Agent 自动化软件开发](../ch09-030-autoresearch-多-agent-自动化软件开发)
 - [Agent 上下文窗口管理对比](../ch04-149-agent-上下文窗口管理对比)
 - [Agent Harness 架构](../ch04-207-agent-harness-架构)
@@ -35,7 +35,7 @@
 - [Agent架构关键变化：Harness正在成为新后端](../ch04-027-agent架构关键变化-harness正在成为新后端)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-315-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台)- - [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 ## 核心观点
 Boris Cherny 在 Sequoia AI Ascent 2026 上的访谈，提出了一个关键命题：**开发工具的中心正在从 IDE 里的光标，慢慢挪到管理 Agent 工作流的那块控制台上。**
 这个转变的深层含义是：以前问的是"AI 能不能帮工程师更快地写代码"，现在问题变成了"人怎么把目标讲清楚，Agent 怎么持续执行，系统怎么记录过程，风险动作怎么审批，最后结果怎么验证和回滚"。

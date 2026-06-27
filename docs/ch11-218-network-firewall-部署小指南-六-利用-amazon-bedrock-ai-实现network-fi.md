@@ -11,7 +11,7 @@
 - [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch11-032-aws-network-firewall-审查-idc-vpc-流量-vgw-架构-bgp-路由传播实验)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- MOC
 ## 深度分析
 
 Network Firewall 部署小指南 (六) 利用 Amazon Bedrock AI 实现Network Firewall规则冲突的实时检测与智能分析 涉及architecture领域的核心技术议题。

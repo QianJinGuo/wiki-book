@@ -16,8 +16,8 @@
 
 ## 相关实体
 
-- [AI in Cybersecurity Training Resources | SANS Institute](https://github.com/QianJinGuo/wiki/blob/main/entities/www-sans-org-ai-in-cybersecurity-training-resources-sans-instit.md)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](https://github.com/QianJinGuo/wiki/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch12-048-ai-in-cybersecurity-training-resources-sans-institute/)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
 
 ## 深度分析
 ### 从「工具」到「员工」：AI 产品叙事的根本转移

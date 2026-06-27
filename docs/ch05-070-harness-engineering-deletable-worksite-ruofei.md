@@ -11,7 +11,7 @@
 - [harness engineering 的未来——什么会消失，什么不会](../ch05-071-harness-engineering-的未来-什么会消失-什么不会)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-deletable-worksite-ruofei.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- MOC
 ## 深度分析
 
 Harness Engineering Deletable Worksite Ruofei 涉及agent领域的核心技术议题。

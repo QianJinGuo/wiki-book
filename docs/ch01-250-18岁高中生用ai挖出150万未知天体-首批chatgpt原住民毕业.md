@@ -149,7 +149,7 @@ ChatGPT Futures名单揭示的机会图谱表明，AI的真正价值在于使此
 ## 相关实体
 - `面壁小模型` — AI降低执行门槛的典型案例
 - `模型效率` — AI时代的能力曲线重塑
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- MOC
 
 ---
 

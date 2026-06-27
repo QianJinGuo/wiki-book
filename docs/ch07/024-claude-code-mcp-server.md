@@ -80,33 +80,33 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-skills-mcp-rules-source-analysis.md)
 
 ## 相关实体
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-20000-char-source-analysis.md)
-- [Claude Code 源码深度解析（13 核心机制）](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-source-deep-dive-warrior.md)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-12-mcp-production-patterns.md)
-- [AgentCore Runtime 部署 Apache Doris MCP Server](https://github.com/QianJinGuo/wiki/blob/main/entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-vibe-coding-to-agentic-engineering-backend.md)
-- [Boris Cherny — 从 IDE 到 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-ide-to-agent-console.md)
-- [读完 Claude Code 源码才发现 Skills/MCP/Rules 的区别远没有你想的那么大](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
-- [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)
-- [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-core-internals.md)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-source-architecture.md)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台-v2.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-发布官方报告承认存在-3-处质量退化问题.md)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
+- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制/)
+- [Claude Code 源码深度解析（13 核心机制）](../ch01-231-claude-code-源码深度解析-13-核心机制/)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch04-032-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式/)
+- [AgentCore Runtime 部署 Apache Doris MCP Server](../ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt/)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
+- [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03-069-boris-cherny-从-ide-到-agent-控制台/)
+- [读完 Claude Code 源码才发现 Skills/MCP/Rules 的区别远没有你想的那么大](../ch07-006-claude-code-skills-mcp-rules-source-analysis/)
+- AI Agent 探索之路：从 Task-Driven 到 Goal-Driven
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-367-claude-code-harness-deep-understanding/)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch07-060-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式/)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群/)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04-084-anthropic-官方技能最佳实践-14-个可复用的-agent-skills-设计模式/)
+- [Claude Code 源码核心机制详解](../ch01-162-claude-code-源码核心机制详解/)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层/)
+- [Agent 上下文窗口管理对比](../ch04-149-agent-上下文窗口管理对比/)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-126-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题/)
 
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
-- [Harness如何支撑Agent在生产环境稳定运行？](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-production-agent-engineering-deficit.md)
+- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch04-127-harness如何支撑agent在生产环境稳定运行/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 
-- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图/)
+- MOC
 
 ---
 

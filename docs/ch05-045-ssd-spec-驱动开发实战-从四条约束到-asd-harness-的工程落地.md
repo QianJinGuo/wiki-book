@@ -95,7 +95,7 @@ ASD（Agent-Spec-Driven Development）是 SSD Harness 的开源实现，专门�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- MOC
 
 ---
 

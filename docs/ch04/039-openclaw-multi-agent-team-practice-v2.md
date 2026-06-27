@@ -294,11 +294,11 @@ subagents: {
 - agent-claude-code — Claude Code 集成
 
 ## 相关实体
-- [Hermes Agent Memory System](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system.md)
-- [Openclaw Agent Loop Design Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-agent-loop-design-patterns.md)
-- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
-- [Openclaw Multi 2](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-2.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 3](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-3.md)
+- Hermes Agent Memory System
+- [Openclaw Agent Loop Design Patterns](../ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式/)
+- [Hiclaw V110 K8S Hermes Worker](../ch11-086-hiclaw-v1-1-0-kubernetes-集群部署与-hermes-worker-运行时/)
+- [Openclaw Multi 2](../ch11-141-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 3](../ch11-186-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 
 ---
 

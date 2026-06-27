@@ -46,12 +46,12 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP、Amazon EKS、Kubernetes
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice/)
 
 ## 相关实体
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-agent-team-practice-v2.md)
-- [OpenClaw 多智能体团队搭建实战经验](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-agent-team-practice.md)
-- [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/multi-agent-architecture-retail-practice.md)
-- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/using-kiro-cli-agent-client-protocol-build-ai-chat.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
-- [Amazon CloudFront部署小指南（二十四）：将CloudFront "多域名"改造为"多租户"架构 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture.md)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04-038-openclaw-multi-agent-team-practice-v2/)
+- OpenClaw 多智能体团队搭建实战经验
+- [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](../ch11-201-multi-agent-架构在零售供应链运营中的实践-贯穿数据-洞察与行动-亚马逊aws官方博客/)
+- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch11-194-使用-kiro-cli-和-agent-client-protocol-构建飞书-ai-聊天机器人-亚马逊aws官方/)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch11-076-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改/)
+- [Amazon CloudFront部署小指南（二十四）：将CloudFront "多域名"改造为"多租户"架构 | 亚马逊AWS官方博客](../ch11-102-amazon-cloudfront部署小指南-二十四-将cloudfront-多域名-改造为-多租户-架构/)
 
 ---
 

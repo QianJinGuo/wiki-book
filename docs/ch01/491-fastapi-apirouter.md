@@ -70,10 +70,10 @@ APIRouter 的工程化收益体现在多个层面：
 3. **微服务迁移路径**：模块化的路由器设计天然支持后续拆分为微服务——只需将独立路由器及其依赖的数据库、缓存等资源迁移为独立服务即可。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
+> 主题导航
 
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](https://github.com/QianJinGuo/wiki/blob/main/entities/精选-10-个开发者常用的-ai-智能体技能agent-skills.md)
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/民生银行基于规格驱动开发sdd的-codeagent-私域研发探索与实践.md)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills/)
+- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch04-177-民生银行基于规格驱动开发-sdd-的-codeagent-私域研发探索与实践/)
 
 ---
 

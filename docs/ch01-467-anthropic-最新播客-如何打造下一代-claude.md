@@ -21,7 +21,7 @@ Anthropic 的 Alex Albert 最近上了一期播客，聊了聊他们内部是怎
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-building-next-claude.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- MOC
 ## 深度分析
 
 **1. 模型即产品的开发范式**

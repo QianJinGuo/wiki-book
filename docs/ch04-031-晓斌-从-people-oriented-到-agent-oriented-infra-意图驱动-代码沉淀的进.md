@@ -270,7 +270,7 @@
 - Scout = 企业级智能体（**应用层**）
 - 晓斌 = "**给 infra 补能力**"（**基础设施层**转向）—— **三件互补：模型 + 应用 + infra**
 
-### vs [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
+### vs Agent Harness 上下文管理
 - 上下文管理 = 工作集视角
 - 晓斌 = 工具输出可预知 + 隔离执行 = 上下文在多 agent 并行时不被串扰
 
@@ -334,7 +334,7 @@
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 
 ---
 

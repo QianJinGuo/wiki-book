@@ -12,16 +12,16 @@
 - AI 钓鱼比传统钓鱼有效性高 24%（Hoxhunt）
 - LLM 可将钓鱼成本降低 95% 以上，同时保持同等成功率（Harvard Business Review）
 ## 相关实体
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Ai Agents Inside Perimeter Hackernews](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
-- [Llm Raiders Private Ai Server](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-raiders-private-ai-server.md)
-- [Bluekit](https://github.com/QianJinGuo/wiki/blob/main/entities/bluekit.md)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](https://github.com/QianJinGuo/wiki/blob/main/entities/schmoozing-is-dead-agents-are-hitting-120-of-humans-and-growth-is-the-only-thing.md)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
+- [Ai Agents Inside Perimeter Hackernews](../ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know/)
+- [Llm Raiders Private Ai Server](../ch01-266-llmjacking-what-these-attacks-are-and-how-to-protect-ai-se/)
+- [Bluekit](../ch12-075-meet-bluekit-the-ai-powered-all-in-one-phishing-kit/)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01-125-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 
-- [Interpol Operation Ramz Mena Cybercrime](https://github.com/QianJinGuo/wiki/blob/main/entities/interpol-operation-ramz-mena-cybercrime.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [Interpol Operation Ramz Mena Cybercrime](../ch12-039-interpol-operation-ramz-mena-cybercrime-networks/)
+- MOC
 ## 深度分析
 ### 攻击规模的几何级增长
 关键数字：4151%——自 ChatGPT 发布后钓鱼攻击增幅。这一数字的意义在于：不是线性增长，而是跨越数量级的跃升。SlashNext 的研究发现揭示 AI 使攻击者能以极低成本大规模复制成功攻击模式。

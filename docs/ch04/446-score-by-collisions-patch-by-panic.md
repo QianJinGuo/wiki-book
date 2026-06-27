@@ -10,15 +10,15 @@
 - 来源：https://blog.himanshuanand.com/2026/05/score-by-collisions-patch-by-panic/
 
 ## 相关实体
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](https://github.com/QianJinGuo/wiki/blob/main/entities/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](https://github.com/QianJinGuo/wiki/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01-630-google-adds-llms-txt-check-to-chrome-lighthouse/)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch12-087-github-breached-employee-device-hack-led-to-exfiltration/)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
+- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- MOC
 ## 深度分析
 
 文章提出的核心论点是漏洞严重性应由"碰撞计数"（collision count）驱动——同一漏洞被多少独立研究员同时发现，是判断该漏洞被攻击者掌握概率的最直接信号。这一框架颠覆了传统 CVD（ Coordinated Vulnerability Disclosure ）模型中将单个报告视为孤立事件的假设，将漏洞生态视为一个信息不对称的竞争市场。Linus Torvalds 在 LKML 上的表态进一步印证了这一趋势：AI 辅助的代码审查工具正在系统性地压缩研究员与攻击者之间的发现时间差。

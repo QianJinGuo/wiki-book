@@ -12,7 +12,7 @@ Data Security Platform
 ## 相关实体
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
+- Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions
 - [Thehackernews Com The New Phishing Click How Oauth](../ch01-465-the-new-phishing-click-how-oauth-consent-bypasses-mfa)
 - [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](../ch01-060-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age)
 

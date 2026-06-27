@@ -75,7 +75,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-software-supply-chain-security-well-architected.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 ## 深度分析
 
 1. **临时凭证是供应链安全的基石**：Shai-Hulud 成功的核心原因是 long-term npm token 和 GitHub token 被窃取后可直接传播恶意代码。OIDC federation 让 CI/CD job 每次获取短期凭证，token 泄漏的窗口期从"永久"缩小到"本次构建"，从根本上限制了攻击者的横向移动能力。

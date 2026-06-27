@@ -18,7 +18,7 @@
 - [Build financial document processing with Pulse AI and Amazon Bedrock](../ch11-130-build-financial-document-processing-with-pulse-ai-and-amazon)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- MOC
 ## 深度分析
 1. **跨服务治理的复杂性来源**：本文展示的架构涉及三个核心服务的深度集成——Databricks Unity Catalog 负责元数据治理与权限控制、Amazon EMR Serverless 承担 Spark 预处理、最后由 SageMaker AI 执行模型微调。三个服务各自有独立的认证体系和数据访问模型，要让它们在统一的安全边界内协作，必须解决 OAuth 凭证的跨服务传递、IAM 角色的精细权限配置，以及数据访问策略的一致性同步问题。任何一处配置偏差都会导致治理链条断裂，这在生产环境中尤其危险。
 2. **数据血缘作为一等公民的设计哲学**：方案从 SEC EDGAR 公开数据源开始，经过 Unity Catalog 托管表的治理、EMR Serverless 的预处理加工，最终到 SageMaker 微调后的模型注册回到 Unity Catalog，全链路血缘被显式追踪。这意味着监管审计不再依赖事后推断，而是可以直接查询"哪个源数据训练了哪个模型"的精确链路，对于金融、医疗等受监管行业是刚性需求而非锦上添花。

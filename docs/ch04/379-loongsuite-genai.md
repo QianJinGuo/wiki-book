@@ -44,22 +44,22 @@ Token 级可观测的第一个落地点是慢 Token 定位。当一个 token 的
 LoongSuite 当前支持 8+ 框架的 Invocation 统一抽象值得参考——它证明了跨框架语义对齐的可行性。但要注意，Invocation 数据类的设计必须足够抽象（只提取共性字段），否则每次框架 API 变化都会导致映射断裂。建议在贡献上游前，先在3个以上不同框架上验证抽象的完备性。
 
 ## 关联实体
-- [Hermes 可观测性](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability.md) — LoongSuite 已支持 Hermes Agent 插桩
+- Hermes 可观测性 — LoongSuite 已支持 Hermes Agent 插桩
 - 遵循 [OpenTelemetry](https://opentelemetry.io/) GenAI SemConv 标准，LoongSuite 是厂商增强扩展
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 可观测是 Harness 的关键维度
+- [Harness Engineering 框架](../ch05-041-harness-engineering-概念框架/) — 可观测是 Harness 的关键维度
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loongsuite-genai-semconv-alibaba.md)
 
 ## 相关实体
-- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md)
-- [Claude Code Agent 工程设计](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-engineering.md)
-- [你不知道的 Agent 原理架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-principle-architecture-engineering-practice.md)
-- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](https://github.com/QianJinGuo/wiki/blob/main/entities/ralph-loop-不够用长时间-agent-还缺这-3-件事.md)
+- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch01-364-harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统/)
+- [Claude Code Agent 工程设计](../ch04-015-claude-code-的-agent-工程/)
+- [你不知道的 Agent 原理架构与工程实践](../ch04-300-agent-principle-architecture-engineering-practice/)
+- Coding Harness 工程本质
+- [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch01-308-ralph-loop-不够用-长时间-agent-还缺这-3-件事/)
 
-- [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
-- [Codeindex · 让大模型更好地理解你的代码](https://github.com/QianJinGuo/wiki/blob/main/entities/codeindex-让大模型更好地理解你的代码.md)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](https://github.com/QianJinGuo/wiki/blob/main/entities/使用-agent-skills-做知识库检索能比传统-rag-效果更好吗.md)
-- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md)
+- [在 RDS PostgreSQL 中实现 RaBitQ 量化](../ch01-288-在-rds-postgresql-中实现-rabitq-量化/)
+- [Codeindex · 让大模型更好地理解你的代码](../ch01-323-codeindex-让大模型更好地理解你的代码/)
+- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04-281-使用-agent-skills-做知识库检索-能比传统-rag-效果更好吗/)
+- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch01-239-claude-code-之父最新访谈-编程已经结束-harness-将消失-claude-code-将只有-100-行代/)
 
 ---
 

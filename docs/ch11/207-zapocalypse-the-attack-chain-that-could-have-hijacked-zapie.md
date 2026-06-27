@@ -75,12 +75,12 @@ def lambda_handler(event, context=None):
 
 ### 关联实体
 
-- [Google Brings Local Ai Agents To Laptops With Gemma 4 12B 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/google-brings-local-ai-agents-to-laptops-with-gemma-4-12b-20260606.md)
-- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](https://github.com/QianJinGuo/wiki/blob/main/entities/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
-- [Ai Friendly Architecture Design Taobao](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-friendly-architecture-design-taobao.md)
-- [Headroom Context Compression Agent Vibecoder](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-agent-vibecoder.md)
-- [5237875](https://github.com/QianJinGuo/wiki/blob/main/entities/5237875.md)
-- [Demis Hassabis Yc Interview Jiedaotixi](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-jiedaotixi.md)
+- [Google Brings Local Ai Agents To Laptops With Gemma 4 12B 20260606](../ch01-701-google-brings-local-ai-agents-to-laptops-with-gemma-4-12b/)
+- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch01-529-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务/)
+- [Ai Friendly Architecture Design Taobao](../ch01-634-面向-llm-的架构设计-什么是真正的-ai-friendly-架构/)
+- Headroom Context Compression Agent Vibecoder
+- [5237875](../ch12-047-ico-对-south-staffordshire-处以-96-3-万英镑罚款-2022-年-cl0p-勒索软件攻击暴露/)
+- [Demis Hassabis Yc Interview Jiedaotixi](../ch04-136-demis-hassabis-yc-interview-agi-时间线-记忆机制-agent-未来/)
 
 ## 实践启示
 

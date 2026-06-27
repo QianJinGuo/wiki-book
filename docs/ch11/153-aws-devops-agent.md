@@ -8,13 +8,13 @@
 
 ## 标签
 #aws #devops-agent #china-region #mcp
-**原文**: [将 Aws Devops Agent 智能运维能力延伸到中国区](https://github.com/QianJinGuo/wiki/blob/main/entities/将-aws-devops-agent-智能运维能力延伸到中国区.md)(raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
+**原文**: [将 Aws Devops Agent 智能运维能力延伸到中国区](../ch11-153-将-aws-devops-agent-智能运维能力延伸到中国区/)(raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [AWS DevOps Agent × MCP Server：混合云网络排障](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
+- [AWS DevOps Agent × MCP Server：混合云网络排障](../ch07-039-aws-devops-agent-mcp-server-打通混合云网络排障的最后一公里/)
 
-- [Design And Practical Application Of Intelligent Agents In E Commerce Industry](https://github.com/QianJinGuo/wiki/blob/main/entities/design-and-practical-application-of-intelligent-agents-in-e-commerce-industry.md)
+- [Design And Practical Application Of Intelligent Agents In E Commerce Industry](../ch11-059-快时尚电商行业智能体设计思路与应用实践-六-借助-amazon-bedrock-agentcore-mcp-server/)
 ## 深度分析
 ### 分区隔离是架构级硬约束，非配置问题
 AWS Commercial 分区（aws）与 AWS 中国分区（aws-cn）之间的隔离体现在 IAM 信任策略层面：你无法在 aws-cn 的 IAM Role 中信任一个 aws 分区的 Principal，尝试建立跨分区的 AssumeRole 会直接返回 `CREATE_FAILED`。这意味着任何依赖 IAM Role 跨分区信任的 Agent 管理机制（如 DevOps Agent 原生的 Secondary Account）在 aws-cn 分区物理不可行。本文将 MCP Server 部署在 Commercial 分区侧，正是绕开了 IAM 信任跨分区的限制，转而通过 API 调用（而非直接 Role 模拟）访问中国区资源。

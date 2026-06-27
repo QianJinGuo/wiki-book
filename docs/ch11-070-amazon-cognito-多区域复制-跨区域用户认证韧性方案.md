@@ -85,7 +85,7 @@ Bedrock 跨区域推理和 Cognito 多区域复制是同一架构模式的不同
 
 ## 相关实体
 - [Aws Software Supply Chain Security Well Architected](../ch01-750-well-architected-best-practices-for-software-supply-chain-se)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/使用-amazon-cognito-多区域复制提高应用程序韧性.md)
 

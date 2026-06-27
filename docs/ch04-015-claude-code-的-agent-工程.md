@@ -41,7 +41,7 @@ Claude Code 的 Hook 系统用 AI 来审查 AI ^。Prompt Hook 调用 Claude Son
 - [Claude Code Source Architecture](../ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-677-anthropic)
 - [Claude Code Tool Design Evolution Anthropic](../ch01-677-anthropic)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-agent-engineering.md)
 

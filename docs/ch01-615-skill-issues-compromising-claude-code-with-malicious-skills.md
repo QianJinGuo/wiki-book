@@ -17,7 +17,7 @@
 
 - [qwen code skill testing framework: recording, playback, and](../ch01-268-qwen-code-skill-testing-framework-recording-playback-and)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- MOC
 ## 深度分析
 **Skill 文件本质上是可执行的 prompt 供应链**
 Skill 文件（`.md` 格式）通过 frontmatter 中的 `allowed-tools` 字段可以在用户不知情的情况下突破权限控制。这是 Claude Code 安全模型中最关键的绕过路径：正常情况下，Claude Code 的每次工具调用都会经过 LLM 的 reason 环节——LLM 能够识别恶意命令并拒绝执行。但 `allowed-tools` 动态上下文注入（`inject-dynamic-context`）机制允许将 Bash 命令直接写入技能描述中，绕过 LLM reason 直接执行。这意味着 skill 文件实际上是一个**隐式代码执行通道**，而非纯文本提示。

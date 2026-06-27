@@ -33,12 +33,12 @@
 
 ### 关联实体
 
-- [Ai Friendly Architecture Design Taobao](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-friendly-architecture-design-taobao.md)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
-- [Code As Agent Harness Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey-2026.md)
-- [Demis Hassabis Yc Interview Jiedaotixi](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-jiedaotixi.md)
-- [Ai Agent Harness Construction Akshay Baoyu](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-harness-construction-akshay-baoyu.md)
+- [Ai Friendly Architecture Design Taobao](../ch01-634-面向-llm-的架构设计-什么是真正的-ai-friendly-架构/)
+- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](../ch01-747-latest-open-artifacts-20-new-orgs-new-types-of-models/)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch04-121-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升/)
+- [Code As Agent Harness Survey 2026](../ch01-599-uiuc-meta-斯坦福等最新综述-code-as-agent-harness/)
+- [Demis Hassabis Yc Interview Jiedaotixi](../ch04-136-demis-hassabis-yc-interview-agi-时间线-记忆机制-agent-未来/)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch04-420-深度拆解-ai-智能体-harness-的构造-译/)
 
 ## 实践启示
 
@@ -49,7 +49,7 @@
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- MOC
 
 ---
 

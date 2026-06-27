@@ -110,7 +110,7 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 - [Agentic Payment X402 Bedrock Agentcore](../ch11-092-让-ai-代理自己付钱-基于-amazon-bedrock-agentcore-与-x402-的-agentic-pay) — 金融场景 agent 应用案例，与 Rocket Close 同属金融行业 AI 落地
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed) — Bedrock 上 agent 的 production 化路径，包含监控 / 审计 / 部署最佳实践
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- MOC
 ## 实践启示
 
 1. **金融 AI 落地标准路径**：从"信息查询"场景切入（减少重复性咨询）→ 验证后扩展到"流程引导"（各州 title exam checklist）→ 最后才是"辅助决策"（风险评估）

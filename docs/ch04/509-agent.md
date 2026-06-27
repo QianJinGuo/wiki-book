@@ -36,12 +36,12 @@
 5. **企业级落地**：网关模式不改原有代码，适合企业统一管控
 
 ## 相关实体
-- [From Agent Protocol To Harness Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/from-agent-protocol-to-harness-skill.md)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](https://github.com/QianJinGuo/wiki/blob/main/entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security V2](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
-- [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
-- [Canvas Breach Disrupts Schools Colleges Nationwide](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [From Agent Protocol To Harness Skill](../ch04-351-from-agent-protocol-to-harness-skill/)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security V2](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
+- [Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议/)
+- [Canvas Breach Disrupts Schools Colleges Nationwide](../ch12-031-canvas-breach-disrupts-schools-colleges-nationwide/)
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ath-agent-trust-handshake-protocol.md)
 

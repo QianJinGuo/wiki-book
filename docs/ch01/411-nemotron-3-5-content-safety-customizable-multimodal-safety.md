@@ -110,13 +110,13 @@ Nemotron 在 Hugging Face + NVIDIA NIM 部署，意味着推理侧有 NIM 的 Te
 
 ## 相关实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md) — NVIDIA Isaac Lab 的机器人 RL 规模化
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md) — NVIDIA Isaac + SageMaker 人形机器人 RL
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — AI Coding 范式跃迁的多模态视角
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md) — 多模态视频 agent 的另一前沿
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md) — Vibe Coding 与 Agentic Engineering 的同源访谈
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md) — Agent 原理架构的综合性参考
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/) — NVIDIA Isaac Lab 的机器人 RL 规模化
+- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid — NVIDIA Isaac + SageMaker 人形机器人 RL
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) — AI Coding 范式跃迁的多模态视角
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/) — 多模态视频 agent 的另一前沿
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程/) — Vibe Coding 与 Agentic Engineering 的同源访谈
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践/) — Agent 原理架构的综合性参考
+- MOC
 
 ---
 

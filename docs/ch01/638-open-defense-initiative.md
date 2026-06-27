@@ -12,15 +12,15 @@ Published Time: Wed, 13 May 2026 15:55:13 GMT
 [Sign in](https://app.depthfirst.com/)[Request demo](https://depthfirst.com/book-a-demo)
 
 ## 相关实体
-- [Opendefenseinitiativedepthfirst](https://github.com/QianJinGuo/wiki/blob/main/entities/opendefenseinitiativedepthfirst.md)
-- [Open Defense Initiative Depthfirst](https://github.com/QianJinGuo/wiki/blob/main/entities/open-defense-initiative-depthfirst.md)
-- [Joyai Echo Long Video Framework Jd](https://github.com/QianJinGuo/wiki/blob/main/entities/joyai-echo-long-video-framework-jd.md)
-- [Openchronicle Memory Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/openchronicle-memory-layer.md)
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](https://github.com/QianJinGuo/wiki/blob/main/entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
+- [Opendefenseinitiativedepthfirst](../ch01-626-open-defense-initiative-depthfirst/)
+- [Open Defense Initiative Depthfirst](../ch01-153-open-defense-initiative-depthfirst/)
+- [Joyai Echo Long Video Framework Jd](../ch04-099-joyai-echo-京东开源长音视频生成框架-5-分钟一致性-7-5x-dmd-加速-director-age/)
+- Openchronicle Memory Layer
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01-015-opensquilla-launches-open-source-ai-agent-to-cut-token-costs/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-defense-initiative.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-misc-topics-frontier.md)
+- MOC
 ## 深度分析
 
 Open Defense Initiative的核心判断是：AI安全攻防的时间窗口正在收窄。Mythos和GPT-5.5 Cyber已经展示了自主发现和利用漏洞的能力，而开源模型正在快速追赶。当这些能力落入恶意行为者手中时，critical开源软件将面临前所未有的攻击压力。这个判断的战略价值在于它把"防御"从被动响应升级为主动赛跑——不是在漏洞出现后修补，而是在能力扩散前加固。

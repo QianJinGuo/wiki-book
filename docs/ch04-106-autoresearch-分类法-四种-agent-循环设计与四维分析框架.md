@@ -98,7 +98,7 @@
 
 **关键设计**：每个 Agent 通过符号链接访问共享记忆，按需读取以避免上下文过载，且 Agent 可以主动整理和重组记忆结构。
 
-这与 [多 Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)的本质区别：**CORAL 没有中央协调器**——所有协调通过共享文件系统隐式完成，更接近"分布式系统"而非"主从架构"。
+这与 多 Agent 编排的本质区别：**CORAL 没有中央协调器**——所有协调通过共享文件系统隐式完成，更接近"分布式系统"而非"主从架构"。
 
 ### 三、四维分析框架的实战价值
 
@@ -152,12 +152,12 @@
 
 - [Yann Dubois Openai Post Training Matt Turck Interview](../ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角)
 - [What Comes Next With Open Models](../ch01-169-what-comes-next-with-open-models)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Multi-Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)
+- [Harness Engineering](../ch05-041-harness-engineering-概念框架/)
+- Multi-Agent Orchestration
 - **Monte Carlo Tree Search**
 - **AutoML**
 - **Atomic Experiment Design**
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 
 ---
 

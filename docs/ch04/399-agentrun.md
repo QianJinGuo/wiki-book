@@ -8,11 +8,11 @@
 阿里云 AgentRun 是一个以高代码为核心的一站式 Agentic AI 基础设施平台。秉持生态开放和灵活组装的理念，为企业级 Agent 应用提供从开发、部署到运维的全生命周期管理。  AgentRun 通过集成表格存储（Tablestore），为智能体提供三种持久化记忆能力：在同一对话中维持上下文的会话历史、跨会话保留用户偏好等结构化信息的长期记忆，以及可直接读写的会话状态。本文介绍如何创建并配置记忆存储，并通过可运行的代码示例演示三种记忆类型的使用方式。
 
 ## 相关实体
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-registry-公测开启为企业打造私有的-skill-管理中心.md)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
-- [阿里云可观测 2026 年 4 月产品动态](https://github.com/QianJinGuo/wiki/blob/main/entities/阿里云可观测-2026-年-4-月产品动态.md)
-- [Agent 从能用到管好中间差了什么](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-从能用到管好中间差了什么.md)
+- Skills Registry 公测开启为企业打造私有的 Skill 管理中心
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04-406-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04-321-从-anthropic-到-google-agent-skills-正在进入-设计模式-阶段/)
+- [阿里云可观测 2026 年 4 月产品动态](../ch04-337-阿里云可观测-2026-年-4-月产品动态/)
+- [Agent 从能用到管好中间差了什么](../ch04-379-agent-从-能用-到-管好-中间差了什么/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/看-agentrun-如何玩转记忆存储最佳实践来了.md)
 

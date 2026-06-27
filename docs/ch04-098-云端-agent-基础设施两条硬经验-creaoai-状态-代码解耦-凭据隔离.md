@@ -63,7 +63,7 @@ CreaoAI 的凭据隔离设计有一个非常硬的安全特性：**即使 prompt
 
 ### 5. IP 白名单 + JWT 双层校验的纵深防御
 
-桥接层用了两层校验：① IP 白名单（仅沙箱宿主内网）做网络层隔离；② 每次运行的短期 JWT 做应用层身份校验。 两层校验的纵深防御价值在于：① 攻击者必须同时突破网络层（拿到内网 IP）和应用层（伪造 JWT 签名）才能成功调用桥接层；② 即使一层被突破，另一层仍能防御；③ 两层在物理层面绑定——IP 白名单把桥接层绑定到特定物理基础设施，外部拿到地址也没用。这条线连到 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 强调的「多层 control plane」设计——Context/Permission/Runtime/Verification/Audit 各层独立、相互验证。
+桥接层用了两层校验：① IP 白名单（仅沙箱宿主内网）做网络层隔离；② 每次运行的短期 JWT 做应用层身份校验。 两层校验的纵深防御价值在于：① 攻击者必须同时突破网络层（拿到内网 IP）和应用层（伪造 JWT 签名）才能成功调用桥接层；② 即使一层被突破，另一层仍能防御；③ 两层在物理层面绑定——IP 白名单把桥接层绑定到特定物理基础设施，外部拿到地址也没用。这条线连到 [Harness Engineering](../ch05-041-harness-engineering-概念框架/) 强调的「多层 control plane」设计——Context/Permission/Runtime/Verification/Audit 各层独立、相互验证。
 
 ### 6. 统一 `executeAgent` 函数是触发面抽象的关键
 
@@ -96,7 +96,7 @@ CreaoAI 给出的可推广设计原则是：「对于云平台上持久化的每
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
 - [构建基于多智能体架构的深度思考交易系统 V2](../ch04-205-构建基于多智能体架构的深度思考交易系统)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- MOC
 
 ---
 

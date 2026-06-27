@@ -16,7 +16,7 @@
 - [万级实时推理的商品领域agent实践思考和总结](../ch04-486-万级实时推理的商品领域agent实践思考和总结)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-an-agentic-incident-triage-assistant-with-amazon-quick-and-new-relic.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 ## 核心要点
 
 - **核心问题**：SRE incident triage 是时间敏感工作，需要快速 collect evidence、assess user impact、create follow-up work——通常在多个工具间切换导致 handoff 延迟和 knowledge loss

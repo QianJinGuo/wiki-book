@@ -87,7 +87,7 @@ Karpathy 引用的那句话是本次访谈最值得反复咀嚼的命题：
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
 - [Ai Coding Agent Quality Defense Five Control Mechanisms Tutu Agi](../ch04-474-构建-ai-编程智能体的质量防线-5-个实用的代码质量控制机制)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- MOC
 
 ---
 

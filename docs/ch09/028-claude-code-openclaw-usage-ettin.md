@@ -174,11 +174,11 @@ scores = model.predict([("query", "document")])
 Ettin Reranker Family 的 **六档参数量 + SoTA 性能 + 长上下文 + Flash Attention 2** 组合，为 Agent 记忆系统的检索升级提供了实用选择。17M 到 1B 的灵活规格让不同场景（在线延迟敏感 vs 离线精度优先）都能找到合适平衡点。
 
 ## 相关实体
-- [Claude Code Openclaw Memory Vector Db Doubt](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-vector-db-doubt.md)
-- [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1aNu.md)
-- [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-system-design-three-way-comparison.md)
-- [Openclaw Agent Loop Design Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-agent-loop-design-patterns.md)
+- Claude Code Openclaw Memory Vector Db Doubt
+- Claude Code Openclaw Memory Comparison
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
+- [Skill System Design Three Way Comparison](../ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
+- [Openclaw Agent Loop Design Patterns](../ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式/)
 
 → [原文存档：Ettin Reranker Family](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ettin-reranker-family.md)
 → [原文存档：Claude Code vs OpenClaw 记忆系统对比](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-openclaw-memory-comparison.md)
@@ -233,7 +233,7 @@ Claude Code 是延迟敏感型场景——每次对话都需要检索，32M 的 
 - `Claude Code vs OpenClaw 记忆系统对比` — 两者检索机制原状
 - `向量数据库必要性反思` — LLM 路由 vs 向量检索哲学讨论
 - `Agent Memory 架构本质` — 记忆系统设计模式
-- [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — OpenClaw 整体架构
+- OpenClaw 架构解析 — OpenClaw 整体架构
 
 ---
 

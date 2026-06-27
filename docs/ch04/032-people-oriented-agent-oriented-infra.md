@@ -240,37 +240,37 @@
 
 ## 与已有 wiki 实体的关系
 
-### vs [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
+### vs [Agent Harness 架构](../ch04-207-agent-harness-架构/)
 - 7 层 harness 模型 = 抽象框架
 - 晓斌 = "**harness = 根据角色、任务、权限范围自动组装的完整工作环境**"——具体落地 + 工具、凭证、workspace、skill 4 维组装
 - 共同点：harness 决定 agent 自主空间
 
-### vs [wow-harness v3](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
+### vs [wow-harness v3](../ch05-028-wow-harness-v3-ai-开发的治理协议/)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - 晓斌 = "harness 平台化"（**运行环境层**变革）——"组装的对象从'应用'变成了'agent 工作环境'"
 - 共同点：都强调"infra / 协议"是 AI Agent 落地的关键
 
-### vs [Kimi Work](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)
+### vs [Kimi Work](../ch01-159-kimi-work-通用-agent-战场从云端迁移到本地/)
 - Kimi Work = Harness 搬到本地桌面
 - 晓斌 = Harness **平台化**（云上"组装对象从应用变成 agent 工作环境"）
 - 共同点：harness 决定一切
 
-### vs [PilotDeck](https://github.com/QianJinGuo/wiki/blob/main/entities/pilotdeck-agent-os-openbmb-tsinghua.md)
+### vs [PilotDeck](../ch04-124-小龙虾彻底凉了-清华团队连夜开源agent神器pilotdeck-token成本狂降70/)
 - PilotDeck = WorkSpace + Always-on + Dream 模式（**多项目隔离**）
 - 晓斌 = harness 包含 workspace、skill、工具、凭证 4 维组装（**多角色多任务**）
 - 共同点：都强调"为 AI 套上家"
 
-### vs [Rein](https://github.com/QianJinGuo/wiki/blob/main/entities/rein-go-agent-4-modules-5-type-boundaries.md)
+### vs [Rein](../ch04-050-rein-4-模块-5-类型边界防止-agent-go-膨胀到-3000-行/)
 - Rein = 4 模块 + 5 类型边界（**代码层**架构）
 - 晓斌 = 4 层 Agent-Oriented Infra 设计（**infra 层**架构）
 - 共同点：都强调"边界 / 接口"是工程化关键
 
-### vs [Microsoft Build 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-build-2026-mai-models-scout-agent.md)
+### vs [Microsoft Build 2026](../ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体/)
 - MAI = "从零训练 + 无蒸馏"（**模型层**独立）
 - Scout = 企业级智能体（**应用层**）
 - 晓斌 = "**给 infra 补能力**"（**基础设施层**转向）—— **三件互补：模型 + 应用 + infra**
 
-### vs [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
+### vs Agent Harness 上下文管理
 - 上下文管理 = 工作集视角
 - 晓斌 = 工具输出可预知 + 隔离执行 = 上下文在多 agent 并行时不被串扰
 
@@ -322,19 +322,19 @@
 5. **验证基础设施的投资优先级应高于生成能力**：生成能力的提升是模型厂商在推动的事；验证能力的提升是 infra 团队该做的事。断言方式从精确匹配（output == expected）演进到约束满足（输出满足类型正确/不违反安全策略/业务逻辑自洽等约束）。验证的可靠性直接决定了 agent 的自主空间。
 
 ## 相关对照
-- [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md) —— 7 层 harness 模型
-- [wow-harness v3](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md) —— 跨 session 事件时间线
-- [Kimi Work](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md) —— 本地桌面 Agent
-- [PilotDeck](https://github.com/QianJinGuo/wiki/blob/main/entities/pilotdeck-agent-os-openbmb-tsinghua.md) —— 多项目隔离
-- [Rein](https://github.com/QianJinGuo/wiki/blob/main/entities/rein-go-agent-4-modules-5-type-boundaries.md) —— 4 模块 + 5 类型边界
-- [Microsoft Build 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-build-2026-mai-models-scout-agent.md) —— 全栈 AI
-- [Claude Code 20000 字符源码分析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-20000-char-source-analysis.md) —— 98.4% 基础设施
+- [Agent Harness 架构](../ch04-207-agent-harness-架构/) —— 7 层 harness 模型
+- [wow-harness v3](../ch05-028-wow-harness-v3-ai-开发的治理协议/) —— 跨 session 事件时间线
+- [Kimi Work](../ch01-159-kimi-work-通用-agent-战场从云端迁移到本地/) —— 本地桌面 Agent
+- [PilotDeck](../ch04-124-小龙虾彻底凉了-清华团队连夜开源agent神器pilotdeck-token成本狂降70/) —— 多项目隔离
+- [Rein](../ch04-050-rein-4-模块-5-类型边界防止-agent-go-膨胀到-3000-行/) —— 4 模块 + 5 类型边界
+- [Microsoft Build 2026](../ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体/) —— 全栈 AI
+- [Claude Code 20000 字符源码分析](../ch09-056-两万字详解claude-code源码核心机制/) —— 98.4% 基础设施
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-oriented-infra-intent-driven-code-sedimentation.md)
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- MOC
 
 ---
 

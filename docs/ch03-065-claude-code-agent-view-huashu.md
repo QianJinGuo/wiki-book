@@ -105,7 +105,7 @@ Agent View 的单 vendor 定位为第三方工具留下了差异化空间。跨 
 
 ## ## 相关实体
 - [Hermes+Kimi K2.6 多Agent军团实战教程](../ch04-418-hermes-agent)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 
 ---
 

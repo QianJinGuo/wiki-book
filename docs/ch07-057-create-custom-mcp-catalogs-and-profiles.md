@@ -32,7 +32,7 @@ Profiles 的设计目标不仅是"分组"，更是**上下文隔离**。当 Agen
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- MOC
 
 ---
 

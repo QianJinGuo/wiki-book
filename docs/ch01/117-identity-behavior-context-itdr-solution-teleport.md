@@ -12,9 +12,9 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/identity-behavior-context-itdr-solution-teleport.md)
 
 ## 相关实体
-- [Identity Behavior & Context: ITDR Solution](https://github.com/QianJinGuo/wiki/blob/main/entities/identity-behavior-context-itdr-solution.md)
+- Identity Behavior & Context: ITDR Solution
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-memory-architecture.md)
+- [MOC](../ch04-146-agent-memory-架构本质/)
 ## 深度分析
 **传统 ITDR 的核心痛点是"碎片化日志 + 人工关联"**：安全团队在调查安全事件时，需要从 Okta、AWS CloudTrail、GitHub、Kubernetes 等多个系统手动提取和关联日志。这种跨系统的日志关联工作平均耗时数小时，而 Teleport 的核心价值主张是将这个过程压缩到分钟级别——通过统一身份链（从 IdP → Cloud → Code → Infrastructure）和 AI 生成会话摘要，让调查人员直接读"发生了什么"而非自己去解码原始日志。
 **AI Agent 和 MCP Session 是新型审计盲区**：文章指出了当前安全领域的一个新趋势——AI Agent 和 MCP 工具调用产生的会话在大多数传统安全工具中是"不可见的"，没有结构化的审计记录。Teleport 将 AI Agent 的 prompts、queries、tool calls、data accessed 全部纳入审计范围，这是随着 AI Agent 普及而产生的新安全需求。50+ 的检测规则中有相当一部分专门针对 AI 会话行为（如异常的 tool 调用模式、AI 生成的敏感数据访问）。

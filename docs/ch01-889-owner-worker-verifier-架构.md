@@ -54,13 +54,13 @@ Owner 不是简单地分配任务和等待结果，而是负责：  ^[raw/minima
 - [Minimax Agent Team Mavis](../ch04-137-一个-ai-还是不够的-minimax-agent-team-mavis)
 
 ## 相关实体
-- [Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation](https://github.com/QianJinGuo/wiki/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
+- Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
 - [Claude Code 架构解析](../ch01-571-claude-code-架构解析)
 - [Agent 时代架构师技能指南](../ch04-346-agent-时代-我们架构师应该学什么)
 
 - [基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统)
-- [routa 多智能体协同交付平台](https://github.com/QianJinGuo/wiki/blob/main/entities/routa-multi-agent-coordination-platform.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- routa 多智能体协同交付平台
+- MOC
 
 ---
 

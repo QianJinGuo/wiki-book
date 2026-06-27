@@ -22,9 +22,9 @@
 ## 相关概念
 ## 相关实体
 
-- [How Superset built the IDE for AI agents on Vercel](https://github.com/QianJinGuo/wiki/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
+- [How Superset built the IDE for AI agents on Vercel](../ch01-058-how-superset-built-the-ide-for-ai-agents-on-vercel/)
 
-- [Why I'm leaving GitHub for Forgejo](https://github.com/QianJinGuo/wiki/blob/main/entities/why-im-leaving-github-for-forgejo.md)
+- [Why I'm leaving GitHub for Forgejo](../ch01-011-why-i-m-leaving-github-for-forgejo/)
 
 ---
 

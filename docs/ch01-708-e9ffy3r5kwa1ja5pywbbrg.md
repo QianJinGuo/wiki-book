@@ -74,7 +74,7 @@ DeepSeek上线识图模式并开始灰测，网页版和App均可体验，标志
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- MOC
 
 ---
 

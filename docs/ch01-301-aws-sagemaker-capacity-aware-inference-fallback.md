@@ -86,7 +86,7 @@ Instance Pools改变了这一点：冷启动时会自动按优先级尝试可用
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda)
 - [9个Agent技能模块化SageMaker微调生命周期](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning)
 - [redis agentic ai flowers with iris](../ch01-891-redis-agentic-ai-flowers-with-iris)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- MOC
 
 ---
 

@@ -7,7 +7,7 @@
 ## 关联
 - [Natural Language Autoencoders](../ch01-896-natural-language-autoencoders-anthropic-激活-文字可解释性方法) — NLA 在 SAE 基础上增加文字输出能力
 - [Anthropic](../ch07-044-anthropic-mcp-重新定义-tool-search-代码编排) — 主要研究机构
-- [Mechanistic Interpretability](https://github.com/QianJinGuo/wiki/blob/main/concepts/mechanistic-interpretability.md) — 所属研究领域
+- Mechanistic Interpretability — 所属研究领域
 
 ## 深度分析
 **SAE 是可解释性研究的"特征发现"工具**   ^[raw/anthropic-nla-natural-language-autoencoders-interpretability]
@@ -38,7 +38,7 @@ SAE 在 2023-2024 年成为 Mechanistic Interpretability 领域最活跃的子�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+- MOC
 
 ---
 

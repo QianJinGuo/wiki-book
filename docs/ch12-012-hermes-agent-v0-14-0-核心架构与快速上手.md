@@ -345,7 +345,7 @@ You optimize for truth, clarity, and usefulness over politeness theater.
 ## 相关主题
 - [Hermes Agent Tool System Architecture](../ch04-418-hermes-agent) — Hermes Agent 工具系统架构专篇（术哥，2026-05-23）— 工具注册/执行/生命周期管理
 - [Hermes Agent Goal And Kanban](../ch04-418-hermes-agent) — Hermes Agent goal 与 Kanban 集成
-- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Hermes Agent 自进化机制
+- [Hermes Agent](../ch04-418-hermes-agent/) — Hermes Agent 自进化机制
 
 ---
 

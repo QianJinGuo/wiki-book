@@ -61,17 +61,17 @@ Claude for Small Business 的发布及其配套的非营利合作，揭示了 AI
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-claude-for-small-business.md)
 
 ## 相关实体
-- [Introducing Claude for Small Business](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-for-small-business.md)
-- [Anthropic puts Claude agents on a meter across its subscriptions](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-agents-meter-infoworld.md)
-- [Xero Announces Integration with Anthropic's Claude](https://github.com/QianJinGuo/wiki/blob/main/entities/xero-announces-integration-with-anthropics-claude.md)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-next-gen-alex-infoq.md)
-- [Anthropic Claude Managed Agents 平台正式发布](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
-- [Claude Managed Agents 官方 Harness 平台指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-guide.md)
-- [Anthropic Computer Use 最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-computer-use-best-practices.md)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
-- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-long-running-agent-adversarial-architecture.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
+- [Introducing Claude for Small Business](../ch01-029-introducing-claude-for-small-business/)
+- [Anthropic puts Claude agents on a meter across its subscriptions](../ch01-586-anthropic-puts-claude-agents-on-a-meter-across-its-subscript/)
+- [Xero Announces Integration with Anthropic's Claude](../ch01-439-xero-announces-integration-with-anthropic-s-claude/)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](../ch01-908-anthropic-首次揭秘下一代-claude-怎么造/)
+- [Anthropic Claude Managed Agents 平台正式发布](../ch01-181-anthropic-claude-managed-agents-平台正式发布/)
+- [Claude Managed Agents 官方 Harness 平台指南](../ch01-445-claude-managed-agents-官方-harness-平台指南/)
+- [Anthropic Computer Use 最佳实践](../ch01-658-anthropic-发布-computer-use-最佳实践/)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
+- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](../ch01-603-anthropic最危险路线图曝光-无限记忆-多智能体-硅谷ai终局仅剩双雄决顶/)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch04-252-anthropic-长时运行-agent-架构-对抗式设计-合同谈判-审美量化/)
+- MOC
 
 ---
 

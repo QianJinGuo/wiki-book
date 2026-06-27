@@ -61,7 +61,7 @@ Advertising cookies may be set through our site by us or our advertising partner
 
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro)
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- MOC
 
 ---
 

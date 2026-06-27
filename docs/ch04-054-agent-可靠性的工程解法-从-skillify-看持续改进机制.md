@@ -102,12 +102,12 @@ OpenAI 的"garbage collection"思路值得借鉴：后台定期运行清理 Agen
 - [Hermes Agent vs OpenClaw 对比分析](../ch04-418-hermes-agent)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](../ch04-257-autoclaw-使用体验-自带-66-个-skill-可接入聊天工具-安全性高)
 - [Harness Engineering 实战：AI Coding 率从 25% 提升至 90%](../ch05-031-harness-engineering-实战-ai-coding-率从-25-提升至-90)
-- [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
+- AI 领域专家学习路径
 - [OpenCLAW 完全指南](../ch04-199-openclaw-完全指南)
 - [Agent 上下文窗口管理对比](../ch04-149-agent-上下文窗口管理对比)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch04-338-你的-ai-agent-真的在受控运行吗)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群)
-- [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
+- Harness Engineering 七层框架
 
 ## 深度分析
 ### 自举循环的本质：智能制造约束，约束反过来限制智能

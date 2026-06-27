@@ -12,14 +12,14 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cline-releases-open-source-agent-runtime-sdk.md)
 
 ## 相关实体
-- [Cline releases open-source agent runtime SDK](https://github.com/QianJinGuo/wiki/blob/main/entities/cline-open-source-agent-runtime-sdk.md)
-- [腾讯混元Hy3-preview发布](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-hunyuan-hy3-preview-open-source-agent.md)
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-open-source-model-enterprise-practice.md)
-- [Codex /goal：长任务Agent的目标运行时](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-goal-agent-runtime.md)
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/product-ad-review-agent-with-strands-sdk-bedrock.md)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](https://github.com/QianJinGuo/wiki/blob/main/entities/cli-mcp-sdk-agent-tool-selection.md)
+- [Cline releases open-source agent runtime SDK](../ch01-299-cline-releases-open-source-agent-runtime-sdk/)
+- [腾讯混元Hy3-preview发布](../ch01-094-腾讯混元hy3-preview发布/)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客/)
+- [Codex /goal：长任务Agent的目标运行时](../ch04-094-codex-goal-长任务agent的目标运行时/)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](../ch11-078-基于-strands-agents-sdk-和-amazon-bedrock-agentcore-的商品广告图审查-ag/)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch07-053-cli系列④-选型cli-mcp还是api/)
 
-- [淘宝动效解决方案分享](https://github.com/QianJinGuo/wiki/blob/main/entities/淘宝动效解决方案分享.md)
+- [淘宝动效解决方案分享](../ch04-250-淘宝动效解决方案分享/)
 
 ## 深度分析
 **Cline SDK的分层架构**代表了对早期agent系统技术债的系统性清理。原文指出，团队没有继续在"与IDE宿主紧耦合的架构上叠加新功能"，而是选择重建核心agent循环为独立、可移植的SDK 。这一决策的代价是VS Code和JetBrains扩展需要迁移到新架构，但从长期看这是一次正确的技术解耦。

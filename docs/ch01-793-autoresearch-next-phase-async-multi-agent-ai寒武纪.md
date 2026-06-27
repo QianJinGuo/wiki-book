@@ -45,7 +45,7 @@ Autoresearch Next Phase Async Multi Agent Ai寒武纪 涉及agent领域的核心
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
 - [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验)
 
 ## 实践启示
@@ -56,7 +56,7 @@ Autoresearch Next Phase Async Multi Agent Ai寒武纪 涉及agent领域的核心
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 
 ---
 

@@ -15,7 +15,7 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 ## 与现有知识库内容的关联
 - [Claude Managed Agents](../ch01-445-claude-managed-agents-官方-harness-平台指南) — 托管 Harness 平台
 - [Agent/Skills/Teams 架构演进与选型](../ch04-219-agent-skills-teams-架构演进过程及技术选型之道) — Anthropic Skills 认知一致性机制
-- [Skill 形式化理论](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) — Skill 的六元组定义与 DAG 步骤计划
+- Skill 形式化理论 — Skill 的六元组定义与 DAG 步骤计划
 
 ## 原始存档
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-agent-skills-design-patterns-14.md)
@@ -39,7 +39,7 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - [Hermes Agent](../ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队)
 - [你写的 Skill，及格了吗？](../ch07-046-你写的-skill-及格了吗)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch01-291-mythos-for-offensive-security-xbow-s-evaluation)
-- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+- Hermes Agent Skill
 - [Anthropic Claude Managed Agents 平台正式发布](../ch01-677-anthropic)
 - [9个Agent技能模块化SageMaker微调生命周期](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning)
 - [SkillX — 层次化技能知识库](../ch07-042-skillx-层次化技能知识库)
@@ -53,8 +53,8 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
+- MOC
+- MOC
 ## 深度分析
 ### 14个模式的设计哲学
 Anthropic的14个Agent Skills设计模式并非孤立技巧，而是一套关于「如何让Claude正确理解技能边界」的工程方法论。其核心假设是：**Claude在技能选择和执行上存在系统性偏差**，需要通过显式的元数据、上下文经济和指令校准来纠偏。

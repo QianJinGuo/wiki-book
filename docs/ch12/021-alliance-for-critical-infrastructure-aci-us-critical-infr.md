@@ -64,21 +64,21 @@ ACI 接下来 18 个月的工作包括：建立工作组、定义试点项目、
 
 ## 相关实体
 
-- [Ai Agents Security Survey Attack Defense](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-security-survey-attack-defense.md)
-- [Anthropic Llm Attck Navigator Cyber Operations](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-llm-attck-navigator-cyber-operations.md)
-- [Agent Security Three Step Sequence Harness Governance Identity Crewai](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-security-three-step-sequence-harness-governance-identity-crewai.md)
-- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
-- [Aws Software Supply Chain Security Well Architected Best Practices](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-software-supply-chain-security-well-architected-best-practices.md)
-- [Cilium Tetragon Kubernetes Runtime Security Ebpf](https://github.com/QianJinGuo/wiki/blob/main/entities/cilium-tetragon-kubernetes-runtime-security-ebpf.md)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security.md)
-- [Ai Traffic Cyberthreat Benchmark 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-traffic-cyberthreat-benchmark-2026.md)
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](https://github.com/QianJinGuo/wiki/blob/main/entities/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md)
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog.md)
-- [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
-- [5237875](https://github.com/QianJinGuo/wiki/blob/main/entities/5237875.md)
-- [820297](https://github.com/QianJinGuo/wiki/blob/main/entities/820297.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [Ai Agents Security Survey Attack Defense](../ch07-005-ai-agents-security-survey-attack-and-defense/)
+- [Anthropic Llm Attck Navigator Cyber Operations](../ch01-254-anthropic-llm-att-ck-navigator-ai-enabled-cyber-operations/)
+- [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做/)
+- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11-079-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno/)
+- [Aws Software Supply Chain Security Well Architected Best Practices](../ch11-131-aws-软件供应链安全-well-architected-最佳实践/)
+- [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch11-180-cilium-tetragon-kubernetes-runtime-security-with-ebpf/)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04-370-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
+- [Ai Traffic Cyberthreat Benchmark 2026](../ch01-287-the-2026-state-of-ai-traffic-cyberthreat-benchmark-report/)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01-035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode/)
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级/)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01-097-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi/)
+- [5238213](../ch01-829-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/)
+- [5237875](../ch12-047-ico-对-south-staffordshire-处以-96-3-万英镑罚款-2022-年-cl0p-勒索软件攻击暴露/)
+- [820297](../ch09-075-engineering-roles-shift-from-developing-code-to-managing-ai/)
+- MOC
 
 ---
 

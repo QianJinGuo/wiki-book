@@ -136,7 +136,7 @@ Factory 押注模型会持续 speciate（分化），而不是收敛到单一 su
 - [OpenClaw 多智能体团队搭建实战经验](../ch04-038-openclaw-multi-agent-team-practice-v2)
 - [你不知道的 Agent 原理架构与工程实践](../ch04-300-agent-principle-architecture-engineering-practice)
 - [Agent Harness 架构](../ch04-207-agent-harness-架构)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- MOC
 
 ---
 

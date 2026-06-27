@@ -14,11 +14,11 @@
 - [reducing container cold start times using soci index on dlam](../ch01-823-reducing-container-cold-start-times-using-soci-index-on-dlam)
 - [state of routing in model serving](../ch01-838-state-of-routing-in-model-serving)
 - [the distillation panic](../ch01-486-the-distillation-panic)
-- [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki/blob/main/entities/untitled-v2.md)
+- sft, rl, and on-policy distillation through a distributional
 - [直播预约 | 数据引擎：具身智能的下一个决胜局](../ch01-676-直播预约-数据引擎-具身智能的下一个决胜局)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- MOC
 ## 深度分析
 
 Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others 涉及agent领域的核心技术议题。
@@ -43,7 +43,7 @@ This Artifacts Log post is unusual in how many diverse, quirky models there are 
 ### 关联实体
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)

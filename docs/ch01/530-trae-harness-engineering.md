@@ -11,15 +11,15 @@ AI 智能体是一匹潜力近乎无限的「野马」，Harness Engineering 是
 AI 智能体 = SOTA 模型（野马）+ Harness（控制系统）= 卓越执行者
 
 ## 相关实体
-- [Harness Engineering Systematic Explainer](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-explainer.md)
-- [Harness Engineering 第三代工程范式](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-第三代工程范式.md)
-- [Harness Engineering Reliable Long Term Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-reliable-long-term-agent.md)
-- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](https://github.com/QianJinGuo/wiki/blob/main/entities/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)
-- [Harness Engineering Long Term Agent Tasks](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-long-term-agent-tasks.md)
+- [Harness Engineering Systematic Explainer](../ch05-036-harness-engineering-systematic-explainer/)
+- [Harness Engineering 第三代工程范式](../ch01-602-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
+- [Harness Engineering Reliable Long Term Agent](../ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
+- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](../ch04-251-复旦-ahe-让-harness-自进化的-agentic-harness-engineering/)
+- [Harness Engineering Long Term Agent Tasks](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bytedance-trae-harness-engineering-guide.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- MOC
 ## 深度分析
 
 **Harness Engineering 的范式意义：** 这份指南揭示了 LLM 应用开发从「调优」向「架构」的根本转变。传统软件工程关注代码本身的逻辑正确性，而 Harness Engineering 将视野扩展到模型运行的整体环境——上下文管理、函数路由、反馈机制等基础设施层。

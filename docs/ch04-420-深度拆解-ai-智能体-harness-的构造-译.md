@@ -17,7 +17,7 @@
 - [building is just the beginning: introducing discoverability](../ch12-076-building-is-just-the-beginning-introducing-discoverability)
 - [nemotron 3.5 content safety: customizable multimodal safety](../ch01-272-multimodal)
 - [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](../ch01-801-neurips-2026-使用闭源-ai-检测器-pangram-批量-desk-reject-论文事件)
-- [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-team-knowledge-engine-compiled-knowledge.md)
+- qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件
 - [scaling camera file processing at netflix](../ch11-018-scaling-camera-file-processing-at-netflix)
 - [state of routing in model serving](../ch01-838-state-of-routing-in-model-serving)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](../ch01-692-大模型可控新突破-steering-机制-评估体系与开源落地)
@@ -25,7 +25,7 @@
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](../ch01-730-吴恩达2026新课上线-3小时包教包会-零代码小白也能成为ai超级玩家)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- MOC
 ## 深度分析
 
 深度拆解：AI 智能体 Harness 的构造【译】 涉及agent领域的核心技术议题。

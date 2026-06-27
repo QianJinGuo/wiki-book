@@ -19,14 +19,14 @@ xAI 解散但 Grok 还活着。2026年5月6日马斯克官宣 xAI 解散并入 S
 - 马斯克需要 Grok 作为 X 平台 AI 能力的核心，也是与 OpenAI/Anthropic 博弈的筹码
 ## 相关实体
 - [Xai Grok Musk Training New Model Wechat](../ch04-182-xai-grok-musk-training-new-model-wechat)
-- [Xai Dissolved Grok Colossus2 Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/xai-dissolved-grok-colossus2-analysis.md)
+- Xai Dissolved Grok Colossus2 Analysis
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch01-009-快手首个打工人agent)
 - [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](../ch01-168-chatgpt-官宣-26-位未来之星-他们是-穿墙少年-街头摊贩-盲童的朋友)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xai-shutdown-grok-still-alive.md)
 
-- [perceptron mk1 shocks with highly performant video analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/perceptron-mk1-video-analysis-ai.md)
+- [perceptron mk1 shocks with highly performant video analysis](../ch17-multimodal/)
 
 ## 深度分析
 **xAI 解散的本质是资本效率的必然结果**。从财务数据看，xAI 2025年月烧10亿美元，前9个月消耗现金80亿美元，Q3单季净亏损14.6亿美元，全年预计亏损约130亿美元。即便融资200亿美元估值2300亿美元，这种烧钱速度也难以为继。并入 SpaceX 后，整个集团总估值1.25万亿美元，融资能力上一个量级——这是典型的"大船抗风浪"逻辑。

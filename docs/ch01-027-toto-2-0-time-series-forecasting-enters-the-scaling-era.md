@@ -13,7 +13,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/toto-2.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
+> 主题导航
 
 - [时间序列预测数据增强方法](../ch01-569-时间序列预测数据增强方法)
 - [CEOs of the classroom: Why principals are the key to the AI era](../ch01-117-ceos-of-the-classroom-why-principals-are-the-key-to-the-ai)

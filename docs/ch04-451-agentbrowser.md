@@ -52,7 +52,7 @@ AgentBrowser 的核心价值在于将传统浏览器自动化框架改造为 Age
 
 ## 相关实体
 - [GBrain](../ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
+- MOC
 
 ---
 

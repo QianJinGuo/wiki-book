@@ -10,7 +10,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/exaforceagenticsocplatformandmdr.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> 主题导航
 
 - [Exaforce | Agentic SOC Platform and MDR](../ch04-018-exaforce-agentic-soc-platform-and-mdr)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm)

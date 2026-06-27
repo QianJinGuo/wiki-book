@@ -149,15 +149,15 @@ DeepSeek 想要"定义工作负载"，一个关键信号是硬件厂商和云厂
 这个清单的价值在于：它能够帮助团队识别出当前部署中尚未被充分利用的优化空间，也能够为未来的技术选型提供依据。
 
 ## 相关实体
-- [Deepseek Code Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-code-harness.md)
-- [Openclacky Harness Prompt Cache](https://github.com/QianJinGuo/wiki/blob/main/entities/openclacky-harness-prompt-cache.md)
-- [Deepseek V4 Ds4C Antirez Local Inference Qbitai](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-ds4c-antirez-local-inference-qbitai.md)
-- [Deepseek Moe Parallel Strategy](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-moe-parallel-strategy.md)
-- [Deepseek V4 Triton Fp4 Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-triton-fp4-optimization.md)
+- [Deepseek Code Harness](../ch09-068-deepseek-code-harness/)
+- [Openclacky Harness Prompt Cache](../ch05-039-openclacky-prompt-cache-命中率-90-的-harness-工程实践/)
+- [Deepseek V4 Ds4C Antirez Local Inference Qbitai](../ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai/)
+- [Deepseek Moe Parallel Strategy](../ch01-673-deepseek-moe-并行策略与gpu通信优化/)
+- [Deepseek V4 Triton Fp4 Optimization](../ch01-377-deepseek-v4-triton-fp4-优化实战/)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-cost-migration-system-layer-kv-cache-harness.md)
 
-- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](https://github.com/QianJinGuo/wiki/blob/main/entities/forgetrain-ai-written-training-framework-bidian-infoq.md)
+- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](../ch05-061-全球首个完全ai编写的训练框架-面壁forgetrain速度反超英伟达megatron-年底要把国产算力软件重写一遍/)
 
 ## 相关链接
 

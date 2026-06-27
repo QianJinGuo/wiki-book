@@ -11,7 +11,7 @@
 
 ## TL;DR
 
-mem0 团队系统横评了 9 个主流 [agent harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的 memory 机制（Claude Code、Anthropic Managed Agents、OpenAI Codex、GitHub Copilot、OpenClaw、`Hermes Agent`、AWS Bedrock AgentCore、Windsurf、Devin），得出三个结论：（1）memory 已经是 harness 的核心能力；（2）大多数实现停留在"本地、有限、关键词式、难共享"阶段；（3）这些限制本质上是 **harness boundary 的限制**，因此 mem0 把自己定位为 cross-harness 的基础设施层。
+mem0 团队系统横评了 9 个主流 [agent harness](../ch05-041-harness-engineering-概念框架/) 的 memory 机制（Claude Code、Anthropic Managed Agents、OpenAI Codex、GitHub Copilot、OpenClaw、`Hermes Agent`、AWS Bedrock AgentCore、Windsurf、Devin），得出三个结论：（1）memory 已经是 harness 的核心能力；（2）大多数实现停留在"本地、有限、关键词式、难共享"阶段；（3）这些限制本质上是 **harness boundary 的限制**，因此 mem0 把自己定位为 cross-harness 的基础设施层。
 
 ## Memory 三层分类法
 

@@ -13,7 +13,7 @@
 - [不用再学ai了！生成结果包稳的agent来了](../ch04-170-不用再学ai了-生成结果包稳的agent来了)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/local-vs-cloud-agent-onsite-context-debate-xingxiaozhao.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- MOC
 ## 深度分析
 
 本地 vs 云端 Agent 的现场之争：当下选本地，终局云端（行小招） 涉及agent领域的核心技术议题。

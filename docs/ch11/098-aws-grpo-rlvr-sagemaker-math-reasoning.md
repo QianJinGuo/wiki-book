@@ -133,12 +133,12 @@ env["NCCL_IB_DISABLE"] = "1"  # 禁用IB，使用EFA
 实例类型ml.g6.48xlarge（基于NVIDIA GPU）配合EFA网络，可有效支持亿参数模型的分布式RLVR训练。
 
 ## 相关实体
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [Aws Sagemaker Capacity Aware Inference Fallback](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-capacity-aware-inference-fallback.md)
-- [Stochastic Parrot Thought Experiment](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-thought-experiment.md)
-- [Stochastic Parrot Thought Experiment](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-thought-experiment.md)
-- [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
+- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01-301-aws-sagemaker-capacity-aware-inference-fallback/)
+- [Stochastic Parrot Thought Experiment](../ch01-650-stochastic-parrot-thought-experiment/)
+- [Stochastic Parrot Thought Experiment](../ch01-650-stochastic-parrot-thought-experiment/)
+- Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn
+- MOC
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-grpo-rlvr-sagemaker-math-reasoning.md)
 

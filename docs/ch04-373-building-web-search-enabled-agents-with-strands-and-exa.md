@@ -34,7 +34,7 @@ See [source article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/
 - [Agentic Scheduler with Strands AgentCore for Multi-Region GPU Inference](../ch04-167-基于strands和agentcore-实现agentic-scheduler-在多region自动编排推理gpu算力)
 - [Product Ad Review Agent with Strands SDK and Bedrock](../ch11-078-基于-strands-agents-sdk-和-amazon-bedrock-agentcore-的商品广告图审查-ag)
 - [基于 Strands SDK 的企业级智能数据查询解决方案实践](../ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客)
-- [AI Agent Memory Systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
+- AI Agent Memory Systems
 
 ---
 
