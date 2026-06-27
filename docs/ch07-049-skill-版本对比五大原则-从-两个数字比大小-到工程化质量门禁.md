@@ -102,7 +102,7 @@ YAML 结构化模板（关键字段）：
 ## 相关实体
 
 - [Skill 版本管理五大原则](/ch07-040-skill-版本管理五大原则-从越改越差到持续演进/) — 同作者同系列，版本管理侧
-- Agent Skill 写作评估
+- [Agent Skill 写作评估](/ch04-498-skillclaw-nacos-从一次-agent-会话到可治理-skill-registry-的自动演化闭环/)
 - [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - [Claw-SWE-Bench](/ch09-049-claw-swe-bench-首个独立测量harness对编程agent影响的基准/) — harness 独立评测基准
 - [Agent Eval WalleZhang](/ch04-141-agenteval-yaml驱动的agent评测框架/) — YAML 驱动评估框架

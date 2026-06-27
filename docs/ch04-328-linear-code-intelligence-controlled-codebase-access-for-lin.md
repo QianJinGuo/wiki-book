@@ -92,7 +92,7 @@ Code Intelligence 的访问权限直接继承 GitHub 权限模型——"Limited 
 ## 相关实体
 
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — Agent 工程化的更高层抽象
-- `Pydantic Ai Progressive Agent Skills Automatorrunner` — Agent 框架的另一视角
+- [`Pydantic Ai Progressive Agent Skills Automatorrunner` — Agent 框架的另一视角](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-05-14-code-intelligence-1778979927.md)
 - [code intelligence – changelog](/ch04-399-code-intelligence-changelog/)
 - [stack overflow for agents — ephemeral intelligence gap 框架与 a](/ch04-248-stack-overflow-for-agents-ephemeral-intelligence-gap-框架与-a/)

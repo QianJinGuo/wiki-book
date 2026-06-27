@@ -133,11 +133,11 @@ Lambda MicroVMs 的定价更接近 Fargate 而非 Lambda，这传递了一个重
 
 ## 相关实体
 
-- Agent Security — Lambda MicroVMs 解决的核心安全问题
+- [Agent Security — Lambda MicroVMs 解决的核心安全问题](/ch04-265-使用-aws-security-agent-构建应用安全闭环-从代码提交到漏洞修复的自动化之路/)
 - Firecracker — Lambda MicroVMs 的底层虚拟化技术
 - Serverless — Lambda MicroVMs 扩展了 serverless 的边界
 - E2B — 应用层 sandbox 方案，Lambda MicroVMs 的替代选择
-- Agent Runtime — agent 运行环境的整体概念
+- [Agent Runtime — agent 运行环境的整体概念](/ch04-060-fable-5-的信号-agent-开始拼-runtime-架构师若飞的-runtime-contract-工程化拆/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/theburningmonk-com-2026-06-what-you-need-to-know-about-lambda-microvms.md)
 

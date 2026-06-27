@@ -160,8 +160,8 @@ RAG 里的迭代 ≠ Agent 里的 ReAct 循环：
 - [Agent 记忆系统的工程实践](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
 - [Karpathy: 从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
 - [AgentOps: Amazon Bedrock 上的 Agent 运维](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
-- 谷歌研究博客: https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/
-- Gemini Enterprise: https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/rag-engine/cross-corpus-retrieval
+- [谷歌研究博客: https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/](/ch04-079-protocol-h-hierarchical-agentic-rag-enterprise/)
+- [Gemini Enterprise: https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/rag-engine/cross-corpus-retrieval](/ch01-883-google出手统一全模态检索-gemini-embedding-2把文本-图片-音频和视频压进同一向量空间/)
 - MOC
 
 ---

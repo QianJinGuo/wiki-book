@@ -11,7 +11,7 @@
 - [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](/ch01-280-anthropic-官方-agent-harness-平台-claude-managed-agents-完整指南/)
 - [Agent架构关键变化Harness正在成为新后端](/ch04-289-agent架构关键变化-harness正在成为新后端/)
 - [Harness Engineering Reliable Long Term Agent](/ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)
 

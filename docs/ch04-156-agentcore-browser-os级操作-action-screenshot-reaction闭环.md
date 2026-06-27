@@ -104,7 +104,7 @@ r = invoke(endpoint, sid, {"mouseClick": {"x": 410, "y": 535, "button": "LEFT"}}
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](/ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu/)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](/ch04-204-航班变更信息智能识别解决方案/)
-- Amazon Nova Multimodal Embeddings 制造业智能应用
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](/ch01-285-multimodal/)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](/ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
 - [AgentCore Managed Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](/ch11-144-zenjoy-基于-amazon-bedrock-和-eks-构建-aiops-agent-打通-prometheus/)

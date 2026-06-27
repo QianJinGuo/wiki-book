@@ -15,7 +15,7 @@ AgentRun 是以高代码为核心、生态开放、灵活组装的一站式 Agen
 - [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](/ch04-304-深势科技携手阿里云-agentrun-加速科研-ai-agent-全速运行/)
 - [Minimal Cli Agent 250 Line Python Ollama 7 Stages](/ch04-075-ai-agent-的内核是-250-行-while-循环-用-python-ollama-从零搭建-cli-agen/)
 - [Aliyun Agentrun 5Min Quickstart](/ch04-006-5-分钟上手-agentrun-从注册到第一个-agent-运行/)
-- Skills Registry 公测开启为企业打造私有的 Skill 管理中心
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](/ch04-498-skillclaw-nacos-从一次-agent-会话到可治理-skill-registry-的自动演化闭环/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentrun-cli-v010-正式开源一行命令运行您的托管-agent.md)
 

@@ -84,7 +84,7 @@
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)
 - [Hermes Agent](/ch04-418-hermes-agent/)
 - [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)
-- Hermes Agent Skill
+- [Hermes Agent Skill](/ch04-418-hermes-agent/)
 - [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
 - [SkillX — 层次化技能知识库](/ch07-042-skillx-层次化技能知识库/)

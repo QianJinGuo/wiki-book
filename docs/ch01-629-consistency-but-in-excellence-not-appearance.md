@@ -64,7 +64,7 @@ Nielsen 的观察触及了当代 design systems 运动的核心悖论。Design s
 ## 相关实体
 
 - [Penpot: Claude Design 不是企业设计的未来](/ch01-449-designing-with-ai-why-claude-design-is-not-the-future-of-en/) — AI 设计工具的局限性
-- 文档组织: 为人类和 AI — 系统化结构 vs 知识发现
+- [文档组织: 为人类和 AI — 系统化结构 vs 知识发现](/ch04-272-bitter-lesson-vs-garbage-can-组织理论视角下的-ai-采用/)
 - Design Systems — 设计系统的理论与实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/consistency-excellence-jim-nielsen.md)

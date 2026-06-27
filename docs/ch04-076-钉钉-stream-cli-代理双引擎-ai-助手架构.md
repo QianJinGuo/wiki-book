@@ -265,7 +265,7 @@ Stream 模式的多实例冲突问题（消息重复处理）是典型的"开发
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dingtalk-qoder-claudecode-dual-engine-ai-assistant.md)
 
-- Claude Code Best Practices Prompt Engineering
+- [Claude Code Best Practices Prompt Engineering](/ch09-054-claude-code-prompt/)
 - MOC
 
 ---

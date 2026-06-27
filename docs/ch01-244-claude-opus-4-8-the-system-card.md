@@ -155,13 +155,13 @@ Unverbalized grader awareness 出现在 5% 的情况下，0.5% 上升到 exploit
 
 ## 相关实体
 
-- **Anthropic Mythos** — Opus 4.8 比较的基线，能力高于 4.7 但被限制释放
-- **Responsible Scaling Policy (RSP)** — Anthropic 的对齐治理框架，4.8 没有触发新风险报告
-- **Agentic Honesty** — Opus 4.8 显著改进的领域（5x 不实报告减少）
-- **Prompt Injection** — Opus 4.8 在防御上有回退（计算机使用场景）
-- **Claude Opus 4.7** — 6 周前发布的上一版本，某些防御场景下更优
-- **Model Welfare** — Anthropic 评估 Opus 4.8 的模型福利情况为良好
-- **Claude Constitution** — Opus 4.8 在遵守 Claude Constitution 上达新高峰
+- [**Anthropic Mythos** — Opus 4.8 比较的基线，能力高于 4.7 但被限制释放](/ch01-692-anthropic/)
+- [**Responsible Scaling Policy (RSP)** — Anthropic 的对齐治理框架，4.8 没有触发新风险报告](/ch01-692-anthropic/)
+- [**Agentic Honesty** — Opus 4.8 显著改进的领域（5x 不实报告减少）](/ch01-257-claude-opus-4-8-the-system-card/)
+- [**Prompt Injection** — Opus 4.8 在防御上有回退（计算机使用场景）](/ch01-257-claude-opus-4-8-the-system-card/)
+- [**Claude Opus 4.7** — 6 周前发布的上一版本，某些防御场景下更优](/ch01-765-mnilax-claude-md-规则从-karpathy-的-4-条增加到-12-条-claude-错误率从-41/)
+- [**Model Welfare** — Anthropic 评估 Opus 4.8 的模型福利情况为良好](/ch01-692-anthropic/)
+- [**Claude Constitution** — Opus 4.8 在遵守 Claude Constitution 上达新高峰](/ch01-765-mnilax-claude-md-规则从-karpathy-的-4-条增加到-12-条-claude-错误率从-41/)
 - [claude opus 4.8: the system card](/ch01-581-claude-opus-4-8-the-system-card/)
 - MOC
 

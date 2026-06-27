@@ -17,7 +17,7 @@
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](/ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人/)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](/ch03-069-boris-cherny-从-ide-到-agent-控制台/)
-- Claude Code 工具设计演化
+- [Claude Code 工具设计演化](/ch03-002-obsidian-claude-code-集成指南/)
 - [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
 - [claude-code-agent-view](/ch09-001-claude-code-agent-view/)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-367-claude-code-harness-deep-understanding/)

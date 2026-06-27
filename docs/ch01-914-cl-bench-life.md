@@ -14,7 +14,7 @@
 ## 相关实体
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 - [Microsoft Agent Framework Python Full Guide Zizhi](/ch01-585-微软-agent-framework-全栈指南-从-hello-agent-到生产托管-python/)
-- Hermes Agent Deep Dive Alibaba
+- [Hermes Agent Deep Dive Alibaba](/ch04-418-hermes-agent/)
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](/ch11-118-aws-bedrock-agentcore-quality-optimization-flywheel/)
 - [Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)
 

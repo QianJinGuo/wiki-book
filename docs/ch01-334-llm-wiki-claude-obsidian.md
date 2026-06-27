@@ -172,7 +172,7 @@ LLM Wiki 在企业级知识库场景面临结构性限制，不能简单替代 R
 
 ## 相关实体
 - Llm Wiki Architecture
-- Karpathy Claude Md Rules
+- [Karpathy Claude Md Rules](/ch01-765-mnilax-claude-md-规则从-karpathy-的-4-条增加到-12-条-claude-错误率从-41/)
 - [Obsidian Llm Wiki Local Kytmanov](/ch03-090-obsidian-llm-wiki-local-obsidian本地ai知识图谱自动构建/)
 - [Claude Md 12 Rules Mnilax](/ch09-036-claude-md-规则从-karpathy-的-4-条增加到-12-条/)
 - [Karpathy Vibe Coding Agentic Engineering V3](/ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)

@@ -156,7 +156,7 @@
 ## 相关实体
 
 - `Acker Agent Evolution Three Routes Convergence` — 报告提及的相关实体
-- Agent Runtime — AI 任务执行系统，公司新形态的技术底座
+- [Agent Runtime — AI 任务执行系统，公司新形态的技术底座](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 - Algorithmic Jurisdiction — 人机权责体系，公司治理的未来形态
 - Machine Market — 机器间资源协作网络，组织内部 AI 资源的配置市场
 - Intelligent Capital Vessel — 可扩展的 AI 资产体系，AI 业务的资本化载体

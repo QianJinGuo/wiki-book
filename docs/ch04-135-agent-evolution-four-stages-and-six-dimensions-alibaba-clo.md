@@ -106,7 +106,7 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 
 - [Claude Code 深度解析](/ch01-558-claude-code-harness-深度分析/) — 自主 Agent 阶段（阶段三）代表
 - [OpenClaw 完整指南](/ch01-642-openclaw-完全指南-这可能是全网最新最全的系统化教程了-3-2w字-建议收藏/) — 自主 Agent 阶段（阶段三）代表
-- Claude Code Dynamic Workflows — 阶段三到阶段四过渡的 Dynamic Workflow 范式
+- [Claude Code Dynamic Workflows — 阶段三到阶段四过渡的 Dynamic Workflow 范式](/ch03-002-obsidian-claude-code-集成指南/)
 - [从氛围编程到智能体工程](/ch04-070-从氛围编程到智能体工程/) — Agentic Engineering 范式演进
 - [Agent 记忆系统实践](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/) — Memory 模块工程化
 - [Hermes Agent Operator](/ch04-067-hermes-agent-operator-上手-把一个-agent-养成可运营系统/) — 自进化 Agent（阶段四）代表

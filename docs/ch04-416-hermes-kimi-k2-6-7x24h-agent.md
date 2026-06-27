@@ -9,10 +9,10 @@
 > 作者苍何（521篇原创）分享了用 Hermes Agent + Kimi K2.6 搭建 7×24h 不间断运行的 AI 研发军团的完整教程。从飞书下达需求到最终交付，市场调研、PRD、架构设计、开发、测试全部由不同 Agent 自主完成。
 
 ## 相关实体
-- Hermes Agent K2 6 Tutorial
+- [Hermes Agent K2 6 Tutorial](/ch04-418-hermes-agent/)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-365-hermes-agent-goal-长任务运行时架构拆解-状态持久化-judge-闭环与自主续航/)
 - [Small Hermes Self Evolving Agent Architecture](/ch04-109-small-hermes-自我进化-agent-架构/)
-- Kimi K2 Tidb Agent Database Huangdongxu 20260513
+- [Kimi K2 Tidb Agent Database Huangdongxu 20260513](/ch11-077-tidb-cloud-agent-native-数据库与-kimi-k2-6-合作/)
 - [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](/ch04-382-深度拆解-hermes-agent-记忆系统-它修正了-openclaw-的哪层误区/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-k2-6-multi-agent.md)

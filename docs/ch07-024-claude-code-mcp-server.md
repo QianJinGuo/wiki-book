@@ -88,7 +88,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](/ch03-069-boris-cherny-从-ide-到-agent-控制台/)
 - [读完 Claude Code 源码才发现 Skills/MCP/Rules 的区别远没有你想的那么大](/ch07-006-claude-code-skills-mcp-rules-source-analysis/)
-- AI Agent 探索之路：从 Task-Driven 到 Goal-Driven
+- [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-367-claude-code-harness-deep-understanding/)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](/ch01-677-anthropic/)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](/ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群/)

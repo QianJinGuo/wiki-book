@@ -175,7 +175,7 @@ AGENTS.md 只有 ~100 行充当"目录页"，指向仓库里的详细文档（AR
 
 ## 相关实体
 
-- 反向审计 prompt 范式 — 从 vb 50 行 codex 自我蒸馏到 5 行核心
+- [反向审计 prompt 范式 — 从 vb 50 行 codex 自我蒸馏到 5 行核心](/ch01-508-gpt-5-4-codex-评测-interconnects-的-agent-使用体验/)
 → [第 1 来源 ConardLi Harness 综合性指南原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-comprehensive-guide-conardli.md)
 → [第 2 来源 ConardLi Beautiful Article Skill 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/conardli-harness-practice-beautiful-article-reacticle-2026-06-18.md)
 

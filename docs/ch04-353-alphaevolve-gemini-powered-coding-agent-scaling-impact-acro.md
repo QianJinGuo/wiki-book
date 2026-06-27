@@ -14,7 +14,7 @@
 
 ## 相关实体
 - [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
-- Agentmemory Source Analysis Coding Agent Local Memory
+- [Agentmemory Source Analysis Coding Agent Local Memory](/ch04-039-hermes-agent-self-evolving-source-analysis/)
 - [Alphaevolve Impact Deepmind](/ch04-372-alphaevolve-impact-deepmind/)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](/ch04-071-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - [Ai Coding Agent Memory System](/ch04-288-ai-coding-agent-记忆系统/)

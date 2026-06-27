@@ -75,7 +75,7 @@ Cursor 的快速/默认双版本策略提供了一个商业参考：当你的模
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](/ch09-016-ai-编程智能体的质量防线-5-个代码质量控制机制-反馈传感器-语义评估-重构边界-来源追溯-智能体攻击/)
 - [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](/ch05-035-cursor-复盘-harness-模型决定能力上限-harness-决定生产下限/)
 - [Understand Anything Code Knowledge Graph Lum Jike](/ch09-061-老代码克星-36k-star的-ai-神器-跑一条命令就把项目结构整明白了/)
-- Cloud Agent Development Environments
+- [Cloud Agent Development Environments](/ch04-345-cloud-agent-development-environments-cursor-agent/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor.com-composer-2-5.md)
 

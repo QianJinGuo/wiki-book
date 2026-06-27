@@ -18,16 +18,16 @@
 - **评估套件设计**：论文的 toy eval suite 思路值得借鉴——不必追求大而全的 benchmark，而是构建覆盖核心能力维度的精简集，在训练过程中高频追踪，及时发现泛化动态的异常
 
 ## 相关实体
-- `Evals Three Methods Of Ai Evaluation` — 包含三种 AI 评估方法的对比，本文的 toy eval suite 属于"小型专项评估"类别
-- `Anthropic Demystifying Evals For Ai Agents` — Anthropic 的评估实践，与预训练评估有技术重叠
-- `Generalization Dynamics Of Lm Pre Training Jiaxin Wen` — 同一论文的另一个版本
+- [`Evals Three Methods Of Ai Evaluation` — 包含三种 AI 评估方法的对比，本文的 toy eval suite 属于"小型专项评估"类别](/ch12-043-u-of-t-ai-worm-cleverhans-lab-展示可自适应的-ai-蠕虫威胁/)
+- [`Anthropic Demystifying Evals For Ai Agents` — Anthropic 的评估实践，与预训练评估有技术重叠](/ch01-692-anthropic/)
+- [`Generalization Dynamics Of Lm Pre Training Jiaxin Wen` — 同一论文的另一个版本](/ch01-784-generalization-dynamics-of-lm-pre-training-jiaxin-wen/)
 
 - [fusedash -  generative analytics platform | ai dashboard sof](/ch01-289-fusedash-generative-analytics-platform-ai-dashboard-sof/)
 
 ## 相关实体
-- Generalization Dynamics Of Lm Pre Training Jiaxin Wen
-- Generalization Dynamics Pre Training Jiaxin Wen
-- Generalization Dynamics Lm Pretraining
+- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](/ch01-784-generalization-dynamics-of-lm-pre-training-jiaxin-wen/)
+- [Generalization Dynamics Pre Training Jiaxin Wen](/ch01-784-generalization-dynamics-of-lm-pre-training-jiaxin-wen/)
+- [Generalization Dynamics Lm Pretraining](/ch01-784-generalization-dynamics-of-lm-pre-training-jiaxin-wen/)
 - Multilingual Ai
 - [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
 - MOC

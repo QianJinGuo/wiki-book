@@ -81,7 +81,7 @@ hermes doctor   # 检查环境
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
 
-- `Self-Evolving Agent`
+- [`Self-Evolving Agent`](/ch04-028-高德-ai-native-生产线-第-3-期-7x24-self-healing-pipeline-agent-自/)
 
 ---
 

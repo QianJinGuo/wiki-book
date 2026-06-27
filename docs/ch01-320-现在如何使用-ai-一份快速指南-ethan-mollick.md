@@ -121,8 +121,8 @@ Ethan 给出的核心警示：
 - [Gpt 54 Is A Big Step For Codex](/ch01-388-gpt-5-4-是-codex-的一次大跨越-四维评估视角与-agent-战争回归/)
 - [Yann Dubois Openai Post Training Matt Turck Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
 - **Prompt Engineering**
-- **Deep Research**
-- **Multi-Modal Agent**
+- [**Deep Research**](/ch01-525-mollick-实用-ai-选型指南-模型选择-deep-research-voice-mode-agent-工作流/)
+- [**Multi-Modal Agent**](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
 - **Agent 评估方法**
 - **LLM 幻觉**
 
