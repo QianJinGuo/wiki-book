@@ -20,7 +20,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md)
 
-- Cios Rise To The Global Challenge
+- [Cios Rise To The Global Challenge](/ch01-133-ceos-of-the-classroom-why-principals-are-the-key-to-the-ai/)
 - [Dumb Ways For An Open Source Project To Die](/ch01-106-dumb-ways-for-an-open-source-project-to-die/)
 - [Is This Why Science Advances One Funeral At](/ch01-146-is-this-why-science-advances-one-funeral-at-a-time/)
 - [Tokens Per Result](/ch01-075-intelligence-per-dollar/)

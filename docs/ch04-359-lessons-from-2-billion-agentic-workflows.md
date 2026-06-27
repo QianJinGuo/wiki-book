@@ -76,10 +76,10 @@ CrewAI 处理 20 亿次工作流的数据量足以过滤掉小样本偏差。三
 - [Agentcore Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/) — AgentCore 工程化实践
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/) — AgentOps 可观测性实践
 - [Production Agent Engineering — 生产级 Agent 工程](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- Agent Deployment Strategy — Agent 部署策略
+- [Agent Deployment Strategy — Agent 部署策略](/ch04-023-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent/)
 - [Agent Framework Comparison — Agent 框架对比](/ch07-063-microsoft-agent-framework-tools-总览-4-类工具-provider-矩阵-too/)
 - [Multi Agent Orchestration — 多 Agent 编排](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
-- Ai Safety Governance — AI 安全治理
+- [Ai Safety Governance — AI 安全治理](/ch01-649-claude-fable-5-and-new-ai-safety-fables/)
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Harness 工程框架
 
 ---

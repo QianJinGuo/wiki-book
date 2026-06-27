@@ -74,8 +74,8 @@ CrewAI 强调的"crawl, walk, run"迭代哲学与 Karpathy 提出的 vibe coding
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/)
-- Agentic Engineering Paradigm
-- Harness Loop Architecture
+- [Agentic Engineering Paradigm](/ch04-316-nvidia-agentic-ai-subsurface-engineering/)
+- [Harness Loop Architecture](/ch01-824-agent-ralph-loop-harness/)
 
 ---
 

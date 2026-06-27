@@ -112,7 +112,7 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 - [Hermes Agent Operator](/ch04-418-hermes-agent/) — 自进化 Agent（阶段四）代表
 - [Agent YAML 评测](/ch01-746-从手动到自动化-用agenteval构建agent评测体系/) — 自进化机制中的评估反馈环
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — 阶段二到阶段四贯穿的核心工程化思想
-- Context Engineering — Prompt 解耦与渐进式加载的方法论
+- [Context Engineering — Prompt 解耦与渐进式加载的方法论](/ch04-229-yidian-tianxia-context-engineering-agentic-ai/)
 - [gene/gep — evomap×清华 提出的「策略基因」经验对象框架（arxiv 2604.15097）](/ch09-011-gene-gep-evomap-清华-提出的-策略基因-经验对象框架-arxiv-2604-15097/)
 
 ---

@@ -132,7 +132,7 @@ Claude Tag 的特性对 Agent 基础设施提出了新的要求：
 
 - [Claude Cowork Task Boundary — Claude 协作边界分析](/ch01-200-anthropic-claude-cowork-知识工作-agent-任务边界-5-筛选信号-6-阶段工作流/)
 - [Claude Code Agent View](/ch09-001-claude-code-agent-view/) — Claude Code 的 Agent 架构
-- Context Engineering — 上下文工程的理论与实践
+- [Context Engineering — 上下文工程的理论与实践](/ch04-229-yidian-tianxia-context-engineering-agentic-ai/)
 - [Agent Harness Context Management — Agent 上下文管理](/ch05-038-agent生产级harness工程指南/)
 
 ## 参考

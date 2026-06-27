@@ -178,10 +178,10 @@ Q3: 长记忆对话还是一次性任务？
 
 ## 关联阅读
 
-- `Agent Harness Context Management Working Set` — Harness 上下文管理 Working Set 模式，与本文交付方式决策呼应
-- `Harness Engineering Framework` — Harness 工程框架，提供了 triplet 之外的工程化视角
-- `Protocol H Hierarchical Agentic Rag Enterprise` — Agentic RAG 企业级协议，与检索器选型直接相关
-- `Better Harness Eval Trace Methodology` — Harness 评估方法论，呼应本文的多变量联合优化主张
+- [`Agent Harness Context Management Working Set` — Harness 上下文管理 Working Set 模式，与本文交付方式决策呼应](/ch04-036-hermes-agent-eval-harness-skill-7-taskset-harnessadapt/)
+- [`Harness Engineering Framework` — Harness 工程框架，提供了 triplet 之外的工程化视角](/ch05-036-harness-engineering-systematic-explainer/)
+- [`Protocol H Hierarchical Agentic Rag Enterprise` — Agentic RAG 企业级协议，与检索器选型直接相关](/ch04-080-protocol-h-hierarchical-agentic-rag-enterprise/)
+- [`Better Harness Eval Trace Methodology` — Harness 评估方法论，呼应本文的多变量联合优化主张](/ch04-036-hermes-agent-eval-harness-skill-7-taskset-harnessadapt/)
 
 ---
 

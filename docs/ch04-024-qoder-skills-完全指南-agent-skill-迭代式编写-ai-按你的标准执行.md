@@ -382,9 +382,9 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 
 - [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
 - [Skillx Zhejiang University](/ch04-415-skillx-automatically-constructing-skill-knowledge-bases-for/)
-- Wiki Audit Skill
+- [Wiki Audit Skill](/ch07-037-wiki-evolver-skill-system-design-gpt-5-5-copilot-session/)
 - [Gemini Deep Guide Prompt](/ch01-378-gemini-深度导读生成器-prompt-让-ai-重写而非摘要/)
-- Promptqueue Opengorilla Project Analysis Ljguo
+- [Promptqueue Opengorilla Project Analysis Ljguo](/ch01-194-promptqueue-opengorilla-ai-native/)
 - qoder 团队知识引擎
 
 - MOC

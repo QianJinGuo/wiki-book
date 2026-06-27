@@ -269,7 +269,7 @@ Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧�
 
 - [farewell ai2](/ch01-843-farewell-ai2/)
 - 无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍
-- sft, rl, and on-policy distillation through a distributional
+- [sft, rl, and on-policy distillation through a distributional](/ch01-569-anthropic-puts-claude-agents-on-a-meter-across-its-subscript/)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
 
 - MOC

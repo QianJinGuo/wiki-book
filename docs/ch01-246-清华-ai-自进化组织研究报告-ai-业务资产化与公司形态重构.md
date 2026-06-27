@@ -155,17 +155,17 @@
 
 ## 相关实体
 
-- `Acker Agent Evolution Three Routes Convergence` — 报告提及的相关实体
+- [`Acker Agent Evolution Three Routes Convergence` — 报告提及的相关实体](/ch04-135-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/)
 - [Agent Runtime — AI 任务执行系统，公司新形态的技术底座](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
 - Algorithmic Jurisdiction — 人机权责体系，公司治理的未来形态
-- Machine Market — 机器间资源协作网络，组织内部 AI 资源的配置市场
-- Intelligent Capital Vessel — 可扩展的 AI 资产体系，AI 业务的资本化载体
-- Decision Half-Life（DHL）— 决策半衰期，管理层战略敏捷性的新量尺
+- [Machine Market — 机器间资源协作网络，组织内部 AI 资源的配置市场](/ch12-041-securing-ai-agents-and-machine-identities/)
+- [Intelligent Capital Vessel — 可扩展的 AI 资产体系，AI 业务的资本化载体](/ch04-008-from-idea-to-ai-app-creating-intelligent-research-assistant/)
+- [Decision Half-Life（DHL）— 决策半衰期，管理层战略敏捷性的新量尺](/ch01-712-model-half-life/)
 - Intent Compiler（ICR）— 意图编译器，将战略转化为可执行指令的能力
 - Rebuttal Asset Density（RAD）— 纠错资产密度，否定能力比生成能力更稀缺
 - Memory Solvency Ratio（MSR）— 记忆偿付比率，偿付真相的能力
 - Machine Trust Score（MTS）— 机器信任分数，品牌即履约概率
-- Cognitive Debt Maturity（CDM）— 认知债务期限错配，短债长投的 AI 版风险
+- [Cognitive Debt Maturity（CDM）— 认知债务期限错配，短债长投的 AI 版风险](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
 
 ---
 

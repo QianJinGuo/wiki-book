@@ -201,7 +201,7 @@ Harness Engineering 的核心信号：**AI 落地的核心挑战，正在从"让
 ## 相关实体
 
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — 本文是该概念的权威中文系统阐述
-- Context Engineering — 第二层重心迁移
+- [Context Engineering — 第二层重心迁移](/ch04-229-yidian-tianxia-context-engineering-agentic-ai/)
 - Prompt Engineering — 第一层重心迁移
 - [Claude Code 深度解析](/ch01-558-claude-code-harness-深度分析/) — Anthropic Harness 的具体实现
 - [Claude Code Dynamic Workflows — Harness 第三层执行编排的 Dynamic Workflow 实现](/ch03-002-obsidian-claude-code-集成指南/)

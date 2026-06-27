@@ -2050,7 +2050,7 @@ Agentic browsing 正是这种用户代理权的最新表达——它让用户无
 ## 相关实体
 
 - [ATH Agent Trust Handshake Protocol](/ch04-500-为了让agent更安全的工作-有多少人操碎了心/) — Agent 身份与信任握手协议
-- Prompt Injection — Prompt injection 攻击原理与防御
+- [Prompt Injection — Prompt injection 攻击原理与防御](/ch01-511-prompt-injection-as-role-confusion/)
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — Agent harness 工程框架
 - [Agentic Overlays: REST to A2A](/ch04-503-agentic-overlays-retrofit-legacy-rest-services-into-a2a-a/) — 企业 agentic 架构转型
 
@@ -2200,7 +2200,7 @@ PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机
 - [Pgpkc04Xff7Ilmdb9Vocnq](/ch10-rag/)
 - [Identity Behavior Context Itdr Solution](/ch01-117-identity-behavior-context-itdr-solution-teleport/)
 - [Oz Multi Harness Cloud Agent Orchestration](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
-- Senators Query Credit Bureaus On Bnpl 1
+- [Senators Query Credit Bureaus On Bnpl 1](/ch01-671-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra/)
 - [看 Agentrun 如何玩转记忆存储最佳实践来了](/ch04-394-看-agentrun-如何玩转记忆存储-最佳实践来了/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-cloud-storage-config-guide-wechat.md)

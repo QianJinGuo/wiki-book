@@ -64,10 +64,10 @@ ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive 
 - [Agent 上下文管理架构模式](/ch04-460-智能体编排层中的上下文管理架构/) — 模式分类
 - [GSD Context Management Tool](/ch01-184-gsd-get-shit-done-context-management-tool/) — 工具实践
 - Headroom 上下文压缩 + 缓存稳定化 — 压缩算法
-- Codex Context Engineering
+- [Codex Context Engineering](/ch04-229-yidian-tianxia-context-engineering-agentic-ai/)
 - [Claude Code Context Engineering (Anthropic Thariq)](/ch01-677-anthropic/)
 - [Claude Fable 5 提示词泄漏 — 同样指出 "系统 = 模型 + 上下文管理"](/ch01-306-anthropic-claude-fable-5-on-aws-mythos/)
-- LLM Post-Training 全景指南 — 可学习性维度对照
+- [LLM Post-Training 全景指南 — 可学习性维度对照](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/)
 
 ---
 

@@ -118,9 +118,9 @@ SOUL.md 作为人格层，解决的不是"Agent 说什么"的问题，而是"Age
 
 ## 相关实体
 - [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
-- Openclaw Prompt Context Harness
+- [Openclaw Prompt Context Harness](/ch04-239-agent-harness-a3-subagent-7-prompt/)
 - [Fudan Peking Ahe Agentic Harness Engineering](/ch04-220-fudan-peking-ahe-agentic-harness-engineering/)
-- Loongsuite Genai Semconv Alibaba
+- [Loongsuite Genai Semconv Alibaba](/ch04-379-loongsuite-genai/)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](/ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-9-module-architecture-winty.md)

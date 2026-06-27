@@ -132,10 +132,10 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 4. **警惕「超距作用」**：添加新 Skill 容易破坏原有 Skill 表现，即便没碰过旧代码  
 
 ## 关联阅读
-- 原始文章：https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity
+- [原始文章：https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity](/ch01-533-n-day-research-with-ai-using-ollama-and-n8n-nikhil-x27-s/)
 - [Perplexity Internal Skill Design Guide Xiaojianke](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/perplexity-internal-skill-design-guide-xiaojianke.md) — 原始文章存档
-- `Agent Skill Writing Guide` — 低配版 Skill 写作指南（质量较低，仅供参考）
-- `Agent Skill Writing Evaluation` — Skill 评测相关
+- [`Agent Skill Writing Guide` — 低配版 Skill 写作指南（质量较低，仅供参考）](/ch04-036-hermes-agent-eval-harness-skill-7-taskset-harnessadapt/)
+- [`Agent Skill Writing Evaluation` — Skill 评测相关](/ch04-036-hermes-agent-eval-harness-skill-7-taskset-harnessadapt/)
 
 ## 相关实体
 - [LBS-IntentBench — 首个真实出行隐式意图评测基准](/ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准/)

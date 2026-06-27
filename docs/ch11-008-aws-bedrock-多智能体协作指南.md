@@ -931,7 +931,7 @@ events.put_targets(
 *本文档基于 AWS Bedrock 官方文档和行业最佳实践编写，适用于生产环境部署参考。*
 
 ## 相关实体
-- Multi Agent Collaboration 2025 Top 10 Challenges
+- [Multi Agent Collaboration 2025 Top 10 Challenges](/ch04-451-anthropic-multi-agent-research-system/)
 - [aws bedrock dynamic document extraction pipeline](/ch11-029-aws-bedrock-dynamic-document-extraction-pipeline/)
 - MOC
 

@@ -170,7 +170,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 - [Hermes Agent 三级 Memory 架构解析（One掌柜视角）](/ch04-418-hermes-agent/)
 
 - [AI Agent 记忆系统架构](/ch04-145-how-ai-agent-memory-works/)
-- Agent Memory System Design
+- [Agent Memory System Design](/ch04-451-anthropic-multi-agent-research-system/)
 - [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
 
 ---

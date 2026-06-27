@@ -11,7 +11,7 @@
 - [claude skill 质检工具 skill craft](/ch07-043-skill-craft-claude-skill-质量工程工具/)
 - [code intelligence – changelog](/ch04-399-code-intelligence-changelog/)
 - [opd revisiting failure modes simple fixes storm](/ch01-760-opd-revisiting-failure-modes-simple-fixes-storm/)
-- what i’ve been building: atom report, post-training course,
+- [what i’ve been building: atom report, post-training course,](/ch01-292-we-ve-been-here-before-decompilers-fuzzers-and-now-ai/)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
 
 ## 深度分析

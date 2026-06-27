@@ -64,7 +64,7 @@ Every layer in the stack now has to price the same way the customer thinks : per
 ## 相关实体
 - [How We Made Window Join Parallel And Vectorized](/ch01-034-how-we-made-window-join-parallel-and-vectorized/)
 - [Products Are Out Brains Are In](/ch01-113-products-are-out-brains-are-in/)
-- Investing In Stitch
+- [Investing In Stitch](/ch01-122-nearly-every-enterprise-is-investing-in-ai-but-only-5-say/)
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](/ch01-099-gemini-3-5-flash-more-expensive-but-google-plan-to-use-it/)
 - [Offline Llm Energy Use Html](/ch01-081-apple-silicon-costs-more-than-openrouter/)
 

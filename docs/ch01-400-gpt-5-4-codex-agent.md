@@ -89,7 +89,7 @@ Nathan 报告了一个跨模型的共同问题：
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/)
 - **Agent 评估方法**
 - **Reasoning Efficiency**
-- Multi-Agent Orchestration
+- [Multi-Agent Orchestration](/ch04-451-anthropic-multi-agent-research-system/)
 - MOC
 
 ---

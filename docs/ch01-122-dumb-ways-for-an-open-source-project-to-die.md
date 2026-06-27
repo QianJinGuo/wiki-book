@@ -26,7 +26,7 @@
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](/ch01-015-opensquilla-launches-open-source-ai-agent-to-cut-token-costs/)
 - [How We Made Window Join Parallel And Vectorized](/ch01-034-how-we-made-window-join-parallel-and-vectorized/)
 - [Products Are Out Brains Are In](/ch01-113-products-are-out-brains-are-in/)
-- Investing In Stitch
+- [Investing In Stitch](/ch01-122-nearly-every-enterprise-is-investing-in-ai-but-only-5-say/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dumb-ways-for-an-open-source-project-to-die.md)
 

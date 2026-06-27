@@ -126,7 +126,7 @@ ARiES 采**加性评分**（0-100），三个维度：
 - → [Mythos 营销角度](/ch01-675-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt/)
 - → [Cloudflare Glasswing 视角 Mythos 安全](/ch01-281-project-glasswing-what-mythos-showed-us/)
 - → [Arctic Wolf SOC 机器速度运营](/ch12-081-guide-to-security-operations-at-machine-speed/)
-- → MITRE ATT&CK 框架（V18，外部参考）
+- [→ MITRE ATT&CK 框架（V18，外部参考）](/ch01-268-anthropic-llm-att-ck-navigator-ai-enabled-cyber-operations/)
 
 ## 元数据
 

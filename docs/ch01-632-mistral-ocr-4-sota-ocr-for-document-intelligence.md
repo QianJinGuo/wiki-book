@@ -111,7 +111,7 @@ OCR 4 对 RAG pipeline 的影响最直接：
 
 ## 相关实体
 
-- Document Intelligence — 文档智能领域的更广泛概念
+- [Document Intelligence — 文档智能领域的更广泛概念](/ch01-619-mistral-ocr-4-sota-ocr-for-document-intelligence/)
 - [Self-hosted LLM — OCR 4 的单容器自托管能力](/ch01-238-agent-memory-模块化框架与评测-memory-in-the-llm-era-4-模块-10-方案对比/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mistral-ai-news-ocr-4.md)

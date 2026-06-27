@@ -91,7 +91,7 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 - [AI Agent 记忆系统架构](/ch04-145-how-ai-agent-memory-works/)
 - [Self-Evolving Agents 系统性综述](/ch04-203-self-evolving-agents-系统性综述/)
 - [Hermes Agent 记忆系统深度拆解](/ch04-418-hermes-agent/)
-- Agent Memory System Design
+- [Agent Memory System Design](/ch04-451-anthropic-multi-agent-research-system/)
 - [KAIROS — Claude Code 常驻协作范式](/ch03-002-obsidian-claude-code-集成指南/)
 - [上下文工程：三种 Agent Memory 方案对比实验](/ch04-087-agent-memory-架构本质/)
 

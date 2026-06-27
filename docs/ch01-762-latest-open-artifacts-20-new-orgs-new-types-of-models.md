@@ -14,7 +14,7 @@
 - [reducing container cold start times using soci index on dlam](/ch01-823-reducing-container-cold-start-times-using-soci-index-on-dlam/)
 - [state of routing in model serving](/ch01-838-state-of-routing-in-model-serving/)
 - [the distillation panic](/ch01-265-the-distillation-panic/)
-- sft, rl, and on-policy distillation through a distributional
+- [sft, rl, and on-policy distillation through a distributional](/ch01-569-anthropic-puts-claude-agents-on-a-meter-across-its-subscript/)
 - [直播预约 | 数据引擎：具身智能的下一个决胜局](/ch01-676-直播预约-数据引擎-具身智能的下一个决胜局/)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
 

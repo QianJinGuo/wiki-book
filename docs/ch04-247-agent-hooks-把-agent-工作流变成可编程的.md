@@ -94,8 +94,8 @@ event → optional matcher/filter → handler → outcome
 
 ## 关联阅读
 -  — 模式 12「确定性生命周期钩子」与本文核心完全对应，提供了更完整的 12 模式全景图
-- `Harness Engineering: Reliable Long-Term Agent` — Harness 工程化框架的系统性阐述
-- `AgentMemory: Coding Agent Local Memory` — AgentMemory 在 hook 捕获链上有完整实现，可作为 Hook 系统的参考实现
+- [`Harness Engineering: Reliable Long-Term Agent` — Harness 工程化框架的系统性阐述](/ch01-735-gaode-uplift-model-iteration-agent-long-running-harness/)
+- [`AgentMemory: Coding Agent Local Memory` — AgentMemory 在 hook 捕获链上有完整实现，可作为 Hook 系统的参考实现](/ch09-034-agentmemory/)
 
 ---
 

@@ -31,7 +31,7 @@
 - [How Superset built the IDE for AI agents on Vercel](/ch01-058-how-superset-built-the-ide-for-ai-agents-on-vercel/)
 - [Toto 2.0: Time series forecasting enters the scaling era](/ch01-027-toto-2-0-time-series-forecasting-enters-the-scaling-era/)
 - [Personavlm Long Term Personalization](/ch01-641-personavlm-long-term-personalized-multimodal-llm/)
-- lightseek token speed inference
+- [lightseek token speed inference](/ch12-023-inference-theft-as-ai-endpoint-attack-surface-vercel-token/)
 - MOC
 
 ---

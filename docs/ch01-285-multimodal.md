@@ -161,8 +161,8 @@ Strands Evals 的多模态 judge 保持了与文本 judge 完全相同的 `Case`
 ## 延伸阅读
 
 - Strands Evals 文档
-- Amazon Bedrock
-- Anthropic Claude 系列
+- [Amazon Bedrock](/ch11-041-litellm-amazon-bedrock/)
+- [Anthropic Claude 系列](/ch01-692-anthropic/)
 
 ## 相关实体
 - [Yidian Tianxia Context Engineering Agentic Ai Qcon](/ch04-129-yidian-tianxia-context-engineering-agentic-ai-qcon/)

@@ -157,9 +157,9 @@ npx impeccable detect --json .
 6. **设计 skill 应该搭配硬规则使用**：Anomaly 创始人推荐的组合是「2-3 个 design skill + 一组硬规则（颜色、字号、间距）」，两者互补而非替代
 
 ## 关联阅读
-- Agent Skill 编写指南 —— skill 格式规范与渐进式披露机制
+- [Agent Skill 编写指南 —— skill 格式规范与渐进式披露机制](/ch04-036-hermes-agent-eval-harness-skill-7-taskset-harnessadapt/)
 - [Karpathy Vibe Coding → Agentic Engineering](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) —— Vibe Coding 原始定义与 Software 3.0 演化
-- Claude Design Skill —— Anthropic 的设计 skill 实践对比
+- [Claude Design Skill —— Anthropic 的设计 skill 实践对比](/ch01-692-anthropic/)
 - [前端 Design Skills 全景对比](/ch01-531-skills-anthropic-openai-comparison-frontend-design/) —— Anthropic vs OpenAI 设计 skill 生态比较
 
 ---

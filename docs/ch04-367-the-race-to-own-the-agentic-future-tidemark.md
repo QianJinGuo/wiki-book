@@ -47,7 +47,7 @@ GovDash CEO Sean Doherty 的引言值得单独拆解："Customers will be consum
 - [Enterprise Software Moats in Agent Era](/ch04-184-enterprise-software-moats-in-the-agent-era-系统性护城河分析框架/) — 同一时期 a16z 对企业软件护城河在 Agent 时代变化的分析
 - [ServiceNow: The UI is Dead, Long Live the Agent](/ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/) — ServiceNow Agent 战略的深度解析
 ## 相关实体
-- Investing In Stitch.Md
+- [Investing In Stitch.Md](/ch04-075-design-md-ai-agent-google-stitch-voltagent/)
 
 ---
 

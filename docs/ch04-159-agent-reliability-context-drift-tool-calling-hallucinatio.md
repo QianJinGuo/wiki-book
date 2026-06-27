@@ -87,7 +87,7 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](/ch04-071-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](/ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
-- Harness Design Peer Review Framework
+- [Harness Design Peer Review Framework](/ch11-235-agentscope-java-harness-framework-企业级-agent-分布式场景的-harness/)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-367-claude-code-harness-deep-understanding/)
 - [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制/)
 - [Agent 自我改进的六条路](/ch04-047-agent-自我改进的六条路/)

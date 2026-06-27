@@ -27,7 +27,7 @@ Profiles 的设计目标不仅是"分组"，更是**上下文隔离**。当 Agen
 **对于安全/治理团队**：关注文章提到的下一步方向——governance and policy controls。若 Profile 能与 SSO/权限系统绑定，Profiles 有潜力成为 MCP 时代的"设备管理"层。
 
 ## 关联阅读
--  — 12 种 Agent 连接外部工具的工程模式，与 Catalogs/Profiles 的设计思路高度互补
+- [— 12 种 Agent 连接外部工具的工程模式，与 Catalogs/Profiles 的设计思路高度互补](/ch07-060-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式/)
 -  — 混合云场景下的 MCP 实际运维闭环实践
 
 ## 相关实体

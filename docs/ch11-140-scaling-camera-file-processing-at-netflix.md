@@ -131,7 +131,7 @@ Netflix 主动参与这些标准的演进，既确保了标准满足自身需求
 
 ## 相关实体
 
-- Cloud-Native Media Processing
+- [Cloud-Native Media Processing](/ch11-077-tidb-cloud-agent-native-数据库与-kimi-k2-6-合作/)
 - Elastic Scaling Patterns
 
 ---

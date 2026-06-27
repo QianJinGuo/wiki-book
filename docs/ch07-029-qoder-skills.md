@@ -78,7 +78,7 @@
 6. **与 MCP 协同使用**：已接入 MCP 的开发团队，可以用 Skill 封装"什么场景用什么 MCP 工具"的决策逻辑，让 AI 在正确的上下文自动调用正确的工具。
 
 ## 相关实体
-- qoder skills
+- [qoder skills](/ch07-029-qoder-skills/)
 - [Agent/Skills/Teams 架构演进过程及技术选型之道](/ch04-219-agent-skills-teams-架构演进过程及技术选型之道/)
 - [Agent 时代架构师技能指南](/ch04-346-agent-时代-我们架构师应该学什么/)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)

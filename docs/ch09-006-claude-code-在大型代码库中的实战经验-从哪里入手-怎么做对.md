@@ -257,7 +257,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Iclr 2026 英伟达 普渡大学用Agent闭环实现文生3D](/ch01-417-scenethesis-iclr-2026-英伟达-普渡大学用-agent-闭环实现文生-3d/)
 - [Agent Guide Core Concepts Overview](/ch04-483-agentguide-ai-agent-核心概念速查/)
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](/ch04-121-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升/)
-- Headroom Context Compression Agent Vibecoder
+- [Headroom Context Compression Agent Vibecoder](/ch04-175-context-agent/)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
 - [Kimi Work Beta Foundation Model Company Advantage](/ch04-159-kimi-work-beta-通用-agent-一定来自模型公司/)
 - [Agent Paradigm Evolution Feipeng Alibaba](/ch04-471-agent核心技术概念与范式发生了哪些演变以及背后的思考/)

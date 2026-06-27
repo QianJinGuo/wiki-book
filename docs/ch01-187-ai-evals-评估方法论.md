@@ -151,7 +151,7 @@ Agent 评估需要额外的维度： ^["Evals到底在评什么？一文拆解AI
 ## 相关实体
 - [Better Harness Eval Trace Methodology](/ch05-083-better-harness-agent-harness-自动优化方法论/)
 - [Anthropic Claude Next Gen Alex Infoq](/ch01-677-anthropic/)
-- Agent Skill Writing
+- [Agent Skill Writing](/ch04-036-hermes-agent-eval-harness-skill-7-taskset-harnessadapt/)
 - [Programbench Agent Benchmark](/ch04-152-programbench-agent-benchmark/)
 - [Llm As A Verifier Framework](/ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework/)
 

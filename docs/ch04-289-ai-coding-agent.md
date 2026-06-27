@@ -13,7 +13,7 @@
 - [Agent Harness 上下文管理：工作集模型](/ch05-038-agent生产级harness工程指南/)
 - [Agent 自我改进的六条路](/ch04-047-agent-自我改进的六条路/)
 - [OpenHuman: AI Agent 持久记忆框架](/ch04-284-1-6万-star-ai-agent-赛道又杀出一匹黑马/)
-- Agent Memory System Design
+- [Agent Memory System Design](/ch04-451-anthropic-multi-agent-research-system/)
 - [Agent Memory 架构解析](/ch04-111-agent-memory-架构解析/)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](/ch05-020-martin-fowler-ai-研发-harness-非确定性承重层/)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/)
@@ -21,10 +21,10 @@
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](/ch04-071-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - [Karpathy LLM Wiki V2](/ch01-550-llm-wiki-架构解析-karpathy-的-markdown-知识库模式/)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)
-- AI Context Layer 框架
+- [AI Context Layer 框架](/ch04-466-ai-xiaolaoliu-business-agent-augmentation-layer-general-base/)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](/ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
 - [hermes-agent-self-evolving-source-analysis](/ch04-039-hermes-agent-self-evolving-source-analysis/)
-- Harness Design Peer Review Framework
+- [Harness Design Peer Review Framework](/ch11-235-agentscope-java-harness-framework-企业级-agent-分布式场景的-harness/)
 - [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
 
 - [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](/ch05-061-全球首个完全ai编写的训练框架-面壁forgetrain速度反超英伟达megatron-年底要把国产算力软件重写一遍/)

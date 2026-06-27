@@ -158,7 +158,7 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 - [Agent架构关键变化：Harness正在成为新后端](/ch04-027-agent架构关键变化-harness正在成为新后端/)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
 - [AI Coding Agent 记忆系统](/ch04-288-ai-coding-agent-记忆系统/)
-- Agent Memory System Design
+- [Agent Memory System Design](/ch04-451-anthropic-multi-agent-research-system/)
 - [Coding Harness 工程本质](/ch05-032-coding-harness-pi-openclaw/)
 - [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/)
 - [Hermes Agent 记忆系统深度拆解](/ch04-418-hermes-agent/)
