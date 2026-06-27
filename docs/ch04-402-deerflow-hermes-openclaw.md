@@ -15,7 +15,7 @@
 - [Openclaw Hermes Source Code Agent Architecture Review](/ch01-202-openclaw与hermes源码架构对比/)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
 - [Hermes Agent Vs Openclaw Comparison](/ch04-188-hermes-agent-为什么火了-和-openclaw-龙虾比一比/)
-- Hermes Agent Deep Dive Alibaba
+- [Hermes Agent Deep Dive Alibaba](/ch04-418-hermes-agent/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deerflow-hermes-openclaw-comparison.md)
 

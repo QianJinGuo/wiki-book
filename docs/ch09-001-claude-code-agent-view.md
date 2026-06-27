@@ -81,11 +81,11 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - [Claude Code Agent 工程设计](/ch04-015-claude-code-的-agent-工程/)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
 - [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](/ch01-328-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群/)
-- Claude Code vs OpenClaw Agent 记忆系统对比
+- [Claude Code vs OpenClaw Agent 记忆系统对比](/ch01-309-claude-code-agent-teams/)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](/ch09-039-claude-md-12-条规则-karpathy-扩展模板/)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](/ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人/)
-- Claude Code 工具设计演化
+- [Claude Code 工具设计演化](/ch03-002-obsidian-claude-code-集成指南/)
 - [AutoResearch：多 Agent 自动化软件开发](/ch09-030-autoresearch-多-agent-自动化软件开发/)
 - [Claude Opus 4.7 发布分析](/ch01-314-claude-opus-4-7-发布分析/)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch01-677-anthropic/)

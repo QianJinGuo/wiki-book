@@ -160,9 +160,9 @@ a16z 的分析揭示了 Agent 时代护城河的优先级变化：能**执行动
 Agent 治理是尚未被解决的难题，企业应该现在开始试点而非等待供应商提供完整方案。选择一个低风险、高重复性的业务场景（如自动填写 expense reports、自动生成每周销售报表），从头设计 Agent 的策略定义、审批链和审计轨迹。关键问题：Agent 可以自主决策的范围是什么？超出范围时谁来审批？Agent 犯错时如何回滚？记录试点中的问题和解决方案，这些经验将成为未来大规模 Agent 部署的治理基础。
 
 ## 相关实体
-- from-system-of-record-to-system-of-intelligence.md-intelligence
+- [from-system-of-record-to-system-of-intelligence.md-intelligence](/ch01-221-from-system-of-record-to-system-of-intelligence/)
 - [Enterprise Software Moats Agent Era](/ch04-184-enterprise-software-moats-in-the-agent-era-系统性护城河分析框架/)
-- from-system-of-record-to-system-of-intelligence.md-intelligence-1
+- [from-system-of-record-to-system-of-intelligence.md-intelligence-1](/ch01-221-from-system-of-record-to-system-of-intelligence/)
 - [我用 Skillmd 做了一个简历生成器](/ch07-047-我用-skill-md-做了一个简历生成器/)
 - [Aliyun Agentrun 2Line Integration](/ch04-003-agentrun/)
 

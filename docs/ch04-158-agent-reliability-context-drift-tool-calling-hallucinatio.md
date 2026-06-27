@@ -79,7 +79,7 @@ Agent 运行多轮后可靠性的两个核心问题：
 ## 相关实体
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](/ch11-040-阿里云-eventhouse-企业级-agent-上下文构建五维框架/)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](/ch04-460-智能体编排层中的上下文管理架构/)
-- Agent Harness 上下文管理：工作集视角
+- [Agent Harness 上下文管理：工作集视角](/ch05-038-agent生产级harness工程指南/)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
 - [CLI、MCP、API 选型：Agent 接入层决策指南](/ch07-053-cli系列④-选型cli-mcp还是api/)
 - [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
@@ -100,7 +100,7 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [柚漫剧 AI 全流程提效拆解](/ch01-356-柚漫剧-ai-全流程提效拆解/)
 - [Agent Skill 设计模式](/ch01-677-anthropic/)
 - [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/)
-- Coding Harness 工程本质
+- [Coding Harness 工程本质](/ch05-032-coding-harness-pi-openclaw/)
 - [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/)
 - [Design Patterns for AI Agents 2026](/ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl/)
 

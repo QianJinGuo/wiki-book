@@ -123,7 +123,7 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)
 
-- KAIROS — Claude Code 常驻协作范式
+- [KAIROS — Claude Code 常驻协作范式](/ch03-002-obsidian-claude-code-集成指南/)
 - MOC
 
 ---

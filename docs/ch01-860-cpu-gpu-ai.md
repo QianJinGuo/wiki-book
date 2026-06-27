@@ -154,7 +154,7 @@ H2D/D2H 带宽因卡而异的特性，说明不同 GPU 型号对 PPCIe 的支持
 ## 相关实体
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](/ch01-830-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
 - [Baidu Confidential Computing Cpu Gpu Full Chain](/ch01-059-百度智能云新一代ai机密计算实例-从cpu到gpu全链路可信/)
-- Nemotron 3 5 Content Safety
+- [Nemotron 3 5 Content Safety](/ch04-044-nvidia-nemotron-3-agents-rag-voice-safety/)
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](/ch04-339-nvidia-secure-local-agent-nemoclaw-openclaw/)
 - Fine Tuning Cosmos
 

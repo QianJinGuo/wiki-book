@@ -87,7 +87,7 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 - [Claude Code 可控性：软规则无法变成硬约束](/ch09-067-claude-code-可控性-软规则无法变成硬约束/)
 - [Claude Managed Agents 开发者指南](/ch01-329-claude-managed-agents-开发者指南/)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](/ch03-013-cat-wu-anthropic-claude-code-cowork产品负责人/)
-- Claude Code 工具设计演化
+- [Claude Code 工具设计演化](/ch03-002-obsidian-claude-code-集成指南/)
 
 - MOC
 ## 深度分析

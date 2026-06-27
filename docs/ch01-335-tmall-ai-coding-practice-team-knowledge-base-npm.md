@@ -156,7 +156,7 @@ AI 通过 curl 直接读取 npm cdn 资源（不依赖具体编码工具）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tmall-ai-coding-practice-team-knowledge-base-npm.md)
 
-- `AI Coding 入门指南`
+- [`AI Coding 入门指南`](/ch05-031-harness-engineering-实战-ai-coding-率从-25-提升至-90/)
 
 ---
 

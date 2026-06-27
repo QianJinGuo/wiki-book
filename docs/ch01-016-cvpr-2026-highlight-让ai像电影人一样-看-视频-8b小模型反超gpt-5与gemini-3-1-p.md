@@ -11,7 +11,7 @@
 - 核心洞察：批改的质量决定模型能力，过往工作中超过 50% 的批改样本属于非建设性反馈
 ## 相关实体
 - [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](/ch01-438-cvpr-2026-highlight-让ai像电影人一样-看-视频-8b小模型反超gpt-5与gemini-3-1-p/)
-- Cvpr 2026 Highlight 清华打破多模态音频生成的通才困境Omni2Sound 音频基础模型开源
+- [Cvpr 2026 Highlight 清华打破多模态音频生成的通才困境Omni2Sound 音频基础模型开源](/ch01-016-cvpr-2026-highlight-ai-8b-gpt-5-gemini-3-1-pro/)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](/ch01-009-快手首个打工人agent/)
 - [Qoder 1 0 Release Ai Ide Agent Workbench](/ch01-095-qoder-1-0正式发布-从ai-ide迈向智能体自主开发工作台/)
 - [Gpt 55来了我撤回了退订Chatgpt的决定](/ch01-111-gpt-5-5来了-我撤回了退订chatgpt的决定/)

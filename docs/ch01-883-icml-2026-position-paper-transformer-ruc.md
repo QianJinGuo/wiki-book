@@ -59,14 +59,14 @@ ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive 
 
 ## 相关实体
 
-- Agent Harness 上下文管理 工作集视角 — 工业 Harness 上下文管理实操
+- [Agent Harness 上下文管理 工作集视角 — 工业 Harness 上下文管理实操](/ch05-038-agent生产级harness工程指南/)
 - [CPU Cache 类比 Agent 上下文管理](/ch04-508-cpu-缓存类比下的-agent-上下文管理-l1-l2-l3-层级架构与-execute_code-单工具设计/) — 工程类比
 - [Agent 上下文管理架构模式](/ch04-460-智能体编排层中的上下文管理架构/) — 模式分类
 - [GSD Context Management Tool](/ch01-184-gsd-get-shit-done-context-management-tool/) — 工具实践
 - Headroom 上下文压缩 + 缓存稳定化 — 压缩算法
 - Codex Context Engineering
 - [Claude Code Context Engineering (Anthropic Thariq)](/ch01-753-claude-code-上下文工程-anthropic-团队的工程实践/)
-- Claude Fable 5 提示词泄漏 — 同样指出 "系统 = 模型 + 上下文管理"
+- [Claude Fable 5 提示词泄漏 — 同样指出 "系统 = 模型 + 上下文管理"](/ch01-306-anthropic-claude-fable-5-on-aws-mythos/)
 - LLM Post-Training 全景指南 — 可学习性维度对照
 
 ---

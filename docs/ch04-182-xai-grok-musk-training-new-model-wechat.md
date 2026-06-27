@@ -125,7 +125,7 @@ Grok 1到Grok 4一路推下来，bench
 - Xai Dissolved Grok Colossus2 Analysis
 - [Xai Shutdown Grok Still Alive](/ch01-568-xai解散但grok还活着/)
 - [Building Blocks For Foundation Model Training And Inference On Aws](/ch11-117-building-blocks-for-foundation-model-training-and-inference/)
-- Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606
+- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
 - [Hermes Skill System Winty](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
 
 ---

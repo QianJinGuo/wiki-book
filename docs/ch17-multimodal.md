@@ -50,7 +50,7 @@ Perceptron Mk1 is a video analysis reasoning model priced at $0.15/$1.50 per mil
 ## 相关实体
 > 主题导航
 
-- Google's Gemini Omni video model surfaces ahead of I/O debut
+- [Google's Gemini Omni video model surfaces ahead of I/O debut](/ch01-345-google-s-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/)
 - [Google's Gemini Omni video model surfaces ahead of I/O debut](/ch01-345-google-s-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/)
 - [Anthropic Computer Use 最佳实践](/ch01-658-anthropic-发布-computer-use-最佳实践/)
 
@@ -1178,7 +1178,7 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 - [Liteframeefficientvisionencodersunlockframescalinginvideollms](/ch01-890-liteframe-efficient-vision-encoders-unlock-frame-scaling-in/)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](/ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
 - [Agentexecutorgooglesdistributedagentruntime](/ch01-411-agent-executor-google-s-distributed-agent-runtime/)
-- How To Calculate The Inference Efficiency Ratio
+- [How To Calculate The Inference Efficiency Ratio](/ch01-492-how-to-get-a-100-conference-acceptance-rate-the-novee-way/)
 - Aws Sun Finance Ai Id Extraction Fraud Detection
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/liteframe-efficient-vision-encoders.md)
@@ -1313,7 +1313,7 @@ LogicsDocBench为自建综合评估基准，由 900 页精心挑选的 PDF 页�
 ## 相关实体
 - [Context Not Free Long Document Agent Architecture Raunak](/ch04-174-context不是免费的-长文档agent性能天花板与架构优化/)
 - [Joyai Echo Long Video Framework Jd](/ch04-099-joyai-echo-京东开源长音视频生成框架-5-分钟一致性-7-5x-dmd-加速-director-age/)
-- Nemotron 3 5 Content Safety
+- [Nemotron 3 5 Content Safety](/ch04-044-nvidia-nemotron-3-agents-rag-voice-safety/)
 - [Xiaomi Ai Icml 2026 11Papers](/ch01-872-小米ai-icml-2026-论文矩阵-11篇/)
 - Sensnova U1 Deep Dive Jiqizhixin D8602Ded5C51
 
@@ -1528,7 +1528,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 ---
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md)
 ## 相关实体
-- Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa
+- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](/ch01-105-self-filming-guide-by-hello-world-media/)
 - [Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa6Efcef23C882E57](/ch01-105-self-filming-guide-by-hello-world-media/)
 - [How To Build Audio Transcription Agent](/ch04-393-how-to-build-audio-transcription-agent/)
 - Stable Audio 3
@@ -2430,7 +2430,7 @@ Compression only matters if the model remains useful. We evaluated Bonsai Image 
 ![Image 3](https://cdn
 
 ## 相关实体
-- Bonsai Image 4B Quantization
+- [Bonsai Image 4B Quantization](/ch01-819-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat/)
 - [Gemma 4 Qat Models Optimizing Compression](/ch01-401-gemma-4-qat-models-quantization-aware-training-for-mobile-a/)
 - [Stochastic Parrot Language Models And Meaning](/ch01-373-language-models-and-meaning/)
 - [Openai Models Codex Amazon Bedrock Ga](/ch09-048-openai-models-and-codex-on-amazon-bedrock-are-now-generally/)
@@ -2650,8 +2650,8 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 ## 核心要点
 - Published Time: 2026-05-18T16:00:21.256Z [Back to Articles](https://huggingface.co/blog) [![Image 1: Ting-Yun Chang's avatar](https://huggingface.co/avatars/e4d63791901a7274e97d27ac879c1355.svg)](http
 ## 相关实体
-- Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation
-- Nvidia Cosmos Fine Tuning Robot Video Generation
+- [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](/ch01-885-accelerating-transformers-fine-tuning-with-nvidia-nemo-autom/)
+- [Nvidia Cosmos Fine Tuning Robot Video Generation](/ch01-885-accelerating-transformers-fine-tuning-with-nvidia-nemo-autom/)
 - Fine Tuning Cosmos
 - [Nvidia Mcg Toolkit Model Documentation](/ch03-033-how-to-automate-ai-model-documentation-with-nvidia-mcg-toolk/)
 - [Nvidia Agentic Systems Extreme Co Design](/ch04-514-building-for-the-rising-complexity-of-agentic-systems-with-e/)
@@ -2710,8 +2710,8 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 
 ## 相关实体
 - [How To Build Audio Transcription Agent](/ch04-393-how-to-build-audio-transcription-agent/)
-- Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa
-- Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa
+- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](/ch01-105-self-filming-guide-by-hello-world-media/)
+- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](/ch01-105-self-filming-guide-by-hello-world-media/)
 - Ntm Normalizing Trajectory Models
 - Nvidia Gamma World Multi Agent World Model
 

@@ -41,7 +41,7 @@ AI 最终要从屏幕走进物理世界。
 ## 相关实体
 - [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](/ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes/)
-- Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation
+- [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](/ch01-885-accelerating-transformers-fine-tuning-with-nvidia-nemo-autom/)
 - [User Interviews Guide Pro](/ch01-561-user-interviews-guide-how-to-interview-users-like-a-pro/)
 - [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](/ch01-270-估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai/)
 

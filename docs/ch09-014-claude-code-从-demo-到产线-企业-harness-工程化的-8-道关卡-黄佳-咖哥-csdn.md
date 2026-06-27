@@ -172,11 +172,11 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 ## 相关实体
 
 - [Agent Harness Engineering Survey 2026](/ch04-069-agent-harness-engineering-a-survey/) — 学术 Survey 的 ETCLOVG 7 层分类（不同分类法）
-- Agent Harness Context Management Working Set — 上下文管理的"工作集"视角
+- [Agent Harness Context Management Working Set — 上下文管理的"工作集"视角](/ch05-038-agent生产级harness工程指南/)
 - [Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/) — 12 组件 + 7 决策框架
 - [Agent Production Harness Engineering](/ch05-038-agent生产级harness工程指南/) — 工程赤字 + Demo vs 生产型判别
 - [Harness Engineering Systematic Framework](/ch05-049-harness-engineering-系统梳理/) — Harness 工程系统化
-- Agent Skill Writing — Skill 编写实践（第三关深入）
+- [Agent Skill Writing — Skill 编写实践（第三关深入）](/ch04-498-skillclaw-nacos-从一次-agent-会话到可治理-skill-registry-的自动演化闭环/)
 - [Agent Reliability Context Drift Tool Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/) — 漂移与幻觉的关联分析
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md)

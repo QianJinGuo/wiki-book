@@ -165,7 +165,7 @@ Anthropic 将"分离执行与评判"描述为"强杠杆"，背后有一个深刻
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - [Harness Engineering 指南（字节跳动TRAE）](/ch01-520-来自字节跳动trae的harness-engineering指南/)
 - [清华大学 Harness Engineering 研究报告](/ch05-060-清华大学-驾驭工程-harness-engineering-研究报告/)
-- Harness 组件保质期——Model-Harness Fit 与 Build to Delete 原则
+- [Harness 组件保质期——Model-Harness Fit 与 Build to Delete 原则](/ch01-217-model-harness-fit-agent-harness/)
 
 ---
 

@@ -36,6 +36,6 @@
 
 - [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](/ch01-675-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt/)
 - [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](/ch01-906-anthropic-vs-dow-department-of-war-与开源模型的-5-10-年权力均衡/)
-- dario amodei 2026 policy on the ai exponential
+- [dario amodei 2026 policy on the ai exponential](/ch04-169-the-shape-of-the-thing-ai-mollick-2026-03/)
 
 ---

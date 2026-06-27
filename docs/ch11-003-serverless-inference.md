@@ -11,7 +11,7 @@
 ## 相关实体
 > 主题导航
 
-- How to Calculate the Inference Efficiency Ratio
+- [How to Calculate the Inference Efficiency Ratio](/ch01-492-how-to-get-a-100-conference-acceptance-rate-the-novee-way/)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](/ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda/)
 
 - [55+ models, every modality. one api key, one bill.](/ch11-003-serverless-inference/)

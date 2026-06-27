@@ -142,7 +142,7 @@ Luke 公开的 Mission 实战数字值得仔细解读：
 
 ## 相关实体
 
-- Factory Missions Multi-Agent Shipping——同主题的姊妹篇
+- [Factory Missions Multi-Agent Shipping——同主题的姊妹篇](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
 - [Claude Code Agent Teams 任务分解](/ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据/)——任务分解策略的另一视角
 - [Harness Engineering Core Patterns](/ch01-698-深入浅出-harness-engineering-之核心模式与理念/)——声明式编排的工程哲学
 - [OpenClaw 多 Agent 团队实践](/ch04-038-openclaw-multi-agent-team-practice-v2/)——多 Agent 落地的国内实践

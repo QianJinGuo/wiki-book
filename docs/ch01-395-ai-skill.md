@@ -44,7 +44,7 @@ SkillsBench研究：84个任务中19%出现负向增益。
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](/ch01-164-llm-agent脚手架如何具备自进化能力-以hermes-agent为例/)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](/ch01-260-skillos-learning-skill-curation-for-self-evolving-agents/)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](/ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论/)
-- Skills赏析：使用skills-refiner提升skill质量
+- [Skills赏析：使用skills-refiner提升skill质量](/ch04-024-qoder-skills-完全指南-agent-skill-迭代式编写-ai-按你的标准执行/)
 - [harness-engineering-systematic-explainer](/ch05-036-harness-engineering-systematic-explainer/)
 - [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice/)
 - [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)

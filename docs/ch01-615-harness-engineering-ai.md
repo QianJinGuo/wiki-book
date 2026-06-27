@@ -13,7 +13,7 @@ Agent = Model + Harness
 
 ## 相关实体
 - [Fudan Peking Ahe Agentic Harness Engineering](/ch04-220-fudan-peking-ahe-agentic-harness-engineering/)
-- Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
 - [Harness Engineering Systematic Explainer](/ch05-036-harness-engineering-systematic-explainer/)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)

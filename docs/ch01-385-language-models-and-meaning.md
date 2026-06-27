@@ -43,7 +43,7 @@
 
 ## 相关实体
 - [Language Models and Meaning](/ch01-373-language-models-and-meaning/)
-- Reinforcing Recursive Language Models | alphaXiv
+- [Reinforcing Recursive Language Models | alphaXiv](/ch01-649-reinforcing-recursive-language-models-alphaxiv/)
 - [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](/ch11-177-cost-effective-deployment-of-vision-language-models-for-pet/)
 - [On the Deep Mystery of Language Models](/ch01-572-stochastic-parrot-deep-mystery-llms/)
 - [A Thought Experiment](/ch01-650-stochastic-parrot-thought-experiment/)

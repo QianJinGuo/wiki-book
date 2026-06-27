@@ -294,7 +294,7 @@ subagents: {
 - agent-claude-code — Claude Code 集成
 
 ## 相关实体
-- Hermes Agent Memory System
+- [Hermes Agent Memory System](/ch04-418-hermes-agent/)
 - [Openclaw Agent Loop Design Patterns](/ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式/)
 - [Hiclaw V110 K8S Hermes Worker](/ch11-086-hiclaw-v1-1-0-kubernetes-集群部署与-hermes-worker-运行时/)
 - [Openclaw Multi 2](/ch11-141-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)

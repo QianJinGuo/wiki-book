@@ -103,9 +103,9 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [Garry Tan](/ch01-497-garry-tan/)
 - [Agent Workflows](/ch04-306-agent-workflows/)
 - [Hermes Agent](/ch04-418-hermes-agent/)
-- Hermes Agent 新手上手指南
+- [Hermes Agent 新手上手指南](/ch04-418-hermes-agent/)
 - [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)
-- Hermes Agent Skill
+- [Hermes Agent Skill](/ch04-418-hermes-agent/)
 - [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
 - [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](/ch04-033-阿里云端到端业务需求专家-agent-multica-平台-superai-技能集群-tdd-pre-pus/)
 

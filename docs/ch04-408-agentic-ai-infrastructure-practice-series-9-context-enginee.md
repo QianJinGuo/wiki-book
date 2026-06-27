@@ -92,7 +92,7 @@
 
 ## 相关实体
 
-- Context Engineering
+- [Context Engineering](/ch04-403-agentic-ai-infrastructure-practice-series-9-context-enginee/)
 - [AI Coding 入门指南](/ch09-080-ai-coding-入门指南-如何更好地让-ai-真正帮你干活/)
 - [Harness Engineering](/ch05-041-harness-engineering-概念框架/)
 - MOC

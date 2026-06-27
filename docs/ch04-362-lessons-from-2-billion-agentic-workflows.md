@@ -75,10 +75,10 @@ CrewAI 处理 20 亿次工作流的数据量足以过滤掉小样本偏差。三
 - [A Missing Layer In Agentic Systems](/ch04-311-a-missing-layer-in-agentic-systems/) — HITL 作为 Agentic 系统第三层的论述
 - [Agentcore Harness](/ch04-206-agentcore-managed-harness/) — AgentCore 工程化实践
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/) — AgentOps 可观测性实践
-- Production Agent Engineering — 生产级 Agent 工程
+- [Production Agent Engineering — 生产级 Agent 工程](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
 - Agent Deployment Strategy — Agent 部署策略
-- Agent Framework Comparison — Agent 框架对比
-- Multi Agent Orchestration — 多 Agent 编排
+- [Agent Framework Comparison — Agent 框架对比](/ch07-063-microsoft-agent-framework-tools-总览-4-类工具-provider-矩阵-too/)
+- [Multi Agent Orchestration — 多 Agent 编排](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
 - Ai Safety Governance — AI 安全治理
 - [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Harness 工程框架
 

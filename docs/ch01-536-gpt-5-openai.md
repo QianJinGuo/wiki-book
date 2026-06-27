@@ -8,8 +8,8 @@
 
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai/)
-- GPT-5.5 实测
-- Yann Dubois Openai Post Training Interview
+- [GPT-5.5 实测](/ch01-463-gpt-5-5全球首破-0源码盲写程序-编程ai进入新纪元/)
+- [Yann Dubois Openai Post Training Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
 - [Gpt 5 Is Here And Openai Has Some Tips](/ch01-489-gpt-5-is-here-and-openai-has-some-tips/)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](/ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l/)
 

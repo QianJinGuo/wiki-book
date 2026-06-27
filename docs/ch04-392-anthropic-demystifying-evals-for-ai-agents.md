@@ -14,7 +14,7 @@
 ## 相关实体
 - [Anthropic Claude Managed Agents Platform Launch](/ch04-335-anthropic-claude-managed-agents-platform-launch/)
 - [Anthropic Managed Agents Scaling](/ch04-290-anthropic-managed-agents-scaling/)
-- Oz Multi Harness Cloud Agent Orchestration
+- [Oz Multi Harness Cloud Agent Orchestration](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
 - [Anthropic Pm Jess Yan Managed Agents](/ch04-348-anthropic-pm-jess-yan-managed-agents/)
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](/ch01-830-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
 
