@@ -2,7 +2,7 @@
 
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
-> 本章收录 **86 篇**实体，按深度递增排列。
+> 本章收录 **167 篇**实体，按深度递增排列。
 
 ---
 
