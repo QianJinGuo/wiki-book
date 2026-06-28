@@ -241,7 +241,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "matcher": "Write|Edit",
           "hooks": [{
             "type": "command",
-            "command": "FILE=$(jq -r '.tool_input.file_path // .tool_input.file' /dev/stdin); case \"$FILE\" in *.ts|*.tsx|*.js|*.jsx) npx prettier --write \"$FILE\" 2>/dev/null;; *.py) black \"$FILE\" 2>/dev/null;; esac; exit 0"
+            "command": "FILE=$(jq -r '.tool_input.file_path // .tool_input.file' /dev/stdin); case "$FILE" in *.ts|*.tsx|*.js|*.jsx) npx prettier --write "$FILE" 2>/dev/null;; *.py) black "$FILE" 2>/dev/null;; esac; exit 0"
           }]
         }]
       }
@@ -261,7 +261,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "if": "tool_input.file_path matches '(\\.env|\\.env\\.local|package-lock\\.json|yarn\\.lock|pnpm-lock\\.yaml)'",
           "hooks": [{
             "type": "command",
-            "command": "echo '{\"message\": \"BLOCKED: 此文件受保护。请手动编辑。\"}' && exit 2"
+            "command": "echo '{"message": "BLOCKED: 此文件受保护。请手动编辑。"}' && exit 2"
           }]
         }]
       }
@@ -275,7 +275,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "matcher": "",
           "hooks": [{
             "type": "command",
-            "command": "MSG=$(jq -r '.message // \"Claude Code 任务完成\"' /dev/stdin); if [ \"$(uname)\" = 'Darwin' ]; then osascript -e \"display notification \\\"$MSG\\\" with title \\\"Claude Code\\\"\"; else notify-send 'Claude Code' \"$MSG\"; fi; exit 0"
+            "command": "MSG=$(jq -r '.message // "Claude Code 任务完成"' /dev/stdin); if [ "$(uname)" = 'Darwin' ]; then osascript -e "display notification \\"$MSG\\" with title \\"Claude Code\\""; else notify-send 'Claude Code' "$MSG"; fi; exit 0"
           }]
         }]
       }
@@ -289,7 +289,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "matcher": "",
           "hooks": [{
             "type": "command",
-            "command": "echo '{\"message\": \"项目: '\"$(basename $(pwd))\"' | 分支: '\"$(git branch --show-current 2>/dev/null || echo none)\"' | 最后提交: '\"$(git log --oneline -1 2>/dev/null || echo none)\"'}'; exit 0"
+            "command": "echo '{"message": "项目: '"$(basename $(pwd))"' | 分支: '"$(git branch --show-current 2>/dev/null || echo none)"' | 最后提交: '"$(git log --oneline -1 2>/dev/null || echo none)"'}'; exit 0"
           }]
         }]
       }
@@ -304,7 +304,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "if": "tool_input.file_path matches '\\.(ts|tsx|js|jsx|py)$'",
           "hooks": [{
             "type": "command",
-            "command": "FILE=$(jq -r '.tool_input.file_path' /dev/stdin); TEST_FILE=$(echo \"$FILE\" | sed 's/\\.[^.]*$/.test&/'); if [ -f \"$TEST_FILE\" ]; then npx jest \"$TEST_FILE\" --no-coverage 2>&1 | tail -5; fi; exit 0",
+            "command": "FILE=$(jq -r '.tool_input.file_path' /dev/stdin); TEST_FILE=$(echo "$FILE" | sed 's/\\.[^.]*$/.test&/'); if [ -f "$TEST_FILE" ]; then npx jest "$TEST_FILE" --no-coverage 2>&1 | tail -5; fi; exit 0",
             "timeout": 30000
           }]
         }]
@@ -320,7 +320,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "if": "tool_input.command matches 'git push.*(main|master|production)'",
           "hooks": [{
             "type": "command",
-            "command": "echo '{\"message\": \"BLOCKED: 直接推送到受保护分支。使用功能分支并打开 PR。\"}' && exit 2"
+            "command": "echo '{"message": "BLOCKED: 直接推送到受保护分支。使用功能分支并打开 PR。"}' && exit 2"
           }]
         }]
       }
@@ -334,7 +334,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "matcher": "Bash",
           "hooks": [{
             "type": "command",
-            "command": "INPUT=$(cat /dev/stdin); CMD=$(echo \"$INPUT\" | jq -r '.tool_input.command'); echo \"[$(date -u +%Y-%m-%dT%H:%M:%SZ)] BASH: $CMD\" >> .claude/audit.log; exit 0"
+            "command": "INPUT=$(cat /dev/stdin); CMD=$(echo "$INPUT" | jq -r '.tool_input.command'); echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] BASH: $CMD" >> .claude/audit.log; exit 0"
           }]
         }]
       }
@@ -358,7 +358,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "matcher": "",
           "hooks": [{
             "type": "command",
-            "command": "echo '{\"message\": \"项目: '\"$(basename $(pwd))\"' | 分支: '\"$(git branch --show-current 2>/dev/null)\"' | Node: '\"$(node -v 2>/dev/null)\"'}'; exit 0"
+            "command": "echo '{"message": "项目: '"$(basename $(pwd))"' | 分支: '"$(git branch --show-current 2>/dev/null)"' | Node: '"$(node -v 2>/dev/null)"'}'; exit 0"
           }]
         }],
         "PreToolUse": [{
@@ -366,28 +366,28 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "if": "tool_input.file_path matches '(\\.env|\\.env\\..+|.*lock\\.json|.*lock\\.yaml)'",
           "hooks": [{
             "type": "command",
-            "command": "echo '{\"message\": \"受保护的文件。请手动编辑。\"}' && exit 2"
+            "command": "echo '{"message": "受保护的文件。请手动编辑。"}' && exit 2"
           }]
         }],
         "PostToolUse": [{
           "matcher": "Write|Edit",
           "hooks": [{
             "type": "command",
-            "command": "FILE=$(jq -r '.tool_input.file_path // .tool_input.file' /dev/stdin); case \"$FILE\" in *.ts|*.tsx|*.js|*.jsx) npx prettier --write \"$FILE\" 2>/dev/null;; *.py) black \"$FILE\" 2>/dev/null;; *.go) gofmt -w \"$FILE\" 2>/dev/null;; esac; exit 0"
+            "command": "FILE=$(jq -r '.tool_input.file_path // .tool_input.file' /dev/stdin); case "$FILE" in *.ts|*.tsx|*.js|*.jsx) npx prettier --write "$FILE" 2>/dev/null;; *.py) black "$FILE" 2>/dev/null;; *.go) gofmt -w "$FILE" 2>/dev/null;; esac; exit 0"
           }]
         }],
         "Notification": [{
           "matcher": "",
           "hooks": [{
             "type": "command",
-            "command": "MSG=$(jq -r '.message // \"完成\"' /dev/stdin); osascript -e \"display notification \\\"$MSG\\\" with title \\\"Claude Code\\\"\" 2>/dev/null || notify-send 'Claude Code' \"$MSG\" 2>/dev/null; exit 0"
+            "command": "MSG=$(jq -r '.message // "完成"' /dev/stdin); osascript -e "display notification \\"$MSG\\" with title \\"Claude Code\\"" 2>/dev/null || notify-send 'Claude Code' "$MSG" 2>/dev/null; exit 0"
           }]
         }],
         "Stop": [{
           "matcher": "",
           "hooks": [{
             "type": "command",
-            "command": "echo '[STOP] '\"$(date +%H:%M:%S)\"'' >> .claude/session.log; exit 0"
+            "command": "echo '[STOP] '"$(date +%H:%M:%S)"'' >> .claude/session.log; exit 0"
           }]
         }]
       }
