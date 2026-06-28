@@ -40,7 +40,8 @@ model_name = 'qwen3.5:9b'
 messages = []
 
 while True:
-    user_input = input("\nYou: ").strip()
+    user_input = input("
+You: ").strip()
     if user_input.lower() in ('quit', 'exit'):
         break
     messages.append({'role': 'user', 'content': user_input})
@@ -77,7 +78,8 @@ tools = [{
 - `parameters` 遵循 JSON Schema，`required` 标记必填
 - 工具函数**必须容错**：错误路径返回错误信息让 LLM 重试，别直接 crash
 
-**工具结果截断策略**：超过 4000 字符只留首尾各 1000（`res[:1000] + "\n...[TRUNCATED]..." + res[-1000:]`）。粗暴但有效。
+**工具结果截断策略**：超过 4000 字符只留首尾各 1000（`res[:1000] + "
+...[TRUNCATED]..." + res[-1000:]`）。粗暴但有效。
 
 ## Stage 3-4：Skill + 斜杠命令
 
@@ -111,7 +113,10 @@ if user_input.startswith('/'):
     elif cmd == '/tools':
         print(f"[SYSTEM] Tools: {[t['function']['name'] for t in tools]}")
     elif cmd == '/help':
-        print("\n[COMMANDS]\n  /skills   列出可用 skill\n  ...")
+        print("
+[COMMANDS]
+  /skills   列出可用 skill
+  ...")
     continue  # 短路，不调 LLM
 ```
 
@@ -150,7 +155,8 @@ CONTEXT_THRESHOLD = 4000  # ~16000 字符
 def compact_history(messages):
     if len(messages) < 4:
         return messages
-    print(f"\n[SYSTEM] Auto-compacting context ({estimate_tokens(messages)} tokens)...")
+    print(f"
+[SYSTEM] Auto-compacting context ({estimate_tokens(messages)} tokens)...")
     split_idx = int(len(messages) * 0.7)
     to_summarize = messages[:split_idx]   # 前 70% 摘要
     keep_fresh = messages[split_idx:]     # 后 30% 保留原文
@@ -174,7 +180,8 @@ def compact_history(messages):
 
 ```python
 def background_loop(prompt, interval_mins):
-    print(f"\n[SYSTEM] Loop started: '{prompt}' every {interval_mins} min(s).")
+    print(f"
+[SYSTEM] Loop started: '{prompt}' every {interval_mins} min(s).")
     while not stop_event.is_set():
         for _ in range(interval_mins * 60):
             if stop_event.is_set():
