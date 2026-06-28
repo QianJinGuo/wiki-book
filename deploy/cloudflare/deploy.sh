@@ -20,8 +20,13 @@ if [ ! -d "site" ]; then
     exit 1
 fi
 
-# Remove oversized files (>25MB limit)
-echo "Removing files >25MB..."
+# Slim search index if needed (reduces 68MB → ~8MB)
+if [ -f "scripts/slim-search-index.py" ]; then
+    echo "Slimming search index..."
+    python3 scripts/slim-search-index.py
+fi
+
+# Safety check: remove any remaining oversized files (>25MB CF Pages limit)
 find site -size +25M -delete 2>/dev/null || true
 
 # Deploy
