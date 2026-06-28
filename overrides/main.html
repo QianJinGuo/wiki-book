@@ -2,3 +2,7 @@
 {% block site_meta %}
 {{ super() }}
 {% endblock %}
+{% block scripts %}
+{{ super() }}
+<script src="{{ 'assets/javascripts/prev-next.js' | url }}"></script>
+{% endblock %}
