@@ -26,7 +26,7 @@
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 926 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1807 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -52,7 +52,7 @@
   - ⭐⭐ 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述
   - ... 共 **31** 篇 → [完整章节](ch02-prompt.md)
 
-### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 123 篇
+### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 192 篇
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
 
   - ⭐ The Interface Is No Longer the Product
@@ -71,7 +71,7 @@
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 530 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 1041 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -84,7 +84,7 @@
   - ⭐ From idea to AI app: creating intelligent research assistants
   - ... 共 **1041** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 86 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 167 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable
@@ -110,7 +110,7 @@
   - ⭐⭐ Memory 不是 RAG：Agent 记忆的系统性框架
   - ... 共 **35** 篇 → [完整章节](ch06-memory.md)
 
-### [Ch07 技能、工具与 MCP](ch07-skill-tool.md) — 62 篇
+### [Ch07 技能、工具与 MCP](ch07-skill-tool.md) — 114 篇
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
   - ⭐⭐ Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生
@@ -136,7 +136,7 @@
   - ⭐⭐⭐ ai agent memory systems
   - ... 共 **24** 篇 → [完整章节](ch08-multi-agent.md)
 
-### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 121 篇
+### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 229 篇
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
   - ⭐ Claude Code Agent View
@@ -168,7 +168,7 @@
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 240 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 425 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
@@ -181,7 +181,7 @@
   - ⭐⭐ AWS Bedrock 多智能体协作指南
   - ... 共 **425** 篇 → [完整章节](ch11-infra.md)
 
-### [Ch12 安全与治理](ch12-security.md) — 115 篇
+### [Ch12 安全与治理](ch12-security.md) — 194 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
 
   - ⭐ CISA urges critical infrastructure firms to 'fortify' before it's too 
