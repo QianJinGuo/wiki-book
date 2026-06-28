@@ -1,10 +1,55 @@
-# 准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-
+# 准备开一个新坑：从零复刻一个 Claude Code。
 
-## Ch05.057 准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-
+目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的。
 
-> 📊 Level ⭐⭐ | 7.4KB | `entities/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md`
+Claude Code 源码泄漏后本来想根据它的代码直接出一个分析解读的内容，但是写着写着感觉太干了，对小白可能不太友好。  
 
-# 准备开一个新坑：从零复刻一个 Claude Code。\n\n目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的。\n\nClaude Code 源码泄漏后本来想根据它的代码直接出一个分析解读的内容，但是写着写着感觉太干了，对小白可能不太友好。  \n\n既然有了源码，不如我们直接从零一步步复刻一个，我们在复刻的过程中可以逐步去学习如何实现一个企业级的 Agent。\n\n最终目标是要复刻出 Claude Code 大部分的核心功能。\n\n同时我会把实现的整个过程沉淀为一套完整的技术教程，每个章节都包含详细的实现步骤和可复现的代码。\n\n大家也可以跟着这个这个教程（直接把每个章节的内容和关键代码发给你的 Coding Agent）从零完成复刻，你也能一步步实现一个完整的企业级 Agent。\n\n仓库在这：https://github.com/ConardLi/easy-agent\n\n大家感兴趣可以提前 Star 支持一下。\n\n预计前期会先实现下面的功能，后面会根据这些功能的实现情况再逐步完善更多功能：\n\n0. 项目脚手架搭建\n1. 最简 LLM 通信层\n2. React/Ink 终端交互界面\n3. Tool 接口设计与第一个工具\n4. 核心 Agentic Loop\n5. 完善工具集\n6. System Prompt 与上下文工程\n7. 权限控制系统\n8. QueryEngine 多轮编排\n9. 会话持久化与恢复\n10. 项目记忆系统\n11. 上下文压缩\n12. Token 预算精细管理\n13. Plan Mode（计划模式）\n14. 任务管理系统\n15. MCP 协议支持\n16. Skills 技能系统\n17. 沙箱机制（Sandbox）\n18. Sub-Agent\n19. 自定义 Agent 系统\n20. 多 Agent 协作（进阶）\n21. Hooks 生命周期系统\n22. 终端 UI 升级\n23. 配置系统完善\n24. 文件历史与回滚\n25. 错误处理与韧性\n26. 管道模式（非交互式）\n27. Auto Mode（AI 分类器自动执行）\n28. 多 Provider 支持\n29. 打包发布与文档\n\n大家感兴趣的话可以点个 Star：https://github.com/ConardLi/easy-agent
+既然有了源码，不如我们直接从零一步步复刻一个，我们在复刻的过程中可以逐步去学习如何实现一个企业级的 Agent。
+
+最终目标是要复刻出 Claude Code 大部分的核心功能。
+
+同时我会把实现的整个过程沉淀为一套完整的技术教程，每个章节都包含详细的实现步骤和可复现的代码。
+
+大家也可以跟着这个这个教程（直接把每个章节的内容和关键代码发给你的 Coding Agent）从零完成复刻，你也能一步步实现一个完整的企业级 Agent。
+
+仓库在这：https://github.com/ConardLi/easy-agent
+
+大家感兴趣可以提前 Star 支持一下。
+
+预计前期会先实现下面的功能，后面会根据这些功能的实现情况再逐步完善更多功能：
+
+0. 项目脚手架搭建
+1. 最简 LLM 通信层
+2. React/Ink 终端交互界面
+3. Tool 接口设计与第一个工具
+4. 核心 Agentic Loop
+5. 完善工具集
+6. System Prompt 与上下文工程
+7. 权限控制系统
+8. QueryEngine 多轮编排
+9. 会话持久化与恢复
+10. 项目记忆系统
+11. 上下文压缩
+12. Token 预算精细管理
+13. Plan Mode（计划模式）
+14. 任务管理系统
+15. MCP 协议支持
+16. Skills 技能系统
+17. 沙箱机制（Sandbox）
+18. Sub-Agent
+19. 自定义 Agent 系统
+20. 多 Agent 协作（进阶）
+21. Hooks 生命周期系统
+22. 终端 UI 升级
+23. 配置系统完善
+24. 文件历史与回滚
+25. 错误处理与韧性
+26. 管道模式（非交互式）
+27. Auto Mode（AI 分类器自动执行）
+28. 多 Provider 支持
+29. 打包发布与文档
+
+大家感兴趣的话可以点个 Star：https://github.com/ConardLi/easy-agent
 
 ## 深度分析
 

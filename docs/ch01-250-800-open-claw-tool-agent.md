@@ -12,8 +12,10 @@
 框架不依赖 LangChain 或其他 Agent 框架，直接基于 Anthropic SDK 构建。选择这条路的原因很简单：中间层越薄，调试越容易，对 API 行为的控制越精确。
 基础设施：Tool 抽象与 ToolRegistry
 
-####  **\n|**
-####  ** ▐Tool 抽象类  **\n
+####  **
+|**
+####  ** ▐Tool 抽象类  **
+
 一个工具由四个要素组成：  ` name  ` 、  ` description  ` 、  ` input_schema  ` 、  ` execute  ` 。
     export abstract class Tool {  abstract readonly name: string;  abstract readonly description: string;  abstract readonly input_schema: AnthropicTool["input_schema"];  abstract execute(args: Record<string, unknown>): Promise<unknown>;  toSchema(): AnthropicTool {    return {      name: this.name,      description: this.description,      input_schema: this.input_schema,    };  }}
 ` input_schema  ` 的类型直接取自  ` @anthropic-ai/sdk  ` 的  ` Tool  ` 类型定义。  ` toSchema()  ` 将实例转换为 Anthropic API 要求的 function calling schema。没有中间层转换，SDK 类型就是唯一的 schema 定义。
@@ -27,8 +29,11 @@
 内置工具一览
 
 ###
-####  ** ▐文件操作  **\n
-**\n|**\n
+####  ** ▐文件操作  **
+
+**
+|**
+
 ** ReadFileTool  ** — 读取文件内容  ，  动态  ` import("node:fs/promises")  ` 加载模块。
 ** WriteFileTool  ** — 写入文件。写入前调用  ` mkdir(dirname(path), { recursive: true })  ` 自动创建父目录，避免因目录不存在而失败。
 ** EditFileTool  ** —  精确文本替换。核心逻辑：

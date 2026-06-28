@@ -61,7 +61,8 @@ The only option Drizzle had was to try to get in touch with the (small and under
 
 Run the following command (replacing the package name) to see the size of your packument currently:
 
-`curl -s https://registry.npmjs.org/react | wc -c | awk '{printf "%.2f MiB\n", $1/1024/1024}'`
+`curl -s https://registry.npmjs.org/react | wc -c | awk '{printf "%.2f MiB
+", $1/1024/1024}'`
 
 ## How can I avoid large manifests?
 

@@ -26,7 +26,11 @@ def run_single_query(query, skill_name, skill_description, timeout, project_root
 
     # 1. 创建临时 Skill 命令文件
     command_file = project_commands_dir / f"{clean_name}.md"
-    command_file.write_text(f"---\ndescription: |\n  {indented_desc}\n---\n...")
+    command_file.write_text(f"---
+description: |
+  {indented_desc}
+---
+...")
 
     # 2. 执行 claude -p，SSE 流式输出
     cmd = ["claude", "-p", query,

@@ -19,21 +19,30 @@ Shareable link: https://excalidraw.com/#json=OUQMTvqOC0O-tqvY2kjvR,0k90NsmJUHkic
 ```mermaid
 flowchart TB
     subgraph Inputs[Input / Source]
-        A["AI Agent\nNon-Human Identity"]
-        B["Developer Endpoints\nIDE, Tools"]
-        C["CI/CD Pipelines\nAutomation"]
+        A["AI Agent
+Non-Human Identity"]
+        B["Developer Endpoints
+IDE, Tools"]
+        C["CI/CD Pipelines
+Automation"]
     end
     
-    D["Traditional IAM\n(Limitations)"]
+    D["Traditional IAM
+(Limitations)"]
     
     subgraph Solution[1Password Solution]
-        E["Endpoint Discovery\n端点发现"]
-        F["Usage Protection\n使用时保护"]
-        G["Unified Audit\n统一审计"]
+        E["Endpoint Discovery
+端点发现"]
+        F["Usage Protection
+使用时保护"]
+        G["Unified Audit
+统一审计"]
     end
     
-    H["Core Risks\n治理盲区 | 凭证蔓延 | 审计薄弱"]
-    I["Best Practices\n动态保护 | 零信任 | 最小权限"]
+    H["Core Risks
+治理盲区 | 凭证蔓延 | 审计薄弱"]
+    I["Best Practices
+动态保护 | 零信任 | 最小权限"]
     
     A --> D
     B --> Solution
