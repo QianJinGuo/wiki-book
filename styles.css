@@ -57,6 +57,31 @@
   margin-bottom: 6px !important;
 }
 
+/* Prev/Next navigation */
+.md-footer__link--prev,
+.md-footer__link--next {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  color: var(--md-default-fg-color);
+  transition: background 0.2s;
+}
+.md-footer__link--prev:hover,
+.md-footer__link--next:hover {
+  background: var(--md-default-fg-color--lightest);
+}
+.md-footer__link--next {
+  margin-left: auto;
+  text-align: right;
+}
+.md-footer__direction {
+  display: block;
+  font-size: 0.7rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
 /* 表格字体 */
 .md-content table,
 .md-content .md-typeset table {
