@@ -1,5 +1,5 @@
 site_name: "AI 工程"
-site_description: "基于 2784 篇一手 AI 材料系统编撰的开源读物 — 覆盖 LLM、Agent、Harness、MCP、安全、训练、推理全栈"
+site_description: "基于 2926 篇一手 AI 材料系统编撰的开源读物 — 覆盖 LLM、Agent、Harness、MCP、安全、训练、推理全栈"
 repo_url: "https://github.com/QianJinGuo/wiki-book"
 repo_name: "QianJinGuo/wiki-book"
 site_url: "https://wiki.jinguo.tech"
@@ -76,7 +76,7 @@ extra:
   generator: false
   meta:
     - name: og:title
-      content: "AI 工程 — 基于 2784 篇文章的系统化提炼"
+      content: "AI 工程 — 基于 2926 篇文章的系统化提炼"
     - name: og:description
       content: "覆盖 LLM、Agent、Harness、MCP、安全、训练、推理全栈的开源读物"
     - name: og:type

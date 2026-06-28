@@ -65,7 +65,7 @@ wiki-book/
 
 - **构建**: MkDocs + Material for MkDocs
 - **容器**: Docker multi-stage (Python 3.12 build → nginx alpine serve)
-- **内容**: 2784 篇 AI 领域一手材料，覆盖 LLM、Agent、Harness、MCP、安全、训练、推理等 20 个主题
+- **内容**: 2926 篇 AI 领域一手材料，覆盖 LLM、Agent、Harness、MCP、安全、训练、推理等 20 个主题
 
 ## License
 
