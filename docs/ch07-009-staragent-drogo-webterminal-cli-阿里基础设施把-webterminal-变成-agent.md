@@ -76,7 +76,9 @@
 `wt run` 在远端命令后追加**唯一 marker** 识别完成：
 
 ```bash
-printf '\n__WT_DONE___:%s\n' "$?"
+printf '
+__WT_DONE___:%s
+' "$?"
 ```
 
 > 这比单纯依赖 prompt 更稳，因为远端 prompt 可能被用户配置、conda 环境、容器 shell、颜色控制字符影响。

@@ -42,7 +42,8 @@ _MEMORY_THREAT_PATTERNS = [
     (r'system\s+prompt\s+override', "sys_prompt_override"),
 
     # Exfiltration via curl/wget with secrets
-(r'curl\s+[^\n]*\$\{?\w*(KEY|TOKEN|SECRET|PASSWORD|CREDENTIAL|API)', "exfil_curl"),
+(r'curl\s+[^
+]*\$\{?\w*(KEY|TOKEN|SECRET|PASSWORD|CREDENTIAL|API)', "exfil_curl"),
 
     # ... 更多模式
 ]在如下情况下Agent会主动保存记忆：

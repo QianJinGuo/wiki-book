@@ -138,7 +138,7 @@ PowerShell
 
 ### 第二步：设置部署区域
 ```
-sed -i "s/\"region\": \"\"/\"region\": \"${TARGET_REGION}\"/" cdk.json
+sed -i "s/"region": ""/"region": "${TARGET_REGION}"/" cdk.json
 cat cdk.json
 ```
 PowerShell
@@ -231,7 +231,17 @@ PowerShell
 
 ### 第三步：应用部署补丁
 ```
-sed -i '/# --- S3 Bucket for Per-User File Storage/i\        # AWS Marketplace — required for Bedrock model access verification\n        self.execution_role.add_to_policy(\n            iam.PolicyStatement(\n                actions=[\n                    "aws-marketplace:ViewSubscriptions",\n                    "aws-marketplace:Subscribe",\n                ],\n                resources=["*"],\n            )\n        )\n' stacks/agentcore_stack.py
+sed -i '/# --- S3 Bucket for Per-User File Storage/i\        # AWS Marketplace — required for Bedrock model access verification
+        self.execution_role.add_to_policy(
+            iam.PolicyStatement(
+                actions=[
+                    "aws-marketplace:ViewSubscriptions",
+                    "aws-marketplace:Subscribe",
+                ],
+                resources=["*"],
+            )
+        )
+' stacks/agentcore_stack.py
 sed -i 's/dashboard_name="OpenClaw-Operations"/dashboard_name=f"OpenClaw-Operations-{region}"/' stacks/observability_stack.py
 sed -i 's/dashboard_name="OpenClaw-Token-Analytics"/dashboard_name=f"OpenClaw-Token-Analytics-{self.region}"/' stacks/token_monitoring_stack.py
 ```

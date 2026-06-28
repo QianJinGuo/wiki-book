@@ -324,7 +324,9 @@
 
 - [深度拆解：AI 智能体 Harness 的构造（译）](https://mp.weixin.qq.com/s/yOX1QZTHs54J-CBg-rKUig)
 - [claude code core developer lessons action space design](https://x.com/trq212/status/2027463795355095314)
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](https://x.com/bcherny/status/2017824286489383315\n\n作为一个被)
+- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](https://x.com/bcherny/status/2017824286489383315
+
+作为一个被)
 - [State of Memory in Agent Harness — mem0 视角的九大 harness 横评](https://mp.weixin.qq.com/s/2c2MV0b1biv71WdX2gCt_A)
 
 ### cio.com（4 篇）

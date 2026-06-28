@@ -388,7 +388,8 @@ def flatten_session(jsonl_path):
     return records
 
 def upload_to_s3(records, bucket, date):
-    body = "\n".join(json.dumps(r) for r in records)
+    body = "
+".join(json.dumps(r) for r in records)
     boto3.client("s3").put_object(
         Bucket=bucket,
         Key=f"flat/date={date}/data.jsonl",

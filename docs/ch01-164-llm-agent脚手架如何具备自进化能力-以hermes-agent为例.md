@@ -86,7 +86,8 @@ memory机制主要依赖于如下两个文件：
         (r'system\s+prompt\s+override', "sys_prompt_override"),
 
         # Exfiltration via curl/wget with secrets  
-        (r'curl\s+[^\n]*\$\{?\w*(KEY|TOKEN|SECRET|PASSWORD|CREDENTIAL|API)', "exfil_curl"),
+        (r'curl\s+[^
+]*\$\{?\w*(KEY|TOKEN|SECRET|PASSWORD|CREDENTIAL|API)', "exfil_curl"),
 
         # ... 更多模式  
     ]

@@ -1,11 +1,5 @@
 # Mathematical Optimization at Enterprise Scale: AWS Innovation Center Methodology and Case Studies
 
-## Ch11.060 Mathematical Optimization at Enterprise Scale: AWS Innovation Center Methodology and Case Studies
-
-> 📊 Level ⭐⭐ | 11.5KB | `entities/mathematical-optimization-aws-innovation-center-enterprise.md`
-
-# Mathematical Optimization at Enterprise Scale: AWS Innovation Center Methodology and Case Studies
-
 > 本文综合提炼自 AWS Generative AI Innovation Center 的企业级数学优化实践。AWS 团队将数学优化定位为 **prescriptive analytics（处方式分析）** —— 不同于 ML 的概率预测，数学优化给出"在约束条件下数学最优的决策"。3 个客户案例展示了 10%-46% 的具体业务收益，方法论 4 步框架可复用。
 
 ## 核心定位：Prescriptive vs Predictive AI

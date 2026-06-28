@@ -37,7 +37,10 @@ app = FastAPI()
 
 def format_sse(event: str, data: dict) -> str:
     """将Python对象格式化为SSE消息"""
-    return f"event: {event}\n" + f"data: {json.dumps(data, ensure_ascii=False)}\n\n"
+    return f"event: {event}
+" + f"data: {json.dumps(data, ensure_ascii=False)}
+
+"
 
 async def fake_llm_stream(prompt: str) -> AsyncGenerator[str, None]:
     for token in ["好的", "，", "这是", "你", "的", "回答", "……"]:
@@ -56,7 +59,9 @@ async def stream(prompt: str, request: Request):
                 yield format_sse("token", {"t": token})
                 now = time.time()
                 if now - last_ping > 15:
-                    yield ": ping\n\n"  # 心跳，防止代理超时
+                    yield ": ping
+
+"  # 心跳，防止代理超时
             yield format_sse("done", {"status": "completed", "ts": time.time()})
         except Exception as e:
             yield format_sse("error", {"message": "stream_failed", "detail": str(e)[:200]})
@@ -76,7 +81,9 @@ Nginx 默认会缓冲代理响应，导致客户端无法实时看到 LLM 输出
 
 ### 2. 超时问题
 
-负载均衡器默认 60 秒空闲超时断开连接。解决方案是定期发送 SSE 注释行（`: ping\n\n`）作为心跳，同时在 Nginx/代理层配置 `proxy_read_timeout 300s` 或更大值。
+负载均衡器默认 60 秒空闲超时断开连接。解决方案是定期发送 SSE 注释行（`: ping
+
+`）作为心跳，同时在 Nginx/代理层配置 `proxy_read_timeout 300s` 或更大值。
 
 ### 3. 客户端断开检测
 

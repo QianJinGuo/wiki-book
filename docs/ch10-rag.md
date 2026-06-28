@@ -1807,7 +1807,10 @@ Fragnesia 利用链的第一步依赖 user namespace 隔离来获取 `CAP_NET_AD
 1. **模块禁用（临时缓解）**：如无需 ESP 功能，禁用相关内核模块：
    ```bash
    rmmod esp4 esp6 rxrpc
-   printf 'install esp4 /bin/false\ninstall esp6 /bin/false\ninstall rxrpc /bin/false\n' > /etc/modprobe.d/fragnesia.conf
+   printf 'install esp4 /bin/false
+install esp6 /bin/false
+install rxrpc /bin/false
+' > /etc/modprobe.d/fragnesia.conf
    ```
 
 2. **用户命名空间限制**：在不影响业务的前提下，限制或禁用非特权用户命名空间

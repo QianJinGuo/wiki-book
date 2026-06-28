@@ -26,7 +26,10 @@ Claude Code 的提示词体系分为六大模块：
 ```javascript
 // 静态规则示例
 if (isEnvTruthy(process.env.CLAUDE_CODE_SIMPLE)) {
-    return [`You are Claude Code, Anthropic's official CLI for Claude.\n\nCWD: ${getCwd()}\nDate: ${getSessionStartDate()}`]
+    return [`You are Claude Code, Anthropic's official CLI for Claude.
+
+CWD: ${getCwd()}
+Date: ${getSessionStartDate()}`]
 }
 // 动态 sections
 const dynamicSections = [

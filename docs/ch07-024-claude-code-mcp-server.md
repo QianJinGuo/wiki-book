@@ -32,7 +32,12 @@ function getMcpInstructions(mcpClients) {
         .filter(c => c.type === "connected")
         .filter(c => c.instructions);
     if (clientsWithInstructions.length === 0) return null;
-    return `# MCP Server Instructions\n\n${clientsWithInstructions.map(c => `## ${c.name}\n${c.instructions}`).join("\n\n")}`;
+    return `# MCP Server Instructions
+
+${clientsWithInstructions.map(c => `## ${c.name}
+${c.instructions}`).join("
+
+")}`;
 }
 ```
 `tools[].description` 描述单工具行为，system 中的 instructions 描述整个 Server 的使用指南。
