@@ -1,6 +1,6 @@
 # 《AI 工程》
 
-> 全球第一部基于 2204 篇一手 AI 材料系统编撰的开源读物。
+> 全球第一部基于 2479 篇一手 AI 材料系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家，博采众长，一路到底。
 
@@ -11,26 +11,26 @@
 | 篇 | 章节 | 定位 | 文章数 |
 |---|---|---|---|
 | **第一篇 · 入门篇** | Ch01 AI 与 LLM 基础 | 任何人 | 926 篇 |
-|  | Ch02 提示词工程与上下文工程 |  | 0 篇 |
+|  | Ch02 提示词工程与上下文工程 |  | 31 篇 |
 |  | Ch03 AI 工具与产品全景 |  | 123 篇 |
 | **第二篇 · 工程师篇** | Ch04 Agent 核心架构 | 有编程基础 | 530 篇 |
 |  | Ch05 Harness 工程 |  | 86 篇 |
-|  | Ch06 记忆与上下文管理 |  | 0 篇 |
+|  | Ch06 记忆与上下文管理 |  | 35 篇 |
 |  | Ch07 技能、工具与 MCP |  | 63 篇 |
-|  | Ch08 多 Agent 协作 |  | 0 篇 |
+|  | Ch08 多 Agent 协作 |  | 24 篇 |
 |  | Ch09 AI 编程与代码生成 |  | 121 篇 |
-|  | Ch10 RAG 与知识检索 |  | 0 篇 |
+|  | Ch10 RAG 与知识检索 |  | 21 篇 |
 | **第三篇 · 专家篇** | Ch11 云基础设施与部署 | 有 ML 基础 | 240 篇 |
 |  | Ch12 安全与治理 |  | 115 篇 |
-|  | Ch13 MLOps 与评估 |  | 0 篇 |
-|  | Ch14 数据工程 |  | 0 篇 |
-| **第四篇 · 科学家篇** | Ch15 训练与微调 | 有研究背景 | 0 篇 |
-|  | Ch16 推理优化与架构 |  | 0 篇 |
-|  | Ch17 多模态与生成 |  | 0 篇 |
-|  | Ch18 机器人与具身智能 |  | 0 篇 |
-| **第五篇 · 大师篇** | Ch19 前沿研究与理论 | 哲学/前沿 | 0 篇 |
-|  | Ch20 AI 哲学、安全与未来 |  | 0 篇 |
-| **总计** | **20 个章节 · 5 篇** |  | **2204 篇** |
+|  | Ch13 MLOps 与评估 |  | 16 篇 |
+|  | Ch14 数据工程 |  | 29 篇 |
+| **第四篇 · 科学家篇** | Ch15 训练与微调 | 有研究背景 | 34 篇 |
+|  | Ch16 推理优化与架构 |  | 21 篇 |
+|  | Ch17 多模态与生成 |  | 30 篇 |
+|  | Ch18 机器人与具身智能 |  | 5 篇 |
+| **第五篇 · 大师篇** | Ch19 前沿研究与理论 | 哲学/前沿 | 13 篇 |
+|  | Ch20 AI 哲学、安全与未来 |  | 16 篇 |
+| **总计** | **20 个章节 · 5 篇** |  | **2479 篇** |
 
 ---
 
@@ -49,7 +49,7 @@
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ... 共 **1807** 篇 → [完整章节](ch01-ai-basics.md)
 
-### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 0 篇
+### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 31 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
 
   - ⭐⭐ Hugging Face AI Agent 术语表：Model / Agent / Scaffolding / Harness / Cont
@@ -107,7 +107,7 @@
   - ⭐⭐ 阿里工程师 Harness 工程化实践 (双案例合并)
   - ... 共 **167** 篇 → [完整章节](ch05-harness.md)
 
-### [Ch06 记忆与上下文管理](ch06-memory.md) — 0 篇
+### [Ch06 记忆与上下文管理](ch06-memory.md) — 35 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
 
   - ⭐⭐ 深度拆解 Hermes Agent 记忆系统
@@ -133,7 +133,7 @@
   - ⭐⭐ 重新定义Skill开发：保姆级教程&一站式开发助手
   - ... 共 **114** 篇 → [完整章节](ch07-skill-tool.md)
 
-### [Ch08 多 Agent 协作](ch08-multi-agent.md) — 0 篇
+### [Ch08 多 Agent 协作](ch08-multi-agent.md) — 24 篇
 > 从单兵到团队：编排、通信、治理
 
   - ⭐ Hermes+Kimi K2.6 多Agent军团实战教程
@@ -159,7 +159,7 @@
   - ⭐⭐ 业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层
   - ... 共 **229** 篇 → [完整章节](ch09-ai-coding.md)
 
-### [Ch10 RAG 与知识检索](ch10-rag.md) — 0 篇
+### [Ch10 RAG 与知识检索](ch10-rag.md) — 21 篇
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
   - ⭐ 为OpenClaw配置网盘空间的最佳实践
@@ -204,7 +204,7 @@
   - ⭐ fedora hummingbird brings the container security model to a linux host
   - ... 共 **194** 篇 → [完整章节](ch12-security.md)
 
-### [Ch13 MLOps 与评估](ch13-mlops.md) — 0 篇
+### [Ch13 MLOps 与评估](ch13-mlops.md) — 16 篇
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
   - ⭐ 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
@@ -217,7 +217,7 @@
   - ⭐⭐ SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
   - ... 共 **16** 篇 → [完整章节](ch13-mlops.md)
 
-### [Ch14 数据工程](ch14-data.md) — 0 篇
+### [Ch14 数据工程](ch14-data.md) — 29 篇
 > AI 的燃料：实时入湖、流处理、数据质量
 
   - ⭐ DDoSing Software Delivery Pipelines
@@ -236,7 +236,7 @@
 
 ## 第四篇 · 科学家篇 — 研究与创新
 
-### [Ch15 训练与微调](ch15-training.md) — 0 篇
+### [Ch15 训练与微调](ch15-training.md) — 34 篇
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
   - ⭐⭐ What I’ve been building: ATOM Report, post-training course, finishing 
@@ -249,7 +249,7 @@
   - ⭐⭐ untitled v2
   - ... 共 **34** 篇 → [完整章节](ch15-training.md)
 
-### [Ch16 推理优化与架构](ch16-inference.md) — 0 篇
+### [Ch16 推理优化与架构](ch16-inference.md) — 21 篇
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
   - ⭐ 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
@@ -262,7 +262,7 @@
   - ⭐⭐ How to Calculate the Inference Efficiency Ratio
   - ... 共 **21** 篇 → [完整章节](ch16-inference.md)
 
-### [Ch17 多模态与生成](ch17-multimodal.md) — 0 篇
+### [Ch17 多模态与生成](ch17-multimodal.md) — 30 篇
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
   - ⭐ Perceptron Mk1 shocks with highly performant video analysis AI model 8
@@ -275,7 +275,7 @@
   - ⭐⭐ How transparent is DiffusionGemma (and why it matters)
   - ... 共 **30** 篇 → [完整章节](ch17-multimodal.md)
 
-### [Ch18 机器人与具身智能](ch18-robotics.md) — 0 篇
+### [Ch18 机器人与具身智能](ch18-robotics.md) — 5 篇
 > 从数字到物理：强化学习、仿真、人形机器人
 
   - ⭐⭐ Unitree's IPO Filing: The State of the Robotics Market
@@ -290,7 +290,7 @@
 
 ## 第五篇 · 大师篇 — 哲学、安全与未来
 
-### [Ch19 前沿研究与理论](ch19-research-frontier.md) — 0 篇
+### [Ch19 前沿研究与理论](ch19-research-frontier.md) — 13 篇
 > Scaling Law、涌现能力、世界模型、自我博弈
 
   - ⭐⭐ NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议
@@ -303,7 +303,7 @@
   - ⭐⭐⭐⭐ 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
   - ... 共 **13** 篇 → [完整章节](ch19-research-frontier.md)
 
-### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 0 篇
+### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 16 篇
 > 超级智能、存在风险、AI 治理、人类命运
 
   - ⭐ Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
@@ -324,4 +324,4 @@
 
 > 基于 [QianJinGuo/wiki](https://github.com/QianJinGuo/wiki) 知识库编撰 | 由 [Hermes Agent](https://hermes-agent.nousresearch.com) 自动化生成
 > 
-> 内容来源：2204 篇一手 AI 材料 | 许可协议：CC BY-SA 4.0
+> 内容来源：2479 篇一手 AI 材料 | 许可协议：CC BY-SA 4.0
