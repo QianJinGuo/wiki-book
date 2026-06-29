@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-marketing-autoresearch-ai-native-practice.md)
 
-# 高德 Marketing AutoResearch：营销增长 AI Native 经营托管框架
+## 高德 Marketing AutoResearch：营销增长 AI Native 经营托管框架
 
 ## 一句话
 

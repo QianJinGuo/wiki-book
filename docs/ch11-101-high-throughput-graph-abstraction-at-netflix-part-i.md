@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.6KB | `entities/high-throughput-graph-abstraction-at-netflix.md`
 
-# High-Throughput Graph Abstraction at Netflix: Part I
+## High-Throughput Graph Abstraction at Netflix: Part I
 
 > **Background**: Netflix 内部维护一个跨服务的"图"用于描述服务依赖、客户连接、用户体验路径。Part I 介绍 10M ops/sec 规模、跨 650TB 数据量的生产级图抽象挑战与设计取舍。
 

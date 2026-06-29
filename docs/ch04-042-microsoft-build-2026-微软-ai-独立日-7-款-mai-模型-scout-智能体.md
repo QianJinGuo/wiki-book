@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 24.9KB | `entities/microsoft-build-2026-mai-models-scout-agent.md`
 
-# Microsoft Build 2026：微软 AI 独立日
+## Microsoft Build 2026：微软 AI 独立日
 > "我们现在已基本追平了几个月前的最先进水平。" —— Mustafa Suleyman（微软 AI 执行副总裁兼 CEO）
 
 **Microsoft Build 2026** 是微软的"AI 独立日"——从"AI 应用整合者"（依赖 OpenAI）转向**"全栈 AI 基础设施与模型提供者"**。核心发布：① **MAI-Thinking-1**（首个高级推理模型，350 亿活跃参数 / 1 万亿总参数 / SWE Bench Pro 与 Claude Opus 4.6 持平）② **6 款 MAI 系列模型**（Code / Image / Transcribe / Voice 等）③ **Scout**（基于 OpenClaw 框架的 365 智能体，可全天候自主运行）。**量子位补充全景视角**：④ **OpenClaw 登 Windows + MXC 沙箱** ⑤ **GitHub Copilot 独立桌面 App** ⑥ **Windows 开发者体验大升级** ⑦ **NVIDIA 合作 + Surface RTX Spark Dev Box**。

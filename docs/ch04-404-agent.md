@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/agent-时代我们架构师应该学什么.md`
 
-# Agent 时代，我们架构师应该学什么？
+## Agent 时代，我们架构师应该学什么？
 架构师（JiaGouX）  我们都是架构师！
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-时代我们架构师应该学什么.md)

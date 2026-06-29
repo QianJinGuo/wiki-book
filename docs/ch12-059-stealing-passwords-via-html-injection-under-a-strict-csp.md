@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/afine-csp-html-injection-password-exfiltration.md`
 
-# Stealing Passwords via HTML Injection Under a Strict CSP
+## Stealing Passwords via HTML Injection Under a Strict CSP
 
 ## 摘要
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 19.1KB | `entities/ai-agent-harness-construction-akshay.md`
 
-# 深度拆解：AI 智能体 Harness 的构造（译）
+## 深度拆解：AI 智能体 Harness 的构造（译）
 > 原文：Akshay Pachaar @x.com
 > 编译：宝玉AI
 

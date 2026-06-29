@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/deep-agents-bedrock-agentcore-subagent-orchestration-aws.md`
 
-# Deep Agents + Bedrock AgentCore：多 Agent 编排 + 隔离基础设施的端到端研究 Agent 实战
+## Deep Agents + Bedrock AgentCore：多 Agent 编排 + 隔离基础设施的端到端研究 Agent 实战
 
 > **Background**: 本文合成自 AWS ML Blog 2026-06-15 文章，作者 Sundar Raghavan（Sr Solutions Architect, Agentic AI Foundations）和 Saurav Das（AgentCore PM）。聚焦 LangChain Deep Agents 框架 + Amazon Bedrock AgentCore 基础设施的端到端集成，是"框架级 + 基础设施级"双层编排的最新官方参考实现。
 
@@ -63,9 +63,9 @@ for company_name, company_url in COMPETITORS:
 
 ```python
 ci_toolkit, ci_tools = await create_code_interpreter_toolkit(region="us-west-2")
-# 工具: execute_code, execute_command, write_files, read_files, install_packages
-# 预装: pandas, matplotlib, numpy
-# 运行时长: 最多 15 分钟
+## 工具: execute_code, execute_command, write_files, read_files, install_packages
+## 预装: pandas, matplotlib, numpy
+## 运行时长: 最多 15 分钟
 ```
 
 ### Memory 配置
@@ -85,10 +85,10 @@ def save_research_insights(insights: str, session_id: str = "default") -> str:
 ### 模型无关
 
 ```python
-# 切换模型只需一行 — AgentCore Browser/Interpreter/Memory 不变
+## 切换模型只需一行 — AgentCore Browser/Interpreter/Memory 不变
 from langchain_aws import ChatBedrockConverse
 model = ChatBedrockConverse(model="us.anthropic.claude-sonnet-4-6", region_name="us-west-2")
-# → 可换 Anthropic API / Google Gemini / OpenAI
+## → 可换 Anthropic API / Google Gemini / OpenAI
 ```
 
 ## 三层可观测性

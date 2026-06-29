@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.4KB | `entities/p-build-the-agent-or-power-the-agent.md`
 
-# Build the Agent or Power the Agent?
+## Build the Agent or Power the Agent?
 
 > **来源**: [Build the Agent or Power the Agent?](https://tanayj.com/p/build-the-agent-or-power-the-agent)
 

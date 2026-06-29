@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.5KB | `entities/stripe-agent-economic-infrastructure-5-products.md`
 
-# Stripe Agent 经济基础设施 5 套图谱
+## Stripe Agent 经济基础设施 5 套图谱
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stripe-agent-economic-infrastructure-emily-sands.md)
 

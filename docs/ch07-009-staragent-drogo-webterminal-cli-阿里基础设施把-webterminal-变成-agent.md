@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 20.0KB | `entities/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md`
 
-# StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚
+## StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚
 
 ## Overview
 
@@ -31,15 +31,15 @@
 **新增 `wsh` / `wcp`**，让 WebTerminal 像 SSH/SCP 一样用：
 
 ```bash
-# 浏览器登录一次，后续复用 cookie cache
+## 浏览器登录一次，后续复用 cookie cache
 ./bin/wt auth login --target-ip x.y.z.w
-# 黑屏进 shell
+## 黑屏进 shell
 ./bin/wsh x.y.z.w
-# 远程命令执行
+## 远程命令执行
 ./bin/wsh x.y.z.w -- 'hostname; pwd'
-# 上传
+## 上传
 ./bin/wcp /tmp/x.txt x.y.z.w:/tmp/x.txt --force
-# 下载
+## 下载
 ./bin/wcp x.y.z.w:/tmp/x.txt /tmp/x.down.txt --force
 ```
 

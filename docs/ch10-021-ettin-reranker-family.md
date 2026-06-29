@@ -123,17 +123,17 @@ model = CrossEncoder(
 ```python
 from sentence_transformers import SentenceTransformer, CrossEncoder
 
-# 阶段1：快速 embedding 检索（亚毫秒级）
+## 阶段1：快速 embedding 检索（亚毫秒级）
 embedder = SentenceTransformer("sentence-transformers/static-retrieval-mrl-en-v1")
 reranker = CrossEncoder("cross-encoder/ettin-reranker-68m-v1")
 
-# 编码 + 检索 top-100
+## 编码 + 检索 top-100
 query_emb = embedder.encode_query(query, convert_to_tensor=True)
 corpus_emb = embedder.encode_document(corpus, convert_to_tensor=True)
 scores = embedder.similarity(query_emb, corpus_emb)[0]
 top_k_idx = scores.topk(min(100, len(corpus))).indices.tolist()
 
-# 阶段2：精排序
+## 阶段2：精排序
 top_k_docs = [corpus[i] for i in top_k_idx]
 ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 ```

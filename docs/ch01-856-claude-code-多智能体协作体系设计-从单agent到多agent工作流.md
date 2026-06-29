@@ -285,11 +285,11 @@ const agentContexts = {
 
 ```bash
 
-# 分支工作流
+## 分支工作流
 git worktree add worktree-1 feature-branch-1
 git worktree add worktree-2 feature-branch-2
 
-# ... 并行处理 ...
+## ... 并行处理 ...
 git merge worktree-1 feature-branch-1
 git merge worktree-2 feature-branch-2
 ```

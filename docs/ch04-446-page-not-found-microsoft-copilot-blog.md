@@ -4,9 +4,8 @@
 
 > 📊 Level ⭐⭐ | 4.4KB | `entities/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md`
 
-# Page not found | Microsoft Copilot Blog
-[Skip to content](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp/#mainContent)
-[Skip to main content](/ch04-javascript:void(0/))
+## Page not found | Microsoft Copilot Blog
+[[Skip to main content](/ch04-javascript:void(0/))
 
 ## 相关实体
 - [Microsoft Agent Framework Python Full Guide Zizhi](/ch01-585-微软-agent-framework-全栈指南-从-hello-agent-到生产托管-python/)

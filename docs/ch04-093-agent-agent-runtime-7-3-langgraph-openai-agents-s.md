@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.1KB | `entities/agent-runtime-7-responsibilities-secondcurve-2026.md`
 
-# Agent 的骨架：Agent Runtime 7 大职责 + 3 主流框架对比
+## Agent 的骨架：Agent Runtime 7 大职责 + 3 主流框架对比
 
 > [!quote] 一句话定义
 > Runtime 是**驱动 Agent Loop 运转的执行框架**,负责把 LLM、工具、状态、权限和日志串成一个可运行的系统。**LLM 是引擎,Runtime 是底盘。没有底盘,引擎再好也上不了路。**
@@ -25,19 +25,19 @@
 **对照代码**:
 
 ```python
-# 无 Runtime
+## 无 Runtime
 while True:
     action = llm.call(context)
     result = tool.run(action)
     context.append(result)
-# 工具失败直接抛异常/没有日志/没有权限控制/不知道什么时候结束/无从排查
-# 这是一个脚本,不是一个系统
+## 工具失败直接抛异常/没有日志/没有权限控制/不知道什么时候结束/无从排查
+## 这是一个脚本,不是一个系统
 
-# 有 Runtime
-# 同样的 Loop,但每一步都有人兜底——
-# 工具调用前校验权限,执行结果写入 Trace,
-# 异常触发重试或终止,敏感操作等待人工确认
-# 这才是一个可以交付、可以维护、可以信任的系统
+## 有 Runtime
+## 同样的 Loop,但每一步都有人兜底——
+## 工具调用前校验权限,执行结果写入 Trace,
+## 异常触发重试或终止,敏感操作等待人工确认
+## 这才是一个可以交付、可以维护、可以信任的系统
 ```
 
 ## Runtime 7 大职责 + 1 复杂 Agent 扩展层

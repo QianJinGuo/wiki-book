@@ -26,16 +26,16 @@ my-skill/
 ### 2.2 Description 的写法决定加载率
 ```yaml
 
-# ✅ 好的 description — 包含触发短语和关键词
+## ✅ 好的 description — 包含触发短语和关键词
 description: Deploy applications and websites to Vercel. Use when the user
   requests deployment actions like "deploy my app", "push this live",
   or "create a preview deployment".
 
-# ✅ 好的 description — 定义时序位置
+## ✅ 好的 description — 定义时序位置
 description: Use when implementing any feature or bugfix, before writing
   implementation code
 
-# ❌ 差的 description — 太模糊
+## ❌ 差的 description — 太模糊
 description: Helps with deployment stuff
 ```
 **核心原则：**
@@ -61,7 +61,7 @@ description: Helps with deployment stuff
 **结构：**
 ```
 
-# 标题
+## 标题
 ## Prerequisites（前置条件）
 ## Quick Start（主流程：Step 1 → 2 → 3）
 ## Fallback（降级方案）
@@ -256,7 +256,7 @@ name: my-skill
 description: [一句话描述做什么 + 什么时候触发]
 ---
 
-# Skill 名称
+## Skill 名称
 [一句话核心原则 + 安全默认值]
 
 ## Prerequisites

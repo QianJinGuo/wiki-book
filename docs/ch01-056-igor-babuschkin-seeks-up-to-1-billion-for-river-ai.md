@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 7.3KB | `entities/letsdatascience-igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09.md`
 
-# Igor Babuschkin Seeks Up To $1 Billion For River AI
+## Igor Babuschkin Seeks Up To $1 Billion For River AI
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/letsdatascience-igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09.md)
 

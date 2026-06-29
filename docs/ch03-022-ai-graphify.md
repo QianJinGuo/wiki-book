@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 7.6KB | `entities/graphify-software-engineering-knowledge-graph.md`
 
-# Graphify：可查询的软件工程知识图谱
+## Graphify：可查询的软件工程知识图谱
 
 ## 摘要
 
@@ -112,10 +112,10 @@ tree-sitter 是一个增量解析器，支持 40+ 编程语言，能在毫秒级
 4. 通过 `--update` 或 git hook 增量更新
 
 ```bash
-# 自动增量重建
+## 自动增量重建
 graphify hook install
 
-# .gitignore 排除不稳定文件
+## .gitignore 排除不稳定文件
 graphify-out/manifest.json
 graphify-out/cost.json
 ```

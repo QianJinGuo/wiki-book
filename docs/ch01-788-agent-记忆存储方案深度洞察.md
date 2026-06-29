@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/agent-memory-storage-six-schools-quantumtransf-debate-frank.md`
 
-# Agent 记忆存储方案深度洞察
+## Agent 记忆存储方案深度洞察
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)
 

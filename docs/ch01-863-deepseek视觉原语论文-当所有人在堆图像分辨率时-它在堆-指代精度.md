@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 13.0KB | `entities/deepseek-vision-primitives.md`
 
-# DeepSeek视觉原语论文：视觉指代精度新范式
+## DeepSeek视觉原语论文：视觉指代精度新范式
 ## 核心观点
 DeepSeek 2026年4月30日发布论文 *Thinking with Visual Primitives*，提出「视觉原语」概念——将坐标和边界框作为视觉推理的最小单元，让模型一边推理一边「用手指着图说话」。这是 DeepSeek 补齐多模态能力的核心动作，同时也是一种反共识的技术路线选择：主流在堆图像分辨率，DeepSeek 在堆指代精度。
 

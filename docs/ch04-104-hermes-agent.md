@@ -88,7 +88,7 @@ curl -fsSL https://arms-apm-cn-hangzhou-pre.oss-cn-hangzhou.aliyuncs.com/hermes-
 hermes-cms enable
 hermes   # 前台运行
 
-# 或
+## 或
 hermes gateway start  # 后台运行
 ```
 **第四步：确认埋点生效**

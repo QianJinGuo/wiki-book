@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/amazon-iot-core-kiro-industrial-data-pipeline.md`
 
-# 基于 Amazon IoT Core 与 Kiro 构建可迁移的工业 IoT 数据管道
+## 基于 Amazon IoT Core 与 Kiro 构建可迁移的工业 IoT 数据管道
 
 > **Background**: 智慧工厂跨账户迁移实战。从"手动步骤指南" → 幂等 boto3 编排脚本 → Kiro 包装为 AI Agent 可调用的工作流。配套源码：`mildone82/iot-migration`。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 13.5KB | `entities/kuaishou-worker-agent-desktop-software.md`
 
-# 快手首个打工人Agent
+## 快手首个打工人Agent
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kuaishou-worker-agent-desktop-software.md)
 

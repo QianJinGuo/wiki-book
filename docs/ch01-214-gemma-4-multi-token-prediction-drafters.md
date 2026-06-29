@@ -94,15 +94,15 @@ MTP drafters 为以下场景带来显著改善[^7]：
 
 ```python
 
-# HuggingFace Transformers
+## HuggingFace Transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
 model = AutoModelForCausalLM.from_pretrained("google/gemma-4-26b", use_mtp=True)
 
-# MLX (Apple Silicon)
+## MLX (Apple Silicon)
 from mlx_lm import load
 model, tokenizer = load("google/gemma-4-26b-mlx", draft_model="google/gemma-4-26b-drafter")
 
-# vLLM
+## vLLM
 from vllm import LLM
 llm = LLM(model="google/gemma-4-26b", enable_mtp=True)
 ```

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.3KB | `entities/ai-native-startup-cyberfund-2026.md`
 
-# How to Build an AI-Native Startup
+## How to Build an AI-Native Startup
 
 ## 摘要
 

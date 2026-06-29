@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/claude-code-skills-superpowers-practice.md`
 
-# claude-code-skills-superpowers-practice
+## claude-code-skills-superpowers-practice
 
 Claude Code的Skills实践及利器推荐：工欲善其事，必先利其器
 目前在实践和应用Claude Code，顺便分享一些在实践过程中的经验，没想竟然写成一个系列了。如果你也对Claude Code感兴趣，可以先回顾一下之前的文章，然后开始今天的文章。

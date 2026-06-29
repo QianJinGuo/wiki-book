@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/mountpoint-s3-vs-s3-files-eks-storage-comparison.md`
 
-# Mountpoint S3 vs S3 Files：EKS 上 S3 数据接入的两种方案实战对比
+## Mountpoint S3 vs S3 Files：EKS 上 S3 数据接入的两种方案实战对比
 
 > **Background**: 本文合成自 AWS 中国官方博客 2026-06-15 文章。聚焦 **EKS 上 S3 数据挂载的两种主流方案（Mountpoint S3 CSI vs S3 Files + EFS CSI）的端到端实战对比**。两种方案非互斥，混合部署按场景选型是当前最佳实践。
 

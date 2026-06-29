@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/5238213.md`
 
-# OpenAI buys AI consultancy to sell enterprises on its models
+## OpenAI buys AI consultancy to sell enterprises on its models
 
 ## 相关实体
 

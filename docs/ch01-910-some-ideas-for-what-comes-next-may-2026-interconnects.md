@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 8.7KB | `entities/some-ideas-for-what-comes-next-may-2026.md`
 
-# Some ideas for what comes next, May 2026 (Interconnects)
+## Some ideas for what comes next, May 2026 (Interconnects)
 
 > **Background**: Nathan Lambert (Interconnects) 2026 年 5 月对 AI 行业未来一年的洞察：开源/闭源模型差距、AI 经济规模、地缘政治、知识工作极化等多维度预测。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 24.1KB | `entities/agentscope-java-2.0-enterprise-distributed-harness.md`
 
-# AgentScope Java 2.0：企业级分布式 Harness 框架
+## AgentScope Java 2.0：企业级分布式 Harness 框架
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentscope-java-2.0-enterprise-distributed-harness.md)
 
@@ -262,7 +262,7 @@ AgentScope Harness 定位 = **把工程问题抽象成可组合基础能力**，
 ### 子 agent 用 markdown 文件声明
 
 ```markdown
-# workspace/subagents/researcher.md
+## workspace/subagents/researcher.md
 ---
 description: 调研子 agent
 workspace:

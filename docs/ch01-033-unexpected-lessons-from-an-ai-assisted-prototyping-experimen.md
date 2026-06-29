@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 8.8KB | `entities/adobe-design-unexpected-lessons-ai-prototyping-2026.md`
 
-# Unexpected lessons from an AI-assisted prototyping experiment
+## Unexpected lessons from an AI-assisted prototyping experiment
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 

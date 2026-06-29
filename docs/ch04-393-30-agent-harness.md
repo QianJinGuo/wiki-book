@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/从-30-分钟手搓-agent到-harness-成为新后端.md`
 
-# 从 30 分钟手搓 Agent，到 Harness 成为"新后端"
+## 从 30 分钟手搓 Agent，到 Harness 成为"新后端"
 
 架构师（JiaGouX）  我们都是架构师！
 前不久我们整理过一个demo：《 [ 30分钟手搓 Agent：LLM + Tools + Loop + Memory 跑通最小闭环 ](<https://mp.weixin.qq.com/s?__biz=MzAwNjQwNzU2NQ==&mid=2650409091&idx=1&sn=3c40343aefdf11fdb208588a44033e14&scene=21#wechat_redirect>) 》，我把 Agent 简化成一个很小的循环：

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/skillopt-microsoft-train-skill-like-neural-network.md`
 
-# 别再手写 Skill 了！微软最新研究：像神经网络一样训练 Skill
+## 别再手写 Skill 了！微软最新研究：像神经网络一样训练 Skill
 
 > SkillOpt 是微软的研究成果，提出将 Agent 的 Skill 文档（如 CLAUDE.md、Agents.md）视为可训练的「权重」，通过 rollout→reflection→edit 循环自动优化。在 52 个测试格中全部达到最优或并列最优，相比直怼 GPT-5.5 平均提升 +23.5 分。
 

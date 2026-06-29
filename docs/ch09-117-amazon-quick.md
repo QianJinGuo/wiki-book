@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 1.3KB | `entities/用-amazon-quick-加速日常数据工作.md`
 
-# 用 Amazon Quick 加速日常数据工作
+## 用 Amazon Quick 加速日常数据工作
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 31.7KB | `entities/gaode-ai-native-7x24-pipeline-self-healing.md`
 
-# 高德 AI-Native 生产线（第 3 期）：7x24 Self-Healing Pipeline + Agent 自进化
+## 高德 AI-Native 生产线（第 3 期）：7x24 Self-Healing Pipeline + Agent 自进化
 > "**当人不再需要全程在场，AI 就可以 7×24 不间断运转，工程师的精力从'操作执行'解放到'决策审查'，单人可管控的并行任务数量从 1 跃升至 10 个以上。**"
 >
 > "**这不仅是简单地用 AI 替代人工操作，而是从根本上重构生产线的设计哲学——人定义规则和边界，AI 在规则内自主决策和执行。**"

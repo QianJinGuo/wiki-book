@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/tsinghua-agent-security-fangcun.md`
 
-# 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽
+## 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽
 > **URL**: https://mp.weixin.qq.com/s/BKZLh5x1QyLsQISedMBr1Q
 > **SHA256**: ec62655e1642b8058f8882e5e92f2062d4c5fb2ef1ac38f9820ed1d40d8eba2e
 来自**清华大学人工智能学院、交叉信息研究院**的方寸跃迁团队，提出一套面向 Agent 运行全生命周期的多层安全体系，覆盖事前（Skill Ward）× 事中（Guard × Observer）× 事后（审计）完整链路。

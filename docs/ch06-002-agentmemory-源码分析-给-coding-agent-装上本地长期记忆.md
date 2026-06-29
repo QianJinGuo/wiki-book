@@ -154,20 +154,20 @@ combinedScore =
 
 ```bash
 
-# 健康检查
+## 健康检查
 curl http://localhost:3111/agentmemory/health
 
-# 写入观察
+## 写入观察
 curl -X POST http://localhost:3111/agentmemory/observe \
   -H 'Content-Type: application/json' \
   -d '{"hookType":"post_tool_use","sessionId":"...","project":"...","data":{"tool_name":"Read","tool_input":{},"tool_output":"..."}}'
 
-# 搜索
+## 搜索
 curl -X POST http://localhost:3111/agentmemory/smart-search \
   -H 'Content-Type: application/json' \
   -d '{"query":"auth middleware jwt","limit":10}'
 
-# 显式保存记忆
+## 显式保存记忆
 curl -X POST http://localhost:3111/agentmemory/remember \
   -H 'Content-Type: application/json' \
   -d '{"content":"...","type":"architecture","concepts":["jwt","jose"],"files":["src/middleware/auth.ts"]}'
@@ -349,13 +349,13 @@ Engine/ 使用 Elastic License 2.0 而非 Apache 2.0，意味着如果你把 iii
 iii 的 KV 没有原生 SQL，但可以用 `mem::audit` 系列工具做质量监控：
 
 ```bash
-# 检查异常高活跃 session（可能有无限循环）
+## 检查异常高活跃 session（可能有无限循环）
 curl "http://localhost:3111/agentmemory/list-sessions?limit=100&status=active"
 
-# 检查被压缩失败的 observation（没有 LLM key 时是正常的）
+## 检查被压缩失败的 observation（没有 LLM key 时是正常的）
 curl "http://localhost:3111/agentmemory/list-observations?limit=20&compressed=false"
 
-# 检查高频文件访问（可能需要 pin 到 memory slot）
+## 检查高频文件访问（可能需要 pin 到 memory slot）
 curl "http://localhost:3111/agentmemory/get-memory?type=fact&limit=50"
 ```
 

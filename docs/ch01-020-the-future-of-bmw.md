@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 10.1KB | `entities/the-future-of-bmw-design-a-conversation-with-max-missoni.md`
 
-# The Future of BMW Design: A Conversation with Max Missoni
+## The Future of BMW Design: A Conversation with Max Missoni
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-future-of-bmw-design-a-conversation-with-max-missoni.md)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.5KB | `entities/calv-oracle-and-the-firm.md`
 
-# The Oracle and the Firm
+## The Oracle and the Firm
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/calv-oracle-and-the-firm.md)
 

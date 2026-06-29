@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/z-glm-5.2.md`
 
-# GLM-5.2: Built for Long-Horizon Tasks
+## GLM-5.2: Built for Long-Horizon Tasks
 
 > **背景**：从 newsletter candidates 提取，2026-06-18 v×c=64 stars=4 通过评分门槛。
 > URL: https://z.ai/blog/glm-5.2

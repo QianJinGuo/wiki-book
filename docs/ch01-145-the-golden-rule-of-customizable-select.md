@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.2KB | `entities/webkit-customizable-select-golden-rule.md`
 
-# The golden rule of Customizable Select
+## The golden rule of Customizable Select
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/webkit-customizable-select-golden-rule.md)
 

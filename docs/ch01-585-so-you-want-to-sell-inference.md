@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/tomtunguz-com-so-you-want-to-sell-inference.md`
 
-# So You Want to Sell Inference
+## So You Want to Sell Inference
 
 ## 摘要
 

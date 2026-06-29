@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/knowledge-agents-beat-frontier-models.md`
 
-# Knowledge Agents: Beat Frontier Models with Better Structure
+## Knowledge Agents: Beat Frontier Models with Better Structure
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/knowledge-agents-beat-frontier-models.md)
 

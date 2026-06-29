@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/impeccable-anomaly-vibe-design-vs-vibe-coding.md`
 
-# AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判
+## AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding.md)
 

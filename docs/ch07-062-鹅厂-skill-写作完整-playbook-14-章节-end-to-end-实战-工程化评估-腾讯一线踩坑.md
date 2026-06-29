@@ -2,9 +2,9 @@
 
 ## Ch07.062 鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估（腾讯一线踩坑 + Anthropic 官方做法整合） — OpenMAIC 课堂版
 
-> 📊 Level ⭐⭐⭐ | 84.5KB | `entities/tencent-skill-writing-complete-playbook-jackjchou/classroom.md`
+> 📊 Level ⭐⭐⭐ | 84.5KB | `entities/tencent-skill-writing-complete-playbook-jackjchou.md`
 
-# 鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估（腾讯一线踩坑 + Anthropic 官方做法整合）
+## 鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估（腾讯一线踩坑 + Anthropic 官方做法整合）
 
 > 来源：OpenMAIC 批量生成 ·  · dir=`l-dOUpM1XL_tencent-skill-writing-complete-playbook-jackjchou` · 场景数=14
 > 播放地址：`/classroom/l-dOUpM1XL`

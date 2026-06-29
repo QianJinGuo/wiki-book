@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/agentic-rl-token-in-token-out-done-right-c6aaa4.md`
 
-# Agentic RL: Token-In, Token-Out Done Right
+## Agentic RL: Token-In, Token-Out Done Right
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-rl-token-in-token-out-done-right-c6aaa4.md)
 

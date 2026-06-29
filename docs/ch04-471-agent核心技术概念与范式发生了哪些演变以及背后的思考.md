@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/agent-paradigm-evolution-feipeng-alibaba.md`
 
-# Agent核心技术概念与范式发生了哪些演变以及背后的思考
+## Agent核心技术概念与范式发生了哪些演变以及背后的思考
 
 ## 相关实体
 

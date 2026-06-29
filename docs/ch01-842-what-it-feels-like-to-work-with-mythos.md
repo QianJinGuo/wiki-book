@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 1.3KB | `entities/what-it-feels-like-to-work-with-mythos.md`
 
-# What it feels like to work with Mythos
+## What it feels like to work with Mythos
 
 ## 深度分析
 

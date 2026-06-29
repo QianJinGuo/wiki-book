@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/storage-workload-architecture-taxonomy-vanlightly.md`
 
-# Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly
+## Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly
 
 Jack Van Lightly 提出的存储/工作负载架构分类法，系统化梳理数据库和存储系统的架构模式。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/code-intelligence-changelog.md`
 
-# Code Intelligence – Changelog
+## Code Intelligence – Changelog
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/code-intelligence-changelog.md)
 
@@ -13,8 +13,7 @@
 Code Intelligence – Changelog 涉及agent领域的核心技术议题。
 ### 核心观点
 1. Markdown Content:
-# Code Intelligence – Changelog
-Skip to content →
+## Code Intelligence – Changelog
 *   [](https://linear.
 2. With Code Intelligence, Linear Agent can reason about how your product actually works, not just what’s captured in issues, projects, and docs.
 3. Ask how a feature is implemented, why something behaves a certain way, what a change might affect, or which technical constraints should shape a plan or customer request without digging through the codebase or interrupting an engineer.

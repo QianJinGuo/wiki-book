@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 8.8KB | `entities/how-llms-actually-work-0xkato.md`
 
-# How LLMs Actually Work: 0xkato Transformer Walkthrough
+## How LLMs Actually Work: 0xkato Transformer Walkthrough
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-llms-actually-work-0xkato.md)
 

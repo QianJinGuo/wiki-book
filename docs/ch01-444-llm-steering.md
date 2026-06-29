@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/llm-steering-behavior-guidance.md`
 
-# LLM Steering 行为引导
+## LLM Steering 行为引导
 
 > [!summary] 核心洞察
 > Steering 在推理阶段对模型内部激活进行即时调控，以引导模型输出符合预期目标。浙大+阿里 ACL 2026 两篇论文揭示其统一机理（动态权重更新→三阶段规律→激活流形假设），构建首个多维度评估框架 SteerEval 发现"控制衰减"现象，并提出开源工具 EasyEdit2。

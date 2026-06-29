@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 4.0KB | `entities/figma-make-local-code.md`
 
-# Figma Make 本地代码编辑
+## Figma Make 本地代码编辑
 
 > **Background**: 本文档基于对外部技术来源的评分入库建立，v×c=7×7=49。
 

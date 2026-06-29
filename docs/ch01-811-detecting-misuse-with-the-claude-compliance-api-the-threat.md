@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/claude-compliance-api-misuse-detection-papermtn.md`
 
-# Detecting Misuse with the Claude Compliance API: The Threat Is in the Content
+## Detecting Misuse with the Claude Compliance API: The Threat Is in the Content
 
 > **Background**: PaperMtn security research blog, 2026-06-11. Built a misuse detection system on top of Claude Enterprise Compliance API, catching prompt injection, jailbreak, and data exfiltration through content-layer analysis.
 

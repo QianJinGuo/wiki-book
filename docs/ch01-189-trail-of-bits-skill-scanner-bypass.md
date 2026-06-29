@@ -6,7 +6,7 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/trail-of-bits-skill-scanner-bypass-distribution.md)
 
-# Trail of Bits: Skill Scanner Bypass 实证研究
+## Trail of Bits: Skill Scanner Bypass 实证研究
 
 ## 一句话总结
 

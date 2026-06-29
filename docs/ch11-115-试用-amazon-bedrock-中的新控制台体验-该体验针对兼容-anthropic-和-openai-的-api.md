@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/试用-amazon-bedrock-中的新控制台体验该体验针对兼容-anthropic-和-openai-的-api-进.md`
 
-# 试用 Amazon Bedrock 中的新控制台体验
+## 试用 Amazon Bedrock 中的新控制台体验
 
 ## 概览
 
@@ -33,7 +33,7 @@ Amazon Bedrock 重新设计的控制台——**针对 OpenAI / Anthropic 兼容 
 ### 5. bedrock-mantle 兼容端点
 
 ```bash
-# 新增的 OpenAI/Anthropic 兼容端点
+## 新增的 OpenAI/Anthropic 兼容端点
 curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
   -H "Authorization: Bearer ..." \
   -d '{"model": "anthropic.claude-fable-5", "messages": [...]}'

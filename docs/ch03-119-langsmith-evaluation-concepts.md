@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/langsmith-evaluation-concepts.md`
 
-# LangSmith Evaluation Concepts
+## LangSmith Evaluation Concepts
 
 - 对 agent 要拆成 output、retrieval、tool invocation、trajectory 等关键部件
 - 先用 5-10 个 curated examples 定义 ground truth

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/gitlab-14pct-layoff-agent-platform-ai-2026q1.md`
 
-# GitLab 14% 裁员 + Duo Agent Platform 扩张
+## GitLab 14% 裁员 + Duo Agent Platform 扩张
 
 ## 概览
 

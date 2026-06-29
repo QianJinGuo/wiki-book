@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md`
 
-# llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution
+## llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution
 
 深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"
 本文是「项目深度解析」系列的第4篇，系列文章为《深度解析OpenClaw》、《深度解析Claude Code》、《深度解析Hermes Agent》。（文章内容基于作者个人技术实践与独立思考，旨在分享经验，仅代表个人观点。）

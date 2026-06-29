@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 23.6KB | `entities/alibabacloud-cms-manage-skill-natural-language-observability.md`
 
-# alibabacloud-cms-manage Skill：阿里云 CMS 2.0 可观测接入的 AI Agent Skill 化
+## alibabacloud-cms-manage Skill：阿里云 CMS 2.0 可观测接入的 AI Agent Skill 化
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-cms2-cli-skill-natural-language-observability.md)
 

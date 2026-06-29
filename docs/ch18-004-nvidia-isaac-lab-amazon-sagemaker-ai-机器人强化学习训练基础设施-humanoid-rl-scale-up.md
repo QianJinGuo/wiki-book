@@ -14,7 +14,7 @@
 - MOC
 ## 深度分析
 
-# Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI
+## Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI
 Physical AI is moving from research into production.
 
 ### 核心观点

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.5KB | `entities/anthropic-claude-fable-5-on-aws内置保护措施的-mythos-级功能现已推出.md`
 
-# Anthropic Claude Fable 5 on AWS：内置保护措施的 Mythos 级功能现已推出
+## Anthropic Claude Fable 5 on AWS：内置保护措施的 Mythos 级功能现已推出
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-claude-fable-5-on-aws内置保护措施的-mythos-级功能现已推出.md)
 

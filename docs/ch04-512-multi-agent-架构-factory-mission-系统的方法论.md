@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 15.3KB | `entities/multi-agent-mission-factory-luke-aiengineer.md`
 
-# Multi-Agent 架构：Factory Mission 系统的方法论
+## Multi-Agent 架构：Factory Mission 系统的方法论
 
 > 来源：AI Engineer 频道 YouTube 演讲整理（微信公众号"AI 寒武纪"）
 > 演讲者：Luke Alvoeiro（Block → 开源 Goose 43.9k★ → Factory CTO）

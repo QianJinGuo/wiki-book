@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/kasra-blog-llm-hacking-empirical-test.md`
 
-# kasra.blog LLM Agent 黑客能力实测: 1500 投石问路 14 模型
+## kasra.blog LLM Agent 黑客能力实测: 1500 投石问路 14 模型
 
 ## 概述
 

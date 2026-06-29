@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/gemma-4-models-amazon-bedrock-deepmind-open-weights.md`
 
-# Gemma 4 模型发布 — Google DeepMind 开源权重家族在 Amazon Bedrock 上线
+## Gemma 4 模型发布 — Google DeepMind 开源权重家族在 Amazon Bedrock 上线
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-gemma-4-models-on-amazon-bedrock.md)
 

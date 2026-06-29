@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/grcnow.md`
 
-# GRC Now | Free virtual event | 8 CPEs
+## GRC Now | Free virtual event | 8 CPEs
 ![Image 4](http://optro.ai/static/icons/secure-icon.svg)
 Global Privacy Control Signal Detected
 ![Image 5](http://optro.ai/static/icons/close-gpc.svg)

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.1KB | `entities/2026.md`
 
-# Static Devirtualization of Themida
+## Static Devirtualization of Themida
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/aws-bedrock-serverless-async-inference-sqs-lambda.md`
 
-# SQS+Lambda异步管道：2000并发0%限流的工程细节
+## SQS+Lambda异步管道：2000并发0%限流的工程细节
 ## 三个关键洞察
 ### 1. max_concurrency计算公式
 mc = min(mc_rpm, mc_tpm)，其中 mc_rpm = RPM额度 × avg_time / 60，mc_tpm = TPM额度 × avg_time / (token_per_request × 60)。这个公式是控制限流的核心工程工具。

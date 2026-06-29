@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/使用-amazon-cloudfront-和-aws-waf-大规模交付-wordpress.md`
 
-# 使用 Amazon CloudFront 和 AWS WAF 大规模交付 WordPress
+## 使用 Amazon CloudFront 和 AWS WAF 大规模交付 WordPress
 
 ## 概览
 

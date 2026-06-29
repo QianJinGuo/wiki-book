@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐⭐⭐ | 8.8KB | `entities/serverless-langgraph-multi-agent-aws.md`
 
-# Build a highly scalable serverless LangGraph multi-agent system
+## Build a highly scalable serverless LangGraph multi-agent system
 
 ## 核心内容
 
-# Build highly scalable serverless LangGraph multi-agent systems in AWS with Amazon Bedrock AgentCore
+## Build highly scalable serverless LangGraph multi-agent systems in AWS with Amazon Bedrock AgentCore
 
 Generative AI has rapidly evolved from experimental prototypes into systems that are expected to operate reliably in production, at scale, and under real-world performance constraints. As organizations move beyond demos and proofs of concept, they increasingly encounter challenges related to inference latency, scalability, state management, and operational visibility. Building high-performance AI agents today requires more than powerful models and demands an implementation that can deliver consistent performance, preserve context across interactions, and provide deep observability into how agents reason and behave in production.
 

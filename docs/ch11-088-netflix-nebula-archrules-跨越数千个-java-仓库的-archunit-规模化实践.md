@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/netflix-nebula-archrules.md`
 
-# Netflix Nebula ArchRules: 跨越数千个 Java 仓库的 ArchUnit 规模化实践
+## Netflix Nebula ArchRules: 跨越数千个 Java 仓库的 ArchUnit 规模化实践
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/scaling-archunit-with-nebula-archrules.md)
 

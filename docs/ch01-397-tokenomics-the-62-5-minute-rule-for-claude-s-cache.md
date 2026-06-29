@@ -124,7 +124,7 @@ else:
 文章特别强调需要**自建监控**来验证缓存实际生效：
 ```
 
-# 检查缓存是否真正创建/命中
+## 检查缓存是否真正创建/命中
 assert usage.cache_creation_input_tokens > 0 or usage.cache_read_input_tokens > 0, "Cache not active!"
 ```
 对于高频 agent 场景，建议在日志中记录：

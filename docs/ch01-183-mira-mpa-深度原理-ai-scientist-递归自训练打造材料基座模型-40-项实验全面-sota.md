@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 22.4KB | `entities/mira-mpa-deep-principle-ai4s-40-sota.md`
 
-# MIRA + MPA：深度原理 AI Scientist 递归自训练打造材料基座模型，40 项实验全面 SOTA
+## MIRA + MPA：深度原理 AI Scientist 递归自训练打造材料基座模型，40 项实验全面 SOTA
 
 ## 概述
 

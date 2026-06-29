@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/aws-china-enterprise-agent-evaluation-adlc.md`
 
-# AWS China 企业级智能体评估方法论 ADLC 系列
+## AWS China 企业级智能体评估方法论 ADLC 系列
 
 > **Background**：本文基于 AWS China Blog 2026 年 6 月发布的三篇系列文章综合提炼。系列主题是企业级 AI Agent 从原型到生产的评估方法论，核心框架为 ADLC（Agent Development Lifecycle）。三篇分别覆盖：为什么评估是起点（Part 1）、评估维度与方法论（Part 2）、工程化落地与工具支持（Part 3）。
 

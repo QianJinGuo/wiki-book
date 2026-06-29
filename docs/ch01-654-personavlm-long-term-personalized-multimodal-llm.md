@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/personavlm-long-term-personalization.md`
 
-# PersonaVLM: Long-term Personalized Multimodal LLM
+## PersonaVLM: Long-term Personalized Multimodal LLM
 |大模型开始"懂你"了！PersonaVLM如何实现长期个性化记忆
 来源：PaperWeekly → 数据派THU
 当前大模型是"静态系统"，而人是"动态的"。现有方法只依赖当前上下文或简单拼接历史信息，无法跟踪用户动态变化，导致个性化停留在表面。

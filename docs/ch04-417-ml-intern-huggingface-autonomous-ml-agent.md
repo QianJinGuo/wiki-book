@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/ml-intern-huggingface-autonomous-ml-agent.md`
 
-# ml-intern: Hugging Face 开源自主 ML 工程代理
+## ml-intern: Hugging Face 开源自主 ML 工程代理
 > 项目: https://github.com/huggingface/ml-intern
 > 框架: https://github.com/huggingface/smolagents (27K+ Stars)
 > Spaces: https://huggingface.co/spaces/smolagents/ml-intern

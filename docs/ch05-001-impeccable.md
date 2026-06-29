@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 13.4KB | `entities/impeccable.md`
 
-# Impeccable
+## Impeccable
 > "The design language that makes your AI harness better at design." —— pbakaus/impeccable 官方描述
 
 `pbakaus/impeccable` 是当前规模最大的 **AI 前端设计 skill 项目**（截至 2026-06-04：**34,108 ⭐**，Apache-2.0，主语言 JavaScript）。它把"前端设计经验"打包成可安装的 skill，配合 23 个命令、41 条确定性检测规则、CLI、Chrome 扩展和 live 浏览器变体模式。

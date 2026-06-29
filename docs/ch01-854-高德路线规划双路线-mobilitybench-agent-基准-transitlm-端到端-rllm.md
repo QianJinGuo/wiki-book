@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 19.0KB | `entities/gaode-routing-dual-pathway-mobilitybench-transitlm-2026.md`
 
-# 高德路线规划双路线：MobilityBench（Agent 基准）+ TransitLM（端到端 RLLM）
+## 高德路线规划双路线：MobilityBench（Agent 基准）+ TransitLM（端到端 RLLM）
 
 > 高德 AMAP-ML 团队（机器学习研发部）2026-06-16 发布的技术战略文章，揭示路线规划从"工业引擎"演进到"端到端时空基座"的两条并行路线。两篇论文同时发表：**MobilityBench** (KDD 2026 Oral) + **TransitLM**（业界首个 RLLM）。
 

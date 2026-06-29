@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/gemini-3-5-flash-computer-use.md`
 
-# Introducing computer use in Gemini 3.5 Flash
+## Introducing computer use in Gemini 3.5 Flash
 
 > **Background**: Google Blog, 2026-06-25. Google introduces native computer use capabilities in Gemini 3.5 Flash, enabling the model to interact with UI elements, click buttons, type text, and navigate applications autonomously.
 

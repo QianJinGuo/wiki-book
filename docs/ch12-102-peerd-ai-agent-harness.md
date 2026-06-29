@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/peerd-browser-native-agent-harness.md`
 
-# peerd: 浏览器原生的 AI Agent Harness
+## peerd: 浏览器原生的 AI Agent Harness
 
 peerd 是第一个完全运行在浏览器中的 [AI Agent Harness](/ch05-041-harness-engineering-概念框架/)——一个 Chrome/Firefox 扩展，在你现有的浏览器中运行完整的 agent loop，驱动你的标签页，启动沙箱化计算环境（JS Notebook、WASM Linux VM、客户端应用），并通过 WebRTC 网络实现 peer-to-peer 的 agent 间通信。
 

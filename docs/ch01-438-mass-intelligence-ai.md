@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/mass-intelligence.md`
 
-# Mass Intelligence: AI 普及的拐点
+## Mass Intelligence: AI 普及的拐点
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mass-intelligence.md)
 

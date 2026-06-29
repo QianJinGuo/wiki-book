@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.6KB | `entities/agent-formal-verification-ai-code.md`
 
-# Cheap code means formal verification is reasonable now — Antfly Blog
+## Cheap code means formal verification is reasonable now — Antfly Blog
 
 [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-formal-verification-ai-code.md)
 

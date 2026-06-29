@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentscope-builder-enterprise-self-evolving-agent-harness.md)
 
-# AgentScope Builder 快速体验：用 Harness 框架快速构建企业自进化智能体
+## AgentScope Builder 快速体验：用 Harness 框架快速构建企业自进化智能体
 
 ## 背景：Claw 的边界
 

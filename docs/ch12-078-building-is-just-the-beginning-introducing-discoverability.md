@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.6KB | `entities/building-is-just-the-beginning-introducing-discoverability.md`
 
-# Building is just the beginning: Introducing Discoverability | Lovable
+## Building is just the beginning: Introducing Discoverability | Lovable
 [Skip to main content](https://lovable.dev/blog/building-is-just-the-beginning-introducing-discoverability#main-content)
 [](https://lovable.dev/home)
 [](https://lovable.dev/home)

@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/incendium-fuzzing-ms-rpc.md)
 
-# Incendium MS-RPC Fuzzing
+## Incendium MS-RPC Fuzzing
 Incendium: Microsoft RPC 接口深度模糊测试，漏洞发现方法论
 
 ## 摘要

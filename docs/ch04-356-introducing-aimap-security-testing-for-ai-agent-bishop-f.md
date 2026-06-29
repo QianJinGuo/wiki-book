@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md`
 
-# Introducing AIMap: Security Testing For AI Agent… | Bishop Fox
+## Introducing AIMap: Security Testing For AI Agent… | Bishop Fox
 ![Image 2](https://bishopfox.com/static/assets/images/backgrounds/promobar-bg-lines-left.svg)
 
 ## 相关实体

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/aws-reinforcement-fine-tuning-llm-as-judge.md`
 
-# Reinforcement fine-tuning with LLM-as-a-judge
+## Reinforcement fine-tuning with LLM-as-a-judge
 Large language models (LLMs) now drive the most advanced conversational agents, creative tools, and decision-support systems. However, their raw output often contains inaccuracies, policy misalignments, or unhelpful phrasing—issues that undermine trust and limit real-world utility. _Reinforcement Fine‑Tuning (RFT)_ has emerged as the preferred method to align these models efficiently, using _automated reward signals_ to replace costly manual labeling.
 At the heart of modern RFT is reward functions. They're built for each domain through verifiable reward functions that can score LLM generations through a piece of code (Reinforcement Learning with Verifiable Rewards or RLVR) or with LLM-as-a-judge, where a separate language model evaluates candidate responses to guide alignment (Reinforcement Learning with AI Feedback or RLAIF). Both these methods provide scores to the RL algorithm to nudge the model to solve the problem at hand. In this post, we take a deeper look at how RLAIF or RL with LLM-as-a-judge works with Amazon Nova models effectively.
 

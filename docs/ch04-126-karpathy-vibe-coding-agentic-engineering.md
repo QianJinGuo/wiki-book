@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.2KB | `entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md`
 
-# Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
+## Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
 
 > 来源：架构师（JiaGouX）公众号，2026-05 编译自 Karpathy 在 Sequoia AI Ascent 2026 的访谈视频。原文链接：https://www.youtube.com/watch?v=96jN2OCOfLs
 

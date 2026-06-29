@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/superpowers-6-sdd-review-redesign-file-handoff.md`
 
-# Superpowers 6.0 SDD 评审重写
+## Superpowers 6.0 SDD 评审重写
 
 Superpowers 6.0（2026-06-16 发布，06-18 v6.0.3 修补）的核心主线不是新增平台或补安全策略，而是**重新设计了 AI Agent 软件工程中最贵、最容易跑偏的流程：任务后的代码评审**。
 

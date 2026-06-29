@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 21.5KB | `entities/hermes-agent-12-layer-full-configuration-guide.md`
 
-# Hermes Agent 满配 12 层配置完整指南
+## Hermes Agent 满配 12 层配置完整指南
 
 ## 核心定位：满配 ≠ 装满
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/claude-code-harness-deep-understanding.md`
 
-# 深入理解 Claude Code 源码中的 Agent Harness 构建之道
+## 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 上周，  ** Anthropic  ** 旗下闭源的 AI 编程工具 Claude Code 曝出源码泄露事件。这次事件并非黑客入侵或内部泄密，而是因 npm 打包未排除包含完整源码的  ` .map  `  映射文件，  ** 导致 1900 余个 Typescript 文件、超 51 万行核心代码意外曝光  ** 。相关代码迅速被归档至 Github，数小时内收获超 1100 颗星。
 这是迄今为止生产级 AI Agent 系统最完整的一次公开审视，也让外界得以验证此前对 Claude Code 架构的推断，同时窥见其诸多未发布的核心功能与底层设计逻辑。
 本文将借助这次源代码泄露机会，顺着一个请求的完整生命周期：从你输入消息到 Agent 交付可工作的代码，我们一步步拆解每个环节。你会发现，  ** LLM 调用本身只是一行代码  ** ，真正让 Agent 可用的，是围绕这行代码精心设计的  ** Agent Harness  ** 。

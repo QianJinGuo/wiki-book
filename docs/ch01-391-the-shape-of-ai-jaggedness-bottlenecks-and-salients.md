@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/the-shape-of-ai-jaggedness-bottlenecks-and-salients.md`
 
-# The Shape of AI: Jaggedness, Bottlenecks and Salients
+## The Shape of AI: Jaggedness, Bottlenecks and Salients
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-shape-of-ai-jaggedness-bottlenecks-and-salients.md)
 

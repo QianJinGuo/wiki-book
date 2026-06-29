@@ -6,7 +6,7 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/yoonholee-text-optimization-as-legitimate-learning-mechanism.md)
 
-# Yoonho Lee: Text Optimization as a Legitimate Learning Mechanism
+## Yoonho Lee: Text Optimization as a Legitimate Learning Mechanism
 
 ## 一句话总结
 

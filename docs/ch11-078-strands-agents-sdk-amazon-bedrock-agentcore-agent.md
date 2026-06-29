@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/product-ad-review-agent-with-strands-sdk-bedrock.md`
 
-# 基于 Strands Agents SDK 和 Amazon Bedrock AgentCore 的商品广告图审查 Agent
+## 基于 Strands Agents SDK 和 Amazon Bedrock AgentCore 的商品广告图审查 Agent
 
 AWS 官方博客发布的一篇企业级 Agent 实战案例：使用 Strands Agents SDK 的 **Agents as Tools** 模式 + Amazon Bedrock AgentCore 部署运行时，构建一个三 Agent 协作的「商品详情图广告词合规审查」系统。manager agent 负责协调，text extraction agent 负责图像 OCR，review agent 负责依据广告法知识库给出违规判定与修改建议。文章给出完整代码骨架、模型选型矩阵、以及端到端 AWS 部署架构（ECR + AgentCore Runtime + Bedrock KB + Cognito JWT + S3 + CloudFront + STS）。
 

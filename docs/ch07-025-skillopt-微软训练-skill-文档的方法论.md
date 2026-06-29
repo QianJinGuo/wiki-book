@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/skillopt-microsoft-research-skill-training.md`
 
-# SkillOpt — 微软训练 Skill 文档的方法论
+## SkillOpt — 微软训练 Skill 文档的方法论
 
 ## 核心思想
 

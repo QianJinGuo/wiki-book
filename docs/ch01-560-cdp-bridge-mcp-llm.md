@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/cdp-bridge-mcp-real-browser-agent.md`
 
-# CDP Bridge MCP：让 LLM 操作真实浏览器
+## CDP Bridge MCP：让 LLM 操作真实浏览器
 > CDP Bridge MCP 是一个连接 MCP 客户端与真实浏览器会话的桥接服务。它通过配套的 Chromium 扩展接入浏览器页面，让大模型客户端可以读取标签页、扫描页面、执行 JavaScript、截图、导航和读取 Cookie。
 
 ## 核心理念

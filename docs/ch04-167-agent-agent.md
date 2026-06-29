@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/agent-development-crawl-walk-run-crewai-iterative.md`
 
-# Agent 开发应小步快跑：第一个 Agent 只需做一件事（哪怕很烂）
+## Agent 开发应小步快跑：第一个 Agent 只需做一件事（哪怕很烂）
 
 > **核心论点**：传统软件开发周期强调一次设计、覆盖所有边界情形（design for scale from day one）；而 Agent 系统应采用**小步快跑**（crawl, walk, run）迭代方法——第一个 Agent 做一件事、做得很烂，但能上线、能从真实执行中学习。CrewAI 基于 2B+ agentic executions 提炼的实战方法论。
 

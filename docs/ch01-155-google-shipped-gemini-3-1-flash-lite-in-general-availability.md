@@ -5,7 +5,7 @@
 > 📊 Level ⭐ | 2.6KB | `entities/google-shipped-gemini-31-flash-lite-in-general-availability.md`
 
 > -> 原文存档
-# Google shipped Gemini 3.1 Flash-Lite in General Availability
+## Google shipped Gemini 3.1 Flash-Lite in General Availability
 source: 
 ## 摘录
 > Title: Google shipped Gemini 3.1 Flash-Lite in General Availability

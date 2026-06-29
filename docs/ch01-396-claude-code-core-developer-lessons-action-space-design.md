@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/claude-code-core-developer-lessons-action-space-design.md`
 
-# Lessons from Building Claude Code: Seeing like an Agent
+## Lessons from Building Claude Code: Seeing like an Agent
 **作者**：Thariq（Claude Code 团队）| **来源**：X (@trq212) | **时间**：2026年2月28日
 
 ## 一、Action Space 才是你的产品

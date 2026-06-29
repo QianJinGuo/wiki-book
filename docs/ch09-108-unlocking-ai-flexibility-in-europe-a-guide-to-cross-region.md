@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/unlocking-ai-flexibility-in-europe-a-guide-to-cross-region-i.md`
 
-# Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access
+## Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/unlocking-ai-flexibility-in-europe-a-guide-to-cross-region-i.md)
 

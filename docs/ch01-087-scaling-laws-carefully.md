@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.4KB | `entities/posts-2026-06-24-scaling-laws.md`
 
-# Scaling Laws, Carefully
+## Scaling Laws, Carefully
 
 > **来源**: [Scaling Laws, Carefully](https://lilianweng.github.io/posts/2026-06-24-scaling-laws/)
 

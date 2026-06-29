@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/co-existence-paradigm-shift-agentic-ai-mollick-2026.md`
 
-# Co-Existence vs Co-Intelligence: Mollick's Paradigm Shift on AI Autonomy
+## Co-Existence vs Co-Intelligence: Mollick's Paradigm Shift on AI Autonomy
 
 > 2026-06-05 引用自 Ethan Mollick 《Co-Existence and the End of Co-Intelligence》, One Useful Thing, 2026-06-04. 原文为 Mollick 新书《Co-Existence》pre-order 配套文章。
 

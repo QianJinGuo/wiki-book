@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/chatgpt-memory.md`
 
-# ChatGPT Memory & Knowledge Features
+## ChatGPT Memory & Knowledge Features
 ## Overview
 OpenAI ChatGPT 提供了一系列记忆和知识管理功能：Memory（跨对话记忆）、Custom GPTs（自定义 GPT）、Projects（项目文件夹）。这些功能让 ChatGPT 从一个对话工具演变为一个持久化的个人 AI 助手。
 

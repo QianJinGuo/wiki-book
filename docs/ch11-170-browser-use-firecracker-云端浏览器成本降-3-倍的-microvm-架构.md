@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/browser-use-firecracker-cloud-browsers-3x-cheaper.md`
 
-# Browser Use Firecracker：云端浏览器成本降 3 倍的 microVM 架构
+## Browser Use Firecracker：云端浏览器成本降 3 倍的 microVM 架构
 
 browser-use 团队通过 Firecracker microVM 在 EC2 上运行云端浏览器隔离，将成本从 $0.06/hr 降至 $0.02/hr，冷启动时间 <400ms。这是 Agent 浏览器自动化基础设施的工程实践案例。
 

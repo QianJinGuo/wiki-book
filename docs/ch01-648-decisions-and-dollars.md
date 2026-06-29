@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/decisions-and-dollars-agent-economics-data-fintech.md`
 
-# Decisions and Dollars
+## Decisions and Dollars
 
 > **Background**：Nikunj Kothari 基于 Cloudflare agent traffic 超越 human traffic 的事实、Cursor $60B 收购案、以及 Harvey/Legora/Rogo 等垂直 AI 公司的实践，系统分析了 AI 应用公司在 agent 经济时代的商业模式转型逻辑。
 

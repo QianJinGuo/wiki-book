@@ -346,7 +346,7 @@ Between `open("w")` and `fcntl.flock()`, another process can read an empty file.
 
 ```python
 
-# SAFE: Write to temp file, atomically rename
+## SAFE: Write to temp file, atomically rename
 fd, tmp_path = tempfile.mkstemp(dir=str(path.parent))
 with os.fdopen(fd, "w") as f:
     f.write(content)

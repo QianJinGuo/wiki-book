@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.0KB | `entities/mxc-execution-containers-internals-origin.md`
 
-# MXC Internals — Microsoft eXecution Containers AI Agent Sandbox
+## MXC Internals — Microsoft eXecution Containers AI Agent Sandbox
 
 > **Source**: [Origin Research — MXC Internals](https://www.originhq.com/research/mxc-execution-containers-internals) (2026-06-10, 46KB) by Origin. 原始内容存于 `[Mxc Execution Containers Internals Origin](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mxc-execution-containers-internals-origin.md)`。
 >

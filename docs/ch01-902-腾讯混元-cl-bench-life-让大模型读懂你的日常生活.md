@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 5.8KB | `entities/cl-bench-life-tencent-context-learning.md`
 
-# 腾讯混元 CL-Bench Life：让大模型读懂你的日常生活
+## 腾讯混元 CL-Bench Life：让大模型读懂你的日常生活
 
 > 机器之心发布 | 2026-05-01 11:30 辽宁
 腾讯混元团队在 AGI-Next 前沿峰会上推出 CL-Bench life，评测模型在真实日常生活场景中理解混乱、碎片化、持续变化的 context 的能力。

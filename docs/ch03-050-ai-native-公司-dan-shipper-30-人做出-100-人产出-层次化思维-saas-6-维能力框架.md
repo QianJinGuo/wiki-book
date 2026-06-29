@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 23.0KB | `entities/ai-native-dan-shipper-every-layered-thinking-walkwalk.md`
 
-# AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架
+## AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架
 
 ## 概述
 

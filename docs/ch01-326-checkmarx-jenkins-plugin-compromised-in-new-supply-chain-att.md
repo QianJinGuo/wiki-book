@@ -70,14 +70,13 @@ TeamPCP 并非首次对 Checkmarx 发起攻击——2026 年 3 月就曾入侵 c
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)
 
-# "Checkmarx Jenkins plugin compromised in new supply chain attack"
+## "Checkmarx Jenkins plugin compromised in new supply chain attack"
 URL Source: https://www.techzine.eu/news/security/141212/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack/
 Published Time: 2026-05-11T13:29:24+00:00
 Markdown Content:
 
-# Checkmarx Jenkins plugin compromised in new supply chain attack - Techzine Global
-[Skip to content](https://www.techzine.eu/news/security/141212/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack/#main)
-[Techzine Global](https://www.techzine.eu/)
+## Checkmarx Jenkins plugin compromised in new supply chain attack - Techzine Global
+[[Techzine Global](https://www.techzine.eu/)
 
 *   [Home](https://www.techzine.eu/)
 *   [Topstories](https://www.techzine.eu/topstories/)
@@ -104,8 +103,7 @@ Markdown Content:
     *   [SentinelOne](https://www.techzine.eu/insights/sentinelone/)
 *   [More](https://www.techzine.eu/news/security/141212/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack/#)
     *   [Become a partner](https://www.dolphin.pub/)
-    *   [About us](https://www.techzine.eu/about-us/)
-    *   [Contact us](https://www.techzine.eu/contact)
+    *   [    *   [Contact us](https://www.techzine.eu/contact)
     *   [Terms and conditions](https://www.techzine.eu/conditions)
     *   [Privacy Policy](https://www.techzine.eu/privacy)
 *   [Techzine Global](https://www.techzine.eu/)

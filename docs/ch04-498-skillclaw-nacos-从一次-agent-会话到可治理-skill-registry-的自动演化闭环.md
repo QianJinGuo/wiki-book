@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/skillclaw-nacos-evolution-registry.md`
 
-# SkillClaw × Nacos：从一次 Agent 会话到可治理 Skill Registry 的自动演化闭环
+## SkillClaw × Nacos：从一次 Agent 会话到可治理 Skill Registry 的自动演化闭环
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw-nacos-evolution-registry.md)
 

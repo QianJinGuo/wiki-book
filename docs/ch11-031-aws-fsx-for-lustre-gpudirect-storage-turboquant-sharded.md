@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.0KB | `entities/aws-fsx-lustre-gpudirect-sharded-llm-loading.md`
 
-# AWS FSx for Lustre + GPUDirect Storage + TurboQuant: Sharded LLM Model Loading
+## AWS FSx for Lustre + GPUDirect Storage + TurboQuant: Sharded LLM Model Loading
 
 > **Core insight**: 把 GPU 加载模型权重的瓶颈从 CPU 旁路（GPUDirect Storage 直传 HBM），配合 TurboQuant KV 压缩，把 LLM 冷启动 TTFT 从 **10-20 分钟降到秒级**。这是 2026 年超大规模 LLM 部署的工程必读。
 
@@ -40,18 +40,18 @@ AWS 在 2026 年 6 月发布 P6e / P6 实例（Blackwell 架构），单 P6e Ult
 
 **Stage 1 — Shard checkpoint 跨 OST 分布**：
 ```bash
-# Llama 3.1 405B FP8 切分
-# shard 0: layers 0-9  → GPU 0-1
-# shard 1: layers 10-19 → GPU 2-3
-# ...
-# 每个 shard 大小 50 GB，8 个并行 GDS reads
+## Llama 3.1 405B FP8 切分
+## shard 0: layers 0-9  → GPU 0-1
+## shard 1: layers 10-19 → GPU 2-3
+## ...
+## 每个 shard 大小 50 GB，8 个并行 GDS reads
 ```
 
 **Stage 2 — Lustre striping 优化**：
 ```bash
 lfs setstripe -c 8 -S 1m /lustre/checkpoints/llama-405b/
-# -c 8: 8 个 OST 轮询分布
-# -S 1m: 1 MB stripe size
+## -c 8: 8 个 OST 轮询分布
+## -S 1m: 1 MB stripe size
 ```
 
 **Stage 3 — Parallel GDS 加载到 HBM**：8 个 GPU 同时从 FSx 读自己的 shard，GDS 直传 HBM，**CPU 完全 bypass**。`cudaMemcpy` 替代为 `cuFileRead`，零拷贝。

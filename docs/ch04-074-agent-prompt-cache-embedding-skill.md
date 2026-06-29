@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 18.2KB | `entities/agent-memory-engineering-tax-aws-china-2026.md`
 
-# Agent 记忆系统工程税：写入纪律·Prompt Cache 冲突·跨模型容量·Embedding 迁移·自产 Skill 治理
+## Agent 记忆系统工程税：写入纪律·Prompt Cache 冲突·跨模型容量·Embedding 迁移·自产 Skill 治理
 
 > **背景**：本文是 [AWS China Blog](https://aws.amazon.com/cn/blogs/china/agent-system-engineering-practice/) 2026-06-05 发布的"解决 Agentic AI 应用 Token 爆炸问题"系列第三篇，由 AWS 中国架构师团队撰写。系统讨论 Agent 记忆系统在生产环境的"工程税"（每一次写入/迁移/切换/淘汰时被隐性征收的成本），并给出在 S3 Files / S3 Vectors / Bedrock AgentCore Memory 上的具体落地路径。本文与系列前两篇（《取之有度，用之有节——从 Harness 视角破解 Agent 应用 Token 爆炸难题》/《相得益彰 — 亚马逊云科技向量存储选型推荐》）形成完整覆盖：选型 → 落地 → 运行工程议题。
 

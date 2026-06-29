@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/deepseek-v4-training-58-page-paper-deep-dive.md`
 
-# DeepSeek V4是怎么训练出来的？58页论文深入解读
+## DeepSeek V4是怎么训练出来的？58页论文深入解读
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-training-58-page-paper-deep-dive.md)
 

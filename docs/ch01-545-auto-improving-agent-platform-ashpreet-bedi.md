@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/auto-improving-agent-platform-ashpreetbedi-shensi.md)
 
-# Auto-Improving Agent Platform (Ashpreet Bedi)
+## Auto-Improving Agent Platform (Ashpreet Bedi)
 **作者**：Ashpreet Bedi（前 Airbnb/Facebook，Agno 创始人）    
 **来源**：深思圈（深思SenseAI）    
 **原始链接**：https://mp.weixin.qq.com/s/d_Kqaw_2nxJJDXsbHDPPgA    

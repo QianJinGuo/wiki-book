@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/shannon-epiplexity-finite-compute-information-theory.md`
 
-# Shannon 没有想到的事——当信息论遇上有限算力
+## Shannon 没有想到的事——当信息论遇上有限算力
 **来源:** 微信文章 — AI-lab学习笔记
 **URL:** https://mp.weixin.qq.com/s/YZkpBN1PECoVdVFZT-JYnA
 **标签:** #信息论 #计算理论 #涌现 #LLM训练

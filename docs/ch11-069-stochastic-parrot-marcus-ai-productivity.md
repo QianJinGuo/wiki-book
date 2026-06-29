@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.1KB | `entities/stochastic-parrot-marcus-ai-productivity.md`
 
-# Marcus on AI Productivity
+## Marcus on AI Productivity
 [](<https://substackcdn.com/image/fetch/$s_!L7FR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e9cff98-e13b-432c-bb3b-6c75285f6c83_1024x1024.png>)
 Gary Marcus commends a post from Baldur Bjarnason who comments on a new study from the Upwork Research Institute titled "From Burnout to balance: AI-Enhanced Work Models." Marcus calls the report "incredibly damning" for Gen AI citing the following statistic: "Nearly half (47%) for workers using AI say they have no idea how to achieve the productivity gains their employers expect. Over three in four (77%) say AI tools have decreased their productivity and added to their workload in at least one way"
 Bjarnason provides the same quote plus two more, "Seventy-one percent are burned out and nearly two-thirds (65%) report struggling with increasing employer demands" and "Women (74%) report feeling more burned out than men (68%). Alarmingly, 1 in 3 employees say they will likely quit their jobs in the next six months because they are burned out overworked."

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/amazon-quick-bedrock-agentcore-finops-chat.md`
 
-# 用 Amazon Quick + Bedrock AgentCore 打造对话式 FinOps 助手
+## 用 Amazon Quick + Bedrock AgentCore 打造对话式 FinOps 助手
 
 > **Background**: AWS China 团队将开源的 Billing and Cost Management MCP Server 改造适配后，部署到 Amazon Bedrock AgentCore Runtime，通过 Cognito OAuth 2.0 保护，最终接入 Amazon Quick Chat Agent 让业务用户用中文对话式查询多账号 AWS 成本。
 

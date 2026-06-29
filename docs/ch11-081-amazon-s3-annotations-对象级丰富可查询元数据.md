@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/amazon-s3-annotations-queryable-context.md`
 
-# Amazon S3 Annotations：对象级丰富可查询元数据
+## Amazon S3 Annotations：对象级丰富可查询元数据
 
 Amazon S3 推出 Annotations 功能，允许直接在对象上附加大量结构化元数据，无需维护独立的元数据库。该功能面向 AI Agent 工作流设计——Agent 需要在无人干预的情况下发现、理解和处理数据。
 
@@ -64,22 +64,22 @@ S3 Annotations 的设计初衷是支持 AI Agent 数据发现：
 ## CLI 操作
 
 ```bash
-# 附加注释
+## 附加注释
 aws s3api put-object-annotation \
   --bucket my-bucket --key video.mp4 \
   --annotation-name mediainfo \
   --annotation-payload ./mediainfo.json
 
-# 检索注释
+## 检索注释
 aws s3api get-object-annotation \
   --bucket my-bucket --key video.mp4 \
   --annotation-name mediainfo
 
-# 列出所有注释
+## 列出所有注释
 aws s3api list-object-annotations \
   --bucket my-bucket --key video.mp4
 
-# 删除注释
+## 删除注释
 aws s3api delete-object-annotation \
   --bucket my-bucket --key video.mp4 \
   --annotation-name mediainfo

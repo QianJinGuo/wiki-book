@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/cloudflare-temporary-accounts-ai-agents.md`
 
-# Temporary Cloudflare Accounts for AI agents
+## Temporary Cloudflare Accounts for AI agents
 
 ## 摘要
 

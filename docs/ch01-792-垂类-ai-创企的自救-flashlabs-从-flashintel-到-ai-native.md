@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/flashlabs-vertical-ai-startup-pivot.md`
 
-# 垂类 AI 创企的自救：FlashLabs 从 FlashIntel 到 AI Native
+## 垂类 AI 创企的自救：FlashLabs 从 FlashIntel 到 AI Native
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/flashlabs-vertical-ai-startup-pivot.md)
 

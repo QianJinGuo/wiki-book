@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 9.8KB | `entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md`
 
-# NVIDIA Nemotron 3 Ultra: Hybrid Transformer-Mamba MoE for Agentic AI on SageMaker JumpStart
+## NVIDIA Nemotron 3 Ultra: Hybrid Transformer-Mamba MoE for Agentic AI on SageMaker JumpStart
 
 > 本文综合提炼自 NVIDIA Nemotron 3 Ultra 在 Amazon SageMaker JumpStart 的 day-zero 发布公告。关键定位：**为长时自主 agent 优化的开源 MoE 模型** —— 550B 总参数/55B 激活、1M token 上下文、NVFP4 精度、**5x 推理加速 + 30% agentic 任务成本下降**。架构创新：**Hybrid Transformer-Mamba MoE**（首个大规模生产级 Transformer-Mamba 混合 MoE）。
 

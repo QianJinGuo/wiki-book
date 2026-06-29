@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/claude-vscode-plugin-zero-code.md`
 
-# 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件
+## 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件
 
 **导读**：之前没写过 VSCode 插件、没接触过 Chrome Cookie 加密机制、不了解 UUAP SSO。2 小时后，独立做了一个能自动读取浏览器登录态、实时监控 Comate 模型用量的 VSCode 插件——8 个核心文件，1000+ 行代码，打包后 .vsix 可以直接分发给同事使用。
 这篇文章记录这 2 小时真实发生的事。0 行手写代码，不意味着什么都不用想。恰恰相反——我花了大量时间在判断：这个方案能不能落地、这个报错的根因是什么、Claude 给的方向是不是对的。代码是 Claude 写的，但每一个关键决策是我做的。

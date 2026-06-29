@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/stop-hand-tuning-kernels-how-neuron-agentic-development-acce.md`
 
-# Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations
+## Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stop-hand-tuning-kernels-how-neuron-agentic-development-acce.md)
 

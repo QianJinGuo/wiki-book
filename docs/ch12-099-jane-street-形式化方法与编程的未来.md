@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/jane-street-formal-methods-future-programming.md`
 
-# Jane Street — 形式化方法与编程的未来
+## Jane Street — 形式化方法与编程的未来
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/jane-street-formal-methods-future-programming.md)
 

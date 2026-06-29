@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/amazon-v-perplexity-agentic-browsing-open-web.md`
 
-# Notes on Amazon v. Perplexity
+## Notes on Amazon v. Perplexity
 
 > **Background**: Amazon.com Services LLC v. Perplexity AI, Inc. 是首例大型电商平台起诉 AI agentic browser 厂商的案件，核心争议在于：AI agent 以用户身份自主浏览和操作网站是否构成 CFAA 下的"未授权访问"，以及网站 ToS 能否约束用户的浏览器选择。
 

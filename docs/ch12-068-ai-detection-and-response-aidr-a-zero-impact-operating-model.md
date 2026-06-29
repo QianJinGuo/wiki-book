@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/ai-detection-and-response-aidr-a-zero-impact-operating-model.md`
 
-# ai detection and response aidr a zero impact operating model
+## ai detection and response aidr a zero impact operating model
 
 Published Time: Thu, 14 May 2026 21:30:20 GMT
 AI Detection and Response (AIDR)

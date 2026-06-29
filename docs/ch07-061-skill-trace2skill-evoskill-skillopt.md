@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.1KB | `entities/skill-self-evolution-three-approaches.md`
 
-# Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式
+## Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式
 
 ## 深度分析
 

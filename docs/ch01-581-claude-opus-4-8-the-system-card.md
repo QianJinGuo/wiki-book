@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/claude-opus-4-8-system-card-zvi.md`
 
-# Claude Opus 4.8: The System Card
+## Claude Opus 4.8: The System Card
 
 ## 深度分析
 

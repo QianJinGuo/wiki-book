@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.1KB | `entities/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026.md`
 
-# 电商 AI 操作系统崛起：从「工具人」到「All in One」
+## 电商 AI 操作系统崛起：从「工具人」到「All in One」
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026.md)
 

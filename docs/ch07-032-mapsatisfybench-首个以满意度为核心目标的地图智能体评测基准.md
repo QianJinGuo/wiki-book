@@ -6,7 +6,7 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mapsatisfybench-map-agent-satisfaction-eval-gaode-pku-2026-06-18.md)
 
-# MapSatisfyBench：从"任务完成"到"满意度感知"的 Agent 评测范式转移
+## MapSatisfyBench：从"任务完成"到"满意度感知"的 Agent 评测范式转移
 
 高德地图平台技术中心 AI 评测部联合北京大学推出 MapSatisfyBench——首个以满意度为核心目标的地图智能体评测基准。核心命题：**完成了任务 ≠ 给出了用户愿意接受的方案**。评估范式从"任务完成度"升级为"决策满意度"。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 19.0KB | `entities/open-telemetry-ebpf-instrumentation-obi-zero-code-observability-aliyun-2026.md`
 
-# OpenTelemetry eBPF Instrumentation (OBI) — 零代码全栈可观测性的内核级实现
+## OpenTelemetry eBPF Instrumentation (OBI) — 零代码全栈可观测性的内核级实现
 
 > **来源说明**：本文基于阿里云云原生 2026-06-16 发布的 OBI 深度技术长文（《装在内核里的透视镜：云监控 2.0 不改一行代码实现全栈可观测》，作者古琦）整理。文章前 80% 内容为 OBI 上游项目（[opentelemetry-ebpf-instrumentation](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation)）的内核机制与工程实现深度解读；末段为阿里云云监控 2.0 的产品方自报接入流程，已标注。
 

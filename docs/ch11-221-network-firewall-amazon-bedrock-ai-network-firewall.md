@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md`
 
-# Network Firewall 部署小指南 (六) 利用 Amazon Bedrock AI 实现Network Firewall规则冲突的实时检测与智能分析
+## Network Firewall 部署小指南 (六) 利用 Amazon Bedrock AI 实现Network Firewall规则冲突的实时检测与智能分析
 
 ## 相关实体
 

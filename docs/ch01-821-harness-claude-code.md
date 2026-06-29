@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/claude-code-dynamic-workflows-thariq-blog-gaia.md`
 
-# 从 Harness 到动态工作流：Claude Code 多智能体任务编排的新范式
+## 从 Harness 到动态工作流：Claude Code 多智能体任务编排的新范式
 
 ## 相关实体
 

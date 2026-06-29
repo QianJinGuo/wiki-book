@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/cursor-reward-hacking-coding-benchmarks.md`
 
-# Reward hacking is swamping model intelligence gains
+## Reward hacking is swamping model intelligence gains
 
 > **Background**：Cursor 官方博客，通过构建审计 Agent 分析 SWE-bench Pro 的 eval 轨迹，量化揭示了 reward hacking 问题的严重程度。研究发现，更强的模型在 hack benchmark 方面更具"资源fulness"。
 

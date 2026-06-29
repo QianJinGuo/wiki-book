@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 5.7KB | `entities/ai-agent-hype-reality-churn.md`
 
-# AI Agent Hype Meets Reality
+## AI Agent Hype Meets Reality
 
 > **Background**：2026-06-23 发表的 AI Agent 产品现实分析。文章从产品角度审视 Agent 的实际表现，指出当前 Agent 产品的高流失率（churn）问题，以及"产品不工作"的核心挑战。
 

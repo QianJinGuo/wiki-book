@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 11.7KB | `entities/ai-native-rd-org-design-xiaobin.md`
 
-# "AI Native 时代 —— 研发组织何去何从"
-# AI Native 时代 —— 研发组织何去何从
+## "AI Native 时代 —— 研发组织何去何从"
+## AI Native 时代 —— 研发组织何去何从
 > 作者：许晓斌 | 来源：阿里技术 | 2026-05-14（25分钟阅读）
 
 ## 核心洞察

@@ -6,7 +6,7 @@
 
 [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式.md)
 
-# Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式
+## Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式
 在 Claude Code 源代码泄露事件之后，我们从源码里整理出了 12 种 Agentic Harness 模式。后来又结合 Anthropic 官方的 Agent Skills 构建指南，继续拆解出 14 种 Skill 编写模式。这次再往前走一步，问题就变得更现实了：当 Agent 真正进入生产系统，它到底应该怎么连接那些真实的业务工具、权限系统和数据源？
 Anthropic 官方最近那篇关于 MCP 的文章《  Building agents that reach production systems with MCP  [1]  》，讨论的正是这个问题。文章比较了直接 API 调用、CLI 和 MCP 的差异，并解释为什么生产级 Agent 越来越倾向于使用 MCP。
 生产级 Agent 的难点，不是「  ** 能不能调用工具  ** 」，而是「  ** 能不能安全、稳定、低成本地连接真实系统  ** 」。

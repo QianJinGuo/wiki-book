@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/harness-engineering-core-patterns.md`
 
-# Harness Engineering 核心模式
+## Harness Engineering 核心模式
 
 > [!summary] 核心洞察
 > Harness Engineering 的核心是**通过工程化手段构建确定性，以承载模型不确定性**。三个生产系统（Claude Code、Claude Managed Agents、Hermes）的共同模式：持久化指令分离、分层记忆、会话不可变事件流、执行环境隔离、凭证安全设计。

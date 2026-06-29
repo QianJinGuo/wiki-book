@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-self-repair-hooks-memory-config.md)
 
-# 复制这套神仙配置，让Claude Code全自动修Bug！
+## 复制这套神仙配置，让Claude Code全自动修Bug！
 
 ## 核心问题
 

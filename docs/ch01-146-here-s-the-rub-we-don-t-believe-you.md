@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.7KB | `entities/randsinrepose-we-dont-believe-you-rub.md`
 
-# Here's The Rub: We Don't Believe You
+## Here's The Rub: We Don't Believe You
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/randsinrepose-we-dont-believe-you-rub.md)
 

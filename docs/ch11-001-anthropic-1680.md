@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 12.4KB | `entities/anthropic-hiring-1680-resumes-infrastructure-veterans.md`
 
-# Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
+## Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-hiring-1680-resumes-infrastructure-veterans-machinespirit-2026.md)
 > Original Source: seb@hiiinternet X 上的硬核背景分析

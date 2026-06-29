@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/autoresearch-software-development.md`
 
-# AutoResearch 迁移到软件开发：多 Agent 交叉审核的工程实践
+## AutoResearch 迁移到软件开发：多 Agent 交叉审核的工程实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/autoresearch-software-development.md)
 

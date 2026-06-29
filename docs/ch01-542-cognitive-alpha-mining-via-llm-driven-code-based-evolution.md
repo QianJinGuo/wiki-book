@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/cogalpha-acl2026-alpha-mining.md`
 
-# Cognitive Alpha Mining via LLM-Driven Code-Based Evolution
+## Cognitive Alpha Mining via LLM-Driven Code-Based Evolution
 
 **论文标题：** Cognitive Alpha Mining via LLM-Driven Code-Based Evolution
 **论文作者：** Fengyuan Liu, Yi Huang, Sichun Luo, Yuqi Wang, Yazheng Yang, Xinye Li, Zefa Hu, Junlan Feng, Qi Liu (Grace Investment Machine + 香港大学)

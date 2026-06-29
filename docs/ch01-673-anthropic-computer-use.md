@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/anthropic-computer-use-best-practices.md`
 
-# Anthropic 发布 Computer Use 最佳实践
+## Anthropic 发布 Computer Use 最佳实践
 > 作者：AGI Hunt | 来源：AGI Hunt（转发 Anthropic 官方） | 2026-05-14
 > 原文：https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude
 Anthropic 最新发布了 Computer Use 开发者最佳实践，核心建议是：**想让 AI agent 点得更准，请先把截图缩小。**

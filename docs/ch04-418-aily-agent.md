@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/feishu-aily-agent-lobster.md`
 
-# 飞书aily：企业级Agent智能伙伴
+## 飞书aily：企业级Agent智能伙伴
 
 飞书春季发布会推出升级版**aily**（飞书龙虾），以Agent形态成为飞书联系人，支持 Skills 人设配置。
 

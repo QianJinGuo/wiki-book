@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.4KB | `entities/notnotp-k8s-interviews-non-technical.md`
 
-# What Job Interviews Taught Me About Kubernetes
+## What Job Interviews Taught Me About Kubernetes
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/notnotp-k8s-interviews-non-technical.md)
 

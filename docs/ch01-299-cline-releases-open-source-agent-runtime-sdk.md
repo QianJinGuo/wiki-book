@@ -47,10 +47,10 @@ Cline SDK 采用分层 TypeScript 架构，每层职责单一 ：
 **安装方式**：
 ```bash
 
-# 完整安装
+## 完整安装
 npm install @cline/sdk
 
-# 按需安装（减小体积）
+## 按需安装（减小体积）
 npm install @cline/core    # 仅运行时核心
 npm install @cline/agents # 仅 Agent Loop
 npm install @cline/llms    # 仅 LLM Provider
@@ -92,13 +92,13 @@ npm install @cline/llms    # 仅 LLM Provider
 - Connectors
 ```bash
 
-# 安装 CLI
+## 安装 CLI
 npm i -g cline
 
-# 安装 SDK
+## 安装 SDK
 npm i @cline/sdk
 
-# 添加 Cline SDK Skill
+## 添加 Cline SDK Skill
 npx skills add cline/sdk-skill
 ```
 

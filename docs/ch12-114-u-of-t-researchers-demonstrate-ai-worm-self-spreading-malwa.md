@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 11.0KB | `entities/u-of-t-ai-worm-cleverhans-papernot-2026.md`
 
-# U of T researchers demonstrate AI worm: self-spreading malware using open-weight models
+## U of T researchers demonstrate AI worm: self-spreading malware using open-weight models
 
 > **Source**: University of Toronto News (2026-06-02). Research by Nicolas Papernot's [CleverHans Lab](https://cleverhans.io/) at U of T + Vector Institute. Published 2026-06-02.
 

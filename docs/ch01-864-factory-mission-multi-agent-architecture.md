@@ -6,7 +6,7 @@
 
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/factory-mission-multi-agent-architecture.md)
 
-# Factory Mission — Multi-Agent 架构方法论
+## Factory Mission — Multi-Agent 架构方法论
 ## 核心定位
 Factory（15亿美元估值）的 **Mission** 是一套多 agent 编排系统，背后回答了一个核心问题：**当你需要 agent 团队完成比单个 agent 难上一两个数量级的任务时，应该怎么组织**。
 

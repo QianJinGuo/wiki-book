@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/video-rag-chunking-strategy-deephub-imba.md)
 
-# 视频 RAG 分块策略：停顿 / 滑动窗口 / LLM 主题分块
+## 视频 RAG 分块策略：停顿 / 滑动窗口 / LLM 主题分块
 
 ## 一句话
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 9.8KB | `entities/elf-embedded-language-flows-hekaiming.md`
 
-# ELF: Embedded Language Flows (何恺明)
+## ELF: Embedded Language Flows (何恺明)
 **作者**：胡珂雅、Linlu Qiu（共同一作）、赵瀚宏、陆伊炀、黎天鸿等    
 **机构**：MIT CSAIL（恺明团队）    
 **arXiv**：https://arxiv.org/pdf/2605.10938    

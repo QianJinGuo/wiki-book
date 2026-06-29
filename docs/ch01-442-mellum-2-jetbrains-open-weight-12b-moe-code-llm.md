@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/mellum-2-jetbrains-open-12b-moe-code-model.md`
 
-# Mellum 2 (JetBrains open-weight 12B MoE code LLM)
+## Mellum 2 (JetBrains open-weight 12B MoE code LLM)
 
 > **Background**: JetBrains 在 2026-05-29 发布 Mellum 2 技术报告（arXiv:2605.31268），是其代码补全 4B dense Mellum 的继任者。12B 总量 / 2.5B active 的 MoE 架构，64 experts / 8 active + Sliding Window + Multi-Token Prediction 双用（pretrain 辅助目标 + speculative decoding draft），FP8 + Muon + 3-phase 课程 10.6T tokens 训练，128K YaRN 扩展，SFT + RLVR 后训练出 Instruct + Thinking 两版本。Apache 2.0 全套权重释放。
 

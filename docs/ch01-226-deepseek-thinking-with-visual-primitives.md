@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 17.1KB | `entities/deepseek-visual-primitives-thinking.md`
 
-# "DeepSeek Thinking with Visual Primitives 深度解读"
-# DeepSeek Thinking with Visual Primitives 深度解读
+## "DeepSeek Thinking with Visual Primitives 深度解读"
+## DeepSeek Thinking with Visual Primitives 深度解读
 > Source: https://mp.weixin.qq.com/s/tz7Zdbv8KhHtG8fCGqQ5LQ
 > 官方论文：DeepSeek, "Thinking with Visual Primitives", 2026-04-30
 

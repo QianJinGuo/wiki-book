@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/harness-engineering-core-patterns-claude-code.md`
 
-# 深入浅出 Harness Engineering 之核心模式与理念
+## 深入浅出 Harness Engineering 之核心模式与理念
 
 ## 相关实体
 

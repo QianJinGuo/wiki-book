@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/openclaw-architecture-800lines.md`
 
-# 800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构
+## 800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-architecture-800lines.md)
 

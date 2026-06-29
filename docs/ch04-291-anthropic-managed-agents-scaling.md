@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/anthropic-managed-agents-scaling.md`
 
-# anthropic-managed-agents-scaling
+## anthropic-managed-agents-scaling
 
 本文编译自 Anthropic 工程博客，系统阐述 Managed Agents 的核心理念：用 K8s 的思路虚拟化 Agent 组件——将 session（事件日志）、harness（大脑/工具调用循环）、sandbox（代码执行环境）解耦为三个独立接口，让每个组件都能独立故障、独立替换、独立扩展。
 早期设计把全部 Agent 组件塞进一个容器——文件操作是本地 syscall，部署简单，但这养了一只**宠物**：

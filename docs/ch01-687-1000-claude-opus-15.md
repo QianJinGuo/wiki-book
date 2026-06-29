@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/webwright-microsoft-1000-lines.md`
 
-# 微软 1000 行代码，把 Claude Opus 干翻了 15 分
+## 微软 1000 行代码，把 Claude Opus 干翻了 15 分
 
 > **来源**：前端Q / winty（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/webwright-microsoft-1000-lines.md)
 

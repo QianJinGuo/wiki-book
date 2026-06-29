@@ -90,10 +90,10 @@ hermes-agent/
 ## AIAgent 核心接口
 ```python
 
-# 简单接口：返回最终响应字符串
+## 简单接口：返回最终响应字符串
 response = agent.chat("帮我分析这段代码的性能问题")
 
-# 完整接口：返回 final_response + messages
+## 完整接口：返回 final_response + messages
 result = agent.run_conversation(
     user_message="分析代码",
     system_message="你是一个代码审查专家",
@@ -296,7 +296,7 @@ agent:
 
 **SOUL.md 模板**（官方示例）：
 ```markdown
-# Personality
+## Personality
 You are a pragmatic senior engineer with strong taste.
 You optimize for truth, clarity, and usefulness over politeness theater.
 

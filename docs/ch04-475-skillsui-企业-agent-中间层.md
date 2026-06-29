@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/skillsui-enterprise-agent-middle-layer.md`
 
-# SkillsUI 企业 Agent 中间层
+## SkillsUI 企业 Agent 中间层
 
 ## 相关实体
 - [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](/ch04-438-langchain-fireworks-100x-cheaper-trace-judge-通用-trace-评估/)

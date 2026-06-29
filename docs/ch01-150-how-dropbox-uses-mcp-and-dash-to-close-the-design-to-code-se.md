@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.6KB | `entities/dropbox-mcp-dash-design-code-security.md`
 
-# How Dropbox uses MCP and Dash to close the design-to-code security gap
+## How Dropbox uses MCP and Dash to close the design-to-code security gap
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dropbox-mcp-dash-design-code-security.md)
 

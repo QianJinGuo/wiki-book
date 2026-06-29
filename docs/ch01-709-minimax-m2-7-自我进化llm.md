@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/minimax-m2-7.md`
 
-# MiniMax M2.7
+## MiniMax M2.7
 > 首个模型深度参与迭代自身的LLM版本，主打自我进化+Agent Teams+专业办公。
 
 ## 基本信息

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 8.1KB | `entities/23-building-jaegers-clickhouse-backend-8-6x-compression-on-10-million-spans.md`
 
-# Building Jaeger’s ClickHouse backend: 8.6× compression on 10 million spans
+## Building Jaeger’s ClickHouse backend: 8.6× compression on 10 million spans
 
 > **来源**: [Building Jaeger’s ClickHouse backend: 8.6× compression on 10 million spans](https://cncf.io/blog/2026/06/23/building-jaegers-clickhouse-backend-8-6x-compression-on-10-million-spans/)
 

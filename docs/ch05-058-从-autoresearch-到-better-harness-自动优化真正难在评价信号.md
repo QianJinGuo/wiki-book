@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/better-harness-eval-trace-harness-hill-climbing.md`
 
-# 从 Autoresearch 到 Better-Harness：自动优化真正难在评价信号
+## 从 Autoresearch 到 Better-Harness：自动优化真正难在评价信号
 **来源:** 慢学AI（基于 LangChain 博客）
 **URL:** https://mp.weixin.qq.com/s/Tinog5FcVCjtFrhcgbVrtQ
 **原文:** LangChain — *Better Harness: A Recipe for Harness Hill-Climbing with Evals*

@@ -75,7 +75,7 @@ good example:   ^[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw
 高频任务应沉淀为流程卡片：   ^[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)]
 ```markdown  
 
-# 方案评审流程卡
+## 方案评审流程卡
 适用场景：当我要评审一个产品、架构、文章主线或商业想法时使用。  
 默认步骤：  
 1. 先复述方案的目标和约束。  
@@ -176,7 +176,7 @@ good example:   ^[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw
 参考文章中的"方案评审流程卡"，可以快速设计自己的第一张卡片：   ^[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)]
 ```markdown  
 
-# [任务类型] 流程卡
+## [任务类型] 流程卡
 适用场景：当你需要 [具体场景描述] 时使用。  
 前置确认：  
 

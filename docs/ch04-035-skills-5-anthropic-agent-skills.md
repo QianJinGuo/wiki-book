@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 27.4KB | `entities/skills-driven-programming-taobao-enterprise-5-phase-evolution-2026-06-17.md`
 
-# 面向 Skills 编程：大淘宝企业购 5 阶段演进与 Anthropic Agent Skills 标准实战
+## 面向 Skills 编程：大淘宝企业购 5 阶段演进与 Anthropic Agent Skills 标准实战
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skills-driven-programming-taobao-enterprise-5-phase-evolution-2026-06-17.md)
 
@@ -236,11 +236,11 @@ ai_coding/
 ### 7.4 kn-fetcher CLI 工具
 
 ```bash
-# 拉取编码规范
+## 拉取编码规范
 kn-fetcher pull --platform aone-copilot --rules java-coding-standards
-# 搜索知识
+## 搜索知识
 kn-fetcher search --rules java
-# 批量初始化（一键拉取项目所需的所有知识）
+## 批量初始化（一键拉取项目所需的所有知识）
 kn-fetcher pull --platform aone-copilot --package growth-batch-pull
 ```
 

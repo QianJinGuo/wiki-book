@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md`
 
-# Opus 4.7 发布：相比 4.6 核心变化与 Claude Code 搭配最佳实践
+## Opus 4.7 发布：相比 4.6 核心变化与 Claude Code 搭配最佳实践
 
 ## 相关实体
 

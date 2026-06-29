@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/anthropic-building-effective-human-agent-teams.md`
 
-# Building effective human-agent teams
+## Building effective human-agent teams
 
 > **Background**：Anthropic 官方博客，探讨从"单人单 Agent"到"多人多 Agent 团队"的范式转变。文章基于 Claude 在实际生产环境中的使用数据和模式观察。
 

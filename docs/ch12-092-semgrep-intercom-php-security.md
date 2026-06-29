@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/semgrep-intercom-php-security.md)
 
-# Semgrep Intercom PHP Supply Chain Attack
+## Semgrep Intercom PHP Supply Chain Attack
 Semgrep: Intercom PHP 供应链攻击 Mini-Shai-Hulud，Packagist/Composer 投毒
 
 ## 摘要

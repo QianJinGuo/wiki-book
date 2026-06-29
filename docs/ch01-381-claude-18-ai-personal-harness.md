@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/ruofei-claude-18-actions-personal-ai-workbench.md`
 
-# 用好 Claude 的 18 个动作：搭一个个人 AI 工作台（Personal Harness）
+## 用好 Claude 的 18 个动作：搭一个个人 AI 工作台（Personal Harness）
 
 > 作者：若飞，公众号：架构师（JiaGouX）  
 > 原始链接：[原始链接](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)  

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.7KB | `entities/claude-fable-5-mollick-patron-vs-wizard.md`
 
-# Claude Fable 5 — Ethan Mollick hands-on qualitative evaluation
+## Claude Fable 5 — Ethan Mollick hands-on qualitative evaluation
 
 > **来源**：[Ethan Mollick, One Useful Thing, 2026-06-09](https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos) 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/oneusefulthing-mythos-fable-mollick-feels-like.md)
 >

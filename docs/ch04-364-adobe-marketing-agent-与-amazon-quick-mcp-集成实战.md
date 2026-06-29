@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/adobe-marketing-agent-amazon-quick-mcp-integration.md`
 
-# Adobe Marketing Agent 与 Amazon Quick MCP 集成实战
+## Adobe Marketing Agent 与 Amazon Quick MCP 集成实战
 
 > **来源**: AWS Machine Learning Blog · Ebbey Thomas, Siddhartha Srivastava, Ranjith Raman, Eugene Thomas · 2026-06-19
 

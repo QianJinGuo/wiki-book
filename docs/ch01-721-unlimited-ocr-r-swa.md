@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/baidu-unlimited-ocr-rswa-attention.md`
 
-# 百度 Unlimited OCR：R-SWA 参考滑动窗口注意力
+## 百度 Unlimited OCR：R-SWA 参考滑动窗口注意力
 
 ## 核心创新
 

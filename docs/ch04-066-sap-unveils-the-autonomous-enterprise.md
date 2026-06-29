@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 19.0KB | `entities/sap-unveils-the-autonomous-enterprise.md`
 
-# SAP Unveils the Autonomous Enterprise
+## SAP Unveils the Autonomous Enterprise
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sap-unveils-the-autonomous-enterprise.md)
 

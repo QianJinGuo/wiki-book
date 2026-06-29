@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 27.6KB | `entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md`
 
-# 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
+## 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
 

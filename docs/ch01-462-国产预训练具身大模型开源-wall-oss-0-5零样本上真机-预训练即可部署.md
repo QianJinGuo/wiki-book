@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/wall-oss-05-pretraining-embodied-ai-x-square-robot.md)
 
-# Wall-OSS-0.5：预训练即可部署的具身大模型
+## Wall-OSS-0.5：预训练即可部署的具身大模型
 
 ## 一句话
 

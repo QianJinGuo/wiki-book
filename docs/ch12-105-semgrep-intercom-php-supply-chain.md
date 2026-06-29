@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/semgrep-intercom-php-supply-chain.md`
 
-# Malicious Intercom PHP Package Mini-Shai-Hulud
+## Malicious Intercom PHP Package Mini-Shai-Hulud
 Semgrep security research: malicious Intercom PHP package spreading Mini-Shai-Hulud attack via Packagist/Composer. Attack chain, IOCs, code-level analysis.    
 **Source**: [raw article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/semgrep-intercom-php-security.md) | **Review**: value=7 confidence=8    
 

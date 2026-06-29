@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.9KB | `entities/agentic-resource-discovery-specification-snowflake.md`
 
-# Agentic Resource Discovery (ARD) Specification
+## Agentic Resource Discovery (ARD) Specification
 
 Snowflake 联合 Microsoft、GoDaddy 等推出的开放协议，标准化企业级 AI Agent 的目录化、搜索和发现机制。
 

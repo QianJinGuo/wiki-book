@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/what-is-software-llms-replace-tomassetti-2026.md`
 
-# What Is Software, and Will LLMs Replace It?
+## What Is Software, and Will LLMs Replace It?
 
 ## 摘要
 

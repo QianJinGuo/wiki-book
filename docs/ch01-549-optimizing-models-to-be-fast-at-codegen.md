@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/morphllm-codegen-inference-optimization.md`
 
-# Optimizing Models to Be Fast at Codegen
+## Optimizing Models to Be Fast at Codegen
 
 Morphllm shows how to exploit the structure of code editing tasks for LLM inference acceleration. Core insight: code edits have high locality -- agents reread the same repo each turn, context overlaps heavily with the previous turn, and edits are mostly incremental copies of the file.
 

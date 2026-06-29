@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.6KB | `entities/ai-friendly-architecture-design.md`
 
-# AI Friendly架构设计
+## AI Friendly架构设计
 
 > [!summary] 核心洞察
 > AI Friendly架构不是对传统工程的全盘否定，而是为应对AI"不确定性"的精准升级——通过**三范式转变**（确定性→概率性、结构化→语义化、静态→动态）赋予传统工程驾驭不确定性的能力。并非所有AI工程都需要此架构，仅当业务涉及深层次AI应用（记忆管理、工具管理、上下文工程、Multi-Agent调度等）时才需要演进。

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/claw-anything-personal-assistant-agent-benchmark.md`
 
-# Claw-Anything：See Anything, then Do Anything
+## Claw-Anything：See Anything, then Do Anything
 
 首个面向日常个人助理 Agent、沿**长程历史 × 多服务 × 多设备**三维度扩展的评测基准。200 个真实任务，GPT-5.5 pass@1 仅 34.5%。开源管线 + 2000 训练环境，微调 Qwen3.5-27B 提升 23.7%。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.8KB | `entities/github-copilot-getting-more-from-each-token-how-copilot-improves-context-handlin.md`
 
-# Getting more from each token: How Copilot improves context handling and model routing
+## Getting more from each token: How Copilot improves context handling and model routing
 
 > **来源**: [Getting more from each token: How Copilot improves context handling and model routing](https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/)
 

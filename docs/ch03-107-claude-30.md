@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/claude-research-agent-auto-newsletter-cyrilxbt.md`
 
-# 我用Claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用
+## 我用Claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用
 
 ## 核心结论
 

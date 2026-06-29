@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/tsinghua-ai-self-evolving-organization-corp-paradigm.md`
 
-# 清华 AI 自进化组织研究报告：AI 业务资产化与公司形态重构
+## 清华 AI 自进化组织研究报告：AI 业务资产化与公司形态重构
 
 ## 摘要
 

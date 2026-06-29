@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/my-bets-on-open-models-mid-2026.md`
 
-# My bets on open models, mid-2026
+## My bets on open models, mid-2026
 
 ## 相关实体
 

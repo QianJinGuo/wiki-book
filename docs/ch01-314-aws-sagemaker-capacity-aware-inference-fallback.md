@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/aws-sagemaker-capacity-aware-inference-fallback.md`
 
-# SageMaker容量感知推理：实例池+优先级Fallback
+## SageMaker容量感知推理：实例池+优先级Fallback
 ## 三个关键洞察
 ### 1. 实例池+优先级Fallback
 当主实例不可用时，自动fallback到池中下一个可用实例，优先级队列确保关键任务优先调度。这是多模型/多客户共享GPU舰队时的必备容错机制。

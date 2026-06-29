@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md`
 
-# 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
+## 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 
 ## 深度分析
 
-# 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
+## 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
 摘要：本文是”解决 Agentic AI 应用 Token 爆炸问题”系列的第三篇，系统讨论 Agent 记忆系统在生产环境的工程税:从写入纪律、Prompt Cache 冲突、跨模型容量、Embedding 迁移到 Agent 自产 Skill 治理,以及 S3 Files / S3 Vectors / AgentCore Memory 在亚马逊云科技上的落地路径。
 
 ### 核心观点

@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 31.8KB | `entities/shinyhunters-canvas-domain-suspended.md`
 
-# "Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended"
-# Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended
+## "Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended"
+## Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended
 Published Time: 2026-05-12T22:18:09+01:00
 Markdown Content:
 [![Image 4: Hackread - Cybersecurity News, Data Breaches, AI and More](https://hackread.com/wp-content/uploads/2023/08/Hackread-logo.png)](https://hackread.com/)[![Image 5: Hackread - Cybersecurity News, Data Breaches, AI and More](https://hackread.com/wp-content/uploads/2023/08/Hackread-logo.png)](https://hackread.com/)

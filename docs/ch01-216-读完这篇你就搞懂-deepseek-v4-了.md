@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.8KB | `entities/读完这篇你就搞懂-deepseek-v4-了-v2.md`
 
-# 读完这篇你就搞懂 DeepSeek v4 了
+## 读完这篇你就搞懂 DeepSeek v4 了
 
 > 腾讯技术工程 2026-04-28 发布，作者 dorian。2026-04-24 DeepSeek 突然上线 V4 预览版并同步开源——技术报告「DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence」。本文系统解读 V4 在 attention、residual、kernel 三个层面的架构创新，是中文社区最完整的 V4 深度解读之一。
 > → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/读完这篇你就搞懂-deepseek-v4-了-v2.md)

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/se-ga-memory-augmented-self-evolution-gui-agents.md`
 
-# SE-GA GUI 智能体记忆增强自进化
+## SE-GA GUI 智能体记忆增强自进化
 
 > [!summary] 核心洞察
 > GUI 智能体的核心矛盾是「记不住」和「学不会」——上下文窗口受限导致信息丢失，静态策略无法从经验中学习。SE-GA（ICML 2026）通过 **TTME 三层记忆**（情景/语义/经验）解决记忆问题，**MASE 两阶段训练+GRPO+Hindsight Goal-Shifting** 解决学习问题。以 Qwen2.5-VL-7B 超越 72B 基线。

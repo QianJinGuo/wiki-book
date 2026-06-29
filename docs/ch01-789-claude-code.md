@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/claude-code-superpowers-workflow-by-xinlingyuanyuanyuan.md`
 
-# 给 Claude Code 装上'超能力' — 它干活比我还靠谱
+## 给 Claude Code 装上'超能力' — 它干活比我还靠谱
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-superpowers-workflow-by-xinlingyuanyuanyuan.md)
 
@@ -19,7 +19,7 @@
 Claude Code 不只是需要一个会写代码的助手，它需要一个会干活的人。
 2. com/obra/superpowers.
 3. claude/skills
-# 方式三：手动安装中文版
+## 方式三：手动安装中文版
 git clone https://github.
 4. com/jnMetaCode/superpowers-zh.
 5. claude/skills

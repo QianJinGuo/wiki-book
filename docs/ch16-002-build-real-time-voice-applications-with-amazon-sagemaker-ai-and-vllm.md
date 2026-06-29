@@ -143,11 +143,11 @@ LABEL com.amazonaws.sagemaker.capabilities.bidirectional-streaming=true
 
 WORKDIR /opt/ml/code
 
-# 安装 bridge 依赖
+## 安装 bridge 依赖
 COPY requirements.txt .
 RUN pip install --upgrade --no-cache-dir -r requirements.txt
 
-# WebSocket Bridge 和入口脚本
+## WebSocket Bridge 和入口脚本
 COPY app.py .
 COPY sagemaker-entrypoint.sh entrypoint.sh
 RUN chmod +x entrypoint.sh

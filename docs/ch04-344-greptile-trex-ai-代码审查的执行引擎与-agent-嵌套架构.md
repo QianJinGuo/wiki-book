@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/greptile-trex-code-execution-artifact-generation.md`
 
-# Greptile TREX：AI 代码审查的执行引擎与 Agent 嵌套架构
+## Greptile TREX：AI 代码审查的执行引擎与 Agent 嵌套架构
 
 ## 摘要
 

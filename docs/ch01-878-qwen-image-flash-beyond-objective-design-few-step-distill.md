@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 12.5KB | `entities/qwen-image-flash-beyond-objective-design.md`
 
-# Qwen-Image-Flash: Beyond Objective Design
+## Qwen-Image-Flash: Beyond Objective Design
 
 > **Background**: This is an arxiv 2606.03746 (cs.CV) paper from the Qwen team (Tianhe Wu et al., 23 authors, Alibaba). Submitted 2026-06-02, v2 on 2026-06-03. It introduces a few-step distillation methodology for the Qwen-Image-2.0 unified text-to-image + instruction-guided image editing model, producing a 4-NFE student called Qwen-Image-Flash. The paper's central message is that the **training recipe** (data composition, teacher guidance, task mixture) matters as much as the distillation objective — a contribution to the broader few-step visual generation literature where prior work focused almost exclusively on objective design (DMD, consistency, adversarial, distribution matching).
 

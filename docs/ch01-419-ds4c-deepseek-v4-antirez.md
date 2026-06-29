@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4.md)
 
-# ds4.c — antirez 的 DeepSeek V4 专属本地推理引擎
+## ds4.c — antirez 的 DeepSeek V4 专属本地推理引擎
 ## 核心定位
 **ds4.c** 是 Redis 作者 antirez（Salvatore Sanfilippo）专为 DeepSeek V4 Flash 打造的本地推理引擎，以 C + Metal 从头实现，无框架依赖，无抽象层，Metal-only。
 

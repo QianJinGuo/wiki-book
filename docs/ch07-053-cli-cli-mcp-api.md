@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/cli-mcp-sdk-agent-tool-selection.md`
 
-# CLI系列④·选型CLI、MCP还是API？
+## CLI系列④·选型CLI、MCP还是API？
 CLI、MCP Server、SDK、Skills、Code Execution——这五个词看起来都在说"让 Agent 用工具"，但它们根本不在同一个抽象层级。
 **核心问题：** 它应不应该有 CLI？还是 MCP Server 就够？或者它根本不该让 Agent 直接接触？
 

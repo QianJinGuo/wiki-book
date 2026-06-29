@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/autobrowse-browserbase-persistent-skill-files.md)
 
-# Autobrowse — 浏览器 Agent 持久记忆：技能文件作为永久技能
+## Autobrowse — 浏览器 Agent 持久记忆：技能文件作为永久技能
 ## 核心定位
 Browserbase（Kyle Jeong, 2026-05-07）提出。核心命题：**让浏览器 Agent 的每次探索都变成可复用的永久技能**——不是向量，不是会话录像，而是任何人都能读懂的 markdown 技能文件。  
 

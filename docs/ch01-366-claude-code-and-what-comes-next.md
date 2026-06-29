@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/claude-code-and-what-comes-next.md`
 
-# Claude Code and What Comes Next
+## Claude Code and What Comes Next
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-and-what-comes-next.md)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/demis-hassabis-yc-interview-jiedaotixi.md`
 
-# Demis Hassabis YC Interview: AGI 时间线、记忆机制、Agent 未来
+## Demis Hassabis YC Interview: AGI 时间线、记忆机制、Agent 未来
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/demis-hassabis-yc-interview-jiedaotixi.md)
 

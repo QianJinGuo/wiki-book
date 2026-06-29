@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/claude-code-dynamic-workflows-thariq-practical-patterns.md`
 
-# Claude Code Dynamic Workflows 实战模式与构建技巧
+## Claude Code Dynamic Workflows 实战模式与构建技巧
 
 > **Background**: Anthropic Claude Code 团队的 Thariq Shihipar 和 Sid Bidasaria 分享了 Dynamic Workflows 的实战经验——让 Claude 为每个任务临时编写专属 harness 的 JavaScript 协调机制。模型够强（Claude Opus 4.8）后，不再需要为每个用例写静态 harness，直接让 Claude 现场生成。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.1KB | `entities/nvidia-mcg-toolkit-model-documentation.md`
 
-# How to Automate AI Model Documentation with NVIDIA MCG Toolkit
+## How to Automate AI Model Documentation with NVIDIA MCG Toolkit
 
 ## 深度分析
 

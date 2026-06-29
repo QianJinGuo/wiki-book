@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/claude-code-hackathon-winners-2026.md`
 
-# claude-code-hackathon-winners-2026
+## claude-code-hackathon-winners-2026
 
 Anthropic + Cerebral Valley 联合黑客松：用 Opus 4.7 + Claude Code，一周时间做一个项目。
 **虚拟诊室**，让医学生在 AI 病人身上练手。

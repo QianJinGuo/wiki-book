@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/video-rag-chunking-strategy-deephub-imba.md`
 
-# 视频 RAG 中分块策略：基于停顿、滑动窗口与基于 LLM 的方法
+## 视频 RAG 中分块策略：基于停顿、滑动窗口与基于 LLM 的方法
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/video-rag-chunking-strategy-deephub-imba.md)
 

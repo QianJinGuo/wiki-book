@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/open-notebook.md`
 
-# Open Notebook
+## Open Notebook
 
 Open Notebook 是一个开源的 AI 知识管理工具，定位为 Google [NotebookLM](/ch01-017-notebooklm/) 的自托管替代品。由 lfnovo 在 GitHub 上开源，MIT 协议，2025 年 10 月发布首个正式版。
 

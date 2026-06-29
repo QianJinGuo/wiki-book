@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/skillclaw-collective-intelligence.md`
 
-# 高德 SkillClaw：让 Agent Skill 学会进化——跨会话、跨Agent、跨设备、跨用户
+## 高德 SkillClaw：让 Agent Skill 学会进化——跨会话、跨Agent、跨设备、跨用户
 > 原文：https://mp.weixin.qq.com/s/Qy8TFzm6rhLxW3EbzjZZSA
 > 来源：高德技术（官方技术号）| 2026-04-22
 > 论文：https://arxiv.org/abs/2604.08377

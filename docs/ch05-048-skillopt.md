@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/skillopt.md`
 
-# SkillOpt
+## SkillOpt
 > 微软 × 上海交大 × 同济 × 复旦。冻结模型参数，把 agent 外部技能文档当作可训练对象，用验证集门控每一次编辑。
 
 > Rohan Paul (X) 概括：「像训练小程序一样训练 agent 技能」

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/长周期-agent-详解-从-ralph-loop-到可接管-harness.md`
 
-# 长周期-agent-详解-从-ralph-loop-到可接管-harness
+## 长周期-agent-详解-从-ralph-loop-到可接管-harness
 
 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness
 这两周 Codex /goal 在群里被翻来覆去聊了好几轮。

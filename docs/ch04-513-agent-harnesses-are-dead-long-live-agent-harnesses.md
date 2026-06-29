@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 1.4KB | `entities/agent-harnesses-are-dead-long-live-agent-harnesses.md`
 
-# Agent Harnesses Are Dead. Long Live Agent Harnesses.
+## Agent Harnesses Are Dead. Long Live Agent Harnesses.
 
 ## 深度分析
 

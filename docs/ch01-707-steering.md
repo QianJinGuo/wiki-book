@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/steering-mechanism-evaluation-easyedit2-zju-alibaba.md`
 
-# 大模型可控新突破：Steering 机制、评估体系与开源落地
+## 大模型可控新突破：Steering 机制、评估体系与开源落地
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/steering-mechanism-evaluation-easyedit2-zju-alibaba.md)
 

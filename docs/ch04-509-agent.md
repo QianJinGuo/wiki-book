@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.9KB | `entities/ath-agent-trust-handshake-protocol.md`
 
-# 为了让agent更安全的工作，有多少人操碎了心
+## 为了让agent更安全的工作，有多少人操碎了心
 
 ## 深度分析
 

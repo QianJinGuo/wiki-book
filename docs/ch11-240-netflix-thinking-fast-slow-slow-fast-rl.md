@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 2.3KB | `entities/netflix-notification-slow-fast-hierarchical-rl.md`
 
-# Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构
+## Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构
 
 Netflix 将 Kahneman 的"快慢思维"理论应用于通知系统设计，构建了 **Slow Policy + Fast Policy** 的分层 RL 架构。Slow 层做周级频率规划，Fast 层做实时消息选择，解决了短期 engagement 与长期用户健康的矛盾。
 

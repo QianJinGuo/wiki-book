@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/agent-era-architect-skills-guide.md`
 
-# Agent 时代，我们架构师应该学什么？
+## Agent 时代，我们架构师应该学什么？
 
 架构师（JiaGouX）  我们都是架构师！
 这两天朋友丢过来一篇 Rohit 写的长文，讲 2026 年做 AI Agent 该学什么、构建什么、跳过什么。我一边读，一边把里面提到的框架、论文和网上讨论顺手过了一遍，信息量确实不小。

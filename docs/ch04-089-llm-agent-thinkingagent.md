@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.7KB | `entities/thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md`
 
-# 从零设计准生产级 LLM Agent：ThinkingAgent 完整架构与可靠性体系
+## 从零设计准生产级 LLM Agent：ThinkingAgent 完整架构与可靠性体系
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md)
 

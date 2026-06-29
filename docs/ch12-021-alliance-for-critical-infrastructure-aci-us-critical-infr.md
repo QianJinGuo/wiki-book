@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.0KB | `entities/818662.md`
 
-# Alliance for Critical Infrastructure (ACI): US Critical Infrastructure Cybersecurity Coalition
+## Alliance for Critical Infrastructure (ACI): US Critical Infrastructure Cybersecurity Coalition
 
 > Source: Cybersecurity Dive, Eric Geller, 2026-05-11. URL: https://www.cybersecuritydive.com/news/critical-infrastructure-cybersecurity-coalition-aci-government/818662/
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/gepa-optimize-anything-universal-text-optimization.md`
 
-# optimize_anything: A Universal API for Optimizing any Text Parameter
+## optimize_anything: A Universal API for Optimizing any Text Parameter
 
 ## 相关实体
 

@@ -6,7 +6,7 @@
 
 [Anthropic Mcp Revisited Tool Search Code Orchestration](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-mcp-revisited-tool-search-code-orchestration.md)
 
-# Anthropic 最新博客：MCP 没死，它又来了
+## Anthropic 最新博客：MCP 没死，它又来了
 > source: https://mp.weixin.qq.com/s/Sz2hzXiNCyf1YNzPbeUo5Q
 > author: J0hn，AGI Hunt
 > date: 2026-04-23

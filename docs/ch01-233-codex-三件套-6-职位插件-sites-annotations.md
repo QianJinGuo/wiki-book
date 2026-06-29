@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.4KB | `entities/codex-role-plugins-sites-annotations.md`
 
-# Codex 三件套：6 职位插件 + Sites + Annotations
+## Codex 三件套：6 职位插件 + Sites + Annotations
 > Codex 正在从"软件开发工具"演变为**覆盖所有职位的工作台**，且 Codex 团队已官宣**未来几周并入 ChatGPT**。
 
 **Codex 三件套 = (1) 6 个职位插件（62 应用 + 110 技能） + (2) Sites 网站生成 + 托管 + (3) Annotations 精准批注**。

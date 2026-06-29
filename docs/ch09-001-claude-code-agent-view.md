@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-agent-view-huashu.md)
 
-# Claude Code Agent View
+## Claude Code Agent View
 **Agent View** 是 Anthropic 在 Claude Code v2.1.139 中推出的多 Agent 可视化面板，被其工程 lead Thariq 称为「给 Claude Code 的 tmux」。它解决的不是 AI 能力问题，而是**人类在多 Agent 工作流中的注意力分配问题**——当同时运行 N 个 Claude Code 实例时，人的调度能力成为瓶颈。[^1]
 
 ## 核心设计

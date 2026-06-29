@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/model-size-scaling-in-2023-2031.md`
 
-# Model Size Scaling in 2023-2031
+## Model Size Scaling in 2023-2031
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/model-size-scaling-in-2023-2031.md)
 

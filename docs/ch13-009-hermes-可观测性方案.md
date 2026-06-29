@@ -45,8 +45,8 @@
 ```bash
 
 # 获取安装命令
-# 登录 CMS 2.0 -> AI 应用可观测 -> Hermes -> 获取命令
-# 安装插件
+## 登录 CMS 2.0 -> AI 应用可观测 -> Hermes -> 获取命令
+## 安装插件
 curl -fsSL https://arms-apm-cn-hangzhou-pre.oss-cn-hangzhou.aliyuncs.com/hermes-agent-cms-plugin/hermes-cms.sh | bash -s -- install \
   --x-arms-license-key "auto" \
   --x-arms-project "你的Project" \
@@ -54,10 +54,10 @@ curl -fsSL https://arms-apm-cn-hangzhou-pre.oss-cn-hangzhou.aliyuncs.com/hermes-
   --serviceName "hermes" \
   --endpoint "https://你的ARMS-OTLP地址/apm/trace/opentelemetry"
 
-# 开启可观测
+## 开启可观测
 hermes-cms enable
 
-# 启动 Hermes
+## 启动 Hermes
 hermes  # 前台
 hermes gateway start  # 后台
 ```

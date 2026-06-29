@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md`
 
-# Harness 工程分享：LLM Agent 的 prompt cache 命中率 90% 实战
+## Harness 工程分享：LLM Agent 的 prompt cache 命中率 90% 实战
 
 ## 相关实体
 

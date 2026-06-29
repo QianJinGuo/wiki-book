@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/human-genome-physicality-confounds-ai-genomic-foundation-models.md`
 
-# Why the Human Genome's Tangled Physicality May Confound AI
+## Why the Human Genome's Tangled Physicality May Confound AI
 
 Quanta Magazine 深度报道，探讨基因组 AI 基础模型（Evo 2、Genos、AlphaGenome）在理解人类基因组物理结构时面临的根本性挑战。
 

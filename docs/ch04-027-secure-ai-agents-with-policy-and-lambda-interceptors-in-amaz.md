@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 32.6KB | `entities/secure-ai-agents-policy-lambda-interceptors-aws.md`
 
-# Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock
+## Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock
 
 ## Prerequisites
 

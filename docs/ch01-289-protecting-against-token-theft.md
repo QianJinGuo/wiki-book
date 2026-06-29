@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.3KB | `entities/vercel-com-blog-protecting-against-token-theft.md`
 
-# Protecting against token theft
+## Protecting against token theft
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vercel-com-blog-protecting-against-token-theft.md)
 

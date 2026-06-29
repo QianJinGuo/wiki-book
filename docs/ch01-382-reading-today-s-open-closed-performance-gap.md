@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/reading-todays-open-closed-performance-gap.md`
 
-# Reading today's open-closed performance gap
+## Reading today's open-closed performance gap
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/reading-todays-open-closed-performance-gap.md)
 

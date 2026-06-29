@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/ai-skills-middleware-migration-android-harmonyos-taobao-2026.md`
 
-# AI + Skills 打通中间件迁移：Android 到鸿蒙定位服务实践
+## AI + Skills 打通中间件迁移：Android 到鸿蒙定位服务实践
 
 ## 概述
 

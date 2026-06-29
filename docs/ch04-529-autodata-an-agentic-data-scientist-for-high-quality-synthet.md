@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 5.2KB | `entities/arxiv-2606.25996.md`
 
-# Autodata: An Agentic Data Scientist for High-Quality Synthetic Data
+## Autodata: An Agentic Data Scientist for High-Quality Synthetic Data
 
 > **Background**：arxiv 论文 2606.25996（2026-06-24 首发，25 日 v2 修订），提出 Autodata——一种通用方法，使 AI Agent 充当数据科学家来构建高质量训练和评估数据。作者团队来自 Meta（Jason Weston、Sainbayar Sukhbaatar 等），属于 cs.AI / cs.CL / cs.LG 交叉领域。
 

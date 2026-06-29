@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.6KB | `entities/nadella-token-capital-microsoft-ai-economy-2026.md`
 
-# 纳德拉「Token 资本」论 — Microsoft CEO 的 AI 时代企业战略宣言
+## 纳德拉「Token 资本」论 — Microsoft CEO 的 AI 时代企业战略宣言
 
 > [!quote] 核心命题
 > 每家企业必须同时构建两种资本:**人力资本**(员工的知识、判断、人际、创造力)与 **Token 资本**(企业自建、可控、随时间进化的 AI 能力)。Token 资本增长**不削弱**人力资本,**反而放大**它。

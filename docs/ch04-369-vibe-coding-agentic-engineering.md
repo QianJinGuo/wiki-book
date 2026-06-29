@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/从vibe-coding到agentic-engineering重构后台开发全流程.md`
 
-# 从Vibe Coding到Agentic Engineering：重构后台开发全流程
+## 从Vibe Coding到Agentic Engineering：重构后台开发全流程
 
 ## 相关实体
 - [Tencent Vibe Coding To Agentic Engineering Backend](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)

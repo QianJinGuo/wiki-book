@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 18.0KB | `entities/https-stratechery-com-2026-the-google-capital-company.md`
 
-# The Google Capital Company
+## The Google Capital Company
 
 ## 概述
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.2KB | `entities/tencent-vibe-coding-to-agentic-engineering-backend.md`
 
-# 从Vibe Coding到Agentic Engineering：重构后台开发全流程
+## 从Vibe Coding到Agentic Engineering：重构后台开发全流程
 
 做后台开发的同事应该都有这个体会：从接到需求到最终发布，我们要在 PM、GitPlatform、编辑器、DevOps 平台、Galileo 之间来回横跳。每次切换都在丢上下文——刚在 PM 看完需求描述，切到编辑器就忘了某个细节；部署完测试环境去查日志，又得回忆刚才改了哪几行代码。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/two-harness-papers-microsoft-google.md`
 
-# 两篇Harness论文：微软M⋆记忆进化 + 谷歌AutoHarness动作约束
+## 两篇Harness论文：微软M⋆记忆进化 + 谷歌AutoHarness动作约束
 > AI研究风向变了：从"如何让模型更聪明"转向"如何给Agent配一个更合适的Harness框架"。
 
 ## 一、M⋆：每个任务都值得拥有专属的记忆Harness

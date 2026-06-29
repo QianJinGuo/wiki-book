@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/bedrock-agentcore-secrets-manager-identity.md`
 
-# Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity
+## Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/bedrock-agentcore-secrets-manager-identity.md)
 
@@ -13,7 +13,7 @@
 Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity 涉及agent领域的核心技术议题。
 ### 核心观点
 1. sha256: 59ab9fcf9525ccb30d11b2162928a4cc0e1955d3db620fb2db6f9f07bc28ed70
-# Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity
+## Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity
 AI agents are only as powerful as the tools they can access.
 2. Whether retrieving customer data from a CRM, posting updates to Slack, or querying a GitHub repository, agents need to call external APIs, and that means securely passing credentials at runtime.
 3. Getting that right, without hardcoding secrets in code or exposing them in agent prompts, is one of the defining challenges of building production-ready agentic systems.

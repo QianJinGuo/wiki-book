@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/alphaevolve-impact.md`
 
-# AlphaEvolve: Gemini-powered coding agent scaling impact across fields
+## AlphaEvolve: Gemini-powered coding agent scaling impact across fields
 
 <div class="button-group skip-link"><a class="button button--tonal" href=#page-content>Skip to main content</a></div><div aria-hidden=true class=svg-sprite-container><svg xmlns=http://www.w3.org/2000/svg><defs><svg viewbox="0 0 24 24" id=chevron-left>
 <path d="M16.41 5.41L15 4l-8 8 8 8 1.41-1.41L9.83 12"></path></svg><svg viewbox="0 0 24 24" id=chevron-right>

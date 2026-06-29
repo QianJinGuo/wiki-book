@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.md`
 
-# Nvidia embraces role of AI investor, pushing past $40 billion in equity bets this year
+## Nvidia embraces role of AI investor, pushing past $40 billion in equity bets this year
 
 ![Image 1: Nvidia founder and CEO, Jensen Huang, speaks during the 29th annual Milken Institute Global Conference at the Beverly Hilton in Beverly Hills, California on May 4, 2026. (Photo by Patrick T. Fallon / AFP via Getty Images)](https://image.cnbcfm.com/api/v1/image/108302210-1777986151335-gettyimages-2274057858-AFP_A9TU3XM.jpeg?v=1777986265&w=1858&h=1045&vtcrop=y)
 Nvidia founder and CEO, Jensen Huang, speaks during the 29th annual Milken Institute Global Conference at the Beverly Hilton in Beverly Hills, California on May 4, 2026.

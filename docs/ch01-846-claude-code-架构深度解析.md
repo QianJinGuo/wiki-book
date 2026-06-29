@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 33.2KB | `entities/claude-code-deep-architecture-analysis.md`
 
-# Claude Code 架构深度解析
+## Claude Code 架构深度解析
 > **来源**: (技术分析)
 > **URL**: https://mp.weixin.qq.com/s/bMjXlD-OcnFW-wuN1yW8FA
 > **SHA256**: eabd5a01b9faaffa55299117dd40fbe5104969a63f1ecb277138fe1a4e3d76b5

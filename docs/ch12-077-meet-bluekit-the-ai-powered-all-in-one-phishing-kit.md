@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/bluekit.md`
 
-# Meet Bluekit: The AI-Powered All-in-One Phishing Kit
+## Meet Bluekit: The AI-Powered All-in-One Phishing Kit
 Introducing Varonis Atlas: Secure everything you build and run with AI [Learn more](https://www.varonis.com/platform/ai-security?hsLang=en)
 [](https://www.varonis.com/?hsLang=en)
 Data Security Platform

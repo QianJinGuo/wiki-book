@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/three-years-gpt3-gemini3-mollick.md`
 
-# 三年从 GPT-3 到 Gemini 3：Mollick 对 Agent 时代 AI 演进的实测
+## 三年从 GPT-3 到 Gemini 3：Mollick 对 Agent 时代 AI 演进的实测
 
 > 2026-06-07 引用自 Ethan Mollick《Three Years from GPT-3 to Gemini 3》，One Useful Thing，2025-11-18。
 

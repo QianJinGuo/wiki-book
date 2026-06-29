@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.5KB | `entities/hermes-skill-system-winty.md`
 
-# "Skill 系统：Agent 如何把经验沉淀成可复用能力"
+## "Skill 系统：Agent 如何把经验沉淀成可复用能力"
 ## 核心命题
 **Memory 解决的是"我记得这件事是这样"。**
 **Skill 解决的是"我知道这件事该怎么做"。**

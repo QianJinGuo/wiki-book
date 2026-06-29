@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md`
 
-# DeepSeek陈德里AI论文第二弹：从6分到8分，DeliAutoResearch SKILL又进化了
+## DeepSeek陈德里AI论文第二弹：从6分到8分，DeliAutoResearch SKILL又进化了
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
 

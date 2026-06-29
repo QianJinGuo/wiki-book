@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md`
 
-# Latest open artifacts (#19)：Qwen 3.5、GLM 5、MiniMax 2.5 — 中国实验室的前沿推进
+## Latest open artifacts (#19)：Qwen 3.5、GLM 5、MiniMax 2.5 — 中国实验室的前沿推进
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md)
 

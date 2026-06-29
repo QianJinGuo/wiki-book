@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/fudan-agentic-harness-engineering-ahe-gpt54-7points.md`
 
-# 复旦 AHE：让 Harness 自进化的 Agentic Harness Engineering
+## 复旦 AHE：让 Harness 自进化的 Agentic Harness Engineering
 
 **URL:** https://mp.weixin.qq.com/s/ObREWAzbx9znsfuz1r4ZuQ
 **标签:** #HarnessEngineering #AHE #自动化优化 #复旦 #北京大学

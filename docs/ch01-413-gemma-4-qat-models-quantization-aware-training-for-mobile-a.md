@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/gemma-4-qat-models-optimizing-compression.md`
 
-# Gemma 4 QAT Models: Quantization-Aware Training for Mobile and Edge
+## Gemma 4 QAT Models: Quantization-Aware Training for Mobile and Edge
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemma-4-qat-models-optimizing-compression.md)
 

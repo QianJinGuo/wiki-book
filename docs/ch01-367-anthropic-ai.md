@@ -6,7 +6,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-ai-native-startup-handbook.md)
 
-# Anthropic 官方 AI 原生创业公司手册
+## Anthropic 官方 AI 原生创业公司手册
 Anthropic 整理的打造 **AI 原生创业公司**实用手册，针对 2026 年可能性重新梳理创业生命周期四个核心阶段。
 
 ## 核心框架：创业四阶段

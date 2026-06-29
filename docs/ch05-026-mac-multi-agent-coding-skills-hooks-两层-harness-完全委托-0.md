@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.9KB | `entities/mac-multi-agent-coding-skills-hooks-harness.md`
 
-# MAC（multi-agent-coding）：Skills + Hooks 两层 Harness
+## MAC（multi-agent-coding）：Skills + Hooks 两层 Harness
 > "**完全委托的前提，不是更强的模型，是更可靠的环境。**"
 >
 > "**Skills 引导 AI 做正确的事，Hooks 保证关键的事一定发生——两层叠在一起，Harness 才成立。**"

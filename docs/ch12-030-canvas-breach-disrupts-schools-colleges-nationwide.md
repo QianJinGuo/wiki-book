@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/canvas-breach-disrupts-schools-colleges-nationwide.md`
 
-# Canvas Breach Disrupts Schools & Colleges Nationwide – Krebs on Security
+## Canvas Breach Disrupts Schools & Colleges Nationwide – Krebs on Security
 [![Image 1](http://krebsonsecurity.com/b-doppel/9.png)](https://www.doppel.com/?utm_source=krebsonsecurity&utm_medium=display&utm_campaign=fy27brandcampaign&utm_content=imitation)
 [![Image 2](http://krebsonsecurity.com/b-knowbe4/49.jpg)](https://www.knowbe4.com/training-humans-ai-agents?utm_source=krebs&utm_medium=display&utm_campaign=traininghumansandai&utm_content=bannerai)
 [](http://twitter.com/briankrebs)[](https://krebsonsecurity.com/feed/)[](https://www.linkedin.com/in/bkrebs/)

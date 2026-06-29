@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.2KB | `entities/tokens-per-result.md`
 
-# Intelligence Per Dollar
+## Intelligence Per Dollar
 
 ## 概要
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/from-prompt-to-harness-claude-official.md`
 
-# 从 Prompt 到 Harness：Claude 官方学习资料
+## 从 Prompt 到 Harness：Claude 官方学习资料
 > 作者：张嘎（公众号「有戏圈」），2026-05-07。
 > 对 Learn Harness Engineering 课程 + OpenAI/Anthropic 官方资料的实践者解读。
 > 核心判断：很多 AI 编码翻车不是模型能力不够，而是仓库没有给 Agent 一套能可靠工作的系统。

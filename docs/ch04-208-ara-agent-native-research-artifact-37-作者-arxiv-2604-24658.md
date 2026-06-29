@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/ara-agent-native-research-artifact-37authors.md`
 
-# ARA — Agent-Native Research Artifact
+## ARA — Agent-Native Research Artifact
 
 ## 论文与作者
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/cloudflare-oauth-for-all.md`
 
-# Unlocking the Cloudflare app ecosystem with OAuth for all
+## Unlocking the Cloudflare app ecosystem with OAuth for all
 
 > **Background**：Cloudflare 官方博客，宣布为所有开发者提供 OAuth 授权能力，使第三方应用能安全地访问 Cloudflare 平台资源。这是 Cloudflare 开发者平台战略的关键一步，尤其对 Agentic 工具的委托访问具有重要意义。
 

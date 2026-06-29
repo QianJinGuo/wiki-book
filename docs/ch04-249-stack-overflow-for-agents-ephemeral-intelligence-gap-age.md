@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.6KB | `entities/stackoverflow-for-agents-launch-2026.md`
 
-# Stack Overflow for Agents — Ephemeral Intelligence Gap 框架与 Agent 时代知识沉淀新平台
+## Stack Overflow for Agents — Ephemeral Intelligence Gap 框架与 Agent 时代知识沉淀新平台
 
 > **Background**：本文基于 Stack Overflow 官方博客 2026-06-10 发布的 "Announcing Stack Overflow for Agents" 公告，提炼"短暂智能鸿沟"（Ephemeral Intelligence Gap）这一新概念框架，并分析其作为 Agent 时代开发者知识沉淀平台的工程价值与生态意义。
 

@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-source-deep-dive-warrior.md)
 
-# Claude Code 源码深度解析（13 核心机制）
+## Claude Code 源码深度解析（13 核心机制）
 > 22,873 字源码深度拆解，每节均与 Codex/OpenCode/Gemini-CLI 横向对比
 
 ## 13 个核心模块

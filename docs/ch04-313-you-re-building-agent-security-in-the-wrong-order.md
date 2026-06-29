@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/youre-building-agent-security-in-the-wrong-order.md`
 
-# You're building agent security in the wrong order
+## You're building agent security in the wrong order
 
 CrewAI 创始人提出的 Agent 安全建设顺序论：企业普遍先建安全层（IAM/授权/监控），再补 Harness（记忆/工具/状态管理），顺序反了。正确顺序是 Harness → Governance → Identity & Auth。
 

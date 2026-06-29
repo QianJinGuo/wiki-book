@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.6KB | `entities/prompt-debugger-compare-templates-winty.md`
 
-# prompt-debugger-compare-templates-winty
+## prompt-debugger-compare-templates-winty
 
 Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对比的 A/B 测试"。
 1. 并排对比 — 同一个输入，两个 Prompt 的输出摆在一起看

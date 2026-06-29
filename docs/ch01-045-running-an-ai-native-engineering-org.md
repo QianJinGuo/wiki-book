@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 7.9KB | `entities/running-an-ai-native-engineering-org.md`
 
-# Running an AI-native engineering org
+## Running an AI-native engineering org
 
 URL: https://claude.com/blog/running-an-ai-native-engineering-org
 

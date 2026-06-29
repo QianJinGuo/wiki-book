@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.6KB | `entities/claude-code-personal-learning-system-ruofei.md`
 
-# Claude Code 个人学习系统：从答案机到学习工作台
+## Claude Code 个人学习系统：从答案机到学习工作台
 
 ## 核心洞察
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/anthopic-distillation-behavioural-traits-nature.md`
 
-# Nature | Anthropic：蒸馏过程潜意识传递行为偏好
+## Nature | Anthropic：蒸馏过程潜意识传递行为偏好
 > CNS导读 | 2026-04-16 | Nature 652, 615–621 (2026)
 > doi: 10.1038/s41586-026-10319-8
 从一个模型蒸馏数据到另一个模型时，即便蒸馏的数据与被蒸馏模型的行为偏好**完全无关**（例如只蒸馏生成的数值，且剔除了 911 等有特殊含义的数字），被蒸馏模型的行为偏好（如喜欢的动物等）**也会通过蒸馏过程"潜意识传递"**给新模型。

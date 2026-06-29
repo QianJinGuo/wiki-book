@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/claude-code-large-codebase-enterprise-deployment-anthropic-aihanshijì.md`
 
-# 大厂代码库几百万行，Claude Code怎么跑起来的？Anthropic首次公开全套打法
+## 大厂代码库几百万行，Claude Code怎么跑起来的？Anthropic首次公开全套打法
 > 原文：https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start
 > 来源：AI寒武纪（微信），2026-05-19
 

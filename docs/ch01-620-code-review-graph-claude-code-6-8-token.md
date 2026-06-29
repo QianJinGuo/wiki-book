@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/code-review-graph.md`
 
-# code-review-graph：Claude Code 本地知识图谱，减少 6.8 倍代码审查 Token
+## code-review-graph：Claude Code 本地知识图谱，减少 6.8 倍代码审查 Token
 > URL：https://mp.weixin.qq.com/s/jc5RZB9eIYSAmEUMfMxtkg
 > 发布时间：2026年4月9日 22:30
 > SHA-256：`3efa514c6791a5bc44b0c186003c2b6d9be9c903b246a859254c0b9ff563a0f5`

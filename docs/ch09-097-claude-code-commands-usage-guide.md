@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/claude-code-commands-usage-guide.md`
 
-# claude-code-commands-usage-guide
+## claude-code-commands-usage-guide
 
 - `clear`：彻底清空，重新开始（不适合日常整理，适合"重开一局"）
 - `compact`：压缩上下文，保留主线清理包袱（比 clear 更该高频使用）

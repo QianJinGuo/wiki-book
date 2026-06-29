@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/llmreaper-dom-based-ai-exfiltration.md`
 
-# LLMReaper - DOM Based AI Conversation Exfiltration
+## LLMReaper - DOM Based AI Conversation Exfiltration
 
 ## 深度分析
 

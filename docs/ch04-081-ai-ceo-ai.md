@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.5KB | `entities/ai-native-team-building-failures-ceo-digital-twin-case.md`
 
-# AI 原生团队的脏乱差：CEO 数字分身失败案例与 AI 销售线索分配的兴衰
+## AI 原生团队的脏乱差：CEO 数字分身失败案例与 AI 销售线索分配的兴衰
 
 ## Overview
 

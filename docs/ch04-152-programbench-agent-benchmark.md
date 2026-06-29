@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/programbench-agent-benchmark.md`
 
-# ProgramBench: Benchmarking Programs, Not Prompts
+## ProgramBench: Benchmarking Programs, Not Prompts
 
 ## 深度分析
 

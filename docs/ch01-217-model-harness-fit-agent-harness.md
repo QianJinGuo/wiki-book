@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.7KB | `entities/model-harness-fit-agent-harness.md`
 
-# Model-Harness-Fit：模型与壳的适配性
+## Model-Harness-Fit：模型与壳的适配性
 > 原文: https://mp.weixin.qq.com/s/TTe7IY_pjAuv4zA9krlYrQ
 > Author: Nicolas Bustamante (Cursor/前OpenAI)，编译自其博客
 > Score: value=7, confidence=7, product=49 ≥ 49 → PASS

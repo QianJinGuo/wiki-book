@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 28.5KB | `entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md`
 
-# 滴滴 IBG 智能客服质检系统
+## 滴滴 IBG 智能客服质检系统
 
 ## 概览
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.4KB | `entities/openai-gdpval-real-ai-agents-threshold.md`
 
-# OpenAI GDPval and the Real AI Agents Threshold (Mollick View)
+## OpenAI GDPval and the Real AI Agents Threshold (Mollick View)
 
 > **Core insight**: 2025-09 OpenAI 发布 **GDPval**——一个**由 14 年经验行业专家**设计的真实任务基准（每任务 4-7 小时），AI 几乎追平人类（**略输但差距很小**）。Mollick 用 Claude Sonnet 4.5 实测**学术 replication 危机**可被 AI 自动化解决——这不止节省时间，而是**改变整个学术领域**的可能。
 

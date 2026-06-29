@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/skills-anthropic-openai-comparison-frontend-design.md`
 
-# Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异
+## Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异
 **作者**：若飞 | **来源**：架构师（JiaGouX）| **时间**：2026年3月4日
 
 ## 先快速回顾：Skill 解决什么问题

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/private-fintech-vs-public-fintech.md`
 
-# Private Fintech Has Quietly Become Bigger Than Public Fintech
+## Private Fintech Has Quietly Become Bigger Than Public Fintech
 
 ## 深度分析
 

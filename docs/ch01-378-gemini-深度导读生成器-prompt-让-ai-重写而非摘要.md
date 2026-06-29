@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/gemini-deep-guide-prompt.md`
 
-# Gemini 深度导读生成器 Prompt：让 AI 重写而非摘要
+## Gemini 深度导读生成器 Prompt：让 AI 重写而非摘要
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemini-deep-guide-prompt.md)
 

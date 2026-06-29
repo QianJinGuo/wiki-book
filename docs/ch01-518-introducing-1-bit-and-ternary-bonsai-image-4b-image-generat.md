@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/news-bonsai-image-4b.md`
 
-# Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices
+## Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/news-bonsai-image-4b.md)
 

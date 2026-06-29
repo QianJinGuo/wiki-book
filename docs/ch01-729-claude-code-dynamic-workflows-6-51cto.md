@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/claude-code-dynamic-workflows-zhuge6-yucheng-translation.md`
 
-# Claude Code Dynamic Workflows 第 6 译本（玉澄 / 51CTO 视角）
+## Claude Code Dynamic Workflows 第 6 译本（玉澄 / 51CTO 视角）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-dynamic-workflows-zhuge6-yucheng-translation.md)
 

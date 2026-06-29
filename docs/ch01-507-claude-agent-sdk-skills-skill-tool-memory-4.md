@@ -70,7 +70,7 @@ assets/           # 固定素材
 name: [稳定短名]
 description: [任务 + 适用场景 + 期望产物]
 ---
-# [Skill 名称]
+## [Skill 名称]
 ## When To Use / Inputs / Workflow / Output / Boundaries / References
 ```
 

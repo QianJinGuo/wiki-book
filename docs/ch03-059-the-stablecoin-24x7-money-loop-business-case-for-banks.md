@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.0KB | `entities/the-stablecoin-24x7-money-loop-fintechbrainfood.md`
 
-# The stablecoin 24x7 money loop: business case for banks
+## The stablecoin 24x7 money loop: business case for banks
 
 > **Source**: Fintech Brainfood Weekly Rant (2026-05-31) by Jason Mikula. Available at https://www.fintechbrainfood.com/p/stablecoin-business-case. Jina fetched 2026-06-05.
 

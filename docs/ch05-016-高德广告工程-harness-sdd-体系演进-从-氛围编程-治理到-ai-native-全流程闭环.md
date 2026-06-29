@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 20.3KB | `entities/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md`
 
-# 告别"氛围编程"：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践
+## 告别"氛围编程"：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践
 > Source: https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ
 > Author: 王树新 (高德大模型应用平台)
 > Collected: 2026-05-07

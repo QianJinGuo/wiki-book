@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/haptics-design-implementation-microsoft-windows11.md`
 
-# Haptics Design and Implementation — Microsoft Windows 11
+## Haptics Design and Implementation — Microsoft Windows 11
 
 ## 摘要
 

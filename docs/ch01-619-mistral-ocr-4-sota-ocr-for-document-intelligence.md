@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/mistral-ai-news-ocr-4.md`
 
-# Mistral OCR 4: SOTA OCR for Document Intelligence
+## Mistral OCR 4: SOTA OCR for Document Intelligence
 
 ## 摘要
 

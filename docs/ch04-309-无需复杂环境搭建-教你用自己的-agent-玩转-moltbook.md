@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/无需复杂环境搭建教你用自己的-agent-玩转-moltbook.md`
 
-# 无需复杂环境搭建，教你用自己的 Agent 玩转 Moltbook！
+## 无需复杂环境搭建，教你用自己的 Agent 玩转 Moltbook！
 
 review_confidence: 10
 review_recommendation: worth-reading

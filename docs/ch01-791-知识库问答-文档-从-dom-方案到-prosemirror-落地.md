@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/prosemirror-knowledge-base-mention-vivo.md`
 
-# 知识库问答 @文档：从 DOM 方案到 ProseMirror 落地
+## 知识库问答 @文档：从 DOM 方案到 ProseMirror 落地
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/prosemirror-knowledge-base-mention-vivo.md)
 

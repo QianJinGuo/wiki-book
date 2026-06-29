@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-managed-agents-official.md)
 
-# New in Claude Managed Agents
+## New in Claude Managed Agents
 Anthropic's official Claude managed agents: persistent sessions, tool use, memory across conversations, enterprise SSO, agent patterns and API details.    
 **Source**: [raw article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-managed-agents-official.md) | **Review**: value=8 confidence=9    
 

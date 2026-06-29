@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.9KB | `entities/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md`
 
-# 数据级 Harness：架构师 JiaGouX 解读 Anthropic 95% 数据分析与 5 个反直觉边界
+## 数据级 Harness：架构师 JiaGouX 解读 Anthropic 95% 数据分析与 5 个反直觉边界
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md)
 

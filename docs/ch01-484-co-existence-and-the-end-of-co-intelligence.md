@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/co-existence-and-the-end-of-co-intelligence.md`
 
-# Co-Existence and the End of Co-Intelligence
+## Co-Existence and the End of Co-Intelligence
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/co-existence-and-the-end-of-co-intelligence.md)
 

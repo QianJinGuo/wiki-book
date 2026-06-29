@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/amazon-quick-arns-cross-account-migration-and-namespace-perm.md`
 
-# Amazon Quick ARNs: Cross-account migration and namespace permissions
+## Amazon Quick ARNs: Cross-account migration and namespace permissions
 
 ## 相关实体
 

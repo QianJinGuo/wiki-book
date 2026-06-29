@@ -14,7 +14,7 @@ type: entity
 updated: '2026-06-07'
 ---
 type: entity
-# The inevitable need for an open model consortium
+## The inevitable need for an open model consortium
 
 ## 深度分析
 
@@ -47,7 +47,7 @@ Linux 的成功不仅因为开源，更因为 Linux Foundation 提供了治理�
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-inevitable-need-for-an-open-model-consortium.md)
 
-# The inevitable need for an open model consortium
+## The inevitable need for an open model consortium
 
 Recently, I was talking with [Percy Liang](/ch01-<https://cs.stanford.edu/~pliang/>/), Stanford professor and lead of the [Marin](/ch01-<https://marin.community/>/) project (another fully-open model lab), and it set in on me that there will eventually be a consortium of companies funding a foundational set of open models used across industry. It’s not clear when this’ll emerge, and Nemotron ([Coalition](/ch01-<https://nvidianews.nvidia.com/news/nvidia-launches-nemotron-coalition-of-leading-global-ai-labs-to-advance-open-frontier-models>/)) is Nvidia’s attempt to bankroll and bootstrap this approach within a single wealthy company, but a consortium is the only long-term stable path to well-funded, near-frontier open models.
 

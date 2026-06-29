@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 28.3KB | `entities/loop-engineering-feedback-control-system.md`
 
-# Loop Engineering: 把反馈循环放进工程现场
+## Loop Engineering: 把反馈循环放进工程现场
 
 2026 年 6 月，Anthropic Claude Code 创建者 Boris Cherny 和 OpenAI 「龙虾之父」Peter Steinberger 同时在公开场合提出一个新范式——**Loop Engineering**。核心命题：**开发者不再手动给编程 Agent 写提示词，而是设计一套循环机制，让这些循环去提示 Agent 并判断下一步**。 这个范式在 Claude Code 已落地的 `/loop` 命令、OpenAI 的 Codex `/goal`、Hermes Agent 的 cronjob 系统中已可看到雏形。本文综合 3 篇深度文章（InfoQ 报道、Peter 本人论述、若飞工程现场分析）还原 Loop Engineering 的完整图景。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.3KB | `entities/tonsky-every-frame-perfect.md`
 
-# Every Frame Perfect
+## Every Frame Perfect
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tonsky-every-frame-perfect.md)
 

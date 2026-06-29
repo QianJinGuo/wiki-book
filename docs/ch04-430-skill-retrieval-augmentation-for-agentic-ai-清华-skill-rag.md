@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/skill-rag-tsinghua-sra.md`
 
-# Skill Retrieval Augmentation for Agentic AI — 清华 Skill-RAG
+## Skill Retrieval Augmentation for Agentic AI — 清华 Skill-RAG
 > 本文是对 https://mp.weixin.qq.com/s/xWeppFmwJaqTXmMd-4LI3Q 的存档
 > 原始论文: https://arxiv.org/abs/2604.24594v1
 > GitHub: https://github.com/oneal2000/SR-Agents

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/from-pdfs-to-insights-architecting-an-intelligent-document-p.md`
 
-# From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services
+## From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services
 
 AWS 在 2026-06 发布的一篇 IDP（智能文档处理）架构深度文章，展示了用 **Amazon Bedrock Data Automation (BDA) + Strands Agents on AgentCore + Bedrock Knowledge Base** 三件套构建 4 层 IDP 流水线的完整方案。这是从 PDF 原始文件 → 上下文抽取 → 知识整合 → agent 协调的端到端架构。
 

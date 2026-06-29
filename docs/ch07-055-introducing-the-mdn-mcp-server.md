@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/introducing-mdn-mcp-server-2026.md`
 
-# Introducing the MDN MCP server
+## Introducing the MDN MCP server
 
 > Source: [MDN Blog 原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-mdn-mcp-server-2026.md)
 

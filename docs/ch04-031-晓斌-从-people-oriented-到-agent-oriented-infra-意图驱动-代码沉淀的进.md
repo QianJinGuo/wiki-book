@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 30.1KB | `entities/agent-oriented-infra-intent-driven-code-sedimentation.md`
 
-# 晓斌：从 People-Oriented 到 Agent-Oriented Infra
+## 晓斌：从 People-Oriented 到 Agent-Oriented Infra
 > "Agent 的自主程度是 infra 安全能力的函数。" —— 晓斌（阿里巴巴研发基础设施负责人）
 >
 > "**给 infra 补能力，而非给 agent 加限制。Infra 的安全能力越强，agent 的自主空间越大。**"

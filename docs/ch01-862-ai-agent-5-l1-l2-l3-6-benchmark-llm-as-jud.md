@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 30.3KB | `entities/ai-coding-practice-agent-evaluation-five-dimension-three-level-gating.md`
 
-# AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级
+## AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级
 
 > **来源**：AI编程实践 公众号，2026-06-18
 > **核心命题**：**Agent 评测要从"答得好不好"转向"事办没办成"**。本文给出工程化的 **5 维指标体系**（任务完成度/工具使用/规划推理/SubAgent 协作/安全效率）+ **L1/L2/L3 分级准出门槛** + **评测集三层设计**（单工具 200-500 / 多工具链 100-200 / 对抗边界 50-100）+ **LLM-as-Judge 三模式**（结果/工具链/对比）+ **6 大 Benchmark 对比表**。

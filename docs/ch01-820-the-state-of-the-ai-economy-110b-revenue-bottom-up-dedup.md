@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/exponentialview-ai-economy-110b-2026.md`
 
-# The State of the AI Economy — $110B Revenue, Bottom-Up Deduplicated Model
+## The State of the AI Economy — $110B Revenue, Bottom-Up Deduplicated Model
 
 > **Background**: Based on Exponential View's 2026-06-25 inaugural AI Economy report, using bottom-up, deduplicated financial modeling covering consumer and enterprise AI spending across the full stack.
 

@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meta-ai-chief-alex-wang-muse-spark-ai-wars.md)
 
-# Meta AI 负责人 Alex Wang — Muse Spark 与 AI 战争
+## Meta AI 负责人 Alex Wang — Muse Spark 与 AI 战争
 ## 人物背景
 Alex Wang，Meta AI 负责人，此前是 Scale AI 的联合创始人兼 CEO。 去年六月（2025年），Meta 以约 **140亿美元** 估值将 Scale AI 收购，将 Alex Wang 纳入麾下。 Zuck 感受到 Meta 在 AI 竞赛中正在落后，于是将 Wang 视为拯救计划——让他全职在 Meta 组建超级团队，对抗 OpenAI、Anthropic 和 Alphabet 等竞争对手。
 入职后，Wang 从旧金山搬到南湾（South Bay），靠近 Meta 总部，全力投入工作。 他在 Scale AI 时期被称为"瑞士"，在某些立场上声音很大，但并不总是直接谈论 AI 本身。

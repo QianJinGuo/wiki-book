@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/the-coming-loop.md`
 
-# The Coming Loop
+## The Coming Loop
 
 > **Background**：Armin Ronacher（Flask/Sentry 创始人）2026-06-23 发表的技术深度文章，从 Harness 工程师视角探讨 Agent Loop 的演进方向。文章区分了两种循环：Agent Loop（模型调用工具的内部循环）和 Harness Loop（外部编排器决定何时继续的循环），并对后者的发展提出了深刻的反思。
 

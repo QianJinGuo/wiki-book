@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 10.9KB | `entities/tmall-ai-coding-practice-team-knowledge-base-npm.md`
 
-# "tmall ai coding practice team knowledge base npm"
-# 天猫新品团队 AI 编码实战指南（下）
+## "tmall ai coding practice team knowledge base npm"
+## 天猫新品团队 AI 编码实战指南（下）
 **来源：** 天猫新品营销技术团队内部实践
 **定位：** AI 辅助编码全链路实战指南（下篇），含团队建设 + 实用技巧
 

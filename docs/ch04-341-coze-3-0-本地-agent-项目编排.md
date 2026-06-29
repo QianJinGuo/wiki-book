@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/coze-3-0-local-agent-project-orchestration.md`
 
-# Coze 3.0 本地 Agent 项目编排
+## Coze 3.0 本地 Agent 项目编排
 
 > [!summary] 核心洞察
 > Coze 3.0 通过 coze-bridge 将本地 Claude Code 和 Codex CLI 接入云端项目，让云 Agent + 本地 Agent 在同一个项目里接力干活。实测场景：@点名分工 → 调研写稿做 PPT 全在同一个上下文窗口完成，零窗口切换。

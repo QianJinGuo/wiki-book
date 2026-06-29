@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/building-supercharger-how-rocket-close-optimized-title-opera.md`
 
-# Building Supercharger: How Rocket Close optimized title operations with agentic AI
+## Building Supercharger: How Rocket Close optimized title operations with agentic AI
 
 Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisal management 公司）与 AWS 合作构建了 **Supercharger** —— 一个 agentic AI 解决方案，用 Strands Agents + Amazon Bedrock + MCP 优化 title operations（产权检查、按揭贷款前置流程）。这是一个真实的 production case study，覆盖了 6 大互联能力 + 完整技术栈 + 业务影响。
 

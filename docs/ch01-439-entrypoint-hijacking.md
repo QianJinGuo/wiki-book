@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/entrypoint-hijacking.md`
 
-# "EntryPoint Hijacking"
-# EntryPoint Hijacking
+## "EntryPoint Hijacking"
+## EntryPoint Hijacking
 Published Time: 2026-05-13T12:25:17+00:00
 Markdown Content:
 The technique of EntryPoint Hijacking introduces a stealthier approach to code injection, as it doesn't rely on API calls that create a new thread within the process context, and it is independent of the attack chain. Arbitrary code is written to memory, but it executes only when the process legitimately creates a new thread. This enables threat actors to evade EDR defenses and extend their dwell time within the environment.

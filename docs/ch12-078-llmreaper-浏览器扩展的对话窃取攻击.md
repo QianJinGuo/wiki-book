@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/llmreaper-dom-conversation-exfiltration.md`
 
-# LLMReaper: 浏览器扩展的对话窃取攻击
+## LLMReaper: 浏览器扩展的对话窃取攻击
 
 > **Background**: 本文档基于对外部技术来源的评分入库建立，v×c=8×8=64。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/ai-true-moat-organizational-capability.md`
 
-# AI 时代的真正护城河：组织能力
+## AI 时代的真正护城河：组织能力
 ## 核心论点
 AI 行业快速收敛，产品/技术/界面几个月内消失。真正难以复制的是**组织能力**。
 

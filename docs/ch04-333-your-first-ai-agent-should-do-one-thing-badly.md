@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/your-first-ai-agent-should-do-one-thing-badly.md`
 
-# Your First AI Agent Should Do One Thing Badly
+## Your First AI Agent Should Do One Thing Badly
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/your-first-ai-agent-should-do-one-thing-badly.md)
 

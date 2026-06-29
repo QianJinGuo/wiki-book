@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/两万字详解claude-code源码核心机制.md`
 
-# 两万字详解Claude Code源码核心机制
+## 两万字详解Claude Code源码核心机制
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/两万字详解claude-code源码核心机制.md)
 
@@ -20,7 +20,7 @@ ingested: 2026-05-16
 feed_name: 炼钢AI
 wechat_mp_fakeid: MP_WXS_3942529661
 source_published: 2026-04-01
-# 两万字详解Claude Code源码核心机制
+## 两万字详解Claude Code源码核心机制
 本文对Claude Code的核心机制实现上进行详解，包括system prompt、tool、context管理、sub agent、MCP等。
 2. 除此之外，在一些模块，会将Claude Code和OpenCode、Gemini-CLI、Codex等其他开源agent脚手架进行横向对比。
 3. 总体来讲，Claude Code各种机制处理的细致程度还是要比其他开源框架强不少的。

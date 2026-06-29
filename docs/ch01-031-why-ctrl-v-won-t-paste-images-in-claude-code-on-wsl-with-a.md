@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 8.9KB | `entities/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md`
 
-# Why Ctrl+V won't paste images in Claude Code on WSL, with a fix
+## Why Ctrl+V won't paste images in Claude Code on WSL, with a fix
 
 ## 核心要点
 

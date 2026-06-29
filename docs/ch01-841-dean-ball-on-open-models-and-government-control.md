@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 1.4KB | `entities/dean-ball-on-open-models-and-government-control.md`
 
-# Dean Ball on open models and government control
+## Dean Ball on open models and government control
 
 ## 深度分析
 

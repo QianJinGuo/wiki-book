@@ -120,7 +120,7 @@ API 定价没变，还是 $5/$25。但 Anthropic 换了新 tokenizer。
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/claude-opus-47.md`
 
-# Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
+## Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 
 大家应该在合适的场景下选择使用。
 

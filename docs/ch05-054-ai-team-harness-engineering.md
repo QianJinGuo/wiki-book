@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/tencent-ai-team-knowledge-harness.md`
 
-# 腾讯 AI Team 知识沉淀体系
+## 腾讯 AI Team 知识沉淀体系
 ## 概述
 腾讯 AI 工程交付团队（AI Team）提出的完整知识沉淀实践体系，核心主张：**Harness 不是目的，知识才是护城河**。工作流只是管道，知识才是流过管道的活水。
 

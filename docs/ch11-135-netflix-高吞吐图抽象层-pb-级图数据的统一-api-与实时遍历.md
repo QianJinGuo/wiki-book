@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/high-throughput-graph-abstraction-at-netflix-part-i.md`
 
-# Netflix 高吞吐图抽象层：PB 级图数据的统一 API 与实时遍历
+## Netflix 高吞吐图抽象层：PB 级图数据的统一 API 与实时遍历
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/high-throughput-graph-abstraction-at-netflix-part-i.md)
 

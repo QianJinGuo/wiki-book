@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/aliyun-cms2-cli-skill-natural-language-observability.md`
 
-# 告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入
+## 告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-cms2-cli-skill-natural-language-observability.md)
 

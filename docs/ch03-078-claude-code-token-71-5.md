@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/claude-code-memory-setup-token-71x楠楠自瑜.md`
 
-# Claude Code 实践：token 效率提高 71.5 倍的工作流
+## Claude Code 实践：token 效率提高 71.5 倍的工作流
 **作者**：楠楠自瑜
 **平台**：微信
 **原始链接**：https://mp.weixin.qq.com/s/UKDFPzcYv0coW9P0n_3jSg

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/the-bitter-lesson-versus-the-garbage-can.md`
 
-# The Bitter Lesson versus The Garbage Can
+## The Bitter Lesson versus The Garbage Can
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-bitter-lesson-versus-the-garbage-can.md)
 

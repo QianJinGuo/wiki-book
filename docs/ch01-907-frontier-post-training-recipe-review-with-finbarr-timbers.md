@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 3.1KB | `entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md`
 
-# Frontier post-training recipe review with Finbarr Timbers
+## Frontier post-training recipe review with Finbarr Timbers
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
 

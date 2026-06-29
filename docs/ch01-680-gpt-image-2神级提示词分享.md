@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.4KB | `entities/gpt-image-2神级提示词分享.md`
 
-# GPT -Image 2神级提示词分享
+## GPT -Image 2神级提示词分享
 
 提示词:
 A crisp, printmaking-like aesthetic with bold outlines and natural deformation. Pastel color palette, vintage print texture, slightly misaligned ink layers, and rough paper grain. A calm poster composition with generous negative space rather than filling the frame. Props and background kept minimal. Color theme 2–3 colors.

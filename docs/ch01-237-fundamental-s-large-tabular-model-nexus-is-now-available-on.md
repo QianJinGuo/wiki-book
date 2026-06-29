@@ -17,7 +17,7 @@ type: entity
 updated: '2026-06-08'
 ---
 type: entity
-# Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
+## Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
 
 ## 相关实体
 - [Openai Models Codex Amazon Bedrock Ga](/ch09-048-openai-models-and-codex-on-amazon-bedrock-are-now-generally/)
@@ -28,7 +28,7 @@ type: entity
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
 
-# Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
+## Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
 
 Today, we’re announcing support for Fundamental’s NEXUS model on [Amazon SageMaker AI](<https://aws.amazon.com/sagemaker/ai/>). With this launch, you can deploy a foundation model (FM) purpose-built for tabular data prediction. This model helps your enterprise generate accurate, deterministic predictions from structured data in days instead of months.
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/the-shape-of-the-thing-mollick.md`
 
-# The Shape of the Thing：AI 指数曲线·软件工厂·滚动颠覆（Mollick 2026-03）
+## The Shape of the Thing：AI 指数曲线·软件工厂·滚动颠覆（Mollick 2026-03）
 
 > 2026-06-07 引用自 Ethan Mollick《The Shape of the Thing》，One Useful Thing，2026-03-12。
 

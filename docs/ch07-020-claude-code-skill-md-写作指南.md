@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/claude-code-skill-writing-guide.md`
 
-# Claude Code SKILL.md 写作指南
+## Claude Code SKILL.md 写作指南
 
 ## 核心概念
 
@@ -40,10 +40,10 @@ skill-name/
 3. 带触发词（PDF、表单、git diff 等）
 
 ```yaml
-# ✓ 好的 description
+## ✓ 好的 description
 description: 从PDF文件中提取文本和表格、填充表单、合并文档。在处理PDF文件或用户提及PDF、表单时使用。
 
-# ✗ 避免：只写功能名，不写触发时机
+## ✗ 避免：只写功能名，不写触发时机
 description: 处理Excel文件
 ```
 
@@ -65,7 +65,7 @@ description: 处理Excel文件
 **Skill 正文里最值钱的是踩坑清单，不是概念解释。**
 
 ```markdown
-# ✓ 好的写法
+## ✓ 好的写法
 ## 提取 PDF 文本
 使用 pdfplumber 进行文本提取：
 ```python
@@ -74,7 +74,7 @@ with pdfplumber.open("file.pdf") as pdf:
     text = pdf.pages[0].extract_text()
 ```
 
-# ✗ 不好的写法（全是废话）
+## ✗ 不好的写法（全是废话）
 PDF（便携式文档格式）是一种常见文件格式...
 ```
 

@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-agent-teams-task-decomposition-ruofei.md)
 
-# Claude Code Agent Teams 实战：怎么拆任务、控权限、收证据
+## Claude Code Agent Teams 实战：怎么拆任务、控权限、收证据
 
 ## 核心问题
 

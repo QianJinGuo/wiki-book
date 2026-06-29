@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/lbs-intent-bench-lbs-intentbench.md`
 
-# 智能时空思考Agent｜首个真实出行隐式意图评测基准LBS-IntentBench正式开源
+## 智能时空思考Agent｜首个真实出行隐式意图评测基准LBS-IntentBench正式开源
 > 原文存档：https://mp.weixin.qq.com/s/7NYQXk_MIJ1Ryod_wuY2hQ
 > 主题：LBS / 隐式意图 / Benchmark / 时空推理 / Agent / 高德
 高德提出 LBS-IntentBench，首个基于大规模匿名化真实出行数据的隐式意图评测基准。

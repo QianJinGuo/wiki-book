@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/skillopt-microsoft-train-skill-hyman's-blog.md`
 
-# 微软等提出 SkillOpt：把 Skill 当成模型一样训练
+## 微软等提出 SkillOpt：把 Skill 当成模型一样训练
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillopt-microsoft-train-skill-hyman's-blog.md)
 

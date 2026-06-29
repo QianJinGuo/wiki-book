@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.9KB | `entities/review-agent-deep-dive-winty.md`
 
-# Review Agent 机制深度解析
+## Review Agent 机制深度解析
 来源：[前端Q/winty](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)（2026-05-18），评分 56；同系列有 [Hermes Self-Improving Loop 详解](/ch04-193-hermes-self-improving-闭环详解-winty/)（2026-05-12）覆盖四组件全貌
 
 ## 核心定位

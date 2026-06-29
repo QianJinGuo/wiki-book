@@ -2,12 +2,12 @@
 
 ## Ch01.195 claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus-47-上线全网又炸了nn我仔细看了下官
 
-> 📊 Level ⭐⭐ | 19.4KB | `entities/claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus-47-上线全网又炸了nn我仔细看了下官.md`
+> 📊 Level ⭐⭐ | 19.4KB | `entities/claude-opus-47.md`
 
 [Claude Opus 47 并不是一次全面升级甚至部分能力大幅衰退Nn大家应该在合适的场景下选择使用Nn昨晚 Opus 47 上线全网又炸了Nn我仔细看了下官](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus-47-上线全网又炸了nn我仔细看了下官.md)
 
-# "claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus-47-上线全网又炸了nn我仔细看了下官"
-# Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
+## "claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus-47-上线全网又炸了nn我仔细看了下官"
+## Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 
 大家应该在合适的场景下选择使用。
 

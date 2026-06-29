@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 4.7KB | `entities/25-the-unbearable-cheapness-of-open-weight-models.md`
 
-# The Unbearable Cheapness of Open Weight Models – James O'Claire
+## The Unbearable Cheapness of Open Weight Models – James O'Claire
 
 > **来源**: [The Unbearable Cheapness of Open Weight Models – James O'Claire](https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models/)
 

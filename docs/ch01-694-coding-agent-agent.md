@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.4KB | `entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md`
 
-# 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践
+## 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 16.3KB | `entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md`
 
-# What happens in the log when an app crashes as it starts up?
+## What happens in the log when an app crashes as it starts up?
 
 ## 核心要点
 

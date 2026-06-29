@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/opencli-browser-automation-jingxing.md`
 
-# 浏览器自动化：从 GUI 到 OpenCLI — Agent 时代的可调用性竞争
+## 浏览器自动化：从 GUI 到 OpenCLI — Agent 时代的可调用性竞争
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/opencli-browser-automation-jingxing.md)
 

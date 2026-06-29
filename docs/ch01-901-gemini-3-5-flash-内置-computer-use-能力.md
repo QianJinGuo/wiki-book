@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 6.3KB | `entities/gemini-35-flash-computer-use-agent-harness.md`
 
-# Gemini 3.5 Flash 内置 Computer Use 能力
+## Gemini 3.5 Flash 内置 Computer Use 能力
 
 > **Background**: Google DeepMind 宣布将 Computer Use 能力从独立的 Gemini 2.5 Computer Use 模型升级为 Gemini 3.5 Flash 的原生内置工具。这意味着 Computer Use 不再是独立产品线，而是与 Function Calling、Search、Maps Grounding 并列的模型原生能力，开发者可直接通过 Gemini API 构建跨浏览器、移动、桌面的 Agent。
 

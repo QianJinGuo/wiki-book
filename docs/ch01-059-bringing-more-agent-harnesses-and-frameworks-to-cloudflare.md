@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 7.2KB | `entities/agents-platform-flue-sdk.md`
 
-# Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue
+## Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue
 
 > **来源**: [Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue](https://blog.cloudflare.com/agents-platform-flue-sdk/)
 

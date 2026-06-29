@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.3KB | `entities/nanobot-agent-framework-architecture-deep-dive.md`
 
-# nanobot：4000行极简 Agent 框架架构解析
+## nanobot：4000行极简 Agent 框架架构解析
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nanobot-agent-framework-architecture-deep-dive.md)
 
@@ -91,7 +91,7 @@ description: Get current weather and forecasts (no API key required).
 metadata: {"nanobot":{"emoji":"🌤️","requires":{"bins":["curl"]}}}
 ---
 
-# Weather
+## Weather
 
 ## wttr.in (primary)
 

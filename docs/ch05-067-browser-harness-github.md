@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/browser-harness-github.md`
 
-# Browser Harness — 自愈型浏览器 Agent 框架
+## Browser Harness — 自愈型浏览器 Agent 框架
 **项目地址：** https://github.com/browser-use/browser-harness
 **Stars：** 8,917（持续增长中）
 **收录来源：** 智猩猩AI（微信公众号，2026-04-27）

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/aws-devops-agent-autonomous-incident-resolution-datadog.md`
 
-# AWS DevOps Agent × Datadog MCP Server: 生产级自主事件解决
+## AWS DevOps Agent × Datadog MCP Server: 生产级自主事件解决
 
 ## 摘要
 

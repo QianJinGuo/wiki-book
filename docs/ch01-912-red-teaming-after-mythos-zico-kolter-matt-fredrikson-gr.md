@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 6.3KB | `entities/latent-space-p-gray-swan.md`
 
-# Red-Teaming after Mythos — Gray Swan
+## Red-Teaming after Mythos — Gray Swan
 
 ## 摘要
 

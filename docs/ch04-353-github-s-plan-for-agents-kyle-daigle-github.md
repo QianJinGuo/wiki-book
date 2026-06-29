@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/www-latent-space-p-github.md`
 
-# GitHub's plan for Agents — Kyle Daigle, GitHub
+## GitHub's plan for Agents — Kyle Daigle, GitHub
 
 > Latent Space 播客对 GitHub COO Kyle Daigle 的深度访谈，讨论 GitHub 在 AI Agent 时代的战略方向、内部 AI 工作流、开源生态面临的挑战，以及 Copilot 从代码补全到云 Agent 的演进路径。
 

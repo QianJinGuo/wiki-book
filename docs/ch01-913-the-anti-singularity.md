@@ -5,7 +5,7 @@
 > 📊 Level ⭐⭐⭐⭐⭐ | 2.1KB | `entities/the-anti-singularity.md`
 
 > -> 原文存档
-# the anti singularity
+## the anti singularity
 source: 
 ## 摘录
 > Title: The Anti-Singularity

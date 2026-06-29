@@ -6,7 +6,7 @@
 
 [使用Claude Codesession管理与1M上下文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/使用claude-codesession管理与1m上下文.md)
 
-# 使用Claude Code：session管理与1M上下文
+## 使用Claude Code：session管理与1M上下文
 本文来自 Anthropic Claude Code 团队成员，宣布 /usage 工具更新，并基于客户反馈详细指导如何管理 100 万 token 上下文窗口，以减少上下文腐化（context rot）对模型性能的影响。
 文章解释了关键技巧：使用 /rewind 回溯修正错误、/compact 主动总结会话、启动子代理处理独立子任务，以及在新任务开始时新建会话，避免不必要文件重读。
 这些策略帮助用户在长会话中保持模型高效，作者建议在每个回复后评估分支选项（如继续、压缩或清空），以提升复杂编程任务的可靠性和成本效益。

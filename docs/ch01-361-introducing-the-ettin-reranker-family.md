@@ -106,12 +106,12 @@ from sentence_transformers import SentenceTransformer, CrossEncoder
 embedder = SentenceTransformer("sentence-transformers/static-retrieval-mrl-en-v1")
 reranker = CrossEncoder("cross-encoder/ettin-reranker-68m-v1")
 
-# Step 1: Fast retrieval - top-100
+## Step 1: Fast retrieval - top-100
 query_emb = embedder.encode_query(query, convert_to_tensor=True)
 corpus_emb = embedder.encode_document(corpus, convert_to_tensor=True)
 top_k_idx = embedder.similarity(query_emb, corpus_emb)[0].topk(100).indices.tolist()
 
-# Step 2: Rerank top-100 to top-5
+## Step 2: Rerank top-100 to top-5
 top_k_docs = [corpus[i] for i in top_k_idx]
 ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 ```

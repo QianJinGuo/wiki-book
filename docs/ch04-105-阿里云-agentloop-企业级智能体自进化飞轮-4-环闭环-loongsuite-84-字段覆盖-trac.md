@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.5KB | `entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md`
 
-# 阿里云 AgentLoop：企业级智能体自进化飞轮
+## 阿里云 AgentLoop：企业级智能体自进化飞轮
 
 > **来源**：阿里云云原生（Cloud Native 公众号），2026-06-18
 > **核心命题**：**企业 Agent 落地的瓶颈已从"能不能跑通"转向"能不能形成自进化飞轮"**。阿里云推出 **AgentLoop** — 企业级 Agent 一站式自进化平台，把"数据采集 → 数据集构建 → 效果评估 → 进化资产沉淀"4 步闭环产品化。

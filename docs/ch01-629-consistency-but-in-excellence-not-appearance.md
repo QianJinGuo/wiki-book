@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/consistency-excellence-jim-nielsen.md`
 
-# Consistency, But in Excellence Not Appearance
+## Consistency, But in Excellence Not Appearance
 
 > **来源**: [https://blog.jim-nielsen.com/2026/a-consistency-of-excellence/](https://blog.jim-nielsen.com/2026/a-consistency-of-excellence/)
 

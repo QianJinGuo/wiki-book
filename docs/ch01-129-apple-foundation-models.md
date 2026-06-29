@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.7KB | `entities/anthropic-apple-foundation-models-claude.md`
 
-# Apple Foundation Models
+## Apple Foundation Models
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-apple-foundation-models-claude.md)
 

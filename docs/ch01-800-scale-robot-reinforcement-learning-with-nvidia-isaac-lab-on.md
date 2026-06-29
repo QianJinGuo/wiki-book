@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md`
 
-# Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI
+## Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
 

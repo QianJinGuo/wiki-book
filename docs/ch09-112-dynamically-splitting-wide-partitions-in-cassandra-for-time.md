@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md`
 
-# Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
+## Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md)
 

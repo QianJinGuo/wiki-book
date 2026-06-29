@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.2KB | `entities/claude-code-first-year-retrospective-agi-hunt.md`
 
-# Claude Code 一周年回顾：Boris Cherny + Cat Wu 对话
+## Claude Code 一周年回顾：Boris Cherny + Cat Wu 对话
 
 > AGI Hunt 公众号 2026-06-10 整理，素材来自 Boris Cherny（Claude Code 负责人）+ Cat Wu（产品负责人）2026-06 录制的 1 周年回顾视频（YouTube 原片）。从 2025-02 Slack 内部演示"两个赞"到 2026-06 一周年，Claude Code 已经从终端 CLI 工具演化成"PM 在写代码、工程师在手机上写代码、Agent 在自动修 bug"的 AI 编程基础设施。
 > → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-first-year-retrospective-agi-hunt.md)

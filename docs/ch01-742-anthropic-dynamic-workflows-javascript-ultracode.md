@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/anthropic-dynamic-workflows-ultracode-deep-research-lyuyuebannzi.md`
 
-# Anthropic Dynamic Workflows 深度实战：JavaScript 编排脚本 + ultracode 模式 + /deep-research + 保存复用
+## Anthropic Dynamic Workflows 深度实战：JavaScript 编排脚本 + ultracode 模式 + /deep-research + 保存复用
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-dynamic-workflows-ultracode-deep-research-lyuyuebannzi.md)
 

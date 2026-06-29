@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 9.2KB | `entities/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md`
 
-# Domain Expertise Has Always Been the Real Moat
+## Domain Expertise Has Always Been the Real Moat
 
 ## 核心要点
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.4KB | `entities/openspec-spec-driven-development-trae-solo.md`
 
-# OpenSpec 规范驱动开发（SDD）框架
+## OpenSpec 规范驱动开发（SDD）框架
 
 ## 核心问题
 

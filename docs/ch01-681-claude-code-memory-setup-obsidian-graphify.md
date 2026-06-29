@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/claude-code-memory-setup-obsidian-graphify.md`
 
-# Claude Code Memory Setup (Obsidian + Graphify)
+## Claude Code Memory Setup (Obsidian + Graphify)
 **作者**：楠楠自瑜  
 **平台**：微信  
 **原始链接**：https://mp.weixin.qq.com/s/UKDFPzcYv0coW9P0n_3jSg  

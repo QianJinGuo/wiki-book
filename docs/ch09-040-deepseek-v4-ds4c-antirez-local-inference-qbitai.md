@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.5KB | `entities/deepseek-v4-ds4c-antirez-local-inference-qbitai.md`
 
-# DeepSeek V4 本地推理：antirez 的专属高速公路
+## DeepSeek V4 本地推理：antirez 的专属高速公路
 
 **来源：** 量子位 QbitAI（公众号）
 

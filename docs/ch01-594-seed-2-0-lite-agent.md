@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/doubao-seed-2-lite-agent-multimodal.md`
 
-# 豆包 Seed 2.0 Lite升级：给 Agent 装上眼睛和耳朵
+## 豆包 Seed 2.0 Lite升级：给 Agent 装上眼睛和耳朵
 > 花叔 · 2026-05-06 · 北京 · 微信公众号
 本文讲述作者（AI 工具 B 站博主）使用豆包 Seed 2.0 Lite（0428版）解决视频制作痛点的实战经验。核心发现：**豆包 Seed 2.0 Lite 补上了音频理解能力，核心价值是通过 prompt 上下文让模型精准识别专有名词，同时能直接读视频并输出结构化分镜表**。定位为 Claude Code/Cursor 等 Coding Agent 的"前置感官层"。
 作者录视频自由随性，不按脚本念，导致自动字幕识别错专有名词：

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.3KB | `entities/cursor-harness-model-production-floor.md`
 
-# Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限
+## Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor-harness-model-production-floor.md)
 
 * 这次重点不在解释 Harness 是什么，而在回答一个更实际的问题：当 Harness 开始承重，团队怎么持续运营它。 

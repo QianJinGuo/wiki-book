@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 24.4KB | `entities/claude-code-first-year-retrospective-boris-cat-2026.md`
 
-# Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线
+## Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线
 
 ## 摘要
 

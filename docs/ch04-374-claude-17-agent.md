@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/claude-17-capabilities-workflow-checklist-ruofei.md`
 
-# Claude的17个能力背后：Agent正在从聊天框搬进工作流
+## Claude的17个能力背后：Agent正在从聊天框搬进工作流
 
 ## 核心洞察
 

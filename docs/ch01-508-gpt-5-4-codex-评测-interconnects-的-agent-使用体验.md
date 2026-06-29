@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/gpt54-codex-interconnects.md`
 
-# GPT 5.4 Codex 评测：Interconnects 的 Agent 使用体验
+## GPT 5.4 Codex 评测：Interconnects 的 Agent 使用体验
 
 > 2026-06-07 引用自 Interconnects《GPT 5.4 is a big step for Codex》，2026-03-18。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.9KB | `entities/rocketmq-litetopic-ai-agent-messaging.md`
 
-# Apache RocketMQ LiteTopic 消息模型
+## Apache RocketMQ LiteTopic 消息模型
 
 > **Background**：本文档基于阿里云消息团队官方公众号文章建立，系统梳理了 Apache RocketMQ 5.5.0 新增 LiteTopic 消息模型的设计动机、核心机制和 Multi-Agent 通信实战架构。
 

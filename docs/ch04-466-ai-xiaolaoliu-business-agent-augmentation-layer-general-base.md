@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md`
 
-# Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606
+## Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 

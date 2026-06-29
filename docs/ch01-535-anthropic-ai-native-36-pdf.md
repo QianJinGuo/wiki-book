@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/anthropic-founder-playbook-ai-native-startup.md`
 
-# Anthropic创始人行动手册：打造一家AI-Native创业公司（附36页中文PDF）
+## Anthropic创始人行动手册：打造一家AI-Native创业公司（附36页中文PDF）
 
 The Founder's Playbook
 这本《创始人行动手册》是 Anthropic上周发布的官方手册，原版 36 页。从Anthropic产品两天一小版，每周一大版的更新节奏来说，我觉得他们是这个时代最AI Native的大公司了。这本手册里融入了不少他们内部的经验以及他们所服务的最先进的AI native初创公司的做法。看完之后觉得它把AI 时代怎么创业这件事讲得还挺清楚的。

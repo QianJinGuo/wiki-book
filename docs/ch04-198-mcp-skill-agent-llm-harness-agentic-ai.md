@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/agentic-ai-system-architecture-harness-skill-mcp.md`
 
-# MCP · Skill · Agent · LLM · Harness — 一张图讲清：Agentic AI 系统如何真正落地
+## MCP · Skill · Agent · LLM · Harness — 一张图讲清：Agentic AI 系统如何真正落地
 
 > 作者：霍旭东（ThinkingInDev），2026-04-29
 

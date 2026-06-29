@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 2.3KB | `entities/netflix-vmaf-v1-video-quality-metric-upgrade.md`
 
-# VMAF v1: Netflix 视频质量度量的全面升级
+## VMAF v1: Netflix 视频质量度量的全面升级
 
 Netflix 开源 VMAF v1——视频质量度量的行业标准全面升级。核心改进：CSF 调制统一多设备模型、CAMBI 带状伪影检测、chroma 特征、NEG 默认启用、运动特征修正。
 

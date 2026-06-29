@@ -79,7 +79,7 @@ model: ...
 hooks: ...
 paths: ...
 
-# Reading Guide（文档索引）
+## Reading Guide（文档索引）
 
 - 单轮文本分类/摘要/问答 → {lang}/claude-api/README.md
 - 聊天 UI/流式响应 → README.md + streaming.md
@@ -105,7 +105,7 @@ description: 使用场景，触发条件...
 allowed-tools: [Read, WebFetch, ...]
 ***
 
-# Claude API / Anthropic SDK 专项技能
+## Claude API / Anthropic SDK 专项技能
 ## Reference Documentation
 ...Reading Guide...
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.1KB | `entities/aws-direct-connect-dx-migration-best-practices.md`
 
-# Direct Connect (DX) 迁移最佳实践
+## Direct Connect (DX) 迁移最佳实践
 
 > AWS China Blog 2026-06-03 发布的中国区实战迁移指南，梳理 Direct Connect 节点搬迁的 6 步流程 + DX+VPN 备份 + DX+DX 备份两种典型冗余场景的差异化迁移路径。重点是 BGP 流量工程（BGP Community 标签、Local Preference）、BFD 故障检测秒级切换、维护窗口纪律。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/qy_zaCZTCs1Ql3BIFmBMgg.md`
 
-# Claude Code Subagent 详解：把探索过程关进独立工作区
+## Claude Code Subagent 详解：把探索过程关进独立工作区
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/qy_zaCZTCs1Ql3BIFmBMgg.md)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.3KB | `entities/microsoft-mxc-execution-containers-agent-sandbox-origin.md`
 
-# Microsoft MXC — 跨 OS 代理代码执行容器
+## Microsoft MXC — 跨 OS 代理代码执行容器
 
 > **Background**: Microsoft 在 Build 2026（2026-06-02）开源的 MXC (Microsoft eXecution Container) 是首个由 **OS 厂商**提供、专门面向 agent 代码执行的跨平台沙箱层。本文基于 Origin Research 2026-06-04 的源码级深度分析 [`originhq.com/research/mxc-execution-containers-internals`](http://www.originhq.com/research/mxc-execution-containers-internals)，涵盖 10 个 containment backends 的实现细节（AppContainer 三层 fallback、bubblewrap/seatbelt/LXC/micro-VM/Hyperlight），交叉引用微软同期开源的 RAMPART/Clarity，形成完整的"微软代理安全栈"图景。
 >

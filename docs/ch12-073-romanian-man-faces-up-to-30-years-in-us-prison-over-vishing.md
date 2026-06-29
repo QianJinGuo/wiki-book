@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/romanian-man-30-years-us-prison-vishing.md`
 
-# Romanian Man Faces Up to 30 Years in US Prison Over Vishing Scams
+## Romanian Man Faces Up to 30 Years in US Prison Over Vishing Scams
 
 ## 摘要
 

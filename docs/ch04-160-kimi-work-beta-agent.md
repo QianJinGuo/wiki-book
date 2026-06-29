@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/kimi-work-beta-foundation-model-company-advantage.md`
 
-# Kimi Work Beta：通用 Agent 一定来自模型公司
+## Kimi Work Beta：通用 Agent 一定来自模型公司
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kimi-work-beta-foundation-model-company-advantage.md)
 

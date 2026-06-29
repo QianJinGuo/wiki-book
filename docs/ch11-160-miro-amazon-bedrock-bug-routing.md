@@ -6,7 +6,7 @@
 
 [Miro Amazon Bedrock Bug Routing](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/miro-amazon-bedrock-bug-routing.md)
 
-# How Miro uses Amazon Bedrock to boost software bug routing accuracy and improve time-to-resolution from days to hours
+## How Miro uses Amazon Bedrock to boost software bug routing accuracy and improve time-to-resolution from days to hours
 _This post is co-authored with Philipp Pavlov, Dmytro Romantsov, Evgeny Mironenko, and Gowri Suryanarayana from_[ _Miro_](<https://miro.com/de/index/>).
 [Miro](<https://miro.com/de/index/>) is an AI-powered innovation workspace that serves over 95 million users globally, helping teams transform unstructured ideas into organized workflows. To support this scale and continue enhancing their system, Miro’s developer experience team decided to create an innovation workspace for Miro itself, using modern technologies to boost developer productivity. One of the key challenges faced by the team is efficiently routing software bugs to the responsible teams. Quick and accurate bug routing removes unnecessary context-switching, reduces developer frustration, improves time-to-resolution, and ultimately leads to a better product and happier customers. At Miro, a significant percentage of bugs miss internal resolution SLAs primarily due to misrouting and repeated reassignments between teams. This issue results in an estimated 42 years of cumulative lost productivity annually from delays and redundant investigation efforts. To tackle this problem, Miro partnered with the AWS Prototyping and Cloud Engineering (PACE) team to develop BugManager, an AI-powered solution for automated bug triaging.
 

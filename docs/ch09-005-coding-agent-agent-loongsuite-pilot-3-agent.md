@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 32.5KB | `entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md`
 
-# 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践
+## 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践
 
 > **作者**：望陶 / 太业 / 石木，阿里云云原生，2026-06-02  
 > **核心命题**：**AI Agent 规模化落地带来"执行黑盒、行为难追溯、成本难度量"三大难题**。阿里云基于 OTel 标准，面向 **Coding Agent / 个人通用助理 / 框架型 Agent**，推出 **LoongSuite Pilot、插件及探针**等无侵入采集方案，让 Agent 实现"**可看见、可分析、可审计、可治理**"。
@@ -68,7 +68,7 @@
 
 ```python
 from loongsuite.agent import LoongSuiteAgent
-# 零代码探针自动插桩
+## 零代码探针自动插桩
 agent = LoongSuiteAgent()
 ```
 

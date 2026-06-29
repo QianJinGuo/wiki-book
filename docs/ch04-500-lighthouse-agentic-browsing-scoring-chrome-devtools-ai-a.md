@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/lighthouse-agentic-browsing-scoring.md`
 
-# Lighthouse Agentic Browsing Scoring
+## Lighthouse Agentic Browsing Scoring
 
 Chrome DevTools 团队在 Lighthouse 中新增了 **Agentic Browsing** 评估类别，用于衡量网站对 AI Agent 交互的友好程度。这不是一个 0-100 的加权评分，而是一组确定性审计信号，旨在为"Agent-ready Web"标准提供数据基础。
 

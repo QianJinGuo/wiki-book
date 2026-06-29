@@ -18,10 +18,10 @@
 ### 3. 写"方法"而不是"答案"
 ```markdown
 
-# 糟糕：只适用于这一个场景
+## 糟糕：只适用于这一个场景
 将 orders 表与 customers 表在 customer_id 上关联，筛选 region = 'EMEA'，并求和 amount 列。
 
-# 优秀：可复用的方法
+## 优秀：可复用的方法
 1. 从 references/schema.yaml 读取数据库Schema，找到相关表
 2. 按照 _id 外键约定关联表
 3. 使用 WHERE 子句应用筛选条件
@@ -31,10 +31,10 @@
 ### 4. 预设"默认值"，不要提供"菜单"
 ```markdown
 
-# 太多选项 → AI犹豫不决
+## 太多选项 → AI犹豫不决
 你可以使用 pypdf, pdfplumber, PyMuPDF 或 pdf2image...
 
-# 明确的默认方案 + 备选
+## 明确的默认方案 + 备选
 使用 `pdfplumber` 进行文本提取。如果遇到无法提取的扫描件，回退到 pdf2image + pytesseract OCR。
 ```
 
@@ -51,7 +51,7 @@
 ```markdown
 
 ## 报告结构
-# [分析标题]
+## [分析标题]
 ## 执行摘要
 [关键发现的一段落概述]
 

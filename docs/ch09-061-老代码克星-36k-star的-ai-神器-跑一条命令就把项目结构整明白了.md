@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/understand-anything-code-knowledge-graph-lum-jike.md)
 
-# Understand-Anything：代码知识图谱
+## Understand-Anything：代码知识图谱
 
 ## 一句话
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/neurips-2026-pangram-desk-reject-controversy.md`
 
-# NeurIPS 2026 使用闭源 AI 检测器 Pangram 批量 desk-reject 论文事件
+## NeurIPS 2026 使用闭源 AI 检测器 Pangram 批量 desk-reject 论文事件
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/neurips-2026-pangram-desk-reject-controversy.md)
 

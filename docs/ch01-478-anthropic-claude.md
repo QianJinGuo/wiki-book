@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/anthropic-building-next-claude.md`
 
-# Anthropic 最新播客：如何打造下一代 Claude
+## Anthropic 最新播客：如何打造下一代 Claude
 
 Alex Albert × Peter Yang · 从模型规划到性格训练的全流程揭秘
 Anthropic 的 Alex Albert 最近上了一期播客，聊了聊他们内部是怎么打造 Claude 的。

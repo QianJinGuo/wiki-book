@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/1-million-exposed-ai-services-hackernews.md)
 
-# We Scanned 1 Million Exposed AI Services. Here's How Bad the Security Situation Is
+## We Scanned 1 Million Exposed AI Services. Here's How Bad the Security Situation Is
 **Source:** https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html
 **Summary:** (from LLM review)
 > Score: 8×8=64 | strong
