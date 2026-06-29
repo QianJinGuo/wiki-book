@@ -1,6 +1,8 @@
-/* 目录和文章列表样式优化 */
+/* ============================================
+   AI 工程 — 全站样式优化
+   ============================================ */
 
-/* 文章列表项 - 减小字体，防止换行 */
+/* --- 文章列表 --- */
 .md-content article ul li,
 .md-content .md-typeset ul li {
   font-size: 13px !important;
@@ -10,8 +12,6 @@
   overflow: hidden !important;
   text-overflow: ellipsis !important;
 }
-
-/* 章节标题列表 */
 .md-content article ul li a,
 .md-content .md-typeset ul li a {
   font-size: 13px !important;
@@ -21,52 +21,199 @@
   display: block !important;
 }
 
-/* 右侧TOC目录 */
-.md-sidebar--secondary .md-nav__link,
-.md-sidebar--secondary .md-nav__link-caption {
-  font-size: 12px !important;
+/* --- 左侧导航栏 --- */
+.md-sidebar--primary .md-nav {
+  padding: 0.25rem 0;
+}
+.md-sidebar--primary .md-nav__link {
+  font-size: 0.78rem !important;
   line-height: 1.5 !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 4px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.md-sidebar--primary .md-nav__link:hover {
+  background: var(--md-accent-fg-color--transparent) !important;
+}
+.md-sidebar--primary .md-nav__link--active {
+  color: var(--md-accent-fg-color) !important;
+  font-weight: 600 !important;
+  background: var(--md-accent-fg-color--transparent) !important;
+}
+/* 篇章标题 */
+.md-sidebar--primary .md-nav__item--nested > .md-nav__link {
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  color: var(--md-default-fg-color--light) !important;
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.15rem !important;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+/* 展开/折叠箭头 */
+.md-sidebar--primary .md-nav__icon {
+  transition: transform 0.2s ease;
 }
 
-/* 左侧导航栏 */
-.md-sidebar--primary .md-nav__link,
-.md-sidebar--primary .md-nav__link-caption {
-  font-size: 12.5px !important;
-  line-height: 1.5 !important;
+/* --- 右侧 TOC 目录 --- */
+.md-sidebar--secondary .md-nav {
+  padding: 0.2rem 0;
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  margin-left: 0.5rem;
+}
+.md-sidebar--secondary .md-nav__link {
+  font-size: 0.72rem !important;
+  line-height: 1.45 !important;
+  padding: 0.2rem 0.6rem !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
+  border-radius: 0 3px 3px 0;
+  transition: background 0.15s ease, color 0.15s ease;
+  color: var(--md-default-fg-color--light) !important;
+}
+.md-sidebar--secondary .md-nav__link:hover {
+  background: var(--md-accent-fg-color--transparent) !important;
+  color: var(--md-accent-fg-color) !important;
+}
+.md-sidebar--secondary .md-nav__link--active {
+  color: var(--md-accent-fg-color) !important;
+  font-weight: 600 !important;
+  background: var(--md-accent-fg-color--transparent) !important;
+  border-left: 2px solid var(--md-accent-fg-color);
+  margin-left: -2px;
+}
+.md-sidebar--secondary .md-nav__title {
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--lightest) !important;
+  padding-bottom: 0.3rem;
+}
+.md-sidebar--secondary .md-nav__list {
+  padding-left: 0 !important;
 }
 
-/* 章节标题 */
-.md-content article h3,
-.md-content .md-typeset h3 {
-  font-size: 15px !important;
-  margin-top: 16px !important;
-  margin-bottom: 8px !important;
+/* --- 顶部标签栏 --- */
+.md-tabs {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest) !important;
+}
+.md-tabs__link {
+  font-size: 0.82rem !important;
+  font-weight: 500 !important;
+  padding: 0.55rem 1rem !important;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  border-bottom: 2px solid transparent;
+}
+.md-tabs__link:hover {
+  color: var(--md-accent-fg-color) !important;
+  border-bottom-color: var(--md-accent-fg-color--transparent) !important;
+}
+.md-tabs__link--active {
+  color: var(--md-accent-fg-color) !important;
+  border-bottom-color: var(--md-accent-fg-color) !important;
+  font-weight: 600 !important;
 }
 
-/* 子章节标题 */
-.md-content article h4,
-.md-content .md-typeset h4 {
-  font-size: 14px !important;
-  margin-top: 12px !important;
-  margin-bottom: 6px !important;
+/* --- 章节标题卡片化 --- */
+.md-content h3 a {
+  text-decoration: none;
+  border-bottom: 1px dashed var(--md-accent-fg-color--transparent);
+  transition: border-color 0.2s;
+}
+.md-content h3 a:hover {
+  border-bottom-style: solid;
 }
 
-/* 表格字体 */
+/* --- Prev/Next 导航 --- */
+.md-footer__link--prev,
+.md-footer__link--next {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  color: var(--md-default-fg-color);
+  transition: background 0.2s;
+}
+.md-footer__link--prev:hover,
+.md-footer__link--next:hover {
+  background: var(--md-default-fg-color--lightest);
+}
+.md-footer__link--next {
+  margin-left: auto;
+  text-align: right;
+}
+.md-footer__direction {
+  display: block;
+  font-size: 0.7rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+/* --- 表格 --- */
 .md-content table,
 .md-content .md-typeset table {
-  font-size: 13px !important;
+  font-size: 0.9em;
 }
-
 .md-content table th,
 .md-content table td,
 .md-content .md-typeset table th,
 .md-content .md-typeset table td {
-  padding: 6px 12px !important;
-  font-size: 13px !important;
+  padding: 0.5rem 0.8rem !important;
+  font-size: 0.85em !important;
+}
+.md-content table th {
+  background-color: var(--md-primary-fg-color--lightest);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* --- 代码块 --- */
+.md-content code {
+  font-size: 0.85em;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+.md-content pre code {
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+/* --- 引用块 --- */
+.md-content blockquote {
+  border-left: 3px solid var(--md-accent-fg-color);
+  font-size: 0.92em;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  background-color: var(--md-default-fg-color--lightest);
+  border-radius: 0 4px 4px 0;
+}
+
+/* --- 暗色模式 --- */
+[data-md-color-scheme="slate"] .md-content blockquote {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+[data-md-color-scheme="slate"] .md-content table th {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* --- 响应式 --- */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--secondary {
+    font-size: 0.7rem;
+  }
+}
+
+/* --- 打印 --- */
+@media print {
+  .md-sidebar, .md-header, .md-footer, .md-top {
+    display: none !important;
+  }
+  .md-content {
+    max-width: 100%;
+  }
 }

@@ -40,7 +40,6 @@
 
 - [001. 2026年最值得关注的15款开发者工具深度解读](ch01-001-2026年最值得关注的15款开发者工具深度解读.html)
 - [002. 🧠 The Token Economy pt2: The Intelligence Company Gets Built](ch01-002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
-- [003. 5 Things to Know about the CLARITY Act](ch01-003-5-things-to-know-about-the-clarity-act.html)
 - [004. The Google Capital Company](ch01-004-the-google-capital-company.html)
 - [005. 2028: Two scenarios for global AI leadership](ch01-005-2028-two-scenarios-for-global-ai-leadership.html)
 - [006. What happens in the log when an app crashes as it starts up?](ch01-006-what-happens-in-the-log-when-an-app-crashes-as-it-starts-up.html)
