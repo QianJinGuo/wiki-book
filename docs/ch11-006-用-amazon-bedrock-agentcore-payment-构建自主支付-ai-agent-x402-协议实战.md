@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 52.5KB | `entities/bedrock-agentcore-payment-x402-agent.md`
 
-# 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
+## 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
 
 > 实战教程：使用 Bedrock AgentCore Payment 构建支持 x402 协议的自主支付 AI Agent，包含完整代码示例。
 
 ## 核心内容
 
-# 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent: x402 协议实战
+## 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent: x402 协议实战
 
 摘要：本文基于 AWS Agentcore和开源项目 sample-agentcore-cloudfront-x402-payments，完整记录了使用 Amazon Bedrock AgentCore 构建一个能自主发现付费服务、执行链上支付并获取内容的 AI Agent 的实践过程。文章以 AgentCore 的三大核心能力（Runtime、Gateway、Payments）为主线，结合 x402 协议的支付流程，展示 Agent 如何在不接触私钥的前提下完成"请求 → 402 挑战 → 链上支付 → 内容交付"的完整闭环。
 
@@ -432,9 +432,9 @@ npm install -g @coinbase/cdp-cli
 cdp env live --key-file ~/Downloads/cdp_api_key.json
 cdp env live --wallet-secret-file ~/cdp-wallet-secret.txt
 
-# 创建收款钱包（参数格式是 name=xxx，不是 --name xxx）
+## 创建收款钱包（参数格式是 name=xxx，不是 --name xxx）
 cdp evm accounts create name=x402-demo-seller
-# 输出中的 address 字段就是收款钱包地址
+## 输出中的 address 字段就是收款钱包地址
 ```
 
 ⚠️ 不要选 Smart Account —— x402 协议的 EIP-3009 要求收款方是 EOA。
@@ -494,13 +494,13 @@ seller-infrastructure/.env 的 PAYMENT\_RECIPIENT\_ADDRESS
 关键命令：
 
 ```
-# 上传内容（key 不带 .json 后缀，Lambda@Edge 按路径匹配）
+## 上传内容（key 不带 .json 后缀，Lambda@Edge 按路径匹配）
 aws s3 cp content/research-report.json s3://x402-content-seller/research-report
 
-# 打包 Lambda@Edge（不要打包 node_modules，运行时自带 SDK v3）
+## 打包 Lambda@Edge（不要打包 node_modules，运行时自带 SDK v3）
 zip -r payment-verifier.zip payment-verifier.js content-config.js types.js deploy-config.json
 
-# deploy-config.json 中注入收款钱包地址
+## deploy-config.json 中注入收款钱包地址
 echo '{ "payTo": "0x你的收款钱包地址" }' > deploy-config.json
 ```
 
@@ -525,24 +525,24 @@ import boto3
 ctrl = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
 dp = boto3.client("bedrock-agentcore", region_name="us-west-2")
 
-# 1. Credential Provider
+## 1. Credential Provider
 provider = ctrl.create_payment_credential_provider(
     name="MyProvider", credentialProviderVendor="CoinbaseCDP",
     providerConfigurationInput={"coinbaseCdpConfiguration": {
         "apiKeyId": "...", "apiKeySecret": "...", "walletSecret": "..."
     }})
 
-# 2. Payment Manager（名称只能用字母数字，不能有连字符）
+## 2. Payment Manager（名称只能用字母数字，不能有连字符）
 manager = ctrl.create_payment_manager(
     name="MyManager", authorizerType="AWS_IAM", roleArn="<RetrievalRoleArn>")
 
-# 3. Payment Connector
+## 3. Payment Connector
 connector = ctrl.create_payment_connector(
     paymentManagerId=manager["paymentManagerId"], name="CdpConnector",
     type="CoinbaseCDP",
     credentialProviderConfigurations=[{"coinbaseCDP": {"credentialProviderArn": "..."}}])
 
-# 4. Payment Instrument → 用户需访问 redirectUrl 完成授权 + 充值
+## 4. Payment Instrument → 用户需访问 redirectUrl 完成授权 + 充值
 instrument = dp.create_payment_instrument(
     paymentManagerArn=..., paymentConnectorId=..., userId="test-user",
     paymentInstrumentType="EMBEDDED_CRYPTO_WALLET",
@@ -550,9 +550,9 @@ instrument = dp.create_payment_instrument(
         "network": "ETHEREUM",
         "linkedAccounts": [{"email": {"emailAddress": "user@example.com"}}]
     }})
-# 返回: walletAddress, redirectUrl
+## 返回: walletAddress, redirectUrl
 
-# 5. Payment Session（expiryTimeInMinutes 最大 480，currency 只支持 USD）
+## 5. Payment Session（expiryTimeInMinutes 最大 480，currency 只支持 USD）
 session = dp.create_payment_session(
     userId="test-user", paymentManagerArn=...,
     limits={"maxSpendAmount": {"value": "100", "currency": "USD"}},
@@ -632,17 +632,17 @@ ctrl.create_agent_runtime_endpoint(agentRuntimeId="...", name="default")
 关键代码：
 
 ```python
-# 1. 创建 Gateway
+## 1. 创建 Gateway
 gw = ctrl.create_gateway(
     name="x402PayerGateway", roleArn="<AgentRuntimeRoleArn>",
     protocolType="MCP",
     protocolConfiguration={"mcp": {"supportedVersions": ["2025-03-26"]}},
     authorizerType="NONE")
 
-# 2. 创建 dummy API Key Provider
+## 2. 创建 dummy API Key Provider
 cp = ctrl.create_api_key_credential_provider(name="SellerNoAuth", apiKey="dummy")
 
-# 3. 创建 Target（将 OpenAPI spec 中的 server URL 替换为实际 CloudFront URL）
+## 3. 创建 Target（将 OpenAPI spec 中的 server URL 替换为实际 CloudFront URL）
 ctrl.create_gateway_target(
     gatewayIdentifier=gw["gatewayId"], name="x402ContentAPI",
     targetConfiguration={"mcp": {"openApiSchema": {"inlinePayload": openapi_spec}}},
@@ -661,7 +661,7 @@ ctrl.create_gateway_target(
 ```bash
 curl -s -X POST "${GATEWAY_URL}" -H "Content-Type: application/json" \
   -d '{"jsonrpc":"2.0","method":"tools/list","id":1}'
-# 预期返回 4 个工具
+## 预期返回 4 个工具
 ```
 
 ⚠️allowedRequestHeaders 中不要配置 OpenAPI spec 里已定义的 header，否则报冲突错误。
@@ -673,7 +673,7 @@ curl -s -X POST "${GATEWAY_URL}" -H "Content-Type: application/json" \
 关键注意事项：
 
 ```bash
-# 构建前端（.env 中配置 API 端点和 Seller URL）
+## 构建前端（.env 中配置 API 端点和 Seller URL）
 cd web-ui && npm install && npm run build
 aws s3 sync dist/ s3://x402-web-ui-bucket/ --delete
 ```

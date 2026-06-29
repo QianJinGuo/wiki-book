@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/claude-code-dynamic-workflows-source-code-architecture.md`
 
-# Claude Code 动态工作流源码解析：pi-dynamic-workflows 架构实现
+## Claude Code 动态工作流源码解析：pi-dynamic-workflows 架构实现
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-dynamic-workflows-source-code-architecture.md)
 

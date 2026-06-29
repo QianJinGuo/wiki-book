@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/llm-wiki-architecture-karpathy-markdown-knowledge-base.md`
 
-# LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式
+## LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式
 > 原文：LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式
 > 来源：https://mp.weixin.qq.com/s/F2JcvwDDT99F_WZexowHGg
 Karpathy 在 `llm-wiki.md` 里提出：让 LLM 在上下文窗口之外维护一个 Markdown Wiki。核心价值是把模型逐渐形成的理解沉淀成可读、可修改、可追溯的 Markdown 知识 artifact。nashsu/llm_wiki 社区将此想法做成桌面开源应用。

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md`
 
-# Building a secure auth code flow setup using AgentCore Gateway with MCP clients
+## Building a secure auth code flow setup using AgentCore Gateway with MCP clients
 
 > **Background**: 本文基于 AWS Machine Learning Blog 官方教程，详细介绍 OAuth 2.0 Authorization Code Flow 在 Bedrock AgentCore Gateway 与 MCP 客户端集成中的实施配置。内容涵盖架构概述、组件说明、IdP 配置步骤、以及 Kiro IDE 集成。
 

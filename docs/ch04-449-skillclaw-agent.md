@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/skillclaw-alibaba-paperagent.md`
 
-# 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
+## 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
 > 原文：https://mp.weixin.qq.com/s/NunzqJYxpt5Gc_NmpL1U1Q
 > 来源：PaperAgent | 2026-04-22
 > 论文：https://arxiv.org/abs/2604.08377

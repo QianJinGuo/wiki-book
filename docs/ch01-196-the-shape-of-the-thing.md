@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 22.5KB | `entities/the-shape-of-the-thing.md`
 
-# The Shape of the Thing
+## The Shape of the Thing
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-shape-of-the-thing.md)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.6KB | `entities/skill-product-philosophy-guicang-爆款经验-2026-06-12.md`
 
-# Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思
+## Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-product-philosophy-guicang-爆款经验-2026-06-12.md)
 

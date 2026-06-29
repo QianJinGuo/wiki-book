@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/zapocalypse-the-attack-chain-that-could-have-hijacked-zapier-20260606.md`
 
-# Zapocalypse: The Attack Chain That Could Have Hijacked Zapier
+## Zapocalypse: The Attack Chain That Could Have Hijacked Zapier
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/zapocalypse-the-attack-chain-that-could-have-hijacked-zapier-20260606.md)
 
@@ -54,7 +54,7 @@ AWS_LAMBDA_LOG_STREAM_NAME=2026/02/15/[1]ca626535d2104
 ```
 
 ```
-# lambda_function.py — verbatim, as it appeared on disk
+## lambda_function.py — verbatim, as it appeared on disk
 import requests  # NOQA
 from store_api import StoreClient  # NOQA
 

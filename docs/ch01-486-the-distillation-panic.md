@@ -14,7 +14,7 @@ type: entity
 updated: '2026-06-08'
 ---
 type: entity
-# The distillation panic
+## The distillation panic
 
 ## 相关实体
 - [05 11 The Great Memory Panic Of 2026](/ch01-635-the-great-memory-panic-of-2026/)

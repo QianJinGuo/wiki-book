@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/pi-mono-github.md`
 
-# pi-mono — AI agent toolkit
+## pi-mono — AI agent toolkit
 > GitHub: https://github.com/badlogic/pi-mono
 > Author: Mario Zechner (badlogicgames)
 > Stars: 43.3k | Forks: 5.1k | Commits: 3,900 | Tags: 263

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/topological-trouble-transformers-state-tracking-deepmind-2026-06-17.md`
 
-# Transformer 的拓扑麻烦：DeepMind 论证状态追踪是架构性缺陷，CoT 只是补丁
+## Transformer 的拓扑麻烦：DeepMind 论证状态追踪是架构性缺陷，CoT 只是补丁
 
 ## 摘要
 

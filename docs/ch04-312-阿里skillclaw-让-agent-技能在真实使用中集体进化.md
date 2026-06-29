@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/skillclaw.md`
 
-# 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
+## 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
 
 大家好，我是PaperAgent，不是Agent！
 当前 LLM Agent（如 OpenClaw）依赖**可复用的技能（Skills）**来完成复杂任务。用户从 Skill Hub 安装技能后，Agent 就能调用这些结构化流程来协调工具使用、执行多步推理。

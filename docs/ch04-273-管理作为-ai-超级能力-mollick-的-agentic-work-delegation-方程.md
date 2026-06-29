@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/management-as-ai-superpower-mollick.md`
 
-# 管理作为 AI 超级能力：Mollick 的 Agentic Work Delegation 方程
+## 管理作为 AI 超级能力：Mollick 的 Agentic Work Delegation 方程
 
 > 2026-06-07 引用自 Ethan Mollick《Management as AI superpower》，One Useful Thing，2026-01-27。
 

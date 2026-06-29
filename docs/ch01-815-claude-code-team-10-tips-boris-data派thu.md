@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/claude-code-team-10-tips-boris-data派THU.md`
 
-# Claude Code Team 10 Tips Boris Data派Thu
+## Claude Code Team 10 Tips Boris Data派Thu
 
 ## 相关实体
 

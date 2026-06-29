@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/gpt5-just-does-stuff-mollick.md`
 
-# GPT-5：It Just Does Stuff — Mollick 的主动式 AI 原语
+## GPT-5：It Just Does Stuff — Mollick 的主动式 AI 原语
 
 > 2026-06-07 引用自 Ethan Mollick《GPT-5: It Just Does Stuff》，One Useful Thing，2025-08-07。
 

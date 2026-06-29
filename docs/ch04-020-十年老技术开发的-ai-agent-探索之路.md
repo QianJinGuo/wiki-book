@@ -6,7 +6,7 @@
 
 [十年老技术开发的 Ai Agent 探索之路](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/十年老技术开发的-ai-agent-探索之路.md)
 
-# 十年老技术开发的 AI Agent 探索之路
+## 十年老技术开发的 AI Agent 探索之路
 
 作者：zhiyuanfu
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 12.0KB | `entities/stepan-gershuni-ai-native-startup-guide.md`
 
-# 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
+## 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
 
 > **来源**：深思圈 / 深思SenseAI（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stepan-gershuni-ai-native-startup-guide.md)
 

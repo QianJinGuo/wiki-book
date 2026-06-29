@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/olmo-hybrid-and-future-llm-architectures.md`
 
-# Olmo Hybrid and future LLM architectures
+## Olmo Hybrid and future LLM architectures
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/olmo-hybrid-and-future-llm-architectures.md)
 

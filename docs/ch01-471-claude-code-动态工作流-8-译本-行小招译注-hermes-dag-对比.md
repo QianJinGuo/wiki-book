@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/claude-code-dynamic-workflows-8th-translation-xingxiaozhao.md`
 
-# Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）
+## Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-dynamic-workflows-8th-translation-xingxiaozhao.md)
 → 主条目：[Claude Code Dynamic Workflows Multi Agent Orchestration](/ch04-409-agent-orchestration/)

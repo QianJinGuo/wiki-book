@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 23.1KB | `entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md`
 
-# Spec as AIOS：AI-Native 全栈交付的抗熵架构
+## Spec as AIOS：AI-Native 全栈交付的抗熵架构
 
 > **作者**：APP 平台业务中心 / 高德技术，2026-06-02  
 > **系列定位**：「**超级应用的 AI 原生研发模式探索**」**第二期**（第一期：工业级能力底座；第三期：7x24 pipeline）  

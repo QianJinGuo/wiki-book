@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/meta-skill-skill-orchestration-opensquilla-jay.md`
 
-# Meta Skill：Skill 之上编排 Skill 的抽象层
+## Meta Skill：Skill 之上编排 Skill 的抽象层
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)
 

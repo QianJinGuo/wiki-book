@@ -194,16 +194,16 @@ export_to_video(frames, "output.mp4", fps=16)
 
 ```python
 
-# 加载领域 A 的 adapter
+## 加载领域 A 的 adapter
 pipe.load_lora_weights("path/to/domain_a_lora")
 
-# 生成领域 A 的视频
+## 生成领域 A 的视频
 ...
 
-# 切换到领域 B 的 adapter
+## 切换到领域 B 的 adapter
 pipe.load_lora_weights("path/to/domain_b_lora")
 
-# 生成领域 B 的视频
+## 生成领域 B 的视频
 ```
 
 ## 评估指标体系

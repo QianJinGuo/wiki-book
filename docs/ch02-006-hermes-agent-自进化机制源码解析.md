@@ -110,13 +110,13 @@ fresh papers, social pulse. Lead with what changed since yesterday.
 Hermes 内置 scheduler，用自然语言描述即可自动转换：
 ```bash 
 
-# 工作日早上 9 点
+## 工作日早上 9 点
 /cron add "0 9 * * 1-5" "Prepare daily digest" 
 
-# 每两小时
+## 每两小时
 /cron add "every 2h" "Check server status" 
 
-# 附加 skill
+## 附加 skill
 /cron add "every 1h" "Summarize feeds" --skill blogwatcher 
 ``` 
 

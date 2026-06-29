@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.8KB | `entities/joyai-echo-long-video-framework-jd.md`
 
-# JoyAI-Echo：京东开源长音视频生成框架
+## JoyAI-Echo：京东开源长音视频生成框架
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/joyai-echo-long-video-jd-qbitai.md)
 

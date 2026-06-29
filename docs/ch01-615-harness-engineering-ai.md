@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/harness-engineering-第三代工程范式.md`
 
-# Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
+## Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
 💡 TL;DR: AI 模型天然具有三个工程缺陷（概率性输出/短时记忆/幻觉倾向）。Harness Engineering 是专门用来填补这三个坑的系统工程学。Model 决定 AI 有多聪明，Harness 决定 AI 有多可靠。
 
 ## 什么是 Harness Engineering？

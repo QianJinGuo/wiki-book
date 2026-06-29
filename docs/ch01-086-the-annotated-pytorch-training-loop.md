@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.4KB | `entities/essays-pytorch-training-loop.md`
 
-# The annotated PyTorch training loop
+## The annotated PyTorch training loop
 
 > **来源**: [The annotated PyTorch training loop](https://idlemachines.co.uk/essays/pytorch-training-loop)
 

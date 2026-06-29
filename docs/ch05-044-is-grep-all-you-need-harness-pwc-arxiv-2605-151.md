@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.1KB | `entities/is-grep-all-you-need-pwc-retrieval-harness-coupling.md`
 
-# Is Grep All You Need? — 检索 × Harness × 交付方式耦合三元组
+## Is Grep All You Need? — 检索 × Harness × 交付方式耦合三元组
 
 ## 论文与作者
 

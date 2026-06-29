@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 5.6KB | `entities/hunk-diff-viewer.md`
 
-# Hunk - Review-first Terminal Diff Viewer
+## Hunk - Review-first Terminal Diff Viewer
 
 ## 摘要
 

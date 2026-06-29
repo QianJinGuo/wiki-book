@@ -102,7 +102,7 @@ for iteration in range(1, max_iterations + 1):
     new_description = improve_description(history=blinded_history, eval_results=train_results)
     current_description = new_description
 
-# 最终按 test 成绩选 best（不是 train）
+## 最终按 test 成绩选 best（不是 train）
 best = max(history, key=lambda h: h["test_passed"] or 0)
 ```
 

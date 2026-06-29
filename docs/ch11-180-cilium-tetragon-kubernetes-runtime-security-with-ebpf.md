@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/cilium-tetragon-kubernetes-runtime-security-ebpf.md`
 
-# Cilium Tetragon — Kubernetes Runtime Security with eBPF
+## Cilium Tetragon — Kubernetes Runtime Security with eBPF
 
 > **Background**：本文档基于 Cilium 团队 2026-06-07 发布的官方技术长文整理，结构化提炼了 K8s 运行时安全威胁模型、Tetragon 的 eBPF 内核级执行机制、与传统容器隔离/镜像扫描的根本区别，以及 5 类典型威胁向量的应对思路。原文 35KB，发布在 cilium.io/blog。
 

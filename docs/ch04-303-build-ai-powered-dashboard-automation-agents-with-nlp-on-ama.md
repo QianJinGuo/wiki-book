@@ -84,13 +84,13 @@
 
 ```python
 
-# 推荐模式
+## 推荐模式
 if not column_exists_in_dataset(column_name):
     return f"Column '{column_name}' doesn't exist in dataset."
 if column_exists_in_dashboard(column_name):
     return f"Column '{column_name}' is already in the dashboard."
 
-# 执行变更...
+## 执行变更...
 ```
 
 ### 3. 充分利用 AgentCore 的托管能力
@@ -109,7 +109,7 @@ ROUTING LOGIC:
 - "find", "show", "list", "get", "columns" → find_dashboard_agent
 - "add", "remove", "modify", "delete" → modify_dashboard_agent
 
-# 超出范围的请求直接回复，而非路由到可能失败的代理
+## 超出范围的请求直接回复，而非路由到可能失败的代理
 ```
 
 ### 5. 监控与可观测性设计

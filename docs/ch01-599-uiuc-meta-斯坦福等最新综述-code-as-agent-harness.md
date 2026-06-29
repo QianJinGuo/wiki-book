@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/code-as-agent-harness-survey-2026.md`
 
-# UIUC、Meta、斯坦福等最新综述！Code as Agent Harness
+## UIUC、Meta、斯坦福等最新综述！Code as Agent Harness
 
 ## 相关实体
 

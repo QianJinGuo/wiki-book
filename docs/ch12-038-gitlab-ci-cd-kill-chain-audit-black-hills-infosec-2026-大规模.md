@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/auditing-gitlab-cicd-kill-chain-black-hills-2026.md`
 
-# GitLab CI/CD Kill Chain Audit — Black Hills InfoSec 2026 大规模审计研究
+## GitLab CI/CD Kill Chain Audit — Black Hills InfoSec 2026 大规模审计研究
 
 > **背景**：本文基于 Black Hills Info Security 在 2026-06-03 发布的大规模 GitLab CI/CD 审计研究整理。3,757 个开源项目、1,580 个 HIGH 级别漏洞、kill chain 框架系统化分类。补充现有 [Jenkins 供应链攻击](/ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att/) 等的 CI/CD 攻击面覆盖。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/spring-ai-aiagentdemo.md`
 
-# AI实践｜基于 Spring AI 从0到1构建 AI Agent
+## AI实践｜基于 Spring AI 从0到1构建 AI Agent
 
 文章内容基于作者个人技术实践与独立思考，旨在分享经验，仅代表个人观点。
 Linux说过一句很经典的话：Talk is cheap, show me the code.

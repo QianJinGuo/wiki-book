@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md`
 
-# 龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！
+## 龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
 

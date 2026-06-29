@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 7.3KB | `entities/blog-packument-size-limits.md`
 
-# Why Drizzle ORM couldn't publish new releases on NPM for a month | vlt /vōlt/
+## Why Drizzle ORM couldn't publish new releases on NPM for a month | vlt /vōlt/
 
 > **来源**: [Why Drizzle ORM couldn't publish new releases on NPM for a month | vlt /vōlt/](https://vlt.io/blog/packument-size-limits)
 

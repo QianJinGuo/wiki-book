@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.7KB | `entities/browser-use-runtime-harness.md`
 
-# Browser Use：为 Agent 构建 Runtime Harness
+## Browser Use：为 Agent 构建 Runtime Harness
 
 **Browser Use** 是百度工程师开源的运行时验证框架，旨在解决 Agent 生成前端代码后的「最后一公里」验证问题。核心洞察是：**代码正确 ≠ 界面正确**——前端最终结果是组件代码、CSS cascade、运行时数据、容器尺寸、异步状态等因素共同作用的组合结果，只有渲染出来才能确认是否正确。
 

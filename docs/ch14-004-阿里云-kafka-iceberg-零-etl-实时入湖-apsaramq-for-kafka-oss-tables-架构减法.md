@@ -114,13 +114,13 @@ AI 时代两类核心需求在同份数据上同时实现：
 ### 4. 智能分区策略（7 类）
 
 ```yaml
-# 按地区 + 天双维分区
+## 按地区 + 天双维分区
 partition_by: "region, day(timestamp)"
 
-# 高基数 ID 哈希分桶
+## 高基数 ID 哈希分桶
 partition_by: "bucket(user_id, 10)"
 
-# 邮箱前缀归类
+## 邮箱前缀归类
 partition_by: "truncate(email, 5)"
 ```
 
@@ -129,7 +129,7 @@ partition_by: "truncate(email, 5)"
 ### 5. 完整 CDC / Upsert 支持
 
 ```yaml
-# CDC 入湖典型配置
+## CDC 入湖典型配置
 transforms: debezium_unwrap
 write_mode: upsert
 table_format: iceberg-v2

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/5235705.md`
 
-# Meta U-turns on encryption push for Instagram as DMs go plaintext
+## Meta U-turns on encryption push for Instagram as DMs go plaintext
 
 Meta has quietly pulled the plug on encrypted Instagram DMs, meaning private messages on one of the world's biggest social networks are no longer especially private. The change took effect in 2026, according to a revised Meta post first published in 2022. In a statement to The Register, Meta said the feature saw limited adoption and pointed users toward WhatsApp instead.
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md`
 
-# Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606
+## Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606
 
 ## 相关实体
 

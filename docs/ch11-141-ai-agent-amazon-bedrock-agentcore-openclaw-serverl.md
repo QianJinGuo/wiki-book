@@ -76,13 +76,13 @@ cdk.json 是整个项目的配置中枢，关键参数分类：
 ### 部署前必要补丁
 ```bash
 
-# AWS Marketplace 权限（模型访问验证需要）
+## AWS Marketplace 权限（模型访问验证需要）
 self.execution_role.add_to_policy(iam.PolicyStatement(
     actions=["aws-marketplace:ViewSubscriptions", "aws-marketplace:Subscribe"],
     resources=["*"]
 ))
 
-# Dashboard 名称加区域后缀（多区域部署防冲突）
+## Dashboard 名称加区域后缀（多区域部署防冲突）
 dashboard_name=f"OpenClaw-Operations-{region}"
 ```
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 20.9KB | `entities/claude-fable-5-agent-runtime-contract-ruofei-2026.md`
 
-# Fable 5 的信号：Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解
+## Fable 5 的信号：Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解
 
 > [!quote] 核心命题
 > Agent 产品接下来拼的,**不只是模型多强,还包括谁能把任务协议、工具路由、状态管理、验证闭环和治理边界做成稳定的运行时**。Runtime 是一套**运行协议**而非提示词技巧:任务怎么交代、工具怎么路由、状态怎么保存、产物怎么验证、风险怎么降级、什么时候把人拉回来。

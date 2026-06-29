@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/deepseek-code-harness-competitor-tina.md`
 
-# DeepSeek Code Harness：对标 Claude Code 的中国方案
+## DeepSeek Code Harness：对标 Claude Code 的中国方案
 
 ## 摘要
 

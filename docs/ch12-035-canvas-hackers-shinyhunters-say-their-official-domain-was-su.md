@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md`
 
-# Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended
+## Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended
 
 ## 摘要
 

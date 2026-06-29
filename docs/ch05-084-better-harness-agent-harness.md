@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 7.0KB | `entities/better-harness-eval-trace-methodology.md`
 
-# Better-Harness：Agent Harness 自动优化方法论
+## Better-Harness：Agent Harness 自动优化方法论
 ## 核心问题
 Karpathy Autoresearch 证明自动优化需要实验循环，但循环能跑起来的前提是：**评价信号必须足够清楚**。当指标本身错了，自动优化会把错误放大。 
 Better-Harness 补上了更难的一半——当评价信号错了，系统会沿着错误方向跑得更快。 

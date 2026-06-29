@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.0KB | `entities/claude-code-vs-hermes-session-vs-goal-lifecycle.md`
 
-# Claude Code vs Hermes — Session 工程师 vs Goal Runtime
+## Claude Code vs Hermes — Session 工程师 vs Goal Runtime
 
 > **核心**: Claude Code 生命周期单元 = **session** / Hermes 生命周期单元 = **goal**. 不是能力对比, 是**两套完全不同的工程取舍**:
 > - 前者把可靠性建立在**清晰边界**上

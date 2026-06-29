@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.2KB | `entities/git-repo-based-pm-automation.md`
 
-# Git仓库 + AI 编码助手做项目管理
+## Git仓库 + AI 编码助手做项目管理
 
 > **Background**：本文档基于微信公众号文章《用两个 Git 仓库 + AI 编码助手做项目管理（2026版）》提取。该文来自匿名团队实践分享，介绍了他们如何用 Git 仓库 + AI 编码助手 + Shell 脚本替代传统项目管理的 80% 人肉操作。
 

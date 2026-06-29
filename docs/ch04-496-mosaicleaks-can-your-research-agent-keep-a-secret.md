@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/mosaicleaks-privacy-risks-deep-research-agents-servicenow.md`
 
-# MosaicLeaks: Can your research agent keep a secret?
+## MosaicLeaks: Can your research agent keep a secret?
 
 ## 核心问题
 

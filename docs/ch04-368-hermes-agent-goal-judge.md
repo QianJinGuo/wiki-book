@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md`
 
-# Hermes Agent /goal 长任务运行时架构拆解：状态持久化、Judge 闭环与自主续航
+## Hermes Agent /goal 长任务运行时架构拆解：状态持久化、Judge 闭环与自主续航
 Agent 长任务最让人烦的地方，往往不是它不会做，而是它太容易停下来。Hermes Agent v0.13.0 的 /goal 解决的不是一个"让模型更聪明"的泛问题，而是一个更具体的工程问题：怎样把一次目标变成一个可持续推进、可暂停、可恢复、可判定完成的运行时流程。
 **四个关键部件**：外部状态、生命周期管理、Judge 判定、继续执行队列。合在一起，才让 Agent 从"等用户说继续"变成"知道自己还没干完"。
 

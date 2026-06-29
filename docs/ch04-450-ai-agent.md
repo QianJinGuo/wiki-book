@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/ai-canvas-agent-era-content-creation.md`
 
-# AI 内容创作，开始进入“画布 Agent”时代
+## AI 内容创作，开始进入“画布 Agent”时代
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-canvas-agent-era-content-creation.md)（叶小钗）
 
 ## 核心要点

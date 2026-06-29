@@ -4,10 +4,10 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/open-defense-initiative.md`
 
-# Open Defense Initiative
+## Open Defense Initiative
 Published Time: Wed, 13 May 2026 15:55:13 GMT
 
-# Open Defense Initiative | depthfirst
+## Open Defense Initiative | depthfirst
 [depthfirst](https://depthfirst.com/)
 [Sign in](https://app.depthfirst.com/)[Request demo](https://depthfirst.com/book-a-demo)
 

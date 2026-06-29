@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 28.1KB | `entities/aliyun-end-to-end-business-requirements-agent-multica-2026.md`
 
-# 阿里云端到端业务需求专家 Agent：Multica + superai-* 技能集群 + TDD/pre-push 质量门禁
+## 阿里云端到端业务需求专家 Agent：Multica + superai-* 技能集群 + TDD/pre-push 质量门禁
 
 > 阿里妹（阿里云开发者）2026-06-15 端到端业务需求 Agent 实战总结：把业务需求从进入到结项的完整过程，组织成 Agent 能自主推进、人只在关键节点确认的闭环。**核心创新**：12 个 superai-* 技能 + 长期 wiki/项目记忆 双仓库设计 + git pre-push hook 硬绑定 PMD/TDD 质量门禁 + TDD "测试定义对的，让实现去满足测试" 翻转。
 

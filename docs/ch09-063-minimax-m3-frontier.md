@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/minimax-m3-frontier-open-source-model.md`
 
-# MiniMax M3 开源 Frontier 模型
+## MiniMax M3 开源 Frontier 模型
 
 > [!summary] 核心洞察
 > MiniMax M3 是国内首个同时具备 Coding Frontier + 1M 上下文 + 原生多模态的开源模型。三大技术主线：MSA 稀疏注意力解决百万 token 可用化、原生多模态统一 token 空间、交互式用户模拟器实现从单轮代码生成到长期协作的训练范式变化。

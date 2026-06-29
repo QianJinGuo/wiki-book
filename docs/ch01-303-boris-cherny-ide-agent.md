@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/iqSixiNP9lxNKg7aVfHFCQ.md`
 
-# Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台
+## Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台
 
 > 来源：微信公众号"架构师（JiaGouX）"——对 Boris Cherny 在 Sequoia AI Ascent 2026 上访谈的延伸解读
 > 关联文章：Claude Code 源码、Harness、上下文、Skills 系列

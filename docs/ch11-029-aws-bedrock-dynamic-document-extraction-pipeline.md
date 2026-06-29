@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.7KB | `entities/extract-data-with-on-demand-and-batch-pipelines-dynamically.md`
 
-# AWS Bedrock Dynamic Document Extraction Pipeline
+## AWS Bedrock Dynamic Document Extraction Pipeline
 
 > **架构概述**：AWS 中国博客 2026-06-11 发布的智能文档处理（IDP）参考架构，演示了 Amazon Bedrock 文档处理 pipeline 如何**同时支持 on-demand 与 batch 两种推理模式**，并通过 **Bedrock Prompt Management 实现每文档动态 prompt 选取**。真实场景：客户拥有数亿份扫描 PDF 地契文档，格式各异（列表/表格/图示），需要 LLM 抽取标准化数据。架构以 FIFO SQS 队列触发 Lambda 函数，按文档级别路由到不同 prompt 版本与模型，结构化结果存入 DynamoDB。
 

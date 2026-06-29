@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stripe-sessions-2026-ai-agents.md)
 
-# Stripe Sessions 2026
+## Stripe Sessions 2026
 Stripe Sessions 2026 announcements: Stripe Agents (AI agents for payments), Stripe Elevate fraud, new SDK features for AI-native payment development. 
 **Source**: [raw article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stripe-sessions-2026-ai-agents.md) | **Review**: value=7 confidence=8
 

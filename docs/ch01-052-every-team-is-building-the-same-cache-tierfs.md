@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 7.5KB | `entities/blog-every-team-builds-the-same-cache-html.md`
 
-# Every Team is Building the Same Cache — TierFS
+## Every Team is Building the Same Cache — TierFS
 
 > **来源**: [Every Team is Building the Same Cache — TierFS](https://tierfs.com/blog/every-team-builds-the-same-cache.html)
 

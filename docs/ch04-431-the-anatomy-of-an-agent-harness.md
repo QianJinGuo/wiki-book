@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/langchain-anatomy-agent-harness.md`
 
-# The Anatomy of an Agent Harness 解读
+## The Anatomy of an Agent Harness 解读
 > Source: https://mp.weixin.qq.com/s/YYurQM9EUuyshuW20YAMJQ
 > 原文：LangChain《The Anatomy of an Agent Harness》
 **Agent = Model + Harness**

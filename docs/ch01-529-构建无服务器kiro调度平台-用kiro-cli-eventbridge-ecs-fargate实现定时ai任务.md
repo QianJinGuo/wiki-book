@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md`
 
-# 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
+## 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
 
 ## 相关实体
 

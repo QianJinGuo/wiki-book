@@ -6,7 +6,7 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/be-more-expressive-to-close-more-sales.md)
 
-# Be more-expressive-to-close-more-sales
+## Be more-expressive-to-close-more-sales
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/be-more-expressive-to-close-more-sales.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/be-more-expressive-to-close-more-sales.md)
 

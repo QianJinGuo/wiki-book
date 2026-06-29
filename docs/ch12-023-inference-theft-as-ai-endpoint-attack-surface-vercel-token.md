@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.1KB | `entities/vercel-inference-theft-ai-endpoint-economics-2026.md`
 
-# Inference Theft as AI Endpoint Attack Surface — Vercel Token Theft Defense 2026
+## Inference Theft as AI Endpoint Attack Surface — Vercel Token Theft Defense 2026
 
 > **核心问题**：AI endpoint 是 2026 年最高利润的攻击面之一。HTTP 请求成本 $2/million calls，AI prompt 成本 $2/call，**价差 1,000,000x**。攻击者用 residential proxy + 一次性账号即可绕过 session-level 验证，转售盗用的推理资源。
 

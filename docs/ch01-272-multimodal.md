@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/multimodal-evaluators-mllm-as-judge-image-to-text.md`
 
-# Multimodal evaluators: MLLM-as-a-judge for image-to-text tasks in Strands Evals
+## Multimodal evaluators: MLLM-as-a-judge for image-to-text tasks in Strands Evals
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/multimodal-evaluators-mllm-as-judge-image-to-text.md)
 

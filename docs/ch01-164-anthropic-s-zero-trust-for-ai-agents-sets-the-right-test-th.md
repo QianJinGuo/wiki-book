@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.1KB | `entities/anthropics-zero-trust-for-ai-agents-sets-the-right-test-the.md`
 
-# Anthropic's Zero Trust for AI Agents Sets the Right Test. The Bearer Token Fails It
+## Anthropic's Zero Trust for AI Agents Sets the Right Test. The Bearer Token Fails It
 
 ## 相关实体
 - [microsoft is quietly shopping for an openai replacement](/ch01-036-microsoft-is-quietly-shopping-for-an-openai-replacement/)

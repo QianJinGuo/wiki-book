@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md`
 
-# Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
+## Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
 
 ## 相关实体
 

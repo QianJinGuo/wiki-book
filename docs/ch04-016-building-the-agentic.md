@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 5.0KB | `entities/building-the-agentic-future-developer-highlights-from-io-2026.md`
 
-# Building the agentic future: Developer highlights from I/O 2026
+## Building the agentic future: Developer highlights from I/O 2026
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
 

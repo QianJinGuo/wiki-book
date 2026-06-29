@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.3KB | `entities/pi-agent-framework-event-bus-design.md`
 
-# 这个开源 Agent 框架的核心设计，可能是目前最「聪明」的取舍
+## 这个开源 Agent 框架的核心设计，可能是目前最「聪明」的取舍
 > 原文：[这个开源 Agent 框架的核心设计，可能是目前最「聪明」的取舍](https://mp.weixin.qq.com/s/5F5kzLNBSzai9E2wl_CWVg)
 **Pi Agent（badlogic/pi-mono）** 的设计哲学：**核心代码保持极简，把所有"可定制性"的维度全部交给扩展系统。**
 > 不是简单的"我们支持插件"的声明。扩展系统不是事后打补丁式的钩子集合，而是从架构第一天起就作为一等公民存在的能力注入层。

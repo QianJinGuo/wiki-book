@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.9KB | `entities/hermes-agent-soul-md-personality-shugex.md`
 
-# Hermes Agent SOUL.md：3 层提示词、14 个内置人格，从源码看身份定制的完整设计
+## Hermes Agent SOUL.md：3 层提示词、14 个内置人格，从源码看身份定制的完整设计
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-soul-md-personality-shugex.md)
 

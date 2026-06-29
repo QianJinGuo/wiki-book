@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/hermes-agent-tool-system-analysis.md`
 
-# Hermes Agent 工具系统实战解析：40+ 工具为什么不用配置表
+## Hermes Agent 工具系统实战解析：40+ 工具为什么不用配置表
 
 ## 相关实体
 

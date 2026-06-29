@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/agent-eval-counterintuitive-insights-langfuse.md`
 
-# Agent评测的反直觉感悟：质量优化与可规模化性的取舍
+## Agent评测的反直觉感悟：质量优化与可规模化性的取舍
 
 ## 摘要
 

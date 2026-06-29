@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.6KB | `entities/yann-dubois-openai-post-training-matt-turck-interview.md`
 
-# Yann Dubois × Matt Turck：OpenAI 后训练与强化学习的内部视角
+## Yann Dubois × Matt Turck：OpenAI 后训练与强化学习的内部视角
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/yann-dubois-openai-post-training-matt-turck-interview.md)
 

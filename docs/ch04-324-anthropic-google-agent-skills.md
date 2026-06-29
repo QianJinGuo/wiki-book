@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md`
 
-# 从 Anthropic 到 Google：Agent Skills 正在进入"设计模式"阶段
+## 从 Anthropic 到 Google：Agent Skills 正在进入"设计模式"阶段
 架构师（JiaGouX）  我们都是架构师！
 Google Cloud Tech 前些日子发布了一篇 Agent Skill 设计模式文章：《5 Agent Skill design patterns every ADK developer should know》。
 文章把常见 Skill 分成 5 类：Tool Wrapper、Generator、Reviewer、Inversion、Pipeline。

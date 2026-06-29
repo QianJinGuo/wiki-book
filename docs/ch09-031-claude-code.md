@@ -150,13 +150,13 @@ Subagent 模式支持**独立的上下文作用域**：
 
 ```bash
 
-# 最大工具并发数
+## 最大工具并发数
 export CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=20
 
-# 上下文窗口大小（默认 200K）
+## 上下文窗口大小（默认 200K）
 export CLAUDE_CODE_CONTEXT_WINDOW=500000
 
-# 调试模式（记录详细性能日志）
+## 调试模式（记录详细性能日志）
 export CLAUDE_CODE_DEBUG=1
 ```
 

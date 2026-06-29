@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 23.5KB | `entities/promptqueue-async-task-queue-opengorilla-integration.md`
 
-# PromptQueue + OpenGorilla 集成 — AI-Native 异步任务引擎与自进化认知层
+## PromptQueue + OpenGorilla 集成 — AI-Native 异步任务引擎与自进化认知层
 
 ## 一句话
 

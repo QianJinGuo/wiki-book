@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.7KB | `entities/claude-opus-48-the-system-card-b8460f.md`
 
-# Claude Opus 4.8: The System Card
+## Claude Opus 4.8: The System Card
 
 → **原文存档**
 

@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-ai-windows-mcp-strategy-geekpark-2026.md)
 
-# OpenAI 的最强对手，离「AI Windows」又近了一步
+## OpenAI 的最强对手，离「AI Windows」又近了一步
 
 ## 核心论点
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.9KB | `entities/10x-is-a-lot.md`
 
-# 10x Is a Lot — Quarter Mile
+## 10x Is a Lot — Quarter Mile
 ## [Home](https://www.quarter--mile.com/) • [Subscribe](https://www.quarter--mile.com/subscribe) • [Contact](https://www.quarter--mile.com/contact) • [Writing Club](http://writingclub.world/) • [Questions](https://www.quarter--mile.com/Questions)
 You have probably heard people say things like "this product makes you 10x more effective."
 Here are a few examples of what things would look like if they were 10x faster/better/bigger:

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/claude-fable-5-and-new-ai-safety-fables.md`
 
-# Claude Fable 5 and new AI safety fables
+## Claude Fable 5 and new AI safety fables
 
 ## 深度分析
 
@@ -54,7 +54,7 @@ Claude Fable 5 与 AI 安全寓言新篇：通过寓言式叙事探讨 AI 安全
 **AWS 端点调用示例**（与第 1 源互补）：
 
 ```bash
-# Anthropic Messages API 格式 (bedrock-mantle)
+## Anthropic Messages API 格式 (bedrock-mantle)
 curl -X POST https://bedrock-mantle.us-east-1.amazonaws.com/v1/messages \
   -H "Authorization: Bearer ***" \
   -H "Content-Type: application/json" \

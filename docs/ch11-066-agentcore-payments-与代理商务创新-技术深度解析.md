@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 11.2KB | `entities/agentcore-payments-x402-agentic-commerce.md`
 
-# AgentCore Payments 与代理商务创新：技术深度解析
+## AgentCore Payments 与代理商务创新：技术深度解析
 
 > 深入解析 AgentCore Payments 技术架构与 x402 协议，探讨代理商务（agentic commerce）的支付创新方向。
 
 ## 核心内容
 
-# Technical deep dive: AgentCore payments and innovation in agentic commerce
+## Technical deep dive: AgentCore payments and innovation in agentic commerce
  
 
 The industry is entering a world where billions of generative AI agents operate autonomously, acting on behalf of humans, making decisions, and completing tasks without human intervention. To support this shift, [Amazon Bedrock AgentCore](https://aws.amazon.com/bedrock/agentcore/) provides a modular, fully managed platform that helps developers build, deploy, and operate generative AI agents at scale. By abstracting the complexities of server management, security, and integrations, AgentCore acts as the foundational infrastructure layer, relieving developers to focus on what matters most: the agent's logic.

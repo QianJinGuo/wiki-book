@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md`
 
-# 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践
+## 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践
 
 ## 相关实体
 

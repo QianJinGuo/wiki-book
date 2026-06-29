@@ -52,12 +52,12 @@ hermes
 hermes gateway setup
 
 # 选择飞书 → 自动创建机器人（推荐）/ 手动输入 AppID+AppSecret
-# 授权方式：私聊配对授权
-# 安装 systemd 服务
+## 授权方式：私聊配对授权
+## 安装 systemd 服务
 sudo $(which hermes) gateway install --system --run-as-user <username>
 sudo $(which hermes) gateway start --system
 
-# 验证
+## 验证
 systemctl status hermes-gateway
 ```
 

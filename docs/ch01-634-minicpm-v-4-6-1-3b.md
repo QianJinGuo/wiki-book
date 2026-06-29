@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/minicpm-v-46-13b-xinazhiyuan.md)
 
-# MiniCPM-V 4.6 (1.3B) 面壁智能
+## MiniCPM-V 4.6 (1.3B) 面壁智能
 **机构**：面壁智能 + 清华大学    
 **产品**：MiniCPM-V 4.6    
 **原始链接**：https://mp.weixin.qq.com/s/_KJYvvvte-7_rMZ9y9jCyQ    

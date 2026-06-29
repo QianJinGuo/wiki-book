@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/thinking-machines-interaction-models-ai-cold.md`
 
-# thinking-machines-interaction-models-ai-cold
+## thinking-machines-interaction-models-ai-cold
 
 现有AI都是假实时！Thinking Machines发布交互模型，离真正的贾维斯真的近了
 Thinking Machines 发了一个新的交互模型，切入了一个更根本的问题：我们与 AI 交互的方式。它能够同时进行聆听、观察、说话、被打断、作出反应、在后台思考，以及调用工具。这一切并非靠语音转文字、轮次检测和各种智能体技巧拼接而成的流水线，而是一种原生的模型能力！

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/open-defense-initiative-depthfirst.md`
 
-# Open Defense Initiative | depthfirst
+## Open Defense Initiative | depthfirst
 
 ## 摘要
 

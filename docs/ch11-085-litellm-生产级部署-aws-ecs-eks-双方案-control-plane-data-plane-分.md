@@ -22,7 +22,7 @@
 ## 方案一：ECS Fargate 部署
 
 ```yaml
-# Task Definition 核心
+## Task Definition 核心
 - image: ghcr.io/berriai/litellm:main-latest
 - portMappings: 4000
 - environment:
@@ -41,7 +41,7 @@
 ## 方案二：EKS 部署
 
 ```yaml
-# Helm values.yaml 核心
+## Helm values.yaml 核心
 deployment:
   replicas: 3
   resources:

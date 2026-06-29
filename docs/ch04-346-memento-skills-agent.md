@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/memento-skills-agent-self-evolving.md`
 
-# Memento-Skills：让 Agent 通过技能外部记忆持续进化
+## Memento-Skills：让 Agent 通过技能外部记忆持续进化
 > AI热力论文社 | 2026-04-01 | arXiv 2603.18743
 LLM 部署后无法继续学习——预训练依赖海量算力，微调成本高昂，生产环境积累的交互经验难以被模型吸收复用。
 **Memento-Skills 的路径**：在完全冻结模型参数的前提下，通过持续进化的**技能内存（Skill Memory）**让 Agent 在真实任务中持续成长。

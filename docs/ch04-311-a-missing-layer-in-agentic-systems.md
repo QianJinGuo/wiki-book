@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/a-missing-layer-in-agentic-systems.md`
 
-# A Missing Layer in Agentic Systems?
+## A Missing Layer in Agentic Systems?
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/a-missing-layer-in-agentic-systems.md)
 

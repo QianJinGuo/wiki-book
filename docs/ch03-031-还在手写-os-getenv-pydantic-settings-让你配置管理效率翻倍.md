@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.1KB | `entities/还在手写-osgetenvpydantic-settings-让你配置管理效率翻倍.md`
 
-# 还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍
+## 还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍
 #####  一个真实场景：凌晨三点，线上服务突然报错，翻遍日志发现是因为某个环境变量没传对类型，字符串当成了数字用。你盯着代码里散  落的  ` os.getenv  ` ，  想骂人却不知从何骂起。
 
 ## 相关实体

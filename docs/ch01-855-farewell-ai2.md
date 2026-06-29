@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 1.3KB | `entities/farewell-ai2.md`
 
-# Farewell Ai2
+## Farewell Ai2
 
 ## 深度分析
 

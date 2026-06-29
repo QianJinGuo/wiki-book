@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/outlook-ai-agent-aws-fargate-claude-agent-sdk.md`
 
-# 用 AI Agent 自动化日常办公工作流 — 在 AWS 上构建 Outlook 邮件助手
+## 用 AI Agent 自动化日常办公工作流 — 在 AWS 上构建 Outlook 邮件助手
 
 > **Background**: 中国区企业的 AI Agent 办公自动化方案。Agent 运行时基于 Claude Agent SDK 部署在 AWS Fargate，Skill 文件描述业务流程，MCP 封装外部系统，模型层通过硅基流动 SiliconFlow 接入（Bedrock 在中国区尚未提供）。
 

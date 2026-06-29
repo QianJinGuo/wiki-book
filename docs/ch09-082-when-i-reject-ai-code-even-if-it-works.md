@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/when-i-reject-ai-code-even-if-it-works-vinibrasil.md`
 
-# When I reject AI code even if it works
+## When I reject AI code even if it works
 
 ## 摘要
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/karpathy-ai-agent-7-bits-value-decline.md`
 
-# Karpathy AI Agent（七）：bits 与程序员价值
+## Karpathy AI Agent（七）：bits 与程序员价值
 **作者**：AllenTang（架构师带你玩转AI）    
 **原始链接**：https://mp.weixin.qq.com/s/-EAqvaCnjY-dox3P8d8D7w    
 **系列**：Karpathy 怎么看 AI Agent（第七篇）    

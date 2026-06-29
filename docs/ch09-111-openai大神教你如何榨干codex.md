@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/openai-codex-jasonliu-maxxing-playbook.md`
 
-# OpenAI大神教你如何榨干Codex
+## OpenAI大神教你如何榨干Codex
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-codex-jasonliu-maxxing-playbook.md)
 

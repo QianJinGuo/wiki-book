@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/bagel-fleet-secret-scanning-dev-workstation-2026.md`
 
-# bagel — Fleet 级 Secret Scanning 守护开发工作站
+## bagel — Fleet 级 Secret Scanning 守护开发工作站
 
 > **Background**: RecycleBin.zip 2026-05-25 长文，介绍其开源的 `bagel` 工具如何把 secret scanning 从 CI 边界检查升级为开发机 file system daemon 级实时防护，并针对 2026 年新出现的 AI 编程助手 IDE plugin 风险做专门覆盖。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 7.7KB | `entities/claude-opus-48-system-card-analysis.md`
 
-# Claude Opus 4.8 系统卡片深度分析
+## Claude Opus 4.8 系统卡片深度分析
 
 > **Background**: 本文档基于对外部技术来源的评分入库建立，v×c=9×9=81。
 

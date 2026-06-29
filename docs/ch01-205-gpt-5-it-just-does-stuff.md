@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.5KB | `entities/gpt-5-it-just-does-stuff.md`
 
-# GPT-5: It Just Does Stuff
+## GPT-5: It Just Does Stuff
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-5-it-just-does-stuff.md)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.5KB | `entities/whats-new-with-vsphere-9-1.md`
 
-# vSphere in VCF 9.1 新特性解析
+## vSphere in VCF 9.1 新特性解析
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/whats-new-with-vsphere-9-1.md)
 

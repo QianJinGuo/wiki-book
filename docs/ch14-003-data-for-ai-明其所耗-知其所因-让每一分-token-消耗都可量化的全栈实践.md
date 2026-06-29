@@ -10,7 +10,7 @@ feed_name: AWS China Blog
 source_published: 2026-05-27T07:12:57Z
 ---
 
-# Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
+## Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 
 摘要：本文是”解决 Agentic AI 应用 Token 爆炸问题”系列的第四篇，聚焦可观测性（Observability）。前三篇分别介绍了 Token 爆炸的根本原因、记忆管理优化和 Skill 检索优化。本篇从 OpenClaw 的成本可观测性现状出发，梳理社区主流方案，并结合亚马逊云科技全栈能力给出经过实测验证的落地路径。
 

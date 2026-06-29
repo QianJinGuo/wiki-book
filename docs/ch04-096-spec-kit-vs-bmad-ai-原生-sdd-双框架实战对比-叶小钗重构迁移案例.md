@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.0KB | `entities/spec-kit-bmad-sdd-practice-yexiaocha.md`
 
-# Spec-Kit vs BMAD：AI 原生 SDD 双框架实战对比（叶小钗重构迁移案例）
+## Spec-Kit vs BMAD：AI 原生 SDD 双框架实战对比（叶小钗重构迁移案例）
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spec-kit-bmad-sdd-practice-yexiaocha.md)
 

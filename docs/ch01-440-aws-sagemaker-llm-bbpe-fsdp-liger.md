@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/aws-sagemaker-azerbaijani-lm.md`
 
-# AWS SageMaker 阿塞拜疆语 LLM 训练：BBPE 分词 + FSDP + Liger 三阶段方案
+## AWS SageMaker 阿塞拜疆语 LLM 训练：BBPE 分词 + FSDP + Liger 三阶段方案
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-sagemaker-azerbaijani-lm.md)
 

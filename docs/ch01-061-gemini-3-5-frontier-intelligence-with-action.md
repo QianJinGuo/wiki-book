@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.7KB | `entities/gemini-3-5-frontier-intelligence-with-action.md`
 
-# Gemini 3.5: frontier intelligence with action
+## Gemini 3.5: frontier intelligence with action
 
 ## 深度分析
 
@@ -17,7 +17,7 @@ fetched: 2026-05-24T00:58:30.206918
 fetcher: trafilatura
 ---
 
-# Gemini 3.5: frontier intelligence with action
+## Gemini 3.5: frontier intelligence with action
 
 Gemini 3.5: frontier intelligence with action
 Today, we’re introducing Gemini 3.5, our latest family of models combining frontier intelligence with action. This represents a major leap forward in building more capable, intelligent agents. We’re kicking off the series by releasing 3.5 Flash. It delivers frontier performance for agents and coding, excelling at complex long-horizon tasks that deliver real-world utility.

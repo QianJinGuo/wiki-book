@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.1KB | `entities/gstack-ai-workflow.md`
 
-# gstack
+## gstack
 > YC总裁Garry Tan开源的AI协作开发工作流工具，把Claude Code变成可管理的虚拟工程团队。
 
 ## 基本信息

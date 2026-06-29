@@ -75,13 +75,13 @@ DEFAULT_FAILURE_LIMIT = 2  # 连续失败两次就 blocked
 
 ```python
 
-# harness-auto-maintain.py 第 198-200 行
+## harness-auto-maintain.py 第 198-200 行
 result2 = subprocess.run(
     ["sqlite3", str(KANBAN_DB),
      "SELECT MIN(updated_at) FROM tasks WHERE status='running';"]
 )
 
-# 问题：tasks 表根本没有 updated_at 列
+## 问题：tasks 表根本没有 updated_at 列
 ```
 
 这个查询每次都返回 NULL，「检测 worker 是否超时」的逻辑从一开始就是摆设。

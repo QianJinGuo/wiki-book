@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/skillx-zhejiang-university.md`
 
-# SkillX: Automatically Constructing Skill Knowledge Bases for Agents
+## SkillX: Automatically Constructing Skill Knowledge Bases for Agents
 浙大提出 SkillX：层次化技能库驱动的可复用 Agent 学习
 本工作提出 SkillX，一个自动构建分层技能知识库的框架，通过将轨迹抽象为多级技能，实现跨模型、跨任务的高效经验复用与泛化能力提升。
 当前基于经验学习的智能体方法存在三大核心瓶颈：

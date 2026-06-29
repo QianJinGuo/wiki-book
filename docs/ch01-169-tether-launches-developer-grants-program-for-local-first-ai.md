@@ -5,7 +5,7 @@
 > 📊 Level ⭐ | 2.8KB | `entities/tether-launches-developer-grants-program-for-local-first-ai-.md`
 
 > -> 原文存档
-# Tether launches developer grants program for local-first AI and payments infrastructure
+## Tether launches developer grants program for local-first AI and payments infrastructure
 > 来源：原文存档
 ## 核心要点
 - Tether 推出开发者资助计划，$1,500–$4,000/项，无总额上限

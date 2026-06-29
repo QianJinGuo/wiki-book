@@ -6,7 +6,7 @@
 
 [Claude Design Skill Web Design Engineer](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-design-skill-web-design-engineer.md)
 
-# 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师
+## 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师
 > source: https://mp.weixin.qq.com/s/sffWcLKPkXob2STrhkYBYg
 > author: ConardLi，code秘密花园
 > date: 2026-04-22

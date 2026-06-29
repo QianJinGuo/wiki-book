@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 8.1KB | `entities/what-figma-made-visible.md`
 
-# What Figma Made Visible
+## What Figma Made Visible
 
 ## 摘要
 

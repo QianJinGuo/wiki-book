@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/aliyun-cloud-native-api-gateway-gateway-api-guide.md`
 
-# 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引
+## 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-cloud-native-api-gateway-gateway-api-guide.md)
 

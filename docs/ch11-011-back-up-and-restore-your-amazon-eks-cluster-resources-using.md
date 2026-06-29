@@ -211,7 +211,7 @@ Restart Velero and verify storage locations are available.
 kubectl rollout restart deployment/velero -n velero
 kubectl get backupstoragelocation -n velero
 
-# Expected: PHASE=Available
+## Expected: PHASE=Available
 ```
 Code
 
@@ -321,7 +321,7 @@ After a couple of minutes, confirm the backup completed.
 ```
 kubectl describe backup backup-myprimary -n velero
 
-# Look for Phase: Completed
+## Look for Phase: Completed
 ```
 Code
 
