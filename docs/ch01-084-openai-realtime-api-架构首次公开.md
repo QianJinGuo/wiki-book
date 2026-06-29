@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 5.8KB | `entities/openai-realtime-api-architecture.md`
 
-# OpenAI Realtime API 架构首次公开
+## OpenAI Realtime API 架构首次公开
 > **来源**: OpenAI Technical Blog
 > **URL**: https://mp.weixin.qq.com/s/bNx5ojRYJw0HkKSjRiLLVQ
 > **SHA256**: f60f5255f7c8d3b2438625f60daf1e1d2cb4792da5ac17e925ac9fa83d7e0284

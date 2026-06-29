@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 13.8KB | `entities/how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.md`
 
-# How a Mid-tier Enterprise SaaS Provider Automates Cloud Support
+## How a Mid-tier Enterprise SaaS Provider Automates Cloud Support
 
 > **Summary**: 中型企业SaaS提供商使用Amazon Bedrock实现云端支持自动化的实践案例
 
 ## 核心内容
 
-# How a Mid-Tier Enterprise SaaS Provider Automates Cloud Support Triage
+## How a Mid-Tier Enterprise SaaS Provider Automates Cloud Support Triage
 
 Mid-tier SaaS automates cloud support triage with a 5-agent workflow, boosting ticket validation, routing, and SLA compliance in enterprise cloud support.
 

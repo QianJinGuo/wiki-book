@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md`
 
-# Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向
+## Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md)
 

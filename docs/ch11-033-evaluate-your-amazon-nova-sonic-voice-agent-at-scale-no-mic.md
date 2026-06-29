@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐⭐ | 14.5KB | `entities/evaluate-amazon-nova-sonic-voice-agent-scale-no-mic.md`
 
-# Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required
+## Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required
 
 > **Source archive**: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-micr.md)
 
-# Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required
+## Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required
 
 Voice agents are transforming how businesses interact with customers, handling appointment bookings, order inquiries, account management, and more through natural spoken conversation. But as these agents grow more capable, a fundamental challenge emerges: how do you test them?
 

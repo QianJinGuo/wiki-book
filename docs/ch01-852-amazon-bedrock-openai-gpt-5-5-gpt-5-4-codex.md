@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 1.6KB | `entities/开始在-amazon-bedrock-上使用-openai-gpt-55gpt-54-模型和-codex.md`
 
-# 开始在 Amazon Bedrock 上使用 OpenAI GPT-5.5、GPT-5.4 模型和 Codex
+## 开始在 Amazon Bedrock 上使用 OpenAI GPT-5.5、GPT-5.4 模型和 Codex
 
 → [原文存档](raw/rss-inbox/开始在-amazon-bedrock-上使用-openai-gpt-55gpt-54-模型和-codex.md)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.2KB | `entities/agentic-code-review-addyosmani.md`
 
-# Agentic Code Review
+## Agentic Code Review
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-code-review-addyosmani.md)
 

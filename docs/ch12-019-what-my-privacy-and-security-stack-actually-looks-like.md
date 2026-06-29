@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.1KB | `entities/what-my-privacy-and-security-stack-actually-looks-like.md`
 
-# What My Privacy and Security Stack Actually Looks Like
+## What My Privacy and Security Stack Actually Looks Like
 
 ## 摘要
 

@@ -6,7 +6,7 @@
 
 [Gitnexus Ai Zhi Neng Ti Kai Fa Dai Ma Zhi Shi Ku](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gitnexus-ai-zhi-neng-ti-kai-fa-dai-ma-zhi-shi-ku.md)
 
-# 打造 AI 智能体专属的代码知识库：GitNexus 完整上手攻略
+## 打造 AI 智能体专属的代码知识库：GitNexus 完整上手攻略
 AI 编码工具发展到今天，已经不只是帮你补全几行代码了。像 Claude Code、Cursor、 Codex 这类工具，正在慢慢变成真正能参与开发流程的「搭档」。但在真实项目里，一个问题会越来越明显：  ** AI 不是不会写代码，而是经常看不全代码。  **
 它也许能看懂当前文件，却不知道一个函数还被哪些地方调用；它可能完成了一次重构，却漏掉了某个跨模块依赖；有时候甚至只是改了一个不起眼的返回值，最后却影响了后面整条业务流程。
 GitNexus 想解决的，正是这个问题。它会先把代码库整理成一张「知识图谱」，提前分析依赖关系、调用链、功能聚类和执行流，再通过 MCP、CLI、Web UI 等方式交给 AI Agent 使用。

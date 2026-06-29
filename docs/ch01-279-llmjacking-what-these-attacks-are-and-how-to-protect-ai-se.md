@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.7KB | `entities/llm-raiders-private-ai-server.md`
 
-# LLMjacking: what these attacks are, and how to protect AI servers
+## LLMjacking: what these attacks are, and how to protect AI servers
 AI security covers more than just data theft prevention, restricting [rogue AI agents](https://www.kaspersky.com/blog/moltbot-enterprise-risk-management/55317/), or stopping assistants from giving harmful advice. A relatively simple but rapidly scaling threat has emerged: attempts to hijack computational power and exploit someone else's neural network for personal gain. This is known as LLMjacking. With AI compute costs widely predicted to [surge dramatically](https://oplexa.com/ai-inference-cost-crisis-2026/), the number of attackers driven by these motives is poised to grow. Consequently, when deploying proprietary AI servers and their supporting ecosystems like [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) or [MCP](https://en.wikipedia.org/wiki/Model_Context_Protocol), it's critical to establish rigorous security measures from day one.
 
 ## Statistics from a honeypot

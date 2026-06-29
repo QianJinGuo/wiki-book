@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/agentcore-managed-harness.md`
 
-# Harness工程火遍硅谷，AgentCore今天交卷!
+## Harness工程火遍硅谷，AgentCore今天交卷!
 
 **Harness = 模型之外的一切**：编排逻辑、执行环境、工具连接、状态管理、身份认证、可观测性。
 

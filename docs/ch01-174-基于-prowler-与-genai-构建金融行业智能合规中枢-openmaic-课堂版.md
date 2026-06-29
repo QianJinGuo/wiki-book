@@ -2,9 +2,9 @@
 
 ## Ch01.174 基于 Prowler 与 GenAI 构建金融行业智能合规中枢 — OpenMAIC 课堂版
 
-> 📊 Level ⭐⭐ | 26.4KB | `entities/基于-prowler-与-genai-构建金融行业智能合规中枢/classroom.md`
+> 📊 Level ⭐⭐ | 26.4KB | `entities/基于-prowler-与-genai-构建金融行业智能合规中枢.md`
 
-# 基于 Prowler 与 GenAI 构建金融行业智能合规中枢
+## 基于 Prowler 与 GenAI 构建金融行业智能合规中枢
 
 > 来源：OpenMAIC 批量生成 ·  · dir=`rgeB6EDq_Z___-prowler-_-genai-____________` · 场景数=9
 > 播放地址：`/classroom/rgeB6EDq_Z`

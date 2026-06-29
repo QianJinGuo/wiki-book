@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/agent-interview-7-capabilities.md`
 
-# 被裁了想转 AI Agent？先看面试官到底在筛你哪 7 样东西
+## 被裁了想转 AI Agent？先看面试官到底在筛你哪 7 样东西
 > 原文由 Seven（公众号「LLM大模型Seven」）发布于 2026-05-04。
 > 从被裁焦虑到 Agent 面经，三层能力模型 + 7 个考点 + 30 天补课路径。
 

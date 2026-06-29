@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.6KB | `entities/protocol-h-hierarchical-agentic-rag-enterprise.md`
 
-# protocol-h-hierarchical-agentic-rag-enterprise
+## protocol-h-hierarchical-agentic-rag-enterprise
 > 原文: https://mp.weixin.qq.com/s/P-MnmnREgtiOq-DbHfDuVA
 > Author: Abhijit Ubale (InfoQ)
 > Score: value=6, confidence=8, product=48 ≥ 49 → PASS

@@ -11,11 +11,11 @@
 ```python
 import logging
 
-# 创建 logger
+## 创建 logger
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-# 创建文件 handler
+## 创建文件 handler
 handler = logging.FileHandler("app.log")
 formatter = logging.Formatter(
     "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
@@ -23,7 +23,7 @@ formatter = logging.Formatter(
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
-# 使用
+## 使用
 def process_order(order_id):
     logger.info("Processing order %s", order_id)
     try:
@@ -77,7 +77,7 @@ except Exception:
 ### 上下文绑定，告别参数传递
 ```python
 
-# 绑定 request_id
+## 绑定 request_id
 request_logger = logger.bind(request_id="req_123")
 request_logger.info("Incoming request")  # 自动包含 request_id
 ```
@@ -134,7 +134,7 @@ logger.add(
 )
 logger.info("User login", user_id=42, source="web")
 
-# 输出: {"time": "2026-03-21T10:00:00", "level": "INFO", "message": "User login", "user_id": 42, "source": "web"}
+## 输出: {"time": "2026-03-21T10:00:00", "level": "INFO", "message": "User login", "user_id": 42, "source": "web"}
 ```
 不需要手动构造字典，`serialize=True` 自动把额外参数转成 JSON 字段，完美对接 ELK、Loki 等日志系统。
 
@@ -210,7 +210,7 @@ logger.add(
     retention="7 days"
 )
 
-# 中间件绑定 request_id
+## 中间件绑定 request_id
 @app.middleware("http")
 async def log_request(request: Request, call_next):
     request_id = request.headers.get("X-Request-ID", str(uuid.uuid4()))
@@ -228,12 +228,12 @@ async def log_request(request: Request, call_next):
 ### 1. 替换调用
 ```python
 
-# 之前
+## 之前
 import logging
 logger = logging.getLogger(__name__)
 logger.info("Processing %s", order_id)
 
-# 之后
+## 之后
 from loguru import logger
 logger.info("Processing {}", order_id)  # 注意格式变化
 ```
@@ -248,7 +248,7 @@ class InterceptHandler(logging.Handler):
         level = logger.level(record.levelname).name
         logger.log(level, record.getMessage())
 
-# 全局拦截
+## 全局拦截
 logging.basicConfig(handlers=[InterceptHandler()], level=0)
 ```
 

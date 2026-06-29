@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/agent-skills-vs-coze-dify-n8n-lowcode-yexiaocha.md`
 
-# Agent Skills vs Workflow低代码平台：选型分析
+## Agent Skills vs Workflow低代码平台：选型分析
 叶小钗，HR简历筛选案例对比Skills vs Workflow实现路径。核心论断：Skill只是Workflow的另一种表达（新瓶装旧酒）；Skills不会淘汰Coze/Dify，但会倒逼升级；企业选型看场景（个人→Skills，生产→Workflow）；最终竞争本质是业务KnowHow承载方式，不是工具形态。
 
 ## 两种实现路径对比

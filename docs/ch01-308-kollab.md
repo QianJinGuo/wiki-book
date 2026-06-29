@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.5KB | `entities/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md`
 
-# **一、关于 Kollab**
+## **一、关于 Kollab**
 
 ## 深度分析
 
@@ -16,7 +16,7 @@ feed_name: AWS China Blog
 source_published: 2026-05-29T10:05:24Z
 ---
 
-# 对抗 Agent 遗忘：Kollab 基于Amazon Bedrock AgentCore 的团队AI工作空间实践
+## 对抗 Agent 遗忘：Kollab 基于Amazon Bedrock AgentCore 的团队AI工作空间实践
 
 摘要：Kollab 是团队共享 AI 工作空间。本文介绍如何结合 Amazon Bedrock AgentCore 和 S3 构建持久化工作空间,让 Agent 任务跨 Runtime 续跑。
 

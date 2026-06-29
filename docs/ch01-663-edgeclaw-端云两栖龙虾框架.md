@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/edgeclaw-openbmb.md`
 
-# EdgeClaw
+## EdgeClaw
 > 面壁智能联合清华大学、OpenBMB社区开源的Agent框架，"端云两栖"架构。
 
 ## 基本信息

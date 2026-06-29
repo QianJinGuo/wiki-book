@@ -4,8 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md`
 
-[Skip to content](https://www.techzine.eu/blogs/analytics/141272/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform/#main)
-[Techzine Global](https://www.techzine.eu/)
+[[Techzine Global](https://www.techzine.eu/)
 
 *   [Home](https://www.techzine.eu/)
 *   [Newsletter](http://thehackernews.com/2026/05/cpanel-whm-patch-3-new-vulnerabilities.html#email-outer)

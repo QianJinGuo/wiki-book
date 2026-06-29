@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/how-semgrep-cut-taint-analysis-time-by-75.md`
 
-# How Semgrep Cut Taint Analysis Time by 75%
+## How Semgrep Cut Taint Analysis Time by 75%
 
 Markdown Content:
 _Semgrep Pro Engine 1.158.0 and onwards is now shipping a redesigned taint analysis engine resulting in up to 75% speedups on full scans. This is the second in a three part series on improving the performance of Semgrep._

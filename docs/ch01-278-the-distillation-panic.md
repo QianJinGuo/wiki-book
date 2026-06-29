@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.7KB | `entities/the-distillation-panic.md`
 
-# The distillation panic
+## The distillation panic
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-distillation-panic.md)
 

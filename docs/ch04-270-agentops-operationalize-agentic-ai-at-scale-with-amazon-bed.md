@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.1KB | `entities/agentops-operationalize-agentic-ai-amazon-bedrock.md`
 
-# AgentOps: Operationalize agentic AI at scale with Amazon Bedrock
+## AgentOps: Operationalize agentic AI at scale with Amazon Bedrock
 
 ## Conclusion
 

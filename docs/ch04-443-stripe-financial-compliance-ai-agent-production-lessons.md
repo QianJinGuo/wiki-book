@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/stripe-financial-compliance-ai-agent-production-lessons.md`
 
-# Stripe Financial Compliance AI Agent: Production Lessons
+## Stripe Financial Compliance AI Agent: Production Lessons
 
 Stripe 在 AWS Bedrock 上构建生产级合规审查 Agent 系统，处理年 $1.4 万亿支付量的合规审查需求。核心成果：审查处理时间减少 26%，帮助率超 96%，人类审查者保持最终决策权。
 

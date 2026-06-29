@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 31.0KB | `entities/claude-code-large-codebase-harness-configuration.md`
 
-# Claude Code 大型代码库套具配置
+## Claude Code 大型代码库套具配置
 
 ## 核心概述
 

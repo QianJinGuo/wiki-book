@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/hackernews-ai-coding-why-python-20260513.md`
 
-# Hacker News 热帖：AI 会写代码了，为啥还要用 Python？
+## Hacker News 热帖：AI 会写代码了，为啥还要用 Python？
 当 AI 能够理解自然语言并生成可执行代码时，编程语言的角色正在经历百年未有之重塑——它不再是人与机器沟通的桥梁，而是人与 AI 协作的契约。
 2026 年 5 月 12 日，一篇题为 "If AI writes your code, why use Python?" 的文章在 Hacker News 上引发剧烈讨论，迅速攀升至 526 分，评论数突破 568 条，成为当日最热门的技术话题之一。
 文章核心论点直击灵魂：如果 AI 已经能够根据自然语言描述生成完整的、可运行的代码，我们是否还需要学习和使用 Python 这类编程语言？

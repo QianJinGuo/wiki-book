@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/autobrowse-browser-agent-persistent-skills-sense-ai.md`
 
-# 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
+## 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
 
 ## 相关实体
 
@@ -21,7 +21,7 @@
 > **Author**: Sense AI / 深思SenseAI
 > **Date**: 2026-05-08
 > **Category**: Browser Agent / Memory / Skills
-# 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
+## 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
 ## 核心问题：探索税（Discovery Tax）
 Browserbase 的 Kyle Jeong 提出的概念。
 3. 浏览器 Agent 每次会话结束，学到的一切都跟着蒸发。

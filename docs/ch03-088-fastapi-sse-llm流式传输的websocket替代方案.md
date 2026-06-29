@@ -22,7 +22,7 @@
 ```python  
 from fastapi.responses import StreamingResponse  
 
-# 关键响应头
+## 关键响应头
 headers = {  
     "X-Accel-Buffering": "no",  # 禁止nginx等代理缓冲  
     "Cache-Control": "no-cache",  

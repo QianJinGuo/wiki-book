@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/cloud-agent-development-environments-1778979924.md`
 
-# Cloud Agent Development Environments — Cursor 云端 Agent 开发环境
+## Cloud Agent Development Environments — Cursor 云端 Agent 开发环境
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cloud-agent-development-environments-1778979924.md)
 

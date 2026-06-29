@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 10.2KB | `entities/anthropic-联创2028-年实现-ai-自我构建的概率超过-60.md`
 
-# Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%
+## Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%
 Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称：  ** AI 系统自己迭代改造自己，可能就在两年后。  **
 
 ## 相关实体

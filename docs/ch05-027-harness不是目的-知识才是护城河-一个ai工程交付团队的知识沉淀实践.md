@@ -6,8 +6,8 @@
 
 [Tencent Ai Team Knowledge Mgmt Harness Moat](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tencent-ai-team-knowledge-mgmt-harness-moat.md)
 
-# "Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践"
-# Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践
+## "Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践"
+## Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践
 ## 核心论点
 **"工作流只是管道，知识才是流过管道的活水。"**
 

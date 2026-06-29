@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/claude-code-context-engineering-anthropic-thariq.md`
 
-# Claude Code 上下文工程 —— Anthropic 团队的工程实践
+## Claude Code 上下文工程 —— Anthropic 团队的工程实践
 
 ## 相关实体
 

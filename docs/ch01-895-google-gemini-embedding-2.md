@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemini-embedding-2-multimodal-unified-vector-hyman.md)
 
-# Gemini Embedding 2：全模态统一向量空间
+## Gemini Embedding 2：全模态统一向量空间
 
 ## 一句话
 

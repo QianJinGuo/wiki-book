@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/nico-25-skills-workflow-asset-ruofei-analysis.md`
 
-# 25个Skills详解：从生产力清单到AI工作流资产
+## 25个Skills详解：从生产力清单到AI工作流资产
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nico-25-skills-workflow-asset-ruofei-analysis.md)
 

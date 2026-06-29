@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/www-sans-org-ai-in-cybersecurity-training-resources-sans-instit.md`
 
-# SANS Institute AI 安全培训体系
+## SANS Institute AI 安全培训体系
 
 ## 摘要
 

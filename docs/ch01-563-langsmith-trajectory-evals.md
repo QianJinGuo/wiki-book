@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/langsmith-trajectory-evals.md`
 
-# LangSmith Trajectory Evaluations
+## LangSmith Trajectory Evaluations
 
 LangSmith Trajectory Evaluations 是一种评估 AI Agent 行为的方法，特别适合具有明确步骤流程和决策路径的复杂工作流 。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.3KB | `entities/wow-harness-v3-governance-protocol.md`
 
-# wow-harness v3：AI 开发的治理协议
+## wow-harness v3：AI 开发的治理协议
 > "协议比能力重要，治理比智能重要，长期连贯性比单次质量重要。" —— 张晨曦（Nature），通向惊喜科技创始人
 
 **wow-harness v3** 是一份面向 **跨 session 一致性** 的 AI 开发治理协议设计。它**不替代 Claude Code**，跑在 Claude Code 之上，把"一次 session 怎么高效执行"扩展为"多个 session 之间怎么保持组织级一致"。设计文档约 50,000 行，21 个模块，经历 6 轮版本迭代。

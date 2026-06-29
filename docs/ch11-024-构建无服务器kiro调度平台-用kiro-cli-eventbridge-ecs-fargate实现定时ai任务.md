@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.9KB | `entities/kiro-job-scheduler-eventbridge-ecs-fargate.md`
 
-# 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
+## 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
 

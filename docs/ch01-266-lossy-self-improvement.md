@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.2KB | `entities/lossy-self-improvement.md`
 
-# Lossy self-improvement
+## Lossy self-improvement
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lossy-self-improvement.md)
 

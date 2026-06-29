@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.6KB | `entities/claude-code-multi-agent-harness-source-analysis.md`
 
-# Claude Code 多 Agent Harness 源码拆解
+## Claude Code 多 Agent Harness 源码拆解
 
 ## 核心结论
 

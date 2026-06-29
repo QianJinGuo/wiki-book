@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/5237660.md`
 
-# 主权云仅中美可行：Gartner 分析师的悲观预判
+## 主权云仅中美可行：Gartner 分析师的悲观预判
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5237660.md)
 

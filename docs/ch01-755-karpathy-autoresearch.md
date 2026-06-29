@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/karpathy-autoresearch-software-development-niaowo.md`
 
-# 我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了
+## 我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-autoresearch-software-development-niaowo.md)
 

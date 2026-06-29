@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/openclaw-multi-7-ecs-fargate-graviton.md`
 
-# OpenClaw 多租户系列 #7 — 基于 ECS Fargate + Graviton 的轻量级企业 AI Agent 平台
+## OpenClaw 多租户系列 #7 — 基于 ECS Fargate + Graviton 的轻量级企业 AI Agent 平台
 
 > 系列第 7 篇。前 6 篇覆盖 EKS + K8s、AgentCore Serverless、单 Agent、Serverless 改造路径等；本篇为 **ECS Fargate 变体**——面向无 K8s 能力的 2-5 人小团队、几到几十人租户规模的轻量级方案。
 

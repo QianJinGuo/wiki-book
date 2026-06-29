@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/interconnects-ai-p-open-and-closed-models-are-on-different.md`
 
-# Open and Closed Models Are on Different Exponentials
+## Open and Closed Models Are on Different Exponentials
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/interconnects-ai-p-open-and-closed-models-are-on-different.md)
 

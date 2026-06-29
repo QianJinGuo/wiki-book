@@ -6,7 +6,7 @@
 
 [Ai Skill Evolution底层逻辑](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-skill-evolution底层逻辑.md)
 
-# 01—为什么你的 AI Skill 上线即翻车？一文搞懂 AI Skill 测评的底层逻辑
+## 01—为什么你的 AI Skill 上线即翻车？一文搞懂 AI Skill 测评的底层逻辑
 系列：AI Skill 测评体系从零到一（一）
 难度：入门
 适合读者：AI 产品经理、Prompt 工程师、对 LLM 应用质量感兴趣的开发者

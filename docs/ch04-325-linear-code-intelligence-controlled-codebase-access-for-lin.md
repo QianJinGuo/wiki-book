@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/2026-05-14-code-intelligence-1778979927.md`
 
-# Linear Code Intelligence: Controlled Codebase Access for Linear Agent
+## Linear Code Intelligence: Controlled Codebase Access for Linear Agent
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-05-14-code-intelligence-1778979927.md)
 

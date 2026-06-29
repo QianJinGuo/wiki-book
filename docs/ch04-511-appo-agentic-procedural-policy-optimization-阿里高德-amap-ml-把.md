@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 16.6KB | `entities/appo-agentic-procedural-policy-optimization-amap-ml-2026.md`
 
-# APPO：阿里高德 AMAP-ML 把 Agent RL 信用分配细化到每个决策点
+## APPO：阿里高德 AMAP-ML 把 Agent RL 信用分配细化到每个决策点
 
 > Paper: **APPO: Agentic Procedural Policy Optimization**
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/appo-agentic-procedural-policy-optimization-amap-ml-2026-06-16.md)

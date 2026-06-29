@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/aws-bedrock-agentcore-equipment-repair-assistant.md`
 
-# AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战
+## AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md)
 

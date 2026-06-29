@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/process-financial-documents-using-amazon-bedrock-data-automa.md`
 
-# Solution overview
+## Solution overview
 
 ## 深度分析
 
@@ -16,7 +16,7 @@ feed_name: AWS China ML
 source_published: 2026-05-27T21:28:53Z
 ---
 
-# Process financial documents using Amazon Bedrock Data Automation
+## Process financial documents using Amazon Bedrock Data Automation
 
 Financial institutions process thousands of documents daily, including tax forms, loan statements, and purchase orders. Each has a unique format, structure, and field names, making it challenging to create automation workflows using optical character recognition (OCR) software. [Amazon Bedrock Data Automation](<https://aws.amazon.com/bedrock/bda/>) (BDA) helps solve these challenges by automating the extraction, validation, and analysis of data from financial documents. BDA goes beyond simple OCR by using foundation models that can:
 

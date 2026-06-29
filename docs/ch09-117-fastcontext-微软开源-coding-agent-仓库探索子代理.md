@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/microsoft-fastcontext-coding-agent-explore-subagent-vibecoder.md`
 
-# FastContext（微软开源 Coding Agent 仓库探索子代理）
+## FastContext（微软开源 Coding Agent 仓库探索子代理）
 
 ## 核心定位
 

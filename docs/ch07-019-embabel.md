@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.5KB | `entities/embabel.md`
 
-# Embabel
+## Embabel
 > "这可能已经是'最后一代由人类主动选择的框架'了。以后越来越多的技术选型，都会由我们的工具替我们完成。" —— Rod Johnson（Spring 创造者，Embabel 创始人）
 
 **Embabel = Rod Johnson 2024 回归一线创业做的企业 AI Agent 框架**。核心用 **GOAP（Goal-Oriented-Action-Planning）寻路算法**（来自游戏 NPC）做**确定性规划**，让 LLM 嵌入可控、可解释、可审计的业务流程。Apache 2.0，0.3.5（4-6 周到 1.0），核心 Kotlin / 示例 Java。

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/harness-evolution-papers.md`
 
-# Harness进化论文
+## Harness进化论文
 > 微软M⋆（记忆Harness程序进化）和谷歌AutoHarness（代码Harness自动生成）两篇论文分析。
 
 ## 基本信息

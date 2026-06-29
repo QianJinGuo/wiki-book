@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/全球ai新王诞生anthropic估值冲爆12万亿首次反超openai.md`
 
-# 全球AI新王诞生！Anthropic估值冲爆1.2万亿，首次反超OpenAI
+## 全球AI新王诞生！Anthropic估值冲爆1.2万亿，首次反超OpenAI
 
 ## 相关实体
 

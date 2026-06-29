@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.7KB | `entities/amazon-quick-research-agentic-multi-source-citation.md`
 
-# Amazon Quick Research: Agentic Multi-Source Research Workflow with Citation Provenance and Versioned Revisions
+## Amazon Quick Research: Agentic Multi-Source Research Workflow with Citation Provenance and Versioned Revisions
 
 > 本文综合提炼自 AWS 的 **Amazon Quick Research** 在 rare cancer research（罕见癌症研究）的应用案例。核心是 agentic research workflow：**自然语言目标 → 拆解子主题 → 多源数据采集（web/PubMed/ClinicalTrials.gov/file uploads/Spaces）→ LLM 合成 → 带 inline 引用 + 可追溯 evidence chain 的报告 → 版本化修订**。
 

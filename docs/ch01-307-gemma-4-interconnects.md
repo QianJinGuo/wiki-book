@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.5KB | `entities/gemma-4-open-model-adoption-framework-interconnects.md`
 
-# Gemma 4 与开源模型成功标准 —— Interconnects 五维评估框架
+## Gemma 4 与开源模型成功标准 —— Interconnects 五维评估框架
 
 > **TL;DR**: Interconnects 作者（Nathan Lambert）2026-04-03 提出的开源模型成败评估框架：5 个维度（性能 + 国别 + 许可证 + 工具链成熟度 + 微调可行性）共同决定模型是否成功。Gemma 4 通过采用 Apache 2.0 + 5B/8B/26B/31B 多尺寸 + 31B 性能对齐 Qwen 3.5 27B 三个关键决策，"有可能成为美国开源阵营的下一个标杆"。
 

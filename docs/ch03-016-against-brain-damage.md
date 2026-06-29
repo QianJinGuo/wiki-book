@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 8.3KB | `entities/against-brain-damage.md`
 
-# Against "Brain Damage"
+## Against "Brain Damage"
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/against-brain-damage.md)
 

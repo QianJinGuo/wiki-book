@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/fastlane-create-winning-short-form-content-in-seconds.md`
 
-# Fastlane | Create Winning Short-Form Content In Seconds
+## Fastlane | Create Winning Short-Form Content In Seconds
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastlane-create-winning-short-form-content-in-seconds.md)
 

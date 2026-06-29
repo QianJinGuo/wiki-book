@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 28.2KB | `entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md`
 
-# 深入理解 Claude Code 源码中的 Agent Harness 构建之道
+## 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 
 > 来源：微信公众号"技术极简主义"——对 Anthropic Claude Code 源码泄露事件的深度技术分析
 > 背景：2026 年 4 月，因 npm 打包未排除 `.map` 映射文件，1900+ TypeScript 文件、51 万行核心代码意外曝光

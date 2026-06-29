@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/kimi-work-300-agent-cluster-yin-john-agi-hunt.md`
 
-# Kimi 决定，要用 300 个 Agent 解救非程序员们
+## Kimi 决定，要用 300 个 Agent 解救非程序员们
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kimi-work-300-agent-cluster-yin-john-agi-hunt.md)
 

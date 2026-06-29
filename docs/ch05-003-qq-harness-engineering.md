@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 28.8KB | `entities/qq-music-harness-engineering-monorepo-microservices.md`
 
-# QQ音乐 Harness Engineering 实践（大仓多服务场景）
+## QQ音乐 Harness Engineering 实践（大仓多服务场景）
 
 ## 概述
 
@@ -249,17 +249,17 @@ TAPD 单 T12345
 ### 35 个 Slash Command
 
 ```bash
-# 需求生命周期
+## 需求生命周期
 /requirement:new / :continue / :next / :gate-check
 /req-task:list / start / context / done
 
-# Agentic
+## Agentic
 /agentic:code-review / :load-service / :note
 
-# 服务
+## 服务
 /service:deps / :onboard / :load-domain
 
-# 知识
+## 知识
 /knowledge:extract-experience / :generate-sop
 ```
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 22.2KB | `entities/anthropic-prompt-caching-claude-code-agihunt.md`
 
-# Anthropic 最新博客：Prompt Caching 是构建 Claude Code 的一切
+## Anthropic 最新博客：Prompt Caching 是构建 Claude Code 的一切
 原创 J0hn AGI Hunt
 2026年5月2日 21:30 北京
 Anthropic 的工程师们写了篇技术博客，标题是：构建 Claude Code 的经验教训：Prompt Caching 就是一切。

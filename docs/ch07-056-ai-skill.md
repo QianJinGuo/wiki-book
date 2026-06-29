@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/skill-engineering-ai-as-algorithm.md`
 
-# 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程
+## 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程
 
 **目标：把 Agent 当成一个算法来用。**
 给 Agent 输入，它给你指定格式的输出。中间推理过程不关心，但结果是确定的、可预期的。

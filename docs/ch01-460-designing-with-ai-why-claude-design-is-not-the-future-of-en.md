@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/penpot-claude-design-not-future-enterprise.md`
 
-# Designing with AI: Why Claude Design is not the future of enterprise design
+## Designing with AI: Why Claude Design is not the future of enterprise design
 
 > **来源**: [https://penpot.app/blog/designing-with-ai-why-claude-design-is-not-the-future-of-enterprise-design/](https://penpot.app/blog/designing-with-ai-why-claude-design-is-not-the-future-of-enterprise-design/)
 

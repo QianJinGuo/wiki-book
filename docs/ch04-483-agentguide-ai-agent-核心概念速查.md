@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/agent-guide-core-concepts-overview.md`
 
-# AgentGuide AI Agent 核心概念速查
+## AgentGuide AI Agent 核心概念速查
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-guide-core-concepts-overview.md)
 

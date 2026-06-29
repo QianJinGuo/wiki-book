@@ -6,7 +6,7 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-codex-super-computer-network-xinzhiyuan.md)
 
-# OpenAI秘密矩阵曝光！你的所有设备，被Codex连成一台超级电脑
+## OpenAI秘密矩阵曝光！你的所有设备，被Codex连成一台超级电脑
 来源：新智元 / ASI启示录
 
 ## 核心信息

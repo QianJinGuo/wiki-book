@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/5237660-1.md`
 
-# Sovereign cloud is only possible if you're Chinese or American: Gartner
+## Sovereign cloud is only possible if you're Chinese or American: Gartner
 
 Title: Sovereign cloud is only possible if you're Chinese or American: Gartner
 URL Source: https://www.theregister.com/off-prem/2026/05/11/sovereign-cloud-is-only-possible-if-youre-chinese-or-american-gartner/5237660

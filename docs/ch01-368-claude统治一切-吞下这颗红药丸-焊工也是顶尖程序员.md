@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-pilled-phenomenon-xinzhiyuan-2026.md)
 
-# Claude统治一切！吞下这颗红药丸，焊工也是顶尖程序员
+## Claude统治一切！吞下这颗红药丸，焊工也是顶尖程序员
 
 ## 什么是「Claude红丸化」
 

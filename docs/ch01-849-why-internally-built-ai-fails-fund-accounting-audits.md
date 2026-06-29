@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.9KB | `entities/ai-fails-fund-accounting-audits.md`
 
-# Why Internally-Built AI Fails Fund Accounting Audits
+## Why Internally-Built AI Fails Fund Accounting Audits
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-fails-fund-accounting-audits.md)
 

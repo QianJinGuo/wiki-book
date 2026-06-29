@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 19.5KB | `entities/trae-solo-work-feishu-bitable-pipeline-tutorial.md`
 
-# TRAE SOLO Work 模式 + 飞书多维表格：5 步搭建全自动作品采集系统
+## TRAE SOLO Work 模式 + 飞书多维表格：5 步搭建全自动作品采集系统
 
 ## 背景
 

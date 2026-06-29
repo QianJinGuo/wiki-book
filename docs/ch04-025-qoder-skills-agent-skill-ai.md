@@ -94,15 +94,15 @@ Skill 是开放标准，在以下环境中完全兼容：
 **三种安装方式**：
 ```bash
 
-# 方式 A：命令行安装（推荐，最快）
+## 方式 A：命令行安装（推荐，最快）
 npx skills add <skill-name>
 
-# 执行后按交互提示选择 Agent、级别（Global/Project）、copy 模式
-# 方式 B：手动放置文件
-# 用户级：~/.qoder/skills/
-# 项目级：<项目根目录>/.qoder/skills/
-# 方式 C：Qoder Quest 模式中用内置 Skill 生成
-# 直接对话："帮我创建一个 Skill，用于 [描述你的需求]"
+## 执行后按交互提示选择 Agent、级别（Global/Project）、copy 模式
+## 方式 B：手动放置文件
+## 用户级：~/.qoder/skills/
+## 项目级：<项目根目录>/.qoder/skills/
+## 方式 C：Qoder Quest 模式中用内置 Skill 生成
+## 直接对话："帮我创建一个 Skill，用于 [描述你的需求]"
 ```
 **验证安装**：在 Qoder 对话框输入 `/`，如果安装的 Skill 出现在联想列表中，说明安装成功。
 > ⚠️ **注意**：目前 Qoder Skills 不支持热更新，安装或修改 Skill 后，需要重启会话才能生效。

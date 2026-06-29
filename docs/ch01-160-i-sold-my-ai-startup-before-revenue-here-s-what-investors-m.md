@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.2KB | `entities/i-sold-my-ai-startup-before-revenue-here-s-what-investors-missed-and-founders-sh.md`
 
-# I Sold My AI Startup Before Revenue: Here’s What Investors Missed — And Founders Shouldn’t
+## I Sold My AI Startup Before Revenue: Here’s What Investors Missed — And Founders Shouldn’t
 
 Markdown Content:
 _By [Alexander Kardos-Nyheim](https://www.crunchbase.com/person/alexander-kardos-nyheim-d1ec)_

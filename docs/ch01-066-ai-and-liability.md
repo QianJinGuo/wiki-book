@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.9KB | `entities/06-ai-and-liability-html.md`
 
-# AI and Liability
+## AI and Liability
 
 > **来源**: [AI and Liability](https://schneier.com/blog/archives/2026/06/ai-and-liability.html)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/edgeclaw-bemit-lobster.md`
 
-# EdgeClaw：端云两栖龙虾框架
+## EdgeClaw：端云两栖龙虾框架
 
 面壁智能联合清华大学、OpenBMB社区开源的Agent框架，主打"端云两栖"——兼顾云端模型智商与本地模型忠诚。配套发布EdgeClaw Box硬件产品。
 GitHub: https://github.com/Openbmb/edgeclaw

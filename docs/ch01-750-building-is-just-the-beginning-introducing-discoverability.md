@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/lovable-building-is-just-the-beginning-introducing-discoverability.md`
 
-# Building is just the beginning: Introducing Discoverability | Lovable
+## Building is just the beginning: Introducing Discoverability | Lovable
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lovable-building-is-just-the-beginning-introducing-discoverability.md)
 
@@ -13,7 +13,7 @@
 Building is just the beginning: Introducing Discoverability | Lovable 涉及code领域的核心技术议题。
 ### 核心观点
 1. Markdown Content:
-# Building is just the beginning: Introducing Discoverability | Lovable
+## Building is just the beginning: Introducing Discoverability | Lovable
 Skip to main content
 [](https://lovable.
 2. dev/home)

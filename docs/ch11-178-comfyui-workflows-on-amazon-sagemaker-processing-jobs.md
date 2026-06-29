@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/comfyui-sagemaker-processing-workflows.md`
 
-# ComfyUI Workflows on Amazon SageMaker Processing Jobs
+## ComfyUI Workflows on Amazon SageMaker Processing Jobs
 
 > 在 SageMaker Processing Jobs 上运行 ComfyUI 工作流，实现企业级自动化内容生成。
 

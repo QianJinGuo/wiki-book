@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.6KB | `entities/eks-gpu-operator-custom-driver-cuda-workload.md`
 
-# 在 Amazon EKS 上使用 NVIDIA GPU Operator 管理自定义 GPU 驱动与 CUDA 工作负载
+## 在 Amazon EKS 上使用 NVIDIA GPU Operator 管理自定义 GPU 驱动与 CUDA 工作负载
 
 ## 三个独有贡献（不应合并到现有 entity）
 

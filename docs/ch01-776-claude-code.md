@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/claude-code-dynamic-workflows-jiqizhixin-9th-translation.md`
 
-# Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本）
+## Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本）
 
 ## 相关实体
 

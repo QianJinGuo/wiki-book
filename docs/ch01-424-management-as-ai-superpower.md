@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/management-as-ai-superpower.md`
 
-# Management as AI superpower
+## Management as AI superpower
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/management-as-ai-superpower.md)
 

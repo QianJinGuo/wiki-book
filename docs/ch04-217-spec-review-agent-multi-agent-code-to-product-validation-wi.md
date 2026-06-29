@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/spec-review-agent-baz-bedrock-agentcore-multi-agent.md`
 
-# Spec Review Agent: Multi-Agent Code-to-Product Validation with MCP + Browser Tool
+## Spec Review Agent: Multi-Agent Code-to-Product Validation with MCP + Browser Tool
 
 > 本文综合提炼自 Baz 公司（[baz.co](https://baz.co/)）构建的 **Spec Review Agent** —— 用 Amazon Bedrock + AgentCore 实现"代码-产品"全栈自动验证。核心架构：**Specification Subagent 解析 Figma/Jira 需求 → Implementation Subagent 用 Browser Tool 渲染 Preview Environment 做视觉/行为验证 → Report Generator 合并发现**。量化收益：**bugs 报告减少 50%、time-to-merge 提升 30-70%**。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/coze-3-0-local-agent-codex-claude-code-project.md`
 
-# 扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？
+## 扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？
 
 ## 相关实体
 

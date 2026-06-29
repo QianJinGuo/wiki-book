@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/strands-agents-high-performance-genai-systems.md`
 
-# Build high-performance generative AI systems with Strands Agents + NVIDIA NIM + Bedrock AgentCore
+## Build high-performance generative AI systems with Strands Agents + NVIDIA NIM + Bedrock AgentCore
 
 > **Background**: AWS 官方博客展示如何用 NVIDIA NIM (GPU 加速推理) + Strands Agents (多 Agent 编排) + Bedrock AgentCore (托管 runtime / 共享 memory / 可观测性) 构建生产级多 Agent 内容审核系统。
 

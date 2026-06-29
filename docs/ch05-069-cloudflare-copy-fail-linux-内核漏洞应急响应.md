@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/cloudflare-copy-fail-linux-kernel-vulnerability-mitigation.md`
 
-# Cloudflare Copy Fail Linux 内核漏洞应急响应
+## Cloudflare Copy Fail Linux 内核漏洞应急响应
 
 ## 概述
 

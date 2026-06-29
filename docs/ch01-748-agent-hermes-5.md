@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/hermes-agent-long-running-governance-five-cards-ruofei.md`
 
-# 长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡
+## 长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡
 
 ## 相关实体
 

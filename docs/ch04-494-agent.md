@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/taobao-product-domain-agent-architecture.md`
 
-# 万级实时推理的商品领域Agent实践思考和总结
+## 万级实时推理的商品领域Agent实践思考和总结
 
 ## 深度分析
 

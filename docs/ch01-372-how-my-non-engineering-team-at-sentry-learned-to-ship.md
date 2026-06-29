@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.6KB | `entities/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md`
 
-# How my non-engineering team at Sentry learned to ship
+## How my non-engineering team at Sentry learned to ship
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
 

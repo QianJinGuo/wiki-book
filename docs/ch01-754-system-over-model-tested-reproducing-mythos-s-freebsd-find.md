@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md`
 
-# System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Weight Models
+## System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Weight Models
 
 ## 相关实体
 - [unexpected lessons from an ai-assisted prototyping experimen](/ch01-033-unexpected-lessons-from-an-ai-assisted-prototyping-experimen/)

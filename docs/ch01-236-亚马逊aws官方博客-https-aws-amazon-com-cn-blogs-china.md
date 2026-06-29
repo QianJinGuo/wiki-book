@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.2KB | `entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md`
 
-# [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
+## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
 
 ## 深度分析
 
@@ -16,7 +16,7 @@ feed_name: AWS China Blog
 source_published: 2026-05-26T05:25:20Z
 ---
 
-# 滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践
+## 滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践
 
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
 

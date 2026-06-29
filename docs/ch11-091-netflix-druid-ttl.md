@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/netflix-druid-interval-aware-caching.md`
 
-# Netflix Druid 区间感知缓存：指数 TTL + 分桶查询去重
+## Netflix Druid 区间感知缓存：指数 TTL + 分桶查询去重
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/netflix-druid-interval-aware-caching.md)
 

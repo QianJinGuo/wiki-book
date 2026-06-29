@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/karpathy-llm-full-stack-course-2026井底之硅.md`
 
-# Karpathy 3.5 小时免费「LLM 全栈课」再登 X 热榜，640 万播放、11 万点赞
+## Karpathy 3.5 小时免费「LLM 全栈课」再登 X 热榜，640 万播放、11 万点赞
 
 ## 核心结论
 

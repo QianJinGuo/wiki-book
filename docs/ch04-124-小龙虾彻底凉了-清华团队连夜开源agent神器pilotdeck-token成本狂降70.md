@@ -7,7 +7,7 @@
 > -> [第 1 原文存档 (新智元 ASI启示录)](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pilotdeck-agent-os-openbmb-tsinghua.md)
 > -> [第 2 原文存档 (数据派THU 转发新智元)](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pilotdeck-data派thu-2026.md)
 
-# PilotDeck：清华系 Agent 操作系统
+## PilotDeck：清华系 Agent 操作系统
 
 ## 一句话
 

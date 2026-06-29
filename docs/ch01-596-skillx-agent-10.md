@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/skillx-zhejiang-university-hyman.md`
 
-# 浙大开源SkillX：全自动构建Agent技能知识库，即插即用提升10%性能
+## 浙大开源SkillX：全自动构建Agent技能知识库，即插即用提升10%性能
 浙江大学ZJUNLP团队提出SkillX框架，从Agent执行轨迹中自动提炼「规划-功能-原子」三级技能知识库，插到弱模型上直接提升约10%任务成功率，且跨环境可复用。LLM Agent已能完成API调用、网页导航、数据分析等复杂长程任务。但绝大多数Agent每次接到新任务都从零开始，依赖即时推理或少量示例，既昂贵又脆弱。
 
 - **孤立学习**：每个Agent独立探索，提取相似经验，大量重复劳动

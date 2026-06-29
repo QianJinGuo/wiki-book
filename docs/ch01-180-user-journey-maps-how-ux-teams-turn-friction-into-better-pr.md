@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 29.0KB | `entities/user-journey-map.md`
 
-# "User Journey Maps: How UX Teams Turn Friction Into Better Products"
+## "User Journey Maps: How UX Teams Turn Friction Into Better Products"
 URL Source: https://uxcrush.com/user-journey-map
 Published Time: 2026-05-02T21:03:16.777Z
 Markdown Content:

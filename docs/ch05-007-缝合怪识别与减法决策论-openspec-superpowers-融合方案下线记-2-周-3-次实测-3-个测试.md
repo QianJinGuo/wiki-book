@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 26.6KB | `entities/openspec-superpowers-decommissioning-frankenstein-three-questions-shuge-2026-06-18.md`
 
-# 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记
+## 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记
 
 > **来源**：术哥（shuge）Spec-Driven AI 编程系列第四篇（反思篇），2026-06-18
 > **核心命题**：**"收藏过万的融合方案 ≠ 工程有效方案"。好的工具链不是收集出来的，是删出来的。** 本文给出**缝合怪的 3 个识别测试** + **加法 vs 减法的传播学反思** + **Plan Mode + Superpowers + ASD 最终方案**的完整决策过程。

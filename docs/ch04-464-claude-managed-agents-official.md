@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-managed-agents-official.md)
 
-# Claude Managed Agents 官方平台发布
+## Claude Managed Agents 官方平台发布
 Anthropic Claude Managed Agents 官方平台发布，Harness 架构 + 企业级安全 + 多智能体编排
 
 ## 摘要

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/napkin-inference-cost-injuly-2026.md`
 
-# Inference cost at scale with napkin math
+## Inference cost at scale with napkin math
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/napkin-inference-cost-injuly-2026.md)
 

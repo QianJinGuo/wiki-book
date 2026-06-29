@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/volcengine-data-agent-intelligent-query-agent.md`
 
-# 智能问数Agent--数据智能体-火山引擎
+## 智能问数Agent--数据智能体-火山引擎
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/volcengine-data-agent-intelligent-query-agent.md)
 

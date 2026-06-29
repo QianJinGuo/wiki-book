@@ -6,7 +6,7 @@
 
 [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gsd-get-shit-done-context-management-tool.md)
 
-# gsd-get-shit-done-context-management-tool
+## gsd-get-shit-done-context-management-tool
 > 原文: https://mp.weixin.qq.com/s/LA3ZBVMUEUJMhek_LeHhjA
 > Author: 袋鼠帝 (kangarooking)
 > Score: value=7, confidence=8, product=56 ≥ 49 → PASS

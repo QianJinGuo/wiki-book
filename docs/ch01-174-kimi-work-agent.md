@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 39.2KB | `entities/kimi-work-codex-vibe-working-paradigm-shift.md`
 
-# Kimi Work：通用 Agent 战场从云端迁移到本地
+## Kimi Work：通用 Agent 战场从云端迁移到本地
 > "Vibe Coding 之后，下一个词是 Vibe Working。" —— 机器之心编辑部
 
 **Kimi Work** 是**月之暗面 K2.6 + Kimi Code Harness 搬到本地桌面**的通用 Agent 产品（2026-06 Beta 发布）。与 **OpenAI 把 Codex 并入 ChatGPT** 同一时间发布，标志 **"Vibe Working" 时代开启**——AI Agent 主战场从写代码迁移到**普通知识工作者的日常工作**。

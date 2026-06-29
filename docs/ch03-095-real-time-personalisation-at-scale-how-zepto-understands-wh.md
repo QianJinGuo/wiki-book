@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/zepto-real-time-personalisation-dual-sequence-ranker.md`
 
-# Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now
+## Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now
 
 Zepto 的实时个性化系统：双序列排序器（Dual Sequence Ranker）在高并发场景下的工程实践，涵盖特征工程、模型服务和实时推理链路。
 

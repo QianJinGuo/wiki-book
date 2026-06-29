@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 21.5KB | `entities/ai-native-project-management-git.md`
 
-# 让项目管理也AI Native —— 两个Git仓库干掉了周报、洞察和效能报表
+## 让项目管理也AI Native —— 两个Git仓库干掉了周报、洞察和效能报表
 
 > **Background**：本文档来自阿里技术官方公众号，由阿里巴巴工程师周志伟原创撰写，详细介绍了其团队如何用两个 Git 仓库 + AI 编码助手实现"零额外基建投入"的项目管理自动化实践。
 

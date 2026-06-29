@@ -5,7 +5,7 @@
 > 📊 Level ⭐⭐ | 5.0KB | `entities/ai短漫剧的netflix来了恒星ai推出全球首个影视级ai-agentstarfilm打造ai短漫剧制作的超级梦工厂.md`
 
 > -> 原文存档
-# ai短漫剧的netflix来了恒星ai推出全球首个影视级ai-agentstarfilm打造ai短漫剧制作的超级梦工厂
+## ai短漫剧的netflix来了恒星ai推出全球首个影视级ai-agentstarfilm打造ai短漫剧制作的超级梦工厂
 source: 
 ## 摘录
 > AI短漫剧的Netflix来了！恒星AI推出全球首个影视级AI Agent「Starfilm」，打造AI短漫剧制作的"超级梦工厂"

@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-infra-auto-driven-skills-v0-bbuf-giantpanda.md)
 
-# AI-Infra-Auto-Driven-SKILLS：推理框架工作流编码
+## AI-Infra-Auto-Driven-SKILLS：推理框架工作流编码
 
 ## 一句话
 

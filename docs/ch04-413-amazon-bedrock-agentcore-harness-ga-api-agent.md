@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.6KB | `entities/amazon-bedrock-agentcore-harness-ga.md`
 
-# Amazon Bedrock AgentCore Harness GA
+## Amazon Bedrock AgentCore Harness GA
 
 > **Background**：本文基于 AWS 官方博客 2026-06-18 发布的 AgentCore harness GA 公告，系统分析其 Harness 架构设计、API 表面、工具集成模式、Memory 管理、Skills 体系和生产环境基础设施。
 

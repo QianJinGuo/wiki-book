@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.4KB | `entities/perplexity-computer-knowledge-work-empirical-study.md`
 
-# Perplexity Computer Empirical Study: How AI Agents Reshape Knowledge Work
+## Perplexity Computer Empirical Study: How AI Agents Reshape Knowledge Work
 
 > 2026-06-08 Perplexity AI Research 与 Harvard Business School 联合发布的第一份全面 Perplexity Computer 真实部署实证研究。arXiv 技术报告 2606.07489。在 Computer 上线后仅约 105 天内 (2026-02-25 → 2026-06-08) 即拿出 HBS 学术严格度的生产数据。
 

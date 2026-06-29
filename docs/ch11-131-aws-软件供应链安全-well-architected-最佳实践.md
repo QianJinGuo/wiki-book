@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/aws-software-supply-chain-security-well-architected-best-practices.md`
 
-# AWS 软件供应链安全 Well-Architected 最佳实践
+## AWS 软件供应链安全 Well-Architected 最佳实践
 
 ## 概述
 
