@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/claude-code-extended-thinking-not-authentic.md`
 
-# The text in Claude Code’s “Extended Thinking” output is not authentic. – blog
+## The text in Claude Code’s “Extended Thinking” output is not authentic. – blog
 
 Patrick McCanna investigated Claude Code's session logs and discovered that the "thinking blocks" in extended thinking output contain a 600-character signature but no actual reasoning text. This raises questions about the authenticity and transparency of LLM reasoning traces.
 

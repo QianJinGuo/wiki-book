@@ -70,8 +70,8 @@ AI 工程三阶段：
 ```bash   
 npm i -g @aws/agentcore@preview   # 安装CLI   
 
-# 创建Harness：定义模型+指令+工具
-# 调用：Agent秒级运行
+## 创建Harness：定义模型+指令+工具
+## 调用：Agent秒级运行
 ```   
 
 ## AgentCore vs 自建 Harness

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/agentrun-cli-v010-正式开源一行命令运行您的托管-agent.md`
 
-# AgentRun CLI v0.1.0 正式开源：一行命令运行您的托管 Agent
+## AgentRun CLI v0.1.0 正式开源：一行命令运行您的托管 Agent
 > 托管 Agent 的范式已经确立，接下来我们要做的，是让开发者能够通过一条命令将其运行起来。
 _ ** AgentRun 平台优势已立，开发者侧补位  ** _
 在上一篇文章  《  [ 托管 Agent 执行循环只是起点——AgentRun 托管的更是企业 AI 生产全链路  ](<https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247583492&idx=1&sn=d6ce0429f03fb1042bfc377d38301685&scene=21#wechat_redirect>) 》  中，我们将阿里云 AgentRun 与 Claude Managed Agents (CMA) 进行了正面对比。结论非常清晰：托管式 Agent 已成为行业共识。
@@ -58,7 +58,7 @@ CLI 的 YAML 声明式 API 体现了明确的 GitOps 思维：
 ```
 ar sa run --prompt "你是一个 Python 专家"  # 快速验证
 
-# ... 验证逻辑收敛后
+## ... 验证逻辑收敛后
 ar sa render -f superagent.yaml           # 本地渲染验证
 git commit -m "feat: add python-expert agent"
 ```
@@ -71,11 +71,11 @@ git commit -m "feat: add python-expert agent"
 
 ```bash
 
-# 部署阶段
+## 部署阶段
 ar sa apply -f superagent.yaml --dry-run  # 服务端预检
 ar sa apply -f superagent.yaml             # 幂等部署
 
-# 运行时调用
+## 运行时调用
 ar sa invoke my-helper -m "解释一下闭包" --text-only | tee answer.txt
 ```
 

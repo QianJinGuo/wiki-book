@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 27.6KB | `entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md`
 
-# 深入理解 Claude Code 源码中的 Agent Harness 构建之道
+## 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 
 > 来源：技术极简主义，2026-04-08，基于 Claude Code 源码泄露事件（npm 打包未排除 .map 文件 → 1900+ TS 文件、51 万行核心代码意外曝光 → GitHub 数小时 1100+ star）
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md)
@@ -64,7 +64,7 @@
 每个文件解析时剥离 HTML 注释 + 解析 `@include` 指令（最多 5 层深度）。`@include` 让一个 CLAUDE.md 拉入另一个文件：
 
 ```
-# CLAUDE.md
+## CLAUDE.md
 See our API conventions:
 @./docs/api-conventions.md
 And our testing standards:

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/tmall-ai-coding-practice-team-knowledge-base.md`
 
-# 天猫新品团队 AI 编码实战指南 — 团队知识库与 Workflow 沉淀
+## 天猫新品团队 AI 编码实战指南 — 团队知识库与 Workflow 沉淀
 ## 核心定位
 阿里巴巴天猫新品团队的 AI 辅助编码实践经验，重点在于**团队知识库的 npm 包分发模式**和**类 Skill 封装**，以及不同严苛程度场景的分层策略。  
 

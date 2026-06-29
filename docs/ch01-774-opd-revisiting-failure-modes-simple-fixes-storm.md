@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/opd-revisiting-failure-modes-simple-fixes-storm.md`
 
-# Opd Revisiting Failure Modes Simple Fixes Storm
+## Opd Revisiting Failure Modes Simple Fixes Storm
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/opd-revisiting-failure-modes-simple-fixes-storm.md)
 

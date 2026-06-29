@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.5KB | `entities/how-frontier-teams-are-reinventing-ai-native-development.md`
 
-# How Frontier Teams Are Reinventing AI-Native Development
+## How Frontier Teams Are Reinventing AI-Native Development
 
 > **TL;DR**：AWS 副总裁 Swami Sivasubramanian（Agentic AI）总结亚马逊内部数百个工程团队实验，提炼出 **3 条 AI-native 路径**（pathfinder / structured sprint / in-situ）和 **5 条 frontier team 共同实践**。核心论点是：AI 编码工具普及后真正分胜负的是 **workflow 重构**——不是工具，而是「降低 agent 获得上下文的门槛、扩大 agent 独立工作的覆盖面」。代表性数据：6 工程师 76 天交付原计划 30 人 12-18 个月的项目，commit velocity 从 2/周提升到 40/周，25/50 团队实施新工具+新实践比仅添加工具的生产率增益高 4.5-10x。
 

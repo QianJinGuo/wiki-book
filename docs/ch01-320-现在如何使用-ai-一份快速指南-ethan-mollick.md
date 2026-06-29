@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/using-ai-right-now-a-quick-guide.md`
 
-# 现在如何使用 AI：一份快速指南（Ethan Mollick）
+## 现在如何使用 AI：一份快速指南（Ethan Mollick）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/using-ai-right-now-a-quick-guide.md)
 

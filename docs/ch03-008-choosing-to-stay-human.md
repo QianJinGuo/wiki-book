@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 10.8KB | `entities/choosing-to-stay-human.md`
 
-# Choosing to Stay Human
+## Choosing to Stay Human
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/choosing-to-stay-human.md)
 

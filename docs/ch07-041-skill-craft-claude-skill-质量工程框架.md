@@ -102,7 +102,7 @@ Skill Craft 的 fix 回归验证逻辑与 Harness 的 Generator/Evaluator 循环
 ## 使用
 ```bash  
 
-# 把 Skill 放进 ~/.claude/skills/ 后
+## 把 Skill 放进 ~/.claude/skills/ 后
 评估 /path/to/my-skill  
 ```
 

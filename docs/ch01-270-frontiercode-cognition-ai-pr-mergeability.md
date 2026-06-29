@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.1KB | `entities/frontier-code-cognition-mergeability-benchmark.md`
 
-# FrontierCode — Cognition AI 的 PR Mergeability 编码基准
+## FrontierCode — Cognition AI 的 PR Mergeability 编码基准
 
 > **Background**: FrontierCode 是 Cognition AI (Devin 团队) 2026-06-08 发布的下一代编码 agent 评估基准, 与 SWE-Bench Verified/Pro 的"功能性正确"评估范式分道扬镳, 首次引入"maintainer 是否会合并这个 PR"作为评估标准。本文基于 Cognition 官方博客 [`cognition.ai/blog/frontier-code`](http://cognition.ai/blog/frontier-code), 重点剖析其 6 维度评分体系、3 种新颖评分方法 (reverse-classical / code scope / mutagent adaptive classical) 与 rubric hardening pipeline, 并讨论其对编码 agent 评估领域的方法论影响。
 >

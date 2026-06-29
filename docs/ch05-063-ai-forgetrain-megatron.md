@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/forgetrain-ai-written-training-framework-bidian-infoq.md)
 
-# ForgeTrain：AI 编写训练框架，超越 Megatron
+## ForgeTrain：AI 编写训练框架，超越 Megatron
 
 ## 一句话
 

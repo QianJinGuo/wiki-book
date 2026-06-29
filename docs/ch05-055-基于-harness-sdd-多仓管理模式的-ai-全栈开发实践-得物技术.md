@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/harness-sdd-duiwu-ai-fullstack-dewux.md`
 
-# 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术
+## 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术
 ## 一、核心理念：Harness 思维 — 让 AI 模仿，而不是凭空创造
 全栈 SDD 开发中，最常见也最致命的错误是：让 AI 从零开始写代码。AI 模型具备"通识能力"，给它一个需求描述，它确实能生成可运行的代码。但问题在于，这些代码往往是"外星代码"：
 

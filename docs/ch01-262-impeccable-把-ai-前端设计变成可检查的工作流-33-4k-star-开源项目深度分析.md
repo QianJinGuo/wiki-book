@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.8KB | `entities/impeccable-frontend-design-skill-harness-vibecoder.md`
 
-# Impeccable：把 AI 前端设计变成可检查的工作流 — 33.4k Star 开源项目深度分析
+## Impeccable：把 AI 前端设计变成可检查的工作流 — 33.4k Star 开源项目深度分析
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)
 

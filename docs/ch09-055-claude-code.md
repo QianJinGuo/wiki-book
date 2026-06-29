@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/claude-code-seven-customization-methods-anthropic-official.md`
 
-# Claude Code 七种自定义方法：官方全景指南
+## Claude Code 七种自定义方法：官方全景指南
 
 Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其对比。每种方法影响三件事：指令何时加载进上下文、压缩后是否持续生效、指令权重有多高。
 

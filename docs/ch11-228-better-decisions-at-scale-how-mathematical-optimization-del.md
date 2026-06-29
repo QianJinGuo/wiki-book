@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.8KB | `entities/better-decisions-at-scale-how-mathematical-optimization-deli.md`
 
-# Better decisions at scale: How mathematical optimization delivers where intuition fails
+## Better decisions at scale: How mathematical optimization delivers where intuition fails
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/better-decisions-at-scale-how-mathematical-optimization-deli.md)
 

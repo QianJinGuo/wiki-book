@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-a.md`
 
-# It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
+## It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-a.md)
 

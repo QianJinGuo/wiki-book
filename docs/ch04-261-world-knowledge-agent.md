@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.3KB | `entities/world-knowledge-agent-self-evolution-tencent-hkustgz.md`
 
-# World Knowledge：Agent推理前先探索环境生成可迁移知识
+## World Knowledge：Agent推理前先探索环境生成可迁移知识
 
 论文：Training LLM Agents for Spontaneous, Reward-Free Self-Evolution via World Knowledge Exploration（Tencent + HKUST(GZ)，arXiv:2604.18131v1）
 

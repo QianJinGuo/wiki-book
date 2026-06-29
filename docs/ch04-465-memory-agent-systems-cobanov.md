@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/memory-agent-systems-cobanov.md)
 
-# AI Agent Memory Systems (Cobanov)
+## AI Agent Memory Systems (Cobanov)
 Mert Cobanov: AI Agent Memory Systems 完整综述，向量DB/知识图谱/摘要/外部记忆模式
 
 ## 摘要

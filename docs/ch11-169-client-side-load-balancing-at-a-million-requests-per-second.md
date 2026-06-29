@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/zalando-client-side-load-balancing-million-rps.md`
 
-# Client-Side Load Balancing at a Million Requests Per Second
+## Client-Side Load Balancing at a Million Requests Per Second
 
 Zalando 在百万 RPS 级别的客户端负载均衡工程实践，从服务发现到连接管理的完整技术栈。
 

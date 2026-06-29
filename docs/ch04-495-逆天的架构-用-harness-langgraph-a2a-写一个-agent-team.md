@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/langgraph-a2a-adversarial-agent-team.md`
 
-# 逆天的架构：用 Harness+LangGraph+A2A 写一个 Agent Team
+## 逆天的架构：用 Harness+LangGraph+A2A 写一个 Agent Team
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langgraph-a2a-adversarial-agent-team.md)
 

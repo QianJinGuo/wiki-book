@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md`
 
-# Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild
+## Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md)
 

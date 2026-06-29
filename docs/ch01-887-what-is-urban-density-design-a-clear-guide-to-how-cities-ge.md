@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 9.1KB | `entities/what-is-urban-density-design-a-clear-guide.md`
 
-# Urban Density Design：城市密度设计完全指南
+## Urban Density Design：城市密度设计完全指南
 
 ## 摘要
 

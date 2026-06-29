@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/agentic-incident-triage-assistant-amazon-quick-new-relic-asana.md`
 
-# Agentic Incident Triage Assistant with Amazon Quick, New Relic MCP Server, and Asana
+## Agentic Incident Triage Assistant with Amazon Quick, New Relic MCP Server, and Asana
 
 > AWS 官方博客实战教程（Ebbey Thomas / Muthuvelan Swaminathan），2026-06-09 发布。展示 Amazon Quick chat agent 如何通过 native MCP 集成编排 New Relic 推理工具 + Asana 任务系统，从单次 prompt 端到端完成 incident triage + RCA brief + handoff task 自动化。
 

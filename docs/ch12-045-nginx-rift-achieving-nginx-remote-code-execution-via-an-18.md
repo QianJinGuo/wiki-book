@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability.md`
 
-# NGINX Rift: Achieving NGINX Remote Code Execution via an 18-Year-Old Vulnerability | depthfirst
+## NGINX Rift: Achieving NGINX Remote Code Execution via an 18-Year-Old Vulnerability | depthfirst
 
 Published Time: 2026-05-13T12:00:00.000Z
 **TLDR: We used depthfirst's system to analyze the NGINX source code, and it autonomously discovered 4 remote memory corruption issues, including a critical heap buffer overflow introduced in 2008. We further investigated the exploitability of the issues, and developed a working proof of concept demonstrating RCE with ASLR off. If you use _rewrite_ and _set_ directives in your NGINX configuration, you're at risk.**

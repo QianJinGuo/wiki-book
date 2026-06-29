@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/openai-models-codex-amazon-bedrock-ga.md`
 
-# OpenAI models and Codex on Amazon Bedrock are now generally available
+## OpenAI models and Codex on Amazon Bedrock are now generally available
 
 ## Key takeaways  
 

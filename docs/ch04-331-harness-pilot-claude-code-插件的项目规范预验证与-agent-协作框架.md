@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/harness-pilot-claude-code-plugin-yangtong-2026-06-17.md`
 
-# Harness Pilot：Claude Code 插件的项目规范预验证与 Agent 协作框架
+## Harness Pilot：Claude Code 插件的项目规范预验证与 Agent 协作框架
 
 ## 摘要
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.1KB | `entities/colaos-listenhub-agency-native-organization-juzi.md`
 
-# ColaOS 与 AI 原生组织
+## ColaOS 与 AI 原生组织
 
 > [!summary] 核心洞察
 > AI 原生产品的核心不是更大的模型或更强的工具，而是**降低摩擦**（让普通人能用 Agent）和**穿透组织**（让 AI 的速度变成成果的速度）。ColaOS 创始人橘子从 ListenHub（SaaS 两年迭代）到 ColaOS（一天一版），展示了 AI 对产品和组织的双重重写。

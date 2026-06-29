@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 18.0KB | `entities/minimal-cli-agent-250-line-python-ollama-7-stages.md`
 
-# AI Agent 的内核是 250 行 while 循环：从零搭建 CLI Agent 的 7 阶段教程
+## AI Agent 的内核是 250 行 while 循环：从零搭建 CLI Agent 的 7 阶段教程
 
 ## Overview
 
@@ -88,7 +88,7 @@ tools = [{
 Claude Code 有 skills，250 行 Agent 也可以有。一个 skill = 一个 Markdown 文件放在 `skills/` 目录：
 
 ```markdown
-# Skill: Python 安全审计师
+## Skill: Python 安全审计师
 
 ## 角色
 你是一名资深 Python 安全研究员，专注于代码审计。

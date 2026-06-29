@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/claude-code-html-artifact-workflow-ifanr.md`
 
-# Claude Code HTML Artifact Workflow (IFanR Analysis)
+## Claude Code HTML Artifact Workflow (IFanR Analysis)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-html-artifact-workflow-ifanr.md)
 

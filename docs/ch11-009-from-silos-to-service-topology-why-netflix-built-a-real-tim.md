@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 32.8KB | `entities/netflix-real-time-service-topology.md`
 
-# From silos to service topology: why Netflix built a real-time architecture
+## From silos to service topology: why Netflix built a real-time architecture
 
 ## 核心内容
 
@@ -14,7 +14,7 @@ feed_name: Netflix Tech Blog
 source_published: 2026-05-29T14:01:02Z
 ---
 
-# From Silos to Service Topology: Why Netflix Built a Real-Time Service Map
+## From Silos to Service Topology: Why Netflix Built a Real-Time Service Map
 
 _By_[ _Parth Jain_](https://www.linkedin.com/in/parth-jain-8a09abb6/), [_Rakesh Sukumar_](https://www.linkedin.com/in/raskuma/) _,_[_Yingwu Zhao_](https://www.linkedin.com/in/yingwu-zhao-62037418/) _,_[_Renzo Sanchez_](https://www.linkedin.com/in/renzosanchezsilva/) _ & _[_Nathan Fisher_](https://www.linkedin.com/in/nathfisher/) _
 How we built a living map of our distributed infrastructure to help engineers understand dependencies, troubleshoot faster, and keep Netflix running smoothly for our members around the world.

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/llms-are-complicated-now-ianbarber.md`
 
-# LLMs are complicated now
+## LLMs are complicated now
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llms-are-complicated-now-ianbarber.md)
 

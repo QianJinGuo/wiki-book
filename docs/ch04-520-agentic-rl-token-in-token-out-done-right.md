@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/agentic-rl-token-in-token-out.md`
 
-# Agentic RL: Token-In, Token-Out Done Right
+## Agentic RL: Token-In, Token-Out Done Right
 
 ## 深度分析
 

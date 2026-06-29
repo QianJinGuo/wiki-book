@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/4-ways-were-using-our-mcp-server-at-figma.md`
 
-# 4 ways we’re using our MCP server at Figma
+## 4 ways we’re using our MCP server at Figma
 
 ## Overview
 

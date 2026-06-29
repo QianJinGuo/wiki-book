@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.8KB | `entities/codex-major-update-appshots-goal-xinzhiyuan.md`
 
-# Codex 重磅升级：Appshots / Goal 毕业 / 锁屏远程操控
+## Codex 重磅升级：Appshots / Goal 毕业 / 锁屏远程操控
 
 ## 相关实体
 

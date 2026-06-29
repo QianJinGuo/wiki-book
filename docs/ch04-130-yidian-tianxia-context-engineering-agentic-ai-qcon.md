@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 13.8KB | `entities/yidian-tianxia-context-engineering-agentic-ai-qcon.md`
 
-# "yidian tianxia context engineering agentic ai qcon"
-# 易点天下 Agentic AI 工程化实践：上下文工程 + 五道防线
+## "yidian tianxia context engineering agentic ai qcon"
+## 易点天下 Agentic AI 工程化实践：上下文工程 + 五道防线
 **来源：** QCon 2026 全球软件开发大会·北京站
 **演讲者：** 何宇航（易点天下 中台研发总监）
 **主题：** 企业级 Agentic AI 的工程化落地：Context Engineering + 安全防御体系

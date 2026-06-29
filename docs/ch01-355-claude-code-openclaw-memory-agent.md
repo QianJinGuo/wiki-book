@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md`
 
-# 读完 Claude Code 和 OpenClaw 的 memory 源码，我对"Agent记忆需要向量数据库"这件事产生了怀疑……
+## 读完 Claude Code 和 OpenClaw 的 memory 源码，我对"Agent记忆需要向量数据库"这件事产生了怀疑……
 这两天在研究 agent 的记忆系统，读完 Claude Code 和 OpenClaw 的记忆系统源码，我发现一个有意思的分歧：同样是"让 Agent 记住东西"，一个选择信 LLM 的理解力，另一个选择老老实实建向量索引。
 这俩都是当下最有代表性的 Agent 框架。Claude Code 是 Anthropic 官方的开发者 CLI，按需启动，面向团队协作，OpenClaw 是 local-first 的个人 Agent 运行时，7×24 小时在线，能接 WhatsApp、Slack、Discord，定位不同，但"记忆"这件事两边都得解决，解法却截然不同。
 先说 Claude Code，它的记忆是我见过最卷的分层设计，6 层 markdown 文件，每层有独立的读写权限和生命周期：

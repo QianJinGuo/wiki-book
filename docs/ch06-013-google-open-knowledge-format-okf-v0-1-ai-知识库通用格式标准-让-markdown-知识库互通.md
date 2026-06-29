@@ -86,14 +86,14 @@ tags: [sales, revenue]
 timestamp: 2026-05-28T14:30:00Z
 ---
 
-# Schema
+## Schema
 
 | Column        | Type      | Description                              |
 |---------------|-----------|------------------------------------------|
 | `order_id`    | STRING    | Globally unique order identifier.       |
 | `customer_id` | STRING    | FK to [customers](/tables/customers.md). |
 
-# Joins
+## Joins
 
 Joined with [customers](/tables/customers.md) on `customer_id`.
 ```

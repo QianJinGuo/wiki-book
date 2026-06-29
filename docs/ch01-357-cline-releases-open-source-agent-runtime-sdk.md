@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/cline-agent-runtime-sdk.md`
 
-# Cline releases open-source agent runtime SDK
+## Cline releases open-source agent runtime SDK
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cline-agent-runtime-sdk.md)
 

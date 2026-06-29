@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.0KB | `entities/harness-engineering-practical-17ge-versus-6-subagent.md`
 
-# Harness 模式 6-SubAgent 实战 — 17哥 versus 大模型评测平台
+## Harness 模式 6-SubAgent 实战 — 17哥 versus 大模型评测平台
 
 17哥（极客之家 geekhome / 大模型评测平台团队）将 Vibe Coding 升级为 Harness 模式的工业实践。**核心工程动作**：
 

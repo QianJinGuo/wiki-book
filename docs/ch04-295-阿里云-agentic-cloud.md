@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/alibaba-agentic-cloud.md`
 
-# 阿里云 Agentic Cloud
+## 阿里云 Agentic Cloud
 
 阿里云在520峰会上发布 Agentic Cloud 战略，将整朵云按 Agent 需求重做，目标是让 Agent 成为云的一等公民。产品、API、计费、文档、官网全部围绕 Agent 重新设计。
 

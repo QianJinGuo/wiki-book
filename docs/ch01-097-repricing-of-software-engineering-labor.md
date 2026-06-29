@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 5.8KB | `entities/posts-repricing-of-software-engineering-labor.md`
 
-# Repricing of Software Engineering Labor
+## Repricing of Software Engineering Labor
 
 > **来源**: [Repricing of Software Engineering Labor](https://blog.grandimam.com/posts/repricing-of-software-engineering-labor)
 

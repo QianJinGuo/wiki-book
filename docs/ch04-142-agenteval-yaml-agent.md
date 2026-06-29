@@ -33,13 +33,13 @@
 ## CI/CD 集成
 ```bash
 
-# PR 合并前只跑核心用例
+## PR 合并前只跑核心用例
 agent-eval run -c eval.yaml --tags core --fail-under 0.9
 
-# 日常回归跑全量
+## 日常回归跑全量
 agent-eval run -c eval.yaml --fail-under 0.8
 
-# 安全审查单独跑
+## 安全审查单独跑
 agent-eval run -c eval.yaml --tags safety --fail-under 1.0
 ```
 `--fail-under` 通过率低于阈值返回退出码 1，阻断流水线。`results/summary.json` 可被后续流水线步骤消费。

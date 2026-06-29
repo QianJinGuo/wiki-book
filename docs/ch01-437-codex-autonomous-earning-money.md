@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/codex-autonomous-earning-money.md`
 
-# codex-autonomous-earning-money
+## codex-autonomous-earning-money
 
 Codex摸到了市场规律！Codex已自己完成商业闭环，大牛已躺赚200刀，订阅费已回本！X 疯传：Codex已实现全自动打工
 昨天，开发者 Chris 在X上发布推文："Codex 帮我赚了钱，而我什么也没做！"

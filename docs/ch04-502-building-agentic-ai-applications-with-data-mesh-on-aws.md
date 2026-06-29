@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.7KB | `entities/agentic-ai-data-mesh-aws-s3-vectors-mcp.md`
 
-# Building Agentic AI Applications with Data Mesh on AWS
+## Building Agentic AI Applications with Data Mesh on AWS
 
 AWS official blog showing how to build governed agentic AI applications on a modern data mesh. Core innovation: exposing data mesh as MCP tools via AgentCore Gateway for deterministic agent-to-data access control.
 

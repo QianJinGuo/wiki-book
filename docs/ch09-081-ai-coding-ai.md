@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/ai-coding-入门指南-如何更好地让ai真正帮你干活.md`
 
-# AI Coding 入门指南：如何更好地让 AI 真正帮你干活
+## AI Coding 入门指南：如何更好地让 AI 真正帮你干活
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-coding-入门指南-如何更好地让ai真正帮你干活.md)
 

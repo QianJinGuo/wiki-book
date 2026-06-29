@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md`
 
-# Business intelligence at scale: Key obstacles
+## Business intelligence at scale: Key obstacles
 
 ## 深度分析
 
@@ -16,7 +16,7 @@ feed_name: AWS China ML
 source_published: 2026-05-27T18:51:45Z
 ---
 
-# How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore
+## How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore
 
  
 

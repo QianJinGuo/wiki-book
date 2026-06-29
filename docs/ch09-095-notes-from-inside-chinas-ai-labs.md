@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/notes-from-inside-chinas-ai-labs.md`
 
-# Notes from inside China's AI labs
+## Notes from inside China's AI labs
 Staring out the window on a new, high-speed train from Hangzhou to Shanghai I'm gifted with views of dramatic ridgelines speckled with wind turbines that are silhouetted against the setting sun. The mountains cast a backdrop to a mix of spanning fields and clustered skyscrapers. I'm returning from China with great humility. It's a very warming, human experience to go somewhere so foreign and be so welcomed. I had the honor of meeting so many people in the AI ecosystem who I knew from afar, and they greeted me with big smiles and cheer, reminding me how global my work and the AI ecosystem is.
 Interconnects AI is a reader-supported publication. Consider becoming a subscriber.
 

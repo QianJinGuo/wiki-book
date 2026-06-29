@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/openai-gpt-realtime-voice-models-qbitai.md`
 
-# GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价
+## GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价
 |OpenAI 上新三款实时语音模型，不仅集成了 GPT-5 级的推理能力，还对同传行业形成了冲击：
 
 - **GPT-Realtime-2**：端到端语音推理，GPT-5 级推理能力，可实时语音对话

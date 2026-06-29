@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.7KB | `entities/huashu-design-2-0-flower-uncle-3-patterns.md`
 
-# Huashu-Design 2.0 — Agent Skill 反收敛三套逻辑
+## Huashu-Design 2.0 — Agent Skill 反收敛三套逻辑
 
 > **核心**: 花叔 (alchaincyf) 在 2 个月 16k+ star 之后, 把 Huashu-Design v1 推翻重写为 2.0. 关键问题不是模型能力, 而是 **"AI 自动收敛到安全极简 (Anthropic 官网味儿)"**. 2.0 用 3 套并行逻辑 (撞/借/请) + 图片前置 + 事实验证第 0 原则, 系统性解决 3 个真实坑.
 

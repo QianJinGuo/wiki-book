@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 1.3KB | `entities/how-to-build-agents-where-data-already-lives.md`
 
-# How to build Agents Where Data Already Lives
+## How to build Agents Where Data Already Lives
 
 ## 深度分析
 

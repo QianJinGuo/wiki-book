@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/mollick-ai-32-otters-benchmark.md`
 
-# Mollick AI 进展的 32 只水獭基准
+## Mollick AI 进展的 32 只水獭基准
 
 > **Background**：本文基于 Ethan Mollick 在 One Useful Thing 发表的「The recent history of AI in 32 otters」一文，整理其「水獭坐飞机用 WiFi」4 年视觉对比方法论以及对 AI 进展的三条总体观察。
 

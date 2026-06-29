@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.5KB | `entities/excerpts-write-an-effective-design-doc.md`
 
-# How to Write an Effective Software Design Document
+## How to Write an Effective Software Design Document
 
 > **来源**: [How to Write an Effective Software Design Document](https://refactoringenglish.com/excerpts/write-an-effective-design-doc/)
 

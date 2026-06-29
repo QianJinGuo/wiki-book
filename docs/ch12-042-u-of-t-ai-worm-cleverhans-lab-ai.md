@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/u-of-t-ai-worm-cleverhans-research.md`
 
-# U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁
+## U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
 

@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐ | 8.5KB | `entities/ai-research-assistant-from-idea-to-app.md`
 
-# From idea to AI app: creating intelligent research assistants
+## From idea to AI app: creating intelligent research assistants
 
 ## 核心内容
 
-# From idea to AI app: Creating intelligent research assistants with Strands
+## From idea to AI app: Creating intelligent research assistants with Strands
 
 Building an AI app shouldn't require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that's exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own. I've seen straightforward AI ideas balloon into sprawling projects that demand specialized knowledge in natural language processing and distributed systems. But here's what changed: using [Strands Agents](https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/) and AWS services, I built a fully functional AI research assistant in just 30 lines of code. In this post, I walk you through exactly how I did it—from initial concept to working application.
 

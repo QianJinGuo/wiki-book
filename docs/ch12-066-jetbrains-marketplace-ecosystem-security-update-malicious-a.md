@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/jetbrains-marketplace-malicious-ai-plugins-security-update.md`
 
-# JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins
+## JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins
 
 2026-06-16, JetBrains received security reports: 15 third-party plugins on JetBrains Marketplace were stealing developer-configured AI Provider API Keys. These plugins masqueraded as legitimate AI tools (text generation, unit testing) but executed unauthorized backend functions when users entered API keys and clicked "Apply".
 

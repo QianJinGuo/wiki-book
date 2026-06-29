@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.3KB | `entities/detect-ai-agents-website.md`
 
-# How to Detect AI Agents on Your Website
+## How to Detect AI Agents on Your Website
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/detect-ai-agents-website.md)
 

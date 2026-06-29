@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/minimum-viable-unit-saleable-software-brandur.md`
 
-# The Minimum Viable Unit of Saleable Software
+## The Minimum Viable Unit of Saleable Software
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/minimum-viable-unit-saleable-software-brandur.md)
 

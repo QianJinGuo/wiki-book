@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/aws-waf-ai-traffic-monetization-bot-content-access.md`
 
-# AWS WAF AI Traffic Monetization — 内容所有者向 AI 收费的网络层基础设施
+## AWS WAF AI Traffic Monetization — 内容所有者向 AI 收费的网络层基础设施
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-waf-ai-traffic-monetization-bot-content-access.md)
 

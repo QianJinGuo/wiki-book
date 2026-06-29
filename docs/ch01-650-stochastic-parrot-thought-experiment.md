@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/stochastic-parrot-thought-experiment.md`
 
-# A Thought Experiment
+## A Thought Experiment
 [](<https://substackcdn.com/image/fetch/$s_!cI5K!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40faa5d6-9564-44cd-a472-55d7d22c040a_1024x1024.png>)
 Consider the following thought experiment. Imagine you have access to a large corpus of text written entirely in a foreign language unknown to you. This corpus resembles the massive training datasets used to train models such as GPT, Claude, and Gemini. The key point is that all of the content is exclusively in this unfamiliar language, without any accompanying translation, explanation, or external context.
 Now, let's consider two training scenarios:

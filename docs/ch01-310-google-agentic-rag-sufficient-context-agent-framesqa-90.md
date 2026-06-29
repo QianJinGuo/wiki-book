@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/google-agentic-rag-sufficient-context-agent-framesqa.md`
 
-# Google Agentic RAG — Sufficient Context Agent + FramesQA 90.1% Cross-Corpus
+## Google Agentic RAG — Sufficient Context Agent + FramesQA 90.1% Cross-Corpus
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-agentic-rag-sufficient-context-agent-framesqa.md)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/bytedance-trae-harness-engineering-guide.md`
 
-# 来自字节跳动TRAE的Harness Engineering指南
+## 来自字节跳动TRAE的Harness Engineering指南
 ## 1. 什么是 Harness Engineering？
 2026 年，软件工程迎来了一个新的支柱：Harness Engineering（驾驭工程）。继提示词工程和上下文工程之后，这个名字由 HashiCorp 联合创始人 Mitchell Hashimoto 提出，并在一份关键的 OpenAI 报告之后被广泛讨论。
 AI 智能体是一匹潜力近乎无限的「野马」，Harness Engineering 是驯服它的完整系统。你并不是在改变马的 DNA（模型本身），而是在设计一整套专业装备和训练协议，让它真正为你工作。

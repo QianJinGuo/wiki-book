@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/skillopt-skill-document-training-microsoft-sjtu.md`
 
-# SkillOpt：把 Agent 技能文档变成可训练对象
+## SkillOpt：把 Agent 技能文档变成可训练对象
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillopt-skill-document-training-microsoft-sjtu.md)
 

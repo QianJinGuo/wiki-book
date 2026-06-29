@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/cordon-semantic-transactions-tool-using-llm-agents-2026-06-17.md`
 
-# Cordon：Agent 工具调用的语义事务安全边界
+## Cordon：Agent 工具调用的语义事务安全边界
 
 ## 摘要
 

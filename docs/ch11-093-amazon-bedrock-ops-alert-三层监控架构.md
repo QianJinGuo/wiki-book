@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.0KB | `entities/aws-bedrock-ops-alert.md`
 
-# Amazon Bedrock Ops Alert 三层监控架构
+## Amazon Bedrock Ops Alert 三层监控架构
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-bedrock-ops-alert.md)
 

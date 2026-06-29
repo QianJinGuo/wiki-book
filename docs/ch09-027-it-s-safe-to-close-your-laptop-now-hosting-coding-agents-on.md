@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.0KB | `entities/bedrock-agentcore-coding-agent-hosting.md`
 
-# It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
+## It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
 
 > **Source archive**: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-a.md)
 
@@ -52,7 +52,7 @@ AgentCore 支持 Claude Code、Codex、Kiro、Cursor CLI、OpenCode、Gemini CLI
 
 文章提到 `/mnt/workspace` 持久化 14 天、VPC 网络模式下的私有 DNS 解析和网络安全组控制。 在实际评估中，需要特别关注：长时间运行任务（90 分钟以上的 refactor 或 overnight migration）的 Session 管理策略，以及 Agent 对私有 registries（PyPI mirror、npm private registry）的依赖是否已经可以通过 VPC 路由透明解决。这两个因素直接影响 AgentCore 是否能真正替代笔记本成为开发者首选的 Agent 运行载体。
 
-# It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
+## It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
 
 There’s a habit going around. Walking from one meeting to the next with the laptop cradled half-open. Sitting through a 1:1 with the lid propped just enough to keep the screen alive. Riding home while holding your laptop because it must stay running. Anywhere except closed on a desk, because closed on a desk is what kills the coding agent running inside (Claude Code, Codex, Kiro, OpenCode, Gemini CLI, Cursor CLI, or whatever harness the developer pulled together). [Business Insider has a piece on it](/ch09-<https://www.businessinsider.com/coders-keep-laptops-open-in-public-ai-agent-2026-5>/).
 

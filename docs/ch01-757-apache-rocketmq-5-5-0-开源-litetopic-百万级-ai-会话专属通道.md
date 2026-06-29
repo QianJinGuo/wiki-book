@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/rocketmq-5-5-0-litetopics-ai-agent-messaging.md`
 
-# Apache RocketMQ 5.5.0 开源 LiteTopic：百万级 AI 会话专属通道
+## Apache RocketMQ 5.5.0 开源 LiteTopic：百万级 AI 会话专属通道
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rocketmq-5-5-0-litetopics-ai-agent-messaging.md)
 

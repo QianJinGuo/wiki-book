@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 4.8KB | `entities/kuse-junior-ai-employee.md`
 
-# Kuse.ai Junior
+## Kuse.ai Junior
 > 有独立身份、邮箱、Slack账号的AI员工，定位从"个人工具"升级为"团队成员"。
 
 ## 基本信息

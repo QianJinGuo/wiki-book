@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.6KB | `entities/sign-of-the-future-gpt-55-mollick.md`
 
-# GPT-5.5：Sign of the Future — Mollick 的模型/Apps/Harnesses 三层框架与 4 提示 PhD 论文实验
+## GPT-5.5：Sign of the Future — Mollick 的模型/Apps/Harnesses 三层框架与 4 提示 PhD 论文实验
 
 > 2026-06-08 引用自 Ethan Mollick《Sign of the future: GPT-5.5》，One Useful Thing，2026-04-23。Mollick 强调：未收 OpenAI 任何费用，OpenAI 也未审稿。
 

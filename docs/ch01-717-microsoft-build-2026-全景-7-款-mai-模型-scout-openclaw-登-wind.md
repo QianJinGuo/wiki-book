@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/microsoft-build-2026-qbitai-full-scope.md`
 
-# Microsoft Build 2026 全景：7 款 MAI 模型 + Scout + OpenClaw 登 Windows + NVIDIA
+## Microsoft Build 2026 全景：7 款 MAI 模型 + Scout + OpenClaw 登 Windows + NVIDIA
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-build-2026-qbitai-full-scope.md)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md`
 
-# Agivar 录屏教学桌面 Agent
+## Agivar 录屏教学桌面 Agent
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md)
 

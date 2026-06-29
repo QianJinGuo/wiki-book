@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/bedrock-image-content-precise-analysis.md`
 
-# 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）
+## 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）
 
 > **Background**: 某出行企业租车业务需自动识别车辆剩余油量计算差价。直接用 VL 大模型（含 Nova、Qwen）微调效果差（60-70% 准确率），改用 Amazon Rekognition 自定义标签定位 + VL 模型定量的两阶段方案。
 

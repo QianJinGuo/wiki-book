@@ -69,10 +69,10 @@ Agent-Limitation: <已知局限或后续 TODO>
 
 ```bash
 
-# 列出所有包含 Agent-Task trailer 的提交
+## 列出所有包含 Agent-Task trailer 的提交
 git log --format='%(trailers:key=Agent-Task,valueonly)'
 
-# 按 trailer 过滤提交历史
+## 按 trailer 过滤提交历史
 git log --grep="^Agent-Task:" --all
 ```
 
@@ -95,13 +95,13 @@ git log --grep="^Agent-Task:" --all
 
 ```bash
 
-# 查看当前 branch 的提交历史
+## 查看当前 branch 的提交历史
 git log --oneline main..HEAD
 
-# 交互式 rebase 整理最近 N 个提交
+## 交互式 rebase 整理最近 N 个提交
 git rebase -i main
 
-# 常用操作：pick / squash / reword / drop / fixup
+## 常用操作：pick / squash / reword / drop / fixup
 ``` 
 
 **整理策略**：将 [WIP] checkpoint commits 合并（squash）为有意义的语义 commit，确保最终历史中每个 commit 都能独立理解和回滚。
@@ -114,13 +114,13 @@ git rebase -i main
 
 ```bash
 
-# 好的切分：每个 commit 对应一个独立关注点
+## 好的切分：每个 commit 对应一个独立关注点
 feat(auth): add RefreshToken domain model and repository interface
 feat(auth): implement JWT refresh token issuance in AuthService
 feat(auth): expose POST /auth/refresh endpoint
 test(auth): add unit tests for refresh token rotation logic
 
-# 反例：所有改动压成一个 commit
+## 反例：所有改动压成一个 commit
 feat(auth): implement refresh token
 ```
 
@@ -147,14 +147,14 @@ agent/PROJ-301-migrate-postgres-schema
 
 ```bash
 
-# 为每个 agent 任务创建独立 worktree
+## 为每个 agent 任务创建独立 worktree
 git worktree add ../agent-task-234 -b agent/PROJ-234-refresh-token
 git worktree add ../agent-task-301 -b agent/PROJ-301-pg-migration
 
-# 查看当前所有 worktree
+## 查看当前所有 worktree
 git worktree list
 
-# 任务完成后清理
+## 任务完成后清理
 git worktree remove ../agent-task-234
 ``` 
 
@@ -282,7 +282,7 @@ main
 jj new -A ywnkulko   # 在某个提交后插入新的一层
 jj describe -m "feat(auth): add token revocation endpoint"
 
-# jj 自动将后续所有提交 rebase 到新的提交链上
+## jj 自动将后续所有提交 rebase 到新的提交链上
 jj git push --all    # 推送所有分支
 gh stack submit      # 在 GitHub 同步 stack 状态
 ```
@@ -291,13 +291,13 @@ gh stack submit      # 在 GitHub 同步 stack 状态
 
 ```bash
 
-# 创建 stack 结构
+## 创建 stack 结构
 but branch -a feat/refresh-token feat/token-revocation
 but branch -a feat/token-revocation feat/token-audit-log
 
-# 修改底层分支后，GitButler 自动级联 rebase 上层分支
-# 无需手动执行任何 rebase 操作
-# 推送并创建 PR
+## 修改底层分支后，GitButler 自动级联 rebase 上层分支
+## 无需手动执行任何 rebase 操作
+## 推送并创建 PR
 gh stack submit
 ```
 
@@ -336,16 +336,16 @@ jj op undo                     # 撤销任意操作（无限 undo）
 
 ```bash
 
-# 查看当前工作区状态（JSON 输出，适合 agent 消费）
+## 查看当前工作区状态（JSON 输出，适合 agent 消费）
 but status --json
 
-# 将特定文件/hunk 提交到指定分支
+## 将特定文件/hunk 提交到指定分支
 but commit fe -m "feat(auth): implement token rotation logic" --changes g0
 
-# 自动归并到最合适的提交
+## 自动归并到最合适的提交
 but absorb
 
-# Stacked Branches
+## Stacked Branches
 but branch -a feat/refresh-token feat/token-revocation
 ```
 

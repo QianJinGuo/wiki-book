@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md`
 
-# The art and science of hyperparameter optimization on Amazon Nova Forge
+## The art and science of hyperparameter optimization on Amazon Nova Forge
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md)
 

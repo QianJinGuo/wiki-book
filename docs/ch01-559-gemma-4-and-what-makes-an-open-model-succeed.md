@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/gemma-4-and-what-makes-an-open-model-succeed.md`
 
-# Gemma 4 and what makes an open model succeed
+## Gemma 4 and what makes an open model succeed
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemma-4-and-what-makes-an-open-model-succeed.md)
 

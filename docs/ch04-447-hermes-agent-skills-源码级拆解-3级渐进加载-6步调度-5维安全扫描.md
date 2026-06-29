@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/hermes-agent-skills-source-code-analysis-shuge.md`
 
-# Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描
+## Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描
 
 ## 相关实体
 

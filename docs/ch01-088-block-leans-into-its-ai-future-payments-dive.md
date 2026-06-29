@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 5.3KB | `entities/block-leans-into-its-ai-future-payments-dive.md`
 
-# Block leans into its AI future | Payments Dive
+## Block leans into its AI future | Payments Dive
 Opens in a new window Opens an external website Opens an external website in a new window
 
 ## 相关实体

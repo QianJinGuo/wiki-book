@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.9KB | `entities/openclaw-boris-cherny-agent-loop-design-patterns.md`
 
-# Openclaw Boris Cherny Agent Loop Design Patterns
+## Openclaw Boris Cherny Agent Loop Design Patterns
 
 ## 相关实体
 

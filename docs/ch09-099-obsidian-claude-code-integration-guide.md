@@ -6,7 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/obsidian-claude-code-integration-guide.md)
 
-# Obsidian Claude Code 集成指南
+## Obsidian Claude Code 集成指南
 Obsidian Claude Code 集成：双向链接 + 块引用 + 本地模型支持
 
 ## 摘要

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 21.8KB | `entities/anolisa-v03-alibaba-agentic-os.md`
 
-# ANOLISA v0.3：阿里 Agentic OS —— Agent 系统管家
+## ANOLISA v0.3：阿里 Agentic OS —— Agent 系统管家
 > "**ANOLISA 致力于打造更高效更安全的 Agent Native 环境。**"
 >
 > "**安全不是限制 Agent 能力的代价，而是你敢给它更多能力的前提。**"

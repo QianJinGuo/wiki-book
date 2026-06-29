@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/nvidia-xr-ai-ar-glasses-agent-infrastructure.md`
 
-# NVIDIA XR AI：AR/XR 设备的 AI Agent 基础设施
+## NVIDIA XR AI：AR/XR 设备的 AI Agent 基础设施
 
 > **Background**：本文基于 NVIDIA 2026-06-16 发布的 XR AI beta 公告，分析其开源 XR Agent 框架的架构设计、模型集成方案和应用场景。
 

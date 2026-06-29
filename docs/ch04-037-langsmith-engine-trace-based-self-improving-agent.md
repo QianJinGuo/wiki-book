@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 26.6KB | `entities/langsmith-engine-self-improving-agent-trace-based.md`
 
-# LangSmith Engine: Trace-Based Self-Improving Agent
+## LangSmith Engine: Trace-Based Self-Improving Agent
 
 > 来源：分析 LangChain LangSmith Engine 的工程化自改进路径——从线上 trace 自动发现问题并转化为 issue / evaluator / 回归测试
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langsmith-engine-self-improving-agent-trace-based.md)
@@ -242,7 +242,7 @@ final_answer_mismatch
 **这些信息可以沉淀成 Agent Overview 文件**——可以理解为给诊断 Agent 看的 AGENTS.md：
 
 ```markdown
-# Agent Overview
+## Agent Overview
 
 ## Agent Purpose
 这个 Agent 用于回答内部配置查询，并给出配置建议。

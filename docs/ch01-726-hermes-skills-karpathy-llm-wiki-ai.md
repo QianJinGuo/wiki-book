@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/hermes-skills-llm-wiki-self-improving-knowledge-system.md`
 
-# 手把手：用 Hermes Skills + Karpathy 的 LLM Wiki 让 AI 越用越懂你
+## 手把手：用 Hermes Skills + Karpathy 的 LLM Wiki 让 AI 越用越懂你
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-skills-llm-wiki-self-improving-knowledge-system.md)
 
@@ -21,7 +21,7 @@
 2. ## 第一步：确认 Skills 目录存在
 ls ~/.
 3. hermes/skills/
-# 如果不存在：
+## 如果不存在：
 mkdir -p ~/.
 4. hermes/skills/
 ## 第二步：理解 SKILL.

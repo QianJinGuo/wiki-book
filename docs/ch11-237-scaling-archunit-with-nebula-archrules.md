@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/scaling-archunit-with-nebula-archrules.md`
 
-# Scaling ArchUnit with Nebula ArchRules
+## Scaling ArchUnit with Nebula ArchRules
 
 > **来源**: Netflix Tech Blog · John Burns, Emily Yuan · 2026-05-08
 

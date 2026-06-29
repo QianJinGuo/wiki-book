@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/deerflow-hermes-openclaw-comparison.md`
 
-# DeerFlow · Hermes · OpenClaw 架构区别深度对比
+## DeerFlow · Hermes · OpenClaw 架构区别深度对比
 | | 🦌 DeerFlow | 🧠 Hermes | 🦞 OpenClaw |
 | **出品方** | 字节跳动 | Nous Research | Peter Steinberger |
 | **GitHub Stars** | ~28K | ~61K | ~315K |

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 16.9KB | `entities/asana-agentic-work-management-platform-lettertwo.md`
 
-# Asana Agentic Work Management Platform — Work Graph as Agentic OS
+## Asana Agentic Work Management Platform — Work Graph as Agentic OS
 
 > **Background**: 本文是 Asana 2026-06-04 发布「Agentic Work Management Platform」的产品深度报道(来源 The Letter Two),对 Asana CPO Arnab Bose 进行了独家访谈。这是 SaaSpocalypse 时代 Asana 市值腰斩后,以「work graph + 共享记忆 + 治理审计」四个支柱试图重新定义自己为「人-代理 OS」的关键产品转折。Asana 2.0 预计 2026 年夏天全面上线,所有现有客户自动获得 AI Teammate 执行配额和 Dash 访问。
 

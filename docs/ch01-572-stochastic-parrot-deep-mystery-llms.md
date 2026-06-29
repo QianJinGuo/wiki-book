@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/stochastic-parrot-deep-mystery-llms.md`
 
-# On the deep mystery of language models
+## On the deep mystery of language models
 [](<https://substackcdn.com/image/fetch/$s_!0jzu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89a5554b-665c-450c-997f-c1516c9b71f6_1024x1024.png>)
 A while back on [X](/ch01-<https://x.com/emollick/status/1960919256452796440>/), Ethan Mollick posed this challeng:
 > We really have not made a lot of progress on explaining the deep mystery of LLMs:

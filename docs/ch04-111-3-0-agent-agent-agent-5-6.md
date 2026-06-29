@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.2KB | `entities/coze-3-multimagent-team-orchestration-wangheige.md`
 
-# 扣子 3.0 多 Agent 协同实战：指挥所有 Agent 的 Agent + 5 人团队 6 步流水线
+## 扣子 3.0 多 Agent 协同实战：指挥所有 Agent 的 Agent + 5 人团队 6 步流水线
 
 ## 概述
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/tether-launches-developer-grants-program-for-local-ai-paymen.md`
 
-# Tether Developer Grants: 端侧 AI + 自托管支付的生态扩张
+## Tether Developer Grants: 端侧 AI + 自托管支付的生态扩张
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tether-launches-developer-grants-program-for-local-ai-paymen.md)
 

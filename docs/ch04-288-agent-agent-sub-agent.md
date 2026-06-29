@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/four-sub-agent-patterns-2026.md`
 
-# Agent 如何管理其他 Agent：四种 Sub Agent 模式
+## Agent 如何管理其他 Agent：四种 Sub Agent 模式
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/four-sub-agent-patterns-2026.md)
 

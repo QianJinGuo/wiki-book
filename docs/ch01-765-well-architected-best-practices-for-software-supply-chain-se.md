@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/aws-software-supply-chain-security-well-architected.md`
 
-# Well-architected best practices for software supply chain security
+## Well-architected best practices for software supply chain security
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-software-supply-chain-security-well-architected.md)
 

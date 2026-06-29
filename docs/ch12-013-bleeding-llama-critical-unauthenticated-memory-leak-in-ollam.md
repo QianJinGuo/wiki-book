@@ -192,10 +192,10 @@ alert http any any -> $OLLAMA_SERVER any (
 
 ```bash
 
-# 检测异常的模型文件写入
+## 检测异常的模型文件写入
 ausearch -k ollama_model_write | grep -E "(tmp|shm|heap)"
 
-# 检测对外网络连接（出站流量异常）
+## 检测对外网络连接（出站流量异常）
 ss -tp | grep ollama | grep ESTABLISHED | grep -v "127.0.0.1\|::1"
 ```
 

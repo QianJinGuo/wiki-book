@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/9to5google-gemini-app-extended-thinking.md`
 
-# Gemini app rolling out 'Extended' thinking level, new 3rd-party app integrations
+## Gemini app rolling out 'Extended' thinking level, new 3rd-party app integrations
 
 Ahead of I/O 2026, Google continues to roll out Gemini app features, with some users now seeing a "Thinking level" option.
 In the model picker, you'll see a new "Thinking level" menu at the bottom of the sheet. This only appears when selecting Fast (Gemini 3 Flash) or Gemini 3.1 Pro, with Thinking excluded. Your options are "Standard" and "Extended."

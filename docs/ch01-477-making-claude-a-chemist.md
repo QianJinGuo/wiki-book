@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/anthropic-com-research-making-claude-a-chemist.md`
 
-# Making Claude a chemist
+## Making Claude a chemist
 
 ## 深度分析
 

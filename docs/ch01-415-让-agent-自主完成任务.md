@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/cli-anything-wechat-demo.md`
 
-# 让 Agent 自主完成任务
+## 让 Agent 自主完成任务
 
 CLI-Anything 是香港大学数据科学实验室（HKUDS）的开源项目，核心功能是为任意 GUI 软件自动生成结构化 CLI 接口，让 AI Agent（如 Claude Code、Codex）通过命令行直接驱动 Blender、GIMP、FreeCAD 等专业软件。7 阶段全自动流水线从源码分析到包发布，配合 CLI-Hub 社区注册表实现 Agent 自主发现和安装工具。
 

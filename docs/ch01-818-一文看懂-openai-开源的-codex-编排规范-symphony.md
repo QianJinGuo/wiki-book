@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/openai-symphony-codex-orchestration-linear-control-plane-tutuai.md`
 
-# 一文看懂 OpenAI 开源的 Codex 编排规范：Symphony
+## 一文看懂 OpenAI 开源的 Codex 编排规范：Symphony
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-symphony-codex-orchestration-linear-control-plane-tutuai.md)
 

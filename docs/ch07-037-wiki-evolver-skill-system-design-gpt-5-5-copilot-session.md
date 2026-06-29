@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/wiki-evolver-skill-system-design-gpt55-copilot-session.md`
 
-# Wiki Evolver Skill System Design (GPT-5.5 Copilot Session)
+## Wiki Evolver Skill System Design (GPT-5.5 Copilot Session)
 
 ## 摘要
 

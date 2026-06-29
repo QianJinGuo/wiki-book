@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/microsoft-zero-days-researcher-disgruntled.md`
 
-# Mystery Microsoft bug leaker keeps the zero-days coming
+## Mystery Microsoft bug leaker keeps the zero-days coming
 Security pros warn YellowKey claim could make stolen laptops a much bigger problem
 ](https:&#x2F;&#x2F;www.theregister.com&#x2F;author&#x2F;connor-jones)
 Cybersecurity reporter

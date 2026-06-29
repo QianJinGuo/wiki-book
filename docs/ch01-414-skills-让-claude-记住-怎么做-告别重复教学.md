@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/claude-code-skills-workflow-encapsulation-costa-long.md`
 
-# Skills：让 Claude 记住「怎么做」，告别重复教学
+## Skills：让 Claude 记住「怎么做」，告别重复教学
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-skills-workflow-encapsulation-costa-long.md)
 
@@ -56,10 +56,10 @@ name: api-review       # 技能名称，用于 /api-review 调用
 description: 按标准流程 review API 代码，发现问题列出修复建议
 ---
 
-# 技能描述
+## 技能描述
 按标准流程 review API 代码...
 
-# 具体步骤
+## 具体步骤
 1. 读取路由文件...
 2. 对照 schema...
 3. 检查错误处理...
@@ -72,13 +72,13 @@ description: 按标准流程 review API 代码，发现问题列出修复建议
 ### 5. Skill 的两种部署粒度
 
 ```bash
-# 项目级 Skill（只对这个项目有效）
+## 项目级 Skill（只对这个项目有效）
 .claude/skills/<skill-name>/SKILL.md
 
-# 全局级 Skill（所有项目都能用）
+## 全局级 Skill（所有项目都能用）
 ~/.claude/skills/<skill-name>/SKILL.md
 
-# 调用
+## 调用
 /api-review
 ```
 

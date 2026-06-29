@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/amazon-quick-cisco-webex-mcp-meeting-prep-followup-assistant.md`
 
-# Amazon Quick + Cisco Webex MCP 会议准备与跟进助手
+## Amazon Quick + Cisco Webex MCP 会议准备与跟进助手
 
 > AWS 官方博客实战教程（2026-06-12 发布）。展示 Amazon Quick chat agent 通过 native MCP 集成编排 3 个 Cisco Webex MCP server（Meetings + Vidcast + Messaging），从单次 prompt 端到端完成 meeting 准备 + 跟进 draft，**meeting-lifecycle 闭环** 是 Amazon Quick + 第三方 MCP 集成模式的新案例。
 

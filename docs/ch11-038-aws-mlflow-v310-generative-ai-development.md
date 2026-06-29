@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.0KB | `entities/aws-mlflow-v310-generative-ai-development.md`
 
-# Streamlining generative AI development with MLflow v3.10 on Amazon SageMaker AI
+## Streamlining generative AI development with MLflow v3.10 on Amazon SageMaker AI
 Today, we're excited to announce that Amazon SageMaker AI MLflow Apps now support MLflow version 3.10, bringing enhanced capabilities for generative AI development and streamlined experiment tracking to your generative AI workflows. Building on the foundations established with [Amazon SageMaker AI MLflow Apps](/ch11-<https://aws.amazon.com/blogs/machine-learning/scaling-mlflow-for-enterprise-ai-whats-new-in-sagemaker-ai-with-mlflow/>/), this latest version introduces powerful new features for observability, evaluation, and generative AI development that help data scientists and ML engineers accelerate their AI initiatives from experimentation to production.
 In this post, we'll explore what's new in MLflow v3.10, walk you through getting started with SageMaker AI MLflow Apps, and how to leverage these enhancements to build generative AI applications.
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/direct-connect-dx-迁移最佳实践.md`
 
-# Direct Connect (DX) 迁移最佳实践
+## Direct Connect (DX) 迁移最佳实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/direct-connect-dx-迁移最佳实践.md)
 

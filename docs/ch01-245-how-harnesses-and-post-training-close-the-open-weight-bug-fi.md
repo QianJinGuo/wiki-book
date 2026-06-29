@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.4KB | `entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md`
 
-# How harnesses and post-training close the open-weight bug-finding gap
+## How harnesses and post-training close the open-weight bug-finding gap
 
 > **Background**: Vincenzo Iozzo (security researcher) ran a controlled study with 5 open-weight LLMs against a single known bug to measure how much base-model architecture vs post-training (RLHF/instruction-tuning) drives vulnerability-finding capability. Result: post-training dominates — even small open models with good harness scaffolding match or beat larger base models.
 

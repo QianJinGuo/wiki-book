@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/harness-engineering-future-persistence-vs-erosion.md`
 
-# Harness Engineering 的未来——什么会消失，什么不会
+## Harness Engineering 的未来——什么会消失，什么不会
 
 > **背景**：郭美青，2026年5月21日。本文从模型能力跃升的视角审视 Harness Engineering 的未来，提出"主权不可自生"作为划分可自动化与不可自动化工作的核心框架。
 

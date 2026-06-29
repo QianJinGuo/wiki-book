@@ -87,7 +87,7 @@ Pydantic AI 不是 LangChain 的竞品——LangChain 用链式调用组织 LLM 
 
 ---
 
-# 第 2 来源补充：agentcanvas — 把 Logfire 追踪 span 树渲染为可交互 HTML 流程图
+## 第 2 来源补充：agentcanvas — 把 Logfire 追踪 span 树渲染为可交互 HTML 流程图
 
 > ChallengeHub 2026-06-16 介绍的开源可视化工具（[github.com/vstorm-co/agentcanvas](https://github.com/vstorm-co/agentcanvas)，MIT 协议，Vstorm 团队开源）。核心价值：**填补 Pydantic 三件套生态中"可观测怎么呈现给客户"这一关键空白**——Logfire 的 OTel span 树再强大，对非技术人员（客户、决策层）依然是黑箱，agentcanvas 把 span 树翻译成可点开的流程图。
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/new-in-amazon-bedrock-agentcore-build-agents-with-broader-kn.md`
 
-# Amazon Bedrock AgentCore: 知识扩展与持续学习新能力
+## Amazon Bedrock AgentCore: 知识扩展与持续学习新能力
 
 > **背景**：2026-06-17 AWS 发布 AgentCore 平台更新，引入三大知识层接入（组织/世界/付费）与持续学习能力，是 AgentCore 从"managed harness"向"agent economy infrastructure"演进的里程碑。
 

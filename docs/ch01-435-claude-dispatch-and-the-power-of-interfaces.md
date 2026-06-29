@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/claude-dispatch-and-the-power-of-interfaces.md`
 
-# Claude Dispatch and the Power of Interfaces
+## Claude Dispatch and the Power of Interfaces
 
 ## 摘要
 

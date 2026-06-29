@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/better-decisions-at-scale-how-mathematical-optimization-deli.md`
 
-# 数学优化：在直觉失效的复杂决策中寻找确定性最优解
+## 数学优化：在直觉失效的复杂决策中寻找确定性最优解
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/better-decisions-at-scale-how-mathematical-optimization-deli.md)
 

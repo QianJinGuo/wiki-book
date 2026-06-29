@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/stripe-agent-economic-infrastructure-emily-sands.md`
 
-# Stripe 高管 Emily Sands：agent 是互联网的新经济主体 — 5 套基础设施全面上线
+## Stripe 高管 Emily Sands：agent 是互联网的新经济主体 — 5 套基础设施全面上线
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stripe-agent-economic-infrastructure-emily-sands.md)
 

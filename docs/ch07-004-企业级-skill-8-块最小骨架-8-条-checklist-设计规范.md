@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 24.2KB | `entities/skill-design-spec-8-block-checklist-winty.md`
 
-# 企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范
+## 企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范
 
 ## 概述
 

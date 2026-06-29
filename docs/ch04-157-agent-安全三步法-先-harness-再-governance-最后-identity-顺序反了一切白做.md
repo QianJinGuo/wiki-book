@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/agent-security-three-step-sequence-harness-governance-identity-crewai.md`
 
-# Agent 安全三步法：先 Harness、再 Governance、最后 Identity
+## Agent 安全三步法：先 Harness、再 Governance、最后 Identity
 
 > **核心论点**：当前 Agent 安全市场在解决**第 3 步**（identity / auth / runtime monitoring），但**正确顺序是 Harness（第 1 步）→ Governance（第 2 步）→ Identity（第 3 步）**。把 Identity 当起点是 Fortune 500 反复踩的坑——花 3 个月建 IAM，发现要 secure 的 agent 根本不能可靠运行。
 

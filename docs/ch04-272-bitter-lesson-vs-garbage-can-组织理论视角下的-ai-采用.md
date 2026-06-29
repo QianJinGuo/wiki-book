@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/bitter-lesson-garbage-can-mollick.md`
 
-# Bitter Lesson vs Garbage Can：组织理论视角下的 AI 采用
+## Bitter Lesson vs Garbage Can：组织理论视角下的 AI 采用
 
 > 2026-06-07 引用自 Ethan Mollick《The Bitter Lesson versus The Garbage Can》，One Useful Thing，2025-07-28。
 

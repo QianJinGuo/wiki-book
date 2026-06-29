@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/openhuman-ai-agent-memory-tree-tokenjuice.md`
 
-# 1.6万 Star，AI Agent 赛道又杀出一匹黑马！
+## 1.6万 Star，AI Agent 赛道又杀出一匹黑马！
 用 Claude Code 干活，有个反复出现的摩擦点：每次开一个新对话，都要重新介绍一遍自己在做什么。"我在用 Rust 写一个异步任务调度服务"，"这个项目上周刚从 tokio 0.2 迁移过来"，"你上次建议我用这个方案的"……
 说实话每次打这些东西，我都想骂人。Codex 也是这样，Cursor 也是这样，Gemini 2.5 Pro 也逃不掉——不是模型的错，是所有这些工具生来就是无状态的，你一关窗口，上下文就消失了。
 OpenHuman 这个开源项目就是冲着这个缺口去的，开源短时间内收获1.6万 Star，AI Agent又一匹黑马诞生。

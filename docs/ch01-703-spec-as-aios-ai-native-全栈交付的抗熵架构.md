@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md`
 
-# Spec as AIOS：AI-Native 全栈交付的抗熵架构
+## Spec as AIOS：AI-Native 全栈交付的抗熵架构
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md)
 

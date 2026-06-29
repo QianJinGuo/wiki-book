@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/aws-sagemaker-async-inference-inline-payloads.md`
 
-# AWS SageMaker Async Inference 内联 Payload 支持
+## AWS SageMaker Async Inference 内联 Payload 支持
 
 ## 核心变更
 
@@ -27,11 +27,11 @@ sagemaker_runtime = boto3.client("sagemaker-runtime")
 
 payload = json.dumps({"inputs": "your prompt here"}).encode("utf-8")
 
-# 1. Upload to S3
+## 1. Upload to S3
 input_key = f"async-input/{uuid.uuid4()}.json"
 s3.put_object(Bucket="my-async-bucket", Key=input_key, Body=payload)
 
-# 2. Invoke with S3 URI
+## 2. Invoke with S3 URI
 response = sagemaker_runtime.invoke_endpoint_async(
     EndpointName="my-async-endpoint",
     InputLocation=f"s3://my-async-bucket/{input_key}",

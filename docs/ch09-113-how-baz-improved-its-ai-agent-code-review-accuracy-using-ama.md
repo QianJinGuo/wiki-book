@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md`
 
-# How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore
+## How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore
 
 ## 相关实体
 - [linear code intelligence: controlled codebase access for lin](/ch04-325-linear-code-intelligence-controlled-codebase-access-for-lin/)

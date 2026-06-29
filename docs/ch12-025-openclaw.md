@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/openclaw-security-and-feature-enhancement-practices.md`
 
-# OpenClaw 安全和功能增强实践
+## OpenClaw 安全和功能增强实践
 
 > AWS 中国官方博客 2026-03-12 发布，作者"龙虾阿含"在 AWS EC2 上自托管 OpenClaw 后，从**安全防护**与**功能增强**两条主线整理的工程实践记录。本质是"不是官方教程，而是实际踩坑后的复盘"——把自托管 AI Agent 部署的实战安全风险与缓解措施系统化。
 >

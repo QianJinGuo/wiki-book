@@ -16,7 +16,7 @@ sources: [raw/articles/loop-engineering-addy-osmani-challengehub, raw/articles/l
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/loop-engineering-addy-osmani-challengehub.md)
 
-# Loop Engineering：比 Harness 更高一层的编程范式
+## Loop Engineering：比 Harness 更高一层的编程范式
 
 Addy Osmani 提出 Loop Engineering——比 Agent Harness Engineering 再高一层的抽象：不再是人给智能体写提示词，而是**设计一套系统替你写提示词**。Peter Steinberger 和 Claude Code 负责人 Boris Cherny 均已实践此模式。
 

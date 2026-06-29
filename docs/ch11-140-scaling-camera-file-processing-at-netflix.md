@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/scaling-camera-file-processing-at-netflix.md`
 
-# Scaling Camera File Processing at Netflix
+## Scaling Camera File Processing at Netflix
 
 ## 摘要
 

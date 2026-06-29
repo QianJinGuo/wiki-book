@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/netflix-oci-agent-human-augmenting-causal-inference.md`
 
-# Netflix OCI-Agent: 人机协同因果推断 Agentic Workflow
+## Netflix OCI-Agent: 人机协同因果推断 Agentic Workflow
 
 Netflix 开源的 **oci-agent** 是一个面向观察性因果推断（Observational Causal Inference, OCI）的人机协同 Agentic Workflow。核心设计哲学：Agent 负责执行和诊断，人类负责判断和决策——不是替代而是增强（human-augmenting）。
 

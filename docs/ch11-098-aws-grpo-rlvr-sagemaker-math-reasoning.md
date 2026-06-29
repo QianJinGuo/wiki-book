@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/aws-grpo-rlvr-sagemaker-math-reasoning.md`
 
-# Overcoming reward signal challenges: Verifiable rewards-based reinforcement learning with GRPO on SageMaker AI
+## Overcoming reward signal challenges: Verifiable rewards-based reinforcement learning with GRPO on SageMaker AI
 Training large language models requires accurate feedback signals, but traditional reinforcement learning (RL) often struggles with reward signal reliability. The quality of these signals directly influences how models learn and make decisions. However, creating robust feedback mechanisms can be complex and error prone. Real-world training scenarios often introduce hidden biases, unintended incentives, and ambiguous success criteria that can derail the learning process, leading to models that behave unpredictably or fail to meet desired objectives.
 In this post, you will learn how to implement reinforcement learning with verifiable rewards (RLVR) to introduce verification and transparency into reward signals to improve training performance. This approach works best when outputs can be objectively verified for correctness, such as in mathematical reasoning, code generation, or symbolic manipulation tasks. You will also learn how to layer techniques like Group Relative Policy Optimization (GRPO) and few-shot examples to further improve results. You'll use the [GSM8K](/ch11-<https://huggingface.co/datasets/openai/gsm8k/viewer/main/train?row=7294&views%5B%5D=main_train>/) dataset (Grade School Math 8K: a collection of grade school math problems) to improve math problem solving accuracy, but the techniques used here can be adapted to a wide variety of other use cases.
 
@@ -121,13 +121,13 @@ RLVR适用于**输出可客观验证**的场景：
 
 ```python
 
-# 分布式训练环境变量
+## 分布式训练环境变量
 env["FI_PROVIDER"] = "efa"  # 启用EFA高速网络
 env["NCCL_PROTO"] = "simple"
 env["NCCL_IB_DISABLE"] = "1"  # 禁用IB，使用EFA
 
-# DeepSpeed ZeRO-3配置
-# 分割optimizer states、gradients、parameters到多GPU
+## DeepSpeed ZeRO-3配置
+## 分割optimizer states、gradients、parameters到多GPU
 ```
 
 实例类型ml.g6.48xlarge（基于NVIDIA GPU）配合EFA网络，可有效支持亿参数模型的分布式RLVR训练。

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/读完这篇你就搞懂-deepseek-v4-了.md`
 
-# 读完这篇，你就搞懂 DeepSeek v4 了
+## 读完这篇，你就搞懂 DeepSeek v4 了
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/读完这篇你就搞懂-deepseek-v4-了.md)
 

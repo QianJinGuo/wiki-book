@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/skillclaw-hyman-nightly-evolution-alibaba.md`
 
-# Agent 技能夜间自进化——阿里开源 SkillClaw，最高提升 88%
+## Agent 技能夜间自进化——阿里开源 SkillClaw，最高提升 88%
 > 来源：Hyman的杂货铺，2026-04-11
 > 论文：https://arxiv.org/abs/2604.08377
 > 代码：https://github.com/AMAP-ML/SkillClaw

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.3KB | `entities/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md`
 
-# 1-Click GitHub Token Stealing via a VSCode Bug
+## 1-Click GitHub Token Stealing via a VSCode Bug
 
 > **Background**：本文档基于对 [ammaraskar 博客原文](https://blog.ammaraskar.com/github-token-stealing/) 的直接抓取与提炼，原始研究由独立安全研究员 Ammar Askar 在 2026 年发布。文章披露了 VSCode / github.dev 的一个 webview + postMessage 跨域访问控制缺陷，允许攻击者通过构造恶意 URL 一次性窃取受害者的 GitHub Personal Access Token（PAT），并进一步获得仓库、PR、CI 完整访问权限。
 

@@ -6,7 +6,7 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/superpowers-6-reviewer-anti-cheating-shuge-2026.md)
 
-# Superpowers 6.0 反作弊重写：守门人焊死工程
+## Superpowers 6.0 反作弊重写：守门人焊死工程
 
 术哥（ShugeX）源码级分析 Superpowers v6.0.3，翻 158 commits + 3 核心 prompt + 3 shell 脚本。核心结论：**6.0 不是性能调优，是围绕 reviewer 角色的结构性重写**——堵住 controller 被反复观测到的几条作弊路径，提速降本是结构改造的副产品。
 

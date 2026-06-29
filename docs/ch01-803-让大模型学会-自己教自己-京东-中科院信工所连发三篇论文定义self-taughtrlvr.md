@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/self-taught-rlvr-jd-cii-2026.md`
 
-# 让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义Self-TaughtRLVR
+## 让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义Self-TaughtRLVR
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/self-taught-rlvr-jd-cii-2026.md)
 

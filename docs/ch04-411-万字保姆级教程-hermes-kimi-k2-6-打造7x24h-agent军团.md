@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/hermes-agent-k2-6-multi-agent.md`
 
-# 万字保姆级教程：Hermes+Kimi K2.6 打造7x24h Agent军团
+## 万字保姆级教程：Hermes+Kimi K2.6 打造7x24h Agent军团
 > - 主题：Hermes Agent 多智能体军团 + Kimi K2.6 模型实战教程
 > 作者苍何（521篇原创）分享了用 Hermes Agent + Kimi K2.6 搭建 7×24h 不间断运行的 AI 研发军团的完整教程。从飞书下达需求到最终交付，市场调研、PRD、架构设计、开发、测试全部由不同 Agent 自主完成。
 

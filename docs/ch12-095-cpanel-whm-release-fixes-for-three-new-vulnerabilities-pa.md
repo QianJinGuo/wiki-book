@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/cpanel-whm-patch-3-new-vulnerabilities.md`
 
-# cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now
+## cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now
 #1 Trusted Cybersecurity News Platform
 Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](https://www.linkedin.com/company/thehackernews/)[__](https://www.facebook.com/thehackernews)
 [![Image 1: The Hacker News Logo](blob:http://localhost/5c34172ae87fab3ecb77bf8cfaf83e48)](http://thehackernews.com/)

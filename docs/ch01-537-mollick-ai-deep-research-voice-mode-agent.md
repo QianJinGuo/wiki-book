@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/using-ai-right-now-mollick-quick-guide.md`
 
-# Mollick 实用 AI 选型指南：模型选择·Deep Research·Voice Mode·Agent 工作流
+## Mollick 实用 AI 选型指南：模型选择·Deep Research·Voice Mode·Agent 工作流
 
 > 2026-06-07 引用自 Ethan Mollick《Using AI Right Now: A Quick Guide》，One Useful Thing，2025-06-23。
 

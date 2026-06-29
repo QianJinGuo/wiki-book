@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/demis-hassabis-yc-interview-2026.md`
 
-# Demis Hassabis YC 专访：Agent 才刚刚开始，AI 下一步是创造虚拟细胞
+## Demis Hassabis YC 专访：Agent 才刚刚开始，AI 下一步是创造虚拟细胞
 > AI寒武纪 | 2026-05-01 | 转述 Self-Directed Investing Summit / YC "How to Build the Future" 专访
 
 - **AGI 预测：2030 年左右**（Hassabis 个人判断）

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/codex-sites-cloudflare-worker-one-click-deploy-geekhome.md`
 
-# OpenAI Codex Sites：AI 一句话建站部署，Cloudflare Worker + D1 + R2 全套（极客之家译介）
+## OpenAI Codex Sites：AI 一句话建站部署，Cloudflare Worker + D1 + R2 全套（极客之家译介）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/codex-sites-cloudflare-worker-one-click-deploy-geekhome.md)
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/claude-skill-quality-tool-skill-craft.md`
 
-# Skill Craft：Claude Skill 质量工程工具
+## Skill Craft：Claude Skill 质量工程工具
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-skill-quality-tool-skill-craft.md)
 

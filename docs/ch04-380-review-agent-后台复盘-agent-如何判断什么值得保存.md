@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/review-agent-how-it-decides-what-to-save-winty.md`
 
-# Review Agent：后台复盘 Agent 如何判断什么值得保存
+## Review Agent：后台复盘 Agent 如何判断什么值得保存
 如果说 Nudge Engine 是 Hermes 的"开关"，那 Review Agent 就是它的"心智"。
 我读 Hermes 源码时最佩服的一处设计就是这一块。它没有让"执行任务的那个 Agent"自己复盘自己，而是单独跑了一个专门负责反思的 Agent，在后台默默工作。
 这件事看起来很小，但解决的是一个非常根本的工程问题：让一个正在干活的人评判自己刚刚干得好不好，结果总是又长又自夸又没用。

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.3KB | `entities/xz-utils-backdoor-maintainer-trust-hijack-2-years-on.md`
 
-# xz-utils Backdoor 2 Years On — Maintainer Trust Hijack Pattern Beyond CVE Scanners
+## xz-utils Backdoor 2 Years On — Maintainer Trust Hijack Pattern Beyond CVE Scanners
 
 > **核心论点**：CVE-2024-3094（xz-utils 后门）不是被 CVE scanner 发现的，是被 Andres Freund（PostgreSQL maintainer）注意到 SSH login 慢了 500ms 后追溯出来的。**整个攻击链是"maintainer 信任劫持"而非"代码漏洞"**——这意味着 CVE-driven scanner 结构性无法在攻击发生时检测，只能在 CVE 出现后告警。
 

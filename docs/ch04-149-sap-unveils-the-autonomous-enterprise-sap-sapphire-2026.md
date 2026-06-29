@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.9KB | `entities/news-sap-com-sap-unveils-the-autonomous-enterprise.md`
 
-# SAP Autonomous Enterprise 发布 | SAP Sapphire 2026
+## SAP Autonomous Enterprise 发布 | SAP Sapphire 2026
 
 **SAP Autonomous Enterprise** 是 SAP 在 2026 年 5 月 12 日 SAP Sapphire 大会上正式发布的企业 AI 转型框架，旨在将 AI Agent 深度嵌入企业关键业务流程，实现 "human-AI collaboration" 的下一代企业运营模式。该框架以 **SAP Business AI Platform** 为基础设施，辅以 **SAP Autonomous Suite** 执行层和 **Joule Work** 交互界面，构成一套完整的企业级 AI 自治系统。
 
