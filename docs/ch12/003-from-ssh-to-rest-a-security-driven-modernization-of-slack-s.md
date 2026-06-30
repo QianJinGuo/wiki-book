@@ -71,7 +71,7 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - [Wetesteddeepseekv4Proandflashagainstclau](ch04/310-ai.md)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/310-ai.md)
-- [Why Internally Built Ai Fails Fund Accounting Audits](ch01/123-why-internally-built-ai-fails-fund-accounting-audits.md)
+- [Why Internally Built Ai Fails Fund Accounting Audits](ch01/622-why-internally-built-ai-fails-fund-accounting-audits.md)
 - Senatorsquerycreditbureausonbnpl
 
 - [Cpanel Whm Patch 3 New Vulnerabilities](https://github.com/QianJinGuo/wiki/blob/main/entities/cpanel-whm-patch-3-new-vulnerabilities.md)

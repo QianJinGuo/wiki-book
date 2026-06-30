@@ -270,18 +270,18 @@ AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物�
 - [Agent Architecture & Harness](ch04/503-agent.md) — Agent 架构与 Harness 的关系
 - [Open-Claw Tool 消息总线](ch04/503-agent.md) — 子 Agent 管理架构实践
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](ch04/503-agent.md)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch04/310-ai.md)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch04/150-ai.md)
 - [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
-- [吴恩达：AI 将最先杀死前端](ch04/310-ai.md)
+- [吴恩达：AI 将最先杀死前端](ch04/150-ai.md)
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/245-skill.md)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/692-anthropic.md)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/707-anthropic.md)
 - [你写的 Skill，及格了吗？](ch04/245-skill.md)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch01/380-claude.md)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/503-agent.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/073-claude-code.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [天猫新品营销技术团队AI编码实战指南（上）](ch04/310-ai.md)
+- [天猫新品营销技术团队AI编码实战指南（上）](ch04/150-ai.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/503-agent.md)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
@@ -291,12 +291,12 @@ AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物�
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/503-agent.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/061-harness-engineering.md)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch03/012-openclaw.md)
-- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/310-ai.md)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/310-ai.md)- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/015-harness.md)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/207-openclaw.md)
+- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/150-ai.md)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/150-ai.md)- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/015-harness.md)
 
 ## Related
-- [AI Agent 工程师能力地图](ch04/310-ai.md)
+- [AI Agent 工程师能力地图](ch04/150-ai.md)
 
 ---
 

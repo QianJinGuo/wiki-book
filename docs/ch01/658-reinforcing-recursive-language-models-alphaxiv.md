@@ -43,7 +43,7 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [Reinforcing Recursive Language Models | alphaXiv](ch01/649-reinforcing-recursive-language-models-alphaxiv.md)
+- [Reinforcing Recursive Language Models | alphaXiv](ch01/658-reinforcing-recursive-language-models-alphaxiv.md)
 - [Language Models and Meaning](ch01/385-language-models-and-meaning.md)
 - [Language Models and Meaning](ch01/385-language-models-and-meaning.md)
 

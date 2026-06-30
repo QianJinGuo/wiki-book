@@ -11,7 +11,7 @@
 ## 相关实体
 - [Intelligent Radiology Workflow Optimization With Ai Agents](ch04/287-intelligent-radiology-workflow-optimization-with-ai-agents.md)
 - [Amazon Nova Act Is Now Hipaa Eligible](ch04/397-amazon-nova-act-is-now-hipaa-eligible.md)
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/567-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/569-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Improve Bot Accuracy With Amazon Lex Assisted Nlu](ch01/525-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch04/310-ai.md)
 

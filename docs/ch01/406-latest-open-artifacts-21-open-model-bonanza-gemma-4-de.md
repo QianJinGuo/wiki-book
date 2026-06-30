@@ -70,9 +70,9 @@ IRT 校准后的得分更能反映模型的真实能力，减少了"简单题目
 
 ## 相关实体
 - [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-19-qwen-glm-minimax-interconnects.md)
-- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](ch01/217-latest-open-artifacts-20-new-orgs-new-types-of-models.md)
+- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](ch01/215-latest-open-artifacts-20-new-orgs-new-types-of-models.md)
 - [Reading Todays Open Closed Performance Gap](https://github.com/QianJinGuo/wiki/blob/main/entities/reading-todays-open-closed-performance-gap.md)
-- [How Open Model Ecosystems Compound](ch01/665-how-open-model-ecosystems-compound.md)
+- [How Open Model Ecosystems Compound](ch01/677-how-open-model-ecosystems-compound.md)
 - [Wetesteddeepseekv4Proandflashagainstclau](ch04/310-ai.md)
 
 ## 相关引用

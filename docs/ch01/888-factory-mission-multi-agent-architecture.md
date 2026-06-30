@@ -1,6 +1,6 @@
-# factory mission multi agent architecture
+# Factory Mission Multi Agent Architecture
 
-## Ch01.888 factory mission multi agent architecture
+## Ch01.888 Factory Mission Multi Agent Architecture
 
 > 📊 Level ⭐⭐⭐ | 12.8KB | `entities/factory-mission-multi-agent-architecture.md`
 
@@ -87,7 +87,7 @@ worker 做完 feature 必须填写：完成了什么 / 未完成项 / 执行命�
 > **验证独立于实现、交接强制结构化** — 适用于任何想让 agent 持续运行多日的产品，不只限于 coding。
 
 ## 相关框架对比
-- **[DeerFlow vs Hermes vs OpenClaw](ch03/012-openclaw.md)** — 都是 multi-agent 编排框架，与 Mission 的三角架构有相通之处
+- **[DeerFlow vs Hermes vs OpenClaw](ch11/207-openclaw.md)** — 都是 multi-agent 编排框架，与 Mission 的三角架构有相通之处
 
 ## 深度分析
 ### 1. 核心矛盾：人类注意力 vs 模型并行能力
@@ -130,11 +130,11 @@ Factory 押注模型会持续 speciate（分化），而不是收敛到单一 su
 *评审：Value 8 × Confidence 8 = 64 | ★★★★ | STRONG PASS*
 
 ## 相关实体
-- [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](ch04/310-ai.md)
+- [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](ch04/150-ai.md)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](ch04/503-agent.md)
 - [OpenClaw 多智能体团队搭建实战经验](ch04/503-agent.md)
-- [你不知道的 Agent 原理架构与工程实践](ch04/302-agent-principle-architecture-engineering-practice.md)
+- [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
 - [Agent Harness 架构](ch04/503-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 

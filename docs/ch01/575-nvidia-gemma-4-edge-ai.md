@@ -8,11 +8,11 @@
 Bringing AI Closer to the Edge and On&#x2d;Device with Gemma 4 | NVIDIA Technical Blog DEVELOPER Home Blog Forums Docs Downloads Training Join Technical Blog Subscribe Related Resources Agentic AI / Generative AI Bringing AI Closer to the Edge and On-Device with Gemma 4 Apr 02, 2026 By Anu Srivastava Like Discuss (0) L T F R E AI-Generated Summary Like Dislike The Gemma 4 multimodal and multilingual model family was launched to support a wide range of AI tasks, offering improved efficiency and accuracy, and can be deployed across the full spectrum of NVIDIA hardware, from Blackwell data centers to Jetson edge devices. Four models are included, featuring Gemmas first MoE model, and support for over 140 languages; these models enable reasoning, code generation, agent tool use, and multimodal input, and can be deployed locally using vLLM, Ollama, llama.cpp, and Unsloth for efficient workflows. Developers can fine-tune and deploy Gemma 4 models securely on NVIDIA platforms using tools like NeMo Automodel and NVIDIA NIM, with production-ready microservices and commercial-friendly licensing available for enterprise and on-device use. AI-generated content may summarize information incompletely. Verify important information. Learn more The Gemmaverse expands with the launch of the latest Gemma 4 multimodal and multilingual models, designed to scale across the full spectrum of deployments, from NVIDIA Blackwell in the data center to Jetson at the edge. These models are suited to meet the growing demand for local deployment for AI development and prototyping, secure on-prem requirements, cost efficiency, and latency-sensitive use cases. The newest generation improves both efficiency and accuracy, making these general-purpose models well-suitable for a wide range of common tasks: Reasoning: Strong performance on complex problem-solving tasks. Coding: Code generation and debugging for developer workflows. Agents: Native support for structured tool use (function call... [truncated]
 
 ## 相关实体
-- [Nvidia Telco Reasoning Models Nemo](ch01/192-nvidia-telco-reasoning-models-nemo.md)
+- [Nvidia Telco Reasoning Models Nemo](ch01/190-nvidia-telco-reasoning-models-nemo.md)
 - [Nvidia Edge First Llms Av Robotics](ch01/208-nvidia-edge-first-llms-av-robotics.md)
 - [Nvidia Multimodal Rag Knowledge Systems](ch01/285-multimodal.md)
 - [Nvidia Agentic Ai Subsurface Engineering](ch04/316-nvidia-agentic-ai-subsurface-engineering.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/342-nvidia-secure-local-agent-nemoclaw-openclaw.md)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/344-nvidia-secure-local-agent-nemoclaw-openclaw.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-gemma-4-edge-ai.md)
 

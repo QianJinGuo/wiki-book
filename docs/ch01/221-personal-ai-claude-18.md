@@ -225,7 +225,7 @@ good example:   ^[原文存档](https://raw.githubusercontent.com/QianJinGuo/wik
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md) ^[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)]
 
-- [gsd-get-shit-done-context-management-tool](ch01/198-gsd-get-shit-done-context-management-tool.md)
+- [gsd-get-shit-done-context-management-tool](ch01/196-gsd-get-shit-done-context-management-tool.md)
 
 ---
 

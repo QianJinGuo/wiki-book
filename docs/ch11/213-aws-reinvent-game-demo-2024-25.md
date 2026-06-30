@@ -40,7 +40,7 @@ AWS Bedrock 平台与游戏场景的结合成为 Demo 亮点：
 4. **云游戏架构选型时，优先评估 G5 实例的性价比**。相较于上一代 G4dn，G5 提供 2x GPU 内存和更高的 NVIDIA Driver 版本支持。对于需要运行小型 LLM（如 7B 参数模型）进行推理的游戏内 AI，G5 的单卡即可支撑，无需额外配置。
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/503-agent.md)
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch04/503-agent.md)

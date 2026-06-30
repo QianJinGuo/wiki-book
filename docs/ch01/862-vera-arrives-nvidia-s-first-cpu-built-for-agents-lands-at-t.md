@@ -19,12 +19,12 @@ NVIDIA Vera 是全球首款专为 AI Agent 场景设计的 CPU，标志着芯片
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Blogs.Nvidia.Com Vera Cpu Delivery](https://github.com/QianJinGuo/wiki/blob/main/entities/blogs.nvidia.com-vera-cpu-delivery.md)
-- [Anthropic Demystifying Evals For Ai Agents](ch04/392-anthropic-demystifying-evals-for-ai-agents.md)
+- [Anthropic Demystifying Evals For Ai Agents](ch04/395-anthropic-demystifying-evals-for-ai-agents.md)
 - [Nvidia Edge First Llms Av Robotics](ch01/208-nvidia-edge-first-llms-av-robotics.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch04/503-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md)
-- [从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](ch04/310-ai.md)
+- [从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](ch04/150-ai.md)
 
 ---
 

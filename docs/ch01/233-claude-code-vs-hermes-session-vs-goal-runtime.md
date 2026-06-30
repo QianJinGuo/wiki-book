@@ -220,7 +220,7 @@ IDE 是工程现场, 但不是人的全部工作现场. **Hermes 真正想解决
 | 实体 | 角度 | 互补性 |
 |------|------|------|
 | [Harness 7 Layers OpenClaw/Hermes/Claude Code](ch03/073-claude-code.md) | 3 工具 × 7 层 harness 视角 | **互补** (本实体: 2 工具 × 6 维生命周期) |
-| [Hermes 9 Module 架构](ch01/349-hermes-9-module-architecture-winty.md) | Hermes 源码级 | 互补 (本实体: 跨工具对比) |
+| [Hermes 9 Module 架构](ch01/342-hermes-9-module-architecture-winty.md) | Hermes 源码级 | 互补 (本实体: 跨工具对比) |
 | [Claude Code Agentic Harness](ch03/073-claude-code.md) | CC 内部 harness 模式 | 互补 (本实体: CC vs Hermes 外部对比) |
 | [Hermes Goal Runtime 架构](ch04/503-agent.md) | Goal-in-loop 实现 | **直接相关** (本实体 Goal 概念的实现) |
 

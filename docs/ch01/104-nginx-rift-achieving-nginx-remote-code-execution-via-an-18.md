@@ -12,7 +12,7 @@
 - [Cogalpha Acl2026 Alpha Mining](https://github.com/QianJinGuo/wiki/blob/main/entities/cogalpha-acl2026-alpha-mining.md)
 - [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Runtime Instrumentation Of Qt6 Apps With Frida Part 1 Getting Visibility](ch01/010-runtime-instrumentation-of-qt6-apps-with-frida-part-1-get.md)
+- [Runtime Instrumentation Of Qt6 Apps With Frida Part 1 Getting Visibility](ch01/009-runtime-instrumentation-of-qt6-apps-with-frida-part-1-get.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nginx-rift-achieving-nginx-remote-code-execution-v.md)
 

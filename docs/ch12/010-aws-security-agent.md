@@ -353,8 +353,8 @@ AWS Security Agent 的 Cross-Account VPC 能力解决了金融科技公司长期
 - [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](ch04/310-ai.md)
 - [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/024-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch04/310-ai.md)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/234-bedrock.md)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch09/117-amazon-quick.md)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/236-bedrock.md)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch11/195-amazon-quick.md)
 
 ---
 

@@ -134,8 +134,8 @@ Catalog的价值会随着Agent数量增加而指数增长。当只有一个Agent
 - [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/310-ai.md)
 - [从多智能体编排到Ai自主决策资损防控体系的架构演进](ch04/310-ai.md)
 - [Hermes Agent Goal Runtime Architecture](ch04/503-agent.md)
-- [Gpt Image 2完全指南](ch01/695-gpt-image-2.md)
-- [一次构建随处复用Python 泛型仓库模式](ch04/469-python.md)
+- [Gpt Image 2完全指南](ch01/730-gpt-image-2.md)
+- [一次构建随处复用Python 泛型仓库模式](ch04/486-python.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-开发范式演进从环境工程出发.md)

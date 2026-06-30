@@ -25,7 +25,7 @@ Stainless成立于2022年，专注于将API规范自动转换为多语言SDK（T
 - `Openai Buys Ai Consultancy Enterprises` — OpenAI 收购相关案例，与 Anthropic 收购 Stainless 对比
 
 ## 相关实体
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/567-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/569-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Improve Bot Accuracy With Amazon Lex Assisted Nlu](ch01/525-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [Opensquilla](ch01/512-opensquilla.md)
 - [Dictation Agents Human Workspace](ch04/503-agent.md)

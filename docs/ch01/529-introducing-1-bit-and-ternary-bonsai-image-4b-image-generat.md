@@ -52,7 +52,7 @@ PrismML 发布 Bonsai Image 4B——基于 FLUX.2 Klein 4B 架构的两种极低
 
 ## 相关实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/815-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/503-agent.md)

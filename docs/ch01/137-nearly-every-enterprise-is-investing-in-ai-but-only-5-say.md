@@ -34,7 +34,7 @@
 5. **数据治理成熟度评估**：将数据治理成熟度作为AI项目立项的前置条件
 ## 相关实体
 - [Enterprise Ai Investment Data Readiness Cio](ch04/310-ai.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/796-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/815-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
 - [Shinyhunters Canvas Domain Suspended](ch04/310-ai.md)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/310-ai.md)
 - [Clinereleasesopen Sourceagentruntimesdk](ch04/503-agent.md)

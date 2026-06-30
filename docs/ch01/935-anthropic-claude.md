@@ -91,9 +91,9 @@ Alex 明确表示：Anthropic 内部已经有专职研究人员的全职工作�
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/073-claude-code.md)
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch04/503-agent.md)
 - [Claude Managed Agents 官方 Harness 平台指南](ch04/503-agent.md)
-- [Anthropic Computer Use 最佳实践](ch01/673-anthropic-computer-use.md)
+- [Anthropic Computer Use 最佳实践](ch01/684-anthropic-computer-use.md)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch04/503-agent.md)
-- [Anthropic Founders Playbook：AI 原生创业手册](ch01/692-anthropic.md)
+- [Anthropic Founders Playbook：AI 原生创业手册](ch01/707-anthropic.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
 

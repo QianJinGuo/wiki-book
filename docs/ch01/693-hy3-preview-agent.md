@@ -8,16 +8,16 @@
 
 ## 相关实体
 
-- [an opinionated guide to using ai right now](ch09/073-an-opinionated-guide-to-using-ai-right-now.md)
+- [an opinionated guide to using ai right now](ch09/074-an-opinionated-guide-to-using-ai-right-now.md)
 - [cmu language models need sleep (arxiv 2605.26099)：ssm-attent](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2605-26099-ssm-attention-sleep-consolidation-cmu.md)
 - [rod johnson 回归：embabel 与「最后一波由人类选择的框架」](ch07/019-embabel.md)
 - [how my non-engineering team at sentry learned to ship](ch01/384-how-my-non-engineering-team-at-sentry-learned-to-ship.md)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](ch04/310-ai.md)
 - [latest open artifacts (#19): qwen 3.5, glm 5, minimax 2.5 —](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](ch04/310-ai.md)
-- [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](ch01/653-self-taught-rlvr.md)
+- [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](ch01/664-self-taught-rlvr.md)
 - [the recent history of ai in 32 otters](ch01/501-the-recent-history-of-ai-in-32-otters.md)
-- [5亿视频炼出全球最大gui开源数据集、推理token省71%小模型反超大模型——小米ai团队多篇论文入选icml 202](ch01/896-icml-2026.md)
+- [5亿视频炼出全球最大gui开源数据集、推理token省71%小模型反超大模型——小米ai团队多篇论文入选icml 202](ch01/908-icml-2026.md)
 - [天猫新品团队ai编码实战指南（下）](ch04/310-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tencent-hunyuan-hy3-preview-open-source.md)
 

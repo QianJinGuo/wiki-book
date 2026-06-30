@@ -1,6 +1,6 @@
-# ai coding guide tmall deep dive
+# AI Coding Guide Tmall Deep Dive
 
-## Ch09.013 ai coding guide tmall deep dive
+## Ch09.013 AI Coding Guide Tmall Deep Dive
 
 > 📊 Level ⭐⭐ | 22.0KB | `entities/ai-coding-guide-tmall-deep-dive.md`
 
@@ -382,10 +382,10 @@ AI编码过程中，有个比较重要的关注点是在保证迭代成功率的
 
 ## 相关实体
 - [Karpathy Claude Md Rules](ch01/380-claude.md)
-- [Ai Memory Architecture Deep Dive](ch04/310-ai.md)
-- [Tmall Ai Coding Practice Team Knowledge Base](ch09/067-tmall-ai-coding-practice-team-knowledge-base.md)
+- [Ai Memory Architecture Deep Dive](ch04/150-ai.md)
+- [Tmall Ai Coding Practice Team Knowledge Base](ch09/068-tmall-ai-coding-practice-team-knowledge-base.md)
 - [Tmall Ai Coding Practice Team Knowledge Base Npm](ch01/348-tmall-ai-coding-practice-team-knowledge-base-npm.md)
-- [Pi Openclaw Coding Harness](ch03/012-openclaw.md)
+- [Pi Openclaw Coding Harness](ch11/207-openclaw.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-coding-guide-tmall-deep-dive.md)

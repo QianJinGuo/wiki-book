@@ -110,13 +110,13 @@ Caturegli 分析认为，该仓库的使用模式显示个人将其作为工作�
 ## 外部参考
 
 ## 相关实体
-- [Github Copilot Individual Plans Flex Allotments](ch01/676-github.md)
-- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](ch01/676-github.md)
+- [Github Copilot Individual Plans Flex Allotments](ch01/590-github-copilot-individual-plans-flex-allotments-in-pro-and.md)
+- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](ch12/003-token.md)
 - [Andrej Karpathy Claude Md 134K Stars 2026](ch01/380-claude.md)
-- [Open Source Projects Leaving Github](ch01/676-github.md)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/179-cost-effective-deployment-of-vision-language-models-for-pet.md)
+- [Open Source Projects Leaving Github](ch01/688-github.md)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/181-cost-effective-deployment-of-vision-language-models-for-pet.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cisa-admin-leaked-aws-govcloud-keys-on-github.md)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](ch01/676-github.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cisa-admin-leaked-aws-govcloud-keys-on-github.md)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](ch01/688-github.md)
 
 ---
 

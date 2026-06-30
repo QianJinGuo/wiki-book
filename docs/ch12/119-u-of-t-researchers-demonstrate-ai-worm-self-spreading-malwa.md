@@ -115,7 +115,7 @@
 - [The Agentic Trust Management Platform Drata](ch04/017-the-agentic-trust-management-platform-drata.md) — Drata agentic trust 平台
 - [Enterprise Openclaw Security Deploy Architecture Guide](ch03/012-openclaw.md) — OpenClaw 部署安全
 - [Introducing Aimap Security Testing For Ai Agent Bishop Fox](ch04/310-ai.md) — Bishop Fox AI agent 安全测试
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/112-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md) — Anthropic Mythos 漏洞共享
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/635-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md) — Anthropic Mythos 漏洞共享
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — Microsoft Rampart/Clarity 开源
 
 ---

@@ -202,12 +202,12 @@ Emily Sands（Stripe 高管）2026-06-04 发表于 X（45.8K 次浏览，整理�
 ## 相关主题
 
 - AI 变现 / 定价 — [Aws Generative Ai Model Agility Framework](ch11/143-aws-generative-ai-model-agility-framework.md) / [Agent Skills Comprehensive Survey](ch04/245-skill.md)
-- Agent 平台化 — [Baixing Ontoz Enterprise Ontology Multi Agent](ch04/310-ai.md) / [Kimi Work Codex Vibe Working Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)
+- Agent 平台化 — [Baixing Ontoz Enterprise Ontology Multi Agent](ch04/150-ai.md) / [Kimi Work Codex Vibe Working Paradigm Shift](ch01/434-codex.md)
 - Claude Code / Vibe Coding — [Claude Code Architecture](ch03/073-claude-code.md)
-- Token 盗窃防护 — [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](ch01/676-github.md) / Vercel Token Theft 防护
-- A2A 智能体经济 — [Baixing Ontoz Enterprise Ontology Multi Agent](ch04/310-ai.md)（长期布局）
+- Token 盗窃防护 — [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](ch12/003-token.md) / Vercel Token Theft 防护
+- A2A 智能体经济 — [Baixing Ontoz Enterprise Ontology Multi Agent](ch04/150-ai.md)（长期布局）
 - 企业 AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](ch04/503-agent.md)
-- 稳定币 / 加密 — [Inngest Ai And Backend Workflows Orchestrated At Any Scale](ch04/310-ai.md)
+- 稳定币 / 加密 — [Inngest Ai And Backend Workflows Orchestrated At Any Scale](ch04/150-ai.md)
 
 ---
 

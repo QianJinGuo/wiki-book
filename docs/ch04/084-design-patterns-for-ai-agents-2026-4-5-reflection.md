@@ -52,7 +52,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 ## 相关实体
 - [Code as Agent Harness 综述](ch09/046-code-as-agent-harness.md)
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](ch04/503-agent.md)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/042-coding-agent.md)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
 - [Agent Harness 解析：智能体架构深度拆解](ch04/503-agent.md)
 - [From Agent Protocol to Harness Skill](ch04/354-from-agent-protocol-to-harness-skill.md)
 - [Agent Memory 架构解析](ch04/503-agent.md)
@@ -68,7 +68,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 
 - [Thin Harness Fat Skills](ch04/245-skill.md)
-- [你不知道的 Agent 原理架构与工程实践](ch04/302-agent-principle-architecture-engineering-practice.md)
+- [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [AI Agent 工程师能力地图](ch04/310-ai.md)
 

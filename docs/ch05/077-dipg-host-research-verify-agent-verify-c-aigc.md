@@ -229,13 +229,13 @@ DIPG 的独特贡献是：**把"verify 闭环"工程化到具体代码级别**�
 ## 相关实体
 - [Wall Not Model Harness Three Case Studies Stripe Deerflow Ant](ch05/015-harness.md)
 - [Nvidia Gamma World Multi Agent World Model](ch04/503-agent.md)
-- [Anthropic Multi Agent Research System](ch04/451-anthropic-multi-agent-research-system.md)
+- [Anthropic Multi Agent Research System](ch04/462-anthropic-multi-agent-research-system.md)
 - [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/061-harness-engineering.md)
-- [Factory Mission Multi Agent Architecture](ch01/877-factory-mission-multi-agent-architecture.md)
+- [Factory Mission Multi Agent Architecture](ch01/888-factory-mission-multi-agent-architecture.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dipg-ant-insurance-host-research-verify-offline-closed-loop.md)
 
-- [how grab is using ai agents to boost team productivity](ch04/310-ai.md)
+- [how grab is using ai agents to boost team productivity](ch04/150-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 深度分析

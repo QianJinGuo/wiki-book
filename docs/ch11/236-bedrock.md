@@ -59,9 +59,9 @@
 ## 相关实体
 - [Aws Bedrock Serverless Async Inference Multimodal](ch01/285-multimodal.md)
 - [Verizon Connect Agentic Ai 100K Users](ch04/310-ai.md)
-- [Deepseek Vision Primitives](ch01/356-deepseek.md)
+- [Deepseek Vision Primitives](ch01/774-deepseek.md)
 - [Agentcore Harness](ch04/503-agent.md)
-- [Aws Bedrock Ops Alert](ch11/234-bedrock.md)
+- [Aws Bedrock Ops Alert](ch11/236-bedrock.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bedrock-image-content-precise-analysis.md)
 

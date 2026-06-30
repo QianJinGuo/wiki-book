@@ -1,6 +1,6 @@
-# codex goal six hour run
+# Codex Goal Six Hour Run
 
-## Ch09.053 codex goal six hour run
+## Ch09.053 Codex Goal Six Hour Run
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/codex-goal-six-hour-run.md`
 

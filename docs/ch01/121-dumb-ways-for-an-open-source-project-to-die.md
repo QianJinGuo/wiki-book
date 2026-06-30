@@ -25,7 +25,7 @@
 - [Clinereleasesopen Sourceagentruntimesdk](ch04/503-agent.md)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/490-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
 - [How We Made Window Join Parallel And Vectorized](ch01/034-how-we-made-window-join-parallel-and-vectorized.md)
-- [Products Are Out Brains Are In](ch01/129-products-are-out-brains-are-in.md)
+- [Products Are Out Brains Are In](ch01/128-products-are-out-brains-are-in.md)
 - Investing In Stitch
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dumb-ways-for-an-open-source-project-to-die.md)

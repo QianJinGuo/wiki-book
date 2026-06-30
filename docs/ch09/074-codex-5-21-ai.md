@@ -82,13 +82,13 @@ Codex 5.21 让 Agentic Engineering 真正可行——之前所有"AI 代理"工�
 
 ## 相关实体
 
-- [Openai Codex Super Computer Network Xinzhiyuan](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-codex-super-computer-network-xinzhiyuan.md)
-- [Kimi Work Codex Vibe Working Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)
-- [Andrej Karpathy Claude Md 134K Stars 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/andrej-karpathy-claude-md-134k-stars-2026.md)
-- [Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md)
-- [Codex Goal Six Hour Run](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-goal-six-hour-run.md)
-- [Four Sub Agent Patterns 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/four-sub-agent-patterns-2026.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
+- [Openai Codex Super Computer Network Xinzhiyuan](ch04/150-ai.md)
+- [Kimi Work Codex Vibe Working Paradigm Shift](ch01/434-codex.md)
+- [Andrej Karpathy Claude Md 134K Stars 2026](ch01/380-claude.md)
+- [Agent Self Improvement Six Mechanisms](ch04/503-agent.md)
+- [Codex Goal Six Hour Run](ch09/052-codex-goal-six-hour-run.md)
+- [Four Sub Agent Patterns 2026](ch04/503-agent.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
 
 ---
 

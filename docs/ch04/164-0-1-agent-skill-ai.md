@@ -160,7 +160,7 @@ Ruby：`bundler/inline`
 → `Agent Skills Teams Architecture Evolution Selection Guide` — 多 Agent 场景下 Skill 的组合与选择策略
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch04/245-skill.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/192-tencent-vibe-coding-to-agentic-engineering-backend.md)
 - [Thin Harness Fat Skills](ch04/245-skill.md)

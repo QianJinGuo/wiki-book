@@ -11,7 +11,7 @@
 - [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch04/310-ai.md)
 - [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/010-how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/503-agent.md)
-- [Introducing Claude Platform On Aws](ch01/404-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
+- [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch04/503-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md)

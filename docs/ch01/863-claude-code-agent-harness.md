@@ -39,10 +39,10 @@
 - **claude趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch03/012-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch03/012-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/207-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/310-ai.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
 

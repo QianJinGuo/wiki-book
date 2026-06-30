@@ -14,13 +14,13 @@
 ## 相关实体
 - [Claude Code Prompt Context Harness](ch03/073-claude-code.md)
 - [Fudan Peking Ahe Agentic Harness Engineering](ch04/221-fudan-peking-ahe-agentic-harness-engineering.md)
-- [Pi Openclaw Coding Harness](ch03/012-openclaw.md)
-- [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/310-ai.md)
-- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch04/310-ai.md)
+- [Pi Openclaw Coding Harness](ch11/207-openclaw.md)
+- [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/150-ai.md)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
 
-- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch04/310-ai.md)
+- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch04/150-ai.md)
 ## 二、从"出码率"看"提效"背后的深层困境
 
 **原因1：研发是全链路，不仅仅是写代码**
@@ -197,12 +197,12 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 ## 相关实体（更新）
 - [Claude Code Prompt Context Harness](ch03/073-claude-code.md)
 - [Fudan Peking Ahe Agentic Harness Engineering](ch04/221-fudan-peking-ahe-agentic-harness-engineering.md)
-- [Pi Openclaw Coding Harness](ch03/012-openclaw.md)
-- [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/310-ai.md)
-- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch04/310-ai.md)
+- [Pi Openclaw Coding Harness](ch11/207-openclaw.md)
+- [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/150-ai.md)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch04/150-ai.md)
 - [K/S/T 知识底座](ch04/503-agent.md)（相关：K/S/T 是知识用途分类，本文在工程层落地）
 - [Harness Engineering 综述](ch04/503-agent.md)（相关：三阶段 Prompt→Context→Harness）
-- [Spec as AIOS (高德 App 平台)](ch04/310-ai.md)（同团队同主题另一视角）
+- [Spec as AIOS (高德 App 平台)](ch04/150-ai.md)（同团队同主题另一视角）
 
 → [第 1 来源原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
 → [第 2 来源原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)
