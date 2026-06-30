@@ -1,6 +1,6 @@
-# aws transform ezconvertbi bi migration
+# AWS Transform Ezconvertbi BI Migration
 
-## Ch11.189 aws transform ezconvertbi bi migration
+## Ch11.189 AWS Transform Ezconvertbi BI Migration
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/aws-transform-ezconvertbi-bi-migration.md`
 

@@ -1,6 +1,6 @@
-# crawler vs opencli doubao
+# Crawler vs Opencli Doubao
 
-## Ch03.029 crawler vs opencli doubao
+## Ch03.029 Crawler vs Opencli Doubao
 
 > 📊 Level ⭐ | 6.4KB | `entities/crawler-vs-opencli-doubao.md`
 

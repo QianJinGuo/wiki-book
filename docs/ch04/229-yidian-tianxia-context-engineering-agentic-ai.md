@@ -1,6 +1,6 @@
-# yidian tianxia context engineering agentic ai
+# Yidian Tianxia Context Engineering Agentic AI
 
-## Ch04.229 yidian tianxia context engineering agentic ai
+## Ch04.229 Yidian Tianxia Context Engineering Agentic AI
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/yidian-tianxia-context-engineering-agentic-ai.md`
 

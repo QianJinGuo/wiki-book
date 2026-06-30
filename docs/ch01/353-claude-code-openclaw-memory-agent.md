@@ -1,6 +1,6 @@
-# 读完 Claude Code 和 OpenClaw 的 memory 源码，我对\"Agent记忆需要向量数据库\"这件事产生了怀疑……
+# 读完 Claude Code 和 OpenClaw 的 memory 源码，我对 Agent 记忆需要向量数据库产生怀疑
 
-## Ch01.353 读完 Claude Code 和 OpenClaw 的 memory 源码，我对\"Agent记忆需要向量数据库\"这件事产生了怀疑……
+## Ch01.353 读完 Claude Code 和 OpenClaw 的 memory 源码，我对 Agent 记忆需要向量数据库产生怀疑
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md`
 

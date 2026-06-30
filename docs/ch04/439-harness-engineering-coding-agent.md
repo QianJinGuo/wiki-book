@@ -15,7 +15,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)
 
-- [一次构建，随处复用：python 中的泛型仓库模式](ch04/469-python.md)
+- [一次构建，随处复用：python 中的泛型仓库模式](ch04/486-python.md)
 
 ## 深度分析
 1. **Harness Engineering 是模型能力与工程可靠性之间的边界管理**。随着模型能力提升，曾经需要脚本控制的环节可能逐渐被自主处理，但"确定哪些环节该交给模型、哪些该留在框架里"这个判断本身不会消失。每次新模型出现都需要重新审视这个边界

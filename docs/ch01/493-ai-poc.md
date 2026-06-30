@@ -31,8 +31,8 @@ AI 项目最常见的误判，是把 Demo 跑通，当成落地已经开始。
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-poc-why-fail-to-production.md)
 
 ## 相关实体
-- [Inngest - AI in Production: The 2026 Benchmark Report](https://github.com/QianJinGuo/wiki/blob/main/entities/inngest-ai-in-production-the-2026-benchmark-report.md)
-- [AI Gateway production index](https://github.com/QianJinGuo/wiki/blob/main/entities/aigatewayproductionindex.md)
+- [Inngest - AI in Production: The 2026 Benchmark Report](ch01/459-inngest-ai-in-production-the-2026-benchmark-report.md)
+- [AI Gateway production index](ch04/310-ai.md)
 - AI Gateway production index
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)

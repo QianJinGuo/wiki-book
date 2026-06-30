@@ -1,6 +1,6 @@
-# nvidia agentic ai subsurface engineering
+# Nvidia Agentic AI Subsurface Engineering
 
-## Ch04.318 nvidia agentic ai subsurface engineering
+## Ch04.318 Nvidia Agentic AI Subsurface Engineering
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/nvidia-agentic-ai-subsurface-engineering.md`
 

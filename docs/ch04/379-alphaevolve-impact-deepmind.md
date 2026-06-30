@@ -1,6 +1,6 @@
-# alphaevolve impact deepmind
+# Alphaevolve Impact Deepmind
 
-## Ch04.379 alphaevolve impact deepmind
+## Ch04.379 Alphaevolve Impact Deepmind
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/alphaevolve-impact-deepmind.md`
 

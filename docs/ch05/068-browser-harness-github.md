@@ -1,6 +1,6 @@
-# browser harness github
+# Browser Harness Github
 
-## Ch05.068 browser harness github
+## Ch05.068 Browser Harness Github
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/browser-harness-github.md`
 

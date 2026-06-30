@@ -63,7 +63,7 @@ Hermes Agent 的自进化机制代表了一种新型的 AI Agent 设计范式：
 4. **警惕"进化陷阱"**：Skill 自动生成若缺乏质量控制，会导致技术债务累积，需要配套的 Skill 评估与淘汰机制
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/350-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/245-skill.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/245-skill.md)

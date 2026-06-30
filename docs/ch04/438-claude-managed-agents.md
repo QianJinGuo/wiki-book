@@ -1,6 +1,6 @@
-# claude managed agents
+# Claude Managed Agents
 
-## Ch04.438 claude managed agents
+## Ch04.438 Claude Managed Agents
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/claude-managed-agents.md`
 

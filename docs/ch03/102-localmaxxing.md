@@ -1,6 +1,6 @@
-# Localmaxxing
+# Localmaxxing：局部最优陷阱
 
-## Ch03.102 Localmaxxing
+## Ch03.102 Localmaxxing：局部最优陷阱
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/localmaxxing.md`
 

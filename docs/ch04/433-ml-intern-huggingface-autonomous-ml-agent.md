@@ -1,6 +1,6 @@
-# ml intern huggingface autonomous ml agent
+# ML Intern Huggingface Autonomous ML Agent
 
-## Ch04.433 ml intern huggingface autonomous ml agent
+## Ch04.433 ML Intern Huggingface Autonomous ML Agent
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/ml-intern-huggingface-autonomous-ml-agent.md`
 

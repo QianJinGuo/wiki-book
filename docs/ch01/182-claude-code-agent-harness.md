@@ -2,320 +2,300 @@
 
 ## Ch01.182 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 
-> 📊 Level ⭐⭐ | 28.2KB | `entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md`
+> 📊 Level ⭐⭐ | 27.6KB | `entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md`
 
 # 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 
-> 来源：微信公众号"技术极简主义"——对 Anthropic Claude Code 源码泄露事件的深度技术分析
-> 背景：2026 年 4 月，因 npm 打包未排除 `.map` 映射文件，1900+ TypeScript 文件、51 万行核心代码意外曝光
-> URL: https://mp.weixin.qq.com/s/uHbvBbANCU7fHwvGhsr9sw
-
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
+> 来源：技术极简主义，2026-04-08，基于 Claude Code 源码泄露事件（npm 打包未排除 .map 文件 → 1900+ TS 文件、51 万行核心代码意外曝光 → GitHub 数小时 1100+ star）
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md)
 
 ## 摘要
 
-本文基于 Claude Code 源码泄露事件，**逐行拆解一个请求从用户输入到 Agent 交付可工作的代码的完整生命周期**。核心论断是：**LLM 调用本身只是一行代码，真正让 Agent 可用的，是围绕这行代码精心设计的 Agent Harness**。整个 Agent 由 `query.ts` 中的 `query()` 异步生成器函数驱动，所有其他代码都为这个函数服务。文中详细剖析了上下文组装、API 调用、响应解析、权限检查、工具执行、结果反馈、上下文管理、终止恢复这 8 个核心步骤，以及 Plan Mode、Tasks 等高级特性。
+借助 Anthropic Claude Code 源码泄露事件，文章沿着一个请求的完整生命周期（用户输入消息 → Agent 交付可工作代码）拆解每个环节。**核心断言**："LLM 调用本身只是一行代码，真正让 Agent 可用的是围绕这行代码精心设计的 Agent Harness。" 整个系统由 `query()` 异步生成器函数驱动，循环 8 个步骤直到任务完成。
 
 ## 核心要点
 
-- **源码泄露事件**：Claude Code 因 npm 打包未排除 `.map` 映射文件，导致 1900+ TypeScript 文件、51 万行核心代码意外曝光；归档后数小时内收获 1100+ 星。这是迄今为止生产级 AI Agent 系统最完整的一次公开审视。
-- **核心循环 8 步**：用户输入 → 上下文组装 → 调用 Claude API → 解析响应 → 检查权限 → 执行工具 → 反馈结果 → 上下文检查（太大则压缩）→ 终止。**不断循环直到任务完成**。
-- **上下文组装的缓存分层**：通过 `SYSTEM_PROMPT_DYNAMIC_BOUNDARY` 标记分隔——边界之前用全局缓存范围（所有用户共享），边界之后是会话特定。**MCP 指令**是唯一非缓存部分（因为可能动态变化）。
-- **CLAUDE.md 加载层级**：系统级 (`/etc/claude-code/`) → 用户级 (`~/.claude/`) → 项目级（每一层目录都有）→ 本地级（gitignore）。**遍历从根目录向下，最近的文件优先级最高**。
-- **完整上下文包组成**：系统提示词 ~15K tokens + CLAUDE.md ~2K + 记忆 ~500 + MCP ~300 + 对话历史 ~5K + 用户消息 ~10。**上下文不只是"你的消息"**，是消息+项目规则+个人偏好+Agent 记忆+对话历史。
-- **技能预算控制**：所有技能描述最多占上下文的 1%（200K 模型即 2000 tokens），每个技能描述不超过 250 字符。**模型可按需调用 `ToolSearchTool` 拿完整定义**。
-- **43 个内置工具**：文件 I/O（FileRead/Edit/Write）、搜索（Glob/Grep）、执行（Bash）、Web（Fetch/Search）、Agents（AgentTool/SendMessage）、任务（TaskCreate/Get/Update/List）、规划（EnterPlanMode/ExitPlanMode）、用户交互（AskUserQuestion）、技能（Skill）、MCP（List/Read）等。
-- **分层权限机制**：4 层检查——拒绝规则 → 允许规则 → Bash 分类器（最多 2 秒）→ 询问用户。**任一层做出决定即终止**。
-- **工具并发设计**：通过 `isConcurrencySafe()` 标记——**只读操作并发执行（默认最多 10 个），写操作串行执行**。`partitionToolCalls()` 自动分批。
-- **三级压缩策略**：微压缩（每轮之间，处理解释性内容）→ 会话记忆压缩（生成 `CompactBoundaryMessage` 替换原始历史）→ 反应式压缩（捕获 `prompt_too_long` 错误时现场压缩）。
-- **自动压缩断路器**：连续失败 3 次后停止尝试自动压缩。历史背景：曾有 1,279 个会话连续失败 3,000+ 次，每天浪费 ~25 万次 API 调用。
-- **Plan Mode 本质**：权限系统里的"状态切换"——`toolPermissionContext.mode` 切到 `'plan'`。**真正的变化不在权限，而在行为引导**——技术上 Claude 仍可用所有工具甚至改文件，但行为约束让它优先规划。
+- **Harness 的核心循环**：`query()` 异步生成器函数 + 8 个步骤（上下文组装 → API 调用 → 解析响应 → 检查权限 → 执行工具 → 反馈结果 → 上下文检查 → 终止）
+- **上下文组装 = 多层叠加**：系统提示词（11 个分段 + 缓存边界 `SYSTEM_PROMPT_DYNAMIC_BOUNDARY`）+ CLAUDE.md 4 级加载（系统 → 用户 → 项目 → 本地）+ 记忆 + 任务 + MCP 指令 + 技能发现 + 对话历史
+- **CLAUDE.md 4 级优先级 + @include 5 层深度**：从根目录向下遍历，最近文件最高优先级；`@include` 语法让一个 CLAUDE.md 拉入另一个文件
+- **完整上下文 token 预算实测**：系统提示词 ~15K + CLAUDE.md ~2K + 记忆 ~500 + MCP ~300 + 历史 ~5K + 用户消息 ~10
+- **Skill 预算控制**：所有技能描述加起来最多占上下文的 1%（200K 模型约 2000 tokens），每个技能描述 ≤ 250 字符
+- **工具执行策略**：只读操作并行执行，写操作串行执行（避免冲突）
+- **权限分级**：拒绝规则 → 允许规则 → 分类器 → 询问用户
+- **三层上下文压缩策略**：微压缩（每轮，处理解释性内容）+ 会话记忆压缩（替换最早对话历史为 `CompactBoundaryMessage`）+ 反应式压缩（`prompt_too_long` 错误触发）
+- **断路器防护**：`MAX_CONSECUTIVE_AUTOCOMPACT_FAILURES = 3` —— 注释记录曾有 1,279 个会话连续失败 3,000+ 次，每天浪费 ~25 万次 API 调用
+- **8 种终止原因 + 4 类错误恢复**：max_turns / aborted_streaming / aborted_tools / prompt_too_long / model_error / blocking_limit / hook_stopped / completed
+- **Plan Mode 设计哲学**：**不是靠"限制工具"而是靠"提示词引导行为"**——有节制地出现完整/简化/跳过
+- **Tasks 系统**：JSON 文件持久化 + blocks/blockedBy 依赖图 + 跨 Agent 共享任务列表（按团队）+ 定期 reminder 把 Agent 拉回正轨
+- **子智能体三种隔离模式**：同 CWD / Worktree（独立 git worktree，可合并）/ 后台（异步）
+- **递归复杂度可控**：子智能体是缩小版 query() 循环，使用相同工具/权限/压缩逻辑，无独立 Agent runner
 
 ## 深度分析
 
-### 1. Agent Harness 作为"围绕 LLM 的一行代码精心设计的工程系统"
+### 一、源码泄露事件背景
 
-本文最核心的论断：
+2026 年初，Anthropic 旗下闭源 AI 编程工具 Claude Code 因 npm 打包**未排除 .map 映射文件**，导致 **1900+ TypeScript 文件、超 51 万行核心代码意外曝光**。这是迄今为止生产级 AI Agent 系统最完整的一次公开审视，也让外界验证此前对 Claude Code 架构的推断，同时窥见诸多未发布的核心功能与底层设计逻辑。
 
-> "LLM 调用本身只是一行代码，真正让 Agent 可用的，是围绕这行代码精心设计的 Agent Harness。"
+### 二、8 步核心循环详解
 
-**这一论断颠覆了"Agent = 强模型"的简化叙事**。模型能力固然关键，但生产级 Agent 系统的工程复杂度绝大部分来自 harness 层：上下文组装、缓存优化、权限控制、工具并发、状态管理、错误恢复、压缩策略、终止判断。
+整个 Agent 由 `query.ts` 中的 `query()` 异步生成器函数驱动，**代码库中的其他所有内容都为这个函数服务**。这是核心架构决策——将 Agent 执行逻辑从传统"调用-返回"模式转为"生成-迭代"模式，更适合处理长时运行的复杂任务。
 
-这与 [Harness Engineering Core Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns-claude-code.md) 中"Harness 是 Agent 系统的工程价值所在"的论断一致——模型是引擎，harness 是底盘、传动、刹车、仪表盘的整套工程组合。
+**步骤 1：上下文组装（最复杂的一步）**
 
-### 2. 上下文组装：缓存分层是性能的关键
+系统提示词通过 `buildEffectiveSystemPrompt()` 函数拼接，**不是简单字符串而是 11 个分段**（介绍 / 系统 / 执行任务 / 操作 / 使用工具 / 语调风格 / 会话指导 / 记忆 CLAUDE.md / 环境 / MCP 指令 / 总结结果）。
 
-Claude Code 的上下文组装通过 `SYSTEM_PROMPT_DYNAMIC_BOUNDARY` 标记分隔缓存边界。
+**核心工程考量：缓存优化**——所有分段按"是否缓存"分类：
 
-**这一设计的工程价值**：
+| 缓存 | 分段 | 说明 |
+|---|---|---|
+| ✅ 缓存 | 介绍 / 系统 / 执行任务 / 操作 / 使用工具 / 语调和风格 / 会话指导 / 记忆 / 环境 / 总结结果 | 只算一次，每轮直接复用；`/clear` 或 `/compact` 才重新生成 |
+| ❌ 不缓存 | MCP 指令 | 每一轮重新计算（连接状态可能变化）|
 
-| 部分 | 是否缓存 | 缓存范围 | 优化收益 |
-|------|---------|---------|---------|
-| 介绍/系统/任务/操作/工具/语调/会话指导/记忆/环境/总结 | 是 | 全局缓存（所有用户共享） | 跨用户复用，降低成本 |
-| MCP 指令 | 否 | 每次重算 | 因 MCP 服务器可能动态连接/断开 |
+边界用 `SYSTEM_PROMPT_DYNAMIC_BOUNDARY` 标记——边界前可用 API 全局缓存（跨用户共享），边界后是会话特定的。这是避免每轮重算整个 prompt 的巧妙方式。
 
-**关键洞察**：边界设计决定了成本结构——把稳定的内容推到全局缓存边界之前，把动态变化的内容留在边界之后。**这是一个看似微小但影响巨大的工程决策**。
+**CLAUDE.md 4 级加载顺序**：
 
-### 3. CLAUDE.md 加载层级：配置文件就是知识层级
+`getMemoryFiles()` 从当前工作目录**向上遍历到文件系统根目录**，在每个级别收集指令文件。加载顺序（**最近文件最高优先级**）：
+1. **系统级**：`/etc/claude-code/CLAUDE.md` + `/etc/claude-code/.claude/rules/*.md`（企业托管）
+2. **用户级**：`~/.claude/CLAUDE.md` + `~/.claude/rules/*.md`（个人偏好）
+3. **项目级**：根目录到当前工作目录的每个目录加载 `CLAUDE.md` / `.claude/CLAUDE.md` / `.claude/rules/*.md`
+4. **本地级**：每层 `CLAUDE.local.md`（`.gitignore`，不提交）
 
-CLAUDE.md 文件从根目录向下逐层加载：
-
-```
-系统级 → 用户级 → 项目级（每一层目录） → 本地级（gitignore）
-```
-
-**最近的目录优先级最高**——这意味着在 `src/` 子目录下可以有比根目录更具体的指令。
-
-**@include 指令**让一个 CLAUDE.md 可以拉入其他文件（最多 5 层深度）。**`git worktree` 兼容性**——避免同一份规则被重复加载。
-
-这与 [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
-
-### 4. 完整上下文包：用户消息只是冰山一角
-
-当用户输入"修复登录 bug"时，实际发送给 Claude 的内容是：
+每个文件解析时剥离 HTML 注释 + 解析 `@include` 指令（最多 5 层深度）。`@include` 让一个 CLAUDE.md 拉入另一个文件：
 
 ```
-系统提示词:       ~15,000 tokens
-CLAUDE.md 文件:   ~2,000 tokens
-记忆:             ~500 tokens
-MCP 指令:         ~300 tokens
-对话历史:         ~5,000 tokens
-你的消息:         ~10 tokens
+# CLAUDE.md
+See our API conventions:
+@./docs/api-conventions.md
+And our testing standards:
+@./docs/testing.md
 ```
 
-**用户消息只占 0.04% 的上下文**——Agent 看到的 99.96% 是系统、规则、记忆、历史的组合。
+整个函数带缓存（会话里只跑一次），对 `git worktree` 做了处理避免重复加载。
 
-这一数据点对 Agent 设计者极有启示：**你给 Agent 的"消息"不是你输入的那一句，而是系统为你准备的所有上下文**。这与 [Headroom Context Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-agent-vibecoder.md) 中关于"上下文是工程产物"的论述一致——上下文不是自然涌现的，而是被精心组装的。
+**完整上下文包**：
 
-### 5. 技能预算控制：1% 规则的设计哲学
+`getAttachmentMessages()` 拉取其他所有内容：记忆文件（`~/.claude/projects/<slug>/memory/MEMORY.md`）+ 任务/待办列表 + MCP 服务器指令 + 技能发现结果 + 对话历史。
 
-Claude Code 用硬性预算控制技能列表大小：
+**实际 token 预算示例**（用户输入"修复登录 bug"）：
+- 系统提示词：~15,000 tokens（角色、规则、工具、环境）
+- CLAUDE.md 文件：~2,000 tokens（项目指令）
+- 记忆：~500 tokens（过往会话相关记忆）
+- MCP 指令：~300 tokens（已连接服务器文档）
+- 对话历史：~5,000 tokens（当前会话前几轮）
+- 用户消息：~10 tokens
 
-- 所有技能描述加起来最多占上下文的 1%（200K 模型 = 2000 tokens）
-- 每个技能描述不超过 250 字符
-- 技能太多自动截断
-- 需要详细信息时，模型调用 `ToolSearchTool` 按需加载
+**核心断言**："上下文不只是'你的消息'。它是你的消息 + 项目规则 + 个人偏好 + Agent 记忆 + 对话历史。" 这是**上下文工程的实践，也是 Agent 成败的关键因素**。
 
-**设计哲学**：技能列表是"目录"，完整定义是"正文"。**先把目录塞进上下文，模型按需展开**——这是处理大量潜在工具/技能的标准模式。
+**Skill 预算控制**：
 
-### 6. 工具并发与一致性：isConcurrencySafe 标记的精妙
+所有技能描述加起来最多占上下文的 **1%**（200K 模型约 2000 tokens），每个技能描述不能超过 **250 个字符**。避免技能列表把上下文撑满。
 
-Claude Code 通过 `isConcurrencySafe()` 标记控制并发执行：
+### 三、工具执行与权限
 
-- 只读操作并发执行（默认最多 10 个）
-- 写操作串行执行
-- `partitionToolCalls()` 自动分批
+**步骤 2-3：API 调用 + 解析响应**
 
-**实际例子**（修复登录 bug）：
+流式传输通过异步生成器，响应解析为文本块 + `tool_use` 块。
 
-```
-批次 1（并发）：GrepTool, GrepTool, GlobTool  ← 三个同时跑
-批次 2（串行）：FileEditTool                  ← 单独执行
-批次 3（并发）：FileReadTool, FileReadTool    ← 两个一起跑
-```
+**步骤 4：权限检查（4 级流水线）**
 
-**关键工程细节**：工具可以修改后续上下文——有些工具返回"上下文修改函数"用于更新 `ToolUseContext`。并发批次先收集修改，整批完再统一应用；串行批次每个工具执行完立刻应用。**这一设计避免了并发冲突**。
+拒绝规则 → 允许规则 → 分类器 → 询问用户。读操作默认放行，写操作需要确认或额外判断。
 
-这与 [Factory Mission](https://github.com/QianJinGuo/wiki/blob/main/entities/multi-agent-mission-factory-luke-aiengineer.md) 的"串行 + 定点内部并行"策略有异曲同工之妙——但 Mission 是 Agent 间的串行，Claude Code 是工具间的串行。
+**步骤 5：工具执行（并行/串行策略）**
 
-### 7. 分层权限机制：4 层检查的设计取舍
-
-Claude Code 的权限机制是分层的：
+**只读操作并行执行，写操作串行执行**——避免冲突。Claude Code 偏好自己的 `FileReadTool` 而非 bash 中 `cat` 的原因不是模型偏好，而是**系统提示词中的明确指令**：
 
 ```
-工具调用进来
-  ↓
-1. 命中拒绝规则 → 直接拦掉
-  ↓
-2. 命中允许规则 → 直接放行
-  ↓
-3. Bash 分类器 → 异步判断（最多 2 秒）
-  ↓
-4. 交互提示 → 再问你一次
+Do NOT use the Bash tool to run commands when a relevant dedicated tool is provided:
+  - To read files use Read instead of cat, head, tail, or sed
+  - To edit files use Edit instead of sed or awk
+  - To create files use Write instead of cat with heredoc
+  - To search for files use Glob instead of find or ls
+  - To search file contents use Grep instead of grep or rg
 ```
 
-**每个工具调用的实际路径**：
+**步骤 6：结果反馈**
 
-| 工具 | 层 1 | 层 2 | 层 3 | 层 4 | 结果 |
-|------|------|------|------|------|------|
-| GrepTool("login") | 通过 | 命中允许规则 | - | - | 自动通过 |
-| BashTool("git status") | 通过 | 通过 | 判断为只读 | - | 自动通过 |
-| BashTool("rm -rf /") | 命中拒绝规则 | - | - | - | 直接拦截 |
-| FileEditTool("app.ts") | 通过 | 通过 | 通过 | 需要确认 | 弹出提示 |
-| BashTool("npm install") | 通过 | 通过 | 判断不确定（超时） | 需要确认 | 弹出提示 |
+每个工具结果变成一条 `user` 消息，里面带 `tool_result` 内容块 + `toolUseID`（对应之前那次工具调用）。Claude 拿到结果后决定下一步：读具体文件、直接修改还是继续补充更多上下文。
 
-**设计哲学**："该快的地方尽量快，该谨慎的地方一定谨慎"。
+**每轮之间系统还会悄悄做"补充上下文"工作**：
+- 重新跑 `getAttachmentMessages()` 看有无新记忆文件或任务更新
+- 如果后台记忆预取完成，把结果加进来
+- 如果技能发现找到更相关工具或技能，补进上下文
 
-**Bash 分类器的 2 秒超时机制**很关键——如果分类器不能在 2 秒内判断（说明这是个复杂命令），直接进入交互提示，**不阻塞用户体验**。
+上下文**不是一成不变的，而是在每一轮之间不断增长**。
 
-### 8. 三级压缩策略：从微压缩到反应式压缩
+### 四、上下文管理的三层压缩策略
 
-Claude Code 不是用一种方式处理上下文膨胀，而是分层处理：
+每跑完一轮检查"现在的上下文有多大了"——当距离上限还剩约 **13,000 tokens**（默认值）时触发压缩。
 
-**第一级：微压缩**（每轮之间发生）
-- 处理"解释性内容"
-- 工具输入/输出保留
-- 中间冗长解释压缩成更短总结
+**微压缩（每轮发生）**：处理工具调用之间的"解释性内容"——工具的输入/输出保留，中间冗长解释被压缩成更短总结。
 
-**第二级：会话记忆压缩**（主要策略）
-- 获取最早对话历史块
-- 调用 API 生成简洁摘要
-- 用 `CompactBoundaryMessage` 替换原始消息
-- 一条摘要消息可替代几十条历史
+**会话记忆压缩（主要策略）**：直接对"更早的对话历史"下手——把整段对话总结成一条精简信息，用单个 `CompactBoundaryMessage` 替换原始消息。一条摘要消息可直接替代掉几十条历史消息：
 
-**第三级：反应式压缩**（出事后才顶上）
-- API 返回 `prompt_too_long` 错误时触发
-- 立刻捕获错误，当场压缩
-- 重建请求再试
+```
+[CompactBoundaryMessage]
+"用户要求修复登录 bug。我查看了 src/auth/ 相关代码，
+包括 login.ts、middleware.ts 和 types.ts。
+问题出在 login.ts 第 58 行缺少空检查，用户查询可能返回 undefined。
+用户已确认这个判断是正确的。"
+```
 
-**断路器机制**：连续失败 3 次后停止自动压缩。
+**反应式压缩（兜底策略）**：API 因 `prompt_too_long` 拒绝请求时立刻捕获，当场做一次压缩，重建请求再试一遍。
 
-历史教训：1,279 个会话连续失败 3,000+ 次，每天浪费 25 万次 API 调用——**任何自动化机制都必须有熔断**。
+**工具调用也会被总结**：Claude 连续跑很多工具（一堆 grep + 一批文件读取）时，系统在后台生成精简版本（"在整个代码库中搜索 X，在 A、B、C 文件中找到相关实现"）。上下文紧张时摘要直接替换冗长工具输出。
 
-这与 [Harness 状态边界与失败闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-之后-状态边界与失败闭环-若飞.md) 中关于"边界即熔断点"的工程哲学一致——失败应当被显式处理，而非无限循环。
+**断路器（防失控）**：
 
-### 9. Plan Mode：行为引导而非权限关闭
+```js
+// Stop trying autocompact after this many consecutive failures.
+// BQ 2026-03-10: 1,279 sessions had 50+ consecutive failures
+// (up to 3,272) in a single session, wasting ~250K API calls/day globally.
+const MAX_CONSECUTIVE_AUTOCOMPACT_FAILURES = 3
+```
 
-Plan Mode 的本质是"权限系统里的状态切换"——技术上 Claude 仍可用所有工具甚至改文件：
+注释记录的真实教训：**1,279 个会话**在压缩失败后还在不断重试，有的甚至一个会话里连续失败 **3,000+ 次**，每天白白浪费约 **25 万次 API 调用**。解决办法是连续失败 3 次后不再尝试自动压缩，防止无限循环或大量浪费 API 调用。
 
-> "真正的变化，其实不在权限，而在行为引导。"
+### 五、终止与错误恢复
 
-**这一设计哲学揭示了 Agent 系统设计的一个深层原则**：**不要用权限禁锢 Agent，而要用行为引导**。完全禁止 Agent 做某些事会大幅降低其能力；通过提示词和行为约束引导它"先规划再执行"是更优雅的方案。
+**8 种终止原因**：`completed`（正常）/ `max_turns`（强制收住）/ `aborted_streaming`（用户 Ctrl+C）/ `aborted_tools`（工具被中断）/ `prompt_too_long`（压缩策略失败）/ `model_error`（模型报错）/ `blocking_limit`（禁用自动压缩时硬限制）/ `hook_stopped`（外部钩子要求停止）
 
-这与 [Claude Managed Agents 企业自托管](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-enterprise.md) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
+**4 类错误恢复**：
 
-### 10. 终止原因的多样性：8 种退出路径
+| 错误类型 | 恢复策略 |
+|---|---|
+| 提示太长 | 先"轻量清理"删细节保留结构；还不行就整段摘要压缩；再不行才报错退出 |
+| 输出 token 超限 | 提高输出上限重试；从中断处继续生成，最多 3 次；写不完返回当前已有内容 |
+| 服务器过载（529） | 前台指数退避重试；后台任务（摘要/分类/记忆）不重试避免放大压力 |
+| 模型回退 | 主模型一直 529 → 切换备用模型；切换时清理当前状态、标记未完成、用新模型重跑 |
 
-Claude Code 列出 8 种终止原因：
+### 六、高级特性：先思考后行动
 
-- `completed` — 正常结束
-- `max_turns` — 达到最大轮次
-- `aborted_streaming` — 用户 Ctrl+C
-- `aborted_tools` — 工具执行时被用户打断
-- `prompt_too_long` — 上下文太大
-- `model_error` — 模型报错
-- `blocking_limit` — 禁用自动压缩时达到硬限制
-- `hook_stopped` — 外部钩子要求停止
+真实任务不是线性的——"重构认证系统"涉及几十个文件、多轮分析和修改。Claude Code 为此提供两个关键能力：
 
-**对应不同恢复策略**：
+**Plan Mode：规划模式**
 
-- 提示太长：先轻量清理，再摘要压缩
-- 输出超限：提高输出上限，最多 3 次重试
-- 服务器过载：指数退避重试，但后台任务不重试避免放大压力
-- 模型回退：切换备用模型，清理未完成内容重新跑
+本质是权限系统里的"状态切换"——`toolPermissionContext.mode` 切到 `'plan'`，原模式存 `prePlanMode` 方便恢复。**但真正的变化不在权限而在行为引导**：技术上什么都没被关掉（Claude 仍能用所有工具、还能改文件），但系统在上下文里加一段明确提示：
 
-**关键工程原则**：后台任务不重试——"避免在高负载时把压力放大"。**生产级 Agent 必须考虑自己的失败不能加剧系统负载**。
+```
+在计划模式下，你应该按照以下步骤操作：
+1. 仔细浏览代码库，了解已有的模式和结构
+2. 找出类似功能或架构方案
+3. 思考多种实现方式及其利弊
+4. 如有需要，使用 AskUserQuestion 澄清方法
+5. 制定具体的实施策略
+6. 准备好后，用 ExitPlanMode 提交你的计划以供批准
+注意：在这个阶段不要编写或修改任何文件，这是一个纯粹的只读探索和规划阶段。
+```
 
-### 11. 异步生成器作为核心架构
+**核心设计哲学**：不是靠"限制工具"，而是靠"提示词引导行为"。
 
-Claude Code 用 `query()` 异步生成器驱动整个系统：
+**计划批准流程**：Claude 把计划保存成文件并在调用 `ExitPlanMode` 时展示给用户确认。用户明确同意后，系统恢复到进入计划模式之前的权限状态，同时把"已批准的计划"重新塞回上下文。
 
-```typescript
-async function* queryLoop() {
-  while (true) {
-    // 一轮循环 = 一次完整 API 往返
-  }
+**有节制地出现**：计划模式提示不是每轮都重塞——有时候给完整提醒、有时候给简化版本、最近刚提醒过就这一轮跳过。**目的：避免规划提示反复出现把上下文撑爆**。
+
+**Tasks：任务系统**
+
+一组围绕"任务状态"的工具：`TaskCreateTool` / `TaskGetTool` / `TaskUpdateTool` / `TaskListTool`。所有任务存成 JSON 文件落磁盘（轻量"外部记忆"）：
+
+```
+{
+  id: string,
+  subject: string,
+  description: string,
+  status: 'pending' | 'in_progress' | 'completed',
+  blocks: string[],      // 此任务阻止的任务 ID
+  blockedBy: string[],   // 阻止此任务的任务 ID
+  owner: string,         // 哪个 agent 拥有此任务
 }
 ```
 
-**为什么用异步生成器而非 Promise**：
-- **流式输出**：边生成边输出，不用等全部完成
-- **可暂停/继续**：中间可以随时暂停再继续
-- **State 对象传递**：每轮决策影响下轮行为
+任务间可建立依赖关系（`blocks` / `blockedBy` 形成依赖图），避免顺序错乱。
 
-这与 [Claude Code Harness Deep Dive](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md) 中关于"流式交互是 Agent 体验核心"的论述一致——用户感受到的"逐字输出"本质就是 `StreamEvent` 实时推送的结果。
+**定期 reminder**：`getTaskReminderAttachments()` 检查 Agent 已经多久没碰任务系统了——时间久了就往上下文塞提醒"你现在有 3 个待处理任务，1 个进行中"，把 Agent 拉回正轨。
 
-### 12. 工具调用的"上下文修改函数"
+**多 Agent 协作**：任务系统不只是单人用——多 Agent 共享同一份任务列表（按团队，而不是按会话）；谁接手任务就被标记为 owner；任务重新分配时新负责人收到内部通知。**这套机制同时解决"我做到哪了"和"我们团队各自在做什么"**。
 
-Claude Code 工具可以返回"上下文修改函数"来影响后续执行：
+**Plan Mode + Tasks 融入循环**：不改变循环结构，只是在循环内部工作——`EnterPlanMode` / `TaskCreate` / 任务更新 / 退出计划模式**全是工具调用**。在步骤 1 上下文组装时把当前 Plan Mode 状态 + 任务进度一起带上。
 
-- 切换工作目录
-- 更新缓存
-- 调整可用工具
+**核心设计模式**："**Agent 用自己的工具，来管理自己的工作**"——不是在外部系统里被调度，而是在对话里一边思考、一边行动、一边更新自己的状态。
 
-**这一设计的工程含义**：工具不是被动响应，而是**可以主动塑造后续执行环境**。这是 Agent 系统区别于传统函数调用的关键能力。
+### 七、子智能体的递归与隔离
+
+`AgentTool` 接收提示词、可选 agent 类型和隔离设置：
+
+```js
+const baseInputSchema = z.object({
+  description: z.string().describe('A short (3-5 word) description'),
+  prompt: z.string().describe('The task for the agent to perform'),
+  subagent_type: z.string().optional(),
+  model: z.enum(['sonnet', 'opus', 'haiku']).optional(),
+  run_in_background: z.boolean().optional(),
+})
+```
+
+调用 `AgentTool` 启动**全新的循环**：
+- 子智能体有自己独立的 `query()` 循环
+- 它有自己的消息历史，不直接干扰主智能体
+- 它有自己的工具上下文，只允许访问一部分工具
+- 子智能体不能无限制地产生更多子智能体，也不能调用某些敏感或受限工具
+
+**三种隔离模式**：
+
+| 模式 | 用途 | 工作机制 |
+|---|---|---|
+| **同 CWD** | 访问父级文件的研究或分析任务 | 子智能体和父智能体使用相同工作目录 |
+| **Worktree** | 实验性修改可合并可清理 | 子智能体在仓库中有自己的 `git worktree` 副本，自由修改不影响父智能体；有用就合并主分支，不需要就自动清理 |
+| **后台** | 异步研究不阻塞主任务 | 子智能体在后台异步运行，父智能体继续自己的任务并在子智能体完成时收到通知 |
+
+**递归复杂度可控的 3 个保证**：
+
+1. 没有单独的"Agent 运行器"或"任务执行器"需要管理——子智能体是缩小版 `query()` 循环，使用相同工具/权限/上下文压缩逻辑
+2. 顶层循环的压缩和错误恢复策略同样适用于子智能体
+3. 每个子智能体都是父循环的一部分，不引入不可控的复杂性
+
+**核心结论**：递归的边界很清楚——子智能体的行为完全在父循环管理之下。
+
+### 八、Harness 的工程价值
+
+从用户发送消息到整个 Agent 循环完成，Claude Code 展示了完整 Agent 执行框架的设计：
+- **上下文组装**：系统提示词 + CLAUDE.md + 持久记忆 + 技能
+- **异步循环**：流式返回 + 工具调用/状态更新在后台并行
+- **工具体系**：内置工具 + MCP 工具统一走同一套权限机制
+- **权限控制**：读操作默认放行，写操作需确认或额外判断
+- **执行策略**：读操作并发，写操作串行
+- **反馈循环**：工具结果回到上下文影响后续决策
+- **长会话处理**：多种压缩策略控制上下文长度
+- **错误恢复**：不同问题类型都有兜底机制
+- **递归子智能体**：支持递归但范围/权限受控
+
+**结语断言**："Claude Code 更像一个完整的 Agent 执行框架，而不是简单的对话工具。它把规划、执行、反馈这些环节串成一个闭环，让复杂任务可以自动推进，同时又不至于失控。" **做 AI Agent 的精力会花在 Harness 上——这才是最有价值的地方**。
 
 ## 实践启示
 
-### 1. 构建 Agent Harness 的优先级
-
-如果你的目标是构建生产级 Agent 系统，本文揭示的优先级是：
-
-1. **上下文组装**（缓存分层）：决定成本结构
-2. **权限检查**（分层机制）：决定安全边界
-3. **工具执行**（并发控制）：决定性能
-4. **上下文管理**（压缩策略）：决定长任务可行性
-5. **终止恢复**（错误处理）：决定稳定性
-
-### 2. 学习 Claude Code 的具体设计
-
-- 缓存分层：用 `BOUNDARY` 标记分隔可缓存与不可缓存内容
-- CLAUDE.md 层级：从根目录向下加载，最近目录优先级最高
-- 工具接口：`name/description/inputSchema/execute/isConcurrencySafe/isReadOnly`
-- 权限 4 层：拒绝 → 允许 → 分类器 → 询问
-- 工具并发：默认 10 个并发，写操作串行
-- 上下文压缩：微压缩 → 会话记忆压缩 → 反应式压缩
-- 断路器：连续失败 N 次后停止自动重试
-
-### 3. Plan Mode 的设计原则
-
-不要试图"关闭"Agent 的能力，而要用行为引导约束其行为：
-
-- 完全禁止 = 大幅降低能力
-- 行为引导 = 优雅约束
-
-### 4. 工具并发设计原则
-
-- 标记 `isConcurrencySafe()` 是必须的
-- 默认并发数（10）是合理上限
-- 写操作必须串行
-- 上下文修改要统一收集，避免并发冲突
-
-### 5. 后台任务的重试策略
-
-服务器过载时：前台任务重试，**后台任务不重试**——避免在高负载时放大压力。
-
-### 6. 自动化必须有熔断
-
-任何自动重试、循环、压缩机制都必须有：
-
-- 失败次数上限
-- 熔断后的明确退出
-- 日志记录失败历史（用于事后分析）
-
-Claude Code 的 1,279 个会话、25 万次 API 调用/天的浪费，是任何自动化系统的警示故事。
-
-### 7. 借鉴 Claude Code 的工具系统设计
-
-如果你的 Agent 系统涉及大量工具：
-
-- 用统一接口（`type Tool = {...}`）抽象所有工具
-- 强制实现 `isConcurrencySafe()` 和 `isReadOnly()`
-- 用集中注册（`getAllBaseTools()`）管理默认工具
-- 用前缀（`mcp_github_create_issue`）避免命名冲突
-- 支持条件工具（按平台/模式动态出现）
-
-### 8. 设计文档驱动的工程
-
-Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,279 sessions had 50+ consecutive failures"）。**生产级 Agent 系统的演进必须有完整的设计文档和决策追溯**。
+- **缓存边界是关键优化**：用 `SYSTEM_PROMPT_DYNAMIC_BOUNDARY` 之类的标记把不变/变化部分分开，最大化 prompt cache 复用
+- **CLAUDE.md 4 级优先级**：系统 → 用户 → 项目 → 本地，最近文件覆盖更远；用 `@include` 5 层深度组装大文档
+- **Skill 预算硬控制**：所有技能描述加起来 ≤ 上下文 1%，每个技能描述 ≤ 250 字符
+- **工具偏好靠提示词而非模型训练**：用 `FileReadTool` 而非 `cat` 是在系统提示词里写明的规则
+- **执行策略区分读/写**：只读操作并行执行，写操作串行执行（避免冲突）
+- **上下文压缩分三层**：微压缩（每轮）+ 会话记忆压缩（替换最早历史）+ 反应式压缩（兜底）
+- **必须设断路器**：防止 `MAX_CONSECUTIVE_AUTOCOMPACT_FAILURES` 类无限循环（曾浪费 25 万 API 调用/天）
+- **Plan Mode 用提示词引导而非限制工具**：技术上限权开放，但通过明确指令"现在先探索不要修改"实现行为约束
+- **Tasks 系统做轻量外部记忆**：JSON 文件落磁盘 + blocks/blockedBy 依赖图 + 定期 reminder
+- **子智能体三种隔离模式**：同 CWD（研究分析）/ Worktree（实验修改）/ 后台（异步不阻塞）
+- **递归必须可控**：子智能体用相同工具/权限/压缩逻辑，无独立 runner，复杂度上限与父循环相同
 
 ## 相关实体
 
-- [两万字详解 Claude Code 源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Claude Code Harness 深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
-- [Claude Code Harness 深度理解](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
-- [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
-- [Agent 记忆系统工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Harness Engineering Core Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
-- [Harness 状态边界与失败闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-之后-状态边界与失败闭环-若飞.md)
-- [Factory Mission Multi-Agent 系统](https://github.com/QianJinGuo/wiki/blob/main/entities/multi-agent-mission-factory-luke-aiengineer.md)
-- [Claude Managed Agents 企业自托管](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-enterprise.md)
-- [OpenClaw 多 Agent 团队实践](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-agent-team-practice-v2.md)
-- [OpenClaw 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [OpenClaw 多智能体团队搭建经验](https://github.com/QianJinGuo/wiki/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [Headroom Context Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-agent-vibecoder.md)
-- [AI Agent Harness 构建](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-harness-construction-akshay-baoyu.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 本文是 Harness Engineering 的具体源码实现验证
+- [Claude Code 深度解析](ch03/073-claude-code.md) — Claude Code 架构的另一次深度解读
+- [Claude Code Dynamic Workflows](ch03/073-claude-code.md) — AgentTool 子智能体 + Dynamic Workflow 范式
+- [Claude Code 架构](ch03/073-claude-code.md) — Claude Code 整体架构概览
+- [Agent Evolution 四阶段六维](ch04/503-agent.md) — 阶段三/阶段四对应 Claude Code 的生产实践
+- [OpenClaw 完整指南](ch03/012-openclaw.md) — 开源对应物（Worktree 隔离模式实现）
+- [Harness Engineering 一文](ch04/310-ai.md) — Harness 概念的系统阐释
+- [四种 Sub Agent 模式](ch04/503-agent.md) — AgentTool 子智能体的几种编排模式
+- [Agent YAML 评测](ch04/503-agent.md) — Harness 第五层评估与观测的工程实现
 
 ---
 

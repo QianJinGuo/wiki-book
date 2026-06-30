@@ -1,6 +1,6 @@
-# ai coding guide tmall deep dive
+# AI Coding Guide Tmall Deep Dive
 
-## Ch09.013 ai coding guide tmall deep dive
+## Ch09.013 AI Coding Guide Tmall Deep Dive
 
 > 📊 Level ⭐⭐ | 22.0KB | `entities/ai-coding-guide-tmall-deep-dive.md`
 

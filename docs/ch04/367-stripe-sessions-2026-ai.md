@@ -1,6 +1,6 @@
-# stripe sessions 2026 ai
+# Stripe Sessions 2026 AI
 
-## Ch04.367 stripe sessions 2026 ai
+## Ch04.367 Stripe Sessions 2026 AI
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/stripe-sessions-2026-ai.md`
 

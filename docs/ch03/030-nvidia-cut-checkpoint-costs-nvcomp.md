@@ -1,6 +1,6 @@
-# nvidia cut checkpoint costs nvcomp
+# Nvidia Cut Checkpoint Costs Nvcomp
 
-## Ch03.030 nvidia cut checkpoint costs nvcomp
+## Ch03.030 Nvidia Cut Checkpoint Costs Nvcomp
 
 > 📊 Level ⭐ | 6.2KB | `entities/nvidia-cut-checkpoint-costs-nvcomp.md`
 

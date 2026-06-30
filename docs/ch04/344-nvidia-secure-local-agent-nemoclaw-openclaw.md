@@ -1,6 +1,6 @@
-# nvidia secure local agent nemoclaw openclaw
+# Nvidia Secure Local Agent Nemoclaw Openclaw
 
-## Ch04.344 nvidia secure local agent nemoclaw openclaw
+## Ch04.344 Nvidia Secure Local Agent Nemoclaw Openclaw
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/nvidia-secure-local-agent-nemoclaw-openclaw.md`
 

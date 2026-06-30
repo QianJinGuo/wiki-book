@@ -76,8 +76,8 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
-- [the token economy](https://github.com/QianJinGuo/wiki/blob/main/entities/the-token-economy.md)
-- [Consumer Confidence](https://github.com/QianJinGuo/wiki/blob/main/entities/consumer-confidence-us-economy-inflation-iran-war-trade-html.md)
+- [the token economy](ch01/726-the-token-economy.md)
+- [Consumer Confidence](ch01/936-consumer-confidence.md)
 
 ---
 

@@ -3330,7 +3330,7 @@ Hermes Agent 的 Skill 系统具有潜在的网络效应：
 
 ---
 
-## Ch02.025 fb134668f09a3b45c1813781f912ae4e7e26294d3b60332606983b946944c328
+## Ch02.025 Claude Code Prompt 与上下文 Harness 设计
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/claude-code-prompt-context-harness.md`
 

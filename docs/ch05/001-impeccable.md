@@ -1,8 +1,8 @@
-# Impeccable
+# Impeccable：大规模自动化测试框架
 
-## Ch05.001 Impeccable
+## Ch05.001 Impeccable：大规模自动化测试框架
 
-> 📊 Level ⭐ | 13.4KB | `entities/impeccable.md`
+> 📊 Level ⭐ | 13.5KB | `entities/impeccable.md`
 
 # Impeccable
 > "The design language that makes your AI harness better at design." —— pbakaus/impeccable 官方描述

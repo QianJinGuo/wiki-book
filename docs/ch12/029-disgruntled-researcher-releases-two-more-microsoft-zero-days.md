@@ -2,83 +2,129 @@
 
 ## Ch12.029 Disgruntled researcher releases two more Microsoft zero-days
 
-> 📊 Level ⭐⭐ | 10.9KB | `entities/13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md`
+> 📊 Level ⭐⭐ | 11.1KB | `entities/disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md`
+
+# Disgruntled researcher releases two more Microsoft zero-days
+
+> -> [13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md)
+
+## 摘要
+
+2026 年 5 月 13 日，安全研究者 Nightmare-Eclipse（又名 Chaotic Eclipse）在微软 Patch Tuesday 后立即公开两个 Windows 零日漏洞：**YellowKey**（BitLocker 旁路，可绕过全盘加密）和 **GreenPlasma**（提权至 SYSTEM）。这是该研究者 2026 年公开的第五、第六个 Microsoft 零日，与此前的 BlueHammer（CVE-2026-32201）、RedSun、UnDefend 一同构成对微软的"报复性披露"战役。
 
 ## 核心要点
-- Nightmare-Eclipse（又名 Chaotic Eclipse）继 BlueHammer、RedSun、UnDefend 之后，2026 年 5 月 13 日再次发布两个 Microsoft 零日漏洞：YellowKey 和 GreenPlasma
-- YellowKey：BitLocker 绕过攻击，物理接触条件下可通过 USB 设备获取 BitLocker 保护机器的无限制 shell 访问
-- GreenPlasma：权限提升漏洞，提供 SYSTEM 级别访问，已发布部分利用代码
-- 该研究者据称疑似前 Microsoft 员工，自述因"违反协议"而流离失所，动机为报复性披露
-- RedSun 和 UnDefend 自 4 月披露至今仍未修复，且已被真实攻击者采用
-- 安全专家 Rik Ferguson 警告：YellowKey 若成立，被盗笔记本从硬件问题升级为数据泄露事件
+
+- **YellowKey（BitLocker 旁路）**：通过特定按键序列和 USB 加载可绕过 BitLocker 加密获得 Shell 访问；研究者称之为"一生最疯狂的发现之一"，需要物理接触目标机器。
+- **GreenPlasma（提权漏洞）**：授予攻击者 SYSTEM 访问权限，研究者发布了部分漏洞利用代码（未完成 PoC），在默认 Windows 配置下会触发 UAC 同意提示。
+- **物理访问的合规含义**：尽管需要物理访问，Forescout 的 Rik Ferguson 警告"被盗笔记本不再只是硬件问题，而是数据泄露通知问题"。
+- **缓解措施**：YellowKey 可通过启用 BitLocker PIN + BIOS 密码锁缓解；GreenPlasma 目前没有已知缓解措施，需等待微软补丁。
+- **研究者身份猜测**：根据报道该研究者据传是微软前员工；其首次声明"有人违反协议，让他无家可归"，故采取报复性披露。
+- **真实利用已发生**：Huntress 报告 RedSun 和 UnDefend 的 PoC 代码发布后"迅速被滥用进行真实攻击"。
+- **未来威胁**：研究者声称拥有"死人开关"（dead man's switch），警告后续 RCE 披露；专家警告这是针对微软的"升级的报复性战役"。
 
 ## 深度分析
-### 1. 报复性披露模式：从单个漏洞到持续性零日 campaign
-Nightmare-Eclipse 的行为模式代表了零日漏洞披露领域的一种新威胁类型：持续的、针对性的报复性披露。与传统白帽私下报告后协调披露的流程不同，该研究者选择完全公开的技术路线——不仅发布漏洞详情，还附带可用的利用工具。根据安全专家 Rik Ferguson 的评估，这是"一次升级的报复性运动"，并且该研究者声称拥有 dead man's switch，一旦本人失联将自动释放更多漏洞。这意味着简单地切断联系或提起诉讼可能触发更大规模的披露。
 
-Nightmare-Eclipse 的行为代表了一种新兴的安全研究威胁范式：合法的安全研究人员因对厂商的报复性不满，转向公开披露漏洞。这种"越界复仇"模式与传统的黑产攻击或国家支持的攻击者不同，但又比单纯的安全研究更危险——它结合了 **deep knowledge of the target**（深入了解目标）、**emotional motivation**（情绪化动机）、以及缺乏法律约束的特点。
+### 1. BitLocker 作为"最后防线"的失守
 
-### 2. YellowKey 的战术价值：BitLocker 最后防线的失效
-YellowKey 直接绕过了 BitLocker——Windows 设备失窃时最后的数据保护层。攻击者需要物理接触目标设备，将特定文件加载到 USB 设备，通过正确的按键序列即可获得 BitLocker 保护机器的无限制 shell 访问。
+BitLocker 在 Windows 设备安全中扮演**最后防线**的角色——一旦设备丢失或被盗，全盘加密是阻止数据外泄的核心机制。 YellowKey 旁路通过按键序列 + USB 加载绕过这层防线，将"被盗的笔记本"从硬件损失升级为数据泄露事件。
 
-Rik Ferguson 的评价一针见血："如果研究者的说法成立，被盗笔记本就不再是硬件丢失问题，而是数据泄露事件"。这直接改变了企业资产失窃的法律和合规后果——从设备丢失成本升级为监管报告义务。
+这一漏洞暴露了**单层加密的脆弱性**：
+- 加密本身只解决"离线数据读取"问题，不解决"运行时访问"。
+- 物理访问 + 启动序列绕过可以打破纯加密假设。
+- "可信启动链"（Trusted Boot Chain）的任何一环失守都会传导至整个加密体系。
 
-YellowKey 还暗示可能存在 Microsoft 注入的后门，虽然安全专家表示无法根据现有信息验证这一说法，但这种质疑本身反映了用户对厂商的不信任危机。
+**安全模型升级路径**：必须将 BitLocker 与 TPM + 预启动 PIN + BIOS/UEFI 密码 + Secure Boot 组合使用，单一 BitLocker 在物理威胁模型下不足够。
 
-### 3. 内部人威胁的特殊风险：Microsoft 植入后门的指控
-值得注意的是，Nightmare-Eclipse 暗示 YellowKey 可能被用做后门——由 Microsoft 植入。虽然安全专家表示无法根据现有信息验证这一说法，但这一指控本身揭示了内部人威胁的特殊风险：如果该研究者确实曾拥有 Microsoft 内部信息和代码库访问权限，其披露的内容深度和准确性都将超过外部研究人员能达到的水平。
+### 2. 提权漏洞的"二阶段利用"模式
 
-如果内部人员能因不满而报复性披露，企业的安全边界已经从网络延伸到员工关系管理。可信供应链假设需要重新审视。
+GreenPlasma 属于典型的**二阶段利用链**中的提权环节。 Bridewell 的 Gavin Knapp 指出：
 
-### 4. GreenPlasma 的武器化路径：从部分 PoC 到完整利用
-GreenPlasma 目前只发布了部分利用代码而非完整 PoC，当前版本会触发默认 Windows 配置下的 UAC consent 提示。这意味着攻击者还需要进一步武器化才能实现静默利用——但 Bridewell 网络威胁情报主管 Gavin Knapp 指出，权限提升漏洞通常在攻击者获得初始立足点后使用，用于凭证窃取和横向移动。即使 GreenPlasma 目前还不完美，它已经是攻击者工具箱中的关键组件。
+> "这些提权漏洞常在攻击者获得初始立足点后被武器化，用于发现和收割凭据与数据，然后横向移动到其他系统，最终目标是数据窃取和/或勒索软件部署。"
 
-历史案例表明，RedSun 和 UnDefend 的 PoC 代码在公开后迅速被攻击者武器化并在真实攻击中使用。这意味着 GreenPlasma 的完整利用可能只是时间问题。
+**关键认识**：单个提权漏洞的 CVSS 分数可能不显眼，但**在攻击链中扮演关键放大器角色**——它把"低权限初始访问"升级为"系统级控制"。安全团队应将 P0 优先级分配给所有本地提权漏洞，因为它们是被武器化最频繁的一类。
 
-### 5. 披露时机的战术选择：Patch Tuesday 后的窗口期
-2026 年 5 月 12 日刚完成 Microsoft 月度 Patch Tuesday，5 月 13 日即发布新漏洞——这一 timing 选择表明攻击者对 Microsoft 的响应流程有深刻理解。选择在厂商完成一轮密集修复后披露，让安全团队处于被动状态：要么等待下一个修复窗口，要么在已知风险的情况下继续运营。
+### 3. "报复性披露"的产业代价
 
-这是一种刻意的战术选择：既绕过了大多数企业的集中打补丁窗口，又制造了"补丁真空期"——企业在下一个补丁周期前处于无保护状态。
+Nightmare-Eclipse 的披露模式不同于传统的负责任披露——其首次声明"有人违反协议，让他无家可归"，故采取公开施压策略。
 
-### 6. AI 辅助漏洞挖掘的新威胁态势
-Linus Torvalds 提到 AI 工具造成 Linux 安全邮件列表"几乎无法管理"。同样的工具也在被用于发现 Windows 漏洞，AI 加速的漏洞发现可能使类似 Nightmare-Eclipse 的案例更加频繁。
+**这一事件折射出的产业问题**：
+
+- **披露激励错位**：传统厂商安全响应流程假设研究者合作，但当研究者与厂商关系破裂时，协调机制失效。
+- **Patch Tuesday 时机博弈**：研究者在 Patch Tuesday 之后立即披露，意味着所有刚发布的补丁**未覆盖这些漏洞**——这是对微软响应速度的精准施压。
+- **真实利用窗口**：Huntress 报告 RedSun/UnDefend 的 PoC"迅速被滥用"，说明从 PoC 发布到武器化的窗口可能短至数天，而非传统的"负责任披露 90 天"。
+- **死人开关效应**：研究者声称有"死人开关"——这意味着**威胁是持续性的**，企业必须建立不依赖单一厂商响应速度的安全基线。
+
+### 4. AI Agent 部署对漏洞响应的新要求
+
+虽然本文不直接讨论 AI Agent，但漏洞标签中的 `cloud-computing` 和 `government` 暗示这些漏洞可能涉及企业自托管 AI Agent 的运行基础设施。
+
+**对 AI Agent 部署的启示**：
+
+- AI Agent 继承运行用户的完整系统权限——能读写文件、执行命令、调用 API。传统 Web 应用的"边界防御"模型对 Agent 系统完全失效。
+- 企业自托管场景下，**凭证管理**（API keys、bot tokens、OAuth 凭据分散）是最大的攻击面放大器。
+- **提示注入**是 AI Agent 特有的攻击向量——攻击者可以通过文档、邮件、网页内容向 Agent 注入恶意指令。
+- 数据主权和合规要求（越南、政府云）在漏洞响应中成为重要考量维度。
+
+### 5. 安全研究的激励结构失灵
+
+Nightmare-Eclipse 事件揭示了安全研究激励结构的深层问题：
+
+- **前 Microsoft 员工的身份猜测**反映了大厂安全团队的人员流失风险——内部知识一旦外溢，攻击面会大幅扩大。
+- **"报复性披露"的存在**说明当研究者认为传统披露通道失效时，他们会自创更激进的发布机制。
+- **真实利用已发生**意味着社区需要重新审视"是否应该发布完整 PoC"这一长期争议。
+
+**对企业的实际含义**：
+- 不能假设 PoC 不会到达攻击者手中。
+- 必须在架构层假设"漏洞已被利用"，按"assume breach"原则设计纵深防御。
+- 需要建立自己的威胁情报收集能力，跟踪 GitHub 上的零日 PoC 仓库（如 Nightmare-Eclipse 的 YellowKey 和 GreenPlasma 仓库）。
 
 ## 实践启示
-### 对企业安全团队
-1. **BitLocker 必须启用多因素解锁**：仅依赖 TPM 自动解密的配置不足以防御 YellowKey。必须配置 TPM + PIN 或 TPM + USB 启动密钥，并配合 BIOS/UEFI 密码锁定，防止通过 USB 引导绕过操作系统级保护。
-2. **高风险零日不应被动等待补丁**：RedSun 和 UnDefend 在披露后迅速被实际攻击采用，说明"等待厂商补丁"的传统策略存在空窗期。对于已公开的高风险漏洞，应立即评估临时补偿性控制（如网络分段、EMM 策略限制）。
-3. **笔记本资产失窃的响应流程需升级**：YellowKey 的实际可行性意味着笔记本丢失不再只是硬件问题，而是潜在数据泄露事件。需要重新审视资产失窃的应急响应流程，包含数据泄露通知的评估步骤。
-4. **建立零日公开的应急响应流程**：由于披露时机选择在 Patch Tuesday 后，企业需要建立针对此类"补丁真空期"的专项应急预案。
-5. **监控已知 PoC 的武器化状态**：关注 RedSun、UnDefend 等已被武器化的漏洞的利用趋势，评估 GreenPlasma 武器化的可能时间窗口。
 
-### 对个人用户
-1. **启用 BitLocker PIN 保护**：不要仅依赖 TPM 自动解锁，添加 PIN 码和 BIOS 密码可以有效阻止 YellowKey 类攻击。
-2. **设备丢失后的数据泄露应急响应**：假设最坏情况，建立设备丢失后的账户重置、会话终止、数据泄露评估的标准流程。
+### 1. BitLocker 部署的强制基线
 
-### 对安全产品开发者
-6. **内部威胁检测和员工权限管理需加强**：供应链安全不仅包括开源依赖，还应覆盖内部工具和员工权限管理。Nightmare-Eclipse 案例表明，具备内部信息访问权限的研究者可以持续多年进行针对性披露。
-7. **威胁情报团队应建立 Nightmare-Eclipse 专项监控**：其技术文档质量高、披露节奏稳定、GitHub 和博客基础设施完备，建议纳入持续监控名单，建立基于 IOC 的早期预警机制。
+针对 YellowKey 类物理访问威胁，强制启用以下 BitLocker 强化配置：
+- **预启动 PIN**：在启动到 Windows 之前要求 PIN 输入。
+- **TPM + PIN 组合**：而非仅 TPM（防止 TPM 旁路）。
+- **BIOS/UEFI 密码锁**：防止启动顺序被篡改。
+- **Secure Boot**：确保启动链完整可信。
 
-### 对安全行业的结构反思
-8. **重新审视厂商与安全研究者的关系**：Nightmare-Eclipse 的背景故事（据称是前 Microsoft 员工，因"协议被违反"而公开报复）提示厂商与研究者之间的信任契约破裂可能是激化冲突的关键。
-9. **零日市场与负责任披露的边界**：当研究者认为负责任披露渠道无效时，他们可能转向公开披露来"报复"。建立更有效的厂商-研究者沟通机制可能是减少此类事件的关键。
+### 2. 提权漏洞的优先级管理
 
-## 评分
-| 维度 | 分数 |
-|------|------|
-| 知识价值 | 8 |
-| 置信度 | 9 |
-| 推荐入库 | **strong** |
+将所有本地提权漏洞按 P0 处理，因为：
+- 它们是攻击链的关键放大器。
+- PoC 代码一旦公开，武器化时间极短。
+- 在 AI Agent 时代，Agent 继承的权限可能被这类漏洞放大。
 
-## 关联阅读
-- [Disgruntled researcher releases two more Microsoft zero-days](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)（综合实体页，含更详细的深度分析和交叉引用）
-- [TheRegister 版：Microsoft 零日事件深度分析](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled-theregister.md) — TheRegister 对 Nightmare-Eclipse 事件的独立报道与安全研究社区的反应
-- [原文存档（综合版）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/disgruntled-researcher-microsoft-zero-days.md)
-- [TheRegister 深度分析存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-zero-days-researcher-disgruntled-theregister.md)
+### 3. 建立不依赖厂商响应速度的安全基线
+
+针对报复性披露模式：
+- **assume breach 架构**：假设 PoC 已在野利用，从这个前提出发设计。
+- **零信任凭证管理**：缩短 API key、token 的生命周期；引入凭据隔离。
+- **威胁情报订阅**：跟踪 GitHub、CISA、Huntress 等多源威胁情报，不依赖单一厂商公告。
+- **补丁虚拟化**：在 CVE 公开后，先用虚拟补丁（如 WAF 规则、行为阻断）防御，等待官方补丁。
+
+### 4. AI Agent 场景的纵深防御
+
+- **最小权限原则**：Agent 运行时使用专用低权限账户，仅在必要时申请提权。
+- **网络隔离**：Agent 运行环境与核心业务系统隔离。
+- **输入过滤**：对 Agent 处理的所有外部输入（文档、网页、邮件）做提示注入检测。
+- **审计日志**：所有 Agent 动作记录完整审计链，便于事后取证。
+
+### 5. 应对持续性威胁
+
+研究者的"死人开关"机制意味着威胁是**持续性的**而非单点事件：
+- 不要把漏洞响应当作一次性事件，而要建立**持续监控机制**。
+- 在补丁日建立"补丁后审查"流程，专门识别新披露但未修复的漏洞。
+- 跟踪研究者仓库的 watch 通知，第一时间获得 PoC 发布预警。
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [同事件 TheRegister 主报道](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled-theregister.md)
+- [研究者背景与历史披露](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
+- [Cisco SD-WAN CVE 类似案例](https://github.com/QianJinGuo/wiki/blob/main/entities/cve-2026-20182-cisco-sd-wan-vhub-bypass.md)
+- [VSCode GitHub Token 窃取事件](ch01/277-token.md)
+- [金融行业 GenAI 合规](ch04/310-ai.md)
+- [Exaforce Agentic SOC 平台](ch04/019-exaforce-agentic-soc-platform-and-mdr.md)
 
 ---
 

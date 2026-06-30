@@ -1,6 +1,6 @@
-# aws generative ai model agility framework
+# AWS Generative AI Model Agility Framework
 
-## Ch11.143 aws generative ai model agility framework
+## Ch11.143 AWS Generative AI Model Agility Framework
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/aws-generative-ai-model-agility-framework.md`
 

@@ -1,6 +1,6 @@
-# laser acl2026 latent superposition visual reasoning
+# Laser Acl2026 Latent Superposition Visual Reasoning
 
-## Ch01.902 laser acl2026 latent superposition visual reasoning
+## Ch01.902 Laser Acl2026 Latent Superposition Visual Reasoning
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/laser-acl2026-latent-superposition-visual-reasoning.md`
 
@@ -66,7 +66,7 @@ Laser 用"概率叠加"在隐空间实现多模态推理，Token 消耗降低 97
 3. **多语义叠加用熵正则化稳定训练**：当模型需要同时维持多个语义分支时，加入熵正则化项可防止语义坍缩。具体做法：计算隐状态概率分布的熵，在高熵时施加额外正则化惩罚，引导模型在不确定度降低时自动收缩到关键语义
 4. **动态窗口设计实现无监督课程学习**：在训练多模态模型时，不必显式实现课程调度。只需让窗口大小随训练步数自适应收缩（宽→窄），模型会自动在早期学习全局特征、后期聚焦局部细节。DWAL 的窗口收缩策略可直接迁移
 5. **97% Token 降低的实际工程价值**：Laser 的 97% token 降低意味着可以大幅减少推理时的 KV-cache 占用和通信带宽。在边缘部署或长上下文视觉推理场景中，隐式推理的效率优势显著。但需要注意：隐式推理的精度上限依赖隐空间表示的完整性，需在具体任务上验证
-updated: 2026-06-19
+updated: 2026-06-30
 
 ## 相关实体
 - [Pytorch In Kernel Recsys Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch-in-kernel-recsys-optimization.md)

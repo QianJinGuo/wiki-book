@@ -1,6 +1,6 @@
-# factory mission multi agent architecture
+# Factory Mission Multi Agent Architecture
 
-## Ch01.888 factory mission multi agent architecture
+## Ch01.888 Factory Mission Multi Agent Architecture
 
 > 📊 Level ⭐⭐⭐ | 12.8KB | `entities/factory-mission-multi-agent-architecture.md`
 

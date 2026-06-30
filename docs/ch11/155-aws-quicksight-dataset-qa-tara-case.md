@@ -1,6 +1,6 @@
-# aws quicksight dataset qa tara case
+# AWS Quicksight Dataset QA Tara Case
 
-## Ch11.155 aws quicksight dataset qa tara case
+## Ch11.155 AWS Quicksight Dataset QA Tara Case
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/aws-quicksight-dataset-qa-tara-case.md`
 

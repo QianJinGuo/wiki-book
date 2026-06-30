@@ -7,6 +7,26 @@
 
   var PROXY_URL = "https://ai-chat-proxy.jinguo.workers.dev";
 
+  // ========== Provider 配置 ==========
+  var PRESETS = [
+    { name: "默认 (站点内置)", endpoint: "", apiKey: "", model: "" },
+    { name: "DeepSeek", endpoint: "https://api.deepseek.com/v1/chat/completions", apiKey: "", model: "deepseek-chat" },
+    { name: "讯飞星火", endpoint: "https://spark-api-open.xf-yun.com/v1/chat/completions", apiKey: "", model: "generalv3.5" },
+    { name: "MiMo (OpenRouter)", endpoint: "https://openrouter.ai/api/v1/chat/completions", apiKey: "", model: "xiaomi/mimo-v2.5-pro" },
+    { name: "OpenAI 兼容", endpoint: "", apiKey: "", model: "" }
+  ];
+
+  function getConfig() {
+    try {
+      var saved = localStorage.getItem("ai-chat-config");
+      if (saved) return JSON.parse(saved);
+    } catch(e) {}
+    return { endpoint: "", apiKey: "", model: "" };
+  }
+  function saveConfig(cfg) {
+    try { localStorage.setItem("ai-chat-config", JSON.stringify(cfg)); } catch(e) {}
+  }
+
   // ========== 文章上下文 ==========
   function getArticleContext() {
     var article = document.querySelector("article.md-content__inner");
@@ -38,17 +58,23 @@
 
   // ========== API 调用 ==========
   function chat(messages, onChunk, onDone, onError) {
-    var body = JSON.stringify({
+    var cfg = getConfig();
+    var endpoint = cfg.endpoint || PROXY_URL;
+    var headers = { "Content-Type": "application/json" };
+    if (cfg.apiKey) headers["Authorization"] = "Bearer " + cfg.apiKey;
+
+    var body = {
       messages: messages,
       stream: true,
       max_tokens: 2048,
       temperature: 0.7
-    });
+    };
+    if (cfg.model) body.model = cfg.model;
 
-    fetch(PROXY_URL, {
+    fetch(endpoint, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: body
+      headers: headers,
+      body: JSON.stringify(body)
     }).then(function(resp) {
       if (!resp.ok) {
         return resp.text().then(function(t) {
@@ -102,12 +128,42 @@
     var panel = document.createElement("div");
     panel.className = "ai-chat-panel";
 
+    // 构建预设选项
+    var cfg = getConfig();
+    var presetOptionsHtml = '';
+    for (var i = 0; i < PRESETS.length; i++) {
+      presetOptionsHtml += '<option value="' + i + '">' + PRESETS[i].name + '</option>';
+    }
+
     panel.innerHTML =
       '<div class="ai-chat__header">' +
         '<span class="ai-chat__title"><span class="ai-chat__title-icon">🤖</span> Talk to AI</span>' +
         '<div class="ai-chat__actions">' +
+          '<button class="ai-chat__btn" data-action="settings" title="设置">⚙️</button>' +
           '<button class="ai-chat__btn" data-action="clear" title="清空">🗑</button>' +
           '<button class="ai-chat__btn" data-action="close" title="关闭">✕</button>' +
+        '</div>' +
+      '</div>' +
+      '<div class="ai-chat__settings" style="display:none">' +
+        '<div class="ai-chat__form-row">' +
+          '<label>预设</label>' +
+          '<select class="ai-chat__form-select" id="ai-cfg-preset">' + presetOptionsHtml + '</select>' +
+        '</div>' +
+        '<div class="ai-chat__form-row">' +
+          '<label>Endpoint</label>' +
+          '<input class="ai-chat__form-input" id="ai-cfg-endpoint" placeholder="https://api.example.com/v1/chat/completions" value="' + (cfg.endpoint || '') + '">' +
+        '</div>' +
+        '<div class="ai-chat__form-row">' +
+          '<label>API Key</label>' +
+          '<input class="ai-chat__form-input" id="ai-cfg-apikey" type="password" placeholder="sk-..." value="' + (cfg.apiKey || '') + '">' +
+        '</div>' +
+        '<div class="ai-chat__form-row">' +
+          '<label>Model</label>' +
+          '<input class="ai-chat__form-input" id="ai-cfg-model" placeholder="deepseek-chat" value="' + (cfg.model || '') + '">' +
+        '</div>' +
+        '<div class="ai-chat__form-actions">' +
+          '<button class="ai-chat__form-save" data-action="save-config">保存</button>' +
+          '<span class="ai-chat__form-status"></span>' +
         '</div>' +
       '</div>' +
       '<div class="ai-chat__messages">' +
@@ -212,6 +268,19 @@
 
     header.style.cursor = "grab";
 
+    // 预设选择 → 自动填充
+    var presetSelect = panel.querySelector("#ai-cfg-preset");
+    if (presetSelect) {
+      presetSelect.addEventListener("change", function() {
+        var p = PRESETS[parseInt(presetSelect.value)];
+        if (p) {
+          panel.querySelector("#ai-cfg-endpoint").value = p.endpoint;
+          panel.querySelector("#ai-cfg-model").value = p.model;
+          if (p.apiKey) panel.querySelector("#ai-cfg-apikey").value = p.apiKey;
+        }
+      });
+    }
+
     // 事件委托
     panel.addEventListener("click", function(e) {
       var btn = e.target.closest("[data-action]");
@@ -219,6 +288,22 @@
       var action = btn.getAttribute("data-action");
 
       if (action === "close") panel.classList.remove("open");
+
+      if (action === "settings") {
+        var settings = panel.querySelector(".ai-chat__settings");
+        if (settings) settings.style.display = settings.style.display === "none" ? "block" : "none";
+      }
+
+      if (action === "save-config") {
+        var newCfg = {
+          endpoint: panel.querySelector("#ai-cfg-endpoint").value.trim(),
+          apiKey: panel.querySelector("#ai-cfg-apikey").value.trim(),
+          model: panel.querySelector("#ai-cfg-model").value.trim()
+        };
+        saveConfig(newCfg);
+        var status = panel.querySelector(".ai-chat__form-status");
+        if (status) { status.textContent = "已保存 ✓"; setTimeout(function() { status.textContent = ""; }, 2000); }
+      }
 
       if (action === "clear") {
         conversationHistory = [];

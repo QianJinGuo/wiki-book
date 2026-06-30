@@ -1,6 +1,6 @@
-# anthropic demystifying evals for ai agents
+# Anthropic Demystifying Evals for AI Agents
 
-## Ch04.396 anthropic demystifying evals for ai agents
+## Ch04.396 Anthropic Demystifying Evals for AI Agents
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/anthropic-demystifying-evals-for-ai-agents.md`
 

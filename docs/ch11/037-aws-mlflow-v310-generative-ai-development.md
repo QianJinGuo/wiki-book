@@ -1,6 +1,6 @@
-# aws mlflow v310 generative ai development
+# AWS Mlflow V310 Generative AI Development
 
-## Ch11.037 aws mlflow v310 generative ai development
+## Ch11.037 AWS Mlflow V310 Generative AI Development
 
 > 📊 Level ⭐⭐ | 14.0KB | `entities/aws-mlflow-v310-generative-ai-development.md`
 

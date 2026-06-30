@@ -1,6 +1,6 @@
-# aws grpo rlvr sagemaker math reasoning
+# AWS GRPO RLVR Sagemaker Math Reasoning
 
-## Ch11.098 aws grpo rlvr sagemaker math reasoning
+## Ch11.098 AWS GRPO RLVR Sagemaker Math Reasoning
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/aws-grpo-rlvr-sagemaker-math-reasoning.md`
 

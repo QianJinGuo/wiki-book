@@ -72,6 +72,65 @@
 .ai-chat__title-icon {
   font-size: 1rem;
 }
+
+/* 设置面板 */
+.ai-chat__settings {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-default-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.ai-chat__form-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ai-chat__form-row label {
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+  min-width: 60px;
+  flex-shrink: 0;
+}
+.ai-chat__form-input,
+.ai-chat__form-select {
+  flex: 1;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  outline: none;
+  min-width: 0;
+}
+.ai-chat__form-input:focus,
+.ai-chat__form-select:focus {
+  border-color: var(--md-accent-fg-color);
+}
+.ai-chat__form-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+.ai-chat__form-save {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background: var(--md-accent-fg-color);
+  color: #fff;
+  cursor: pointer;
+}
+.ai-chat__form-save:hover {
+  opacity: 0.9;
+}
+.ai-chat__form-status {
+  font-size: 0.7rem;
+  color: #27ae60;
+}
 .ai-chat__actions {
   display: flex;
   gap: 0.2rem;

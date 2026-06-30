@@ -11,8 +11,8 @@
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
 | 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1100 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 905 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 411 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 902 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 415 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 92 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 31 篇 |
 
@@ -65,7 +65,7 @@
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 543 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 540 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,12 +76,12 @@
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
   - ⭐ From idea to AI app: creating intelligent research assistants
-  - ... 共 **543** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **540** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 87 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
-  - ⭐ Impeccable
+  - ⭐ Impeccable：大规模自动化测试框架
   - ⭐⭐ Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（13 来源深度合并：Addy Osmani 
   - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ QQ音乐 Harness Engineering 实践（大仓多服务场景）
@@ -91,18 +91,18 @@
   - ⭐⭐ 阿里工程师 Harness 工程化实践 (双案例合并)
   - ... 共 **87** 篇 → [完整章节](ch05-harness.md)
 
-### [Ch06 记忆与上下文管理](ch06-memory.md) — 35 篇
+### [Ch06 记忆与上下文管理](ch06-memory.md) — 36 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
 
+  - ⭐⭐ Agent 记忆架构：先别急着把 Memory 当数据库
   - ⭐⭐ 深度拆解 Hermes Agent 记忆系统
   - ⭐⭐ AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆
-  - ⭐⭐ claude code openclaw memory vector db doubt
+  - ⭐⭐ Claude Code vs OpenClaw 记忆：向量数据库是否必要
   - ⭐⭐ Agent-Memory 评测全景：基准、评估与记忆系统
-  - ⭐⭐ claude code openclaw memory comparison
-  - ⭐⭐ context window management comparison
+  - ⭐⭐ Claude Code Openclaw Memory Comparison
+  - ⭐⭐ Context Window Management Comparison
   - ⭐⭐ Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge 
-  - ⭐⭐ Memory 不是 RAG：Agent 记忆的系统性框架
-  - ... 共 **35** 篇 → [完整章节](ch06-memory.md)
+  - ... 共 **36** 篇 → [完整章节](ch06-memory.md)
 
 ### [Ch07 技能、工具与 MCP](ch07-skill-tool.md) — 64 篇
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
@@ -112,7 +112,7 @@
   - ⭐⭐ 工作流的 Skill 怎么写？从 7 个顶级 Skill 中提炼的模式与最佳实践
   - ⭐⭐ 企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范
   - ⭐⭐ AI Agents Security Survey: Attack and Defense
-  - ⭐⭐ claude code skills mcp rules source analysis
+  - ⭐⭐ Claude Code Skills / MCP / Rules 源码分析
   - ⭐⭐ Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）
   - ⭐⭐ 重新定义Skill开发：保姆级教程&一站式开发助手
   - ... 共 **64** 篇 → [完整章节](ch07-skill-tool.md)
@@ -127,10 +127,10 @@
   - ⭐⭐ 微软 Agent Framework 全栈指南（Python）
   - ⭐⭐⭐ Claude Code Dynamic Workflows 多Agent编排
   - ⭐⭐⭐ JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiu
-  - ⭐⭐⭐ ai agent memory systems
+  - ⭐⭐⭐ AI Agent Memory Systems
   - ... 共 **25** 篇 → [完整章节](ch08-multi-agent.md)
 
-### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 127 篇
+### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 126 篇
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
   - ⭐ Claude Code Agent View
@@ -141,28 +141,28 @@
   - ⭐⭐ 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类
   - ⭐⭐ Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
   - ⭐⭐ 小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化
-  - ... 共 **127** 篇 → [完整章节](ch09-ai-coding.md)
+  - ... 共 **126** 篇 → [完整章节](ch09-ai-coding.md)
 
 ### [Ch10 RAG 与知识检索](ch10-rag.md) — 24 篇
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
   - ⭐ 为OpenClaw配置网盘空间的最佳实践
-  - ⭐ identity behavior context itdr solution
+  - ⭐ Identity Behavior Context Itdr Solution
   - ⭐⭐ 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
-  - ⭐⭐ rag-vector-knowledge-graph-ontology
-  - ⭐⭐ nvidia multimodal rag knowledge systems
+  - ⭐⭐ RAG → 知识图谱 → 本体论：三层知识架构
+  - ⭐⭐ Nvidia Multimodal RAG Knowledge Systems
   - ⭐⭐ RAG 分块优化 2025：策略选择与工程实践
   - ⭐⭐ Manufacturing Intelligence with Amazon Nova Multimodal Embeddings
-  - ⭐⭐ rag chunk embedding rerank pipeline
+  - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **24** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 905 篇**
+> 📖 **本篇共 902 篇**
 
 ---
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 243 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 245 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
@@ -173,20 +173,20 @@
   - ⭐⭐ 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
   - ⭐⭐ AWS Bedrock 多智能体协作指南
   - ⭐⭐ From silos to service topology: why Netflix built a real-time architec
-  - ... 共 **243** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **245** 篇 → [完整章节](ch11-infra.md)
 
-### [Ch12 安全与治理](ch12-security.md) — 120 篇
+### [Ch12 安全与治理](ch12-security.md) — 121 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
 
   - ⭐ CISA urges critical infrastructure firms to 'fortify' before it's too 
   - ⭐ A Framework for AI Threat Readiness
+  - ⭐ Token 撤销触发设备擦除的安全漏洞
   - ⭐ From SSH to REST: A Security-Driven Modernization of Slack's EMR Data 
   - ⭐ Mozilla warns UK: Breaking VPNs will not magically fix Britain's age-c
   - ⭐ Offensive Security Blog
   - ⭐ Sandworm Hackers Shift From IT Breaches to Critical OT Targets
   - ⭐ 5 Things to Know about the CLARITY Act
-  - ⭐ fedora hummingbird brings the container security model to a linux host
-  - ... 共 **120** 篇 → [完整章节](ch12-security.md)
+  - ... 共 **121** 篇 → [完整章节](ch12-security.md)
 
 ### [Ch13 MLOps 与评估](ch13-mlops.md) — 17 篇
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
@@ -201,7 +201,7 @@
   - ⭐⭐ SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
   - ... 共 **17** 篇 → [完整章节](ch13-mlops.md)
 
-### [Ch14 数据工程](ch14-data.md) — 31 篇
+### [Ch14 数据工程](ch14-data.md) — 32 篇
 > AI 的燃料：实时入湖、流处理、数据质量
 
   - ⭐ DDoSing Software Delivery Pipelines
@@ -212,9 +212,9 @@
   - ⭐⭐ Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
   - ⭐⭐ Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
   - ⭐⭐ Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 
-  - ... 共 **31** 篇 → [完整章节](ch14-data.md)
+  - ... 共 **32** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 411 篇**
+> 📖 **本篇共 415 篇**
 
 ---
 
@@ -239,7 +239,7 @@
   - ⭐ 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
   - ⭐⭐ Build real-time voice applications with Amazon SageMaker AI and vLLM
   - ⭐⭐ Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
-  - ⭐⭐ glm5-scaling-pain-inference
+  - ⭐⭐ GLM-5 Scaling 痛点与推理优化
   - ⭐⭐ EAGLE-3 投机解码与 USP 长序列训练优化
   - ⭐⭐ PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python 
   - ⭐⭐ 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
@@ -304,6 +304,6 @@
 
 ---
 
-**📊 全书收录：2539 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：2540 篇实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-06-25 | 来源: ~/wiki/entities/

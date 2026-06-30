@@ -1,6 +1,6 @@
-# agent principle architecture engineering practice
+# Agent Principle Architecture Engineering Practice
 
-## Ch04.304 agent principle architecture engineering practice
+## Ch04.304 Agent Principle Architecture Engineering Practice
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/agent-principle-architecture-engineering-practice.md`
 

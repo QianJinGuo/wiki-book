@@ -1,6 +1,6 @@
-# aws quicksight dataset qa natural language
+# AWS Quicksight Dataset QA Natural Language
 
-## Ch11.163 aws quicksight dataset qa natural language
+## Ch11.163 AWS Quicksight Dataset QA Natural Language
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/aws-quicksight-dataset-qa-natural-language.md`
 
