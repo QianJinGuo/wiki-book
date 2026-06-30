@@ -84,8 +84,8 @@ So let the work correct your assumptions, because you cannot afford to lead agen
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch04/503-agent.md)
 - [Google Io 2026 Agentic Gemini Era](ch04/503-agent.md)
 - [Asana Agentic Work Management Platform Lettertwo](ch04/503-agent.md)
-- [Tokenspeed Agentic Inference Engine](ch04/521-tokenspeed-agentic-inference-engine.md)
-- [Gemini 3 5 Frontier Intelligence](ch01/414-gemini-3-5-frontier-intelligence-with-action.md)
+- [Tokenspeed Agentic Inference Engine](ch04/534-tokenspeed-agentic-inference-engine.md)
+- [Gemini 3 5 Frontier Intelligence](ch01/412-gemini-3-5-frontier-intelligence-with-action.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-engineering-leadership.md)
 

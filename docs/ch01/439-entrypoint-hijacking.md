@@ -51,7 +51,7 @@ EntryPoint Hijacking 的本质是"滥用 Windows 加载器的正常调度机制"
 ## 相关实体
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
-- [Npm Supply Chain Compromise Postmortem](ch04/310-ai.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/150-ai.md)
 - [How We Built Cognitive Memory For Agentic Systems](ch04/503-agent.md)
 - [Stripe Sessions 2026 Ai Agents](ch04/307-stripe-sessions-2026-ai-agents.md)
 

@@ -174,7 +174,7 @@ Tigress-obfuscated binary 要求 harness 能处理控制流图简化、间接跳
 ## 相关实体
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md)
 - [The It And Security Field Guide To Ai Adoption Tines](ch12/072-the-it-and-security-field-guide-to-ai-adoption-tines.md)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](ch04/310-ai.md)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](ch04/150-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [How Open Model Ecosystems Compound](ch01/677-how-open-model-ecosystems-compound.md)
 

@@ -15,11 +15,11 @@
 - [Nathan Lambert Claude Mythos Open Weights](ch01/380-claude.md)
 - [Deepseek V4 Pro Vs Claude](ch01/380-claude.md)
 - [Deepseek Moe Parallel Strategy](ch01/774-deepseek.md)
-- [Deepseek V4 Training Methodology](ch04/310-ai.md)
+- [Deepseek V4 Training Methodology](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/chinese-ai-lab-insights-nathan.md)
 
-- [Linn Fritz Looks At The Lighter Side Of Life](ch09/106-linn-fritz-looks-at-the-lighter-side-of-life.md)
+- [Linn Fritz Looks At The Lighter Side Of Life](ch09/105-linn-fritz-looks-at-the-lighter-side-of-life.md)
 - [deepseek-v4深度拆解一篇论文同时做了五件大事](ch01/528-deepseek-v4.md)
 
 ## 文化背景：为什么中国实验室擅长追赶前沿

@@ -55,13 +55,13 @@ I have used various selector queries to match user prompts and LLM responses but
 `const STOP_SIGNALS = {  ChatGPT: 'button[data-
 
 ## 相关实体
-- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](ch04/310-ai.md)
+- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](ch04/150-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Llm Raiders Private Ai Server](ch04/310-ai.md)
+- [Llm Raiders Private Ai Server](ch04/150-ai.md)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Amazon Bedrock Api Security Guide](ch12/032-amazon-bedrock-api.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llmreaper-dom-based-ai-exfiltration.md)- [llmreaper - dom based ai conversation exfiltration via brows](ch04/310-ai.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llmreaper-dom-based-ai-exfiltration.md)- [llmreaper - dom based ai conversation exfiltration via brows](ch04/150-ai.md)
 
 ---
 

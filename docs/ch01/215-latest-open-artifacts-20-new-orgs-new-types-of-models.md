@@ -22,7 +22,7 @@ type: entity
 - [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/774-deepseek.md)
 - [Interconnects What Comes Next With Open Models](ch01/184-what-comes-next-with-open-models.md)
 - [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-19-qwen-glm-minimax-interconnects.md)
-- [U Of T Ai Worm Cleverhans Papernot 2026](ch04/310-ai.md)
+- [U Of T Ai Worm Cleverhans Papernot 2026](ch04/150-ai.md)
 - [How Far Behind Are Open Models 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/how-far-behind-are-open-models-2026.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)

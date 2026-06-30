@@ -182,13 +182,13 @@ Content-Security-Policy:
 - [Ico Fines South Staffordshire 2022 Breach](https://github.com/QianJinGuo/wiki/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Interaction Models](ch01/522-thinking-machines-interaction-models-ai-cold.md)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](ch04/310-ai.md)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](ch09/114-automate-progressive-rollouts-with-vercel-flags-vercel.md)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](ch04/150-ai.md)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](ch09/113-automate-progressive-rollouts-with-vercel-flags-vercel.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/afine-csp-html-injection-password-exfiltration.md)
-- [discord 全平台端到端加密](ch12/086-discord.md)
+- [discord 全平台端到端加密](ch12/091-discord.md)
 - [incendium fuzzing ms rpc](ch12/103-incendium-fuzzing-ms-rpc.md)
-- [the interface is no longer the product](ch04/310-ai.md)
+- [the interface is no longer the product](ch04/150-ai.md)
 - [a route to root in a 4g industrial router](https://github.com/QianJinGuo/wiki/blob/main/entities/tantosec-com-blog-2026-04-route-to-root-in-4g-industrial-router.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

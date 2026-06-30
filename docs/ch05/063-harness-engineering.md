@@ -1,46 +1,104 @@
-# 清华大学：驾驭工程 (Harness Engineering) 研究报告
+# Harness Engineering 的未来——什么会消失，什么不会
 
-## Ch05.063 清华大学：驾驭工程 (Harness Engineering) 研究报告
+## Ch05.063 Harness Engineering 的未来——什么会消失，什么不会
 
-> 📊 Level ⭐⭐ | 6.4KB | `entities/tsinghua-harness-engineering-report.md`
+> 📊 Level ⭐⭐ | 6.5KB | `entities/harness-engineering-future-persistence-vs-erosion.md`
 
-# 清华大学：驾驭工程 (Harness Engineering) 研究报告
-> 清华大学发布的 Harness Engineering 研究报告（79页完整PDF）
-> 原始 PDF 保存在 assets/ 目录：tsinghua-harness-engineering-report.pdf
-> 驾驭工程(Harness Engineering)的核心是围绕高自治、长时程AI构建可治理的操作系统层，将提示词、上下文、智能体等能力制度化为机械可验证的契约、状态恢复与审计体系，从而从"让AI听懂"升级为"让AI系统可信、可控、可持续运行"。
+# Harness Engineering 的未来——什么会消失，什么不会
 
-- 发布渠道：GIS极客公众号（2026-04-10）
+> **背景**：郭美青，2026年5月21日。本文从模型能力跃升的视角审视 Harness Engineering 的未来，提出"主权不可自生"作为划分可自动化与不可自动化工作的核心框架。
 
-## 相关实体
-- [Harness Engineering Reliable Long Term Agent](ch04/503-agent.md)
-- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch04/503-agent.md)
-- [Harness Engineering Long Term Agent Tasks](ch04/503-agent.md)
-- [Harness Engineering Systematic Explainer](ch05/036-harness-engineering-systematic-explainer.md)
-- [Harness Engineering Framework](ch05/061-harness-engineering.md)
+## 摘要
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tsinghua-harness-engineering-report.md)
+随着模型能力持续跃升，Harness Engineering 中的部分工作将被内化到模型中——但治理层面的工作不仅不会消失，反而更加重要。本文提出"主权不可自生"（Sovereignty Cannot Self-Generate）作为分界线的本质：被取代的工作回答"怎么做"（how），不会被取代的工作回答"该不该做"（whether）。在此框架下，Harness Engineering 将经历三阶段演进：短期 Agent 架构师 → 中期审核自动生成的 Harness → 长期治理工程。
+
+## 核心框架：主权线
+
+### "主权不可自生"原则
+
+模型能力的边界在于：它可以在给定权限和环境内高效执行，但不能自行决定自己应该拥有什么权限、应该在什么环境中运行。这就是"主权不可自生"——Agent 的主权（意志、权限、边界）必须由外部注入，而非自我生成。
+
+这一原则自然地将 Harness Engineering 的工作分为两类：
+
+### 被取代的工作（回答"怎么做"）
+
+这些工作本质上是"模式匹配 + 格式转换"，模型能力提升后可以内化：
+
+| 工作类型 | 说明 | 被取代原因 |
+|---------|------|-----------|
+| 工具调用编排 | 格式化 API 请求、解析响应 | 模型已擅长结构化 I/O |
+| 格式适配 | 输入输出格式转换 | 模式匹配任务 |
+| 窗口管理 | 上下文窗口的截断、优先级排序 | 模型上下文能力增强 |
+| 基础规划 | 简单任务分解和步骤编排 | Chain-of-thought 已内化 |
+| 基础自验证 | 输出格式检查、基本合理性验证 | 模型可自行检查 |
+| 通用 Skill 封装 | 标准化的工具包装和接口适配 | 可由模型直接生成 |
+
+### 不会消失的工作（回答"该不该做"）
+
+这些工作涉及 Agent 的"主权"——意志注入、权限授予、环境供给、边界划定、治理与审计——模型无法自行决定：
+
+| 工作类型 | 说明 | 不可取代原因 |
+|---------|------|-------------|
+| 意志注入 | 定义 Agent 的目标和价值观 | 模型不能自定目标 |
+| 权限授予 | 决定 Agent 可访问哪些资源和操作 | 安全边界需要外部设定 |
+| 环境供给 | 配置运行时环境、依赖和约束 | 环境定义先于执行 |
+| 边界划定 | 设定 Agent 行为的红线和限制 | 防护措施需要外部施加 |
+| 治理与审计 | 追踪、审查、合规 | 审计权不能由被审计者自授 |
+
+## 三阶段演进路径
+
+### 短期：Agent 架构师
+
+当前阶段，Harness Engineer 的核心工作是设计和构建 Agent 的运行框架——包括工具链集成、上下文管理、错误处理等。这一阶段的工作大部分属于"怎么做"的范畴。
+
+### 中期：审核自动生成的 Harness
+
+随着模型能力提升，Harness 的生成将部分自动化——模型可以自动编排工具调用、适配格式。但 Harness Engineer 的角色转变为**审核者**：审查自动生成的 Harness 是否安全、合规、符合设计意图。重点从"构建"转向"审查"。
+
+### 长期：治理工程
+
+最终阶段，Harness Engineering 演化为治理工程——专注于 Agent 的意志注入、权限管理、边界划定和审计追溯。这些"该不该做"的问题成为核心工作，而"怎么做"的大部分已被模型内化。
 
 ## 深度分析
 
-驾驭工程（Harness Engineering）的核心命题是从"让 AI 听懂"升级为"让 AI 系统可信、可控、可持续运行"，这一表述揭示了 AI 工程化从提示词工程（Prompt Engineering）到系统治理（System Governance）的范式转移。传统 Prompt Engineering 的目标是在单次交互中优化模型输出质量，而驾驭工程的目标是围绕高自治、长时程 AI 构建可治理的操作系统层，将提示词、上下文、智能体等能力抽象为可验证的契约、状态恢复与审计体系。这一目标与 Claude Code 的 Permission Engine、bubblewrap 沙箱等 Harness Engineering 实践形成了跨系统的理念印证——两者都在回答同一个问题：如何在保持 AI 能力天花板的同时，将系统行为约束在可验证的边界内。
+### 与 Harness Engineering 概念体系的关系
 
-驾驭工程强调的"制度化"与"机械可验证"揭示了当前 AI 系统治理的核心缺口。传统软件开发依赖代码审查、测试、访问控制等工程实践来保证系统行为可预测，但 AI 系统的行为空间（尤其是具备工具调用、长程记忆、多 Agent 协作能力的系统）远超传统软件。将提示词、上下文、智能体能力"制度化"意味着建立显式的规则、契约和边界，而非依赖模型内在的"对齐直觉"。机械可验证的审计体系则要求系统行为可追溯、可回滚、可问责，这与 Claude Code 的 Session History、Memdir 记忆机制的设计方向一致。
+本文的"主权线"框架为 [Harness Engineering](ch05/061-harness-engineering.md) 概念提供了时间维度的演进视角。它回答了一个关键问题：当模型越来越强时，Harness Engineering 师的角色如何变化？
 
-高自治与长时程是驾驭工程聚焦的两个关键特征维度。高自治意味着 AI 系统在执行复杂任务时需要更少的显式人工干预，这直接放大了错误决策的潜在影响范围；长时程则意味着系统的运行状态会跨多个会话、多个上下文累积，上下文管理、状态一致性、记忆衰减等问题变得更加突出。清华大学 79 页报告专门针对这两个维度构建治理框架，体现了对 AI Agent 实际落地场景的深刻洞察。
+答案不是"消失"，而是"上移"——从技术实现层上移到治理决策层。这与软件工程中"抽象层次不断提升"的历史规律一致：汇编程序员没有消失，而是演化为系统架构师和安全工程师。
 
-从系统演化角度看，驾驭工程代表了 AI 基础设施从"工具"到"平台"的认知升级。传统视角下，AI 模型是辅助人类完成特定任务的工具；驾驭工程视角下，AI 系统是需要在长期运行中被治理、被审计、被优化的核心基础设施。这种认知转换与 OpenClaw 架构、Claude Code 的 Agent 8 类内置分工体系形成了方法论层面的呼应——都是在构建多层次、可治理的 AI 操作框架，而非单一功能的模型调用。
+### 实际落地的张力
+
+"主权线"框架虽然清晰，但实际操作中存在张力：
+
+1. **灰色地带**：许多工作（如 prompt engineering、错误恢复策略）既涉及"怎么做"也涉及"该不该做"
+2. **模型幻觉风险**：如果模型在"怎么做"层面出错，仍需人工干预——完全自动化可能不可行
+3. **治理滞后**：Agent 的能力增长速度可能快于治理框架的建设速度
+
+### 对从业者的影响
+
+- **技术实现层**：需要向治理层转型，否则面临被模型取代的风险
+- **安全/合规层**：需求不减反增，需要理解 Agent 架构的治理专家
+- **新角色涌现**：Agent 审计师、AI 治理工程师等新职位将出现
 
 ## 实践启示
 
-**AI 系统设计应从"单次交互优化"转向"长期可治理架构"。** 驾驭工程的核心启示是，AI 系统的工程化不能只关注单次输出质量，还需要从架构层面建立契约机制（Prompt Contract）、状态恢复（State Recovery）和审计体系（Audit System）。在设计任何长时程 AI Agent 系统时，应将"系统行为是否可验证、可回滚、可问责"作为架构评估的核心指标。
+1. **能力分层意识**：明确自己当前工作的"主权线"位置——是在做"怎么做"还是"该不该做"
+2. **提前布局治理能力**：即使当前以技术实现为主，也应积累权限设计、安全审计等治理能力
+3. **工具链标准化**：将可自动化的工作标准化，为模型内化做好准备
+4. **建立审计机制**：在 Agent 能力快速提升的同时，建立可追溯的操作审计体系
 
-**上下文管理策略应制度化为可配置的持久化契约。** Claude Code 的三级压缩（MicroCompact → Session Memory Compact → Full LLM Compact）和 Memdir 四类记忆机制是驾驭工程在上下文治理维度的具体实现案例。实践中的关键原则是：上下文压缩策略不应由模型"自行决定"，而应作为显式的配置契约，由系统管理员或用户在部署时确定，并在运行时按策略执行。
+## 相关实体
 
-**Permission Engine 与沙箱机制是驾驭工程在安全控制维度的核心抓手。** Claude Code 的 Allow/Deny/Ask 三行为模型和 bubblewrap 沙箱体现了"制度化安全边界"的设计思路——安全规则不是运行时动态推断的，而是预先定义并通过机械手段强制执行的。任何面向生产的 AI Agent 系统都应在架构层面实现类似的三层安全控制：低风险自动放行、高风险强制阻断、中等风险用户确认。
+- [Harness Engineering](ch05/061-harness-engineering.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
+- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/207-openclaw.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](ch03/073-claude-code.md)
 
-**多 Agent 系统的治理需要超越单点工具设计，建立完整的操作系统层抽象。** 驾驭工程将"提示词、上下文、智能体"三者统一抽象为操作系统层的治理对象，这意味着在设计复杂 Agent 系统时，应借鉴操作系统内核的设计思路：资源管理（上下文预算）、进程隔离（沙箱）、权限控制（Permission Engine）、可观测性（Hook 机制）作为统一框架的组成部分，而非独立特性的简单叠加。
-
-**驾驭工程与 Prompt/Context Engineering 构成 AI 系统设计的三个递进层次。** Prompt Engineering 解决"让 AI 正确理解任务"，Context Engineering 解决"让 AI 拥有正确的信息基础"，Harness Engineering 解决"让 AI 系统长期可信运行"。在实际的 AI Agent 工程实践中，这三个层次的建设应协同推进，而非孤立演进。
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-future-persistence-vs-erosion.md)
 
 ---
 

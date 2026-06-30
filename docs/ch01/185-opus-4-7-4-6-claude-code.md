@@ -171,7 +171,7 @@ Opus 4.7在安全方面"与4.6大致持平"，但在"受控物质的伤害减少
 ## 相关实体
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/073-claude-code.md)
 - [Anthropic Prompt Caching Claude Code Agihunt](ch03/073-claude-code.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/310-ai.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
 - [Claude Code Founder Harness 100 Lines](ch03/073-claude-code.md)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](ch03/073-claude-code.md)
 
