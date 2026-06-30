@@ -6,6 +6,7 @@
   "use strict";
 
   var PROXY_URL = "/ai-proxy";
+  var RAG_URL = "/rag-query";
 
   // ========== Provider 配置 ==========
   var PRESETS = [
@@ -561,49 +562,74 @@
 
       conversationHistory.push({ role: "user", content: text });
 
-      var systemMsg = {
-        role: "system",
-        content: "你是一个 AI 助手，正在回答用户关于以下文章的问题。请用简洁的中文回答。\n\n文章内容：\n" + articleContext
-      };
-
-      var messages = [systemMsg].concat(conversationHistory);
-
+      // 先获取 RAG 上下文
       var bubble = addMsg("assistant", "");
       isStreaming = true;
+      if (bubble) bubble.innerHTML = '<div class="ai-chat__typing"><span></span><span></span><span></span></div>';
 
-      chat(messages,
-        function(fullText) {
-          if (bubble) bubble.innerHTML = renderMd(fullText);
-          var msgs = panel.querySelector(".ai-chat__messages");
-          if (msgs) msgs.scrollTop = msgs.scrollHeight;
-        },
-        function(fullText) {
-          isStreaming = false;
-          conversationHistory.push({ role: "assistant", content: fullText });
-          if (bubble) {
-            bubble.innerHTML = renderMd(fullText);
-            // 添加朗读按钮
-            var msgEl = bubble.closest(".ai-chat__msg");
-            if (msgEl && !msgEl.querySelector(".ai-chat__msg-actions")) {
-              var actions = document.createElement("div");
-              actions.className = "ai-chat__msg-actions";
-              var speakBtn = document.createElement("button");
-              speakBtn.className = "ai-chat__speak-btn";
-              speakBtn.innerHTML = "🔊";
-              speakBtn.title = "朗读";
-              speakBtn.addEventListener("click", function() {
-                speakText(fullText, speakBtn);
-              });
-              actions.appendChild(speakBtn);
-              msgEl.appendChild(actions);
+      fetch(RAG_URL + "?q=" + encodeURIComponent(text) + "&top_k=5")
+        .then(function(r) { return r.json(); })
+        .then(function(ragData) {
+          var ragContext = "";
+          if (ragData.results && ragData.results.length > 0) {
+            ragContext = "以下是 wiki-book 中与用户问题相关的参考资料：\n\n";
+            for (var i = 0; i < ragData.results.length; i++) {
+              var r = ragData.results[i];
+              var loc = r.location;
+              if (!loc.startsWith("http")) loc = "https://wiki.jinguo.tech/" + loc;
+              ragContext += (i + 1) + ". [" + r.title + "](" + loc + ")\n";
+              ragContext += "   " + r.text.substring(0, 200) + "\n\n";
             }
+            ragContext += "请根据以上参考资料回答用户问题。如果参考资料不足以回答，请如实说明。\n";
           }
-        },
-        function(err) {
+
+          var systemMsg = {
+            role: "system",
+            content: "你是一个基于 wiki-book 内容的 AI 助手。请用简洁的中文回答用户问题。\n\n" +
+                     "当前文章内容：\n" + articleContext.substring(0, 2000) + "\n\n" +
+                     ragContext
+          };
+
+          var messages = [systemMsg].concat(conversationHistory);
+
+          chat(messages,
+            function(fullText) {
+              if (bubble) bubble.innerHTML = renderMd(fullText);
+              var msgs = panel.querySelector(".ai-chat__messages");
+              if (msgs) msgs.scrollTop = msgs.scrollHeight;
+            },
+            function(fullText) {
+              isStreaming = false;
+              conversationHistory.push({ role: "assistant", content: fullText });
+              if (bubble) {
+                bubble.innerHTML = renderMd(fullText);
+                // 添加朗读按钮
+                var msgEl = bubble.closest(".ai-chat__msg");
+                if (msgEl && !msgEl.querySelector(".ai-chat__msg-actions")) {
+                  var actions = document.createElement("div");
+                  actions.className = "ai-chat__msg-actions";
+                  var speakBtn = document.createElement("button");
+                  speakBtn.className = "ai-chat__speak-btn";
+                  speakBtn.innerHTML = "🔊";
+                  speakBtn.title = "朗读";
+                  speakBtn.addEventListener("click", function() {
+                    speakText(fullText, speakBtn);
+                  });
+                  actions.appendChild(speakBtn);
+                  msgEl.appendChild(actions);
+                }
+              }
+            },
+            function(err) {
+              isStreaming = false;
+              if (bubble) bubble.innerHTML = '<span style="color:#e74c3c">错误: ' + err + '</span>';
+            }
+          );
+        })
+        .catch(function(err) {
           isStreaming = false;
-          if (bubble) bubble.innerHTML = '<span style="color:#e74c3c">错误: ' + err + '</span>';
-        }
-      );
+          if (bubble) bubble.innerHTML = '<span style="color:#e74c3c">RAG 查询失败: ' + err.message + '</span>';
+        });
     }
   }
 
