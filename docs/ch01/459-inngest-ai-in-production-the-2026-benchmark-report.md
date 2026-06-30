@@ -38,8 +38,8 @@
 ## 相关实体
 - [Inngest Ai In Production The 2026 Benchmark Report](ch01/459-inngest-ai-in-production-the-2026-benchmark-report.md)
 - [Whats New With Vsphere 9 1](https://github.com/QianJinGuo/wiki/blob/main/entities/whats-new-with-vsphere-9-1.md)
-- [Inngest Ai And Backend Workflows Orchestrated At Any Scale](ch04/310-ai.md)
-- [Semis Memo Supply Chain Inheritance](ch01/496-semis-memo-supply-chain-inheritance.md)
+- [Inngest Ai And Backend Workflows Orchestrated At Any Scale](ch04/150-ai.md)
+- [Semis Memo Supply Chain Inheritance](ch01/483-semis-memo-supply-chain-inheritance.md)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](ch09/043-coding-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/inngest-ai-in-production-the-2026-benchmark-report-2.md)

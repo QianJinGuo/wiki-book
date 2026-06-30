@@ -14,8 +14,8 @@ OpenAI今天在API中推出三款全新音频模型，面向开发者开放。
 - [Prompt Debugger Compare Templates Winty](ch01/619-prompt-debugger-compare-templates-winty.md)
 - [Aliyun Agentrun 2Line Integration](ch04/503-agent.md)
 - [Pi Mono Github](ch01/621-pi-mono-github.md)
-- [2 Year 25 Ai Projects Summary](ch04/310-ai.md)
-- [Openai Realtime Api Architecture](ch04/310-ai.md)
+- [2 Year 25 Ai Projects Summary](ch04/150-ai.md)
+- [Openai Realtime Api Architecture](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai发布新一代实时语音模型能够像人说话一样进行推理翻译和转录.md)
 

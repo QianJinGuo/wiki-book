@@ -71,7 +71,7 @@ Trail of Bits 报告称攻击使用的不是高级技术，而是"标准技巧 +
 - trail-of-bits 实体 = 这些"技能市场"的安全现状
 - 共存：skillclaw 解决技能分发效率，trail-of-bits 揭示了效率带来的安全代价
 
-### 与 [Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/310-ai.md) 的关系
+### 与 [Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/150-ai.md) 的关系
 
 - agent-security = 通用 agent 安全三步（governance / identity / 隔离）
 - trail-of-bits 实体 = 实证某类安全工具（scanner）的实际失效模式
@@ -149,7 +149,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 
 ### 对 Skill Marketplace 建设者
 
-1. **scanner 是必要不充分的防线**：单一 scanner 无法应对双载体攻击（自然语言 + 代码）。必须将 scanner 与 runtime sandbox、publisher reputation、audit trail 结合使用，形成纵深防御。参考 [Ai Agents Security Survey Attack Defense](ch04/310-ai.md) 中的多层防御模型。
+1. **scanner 是必要不充分的防线**：单一 scanner 无法应对双载体攻击（自然语言 + 代码）。必须将 scanner 与 runtime sandbox、publisher reputation、audit trail 结合使用，形成纵深防御。参考 [Ai Agents Security Survey Attack Defense](ch04/150-ai.md) 中的多层防御模型。
 
 2. **out-of-band 分发需要专项审计**：ZIP 手工上传 + API 直接安装是当前最大的 supply chain 盲点。凡是绕过了 marketplace review 流程的分发渠道，都需要独立的人工或自动化审计步骤。
 
@@ -175,7 +175,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 
 1. **将 skill 视为不受信的外部代码**：类似浏览器对第三方脚本的隔离策略，agent 系统应对每个 skill 应用最小权限原则，限制其对文件系统、网络、凭据的访问范围。
 
-2. **建立 skill 的 provenance tracking**：记录每个 skill 的来源、版本、安装时间，并在 agent 运行时可查询。[Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/310-ai.md) 中的 identity 和 governance 框架可用于实现这一点。
+2. **建立 skill 的 provenance tracking**：记录每个 skill 的来源、版本、安装时间，并在 agent 运行时可查询。[Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/150-ai.md) 中的 identity 和 governance 框架可用于实现这一点。
 
 3. **对高风险操作强制人工确认**：涉及网络配置、凭据写入、文件修改的 skill 操作应触发人工确认，而非自动执行。
 
@@ -186,7 +186,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 **相关实体**：
 - [Skill Design Patterns](ch04/245-skill.md) — skill 的设计维度（与攻击维度互补）
 - [Skillsieve Agent Skill Security](ch04/245-skill.md) — 企业级 skill 安全实践
-- [Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/310-ai.md) — agent 安全的通用框架
+- [Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/150-ai.md) — agent 安全的通用框架
 - [Prompt Injection Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-injection-defense.md) — prompt injection 的防御思路
 - [Agent Security Attack Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-attack-defense.md) — agent 安全攻击与防御全景
 

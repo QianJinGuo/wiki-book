@@ -55,7 +55,7 @@ Max 套餐（$100/月，总计 $200 额度）的推出，标志着 GitHub Copilo
 - [Microsoft Copilot Studio Agent Governance](ch04/503-agent.md)
 - wetesteddeepseekv4proandflashagainstclau.md-against-claude
 - [Deepseek V4 Pro Vs Claude](ch01/380-claude.md)
-- [Wetesteddeepseekv4Proandflashagainstclau](ch04/310-ai.md)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch04/150-ai.md)
 - [Andrej Karpathy Claude Md 134K Stars 2026](ch01/380-claude.md)
 
 ---

@@ -13,8 +13,8 @@
 
 ## 相关实体
 
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](ch04/310-ai.md)
-- [LLM raiders and how to repel them](ch04/310-ai.md)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](ch04/150-ai.md)
+- [LLM raiders and how to repel them](ch04/150-ai.md)
 - [LLM raiders and how to repel them](ch01/602-llm-raiders-and-how-to-repel-them.md)
 
 ## 深度分析

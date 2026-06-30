@@ -1,6 +1,6 @@
-# problem with mathematically proven claims about llms
+# Problem with Mathematically Proven Claims About Llms
 
-## Ch01.311 problem with mathematically proven claims about llms
+## Ch01.311 Problem with Mathematically Proven Claims About Llms
 
 > 📊 Level ⭐⭐ | 12.3KB | `entities/problem-with-mathematically-proven-claims-about-llms.md`
 
