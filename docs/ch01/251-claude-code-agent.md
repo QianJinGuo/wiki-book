@@ -50,7 +50,7 @@
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](ch04/503-agent.md)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](ch03/073-claude-code.md)
 - [Claude Code 架构深度解析](ch03/073-claude-code.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/379-claude-code-harness-deep-understanding.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/378-claude-code-harness-deep-understanding.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](ch04/503-agent.md)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/245-skill.md)

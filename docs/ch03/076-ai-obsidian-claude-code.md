@@ -7,7 +7,7 @@
 ## 相关实体
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch04/310-ai.md)
 - [obsidian claude code integration guide](ch09/099-obsidian-claude-code-integration-guide.md)
-- [Claude Code Memory Setup (Obsidian + Graphify)](ch01/681-claude-code-memory-setup-obsidian-graphify.md)
+- [Claude Code Memory Setup (Obsidian + Graphify)](ch01/694-claude-code-memory-setup-obsidian-graphify.md)
 - [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch04/310-ai.md)
 - [打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南](ch04/310-ai.md)
 - [Obsidian + Claude Code 集成指南](ch03/073-claude-code.md)

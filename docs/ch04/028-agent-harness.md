@@ -151,8 +151,8 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-architecture-harness-new-backend.md)
 
 ## 相关实体
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/042-coding-agent.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/379-claude-code-harness-deep-understanding.md)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/378-claude-code-harness-deep-understanding.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
 - [Agent 自我改进的六条路](ch04/503-agent.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)

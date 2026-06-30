@@ -13,7 +13,7 @@
 - `rewind`：回退到之前的节点，精细化回退而非全盘重开）
 
 ## 相关实体
-- [Claude Code Openclaw Usage Ettin](ch09/028-claude-code-openclaw-usage-ettin.md)
+- [Claude Code Openclaw Usage Ettin](ch09/029-claude-code-openclaw-usage-ettin.md)
 - [Obsidian Claude Code Integration Guide](ch09/099-obsidian-claude-code-integration-guide.md)
 - [Claude Code Self Repair Hooks Memory Config](ch04/310-ai.md)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/073-claude-code.md)

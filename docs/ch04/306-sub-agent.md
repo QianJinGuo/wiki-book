@@ -60,10 +60,10 @@ Teams 模式的工程挑战尤为突出。死锁检测（A 等 B，B 等 A）需
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/245-skill.md)
 
-- [Agent Workflows](ch04/308-agent-workflows.md)
+- [Agent Workflows](ch04/310-agent-workflows.md)
 - [Hermes+Kimi K2.6 多Agent军团实战教程](ch04/503-agent.md)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
-- [Garry Tan](ch01/508-garry-tan.md)
+- [Garry Tan](ch01/510-garry-tan.md)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
 - [AI Agent 工程师能力地图](ch04/310-ai.md)

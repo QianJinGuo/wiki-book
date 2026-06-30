@@ -53,8 +53,8 @@ AWS Interconnect 扩展至 Oracle Cloud（预览），加上已有的 Google Clo
 - **Claude Platform 数据主权需专项评估**：AWS 明确指出客户数据在 AWS 安全边界外处理，这意味着部分受监管行业（金融、医疗）可能无法直接使用该服务，需在采用前完成供应商安全评估（VSA）。
 
 ## 相关实体
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/692-anthropic.md)
-- [Introducing Claude Platform On Aws](ch01/404-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/380-claude.md)
+- [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
 - [Aws Transform Ezconvertbi Bi Migration](ch11/187-aws-transform-ezconvertbi-bi-migration.md)
 - [Aws Aidl Paradigm Shift Platform Driven Data Engineering](ch04/310-ai.md)
 - [Aws Reinvent Game Demo 2024 25](ch11/210-aws-reinvent-game-demo-2024-25.md)

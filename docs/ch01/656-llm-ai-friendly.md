@@ -16,7 +16,7 @@
 - [扣子 3.0 正式发布：@ 一下全员开工](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-release-official-quantum-bit.md)
 - [一个 mission 跑 16 天、烧 7.78 亿 token：factory 公开了多 agent 系统的构建哲学](ch04/503-agent.md)
 - [垂类 ai 创企的自救：flashlabs 从 flashintel 到 ai native](ch04/310-ai.md)
-- [from silos to service topology: why netflix built a real-tim](ch11/138-from-silos-to-service-topology-why-netflix-built-a-real-tim.md)
+- [from silos to service topology: why netflix built a real-tim](ch11/008-from-silos-to-service-topology-why-netflix-built-a-real-tim.md)
 - [nemotron 3.5 content safety: customizable multimodal safety](ch01/285-multimodal.md)
 - [perplexity 首次公开了内部 skill 设计指南](ch04/245-skill.md)
 - [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-team-knowledge-engine-compiled-knowledge.md)

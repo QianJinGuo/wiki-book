@@ -210,7 +210,7 @@ Mollick 结尾给出的判断值得专门拆开：「我们能看到那个 Thing
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch03/012-openclaw.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/310-ai.md)
 - [Agent Harness Engineering Survey 2026](ch04/503-agent.md)
-- [Gpt 5 It Just Does Stuff](ch01/218-gpt-5-it-just-does-stuff.md)
+- [Gpt 5 It Just Does Stuff](ch01/216-gpt-5-it-just-does-stuff.md)
 - [Andrej Karpathy Claude Md 134K Stars 2026](ch01/380-claude.md)
 - [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - [Agentic Harness Engineering Ahe](ch04/503-agent.md)

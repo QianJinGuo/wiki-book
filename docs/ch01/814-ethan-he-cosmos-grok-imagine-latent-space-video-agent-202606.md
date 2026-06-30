@@ -34,7 +34,7 @@
 ### 关联实体
 
 - [Ai Friendly Architecture Design Taobao](ch04/310-ai.md)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/217-latest-open-artifacts-20-new-orgs-new-types-of-models.md)
+- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/215-latest-open-artifacts-20-new-orgs-new-types-of-models.md)
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch04/503-agent.md)
 - [Code As Agent Harness Survey 2026](ch09/046-code-as-agent-harness.md)
 - [Demis Hassabis Yc Interview Jiedaotixi](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-jiedaotixi.md)

@@ -97,7 +97,7 @@ Cursor 另外看了两个代理指标：
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/245-skill.md)
 - [天猫新品营销技术团队AI编码实战指南（上）](ch04/310-ai.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/692-anthropic.md)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/707-anthropic.md)
 - [你写的 Skill，及格了吗？](ch04/245-skill.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/503-agent.md)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch01/380-claude.md)

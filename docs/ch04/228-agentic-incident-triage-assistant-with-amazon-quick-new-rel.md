@@ -10,7 +10,7 @@
 
 ## 相关实体
 
-- [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](ch09/117-amazon-quick.md)
+- [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](ch11/195-amazon-quick.md)
 - [introducing the mdn mcp server](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-mdn-mcp-server-2026.md)
 - [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](ch04/310-ai.md)
 - [万级实时推理的商品领域agent实践思考和总结](ch04/310-ai.md)
@@ -94,7 +94,7 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 
 ## 与现有 wiki 实体的差异化
 
-| 维度 | 本 entity | [Aderant Transforms Cloud Operations With Amazon Quick](ch11/175-aderant-transforms-cloud-operations-with-amazon-quick.md) | [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch09/117-amazon-quick.md) |
+| 维度 | 本 entity | [Aderant Transforms Cloud Operations With Amazon Quick](ch11/175-aderant-transforms-cloud-operations-with-amazon-quick.md) | [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch11/195-amazon-quick.md) |
 |------|----------|------------------|------------------|
 | 场景 | SRE incident triage + RCA + handoff | 律师事务所 cross-source 知识搜索 | 金融 AML 告警 triage |
 | 集成广度 | 2 个集成（New Relic + Asana） | 6 个供应商系统 MCP | 1 个 Snowflake 集成 |
@@ -116,7 +116,7 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 
 - [Aderant Transforms Cloud Operations With Amazon Quick](ch11/175-aderant-transforms-cloud-operations-with-amazon-quick.md) — Amazon Quick 在法律行业的 cross-source RAG 案例（同一产品不同应用场景）
 - [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/503-agent.md) — Amazon Bedrock AgentCore 的 MCP gateway 扩展（MCP 在 AWS 的另一面）
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch09/117-amazon-quick.md) — Amazon Quick 在金融 AML 告警分流的应用（同一产品的规则化分流场景）
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch11/195-amazon-quick.md) — Amazon Quick 在金融 AML 告警分流的应用（同一产品的规则化分流场景）
 - [Aws Bedrock Agentcore Doris Mcp Server](ch04/503-agent.md) — AWS Bedrock AgentCore + Doris MCP server 的另一个生产实战
 - [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](ch04/245-skill.md) — 长时自驱动 agent 模式（与本 entity 的同步编排模式形成对比）
 

@@ -103,9 +103,9 @@ Concrete-Ml 在训练阶段仍使用 plaintext 数据，训练流程与标准 sk
 
 ## 相关实体
 - [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch04/310-ai.md)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/890-llm.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/506-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch04/503-agent.md)
-- [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](ch11/234-bedrock.md)
+- [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](ch11/236-bedrock.md)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
 
 ---

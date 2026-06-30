@@ -19,14 +19,14 @@
 
 - [Ico Fines South Staffordshire 2022 Breach](https://github.com/QianJinGuo/wiki/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
-- [Interaction Models](ch01/520-thinking-machines-interaction-models-ai-cold.md)
+- [Interaction Models](ch01/522-thinking-machines-interaction-models-ai-cold.md)
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](ch04/310-ai.md)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](ch09/109-automate-progressive-rollouts-with-vercel-flags-vercel.md)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](ch09/114-automate-progressive-rollouts-with-vercel-flags-vercel.md)
 - [Afine Csp Html Injection Password Exfiltration Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration-attack.md)
 - [Ai Native Dan Shipper Every Layered Thinking Walkwalk](ch04/310-ai.md)
-- [Fastlane Create Winning Short Form Content In Seconds](ch03/098-fastlane-create-winning-short-form-content-in-seconds.md)
+- [Fastlane Create Winning Short Form Content In Seconds](ch03/099-fastlane-create-winning-short-form-content-in-seconds.md)
 - [Mira Mpa Deep Principle Ai4S 40 Sota](ch04/310-ai.md)
-- [Localmaxxing](ch03/101-localmaxxing.md)
+- [Localmaxxing](ch03/102-localmaxxing.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 ### 资金流向结构与市场情绪

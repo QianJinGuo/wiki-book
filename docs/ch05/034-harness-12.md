@@ -134,7 +134,7 @@ Anthropic 和 OpenAI 都建议先把单 Agent 做到极限。过度设计多 Age
 ## 相关实体
 - [Agent Memory Architecture Past Influence Future Ruofei](ch04/030-agent-memory-architecture-past-influence-future-ruofei.md)
 - [Subagents 详解Claude Code 如何避免上下文污染 V2](ch03/073-claude-code.md)
-- [Memory Agent Systems Cobanov](ch04/465-memory-agent-systems-cobanov.md)
+- [Memory Agent Systems Cobanov](ch04/480-memory-agent-systems-cobanov.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch04/310-ai.md)
 - [Agentscope Java Harness Framework](ch04/503-agent.md)
 

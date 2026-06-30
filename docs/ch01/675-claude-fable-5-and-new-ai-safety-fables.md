@@ -18,8 +18,8 @@ Claude Fable 5 与 AI 安全寓言新篇：通过寓言式叙事探讨 AI 安全
 
 ### 关联实体
 
-- [Nathan Lambert Claude Mythos Open Weights](ch01/368-nathan-lambert.md)
-- [Introducing Claude Platform On Aws](ch01/404-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
+- [Nathan Lambert Claude Mythos Open Weights](ch01/380-claude.md)
+- [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
 - [Chinese Ai Lab Insights Nathan](ch04/310-ai.md)
 - [Claude Code Hackathon Winners 2026](ch01/786-claude-code-hackathon-winners-2026.md)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](ch03/073-claude-code.md)

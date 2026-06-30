@@ -7,11 +7,11 @@
 # GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价
 
 ## 相关实体
-- [Openai Gpt Realtime Voice Models Qbitai](ch01/614-openai-gpt-realtime-voice-models-qbitai.md)
+- [Openai Gpt Realtime Voice Models Qbitai](ch01/620-openai-gpt-realtime-voice-models-qbitai.md)
 - GPT-5.5 实测
 - [Yann Dubois Openai Post Training Interview](ch04/310-ai.md)
 - [Gpt 5 Is Here And Openai Has Some Tips](ch01/500-gpt-5-is-here-and-openai-has-some-tips.md)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/115-useful-memories-become-faulty-when-continuously-updated-by-l.md)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/114-useful-memories-become-faulty-when-continuously-updated-by-l.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
 

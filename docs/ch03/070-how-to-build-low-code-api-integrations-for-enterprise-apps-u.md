@@ -162,7 +162,7 @@ OIN + API Integration Actions 的组合创造了：
 ## 相关实体
 - [Build An Enterprise Observability Solution For Amazon Quick](ch11/020-build-an-enterprise-observability-solution-for-amazon-quick.md)
 - [Hs.Playerzero Ai Code Review](ch04/310-ai.md)
-- [Code Simulation For Enterprise Engineering Playerz](ch01/090-code-simulation-for-enterprise-engineering-playerzero.md)
+- [Code Simulation For Enterprise Engineering Playerz](ch01/134-code-simulation-for-enterprise-engineering-playerzero.md)
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch04/310-ai.md)
 - [Top 10 Design Gadgets Creative Professionals 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
 

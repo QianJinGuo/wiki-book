@@ -146,12 +146,12 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 
 ## 相关实体
 - [Agent Memory 架构本质](ch04/503-agent.md)
-- [memory agent systems cobanov](ch04/465-memory-agent-systems-cobanov.md)
+- [memory agent systems cobanov](ch04/480-memory-agent-systems-cobanov.md)
 
 - [AI Agent 记忆系统架构](ch04/146-how-ai-agent-memory-works.md)
 - [深度拆解 Hermes Agent 记忆系统](ch04/503-agent.md)
 - [ai agent memory systems](ch04/310-ai.md)
-- [你不知道的 Agent 原理架构与工程实践](ch04/302-agent-principle-architecture-engineering-practice.md)
+- [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](ch04/503-agent.md)
 - [Agent 自我改进的六条路](ch04/503-agent.md)

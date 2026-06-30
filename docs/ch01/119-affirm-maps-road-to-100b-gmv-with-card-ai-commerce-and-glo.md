@@ -13,7 +13,7 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](ch04/310-ai.md)
-- [Affirm Maps Road to $100B GMV With Card, AI Commerce](ch03/081-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
+- [Affirm Maps Road to $100B GMV With Card, AI Commerce](ch03/082-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch04/310-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)

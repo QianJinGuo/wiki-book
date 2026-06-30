@@ -9,7 +9,7 @@
 - Source: https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan/
 
 ## 相关实体
-- [GitHub Copilot](ch01/676-github.md)
+- [GitHub Copilot](ch01/590-github-copilot-individual-plans-flex-allotments-in-pro-and.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 深度分析
@@ -54,7 +54,7 @@ Max 套餐（$100/月，总计 $200 额度）的推出，标志着 GitHub Copilo
 ## 相关实体
 - [Microsoft Copilot Studio Agent Governance](ch04/503-agent.md)
 - wetesteddeepseekv4proandflashagainstclau.md-against-claude
-- [Deepseek V4 Pro Vs Claude](ch01/528-deepseek-v4.md)
+- [Deepseek V4 Pro Vs Claude](ch01/380-claude.md)
 - [Wetesteddeepseekv4Proandflashagainstclau](ch04/310-ai.md)
 - [Andrej Karpathy Claude Md 134K Stars 2026](ch01/380-claude.md)
 

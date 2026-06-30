@@ -15,7 +15,7 @@
 - [Npm Supply Chain Compromise Postmortem](ch04/310-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
-- [Tmall Ai Coding Practice Team Knowledge Base](ch09/067-tmall-ai-coding-practice-team-knowledge-base.md)
+- [Tmall Ai Coding Practice Team Knowledge Base](ch09/068-tmall-ai-coding-practice-team-knowledge-base.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/reasoning-lift.md)
 

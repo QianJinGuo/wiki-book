@@ -44,7 +44,7 @@
 ### 关联实体
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/815-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Qy_Zacztcs1Ql3Bifmbmgg](https://github.com/QianJinGuo/wiki/blob/main/entities/qy_zaCZTCs1Ql3BIFmBMgg.md)
 - [天猫新品营销技术团队Ai编码实战指南上 V2](ch04/310-ai.md)

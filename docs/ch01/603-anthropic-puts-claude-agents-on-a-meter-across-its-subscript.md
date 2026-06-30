@@ -31,13 +31,13 @@
 - [Claude Managed Agents 开发者指南](ch04/503-agent.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/073-claude-code.md)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/503-agent.md)
+- [Introducing Claude for Small Business](ch01/380-claude.md)
 - [Introducing Claude for Small Business](ch01/030-introducing-claude-for-small-business.md)
-- [Introducing Claude for Small Business](ch01/030-introducing-claude-for-small-business.md)
-- [Xero Announces Integration with Anthropic's Claude](ch01/692-anthropic.md)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/478-anthropic-claude.md)
+- [Xero Announces Integration with Anthropic's Claude](ch01/380-claude.md)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/380-claude.md)
 - [Anthropic Claude Managed Agents 平台正式发布](ch04/503-agent.md)
 - [Claude Managed Agents 官方 Harness 平台指南](ch04/503-agent.md)
-- [Anthropic Computer Use 最佳实践](ch01/673-anthropic-computer-use.md)
+- [Anthropic Computer Use 最佳实践](ch01/685-anthropic-computer-use.md)
 
 ## 深度分析
 **从 Token 计费到 Agent-Aware 计费的范式转变**

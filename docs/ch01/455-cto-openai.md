@@ -34,7 +34,7 @@
 - [Yann Dubois Openai Post Training Matt Turck Interview](ch04/310-ai.md)
 - [Codex Sites Cloudflare Worker One Click Deploy Geekhome](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-sites-cloudflare-worker-one-click-deploy-geekhome.md)
 - [Prime Intellect Auto Nanogpt Opus 2930](https://github.com/QianJinGuo/wiki/blob/main/entities/prime-intellect-auto-nanogpt-opus-2930.md)
-- [Gpt 5 It Just Does Stuff](ch01/218-gpt-5-it-just-does-stuff.md)
+- [Gpt 5 It Just Does Stuff](ch01/216-gpt-5-it-just-does-stuff.md)
 - [Three Years From Gpt 3 To Gemini 3](ch01/232-three-years-from-gpt-3-to-gemini-3.md)
 - [Openai Symphony Codex Orchestration Linear Control Plane Tutuai](ch04/310-ai.md)
 - [Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606](ch04/310-ai.md)

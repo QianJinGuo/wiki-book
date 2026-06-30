@@ -18,7 +18,7 @@
 - [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/310-ai.md)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](ch04/503-agent.md)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/042-coding-agent.md)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch04/310-ai.md)
 - [AI Context Layer 框架](ch04/310-ai.md)

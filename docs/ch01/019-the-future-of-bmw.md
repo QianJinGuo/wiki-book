@@ -17,11 +17,11 @@
 - **未来路线**：全自动驾驶与纯模拟驾驶将在高端跑车市场分道扬镳，形成两条并行的产品家族 
 
 ## 相关实体
-- [The Race To Own The Agentic Future Tidemark](ch04/370-the-race-to-own-the-agentic-future-tidemark.md)
+- [The Race To Own The Agentic Future Tidemark](ch04/373-the-race-to-own-the-agentic-future-tidemark.md)
 - [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch04/310-ai.md)
-- [Why Im Leaving Github For Forgejo](ch01/676-github.md)
-- [From Doer To Director The Ai Mindset Shift](ch01/032-from-doer-to-director-the-ai-mindset-shift.md)
+- [Why Im Leaving Github For Forgejo](ch01/688-github.md)
+- [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-future-of-bmw-design-a-conversation-with-max-missoni.md)
 

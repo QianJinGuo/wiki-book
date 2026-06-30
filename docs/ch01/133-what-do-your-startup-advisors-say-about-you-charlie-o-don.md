@@ -34,7 +34,7 @@ Charlie O'Donnell 的这篇文章揭示了创业公司顾问制度的两个常�
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/310-ai.md)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/151-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
-- [Code Simulation For Enterprise Engineering Playerz](ch01/090-code-simulation-for-enterprise-engineering-playerzero.md)
+- [Code Simulation For Enterprise Engineering Playerz](ch01/134-code-simulation-for-enterprise-engineering-playerzero.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)
 

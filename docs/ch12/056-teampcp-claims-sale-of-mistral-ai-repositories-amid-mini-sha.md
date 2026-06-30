@@ -26,8 +26,8 @@ Mistral AI 在事件后的声明确认了代码库管理系统被短暂攻破，
 **AI 基础设施安全的攻防对抗正在加速**：这一事件印证了一个趋势——针对 AI 公司的攻击者已不仅满足于窃取用户数据或投放恶意包，而是直指 AI 公司的核心竞争力：模型训练代码、推理基础设施和内部工具。防御方需要在传统应用安全基础上，增加对 AI 工作负载特有攻击面（如训练数据管道、模型权重存储、推理服务接口）的专项防护投入。
 
 ## 相关实体
-- [Restrict Access to Sensitive Documents in Amazon QuickSight](ch09/117-amazon-quick.md) — 企业级文档访问控制实践
-- [PyTorch 2.12 Release Blog – PyTorch](ch01/186-pytorch-2-12-release-blog.md) — AI 框架生态安全
+- [Restrict Access to Sensitive Documents in Amazon QuickSight](ch11/195-amazon-quick.md) — 企业级文档访问控制实践
+- [PyTorch 2.12 Release Blog – PyTorch](ch01/184-pytorch-2-12-release-blog.md) — AI 框架生态安全
 
 ---
 

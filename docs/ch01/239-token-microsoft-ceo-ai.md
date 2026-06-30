@@ -51,7 +51,7 @@
 - vs **[Token 经济 Pt2:智能公司的搭建](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.md)** — Pt2 关注"智能公司"作为组织形态的工程化;纳德拉关注**资本形态**(二元资本)作为**经济学叙事**。两者互补不重叠。
 - vs **[腾讯 Token 经济 AI 生产力](ch04/310-ai.md)** — 腾讯讲**消费量纲**;纳德拉讲**资本形态**。前者是微观 ROI 视角,后者是宏观战略视角。
 - vs **[企业 AI 记忆底座 三层架构](ch04/310-ai.md)** — 三层架构 = 知识底座的**工程实现**;纳德拉 Token 资本 = 知识底座背后的**经济学理由**。
-- vs **[Anthropic 缓存 Token 经济](ch01/692-anthropic.md)** — 缓存是**Token 成本优化**的具体技术杠杆;纳德拉说的是**Token 作为资本形态**的存在论层面。
+- vs **[Anthropic 缓存 Token 经济](ch01/277-token.md)** — 缓存是**Token 成本优化**的具体技术杠杆;纳德拉说的是**Token 作为资本形态**的存在论层面。
 - vs **[Harness Engineering Long-Term Agent Tasks](ch04/503-agent.md)** — Harness = 工程模式(让 agent 可控);Token 资本 = 经济模式(让企业 AI 资产可积累)。两者构成"Token 资本"的双侧实现。
 - vs **[Agent 时代我们架构师应该学什么](ch04/503-agent.md)** — 架构师视角讲**技能升级**;纳德拉讲**企业层面**的资本积累路径。
 - vs **[Microsoft Build 2026 MAI Models Scout Agent](ch04/310-ai.md)** — 同一作者(Microsoft)在 Build 2026 上主推的是**前沿模型**;本文(纳德拉 X 帖)则**明确警告"前沿模型 ≠ 价值"**。同一个公司的两套话语:产品层 vs 战略层。**这一矛盾本身**值得读者警惕。
@@ -82,7 +82,7 @@
 
 **2. Microsoft AI 经济定位：做生态，不做模型**
 
-纳德拉的核心主张与 Drucker 的"知识工作者"框架一脉相承：将知识积累定义为**企业主体行为**，而非技术采购行为。Token 资本的本质不是"用 OpenAI 的 API"，而是[Harness Engineering](ch04/503-agent.md)所工程化的——让**机构判断**在模型可替换的前提下持续沉淀。这是[Harness Engineering](ch09/042-coding-agent.md)的核心命题：模型是燃料，机构知识是护城河。
+纳德拉的核心主张与 Drucker 的"知识工作者"框架一脉相承：将知识积累定义为**企业主体行为**，而非技术采购行为。Token 资本的本质不是"用 OpenAI 的 API"，而是[Harness Engineering](ch04/503-agent.md)所工程化的——让**机构判断**在模型可替换的前提下持续沉淀。这是[Harness Engineering](ch09/043-coding-agent.md)的核心命题：模型是燃料，机构知识是护城河。
 
 **3. Azure OpenAI 服务的商业逻辑与 Token 资本叙事的吻合**
 
@@ -124,7 +124,7 @@ AI 时代的企业主权 = 业务知识的所有权 + 可迁移性，**不等于
 - [Token 经济 Pt2:智能公司搭建](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.md)
 - [腾讯 Token 经济 AI 生产力](ch04/310-ai.md)
 - [企业 AI 记忆底座 三层架构](ch04/310-ai.md)
-- [Anthropic 缓存 Token 经济](ch01/692-anthropic.md)
+- [Anthropic 缓存 Token 经济](ch01/277-token.md)
 - [Harness Engineering Long-Term Agent Tasks](ch04/503-agent.md)
 - [Harness Engineering 7 层架构](ch03/073-claude-code.md)
 - [Agent 架构关键变化:Harness 正在成为新后端](ch04/503-agent.md)

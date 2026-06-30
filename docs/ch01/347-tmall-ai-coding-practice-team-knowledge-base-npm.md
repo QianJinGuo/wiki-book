@@ -148,7 +148,7 @@ AI 通过 curl 直接读取 npm cdn 资源（不依赖具体编码工具）
 ## Related
 
 ## 相关实体
-- [Tmall Ai Coding Practice Team Knowledge Base](ch09/067-tmall-ai-coding-practice-team-knowledge-base.md)
+- [Tmall Ai Coding Practice Team Knowledge Base](ch09/068-tmall-ai-coding-practice-team-knowledge-base.md)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/073-claude-code.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/310-ai.md)
 - [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](ch04/310-ai.md)

@@ -15,7 +15,7 @@
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](ch04/503-agent.md)
 - [Two Harness Papers Microsoft Google](ch05/015-harness.md)
 - [Trace2Skill Trajectory Distillation Agent Skills](ch04/245-skill.md)
-- [05 11 The Great Memory Panic Of 2026](ch01/648-the-great-memory-panic-of-2026.md)
+- [05 11 The Great Memory Panic Of 2026](ch01/657-the-great-memory-panic-of-2026.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/personavlm-long-term-personalization.md)
 

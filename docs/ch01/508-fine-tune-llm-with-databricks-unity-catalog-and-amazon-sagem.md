@@ -16,7 +16,7 @@
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](ch04/310-ai.md)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](ch04/310-ai.md)
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/031-amazon-bedrock-api.md)
+- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/032-amazon-bedrock-api.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 ## 深度分析

@@ -116,7 +116,7 @@ Garry的80-90%标准：
 - [复杂度棘轮：AI编程的质量只升不降机制](https://github.com/QianJinGuo/wiki/blob/main/entities/complexity-ratchet.md)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
 - [十年老技术开发的 AI Agent 探索之路](ch04/310-ai.md)
-- [Agent Workflows](ch04/308-agent-workflows.md)
+- [Agent Workflows](ch04/310-agent-workflows.md)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/245-skill.md)
 - [四种 Sub Agent 模式](ch04/503-agent.md)

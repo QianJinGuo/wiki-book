@@ -161,7 +161,7 @@ response = client.chat.completions.create(
 
 - [Ai Infra Llm Efficient Inference Vllm](ch04/310-ai.md) — LLM 高效推理基础设施综述（vLLM 推荐 0.20.0+）
 - [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](ch01/859-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md) — LLM 架构最新进展：KV Sharing、mHC 与压缩注意力
-- [Deepseek Moe Parallel Strategy](ch01/356-deepseek.md) — DeepSeek MoE 并行策略
+- [Deepseek Moe Parallel Strategy](ch01/774-deepseek.md) — DeepSeek MoE 并行策略
 - [Msa Sparse Attention Three Kingdoms Huashu](https://github.com/QianJinGuo/wiki/blob/main/entities/msa-sparse-attention-three-kingdoms-huashu.md) — MSA 稀疏注意力（三国华术）
 - [Kimi Attention Residuals Prenorm Dilution Block Attnres](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-attention-residuals-preNorm-dilution-block-attnres.md) — Kimi 注意力残差与 PreNorm 稀释
 - [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](ch01/890-llm.md) — 2026 LLM RL 算法综述（DeepSeek V4 训练方法背景）

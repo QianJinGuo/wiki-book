@@ -33,7 +33,7 @@ Priority 与 Fairness 的组合使用（通过 `priority_key` + `fairness_key` +
 - [Task Queue Priority And Fairness Your Task Queue](ch04/310-ai.md)
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](ch04/503-agent.md)
 - [Www.Bettercloud.Com The Saasops Mini Checklist Managing And Securing Your Enterprise Saas Applications](ch01/204-agi.md)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](ch11/011-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
 
 ---
 

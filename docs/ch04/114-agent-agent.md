@@ -158,7 +158,7 @@ L3层（必要时）：确定性规则只在确实存在强绑定场景时才引
 ## 相关页面
 - [原文存档：高德伴行Agent技术解析](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-companion-agent-architecture.md)
 - [AI Skill进化框架](ch04/245-skill.md)（Skill沉淀相关）
-- [Hermes Agent](ch03/086-hermes-agent.md)（被本文分析对比）
+- [Hermes Agent](ch03/087-hermes-agent.md)（被本文分析对比）
 
 ## 相关实体
 - [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/310-ai.md)

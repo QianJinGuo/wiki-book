@@ -27,8 +27,8 @@
 ## 相关实体
 - [Anthropic Puts Claude Agents On A Meter Across Its](ch04/503-agent.md)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/503-agent.md)
-- [Claude Managed Agents](ch04/525-claude-managed-agents.md)
-- [Anthropic Claude Managed Agents Platform Launch](ch04/338-anthropic-claude-managed-agents-platform-launch.md)
+- [Claude Managed Agents](ch04/537-claude-managed-agents.md)
+- [Anthropic Claude Managed Agents Platform Launch](ch04/340-anthropic-claude-managed-agents-platform-launch.md)
 - [Anthropic Claude Managed Agents Platform 2026](ch04/503-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/announcing-claude-managed-agents-on-cloudflare.md)

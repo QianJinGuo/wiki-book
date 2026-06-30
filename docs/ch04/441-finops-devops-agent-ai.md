@@ -94,7 +94,7 @@ FinOps Agent 对测试账号进行全景扫描后发现：
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/finops-devops-双agent-ai驱动的云成本优化实战.md)
 → [Strands 云成本优化](ch04/503-agent.md)
-→ [Quick + AgentCore FinOps](ch09/117-amazon-quick.md)
+→ [Quick + AgentCore FinOps](ch11/195-amazon-quick.md)
 
 ---
 

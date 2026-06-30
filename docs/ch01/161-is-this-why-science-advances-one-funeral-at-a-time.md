@@ -8,8 +8,8 @@
 
 ## 相关实体
 
-- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/123-why-internally-built-ai-fails-fund-accounting-audits.md)
-- [Why I'm leaving GitHub for Forgejo](ch01/676-github.md)
+- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/622-why-internally-built-ai-fails-fund-accounting-audits.md)
+- [Why I'm leaving GitHub for Forgejo](ch01/688-github.md)
 - [AI in Cybersecurity Training Resources | SANS Institute](ch04/310-ai.md)
 
 ## 深度分析

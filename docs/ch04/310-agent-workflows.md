@@ -76,11 +76,11 @@ ET = m × (1.0 × I + 0.1 × C + 4.0 × O)
 > Stub page — 内容待补充。
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/github-token-efficiency-agentic-workflows.md)
 - [十年老技术开发的 AI Agent 探索之路](ch04/310-ai.md)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
-- [Garry Tan](ch01/508-garry-tan.md)
+- [Garry Tan](ch01/510-garry-tan.md)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/245-skill.md)
 - [四种 Sub Agent 模式](ch04/503-agent.md)

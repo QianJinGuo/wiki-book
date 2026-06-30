@@ -29,7 +29,7 @@ Themida 的 VJCC handler 与 VMP 不同：条件先被求值并将结果写入 `
 
 ## 相关实体
 - [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki/blob/main/entities/static-devirtualization-themida.md)
-- [Static Devirtualization of Themida](ch12/054-static-devirtualization-of-themida.md)
+- [Static Devirtualization of Themida](ch12/055-static-devirtualization-of-themida.md)
 
 ---
 

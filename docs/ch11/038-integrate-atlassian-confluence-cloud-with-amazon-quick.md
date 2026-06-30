@@ -124,8 +124,8 @@ Knowledge Base 的 Sync Reports 是易被忽视的运维窗口。定期检查「
 - [Confluence Knowledge Base ACL 配置](https://docs.aws.amazon.com/quick/latest/userguide/confluence-kb-acl.html)
 ## 相关实体
 - [Aderant Transforms Cloud Operations With Amazon Quick](ch11/175-aderant-transforms-cloud-operations-with-amazon-quick.md)
-- [Amazon Quick Research Agentic Multi Source Citation](ch09/117-amazon-quick.md)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch09/117-amazon-quick.md)
+- [Amazon Quick Research Agentic Multi Source Citation](ch11/195-amazon-quick.md)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/195-amazon-quick.md)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](ch04/503-agent.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
 

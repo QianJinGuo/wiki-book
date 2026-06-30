@@ -87,7 +87,7 @@ services:
 - **AWS China Blog 同期 LiteLLM 矩阵**：
   - [LiteLLM 生产级部署](ch04/310-ai.md)
   - [LiteLLM Bedrock 成本管控](ch01/890-llm.md)
-  - [LiteLLM QuickSight 可视化](ch09/117-amazon-quick.md)
+  - [LiteLLM QuickSight 可视化](ch11/195-amazon-quick.md)
 - 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bedrock-claude-litellm-websearch-interception-配置指南.md)
 
 ---

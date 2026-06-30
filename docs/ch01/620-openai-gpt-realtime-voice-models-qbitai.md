@@ -21,7 +21,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-gpt-realtime-voice-models-qbitai.md)
 
 - [gemini app rolling out](https://github.com/QianJinGuo/wiki/blob/main/entities/9to5google-gemini-app-extended-thinking.md)
-- [gpt -image 2神级提示词分享](ch01/695-gpt-image-2.md)
+- [gpt -image 2神级提示词分享](ch01/730-gpt-image-2.md)
 
 ## 深度分析
 

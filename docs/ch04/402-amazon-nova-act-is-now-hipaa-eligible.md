@@ -98,9 +98,9 @@ Nova Act 采用浏览器优先的自动化架构，这与传统的 API 驱动 RP
 3. **定价评估**：建议在 pilot 阶段详细评估 token 消耗成本，避免生产环境产生意外费用
 
 ## 相关实体
-- [Bedrock Agentcore Coding Agent Hosting](ch09/042-coding-agent.md)
+- [Bedrock Agentcore Coding Agent Hosting](ch09/043-coding-agent.md)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch04/503-agent.md)
-- [Prompting Amazon Nova 2 For Content Moderation](ch01/399-prompting-amazon-nova-2-for-content-moderation.md)
+- [Prompting Amazon Nova 2 For Content Moderation](ch01/398-prompting-amazon-nova-2-for-content-moderation.md)
 - [Evaluate Amazon Nova Sonic Voice Agent Scale No Mic](ch04/503-agent.md)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch04/503-agent.md)
 

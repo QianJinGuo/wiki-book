@@ -87,7 +87,7 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](ch03/073-claude-code.md)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [AutoResearch：多 Agent 自动化软件开发](ch04/503-agent.md)
-- [Claude Opus 4.7 发布分析](ch01/327-claude-opus-4-7.md)
+- [Claude Opus 4.7 发布分析](ch01/672-claude-opus-4-7.md)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/245-skill.md)
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/310-ai.md)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/310-ai.md)

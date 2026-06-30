@@ -14,7 +14,7 @@
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/091-llm-as-a-verifier-a-general-purpose-verification-framework.md)
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/890-llm.md)
 
-- [jane street — 形式化方法与编程的未来](ch12/104-jane-street.md)
+- [jane street — 形式化方法与编程的未来](ch12/108-jane-street.md)
 
 ## 深度分析
 LLM-as-a-Verifier 的核心贡献是区分了两个概念：**Judge（裁判）给出判决，Verifier（验证者）确认正确性**。这种语义区分有重要的工程含义：裁判需要将判断压缩为单一离散分数，而验证者可以通过**细粒度评分token、重复验证和多维度分解**保留更多语义信息。

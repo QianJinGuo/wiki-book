@@ -17,7 +17,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/forward-networks-predict-network-verification.md)
 
-- [jane street — 形式化方法与编程的未来](ch12/104-jane-street.md)
+- [jane street — 形式化方法与编程的未来](ch12/108-jane-street.md)
 
 ## 深度分析
 

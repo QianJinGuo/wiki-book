@@ -124,7 +124,7 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 - [Agent Harnesses Are Dead Long Live Agent Harnesses](ch04/513-agent-harnesses-are-dead-long-live-agent-harnesses.md)
 - [Harness 之后 状态边界与失败闭环 若飞](ch05/015-harness.md)
 - [Agentscope Java 2.0 Enterprise Distributed Harness](ch04/503-agent.md)
-- [Gaode Uplift Model Iteration Agent Long Running Harness](ch01/735-gaode-uplift-model-iteration-agent-long-running-harness.md)
+- [Gaode Uplift Model Iteration Agent Long Running Harness](ch01/750-gaode-uplift-model-iteration-agent-long-running-harness.md)
 - [Long Running Agent Ralph Loop Harness Takeover](ch04/503-agent.md)
 - [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch04/310-ai.md)
 - [Langgraph A2A Adversarial Agent Team](ch04/503-agent.md)

@@ -7,10 +7,10 @@
 ## 核心要点
 -
 ## 相关实体
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch01/676-github.md)
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](ch01/676-github.md)
-- [Why Im Leaving Github For Forgejo](ch01/676-github.md)
-- [From Doer To Director The Ai Mindset Shift](ch01/032-from-doer-to-director-the-ai-mindset-shift.md)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch01/277-token.md)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](ch01/277-token.md)
+- [Why Im Leaving Github For Forgejo](ch01/688-github.md)
+- [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
 - [Microsoft For Startups Microsoft](ch01/434-microsoft-for-startups-microsoft.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/grafana-github-token-breach-led-to-html.md)

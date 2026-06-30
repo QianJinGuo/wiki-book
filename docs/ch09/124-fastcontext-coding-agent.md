@@ -125,7 +125,7 @@
 - [AI Coding Agent 质量防御的五个控制机制](ch04/310-ai.md)
 - [Coding Agent 在百度的落地实践](ch04/310-ai.md)
 - [AgentMemory：Coding Agent 本地记忆](ch09/034-agentmemory.md)
-- [阿里 LoongSuite Pilot：Coding Agent 从黑盒到透明](ch09/042-coding-agent.md)
+- [阿里 LoongSuite Pilot：Coding Agent 从黑盒到透明](ch09/043-coding-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

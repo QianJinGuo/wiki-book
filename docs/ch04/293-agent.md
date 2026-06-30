@@ -17,7 +17,7 @@ source_url: https://mp.weixin.qq.com/s/kNZE9fzCvOi3Em6JlueB0g
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch04/310-ai.md)
 - [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
 - [吴恩达：AI 将最先杀死前端](ch04/310-ai.md)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/692-anthropic.md)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/707-anthropic.md)
 - [你写的 Skill，及格了吗？](ch04/245-skill.md)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch01/380-claude.md)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/503-agent.md)
@@ -38,7 +38,7 @@ source_url: https://mp.weixin.qq.com/s/kNZE9fzCvOi3Em6JlueB0g
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch03/012-openclaw.md)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/310-ai.md)
 
-- [一次构建，随处复用：python 中的泛型仓库模式](ch04/469-python.md)
+- [一次构建，随处复用：python 中的泛型仓库模式](ch04/486-python.md)
 
 ## 深度分析
 本文从**环境工程**视角重新定义了企业级 Agent 的核心瓶颈：不是模型能力不足，而是**上下文供给能力**的缺失。与软件工程天然数字化不同，传统行业的 Agent 处于"半失明"状态——缺乏对真实业务环境的持续感知能力。

@@ -124,7 +124,7 @@ OpenClaw 不是孤例——任何"本地优先、用户自治、跨消息通道"
 - [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](ch04/310-ai.md)
 - [Claude Code vs OpenClaw Memory 对比](ch03/073-claude-code.md)
 - [Claude Code vs OpenClaw Memory 向量数据库之争](ch03/073-claude-code.md)
-- [Claude Code vs OpenClaw 使用 Ettin](ch09/028-claude-code-openclaw-usage-ettin.md)
+- [Claude Code vs OpenClaw 使用 Ettin](ch09/029-claude-code-openclaw-usage-ettin.md)
 - [Claude Managed Agents 自托管沙箱企业版](ch04/503-agent.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

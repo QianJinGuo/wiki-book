@@ -16,7 +16,7 @@
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](ch04/503-agent.md)
 - [Yidian Tianxia Context Engineering Agentic Ai](ch04/229-yidian-tianxia-context-engineering-agentic-ai.md)
 - [Agentic Ai System Architecture Harness Skill Mcp](ch04/245-skill.md)
-- [Memory Agent Systems Cobanov](ch04/465-memory-agent-systems-cobanov.md)
+- [Memory Agent Systems Cobanov](ch04/480-memory-agent-systems-cobanov.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/trace2skill-trajectory-distillation-agent-skills.md)
 

@@ -269,7 +269,7 @@ OWL适合以下场景：
 - [Agent Framework Owl Principles](ch04/503-agent.md)
 - [Karpathy Ai Agent 7 Bits Value Decline](ch04/310-ai.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/310-ai.md)
-- [Gepa Optimize Anything](ch01/276-gepa-optimize-anything.md)
+- [Gepa Optimize Anything](ch01/274-gepa-optimize-anything.md)
 - [Tmall Marketing Ai Workflow Best Practices](ch04/310-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 

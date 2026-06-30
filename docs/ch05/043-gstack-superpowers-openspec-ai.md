@@ -59,11 +59,11 @@ TDD 铁律（先写失败测试再写代码）作为 skill 文件规则自动执
 - gstack：执行层工具，Browse 引擎 + 7 阶段 Sprint 管线
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch04/310-ai.md)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
-- [Codeindex · 让大模型更好地理解你的代码](ch01/336-codeindex.md)
+- [Codeindex · 让大模型更好地理解你的代码](ch01/334-codeindex.md)
 - [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/245-skill.md)
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](ch03/073-claude-code.md)
 - [Claude Code Agent 工程设计](ch03/073-claude-code.md)
-- [你不知道的 Agent 原理架构与工程实践](ch04/302-agent-principle-architecture-engineering-practice.md)
+- [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](ch04/503-agent.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 
@@ -95,13 +95,13 @@ Superpowers HARD-GATE 已经卡住设计审批，gstack 的 `/plan-design-review
 TDD 三个例外（一次性原型、生成的代码、配置文件）是经过实践验证的务实策略，但实践中容易被滥用。判断标准不是"我想跳过"而是"跳过之后能否在后续补充测试"。一次性原型如果最终会成为生产代码，测试应该在原型验收后补上，而不是永远不写。生成代码（AI 生成的脚手架代码）如果没有业务逻辑，可以跳过，但生成的业务逻辑代码需要测试覆盖。
 
 ## 相关实体
-- [Cli Anything Wechat Demo Conglin](ch03/089-cli-anything.md)
+- [Cli Anything Wechat Demo Conglin](ch03/091-cli-anything.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md)
 
 ### 版本感知的工作流
 整个流程高度依赖版本状态和变更追踪。当 `/ship` 执行 VERSION 升级、CHANGELOG 生成、PR 创建时，这些产物本身就是 OpenSpec 归档的输入。如果团队规模较大，建议在 PR 描述中包含 OpenSpec 的 proposal 链接，让 code reviewer 能够直接跳转到需求源头进行审查。这样就形成了一个完整的需求→实现→验证→发布的闭环。
-- [Cli Anything Wechat Demo](ch03/089-cli-anything.md)
+- [Cli Anything Wechat Demo](ch03/091-cli-anything.md)
 
 ---
 

@@ -126,7 +126,7 @@ npx skills add cline/sdk-skill
 - **官方推文**：@cline (2026-05-13)
 
 ## 相关实体
-- [Cline releases open-source agent runtime SDK](ch04/396-cline-releases-open-source-agent-runtime-sdk.md)
+- [Cline releases open-source agent runtime SDK](ch04/401-cline-releases-open-source-agent-runtime-sdk.md)
 - [腾讯混元Hy3-preview发布](ch04/503-agent.md)
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](ch03/073-claude-code.md)
 - [Codex /goal：长任务Agent的目标运行时](ch09/041-codex-goal.md)

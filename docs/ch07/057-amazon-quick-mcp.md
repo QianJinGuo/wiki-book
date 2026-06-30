@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](ch09/117-amazon-quick.md)
+- [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](ch11/195-amazon-quick.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md)
 
 ## 深度分析
@@ -47,7 +47,7 @@
 ### 关联实体
 
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/310-ai.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/815-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch03/012-openclaw.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch03/012-openclaw.md)

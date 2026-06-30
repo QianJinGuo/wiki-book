@@ -108,7 +108,7 @@ def review_content(self, content):
 
 ## 相关实体
 
-- [Lessons From 2 Billion Agentic Workflows](ch04/362-lessons-from-2-billion-agentic-workflows.md) — 20 亿次工作流的三核心模式
+- [Lessons From 2 Billion Agentic Workflows](ch04/365-lessons-from-2-billion-agentic-workflows.md) — 20 亿次工作流的三核心模式
 - [Agentcore Harness](ch04/503-agent.md) — AgentCore 工程化
 - [Hands Free First Notice Of Loss Using Strands Agents And Ama](ch04/503-agent.md) — 保险 FNOL 中的人类角色重置
 - [Build An Ai Powered Equipment Repair Assistant Using Amazon ](ch04/310-ai.md) — AgentCore 维修助手的记忆层设计

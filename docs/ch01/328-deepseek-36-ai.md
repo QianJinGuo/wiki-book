@@ -11,15 +11,15 @@
 - 产业特点：开源是实用主义而非信仰；自研+开源是标准路径；数据产业质量参差不齐导致自建 RL 环境成为普遍选择
 - Nathan 的焦虑：硅谷能否在开源模型领域保持领导地位？
 ## 相关实体
-- [Deepseek Code Harness](ch09/069-deepseek-code-harness.md)
-- [Nathan Lambert Claude Mythos Open Weights](ch01/368-nathan-lambert.md)
-- [Deepseek V4 Pro Vs Claude](ch01/528-deepseek-v4.md)
-- [Deepseek Moe Parallel Strategy](ch01/356-deepseek.md)
+- [Deepseek Code Harness](ch09/070-deepseek-code-harness.md)
+- [Nathan Lambert Claude Mythos Open Weights](ch01/380-claude.md)
+- [Deepseek V4 Pro Vs Claude](ch01/380-claude.md)
+- [Deepseek Moe Parallel Strategy](ch01/774-deepseek.md)
 - [Deepseek V4 Training Methodology](ch04/310-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/chinese-ai-lab-insights-nathan.md)
 
-- [Linn Fritz Looks At The Lighter Side Of Life](ch09/102-linn-fritz-looks-at-the-lighter-side-of-life.md)
+- [Linn Fritz Looks At The Lighter Side Of Life](ch09/106-linn-fritz-looks-at-the-lighter-side-of-life.md)
 - [deepseek-v4深度拆解一篇论文同时做了五件大事](ch01/528-deepseek-v4.md)
 
 ## 文化背景：为什么中国实验室擅长追赶前沿

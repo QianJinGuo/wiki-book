@@ -62,7 +62,7 @@
 
 > 一条 23 秒的慢请求，通过 4 层视图交叉定位，可精确到"某一轮 LLM 多步冗余循环调用"。
 
-**与既有 LoongSuite 实体的关系**：[Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](ch09/042-coding-agent.md)（401 行深度文档）覆盖 LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力。本 entity 在其基础上扩展到 AgentLoop **整平台**视角，包含后续 3 环。
+**与既有 LoongSuite 实体的关系**：[Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](ch09/043-coding-agent.md)（401 行深度文档）覆盖 LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力。本 entity 在其基础上扩展到 AgentLoop **整平台**视角，包含后续 3 环。
 
 ### 第 2 环：Agent Ontology + Pipeline（Trace2Dataset）
 
@@ -147,7 +147,7 @@
 
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
-| [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](ch09/042-coding-agent.md) | **第 1 环底层** | LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力（401 行深度文档） |
+| [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](ch09/043-coding-agent.md) | **第 1 环底层** | LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力（401 行深度文档） |
 | [Loongsuite Genai Semconv Alibaba](ch04/310-ai.md) | **第 1 环语义规范** | OTel GenAI semconv + STEP/MCP span 扩展的统一数据语言 |
 | [Aliyun Cms2 Cli Skill Natural Language Observability](ch04/245-skill.md) | **接入层** | CMS2 Skill 化（CLI 6 步 + K8s 自动注入 + 5 大场景） |
 | [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](ch04/310-ai.md) | **同源早期表述** | 2026-04-29 阿里云"一晚上自动评测和优化你的系统"平台（评测→优化三轮 90.7→97.4→99.1），可能是 AgentLoop 早期形态或同系列产品 |

@@ -217,7 +217,7 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 - [Small Hermes Self Evolving Agent Architecture](ch04/503-agent.md)
 - [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](ch04/503-agent.md)
 - [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](ch03/012-openclaw.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](ch01/380-claude.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-loop-source-code-anatomy.md)
 

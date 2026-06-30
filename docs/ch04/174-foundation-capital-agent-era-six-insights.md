@@ -113,8 +113,8 @@ Aparna 提出的"Agent as new hire"管理框架的真正价值在于：它把一
 
 ## 相关概念
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — "可插拔>微调"洞察与 Harness Engineering 的核心命题完全一致：框架比模型更持久
-- [Factory Mission](ch01/877-factory-mission-multi-agent-architecture.md) — 多 Agent 协作框架 vs. Foundation Capital 的 Agent 主用户原则相互印证
-- [Autobrowse](ch07/034-autobrowse-browserbase-persistent-skill.md) — 同样的"反馈循环=产品"洞察，Autobrowse 通过技能文件实现自我改进闭环
+- [Factory Mission](ch01/888-factory-mission-multi-agent-architecture.md) — 多 Agent 协作框架 vs. Foundation Capital 的 Agent 主用户原则相互印证
+- [Autobrowse](ch07/035-autobrowse-browserbase-persistent-skill.md) — 同样的"反馈循环=产品"洞察，Autobrowse 通过技能文件实现自我改进闭环
 - [Anthropic Claude Managed Agents](ch04/503-agent.md) — Claude Managed Agents 的 Outcomes Loop 自我评估是"反馈闭环=产品"的具体工程实现
 -  — Jonathan Siddharth 是 Turing CEO，其 Agent 优先实践是本篇发言的背景注脚；三角 Orchestrator+Worker+Validator 架构与本文洞察相互印证
 ---

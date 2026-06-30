@@ -175,7 +175,7 @@ TUI 显示：
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch03/012-openclaw.md)
 - [Agent Reliability Engineering Skillify Continuous Improvement](ch04/245-skill.md)
 - [Agent Harness Context Management Working Set](ch04/503-agent.md)
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](ch01/692-anthropic.md)
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](ch01/707-anthropic.md)
 - [Impeccable Frontend Design Skill Harness Vibecoder](ch04/245-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 

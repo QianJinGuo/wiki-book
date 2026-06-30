@@ -58,8 +58,8 @@ Stenberg 明确表示：
 3. **生态合作优于封闭独占**：开放 access 让真正需要的人用上，才能产生实际价值    
 
 ## 相关实体
-- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](ch12/098-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.md)
-- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](ch01/692-anthropic.md)
+- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](ch12/102-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.md)
+- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](ch01/707-anthropic.md)
 - [Mythos 发现 curl 漏洞](ch12/009-mythos-finds-a-curl-vulnerability.md) — Daniel Stenberg（curl 作者）亲述 Mythos 扫描 curl 代码库的真实经历：5个"确认"漏洞经人工审核后只有1个真正成立
 
 ## 链接

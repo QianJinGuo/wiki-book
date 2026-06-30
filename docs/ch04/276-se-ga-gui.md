@@ -121,8 +121,8 @@ SE-GA 的创新不仅在于 TTME 或 MASE 各自的效果，更在于两者协�
 - [World Knowledge Agent Self Evolution Tencent Hkustgz](ch04/503-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/se-ga-memory-augmented-self-evolution-gui-agents.md)
-- [icml 2026 position paper — transformer 图灵完备性高度依赖上下文管理 (ruc 魏](ch01/896-icml-2026.md)
-- [icml 2026 | prism: parallel residual iterative sequence mode](ch01/896-icml-2026.md)
+- [icml 2026 position paper — transformer 图灵完备性高度依赖上下文管理 (ruc 魏](ch01/908-icml-2026.md)
+- [icml 2026 | prism: parallel residual iterative sequence mode](ch01/908-icml-2026.md)
 - [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](ch04/310-ai.md)
 
 ---

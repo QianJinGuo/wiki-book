@@ -11,11 +11,11 @@
 1. **指令子系统** — 告诉 Agent 项目是什么、技术栈、不可违反的规则
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](ch01/379-claude-code-harness-deep-understanding.md)
+- [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md)
 - [Claude Code Harness Deep Dive Founder Park](ch03/073-claude-code.md)
 - [Claude Opus 47](ch01/380-claude.md)
 - [Openclaw Prompt Context Harness](ch03/012-openclaw.md)
-- [Anthropic Managed Agents Scaling](ch04/291-anthropic-managed-agents-scaling.md)
+- [Anthropic Managed Agents Scaling](ch04/292-anthropic-managed-agents-scaling.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-prompt-to-harness-claude-official.md)
 

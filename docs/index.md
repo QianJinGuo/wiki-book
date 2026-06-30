@@ -11,7 +11,7 @@
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
 | 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1100 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 904 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 905 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 411 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 92 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 31 篇 |
@@ -65,7 +65,7 @@
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 542 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 543 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
   - ⭐ From idea to AI app: creating intelligent research assistants
-  - ... 共 **542** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **543** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 87 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -156,7 +156,7 @@
   - ⭐⭐ rag chunk embedding rerank pipeline
   - ... 共 **24** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 904 篇**
+> 📖 **本篇共 905 篇**
 
 ---
 
@@ -304,6 +304,6 @@
 
 ---
 
-**📊 全书收录：2538 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：2539 篇实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-06-25 | 来源: ~/wiki/entities/

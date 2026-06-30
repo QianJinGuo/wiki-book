@@ -117,7 +117,7 @@ PyTorch 2.x系列的演进方向（硬件无关性、编译优化、生产就绪
 **6. 异构硬件训练的框架能力对齐**
 对于同时使用NVIDIA和AMD GPU的团队（如超算环境），2.12的ROCm改进使得AMD的FlexAttention流水线、稀疏计算和内存管理能力与NVIDIA侧的对应能力差距显著缩小。实践建议：不要假设两个平台的能力完全对等，继续为不同硬件维护不同的代码路径，但可以利用2.12新的`torch.accelerator.Graph`统一API逐步收敛代码——为新硬件支持使用统一的`torch.accelerator.Graph`接口，保留后端特定实现但统一对外API。
 ## 相关实体
-- [Pytorch 2 12 Release Blog](ch01/186-pytorch-2-12-release-blog.md)
+- [Pytorch 2 12 Release Blog](ch01/184-pytorch-2-12-release-blog.md)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
 - [Llm From Scratch 7 Stage Pytorch Tutorial](ch01/890-llm.md)

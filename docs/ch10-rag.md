@@ -45,7 +45,7 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 ## 相关实体
 - [Tcjndrk4Frmumngmboih W](https://github.com/QianJinGuo/wiki/blob/main/entities/tCjNDrk4fRMUmngmbOih-w.md)
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
-- [Identity Behavior Context Itdr Solution](ch01/117-identity-behavior-context-itdr-solution-teleport.md)
+- [Identity Behavior Context Itdr Solution](ch01/116-identity-behavior-context-itdr-solution-teleport.md)
 - [Openclaw Cloud Storage Config Guide Wechat](ch03/012-openclaw.md)
 - [Microsoft Is Quietly Shopping For An Openai Replac](ch04/310-ai.md)
 
@@ -91,7 +91,7 @@ WHAT YOU CAN'T SEE, YOU CAN'T STOP
 FRAGMENTED AUDIT LOGS NO CROSS-SYSTEM CONTEXT MANUAL LOG CORRELATION AI SESSIONS INVISIBLE
 
 ## 相关实体
-- [Identity Behavior Context Itdr Solution Teleport](ch01/117-identity-behavior-context-itdr-solution-teleport.md)
+- [Identity Behavior Context Itdr Solution Teleport](ch01/116-identity-behavior-context-itdr-solution-teleport.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
 - [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/PGpkC04XfF7ilMDb9vOcNQ.md)
 - [Openclaw Cloud Storage Config Guide Wechat](ch03/012-openclaw.md)
@@ -817,8 +817,8 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Extreme Co Design Agentic Systems](ch04/041-nvidia-extreme-co-design-agentic-systems.md)
 - [Nvidia Agentic Ai Subsurface Engineering](ch04/316-nvidia-agentic-ai-subsurface-engineering.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/342-nvidia-secure-local-agent-nemoclaw-openclaw.md)
-- [Nvidia Telco Reasoning Models Nemo](ch01/192-nvidia-telco-reasoning-models-nemo.md)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/344-nvidia-secure-local-agent-nemoclaw-openclaw.md)
+- [Nvidia Telco Reasoning Models Nemo](ch01/190-nvidia-telco-reasoning-models-nemo.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-multimodal-rag-knowledge-systems.md)
@@ -1115,11 +1115,11 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-nova-manufacturing-intelligence.md)
 
-→ [Amazon Bedrock 模型推理无服务器架构案例](ch11/234-bedrock.md)
+→ [Amazon Bedrock 模型推理无服务器架构案例](ch11/236-bedrock.md)
 
 → [Amazon Nova Sonic 可扩展语音代理设计](ch04/503-agent.md)
 
-→ [Amazon Nova 2 内容审核提示工程](ch01/399-prompting-amazon-nova-2-for-content-moderation.md)
+→ [Amazon Nova 2 内容审核提示工程](ch01/398-prompting-amazon-nova-2-for-content-moderation.md)
 
 → [Amazon Bedrock AgentCore 运行时深度解析](ch04/503-agent.md)
 
@@ -1163,7 +1163,7 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 - [Rag Chunking Optimization 2025](ch01/207-rag.md)
 - [Rag Full Pipeline Taobao](ch01/207-rag.md)
 - [Ai Agent Engineer Capability Map](ch04/310-ai.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [Claude Code Search Architecture Tencent 2026](ch03/073-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rag-chunk-embedding-rerank-pipeline.md)
@@ -1852,7 +1852,7 @@ Fragnesia 利用链的第一步依赖 user namespace 隔离来获取 `CAP_NET_AD
 - [Skill Rag Tsinghua Sra](ch04/245-skill.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/073-claude-code.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md)
 
@@ -1973,7 +1973,7 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 ## 相关实体
 
 - [RAG 与检索技术](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-rag.md)
-- [From Silos To Service Topology Why Netflix Built A Real Time](ch11/138-from-silos-to-service-topology-why-netflix-built-a-real-tim.md)
+- [From Silos To Service Topology Why Netflix Built A Real Time](ch11/008-from-silos-to-service-topology-why-netflix-built-a-real-tim.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/instacart-ads-retrieval-generative-token-by-token.md)
 
@@ -2070,7 +2070,7 @@ Agentic browsing 正是这种用户代理权的最新表达——它让用户无
 - [Skill Rag Tsinghua Sra](ch04/245-skill.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/073-claude-code.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮-v2.md)
 
@@ -2132,7 +2132,7 @@ YC总裁Garry Tan开源的AI第二大脑，8层架构从"找得到"到"真正记
 - [Skill Rag Tsinghua Sra](ch04/245-skill.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/073-claude-code.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gbrain-8layer-51cto.md)
 
@@ -2198,7 +2198,7 @@ PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机
 
 ## 相关实体
 - [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/PGpkC04XfF7ilMDb9vOcNQ.md)
-- [Identity Behavior Context Itdr Solution](ch01/117-identity-behavior-context-itdr-solution-teleport.md)
+- [Identity Behavior Context Itdr Solution](ch01/116-identity-behavior-context-itdr-solution-teleport.md)
 - [Oz Multi Harness Cloud Agent Orchestration](ch04/503-agent.md)
 - Senators Query Credit Bureaus On Bnpl 1
 - [看 Agentrun 如何玩转记忆存储最佳实践来了](ch04/503-agent.md)
@@ -2578,8 +2578,8 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 **5. 关注 embedding model + reranker 配对效应**：单独比较 reranker 质量不够——6 个 embedding model 搭配 Ettin Reranker 家族产生 36 种组合。固定 reranker 切换 embedder，或固定 embedder 切换 reranker，组合效果差异可能超过单个组件的升级收益。生产选型时应以端到端 pipeline（NDCG@10）为评估指标，而非孤立的模型 benchmark 。
 
 ## 相关实体
-- [Introducing The Ettin Reranker Family](ch01/374-introducing-the-ettin-reranker-family.md)
-- [Claude Code Openclaw Usage Ettin](ch09/028-claude-code-openclaw-usage-ettin.md)
+- [Introducing The Ettin Reranker Family](ch01/373-introducing-the-ettin-reranker-family.md)
+- [Claude Code Openclaw Usage Ettin](ch09/029-claude-code-openclaw-usage-ettin.md)
 - [Gemma 4 Multi Token Prediction Drafters](ch01/227-gemma-4-multi-token-prediction-drafters.md)
 - [Continuousasync](https://github.com/QianJinGuo/wiki/blob/main/entities/continuousasync.md)
 - [Continuous Async](https://github.com/QianJinGuo/wiki/blob/main/entities/continuous-async.md)

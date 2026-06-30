@@ -9,11 +9,11 @@ Seismic data analysis is an essential component of energy exploration, but confi
 (Halliburton Bedrock GenAI article content - 15,222 chars fetched from AWS)
 
 ## 相关实体
-- [Amazon Quick Research Agentic Multi Source Citation](ch09/117-amazon-quick.md)
+- [Amazon Quick Research Agentic Multi Source Citation](ch11/195-amazon-quick.md)
 - [Build Financial Document Processing With Pulse Ai And Amazon Bedrock](ch04/310-ai.md)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/310-ai.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/890-llm.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/506-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-halliburton-seismic-workflow-genai.md)
 

@@ -64,7 +64,7 @@
 
 - [Harness Engineering](ch05/061-harness-engineering.md)
 - [Claude Code Skills Superpowers 实践](ch01/420-claude-code-skills-superpowers-practice.md)
-- [AI Coding Agent Token 成本控制](ch09/042-coding-agent.md)
+- [AI Coding Agent Token 成本控制](ch09/043-coding-agent.md)
 - [Skill 版本对比五大原则](ch04/245-skill.md)
 
 ---

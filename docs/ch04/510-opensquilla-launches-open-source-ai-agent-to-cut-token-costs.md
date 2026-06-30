@@ -42,7 +42,7 @@ OpenSquilla 的核心洞察是：**大多数 agent 部署都在浪费 token**，
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/490-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
 - [Cline Open Source Agent Runtime Sdk](ch04/503-agent.md)
 - [Pilotdeck Agent Os Openbmb Tsinghua](ch04/503-agent.md)
-- [Cline Releases Open Source Agent Runtime Sdk](ch04/396-cline-releases-open-source-agent-runtime-sdk.md)
+- [Cline Releases Open Source Agent Runtime Sdk](ch04/400-cline-releases-open-source-agent-runtime-sdk.md)
 - [Clinereleasesopen Sourceagentruntimesdk](ch04/503-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/opensquilla-launches-open-source-ai-agent-to-cut-token-costs-1.md)

@@ -9,7 +9,7 @@
 ## 相关实体
 - [habby 游戏借助 aws devops agent 实现智能运维最佳实践](ch04/503-agent.md)
 - [agent-evalkit：aws 开源 cli agent 评测工具包](ch04/503-agent.md)
-- [aws sagemaker ai agent guided workflows finetuning](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [aws sagemaker ai agent guided workflows finetuning](ch04/350-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-cn-intelligent-device-assistant-consumer-agent-2026.md)
 

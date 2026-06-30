@@ -15,8 +15,8 @@ Reinforcement Fine-Tuning can use any reward signal, straightforward hand‑craf
 - [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](ch04/310-ai.md)
 - [Llm Finetuning Cost Breakdown](ch01/890-llm.md)
 - [Harness Engineering 第三代工程范式](ch05/061-harness-engineering.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/890-llm.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/506-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-reinforcement-fine-tuning-llm-as-judge.md)
 
