@@ -139,7 +139,7 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 
 ## 相关实体
 - [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/247-lbs-intentbench.md)
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/245-skill.md)
 - [SkillX — 层次化技能知识库](ch04/245-skill.md)
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/245-skill.md)
@@ -149,7 +149,7 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 - [Skills赏析：使用skills-refiner提升skill质量](ch04/245-skill.md)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/245-skill.md)
 
-- [Hermes Agent](ch03/086-hermes-agent.md)
+- [Hermes Agent](ch03/087-hermes-agent.md)
 - [Qoder Skills 完全指南](ch04/245-skill.md)
 - [AgentEval：YAML驱动的Agent评测框架](ch04/503-agent.md)
 - [你写的 Skill，及格了吗？](ch04/245-skill.md)

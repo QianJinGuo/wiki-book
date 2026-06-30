@@ -52,7 +52,7 @@ Manus 是工艺典范：几百行手工 system prompts、明确的工作流脚�
 
 ### 与相邻观点的张力
 
-- 与 [Claude Code 现状](ch01/366-claude-code-and-what-comes-next.md)对照：Claude Code 是"工艺派"——精心设计的 harness + Opus 4.5 智能 + Skills + Subagents + MCP。属于"精心打造"的 agent 范式——但其作者团队同时投入算力与训练。
+- 与 [Claude Code 现状](ch01/362-claude-code-and-what-comes-next.md)对照：Claude Code 是"工艺派"——精心设计的 harness + Opus 4.5 智能 + Skills + Subagents + MCP。属于"精心打造"的 agent 范式——但其作者团队同时投入算力与训练。
 - 与 [CrewAI 迭代论](ch04/333-your-first-ai-agent-should-do-one-thing-badly.md)的张力：迭代论强调"先做糟糕的 agent 再迭代"；苦味教训暗示"算力取代工艺"。前者是工程路径，后者是范式断言。
 - 与 [管理即超能力](ch01/424-management-as-ai-superpower.md)互补：Mollick 在商业文章中强调"管理能力"为稀缺资源；本文同一作者暗示 AI 找到路径后，管理定义"好结果"的能力成为新稀缺。
 
@@ -69,11 +69,11 @@ Manus 是工艺典范：几百行手工 system prompts、明确的工作流脚�
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [Management As Ai Superpower](ch01/424-management-as-ai-superpower.md)
-- [Claude Code And What Comes Next](ch01/366-claude-code-and-what-comes-next.md)
+- [Claude Code And What Comes Next](ch01/362-claude-code-and-what-comes-next.md)
 - [Your First Ai Agent Should Do One Thing Badly](ch04/333-your-first-ai-agent-should-do-one-thing-badly.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/310-ai.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch03/012-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
 - [RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/rag-framework-comparison.md)
 - [Knowledge Graph RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/knowledge-graph-rag.md)

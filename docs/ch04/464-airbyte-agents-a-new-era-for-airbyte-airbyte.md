@@ -9,7 +9,7 @@ Until recently, the complaints about AI have always been about the models. That 
 Agents are powerful, but they are not wise. To operate at their best, they need fresh context delivered in the right format and at the right time. From our experience, current ways of moving data simply aren't enough:
 
 ## 相关实体
-- [Airbyte Agents A New Era For Airbyte Airbyte](ch04/452-airbyte-agents-a-new-era-for-airbyte-airbyte.md)
+- [Airbyte Agents A New Era For Airbyte Airbyte](ch04/464-airbyte-agents-a-new-era-for-airbyte-airbyte.md)
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/134-skillos-learning-skill-curation-for-self-evolving-agents.md)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/065-building-ai-agents-for-business-support-using-amazon-bedrock.md)
 - [Oz Multi Harness Cloud Agent Orchestration](ch04/503-agent.md)

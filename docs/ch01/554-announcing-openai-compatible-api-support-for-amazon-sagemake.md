@@ -11,11 +11,11 @@
 - 开发者可零成本迁移至 SageMaker，降低 AI 应用部署成本
 
 ## 相关实体
-- [Amazon Bedrock Api Security Guide](ch12/031-amazon-bedrock-api.md)
+- [Amazon Bedrock Api Security Guide](ch12/032-amazon-bedrock-api.md)
 - [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch04/310-ai.md)
 - [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/503-agent.md)
 - [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/310-ai.md)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/890-llm.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/506-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
 

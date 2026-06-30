@@ -1,6 +1,6 @@
-# ml intern huggingface autonomous ml agent
+# ML Intern Huggingface Autonomous ML Agent
 
-## Ch04.433 ml intern huggingface autonomous ml agent
+## Ch04.433 ML Intern Huggingface Autonomous ML Agent
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/ml-intern-huggingface-autonomous-ml-agent.md`
 
@@ -11,8 +11,8 @@
 > License: Apache 2.0
 
 ## 相关实体
-- [Anthropic Multi Agent Research System](ch04/451-anthropic-multi-agent-research-system.md)
-- [Deerflow Hermes Openclaw Comparison](ch03/012-openclaw.md)
+- [Anthropic Multi Agent Research System](ch04/462-anthropic-multi-agent-research-system.md)
+- [Deerflow Hermes Openclaw Comparison](ch11/207-openclaw.md)
 - [Hermes Agent Getting Started Guide 2026](ch04/503-agent.md)
 - [Hermes Agent Deep Dive Alibaba](ch04/503-agent.md)
 - [Claude Opus 47](ch01/380-claude.md)

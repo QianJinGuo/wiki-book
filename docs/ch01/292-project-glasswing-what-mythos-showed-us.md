@@ -103,7 +103,7 @@ Cloudflare 总结出四方面经验，最终形成八阶段管道 ：
 
 - [LLM raiders and how to repel them](ch04/310-ai.md)
 - [LLM raiders and how to repel them](ch04/310-ai.md)
-- [Anthropic Mythos Glasswing 30Days Vulnerability Report](ch01/692-anthropic.md)
+- [Anthropic Mythos Glasswing 30Days Vulnerability Report](ch01/707-anthropic.md)
 
 ---
 

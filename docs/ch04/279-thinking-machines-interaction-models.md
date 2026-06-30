@@ -69,12 +69,12 @@ thinking-machines-interaction-models 实体与 interaction-models-human-ai 实�
 Thinking Machines 专门提到了"Colloquial refusals"（口语化拒绝）——TTS 生成的拒绝听起来不像机器人，更自然，但必须与 text-based 拒绝保持行为一致。这对 Agent 安全评估有直接启示：实时语音交互会引入"听起来自然但内容有害"的新攻击面。在评估多模态 Agent 产品时，需要增加"语音拒绝一致性"测试——让同一有害请求分别以文本和语音发出，检查拒绝行为是否对齐。
 
 ## 相关实体
-- [Interaction Models](ch01/520-thinking-machines-interaction-models-ai-cold.md)
+- [Interaction Models](ch01/522-thinking-machines-interaction-models-ai-cold.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/interaction-models.md)
 
-- [Interaction Models: A Scalable Approach to Human-AI Collaboration](ch04/310-ai.md)
-- [thinking-machines-interaction-models-ai-cold](ch01/520-thinking-machines-interaction-models-ai-cold.md)
+- [Interaction Models: A Scalable Approach to Human-AI Collaboration](ch04/150-ai.md)
+- [thinking-machines-interaction-models-ai-cold](ch01/522-thinking-machines-interaction-models-ai-cold.md)
 
 ---
 

@@ -97,7 +97,7 @@
 
 ## 与已有实体的关系
 
-- 与 [高德 SDD/Harness 体系](ch04/310-ai.md) 同源（高德技术团队），但聚焦评测而非编码
+- 与 [高德 SDD/Harness 体系](ch04/150-ai.md) 同源（高德技术团队），但聚焦评测而非编码
 - 与 [高德 Uplift 模型迭代 Agent](ch04/503-agent.md) 同源（高德 AI 团队），但聚焦地图交互而非营销算法
 - "隐式决策因素"概念与 [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) 中"意图恢复"问题呼应——Agent 不应仅执行显式指令，还需主动推断未言明的约束
 - AR = ECR × IISR 的"乘法衰减"设计与 [Agent 可靠性](ch04/503-agent.md) 的"单点失败传播"模式一致

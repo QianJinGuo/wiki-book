@@ -45,9 +45,9 @@ You can monitor usage in the Claude Console, including breakdowns by workspace, 
 ## Conclusion
 Claude Platform on AWS is available in US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), South America (São Paulo), Europe (Dublin), Europe (London), Europe (Frankfurt), Europe (Milan), Europe (Zurich), Europe (Paris), Europe (Stockholm), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Melbourne), Asia Pacific (Jakarta), Asia Pacific (Sydney).
 ## 相关实体
-- [Introducing Claude Platform On Aws](ch01/404-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
-- [Anthropic Claude Managed Agents Platform Launch](ch04/338-anthropic-claude-managed-agents-platform-launch.md)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/692-anthropic.md)
+- [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
+- [Anthropic Claude Managed Agents Platform Launch](ch04/340-anthropic-claude-managed-agents-platform-launch.md)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/707-anthropic.md)
 - [Anthropic Prompt Caching Claude Code Agihunt](ch03/073-claude-code.md)
 - [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](ch01/380-claude.md)
 

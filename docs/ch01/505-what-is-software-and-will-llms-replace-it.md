@@ -95,7 +95,7 @@ LLM 时代软件工程师的核心技能：
 - 建立验证机制（确保 LLM 输出的正确性）
 - 管理概率层与确定性层的边界
 
-这与 [Anthropic 数据分析](ch01/692-anthropic.md) 的实践相呼应——即使 LLM 能生成分析，数据的结构化组织仍然是前提。
+这与 [Anthropic 数据分析](ch01/707-anthropic.md) 的实践相呼应——即使 LLM 能生成分析，数据的结构化组织仍然是前提。
 
 ### 对 "Vibe Coding" 的隐含回应
 
@@ -127,7 +127,7 @@ LLM 时代软件工程师的核心技能：
 - [Agent Harnesses](ch04/513-agent-harnesses-are-dead-long-live-agent-harnesses.md) — Agent 架构的演进
 - [Claude Code Workflows](ch03/073-claude-code.md) — Agent 工作流设计
 - [本文实体](ch01/890-llm.md) — Tomassetti 的分析
-- [AI Agent Hype](ch04/310-ai.md) — 对 AI agent 过度炒作的冷静分析
+- [AI Agent Hype](ch04/150-ai.md) — 对 AI agent 过度炒作的冷静分析
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-is-software-llms-replace-tomassetti-2026.md)
 

@@ -137,7 +137,7 @@ log.md 只追加不修改确保了知识变更的历史完整性；evidence.cont
 
 ## Related entities
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/015-harness.md)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/310-ai.md)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/150-ai.md)
 
 ## 实践启示
 **立即可操作的行动项**

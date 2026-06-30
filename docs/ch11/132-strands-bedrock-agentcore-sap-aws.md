@@ -32,7 +32,7 @@
 - [Using Amazon Bedrock Agentcore Openclaw Multi 5](ch04/503-agent.md)
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/118-aws-bedrock-agentcore-quality-optimization-flywheel.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/503-agent.md)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/310-ai.md)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/150-ai.md)
 - [Aws Bedrock Multi Agent Collaboration Guide](ch04/503-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sap-intelligent-procurement-assistant-solution.md)

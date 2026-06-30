@@ -83,7 +83,7 @@ ShinyHunters 决定"完全放弃 clearnet 运营，仅依赖 onion 平台"具有
 - [Harness Engineering 概念](ch04/310-ai.md)
 - [Karpathy Vibe Coding 完整版](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [Agent 记忆系统](ch04/503-agent.md)
-- [Scale Robot RL with NVIDIA Isaac Lab](ch01/815-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot RL with NVIDIA Isaac Lab](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [LLMReaper Browser Extension Attack](ch04/310-ai.md) — 浏览器扩展攻击向量
 - [What My Privacy and Security Stack Actually Looks Like](ch12/019-what-my-privacy-and-security-stack-actually-looks-like.md) — 个人安全栈案例
 

@@ -96,7 +96,7 @@ Xero 与 Anthropic 的合作验证了几个趋势：
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch04/503-agent.md)
 
 - [Claude Managed Agents 官方 Harness 平台指南](ch04/503-agent.md)
-- [Anthropic Computer Use 最佳实践](ch01/673-anthropic-computer-use.md)
+- [Anthropic Computer Use 最佳实践](ch01/685-anthropic-computer-use.md)
 
 ---
 

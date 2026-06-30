@@ -40,10 +40,10 @@ Custom quality metrics c
 
 ## 相关实体
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch04/310-ai.md)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch09/117-amazon-quick.md)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/234-bedrock.md)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch11/195-amazon-quick.md)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/236-bedrock.md)
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](ch04/310-ai.md)
-- [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/234-bedrock.md)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/236-bedrock.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md)
 

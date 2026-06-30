@@ -10,8 +10,8 @@
 
 - [canvas hackers shinyhunters say their official domain was su](ch04/310-ai.md)
 - [canvas hackers shinyhunters say their official domain was su](ch04/310-ai.md)
-- [private fintech has quietly become bigger than public fintec](ch03/097-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
-- [private fintech has quietly become bigger than public fintec](ch03/097-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
+- [private fintech has quietly become bigger than public fintec](ch03/098-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
+- [private fintech has quietly become bigger than public fintec](ch03/098-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-04-15.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)

@@ -71,7 +71,7 @@ AgentCore Runtime 用 Cognito Authorizer 校验 JWT
 ## 相关实体
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](ch04/503-agent.md)
 - [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/503-agent.md)
-- [Bedrock Agentcore Coding Agent Hosting](ch09/042-coding-agent.md)
+- [Bedrock Agentcore Coding Agent Hosting](ch09/043-coding-agent.md)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/503-agent.md)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch04/503-agent.md)
 

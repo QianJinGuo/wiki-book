@@ -35,7 +35,7 @@ Claude Managed Agents 官方发布的三大核心能力——dreaming、outcomes
 - [Claude Managed Agents 官方 Harness 平台指南](ch04/503-agent.md)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/503-agent.md)
 - [Anthropic Claude Managed Agents 平台正式发布](ch04/503-agent.md)
-- [claude managed agents](ch04/525-claude-managed-agents.md)
+- [claude managed agents](ch04/537-claude-managed-agents.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 

@@ -1,6 +1,6 @@
-# yidian tianxia context engineering agentic ai
+# Yidian Tianxia Context Engineering Agentic AI
 
-## Ch04.229 yidian tianxia context engineering agentic ai
+## Ch04.229 Yidian Tianxia Context Engineering Agentic AI
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/yidian-tianxia-context-engineering-agentic-ai.md`
 
@@ -68,7 +68,7 @@ Layer 5: 强制回滚机制 — 所有修改类工具必须附带降级回滚逻
 3. Token 如何**花在刀刃上**（L0/L1/L2 三级分层 + PreCompact 压缩续接）  
 
 ## 相关概念
-- [Factory Mission](ch01/877-factory-mission-multi-agent-architecture.md) — 同为 Agent Loop 架构，但 Mission 侧重多 Agent 编排，易点天下侧重企业级单 Agent 深度工程
+- [Factory Mission](ch01/888-factory-mission-multi-agent-architecture.md) — 同为 Agent Loop 架构，但 Mission 侧重多 Agent 编排，易点天下侧重企业级单 Agent 深度工程
 ---  
 *Last updated: 2026-05-08*  
 *评审：Value 8 × Confidence 7 = 56 | ★★★★ | STRONG PASS*  
@@ -76,7 +76,7 @@ Layer 5: 强制回滚机制 — 所有修改类工具必须附带降级回滚逻
 ## 相关实体
 - [Agentic AI for Subsurface Engineering Simulation (NVIDIA)](ch04/316-nvidia-agentic-ai-subsurface-engineering.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/192-tencent-vibe-coding-to-agentic-engineering-backend.md)
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](ch04/310-ai.md)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](ch04/150-ai.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 

@@ -1,6 +1,6 @@
-# stripe sessions 2026 ai agents
+# Stripe Sessions 2026 AI Agents
 
-## Ch04.309 stripe sessions 2026 ai agents
+## Ch04.309 Stripe Sessions 2026 AI Agents
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/stripe-sessions-2026-ai-agents.md`
 
@@ -41,15 +41,15 @@ Issuing for agents 允许企业为 Agent 程序化签发单次使用的虚拟卡
 Stripe Treasury 年底前将在 US、UK 支持 15 种货币存储，并扩展至 Australia、Canada，且 Privy 非托管钱包将支持 150+ 市场的稳定币。这为构建"全球运营 Agent"提供了多币种资金管理基础。建议在 Q3 前评估 Agent 的稳定币持有策略——尤其是涉及跨境外汇、自动换汇、跨境付款等场景时，Stripe Treasury + Privy 的组合可能是最简接入路径。
 
 ## 相关实体
-- [stripe sessions 2026 ai](ch04/364-stripe-sessions-2026-ai.md)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/310-ai.md)
+- [stripe sessions 2026 ai](ch04/366-stripe-sessions-2026-ai.md)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/150-ai.md)
 - [Inngest - AI in Production: The 2026 Benchmark Report](ch01/459-inngest-ai-in-production-the-2026-benchmark-report.md)
-- [How Superset built the IDE for AI agents on Vercel](ch04/310-ai.md)
-- [How to Detect AI Agents on Your Website | Full Guide](ch04/310-ai.md)
-- [AI-powered honeypots: Turning the tables on malicious AI agents](ch04/310-ai.md)
+- [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)
+- [How to Detect AI Agents on Your Website | Full Guide](ch04/150-ai.md)
+- [AI-powered honeypots: Turning the tables on malicious AI agents](ch04/150-ai.md)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [十年老技术开发的 ai agent 探索之路](ch04/310-ai.md)
-- [entrypoint hijacking](ch01/439-entrypoint-hijacking.md)
+- [十年老技术开发的 ai agent 探索之路](ch04/150-ai.md)
+- [entrypoint hijacking](ch01/143-entrypoint-hijacking.md)
 
 ---
 

@@ -1,6 +1,6 @@
-# aws quicksight dataset qa tara case
+# AWS Quicksight Dataset QA Tara Case
 
-## Ch11.155 aws quicksight dataset qa tara case
+## Ch11.155 AWS Quicksight Dataset QA Tara Case
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/aws-quicksight-dataset-qa-tara-case.md`
 
@@ -62,7 +62,7 @@ TARA 的本质突破在于**移除语义中间层**。传统 Topics 模式需要
 ## 相关实体
 - [Aws Quicksight Dataset Qa Natural Language](ch11/161-aws-quicksight-dataset-qa-natural-language.md)
 - [Mathematical Optimization Aws Innovation Center Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/mathematical-optimization-aws-innovation-center-enterprise.md)
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch04/310-ai.md)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch04/150-ai.md)
 - [Cisa Admin Leaked Aws Govcloud Keys On Github](ch11/119-cisa-admin-leaked-aws-govcloud-keys-on-github.md)
 - [Aws Agent Orchestration Workshop](ch04/503-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)

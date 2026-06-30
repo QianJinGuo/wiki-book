@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch04/310-ai.md)
-- [Openai Gpt Realtime Voice Models Qbitai](ch01/614-openai-gpt-realtime-voice-models-qbitai.md)
+- [Openai Gpt Realtime Voice Models Qbitai](ch01/620-openai-gpt-realtime-voice-models-qbitai.md)
 - [Aliyun Agentrun 2Line Integration](ch04/503-agent.md)
 - [Pi Mono Github](ch01/621-pi-mono-github.md)
 - [Prompt Debugger Compare Templates Winty](ch01/619-prompt-debugger-compare-templates-winty.md)

@@ -193,9 +193,9 @@ Anthropic 强调 description 是「最关键的信号」，实践中最有效的
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/245-skill.md)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/245-skill.md)
 
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](ch01/543-skills-anthropic-openai-comparison-frontend-design.md)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](ch01/546-skills-anthropic-openai-comparison-frontend-design.md)
 - [Claude Design 系统提示词 → web-design-engineer Skill](ch01/799-claude-design-skill.md)
-- [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](ch01/692-anthropic.md)
+- [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](ch01/707-anthropic.md)
 
 ---
 

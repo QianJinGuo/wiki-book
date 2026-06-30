@@ -190,7 +190,7 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 | 开源 | 部分 | 全部 artifacts 开源 ([GitHub recursive-org](https://github.com/recursive-org/first-steps-toward-automated-ai-research)) |
 | 部署 | Google 内部 | 通用研究基础设施 |
 
-参考 [AlphaEvolve Impact](ch04/375-alphaevolve-impact-deepmind.md) 和 [AlphaEvolve 一周年](ch04/310-ai.md) 了解 DeepMind 路线。
+参考 [AlphaEvolve Impact](ch04/378-alphaevolve-impact-deepmind.md) 和 [AlphaEvolve 一周年](ch04/150-ai.md) 了解 DeepMind 路线。
 
 ## 深度分析
 
@@ -216,7 +216,7 @@ Recursive 团队在三个 SOTA benchmark 上同时取得突破，且没有 DeepM
 
 ## 实践启示
 
-- **AI 进步已可被 AI 加速**：三个 SOTA 提升都不是"渐近修补"而是**数量级加速**（1.3× speedup、18% gap 缩小）。这与 [NanoGPT-Prime 递归自改进](ch04/310-ai.md) 路线同向。
+- **AI 进步已可被 AI 加速**：三个 SOTA 提升都不是"渐近修补"而是**数量级加速**（1.3× speedup、18% gap 缩小）。这与 [NanoGPT-Prime 递归自改进](ch04/150-ai.md) 路线同向。
 - **SOTA benchmark 的"可自动化研究性"成为评估标准**：清晰指标 + 低方差 + 抗 reward hack = 三大必要条件。设计新 benchmark 时应内建这些属性。
 - **开源 artifacts 降低自动化研究门槛**：递归团队直接公开 [GitHub recursive-org/first-steps-toward-automated-ai-research](https://github.com/recursive-org/first-steps-toward-automated-ai-research)，为社区提供可复现的 baseline。
 - **open-ended algorithms 从论文走向工程**：递归自改进 AI 不再是理论假设，而是被 SOTA benchmark 验证的工程现实。
@@ -224,7 +224,7 @@ Recursive 团队在三个 SOTA benchmark 上同时取得突破，且没有 DeepM
 ## 引用与延伸阅读
 - **原文存档** → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/recursive-automated-ai-research-first-steps-2026.md)
 - **GitHub**：https://github.com/recursive-org/first-steps-toward-automated-ai-research
-- 关联 entity：[Alphaevolve Impact Deepmind](ch04/375-alphaevolve-impact-deepmind.md)、[Agent Self Improvement Six Mechanisms](ch04/503-agent.md)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](ch04/310-ai.md)、[Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/245-skill.md)
+- 关联 entity：[Alphaevolve Impact Deepmind](ch04/378-alphaevolve-impact-deepmind.md)、[Agent Self Improvement Six Mechanisms](ch04/503-agent.md)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](ch04/150-ai.md)、[Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/245-skill.md)
 
 ---
 
@@ -363,7 +363,7 @@ Cantrill 强调"someone at the helm"的角色——有效控制复杂性需要�
 - [Claude Code Tool Design Evolution Anthropic](ch03/073-claude-code.md)
 - [Claude Code Memory Setup Token 71X楠楠自瑜](ch03/073-claude-code.md)
 - [Codex Goal Implementation Breakdown](ch09/041-codex-goal.md)
-- [Gaode Ai Companion Agent Architecture](ch04/310-ai.md)
+- [Gaode Ai Companion Agent Architecture](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-05-06-2201.md)
 
@@ -718,22 +718,22 @@ But this does not follow: being a popular language with a lot of training data o
 ### 同范式生态
 - [ICML 2026 NPR 文本原生并行推理](https://github.com/QianJinGuo/wiki/blob/main/entities/native-parallel-reasoner-icml2026.md) — **同源**: 都推动"推理宽度扩展", NPR 在文本领域开辟
 - [LASER ACL 2026 视觉推理](ch01/891-laser-acl2026-latent-superposition-visual-reasoning.md) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
-- [DeepSeek 视觉原语](ch09/119-deepseek-visual-primitives.md) — **对比**: DeepSeek 用"视觉原语"做视觉推理的另一种思路
+- [DeepSeek 视觉原语](ch09/124-deepseek-visual-primitives.md) — **对比**: DeepSeek 用"视觉原语"做视觉推理的另一种思路
 
 ### 视觉/多模态相关
 - [LLaVA-OneVision-2 全帧率 VLM](ch01/612-vlm.md) — VLM 架构
-- [a16z 视觉 AI 下一个前沿是代码](ch04/310-ai.md) — 视觉 AI 趋势
+- [a16z 视觉 AI 下一个前沿是代码](ch04/150-ai.md) — 视觉 AI 趋势
 
 ### 推理范式
 - [LLM 语言思维机制](ch01/890-llm.md) — 推理机制基础
-- [Layered Thinking 分层思维](ch04/310-ai.md) — 推理范式
+- [Layered Thinking 分层思维](ch04/150-ai.md) — 推理范式
 
 ## 相关实体
 
 - [Native Parallel Reasoner Icml2026](https://github.com/QianJinGuo/wiki/blob/main/entities/native-parallel-reasoner-icml2026.md)
 - [Laser Acl2026 Latent Superposition Visual Reasoning](ch01/891-laser-acl2026-latent-superposition-visual-reasoning.md)
 - [Llava Onevision 2 Full Frame Rate Vlm Glintlab](ch01/612-vlm.md)
-- [Deepseek Visual Primitives Thinking](ch09/119-deepseek-visual-primitives.md)
+- [Deepseek Visual Primitives Thinking](ch09/124-deepseek-visual-primitives.md)
 - [Llm Language Thinking Mechanisms](ch01/890-llm.md)- [count anything - 文本引导的通用目标计数框架](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2605-30846-count-anything-2026.md)
 - [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2606-03979-language-models-need-sleep.md)
 
@@ -815,8 +815,8 @@ Count Anything 的点集输出天然规避了上述三个问题。
 - 代码: https://github.com/Mengqi-Lei/count-anything
 ## 相关实体
 - [visual para-thinker: 视觉并行思考框架 (arxiv 2602.13310)](ch01/612-vlm.md)
-- [qwen-image-flash: beyond objective design — few-step distill](ch01/878-qwen-image-flash-beyond-objective-design-few-step-distill.md)
-- [对图像内容进行精确分析 — bedrock 多模态案例实践（汽车油表识别）](ch11/234-bedrock.md)
+- [qwen-image-flash: beyond objective design — few-step distill](ch01/889-qwen-image-flash-beyond-objective-design-few-step-distill.md)
+- [对图像内容进行精确分析 — bedrock 多模态案例实践（汽车油表识别）](ch11/236-bedrock.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---
@@ -1156,11 +1156,11 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 华为对超节点架构（共享内存池、超高带宽、低时延）的展望指向了推荐系统推理基础设施的未来方向。在超节点架构下，推荐推理的延迟将显著降低——这对高并发、低时延的在线场景（如信息流、广告、电商搜索）有直接业务价值。企业应该从现在开始关注超节点技术的发展动态，包括：①华为超节点产品的 roadmap 和合作方式；② 超节点与现有分布式架构（跨机多卡）的性能差距和迁移成本；③ 基于超节点的推理部署方案（昇腾 910B 向超节点升级的路径）。在模型训练侧已经投入昇腾生态的企业，超节点推理升级的技术连续性会更好。
 
 ## 相关实体
-- [Onereason Kuaishou Reasoning Recommender System](ch04/310-ai.md)
-- [Glm5 Scaling Pain](ch04/310-ai.md)
+- [Onereason Kuaishou Reasoning Recommender System](ch04/150-ai.md)
+- [Glm5 Scaling Pain](ch04/150-ai.md)
 - [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](ch04/503-agent.md)
-- [Noam Brown Ai Evaluation Reasoning Budget Performance Cost Curve](ch04/310-ai.md)
-- [Aws Sagemaker Azerbaijani Lm](ch04/310-ai.md)
+- [Noam Brown Ai Evaluation Reasoning Budget Performance Cost Curve](ch04/150-ai.md)
+- [Aws Sagemaker Azerbaijani Lm](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md)
 
@@ -1264,10 +1264,10 @@ Ethan 自己的轨迹：图像识别 → 神经网络压缩 → 自监督学习 
 [Yann LeCun JEPA 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md) + [Fine-Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md) + [NVIDIA Gamma 世界模型](ch04/503-agent.md)——Ethan 在 Cosmos + Grok Imagine 的工作正是 **世界模型 + 视频生成** 的工程化实例，"实时长时程视频生成"是 [JEPA](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md) 路线的 production 对应物。
 
 ### 与研究组织 / 算力
-[AI Native 研发组织设计](ch04/310-ai.md) + [Ai Native Rd Org Design Xiaobin](ch04/310-ai.md) 中都暗示了**算力 = 研究上限**的趋势。Ethan 的访谈是**第一手证据**——"GPU 富人也出来找算力"。
+[AI Native 研发组织设计](ch04/150-ai.md) + [Ai Native Rd Org Design Xiaobin](ch04/150-ai.md) 中都暗示了**算力 = 研究上限**的趋势。Ethan 的访谈是**第一手证据**——"GPU 富人也出来找算力"。
 
 ### 与 Agent 时代的人才竞争
-- [中文 AI 实验室 Nathan 洞察](ch04/310-ai.md)——Ethan 的"算力-人才飞轮"是这些上层判断的**微观机制**
+- [中文 AI 实验室 Nathan 洞察](ch04/150-ai.md)——Ethan 的"算力-人才飞轮"是这些上层判断的**微观机制**
 
 ### 与上下文工程
 [Agent Memory 架构](ch04/503-agent.md) + [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md) + [Context Management in Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)——Ethan 揭示 LLM **不知道自己的上下文长度还剩多少**（"上下文到达 80% 时自动压缩触发，但模型在工作时并不知道这件事"），并指出 **OpenClaw 已经让模型具备时间感知能力**——这与 [Context Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md) 中"让模型具备上下文自我感知"是同一方向。
@@ -1303,7 +1303,7 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 
 ### 对 AI 编程 Agent → Video Agent 的迁移者
 - **复用 Harness 编排能力**：视频 Agent 的核心是工具编排（扩散模型 + 传统剪辑 + 资产库）——可复用 [Agent Harness Engineering](ch04/503-agent.md) 的实践
-- **从"一次生成"到"生产级工作流"**：与 [画布 Agent 时代](ch04/310-ai.md) + [AI 视频工具第三阶段](ch04/310-ai.md) 的演化趋势一致
+- **从"一次生成"到"生产级工作流"**：与 [画布 Agent 时代](ch04/150-ai.md) + [AI 视频工具第三阶段](ch04/150-ai.md) 的演化趋势一致
 
 ### 对研究组织
 - **算力 = 人才吸盘**：这是 2026 H1 最硬的招聘福利——比薪资、股票、title 更决定顶尖研究员的去留
@@ -1319,8 +1319,8 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 ## 与现有 Wiki 的关系
 - 与 [Claude Code 动态工作流多 Agent 编排](ch03/073-claude-code.md) 互补：AI 编程的 Agent 化 → 视频生成的 Agent 化
 - 与 [Agent Harness Engineering Survey](ch04/503-agent.md) 互补：Harness 在视频 Agent 时代的能力复用
-- 与 [画布 Agent 时代](ch04/310-ai.md) + [AI 视频工具第三阶段](ch04/310-ai.md) 互补：第一手研究人员视角补全产品视角
-- 与 [Foundation Capital agent era 六洞察](ch04/174-foundation-capital-agent-era-six-insights.md) 互补：算力-人才飞轮的微观机制
+- 与 [画布 Agent 时代](ch04/150-ai.md) + [AI 视频工具第三阶段](ch04/150-ai.md) 互补：第一手研究人员视角补全产品视角
+- 与 [Foundation Capital agent era 六洞察](ch04/173-foundation-capital-agent-era-six-insights.md) 互补：算力-人才飞轮的微观机制
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
 
@@ -1431,9 +1431,9 @@ Mind Lab LoRA 持续学习 (mind-lab-lora-continual-learning-system) 与本文�
 由于 wiki 中尚未存在可交叉引用的相关 entity 文件 (mind-lab-lora-continual-learning-system 和 agent-memory-architecture 两条 related 路径暂无对应 page), 当前暂无有效的 关联阅读 链接。建议后续，当 `entities/mind-lab-lora-continual-learning-system.md` 或 `entities/agent-memory-architecture.md` 创建后，在本文 `related` 字段和本节同步添加双向链接。
 ## 相关实体
 - [Stochastic Parrot Language Models And Meaning](ch01/385-language-models-and-meaning.md)
-- [Reinforcing Recursive Language Models Alphaxiv](ch01/649-reinforcing-recursive-language-models-alphaxiv.md)
+- [Reinforcing Recursive Language Models Alphaxiv](ch01/658-reinforcing-recursive-language-models-alphaxiv.md)
 - [Alphaxiv Reinforcement Learning For Rlms](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaxiv-reinforcement-learning-for-rlms.md)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/179-cost-effective-deployment-of-vision-language-models-for-pet.md)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/181-cost-effective-deployment-of-vision-language-models-for-pet.md)
 - [Datacomp For Language Models](https://github.com/QianJinGuo/wiki/blob/main/entities/datacomp-for-language-models.md)
 
 ---
@@ -1718,9 +1718,9 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ## 相关实体
 
-- [mira + mpa：深度原理 ai scientist 递归自训练打造材料基座模型，40 项实验全面 sota](ch04/310-ai.md)
-- [some ideas for what comes next, may 2026 (interconnects)](ch01/922-some-ideas-for-what-comes-next-may-2026-interconnects.md)
-- [agi 之路，可能从一开始就走错了（腾讯研究院·王鹏）](ch01/204-agi.md)
+- [mira + mpa：深度原理 ai scientist 递归自训练打造材料基座模型，40 项实验全面 sota](ch04/150-ai.md)
+- [some ideas for what comes next, may 2026 (interconnects)](ch01/937-some-ideas-for-what-comes-next-may-2026-interconnects.md)
+- [agi 之路，可能从一开始就走错了（腾讯研究院·王鹏）](ch01/268-agi.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/arxiv-2606-12683-from-agi-to-asi.md)
 

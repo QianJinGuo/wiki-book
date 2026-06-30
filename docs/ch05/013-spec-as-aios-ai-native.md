@@ -253,9 +253,9 @@ AIOS 范式的核心突破在于：**将规范从"文档"重构为"操作系统"
 - **vs `harness-engineering-90-percent-pillars`**：原 entity 是 **Harness 4 根支柱概念**，本文是 **AIOS 在规范体系维度的具体落地**
 
 ## 相关实体
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](ch04/310-ai.md)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](ch04/150-ai.md)
 - [Business Agent Augmentation Layer Practitioner Methodology 20260606](ch04/503-agent.md)
-- [Ai Native Project Management Git](ch04/310-ai.md)
+- [Ai Native Project Management Git](ch04/150-ai.md)
 - [Claude Code Founder Harness 100 Lines](ch03/073-claude-code.md)
 - [Claude Code Skills Mcp Rules Source Analysis](ch07/006-claude-code-skills-mcp-rules-source-analysis.md)
 

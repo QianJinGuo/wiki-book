@@ -282,7 +282,7 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 - [Verifier-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
 - [SGLang](ch01/555-1-sglang-radixark-ai.md) — Qwen3.5 部署用到的推理引擎
 - [DeepAgent 架构演进](ch04/310-ai.md) — 初始 Harness 基于 DeepAgent SDK
-- [ByteDance TRAE Harness Engineering Guide](ch05/061-harness-engineering.md)
+- [ByteDance TRAE Harness Engineering Guide](ch01/530-trae-harness-engineering.md)
 - [复旦 AHE Agentic Harness Engineering](ch04/503-agent.md)
 - [Harness Engineering 七层架构](ch03/073-claude-code.md)
 - [Harness Component Expiry and Build-to-Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md) — Self-Harness 的"接受门"是这一思想的工程化实现

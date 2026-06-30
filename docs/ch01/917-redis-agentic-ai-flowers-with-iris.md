@@ -14,7 +14,7 @@
 - **百万 Agent 规模预言**：Trollope 预测企业 AI 将达"每千名员工百万 Agent"密度，电子表格每个单元格都可能是一个 Agent，传统数据平台（Oracle、Snowflake）无法支撑此规模
 ## 相关实体
 - [Aws Sagemaker Capacity Aware Inference Fallback](ch01/314-aws-sagemaker-capacity-aware-inference-fallback.md)
-- [Amazon Bedrock Model Inference Serverless Architecture Case Study](ch11/234-bedrock.md)
+- [Amazon Bedrock Model Inference Serverless Architecture Case Study](ch11/236-bedrock.md)
 - [Nvidia Agentic Systems Extreme Co Design](ch04/503-agent.md)
 - [Sensnova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md)
 - [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/528-deepseek-v4.md)

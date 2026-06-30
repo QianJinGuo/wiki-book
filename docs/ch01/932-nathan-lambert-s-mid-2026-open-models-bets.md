@@ -70,8 +70,8 @@ Nathan 的核心论点：
 
 - **同主题 deep entity**：
   - [How Far Behind Are Open Models 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/how-far-behind-are-open-models-2026.md) — 能力差距量化
-  - [Chinese Ai Lab Insights Nathan](ch04/310-ai.md) — Chinese labs 深度分析
-  - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch04/310-ai.md) — 训练后差距分析
+  - [Chinese Ai Lab Insights Nathan](ch04/150-ai.md) — Chinese labs 深度分析
+  - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch04/150-ai.md) — 训练后差距分析
 - **方法论文**：
   - Nathan 的 [open-models-in-perpetual-catch-up](https://www.interconnects.ai/p/open-models-in-perpetual-catch-up) — 能力差距基础
   - [How much does distillation really matter](https://www.interconnects.ai/p/how-much-does-distillation-really) — distillation 实证

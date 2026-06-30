@@ -21,8 +21,8 @@ Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-opus-47.md)
 
-- [突发Anthropic拿下马斯克Colossus 1全部算力Claude要放开用了](ch01/692-anthropic.md)
-- [anthropic 最新播客：如何打造下一代 claude](ch01/692-anthropic.md)
+- [突发Anthropic拿下马斯克Colossus 1全部算力Claude要放开用了](ch01/380-claude.md)
+- [anthropic 最新播客：如何打造下一代 claude](ch01/380-claude.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析

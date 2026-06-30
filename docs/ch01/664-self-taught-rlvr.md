@@ -51,7 +51,7 @@
 - [Mellum 2 Jetbrains Open 12B Moe Code Model](ch04/310-ai.md)
 - [Reading Todays Open Closed Performance Gap](https://github.com/QianJinGuo/wiki/blob/main/entities/reading-todays-open-closed-performance-gap.md)
 - [Baidu Wenxin Post Training Evolution](ch04/310-ai.md)
-- [Vllm V0 To V1 Correctness Before Corrections](ch01/890-llm.md)
+- [Vllm V0 To V1 Correctness Before Corrections](ch01/866-vllm.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/self-taught-rlvr-jd-cii-2026.md)
 

@@ -96,7 +96,7 @@ Agent-EvalKit 团队在 Strands Agents SDK + Bedrock 旅行研究 agent 上跑 1
 - [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](ch04/503-agent.md)
 - [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](ch04/503-agent.md)
 
-- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](ch04/310-ai.md)
+- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](ch04/150-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 ## 深度分析

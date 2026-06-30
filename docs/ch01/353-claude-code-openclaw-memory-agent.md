@@ -1,6 +1,6 @@
-# 读完 Claude Code 和 OpenClaw 的 memory 源码，我对\"Agent记忆需要向量数据库\"这件事产生了怀疑……
+# 读完 Claude Code 和 OpenClaw 的 memory 源码，我对 Agent 记忆需要向量数据库产生怀疑
 
-## Ch01.353 读完 Claude Code 和 OpenClaw 的 memory 源码，我对\"Agent记忆需要向量数据库\"这件事产生了怀疑……
+## Ch01.353 读完 Claude Code 和 OpenClaw 的 memory 源码，我对 Agent 记忆需要向量数据库产生怀疑
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md`
 
@@ -12,7 +12,7 @@
 * • **Managed** ： ` /etc/claude-code/CLAUDE.md ` ，系统管理员写的全局策略，所有用户都得遵守，企业场景下用来统一规范
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](ch01/379-claude-code-harness-deep-understanding.md)
+- [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md)
 - [Claude Code Openclaw Memory Vector Db Doubt](ch03/073-claude-code.md)
 - [Claude Code Openclaw Memory Comparison](ch03/073-claude-code.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/073-claude-code.md)

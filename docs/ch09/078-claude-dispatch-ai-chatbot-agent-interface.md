@@ -64,11 +64,11 @@ AI 能力一直领先于 AI 可及性。Chatbot 格式在主动对抗用户。�
 5. **为"AI失望"做结构性归因——先改接口再弃AI**：当团队反映AI"不好用"时，应首先识别是否是接口问题（输入方式、输出格式、交互流程），而非直接判定AI能力不足。往往是接口错了，而非AI
 
 ## 相关实体
-- [Gateway Architecture Openclaw Claude Hermes Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/gateway-architecture-openclaw-claude-hermes-comparison.md)
-- [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-system-design-three-way-comparison.md)
-- [Openclaw Agent Loop Design Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-agent-loop-design-patterns.md)
-- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-cowork-task-boundary-5-signals-6-stages.md)
-- [Guide Ai Agents Models Apps Harnesses Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/guide-ai-agents-models-apps-harnesses-mollick.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](ch01/380-claude.md)
+- [Skill System Design Three Way Comparison](ch04/245-skill.md)
+- [Openclaw Agent Loop Design Patterns](ch04/503-agent.md)
+- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](ch01/380-claude.md)
+- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-dispatch-and-the-power-of-interfaces.md)
 
