@@ -161,10 +161,6 @@
           '<label>Model</label>' +
           '<input class="ai-chat__form-input" id="ai-cfg-model" placeholder="deepseek-chat" value="' + (cfg.model || '') + '">' +
         '</div>' +
-        '<div class="ai-chat__form-actions">' +
-          '<button class="ai-chat__form-save" data-action="save-config">保存</button>' +
-          '<span class="ai-chat__form-status"></span>' +
-        '</div>' +
         '<div class="ai-chat__form-divider"></div>' +
         '<div class="ai-chat__form-section-label">语音合成 (TTS)</div>' +
         '<div class="ai-chat__form-row">' +
@@ -178,6 +174,10 @@
         '<div class="ai-chat__form-row">' +
           '<label>Model</label>' +
           '<input class="ai-chat__form-input" id="ai-cfg-tts-model" placeholder="mimo-v2.5-tts" value="' + (cfg.ttsModel || '') + '">' +
+        '</div>' +
+        '<div class="ai-chat__form-actions">' +
+          '<button class="ai-chat__form-save" data-action="save-config">保存</button>' +
+          '<span class="ai-chat__form-status"></span>' +
         '</div>' +
       '</div>' +
       '<div class="ai-chat__messages">' +
