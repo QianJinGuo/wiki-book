@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/semgrep-intercom-php-supply-chain.md`
 
-## Malicious Intercom PHP Package Mini-Shai-Hulud
+# Malicious Intercom PHP Package Mini-Shai-Hulud
 Semgrep security research: malicious Intercom PHP package spreading Mini-Shai-Hulud attack via Packagist/Composer. Attack chain, IOCs, code-level analysis.    
-**Source**: [raw article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/semgrep-intercom-php-security.md) | **Review**: value=7 confidence=8    
+**Source**: [raw article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/semgrep-intercom-php-security.md) | **Review**: value=7 confidence=8    
 
 ## 深度分析
 **PHP 供应链攻击的精细化演进**：    
@@ -25,16 +25,16 @@ PHP 生态的供应链攻击揭示了一个深层问题：Composer 的插件机�
 - **开发者教育**：定期培训开发者识别包名误植攻击（typosquatting）；强调使用完整的包 URL 而非简短包名
 
 ## 相关实体
-- [semgrep intercom php security](/ch12-092-semgrep-intercom-php-security/)
-- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](/ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha/)
-- [Semis Memo: Supply Chain Inheritance](/ch01-473-semis-memo-supply-chain-inheritance/)
-- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](/ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- [Amazon launches Supply Chain Services for businesses of all sizes](/ch11-210-amazon-launches-supply-chain-services-for-businesses-of-all/)
+- [semgrep intercom php security](../ch12-092-semgrep-intercom-php-security)
+- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha)
+- [Semis Memo: Supply Chain Inheritance](../ch01-473-semis-memo-supply-chain-inheritance)
+- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](../ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch11-210-amazon-launches-supply-chain-services-for-businesses-of-all)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 
-- [Semis Memo: Supply Chain Inheritance](/ch01-485-semis-memo-supply-chain-inheritance/)
-- MOC
+- [Semis Memo: Supply Chain Inheritance](../ch01-485-semis-memo-supply-chain-inheritance)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
 ---
 

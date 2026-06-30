@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/alphaxiv-reinforcement-learning-for-rlms.md`
 
-> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alphaxiv-reinforcement-learning-for-rlms.md)
+> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alphaxiv-reinforcement-learning-for-rlms.md)
 
 ## Summary
 7×8=56 - Article ingested from newsletter candidate pipeline.
 
 ## Notes
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alphaxiv-reinforcement-learning-for-rlms.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alphaxiv-reinforcement-learning-for-rlms.md)
 
 ## 深度分析
 **核心贡献：单策略统一训练 parent 和 child RLM**
@@ -41,11 +41,11 @@
 文章的 ablation 实验表明，简化 prompt 收敛略低且不稳定，但经过课程学习可能可以解决 。长远目标不是优化执行，而是让更大的 RLM-native 模型自主发现人类未曾想到的新策略来分解和解决长上下文难题。
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [Reinforcing Recursive Language Models | alphaXiv](/ch01-636-reinforcing-recursive-language-models-alphaxiv/)
-- [Language Models and Meaning](/ch01-373-language-models-and-meaning/)
-- [Language Models and Meaning](/ch01-373-language-models-and-meaning/)
+- [Reinforcing Recursive Language Models | alphaXiv](../ch01-636-reinforcing-recursive-language-models-alphaxiv)
+- [Language Models and Meaning](../ch01-373-language-models-and-meaning)
+- [Language Models and Meaning](../ch01-373-language-models-and-meaning)
 
 ---
 

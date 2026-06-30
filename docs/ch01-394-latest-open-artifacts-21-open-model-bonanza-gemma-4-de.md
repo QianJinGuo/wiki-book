@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md`
 
-## Latest open artifacts (#21): Open model bonanza! Gemma 4, DeepSeek V4, Kimi K2.6, MiMo 2.5, GLM-5.1 & others. On CAISI's V4 assessment.
+# Latest open artifacts (#21): Open model bonanza! Gemma 4, DeepSeek V4, Kimi K2.6, MiMo 2.5, GLM-5.1 & others. On CAISI's V4 assessment.
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md)
 
 > **Core insight**: CAISI V4 评估使用 IRT（Item Response Theory）方法论对开放模型进行 Elo 评分，但其结果受限于三个 benchmark 的异常值（CTF-Archive-Diamond、PortBench、ARC-AGI-2），且评估 harness（bash+for-loop）与模型实际训练环境（Claude Code/OpenCode）严重不匹配，导致能力对比系统性失真。Interconnects 两位作者对此持不同观点——Florian 认为开放前沿模型与闭源替代品的真实性能差距更小，Nathan 认为差距更大但基准测试同样不完美。
 
@@ -69,14 +69,14 @@ IRT 校准后的得分更能反映模型的真实能力，减少了"简单题目
 主流 benchmark 的区分度在下降，关注 LiveCodeBench、SWE-bench 等动态更新的评测，它们更能反映模型的真实能力。
 
 ## 相关实体
-- [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](/ch01-435-latest-open-artifacts-19-qwen-3-5-glm-5-minimax-m2-5-中国开源模型/)
-- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](/ch01-204-latest-open-artifacts-20-new-orgs-new-types-of-models/)
-- [Reading Todays Open Closed Performance Gap](/ch01-382-reading-today-s-open-closed-performance-gap/)
-- [How Open Model Ecosystems Compound](/ch01-651-how-open-model-ecosystems-compound/)
-- [Wetesteddeepseekv4Proandflashagainstclau](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
+- [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](../ch01-435-latest-open-artifacts-19-qwen-3-5-glm-5-minimax-m2-5-中国开源模型)
+- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](../ch01-204-latest-open-artifacts-20-new-orgs-new-types-of-models)
+- [Reading Todays Open Closed Performance Gap](../ch01-382-reading-today-s-open-closed-performance-gap)
+- [How Open Model Ecosystems Compound](../ch01-651-how-open-model-ecosystems-compound)
+- [Wetesteddeepseekv4Proandflashagainstclau](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
 
 ## 相关引用
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md)
 
 ---
 

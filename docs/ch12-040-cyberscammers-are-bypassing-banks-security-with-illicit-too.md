@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/cyberscammers-bypassing-bank-telegram.md`
 
-## Cyberscammers are bypassing banks' security with illicit tools sold on Telegram
+# Cyberscammers are bypassing banks' security with illicit tools sold on Telegram
 
 > **来源**: [原文链接](https://www.technologyreview.com/2026/04/15/1135898/cyberscammers-bypassing-bank-telegram)
 
@@ -43,13 +43,13 @@ Recent [analysis](https://www.icij.org/investigations/coin-laundry/cryptocurrenc
 - **相关实体**: 浏览器安全与隐私
 
 ## 相关实体
-- [Cyberscammers Are Bypassing Banks Security With Illicit Tool](/ch12-080-cyberscammers-are-bypassing-banks-security-with-illicit-too/)
-- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](/ch01-528-llmreaper-dom-based-ai-conversation-exfiltration/)
-- [Ai_Threat_Readiness_Framework](/ch12-002-a-framework-for-ai-threat-readiness/)
-- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
+- [Cyberscammers Are Bypassing Banks Security With Illicit Tool](../ch12-080-cyberscammers-are-bypassing-banks-security-with-illicit-too)
+- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](../ch01-528-llmreaper-dom-based-ai-conversation-exfiltration)
+- [Ai_Threat_Readiness_Framework](../ch12-002-a-framework-for-ai-threat-readiness)
+- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cyberscammers-bypassing-bank-telegram.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cyberscammers-bypassing-bank-telegram.md)
 
 ## 深度分析
 
@@ -85,7 +85,7 @@ Talsec CEO Sergiy Yakymchuk 介绍，早期仅需反编译银行 APP 即可完�
 
 - **稳定币交易监控**：Tether 已成为赃款洗白首选工具，金融机构应建立加密货币出金业务的专项监控规则，对短期内大额稳定币转换进行预警 
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cyberscammers-bypassing-bank-telegram.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cyberscammers-bypassing-bank-telegram.md)
 
 ---
 

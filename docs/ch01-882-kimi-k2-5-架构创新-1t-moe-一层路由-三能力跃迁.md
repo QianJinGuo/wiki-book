@@ -45,15 +45,15 @@ Kimi K2.5（Moonshot AI）是 K2 之后的开源 1T MoE 升级版本，核心架
 | 训练数据 | OCR + harness synthesis | 标准 + reasoning |
 | 开源范围 | 权重 + 数据 + harness | 权重 + 数据 |
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kimi-k2-5-architecture-innovation-moonshot-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kimi-k2-5-architecture-innovation-moonshot-2026.md)
 
 ## 相关实体
 
-- [Kimi K2.6 Agent Database — K2.6 的 TiDB Cloud 基础设施实践](/ch04-159-kimi-work-beta-通用-agent-一定来自模型公司/)
-- [Kimi AttnRes](/ch01-880-kimi-attention-residuals-attnres-prenorm-稀释问题与-block-折中方案/) — Kimi 的 attention 残差机制
-- [DeepSeek MoE](/ch01-673-deepseek-moe-并行策略与gpu通信优化/) — DeepSeek MoE 架构对比
-- openJiuwen Swarm — Kimi 关联的开源 harness
-- [MiMo Code](/ch09-007-小米-mimo-code-长程编程-agent-三大主线-计算-记忆-进化-与-claude-code-工程分化/) — 类似的全开源策略对比
+- [Kimi K2.6 Agent Database](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-k2-6-tidb-agent-database.md) — K2.6 的 TiDB Cloud 基础设施实践
+- [Kimi AttnRes](../ch01-880-kimi-attention-residuals-attnres-prenorm-稀释问题与-block-折中方案) — Kimi 的 attention 残差机制
+- [DeepSeek MoE](../ch01-673-deepseek-moe-并行策略与gpu通信优化) — DeepSeek MoE 架构对比
+- [openJiuwen Swarm](https://github.com/QianJinGuo/wiki/blob/main/entities/jiuwenswarm-coordination-engineering.md) — Kimi 关联的开源 harness
+- [MiMo Code](../ch09-007-小米-mimo-code-长程编程-agent-三大主线-计算-记忆-进化-与-claude-code-工程分化) — 类似的全开源策略对比
 
 ---
 

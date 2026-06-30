@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/pi-main-agent-engineering-17-dimensions.md`
 
-[Pi Main Agent Engineering 17 Dimensions](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pi-main-agent-engineering-17-dimensions.md)
+[Pi Main Agent Engineering 17 Dimensions](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pi-main-agent-engineering-17-dimensions.md)
 
 ## 核心设计原则：轻核心、重扩展
 pi 的设计哲学很简单：**核心引擎只做最小必要的事情，复杂能力通过 Extension API 交给插件。** 把核心做轻，稳定性才有保障；把扩展口留足，未来演进不需要重构。
@@ -145,14 +145,14 @@ if (width > 2000 || height > 2000) {
 pi 的扩展性验证了一个原则：**核心引擎只暴露最小必要接口，复杂能力通过插件实现**。如果你的 Agent 系统还没有 Extension API，应该优先实现 `beforeToolCall` 和 `afterToolCall` 两个钩子，而不是在核心引擎里内置 SubAgent、多模态、自动化 planner 等功能。这些功能作为插件实现后，核心引擎的稳定性有保障，插件出问题不影响主循环。
 
 ## 相关页面
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pi-main-agent-engineering-17-dimensions.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pi-main-agent-engineering-17-dimensions.md)
 
 ## 相关实体
-- [Ai 内容创作开始进入画布 Agent时代](/ch04-405-ai-内容创作开始进入画布-agent-时代/)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](/ch04-439-score-by-collisions-patch-by-panic/)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](/ch11-016-alibabacloud-cms-manage-skill-阿里云-cms-2-0-可观测接入的-ai-agent-sk/)
-- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](/ch01-677-anthropic/)
-- [Starfilm Ai Agent Ai Short Film Platform](/ch04-397-ai短漫剧的netflix来了-恒星ai推出全球首个影视级ai-agent-starfilm-打造ai短漫剧制作的-超/)
+- [Ai 内容创作开始进入画布 Agent时代](../ch04-405-ai-内容创作开始进入画布-agent-时代)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04-439-score-by-collisions-patch-by-panic)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](../ch11-016-alibabacloud-cms-manage-skill-阿里云-cms-2-0-可观测接入的-ai-agent-sk)
+- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](../ch01-677-anthropic)
+- [Starfilm Ai Agent Ai Short Film Platform](../ch04-397-ai短漫剧的netflix来了-恒星ai推出全球首个影视级ai-agent-starfilm-打造ai短漫剧制作的-超)
 
 ---
 

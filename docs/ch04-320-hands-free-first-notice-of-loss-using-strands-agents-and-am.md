@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md`
 
-## Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake
+# Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md)
 
 ## 摘要
 
@@ -64,7 +64,7 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 
 ### 人在环路的位置重置
 
-方案的核心论点不是移除人，而是重置人参与的位置：从"验证摄入完整性"（重复性、注意力密集型）转向"应用判断做决策"（专家价值所在）。这呼应了 Production Agent Engineering 的核心主张——生产级 Agent 系统的关键不在智能本身，而在将人的注意力从低价值任务重新分配到高价值决策。
+方案的核心论点不是移除人，而是重置人参与的位置：从"验证摄入完整性"（重复性、注意力密集型）转向"应用判断做决策"（专家价值所在）。这呼应了 [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) 的核心主张——生产级 Agent 系统的关键不在智能本身，而在将人的注意力从低价值任务重新分配到高价值决策。
 
 ### 合规性内建于执行轨迹
 
@@ -80,15 +80,15 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 
 ## 相关实体
 
-- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](/ch04-214-build-an-ai-powered-equipment-repair-assistant-using-amazon/) — AgentCore + Knowledge Base 的维修助手
-- [Building Web Search Enabled Agents With Strands And Exa](/ch04-373-building-web-search-enabled-agents-with-strands-and-exa/) — Strands SDK 搜索 Agent
-- [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](/ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客/) — Strands SDK 企业级方案
-- [Agentcore Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/) — AgentCore 工程化
-- [Aws Bedrock Agentcore Doris Mcp Server](/ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式/) — AgentCore + MCP Server
-- [Autonomous Agent Systems — 自主 Agent 系统](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
-- [Agent Deployment Strategy — Agent 部署策略](/ch04-023-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent/)
-- [Ai Safety Governance — AI 安全治理](/ch01-649-claude-fable-5-and-new-ai-safety-fables/)
-- [Aws Ai Services — AWS AI 服务](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
+- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](../ch04-214-build-an-ai-powered-equipment-repair-assistant-using-amazon) — AgentCore + Knowledge Base 的维修助手
+- [Building Web Search Enabled Agents With Strands And Exa](../ch04-373-building-web-search-enabled-agents-with-strands-and-exa) — Strands SDK 搜索 Agent
+- [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](../ch11-158-基于strands-sdk-构建的企业智能问数解决方案实践-亚马逊aws官方博客) — Strands SDK 企业级方案
+- [Agentcore Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施) — AgentCore 工程化
+- [Aws Bedrock Agentcore Doris Mcp Server](../ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式) — AgentCore + MCP Server
+- [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统
+- [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
+- [Ai Safety Governance](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-safety-governance.md) — AI 安全治理
+- [Aws Ai Services](https://github.com/QianJinGuo/wiki/blob/main/concepts/aws-ai-services.md) — AWS AI 服务
 
 ---
 

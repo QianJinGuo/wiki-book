@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 14.5KB | `entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md`
 
-[腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
+[腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
 
-## 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
+# 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
 ** 4 月 23 日，  ** 腾讯混元  Hy3 preview 语言模型发布并开源  。  这是一个快慢思考融合的混合专家模型，总参数  295B，激活参数 21B，最大支持 256K 上下文长度。  这  是  混元  重建后训练的第一个模型，也是混元迄今最智能的模型，在复杂推理、指令遵循、上下文学习、代码、智能体等能力  及推理性能上  实现了大幅的提升  。
 2026 年2月，腾讯混元重建了预训练和强化学习的基础设施  ，  以及模型追求实用性的三个原则  ：
 1、  能力体系化：  不推崇  "偏科"，因为即使是代码智能体  的单一应用，  也  涉及  推理、长文  、  指令  、对话、代码、工具等多种能力的  深度协同  。
@@ -67,14 +67,14 @@ Hy3 preview可以视为混元快速探索实用性大模型、解决真实世界
 2. **开源生态的战略价值**：开源成为大厂建立影响力、获取反馈、构建生态的重要手段，这将继续推动头部模型的开放进程，惠及整个 AI 开发者社区。
 3. **全链路优化的竞争壁垒**：腾讯混元"预训练基础设施→强化学习→推理框架"全链路协同优化的实践，显示出自研基础设施已成为头部玩家的核心竞争壁垒。
 ## 相关实体
-- [Agent框架Owl原理详解](/ch01-161-agent框架owl原理详解/)
-- [Agent Framework Owl Principles](/ch01-348-agent框架owl原理详解/)
-- [Agent Memory Architecture Past Influence Future Ruofei](/ch04-029-agent-memory-architecture-past-influence-future-ruofei/)
-- [Autobrowse Browserbase Persistent Skill](/ch07-034-autobrowse-browserbase-persistent-skill/)
-- [Lightseek Tokenspeed](/ch01-817-lightseek-tokenspeed/)
+- [Agent框架Owl原理详解](../ch01-161-agent框架owl原理详解)
+- [Agent Framework Owl Principles](../ch01-348-agent框架owl原理详解)
+- [Agent Memory Architecture Past Influence Future Ruofei](../ch04-029-agent-memory-architecture-past-influence-future-ruofei)
+- [Autobrowse Browserbase Persistent Skill](../ch07-034-autobrowse-browserbase-persistent-skill)
+- [Lightseek Tokenspeed](../ch01-817-lightseek-tokenspeed)
 
-- [Eva Bench Data 2 Voice Agent Evaluation](/ch04-303-how-loka-built-a-natural-low-latency-voice-agent-with-amazo/)
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation](/ch01-746-从手动到自动化-用agenteval构建agent评测体系/)
+- [Eva Bench Data 2 Voice Agent Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/eva-bench-data-2-voice-agent-evaluation.md)
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation](../ch01-746-从手动到自动化-用agenteval构建agent评测体系)
 
 ---
 

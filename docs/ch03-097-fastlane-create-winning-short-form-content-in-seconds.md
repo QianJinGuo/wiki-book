@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/fastlane-create-winning-short-form-content-in-seconds.md`
 
-## Fastlane | Create Winning Short-Form Content In Seconds
+# Fastlane | Create Winning Short-Form Content In Seconds
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastlane-create-winning-short-form-content-in-seconds.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fastlane-create-winning-short-form-content-in-seconds.md)
 
 ## 摘要
 
@@ -60,10 +60,10 @@ Fastlane 采用了教科书级的 PLG（Product-Led Growth）策略：
 
 ## 相关实体
 
-- [AI Video Tools](/ch04-062-ai视频工具悄悄走到了第三阶段/)
+- [AI Video Tools](../ch04-062-ai视频工具悄悄走到了第三阶段)
 - AI Video Generation
-- [Agent Harness](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
-- [MOC: Vision & Multimodal](/ch01-285-multimodal/)
+- Agent Harness
+- [MOC: Vision & Multimodal](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---
 

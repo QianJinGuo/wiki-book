@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/harness-engineering-第三代工程范式.md`
 
-## Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
+# Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
 💡 TL;DR: AI 模型天然具有三个工程缺陷（概率性输出/短时记忆/幻觉倾向）。Harness Engineering 是专门用来填补这三个坑的系统工程学。Model 决定 AI 有多聪明，Harness 决定 AI 有多可靠。
 
 ## 什么是 Harness Engineering？
@@ -12,13 +12,13 @@
 Agent = Model + Harness
 
 ## 相关实体
-- [Fudan Peking Ahe Agentic Harness Engineering](/ch04-220-fudan-peking-ahe-agentic-harness-engineering/)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](/ch02-prompt/)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
-- [Harness Engineering Systematic Explainer](/ch05-036-harness-engineering-systematic-explainer/)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04-220-fudan-peking-ahe-agentic-harness-engineering)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架)
+- [Harness Engineering Systematic Explainer](../ch05-036-harness-engineering-systematic-explainer)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-第三代工程范式.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-第三代工程范式.md)
 
 ## 深度分析
 

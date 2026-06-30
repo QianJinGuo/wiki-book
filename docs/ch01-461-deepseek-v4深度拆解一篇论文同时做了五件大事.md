@@ -5,7 +5,7 @@
 > 📊 Level ⭐⭐ | 7.6KB | `entities/deepseek-v4深度拆解一篇论文同时做了五件大事.md`
 
 > -> 原文存档
-## deepseek-v4深度拆解一篇论文同时做了五件大事
+# deepseek-v4深度拆解一篇论文同时做了五件大事
 source: 
 ## 摘录
 > DeepSeek-V4深度拆解：一篇论文同时做了五件大事
@@ -45,11 +45,11 @@ DeepSeek-V4选择在同一篇论文中同时发布多个相互依赖的技术贡
 ## 标签
 - source/wechat
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](/ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai/)
-- [ds4c deepseek v4 antirez](/ch01-419-ds4c-deepseek-v4-antirez/)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](/ch01-552-redis之父下场-给deepseek-v4单独造了一台推理引擎/)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai)
+- [ds4c deepseek v4 antirez](../ch01-419-ds4c-deepseek-v4-antirez)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](../ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
+- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](../ch01-552-redis之父下场-给deepseek-v4单独造了一台推理引擎)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
 
 ---
 

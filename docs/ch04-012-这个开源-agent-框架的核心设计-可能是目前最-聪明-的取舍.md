@@ -4,19 +4,19 @@
 
 > 📊 Level ⭐ | 6.3KB | `entities/pi-agent-framework-event-bus-design.md`
 
-## 这个开源 Agent 框架的核心设计，可能是目前最「聪明」的取舍
+# 这个开源 Agent 框架的核心设计，可能是目前最「聪明」的取舍
 > 原文：[这个开源 Agent 框架的核心设计，可能是目前最「聪明」的取舍](https://mp.weixin.qq.com/s/5F5kzLNBSzai9E2wl_CWVg)
 **Pi Agent（badlogic/pi-mono）** 的设计哲学：**核心代码保持极简，把所有"可定制性"的维度全部交给扩展系统。**
 > 不是简单的"我们支持插件"的声明。扩展系统不是事后打补丁式的钩子集合，而是从架构第一天起就作为一等公民存在的能力注入层。
 
 ## 相关实体
-- [Agentscope Java Harness Framework Enterprise Distributed](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
-- [Four Browser Automation Tools Comparison](/ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc/)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har)
+- [Four Browser Automation Tools Comparison](../ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pi-agent-framework-event-bus-design.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pi-agent-framework-event-bus-design.md)
 
 ## 深度分析
 

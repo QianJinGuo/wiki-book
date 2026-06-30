@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.3KB | `entities/world-knowledge-agent-self-evolution-tencent-hkustgz.md`
 
-## World Knowledge：Agent推理前先探索环境生成可迁移知识
+# World Knowledge：Agent推理前先探索环境生成可迁移知识
 
 论文：Training LLM Agents for Spontaneous, Reward-Free Self-Evolution via World Knowledge Exploration（Tencent + HKUST(GZ)，arXiv:2604.18131v1）
 
@@ -120,13 +120,13 @@ R(K) = Success(T_E | K) - Success(T_E | ∅)
 5. **将 World Knowledge 视为可版本化的共享资产**：静态 Markdown 格式天然支持 Git 版本化管理，后续可引人动态更新机制（定期 re-explore + diff 合并），使环境知识随网站结构演变保持新鲜度，而非一次性生成后僵化。
 
 ## 相关实体
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](/ch01-035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode/)
-- [Tencent Skill Writing Complete Playbook Jackjchou](/ch04-118-鹅厂-skill-写作完整-playbook-14-章节-end-to-end-实战-工程化评估-腾讯一线踩坑/)
-- [Agent Self Improvement Six Mechanisms](/ch04-047-agent-自我改进的六条路/)
-- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](/ch04-418-hermes-agent/)
-- [Deli Auto Research Skill Deepseek](/ch01-391-deliautoresearch-skill-deepseek陈德里的自主科研智能体框架/)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01-035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04-118-鹅厂-skill-写作完整-playbook-14-章节-end-to-end-实战-工程化评估-腾讯一线踩坑)
+- [Agent Self Improvement Six Mechanisms](../ch04-047-agent-自我改进的六条路)
+- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](../ch04-418-hermes-agent)
+- [Deli Auto Research Skill Deepseek](../ch01-391-deliautoresearch-skill-deepseek陈德里的自主科研智能体框架)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/world-knowledge-agent-self-evolution-tencent-hkustgz.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/world-knowledge-agent-self-evolution-tencent-hkustgz.md)
 
 ---
 

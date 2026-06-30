@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 8.8KB | `entities/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md`
 
-## Cisco Preps For A World Of AI Agent Coworkers, Frontier Model Threats
+# Cisco Preps For A World Of AI Agent Coworkers, Frontier Model Threats
 
 URL: https://www.nextplatform.com/ai/2026/06/03/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats/5250406
 
@@ -31,14 +31,14 @@ Agent 流量的模式不同于人类——需要独立的异常检测和安全�
 追踪前沿模型的能力评估和安全测试——了解最新威胁模型以更新防护策略。
 
 ## 相关实体
-- [Running An Ai Native Engineering Org](/ch01-045-running-an-ai-native-engineering-org/)
-- [World Knowledge Agent Self Evolution Tencent Hkustgz](/ch04-259-world-knowledge-agent推理前先探索环境生成可迁移知识/)
-- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](/ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f/)
-- [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](/ch02-prompt/)
+- [Running An Ai Native Engineering Org](../ch01-045-running-an-ai-native-engineering-org)
+- [World Knowledge Agent Self Evolution Tencent Hkustgz](../ch04-259-world-knowledge-agent推理前先探索环境生成可迁移知识)
+- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f)
+- [Alphaevolve Deepmind Discovery Agent](../ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md)
-- [olmo-eval: an evaluation workbench for the model development](/ch01-610-olmo-eval-an-evaluation-workbench-for-the-model-development/)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md)
+- [olmo-eval: an evaluation workbench for the model development](../ch01-610-olmo-eval-an-evaluation-workbench-for-the-model-development)
 
 ## 摘要
 

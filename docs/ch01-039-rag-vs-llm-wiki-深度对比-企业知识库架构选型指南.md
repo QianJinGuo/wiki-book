@@ -8,7 +8,7 @@
 - **价值**：9/10 — 系统性对比 RAG 五大痛点的根因分析 + 场景选型决策矩阵 + 趋势预判，对该 wiki 自身建设有直接参考价值
 - **置信度**：8/10 — 源自 Karpathy/微软 GraphRAD/公开工程案例，作者有独立判断
 - **乘积**：72 — strong ★★★★★
-- **策略对齐**：与 Karpathy LLM Wiki V2 互补（概念介绍 vs 系统对比）；本文 wiki 本身就是 LLM Wiki 实践案例
+- **策略对齐**：与 [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md) 互补（概念介绍 vs 系统对比）；本文 wiki 本身就是 LLM Wiki 实践案例
 
 ## 与现有 wiki 的关系
 - **互补**： 介绍 LLM Wiki V2 的 5 项核心升级，本文是 RAG vs LLM Wiki 的全面对抗性对比
@@ -79,15 +79,15 @@ LLM Wiki 的质量上限由 Schema 决定：Schema 设计差，Wiki 层会系统
 
 ### 5. LLM Wiki 投入产出比的关键是 Schema 前瞻设计
 Schema 设计的失误在后期修正成本极高（需要重新 Ingest 全量文档）。建议用"最小可用 Schema"起步（只定义核心实体类型和必须的关系），通过 3-5 个真实查询案例验证 Schema 充分性后再扩展。Karpathy 的 LLM Wiki V2 的 5 项升级中，Schema 优化是核心。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rag-vs-llm-wiki-enterprise-knowledge-base.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rag-vs-llm-wiki-enterprise-knowledge-base.md)
 
 ## 相关实体
-- [5 Essential Multimodal RAG Capabilities for AI-Ready Knowledge Systems (NVIDIA)](/ch01-272-multimodal/)
-- 向量库·知识图谱·本体论：RAG知识系统演进
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)
-- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](/ch04-414-ai实践-基于-spring-ai-从0到1构建-ai-agent/)
-- [knowledge base layer architecture: from rag to agent-native](/ch04-028-高德-ai-native-生产线-第-3-期-7x24-self-healing-pipeline-agent-自/)
-- MOC
+- [5 Essential Multimodal RAG Capabilities for AI-Ready Knowledge Systems (NVIDIA)](../ch01-272-multimodal)
+- [向量库·知识图谱·本体论：RAG知识系统演进](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-vector-knowledge-graph-ontology.md)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化](../ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti)
+- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](https://github.com/QianJinGuo/wiki/blob/main/entities/google-okf-open-knowledge-format-v0-1-2026.md)
+- [knowledge base layer architecture: from rag to agent-native](https://github.com/QianJinGuo/wiki/blob/main/entities/pyramid-kb-knowledge-context-layer-banya.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
 
 ---
 

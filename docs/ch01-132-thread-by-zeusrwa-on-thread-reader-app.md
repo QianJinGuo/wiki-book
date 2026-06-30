@@ -41,9 +41,9 @@
 
 ## 相关实体
 - 
-- [Thread Openai Devs](/ch01-766-thread-by-openaidevs-on-thread-reader-app-thread-reader-a/)
-- [Thread Patrickogrady](/ch03-010-thread-by-_patrickogrady-on-thread-reader-app/)
-- [Thread 0Xcheeezzyyyy](/ch01-748-thread-by-0xcheeezzyyyy-on-thread-reader-app-thread-reade/)
+- [Thread Openai Devs](../ch01-766-thread-by-openaidevs-on-thread-reader-app-thread-reader-a)
+- [Thread Patrickogrady](../ch03-010-thread-by-_patrickogrady-on-thread-reader-app)
+- [Thread 0Xcheeezzyyyy](../ch01-748-thread-by-0xcheeezzyyyy-on-thread-reader-app-thread-reade)
 
 ---
 

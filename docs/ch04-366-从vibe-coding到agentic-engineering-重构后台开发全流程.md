@@ -4,16 +4,16 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/从vibe-coding到agentic-engineering重构后台开发全流程.md`
 
-## 从Vibe Coding到Agentic Engineering：重构后台开发全流程
+# 从Vibe Coding到Agentic Engineering：重构后台开发全流程
 
 ## 相关实体
-- [Tencent Vibe Coding To Agentic Engineering Backend](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
-- [Karpathy Vibe Coding To Agentic Engineering](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](/ch01-247-vibe-coding-and-agentic-engineering-convergence-simon-willi/)
-- [Karpathy Vibe Coding Agentic Engineering V4](/ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Fudan Peking Ahe Agentic Harness Engineering](/ch04-220-fudan-peking-ahe-agentic-harness-engineering/)
+- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend)
+- [Karpathy Vibe Coding To Agentic Engineering](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch01-247-vibe-coding-and-agentic-engineering-convergence-simon-willi)
+- [Karpathy Vibe Coding Agentic Engineering V4](../ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04-220-fudan-peking-ahe-agentic-harness-engineering)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从vibe-coding到agentic-engineering重构后台开发全流程.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从vibe-coding到agentic-engineering重构后台开发全流程.md)
 
 ## 深度分析
 

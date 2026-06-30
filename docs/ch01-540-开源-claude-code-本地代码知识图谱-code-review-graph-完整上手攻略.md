@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/code-review-graph-upper-intermediate-guide-20260513.md`
 
-## 开源 Claude Code 本地代码知识图谱：code-review-graph 完整上手攻略
+# 开源 Claude Code 本地代码知识图谱：code-review-graph 完整上手攻略
 你有没有遇到过这种情况：在 Claude Code 里问一句「这个认证流程是怎么跑的？」、「我改这个类会影响哪里？」或者「帮我 review 一下最近的改动」，它就开始一轮又一轮地搜索、读取、拼上下文。
 在小项目里，这种方式问题不大。文件数量少，调用链简单，AI 临时读几轮也能凑出答案。但只要项目变成 monorepo，或者后端服务开始拆成多个模块，AI 每次重新理解上下文的成本就会变得非常明显。
 时间一长，你会发现一个很现实的问题：AI 对代码库的理解，很难持续积累。
 本文要讲的，就是如何用 code-review-graph 给本地代码仓库建立一张知识图谱，再通过 MCP 接入 Claude Code。这样 Claude Code 不再只会反复读文件，而是能像查地图一样查询代码结构、依赖关系、核心节点和影响范围。
 
 ## 相关实体
-- [Code Review Graph](/ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token/)
-- [Claude Code Self Repair Hooks Memory Config](/ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
-- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
-- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
-- [Claude Code Agent View Huashu](/ch09-001-claude-code-agent-view/)
+- [Code Review Graph](../ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token)
+- [Claude Code Self Repair Hooks Memory Config](../ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码)
+- [Claude Code Hackathon Winners 2026](../ch01-772-claude-code-hackathon-winners-2026)
+- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding)
+- [Claude Code Agent View Huashu](../ch09-001-claude-code-agent-view)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/code-review-graph-upper-intermediate-guide-20260513.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-review-graph-upper-intermediate-guide-20260513.md)
 
 ## 深度分析
 

@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/from-prompt-to-harness-claude-official.md`
 
-## 从 Prompt 到 Harness：Claude 官方学习资料
+# 从 Prompt 到 Harness：Claude 官方学习资料
 > 作者：张嘎（公众号「有戏圈」），2026-05-07。
 > 对 Learn Harness Engineering 课程 + OpenAI/Anthropic 官方资料的实践者解读。
 > 核心判断：很多 AI 编码翻车不是模型能力不够，而是仓库没有给 Agent 一套能可靠工作的系统。
 1. **指令子系统** — 告诉 Agent 项目是什么、技术栈、不可违反的规则
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
-- [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析/)
-- [Claude Opus 47](/ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus/)
-- [Openclaw Prompt Context Harness](/ch04-239-agent-harness-a3-subagent-7-prompt/)
-- [Anthropic Managed Agents Scaling](/ch01-677-anthropic/)
+- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding)
+- [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析)
+- [Claude Opus 47](../ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus)
+- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
+- [Anthropic Managed Agents Scaling](../ch01-677-anthropic)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-prompt-to-harness-claude-official.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-prompt-to-harness-claude-official.md)
 
 ## 深度分析
 
@@ -43,7 +43,7 @@
 
 **每次会话结束执行"清洁状态五件事"**：构建通过、测试通过、进度更新、临时垃圾清掉、下一个会话能直接启动。这确保了下一次 Agent 接入时系统处于确定性的干净状态 。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-prompt-to-harness-claude-official.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-prompt-to-harness-claude-official.md)
 
 ---
 

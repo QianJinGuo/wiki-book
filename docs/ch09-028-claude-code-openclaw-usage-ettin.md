@@ -50,17 +50,17 @@ Ettin Reranker 提供了一种介于纯 LLM 路由和传统向量检索之间的
 ```python
 from sentence_transformers import SentenceTransformer, CrossEncoder
 
-## 阶段1：快速 embedding 检索（亚毫秒级）
+# 阶段1：快速 embedding 检索（亚毫秒级）
 embedder = SentenceTransformer("sentence-transformers/static-retrieval-mrl-en-v1")
 reranker = CrossEncoder("cross-encoder/ettin-reranker-68m-v1")
 
-## 编码 + 检索 top-100
+# 编码 + 检索 top-100
 query_emb = embedder.encode_query(query, convert_to_tensor=True)
 corpus_emb = embedder.encode_document(corpus, convert_to_tensor=True)
 scores = embedder.similarity(query_emb, corpus_emb)[0]
 top_k_idx = scores.topk(min(100, len(corpus))).indices.tolist()
 
-## 阶段2：精排序
+# 阶段2：精排序
 top_k_docs = [corpus[i] for i in top_k_idx]
 ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 ```
@@ -115,12 +115,12 @@ OpenClaw 当前使用 sqlite-vec + BM25 双路检索 ，可升级为 **三路检
 
 ```python
 
-## 阶段1：双路并行初筛
+# 阶段1：双路并行初筛
 vec_results = vector_search(query, top_k=50)  # sqlite-vec
 bm25_results = bm25_search(query, top_k=50)   # FTS5
 candidates = fusion_results(vec_results, bm25_results, top_k=50)
 
-## 阶段2：Ettin 精排
+# 阶段2：Ettin 精排
 reranked = reranker.rank(query, candidates, top_k=10, return_documents=True)
 ```
 
@@ -174,14 +174,14 @@ scores = model.predict([("query", "document")])
 Ettin Reranker Family 的 **六档参数量 + SoTA 性能 + 长上下文 + Flash Attention 2** 组合，为 Agent 记忆系统的检索升级提供了实用选择。17M 到 1B 的灵活规格让不同场景（在线延迟敏感 vs 离线精度优先）都能找到合适平衡点。
 
 ## 相关实体
-- [Claude Code Openclaw Memory Vector Db Doubt](/ch01-681-claude-code-memory-setup-obsidian-graphify/)
-- [Claude Code Openclaw Memory Comparison](/ch01-681-claude-code-memory-setup-obsidian-graphify/)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
-- [Skill System Design Three Way Comparison](/ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
-- [Openclaw Agent Loop Design Patterns](/ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式/)
+- [Claude Code Openclaw Memory Vector Db Doubt](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-vector-db-doubt.md)
+- [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧)
+- [Skill System Design Three Way Comparison](../ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age)
+- [Openclaw Agent Loop Design Patterns](../ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式)
 
-→ [原文存档：Ettin Reranker Family](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ettin-reranker-family.md)
-→ [原文存档：Claude Code vs OpenClaw 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-openclaw-memory-comparison.md)
+→ [原文存档：Ettin Reranker Family](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ettin-reranker-family.md)
+→ [原文存档：Claude Code vs OpenClaw 记忆系统对比](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-openclaw-memory-comparison.md)
 
 ## 深度分析
 
@@ -229,11 +229,11 @@ Claude Code 是延迟敏感型场景——每次对话都需要检索，32M 的 
 
 ## 相关实体
 
-- [`Ettin Reranker Family` — 模型详情](/ch01-374-introducing-the-ettin-reranker-family/)
-- [`Claude Code vs OpenClaw 记忆系统对比` — 两者检索机制原状](/ch03-002-obsidian-claude-code-集成指南/)
-- [`向量数据库必要性反思` — LLM 路由 vs 向量检索哲学讨论](/ch01-039-rag-vs-llm-wiki-深度对比-企业知识库架构选型指南/)
-- [`Agent Memory 架构本质` — 记忆系统设计模式](/ch04-088-agent-memory/)
-- OpenClaw 架构解析 — OpenClaw 整体架构
+- `Ettin Reranker Family` — 模型详情
+- `Claude Code vs OpenClaw 记忆系统对比` — 两者检索机制原状
+- `向量数据库必要性反思` — LLM 路由 vs 向量检索哲学讨论
+- `Agent Memory 架构本质` — 记忆系统设计模式
+- [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — OpenClaw 整体架构
 
 ---
 

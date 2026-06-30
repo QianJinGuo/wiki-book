@@ -604,20 +604,20 @@ class RecoveryManager:
 5. **自适应简化机制**：随着模型改进，某些干预措施仍是必需的，而另一些变成成本、延迟或运营开销。未来 Harness 需要在联合质量、延迟、成本和风险约束下进行自我优化和简化
 
 ## 相关实体
-- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
-- [Agent Harness Architecture](/ch04-207-agent-harness-架构/)
-- [Agentscope Java Harness Framework Enterprise Distributed](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
-- [Agentic Ai System Architecture Harness Skill Mcp](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
-- [Harness Production Agent Engineering Deficit](/ch04-127-harness如何支撑agent在生产环境稳定运行/)
+- [Code As Agent Harness Survey](../ch09-046-code-as-agent-harness-综述)
+- [Agent Harness Architecture](../ch04-207-agent-harness-架构)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真)
+- [Harness Production Agent Engineering Deficit](../ch04-127-harness如何支撑agent在生产环境稳定运行)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-harness-architecture-design-production-guide.md)（主源）
-→ [Harness Engineering 综合性指南](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-comprehensive-guide-conardli.md)
-→ [Claude Code 12 个设计模式](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-agentic-harness-design-patterns.md)
-→ [ETCLOVG Survey (CMU 2026)](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-harness-engineering-survey-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-architecture-design-production-guide.md)（主源）
+→ [Harness Engineering 综合性指南](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-comprehensive-guide-conardli.md)
+→ [Claude Code 12 个设计模式](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-agentic-harness-design-patterns.md)
+→ [ETCLOVG Survey (CMU 2026)](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-engineering-survey-2026.md)
 
-- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
-- [k-dense — the model is no longer the bottleneck](/ch04-154-k-dense-the-model-is-no-longer-the-bottleneck/)
-- MOC
+- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm)
+- [k-dense — the model is no longer the bottleneck](../ch04-154-k-dense-the-model-is-no-longer-the-bottleneck)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---
 

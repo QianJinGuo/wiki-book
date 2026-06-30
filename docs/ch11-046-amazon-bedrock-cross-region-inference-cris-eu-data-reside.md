@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.2KB | `entities/amazon-bedrock-cross-region-inference-cris-eu-gdpr.md`
 
-## Amazon Bedrock Cross-Region Inference (CRIS): EU Data Residency and GDPR Compliance
+# Amazon Bedrock Cross-Region Inference (CRIS): EU Data Residency and GDPR Compliance
 
 > 本文综合提炼自 AWS 关于 Amazon Bedrock 跨区域推理（CRIS）的欧洲合规指南。核心：**Inference Profile** 抽象 region 路由，**Global CRIS** 跨所有商业 region（最高吞吐/折扣价）vs **EU Geo CRIS** 严格约束在 EU region 内（满足 GDPR 数据驻留）。**安全性**：AWS backbone 加密传输、IAM 显式选择 CRIS profile、CloudTrail + Model Invocation Logging 审计。
 
@@ -92,7 +92,7 @@ GDPR 重要：**数据处理活动记录**
 import boto3
 bedrock_runtime = boto3.client("bedrock-runtime", region_name="eu-south-1")  # Source: Milan
 
-## EU CRIS — Nova Lite 只在 EU 区域内处理
+# EU CRIS — Nova Lite 只在 EU 区域内处理
 model_id = "eu.amazon.nova-2-lite-v1:0"
 response = bedrock_runtime.converse(
     modelId=model_id,
@@ -100,7 +100,7 @@ response = bedrock_runtime.converse(
     additionalModelRequestFields={...}
 )
 
-## Global CRIS — Nova Lite 可路由到任何 AWS 商业 region
+# Global CRIS — Nova Lite 可路由到任何 AWS 商业 region
 model_id = "global.amazon.nova-2-lite-v1:0"
 response = bedrock_runtime.converse(
     modelId=model_id,
@@ -180,11 +180,11 @@ CloudWatch / CloudTrail / Model Invocation Logging 均**只在 source region 记
 - [Model Invocation Logging](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html)
 
 ## 相关实体
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](/ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
-- [Openai Models Codex Amazon Bedrock Ga](/ch09-048-openai-models-and-codex-on-amazon-bedrock-are-now-generally/)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](/ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz/)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](/ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南/)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a)
+- [Openai Models Codex Amazon Bedrock Ga](../ch09-048-openai-models-and-codex-on-amazon-bedrock-are-now-generally)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore)
 
 ---
 

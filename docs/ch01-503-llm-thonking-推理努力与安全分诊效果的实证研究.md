@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/llm-thonking-reasoning-effort-security-triage.md`
 
-## LLM Thonking：推理努力与安全分诊效果的实证研究
+# LLM Thonking：推理努力与安全分诊效果的实证研究
 
 ## 摘要
 
@@ -75,12 +75,12 @@ Parsiya 延续 Semgrep 的 Mythos 实验，用 26 种 Claude 4.6/4.7/4.8 和 GPT
 
 ## 相关实体
 
-- [gzip 作为语言模型](/ch01-498-gzip-作为语言模型-压缩-预测等价性的信息论探索/) — 压缩视角下的推理成本分析
-- [Anthropic LLM ATT&CK 导航](/ch01-677-anthropic/) — LLM 在安全领域的另一应用
-- [LLM RL 算法综述](/ch01-710-2026-年面向-llm-的-rl-方法总结-从-ppo-到-dpo-到-grpo-再到多智能体-rl/) — 推理努力与 RL 训练的关系
-- 腾讯 Token 经济学 — Token 成本优化的另一视角
+- [gzip 作为语言模型](../ch01-498-gzip-作为语言模型-压缩-预测等价性的信息论探索) — 压缩视角下的推理成本分析
+- [Anthropic LLM ATT&CK 导航](../ch01-677-anthropic) — LLM 在安全领域的另一应用
+- [LLM RL 算法综述](../ch01-710-2026-年面向-llm-的-rl-方法总结-从-ppo-到-dpo-到-grpo-再到多智能体-rl) — 推理努力与 RL 训练的关系
+- [腾讯 Token 经济学](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-token-economics-ai-productivity.md) — Token 成本优化的另一视角
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-thonking-reasoning-effort-security-triage.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-thonking-reasoning-effort-security-triage.md)
 
 ---
 

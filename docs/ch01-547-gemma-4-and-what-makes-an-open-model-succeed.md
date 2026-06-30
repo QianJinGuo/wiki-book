@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/gemma-4-and-what-makes-an-open-model-succeed.md`
 
-## Gemma 4 and what makes an open model succeed
+# Gemma 4 and what makes an open model succeed
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemma-4-and-what-makes-an-open-model-succeed.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemma-4-and-what-makes-an-open-model-succeed.md)
 
 ## 摘要
 
@@ -86,10 +86,10 @@ GPT-OSS 从发布时的混乱到最终的巨大成功，加上 Reflection、Arce
 
 ## 相关实体
 
-- [DeepSeek Code Harness](/ch09-068-deepseek-code-harness/)
-- [OpenClaw 完全指南](/ch04-199-openclaw-完全指南/)
-- [From AGI to ASI](/ch11-138-from-silos-to-service-topology-why-netflix-built-a-real-tim/)
-- MOC
+- [DeepSeek Code Harness](../ch09-068-deepseek-code-harness)
+- [OpenClaw 完全指南](../ch04-199-openclaw-完全指南)
+- [From AGI to ASI](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2606-12683-from-agi-to-asi.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---
 

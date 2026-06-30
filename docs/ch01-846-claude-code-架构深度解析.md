@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 33.2KB | `entities/claude-code-deep-architecture-analysis.md`
 
-## Claude Code 架构深度解析
+# Claude Code 架构深度解析
 > **来源**: (技术分析)
 > **URL**: https://mp.weixin.qq.com/s/bMjXlD-OcnFW-wuN1yW8FA
 > **SHA256**: eabd5a01b9faaffa55299117dd40fbe5104969a63f1ecb277138fe1a4e3d76b5
@@ -398,28 +398,28 @@ Claude Code 的架构设计折射出一个核心洞察：**Agent 编程工具的
 **5. 预算管理的四维独立控制是生产级 Agent 的必备能力。** Claude Code 的 Token 预算、成本预算、工具结果大小限制、轮次预算四个维度独立配置，与 Codex（仅轮次预算）、OpenCode（无预算控制）、Gemini-CLI（轮次+截断）形成鲜明对比。工具结果超限时存磁盘并替换为路径引用这一设计尤其值得注意：它用文件系统作为溢出存储，将 Agent 的有效上下文从固定内存约束扩展到磁盘容量，是"Memory beyond RAM"思路的工程实践。
 
 ## 相关概念
-- Claude Code Source Leak Lifecycle — Claude Code 源码级生命周期解析（8步 queryLoop / CLAUDE.md 四级加载）
-- Claude Code Tool Design Evolution — Claude Code 工具设计演进（AskUserQuestion / TodoWrite→Task）
-- [Claude Code 源码核心机制详解](/ch01-162-claude-code-源码核心机制详解/)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
-- [Claude Code 架构解析](/ch01-571-claude-code-架构解析/)
-- Agent Memory System Design
-- KAIROS — Claude Code 常驻协作范式
-- [Anthropic Prompt Caching 深度解析](/ch01-677-anthropic/) — Anthropic 官方博客关于 Prompt Caching 架构经验的深度分析
-- [Cat Wu PM 访谈](/ch01-677-anthropic/) — Claude Code/Cowork 产品负责人关于产品节奏、100%自动化原则、模型进化对 Harness 影响的一手访谈
-- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-deep-architecture-analysis.md)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](/ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层/)
+- [Claude Code Source Leak Lifecycle](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-source-leak-lifecycle.md) — Claude Code 源码级生命周期解析（8步 queryLoop / CLAUDE.md 四级加载）
+- [Claude Code Tool Design Evolution](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md) — Claude Code 工具设计演进（AskUserQuestion / TodoWrite→Task）
+- [Claude Code 源码核心机制详解](../ch01-162-claude-code-源码核心机制详解)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践)
+- [Claude Code 架构解析](../ch01-571-claude-code-架构解析)
+- [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
+- [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
+- [Anthropic Prompt Caching 深度解析](../ch01-677-anthropic) — Anthropic 官方博客关于 Prompt Caching 架构经验的深度分析
+- [Cat Wu PM 访谈](../ch01-677-anthropic) — Claude Code/Cowork 产品负责人关于产品节奏、100%自动化原则、模型进化对 Harness 影响的一手访谈
+- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-deep-architecture-analysis.md)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层)
 
 ## Related
-- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
 
-- [Code as Agent Harness 综述](/ch09-046-code-as-agent-harness-综述/)
-- [harness-engineering-systematic-explainer](/ch05-036-harness-engineering-systematic-explainer/)
-- [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice/)
+- [Code as Agent Harness 综述](../ch09-046-code-as-agent-harness-综述)
+- [harness-engineering-systematic-explainer](../ch05-036-harness-engineering-systematic-explainer)
+- [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice)
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---
 

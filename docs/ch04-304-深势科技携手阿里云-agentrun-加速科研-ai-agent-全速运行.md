@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/深势科技携手阿里云-agentrun加速科研-ai-agent-全速运行.md`
 
-## 深势科技携手阿里云 AgentRun，加速科研 AI Agent 全速运行
+# 深势科技携手阿里云 AgentRun，加速科研 AI Agent 全速运行
 "AI  和智能体时代的到来让科学研究底层逻辑发生新的变化，也要求底层基础设施向  AI  原生新范式升级。阿里云  AgentRun  将  Serverless  的极致弹性、零运维和按量付费的特性与  AI  原生应用场景深度融合，让  科研人员将精力回归到定义问题和决策创新的科学本质中，  加速  AI4S Agent  业务的发展。"
 "  构建  AI  科学家生态，工具链的标准化是第一步。依托阿里云  AgentRun  与云原生  AI  网关等产品，让  MCP  工具的构建从重度开发转向极简配置，我们仅用两天时间就实现了  5  万多个科研工具在  MCP  市场的上线，加速了  AI  科学家生态发展。  "
 伴随  人工智能与科学计算的深度融合，  AI for Science  正在经历一场深刻变革。
 作为全球  AI4S  行业的开拓者和引领者，  2018  年起，深势科技就开始与阿里云合作推动科学计算上云，突破传统算力瓶颈，成功实现大规模科学计算推理的云端化。今天，  AI Agent  的爆发正在加速新格局的形成，深势科技认为，  AI  正在从最初的辅助型工具，演变为驱动科研的  "  原生范式  "  。为了承载这一愿景，深势科技打造了集算力、模型、知识于一体的科研工作入口玻尔（  Bohrium  ）科研空间站，为全球  2000  万科学家提供数智赋能。
 
 ## 相关实体
-- [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](/ch04-003-agentrun/)
-- [Aliyun Agentrun 5Min Quickstart](/ch04-003-agentrun/)
-- [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-418-hermes-agent/)
-- [Ath Agent Trust Handshake Protocol](/ch04-500-为了让agent更安全的工作-有多少人操碎了心/)
+- [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](../ch04-003-agentrun)
+- [Aliyun Agentrun 5Min Quickstart](../ch04-003-agentrun)
+- [Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-418-hermes-agent)
+- [Ath Agent Trust Handshake Protocol](../ch04-500-为了让agent更安全的工作-有多少人操碎了心)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/深势科技携手阿里云-agentrun加速科研-ai-agent-全速运行.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/深势科技携手阿里云-agentrun加速科研-ai-agent-全速运行.md)
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.5KB | `entities/low-code-api-integration.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/low-code-api-integration.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/low-code-api-integration.md)
 
 ## 核心摘要
 API Integration Actions 是 Okta Integration Network (OIN) 的一项新功能，允许 ISV（独立软件供应商）使用 Okta Workflows（低代码构建器）构建 Provisioning、Entitlements 和 Universal Logout 应用。无需构建和维护 SCIM 服务器，直接将现有 API 映射到 Okta 动作契约，大幅降低企业身份集成门槛。
@@ -160,11 +160,11 @@ OIN + API Integration Actions 的组合创造了：
    - 低代码平台应该封装协议细节，而非将复杂性转移到用户配置
    - 错误处理、条件分支等能力要内置，而非要求用户自己实现
 ## 相关实体
-- [Build An Enterprise Observability Solution For Amazon Quick](/ch11-020-build-an-enterprise-observability-solution-for-amazon-quick/)
-- [Hs.Playerzero Ai Code Review](/ch01-076-code-simulation-for-enterprise-engineering-playerzero/)
-- [Code Simulation For Enterprise Engineering Playerz](/ch01-119-code-simulation-for-enterprise-engineering-playerzero/)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](/ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake/)
-- [Top 10 Design Gadgets Creative Professionals 2026](/ch03-024-top-10-design-gadgets-for-creative-professionals-that-will-c/)
+- [Build An Enterprise Observability Solution For Amazon Quick](../ch11-020-build-an-enterprise-observability-solution-for-amazon-quick)
+- [Hs.Playerzero Ai Code Review](../ch01-076-code-simulation-for-enterprise-engineering-playerzero)
+- [Code Simulation For Enterprise Engineering Playerz](../ch01-119-code-simulation-for-enterprise-engineering-playerzero)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake)
+- [Top 10 Design Gadgets Creative Professionals 2026](../ch03-024-top-10-design-gadgets-for-creative-professionals-that-will-c)
 
 ---
 

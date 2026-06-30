@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/alibaba-devix-harness-ops-agent-7x24.md`
 
-## 阿里 Devix Harness 运维 Agent：7×24 自动化运维闭环
+# 阿里 Devix Harness 运维 Agent：7×24 自动化运维闭环
 
 ## 核心结论
 
@@ -118,12 +118,12 @@ Agent 像运维工程师一样执行完整诊断流程：
 | Loop/Ralph Loop | 告警→诊断→决策→执行→追踪→案例→规则进化 |
 
 ## 相关实体
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
-- [Harness Engineering 10 Step Practical Guide 2026](/ch05-054-harness-engineering-实践指南-10-步路线图-8-失败模式-设计-checklist-系/)
-- [Claude Code Multi Agent Harness Source Analysis](/ch05-062-claude-code-多-agent-harness-源码拆解-留纸条-抠上下文-抠缓存-捆手脚/)
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering 10 Step Practical Guide 2026](../ch05-054-harness-engineering-实践指南-10-步路线图-8-失败模式-设计-checklist-系)
+- [Claude Code Multi Agent Harness Source Analysis](../ch05-062-claude-code-多-agent-harness-源码拆解-留纸条-抠上下文-抠缓存-捆手脚)
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alibaba-devix-harness-ops-agent-7x24.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alibaba-devix-harness-ops-agent-7x24.md)
 
 ---
 

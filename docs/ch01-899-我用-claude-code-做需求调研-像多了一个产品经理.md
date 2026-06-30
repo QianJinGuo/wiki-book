@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/claude-code-demand-research-taosecho.md`
 
-## 我用 Claude Code 做需求调研，像多了一个产品经理
+# 我用 Claude Code 做需求调研，像多了一个产品经理
 
 我用 Claude Code 做需求调研，像多了一个产品经理
 你做产品调研时，可能也有一套老方法：搜词、看竞品、翻差评、查关键词、问供应商报价，最后凭经验判断。问题是材料越来越多，需求仍然模糊。我最近用 Claude Code 跑了一轮便携支架调研，它最有价值的地方，像一个产品经理坐在旁边追问：谁在买？哪里卡住了？用户愿意为哪个结果付钱？
@@ -12,13 +12,13 @@
 先在 Amazon 搜关键词，看头部竞品的价格带、评分、评论数、主图和五点卖点。再打开 Keepa 看排名和价格走势，用 Helium 10 或 Jungle Scout 补一轮关键词。接着翻评论，摘几条差评，问供应商报价，最后靠经验给一个判断。
 
 ## 相关实体
-- [Claude Code Self Repair Hooks Memory Config](/ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
-- [Code Review Graph](/ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token/)
-- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
-- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
-- [Claude Code Agent View Huashu](/ch09-001-claude-code-agent-view/)
+- [Claude Code Self Repair Hooks Memory Config](../ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码)
+- [Code Review Graph](../ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token)
+- [Claude Code Hackathon Winners 2026](../ch01-772-claude-code-hackathon-winners-2026)
+- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding)
+- [Claude Code Agent View Huashu](../ch09-001-claude-code-agent-view)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-demand-research-taosecho.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-demand-research-taosecho.md)
 
 ## 深度分析
 

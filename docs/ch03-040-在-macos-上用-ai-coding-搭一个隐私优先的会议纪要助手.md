@@ -20,7 +20,7 @@
 4. **AI Coding 的真实价值是"串接已有云服务"的成本降低。** MeeTap 的核心不是深奥的算法，而是把 AWS Transcribe + Bedrock 串起来的外层胶水代码。AI Coding 工具在串联云服务（AWS、GCP、Azure）场景中的价值被严重低估：这个工作以前需要云架构师花一天，现在需要的是一个能读懂 SDK 文档的 AI Coding Agent，花一小时。
 
 ## 相关实体
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](/ch01-189-ai-时代的-git-版本管理最佳实践/)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch01-189-ai-时代的-git-版本管理最佳实践)
 
 ---
 

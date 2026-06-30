@@ -17,9 +17,9 @@
 **核心洞察**：下一代 System of Record 已经不一样了——不再是人类工作的日志仓库，而是 agentic 的：捕获 context、initiate 工作、记录数据 exhaust。最有意思的商业会延伸到现实世界执行，协调现场工作人员、物流提供商、服务团队和物理资产。
 
 ## 相关链接
-- [Is Software Losing Its Head A16Z](/ch01-491-is-software-losing-its-head/)
+- [Is Software Losing Its Head A16Z](../ch01-491-is-software-losing-its-head)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/is-software-losing-its-head-1.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/is-software-losing-its-head-1.md)
 
 ## 实践启示
 **对 SaaS 创业者：** 重新评估你的护城河来源。如果主要是 UI 惯性和人肉流程，Agent 浪潮下你要加速向数据层迁移。invest 在 proprietary data 的积累上——那些你的产品 **独有地产生** 的行为数据、响应率、时序模式、流程结果、异常模式、Agent 性能 traces。

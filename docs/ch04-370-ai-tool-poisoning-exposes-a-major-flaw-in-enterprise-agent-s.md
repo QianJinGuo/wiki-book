@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
 
 ## 摘要
 Title: AI tool poisoning exposes a major flaw in enterprise agent security
@@ -28,17 +28,17 @@ AI tool poisoning exposes a major flaw in enterprise agent se...
 - 评分：value=8, confidence=7, product=56
 
 ## 链接
-- [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
+- [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](/ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f/)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](/ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri/)
-- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](/ch01-667-architecture-data-foundations-for-ai-powered-search/)
-- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](/ch04-184-enterprise-software-moats-in-the-agent-era-系统性护城河分析框架/)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11-128-control-where-your-ai-agents-can-browse-with-chrome-enterpri)
+- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
+- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch04-184-enterprise-software-moats-in-the-agent-era-系统性护城河分析框架)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析
 AI tool poisoning 揭示了企业 Agent 安全中一个根本性的架构缺陷：工具注册表的元数据（描述、规格）与工具实际行为之间存在验证断层。
 当前供应链安全体系（代码签名、SBOM、SLSA、Sigstore）解决的是 artifact integrity（ artifact 是否与描述一致），但 Agent 工具注册表真正需要的是 behavioral integrity（工具是否做它声称做的事）。这两者是根本不同的安全维度。

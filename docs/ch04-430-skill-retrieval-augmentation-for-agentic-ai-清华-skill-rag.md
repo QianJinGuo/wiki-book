@@ -4,22 +4,22 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/skill-rag-tsinghua-sra.md`
 
-## Skill Retrieval Augmentation for Agentic AI — 清华 Skill-RAG
+# Skill Retrieval Augmentation for Agentic AI — 清华 Skill-RAG
 > 本文是对 https://mp.weixin.qq.com/s/xWeppFmwJaqTXmMd-4LI3Q 的存档
 > 原始论文: https://arxiv.org/abs/2604.24594v1
 > GitHub: https://github.com/oneal2000/SR-Agents
 RAG改换换了！清华提出Skill-RAG
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
-- [Hermes Agent Newbie Guide Dotta](/ch04-418-hermes-agent/)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](/ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90/)
-- [Three Rag Architectures Classic Graph Agentic](/ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag/)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
+- [Hermes Agent Newbie Guide Dotta](../ch04-418-hermes-agent)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90)
+- [Three Rag Architectures Classic Graph Agentic](../ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-rag-tsinghua-sra.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-rag-tsinghua-sra.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析
 
 **1. 技能库规模爆炸导致上下文窗口成为 Agent 瓶颈。** 截至 2026 年 4 月，仅 SkillsMP 平台就托管超过一百万个技能，OpenClaw、Claude Code 等系统也在快速增长。当技能数量从十几个增长到成千上万个时，将所有技能摘要塞进上下文的传统方法导致判断准确率断崖式下降。SRA-Bench 规模达到 26,262 个干扰技能——这不是夸张，而是真实场景的准确刻画。
@@ -44,7 +44,7 @@ RAG改换换了！清华提出Skill-RAG
 
 5. **在 SRA-Bench 上评估多模型的需求感知能力。** SRA-Bench 包含 5,400 个测试实例，覆盖六大领域，是评估 Agent 是否具备"知道自己会不会"能力的标准 benchmark。在选型 Agent 时，可以用这个 benchmark 测试模型的自我评估准确性，而不只是测任务准确率。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-rag-tsinghua-sra.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-rag-tsinghua-sra.md)
 
 ---
 

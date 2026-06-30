@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/agentic-ai-infrastructure-practice-series-nine-context-engineering.md`
 
-## Agentic AI Infrastructure Practice Series 9: Context Engineering
+# Agentic AI Infrastructure Practice Series 9: Context Engineering
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-ai-infrastructure-practice-series-nine-context-engineering.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-ai-infrastructure-practice-series-nine-context-engineering.md)
 
 ## 摘要
 
@@ -92,10 +92,10 @@
 
 ## 相关实体
 
-- [Context Engineering](/ch04-403-agentic-ai-infrastructure-practice-series-9-context-enginee/)
-- [AI Coding 入门指南](/ch09-004-ai-coding-入门指南-如何更好地让ai真正帮你干活/)
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架/)
-- MOC
+- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
+- [AI Coding 入门指南](../ch09-004-ai-coding-入门指南-如何更好地让ai真正帮你干活)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---
 

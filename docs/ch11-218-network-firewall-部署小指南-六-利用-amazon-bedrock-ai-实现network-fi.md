@@ -4,14 +4,14 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md`
 
-## Network Firewall 部署小指南 (六) 利用 Amazon Bedrock AI 实现Network Firewall规则冲突的实时检测与智能分析
+# Network Firewall 部署小指南 (六) 利用 Amazon Bedrock AI 实现Network Firewall规则冲突的实时检测与智能分析
 
 ## 相关实体
 
-- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](/ch11-032-aws-network-firewall-审查-idc-vpc-流量-vgw-架构-bgp-路由传播实验/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
+- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch11-032-aws-network-firewall-审查-idc-vpc-流量-vgw-架构-bgp-路由传播实验)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 深度分析
 
 Network Firewall 部署小指南 (六) 利用 Amazon Bedrock AI 实现Network Firewall规则冲突的实时检测与智能分析 涉及architecture领域的核心技术议题。
@@ -51,12 +51,12 @@ AWS Network Firewall 允许在同一个 Firewall Policy 下关联多个 Rule Gro
 - **aws趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
 
 ## 实践启示
 1. **工程落地**: architecture领域方案需关注可观测性、可维护性和成本效率

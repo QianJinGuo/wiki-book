@@ -103,38 +103,38 @@ Webhook 机制是实现"委托-等待"模式的关键。你的应用可以将任
 Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需要单独申请权限。在生产环境中使用这些功能时，需要考虑：权限申请的不确定性、功能可能变化的兼容性维护、备用方案的准备。建议将预览阶段的功能用于非关键路径，或者设计成可降级方案（如 Outcomes Loop 暂时用人工评估替代）。同时关注官方文档的更新，及时跟进正式发布后的变化。
 
 ## 相关产品/人物
-- [Claude Managed Agents 开发者指南](/ch04-421-claude-managed-agents/)
-- [Anthropic Computer Use 最佳实践](/ch01-677-anthropic/)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](/ch01-677-anthropic/) — 另一篇技术解读，覆盖 API 细节和定价
-- [Anthropic PM 的 Agentic 工作流](/ch01-677-anthropic/) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-claude-managed-agents-platform-launch.md)
+- [Claude Managed Agents 开发者指南](../ch04-421-claude-managed-agents)
+- [Anthropic Computer Use 最佳实践](../ch01-677-anthropic)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01-677-anthropic) — 另一篇技术解读，覆盖 API 细节和定价
+- [Anthropic PM 的 Agentic 工作流](../ch01-677-anthropic) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-claude-managed-agents-platform-launch.md)
 
 ## 相关实体
-- [Claude Managed Agents 官方 Harness 平台指南](/ch01-677-anthropic/)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](/ch01-677-anthropic/)
-- [Multica — 开源 Managed Agents 平台](/ch07-050-multica-开源-managed-agents-平台/)
-- [claude managed agents official](/ch04-457-claude-managed-agents-official/)
-- [claude managed agents](/ch01-445-claude-managed-agents-官方-harness-平台指南/)
+- [Claude Managed Agents 官方 Harness 平台指南](../ch01-677-anthropic)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch01-677-anthropic)
+- [Multica — 开源 Managed Agents 平台](../ch07-050-multica-开源-managed-agents-平台)
+- [claude managed agents official](../ch04-457-claude-managed-agents-official)
+- [claude managed agents](../ch01-445-claude-managed-agents-官方-harness-平台指南)
 
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](/ch01-677-anthropic/)
-- [Anthropic puts Claude agents on a meter across its subscriptions](/ch01-677-anthropic/)
-- [Introducing Claude for Small Business](/ch01-030-introducing-claude-for-small-business/)
-- [Introducing Claude for Small Business](/ch01-030-introducing-claude-for-small-business/)
-- [Xero Announces Integration with Anthropic's Claude](/ch01-677-anthropic/)
-- [Mythos for Offensive Security: XBOW's Evaluation](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](/ch01-677-anthropic/)
-- [Anthropic 14 个 Agent Skills 设计模式](/ch01-677-anthropic/)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](/ch01-677-anthropic/)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](/ch01-677-anthropic/)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](/ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题/)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch01-677-anthropic)
+- [Anthropic puts Claude agents on a meter across its subscriptions](../ch01-677-anthropic)
+- [Introducing Claude for Small Business](../ch01-030-introducing-claude-for-small-business)
+- [Introducing Claude for Small Business](../ch01-030-introducing-claude-for-small-business)
+- [Xero Announces Integration with Anthropic's Claude](../ch01-677-anthropic)
+- [Mythos for Offensive Security: XBOW's Evaluation](../ch01-291-mythos-for-offensive-security-xbow-s-evaluation)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](../ch01-677-anthropic)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch01-677-anthropic)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01-677-anthropic)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch01-677-anthropic)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-086-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01-375-claude-发布官方报告-承认存在-3-处质量退化问题)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 
 ## 第 2 来源：VibeCoder「脑手分离」架构视角（2026-06-11）
 
-VibeCoder 对 Claude Managed Agents 更新（scheduled deployments + vault env vars）的架构解读，提出「脑手分离」四层模型，并给出落地设计路径。原文：[VibeCoder 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-managed-agents-sandbox-vault-schedule-vibecoder.md)
+VibeCoder 对 Claude Managed Agents 更新（scheduled deployments + vault env vars）的架构解读，提出「脑手分离」四层模型，并给出落地设计路径。原文：[VibeCoder 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-managed-agents-sandbox-vault-schedule-vibecoder.md)
 
 ### 核心创新 / 关键数据
 
@@ -178,7 +178,7 @@ VibeCoder 对 Claude Managed Agents 更新（scheduled deployments + vault env v
 - Vaults 文档：https://platform.claude.com/docs/en/managed-agents/vaults
 - Memory 文档：https://platform.claude.com/docs/en/managed-agents/memory
 
-→ [第 2 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-managed-agents-sandbox-vault-schedule-vibecoder.md)
+→ [第 2 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-managed-agents-sandbox-vault-schedule-vibecoder.md)
 
 ---
 

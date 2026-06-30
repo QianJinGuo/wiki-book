@@ -39,10 +39,10 @@ Grok 的反 woke 定位在消费市场有一定传播度，但在企业市场和
 AI 模型公司的核心竞争力来自研究团队对算法创新、架构改进、训练细节的经验积累。这些知识很难通过外部招聘快速复制，因为该领域的顶尖人才高度稀缺且流动性有限。当创始团队全部离开后，公司的「组织记忆」断裂，需要数年时间重建。资本和算力只能买到物理资源，买不到这个。预防胜于治疗——核心研究团队的稳定性应该是早期风险评估的重要维度。
 
 ## 相关
-- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xai-grok-musk-training-new-model-wechat.md)
+- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xai-grok-musk-training-new-model-wechat.md)
 
 ## 关联阅读
-- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xai-grok-musk-training-new-model-wechat.md)
+- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xai-grok-musk-training-new-model-wechat.md)
 
 ## 评分
 | 维度 | 分数 |
@@ -122,11 +122,11 @@ xAI作为独立公司，过去两年面对四个无解的问题。
 ** 第二，模型差异化窗口已经关闭。  **
 Grok 1到Grok 4一路推下来，bench
 ## 相关实体
-- [Xai Dissolved Grok Colossus2 Analysis](/ch04-183-xai-grok-musk-training-new-model-wechat/)
-- [Xai Shutdown Grok Still Alive](/ch01-568-xai解散但grok还活着/)
-- [Building Blocks For Foundation Model Training And Inference On Aws](/ch11-117-building-blocks-for-foundation-model-training-and-inference/)
-- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
-- [Hermes Skill System Winty](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
+- [Xai Dissolved Grok Colossus2 Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/xai-dissolved-grok-colossus2-analysis.md)
+- [Xai Shutdown Grok Still Alive](../ch01-568-xai解散但grok还活着)
+- [Building Blocks For Foundation Model Training And Inference On Aws](../ch11-117-building-blocks-for-foundation-model-training-and-inference)
+- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
+- [Hermes Skill System Winty](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力)
 
 ---
 

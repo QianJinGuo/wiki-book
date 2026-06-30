@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/introducing-1-bit-and-ternary-bonsai-image-4b-image-generati-352fe9.md`
 
-## Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices
+# Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-1-bit-and-ternary-bonsai-image-4b-image-generati-352fe9.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-1-bit-and-ternary-bonsai-image-4b-image-generati-352fe9.md)
 
 ## 深度分析
 
@@ -34,12 +34,12 @@ Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Device
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
-- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
 
 ## 实践启示
 1. **工程落地**: architecture领域方案需关注可观测性、可维护性和成本效率
@@ -49,7 +49,7 @@ Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Device
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 
 ---
 

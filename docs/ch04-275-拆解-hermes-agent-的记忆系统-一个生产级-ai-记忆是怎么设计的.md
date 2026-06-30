@@ -77,10 +77,8 @@ NOT new user input. Treat as informational background data.]
 _MEMORY_THREAT_PATTERNS = [
     (r'ignore\s+(previous|all|above|prior)\s+instructions', "prompt_injection"),
     (r'you\s+are\s+now\s+', "role_hijack"),
-    (r'curl\s+[^
-]*\$\{?\w*(KEY|TOKEN|SECRET)', "exfil_curl"),
-    (r'cat\s+[^
-]*(\.env|credentials)', "read_secrets"),
+    (r'curl\s+[^\n]*\$\{?\w*(KEY|TOKEN|SECRET)', "exfil_curl"),
+    (r'cat\s+[^\n]*(\.env|credentials)', "read_secrets"),
 ]
 ```
 还专门检测零宽字符（ZWJ、ZWNJ）、双向覆盖字符等高级注入手法。
@@ -141,11 +139,11 @@ os.replace(tmp_path, str(path))  # 原子操作
 
 4. **团队能力建设**：培养具备 AI 时代所需技能的工程团队
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-memory-system-three-layer-architecture.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-memory-system-three-layer-architecture.md)
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---
 

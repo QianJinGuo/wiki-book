@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/skillx-zhejiang-university.md`
 
-## SkillX: Automatically Constructing Skill Knowledge Bases for Agents
+# SkillX: Automatically Constructing Skill Knowledge Bases for Agents
 浙大提出 SkillX：层次化技能库驱动的可复用 Agent 学习
 本工作提出 SkillX，一个自动构建分层技能知识库的框架，通过将轨迹抽象为多级技能，实现跨模型、跨任务的高效经验复用与泛化能力提升。
 当前基于经验学习的智能体方法存在三大核心瓶颈：
 1. 经验学习孤立化，不同任务间重复探索，效率低下
 
 ## 相关实体
-- [Skillos Learning Skill Curation For Self Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
-- [Skill Os Learning Skill Curation Self Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
-- [Airbyte Agents](/ch04-256-airbyte-agents-a-new-era-for-airbyte/)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](/ch01-615-skill-issues-compromising-claude-code-with-malicious-skills/)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](/ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock/)
+- [Skillos Learning Skill Curation For Self Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
+- [Skill Os Learning Skill Curation Self Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
+- [Airbyte Agents](../ch04-256-airbyte-agents-a-new-era-for-airbyte)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01-615-skill-issues-compromising-claude-code-with-malicious-skills)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillx-zhejiang-university.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillx-zhejiang-university.md)
 
 ## 深度分析
 
@@ -43,7 +43,7 @@
 
 5. **在 BFCL-v3、AppWorld、τ²-Bench 等长程交互任务上验证技能抽象效果。** 这些 benchmark 覆盖了工具调用、多步推理、真实世界任务等场景，是测试技能库泛化能力的标准起点。建议在新 Agent 项目中首先在这三个 benchmark 上建立基线。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillx-zhejiang-university.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillx-zhejiang-university.md)
 
 ---
 

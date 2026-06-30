@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/anthropic-demystifying-evals-for-ai-agents.md`
 
-## Anthropic Demystifying Evals for AI Agents
+# Anthropic Demystifying Evals for AI Agents
 
 - task: 一个定义了输入与成功标准的测试用例
 - trial: 同一 task 的一次尝试；因为输出有随机性，应该多 trial
@@ -12,15 +12,15 @@
 - transcript / trace / trajectory: 完整执行轨迹
 
 ## 相关实体
-- [Anthropic Claude Managed Agents Platform Launch](/ch01-677-anthropic/)
-- [Anthropic Managed Agents Scaling](/ch01-677-anthropic/)
-- [Oz Multi Harness Cloud Agent Orchestration](/ch04-409-agent-orchestration/)
-- [Anthropic Pm Jess Yan Managed Agents](/ch01-677-anthropic/)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](/ch04-245-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
+- [Anthropic Claude Managed Agents Platform Launch](../ch01-677-anthropic)
+- [Anthropic Managed Agents Scaling](../ch01-677-anthropic)
+- [Oz Multi Harness Cloud Agent Orchestration](../ch04-409-agent-orchestration)
+- [Anthropic Pm Jess Yan Managed Agents](../ch01-677-anthropic)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04-245-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-demystifying-evals-for-ai-agents.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-demystifying-evals-for-ai-agents.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 ## 深度分析
 
 Anthropic 这篇文章系统性地拆解了 AI Agent 评估的核心概念框架，其价值在于将评估问题从「模糊的质量判断」转化为「可度量的工程系统」。

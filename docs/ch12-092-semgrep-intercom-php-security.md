@@ -4,16 +4,16 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/semgrep-intercom-php-security.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/semgrep-intercom-php-security.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/semgrep-intercom-php-security.md)
 
-## Semgrep Intercom PHP Supply Chain Attack
+# Semgrep Intercom PHP Supply Chain Attack
 Semgrep: Intercom PHP 供应链攻击 Mini-Shai-Hulud，Packagist/Composer 投毒
 
 ## 摘要
 At RSA, we launched Semgrep Multimodal to combine AI reasoning with rule-based detection [Learn More → ](https://semgrep.dev/blog/2026/attackers-cant-...
 
 ## 原文存档
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/semgrep-intercom-php-security.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/semgrep-intercom-php-security.md)
 
 ## 相关资源
 ## 深度分析
@@ -29,14 +29,14 @@ Intercom PHP供应链攻击（Mini Shai-Hulud行动）揭示了Packagist/Compose
 **对于安全工具厂商：** Semgrep的这次快速响应（多生态联动：PyPI+npm+Packagist）展示了自动化威胁情报共享的价值。在新攻击手法可以在多平台快速复制的今天，安全规则的生成和分发速度是竞争的关键维度。
 
 ## 相关资源
-- [Agent Memory 架构](/ch04-029-agent-memory-architecture-past-influence-future-ruofei/)
-- [Claude Managed Agents 开发者指南](/ch04-421-claude-managed-agents/)
+- [Agent Memory 架构](../ch04-029-agent-memory-architecture-past-influence-future-ruofei)
+- [Claude Managed Agents 开发者指南](../ch04-421-claude-managed-agents)
 
 ## 相关实体
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 
-- [semgrep intercom php supply chain](/ch12-100-semgrep-intercom-php-supply-chain/)
+- [semgrep intercom php supply chain](../ch12-100-semgrep-intercom-php-supply-chain)
 
 ---
 

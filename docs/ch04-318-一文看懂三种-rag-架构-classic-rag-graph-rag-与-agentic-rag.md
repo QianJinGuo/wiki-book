@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/three-rag-architectures-classic-graph-agentic.md`
 
-## 一文看懂三种 RAG 架构：Classic RAG、Graph RAG 与 Agentic RAG
+# 一文看懂三种 RAG 架构：Classic RAG、Graph RAG 与 Agentic RAG
 > 来源：兔兔AGI（技术极简主义），2026-05-16
 > 架构 | 核心动作 | 解决的问题类型 |
 > |------|---------|-------------|
@@ -13,13 +13,13 @@
 > | Agentic RAG | reasons（推理） | 多步骤调查、复杂归因、跨系统分析 |
 
 ## 相关实体
-- [Protocol H Hierarchical Agentic Rag Enterprise](/ch04-079-protocol-h-hierarchical-agentic-rag-enterprise/)
-- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](/ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90/)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
+- [Protocol H Hierarchical Agentic Rag Enterprise](../ch04-079-protocol-h-hierarchical-agentic-rag-enterprise)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/three-rag-architectures-classic-graph-agentic.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/three-rag-architectures-classic-graph-agentic.md)
 
 ## 深度分析
 

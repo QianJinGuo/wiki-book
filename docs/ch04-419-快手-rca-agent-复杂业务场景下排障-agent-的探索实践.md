@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/rca-agent-kuaishou-guo-yongliang-qcon-2026.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rca-agent-kuaishou-guo-yongliang-qcon-2026.md)
+> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rca-agent-kuaishou-guo-yongliang-qcon-2026.md)
 
 快手主站归因排障 Agent 的生产级实践，覆盖四大挑战（业务理解/告警噪声/不确定性/幻觉）和完整的 Multi-Agent 架构设计。郭勇良（QCon 2026 北京）。
 
@@ -90,10 +90,10 @@
 
 ## 相关实体
 
-- [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Claw-SWE-Bench](/ch09-049-claw-swe-bench-首个独立测量harness对编程agent影响的基准/) — harness 独立评测基准
-- [Skill 版本对比五大原则](/ch07-049-skill-版本对比五大原则-从-两个数字比大小-到工程化质量门禁/) — 评估方法论
-- [OpenClaw Agent Loop 设计模式](/ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式/)
+- [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [Claw-SWE-Bench](../ch09-049-claw-swe-bench-首个独立测量harness对编程agent影响的基准) — harness 独立评测基准
+- [Skill 版本对比五大原则](../ch07-049-skill-版本对比五大原则-从-两个数字比大小-到工程化质量门禁) — 评估方法论
+- [OpenClaw Agent Loop 设计模式](../ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式)
 
 ---
 

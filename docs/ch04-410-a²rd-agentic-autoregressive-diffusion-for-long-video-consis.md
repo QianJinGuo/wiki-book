@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.6KB | `entities/a2rd-agentic-autoregressive-diffusion-long-video.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/a2rd-agentic-autoregressive-diffusion-long-video.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/a2rd-agentic-autoregressive-diffusion-long-video.md)
 
 ## Summary
 *A²RD (Agentic Autoregressive Diffusion) — a method for long video consistency using agentic autoregressive diffusion models.*
@@ -44,16 +44,16 @@ A²RD 本质上是一个"智能体驱动的闭环系统"。Retrieve–Synthesize
 尽管 A²RD 在公开基准上表现优异，但其实验设置（VBench-Long、LVBench-C）与真实应用场景仍有差距。在非结构化用户生成内容上的效果需进一步验证。多分段生成的计算成本也不容忽视——10 分钟视频意味着数十个分段依次生成，如何优化 pipeline 效率是实用化的关键。
 
 ## 相关
-- [Source](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/a2rd-agentic-autoregressive-diffusion-long-video.md)
+- [Source](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/a2rd-agentic-autoregressive-diffusion-long-video.md)
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [A²RD: Agentic Autoregressive Diffusion for Long Video Consistency](/ch04-226-a²rd-agentic-autoregressive-diffusion-for-long-video-consis/)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](/ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [Extreme Co-Design for Agentic Systems Complexity (NVIDIA)](/ch04-040-nvidia-extreme-co-design-agentic-systems/)
-- [cvpr冠军代码开源：小米svor破解视频消除三大顽疾，连人带影一键抹除](/ch01-716-cvpr冠军代码开源-小米svor破解视频消除三大顽疾-连人带影一键抹除/)
-- MOC
+- [A²RD: Agentic Autoregressive Diffusion for Long Video Consistency](../ch04-226-a²rd-agentic-autoregressive-diffusion-for-long-video-consis)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
+- [Extreme Co-Design for Agentic Systems Complexity (NVIDIA)](../ch04-040-nvidia-extreme-co-design-agentic-systems)
+- [cvpr冠军代码开源：小米svor破解视频消除三大顽疾，连人带影一键抹除](../ch01-716-cvpr冠军代码开源-小米svor破解视频消除三大顽疾-连人带影一键抹除)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---
 

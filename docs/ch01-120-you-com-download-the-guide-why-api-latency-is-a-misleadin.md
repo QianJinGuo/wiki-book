@@ -13,7 +13,7 @@
 **Quality-adjusted latency 是最重要的指标。** 一个快速但错误的答案（幻觉）带来的成本，远高于一个稍慢但准确的答案。因为错误的答案需要用户重新查询、验证、纠错，这个成本在生产环境中会成倍放大。文章称之为"隐藏的延迟税"（hidden latency tax）：requeries、error recovery、ungrounded responses——这些都不会出现在基准表格里，但会在生产日志里准时出现。
 
 ## 相关链接
-- [Inngest Ai In Production The 2026 Benchmark Report 2](/ch01-150-inngest-ai-in-production-the-2026-benchmark-report/)
+- [Inngest Ai In Production The 2026 Benchmark Report 2](../ch01-150-inngest-ai-in-production-the-2026-benchmark-report)
 
 ## 实践启示
 **对 AI 应用开发者：** 在选型阶段，用真实并发量测试 API，而不是相信供应商提供的基准数字。写一个简单的压测脚本，模拟你的实际使用场景（并发数、重试逻辑、超时设置），然后测量 P99 延迟和错误率。这才是"像生产工程师一样测试"。
@@ -21,7 +21,7 @@
 **对 AI 供应商的产品团队：** 如果你在做 AI API 产品，这个指南提醒你：客户需要的不是最便宜的 API，而是最可预测的 API。可预测性（consistent latency、consistent quality）应该成为你的核心卖点，而不是单纯的"最低延迟"。
 ^[（来源：raw）]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 
 - Published Time: Thu, 14 May 2026 19:22:14 GMT
 Markdown Content:

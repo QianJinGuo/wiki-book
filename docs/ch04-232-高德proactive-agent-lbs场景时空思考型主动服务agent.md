@@ -66,9 +66,9 @@ GenUI（Generated UI）是一个常被忽视但至关重要的设计理念。传
 2. **benchmark 先行的生态策略**：在 LLM Agent 落地的细分领域（如 LBS、医疗、垂直行业），考虑是否可以通过建立评测基准来获取行业话语权和开发者生态锚点。
 3. **全生命周期管理思维**：需求预估不是单点判断，而是对用户"出行前→出行中→出行后"全链路的覆盖，同一用户在不同生命周期节点的需求预估逻辑需要连贯。
 ## 相关实体
-- [Lbs Intent Bench Lbs Intentbench](/ch04-424-智能时空思考agent-首个真实出行隐式意图评测基准lbs-intentbench正式开源/)
+- [Lbs Intent Bench Lbs Intentbench](../ch04-424-智能时空思考agent-首个真实出行隐式意图评测基准lbs-intentbench正式开源)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amap-proactive-agent-lbs-spacetime.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amap-proactive-agent-lbs-spacetime.md)
 
 ---
 

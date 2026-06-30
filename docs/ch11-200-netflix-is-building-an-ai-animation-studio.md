@@ -8,13 +8,13 @@
 - 来自 newsletter 推荐的优质文章
 - 评分: v×c = 49
 ## 相关实体
-- [Netflix Metadata Service Model Lifecycle Graph](/ch11-034-netflix-metadata-service-and-model-lifecycle-graph/)
-- [Netflix Live Operations Human Infrastructure](/ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构/)
-- [Netflix Nebula Archrules](/ch11-088-netflix-nebula-archrules-跨越数千个-java-仓库的-archunit-规模化实践/)
-- [Netflix Switchboard Lightbulb Model Routing](/ch11-074-netflix-switchboard-lightbulb-百万请求-秒-ml-模型路由架构演进/)
-- [Netflix Druid Interval Aware Caching](/ch11-091-netflix-druid-区间感知缓存-指数-ttl-分桶查询去重/)
+- [Netflix Metadata Service Model Lifecycle Graph](../ch11-034-netflix-metadata-service-and-model-lifecycle-graph)
+- [Netflix Live Operations Human Infrastructure](../ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构)
+- [Netflix Nebula Archrules](../ch11-088-netflix-nebula-archrules-跨越数千个-java-仓库的-archunit-规模化实践)
+- [Netflix Switchboard Lightbulb Model Routing](../ch11-074-netflix-switchboard-lightbulb-百万请求-秒-ml-模型路由架构演进)
+- [Netflix Druid Interval Aware Caching](../ch11-091-netflix-druid-区间感知缓存-指数-ttl-分桶查询去重)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/netflix-is-building-an-ai-animation-studio.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/netflix-is-building-an-ai-animation-studio.md)
 
 ## 深度分析
 Netflix正在内部悄悄建设一个名为INKubator（有时简称INK）的生成式AI动画工作室，这家流媒体巨头的战略意图正在从"内容分发平台"向"内容生产基础设施"延伸。INGkubator被定位为"next-generation, creative-led, GenAI-native animation studio"，目标是"develop feature-quality content"——这意味着AI生成不再局限于辅助性的特效或预览，而是要成为主流程式化内容生产的核心引擎。

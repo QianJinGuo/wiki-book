@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/deeppotential-alibabacloud-agentrun-scientific-ai.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deeppotential-alibabacloud-agentrun-scientific-ai.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deeppotential-alibabacloud-agentrun-scientific-ai.md)
 
 ## 摘要
 深势科技携手阿里云AgentRun，加速科研 AI Agent 全速运行
@@ -117,12 +117,12 @@ AgentRun 实现了平均 TCO 降低 60%，这主要来自：
 对于需要大规模部署科研 Agent 的机构，这个成本优化数字是真实有意义的。
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)
 
-- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](/ch01-079-特斯拉百万年薪招数据标注员-朝九晚五-无需ai经验/)
-- [我给Hermes配了4个Agent，真正有用的是这些事](/ch01-127-我给hermes配了4个agent/)
-- [ai4s 2026 h1 跨学科前沿全景（弦论泰斗、ai 提速百倍、与](/ch01-225-ai4s-2026-h1-跨学科前沿全景-弦论泰斗-ai-提速百倍-与-该谁负责-之问/)
+- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch01-079-特斯拉百万年薪招数据标注员-朝九晚五-无需ai经验)
+- [我给Hermes配了4个Agent，真正有用的是这些事](../ch01-127-我给hermes配了4个agent)
+- [ai4s 2026 h1 跨学科前沿全景（弦论泰斗、ai 提速百倍、与](../ch01-225-ai4s-2026-h1-跨学科前沿全景-弦论泰斗-ai-提速百倍-与-该谁负责-之问)
 
 ---
 

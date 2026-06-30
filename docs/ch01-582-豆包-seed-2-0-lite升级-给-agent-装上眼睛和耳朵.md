@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/doubao-seed-2-lite-agent-multimodal.md`
 
-## 豆包 Seed 2.0 Lite升级：给 Agent 装上眼睛和耳朵
+# 豆包 Seed 2.0 Lite升级：给 Agent 装上眼睛和耳朵
 > 花叔 · 2026-05-06 · 北京 · 微信公众号
 本文讲述作者（AI 工具 B 站博主）使用豆包 Seed 2.0 Lite（0428版）解决视频制作痛点的实战经验。核心发现：**豆包 Seed 2.0 Lite 补上了音频理解能力，核心价值是通过 prompt 上下文让模型精准识别专有名词，同时能直接读视频并输出结构化分镜表**。定位为 Claude Code/Cursor 等 Coding Agent 的"前置感官层"。
 作者录视频自由随性，不按脚本念，导致自动字幕识别错专有名词：
@@ -12,13 +12,13 @@
 - 「Claude Opus 4.7」→「Claude 四点七」
 
 ## 相关实体
-- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](/ch01-613-豆包-seed-2-0-lite升级-给-agent-装上眼睛和耳朵/)
-- [Claude Code Prompt Context Harness](/ch05-081-claude-harness-generator-evaluator-context-reset/)
-- [Tencent Vibe Coding To Agentic Engineering Backend](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
-- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
-- [Hermes Agent Newbie Guide Dotta](/ch04-418-hermes-agent/)
+- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](../ch01-613-豆包-seed-2-0-lite升级-给-agent-装上眼睛和耳朵)
+- [Claude Code Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md)
+- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档)
+- [Hermes Agent Newbie Guide Dotta](../ch04-418-hermes-agent)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/doubao-seed-2-lite-agent-multimodal.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/doubao-seed-2-lite-agent-multimodal.md)
 
 ## 深度分析
 

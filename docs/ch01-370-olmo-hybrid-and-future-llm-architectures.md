@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/olmo-hybrid-and-future-llm-architectures.md`
 
-## Olmo Hybrid and future LLM architectures
+# Olmo Hybrid and future LLM architectures
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/olmo-hybrid-and-future-llm-architectures.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/olmo-hybrid-and-future-llm-architectures.md)
 
 ## Summary
 
@@ -75,7 +75,7 @@ The most immediate practical benefit of recurrent layers is reduced KV-cache mem
 - More concurrent users per GPU for serving
 - Lower memory requirements for RL training with long rollouts
 
-This connects directly to the [inference cost analysis](/ch01-410-inference-cost-at-scale-with-napkin-math/) — memory bandwidth is the bottleneck for long-context inference, and hybrid architectures fundamentally reduce this pressure.
+This connects directly to the [inference cost analysis](../ch01-410-inference-cost-at-scale-with-napkin-math) — memory bandwidth is the bottleneck for long-context inference, and hybrid architectures fundamentally reduce this pressure.
 
 ### Are Frontier Models Already Hybrid?
 
@@ -98,13 +98,13 @@ The post-training difficulties point to a significant research gap: **architectu
 
 ## Related Entities
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
-- [Inference cost at scale with napkin math](/ch01-410-inference-cost-at-scale-with-napkin-math/)
-- MOC
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
+- [Inference cost at scale with napkin math](../ch01-410-inference-cost-at-scale-with-napkin-math)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 
 ---
 

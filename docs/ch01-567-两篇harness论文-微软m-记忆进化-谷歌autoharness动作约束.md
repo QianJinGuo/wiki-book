@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/two-harness-papers-microsoft-google.md`
 
-## 两篇Harness论文：微软M⋆记忆进化 + 谷歌AutoHarness动作约束
+# 两篇Harness论文：微软M⋆记忆进化 + 谷歌AutoHarness动作约束
 > AI研究风向变了：从"如何让模型更聪明"转向"如何给Agent配一个更合适的Harness框架"。
 
 ## 一、M⋆：每个任务都值得拥有专属的记忆Harness
@@ -13,13 +13,13 @@
 - 对话任务（LoCoMo）：实体关系图追踪人物关系
 
 ## 相关实体
-- [Harness Evolution Papers](/ch05-085-harness进化论文-m-记忆程序进化与autoharness动作约束/)
-- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [Agentexecutorgooglesdistributedagentruntime](/ch04-003-agentrun/)
+- [Harness Evolution Papers](../ch05-085-harness进化论文-m-记忆程序进化与autoharness动作约束)
+- [Code As Agent Harness Survey](../ch09-046-code-as-agent-harness-综述)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [Agentexecutorgooglesdistributedagentruntime](../ch04-003-agentrun)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/two-harness-papers-microsoft-google.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/two-harness-papers-microsoft-google.md)
 
 ## 深度分析
 
@@ -47,7 +47,7 @@
 
 6. **在 Agent 框架选型时关注任务特异性和框架效率，而非单纯模型规模。** 评估标准应该包括：框架是否支持可进化的 Harness、是否能配置专用记忆结构、动作约束机制是否完善。以"小模型 + 专用 Harness"能击败"大模型 + 通用框架"为评估目标。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/two-harness-papers-microsoft-google.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/two-harness-papers-microsoft-google.md)
 
 ---
 

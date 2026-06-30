@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/5238111.md`
 
-## Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator
+# Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator
 
 Title: Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator
 URL Source: https://www.theregister.com/security/2026/05/11/anthropics-bug-hunting-mythos-was-greatest-marketing-stunt-ever-says-curl-creator/5238111/
@@ -38,15 +38,15 @@ cURL 项目创始人 Daniel Stenberg 测试了 Anthropic 的 Mythos AI 安全扫
 
 ## 相关实体
 - `AI安全全景` — AI代码分析工具的安全与攻击全景
-- [`MCP生产模式` — Anthropic的工具调用安全实践](/ch01-692-anthropic/)
+- `MCP生产模式` — Anthropic的工具调用安全实践
 
 ## 相关实体
-- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
-- [Anthropic Mythos Bug Hunting Marketing](/ch01-677-anthropic/)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](/ch01-677-anthropic/)
-- [Harness Engineering Three Evolutions](/ch05-030-harness-engineering-ai工程的三次进化/)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](/ch01-677-anthropic/)
-- MOC
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us)
+- [Anthropic Mythos Bug Hunting Marketing](../ch01-677-anthropic)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](../ch01-677-anthropic)
+- [Harness Engineering Three Evolutions](../ch05-030-harness-engineering-ai工程的三次进化)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01-677-anthropic)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---
 

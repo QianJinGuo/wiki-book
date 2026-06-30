@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 1.8KB | `entities/aws-health-analytics-ai-agents-mcp.md`
 
-## Self-Service AWS Health Analytics with AI Agents
+# Self-Service AWS Health Analytics with AI Agents
 
 AWS official blog showing how to build a self-service AWS Health analytics system using AI agents. Uses MCP tools to let non-technical users query AWS Health events, impact analysis, and operational recommendations via natural language.
 
@@ -35,7 +35,7 @@ The pattern of wrapping AWS Health API as MCP tools is reusable for other AWS se
 
 ## Reference
 
-- Source: [Original Article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-self-service-aws-health-analytics-to-find-actionable-h.md)
+- Source: [Original Article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-self-service-aws-health-analytics-to-find-actionable-h.md)
 
 ---
 

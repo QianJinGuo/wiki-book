@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/superpowers-6-reviewer-anti-cheating-shuge-2026.md`
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/superpowers-6-reviewer-anti-cheating-shuge-2026.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/superpowers-6-reviewer-anti-cheating-shuge-2026.md)
 
-## Superpowers 6.0 反作弊重写：守门人焊死工程
+# Superpowers 6.0 反作弊重写：守门人焊死工程
 
 术哥（ShugeX）源码级分析 Superpowers v6.0.3，翻 158 commits + 3 核心 prompt + 3 shell 脚本。核心结论：**6.0 不是性能调优，是围绕 reviewer 角色的结构性重写**——堵住 controller 被反复观测到的几条作弊路径，提速降本是结构改造的副产品。
 
@@ -73,10 +73,10 @@ subagent 读文件而非接收粘贴。controller context 只剩一行路径。*
 
 ## Wiki 关联
 
-- reviewer 重写是 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 在 multi-agent review 场景的具体实现
-- progress ledger 与 Agent 记忆系统设计 模式一致
-- 委托代理隔离 → [Loop Engineering](/ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad/) 中 evaluator 与 executor 分离的同构解法
-- "harder to game" → 对应 对抗验证 原则
+- reviewer 重写是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 在 multi-agent review 场景的具体实现
+- progress ledger 与 [Agent 记忆系统设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md) 模式一致
+- 委托代理隔离 → [Loop Engineering](../ch05-002-loop-engineering-不再写提示词-而是设计替你写提示词的循环-先写刹车再写循环-13-来源深度合并-ad) 中 evaluator 与 executor 分离的同构解法
+- "harder to game" → 对应 [对抗验证](https://github.com/QianJinGuo/wiki/blob/main/entities/adversarial-verification.md) 原则
 
 ---
 

@@ -9,9 +9,9 @@
 - Source: https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan/
 
 ## 相关实体
-- [GitHub Copilot](/ch01-578-github-copilot-individual-plans-flex-allotments-in-pro-and/)
+- [GitHub Copilot](../ch01-578-github-copilot-individual-plans-flex-allotments-in-pro-and)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 深度分析
 ### 定价结构的双层设计
 GitHub Copilot 此次更新的核心创新在于**双层配额模型**：Base Credits（基础配额）+ Flex Allotment（灵活配额）。基础配额与订阅价格 1:1 匹配，且永不变动；灵活配额则是可变部分，随 AI 经济模型的变化而调整。这种设计的精妙之处在于**锁定用户心智**：基础配额给用户提供了"保底"的安全感，而灵活配额的存在则为未来降价留出了空间，同时也为涨价提供了借口。当 AI 推理成本下降时，GitHub 可以悄然提高灵活配额而不改变基础配额，从而在不引发用户反弹的情况下"让利"；当成本上升时，则可以压缩灵活配额。这是一种**价格歧视与成本弹性兼顾**的策略。
@@ -52,11 +52,11 @@ Max 套餐（$100/月，总计 $200 额度）的推出，标志着 GitHub Copilo
 ### 5. 将 Copilot 成本纳入项目预算
 对于接包Freelance或内部工具开发的场景，Copilot 的用量成本应计入项目固定成本。$15（Pro）、$70（Pro+）、$200（Max）的月度可用额度可以帮助估算 AI 辅助开发在项目总成本中的占比，从而做出更准确的项目报价。
 ## 相关实体
-- [Microsoft Copilot Studio Agent Governance](/ch04-459-new-and-improved-agent-governance-intelligent-workflows/)
-- [wetesteddeepseekv4proandflashagainstclau.md-against-claude](/ch01-319-claude-code-andrej-karpathy-claude-md-134-k-star/)
-- [Deepseek V4 Pro Vs Claude](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- [Wetesteddeepseekv4Proandflashagainstclau](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- [Andrej Karpathy Claude Md 134K Stars 2026](/ch01-207-claude-md/)
+- [Microsoft Copilot Studio Agent Governance](../ch04-459-new-and-improved-agent-governance-intelligent-workflows)
+- wetesteddeepseekv4proandflashagainstclau.md-against-claude
+- [Deepseek V4 Pro Vs Claude](../ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
+- [Wetesteddeepseekv4Proandflashagainstclau](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
+- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01-207-claude-md)
 
 ---
 

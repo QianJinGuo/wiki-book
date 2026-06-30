@@ -6,13 +6,13 @@
 
 ## 核心要点
 - ...
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/p-ai-pms-guide-to-claude.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/p-ai-pms-guide-to-claude.md)
 
 ## 相关实体
 
-- [Hermes Agent 深度解析（阿里云/飞樰）](/ch04-418-hermes-agent/)
-- [Build Live Translation Apps with gpt-realtime-translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
+- [Hermes Agent 深度解析（阿里云/飞樰）](../ch04-418-hermes-agent)
+- [Build Live Translation Apps with gpt-realtime-translate](../ch01-123-build-live-translation-apps-with-gpt-realtime-translate)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道)
 
 ## 深度分析
 Pawel Huryn 的 PM OS 实践揭示了 Claude ecosystem 的真实分层——Chat、Cowork、Code、Dispatch 分别适用于不同场景，而非功能的简单堆叠。
@@ -45,7 +45,7 @@ Personal automation (Claude Code) vs Production automation (n8n) 的区分是关
 - Component library + Context engineering 是护城河：每个成功的 output 都要提取 pattern 反哺 library
 - 规则库会随时间增值，竞争对手无法复制的是你的 confirmed rules 积累
 - "McKinsey-level output vs generic AI output"的差异在于 skill 定义的质量
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/p-ai-pms-guide-to-claude.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/p-ai-pms-guide-to-claude.md)
 
 ---
 

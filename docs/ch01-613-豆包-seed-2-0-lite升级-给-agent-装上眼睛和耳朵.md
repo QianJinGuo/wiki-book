@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md`
 
-## 豆包 Seed 2.0 Lite升级：给 Agent 装上眼睛和耳朵
+# 豆包 Seed 2.0 Lite升级：给 Agent 装上眼睛和耳朵
 最近一个月模型发布太卷了。Claude Opus 4.7、GPT-5.5、DeepSeek V4 一个接一个，我每天打开 X 都觉得自己快被新模型淹没。光是我自己，前几周就赶着做了三期 B 站视频去解读这些发布。
 录过视频的人应该有体会，做视频最痛苦的环节之一，是剪字幕。
 相比看着脚本读稿，我通常还是更喜欢自由随性点讲，会显得更有认为。然后遇到的情况就是：专业术语念一半改口、数字换种说法、想到一个例子塞进去，这是我录视频的常态。然后剪辑的第一步永远是上字幕，丢进剪辑软件自动识别，再花一个钟头改回来。
@@ -33,16 +33,16 @@
 5. **集成建议**：对于已经在用 Claude Code、Codex、OpenClaw、Hermes Agent 或 Trae 的用户，把豆包 Seed 2.0 Lite 作为前置感知层接入现有工作流即可实现"眼睛+耳朵"能力，无需迁移工作台或学习新工具。
 
 ## 相关实体
-- [Doubao Seed 2 Lite Agent Multimodal](/ch01-272-multimodal/)
-- [Hermes Agent Newbie Guide Dotta](/ch04-418-hermes-agent/)
-- [Skill Rag Tsinghua Sra](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/)
-- [Doubao Seed 2 Lite](/ch01-613-豆包-seed-2-0-lite升级-给-agent-装上眼睛和耳朵/)
-- [Deepseek Code Harness](/ch09-068-deepseek-code-harness/)
+- [Doubao Seed 2 Lite Agent Multimodal](../ch01-272-multimodal)
+- [Hermes Agent Newbie Guide Dotta](../ch04-418-hermes-agent)
+- [Skill Rag Tsinghua Sra](../ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag)
+- [Doubao Seed 2 Lite](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite.md)
+- [Deepseek Code Harness](../ch09-068-deepseek-code-harness)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md)
 
-- [注定改变历史的一代人](/ch01-337-注定改变历史的一代人/)
-- [这张信息图居然是8B开源模型做的](/ch01-669-这张信息图-居然是8b开源模型做的/)
+- [注定改变历史的一代人](../ch01-337-注定改变历史的一代人)
+- [这张信息图居然是8B开源模型做的](../ch01-669-这张信息图-居然是8b开源模型做的)
 
 ---
 

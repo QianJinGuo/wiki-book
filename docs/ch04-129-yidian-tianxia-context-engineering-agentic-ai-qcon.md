@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 13.8KB | `entities/yidian-tianxia-context-engineering-agentic-ai-qcon.md`
 
-## "yidian tianxia context engineering agentic ai qcon"
-## 易点天下 Agentic AI 工程化实践：上下文工程 + 五道防线
+# "yidian tianxia context engineering agentic ai qcon"
+# 易点天下 Agentic AI 工程化实践：上下文工程 + 五道防线
 **来源：** QCon 2026 全球软件开发大会·北京站
 **演讲者：** 何宇航（易点天下 中台研发总监）
 **主题：** 企业级 Agentic AI 的工程化落地：Context Engineering + 安全防御体系
@@ -152,15 +152,15 @@
 ## Related
 
 ## 相关实体
-- [Yidian Tianxia Context Engineering Agentic Ai](/ch04-228-yidian-tianxia-context-engineering-agentic-ai/)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](/ch01-247-vibe-coding-and-agentic-engineering-convergence-simon-willi/)
-- [Karpathy Vibe Coding Agentic Engineering V4](/ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Agent Memory Architecture Ruofei](/ch04-111-agent-memory-架构解析/)
-- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
+- [Yidian Tianxia Context Engineering Agentic Ai](../ch04-228-yidian-tianxia-context-engineering-agentic-ai)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch01-247-vibe-coding-and-agentic-engineering-convergence-simon-willi)
+- [Karpathy Vibe Coding Agentic Engineering V4](../ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Agent Memory Architecture Ruofei](../ch04-111-agent-memory-架构解析)
+- [Code As Agent Harness Survey](../ch09-046-code-as-agent-harness-综述)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/yidian-tianxia-context-engineering-agentic-ai-qcon.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/yidian-tianxia-context-engineering-agentic-ai-qcon.md)
 
-- [`Agentic AI`](/ch04-273-管理作为-ai-超级能力-mollick-的-agentic-work-delegation-方程/)
+- `Agentic AI`
 
 ---
 

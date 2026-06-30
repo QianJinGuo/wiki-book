@@ -4,22 +4,22 @@
 
 > 📊 Level ⭐ | 5.8KB | `entities/openai-realtime-api-architecture.md`
 
-## OpenAI Realtime API 架构首次公开
+# OpenAI Realtime API 架构首次公开
 > **来源**: OpenAI Technical Blog
 > **URL**: https://mp.weixin.qq.com/s/bNx5ojRYJw0HkKSjRiLLVQ
 > **SHA256**: f60f5255f7c8d3b2438625f60daf1e1d2cb4792da5ac17e925ac9fa83d7e0284
 > **参考原文**: https://openai.com/index/delivering-low-latency-voice-ai-at-scale/
 
 ## 相关实体
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](/ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake/)
-- [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai/)
-- [Aliyun Agentrun 2Line Integration](/ch04-003-agentrun/)
-- [Pi Mono Github](/ch01-608-pi-mono-github/)
-- [Prompt Debugger Compare Templates Winty](/ch01-606-prompt-debugger-compare-templates-winty/)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01-539-announcing-openai-compatible-api-support-for-amazon-sagemake)
+- [Openai Gpt Realtime Voice Models Qbitai](../ch01-593-openai-gpt-realtime-voice-models-qbitai)
+- [Aliyun Agentrun 2Line Integration](../ch04-003-agentrun)
+- [Pi Mono Github](../ch01-608-pi-mono-github)
+- [Prompt Debugger Compare Templates Winty](../ch01-606-prompt-debugger-compare-templates-winty)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-realtime-api-architecture.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-realtime-api-architecture.md)
 
-- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](/ch01-570-openai发布新一代实时语音模型-能够像人说话一样进行推理-翻译和转录/)
+- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](../ch01-570-openai发布新一代实时语音模型-能够像人说话一样进行推理-翻译和转录)
 
 ## 深度分析
 
@@ -45,7 +45,7 @@
 
 **在系统可观测性建设中，状态集中是双刃剑——简化了问题定位，但也意味着 transceiver 成为单点**。需要在 transceiver 侧增加完善的 metrics、traces 和健康检查机制，确保状态集中带来的可见性优势不被故障定位的复杂性抵消。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-realtime-api-architecture.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-realtime-api-architecture.md)
 
 ---
 

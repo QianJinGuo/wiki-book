@@ -18,10 +18,10 @@
 ### 3. 写"方法"而不是"答案"
 ```markdown
 
-## 糟糕：只适用于这一个场景
+# 糟糕：只适用于这一个场景
 将 orders 表与 customers 表在 customer_id 上关联，筛选 region = 'EMEA'，并求和 amount 列。
 
-## 优秀：可复用的方法
+# 优秀：可复用的方法
 1. 从 references/schema.yaml 读取数据库Schema，找到相关表
 2. 按照 _id 外键约定关联表
 3. 使用 WHERE 子句应用筛选条件
@@ -31,10 +31,10 @@
 ### 4. 预设"默认值"，不要提供"菜单"
 ```markdown
 
-## 太多选项 → AI犹豫不决
+# 太多选项 → AI犹豫不决
 你可以使用 pypdf, pdfplumber, PyMuPDF 或 pdf2image...
 
-## 明确的默认方案 + 备选
+# 明确的默认方案 + 备选
 使用 `pdfplumber` 进行文本提取。如果遇到无法提取的扫描件，回退到 pdf2image + pytesseract OCR。
 ```
 
@@ -51,7 +51,7 @@
 ```markdown
 
 ## 报告结构
-## [分析标题]
+# [分析标题]
 ## 执行摘要
 [关键发现的一段落概述]
 
@@ -140,10 +140,10 @@ description 字段的编写应该围绕"在什么情况下 Agent 应该考虑这
 每次迭代应该先问：这个遗漏是因为规则本身表述模糊，还是因为规则覆盖范围不够？如果是前者，修改表述；如果是后者，再考虑添加新规则。
 
 ## 相关实体
-- [Agent Skill 进阶模式与治理](/ch01-319-agent-skill-进阶模式与治理/)
+- [Agent Skill 进阶模式与治理](../ch01-319-agent-skill-进阶模式与治理)
 
-- [Agent Skill 评估与迭代](/ch04-498-skillclaw-nacos-从一次-agent-会话到可治理-skill-registry-的自动演化闭环/)
-- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](/ch04-369-skillsieve-agent-skill-安全检测三层框架/)
+- [Agent Skill 评估与迭代](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-evaluation.md)
+- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](../ch04-369-skillsieve-agent-skill-安全检测三层框架)
 
 ---
 

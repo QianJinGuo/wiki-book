@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/iclr-2026-英伟达-普渡大学用agent闭环实现文生3d.md`
 
-## Scenethesis（ICLR 2026）英伟达 & 普渡大学用 Agent 闭环实现文生 3D
+# Scenethesis（ICLR 2026）英伟达 & 普渡大学用 Agent 闭环实现文生 3D
 
-> 原文链接：[原文链接](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/iclr-2026-英伟达-普渡大学用agent闭环实现文生3d.md)
+> 原文链接：[原文链接](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/iclr-2026-英伟达-普渡大学用agent闭环实现文生3d.md)
 
 ## 摘要
 
@@ -119,14 +119,14 @@ Scenethesis 论文反复强调"具身智能"和"仿真环境搭建"：
 
 ## 相关实体
 
-- [原文链接](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/iclr-2026-英伟达-普渡大学用agent闭环实现文生3d.md)
+- [原文链接](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/iclr-2026-英伟达-普渡大学用agent闭环实现文生3d.md)
 - 论文: https://arxiv.org/pdf/2505.02836
-- [英伟达项目页: https://research.nvidia.com/labs/dir/scenethesis/](/ch01-236-亚马逊aws官方博客-https-aws-amazon-com-cn-blogs-china/)
-- [Karpathy: 从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Cosmos & Grok Imagine 视频 Agent](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
-- [NVIDIA Isaac Lab 机器人 RL](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
-- [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](/ch04-263-iclr-2026-英伟达-普渡大学-用agent闭环实现文生3d/)
-- MOC
+- 英伟达项目页: https://research.nvidia.com/labs/dir/scenethesis/
+- [Karpathy: 从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Cosmos & Grok Imagine 视频 Agent](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
+- [NVIDIA Isaac Lab 机器人 RL](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](../ch04-263-iclr-2026-英伟达-普渡大学-用agent闭环实现文生3d)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 
 ---
 

@@ -36,13 +36,13 @@
 ## 调研方法
 130 名后端、全栈和 AI 工程师及工程负责人，覆盖从独立开发者到 1000+ 工程师规模组织的各类公司。所有受访者均需在生产环境中运行异步工作流。调研覆盖编排、可观测性、evals、Agent 框架和扩展信心等主题。
 ## 相关实体
-- [Inngest Ai In Production The 2026 Benchmark Report](/ch01-150-inngest-ai-in-production-the-2026-benchmark-report/)
-- [Whats New With Vsphere 9 1](/ch11-042-what-s-new-with-vsphere-in-vmware-cloud-foundation-9-1/)
-- [Inngest Ai And Backend Workflows Orchestrated At Any Scale](/ch01-598-inngest-ai-and-backend-workflows-orchestrated-at-any-scal/)
-- [Semis Memo Supply Chain Inheritance](/ch01-473-semis-memo-supply-chain-inheritance/)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
+- [Inngest Ai In Production The 2026 Benchmark Report](../ch01-150-inngest-ai-in-production-the-2026-benchmark-report)
+- [Whats New With Vsphere 9 1](../ch11-042-what-s-new-with-vsphere-in-vmware-cloud-foundation-9-1)
+- [Inngest Ai And Backend Workflows Orchestrated At Any Scale](../ch01-598-inngest-ai-and-backend-workflows-orchestrated-at-any-scal)
+- [Semis Memo Supply Chain Inheritance](../ch01-473-semis-memo-supply-chain-inheritance)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/inngest-ai-in-production-the-2026-benchmark-report-2.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/inngest-ai-in-production-the-2026-benchmark-report-2.md)
 
 ## 深度分析
 ### 信心悖论的根因

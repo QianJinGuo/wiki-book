@@ -4,17 +4,17 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/notes-inside-china-ai-labs-lambert.md`
 
-## Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes from inside China's AI
+# Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes from inside China's AI
 Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes from inside China's AI labs Lessons from my trip to talk to most of the leading AI labs in China. Nathan Lambert May 07, 2026 211 29 30 Share Article voiceover 0:00 -16:35 Audio playback is not supported on your browser. Please upgrade. Staring out the window on a new, high-speed train from Hangzhou to Shanghai I'm gifted with views of dramatic ridgelines speckled with wind turbines that are silhouetted against the setting sun. The mountains cast a backdrop to a mix of spanning fields and clustered skyscrapers. I'm returning from China with great humility. It's a very warming, human experience to go somewhere so foreign and be so welcomed. I had the honor of meeting so many people in the AI ecosystem who I knew from afar, and they greeted me with big smiles and cheer, reminding me how global my work and the AI ecosystem is. Interconnects AI is a reader-supported publication. Consider becoming a subscriber. Subscribe The mentality of Chinese researchers The Chinese companies building language models are set up as the perfect fast-followers for the technology, building on long-standing cultural traditions in education and work, along with subtly different approaches to building technology companies. When you look at the outputs, the latest, biggest models enabling agentic workflows, and the ingredients, excellent scientists, large-scale data, and accelerated computing, the Chinese and American labs look largely similar. The lasting differences emerge in how these are organized and conditioned. I've long thought that a reason that the Chinese labs are so good at catching up and keeping up with the frontier is that they're culturally aligned for this task, but without talking to people directly I felt like it wasn't my place to attribute substantial influence to this hunch. Speaking with many wonderful, humble, and open scientists at the leading Chinese labs has crystallized a lot of my belief... [truncated]
 
 ## 相关实体
-- [Notes From Inside Chinas Ai Labs](/ch09-093-notes-from-inside-chinas-ai-labs/)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](/ch04-439-score-by-collisions-patch-by-panic/)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](/ch01-630-google-adds-llms-txt-check-to-chrome-lighthouse/)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](/ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
-- [Agentcore Managed Harness](/ch04-206-agentcore-managed-harness/)
+- [Notes From Inside Chinas Ai Labs](../ch09-093-notes-from-inside-chinas-ai-labs)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04-439-score-by-collisions-patch-by-panic)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01-630-google-adds-llms-txt-check-to-chrome-lighthouse)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro)
+- [Agentcore Managed Harness](../ch04-206-agentcore-managed-harness)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/notes-inside-china-ai-labs-lambert.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/notes-inside-china-ai-labs-lambert.md)
 
 ## 深度分析
 

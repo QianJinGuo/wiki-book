@@ -84,13 +84,13 @@ AI 表格/多维表格之所以成为企业 80% AI 项目的承载体，**不是
 > **真正的交付核心从来不是"做了一个表"，而是把 SOP 梳理清楚。** 工作量大的依旧是 KnowHow 与管理沟通问题。
 
 ## 相关实体
-- [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](/ch04-282-agent-skills-vs-workflow低代码平台-选型分析/)
-- [Gepa Optimize Anything](/ch01-263-gepa-optimize-anything/)
-- [Memento Skills Agent Self Evolving](/ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化/)
-- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](/ch04-190-精选-8-个-ui-设计师必备的-ai-智能体技能-agent-skills/)
-- [Agent Skills Comprehensive Survey](/ch04-340-agent-skills-系统性综述-表示-获取-检索-进化/)
+- [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](../ch04-282-agent-skills-vs-workflow低代码平台-选型分析)
+- [Gepa Optimize Anything](../ch01-263-gepa-optimize-anything)
+- [Memento Skills Agent Self Evolving](../ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化)
+- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](../ch04-190-精选-8-个-ui-设计师必备的-ai-智能体技能-agent-skills)
+- [Agent Skills Comprehensive Survey](../ch04-340-agent-skills-系统性综述-表示-获取-检索-进化)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
 
 ## 深度分析
 

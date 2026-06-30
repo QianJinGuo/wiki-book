@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/agentic-ai-system-architecture-harness-skill-mcp.md`
 
-## MCP · Skill · Agent · LLM · Harness — 一张图讲清：Agentic AI 系统如何真正落地
+# MCP · Skill · Agent · LLM · Harness — 一张图讲清：Agentic AI 系统如何真正落地
 
 > 作者：霍旭东（ThinkingInDev），2026-04-29
 
@@ -13,15 +13,15 @@ Agent → LLM → Skill → MCP → External World
 External → MCP → Skill → Agent → Memory → LLM
 
 ## 相关实体
-- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [From Agent Protocol To Harness Skill](/ch04-351-from-agent-protocol-to-harness-skill/)
-- [Ai Skill Skill Creator 源码拆解](/ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南/)
+- [Code As Agent Harness Survey](../ch09-046-code-as-agent-harness-综述)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [From Agent Protocol To Harness Skill](../ch04-351-from-agent-protocol-to-harness-skill)
+- [Ai Skill Skill Creator 源码拆解](../ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-ai-system-architecture-harness-skill-mcp.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-ai-system-architecture-harness-skill-mcp.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 核心架构（三层结构）
 
 ### 1. 能力执行主链

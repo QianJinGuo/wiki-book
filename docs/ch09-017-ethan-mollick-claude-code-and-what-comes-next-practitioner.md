@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.1KB | `entities/oneusefulthing-claude-code-what-comes-next.md`
 
-## Ethan Mollick: Claude Code and What Comes Next (Practitioner View)
+# Ethan Mollick: Claude Code and What Comes Next (Practitioner View)
 
 > **Core insight**: Ethan Mollick（One Useful Thing）2026-01 对 Claude Code 的端到端实测：单条 prompt "Develop a startup that makes $1000/month" 触发 **1 小时 14 分钟自主工作**，创建数百文件 + 部署真实可售卖网站。背后是 **compaction / Skills / subagents / MCP 四个 magic trick** 的组合。
 
@@ -124,7 +124,7 @@ MCP 生态：
 - 用专用文件夹
 - 不要给它访问你不能承受丢失的东西
 
-## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/) 的关系
+## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践) 的关系
 
 | 维度 | 现有 entity | 本文 |
 |------|------------|------|
@@ -204,7 +204,7 @@ MCP 生态：
 
 6. **关注 Karpathy 的警示——"职业正在被 dramatically refactored"**：这位 AI 领域知名工程师表示"作为程序员从未感到如此落后"，他感觉自己如果正确整合近一年可用的工具可以 10X 更强大。Mollick 以此结尾不是危言耸听，而是行动号召——主动学习和适应这些工具，否则面临"skill issue"风险。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-and-what-comes-next.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-and-what-comes-next.md)
 
 ---
 

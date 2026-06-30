@@ -4,22 +4,22 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/personavlm-long-term-personalization.md`
 
-## PersonaVLM: Long-term Personalized Multimodal LLM
+# PersonaVLM: Long-term Personalized Multimodal LLM
 |大模型开始"懂你"了！PersonaVLM如何实现长期个性化记忆
 来源：PaperWeekly → 数据派THU
 当前大模型是"静态系统"，而人是"动态的"。现有方法只依赖当前上下文或简单拼接历史信息，无法跟踪用户动态变化，导致个性化停留在表面。
 让模型具备"长期个性化能力"——记忆、推理与对齐三能力协同。
 
 ## 相关实体
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [Two Harness Papers Microsoft Google](/ch01-567-两篇harness论文-微软m-记忆进化-谷歌autoharness动作约束/)
-- [Trace2Skill Trajectory Distillation Agent Skills](/ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills/)
-- [05 11 The Great Memory Panic Of 2026](/ch01-635-the-great-memory-panic-of-2026/)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [Two Harness Papers Microsoft Google](../ch01-567-两篇harness论文-微软m-记忆进化-谷歌autoharness动作约束)
+- [Trace2Skill Trajectory Distillation Agent Skills](../ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills)
+- [05 11 The Great Memory Panic Of 2026](../ch01-635-the-great-memory-panic-of-2026)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/personavlm-long-term-personalization.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/personavlm-long-term-personalization.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 ## 深度分析
 
 **五类记忆分层是认知架构的工程化实现。** PersonaVLM 将心理学经典理论（大五人格）引入 LLM 个性化建模，将记忆划分为性格画像、核心记忆、语义记忆、情景记忆和程序性记忆。这一设计本质上是在模型之外构建了一个**可演进的用户模型（User Model）**，使个性化信息独立于模型权重存在，支持动态更新而不需要重训练 。
@@ -44,7 +44,7 @@
 
 **让模型具备"理解用户"而非仅仅"回答问题"的设计目标。** 个性化的真正价值不在于给用户打标签，而在于建立一个持续演化的用户理解过程。每次交互结束后都应该触发性格演变机制和记忆更新 。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/personavlm-long-term-personalization.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/personavlm-long-term-personalization.md)
 
 ---
 

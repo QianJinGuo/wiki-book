@@ -61,22 +61,23 @@ TeamPCP 并非首次对 Checkmarx 发起攻击——2026 年 3 月就曾入侵 c
 - 进行定期的应急响应演练，确保安全团队在真实攻击发生时能够快速协调隔离、取证、恢复等步骤
 ---
 ## 相关实体
-- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](/ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha/)
-- [Semgrep Intercom Php Supply Chain](/ch12-100-semgrep-intercom-php-supply-chain/)
-- [Shub Reaper Macos Stealer Attack Chain](/ch12-014-shub-reaper-macos-stealer-spoofs-apple-google-and-microso/)
-- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](/ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- MOC
+- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha)
+- [Semgrep Intercom Php Supply Chain](../ch12-100-semgrep-intercom-php-supply-chain)
+- [Shub Reaper Macos Stealer Attack Chain](../ch12-014-shub-reaper-macos-stealer-spoofs-apple-google-and-microso)
+- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](../ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)
 
-## "Checkmarx Jenkins plugin compromised in new supply chain attack"
+# "Checkmarx Jenkins plugin compromised in new supply chain attack"
 URL Source: https://www.techzine.eu/news/security/141212/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack/
 Published Time: 2026-05-11T13:29:24+00:00
 Markdown Content:
 
-## Checkmarx Jenkins plugin compromised in new supply chain attack - Techzine Global
-[[Techzine Global](https://www.techzine.eu/)
+# Checkmarx Jenkins plugin compromised in new supply chain attack - Techzine Global
+[Skip to content](https://www.techzine.eu/news/security/141212/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack/#main)
+[Techzine Global](https://www.techzine.eu/)
 
 *   [Home](https://www.techzine.eu/)
 *   [Topstories](https://www.techzine.eu/topstories/)
@@ -103,7 +104,8 @@ Markdown Content:
     *   [SentinelOne](https://www.techzine.eu/insights/sentinelone/)
 *   [More](https://www.techzine.eu/news/security/141212/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack/#)
     *   [Become a partner](https://www.dolphin.pub/)
-    *   [    *   [Contact us](https://www.techzine.eu/contact)
+    *   [About us](https://www.techzine.eu/about-us/)
+    *   [Contact us](https://www.techzine.eu/contact)
     *   [Terms and conditions](https://www.techzine.eu/conditions)
     *   [Privacy Policy](https://www.techzine.eu/privacy)
 *   [Techzine Global](https://www.techzine.eu/)

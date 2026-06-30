@@ -26,9 +26,9 @@
 关于 ROI 衡量，Dausch 说"customer/team member experience 是最难衡量的"，这透露了 AI 落地项目最常见的困境：最容易量化的是 top-line sales 和 margins/costs，但 AI 最直接影响的恰恰是体验这类软指标。企业如果只用财务指标衡量 AI ROI，会系统性地低估 AI 的真实价值。    
 
 ## 相关实体
-- [819775](/ch01-152-yum-brands-tech-chief-on-building-its-ai-backbone-cio-d/)
+- [819775](../ch01-152-yum-brands-tech-chief-on-building-its-ai-backbone-cio-d)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/819775.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/819775.md)
 
 ## 实践启示
 **对餐饮/零售行业的技术负责人：** Yum Brands 的"common data model"是最大的工程挑战，也是最大的竞争壁垒。如果你的公司有多个历史系统（POS、库存、CRM、供应链），优先解决数据统一问题，而不是急着上 AI。数据质量不过关，AI 再强也是垃圾进垃圾出。    

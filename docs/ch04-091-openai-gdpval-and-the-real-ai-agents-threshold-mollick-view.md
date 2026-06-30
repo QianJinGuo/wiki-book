@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.4KB | `entities/openai-gdpval-real-ai-agents-threshold.md`
 
-## OpenAI GDPval and the Real AI Agents Threshold (Mollick View)
+# OpenAI GDPval and the Real AI Agents Threshold (Mollick View)
 
 > **Core insight**: 2025-09 OpenAI 发布 **GDPval**——一个**由 14 年经验行业专家**设计的真实任务基准（每任务 4-7 小时），AI 几乎追平人类（**略输但差距很小**）。Mollick 用 Claude Sonnet 4.5 实测**学术 replication 危机**可被 AI 自动化解决——这不止节省时间，而是**改变整个学术领域**的可能。
 
@@ -100,7 +100,7 @@ Mollick 的关键警告：
 
 3. **"17 PowerPoint 噩梦"** —— 用幽默捕捉了**任务自动化的隐性风险**：**AI 没有"够好"判断**，需要人类定义完成条件。这是组织使用 AI 的**核心新能力**。
 
-## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/) / the Claude Code what-comes-next analysis 的关系
+## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践) / the Claude Code what-comes-next analysis 的关系
 
 | 维度 | GDPval / Real Work (本文) | Claude Code What Comes Next | Opus 4.7 实战 |
 |------|--------------------------|---------------------------|----------------|
@@ -177,7 +177,7 @@ Mollick 的关键警告：
 
 5. **建立组织级AI使用政策，而非依赖个人即兴使用** —— 个人用户容易陷入"无意识地用AI做更多任务"陷阱。组织需要自上而下地定义：哪些任务值得AI介入、什么时候需要人工审核、AI产出的质量门槛是什么。AI的能力已经足够，差距在于组织的判断力。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/real-ai-agents-and-real-work.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/real-ai-agents-and-real-work.md)
 
 ---
 

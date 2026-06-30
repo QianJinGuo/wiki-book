@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.5KB | `entities/skill-os-learning-skill-curation-self-evolving-agents.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-os-learning-skill-curation-self-evolving-agents.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-os-learning-skill-curation-self-evolving-agents.md)
 
 ## 论文信息
 - **作者**: Siru Ouyang, Jun Yan, Yanfei Chen 等
@@ -112,12 +112,12 @@ SkillRepo 作为外部 Markdown 文件存在，带来了传统记忆系统不具
 论文的实验设计提供了一个可借鉴的渐进路径：先用 SkillOS-base（初始策展人，不做 RL 训练）建立 baseline，验证技能格式和工作流设计，再引入 GRPO 训练提升策展质量。训练配置建议从以下超参数开始：学习率 1×10⁻⁶，batch size 32，group size 8，在 16×H100 GPU 上训练约 3 天（ALFWorld）。实践中，团队应先用小规模数据验证训练流程，再扩展到完整数据集，同时监控 r_fc（函数调用奖励）确保策展操作格式正确，再关注 r_task（任务结果奖励）的提升。
 
 ## 相关实体
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
-- [Self-Evolving Agents 系统性综述](/ch04-203-self-evolving-agents-系统性综述/)
-- [Memento-Skills — 技能外部记忆让 Agent 自进化](/ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化/)
-- [Hermes Agent 自进化机制源码解析](/ch04-039-hermes-agent-self-evolving-source-analysis/)
-- [Native Parallel Reasoner: 原生并行推理](/ch01-884-icml-2026-告别-单线程-思维-智能体进化出了原生的并行推理大脑/)
-- [self-evolving agents 系统性综述（厦门大学等多机构联合）](/ch04-201-self-evolving-agents-系统性综述-厦门大学等多机构联合/)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
+- [Self-Evolving Agents 系统性综述](../ch04-203-self-evolving-agents-系统性综述)
+- [Memento-Skills — 技能外部记忆让 Agent 自进化](../ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化)
+- [Hermes Agent 自进化机制源码解析](../ch04-039-hermes-agent-self-evolving-source-analysis)
+- [Native Parallel Reasoner: 原生并行推理](../ch01-884-icml-2026-告别-单线程-思维-智能体进化出了原生的并行推理大脑)
+- [self-evolving agents 系统性综述（厦门大学等多机构联合）](../ch04-201-self-evolving-agents-系统性综述-厦门大学等多机构联合)
 
 ---
 

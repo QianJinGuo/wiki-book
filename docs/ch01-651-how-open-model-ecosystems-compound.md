@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/how-open-model-ecosystems-compound.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-open-model-ecosystems-compound.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-open-model-ecosystems-compound.md)
 
 ## 摘要
 Title: How open model ecosystems compound
@@ -20,12 +20,12 @@ Most of the compute to build a leading frontier model comes from R&D costs, rath
 - 评分：value=7, confidence=7, product=49
 
 ## 链接
-- [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-open-model-ecosystems-compound.md)
+- [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-open-model-ecosystems-compound.md)
 
 ## 相关实体
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](/ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客/)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 ## 深度分析
 **R&D 成本 vs 训练成本的 80/20 法则**：文章引用 Ai2 和 Epoch AI 的研究，指出构建前沿模型 80% 的算力消耗在 R&D 阶段，而非最终模型的端到端训练。这意味着开源模型的真正价值不在于"免费使用模型"，而在于"分摊 R&D 探索成本"。当你使用一个开源模型时，你实际上是在享受前人 R&D 探索的成果；而如果所有人都能分享这些探索，整个生态的 R&D 效率都会提升。
 **中国开源生态的"加速学习"模式**：作者指出中国 AI 生态的设计围绕"快速学习同行、避免重复投入 R&D 算力"展开。各实验室之间有意共享技术报告、互相验证思路——这与西方"各自为战、封闭开发"的模式形成对比。这种生态系统让中国实验室能够在相对低的总成本下维持前沿竞争力，因为没有人需要独自承担全部探索失败的成本。

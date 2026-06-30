@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md`
 
-## Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended
+# Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended
 
 ## 摘要
 
@@ -78,16 +78,16 @@ ShinyHunters 决定"完全放弃 clearnet 运营，仅依赖 onion 平台"具有
 
 ## 相关实体
 
-- [Claude Code 源码机制](/ch01-734-两万字详解claude-code源码核心机制/) — AI 工具架构
-- [Karpathy Vibe Coding 访谈](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) — Agentic Engineering 范式
-- [Harness Engineering 概念](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [Karpathy Vibe Coding 完整版](/ch04-070-从氛围编程到智能体工程/)
-- [Agent 记忆系统](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [Scale Robot RL with NVIDIA Isaac Lab](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
-- [LLMReaper Browser Extension Attack](/ch01-528-llmreaper-dom-based-ai-conversation-exfiltration/) — 浏览器扩展攻击向量
-- [What My Privacy and Security Stack Actually Looks Like](/ch12-019-what-my-privacy-and-security-stack-actually-looks-like/) — 个人安全栈案例
+- [Claude Code 源码机制](../ch01-734-两万字详解claude-code源码核心机制) — AI 工具架构
+- [Karpathy Vibe Coding 访谈](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering) — Agentic Engineering 范式
+- [Harness Engineering 概念](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [Karpathy Vibe Coding 完整版](../ch04-070-从氛围编程到智能体工程)
+- [Agent 记忆系统](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [Scale Robot RL with NVIDIA Isaac Lab](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
+- [LLMReaper Browser Extension Attack](../ch01-528-llmreaper-dom-based-ai-conversation-exfiltration) — 浏览器扩展攻击向量
+- [What My Privacy and Security Stack Actually Looks Like](../ch12-019-what-my-privacy-and-security-stack-actually-looks-like) — 个人安全栈案例
 
-> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md)
+> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/claude-code-harness-deep-understanding.md`
 
-## 深入理解 Claude Code 源码中的 Agent Harness 构建之道
+# 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 上周，  ** Anthropic  ** 旗下闭源的 AI 编程工具 Claude Code 曝出源码泄露事件。这次事件并非黑客入侵或内部泄密，而是因 npm 打包未排除包含完整源码的  ` .map  `  映射文件，  ** 导致 1900 余个 Typescript 文件、超 51 万行核心代码意外曝光  ** 。相关代码迅速被归档至 Github，数小时内收获超 1100 颗星。
 这是迄今为止生产级 AI Agent 系统最完整的一次公开审视，也让外界得以验证此前对 Claude Code 架构的推断，同时窥见其诸多未发布的核心功能与底层设计逻辑。
 本文将借助这次源代码泄露机会，顺着一个请求的完整生命周期：从你输入消息到 Agent 交付可工作的代码，我们一步步拆解每个环节。你会发现，  ** LLM 调用本身只是一行代码  ** ，真正让 Agent 可用的，是围绕这行代码精心设计的  ** Agent Harness  ** 。
@@ -12,15 +12,15 @@
 ##  Agent Harness 的核心循环
 
 ## 相关实体
-- [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析/)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-677-anthropic/)
-- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](/ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件/)
-- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](/ch05-057-准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-ha/)
+- [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-677-anthropic)
+- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件)
+- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](../ch05-057-准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-ha)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-harness-deep-understanding.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-harness-deep-understanding.md)
 
-- [Skillx Zhejiang University Hyman](/ch01-584-浙大开源skillx-全自动构建agent技能知识库-即插即用提升10-性能/)
+- [Skillx Zhejiang University Hyman](../ch01-584-浙大开源skillx-全自动构建agent技能知识库-即插即用提升10-性能)
 ## 深度分析
 
 ### 1. Agent Harness 的本质：围绕 LLM调用的工程化包装

@@ -268,22 +268,22 @@ OpenAI 提出的"Entropy Garbage Collection"是一个极具工程价值的概念
 **边界**: 依赖 "**过程可观测**"。如果 AI 任务中间产物无法落盘 (如纯创意生成), 失效; 模型强到能自我保证纪律, harness 功成身退。
 
 ## 相关链接
-- 参考：[Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
-- 参考：Coding Harness Engineering
-- 参考：Managed Agents Architecture
+- 参考：[Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 参考：[Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
+- 参考：[Managed Agents Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/managed-agents-architecture.md)
 ## 相关实体
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](/ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [Agent Harness Engineering Survey 2026](/ch04-069-agent-harness-engineering-a-survey/)
-- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](/ch05-072-harness-engineering-ai-能在真正-出事会炸-的后端系统里写代码吗/)
-- [Harness Engineering Systematic Framework](/ch05-049-harness-engineering-系统梳理/)
-- [Agentscope Java Harness Framework](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [Agent Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](../ch05-072-harness-engineering-ai-能在真正-出事会炸-的后端系统里写代码吗)
+- [Harness Engineering Systematic Framework](../ch05-049-harness-engineering-系统梳理)
+- [Agentscope Java Harness Framework](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-alibaba-java-case-study.md)
-→ [原文存档 (杜学友 6 层架构)](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-alibaba-6-layer-architecture-duxueyou.md)
-- [协作涌现：agent room 的多智能体决策框架](/ch04-515-协作涌现-agent-room-的多智能体决策框架/)
-- [programbench swe agent benchmark](/ch04-436-programbench-swe-agent-benchmark/)
-- [harness 工程可视化：vibe coding 中重建工程可控性](/ch05-081-harness-工程可视化-vibe-coding-中重建工程可控性/)
-- MOC
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-alibaba-java-case-study.md)
+→ [原文存档 (杜学友 6 层架构)](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-alibaba-6-layer-architecture-duxueyou.md)
+- [协作涌现：agent room 的多智能体决策框架](../ch04-515-协作涌现-agent-room-的多智能体决策框架)
+- [programbench swe agent benchmark](../ch04-436-programbench-swe-agent-benchmark)
+- [harness 工程可视化：vibe coding 中重建工程可控性](../ch05-081-harness-工程可视化-vibe-coding-中重建工程可控性)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---
 

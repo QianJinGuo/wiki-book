@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.6KB | `entities/pytorch-2-12-release-blog.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pytorch-2-12-release-blog.md)
+> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pytorch-2-12-release-blog.md)
 
 ## 核心要点
 - PyTorch 2.12 包含 2,926 commits from 457 contributors
@@ -13,12 +13,12 @@
 - **量化支持扩展**：`torch.export` 现支持 Microscaling (MX) 量化格式
 - **融合优化器**：Adagrad 支持 `fused=True`，与 Adam、AdamW、SGD 统一
 - **ROCm 大幅更新**： expandable memory segments、rocSHMEM 对称内存集合、FlexAttention pipelining
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pytorch-2-12-release-blog.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pytorch-2-12-release-blog.md)
 
 ## 相关实体
-- [Pytorch 2 12 Release](/ch01-067-pytorch-2-12-release-blog-pytorch/) — 同一博客的平行存档
+- [Pytorch 2 12 Release](../ch01-067-pytorch-2-12-release-blog-pytorch) — 同一博客的平行存档
 
-- [profiling in pytorch (part 2): from nn.linear to a fused mlp](/ch01-849-llm-rl中的熵-part-2-熵对训练的调控/)
+- [profiling in pytorch (part 2): from nn.linear to a fused mlp](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-torch-mlp-fusion-profiling-2026.md)
 
 ## 深度分析
 ### 从研究框架到生产平台的演变

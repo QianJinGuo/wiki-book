@@ -20,11 +20,11 @@
 **对于 red team / 渗透测试**：Mythos 在漏洞发现lead generation 阶段极具价值，但最终 exploit 构造和验证仍需人工或专用工具链。其"字面化"判断倾向意味着在宽松解释规则威胁建模场景下可能遗漏真实风险——需要在提示中明确规则意图而不仅是字面描述。
 **对于基准测试和红队评估**：视觉敏锐度（浏览器交互）已足以支持实际工作流，这是 Anthropic 逆转了近期模型在该维度退化趋势的积极信号。跨架构固件和嵌入式场景的推理能力打开了新的评测维度。
 ## 相关实体
-- [Mythos_Offensive_Security_Xbow_Evaluatio](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
-- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](/ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner/)
-- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](/ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f/)
-- [Offensive Security Blog](/ch12-005-offensive-security-blog/)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](/ch01-040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f/)
+- [Mythos_Offensive_Security_Xbow_Evaluatio](../ch01-291-mythos-for-offensive-security-xbow-s-evaluation)
+- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](../ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner)
+- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f)
+- [Offensive Security Blog](../ch12-005-offensive-security-blog)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch01-040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/notes-from-inside-chinas-ai-labs.md`
 
-## Notes from inside China's AI labs
+# Notes from inside China's AI labs
 Staring out the window on a new, high-speed train from Hangzhou to Shanghai I'm gifted with views of dramatic ridgelines speckled with wind turbines that are silhouetted against the setting sun. The mountains cast a backdrop to a mix of spanning fields and clustered skyscrapers. I'm returning from China with great humility. It's a very warming, human experience to go somewhere so foreign and be so welcomed. I had the honor of meeting so many people in the AI ecosystem who I knew from afar, and they greeted me with big smiles and cheer, reminding me how global my work and the AI ecosystem is.
 Interconnects AI is a reader-supported publication. Consider becoming a subscriber.
 
@@ -12,13 +12,13 @@ Interconnects AI is a reader-supported publication. Consider becoming a subscrib
 The Chinese companies building language models are set up as the perfect fast-followers for the technology, building on long-standing cultural traditions in education and work, along with subtly different approaches to building technology companies. When you look at the outputs, the latest, biggest models enabling agentic workflows, and the ingredients, excellent scientists, large-scale data, and accelerated computing, the Chinese and American labs look largely similar. The lasting differences emerge in how these are organized and conditioned.
 
 ## 相关实体
-- [Notes Inside China Ai Labs Lambert](/ch09-079-notes-inside-china-ai-labs-lambert/)
-- [Anthropic](/ch07-044-anthropic-mcp-重新定义-tool-search-代码编排/)
-- [Datadog Pathfinding Labs Security](/ch11-075-pathfinding-labs-deploy-test-and-learn-from-100-intentio/)
-- [Anthropic Claude Managed Agents Platform 2026](/ch01-677-anthropic/)
-- [News Sap Com Sap Unveils The Autonomous Enterprise](/ch04-093-sap-unveils-the-autonomous-enterprise/)
+- [Notes Inside China Ai Labs Lambert](../ch09-079-notes-inside-china-ai-labs-lambert)
+- [Anthropic](../ch07-044-anthropic-mcp-重新定义-tool-search-代码编排)
+- [Datadog Pathfinding Labs Security](../ch11-075-pathfinding-labs-deploy-test-and-learn-from-100-intentio)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01-677-anthropic)
+- [News Sap Com Sap Unveils The Autonomous Enterprise](../ch04-093-sap-unveils-the-autonomous-enterprise)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/notes-from-inside-chinas-ai-labs.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/notes-from-inside-chinas-ai-labs.md)
 
 ## 深度分析
 

@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/claude-code-best-community-fork-evolution-vibecoder.md`
 
-## Claude Code 泄露后的漏网之鱼 claude-code-best 这两个月到底演进了什么
+# Claude Code 泄露后的漏网之鱼 claude-code-best 这两个月到底演进了什么
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-best-community-fork-evolution-vibecoder.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-best-community-fork-evolution-vibecoder.md)
 
 ## 深度分析
 
@@ -38,12 +38,12 @@ Claude Code 自 2.
 - **claude趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch04-199-openclaw-完全指南/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [构建基于多智能体架构的深度思考交易系统 V2](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [构建基于多智能体架构的深度思考交易系统 V2](../ch04-205-构建基于多智能体架构的深度思考交易系统)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
@@ -53,7 +53,7 @@ Claude Code 自 2.
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 
 ---
 

@@ -9,15 +9,15 @@
 - LLM Evaluation: A Funnel Not a Fork
 
 ## 相关实体
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
-- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](/ch04-332-多轮-agent-场景下-滴滴的-eagle-3-训推加速实践/)
-- [Multimodal Evaluators Mllm As Judge Image To Text](/ch01-272-multimodal/)
-- [Ai Skill Metrics System](/ch01-383-ai-skill-测评指标体系/)
-- [Harness Engineering Systematic Explainer](/ch05-036-harness-engineering-systematic-explainer/)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
+- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch04-332-多轮-agent-场景下-滴滴的-eagle-3-训推加速实践)
+- [Multimodal Evaluators Mllm As Judge Image To Text](../ch01-272-multimodal)
+- [Ai Skill Metrics System](../ch01-383-ai-skill-测评指标体系)
+- [Harness Engineering Systematic Explainer](../ch05-036-harness-engineering-systematic-explainer)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spotify-llm-evals-funnel-not-fork.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/spotify-llm-evals-funnel-not-fork.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 ## 深度分析
 
 Spotify 的实验文化由来已久，其 A/B 测试体系是公司产品迭代的核心驱动力。然而，文章揭示了一个关键洞察：只有约 12% 的 A/B 测试最终产生正向的、上线的结果，而约 64% 的测试产生了有效学习——无论是发现了回归问题、排除了某个想法，还是细化了某个假设 。这一数据表明，实验的 win rate 实际上低估了实验本身的价值。更重要的是，LLM Evals 的引入为这个体系增加了一个上游过滤器，通过在实验前筛选掉前景不佳的候选方案，间接提升了实验的 hit rate 。

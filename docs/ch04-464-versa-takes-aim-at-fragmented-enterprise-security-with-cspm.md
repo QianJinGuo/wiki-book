@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/versa-takes-aim-at-fragmented-enterprise-security-with-cspm-orchestration-updat.md`
 
-## Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls | Network World
+# Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls | Network World
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/versa-takes-aim-at-fragmented-enterprise-security-with-cspm-orchestration-updat.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/versa-takes-aim-at-fragmented-enterprise-security-with-cspm-orchestration-updat.md)
 
 ## 深度分析
 
@@ -17,7 +17,7 @@ Versa takes aim at fragmented enterprise security with CSPM, orchestration updat
 3. html
 Published Time: 2026-05-11T22:55:16-05:00
 Markdown Content:
-## Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls | Network World
+# Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls | Network World
 🚀 The new NetworkWorld.
 4. com hybrid search: 🔍 Explore Network World content smarter, faster and AI powered.
 5. [](https://www.
@@ -39,12 +39,12 @@ Markdown Content:
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch04-199-openclaw-完全指南/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [构建基于多智能体架构的深度思考交易系统 V2](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [构建基于多智能体架构的深度思考交易系统 V2](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

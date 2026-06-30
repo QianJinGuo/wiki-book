@@ -10,13 +10,13 @@
 - **中文中间表示**：在 L24 左右，判决以中文 token 形式在模型内部"承诺"，后续层再翻译为英文输出
 - ** graded classifier 过泛化**：审查分类器按结构模式触发而非精确内容匹配，Kosovo、Arab Spring 等非 PRC 话题可能被错误映射
 ## 相关实体
-- [How We Made Window Join Parallel And Vectorized](/ch01-034-how-we-made-window-join-parallel-and-vectorized/)
-- [Products Are Out Brains Are In](/ch01-113-products-are-out-brains-are-in/)
-- [Investing In Stitch](/ch01-122-nearly-every-enterprise-is-investing-in-ai-but-only-5-say/)
-- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](/ch01-099-gemini-3-5-flash-more-expensive-but-google-plan-to-use-it/)
-- [Offline Llm Energy Use Html](/ch01-081-apple-silicon-costs-more-than-openrouter/)
+- [How We Made Window Join Parallel And Vectorized](../ch01-034-how-we-made-window-join-parallel-and-vectorized)
+- [Products Are Out Brains Are In](../ch01-113-products-are-out-brains-are-in)
+- Investing In Stitch
+- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](../ch01-099-gemini-3-5-flash-more-expensive-but-google-plan-to-use-it)
+- [Offline Llm Energy Use Html](../ch01-081-apple-silicon-costs-more-than-openrouter)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-political-censorship-looks-like-inside-an-llm-s-weights.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-political-censorship-looks-like-inside-an-llm-s-weights.md)
 
 ## 深度分析
 **审查机制的技术实现**：Qwen3.5-9B 的政治审查不是一个全局开关，而是一个由三层方向向量（d_prc、d_refuse、d_style）构成的局部电路。Writer 层（L11-L20）计算这些方向，Reader 层（L20-L31）将信号渲染为具体文本。这种"计算-渲染"分离设计意味着审查决策在中间层就已形成，后续层只是执行文本生成。
@@ -28,7 +28,7 @@
 1. **Mechanistic Interpretability 的实用价值**：这项研究证明即使是生产级 LLM 的审查机制也可以被定位、读取和关闭。对于安全研究者，这意味着可用 steering vector 直接测试模型的实际行为边界，而不仅是行为日志。
 2. **警惕分类器的过度泛化**：在构建内容审核系统时，需注意训练数据导致的语义扩展触发。Kosovo、Catalonia 等与PRC无直接关联的领土主权问题可能被错误映射。建议在内容审核系统中增加对抗性测试集，覆盖结构相似但主题无关的 prompts。
 3. **思考模式增加了额外的 Chinese-first 现象**：研究特别指出，在 Tiananmen 相关问题上，开启思考模式后模型会先用中文推理并引用《网络安全法》，然后才转向防御性回复。这提示在评估模型安全性时，思考模式可能揭示普通模式下隐藏的行为模式。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-political-censorship-looks-like-inside-an-llm-s-weights.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-political-censorship-looks-like-inside-an-llm-s-weights.md)
 
 ---
 

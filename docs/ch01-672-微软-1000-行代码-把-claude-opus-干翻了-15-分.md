@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/webwright-microsoft-1000-lines.md`
 
-## 微软 1000 行代码，把 Claude Opus 干翻了 15 分
+# 微软 1000 行代码，把 Claude Opus 干翻了 15 分
 
-> **来源**：前端Q / winty（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/webwright-microsoft-1000-lines.md)
+> **来源**：前端Q / winty（2026-05-26）| 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/webwright-microsoft-1000-lines.md)
 
 ## 深度分析
 
@@ -61,13 +61,13 @@ Webwright 将代码量级与主流框架对比：
 5. **关注微软后续**：MSR 在 minimalist Agent 路线的持续发布值得跟，OpenAI/Anthropic 官方 Agents SDK 可能内嵌类似"写脚本"模式。
 
 ## 相关实体
-- [Two Harness Papers Microsoft Google](/ch01-567-两篇harness论文-微软m-记忆进化-谷歌autoharness动作约束/)
-- [Claude Opus 47](/ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus/)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
-- [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
-- [Agent Memory Architecture Ruofei](/ch04-111-agent-memory-架构解析/)
+- [Two Harness Papers Microsoft Google](../ch01-567-两篇harness论文-微软m-记忆进化-谷歌autoharness动作约束)
+- [Claude Opus 47](../ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践)
+- [Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议)
+- [Agent Memory Architecture Ruofei](../ch04-111-agent-memory-架构解析)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/webwright-microsoft-1000-lines.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/webwright-microsoft-1000-lines.md)
 
 ---
 

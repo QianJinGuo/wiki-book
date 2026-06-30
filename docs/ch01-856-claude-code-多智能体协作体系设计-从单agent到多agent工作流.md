@@ -285,11 +285,11 @@ const agentContexts = {
 
 ```bash
 
-## 分支工作流
+# 分支工作流
 git worktree add worktree-1 feature-branch-1
 git worktree add worktree-2 feature-branch-2
 
-## ... 并行处理 ...
+# ... 并行处理 ...
 git merge worktree-1 feature-branch-1
 git merge worktree-2 feature-branch-2
 ```
@@ -475,17 +475,17 @@ const agentTrace = {
 
 - `12个可复用Agentic Harness设计模式`
 - `深入理解Claude Code源码中的Agent Harness构建之道`
-- [`我给Hermes配了4个Agent真正有用的是这些事`](/ch01-143-hermes-4-agent/)
-- [`企业级多 Agent 规模化落地怎么做群虾智能 Ai 沙龙 Ppt 限时领取`](/ch04-516-企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取/)
-- [`Yidian Tianxia Context Engineering Agentic Ai`](/ch04-229-yidian-tianxia-context-engineering-agentic-ai/)
+- `我给Hermes配了4个Agent真正有用的是这些事`
+- `企业级多 Agent 规模化落地怎么做群虾智能 Ai 沙龙 Ppt 限时领取`
+- `Yidian Tianxia Context Engineering Agentic Ai`
 
 ---
 
 ## 相关实体
 
-- [Claude Code Prompt Context Harness - Claude Code Prompt/Context/Harness设计](/ch03-002-obsidian-claude-code-集成指南/)
-- [Hermes Agent Memory System](/ch04-418-hermes-agent/) - Hermes记忆系统
-- MOC
+- [Claude Code Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md) - Claude Code Prompt/Context/Harness设计
+- [Hermes Agent Memory System](../ch04-418-hermes-agent) - Hermes记忆系统
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---
 

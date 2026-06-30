@@ -10,17 +10,17 @@
 - 来源：https://searchengineland.com/google-llms-txt-chrome-lighthouse-478246
 
 ## 相关实体
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](/ch12-087-github-breached-employee-device-hack-led-to-exfiltration/)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](/ch04-439-score-by-collisions-patch-by-panic/)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
-- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch12-087-github-breached-employee-device-hack-led-to-exfiltration)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04-439-score-by-collisions-patch-by-panic)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm)
+- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
 
-- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](/ch04-164-从-pi-main-源码拆解-顶尖-ai-agent-的工程设计-17-维度全解/)
+- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](../ch04-164-从-pi-main-源码拆解-顶尖-ai-agent-的工程设计-17-维度全解)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析
 
 Chrome Lighthouse 新增的「Agentic Browsing」审核类别，标志着 Google 对 AI 代理可见性基础设施的认知发生了根本性转变。与传统的 SEO 排名信号不同，llms.txt 被明确定位为「AI 代理的可发现性与效率信号」，而非爬取指令。这一区分至关重要：Google 搜索不需要 llms.txt，但 Chrome 的代理浏览能力检查正在强制执行这一标准。

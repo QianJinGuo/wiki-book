@@ -148,20 +148,20 @@ last-session: 2026-05-10
 策略 3 MCP 桥接很优雅，但它是针对「代码仓库和知识库完全分离」这个问题的答案。如果你的代码仓库本身就需要放在 Vault 里（策略 2），MCP 反而多此一举。先想清楚「我的 Vault 和代码仓库是否必须分离」，再决定是否引入 MCP 层。
 
 ## 相关工具与资源
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/obsidian-claude-code-integration-guide.md)
-- [Agent Memory 架构](/ch04-029-agent-memory-architecture-past-influence-future-ruofei/) — 与 Obsidian vault 记忆模式的思想关联
-- [Claude Code Hackathon 经验](/ch09-045-claude-code-黑客松-技艺数字化六项目/) — Claude Code 实战相关
-- Karpathy LLM Wiki — 本地知识管理系统的设计思路
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/obsidian-claude-code-integration-guide.md)
+- [Agent Memory 架构](../ch04-029-agent-memory-architecture-past-influence-future-ruofei) — 与 Obsidian vault 记忆模式的思想关联
+- [Claude Code Hackathon 经验](../ch09-045-claude-code-黑客松-技艺数字化六项目) — Claude Code 实战相关
+- [Karpathy LLM Wiki](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md) — 本地知识管理系统的设计思路
 > 本页整合来源：[GitHub] ballred/obsidian-claude-pkm、obsidian-claude-code-mcp、Claudesidian MCP；[博客] Chase AI、Noah Vincent、Niclas Dern、Kenneth Reitz 等实战汇总
 
 ## 相关实体
-- [obsidian claude code integration guide](/ch09-097-obsidian-claude-code-integration-guide/)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
-- [Claude Code Memory Setup (Obsidian + Graphify)](/ch01-666-claude-code-memory-setup-obsidian-graphify/)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](/ch01-309-claude-code-agent-teams/)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](/ch09-039-claude-md-12-条规则-karpathy-扩展模板/)
-- [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制/)
-- [gstack — AI协作开发工作流 & 复杂度棘轮](/ch03-058-gstack-ai协作开发工作流-复杂度棘轮/)
+- [obsidian claude code integration guide](../ch09-097-obsidian-claude-code-integration-guide)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南)
+- [Claude Code Memory Setup (Obsidian + Graphify)](../ch01-666-claude-code-memory-setup-obsidian-graphify)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09-039-claude-md-12-条规则-karpathy-扩展模板)
+- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制)
+- [gstack — AI协作开发工作流 & 复杂度棘轮](../ch03-058-gstack-ai协作开发工作流-复杂度棘轮)
 
 ---
 

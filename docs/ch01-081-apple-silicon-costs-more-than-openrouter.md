@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐ | 5.9KB | `entities/offline-llm-energy-use-html.md`
 
-## Apple Silicon costs more than OpenRouter
+# Apple Silicon costs more than OpenRouter
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/offline-llm-energy-use-html.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/offline-llm-energy-use-html.md)
 
 ## 摘要
 
@@ -82,9 +82,9 @@ OpenRouter 上的 Gemma 4 31B 可达 60-70 tokens/秒，而 M5 Max 本地仅 10-
 
 ## 相关实体
 
-- [Inference cost at scale with napkin math](/ch01-410-inference-cost-at-scale-with-napkin-math/)
-- [From Doer To Director The Ai Mindset Shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
-- [Running An Ai Native Engineering Org](/ch01-045-running-an-ai-native-engineering-org/)
+- [Inference cost at scale with napkin math](../ch01-410-inference-cost-at-scale-with-napkin-math)
+- [From Doer To Director The Ai Mindset Shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift)
+- [Running An Ai Native Engineering Org](../ch01-045-running-an-ai-native-engineering-org)
 
 ---
 

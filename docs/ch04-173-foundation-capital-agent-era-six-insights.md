@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/foundation-capital-agent-era-six-insights.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/foundation-capital-agent-era-six-insights.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/foundation-capital-agent-era-six-insights.md)
 
 ## 核心定位
 Foundation Capital 合伙人 Ashu Garg（2026-05-07）基于 Turing CEO Jonathan Siddharth + Arize CPO Aparna Dhinakaran 对谈的投资 thesis。核心命题：Agent 才是软件的主用户；上下文图谱是真正护城河；反馈闭环本身是产品。
@@ -112,19 +112,19 @@ Aparna 提出的"Agent as new hire"管理框架的真正价值在于：它把一
 3. **投资跨领域判断力**：当执行工作被 Agent 接管，人类独有的价值在于跨领域整合判断——这是纯任务执行型 Agent 目前最弱的能力
 
 ## 相关概念
-- Harness Engineering — "可插拔>微调"洞察与 Harness Engineering 的核心命题完全一致：框架比模型更持久
-- [Factory Mission](/ch01-864-factory-mission-multi-agent-architecture/) — 多 Agent 协作框架 vs. Foundation Capital 的 Agent 主用户原则相互印证
-- [Autobrowse](/ch07-034-autobrowse-browserbase-persistent-skill/) — 同样的"反馈循环=产品"洞察，Autobrowse 通过技能文件实现自我改进闭环
-- [Anthropic Claude Managed Agents](/ch01-677-anthropic/) — Claude Managed Agents 的 Outcomes Loop 自我评估是"反馈闭环=产品"的具体工程实现
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — "可插拔>微调"洞察与 Harness Engineering 的核心命题完全一致：框架比模型更持久
+- [Factory Mission](../ch01-864-factory-mission-multi-agent-architecture) — 多 Agent 协作框架 vs. Foundation Capital 的 Agent 主用户原则相互印证
+- [Autobrowse](../ch07-034-autobrowse-browserbase-persistent-skill) — 同样的"反馈循环=产品"洞察，Autobrowse 通过技能文件实现自我改进闭环
+- [Anthropic Claude Managed Agents](../ch01-677-anthropic) — Claude Managed Agents 的 Outcomes Loop 自我评估是"反馈闭环=产品"的具体工程实现
 -  — Jonathan Siddharth 是 Turing CEO，其 Agent 优先实践是本篇发言的背景注脚；三角 Orchestrator+Worker+Validator 架构与本文洞察相互印证
 ---
 *Last updated: 2026-05-08*
 *评审：Value 8 × Confidence 8 = 64 ✅ PASS | ★★★★*
 
 ## 相关实体
-- [Agent 自我改进的六条路](/ch04-047-agent-自我改进的六条路/)
-- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](/ch04-184-enterprise-software-moats-in-the-agent-era-系统性护城河分析框架/)
-- [Agent 时代架构师技能指南](/ch04-346-agent-时代-我们架构师应该学什么/)
+- [Agent 自我改进的六条路](../ch04-047-agent-自我改进的六条路)
+- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch04-184-enterprise-software-moats-in-the-agent-era-系统性护城河分析框架)
+- [Agent 时代架构师技能指南](../ch04-346-agent-时代-我们架构师应该学什么)
 
 ---
 

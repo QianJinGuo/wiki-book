@@ -4,15 +4,15 @@
 
 > 📊 Level ⭐ | 8.8KB | `entities/how-we-made-window-join-parallel-and-vectorized.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-we-made-window-join-parallel-and-vectorized.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-we-made-window-join-parallel-and-vectorized.md)
 
 ## 相关实体
 
-- [How to create websites with great UX designs: Principles and examples](/ch01-114-how-to-create-websites-with-great-ux-designs-principles-and/)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](/ch01-875-what-is-urban-density-design-a-clear-guide-to-how-cities-ge/)
+- [How to create websites with great UX designs: Principles and examples](../ch01-114-how-to-create-websites-with-great-ux-designs-principles-and)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](../ch01-875-what-is-urban-density-design-a-clear-guide-to-how-cities-ge)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
 ## 深度分析
 ### 专用算子 vs 通用查询重写：性能差距的本质
 QuestDB WINDOW JOIN 展现出比 Timescale、DuckDB、ClickHouse 快 25 倍的性能，其根本原因在于**专用算子知道窗口结构而通用查询重写不知道** ^。

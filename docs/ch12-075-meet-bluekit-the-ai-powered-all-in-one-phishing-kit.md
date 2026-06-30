@@ -4,19 +4,19 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/bluekit.md`
 
-## Meet Bluekit: The AI-Powered All-in-One Phishing Kit
+# Meet Bluekit: The AI-Powered All-in-One Phishing Kit
 Introducing Varonis Atlas: Secure everything you build and run with AI [Learn more](https://www.varonis.com/platform/ai-security?hsLang=en)
 [](https://www.varonis.com/?hsLang=en)
 Data Security Platform
 
 ## 相关实体
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](/ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](/ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](/ch01-667-architecture-data-foundations-for-ai-powered-search/)
-- [Thehackernews Com The New Phishing Click How Oauth](/ch01-465-the-new-phishing-click-how-oauth-consent-bypasses-mfa/)
-- [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](/ch01-060-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age/)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
+- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
+- [Thehackernews Com The New Phishing Click How Oauth](../ch01-465-the-new-phishing-click-how-oauth-consent-bypasses-mfa)
+- [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](../ch01-060-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/bluekit.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bluekit.md)
 
 ## 深度分析
 

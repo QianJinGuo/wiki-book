@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.6KB | `entities/high-throughput-graph-abstraction-at-netflix.md`
 
-## High-Throughput Graph Abstraction at Netflix: Part I
+# High-Throughput Graph Abstraction at Netflix: Part I
 
 > **Background**: Netflix 内部维护一个跨服务的"图"用于描述服务依赖、客户连接、用户体验路径。Part I 介绍 10M ops/sec 规模、跨 650TB 数据量的生产级图抽象挑战与设计取舍。
 
@@ -72,20 +72,20 @@ Netflix 内部 1,500+ 微服务每日产生海量 ops 事件（service → servi
 Part II 将介绍 query engine、impact analysis 算法、client libraries。
 
 ## 相关实体
-- [High Throughput Graph Abstraction At Netflix Part I](/ch11-101-high-throughput-graph-abstraction-at-netflix-part-i/)
-- [Netflix Druid Interval Aware Caching](/ch11-091-netflix-druid-区间感知缓存-指数-ttl-分桶查询去重/)
-- [Netflix Metadata Service Model Lifecycle Graph](/ch11-034-netflix-metadata-service-and-model-lifecycle-graph/)
-- [Netflix Live Operations Human Infrastructure](/ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构/)
-- [Plaid Effects](/ch03-110-plaid-s-effects-on-the-financial-ecosystem/)
+- [High Throughput Graph Abstraction At Netflix Part I](../ch11-101-high-throughput-graph-abstraction-at-netflix-part-i)
+- [Netflix Druid Interval Aware Caching](../ch11-091-netflix-druid-区间感知缓存-指数-ttl-分桶查询去重)
+- [Netflix Metadata Service Model Lifecycle Graph](../ch11-034-netflix-metadata-service-and-model-lifecycle-graph)
+- [Netflix Live Operations Human Infrastructure](../ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构)
+- [Plaid Effects](../ch03-110-plaid-s-effects-on-the-financial-ecosystem)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 相关主题
 
 - 分布式追踪 (OpenTelemetry, Jaeger) — 跨服务调用追踪基础
 - 可观测性 pipeline 设计 — metrics/traces/logs 三支柱
 - Netflix Tech Blog 系列 (其他内容)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/high-throughput-graph-abstraction-at-netflix.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/high-throughput-graph-abstraction-at-netflix.md)
 
 ## 深度分析
 

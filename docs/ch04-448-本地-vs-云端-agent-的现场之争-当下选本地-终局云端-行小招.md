@@ -4,16 +4,16 @@
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/local-vs-cloud-agent-onsite-context-debate-xingxiaozhao.md`
 
-## 本地 vs 云端 Agent 的现场之争：当下选本地，终局云端（行小招）
+# 本地 vs 云端 Agent 的现场之争：当下选本地，终局云端（行小招）
 
 ## 相关实体
 
-- [llmreaper - dom based ai conversation exfiltration via brows](/ch01-528-llmreaper-dom-based-ai-conversation-exfiltration/)
-- [review agent：后台复盘 agent 如何判断什么值得保存](/ch04-380-review-agent-后台复盘-agent-如何判断什么值得保存/)
-- [不用再学ai了！生成结果包稳的agent来了](/ch04-170-不用再学ai了-生成结果包稳的agent来了/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/local-vs-cloud-agent-onsite-context-debate-xingxiaozhao.md)
+- [llmreaper - dom based ai conversation exfiltration via brows](../ch01-528-llmreaper-dom-based-ai-conversation-exfiltration)
+- [review agent：后台复盘 agent 如何判断什么值得保存](../ch04-380-review-agent-后台复盘-agent-如何判断什么值得保存)
+- [不用再学ai了！生成结果包稳的agent来了](../ch04-170-不用再学ai了-生成结果包稳的agent来了)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/local-vs-cloud-agent-onsite-context-debate-xingxiaozhao.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 深度分析
 
 本地 vs 云端 Agent 的现场之争：当下选本地，终局云端（行小招） 涉及agent领域的核心技术议题。
@@ -43,12 +43,12 @@
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

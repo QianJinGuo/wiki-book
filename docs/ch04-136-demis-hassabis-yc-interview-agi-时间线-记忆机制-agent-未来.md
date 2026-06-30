@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/demis-hassabis-yc-interview-jiedaotixi.md`
 
-## Demis Hassabis YC Interview: AGI 时间线、记忆机制、Agent 未来
+# Demis Hassabis YC Interview: AGI 时间线、记忆机制、Agent 未来
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/demis-hassabis-yc-interview-jiedaotixi.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/demis-hassabis-yc-interview-jiedaotixi.md)
 
 ## 摘要
 
@@ -171,11 +171,11 @@ Hassabis 提出一个科学推理能力的测试标准：
 
 ## 相关实体
 
-- [`Tencent Ai Infra Backend Engineer Huangrunpeng` — AI Infra 视角](/ch01-285-tencent-ai-infra-backend-engineer-s-guide-to-ai-system-hard/)
-- [`Pydantic Ai Progressive Agent Skills Automatorrunner` — Agent 框架视角](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — 工程化方法论
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/demis-hassabis-yc-interview-jiedaotixi.md)
-- MOC
+- `Tencent Ai Infra Backend Engineer Huangrunpeng` — AI Infra 视角
+- `Pydantic Ai Progressive Agent Skills Automatorrunner` — Agent 框架视角
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化方法论
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/demis-hassabis-yc-interview-jiedaotixi.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---
 

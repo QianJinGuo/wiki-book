@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/mellum-2-jetbrains-open-12b-moe-code-model.md`
 
-## Mellum 2 (JetBrains open-weight 12B MoE code LLM)
+# Mellum 2 (JetBrains open-weight 12B MoE code LLM)
 
 > **Background**: JetBrains 在 2026-05-29 发布 Mellum 2 技术报告（arXiv:2605.31268），是其代码补全 4B dense Mellum 的继任者。12B 总量 / 2.5B active 的 MoE 架构，64 experts / 8 active + Sliding Window + Multi-Token Prediction 双用（pretrain 辅助目标 + speculative decoding draft），FP8 + Muon + 3-phase 课程 10.6T tokens 训练，128K YaRN 扩展，SFT + RLVR 后训练出 Instruct + Thinking 两版本。Apache 2.0 全套权重释放。
 
@@ -49,7 +49,7 @@
 
 ## 深度分析
 
-1. **MTP head 一体两用是训练-推理协同设计的典范** — 单一 Multi-Token Prediction head 同时服务预训练 auxiliary objective 和 speculative decoding draft model，避免了独立 draft model 的训练/维护成本。 这与 [Deepseek Moe Parallel Strategy](/ch01-673-deepseek-moe-并行策略与gpu通信优化/) 中 DeepSeek 对 MoE 通信层面的深度定制思路一致——都是通过工程化设计最大化已有资源的利用率，而非堆叠额外算力。
+1. **MTP head 一体两用是训练-推理协同设计的典范** — 单一 Multi-Token Prediction head 同时服务预训练 auxiliary objective 和 speculative decoding draft model，避免了独立 draft model 的训练/维护成本。 这与 [Deepseek Moe Parallel Strategy](../ch01-673-deepseek-moe-并行策略与gpu通信优化) 中 DeepSeek 对 MoE 通信层面的深度定制思路一致——都是通过工程化设计最大化已有资源的利用率，而非堆叠额外算力。
 
 2. **设计哲学从"性能优先"转向"部署成本优先"** — 技术报告明确以"inference efficiency on commodity GPUs"作为 ablation 硬约束，验证每个架构选择 。这代表一种务实的产品化思维：不在学术界刷榜benchmark，而在成本敏感的真实部署场景中寻找最优解。对比国内部分模型"性能优先"的设计哲学，Mellum 2 的路线更接近 DeepSeek 的工业导向。
 
@@ -72,7 +72,7 @@
 ## 来源
 
 - [arXiv:2605.31268](https://arxiv.org/abs/2605.31268) — 原始技术报告
-- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mellum-2-jetbrains-open-12b-moe-code-model.md)
+- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mellum-2-jetbrains-open-12b-moe-code-model.md)
 
 ---
 

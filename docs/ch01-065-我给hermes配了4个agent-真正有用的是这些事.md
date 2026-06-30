@@ -14,7 +14,7 @@
 - **评分**: 42
 
 ## 原始内容
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/我给hermes配了4个agent真正有用的是这些事.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/我给hermes配了4个agent真正有用的是这些事.md)
 
 ## 深度分析
 **从"不知道拿它做什么"到"真正有用"的转变方法：先记录活动，再识别模式。** 作者自述在 OpenClaw 最热的时候也装了，但盯了一小时不知道用来做什么就放弃了。真正开始用起来是因为作者开始记录自己一天/一周的活动，然后问自己两个问题："哪些事花了很多时间？"和"哪些事必须做但对我的工作流价值不高？"。这个方法的核心洞察是：AI Agent 的价值不在于"它能做什么"，而在于"你重复做什么"。不是技术导向发现场景，而是需求导向匹配技术。
@@ -31,12 +31,12 @@
 5. **让 Agent 通过手机通知触手可及。** Telegram 或其他即时通讯渠道是 Agent 触达用户最自然的方式。真正改变行为的 Agent 不是"需要时打开电脑"，而是"日常随时收到提醒和执行结果"。这是个人 Agent 和企业 Agent 在 UX 设计上最大的区别：个人 Agent 要适应人的生活节奏，而不是工作流。
 
 ## 相关实体
-- [Hermes Agent vs OpenClaw 对比分析](/ch04-418-hermes-agent/)
-- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](/ch04-418-hermes-agent/)
-- [Hermes Agent 自进化机制源码解析](/ch04-039-hermes-agent-self-evolving-source-analysis/)
-- [深度拆解 Hermes Agent 记忆系统](/ch04-418-hermes-agent/)
-- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](/ch04-418-hermes-agent/)
-- [Hermes+Kimi K2.6 多Agent军团实战教程](/ch04-418-hermes-agent/)
+- [Hermes Agent vs OpenClaw 对比分析](../ch04-418-hermes-agent)
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch04-418-hermes-agent)
+- [Hermes Agent 自进化机制源码解析](../ch04-039-hermes-agent-self-evolving-source-analysis)
+- [深度拆解 Hermes Agent 记忆系统](../ch04-418-hermes-agent)
+- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch04-418-hermes-agent)
+- [Hermes+Kimi K2.6 多Agent军团实战教程](../ch04-418-hermes-agent)
 
 ---
 

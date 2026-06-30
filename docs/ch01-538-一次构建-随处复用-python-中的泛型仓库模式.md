@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/一次构建随处复用python-中的泛型仓库模式.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/一次构建随处复用python-中的泛型仓库模式.md)
-从微信文章 [一次构建，随处复用：Python 中的泛型仓库模式](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/一次构建随处复用python-中的泛型仓库模式.md) 提取。
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/一次构建随处复用python-中的泛型仓库模式.md)
+从微信文章 [一次构建，随处复用：Python 中的泛型仓库模式](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/一次构建随处复用python-中的泛型仓库模式.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/LIjNSJOVlsYoqnzoxjRYaw
@@ -43,8 +43,8 @@ source_url: https://mp.weixin.qq.com/s/LIjNSJOVlsYoqnzoxjRYaw
 
 ## 相关实体
 
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](/ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills/)
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](/ch04-177-民生银行基于规格驱动开发-sdd-的-codeagent-私域研发探索与实践/)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills)
+- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch04-177-民生银行基于规格驱动开发-sdd-的-codeagent-私域研发探索与实践)
 
 ---
 

@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/understand-anything-code-knowledge-graph-lum-jike.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/understand-anything-code-knowledge-graph-lum-jike.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/understand-anything-code-knowledge-graph-lum-jike.md)
 
-## Understand-Anything：代码知识图谱
+# Understand-Anything：代码知识图谱
 
 ## 一句话
 
@@ -52,21 +52,21 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 
 4. **大型项目分层扫描**：优先对核心业务域（如订单、支付、用户）单独跑 `/understand`，理解后再扩展到支撑模块，避免一次性全量扫描的高成本
 ## 相关实体
-- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](/ch05-013-spec-as-aios-ai-native-全栈交付的抗熵架构-高德技术系列第二期/)
-- [Business Agent Augmentation Layer Practitioner Methodology 20260606](/ch09-008-业务-agent-增强层架构-复用通用-agent-基座-把业务能力做成可验证增强层/)
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](/ch09-016-ai-编程智能体的质量防线-5-个代码质量控制机制-反馈传感器-语义评估-重构边界-来源追溯-智能体攻击/)
-- [Rag技术框架的演进方向](/ch01-193-rag技术框架的演进方向/)
-- [Graphify](/ch03-022-开源-ai-编程可查询的软件工程知识图谱-graphify-完整上手攻略/) — 同一赛道的另一款软件工程知识图谱工具
-- [Cursor.Com Composer 2 5](/ch04-401-introducing-composer-2-5/) — 同为 AI coding 工具
-- [How Ai Agent Memory Works](/ch04-145-how-ai-agent-memory-works/) — Agent 记忆机制
+- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05-013-spec-as-aios-ai-native-全栈交付的抗熵架构-高德技术系列第二期)
+- [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch09-008-业务-agent-增强层架构-复用通用-agent-基座-把业务能力做成可验证增强层)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch09-016-ai-编程智能体的质量防线-5-个代码质量控制机制-反馈传感器-语义评估-重构边界-来源追溯-智能体攻击)
+- [Rag技术框架的演进方向](../ch01-193-rag技术框架的演进方向)
+- [Graphify](../ch03-022-开源-ai-编程可查询的软件工程知识图谱-graphify-完整上手攻略) — 同一赛道的另一款软件工程知识图谱工具
+- [Cursor.Com Composer 2 5](../ch04-401-introducing-composer-2-5) — 同为 AI coding 工具
+- [How Ai Agent Memory Works](../ch04-145-how-ai-agent-memory-works) — Agent 记忆机制
 
 ## 第 2 来源：码途漫谈 2026-06-11 补充视角
 
-补充自 [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/understand-anything-code-knowledge-graph-matu-2026-06-11.md)，提供同一项目的第二手解读，重点补充 4 个第 1 来源未覆盖的角度。
+补充自 [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/understand-anything-code-knowledge-graph-matu-2026-06-11.md)，提供同一项目的第二手解读，重点补充 4 个第 1 来源未覆盖的角度。
 
 ### 补充 1：README 的设计哲学——"Graphs that teach, not graphs that impress"
 
-码途漫谈引用了 README 里的关键设计原则：**Graphs that teach, not graphs that impress**。这与[Graphify](/ch03-022-开源-ai-编程可查询的软件工程知识图谱-graphify-完整上手攻略/)等"高密度可视化"工具形成鲜明对比——Understand Anything 主动把图谱简化，强调"降低认知负担"而不是"展示复杂度"。这一设计哲学与第 1 来源的 Token 成本模型有内在一致性：图谱越简单 → Token 消耗越低 → 越容易做增量更新。
+码途漫谈引用了 README 里的关键设计原则：**Graphs that teach, not graphs that impress**。这与[Graphify](../ch03-022-开源-ai-编程可查询的软件工程知识图谱-graphify-完整上手攻略)等"高密度可视化"工具形成鲜明对比——Understand Anything 主动把图谱简化，强调"降低认知负担"而不是"展示复杂度"。这一设计哲学与第 1 来源的 Token 成本模型有内在一致性：图谱越简单 → Token 消耗越低 → 越容易做增量更新。
 
 ### 补充 2：知识库分析能力（不只服务代码）
 
@@ -99,7 +99,7 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 
 两源结合：第 1 来源讲技术架构与 Token 模型，第 2 来源讲设计哲学与适用场景/风险——形成完整的产品认知。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/understand-anything-code-knowledge-graph-matu-2026-06-11.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/understand-anything-code-knowledge-graph-matu-2026-06-11.md)
 
 ---
 

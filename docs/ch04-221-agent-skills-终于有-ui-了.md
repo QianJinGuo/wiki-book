@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/qoder-skill-ui-agent-human-collaboration.md`
 
-[Qoder Skill Ui Agent Human Collaboration](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/qoder-skill-ui-agent-human-collaboration.md)
+[Qoder Skill Ui Agent Human Collaboration](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/qoder-skill-ui-agent-human-collaboration.md)
 
 ## 核心论点：软件「双形态」重构
 **不是 GUI 替代 CLI，而是各归其位：**
@@ -120,12 +120,12 @@ Dashboard 作为输出端的意义被低估了。当前大多数 Agent 系统侧
 4. **Dashboard 是降低认知负荷的输出优化**：结果的可读性和决策效率直接相关。当 Agent 输出复杂数据时，优先考虑渲染成结构化 Dashboard（图表、指标卡、对比视图），而非依赖人类从文本中提取关系。
 5. **Skill 是 Agent 应用的基本原子**：Qoder 的设计暗示了一个趋势——未来的 Agent 应用将由大量 Skill 单元组成，每个 Skill 是一个「知识 + 脚本 + 界面」的微应用。这种设计让 Skill 可以跨 Agent 复用，也让 Agent 的能力边界通过 Skill 组合不断扩展。
 ## 相关实体
-- [Agent Skills Teams Architecture Evolution Selection Guide](/ch04-219-agent-skills-teams-架构演进过程及技术选型之道/)
-- [Anthropic 14 Skill Patterns Best Practices](/ch01-677-anthropic/)
-- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](/ch04-190-精选-8-个-ui-设计师必备的-ai-智能体技能-agent-skills/)
-- [Agent Skills Comprehensive Survey](/ch04-340-agent-skills-系统性综述-表示-获取-检索-进化/)
-- [Skill System Design Three Way Comparison](/ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
-- MOC
+- [Agent Skills Teams Architecture Evolution Selection Guide](../ch04-219-agent-skills-teams-架构演进过程及技术选型之道)
+- [Anthropic 14 Skill Patterns Best Practices](../ch01-677-anthropic)
+- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](../ch04-190-精选-8-个-ui-设计师必备的-ai-智能体技能-agent-skills)
+- [Agent Skills Comprehensive Survey](../ch04-340-agent-skills-系统性综述-表示-获取-检索-进化)
+- [Skill System Design Three Way Comparison](../ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.3KB | `entities/static-devirtualization-themida.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/back-engineering-static-devirtualization-themida.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/back-engineering-static-devirtualization-themida.md)
 
 ## 摘要
 
@@ -143,12 +143,12 @@ Back Engineering Labs 方法的核心洞察是：去虚拟化的主要工作量�
 
 ## 相关实体
 
-- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/back-engineering-static-devirtualization-themida.md)
-- [Static Devirtualization of Themida](/ch12-086-static-devirtualization-of-themida/)（另一版本）
-- [Static Devirtualization of Themida](/ch12-054-static-devirtualization-of-themida/)（另一版本）
+- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/back-engineering-static-devirtualization-themida.md)
+- [Static Devirtualization of Themida](../ch12-086-static-devirtualization-of-themida)（另一版本）
+- [Static Devirtualization of Themida](../ch12-054-static-devirtualization-of-themida)（另一版本）
 
-- [Static Devirtualization 2024](/ch12-018-static-devirtualization-2024/)
-- [static devirtualization of themida](/ch09-026-thought-aligner-智能体行为安全新范式-可插拔思维校正层-icml-2026/)
+- [Static Devirtualization 2024](../ch12-018-static-devirtualization-2024)
+- [static devirtualization of themida](../ch09-026-thought-aligner-智能体行为安全新范式-可插拔思维校正层-icml-2026)
 
 ---
 

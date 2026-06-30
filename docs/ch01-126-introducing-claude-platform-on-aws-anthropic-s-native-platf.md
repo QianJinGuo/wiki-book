@@ -4,28 +4,28 @@
 
 > 📊 Level ⭐ | 3.8KB | `entities/introducing-claude-platform-on-aws.md`
 
-## Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account | Amazon Web Services
-## Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account
+# Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account | Amazon Web Services
+# Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account
 Today, we’re excited to announce the general availability of Claude Platform on AWS. Claude Platform on AWS is a new service that gives customers direct access to Anthropic’s native Claude Platform experience through their AWS account, with no separate credentials, contracts, or billing relationships required. AWS is the first cloud provider to offer access to the native Claude Platform experience.
 In this post, we explore how Claude Platform on AWS works and how you can start using it today.
 
 ## Claude Platform experience through AWS
 
 ## 相关实体
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](/ch01-677-anthropic/)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](/ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick/)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](/ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
-- [Claude For Small Business](/ch01-030-introducing-claude-for-small-business/)
-- [Anthropic Claude Managed Agents Platform 2026](/ch01-677-anthropic/)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01-677-anthropic)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](../ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using)
+- [Claude For Small Business](../ch01-030-introducing-claude-for-small-business)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01-677-anthropic)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-claude-platform-on-aws.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-claude-platform-on-aws.md)
 
-- [Anthropic出手Ai的内心独白曝光了](/ch01-677-anthropic/)
-- [Claude Code Context Engineering Anthropic Thariq](/ch01-677-anthropic/)
-- [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](/ch01-677-anthropic/)
+- [Anthropic出手Ai的内心独白曝光了](../ch01-677-anthropic)
+- [Claude Code Context Engineering Anthropic Thariq](../ch01-677-anthropic)
+- [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](../ch01-677-anthropic)
 
-- MOC
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
 ## 深度分析
 
 Claude Platform on AWS 的发布标志着 Anthropic 云服务战略的重大转变。通过将原生 Claude Platform 体验直接嵌入 AWS 账户，Anthropic 消除了此前阻碍企业采用的关键障碍——多账号管理、割裂的计费体系和不一致的认证机制。

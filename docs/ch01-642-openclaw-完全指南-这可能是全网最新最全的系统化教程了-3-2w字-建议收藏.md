@@ -4,16 +4,16 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md`
 
-## OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）
+# OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）
 
 ## 相关实体
 
-- [cola dlm：字节跳动连续潜空间扩散语言模型](/ch01-307-cola-dlm-字节跳动连续潜空间扩散语言模型/)
-- [explicit vs. implicit in the age of intelligences — le secré](/ch01-395-explicit-vs-implicit-in-the-age-of-intelligences-le-secré/)
-- [what it feels like to work with mythos](/ch01-842-what-it-feels-like-to-work-with-mythos/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
+- [cola dlm：字节跳动连续潜空间扩散语言模型](../ch01-307-cola-dlm-字节跳动连续潜空间扩散语言模型)
+- [explicit vs. implicit in the age of intelligences — le secré](../ch01-395-explicit-vs-implicit-in-the-age-of-intelligences-le-secré)
+- [what it feels like to work with mythos](../ch01-842-what-it-feels-like-to-work-with-mythos)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 ## 深度分析
 
 source: wechat
@@ -26,9 +26,9 @@ ingested: 2026-05-16
 feed_name: code秘密花园
 wechat_mp_fakeid: MP_WXS_3940303428
 source_published: 2026-03-11
-## OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！
+# OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！
 2. 2W字，建议收藏）
-##  大家好，欢迎来到 code秘密花园，我是花园老师（ConardLi）。
+#  大家好，欢迎来到 code秘密花园，我是花园老师（ConardLi）。
 3. 最近 OpenClaw 太火了，这个现象级工具的热度似乎超越了以往的任何 AI 模型和产品。
 4. 微信指数直接破亿并且还在以超高速度增长：
 这段时间很多粉丝都在私聊我催更关于 OpenClaw 的内容。
@@ -55,12 +55,12 @@ source_published: 2026-03-11
 
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch04-199-openclaw-完全指南/)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](/ch01-809-fundamental-s-large-tabular-model-nexus-is-now-available-on/)
-- [Hermes Agent V014 Architecture Shugex](/ch04-418-hermes-agent/)
-- [Ai Friendly Architecture Design Taobao](/ch01-634-面向-llm-的架构设计-什么是真正的-ai-friendly-架构/)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](/ch01-204-latest-open-artifacts-20-new-orgs-new-types-of-models/)
-- [Deepseek Code Harness Competitor Tina](/ch09-068-deepseek-code-harness/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch01-809-fundamental-s-large-tabular-model-nexus-is-now-available-on)
+- [Hermes Agent V014 Architecture Shugex](../ch04-418-hermes-agent)
+- [Ai Friendly Architecture Design Taobao](../ch01-634-面向-llm-的架构设计-什么是真正的-ai-friendly-架构)
+- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](../ch01-204-latest-open-artifacts-20-new-orgs-new-types-of-models)
+- [Deepseek Code Harness Competitor Tina](../ch09-068-deepseek-code-harness)
 
 ## 实践启示
 

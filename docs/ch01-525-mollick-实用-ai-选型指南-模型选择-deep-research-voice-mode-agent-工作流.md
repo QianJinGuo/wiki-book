@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/using-ai-right-now-mollick-quick-guide.md`
 
-## Mollick 实用 AI 选型指南：模型选择·Deep Research·Voice Mode·Agent 工作流
+# Mollick 实用 AI 选型指南：模型选择·Deep Research·Voice Mode·Agent 工作流
 
 > 2026-06-07 引用自 Ethan Mollick《Using AI Right Now: A Quick Guide》，One Useful Thing，2025-06-23。
 
@@ -51,13 +51,13 @@ Voice Mode 的 killer feature 不是自然对话，而是**共享屏幕/相机**
 但构建供他人重复使用的 prompt 仍需要真实技能。
 
 ## 相关实体
-- [Opinionated Guide Ai Right Now Mollick](/ch01-897-mollick-的-ai-实用指南-免费-vs-付费-模型选择-深度研究-2025-10/)
-- [Three Years Gpt3 Gemini3 Mollick](/ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测/)
-- [Guide Ai Agents Models Apps Harnesses Mollick](/ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick/)
-- [Miroflow Deep Research Agent Harness Mirothinker](/ch01-525-mollick-实用-ai-选型指南-模型选择-deep-research-voice-mode-agent-工作流/)
-- [Meta Muse Spark Voice Mode Meta Glasses](/ch01-632-meta-announced-muse-spark-in-voice-mode-and-meta-glasses/)
+- [Opinionated Guide Ai Right Now Mollick](../ch01-897-mollick-的-ai-实用指南-免费-vs-付费-模型选择-深度研究-2025-10)
+- [Three Years Gpt3 Gemini3 Mollick](../ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测)
+- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick)
+- [Miroflow Deep Research Agent Harness Mirothinker](https://github.com/QianJinGuo/wiki/blob/main/entities/miroflow-deep-research-agent-harness-mirothinker.md)
+- [Meta Muse Spark Voice Mode Meta Glasses](../ch01-632-meta-announced-muse-spark-in-voice-mode-and-meta-glasses)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/using-ai-right-now-a-quick-guide.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/using-ai-right-now-a-quick-guide.md)
 
 ## 深度分析
 

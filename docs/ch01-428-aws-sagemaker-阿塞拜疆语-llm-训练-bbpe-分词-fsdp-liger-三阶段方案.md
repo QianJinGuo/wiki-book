@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/aws-sagemaker-azerbaijani-lm.md`
 
-## AWS SageMaker 阿塞拜疆语 LLM 训练：BBPE 分词 + FSDP + Liger 三阶段方案
+# AWS SageMaker 阿塞拜疆语 LLM 训练：BBPE 分词 + FSDP + Liger 三阶段方案
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-sagemaker-azerbaijani-lm.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-sagemaker-azerbaijani-lm.md)
 
 > **Core insight**: 低资源、高形态复杂度语言（如阿塞拜疆语）的 LLM 训练需解决三个相互依赖的瓶颈：编码效率（BBPE 自定义分词器将 fertility 从 3.22 降至 1.59 tokens/word）、GPU 内存利用率（FSDP 将梯度/优化器状态分片，Liger Kernel 融合算子减少中间内存分配）和参数高效微调（两阶段 CPT + LoRA）。三阶段流水线 tokenizer→CPT→LoRA 可复用于任何低资源语言
 
@@ -66,14 +66,14 @@ AWS 教程展示了"可以做到"，但未讨论"如何做好"——生产级低
 AWS 教程提供了可运行的基础流水线，但生产化需要自行补齐：持续数据更新、用户反馈循环、A/B 测试框架和监控告警。
 
 ## 相关实体
-- [Aws Reinforcement Fine Tuning Llm As Judge](/ch01-437-aws-reinforcement-fine-tuning-llm-as-judge/)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
-- [Aws Sagemaker Capacity Aware Inference Fallback](/ch01-301-aws-sagemaker-capacity-aware-inference-fallback/)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
-- [Aws Grpo Rlvr Sagemaker Math Reasoning](/ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning/)
+- [Aws Reinforcement Fine Tuning Llm As Judge](../ch01-437-aws-reinforcement-fine-tuning-llm-as-judge)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
+- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01-301-aws-sagemaker-capacity-aware-inference-fallback)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](../ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning)
 
 ## 相关引用
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-sagemaker-azerbaijani-lm.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-sagemaker-azerbaijani-lm.md)
 
 ---
 

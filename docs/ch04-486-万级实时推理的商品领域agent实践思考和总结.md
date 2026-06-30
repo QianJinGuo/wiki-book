@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/taobao-product-domain-agent-architecture.md`
 
-## 万级实时推理的商品领域Agent实践思考和总结
+# 万级实时推理的商品领域Agent实践思考和总结
 
 ## 深度分析
 
@@ -38,13 +38,13 @@
 5. **在离线统一**：同一套Workflow逻辑，通过触发源差异区分在线/离线，代码复用率最大化
 
 ## 相关实体
-- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](/ch04-223-tmic-ai小新-deepagent架构演进/)
-- [Verizon Connect Agentic Ai 100K Users](/ch04-097-verizon-connect-agentic-ai-10万用户规模的工程实践/)
-- [Skillos Learning Skill Curation For Self Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](/ch04-181-co-existence-vs-co-intelligence-mollick-s-paradigm-shift-on/)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](/ch02-prompt/)
+- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch04-223-tmic-ai小新-deepagent架构演进)
+- [Verizon Connect Agentic Ai 100K Users](../ch04-097-verizon-connect-agentic-ai-10万用户规模的工程实践)
+- [Skillos Learning Skill Curation For Self Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch04-181-co-existence-vs-co-intelligence-mollick-s-paradigm-shift-on)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/taobao-product-domain-agent-architecture.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/taobao-product-domain-agent-architecture.md)
 
 ---
 

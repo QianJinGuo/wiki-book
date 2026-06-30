@@ -11,7 +11,7 @@
 - 如果预计超过 62.5 分钟才需要 → 放任缓存过期，下次重新写入更划算
 - 该临界值**不随模型型号变化**（Opus/Sonnet/Haiku 均相同）
 - 该临界值**不随前缀 token 规模变化**（5K 或 500K 均相同）
---- See also [Claude Code Architecture](/ch01-571-claude-code-架构解析/)
+--- See also [Claude Code Architecture](../ch01-571-claude-code-架构解析)
 
 ## 深度分析
 ### 1. 定价结构的数学本质
@@ -124,7 +124,7 @@ else:
 文章特别强调需要**自建监控**来验证缓存实际生效：
 ```
 
-## 检查缓存是否真正创建/命中
+# 检查缓存是否真正创建/命中
 assert usage.cache_creation_input_tokens > 0 or usage.cache_read_input_tokens > 0, "Cache not active!"
 ```
 对于高频 agent 场景，建议在日志中记录：

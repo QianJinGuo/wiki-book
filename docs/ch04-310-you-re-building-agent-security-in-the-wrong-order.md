@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/youre-building-agent-security-in-the-wrong-order.md`
 
-## You're building agent security in the wrong order
+# You're building agent security in the wrong order
 
 CrewAI 创始人提出的 Agent 安全建设顺序论：企业普遍先建安全层（IAM/授权/监控），再补 Harness（记忆/工具/状态管理），顺序反了。正确顺序是 Harness → Governance → Identity & Auth。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/youre-building-agent-security-in-the-wrong-order.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/youre-building-agent-security-in-the-wrong-order.md)
 
 ## 摘要
 
@@ -40,7 +40,7 @@ CrewAI 的 Flows 架构通过确定性路由、可观测执行和升级路径来
 
 ### 2. Harness Engineering 是 Agent 安全的前置依赖
 
-这与 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 框架的核心理念完全一致：**Harness 不是安全的替代品，而是安全的必要前提。** 文章中的"Make it boring but make it reliable"——让 Agent 的行为可预测到"无聊"的程度——正是 Harness 的定义。一个可靠的 Harness 让安全团队能用一句话描述："这是 Agent 做的事、这是它可能失败的地方、这是失败时会发生什么。" 这句话是所有安全策略的语义基础。
+这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 框架的核心理念完全一致：**Harness 不是安全的替代品，而是安全的必要前提。** 文章中的"Make it boring but make it reliable"——让 Agent 的行为可预测到"无聊"的程度——正是 Harness 的定义。一个可靠的 Harness 让安全团队能用一句话描述："这是 Agent 做的事、这是它可能失败的地方、这是失败时会发生什么。" 这句话是所有安全策略的语义基础。
 
 ### 3. 预算驱动 vs 问题驱动的建设顺序错位
 
@@ -64,12 +64,12 @@ CrewAI 的 Flows 架构通过确定性路由、可观测执行和升级路径来
 
 ### 相关实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- Tencentdb Agent Memory Context Offloading
-- [how developers can build agentic agreement workflows on docu](/ch04-270-how-developers-can-build-agentic-agreement-workflows-on-docu/)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [Tencentdb Agent Memory Context Offloading](https://github.com/QianJinGuo/wiki/blob/main/entities/tencentdb-agent-memory-context-offloading.md)
+- [how developers can build agentic agreement workflows on docu](../ch04-270-how-developers-can-build-agentic-agreement-workflows-on-docu)
 
 ---
 

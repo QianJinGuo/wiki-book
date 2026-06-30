@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/steipete-skill-cleaner-liangzide.md`
 
-## 龙虾之父教你省钱：开源Skill给你的Skill减肥
+# 龙虾之父教你省钱：开源Skill给你的Skill减肥
 
-> **来源**：量子位（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/steipete-skill-cleaner-liangzide.md)
+> **来源**：量子位（2026-05-26）| 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/steipete-skill-cleaner-liangzide.md)
 
 ## 深度分析
 
@@ -71,13 +71,13 @@ user happy
 5. **用标准化短词组精简描述**：调试类→debug/inspect/fix；部署类→deploy/release/verify；检索类→search/sync/summarize。
 
 ## 相关实体
-- [Openclaw Prompt Context Harness](/ch04-239-agent-harness-a3-subagent-7-prompt/)
-- [Skill System Design Three Way Comparison](/ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
-- [Openclaw Agent Loop Design Patterns](/ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式/)
-- [Tencent Skill Writing Complete Playbook Jackjchou](/ch04-118-鹅厂-skill-写作完整-playbook-14-章节-end-to-end-实战-工程化评估-腾讯一线踩坑/)
-- [Ai Skill Skill Creator 源码拆解](/ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南/)
+- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
+- [Skill System Design Three Way Comparison](../ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age)
+- [Openclaw Agent Loop Design Patterns](../ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04-118-鹅厂-skill-写作完整-playbook-14-章节-end-to-end-实战-工程化评估-腾讯一线踩坑)
+- [Ai Skill Skill Creator 源码拆解](../ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/steipete-skill-cleaner-liangzide.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/steipete-skill-cleaner-liangzide.md)
 
 ---
 

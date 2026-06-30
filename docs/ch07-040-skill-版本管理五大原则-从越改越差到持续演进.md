@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/skill-version-management-semantic-versioning-practices-winty.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-version-management-semantic-versioning-practices-winty.md)
+> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-version-management-semantic-versioning-practices-winty.md)
 
 Skill 版本管理是企业 AI 系统落地的硬骨头。与代码不同，Skill 是一段"自然语言指令"，它的"对不对"、"有没有变好"没有工具能直接告诉你。本文提出 Skill 版本管理的五大原则以及从 v1.0.0 到 v1.3.0 的真实演进案例。
 
@@ -99,9 +99,9 @@ v1.2.0 → v1.3.0 diff:
 ## 与已有实体的关联
 
 - Hermes Agent Skill Authoring — Skill 规范与编写指南
-- [Claude Code Skill Writing Guide](/ch07-020-claude-code-skill-md-写作指南/) — 另一套 Skill 编写范式
-- [高德 Uplift Model Harness](/ch05-047-面向复杂算法任务的-ai-agent-高德-long-running-harness-架构与-uplift-模型迭代应用/) — 类似的版本演进思路
-- [阿里云 LoongSuite Pilot](/ch09-005-让-coding-agent-从黑盒到透明-阿里云-agent-观测审计数据采集实践-loongsuite-pilot/) — 企业级 Agent 系统的质量保障
+- [Claude Code Skill Writing Guide](../ch07-020-claude-code-skill-md-写作指南) — 另一套 Skill 编写范式
+- [高德 Uplift Model Harness](../ch05-047-面向复杂算法任务的-ai-agent-高德-long-running-harness-架构与-uplift-模型迭代应用) — 类似的版本演进思路
+- [阿里云 LoongSuite Pilot](../ch09-005-让-coding-agent-从黑盒到透明-阿里云-agent-观测审计数据采集实践-loongsuite-pilot) — 企业级 Agent 系统的质量保障
 
 ## 结论
 

@@ -15,16 +15,16 @@ Daniel San 给出的量化参考很有价值：半小时的探索性会话可能
 - **工具集最小化**：在 Subagent 的 tools 字段中，只给完成该任务所需的最小工具集——比如审查类子代理就不需要 Bash/Terminal 工具，从权限层面就堵住越权执行的可能
 - **结果返回规范**：子代理返回的应该是"结论+证据+下一步动作"，而不是完整探索过程。带 2-3 个文件锚点即可，保持主 Agent 的注意力不被稀释
 - **可观测性**：使用 context-timeline hook 可以让长会话的委派关系变得透明可查，这是建立对 Agent 系统信任的重要基础
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/subagents-详解claude-code-如何避免上下文污染-v2.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/subagents-详解claude-code-如何避免上下文污染-v2.md)
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](/ch01-309-claude-code-agent-teams/)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](/ch09-039-claude-md-12-条规则-karpathy-扩展模板/)
-- [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制/)
-- [Claude Code Subagent 上下文卫生](/ch03-002-obsidian-claude-code-集成指南/)
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](/ch07-006-claude-code-skills-mcp-rules-source-analysis/)
-- [claude-code-kairos-paradigm-2026](/ch01-282-claude-code-kairos-paradigm-2026/)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09-039-claude-md-12-条规则-karpathy-扩展模板)
+- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制)
+- [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-subagent-context-hygiene.md)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07-006-claude-code-skills-mcp-rules-source-analysis)
+- [claude-code-kairos-paradigm-2026](../ch01-282-claude-code-kairos-paradigm-2026)
 
 ---
 

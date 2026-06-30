@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/superpowers-claude-code-engineering-brain-baidu-geek.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/superpowers-claude-code-engineering-brain-baidu-geek.md)
+> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/superpowers-claude-code-engineering-brain-baidu-geek.md)
 
 17000+ 字深度解析 Claude Code Superpowers：14 技能拆解、brainstorming SKILL.md 源码解析、概率操控技巧、querit.ai 真实案例复盘、负向收益诚实评估。百度Geek说/奔跑的脆皮肠。
 
@@ -62,10 +62,10 @@
 
 ## 相关实体
 
-- [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Claude Code Skills Superpowers 实践](/ch01-408-claude-code-skills-superpowers-practice/)
-- [AI Coding Agent Token 成本控制](/ch09-119-ai-coding-agent-token-成本控制五层模型/)
-- [Skill 版本对比五大原则](/ch07-049-skill-版本对比五大原则-从-两个数字比大小-到工程化质量门禁/)
+- [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [Claude Code Skills Superpowers 实践](../ch01-408-claude-code-skills-superpowers-practice)
+- [AI Coding Agent Token 成本控制](../ch09-119-ai-coding-agent-token-成本控制五层模型)
+- [Skill 版本对比五大原则](../ch07-049-skill-版本对比五大原则-从-两个数字比大小-到工程化质量门禁)
 
 ---
 

@@ -20,7 +20,7 @@
 
 ```python
 
-## Bedrock Agent 核心组件
+# Bedrock Agent 核心组件
 agent_config = {
     "agent_name": "multi-agent-coordinator",
     "foundation_model": "anthropic.claude-sonnet-4-20250514",
@@ -46,7 +46,7 @@ import boto3
 
 bedrock = boto3.client('bedrock-agent', region_name='us-east-1')
 
-## 创建 Agent
+# 创建 Agent
 response = bedrock.create_agent(
     agentName='research-agent',
     agentResourceRoleArn='arn:aws:iam::123456789012:role/BedrockAgentRole',
@@ -65,20 +65,20 @@ print(f"Created agent: {agent_id}")
 
 ```python
 
-## 创建 Agent 版本（快照）
+# 创建 Agent 版本（快照）
 bedrock.create_agent_version(
     agentId=agent_id,
     description='Production version 1.0'
 )
 
-## 创建 Alias（指向特定版本）
+# 创建 Alias（指向特定版本）
 bedrock.create_agent_alias(
     agentId=agent_id,
     agentAliasName='production',
     agentVersion='1'
 )
 
-## 通过 Alias 调用（生产推荐）
+# 通过 Alias 调用（生产推荐）
 alias_arn = f"arn:aws:bedrock:{region}:{account}:agent-alias/{agent_id}/production"
 ```
 
@@ -291,7 +291,7 @@ class HierarchicalAgentManager:
 
 ```python
 
-## 使用 Bedrock Converse API 实现 Agent 间通信
+# 使用 Bedrock Converse API 实现 Agent 间通信
 class AgentCommunication:
     def __init__(self):
         self.bedrock = boto3.client('bedrock-agent-runtime')
@@ -358,7 +358,7 @@ Account A (Agent Owner)          Account B (Agent Consumer)
 import boto3
 from botocore.config import Config
 
-## Account B: 配置跨账户访问 Account A 的 Agent
+# Account B: 配置跨账户访问 Account A 的 Agent
 class CrossAccountAgentClient:
     def __init__(self, provider_account_id, provider_region='us-east-1'):
         self.provider_account_id = provider_account_id
@@ -409,7 +409,7 @@ class CrossAccountAgentClient:
         
         return response
 
-## Account A: 设置跨账户信任策略
+# Account A: 设置跨账户信任策略
 trust_policy = {
     "Version": "2012-10-17",
     "Statement": [
@@ -436,7 +436,7 @@ trust_policy = {
 
 ```python
 
-## 定义 Action Group (相当于 MCP Tools)
+# 定义 Action Group (相当于 MCP Tools)
 action_group = {
     "name": "code_analysis_tools",
     "description": "Tools for code analysis and refactoring",
@@ -487,7 +487,7 @@ action_group = {
 
 ```python
 
-## 使用 Bedrock Converse API 进行函数调用
+# 使用 Bedrock Converse API 进行函数调用
 class FunctionCallingAgent:
     def __init__(self):
         self.bedrock = boto3.client('bedrock-agent-runtime')
@@ -542,7 +542,7 @@ class FunctionCallingAgent:
         }
         
         if name in function_map:
-            return function_map[name](/ch11-**args/)
+            return function_map[name](../ch11-**args)
         return {'error': f'Unknown function: {name}'}
 ```
 
@@ -740,7 +740,7 @@ class BedrockAgentRetry:
 
 ```python
 
-## 为 Agent 配置安全护栏
+# 为 Agent 配置安全护栏
 bedrock.put_agent_guardrail(
     agentIdentifier=f"arn:aws:bedrock:{region}:{account}:agent/{agent_id}",
     guardrailIdentifier='guardrail-xxxxx',
@@ -802,7 +802,7 @@ def emit_agent_metrics(agent_id: str, metrics: dict):
 import logging
 import watchtower
 
-## 配置 Agent 日志到 CloudWatch
+# 配置 Agent 日志到 CloudWatch
 logger = logging.getLogger('bedrock-agent')
 logger.addHandler(watchtower.CloudWatchLogHandler(
     log_group='/aws/bedrock/agents',
@@ -862,10 +862,10 @@ def log_agent_interaction(
 ```python
 import boto3
 
-## 使用 EventBridge 触发 Agent
+# 使用 EventBridge 触发 Agent
 events = boto3.client('events')
 
-## 创建 EventBridge 规则
+# 创建 EventBridge 规则
 events.put_rule(
     Name='agent-trigger-rule',
     EventPattern={
@@ -878,7 +878,7 @@ events.put_rule(
     RoleArn='arn:aws:iam::123456789012:role/EventBridgeRole'
 )
 
-## 关联 Lambda 目标
+# 关联 Lambda 目标
 events.put_targets(
     Rule='agent-trigger-rule',
     Targets=[
@@ -896,9 +896,9 @@ events.put_targets(
 
 ## 十、相关资源
 
-- → Multi Agent Collaboration Patterns — 多智能体协作模式通用理论
-- → [Openclaw Multi Agent Team Practice](/ch04-038-openclaw-multi-agent-team-practice-v2/) — OpenClaw 多智能体团队实践
-- → [Building Enterprise Agentic Ai With Kiro On Aws](/ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客/) — Kiro 在 AWS 上的企业 Agent 构建
+- → [Multi Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) — 多智能体协作模式通用理论
+- → [Openclaw Multi Agent Team Practice](../ch04-038-openclaw-multi-agent-team-practice-v2) — OpenClaw 多智能体团队实践
+- → [Building Enterprise Agentic Ai With Kiro On Aws](../ch04-144-用-kiro构建-ai-基于-aws-基础设施快速构建企业级-agentic-ai-平台-亚马逊aws官方博客) — Kiro 在 AWS 上的企业 Agent 构建
 
 ---
 
@@ -931,9 +931,9 @@ events.put_targets(
 *本文档基于 AWS Bedrock 官方文档和行业最佳实践编写，适用于生产环境部署参考。*
 
 ## 相关实体
-- [Multi Agent Collaboration 2025 Top 10 Challenges](/ch04-451-anthropic-multi-agent-research-system/)
-- [aws bedrock dynamic document extraction pipeline](/ch11-029-aws-bedrock-dynamic-document-extraction-pipeline/)
-- MOC
+- [Multi Agent Collaboration 2025 Top 10 Challenges](https://github.com/QianJinGuo/wiki/blob/main/queries/multi-agent-collaboration-2025-top-10-challenges.md)
+- [aws bedrock dynamic document extraction pipeline](../ch11-029-aws-bedrock-dynamic-document-extraction-pipeline)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---
 

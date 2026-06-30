@@ -4,10 +4,10 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/the-code-as-content-era-20260606.md`
 
-## The Code-as-Content Era
+# The Code-as-Content Era
 
 > 文章核心论点：当 AI 把软件生产的摩擦降到趋近于零时，应用本身开始像模因（meme）一样被生产、消费、传播与遗忘——作者把这一阶段命名为 **Code-as-Content Era**。
-> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-code-as-content-era-20260606.md)
+> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-code-as-content-era-20260606.md)
 
 ## 摘要
 
@@ -58,7 +58,7 @@
 - **文化时机**：窗口期以"小时"计，错过的代价是整轮被遗忘。
 - **可组合性**：remix 别人作品的能力，比原创能力更被市场奖励。
 
-这与 [17 种 agent 架构演进](/ch04-507-17种agent架构演进-控制流设计的完整演化史/) 中关于"agent 必须能被快速 prompt 改写与组合"的判断一脉相承——vibe coding 工具只是 agentic 编程的 UI 表现，背后的范式是"组合性优先于完整性"。
+这与 [17 种 agent 架构演进](../ch04-507-17种agent架构演进-控制流设计的完整演化史) 中关于"agent 必须能被快速 prompt 改写与组合"的判断一脉相承——vibe coding 工具只是 agentic 编程的 UI 表现，背后的范式是"组合性优先于完整性"。
 
 ### 五、对软件工程的冲击
 
@@ -80,16 +80,16 @@
 
 ## 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Claude Opus 48 The System Card B8460F](/ch01-244-claude-opus-4-8-the-system-card/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
-- [17 种 agent 架构演进](/ch04-507-17种agent架构演进-控制流设计的完整演化史/)
-- [Karpathy: Software 3.0 与 vibe coding 时代的终结](/ch01-745-karpathy加入anthropic后首讲-vibe-coding已死-software3-0来了/)
-- [Erik Schluntz: vibe coding 在生产环境](/ch09-098-vibe-coding-in-production-erik-schluntz-anthropic/)
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架/)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Claude Opus 48 The System Card B8460F](../ch01-244-claude-opus-4-8-the-system-card)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
+- [17 种 agent 架构演进](../ch04-507-17种agent架构演进-控制流设计的完整演化史)
+- [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch01-745-karpathy加入anthropic后首讲-vibe-coding已死-software3-0来了)
+- [Erik Schluntz: vibe coding 在生产环境](../ch09-098-vibe-coding-in-production-erik-schluntz-anthropic)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/aws-transform-ezconvertbi-bi-migration.md`
 
-## AWS Transform now automates BI migration to Amazon Quick in days
+# AWS Transform now automates BI migration to Amazon Quick in days
 Migrating to Amazon Quick doesn't have to mean starting from scratch. Your dashboards encode hard-won domain knowledge: calculated fields your analysts perfected, layouts your executives rely on every Monday morning, security rules tuned to your org chart. You want AI-powered insights and serverless scale, but you're staring at hundreds of dashboards and a migration estimate measured in months. Now you can significantly accelerate your migration to Amazon Quick, potentially reducing timelines from months to days.
 In this post, we walk through the full journey, from setting up your migration workspace in AWS Transform to subscribing to partner agents through AWS Marketplace to unlocking Amazon Quick capabilities that change how your organization consumes data.
 
@@ -12,15 +12,15 @@ In this post, we walk through the full journey, from setting up your migration w
 If you're running a legacy BI tool, you face compounding pressures that go beyond licensing fees:
 
 ## 相关实体
-- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](/ch01-609-aws-一周综述-aws-transform-上线一周年-aws-云端-claude-platform-ec2-m3-u/)
-- [Cloudsectidbits Masso Cognito Sso.Html](/ch11-209-cloudsectidbits/)
-- [Amazon Bedrock Api Security Guide](/ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南/)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](/ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/)
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](/ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt/)
+- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](../ch01-609-aws-一周综述-aws-transform-上线一周年-aws-云端-claude-platform-ec2-m3-u)
+- [Cloudsectidbits Masso Cognito Sso.Html](../ch11-209-cloudsectidbits)
+- [Amazon Bedrock Api Security Guide](../ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](../ch11-035-基于-prowler-与-genai-构建金融行业智能合规中枢-alt)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-transform-ezconvertbi-bi-migration.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-transform-ezconvertbi-bi-migration.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析
 
 AWS Transform 与 Wavicle Data Solutions 的 EZConvertBI 合作，将 AI Agent 引入 BI 迁移领域，这代表了企业现代化工具正在经历代际跃迁。传统的 BI 迁移项目通常需要数月时间，涉及大量人工评估、依赖映射和资产重建工作。而基于 AI Agent 的自动化方法通过分析、转换两个阶段的 Agent 协同，能够在 AWS 账户内完成整个迁移流程，所有数据不离开客户环境，没有外部传输的安全顾虑。这种方法可能将数百个仪表板的迁移从月级别压缩到天级别，这对企业决策者来说是一个根本性的范式转变。

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 9.1KB | `entities/what-is-urban-density-design-a-clear-guide.md`
 
-## Urban Density Design：城市密度设计完全指南
+# Urban Density Design：城市密度设计完全指南
 
 ## 摘要
 
@@ -126,11 +126,11 @@
 
 ## 相关实体
 
-- [What Figma Made Visible — 设计系统思维](/ch03-018-what-figma-made-visible-component-model-bridging-design-and/)
-- [Haptics Design — 交互设计](/ch01-488-haptics-design-and-implementation-microsoft-design/)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
+- [What Figma Made Visible — 设计系统思维](../ch03-018-what-figma-made-visible-component-model-bridging-design-and)
+- [Haptics Design — 交互设计](../ch01-488-haptics-design-and-implementation-microsoft-design)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-is-urban-density-design-a-clear-guide.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-is-urban-density-design-a-clear-guide.md)
 
 ---
 

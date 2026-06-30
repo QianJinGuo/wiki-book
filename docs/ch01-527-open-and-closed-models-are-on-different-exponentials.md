@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/interconnects-ai-p-open-and-closed-models-are-on-different.md`
 
-## Open and Closed Models Are on Different Exponentials
+# Open and Closed Models Are on Different Exponentials
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/interconnects-ai-p-open-and-closed-models-are-on-different.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/interconnects-ai-p-open-and-closed-models-are-on-different.md)
 
 ## 摘要
 
@@ -92,10 +92,10 @@ coding agent 是当前唯一明确展示"用户愿意为更好智能支付大幅
 ## 相关实体
 
 - 模型经济学
-- [Karpathy: Vibe Coding 到 Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [Anthropic Claude](/ch09-043-cat-wu-anthropic-claude-code-cowork-产品负责人访谈/)
-- [OpenAI](/ch05-024-openai-skills-shell-compaction-终结提示词工程的三位一体agent原语/)
-- [开源 AI](/ch03-022-ai-graphify/)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- Anthropic Claude
+- OpenAI
+- 开源 AI
 
 ---
 

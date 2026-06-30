@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐ | 3.6KB | `entities/the-agentic-trust-management-platform-drata.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-agentic-trust-management-platform-drata.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-agentic-trust-management-platform-drata.md)
 
 ## 核心要点
 - 来源：drata.com
 - 评分：v=7, c=8, product=56
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-agentic-trust-management-platform-drata.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-agentic-trust-management-platform-drata.md)
 
 ## 深度分析
 Drata 的"Agentic Trust Management"定位揭示了 GRC（治理、风险、合规）领域正在发生结构性转变：
@@ -36,7 +36,7 @@ Drata 积累了 8,000+ 企业客户，其平台的网络效应在于：客户越
 - **在 ISO 42001 成为行业标准前抢先获得认证**：ISO 42001 是 2024 年新发布的标准，目前持有者寥寥。早期认证将在 AI 合规需求爆发时形成显著的差异化优势。
 
 ## 相关实体
-- [Exaforce | Agentic SOC Platform and MDR](/ch04-018-exaforce-agentic-soc-platform-and-mdr/)
+- [Exaforce | Agentic SOC Platform and MDR](../ch04-018-exaforce-agentic-soc-platform-and-mdr)
 
 ---
 

@@ -36,14 +36,14 @@ OpenAI 发布的 GPT-5 使用建议：
 1. **重新审视现有应用的 prompt 设计，移除过度推理引导**。如果现有应用仍在使用"首先...其次...最后..."类的显式推理引导，切换到 GPT-5 后应测试移除这些引导后的效果。新的 prompt 策略应该是：简洁指令 + 期望输出格式 + 相关上下文，推理过程交给模型本身。需要在同等测试集上做 A/B 对比验证。
 2. **对于长文档处理场景，优先测试 GPT-5 的"全文档输入"方案**。此前基于 RAG 的长文档处理（切片 → 检索 → 生成）存在信息碎片化和检索精度问题。GPT-5 的 1M token 上下文允许直接输入完整文档。应测试全文档输入的精度与成本权衡：虽然单次调用成本更高，但避免了复杂的多步 RAG pipeline 引入的延迟和错误累积。对于需要全文理解的任务（如法律合同分析、技术规范审查），全文档输入可能整体更优。
 3. **在多模态场景中，优先将 GPT-5 用于跨模态推理而非单模态任务**。如果业务只需要图像描述或音频转写，GPT-5 的性价比不如专用模型（Whisper、GPT-4V）。但当业务需要"根据视频内容回答复杂问题"或"结合图表和说明书做故障诊断"时，GPT-5 的原生多模态推理优势显著。评估时将使用场景按跨模态复杂度分级，再决定是否切换到 GPT-5。
-4. **对于生产级结构化输出，仍保留输出验证层**。尽管 GPT-5 的 JSON 模式可靠性大幅提升，生产环境不应完全移除 schema 验证。LLM 的概率本质意味着即使模型能力提升，仍可能在边界条件下输出非预期格式。建议的架构：GPT-5 JSON 模式输出 → Pydantic 验证 → 降级处理（格式异常时回退到简单回复或人工介入）。参考 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) 的 Guardrails 设计。
+4. **对于生产级结构化输出，仍保留输出验证层**。尽管 GPT-5 的 JSON 模式可靠性大幅提升，生产环境不应完全移除 schema 验证。LLM 的概率本质意味着即使模型能力提升，仍可能在边界条件下输出非预期格式。建议的架构：GPT-5 JSON 模式输出 → Pydantic 验证 → 降级处理（格式异常时回退到简单回复或人工介入）。参考 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的 Guardrails 设计。
 5. **工具调用架构从"单工具顺序调用"升级到"多工具并行协调"**。GPT-5 支持多工具并行调用的能力，使得 Agent 可以一次性规划多个工具调用、并行执行、聚合结果，而无需像 GPT-4 时代那样逐个工具串行调用。这对需要多数据源查询（如同时查询天气、股票、新闻）的应用，延迟可以从 O(n) 降低到 O(1)。建议在 Agent 架构中实现工具调用的并行化改造。
 ## 相关实体
-- [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai/)
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](/ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价/)
-- [Yann Dubois Openai Post Training Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
-- [Openai Models Codex Amazon Bedrock Ga](/ch09-048-openai-models-and-codex-on-amazon-bedrock-are-now-generally/)
-- [Openai Gdpval Real Ai Agents Threshold](/ch04-091-openai-gdpval-and-the-real-ai-agents-threshold-mollick-view/)
+- [Openai Gpt Realtime Voice Models Qbitai](../ch01-593-openai-gpt-realtime-voice-models-qbitai)
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](../ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价)
+- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
+- [Openai Models Codex Amazon Bedrock Ga](../ch09-048-openai-models-and-codex-on-amazon-bedrock-are-now-generally)
+- [Openai Gdpval Real Ai Agents Threshold](../ch04-091-openai-gdpval-and-the-real-ai-agents-threshold-mollick-view)
 
 ---
 

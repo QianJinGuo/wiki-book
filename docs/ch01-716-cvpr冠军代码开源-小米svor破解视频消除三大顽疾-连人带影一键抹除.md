@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/cvpr-xiaomi-svor-video-masking.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cvpr-xiaomi-svor-video-masking.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cvpr-xiaomi-svor-video-masking.md)
 
 ## Summary
 小米SVOR视频消除技术，CVPR冠军代码开源。
@@ -14,16 +14,16 @@
 - 小米SVOR
 - 视频消除三大顽疾
 ## 相关实体
-- [A2Rd Agentic Autoregressive Diffusion Long Video](/ch04-410-a²rd-agentic-autoregressive-diffusion-for-long-video-consis/)
-- [Yumanju Ai Full Flow Efficiency](/ch01-356-柚漫剧-ai-全流程提效拆解/)
-- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
-- [腾讯研究院Ai速递 20260430](/ch01-338-腾讯研究院ai速递-20260430/)
-- [Gbrain Garry Tan Yanfa Zhili](/ch01-497-garry-tan/)
+- [A2Rd Agentic Autoregressive Diffusion Long Video](../ch04-410-a²rd-agentic-autoregressive-diffusion-for-long-video-consis)
+- [Yumanju Ai Full Flow Efficiency](../ch01-356-柚漫剧-ai-全流程提效拆解)
+- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](../ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南)
+- [腾讯研究院Ai速递 20260430](../ch01-338-腾讯研究院ai速递-20260430)
+- [Gbrain Garry Tan Yanfa Zhili](../ch01-497-garry-tan)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cvpr-xiaomi-svor-video-masking.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cvpr-xiaomi-svor-video-masking.md)
 
-- [Joyai Echo Long Video Jd Qbitai](/ch01-763-5分钟ai长视频不翻车-国产开源框架杀到全球第一梯队/)
-- MOC
+- [Joyai Echo Long Video Jd Qbitai](../ch01-763-5分钟ai长视频不翻车-国产开源框架杀到全球第一梯队)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 ### 技术架构：从单点优化到系统协同
 SVOR的设计哲学并非追求单一指标的SOTA，而是**在不完美条件下保证可用性**。

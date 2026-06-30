@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/claude-code-core-developer-lessons-action-space-design.md`
 
-## Lessons from Building Claude Code: Seeing like an Agent
+# Lessons from Building Claude Code: Seeing like an Agent
 **作者**：Thariq（Claude Code 团队）| **来源**：X (@trq212) | **时间**：2026年2月28日
 
 ## 一、Action Space 才是你的产品
@@ -12,17 +12,17 @@
 真正上线后你会发现，最先出问题的往往是两件事：
 
 ## 相关实体
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-677-anthropic/)
-- [Claude Code Agent Teams Task Decomposition Ruofei](/ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据/)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
-- [Claude Code Tool Design Evolution Anthropic](/ch01-677-anthropic/)
-- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-677-anthropic)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
+- [Claude Code Tool Design Evolution Anthropic](../ch01-677-anthropic)
+- [Claude Code Hackathon Winners 2026](../ch01-772-claude-code-hackathon-winners-2026)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-core-developer-lessons-action-space-design.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-core-developer-lessons-action-space-design.md)
 
-- [new york design week is here, may 14–20 - core77](/ch03-009-ic-work-is-the-new-career-flex/)
+- new york design week is here, may 14–20 - core77
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 ## 深度分析
 
 **Action Space 设计的本质是接口契约，而非功能堆砌**。Thariq 在总结 Claude Code 开发经验时指出，很多人在构建 Agent 时第一反应是不断叠加工具和能力，但真正上线后暴露的核心问题往往不是"能力不够"，而是"模型不知道什么时候该用哪个工具"以及"出了问题无法回放和定位"。这揭示了一个重要的工程认知：Agent 的 Action Space 本质上是一个接口契约系统，而不是功能清单。每一个新增工具都是对模型认知负载的增加，同时也是对系统风险面的扩展。工具的数量并不是优势，反而是复杂度的直接来源 。

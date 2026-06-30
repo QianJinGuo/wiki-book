@@ -53,17 +53,17 @@ Claude Code 的七大模块设计，本质上是在回答一个问题：**当 Ag
 3. **工具是带语义的对象**。不是函数签名，而是包含权限、并发策略、执行约束的完整运行时单元。设计工具接口时，同步/异步、流式/非流式、幂等性都是第一公民属性。
 4. **权限系统的本质是决策链，不是弹框**。每一个"是否允许"的判断，背后都应该有明确的规则层 → 自动判定 → 交互层的链条。弹框只是交互层的末端，隔离执行才是最后防线。
 5. **多 Agent 的核心挑战是任务回收，不是 prompt 分工**。子 Agent 的结果如何被主 Agent 理解、接纳、继续使用，决定了整个系统的上界。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-architecture-analysis.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-architecture-analysis.md)
 
 ## 相关实体
-- [Claude Code 设计原则与对照分析](/ch01-403-claude-code-设计原则与对照分析/)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](/ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层/)
+- [Claude Code 设计原则与对照分析](../ch01-403-claude-code-设计原则与对照分析)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层)
 
-- [Claude Code vs OpenClaw Agent 记忆系统对比](/ch01-309-claude-code-agent-teams/)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](/ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南/)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](/ch09-039-claude-md-12-条规则-karpathy-扩展模板/)
-- [Claude Code 架构深度分析](/ch01-846-claude-code-架构深度解析/)
-- [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](/ch04-418-hermes-agent/)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03-076-开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09-039-claude-md-12-条规则-karpathy-扩展模板)
+- [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
+- [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch04-418-hermes-agent)
 
 ---
 

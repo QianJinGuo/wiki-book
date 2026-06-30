@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/anthropic-building-next-claude.md`
 
-## Anthropic 最新播客：如何打造下一代 Claude
+# Anthropic 最新播客：如何打造下一代 Claude
 
 Alex Albert × Peter Yang · 从模型规划到性格训练的全流程揭秘
 Anthropic 的 Alex Albert 最近上了一期播客，聊了聊他们内部是怎么打造 Claude 的。
@@ -13,15 +13,15 @@ Anthropic 的 Alex Albert 最近上了一期播客，聊了聊他们内部是怎
 前 Claude Relations 负责人
 
 ## 相关实体
-- [Claude Opus 47](/ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus/)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](/ch01-677-anthropic/)
-- [Anthropic Claude Managed Agents Platform 2026](/ch01-677-anthropic/)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-677-anthropic/)
-- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](/ch01-677-anthropic/)
+- [Claude Opus 47](../ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](../ch01-677-anthropic)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01-677-anthropic)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-677-anthropic)
+- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](../ch01-677-anthropic)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-building-next-claude.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-building-next-claude.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析
 
 **1. 模型即产品的开发范式**

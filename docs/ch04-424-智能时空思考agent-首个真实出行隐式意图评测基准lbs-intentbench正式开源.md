@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/lbs-intent-bench-lbs-intentbench.md`
 
-## 智能时空思考Agent｜首个真实出行隐式意图评测基准LBS-IntentBench正式开源
+# 智能时空思考Agent｜首个真实出行隐式意图评测基准LBS-IntentBench正式开源
 > 原文存档：https://mp.weixin.qq.com/s/7NYQXk_MIJ1Ryod_wuY2hQ
 > 主题：LBS / 隐式意图 / Benchmark / 时空推理 / Agent / 高德
 高德提出 LBS-IntentBench，首个基于大规模匿名化真实出行数据的隐式意图评测基准。
 评估大模型在 LBS 场景中，从海量隐式信号（点击、搜索、导航片段）里精准推理用户深层意图的能力——而非执行明确指令。
 
 ## 相关实体
-- [Lbs Intentbench](/ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准/)
-- [Programbench Agent Benchmark](/ch04-152-programbench-agent-benchmark/)
-- [Computer Use 45X More Expensive Than Structured Apis](/ch04-241-computer-use-45x-more-expensive-than-structured-apis/)
-- [3 Persons 100 Ai Programmers 1 3 Million Openai Pays](/ch04-326-3个人带100个ai程序员-一个月烧掉130万美元-openai-钱我出/)
-- [Cursor Harness Model Production Floor](/ch01-235-cursor-harness-model-production-floor/)
+- [Lbs Intentbench](../ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准)
+- [Programbench Agent Benchmark](../ch04-152-programbench-agent-benchmark)
+- [Computer Use 45X More Expensive Than Structured Apis](../ch04-241-computer-use-45x-more-expensive-than-structured-apis)
+- [3 Persons 100 Ai Programmers 1 3 Million Openai Pays](../ch04-326-3个人带100个ai程序员-一个月烧掉130万美元-openai-钱我出)
+- [Cursor Harness Model Production Floor](../ch01-235-cursor-harness-model-production-floor)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lbs-intent-bench-lbs-intentbench.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lbs-intent-bench-lbs-intentbench.md)
 
 ## 深度分析
 
@@ -43,7 +43,7 @@
 
 **评测数据的真值构建推荐采用双阶段共识机制**：先用 LLM 裁判批量筛选和评分，再由领域专家进行盲审校正。这套方法可在保持评测规模的同时显著提升标注质量，适合构建任何垂直领域的评测基准。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lbs-intent-bench-lbs-intentbench.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lbs-intent-bench-lbs-intentbench.md)
 
 ---
 

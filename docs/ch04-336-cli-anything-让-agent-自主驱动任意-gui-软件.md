@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/cli-anything-wechat-demo-conglin.md`
 
-## CLI-Anything：让 Agent 自主驱动任意 GUI 软件
+# CLI-Anything：让 Agent 自主驱动任意 GUI 软件
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cli-anything-wechat-demo-conglin.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cli-anything-wechat-demo-conglin.md)
 
 ## 摘要
 
@@ -81,12 +81,12 @@ CLI-Hub 的设计借鉴了包管理器（npm、pip）的社区贡献模式，但
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/) — Claude Code 的工具调用与插件机制
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) — Vibe Coding 到 Agentic Engineering 的范式转变
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/) — Agent 架构与工具使用模式
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/) — Agent 长流程中的上下文管理
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Harness Engineering 框架下的工具集成
-- MOC
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制) — Claude Code 的工具调用与插件机制
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering) — Vibe Coding 到 Agentic Engineering 的范式转变
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践) — Agent 架构与工具使用模式
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进) — Agent 长流程中的上下文管理
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 框架下的工具集成
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

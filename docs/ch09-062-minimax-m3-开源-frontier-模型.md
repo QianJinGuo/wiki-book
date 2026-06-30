@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/minimax-m3-frontier-open-source-model.md`
 
-## MiniMax M3 开源 Frontier 模型
+# MiniMax M3 开源 Frontier 模型
 
 > [!summary] 核心洞察
 > MiniMax M3 是国内首个同时具备 Coding Frontier + 1M 上下文 + 原生多模态的开源模型。三大技术主线：MSA 稀疏注意力解决百万 token 可用化、原生多模态统一 token 空间、交互式用户模拟器实现从单轮代码生成到长期协作的训练范式变化。
@@ -130,15 +130,15 @@ MiniMax M3 的三件套不是功能堆砌，而是一个系统能力的三个接
 5. **API 经济性已经发生结构性变化：** 同等价位下 M3 提供约 2 倍的 token 容量，DeepSeek API 的低价策略正在被主流厂商跟进。成本下行意味着 Agent 应用的大规模部署门槛降低，商业模式需要重新评估单位经济性。
 
 ## 相关实体
-- [Claude Code Open Source Model Enterprise Practice](/ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客/)
-- [Tencent Hunyuan Hy3 Preview Open Source Agent](/ch01-094-腾讯混元hy3-preview发布/)
-- [Cline Open Source Agent Runtime Sdk](/ch01-299-cline-releases-open-source-agent-runtime-sdk/)
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](/ch04-482-opensquilla-launches-open-source-ai-agent-to-cut-token-costs/)
-- [How Open Model Ecosystems Compound](/ch01-651-how-open-model-ecosystems-compound/)
+- [Claude Code Open Source Model Enterprise Practice](../ch09-069-claude-code-接入自建开源模型-企业私有化与降本实践-亚马逊aws官方博客)
+- [Tencent Hunyuan Hy3 Preview Open Source Agent](../ch01-094-腾讯混元hy3-preview发布)
+- [Cline Open Source Agent Runtime Sdk](../ch01-299-cline-releases-open-source-agent-runtime-sdk)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch04-482-opensquilla-launches-open-source-ai-agent-to-cut-token-costs)
+- [How Open Model Ecosystems Compound](../ch01-651-how-open-model-ecosystems-compound)
 
-- minimax token调用第一后：agentos现实与模型厂商的系统适配挑战
+- [minimax token调用第一后：agentos现实与模型厂商的系统适配挑战](https://github.com/QianJinGuo/wiki/blob/main/entities/agentos-minimax-forge-model-adaptation-yaoge.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 相关主题
 
 - MiniMax M2.7 模型 — 参考 `Minimax M2 7`

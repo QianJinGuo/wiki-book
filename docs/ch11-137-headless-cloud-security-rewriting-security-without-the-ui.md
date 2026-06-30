@@ -8,18 +8,18 @@
 （见原文）
 
 ## 要点
-- 来源: [raw/articles/sysdig-headless-cloud-security.md](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sysdig-headless-cloud-security.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sysdig-headless-cloud-security.md)
+- 来源: [raw/articles/sysdig-headless-cloud-security.md](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sysdig-headless-cloud-security.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sysdig-headless-cloud-security.md)
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [CloudSectiDbits: Masso - Cognito SSO Bypass](/ch11-209-cloudsectidbits/)
-- [Vietnam to develop domestic cloud](/ch01-143-vietnam-to-develop-domestic-cloud/)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](/ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
+- [CloudSectiDbits: Masso - Cognito SSO Bypass](../ch11-209-cloudsectidbits)
+- [Vietnam to develop domestic cloud](../ch01-143-vietnam-to-develop-domestic-cloud)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)
 
-- [The Agency Model Dangers](/ch12-074-fedora-hummingbird-brings-the-container-security-model-to-a/)
+- [The Agency Model Dangers](https://github.com/QianJinGuo/wiki/blob/main/concepts/the-agency-model-dangers.md)
 ## 深度分析
 ### 核心理念：从人类交互到机器原生安全
 Sysdig 提出的 **Headless Cloud Security** 代表了一种范式转变 —— 将安全能力从基于 Dashboard 的人机交互模式，迁移到 API-first、面向 AI Agent 的编程接口。其核心主张是：在 AI 驱动的攻击面前，人类本身就是瓶颈，安全系统必须能够被 AI Agent 直接调用和编排。

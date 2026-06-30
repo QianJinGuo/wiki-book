@@ -66,24 +66,24 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - **Spark on Kubernetes**：无 SSH 依赖，迁移路径清晰
 - **Whitecastle 完成**：主账号 EMR 集群迁移到子账号，网络隔离合规
 - **平台可演进性**：Airflow 与 EMR 基础设施细节解耦，集群替换对 DAG 无感
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
+> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
 ## 相关实体
-- [Wetesteddeepseekv4Proandflashagainstclau](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- [Entrypointhijacking](/ch01-128-entrypoint-hijacking/)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](/ch01-104-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo/)
-- [Why Internally Built Ai Fails Fund Accounting Audits](/ch01-834-why-internally-built-ai-fails-fund-accounting-audits/)
+- [Wetesteddeepseekv4Proandflashagainstclau](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
+- [Entrypointhijacking](../ch01-128-entrypoint-hijacking)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch01-104-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo)
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01-834-why-internally-built-ai-fails-fund-accounting-audits)
 
-- [Cpanel Whm Patch 3 New Vulnerabilities](/ch12-091-cpanel-whm-release-fixes-for-three-new-vulnerabilities-pa/)
-- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](/ch01-080-tenorshare-ai-diagrimo-free-ai-diagram-generator-online/)
-- [Automating Confidential Containers Coco Infrastructure With Kyverno](/ch11-095-automating-confidential-containers-coco-infrastructure-wit/)
-- [Gptomics Com How Ai Changes Software P L](/ch01-056-how-ai-changes-software-p-l/)
-- [Romanian Man 30 Years Us Prison Vishing](/ch12-110-romanian-man-faces-up-to-30-years-in-us-prison-over-vishing/)
-- [Youcom Download The Guide Why Api Latency Is A Misleading Metric](/ch01-120-you-com-download-the-guide-why-api-latency-is-a-misleadin/)
-- [818662](/ch12-021-alliance-for-critical-infrastructure-aci-us-critical-infr/)
-- [2026 04 15](/ch12-104-cyberscammers-are-bypassing-banks-security-with-illicit-too/)
-- [What My Privacy And Security Stack Actually Looks Like](/ch12-019-what-my-privacy-and-security-stack-actually-looks-like/)
-- [Ai Traffic Cyberthreat Benchmark 2026](/ch01-287-the-2026-state-of-ai-traffic-cyberthreat-benchmark-report/)
-- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](/ch09-113-device-code-phishing-forensics-what-we-learned-from-bec-inv/)
+- [Cpanel Whm Patch 3 New Vulnerabilities](../ch12-091-cpanel-whm-release-fixes-for-three-new-vulnerabilities-pa)
+- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch01-080-tenorshare-ai-diagrimo-free-ai-diagram-generator-online)
+- [Automating Confidential Containers Coco Infrastructure With Kyverno](../ch11-095-automating-confidential-containers-coco-infrastructure-wit)
+- [Gptomics Com How Ai Changes Software P L](../ch01-056-how-ai-changes-software-p-l)
+- [Romanian Man 30 Years Us Prison Vishing](../ch12-110-romanian-man-faces-up-to-30-years-in-us-prison-over-vishing)
+- [Youcom Download The Guide Why Api Latency Is A Misleading Metric](../ch01-120-you-com-download-the-guide-why-api-latency-is-a-misleadin)
+- [818662](../ch12-021-alliance-for-critical-infrastructure-aci-us-critical-infr)
+- [2026 04 15](../ch12-104-cyberscammers-are-bypassing-banks-security-with-illicit-too)
+- [What My Privacy And Security Stack Actually Looks Like](../ch12-019-what-my-privacy-and-security-stack-actually-looks-like)
+- [Ai Traffic Cyberthreat Benchmark 2026](../ch01-287-the-2026-state-of-ai-traffic-cyberthreat-benchmark-report)
+- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09-113-device-code-phishing-forensics-what-we-learned-from-bec-inv)
 
 ---
 

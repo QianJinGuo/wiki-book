@@ -51,16 +51,16 @@ Owner 不是简单地分配任务和等待结果，而是负责：  ^[raw/minima
 当系统复杂度提升时，Verifier 本身也可能出错。可以考虑"Verifier 的输出由另一个 Verifier 检查"的机制（如代码审查中 Reviewer 的评论也需要被审视），但这会显著增加系统复杂度。建议仅在核心质量关卡使用多层验证。  ^[raw/minimax-agent-team-mavis-owner-worker-verifier]
 
 ## 参考
-- [Minimax Agent Team Mavis](/ch04-137-一个-ai-还是不够的-minimax-agent-team-mavis/)
+- [Minimax Agent Team Mavis](../ch04-137-一个-ai-还是不够的-minimax-agent-team-mavis)
 
 ## 相关实体
-- [Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
-- [Claude Code 架构解析](/ch01-571-claude-code-架构解析/)
-- [Agent 时代架构师技能指南](/ch04-346-agent-时代-我们架构师应该学什么/)
+- [Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation](https://github.com/QianJinGuo/wiki/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
+- [Claude Code 架构解析](../ch01-571-claude-code-架构解析)
+- [Agent 时代架构师技能指南](../ch04-346-agent-时代-我们架构师应该学什么)
 
-- [基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- routa 多智能体协同交付平台
-- MOC
+- [基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [routa 多智能体协同交付平台](https://github.com/QianJinGuo/wiki/blob/main/entities/routa-multi-agent-coordination-platform.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---
 

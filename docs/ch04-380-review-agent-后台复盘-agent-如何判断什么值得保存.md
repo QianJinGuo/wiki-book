@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/review-agent-how-it-decides-what-to-save-winty.md`
 
-## Review Agent：后台复盘 Agent 如何判断什么值得保存
+# Review Agent：后台复盘 Agent 如何判断什么值得保存
 如果说 Nudge Engine 是 Hermes 的"开关"，那 Review Agent 就是它的"心智"。
 我读 Hermes 源码时最佩服的一处设计就是这一块。它没有让"执行任务的那个 Agent"自己复盘自己，而是单独跑了一个专门负责反思的 Agent，在后台默默工作。
 这件事看起来很小，但解决的是一个非常根本的工程问题：让一个正在干活的人评判自己刚刚干得好不好，结果总是又长又自夸又没用。
 Review Agent 解决的就是这个问题。它换了个角色、换了个 prompt、换了套判断标准，专门干"复盘 + 决定该记什么"这一件事。
 
 ## 相关实体
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](/ch04-498-skillclaw-nacos-从一次-agent-会话到可治理-skill-registry-的自动演化闭环/)
-- [Tencent Vibe Coding To Agentic Engineering Backend](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
-- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
-- [Openclaw Prompt Context Harness](/ch04-239-agent-harness-a3-subagent-7-prompt/)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-registry-公测开启为企业打造私有的-skill-管理中心.md)
+- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档)
+- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.6KB | `entities/hermes-observability-aliyun.md`
 
-[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-observability-aliyun.md)
+[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-observability-aliyun.md)
 
 ## 背景
 Hermes 是 Nous Research 打造的一套自治式 AI Agent 运行框架。它不是单次问答式的模型封装，而是一个能够持续运行、调用工具、积累经验、并随着使用过程不断成长的 Agent Runtime。
@@ -88,7 +88,7 @@ curl -fsSL https://arms-apm-cn-hangzhou-pre.oss-cn-hangzhou.aliyuncs.com/hermes-
 hermes-cms enable
 hermes   # 前台运行
 
-## 或
+# 或
 hermes gateway start  # 后台运行
 ```
 **第四步：确认埋点生效**
@@ -180,12 +180,12 @@ Time To First Token 的单独记录是一个看似小但实际非常关键的 fe
 - 演示示例：https://sls.aliyun.com/doc/playground/cmsdemo.html
 - CMS 2.0 控制台：https://cmsnext.console.aliyun.com/
 ## 相关实体
-- [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](/ch04-418-hermes-agent/)
-- [Hermes Agent Memory System Vs Openclaw](/ch04-418-hermes-agent/)
-- [Hermes Agent Vs Openclaw Comparison](/ch04-418-hermes-agent/)
-- [Hermes Agent Self Evolving Source Analysis](/ch04-039-hermes-agent-self-evolving-source-analysis/)
-- [Small Hermes Self Evolving Agent Architecture](/ch04-109-small-hermes-自我进化-agent-架构/)
-- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](/ch01-197-opentelemetry-ebpf-instrumentation-obi-零代码全栈可观测性的内核级实现/)
+- [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch04-418-hermes-agent)
+- [Hermes Agent Memory System Vs Openclaw](../ch04-418-hermes-agent)
+- [Hermes Agent Vs Openclaw Comparison](../ch04-418-hermes-agent)
+- [Hermes Agent Self Evolving Source Analysis](../ch04-039-hermes-agent-self-evolving-source-analysis)
+- [Small Hermes Self Evolving Agent Architecture](../ch04-109-small-hermes-自我进化-agent-架构)
+- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01-197-opentelemetry-ebpf-instrumentation-obi-零代码全栈可观测性的内核级实现)
 
 ---
 

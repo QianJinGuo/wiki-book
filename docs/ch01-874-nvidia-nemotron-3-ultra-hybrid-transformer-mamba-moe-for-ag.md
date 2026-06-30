@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 9.8KB | `entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md`
 
-## NVIDIA Nemotron 3 Ultra: Hybrid Transformer-Mamba MoE for Agentic AI on SageMaker JumpStart
+# NVIDIA Nemotron 3 Ultra: Hybrid Transformer-Mamba MoE for Agentic AI on SageMaker JumpStart
 
 > 本文综合提炼自 NVIDIA Nemotron 3 Ultra 在 Amazon SageMaker JumpStart 的 day-zero 发布公告。关键定位：**为长时自主 agent 优化的开源 MoE 模型** —— 550B 总参数/55B 激活、1M token 上下文、NVFP4 精度、**5x 推理加速 + 30% agentic 任务成本下降**。架构创新：**Hybrid Transformer-Mamba MoE**（首个大规模生产级 Transformer-Mamba 混合 MoE）。
 
@@ -155,11 +155,11 @@ MoE 的总参数量大意味着需要更多 GPU 内存来存储所有 expert—�
 NIM 专门为 NVIDIA GPU 优化推理——如果你的基础设施是 NVIDIA GPU，NIM 可能比 vLLM/TGI 更高效。
 
 ## 相关实体
-- [Nvidia Agentic Ai Subsurface Engineering](/ch04-313-nvidia-agentic-ai-subsurface-engineering/)
-- [Nvidia Agentic Systems Extreme Co Design](/ch04-514-building-for-the-rising-complexity-of-agentic-systems-with-e/)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](/ch04-245-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
-- [Nvidia Nemotron 3 Agents Rag Voice Safety](/ch04-043-nvidia-nemotron-3-agents-rag-voice-safety/)
-- [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](/ch01-885-accelerating-transformers-fine-tuning-with-nvidia-nemo-autom/)
+- [Nvidia Agentic Ai Subsurface Engineering](../ch04-313-nvidia-agentic-ai-subsurface-engineering)
+- [Nvidia Agentic Systems Extreme Co Design](../ch04-514-building-for-the-rising-complexity-of-agentic-systems-with-e)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04-245-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t)
+- [Nvidia Nemotron 3 Agents Rag Voice Safety](../ch04-043-nvidia-nemotron-3-agents-rag-voice-safety)
+- [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
 
 ---
 

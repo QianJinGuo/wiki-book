@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.7KB | `entities/llm-raiders-private-ai-server.md`
 
-## LLMjacking: what these attacks are, and how to protect AI servers
+# LLMjacking: what these attacks are, and how to protect AI servers
 AI security covers more than just data theft prevention, restricting [rogue AI agents](https://www.kaspersky.com/blog/moltbot-enterprise-risk-management/55317/), or stopping assistants from giving harmful advice. A relatively simple but rapidly scaling threat has emerged: attempts to hijack computational power and exploit someone else's neural network for personal gain. This is known as LLMjacking. With AI compute costs widely predicted to [surge dramatically](https://oplexa.com/ai-inference-cost-crisis-2026/), the number of attackers driven by these motives is poised to grow. Consequently, when deploying proprietary AI servers and their supporting ecosystems like [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) or [MCP](https://en.wikipedia.org/wiki/Model_Context_Protocol), it's critical to establish rigorous security measures from day one.
 
 ## Statistics from a honeypot
@@ -38,13 +38,13 @@ Key defensive measures for private AI infrastructure
 - Maintain detailed logs of LLM responses and requests made to the model and its supporting tools. Integrate these data sources with [your SIEM](https://www.kaspersky.com/enterprise-security/unified-monitoring-and-analysis-platform?icid=gl_kdailyplacehold_acq_ona_smm__onl_b2b_kasperskydaily_wpplaceholder____). Ensure logs are resilient against tampering or deletion.
 
 ## 相关实体
-- [Ai Agents Inside Perimeter Hackernews](/ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know/)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](/ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
-- [Llm Raiders How To Repel](/ch01-589-llm-raiders-and-how-to-repel-them/)
-- [我用 Skillmd 做了一个简历生成器](/ch07-047-我用-skill-md-做了一个简历生成器/)
-- [Skill Engineering Ai As Algorithm](/ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程/)
+- [Ai Agents Inside Perimeter Hackernews](../ch04-095-your-ai-agents-are-already-inside-the-perimeter-do-you-know)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
+- [Llm Raiders How To Repel](../ch01-589-llm-raiders-and-how-to-repel-them)
+- [我用 Skillmd 做了一个简历生成器](../ch07-047-我用-skill-md-做了一个简历生成器)
+- [Skill Engineering Ai As Algorithm](../ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-raiders-private-ai-server.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-raiders-private-ai-server.md)
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
 
 ## 摘要
 AI 网关（AI Gateway）与 MCP 网关（MCP Gateway）是两个被频繁混淆但本质不同的技术层。前者位于代理与大语言模型之间，专注推理路由、成本控制和可观测性；后者位于代理与 MCP 服务器（工具）之间，专注身份认证、工具注册和细粒度访问控制。两者都是 AI 安全架构的必要组件，但均无法独立构成完整的安全解决方案。
@@ -58,11 +58,11 @@ Kong 等主流平台已经开始将 MCP 网关功能整合进现有 AI 网关产
 - **长期（18 个月+）**：规划向统一 AI 安全平台收敛，网关层负责基础设施治理，安全平台层负责行为检测和动态执法
 
 ## 关联阅读
-- [Securing AI Agents: How AWS and Cisco AI Defense Scale MCP and A2A](/ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级/) — MCP 和 A2A 协议在企业级部署中的规模实践
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/) — 工具投毒作为企业代理安全的核心缺陷
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](/ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f/) — Bishop Fox 的 AI 代理安全测试框架
-- [AgentCore Runtime 部署 Apache Doris MCP Server](/ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt/) — MCP Server 部署实践
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
+- [Securing AI Agents: How AWS and Cisco AI Defense Scale MCP and A2A](../ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级) — MCP 和 A2A 协议在企业级部署中的规模实践
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s) — 工具投毒作为企业代理安全的核心缺陷
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f) — Bishop Fox 的 AI 代理安全测试框架
+- [AgentCore Runtime 部署 Apache Doris MCP Server](../ch11-156-runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analyt) — MCP Server 部署实践
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
 
 ---
 

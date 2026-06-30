@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 38.5KB | `entities/agent框架owl原理详解.md`
 
-[Agent框架Owl原理详解](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent框架owl原理详解.md)
+[Agent框架Owl原理详解](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent框架owl原理详解.md)
 
 ** 前言  **
 OWL是一个优秀的开源agent框架，在agent benchmark GAIA上，OWL是表现最好的开源agent框架。虽然deerflow star也不少，但是基于langgraph的实现不太好细究agent底层实现原理。因此本文以OWL代码为例，讲解agent框架的细节实现。OWL其实是对camel库的进一步封装，比如像agent、toolkit等核心代码内容都是在camel库中实现的。
@@ -49,75 +49,22 @@ user和assistant agent的system prompt开头都是"Never forget you are a {xxx} 
 ** user agent 输入  ** ：这块强调了尽量使用工具来回答任务，不然模型会优先用自身知识进行回答。
     Now please give me instructions to solve over overall task step by step. If the task requires some specific knowledge, please instruct me to use tools to complete the task.=============================================中文翻译分割线=============================================现在请逐步给我下达指令，以解决整个任务。如果该任务需要一些特定知识，请指示我使用工具来完成任务。
 ** user agent 输出 & assistant agent输入  **
-    Instruction: Search for the titles of three works by the writer Wang Xiaobo.  
-Input: None =============================================中文翻译分割线=============================================说明：搜索作家王小波三部作品的标题。
-输入：无
+    Instruction: Search for the titles of three works by the writer Wang Xiaobo.  \nInput: None =============================================中文翻译分割线=============================================说明：搜索作家王小波三部作品的标题。\n输入：无
 ** assistant agent输出  ** ：assistant agent触发了工具调用，尝试调用duckduckgo搜索工具，但是因为网络问题没有检索成功，最终反馈自己没有检索成功。
 
-    # 工具调用{'role': 'assistant', 'content': '', 'tool_calls': [{'id': 'call_pr82X9unq1AukguVVH8OfnBH', 'type': 'function', 'function': {'name': 'search_duckduckgo', 'arguments': '{"max_results": 3, "query": "王小波 作品", "source": "text"}'}}]}, {'role': 'tool', 'content': '{\'error\': "Error executing tool \'search_duckduckgo\': Execution of function search_duckduckgo failed with arguments () and {\'max_results\': 3, \'query\': \'王小波 作品\', \'source\': \'text\'}. Error: https://duckduckgo.com RuntimeError: error sending request for url (https://duckduckgo.com/?q=%E7%8E%8B%E5%B0%8F%E6%B3%A2+%E4%BD%9C%E5%93%81): operation timed out
-
-Caused by:
-     operation timed out"}', 'tool_call_id': 'call_pr82X9unq1AukguVVH8OfnBH'}]# 回答Solution: It appears that online search tools are currently inaccessible or experiencing technical difficulties, hence I cannot complete the search using external sources. 
-
-To proceed, let me know if you would like alternative assistance or another approach. For example, if Wang Xiaobo's works are available in a document or specific content you have, I can analyze that instead. Next request.=============================================中文翻译分割线=============================================解决方案：似乎在线搜索工具目前无法访问或遇到技术困难，因此我无法使用外部资源完成搜索。
-
-要继续，请告诉我您是否需要其他帮助或其他方法。例如，如果王小波的作品存在于你的文档或特定内容中，我可以进行分析。下一个请求。
+    # 工具调用{'role': 'assistant', 'content': '', 'tool_calls': [{'id': 'call_pr82X9unq1AukguVVH8OfnBH', 'type': 'function', 'function': {'name': 'search_duckduckgo', 'arguments': '{"max_results": 3, "query": "王小波 作品", "source": "text"}'}}]}, {'role': 'tool', 'content': '{\'error\': "Error executing tool \'search_duckduckgo\': Execution of function search_duckduckgo failed with arguments () and {\'max_results\': 3, \'query\': \'王小波 作品\', \'source\': \'text\'}. Error: https://duckduckgo.com RuntimeError: error sending request for url (https://duckduckgo.com/?q=%E7%8E%8B%E5%B0%8F%E6%B3%A2+%E4%BD%9C%E5%93%81): operation timed out\\n\\nCaused by:\\n     operation timed out"}', 'tool_call_id': 'call_pr82X9unq1AukguVVH8OfnBH'}]# 回答Solution: It appears that online search tools are currently inaccessible or experiencing technical difficulties, hence I cannot complete the search using external sources. \n\nTo proceed, let me know if you would like alternative assistance or another approach. For example, if Wang Xiaobo's works are available in a document or specific content you have, I can analyze that instead. Next request.=============================================中文翻译分割线=============================================解决方案：似乎在线搜索工具目前无法访问或遇到技术困难，因此我无法使用外部资源完成搜索。\n\n要继续，请告诉我您是否需要其他帮助或其他方法。例如，如果王小波的作品存在于你的文档或特定内容中，我可以进行分析。下一个请求。
 ** 2  **
 ** ROUND 2  **
 ** user agent 输入  ** ：user agent输入为上一轮assistant的输出，  ** 同时agent保存了历史的对话内容，也会一并输入到模型里  ** （这块省略了没有粘贴）。
-    Solution: It appears that online search tools are currently inaccessible or experiencing technical difficulties, hence I cannot complete the search using external sources. 
-
-To proceed, let me know if you would like alternative assistance or another approach. For example, if Wang Xiaobo's works are available in a document or specific content you have, I can analyze that instead. Next request.=============================================中文翻译分割线=============================================解决方案：似乎在线搜索工具目前无法访问或遇到技术困难，因此我无法使用外部资源完成搜索。
-
-要继续，请告诉我您是否需要其他帮助或其他方法。例如，如果王小波的作品存在于你的文档或特定内容中，我可以进行分析。下一个请求。
+    Solution: It appears that online search tools are currently inaccessible or experiencing technical difficulties, hence I cannot complete the search using external sources. \n\nTo proceed, let me know if you would like alternative assistance or another approach. For example, if Wang Xiaobo's works are available in a document or specific content you have, I can analyze that instead. Next request.=============================================中文翻译分割线=============================================解决方案：似乎在线搜索工具目前无法访问或遇到技术困难，因此我无法使用外部资源完成搜索。\n\n要继续，请告诉我您是否需要其他帮助或其他方法。例如，如果王小波的作品存在于你的文档或特定内容中，我可以进行分析。下一个请求。
 ** user agent输出 & assistant agent的输入  ** ：既然检索失败，user agent指导assistant agent根据自己的内在知识进行回答。
-    Instruction: Provide three titles of Wang Xiaobo's works based on knowledge available up to October 2023.  
-Input: None =============================================中文翻译分割线=============================================说明：根据截至2023年10月的知识，提供王小波作品的三个标题。
-输入：无
+    Instruction: Provide three titles of Wang Xiaobo's works based on knowledge available up to October 2023.  \nInput: None =============================================中文翻译分割线=============================================说明：根据截至2023年10月的知识，提供王小波作品的三个标题。\n输入：无
 ** assistant agent的输出  ** ：assiant agent根据自身知识回答了王小波的三部作品是啥。
-    Solution: Based on knowledge available up to October 2023, Wang Xiaobo was a renowned Chinese writer whose works are recognized for their intellectual depth, humor, and reflections on society and human nature. Here are three of his notable works:
-
-1. 《黄金时代》 (The Golden Age)  
-   This novella is one of Wang Xiaobo's most iconic works. It explores themes of individual freedom, societal constraints, and existentialism, set against the backdrop of China's Cultural Revolution.
-
-2. 《白银时代》 (The Silver Age)  
-   This is part of the "Age Trilogy," which includes The Golden Age, The Silver Age, and The Bronze Age. The book continues to delve into philosophical questions about life, human desires, and the absurdity of existence.
-
-3. 《沉默的大多数》 (The Silent Majority)  
-   This collection of essays exemplifies Wang Xiaobo's sharp wit and critical thinking. The essays reflect on culture, politics, and the human condition in modern society.
-
-These works highlight Wang Xiaobo's unique literary style and his influence on contemporary Chinese literature. Let me know if you need further details about these or other works. Next request=============================================中文翻译分割线=============================================解决方案：根据截至2023年10月的知识，王小波是一位著名的中国作家，他的作品以其知识深度、幽默以及对社会和人性的反思而闻名。以下是他的三部著名作品：
-
-1。《黄金年代》
-这部中篇小说是王小波最具代表性的作品之一。它以中国文化大革命为背景，探讨了个人自由、社会约束和存在主义的主题。
-
-2。《白银时代》（The Silver Age）
-这是"时代三部曲"的一部分，其中包括黄金时代、白银时代和青铜时代。这本书继续深入探讨关于生命、人类欲望和存在荒谬性的哲学问题。
-
-3。《沉默的大多数》这本散文集体现了王小波敏锐的智慧和批判性思维。这些散文反映了现代社会的文化、政治和人类状况。\这些作品凸显了王小波独特的文学风格及其对中国当代文学的影响。如果您需要有关这些或其他作品的更多详细信息，请告诉我。下一个请求
+    Solution: Based on knowledge available up to October 2023, Wang Xiaobo was a renowned Chinese writer whose works are recognized for their intellectual depth, humor, and reflections on society and human nature. Here are three of his notable works:\n\n1. 《黄金时代》 (The Golden Age)  \n   This novella is one of Wang Xiaobo's most iconic works. It explores themes of individual freedom, societal constraints, and existentialism, set against the backdrop of China's Cultural Revolution.\n\n2. 《白银时代》 (The Silver Age)  \n   This is part of the "Age Trilogy," which includes The Golden Age, The Silver Age, and The Bronze Age. The book continues to delve into philosophical questions about life, human desires, and the absurdity of existence.\n\n3. 《沉默的大多数》 (The Silent Majority)  \n   This collection of essays exemplifies Wang Xiaobo's sharp wit and critical thinking. The essays reflect on culture, politics, and the human condition in modern society.\n\nThese works highlight Wang Xiaobo's unique literary style and his influence on contemporary Chinese literature. Let me know if you need further details about these or other works. Next request=============================================中文翻译分割线=============================================解决方案：根据截至2023年10月的知识，王小波是一位著名的中国作家，他的作品以其知识深度、幽默以及对社会和人性的反思而闻名。以下是他的三部著名作品：\n\n1。《黄金年代》\n这部中篇小说是王小波最具代表性的作品之一。它以中国文化大革命为背景，探讨了个人自由、社会约束和存在主义的主题。\n\n2。《白银时代》（The Silver Age）\n这是"时代三部曲"的一部分，其中包括黄金时代、白银时代和青铜时代。这本书继续深入探讨关于生命、人类欲望和存在荒谬性的哲学问题。\n\n3。《沉默的大多数》这本散文集体现了王小波敏锐的智慧和批判性思维。这些散文反映了现代社会的文化、政治和人类状况。\这些作品凸显了王小波独特的文学风格及其对中国当代文学的影响。如果您需要有关这些或其他作品的更多详细信息，请告诉我。下一个请求
 ** 3  **
 ** ROUND 3  **
 ** user agent输入  ** ：round 2 assistant的输出，同时也有历史的交互记录。
-    Solution: Based on knowledge available up to October 2023, Wang Xiaobo was a renowned Chinese writer whose works are recognized for their intellectual depth, humor, and reflections on society and human nature. Here are three of his notable works:
-
-1. 《黄金时代》 (The Golden Age)  
-   This novella is one of Wang Xiaobo's most iconic works. It explores themes of individual freedom, societal constraints, and existentialism, set against the backdrop of China's Cultural Revolution.
-
-2. 《白银时代》 (The Silver Age)  
-   This is part of the "Age Trilogy," which includes The Golden Age, The Silver Age, and The Bronze Age. The book continues to delve into philosophical questions about life, human desires, and the absurdity of existence.
-
-3. 《沉默的大多数》 (The Silent Majority)  
-   This collection of essays exemplifies Wang Xiaobo's sharp wit and critical thinking. The essays reflect on culture, politics, and the human condition in modern society.
-
-These works highlight Wang Xiaobo's unique literary style and his influence on contemporary Chinese literature. Let me know if you need further details about these or other works. Next request=============================================中文翻译分割线=============================================解决方案：根据截至2023年10月的知识，王小波是一位著名的中国作家，他的作品以其知识深度、幽默以及对社会和人性的反思而闻名。以下是他的三部著名作品：
-
-1。《黄金年代》
-这部中篇小说是王小波最具代表性的作品之一。它以中国文化大革命为背景，探讨了个人自由、社会约束和存在主义的主题。
-
-2。《白银时代》（The Silver Age）
-这是"时代三部曲"的一部分，其中包括黄金时代、白银时代和青铜时代。这本书继续深入探讨关于生命、人类欲望和存在荒谬性的哲学问题。
-
-3。《沉默的大多数》这本散文集体现了王小波敏锐的智慧和批判性思维。这些散文反映了现代社会的文化、政治和人类状况。\这些作品凸显了王小波独特的文学风格及其对中国当代文学的影响。如果您需要有关这些或其他作品的更多详细信息，请告诉我。下一个请求
+    Solution: Based on knowledge available up to October 2023, Wang Xiaobo was a renowned Chinese writer whose works are recognized for their intellectual depth, humor, and reflections on society and human nature. Here are three of his notable works:\n\n1. 《黄金时代》 (The Golden Age)  \n   This novella is one of Wang Xiaobo's most iconic works. It explores themes of individual freedom, societal constraints, and existentialism, set against the backdrop of China's Cultural Revolution.\n\n2. 《白银时代》 (The Silver Age)  \n   This is part of the "Age Trilogy," which includes The Golden Age, The Silver Age, and The Bronze Age. The book continues to delve into philosophical questions about life, human desires, and the absurdity of existence.\n\n3. 《沉默的大多数》 (The Silent Majority)  \n   This collection of essays exemplifies Wang Xiaobo's sharp wit and critical thinking. The essays reflect on culture, politics, and the human condition in modern society.\n\nThese works highlight Wang Xiaobo's unique literary style and his influence on contemporary Chinese literature. Let me know if you need further details about these or other works. Next request=============================================中文翻译分割线=============================================解决方案：根据截至2023年10月的知识，王小波是一位著名的中国作家，他的作品以其知识深度、幽默以及对社会和人性的反思而闻名。以下是他的三部著名作品：\n\n1。《黄金年代》\n这部中篇小说是王小波最具代表性的作品之一。它以中国文化大革命为背景，探讨了个人自由、社会约束和存在主义的主题。\n\n2。《白银时代》（The Silver Age）\n这是"时代三部曲"的一部分，其中包括黄金时代、白银时代和青铜时代。这本书继续深入探讨关于生命、人类欲望和存在荒谬性的哲学问题。\n\n3。《沉默的大多数》这本散文集体现了王小波敏锐的智慧和批判性思维。这些散文反映了现代社会的文化、政治和人类状况。\这些作品凸显了王小波独特的文学风格及其对中国当代文学的影响。如果您需要有关这些或其他作品的更多详细信息，请告诉我。下一个请求
 ** user agent的输出  ** ：user agent判断问题已经被成功解答，输出<CAMEL_TASK_DONE>，交互跳出循环。
 *
     <CAMEL_TASK_DONE>
@@ -319,12 +266,12 @@ OWL适合以下场景：
 - **引入多模态能力**：结合视觉理解处理图文混合任务
 - **优化Critic机制**：使用更精细的评估标准提升输出质量
 ## 相关实体
-- [Agent Framework Owl Principles](/ch01-348-agent框架owl原理详解/)
-- [Karpathy Ai Agent 7 Bits Value Decline](/ch04-375-karpathy-ai-agent-七-bits-与程序员价值/)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
-- [Gepa Optimize Anything](/ch01-263-gepa-optimize-anything/)
-- [Tmall Marketing Ai Workflow Best Practices](/ch01-196-淘天营销中后台生码工作流最佳实践/)
-- MOC
+- [Agent Framework Owl Principles](../ch01-348-agent框架owl原理详解)
+- [Karpathy Ai Agent 7 Bits Value Decline](../ch04-375-karpathy-ai-agent-七-bits-与程序员价值)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南)
+- [Gepa Optimize Anything](../ch01-263-gepa-optimize-anything)
+- [Tmall Marketing Ai Workflow Best Practices](../ch01-196-淘天营销中后台生码工作流最佳实践)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---
 

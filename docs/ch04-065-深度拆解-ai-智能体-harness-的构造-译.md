@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 19.1KB | `entities/ai-agent-harness-construction-akshay.md`
 
-## 深度拆解：AI 智能体 Harness 的构造（译）
+# 深度拆解：AI 智能体 Harness 的构造（译）
 > 原文：Akshay Pachaar @x.com
 > 编译：宝玉AI
 
@@ -297,14 +297,14 @@ OpenAI SDK 的三层护栏（输入→工具→输出）体现了**纵深防御*
 - 原文：https://x.com/akshay_pachaar/status/2041146899319971922
 - 中文编译：宝玉AI
 ## 相关实体
-- [Guide Ai Agents Models Apps Harnesses Mollick](/ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick/)
-- [Claude Code Large Codebase Enterprise Deployment](/ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南/)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-677-anthropic/)
-- [Claude Code Routines Proactive Agent](/ch09-055-claude-code-routines-从工具到队友的主动-agent-模式/)
-- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
-- MOC
+- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick)
+- [Claude Code Large Codebase Enterprise Deployment](../ch09-053-claude-code-大型代码库最佳实践-anthropic-企业级部署指南)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-677-anthropic)
+- [Claude Code Routines Proactive Agent](../ch09-055-claude-code-routines-从工具到队友的主动-agent-模式)
+- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 
 ---
 

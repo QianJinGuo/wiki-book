@@ -14,7 +14,7 @@ MNN-Sana-Edit-V2 是由淘宝 Meta 团队联合杭州电子科技大学研发的
 - **评分**: 42
 
 ## 原始内容
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mnn-sana-edit-v2端侧运行的图像漫画风编辑大模型.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mnn-sana-edit-v2端侧运行的图像漫画风编辑大模型.md)
 
 ## 技术架构
 MNN-Sana-Edit-V2 整体采用 Sana 图像生成模型的网络架构，同时为了更好地利用预训练 LLM 对 Prompt 的理解能力，结合 MetaQuery 论文中提出的 Learnable Query 思想，利用可学习的一组网络参数来桥接预训练 LLM 与图像生成与编辑过程。
@@ -134,9 +134,9 @@ MNN-Sana-Edit-V2 展现了端侧 AI 的独特价值主张：
 
 ## 相关实体
 
-- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](/ch01-079-特斯拉百万年薪招数据标注员-朝九晚五-无需ai经验/)
-- [我给Hermes配了4个Agent，真正有用的是这些事](/ch01-127-我给hermes配了4个agent/)
+- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch01-079-特斯拉百万年薪招数据标注员-朝九晚五-无需ai经验)
+- [我给Hermes配了4个Agent，真正有用的是这些事](../ch01-127-我给hermes配了4个agent)
 
 ---
 

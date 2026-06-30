@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/comfyui-sagemaker-processing-workflows.md`
 
-## ComfyUI Workflows on Amazon SageMaker Processing Jobs
+# ComfyUI Workflows on Amazon SageMaker Processing Jobs
 
 > 在 SageMaker Processing Jobs 上运行 ComfyUI 工作流，实现企业级自动化内容生成。
 
@@ -78,7 +78,7 @@ Processing Job 使用 continuous S3 upload mode，图像生成后立即流式上
 
 ---
 
-**来源**: → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/running-comfyui-workflows-on-amazon-sagemaker-ai-processing.md)
+**来源**: → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/running-comfyui-workflows-on-amazon-sagemaker-ai-processing.md)
 
 ---
 

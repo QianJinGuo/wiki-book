@@ -69,10 +69,10 @@ Agent-Limitation: <已知局限或后续 TODO>
 
 ```bash
 
-## 列出所有包含 Agent-Task trailer 的提交
+# 列出所有包含 Agent-Task trailer 的提交
 git log --format='%(trailers:key=Agent-Task,valueonly)'
 
-## 按 trailer 过滤提交历史
+# 按 trailer 过滤提交历史
 git log --grep="^Agent-Task:" --all
 ```
 
@@ -95,13 +95,13 @@ git log --grep="^Agent-Task:" --all
 
 ```bash
 
-## 查看当前 branch 的提交历史
+# 查看当前 branch 的提交历史
 git log --oneline main..HEAD
 
-## 交互式 rebase 整理最近 N 个提交
+# 交互式 rebase 整理最近 N 个提交
 git rebase -i main
 
-## 常用操作：pick / squash / reword / drop / fixup
+# 常用操作：pick / squash / reword / drop / fixup
 ``` 
 
 **整理策略**：将 [WIP] checkpoint commits 合并（squash）为有意义的语义 commit，确保最终历史中每个 commit 都能独立理解和回滚。
@@ -114,13 +114,13 @@ git rebase -i main
 
 ```bash
 
-## 好的切分：每个 commit 对应一个独立关注点
+# 好的切分：每个 commit 对应一个独立关注点
 feat(auth): add RefreshToken domain model and repository interface
 feat(auth): implement JWT refresh token issuance in AuthService
 feat(auth): expose POST /auth/refresh endpoint
 test(auth): add unit tests for refresh token rotation logic
 
-## 反例：所有改动压成一个 commit
+# 反例：所有改动压成一个 commit
 feat(auth): implement refresh token
 ```
 
@@ -147,14 +147,14 @@ agent/PROJ-301-migrate-postgres-schema
 
 ```bash
 
-## 为每个 agent 任务创建独立 worktree
+# 为每个 agent 任务创建独立 worktree
 git worktree add ../agent-task-234 -b agent/PROJ-234-refresh-token
 git worktree add ../agent-task-301 -b agent/PROJ-301-pg-migration
 
-## 查看当前所有 worktree
+# 查看当前所有 worktree
 git worktree list
 
-## 任务完成后清理
+# 任务完成后清理
 git worktree remove ../agent-task-234
 ``` 
 
@@ -282,7 +282,7 @@ main
 jj new -A ywnkulko   # 在某个提交后插入新的一层
 jj describe -m "feat(auth): add token revocation endpoint"
 
-## jj 自动将后续所有提交 rebase 到新的提交链上
+# jj 自动将后续所有提交 rebase 到新的提交链上
 jj git push --all    # 推送所有分支
 gh stack submit      # 在 GitHub 同步 stack 状态
 ```
@@ -291,13 +291,13 @@ gh stack submit      # 在 GitHub 同步 stack 状态
 
 ```bash
 
-## 创建 stack 结构
+# 创建 stack 结构
 but branch -a feat/refresh-token feat/token-revocation
 but branch -a feat/token-revocation feat/token-audit-log
 
-## 修改底层分支后，GitButler 自动级联 rebase 上层分支
-## 无需手动执行任何 rebase 操作
-## 推送并创建 PR
+# 修改底层分支后，GitButler 自动级联 rebase 上层分支
+# 无需手动执行任何 rebase 操作
+# 推送并创建 PR
 gh stack submit
 ```
 
@@ -336,16 +336,16 @@ jj op undo                     # 撤销任意操作（无限 undo）
 
 ```bash
 
-## 查看当前工作区状态（JSON 输出，适合 agent 消费）
+# 查看当前工作区状态（JSON 输出，适合 agent 消费）
 but status --json
 
-## 将特定文件/hunk 提交到指定分支
+# 将特定文件/hunk 提交到指定分支
 but commit fe -m "feat(auth): implement token rotation logic" --changes g0
 
-## 自动归并到最合适的提交
+# 自动归并到最合适的提交
 but absorb
 
-## Stacked Branches
+# Stacked Branches
 but branch -a feat/refresh-token feat/token-revocation
 ```
 
@@ -378,15 +378,15 @@ but branch -a feat/refresh-token feat/token-revocation
 **核心目标**：「让版本历史成为可信的知识库」——无论代码是人写的还是 agent 写的。
 
 ## 相关实体
-- [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
-- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
-- [我用 Skillmd 做了一个简历生成器](/ch07-047-我用-skill-md-做了一个简历生成器/)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [Tencent Vibe Coding To Agentic Engineering Backend](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
+- [Alphaevolve Deepmind Discovery Agent](../ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d)
+- [Code As Agent Harness Survey](../ch09-046-code-as-agent-harness-综述)
+- [我用 Skillmd 做了一个简历生成器](../ch07-047-我用-skill-md-做了一个简历生成器)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-era-git-version-control-agentic-coding-practices.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-era-git-version-control-agentic-coding-practices.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 ## 深度分析
 
 **一、Agentic Coding 重新定义了版本管理的责任主体**：传统 Git 工作流假设人是所有提交决策的唯一主体，每个 commit 都对应一个有意图的操作。然而 LLM coding agent 的引入打破了这一假设——agent 在没有持续人工监督的情况下自主生成大量代码，这意味着版本历史的「责任链条」出现了真空地带。传统的 blame 和 commit message 机制无法追溯到真正的决策者（是人的意图还是模型的幻觉？），这个问题在 agent 长时间运行多步骤任务时会急剧放大。

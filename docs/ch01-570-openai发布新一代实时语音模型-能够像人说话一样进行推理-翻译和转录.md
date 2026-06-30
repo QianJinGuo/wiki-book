@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/openai发布新一代实时语音模型能够像人说话一样进行推理翻译和转录.md`
 
-## OpenAI发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录
+# OpenAI发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录
 ↑阅读之前记得关注+星标⭐️，😄，每天才能第一时间接收到更新
 OpenAI今天在API中推出三款全新音频模型，面向开发者开放。
 ** GPT-Realtime-2  ** ：首款具备GPT-5级别推理能力的语音模型，能处理更复杂的请求，并自然地推进对话。
 ** GPT-Realtime-Translate  ** ：实时翻译模型，支持70多种输入语言翻译成13种输出语言，翻译速度与说话者同步。
 
 ## 相关实体
-- [Prompt Debugger Compare Templates Winty](/ch01-606-prompt-debugger-compare-templates-winty/)
-- [Aliyun Agentrun 2Line Integration](/ch04-003-agentrun/)
-- [Pi Mono Github](/ch01-608-pi-mono-github/)
-- [2 Year 25 Ai Projects Summary](/ch01-013-这个五一节我做了个总结-在-2-年多的创业里-我一共做了-25-个-ai-项目/)
-- [Openai Realtime Api Architecture](/ch01-084-openai-realtime-api-架构首次公开/)
+- [Prompt Debugger Compare Templates Winty](../ch01-606-prompt-debugger-compare-templates-winty)
+- [Aliyun Agentrun 2Line Integration](../ch04-003-agentrun)
+- [Pi Mono Github](../ch01-608-pi-mono-github)
+- [2 Year 25 Ai Projects Summary](../ch01-013-这个五一节我做了个总结-在-2-年多的创业里-我一共做了-25-个-ai-项目)
+- [Openai Realtime Api Architecture](../ch01-084-openai-realtime-api-架构首次公开)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai发布新一代实时语音模型能够像人说话一样进行推理翻译和转录.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai发布新一代实时语音模型能够像人说话一样进行推理翻译和转录.md)
 
 ## 深度分析
 

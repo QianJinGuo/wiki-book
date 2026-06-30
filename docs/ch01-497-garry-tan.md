@@ -33,7 +33,7 @@
 - **个人AI革命 = 个人电脑革命**：每个人都将有满足自己独特需求的AI
 - **"个人AI主权"**：自己写提示词 vs 被平台黑箱控制
 - **当前阶段**：类似1970年代"自制电脑俱乐部"阶段
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/yc-ceo-garry-tan-200-dollar-vs-4-million.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/yc-ceo-garry-tan-200-dollar-vs-4-million.md)
 
 ## 深度分析
 ### Token经济学的范式转变
@@ -105,21 +105,21 @@ Garry的80-90%标准：
 - 将省下的时间用于更高价值的决策
 
 ## 相关实体
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](/ch07-029-qoder-skills-完全指南/)
-- [Agent Skill 设计模式](/ch01-677-anthropic/)
-- [柚漫剧 AI 全流程提效拆解](/ch01-356-柚漫剧-ai-全流程提效拆解/)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](/ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化/)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](/ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器/)
-> 主题导航
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07-029-qoder-skills-完全指南)
+- [Agent Skill 设计模式](../ch01-677-anthropic)
+- [柚漫剧 AI 全流程提效拆解](../ch01-356-柚漫剧-ai-全流程提效拆解)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器)
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Improving token efficiency in GitHub Agentic Workflows](/ch04-297-improving-token-efficiency-in-github-agentic-workflows/)
-- [复杂度棘轮：AI编程的质量只升不降机制](/ch01-309-复杂度棘轮-ai编程的质量只升不降机制/)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
-- [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路/)
-- [Agent Workflows](/ch04-306-agent-workflows/)
-- [Hermes Agent 新手上手指南](/ch04-418-hermes-agent/)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
-- [四种 Sub Agent 模式](/ch04-302-四种-sub-agent-模式/)
+- [Improving token efficiency in GitHub Agentic Workflows](../ch04-297-improving-token-efficiency-in-github-agentic-workflows)
+- [复杂度棘轮：AI编程的质量只升不降机制](../ch01-309-复杂度棘轮-ai编程的质量只升不降机制)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格)
+- [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路)
+- [Agent Workflows](../ch04-306-agent-workflows)
+- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布)
+- [四种 Sub Agent 模式](../ch04-302-四种-sub-agent-模式)
 
 ---
 

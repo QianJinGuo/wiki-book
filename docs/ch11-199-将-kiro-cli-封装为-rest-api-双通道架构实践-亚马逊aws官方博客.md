@@ -14,19 +14,19 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/kiro-cli-rest-api-architecture-practice/)
 
 ## 相关实体
-- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](/ch11-194-使用-kiro-cli-和-agent-client-protocol-构建飞书-ai-聊天机器人-亚马逊aws官方/)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
-- [从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 | 亚马逊AWS官方博客](/ch11-036-从手动到智能-用-kiro-cli-opensearch-mcp-让每个人都成为-opensearch-专家-亚/)
-- [用 Kiro CLI 自动搭建 FluentBit 日志采集方案：两种 EKS 埋点数据落地 S3 Parquet 的实战对比 | 亚马逊AWS官方博客](/ch11-205-用-kiro-cli-自动搭建-fluentbit-日志采集方案-两种-eks-埋点数据落地-s3-parquet-的实/)
-- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](/ch11-071-让-ai-理解你的组件库-新一代智能-d2c架构-基于-aws-kiro-mcp-skills-的智能转换实践/)
-- [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](/ch11-187-把-kiro-cli-当作-agent-sdk-一键订阅即可构建你的agent应用-亚马逊aws官方博客/)
+- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch11-194-使用-kiro-cli-和-agent-client-protocol-构建飞书-ai-聊天机器人-亚马逊aws官方)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双)
+- [从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 | 亚马逊AWS官方博客](../ch11-036-从手动到智能-用-kiro-cli-opensearch-mcp-让每个人都成为-opensearch-专家-亚)
+- [用 Kiro CLI 自动搭建 FluentBit 日志采集方案：两种 EKS 埋点数据落地 S3 Parquet 的实战对比 | 亚马逊AWS官方博客](../ch11-205-用-kiro-cli-自动搭建-fluentbit-日志采集方案-两种-eks-埋点数据落地-s3-parquet-的实)
+- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](../ch11-071-让-ai-理解你的组件库-新一代智能-d2c架构-基于-aws-kiro-mcp-skills-的智能转换实践)
+- [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](../ch11-187-把-kiro-cli-当作-agent-sdk-一键订阅即可构建你的agent应用-亚马逊aws官方博客)
 
 ## 深度分析
 本文揭示了将 CLI 工具封装为 REST API 的工程挑战与解决方案。核心发现是**ACP 协议的固有限制**——JSON-RPC 2.0 over stdio 的设计天然不支持运行时模型切换，这导致了"双通道架构"的工程折中方案。
 双通道设计的精妙之处在于**职责分离**：ACP 通道（常驻进程 + 多轮会话）处理复杂的多轮交互场景；Chat 通道（一次性进程 + 单次调用）处理简单的模型切换需求。这种设计模式实际上体现了一个更普适的原则——**当单一协议无法满足所有需求时，用两个协议的组合来覆盖完整的问题空间**。
 另一个关键洞察是**代理层（Proxy Layer）的价值**。文章中的 `mcp_server.py` 并不实现数据库逻辑，而是作为薄代理将请求委托给 `doris-mcp-server`。这种"不重复造轮子"的设计哲学使得上游升级时无需修改代理逻辑，同时允许在代理层添加拦截逻辑实现定制需求。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-engineering-principles-architecture-practice.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-engineering-principles-architecture-practice.md)
 
 ## 实践启示
 1. **评估协议限制再动手**：在封装 CLI 工具之前，先haustive 测试协议的边界能力（如模型切换）。本文的8种尝试失败案例说明，官方文档可能不完整，唯有亲自验证才能确定真实能力边界。

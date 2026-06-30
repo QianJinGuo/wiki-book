@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/aws-china-enterprise-agent-evaluation-adlc.md`
 
-## AWS China 企业级智能体评估方法论 ADLC 系列
+# AWS China 企业级智能体评估方法论 ADLC 系列
 
 > **Background**：本文基于 AWS China Blog 2026 年 6 月发布的三篇系列文章综合提炼。系列主题是企业级 AI Agent 从原型到生产的评估方法论，核心框架为 ADLC（Agent Development Lifecycle）。三篇分别覆盖：为什么评估是起点（Part 1）、评估维度与方法论（Part 2）、工程化落地与工具支持（Part 3）。
 
@@ -101,9 +101,9 @@ ADLC 的独特贡献是**将评估定义为 Agent 开发生命周期的一等公
 
 ## 来源
 
-- → [Part 1: 为什么评估是起点](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-china-enterprise-intelligent-why-evaluation.md)
-- → [Part 2: 从原型验证到生产就绪](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-china-enterprise-intelligent-validation-prototype-to-production.md)
-- → [Part 3: 如何构建企业级智能体](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-china-how-to-build-enterprise-intelligent-agent.md)
+- → [Part 1: 为什么评估是起点](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-china-enterprise-intelligent-why-evaluation.md)
+- → [Part 2: 从原型验证到生产就绪](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-china-enterprise-intelligent-validation-prototype-to-production.md)
+- → [Part 3: 如何构建企业级智能体](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-china-how-to-build-enterprise-intelligent-agent.md)
 
 ---
 

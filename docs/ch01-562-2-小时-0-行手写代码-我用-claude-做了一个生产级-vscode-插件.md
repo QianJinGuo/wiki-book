@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/claude-vscode-plugin-zero-code.md`
 
-## 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件
+# 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件
 
 **导读**：之前没写过 VSCode 插件、没接触过 Chrome Cookie 加密机制、不了解 UUAP SSO。2 小时后，独立做了一个能自动读取浏览器登录态、实时监控 Comate 模型用量的 VSCode 插件——8 个核心文件，1000+ 行代码，打包后 .vsix 可以直接分发给同事使用。
 这篇文章记录这 2 小时真实发生的事。0 行手写代码，不意味着什么都不用想。恰恰相反——我花了大量时间在判断：这个方案能不能落地、这个报错的根因是什么、Claude 给的方向是不是对的。代码是 Claude 写的，但每一个关键决策是我做的。
@@ -12,13 +12,13 @@
 每天用 Comate 写代码，但配额是月度的。经常到月底才发现快用完了，或者不知道哪个模型消耗最快。
 
 ## 相关实体
-- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](/ch09-096-2-小时-0-行手写代码-我用-claude-做了一个生产级-vscode-插件/)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](/ch01-677-anthropic/)
-- [Claude Code Self Repair Hooks Memory Config](/ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
-- [Skill Factory Yueheng](/ch05-065-skill-factory-三天手搓面向harness设计的技能工厂/)
-- [Code Review Graph](/ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token/)
+- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](../ch09-096-2-小时-0-行手写代码-我用-claude-做了一个生产级-vscode-插件)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](../ch01-677-anthropic)
+- [Claude Code Self Repair Hooks Memory Config](../ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码)
+- [Skill Factory Yueheng](../ch05-065-skill-factory-三天手搓面向harness设计的技能工厂)
+- [Code Review Graph](../ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-vscode-plugin-zero-code.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-vscode-plugin-zero-code.md)
 
 ## 深度分析
 

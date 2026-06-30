@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/cloudflare-copy-fail-linux-kernel-vulnerability-mitigation.md`
 
-## Cloudflare Copy Fail Linux 内核漏洞应急响应
+# Cloudflare Copy Fail Linux 内核漏洞应急响应
 
 ## 概述
 
@@ -77,7 +77,7 @@ CVE-2026-31431（代号 "Copy Fail"）是一个 Linux 内核本地提权漏洞�
 
 ## 相关主题
 
-- [Nginx RCE 漏洞](/ch12-045-nginx-rift-achieving-nginx-remote-code-execution-via-an-18/)
+- [Nginx RCE 漏洞](../ch12-045-nginx-rift-achieving-nginx-remote-code-execution-via-an-18)
 - Linux 内核安全
 - eBPF 安全应用
 - BPF-LSM 策略引擎

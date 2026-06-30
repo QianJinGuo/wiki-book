@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md`
 
-## Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway
+# Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway
 
 ## 相关实体
 
-- [direct connect (dx) 迁移最佳实践](/ch11-037-direct-connect-dx-迁移最佳实践/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
+- [direct connect (dx) 迁移最佳实践](../ch11-037-direct-connect-dx-迁移最佳实践)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
 
 ## 深度分析
 
@@ -39,12 +39,12 @@ Securing AI agent behavior is a key customer challenge in building agentic solut
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

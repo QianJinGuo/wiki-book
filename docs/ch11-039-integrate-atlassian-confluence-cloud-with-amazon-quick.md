@@ -118,16 +118,16 @@ Quick Flows 可自动化引用或更新 Confluence 内容的工作流。结合 A
 Knowledge Base 的 Sync Reports 是易被忽视的运维窗口。定期检查「skipped」和「failed」条目，可早期发现 Confluence 内容结构变化（如页面迁移、Space Key 变更）导致的索引不完整问题，避免用户发现答案缺失后才被动修复。
 
 ## 相关资源
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/integrate-atlassian-confluence-cloud-with-amazon-quick.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/integrate-atlassian-confluence-cloud-with-amazon-quick.md)
 - [Amazon Quick 文档](https://docs.aws.amazon.com/quicksuite/)
 - [Confluence Cloud Action 集成](https://docs.aws.amazon.com/quick/latest/userguide/confluence-action-integration.html)
 - [Confluence Knowledge Base ACL 配置](https://docs.aws.amazon.com/quick/latest/userguide/confluence-kb-acl.html)
 ## 相关实体
-- [Aderant Transforms Cloud Operations With Amazon Quick](/ch11-173-aderant-transforms-cloud-operations-with-amazon-quick/)
-- [Amazon Quick Research Agentic Multi Source Citation](/ch04-183-amazon-quick-research-agentic-multi-source-research-workflo/)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](/ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo/)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](/ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南/)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
+- [Aderant Transforms Cloud Operations With Amazon Quick](../ch11-173-aderant-transforms-cloud-operations-with-amazon-quick)
+- [Amazon Quick Research Agentic Multi Source Citation](../ch04-183-amazon-quick-research-agentic-multi-source-research-workflo)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore)
 
 ---
 

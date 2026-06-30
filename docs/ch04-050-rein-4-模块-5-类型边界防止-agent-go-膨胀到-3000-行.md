@@ -4,15 +4,15 @@
 
 > 📊 Level ⭐⭐ | 22.7KB | `entities/rein-go-agent-4-modules-5-type-boundaries.md`
 
-## Rein：4 模块 + 5 类型边界防止 agent.go 膨胀到 3000 行
+# Rein：4 模块 + 5 类型边界防止 agent.go 膨胀到 3000 行
 > "根子在哪？不是架构图不够漂亮。是模块之间的数据契约没定义清楚。" —— Rein 项目
 
 **Rein** 是一个 Go agent 框架，用 **4 个模块 + 5 条类型边界 + 7 个不变量** 解决"agent.go 200 行 → 3000 行"的问题。核心思路：**模块之间的数据契约定义清楚 = 防止上帝文件**。每条数据流都对应一个**严格类型 + 单一职责 + 不可见字段**。
 
 ## 相关实体
-- [Youre Building Agent Security In The Wrong Order](/ch04-310-you-re-building-agent-security-in-the-wrong-order/)
+- [Youre Building Agent Security In The Wrong Order](../ch04-310-you-re-building-agent-security-in-the-wrong-order)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
 
 ## 一句话定位
 
@@ -230,19 +230,19 @@ WithWorkingDir(cwd)            // 工作目录
 
 ## 与现有 wiki 实体的关系
 
-### vs Claude Code 源码分析（[Claude Code 20000 Char Source Analysis](/ch09-056-两万字详解claude-code源码核心机制/)）
+### vs Claude Code 源码分析（[Claude Code 20000 Char Source Analysis](../ch09-056-两万字详解claude-code源码核心机制)）
 - Claude Code 98.4% 基础设施 + 1.6% AI 决策
 - Rein 用 4 模块 + 5 类型边界把 3000 行结构化
 
-### vs Agent Harness 上下文管理（Agent Harness Context Management Working Set）
+### vs Agent Harness 上下文管理（[Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)）
 - 工作集视角：logical_messages 原样保留 + 投影 = Rein 的"存储完整，发送压缩"
 
-### vs wow-harness v3 事件溯源（[Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)）
+### vs wow-harness v3 事件溯源（[Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议)）
 - v3 = 跨 session 事件时间线 + 概念图
 - Rein = session 原子写入 + 完整 logical_messages
 - **共同点**：完整历史 + 不可篡改 + 确定性回放
 
-### vs PilotDeck 白盒记忆（[Pilotdeck Agent Os Openbmb Tsinghua](/ch04-124-小龙虾彻底凉了-清华团队连夜开源agent神器pilotdeck-token成本狂降70/)）
+### vs PilotDeck 白盒记忆（[Pilotdeck Agent Os Openbmb Tsinghua](../ch04-124-小龙虾彻底凉了-清华团队连夜开源agent神器pilotdeck-token成本狂降70)）
 - PilotDeck 记忆可读可改 + Dream 回滚
 - Rein observation envelope retryable 字段
 - **共同点**：把"AI 思考过程"暴露给用户/调用方
@@ -292,16 +292,16 @@ WithWorkingDir(cwd)            // 工作目录
 - **评估框架时关注流式等价性保证**：如果一个 provider 声称支持流式但无法保证 Stream() 和 Complete() 产出完全一致的 Message，这个 provider 就不满足 Rein 的 invariants。流式和非流式路径必须等价——这是 session 回放确定性的基础，也是你选型时最重要的技术指标之一 
 
 ## 相关对照
-- [Claude Code 20000 字符源码分析](/ch09-056-两万字详解claude-code源码核心机制/)
-- Agent Harness 上下文管理 —— 工作集视角
-- [wow-harness v3](/ch05-028-wow-harness-v3-ai-开发的治理协议/) —— 事件溯源 + 概念图
-- [PilotDeck](/ch04-124-小龙虾彻底凉了-清华团队连夜开源agent神器pilotdeck-token成本狂降70/) —— 白盒记忆
-- [Agent Harness 架构](/ch04-207-agent-harness-架构/) —— 7 层 harness 模型
-- [17 种 agent 架构演进](/ch04-507-17种agent架构演进-控制流设计的完整演化史/) —— 类型边界视角
-- [Agent 工程原则](/ch04-435-agent-engineering-principles-architecture-practice/) —— 模块化设计实践
-- 短期记忆压缩 —— 投影压缩对比
+- [Claude Code 20000 字符源码分析](../ch09-056-两万字详解claude-code源码核心机制)
+- [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) —— 工作集视角
+- [wow-harness v3](../ch05-028-wow-harness-v3-ai-开发的治理协议) —— 事件溯源 + 概念图
+- [PilotDeck](../ch04-124-小龙虾彻底凉了-清华团队连夜开源agent神器pilotdeck-token成本狂降70) —— 白盒记忆
+- [Agent Harness 架构](../ch04-207-agent-harness-架构) —— 7 层 harness 模型
+- [17 种 agent 架构演进](../ch04-507-17种agent架构演进-控制流设计的完整演化史) —— 类型边界视角
+- [Agent 工程原则](../ch04-435-agent-engineering-principles-architecture-practice) —— 模块化设计实践
+- [短期记忆压缩](https://github.com/QianJinGuo/wiki/blob/main/entities/tencentdb-agent-memory-short-term-compression.md) —— 投影压缩对比
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
 
 ---
 

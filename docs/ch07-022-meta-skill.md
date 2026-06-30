@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/meta-skill.md`
 
-## Meta Skill
+# Meta Skill
 > "Skill 的 Skill" —— 多个原子 Skill 的"项目经理操作手册"。当员工（Agent）变多、业务（Skill）变多，必然遇到指数级放大的噪音；Meta Skill 是用来指导 Agent 三省六部的白皮书。
 
 **Meta Skill = 在 Skill 之上编排 Skill 的抽象层**。把多步骤编排（并行/串行决策、产出物上下游衔接）**全部内嵌到一份 SKILL.md**，端到端打通一整套长程 Workflow。OpenSquilla 当前内置 **9 个 Meta Skill**（2026-06-04），2,757 ⭐，Apache-2.0。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)
 
 ## 它解决了什么
 **SOP 已梳理清楚，但每个蓝色方块都要在对话框单独调 Skill** —— 像戳一下动一下，全程 Human in the loop，光翻 Skill 列表就够忙活半天。
@@ -80,7 +80,7 @@
 > **Meta Skill 的可能性**：专为 Agent 团队设计的白皮书，赋予模型更宏观的全局上下文 —— **从单兵作战到团队作战**。
 
 ## 与 SkillOpt 的对比
-| 维度 | [SkillOpt](/ch07-025-skillopt-微软训练-skill-文档的方法论/) | Meta Skill |
+| 维度 | [SkillOpt](../ch07-025-skillopt-微软训练-skill-文档的方法论) | Meta Skill |
 |---|---|---|
 | **目标** | 训练出**更好的单个 Skill** 文档 | **编排多个 Skill** 完成长程任务 |
 | **方法** | 冻结模型 + 验证集门控 + 优化 skill 文本 | 在 SKILL.md 里写"步骤 N 调用哪个原子 Skill" |
@@ -91,7 +91,7 @@
 > **互补关系**：SkillOpt 让 Skill 变好；Meta Skill 让 Skill 变多；两者一起 = Skill 2.0 闭环。
 
 ## 与 Impeccable 的对比
-| 维度 | [Impeccable](/ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析/) | Meta Skill |
+| 维度 | [Impeccable](../ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析) | Meta Skill |
 |---|---|---|
 | **范围** | 单个 Skill（前端设计） | 多个 Skill 的编排 |
 | **抽象层** | skill 内命令 (23 commands) | skill 间编排 (SKILL.md) |
@@ -105,25 +105,25 @@
 5. **个人信号 × 社区匹配** = Skill 发现的新范式，超越关键词搜索
 
 ## 相关对照
-- [OpenSquilla](/ch04-482-opensquilla-launches-open-source-ai-agent-to-cut-token-costs/) —— Meta Skill 的实现载体
-- [SkillOpt](/ch07-025-skillopt-微软训练-skill-文档的方法论/) —— 互补（Skill 变好 vs Skill 变多）
-- [Impeccable](/ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析/) —— skill 内命令的范例
-- Agent Skill 编写指南
-- [10 篇论文看懂 AI Agent Skill](/ch04-036-10篇论文看懂ai-agent-skill-表示-执行-评估与进化/)
-- [Agent Skills 系统性综述](/ch04-340-agent-skills-系统性综述-表示-获取-检索-进化/)
-- [Skills 系统设计三路对比](/ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
-- [Agent/Skills/Teams 架构演进](/ch04-219-agent-skills-teams-架构演进过程及技术选型之道/)
+- [OpenSquilla](../ch04-482-opensquilla-launches-open-source-ai-agent-to-cut-token-costs) —— Meta Skill 的实现载体
+- [SkillOpt](../ch07-025-skillopt-微软训练-skill-文档的方法论) —— 互补（Skill 变好 vs Skill 变多）
+- [Impeccable](../ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析) —— skill 内命令的范例
+- [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing.md)
+- [10 篇论文看懂 AI Agent Skill](../ch04-036-10篇论文看懂ai-agent-skill-表示-执行-评估与进化)
+- [Agent Skills 系统性综述](../ch04-340-agent-skills-系统性综述-表示-获取-检索-进化)
+- [Skills 系统设计三路对比](../ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age)
+- [Agent/Skills/Teams 架构演进](../ch04-219-agent-skills-teams-架构演进过程及技术选型之道)
 
 ## 深度分析
 - **流程知识资产化**：Meta Skill 将隐性的 SOP 流程转化为显性的可执行文档，赋予模型超越单步工具调用的宏观上下文理解能力 
 - **范式迭代节点**：从"会不会调用工具"到"会不会组织工具"的转变，标志着 AI 自动化进入长程工作流编排的新阶段，技能抽象层级随业务复杂度自然上移 
 - **三大基础设施协同**：路由（预算分配）+ 编排（步骤调度）+ 创建（Meta-skill-creator 辅助生成）构成缺一不可的闭环，单一层面的优化无法实现真正的 Skill 2.0 
 - **Token 效率验证**：实测省 60-80% 成本，弱智问题用小模型搞定（3 分钱），复杂安全审查才动用大模型 —— 智能路由的经济价值在实践中得到验证 
-- **多 Agent 收敛趋势**：Meta Skill 与 [Minimax Mavis](/ch04-137-一个-ai-还是不够的-minimax-agent-team-mavis/) 等 Agent 团队架构在"编排层"形成技术收敛，从单兵作战走向团队协作是 Agent 发展的必然方向 
+- **多 Agent 收敛趋势**：Meta Skill 与 [Minimax Mavis](../ch04-137-一个-ai-还是不够的-minimax-agent-team-mavis) 等 Agent 团队架构在"编排层"形成技术收敛，从单兵作战走向团队协作是 Agent 发展的必然方向 
 
 ## 实践启示
 - **先有清晰 SOP 再谈 Meta Skill**：单个 Meta Skill 需 400+ 行 SKILL.md 和约 30 分钟迭代，没有清晰的流程定义就无法有效抽象，先在业务层把 SOP 跑通是前置条件 
-- **用 [SkillOpt](/ch07-025-skillopt-微软训练-skill-文档的方法论/) 优化单 Skill、用 Meta Skill 组织多 Skill**：两者是互补关系而非竞争关系，单个 Skill 的质量决定了编排层的下限，两层一起才能构成完整闭环 
+- **用 [SkillOpt](../ch07-025-skillopt-微软训练-skill-文档的方法论) 优化单 Skill、用 Meta Skill 组织多 Skill**：两者是互补关系而非竞争关系，单个 Skill 的质量决定了编排层的下限，两层一起才能构成完整闭环 
 - **智能路由是成本控制关键**：按子任务复杂度选择模型是 Meta Skill 的核心优势，建议默认开启路由，仅在特定场景（如合规审查）才锁定使用高端模型 
 - **关注个人信号 × 社区匹配机制**：未来 Skill 发现将从关键词搜索转向基于使用行为和偏好的智能推荐，提前布局信号采集和社区共享可获得先发优势 
 - **为 Agent 团队准备 Meta Skill 白皮书**：多 Agent 协作的瓶颈不在模型能力而在全局上下文赋予，Meta Skill 是赋予模型"团队视野"的关键载体，提前储备可加速团队作战能力建设

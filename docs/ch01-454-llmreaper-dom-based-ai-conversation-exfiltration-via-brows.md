@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/blog-ai-chat-llmreaper.md`
 
-## LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions
+# LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/blog-ai-chat-llmreaper.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/blog-ai-chat-llmreaper.md)
 
 ## 摘要
 
@@ -91,12 +91,12 @@ LLMReaper 的技术与 2024-2025 年 Chrome Web Store 大规模恶意扩展事�
 
 ## 相关实体
 
-- [`Cve 2026 20182 Cisco Sd Wan Vhub Bypass` — 类似的概念（浏览器扩展供应链攻击）](/ch12-015-resecurity-cve-2026-20182-unauthenticated-cisco-sd-wan-co/)
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — 安全工程是 harness 的一部分
-- [`Shub Reaper Macos Stealer Attack Chain` — 类似命名（macOS stealer）的攻击链](/ch12-014-shub-reaper-macos-stealer-spoofs-apple-google-and-microso/)
-- [`Llmshare Using Shared Chatbot Pages To Distribute Malware 20260606` — LLM 相关恶意软件分发](/ch01-807-llmshare-using-shared-chatbot-pages-to-distribute-malware/)
-- [`Zapocalypse The Attack Chain That Could Have Hijacked Zapier 20260606` — AI 平台攻击链分析](/ch11-207-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie/)
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/blog-ai-chat-llmreaper.md)
+- `Cve 2026 20182 Cisco Sd Wan Vhub Bypass` — 类似的概念（浏览器扩展供应链攻击）
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 安全工程是 harness 的一部分
+- `Shub Reaper Macos Stealer Attack Chain` — 类似命名（macOS stealer）的攻击链
+- `Llmshare Using Shared Chatbot Pages To Distribute Malware 20260606` — LLM 相关恶意软件分发
+- `Zapocalypse The Attack Chain That Could Have Hijacked Zapier 20260606` — AI 平台攻击链分析
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/blog-ai-chat-llmreaper.md)
 
 ---
 

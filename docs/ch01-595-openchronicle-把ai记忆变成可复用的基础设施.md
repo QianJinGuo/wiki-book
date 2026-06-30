@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/openchronicle-opensource-memory-layer.md`
 
-## OpenChronicle：把AI记忆变成可复用的基础设施
+# OpenChronicle：把AI记忆变成可复用的基础设施
 4月20日，OpenAI发布Chronicle——AI可以直接"看见屏幕"并持续记忆上下文，仅对ChatGPT Pro用户开放（$100/月）。
 48小时后，00后开发者团队Vida发布OpenChronicle开源项目，将"看屏幕+持续记忆"这件事从付费墙中拆解出来。
 GitHub: https://github.com/Einsia/OpenChronicle
 > "OpenAI的Chronicle指向了一个重要的未来。但AI的记忆，不应该被锁在100美元/月的付费墙之后。所以，我们把它开源了。"
 
 ## 相关实体
-- [Agent Self Improvement Six Mechanisms](/ch04-047-agent-自我改进的六条路/)
-- [Agi Road May Be Wrong From The Start Wang Peng Tencent](/ch01-190-agi-之路-可能从一开始就走错了/)
-- [Vayne Lw Personal Agent System](/ch01-597-你缺的不是更好的-ai-而是一个-装自己-的系统/)
-- [Chatgpt Memory](/ch01-315-chatgpt-memory/)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](/ch07-017-hermes自进化完整闭环-skill创建复用修补链路/)
+- [Agent Self Improvement Six Mechanisms](../ch04-047-agent-自我改进的六条路)
+- [Agi Road May Be Wrong From The Start Wang Peng Tencent](../ch01-190-agi-之路-可能从一开始就走错了)
+- [Vayne Lw Personal Agent System](../ch01-597-你缺的不是更好的-ai-而是一个-装自己-的系统)
+- [Chatgpt Memory](../ch01-315-chatgpt-memory)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07-017-hermes自进化完整闭环-skill创建复用修补链路)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openchronicle-opensource-memory-layer.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openchronicle-opensource-memory-layer.md)
 
 ## 深度分析
 

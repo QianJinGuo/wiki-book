@@ -4,16 +4,16 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/harness-engineering-core-patterns-claude-code.md`
 
-## 深入浅出 Harness Engineering 之核心模式与理念
+# 深入浅出 Harness Engineering 之核心模式与理念
 
 ## 相关实体
 
-- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](/ch01-725-面向大型代码库的-claude-code-团队落地经验与扩展策略-agent-harness/)
-- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](/ch01-831-面向大型代码库的-claude-code-团队落地经验与扩展策略-agent-harness/)
-- [知识库问答 @文档：从 dom 方案到 prosemirror 落地](/ch01-791-知识库问答-文档-从-dom-方案到-prosemirror-落地/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-core-patterns-claude-code.md)
+- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](../ch01-725-面向大型代码库的-claude-code-团队落地经验与扩展策略-agent-harness)
+- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](../ch01-831-面向大型代码库的-claude-code-团队落地经验与扩展策略-agent-harness)
+- [知识库问答 @文档：从 dom 方案到 prosemirror 落地](../ch01-791-知识库问答-文档-从-dom-方案到-prosemirror-落地)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-core-patterns-claude-code.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
 深入浅出 Harness Engineering 之核心模式与理念 涉及agent领域的核心技术议题。
@@ -47,12 +47,12 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

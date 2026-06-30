@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/how-loka-built-a-natural-low-latency-voice-agent-with-amazon.md`
 
-## How Loka Built a Natural, Low-Latency Voice Agent with Amazon Nova 2 Sonic
+# How Loka Built a Natural, Low-Latency Voice Agent with Amazon Nova 2 Sonic
 
 > **Background**：AWS 官方博客 2026-06-24 发布的案例研究，详细介绍了 Loka 如何使用 Amazon Nova 2 Sonic 构建低延迟、自然对话的语音 Agent。文章包含具体的性能基准测试数据（Big Bench Audio 87.0 分）、架构设计细节和 Prompt 工程迭代过程。
 
@@ -96,7 +96,7 @@ Nova 2 Sonic 的端到端方案解决了传统流水线的几个根本问题：
 3. **错误累积**：单一模型避免了多步骤错误传播
 4. **成本**：$0.27/小时的成本使其在大规模部署中具有经济可行性
 
-这与 [医疗预约 Agent](/ch04-470-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni/) 的设计选择一致——两者都采用了 Nova 2 Sonic 作为核心模型。
+这与 [医疗预约 Agent](../ch04-470-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni) 的设计选择一致——两者都采用了 Nova 2 Sonic 作为核心模型。
 
 ### Prompt 工程的工程化
 
@@ -143,14 +143,14 @@ Loka 的架构设计考虑了大规模部署的需求：
 
 ## 相关实体
 
-- [医疗预约 Agent](/ch04-470-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni/) — Nova 2 Sonic 在医疗场景的应用
-- [Voice Agent Architecture — 语音 Agent 架构设计](/ch01-525-mollick-实用-ai-选型指南-模型选择-deep-research-voice-mode-agent-工作流/)
-- [Agent Harness Context Management — Agent 上下文管理](/ch05-038-agent生产级harness工程指南/)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Harness 工程框架
+- [医疗预约 Agent](../ch04-470-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni) — Nova 2 Sonic 在医疗场景的应用
+- Voice Agent Architecture — 语音 Agent 架构设计
+- [Agent Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
 
 ## 参考
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-loka-built-a-natural-low-latency-voice-agent-with-amazon.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-loka-built-a-natural-low-latency-voice-agent-with-amazon.md)
 
 ---
 

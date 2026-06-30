@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.6KB | `entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
 
 ## 摘要
 Versa Networks 在 2026 年 5 月为其 VersaONE Universal SASE 平台发布三项协同更新：Cloud Security Posture Management (CSPM) 云安全态势管理、Concerto 13.1.1 编排平台升级，以及将于 5 月 21 日推出的 AI Agent 信任与验证框架。该公司同期发布首届《State of SASE + AI Report》，调查 525 名美国企业 IT 和安全决策者，结果显示 35% 的组织在过去一年因网络与安全团队之间的协调缺口而遭受安全漏洞，99% 将融合列为战略优先级，但仅有 30% 实现落地。
@@ -51,9 +51,9 @@ Google 以 32 亿美元收购 Wiz 将 CSPM 赛道推向资本热点，但 Versa 
 Versa 的三路更新（CSPM + Orchestration + Agent Trust）勾勒出 SASE 平台的演进方向：**单平台融合**正在从营销概念走向工程现实。对于已有 Versa 部署的企业，这是评估平台扩展能力的窗口；对于新评估者，Concerto 13.1.1 的策略统一能力和 AI Agent 验证框架是差异化的技术买点。
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
-- [AI tool poisoning — VentureBeat](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
-- [企业级OpenClaw安全部署架构指南](/ch11-090-企业级openclaw安全部署架构指南-亚马逊aws官方博客/)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)
+- [AI tool poisoning — VentureBeat](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)
+- [企业级OpenClaw安全部署架构指南](../ch11-090-企业级openclaw安全部署架构指南-亚马逊aws官方博客)
 
 ---
 

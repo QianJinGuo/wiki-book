@@ -11,17 +11,17 @@
 - 开发者可零成本迁移至 SageMaker，降低 AI 应用部署成本
 
 ## 相关实体
-- [Amazon Bedrock Api Security Guide](/ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南/)
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](/ch04-470-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni/)
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](/ch11-014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway/)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](/ch04-261-build-ai-agents-for-business-intelligence-with-amazon-bedroc/)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
+- [Amazon Bedrock Api Security Guide](../ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch11-014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04-261-build-ai-agents-for-business-intelligence-with-amazon-bedroc)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
 
-- [Openai Models And Codex On Amazon Bedrock Are Now Generally ](/ch11-221-openai-models-and-codex-on-amazon-bedrock-are-now-generally/)
-- [开始在 Amazon Bedrock 上使用 Openai Gpt 55Gpt 54 模型和 Codex](/ch01-840-开始在-amazon-bedrock-上使用-openai-gpt-5-5-gpt-5-4-模型和-codex/)
-- MOC
+- [Openai Models And Codex On Amazon Bedrock Are Now Generally ](../ch11-221-openai-models-and-codex-on-amazon-bedrock-are-now-generally)
+- [开始在 Amazon Bedrock 上使用 Openai Gpt 55Gpt 54 模型和 Codex](../ch01-840-开始在-amazon-bedrock-上使用-openai-gpt-5-5-gpt-5-4-模型和-codex)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 ## 深度分析
 
 ### 技术架构层面

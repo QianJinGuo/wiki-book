@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 14.5KB | `entities/evaluating-netflix-show-synopses-with-llm-as-a-judge.md`
 
-## Evaluating Netflix Show Synopses with LLM-as-a-Judge
+# Evaluating Netflix Show Synopses with LLM-as-a-Judge
 
-> **Source**: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
+> **Source**: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 
 ## 核心内容
 
@@ -18,13 +18,13 @@ feed_name: Netflix Tech Blog
 source_published: 2026-04-10
 ---
 
-## Evaluating Netflix Show Synopses with LLM-as-a-Judge
+# Evaluating Netflix Show Synopses with LLM-as-a-Judge
 
-by [Gabriela Alessio](/ch01-<https://www.linkedin.com/in/gabrielaalessio/>/), [Cameron Taylor](/ch01-<https://www.linkedin.com/in/cameronntaylor/>/), and [Cameron R. Wolfe](/ch01-<https://www.linkedin.com/in/cwolferesearch/>/)
+by [Gabriela Alessio](../ch01-<https://www.linkedin.com/in/gabrielaalessio/>), [Cameron Taylor](../ch01-<https://www.linkedin.com/in/cameronntaylor/>), and [Cameron R. Wolfe](../ch01-<https://www.linkedin.com/in/cwolferesearch/>)
 
 ### Introduction
 
-When members log into Netflix, one of the hardest choices is what to watch. The challenge isn’t a lack of options —  _there are thousands of titles_ — but finding the most intriguing one is complex and deeply personal. To help, we surface [personalized promotional assets](/ch01-<https://netflixtechblog.com/artwork-personalization-c589f074ad76>/), especially the show synopsis —  _a brief description highlighting key plot elements, with cues like genre or talent_.
+When members log into Netflix, one of the hardest choices is what to watch. The challenge isn’t a lack of options —  _there are thousands of titles_ — but finding the most intriguing one is complex and deeply personal. To help, we surface [personalized promotional assets](../ch01-<https://netflixtechblog.com/artwork-personalization-c589f074ad76>), especially the show synopsis —  _a brief description highlighting key plot elements, with cues like genre or talent_.
 
 Strong synopses help members scan, understand, and choose. Poor synopses frustrate, mislead, and drive abandonment. Ensuring high-quality synopses is essential, but scaling quality validation is hard. We host hundreds of thousands of synopses, usually with multiple variants per show. We need to ensure quality at scale so every member gets a consistently great experience every time they read a synopsis. This approach helps us scale high‑quality synopsis coverage for our rapidly expanding catalog, enabling greater speed and coverage without sacrificing quality.
 
@@ -71,13 +71,13 @@ Higher take fraction indicates more choosing, while lower abandonment suggests a
 Solid industry application of LLM-as-a-Judge methodology with meaningful technical depth: per-criteria dedicated judges, zero-shot CoT prompting, Automatic Prompt Optimization, inference-time scaling (longer rationales, consensus scoring), and tiered rationale generation. Includes practical details on human-AI calibration (8 rounds, 80% agreement), golden set construction (~600 synopses with binary labels), and correlation of LLM scores with business metrics (take fraction, abandonment rate). Draws on relevant academic references (CoT, APO). The article is clearly written and well-structured, authored by named researchers/practitioners. However, the content is truncated mid-section (cuts off during 'tiered rationales' discussion), quantitative results in the excerpt are limited, no full comparison to baselines, and it is an industry blog rather than peer-reviewed research. Despite these issues, the methodology, calibration process, and integration of LLM evaluation with implicit feedback signals make it a useful case study for a technical AI/ML wiki.
 
 ## 相关实体
-- [Spotify Llm Evals Funnel Not Fork](/ch01-628-better-experiments-with-llm-evals-a-funnel-not-a-fork-s/)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
-- [Aws Reinforcement Fine Tuning Llm As Judge](/ch01-437-aws-reinforcement-fine-tuning-llm-as-judge/)
+- [Spotify Llm Evals Funnel Not Fork](../ch01-628-better-experiments-with-llm-evals-a-funnel-not-a-fork-s)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
+- [Aws Reinforcement Fine Tuning Llm As Judge](../ch01-437-aws-reinforcement-fine-tuning-llm-as-judge)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 ## 深度分析
 
 ### 1. 专用判官架构优于单提示词过载
@@ -112,7 +112,7 @@ Consensus scoring（多次采样取均值）在 vanilla CoT 上无增益，在 t
 ### 5. 对事实性评估采用 Multi-Agent 门控架构
 当评估对象涉及需要与外部知识库核对的维度时，使用专门的 agent 处理每个 narrow factuality 子维度。每个 agent 只接收与其评估维度相关的上下文（plot summary / award list 等），最终使用 minimum 聚合——任何子维度的失败都导致整体 fail。这一模式适用于任何"由多个独立正确性条件共同保证"的评估场景，比在单一 agent 中塞入所有上下文更可靠。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 
 ---
 

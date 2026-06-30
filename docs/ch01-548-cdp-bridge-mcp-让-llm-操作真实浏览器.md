@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/cdp-bridge-mcp-real-browser-agent.md`
 
-## CDP Bridge MCP：让 LLM 操作真实浏览器
+# CDP Bridge MCP：让 LLM 操作真实浏览器
 > CDP Bridge MCP 是一个连接 MCP 客户端与真实浏览器会话的桥接服务。它通过配套的 Chromium 扩展接入浏览器页面，让大模型客户端可以读取标签页、扫描页面、执行 JavaScript、截图、导航和读取 Cookie。
 
 ## 核心理念
@@ -42,13 +42,13 @@
 - 三黄工作室第二个开源项目
 
 ## 相关实体
-- [Agentic Ai System Architecture Harness Skill Mcp](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
-- [Browser Harness Github](/ch05-066-browser-harness-github/)
-- [Four Browser Automation Tools Comparison](/ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc/)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真)
+- [Browser Harness Github](../ch05-066-browser-harness-github)
+- [Four Browser Automation Tools Comparison](../ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cdp-bridge-mcp-real-browser-agent.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cdp-bridge-mcp-real-browser-agent.md)
 
 ## 深度分析
 

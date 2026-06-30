@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/jetbrains-marketplace-malicious-ai-plugins-security-update.md`
 
-## JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins
+# JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins
 
 2026-06-16, JetBrains received security reports: 15 third-party plugins on JetBrains Marketplace were stealing developer-configured AI Provider API Keys. These plugins masqueraded as legitimate AI tools (text generation, unit testing) but executed unauthorized backend functions when users entered API keys and clicked "Apply".
 
@@ -42,9 +42,9 @@ Rapid expansion of AI coding tools (Copilot, Claude Code, Cursor) makes API Keys
 
 ## Related Supply Chain Incidents
 
-- [Semgrep Intercom PHP](/ch12-100-semgrep-intercom-php-supply-chain/) - malicious package via package manager
-- [Claude Code Malicious Skills](/ch01-615-skill-issues-compromising-claude-code-with-malicious-skills/) - Agent/Skill ecosystem risk
-- [Checkmarx Jenkins Plugin](/ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att/) - plugin marketplace attack
+- [Semgrep Intercom PHP](../ch12-100-semgrep-intercom-php-supply-chain) - malicious package via package manager
+- [Claude Code Malicious Skills](../ch01-615-skill-issues-compromising-claude-code-with-malicious-skills) - Agent/Skill ecosystem risk
+- [Checkmarx Jenkins Plugin](../ch01-313-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att) - plugin marketplace attack
 
 ## 深度分析
 
@@ -68,7 +68,7 @@ Rapid expansion of AI coding tools (Copilot, Claude Code, Cursor) makes API Keys
 
 5. **关注插件市场的安全机制演进**：评估你使用的 IDE/编辑器是否具备类似的远程 kill-switch 能力。对于企业环境，考虑使用插件白名单机制，只允许经过安全审查的插件安装。
 
--> [Source Archive](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/jetbrains-marketplace-malicious-ai-plugins-security-update.md)
+-> [Source Archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/jetbrains-marketplace-malicious-ai-plugins-security-update.md)
 
 ---
 

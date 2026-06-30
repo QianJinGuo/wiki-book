@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/hermes-agent-goal-and-kanban.md`
 
-## Hermes Agent — /goal 目标管理与 Kanban 多 agent 协作
+# Hermes Agent — /goal 目标管理与 Kanban 多 agent 协作
 > Hermes Agent v0.13.0 的两个核心功能： `/goal` 目标管理和 `Kanban` 多 agent 团队协作。本教程来自「AI赋能说」，十分钟跑通。
 
 ## 核心功能
@@ -73,15 +73,15 @@ hermes doctor   # 检查环境
 ## Related
 
 ## 相关实体
-- [Hermes Agent Kanban Deep Test](/ch04-418-hermes-agent/)
-- [Hermes Agent Goal Runtime Architecture](/ch04-418-hermes-agent/)
-- [Hermes Agent](/ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队/)
-- [Hermes Agent Kanban Deep Test By Wjjagi 2026](/ch04-418-hermes-agent/)
-- [Hermes Agent Self Evolution Tengxun](/ch04-418-hermes-agent/)
+- [Hermes Agent Kanban Deep Test](../ch04-418-hermes-agent)
+- [Hermes Agent Goal Runtime Architecture](../ch04-418-hermes-agent)
+- [Hermes Agent](../ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队)
+- [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch04-418-hermes-agent)
+- [Hermes Agent Self Evolution Tengxun](../ch04-418-hermes-agent)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
 
-- [`Self-Evolving Agent`](/ch04-028-高德-ai-native-生产线-第-3-期-7x24-self-healing-pipeline-agent-自/)
+- `Self-Evolving Agent`
 
 ---
 

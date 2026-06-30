@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.2KB | `entities/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md`
 
-[精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
+[精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
 
 ## 深度分析
 这篇文章系统性地解决了 **AI 生成代码与设计语言之间的断层** 问题^。作者的核心观点是：Claude Code 默认偏开发者思维，需要通过安装特定技能（Skills）来补齐设计感知能力。
@@ -39,18 +39,18 @@
 - Figma + `ui-ux-pro-max` 的组合特别适合设计-开发协作场景^
 
 ### 相关参考
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
-→ [frontend-design 实体对比](/ch01-531-skills-anthropic-openai-comparison-frontend-design/)
-→ [开发者技能清单](/ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills/)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
+→ [frontend-design 实体对比](../ch01-531-skills-anthropic-openai-comparison-frontend-design)
+→ [开发者技能清单](../ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills)
 
-## 精选 8 个 UI 设计师必备的 AI 智能体技能（Agent Skills）
+# 精选 8 个 UI 设计师必备的 AI 智能体技能（Agent Skills）
 如果你在用 Claude Code 做设计，大概率遇到过这种情况，而且还不止一次。它写代码确实很强，但默认的思路更偏开发者，而不是设计师。让它做个落地页，功能是能跑的，但视觉上常常停留在「把  ` <h1> ` 做得比  ` <h2> ` 大一点」的水平。
 没有合适的技能，Claude Code 很难真正理解设计语言。比如什么是「玻璃拟态（glassmorphism）」在代码里的落地方式，不同领域（健康、金融）该用什么配色，怎么搭配 Google 字体，什么时候该用骨架屏而不是加载圈，以及一个页面到底是「高端感」还是「偏大众」。
 本文整理了  ** 8 个设计师值得安装的技能  ** ，可以当作一个最小工具集，把 Claude Code 从写代码的工具，变成真正能一起做设计的伙伴。
 
 ##  为什么要关注安装顺序
 这些技能不是随便推荐的，我是按顺序排的，让每一个都建立在前一个的基础上。
-技能 [ #1 ](/ch04-<>/) 先让 Claude 有设计感，技能 [ #2 ](/ch04-<>/) 让它用更合适的方式去实现，技能 [ #3 ](/ch04-<>/) 再给它一套现代组件库可以直接用，后面的也是在这个基础上往上叠加。
+技能 [ #1 ](../ch04-<>) 先让 Claude 有设计感，技能 [ #2 ](../ch04-<>) 让它用更合适的方式去实现，技能 [ #3 ](../ch04-<>) 再给它一套现代组件库可以直接用，后面的也是在这个基础上往上叠加。
 你当然可以一口气全部安装，但如果大概知道每个技能是干嘛的，用起来就会顺手很多。
 
 ##  1\. ui-ux-pro-max — 你的设计智能系统

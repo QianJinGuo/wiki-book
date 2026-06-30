@@ -20,14 +20,14 @@
 - **系统集成商**：多技术同步推进意味着大量集成需求，跨技术栈的实施能力将成为关键竞争优势。
 - **安全厂商**：越南明确需要下一代防火墙、SIEM、AI 驱动 SOC 平台，安全厂商有机会参与标准制定。
 - **政策研究者**：越南案例表明，数据本地化法律若已存在但未执法，往往是政策干预的前奏，值得提前布局合规方案。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vietnamtodevelopdomesticcloud.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vietnamtodevelopdomesticcloud.md)
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](/ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over/)
-- [Vietnam to develop domestic cloud](/ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over/)
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](/ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over/)- [anthropic](/ch01-677-anthropic/)- [inference cost at scale with napkin math](/ch01-410-inference-cost-at-scale-with-napkin-math/)- [why use app-level auth when every database has auth? (splunk](/ch01-147-why-use-app-level-auth-when-every-database-has-auth-splunk/)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over)
+- [Vietnam to develop domestic cloud](../ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11-174-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over)- [anthropic](../ch01-677-anthropic)- [inference cost at scale with napkin math](../ch01-410-inference-cost-at-scale-with-napkin-math)- [why use app-level auth when every database has auth? (splunk](../ch01-147-why-use-app-level-auth-when-every-database-has-auth-splunk)
 
 ---
 

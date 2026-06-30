@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐ | 8.7KB | `entities/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md)
-来自 newsletter 文章 [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md) 提取。
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md)
+来自 newsletter 文章 [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md) 提取。
 
 ## 核心内容
 CyberSecQwen-4B 是一个 4B 参数的专项网络安全模型，在 CTI-Bench 基准上以 4B 参数量超越了 Cisco 8B 通用安全模型 Foundation-Sec-Instruct-8B（CTI-MCQ 58.68% vs 49.96%，+8.7pp），同时参数减半。模型可运行于单张 12GB 消费级 GPU，数据全程不离本地，适合 SOC、MDR、威胁情报、漏洞分析等敏感场景。
@@ -87,8 +87,8 @@ Optimizer    = paged_adamw_8bit
 3. **持续评估机制不可或缺**：文章计划持续跟踪 NVD 新增 CVE 数据扩充训练集。对于已部署的领域模型，**建议建立定期重训/增量训练机制**，防止模型因数据分布漂移而逐渐失效。
 
 ## 相关实体
-- [CyberSecQwen-4B](/ch01-038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize/)
-- [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](/ch01-038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize/)
+- [CyberSecQwen-4B](../ch01-038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize)
+- [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](../ch01-038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize)
 
 ---
 

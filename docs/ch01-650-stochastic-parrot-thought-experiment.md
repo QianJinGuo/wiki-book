@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/stochastic-parrot-thought-experiment.md`
 
-## A Thought Experiment
+# A Thought Experiment
 [](<https://substackcdn.com/image/fetch/$s_!cI5K!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40faa5d6-9564-44cd-a472-55d7d22c040a_1024x1024.png>)
 Consider the following thought experiment. Imagine you have access to a large corpus of text written entirely in a foreign language unknown to you. This corpus resembles the massive training datasets used to train models such as GPT, Claude, and Gemini. The key point is that all of the content is exclusively in this unfamiliar language, without any accompanying translation, explanation, or external context.
 Now, let's consider two training scenarios:
 1. The first scenario involves training a standard LLM on this corpus through the typical autoregressive next-word prediction method used by contemporary models.
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](/ch01-650-stochastic-parrot-thought-experiment/)
-- [While Breathless In Stodgy Viridian](/ch01-436-while-breathless-in-stodgy-viridian/)
-- [Stochastic Parrot Deep Mystery Llms](/ch01-572-stochastic-parrot-deep-mystery-llms/)
-- [Stochastic Parrot Marcus Ai Productivity](/ch11-069-stochastic-parrot-marcus-ai-productivity/)
-- [Aws Grpo Rlvr Sagemaker Math Reasoning](/ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning/)
+- [Stochastic Parrot Thought Experiment](../ch01-650-stochastic-parrot-thought-experiment)
+- [While Breathless In Stodgy Viridian](../ch01-436-while-breathless-in-stodgy-viridian)
+- [Stochastic Parrot Deep Mystery Llms](../ch01-572-stochastic-parrot-deep-mystery-llms)
+- [Stochastic Parrot Marcus Ai Productivity](../ch11-069-stochastic-parrot-marcus-ai-productivity)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](../ch11-098-aws-grpo-rlvr-sagemaker-math-reasoning)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stochastic-parrot-thought-experiment.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stochastic-parrot-thought-experiment.md)
 
 ## 深度分析
 

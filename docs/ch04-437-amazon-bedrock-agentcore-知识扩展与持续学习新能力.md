@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/new-in-amazon-bedrock-agentcore-build-agents-with-broader-kn.md`
 
-## Amazon Bedrock AgentCore: 知识扩展与持续学习新能力
+# Amazon Bedrock AgentCore: 知识扩展与持续学习新能力
 
 > **背景**：2026-06-17 AWS 发布 AgentCore 平台更新，引入三大知识层接入（组织/世界/付费）与持续学习能力，是 AgentCore 从"managed harness"向"agent economy infrastructure"演进的里程碑。
 
@@ -44,7 +44,7 @@ AgentCore 通过三层知识架构扩展 agent 的可达性：
 ### 修复策略
 - 修 prompt、改 tool 描述、调 orchestration — 全靠猜测，无结构化方法判断改动是否真的改善
 
-## 与现有 [AgentCore Harness](/ch04-206-agentcore-managed-harness/) 实体的差异化
+## 与现有 [AgentCore Harness](../ch04-206-agentcore-managed-harness) 实体的差异化
 
 | 维度 | 旧 entity (2026-05-21) | 本次 (2026-06-17) |
 |------|---------------------|-----------------|
@@ -60,10 +60,10 @@ AgentCore 通过三层知识架构扩展 agent 的可达性：
 
 ## 相关主题
 
-- [Agentcore Managed Harness](/ch04-206-agentcore-managed-harness/) — 前篇：Harness 编排框架
-- [Agentcore Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/) — 同期：其他 AgentCore 工程实践
-- [Agentcore Payments X402 Agentic Commerce](/ch11-066-agentcore-payments-与代理商务创新-技术深度解析/) — 同期：x402 商业化
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/new-in-amazon-bedrock-agentcore-build-agents-with-broader-kn.md)
+- [Agentcore Managed Harness](../ch04-206-agentcore-managed-harness) — 前篇：Harness 编排框架
+- [Agentcore Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施) — 同期：其他 AgentCore 工程实践
+- [Agentcore Payments X402 Agentic Commerce](../ch11-066-agentcore-payments-与代理商务创新-技术深度解析) — 同期：x402 商业化
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/new-in-amazon-bedrock-agentcore-build-agents-with-broader-kn.md)
 
 ---
 

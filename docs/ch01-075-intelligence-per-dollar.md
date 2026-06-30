@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.2KB | `entities/tokens-per-result.md`
 
-## Intelligence Per Dollar
+# Intelligence Per Dollar
 
 ## 概要
 
@@ -62,13 +62,13 @@ Every layer in the stack now has to price the same way the customer thinks : per
 - **关注 Artificial Analysis 等独立基准平台** — 文章提到 Artificial Analysis 已在做 Intelligence Index 和成本对比，这类独立分析平台将成为企业决策的重要参考。建议定期参考此类平台的数据来指导模型选择和预算分配。
 
 ## 相关实体
-- [How We Made Window Join Parallel And Vectorized](/ch01-034-how-we-made-window-join-parallel-and-vectorized/)
-- [Products Are Out Brains Are In](/ch01-113-products-are-out-brains-are-in/)
-- [Investing In Stitch](/ch01-122-nearly-every-enterprise-is-investing-in-ai-but-only-5-say/)
-- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](/ch01-099-gemini-3-5-flash-more-expensive-but-google-plan-to-use-it/)
-- [Offline Llm Energy Use Html](/ch01-081-apple-silicon-costs-more-than-openrouter/)
+- [How We Made Window Join Parallel And Vectorized](../ch01-034-how-we-made-window-join-parallel-and-vectorized)
+- [Products Are Out Brains Are In](../ch01-113-products-are-out-brains-are-in)
+- Investing In Stitch
+- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](../ch01-099-gemini-3-5-flash-more-expensive-but-google-plan-to-use-it)
+- [Offline Llm Energy Use Html](../ch01-081-apple-silicon-costs-more-than-openrouter)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tokens-per-result.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tokens-per-result.md)
 
 ---
 

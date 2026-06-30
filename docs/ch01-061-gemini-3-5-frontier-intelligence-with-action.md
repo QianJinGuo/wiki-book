@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.7KB | `entities/gemini-3-5-frontier-intelligence-with-action.md`
 
-## Gemini 3.5: frontier intelligence with action
+# Gemini 3.5: frontier intelligence with action
 
 ## 深度分析
 
@@ -17,7 +17,7 @@ fetched: 2026-05-24T00:58:30.206918
 fetcher: trafilatura
 ---
 
-## Gemini 3.5: frontier intelligence with action
+# Gemini 3.5: frontier intelligence with action
 
 Gemini 3.5: frontier intelligence with action
 Today, we’re introducing Gemini 3.5, our latest family of models combining frontier intelligence with action. This represents a major leap forward in building more capable, intelligent agents. We’re kicking off the series by releasing 3.5 Flash. It delivers frontier performance for agents and coding, excelling at complex long-horizon tasks that deliver real-world utility.
@@ -51,13 +51,13 @@ Salesforce is integrating 3.5 Flash into Agentforce to reliably automate complic
 Xero is 
 
 ## 相关实体
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](/ch01-532-solution-overview/)
-- [Gemini 3 5 Frontier Intelligence](/ch01-061-gemini-3-5-frontier-intelligence-with-action/)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](/ch01-521-business-intelligence-at-scale-key-obstacles/)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](/ch01-236-亚马逊aws官方博客-https-aws-amazon-com-cn-blogs-china/)
-- [Process Financial Documents Using Amazon Bedrock Data Automa](/ch01-534-solution-overview/)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch01-532-solution-overview)
+- [Gemini 3 5 Frontier Intelligence](../ch01-061-gemini-3-5-frontier-intelligence-with-action)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch01-521-business-intelligence-at-scale-key-obstacles)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch01-236-亚马逊aws官方博客-https-aws-amazon-com-cn-blogs-china)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch01-534-solution-overview)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemini-3-5-frontier-intelligence-with-action.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemini-3-5-frontier-intelligence-with-action.md)
 
 ## 相关主题
 

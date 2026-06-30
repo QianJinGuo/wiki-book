@@ -4,14 +4,14 @@
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/hermes-agent-tool-system-analysis.md`
 
-## Hermes Agent 工具系统实战解析：40+ 工具为什么不用配置表
+# Hermes Agent 工具系统实战解析：40+ 工具为什么不用配置表
 
 ## 相关实体
 
-- [codex discovered a hidden http/2 bomb](/ch09-074-codex-discovered-a-hidden-http-2-bomb/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-tool-system-analysis.md)
+- [codex discovered a hidden http/2 bomb](../ch09-074-codex-discovered-a-hidden-http-2-bomb)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-tool-system-analysis.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 
 Hermes Agent 工具系统实战解析：40+ 工具为什么不用配置表 涉及agent领域的核心技术议题。
@@ -42,12 +42,12 @@ tools/*.
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
-- [构建基于多智能体架构的深度思考交易系统 V2](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](/ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch04-199-openclaw-完全指南/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
+- [构建基于多智能体架构的深度思考交易系统 V2](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch01-715-龙虾装上了-可以用来干啥-分享下我的-openclaw-多智能体团队搭建经验)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 26.7KB | `entities/skill-formal-theory-survey-10papers.md`
 
-[Skill Formal Theory Survey 10Papers](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-formal-theory-survey-10papers.md)
+[Skill Formal Theory Survey 10Papers](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-formal-theory-survey-10papers.md)
 
-## 10篇论文看懂AI Agent Skill：表示、执行、评估与进化
+# 10篇论文看懂AI Agent Skill：表示、执行、评估与进化
 
 - URL: https://mp.weixin.qq.com/s/Z2fFNWXgRHq0VogIRD69Yg
 - Author: 学术综述（arXiv风格，微信编译版）
@@ -253,13 +253,13 @@ PrefixSpan/CloSpan只能挖掘**行为模式**，无法挖掘**语义意图**。
 **技能的版本治理**：随着技能数量增长，版本管理、兼容性测试、废弃策略将成为运维的主要挑战。建议从第一个技能开始就建立版本号规范，并记录每个版本的breaking change。
 **自动挖掘的成熟度**：当前挖掘管道的局限（只能捕获行为模式，无法捕获语义意图）可能在未来通过LLM辅助的语义分析得到改善。但即便如此，专家审核这一环难以完全消除——技能的最终质量责任仍在人类专家手中。
 ## 相关实体
-- [Ai Skill Skill Creator 源码拆解](/ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南/)
-- [Hermes Skill System Winty](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](/ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [Agent Skill Writing Guide](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](/ch02-prompt/)
+- [Ai Skill Skill Creator 源码拆解](../ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南)
+- [Hermes Skill System Winty](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [Agent Skill Writing Guide](../ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-formal-theory-survey-10papers.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-formal-theory-survey-10papers.md)
 
 ---
 

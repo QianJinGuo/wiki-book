@@ -37,10 +37,7 @@ app = FastAPI()
 
 def format_sse(event: str, data: dict) -> str:
     """将Python对象格式化为SSE消息"""
-    return f"event: {event}
-" + f"data: {json.dumps(data, ensure_ascii=False)}
-
-"
+    return f"event: {event}\n" + f"data: {json.dumps(data, ensure_ascii=False)}\n\n"
 
 async def fake_llm_stream(prompt: str) -> AsyncGenerator[str, None]:
     for token in ["好的", "，", "这是", "你", "的", "回答", "……"]:
@@ -59,9 +56,7 @@ async def stream(prompt: str, request: Request):
                 yield format_sse("token", {"t": token})
                 now = time.time()
                 if now - last_ping > 15:
-                    yield ": ping
-
-"  # 心跳，防止代理超时
+                    yield ": ping\n\n"  # 心跳，防止代理超时
             yield format_sse("done", {"status": "completed", "ts": time.time()})
         except Exception as e:
             yield format_sse("error", {"message": "stream_failed", "detail": str(e)[:200]})
@@ -81,9 +76,7 @@ Nginx 默认会缓冲代理响应，导致客户端无法实时看到 LLM 输出
 
 ### 2. 超时问题
 
-负载均衡器默认 60 秒空闲超时断开连接。解决方案是定期发送 SSE 注释行（`: ping
-
-`）作为心跳，同时在 Nginx/代理层配置 `proxy_read_timeout 300s` 或更大值。
+负载均衡器默认 60 秒空闲超时断开连接。解决方案是定期发送 SSE 注释行（`: ping\n\n`）作为心跳，同时在 Nginx/代理层配置 `proxy_read_timeout 300s` 或更大值。
 
 ### 3. 客户端断开检测
 
@@ -171,11 +164,11 @@ HTTP/1.1 的 6 个并发连接限制是 SSE 在高并发场景的主要瓶颈。
 
 ## 关联阅读
 
-- [FastAPI SSE LLM 流式传输实战](/ch03-088-fastapi-sse-llm流式传输的websocket替代方案/) — 同一主题的补充实践案例
-- [FastAPI 认证限流零停机部署](/ch11-181-fastapi-生产级认证与限流实战/) — FastAPI 生产部署的最佳实践
-- [Python 日志方案对比](/ch03-051-日志别再print了-深入对比python三大日志方案/) — 异步应用的可观测性建设
+- [FastAPI SSE LLM 流式传输实战](../ch03-088-fastapi-sse-llm流式传输的websocket替代方案) — 同一主题的补充实践案例
+- [FastAPI 认证限流零停机部署](../ch11-181-fastapi-生产级认证与限流实战) — FastAPI 生产部署的最佳实践
+- [Python 日志方案对比](../ch03-051-日志别再print了-深入对比python三大日志方案) — 异步应用的可观测性建设
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi-sse-llm-streaming-vs-websocket-5e4a458abf18.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fastapi-sse-llm-streaming-vs-websocket-5e4a458abf18.md)
 
 ---
 

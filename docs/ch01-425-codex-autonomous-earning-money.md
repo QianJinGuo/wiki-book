@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/codex-autonomous-earning-money.md`
 
-## codex-autonomous-earning-money
+# codex-autonomous-earning-money
 
 Codex摸到了市场规律！Codex已自己完成商业闭环，大牛已躺赚200刀，订阅费已回本！X 疯传：Codex已实现全自动打工
 昨天，开发者 Chris 在X上发布推文："Codex 帮我赚了钱，而我什么也没做！"
@@ -13,15 +13,15 @@ Codex摸到了市场规律！Codex已自己完成商业闭环，大牛已躺赚2
 Chris 是这样评论的："ChatGPT 就像个猎人，他出去帮我找食物，然后努力把食物带回部落，这样我们才能一起生存下去。"
 
 ## 相关实体
-- [Skill Rag Tsinghua Sra](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](/ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l/)
-- [Build Live Translation Apps With Gpt Realtime Translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
-- [Chatgpt Search Web Run Fanout Searchengineland](/ch01-430-inside-chatgpt-search-how-web-run-and-fan-out-queries-shape/)
-- [Stochastic Parrot Thought Experiment](/ch01-650-stochastic-parrot-thought-experiment/)
+- [Skill Rag Tsinghua Sra](../ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](../ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l)
+- [Build Live Translation Apps With Gpt Realtime Translate](../ch01-123-build-live-translation-apps-with-gpt-realtime-translate)
+- [Chatgpt Search Web Run Fanout Searchengineland](../ch01-430-inside-chatgpt-search-how-web-run-and-fan-out-queries-shape)
+- [Stochastic Parrot Thought Experiment](../ch01-650-stochastic-parrot-thought-experiment)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/codex-autonomous-earning-money.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/codex-autonomous-earning-money.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
 
 **1. Codex 实现了"自主经济闭环"——从任务发现到货币化，不需要人类介入**

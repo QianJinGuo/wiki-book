@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐ | 3.2KB | `entities/agentic-code-review-addyosmani.md`
 
-## Agentic Code Review
+# Agentic Code Review
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-code-review-addyosmani.md)
+> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-code-review-addyosmani.md)
 
 ## 核心要点
 
@@ -38,11 +38,11 @@ Code review used to work because of a happy accident of relative speed. A senior
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 addyosmani.com 视角
-- 引用源：[Agentic Code Review Addyosmani](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-code-review-addyosmani.md)
+- 引用源：[Agentic Code Review Addyosmani](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-code-review-addyosmani.md)
 ## 相关实体
-- [from doer to director: the ai mindset shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
-- [why internally-built ai fails fund accounting audits](/ch01-834-why-internally-built-ai-fails-fund-accounting-audits/)
-- [back up and restore your amazon eks cluster resources using](/ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
+- [from doer to director: the ai mindset shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift)
+- [why internally-built ai fails fund accounting audits](../ch01-834-why-internally-built-ai-fails-fund-accounting-audits)
+- [back up and restore your amazon eks cluster resources using](../ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using)
 
 ---
 

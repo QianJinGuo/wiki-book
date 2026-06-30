@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/arxiv-2606.17030.md`
 
-## Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation
+# Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation
 
 > **背景**：从 newsletter candidates 提取，2026-06-18 v×c=24 stars=4 通过评分门槛。
 > URL: https://arxiv.org/abs/2606.17030
@@ -28,7 +28,7 @@ Authors:[Jie Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+J
 
 ## 相关
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/arxiv-2606.17030.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/arxiv-2606.17030.md)
 
 ---
 

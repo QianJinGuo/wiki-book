@@ -4,10 +4,10 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/foundation-model-building-blocks.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/foundation-model-building-blocks.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/foundation-model-building-blocks.md)
 
 ## Summary
-*(See [raw article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/foundation-model-building-blocks.md))*
+*(See [raw article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/foundation-model-building-blocks.md))*
 
 ## 深度分析
 **三层扩展定律对基础设施的收敛效应。** 文章最核心的洞察是将扩展从单一曲线（pre-training only）重新定义为 NVIDIA 提出的三层扩展定律：pre-training compute scaling、post-training（SFT + RL）、以及 test-time compute（long-thinking、search/verification）。三者虽然 workload profile 不同，但对基础设施的需求却收敛到了同一组 building blocks：加速算力 + 高带宽低延迟网络 + 分布式存储。 这意味着 pre-training 集群和 inference 集群的设计逻辑正在融合——不再能单独优化 pre-training 效率而忽视 inference 或 post-training 的需求。
@@ -27,9 +27,9 @@
 **6. 评估新 GPU 架构（B200/B300）时，需要同步验证完整的软件栈兼容性：CUDA 版本、NCCL 版本、EFA driver 版本、深度学习框架版本。** 文章指出 CUDA Toolkit 13.x 才支持 Blackwell（compute capability 10.x），aws-ofi-nccl 插件版本也需要与 EFA 代际匹配。跨代混用会导致性能退化或功能缺失。
 
 ## 相关实体
-- [Building Blocks for Foundation Model Training and Inference on AWS](/ch11-117-building-blocks-for-foundation-model-training-and-inference/)
-- [Genesis AI GENE-26.5 具身基础模型](/ch01-624-蛰伏一年-周衔团队带来首个具身基础模型-烹饪做实验弹琴-效果炸场/)
-- MOC
+- [Building Blocks for Foundation Model Training and Inference on AWS](../ch11-117-building-blocks-for-foundation-model-training-and-inference)
+- [Genesis AI GENE-26.5 具身基础模型](../ch01-624-蛰伏一年-周衔团队带来首个具身基础模型-烹饪做实验弹琴-效果炸场)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---
 

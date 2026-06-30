@@ -4,15 +4,15 @@
 
 > 📊 Level ⭐ | 3.1KB | `entities/exaforce-agentic-soc-platform-and-mdr.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/exaforce-agentic-soc-platform-and-mdr.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/exaforce-agentic-soc-platform-and-mdr.md)
 
 ## 核心要点
 - 来源：www.exaforce.ai
 - 评分：v=7, c=9, product=63
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/exaforce-agentic-soc-platform-and-mdr.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/exaforce-agentic-soc-platform-and-mdr.md)
 
 ## 相关实体
-- [The Agentic Trust Management Platform | Drata](/ch04-017-the-agentic-trust-management-platform-drata/)
+- [The Agentic Trust Management Platform | Drata](../ch04-017-the-agentic-trust-management-platform-drata)
 
 ## 深度分析
 Exaforce 的核心命题是**安全运营正在经历 AI 原生转型**，而非简单的 AI 增强。其 $125M Series B 融资和 90% 客户报告的假阳性 reduction 揭示了一个关键趋势：传统 SOC 的信息过载问题在 AI 时代被急剧放大，agentic 化是唯一出路。

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/drinking-llms.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/drinking-llms.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/drinking-llms.md)
 
 - We Tested DeepSeek V4 Pro and Flash Against Claude
 
@@ -33,12 +33,12 @@
 建议在安全研究 wiki 中为每个 CVE 建立实体页面，记录：受影响版本、修复 commit、hunt 过程中失败的假设、以及关联的漏洞类型模式。这样后续 hunting 可以复用同一条假设链，而不是从零开始。CUPS RCE chain（CVE-2026-34980 → CVE-2026-34990）的发现就依赖于将"network reachable"和"local privilege escalation"分解为独立子目标的知识积累。
 
 ## 关联阅读
-> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/drinking-llms.md)
+> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/drinking-llms.md)
 
 ## 相关实体
 
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
 
 ---
 

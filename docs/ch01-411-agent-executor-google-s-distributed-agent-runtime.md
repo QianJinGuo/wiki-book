@@ -16,16 +16,16 @@
 - In this blog, we'll share more about Agent Executor and how you can get started.
 
 ## 相关实体
-- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](/ch04-434-agent-executor-google-s-distributed-agent-runtime/)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](/ch01-677-anthropic/)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](/ch01-677-anthropic/)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](/ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90/)
-- [Anthropic Google Agent Skills Design Patterns](/ch01-677-anthropic/)
+- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch04-434-agent-executor-google-s-distributed-agent-runtime)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch01-677-anthropic)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch01-677-anthropic)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90)
+- [Anthropic Google Agent Skills Design Patterns](../ch01-677-anthropic)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
 
-- [Design Md Google Stitch Voltagent Ai Design Agent](/ch04-074-design-md-ai-设计-agent-的视觉约束对齐文件-google-stitch-voltagent/)
-- MOC
+- [Design Md Google Stitch Voltagent Ai Design Agent](../ch04-074-design-md-ai-设计-agent-的视觉约束对齐文件-google-stitch-voltagent)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 
 ### 1. 问题定位：长时运行 Agent 的运维困境
@@ -128,7 +128,7 @@ Google 通过 Agent Executor 切入的是 **Agent Runtime** 赛道——这是�
 3. 考虑 Pilot 项目：选择一个非关键任务尝试 Agent Executor 的断连恢复能力
 4. 关注 A2A 协议生态：跨厂商 Agent 互操作可能是下一个行业趋势
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
 
 ---
 

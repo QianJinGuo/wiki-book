@@ -17,14 +17,14 @@ NVIDIA Vera 是全球首款专为 AI Agent 场景设计的 CPU，标志着芯片
 - **行业信号**：Vera 进入头部 Labs 意味着 Agent 推理芯片正在从"可有可无"变成"基础设施层"，建议提前研究 Agent 专用芯片对现有架构（基于 GPU 的 vLLM/Ollama）的影响，尤其是推理延迟和成本结构
 - **技术跟进**：密切注意 NVIDIA 未来软件栈（CUDA、TensorRT-LLM、NIM）对 Vera 的支持节奏，硬件就绪不等于软件就绪，生态成熟度是决定 Agent 落地速度的关键变量
 ## 相关实体
-- [Nvidia Nemotron 3 Agents Rag Voice Safety](/ch04-043-nvidia-nemotron-3-agents-rag-voice-safety/)
-- [Blogs.Nvidia.Com Vera Cpu Delivery](/ch04-245-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t/)
-- [Anthropic Demystifying Evals For Ai Agents](/ch01-677-anthropic/)
-- [Nvidia Edge First Llms Av Robotics](/ch01-194-nvidia-edge-first-llms-av-robotics/)
-- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](/ch01-874-nvidia-nemotron-3-ultra-hybrid-transformer-mamba-moe-for-ag/)
+- [Nvidia Nemotron 3 Agents Rag Voice Safety](../ch04-043-nvidia-nemotron-3-agents-rag-voice-safety)
+- [Blogs.Nvidia.Com Vera Cpu Delivery](../ch04-245-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t)
+- [Anthropic Demystifying Evals For Ai Agents](../ch01-677-anthropic)
+- [Nvidia Edge First Llms Av Robotics](../ch01-194-nvidia-edge-first-llms-av-robotics)
+- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch01-874-nvidia-nemotron-3-ultra-hybrid-transformer-mamba-moe-for-ag)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md)
-- [从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](/ch01-848-从-cpu-到-gpu-全链路可信-百度智能云新一代-ai-机密计算实例的探索与落地/)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md)
+- [从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](../ch01-848-从-cpu-到-gpu-全链路可信-百度智能云新一代-ai-机密计算实例的探索与落地)
 
 ---
 

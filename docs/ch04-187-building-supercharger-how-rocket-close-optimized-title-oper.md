@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/building-supercharger-how-rocket-close-optimized-title-opera.md`
 
-## Building Supercharger: How Rocket Close optimized title operations with agentic AI
+# Building Supercharger: How Rocket Close optimized title operations with agentic AI
 
 Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisal management 公司）与 AWS 合作构建了 **Supercharger** —— 一个 agentic AI 解决方案，用 Strands Agents + Amazon Bedrock + MCP 优化 title operations（产权检查、按揭贷款前置流程）。这是一个真实的 production case study，覆盖了 6 大互联能力 + 完整技术栈 + 业务影响。
 
@@ -53,14 +53,14 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 
 ## 与现有 wiki 实体的关联
 
-- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](/ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和/) — 同 Bedrock agent 体系（AgentCore runtime vs Strands Agents）
-- [secure-ai-agents-policy-lambda-interceptors-aws](/ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz/) — Bedrock Agent 安全护栏（与本文的 Guardrails + row-level entitlements 对应）
-- [agentic-payment-x402-bedrock-agentcore](/ch11-092-让-ai-代理自己付钱-基于-amazon-bedrock-agentcore-与-x402-的-agentic-pay/) — 金融场景 agent 应用
-- [agentops-operationalize-agentic-ai-amazon-bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/) — Bedrock 上 agent 的 production 化
+- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](../ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和) — 同 Bedrock agent 体系（AgentCore runtime vs Strands Agents）
+- [secure-ai-agents-policy-lambda-interceptors-aws](../ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz) — Bedrock Agent 安全护栏（与本文的 Guardrails + row-level entitlements 对应）
+- [agentic-payment-x402-bedrock-agentcore](../ch11-092-让-ai-代理自己付钱-基于-amazon-bedrock-agentcore-与-x402-的-agentic-pay) — 金融场景 agent 应用
+- [agentops-operationalize-agentic-ai-amazon-bedrock](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed) — Bedrock 上 agent 的 production 化
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-supercharger-how-rocket-close-optimized-title-opera.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-supercharger-how-rocket-close-optimized-title-opera.md)
 
 ## 深度分析
 
@@ -105,12 +105,12 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 
 ### 相关实体
 
-- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](/ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和/) — 同为 Bedrock agent 体系，AgentCore runtime vs Strands Agents 的技术选型对比
-- [Secure Ai Agents Policy Lambda Interceptors Aws](/ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz/) — Bedrock Agent 安全护栏，与本文的 Guardrails + row-level entitlements 设计思路一致
-- [Agentic Payment X402 Bedrock Agentcore](/ch11-092-让-ai-代理自己付钱-基于-amazon-bedrock-agentcore-与-x402-的-agentic-pay/) — 金融场景 agent 应用案例，与 Rocket Close 同属金融行业 AI 落地
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/) — Bedrock 上 agent 的 production 化路径，包含监控 / 审计 / 部署最佳实践
+- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](../ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和) — 同为 Bedrock agent 体系，AgentCore runtime vs Strands Agents 的技术选型对比
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz) — Bedrock Agent 安全护栏，与本文的 Guardrails + row-level entitlements 设计思路一致
+- [Agentic Payment X402 Bedrock Agentcore](../ch11-092-让-ai-代理自己付钱-基于-amazon-bedrock-agentcore-与-x402-的-agentic-pay) — 金融场景 agent 应用案例，与 Rocket Close 同属金融行业 AI 落地
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed) — Bedrock 上 agent 的 production 化路径，包含监控 / 审计 / 部署最佳实践
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 ## 实践启示
 
 1. **金融 AI 落地标准路径**：从"信息查询"场景切入（减少重复性咨询）→ 验证后扩展到"流程引导"（各州 title exam checklist）→ 最后才是"辅助决策"（风险评估）

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.6KB | `entities/building-is-just-the-beginning-introducing-discoverability.md`
 
-## Building is just the beginning: Introducing Discoverability | Lovable
+# Building is just the beginning: Introducing Discoverability | Lovable
 [Skip to main content](https://lovable.dev/blog/building-is-just-the-beginning-introducing-discoverability#main-content)
 [](https://lovable.dev/home)
 [](https://lovable.dev/home)
@@ -12,13 +12,13 @@
 *   [Community](https://lovable.dev/community)
 
 ## 相关实体
-- Lovable Discoverability Intro
-- [Building Is Just The Beginning Introducing Discove](/ch12-076-building-is-just-the-beginning-introducing-discoverability/)
-- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](/ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner/)
-- [Introducing The Ettin Reranker Family](/ch01-361-introducing-the-ettin-reranker-family/)
-- [Building The Agentic Future Developer Highlights From Io 2026](/ch04-016-building-the-agentic/)
+- [Lovable Discoverability Intro](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
+- [Building Is Just The Beginning Introducing Discove](../ch12-076-building-is-just-the-beginning-introducing-discoverability)
+- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](../ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner)
+- [Introducing The Ettin Reranker Family](../ch01-361-introducing-the-ettin-reranker-family)
+- [Building The Agentic Future Developer Highlights From Io 2026](../ch04-016-building-the-agentic)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-is-just-the-beginning-introducing-discoverability.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-is-just-the-beginning-introducing-discoverability.md)
 
 ## 深度分析
 

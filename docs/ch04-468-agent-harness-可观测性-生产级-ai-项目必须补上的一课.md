@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/agent-harness-observability-production.md`
 
-## Agent Harness 可观测性：生产级 AI 项目必须补上的一课
+# Agent Harness 可观测性：生产级 AI 项目必须补上的一课
 
 ## 深度分析
 
@@ -35,15 +35,15 @@
 5. **回放不是严格复现**：模型有随机性，回放只能做相似条件下的验证，用于判断优化方向
 
 ## 相关实体
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](/ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者/)
-- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [Agent Harness Architecture](/ch04-207-agent-harness-架构/)
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch04-082-harness-工程搭建式业务-agent-评测方案-claude-code-作-harness-搭建者)
+- [Code As Agent Harness Survey](../ch09-046-code-as-agent-harness-综述)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [Agent Harness Architecture](../ch04-207-agent-harness-架构)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-harness-observability-production.md)
-- [perplexity computer empirical study: how ai agents reshape k](/ch04-085-perplexity-computer-empirical-study-how-ai-agents-reshape-k/)
-- MOC
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-observability-production.md)
+- [perplexity computer empirical study: how ai agents reshape k](../ch04-085-perplexity-computer-empirical-study-how-ai-agents-reshape-k)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---
 

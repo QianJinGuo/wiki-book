@@ -33,13 +33,13 @@
 ## CI/CD 集成
 ```bash
 
-## PR 合并前只跑核心用例
+# PR 合并前只跑核心用例
 agent-eval run -c eval.yaml --tags core --fail-under 0.9
 
-## 日常回归跑全量
+# 日常回归跑全量
 agent-eval run -c eval.yaml --fail-under 0.8
 
-## 安全审查单独跑
+# 安全审查单独跑
 agent-eval run -c eval.yaml --tags safety --fail-under 1.0
 ```
 `--fail-under` 通过率低于阈值返回退出码 1，阻断流水线。`results/summary.json` 可被后续流水线步骤消费。
@@ -117,14 +117,14 @@ Agent 和 Grader 两个接口的极简设计（各两个方法）降低了插件
 - 分布式执行
 
 ## 相关实体
-- [Anthropic Generator-Evaluator Harness](/ch01-677-anthropic/) — 另一种评测闭环思路
-- [Superpowers](/ch01-408-claude-code-skills-superpowers-practice/) — Agent 工作流规范
-- [Skill Writing Patterns](/ch07-003-工作流的-skill-怎么写-从-7-个顶级-skill-中提炼的模式与最佳实践/) — Skill 质量评估相关
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](/ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准/)
-- [AI Skill 测评指标体系](/ch01-383-ai-skill-测评指标体系/)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](/ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论/)
-- [Skills赏析：使用skills-refiner提升skill质量](/ch04-024-qoder-skills-完全指南-agent-skill-迭代式编写-ai-按你的标准执行/)
-- MOC
+- [Anthropic Generator-Evaluator Harness](../ch01-677-anthropic) — 另一种评测闭环思路
+- [Superpowers](../ch01-408-claude-code-skills-superpowers-practice) — Agent 工作流规范
+- [Skill Writing Patterns](../ch07-003-工作流的-skill-怎么写-从-7-个顶级-skill-中提炼的模式与最佳实践) — Skill 质量评估相关
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准)
+- [AI Skill 测评指标体系](../ch01-383-ai-skill-测评指标体系)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论)
+- [Skills赏析：使用skills-refiner提升skill质量](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-refiner-design-quality-evaluation-framework.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---
 

@@ -26,12 +26,12 @@ Agent 编排（Agent Orchestration）是多 Agent 系统从「实验原型」走
 5. **编排层也需要监控**：传统意义上监控系统监控业务服务的健康状况，但编排层本身的状态（Pending/Running/Failed 任务数、超时率、人工审批平均等待时长）同样需要可观测性，以便在编排层本身发生问题时及时告警。
 
 ## 关联阅读
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-orchestration.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-orchestration.md)
 
-- [Multi-Agent 深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/) — 多 Agent 协作模式的具体实践
-- [Agent Harness 工程学调研](/ch01-277-agent-harness-engineering-a-survey-etclovg-taxonomy/) — Agent 系统构建的核心架构要素
-- [基于 Bedrock AgentCore 构建企业级应用](/ch11-139-基于bedrock-agentcore-strands构建企业级智能搜索平台实践-亚马逊aws官方博客/) — AWS 生态中 Agent 编排的具体实现路径
-- [James 多 Agent 协作模式](/ch04-298-multi-agent-的四种协作模式-supervisor-swarm-网状-流水线-怎么选/) — 不同多 Agent 协作架构的对比分析
+- [Multi-Agent 深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统) — 多 Agent 协作模式的具体实践
+- [Agent Harness 工程学调研](../ch01-277-agent-harness-engineering-a-survey-etclovg-taxonomy) — Agent 系统构建的核心架构要素
+- [基于 Bedrock AgentCore 构建企业级应用](../ch11-139-基于bedrock-agentcore-strands构建企业级智能搜索平台实践-亚马逊aws官方博客) — AWS 生态中 Agent 编排的具体实现路径
+- [James 多 Agent 协作模式](../ch04-298-multi-agent-的四种协作模式-supervisor-swarm-网状-流水线-怎么选) — 不同多 Agent 协作架构的对比分析
 
 ---
 

@@ -35,14 +35,14 @@ Lightfield 的 Skills 系统代表了 AI Agent 从"通用工具"向"专业化助
 2. **长期价值评估**：评估 AI 系统时，不仅看即时效果，还要关注其持续学习和积累的能力
 3. **专业化优于通用化**：对于特定业务场景，深度的专业化 AI 比通用 AI 更有价值
 4. **知识管理升级**：Skills 的出现将彻底改变企业的知识管理模式，从文档传承转向 AI 能力传承
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lightfield-introducing-skills.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lightfield-introducing-skills.md)
 
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](/ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化/)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
-- [SkillOS](/ch01-273-skillos-learning-skill-curation-for-self-evolving-agents/)
+- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](../ch04-343-memento-skills-让-agent-通过技能外部记忆持续进化)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
+- [SkillOS](https://github.com/QianJinGuo/wiki/blob/main/entities/skillOS.md)
 
 ---
 

@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/on-working-with-wizards.md`
 
-## On Working with Wizards: AI 从协作到召唤的范式转变
+# On Working with Wizards: AI 从协作到召唤的范式转变
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/on-working-with-wizards.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/on-working-with-wizards.md)
 
 > **Core insight**: Mollick 观察到 AI 使用范式的根本转变——从"co-intelligence"（与 AI 作为共同工作者，引导、纠正、合作）到"wizard"（召唤 AI 执行任务，输出惊艳但过程不透明）。这不仅是工具能力提升，而是人类与 AI 关系性质的改变。
 
@@ -71,15 +71,15 @@ Mollick 提出了三个应对策略。首先，发展新的 literacy：学习何
 - **失去 expertise 的风险**：每次把工作交给 wizard，就失去了发展自己判断力和专业知识的机会——这对教育影响深远
 
 ## 相关实体
-- [Oneusefulthing Claude Code What Comes Next](/ch09-017-ethan-mollick-claude-code-and-what-comes-next-practitioner/)
-- [Openai Gdpval Real Ai Agents Threshold](/ch04-091-openai-gdpval-and-the-real-ai-agents-threshold-mollick-view/)
-- [Mass Intelligence](/ch01-426-mass-intelligence-ai-普及的拐点/)
-- [Sign Of The Future Gpt 55 Mollick](/ch01-269-gpt-5-5-sign-of-the-future-mollick-的模型-apps-harnesses-三层框架/)
-- [Three Years Gpt3 Gemini3 Mollick](/ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测/)
+- [Oneusefulthing Claude Code What Comes Next](../ch09-017-ethan-mollick-claude-code-and-what-comes-next-practitioner)
+- [Openai Gdpval Real Ai Agents Threshold](../ch04-091-openai-gdpval-and-the-real-ai-agents-threshold-mollick-view)
+- [Mass Intelligence](../ch01-426-mass-intelligence-ai-普及的拐点)
+- [Sign Of The Future Gpt 55 Mollick](../ch01-269-gpt-5-5-sign-of-the-future-mollick-的模型-apps-harnesses-三层框架)
+- [Three Years Gpt3 Gemini3 Mollick](../ch04-222-三年从-gpt-3-到-gemini-3-mollick-对-agent-时代-ai-演进的实测)
 
 ## 相关引用
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/on-working-with-wizards.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/on-working-with-wizards.md)
 
 ---
 

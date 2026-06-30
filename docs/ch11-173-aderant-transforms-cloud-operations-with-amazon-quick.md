@@ -8,7 +8,7 @@
 - Aderant 使用 Amazon Quick AI 能力统一搜索跨 6 个供应商系统的信息
 - 搜索时间加速 90%，文档处理加速 75-85%，研究时间减少 95%
 - 案例展示了 AWS Quick 在法律行业云运营中的实际应用
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aderant-transforms-cloud-operations-with-amazon-quick.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aderant-transforms-cloud-operations-with-amazon-quick.md)
 
 ## 深度分析
 **1. MCP 服务器架构：打破信息孤岛的核心设计模式**
@@ -35,8 +35,8 @@ Aderant 没有一次性全量上线，而是三阶段推进：2025 年 10 月 Cl
 将统一搜索 + Chrome 扩展 + Flows 自动化捆绑为统一入口（CloudOps Helper），而非逐个推荐功能。Aderant 95% 采用率的根因是"单一界面解决所有信息问题"的心智，而非单功能优势 。
 
 ## 关联阅读
-→ Amazon Quick: 从企业数据到 AI 决策的加速路径 — Quick 平台整体能力介绍与定位
-→ [Confluence + Amazon Quick 集成](/ch11-039-integrate-atlassian-confluence-cloud-with-amazon-quick/) — MCP 风格连接器在知识管理场景的具体配置
+→ [Amazon Quick: 从企业数据到 AI 决策的加速路径](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md) — Quick 平台整体能力介绍与定位
+→ [Confluence + Amazon Quick 集成](../ch11-039-integrate-atlassian-confluence-cloud-with-amazon-quick) — MCP 风格连接器在知识管理场景的具体配置
 
 ---
 

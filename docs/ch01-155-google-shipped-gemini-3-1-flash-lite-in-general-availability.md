@@ -5,7 +5,7 @@
 > 📊 Level ⭐ | 2.6KB | `entities/google-shipped-gemini-31-flash-lite-in-general-availability.md`
 
 > -> 原文存档
-## Google shipped Gemini 3.1 Flash-Lite in General Availability
+# Google shipped Gemini 3.1 Flash-Lite in General Availability
 source: 
 ## 摘录
 > Title: Google shipped Gemini 3.1 Flash-Lite in General Availability
@@ -35,9 +35,9 @@ Google shipped Gemini 3.1 Flash-Lite in General Availability
 - source/newsletter
 ## 相关实体
 > 主题导航
-- [NotebookLM](/ch01-017-notebooklm/)
-- [Google's Gemini Omni video model surfaces ahead of I/O debut](/ch01-345-google-s-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/)
-- [Google's Gemini Omni video model surfaces ahead of I/O debut](/ch01-345-google-s-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/)
+- [NotebookLM](../ch01-017-notebooklm.md)
+- [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md)
+- [Google's Gemini Omni video model surfaces ahead of I/O debut](../ch01-345-google-s-gemini-omni-video-model-surfaces-ahead-of-i-o-debut)
 
 ---
 

@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/skillclaw-alibaba-paperagent.md`
 
-## 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
+# 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
 > 原文：https://mp.weixin.qq.com/s/NunzqJYxpt5Gc_NmpL1U1Q
 > 来源：PaperAgent | 2026-04-22
 > 论文：https://arxiv.org/abs/2604.08377
 > 代码：https://github.com/AMAP-ML/SkillClaw
 
 ## 相关实体
-- [Skillclaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化/)
-- [Skillclaw Collective Intelligence](/ch04-423-高德-skillclaw-让-agent-skill-学会进化-跨会话-跨agent-跨设备-跨用户/)
-- [Skillclaw Hyman Nightly Evolution Alibaba](/ch04-407-agent-技能夜间自进化-阿里开源-skillclaw-最高提升-88/)
-- [Skill Rag Tsinghua Sra](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/)
-- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
+- [Skillclaw](../ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化)
+- [Skillclaw Collective Intelligence](../ch04-423-高德-skillclaw-让-agent-skill-学会进化-跨会话-跨agent-跨设备-跨用户)
+- [Skillclaw Hyman Nightly Evolution Alibaba](../ch04-407-agent-技能夜间自进化-阿里开源-skillclaw-最高提升-88)
+- [Skill Rag Tsinghua Sra](../ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw-alibaba-paperagent.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-alibaba-paperagent.md)
 
 ## 深度分析
 

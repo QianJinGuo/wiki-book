@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/试用-amazon-bedrock-中的新控制台体验该体验针对兼容-anthropic-和-openai-的-api-进.md`
 
-## 试用 Amazon Bedrock 中的新控制台体验
+# 试用 Amazon Bedrock 中的新控制台体验
 
 ## 概览
 
@@ -33,7 +33,7 @@ Amazon Bedrock 重新设计的控制台——**针对 OpenAI / Anthropic 兼容 
 ### 5. bedrock-mantle 兼容端点
 
 ```bash
-## 新增的 OpenAI/Anthropic 兼容端点
+# 新增的 OpenAI/Anthropic 兼容端点
 curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
   -H "Authorization: Bearer ..." \
   -d '{"model": "anthropic.claude-fable-5", "messages": [...]}'
@@ -70,7 +70,7 @@ curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
 - `amazon-bedrock-model-inference-serverless-architecture-case-study.md` — 服务端架构
 - 本文档：**客户端用户体验**（控制台 UI 升级 + 兼容端点）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/试用-amazon-bedrock-中的新控制台体验该体验针对兼容-anthropic-和-openai-的-api-进.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/试用-amazon-bedrock-中的新控制台体验该体验针对兼容-anthropic-和-openai-的-api-进.md)
 
 ## 深度分析
 
@@ -106,8 +106,8 @@ curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
 
 ### 相关实体
 
-- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](/ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和/) — Bedrock runtime 体系深度解析，与 bedrock-mantle 兼容端点互补
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/) — Bedrock 上 agent 的 production 化路径，包含 Guardrails / 知识库等安全机制
+- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](../ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和) — Bedrock runtime 体系深度解析，与 bedrock-mantle 兼容端点互补
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed) — Bedrock 上 agent 的 production 化路径，包含 Guardrails / 知识库等安全机制
 
 ## 实践启示
 

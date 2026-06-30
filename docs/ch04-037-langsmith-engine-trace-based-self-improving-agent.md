@@ -4,10 +4,10 @@
 
 > 📊 Level ⭐⭐ | 26.6KB | `entities/langsmith-engine-self-improving-agent-trace-based.md`
 
-## LangSmith Engine: Trace-Based Self-Improving Agent
+# LangSmith Engine: Trace-Based Self-Improving Agent
 
 > 来源：分析 LangChain LangSmith Engine 的工程化自改进路径——从线上 trace 自动发现问题并转化为 issue / evaluator / 回归测试
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langsmith-engine-self-improving-agent-trace-based.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langsmith-engine-self-improving-agent-trace-based.md)
 
 ## 摘要
 
@@ -242,7 +242,7 @@ final_answer_mismatch
 **这些信息可以沉淀成 Agent Overview 文件**——可以理解为给诊断 Agent 看的 AGENTS.md：
 
 ```markdown
-## Agent Overview
+# Agent Overview
 
 ## Agent Purpose
 这个 Agent 用于回答内部配置查询，并给出配置建议。
@@ -314,14 +314,14 @@ final_answer_mismatch
 
 ## 相关实体
 
-- [Hermes Agent Operator](/ch04-418-hermes-agent/) — "模型侧自改进"路径（定时任务把对话总结成 Skill），与本文"系统侧自改进"互补
-- [Agent Evolution 四阶段六维](/ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/) — 第四阶段"自进化 Agent"包含本文的系统侧自改进机制
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — Harness 第五层"评估与观测"对应本文的 trace 分析
-- [Agent YAML 评测](/ch01-746-从手动到自动化-用agenteval构建agent评测体系/) — YAML-driven evaluation 是 Evaluator 工程化的一种
-- [Claude Code 深度解析](/ch01-558-claude-code-harness-深度分析/) — Claude Code 的评估观测层工程实践
-- [深入理解 Claude Code Harness](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/) — Plan Mode + Tasks 系统的"避免问题复发"机制
-- [OpenClaw 完整指南](/ch04-199-openclaw-完全指南/) — 开源 Agent 的故障处理与自我恢复机制
-- [Agent 记忆系统实践](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/) — Agent Overview 是 Memory 模块的诊断侧应用- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](/ch04-438-langchain-fireworks-100x-cheaper-trace-judge-通用-trace-评估/)
+- [Hermes Agent Operator](../ch04-418-hermes-agent) — "模型侧自改进"路径（定时任务把对话总结成 Skill），与本文"系统侧自改进"互补
+- [Agent Evolution 四阶段六维](../ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo) — 第四阶段"自进化 Agent"包含本文的系统侧自改进机制
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 第五层"评估与观测"对应本文的 trace 分析
+- [Agent YAML 评测](../ch01-746-从手动到自动化-用agenteval构建agent评测体系) — YAML-driven evaluation 是 Evaluator 工程化的一种
+- [Claude Code 深度解析](../ch01-558-claude-code-harness-深度分析) — Claude Code 的评估观测层工程实践
+- [深入理解 Claude Code Harness](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道) — Plan Mode + Tasks 系统的"避免问题复发"机制
+- [OpenClaw 完整指南](../ch04-199-openclaw-完全指南) — 开源 Agent 的故障处理与自我恢复机制
+- [Agent 记忆系统实践](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进) — Agent Overview 是 Memory 模块的诊断侧应用- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](../ch04-438-langchain-fireworks-100x-cheaper-trace-judge-通用-trace-评估)
 
 ---
 

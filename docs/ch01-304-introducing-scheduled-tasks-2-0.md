@@ -12,7 +12,7 @@
 - 新的侧边栏、日历视图和运行卡片提升了调度任务的可追踪性。
 - 用户可选择运行选项（同一任务内继续或创建独立任务）、跳过确认、连接外部数据源等高级设置。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-scheduled-tasks-2-0.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-scheduled-tasks-2-0.md)
 
 ## 从"时间驱动"到"上下文驱动"的范式转变
 
@@ -118,7 +118,7 @@ Scheduled Tasks 2.0 添加了更清晰的方式来审查日程、即将到来的
 | 执行环境 | 支持选择 agent 类型、云端计算资源 |
 | 连接集成 | 通过 connectors 接入外部数据源作为调度任务输入 |
 
-> [!contradiction] 另见：[Karpathy: Vibe Coding](/ch04-518-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) — 对于 AI 辅助编程中的"上下文保留"问题持不同视角，认为过度依赖上下文累积可能导致"锁定效应"
+> [!contradiction] 另见：[Karpathy: Vibe Coding](../ch04-518-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering) — 对于 AI 辅助编程中的"上下文保留"问题持不同视角，认为过度依赖上下文累积可能导致"锁定效应"
 
 ---
 

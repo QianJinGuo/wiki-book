@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/openhuman-ai-agent-memory-tree-tokenjuice.md`
 
-## 1.6万 Star，AI Agent 赛道又杀出一匹黑马！
+# 1.6万 Star，AI Agent 赛道又杀出一匹黑马！
 用 Claude Code 干活，有个反复出现的摩擦点：每次开一个新对话，都要重新介绍一遍自己在做什么。"我在用 Rust 写一个异步任务调度服务"，"这个项目上周刚从 tokio 0.2 迁移过来"，"你上次建议我用这个方案的"……
 说实话每次打这些东西，我都想骂人。Codex 也是这样，Cursor 也是这样，Gemini 2.5 Pro 也逃不掉——不是模型的错，是所有这些工具生来就是无状态的，你一关窗口，上下文就消失了。
 OpenHuman 这个开源项目就是冲着这个缺口去的，开源短时间内收获1.6万 Star，AI Agent又一匹黑马诞生。
 GitHub 描述写的是 "Your Personal AI super intelligence. Private, Simple and extremely powerful."。听起来像是产品页面的广告词，但我看完实现细节之后，觉得这话没夸大。
 
 ## 相关实体
-- [Claude 17 Capabilities Workflow Checklist Ruofei](/ch04-371-claude的17个能力背后-agent正在从聊天框搬进工作流/)
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](/ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件/)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](/ch07-017-hermes自进化完整闭环-skill创建复用修补链路/)
-- [Agent Memory Architecture Past Influence Future Ruofei](/ch04-029-agent-memory-architecture-past-influence-future-ruofei/)
-- [Agent Memory Architecture Ruofei](/ch04-111-agent-memory-架构解析/)
+- [Claude 17 Capabilities Workflow Checklist Ruofei](../ch04-371-claude的17个能力背后-agent正在从聊天框搬进工作流)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch01-342-读完-claude-code-和-openclaw-的-memory-源码-我对-agent记忆需要向量数据库-这件)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07-017-hermes自进化完整闭环-skill创建复用修补链路)
+- [Agent Memory Architecture Past Influence Future Ruofei](../ch04-029-agent-memory-architecture-past-influence-future-ruofei)
+- [Agent Memory Architecture Ruofei](../ch04-111-agent-memory-架构解析)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openhuman-ai-agent-memory-tree-tokenjuice.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openhuman-ai-agent-memory-tree-tokenjuice.md)
 
 ## 深度分析
 

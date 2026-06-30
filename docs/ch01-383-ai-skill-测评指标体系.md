@@ -29,27 +29,27 @@ SkillsBench研究：84个任务中19%出现负向增益。
 ## 权威来源 vs 经验值
 **有学术/工业来源：** 通过率（OpenAI Evals/HELM）、Δ（SkillsBench论文arxiv.org/abs/2602.12670）、触发率（Recall/Precision）、幻觉检测（TruthfulQA/FactScore）、稳定性（统计学标准差）
 **内部经验值（无直接学术背书）：** S级通过率≥95%、IFR=100%、σ<0.05
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-skill-测评指标体系.md)
-→ AI Skill 测评体系：从零到一（系列主框架）
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-skill-测评指标体系.md)
+→ [AI Skill 测评体系：从零到一](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-evolution-framework.md)（系列主框架）
 
 ## 相关实体
-- [Agentic AI 系统架构与分层模型](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
-- [Hermes Agent Skill 系统深度解析](/ch01-298-hermes-agent-skill-系统深度解析/)
+- [Agentic AI 系统架构与分层模型](../ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真)
+- [Hermes Agent Skill 系统深度解析](../ch01-298-hermes-agent-skill-系统深度解析)
 
-- [Skill工程化设计：把Agent当算法用](/ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程/)
-- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](/ch09-023-使用-kiro-ai-ide-开发-基于amazon-emr-的flink-智能监控系统实践-亚马逊aws官方博客/)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](/ch01-302-llm-as-a-verifier-a-general-purpose-verification-framework/)
-- [AgentEval：YAML驱动的Agent评测框架](/ch04-141-agenteval-yaml驱动的agent评测框架/)
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](/ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准/)
-- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](/ch04-418-hermes-agent/)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](/ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论/)
-- [Skills赏析：使用skills-refiner提升skill质量](/ch04-024-qoder-skills-完全指南-agent-skill-迭代式编写-ai-按你的标准执行/)
-- [harness-engineering-systematic-explainer](/ch05-036-harness-engineering-systematic-explainer/)
-- [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice/)
-- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
+- [Skill工程化设计：把Agent当算法用](../ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程)
+- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](../ch09-023-使用-kiro-ai-ide-开发-基于amazon-emr-的flink-智能监控系统实践-亚马逊aws官方博客)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01-302-llm-as-a-verifier-a-general-purpose-verification-framework)
+- [AgentEval：YAML驱动的Agent评测框架](../ch04-141-agenteval-yaml驱动的agent评测框架)
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准)
+- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch04-418-hermes-agent)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch07-018-perplexity-内部-skill-设计指南-四维体系与维护方法论)
+- [Skills赏析：使用skills-refiner提升skill质量](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-refiner-design-quality-evaluation-framework.md)
+- [harness-engineering-systematic-explainer](../ch05-036-harness-engineering-systematic-explainer)
+- [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice)
+- [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析
 ### 九层洋葱结构的本质含义
 AI Skill 测评指标体系的九层结构（触发→输出→规则→对话→容错→效率→设计→覆盖→维护）并非随意排列，而是一条**从用户感知到工程内核的洋葱剖面**。每一层对应不同的质量维度，层级越高意味着该维度的验证成本越大，但对发布决策的影响力也越直接。

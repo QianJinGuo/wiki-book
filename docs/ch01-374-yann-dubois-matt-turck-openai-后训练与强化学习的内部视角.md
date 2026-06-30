@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 9.6KB | `entities/yann-dubois-openai-post-training-matt-turck-interview.md`
 
-## Yann Dubois × Matt Turck：OpenAI 后训练与强化学习的内部视角
+# Yann Dubois × Matt Turck：OpenAI 后训练与强化学习的内部视角
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/yann-dubois-openai-post-training-matt-turck-interview.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/yann-dubois-openai-post-training-matt-turck-interview.md)
 
 ## 摘要
 
@@ -89,12 +89,12 @@ Yann 对 Harness 工程的判断务实但清醒：
 
 ## 相关实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架/)
-- [**Post-Training**](/ch01-232-how-harnesses-and-post-training-close-the-open-weight-bug-fi/)
-- [**Reinforcement Learning**](/ch01-815-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- **Post-Training**
+- **Reinforcement Learning**
 - **Agent 评估方法**
 
 ---

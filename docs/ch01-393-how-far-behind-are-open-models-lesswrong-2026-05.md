@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/how-far-behind-are-open-models-2026.md`
 
-## How far behind are open models? (LessWrong 2026-05)
+# How far behind are open models? (LessWrong 2026-05)
 
 > **Background**: Håvard Tveit Ihle 用 17 个 benchmark (8 private + 9 public, ~110 数据点) 量化开源 vs 闭源模型能力差距。结论：private benchmark 上开源落后 8-10 个月，public benchmark 落后 4-6 个月，且差距在 DeepSeek R1 之后正在扩大。
 
@@ -146,14 +146,14 @@ Public benchmark 由于数据公开且分数透明，开源社区可以针对性
 - 对使用开源模型进行敏感任务的情况，建立更频繁的人工审核机制
 
 ## 相关实体
-- [Mollick Ai 32 Otters Benchmark](/ch01-441-mollick-ai-进展的-32-只水獭基准/)
-- [Some Ideas For What Comes Next May 2026](/ch01-910-some-ideas-for-what-comes-next-may-2026-interconnects/)
-- [Good Qc For Rl Data](/ch01-667-architecture-data-foundations-for-ai-powered-search/)
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](/ch04-141-agenteval-yaml驱动的agent评测框架/)
-- [Langsmith Evaluation Concepts](/ch03-119-langsmith-evaluation-concepts/)
+- [Mollick Ai 32 Otters Benchmark](../ch01-441-mollick-ai-进展的-32-只水獭基准)
+- [Some Ideas For What Comes Next May 2026](../ch01-910-some-ideas-for-what-comes-next-may-2026-interconnects)
+- [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch04-141-agenteval-yaml驱动的agent评测框架)
+- [Langsmith Evaluation Concepts](../ch03-119-langsmith-evaluation-concepts)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-far-behind-are-open-models-2026.md)
-- nice：浙大提出的理论驱动型 llm 社会智能诊断基准
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-far-behind-are-open-models-2026.md)
+- [nice：浙大提出的理论驱动型 llm 社会智能诊断基准](https://github.com/QianJinGuo/wiki/blob/main/entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md)
 
 ---
 

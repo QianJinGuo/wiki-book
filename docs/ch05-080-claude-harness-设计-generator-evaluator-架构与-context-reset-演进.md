@@ -112,22 +112,22 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 新模型发布后，用单代理 baseline 跑相同任务，对比有/无各组件的表现。先移除 sprint contract，再移除 planner，最后移除 evaluator——按这个顺序测试，因为越核心的组件移除影响越大，应该最后测试。如果移除某组件后质量下降明显，重新加入；如果质量不变，说明该组件对这个版本已经过期，可以简化。这个过程不是一次性的，每逢 major model update 都应该重复一次。
 
 ## 相关
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-design-long-running-apps.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-design-long-running-apps.md)
 -  — 七环节控制回路 + Generator/Evaluator 框架
-- Agent Harness 上下文管理：工作集视角 — compaction 光谱 + session/harness/sandbox 解耦
-- [LangChain Anatomy of Agent Harness](/ch04-425-the-anatomy-of-an-agent-harness-解读/) — Ralph 循环 + 规划/自我验证双闭环
+- [Agent Harness 上下文管理：工作集视角](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — compaction 光谱 + session/harness/sandbox 解耦
+- [LangChain Anatomy of Agent Harness](../ch04-425-the-anatomy-of-an-agent-harness-解读) — Ralph 循环 + 规划/自我验证双闭环
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](/ch01-677-anthropic/)
-- [Ai Agent Harness Construction Akshay Baoyu](/ch04-420-深度拆解-ai-智能体-harness-的构造-译/)
-- [Code As Agent Harness Survey 2026](/ch01-599-uiuc-meta-斯坦福等最新综述-code-as-agent-harness/)
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](/ch04-505-agent-harnesses-are-dead-long-live-agent-harnesses/)
-- [Harness 之后 状态边界与失败闭环 若飞](/ch05-015-harness-之后-状态边界与失败闭环-若飞续篇/)
-- [Agentscope Java 2.0 Enterprise Distributed Harness](/ch11-231-agentscope-java-2-0-企业级分布式-harness-框架/)
-- [Gaode Uplift Model Iteration Agent Long Running Harness](/ch01-720-gaode-uplift-model-iteration-agent-long-running-harness/)
-- [Long Running Agent Ralph Loop Harness Takeover](/ch01-808-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](/ch01-677-anthropic/)
-- [Langgraph A2A Adversarial Agent Team](/ch04-495-逆天的架构-用-harness-langgraph-a2a-写一个-agent-team/)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch01-677-anthropic)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch04-420-深度拆解-ai-智能体-harness-的构造-译)
+- [Code As Agent Harness Survey 2026](../ch01-599-uiuc-meta-斯坦福等最新综述-code-as-agent-harness)
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04-505-agent-harnesses-are-dead-long-live-agent-harnesses)
+- [Harness 之后 状态边界与失败闭环 若飞](../ch05-015-harness-之后-状态边界与失败闭环-若飞续篇)
+- [Agentscope Java 2.0 Enterprise Distributed Harness](../ch11-231-agentscope-java-2-0-企业级分布式-harness-框架)
+- [Gaode Uplift Model Iteration Agent Long Running Harness](../ch01-720-gaode-uplift-model-iteration-agent-long-running-harness)
+- [Long Running Agent Ralph Loop Harness Takeover](../ch01-808-长周期-agent-详解-从-ralph-loop-到可接管-harness)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01-677-anthropic)
+- [Langgraph A2A Adversarial Agent Team](../ch04-495-逆天的架构-用-harness-langgraph-a2a-写一个-agent-team)
 
 ---
 

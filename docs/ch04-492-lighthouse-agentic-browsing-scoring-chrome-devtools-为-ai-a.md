@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/lighthouse-agentic-browsing-scoring.md`
 
-## Lighthouse Agentic Browsing Scoring
+# Lighthouse Agentic Browsing Scoring
 
 Chrome DevTools 团队在 Lighthouse 中新增了 **Agentic Browsing** 评估类别，用于衡量网站对 AI Agent 交互的友好程度。这不是一个 0-100 的加权评分，而是一组确定性审计信号，旨在为"Agent-ready Web"标准提供数据基础。
 
@@ -52,8 +52,8 @@ Agent 依赖无障碍树（accessibility tree）作为其主要数据模型。Li
 - WebMCP 从实验性 API 进入主流开发者工具链
 
 ## 相关主题
-- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](/ch01-047-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p/) — AI 搜索引擎优化
-- [Agentic Design System From Chatbot To Orchestration](/ch01-012-agentic-design-system-from-chatbot-to-orchestration/) — Agent 设计系统
+- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](../ch01-047-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p) — AI 搜索引擎优化
+- [Agentic Design System From Chatbot To Orchestration](../ch01-012-agentic-design-system-from-chatbot-to-orchestration) — Agent 设计系统
 
 ---
 

@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/amap-ai-native-end-to-end-infrastructure.md`
 
-## 高德工业级能力底座：AI-Native 的端云一体基建
+# 高德工业级能力底座：AI-Native 的端云一体基建
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amap-ai-native-end-to-end-infrastructure.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amap-ai-native-end-to-end-infrastructure.md)
 
 ## 摘要
 
@@ -75,12 +75,12 @@
 
 ## 相关实体
 
-- [Agent 记忆系统的工程实践](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [Claude Code 源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
-- MOC
+- [Agent 记忆系统的工程实践](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [Claude Code 源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 - 
 -
 

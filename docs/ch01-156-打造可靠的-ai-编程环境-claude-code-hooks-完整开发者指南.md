@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 66.0KB | `entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南.md`
 
-[打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南.md)
+[打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南.md)
 
 ##  Claude Code Hooks 是什么？
 Claude Code hooks 本质上就是一些你自己定义的操作，比如 shell 命令、HTTP 调用，或者额外的提示，它们会在 Claude Code 的不同阶段自动执行。
@@ -241,7 +241,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "matcher": "Write|Edit",
           "hooks": [{
             "type": "command",
-            "command": "FILE=$(jq -r '.tool_input.file_path // .tool_input.file' /dev/stdin); case "$FILE" in *.ts|*.tsx|*.js|*.jsx) npx prettier --write "$FILE" 2>/dev/null;; *.py) black "$FILE" 2>/dev/null;; esac; exit 0"
+            "command": "FILE=$(jq -r '.tool_input.file_path // .tool_input.file' /dev/stdin); case \"$FILE\" in *.ts|*.tsx|*.js|*.jsx) npx prettier --write \"$FILE\" 2>/dev/null;; *.py) black \"$FILE\" 2>/dev/null;; esac; exit 0"
           }]
         }]
       }
@@ -261,7 +261,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "if": "tool_input.file_path matches '(\\.env|\\.env\\.local|package-lock\\.json|yarn\\.lock|pnpm-lock\\.yaml)'",
           "hooks": [{
             "type": "command",
-            "command": "echo '{"message": "BLOCKED: 此文件受保护。请手动编辑。"}' && exit 2"
+            "command": "echo '{\"message\": \"BLOCKED: 此文件受保护。请手动编辑。\"}' && exit 2"
           }]
         }]
       }
@@ -275,7 +275,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "matcher": "",
           "hooks": [{
             "type": "command",
-            "command": "MSG=$(jq -r '.message // "Claude Code 任务完成"' /dev/stdin); if [ "$(uname)" = 'Darwin' ]; then osascript -e "display notification \\"$MSG\\" with title \\"Claude Code\\""; else notify-send 'Claude Code' "$MSG"; fi; exit 0"
+            "command": "MSG=$(jq -r '.message // \"Claude Code 任务完成\"' /dev/stdin); if [ \"$(uname)\" = 'Darwin' ]; then osascript -e \"display notification \\\"$MSG\\\" with title \\\"Claude Code\\\"\"; else notify-send 'Claude Code' \"$MSG\"; fi; exit 0"
           }]
         }]
       }
@@ -289,7 +289,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "matcher": "",
           "hooks": [{
             "type": "command",
-            "command": "echo '{"message": "项目: '"$(basename $(pwd))"' | 分支: '"$(git branch --show-current 2>/dev/null || echo none)"' | 最后提交: '"$(git log --oneline -1 2>/dev/null || echo none)"'}'; exit 0"
+            "command": "echo '{\"message\": \"项目: '\"$(basename $(pwd))\"' | 分支: '\"$(git branch --show-current 2>/dev/null || echo none)\"' | 最后提交: '\"$(git log --oneline -1 2>/dev/null || echo none)\"'}'; exit 0"
           }]
         }]
       }
@@ -304,7 +304,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "if": "tool_input.file_path matches '\\.(ts|tsx|js|jsx|py)$'",
           "hooks": [{
             "type": "command",
-            "command": "FILE=$(jq -r '.tool_input.file_path' /dev/stdin); TEST_FILE=$(echo "$FILE" | sed 's/\\.[^.]*$/.test&/'); if [ -f "$TEST_FILE" ]; then npx jest "$TEST_FILE" --no-coverage 2>&1 | tail -5; fi; exit 0",
+            "command": "FILE=$(jq -r '.tool_input.file_path' /dev/stdin); TEST_FILE=$(echo \"$FILE\" | sed 's/\\.[^.]*$/.test&/'); if [ -f \"$TEST_FILE\" ]; then npx jest \"$TEST_FILE\" --no-coverage 2>&1 | tail -5; fi; exit 0",
             "timeout": 30000
           }]
         }]
@@ -320,7 +320,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "if": "tool_input.command matches 'git push.*(main|master|production)'",
           "hooks": [{
             "type": "command",
-            "command": "echo '{"message": "BLOCKED: 直接推送到受保护分支。使用功能分支并打开 PR。"}' && exit 2"
+            "command": "echo '{\"message\": \"BLOCKED: 直接推送到受保护分支。使用功能分支并打开 PR。\"}' && exit 2"
           }]
         }]
       }
@@ -334,7 +334,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "matcher": "Bash",
           "hooks": [{
             "type": "command",
-            "command": "INPUT=$(cat /dev/stdin); CMD=$(echo "$INPUT" | jq -r '.tool_input.command'); echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] BASH: $CMD" >> .claude/audit.log; exit 0"
+            "command": "INPUT=$(cat /dev/stdin); CMD=$(echo \"$INPUT\" | jq -r '.tool_input.command'); echo \"[$(date -u +%Y-%m-%dT%H:%M:%SZ)] BASH: $CMD\" >> .claude/audit.log; exit 0"
           }]
         }]
       }
@@ -358,7 +358,7 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "matcher": "",
           "hooks": [{
             "type": "command",
-            "command": "echo '{"message": "项目: '"$(basename $(pwd))"' | 分支: '"$(git branch --show-current 2>/dev/null)"' | Node: '"$(node -v 2>/dev/null)"'}'; exit 0"
+            "command": "echo '{\"message\": \"项目: '\"$(basename $(pwd))\"' | 分支: '\"$(git branch --show-current 2>/dev/null)\"' | Node: '\"$(node -v 2>/dev/null)\"'}'; exit 0"
           }]
         }],
         "PreToolUse": [{
@@ -366,28 +366,28 @@ Agent hooks 会启动一个子 agent，这个子 agent 可以用 Read、Grep、G
           "if": "tool_input.file_path matches '(\\.env|\\.env\\..+|.*lock\\.json|.*lock\\.yaml)'",
           "hooks": [{
             "type": "command",
-            "command": "echo '{"message": "受保护的文件。请手动编辑。"}' && exit 2"
+            "command": "echo '{\"message\": \"受保护的文件。请手动编辑。\"}' && exit 2"
           }]
         }],
         "PostToolUse": [{
           "matcher": "Write|Edit",
           "hooks": [{
             "type": "command",
-            "command": "FILE=$(jq -r '.tool_input.file_path // .tool_input.file' /dev/stdin); case "$FILE" in *.ts|*.tsx|*.js|*.jsx) npx prettier --write "$FILE" 2>/dev/null;; *.py) black "$FILE" 2>/dev/null;; *.go) gofmt -w "$FILE" 2>/dev/null;; esac; exit 0"
+            "command": "FILE=$(jq -r '.tool_input.file_path // .tool_input.file' /dev/stdin); case \"$FILE\" in *.ts|*.tsx|*.js|*.jsx) npx prettier --write \"$FILE\" 2>/dev/null;; *.py) black \"$FILE\" 2>/dev/null;; *.go) gofmt -w \"$FILE\" 2>/dev/null;; esac; exit 0"
           }]
         }],
         "Notification": [{
           "matcher": "",
           "hooks": [{
             "type": "command",
-            "command": "MSG=$(jq -r '.message // "完成"' /dev/stdin); osascript -e "display notification \\"$MSG\\" with title \\"Claude Code\\"" 2>/dev/null || notify-send 'Claude Code' "$MSG" 2>/dev/null; exit 0"
+            "command": "MSG=$(jq -r '.message // \"完成\"' /dev/stdin); osascript -e \"display notification \\\"$MSG\\\" with title \\\"Claude Code\\\"\" 2>/dev/null || notify-send 'Claude Code' \"$MSG\" 2>/dev/null; exit 0"
           }]
         }],
         "Stop": [{
           "matcher": "",
           "hooks": [{
             "type": "command",
-            "command": "echo '[STOP] '"$(date +%H:%M:%S)"'' >> .claude/session.log; exit 0"
+            "command": "echo '[STOP] '\"$(date +%H:%M:%S)\"'' >> .claude/session.log; exit 0"
           }]
         }]
       }
@@ -522,12 +522,12 @@ PostToolUse hook 如果修改了文件，会再次触发 PostToolUse，形成连
 对于高安全要求的团队，建议至少部署一个 PostToolUse 的 Bash 审计日志 hook。所有 Claude 执行的操作都会被记录到 `.claude/audit.log`，并附 UTC 时间戳。这在事后回溯「当时执行了什么」时非常有用，也满足了合规审计的基本要求。记得把 audit.log 加到 `.gitignore`。
 
 ## 相关实体
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
-- [Claude Code Founder Harness 100 Lines](/ch01-487-最新claude-code创始人-编程已经解决了-harness重要性持续降低-cc未来只有100行代码/)
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](/ch01-732-subagents-详解-claude-code-如何避免上下文污染/)
-- MOC
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践)
+- [Claude Code Founder Harness 100 Lines](../ch01-487-最新claude-code创始人-编程已经解决了-harness重要性持续降低-cc未来只有100行代码)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch01-732-subagents-详解-claude-code-如何避免上下文污染)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---
 

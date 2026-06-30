@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.2KB | `entities/i-sold-my-ai-startup-before-revenue-here-s-what-investors-missed-and-founders-sh.md`
 
-## I Sold My AI Startup Before Revenue: Here’s What Investors Missed — And Founders Shouldn’t
+# I Sold My AI Startup Before Revenue: Here’s What Investors Missed — And Founders Shouldn’t
 
 Markdown Content:
 _By [Alexander Kardos-Nyheim](https://www.crunchbase.com/person/alexander-kardos-nyheim-d1ec)_
@@ -23,7 +23,7 @@ I back founders now, and the things I weigh have stayed consistent. As a founder
 
 In the first quarter of 2026, foundational AI startups raised around [$178 billion](https://news.crunchbase.com/venture/foundational-ai-startup-funding-doubled-openai-anthropic-xai-q1-2026/). The market is realizing that foundational AI is where the long-term value sits, and this is the year we may see the exits and IPOs that prove the bet right.
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/i-sold-my-ai-startup-before-revenue-here-s-what-investors-missed-and-founders-sh.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/i-sold-my-ai-startup-before-revenue-here-s-what-investors-missed-and-founders-sh.md)
 
 ---
 

@@ -7,13 +7,13 @@
 ## 核心要点
 - Published Time: 2026-05-16T22:36:49-06:00 Even as models get easier to swap, the work that surrounds them is not. Developers already move among Claude Code, Codex, Gemini, and local models with less c
 ## 相关实体
-- [New Lock](/ch01-681-the-new-ai-lock-in/)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](/ch01-677-anthropic/)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](/ch01-677-anthropic/)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
+- [New Lock](../ch01-681-the-new-ai-lock-in)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01-677-anthropic)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](../ch01-677-anthropic)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-new-ai-lock-in.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-new-ai-lock-in.md)
 
 ## 深度分析
 **锁定的本质从未消失，只是上移了层级**

@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/direct-connect-dx-迁移最佳实践.md`
 
-## Direct Connect (DX) 迁移最佳实践
+# Direct Connect (DX) 迁移最佳实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/direct-connect-dx-迁移最佳实践.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/direct-connect-dx-迁移最佳实践.md)
 
 ## 深度分析
 
@@ -46,12 +46,12 @@ Direct Connect (DX) 迁移最佳实践 涉及agent领域的核心技术议题。
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
-- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [构建基于多智能体架构的深度思考交易系统 V2](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [构建基于多智能体架构的深度思考交易系统 V2](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
@@ -61,7 +61,7 @@ Direct Connect (DX) 迁移最佳实践 涉及agent领域的核心技术议题。
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 
 ---
 

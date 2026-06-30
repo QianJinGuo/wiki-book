@@ -31,7 +31,7 @@ Buildkite 的定价页面揭示了 CI/CD 平台在 2026 年的竞争格局已从
 - source/newsletter
 
 ## 相关实体
-- [Buildkite Pricing | Buildkite](/ch03-047-buildkite-pricing-buildkite/)
+- [Buildkite Pricing | Buildkite](../ch03-047-buildkite-pricing-buildkite)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 15.9KB | `entities/lucasfcostacom-blog-backpressure-is-all-you-need.md`
 
-## Backpressure is all you need
+# Backpressure is all you need
 
 ## 核心要点
 
@@ -18,11 +18,11 @@ Insightful and practical framework applying systems engineering backpressure to 
 
 **自动测试和类型系统是最朴素的反压形式，但价值常被忽视。** 作者指出，测试套件的本质是「消费者拒绝生产者未清理的工作」，类型系统则强制生产者面对消费者的期望边界。这两个机制在 AI 编码场景中同样适用——它们在人类介入前就完成了大部分质量验证。
 
-**Review Agent 的引入揭示了一个讽刺的分工陷阱。** 当第一个 LLM 的输出由第二个 LLM 来审查，而审查结果需要人类手动粘贴回第一个 LLM 时，人类实际上变成了「昂贵的剪贴板」——这个观察直接指向了当前 AI 辅助开发中最常见的低效场景。这与 [Harness Engineering Core Patterns](/ch05-042-harness-engineering-核心模式/) 中描述的多层验证机制形成对比——在 harness 框架中，门禁是自动串联的，而非人肉传递。
+**Review Agent 的引入揭示了一个讽刺的分工陷阱。** 当第一个 LLM 的输出由第二个 LLM 来审查，而审查结果需要人类手动粘贴回第一个 LLM 时，人类实际上变成了「昂贵的剪贴板」——这个观察直接指向了当前 AI 辅助开发中最常见的低效场景。这与 [Harness Engineering Core Patterns](../ch05-042-harness-engineering-核心模式) 中描述的多层验证机制形成对比——在 harness 框架中，门禁是自动串联的，而非人肉传递。
 
-**迭代式反压循环是延长 AI 无人值守sessions的核心使能。** 作者的 `/goal` 命令实验表明，当提示中缺少反压机制时，模型会过早宣告胜利，留下大量需要人类收拾的残局。添加 linting、测试、benchmark、review agents 等多层检查后，模型能够在每轮自动修正，human review 的范围大幅缩小。这与 Agentic Workflow Patterns 中描述的「循环验证」范式高度一致。
+**迭代式反压循环是延长 AI 无人值守sessions的核心使能。** 作者的 `/goal` 命令实验表明，当提示中缺少反压机制时，模型会过早宣告胜利，留下大量需要人类收拾的残局。添加 linting、测试、benchmark、review agents 等多层检查后，模型能够在每轮自动修正，human review 的范围大幅缩小。这与 [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) 中描述的「循环验证」范式高度一致。
 
-**反压机制的分层设计遵循递进式质量门禁原理。** 从类型检查 → 单元测试 → 集成测试 → benchmark → review agent，每一层都在更接近生产环境的条件验证代码正确性。这种分层与 Production Agent Engineering 中强调的「渐进式可信度建立」思路相呼应——AI 系统的可靠性不是一蹴而就，而是通过层层筛选逐步提升。
+**反压机制的分层设计遵循递进式质量门禁原理。** 从类型检查 → 单元测试 → 集成测试 → benchmark → review agent，每一层都在更接近生产环境的条件验证代码正确性。这种分层与 [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) 中强调的「渐进式可信度建立」思路相呼应——AI 系统的可靠性不是一蹴而就，而是通过层层筛选逐步提升。
 
 ### 反压的系统论视角：从生产者-消费者模型重新理解AI工作流
 
@@ -44,7 +44,7 @@ Insightful and practical framework applying systems engineering backpressure to 
 
 每一层都在更接近真实生产环境的条件下验证代码。这种分层设计的精妙之处在于：**每层门禁都是对前一层未覆盖领域的补充**，而非重复劳动。例如，类型检查无法验证业务逻辑的正确性，但单元测试可以；单元测试无法发现性能退化，但 benchmark 可以。
 
-这与 [Harness Engineering Core Patterns](/ch05-042-harness-engineering-核心模式/) 中描述的「多层验证门禁」思想一致，也呼应了 Production Agent Engineering 中「渐进式可信度建立」的方法论——AI 系统的可靠性不是通过单一机制一次性保证，而是通过层层筛选逐步建立。
+这与 [Harness Engineering Core Patterns](../ch05-042-harness-engineering-核心模式) 中描述的「多层验证门禁」思想一致，也呼应了 [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) 中「渐进式可信度建立」的方法论——AI 系统的可靠性不是通过单一机制一次性保证，而是通过层层筛选逐步建立。
 
 ### 「昂贵剪贴板」问题的根源：跨Agent通信缺乏自动反压
 
@@ -105,14 +105,14 @@ Insightful and practical framework applying systems engineering backpressure to 
 - **AI 迭代轮次**：AI 在自动反压下自我修正的平均次数。正常情况下，AI 应该能在 1-3 轮内完成自我修正，轮次过多说明反压阈值可能设置过高或过低。
 - **「昂贵剪贴板」出现频率**：人类在两个 Agent 之间手动转发反馈的次数。该指标应随跨 Agent 直接通道的建立而趋近于零。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lucasfcostacom-blog-backpressure-is-all-you-need.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lucasfcostacom-blog-backpressure-is-all-you-need.md)
 
 ## 相关主题
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lucasfcostacom-blog-backpressure-is-all-you-need.md)
-- [Harness 工程核心模式](/ch05-042-harness-engineering-核心模式/) — 多层验证门禁的设计思想
-- Agentic 工作流模式 — 循环验证与迭代修正的实践框架
-- 生产级 Agent 工程 — 渐进式可信度建立的方法论
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lucasfcostacom-blog-backpressure-is-all-you-need.md)
+- [Harness 工程核心模式](../ch05-042-harness-engineering-核心模式) — 多层验证门禁的设计思想
+- [Agentic 工作流模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) — 循环验证与迭代修正的实践框架
+- [生产级 Agent 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) — 渐进式可信度建立的方法论
 
 ---
 

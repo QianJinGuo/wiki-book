@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
 
 ## 摘要
 Title: A rigged game: ScarCruft compromises gaming platform in a supply-chain attack
@@ -18,18 +18,18 @@ ESET researchers uncovered a multiplatform supply-chain attack by North Korea-al
 - 评分：value=7, confidence=9, product=63
 
 ## 链接
-- [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
+- [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
 
 ## 相关实体
-- [Semis Memo: Supply Chain Inheritance](/ch01-473-semis-memo-supply-chain-inheritance/)
-- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](/ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- [Amazon launches Supply Chain Services for businesses of all sizes](/ch11-210-amazon-launches-supply-chain-services-for-businesses-of-all/)
-- [Semis Memo: Supply Chain Inheritance](/ch01-485-semis-memo-supply-chain-inheritance/)
-- [semgrep intercom php supply chain](/ch12-100-semgrep-intercom-php-supply-chain/)
+- [Semis Memo: Supply Chain Inheritance](../ch01-473-semis-memo-supply-chain-inheritance)
+- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](../ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch11-210-amazon-launches-supply-chain-services-for-businesses-of-all)
+- [Semis Memo: Supply Chain Inheritance](../ch01-485-semis-memo-supply-chain-inheritance)
+- [semgrep intercom php supply chain](../ch12-100-semgrep-intercom-php-supply-chain)
 
-- [xz-utils backdoor 2 years on — maintainer trust hijack patte](/ch12-027-xz-utils-backdoor-2-years-on-maintainer-trust-hijack-patte/)
+- [xz-utils backdoor 2 years on — maintainer trust hijack patte](../ch12-027-xz-utils-backdoor-2-years-on-maintainer-trust-hijack-patte)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析
 ### 攻击链解析
 ScarCruft（APT37/Reaper）此次行动展现了朝鲜国家黑客组织日益成熟的供应链攻击能力。攻击分为两条路径：

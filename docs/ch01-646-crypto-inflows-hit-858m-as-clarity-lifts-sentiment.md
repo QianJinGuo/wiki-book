@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
 
 ## Summary
 *(AI-generated summary - TODO: manually review)*
@@ -15,19 +15,19 @@
 ## Related
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/digital-commerce-ai-agent-scenarios-challenges.md)
 
-- [Ico Fines South Staffordshire 2022 Breach](/ch12-106-ico-fines-south-staffordshire-963k-over-2022-breach/)
-- [Zeus Rwa Thread Reader](/ch01-132-thread-by-zeusrwa-on-thread-reader-app/)
-- [Interaction Models](/ch01-566-interaction-models-a-scalable-approach-to-human-ai-collabor/)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](/ch01-292-we-ve-been-here-before-decompilers-fuzzers-and-now-ai/)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](/ch09-106-automate-progressive-rollouts-with-vercel-flags-vercel/)
-- [Afine Csp Html Injection Password Exfiltration Attack](/ch01-245-严格-csp-下的密码窃取-html-注入-chrome-自动填充攻击/)
-- [Ai Native Dan Shipper Every Layered Thinking Walkwalk](/ch03-050-ai-native-公司-dan-shipper-30-人做出-100-人产出-层次化思维-saas-6-维能力框架/)
-- [Fastlane Create Winning Short Form Content In Seconds](/ch03-097-fastlane-create-winning-short-form-content-in-seconds/)
-- [Mira Mpa Deep Principle Ai4S 40 Sota](/ch01-183-mira-mpa-深度原理-ai-scientist-递归自训练打造材料基座模型-40-项实验全面-sota/)
-- [Localmaxxing](/ch03-100-localmaxxing/)
-- MOC
+- [Ico Fines South Staffordshire 2022 Breach](../ch12-106-ico-fines-south-staffordshire-963k-over-2022-breach)
+- [Zeus Rwa Thread Reader](../ch01-132-thread-by-zeusrwa-on-thread-reader-app)
+- [Interaction Models](../ch01-566-interaction-models-a-scalable-approach-to-human-ai-collabor)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch01-292-we-ve-been-here-before-decompilers-fuzzers-and-now-ai)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09-106-automate-progressive-rollouts-with-vercel-flags-vercel)
+- [Afine Csp Html Injection Password Exfiltration Attack](../ch01-245-严格-csp-下的密码窃取-html-注入-chrome-自动填充攻击)
+- [Ai Native Dan Shipper Every Layered Thinking Walkwalk](../ch03-050-ai-native-公司-dan-shipper-30-人做出-100-人产出-层次化思维-saas-6-维能力框架)
+- [Fastlane Create Winning Short Form Content In Seconds](../ch03-097-fastlane-create-winning-short-form-content-in-seconds)
+- [Mira Mpa Deep Principle Ai4S 40 Sota](../ch01-183-mira-mpa-深度原理-ai-scientist-递归自训练打造材料基座模型-40-项实验全面-sota)
+- [Localmaxxing](../ch03-100-localmaxxing)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 ### 资金流向结构与市场情绪
 根据 CoinShares 报告，2026 年 5 月当周加密 ETP 净流入 8.58 亿美元，较前一周 1.18 亿美元大幅回升，实现连续第六周净流入，创 2025 年 4-7 月以来最长的连续流入纪录，六周累计流入 49 亿美元。

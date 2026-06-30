@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐ | 4.2KB | `entities/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md)
 
 ## 相关实体
-- [GPT-5.5来了！我撤回了退订ChatGPT的决定](/ch01-111-gpt-5-5来了-我撤回了退订chatgpt的决定/)
+- [GPT-5.5来了！我撤回了退订ChatGPT的决定](../ch01-111-gpt-5-5来了-我撤回了退订chatgpt的决定)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
 这是一篇极具标志性的数学 AI 实验记录。Timothy Gowers（菲尔兹奖得主，剑桥大学教授）让 ChatGPT 5.5 Pro 挑战开放数学问题，并在不到两小时内得到了 Isaac Rajagopal（MIT 学生）认为"几乎肯定正确"的证明——这实际上已经是发表级别的数学成果。
 **核心事件**：Nathanson 在论文《Diversity, Equity and Inclusion for Problems in Additive Number Theory》中提出关于 h 倍 sumset 上界的问题。ChatGPT 5.5 Pro 将原有的指数上界改进为指数为 k^α（α>1/2）的上界，随后进一步将上界改进为关于 k 的多项式 O(k^{10h³})。Gowers 坦承自己的数学输入为零——整个证明几乎全由 ChatGPT 完成。
@@ -35,9 +35,9 @@
 
 ## 延伸阅读
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 - 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md)
 
 ---
 

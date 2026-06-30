@@ -10,7 +10,7 @@
 - Mistral AI 随后确认 2026 年 5 月 12 日因第三方软件供应链攻击，其代码库管理系统被短暂攻破，仅非核心代码仓库被访问 
 - Mini Shai-Hulud 供应链攻击通过滥用 CI/CD 发布系统和劫持 OpenID Connect 令牌向 npm 和 PyPI 分发恶意包更新 
 - 这是 AI 公司首次从包生态系统攻击演进到内部开发系统和代码库资产的系统性窃取与货币化 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-shai-hulud-attack-1.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-shai-hulud-attack-1.md)
 
 ## 深度分析
 这一事件标志着针对 AI 基础设施的网络攻击正在发生结构性演变。传统上，针对开源 AI 项目的攻击主要集中在包生态系统投毒（如恶意 npm/PyPI 包），目标是获取开发者工作站上的凭证和密钥。而 TeamPCP 事件则揭示了一条从包供应链攻击到内部开发资产窃取与货币化的完整攻击链：Mini Shai-Hulud 攻击首先通过污染与 Mistral AI 相关的 npm 和 PyPI 包建立初步立足点，随后利用获取的凭证或 CI/CD 访问权限深入目标内部系统，最终从代码库管理系统中提取专有的源代码和训练基础设施代码。
@@ -26,8 +26,8 @@ Mistral AI 在事件后的声明确认了代码库管理系统被短暂攻破，
 **AI 基础设施安全的攻防对抗正在加速**：这一事件印证了一个趋势——针对 AI 公司的攻击者已不仅满足于窃取用户数据或投放恶意包，而是直指 AI 公司的核心竞争力：模型训练代码、推理基础设施和内部工具。防御方需要在传统应用安全基础上，增加对 AI 工作负载特有攻击面（如训练数据管道、模型权重存储、推理服务接口）的专项防护投入。
 
 ## 相关实体
-- [Restrict Access to Sensitive Documents in Amazon QuickSight](/ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick/) — 企业级文档访问控制实践
-- [PyTorch 2.12 Release Blog – PyTorch](/ch01-067-pytorch-2-12-release-blog-pytorch/) — AI 框架生态安全
+- [Restrict Access to Sensitive Documents in Amazon QuickSight](../ch11-134-restrict-access-to-sensitive-documents-in-your-amazon-quick) — 企业级文档访问控制实践
+- [PyTorch 2.12 Release Blog – PyTorch](../ch01-067-pytorch-2-12-release-blog-pytorch) — AI 框架生态安全
 
 ---
 

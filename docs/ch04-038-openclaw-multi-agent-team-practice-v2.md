@@ -281,7 +281,7 @@ subagents: {
 
 ## 相关资源
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
 - [OpenClaw 完全指南](https://mp.weixin.qq.com/s?__biz=Mzk0MDMwMzQyOA==&mid=2247505640&idx=1&sn=5904cfc3460dd7caea09c1eb7796efcf)（同一作者7.3万阅读量教程）
 - [EasyAI AI日报](https://mmh1.top/#/ai-daily/)
 - [clawhub.ai](https://clawhub.ai/) OpenClaw 技能市场
@@ -294,11 +294,11 @@ subagents: {
 - agent-claude-code — Claude Code 集成
 
 ## 相关实体
-- [Hermes Agent Memory System](/ch04-418-hermes-agent/)
-- [Openclaw Agent Loop Design Patterns](/ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式/)
-- [Hiclaw V110 K8S Hermes Worker](/ch11-086-hiclaw-v1-1-0-kubernetes-集群部署与-hermes-worker-运行时/)
-- [Openclaw Multi 2](/ch11-141-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 3](/ch04-390-openclaw-multi-3/)
+- [Hermes Agent Memory System](../ch04-418-hermes-agent)
+- [Openclaw Agent Loop Design Patterns](../ch04-237-openclaw-与-claude-code-的-agent-loop-设计范式)
+- [Hiclaw V110 K8S Hermes Worker](../ch11-086-hiclaw-v1-1-0-kubernetes-集群部署与-hermes-worker-运行时)
+- [Openclaw Multi 2](../ch11-141-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 3](../ch04-390-openclaw-multi-3)
 
 ---
 

@@ -4,14 +4,14 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md`
 
-## Harness 工程分享：LLM Agent 的 prompt cache 命中率 90% 实战
+# Harness 工程分享：LLM Agent 的 prompt cache 命中率 90% 实战
 
 ## 相关实体
 
-- [yoonho lee: text optimization as a legitimate learning mecha](/ch01-334-yoonho-lee-text-optimization-as-a-legitimate-learning-mecha/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md)
+- [yoonho lee: text optimization as a legitimate learning mecha](../ch01-334-yoonho-lee-text-optimization-as-a-legitimate-learning-mecha)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 深度分析
 
 Harness 工程分享：LLM Agent 的 prompt cache 命中率 90% 实战 涉及agent领域的核心技术议题。
@@ -46,12 +46,12 @@ Harness 工程分享：LLM Agent 的 prompt cache 命中率 90% 实战 涉及age
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

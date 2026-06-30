@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/google-开发者福利每月免费领取-10-美金别忘了来领啊.md`
 
-## Google 开发者福利，每月免费领取 10 美金，别忘了来领啊！
-##  Google 开发者福利，每月免费领取 10 美金，别忘了来领啊！
+# Google 开发者福利，每月免费领取 10 美金，别忘了来领啊！
+#  Google 开发者福利，每月免费领取 10 美金，别忘了来领啊！
 注意要每个月上来手动领取一下，每个月 10 美金，之前我以为一次性点击送全年呢，2 月份的没领取就浪费了。
 只要是订阅了 Gemini 会员的，通通可以领取，没其他要求，
 https://developers.google.com/program/my-benefits
 
 ## 相关实体
-- [Pi Mono Github](/ch01-608-pi-mono-github/)
-- [Google Workspace Updates Small Businesses Can Now Import Use](/ch01-749-google-workspace-updates-small-businesses-can-now-seamlessl/)
-- [Edgeclaw Bemit Lobster](/ch04-426-edgeclaw-端云两栖龙虾框架/)
-- [Claude Opus 47](/ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus/)
-- [Hermes Agent Getting Started Guide 2026](/ch04-418-hermes-agent/)
+- [Pi Mono Github](../ch01-608-pi-mono-github)
+- [Google Workspace Updates Small Businesses Can Now Import Use](../ch01-749-google-workspace-updates-small-businesses-can-now-seamlessl)
+- [Edgeclaw Bemit Lobster](../ch04-426-edgeclaw-端云两栖龙虾框架)
+- [Claude Opus 47](../ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus)
+- [Hermes Agent Getting Started Guide 2026](../ch04-418-hermes-agent)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-开发者福利每月免费领取-10-美金别忘了来领啊.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-开发者福利每月免费领取-10-美金别忘了来领啊.md)
 
 ## 深度分析
 

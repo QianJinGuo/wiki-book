@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/lowcode-framework-custom-agent-decision-framework-hello-agents.md`
 
-## 低代码 Agent、框架 Agent、自研 Agent，分别适合谁
+# 低代码 Agent、框架 Agent、自研 Agent，分别适合谁
 三条路对应三种不同诉求，不是高低级关系，更像三种不同的工程站位：
 | 类型 | 解决什么问题 | 核心关键词 |
 |------|------------|-----------|
 | 低代码 Agent | 先把东西跑起来 | 速度、协作、可视化 |
 
 ## 相关实体
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
-- [Agentscope Java Harness Framework Enterprise Distributed](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
-- [Openclaw Comprehensive Guide](/ch04-199-openclaw-完全指南/)
-- [Ai Context Layer Kgc 2026](/ch04-305-stripe-sessions-2026-ai-agents/)
-- [Skillsieve Agent Skill Security](/ch04-369-skillsieve-agent-skill-安全检测三层框架/)
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har)
+- [Openclaw Comprehensive Guide](../ch04-199-openclaw-完全指南)
+- [Ai Context Layer Kgc 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-context-layer-kgc-2026.md)
+- [Skillsieve Agent Skill Security](../ch04-369-skillsieve-agent-skill-安全检测三层框架)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lowcode-framework-custom-agent-decision-framework-hello-agents.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lowcode-framework-custom-agent-decision-framework-hello-agents.md)
 
 ## 深度分析
 

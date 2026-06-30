@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/role-confusion-github-io.md`
 
-## Prompt Injection as Role Confusion
+# Prompt Injection as Role Confusion
 
 > **Background**：将 prompt injection 重新定义为**角色混淆（Role Confusion）**问题的研究论文配套博客。提供了形式化的理论框架来理解为什么 LLM 容易受到 prompt injection 攻击，并提出了基于角色感知的防御方向。
 
@@ -67,7 +67,7 @@ LLM 的输入本质上是一个**单一的、连续的文本流**。这与人类
 
 ### 对 Agent 安全的深远影响
 
-这个框架对 [Hermes Agent Self-Evolving](/ch04-039-hermes-agent-self-evolving-source-analysis/) 和其他 Agent 系统的安全设计有直接启示：
+这个框架对 [Hermes Agent Self-Evolving](../ch04-039-hermes-agent-self-evolving-source-analysis) 和其他 Agent 系统的安全设计有直接启示：
 
 1. **架构层面的角色隔离**：真正的防御需要在架构层面建立角色隔离，而非依赖 prompt 层的软约束。Agent 系统应该确保 tool 输出在物理上与 user 指令分离，而不是仅靠标签区分。
 
@@ -103,14 +103,14 @@ LLM 的输入本质上是一个**单一的、连续的文本流**。这与人类
 
 ## 相关实体
 
-- [Hermes Agent Self-Evolving](/ch04-039-hermes-agent-self-evolving-source-analysis/) — Agent 安全治理
-- [Agent Security Threat Model — Agent 安全威胁模型](/ch04-265-使用-aws-security-agent-构建应用安全闭环-从代码提交到漏洞修复的自动化之路/)
-- [Agent Harness Context Management — 上下文管理中的安全挑战](/ch05-038-agent生产级harness工程指南/)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Harness 工程中的安全设计
+- [Hermes Agent Self-Evolving](../ch04-039-hermes-agent-self-evolving-source-analysis) — Agent 安全治理
+- Agent Security Threat Model — Agent 安全威胁模型
+- [Agent Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — 上下文管理中的安全挑战
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程中的安全设计
 
 ## 参考
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/role-confusion-github-io.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/role-confusion-github-io.md)
 Simon Willison 也对此做了评论分析，确认了该框架的重要性。
 
 ---

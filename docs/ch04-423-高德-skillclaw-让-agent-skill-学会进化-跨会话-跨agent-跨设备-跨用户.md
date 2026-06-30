@@ -4,22 +4,22 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/skillclaw-collective-intelligence.md`
 
-## 高德 SkillClaw：让 Agent Skill 学会进化——跨会话、跨Agent、跨设备、跨用户
+# 高德 SkillClaw：让 Agent Skill 学会进化——跨会话、跨Agent、跨设备、跨用户
 > 原文：https://mp.weixin.qq.com/s/Qy8TFzm6rhLxW3EbzjZZSA
 > 来源：高德技术（官方技术号）| 2026-04-22
 > 论文：https://arxiv.org/abs/2604.08377
 > 代码：https://github.com/AMAP-ML/SkillClaw
 
 ## 相关实体
-- [Hermes Skill System Winty](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
-- [Ai Skill Skill Creator 源码拆解](/ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南/)
-- [Agentic Ai System Architecture Harness Skill Mcp](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
-- [Agent Skill Writing Guide](/ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则/)
-- [Agent Memory Engineering Tax Aws China 2026](/ch04-073-agent-记忆系统工程税-写入纪律-prompt-cache-冲突-跨模型容量-embedding-迁移-自产-ski/)
+- [Hermes Skill System Winty](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力)
+- [Ai Skill Skill Creator 源码拆解](../ch01-229-05-skill-creator-源码深度拆解-llm-skill-触发率-防过拟合与三-agent-评审完整指南)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真)
+- [Agent Skill Writing Guide](../ch04-163-从-0-到-1-教你写-agent-skill-让-ai-懂你的-潜规则)
+- [Agent Memory Engineering Tax Aws China 2026](../ch04-073-agent-记忆系统工程税-写入纪律-prompt-cache-冲突-跨模型容量-embedding-迁移-自产-ski)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw-collective-intelligence.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-collective-intelligence.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析
 
 **群体智能的实现需要突破"单实例经验孤岛"，而这需要分层递进的架构设计。** SkillClaw 将群体智能划分为四个层次：单个用户内跨会话汇聚压缩、多 Agent 间经验共享、多设备间技能库同步、多用户间团队经验沉淀 。每一层都解决不同范围的经验共享问题，但底层共享同一个进化机制。这四个层次的递进关系揭示了一个重要洞察：群体智能不是一蹴而就的，而是从最小单元（个人会话）开始，逐步扩展到更大范围。

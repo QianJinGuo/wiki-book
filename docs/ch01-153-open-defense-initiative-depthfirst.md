@@ -4,18 +4,18 @@
 
 > 📊 Level ⭐ | 2.9KB | `entities/open-defense-initiative-depthfirst.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/open-defense-initiative-depthfirst.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-defense-initiative-depthfirst.md)
 
 ## 核心要点
 - Open Defense Initiative | depthfirst
 - v×c=56 分
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/open-defense-initiative-depthfirst.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-defense-initiative-depthfirst.md)
 
 ## 相关实体
 
-- [Open Defense Initiative | depthfirst](/ch01-626-open-defense-initiative-depthfirst/)
+- [Open Defense Initiative | depthfirst](../ch01-626-open-defense-initiative-depthfirst)
 
-- [open defense initiative](/ch01-153-open-defense-initiative-depthfirst/)
+- [open defense initiative](../ch01-153-open-defense-initiative-depthfirst)
 
 ## 深度分析
 Open Defense Initiative 的核心洞察是**时间窗口论**：Frontier AI（如 GPT-5.5 Cyber、Mythos）已展示自主漏洞发现和利用能力，开源模型正在快速追赶。这意味着"只有少数公司拥有顶级安全能力"的时代即将结束——但问题是，当这种能力落入恶意行为者手中时，防御窗口将急剧收窄。

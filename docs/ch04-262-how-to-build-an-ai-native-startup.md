@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.3KB | `entities/ai-native-startup-cyberfund-2026.md`
 
-## How to Build an AI-Native Startup
+# How to Build an AI-Native Startup
 
 ## 摘要
 
@@ -75,15 +75,15 @@ AI 原生创业公司每周改进一次操作系统，分内环和外环：
 
 ### Context 即护城河
 
-Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的默契库。每家公司都有相同的模型，但 context 不同——那些从真实交互中提炼出的隐性知识（「客户说再考虑考虑其实意思是价格太高」）才是真正的护城河。这与 Context Engineering 的理念高度一致：context 的质量决定了 AI 系统的输出质量。
+Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的默契库。每家公司都有相同的模型，但 context 不同——那些从真实交互中提炼出的隐性知识（「客户说再考虑考虑其实意思是价格太高」）才是真正的护城河。这与 [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) 的理念高度一致：context 的质量决定了 AI 系统的输出质量。
 
 ### Harness 的必要性
 
-文章中提到的「每个智能体外面必须套一个防护层」直接呼应了 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 的核心原则。六个阶段的 harness 流程（预检→计划→审批→执行→验证→记录）与 [Claude Code](/ch01-734-两万字详解claude-code源码核心机制/) 的内部机制异曲同工。Replit 事件则是一个典型的反面案例——提示词层面的安全约束在实际工程中是不可靠的。
+文章中提到的「每个智能体外面必须套一个防护层」直接呼应了 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心原则。六个阶段的 harness 流程（预检→计划→审批→执行→验证→记录）与 [Claude Code](../ch01-734-两万字详解claude-code源码核心机制) 的内部机制异曲同工。Replit 事件则是一个典型的反面案例——提示词层面的安全约束在实际工程中是不可靠的。
 
 ### 评估驱动的复利增长
 
-文章对 Evals 的强调体现了 AI 原生系统与传统软件工程的根本区别：传统系统通过代码测试保证质量，AI 原生系统通过评估保证技能的持续改进。接受率作为核心指标，本质上是一个信号——它告诉你技能是否已经「理解」了任务的边界。这与 [Karpathy 关于 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) 的观点相呼应：评估系统是 AI 原生公司的质量基础设施。
+文章对 Evals 的强调体现了 AI 原生系统与传统软件工程的根本区别：传统系统通过代码测试保证质量，AI 原生系统通过评估保证技能的持续改进。接受率作为核心指标，本质上是一个信号——它告诉你技能是否已经「理解」了任务的边界。这与 [Karpathy 关于 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering) 的观点相呼应：评估系统是 AI 原生公司的质量基础设施。
 
 ### 评论者的补充
 
@@ -102,14 +102,14 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 
 ## 相关实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-native-startup-cyberfund-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-startup-cyberfund-2026.md)
 
 ---
 

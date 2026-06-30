@@ -4,14 +4,14 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/aws-cn-intelligent-device-assistant-consumer-agent-2026.md`
 
-## 基于 AWS 智能设备助手行业资产，构建社交渠道触达的消费级 Agent 交互应用
+# 基于 AWS 智能设备助手行业资产，构建社交渠道触达的消费级 Agent 交互应用
 
 ## 相关实体
-- [habby 游戏借助 aws devops agent 实现智能运维最佳实践](/ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践/)
-- [agent-evalkit：aws 开源 cli agent 评测工具包](/ch11-026-agent-evalkit-aws-开源-cli-agent-评测工具包/)
-- [aws sagemaker ai agent guided workflows finetuning](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
+- [habby 游戏借助 aws devops agent 实现智能运维最佳实践](../ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践)
+- [agent-evalkit：aws 开源 cli agent 评测工具包](../ch11-026-agent-evalkit-aws-开源-cli-agent-评测工具包)
+- [aws sagemaker ai agent guided workflows finetuning](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-cn-intelligent-device-assistant-consumer-agent-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-cn-intelligent-device-assistant-consumer-agent-2026.md)
 
 ## 核心要点
 
@@ -33,7 +33,7 @@
 - 消费级 agent 与企业级 agent 的对话模型差异显著：长上下文 + 品牌 voice vs 短上下文 + 结构化响应。
 - AgentCore 的 multi-agent 编排可以支撑 device + conversational 的混合 agent。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-cn-intelligent-device-assistant-consumer-agent-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-cn-intelligent-device-assistant-consumer-agent-2026.md)
 
 ---
 

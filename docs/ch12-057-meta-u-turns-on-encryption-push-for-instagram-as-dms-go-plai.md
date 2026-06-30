@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/5235705.md`
 
-## Meta U-turns on encryption push for Instagram as DMs go plaintext
+# Meta U-turns on encryption push for Instagram as DMs go plaintext
 
 Meta has quietly pulled the plug on encrypted Instagram DMs, meaning private messages on one of the world's biggest social networks are no longer especially private. The change took effect in 2026, according to a revised Meta post first published in 2022. In a statement to The Register, Meta said the feature saw limited adoption and pointed users toward WhatsApp instead.
 
@@ -61,14 +61,14 @@ Meta 发言人建议用户转向 WhatsApp（同样由 Meta 拥有但保留 E2EE�
 Meta 将用户引向 WhatsApp，但其整体商业模式持续向 AI 监控和广告定向演进。WhatsApp 虽保留 E2EE，但与 Meta AI 的交互已被用于广告定向，且 WhatsApp 的元数据收集和其他数据实践与 Instagram 存在整合可能。
 
 ## 相关实体
-- [Weve Been Here Before Ai Vulnerability Research](/ch01-457-weve-been-here-before-ai-vulnerability-research/)
-- [Microsoft Zero Days Researcher Disgruntled](/ch12-089-mystery-microsoft-bug-leaker-keeps-the-zero-days-coming/)
-- [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](/ch01-574-getting-llms-drunk-to-find-remote-linux-kernel-oob-writes-a/)
-- [Us Bank Aws Ai Migration](/ch01-542-u-s-bank-shifts-critical-apps-to-aws-for-ai-push-cio-dive/)
-- [Deerflow Hermes Openclaw Comparison](/ch04-398-deerflow-hermes-openclaw-架构区别深度对比/)
-- MOC
+- [Weve Been Here Before Ai Vulnerability Research](../ch01-457-weve-been-here-before-ai-vulnerability-research)
+- [Microsoft Zero Days Researcher Disgruntled](../ch12-089-mystery-microsoft-bug-leaker-keeps-the-zero-days-coming)
+- [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](https://github.com/QianJinGuo/wiki/blob/main/entities/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp.md)
+- [Us Bank Aws Ai Migration](../ch01-542-u-s-bank-shifts-critical-apps-to-aws-for-ai-push-cio-dive)
+- [Deerflow Hermes Openclaw Comparison](../ch04-398-deerflow-hermes-openclaw-架构区别深度对比)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5235705.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5235705.md)
 
 ---
 

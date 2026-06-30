@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐ | 10.8KB | `entities/choosing-to-stay-human.md`
 
-## Choosing to Stay Human
+# Choosing to Stay Human
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/choosing-to-stay-human.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/choosing-to-stay-human.md)
 
 > **Core insight**: Ethan Mollick 提出"认知投降"（cognitive surrender）概念：人类面对 AI 请求时倾向于停止思考、直接接受 AI 输出。台北 10 所高中 Python 课程的 RCT 显示，带教师引导的 AI tutor 产生 0.15 SD 效果量（= 6-9 个月额外学业进步），而简单 ChatGPT 使用则导致 17% 成绩下降——使用方式的微小差异导致结果的天壤之别。核心命题：决定什么保留给人类本身是一个需要主动做出的选择，而非默认。
 
@@ -83,14 +83,14 @@ ChatGPT 的 /learn、Gemini 的 Guided Learning、Claude 的 learning style sele
 - **AI ≠ 代理**：主动选择使用 AI 而非被设计默认推向 frictionless use
 
 ## 相关实体
-- [Against Brain Damage](/ch03-016-against-brain-damage/)
-- [Frontier Code Cognition Mergeability Benchmark](/ch01-257-frontiercode-cognition-ai-的-pr-mergeability-编码基准/)
-- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](/ch01-497-garry-tan/)
-- [Defect Backlog Retention Report](/ch03-003-your-defect-backlog-is-a-retention-report/)
+- [Against Brain Damage](../ch03-016-against-brain-damage)
+- [Frontier Code Cognition Mergeability Benchmark](../ch01-257-frontiercode-cognition-ai-的-pr-mergeability-编码基准)
+- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01-497-garry-tan)
+- [Defect Backlog Retention Report](../ch03-003-your-defect-backlog-is-a-retention-report)
 
 ## 相关引用
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/choosing-to-stay-human.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/choosing-to-stay-human.md)
 
 ---
 

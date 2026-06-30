@@ -4,14 +4,14 @@
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/semis-memo-supply-chain-inheritance.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/semis-memo-supply-chain-inheritance.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/semis-memo-supply-chain-inheritance.md)
 
 ## 相关实体
-- [Semis Memo: Supply Chain Inheritance](/ch01-485-semis-memo-supply-chain-inheritance/)
-- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](/ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha/)
-- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](/ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- [Amazon launches Supply Chain Services for businesses of all sizes](/ch11-210-amazon-launches-supply-chain-services-for-businesses-of-all/)
-- [semgrep intercom php supply chain](/ch12-100-semgrep-intercom-php-supply-chain/)
+- [Semis Memo: Supply Chain Inheritance](../ch01-485-semis-memo-supply-chain-inheritance)
+- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01-559-rigged-game-scarcruft-compromises-gaming-platform-supply-cha)
+- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](../ch12-033-postmortem-tanstack-npm-supply-chain-compromise-tanstack)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch11-210-amazon-launches-supply-chain-services-for-businesses-of-all)
+- [semgrep intercom php supply chain](../ch12-100-semgrep-intercom-php-supply-chain)
 
 ## 深度分析
 本文是Citrini Research发布的半导体Memo系列文章，深入分析了AI基础设施时代模拟和功率半导体的投资逻辑，特别是提出了"Supply Chain Inheritance"（供应链继承）这一核心投资框架。

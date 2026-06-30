@@ -275,12 +275,12 @@ Plain markdown、git history、versioned memory store 这类朴素设计不一�
 - LoCoMo
 - Chappy Asel: Agent Memory, Nine Frameworks, Four Bets
 ## 相关实体
-- [Claude Code 7 Layer Memory Architecture](/ch01-857-claude-code-7-layer-memory-architecture/)
-- [Agent Memory Architecture Ruofei](/ch04-111-agent-memory-架构解析/)
-- [Memory Agent Systems Cobanov](/ch04-458-memory-agent-systems-cobanov/)
-- [Factory Mission Multi Agent Architecture](/ch01-864-factory-mission-multi-agent-architecture/)
-- [Context Engineering Three Memory Paradigms](/ch04-229-yidian-tianxia-context-engineering-agentic-ai/)
-- MOC
+- [Claude Code 7 Layer Memory Architecture](../ch01-857-claude-code-7-layer-memory-architecture)
+- [Agent Memory Architecture Ruofei](../ch04-111-agent-memory-架构解析)
+- [Memory Agent Systems Cobanov](../ch04-458-memory-agent-systems-cobanov)
+- [Factory Mission Multi Agent Architecture](../ch01-864-factory-mission-multi-agent-architecture)
+- [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---
 
