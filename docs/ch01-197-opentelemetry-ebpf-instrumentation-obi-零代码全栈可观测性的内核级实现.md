@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 19.0KB | `entities/open-telemetry-ebpf-instrumentation-obi-zero-code-observability-aliyun-2026.md`
 
-## OpenTelemetry eBPF Instrumentation (OBI) — 零代码全栈可观测性的内核级实现
+# OpenTelemetry eBPF Instrumentation (OBI) — 零代码全栈可观测性的内核级实现
 
 > **来源说明**：本文基于阿里云云原生 2026-06-16 发布的 OBI 深度技术长文（《装在内核里的透视镜：云监控 2.0 不改一行代码实现全栈可观测》，作者古琦）整理。文章前 80% 内容为 OBI 上游项目（[opentelemetry-ebpf-instrumentation](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation)）的内核机制与工程实现深度解读；末段为阿里云云监控 2.0 的产品方自报接入流程，已标注。
 
@@ -174,17 +174,17 @@ ReadFromChannel -> Routes -> KubeDecorator -> DockerDecorator -> NameResolution 
 
 ## 十、与其他 eBPF / 可观测性方案的关系
 
-- **vs [Cilium Tetragon](/ch11-180-cilium-tetragon-kubernetes-runtime-security-with-ebpf/)**：Tetragon 聚焦 **运行时安全/拦截**（TracingPolicy + inline kill，syscall 级防护）；OBI 聚焦 **可观测性/追踪**（trace/metrics 生成、协议语义解析）。两者都基于 eBPF 但目标层不同
+- **vs [Cilium Tetragon](../ch11-180-cilium-tetragon-kubernetes-runtime-security-with-ebpf)**：Tetragon 聚焦 **运行时安全/拦截**（TracingPolicy + inline kill，syscall 级防护）；OBI 聚焦 **可观测性/追踪**（trace/metrics 生成、协议语义解析）。两者都基于 eBPF 但目标层不同
 - **vs 传统 APM Agent（SkyWalking/Instana/Datadog）**：Agent 需要挂载 SDK + 改代码 + 重新发布，OBI 零侵入；代价是无法做应用层自定义埋点
-- **vs [OpenClaw 可观测 (OTel+SLS)](/ch04-338-你的-ai-agent-真的在受控运行吗/)**：OpenClaw 走的是 LLM 应用层 Session 日志方案；OBI 是内核层全栈（含 LLM Provider 协议级追踪）
+- **vs [OpenClaw 可观测 (OTel+SLS)](../ch04-338-你的-ai-agent-真的在受控运行吗)**：OpenClaw 走的是 LLM 应用层 Session 日志方案；OBI 是内核层全栈（含 LLM Provider 协议级追踪）
 
 ## 相关实体
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/open-telemetry-ebpf-instrumentation-obi-zero-code-observability-aliyun-2026.md)
-→ [Cilium Tetragon Kubernetes Runtime Security Ebpf](/ch11-180-cilium-tetragon-kubernetes-runtime-security-with-ebpf/) — 同为 eBPF 内核级方案，但聚焦运行时安全拦截
-→ [Openclaw Agent Observability Session Logs Otel Sls](/ch04-338-你的-ai-agent-真的在受控运行吗/) — LLM 应用层 Session 日志可观测（OTel + SLS）
-→ [Alibabacloud Cms Manage Skill Natural Language Observability](/ch11-016-alibabacloud-cms-manage-skill-阿里云-cms-2-0-可观测接入的-ai-agent-sk/) — 阿里云 CMS 2.0 可观测接入的 AI Agent Skill 化（OBI 是其底层引擎之一）
-→ [Agent Harness Observability Production](/ch04-468-agent-harness-可观测性-生产级-ai-项目必须补上的一课/) — Agent Harness 生产可观测性
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-telemetry-ebpf-instrumentation-obi-zero-code-observability-aliyun-2026.md)
+→ [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch11-180-cilium-tetragon-kubernetes-runtime-security-with-ebpf) — 同为 eBPF 内核级方案，但聚焦运行时安全拦截
+→ [Openclaw Agent Observability Session Logs Otel Sls](../ch04-338-你的-ai-agent-真的在受控运行吗) — LLM 应用层 Session 日志可观测（OTel + SLS）
+→ [Alibabacloud Cms Manage Skill Natural Language Observability](../ch11-016-alibabacloud-cms-manage-skill-阿里云-cms-2-0-可观测接入的-ai-agent-sk) — 阿里云 CMS 2.0 可观测接入的 AI Agent Skill 化（OBI 是其底层引擎之一）
+→ [Agent Harness Observability Production](../ch04-468-agent-harness-可观测性-生产级-ai-项目必须补上的一课) — Agent Harness 生产可观测性
 
 ---
 

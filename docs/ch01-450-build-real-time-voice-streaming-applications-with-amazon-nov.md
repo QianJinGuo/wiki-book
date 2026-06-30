@@ -10,27 +10,27 @@
 - Source: https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-streaming-applications-with-amazon-nova-sonic-and-webrtc/
 
 ## 相关实体
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](/ch01-285-multimodal/)
-- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](/ch11-054-amazon-nova-lite-fine-tuning-高性价比的视觉检测模型微调案例与实践-亚马逊aws官方博/)
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](/ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的/)
-- [Build financial document processing with Pulse AI and Amazon Bedrock](/ch11-130-build-financial-document-processing-with-pulse-ai-and-amazon/)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](/ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级/)
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](/ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南/)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
+- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](../ch11-054-amazon-nova-lite-fine-tuning-高性价比的视觉检测模型微调案例与实践-亚马逊aws官方博)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch11-188-用-strands-agents-sdk-构建确定性数据分析-语义层-vqr-在-amazon-bedrock-上的)
+- [Build financial document processing with Pulse AI and Amazon Bedrock](../ch11-130-build-financial-document-processing-with-pulse-ai-and-amazon)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级)
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
+- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12-032-别让你的-amazon-bedrock-模型为他人打工-api-调用安全防护指南)
 
-- [Www A16Z News Need Series C Call A16Z](/ch11-145-need-series-c-call-a16z/)
-- [Amazon Nova Forge Hyperparameter Tuning Art Science](/ch11-057-amazon-nova-forge-域定制超参调优-艺术与科学/)
-- [Object Detection With Amazon Nova 2 Lite](/ch11-108-amazon-nova-2-lite-视觉对象检测-自然语言驱动/)
-- [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](/ch11-218-network-firewall-部署小指南-六-利用-amazon-bedrock-ai-实现network-fi/)
-- [Accelerate Llm Model Loading And Increase Context Windows Wi](/ch01-802-accelerate-llm-model-loading-and-increase-context-windows-wi/)
-- [用 Amazon Quick 加速日常数据工作](/ch09-116-用-amazon-quick-加速日常数据工作/)
-- [使用 Amazon Cognito 多区域复制提高应用程序韧性](/ch11-219-使用-amazon-cognito-多区域复制提高应用程序韧性/)
-- [Amazon Quick Arns Cross Account Migration And Namespace Perm](/ch11-223-amazon-quick-arns-cross-account-migration-and-namespace-per/)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](/ch01-809-fundamental-s-large-tabular-model-nexus-is-now-available-on/)
-- [The Art And Science Of Hyperparameter Optimization On Amazon Nova Forge](/ch11-220-the-art-and-science-of-hyperparameter-optimization-on-amazon/)
-- MOC
-- MOC
+- [Www A16Z News Need Series C Call A16Z](../ch11-145-need-series-c-call-a16z)
+- [Amazon Nova Forge Hyperparameter Tuning Art Science](../ch11-057-amazon-nova-forge-域定制超参调优-艺术与科学)
+- [Object Detection With Amazon Nova 2 Lite](../ch11-108-amazon-nova-2-lite-视觉对象检测-自然语言驱动)
+- [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](../ch11-218-network-firewall-部署小指南-六-利用-amazon-bedrock-ai-实现network-fi)
+- [Accelerate Llm Model Loading And Increase Context Windows Wi](../ch01-802-accelerate-llm-model-loading-and-increase-context-windows-wi)
+- [用 Amazon Quick 加速日常数据工作](../ch09-116-用-amazon-quick-加速日常数据工作)
+- [使用 Amazon Cognito 多区域复制提高应用程序韧性](../ch11-219-使用-amazon-cognito-多区域复制提高应用程序韧性)
+- [Amazon Quick Arns Cross Account Migration And Namespace Perm](../ch11-223-amazon-quick-arns-cross-account-migration-and-namespace-per)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch01-809-fundamental-s-large-tabular-model-nexus-is-now-available-on)
+- [The Art And Science Of Hyperparameter Optimization On Amazon Nova Forge](../ch11-220-the-art-and-science-of-hyperparameter-optimization-on-amazon)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-misc-topics-frontier.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
 ## 深度分析
 1. **Speech-to-Speech 统一架构 vs. 级联 pipeline 的本质差异**
    Nova Sonic 采用 unified speech-to-speech 而非传统的 ASR→LLM→TTS 三段式架构，这意味着延迟瓶颈从三次网络往返压缩为单次，解释了为何能实现"低延迟实时对话"。传统方案中每次语义理解都要等待完整识别完成，而 Nova Sonic 在语音层面就完成理解和生成闭环。

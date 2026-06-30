@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐⭐⭐ | 8.8KB | `entities/serverless-langgraph-multi-agent-aws.md`
 
-## Build a highly scalable serverless LangGraph multi-agent system
+# Build a highly scalable serverless LangGraph multi-agent system
 
 ## 核心内容
 
-## Build highly scalable serverless LangGraph multi-agent systems in AWS with Amazon Bedrock AgentCore
+# Build highly scalable serverless LangGraph multi-agent systems in AWS with Amazon Bedrock AgentCore
 
 Generative AI has rapidly evolved from experimental prototypes into systems that are expected to operate reliably in production, at scale, and under real-world performance constraints. As organizations move beyond demos and proofs of concept, they increasingly encounter challenges related to inference latency, scalability, state management, and operational visibility. Building high-performance AI agents today requires more than powerful models and demands an implementation that can deliver consistent performance, preserve context across interactions, and provide deep observability into how agents reason and behave in production.
 
@@ -44,7 +44,7 @@ LangGraph orchestrator 和 specialized agents 被打包为 Docker 容器，这�
 
 ### 5. Campaign Review 作为多 Agent 编排的典型场景
 
-该方案选择营销活动审核作为演示场景，展示了多 Agent 协作的完整链路：从多角度 persona 评审、合规验证到最终建议合成。这个场景体现了 Agent Orchestration Patterns 中描述的 Fan-Out 与 Agent Pool 模式的组合应用——多个独立 Agent 并行运行，结果被收集后进行增量聚合。
+该方案选择营销活动审核作为演示场景，展示了多 Agent 协作的完整链路：从多角度 persona 评审、合规验证到最终建议合成。这个场景体现了 [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) 中描述的 Fan-Out 与 Agent Pool 模式的组合应用——多个独立 Agent 并行运行，结果被收集后进行增量聚合。
 
 ## 实践启示
 
@@ -71,13 +71,13 @@ Docker 容器化提供了移植性但引入了冷启动问题。在选择部署�
 ## 参考来源
 
 ## 相关实体
-- [构建基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- [Anthropic Multi Agent Research System](/ch01-677-anthropic/)
-- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](/ch04-305-how-loka-built-a-natural-low-latency-voice-agent-with-amazo/)
-- [构建基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- [Netflix Real Time Service Topology](/ch11-009-from-silos-to-service-topology-why-netflix-built-a-real-tim/)
+- [构建基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [Anthropic Multi Agent Research System](../ch01-677-anthropic)
+- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](https://github.com/QianJinGuo/wiki/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
+- [构建基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [Netflix Real Time Service Topology](../ch11-009-from-silos-to-service-topology-why-netflix-built-a-real-tim)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/serverless-langgraph-multi-agent-aws.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/serverless-langgraph-multi-agent-aws.md)
 
 ---
 

@@ -46,13 +46,13 @@
 > [!contradiction] 参见 **持相反观点**：当前 AI 辅助编程范式（包括 vibe coding）已被广泛应用于生产环境，其可行性不应被全盘否定。
 > 关于 Vibe Coding 的生产可行性，另一种观点认为当前的 AI 能力尚未成熟，不应完全依赖 AI 生成代码。
 ## 相关实体
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](/ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [Tmall Marketing Ai Workflow](/ch01-424-淘天营销中后台-ai-生码工作流最佳实践/)
-- [Harness Engineering Alibaba Java Case Study](/ch05-008-阿里工程师-harness-工程化实践-双案例合并/)
-- [Skill Formal Theory Survey 10Papers](/ch04-036-10篇论文看懂ai-agent-skill-表示-执行-评估与进化/)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [Tmall Marketing Ai Workflow](../ch01-424-淘天营销中后台-ai-生码工作流最佳实践)
+- [Harness Engineering Alibaba Java Case Study](../ch05-008-阿里工程师-harness-工程化实践-双案例合并)
+- [Skill Formal Theory Survey 10Papers](../ch04-036-10篇论文看懂ai-agent-skill-表示-执行-评估与进化)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-时代的生产力悖论当协作本身成为最大的瓶颈.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代的生产力悖论当协作本身成为最大的瓶颈.md)
 三、Agent 在交付和稳定性链路中的缺席
 传统协作模式的核心是"人与人的沟通"。无论是站会、需求评审、技术方案讨论还是代码审查，本质上都是人类之间的信息交换。这种协作方式的成本随着团队规模呈几何级数增长。在AI时代，这种协作模式暴露出了根本性的局限：
 

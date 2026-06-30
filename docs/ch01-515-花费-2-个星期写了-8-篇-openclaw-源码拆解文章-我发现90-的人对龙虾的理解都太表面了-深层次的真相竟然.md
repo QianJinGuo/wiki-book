@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/openclaw-architecture-8-part-summary.md`
 
-## 花费 2 个星期写了 8 篇 OpenClaw 源码拆解文章，我发现90% 的人对龙虾的理解都太表面了，深层次的真相竟然是这个
+# 花费 2 个星期写了 8 篇 OpenClaw 源码拆解文章，我发现90% 的人对龙虾的理解都太表面了，深层次的真相竟然是这个
 
 一种，活在别人的评测里，把模型的强当自己的强，痴人说梦；
 另一种，活在真实的实战里，用最顶级的 AI，武装自己。
@@ -13,15 +13,15 @@
 拆解 OpenClaw 架构（一）：6 阶段流水线与 20+ 平台的消息归一化
 
 ## 相关实体
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-418-hermes-agent/)
-- [Agent Memory Architecture Ruofei](/ch04-111-agent-memory-架构解析/)
-- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
-- [Agent Context Management Architecture Patterns](/ch04-460-智能体编排层中的上下文管理架构/)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-418-hermes-agent)
+- [Agent Memory Architecture Ruofei](../ch04-111-agent-memory-架构解析)
+- [Code As Agent Harness Survey](../ch09-046-code-as-agent-harness-综述)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南)
+- [Agent Context Management Architecture Patterns](../ch04-460-智能体编排层中的上下文管理架构)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-architecture-8-part-summary.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-architecture-8-part-summary.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
 ## 深度分析
 
 OpenClaw的架构哲学可以归结为一句话：**"用已有的基础设施，不造新抽象。"** 消息用现有平台API，人格用Markdown文件，记忆用文件系统加SQLite，工具用Unix命令行，扩展用Markdown说明书。这不是一个技术能力不足的团队选择的方向，而是一个奥地利独立开发者（一个周末项目开始）在三个月内做出GitHub增长最快开源项目的真实路径。这个选择的战略价值在于：它把OpenClaw的复杂度从"建造新系统"降维到了"集成现有系统"，这是快速迭代和生态扩张的关键。

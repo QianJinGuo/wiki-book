@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 9.2KB | `entities/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md`
 
-## Domain Expertise Has Always Been the Real Moat
+# Domain Expertise Has Always Been the Real Moat
 
 ## 核心要点
 
@@ -12,7 +12,7 @@
 
 ## 深入分析
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md)
+> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md)
 
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=7, stars=4。
 
@@ -71,15 +71,15 @@
 在当前环境下，许多技术岗位的价值正在被重新定价。职业规划决策中，应该区分哪些技能是"可被 AI 执行的结构化任务"、哪些是"需要领域判断力的非结构化问题"。前者面临压缩，后者具有防御性价值。同时，关注那些沉淀了大量隐性知识、存在严格监管壁垒的领域，这些领域的从业者与 AI 之间有更大的能力梯度差。
 
 ## 相关实体
-- [Seangoedeckecom Build Agents Not Pipelines](/ch04-005-build-agents-not-pipelines/)
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](/ch01-031-why-ctrl-v-won-t-paste-images-in-claude-code-on-wsl-with-a/)
-- [Kristoffit Blog Fix Your Asserts](/ch01-028-you-must-fix-your-asserts/)
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](/ch01-006-what-happens-in-the-log-when-an-app-crashes-as-it-starts-up/)
-- [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](/ch11-002-cloudflare-turnstile-requiring-fingerprintable-webgl/)
+- [Seangoedeckecom Build Agents Not Pipelines](../ch04-005-build-agents-not-pipelines)
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](../ch01-031-why-ctrl-v-won-t-paste-images-in-claude-code-on-wsl-with-a)
+- [Kristoffit Blog Fix Your Asserts](../ch01-028-you-must-fix-your-asserts)
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](../ch01-006-what-happens-in-the-log-when-an-app-crashes-as-it-starts-up)
+- [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](../ch11-002-cloudflare-turnstile-requiring-fingerprintable-webgl)
 
 ## 相关主题
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md)
 
 ---
 

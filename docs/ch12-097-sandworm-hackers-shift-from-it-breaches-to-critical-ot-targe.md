@@ -22,7 +22,7 @@
 - 深度防御架构
 - OT 特定的事件响应计划
 - 持续监控和威胁情报
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
 
 ## 深度分析
 **国家级黑客组织转向 OT 关键基础设施的战略意涵**：
@@ -41,11 +41,11 @@
 - **关基企业**：电力、水务、医疗、制造等关键基础设施运营企业必须立即进行 OT 安全评估，摸清已连接互联网的 ICS 系统暴露面
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [New cybersecurity industry coalition aims to lead US critical infrastructure protection](/ch11-004-new-cybersecurity-industry-coalition-aims-to-lead-us-critica/)
-- [From Doer To Director: The AI Mindset Shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
-- [CISA urges critical infrastructure firms to ‘fortify’ before it’s too late | Cybersecurity Dive](/ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before/)
+- [New cybersecurity industry coalition aims to lead US critical infrastructure protection](../ch11-004-new-cybersecurity-industry-coalition-aims-to-lead-us-critica)
+- [From Doer To Director: The AI Mindset Shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift)
+- [CISA urges critical infrastructure firms to ‘fortify’ before it’s too late | Cybersecurity Dive](../ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before)
 
 ---
 

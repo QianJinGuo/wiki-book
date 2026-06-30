@@ -11,13 +11,13 @@
 | **模式二：OpenClaw/Claude Code** | 对话驱动，依赖 Prompt 技巧 | 高 | 随机性强 | 无自动化闭环 | 串行迭代 | 不可控 & 缺乏工程验证 |
 
 ## 相关实体
-- [Claude Code Prompt Context Harness](/ch05-081-claude-harness-generator-evaluator-context-reset/)
-- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
-- [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析/)
-- [Anthropic Managed Agents Scaling](/ch01-677-anthropic/)
-- [Hermes Agent Deep Dive Alibaba](/ch04-418-hermes-agent/)
+- [Claude Code Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md)
+- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
+- [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析)
+- [Anthropic Managed Agents Scaling](../ch01-677-anthropic)
+- [Hermes Agent Deep Dive Alibaba](../ch04-418-hermes-agent)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-factory-yueheng.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-factory-yueheng.md)
 
 ## 深度分析
 

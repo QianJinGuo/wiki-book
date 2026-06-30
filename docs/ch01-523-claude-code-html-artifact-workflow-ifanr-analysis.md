@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/claude-code-html-artifact-workflow-ifanr.md`
 
-## Claude Code HTML Artifact Workflow (IFanR Analysis)
+# Claude Code HTML Artifact Workflow (IFanR Analysis)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-html-artifact-workflow-ifanr.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-html-artifact-workflow-ifanr.md)
 
 ## 摘要
 
@@ -110,10 +110,10 @@ HTML artifact 是一种解决方案：它把线性信息变成空间化信息，
 
 ## 相关实体
 
-- [What is AX?](/ch03-099-what-is-ax-john-maeda-on-accessibility-as-ability/)
-- [Claude Dispatch and the Power of Interfaces](/ch01-423-claude-dispatch-and-the-power-of-interfaces/)
-- [Claude Code 源码解析](/ch01-734-两万字详解claude-code源码核心机制/)
-- [MOC: Coding Agent Practice](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
+- [What is AX?](../ch03-099-what-is-ax-john-maeda-on-accessibility-as-ability)
+- [Claude Dispatch and the Power of Interfaces](../ch01-423-claude-dispatch-and-the-power-of-interfaces)
+- [Claude Code 源码解析](../ch01-734-两万字详解claude-code源码核心机制)
+- [MOC: Coding Agent Practice](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---
 

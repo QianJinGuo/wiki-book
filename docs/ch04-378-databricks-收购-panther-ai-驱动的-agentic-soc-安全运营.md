@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/databricks-panther-ai-threat-detection.md`
 
-## Databricks 收购 Panther：AI 驱动的 Agentic SOC 安全运营
+# Databricks 收购 Panther：AI 驱动的 Agentic SOC 安全运营
 
 > **Background**：本文基于 TechMonitor 2026-06-17 报道，综合 Databricks Lakewatch 安全湖仓架构 + Panther agentic SOC 平台的收购整合细节。
 
@@ -76,8 +76,8 @@ Panther 是 Databricks 第三个安全相关收购：
 本实体聚焦 AI-native 安全运营的架构和 Agentic SOC 工作流设计，而非通用安全防御策略。
 
 ## 相关主题
-- Agent Harness Context Management — Agentic 工作流的上下文管理
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — 工程化框架设计方法论
+- [Agent Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Agentic 工作流的上下文管理
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化框架设计方法论
 
 ---
 

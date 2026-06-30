@@ -12,13 +12,13 @@
 - 招募参与者有两种主要途径：自带用户（相关性高、成本低）vs 外部面板（多样性好、客观性强） 
 - 分析流程：转录 → 摘要 → 寻找模式 → 情境化 → 定量验证 → 综合洞察 → 头脑风暴下一步 
 ## 相关实体
-- [User Journey Map](/ch01-165-user-journey-maps-how-ux-teams-turn-friction-into-better-pr/)
-- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](/ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes/)
-- [Unitree Ipo Robotics Market](/ch18-robotics/)
-- [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](/ch01-885-accelerating-transformers-fine-tuning-with-nvidia-nemo-autom/)
+- [User Journey Map](../ch01-165-user-journey-maps-how-ux-teams-turn-friction-into-better-pr)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12-042-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes)
+- [Unitree Ipo Robotics Market](https://github.com/QianJinGuo/wiki/blob/main/entities/unitree-ipo-robotics-market.md)
+- [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/user-interviews-guide-pro.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/user-interviews-guide-pro.md)
 
 ## 深度分析
 用户访谈的本质是一种**定性研究方法**，通过研究者（主持人）与用户（参与者）之间一对一的对话，深入理解用户如何与产品或服务交互 。与传统定量方法相比，访谈能够捕捉到用户行为背后的"为什么"——他们的动机、挑战和偏好，而这些信息在问卷或数据分析中往往难以获得 。这使得用户访谈成为任何 UX 研究工具包中不可或缺的方法。
@@ -33,7 +33,7 @@
 **访谈过程管理**需要注重多个关键细节。开场时应通过简单的开放式热身问题建立 rapport，解释访谈目的、问题性质以及回答如何使用 ；访谈中保持中立，避免表达判断或意见以免影响参与者回答 ；同时采用"相似问题不同角度"的技巧来验证信息一致性并抵消记忆偏差的影响 。记录方式上，在获得同意后进行音视频录制，并结合现场笔记，可以捕捉言语内容和非言语线索 。
 **参与者招募**的实践建议包括：明确定义目标用户画像（考虑人口统计、行为模式、产品使用经验等因素）；利用多种招募渠道（社交媒体、产品论坛、邮件列表、客户数据库）；设置筛选问题以确保候选人符合目标用户特征；提供适当激励（礼品卡、产品折扣或直接报酬）；尊重参与者时间，提供灵活的时间安排；及时跟进确认以降低缺席率 。
 **分析与应用**阶段应采用迭代式方法。转录后首先逐篇摘要关键点，然后跨访谈寻找共性模式和主题，同时关注差异和异常值；将发现与定量数据（如行为分析、问卷结果）交叉验证以增强结论可靠性；最终将洞察与初始研究目标对应，指导产品设计和开发决策 。整个过程应是多学科协作的，确保不同视角的碰撞产生更创新的解决方案。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/user-interviews-guide-pro.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/user-interviews-guide-pro.md)
 
 ---
 

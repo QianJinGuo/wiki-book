@@ -4,19 +4,19 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
 
 ## 核心要点
 - 来源：newsletter (kilo.ai/blog.kilo.ai)
 - 评分：v=7 × c=8 = 56 (strong)
 - 主要内容：Meet Customers Where They Are: Agentforce Contact Center Now Offers WhatsApp Voice
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
 
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [Who Winning Enterprise AI Now](/ch03-123-who-winning-enterprise-ai-now/)
-- [CEOs of the classroom: Why principals are the key to the AI era](/ch01-117-ceos-of-the-classroom-why-principals-are-the-key-to-the-ai/)
+- [Who Winning Enterprise AI Now](../ch03-123-who-winning-enterprise-ai-now)
+- [CEOs of the classroom: Why principals are the key to the AI era](../ch01-117-ceos-of-the-classroom-why-principals-are-the-key-to-the-ai)
 
 ## 深度分析
 Salesforce Agentforce 接入 WhatsApp Voice 的战略意图远超渠道扩展本身。这是 Salesforce 在**全渠道 AI 原生客服**方向的关键一步——在 WhatsApp 这个全球覆盖最广的 messaging 平台上实现原生语音交互，将消费者习惯与企业服务彻底打通。

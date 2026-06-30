@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.8KB | `entities/github-secret-scanning-ai-ml-false-positive-reduction.md`
 
-## GitHub Secret Scanning: AI/ML 驱动的大规模误报降低
+# GitHub Secret Scanning: AI/ML 驱动的大规模误报降低
 
 ## 核心要点
 
@@ -30,10 +30,10 @@
 | 规模 | GitHub 全平台级 | 单组织 fleet 级 |
 
 ## 相关主题
-- [bagel Fleet 级 Secret Scanning](/ch12-049-bagel-fleet-级-secret-scanning-守护开发工作站/)
-- [Claude Code Security Incident](/ch01-677-anthropic/)
+- [bagel Fleet 级 Secret Scanning](../ch12-049-bagel-fleet-级-secret-scanning-守护开发工作站)
+- [Claude Code Security Incident](../ch01-677-anthropic)
 
--> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
+-> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
 
 ---
 

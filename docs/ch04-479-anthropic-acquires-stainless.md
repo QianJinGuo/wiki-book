@@ -20,18 +20,18 @@ Stainless成立于2022年，专注于将API规范自动转换为多语言SDK（T
 **对平台架构师的启示**：AI代理的连接能力是核心瓶颈。MCP等开放协议降低了自建工具链的门槛，但企业应关注如何通过标准化协议让AI代理更高效地访问内部系统和数据，而非重复造轮子。
 **对企业和开发者的启示**：在选型AI平台时，不仅要评估模型性能，还要评估其生态工具的成熟度。SDK质量、工具链完整性和社区活跃度直接影响AI落地的效率和维护成本。
 ## 相关实体
-- [`Anthropic 12 Mcp Production Patterns` — MCP 生产模式的相关技术，Anthropic 的工具生态](/ch01-692-anthropic/)
-- [`Anthropic 14 Skill Patterns Best Practices` — Anthropic 的最佳实践](/ch01-692-anthropic/)
-- [`Openai Buys Ai Consultancy Enterprises` — OpenAI 收购相关案例，与 Anthropic 收购 Stainless 对比](/ch01-692-anthropic/)
+- `Anthropic 12 Mcp Production Patterns` — MCP 生产模式的相关技术，Anthropic 的工具生态
+- `Anthropic 14 Skill Patterns Best Practices` — Anthropic 的最佳实践
+- `Openai Buys Ai Consultancy Enterprises` — OpenAI 收购相关案例，与 Anthropic 收购 Stainless 对比
 
 ## 相关实体
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](/ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a/)
-- [Improve Bot Accuracy With Amazon Lex Assisted Nlu](/ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu/)
-- [Opensquilla](/ch04-482-opensquilla-launches-open-source-ai-agent-to-cut-token-costs/)
-- [Dictation Agents Human Workspace](/ch03-004-it-s-time-to-walk/)
-- [Google Deepmind Accelerator Asia Pacific](/ch11-202-we-re-launching-the-google-deepmind-accelerator-program-in-a/)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01-555-from-siloed-data-to-unified-insights-cross-account-athena-a)
+- [Improve Bot Accuracy With Amazon Lex Assisted Nlu](../ch01-516-improve-bot-accuracy-with-amazon-lex-assisted-nlu)
+- [Opensquilla](../ch04-482-opensquilla-launches-open-source-ai-agent-to-cut-token-costs)
+- [Dictation Agents Human Workspace](../ch03-004-it-s-time-to-walk)
+- [Google Deepmind Accelerator Asia Pacific](../ch11-202-we-re-launching-the-google-deepmind-accelerator-program-in-a)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-acquires-stainless.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-acquires-stainless.md)
 
 ---
 

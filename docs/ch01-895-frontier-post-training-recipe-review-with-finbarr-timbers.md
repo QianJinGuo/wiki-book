@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐⭐ | 3.1KB | `entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md`
 
-## Frontier post-training recipe review with Finbarr Timbers
+# Frontier post-training recipe review with Finbarr Timbers
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
 
 ## 核心要点
 
@@ -18,7 +18,7 @@
 
 ## 与现有实体的差异化
 
-- **[Olmo Hybrid](/ch01-370-olmo-hybrid-and-future-llm-architectures/)**：Olmo Hybrid 重点在 architecture（hybrid GDN + attention），本文重点在 post-training recipe 维度。
+- **[Olmo Hybrid](../ch01-370-olmo-hybrid-and-future-llm-architectures)**：Olmo Hybrid 重点在 architecture（hybrid GDN + attention），本文重点在 post-training recipe 维度。
 - **OLMO 系列**：Open-weight 模型的架构/训练，但 post-training 工程视角更稀缺，本文填补该角度。
 
 ## 实践启示
@@ -28,11 +28,11 @@
 - SFT → preference tuning 的两阶段 post-training 范式仍是主流，但 RLHF 的 reward model 训练数据质量是关键。
 - post-training 的 iteration speed 是 frontier labs 的核心能力（闭环从 data collection → training → eval）。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---
 

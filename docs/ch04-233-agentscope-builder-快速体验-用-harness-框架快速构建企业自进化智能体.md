@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 10.0KB | `entities/agentscope-builder-enterprise-self-evolving-agent-harness.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentscope-builder-enterprise-self-evolving-agent-harness.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentscope-builder-enterprise-self-evolving-agent-harness.md)
 
-## AgentScope Builder 快速体验：用 Harness 框架快速构建企业自进化智能体
+# AgentScope Builder 快速体验：用 Harness 框架快速构建企业自进化智能体
 
 ## 背景：Claw 的边界
 
@@ -99,10 +99,10 @@ fork 机制尤其关键：它解决了一个根本矛盾——「我想用你的
 
 ## 相关主题
 
-- [AgentScope Java Harness Framework 企业分布式版](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/) — 同一作者，更早的框架介绍
+- [AgentScope Java Harness Framework 企业分布式版](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har) — 同一作者，更早的框架介绍
 ## 相关实体
 
-- [enterprise readiness maturity model](/ch11-195-enterprise-readiness-maturity-model/)
+- [enterprise readiness maturity model](../ch11-195-enterprise-readiness-maturity-model)
 
 ---
 

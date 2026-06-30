@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/opencli-browser-automation-jingxing.md`
 
-## 浏览器自动化：从 GUI 到 OpenCLI — Agent 时代的可调用性竞争
+# 浏览器自动化：从 GUI 到 OpenCLI — Agent 时代的可调用性竞争
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/opencli-browser-automation-jingxing.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/opencli-browser-automation-jingxing.md)
 
 ## 摘要
 
@@ -128,20 +128,20 @@ opencli cascade https://api.example.com/hot
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
-- [构建基于多智能体架构的深度思考交易系统 V2](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- [Agent Reliability Engineering Skillify Continuous Improvement](/ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制/)
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](/ch01-677-anthropic/)
-- [Codex Goal Source Code Deep Dive](/ch09-041-codex-goal-源码深度解析-状态表-续跑条件-预算账本/)
-- [Impeccable Frontend Design Skill Harness Vibecoder](/ch05-001-impeccable/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
+- [构建基于多智能体架构的深度思考交易系统 V2](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [Agent Reliability Engineering Skillify Continuous Improvement](../ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制)
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch01-677-anthropic)
+- [Codex Goal Source Code Deep Dive](../ch09-041-codex-goal-源码深度解析-状态表-续跑条件-预算账本)
+- [Impeccable Frontend Design Skill Harness Vibecoder](../ch05-001-impeccable)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/opencli-browser-automation-jingxing.md)
-- [how developers can build agentic agreement workflows on docu](/ch04-270-how-developers-can-build-agentic-agreement-workflows-on-docu/)
-- MOC
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/opencli-browser-automation-jingxing.md)
+- [how developers can build agentic agreement workflows on docu](../ch04-270-how-developers-can-build-agentic-agreement-workflows-on-docu)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
 
 ## 核心要点
 - Affirm 在 2026 年投资者论坛上披露了覆盖支付网络、消费者产品、国际市场和 $100B 年 GMV 中期目标的完整增长战略 
@@ -12,7 +12,7 @@
 - Affirm Card 活跃用户达 440 万，人均年消费 $2,400，同比增速 130%；公司预计长期可扩展至 2000 万活跃用户 
 - AI 承销模型利用 14 年积累的 $1500 亿交易量和 23 亿笔还款数据，正在引入 transformer-based 模型，实验表现优于现有模型 
 - Affirm 预计未来数年 GMV 年增速至少 25%，2026 财年调整后营业利润率达 28% 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
 
 ## 深度分析
 **"封闭循环网络"作为竞争护城河的结构性优势**
@@ -29,10 +29,10 @@ John Marion 披露的 Affirm Bank 计划值得特别关注。Affirm 于 2026 年
 
 ## 实践启示
 **对 AI/Agent 赛道创业者的启示：** Agentic commerce 的崛起将重新定义支付在消费链路中的位置——支付将从"结账时的选择"变成"AI 代理的决策执行层"。这要求支付服务商提供 API 化的实时信用评估接口，并为 AI 代理提供标准化的支付授权协议。Affirm 在 Google Gemini 和 Shopify 生态中的早期布局值得密切跟踪。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
 
 ## 相关实体
-- [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](/ch03-084-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo/)
+- [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](../ch03-084-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/deepseek-v4.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-training-58-page-paper-deep-dive.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-training-58-page-paper-deep-dive.md)
 
 ## 摘要
 ---
@@ -31,15 +31,15 @@ DeepSeek-V4的论文试图同时完成多件事，而且这些事之间的联系
 - 评分：value=7, confidence=8, product=56
 
 ## 链接
-- [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4.md)
+- [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4.md)
 
 ## 相关实体
-- [ds4c deepseek v4 antirez](/ch01-419-ds4c-deepseek-v4-antirez/)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](/ch01-552-redis之父下场-给deepseek-v4单独造了一台推理引擎/)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- Transformer Architecture
-- [Design Patterns for AI Agents 2026](/ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl/)
+- [ds4c deepseek v4 antirez](../ch01-419-ds4c-deepseek-v4-antirez)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](../ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
+- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](../ch01-552-redis之父下场-给deepseek-v4单独造了一台推理引擎)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
+- [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
+- [Design Patterns for AI Agents 2026](../ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl)
 
 ## 深度分析
 ### 1. 架构追赶背后的工程化壁垒

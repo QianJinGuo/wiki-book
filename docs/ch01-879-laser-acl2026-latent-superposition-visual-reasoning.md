@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/laser-acl2026-latent-superposition-visual-reasoning.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/laser-acl2026-latent-superposition-visual-reasoning.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/laser-acl2026-latent-superposition-visual-reasoning.md)
 
-## Laser — 隐式视觉推理（ACL 2026）
+# Laser — 隐式视觉推理（ACL 2026）
 **来源：** 新智元（微信）
 **论文：** Forest Before Trees: Latent Superposition for Efficient Visual Reasoning
 **机构：** MBZUAI + 复旦大学 + 中国人民大学 + 哈佛大学
@@ -48,10 +48,10 @@ Laser 用"概率叠加"在隐空间实现多模态推理，Token 消耗降低 97
 4. **软监督突破**：无外部强监督（bounding box 等），通过隐式对齐 + 熵正则化实现稳定训练
 
 ## 延伸概念
-- [DeepSeek Visual Primitives](/ch09-118-deepseek-visual-primitives-视觉原语作为思考媒介/) — 视觉原语推理
-- [SensNova U1](/ch01-876-sensenova-u1-商汤原生统一多模态模型/) — 商汤多模态模型
-- [NVIDIA 多模态 RAG](/ch01-272-multimodal/) — 多模态知识系统
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/laser-acl2026-latent-superposition-visual-reasoning.md)
+- [DeepSeek Visual Primitives](../ch09-118-deepseek-visual-primitives-视觉原语作为思考媒介) — 视觉原语推理
+- [SensNova U1](../ch01-876-sensenova-u1-商汤原生统一多模态模型) — 商汤多模态模型
+- [NVIDIA 多模态 RAG](../ch01-272-multimodal) — 多模态知识系统
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/laser-acl2026-latent-superposition-visual-reasoning.md)
 
 ## 深度分析
 1. **隐式概率叠加 ≠ 压缩 token**：传统注意力机制将多语义压成单一输出，Laser 通过在隐空间维持多重概率分布来保留细粒度视觉信息。这意味着模型可以在不丢失细节的情况下完成复杂视觉推理，而非简单地将长思维链"翻译"成短文本
@@ -69,10 +69,10 @@ Laser 用"概率叠加"在隐空间实现多模态推理，Token 消耗降低 97
 updated: 2026-06-19
 
 ## 相关实体
-- Pytorch In Kernel Recsys Optimization
+- [Pytorch In Kernel Recsys Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch-in-kernel-recsys-optimization.md)
 
-- [Chroma To Qdrant 1M Vector Migration](/ch16-inference/)
-- [Unlocking Ai Flexibility In Europe A Guide To Cross Region I](/ch09-108-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region/)
+- [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md)
+- [Unlocking Ai Flexibility In Europe A Guide To Cross Region I](../ch09-108-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region)
 
 ---
 

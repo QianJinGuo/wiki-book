@@ -142,13 +142,13 @@ Pi 的 read 截断时给 offset、edit 拒绝时说明原因（oldText 不唯一
 当你在设计一个新的 Agent 能力时（比如一个新工具、一个新过滤规则、一个新上下文来源），先用外部性标准判断它该放在哪层：模型自己能学会的认知策略放提示词层；需要外部输入才能判断的信息放运行时层；需要产品化支持（多租户、计量、隔离）的能力放 control plane 层。这个判断标准比"功能大小"或"实现复杂度"更准确，能避免把本该在 runtime 的东西塞进 prompt，也避免把本该在 product 层的功能污染到 kernel。
 
 ## 相关
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pi-openclaw-coding-harness.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pi-openclaw-coding-harness.md)
 ## 相关实体
-- [Openclaw Prompt Context Harness](/ch04-239-agent-harness-a3-subagent-7-prompt/)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Harness Engineering Long Term Agent Tasks](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
-- [Agent Memory Architecture Ruofei](/ch04-111-agent-memory-架构解析/)
+- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [Harness Engineering Long Term Agent Tasks](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧)
+- [Agent Memory Architecture Ruofei](../ch04-111-agent-memory-架构解析)
 
 ---
 

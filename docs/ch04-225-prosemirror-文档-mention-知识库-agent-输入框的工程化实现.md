@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/prosemirror-knowledge-base-mention.md`
 
-## ProseMirror @文档 mention：知识库 Agent 输入框的工程化实现
+# ProseMirror @文档 mention：知识库 Agent 输入框的工程化实现
 > "对于知识库 agent 来说，@ 能力就好似厨师的调味盘 —— 允许用户在和 AI 协作时自由组织意图和上下文" —— vivo 互联网项目团队 Ding Junjie
 
 这是一份难得的**"踩坑 → 选型 → 工程化落地"完整复盘**：知识库问答场景下，如何用 ProseMirror 实现稳定可用的 @文档 mention 能力。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/prosemirror-knowledge-base-mention-vivo.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prosemirror-knowledge-base-mention-vivo.md)
 
 ## 核心命题
 **@文档 表面是"输入 @ 后选一个文档"，实则是编辑器稳定性的工程问题**。当交互从"插得进去"变成"一直稳定"，抽象层级必须从裸 `contenteditable` 提升到 ProseMirror 这类不可变文档模型。
@@ -133,15 +133,15 @@ Decoration.inline(range.from, range.to, {
 
 - **触发 → 显示 → 确认三阶段链路必须在同一事务边界内完成状态同步**：触发阶段 `findSuggestionMatch` 获取 range，弹窗显示依赖 `data-decoration-id` 与插件状态的双向绑定，确认阶段 `insertDocRef` 一次事务完成。这三个阶段的任何跨边界都会引入竞态。 
 
-- **@文档 mention 能力可以视为 Agent harness 的"上下文组合协议"**：用户通过 @ 自由组织意图和上下文，harness 需要设计好上下文节点的解释和序列化方式。建议参考 Agent Skill Writing 中的 Skill 格式设计上下文引用的渐进式披露机制。 
+- **@文档 mention 能力可以视为 Agent harness 的"上下文组合协议"**：用户通过 @ 自由组织意图和上下文，harness 需要设计好上下文节点的解释和序列化方式。建议参考 [Agent Skill Writing](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing.md) 中的 Skill 格式设计上下文引用的渐进式披露机制。 
 
-- **编辑器稳定性的治理思路可以推广到整个 Agent 系统架构**：把复杂度从"经验修补"推进到"结构化治理"，核心是把问题讲清楚、把边界拆清楚。这正是 [Agent Architecture Harness New Backend](/ch04-027-agent架构关键变化-harness正在成为新后端/) 所描述的"harness 成为新后端"趋势在输入层的具体落地。 
+- **编辑器稳定性的治理思路可以推广到整个 Agent 系统架构**：把复杂度从"经验修补"推进到"结构化治理"，核心是把问题讲清楚、把边界拆清楚。这正是 [Agent Architecture Harness New Backend](../ch04-027-agent架构关键变化-harness正在成为新后端) 所描述的"harness 成为新后端"趋势在输入层的具体落地。 
 
 ## 相关对照
-- [Impeccable](/ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析/) —— harness 之上"设计能力层"
-- vivo AI 导购在官网落地实践 —— 同作者团队
-- Agent Skill 编写指南 —— Skill 格式 + 渐进式披露
-- [Harness 成为新后端](/ch04-027-agent架构关键变化-harness正在成为新后端/)
+- [Impeccable](../ch01-262-impeccable-把-ai-前端设计变成可检查的工作流-33-4k-star-开源项目深度分析) —— harness 之上"设计能力层"
+- [vivo AI 导购在官网落地实践](https://github.com/QianJinGuo/wiki/blob/main/entities/vivo-ai-sales-guide-ecommerce-agent.md) —— 同作者团队
+- [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing.md) —— Skill 格式 + 渐进式披露
+- [Harness 成为新后端](../ch04-027-agent架构关键变化-harness正在成为新后端)
 
 ---
 

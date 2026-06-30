@@ -4,16 +4,16 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md`
 
-## How to Automate AI Model Documentation with the NVIDIA MCG Toolkit
+# How to Automate AI Model Documentation with the NVIDIA MCG Toolkit
 
 ## 相关实体
 
-- [stealing passwords via html injection under a strict csp](/ch09-114-stealing-passwords-via-html-injection-under-a-strict-csp/)
-- [reducing container cold start times using soci index on dlam](/ch01-823-reducing-container-cold-start-times-using-soci-index-on-dlam/)
-- [大模型可控新突破：steering 机制、评估体系与开源落地](/ch01-692-大模型可控新突破-steering-机制-评估体系与开源落地/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
+- [stealing passwords via html injection under a strict csp](../ch09-114-stealing-passwords-via-html-injection-under-a-strict-csp)
+- [reducing container cold start times using soci index on dlam](../ch01-823-reducing-container-cold-start-times-using-soci-index-on-dlam)
+- [大模型可控新突破：steering 机制、评估体系与开源落地](../ch01-692-大模型可控新突破-steering-机制-评估体系与开源落地)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
 How to Automate AI Model Documentation with the NVIDIA MCG Toolkit 涉及architecture领域的核心技术议题。
@@ -34,12 +34,12 @@ How to Automate AI Model Documentation with the NVIDIA MCG Toolkit 涉及archite
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](/ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04-268-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
 
 ## 实践启示
 1. **工程落地**: architecture领域方案需关注可观测性、可维护性和成本效率

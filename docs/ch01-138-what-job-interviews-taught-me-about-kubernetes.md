@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐ | 3.4KB | `entities/notnotp-k8s-interviews-non-technical.md`
 
-## What Job Interviews Taught Me About Kubernetes
+# What Job Interviews Taught Me About Kubernetes
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/notnotp-k8s-interviews-non-technical.md)
+> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/notnotp-k8s-interviews-non-technical.md)
 
 ## 核心要点
 
@@ -45,11 +45,11 @@ First one was **uniformity**. Every service deploys the same way. No one secretl
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 notnotp.com 视角
-- 引用源：[Notnotp K8S Interviews Non Technical](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/notnotp-k8s-interviews-non-technical.md)
+- 引用源：[Notnotp K8S Interviews Non Technical](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/notnotp-k8s-interviews-non-technical.md)
 ## 相关实体
-- [from doer to director: the ai mindset shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
-- [why internally-built ai fails fund accounting audits](/ch01-834-why-internally-built-ai-fails-fund-accounting-audits/)
-- [back up and restore your amazon eks cluster resources using](/ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
+- [from doer to director: the ai mindset shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift)
+- [why internally-built ai fails fund accounting audits](../ch01-834-why-internally-built-ai-fails-fund-accounting-audits)
+- [back up and restore your amazon eks cluster resources using](../ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using)
 
 ---
 

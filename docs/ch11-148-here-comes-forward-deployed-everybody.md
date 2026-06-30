@@ -52,13 +52,13 @@ Pit Crew 不需要写品牌调性指南，营销人员不需要配置 MCP 服务
 2. **Pit Crew 是真实可持续的职业路径**：作者认为这是一个有真正杠杆作用的职业方向，早期精通者将获得丰厚回报。
 3. **模型是通用的，业务语境是私有的**：理解 AI 在特定工作流、数据集和人员接触点上的具体应用，才是价值真正产生的地方。通用"AI 团队"的模式将让位于每个业务功能的专属 AI 能力建设。
 ## 相关实体
-- [from-system-of-record-to-system-of-intelligence.md-intelligence](/ch01-221-from-system-of-record-to-system-of-intelligence/)
-- [Enterprise Software Moats Agent Era](/ch04-184-enterprise-software-moats-in-the-agent-era-系统性护城河分析框架/)
-- [Salesforce Headless Software Losing Head A16Z](/ch03-055-salesforce-主动砍掉了界面-a16z-合伙人说-护城河从来不在那里/)
-- [Ibm Forward Deployed Units Ai Deployment](/ch11-051-ibm-forward-deployed-units-fdu-ai-部署模型/)
-- [from-system-of-record-to-system-of-intelligence.md-intelligence-1](/ch01-221-from-system-of-record-to-system-of-intelligence/)
+- from-system-of-record-to-system-of-intelligence.md-intelligence
+- [Enterprise Software Moats Agent Era](../ch04-184-enterprise-software-moats-in-the-agent-era-系统性护城河分析框架)
+- [Salesforce Headless Software Losing Head A16Z](../ch03-055-salesforce-主动砍掉了界面-a16z-合伙人说-护城河从来不在那里)
+- [Ibm Forward Deployed Units Ai Deployment](../ch11-051-ibm-forward-deployed-units-fdu-ai-部署模型)
+- from-system-of-record-to-system-of-intelligence.md-intelligence-1
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/here-comes-forward-deployed-everybody.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/here-comes-forward-deployed-everybody.md)
 
 ---
 

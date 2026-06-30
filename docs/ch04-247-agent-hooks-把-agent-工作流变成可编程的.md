@@ -4,22 +4,22 @@
 
 > 📊 Level ⭐⭐ | 9.6KB | `entities/agent-hooks-programmable-workflow.md`
 
-## Agent Hooks：把 Agent 工作流变成可编程的
+# Agent Hooks：把 Agent 工作流变成可编程的
 **URL:** https://mp.weixin.qq.com/s/O7oQ3Uc8PQ0Kh_WhOdYvnQ
 **GitHub:** https://github.com/dabit3/agent-hooks-in-depth/tree/main
 **标签:** #AgentHooks #工作流可编程 #生命周期 #ClaudeCode
 Hooks 将 Agent 工作流从"模型记住规则"变成"确定性自动化"——把可重复的规则从模型记忆里挪出来，搬进会在已知生命周期节点上自动运行的代码。
 
 ## 相关实体
-- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
-- [Agentscope Java Harness Framework Enterprise Distributed](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
-- [Claude Code Agent Teams Task Decomposition Ruofei](/ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据/)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
-- [Anthropic Pm Agentic Workflow](/ch01-677-anthropic/)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
+- [Anthropic Pm Agentic Workflow](../ch01-677-anthropic)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-hooks-programmable-workflow.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-hooks-programmable-workflow.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 核心论点
 Hooks 将 Agent 工作流从"模型记住规则"变成"确定性自动化"——把可重复的规则从模型记忆里挪出来，搬进会在已知生命周期节点上自动运行的代码。
 > 提示词负责"引导"，Hooks 负责"那些每次都必须发生的行为"。
@@ -94,8 +94,8 @@ event → optional matcher/filter → handler → outcome
 
 ## 关联阅读
 -  — 模式 12「确定性生命周期钩子」与本文核心完全对应，提供了更完整的 12 模式全景图
-- [`Harness Engineering: Reliable Long-Term Agent` — Harness 工程化框架的系统性阐述](/ch01-735-gaode-uplift-model-iteration-agent-long-running-harness/)
-- [`AgentMemory: Coding Agent Local Memory` — AgentMemory 在 hook 捕获链上有完整实现，可作为 Hook 系统的参考实现](/ch09-034-agentmemory/)
+- `Harness Engineering: Reliable Long-Term Agent` — Harness 工程化框架的系统性阐述
+- `AgentMemory: Coding Agent Local Memory` — AgentMemory 在 hook 捕获链上有完整实现，可作为 Hook 系统的参考实现
 
 ---
 

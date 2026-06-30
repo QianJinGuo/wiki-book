@@ -21,16 +21,16 @@
 该工具解决了大规模主版本升级中最棘手的两大难题：系统地修复数百个实例的预检查问题，以及验证升级后的应用程序行为。
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](/ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南/)
-- [How A Mid Tier Enterprise Saas Provider Automates Cloud Supp](/ch03-060-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp/)
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](/ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议/)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](/ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/)
-- [Eks Gpu Operator Custom Driver Cuda Workload](/ch11-030-在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载/)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04-285-自己的工具自己控-mcp-server-amazon-bedrock-agentcore-quick-suite集成指南)
+- [How A Mid Tier Enterprise Saas Provider Automates Cloud Supp](../ch03-060-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew)
+- [Eks Gpu Operator Custom Driver Cuda Workload](../ch11-030-在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
 
-- [Amazon Quick Mcp Kdbx Time Series](/ch04-367-adobe-marketing-agent-amazon-quick-mcp/)
-- [Transforming Rare Cancer Research With Amazon Quick Integrat](/ch11-163-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo/)
+- [Amazon Quick Mcp Kdbx Time Series](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-mcp-kdbx-time-series.md)
+- [Transforming Rare Cancer Research With Amazon Quick Integrat](https://github.com/QianJinGuo/wiki/blob/main/entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md)
 ## 深度分析
 
 **1. "Agent + MCP + Shell"三层架构的工程实践意义**
@@ -65,7 +65,7 @@
 
 5. **通过 MCP 协议将运维脚本封装为可组合工具**：这个工具的架构可以作为其他 AWS 运维自动化的参考模板。将现有的运维脚本（用 AWS CLI、bash、Python）通过 FastMCP 封装为 MCP 服务器，可以在不改变底层脚本的前提下，让任何 MCP-compatible 的 AI 工具调用这些运维能力。这比用 LLM 直接生成 bash 命令的可靠性高得多。 [^raw/articles/kiro-mcp-rds-mysql-upgrade.md:52-500]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
 
 ---
 

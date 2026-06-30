@@ -4,19 +4,19 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/tencent-cdn-lego-harness-engineering.md`
 
-## Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？
+# Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？
 当 AI Coding 的聚光灯几乎全部打在前端和客户端——生成一个页面、写一个 App......的时候，一个重要的问题却似乎被回避了：AI 能在真正"出事会炸"的后端系统里写代码吗？
 腾讯CDN LEGO项目就是这样一个系统。100万行核心代码、300万行深度改造的第三方库，服务亿级用户，承担流量调度、协议解析、安全防护、缓存加速等关键职责。它面对的不是确定性的输入输出，而是不可控的客户端、不可控的源站、多协议、多配置、公网全量攻击面——这些因素维度的叠加不是简单相加，而是乘积式的复杂度爆炸，理论组合路径高达 13,824 × N 种。在这样的复杂的系统里让 AI 写代码，一行失误就可能是一场全网事故。
 但正因为难，才值得做。  我们系统性地探索了 AI Coding 在高风险后端场景的落地路径：一方面，用 AI 零人工代码实现了一个 Rust 版 Nonstop 代理框架，以此探测 AI 编码的能力边界与行为特性；另一方面，在超大规模 C++ LEGO项目中构建了 Harness Engineering 五层架构和多模型对抗式CR，为 AI 产出的每一行代码建立从生成到上线的完整质量屏障。
 
 ## 相关实体
-- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](/ch05-052-harness-engineering-ai-能在真正-出事会炸-的后端系统里写代码吗/)
-- [Fudan Peking Ahe Agentic Harness Engineering](/ch04-220-fudan-peking-ahe-agentic-harness-engineering/)
-- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](/ch04-251-复旦-ahe-让-harness-自进化的-agentic-harness-engineering/)
-- [Harness Engineering Reliable Long Term Agent](/ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Harness Engineering Long Term Agent Tasks](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](../ch05-052-harness-engineering-ai-能在真正-出事会炸-的后端系统里写代码吗)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04-220-fudan-peking-ahe-agentic-harness-engineering)
+- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](../ch04-251-复旦-ahe-让-harness-自进化的-agentic-harness-engineering)
+- [Harness Engineering Reliable Long Term Agent](../ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [Harness Engineering Long Term Agent Tasks](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tencent-cdn-lego-harness-engineering.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tencent-cdn-lego-harness-engineering.md)
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 32.8KB | `entities/netflix-real-time-service-topology.md`
 
-## From silos to service topology: why Netflix built a real-time architecture
+# From silos to service topology: why Netflix built a real-time architecture
 
 ## 核心内容
 
@@ -14,7 +14,7 @@ feed_name: Netflix Tech Blog
 source_published: 2026-05-29T14:01:02Z
 ---
 
-## From Silos to Service Topology: Why Netflix Built a Real-Time Service Map
+# From Silos to Service Topology: Why Netflix Built a Real-Time Service Map
 
 _By_[ _Parth Jain_](https://www.linkedin.com/in/parth-jain-8a09abb6/), [_Rakesh Sukumar_](https://www.linkedin.com/in/raskuma/) _,_[_Yingwu Zhao_](https://www.linkedin.com/in/yingwu-zhao-62037418/) _,_[_Renzo Sanchez_](https://www.linkedin.com/in/renzosanchezsilva/) _ & _[_Nathan Fisher_](https://www.linkedin.com/in/nathfisher/) _
 How we built a living map of our distributed infrastructure to help engineers understand dependencies, troubleshoot faster, and keep Netflix running smoothly for our members around the world.
@@ -278,13 +278,13 @@ Service Topology 同时服务于人类工程师（UI 探索）和自动化系统
 ## 参考来源
 
 ## 相关实体
-- [Serverless Langgraph Multi Agent Aws](/ch11-234-build-a-highly-scalable-serverless-langgraph-multi-agent-sys/)
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](/ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov/)
-- [Why Internally Built Ai Fails Fund Accounting Audits](/ch01-834-why-internally-built-ai-fails-fund-accounting-audits/)
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
-- [Netflix Metadata Service Model Lifecycle Graph](/ch11-034-netflix-metadata-service-and-model-lifecycle-graph/)
+- [Serverless Langgraph Multi Agent Aws](../ch11-234-build-a-highly-scalable-serverless-langgraph-multi-agent-sys)
+- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](../ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov)
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01-834-why-internally-built-ai-fails-fund-accounting-audits)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon)
+- [Netflix Metadata Service Model Lifecycle Graph](../ch11-034-netflix-metadata-service-and-model-lifecycle-graph)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/netflix-real-time-service-topology.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/netflix-real-time-service-topology.md)
 
 ---
 

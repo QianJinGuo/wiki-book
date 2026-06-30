@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/protein-research-copilot-amazon-bedrock-agentcore.md`
 
-## Protein Research Copilot with Amazon Bedrock AgentCore
+# Protein Research Copilot with Amazon Bedrock AgentCore
 
 > **Background**：基于 AWS 官方技术博客（2026-06-23），介绍如何用 Strands Agents SDK + Amazon Bedrock AgentCore 构建一个蛋白质研究助手。核心创新在于将蛋白质语言模型（ESM-C 300M）嵌入到 Agent 工作流中，实现自然语言驱动的肽序列相似性搜索。
 
@@ -62,7 +62,7 @@ Strands Agent (Bedrock AgentCore Runtime)
 
 ## 相关主题
 
-- [Bedrock AgentCore 多租户模式](/ch03-120-bedrock-agentcore-pool-model-multi-tenancy/) — 同系列文章，聚焦 AgentCore 的多租户架构
+- [Bedrock AgentCore 多租户模式](../ch03-120-bedrock-agentcore-pool-model-multi-tenancy) — 同系列文章，聚焦 AgentCore 的多租户架构
 - Amazon Bedrock AgentCore — AWS Agent 部署平台
 - Strands Agents SDK — AWS 开源 Agent 框架
 - pgvector — PostgreSQL 向量扩展

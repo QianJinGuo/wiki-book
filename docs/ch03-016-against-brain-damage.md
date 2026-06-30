@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐ | 8.3KB | `entities/against-brain-damage.md`
 
-## Against "Brain Damage"
+# Against "Brain Damage"
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/against-brain-damage.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/against-brain-damage.md)
 
 > **Core insight**: Ethan Mollick 的"反 Brain Damage"框架：AI 本身不会破坏大脑，但不加思索地使用会损害思维能力。关键区分是 AI 作为 shortcut（替代思考）vs scaffold（推动思考）——Penn/Turkey 研究显示无指导的 ChatGPT 使考试分数下降 17%，而 World Bank/Nigeria 的教师引导 AI 辅导效果超过"一些最有效的教育干预"。核心原则：先思考、先写作、先开会。
 
@@ -69,14 +69,14 @@ AI 虽是单一智能复制，其"多样性"输出被训练数据模式限制。
 在看到 AI 摘要前先以文字记录自己的观点，建立思维锚点后再让 AI 作为推动力。
 
 ## 相关实体
-- [Choosing To Stay Human](/ch03-008-choosing-to-stay-human/)
-- [Lightfield Introducing Skills](/ch03-121-lightfield/)
-- [Claude Code Team 10 Tips Boris](/ch01-815-claude-code-team-10-tips-boris-data派thu/)
-- [Learning Path To Senior](/ch03-021-百万年薪学习计划/)
-- [The Main Path To Truly Creative Ai](/ch01-911-the-main-path-to-truly-creative-ai/)
+- [Choosing To Stay Human](../ch03-008-choosing-to-stay-human)
+- [Lightfield Introducing Skills](../ch03-121-lightfield)
+- [Claude Code Team 10 Tips Boris](../ch01-815-claude-code-team-10-tips-boris-data派thu)
+- [Learning Path To Senior](../ch03-021-百万年薪学习计划)
+- [The Main Path To Truly Creative Ai](../ch01-911-the-main-path-to-truly-creative-ai)
 
 ## 相关引用
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/against-brain-damage.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/against-brain-damage.md)
 
 ---
 

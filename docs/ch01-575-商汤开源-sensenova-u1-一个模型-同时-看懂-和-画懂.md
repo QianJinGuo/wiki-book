@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/sensnova-u1-sensetime.md`
 
-## 商汤开源 SenseNova-U1：一个模型，同时「看懂」和「画懂」
+# 商汤开源 SenseNova-U1：一个模型，同时「看懂」和「画懂」
 **来源**：量子位（转载自商汤官方）| 发自凹非寺
 **摘要**：商汤开源了一个理解生成统一模型 SenseNova-U1，底层采用 NEO-unify 架构——不需要视觉编码器（VE）和变分自编码器（VAE），模型直接吃像素吐像素。8B 参数端侧可跑，38B MoE 版提供更强能力。核心亮点是连续性图文创作：文字和图片在同一输出中自然交叠，而非拼接生成，解决了传统多模型架构角色形象走样的问题。支持信息图、海报、教程图、漫画分镜等场景，在多项开源基准上登顶。对应 OpenClaw Skill 体系，可直接调用。
 所谓连续性图文创作，就是文字和图片在一段输出里自然交叠，而不是文字归文字、图片归图片。这听起来很简单，但实际上很难——文字保留语义、图片保留像素细节，这两件事在传统架构里几乎是天敌。
@@ -35,13 +35,13 @@ NEO-unify 架构的核心创新在于**移除了视觉编码器（VE）和变分
 5. **关注 38B MoE 版本的能力跃升和配套推理成本**：38B MoE 在开源基准上的登顶意味着更强能力，但 MoE 的显存占用和推理调度复杂度也更高。在选型前需要实测 H100 单节点 vs 8B 版本的生成质量差距，判断是否值得为该差距付出额外的工程复杂度。
 
 ## 相关实体
-- [Sensnova U1](/ch01-876-sensenova-u1-商汤原生统一多模态模型/)
-- [Loongsuite Genai Semconv Alibaba](/ch04-379-loongsuite-genai/)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
-- [Genesis Ai Gene 25 Embodied Foundation Model](/ch01-624-蛰伏一年-周衔团队带来首个具身基础模型-烹饪做实验弹琴-效果炸场/)
+- [Sensnova U1](../ch01-876-sensenova-u1-商汤原生统一多模态模型)
+- [Loongsuite Genai Semconv Alibaba](https://github.com/QianJinGuo/wiki/blob/main/entities/loongsuite-genai-semconv-alibaba.md)
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning)
+- [Genesis Ai Gene 25 Embodied Foundation Model](../ch01-624-蛰伏一年-周衔团队带来首个具身基础模型-烹饪做实验弹琴-效果炸场)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sensnova-u1-sensetime.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sensnova-u1-sensetime.md)
 
 ---
 

@@ -1,0 +1,142 @@
+# Coding Agent在百度的落地实践：从反馈闭环到工程范式重构
+
+## Ch09.042 Coding Agent在百度的落地实践：从反馈闭环到工程范式重构
+
+> 📊 Level ⭐⭐ | 12.2KB | `entities/baidu-comate-coding-agent-feedback-loop-wanpeng.md`
+
+# Coding Agent在百度的落地实践：从反馈闭环到工程范式重构
+
+## 核心结论
+
+- 框架必须动态适配模型变化，不存在静态框架
+- Benchmark关注异常值而非分数——同样分数对的题可能换了另一组
+- Skill渐进式 vs MCP全部加载（上下文冲爆），优化后节省98% Token
+
+## 双层Loop架构
+
+- 内层Loop：工具+环境+模型=基本Agent闭环
+- 外层Loop：Memory/Skill/Rules/MCP/Agents=边界条件
+- Claude Code：大量边界条件if-else，Harness=帮助Agent完成脏活累活的工程设施
+
+## Feedback Loop四层数据
+
+| 层级 | 内容 | 关键信号 |
+|------|------|---------|
+| 工具层 | 调用次数/失败率/自愈比例 | Query与ToolCall比例（按模型对比Claude） |
+| 上下文层 | Skill唤起/Memory唤起 | MCP上下文冲爆问题 |
+| 执行结果 | Agent反复修改刚创建的文件 | 前面问题澄清没想清楚 |
+| 执行轨迹 | Query发出到任务完成的轨迹质量 | 仍在建设中 |
+
+## Skill vs MCP优化
+
+- Skill：渐进式发现，效果+Token消耗更优
+- MCP（全部工具传进去）：上下文冲爆，不再渐进式
+
+**优化方案**：MCP生成Skill-like描述，按需加载，节省98% Token
+
+## Benchmark方法论
+
+- 关注异常值而非分数
+- 从业务本身挖掘：Comate提交记录→人审核过的记录→Feature评测集
+- Agent跑完+Agent判定Outcomes/Execution Score（六四分），无亲和性问题
+
+## 模型适配关键洞察
+
+- DeepSeek XML→FC案例：框架在旧体系自洽，新模型下不可用
+- Spec Driven已过时（模型解析力太强）
+- GPT喜欢用命令行（Sed/Cat）→不要压制，看异常发现它真正喜欢什么
+
+## 深度分析
+
+### 双层Loop的工程本质
+
+内层Loop解决的是Agent执行闭环的基本问题：模型理解指令、调用工具、获取反馈、形成下一次行动。这是最小可行的自主循环，在任何场景下都可以工作。
+
+外层Loop解决的是边界条件下的稳定性问题。真实的开发环境充满了边界情况：特定的语言版本、特殊的系统配置、已有的代码风格约束、团队内部的约定俗成。Claude Code的源码中充斥着if-else来处理这些边界，说明这不是某个框架设计的问题，而是Agent系统在真实场景中必须面对的工程复杂度。
+
+关键洞察在于：框架不是一次性设计出来的，而是随着模型能力变化而动态调整的。百度自己的实践印证了这一点——DeepSeek早期Function Calling支持不好，他们走XML路线；后来FC成熟了，原框架反而跟不上了。这说明「框架适配模型」不是一劳永逸的工作，而是持续进行的工程活动。
+
+### Feedback Loop四层数据的递进关系
+
+四层数据构成了一个递进的观测体系，从工具使用到最终轨迹质量逐层抽象。每一层都在回答不同的问题：
+
+工具层回答「模型会不会用工具」——这个模型擅长调用哪些工具？失败率如何？自愈能力怎样？DeepSeek和Claude的ToolCall比例对比揭示了模型间的显著差异。
+
+上下文层回答「上下文是否合理」——Skill唤起是否恰当？Memory是否被正确利用？MCP的上下文冲爆问题正是在这一层被发现的。
+
+执行结果层回答「输出质量是否达标」——Agent反复修改刚创建的文件说明问题在澄清阶段就已经埋下了。这是最容易被忽视的一层，因为大多数系统只看最终输出，不看执行路径。
+
+轨迹层回答「整个过程是否高效」——目前仍在建设中，说明对过程质量的评估比对结果质量的评估难度更高。
+
+### Skill vs MCP的本质选择
+
+Skill和MCP的选择本质上是「按需加载」和「全量加载」的选择。Skill的渐进式发现机制更接近人类专家的工作方式——遇到新问题才去学习新工具，而不是一次性记住所有工具的用法。MCP的全量加载虽然简单，但在上下文长度有限的情况下必然导致冲爆。
+
+百度98% Token节省的优化路径非常有启发性：不是简单地在两者间选择，而是让MCP生成Skill-like描述，按需加载。这是一种混合策略，既保留了MCP工具生态的丰富性，又获得了Skill按需加载的效率优势。这个思路可以延伸到其他场景：对于不常使用的功能模块，是否也可以采用类似的惰性加载策略？
+
+### Benchmark方法论的反直觉之处
+
+传统的Benchmark关注分数，但百度的方法论指向了异常值。这个洞察的核心在于：分数的绝对值没有相对变化重要。同样是80分，上次做对的60道和本次做对的60道可能完全不同。这意味着：
+
+第一，Benchmark要有记忆——追踪同一道题在多次评估中的表现变化。第二，关注做错的题比关注做对的题更有信息量——异常值往往揭示了模型的真实能力边界。第三，用Agent评判Agent消除了亲和分析的主观性，但保留了评判效率。
+
+### Vibe Coding的两种形态的深层含义
+
+非开发者使用Agent解决「永远不会被纳入研发排期」的工作，本质上是绕过了组织内部的决策链条。俄乌无人机调炮兵的类想说明了一个核心问题：传统的研发流程有决策链过长的问题，而Agent没有。这意味着部分以前必须排队等待研发资源的工作，现在可以由非研发人员直接完成。
+
+开发者使用Agent从执行者变成问题提出者，意味着对人的能力要求发生了根本变化。以前工程师的核心价值在于「能否把代码写对」，现在核心价值在于「能否把问题提对」。这个转变对人才培养、招聘面试、绩效考核都有深远影响。全栈能力的定义因此发生了变化——不再是掌握多少种编程语言，而是能否独立提出和验收完整的产品需求。
+
+## 实践启示
+
+### 框架设计原则
+
+**动态适配优先于静态设计**。不要试图设计一个「完美的通用框架」，而要设计一个「易于调整的框架」。具体做法包括：保持模块边界清晰，使模型切换成本最低；记录每次模型升级带来的框架调整，作为后续优化的经验积累；避免硬编码模型特定的假设，而是通过配置驱动。
+
+**边界条件外置**。Harness的本质是把边界条件限定好的工程设施。这意味着不要期望Agent自己处理所有边界情况，而是提前把边界条件封装好，让Agent专注于核心任务。这个原则可以推广到任何复杂场景：先把简单情况跑通，再逐步扩展边界。
+
+### 数据驱动的优化闭环
+
+**建立四层数据体系**。大多数团队只关注最后一层——任务是否完成。更完整的做法是同时追踪工具层（使用率/失败率）、上下文层（Skill唤起率/Token消耗）、执行结果层（修改轮次/交付质量）、轨迹层（执行效率/路径质量）。每一层数据都对应不同的优化动作。
+
+**按模型区分分析**。不同模型的行为差异可能远大于同一模型的不同版本。GPT喜欢用命令行、Claude偏好GUI工具，这些偏好揭示了模型的内在倾向。压制这些偏好往往适得其反，不如因势利导。
+
+### Skill/MCP的工程策略
+
+**混合加载策略**。对于MCP工具生态丰富的场景，不要在「全量加载」和「完全不用」之间二选一。可以考虑：每个MCP生成Skill-like描述，按需加载；设置工具激活阈值，只有当使用频率超过阈值时才常驻；支持工具分组，按任务类型加载不同分组。
+
+**渐进式发现机制**。Skill的核心价值在于「遇到问题时才学习」，而不是「预先学习所有可能用到的技能」。这个机制可以降低冷启动成本，让Agent更灵活地适应新环境。
+
+### Benchmark构建实践
+
+**从业务数据中挖掘评测集**。百度从Comate提交记录中提取Feature构建评测集的做法值得借鉴。具体路径：每日生产代码提交 → 人审核过的记录 → 有代表性的Feature → 评测集。这个流程保证了评测集的现实性和代表性。
+
+**关注异常值而非分数**。建立异常题目的追踪机制：记录每次评估中做错的题目，分析错误模式，而不是只看总分变化。对于同一个评测集，如果一道题连续多次做对或做错，其信息量远大于平均分的波动。
+
+**用Agent评判Agent**。让一个拥有干净上下文的Agent评判另一个Agent，避免了亲和性问题。六四分的权重分配（结果60%/效率40%）平衡了交付质量和成本意识。
+
+### 任务复杂度路由
+
+**建立Query复杂度识别机制**。不同复杂度的任务应该路由到不同能力的模型。这个机制可以基于：Query中的关键词（涉及的技术栈、工具类型）、历史上下文（之前Query的复杂度分布）、执行过程中的信号（多次重试说明任务复杂度被低估）。
+
+**成本与效果的平衡**。百度数据显示DeepSeek的Token成本效益极高，但复杂任务仍需Claude级别的模型处理。合理的路由策略可以在保证效果的同时控制成本。
+
+### 工程能力建设
+
+**重视Harness这类工程设施**。Agent的核心能力不只是模型智能，还包括周边工程设施的完善程度。百度提到的Harness帮助Agent完成脏活累活，这部分工作往往被低估。从工具层面看，一个好的Harness可能比换一个更强的模型更有价值。
+
+**Skill体系建设**。Skill不只是工具的包装，更是经验的封装。把常见任务的解决路径固化为Skill，可以让Agent在遇到类似任务时复用经过验证的方案，而不是每次从零开始探索。
+
+---
+
+原文：https://mp.weixin.qq.com/s/rKnNaGJnlfhdIufpGDuHuQ
+
+## 相关实体
+- [Harness Engineering Reliable Long Term Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-reliable-long-term-agent.md)
+- [Harness Engineering Jk Launcher Baijiajie](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-jk-launcher-baijiajie.md)
+- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md)
+- [Anthropic Coding Agents Social Science Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-coding-agents-social-science-survey-2026.md)
+- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](https://github.com/QianJinGuo/wiki/blob/main/entities/柚漫剧-ai全流程提效拆解-从单点提效到工程融合.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+
+---
+

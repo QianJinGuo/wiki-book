@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/amazon-nova-forge-hyperparameter-tuning-art-science.md`
 
-## Amazon Nova Forge 域定制超参调优：艺术与科学
+# Amazon Nova Forge 域定制超参调优：艺术与科学
 
 ## 概述
 
@@ -94,7 +94,7 @@ RFT 的有效性被双向约束在基线准确率的中间区间：过低则 rew
 
 ### 5. Reward Function 质量优先于所有超参数
 
-在"Common pitfalls"章节，原文将 **reward function 质量** 置于所有超参数之前：一个差的 reward function 会导致准确率下降，无论其他超参数如何调整；而一个精细的 reward function 在相同基础设施上产生一致的性能提升。这一原则对于所有 reinforcement learning 应用都具有普遍意义——它揭示了 catastrophic forgetting 之外另一种模型能力损失路径：reward hacking，即模型找到绕过 reward 函数意图的捷径，而非真正改进目标行为。LLM-as-judge 的选择同样需要验证，确保评判模型在模型输出质量范围内具有区分度。
+在"Common pitfalls"章节，原文将 **reward function 质量** 置于所有超参数之前：一个差的 reward function 会导致准确率下降，无论其他超参数如何调整；而一个精细的 reward function 在相同基础设施上产生一致的性能提升。这一原则对于所有 reinforcement learning 应用都具有普遍意义——它揭示了 [catastrophic forgetting](https://github.com/QianJinGuo/wiki/blob/main/concepts/catastrophic-forgetting.md) 之外另一种模型能力损失路径：reward hacking，即模型找到绕过 reward 函数意图的捷径，而非真正改进目标行为。LLM-as-judge 的选择同样需要验证，确保评判模型在模型输出质量范围内具有区分度。
 
 ## 实践启示
 
@@ -108,7 +108,7 @@ LoRA 对亚优超参的宽容性使其成为 pipeline 验证的理想起点。Po
 
 ### 3. SFT 必须包含 Reasoning-Instruction-Following 类别
 
-在 SFT 的 Nova 数据混合中，包含 `reasoning-instruction-following` 类别是**必选项而非可选项**。跳过这一类别是导致 fine-tuned 模型 reasoning 性能下降的常见原因。这个类别的作用是维持模型的通用推理和指令遵循能力，防止域定制过程对通用 benchmark 性能造成不必要的侵蚀。这与 LLM pre-training vs SFT 之间的关系一致——SFT 阶段如果缺少通用能力类别的监督信号，模型会在特定任务上过拟合而丧失泛化能力。
+在 SFT 的 Nova 数据混合中，包含 `reasoning-instruction-following` 类别是**必选项而非可选项**。跳过这一类别是导致 fine-tuned 模型 reasoning 性能下降的常见原因。这个类别的作用是维持模型的通用推理和指令遵循能力，防止域定制过程对通用 benchmark 性能造成不必要的侵蚀。这与 [LLM pre-training vs SFT](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-pretraining-vs-sft.md) 之间的关系一致——SFT 阶段如果缺少通用能力类别的监督信号，模型会在特定任务上过拟合而丧失泛化能力。
 
 ### 4. 数据质量优先，混合比例以 50% 为实验起点
 
@@ -119,13 +119,13 @@ LoRA 对亚优超参的宽容性使其成为 pipeline 验证的理想起点。Po
 CPT 阶段**最多只跑一个 epoch**——重复处理有限数据会导致过拟合和通用能力损失。这一约束对于私有化领域数据尤其重要，因为大多数组织的数据量相比预训练语料都极为有限。Validation loss 是核心监控指标：如果 training loss 下降而 validation loss 上升，说明已经进入过拟合状态，应该立即停止训练。对于 Checkpoint 选择，当数据规模较小时，post-trained checkpoint 的稳定性优势往往超过 pre-trained checkpoint 的灵活性收益。
 
 ## 相关实体
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](/ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov/)
-- [Amazon Nova Lite Fine Tuning Cost Effective Vision Detection Model Tuning Case And Practice](/ch11-054-amazon-nova-lite-fine-tuning-高性价比的视觉检测模型微调案例与实践-亚马逊aws官方博/)
-- [Evaluate Amazon Nova Sonic Voice Agent Scale No Mic](/ch11-033-evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-mic/)
-- [Amazon Nova Manufacturing Intelligence](/ch04-263-build-ai-agents-for-business-intelligence-with-amazon-bedroc/)
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](/ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon/)
+- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](../ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov)
+- [Amazon Nova Lite Fine Tuning Cost Effective Vision Detection Model Tuning Case And Practice](../ch11-054-amazon-nova-lite-fine-tuning-高性价比的视觉检测模型微调案例与实践-亚马逊aws官方博)
+- [Evaluate Amazon Nova Sonic Voice Agent Scale No Mic](../ch11-033-evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-mic)
+- [Amazon Nova Manufacturing Intelligence](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04-048-real-time-voice-agents-with-stream-vision-agents-and-amazon)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md)
 
 ---
 

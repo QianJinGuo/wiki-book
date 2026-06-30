@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/aws-quicksight-dataset-qa-tara-case.md`
 
-## Beyond BI: How the Dataset Q&A feature of Amazon Quick powers the next generation of data decisions
+# Beyond BI: How the Dataset Q&A feature of Amazon Quick powers the next generation of data decisions
 Business leaders across industries rely on operational dashboards as the shared source of truth that their teams execute against daily. But dashboards are built to answer known questions. When teams need to explore further, ad-hoc, multi-dimensional, or unforeseen questions, they hit a bottleneck. They wait hours or days for BI teams to build new views or update reports. The Dataset Q&A feature bridges that gap. You can ask questions in natural language, get accurate answers in seconds, with no new dashboards to build, and no queue to wait in. Just an interactive conversation with your existing datasets, without disrupting the dashboards your teams already depend on.
 AWS customers expect fast, informed support when they’re evaluating new technologies, troubleshooting production issues, or planning cloud transformations. To deliver that experience at scale, AWS technical field teams need immediate answers to complex operational questions: Where is customer demand increasing? Which teams have the right expertise to respond? Are customer engagements being resolved quickly enough? And where are emerging gaps that could impact customer outcomes?
 The AWS Technical Field Communities (TFC) program supports hundreds of thousands of these customer engagements annually across dozens of specialized technology domains. For program leaders and field teams, understanding the pulse of these engagements isn’t just about tracking metrics; it’s about making sure that we have the right skills in the right places at the right time to help our customers succeed. Yet, as the scale of these engagements grew, so did the complexity of the questions our leaders needed to answer. Traditional, static dashboards began to struggle under the weight of sophisticated, multi-dimensional inquiries. Stakeholders found themselves navigating a maze of different systems, manually cross-referencing datasets just to get a clear picture of how to better serve the customer. Getting to the “why” behind the data isn’t always a hard technical problem, it’s a workflow problem. A leader’s question becomes an interruption for a BI engineer, who pauses planned work, runs the aggregation, and returns an answer that inevitably spawns the next question. The real time lost isn’t in the query. It’s in the handoff between the person with the question and the person with the tools to answer it. Leaders were asking complex, real-time questions that crossed organizational and technical boundaries.
@@ -60,14 +60,14 @@ TARA 的本质突破在于**移除语义中间层**。传统 Topics 模式需要
 6. **程序负责人现在可以在几分钟内回答战略问题**——替代以往需要导航多个仪表板、重新应用过滤器、人工拼接数据的耗时流程
 
 ## 相关实体
-- [Aws Quicksight Dataset Qa Natural Language](/ch11-160-aws-quicksight-dataset-qa-natural-language/)
-- [Mathematical Optimization Aws Innovation Center Enterprise](/ch11-060-mathematical-optimization-at-enterprise-scale-aws-innovatio/)
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](/ch04-470-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni/)
-- [Cisa Admin Leaked Aws Govcloud Keys On Github](/ch11-119-cisa-admin-leaked-aws-govcloud-keys-on-github/)
-- [Aws Agent Orchestration Workshop](/ch04-409-agent-orchestration/)
-- MOC
+- [Aws Quicksight Dataset Qa Natural Language](../ch11-160-aws-quicksight-dataset-qa-natural-language)
+- [Mathematical Optimization Aws Innovation Center Enterprise](../ch11-060-mathematical-optimization-at-enterprise-scale-aws-innovatio)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
+- [Cisa Admin Leaked Aws Govcloud Keys On Github](../ch11-119-cisa-admin-leaked-aws-govcloud-keys-on-github)
+- [Aws Agent Orchestration Workshop](../ch04-409-agent-orchestration)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-quicksight-dataset-qa-tara-case.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-quicksight-dataset-qa-tara-case.md)
 
 ---
 

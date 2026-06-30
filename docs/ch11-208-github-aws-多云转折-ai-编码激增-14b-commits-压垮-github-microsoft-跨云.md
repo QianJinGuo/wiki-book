@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/microsoft-github-aws-ai-capacity-crunch-2026-06.md`
 
-## GitHub + AWS 多云转折：AI 编码激增 14B commits 压垮 GitHub，Microsoft 跨云买 AWS 容量
+# GitHub + AWS 多云转折：AI 编码激增 14B commits 压垮 GitHub，Microsoft 跨云买 AWS 容量
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-github-aws-ai-capacity-crunch.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-github-aws-ai-capacity-crunch.md)
 
 ## 概述
 
@@ -42,7 +42,7 @@
 
 ## 相关主题
 
-- Multi-Agent AI Safety Research Funding Call — 同为 2026-06 agentic AI 相关的产业级响应
+- [Multi-Agent AI Safety Research Funding Call](https://github.com/QianJinGuo/wiki/blob/main/entities/investing-in-multi-agent-ai-safety-research-deepmind-2026-06.md) — 同为 2026-06 agentic AI 相关的产业级响应
 - AI Coding Agent 行业（概念待创建）
 
 ## 一句话定位

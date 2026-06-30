@@ -164,21 +164,21 @@ Claude Code 的 7 层记忆架构本质上是一个**成本递增、能力递增
 3. **状态隔离是安全的基础**：分支代理模式中，克隆 LRU 缓存和 AbortController 是必须的。这提示我们，在构建多 Agent 系统时，必须为每个代理提供独立的执行状态副本，防止状态污染导致的不确定性行为。
 
 ## 相关实体
-- [Claude Code 架构解析](/ch01-571-claude-code-架构解析/)
-- [Claude Code 源码核心机制详解](/ch01-162-claude-code-源码核心机制详解/)
-- [基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](/ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层/)
+- [Claude Code 架构解析](../ch01-571-claude-code-架构解析)
+- [Claude Code 源码核心机制详解](../ch01-162-claude-code-源码核心机制详解)
+- [基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch01-240-claude-code-源码拆解-从启动到多-agent-扩展层)
 
-- [From Agent Protocol to Harness Skill](/ch04-351-from-agent-protocol-to-harness-skill/)
-- [Agent Memory 架构解析](/ch04-111-agent-memory-架构解析/)
-- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
+- [From Agent Protocol to Harness Skill](../ch04-351-from-agent-protocol-to-harness-skill)
+- [Agent Memory 架构解析](../ch04-111-agent-memory-架构解析)
+- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-7-layer-memory-architecture.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-7-layer-memory-architecture.md)
 
-- [harness-engineering-systematic-explainer](/ch05-036-harness-engineering-systematic-explainer/)
-- [claude code 多智能体协作体系设计：从单agent到多agent工作流](/ch01-856-claude-code-多智能体协作体系设计-从单agent到多agent工作流/)
-- MOC
+- [harness-engineering-systematic-explainer](../ch05-036-harness-engineering-systematic-explainer)
+- [claude code 多智能体协作体系设计：从单agent到多agent工作流](../ch01-856-claude-code-多智能体协作体系设计-从单agent到多agent工作流)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---
 

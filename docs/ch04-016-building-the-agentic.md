@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐ | 5.0KB | `entities/building-the-agentic-future-developer-highlights-from-io-2026.md`
 
-## Building the agentic future: Developer highlights from I/O 2026
+# Building the agentic future: Developer highlights from I/O 2026
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
+> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
 
 ## 核心要点
 
@@ -68,13 +68,13 @@ Google AI Studio 新增移动端应用和原生 Android 支持，标志着"vibe 
 3. **隔离持久化环境的技术实现**：Managed Agents 的 Linux 隔离环境设计是安全 Agent 执行的有趣参考
 
 ## 相关实体
-- [Google Io 2026 Agentic Gemini Era](/ch01-859-i-o-2026-welcome-to-the-agentic-gemini-era/)
-- [Building Is Just The Beginning Introducing Discove](/ch12-076-building-is-just-the-beginning-introducing-discoverability/)
-- [The Agentic Trust Management Platform Drata](/ch04-017-the-agentic-trust-management-platform-drata/)
-- [Nvidia Agentic Systems Extreme Co Design](/ch04-514-building-for-the-rising-complexity-of-agentic-systems-with-e/)
-- [Google Debuts Gemini Focused Updates At Io 2026](/ch01-073-google-debuts-gemini-focused-updates-at-i-o-2026/)
+- [Google Io 2026 Agentic Gemini Era](../ch01-859-i-o-2026-welcome-to-the-agentic-gemini-era)
+- [Building Is Just The Beginning Introducing Discove](../ch12-076-building-is-just-the-beginning-introducing-discoverability)
+- [The Agentic Trust Management Platform Drata](../ch04-017-the-agentic-trust-management-platform-drata)
+- [Nvidia Agentic Systems Extreme Co Design](../ch04-514-building-for-the-rising-complexity-of-agentic-systems-with-e)
+- [Google Debuts Gemini Focused Updates At Io 2026](../ch01-073-google-debuts-gemini-focused-updates-at-i-o-2026)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
 
 ---
 

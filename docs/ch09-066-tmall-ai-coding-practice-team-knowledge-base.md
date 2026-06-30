@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/tmall-ai-coding-practice-team-knowledge-base.md`
 
-## 天猫新品团队 AI 编码实战指南 — 团队知识库与 Workflow 沉淀
+# 天猫新品团队 AI 编码实战指南 — 团队知识库与 Workflow 沉淀
 ## 核心定位
 阿里巴巴天猫新品团队的 AI 辅助编码实践经验，重点在于**团队知识库的 npm 包分发模式**和**类 Skill 封装**，以及不同严苛程度场景的分层策略。  
 
@@ -68,7 +68,7 @@ AI 生码
 4. **二八定律**：把精力放在影响 80% 场景的 20% 高频流程上  
 
 ## 相关概念
-- [Factory Mission](/ch01-864-factory-mission-multi-agent-architecture/) — Mission 的 Workflow 沉淀与本篇"工作流沉淀"思路相通
+- [Factory Mission](../ch01-864-factory-mission-multi-agent-architecture) — Mission 的 Workflow 沉淀与本篇"工作流沉淀"思路相通
 ---  
 *Last updated: 2026-05-08*  
 *评审：Value 7 × Confidence 7 = 49 | ★★★ | 边界 PASS（知识库 npm 包模式有复用价值）*  
@@ -106,12 +106,12 @@ AI 生码
 在资源配置时，始终问自己：这个投入是服务于高频场景还是低频场景？如果是低频场景，投入过多资源维护细节可能是浪费。优先保障高频场景的知识库质量和 MCP 工具的准确性，这些投入的回报率最高。  
 
 ## 相关实体
-- [腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](/ch05-053-腾讯-ai-team-知识沉淀体系-harness-engineering-实践/)
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](/ch04-038-openclaw-multi-agent-team-practice-v2/)
+- [腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](../ch05-053-腾讯-ai-team-知识沉淀体系-harness-engineering-实践)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04-038-openclaw-multi-agent-team-practice-v2)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tmall-ai-coding-practice-team-knowledge-base-npm.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tmall-ai-coding-practice-team-knowledge-base-npm.md)
 
-- [OpenClaw 多智能体团队搭建实战经验](/ch04-038-openclaw-multi-agent-team-practice-v2/)
+- [OpenClaw 多智能体团队搭建实战经验](../ch04-038-openclaw-multi-agent-team-practice-v2)
 
 ---
 

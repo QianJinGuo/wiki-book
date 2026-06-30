@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/ai-poc-why-fail-to-production.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-poc-why-fail-to-production.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-poc-why-fail-to-production.md)
 
 ## 摘要
 ---
@@ -28,14 +28,14 @@ AI 项目最常见的误判，是把 Demo 跑通，当成落地已经开始。
 - 评分：value=7, confidence=7, product=49
 
 ## 链接
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-poc-why-fail-to-production.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-poc-why-fail-to-production.md)
 
 ## 相关实体
-- [Inngest - AI in Production: The 2026 Benchmark Report](/ch01-150-inngest-ai-in-production-the-2026-benchmark-report/)
-- [AI Gateway production index](/ch01-066-ai-gateway-production-index/)
-- [AI Gateway production index](/ch01-075-ai-gateway-production-index/)
+- [Inngest - AI in Production: The 2026 Benchmark Report](../ch01-150-inngest-ai-in-production-the-2026-benchmark-report)
+- [AI Gateway production index](../ch01-066-ai-gateway-production-index)
+- AI Gateway production index
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 深度分析
 AI 项目从 PoC 到生产的转化率低，本质上是一个系统工程能力的缺失，而非单一技术问题。通过对原文的拆解，可以提炼出四个核心维度的结构性矛盾。
 

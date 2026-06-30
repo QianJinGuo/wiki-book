@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/agentcore-managed-harness.md`
 
-## Harness工程火遍硅谷，AgentCore今天交卷!
+# Harness工程火遍硅谷，AgentCore今天交卷!
 
 **Harness = 模型之外的一切**：编排逻辑、执行环境、工具连接、状态管理、身份认证、可观测性。
 
@@ -14,15 +14,15 @@
 3. **Harness Engineering** — 怎么让 Agent 真正跑起来（2026 年新风潮）
 
 ## 相关实体
-- [Openclaw Prompt Context Harness](/ch04-239-agent-harness-a3-subagent-7-prompt/)
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
-- [Agent Harness 12 Components 7 Decisions](/ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架/)
-- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
-- [Agentcore Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/)
+- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
+- [Harness Engineering Framework](../ch05-041-harness-engineering-概念框架)
+- [Agent Harness 12 Components 7 Decisions](../ch04-061-一篇看懂-agent-harness-的结构-12组件-7决策完整框架)
+- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
+- [Agentcore Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentcore-managed-harness.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcore-managed-harness.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析
 
 1. **Harness 工程是 2026 年 AI Agent 领域的重心转移**

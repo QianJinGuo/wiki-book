@@ -4,19 +4,19 @@
 
 > 📊 Level ⭐ | 6.9KB | `entities/10x-is-a-lot.md`
 
-## 10x Is a Lot — Quarter Mile
+# 10x Is a Lot — Quarter Mile
 ## [Home](https://www.quarter--mile.com/) • [Subscribe](https://www.quarter--mile.com/subscribe) • [Contact](https://www.quarter--mile.com/contact) • [Writing Club](http://writingclub.world/) • [Questions](https://www.quarter--mile.com/Questions)
 You have probably heard people say things like "this product makes you 10x more effective."
 Here are a few examples of what things would look like if they were 10x faster/better/bigger:
 
 ## 相关实体
-- [Skill Development Guide Aliyun 2026](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
-- [Manus.Im Manus Schedules](/ch03-036-introducing-scheduled-tasks-2-0/)
-- [Openclaw Multi Agent Team Practice](/ch04-038-openclaw-multi-agent-team-practice-v2/)
-- [Strands Agents Cloud Cost Optimizer](/ch04-128-基于-strands-agents-构建亚马逊云科技云成本分析与优化-ai-助手/)
-- [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](/ch03-025-别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个/)
+- [Skill Development Guide Aliyun 2026](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布)
+- [Manus.Im Manus Schedules](../ch03-036-introducing-scheduled-tasks-2-0)
+- [Openclaw Multi Agent Team Practice](../ch04-038-openclaw-multi-agent-team-practice-v2)
+- [Strands Agents Cloud Cost Optimizer](../ch04-128-基于-strands-agents-构建亚马逊云科技云成本分析与优化-ai-助手)
+- [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](../ch03-025-别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/10x-is-a-lot.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/10x-is-a-lot.md)
 
 ## 10x 类比图谱：16 个具体场景
 
@@ -90,7 +90,7 @@ Here are a few examples of what things would look like if they were 10x faster/b
 5. **对外沟通时，用具体类比替代抽象倍数表述**
    自己在做产品或技术推广时，避免仅声称"10x 改进"，而是用具体类比说明："相当于把原来 4 小时的任务缩短到 24 分钟"——受众立刻产生量级感知，而非被数字本身迷惑。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/10x-is-a-lot.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/10x-is-a-lot.md)
 
 ## 相关实体
 - `AI辅助开发` — AI作为陌生领域的知识倍增器

@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/gemini-embedding-2-multimodal-unified-vector-hyman.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemini-embedding-2-multimodal-unified-vector-hyman.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemini-embedding-2-multimodal-unified-vector-hyman.md)
 
-## Gemini Embedding 2：全模态统一向量空间
+# Gemini Embedding 2：全模态统一向量空间
 
 ## 一句话
 
@@ -56,19 +56,19 @@ Google DeepMind 论文（arXiv 2605.27295）：一个原生多模态 embedding �
 
 ## 关联阅读
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemini-embedding-2-multimodal-unified-vector-hyman.md) — Hyman的杂货铺原文
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemini-embedding-2-multimodal-unified-vector-hyman.md) — Hyman的杂货铺原文
 
 ## 一句话
 
 多模态 embedding 已从「可以做」转向「值得拿来重构系统」——用一个统一向量空间把原本四分五裂的前处理链路往回收。
 
 ## 相关实体
-- [Gemini Ai](/ch01-042-gemini-ai-google/)
-- [Google Debuts Gemini Focused Updates At Io 2026](/ch01-073-google-debuts-gemini-focused-updates-at-i-o-2026/)
-- [Google Io 2026 Agentic Gemini Era](/ch01-859-i-o-2026-welcome-to-the-agentic-gemini-era/)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](/ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90/)
-- [Gemini 3 5 Frontier Intelligence](/ch01-061-gemini-3-5-frontier-intelligence-with-action/)
-- MOC
+- [Gemini Ai](../ch01-042-gemini-ai-google)
+- [Google Debuts Gemini Focused Updates At Io 2026](../ch01-073-google-debuts-gemini-focused-updates-at-i-o-2026)
+- [Google Io 2026 Agentic Gemini Era](../ch01-859-i-o-2026-welcome-to-the-agentic-gemini-era)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90)
+- [Gemini 3 5 Frontier Intelligence](../ch01-061-gemini-3-5-frontier-intelligence-with-action)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---
 

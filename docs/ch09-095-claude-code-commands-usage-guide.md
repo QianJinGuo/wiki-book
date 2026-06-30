@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/claude-code-commands-usage-guide.md`
 
-## claude-code-commands-usage-guide
+# claude-code-commands-usage-guide
 
 - `clear`：彻底清空，重新开始（不适合日常整理，适合"重开一局"）
 - `compact`：压缩上下文，保留主线清理包袱（比 clear 更该高频使用）
@@ -13,13 +13,13 @@
 - `rewind`：回退到之前的节点，精细化回退而非全盘重开）
 
 ## 相关实体
-- [Claude Code Openclaw Usage Ettin](/ch09-028-claude-code-openclaw-usage-ettin/)
-- [Obsidian Claude Code Integration Guide](/ch09-097-obsidian-claude-code-integration-guide/)
-- [Claude Code Self Repair Hooks Memory Config](/ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
+- [Claude Code Openclaw Usage Ettin](../ch09-028-claude-code-openclaw-usage-ettin)
+- [Obsidian Claude Code Integration Guide](../ch09-097-obsidian-claude-code-integration-guide)
+- [Claude Code Self Repair Hooks Memory Config](../ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-commands-usage-guide.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-commands-usage-guide.md)
 
 ## 深度分析
 
@@ -55,7 +55,7 @@
 
 5. **`skills` 沉淀而非每次重写**：当一个任务执行超过3次时，应该用 `skills` 把它沉淀成可复用命令，而不是每次重新描述流程 。对于团队来说，把高频流程沉淀到 shared skills 中，可以让整个团队的 Claude Code 使用效率收敛到较高水平，而不需要每个人都从零开始积累。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-commands-usage-guide.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-commands-usage-guide.md)
 
 ---
 

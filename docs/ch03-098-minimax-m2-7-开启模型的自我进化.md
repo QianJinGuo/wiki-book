@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/minimax-m2-7-self-evolution.md`
 
-## MiniMax M2.7：开启模型的自我进化
+# MiniMax M2.7：开启模型的自我进化
 M2.7是MiniMax第一个模型深度参与迭代自己的版本。模型能够自行构建复杂Agent Harness，并基于Agent Teams、复杂Skills、Tool Search tool等能力，完成高度复杂的生产力任务，同时驱动模型自身的强化学习训练迭代。
 Agent Harness覆盖：数据流水线、训练环境、评测基础设施、跨团队协作、持久化记忆。研究员在每一层引导方向，模型在每一层负责构建。
 **RL场景示例**：Agent自动完成文献调研→实验规格跟踪→数据流水线对接→启动实验→监控分析→日志读取→问题排查→指标分析→代码修复→MR提交→冒烟测试。
 > M2.7能够胜任30-50%的工作流。
 
 ## 相关实体
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [Harness Engineering 第三代工程范式](/ch01-602-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
-- [Agentscope Java Harness Framework Enterprise Distributed](/ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har/)
-- [Cursor Harness Model Production Floor](/ch01-235-cursor-harness-model-production-floor/)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [Harness Engineering 第三代工程范式](../ch01-602-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch03-048-agentscope-java-harness-framework-2-0-企业级-agent-分布式场景的-har)
+- [Cursor Harness Model Production Floor](../ch01-235-cursor-harness-model-production-floor)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/minimax-m2-7-self-evolution.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/minimax-m2-7-self-evolution.md)
 
 ## 深度分析
 

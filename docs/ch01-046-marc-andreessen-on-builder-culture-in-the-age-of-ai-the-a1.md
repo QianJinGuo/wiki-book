@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐ | 7.8KB | `entities/marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a16z-show.md`
 
-## Marc Andreessen on Builder Culture in the Age of AI
+# Marc Andreessen on Builder Culture in the Age of AI
 
-> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a16z-show.md)
+> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a16z-show.md)
 
 ## Summary
 
@@ -75,10 +75,10 @@ Andreessen's perspective, while compelling, has notable blind spots:
 
 ## Related Entities
 
-- [Granola — The AI Notepad for back-to-back meetings](/ch03-046-granola-the-ai-notepad-for-back-to-back-meetings/)
-- [How Superset built the IDE for AI agents on Vercel](/ch01-058-how-superset-built-the-ide-for-ai-agents-on-vercel/)
-- [Toto 2.0: Time series forecasting enters the scaling era](/ch01-027-toto-2-0-time-series-forecasting-enters-the-scaling-era/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
+- [Granola — The AI Notepad for back-to-back meetings](../ch03-046-granola-the-ai-notepad-for-back-to-back-meetings)
+- [How Superset built the IDE for AI agents on Vercel](../ch01-058-how-superset-built-the-ide-for-ai-agents-on-vercel)
+- [Toto 2.0: Time series forecasting enters the scaling era](../ch01-027-toto-2-0-time-series-forecasting-enters-the-scaling-era)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
 
 ---
 

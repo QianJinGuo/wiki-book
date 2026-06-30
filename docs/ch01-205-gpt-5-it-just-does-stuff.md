@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 17.5KB | `entities/gpt-5-it-just-does-stuff.md`
 
-## GPT-5: It Just Does Stuff
+# GPT-5: It Just Does Stuff
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-5-it-just-does-stuff.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-5-it-just-does-stuff.md)
 
 > 来源：One Useful Thing (Ethan Mollick)，2025-08-07。这是一篇 GPT-5 早期上手评测，但比普通测评走得更远 — Mollick 把 GPT-5 的核心变化总结成一句话：**「GPT-5 just does stuff, often extraordinary stuff, sometimes weird stuff, sometimes very AI stuff, on its own」**。这背后真正发生的不是「模型更聪明」，而是模型选择机制、proactive 程度、agentic 长链路执行三项同时跃迁 — 改变了人和 AI 协作时的负担结构。
 
@@ -142,19 +142,19 @@ Mollick 结尾那句 Premonition 特别值得抄下来：**「我们会搞清楚
 
 ## 相关实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
-- [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](/ch01-546-chatgpt默认模型大升级-gpt-5-5-instant正式上线-新增记忆来源功能/)
-- [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](/ch01-438-cvpr-2026-highlight-让ai像电影人一样-看-视频-8b小模型反超gpt-5与gemini-3-1-p/)
-- [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](/ch01-016-cvpr-2026-highlight-让ai像电影人一样-看-视频-8b小模型反超gpt-5与gemini-3-1-p/)
-- [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](/ch01-115-a-recent-experience-with-chatgpt-5-5-pro-gowers-s-weblog/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- MOC
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](../ch01-546-chatgpt默认模型大升级-gpt-5-5-instant正式上线-新增记忆来源功能)
+- [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](../ch01-438-cvpr-2026-highlight-让ai像电影人一样-看-视频-8b小模型反超gpt-5与gemini-3-1-p)
+- [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](../ch01-016-cvpr-2026-highlight-让ai像电影人一样-看-视频-8b小模型反超gpt-5与gemini-3-1-p)
+- [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](../ch01-115-a-recent-experience-with-chatgpt-5-5-pro-gowers-s-weblog)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---
 

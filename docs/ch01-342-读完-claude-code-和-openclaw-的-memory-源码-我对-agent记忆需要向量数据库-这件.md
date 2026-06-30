@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md`
 
-## 读完 Claude Code 和 OpenClaw 的 memory 源码，我对"Agent记忆需要向量数据库"这件事产生了怀疑……
+# 读完 Claude Code 和 OpenClaw 的 memory 源码，我对"Agent记忆需要向量数据库"这件事产生了怀疑……
 这两天在研究 agent 的记忆系统，读完 Claude Code 和 OpenClaw 的记忆系统源码，我发现一个有意思的分歧：同样是"让 Agent 记住东西"，一个选择信 LLM 的理解力，另一个选择老老实实建向量索引。
 这俩都是当下最有代表性的 Agent 框架。Claude Code 是 Anthropic 官方的开发者 CLI，按需启动，面向团队协作，OpenClaw 是 local-first 的个人 Agent 运行时，7×24 小时在线，能接 WhatsApp、Slack、Discord，定位不同，但"记忆"这件事两边都得解决，解法却截然不同。
 先说 Claude Code，它的记忆是我见过最卷的分层设计，6 层 markdown 文件，每层有独立的读写权限和生命周期：
@@ -12,13 +12,13 @@
 * • **Managed** ： ` /etc/claude-code/CLAUDE.md ` ，系统管理员写的全局策略，所有用户都得遵守，企业场景下用来统一规范
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
-- [Claude Code Openclaw Memory Vector Db Doubt](/ch01-681-claude-code-memory-setup-obsidian-graphify/)
-- [Claude Code Openclaw Memory Comparison](/ch01-681-claude-code-memory-setup-obsidian-graphify/)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-677-anthropic/)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
+- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding)
+- [Claude Code Openclaw Memory Vector Db Doubt](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-vector-db-doubt.md)
+- [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-677-anthropic)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
 
 ## 深度分析
 

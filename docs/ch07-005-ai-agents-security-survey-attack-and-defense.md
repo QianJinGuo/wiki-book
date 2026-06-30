@@ -245,20 +245,20 @@ Bishop Fox 的 AIMap 提供了互联网规模的 AI Agent 安全测试能力：
 
 ## 八、相关概念
 
-- Agent Security Threat Models — 威胁模型与攻击模式
-- Agent Security Architecture — 安全架构与认证授权
-- Agent Security Full Lifecycle System — 全生命周期安全体系
-- AI Agent 安全威胁向量与缓解策略 — 威胁向量与缓解策略导航
+- [Agent Security Threat Models](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md) — 威胁模型与攻击模式
+- [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) — 安全架构与认证授权
+- [Agent Security Full Lifecycle System](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-full-lifecycle-system.md) — 全生命周期安全体系
+- [AI Agent 安全威胁向量与缓解策略](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-security-threat-vectors-mitigation.md) — 威胁向量与缓解策略导航
 
 ---
 
 ## 九、相关实体
 
-- [清华大学方寸跃迁团队](/ch04-402-细思极恐-agent暗藏风险-清华团队打出组合拳-全链路一网打尽/) — 全链路安全体系
-- [VentureBeat 工具投毒报告](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/) — behavioral integrity vs artifact integrity
-- [Bishop Fox AIMap](/ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f/) — AI Agent 安全测试框架
-- [AWS + Cisco AI Defense](/ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级/) — 企业级 Agent 安全生态
-- [Amazon Bedrock AgentCore Identity Security](/ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构/) — AWS Bedrock 身份安全
+- [清华大学方寸跃迁团队](../ch04-402-细思极恐-agent暗藏风险-清华团队打出组合拳-全链路一网打尽) — 全链路安全体系
+- [VentureBeat 工具投毒报告](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s) — behavioral integrity vs artifact integrity
+- [Bishop Fox AIMap](../ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f) — AI Agent 安全测试框架
+- [AWS + Cisco AI Defense](../ch07-027-securing-ai-agents-aws-cisco-ai-defense-给-mcp-a2a-加上企业级) — 企业级 Agent 安全生态
+- [Amazon Bedrock AgentCore Identity Security](../ch04-171-agentcore-identity-3-legged-oauth-session-binding的安全架构) — AWS Bedrock 身份安全
 
 ---
 
@@ -297,7 +297,7 @@ Bishop Fox 的 AIMap 提供了互联网规模的 AI Agent 安全测试能力：
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 ---
 

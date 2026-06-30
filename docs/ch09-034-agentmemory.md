@@ -95,13 +95,13 @@ combinedScore = bm25Weight*(1/(RRF_K+bm25Rank)) + vectorWeight*(1/(RRF_K+vectorR
 - 分析文章：AI贺贺（2026-05-19）
 
 ## Related
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend)
 
-- [Claude Code 源码核心机制详解](/ch01-162-claude-code-源码核心机制详解/)
+- [Claude Code 源码核心机制详解](../ch01-162-claude-code-源码核心机制详解)
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

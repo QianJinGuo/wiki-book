@@ -20,9 +20,9 @@
 
 | 层次 | 对应路线 | 核心能力 | 代表系统 |
 |------|---------|---------|---------|
-| **理解层**（上下文） | 个人上下文 | 用户意图理解、上下文记忆、偏好推断 | Agent Harness 工作集管理 |
-| **学习层**（进化） | 自我进化 | 经验沉淀、Skills 版本化、可审计的回滚 | [Small Hermes 自我进化架构](/ch04-109-small-hermes-自我进化-agent-架构/) |
-| **行动层**（执行力） | 执行力 | 工具调用、任务分解、可靠执行 | Agent 编排模式 |
+| **理解层**（上下文） | 个人上下文 | 用户意图理解、上下文记忆、偏好推断 | [Agent Harness 工作集管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) |
+| **学习层**（进化） | 自我进化 | 经验沉淀、Skills 版本化、可审计的回滚 | [Small Hermes 自我进化架构](../ch04-109-small-hermes-自我进化-agent-架构) |
+| **行动层**（执行力） | 执行力 | 工具调用、任务分解、可靠执行 | [Agent 编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) |
 
 ## 短期分化原因
 
@@ -55,7 +55,7 @@ Agent能力越强，治理越重要。成熟Agent的关键词不是"完全自主
 6. **Skill版本管理** — 技能迭代有版本号、可对比、可回滚
 7. **数据访问控制** — 敏感数据的访问级别和范围精确管控
 
-参考：[Agent Harness Engineering Survey](/ch04-069-agent-harness-engineering-a-survey/) 中的 ETCLOVG 治理维度。
+参考：[Agent Harness Engineering Survey](../ch04-069-agent-harness-engineering-a-survey) 中的 ETCLOVG 治理维度。
 
 ## 模型非唯一壁垒
 
@@ -74,7 +74,7 @@ Agent能力越强，治理越重要。成熟Agent的关键词不是"完全自主
 
 Agent不是消灭软件，而是让软件之间协作更自然。
 
-用户以"我要完成什么目标"为起点，Agent协调跨软件数据流转。多Agent编排是将这一协调能力工程化落地的核心手段。
+用户以"我要完成什么目标"为起点，Agent协调跨软件数据流转。[多Agent编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)是将这一协调能力工程化落地的核心手段。
 
 三层协调：
 - **工具层** — Agent调用各软件的API和工具能力
@@ -89,7 +89,7 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 
 ## 与17种架构演进的关系
 
-[17种Agent架构](/ch04-507-17种agent架构演进-控制流设计的完整演化史/)的演化史本质上是三条路线在不同历史阶段的不同侧重：
+[17种Agent架构](../ch04-507-17种agent架构演进-控制流设计的完整演化史)的演化史本质上是三条路线在不同历史阶段的不同侧重：
 
 - **早期架构**（Reflection/Tool Use/ReAct）→ 偏重**执行力**路线，解决"能不能做"
 - **中期架构**（Self-Evolve/Reflexion/ExpeL）→ 偏重**自我进化**路线，解决"能不能越用越强"
@@ -99,7 +99,7 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 
 ## 记忆系统的三重角色
 
-Agent Memory 生命周期哲学揭示了记忆在三路线中的关键地位：
+[Agent Memory 生命周期哲学](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)揭示了记忆在三路线中的关键地位：
 
 > 记忆的最终转变：从"记住过去"到"能做事"（Skills = 记忆的成熟产品形式）
 
@@ -109,12 +109,12 @@ Agent Memory 生命周期哲学揭示了记忆在三路线中的关键地位：
 - **行动层**依赖记忆来调用技能（"我有一个SKILL可以处理这个"）
 
 ## 相关实体
-- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](/ch01-246-清华-ai-自进化组织研究报告-ai-业务资产化与公司形态重构/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/acker-agent-evolution-three-routes-convergence.md)
+- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](../ch01-246-清华-ai-自进化组织研究报告-ai-业务资产化与公司形态重构)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/acker-agent-evolution-three-routes-convergence.md)
 
-- [fanling company as agent ai org reflection v2](/ch04-180-fanling-company-as-agent-ai-org-reflection-v2/)
+- [fanling company as agent ai org reflection v2](../ch04-180-fanling-company-as-agent-ai-org-reflection-v2)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析
 
 ### 三路线汇聚的深层逻辑
@@ -165,7 +165,7 @@ ETCLOVG 七个治理维度的组织逻辑：
 1. **工具执行稳定性是被低估的基础设施挑战**：在真实软件环境中可靠调用工具比在 benchmark 上展示工具调用能力难得多。这需要大量边缘 case 处理和真实环境适配。
 2. **跨软件协调层是新的基础设施机会**：Agent 作为软件之上的协调层，这个定位意味着需要一套标准化的跨软件数据流转协议和 API 适配层。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/acker-agent-evolution-three-routes-convergence.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/acker-agent-evolution-three-routes-convergence.md)
 
 ---
 

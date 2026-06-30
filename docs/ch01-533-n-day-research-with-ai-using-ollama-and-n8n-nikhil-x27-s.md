@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/ghostbyt3-github-io-blog-nday-research-ai.md`
 
-## "N-Day Research with AI: Using Ollama and n8n | Nikhil&#x27;s Cybersec Blog"
-## N-Day Research with AI: Using Ollama and n8n | Nikhil&#x27;s Cybersec Blog
+# "N-Day Research with AI: Using Ollama and n8n | Nikhil&#x27;s Cybersec Blog"
+# N-Day Research with AI: Using Ollama and n8n | Nikhil&#x27;s Cybersec Blog
 |N-Day Research with AI: Using Ollama and n8n | Nikhil&#x27;s Cybersec Blog Gh0stByt3 Blog Tags About Home Blog Tags About Published on March 21, 2026 N-Day Research with AI: Using Ollama and n8n Research Background I have been working on N-day research for the past year, focusing specifically on Microsoft components. During this time, I developed several tools to support and streamline my research. Some of these tools include: Diffrays - https://github.com/pwnfuzz/diffrays It leverages IDA Pro and the IDA Domain API to extract pseudocode of functions and perform structured diffing between patched and unpatched binaries. WinDriver-EXP - https://github.com/ghostbyt3/WinDriver-EXP This repository includes PoC exploits for vulnerabilities in Windows drivers, showcasing flaws that can result in privilege escalation, arbitrary code execution, or other security risks. Ghidra-Headless-VT - https://github.com/ghostbyt3/ghidra-headless-vt Simple Python scripts to automate Ghidra&#x27;s version tracking from the command line. Nday-Automation - Private This utilizes the MSRC API to find specific components, runs Ghidra Headless VT, generates a report, and sends it to Notion for further manual analysis. Since there is a growing trend toward AI-driven analysis, I wanted to evaluate whether an AI model could analyze patched and vulnerable functions and independently identify the underlying vulnerability. This approach could be especially useful for initial triage and enabling faster analysis. So, I decided to experiment with the tools I already have and extend my workflow further. I started by deploying a local LLM and building from there. Local LLM Setup It is pretty easy to deploy a local LLM with Docker and Ollama, this is not a guide but it might help to get start with it. Also, choosing a proper model is based on your machine. Having a powerful GPU gives you better LLM to be run locally. Let’s start with installing Ollama in docker. docker run -d -v ollama:/root/.ollama -p 11... [truncated]
 
 ## 深度分析
@@ -51,13 +51,13 @@
 5. **上下文窗口管理是工程难点**：实际部署时需要像作者一样，用 token 计算工具动态裁剪输入，而非简单截断。
 6. **开源工具链可行性**：整个链路（Docker + Ollama + n8n + Qdrant + Ghidra）均可免费搭建，对于资源有限的独立安全研究员具有较高的参考价值。
 ## 相关实体
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](/ch01-104-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo/)
-- [Amazon Quick Research Agentic Multi Source Citation](/ch04-183-amazon-quick-research-agentic-multi-source-research-workflo/)
-- [Building Web Search Enabled Agents With Strands And Exa](/ch04-373-building-web-search-enabled-agents-with-strands-and-exa/)
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](/ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov/)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch01-104-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo)
+- [Amazon Quick Research Agentic Multi Source Citation](../ch04-183-amazon-quick-research-agentic-multi-source-research-workflo)
+- [Building Web Search Enabled Agents With Strands And Exa](../ch04-373-building-web-search-enabled-agents-with-strands-and-exa)
+- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](../ch01-450-build-real-time-voice-streaming-applications-with-amazon-nov)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ghostbyt3-github-io-blog-nday-research-ai.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ghostbyt3-github-io-blog-nday-research-ai.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/the-coming-loop.md`
 
-## The Coming Loop
+# The Coming Loop
 
 > **Background**：Armin Ronacher（Flask/Sentry 创始人）2026-06-23 发表的技术深度文章，从 Harness 工程师视角探讨 Agent Loop 的演进方向。文章区分了两种循环：Agent Loop（模型调用工具的内部循环）和 Harness Loop（外部编排器决定何时继续的循环），并对后者的发展提出了深刻的反思。
 
@@ -112,7 +112,7 @@ Ronacher 描述的 Harness Loop 可以形式化为以下架构模式：
 - 如何评估代码质量？
 - 如何避免循环放大模型的系统性偏差？
 
-### 与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) 的关系
+### 与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的关系
 
 Ronacher 的文章为 Harness 工程框架提供了重要的维度补充：
 
@@ -176,16 +176,16 @@ Ronacher 的"软件作为有机体"隐喻捕捉了软件工程正在经历的范
 
 ## 相关实体
 
-- [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) — Harness 工程的系统化框架
-- [Agent Harness Context Management — Agent 上下文管理](/ch05-038-agent生产级harness工程指南/)
-- [Vibe Coding Reality Gap — 代码生成速度与质量的权衡](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [AI Agent Hype Meets Reality](/ch04-014-ai-agent-hype-meets-reality/) — Agent 产品的市场现实
-- [Hidden Technical Debt in Agent Harness](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/) — Agent 系统的技术债务
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程的系统化框架
+- [Agent Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理
+- Vibe Coding Reality Gap — 代码生成速度与质量的权衡
+- [AI Agent Hype Meets Reality](../ch04-014-ai-agent-hype-meets-reality) — Agent 产品的市场现实
+- [Hidden Technical Debt in Agent Harness](../ch04-487-hidden-technical-debt-of-ai-systems-agent-harness) — Agent 系统的技术债务
 
 ## 参考
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-coming-loop.md)
-→ [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-coming-loop.md)
+→ [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

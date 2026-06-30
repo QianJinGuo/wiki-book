@@ -11,13 +11,13 @@
 - 来源：AWS Machine Learning Blog
 
 ## 相关实体
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](/ch04-261-build-ai-agents-for-business-intelligence-with-amazon-bedroc/)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](/ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz/)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](/ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo/)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](/ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco/)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04-261-build-ai-agents-for-business-intelligence-with-amazon-bedroc)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md)
 
 ## 深度分析
 
@@ -84,13 +84,13 @@
 
 ```python
 
-## 推荐模式
+# 推荐模式
 if not column_exists_in_dataset(column_name):
     return f"Column '{column_name}' doesn't exist in dataset."
 if column_exists_in_dashboard(column_name):
     return f"Column '{column_name}' is already in the dashboard."
 
-## 执行变更...
+# 执行变更...
 ```
 
 ### 3. 充分利用 AgentCore 的托管能力
@@ -109,7 +109,7 @@ ROUTING LOGIC:
 - "find", "show", "list", "get", "columns" → find_dashboard_agent
 - "add", "remove", "modify", "delete" → modify_dashboard_agent
 
-## 超出范围的请求直接回复，而非路由到可能失败的代理
+# 超出范围的请求直接回复，而非路由到可能失败的代理
 ```
 
 ### 5. 监控与可观测性设计
@@ -128,7 +128,7 @@ AgentCore 的托管运行时按调用计费，需评估业务量级是否匹配�
 
 ---
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md)
 
 ---
 

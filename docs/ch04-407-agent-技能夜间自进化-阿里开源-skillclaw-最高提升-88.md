@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/skillclaw-hyman-nightly-evolution-alibaba.md`
 
-## Agent 技能夜间自进化——阿里开源 SkillClaw，最高提升 88%
+# Agent 技能夜间自进化——阿里开源 SkillClaw，最高提升 88%
 > 来源：Hyman的杂货铺，2026-04-11
 > 论文：https://arxiv.org/abs/2604.08377
 > 代码：https://github.com/AMAP-ML/SkillClaw
 阿里 DreamX 团队提出 SkillClaw，一个让多用户 Agent 生态中的技能库持续自动进化的框架——用户正常使用 Agent，系统在后台收集交互轨迹、夜间进化技能、次日同步给所有用户，不需要人工介入。
 
 ## 相关实体
-- [Skillclaw Collective Intelligence](/ch04-423-高德-skillclaw-让-agent-skill-学会进化-跨会话-跨agent-跨设备-跨用户/)
-- [Skillclaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化/)
-- [Skillclaw Alibaba Paperagent](/ch04-441-阿里skillclaw-让-agent-技能在真实使用中集体进化/)
-- [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-418-hermes-agent/)
+- [Skillclaw Collective Intelligence](../ch04-423-高德-skillclaw-让-agent-skill-学会进化-跨会话-跨agent-跨设备-跨用户)
+- [Skillclaw](../ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化)
+- [Skillclaw Alibaba Paperagent](../ch04-441-阿里skillclaw-让-agent-技能在真实使用中集体进化)
+- [Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-418-hermes-agent)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw-hyman-nightly-evolution-alibaba.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-hyman-nightly-evolution-alibaba.md)
 
 ## 深度分析
 

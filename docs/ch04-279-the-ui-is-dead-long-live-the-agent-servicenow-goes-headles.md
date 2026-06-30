@@ -4,7 +4,8 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md`
 
-[[Techzine Global](https://www.techzine.eu/)
+[Skip to content](https://www.techzine.eu/blogs/analytics/141272/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform/#main)
+[Techzine Global](https://www.techzine.eu/)
 
 *   [Home](https://www.techzine.eu/)
 *   [Newsletter](http://thehackernews.com/2026/05/cpanel-whm-patch-3-new-vulnerabilities.html#email-outer)
@@ -53,13 +54,13 @@
 *   [Awards](https://awards.thehackernews.com/)
 
 ## 相关实体
-- [Servicenow Ui Is Dead Agent](/ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](/ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [The Ui Is Dead Long Live The Agent](/ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
-- [Langchain Anatomy Agent Harness](/ch04-425-the-anatomy-of-an-agent-harness-解读/)
+- [Servicenow Ui Is Dead Agent](../ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
+- [The Ui Is Dead Long Live The Agent](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
+- [Alphaevolve Deepmind Discovery Agent](../ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d)
+- [Langchain Anatomy Agent Harness](../ch04-425-the-anatomy-of-an-agent-harness-解读)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md)
 
 ## 深度分析
 

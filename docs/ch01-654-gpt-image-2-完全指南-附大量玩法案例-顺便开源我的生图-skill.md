@@ -28,7 +28,7 @@ source_url: https://mp.weixin.qq.com/s/0yVKN5cu8oOOBhRZHkyYPg
 - ####  场景三：ChatGPT Web / Lovart / 任何有生图能力的对话界面
 
 ## 相关实体
-- [gpt-image-2完全指南](/ch01-700-gpt-image-2完全指南/)
+- [gpt-image-2完全指南](../ch01-700-gpt-image-2完全指南)
 
 ## 深度分析
 **GPT-Image-2 的出现不是"又一个大模型发布"，而是图像生成在工程化层面的一次质变。** 1512 分在 Arena.AI Text-to-Image 排行榜上领先第二名 242 分——这是断档式的领先，而非微幅领先。
@@ -38,7 +38,7 @@ source_url: https://mp.weixin.qq.com/s/0yVKN5cu8oOOBhRZHkyYPg
 **编辑能力**（图像输入 + 高保真编辑）让 GPT-Image-2 不只是生成工具，更是设计修改工具——产品换背景、局部替换、风格统一、Logo 保留、参考图延展，这些是商业设计中的高频需求，而非创意探索。
 花园老师开源的 Skill 体系（79 个结构化模板覆盖 18 个分类）是另一个值得关注的信号：**Prompt Engineering 的工业化**。当一个领域足够成熟，工程师会开始把最佳实践固化成模板和 Skill，让后来者不需要从零开始摸索。这与软件工程中设计模式/框架的本质相同。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-image-2-完全指南附大量玩法案例顺便开源我的生图-skill.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-image-2-完全指南附大量玩法案例顺便开源我的生图-skill.md)
 
 ## 实践启示
 **对设计师：** GPT-Image-2 不会在短期内替代专业设计师，但它会让"有想法但缺乏设计技能的人"能够独立完成 80% 的设计工作（尤其是信息图、海报、PPT 配图）。设计师的价值将更多体现在创意方向把控和最终质量精修，而非基础执行。

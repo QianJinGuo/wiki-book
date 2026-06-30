@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md`
 
-## 从 Anthropic 到 Google：Agent Skills 正在进入"设计模式"阶段
+# 从 Anthropic 到 Google：Agent Skills 正在进入"设计模式"阶段
 架构师（JiaGouX）  我们都是架构师！
 Google Cloud Tech 前些日子发布了一篇 Agent Skill 设计模式文章：《5 Agent Skill design patterns every ADK developer should know》。
 文章把常见 Skill 分成 5 类：Tool Wrapper、Generator、Reviewer、Inversion、Pipeline。
 现在回头看，5 个名字本身可能没有那么重要。
 
 ## 相关实体
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](/ch01-677-anthropic/)
-- [Anthropic Google Agent Skills Design Patterns](/ch01-677-anthropic/)
-- [Anthropic 14 Skill Patterns Best Practices](/ch01-677-anthropic/)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](/ch01-677-anthropic/)
-- [Anthropic Agent Skills Design Patterns 14](/ch01-677-anthropic/)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch01-677-anthropic)
+- [Anthropic Google Agent Skills Design Patterns](../ch01-677-anthropic)
+- [Anthropic 14 Skill Patterns Best Practices](../ch01-677-anthropic)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](../ch01-677-anthropic)
+- [Anthropic Agent Skills Design Patterns 14](../ch01-677-anthropic)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
 
 ## 深度分析
 

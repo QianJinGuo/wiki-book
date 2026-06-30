@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 6.6KB | `entities/introducing-claude-tag.md`
 
-## Introducing Claude Tag
+# Introducing Claude Tag
 
 > **Background**：Anthropic 官方 2026-06-24 发布的产品公告，介绍 Claude Tag——一种在 Slack 中以团队成员身份工作的 Agent 协作机制。Anthropic 内部 65% 的产品代码由 Claude Tag 创建，展示了 Agent 在企业协作场景中的实际采用程度。
 
@@ -130,14 +130,14 @@ Claude Tag 的特性对 Agent 基础设施提出了新的要求：
 
 ## 相关实体
 
-- [Claude Cowork Task Boundary — Claude 协作边界分析](/ch01-200-anthropic-claude-cowork-知识工作-agent-任务边界-5-筛选信号-6-阶段工作流/)
-- [Claude Code Agent View](/ch09-001-claude-code-agent-view/) — Claude Code 的 Agent 架构
-- [Context Engineering — 上下文工程的理论与实践](/ch04-229-yidian-tianxia-context-engineering-agentic-ai/)
-- [Agent Harness Context Management — Agent 上下文管理](/ch05-038-agent生产级harness工程指南/)
+- Claude Cowork Task Boundary — Claude 协作边界分析
+- [Claude Code Agent View](../ch09-001-claude-code-agent-view) — Claude Code 的 Agent 架构
+- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 上下文工程的理论与实践
+- [Agent Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理
 
 ## 参考
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-claude-tag.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-claude-tag.md)
 
 ---
 

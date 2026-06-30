@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/better-harness-eval-trace-harness-hill-climbing.md`
 
-## 从 Autoresearch 到 Better-Harness：自动优化真正难在评价信号
+# 从 Autoresearch 到 Better-Harness：自动优化真正难在评价信号
 **来源:** 慢学AI（基于 LangChain 博客）
 **URL:** https://mp.weixin.qq.com/s/Tinog5FcVCjtFrhcgbVrtQ
 **原文:** LangChain — *Better Harness: A Recipe for Harness Hill-Climbing with Evals*
 **标签:** #BetterHarness #HarnessEngineering #Eval #Trace #自动优化
 
 ## 相关实体
-- [Hermes Agent Deep Dive Alibaba](/ch04-418-hermes-agent/)
-- [Deerflow Hermes Openclaw Comparison](/ch04-398-deerflow-hermes-openclaw-架构区别深度对比/)
-- [Harness Evolution Papers](/ch05-085-harness进化论文-m-记忆程序进化与autoharness动作约束/)
-- [Better Harness Eval Trace Methodology](/ch05-083-better-harness-agent-harness-自动优化方法论/)
-- [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
+- [Hermes Agent Deep Dive Alibaba](../ch04-418-hermes-agent)
+- [Deerflow Hermes Openclaw Comparison](../ch04-398-deerflow-hermes-openclaw-架构区别深度对比)
+- [Harness Evolution Papers](../ch05-085-harness进化论文-m-记忆程序进化与autoharness动作约束)
+- [Better Harness Eval Trace Methodology](../ch05-083-better-harness-agent-harness-自动优化方法论)
+- [Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/better-harness-eval-trace-harness-hill-climbing.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/better-harness-eval-trace-harness-hill-climbing.md)
 
 ## 深度分析
 

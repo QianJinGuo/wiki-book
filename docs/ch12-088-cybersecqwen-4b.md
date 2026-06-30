@@ -45,16 +45,16 @@ Gemma4Defense-2B 采用完全相同的训练语料和超参数，仅更换基模
 5. **后续演进关注量化版本**：项目计划发布 Q4_K_M 和 Q5_K_M 的 GGUF 格式，这将显著扩展其在边缘设备和笔记本电脑上的适用场景。
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cybersecqwen-4b.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cybersecqwen-4b.md)
 
 ## 相关实体
 >
 
-- [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](/ch01-038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize/)
-- [Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads](/ch01-656-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra/)
-- [Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](/ch12-036-adversaries-leverage-ai-for-vulnerability-exploitation-augm/)
+- [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](../ch01-038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize)
+- [Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads](../ch01-656-fake-openai-privacy-filter-repo-hits-1-on-hugging-face-dra)
+- [Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](../ch12-036-adversaries-leverage-ai-for-vulnerability-exploitation-augm)
 
 ---
 

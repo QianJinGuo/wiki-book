@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/两万字详解claude-code源码核心机制.md`
 
-## 两万字详解Claude Code源码核心机制
+# 两万字详解Claude Code源码核心机制
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/两万字详解claude-code源码核心机制.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/两万字详解claude-code源码核心机制.md)
 
 ## 深度分析
 
@@ -20,7 +20,7 @@ ingested: 2026-05-16
 feed_name: 炼钢AI
 wechat_mp_fakeid: MP_WXS_3942529661
 source_published: 2026-04-01
-## 两万字详解Claude Code源码核心机制
+# 两万字详解Claude Code源码核心机制
 本文对Claude Code的核心机制实现上进行详解，包括system prompt、tool、context管理、sub agent、MCP等。
 2. 除此之外，在一些模块，会将Claude Code和OpenCode、Gemini-CLI、Codex等其他开源agent脚手架进行横向对比。
 3. 总体来讲，Claude Code各种机制处理的细致程度还是要比其他开源框架强不少的。
@@ -49,12 +49,12 @@ source_published: 2026-04-01
 
 ### 关联实体
 
-- [Hermes Agent V014 Architecture Shugex](/ch04-418-hermes-agent/)
-- [Claude Code Team 10 Tips Boris Data派Thu](/ch01-815-claude-code-team-10-tips-boris-data派thu/)
-- [Hermes Agent Soul Md Personality Shugex](/ch04-418-hermes-agent/)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](/ch01-722-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](/ch01-677-anthropic/)
+- [Hermes Agent V014 Architecture Shugex](../ch04-418-hermes-agent)
+- [Claude Code Team 10 Tips Boris Data派Thu](../ch01-815-claude-code-team-10-tips-boris-data派thu)
+- [Hermes Agent Soul Md Personality Shugex](../ch04-418-hermes-agent)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch01-722-imclaw-通过微信-飞书操控claudecode-codex-geminicli-pi-agent蜂群)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01-677-anthropic)
 
 ## 实践启示
 

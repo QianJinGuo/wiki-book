@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.1KB | `entities/llm-as-a-verifier-framework.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-as-a-verifier-framework.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-as-a-verifier-framework.md)
 
 ## 核心要点
 - **验证 vs 评判的区别**：传统 LLM-as-a-Judge 输出离散分数（如 1-8），存在粗粒度评分问题；LLM-as-a-Verifier 通过细粒度评分、重复验证、Criteria 分解提供细粒度反馈 
@@ -52,11 +52,11 @@ LLM-as-a-Verifier 的核心洞察在于区分了「评判（Judge）」和「验
 1. **消除平局的实际价值**：在自动化评测中，平局意味着无法区分两个方案，必须引入人工评判。LLM-as-a-Verifier 完全消除平局（0% Tie Rate at k≥4），可以显著降低人工评审成本。
 2. **开源可复现**：论文提供了完整的 GitHub 实现，包括 ForgeCode 和 mini-swe-agent 的集成代码。对于想在自有代码库上实验的团队，这是可以直接参考的实现模板。
 3. **Leaderboard 基准的参考价值**：Terminal-Bench 2.0 和 SWE-Bench Verified 是当前评估代码 Agent 的标准基准。如果你的产品在这些基准上表现不佳，LLM-as-a-Verifier 提供的详细反馈可以帮助你定位具体是哪类错误（Specification/Output/Errors）。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-as-a-verifier-framework.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-as-a-verifier-framework.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](/ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework/)
-- [LLM-as-a-Verifier: A General-Purpose Verification](/ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework/)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework)
+- [LLM-as-a-Verifier: A General-Purpose Verification](../ch01-077-llm-as-a-verifier-a-general-purpose-verification-framework)
 
 ---
 

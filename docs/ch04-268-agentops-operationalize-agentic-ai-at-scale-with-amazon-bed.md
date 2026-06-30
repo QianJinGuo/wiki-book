@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 9.1KB | `entities/agentops-operationalize-agentic-ai-amazon-bedrock.md`
 
-## AgentOps: Operationalize agentic AI at scale with Amazon Bedrock
+# AgentOps: Operationalize agentic AI at scale with Amazon Bedrock
 
 ## Conclusion
 
 Building production-grade agentic AI is hard. Agents make autonomous decisions, call external tools, and collaborate in ways that are difficult to anticipate and harder to debug. In this post, we have shared the practices we have seen work in production across the four pillars: governance and security, build and operations, evaluation, and observability.
 
-We encourage you to start applying these practices in your projects and share your experiences. Start by implementing Pillar 1 (Governance & Security), multi-account isolation, then progress to CI/CD for agents, add evaluation gates, and observability. Check out the [AgentCore documentation](/ch04-<https://docs.aws.amazon.com/bedrock-agentcore/>/) to get started.
+We encourage you to start applying these practices in your projects and share your experiences. Start by implementing Pillar 1 (Governance & Security), multi-account isolation, then progress to CI/CD for agents, add evaluation gates, and observability. Check out the [AgentCore documentation](../ch04-<https://docs.aws.amazon.com/bedrock-agentcore/>) to get started.
 
 * * *
 
@@ -81,13 +81,13 @@ Aris Tsakpinis is a Senior Specialist Solutions Architect for Generative AI focu
 在 AgentCore Gateway 中配置 Cedar 策略引擎，拦截所有工具调用请求进行策略评估。每个工具通过 manifest 声明其归属（shared 或 application-specific）、认证方式和合规元数据，由 CI/CD pipeline 在 merge 时完成注册和验证。这种机制确保：即使攻击者通过 agent manipulation 尝试绕过，Policy 层仍会在 tool invocation 层面拒绝未授权操作，实现"纵深防御"。
 
 ## 相关实体
-- [Amazon Bedrock Agentic Payments Guardrails](/ch04-059-enable-safe-agentic-payments-with-built-in-guardrails-using/)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](/ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco/)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](/ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz/)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](/ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro/)
+- [Amazon Bedrock Agentic Payments Guardrails](../ch04-059-enable-safe-agentic-payments-with-built-in-guardrails-using)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04-329-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 
 ---
 

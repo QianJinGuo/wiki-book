@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/the-new-bottleneck-theory-of-constraints-ai-coding-tools.md`
 
-## The New Bottleneck: Theory of Constraints in the Age of AI Coding
+# The New Bottleneck: Theory of Constraints in the Age of AI Coding
 
 Stack Overflow 文章，将制造业的约束理论（Theory of Constraints）应用于 AI 编程工具时代。核心论点：当代码生成不再是瓶颈时，组织流程中的其他环节成为新的约束。
 
@@ -53,8 +53,8 @@ Intuit 工程总监 Eric Anderson 提出：当 UI 迭代成本几乎为零时，
 
 ## 相关实体
 
-- [Harness Engineering 系统化框架](/ch05-049-harness-engineering-系统梳理/) — 通用约束管理视角
-- [Claude Code 大型代码库配置](/ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对/) — AI 编程工具的实际约束案例
+- [Harness Engineering 系统化框架](../ch05-049-harness-engineering-系统梳理) — 通用约束管理视角
+- [Claude Code 大型代码库配置](../ch09-006-claude-code-在大型代码库中的实战经验-从哪里入手-怎么做对) — AI 编程工具的实际约束案例
 
 ---
 

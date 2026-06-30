@@ -14,15 +14,15 @@ type: entity
 updated: '2026-06-08'
 ---
 type: entity
-## Scaling Camera File Processing at Netflix
+# Scaling Camera File Processing at Netflix
 
 ## 相关实体
-- [Netflix Real Time Service Topology](/ch11-009-from-silos-to-service-topology-why-netflix-built-a-real-tim/)
-- [Netflix Nebula Archrules](/ch11-088-netflix-nebula-archrules-跨越数千个-java-仓库的-archunit-规模化实践/)
+- [Netflix Real Time Service Topology](../ch11-009-from-silos-to-service-topology-why-netflix-built-a-real-tim)
+- [Netflix Nebula Archrules](../ch11-088-netflix-nebula-archrules-跨越数千个-java-仓库的-archunit-规模化实践)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/scaling-camera-file-processing-at-netflix.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/scaling-camera-file-processing-at-netflix.md)
 
-## Scaling Camera File Processing at Netflix
+# Scaling Camera File Processing at Netflix
 
 _Orchestrating Media Workflows Through Strategic Collaboration_
 

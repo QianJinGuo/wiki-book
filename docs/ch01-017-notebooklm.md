@@ -134,12 +134,12 @@ NotebookLM 的护城河在于：Google 拥有 Gemini 的模型能力 + Google Wo
 预计这些功能不会在 2026 年内全面推出，但"NotebookLM Plus"已在部分 Workspace 文档中出现暗示，值得关注。
 
 ## Related
-- AI 知识管理工具横向对比
-- [Obsidian](/ch09-097-obsidian-claude-code-integration-guide/) — 本地离线笔记
-- [ChatGPT Memory](/ch01-315-chatgpt-memory/) — 对话式记忆
+- [AI 知识管理工具横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md)
+- [Obsidian](../ch09-097-obsidian-claude-code-integration-guide) — 本地离线笔记
+- [ChatGPT Memory](../ch01-315-chatgpt-memory) — 对话式记忆
 ## 相关实体
 
-- [the interface is no longer the product](/ch03-001-the-interface-is-no-longer-the-product/)
+- [the interface is no longer the product](../ch03-001-the-interface-is-no-longer-the-product)
 
 ---
 

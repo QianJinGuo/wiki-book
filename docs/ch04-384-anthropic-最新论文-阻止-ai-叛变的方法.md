@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/anthropic-最新论文阻止-ai-叛变的方法.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md)
-从微信文章 [Anthropic 最新论文：阻止 AI 叛变的方法](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md) 提取。
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md)
+从微信文章 [Anthropic 最新论文：阻止 AI 叛变的方法](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/ZYZTTcel9_To123vcvoY4w
@@ -33,11 +33,11 @@ source_url: https://mp.weixin.qq.com/s/ZYZTTcel9_To123vcvoY4w
 5. **用"极端追问法"评估 AI 宪法质量**：设计边界挑战追问——"当规则与自身存续冲突时怎么办？""目的正当能为手段过激辩护吗？""论据越有说服力时该怎么做？"——观察模型的推理过程而非结论，揭示其对原则精神的理解深度。若模型只能给出行为判断而无法解释背后的价值观，则说明宪法本身需要升级。
 
 ## 相关实体
-- [anthropic联创2028-ai自我构建概率超60](/ch01-677-anthropic/)
-- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](/ch01-677-anthropic/)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](/ch01-677-anthropic/)
-- [Yc Ryo Self Improving Company Ai](/ch04-308-如何用ai打造一家自我进化的公司/)
-- MOC
+- [anthropic联创2028-ai自我构建概率超60](../ch01-677-anthropic)
+- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](../ch01-677-anthropic)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01-677-anthropic)
+- [Yc Ryo Self Improving Company Ai](../ch04-308-如何用ai打造一家自我进化的公司)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/what-is-software-llms-replace-tomassetti-2026.md`
 
-## What Is Software, and Will LLMs Replace It?
+# What Is Software, and Will LLMs Replace It?
 
 ## 摘要
 
@@ -69,14 +69,14 @@ Tomassetti 归纳了软件持续提供价值的四个维度：
 └─────────────────────────────────────┘
 ```
 
-这与 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 的核心理念完全一致：
+这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心理念完全一致：
 - LLM 做意图理解和任务规划（概率层）
 - 工具做确定性执行（确定性层）
 - Harness 管理两层之间的边界
 
 ### Agent 架构验证了这一分层
 
-现代 agent 架构（如 [Claude Code](/ch09-070-claude-code-dynamic-workflows-实战模式与构建技巧/)、Codex）的设计本质上就是这一分层的实现：
+现代 agent 架构（如 [Claude Code](../ch09-070-claude-code-dynamic-workflows-实战模式与构建技巧)、Codex）的设计本质上就是这一分层的实现：
 
 1. **LLM 层**：理解用户意图，规划执行步骤
 2. **编排层**：决定调用哪些工具，以什么顺序
@@ -95,7 +95,7 @@ LLM 时代软件工程师的核心技能：
 - 建立验证机制（确保 LLM 输出的正确性）
 - 管理概率层与确定性层的边界
 
-这与 [Anthropic 数据分析](/ch01-677-anthropic/) 的实践相呼应——即使 LLM 能生成分析，数据的结构化组织仍然是前提。
+这与 [Anthropic 数据分析](../ch01-677-anthropic) 的实践相呼应——即使 LLM 能生成分析，数据的结构化组织仍然是前提。
 
 ### 对 "Vibe Coding" 的隐含回应
 
@@ -123,13 +123,13 @@ LLM 时代软件工程师的核心技能：
 
 ## 相关实体
 
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — 概率层与确定性层的边界管理
-- [Agent Harnesses](/ch04-505-agent-harnesses-are-dead-long-live-agent-harnesses/) — Agent 架构的演进
-- [Claude Code Workflows](/ch09-070-claude-code-dynamic-workflows-实战模式与构建技巧/) — Agent 工作流设计
-- [本文实体](/ch01-493-what-is-software-and-will-llms-replace-it/) — Tomassetti 的分析
-- [AI Agent Hype](/ch04-014-ai-agent-hype-meets-reality/) — 对 AI agent 过度炒作的冷静分析
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 概率层与确定性层的边界管理
+- [Agent Harnesses](../ch04-505-agent-harnesses-are-dead-long-live-agent-harnesses) — Agent 架构的演进
+- [Claude Code Workflows](../ch09-070-claude-code-dynamic-workflows-实战模式与构建技巧) — Agent 工作流设计
+- [本文实体](../ch01-493-what-is-software-and-will-llms-replace-it) — Tomassetti 的分析
+- [AI Agent Hype](../ch04-014-ai-agent-hype-meets-reality) — 对 AI agent 过度炒作的冷静分析
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-is-software-llms-replace-tomassetti-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-is-software-llms-replace-tomassetti-2026.md)
 
 ---
 

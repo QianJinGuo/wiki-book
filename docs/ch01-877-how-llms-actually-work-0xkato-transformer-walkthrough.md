@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐⭐ | 8.8KB | `entities/how-llms-actually-work-0xkato.md`
 
-## How LLMs Actually Work: 0xkato Transformer Walkthrough
+# How LLMs Actually Work: 0xkato Transformer Walkthrough
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-llms-actually-work-0xkato.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-llms-actually-work-0xkato.md)
 
 ## 概述
 
@@ -126,16 +126,16 @@ Attention 权重的可视化是理解"模型在看什么"的最佳工具——�
 面向非技术用户的 AI 产品应隐藏 tokenization/sampling 细节，但通过预设配置（"精确模式"/"创意模式"）让用户间接控制这些参数。
 
 ## 相关实体
-- [Context Window Management Comparison](/ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco/)
-- [Gepa Optimize Anything](/ch01-263-gepa-optimize-anything/)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](/ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi/)
-- [Aws Sagemaker Azerbaijani Lm](/ch01-428-aws-sagemaker-阿塞拜疆语-llm-训练-bbpe-分词-fsdp-liger-三阶段方案/)
-- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
+- [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md)
+- [Gepa Optimize Anything](../ch01-263-gepa-optimize-anything)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12-090-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
+- [Aws Sagemaker Azerbaijani Lm](../ch01-428-aws-sagemaker-阿塞拜疆语-llm-训练-bbpe-分词-fsdp-liger-三阶段方案)
+- [Code As Agent Harness Survey](../ch09-046-code-as-agent-harness-综述)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-llms-actually-work-0xkato.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-llms-actually-work-0xkato.md)
 
 ---
 

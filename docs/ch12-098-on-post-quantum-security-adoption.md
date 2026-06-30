@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/on-post-quantum-security-adoption.md`
 
-## On Post-Quantum Security Adoption
+# On Post-Quantum Security Adoption
 
 Published Time: 2026-06-15
 
@@ -28,7 +28,7 @@ OpenSSH implemented and made default post-quantum key agreement [back in April 2
 
 As you might notice, this is a hybrid quantum/classical algorithm. This is a hedg
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/on-post-quantum-security-adoption.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/on-post-quantum-security-adoption.md)
 
 ---
 

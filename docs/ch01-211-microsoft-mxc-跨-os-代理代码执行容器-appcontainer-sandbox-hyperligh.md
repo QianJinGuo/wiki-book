@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐⭐ | 17.3KB | `entities/microsoft-mxc-execution-containers-agent-sandbox-origin.md`
 
-## Microsoft MXC — 跨 OS 代理代码执行容器
+# Microsoft MXC — 跨 OS 代理代码执行容器
 
 > **Background**: Microsoft 在 Build 2026（2026-06-02）开源的 MXC (Microsoft eXecution Container) 是首个由 **OS 厂商**提供、专门面向 agent 代码执行的跨平台沙箱层。本文基于 Origin Research 2026-06-04 的源码级深度分析 [`originhq.com/research/mxc-execution-containers-internals`](http://www.originhq.com/research/mxc-execution-containers-internals)，涵盖 10 个 containment backends 的实现细节（AppContainer 三层 fallback、bubblewrap/seatbelt/LXC/micro-VM/Hyperlight），交叉引用微软同期开源的 RAMPART/Clarity，形成完整的"微软代理安全栈"图景。
 >
-> 原文：→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-mxc-execution-containers-agent-sandbox-origin.md)
+> 原文：→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-mxc-execution-containers-agent-sandbox-origin.md)
 
 ## 一句话总结
 
@@ -143,14 +143,14 @@ Hyperlight 让 CPython 直接 library call 进 Unikraft micro-VM，每次 rewind
 
 ## 原文链接
 
-→ [MXC Internals 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-mxc-execution-containers-agent-sandbox-origin.md)
+→ [MXC Internals 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-mxc-execution-containers-agent-sandbox-origin.md)
 
 ## 相关阅读
 
-- [Microsoft RAMPART/Clarity](/ch01-611-microsoft-open-sources-rampart-and-clarity-to-secure-ai-agen/) — 同期微软开源的 agent 红队 + 可观测性栈
+- [Microsoft RAMPART/Clarity](../ch01-611-microsoft-open-sources-rampart-and-clarity-to-secure-ai-agen) — 同期微软开源的 agent 红队 + 可观测性栈
 - **Cloud Agent Infrastructure** — 云端 agent state/凭据隔离
-- [CrewAI Agent Security 三步防护](/ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做/) — 应用层 guardrail 视角
-- [AI Tool Poisoning 调查](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/) — agent 工具被污染的攻击面
+- [CrewAI Agent Security 三步防护](../ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做) — 应用层 guardrail 视角
+- [AI Tool Poisoning 调查](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s) — agent 工具被污染的攻击面
 - **Harness Engineering** — 隔离是 harness 的关键支柱之一
 
 ---

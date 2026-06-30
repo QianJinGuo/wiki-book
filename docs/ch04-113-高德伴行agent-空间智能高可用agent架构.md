@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.0KB | `entities/gaode-ai-companion-agent.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-ai-companion-agent-architecture.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-companion-agent-architecture.md)
 
 ## 核心架构：Supervisor驱动的双内核Agent
 伴行Agent的本质是**空间智能内核 + 行动引擎**：以用户的实时位置和空间任务为中心，持续理解"人在哪里、要去哪、周围有什么、接下来怎么行动"。  
@@ -146,7 +146,7 @@ L3层（必要时）：确定性规则只在确实存在强绑定场景时才引
 - 哪些Agent在什么类型的query上持续失败？→ 发现单一Agent的能力边界
 - 用户对AI生成结果的修改率是多少？→ 测量系统输出质量
 这些数据应该被系统性地收集、分析，并驱动下一轮的系统改进。没有这个闭环，Agent系统的质量会冻结在第一版部署时的水平。  
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-ai-companion-agent-architecture.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-companion-agent-architecture.md)
 
 ## 与Hermes Agent的关系
 本文专门分析了Hermes Agent[17]的架构取舍：  
@@ -156,17 +156,17 @@ L3层（必要时）：确定性规则只在确实存在强绑定场景时才引
 - **取舍**：Hermes式的自由推理链在行中场景受实时性（4秒内响应）和模型约束（小参数量模型的推理链不完整）双重限制
 
 ## 相关页面
-- [原文存档：高德伴行Agent技术解析](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-ai-companion-agent-architecture.md)
-- AI Skill进化框架（Skill沉淀相关）
-- [Hermes Agent](/ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队/)（被本文分析对比）
+- [原文存档：高德伴行Agent技术解析](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-companion-agent-architecture.md)
+- [AI Skill进化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-evolution-framework.md)（Skill沉淀相关）
+- [Hermes Agent](../ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队)（被本文分析对比）
 
 ## 相关实体
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](/ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f/)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)
 
-- [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路/)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
-- [ai agent memory systems](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
+- [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格)
+- [ai agent memory systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
 
 ---
 

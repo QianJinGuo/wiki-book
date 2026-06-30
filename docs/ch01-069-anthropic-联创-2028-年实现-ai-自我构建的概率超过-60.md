@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐ | 6.5KB | `entities/anthropic联创2028-ai自我构建概率超60.md`
 
-## Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%
+# Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%
 Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称：  ** AI 系统自己迭代改造自己，可能就在两年后。  **
 他花了几周时间，翻遍了上百个公开数据源，最后给出了一个概率：到 2028 年底，AI 实现端到端自动化研发的概率，  已经  ** 超过 60%。  **
 > “  我现在相信，我们正生活在 AI 研究将被端到端自动化的时代。
 这篇文章发在他的 Newsletter「Import AI」第 455 期，标题直接挑明了主题：  ** AI 系统即将开始自我构建。  **
 
 ## 相关实体
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](/ch01-677-anthropic/)
-- [The Token Economy Pt2 The Intelligence Company Gets Built](/ch01-002-the-token-economy-pt2-the-intelligence-company-gets-built/)
-- [Anthropic Pm Jess Yan Managed Agents](/ch01-677-anthropic/)
-- [Anthropic Claude Managed Agents Platform 2026](/ch01-677-anthropic/)
-- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](../ch01-677-anthropic)
+- [The Token Economy Pt2 The Intelligence Company Gets Built](../ch01-002-the-token-economy-pt2-the-intelligence-company-gets-built)
+- [Anthropic Pm Jess Yan Managed Agents](../ch01-677-anthropic)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01-677-anthropic)
+- [Claude Code Hackathon Winners 2026](../ch01-772-claude-code-hackathon-winners-2026)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic联创2028-ai自我构建概率超60.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic联创2028-ai自我构建概率超60.md)
 
 ## 深度分析
 

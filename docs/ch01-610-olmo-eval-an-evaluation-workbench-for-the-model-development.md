@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/olmo-eval.md`
 
-## olmo-eval: An evaluation workbench for the model development
+# olmo-eval: An evaluation workbench for the model development
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/olmo-eval.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/olmo-eval.md)
 
 ## 摘要
 
@@ -56,8 +56,8 @@ OLMES（2024）解决了"同一 benchmark 在不同论文中用不同方式跑"�
 ## 相关实体
 
 - ATOM Report
-- [AI Benchmark](/ch01-300-the-2026-state-of-ai-traffic-cyberthreat-benchmark-report/)
-- [LLM Evaluation Harness](/ch04-198-mcp-skill-agent-llm-harness-agentic-ai/)
+- AI Benchmark
+- LLM Evaluation Harness
 - MOC: Evaluation Landscape
 
 ---
