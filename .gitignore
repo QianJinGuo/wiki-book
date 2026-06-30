@@ -5,3 +5,6 @@ __pycache__/
 .idea/
 node_modules/
 .wrangler/
+
+# Worker secrets — API keys set via wrangler secret, not in source
+deploy/cloudflare/*/worker.js
