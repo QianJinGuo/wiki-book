@@ -46,7 +46,7 @@
 - [Boris Cherny — 从 IDE 到 Agent 控制台](ch04/503-agent.md)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](ch04/310-ai.md)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](ch04/150-ai.md)
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](ch04/503-agent.md)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](ch03/073-claude-code.md)
 - [Claude Code 架构深度解析](ch03/073-claude-code.md)

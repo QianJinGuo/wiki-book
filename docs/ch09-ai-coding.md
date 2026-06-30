@@ -2,7 +2,7 @@
 
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
-> 本章收录 **126 篇**实体，按深度递增排列。
+> 本章收录 **127 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
-| ⭐⭐ 工程师 | 需编程基础 | 119 |
+| ⭐⭐ 工程师 | 需编程基础 | 120 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -157,7 +157,8 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [120. OpenAI大神教你如何榨干Codex](ch09/120-openai-codex.md)
 - [121. Code Intelligence – Changelog](ch09/121-code-intelligence-changelog.md)
 - [122. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/122-device-code-phishing-forensics-what-we-learned-from-bec-inv.md)
-- [123. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/123-fastcontext-coding-agent.md)
-- [124. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/124-deepseek-visual-primitives.md)
-- [125. AI Coding Agent Token 成本控制五层模型](ch09/125-ai-coding-agent-token.md)
-- [126. GLM-5 Scaling Pain 推理复盘](ch09/126-glm-5-scaling-pain.md)
+- [123. Sakana Fugu 发布：Claude 禁令后的多 Agent 编排 API，LiveCodeBench 93.2](ch09/123-sakana-fugu-claude-agent-api-livecodebench-93-2.md)
+- [124. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/124-fastcontext-coding-agent.md)
+- [125. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/125-deepseek-visual-primitives.md)
+- [126. AI Coding Agent Token 成本控制五层模型](ch09/126-ai-coding-agent-token.md)
+- [127. GLM-5 Scaling Pain 推理复盘](ch09/127-glm-5-scaling-pain.md)

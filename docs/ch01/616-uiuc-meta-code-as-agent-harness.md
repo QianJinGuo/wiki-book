@@ -8,27 +8,27 @@
 
 ## 相关实体
 
-- [why internally-built ai fails fund accounting audits](ch04/310-ai.md)
-- [ai 硬件迎来寒武纪时刻：百度智能云如何成为爆发催化剂](ch04/310-ai.md)
+- [why internally-built ai fails fund accounting audits](ch04/150-ai.md)
+- [ai 硬件迎来寒武纪时刻：百度智能云如何成为爆发催化剂](ch04/150-ai.md)
 - [cmu language models need sleep (arxiv 2605.26099)：ssm-attent](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2605-26099-ssm-attention-sleep-consolidation-cmu.md)
 - [autoresearch 迁移到软件开发：多 agent 交叉审核的工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-software-development.md)
-- [codex discovered a hidden http/2 bomb](https://github.com/QianJinGuo/wiki/blob/main/entities/califio-codex-http2-hpack-bomb-880k-servers.md)
+- [codex discovered a hidden http/2 bomb](ch01/434-codex.md)
 - [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](ch03/073-claude-code.md)
 - [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](ch03/073-claude-code.md)
 - [code intelligence – changelog](ch04/403-code-intelligence-changelog.md)
 - [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/774-deepseek.md)
-- [democratizing machine learning at netflix: building the mode](ch11/230-democratizing-machine-learning-at-netflix-building-the-mode.md)
+- [democratizing machine learning at netflix: building the mode](ch11/232-democratizing-machine-learning-at-netflix-building-the-mode.md)
 - [gemma 4 and what makes an open model succeed](ch01/559-gemma-4-and-what-makes-an-open-model-succeed.md)
-- [how my non-engineering team at sentry learned to ship](ch01/384-how-my-non-engineering-team-at-sentry-learned-to-ship.md)
+- [how my non-engineering team at sentry learned to ship](ch01/381-how-my-non-engineering-team-at-sentry-learned-to-ship.md)
 - [我把 karpathy 的 autoresearch 搬到了软件开发领域，效果炸了](ch04/241-karpathy-autoresearch.md)
 - [building is just the beginning: introducing discoverability](ch12/082-building-is-just-the-beginning-introducing-discoverability.md)
 - [opd revisiting failure modes simple fixes storm](ch01/791-opd-revisiting-failure-modes-simple-fixes-storm.md)
 - [scaling camera file processing at netflix](ch11/018-scaling-camera-file-processing-at-netflix.md)
 - [the shape of the thing](ch01/196-the-shape-of-the-thing.md)
-- [protecting against token theft](ch04/310-ai.md)
+- [protecting against token theft](ch04/150-ai.md)
 - [蔚蓝babyalpha a3消费级机器狗撕开英伟达垄断](https://github.com/QianJinGuo/wiki/blob/main/entities/weilan-babyalpha-a3-machine-dog.md)
 - [5亿视频炼出全球最大gui开源数据集、推理token省71%小模型反超大模型——小米ai团队多篇论文入选icml 202](ch01/908-icml-2026.md)
-- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](ch04/310-ai.md)
+- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](ch04/150-ai.md)
 - [直播预约 | 数据引擎：具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-as-agent-harness-survey-2026.md)
 
@@ -63,10 +63,10 @@ UIUC、Meta、斯坦福等最新综述！Code as Agent Harness 涉及agent领域
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch03/012-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/503-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/310-ai.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 
 ## 实践启示

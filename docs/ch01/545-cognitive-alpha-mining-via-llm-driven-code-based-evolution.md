@@ -13,10 +13,10 @@
 
 ## 相关实体
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](ch04/310-ai.md)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](ch04/310-ai.md)
+- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](ch04/150-ai.md)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](ch04/150-ai.md)
 - [Nginx Rift Achieving Nginx Remote Code Execution V](ch12/046-nginx-rift-achieving-nginx-remote-code-execution-via-an-18.md)
-- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](ch04/310-ai.md)
+- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cogalpha-acl2026-alpha-mining.md)
 

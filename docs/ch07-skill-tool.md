@@ -2,7 +2,7 @@
 
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
-> 本章收录 **64 篇**实体，按深度递增排列。
+> 本章收录 **65 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 63 |
+| ⭐⭐ 工程师 | 需编程基础 | 64 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -92,8 +92,9 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [057. 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](ch07/057-amazon-quick-mcp.md)
 - [058. Introducing the MDN MCP server](ch07/058-introducing-the-mdn-mcp-server.md)
 - [059. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/059-ai-skill.md)
-- [060. Create Custom MCP Catalogs and Profiles](ch07/060-create-custom-mcp-catalogs-and-profiles.md)
-- [061. 25个Skills详解：从生产力清单到AI工作流资产](ch07/061-25-skills-ai.md)
-- [062. Perplexity 首次公开了内部 Skill 设计指南](ch07/062-perplexity-skill.md)
-- [063. Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获](ch07/063-codex-record-replay-gui-skill.md)
-- [064. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/064-microsoft-agent-framework-tools-4-provider-tool-ap.md)
+- [060. skill-mcp — 把 AI 技能当软件包管理（MCP 权限网关 + 只调度不执行的 Pipeline）](ch07/060-skill-mcp-ai-mcp-pipeline.md)
+- [061. Create Custom MCP Catalogs and Profiles](ch07/061-create-custom-mcp-catalogs-and-profiles.md)
+- [062. 25个Skills详解：从生产力清单到AI工作流资产](ch07/062-25-skills-ai.md)
+- [063. Perplexity 首次公开了内部 Skill 设计指南](ch07/063-perplexity-skill.md)
+- [064. Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获](ch07/064-codex-record-replay-gui-skill.md)
+- [065. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/065-microsoft-agent-framework-tools-4-provider-tool-ap.md)

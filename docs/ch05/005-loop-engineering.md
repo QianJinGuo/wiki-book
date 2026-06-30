@@ -2,7 +2,7 @@
 
 ## Ch05.005 Loop Engineering: 把反馈循环放进工程现场
 
-> 📊 Level ⭐⭐ | 28.3KB | `entities/loop-engineering-feedback-control-system.md`
+> 📊 Level ⭐⭐ | 28.4KB | `entities/loop-engineering-feedback-control-system.md`
 
 # Loop Engineering: 把反馈循环放进工程现场
 

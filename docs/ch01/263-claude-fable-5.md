@@ -41,7 +41,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 **典型场景**：某产品团队自动化脚本试图在新加坡 Region 创建 ECS 实例，企业安全团队在资源目录中设了 SCP 禁止子账号开通海外 Region 资源 → **API 直接返回权限拒绝，不需要审批流程介入**。
 
-> 与 [AI Gateway vs MCP Gateway 安全分析](ch04/310-ai.md) 在"网关层安全"维度同框架。
+> 与 [AI Gateway vs MCP Gateway 安全分析](ch04/150-ai.md) 在"网关层安全"维度同框架。
 
 ### 域 2 — AI 网关护栏：约束模型输出（概率性）
 
@@ -131,12 +131,12 @@ ActionTrail 操作审计            ←  每次拒绝可审计
   - [Claude Fable 5 Safety Fables (Lambert)](ch01/675-claude-fable-5-and-new-ai-safety-fables.md)（政策视角）
   - [Fable 5 Mollick hands-on](ch01/380-claude.md)（用户体验视角）
 - **同护栏 / 安全主题**：
-  - [AI Gateway vs MCP Gateway 安全分析](ch04/310-ai.md)
+  - [AI Gateway vs MCP Gateway 安全分析](ch04/150-ai.md)
   - [NVIDIA Nemotron 3 Agents RAG Voice Safety](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md)
-  - [Amazon Bedrock Agentic Payments Guardrails](ch04/310-ai.md)
-  - [Enable Safe Agentic Payments with Built-in Guardrails](ch04/310-ai.md)
+  - [Amazon Bedrock Agentic Payments Guardrails](ch04/150-ai.md)
+  - [Enable Safe Agentic Payments with Built-in Guardrails](ch04/150-ai.md)
   - [Nemotron 3.5 Content Safety](ch01/411-nemotron-3-5-content-safety-customizable-multimodal-safety.md)
-  - [阿里集团 AI 代码评审安全带](ch04/310-ai.md)
+  - [阿里集团 AI 代码评审安全带](ch04/150-ai.md)
 - **同阿里云生态**：
   - [Aliyun AgentRun](ch04/503-agent.md)
   - [阿里云 CMS CLI 可观测](ch04/245-skill.md)

@@ -213,10 +213,10 @@ These need answers before we close the postmortem.
 ## Appendix A — Affected versions
 See the GitHub Security Advisory for the full list of affected versions: [GHSA-g7cv-rxg3-hmpx](https://github.com/TanStack/router/security/advisories/GHSA-g7cv-rxg3-hmpx)
 ## 相关实体
-- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](ch04/310-ai.md)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/310-ai.md)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/310-ai.md)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch04/310-ai.md)
+- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](ch04/150-ai.md)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/150-ai.md)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/150-ai.md)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch04/150-ai.md)
 - [Semgrep Intercom Php Supply Chain](ch12/105-semgrep-intercom-php-supply-chain.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/npm-supply-chain-compromise-postmortem.md)
