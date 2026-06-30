@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.3KB | `entities/agentic-overlays-rest-to-a2a-enterprise.md`
 
-## Agentic Overlays -- Retrofit Legacy REST Services into A2A Agents
+# Agentic Overlays -- Retrofit Legacy REST Services into A2A Agents
 
 AWS + Cisco joint proposal: "agentic overlay" pattern wraps legacy REST services into A2A-compatible agents using a thin wrapper layer, without rewriting business logic.
 
@@ -51,7 +51,7 @@ For enterprises with large REST microservice estates (finance, telecom, governme
 
 ## Reference
 
-- Source: [Original Article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/retrofit-dont-rebuild-agentic-overlays-for-transforming-lega.md)
+- Source: [Original Article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/retrofit-dont-rebuild-agentic-overlays-for-transforming-lega.md)
 
 ---
 

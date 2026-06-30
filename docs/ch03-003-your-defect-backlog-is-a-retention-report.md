@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 13.2KB | `entities/defect-backlog-retention-report.md`
 
-[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/defect-backlog-retention-report.md)
+[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/defect-backlog-retention-report.md)
 
 A few weeks ago, someone opened a pull request to fix a bug in WordPress's block editor that I reported in 2019. For six years, pasting a Flickr image embed code into a WordPress post required a workaround: type `/img` into an empty block first. The bug wasn't catastrophic. The workaround was simple. And so the bug sat.
 
@@ -37,13 +37,13 @@ Customers who watch you fix bugs fast become advocates. Customers who accumulate
 How many paper cuts are your customers bleeding through right now, while you're busy shipping the next feature?
 
 ## 相关实体
-- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](/ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了/)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](/ch01-497-garry-tan/)
-- [Against Brain Damage](/ch03-016-against-brain-damage/)
-- [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](/ch03-035-ai-driven-layoffs-aren-t-making-businesses-more-efficient/)
-- [Alibaba Cloud Cio Ai Productivity Reframe](/ch03-011-阿里云cio产研效能规模化提升实践/)
+- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](../ch03-014-语音输入喊了这么多年-千问电脑版一出手就把键盘卷没了)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01-497-garry-tan)
+- [Against Brain Damage](../ch03-016-against-brain-damage)
+- [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](../ch03-035-ai-driven-layoffs-aren-t-making-businesses-more-efficient)
+- [Alibaba Cloud Cio Ai Productivity Reframe](../ch03-011-阿里云cio产研效能规模化提升实践)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/defect-backlog-retention-report.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/defect-backlog-retention-report.md)
 
 ## 深度分析
 
@@ -79,7 +79,7 @@ How many paper cuts are your customers bleeding through right now, while you're 
 
 5. **在产品路线图中为缺陷修复预留固定带宽**：建议工程带宽的 20-30% 专门用于缺陷修复（非功能性改进），避免 100% 的路线图容量被新功能填满。这是防止 Defect Mountain 重建的结构性机制，而不是依赖季度性 bug-bash sprint 的临时方案。 [^raw/articles/defect-backlog-retention-report.md:46-49]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/defect-backlog-retention-report.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/defect-backlog-retention-report.md)
 
 ---
 

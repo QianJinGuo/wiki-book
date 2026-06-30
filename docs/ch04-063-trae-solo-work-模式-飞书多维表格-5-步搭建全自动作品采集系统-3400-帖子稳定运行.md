@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 19.5KB | `entities/trae-solo-work-feishu-bitable-pipeline-tutorial.md`
 
-## TRAE SOLO Work 模式 + 飞书多维表格：5 步搭建全自动作品采集系统
+# TRAE SOLO Work 模式 + 飞书多维表格：5 步搭建全自动作品采集系统
 
 ## 背景
 
@@ -20,13 +20,13 @@
 **最终成果**：自动采集 **3400+ 个参赛作品**，**7×24 小时稳定运行**。
 
 ## 相关实体
-- [我把Mac留在家用手机让Trae Solo替我打了一天工](/ch01-433-我把mac留在家-用手机让trae-solo替我打了一天工/)
-- [Hermes Agent K2 6 Tutorial](/ch04-418-hermes-agent/)
-- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
+- [我把Mac留在家用手机让Trae Solo替我打了一天工](../ch01-433-我把mac留在家-用手机让trae-solo替我打了一天工)
+- [Hermes Agent K2 6 Tutorial](../ch04-418-hermes-agent)
+- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/trae-solo-work-feishu-bitable-tutorial.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/trae-solo-work-feishu-bitable-tutorial.md)
 
-- [trae solo work 模式 + 飞书多维表格 5 步教程](/ch04-349-trae-solo-work-模式-飞书多维表格-5-步教程/)
+- [trae solo work 模式 + 飞书多维表格 5 步教程](../ch04-349-trae-solo-work-模式-飞书多维表格-5-步教程)
 
 ## SOLO 两种模式定位
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 21.5KB | `entities/ai-native-project-management-git.md`
 
-## 让项目管理也AI Native —— 两个Git仓库干掉了周报、洞察和效能报表
+# 让项目管理也AI Native —— 两个Git仓库干掉了周报、洞察和效能报表
 
 > **Background**：本文档来自阿里技术官方公众号，由阿里巴巴工程师周志伟原创撰写，详细介绍了其团队如何用两个 Git 仓库 + AI 编码助手实现"零额外基建投入"的项目管理自动化实践。
 
@@ -157,15 +157,15 @@ Level 3（远期）: AI 做决策辅助
 这才是 AI Native 项目管理的真正价值：**用 AI 做人做不了的横向模式识别**。
 
 ## 相关实体
-- [Git Repo Based Pm Automation](/ch04-140-git仓库-ai-编码助手做项目管理/)
-- [Harness Engineering Jk Launcher Baijiajie](/ch05-029-万字干货-harness-engineering如何工程化落地/)
-- [Harness Design Long Running Apps](/ch05-017-harness-design-long-running-apps/)
-- [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](/ch07-009-staragent-drogo-webterminal-cli-阿里基础设施把-webterminal-变成-agent/)
-- [Alibaba Agentic Cloud](/ch04-295-阿里云-agentic-cloud/)
+- [Git Repo Based Pm Automation](../ch04-140-git仓库-ai-编码助手做项目管理)
+- [Harness Engineering Jk Launcher Baijiajie](../ch05-029-万字干货-harness-engineering如何工程化落地)
+- [Harness Design Long Running Apps](../ch05-017-harness-design-long-running-apps)
+- [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch07-009-staragent-drogo-webterminal-cli-阿里基础设施把-webterminal-变成-agent)
+- [Alibaba Agentic Cloud](../ch04-295-阿里云-agentic-cloud)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-native-project-management-git.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-project-management-git.md)
 
-- [Impeccable Frontend Design Skill Harness Vibecoder](/ch05-001-impeccable/)
+- [Impeccable Frontend Design Skill Harness Vibecoder](../ch05-001-impeccable)
 ## 深度分析
 
 ### 信息工程范式的核心突破

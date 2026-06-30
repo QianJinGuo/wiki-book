@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.1KB | `entities/colaos-listenhub-agency-native-organization-juzi.md`
 
-## ColaOS 与 AI 原生组织
+# ColaOS 与 AI 原生组织
 
 > [!summary] 核心洞察
 > AI 原生产品的核心不是更大的模型或更强的工具，而是**降低摩擦**（让普通人能用 Agent）和**穿透组织**（让 AI 的速度变成成果的速度）。ColaOS 创始人橘子从 ListenHub（SaaS 两年迭代）到 ColaOS（一天一版），展示了 AI 对产品和组织的双重重写。
@@ -133,9 +133,9 @@ ListenHub 由一人 + Agents 维护 20 个 repo、覆盖全栈产出，证明 AI
 - **敢于押注下一代交互范式**：语音优先、极简界面等"反直觉"设计需要长期投入，但可能成为定义行业的关键判断。选择交互形态的战略赌注而非渐进优化。
 
 ## 相关实体
-- [Ai Native Team Building Failures Ceo Digital Twin Case](/ch04-080-ai-原生团队的脏乱差-ceo-数字分身失败案例与-ai-销售线索分配的兴衰/)
+- [Ai Native Team Building Failures Ceo Digital Twin Case](../ch04-080-ai-原生团队的脏乱差-ceo-数字分身失败案例与-ai-销售线索分配的兴衰)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 相关主题
 
 - Harness Engineering 核心模式 — 参考 `Harness Engineering Core Patterns`

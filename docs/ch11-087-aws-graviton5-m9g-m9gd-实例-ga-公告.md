@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/aws-graviton5-m9g-m9gd-launch-2026.md`
 
-## AWS Graviton5 M9g/M9gd 实例 GA 公告
+# AWS Graviton5 M9g/M9gd 实例 GA 公告
 
 > **TL;DR**：AWS 在 re:Invent 2025 预览后正式发布 M9g 实例 + 新增 M9gd（本地 NVMe SSD 版），均由 Graviton5 处理器驱动。192 核、DDR5-8800、PCIe Gen6，相比 Graviton4 计算性能 +25%、Web 应用 +35%、ML 推理 +35%、数据库 +30%。Meta 部署数千万核 Graviton 用于代理 AI 工作负载；ClickHouse / Honeycomb / HubSpot 公布对比 M8g 的实测收益。
 
@@ -129,11 +129,11 @@ Nitro Isolation Engine 是第一个经数学证明的云虚拟机监控器。形
 - [AWS Transform](https://aws.amazon.com/blogs/compute/migrating-your-java-applications-to-aws-graviton-using-aws-transform-custom/) — x86 → Graviton 自动化迁移
 
 ## 相关实体
-- [amazon redshift 推出带有集成数据湖查询引擎的基于 aws graviton 的 rg 实例](/ch11-179-amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例/)
-- [aws 一周综述：amazon bedrock agentcore 付款、适用于 aws 的 agent 工具套件等（2](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
-- [building blocks for foundation model training and inference](/ch11-117-building-blocks-for-foundation-model-training-and-inference/)
+- [amazon redshift 推出带有集成数据湖查询引擎的基于 aws graviton 的 rg 实例](../ch11-179-amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例)
+- [aws 一周综述：amazon bedrock agentcore 付款、适用于 aws 的 agent 工具套件等（2](../ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2)
+- [building blocks for foundation model training and inference](../ch11-117-building-blocks-for-foundation-model-training-and-inference)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/现已推出由新的-aws-graviton5-处理器提供支持的-amazon-ec2-m9g-和-m9gd-实例.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/现已推出由新的-aws-graviton5-处理器提供支持的-amazon-ec2-m9g-和-m9gd-实例.md)
 
 ---
 

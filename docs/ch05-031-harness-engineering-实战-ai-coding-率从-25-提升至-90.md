@@ -58,7 +58,7 @@
 - 原则：**"Waiting is expensive, fixing is cheap"** —— 宁可让 Agent 多跑一轮验证
 
 ## 子页面
-- [四根支柱与四要素架构](/ch05-077-harness-engineering-四根支柱与四要素架构/) — 四根支柱详解、四要素架构、关键经验、效果对比
+- [四根支柱与四要素架构](../ch05-077-harness-engineering-四根支柱与四要素架构) — 四根支柱详解、四要素架构、关键经验、效果对比
 
 ## 参考资料
 - [Anthropic: Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
@@ -67,20 +67,20 @@
 - [OpenAI: Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/)
 
 ## 相关页面
-- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/) — 六层结构与核心方程
-- [Cursor Harness 复盘](/ch01-235-cursor-harness-model-production-floor/) — 模型决定上限，Harness 决定生产下限
-- [字节跳动 TRAE Harness Engineering 指南](/ch01-520-来自字节跳动trae的harness-engineering指南/) — R.E.S.T 框架/PPAF 循环/上下文 Token 流水线
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 六层结构与核心方程
+- [Cursor Harness 复盘](../ch01-235-cursor-harness-model-production-floor) — 模型决定上限，Harness 决定生产下限
+- [字节跳动 TRAE Harness Engineering 指南](../ch01-520-来自字节跳动trae的harness-engineering指南) — R.E.S.T 框架/PPAF 循环/上下文 Token 流水线
 
 ## 相关实体
 
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](/ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [Harness Engineering实践，做了一个平台让AI一晚上自动评测和优化你的系统](/ch01-364-harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统/)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](/ch04-025-harness不是目的-知识才是护城河-一个ai工程交付团队的知识沉淀实践/)
-- AI 领域专家学习路径
-- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](/ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制/)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [Harness Engineering实践，做了一个平台让AI一晚上自动评测和优化你的系统](../ch01-364-harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch04-025-harness不是目的-知识才是护城河-一个ai工程交付团队的知识沉淀实践)
+- [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
+- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04-054-agent-可靠性的工程解法-从-skillify-看持续改进机制)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 深度分析
 ### 从「能力」到「可信赖产出」的系统性鸿沟
 文章揭示了 AI Coding 领域一个核心矛盾：模型原始能力已足够强，但从「能力」到「可信赖的工程产出」之间横亘着系统性鸿沟。企业级 Java 场景的特殊性加剧了这一鸿沟——隐性知识散落（价格字段用 `long` 分而非 `double`、某配置 85 处引用、高频变更链路），这些从未被系统化记录，Agent 的知识边界等于代码库的文件边界。

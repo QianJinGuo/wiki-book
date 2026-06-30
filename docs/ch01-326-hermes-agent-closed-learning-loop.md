@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/hermes-agent-closed-learning-loop.md`
 
-[Hermes Agent Closed Learning Loop](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-closed-learning-loop.md)
+[Hermes Agent Closed Learning Loop](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-closed-learning-loop.md)
 
 ## 文章概要
 Hermes Agent 是 Nous Research 于 2025 年 2 月开源的自托管智能体框架，GitHub 50.6K star，被认为是 OpenClaw 的首个真正竞争对手。其核心差异在于内置**闭环学习循环**（A Closed Learning Loop），通过"触发 → review → 写回 → 再注入"把 self-improving 飞轮真正跑通。
@@ -166,11 +166,11 @@ Hermes Agent 的闭环学习循环代表了一种**主动式自我改进**而非
 2. **异步非阻塞设计是用户体验的关键**：后台 Review 不应影响主对话的响应延迟，这是保持用户体验的工程底线
 3. **知识表示的分离是认知架构的基础**：将不同类型的知识用不同的机制处理，这一致知框架值得在更多 Agent 系统中推广
 ## 相关实体
-- [Hermes Agent Vs Openclaw Comparison](/ch04-418-hermes-agent/)
-- [Skill System Design Three Way Comparison](/ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age/)
-- [Hermes Agent Memory System Vs Openclaw](/ch04-418-hermes-agent/)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-418-hermes-agent/)
-- [Small Hermes Self Evolving Agent Architecture](/ch04-109-small-hermes-自我进化-agent-架构/)
+- [Hermes Agent Vs Openclaw Comparison](../ch04-418-hermes-agent)
+- [Skill System Design Three Way Comparison](../ch01-215-ai-agent-架构设计-七-skills-系统设计-openclaw-claude-code-hermes-age)
+- [Hermes Agent Memory System Vs Openclaw](../ch04-418-hermes-agent)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-418-hermes-agent)
+- [Small Hermes Self Evolving Agent Architecture](../ch04-109-small-hermes-自我进化-agent-架构)
 
 ---
 

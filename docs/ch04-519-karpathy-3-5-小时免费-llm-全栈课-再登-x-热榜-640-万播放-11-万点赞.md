@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/karpathy-llm-full-stack-course-2026井底之硅.md`
 
-## Karpathy 3.5 小时免费「LLM 全栈课」再登 X 热榜，640 万播放、11 万点赞
+# Karpathy 3.5 小时免费「LLM 全栈课」再登 X 热榜，640 万播放、11 万点赞
 
 ## 核心结论
 
@@ -72,15 +72,15 @@ Karpathy 的课程处于"概念地图"层级，它不能替代工程实践，但
 Karpathy 课程的传播数据（640万播放、HN 讨论热度）是 LLM 行业"原理需求"的重要信号。当应用层课程增长放缓、底层原理内容开始破圈，说明行业正在从"工具普及"向"深度理解"过渡。这对 AI 教育产品、模型评估方法论、企业 AI 战略都有前瞻性意义。
 
 ## 相关实体
-- [Karpathy Vibe Engineering Silicon Era Jiangtao](/ch04-153-连karpathy都开始恐慌-ai正在重新定义-程序员-硅基时间/)
-- [Karpathy Llm Wiki V2 2026](/ch01-271-karpathy-llm-wiki-v2-2026/)
-- [Llm Wiki Architecture Karpathy Markdown Knowledge Base](/ch01-550-llm-wiki-架构解析-karpathy-的-markdown-知识库模式/)
-- [Karpathy Vibe Coding Agentic Engineering V3](/ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Llm Wiki Architecture](/ch01-334-llm-wiki-claude-obsidian/)
+- [Karpathy Vibe Engineering Silicon Era Jiangtao](../ch04-153-连karpathy都开始恐慌-ai正在重新定义-程序员-硅基时间)
+- [Karpathy Llm Wiki V2 2026](../ch01-271-karpathy-llm-wiki-v2-2026)
+- [Llm Wiki Architecture Karpathy Markdown Knowledge Base](../ch01-550-llm-wiki-架构解析-karpathy-的-markdown-知识库模式)
+- [Karpathy Vibe Coding Agentic Engineering V3](../ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Llm Wiki Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-architecture.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-llm-full-stack-course-2026井底之硅.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-llm-full-stack-course-2026井底之硅.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 课程链接
 
 https://www.youtube.com/watch?v=7xTGNNLPyMI

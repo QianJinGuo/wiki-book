@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md`
 
-## Agivar 录屏教学桌面 Agent
+# Agivar 录屏教学桌面 Agent
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md)
 
 > **软文性质**：机器之心发布"非十科技 Agivar"产品。本文重点提取**架构创新 + 方法论**，软文部分批判性吸收。
 
@@ -147,11 +147,11 @@ Jittor 已成国内主流深度学习框架之一。Agivar 对底层推理调度
 
 ## 关联引用
 
-→ [Anthropic Computer Use 最佳实践](/ch01-677-anthropic/) — 通用多模态大模型路径
-→ [Computer Use 45× 成本问题](/ch04-241-computer-use-45x-more-expensive-than-structured-apis/) — Computer Use 的成本痛点
-→ [IBM Forward Deployed Units (FDU)](/ch11-051-ibm-forward-deployed-units-fdu-ai-部署模型/) — FDE 模式企业级 AI 部署
-→ [Agentic Future 竞赛 (Tidemark)](/ch04-367-the-race-to-own-the-agentic-future-tidemark/) — FDE 概念与投资视角
-→ [原文存档（本篇）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md)
+→ [Anthropic Computer Use 最佳实践](../ch01-677-anthropic) — 通用多模态大模型路径
+→ [Computer Use 45× 成本问题](../ch04-241-computer-use-45x-more-expensive-than-structured-apis) — Computer Use 的成本痛点
+→ [IBM Forward Deployed Units (FDU)](../ch11-051-ibm-forward-deployed-units-fdu-ai-部署模型) — FDE 模式企业级 AI 部署
+→ [Agentic Future 竞赛 (Tidemark)](../ch04-367-the-race-to-own-the-agentic-future-tidemark) — FDE 概念与投资视角
+→ [原文存档（本篇）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md)
 
 ---
 

@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/trae-solo-work-feishu-bitable-tutorial.md`
 
-## TRAE SOLO Work 模式 + 飞书多维表格 5 步教程
+# TRAE SOLO Work 模式 + 飞书多维表格 5 步教程
 
-> **注意**：本条目的原始存档来源文章内容不完整，仅包含一篇跳转指引（指向 `[Trae Solo Work Feishu Bitable Pipeline Tutorial](/ch04-063-trae-solo-work-模式-飞书多维表格-5-步搭建全自动作品采集系统-3400-帖子稳定运行/)`），该目标实体目前尚未建立。以下内容基于原始来源的元数据标签、文章结构线索以及飞书多维表格（Bitable）与 TRAE SOLO Work 模式的已知产品特性进行合理推断和构建，待目标实体完善后可进一步修订。
+> **注意**：本条目的原始存档来源文章内容不完整，仅包含一篇跳转指引（指向 `[Trae Solo Work Feishu Bitable Pipeline Tutorial](../ch04-063-trae-solo-work-模式-飞书多维表格-5-步搭建全自动作品采集系统-3400-帖子稳定运行)`），该目标实体目前尚未建立。以下内容基于原始来源的元数据标签、文章结构线索以及飞书多维表格（Bitable）与 TRAE SOLO Work 模式的已知产品特性进行合理推断和构建，待目标实体完善后可进一步修订。
 
 ## 摘要
 
@@ -104,8 +104,8 @@ Solo Work 模式特别适合**任务明确、流程固定、数据源结构化**
 
 ## 相关实体
 
-- [`Trae Solo Work Feishu Bitable Pipeline Tutorial` — 目标教程实体（待建立）](/ch04-063-trae-solo-work-模式-飞书多维表格-5-步搭建全自动作品采集系统-3400-帖子稳定运行/)
-- [TRAE SOLO Work — TRAE 单智能体工作模式](/ch04-063-trae-solo-work-模式-飞书多维表格-5-步搭建全自动作品采集系统-3400-帖子稳定运行/)
+- `Trae Solo Work Feishu Bitable Pipeline Tutorial` — 目标教程实体（待建立）
+- TRAE SOLO Work — TRAE 单智能体工作模式
 - 飞书多维表格（Bitable）— 飞书多视图数据库与 API 平台
 
 ---

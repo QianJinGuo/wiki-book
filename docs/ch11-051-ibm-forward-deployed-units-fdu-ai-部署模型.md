@@ -5,7 +5,7 @@
 > 📊 Level ⭐⭐ | 12.6KB | `entities/ibm-forward-deployed-units-ai-deployment.md`
 
 ## 背景：企业 AI 交付的痛点
-IBM 在公告中指出，传统的 enterprise delivery model 依赖于劳动密集型（labor-intensive）的人力扩张模式——项目规模扩大意味着需要投入更多人力的线性增长。然而，随着 AI  adoption 加速，IBM 认为成功的关键已转向如何组织团队、协调 AI agents（[Agent](/ch04-435-agent-engineering-principles-architecture-practice/)）、强化 governance（治理），以及将 AI 能力 operationalize（可操作化）为可量化的业务成果。
+IBM 在公告中指出，传统的 enterprise delivery model 依赖于劳动密集型（labor-intensive）的人力扩张模式——项目规模扩大意味着需要投入更多人力的线性增长。然而，随着 AI  adoption 加速，IBM 认为成功的关键已转向如何组织团队、协调 AI agents（[Agent](../ch04-435-agent-engineering-principles-architecture-practice)）、强化 governance（治理），以及将 AI 能力 operationalize（可操作化）为可量化的业务成果。
 这一判断呼应了 **Agentic AI** 落地过程中的核心矛盾：企业在 experiment（实验）阶段可以快速验证 POC，但将 AI 真正部署到 production（生产环境）时却困难重重。技术不是问题，operating model（运营模式）才是瓶颈。
 
 ## 核心概念：Forward Deployed Units
@@ -81,7 +81,7 @@ FDU 运行在 IBM Consulting Advantage 平台上，形成了"平台+交付模型
 - **Agentic AI** — FDU 的核心能力载体，AI agent 可自主执行 coding、evaluation、testing 等任务（概念页待建）
 - **IBM watsonx** — IBM 企业 AI 平台，与 FDU 形成平台+交付模型的组合（实体页待建）
 - **企业 AI 部署** — FDU 试图解决的正是从 experiment 到 production 的规模化落地难题（概念页待建）
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ibm-forward-deployed-units-ai-deployment.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ibm-forward-deployed-units-ai-deployment.md)
 
 ---
 

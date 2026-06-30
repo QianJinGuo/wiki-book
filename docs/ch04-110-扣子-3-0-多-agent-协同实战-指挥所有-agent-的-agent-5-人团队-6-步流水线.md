@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.2KB | `entities/coze-3-multimagent-team-orchestration-wangheige.md`
 
-## 扣子 3.0 多 Agent 协同实战：指挥所有 Agent 的 Agent + 5 人团队 6 步流水线
+# 扣子 3.0 多 Agent 协同实战：指挥所有 Agent 的 Agent + 5 人团队 6 步流水线
 
 ## 概述
 
@@ -199,14 +199,14 @@ Coze 3.0 提供的解决思路是**云端托管 + 统一消息总线**。本地 
 ---
 
 ## 相关实体
-- [Coze 3 0 Collaboration System](/ch04-344-coze-3-0-agent/)
-- [Coze 3 0 Local Agent Project Orchestration](/ch04-341-coze-3-0-本地-agent-项目编排/)
-- [Oz Multi Harness Cloud Agent Orchestration](/ch04-409-agent-orchestration/)
-- [Agent Orchestration](/ch04-409-agent-orchestration/)
-- [Baidu Netdisk Three Layer Agent Architecture](/ch07-023-三层-agent-架构-skill-subagent-agent-team-工程实践/)
-- MOC
+- [Coze 3 0 Collaboration System](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-0-collaboration-system.md)
+- [Coze 3 0 Local Agent Project Orchestration](../ch04-341-coze-3-0-本地-agent-项目编排)
+- [Oz Multi Harness Cloud Agent Orchestration](../ch04-409-agent-orchestration)
+- [Agent Orchestration](../ch04-409-agent-orchestration)
+- [Baidu Netdisk Three Layer Agent Architecture](../ch07-023-三层-agent-架构-skill-subagent-agent-team-工程实践)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/coze-3-multimagent-team-orchestration-wangheige.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/coze-3-multimagent-team-orchestration-wangheige.md)
 
 ---
 

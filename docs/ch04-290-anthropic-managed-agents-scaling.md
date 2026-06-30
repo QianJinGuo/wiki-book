@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/anthropic-managed-agents-scaling.md`
 
-## anthropic-managed-agents-scaling
+# anthropic-managed-agents-scaling
 
 本文编译自 Anthropic 工程博客，系统阐述 Managed Agents 的核心理念：用 K8s 的思路虚拟化 Agent 组件——将 session（事件日志）、harness（大脑/工具调用循环）、sandbox（代码执行环境）解耦为三个独立接口，让每个组件都能独立故障、独立替换、独立扩展。
 早期设计把全部 Agent 组件塞进一个容器——文件操作是本地 syscall，部署简单，但这养了一只**宠物**：
@@ -14,15 +14,15 @@
 - Prompt injection 攻击面大：不可信代码和凭证在同一环境
 
 ## 相关实体
-- [Anthropic Pm Jess Yan Managed Agents](/ch01-677-anthropic/)
-- [Anthropic Claude Managed Agents Platform 2026](/ch01-677-anthropic/)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](/ch04-421-claude-managed-agents/)
-- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
-- [Anthropic Demystifying Evals For Ai Agents](/ch01-677-anthropic/)
+- [Anthropic Pm Jess Yan Managed Agents](../ch01-677-anthropic)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01-677-anthropic)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04-421-claude-managed-agents)
+- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
+- [Anthropic Demystifying Evals For Ai Agents](../ch01-677-anthropic)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-managed-agents-scaling.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-managed-agents-scaling.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析
 
 ### 从宠物到牛群：Agent 架构范式转移
@@ -84,7 +84,7 @@ Token 不可达设计在工程上有几个关键实现点：
 - **不要把 Session 当数据库**：Session 是事件日志，不是查询用的数据库。频繁的全量查询应该另外建索引，不要直接扫 Session 日志。
 - **不要忽略 Harness 的无状态要求**：Harness 必须是真正无状态的。任何需要在崩溃后恢复的中间状态都应该存在 Session 里，而不是 Harness 的内存中。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-managed-agents-scaling.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-managed-agents-scaling.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md`
 
-## Solution overview
+# Solution overview
 
 ## 深度分析
 
@@ -16,7 +16,7 @@ feed_name: AWS China ML
 source_published: 2026-05-28T16:41:07Z
 ---
 
-## Automate AML alert triage with Amazon Quick and Snowflake Cortex AI
+# Automate AML alert triage with Amazon Quick and Snowflake Cortex AI
 
  
 
@@ -39,15 +39,15 @@ _Figure 1: Integrating Snowflake-managed MCP server with Amazon Quick through Mo
 The solution uses Amazon Quick Flows as the orchestration layer, with a connection managed by Amazon Quick to reach a [Snowflake Cortex Agent](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents) through a [Snowflake-managed MCP server](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp) with [OAuth authentication](https://docs.snowflake.com/en/user-guide/oauth-snowflake-overview). The Cortex Agent performs the investigative work, analyzing both structured transaction data through [Cortex Analyst](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst) and unstructured compliance documents through [Cortex Search](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview), while Quick Flows handles input validation, reasoning log
 
 ## 相关实体
-- [Process Financial Documents Using Amazon Bedrock Data Automa](/ch01-534-solution-overview/)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](/ch01-521-business-intelligence-at-scale-key-obstacles/)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](/ch01-236-亚马逊aws官方博客-https-aws-amazon-com-cn-blogs-china/)
-- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](/ch01-536-workflow-architecture/)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](/ch01-295-一-关于-kollab/)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch01-534-solution-overview)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch01-521-business-intelligence-at-scale-key-obstacles)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch01-236-亚马逊aws官方博客-https-aws-amazon-com-cn-blogs-china)
+- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](../ch01-536-workflow-architecture)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch01-295-一-关于-kollab)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 
-- [Gemini 3 5 Frontier Intelligence With Action](/ch01-061-gemini-3-5-frontier-intelligence-with-action/)
+- [Gemini 3 5 Frontier Intelligence With Action](../ch01-061-gemini-3-5-frontier-intelligence-with-action)
 ## 相关主题
 
 ---

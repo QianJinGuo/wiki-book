@@ -10,13 +10,13 @@
 - AI 个性化发展路径差异显著
 - AI 在无监督环境下易形成极端行为模式
 ## 相关实体
-- [Npm Supply Chain Compromise Postmortem](/ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack/)
-- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
-- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](/ch03-092-when-growth-slows-is-it-sales-fault-or-the-product-s-fault/)
-- [Reasoning Lift](/ch01-509-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks/)
-- [Tmall Ai Coding Practice Team Knowledge Base](/ch09-066-tmall-ai-coding-practice-team-knowledge-base/)
+- [Npm Supply Chain Compromise Postmortem](../ch01-179-postmortem-tanstack-npm-supply-chain-compromise-tanstack)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us)
+- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](../ch03-092-when-growth-slows-is-it-sales-fault-or-the-product-s-fault)
+- [Reasoning Lift](../ch01-509-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks)
+- [Tmall Ai Coding Practice Team Knowledge Base](../ch09-066-tmall-ai-coding-practice-team-knowledge-base)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/we-let-four-ais-run-radio-stations-heres-what-happened.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/we-let-four-ais-run-radio-stations-heres-what-happened.md)
 
 ## 实验背景
 Andon Labs 在 2026 年 5 月 13 日发布了这一实验结果。该实验室此前已让人工智能运行过商店、咖啡馆和各种自动售货机，这次他们将目光投向了媒体行业。每个电台从 20 美元初始资金开始，由不同的 AI 模型独立运营。

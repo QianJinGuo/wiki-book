@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/gitlab-14pct-layoff-agent-platform-ai-2026q1.md`
 
-## GitLab 14% 裁员 + Duo Agent Platform 扩张
+# GitLab 14% 裁员 + Duo Agent Platform 扩张
 
 ## 概览
 
@@ -45,13 +45,13 @@ GitLab Duo Agent Platform 仍处于早期阶段——评估它是否已覆盖你
 当 AI agent 可以自主修改代码和部署时，治理框架（审批流程、权限控制、审计日志）必须在 agent 上线前就位。
 
 ## 相关实体
-- [Gitlab Layoffs Memo 2026 5](/ch01-450-cvpr-2026-highlight-ai-8b-gpt-5-gemini-3-1-pro/)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](/ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [Auto Improving Agent Platform Ashpreetbedi](/ch01-545-auto-improving-agent-platform-ashpreet-bedi/)
-- [The Ui Is Dead Long Live The Agent](/ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [Servicenow Ui Is Dead Agent](/ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
+- [Gitlab Layoffs Memo 2026 5](https://github.com/QianJinGuo/wiki/blob/main/entities/gitlab-layoffs-memo-2026-5.md)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
+- [Auto Improving Agent Platform Ashpreetbedi](../ch01-545-auto-improving-agent-platform-ashpreet-bedi)
+- [The Ui Is Dead Long Live The Agent](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
+- [Servicenow Ui Is Dead Agent](../ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gitlab-14pct-layoff-agent-platform-ai-2026q1.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gitlab-14pct-layoff-agent-platform-ai-2026q1.md)
 
 ## 重组 4 项调整
 

@@ -91,10 +91,10 @@ Google 的独立 AI 对话产品，任何人可用（需 Google 账号）。
 5. **跟踪 Gemini I/O 发布动态，及时调整教育工具栈**：Google I/O 2026（5月19-20日）预计将公布 Gemini Omni 正式版及更多 Agent 能力。建议教育工作者关注 TestingCatalog 等信源，在正式发布后评估视频编辑、Avatar 支持等新功能是否能替代现有的第三方工具（如 CapCut、Canva）。 
 
 ## Related
-- AI 知识管理工具横向对比
-- [NotebookLM](/ch01-017-notebooklm/) — Google 专用研究助手
-- [ChatGPT Memory](/ch01-315-chatgpt-memory/) — 对话式记忆
-- [Obsidian](/ch09-097-obsidian-claude-code-integration-guide/) — 本地笔记
+- [AI 知识管理工具横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md)
+- [NotebookLM](../ch01-017-notebooklm) — Google 专用研究助手
+- [ChatGPT Memory](../ch01-315-chatgpt-memory) — 对话式记忆
+- [Obsidian](../ch09-097-obsidian-claude-code-integration-guide) — 本地笔记
 
 ---
 

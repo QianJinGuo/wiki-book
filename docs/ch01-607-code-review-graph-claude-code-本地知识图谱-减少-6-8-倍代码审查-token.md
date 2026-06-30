@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/code-review-graph.md`
 
-## code-review-graph：Claude Code 本地知识图谱，减少 6.8 倍代码审查 Token
+# code-review-graph：Claude Code 本地知识图谱，减少 6.8 倍代码审查 Token
 > URL：https://mp.weixin.qq.com/s/jc5RZB9eIYSAmEUMfMxtkg
 > 发布时间：2026年4月9日 22:30
 > SHA-256：`3efa514c6791a5bc44b0c186003c2b6d9be9c903b246a859254c0b9ff563a0f5`
 code-review-graph 是一个本地知识图谱工具，专为 Claude Code 等 AI 编码助手设计。
 
 ## 相关实体
-- [Code Review Graph Upper Intermediate Guide 20260513](/ch01-540-开源-claude-code-本地代码知识图谱-code-review-graph-完整上手攻略/)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
-- [Claude Code Self Repair Hooks Memory Config](/ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
-- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
-- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
+- [Code Review Graph Upper Intermediate Guide 20260513](../ch01-540-开源-claude-code-本地代码知识图谱-code-review-graph-完整上手攻略)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
+- [Claude Code Self Repair Hooks Memory Config](../ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码)
+- [Claude Code Hackathon Winners 2026](../ch01-772-claude-code-hackathon-winners-2026)
+- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/code-review-graph.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-review-graph.md)
 
 ## 深度分析
 

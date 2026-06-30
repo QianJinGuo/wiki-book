@@ -11,17 +11,17 @@
 - 来源：AWS Machine Learning Blog
 
 ## 相关实体
-- [Building Ai Agents For Business Support Using Amazon Bedrock](/ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock/)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
-- [Build Ai Powered Dashboard Automation Agents With Nlp On Amazon Bedrock Agentcor](/ch04-301-build-ai-powered-dashboard-automation-agents-with-nlp-on-ama/)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](/ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo/)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](/ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco/)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04-064-building-ai-agents-for-business-support-using-amazon-bedrock)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore)
+- [Build Ai Powered Dashboard Automation Agents With Nlp On Amazon Bedrock Agentcor](../ch04-301-build-ai-powered-dashboard-automation-agents-with-nlp-on-ama)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11-162-integrating-aws-api-mcp-server-with-amazon-quick-using-amazo)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04-355-break-the-context-window-barrier-with-amazon-bedrock-agentco)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
 
 ---
 
-- [stack overflow for agents — ephemeral intelligence gap 框架与 a](/ch04-248-stack-overflow-for-agents-ephemeral-intelligence-gap-框架与-a/)
+- [stack overflow for agents — ephemeral intelligence gap 框架与 a](../ch04-248-stack-overflow-for-agents-ephemeral-intelligence-gap-框架与-a)
 
 ## 案例概述
 
@@ -137,11 +137,11 @@ OPLOG 强调的"仅为实际执行付费"模式，结合 Serverless 自动扩缩
 
 ## 关联阅读
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
 
 ## 相关实体
-- [`Bedrock多Agent协作` — AWS上的多Agent架构实践](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
-- [`Harness架构` — Agent运行时抽象的核心设计](/ch05-038-agent生产级harness工程指南/)
+- `Bedrock多Agent协作` — AWS上的多Agent架构实践
+- `Harness架构` — Agent运行时抽象的核心设计
 
 ---
 

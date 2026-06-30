@@ -4,19 +4,19 @@
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/fedora-hummingbird-container-security.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fedora-hummingbird-container-security.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fedora-hummingbird-container-security.md)
 
 ## 核心要点
 - value=8, confidence=7, product=56
 - Thorough Fedora Hummingbird technical overview
 ## 相关实体
-- [Fedora Hummingbird Brings The Container Security Model To Li](/ch12-008-fedora-hummingbird-brings-the-container-security-model-to-a/)
-- [Sysdig Headless Cloud Security](/ch11-137-headless-cloud-security-rewriting-security-without-the-ui/)
-- [The It And Security Field Guide To Ai Adoption Tines](/ch12-071-the-it-and-security-field-guide-to-ai-adoption-tines/)
-- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](/ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner/)
-- [Drinking Llms](/ch01-574-getting-llms-drunk-to-find-remote-linux-kernel-oob-writes-a/)
+- [Fedora Hummingbird Brings The Container Security Model To Li](../ch12-008-fedora-hummingbird-brings-the-container-security-model-to-a)
+- [Sysdig Headless Cloud Security](../ch11-137-headless-cloud-security-rewriting-security-without-the-ui)
+- [The It And Security Field Guide To Ai Adoption Tines](../ch12-071-the-it-and-security-field-guide-to-ai-adoption-tines)
+- [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](../ch09-102-introducing-deepsec-the-security-harness-for-finding-vulner)
+- [Drinking Llms](../ch01-574-getting-llms-drunk-to-find-remote-linux-kernel-oob-writes-a)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fedora-hummingbird-container-security.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fedora-hummingbird-container-security.md)
 
 ## 深度分析
 Fedora Hummingbird 的发布标志着 Linux 发行版安全模型的一次根本性转向。在过去十年中，容器安全最佳实践主要集中在应用镜像层面——distroless 镜像、只读根文件系统、最小化攻击面等理念已广泛渗透至 CI/CD 流水线。而 Hummingbird 将这一整套安全范式下沉至主机操作系统层，意味着未来的 Linux 发行版可以像管理容器镜像一样管理整个系统。

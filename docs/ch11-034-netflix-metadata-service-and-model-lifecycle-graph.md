@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 14.5KB | `entities/netflix-metadata-service-model-lifecycle-graph.md`
 
-## Netflix Metadata Service and Model Lifecycle Graph
+# Netflix Metadata Service and Model Lifecycle Graph
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
 
 > **Core insight**: Netflix 的 Metadata Service (MDS) 通过 AIP URI 统一寻址、Kafka 事件摄取、enrichment workers 和 Datomic+Elasticsearch 双存储，构建跨域 Model Lifecycle Graph，使"该模型被哪些 A/B 测试使用"这类跨系统查询从不可能变为单次 GraphQL 查询。
 
@@ -97,17 +97,17 @@ Model Lifecycle Graph 通过 AIP Portal 向 practitioners 展示，这是一个�
    索引是同步、轻量的（写完即索引），而图遍历是异步、计算密集的。将发现入口与图引擎分离，使两者可独立扩缩容。Elasticsearch 单索引多 entity type 设计 + entityType 字段区分 + 相关性提升，是高可用发现体验的技术保障。
 
 ## 相关实体
-- [Netflix Live Operations Human Infrastructure](/ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构/)
-- [High Throughput Graph Abstraction At Netflix](/ch11-101-high-throughput-graph-abstraction-at-netflix-part-i/)
-- [Netflix Switchboard Lightbulb Model Routing](/ch11-074-netflix-switchboard-lightbulb-百万请求-秒-ml-模型路由架构演进/)
-- [High Throughput Graph Abstraction At Netflix Part I](/ch11-101-high-throughput-graph-abstraction-at-netflix-part-i/)
-- [Building Blocks For Foundation Model Training And Inference On Aws](/ch11-117-building-blocks-for-foundation-model-training-and-inference/)
+- [Netflix Live Operations Human Infrastructure](../ch11-104-netflix-live-运营体系-toc-fleet-model-与-lcc-分层指挥架构)
+- [High Throughput Graph Abstraction At Netflix](../ch11-101-high-throughput-graph-abstraction-at-netflix-part-i)
+- [Netflix Switchboard Lightbulb Model Routing](../ch11-074-netflix-switchboard-lightbulb-百万请求-秒-ml-模型路由架构演进)
+- [High Throughput Graph Abstraction At Netflix Part I](../ch11-101-high-throughput-graph-abstraction-at-netflix-part-i)
+- [Building Blocks For Foundation Model Training And Inference On Aws](../ch11-117-building-blocks-for-foundation-model-training-and-inference)
 
-- [Netflix Scaling Camera File Processing At Netflix](/ch11-018-scaling-camera-file-processing-at-netflix/)
-- [Netflix Cassandra Wide Partition Dynamic Splitting](/ch11-025-dynamically-splitting-wide-partitions-in-cassandra-for-time/)
+- [Netflix Scaling Camera File Processing At Netflix](../ch11-018-scaling-camera-file-processing-at-netflix)
+- [Netflix Cassandra Wide Partition Dynamic Splitting](../ch11-025-dynamically-splitting-wide-partitions-in-cassandra-for-time)
 ## 相关引用
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
 
 ---
 

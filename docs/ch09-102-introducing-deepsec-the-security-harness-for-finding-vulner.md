@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md`
 
-> -> [Introducing deepsec: The security harness for finding vulnerabilities in your codebase](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
+> -> [Introducing deepsec: The security harness for finding vulnerabilities in your codebase](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 
 ## 深度分析
 deepsec 的架构代表了一种新型 AI-native 安全扫描范式：不是用 LLM 直接扫描代码（幻觉率高、误报率难以控制），而是将安全发现流程拆解为 Scan → Investigate → Revalidate → Enrich → Export 的多 agent 协作流水线。
@@ -21,13 +21,13 @@ deepsec 的架构代表了一种新型 AI-native 安全扫描范式：不是用 
 - **团队安全知识不足时的价值**：deepsec 可以部分替代不够深入的内部安全 review。但不能替代专业安全工程师——复杂逻辑漏洞、auth bypass 的边界情况、业务逻辑漏洞等仍需要人类专家判断。
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [The best argument I've heard for why AI won't take your job](/ch01-705-the-best-argument-i-ve-heard-for-why-ai-won-t-take-your-job/)
+- [The best argument I've heard for why AI won't take your job](../ch01-705-the-best-argument-i-ve-heard-for-why-ai-won-t-take-your-job)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)
 
-- [How Superset built the IDE for AI agents on Vercel](/ch01-058-how-superset-built-the-ide-for-ai-agents-on-vercel/)
+- [How Superset built the IDE for AI agents on Vercel](../ch01-058-how-superset-built-the-ide-for-ai-agents-on-vercel)
 
 ---
 

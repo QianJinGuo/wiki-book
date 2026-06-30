@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/rubygems-temp-disable-registrations.md`
 
-## RubyGems 暂停新用户注册：DDoS + 恶意包供应链攻击事件
+# RubyGems 暂停新用户注册：DDoS + 恶意包供应链攻击事件
 
 > **来源**: status.rubygems.org · 2026-05-12 ~ 2026-05-13
 
@@ -12,7 +12,7 @@
 
 2026 年 5 月，rubygems.org 遭受 DDoS 攻击与恶意包投放的组合打击。攻击者通过自动化机器人账户批量注册并推送 500+ 恶意 gem 包。RubyGems 团队在数小时内完成响应：封禁机器人账户、下架恶意包、暂停新注册，并计划启用 Fastly WAF + 账户创建速率限制。现有用户的 gem 安装和推送不受影响。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rubygems-temp-disable-registrations.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rubygems-temp-disable-registrations.md)
 
 ## 核心要点
 
@@ -112,7 +112,7 @@ RubyGems 的响应体现了**纵深防御**理念：
 
 ## 相关实体
 
-- 软件安全
+- [软件安全](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)
 
 ---
 

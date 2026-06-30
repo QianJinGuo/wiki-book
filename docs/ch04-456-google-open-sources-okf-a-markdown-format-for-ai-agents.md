@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/implicator.md`
 
-## Google Open-Sources OKF, a Markdown Format for AI Agents
+# Google Open-Sources OKF, a Markdown Format for AI Agents
 
 > **背景**：从 newsletter candidates 提取，2026-06-18 v×c=49 stars=4 通过评分门槛。
 > URL: https://www.implicator.ai/google-open-sources-a-knowledge-format-and-wires-it-into-its-catalog/
@@ -49,7 +49,7 @@ The specification is precise about its limits. In its opening section, [OKF list
 
 ## 相关
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/implicator.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/implicator.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/alphaevolve-impact.md`
 
-## AlphaEvolve: Gemini-powered coding agent scaling impact across fields
+# AlphaEvolve: Gemini-powered coding agent scaling impact across fields
 
 <div class="button-group skip-link"><a class="button button--tonal" href=#page-content>Skip to main content</a></div><div aria-hidden=true class=svg-sprite-container><svg xmlns=http://www.w3.org/2000/svg><defs><svg viewbox="0 0 24 24" id=chevron-left>
 <path d="M16.41 5.41L15 4l-8 8 8 8 1.41-1.41L9.83 12"></path></svg><svg viewbox="0 0 24 24" id=chevron-right>
@@ -13,13 +13,13 @@
 <path d="M5.41 7.59L4 9l8 8 8-8-1.41-1.41L12 14.17"></path></svg><svg viewbox="0 0 24 24" id=arrow-back>
 
 ## 相关实体
-- [Alphaevolve Deepmind Discovery Agent](/ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d/)
-- [Agentmemory Source Analysis Coding Agent Local Memory](/ch09-034-agentmemory/)
-- [Alphaevolve Impact Deepmind](/ch04-372-alphaevolve-impact-deepmind/)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Ai Coding Agent Memory System](/ch04-288-ai-coding-agent-记忆系统/)
+- [Alphaevolve Deepmind Discovery Agent](../ch01-466-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d)
+- [Agentmemory Source Analysis Coding Agent Local Memory](../ch09-034-agentmemory)
+- [Alphaevolve Impact Deepmind](../ch04-372-alphaevolve-impact-deepmind)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [Ai Coding Agent Memory System](../ch04-288-ai-coding-agent-记忆系统)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alphaevolve-impact.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alphaevolve-impact.md)
 
 ## 深度分析
 

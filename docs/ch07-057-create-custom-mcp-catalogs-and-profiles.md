@@ -6,7 +6,7 @@
 
 ## 核心要点
 -
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/create-custom-mcp-catalogs-and-profiles.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/create-custom-mcp-catalogs-and-profiles.md)
 
 ## 深度分析
 ### 企业 MCP 治理的结构性需求
@@ -19,7 +19,7 @@ Profiles 的设计目标不仅是"分组"，更是**上下文隔离**。当 Agen
 将 Catalog 和 Profile 都作为 OCI artifact 分发，意味着它们天然继承了容器镜像的访问控制语义——私有 Catalog 只需在 Docker Hub（或任意 OCI registry）上设置仓库级权限，无需引入新的基础设施。这一设计将 MCP 的分发层与已有的企业容器安全体系打通，对于已有一套 Docker 镜像管理流程的组织，采纳成本几乎为零。
 
 ### 平台与个人的分工边界
-文章的核心观点是：Custom Catalogs 定义"组织推荐什么"，Profiles 定义"个人如何工作"。这一分离让平台团队承担治理责任（可信服务器清单、版本稳定性），同时保留个人灵活度（工具组合、配置细节、跨项目迁移）。这种分层设计是[混合云 MCP 运维场景](/ch07-039-aws-devops-agent-mcp-server-打通混合云网络排障的最后一公里/)中同样适用的原则——基础设施团队提供标准化的 MCP server，而使用它们的 Agent workflow 由业务团队自行掌控。
+文章的核心观点是：Custom Catalogs 定义"组织推荐什么"，Profiles 定义"个人如何工作"。这一分离让平台团队承担治理责任（可信服务器清单、版本稳定性），同时保留个人灵活度（工具组合、配置细节、跨项目迁移）。这种分层设计是[混合云 MCP 运维场景](../ch07-039-aws-devops-agent-mcp-server-打通混合云网络排障的最后一公里)中同样适用的原则——基础设施团队提供标准化的 MCP server，而使用它们的 Agent workflow 由业务团队自行掌控。
 
 ## 实践启示
 **对于平台/基础设施团队**：从自定义 Catalog 开始，先将内部自建的 MCP server 纳入可信清单，再逐步引入社区服务器作为可选扩展。Catalog 的迭代周期应与内部工具审批流程对齐。
@@ -27,12 +27,12 @@ Profiles 的设计目标不仅是"分组"，更是**上下文隔离**。当 Agen
 **对于安全/治理团队**：关注文章提到的下一步方向——governance and policy controls。若 Profile 能与 SSO/权限系统绑定，Profiles 有潜力成为 MCP 时代的"设备管理"层。
 
 ## 关联阅读
-- [— 12 种 Agent 连接外部工具的工程模式，与 Catalogs/Profiles 的设计思路高度互补](/ch07-060-anthropic-官方生产级-agent-最佳实践-12-个可复用的-mcp-设计模式/)
+-  — 12 种 Agent 连接外部工具的工程模式，与 Catalogs/Profiles 的设计思路高度互补
 -  — 混合云场景下的 MCP 实际运维闭环实践
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

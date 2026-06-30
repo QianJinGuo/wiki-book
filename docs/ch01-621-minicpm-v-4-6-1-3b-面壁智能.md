@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/minicpm-v-46-13b.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/minicpm-v-46-13b-xinazhiyuan.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/minicpm-v-46-13b-xinazhiyuan.md)
 
-## MiniCPM-V 4.6 (1.3B) 面壁智能
+# MiniCPM-V 4.6 (1.3B) 面壁智能
 **机构**：面壁智能 + 清华大学    
 **产品**：MiniCPM-V 4.6    
 **原始链接**：https://mp.weixin.qq.com/s/_KJYvvvte-7_rMZ9y9jCyQ    
@@ -53,11 +53,11 @@ MiniCPM-V 4.6（1.3B）的核心价值主张是"在端侧可运行的GPT-4V级�
 - `MiniCPM微信解析` — 面壁多模态模型的完整解析
 
 ## 相关实体
-- [Hermes Agent Closed Learning Loop](/ch01-326-hermes-agent-closed-learning-loop/)
-- [How Open Model Ecosystems Compound](/ch01-651-how-open-model-ecosystems-compound/)
-- [Factory Mission Multi Agent Architecture](/ch01-864-factory-mission-multi-agent-architecture/)
-- [Agentium Agent Framework](/ch01-870-agentium-从零实现-agent-系统的开源框架/)
-- [Cheriot Ibex Memory Safety Hardware Enforcement](/ch01-504-cheriot-ibex-closing-the-door-on-memory-safety-vulnerabilit/)
+- [Hermes Agent Closed Learning Loop](../ch01-326-hermes-agent-closed-learning-loop)
+- [How Open Model Ecosystems Compound](../ch01-651-how-open-model-ecosystems-compound)
+- [Factory Mission Multi Agent Architecture](../ch01-864-factory-mission-multi-agent-architecture)
+- [Agentium Agent Framework](../ch01-870-agentium-从零实现-agent-系统的开源框架)
+- [Cheriot Ibex Memory Safety Hardware Enforcement](../ch01-504-cheriot-ibex-closing-the-door-on-memory-safety-vulnerabilit)
 
 ---
 

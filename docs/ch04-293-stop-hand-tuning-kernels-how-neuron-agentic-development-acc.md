@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/stop-hand-tuning-kernels-how-neuron-agentic-development-acce.md`
 
-## Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations
+# Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stop-hand-tuning-kernels-how-neuron-agentic-development-acce.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stop-hand-tuning-kernels-how-neuron-agentic-development-acce.md)
 
 ## 摘要
 
@@ -74,14 +74,14 @@ Step 3-4 展示 SwiGLU MLP 内核的性能分析：
 
 ## 相关实体
 
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](/ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew/) — AgentCore 安全配置
-- [Agentcore Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/) — AgentCore 工程化
-- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](/ch04-214-build-an-ai-powered-equipment-repair-assistant-using-amazon/) — AgentCore + Strands 实践
-- [Agent Deployment Strategy — Agent 部署策略](/ch04-023-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent/)
-- [Agent Loop Design — Agent 循环设计](/ch04-294-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
-- [Aws Ai Services — AWS AI 服务](/ch09-009-ai-驱动的跨云网络搭建-用-claude-code-和-kiro-cli-实现-aws-腾讯云-ipsec-vpn-双/)
-- [Cloud Ai Infrastructure — 云 AI 基础设施](/ch04-408-agentic-ai-infrastructure-practice-series-9-context-enginee/)
-- [Open Source Agent Frameworks — 开源 Agent 框架](/ch01-357-cline-releases-open-source-agent-runtime-sdk/)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04-255-building-a-secure-auth-code-flow-setup-using-agentcore-gatew) — AgentCore 安全配置
+- [Agentcore Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施) — AgentCore 工程化
+- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](../ch04-214-build-an-ai-powered-equipment-repair-assistant-using-amazon) — AgentCore + Strands 实践
+- [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
+- [Agent Loop Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) — Agent 循环设计
+- [Aws Ai Services](https://github.com/QianJinGuo/wiki/blob/main/concepts/aws-ai-services.md) — AWS AI 服务
+- [Cloud Ai Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/concepts/cloud-ai-infrastructure.md) — 云 AI 基础设施
+- [Open Source Agent Frameworks](https://github.com/QianJinGuo/wiki/blob/main/concepts/open-source-agent-frameworks.md) — 开源 Agent 框架
 
 ---
 

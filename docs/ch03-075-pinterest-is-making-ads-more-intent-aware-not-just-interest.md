@@ -101,12 +101,12 @@ Pinterest 新广告定向整合了三类实时信号：
    - 官网的搜索和浏览数据
    构建自己的第一方意图信号，用于精准再营销。
 ## 相关实体
-- [Almcorp Google Ads Expanded Experiment V24 1](/ch03-109-google-ads-expanded-experiment-support-in-v24-1-what-change/)
+- [Almcorp Google Ads Expanded Experiment V24 1](../ch03-109-google-ads-expanded-experiment-support-in-v24-1-what-change)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pinterest-intent-aware-ads-wersm.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pinterest-intent-aware-ads-wersm.md)
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/digital-commerce-ai-agent-scenarios-challenges.md)
 
 ---
 

@@ -4,23 +4,23 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md`
 
-## Agent-guided workflows to accelerate model customization in Amazon SageMaker AI
+# Agent-guided workflows to accelerate model customization in Amazon SageMaker AI
 Every organization has access to the same foundation models. The real competitive advantage comes from customizing them with your proprietary data and domain expertise. But getting there is complex, even for experienced teams. It requires mastering fine-tuning techniques like Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and Reinforcement Learning Verifiable Rewards (RLVR), navigating fragmented APIs and model-specific data formats, designing rigorous evaluations, and managing months-long experiment cycles.
-[Amazon SageMaker AI](/ch04-<https://aws.amazon.com/sagemaker/ai/>/) now offers an agentic experience that changes this. Developers describe their use case using natural language, and the AI coding agent streamlines the entire journey, from use case definition and data preparation through technique selection, evaluation, and deployment. Purpose-built agent skills deliver specialized expertise on fine-tuning applied to your specific use case, data transformation to required formats, quality evaluation using LLM-as-a-Judge metrics, and flexible deployment to [Amazon Bedrock](/ch04-<https://aws.amazon.com/bedrock/>/) or SageMaker AI endpoints. Agent skills for model customization not only boost productivity but also decrease token usage. All generated code is fully editable, producing reusable artifacts that integrate seamlessly into existing workflows.
-What makes this experience truly powerful is [agent Skills for model customization](/ch04-<https://github.com/awslabs/agent-plugins/tree/main/plugins/sagemaker-ai>/). They are pre-built, modular instruction sets that encode deep AWS and data science expertise across the entire customization lifecycle. When you describe your use case, the AI coding agent activates the relevant skills, guiding it through data preparation and validation, technique selection, hyperparameter configuration, model evaluation, and deployment. Skills provide specialized knowledge about SageMaker AI APIs, ML workflows, best practices, and common patterns, enabling your coding agent to provide more accurate, SageMaker AI-specific guidance, generating ready-to-run notebooks at each step. Skills are fully customizable, so you can modify them to match your team's workflows, governance standards, and tooling preferences, enabling reproducible organizational best practices, a common challenge with general-purpose coding assistants.
+[Amazon SageMaker AI](../ch04-<https://aws.amazon.com/sagemaker/ai/>) now offers an agentic experience that changes this. Developers describe their use case using natural language, and the AI coding agent streamlines the entire journey, from use case definition and data preparation through technique selection, evaluation, and deployment. Purpose-built agent skills deliver specialized expertise on fine-tuning applied to your specific use case, data transformation to required formats, quality evaluation using LLM-as-a-Judge metrics, and flexible deployment to [Amazon Bedrock](../ch04-<https://aws.amazon.com/bedrock/>) or SageMaker AI endpoints. Agent skills for model customization not only boost productivity but also decrease token usage. All generated code is fully editable, producing reusable artifacts that integrate seamlessly into existing workflows.
+What makes this experience truly powerful is [agent Skills for model customization](../ch04-<https://github.com/awslabs/agent-plugins/tree/main/plugins/sagemaker-ai>). They are pre-built, modular instruction sets that encode deep AWS and data science expertise across the entire customization lifecycle. When you describe your use case, the AI coding agent activates the relevant skills, guiding it through data preparation and validation, technique selection, hyperparameter configuration, model evaluation, and deployment. Skills provide specialized knowledge about SageMaker AI APIs, ML workflows, best practices, and common patterns, enabling your coding agent to provide more accurate, SageMaker AI-specific guidance, generating ready-to-run notebooks at each step. Skills are fully customizable, so you can modify them to match your team's workflows, governance standards, and tooling preferences, enabling reproducible organizational best practices, a common challenge with general-purpose coding assistants.
 
 ## Amazon Kiro in SageMaker AI Studio JupyterLab
 
 ## 相关实体
-- [Aws Reinforcement Fine Tuning Llm As Judge](/ch01-437-aws-reinforcement-fine-tuning-llm-as-judge/)
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](/ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议/)
-- [Agent Workflows](/ch04-306-agent-workflows/)
-- [Habby Game Aws Devops Agent](/ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践/)
-- [将 Aws Devops Agent 智能运维能力延伸到中国区](/ch11-153-将-aws-devops-agent-智能运维能力延伸到中国区/)
+- [Aws Reinforcement Fine Tuning Llm As Judge](../ch01-437-aws-reinforcement-fine-tuning-llm-as-judge)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议)
+- [Agent Workflows](../ch04-306-agent-workflows)
+- [Habby Game Aws Devops Agent](../ch04-280-habby-游戏借助-aws-devops-agent-实现智能运维最佳实践)
+- [将 Aws Devops Agent 智能运维能力延伸到中国区](../ch11-153-将-aws-devops-agent-智能运维能力延伸到中国区)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 深度分析
 
 SageMaker AI 的 Agent 化工作流代表了企业 AI 定制领域的一次范式转变。传统微调需要团队具备深厚的 ML 专业知识，掌握 SFT/DPO/RLVR 等多种技术，理解碎片化的 API 和模型特定数据格式，并投入数月的实验周期。这种复杂性导致大多数组织无法真正释放定制化模型的价值。SageMaker AI 通过将整个生命周期编码为模块化 Agent 技能，使这一门槛大幅降低 。

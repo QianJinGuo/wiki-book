@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 3.7KB | `entities/senior-engineer-guide-inside-llm.md`
 
-## Everything a Senior Engineer Needs to Know About What's Inside an LLM
+# Everything a Senior Engineer Needs to Know About What's Inside an LLM
 
 > **来源**: [Everything a Senior Engineer Needs to Know About What's Inside an LLM](https://www.pathtostaff.com/p/everything-a-senior-engineer-needs)
 
@@ -41,7 +41,7 @@ Recurrent neural networks take this one step further, with a built-in memory loo
 
 ## 原文存档
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/senior-engineer-guide-inside-llm.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/senior-engineer-guide-inside-llm.md)
 
 ---
 

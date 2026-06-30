@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/zalando-client-side-load-balancing-million-rps.md`
 
-## Client-Side Load Balancing at a Million Requests Per Second
+# Client-Side Load Balancing at a Million Requests Per Second
 
 Zalando 在百万 RPS 级别的客户端负载均衡工程实践，从服务发现到连接管理的完整技术栈。
 
@@ -48,7 +48,7 @@ This means that adding or removing an endpoint remaps only about 1/N of keys, mi
 
 We wrote it as a standalone, framework-free JVM module with the long-term intention of lifting it out of this service. Its only real dependency is a small zero-allocation hashing library, for the xxHash64 that matches Skipper; everything else, the ring, the occupancy accounting, the bounded-load 
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/zalando-client-side-load-balancing-million-rps.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/zalando-client-side-load-balancing-million-rps.md)
 
 ---
 

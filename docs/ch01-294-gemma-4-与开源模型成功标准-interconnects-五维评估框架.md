@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐⭐ | 12.5KB | `entities/gemma-4-open-model-adoption-framework-interconnects.md`
 
-## Gemma 4 与开源模型成功标准 —— Interconnects 五维评估框架
+# Gemma 4 与开源模型成功标准 —— Interconnects 五维评估框架
 
 > **TL;DR**: Interconnects 作者（Nathan Lambert）2026-04-03 提出的开源模型成败评估框架：5 个维度（性能 + 国别 + 许可证 + 工具链成熟度 + 微调可行性）共同决定模型是否成功。Gemma 4 通过采用 Apache 2.0 + 5B/8B/26B/31B 多尺寸 + 31B 性能对齐 Qwen 3.5 27B 三个关键决策，"有可能成为美国开源阵营的下一个标杆"。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemma-4-and-what-makes-an-open-model-succeed.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemma-4-and-what-makes-an-open-model-succeed.md)
 
 ## 1. 核心论点：开源模型不是"benchmark 一锤定音"
 
@@ -97,10 +97,10 @@
 
 ## 7. 与现有 entity 的关系
 
-- [Interconnects What Comes Next With Open Models](/ch01-169-what-comes-next-with-open-models/)（29KB，2026-06-08 入库）—— 战略层：开源模型赢面分析 + Anthropic 关系 + DeepSeek 节点。本 entity 是其**战术层补全**：5 维评估框架 + Gemma 4 案例。
-- [Gemma 4 12B Google Multimodal Local](/ch01-272-multimodal/)（10KB，2026-06-04）—— Gemma 4 12B 扔掉编码器的技术架构。本 entity 不重复技术规格，专注"为什么 Gemma 4 可能成功"的元层面。
-- [Gemma 4 Multi Token Prediction Drafters](/ch01-214-gemma-4-multi-token-prediction-drafters/)（15KB，2026-06-05）—— Multi-token prediction 训练技巧。本 entity 不涉及。
-- [Google Brings Local Ai Agents To Laptops With Gemma 4 12B 20260606](/ch01-701-google-brings-local-ai-agents-to-laptops-with-gemma-4-12b/)（产品公告）—— 与本 entity 互补：产品落地方向 vs 生态评估框架。
+- [Interconnects What Comes Next With Open Models](../ch01-169-what-comes-next-with-open-models)（29KB，2026-06-08 入库）—— 战略层：开源模型赢面分析 + Anthropic 关系 + DeepSeek 节点。本 entity 是其**战术层补全**：5 维评估框架 + Gemma 4 案例。
+- [Gemma 4 12B Google Multimodal Local](../ch01-272-multimodal)（10KB，2026-06-04）—— Gemma 4 12B 扔掉编码器的技术架构。本 entity 不重复技术规格，专注"为什么 Gemma 4 可能成功"的元层面。
+- [Gemma 4 Multi Token Prediction Drafters](../ch01-214-gemma-4-multi-token-prediction-drafters)（15KB，2026-06-05）—— Multi-token prediction 训练技巧。本 entity 不涉及。
+- [Google Brings Local Ai Agents To Laptops With Gemma 4 12B 20260606](../ch01-701-google-brings-local-ai-agents-to-laptops-with-gemma-4-12b)（产品公告）—— 与本 entity 互补：产品落地方向 vs 生态评估框架。
 
 ## 8. 实践启示
 

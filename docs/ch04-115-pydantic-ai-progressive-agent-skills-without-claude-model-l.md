@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.0KB | `entities/pydantic-ai-progressive-agent-skills-automatorrunner.md`
 
-> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pydantic-ai-progressive-agent-skills-automatorrunner.md)
+> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pydantic-ai-progressive-agent-skills-automatorrunner.md)
 
 ## 摘要
 
@@ -157,11 +157,11 @@ Pydantic AI：`RunContext[DepsType]` 依赖注入——IDE 自动补全，静态
 
 ## 相关实体
 
-- [Pydantic Three Piece Suite Yunduo](/ch04-104-pydantic-早就不只是校验了-rust-引擎-可观测-agent-类型约束-含-agentcanvas/) — Pydantic 三件套（pydantic-core / Logfire / Pydantic AI）生态全景
-- [`Tencent Ai Infra Backend Engineer Huangrunpeng` — Python-first AI 框架的另一视角](/ch01-285-tencent-ai-infra-backend-engineer-s-guide-to-ai-system-hard/)
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — Agent 工程化的更高层抽象
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pydantic-ai-progressive-agent-skills-automatorrunner.md)
-- [面向 skills 编程：大淘宝企业购 5 阶段演进与 anthropic agent skills 标准实战](/ch04-034-面向-skills-编程-大淘宝企业购-5-阶段演进与-anthropic-agent-skills-标准实战/)
+- [Pydantic Three Piece Suite Yunduo](../ch04-104-pydantic-早就不只是校验了-rust-引擎-可观测-agent-类型约束-含-agentcanvas) — Pydantic 三件套（pydantic-core / Logfire / Pydantic AI）生态全景
+- `Tencent Ai Infra Backend Engineer Huangrunpeng` — Python-first AI 框架的另一视角
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 工程化的更高层抽象
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pydantic-ai-progressive-agent-skills-automatorrunner.md)
+- [面向 skills 编程：大淘宝企业购 5 阶段演进与 anthropic agent skills 标准实战](../ch04-034-面向-skills-编程-大淘宝企业购-5-阶段演进与-anthropic-agent-skills-标准实战)
 
 ---
 

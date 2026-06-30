@@ -5,22 +5,22 @@
 > 📊 Level ⭐⭐ | 9.1KB | `entities/十年老技术开发的-ai-agent-探索之路-v2.md`
 
 ## 相关实体
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](/ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f/)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](/ch07-029-qoder-skills-完全指南/)
-- [柚漫剧 AI 全流程提效拆解](/ch01-356-柚漫剧-ai-全流程提效拆解/)
-- [Agent Skill 设计模式](/ch01-677-anthropic/)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](/ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化/)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](/ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器/)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04-356-introducing-aimap-security-testing-for-ai-agent-bishop-f)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07-029-qoder-skills-完全指南)
+- [柚漫剧 AI 全流程提效拆解](../ch01-356-柚漫剧-ai-全流程提效拆解)
+- [Agent Skill 设计模式](../ch01-677-anthropic)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch01-218-我们刚过了人类最后一个劳动节-ai新职业的八个变化)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch01-548-cdp-bridge-mcp-让-llm-操作真实浏览器)
 
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
-- [ai agent memory systems](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](/ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills/)
-- [Garry Tan](/ch01-497-garry-tan/)
-- [Agent Workflows](/ch04-306-agent-workflows/)
-- [Hermes Agent 新手上手指南](/ch04-418-hermes-agent/)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
-- [十年老技术开发的 AI Agent 探索之路](/ch04-022-十年老技术开发的-ai-agent-探索之路/)- [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路/)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](/ch04-022-十年老技术开发的-ai-agent-探索之路/)- [四种 Sub Agent 模式](/ch04-302-四种-sub-agent-模式/) 
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格)
+- [ai agent memory systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04-234-精选-10-个开发者常用的-ai-智能体技能-agent-skills)
+- [Garry Tan](../ch01-497-garry-tan)
+- [Agent Workflows](../ch04-306-agent-workflows)
+- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布)
+- [十年老技术开发的 AI Agent 探索之路](../ch04-022-十年老技术开发的-ai-agent-探索之路)- [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](../ch04-022-十年老技术开发的-ai-agent-探索之路)- [四种 Sub Agent 模式](../ch04-302-四种-sub-agent-模式) 
 
 ## 深度分析
 ### 范式转移：人是瓶颈，但解决方式不是替代人

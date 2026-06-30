@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/the-shape-of-the-thing-mollick.md`
 
-## The Shape of the Thing：AI 指数曲线·软件工厂·滚动颠覆（Mollick 2026-03）
+# The Shape of the Thing：AI 指数曲线·软件工厂·滚动颠覆（Mollick 2026-03）
 
 > 2026-06-07 引用自 Ethan Mollick《The Shape of the Thing》，One Useful Thing，2026-03-12。
 
@@ -81,10 +81,10 @@ Mollick 的核心论点：**我们可以看到 Shape of the Thing，但我们仍
 
 ## 相关主题
 
-- Jagged Ai Frontier Mollick — Jagged Frontier / Bottleneck / Reverse Salient（Mollick 的能力地图框架）
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](/ch04-181-co-existence-vs-co-intelligence-mollick-s-paradigm-shift-on/) — Co-Existence 范式（Mollick 2026-06 更新，更激进的 agentic 叙事）
-- [Management As Ai Superpower Mollick](/ch01-412-management-as-ai-superpower/) — 管理作为 AI 超级能力（同一作者，delegation 方程）
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-shape-of-the-thing.md)
+- [Jagged Ai Frontier Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/jagged-ai-frontier-mollick.md) — Jagged Frontier / Bottleneck / Reverse Salient（Mollick 的能力地图框架）
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch04-181-co-existence-vs-co-intelligence-mollick-s-paradigm-shift-on) — Co-Existence 范式（Mollick 2026-06 更新，更激进的 agentic 叙事）
+- [Management As Ai Superpower Mollick](../ch01-412-management-as-ai-superpower) — 管理作为 AI 超级能力（同一作者，delegation 方程）
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-shape-of-the-thing.md)
 
 ## 深度分析
 

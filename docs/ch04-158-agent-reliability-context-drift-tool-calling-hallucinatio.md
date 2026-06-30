@@ -71,38 +71,38 @@ Agent 运行多轮后可靠性的两个核心问题：
 ---
 
 ## 与 vault 知识关联
-- [Agent Harness 架构](/ch04-207-agent-harness-架构/) — Context Manager 处理上下文；工具调用校验是 Harness 层的职责
-- [Ralph Loop + Harness Takeover](/ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness/) — 长周期 Agent 的可靠性机制，与本文上下文漂移问题高度相关
-- Multi-Agent Systems — 多 Agent 协作中，每个 Agent 的上下文漂移问题会叠加放大
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kamacoder-agent-context-drift-tool-hallucination.md)
+- [Agent Harness 架构](../ch04-207-agent-harness-架构) — Context Manager 处理上下文；工具调用校验是 Harness 层的职责
+- [Ralph Loop + Harness Takeover](../ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness) — 长周期 Agent 的可靠性机制，与本文上下文漂移问题高度相关
+- [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作中，每个 Agent 的上下文漂移问题会叠加放大
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kamacoder-agent-context-drift-tool-hallucination.md)
 
 ## 相关实体
-- [阿里云 EventHouse 企业级 Agent 上下文供给体系](/ch11-040-阿里云-eventhouse-企业级-agent-上下文构建五维框架/)
-- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](/ch04-460-智能体编排层中的上下文管理架构/)
-- [Agent Harness 上下文管理：工作集视角](/ch05-038-agent生产级harness工程指南/)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](/ch07-053-cli系列④-选型cli-mcp还是api/)
-- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](/ch05-020-martin-fowler-ai-研发-harness-非确定性承重层/)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](/ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
-- [Harness Design Peer Review Framework](/ch11-235-agentscope-java-harness-framework-企业级-agent-分布式场景的-harness/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-367-claude-code-harness-deep-understanding/)
-- [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制/)
-- [Agent 自我改进的六条路](/ch04-047-agent-自我改进的六条路/)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-126-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
-- [Harness如何支撑Agent在生产环境稳定运行？](/ch04-127-harness如何支撑agent在生产环境稳定运行/)
-- [Agent架构关键变化：Harness正在成为新后端](/ch04-027-agent架构关键变化-harness正在成为新后端/)
-- [你不知道的 Agent 原理架构与工程实践](/ch04-300-agent-principle-architecture-engineering-practice/)
-- [AI Coding Agent 记忆系统](/ch04-288-ai-coding-agent-记忆系统/)
-- [柚漫剧 AI 全流程提效拆解](/ch01-356-柚漫剧-ai-全流程提效拆解/)
-- [Agent Skill 设计模式](/ch01-677-anthropic/)
-- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/)
-- [Coding Harness 工程本质](/ch05-032-coding-harness-pi-openclaw/)
-- [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/)
-- [Design Patterns for AI Agents 2026](/ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl/)
+- [阿里云 EventHouse 企业级 Agent 上下文供给体系](../ch11-040-阿里云-eventhouse-企业级-agent-上下文构建五维框架)
+- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch04-460-智能体编排层中的上下文管理架构)
+- [Agent Harness 上下文管理：工作集视角](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch07-053-cli系列④-选型cli-mcp还是api)
+- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s)
+- [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05-020-martin-fowler-ai-研发-harness-非确定性承重层)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness)
+- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-367-claude-code-harness-deep-understanding)
+- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制)
+- [Agent 自我改进的六条路](../ch04-047-agent-自我改进的六条路)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-116-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-126-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch04-127-harness如何支撑agent在生产环境稳定运行)
+- [Agent架构关键变化：Harness正在成为新后端](../ch04-027-agent架构关键变化-harness正在成为新后端)
+- [你不知道的 Agent 原理架构与工程实践](../ch04-300-agent-principle-architecture-engineering-practice)
+- [AI Coding Agent 记忆系统](../ch04-288-ai-coding-agent-记忆系统)
+- [柚漫剧 AI 全流程提效拆解](../ch01-356-柚漫剧-ai-全流程提效拆解)
+- [Agent Skill 设计模式](../ch01-677-anthropic)
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
+- [Thin Harness Fat Skills](../ch05-063-thin-harness-fat-skills-ai工程架构的本质)
+- [Design Patterns for AI Agents 2026](../ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl)
 
 ## 深度分析
 ### 上下文漂移的注意力机制深层根因

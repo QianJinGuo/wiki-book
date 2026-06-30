@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/langchain-100x-cheaper-trace-judge-fireworks.md`
 
-## LangChain × Fireworks 100x Cheaper Trace Judge — 通用 trace 评估器
+# LangChain × Fireworks 100x Cheaper Trace Judge — 通用 trace 评估器
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langchain-100x-cheaper-trace-judge-fireworks.md)
+> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langchain-100x-cheaper-trace-judge-fireworks.md)
 
 ## 背景
 
@@ -83,11 +83,11 @@ LangChain 通常推荐团队构建**应用特定的评估器**（因为判断 tr
 ## 原文链接
 
 ## 相关实体
-- [langsmith engine: trace-based self-improving agent](/ch04-037-langsmith-engine-trace-based-self-improving-agent/)
-- [skillsui 企业 agent 中间层](/ch03-093-skillsui/)
-- [gaode uplift model iteration agent long running harness](/ch01-720-gaode-uplift-model-iteration-agent-long-running-harness/)
+- [langsmith engine: trace-based self-improving agent](../ch04-037-langsmith-engine-trace-based-self-improving-agent)
+- [skillsui 企业 agent 中间层](../ch03-093-skillsui)
+- [gaode uplift model iteration agent long running harness](../ch01-720-gaode-uplift-model-iteration-agent-long-running-harness)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langchain-100x-cheaper-trace-judge-fireworks.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langchain-100x-cheaper-trace-judge-fireworks.md)
 
 ---
 

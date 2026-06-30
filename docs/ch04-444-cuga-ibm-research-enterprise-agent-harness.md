@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/cuga-ibm-research-agent-harness-enterprise.md`
 
-## CUGA: IBM Research Enterprise Agent Harness
+# CUGA: IBM Research Enterprise Agent Harness
 
 > **Background**: Based on IBM Research's CUGA (Configurable Generalist Agent) technical blog published on HuggingFace, analyzing the framework's architecture, core components, and 24 practical examples.
 
@@ -87,7 +87,7 @@ CUGA's core competitive advantage is **24 ready-to-use examples** covering commo
 2. **24 Production Examples** — Most comprehensive example suite of any agent harness framework
 3. **Plumbing-over-AI Philosophy** — Explicit design principle that infrastructure > model magic
 
-→ [Original Article Archive](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cuga-ibm-research-agent-harness-enterprise.md)
+→ [Original Article Archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cuga-ibm-research-agent-harness-enterprise.md)
 
 ---
 

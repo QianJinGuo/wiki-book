@@ -5,7 +5,7 @@
 > 📊 Level ⭐⭐ | 7.8KB | `entities/litellm-websearch-interception-bedrock-vertex-azure.md`
 
 > [!abstract] **WebSearch Interception 是 LiteLLM 在 1.84.0+ 引入的"代理自动加 web search"能力**：当上游 provider（Bedrock/Vertex/Azure）本身不暴露原生 web search 工具时，LiteLLM 中间层会拦截 LLM 的 tool call 调用，自动改走本地 SearXNG 实例执行搜索，把结果以 Anthropic `web_search_20250305` 工具的格式回传给模型。整篇文章是 AWS China Blog 2026-06-12 发布的一份"踩坑 + 配置 + 调用 + 引用实现"实操手册，价值在于把 LiteLLM 官方文档没写清楚的版本要求、env 变量命名、agentic loop 限制全部用实跑案例补齐。
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/bedrock-claude-litellm-websearch-interception-配置指南.md)
+> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bedrock-claude-litellm-websearch-interception-配置指南.md)
 
 ## 三个独有贡献（与现有 3 篇 LiteLLM entity 互补）
 
@@ -85,10 +85,10 @@ services:
 
 - **同类实体**：`building-web-search-enabled-agents-with-strands-and-exa` — Strands SDK + Exa 实现的 web search agent（不同技术栈对比）
 - **AWS China Blog 同期 LiteLLM 矩阵**：
-  - [LiteLLM 生产级部署](/ch11-085-litellm-生产级部署-aws-ecs-eks-双方案-control-plane-data-plane-分/)
-  - [LiteLLM Bedrock 成本管控](/ch11-041-litellm-驱动的-amazon-bedrock-成本治理-四层防护体系/)
-  - [LiteLLM QuickSight 可视化](/ch11-109-litellm-amazon-quicksight-数据可视化配置-s3-athena-aurora-三层数/)
-- 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/bedrock-claude-litellm-websearch-interception-配置指南.md)
+  - [LiteLLM 生产级部署](../ch11-085-litellm-生产级部署-aws-ecs-eks-双方案-control-plane-data-plane-分)
+  - [LiteLLM Bedrock 成本管控](../ch11-041-litellm-驱动的-amazon-bedrock-成本治理-四层防护体系)
+  - [LiteLLM QuickSight 可视化](../ch11-109-litellm-amazon-quicksight-数据可视化配置-s3-athena-aurora-三层数)
+- 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bedrock-claude-litellm-websearch-interception-配置指南.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/agentic-rl-token-in-token-out.md`
 
-## Agentic RL: Token-In, Token-Out Done Right
+# Agentic RL: Token-In, Token-Out Done Right
 
 ## 深度分析
 
@@ -111,14 +111,14 @@ Most of the time you don’t think about it. You feed messages, you get tokens, 
 Multi-turn is where it starts to matter. When the assistant emits tokens, you d
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
-- [Skill Os Learning Skill Curation Self Evolving Agents](/ch04-133-skillos-learning-skill-curation-for-self-evolving-agents/)
-- [Hermes Agent Deep Dive](/ch04-418-hermes-agent/)
-- [Baixing Ontoz Enterprise Ontology Multi Agent](/ch04-131-百型智能-ontoz-企业本体论-群智能体协同体系-出海企业数字大脑-palantir-中国类比/)
-- [Yann Dubois Openai Post Training Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
-- MOC
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
+- [Skill Os Learning Skill Curation Self Evolving Agents](../ch04-133-skillos-learning-skill-curation-for-self-evolving-agents)
+- [Hermes Agent Deep Dive](../ch04-418-hermes-agent)
+- [Baixing Ontoz Enterprise Ontology Multi Agent](../ch04-131-百型智能-ontoz-企业本体论-群智能体协同体系-出海企业数字大脑-palantir-中国类比)
+- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-rl-token-in-token-out.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-rl-token-in-token-out.md)
 
 ---
 

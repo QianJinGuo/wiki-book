@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/trace2skill-trajectory-distillation-agent-skills.md`
 
-## Trace2Skill 把"轨迹里的局部经验"蒸馏成可迁移的 Agent Skills
+# Trace2Skill 把"轨迹里的局部经验"蒸馏成可迁移的 Agent Skills
 今天越来越多的 LLM Agent 都在依赖 skills。这里的 skill 是一类结构化、可复用的任务指导文档，包含：什么时候该用某种方法、步骤怎么走、哪些坑最容易踩、哪些脚本/参考资料/辅助文件值得配套。
 问题在于，高质量技能长期靠人工写，扩展速度很慢。自动生成 skill 的已有做法有两个典型问题：
 
@@ -12,13 +12,13 @@
 - 根据新轨迹顺序式更新 skill bank，容易把局部 lesson 直接糊到技能上，得到碎片化、局部过拟合的结果
 
 ## 相关实体
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [Yidian Tianxia Context Engineering Agentic Ai](/ch04-228-yidian-tianxia-context-engineering-agentic-ai/)
-- [Agentic Ai System Architecture Harness Skill Mcp](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
-- [Memory Agent Systems Cobanov](/ch04-458-memory-agent-systems-cobanov/)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [Yidian Tianxia Context Engineering Agentic Ai](../ch04-228-yidian-tianxia-context-engineering-agentic-ai)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真)
+- [Memory Agent Systems Cobanov](../ch04-458-memory-agent-systems-cobanov)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/trace2skill-trajectory-distillation-agent-skills.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/trace2skill-trajectory-distillation-agent-skills.md)
 
 ## 深度分析
 

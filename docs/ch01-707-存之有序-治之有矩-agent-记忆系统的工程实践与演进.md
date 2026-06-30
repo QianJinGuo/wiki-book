@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md`
 
-## 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
+# 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 
 ## 深度分析
 
-## 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
+# 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
 摘要：本文是”解决 Agentic AI 应用 Token 爆炸问题”系列的第三篇，系统讨论 Agent 记忆系统在生产环境的工程税:从写入纪律、Prompt Cache 冲突、跨模型容量、Embedding 迁移到 Agent 自产 Skill 治理,以及 S3 Files / S3 Vectors / AgentCore Memory 在亚马逊云科技上的落地路径。
 
 ### 核心观点
@@ -48,12 +48,12 @@
 
 ### 关联实体
 
-- Headroom Context Compression Agent Vibecoder
-- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](/ch01-529-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务/)
-- [Hermes Agent V014 Architecture Shugex](/ch04-418-hermes-agent/)
-- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](/ch11-014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway/)
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation](/ch01-746-从手动到自动化-用agenteval构建agent评测体系/)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](/ch04-121-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升/)
+- [Headroom Context Compression Agent Vibecoder](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-agent-vibecoder.md)
+- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch01-529-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务)
+- [Hermes Agent V014 Architecture Shugex](../ch04-418-hermes-agent)
+- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11-014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway)
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation](../ch01-746-从手动到自动化-用agenteval构建agent评测体系)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch04-121-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升)
 
 ## 实践启示
 
@@ -64,7 +64,7 @@
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---
 

@@ -12,7 +12,7 @@ Accept Deny Non-Essential
 Skip to main content   
 Don’t miss tomorrow’s Cybersecurity industry news   
 Let Cybersecurity Dive’s fre...   
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/818662.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/818662.md)
 
 ## 深度分析
 **1. 这是一个"行业自发填补政策真空"的典型案例**   
@@ -43,11 +43,11 @@ CISA 已经运营着 Automated Indicator Sharing（AIS）项目和一个行业-s
 - 关注联盟在跨境关键基础设施（如美加电网互联、跨太平洋光缆）安全上的协调能力——这是单一国家监管无法覆盖的领域
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](/ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before/)
-- [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](/ch12-097-sandworm-hackers-shift-from-it-breaches-to-critical-ot-targe/)
-- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](/ch01-677-anthropic/)
+- [CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](../ch12-001-cisa-urges-critical-infrastructure-firms-to-fortify-before)
+- [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](../ch12-097-sandworm-hackers-shift-from-it-breaches-to-critical-ot-targe)
+- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](../ch01-677-anthropic)
 
 ---
 

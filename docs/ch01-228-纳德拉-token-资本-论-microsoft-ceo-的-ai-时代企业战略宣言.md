@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.6KB | `entities/nadella-token-capital-microsoft-ai-economy-2026.md`
 
-## 纳德拉「Token 资本」论 — Microsoft CEO 的 AI 时代企业战略宣言
+# 纳德拉「Token 资本」论 — Microsoft CEO 的 AI 时代企业战略宣言
 
 > [!quote] 核心命题
 > 每家企业必须同时构建两种资本:**人力资本**(员工的知识、判断、人际、创造力)与 **Token 资本**(企业自建、可控、随时间进化的 AI 能力)。Token 资本增长**不削弱**人力资本,**反而放大**它。
@@ -48,14 +48,14 @@
 
 纳德拉的"Token 资本"概念可与 wiki 现有多个 entity 形成对照:
 
-- vs **[Token 经济 Pt2:智能公司的搭建](/ch01-002-the-token-economy-pt2-the-intelligence-company-gets-built/)** — Pt2 关注"智能公司"作为组织形态的工程化;纳德拉关注**资本形态**(二元资本)作为**经济学叙事**。两者互补不重叠。
-- vs **腾讯 Token 经济 AI 生产力** — 腾讯讲**消费量纲**;纳德拉讲**资本形态**。前者是微观 ROI 视角,后者是宏观战略视角。
-- vs **企业 AI 记忆底座 三层架构** — 三层架构 = 知识底座的**工程实现**;纳德拉 Token 资本 = 知识底座背后的**经济学理由**。
-- vs **[Anthropic 缓存 Token 经济](/ch01-677-anthropic/)** — 缓存是**Token 成本优化**的具体技术杠杆;纳德拉说的是**Token 作为资本形态**的存在论层面。
-- vs **[Harness Engineering Long-Term Agent Tasks](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)** — Harness = 工程模式(让 agent 可控);Token 资本 = 经济模式(让企业 AI 资产可积累)。两者构成"Token 资本"的双侧实现。
-- vs **[Agent 时代我们架构师应该学什么](/ch04-400-agent-时代-我们架构师应该学什么/)** — 架构师视角讲**技能升级**;纳德拉讲**企业层面**的资本积累路径。
-- vs **[Microsoft Build 2026 MAI Models Scout Agent](/ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体/)** — 同一作者(Microsoft)在 Build 2026 上主推的是**前沿模型**;本文(纳德拉 X 帖)则**明确警告"前沿模型 ≠ 价值"**。同一个公司的两套话语:产品层 vs 战略层。**这一矛盾本身**值得读者警惕。
-- vs **[Agent 架构关键变化:Harness 正在成为新后端](/ch04-289-agent架构关键变化-harness正在成为新后端/)** — Harness 是"老兵经验"沉淀的工程载体;纳德拉说的"不丢失老兵经验"**正是** Harness 的存在理由。
+- vs **[Token 经济 Pt2:智能公司的搭建](../ch01-002-the-token-economy-pt2-the-intelligence-company-gets-built)** — Pt2 关注"智能公司"作为组织形态的工程化;纳德拉关注**资本形态**(二元资本)作为**经济学叙事**。两者互补不重叠。
+- vs **[腾讯 Token 经济 AI 生产力](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-token-economics-ai-productivity.md)** — 腾讯讲**消费量纲**;纳德拉讲**资本形态**。前者是微观 ROI 视角,后者是宏观战略视角。
+- vs **[企业 AI 记忆底座 三层架构](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-ai-memory-substrate-three-layer-architecture.md)** — 三层架构 = 知识底座的**工程实现**;纳德拉 Token 资本 = 知识底座背后的**经济学理由**。
+- vs **[Anthropic 缓存 Token 经济](../ch01-677-anthropic)** — 缓存是**Token 成本优化**的具体技术杠杆;纳德拉说的是**Token 作为资本形态**的存在论层面。
+- vs **[Harness Engineering Long-Term Agent Tasks](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)** — Harness = 工程模式(让 agent 可控);Token 资本 = 经济模式(让企业 AI 资产可积累)。两者构成"Token 资本"的双侧实现。
+- vs **[Agent 时代我们架构师应该学什么](../ch04-400-agent-时代-我们架构师应该学什么)** — 架构师视角讲**技能升级**;纳德拉讲**企业层面**的资本积累路径。
+- vs **[Microsoft Build 2026 MAI Models Scout Agent](../ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体)** — 同一作者(Microsoft)在 Build 2026 上主推的是**前沿模型**;本文(纳德拉 X 帖)则**明确警告"前沿模型 ≠ 价值"**。同一个公司的两套话语:产品层 vs 战略层。**这一矛盾本身**值得读者警惕。
+- vs **[Agent 架构关键变化:Harness 正在成为新后端](../ch04-289-agent架构关键变化-harness正在成为新后端)** — Harness 是"老兵经验"沉淀的工程载体;纳德拉说的"不丢失老兵经验"**正是** Harness 的存在理由。
 
 ## 工程启示(实践可执行项)
 
@@ -78,60 +78,60 @@
 
 **1. "Token 资本"是纳德拉对知识工作者论点的 AI 时代升级**
 
-纳德拉在 1990 年代末受 Karpathy LLM Wiki 类比影响颇深，其平台哲学一以贯之。[Microsoft Build 2026](/ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体/) 却在同月高调主推"前沿模型"，与本文的"前沿生态系统"叙事形成内部张力——同一 CEO 的两套话语，实际上对应[Harness Engineering](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)所揭示的**产品层**与**战略层**双重现实。
+纳德拉在 1990 年代末受 [Karpathy LLM Wiki](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md) 类比影响颇深，其平台哲学一以贯之。[Microsoft Build 2026](../ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体) 却在同月高调主推"前沿模型"，与本文的"前沿生态系统"叙事形成内部张力——同一 CEO 的两套话语，实际上对应[Harness Engineering](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)所揭示的**产品层**与**战略层**双重现实。
 
 **2. Microsoft AI 经济定位：做生态，不做模型**
 
-纳德拉的核心主张与 Drucker 的"知识工作者"框架一脉相承：将知识积累定义为**企业主体行为**，而非技术采购行为。Token 资本的本质不是"用 OpenAI 的 API"，而是[Harness Engineering](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)所工程化的——让**机构判断**在模型可替换的前提下持续沉淀。这是[Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)的核心命题：模型是燃料，机构知识是护城河。
+纳德拉的核心主张与 Drucker 的"知识工作者"框架一脉相承：将知识积累定义为**企业主体行为**，而非技术采购行为。Token 资本的本质不是"用 OpenAI 的 API"，而是[Harness Engineering](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)所工程化的——让**机构判断**在模型可替换的前提下持续沉淀。这是[Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)的核心命题：模型是燃料，机构知识是护城河。
 
 **3. Azure OpenAI 服务的商业逻辑与 Token 资本叙事的吻合**
 
-微软 Azure OpenAI Service 的商业模式，本质上是**Token 资本的基础设施供应商**：提供模型接入 + 企业数据隔离 + Agent 记忆 substrate 三层架构支撑。纳德拉的叙事为这一产品定位提供了经济学背书——企业付费的不是 Token 消耗量，而是**组织级学习闭环的所有权**。这与[Microsoft Build 2026](/ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体/)的 MAI 模型战略，构成"平台层"与"模型层"的双重锁定。
+微软 Azure OpenAI Service 的商业模式，本质上是**Token 资本的基础设施供应商**：提供模型接入 + 企业数据隔离 + [Agent 记忆 substrate 三层架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-substrate-three-layer.md)支撑。纳德拉的叙事为这一产品定位提供了经济学背书——企业付费的不是 Token 消耗量，而是**组织级学习闭环的所有权**。这与[Microsoft Build 2026](../ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体)的 MAI 模型战略，构成"平台层"与"模型层"的双重锁定。
 
 **4. "前沿生态系统"作为反平台垄断的政治经济学**
 
 纳德拉对"通吃一切的 AI 模型"的警告，本质上是政治经济学叙事：若 AI 价值集中化到少数模型层，政治监管必会介入（参照互联网平台反垄断）。"前沿生态系统"话语是提前构建合法性——微软需要生态开放来对冲监管风险，这与 Satya 1990 年代在 Sun 时期的平台哲学一脉相承。
 
-**5. Token 资本与 Harness 组件保质期 的互补视角**
+**5. Token 资本与 [Harness 组件保质期](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md) 的互补视角**
 
-Harness 组件保质期 提出：Harness 组件会衰减、需要主动删除才能保持系统健康。纳德拉的 Token 资本则强调积累与复利——两者并不矛盾：Token 资本积累的是**组织判断模式**，而 Harness 的衰减管理是**工程层维护动作**。前者是战略资产，后者是战术维护；合起来才是完整的"持续攀登机器"。
+[Harness 组件保质期](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md) 提出：Harness 组件会衰减、需要主动删除才能保持系统健康。纳德拉的 Token 资本则强调积累与复利——两者并不矛盾：Token 资本积累的是**组织判断模式**，而 Harness 的衰减管理是**工程层维护动作**。前者是战略资产，后者是战术维护；合起来才是完整的"持续攀登机器"。
 
 ## 实践启示
 
 **1. 先建私有评估体系，再追公开 benchmark**
 
-不要再追随外部排行榜为企业 AI 选型——Agent 可观测性的核心是**业务结果可测量性**。为企业关键业务流程定义私有指标，跑 A/B 回归，是构建 Token 资本的第一步。没有私有评估，Token 资本积累无从衡量。
+不要再追随外部排行榜为企业 AI 选型——[Agent 可观测性](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-observability.md)的核心是**业务结果可测量性**。为企业关键业务流程定义私有指标，跑 A/B 回归，是构建 Token 资本的第一步。没有私有评估，Token 资本积累无从衡量。
 
-**2. 在 上下文工程 层实现模型可替换性**
+**2. 在 [上下文工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) 层实现模型可替换性**
 
-业务逻辑不应硬绑定到具体模型 API（GPT-5 / Claude / MAI 都能换）。通过 上下文工程 抽象层，将机构知识编码在 prompt template / retrieval context / harness state 中，而非模型参数里。[Harness Engineering](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)的核心价值正在于此。
+业务逻辑不应硬绑定到具体模型 API（GPT-5 / Claude / MAI 都能换）。通过 [上下文工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) 抽象层，将机构知识编码在 prompt template / retrieval context / harness state 中，而非模型参数里。[Harness Engineering](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)的核心价值正在于此。
 
-**3. 将 Agent 记忆三层架构 作为企业知识库工程化的底座**
+**3. 将 [Agent 记忆三层架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-substrate-three-layer.md) 作为企业知识库工程化的底座**
 
 纳德拉的"知识库"不是文档库，是**机构记忆的编码形式**。三层架构（短期上下文 / 长期记忆 / 语义索引）为这一需求提供了工程路径。企业应将 SRE 经验、架构决策、合规判断、销售模式显式编码，而非散落在 Slack 记录里。
 
 **4. 围绕业务结果构建数据飞轮，而非围绕模型构建**
 
-知识库输出飞轮是 Token 资本积累的具体机制：业务结果 → 高质量训练信号 → 模型升级 → 更好业务结果。工作流优化产生训练信号，加速积累**只属于该企业**的隐性知识——这是复利增长的核心引擎。
+[知识库输出飞轮](https://github.com/QianJinGuo/wiki/blob/main/concepts/knowledge-base-output-flywheel.md)是 Token 资本积累的具体机制：业务结果 → 高质量训练信号 → 模型升级 → 更好业务结果。工作流优化产生训练信号，加速积累**只属于该企业**的隐性知识——这是复利增长的核心引擎。
 
 **5. 重新定义"AI 主权"：知识所有权 > 模型所有权**
 
-AI 时代的企业主权 = 业务知识的所有权 + 可迁移性，**不等于**"用了哪家模型"。在harness 长程任务模式框架下，企业应把资源投入在**机构判断编码**上，而非追逐最新模型版本。模型会过时，Token 资本一旦沉淀则持续复利。
+AI 时代的企业主权 = 业务知识的所有权 + 可迁移性，**不等于**"用了哪家模型"。在[harness 长程任务模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-long-running-task.md)框架下，企业应把资源投入在**机构判断编码**上，而非追逐最新模型版本。模型会过时，Token 资本一旦沉淀则持续复利。
 
 ## 相关实体
 
-- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nadella-token-capital-microsoft-ai-economy-2026.md)
-- [Token 经济 Pt2:智能公司搭建](/ch01-002-the-token-economy-pt2-the-intelligence-company-gets-built/)
-- [腾讯 Token 经济 AI 生产力](/ch09-119-ai-coding-agent-token-成本控制五层模型/)
-- 企业 AI 记忆底座 三层架构
-- [Anthropic 缓存 Token 经济](/ch01-677-anthropic/)
-- [Harness Engineering Long-Term Agent Tasks](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Harness Engineering 7 层架构](/ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧/)
-- [Agent 架构关键变化:Harness 正在成为新后端](/ch04-289-agent架构关键变化-harness正在成为新后端/)
-- [Agent 时代架构师应学什么](/ch04-400-agent-时代-我们架构师应该学什么/)
-- [Microsoft Build 2026 MAI Models Scout Agent](/ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体/)
-- [MiniMax Token 退化](/ch01-264-token-退化问题-分词器与后训练数据分布失配/)
-- [Cybersecurity Reach:Revoke Token 擦除计算机](/ch01-021-ifyourevokethistokenitwillwipethecomputeroftheowner/)
+- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nadella-token-capital-microsoft-ai-economy-2026.md)
+- [Token 经济 Pt2:智能公司搭建](../ch01-002-the-token-economy-pt2-the-intelligence-company-gets-built)
+- [腾讯 Token 经济 AI 生产力](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-token-economics-ai-productivity.md)
+- [企业 AI 记忆底座 三层架构](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-ai-memory-substrate-three-layer-architecture.md)
+- [Anthropic 缓存 Token 经济](../ch01-677-anthropic)
+- [Harness Engineering Long-Term Agent Tasks](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [Harness Engineering 7 层架构](../ch05-014-harness-到底是什么-看看-openclaw-hermes-claude-code-的演绎吧)
+- [Agent 架构关键变化:Harness 正在成为新后端](../ch04-289-agent架构关键变化-harness正在成为新后端)
+- [Agent 时代架构师应学什么](../ch04-400-agent-时代-我们架构师应该学什么)
+- [Microsoft Build 2026 MAI Models Scout Agent](../ch04-042-microsoft-build-2026-微软-ai-独立日-7-款-mai-模型-scout-智能体)
+- [MiniMax Token 退化](../ch01-264-token-退化问题-分词器与后训练数据分布失配)
+- [Cybersecurity Reach:Revoke Token 擦除计算机](../ch01-021-ifyourevokethistokenitwillwipethecomputeroftheowner)
 
 ---
 

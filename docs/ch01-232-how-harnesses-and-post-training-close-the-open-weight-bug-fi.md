@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.4KB | `entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md`
 
-## How harnesses and post-training close the open-weight bug-finding gap
+# How harnesses and post-training close the open-weight bug-finding gap
 
 > **Background**: Vincenzo Iozzo (security researcher) ran a controlled study with 5 open-weight LLMs against a single known bug to measure how much base-model architecture vs post-training (RLHF/instruction-tuning) drives vulnerability-finding capability. Result: post-training dominates — even small open models with good harness scaffolding match or beat larger base models.
 
@@ -109,7 +109,7 @@ Inverts the narrative: "open-weight models can't do security" is **empirically f
 - `agent-harness-engineering-survey concept` — survey of harness patterns (this study provides empirical grounding)
 - `post-training-vs-architecture-tradeoff concept` — broader framing of when post-training wins
 - `open-weight-llm-security-applications concept` — what open-weight + good harness can do
-- `[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)`
+- `[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)`
 
 ## 三个独有贡献
 
@@ -172,11 +172,11 @@ Tigress-obfuscated binary 要求 harness 能处理控制流图简化、间接跳
 | **Action** | create new entity + raw article + index entry + log entry |
 
 ## 相关实体
-- [Microsoft Open Sources Rampart Clarity](/ch01-611-microsoft-open-sources-rampart-and-clarity-to-secure-ai-agen/)
-- [The It And Security Field Guide To Ai Adoption Tines](/ch12-071-the-it-and-security-field-guide-to-ai-adoption-tines/)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](/ch01-442-mellum-2-jetbrains-open-weight-12b-moe-code-llm/)
-- [Cloudflare Glasswing Mythos Security](/ch01-281-project-glasswing-what-mythos-showed-us/)
-- [How Open Model Ecosystems Compound](/ch01-651-how-open-model-ecosystems-compound/)
+- [Microsoft Open Sources Rampart Clarity](../ch01-611-microsoft-open-sources-rampart-and-clarity-to-secure-ai-agen)
+- [The It And Security Field Guide To Ai Adoption Tines](../ch12-071-the-it-and-security-field-guide-to-ai-adoption-tines)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch01-442-mellum-2-jetbrains-open-weight-12b-moe-code-llm)
+- [Cloudflare Glasswing Mythos Security](../ch01-281-project-glasswing-what-mythos-showed-us)
+- [How Open Model Ecosystems Compound](../ch01-651-how-open-model-ecosystems-compound)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/latest-open-artifacts-19-qwen-glm-minimax-interconnects.md`
 
-## Latest Open Artifacts #19：Qwen 3.5·GLM-5·MiniMax M2.5 中国开源模型前沿
+# Latest Open Artifacts #19：Qwen 3.5·GLM-5·MiniMax M2.5 中国开源模型前沿
 
 > 2026-06-07 引用自 Interconnects《Latest open artifacts (#19): Qwen 3.5, GLM 5, MiniMax 2.5》，2026-03-03。
 
@@ -80,13 +80,13 @@ Interconnects 的 Latest Open Artifacts 系列是跟踪中国 AI 开源前沿的
 本期相对轻量，集中在主流模型 Sizes，轻于长尾专业模态。技术细节深度 complement：["Ahead of AIA Dream of Spring for Open-Weight LLMs"](https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight) 覆盖了 2026 年 1-2 月的 10 种架构主题。
 
 ## 相关实体
-- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](/ch01-394-latest-open-artifacts-21-open-model-bonanza-gemma-4-de/)
-- [Nathan Lambert Open Models Bets 2026](/ch01-905-nathan-lambert-s-mid-2026-open-models-bets/)
-- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](/ch01-204-latest-open-artifacts-20-new-orgs-new-types-of-models/)
-- [Gemma 4 Open Model Adoption Framework Interconnects](/ch01-294-gemma-4-与开源模型成功标准-interconnects-五维评估框架/)
-- [Olmo Hybrid Gdn Wave 2026](/ch01-858-olmo-hybrid-and-the-hybrid-architecture-wave-2026/)
+- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](../ch01-394-latest-open-artifacts-21-open-model-bonanza-gemma-4-de)
+- [Nathan Lambert Open Models Bets 2026](../ch01-905-nathan-lambert-s-mid-2026-open-models-bets)
+- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](../ch01-204-latest-open-artifacts-20-new-orgs-new-types-of-models)
+- [Gemma 4 Open Model Adoption Framework Interconnects](../ch01-294-gemma-4-与开源模型成功标准-interconnects-五维评估框架)
+- [Olmo Hybrid Gdn Wave 2026](../ch01-858-olmo-hybrid-and-the-hybrid-architecture-wave-2026)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md)
 
 ---
 

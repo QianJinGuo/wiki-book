@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/from-pdfs-to-insights-architecting-an-intelligent-document-p.md`
 
-## From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services
+# From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services
 
 AWS 在 2026-06 发布的一篇 IDP（智能文档处理）架构深度文章，展示了用 **Amazon Bedrock Data Automation (BDA) + Strands Agents on AgentCore + Bedrock Knowledge Base** 三件套构建 4 层 IDP 流水线的完整方案。这是从 PDF 原始文件 → 上下文抽取 → 知识整合 → agent 协调的端到端架构。
 
@@ -49,15 +49,15 @@ AWS 在 2026-06 发布的一篇 IDP（智能文档处理）架构深度文章，
 
 ## 与现有 wiki 实体的关联
 
-- [optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat](/ch12-026-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat/) — 同 BDA 平台，本文是 IDP 4 层架构全景，optimize-blueprint 是单点 blueprint 优化深度
-- [building-supercharger-how-rocket-close-optimized-title-opera](/ch04-187-building-supercharger-how-rocket-close-optimized-title-oper/) — 金融场景生产 case study (Rocket Close)，Strands Agents + Bedrock + MCP
-- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](/ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和/) — AgentCore Runtime 深度（与本文 Strands on AgentCore 对应）
-- [process-financial-documents-using-amazon-bedrock-data-automa](/ch01-534-solution-overview/) — 金融文档 BDA 案例
-- [automate-schema-generation-for-intelligent-document-processing](/ch11-157-automate-schema-generation-for-intelligent-document-processi/) — schema 自动生成（与 BDA blueprint 互补）
+- [optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat](../ch12-026-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat) — 同 BDA 平台，本文是 IDP 4 层架构全景，optimize-blueprint 是单点 blueprint 优化深度
+- [building-supercharger-how-rocket-close-optimized-title-opera](../ch04-187-building-supercharger-how-rocket-close-optimized-title-oper) — 金融场景生产 case study (Rocket Close)，Strands Agents + Bedrock + MCP
+- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](../ch11-068-快时尚电商行业智能体设计思路与应用实践-七-amazon-bedrock-agentcore-runtime-深度解析和) — AgentCore Runtime 深度（与本文 Strands on AgentCore 对应）
+- [process-financial-documents-using-amazon-bedrock-data-automa](../ch01-534-solution-overview) — 金融文档 BDA 案例
+- [automate-schema-generation-for-intelligent-document-processing](../ch11-157-automate-schema-generation-for-intelligent-document-processi) — schema 自动生成（与 BDA blueprint 互补）
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-pdfs-to-insights-architecting-an-intelligent-document-p.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-pdfs-to-insights-architecting-an-intelligent-document-p.md)
 
 ---
 

@@ -1,18 +1,24 @@
 # Restive Ventures Announces $45M Fund III to Back AI-Native Financial Services; Targets $1T Market Opportunity
 
+## Ch01.662 Restive Ventures Announces $45M Fund III to Back AI-Native Financial Services; Targets $1T Market Opportunity
+
+> 📊 Level ⭐⭐ | 4.8KB | `entities/restive-ventures-announces-45m-fund-iii-to-back-ai-native-financial-services-tar.md`
+
+# Restive Ventures Announces $45M Fund III to Back AI-Native Financial Services; Targets $1T Market Opportunity
+
 - [x]  [![Image 1: FF News Logo](http://ffnews.com/wp-content/themes/ffnews/assets/img/footer__logo.png)](https://ffnews.com/)
 *   [Home](https://ffnews.com/)
 *   [Contact](https://ffnews.com/about/contact/)
 *   [Follow on Google News](https://news.google.com/publications/CAAqBwgKMMfxpQswn_y9Aw?oc=3&ceid=GB:en&hl=en-GB&gl=GB)
 
 ## 相关实体
-- [Introducing Claude Platform On Aws](/ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](/ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](/ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using/)
-- [The 1 Ai Agent For Financial Services Fin](/ch04-469-the-1-ai-agent-for-financial-services-fin/)
-- [Rag技术框架的演进方向](/ch01-193-rag技术框架的演进方向/)
+- [Introducing Claude Platform On Aws](../ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](../ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11-011-back-up-and-restore-your-amazon-eks-cluster-resources-using)
+- [The 1 Ai Agent For Financial Services Fin](../ch04-469-the-1-ai-agent-for-financial-services-fin)
+- [Rag技术框架的演进方向](../ch01-193-rag技术框架的演进方向)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/restive-ventures-announces-45m-fund-iii-to-back-ai-native-financial-services-tar.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/restive-ventures-announces-45m-fund-iii-to-back-ai-native-financial-services-tar.md)
 
 ## 深度分析
 

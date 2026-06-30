@@ -37,14 +37,14 @@ Opus 4.5 在结构和规范性上胜出（bullet points、headers、代码格式
 Localmaxxing 不是"取代云端"而是"分流任务"。随着本地模型能力持续提升（追赶前沿的 3-4 个月差距正在缩短），越来越多的任务会从云端迁移到本地。但短期内复杂推理任务仍然依赖云端前沿模型。最佳工程实践是设计支持本地/云端无缝切换的混合架构，根据任务特征动态路由 。
 
 ## 相关实体
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/localmaxxing.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/localmaxxing.md)
 
-- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](/ch01-646-crypto-inflows-hit-858m-as-clarity-lifts-sentiment/)
-- [Ico Fines South Staffordshire 2022 Breach](/ch12-106-ico-fines-south-staffordshire-963k-over-2022-breach/)
-- [Zeus Rwa Thread Reader](/ch01-132-thread-by-zeusrwa-on-thread-reader-app/)
-- [Interaction Models](/ch01-566-interaction-models-a-scalable-approach-to-human-ai-collabor/)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](/ch01-292-we-ve-been-here-before-decompilers-fuzzers-and-now-ai/)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](/ch09-106-automate-progressive-rollouts-with-vercel-flags-vercel/)
+- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](../ch01-646-crypto-inflows-hit-858m-as-clarity-lifts-sentiment)
+- [Ico Fines South Staffordshire 2022 Breach](../ch12-106-ico-fines-south-staffordshire-963k-over-2022-breach)
+- [Zeus Rwa Thread Reader](../ch01-132-thread-by-zeusrwa-on-thread-reader-app)
+- [Interaction Models](../ch01-566-interaction-models-a-scalable-approach-to-human-ai-collabor)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch01-292-we-ve-been-here-before-decompilers-fuzzers-and-now-ai)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09-106-automate-progressive-rollouts-with-vercel-flags-vercel)
 
 ---
 

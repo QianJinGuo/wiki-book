@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/cogalpha-acl2026-alpha-mining.md`
 
-## Cognitive Alpha Mining via LLM-Driven Code-Based Evolution
+# Cognitive Alpha Mining via LLM-Driven Code-Based Evolution
 
 **论文标题：** Cognitive Alpha Mining via LLM-Driven Code-Based Evolution
 **论文作者：** Fengyuan Liu, Yi Huang, Sichun Luo, Yuqi Wang, Yazheng Yang, Xinye Li, Zefa Hu, Junlan Feng, Qi Liu (Grace Investment Machine + 香港大学)
@@ -12,13 +12,13 @@
 **arXiv：** 2511.18850v3
 
 ## 相关实体
-- [Trackingtamperedchefclustersviacertificateandcodereuse](/ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
-- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](/ch01-442-mellum-2-jetbrains-open-weight-12b-moe-code-llm/)
-- [Nginx Rift Achieving Nginx Remote Code Execution V](/ch12-045-nginx-rift-achieving-nginx-remote-code-execution-via-an-18/)
-- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](/ch01-528-llmreaper-dom-based-ai-conversation-exfiltration/)
+- [Trackingtamperedchefclustersviacertificateandcodereuse](../ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus)
+- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](../ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch01-442-mellum-2-jetbrains-open-weight-12b-moe-code-llm)
+- [Nginx Rift Achieving Nginx Remote Code Execution V](../ch12-045-nginx-rift-achieving-nginx-remote-code-execution-via-an-18)
+- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](../ch01-528-llmreaper-dom-based-ai-conversation-exfiltration)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cogalpha-acl2026-alpha-mining.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cogalpha-acl2026-alpha-mining.md)
 
 ## 深度分析
 

@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/introducing-mdn-mcp-server-2026.md`
 
-## Introducing the MDN MCP server
+# Introducing the MDN MCP server
 
-> Source: [MDN Blog 原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-mdn-mcp-server-2026.md)
+> Source: [MDN Blog 原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-mdn-mcp-server-2026.md)
 
 ## 三个独有贡献（不应合并到现有 entity）
 
@@ -49,14 +49,14 @@
 
 ## 相关主题
 
-- [Anthropic MCP 协议回顾](/ch01-677-anthropic/) — MCP 协议本身的设计
-- [AWS Bedrock AgentCore MCP](/ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式/) — 商业 MCP server
-- [Claude Code MCP server](/ch07-024-claude-code-mcp-server/) — Claude Code 工具系统
-- [Hermes Agent 工具系统架构](/ch04-418-hermes-agent/) — agent 工具调用一般化框架
+- [Anthropic MCP 协议回顾](../ch01-677-anthropic) — MCP 协议本身的设计
+- [AWS Bedrock AgentCore MCP](../ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式) — 商业 MCP server
+- [Claude Code MCP server](../ch07-024-claude-code-mcp-server) — Claude Code 工具系统
+- [Hermes Agent 工具系统架构](../ch04-418-hermes-agent) — agent 工具调用一般化框架
 
 ## References
 
-See [MDN Blog 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-mdn-mcp-server-2026.md)
+See [MDN Blog 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-mdn-mcp-server-2026.md)
 
 ---
 

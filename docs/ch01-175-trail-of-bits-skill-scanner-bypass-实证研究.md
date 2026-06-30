@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 25.2KB | `entities/trail-of-bits-skill-scanner-bypass-distribution.md`
 
-> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/trail-of-bits-skill-scanner-bypass-distribution.md)
+> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/trail-of-bits-skill-scanner-bypass-distribution.md)
 
-## Trail of Bits: Skill Scanner Bypass 实证研究
+# Trail of Bits: Skill Scanner Bypass 实证研究
 
 ## 一句话总结
 
@@ -59,19 +59,19 @@ Trail of Bits 报告称攻击使用的不是高级技术，而是"标准技巧 +
 
 ## 与现有实体的关系
 
-### 与 [Skill Design Patterns](/ch07-002-skill-设计模式/) 的关系
+### 与 [Skill Design Patterns](../ch07-002-skill-设计模式) 的关系
 
 - skill-design-patterns = 设计维度（5 种 SKILL.md 写作模式）
 - trail-of-bits 实体 = 攻击维度（SKILL.md 怎么被恶意构造）
 - 共存：cross-link 为 skill 开发者的"威胁模型"
 
-### 与 [Skillclaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化/) 的关系
+### 与 [Skillclaw](../ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化) 的关系
 
 - skillclaw = 阿里 SkillClaw：让 Agent 技能在真实使用中集体进化
 - trail-of-bits 实体 = 这些"技能市场"的安全现状
 - 共存：skillclaw 解决技能分发效率，trail-of-bits 揭示了效率带来的安全代价
 
-### 与 [Agent Security Three Step Sequence Harness Governance Identity Crewai](/ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做/) 的关系
+### 与 [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做) 的关系
 
 - agent-security = 通用 agent 安全三步（governance / identity / 隔离）
 - trail-of-bits 实体 = 实证某类安全工具（scanner）的实际失效模式
@@ -143,13 +143,13 @@ Trail of Bits 明确指出 skill 攻击是 software supply chain 攻击的进化
 
 ### 深层矛盾：LLM-based scanner 的内生困境
 
-Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt injection 欺骗。这揭示了一个深层矛盾：**LLM-based scanner 的判断能力受限于其自身的 agentic capability**——它无法像真实攻击者那样质疑 SKILL.md 中声明的前提（"这是企业内部网络"），而是被语言的表层合理性所说服。这与 Prompt Injection Defense 中描述的"LLM 无法自主识别被注入的指令"问题本质相同。
+Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt injection 欺骗。这揭示了一个深层矛盾：**LLM-based scanner 的判断能力受限于其自身的 agentic capability**——它无法像真实攻击者那样质疑 SKILL.md 中声明的前提（"这是企业内部网络"），而是被语言的表层合理性所说服。这与 [Prompt Injection Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-injection-defense.md) 中描述的"LLM 无法自主识别被注入的指令"问题本质相同。
 
 ## 实践启示
 
 ### 对 Skill Marketplace 建设者
 
-1. **scanner 是必要不充分的防线**：单一 scanner 无法应对双载体攻击（自然语言 + 代码）。必须将 scanner 与 runtime sandbox、publisher reputation、audit trail 结合使用，形成纵深防御。参考 [Ai Agents Security Survey Attack Defense](/ch07-005-ai-agents-security-survey-attack-and-defense/) 中的多层防御模型。
+1. **scanner 是必要不充分的防线**：单一 scanner 无法应对双载体攻击（自然语言 + 代码）。必须将 scanner 与 runtime sandbox、publisher reputation、audit trail 结合使用，形成纵深防御。参考 [Ai Agents Security Survey Attack Defense](../ch07-005-ai-agents-security-survey-attack-and-defense) 中的多层防御模型。
 
 2. **out-of-band 分发需要专项审计**：ZIP 手工上传 + API 直接安装是当前最大的 supply chain 盲点。凡是绕过了 marketplace review 流程的分发渠道，都需要独立的人工或自动化审计步骤。
 
@@ -169,13 +169,13 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 
 4. **了解 skill 的实际文件组成**：检查 skill 包中是否包含预编译二进制（.pyc、.so、.dll）或非预期文件类型，必要时要求 source code 而非预编译版本。
 
-5. **企业内 skill hub + 代码审计**：相比公共 marketplace，企业自建 skill hub 并对 skill 进行代码审计是更可靠的安全模型。可参考 [Skillsieve Agent Skill Security](/ch04-369-skillsieve-agent-skill-安全检测三层框架/) 中的企业级 skill 安全实践。
+5. **企业内 skill hub + 代码审计**：相比公共 marketplace，企业自建 skill hub 并对 skill 进行代码审计是更可靠的安全模型。可参考 [Skillsieve Agent Skill Security](../ch04-369-skillsieve-agent-skill-安全检测三层框架) 中的企业级 skill 安全实践。
 
 ### 对 Agent 系统设计者
 
 1. **将 skill 视为不受信的外部代码**：类似浏览器对第三方脚本的隔离策略，agent 系统应对每个 skill 应用最小权限原则，限制其对文件系统、网络、凭据的访问范围。
 
-2. **建立 skill 的 provenance tracking**：记录每个 skill 的来源、版本、安装时间，并在 agent 运行时可查询。[Agent Security Three Step Sequence Harness Governance Identity Crewai](/ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做/) 中的 identity 和 governance 框架可用于实现这一点。
+2. **建立 skill 的 provenance tracking**：记录每个 skill 的来源、版本、安装时间，并在 agent 运行时可查询。[Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做) 中的 identity 和 governance 框架可用于实现这一点。
 
 3. **对高风险操作强制人工确认**：涉及网络配置、凭据写入、文件修改的 skill 操作应触发人工确认，而非自动执行。
 
@@ -184,17 +184,17 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 ---
 
 **相关实体**：
-- [Skill Design Patterns](/ch07-002-skill-设计模式/) — skill 的设计维度（与攻击维度互补）
-- [Skillsieve Agent Skill Security](/ch04-369-skillsieve-agent-skill-安全检测三层框架/) — 企业级 skill 安全实践
-- [Agent Security Three Step Sequence Harness Governance Identity Crewai](/ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做/) — agent 安全的通用框架
-- Prompt Injection Defense — prompt injection 的防御思路
-- Agent Security Attack Defense — agent 安全攻击与防御全景
+- [Skill Design Patterns](../ch07-002-skill-设计模式) — skill 的设计维度（与攻击维度互补）
+- [Skillsieve Agent Skill Security](../ch04-369-skillsieve-agent-skill-安全检测三层框架) — 企业级 skill 安全实践
+- [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做) — agent 安全的通用框架
+- [Prompt Injection Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-injection-defense.md) — prompt injection 的防御思路
+- [Agent Security Attack Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-attack-defense.md) — agent 安全攻击与防御全景
 
 ---
 
 ## 第 2 来源 — SkillTrustBench (港中文深圳 + 腾讯朱雀实验室 2026-06-16)
 
-> Source: [第2原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skilltrustbench-agent-skill-security-benchmark-cuhk-zhuque-2026-06-16.md)
+> Source: [第2原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skilltrustbench-agent-skill-security-benchmark-cuhk-zhuque-2026-06-16.md)
 > Author: 香港中文大学(深圳) 吴保元教授课题组 + 腾讯朱雀实验室
 > Date: 2026-06-16 17:33
 > 官网: https://matrix.tencent.com/skilltrustbench
@@ -326,7 +326,7 @@ OpenClaw 官方 67,453 个公开 Skill 三类信号对比:
 - **企业自建 curated marketplace**: 公共 marketplace 风险信号密集(36.82% 至少有一个安全问题) — 企业应自建 + 审计
 - **AI-Infra-Guard 工具集成**: 腾讯朱雀开源的红队安全测试平台,可直接用于自家 Skill 审计
 
-→ [第2原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skilltrustbench-agent-skill-security-benchmark-cuhk-zhuque-2026-06-16.md)
+→ [第2原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skilltrustbench-agent-skill-security-benchmark-cuhk-zhuque-2026-06-16.md)
 
 ---
 

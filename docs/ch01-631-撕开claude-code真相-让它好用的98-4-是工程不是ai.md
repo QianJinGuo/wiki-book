@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/claude-code-engineering-truth-1.6-98.4.md`
 
-## 撕开Claude Code真相：让它好用的98.4%，是工程不是AI
+# 撕开Claude Code真相：让它好用的98.4%，是工程不是AI
 > 新智元报道 | 编辑：元宇 | 2026-05-01 13:29 山西
 【新智元导读】当普通人还在钻研「最强提示词咒语」时，硅谷顶级实验室已经把AI基建跑成了生产线。本文核心论点：Claude Code 的好用程度，98.4% 来自工程基础设施而非AI能力本身。
 
@@ -12,15 +12,15 @@
 Mohamed bin Zayed AI University VILA-Lab 发表的论文（arxiv: 2604.14228）系统性分析了 Claude Code v2.1.88 版本 51.2 万行 TypeScript 源码：
 
 ## 相关实体
-- [Andrej Karpathy Claude Md 134K Stars 2026](/ch01-207-claude-md/)
-- [Claude Code Self Repair Hooks Memory Config](/ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
-- [Code Review Graph](/ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token/)
-- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
-- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
+- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01-207-claude-md)
+- [Claude Code Self Repair Hooks Memory Config](../ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码)
+- [Code Review Graph](../ch01-607-code-review-graph-claude-code-本地知识图谱-减少-6-8-倍代码审查-token)
+- [Claude Code Hackathon Winners 2026](../ch01-772-claude-code-hackathon-winners-2026)
+- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-engineering-truth-1.6-98.4.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-engineering-truth-1.6-98.4.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
 
 VILA-Lab 的量化研究揭示了一个长期被从业者直觉回避的结论：AI 编程工具的核心竞争力不在模型本身，而在工程基础设施的确定性程度。98.4% vs 1.6% 的悬殊比例，指向的并非模型能力的边界，而是当前 AI 编程工具设计中大量"非智能"工作的体量——权限网关、上下文窗口管理、工具路由、错误恢复——这些恰恰是传统软件工程中最枯燥、也最影响用户体验的部分。

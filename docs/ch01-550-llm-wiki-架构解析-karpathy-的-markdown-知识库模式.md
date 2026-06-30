@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/llm-wiki-architecture-karpathy-markdown-knowledge-base.md`
 
-## LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式
+# LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式
 > 原文：LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式
 > 来源：https://mp.weixin.qq.com/s/F2JcvwDDT99F_WZexowHGg
 Karpathy 在 `llm-wiki.md` 里提出：让 LLM 在上下文窗口之外维护一个 Markdown Wiki。核心价值是把模型逐渐形成的理解沉淀成可读、可修改、可追溯的 Markdown 知识 artifact。nashsu/llm_wiki 社区将此想法做成桌面开源应用。
 **关键区分：** RAG 更像是「把资料找出来」，LLM Wiki 试图解决的是「把读过的资料组织起来」。
 
 ## 相关实体
-- [Karpathy Llm Wiki V2 2026](/ch01-271-karpathy-llm-wiki-v2-2026/)
-- [Rag Vs Llm Wiki Enterprise Knowledge Base](/ch01-039-rag-vs-llm-wiki-深度对比-企业知识库架构选型指南/)
-- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
-- [Three Rag Architectures Classic Graph Agentic](/ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag/)
-- [How Ai Agent Memory Works](/ch04-145-how-ai-agent-memory-works/)
+- [Karpathy Llm Wiki V2 2026](../ch01-271-karpathy-llm-wiki-v2-2026)
+- [Rag Vs Llm Wiki Enterprise Knowledge Base](../ch01-039-rag-vs-llm-wiki-深度对比-企业知识库架构选型指南)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档)
+- [Three Rag Architectures Classic Graph Agentic](../ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag)
+- [How Ai Agent Memory Works](../ch04-145-how-ai-agent-memory-works)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-wiki-architecture-karpathy-markdown-knowledge-base.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-wiki-architecture-karpathy-markdown-knowledge-base.md)
 
 ## 深度分析
 

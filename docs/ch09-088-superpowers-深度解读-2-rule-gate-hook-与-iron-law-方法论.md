@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/superpowers-deep-dive-kaiyuandakashuo.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/superpowers-deep-dive-kaiyuandakashuo.md)
+> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/superpowers-deep-dive-kaiyuandakashuo.md)
 
 Superpowers 第二篇深度解读：聚焦 Rule/Gate/Hook 核心哲学、Iron Law、TDD 应用到 prompt engineering、SDLC 范式映射。开元大咖说/原作者。
 
@@ -106,10 +106,10 @@ Jesse 探索第二种 mode："iterative greenfield"——不走 spec-first，从
 
 ## 相关实体
 
-- [Superpowers 深度解析（1）：概率操控与负向收益](/ch05-067-superpowers-深度解析-给-claude-code-装上工程大脑/) — 第 1 来源
-- [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [12 Agent 设计模式](/ch05-068-12-个-agent-工程设计底层逻辑-脚手架-vs-承重墙/) — 同样强调"确定性从 LLM 剥离"
-- [AI Coding Agent Token 成本控制](/ch09-119-ai-coding-agent-token-成本控制五层模型/) — Superpowers 多阶段会大幅增加 token 成本
+- [Superpowers 深度解析（1）：概率操控与负向收益](../ch05-067-superpowers-深度解析-给-claude-code-装上工程大脑) — 第 1 来源
+- [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [12 Agent 设计模式](../ch05-068-12-个-agent-工程设计底层逻辑-脚手架-vs-承重墙) — 同样强调"确定性从 LLM 剥离"
+- [AI Coding Agent Token 成本控制](../ch09-119-ai-coding-agent-token-成本控制五层模型) — Superpowers 多阶段会大幅增加 token 成本
 
 ---
 

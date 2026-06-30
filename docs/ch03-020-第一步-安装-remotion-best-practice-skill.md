@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 7.9KB | `entities/skill-complete-guide-alibaba.md`
 
-## 第一步：安装 Remotion Best Practice Skill
+# 第一步：安装 Remotion Best Practice Skill
 
 在 AI 原生工作流加速普及的今天，掌握 Skill 已不再是开发者的专属能力，而是产品、运营、设计乃至技术管理者提升人机协同效能的核心职业素养。它直接决定你能否把模糊需求转化为稳定、可复用、可协作的 AI 执行单元，从而在项目交付中显著提升质量一致性、降低沟通成本、规避重复试错。
 
@@ -14,13 +14,13 @@
 你向 AI 传达了需求，AI 却按自己的理解执行，导致你不得不反复修正输出，持续"调教"——高成本、低确定性、难以复现。
 
 ## 相关实体
-- [Skill Development Guide Aliyun 2026](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
-- [Manus.Im Manus Schedules](/ch03-036-introducing-scheduled-tasks-2-0/)
-- [Openclaw Multi Agent Team Practice](/ch04-038-openclaw-multi-agent-team-practice-v2/)
-- [Strands Agents Cloud Cost Optimizer](/ch04-128-基于-strands-agents-构建亚马逊云科技云成本分析与优化-ai-助手/)
-- [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](/ch03-025-别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个/)
+- [Skill Development Guide Aliyun 2026](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布)
+- [Manus.Im Manus Schedules](../ch03-036-introducing-scheduled-tasks-2-0)
+- [Openclaw Multi Agent Team Practice](../ch04-038-openclaw-multi-agent-team-practice-v2)
+- [Strands Agents Cloud Cost Optimizer](../ch04-128-基于-strands-agents-构建亚马逊云科技云成本分析与优化-ai-助手)
+- [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](../ch03-025-别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-complete-guide-alibaba.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-complete-guide-alibaba.md)
 
 ## 深度分析
 

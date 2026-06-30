@@ -51,24 +51,24 @@ Teams 模式的工程挑战尤为突出。死锁检测（A 等 B，B 等 A）需
 **Agent Pool 的状态管理是关键工程挑战**。当使用模式 3 时，主 Agent 需要准确追踪每个子 Agent 的状态——当前在做什么、是否在等待下一条消息、是否遇到了阻塞。这对模型的上下文管理能力有较高要求。建议在 Agent Pool 模式中引入显式的状态报告机制，让每个子 Agent 定期汇报自身状态，减少主 Agent 的状态追踪负担。
 **Teams 模式需要配套工程基础设施**。在启用模式 4 之前，需要确认以下能力已就位：死锁检测（超时机制 + 图遍历检测循环依赖）、冲突解决（文件锁或 OT/CRDT 类协同机制）、统一日志和 trace（追踪跨 Agent 消息链）、graceful shutdown 流程。没有这些基础设施，Teams 模式一旦出问题几乎无法调试。
 **混合模式是现实系统的常态**。大型工作流中，内联工具用于简单函数调用，Fan-Out 用于并行独立任务，Agent Pool 用于核心多步骤协作，Teams 用于需要真正分布式决策的子系统。理解每种模式的边界，才能在实际系统中做出正确的架构选择。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/four-sub-agent-patterns-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/four-sub-agent-patterns-2026.md)
 
 ## 相关实体
-- [十年老技术开发的 AI Agent 探索之路](/ch04-266-十年老技术开发的-ai-agent-探索之路/)
-- [OpenCLAW 完全指南](/ch04-199-openclaw-完全指南/)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
-- [基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](/ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills/)
+- [十年老技术开发的 AI Agent 探索之路](../ch04-266-十年老技术开发的-ai-agent-探索之路)
+- [OpenCLAW 完全指南](../ch04-199-openclaw-完全指南)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布)
+- [基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills)
 
-- [Agent Workflows](/ch04-306-agent-workflows/)
-- [Hermes+Kimi K2.6 多Agent军团实战教程](/ch04-418-hermes-agent/)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
-- [Garry Tan](/ch01-497-garry-tan/)
-- [Hermes Agent 新手上手指南](/ch04-418-hermes-agent/)
-- [Multi-Agent Systems](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
-- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
-- [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice/)
-- MOC
+- [Agent Workflows](../ch04-306-agent-workflows)
+- [Hermes+Kimi K2.6 多Agent军团实战教程](../ch04-418-hermes-agent)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格)
+- [Garry Tan](../ch01-497-garry-tan)
+- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
+- [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
+- [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图)
+- [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---
 

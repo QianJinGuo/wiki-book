@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/aws-cognito-multi-region-replication.md`
 
-## Amazon Cognito 多区域复制：跨区域用户认证韧性方案
+# Amazon Cognito 多区域复制：跨区域用户认证韧性方案
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/使用-amazon-cognito-多区域复制提高应用程序韧性.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/使用-amazon-cognito-多区域复制提高应用程序韧性.md)
 
 > **Core insight**: Cognito 多区域复制通过单向主→辅助复制，使用户池配置和用户数据在辅助区域保持只读同步副本。现有用户无需重新登录即可失效转移到辅助区域，但失效转移期间新用户注册和用户信息更新不可用。
 
@@ -61,7 +61,7 @@ KMS 密钥的跨区域复制涉及密钥材料的传输和存储——即使 AWS
 ### 4. 故障转移的 RTO/RPO 权衡
 主动-主动模式的 RTO 接近零但成本翻倍，主动-被动模式 RTO 为分钟级但成本更低。选择取决于认证不可用的业务成本——对电商/金融可能是每分钟百万级损失。
 
-### 5. 与 [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](/ch11-046-amazon-bedrock-cross-region-inference-cris-eu-data-reside/) 的模式对比
+### 5. 与 [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](../ch11-046-amazon-bedrock-cross-region-inference-cris-eu-data-reside) 的模式对比
 Bedrock 跨区域推理和 Cognito 多区域复制是同一架构模式的不同实例——都是"跨区域冗余"，但驱动力不同：Bedrock 是容量/成本驱动，Cognito 是韧性/合规驱动。
 
 ## 实践启示
@@ -84,10 +84,10 @@ Bedrock 跨区域推理和 Cognito 多区域复制是同一架构模式的不同
 ## 相关引用
 
 ## 相关实体
-- [Aws Software Supply Chain Security Well Architected](/ch01-750-well-architected-best-practices-for-software-supply-chain-se/)
-- MOC
+- [Aws Software Supply Chain Security Well Architected](../ch01-750-well-architected-best-practices-for-software-supply-chain-se)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/使用-amazon-cognito-多区域复制提高应用程序韧性.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/使用-amazon-cognito-多区域复制提高应用程序韧性.md)
 
 ---
 

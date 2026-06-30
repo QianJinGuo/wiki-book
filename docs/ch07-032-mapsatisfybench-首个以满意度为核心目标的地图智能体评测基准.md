@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/mapsatisfybench-map-agent-satisfaction-eval-gaode-pku.md`
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mapsatisfybench-map-agent-satisfaction-eval-gaode-pku-2026-06-18.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mapsatisfybench-map-agent-satisfaction-eval-gaode-pku-2026-06-18.md)
 
-## MapSatisfyBench：从"任务完成"到"满意度感知"的 Agent 评测范式转移
+# MapSatisfyBench：从"任务完成"到"满意度感知"的 Agent 评测范式转移
 
 高德地图平台技术中心 AI 评测部联合北京大学推出 MapSatisfyBench——首个以满意度为核心目标的地图智能体评测基准。核心命题：**完成了任务 ≠ 给出了用户愿意接受的方案**。评估范式从"任务完成度"升级为"决策满意度"。
 
@@ -97,11 +97,11 @@
 
 ## 与已有实体的关系
 
-- 与 [高德 SDD/Harness 体系](/ch05-016-高德广告工程-harness-sdd-体系演进-从-氛围编程-治理到-ai-native-全流程闭环/) 同源（高德技术团队），但聚焦评测而非编码
-- 与 [高德 Uplift 模型迭代 Agent](/ch05-047-面向复杂算法任务的-ai-agent-高德-long-running-harness-架构与-uplift-模型迭代应用/) 同源（高德 AI 团队），但聚焦地图交互而非营销算法
-- "隐式决策因素"概念与 Agent 编排范式 中"意图恢复"问题呼应——Agent 不应仅执行显式指令，还需主动推断未言明的约束
-- AR = ECR × IISR 的"乘法衰减"设计与 [Agent 可靠性](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/) 的"单点失败传播"模式一致
-- 12 模型的 ECR vs IISR 差距（任务完成 vs 隐式需求）与 [Harness Engineering](/ch05-041-harness-engineering-概念框架/) 中"验证 ≠ 满意"的核心命题呼应
+- 与 [高德 SDD/Harness 体系](../ch05-016-高德广告工程-harness-sdd-体系演进-从-氛围编程-治理到-ai-native-全流程闭环) 同源（高德技术团队），但聚焦评测而非编码
+- 与 [高德 Uplift 模型迭代 Agent](../ch05-047-面向复杂算法任务的-ai-agent-高德-long-running-harness-架构与-uplift-模型迭代应用) 同源（高德 AI 团队），但聚焦地图交互而非营销算法
+- "隐式决策因素"概念与 [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) 中"意图恢复"问题呼应——Agent 不应仅执行显式指令，还需主动推断未言明的约束
+- AR = ECR × IISR 的"乘法衰减"设计与 [Agent 可靠性](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio) 的"单点失败传播"模式一致
+- 12 模型的 ECR vs IISR 差距（任务完成 vs 隐式需求）与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中"验证 ≠ 满意"的核心命题呼应
 
 ## 实践启示
 
@@ -111,7 +111,7 @@
 - **思考模式是"补课"而非"满分"**：推理链能补全部分隐式因素，但不能替代主动证据获取能力的系统性提升
 - **地图交互是 Agent 评测的理想试验场**：多解、强情境依赖、隐式需求丰富——比封闭域任务更能暴露 Agent 的真实能力边界
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mapsatisfybench-map-agent-satisfaction-eval-gaode-pku-2026-06-18.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mapsatisfybench-map-agent-satisfaction-eval-gaode-pku-2026-06-18.md)
 
 ---
 

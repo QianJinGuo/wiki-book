@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 4.9KB | `entities/useful-memories-become-faulty-when-continuously-updated-by-llms.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/useful-memories-become-faulty-when-continuously-updated-by-llms.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/useful-memories-become-faulty-when-continuously-updated-by-llms.md)
 
 ## 深度分析
 这篇来自 UIUC Dylan Zhang 的研究是 2026 年最具实践意义的 AI Agent 基础研究之一，其核心发现对当前主流的 Agent 记忆架构提出了根本性质疑：
@@ -31,8 +31,8 @@
 
 ## 相关实体
 
-- [Build Live Translation Apps with gpt-realtime-translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
-- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](/ch01-115-a-recent-experience-with-chatgpt-5-5-pro-gowers-s-weblog/)
+- [Build Live Translation Apps with gpt-realtime-translate](../ch01-123-build-live-translation-apps-with-gpt-realtime-translate)
+- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](../ch01-115-a-recent-experience-with-chatgpt-5-5-pro-gowers-s-weblog)
 
 ---
 

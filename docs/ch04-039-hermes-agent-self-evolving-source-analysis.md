@@ -42,8 +42,7 @@ _MEMORY_THREAT_PATTERNS = [
     (r'system\s+prompt\s+override', "sys_prompt_override"),
 
     # Exfiltration via curl/wget with secrets
-(r'curl\s+[^
-]*\$\{?\w*(KEY|TOKEN|SECRET|PASSWORD|CREDENTIAL|API)', "exfil_curl"),
+(r'curl\s+[^\n]*\$\{?\w*(KEY|TOKEN|SECRET|PASSWORD|CREDENTIAL|API)', "exfil_curl"),
 
     # ... 更多模式
 ]在如下情况下Agent会主动保存记忆：
@@ -87,23 +86,23 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 当某个操作模式在系统中出现频率高、步骤标准化、错误后果严重时，应当考虑将其专用工具化（而不是用通用工具的组合来替代）。判断标准：调用频率（每天多次 vs. 每月一次）、操作步骤是否标准化（高度标准化可以封装为单一工具，灵活多变的操作更适合通用工具）、错误成本（patch操作错误可能导致skill失效，需要专用工具提供更清晰的参数校验）。skill_manage是一个很好的参考案例——它的6种能力（create/patch/edit/delete/write_file/remove_file）如果拆成6个独立工具会增加工具数量，用统一的action参数调度则保持了工具定义的简洁性。
 
 ## 相关实体
-- 企业级AI记忆基质三层架构：事实/交互/行动记忆
-- [AI Coding Agent 记忆系统](/ch04-288-ai-coding-agent-记忆系统/)
-- [AI Agent 记忆系统架构](/ch04-145-how-ai-agent-memory-works/)
-- [Self-Evolving Agents 系统性综述](/ch04-203-self-evolving-agents-系统性综述/)
-- [Hermes Agent 记忆系统深度拆解](/ch04-418-hermes-agent/)
-- [Agent Memory System Design](/ch04-451-anthropic-multi-agent-research-system/)
-- [KAIROS — Claude Code 常驻协作范式](/ch03-002-obsidian-claude-code-集成指南/)
-- [上下文工程：三种 Agent Memory 方案对比实验](/ch04-087-agent-memory-架构本质/)
+- [企业级AI记忆基质三层架构：事实/交互/行动记忆](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-ai-memory-substrate-three-layer-architecture.md)
+- [AI Coding Agent 记忆系统](../ch04-288-ai-coding-agent-记忆系统)
+- [AI Agent 记忆系统架构](../ch04-145-how-ai-agent-memory-works)
+- [Self-Evolving Agents 系统性综述](../ch04-203-self-evolving-agents-系统性综述)
+- [Hermes Agent 记忆系统深度拆解](../ch04-418-hermes-agent)
+- [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
+- [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
+- [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
-- [SkillClaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化/)
-- [Agent 自我改进的六条路](/ch04-047-agent-自我改进的六条路/)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
-- [GBrain](/ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策/)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](/ch04-427-demis-hassabis-yc-专访-agent-才刚刚开始-ai-下一步是创造虚拟细胞/)
-- [OpenHuman: AI Agent 持久记忆框架](/ch04-284-1-6万-star-ai-agent-赛道又杀出一匹黑马/)
-- [Agent Memory System 设计指南](/ch04-087-agent-memory-架构本质/)
-- 上下文工程 - 三种Memory方案对比
+- [SkillClaw](../ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化)
+- [Agent 自我改进的六条路](../ch04-047-agent-自我改进的六条路)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力)
+- [GBrain](../ch01-220-gbrain-yc-ceo-garry-tan-的-postgres-native-ai-第二大脑-5-大设计决策)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch04-427-demis-hassabis-yc-专访-agent-才刚刚开始-ai-下一步是创造虚拟细胞)
+- [OpenHuman: AI Agent 持久记忆框架](../ch04-284-1-6万-star-ai-agent-赛道又杀出一匹黑马)
+- [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
+- [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 
 ---
 

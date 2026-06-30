@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/schemata-dod-contractor-api-flaw-military-data-exposure.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/schemata-dod-contractor-api-flaw-military-data-exposure.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/schemata-dod-contractor-api-flaw-military-data-exposure.md)
 
 ## 相关实体
 
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](/ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm/)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch04-010-versa-takes-aim-at-fragmented-enterprise-security-with-cspm)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
+- We Tested DeepSeek V4 Pro and Flash Against Claude
 
 ## 深度分析
 Schemata是一家面向美国国防部（DoD）和企业市场的AI驱动虚拟训练平台供应商，其API漏洞被安全研究项目Strix发现并于2026年5月公开披露。漏洞的核心是**缺乏合理的授权检查（broken authorization）**：一个持有低权限普通账户的研究人员，通过观察正常浏览器流量识别出API端点，随后使用自己的会话发出了跨租户（cross-tenant）数据请求——系统直接返回了其他组织的数据。这不是复杂的0day漏洞利用，而是一个在SDLC（安全开发生命周期）早期就应被识别和修复的基础性缺陷。

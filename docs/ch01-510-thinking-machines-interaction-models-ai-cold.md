@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/thinking-machines-interaction-models-ai-cold.md`
 
-## thinking-machines-interaction-models-ai-cold
+# thinking-machines-interaction-models-ai-cold
 
 现有AI都是假实时！Thinking Machines发布交互模型，离真正的贾维斯真的近了
 Thinking Machines 发了一个新的交互模型，切入了一个更根本的问题：我们与 AI 交互的方式。它能够同时进行聆听、观察、说话、被打断、作出反应、在后台思考，以及调用工具。这一切并非靠语音转文字、轮次检测和各种智能体技巧拼接而成的流水线，而是一种原生的模型能力！
@@ -13,13 +13,13 @@ Mira Murati的Thinking Machines Lab刚刚发布了新的研究成果：交互模
 用过语音AI的人都有这种感受：你必须说完，它才开始听。它说完，你才能接话。
 
 ## 相关实体
-- [Thinking Machines Interaction Models](/ch01-510-thinking-machines-interaction-models-ai-cold/)
-- [Interaction Models](/ch01-566-interaction-models-a-scalable-approach-to-human-ai-collabor/)
-- [Thinking Machines Lab](/ch01-512-thinking-machines-lab/)
-- [Interaction Models Human Ai](/ch03-122-interaction-models/)
-- [Loongsuite Genai Semconv Alibaba](/ch04-379-loongsuite-genai/)
+- [Thinking Machines Interaction Models](../ch01-510-thinking-machines-interaction-models-ai-cold)
+- [Interaction Models](../ch01-566-interaction-models-a-scalable-approach-to-human-ai-collabor)
+- [Thinking Machines Lab](../ch01-512-thinking-machines-lab)
+- [Interaction Models Human Ai](../ch03-122-interaction-models)
+- [Loongsuite Genai Semconv Alibaba](https://github.com/QianJinGuo/wiki/blob/main/entities/loongsuite-genai-semconv-alibaba.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thinking-machines-interaction-models-ai-cold.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thinking-machines-interaction-models-ai-cold.md)
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/claude-code-skill-writing-guide.md`
 
-## Claude Code SKILL.md 写作指南
+# Claude Code SKILL.md 写作指南
 
 ## 核心概念
 
@@ -40,10 +40,10 @@ skill-name/
 3. 带触发词（PDF、表单、git diff 等）
 
 ```yaml
-## ✓ 好的 description
+# ✓ 好的 description
 description: 从PDF文件中提取文本和表格、填充表单、合并文档。在处理PDF文件或用户提及PDF、表单时使用。
 
-## ✗ 避免：只写功能名，不写触发时机
+# ✗ 避免：只写功能名，不写触发时机
 description: 处理Excel文件
 ```
 
@@ -65,7 +65,7 @@ description: 处理Excel文件
 **Skill 正文里最值钱的是踩坑清单，不是概念解释。**
 
 ```markdown
-## ✓ 好的写法
+# ✓ 好的写法
 ## 提取 PDF 文本
 使用 pdfplumber 进行文本提取：
 ```python
@@ -74,7 +74,7 @@ with pdfplumber.open("file.pdf") as pdf:
     text = pdf.pages[0].extract_text()
 ```
 
-## ✗ 不好的写法（全是废话）
+# ✗ 不好的写法（全是废话）
 PDF（便携式文档格式）是一种常见文件格式...
 ```
 
@@ -200,13 +200,13 @@ Skill 写完后，不要直接投入生产使用。验证方式：
 - [sanyuan-skills](https://github.com/sanyuan0704/sanyuan-skills)
 - [Anthropic 官方 Skills 仓库](https://github.com/anthropics/skills)
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](/ch01-615-skill-issues-compromising-claude-code-with-malicious-skills/)
-- [Claude Design Skill Web Design Engineer](/ch07-011-我把-claude-design-做成了-skill-人人都能成为顶级网站设计师/)
-- [Claude Design Skill](/ch07-011-claude-design-skill/)
-- [Claude Code Prompt Source Analysis](/ch09-054-claude-code-prompt/)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
-- using claude
-- MOC
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01-615-skill-issues-compromising-claude-code-with-malicious-skills)
+- [Claude Design Skill Web Design Engineer](../ch07-011-我把-claude-design-做成了-skill-人人都能成为顶级网站设计师)
+- [Claude Design Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-design-skill.md)
+- [Claude Code Prompt Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-source-analysis.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南)
+- [using claude](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-html-artifacts.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 
 ---
 
