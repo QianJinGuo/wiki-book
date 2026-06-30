@@ -140,7 +140,7 @@
 
 | 现有 entity | 应用域 | 核心方法 |
 |-------------|--------|---------|
-| [AI 自主科研 L0-L4](ch04/310-ai.md) (6KB) | 科学发现 (AlphaFold / The AI Scientist) | L0-L4 五级自主性框架 |
+| [AI 自主科研 L0-L4](ch04/150-ai.md) (6KB) | 科学发现 (AlphaFold / The AI Scientist) | L0-L4 五级自主性框架 |
 | [AutoResearch 多 Agent 软件开发](ch04/503-agent.md) (14KB) | 软件开发 (Codex / Claude Code) | 多 Agent 异步 + 评审者回路 |
 | Karpathy AutoResearch (Query Engine Bug) | 个人研究循环 | Nightly research loop |
 
@@ -168,7 +168,7 @@
 | 期 | 主题 | 核心 entity |
 |----|------|------------|
 | 第 1-2 期 | (背景调研)| 待补充 |
-| **第 3 期** | **7×24 Self-Healing Pipeline + Agent 自进化** (研发生产线) | [Gaode Ai Native 7X24 Pipeline Self Healing](ch04/310-ai.md) (30KB) |
+| **第 3 期** | **7×24 Self-Healing Pipeline + Agent 自进化** (研发生产线) | [Gaode Ai Native 7X24 Pipeline Self Healing](ch04/150-ai.md) (30KB) |
 | **第 4 期** (本期) | **Marketing AutoResearch** (营销增长托管) | 本文 |
 
 **两条线的并列**：
@@ -177,7 +177,7 @@
 
 **核心思想一致**："**人定义规则和边界，AI 在规则内自主决策和执行**"——研发线强调"操作执行→决策审查"，营销线强调"工具调优→决策智能"。
 
-### 与 [高德 AI Companion Agent 架构](ch04/310-ai.md) 的层级关系
+### 与 [高德 AI Companion Agent 架构](ch04/150-ai.md) 的层级关系
 
 - **AI Companion Agent**：C 端用户交互（智能助手）
 - **AI Native 生产线**：B 端研发提效（CI/CD 自愈）
@@ -208,7 +208,7 @@
 3. **反馈**变化：从"离线评估" → "线上实时反馈"
 4. **责任**变化：从"工具辅助" → "业务托管"
 
-这是 [高德 SDD Harness 团队 AI 编码范式](ch04/310-ai.md) 的**业务侧对应**——SDD 关注"代码的正确性"，AutoResearch 关注"决策的正确性"。
+这是 [高德 SDD Harness 团队 AI 编码范式](ch04/150-ai.md) 的**业务侧对应**——SDD 关注"代码的正确性"，AutoResearch 关注"决策的正确性"。
 
 ## 实践启示
 
@@ -220,11 +220,11 @@
 
 ## 与已有实体的差异化定位
 
-- vs [AI 科研 L0-L4](ch04/310-ai.md) — 科学发现域，本文是营销业务域
+- vs [AI 科研 L0-L4](ch04/150-ai.md) — 科学发现域，本文是营销业务域
 - vs [多 Agent 软件开发](ch04/503-agent.md) — 软件开发域，本文是营销业务域
-- vs [高德 7x24 Self-Healing Pipeline](ch04/310-ai.md) — 同公司研发线，本文是营销业务线
-- vs [高德 AI Companion Agent](ch04/310-ai.md) — C 端用户交互，本文是 B 端业务托管
-- vs [天猫营销 AI 工作流](ch04/310-ai.md) — 营销自动化，本文是营销**研究**（研究 + 实验 + 反馈循环）
+- vs [高德 7x24 Self-Healing Pipeline](ch04/150-ai.md) — 同公司研发线，本文是营销业务线
+- vs [高德 AI Companion Agent](ch04/150-ai.md) — C 端用户交互，本文是 B 端业务托管
+- vs [天猫营销 AI 工作流](ch04/150-ai.md) — 营销自动化，本文是营销**研究**（研究 + 实验 + 反馈循环）
 - vs 火山引擎营销策略 Agent — 营销决策支持，本文是**业务托管**（Agent 直接调整预算）
 
 ## 上线状态
@@ -236,7 +236,7 @@
 ## 原文链接
 
 ## 相关实体
-- [Autoresearch Marketing Growth Amap Ai Native](ch04/310-ai.md)
+- [Autoresearch Marketing Growth Amap Ai Native](ch04/150-ai.md)
 
 → [原文存档（高德技术 2026-06-09）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-marketing-autoresearch-ai-native-practice.md)
 

@@ -104,17 +104,17 @@
 - [Claude Md 12 Rules Mnilax Cf2019](ch01/380-claude.md)
 - [Claude Code Dynamic Workflows Thariq Practical Patterns](ch03/073-claude-code.md)
 - [Claude Opus 48 The System Card B8460F](ch01/380-claude.md)
-- [Ruofei Claude 18 Actions Personal Ai Workbench](ch04/310-ai.md)
+- [Ruofei Claude 18 Actions Personal Ai Workbench](ch04/150-ai.md)
 - [Claude Code Dynamic Workflows 8Th Translation Xingxiaozhao](ch03/073-claude-code.md)
 - [Claude Code Best Community Fork Evolution Vibecoder](ch03/073-claude-code.md)
 - [Claude Code Dynamic Workflows Jiqizhixin 9Th Translation](ch03/073-claude-code.md)
 - [Claude Code Superpowers Workflow By Xinlingyuanyuanyuan](ch03/073-claude-code.md)
 - [Claude Dispatch And The Power Of Interfaces](ch01/435-claude-dispatch-and-the-power-of-interfaces.md)
 - [Claude Code Dynamic Workflows Zhuge6 Yucheng Translation](ch03/073-claude-code.md)
-- [Claude Code And What Comes Next](ch01/364-claude-code-and-what-comes-next.md)
+- [Claude Code And What Comes Next](ch01/362-claude-code-and-what-comes-next.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
 - [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/380-claude.md)
-- [Dingtalk Qoder Claudecode Dual Engine Ai Assistant](ch04/310-ai.md)
+- [Dingtalk Qoder Claudecode Dual Engine Ai Assistant](ch04/150-ai.md)
 
 ---
 

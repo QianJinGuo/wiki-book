@@ -44,7 +44,7 @@ Rapid expansion of AI coding tools (Copilot, Claude Code, Cursor) makes API Keys
 
 - [Semgrep Intercom PHP](ch12/105-semgrep-intercom-php-supply-chain.md) - malicious package via package manager
 - [Claude Code Malicious Skills](ch04/245-skill.md) - Agent/Skill ecosystem risk
-- [Checkmarx Jenkins Plugin](ch04/310-ai.md) - plugin marketplace attack
+- [Checkmarx Jenkins Plugin](ch04/150-ai.md) - plugin marketplace attack
 
 ## 深度分析
 

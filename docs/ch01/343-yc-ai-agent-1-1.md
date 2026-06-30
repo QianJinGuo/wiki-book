@@ -94,7 +94,7 @@ GBrain 自带 30+ 个 MCP 工具，通过 stdio 暴露，直接接进 Claude Cod
 2. **Compiled Truth + Timeline 双层模型是知识管理的最小完备设计**：覆盖式更新丢失历史，纯追加式查找效率低——GBrain 的分层设计同时解决了"认知进化"和"证据追溯"两个正交需求。上面存当前最佳理解（可改写），下面存原始证据（只追加），这种设计在信息检索理论中被称为"双塔结构"，GBrain 是首个将其大规模工程化的 AI Agent 记忆系统 ^。
 3. **信号检测的异步化是 Scalable 记忆系统的关键工程决策**：signal-detector 用便宜的小模型在后台异步抓取观点和实体，而非在主流程中同步处理——这个决策使系统可以在不增加延迟的情况下持续构建记忆。17888 个页面、4383 个人物的规模证明了异步架构的有效性 ^。
 4. **实体自动升级机制本质上是注意力资源的自动化分配**：1次生成 stub，3次联网补料，8次或开过会给完整 dossier——这个三级升级机制用算法代替了人工标注，实现了"让数据自证重要性"的极简治理思路，与 [Thin Harness Fat Skills](ch04/245-skill.md) 哲学一脉相承 ^。
-5. **Thin Harness Fat Skills 在记忆领域的完整实践**：GBrain 的 Skill 体系（25个可插拔 Skill）完全践行了 Garry Tan 的架构哲学——Runtime（gbrain.ts）只负责加载和路由，所有业务逻辑都在 Skill 层。这与 [GStack](ch04/310-ai.md) 的编码 Skill 形成对称：一个管手，一个管脑，共同构成完整的 Agent 工作流 ^。
+5. **Thin Harness Fat Skills 在记忆领域的完整实践**：GBrain 的 Skill 体系（25个可插拔 Skill）完全践行了 Garry Tan 的架构哲学——Runtime（gbrain.ts）只负责加载和路由，所有业务逻辑都在 Skill 层。这与 [GStack](ch04/150-ai.md) 的编码 Skill 形成对称：一个管手，一个管脑，共同构成完整的 Agent 工作流 ^。
 
 ## 实践启示
 1. **如果你的 Agent 项目还在用全局变量存记忆，立即迁移到外部记忆系统**：在模型内部维护对话历史有 O(n) 的上下文增长问题和 session 丢失风险。参考 GBrain 的设计，用独立的持久化存储（推荐 PGLite 起步，1000+文件后迁 Supabase）管理跨会话状态 ^。
@@ -106,7 +106,7 @@ GBrain 自带 30+ 个 MCP 工具，通过 stdio 暴露，直接接进 Claude Cod
 {
 ## 相关实体
 
-- [十年老技术开发的 ai agent 探索之路](ch04/310-ai.md)
+- [十年老技术开发的 ai agent 探索之路](ch04/150-ai.md)
 - [wiki evolver](ch07/015-wiki-evolver.md)
 
 ---

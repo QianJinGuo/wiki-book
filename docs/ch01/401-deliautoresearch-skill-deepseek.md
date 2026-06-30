@@ -74,7 +74,7 @@ DeliAutoResearch SKILL 是 DeepSeek 研究员陈德里（Deli Chen）搭建的**
 ## 相关实体
 
 - [mind lab lora 持续学习体系：δ-mem + mint + lora scaling law + macar](https://github.com/QianJinGuo/wiki/blob/main/entities/mind-lab-lora-continual-learning-system.md)
-- [recursive first steps toward automated ai research：sota 三基准自](ch04/310-ai.md)
+- [recursive first steps toward automated ai research：sota 三基准自](ch04/150-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
 
 ---

@@ -58,10 +58,10 @@ Code Interpreter 的持久化会话是一把双刃剑——它提供了必要的
 
 ## 相关实体
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/310-ai.md)
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/150-ai.md)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/195-amazon-quick.md)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/310-ai.md)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/310-ai.md)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/150-ai.md)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md)
 

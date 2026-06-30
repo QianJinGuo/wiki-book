@@ -39,7 +39,7 @@ OpenSquilla 的核心洞察是：**大多数 agent 部署都在浪费 token**，
 - denial ledger 机制（3 次拒绝后暂停 agent）是防止 prompt injection 的有效工程手段
 - XML-escaping 是处理动态内容的正确安全实践，任何从外部引入的 skill/tool metadata 都应先 escape
 ## 相关实体
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/490-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/508-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
 - [Cline Open Source Agent Runtime Sdk](ch04/503-agent.md)
 - [Pilotdeck Agent Os Openbmb Tsinghua](ch04/503-agent.md)
 - [Cline Releases Open Source Agent Runtime Sdk](ch04/401-cline-releases-open-source-agent-runtime-sdk.md)

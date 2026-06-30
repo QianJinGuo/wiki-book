@@ -15,7 +15,7 @@
 关于 Salesforce 的"Headless"策略，文章保持了 a16z 特有的犀利：它本质上是一个市场营销动作，而不是技术突破——那些被重新包装成"headless 产品"的 API 实际上已经存在多年。但这个 repositioning 方向是对的：在 Agent 世界里，数据的可访问性（API + 权限架构）比 UI 本身更重要。
 
 ## 相关链接
-- [Is Software Losing Its Head A16Z](ch01/125-is-software-losing-its-head.md)
+- [Is Software Losing Its Head A16Z](ch01/123-is-software-losing-its-head.md)
 
 ## 实践启示
 **对 SaaS 创业者和产品负责人：** 如果你的产品还在依赖"用户每天使用、形成肌肉记忆"作为黏性来源，问自己：Agent 能否通过 API 完成同样的工作？如果能，你需要提前布局三个东西：(1) 完整的 API 覆盖（不只是核心功能，要包括权限、审批、异常处理）(2) Agent 可理解的 schema（不是 Opportunities/Leads 这种人类友好的对象名，而是 tasks/intents/threads/policies 这种机器可读的结构）(3) 权限和安全架构（Agent 能做什么、谁授权、审计日志、异常回滚）。

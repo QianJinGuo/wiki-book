@@ -52,11 +52,11 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 对于基础设施团队，EC2 M8/R8 实例的 43% 单 vCPU 性能提升和 600Gbps 网络带宽对运行 AI 推理和大规模分布式工作负载有直接价值。如果当前工作负载受制于计算或网络瓶颈，升级到新实例类型可能获得显著收益。评估时应结合实际 benchmark 而非理论数字。
 
 ## 相关实体
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/310-ai.md)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/150-ai.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch04/503-agent.md)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/503-agent.md)
 - [OpenClaw多租户迁移: Phase 2&3部署](ch04/460-openclaw-multi-4.md)
-- [AgentCore Runtime部署Apache Doris MCP Server](ch04/310-ai.md)
+- [AgentCore Runtime部署Apache Doris MCP Server](ch04/150-ai.md)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch04/503-agent.md)
 - [OpenClaw多租户迁移: 背景与架构概览](ch04/438-openclaw-multi-1.md)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch04/503-agent.md)

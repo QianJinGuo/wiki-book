@@ -75,7 +75,7 @@ Information Architecture（信息架构）和用户旅程是设计阶段中 ROI 
 - [Icon Pack Websites Designers Should Bookmark](ch03/119-icon-pack-websites-designers-should-bookmark.md)
 - [Designing Small Is Harder Than Designing Big Ux Magazine](ch03/088-designing-small-is-harder-than-designing-big-ux-magazine.md)
 - [Spotify Llm Evals Funnel Not Fork](ch01/890-llm.md)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/310-ai.md)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/150-ai.md)
 - [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/blog.tubikstudio.com-form-over-function-mistakes.md)

@@ -133,8 +133,8 @@ MCP 协议支持是一个值得关注的长期差异化方向。随着 AI Agent 
 
 ## 相关实体
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Langgraph State Machine Under The Hood](ch04/187-langgraph.md)
-- [Deepseek V4 Training 58 Page Paper Deep Dive](ch04/310-ai.md)
+- [Langgraph State Machine Under The Hood](ch04/186-langgraph.md)
+- [Deepseek V4 Training 58 Page Paper Deep Dive](ch04/150-ai.md)
 - [Minimax Agent Team Mavis Owner Worker Verifier](ch04/503-agent.md)
 - [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/707-anthropic.md)
 

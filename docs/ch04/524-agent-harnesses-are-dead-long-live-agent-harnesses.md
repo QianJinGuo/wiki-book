@@ -18,8 +18,8 @@
 
 ### 关联实体
 
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch04/310-ai.md)
-- [Claude Code Dynamic Workflows Thariq Blog Gaia](ch04/310-ai.md)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch04/150-ai.md)
+- [Claude Code Dynamic Workflows Thariq Blog Gaia](ch04/150-ai.md)
 - [Harness Generator Evaluator Anthropic](ch01/707-anthropic.md)
 - [Harness Engineering Core Patterns Claude Code](ch03/073-claude-code.md)
 - [Agent Reliability Engineering Skillify Continuous Improvement](ch04/245-skill.md)

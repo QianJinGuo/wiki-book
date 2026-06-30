@@ -11,11 +11,11 @@
 1. 经验学习孤立化，不同任务间重复探索，效率低下
 
 ## 相关实体
-- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/134-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/133-skillos-learning-skill-curation-for-self-evolving-agents.md)
 - [Skill Os Learning Skill Curation Self Evolving Agents](ch04/245-skill.md)
-- [Airbyte Agents](ch04/310-ai.md)
+- [Airbyte Agents](ch04/150-ai.md)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch04/245-skill.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/065-building-ai-agents-for-business-support-using-amazon-bedrock.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/064-building-ai-agents-for-business-support-using-amazon-bedrock.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillx-zhejiang-university.md)
 

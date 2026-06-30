@@ -7,11 +7,11 @@
 ## 核心要点
 -
 ## 相关实体
-- [Tokenomics The 625 Minute Rule For Claudes Cache](ch01/277-token.md)
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch04/310-ai.md)
-- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch04/310-ai.md)
-- [Introducing Claude For Small Business](ch01/030-introducing-claude-for-small-business.md)
-- [Granola The Ai Notepad For Backtoback Meetings](ch04/310-ai.md)
+- [Tokenomics The 625 Minute Rule For Claudes Cache](ch12/003-token.md)
+- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch04/150-ai.md)
+- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch04/150-ai.md)
+- [Introducing Claude For Small Business](ch01/027-introducing-claude-for-small-business.md)
+- [Granola The Ai Notepad For Backtoback Meetings](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic_cache_tokenomics.md)
 - [the golden rule of customizable select](https://github.com/QianJinGuo/wiki/blob/main/entities/webkit-customizable-select-golden-rule.md)

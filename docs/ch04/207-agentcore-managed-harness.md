@@ -142,24 +142,24 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 ## Related
 - [原始文章存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcore-managed-harness.md)
 - [OpenClaw多租户迁移: Phase 2&3部署](ch04/460-openclaw-multi-4.md)
-- [AgentCore Runtime部署Apache Doris MCP Server](ch04/310-ai.md)
+- [AgentCore Runtime部署Apache Doris MCP Server](ch04/150-ai.md)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch04/503-agent.md)
 - [OpenClaw多租户迁移: 背景与架构概览](ch04/438-openclaw-multi-1.md)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch04/399-openclaw-multi-3.md)
-- [柚漫剧 AI 全流程提效拆解](ch04/310-ai.md)
+- [柚漫剧 AI 全流程提效拆解](ch04/150-ai.md)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch04/503-agent.md)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/236-bedrock.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch03/012-openclaw.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/207-openclaw.md)
 - [Code as Agent Harness 综述](ch09/046-code-as-agent-harness.md)
 - [harness-engineering-systematic-explainer](ch05/036-harness-engineering-systematic-explainer.md)
-- [AI Agent 工程师能力地图](ch04/310-ai.md)
+- [AI Agent 工程师能力地图](ch04/150-ai.md)
 
 ## 相关实体
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/503-agent.md)
 
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch04/503-agent.md)
 - [Your Chief Agent Operator Lobehub](ch04/374-your-chief-agent-operator-lobehub.md)
-- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/310-ai.md)
+- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/150-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

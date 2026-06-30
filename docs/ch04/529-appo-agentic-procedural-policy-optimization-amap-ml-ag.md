@@ -193,7 +193,7 @@ A = α · A_base + (1-α) · A_future
 ## 相关实体
 - [Agentic RL: Token-In Token-Out Done Right](ch04/503-agent.md)（相关：Token-In/Token-Out RL 训练框架，但 APPO 进一步细化到决策点）
 - [港中文 SLIM：动态技能生命周期管理](ch04/245-skill.md)（相关：另一条 Agentic RL 主线——技能生命周期管理）
-- [高德 Harness/SDD 体系](ch04/310-ai.md)（同公司高德不同主题：SDD 体系 vs Agentic RL）
+- [高德 Harness/SDD 体系](ch04/150-ai.md)（同公司高德不同主题：SDD 体系 vs Agentic RL）
 - [Harness Engineering 综述](ch04/503-agent.md)（相关：APPO 是 Agentic RL 的"过程工程化"）
 - [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)（相关：过程级 credit 与编排的"阶段化"同源）
 

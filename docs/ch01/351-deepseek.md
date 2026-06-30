@@ -26,7 +26,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md)
 
-- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](ch04/310-ai.md)
+- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](ch04/150-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析

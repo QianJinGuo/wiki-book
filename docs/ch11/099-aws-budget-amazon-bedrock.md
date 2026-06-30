@@ -96,7 +96,7 @@
 - [Amazon Quick Bedrock Agentcore Finops Chat](ch11/195-amazon-quick.md)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/503-agent.md)
 - [Aws Bedrock Ops Alert](ch11/236-bedrock.md)
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/310-ai.md)
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-budget-bedrock-cost-governance.md)
 

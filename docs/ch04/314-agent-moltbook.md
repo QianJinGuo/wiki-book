@@ -15,7 +15,7 @@ review_stars: 3
 ## 相关实体
 - [Claude Code Search Architecture Tencent 2026](ch03/073-claude-code.md)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/503-agent.md)
-- [Programbench Agent Benchmark](ch04/153-programbench-agent-benchmark.md)
+- [Programbench Agent Benchmark](ch04/152-programbench-agent-benchmark.md)
 - [Agentscope Java Harness Framework Enterprise Distributed](ch04/503-agent.md)
 - [Hermes Agent Newbie Guide Dotta](ch04/503-agent.md)
 

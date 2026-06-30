@@ -122,9 +122,9 @@ xAI作为独立公司，过去两年面对四个无解的问题。
 ** 第二，模型差异化窗口已经关闭。  **
 Grok 1到Grok 4一路推下来，bench
 ## 相关实体
-- [Xai Dissolved Grok Colossus2 Analysis](ch04/310-ai.md)
-- [Xai Shutdown Grok Still Alive](ch04/310-ai.md)
-- [Building Blocks For Foundation Model Training And Inference On Aws](ch04/310-ai.md)
+- [Xai Dissolved Grok Colossus2 Analysis](ch04/150-ai.md)
+- [Xai Shutdown Grok Still Alive](ch04/150-ai.md)
+- [Building Blocks For Foundation Model Training And Inference On Aws](ch04/150-ai.md)
 - [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](ch04/503-agent.md)
 - [Hermes Skill System Winty](ch04/245-skill.md)
 

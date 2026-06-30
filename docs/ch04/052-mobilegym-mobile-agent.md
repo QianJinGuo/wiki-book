@@ -299,7 +299,7 @@ MobileGym 证明了**浏览器内仿真**是实现高并发、低成本、移动
 
 ## 相关实体
 
-- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](ch04/310-ai.md)
+- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](ch04/150-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mobilegym-cas-mobile-agent-benchmark.md)
 

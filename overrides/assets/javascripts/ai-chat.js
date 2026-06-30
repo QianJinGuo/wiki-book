@@ -21,7 +21,7 @@
       var saved = localStorage.getItem("ai-chat-config");
       if (saved) return JSON.parse(saved);
     } catch(e) {}
-    return { endpoint: "", apiKey: "", model: "" };
+    return { endpoint: "", apiKey: "", model: "", ttsEndpoint: "", ttsKey: "", ttsModel: "" };
   }
   function saveConfig(cfg) {
     try { localStorage.setItem("ai-chat-config", JSON.stringify(cfg)); } catch(e) {}
@@ -165,6 +165,20 @@
           '<button class="ai-chat__form-save" data-action="save-config">保存</button>' +
           '<span class="ai-chat__form-status"></span>' +
         '</div>' +
+        '<div class="ai-chat__form-divider"></div>' +
+        '<div class="ai-chat__form-section-label">语音合成 (TTS)</div>' +
+        '<div class="ai-chat__form-row">' +
+          '<label>Endpoint</label>' +
+          '<input class="ai-chat__form-input" id="ai-cfg-tts-endpoint" placeholder="留空使用站点内置" value="' + (cfg.ttsEndpoint || '') + '">' +
+        '</div>' +
+        '<div class="ai-chat__form-row">' +
+          '<label>API Key</label>' +
+          '<input class="ai-chat__form-input" id="ai-cfg-tts-key" type="password" placeholder="留空使用站点内置" value="' + (cfg.ttsKey || '') + '">' +
+        '</div>' +
+        '<div class="ai-chat__form-row">' +
+          '<label>Model</label>' +
+          '<input class="ai-chat__form-input" id="ai-cfg-tts-model" placeholder="mimo-v2.5-tts" value="' + (cfg.ttsModel || '') + '">' +
+        '</div>' +
       '</div>' +
       '<div class="ai-chat__messages">' +
         '<div class="ai-chat__welcome"><span class="ai-chat__welcome-icon">💬</span><div>我是这篇文章的 AI 助手<br>可以回答关于「' + getArticleTitle().substring(0, 30) + '」的任何问题</div></div>' +
@@ -298,7 +312,10 @@
         var newCfg = {
           endpoint: panel.querySelector("#ai-cfg-endpoint").value.trim(),
           apiKey: panel.querySelector("#ai-cfg-apikey").value.trim(),
-          model: panel.querySelector("#ai-cfg-model").value.trim()
+          model: panel.querySelector("#ai-cfg-model").value.trim(),
+          ttsEndpoint: panel.querySelector("#ai-cfg-tts-endpoint").value.trim(),
+          ttsKey: panel.querySelector("#ai-cfg-tts-key").value.trim(),
+          ttsModel: panel.querySelector("#ai-cfg-tts-model").value.trim()
         };
         saveConfig(newCfg);
         var status = panel.querySelector(".ai-chat__form-status");
@@ -365,7 +382,7 @@
       return bubble;
     }
 
-    // ========== 语音合成 (MiMo TTS) ==========
+    // ========== 语音合成 (TTS) ==========
     var TTS_PROXY_URL = "https://tts-proxy.jinguo.workers.dev";
     var isSpeaking = false;
 
@@ -385,10 +402,15 @@
       btn.textContent = "⏳";
       btn.classList.add("speaking");
 
-      fetch(TTS_PROXY_URL, {
+      var cfg = getConfig();
+      var ttsEndpoint = cfg.ttsEndpoint || TTS_PROXY_URL;
+      var ttsHeaders = { "Content-Type": "application/json" };
+      if (cfg.ttsKey) ttsHeaders["Authorization"] = "Bearer " + cfg.ttsKey;
+
+      fetch(ttsEndpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text: cleanText, model: "mimo-v2.5-tts" })
+        headers: ttsHeaders,
+        body: JSON.stringify({ text: cleanText, model: cfg.ttsModel || "mimo-v2.5-tts" })
       }).then(function(resp) { return resp.json(); }).then(function(data) {
         if (data.error) {
           console.error("TTS error:", data.error);

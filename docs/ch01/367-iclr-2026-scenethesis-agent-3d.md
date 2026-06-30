@@ -148,7 +148,7 @@ Scenethesis 的真正贡献在于范式层面：
 
 ## 关联实体
 
-- [Yann Dubois Openai Post Training Matt Turck Interview](ch04/310-ai.md) — OpenAI 后训练方法访谈
+- [Yann Dubois Openai Post Training Matt Turck Interview](ch04/150-ai.md) — OpenAI 后训练方法访谈
 - [Yann Lecun Llm Not Intelligence Jepa](ch01/890-llm.md) — LeCun 关于 LLM 与空间智能的批判
 - [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](ch01/890-llm.md) — 2026 LLM RL 算法综述
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md) — NVIDIA Isaac Lab 机器人 RL 扩展

@@ -140,15 +140,15 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 - [Amazon Nova Lite Fine-Tuning](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) — Nova 视觉模型微调实践
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md) — Nova 多模态嵌入能力
 - [Nemotron 3 Multi-Agent System](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md) — NVIDIA 多Agent系统参考
-- [Amazon Bedrock AgentCore Memory](ch04/310-ai.md) — Bedrock Agent 记忆哲学
+- [Amazon Bedrock AgentCore Memory](ch04/150-ai.md) — Bedrock Agent 记忆哲学
 - [Strands Agents SDK](ch04/503-agent.md) — 确定性数据分析实践
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/310-ai.md)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/150-ai.md)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/569-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/310-ai.md)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/150-ai.md)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/503-agent.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch04/503-agent.md)
 - [OpenClaw多租户迁移: Phase 2&3部署](ch04/460-openclaw-multi-4.md)
-- [AgentCore Runtime部署Apache Doris MCP Server](ch04/310-ai.md)
+- [AgentCore Runtime部署Apache Doris MCP Server](ch04/150-ai.md)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch04/503-agent.md)
 - [OpenClaw多租户迁移: 背景与架构概览](ch04/438-openclaw-multi-1.md)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/032-amazon-bedrock-api.md)
@@ -161,7 +161,7 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/503-agent.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/084-aws-bedrock-serverless-async-inference-sqs-lambda.md)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/310-ai.md)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/150-ai.md)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/380-claude.md)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/048-build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)

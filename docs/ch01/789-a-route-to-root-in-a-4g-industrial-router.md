@@ -27,10 +27,10 @@
 - **避免在设备中留下未文档化的后门账户**：这不仅是不良实践，在许多司法管辖区可能违法
 - **实施安全的默认配置**：新设备应强制要求用户更改默认密码，或在首次启动时进行安全配置向导
 ## 相关实体
-- [Npm Supply Chain Compromise Postmortem](ch04/310-ai.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/150-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/310-ai.md)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/310-ai.md)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/150-ai.md)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/150-ai.md)
 - [Clinereleasesopen Sourceagentruntimesdk](ch04/503-agent.md)
 
 ---

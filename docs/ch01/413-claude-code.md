@@ -72,7 +72,7 @@ MCP、Skill、Plugin 这些外部扩展机制可能在持续变化，但 Claude 
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
 - [Claude Code 可控性：软规则无法变成硬约束](ch03/073-claude-code.md)
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
-- [AI Native 时代 —— 研发组织何去何从](ch04/310-ai.md)
+- [AI Native 时代 —— 研发组织何去何从](ch04/150-ai.md)
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](ch04/503-agent.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/378-claude-code-harness-deep-understanding.md)
 - [AutoResearch：多 Agent 自动化软件开发](ch04/503-agent.md)

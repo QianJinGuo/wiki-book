@@ -11,7 +11,7 @@
 - [Engineering Roles Shift From Developing Code To Managing Ai](ch05/060-engineering-roles-shift-from-developing-code-to-managing-ai.md)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
 - [Gbhackers Sandworm Shift From It Breaches](https://github.com/QianJinGuo/wiki/blob/main/entities/gbhackers-sandworm-shift-from-it-breaches.md)
-- [Hs.Playerzero Ai Code Review](ch04/310-ai.md)
+- [Hs.Playerzero Ai Code Review](ch04/150-ai.md)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/134-code-simulation-for-enterprise-engineering-playerzero.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/engineering-roles-shift-from-developing-code-to-ma.md)

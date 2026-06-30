@@ -9,11 +9,11 @@
 ## 相关实体
 
 - [从零构建大语言模型 —— 读完这篇你就懂了](ch01/890-llm.md)
-- [canvas hackers shinyhunters say their official domain was su](ch04/310-ai.md)
-- [canvas hackers shinyhunters say their official domain was su](ch04/310-ai.md)
-- [democratizing machine learning at netflix: building the mode](ch11/230-democratizing-machine-learning-at-netflix-building-the-mode.md)
+- [canvas hackers shinyhunters say their official domain was su](ch04/150-ai.md)
+- [canvas hackers shinyhunters say their official domain was su](ch04/150-ai.md)
+- [democratizing machine learning at netflix: building the mode](ch11/232-democratizing-machine-learning-at-netflix-building-the-mode.md)
 - [from silos to service topology: why netflix built a real-tim](ch11/008-from-silos-to-service-topology-why-netflix-built-a-real-tim.md)
-- [llmreaper - dom based ai conversation exfiltration via brows](ch04/310-ai.md)
+- [llmreaper - dom based ai conversation exfiltration via brows](ch04/150-ai.md)
 - [building is just the beginning: introducing discoverability](ch12/082-building-is-just-the-beginning-introducing-discoverability.md)
 - [nemotron 3.5 content safety: customizable multimodal safety](ch01/285-multimodal.md)
 - [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](https://github.com/QianJinGuo/wiki/blob/main/entities/neurips-2026-pangram-desk-reject-controversy.md)
@@ -22,7 +22,7 @@
 - [state of routing in model serving](ch11/168-state-of-routing-in-model-serving.md)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](ch01/722-steering.md)
 - [the recent history of ai in 32 otters](ch01/501-the-recent-history-of-ai-in-32-otters.md)
-- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](ch04/310-ai.md)
+- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](ch04/150-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
@@ -59,8 +59,8 @@
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch03/012-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch03/012-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/207-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/503-agent.md)
 
 ## 实践启示

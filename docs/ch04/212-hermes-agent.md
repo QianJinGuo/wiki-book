@@ -92,7 +92,7 @@ Hermes 的设计哲学，不是 AI 哲学，是组织学。
 - [Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)
 - [Hermes 9 Module Architecture Winty](ch01/342-hermes-9-module-architecture-winty.md)
 - [Hermes Agent Self Evolving Source Analysis](ch04/040-hermes-agent-self-evolving-source-analysis.md)
-- [P Ai Pms Guide To Claude](ch04/310-ai.md)
+- [P Ai Pms Guide To Claude](ch04/150-ai.md)
 - [Hermes Skill System Winty](ch04/245-skill.md)
 
 ---

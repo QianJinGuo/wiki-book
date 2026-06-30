@@ -33,7 +33,7 @@ Microsoft for Startups 是微软面向早期初创企业打造的综合性支持
 
 ## 关联阅读
 ## 相关实体
-- [Microsoft Is Quietly Shopping For An Openai Replac](ch04/310-ai.md)
+- [Microsoft Is Quietly Shopping For An Openai Replac](ch04/150-ai.md)
 - [Microsoft For Startups Microsoft V2](https://github.com/QianJinGuo/wiki/blob/main/entities/Microsoft-for-Startups-Microsoft-v2.md)
 - [Microsoft Startups](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-startups.md)
 - [Why Im Leaving Github For Forgejo](ch01/688-github.md)

@@ -9,9 +9,9 @@
 - Well-structured technical article explaining steering vectors with good clarity and logical flow. Demonstrates solid understanding of both naive and sophisticated steering approaches, referencing rele
 ## 相关实体
 - [Llm Steering Behavior Guidance](ch01/722-steering.md)
-- [Wetesteddeepseekv4Proandflashagainstclau](ch04/310-ai.md)
-- [Wetesteddeepseekv4Proandflashagainstclau](ch04/310-ai.md)
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/528-deepseek-v4.md)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch04/150-ai.md)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch04/150-ai.md)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/741-deepseek-v4-flash-pro.md)
 - [Deepseek V4 Pro Vs Claude](ch01/380-claude.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-flash-means-llm-steering-is-interesting-again.md)

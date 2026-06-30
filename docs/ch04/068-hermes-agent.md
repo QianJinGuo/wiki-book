@@ -151,27 +151,27 @@ OpenClaw 和 Hermes 代表了两种 Agent 架构思路：
 Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治理复杂度：用户知情权、数据删除权、跨设备同步的权限处理、provider 出错时的回滚机制。如果这些治理问题没有想清楚，深层画像宁可慢一点上，也不要留下用户信任和合规风险。
 
 ## 相关实体
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch03/012-openclaw.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/207-openclaw.md)
 - [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki/blob/main/entities/memos-hermes-plugin.md)
 - [深度拆解 Hermes Agent 记忆系统](ch04/503-agent.md)
 - [17种Agent架构演进：控制流设计的完整演化史](ch04/503-agent.md)
-- [AIAIGC峰会嘉宾阵容](ch04/310-ai.md)
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](ch03/012-openclaw.md)
+- [AIAIGC峰会嘉宾阵容](ch04/150-ai.md)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](ch11/207-openclaw.md)
 - [Agent Memory 架构解析](ch04/503-agent.md)
 - [Claude Code Prompt 提示词体系源码解析](ch03/073-claude-code.md)
 - [Hermes Agent vs OpenClaw 对比分析](ch04/503-agent.md)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/245-skill.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch04/310-ai.md)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch04/150-ai.md)
 - [hermes-agent-self-evolving-source-analysis](ch04/040-hermes-agent-self-evolving-source-analysis.md)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](ch04/310-ai.md)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](ch04/150-ai.md)
 - [Agent 原理、架构与工程实践](ch04/441-agent-engineering-principles-architecture-practice.md)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [Hermes Agent 三级 Memory 架构解析（One掌柜视角）](ch04/503-agent.md)
 
-- [AI Agent 记忆系统架构](ch04/146-how-ai-agent-memory-works.md)
+- [AI Agent 记忆系统架构](ch04/145-how-ai-agent-memory-works.md)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
-- [AI Agent 工程师能力地图](ch04/310-ai.md)
+- [AI Agent 工程师能力地图](ch04/150-ai.md)
 
 ---
 

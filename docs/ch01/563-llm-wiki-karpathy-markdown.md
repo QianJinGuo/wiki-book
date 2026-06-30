@@ -15,7 +15,7 @@ Karpathy 在 `llm-wiki.md` 里提出：让 LLM 在上下文窗口之外维护一
 - [Rag Vs Llm Wiki Enterprise Knowledge Base](ch01/039-rag-vs-llm-wiki.md)
 - [Claude Code Search Architecture Tencent 2026](ch03/073-claude-code.md)
 - [Three Rag Architectures Classic Graph Agentic](ch04/503-agent.md)
-- [How Ai Agent Memory Works](ch04/146-how-ai-agent-memory-works.md)
+- [How Ai Agent Memory Works](ch04/145-how-ai-agent-memory-works.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-wiki-architecture-karpathy-markdown-knowledge-base.md)
 

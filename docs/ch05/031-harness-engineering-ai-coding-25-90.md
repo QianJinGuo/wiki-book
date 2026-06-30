@@ -69,14 +69,14 @@
 ## 相关页面
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 六层结构与核心方程
 - [Cursor Harness 复盘](ch01/248-cursor-harness-model-production-floor.md) — 模型决定上限，Harness 决定生产下限
-- [字节跳动 TRAE Harness Engineering 指南](ch01/530-trae-harness-engineering.md) — R.E.S.T 框架/PPAF 循环/上下文 Token 流水线
+- [字节跳动 TRAE Harness Engineering 指南](ch01/531-trae-harness-engineering.md) — R.E.S.T 框架/PPAF 循环/上下文 Token 流水线
 
 ## 相关实体
 
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch04/310-ai.md)
-- [Harness Engineering实践，做了一个平台让AI一晚上自动评测和优化你的系统](ch04/310-ai.md)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/310-ai.md)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch04/150-ai.md)
+- [Harness Engineering实践，做了一个平台让AI一晚上自动评测和优化你的系统](ch04/150-ai.md)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/150-ai.md)
 - [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/245-skill.md)
 

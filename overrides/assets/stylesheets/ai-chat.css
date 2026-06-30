@@ -131,6 +131,15 @@
   font-size: 0.7rem;
   color: #27ae60;
 }
+.ai-chat__form-divider {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  margin: 0.3rem 0;
+}
+.ai-chat__form-section-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+}
 .ai-chat__actions {
   display: flex;
   gap: 0.2rem;

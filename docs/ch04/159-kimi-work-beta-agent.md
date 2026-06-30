@@ -98,7 +98,7 @@ Kimi Work Beta 的整体架构可以划分为四层：
 
 ## 相关实体
 
-- [Kimi Work Codex Vibe Working Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md) — Vibe Working 范式的详细解析
+- [Kimi Work Codex Vibe Working Paradigm Shift](ch01/434-codex.md) — Vibe Working 范式的详细解析
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md) — Claude Code 的工程实现深度解读
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md) — Agent 记忆系统的架构设计
 - [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md) — Agent 原理与工程实践全景

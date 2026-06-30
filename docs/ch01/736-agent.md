@@ -49,7 +49,7 @@
 ### 关联实体
 
 - [Headroom Context Compression Agent Vibecoder](ch04/503-agent.md)
-- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](ch04/310-ai.md)
+- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](ch04/150-ai.md)
 - [Hermes Agent V014 Architecture Shugex](ch04/503-agent.md)
 - [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](ch11/014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation](ch04/503-agent.md)

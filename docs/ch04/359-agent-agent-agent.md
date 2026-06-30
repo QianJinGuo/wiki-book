@@ -13,8 +13,8 @@
 ## 相关实体
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
 - [Agentscope Java Harness Framework Enterprise Distributed](ch04/503-agent.md)
-- [Openclaw Comprehensive Guide](ch03/012-openclaw.md)
-- [Ai Context Layer Kgc 2026](ch04/310-ai.md)
+- [Openclaw Comprehensive Guide](ch11/207-openclaw.md)
+- [Ai Context Layer Kgc 2026](ch04/150-ai.md)
 - [Skillsieve Agent Skill Security](ch04/245-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lowcode-framework-custom-agent-decision-framework-hello-agents.md)

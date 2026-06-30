@@ -47,11 +47,11 @@ Slack 是整个 Agent 的交互界面。用户通过slash command（`/prepaid Ap
 
 ## 关联阅读
 ## 相关实体
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/310-ai.md)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/150-ai.md)
 - [Create Custom Mcp Catalogs And Profiles](ch07/057-create-custom-mcp-catalogs-and-profiles.md)
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](ch04/245-skill.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/134-skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](ch04/310-ai.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/133-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](ch04/150-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-ai-agents-in-accounting.md)

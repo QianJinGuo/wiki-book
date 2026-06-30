@@ -46,7 +46,7 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/245-skill.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/503-agent.md)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/245-skill.md)
-- [Anthropic Computer Use 最佳实践](ch01/685-anthropic-computer-use.md)
+- [Anthropic Computer Use 最佳实践](ch01/684-anthropic-computer-use.md)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/380-claude.md)
 - [SkillClaw](ch04/245-skill.md)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/245-skill.md)

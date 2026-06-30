@@ -12,8 +12,8 @@
 ## 相关实体
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](ch01/643-google-adds-llms-txt-check-to-chrome-lighthouse.md)
 - [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](ch01/688-github.md)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/310-ai.md)
-- [Npm Supply Chain Compromise Postmortem](ch04/310-ai.md)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/150-ai.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/150-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)

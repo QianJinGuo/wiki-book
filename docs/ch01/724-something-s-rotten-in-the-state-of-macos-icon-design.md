@@ -12,9 +12,9 @@
 
 ## 相关实体
 - [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](https://github.com/QianJinGuo/wiki/blob/main/entities/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md)
-- [Shub Reaper Macos Stealer Attack Chain](ch04/310-ai.md)
+- [Shub Reaper Macos Stealer Attack Chain](ch04/150-ai.md)
 - [Www Referenceboard App](https://github.com/QianJinGuo/wiki/blob/main/entities/www-referenceboard-app.md)
-- [Apple Silicon Costs More Than Openrouter](ch01/094-apple-silicon-costs-more-than-openrouter.md)
+- [Apple Silicon Costs More Than Openrouter](ch01/361-apple-silicon-costs-more-than-openrouter.md)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/somethings-rotten-in-the-state-of-macos-icon-design.md)

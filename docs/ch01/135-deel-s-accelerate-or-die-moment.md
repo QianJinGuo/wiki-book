@@ -65,9 +65,9 @@ Joe Kauffman 强调：
 ## 相关实体
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch04/503-agent.md)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/310-ai.md)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/150-ai.md)
 - [Clinereleasesopen Sourceagentruntimesdk](ch04/503-agent.md)
-- [Running An Ai Native Engineering Org](ch01/046-running-an-ai-native-engineering-org.md)
+- [Running An Ai Native Engineering Org](ch01/045-running-an-ai-native-engineering-org.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deels-accelerate-or-die-moment.md)
 

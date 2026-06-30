@@ -68,9 +68,9 @@ Mythos 案例展示了负责任的 AI 披露实践：
 - **选择性开放比完全开放更安全**
 - **主动与监管机构沟通是长期正确选择**
 ## 相关实体
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog 1](ch01/635-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog 1](ch01/634-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md)
 - [Japan Pm Cybersecurity Review Anthropic Mythos](ch01/707-anthropic.md)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/310-ai.md)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/150-ai.md)
 - [Xero Announces Integration With Anthropics Claude](ch01/380-claude.md)
 - [Cisa Urges Critical Infrastructure Firms To Fortify Before I](ch12/001-cisa-urges-critical-infrastructure-firms-to-fortify-before.md)
 

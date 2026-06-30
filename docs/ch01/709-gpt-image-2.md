@@ -15,7 +15,7 @@ A crisp, printmaking-like aesthetic with bold outlines and natural deformation. 
 也可以提供主题，比如，主题:女孩，沙滩，海水
 
 ## 相关实体
-- [Gpt Image 2完全指南](ch01/730-gpt-image-2.md)
+- [Gpt Image 2完全指南](ch01/729-gpt-image-2.md)
 - [Gpt Image 2 完全指南附大量玩法案例顺便开源我的生图 Skill](ch04/245-skill.md)
 - [Skill Rag Tsinghua Sra](ch04/245-skill.md)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/114-useful-memories-become-faulty-when-continuously-updated-by-l.md)

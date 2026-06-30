@@ -16,7 +16,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
 
 ## 相关实体
-- [Google and Amnesty International teamed up to make Android spyware detectable](ch12/060-google-and-amnesty-international-teamed-up-to-make-android-s.md)
+- [Google and Amnesty International teamed up to make Android spyware detectable](ch12/063-google-and-amnesty-international-teamed-up-to-make-android-s.md)
 
 ## 深度分析
 ### 背景：商业间谍软件的检测困境

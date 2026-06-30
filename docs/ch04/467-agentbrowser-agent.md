@@ -51,7 +51,7 @@ AgentBrowser 的核心价值在于将传统浏览器自动化框架改造为 Age
 - [Hermes-Agent](ch03/087-hermes-agent.md) — 可通过 AgentBrowser 扩展能力
 
 ## 相关实体
-- [GBrain](ch04/310-ai.md)
+- [GBrain](ch04/150-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

@@ -12,7 +12,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mcp-serveramazon-bedrock-agentcorequick-suite.md)
 
 ## 相关实体
-- [AgentCore Runtime部署Apache Doris MCP Server](ch04/310-ai.md)
+- [AgentCore Runtime部署Apache Doris MCP Server](ch04/150-ai.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch04/503-agent.md)
 - [AgentCore Managed Harness](ch04/503-agent.md)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/503-agent.md)
@@ -28,10 +28,10 @@
 - [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/525-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/569-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/310-ai.md)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/310-ai.md)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/150-ai.md)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/150-ai.md)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/503-agent.md)
-- [AI Agent 工程师能力地图](ch04/310-ai.md)
+- [AI Agent 工程师能力地图](ch04/150-ai.md)
 
 ## 深度分析
 **1. 架构解耦：MCP协议的网关价值**

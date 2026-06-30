@@ -17,7 +17,7 @@
 ## 相关实体
 - [Lucasfcostacom Blog Backpressure Is All You Need](ch01/006-backpressure-is-all-you-need.md)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](ch04/503-agent.md)
-- [Ai Native Startup Cyberfund Guide](ch04/310-ai.md)
+- [Ai Native Startup Cyberfund Guide](ch04/150-ai.md)
 - [Harness Engineering Comprehensive Guide Conardli](ch05/061-harness-engineering.md)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/245-skill.md)
 

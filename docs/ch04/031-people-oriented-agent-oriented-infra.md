@@ -250,7 +250,7 @@
 - 晓斌 = "harness 平台化"（**运行环境层**变革）——"组装的对象从'应用'变成了'agent 工作环境'"
 - 共同点：都强调"infra / 协议"是 AI Agent 落地的关键
 
-### vs [Kimi Work](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)
+### vs [Kimi Work](ch01/434-codex.md)
 - Kimi Work = Harness 搬到本地桌面
 - 晓斌 = Harness **平台化**（云上"组装对象从应用变成 agent 工作环境"）
 - 共同点：harness 决定一切
@@ -265,7 +265,7 @@
 - 晓斌 = 4 层 Agent-Oriented Infra 设计（**infra 层**架构）
 - 共同点：都强调"边界 / 接口"是工程化关键
 
-### vs [Microsoft Build 2026](ch04/310-ai.md)
+### vs [Microsoft Build 2026](ch04/150-ai.md)
 - MAI = "从零训练 + 无蒸馏"（**模型层**独立）
 - Scout = 企业级智能体（**应用层**）
 - 晓斌 = "**给 infra 补能力**"（**基础设施层**转向）—— **三件互补：模型 + 应用 + infra**
@@ -324,10 +324,10 @@
 ## 相关对照
 - [Agent Harness 架构](ch04/503-agent.md) —— 7 层 harness 模型
 - [wow-harness v3](ch05/015-harness.md) —— 跨 session 事件时间线
-- [Kimi Work](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md) —— 本地桌面 Agent
+- [Kimi Work](ch01/434-codex.md) —— 本地桌面 Agent
 - [PilotDeck](ch04/503-agent.md) —— 多项目隔离
 - [Rein](ch04/503-agent.md) —— 4 模块 + 5 类型边界
-- [Microsoft Build 2026](ch04/310-ai.md) —— 全栈 AI
+- [Microsoft Build 2026](ch04/150-ai.md) —— 全栈 AI
 - [Claude Code 20000 字符源码分析](ch03/073-claude-code.md) —— 98.4% 基础设施
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-oriented-infra-intent-driven-code-sedimentation.md)

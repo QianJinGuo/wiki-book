@@ -135,10 +135,10 @@ ExifTool 13.50 的修复方案代表了处理此类漏洞的最佳实践：
 
 ## 相关实体
 - [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki/blob/main/entities/exiftool-compromise-mac-592994.md)
-- [Shub Reaper Macos Stealer Attack Chain](ch04/310-ai.md)
+- [Shub Reaper Macos Stealer Attack Chain](ch04/150-ai.md)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](ch12/057-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.md)
-- [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](ch04/310-ai.md)
+- [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](ch12/058-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.md)
+- [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md)
 

@@ -13,7 +13,7 @@
 - [Amazon Nova Act Is Now Hipaa Eligible](ch04/397-amazon-nova-act-is-now-hipaa-eligible.md)
 - [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/569-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Improve Bot Accuracy With Amazon Lex Assisted Nlu](ch01/525-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
-- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch04/310-ai.md)
+- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-deepmind-accelerator-asia-pacific.md)
 

@@ -118,7 +118,7 @@ Anthropic 采用「官方维护 30+ 内部插件 + 社区贡献 10+ 外部插件
 
 ## 相关实体
 - [Claude Code Agent Teams Task Decomposition Ruofei](ch03/073-claude-code.md)
-- [Claude Code Self Repair Hooks Memory Config](ch04/310-ai.md)
+- [Claude Code Self Repair Hooks Memory Config](ch04/150-ai.md)
 - [Claude Code Agent View Huashu](ch03/065-claude-code-agent-view-huashu.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/073-claude-code.md)
 - [Claude Code 7 Layer Memory Architecture](ch01/869-claude-code-7-layer-memory-architecture.md)

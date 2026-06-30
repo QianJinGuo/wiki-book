@@ -7,7 +7,7 @@
 ## 概述
 
 Landon Cox（Microsoft Research）和 Mara Kiefer（GitHub）分享 GitHub 内部对 Copilot Agentic Workflows 的 Token 使用优化实践。核心思路：通过在 API proxy 层统一收集 Token 数据 → 用 Agent 审计 Agent（Auditor/Optimizer 双 workflow）→ 发现并自动修复效率问题。
-文章提供了 **生产级 Agentic CI workflow 的 token 成本优化路线图**，是 [Token 经济学](ch04/310-ai.md) 在工程实践层面的具体落地案例。
+文章提供了 **生产级 Agentic CI workflow 的 token 成本优化路线图**，是 [Token 经济学](ch04/150-ai.md) 在工程实践层面的具体落地案例。
 
 ## 核心优化技术
 

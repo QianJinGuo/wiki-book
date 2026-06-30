@@ -209,7 +209,7 @@ GSD 的实践数据表明，"discuss-phase 是最值得投入的一步"。这个
 **判断标准**：当你发现自己在向 agent 解释项目背景时，需要反复提到"之前那个模块"、"那个状态机"、"那个接口"——这些跨上下文引用说明项目的依赖关系已经超出了人脑的直接管理范围，这时 GSD 的价值就显现了。如果项目还在 POC 阶段，依赖关系还不稳定，frontmatter 的结构化约束反而会限制探索的灵活性。
 
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](ch04/503-agent.md)
-- [Personal AI 工作台：Claude 18 动作框架](ch04/310-ai.md)
+- [Personal AI 工作台：Claude 18 动作框架](ch04/150-ai.md)
 
 ## Related
 - [Code as Agent Harness 综述](ch09/046-code-as-agent-harness.md)

@@ -104,7 +104,7 @@ Olmo Hybrid 是 Allen AI 第一次 post-train 一个**架构显著不同**的 ba
 
 **没有这些 flag，released model 的分数会急剧下降**。但**开了这些 flag 后推理吞吐暴跌，潜在计算效率增益被抹平**。
 
-## 与现有 [Generalization Dynamics Lm Pretraining](ch04/310-ai.md) 的关系
+## 与现有 [Generalization Dynamics Lm Pretraining](ch04/150-ai.md) 的关系
 
 现有 entity 关注 pretraining dynamics 的**理论 + 实证** 框架。本文（Olmo Hybrid）贡献的是**架构维度**的扩展：
 

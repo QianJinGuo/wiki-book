@@ -11,7 +11,7 @@
 ## 相关实体
 - [Microsoft Agent Framework Python Full Guide Zizhi](ch04/503-agent.md)
 - [Servicenow Ui Is Dead Agent](ch04/503-agent.md)
-- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](ch04/310-ai.md)
+- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](ch04/150-ai.md)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/245-skill.md)
 - [Garry Tan Yc Ceo](ch01/510-garry-tan.md)
 

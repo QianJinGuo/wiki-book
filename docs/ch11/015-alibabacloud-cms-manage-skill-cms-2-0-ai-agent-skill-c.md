@@ -179,10 +179,10 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 阿里云 AI 工具链定位对照：本实体（CMS 观测接入）与阿里云 **MSE AI 网关** 90% 成本节约（任务调度 + Sandbox）属于阿里云 AI 工具链不同环节。
 - [Alibaba Eventhouse Enterprise Agent Context](ch04/503-agent.md) — 阿里 EventHouse 企业 Agent 上下文。本实体是 CMS 接入（**事件**层）—— EventHouse 处理**状态上下文**，CMS 处理**可观测性**。
 阿里云 **API 网关（Gateway API 标准）** 是**网络层**接入；本实体是**观测层**接入，定位不同。
-- [Aliyun Cio Ai Rd Efficiency](ch04/310-ai.md) — 阿里 CIO 视角的 AI 研发效率。本实体是具体工具（**Skill 化观测接入**），是该战略的工具落地。
+- [Aliyun Cio Ai Rd Efficiency](ch04/150-ai.md) — 阿里 CIO 视角的 AI 研发效率。本实体是具体工具（**Skill 化观测接入**），是该战略的工具落地。
 - [Agent Evolution Four Stages Six Dimensions Aliyun](ch04/503-agent.md) — Agent 演化的四个阶段六维度（阿里云视角）。本实体的 Skill + 自然语言接入模式属于该框架中"**降低接入门槛**"维度的具体实现。
 - [Cli Mcp Skill Architecture Decision Vibecoder](ch04/245-skill.md) — VibeCoder 的 **CLI vs MCP vs CLI+Skill** 架构决策指南。本实体是**CLI+Skill 模式**的具体生产案例（CMS CLI 6 步流程 → Skill 化），是该架构决策的真实落地示例。
-- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/310-ai.md) / [Agent Evolution Four Stages Six Dimensions Aliyun](ch04/503-agent.md) — 阿里云 AgentRun 生态。本实体与之是**同一厂商不同产品线**（AgentRun vs CMS Skill）—— 都是阿里云 AI 工具链。
+- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/150-ai.md) / [Agent Evolution Four Stages Six Dimensions Aliyun](ch04/503-agent.md) — 阿里云 AgentRun 生态。本实体与之是**同一厂商不同产品线**（AgentRun vs CMS Skill）—— 都是阿里云 AI 工具链。
 
 ## 相关主题
 

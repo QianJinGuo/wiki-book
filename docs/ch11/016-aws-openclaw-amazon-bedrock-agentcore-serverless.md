@@ -181,8 +181,8 @@ PowerShell
 5. **监控大盘是运维的主入口**：CloudWatch 的 Router Lambda 日志是排查消息路由失败的第一站；AgentCore 容器日志用于排查 OpenClaw 本身的问题；Token Analytics 大盘用于实时评估 AI 成本。三个视角缺一不可，建议运维团队为每个视角准备标准化的查询过滤条件。
 ## 相关实体
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/503-agent.md)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/310-ai.md)
-- [Openclaw Multi 2](ch03/012-openclaw.md)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/150-ai.md)
+- [Openclaw Multi 2](ch11/207-openclaw.md)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 3](ch04/503-agent.md)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 6](ch04/503-agent.md)
 

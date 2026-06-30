@@ -211,7 +211,7 @@ Claude Code 用一年时间，从两个 Slack 点赞走到了一个 PM 在写代
 
 - [Loop Engineering Addy Osmani Challengehub](ch05/004-loop-engineering.md) — Loop 架构的工程实践
 - [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](ch04/503-agent.md) — Boris Cherny 对开发工具演进方向的判断
-- [Claude Opus 4 7 Launch](ch01/672-claude-opus-4-7.md) — Opus 4.7 的能力跃升
+- [Claude Opus 4 7 Launch](ch01/671-claude-opus-4-7.md) — Opus 4.7 的能力跃升
 - [Anthropic 95Pct Data Analysis Skill Stack Architecture](ch04/245-skill.md) — Skills 系统的架构设计
 - [Anthropic Mcp Revisited Tool Search Code Orchestration](ch07/016-anthropic-mcp.md) — 工具调用与代码编排
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md) — Claude Code 源码的工程实现深度解读

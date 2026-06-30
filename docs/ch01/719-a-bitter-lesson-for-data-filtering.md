@@ -39,9 +39,9 @@ ai, agent, runtime
 ## 相关实体
 - [Agent Executor Googles Distributed Agent Runtime Da1Bb4](ch04/503-agent.md)
 - [Architecture Data Foundations For Ai Powered Search](ch01/667-architecture-data-foundations-for-ai-powered-search.md)
-- [Running An Ai Native Engineering Org](ch01/046-running-an-ai-native-engineering-org.md)
+- [Running An Ai Native Engineering Org](ch01/045-running-an-ai-native-engineering-org.md)
 - [Minimax Agent Team Mavis Owner Worker Verifier](ch04/503-agent.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/310-ai.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/a-bitter-lesson-for-data-filtering-e8807d.md)
 

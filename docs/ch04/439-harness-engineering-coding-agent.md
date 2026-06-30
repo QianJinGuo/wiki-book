@@ -7,7 +7,7 @@
 ## 核心要点
 微信文章：Harness Engineering: 让 Coding Agent 可靠完成长程任务
 ## 相关实体
-- [Harness Engineering耗时一周我是如何将应用的Ai Coding率提升至90的](ch04/310-ai.md)
+- [Harness Engineering耗时一周我是如何将应用的Ai Coding率提升至90的](ch04/150-ai.md)
 - [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch04/503-agent.md)
 - [Agent架构关键变化Harness正在成为新后端](ch04/503-agent.md)
 - [Harness Engineering Reliable Long Term Agent](ch04/503-agent.md)

@@ -81,7 +81,7 @@ Luke 的模型选择策略（"Droid Whispering"）遵循**角色 × 模型能力
 
 **更深一层**：刻意用**不同模型厂商**做验证，避免同一份训练数据带来的同向偏见。Luke 直接点出："你被某一家模型锁定，这个家族最弱的能力就是你系统的天花板。"
 
-这与 [AgentOps on Bedrock](ch04/310-ai.md) 中关于"多模型编排降低单点故障"的设计哲学一致——异构性是鲁棒性的来源。
+这与 [AgentOps on Bedrock](ch04/150-ai.md) 中关于"多模型编排降低单点故障"的设计哲学一致——异构性是鲁棒性的来源。
 
 ### 6. 声明式编排：用 Prompt 写逻辑而非代码
 
@@ -145,11 +145,11 @@ Luke 公开的 Mission 实战数字值得仔细解读：
 - [Factory Missions Multi-Agent Shipping](ch04/503-agent.md)——同主题的姊妹篇
 - [Claude Code Agent Teams 任务分解](ch03/073-claude-code.md)——任务分解策略的另一视角
 - [Harness Engineering Core Patterns](ch03/073-claude-code.md)——声明式编排的工程哲学
-- [OpenClaw 多 Agent 团队实践](ch04/039-openclaw-multi-agent-team-practice-v2.md)——多 Agent 落地的国内实践
+- [OpenClaw 多 Agent 团队实践](ch04/038-openclaw-multi-agent-team-practice-v2.md)——多 Agent 落地的国内实践
 - [Claude Managed Agents 企业自托管](ch04/503-agent.md)——Multi-Agent 的企业部署形态
 - [Agent 记忆系统工程实践](ch04/503-agent.md)——过程资产积累的方向
 - [Harness 状态边界与失败闭环](ch05/015-harness.md)——边界即文档的工程哲学
-- [AgentOps on Bedrock](ch04/310-ai.md)——多模型编排降低单点故障
+- [AgentOps on Bedrock](ch04/150-ai.md)——多模型编排降低单点故障
 
 ---
 

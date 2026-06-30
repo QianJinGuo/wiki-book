@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/887-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.md)
-- [How Superset built the IDE for AI agents on Vercel](ch04/310-ai.md)
+- [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)
 - [How we made WINDOW JOIN parallel and vectorized](ch01/034-how-we-made-window-join-parallel-and-vectorized.md)
 
 ## 深度分析

@@ -91,7 +91,7 @@ Frida 在 Qt6 场景下的优势来自其 JavaScript 运行时允许动态构造
 - [Build Live Translation Apps With Gpt Realtime Translate](ch01/139-build-live-translation-apps-with-gpt-realtime-translate.md)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch04/245-skill.md)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents](ch04/245-skill.md)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch04/310-ai.md)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch04/150-ai.md)
 - [Why Im Leaving Github For Forgejo](ch01/688-github.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/runtime-instrumentation-of-qt6-apps-with-frida-part-1-getting-visibility.md)

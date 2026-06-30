@@ -12,9 +12,9 @@ Data Security Platform
 ## 相关实体
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](ch04/310-ai.md)
+- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](ch04/150-ai.md)
 - [Thehackernews Com The New Phishing Click How Oauth](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-com-the-new-phishing-click-how-oauth.md)
-- [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](ch04/310-ai.md)
+- [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bluekit.md)
 

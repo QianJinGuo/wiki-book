@@ -32,7 +32,7 @@ AI 项目最常见的误判，是把 Demo 跑通，当成落地已经开始。
 
 ## 相关实体
 - [Inngest - AI in Production: The 2026 Benchmark Report](ch01/459-inngest-ai-in-production-the-2026-benchmark-report.md)
-- [AI Gateway production index](ch04/310-ai.md)
+- [AI Gateway production index](ch04/150-ai.md)
 - AI Gateway production index
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)

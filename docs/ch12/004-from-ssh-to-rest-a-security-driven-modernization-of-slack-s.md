@@ -68,22 +68,22 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - **平台可演进性**：Airflow 与 EMR 基础设施细节解耦，集群替换对 DAG 无感
 > 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
 ## 相关实体
-- [Wetesteddeepseekv4Proandflashagainstclau](ch04/310-ai.md)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch04/150-ai.md)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/310-ai.md)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/150-ai.md)
 - [Why Internally Built Ai Fails Fund Accounting Audits](ch01/622-why-internally-built-ai-fails-fund-accounting-audits.md)
 - Senatorsquerycreditbureausonbnpl
 
 - [Cpanel Whm Patch 3 New Vulnerabilities](https://github.com/QianJinGuo/wiki/blob/main/entities/cpanel-whm-patch-3-new-vulnerabilities.md)
-- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](ch04/310-ai.md)
-- [Automating Confidential Containers Coco Infrastructure With Kyverno](ch04/310-ai.md)
-- [Gptomics Com How Ai Changes Software P L](ch04/310-ai.md)
+- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](ch04/150-ai.md)
+- [Automating Confidential Containers Coco Infrastructure With Kyverno](ch04/150-ai.md)
+- [Gptomics Com How Ai Changes Software P L](ch04/150-ai.md)
 - [Romanian Man 30 Years Us Prison Vishing](https://github.com/QianJinGuo/wiki/blob/main/entities/romanian-man-30-years-us-prison-vishing.md)
 - [Youcom Download The Guide Why Api Latency Is A Misleading Metric](https://github.com/QianJinGuo/wiki/blob/main/entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 - [818662](https://github.com/QianJinGuo/wiki/blob/main/entities/818662.md)
 - [2026 04 15](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-04-15.md)
 - [What My Privacy And Security Stack Actually Looks Like](ch12/019-what-my-privacy-and-security-stack-actually-looks-like.md)
-- [Ai Traffic Cyberthreat Benchmark 2026](ch04/310-ai.md)
+- [Ai Traffic Cyberthreat Benchmark 2026](ch04/150-ai.md)
 - [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](ch09/116-device-code-phishing-forensics-what-we-learned-from-bec-inv.md)
 
 ---

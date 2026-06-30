@@ -25,10 +25,10 @@ Agent 365 的 GA 标志着 Microsoft 的战略重心：**不只做 Agent 构建�
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch04/310-ai.md)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch04/150-ai.md)
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/503-agent.md)
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/503-agent.md)
-- [Agent-to-Agent (A2A) 协议标准 — Agent间通信协议](ch04/310-ai.md)
+- [Agent-to-Agent (A2A) 协议标准 — Agent间通信协议](ch04/150-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-copilot-studio-agent-governance.md)
 

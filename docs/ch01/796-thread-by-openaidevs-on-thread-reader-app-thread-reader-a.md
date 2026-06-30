@@ -31,7 +31,7 @@ Programmatic Access Tokens 的推出是此次更新的另一条主线：Scoped c
 - [Thread Patrickogrady](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-patrickogrady.md)
 - [Thread 0Xcheeezzyyyy](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-0xcheeezzyyyy.md)
 - 
-- [Agi Road May Be Wrong From The Start Wang Peng Tencent](ch01/204-agi.md)
+- [Agi Road May Be Wrong From The Start Wang Peng Tencent](ch01/268-agi.md)
 
 ---
 

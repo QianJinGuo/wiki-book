@@ -84,7 +84,7 @@ Nathan 报告了一个跨模型的共同问题：
 
 ## 相关实体
 
-- [Yann Dubois Openai Post Training Matt Turck Interview](ch04/310-ai.md)
+- [Yann Dubois Openai Post Training Matt Turck Interview](ch04/150-ai.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - **Agent 评估方法**

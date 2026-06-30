@@ -21,9 +21,9 @@
 ### 关联实体
 
 - [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](ch01/890-llm.md)
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](ch01/528-deepseek-v4.md)
-- [Autoresearch Next Phase Async Multi Agent Ai寒武纪](ch04/310-ai.md)
-- [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](ch04/310-ai.md)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](ch01/741-deepseek-v4-flash-pro.md)
+- [Autoresearch Next Phase Async Multi Agent Ai寒武纪](ch04/150-ai.md)
+- [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](ch04/150-ai.md)
 - [Gaode Uplift Model Iteration Agent Long Running Harness](ch01/750-gaode-uplift-model-iteration-agent-long-running-harness.md)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 

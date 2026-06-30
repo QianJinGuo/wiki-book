@@ -11,7 +11,7 @@
 - **成本冲击**：AI翻译成本约人类同传的百分之一，且7×24小时待命，不需要休息，不会心理崩溃 
 - **企业应用**：德国电信（P customer system）、Priceline（travel voice assistant）、Vimeo（video real-time voice） 
 ## 相关实体
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch04/310-ai.md)
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch04/150-ai.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](ch04/503-agent.md)
 - [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/556-chatgpt.md)

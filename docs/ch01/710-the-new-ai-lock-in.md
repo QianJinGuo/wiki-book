@@ -12,7 +12,7 @@
 ## 相关实体
 - [The New Ai Lock In](ch01/667-the-new-ai-lock-in.md)
 - [New Ai Lock In](ch01/667-the-new-ai-lock-in.md)
-- [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](ch04/310-ai.md)
+- [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](ch04/150-ai.md)
 - [P Ic Work Is The New Career Flex](ch03/009-ic-work-is-the-new-career-flex.md)
 - [Thehackernews Com The New Phishing Click How Oauth](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-com-the-new-phishing-click-how-oauth.md)
 

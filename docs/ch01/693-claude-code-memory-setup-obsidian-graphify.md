@@ -68,7 +68,7 @@ Claude Code 启动 → /resume 加载 Obsidian 上下文
 ## 相关实体
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/073-claude-code.md)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](ch03/073-claude-code.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/310-ai.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/150-ai.md)
 - [obsidian claude code integration guide](ch09/099-obsidian-claude-code-integration-guide.md)
 - [Obsidian + Claude Code 集成指南](ch03/073-claude-code.md)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/073-claude-code.md)

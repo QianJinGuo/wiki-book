@@ -62,18 +62,18 @@ related:
 5. **规模化路径**：Agent 系统扩展时，应采用"添加 Worker"而非"添加集成"的方式。每新增加一种能力（不论是新的微服务、新的 ML pipeline 还是新的 agent），让它以 Worker 身份接入实时发现目录，而非通过点对点集成的方式连接。
 
 ## 相关实体
-- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch04/310-ai.md)
+- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch04/150-ai.md)
 
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/310-ai.md)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/150-ai.md)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](ch04/503-agent.md)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/015-harness.md)
 - [你不知道的 Agent：原理、架构与工程实践](ch04/503-agent.md)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/503-agent.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/061-harness-engineering.md)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch03/012-openclaw.md)
-- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/310-ai.md)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/207-openclaw.md)
+- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/150-ai.md)
 
 ---
 

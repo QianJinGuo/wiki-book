@@ -127,7 +127,7 @@ LLM 时代软件工程师的核心技能：
 - [Agent Harnesses](ch04/513-agent-harnesses-are-dead-long-live-agent-harnesses.md) — Agent 架构的演进
 - [Claude Code Workflows](ch03/073-claude-code.md) — Agent 工作流设计
 - [本文实体](ch01/890-llm.md) — Tomassetti 的分析
-- [AI Agent Hype](ch04/310-ai.md) — 对 AI agent 过度炒作的冷静分析
+- [AI Agent Hype](ch04/150-ai.md) — 对 AI agent 过度炒作的冷静分析
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-is-software-llms-replace-tomassetti-2026.md)
 

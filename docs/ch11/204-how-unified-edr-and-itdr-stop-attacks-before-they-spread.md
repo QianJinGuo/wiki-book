@@ -23,7 +23,7 @@
 - T1098 — Account Manipulation
 ## 相关实体
 - [Huntress Edr Itdr](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr.md)
-- [Llm Raiders Private Ai Server](ch04/310-ai.md)
+- [Llm Raiders Private Ai Server](ch04/150-ai.md)
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](ch03/073-claude-code.md)
 - [Llm Raiders And How To Repel Them](ch01/602-llm-raiders-and-how-to-repel-them.md)
 - [How To Create Websites With Great Ux Designs](ch01/129-how-to-create-websites-with-great-ux-designs-principles-and.md)

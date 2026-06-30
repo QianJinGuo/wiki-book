@@ -10,7 +10,7 @@
 
 - [Why Internally-Built AI Fails Fund Accounting Audits](ch01/622-why-internally-built-ai-fails-fund-accounting-audits.md)
 - [Why I'm leaving GitHub for Forgejo](ch01/688-github.md)
-- [AI in Cybersecurity Training Resources | SANS Institute](ch04/310-ai.md)
+- [AI in Cybersecurity Training Resources | SANS Institute](ch04/150-ai.md)
 
 ## 深度分析
 这篇文章将科学创造力的二元性（Connective Novelty vs. Disruptive Innovation）置于聚光灯下，并通过对 1200 万科学家 60 年发表记录的量化分析，为 Max Planck 的经典论断提供了实证基础。核心发现是：**科学家随年龄增长趋于"连接"而非"颠覆"**——这不是能力退化，而是认知模式的结构性转变。

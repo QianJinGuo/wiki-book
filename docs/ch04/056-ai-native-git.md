@@ -158,7 +158,7 @@ Level 3（远期）: AI 做决策辅助
 
 ## 相关实体
 - [Git Repo Based Pm Automation](https://github.com/QianJinGuo/wiki/blob/main/entities/git-repo-based-pm-automation.md)
-- [Harness Engineering Jk Launcher Baijiajie](ch04/310-ai.md)
+- [Harness Engineering Jk Launcher Baijiajie](ch04/150-ai.md)
 - [Harness Design Long Running Apps](ch05/017-harness-design-long-running-apps.md)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](ch04/503-agent.md)
 - [Alibaba Agentic Cloud](ch04/503-agent.md)

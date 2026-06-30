@@ -22,7 +22,7 @@ vLLM 是一个高性能的 LLM 推理和服务引擎，由 UC Berkeley 开发并
 
 ## 相关实体
 
-- [vLLM 高效推理](ch04/310-ai.md)
+- [vLLM 高效推理](ch04/150-ai.md)
 - [ServiceNow vLLM Correctness](ch01/866-vllm.md)
 - [vLLM v0 to v1 Correctness](ch01/866-vllm.md)
 

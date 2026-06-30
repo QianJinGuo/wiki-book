@@ -15,11 +15,11 @@ Searchlight Cyber 的这篇研究披露了 Salesforce Marketing Cloud（ExactTar
 2. **对已有 SaaS 邮件服务进行数据流审计**：检查哪些系统和服务有邮件内容的访问权限，即使是"仅用于故障排查"的技术访问也应纳入风险评估范围。
 3. **关注 Salesforce Marketing Cloud 的密钥管理选项更新**：如果你是 Salesforce Marketing Cloud 的用户，关注其是否提供客户自管理密钥（BYOK 或 CMK）功能，以及该功能下 Salesforce 是否在架构上被排除在解密路径之外。
 ## 相关实体
-- [Detect Ai Agent Traffic](ch04/310-ai.md)
+- [Detect Ai Agent Traffic](ch04/150-ai.md)
 - [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki/blob/main/entities/exiftool-compromise-mac-592994.md)
 - [Oz Multi Harness Cloud Agent Orchestration](ch04/503-agent.md)
-- [Langgraph State Machine Under The Hood](ch04/187-langgraph.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/310-ai.md)
+- [Langgraph State Machine Under The Hood](ch04/186-langgraph.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
 
 ---
 

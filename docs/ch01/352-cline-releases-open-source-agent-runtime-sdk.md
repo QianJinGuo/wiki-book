@@ -107,11 +107,11 @@ Cline 的核心差异化在于：(1) 把 agent loop 做成 portable kernel；(2)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md) — Agent 记忆系统的工程实践，与"持久化在文件系统"理念呼应
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md) — 从 vibe coding 到 agentic engineering 的范式跃迁
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md) — Vibe Coding 与 Agentic Engineering 的同源访谈
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/310-ai.md) — AWS Bedrock AgentOps 的规模化运营实践
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md) — AWS Bedrock AgentOps 的规模化运营实践
 - [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md) — Claude Code harness 的另一深度解析
 - [Claude Code Harness Deep Dive Founder Park](ch03/073-claude-code.md) — 同主题的另一种解读视角
-- [scaling archunit with nebula archrules](ch11/237-scaling-archunit-with-nebula-archrules.md)
-- [the code-as-content era](ch01/409-the-code-as-content-era.md)
+- [scaling archunit with nebula archrules](ch11/241-scaling-archunit-with-nebula-archrules.md)
+- [the code-as-content era](ch01/407-the-code-as-content-era.md)
 - [the shape of the thing](ch01/196-the-shape-of-the-thing.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

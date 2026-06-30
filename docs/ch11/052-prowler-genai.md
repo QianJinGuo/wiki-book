@@ -13,7 +13,7 @@
 *(Add your notes here)*
 
 ## 相关实体
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](ch04/310-ai.md)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](ch04/150-ai.md)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](ch11/195-amazon-quick.md)
 - [CloudSectiDbits](ch11/212-cloudsectidbits.md)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch04/503-agent.md)

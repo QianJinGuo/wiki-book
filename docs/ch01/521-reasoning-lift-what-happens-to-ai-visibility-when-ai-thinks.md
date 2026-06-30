@@ -12,7 +12,7 @@
 - TOFU 内容在 reasoning 模式下具有新的战略价值：品牌可持续从 Problem 阶段延续到 Selection 阶段
 ## 相关实体
 - [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](https://github.com/QianJinGuo/wiki/blob/main/entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
-- [Npm Supply Chain Compromise Postmortem](ch04/310-ai.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/150-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 - [Tmall Ai Coding Practice Team Knowledge Base](ch09/068-tmall-ai-coding-practice-team-knowledge-base.md)

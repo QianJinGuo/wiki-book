@@ -23,9 +23,9 @@
 5. **为 Fork 保留可能性。** 保持与社区的良好关系，避免进入 Toxic Gatekeeping 状态。即使项目当前健康，也要关注是否有替代 fork 可用。License 变更（Terraform/OpenTofu、Redis/Valkey）表明 Fork 往往是唯一出路，提前保持关系比危机时重建容易得多。
 ## 相关实体
 - [Clinereleasesopen Sourceagentruntimesdk](ch04/503-agent.md)
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/490-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/508-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
 - [How We Made Window Join Parallel And Vectorized](ch01/034-how-we-made-window-join-parallel-and-vectorized.md)
-- [Products Are Out Brains Are In](ch01/128-products-are-out-brains-are-in.md)
+- [Products Are Out Brains Are In](ch01/127-products-are-out-brains-are-in.md)
 - Investing In Stitch
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dumb-ways-for-an-open-source-project-to-die.md)

@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [pithtrain：陈天奇 + cmu flame center 推出的 agent-native moe 训练框架（1](ch04/310-ai.md)
+- [pithtrain：陈天奇 + cmu flame center 推出的 agent-native moe 训练框架（1](ch04/150-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元-v2.md)
 
 ## 摘要
@@ -159,7 +159,7 @@ response = client.chat.completions.create(
 
 ## 关联实体
 
-- [Ai Infra Llm Efficient Inference Vllm](ch04/310-ai.md) — LLM 高效推理基础设施综述（vLLM 推荐 0.20.0+）
+- [Ai Infra Llm Efficient Inference Vllm](ch04/150-ai.md) — LLM 高效推理基础设施综述（vLLM 推荐 0.20.0+）
 - [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](ch01/859-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md) — LLM 架构最新进展：KV Sharing、mHC 与压缩注意力
 - [Deepseek Moe Parallel Strategy](ch01/774-deepseek.md) — DeepSeek MoE 并行策略
 - [Msa Sparse Attention Three Kingdoms Huashu](https://github.com/QianJinGuo/wiki/blob/main/entities/msa-sparse-attention-three-kingdoms-huashu.md) — MSA 稀疏注意力（三国华术）

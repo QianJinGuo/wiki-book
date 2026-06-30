@@ -103,9 +103,9 @@ CLAUDE.md 文件在此方案中承担双重角色：
 - claude-code-memory-setup: https://github.com/lucasrosati/claude-code-memory-setup
 - Graphify: https://github.com/lucasrosati/graphify
 ## 相关实体
-- [Claude Code Self Repair Hooks Memory Config](ch04/310-ai.md)
+- [Claude Code Self Repair Hooks Memory Config](ch04/150-ai.md)
 - [Claude Code Memory Setup Obsidian Graphify](ch01/694-claude-code-memory-setup-obsidian-graphify.md)
-- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](ch04/310-ai.md)
+- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](ch04/150-ai.md)
 - [Claude Code Prompt Source Analysis](ch03/073-claude-code.md)
 - [Claude Code Tool Design Evolution Anthropic](ch03/073-claude-code.md)
 

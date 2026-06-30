@@ -128,9 +128,9 @@ Prompt 提供了三种输出模式：
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/310-ai.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/310-ai.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [Prompt Engineering Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-patterns.md)
 - [Prompt Engineering Fundamentals](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)
 

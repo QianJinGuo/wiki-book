@@ -26,9 +26,9 @@
 
 ## 相关实体
 - [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](ch01/798-generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
-- [Generalization Dynamics Pre Training Jiaxin Wen](ch04/310-ai.md)
-- [Generalization Dynamics Lm Pretraining](ch04/310-ai.md)
-- [Multilingual Ai](ch04/310-ai.md)
+- [Generalization Dynamics Pre Training Jiaxin Wen](ch04/150-ai.md)
+- [Generalization Dynamics Lm Pretraining](ch04/150-ai.md)
+- [Multilingual Ai](ch04/150-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 

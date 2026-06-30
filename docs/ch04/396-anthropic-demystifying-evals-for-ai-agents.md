@@ -16,7 +16,7 @@
 - [Anthropic Managed Agents Scaling](ch04/292-anthropic-managed-agents-scaling.md)
 - [Oz Multi Harness Cloud Agent Orchestration](ch04/503-agent.md)
 - [Anthropic Pm Jess Yan Managed Agents](ch04/353-anthropic-pm-jess-yan-managed-agents.md)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch04/310-ai.md)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-demystifying-evals-for-ai-agents.md)
 

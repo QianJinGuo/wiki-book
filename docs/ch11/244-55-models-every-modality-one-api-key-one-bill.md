@@ -14,7 +14,7 @@
 ## 相关实体
 - [Serverless Inference](ch11/003-serverless-inference.md)
 - [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/084-aws-bedrock-serverless-async-inference-sqs-lambda.md)
-- [Aws Network Firewall Ai Conflict Detection Bedrock](ch04/310-ai.md)
+- [Aws Network Firewall Ai Conflict Detection Bedrock](ch04/150-ai.md)
 - [Kiro Job Scheduler Eventbridge Ecs Fargate](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/503-agent.md)
 

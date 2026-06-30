@@ -48,7 +48,7 @@ Laser 用"概率叠加"在隐空间实现多模态推理，Token 消耗降低 97
 4. **软监督突破**：无外部强监督（bounding box 等），通过隐式对齐 + 熵正则化实现稳定训练
 
 ## 延伸概念
-- [DeepSeek Visual Primitives](ch09/125-deepseek-visual-primitives.md) — 视觉原语推理
+- [DeepSeek Visual Primitives](ch09/124-deepseek-visual-primitives.md) — 视觉原语推理
 - [SensNova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md) — 商汤多模态模型
 - [NVIDIA 多模态 RAG](ch01/285-multimodal.md) — 多模态知识系统
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/laser-acl2026-latent-superposition-visual-reasoning.md)
@@ -72,7 +72,7 @@ updated: 2026-06-30
 - [Pytorch In Kernel Recsys Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch-in-kernel-recsys-optimization.md)
 
 - [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md)
-- [Unlocking Ai Flexibility In Europe A Guide To Cross Region I](ch04/310-ai.md)
+- [Unlocking Ai Flexibility In Europe A Guide To Cross Region I](ch04/150-ai.md)
 
 ---
 

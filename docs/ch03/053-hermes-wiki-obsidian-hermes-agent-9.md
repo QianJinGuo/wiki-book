@@ -20,7 +20,7 @@
 
 **最后一行最关键**：文章越多，网络价值越大——**不是线性叠加，是指数增长**。这是从"收藏"到"网络"的范式跃迁。
 
-> 与 [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](ch04/310-ai.md) 在"知识管理从静态检索到动态自组织"维度同源——但本文是**Hermes-Wiki 的可操作搭建法**，前者是 **LLM Wiki / Obsidian-Wiki / GBrain 三种实现的架构分析**。**互补不重叠**：一个讲 what/why（架构哲学），一个讲 how（工程落地）。
+> 与 [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](ch04/150-ai.md) 在"知识管理从静态检索到动态自组织"维度同源——但本文是**Hermes-Wiki 的可操作搭建法**，前者是 **LLM Wiki / Obsidian-Wiki / GBrain 三种实现的架构分析**。**互补不重叠**：一个讲 what/why（架构哲学），一个讲 how（工程落地）。
 
 ## 文件夹结构：节点类型分离
 
@@ -198,7 +198,7 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 
 **实践价值**：对于想构建自生长知识网络的团队，9 步法的最大启示是"**先规则后内容**"——不给 Agent 规则而直接给资料，最终得到的是一堆 AI 生成的新垃圾，命名混乱、链接无意义、不可追溯。
 
-[LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](ch04/310-ai.md)提供了架构层面的理论支撑，解释了为什么 wiki-based knowledge network 能实现从静态检索到动态自组织的范式跃迁。
+[LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](ch04/150-ai.md)提供了架构层面的理论支撑，解释了为什么 wiki-based knowledge network 能实现从静态检索到动态自组织的范式跃迁。
 
 ## 实践启示
 
@@ -226,9 +226,9 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 ## 相关实体
 
 - **同 LLM Wiki / Obsidian 知识管理**：
-  - [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](ch04/310-ai.md)（架构分析）
+  - [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](ch04/150-ai.md)（架构分析）
   - [Karpathy LLM Wiki v2](ch01/284-karpathy-llm-wiki-v2-2026.md)（原始方法论）
-  - [Karpathy LLM Wiki 第二大脑](ch04/310-ai.md)
+  - [Karpathy LLM Wiki 第二大脑](ch04/150-ai.md)
   - [Obsidian 工具概览](ch09/099-obsidian-claude-code-integration-guide.md)
   - [Claude Code Memory Setup (Obsidian + Graphify)](ch01/694-claude-code-memory-setup-obsidian-graphify.md)
 - **同 Hermes Agent 生态**：
@@ -236,9 +236,9 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
   - [Hermes Agent 自进化机制源码解析](ch04/503-agent.md)
   - [Hermes Agent Memory System vs OpenClaw](ch04/503-agent.md)
 - **同上下文工程 / 记忆架构**：
-  - [AI Coding Agent 记忆系统](ch04/310-ai.md)
+  - [AI Coding Agent 记忆系统](ch04/150-ai.md)
   - [上下文工程三种记忆范式对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
-  - [企业 AI 记忆 substrate 三层架构](ch04/310-ai.md)
+  - [企业 AI 记忆 substrate 三层架构](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/obsidian-hermes-wiki-auto-growing-knowledge-network.md)
 

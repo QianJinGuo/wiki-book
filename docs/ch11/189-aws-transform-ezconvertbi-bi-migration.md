@@ -16,7 +16,7 @@ If you're running a legacy BI tool, you face compounding pressures that go beyon
 - [Cloudsectidbits Masso Cognito Sso.Html](ch11/212-cloudsectidbits.md)
 - [Amazon Bedrock Api Security Guide](ch12/032-amazon-bedrock-api.md)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/256-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch04/310-ai.md)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-transform-ezconvertbi-bi-migration.md)
 

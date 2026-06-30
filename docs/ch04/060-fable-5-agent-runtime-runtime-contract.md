@@ -192,7 +192,7 @@
 
 - vs **[dangling 已删除]** — 那个 entity 把 Harness 推为新后端;**本文**把 **Runtime 协议** 推为新运行时,Runtime ⊃ Harness
 - vs **[Harness Engineering Framework](ch05/061-harness-engineering.md)** — Runtime Contract 是 **Harness 的契约形式**;后者是工程化框架
-- vs **[纳德拉「Token 资本」论](ch04/310-ai.md)** — 纳德拉说"私有评估 / 私有 RL / 知识库" = 企业学习闭环;**本文**说"任务 Brief / 状态账本 / 证据目录 / 工具路由 / 权限清单 / 成本阈值 / fallback 预案" = Agent Runtime 闭环。两者**哲学同源**(从"模型强不强"走向"系统稳不稳"),**应用层不同**(企业战略 vs 工程协议)
+- vs **[纳德拉「Token 资本」论](ch04/150-ai.md)** — 纳德拉说"私有评估 / 私有 RL / 知识库" = 企业学习闭环;**本文**说"任务 Brief / 状态账本 / 证据目录 / 工具路由 / 权限清单 / 成本阈值 / fallback 预案" = Agent Runtime 闭环。两者**哲学同源**(从"模型强不强"走向"系统稳不稳"),**应用层不同**(企业战略 vs 工程协议)
 
 ## 深度分析
 
@@ -248,7 +248,7 @@ Anthropic 因美国政府出口管制指令暂停 Fable 5 访问,这件事在表
 - [Harness Engineering Deletable Worksite](ch05/073-harness-engineering-deletable-worksite-ruofei.md)
 - [Agent 架构关键变化:Harness 正在成为新后端](ch04/503-agent.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
-- [纳德拉「Token 资本」论](ch04/310-ai.md)
+- [纳德拉「Token 资本」论](ch04/150-ai.md)
 
 ---
 

@@ -9,7 +9,7 @@
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)
 - [Agent生产级Harness工程指南](ch04/503-agent.md)
 - [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/310-ai.md)
+- [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/150-ai.md)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](ch04/503-agent.md)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch04/503-agent.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
@@ -21,14 +21,14 @@
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/503-agent.md)
 - [Harness如何支撑Agent在生产环境稳定运行？](ch04/503-agent.md)
 - [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
-- [AI Coding Agent 记忆系统](ch04/310-ai.md)
+- [AI Coding Agent 记忆系统](ch04/150-ai.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
 - [Agent Skill 设计模式](ch04/245-skill.md)
-- [柚漫剧 AI 全流程提效拆解](ch04/310-ai.md)
+- [柚漫剧 AI 全流程提效拆解](ch04/150-ai.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](ch04/245-skill.md)
-- [Design Patterns for AI Agents 2026](ch04/310-ai.md)
+- [Design Patterns for AI Agents 2026](ch04/150-ai.md)
 
 ## 核心定义
 Harness Engineering 是针对 AI Coding Agent 在大规模、长周期任务中的可靠性工程化实践。Harness（缰绳）的隐喻表明：模型能力本身已足够强大，关键在于提供一个稳定、可控的框架，使其在安全边界内被稳定地引导和复用。

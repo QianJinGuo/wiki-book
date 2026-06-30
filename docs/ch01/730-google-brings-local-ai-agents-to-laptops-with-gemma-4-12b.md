@@ -8,9 +8,9 @@
 
 ## 相关实体
 
-- [interconnects ai p open and closed models are on different](ch04/310-ai.md)
+- [interconnects ai p open and closed models are on different](ch04/150-ai.md)
 - [llmshare: using shared chatbot pages to distribute malware](ch01/841-llmshare-using-shared-chatbot-pages-to-distribute-malware.md)
-- [zapocalypse: the attack chain that could have hijacked zapie](ch04/310-ai.md)
+- [zapocalypse: the attack chain that could have hijacked zapie](ch04/150-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-brings-local-ai-agents-to-laptops-with-gemma-4-12b-20260606.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
@@ -37,10 +37,10 @@ Google brings local AI agents to laptops with Gemma 4 12B 涉及agent领域的�
 - **article趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch03/012-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch03/012-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/207-openclaw.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/310-ai.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
 

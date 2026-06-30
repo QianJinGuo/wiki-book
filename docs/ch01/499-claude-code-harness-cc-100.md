@@ -21,7 +21,7 @@ Claude Code创始人关于Harness和编程未来的观点。
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
 - [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](ch03/073-claude-code.md)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/073-claude-code.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/310-ai.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/150-ai.md)
 
 - [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md)
 - [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-build-to-delete.md)

@@ -145,7 +145,7 @@ Claude Code Subagents 的设计实际上就是这种路由抽象的具体实现 
 
 - [Agent Harness Context Management Working Set](ch04/503-agent.md) — 上下文≠聊天记录而是工作集 + 四框架对比 + compaction 光谱 + 九字自查表
 - [Code As Agent Harness Survey](ch09/046-code-as-agent-harness.md) — Code as Agent Harness 综述
-- [Openclaw Prompt Context Harness](ch03/012-openclaw.md) — 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
+- [Openclaw Prompt Context Harness](ch11/207-openclaw.md) — 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 - [Claude Code Deep Architecture Analysis](ch03/073-claude-code.md) — Claude Code 源码级架构深度解析：工具并发、延迟加载、权限系统、Plan 模式、Compact 机制
 - [Cat Wu Anthropic Pm Interview](ch01/707-anthropic.md) — Cat Wu PM 访谈：产品节奏、100% 自动化原则、模型进化对 Harness 的影响
 

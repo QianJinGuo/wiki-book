@@ -13,7 +13,7 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 数据库设计：experiments 表（固定输入）下挂 experiment_runs 表（不同 Prompt/参数的结果），同一输入对比任意变体。
 
 ## 相关实体
-- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch04/310-ai.md)
+- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch04/150-ai.md)
 - [Claude Opus 47](ch01/380-claude.md)
 - [Pi Mono Github](ch01/621-pi-mono-github.md)
 - [From Prompt To Harness Claude Official](ch01/380-claude.md)
@@ -21,7 +21,7 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prompt-debugger-compare-templates-winty.md)
 
-- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](ch04/310-ai.md)
+- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](ch04/150-ai.md)
 
 ## 深度分析
 

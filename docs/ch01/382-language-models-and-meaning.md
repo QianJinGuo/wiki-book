@@ -48,7 +48,7 @@
 - [On the Deep Mystery of Language Models](ch01/587-stochastic-parrot-deep-mystery-llms.md)
 - [A Thought Experiment](ch01/664-stochastic-parrot-thought-experiment.md)
 - [Marcus on AI Productivity](ch11/069-stochastic-parrot-marcus-ai-productivity.md)
-- [While Breathless In Stodgy Viridian](ch01/448-while-breathless-in-stodgy-viridian.md)
+- [While Breathless In Stodgy Viridian](ch01/447-while-breathless-in-stodgy-viridian.md)
 
 ---
 

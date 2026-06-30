@@ -12,7 +12,7 @@ Now, let's consider two training scenarios:
 
 ## 相关实体
 - [Stochastic Parrot Thought Experiment](ch01/664-stochastic-parrot-thought-experiment.md)
-- [While Breathless In Stodgy Viridian](ch01/448-while-breathless-in-stodgy-viridian.md)
+- [While Breathless In Stodgy Viridian](ch01/447-while-breathless-in-stodgy-viridian.md)
 - [Stochastic Parrot Deep Mystery Llms](ch01/587-stochastic-parrot-deep-mystery-llms.md)
 - [Stochastic Parrot Marcus Ai Productivity](ch11/069-stochastic-parrot-marcus-ai-productivity.md)
 - [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/098-aws-grpo-rlvr-sagemaker-math-reasoning.md)

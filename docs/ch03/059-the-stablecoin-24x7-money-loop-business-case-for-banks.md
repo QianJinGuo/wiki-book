@@ -113,7 +113,7 @@ The article documents a "subtle vibe shift" in banks over 2026 Q1-Q2: from loudl
 - [Clarity Act 5 Things](https://github.com/QianJinGuo/wiki/blob/main/entities/clarity-act-5-things.md) — CLARITY Act 立法细节
 - CLARITY Act — CLARITY Act 5 个关键点
 - [Agentcore Payments X402 Agentic Commerce](ch04/503-agent.md) — AWS Bedrock AgentCore x402 协议（agent-to-agent 支付）
-- [Amazon Bedrock Agentic Payments Guardrails](ch04/310-ai.md) — Bedrock agentic payments 护栏
+- [Amazon Bedrock Agentic Payments Guardrails](ch04/150-ai.md) — Bedrock agentic payments 护栏
 - enable safe agentic payments with built in guardrails using  — 安全 agent 支付
 - [Coinbase Becomes Hyperliquids Official Usdc Treasury Deployer As Usdh Sunsets](https://github.com/QianJinGuo/wiki/blob/main/entities/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md) — Coinbase USDC treasury
 - [Tether Launches Developer Grants Program For Local Ai Paymen](ch09/104-tether-launches-developer-grants-program-for-local-ai-paymen.md) — Tether 本地 AI 支付开发者资助

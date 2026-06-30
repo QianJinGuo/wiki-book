@@ -78,7 +78,7 @@ Agent Teams（并行 + 共享 Context）
 
 - [Data Agent Platform Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/data-agent-platform-architecture.md)
 - [Multi Agent Collaboration 2025 Top 10 Challenges](https://github.com/QianJinGuo/wiki/blob/main/queries/multi-agent-collaboration-2025-top-10-challenges.md)
-- [Autoresearch Next Phase Async Multi Agent Ai寒武纪](ch04/310-ai.md)
+- [Autoresearch Next Phase Async Multi Agent Ai寒武纪](ch04/150-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 深度分析
 ### 从技术演进视角重新理解四种架构范式

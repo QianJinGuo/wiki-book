@@ -120,7 +120,7 @@ ARiES 采**加性评分**（0-100），三个维度：
 -
 ## 相关实体
 
-- [hackers accessed bwh hotels reservation system for months](ch04/310-ai.md)
+- [hackers accessed bwh hotels reservation system for months](ch04/150-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-llm-attck-navigator-cyber-operations.md)
 - → [同 Anthropic 红队研究：前沿模型 N-day 利用能力](ch04/236-anthropic-n-days-frontier-agent-vulnerability-research.md)
 - → [Mythos 营销角度](ch01/707-anthropic.md)

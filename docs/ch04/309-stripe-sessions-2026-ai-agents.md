@@ -42,13 +42,13 @@ Stripe Treasury 年底前将在 US、UK 支持 15 种货币存储，并扩展至
 
 ## 相关实体
 - [stripe sessions 2026 ai](ch04/366-stripe-sessions-2026-ai.md)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/310-ai.md)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/150-ai.md)
 - [Inngest - AI in Production: The 2026 Benchmark Report](ch01/459-inngest-ai-in-production-the-2026-benchmark-report.md)
-- [How Superset built the IDE for AI agents on Vercel](ch04/310-ai.md)
-- [How to Detect AI Agents on Your Website | Full Guide](ch04/310-ai.md)
-- [AI-powered honeypots: Turning the tables on malicious AI agents](ch04/310-ai.md)
+- [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)
+- [How to Detect AI Agents on Your Website | Full Guide](ch04/150-ai.md)
+- [AI-powered honeypots: Turning the tables on malicious AI agents](ch04/150-ai.md)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [十年老技术开发的 ai agent 探索之路](ch04/310-ai.md)
+- [十年老技术开发的 ai agent 探索之路](ch04/150-ai.md)
 - [entrypoint hijacking](ch01/143-entrypoint-hijacking.md)
 
 ---

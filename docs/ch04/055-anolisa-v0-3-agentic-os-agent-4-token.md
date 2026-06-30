@@ -199,12 +199,12 @@ ANOLISA v0.3 架构
 - **ANOLISA = 阿里云系统级 Agentic OS**（安全护栏 / Token 优化 / 快照回滚）
 - 共同点：都强调"用机制保证关键事件发生"——ANOLISA 给出"操作系统级"实现
 
-### vs [高德 AI-Native 生产线](ch04/310-ai.md)
+### vs [高德 AI-Native 生产线](ch04/150-ai.md)
 - 高德 = 7×24 Self-Healing 生产线（AI 全托管 / 监督 Agent）
 - **ANOLISA = 阿里系统级安全 / Token / 快照基础设施**
 - 共同点：都强调"基础设施决定 AI 自主空间"
 
-### vs [Kimi Work](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)
+### vs [Kimi Work](ch01/434-codex.md)
 - Kimi Work = Harness 搬到本地桌面（**单用户本地**）
 - **ANOLISA = 阿里云 ECS 镜像 + Agentic OS**（**云端系统级**）
 - 共同点：都强调"为 AI 套上家 / 套上 OS"
@@ -213,7 +213,7 @@ ANOLISA v0.3 架构
 - 7 层 harness 模型 = 抽象框架
 - **ANOLISA = 具体落地：3 大可观测（AgentSight）+ 4 层安全（AgentSecCore）+ 1 层快照（ws-ckpt）**
 
-### vs [Microsoft Build 2026](ch04/310-ai.md)
+### vs [Microsoft Build 2026](ch04/150-ai.md)
 - Microsoft = 全栈 AI（MAI 模型 + Scout 智能体 + 365 应用）
 - **ANOLISA = 阿里全栈 AI（ANOLISA Agentic OS + 阿里云 Linux 镜像 + ECS 部署）**
 - 共同点：都是"大厂全栈 AI"路线——模型 + Harness + 平台 + 智能体
@@ -256,7 +256,7 @@ ANOLISA v0.3 架构
 
 - **通过 OpenClaw 的 Hook 机制扩展 ANOLISA 的安全策略**。ANOLISA 的 Copilot Shell（cosh）提供了完善的 Hook 功能，支持会话导出和自定义状态栏。可以利用 Hook 在每次 Agent 执行敏感操作前自动插入人工确认步骤，或将安全事件导出到 SIEM 系统，实现 ANOLISA 与企业现有安全基础设施的集成 
 
-- **关注 ANOLISA 与 [OpenClaw](ch03/012-openclaw.md) 的集成深度**。ANOLISA 的入口是 OpenClaw，而 OpenClaw 本身支持多租户和多种部署形态（ECS/Fargate/Graviton）。在评估企业级部署时，需要考虑 ANOLISA 的多 Agent 保护能力是否满足多租户场景下的隔离需求，以及 [Hermes Agent](ch04/503-agent.md) 等其他 Agent 系统是否能与 ANOLISA 的安全框架无缝协同 
+- **关注 ANOLISA 与 [OpenClaw](ch11/207-openclaw.md) 的集成深度**。ANOLISA 的入口是 OpenClaw，而 OpenClaw 本身支持多租户和多种部署形态（ECS/Fargate/Graviton）。在评估企业级部署时，需要考虑 ANOLISA 的多 Agent 保护能力是否满足多租户场景下的隔离需求，以及 [Hermes Agent](ch04/503-agent.md) 等其他 Agent 系统是否能与 ANOLISA 的安全框架无缝协同 
 
 ## 11. 局限 / 待验证
 
@@ -270,10 +270,10 @@ ANOLISA v0.3 架构
 - [晓斌 Agent-Oriented Infra](ch04/503-agent.md) —— 哲学框架
 - [wow-harness v3](ch05/015-harness.md) —— 协议层治理
 - [MAC Skills + Hooks](ch04/245-skill.md) —— 工程师个人框架
-- [高德 AI-Native 生产线](ch04/310-ai.md) —— 企业级 R&D
-- [Kimi Work](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md) —— 本地 Agent
+- [高德 AI-Native 生产线](ch04/150-ai.md) —— 企业级 R&D
+- [Kimi Work](ch01/434-codex.md) —— 本地 Agent
 - [Agent Harness 架构](ch04/503-agent.md) —— 7 层模型
-- [Microsoft Build 2026](ch04/310-ai.md) —— 全栈 AI
+- [Microsoft Build 2026](ch04/150-ai.md) —— 全栈 AI
 - [PilotDeck](ch04/503-agent.md) —— 多项目隔离
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anolisa-v03-alibaba-agentic-os.md)

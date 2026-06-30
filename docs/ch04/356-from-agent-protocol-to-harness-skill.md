@@ -49,20 +49,20 @@ Agent Protocol → MCP Tool Calling → A2A Collaboration → Harness Skill
 
 ## 相关实体
 - [Agent Harness 架构](ch04/503-agent.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch03/012-openclaw.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/207-openclaw.md)
 - [Claude Code 源码核心机制详解](ch03/073-claude-code.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
-- [柚漫剧 AI 全流程提效拆解](ch04/310-ai.md)
+- [柚漫剧 AI 全流程提效拆解](ch04/150-ai.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/192-tencent-vibe-coding-to-agentic-engineering-backend.md)
-- [Design Patterns for AI Agents 2026](ch04/310-ai.md)
+- [Design Patterns for AI Agents 2026](ch04/150-ai.md)
 
 - [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
 - [harness-engineering-systematic-explainer](ch05/036-harness-engineering-systematic-explainer.md)
 - [claude-code-7-layer-memory-architecture](ch01/869-claude-code-7-layer-memory-architecture.md)
-- [AI Agent 工程师能力地图](ch04/310-ai.md)
+- [AI Agent 工程师能力地图](ch04/150-ai.md)
 - [huashu-design 2.0 — agent skill 反收敛三套逻辑](https://github.com/QianJinGuo/wiki/blob/main/entities/huashu-design-2-0-flower-uncle-3-patterns.md)
 - [introducing the mdn mcp server](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-mdn-mcp-server-2026.md)
-- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/310-ai.md)
+- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/150-ai.md)
 
 ---
 

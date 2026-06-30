@@ -10,7 +10,7 @@
 
 - [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/774-deepseek.md)
 - [dynamically splitting wide partitions in cassandra for time](ch11/024-dynamically-splitting-wide-partitions-in-cassandra-for-time.md)
-- [interconnects ai p open and closed models are on different](ch04/310-ai.md)
+- [interconnects ai p open and closed models are on different](ch04/150-ai.md)
 - [reducing container cold start times using soci index on dlam](ch01/856-reducing-container-cold-start-times-using-soci-index-on-dlam.md)
 - [state of routing in model serving](ch11/168-state-of-routing-in-model-serving.md)
 - [the distillation panic](ch01/276-the-distillation-panic.md)
@@ -44,9 +44,9 @@ This Artifacts Log post is unusual in how many diverse, quirky models there are 
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch03/012-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/503-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch03/012-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/207-openclaw.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
 
 ## 实践启示

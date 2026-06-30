@@ -113,7 +113,7 @@ Lambda 处理流程：
 
 ## 相关实体
 
-- [from pdfs to insights: architecting an intelligent document](ch11/212-from-pdfs-to-insights-architecting-an-intelligent-document.md)
+- [from pdfs to insights: architecting an intelligent document](ch11/214-from-pdfs-to-insights-architecting-an-intelligent-document.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/extract-data-with-on-demand-and-batch-pipelines-dynamically.md)
 
 ## 深度分析
@@ -139,7 +139,7 @@ Lambda 处理流程：
    - 实践价值：这是 agent/harness 可观测性设计的极简参考实现，可推广到任何需要 trace LLM 调用质量的场景。
 
 5. **按文档格式动态选 prompt 是提升提取精度的关键工程细节**
-   - 核心观点：文章强调"地契文档有 3 种格式变体（编号列表/表格/图示），不假设一个 prompt 适用所有"。这与 [Optimize Blueprint Extraction Accuracy In Amazon Bedrock Dat](ch12/043-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.md) 的"跨版面泛化"问题呼应，但本文给出了具体的工程解法。
+   - 核心观点：文章强调"地契文档有 3 种格式变体（编号列表/表格/图示），不假设一个 prompt 适用所有"。这与 [Optimize Blueprint Extraction Accuracy In Amazon Bedrock Dat](ch12/045-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.md) 的"跨版面泛化"问题呼应，但本文给出了具体的工程解法。
    - 技术要点：每种文档格式对应独立的 prompt（3 格式 × 2-3 任务 = 6-9 prompts），SQS 消息的 `prompt_id` 字段按文档格式路由选择。这是"格式感知 prompt 路由"的工程实现。
    - 实践价值：在实际 IDP 项目中，按格式分 prompt 的准确率提升往往比优化单一 prompt 更显著，因为不同格式的版面特征差异远大于同一格式内的措辞差异。
 

@@ -40,7 +40,7 @@ Nielsen 提出的翻转逻辑：
 
 Nielsen 的观察触及了当代 design systems 运动的核心悖论。Design systems 的价值主张是通过可复用的组件和明确的规则来提升一致性和效率。但这种系统化思维天然倾向于"可量化的属性"（间距、颜色、圆角），而忽略了"不可量化的品质"（表现力、情感共鸣、文化语境）。
 
-这与 [文档组织](ch04/310-ai.md) 的讨论有深层共鸣：树状结构（文件夹、分类法）是存储机制而非知识架构；同样，design system 的规则是一致性机制而非卓越机制。
+这与 [文档组织](ch04/150-ai.md) 的讨论有深层共鸣：树状结构（文件夹、分类法）是存储机制而非知识架构；同样，design system 的规则是一致性机制而非卓越机制。
 
 ### 从软件设计到更广泛的启示
 
@@ -64,7 +64,7 @@ Nielsen 的观察触及了当代 design systems 运动的核心悖论。Design s
 ## 相关实体
 
 - [Penpot: Claude Design 不是企业设计的未来](ch01/380-claude.md) — AI 设计工具的局限性
-- [文档组织: 为人类和 AI](ch04/310-ai.md) — 系统化结构 vs 知识发现
+- [文档组织: 为人类和 AI](ch04/150-ai.md) — 系统化结构 vs 知识发现
 - Design Systems — 设计系统的理论与实践
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/consistency-excellence-jim-nielsen.md)

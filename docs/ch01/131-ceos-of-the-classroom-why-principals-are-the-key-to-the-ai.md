@@ -25,8 +25,8 @@
 
 ## 相关实体
 
-- [Toto 2.0: Time series forecasting enters the scaling era](ch01/026-toto-2-0-time-series-forecasting-enters-the-scaling-era.md)
-- [The best argument I've heard for why AI won't take your job](ch04/310-ai.md)
+- [Toto 2.0: Time series forecasting enters the scaling era](ch01/025-toto-2-0-time-series-forecasting-enters-the-scaling-era.md)
+- [The best argument I've heard for why AI won't take your job](ch04/150-ai.md)
 
 ---
 

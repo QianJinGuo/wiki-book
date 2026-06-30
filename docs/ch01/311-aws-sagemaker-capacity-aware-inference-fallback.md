@@ -82,7 +82,7 @@ Instance Pools改变了这一点：冷启动时会自动按优先级尝试可用
 ## 相关实体
 - [EC2 Capacity Blocks：GPU短期容量决策指南](ch11/194-aws-ec2-capacity-blocks-gpu-ml.md)
 - [GRPO+RLVR: Qwen数学推理3.7x提升的工程细节](ch11/098-aws-grpo-rlvr-sagemaker-math-reasoning.md)
-- [Building Blocks for Foundation Model Training and Inference on AWS](ch04/310-ai.md)
+- [Building Blocks for Foundation Model Training and Inference on AWS](ch04/150-ai.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/084-aws-bedrock-serverless-async-inference-sqs-lambda.md)
 - [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [redis agentic ai flowers with iris](https://github.com/QianJinGuo/wiki/blob/main/entities/www.blocksandfiles.com-5241795.md)

@@ -118,8 +118,8 @@ Yael 的威胁情报来源形成了一个分层结构：
 - [Claude Code 源码机制](ch03/073-claude-code.md)
 - [Agent 原理架构与工程实践](ch04/503-agent.md)
 - [多智能体交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
-- [OpenClaw 完整指南](ch03/012-openclaw.md)
-- [LLMReaper Browser Extension Attack](ch04/310-ai.md) — AI 对话的扩展窃取风险
+- [OpenClaw 完整指南](ch11/207-openclaw.md)
+- [LLMReaper Browser Extension Attack](ch04/150-ai.md) — AI 对话的扩展窃取风险
 
 > [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-my-privacy-and-security-stack-actually-looks-like.md)
 

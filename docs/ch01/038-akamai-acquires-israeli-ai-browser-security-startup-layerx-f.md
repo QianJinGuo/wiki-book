@@ -8,11 +8,11 @@
 - 来源：https://www.calcalistech.com/ctechnews/article/byinuqxkme
 - 评分：v=8 c=9
 ## 相关实体
-- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/151-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
+- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/149-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/134-code-simulation-for-enterprise-engineering-playerzero.md)
 - [Thrive Capital Bets 100 Million On Shopifys Ai Future](https://github.com/QianJinGuo/wiki/blob/main/entities/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future.md)
-- [Microsoft Is Quietly Shopping For An Openai Replac](ch04/310-ai.md)
+- [Microsoft Is Quietly Shopping For An Openai Replac](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
 

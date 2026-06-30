@@ -127,8 +127,8 @@ Anthropic 明确定义了两者关系：
 - [Tencent Skill Writing Complete Playbook Jackjchou](ch04/245-skill.md)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch04/503-agent.md)
 
-- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](ch04/310-ai.md)
-- [Cursor Recall Anthropic Daily Release Cat Wu](ch04/310-ai.md)
+- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](ch04/150-ai.md)
+- [Cursor Recall Anthropic Daily Release Cat Wu](ch04/150-ai.md)
 - [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 

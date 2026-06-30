@@ -14,7 +14,7 @@
 ## 相关实体
 - [User Journey Map](ch01/178-user-journey-maps-how-ux-teams-turn-friction-into-better-pr.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch04/310-ai.md)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch04/150-ai.md)
 - [Unitree Ipo Robotics Market](https://github.com/QianJinGuo/wiki/blob/main/entities/unitree-ipo-robotics-market.md)
 - [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
 

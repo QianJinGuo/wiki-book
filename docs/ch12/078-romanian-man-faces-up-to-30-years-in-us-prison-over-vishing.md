@@ -85,11 +85,11 @@ Sandu 在犯罪链条中担任 money mule——负责将数字盗窃转化为物
 
 ## 相关实体
 
-- [Npm Supply Chain Compromise Postmortem](ch04/310-ai.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/150-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [Ath Agent Trust Handshake Protocol](ch04/503-agent.md)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/310-ai.md)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/romanian-man-30-years-us-prison-vishing.md)
 

@@ -58,8 +58,8 @@ Model half-life 讨论背后反映的是 AI 行业的高度竞争焦虑。各实
 - [Rag技术框架的演进方向](ch01/207-rag.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [Yidian Tianxia Context Engineering Agentic Ai Qcon](ch04/130-yidian-tianxia-context-engineering-agentic-ai-qcon.md)
-- [Llm Raiders Private Ai Server](ch04/310-ai.md)
-- [Langgraph State Machine Under The Hood](ch04/187-langgraph.md)
+- [Llm Raiders Private Ai Server](ch04/150-ai.md)
+- [Langgraph State Machine Under The Hood](ch04/186-langgraph.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/model-half-life-aifoc.md)
 

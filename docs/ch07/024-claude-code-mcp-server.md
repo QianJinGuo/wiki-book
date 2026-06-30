@@ -84,7 +84,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
 - [Claude Code 源码深度解析（13 核心机制）](ch03/073-claude-code.md)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/707-anthropic.md)
-- [AgentCore Runtime 部署 Apache Doris MCP Server](ch04/310-ai.md)
+- [AgentCore Runtime 部署 Apache Doris MCP Server](ch04/150-ai.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/192-tencent-vibe-coding-to-agentic-engineering-backend.md)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](ch04/503-agent.md)
 - [读完 Claude Code 源码才发现 Skills/MCP/Rules 的区别远没有你想的那么大](ch07/006-claude-code-skills-mcp-rules-source-analysis.md)
@@ -105,7 +105,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 
-- [AI Agent 工程师能力地图](ch04/310-ai.md)
+- [AI Agent 工程师能力地图](ch04/150-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

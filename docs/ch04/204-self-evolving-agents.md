@@ -73,18 +73,18 @@ Model-Environment Co-Evolution 的两个方向：
 3. **Co-Evolution 环境的技术要求**：如果目标是构建支持 Model-Environment Co-Evolution 的平台，需要满足：a）环境能生成多样化的任务（task generation）；b）环境能提供可验证的 reward signal；c）环境能按 Agent 能力调整难度（curriculum）。这是比简单模拟器复杂得多的工程系统。
 
 ## 相关实体
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/134-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/133-skillos-learning-skill-curation-for-self-evolving-agents.md)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/245-skill.md)
 
 - [Hermes Agent 自进化机制源码解析](ch04/503-agent.md)
 - [基于AgentCore构建自学习、可进化的文旅行业近似信息抽取Agents | 亚马逊AWS官方博客](ch04/503-agent.md)
-- [GBrain](ch04/310-ai.md)
+- [GBrain](ch04/150-ai.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch04/310-ai.md)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch04/150-ai.md)
 - [17种Agent架构演进：控制流设计的完整演化史](ch04/503-agent.md)
 - [hermes-agent-self-evolving-source-analysis](ch04/040-hermes-agent-self-evolving-source-analysis.md)
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
-- [AI Agent 工程师能力地图](ch04/310-ai.md)
+- [AI Agent 工程师能力地图](ch04/150-ai.md)
 
 ---
 

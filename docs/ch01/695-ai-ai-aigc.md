@@ -11,7 +11,7 @@
 
 ## 相关实体
 - [腾讯员工公寓曝光 竟是这样的布置](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯员工公寓曝光-竟是这样的布置.md)
-- [Aiaigc Summit Guest Lineup](ch04/310-ai.md)
+- [Aiaigc Summit Guest Lineup](ch04/150-ai.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](ch04/503-agent.md)
 - [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/556-chatgpt.md)

@@ -43,7 +43,7 @@ Lemkin 提供了系统的诊断框架来定位增长放缓的根本原因：
 除了收入指标，将产品发布速度、功能竞争力评分、AI 能力成熟度纳入核心管理层仪表盘。这些指标是收入的先行指标，而非滞后指标。
 ## 相关实体
 - [How To Encode Experience Into Skills](ch04/245-skill.md)
-- [P Ai Pms Guide To Claude](ch04/310-ai.md)
+- [P Ai Pms Guide To Claude](ch04/150-ai.md)
 - [Deels Accelerate Or Die Moment](https://github.com/QianJinGuo/wiki/blob/main/entities/deels-accelerate-or-die-moment.md)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch04/503-agent.md)
 - [Asana Agentic Work Management Platform Lettertwo](ch04/503-agent.md)
