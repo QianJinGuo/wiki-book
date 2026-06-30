@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md`
 
-## Cola DLM：字节跳动连续潜空间扩散语言模型
+# Cola DLM：字节跳动连续潜空间扩散语言模型
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
 
 ## 摘要
 
@@ -120,14 +120,14 @@ Cola DLM 的"语义部 + 文字部"分层，在多模态语境下有天然优势
 
 ## 相关实体
 
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](/ch01-726-deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元/)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](/ch01-216-读完这篇你就搞懂-deepseek-v4-了/)
-- [Harness Engineering Core Patterns Claude Code](/ch01-698-深入浅出-harness-engineering-之核心模式与理念/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Diffusion Model Architecture](/ch11-067-amazon-bedrock-model-inference-serverless-architecture-case/)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](../ch01-726-deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](../ch01-216-读完这篇你就搞懂-deepseek-v4-了)
+- [Harness Engineering Core Patterns Claude Code](../ch01-698-深入浅出-harness-engineering-之核心模式与理念)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Diffusion Model Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/diffusion-model-architecture.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
 
 ---
 

@@ -4,10 +4,10 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/agent-时代我们架构师应该学什么.md`
 
-## Agent 时代，我们架构师应该学什么？
+# Agent 时代，我们架构师应该学什么？
 架构师（JiaGouX）  我们都是架构师！
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-时代我们架构师应该学什么.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代我们架构师应该学什么.md)
 
 ## 深度分析
 
@@ -43,15 +43,15 @@ Harness 在长任务里会撞上后端同样的问题：状态、队列、日志
 
 5. **从窄目标小闭环起步**：一个明确目标 + 单 Agent 主循环 + 三到七个边界清楚的工具 + 窗口外状态层 + 沙箱 + trace + 五十条初始评估样本 + 能回滚的发布方式。多 Agent 和长期记忆可以晚一点——Agent 早期最值钱的地方，不在它会做多少事，而在团队能不能看清它怎么失败。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-时代我们架构师应该学什么.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代我们架构师应该学什么.md)
 
 ## 关联阅读
 
-* Agent Harness 上下文管理：聊天记录还是工作集
-* [Karpathy：Vibe Coding 到 Agentic Engineering](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-* [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](/ch05-035-cursor-复盘-harness-模型决定能力上限-harness-决定生产下限/)
-* [Subagents 详解：Claude Code 如何避免上下文污染](/ch01-844-subagents-详解-claude-code-如何避免上下文污染/)
-* [从 30 分钟手搓 Agent 到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+* [Agent Harness 上下文管理：聊天记录还是工作集](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
+* [Karpathy：Vibe Coding 到 Agentic Engineering](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+* [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05-035-cursor-复盘-harness-模型决定能力上限-harness-决定生产下限)
+* [Subagents 详解：Claude Code 如何避免上下文污染](../ch01-844-subagents-详解-claude-code-如何避免上下文污染)
+* [从 30 分钟手搓 Agent 到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
 
 ---
 

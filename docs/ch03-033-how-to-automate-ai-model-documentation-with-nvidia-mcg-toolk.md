@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.1KB | `entities/nvidia-mcg-toolkit-model-documentation.md`
 
-## How to Automate AI Model Documentation with NVIDIA MCG Toolkit
+# How to Automate AI Model Documentation with NVIDIA MCG Toolkit
 
 ## 深度分析
 
@@ -38,14 +38,14 @@ _Figure 1. MCG toolkit architecture: Generate a comprehensive model card by dire
 ## Designed for flexibility[](https://developer.nvidia.com/blog/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-toolkit/#designed_for_flexibili
 
 ## 相关实体
-- [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](/ch01-885-accelerating-transformers-fine-tuning-with-nvidia-nemo-autom/)
-- [Nvidia Mcg Model Documentation](/ch03-033-how-to-automate-ai-model-documentation-with-nvidia-mcg-toolk/)
-- [Nvidia Gpu Kernel Translation Cute Python Julia](/ch03-054-nvidia-gpu-kernel-translation-cute-python-julia/)
-- [Nvidia Edge First Llms Av Robotics](/ch01-194-nvidia-edge-first-llms-av-robotics/)
-- [Nvidia Cut Checkpoint Costs Nvcomp](/ch03-030-nvidia-cut-checkpoint-costs-nvcomp/)
-- MOC
+- [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
+- [Nvidia Mcg Model Documentation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-mcg-model-documentation.md)
+- [Nvidia Gpu Kernel Translation Cute Python Julia](../ch03-054-nvidia-gpu-kernel-translation-cute-python-julia)
+- [Nvidia Edge First Llms Av Robotics](../ch01-194-nvidia-edge-first-llms-av-robotics)
+- [Nvidia Cut Checkpoint Costs Nvcomp](../ch03-030-nvidia-cut-checkpoint-costs-nvcomp)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidia-mcg-toolkit-model-documentation.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-mcg-toolkit-model-documentation.md)
 
 ---
 

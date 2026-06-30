@@ -4,15 +4,15 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/claude-code-dynamic-workflows-thariq-blog-gaia.md`
 
-## 从 Harness 到动态工作流：Claude Code 多智能体任务编排的新范式
+# 从 Harness 到动态工作流：Claude Code 多智能体任务编排的新范式
 
 ## 相关实体
 
-- [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](/ch01-290-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
-- [现在如何使用 ai：一份快速指南（ethan mollick）](/ch01-320-现在如何使用-ai-一份快速指南-ethan-mollick/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-dynamic-workflows-thariq-blog-gaia.md)
+- [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](../ch01-290-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台)
+- [现在如何使用 ai：一份快速指南（ethan mollick）](../ch01-320-现在如何使用-ai-一份快速指南-ethan-mollick)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-dynamic-workflows-thariq-blog-gaia.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 ## 深度分析
 
 从 Harness 到动态工作流：Claude Code 多智能体任务编排的新范式 涉及agent领域的核心技术议题。
@@ -44,12 +44,12 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
-- [你不知道的 Agent原理架构与工程实践 V2](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道/)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch04-455-你不知道的-agent-原理-架构与工程实践)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-167-深入理解-claude-code-源码中的-agent-harness-构建之道)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

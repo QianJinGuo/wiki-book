@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 25.2KB | `entities/hermes-agent-skill-crossover-optimization.md`
 
-## Hermes Agent Skill 互优化：SkillEvolver × Darwin × EmbodiSkill 4 轮闭环
+# Hermes Agent Skill 互优化：SkillEvolver × Darwin × EmbodiSkill 4 轮闭环
 
 ## 一句话
 
@@ -12,7 +12,7 @@
 
  作者（**KK大叔**）用 Hermes Agent 让 **Darwin-skill** × **SkillEvolver** 互相优化，4 轮迭代后**意外验证了清华 SkillEvolver 论文核心结论**。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-skill-crossover-optimization-skillevolver-darwin.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-skill-crossover-optimization-skillevolver-darwin.md)
 
 ## 三个主角
 
@@ -170,7 +170,7 @@ EmbodiSkill = 失败归因 (WHY it failed) + 技能体/附录分离
 
 ## 与 GEPA optimize_anything 的关联
 
-**[GEPA optimize_anything](/ch01-263-gepa-optimize-anything/)**（GEPA 官方，2026-02-18，**通用文本优化 API**）与本实验在 4 个关键维度高度互补：
+**[GEPA optimize_anything](../ch01-263-gepa-optimize-anything)**（GEPA 官方，2026-02-18，**通用文本优化 API**）与本实验在 4 个关键维度高度互补：
 
 | 维度 | GEPA optimize_anything | 本互优化实验 |
 |---|---|---|

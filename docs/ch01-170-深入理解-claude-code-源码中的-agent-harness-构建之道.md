@@ -4,10 +4,10 @@
 
 > 📊 Level ⭐⭐ | 27.6KB | `entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md`
 
-## 深入理解 Claude Code 源码中的 Agent Harness 构建之道
+# 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 
 > 来源：技术极简主义，2026-04-08，基于 Claude Code 源码泄露事件（npm 打包未排除 .map 文件 → 1900+ TS 文件、51 万行核心代码意外曝光 → GitHub 数小时 1100+ star）
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md)
 
 ## 摘要
 
@@ -64,7 +64,7 @@
 每个文件解析时剥离 HTML 注释 + 解析 `@include` 指令（最多 5 层深度）。`@include` 让一个 CLAUDE.md 拉入另一个文件：
 
 ```
-## CLAUDE.md
+# CLAUDE.md
 See our API conventions:
 @./docs/api-conventions.md
 And our testing standards:
@@ -287,15 +287,15 @@ const baseInputSchema = z.object({
 
 ## 相关实体
 
-- [Harness Engineering](/ch05-041-harness-engineering-概念框架/) — 本文是 Harness Engineering 的具体源码实现验证
-- [Claude Code 深度解析](/ch01-558-claude-code-harness-深度分析/) — Claude Code 架构的另一次深度解读
-- [Claude Code Dynamic Workflows](/ch04-409-agent-orchestration/) — AgentTool 子智能体 + Dynamic Workflow 范式
-- [Claude Code 架构](/ch01-571-claude-code-架构解析/) — Claude Code 整体架构概览
-- [Agent Evolution 四阶段六维](/ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo/) — 阶段三/阶段四对应 Claude Code 的生产实践
-- [OpenClaw 完整指南](/ch04-199-openclaw-完全指南/) — 开源对应物（Worktree 隔离模式实现）
-- [Harness Engineering 一文](/ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/) — Harness 概念的系统阐释
-- [四种 Sub Agent 模式](/ch04-302-四种-sub-agent-模式/) — AgentTool 子智能体的几种编排模式
-- [Agent YAML 评测](/ch01-746-从手动到自动化-用agenteval构建agent评测体系/) — Harness 第五层评估与观测的工程实现
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 本文是 Harness Engineering 的具体源码实现验证
+- [Claude Code 深度解析](../ch01-558-claude-code-harness-深度分析) — Claude Code 架构的另一次深度解读
+- [Claude Code Dynamic Workflows](../ch04-409-agent-orchestration) — AgentTool 子智能体 + Dynamic Workflow 范式
+- [Claude Code 架构](../ch01-571-claude-code-架构解析) — Claude Code 整体架构概览
+- [Agent Evolution 四阶段六维](../ch04-134-agent-evolution-four-stages-and-six-dimensions-alibaba-clo) — 阶段三/阶段四对应 Claude Code 的生产实践
+- [OpenClaw 完整指南](../ch04-199-openclaw-完全指南) — 开源对应物（Worktree 隔离模式实现）
+- [Harness Engineering 一文](../ch05-011-一文带你弄懂-ai-圈爆火的新概念-harness-engineering) — Harness 概念的系统阐释
+- [四种 Sub Agent 模式](../ch04-302-四种-sub-agent-模式) — AgentTool 子智能体的几种编排模式
+- [Agent YAML 评测](../ch01-746-从手动到自动化-用agenteval构建agent评测体系) — Harness 第五层评估与观测的工程实现
 
 ---
 

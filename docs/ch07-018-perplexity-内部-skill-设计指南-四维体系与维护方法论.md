@@ -132,32 +132,32 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 4. **警惕「超距作用」**：添加新 Skill 容易破坏原有 Skill 表现，即便没碰过旧代码  
 
 ## 关联阅读
-- [原始文章：https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity](/ch01-533-n-day-research-with-ai-using-ollama-and-n8n-nikhil-x27-s/)
-- [Perplexity Internal Skill Design Guide Xiaojianke](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/perplexity-internal-skill-design-guide-xiaojianke.md) — 原始文章存档
-- [`Agent Skill Writing Guide` — 低配版 Skill 写作指南（质量较低，仅供参考）](/ch04-036-hermes-agent-eval-harness-skill-7-taskset-harnessadapt/)
-- [`Agent Skill Writing Evaluation` — Skill 评测相关](/ch04-036-hermes-agent-eval-harness-skill-7-taskset-harnessadapt/)
+- 原始文章：https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity
+- [Perplexity Internal Skill Design Guide Xiaojianke](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/perplexity-internal-skill-design-guide-xiaojianke.md) — 原始文章存档
+- `Agent Skill Writing Guide` — 低配版 Skill 写作指南（质量较低，仅供参考）
+- `Agent Skill Writing Evaluation` — Skill 评测相关
 
 ## 相关实体
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](/ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准/)
-- [9个Agent技能模块化SageMaker微调生命周期](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](/ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布/)
-- [SkillX — 层次化技能知识库](/ch07-042-skillx-层次化技能知识库/)
-- [Anthropic 14 个 Agent Skills 设计模式](/ch01-677-anthropic/)
-- [AI Skill 测评指标体系](/ch01-383-ai-skill-测评指标体系/)
-- [SkillClaw](/ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化/)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
-- [Skills赏析：使用skills-refiner提升skill质量](/ch04-024-qoder-skills-完全指南-agent-skill-迭代式编写-ai-按你的标准执行/)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](/ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills/)
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04-246-lbs-intentbench-首个真实出行隐式意图评测基准)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07-045-重新定义skill开发-保姆级教程-一站式开发助手发布)
+- [SkillX — 层次化技能知识库](../ch07-042-skillx-层次化技能知识库)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch01-677-anthropic)
+- [AI Skill 测评指标体系](../ch01-383-ai-skill-测评指标体系)
+- [SkillClaw](../ch04-312-阿里skillclaw-让-agent-技能在真实使用中集体进化)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力)
+- [Skills赏析：使用skills-refiner提升skill质量](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-refiner-design-quality-evaluation-framework.md)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch01-587-trace2skill-把-轨迹里的局部经验-蒸馏成可迁移的-agent-skills)
 
-- [Hermes Agent](/ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队/)
-- [Qoder Skills 完全指南](/ch07-029-qoder-skills-完全指南/)
-- [AgentEval：YAML驱动的Agent评测框架](/ch04-141-agenteval-yaml驱动的agent评测框架/)
-- [你写的 Skill，及格了吗？](/ch07-046-你写的-skill-及格了吗/)
-- [Hermes Agent Skill](/ch04-418-hermes-agent/)
+- [Hermes Agent](../ch07-007-hermes-agent-满配-12-层配置完整指南-从裸装到-24h-agent-团队)
+- [Qoder Skills 完全指南](../ch07-029-qoder-skills-完全指南)
+- [AgentEval：YAML驱动的Agent评测框架](../ch04-141-agenteval-yaml驱动的agent评测框架)
+- [你写的 Skill，及格了吗？](../ch07-046-你写的-skill-及格了吗)
+- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 
-- [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice/)
+- [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice)
 
 ---
 

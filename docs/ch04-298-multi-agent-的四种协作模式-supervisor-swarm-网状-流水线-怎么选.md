@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/james-multi-agent-collaboration-modes.md`
 
-## Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？
+# Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？
 上一篇我们把 RAG、Memory、MCP 拼进了同一个 LangGraph，搭出了一个生产级 AI 助手的完整骨架。很多人看完留言说「能跑起来，但一旦任务复杂起来，这一个 Agent 就有点撑不住了」——没错，这正是今天要解决的问题。
 你搭了一个 Agent，起初跑得挺好。后来需求升级了，调研+写作+事实核查全压在一个 Agent 上。结果上线后发现：系统提示词膨胀到 800 字，工具列表里有 15 个工具，Agent 开始选错工具、忘记自己设定的规则，偶尔一步出错后面全错。你在想，是不是我的 Prompt 写得不够好？
 不是 Prompt 的问题。是单个 Agent 扛不住「又要调研、又要写作、又要核查」这种多角色任务的根本性矛盾。
 解法是：多个 Agent 协作，每个只干一件事。
 
 ## 相关实体
-- [构建基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- [Factory Mission Multi Agent Architecture](/ch01-864-factory-mission-multi-agent-architecture/)
-- [Anthropic Multi Agent Research System](/ch01-677-anthropic/)
-- [Multi Agent Mission Factory Luke Aiengineer](/ch04-512-multi-agent-架构-factory-mission-系统的方法论/)
-- [构建基于多智能体架构的深度思考交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
+- [构建基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [Factory Mission Multi Agent Architecture](../ch01-864-factory-mission-multi-agent-architecture)
+- [Anthropic Multi Agent Research System](../ch01-677-anthropic)
+- [Multi Agent Mission Factory Luke Aiengineer](../ch04-512-multi-agent-架构-factory-mission-系统的方法论)
+- [构建基于多智能体架构的深度思考交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/james-multi-agent-collaboration-modes.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/james-multi-agent-collaboration-modes.md)
 
 ## 深度分析
 

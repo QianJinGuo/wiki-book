@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.2KB | `entities/nvidia-cut-checkpoint-costs-nvcomp.md`
 
-## Cut Checkpoint Costs with About 30 Lines of Python and NVIDIA nvCOMP | NVIDIA Technical Blog
+# Cut Checkpoint Costs with About 30 Lines of Python and NVIDIA nvCOMP | NVIDIA Technical Blog
 Cut Checkpoint Costs with About 30 Lines of Python and NVIDIA nvCOMP | NVIDIA Technical Blog DEVELOPER Home Blog Forums Docs Downloads Training Join Technical Blog Subscribe Related Resources Developer Tools &amp; Techniques English Cut Checkpoint Costs with About 30 Lines of Python and NVIDIA nvCOMP Apr 09, 2026 By Wenqi Glantz , Eugene Zhidkov and Makan Taghavi Like Discuss (0) L T F R E AI-Generated Summary Like Dislike Synchronous checkpointing during large-scale LLM training leads to significant GPU idle costs, often exceeding $200,000 per month for 128 NVIDIA Blackwell GPUs on 405B models, with optimizer state (FP32) being the dominant component of checkpoint size. Integrating NVIDIA nvCOMP enables GPU-accelerated, lossless compression (ZSTD and gANS), reducing checkpoint sizes by 21-29% for dense and MoE models, reclaiming GPU idle time, and directly translating to monthly savings exceeding $56,000 for large-scale runs. Compression throughput becomes crucial as storage speed increases; ZSTD is preferred for shared network filesystems (5-10 GB/s), while ANS offers near-equivalent ratios at 10x throughput, making it optimal for high-speed GPUDirect Storage (15+ GB/s) and enabling further cost reductions at scale. AI-generated content may summarize information incompletely. Verify important information. Learn more Training LLMs requires periodic checkpoints. These full snapshots of model weights, optimizer states, and gradients are saved to storage so training can resume after interruptions. At scale, these checkpoints become massive (782 GB for a 70B model) and frequent (every 15-30 minutes), generating one of the largest line items in a training budget. Most AI teams chase GPU utilization, training throughput, and model quality. Almost none look at what checkpointing is costing them.&nbsp;&nbsp; This is an expensive oversight. The synchronous checkpoint overhead of a 405B model on 128 NVIDIA Blackwell GPUs alone can cost $200,000 a month. By introducing a loss... [truncated]
 
 ## 深度分析
@@ -45,14 +45,14 @@ Optimizer state（FP32）通常是检查点体积的最大组成部分。在考�
 文章标题强调通过"约30行Python代码"即可完成集成，这大幅降低了工程门槛。建议将nvCOMP checkpoint compression作为标准训练流程的一部分，而非事后的优化项。
 
 ## 相关实体
-- [Nvidia Gpu Kernel Translation Cute Python Julia](/ch03-054-nvidia-gpu-kernel-translation-cute-python-julia/)
-- [Nvidia Edge First Llms Av Robotics](/ch01-194-nvidia-edge-first-llms-av-robotics/)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](/ch04-339-nvidia-secure-local-agent-nemoclaw-openclaw/)
-- [Nvidia Gemma 4 Edge Ai](/ch01-560-nvidia-gemma-4-edge-ai/)
-- [Nvidia Mcg Toolkit Model Documentation](/ch03-033-how-to-automate-ai-model-documentation-with-nvidia-mcg-toolk/)
-- MOC
+- [Nvidia Gpu Kernel Translation Cute Python Julia](../ch03-054-nvidia-gpu-kernel-translation-cute-python-julia)
+- [Nvidia Edge First Llms Av Robotics](../ch01-194-nvidia-edge-first-llms-av-robotics)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04-339-nvidia-secure-local-agent-nemoclaw-openclaw)
+- [Nvidia Gemma 4 Edge Ai](../ch01-560-nvidia-gemma-4-edge-ai)
+- [Nvidia Mcg Toolkit Model Documentation](../ch03-033-how-to-automate-ai-model-documentation-with-nvidia-mcg-toolk)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidia-cut-checkpoint-costs-nvcomp.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-cut-checkpoint-costs-nvcomp.md)
 
 ---
 

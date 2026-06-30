@@ -50,29 +50,29 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 5. **在生产环境部署前，必须定义 Agent 的行为边界（Boundary）而非仅定义能力（Capability）**。Capability 描述 Agent 能做什么，Boundary 描述 Agent 不应该做什么或何时应该拒绝。Constitutional AI Guardrails 提供了原则驱动的边界定义方法。将"不应该"转化为"在什么条件下应该"的结构化规则，比单纯在 prompt 中说"不要做 X"更可靠。
 
 ## 相关实体
-- [Code as Agent Harness 综述](/ch09-046-code-as-agent-harness-综述/)
-- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Agent Harness 解析：智能体架构深度拆解](/ch01-316-agent-harness-解析-智能体架构深度拆解/)
-- [From Agent Protocol to Harness Skill](/ch04-351-from-agent-protocol-to-harness-skill/)
-- [Agent Memory 架构解析](/ch04-111-agent-memory-架构解析/)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](/ch05-020-martin-fowler-ai-研发-harness-非确定性承重层/)
-- [AI Native 时代 —— 研发组织何去何从](/ch01-311-ai-native-时代-研发组织何去何从/)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](/ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](/ch01-305-从多智能体编排到ai自主决策-资损防控体系的架构演进/)
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](/ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai/)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- Transformer Architecture
-- Agent 与后端统一架构
-- [Harness Design Peer Review Framework](/ch11-235-agentscope-java-harness-framework-企业级-agent-分布式场景的-harness/)
+- [Code as Agent Harness 综述](../ch09-046-code-as-agent-harness-综述)
+- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [Agent Harness 解析：智能体架构深度拆解](../ch01-316-agent-harness-解析-智能体架构深度拆解)
+- [From Agent Protocol to Harness Skill](../ch04-351-from-agent-protocol-to-harness-skill)
+- [Agent Memory 架构解析](../ch04-111-agent-memory-架构解析)
+- [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05-020-martin-fowler-ai-研发-harness-非确定性承重层)
+- [AI Native 时代 —— 研发组织何去何从](../ch01-311-ai-native-时代-研发组织何去何从)
+- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness)
+- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch01-305-从多智能体编排到ai自主决策-资损防控体系的架构演进)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch09-040-deepseek-v4-ds4c-antirez-local-inference-qbitai)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
+- [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
+- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 
-- [Thin Harness Fat Skills](/ch05-063-thin-harness-fat-skills-ai工程架构的本质/)
-- [你不知道的 Agent 原理架构与工程实践](/ch04-300-agent-principle-architecture-engineering-practice/)
-- [Harness Engineering 框架](/ch05-041-harness-engineering-概念框架/)
-- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
+- [Thin Harness Fat Skills](../ch05-063-thin-harness-fat-skills-ai工程架构的本质)
+- [你不知道的 Agent 原理架构与工程实践](../ch04-300-agent-principle-architecture-engineering-practice)
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 第 2 来源：前端 T 站 4 模式选型决策树（2026-06-07）
 
 tabzhan / 前端T站 2026-06-07 发布的 4 执行模式对比 + 5 步选型决策树 + AgentScope 3 完整 Demo — 补齐了第 1 来源（综合设计模式概览）**只列模式不教选型** 的缺口。

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/agent-capability-library.md`
 
-## An agent capability library
+# An agent capability library
 
 > **来源**: [An agent capability library](https://samihonkonen.com/posts/an-agent-capability-library/)
 
@@ -43,7 +43,7 @@ The idea is that this compounds. Every time I set something up, I write a doc fo
 
 ## 原文存档
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-capability-library.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-capability-library.md)
 
 ---
 

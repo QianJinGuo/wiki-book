@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 23.7KB | `entities/openclacky-harness-engineering-100-percent-cache-hit.md`
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclacky-harness-engineering-100-percent-cache-hit.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclacky-harness-engineering-100-percent-cache-hit.md)
 
 ## 背景与核心结论
 
@@ -60,7 +60,7 @@ OpenClacky 的 system prompt 在 session 启动时一次性构建，之后一个
 
 **能力可以无限扩展，但工具数始终是 16 个。** 代码探索、记忆召回、PPT 生成、部署上线——这些能力全部是 Skill，通过 `invoke_skill` 这一个工具入口调用。
 
-这与多 Agent 系统的常见范式不同：不是通过增加 Agent 数量来扩展能力，而是通过 Skill 子 Agent 架构实现能力的可扩展性，同时保持主 agent 的工具列表稳定。
+这与[多 Agent 系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)的常见范式不同：不是通过增加 Agent 数量来扩展能力，而是通过 Skill 子 Agent 架构实现能力的可扩展性，同时保持主 agent 的工具列表稳定。
 
 ### 决策 4：固定 16 个工具
 
@@ -84,7 +84,7 @@ OpenClacky 的 system prompt 在 session 启动时一次性构建，之后一个
 
 **积极压缩而非用满上下文。** 100 万 token 即使全部 cache hit，一轮也要付 10 万 token 等价的钱。策略是压缩后保持历史在 1 万 token 以内。短历史 + 高命中率，比长历史 + 偶尔 miss 便宜得多，效果也更可控。
 
-压缩策略是推理优化在 agent 场景的具体应用：通过主动管理上下文内容，在成本和效果之间取得最优平衡。
+压缩策略是[推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)在 agent 场景的具体应用：通过主动管理上下文内容，在成本和效果之间取得最优平衡。
 
 ### 决策 6：工具自进化
 
@@ -94,7 +94,7 @@ PDF、Excel、Word、PPT 的读取是 Agent 高频需求。内置专用工具会
 
 处理文档的能力不是写死在代码里的，它活在用户目录的脚本里，agent 自己可以维护和进化。
 
-这个设计体现了Agent 评估框架中的一个重要原则：**能力应该具有可扩展性和自我修复能力**，而不是通过增加工具数量来应对所有场景。
+这个设计体现了[Agent 评估框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmark-frameworks.md)中的一个重要原则：**能力应该具有可扩展性和自我修复能力**，而不是通过增加工具数量来应对所有场景。
 
 ### 决策 7：内置浏览器，接管已有 Chrome
 
@@ -172,10 +172,10 @@ OpenClacky 16 个固定工具的设计背后是一个经过验证的经验值。
 
 ## 相关实体
 
-- [Harness Engineering 四根支柱与四要素架构](/ch05-077-harness-engineering-四根支柱与四要素架构/)
-- [AgentCore Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/)
-- [Harness Production Agent 工程 deficit](/ch04-127-harness如何支撑agent在生产环境稳定运行/)
-- [Harness 组件保质期——Model-Harness Fit 与 Build to Delete 原则](/ch01-217-model-harness-fit-agent-harness/)
+- [Harness Engineering 四根支柱与四要素架构](../ch05-077-harness-engineering-四根支柱与四要素架构)
+- [AgentCore Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施)
+- [Harness Production Agent 工程 deficit](../ch04-127-harness如何支撑agent在生产环境稳定运行)
+- [Harness 组件保质期——Model-Harness Fit 与 Build to Delete 原则](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md)
 
 ---
 

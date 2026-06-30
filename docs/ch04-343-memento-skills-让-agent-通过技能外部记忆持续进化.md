@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/memento-skills-agent-self-evolving.md`
 
-## Memento-Skills：让 Agent 通过技能外部记忆持续进化
+# Memento-Skills：让 Agent 通过技能外部记忆持续进化
 > AI热力论文社 | 2026-04-01 | arXiv 2603.18743
 LLM 部署后无法继续学习——预训练依赖海量算力，微调成本高昂，生产环境积累的交互经验难以被模型吸收复用。
 **Memento-Skills 的路径**：在完全冻结模型参数的前提下，通过持续进化的**技能内存（Skill Memory）**让 Agent 在真实任务中持续成长。
 将状态从 `s_t`（当前任务）扩展为 `x_t = (s_t, M_t)`（任务状态 + 技能内存），**重新获得马尔可夫性**，保证系统收敛性。
 
 ## 相关实体
-- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](/ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格/)
-- [Agent Skills Comprehensive Survey](/ch04-340-agent-skills-系统性综述-表示-获取-检索-进化/)
-- [使用 Agent Skills 做知识库检索能比传统 Rag 效果更好吗](/ch04-281-使用-agent-skills-做知识库检索-能比传统-rag-效果更好吗/)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](../ch04-192-要实现一个工作流选择-agent-skills-还是-ai-表格)
+- [Agent Skills Comprehensive Survey](../ch04-340-agent-skills-系统性综述-表示-获取-检索-进化)
+- [使用 Agent Skills 做知识库检索能比传统 Rag 效果更好吗](../ch04-281-使用-agent-skills-做知识库检索-能比传统-rag-效果更好吗)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/memento-skills-agent-self-evolving.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/memento-skills-agent-self-evolving.md)
 
 ## 深度分析
 

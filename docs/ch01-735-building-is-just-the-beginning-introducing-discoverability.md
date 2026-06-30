@@ -4,16 +4,16 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/lovable-building-is-just-the-beginning-introducing-discoverability.md`
 
-## Building is just the beginning: Introducing Discoverability | Lovable
+# Building is just the beginning: Introducing Discoverability | Lovable
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lovable-building-is-just-the-beginning-introducing-discoverability.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lovable-building-is-just-the-beginning-introducing-discoverability.md)
 
 ## 深度分析
 
 Building is just the beginning: Introducing Discoverability | Lovable 涉及code领域的核心技术议题。
 ### 核心观点
 1. Markdown Content:
-## Building is just the beginning: Introducing Discoverability | Lovable
+# Building is just the beginning: Introducing Discoverability | Lovable
 Skip to main content
 [](https://lovable.
 2. dev/home)
@@ -40,12 +40,12 @@ Get started
 - **data趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](/ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering/)
-- [两万字详解Claude Code源码核心机制](/ch01-734-两万字详解claude-code源码核心机制/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05-005-一文带你弄懂-ai-圈爆火的新概念-harness-engineering)
+- [两万字详解Claude Code源码核心机制](../ch01-734-两万字详解claude-code源码核心机制)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
 
 ## 实践启示
 1. **工程落地**: code领域方案需关注可观测性、可维护性和成本效率
@@ -55,7 +55,7 @@ Get started
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---
 

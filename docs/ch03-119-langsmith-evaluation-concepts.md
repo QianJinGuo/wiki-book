@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/langsmith-evaluation-concepts.md`
 
-## LangSmith Evaluation Concepts
+# LangSmith Evaluation Concepts
 
 - 对 agent 要拆成 output、retrieval、tool invocation、trajectory 等关键部件
 - 先用 5-10 个 curated examples 定义 ground truth
@@ -12,13 +12,13 @@
 - online evaluation 适合生产监控与异常发现
 
 ## 相关实体
-- [Cursor Harness Model Production Floor](/ch01-235-cursor-harness-model-production-floor/)
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](/ch04-141-agenteval-yaml驱动的agent评测框架/)
-- [Four Browser Automation Tools Comparison](/ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc/)
-- [Agent Memory Architecture Past Influence Future Ruofei](/ch04-029-agent-memory-architecture-past-influence-future-ruofei/)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [Cursor Harness Model Production Floor](../ch01-235-cursor-harness-model-production-floor)
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch04-141-agenteval-yaml驱动的agent评测框架)
+- [Four Browser Automation Tools Comparison](../ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc)
+- [Agent Memory Architecture Past Influence Future Ruofei](../ch04-029-agent-memory-architecture-past-influence-future-ruofei)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langsmith-evaluation-concepts.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langsmith-evaluation-concepts.md)
 
 ## 深度分析
 

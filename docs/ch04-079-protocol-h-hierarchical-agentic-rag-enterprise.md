@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.6KB | `entities/protocol-h-hierarchical-agentic-rag-enterprise.md`
 
-## protocol-h-hierarchical-agentic-rag-enterprise
+# protocol-h-hierarchical-agentic-rag-enterprise
 > 原文: https://mp.weixin.qq.com/s/P-MnmnREgtiOq-DbHfDuVA
 > Author: Abhijit Ubale (InfoQ)
 > Score: value=6, confidence=8, product=48 ≥ 49 → PASS
@@ -151,17 +151,17 @@ Protocol-H 的核心贡献在于揭示了**企业级 RAG 的主要瓶颈不是 L
 4. **延迟敏感场景建议采用异步 webhook 模式**：Protocol-H 在 EntQA 基准上实现了 84.5% 的准确率，但代价是 p95 延迟 2.1 秒（标准 RAG 为 0.8 秒）。对于用户直接等待响应的同步交互场景，3.2 推理步数的成本可能无法接受；建议对延迟敏感的场景使用异步 webhook 模式，用户先收到确认回调，后台完成推理后再推送结果。
 5. **多数据库环境下优先考虑 Adapter 模式而非定制化开发**：如果企业同时使用 Snowflake、Redshift 和 BigQuery，在每个数据库上定制化 SQL 生成逻辑的维护成本会随时间急剧增长。Protocol-H 的 BaseConnector 抽象提供了云中立的数据层方案，即使当前只用一个数据库，也建议从一开始就采用这种模式，为未来的多数据库扩展预留空间。
 ## 相关实体
-- [Three Rag Architectures Classic Graph Agentic](/ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag/)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](/ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90/)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](/ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search/)
-- [Skill Rag Tsinghua Sra](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/)
+- [Three Rag Architectures Classic Graph Agentic](../ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01-297-google-agentic-rag-sufficient-context-agent-framesqa-90)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch04-386-claude-code-开发负责人-为何放弃-rag-而选择-agentic-search)
+- [Skill Rag Tsinghua Sra](../ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise.md)
 
 ## 相关实体
-- [`Harness架构` — 分层Agent拓扑的编排设计](/ch05-038-agent生产级harness工程指南/)
-- [`Bedrock多Agent` — 企业RAG的Agentic实践对比](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- `Harness架构` — 分层Agent拓扑的编排设计
+- `Bedrock多Agent` — 企业RAG的Agentic实践对比
 
 ---
 

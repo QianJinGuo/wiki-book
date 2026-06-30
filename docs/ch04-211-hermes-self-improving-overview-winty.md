@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/hermes-self-improving-overview-winty.md`
 
-[Hermes Self Improving Overview Winty](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-self-improving-overview-winty.md)
+[Hermes Self Improving Overview Winty](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-self-improving-overview-winty.md)
 
 点击上方 前端Q，关注公众号
 回复加群，加入前端Q技术交流群
@@ -89,11 +89,11 @@ Hermes 的设计哲学，不是 AI 哲学，是组织学。
 
 ## 关联阅读
 ## 相关实体
-- [Hermes Self Improving Loop Winty](/ch04-193-hermes-self-improving-闭环详解-winty/)
-- [Hermes 9 Module Architecture Winty](/ch01-336-hermes-9-module-architecture-winty/)
-- [Hermes Agent Self Evolving Source Analysis](/ch04-039-hermes-agent-self-evolving-source-analysis/)
-- [P Ai Pms Guide To Claude](/ch01-704-build-a-self-improving-ai-pm-os-with-claude-code/)
-- [Hermes Skill System Winty](/ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力/)
+- [Hermes Self Improving Loop Winty](../ch04-193-hermes-self-improving-闭环详解-winty)
+- [Hermes 9 Module Architecture Winty](../ch01-336-hermes-9-module-architecture-winty)
+- [Hermes Agent Self Evolving Source Analysis](../ch04-039-hermes-agent-self-evolving-source-analysis)
+- [P Ai Pms Guide To Claude](../ch01-704-build-a-self-improving-ai-pm-os-with-claude-code)
+- [Hermes Skill System Winty](../ch04-135-skill-系统-agent-如何把经验沉淀成可复用能力)
 
 ---
 

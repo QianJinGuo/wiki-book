@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md`
 
-## Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606
+# Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
 
 ## 深度分析
 
@@ -33,12 +33,12 @@
 
 ### 关联实体
 
-- [Ai Friendly Architecture Design Taobao](/ch01-634-面向-llm-的架构设计-什么是真正的-ai-friendly-架构/)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](/ch01-204-latest-open-artifacts-20-new-orgs-new-types-of-models/)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](/ch04-121-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升/)
-- [Code As Agent Harness Survey 2026](/ch01-599-uiuc-meta-斯坦福等最新综述-code-as-agent-harness/)
-- [Demis Hassabis Yc Interview Jiedaotixi](/ch04-136-demis-hassabis-yc-interview-agi-时间线-记忆机制-agent-未来/)
-- [Ai Agent Harness Construction Akshay Baoyu](/ch04-420-深度拆解-ai-智能体-harness-的构造-译/)
+- [Ai Friendly Architecture Design Taobao](../ch01-634-面向-llm-的架构设计-什么是真正的-ai-friendly-架构)
+- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](../ch01-204-latest-open-artifacts-20-new-orgs-new-types-of-models)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch04-121-腾讯混元新里程碑-hy3-preview-发布开源-agent-表现全面提升)
+- [Code As Agent Harness Survey 2026](../ch01-599-uiuc-meta-斯坦福等最新综述-code-as-agent-harness)
+- [Demis Hassabis Yc Interview Jiedaotixi](../ch04-136-demis-hassabis-yc-interview-agi-时间线-记忆机制-agent-未来)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch04-420-深度拆解-ai-智能体-harness-的构造-译)
 
 ## 实践启示
 
@@ -49,7 +49,7 @@
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---
 

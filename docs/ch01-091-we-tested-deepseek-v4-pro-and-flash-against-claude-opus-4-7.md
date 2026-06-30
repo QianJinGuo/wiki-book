@@ -7,14 +7,14 @@
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/wetesteddeepseekv4proandflashagainstclau.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/wetesteddeepseekv4proandflashagainstclau.md)
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](/ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude](/ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7/)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](../ch01-091-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](../ch01-623-we-tested-deepseek-v4-pro-and-flash-against-claude-opus-4-7)
+- We Tested DeepSeek V4 Pro and Flash Against Claude
 
 ## 深度分析
 ### 1. 复杂工作流测试揭示模型间真实差距

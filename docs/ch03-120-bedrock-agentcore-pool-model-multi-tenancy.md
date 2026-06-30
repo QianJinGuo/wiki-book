@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/shared-infrastructure-isolated-tenants-pool-model-multi-tenancy-with-amazon-bedrock-agentcore.md`
 
-## Bedrock AgentCore Pool Model Multi-Tenancy
+# Bedrock AgentCore Pool Model Multi-Tenancy
 
 > **Background**：基于 AWS 官方技术博客（2026-06-23），介绍 Amazon Bedrock AgentCore 的多租户架构模式。以医疗 AI 助手为示例，展示 Tier → Tenant → User 三级隔离体系，但模式通用适用于各类 SaaS 多租户 Agent 系统。
 
@@ -72,7 +72,7 @@ User (终端用户: 医生 / 护士)
 
 ## 相关主题
 
-- [Protein Research Copilot](/ch04-463-protein-research-copilot-with-amazon-bedrock-agentcore/) — 同系列文章，聚焦 AgentCore 的单租户 Agent 应用
+- [Protein Research Copilot](../ch04-463-protein-research-copilot-with-amazon-bedrock-agentcore) — 同系列文章，聚焦 AgentCore 的单租户 Agent 应用
 - Amazon Bedrock AgentCore — AWS Agent 部署平台
 - AI Agent 多租户架构 — SaaS 场景下的 Agent 隔离设计
 - Healthcare AI — 医疗 AI 应用场景

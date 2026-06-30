@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.4KB | `entities/gpt-image-2神级提示词分享.md`
 
-## GPT -Image 2神级提示词分享
+# GPT -Image 2神级提示词分享
 
 提示词:
 A crisp, printmaking-like aesthetic with bold outlines and natural deformation. Pastel color palette, vintage print texture, slightly misaligned ink layers, and rough paper grain. A calm poster composition with generous negative space rather than filling the frame. Props and background kept minimal. Color theme 2–3 colors.
@@ -15,15 +15,15 @@ A crisp, printmaking-like aesthetic with bold outlines and natural deformation. 
 也可以提供主题，比如，主题:女孩，沙滩，海水
 
 ## 相关实体
-- [Gpt Image 2完全指南](/ch01-700-gpt-image-2完全指南/)
-- [Gpt Image 2 完全指南附大量玩法案例顺便开源我的生图 Skill](/ch01-654-gpt-image-2-完全指南-附大量玩法案例-顺便开源我的生图-skill/)
-- [Skill Rag Tsinghua Sra](/ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag/)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](/ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l/)
-- [Build Live Translation Apps With Gpt Realtime Translate](/ch01-123-build-live-translation-apps-with-gpt-realtime-translate/)
+- [Gpt Image 2完全指南](../ch01-700-gpt-image-2完全指南)
+- [Gpt Image 2 完全指南附大量玩法案例顺便开源我的生图 Skill](../ch01-654-gpt-image-2-完全指南-附大量玩法案例-顺便开源我的生图-skill)
+- [Skill Rag Tsinghua Sra](../ch04-430-skill-retrieval-augmentation-for-agentic-ai-清华-skill-rag)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](../ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l)
+- [Build Live Translation Apps With Gpt Realtime Translate](../ch01-123-build-live-translation-apps-with-gpt-realtime-translate)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-image-2神级提示词分享.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-image-2神级提示词分享.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 
 这篇分享的核心是一个**版画风格（printmaking aesthetic）的图像生成提示词**。其设计逻辑值得拆解：

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/demis-hassabis-yc-interview-2026.md`
 
-## Demis Hassabis YC 专访：Agent 才刚刚开始，AI 下一步是创造虚拟细胞
+# Demis Hassabis YC 专访：Agent 才刚刚开始，AI 下一步是创造虚拟细胞
 > AI寒武纪 | 2026-05-01 | 转述 Self-Directed Investing Summit / YC "How to Build the Future" 专访
 
 - **AGI 预测：2030 年左右**（Hassabis 个人判断）
@@ -12,13 +12,13 @@
 - 不存在的问题：他不认为几年后会有人说当前路线走错了
 
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-418-hermes-agent/)
-- [Ath Agent Trust Handshake Protocol](/ch04-500-为了让agent更安全的工作-有多少人操碎了心/)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](/ch07-017-hermes自进化完整闭环-skill创建复用修补链路/)
-- [Four Browser Automation Tools Comparison](/ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc/)
+- [Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-418-hermes-agent)
+- [Ath Agent Trust Handshake Protocol](../ch04-500-为了让agent更安全的工作-有多少人操碎了心)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07-017-hermes自进化完整闭环-skill创建复用修补链路)
+- [Four Browser Automation Tools Comparison](../ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/demis-hassabis-yc-interview-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/demis-hassabis-yc-interview-2026.md)
 
 ## 深度分析
 

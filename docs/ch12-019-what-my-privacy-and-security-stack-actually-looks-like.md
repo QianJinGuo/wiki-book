@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.1KB | `entities/what-my-privacy-and-security-stack-actually-looks-like.md`
 
-## What My Privacy and Security Stack Actually Looks Like
+# What My Privacy and Security Stack Actually Looks Like
 
 ## 摘要
 
@@ -113,15 +113,15 @@ Yael 的威胁情报来源形成了一个分层结构：
 
 ## 相关实体
 
-- [Karpathy Vibe Coding 访谈](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Karpathy Vibe Coding 完整版](/ch04-070-从氛围编程到智能体工程/)
-- [Claude Code 源码机制](/ch01-734-两万字详解claude-code源码核心机制/)
-- [Agent 原理架构与工程实践](/ch04-455-你不知道的-agent-原理-架构与工程实践/)
-- [多智能体交易系统](/ch04-205-构建基于多智能体架构的深度思考交易系统/)
-- [OpenClaw 完整指南](/ch04-199-openclaw-完全指南/)
-- [LLMReaper Browser Extension Attack](/ch01-528-llmreaper-dom-based-ai-conversation-exfiltration/) — AI 对话的扩展窃取风险
+- [Karpathy Vibe Coding 访谈](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Karpathy Vibe Coding 完整版](../ch04-070-从氛围编程到智能体工程)
+- [Claude Code 源码机制](../ch01-734-两万字详解claude-code源码核心机制)
+- [Agent 原理架构与工程实践](../ch04-455-你不知道的-agent-原理-架构与工程实践)
+- [多智能体交易系统](../ch04-205-构建基于多智能体架构的深度思考交易系统)
+- [OpenClaw 完整指南](../ch04-199-openclaw-完全指南)
+- [LLMReaper Browser Extension Attack](../ch01-528-llmreaper-dom-based-ai-conversation-exfiltration) — AI 对话的扩展窃取风险
 
-> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-my-privacy-and-security-stack-actually-looks-like.md)
+> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-my-privacy-and-security-stack-actually-looks-like.md)
 
 ---
 

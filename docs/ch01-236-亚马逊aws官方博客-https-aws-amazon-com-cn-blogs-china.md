@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.2KB | `entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md`
 
-## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
+# [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
 
 ## 深度分析
 
@@ -16,7 +16,7 @@ feed_name: AWS China Blog
 source_published: 2026-05-26T05:25:20Z
 ---
 
-## 滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践
+# 滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践
 
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
 
@@ -24,13 +24,13 @@ source_published: 2026-05-26T05:25:20Z
 
 **目录**
 
-01 [一、关于滴滴国际化事业部](/ch01-#section1/)
+01 [一、关于滴滴国际化事业部](../ch01-#section1)
 
-02 [二、业务挑战](/ch01-#section2/)
+02 [二、业务挑战](../ch01-#section2)
 
-03 [三、方案总览](/ch01-#section3/)
+03 [三、方案总览](../ch01-#section3)
 
-04 [四、总结](/ch01-#section4/)
+04 [四、总结](../ch01-#section4)
 
 * * *
 
@@ -121,13 +121,13 @@ VOC 管线采用三阶段 pipeline：并行提取 → 问题聚类 → 报告生
 * 
 
 ## 相关实体
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](/ch01-521-business-intelligence-at-scale-key-obstacles/)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](/ch01-532-solution-overview/)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](/ch01-295-一-关于-kollab/)
-- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](/ch01-536-workflow-architecture/)
-- [Process Financial Documents Using Amazon Bedrock Data Automa](/ch01-534-solution-overview/)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch01-521-business-intelligence-at-scale-key-obstacles)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch01-532-solution-overview)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch01-295-一-关于-kollab)
+- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](../ch01-536-workflow-architecture)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch01-534-solution-overview)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
 
 ## 相关主题
 

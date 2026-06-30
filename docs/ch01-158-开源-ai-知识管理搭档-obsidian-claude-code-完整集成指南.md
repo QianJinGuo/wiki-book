@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 39.8KB | `entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md`
 
-[开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md)
+[开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md)
 
 ##  核心痛点：文件分散与混乱
 Claude Code 的配置分散在多个位置：^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:25]
@@ -331,11 +331,11 @@ AI 自动摘要/标签/关联减少人工操作，但最终判断（哪些关联
 在 Obsidian vault 根目录放 CLAUDE.md，定义标签体系、命名规范、模板格式——让 AI 遵循你的知识库规范而非随机生成。
 
 ## 相关实体
-- [Obsidian Claude Code Integration Guide](/ch09-097-obsidian-claude-code-integration-guide/)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](/ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](/ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](/ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践/)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](/ch01-156-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南/)
+- [Obsidian Claude Code Integration Guide](../ch09-097-obsidian-claude-code-integration-guide)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch01-273-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch01-565-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch01-172-刚刚opus-4-7发布-相比4-6核心变化-与claude-code搭配最佳实践)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](../ch01-156-打造可靠的-ai-编程环境-claude-code-hooks-完整开发者指南)
 
 ---
 

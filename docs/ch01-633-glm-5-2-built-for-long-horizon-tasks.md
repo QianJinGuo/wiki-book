@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/z-glm-5.2.md`
 
-## GLM-5.2: Built for Long-Horizon Tasks
+# GLM-5.2: Built for Long-Horizon Tasks
 
 > **背景**：从 newsletter candidates 提取，2026-06-18 v×c=64 stars=4 通过评分门槛。
 > URL: https://z.ai/blog/glm-5.2
@@ -40,8 +40,8 @@ On standard coding benchmarks, GLM-5.2 is the strongest open-source model,
 
 ## 相关
 
-- [原文存档 (z.ai blog)](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/z-glm-5.2.md)
-- [原文存档 (HuggingFace)](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/zai-org-GLM-5.2.md)
+- [原文存档 (z.ai blog)](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/z-glm-5.2.md)
+- [原文存档 (HuggingFace)](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/zai-org-GLM-5.2.md)
 
 ## Interconnects 分析视角（Nathan Lambert）
 
@@ -61,7 +61,7 @@ Nathan Lambert 认为 GLM-5.2 代表了开源 agent 模型的质变：
 - MIT 许可证消除了区域限制，对全球开发者开放
 - 对 Anthropic/OpenAI 的 agent 生态构成直接竞争
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/glm-52-step-change-open-agents-interconnects.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/glm-52-step-change-open-agents-interconnects.md)
 
 ---
 

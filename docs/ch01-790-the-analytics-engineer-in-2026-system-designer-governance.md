@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/the-analytics-engineer-in-2026-system-designer-governance-owner-ai-context-provi.md`
 
-## The analytics engineer in 2026: system designer, governance owner, AI context provider
+# The analytics engineer in 2026: system designer, governance owner, AI context provider
 
 Markdown Content:
 ## What analytics engineering looked like in 2023
@@ -23,7 +23,7 @@ AI can scaffold a model. It can't decide whether revenue should be defined at th
 
 As AI-assisted development accelerates data production, the governance layer becomes more important. Tests, [contracts](https://docs.getdbt.com/docs/mesh/govern/model-contracts "contracts"), column-level lineage, and ownership assignment are now the outputs that separate a trustworthy data system from a fast but unreliable one. The analytics engineer owns those outputs.
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-analytics-engineer-in-2026-system-designer-governance-owner-ai-context-provi.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-analytics-engineer-in-2026-system-designer-governance-owner-ai-context-provi.md)
 
 ---
 

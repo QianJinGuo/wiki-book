@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐⭐ | 2.8KB | `entities/大反转马斯克牵手对手-darioanthropic-与-spacex-罕见合作.md`
 
-## 大反转！马斯克牵手对手 Dario，Anthropic 与 SpaceX 罕见合作
+# 大反转！马斯克牵手对手 Dario，Anthropic 与 SpaceX 罕见合作
 
 ## 相关实体
 
-- [anthropic](/ch12-094-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/大反转马斯克牵手对手-darioanthropic-与-spacex-罕见合作.md)
+- [anthropic](../ch12-094-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/大反转马斯克牵手对手-darioanthropic-与-spacex-罕见合作.md)
 
 ## 深度分析
 
@@ -42,12 +42,12 @@ Anthropic 和马斯克的 SpaceX，官宣合作了。
 - **aws趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](/ch04-199-openclaw-完全指南/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
-- [Karpathy Vibe Coding Agentic Engineering](/ch04-070-从氛围编程到智能体工程/)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04-199-openclaw-完全指南)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04-070-从氛围编程到智能体工程)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
 
 ## 实践启示
 1. **工程落地**: anthropic领域方案需关注可观测性、可维护性和成本效率

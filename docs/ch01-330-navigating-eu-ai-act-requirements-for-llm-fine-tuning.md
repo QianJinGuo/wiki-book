@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.1KB | `entities/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
 
 ## 摘要
 Title: Navigating EU AI Act requirements for LLM fine-tuning on Amazon SageMaker AI | Amazon Web Services
@@ -19,15 +19,15 @@ The EU AI Act requires organizations fine-tuning large language models (LLMs) to
 - 评分：value=8, confidence=9, product=72
 
 ## 链接
-- [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
+- [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
 
 ## 相关实体
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
-- [LLM-as-Judge: RFT的6步法官设计方法论](/ch01-437-aws-reinforcement-fine-tuning-llm-as-judge/)
-- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](/ch11-054-amazon-nova-lite-fine-tuning-高性价比的视觉检测模型微调案例与实践-亚马逊aws官方博/)
-- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](/ch09-023-使用-kiro-ai-ide-开发-基于amazon-emr-的flink-智能监控系统实践-亚马逊aws官方博客/)
-- [Build financial document processing with Pulse AI and Amazon Bedrock](/ch11-130-build-financial-document-processing-with-pulse-ai-and-amazon/)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](/ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚/)
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
+- [LLM-as-Judge: RFT的6步法官设计方法论](../ch01-437-aws-reinforcement-fine-tuning-llm-as-judge)
+- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](../ch11-054-amazon-nova-lite-fine-tuning-高性价比的视觉检测模型微调案例与实践-亚马逊aws官方博)
+- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](../ch09-023-使用-kiro-ai-ide-开发-基于amazon-emr-的flink-智能监控系统实践-亚马逊aws官方博客)
+- [Build financial document processing with Pulse AI and Amazon Bedrock](../ch11-130-build-financial-document-processing-with-pulse-ai-and-amazon)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch11-147-当-ai-agent-学会-忘记-amazon-bedrock-agentcore-memory-的记忆哲学-亚)
 
 ## 深度分析
 ### EU AI Act 合规框架的核心逻辑
@@ -75,7 +75,7 @@ Fine-Tuning FLOPs Meter的核心价值在于将原本需要人工维护的合规
 文章的`flops_meter.json`输出结构设计良好，包含了`exceeds_30pct`等布尔标记用于快速判断合规状态。建议组织基于此构建合规状态仪表板，追踪每次训练任务的关键指标随时间的变化趋势，及时发现接近阈值的趋势。
 **具体行动**：将FLOPs计量结果接入团队的监控基础设施（如CloudWatch Dashboard），设置`exceeds_30pct: true`为告警条件。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
 
 ### 5. 提前准备合规超标响应预案
 文章明确给出了超标后的处置路线，但更优的策略是提前准备。建议组织提前准备**合规包模板**（包含模型架构描述、数据源清单、版权合规声明的标准文档结构），以便在超标情况出现时能够快速响应，而非仓促准备。

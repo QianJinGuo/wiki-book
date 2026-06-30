@@ -24,8 +24,8 @@ AI正在从少数人的工具，变成所有人的日常。
 
 ## 相关实体
 
-- [Karpathy Vibe Coding To Agentic Engineering](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/) - Agentic Engineering相关
-- [Autonomous Agent Systems - 自主Agent系统概念](/ch04-487-hidden-technical-debt-of-ai-systems-agent-harness/)
+- [Karpathy Vibe Coding To Agentic Engineering](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering) - Agentic Engineering相关
+- [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) - 自主Agent系统概念
 
 ## 深度分析
 这场AIGC峰会的信息揭示了中国AI产业生态的几个重要特征。首先是**从"AI讨论"到"AI实践"的转型**——峰会主题"@所有人，马上AI起来"本身就说明行业正在跨越单纯的概念讨论，进入实际应用阶段。这与"The Token Economy"文章中90%企业AI无效的警示形成有趣对照：行业正在努力解决这个落地问题。 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/gpt5-just-does-stuff-mollick.md`
 
-## GPT-5：It Just Does Stuff — Mollick 的主动式 AI 原语
+# GPT-5：It Just Does Stuff — Mollick 的主动式 AI 原语
 
 > 2026-06-07 引用自 Ethan Mollick《GPT-5: It Just Does Stuff》，One Useful Thing，2025-08-07。
 
@@ -95,10 +95,10 @@ Vibecoding 新范式下，最有效的交互不是给出详细规格说明，而
 
 ## 相关主题
 
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](/ch04-181-co-existence-vs-co-intelligence-mollick-s-paradigm-shift-on/) — Co-Existence 范式（Mollick 后续的完整框架，同一作者）
-- [Management As Ai Superpower Mollick](/ch01-412-management-as-ai-superpower/) — 管理作为 AI 超级能力（同一作者，同期不同议题）
-- [Guide Ai Agents Models Apps Harnesses Mollick](/ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick/) — 模型/应用/harness 选型指南（同一作者，2026-02 更新）
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-5-it-just-does-stuff.md)
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch04-181-co-existence-vs-co-intelligence-mollick-s-paradigm-shift-on) — Co-Existence 范式（Mollick 后续的完整框架，同一作者）
+- [Management As Ai Superpower Mollick](../ch01-412-management-as-ai-superpower) — 管理作为 AI 超级能力（同一作者，同期不同议题）
+- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04-267-ai-agent-时代选型指南-模型-应用-harness-mollick) — 模型/应用/harness 选型指南（同一作者，2026-02 更新）
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-5-it-just-does-stuff.md)
 
 ---
 

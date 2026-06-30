@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐ | 8.5KB | `entities/ai-research-assistant-from-idea-to-app.md`
 
-## From idea to AI app: creating intelligent research assistants
+# From idea to AI app: creating intelligent research assistants
 
 ## 核心内容
 
-## From idea to AI app: Creating intelligent research assistants with Strands
+# From idea to AI app: Creating intelligent research assistants with Strands
 
 Building an AI app shouldn't require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that's exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own. I've seen straightforward AI ideas balloon into sprawling projects that demand specialized knowledge in natural language processing and distributed systems. But here's what changed: using [Strands Agents](https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/) and AWS services, I built a fully functional AI research assistant in just 30 lines of code. In this post, I walk you through exactly how I did it—from initial concept to working application.
 
@@ -63,13 +63,13 @@ Strands 的 @tool decorator 机制展示了工具增强型代理（Tool-Augmente
 ## 参考来源
 
 ## 相关实体
-- [Claude Code Aws Bedrock Guide](/ch11-062-claude-code-on-aws-bedrock-配置指南/)
-- [Bedrock Agentcore Payment X402 Agent](/ch11-006-用-amazon-bedrock-agentcore-payment-构建自主支付-ai-agent-x402-协议实战/)
-- [Netflix Real Time Service Topology](/ch11-009-from-silos-to-service-topology-why-netflix-built-a-real-tim/)
-- [Firecracker Bedrock Agentcore Multi Tenant](/ch11-007-基于-firecracker-microvm-与-bedrock-agentcore-的生产级多租户-ai-agent/)
-- [Serverless Langgraph Multi Agent Aws](/ch11-234-build-a-highly-scalable-serverless-langgraph-multi-agent-sys/)
+- [Claude Code Aws Bedrock Guide](../ch11-062-claude-code-on-aws-bedrock-配置指南)
+- [Bedrock Agentcore Payment X402 Agent](../ch11-006-用-amazon-bedrock-agentcore-payment-构建自主支付-ai-agent-x402-协议实战)
+- [Netflix Real Time Service Topology](../ch11-009-from-silos-to-service-topology-why-netflix-built-a-real-tim)
+- [Firecracker Bedrock Agentcore Multi Tenant](../ch11-007-基于-firecracker-microvm-与-bedrock-agentcore-的生产级多租户-ai-agent)
+- [Serverless Langgraph Multi Agent Aws](../ch11-234-build-a-highly-scalable-serverless-langgraph-multi-agent-sys)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-research-assistant-from-idea-to-app.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-research-assistant-from-idea-to-app.md)
 
 ---
 

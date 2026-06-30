@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/reading-todays-open-closed-performance-gap.md`
 
-## Reading today's open-closed performance gap
+# Reading today's open-closed performance gap
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/reading-todays-open-closed-performance-gap.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/reading-todays-open-closed-performance-gap.md)
 
 > **Core insight**: 将开放-闭源性能差距视为单一"距离"数字掩盖了关键动态：benchmark 每 12-18 个月焦点转移、RLVR 训练 regimes 快速演化、以及评估复杂 LLM 工作流本身的挑战性。中国实验室在蒸馏杠杆上领先，但 RL 环境私有化趋势正在关闭这一路径。
 
@@ -75,14 +75,14 @@ RLVR 的结果更可复现、更难刷榜，是评估模型真实能力的更好
 "开源永远追不上"和"开源很快会超越"都是叙事，不是数据。用具体 benchmark 的历史趋势做决策。
 
 ## 相关实体
-- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](/ch01-394-latest-open-artifacts-21-open-model-bonanza-gemma-4-de/)
-- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](/ch01-874-nvidia-nemotron-3-ultra-hybrid-transformer-mamba-moe-for-ag/)
-- [Ai Job Interview Model Evaluation Mollick](/ch01-460-给-ai-做工作面试-mollick-的模型评估方法论/)
-- [Claude Code Performance Benchmarking](/ch09-031-claude-code-性能基准评测/)
-- [Mythos_Offensive_Security_Xbow_Evaluatio](/ch01-291-mythos-for-offensive-security-xbow-s-evaluation/)
+- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](../ch01-394-latest-open-artifacts-21-open-model-bonanza-gemma-4-de)
+- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch01-874-nvidia-nemotron-3-ultra-hybrid-transformer-mamba-moe-for-ag)
+- [Ai Job Interview Model Evaluation Mollick](../ch01-460-给-ai-做工作面试-mollick-的模型评估方法论)
+- [Claude Code Performance Benchmarking](../ch09-031-claude-code-性能基准评测)
+- [Mythos_Offensive_Security_Xbow_Evaluatio](../ch01-291-mythos-for-offensive-security-xbow-s-evaluation)
 
 ## 相关引用
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/reading-todays-open-closed-performance-gap.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/reading-todays-open-closed-performance-gap.md)
 
 ---
 

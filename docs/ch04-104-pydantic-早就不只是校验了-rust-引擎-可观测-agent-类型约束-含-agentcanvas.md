@@ -80,14 +80,14 @@ Pydantic AI 不是 LangChain 的竞品——LangChain 用链式调用组织 LLM 
 ## 相关实体
 
 - **OpenTelemetry** — Logfire 基于的标准，可观测性跨厂商互操作
-- [**Agent Harness Engineering** — Pydantic AI 是 harness 工程的类型安全实现](/ch05-031-harness-engineering-实战-ai-coding-率从-25-提升至-90/)
+- **Agent Harness Engineering** — Pydantic AI 是 harness 工程的类型安全实现
 - **Instructor** — 同为 LLM 结构化输出方案，但定位单次调用
-- [**LangChain** — 链式调用范式代表，与 Pydantic AI 互补而非竞争](/ch04-176-langchain创始人解读-ai智能体两种沙盒架构/)
-- [**Type-Driven Development** — Pydantic AI 把类型驱动从静态语言推广到 Agent 运行时](/ch11-193-ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单/)
+- **LangChain** — 链式调用范式代表，与 Pydantic AI 互补而非竞争
+- **Type-Driven Development** — Pydantic AI 把类型驱动从静态语言推广到 Agent 运行时
 
 ---
 
-## 第 2 来源补充：agentcanvas — 把 Logfire 追踪 span 树渲染为可交互 HTML 流程图
+# 第 2 来源补充：agentcanvas — 把 Logfire 追踪 span 树渲染为可交互 HTML 流程图
 
 > ChallengeHub 2026-06-16 介绍的开源可视化工具（[github.com/vstorm-co/agentcanvas](https://github.com/vstorm-co/agentcanvas)，MIT 协议，Vstorm 团队开源）。核心价值：**填补 Pydantic 三件套生态中"可观测怎么呈现给客户"这一关键空白**——Logfire 的 OTel span 树再强大，对非技术人员（客户、决策层）依然是黑箱，agentcanvas 把 span 树翻译成可点开的流程图。
 
@@ -176,7 +176,7 @@ agentcanvas 通过 Logfire 的 **Query API**（SQL + 读取 Token）把这些 sp
 
 ---
 
-→ [第 1 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pydantic-three-piece-suite-yunduo.md) · [第 2 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentcanvas-logfire-flow-visualization-challengehub-2026-06-16.md)
+→ [第 1 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pydantic-three-piece-suite-yunduo.md) · [第 2 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcanvas-logfire-flow-visualization-challengehub-2026-06-16.md)
 
 ---
 

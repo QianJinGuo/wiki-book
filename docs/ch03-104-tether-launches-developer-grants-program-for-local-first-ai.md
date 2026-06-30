@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/tether-developer-grants-local-ai.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tether-developer-grants-local-ai.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tether-developer-grants-local-ai.md)
 
-## Tether Developer Grants Program
+# Tether Developer Grants Program
 ## 概述
 Tether 于 2026 年 5 月 11 日推出开发者资助计划，资助在本地优先 AI（local-first AI）和自托管支付基础设施领域构建开源工具的项目。该计划的核心是 Tether 的 QVAC 平台——一个设备端 AI 推理平台，使 AI 模型能够直接在用户硬件上运行，而非每次响应都需访问远程服务器。
 
@@ -45,9 +45,9 @@ QVAC 平台的定位尤其值得关注：Tether CEO Paolo Ardoino 将 local-firs
 - **支付合规**：USDT 支付在某些地区存在监管模糊地带——在参与资助计划前，应评估所在司法管辖区的稳定币合规要求
 
 ## 相关实体
-- [Tether launches developer grants program for local AI payments](/ch09-115-tether-launches-developer-grants-program-for-local-ai-paymen/) — 同一事件的平行条目
-- [Tether launches developer grants program for local-first AI and payments infrastructure](/ch11-183-tether-launches-developer-grants-program-for-local-first-ai/) — 同一事件的平行条目
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tether-developer-grants-local-ai.md)
+- [Tether launches developer grants program for local AI payments](../ch09-115-tether-launches-developer-grants-program-for-local-ai-paymen) — 同一事件的平行条目
+- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11-183-tether-launches-developer-grants-program-for-local-first-ai) — 同一事件的平行条目
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tether-developer-grants-local-ai.md)
 [^1]: 原文为"research into decentralization and edge AI"，此处译为"去中心化与边缘 AI 研究"。
 
 ---

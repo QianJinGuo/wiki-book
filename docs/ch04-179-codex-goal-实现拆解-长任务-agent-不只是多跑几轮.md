@@ -112,7 +112,7 @@ Codex `/goal` 的实现揭示了一个深刻转变：Agent 系统设计正在从
 这对长期任务至关重要：Agent 可能因为合理原因没做完（外部依赖、数据问题、需求变更），这时候最重要的输出不是"失败了"，而是"做到了哪、卡在哪、下一步是什么"。
 
 ## 相关链接
-- [Codex Goal Agent Runtime](/ch04-094-codex-goal-长任务agent的目标运行时/)
+- [Codex Goal Agent Runtime](../ch04-094-codex-goal-长任务agent的目标运行时)
 
 ## 实践启示
 ### 1. 给每个长期任务配备"状态记录"机制
@@ -135,7 +135,7 @@ Codex `/goal` 的实现揭示了一个深刻转变：Agent 系统设计正在从
 - [OpenAI Codex /goal 官方用例](https://developers.openai.com/codex/use-cases/follow-goals)
 - [OpenAI Codex goals.rs 源码](https://github.com/openai/codex/blob/main/codex-rs/core/src/goals.rs)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 
 - [Martin Fowler: Harness engineering for coding agent users](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html)
 ---

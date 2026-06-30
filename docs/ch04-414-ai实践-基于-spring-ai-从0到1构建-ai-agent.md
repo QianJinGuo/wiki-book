@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/spring-ai-aiagentdemo.md`
 
-## AI实践｜基于 Spring AI 从0到1构建 AI Agent
+# AI实践｜基于 Spring AI 从0到1构建 AI Agent
 
 文章内容基于作者个人技术实践与独立思考，旨在分享经验，仅代表个人观点。
 Linux说过一句很经典的话：Talk is cheap, show me the code.
@@ -12,13 +12,13 @@ Linux说过一句很经典的话：Talk is cheap, show me the code.
 1、该项目本身纯作为学习用途的Demo，只是用作展示"理论背后看得见的代码"。
 
 ## 相关实体
-- [Code As Agent Harness Survey](/ch09-046-code-as-agent-harness-综述/)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](/ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [Harness Engineering 第三代工程范式](/ch01-602-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
-- [Agentic Ai System Architecture Harness Skill Mcp](/ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真/)
+- [Code As Agent Harness Survey](../ch09-046-code-as-agent-harness-综述)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch04-388-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [Harness Engineering 第三代工程范式](../ch01-602-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch04-197-mcp-skill-agent-llm-harness-一张图讲清-agentic-ai-系统如何真)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spring-ai-aiagentdemo.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/spring-ai-aiagentdemo.md)
 
 ## 深度分析
 

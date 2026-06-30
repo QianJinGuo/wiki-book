@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.7KB | `entities/agentic-ai-data-mesh-aws-s3-vectors-mcp.md`
 
-## Building Agentic AI Applications with Data Mesh on AWS
+# Building Agentic AI Applications with Data Mesh on AWS
 
 AWS official blog showing how to build governed agentic AI applications on a modern data mesh. Core innovation: exposing data mesh as MCP tools via AgentCore Gateway for deterministic agent-to-data access control.
 
@@ -55,8 +55,8 @@ Each step requires independent authorization. Single-point metadata filter canno
 
 ## Reference
 
-- Source: [Original Article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-agentic-ai-applications-with-a-modern-data-mesh-str.md)
-- Related: [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/)
+- Source: [Original Article](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-agentic-ai-applications-with-a-modern-data-mesh-str.md)
+- Related: [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

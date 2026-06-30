@@ -17,7 +17,7 @@ Agent 失败后**先判断问题根源**，而不是无脑改技能 ：
 | 执行失败反思 | 操作步骤本身有问题 | 更新操作步骤 |
 | 规范失败反思 | 注意事项/踩坑记录过时 | 更新注意事项 |
 | 理解失败反思 | Agent 误解了操作意图 | 重写操作意图描述 |
-| 组合失败反思 | 操作步骤和意图衔接有问题 | 重写两者衔接 | See also [Harness Engineering](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
+| 组合失败反思 | 操作步骤和意图衔接有问题 | 重写两者衔接 | See also [Harness Engineering](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
 
 消融实验：去掉任何一种反思都会导致性能明显下降。
 

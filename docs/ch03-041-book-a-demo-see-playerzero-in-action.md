@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 5.1KB | `entities/playerzero-request-demo.md`
 
-> -> [Book a Demo | See PlayerZero in Action](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/playerzero-request-demo.md)
+> -> [Book a Demo | See PlayerZero in Action](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/playerzero-request-demo.md)
 
 ## 深度分析
 **1. Cookie声明页暴露的追踪生态规模**
@@ -27,11 +27,11 @@
 
 ## 关联阅读
 ## 相关实体
-- [Hs.Playerzero Ai Code Review](/ch01-076-code-simulation-for-enterprise-engineering-playerzero/)
-- [Aws Reinvent Game Demo 2024 25](/ch11-207-aws-reinvent-game-demo-2024-25/)
-- [Claude For Small Business](/ch01-030-introducing-claude-for-small-business/)
-- [Notebook Lm](/ch01-017-notebooklm/)
-- [Kuse Junior Ai Employee](/ch03-043-kuse-ai-junior-全球第一个ai员工/)
+- [Hs.Playerzero Ai Code Review](../ch01-076-code-simulation-for-enterprise-engineering-playerzero)
+- [Aws Reinvent Game Demo 2024 25](../ch11-207-aws-reinvent-game-demo-2024-25)
+- [Claude For Small Business](../ch01-030-introducing-claude-for-small-business)
+- [Notebook Lm](../ch01-017-notebooklm)
+- [Kuse Junior Ai Employee](../ch03-043-kuse-ai-junior-全球第一个ai员工)
 
 ---
 

@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/claude-code-security-review-bias-brainoverflow-2026-06.md`
 
-## Claude Code 安全审查的隐性盲点：Model Anchoring Bias 实证分析
+# Claude Code 安全审查的隐性盲点：Model Anchoring Bias 实证分析
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-security-review-bias-brainoverflow-2026-06.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-security-review-bias-brainoverflow-2026-06.md)
 
 ## 概述
 

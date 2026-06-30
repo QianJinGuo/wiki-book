@@ -84,28 +84,28 @@ Jarrod建议非前端任务用GPT 5.5 xHigh，前端设计用Claude Design。这
 Codex goals允许设置token预算来控制agent运行成本。实际项目中应设置合理的预算上限，并在接近预算时触发更保守的决策策略，避免在接近耗尽时做出高风险选择 。
 
 ## 相关资源
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ralph-loop-不够用长时间-agent-还缺这-3-件事.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ralph-loop-不够用长时间-agent-还缺这-3-件事.md)
 - [Jarrod Watts GitHub: long-running-agent-skill](https://github.com/jarrodwatts/long-running-agent-skill/tree/main)
 - [Claude Delegator](https://github.com/jarrodwatts/claude-delegator/)
 - [Matt Pocock grill-me skill](https://www.aihero.dev/my-grill-me-skill-has-gone-viral)
 
 ## ## 相关实体
-- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
+- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
 
 ## ## 相关实体
-- [gsd-get-shit-done-context-management-tool](/ch01-184-gsd-get-shit-done-context-management-tool/)
+- [gsd-get-shit-done-context-management-tool](../ch01-184-gsd-get-shit-done-context-management-tool)
 
 ## ## 相关实体
-- [Hermes Agent /goal 长任务运行时架构](/ch04-418-hermes-agent/)
+- [Hermes Agent /goal 长任务运行时架构](../ch04-418-hermes-agent)
 
 ## ## 相关实体
-- [LoongSuite GenAI 可观测语义规范](/ch04-376-loongsuite-genai-可观测语义规范/)
+- [LoongSuite GenAI 可观测语义规范](../ch04-376-loongsuite-genai-可观测语义规范)
 
 ## ## 相关实体
-- [低代码 Agent、框架 Agent、自研 Agent 决策框架](/ch04-354-低代码-agent-框架-agent-自研-agent-分别适合谁/)
+- [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch04-354-低代码-agent-框架-agent-自研-agent-分别适合谁)
 
 ## ## 相关实体
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](/ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战/)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05-043-三器合一-gstack-superpowers-openspec-工程化-ai-编程实战)
 
 ---
 

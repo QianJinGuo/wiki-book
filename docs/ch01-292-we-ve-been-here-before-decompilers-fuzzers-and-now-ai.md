@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/weve-been-here-before-decompilers-fuzzers-and-now-ai.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/weve-been-here-before-decompilers-fuzzers-and-now-ai.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/weve-been-here-before-decompilers-fuzzers-and-now-ai.md)
 
 ## Summary
 > Score: 8×8=64
@@ -130,7 +130,7 @@ ISACA 调查支持这一观点：87% 的网络安全专业人士认为 AI 将增
 4. **可解释 AI 在安全中的应用**：理解 AI 为什么认为某代码有漏洞，比仅知道结果更重要
 
 ## 相关实体
-- [weve-been-here-before-ai-vulnerability-research](/ch01-457-weve-been-here-before-ai-vulnerability-research/)
+- [weve-been-here-before-ai-vulnerability-research](../ch01-457-weve-been-here-before-ai-vulnerability-research)
 
 ---
 

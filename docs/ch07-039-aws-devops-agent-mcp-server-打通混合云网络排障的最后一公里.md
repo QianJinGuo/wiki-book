@@ -7,7 +7,7 @@
 ## 核心要点
 - AWS 技术实践
 - AWS DevOps Agent × MCP Server：
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md)
 
 ## 文章摘要
 混合云 BGP 故障的另一半证据往往在 on-premises 设备上。本文在真实 Direct Connect 环境上，通过 MCP Server 把 Cisco 路由器的只读命令暴露给 AWS DevOps Agent，用 Private Connection 把调用流量留在 AWS 骨干网，再用 EventBridge Scheduler + Lambda 把调查结论自动回推飞书群——完成"告警 → 自主调查 → 结论回到 Chat"的混合云 ChatOps 闭环。
@@ -45,10 +45,10 @@ Tool 名字与 docstring 是 Agent 决策的唯一依据——这对工具开发
 飞书卡片采用"三秒决策"设计原则：Action 说明要改什么、Reasoning 说明为什么要改、Execution plan 只预览第一步 headline，需要细节再点按钮跳转。这种设计反映了一个重要的产品原则：ChatOps 的核心不是信息密度，而是信息层次——在聊天窗口内只展示决策所需的最低信息量，把详细的技术细节留给需要时再获取。对于任何计划在 IM 平台推送运维告警的团队，这种分层信息设计值得参考。
 
 ## 相关实体
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](/ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议/)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](/ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式/)
-- [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](/ch11-149-aws-devops-agent-接入-aws-中国区系列-partition-隔离-多账号扩展与-roles-anyw/)
-- MOC
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch04-258-aws-devops-agent-实战-云网络故障自主调查与修复建议)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch04-202-doris-mcp-on-agentcore-runtime-vpc原生mcp部署模式)
+- [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](../ch11-149-aws-devops-agent-接入-aws-中国区系列-partition-隔离-多账号扩展与-roles-anyw)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---
 

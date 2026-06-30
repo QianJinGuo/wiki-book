@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md`
 
-##  DeepSeek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！
-原创  花叔  花叔  [ 花叔 ](/ch01-<javascript:void\(0\/);>)
+#  DeepSeek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！
+原创  花叔  花叔  [ 花叔 ](../ch01-<javascript:void\(0\);>)
 超长预警，这篇文章总字数9000+，预计阅读时长20分钟。如果你觉得太长读不下去的话，不用喊元宝了，这是最核心的四条总结：
 1、DeepSeek今天（4月30日）发了多模态论文 Thinking with Visual Primitives，离 V4 论文整 6 天。核心是「视觉原语」：让模型一边推理一边输出坐标，把「点」和「边界框」当作思考的最小单元，相当于让 AI 一边想一边「用手指着图说话」
 
@@ -18,17 +18,17 @@
 说起来，赶在五一长假之前丢个重磅论文，这风格还真挺特么DeepSeek的，熟悉的味道又回来了。以及，这次内容真的太长了，建议你可以先收藏了，假期里无聊的时候慢慢读，我这五一期间尽量...尽量不卷了，不给各位增加阅读负担。
 
 ## 相关实体
-- [Pi Mono Github](/ch01-608-pi-mono-github/)
-- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
-- [Cursor Harness Model Production Floor](/ch01-235-cursor-harness-model-production-floor/)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](/ch01-247-vibe-coding-and-agentic-engineering-convergence-simon-willi/)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/)
+- [Pi Mono Github](../ch01-608-pi-mono-github)
+- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
+- [Cursor Harness Model Production Floor](../ch01-235-cursor-harness-model-production-floor)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch01-247-vibe-coding-and-agentic-engineering-convergence-simon-willi)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md)
 
-- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](/ch04-230-一个文件让-ai-coding-效率翻倍-agents-md-实践指南/)
+- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](../ch04-230-一个文件让-ai-coding-效率翻倍-agents-md-实践指南)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
 
 主流多模态模型在视觉能力上的竞争维度，长期被锁定在「看得更清楚」这一条路上——通过高分辨率切割、动态分块将图像 token 数量不断推高，以求在 VQA 任务上刷新 benchmark 分数。Anthropic 将 Opus 4.7 的图像内部分辨率从 1568px 提升到 2576px，Google 的 Gemini 从初代发布起就走 natively multimodal 路线，这些动作都在强化一个隐含前提：视觉推理的瓶颈在于感知清晰度。DeepSeek 这篇论文的核心反驳是「看见 ≠ 看清楚 ≠ 说清楚指哪个」，论文原文直接点破：「The inherent ambiguity of natural language often fails to provide precise, unambiguous pointers to complex spatial layouts, leading to logical collapse in tasks requiring rigorous grounding.」这个 Reference Gap（指代鸿沟）才是真正卡住多模态推理的地方，而非 Perception Gap（感知鸿沟）。

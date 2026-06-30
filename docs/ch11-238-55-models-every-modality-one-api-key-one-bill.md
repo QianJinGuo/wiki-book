@@ -12,13 +12,13 @@
 - 支持多模态：图像（Stable Diffusion 3.5）、视频（Wan 2.2）、语音（Qwen3 TTS）、视觉语言（Nemotron、Kimi）
 - VPC + 默认零数据保留，平台内置 guardrails
 ## 相关实体
-- [Serverless Inference](/ch11-003-serverless-inference/)
-- [Aws Bedrock Serverless Async Inference Sqs Lambda](/ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda/)
-- [Aws Network Firewall Ai Conflict Detection Bedrock](/ch11-122-aws-network-firewall-规则冲突-ai-实时检测方案-部署小指南六/)
-- [Kiro Job Scheduler Eventbridge Ecs Fargate](/ch11-024-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务/)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
+- [Serverless Inference](../ch11-003-serverless-inference)
+- [Aws Bedrock Serverless Async Inference Sqs Lambda](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda)
+- [Aws Network Firewall Ai Conflict Detection Bedrock](../ch11-122-aws-network-firewall-规则冲突-ai-实时检测方案-部署小指南六)
+- [Kiro Job Scheduler Eventbridge Ecs Fargate](../ch11-024-构建无服务器kiro调度平台-用kiro-cli-eventbridge-ecs-fargate实现定时ai任务)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/digitalocean-serverless-inference-55-models.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/digitalocean-serverless-inference-55-models.md)
 
 ## 深度分析
 DigitalOcean Serverless Inference 的核心定位是**简化 AI 推理的基础设施复杂度**，让中小团队不用管理 GPU 集群就能调用前沿模型。从市场竞争格局来看，它处于一个中间地带：比大型云厂商（AWS Bedrock、Azure AI）更轻量、比纯推理 API 包装器（Replicate 等）更有深度、比 Neoclouds（Together AI、Fireworks）多了完整的云基础设施集成。

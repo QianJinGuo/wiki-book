@@ -4,18 +4,18 @@
 
 > 📊 Level ⭐⭐⭐ | 12.4KB | `entities/the-inference-shift.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-inference-shift.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-inference-shift.md)
 
 ## Summary
 > Score: 8×7=56
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [How to Calculate the Inference Efficiency Ratio](/ch01-492-how-to-get-a-100-conference-acceptance-rate-the-novee-way/)
-- [From Doer To Director: The AI Mindset Shift](/ch01-032-from-doer-to-director-the-ai-mindset-shift/)
+- [How to Calculate the Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
+- [From Doer To Director: The AI Mindset Shift](../ch01-032-from-doer-to-director-the-ai-mindset-shift)
 
-- [ai芯片架构：从逻辑门到矩阵乘法](/ch01-861-ai芯片架构-从逻辑门到矩阵乘法/)
+- [ai芯片架构：从逻辑门到矩阵乘法](../ch01-861-ai芯片架构-从逻辑门到矩阵乘法)
 
 ## 深度分析
 ### GPU 时代的终结与新架构的萌芽
@@ -63,7 +63,7 @@ Nvidia 显然意识到了 inference 架构的变化趋势，推出了 Dynamo inf
 **构建 agentic-optimized 基础设施**：当前的 cloud inference 服务主要是 GPU instances 的 serverless 包装。如果 agentic inference 真的成为主导，cloud providers 可能需要重新设计他们的 inference 产品——包括更便宜的 compute 选项、更大的 memory 层次结构支持、以及更灵活的 storage 选项。
 **off-peak pricing 是一个正确的方向**：DigitalOcean 引入的 off-peak dynamic pricing（batch at ~50% of real-time）正是 agentic inference 场景下 latency-insensitive workload 的正确商业模型。这一模式可能会被更广泛地采用，因为它创造了一个对 provider 和 customer 都有价值的市场。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 
 ### 风险与不确定性
 **timeline 高度不确定**：Ben Thompson 的分析逻辑清晰，但关于 AI Agent 普及的时间表存在高度不确定性。如果"真正的 agentic inference"（无人类在环）需要 10 年才能实现，那么当前的 GPU 投资仍然合理。如果 3 年内实现，架构转型的压力将急剧增大。

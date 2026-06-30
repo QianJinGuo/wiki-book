@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/ai-canvas-agent-era-content-creation.md`
 
-## AI 内容创作，开始进入“画布 Agent”时代
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-canvas-agent-era-content-creation.md)（叶小钗）
+# AI 内容创作，开始进入“画布 Agent”时代
+> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-canvas-agent-era-content-creation.md)（叶小钗）
 
 ## 核心要点
 - AI 内容创作正从单点工具向"画布 Agent"平台演进
@@ -14,13 +14,13 @@
 - 产品形态：海报设计、视频生成、代码生成等多模态覆盖
 - 局限性：文章为产品介绍性质，缺乏独立评测与竞品对比
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](/ch05-028-wow-harness-v3-ai-开发的治理协议/)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](/ch04-418-hermes-agent/)
-- [Ath Agent Trust Handshake Protocol](/ch04-500-为了让agent更安全的工作-有多少人操碎了心/)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](/ch07-017-hermes自进化完整闭环-skill创建复用修补链路/)
-- [Four Browser Automation Tools Comparison](/ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc/)
+- [Wow Harness V3 Governance Protocol](../ch05-028-wow-harness-v3-ai-开发的治理协议)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04-418-hermes-agent)
+- [Ath Agent Trust Handshake Protocol](../ch04-500-为了让agent更安全的工作-有多少人操碎了心)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07-017-hermes自进化完整闭环-skill创建复用修补链路)
+- [Four Browser Automation Tools Comparison](../ch04-002-五款浏览器自动化工具横向对比-browser-use-playwright-chrome-devtools-mc)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-canvas-agent-era-content-creation.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-canvas-agent-era-content-creation.md)
 
 ## 深度分析
 **画布 Agent 的本质是从"工具"到"劳动力"的范式跃迁。** 传统 AI 生成工具无论是 Midjourney、Stable Diffusion 还是国内的即梦，都是单点工具——用户需要自己设计提示词、选择模型、调整参数，AI 扮演的是"执行者"角色。而画布 Agent（如 RHTV）将 Agent 嵌入画布，使其具备"理解意图→拆解任务→自主执行→可视化呈现"的全链路能力，AI 从工具变成能帮你解决问题的劳动力。

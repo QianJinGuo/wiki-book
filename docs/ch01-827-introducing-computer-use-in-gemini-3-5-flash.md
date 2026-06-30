@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/gemini-3-5-flash-computer-use.md`
 
-## Introducing computer use in Gemini 3.5 Flash
+# Introducing computer use in Gemini 3.5 Flash
 
 > **Background**: Google Blog, 2026-06-25. Google introduces native computer use capabilities in Gemini 3.5 Flash, enabling the model to interact with UI elements, click buttons, type text, and navigate applications autonomously.
 
@@ -71,10 +71,10 @@ Task Completion
 
 ## Related
 
-- [Gemini 3.5 Frontier Intelligence](/ch01-061-gemini-3-5-frontier-intelligence-with-action/)
-- [Agent Harness Engineering Survey 2026](/ch04-069-agent-harness-engineering-a-survey/)
+- [Gemini 3.5 Frontier Intelligence](../ch01-061-gemini-3-5-frontier-intelligence-with-action)
+- [Agent Harness Engineering Survey 2026](../ch04-069-agent-harness-engineering-a-survey)
 
--> [Original Archive](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemini-3-5-flash-computer-use.md)
+-> [Original Archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemini-3-5-flash-computer-use.md)
 
 ---
 

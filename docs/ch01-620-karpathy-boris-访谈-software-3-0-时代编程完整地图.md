@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/karpathy-boris-software3-llm-era-programming-2026.md`
 
-## Karpathy × Boris 访谈：Software 3.0 时代编程完整地图
+# Karpathy × Boris 访谈：Software 3.0 时代编程完整地图
 
 - URL: https://mp.weixin.qq.com/s/e1vrUYcGE6RToVkl_HcXZQ
 - Author: 微信编译版，原型为 Boris (Claude Code创始人) + Karpathy (前Tesla AI) YouTube访谈
@@ -12,13 +12,13 @@
 - SHA256: b7f08a9221689ae53f18651567d97f1e5110931bc8978d41d50159b7513e3810
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](/ch01-367-claude-code-harness-deep-understanding/)
-- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
-- [Ralph Loop 不够用长时间 Agent 还缺这 3 件事](/ch01-308-ralph-loop-不够用-长时间-agent-还缺这-3-件事/)
-- [Claude Code Harness Deep Dive Founder Park](/ch01-558-claude-code-harness-深度分析/)
-- [wetesteddeepseekv4proandflashagainstclau.md-against-claude](/ch01-319-claude-code-andrej-karpathy-claude-md-134-k-star/)
+- [Claude Code Harness Deep Understanding](../ch01-367-claude-code-harness-deep-understanding)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档)
+- [Ralph Loop 不够用长时间 Agent 还缺这 3 件事](../ch01-308-ralph-loop-不够用-长时间-agent-还缺这-3-件事)
+- [Claude Code Harness Deep Dive Founder Park](../ch01-558-claude-code-harness-深度分析)
+- wetesteddeepseekv4proandflashagainstclau.md-against-claude
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-boris-software3-llm-era-programming-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-boris-software3-llm-era-programming-2026.md)
 
 ## 深度分析
 

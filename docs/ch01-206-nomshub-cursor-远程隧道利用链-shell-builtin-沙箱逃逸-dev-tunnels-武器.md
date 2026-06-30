@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐⭐ | 17.4KB | `entities/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md`
 
-## NomShub — Cursor 远程隧道利用链
+# NomShub — Cursor 远程隧道利用链
 
 > **Background**: NomShub 是 2026 年 1 月由 Straiker 安全研究团队（Sumit Agrawal 等）发现、4 月披露、Cursor 3.0 修复的端到端 AI agent 供应链攻击链。它的特殊价值在于**完整公开了一个"AI agent 作为攻击执行器"的可复现 exploit**：单行 prompt injection 触发，AI agent 自主完成 7 步攻击链，零用户交互，影响 Cursor 全 macOS 用户。本文剖析其技术机制（特别是 shell builtin 沙箱逃逸 + Microsoft Dev Tunnels LOTL 武器化），并讨论其对所有 AI 编码助手的启示。
 >
-> 原文：→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md)
+> 原文：→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md)
 
 ## 一句话总结
 
@@ -121,7 +121,7 @@ Cursor/Anysphere 通过 HackerOne 独立评估 sandbox breakout 部分为 **High
 
 ## 原文链接
 
-→ [NomShub 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md)
+→ [NomShub 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md)
 
 ## 深度分析
 
@@ -169,10 +169,10 @@ AI coding assistant 处理 repository 内容（README、代码注释、commit me
 
 ## 相关阅读
 
-- [Microsoft MXC](/ch01-211-microsoft-mxc-跨-os-代理代码执行容器-appcontainer-sandbox-hyperligh/) — 微软自家跨 OS 沙箱，提供 kernel 隔离，可作 NomShub 的防御侧
-- [CrewAI 三步防护](/ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做/) — 应用层 guardrail 视角
-- [AI Tool Poisoning](/ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s/) — 工具被污染的通用风险
-- [Microsoft RAMPART/Clarity](/ch01-611-microsoft-open-sources-rampart-and-clarity-to-secure-ai-agen/) — 微软同源栈，检测类似 agent 行为
+- [Microsoft MXC](../ch01-211-microsoft-mxc-跨-os-代理代码执行容器-appcontainer-sandbox-hyperligh) — 微软自家跨 OS 沙箱，提供 kernel 隔离，可作 NomShub 的防御侧
+- [CrewAI 三步防护](../ch04-157-agent-安全三步法-先-harness-再-governance-最后-identity-顺序反了一切白做) — 应用层 guardrail 视角
+- [AI Tool Poisoning](../ch04-277-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s) — 工具被污染的通用风险
+- [Microsoft RAMPART/Clarity](../ch01-611-microsoft-open-sources-rampart-and-clarity-to-secure-ai-agen) — 微软同源栈，检测类似 agent 行为
 - **LotL Attack** — Living-Off-The-Land 在 AI agent 时代的演化
 
 ---

@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/reducing-container-cold-start-times-using-soci-index-on-dlam.md`
 
-## Reducing container cold start times using SOCI index on DLAMI and DLC
+# Reducing container cold start times using SOCI index on DLAMI and DLC
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/reducing-container-cold-start-times-using-soci-index-on-dlam.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/reducing-container-cold-start-times-using-soci-index-on-dlam.md)
 
 ## 深度分析
 
@@ -36,12 +36,12 @@ Deep Learning AMI and AWS Deep Learning Containers are now enabled with support 
 - **aws趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](/ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on/)
-- Nvidia Isaac Lab Sagemaker Robot Rl Humanoid
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](/ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606/)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](/ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进/)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](/ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](/ch04-199-openclaw-完全指南/)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01-800-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch01-781-ethan-he-cosmos-grok-imagine-latent-space-video-agent-202606)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch01-707-存之有序-治之有矩-agent-记忆系统的工程实践与演进)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04-125-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04-199-openclaw-完全指南)
 
 ## 实践启示
 1. **工程落地**: architecture领域方案需关注可观测性、可维护性和成本效率

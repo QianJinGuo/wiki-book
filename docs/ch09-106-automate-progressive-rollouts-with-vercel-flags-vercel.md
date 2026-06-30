@@ -4,10 +4,10 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/automate-progressive-rollouts-with-vercel-flags-vercel.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/automate-progressive-rollouts-with-vercel-flags-vercel.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/automate-progressive-rollouts-with-vercel-flags-vercel.md)
 
 ## 相关实体
-> 主题导航
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cloud-infrastructure.md)
 
 ## 深度分析
 Vercel Flags 是 Vercel 平台推出的 Feature Flag 解决方案，本次更新新增 **渐进式发布（Progressive Rollouts）** 功能，属于 Feature Flag 策略中的「时间基权重」类型。
@@ -41,7 +41,7 @@ Vercel Flags 是 Vercel 平台推出的 Feature Flag 解决方案，本次更新
 > [!contradiction] 与传统 A/B 测试的权衡
 > 渐进式发布侧重「时间维度」的风险控制，而加权拆分侧重「空间维度」的实验精确度。两者并非替代关系——渐进式发布适用于生产级变更，A/B 测试适用于产品决策验证。
 ## 相关实体
-- [Nvidia Mcg Toolkit Model Documentation](/ch03-033-how-to-automate-ai-model-documentation-with-nvidia-mcg-toolk/)
+- [Nvidia Mcg Toolkit Model Documentation](../ch03-033-how-to-automate-ai-model-documentation-with-nvidia-mcg-toolk)
 
 ---
 

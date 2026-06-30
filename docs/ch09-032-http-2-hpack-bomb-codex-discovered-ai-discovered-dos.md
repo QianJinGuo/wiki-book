@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.0KB | `entities/http2-hpack-bomb-codex-ai-discovery-32gb-dos.md`
 
-## HTTP/2 HPACK Bomb — Codex Discovered AI-Discovered DoS
+# HTTP/2 HPACK Bomb — Codex Discovered AI-Discovered DoS
 
 > **Source**: Calif.io disclosure 2026-06-02 by Quang Luong, Jun Rong, Duc Phan. Attack discovered by OpenAI Codex from public fix commits. Affects nginx, Apache httpd, Microsoft IIS, Envoy, Cloudflare Pingora in default configuration. 880,000+ vulnerable websites per Shodan.
 
@@ -102,7 +102,7 @@ Created as new entity: `http2-hpack-bomb-codex-ai-discovery-32gb-dos.md`. The Ca
 - OpenAI Codex
 - Slowloris DoS
 - AI-generated exploit primitives
-- AI agent security (see [1Password Securing Ai Agents Machine Identities](/ch12-041-securing-ai-agents-and-machine-identities/), [Ai Agents Security Survey Attack Defense](/ch07-005-ai-agents-security-survey-attack-and-defense/))
+- AI agent security (see [1Password Securing Ai Agents Machine Identities](../ch12-041-securing-ai-agents-and-machine-identities), [Ai Agents Security Survey Attack Defense](../ch07-005-ai-agents-security-survey-attack-and-defense))
 - CVE disclosure conventions (CVE-2016-6581, CVE-2025-53020, CVE-2026-49975)
 
 ## 深度分析

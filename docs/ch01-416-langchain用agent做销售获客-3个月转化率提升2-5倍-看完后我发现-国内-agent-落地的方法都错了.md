@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/langchain用agent做销售获客3个月转化率提升25倍看完后我发现国内-agent-落地的方法都错了.md`
 
-## LangChain 用 Agent 做销售获客，3个月转化率提升2.5倍
+# LangChain 用 Agent 做销售获客，3个月转化率提升2.5倍
 
 > **Background**: LangChain 用自家 Agent 技术重构了销售获客（GTM）流程，3 个月内线索到合格商机转化率提升 250%、管道金额增长 3 倍、每位销售代表每月省 40 小时。本文通过分析这一案例，揭示国内 Agent 落地的常见误区。
 
@@ -115,11 +115,11 @@ Agent 遵循预定义的 `skill` 剧本，根据关系状态差异化处理：
 
 ## 相关实体
 
-- [Agent Harness 组件解析](/ch04-425-the-anatomy-of-an-agent-harness-解读/)
-- [MCP 设计模式](/ch01-677-anthropic/)
+- [Agent Harness 组件解析](../ch04-425-the-anatomy-of-an-agent-harness-解读)
+- [MCP 设计模式](../ch01-677-anthropic)
 - Agent 评估
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langchain用agent做销售获客3个月转化率提升25倍看完后我发现国内-agent-落地的方法都错了.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langchain用agent做销售获客3个月转化率提升25倍看完后我发现国内-agent-落地的方法都错了.md)
 
 ---
 

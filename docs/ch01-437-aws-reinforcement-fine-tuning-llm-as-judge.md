@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/aws-reinforcement-fine-tuning-llm-as-judge.md`
 
-## Reinforcement fine-tuning with LLM-as-a-judge
+# Reinforcement fine-tuning with LLM-as-a-judge
 Large language models (LLMs) now drive the most advanced conversational agents, creative tools, and decision-support systems. However, their raw output often contains inaccuracies, policy misalignments, or unhelpful phrasing—issues that undermine trust and limit real-world utility. _Reinforcement Fine‑Tuning (RFT)_ has emerged as the preferred method to align these models efficiently, using _automated reward signals_ to replace costly manual labeling.
 At the heart of modern RFT is reward functions. They're built for each domain through verifiable reward functions that can score LLM generations through a piece of code (Reinforcement Learning with Verifiable Rewards or RLVR) or with LLM-as-a-judge, where a separate language model evaluates candidate responses to guide alignment (Reinforcement Learning with AI Feedback or RLAIF). Both these methods provide scores to the RL algorithm to nudge the model to solve the problem at hand. In this post, we take a deeper look at how RLAIF or RL with LLM-as-a-judge works with Amazon Nova models effectively.
 
@@ -12,18 +12,18 @@ At the heart of modern RFT is reward functions. They're built for each domain th
 Reinforcement Fine-Tuning can use any reward signal, straightforward hand‑crafted rules (RLVR), or an LLM that evaluates model outputs (LLM-as-a-judge or RLAIF). RLAIF makes alignment far more flexible and powerful, especially when reward signals are vague and hard to craft manually. Unlike generic RFT rewards that rely on blunt numeric scoring like substring matching, an LLM judge reasons across multiple dimensions—correctness, tone, safety, relevance—providing context-aware feedback that captures subtleties and domain-specific nuances without task-specific retraining. Additionally, LLM judges offer built-in explainability through rationales (for example, "Response A cites peer-reviewed studies"), providing diagnostics that accelerate iteration, pinpoint failure modes directly, and reduce hidden misalignments, something static reward functions can't do.
 
 ## 相关实体
-- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](/ch01-330-navigating-eu-ai-act-requirements-for-llm-fine-tuning/)
-- [Llm Finetuning Cost Breakdown](/ch01-862-llm-fine-tuning-cost-breakdown/)
-- [Harness Engineering 第三代工程范式](/ch01-602-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式/)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
+- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](../ch01-330-navigating-eu-ai-act-requirements-for-llm-fine-tuning)
+- [Llm Finetuning Cost Breakdown](../ch01-862-llm-fine-tuning-cost-breakdown)
+- [Harness Engineering 第三代工程范式](../ch01-602-harness-engineering-ai-从-聪明-到-可靠-的第三代工程范式)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-reinforcement-fine-tuning-llm-as-judge.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-reinforcement-fine-tuning-llm-as-judge.md)
 
-- [stop hand-tuning kernels: how neuron agentic development acc](/ch04-293-stop-hand-tuning-kernels-how-neuron-agentic-development-acc/)
+- [stop hand-tuning kernels: how neuron agentic development acc](../ch04-293-stop-hand-tuning-kernels-how-neuron-agentic-development-acc)
 
-- MOC
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 ## 深度分析
 
 RLAIF 本质上是用一个 LLM 裁判替代手工设计的奖励函数，但其核心价值在于引入了**多维度推理评估能力**。传统 RLVR 依赖精确的规则匹配（如 substring matching），只能捕捉表面特征；而 LLM-as-a-judge 能够跨越正确性、语气、安全性、相关性等多个维度进行上下文感知评分。AWS 的实验证明，当奖励信号模糊、难以手工定义时（如法律合同审查中"评论是否有价值"这类主观判断），基于规则的奖励函数很快失效，而 LLM 法官却能通过系统化的评分维度（TargetDocument_Grounding、Reference_Consistency、Actionability）给出可靠的相对评估^。

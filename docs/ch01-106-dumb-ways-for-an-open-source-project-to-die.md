@@ -22,13 +22,13 @@
 4. **将项目"可发布性"纳入维护标准。** 定期检查：发布权限是否仍然有效？CI 是否仍然绿？能否从源码构建并发布一个版本？这些检查比 commit graph 更能反映项目真实存活能力。
 5. **为 Fork 保留可能性。** 保持与社区的良好关系，避免进入 Toxic Gatekeeping 状态。即使项目当前健康，也要关注是否有替代 fork 可用。License 变更（Terraform/OpenTofu、Redis/Valkey）表明 Fork 往往是唯一出路，提前保持关系比危机时重建容易得多。
 ## 相关实体
-- [Clinereleasesopen Sourceagentruntimesdk](/ch04-003-agentrun/)
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](/ch04-482-opensquilla-launches-open-source-ai-agent-to-cut-token-costs/)
-- [How We Made Window Join Parallel And Vectorized](/ch01-034-how-we-made-window-join-parallel-and-vectorized/)
-- [Products Are Out Brains Are In](/ch01-113-products-are-out-brains-are-in/)
-- [Investing In Stitch](/ch01-122-nearly-every-enterprise-is-investing-in-ai-but-only-5-say/)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04-003-agentrun)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch04-482-opensquilla-launches-open-source-ai-agent-to-cut-token-costs)
+- [How We Made Window Join Parallel And Vectorized](../ch01-034-how-we-made-window-join-parallel-and-vectorized)
+- [Products Are Out Brains Are In](../ch01-113-products-are-out-brains-are-in)
+- Investing In Stitch
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dumb-ways-for-an-open-source-project-to-die.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dumb-ways-for-an-open-source-project-to-die.md)
 
 ---
 

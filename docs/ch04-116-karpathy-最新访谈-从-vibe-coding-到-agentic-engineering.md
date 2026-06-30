@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.0KB | `entities/karpathy-vibe-coding-agentic-engineering-v4.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
 
 ## 核心洞察
 Vibe Coding 拉低下限，Agentic Engineering 解决真实交付问题；可验证性决定 Agent 自动化上限；上下文/工具/测试/运行环境成为 Software 3.0 的核心设计对象。
@@ -19,7 +19,7 @@ Karpathy 在红杉 AI Ascent 2026 访谈中提出 Software 3.0 概念，认为 V
 - **锯齿智能**：能力曲线非线性，存在上限瓶颈
 
 ## 来源
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
 
 ## 深度分析
 ### Vibe Coding 与 Agentic Engineering 的本质分野
@@ -69,33 +69,33 @@ Karpathy 设想的 AI-native 面试是：给候选人一个大项目（如做个
 Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业观察的锚点：①前沿实验室在编程和数学之外往哪些领域注入 RL 数据——那里的能力可能突然冒出来；②Agent-first 基础设施有没有开始收敛——部署、auth、payments、DNS 等让 Karpathy 在 MenuGen 项目上最头疼的环节，是否出现"一句话给 Agent 就能跑"的标准化方案；③下一代模型有没有把审美和代码质量纳入 RL 目标——如果 Agent 写的代码不再让人"心脏病发作"，人在"品味"层守的口子就会变窄。这三个信号分别指向 Agent 能力边界的扩展速度、基础设施成熟度和人类判断力的相对价值变化。
 
 ## 相关实体
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch04-518-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](/ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering/)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](/ch04-191-tencent-vibe-coding-to-agentic-engineering-backend/)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](/ch04-366-从vibe-coding到agentic-engineering-重构后台开发全流程/)
-- [Design Patterns for AI Agents 2026](/ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl/)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](/ch05-020-martin-fowler-ai-研发-harness-非确定性承重层/)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](/ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio/)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](/ch01-302-llm-as-a-verifier-a-general-purpose-verification-framework/)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](/ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](/ch04-418-hermes-agent/)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](/ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness/)
-- [Harness Design Peer Review Framework](/ch11-235-agentscope-java-harness-framework-企业级-agent-分布式场景的-harness/)
-- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](/ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端/)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](/ch01-367-claude-code-harness-deep-understanding/)
-- [两万字详解Claude Code源码核心机制](/ch09-056-两万字详解claude-code源码核心机制/)
-- [Agent Harness 架构](/ch04-207-agent-harness-架构/)
-- [Agent 自我改进的六条路](/ch04-047-agent-自我改进的六条路/)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](/ch04-126-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台/)
-- [Harness如何支撑Agent在生产环境稳定运行？](/ch04-127-harness如何支撑agent在生产环境稳定运行/)
-- [Code as Agent Harness 综述](/ch09-046-code-as-agent-harness-综述/)
-- [Agent架构关键变化：Harness正在成为新后端](/ch04-027-agent架构关键变化-harness正在成为新后端/)
-- [harness-engineering-systematic-explainer](/ch05-036-harness-engineering-systematic-explainer/)
-- [Agent 原理、架构与工程实践](/ch04-435-agent-engineering-principles-architecture-practice/)
-- [AI Agent 工程师能力地图](/ch04-139-ai-agent-工程师能力地图/)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-518-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04-122-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch09-019-karpathy-最新访谈-从-vibe-coding-到-agentic-engineering)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04-191-tencent-vibe-coding-to-agentic-engineering-backend)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04-366-从vibe-coding到agentic-engineering-重构后台开发全流程)
+- [Design Patterns for AI Agents 2026](../ch04-083-design-patterns-for-ai-agents-2026-4-大执行模式-5-步选型决策树-refl)
+- [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05-020-martin-fowler-ai-研发-harness-非确定性承重层)
+- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch04-158-agent-reliability-context-drift-tool-calling-hallucinatio)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01-302-llm-as-a-verifier-a-general-purpose-verification-framework)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch04-422-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch04-418-hermes-agent)
+- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05-012-长周期-agent-详解-从-ralph-loop-到可接管-harness)
+- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
+- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch04-254-从-30-分钟手搓-agent-到-harness-成为-新后端)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01-367-claude-code-harness-deep-understanding)
+- [两万字详解Claude Code源码核心机制](../ch09-056-两万字详解claude-code源码核心机制)
+- [Agent Harness 架构](../ch04-207-agent-harness-架构)
+- [Agent 自我改进的六条路](../ch04-047-agent-自我改进的六条路)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch04-126-boris-cherny-新访谈-开发工具正在从-ide-变成-agent-控制台)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch04-127-harness如何支撑agent在生产环境稳定运行)
+- [Code as Agent Harness 综述](../ch09-046-code-as-agent-harness-综述)
+- [Agent架构关键变化：Harness正在成为新后端](../ch04-027-agent架构关键变化-harness正在成为新后端)
+- [harness-engineering-systematic-explainer](../ch05-036-harness-engineering-systematic-explainer)
+- [Agent 原理、架构与工程实践](../ch04-435-agent-engineering-principles-architecture-practice)
+- [AI Agent 工程师能力地图](../ch04-139-ai-agent-工程师能力地图)
 
 ---
 

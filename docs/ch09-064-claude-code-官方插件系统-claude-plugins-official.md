@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-official-plugins-anthropic.md`
 
-## Claude Code 官方插件系统 (claude-plugins-official)
+# Claude Code 官方插件系统 (claude-plugins-official)
 
 Anthropic 官方 Claude Code 插件体系，发布于 2026 年 5 月，GitHub 仓库已获 20K+ Stars。
 
@@ -117,15 +117,15 @@ Anthropic 采用「官方维护 30+ 内部插件 + 社区贡献 10+ 外部插件
 - GitHub：https://github.com/anthropics/claude-plugins-official
 
 ## 相关实体
-- [Claude Code Agent Teams Task Decomposition Ruofei](/ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据/)
-- [Claude Code Self Repair Hooks Memory Config](/ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码/)
-- [Claude Code Agent View Huashu](/ch09-001-claude-code-agent-view/)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](/ch01-677-anthropic/)
-- [Claude Code 7 Layer Memory Architecture](/ch01-857-claude-code-7-layer-memory-architecture/)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01-296-claude-code-agent-teams-实战-怎么拆任务-控权限-收证据)
+- [Claude Code Self Repair Hooks Memory Config](../ch09-089-复制这套神仙配置-让claude-code全自动修bug-告别每天重复教ai写代码)
+- [Claude Code Agent View Huashu](../ch09-001-claude-code-agent-view)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01-677-anthropic)
+- [Claude Code 7 Layer Memory Architecture](../ch01-857-claude-code-7-layer-memory-architecture)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-official-plugins-anthropic.md)
-- [prosemirror @文档 mention：知识库 agent 输入框的工程化实现](/ch04-225-prosemirror-文档-mention-知识库-agent-输入框的工程化实现/)
-- MOC
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-official-plugins-anthropic.md)
+- [prosemirror @文档 mention：知识库 agent 输入框的工程化实现](../ch04-225-prosemirror-文档-mention-知识库-agent-输入框的工程化实现)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---
 

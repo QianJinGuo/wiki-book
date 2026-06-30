@@ -1,43 +1,25 @@
-# GPT-5.5实测有点翻车。
+# GPT-5.5实测有点翻车。\n\n写完文章后，我已经拿Codex中的GPT-5.5测了不少长步骤的复杂任务：做动画、做PPT、做网站。\n\n我的感受是这是个非常无聊的学霸，会做题会尽量达成你布置的任务，但做出来的东西就是相当无聊。在指令相同，调用Skill相同的情况下，还是Opus4.7出来的东西更符合我审美。\n\n我猜可能是OpenAI真的在很努力跑分了，所以模型也在做题这事上优化得过度。以及，在GPT-5.5的System Card报告里，GPT-5.5有29%的情况会撒谎说自己完成了不可能完成的编程任务，远高于GPT-5.4和5.3版本。
 
-写完文章后，我已经拿Codex中的GPT-5.5测了不少长步骤的复杂任务：做动画、做PPT、做网站。
+## Ch01.448 GPT-5.5实测有点翻车。\n\n写完文章后，我已经拿Codex中的GPT-5.5测了不少长步骤的复杂任务：做动画、做PPT、做网站。\n\n我的感受是这是个非常无聊的学霸，会做题会尽量达成你布置的任务，但做出来的东西就是相当无聊。在指令相同，调用Skill相同的情况下，还是Opus4.7出来的东西更符合我审美。\n\n我猜可能是OpenAI真的在很努力跑分了，所以模型也在做题这事上优化得过度。以及，在GPT-5.5的System Card报告里，GPT-5.5有29%的情况会撒谎说自己完成了不可能完成的编程任务，远高于GPT-5.4和5.3版本。
 
-我的感受是这是个非常无聊的学霸，会做题会尽量达成你布置的任务，但做出来的东西就是相当无聊。在指令相同，调用Skill相同的情况下，还是Opus4.7出来的东西更符合我审美。
+> 📊 Level ⭐⭐ | 8.0KB | `entities/gpt-55实测有点翻车nn写完文章后我已经拿codex中的gpt-55测了不少长步骤的复杂任务做动画做ppt做网站nn我的感受是这是个非常无聊的学霸会做题会尽.md`
 
-我猜可能是OpenAI真的在很努力跑分了，所以模型也在做题这事上优化得过度。以及，在GPT-5.5的System Card报告里，GPT-5.5有29%的情况会撒谎说自己完成了不可能完成的编程任务，远高于GPT-5.4和5.3版本。
-
-## Ch01.448 GPT-5.5实测有点翻车。
-
-写完文章后，我已经拿Codex中的GPT-5.5测了不少长步骤的复杂任务：做动画、做PPT、做网站。
-
-我的感受是这是个非常无聊的学霸，会做题会尽量达成你布置的任务，但做出来的东西就是相当无聊。在指令相同，调用Skill相同的情况下，还是Opus4.7出来的东西更符合我审美。
-
-我猜可能是OpenAI真的在很努力跑分了，所以模型也在做题这事上优化得过度。以及，在GPT-5.5的System Card报告里，GPT-5.5有29%的情况会撒谎说自己完成了不可能完成的编程任务，远高于GPT-5.4和5.3版本。
-
-> 📊 Level ⭐⭐ | 8.0KB | `entities/gpt-55-review.md`
-
-## GPT-5.5实测有点翻车。
-
-写完文章后，我已经拿Codex中的GPT-5.5测了不少长步骤的复杂任务：做动画、做PPT、做网站。
-
-我的感受是这是个非常无聊的学霸，会做题会尽量达成你布置的任务，但做出来的东西就是相当无聊。在指令相同，调用Skill相同的情况下，还是Opus4.7出来的东西更符合我审美。
-
-我猜可能是OpenAI真的在很努力跑分了，所以模型也在做题这事上优化得过度。以及，在GPT-5.5的System Card报告里，GPT-5.5有29%的情况会撒谎说自己完成了不可能完成的编程任务，远高于GPT-5.4和5.3版本。
+# GPT-5.5实测有点翻车。\n\n写完文章后，我已经拿Codex中的GPT-5.5测了不少长步骤的复杂任务：做动画、做PPT、做网站。\n\n我的感受是这是个非常无聊的学霸，会做题会尽量达成你布置的任务，但做出来的东西就是相当无聊。在指令相同，调用Skill相同的情况下，还是Opus4.7出来的东西更符合我审美。\n\n我猜可能是OpenAI真的在很努力跑分了，所以模型也在做题这事上优化得过度。以及，在GPT-5.5的System Card报告里，GPT-5.5有29%的情况会撒谎说自己完成了不可能完成的编程任务，远高于GPT-5.4和5.3版本。
 
 写完文章后，我已经拿Codex中的GPT-5.5测了不少长步骤的复杂任务：做动画、做PPT、做网站。
 我的感受是这是个非常无聊的学霸，会做题会尽量达成你布置的任务，但做出来的东西就是相当无聊。在指令相同，调用Skill相同的情况下，还是Opus4.7出来的东西更符合我审美。
 我猜可能是OpenAI真的在很努力跑分了，所以模型也在做题这事上优化得过度。以及，在GPT-5.5的System Card报告里，GPT-5.5有29%的情况会撒谎说自己完成了不可能完成的编程任务，远高于GPT-5.4和5.3版本。
 
 ## 相关实体
-- [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai/)
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](/ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价/)
-- [Yann Dubois Openai Post Training Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
-- [Openai Codex Super Computer Network Xinzhiyuan](/ch09-058-openai秘密矩阵曝光-codex将所有设备连成超级电脑/)
-- [Gpt54 Codex Interconnects](/ch01-508-gpt-5-4-codex-评测-interconnects-的-agent-使用体验/)
+- [Openai Gpt Realtime Voice Models Qbitai](../ch01-593-openai-gpt-realtime-voice-models-qbitai)
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](../ch01-514-gpt-5级推理能力塞进语音模型-openai把同传翻译成本砍穿地板价)
+- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
+- [Openai Codex Super Computer Network Xinzhiyuan](../ch09-058-openai秘密矩阵曝光-codex将所有设备连成超级电脑)
+- [Gpt54 Codex Interconnects](../ch01-508-gpt-5-4-codex-评测-interconnects-的-agent-使用体验)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-55实测有点翻车nn写完文章后我已经拿codex中的gpt-55测了不少长步骤的复杂任务做动画做ppt做网站nn我的感受是这是个非常无聊的学霸会做题会尽.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-55实测有点翻车nn写完文章后我已经拿codex中的gpt-55测了不少长步骤的复杂任务做动画做ppt做网站nn我的感受是这是个非常无聊的学霸会做题会尽.md)
 
-- [gpt -image 2神级提示词分享](/ch01-680-gpt-image-2神级提示词分享/)
+- [gpt -image 2神级提示词分享](../ch01-680-gpt-image-2神级提示词分享)
 
 ## 深度分析
 

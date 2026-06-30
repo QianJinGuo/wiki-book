@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/programbench-agent-benchmark.md`
 
-## ProgramBench: Benchmarking Programs, Not Prompts
+# ProgramBench: Benchmarking Programs, Not Prompts
 
 ## 深度分析
 
@@ -16,7 +16,7 @@
 
 **mini-SWE-agent 的框架设计哲学是"最小化混淆因素"。** 原文说明选择该框架的原因：被其他基准测试（SWE-bench Verified、SWE-bench Multilingual、Terminal-bench）广泛采用为基线，设计极简，最大限度减少模型能力与框架设计之间的混淆。另一个重要设计决策是"几乎无运行时限制"——模型是主动提交解决方案而非超过时间或步数限制，从未耗尽上下文窗口，但运行成本高达 $5,000（Sonnet 4.5）。这说明当前瓶颈确实是模型能力而非框架限制。
 
-**ProgramBench 的设计者明确表示它"可解"，但需要模型在架构设计能力上的质的飞跃。** 原文指出 Agent 可以运行给定程序并观察其行为，所有参考可执行文件都通过了测试套件，因此任务在设计上是可解的。但当前模型的主要障碍是：真正需要自主架构设计、无 harness 调优、无反编译手段。这与 Agent Evaluation Benchmark Frameworks 中关于 Agent 评估难度的讨论高度一致，也直接影响了 Production Agent Engineering 的可行性。
+**ProgramBench 的设计者明确表示它"可解"，但需要模型在架构设计能力上的质的飞跃。** 原文指出 Agent 可以运行给定程序并观察其行为，所有参考可执行文件都通过了测试套件，因此任务在设计上是可解的。但当前模型的主要障碍是：真正需要自主架构设计、无 harness 调优、无反编译手段。这与 [Agent Evaluation Benchmark Frameworks](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmark-frameworks.md) 中关于 Agent 评估难度的讨论高度一致，也直接影响了 [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) 的可行性。
 
 ## 实践启示
 
@@ -116,15 +116,15 @@ ProgramBench 的发布对 AI Agent 研究领域具有重要意义：
 
 ### 与 Harness Engineering 的关联
 
-ProgramBench 评估的场景与 [Harness Engineering Framework](/ch05-041-harness-engineering-概念框架/) 中描述的生产环境编程任务高度吻合。Agent 在这类任务中的局限性直接影响了  的可行性。
+ProgramBench 评估的场景与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中描述的生产环境编程任务高度吻合。Agent 在这类任务中的局限性直接影响了  的可行性。
 
 ## 参见
 
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](/ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践/) — Claude Opus 4.7 发布详情
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](/ch04-141-agenteval-yaml驱动的agent评测框架/) — 另一种 Agent 评估框架
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch01-347-opus-4-7-发布-相比-4-6-核心变化与-claude-code-搭配最佳实践) — Claude Opus 4.7 发布详情
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch04-141-agenteval-yaml驱动的agent评测框架) — 另一种 Agent 评估框架
 -  — Agent 评估基准框架综述
-- Autonomous Agent Systems — 自主 Agent 系统概念
-- Coding Harness Engineering — 编码 Harness 工程概念
+- [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统概念
+- [Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md) — 编码 Harness 工程概念
 
 ## 技术细节：反作弊与污染检测
 
@@ -152,7 +152,7 @@ ProgramBench 采取实质性预防措施确保评估的公正性：
 - **机构**：Meta Superintelligence Labs • Stanford University • Harvard University
 - **arXiv**：https://arxiv.org/abs/2605.03546
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/programbench-agent-benchmark.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/programbench-agent-benchmark.md)
 
 ---
 

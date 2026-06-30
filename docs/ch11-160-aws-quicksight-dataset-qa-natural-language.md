@@ -4,10 +4,10 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/aws-quicksight-dataset-qa-natural-language.md`
 
-## Introducing Dataset Q&A: Expanding natural language querying for structured datasets in Amazon Quick
+# Introducing Dataset Q&A: Expanding natural language querying for structured datasets in Amazon Quick
 Every BI team knows this bottleneck: a business user has a question that falls outside existing dashboards, so they file a ticket. An analyst writes the query, validates the results, and delivers them—hours or days later. Multiply that by hundreds of ad-hoc requests per month, and the backlog becomes the single biggest constraint on data team productivity.
-[Amazon Quick](/ch11-<https://aws.amazon.com/quick/>/) now adds a powerful new natural language query capability, _Dataset Q &A_, to remove this bottleneck. Your question is translated into SQL, run against the full dataset, and the results are returned in seconds—no row sampling, topic curation, or pre-configured calculated fields required.
-Quick already offers two natural language querying modes. [Dashboard Q&A](/ch11-<https://community.amazonquicksight.com/t/how-amazon-shipping-turns-questions-into-decisions-with-amazon-quick-chat-agent/51689>/) is intended for questions about data visualized in published dashboards, drawing on the business context that authors have built into each view. [Topic Q&A](/ch11-<https://community.amazonquicksight.com/t/amazon-quick-best-practices-for-amazon-quick-sight-topics/51683>/) goes further. Authors enrich the data model with business-friendly field names and synonyms, so users can query a curated set of fields in plain language. Dataset Q&A now completes the picture. Users can explore any dataset directly, going beyond what an author has pre-configured, while all the security, permissions, and governance that enterprises expect from Quick remain fully enforced.
+[Amazon Quick](../ch11-<https://aws.amazon.com/quick/>) now adds a powerful new natural language query capability, _Dataset Q &A_, to remove this bottleneck. Your question is translated into SQL, run against the full dataset, and the results are returned in seconds—no row sampling, topic curation, or pre-configured calculated fields required.
+Quick already offers two natural language querying modes. [Dashboard Q&A](../ch11-<https://community.amazonquicksight.com/t/how-amazon-shipping-turns-questions-into-decisions-with-amazon-quick-chat-agent/51689>) is intended for questions about data visualized in published dashboards, drawing on the business context that authors have built into each view. [Topic Q&A](../ch11-<https://community.amazonquicksight.com/t/amazon-quick-best-practices-for-amazon-quick-sight-topics/51683>) goes further. Authors enrich the data model with business-friendly field names and synonyms, so users can query a curated set of fields in plain language. Dataset Q&A now completes the picture. Users can explore any dataset directly, going beyond what an author has pre-configured, while all the security, permissions, and governance that enterprises expect from Quick remain fully enforced.
 While the industry has raced to ship text-to-SQL demos, the real challenge in enterprise BI has never been generating SQL. The challenge is grounding ambiguous business language against complex schemas, enforcing security at every step, and explaining what the system did and why. The agentic system of Quick is purpose-built for this. The model must resolve lexical ambiguity— _does "volume" mean row count, revenue, or units shipped?_ —and map colloquial business language to the precise column names and calculations in the dataset, without a predefined dictionary. Before any query runs, the system searches across all your structured assets (dashboards, datasets, and topics) using a semantic graph that understands how your assets relate to each other. This lets it find the right source even when your question doesn't use the exact name of a dataset or column. After the source is identified, the system peeks into the data for context like sample values and distributions and uses author-provided field descriptions and business context to disambiguate before using one of the three capabilities available for generating SQL.
 
 ## 深度分析
@@ -29,13 +29,13 @@ QuickSight Dataset Q&A 的核心价值在于重新定义了什么叫做"BI 数�
 4. **适用场景判断**：Dataset Q&A 最适合的场景是：数据模型相对规范、字段有基本描述、但业务用户无法提前预判所有分析需求的动态探索场景。如果你的团队已经有完善的语义层（Topic Q&A 的场景），或者分析边界非常固定（Dashboard Q&A 的场景），Dataset Q&A 的增量价值会显著下降。
 
 ## 相关实体
-- [Aws Quicksight Dataset Qa Tara Case](/ch11-154-aws-quicksight-dataset-qa-tara-case/)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](/ch11-177-cost-effective-deployment-of-vision-language-models-for-pet/)
-- [Natural Language Autoencoders](/ch01-896-natural-language-autoencoders-anthropic-激活-文字可解释性方法/)
-- [Anthropic Natural Language Autoencoders](/ch01-677-anthropic/)
-- [Datadog Pathfinding Labs Security](/ch11-075-pathfinding-labs-deploy-test-and-learn-from-100-intentio/)
+- [Aws Quicksight Dataset Qa Tara Case](../ch11-154-aws-quicksight-dataset-qa-tara-case)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](../ch11-177-cost-effective-deployment-of-vision-language-models-for-pet)
+- [Natural Language Autoencoders](../ch01-896-natural-language-autoencoders-anthropic-激活-文字可解释性方法)
+- [Anthropic Natural Language Autoencoders](../ch01-677-anthropic)
+- [Datadog Pathfinding Labs Security](../ch11-075-pathfinding-labs-deploy-test-and-learn-from-100-intentio)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-quicksight-dataset-qa-natural-language.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-quicksight-dataset-qa-natural-language.md)
 
 ---
 

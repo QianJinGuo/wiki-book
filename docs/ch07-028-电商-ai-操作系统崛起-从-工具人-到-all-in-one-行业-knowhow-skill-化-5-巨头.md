@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 10.1KB | `entities/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026.md`
 
-## 电商 AI 操作系统崛起：从「工具人」到「All in One」
+# 电商 AI 操作系统崛起：从「工具人」到「All in One」
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026.md)
+> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026.md)
 
 > **说明**：原文含 StoreClaw 产品案例展示段落。本文已对产品部分做批判性吸收，重点保留**行业趋势 + 5 巨头布局 + 案例数据 + Token 成本数据点**。
 
@@ -115,16 +115,16 @@ StoreClaw 预装几十个电商相关 Skills（Listing 优化/关键词研究/GE
 
 ## 关联引用
 
-→ [电商智能体设计实践 (AWS Bedrock AgentCore)](/ch11-059-快时尚电商行业智能体设计思路与应用实践-六-借助-amazon-bedrock-agentcore-mcp-server/) — AWS 技术栈视角
-→ [OpenClaw 电商平台应用场景](/ch11-133-openclaw-在电商平台的应用场景探索-亚马逊aws官方博客/) — OpenClaw 工具视角
-→ [快时尚电商语音系统 (AWS)](/ch11-114-快时尚电商行业智能体设计思路与应用实践-八-基于-websocket-的语音系统-nova-2-sonic-agent/) — 语音交互电商 Agent
-→ vivo AI 导购 — vivo 单品牌 AI 导购
-→ [Thrive 1 亿投资 Shopify AI](/ch01-086-thrive-capital-bets-100-million-on-shopify-s-ai-future/) — Shopify AI 战略投资
-→ [原文存档（本篇）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026.md)
+→ [电商智能体设计实践 (AWS Bedrock AgentCore)](../ch11-059-快时尚电商行业智能体设计思路与应用实践-六-借助-amazon-bedrock-agentcore-mcp-server) — AWS 技术栈视角
+→ [OpenClaw 电商平台应用场景](../ch11-133-openclaw-在电商平台的应用场景探索-亚马逊aws官方博客) — OpenClaw 工具视角
+→ [快时尚电商语音系统 (AWS)](../ch11-114-快时尚电商行业智能体设计思路与应用实践-八-基于-websocket-的语音系统-nova-2-sonic-agent) — 语音交互电商 Agent
+→ [vivo AI 导购](https://github.com/QianJinGuo/wiki/blob/main/entities/vivo-ai-sales-guide-ecommerce-agent.md) — vivo 单品牌 AI 导购
+→ [Thrive 1 亿投资 Shopify AI](../ch01-086-thrive-capital-bets-100-million-on-shopify-s-ai-future) — Shopify AI 战略投资
+→ [原文存档（本篇）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026.md)
 
 ## 相关实体
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

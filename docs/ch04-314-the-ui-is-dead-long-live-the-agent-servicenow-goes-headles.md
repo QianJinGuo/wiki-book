@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
+> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
 
 ## 核心要点
 - 来源：newsletter (kilo.ai/blog.kilo.ai)
 - 评分：v=7 × c=8 = 56 (strong)
 - 主要内容：The UI is dead, long live the agent: ServiceNow goes headless and opens its platform
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
 
 ## 深度分析
 **1. Action Fabric 本质是"工作流即资产"战略的开放化**
@@ -37,12 +37,12 @@ MCP 正在成为 Agent 集成的实际标准，但厂商实现差异很大。Ser
 ServiceNow 愿意接纳 Anthropic 等竞品 Agent 在其平台运行，反映了一种"平台优先"的自信战略。对企业客户而言，这意味着选择企业软件时，应优先考虑那些愿意开放自己执行层、而不是试图将客户锁在自己的 Agent 生态中的供应商。
 
 ## 相关实体
-- [The UI is dead, long live the agent: ServiceNow goes headless](/ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](/ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](/ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles/)
-- [Auto-Improving Agent Platform (Ashpreet Bedi)](/ch01-545-auto-improving-agent-platform-ashpreet-bedi/)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](/ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务/)
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](/ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务/)
+- [The UI is dead, long live the agent: ServiceNow goes headless](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04-453-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04-461-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles)
+- [Auto-Improving Agent Platform (Ashpreet Bedi)](../ch01-545-auto-improving-agent-platform-ashpreet-bedi)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch04-160-harness-engineering-让-coding-agent-可靠完成长程任务)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch09-076-harness-engineering-让-coding-agent-可靠完成长程任务)
 
 ---
 

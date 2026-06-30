@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.6KB | `entities/prompt-debugger-compare-templates-winty.md`
 
-## prompt-debugger-compare-templates-winty
+# prompt-debugger-compare-templates-winty
 
 Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对比的 A/B 测试"。
 1. 并排对比 — 同一个输入，两个 Prompt 的输出摆在一起看
@@ -13,15 +13,15 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 数据库设计：experiments 表（固定输入）下挂 experiment_runs 表（不同 Prompt/参数的结果），同一输入对比任意变体。
 
 ## 相关实体
-- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](/ch01-677-anthropic/)
-- [Claude Opus 47](/ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus/)
-- [Pi Mono Github](/ch01-608-pi-mono-github/)
-- [From Prompt To Harness Claude Official](/ch01-664-从-prompt-到-harness-claude-官方学习资料/)
-- [Aliyun Agentrun 2Line Integration](/ch04-003-agentrun/)
+- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](../ch01-677-anthropic)
+- [Claude Opus 47](../ch01-195-claude-opus-47-并不是一次全面升级甚至部分能力大幅衰退nn大家应该在合适的场景下选择使用nn昨晚-opus)
+- [Pi Mono Github](../ch01-608-pi-mono-github)
+- [From Prompt To Harness Claude Official](../ch01-664-从-prompt-到-harness-claude-官方学习资料)
+- [Aliyun Agentrun 2Line Integration](../ch04-003-agentrun)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/prompt-debugger-compare-templates-winty.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prompt-debugger-compare-templates-winty.md)
 
-- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](/ch01-570-openai发布新一代实时语音模型-能够像人说话一样进行推理-翻译和转录/)
+- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](../ch01-570-openai发布新一代实时语音模型-能够像人说话一样进行推理-翻译和转录)
 
 ## 深度分析
 
@@ -45,7 +45,7 @@ Temperature 配置应作为 Prompt 调试的必修步骤，而非凭经验随手
 
 对于团队协作场景，应指定专人负责 Prompt 评审，并将高分 Prompt 的调试过程（输入、变体、评分）作为团队知识沉淀。 Prompt 调试器的终极价值是让团队从"依赖少数人直觉"变为"依赖可追溯的数据积累"，实现 Prompt 能力的组织化传承。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/prompt-debugger-compare-templates-winty.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prompt-debugger-compare-templates-winty.md)
 
 ---
 

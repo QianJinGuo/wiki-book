@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/aws-bedrock-halliburton-seismic-workflow-genai.md`
 
-## Halliburton enhances seismic workflow creation with Amazon Bedrock and Generative AI
+# Halliburton enhances seismic workflow creation with Amazon Bedrock and Generative AI
 Seismic data analysis is an essential component of energy exploration, but configuring complex processing workflows has traditionally been a time-consuming and error-prone challenge. Halliburton's Seismic Engine, a cloud-native application for seismic data processing, is a powerful tool that previously required extensive manual configuration...
 (Halliburton Bedrock GenAI article content - 15,222 chars fetched from AWS)
 
 ## 相关实体
-- [Amazon Quick Research Agentic Multi Source Citation](/ch04-183-amazon-quick-research-agentic-multi-source-research-workflo/)
-- [Build Financial Document Processing With Pulse Ai And Amazon Bedrock](/ch11-130-build-financial-document-processing-with-pulse-ai-and-amazon/)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](/ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz/)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](/ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](/ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem/)
+- [Amazon Quick Research Agentic Multi Source Citation](../ch04-183-amazon-quick-research-agentic-multi-source-research-workflo)
+- [Build Financial Document Processing With Pulse Ai And Amazon Bedrock](../ch11-130-build-financial-document-processing-with-pulse-ai-and-amazon)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04-026-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch03-066-building-multi-tenant-agents-with-amazon-bedrock-agentcore)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01-495-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-bedrock-halliburton-seismic-workflow-genai.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-halliburton-seismic-workflow-genai.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
 ## 深度分析
 
 Halliburton 将 Amazon Bedrock 上的生成式 AI 能力集成到其 Seismic Engine 中，标志着能源行业油气勘探工作流自动化的重要进展。传统的地震数据处理流程需要地球物理工程师手动编写大量参数配置，不仅耗时且容易因人为失误导致数据处理质量不稳定。通过引入生成式 AI，Halliburton 能够将自然语言描述的勘探需求自动转换为复杂的处理管线配置，大幅降低了专业门槛的同时提升了工作流的构建效率。这一实践表明，生成式 AI 在工业级专业工具中的应用已从实验阶段进入生产级部署。

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 22.0KB | `entities/ai-coding-guide-tmall-deep-dive.md`
 
-## 天猫新品营销技术团队AI编码实战指南
+# 天猫新品营销技术团队AI编码实战指南
 
 本指南是基于天猫新品团队实践经验的全面AI辅助编码实战手册，从问题本质到解决方案，从理论框架到实战案例，系统性介绍如何让AI更好地完成大部分编码需求。
 
@@ -381,14 +381,14 @@ AI编码过程中，有个比较重要的关注点是在保证迭代成功率的
 ---
 
 ## 相关实体
-- [Karpathy Claude Md Rules](/ch01-207-claude-md/)
-- [Ai Memory Architecture Deep Dive](/ch09-012-ai-coding-guide-tmall-deep-dive/)
-- [Tmall Ai Coding Practice Team Knowledge Base](/ch09-066-tmall-ai-coding-practice-team-knowledge-base/)
-- [Tmall Ai Coding Practice Team Knowledge Base Npm](/ch09-066-tmall-ai-coding-practice-team-knowledge-base/)
-- [Pi Openclaw Coding Harness](/ch05-032-coding-harness-工程本质-从-pi-到-openclaw/)
-- MOC
+- [Karpathy Claude Md Rules](../ch01-207-claude-md)
+- [Ai Memory Architecture Deep Dive](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-memory-architecture-deep-dive.md)
+- [Tmall Ai Coding Practice Team Knowledge Base](../ch09-066-tmall-ai-coding-practice-team-knowledge-base)
+- [Tmall Ai Coding Practice Team Knowledge Base Npm](../ch09-066-tmall-ai-coding-practice-team-knowledge-base)
+- [Pi Openclaw Coding Harness](../ch05-032-coding-harness-工程本质-从-pi-到-openclaw)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-coding-guide-tmall-deep-dive.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-coding-guide-tmall-deep-dive.md)
 
 ---
 

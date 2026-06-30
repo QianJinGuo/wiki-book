@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/sunilpai.md`
 
-## never waste a token
+# never waste a token
 
 > **背景**：从 newsletter candidates 提取，2026-06-18 v×c=56 stars=4 通过评分门槛。
 > URL: https://sunilpai.dev/posts/never-waste-a-token/
@@ -64,7 +64,7 @@ when a request comes in, the buffer does three things in order. it resets its st
 
 ## 相关
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sunilpai.md)
+- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sunilpai.md)
 
 ---
 

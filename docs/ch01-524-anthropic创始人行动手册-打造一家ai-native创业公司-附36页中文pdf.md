@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/anthropic-founder-playbook-ai-native-startup.md`
 
-## Anthropic创始人行动手册：打造一家AI-Native创业公司（附36页中文PDF）
+# Anthropic创始人行动手册：打造一家AI-Native创业公司（附36页中文PDF）
 
 The Founder's Playbook
 这本《创始人行动手册》是 Anthropic上周发布的官方手册，原版 36 页。从Anthropic产品两天一小版，每周一大版的更新节奏来说，我觉得他们是这个时代最AI Native的大公司了。这本手册里融入了不少他们内部的经验以及他们所服务的最先进的AI native初创公司的做法。看完之后觉得它把AI 时代怎么创业这件事讲得还挺清楚的。
@@ -14,13 +14,13 @@ The Founder's Playbook
 **本译本仅供个人学习与内部研究使用，不做商业发行。**原版下载请到 claude.com/blog/the-founders-playbook。
 
 ## 相关实体
-- [Introducing Claude Platform On Aws](/ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf/)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](/ch01-677-anthropic/)
-- [Anthropic Pm Jess Yan Managed Agents](/ch01-677-anthropic/)
-- [Anthropic Claude Managed Agents Platform 2026](/ch01-677-anthropic/)
-- [Claude Code Hackathon Winners 2026](/ch01-772-claude-code-hackathon-winners-2026/)
+- [Introducing Claude Platform On Aws](../ch01-126-introducing-claude-platform-on-aws-anthropic-s-native-platf)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](../ch01-677-anthropic)
+- [Anthropic Pm Jess Yan Managed Agents](../ch01-677-anthropic)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01-677-anthropic)
+- [Claude Code Hackathon Winners 2026](../ch01-772-claude-code-hackathon-winners-2026)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-founder-playbook-ai-native-startup.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-founder-playbook-ai-native-startup.md)
 
 ## 深度分析
 

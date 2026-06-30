@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/bedrock-image-content-precise-analysis.md`
 
-## 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）
+# 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）
 
 > **Background**: 某出行企业租车业务需自动识别车辆剩余油量计算差价。直接用 VL 大模型（含 Nova、Qwen）微调效果差（60-70% 准确率），改用 Amazon Rekognition 自定义标签定位 + VL 模型定量的两阶段方案。
 
@@ -57,15 +57,15 @@
 - 误识别时的安全回退（人工复核）
 
 ## 相关实体
-- [Aws Bedrock Serverless Async Inference Multimodal](/ch01-272-multimodal/)
-- [Verizon Connect Agentic Ai 100K Users](/ch04-097-verizon-connect-agentic-ai-10万用户规模的工程实践/)
-- [Deepseek Vision Primitives](/ch01-863-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度/)
-- [Agentcore Harness](/ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施/)
-- [Aws Bedrock Ops Alert](/ch11-093-amazon-bedrock-ops-alert-三层监控架构/)
+- [Aws Bedrock Serverless Async Inference Multimodal](../ch01-272-multimodal)
+- [Verizon Connect Agentic Ai 100K Users](../ch04-097-verizon-connect-agentic-ai-10万用户规模的工程实践)
+- [Deepseek Vision Primitives](../ch01-863-deepseek视觉原语论文-当所有人在堆图像分辨率时-它在堆-指代精度)
+- [Agentcore Harness](../ch04-408-amazon-bedrock-agentcore-harness-ga-两-api-调用生产级-agent-基础设施)
+- [Aws Bedrock Ops Alert](../ch11-093-amazon-bedrock-ops-alert-三层监控架构)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/bedrock-image-content-precise-analysis.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bedrock-image-content-precise-analysis.md)
 
-- MOC
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 
 ### 两阶段管道的设计哲学：任务解耦

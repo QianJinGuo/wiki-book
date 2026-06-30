@@ -4,21 +4,21 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/aws-hapag-lloyd-bedrock-customer-feedback.md`
 
-## How Hapag-Lloyd uses Amazon Bedrock to transform customer feedback into actionable insights
-[Hapag-Lloyd](/ch11-<https://www.hapag-lloyd.com/en/home.html>/) stands as one of the world's leading liner shipping companies, operating a modern fleet of 313 container ships with a total transport capacity of 2.5 million TEU (Twenty-foot Equivalent Unit—a standard unit of measurement for cargo capacity in container shipping). The company maintains a container capacity of 3.7 million TEU, which includes one of the industry's largest and most modern fleets of reefer containers. With approximately 14,000 employees in the Liner Shipping Segment and more than 400 offices spread across 140 countries, Hapag-Lloyd maintains a robust global presence. Through 133 liner services worldwide, we facilitate reliable connections between more than 600 ports across the continents.
+# How Hapag-Lloyd uses Amazon Bedrock to transform customer feedback into actionable insights
+[Hapag-Lloyd](../ch11-<https://www.hapag-lloyd.com/en/home.html>) stands as one of the world's leading liner shipping companies, operating a modern fleet of 313 container ships with a total transport capacity of 2.5 million TEU (Twenty-foot Equivalent Unit—a standard unit of measurement for cargo capacity in container shipping). The company maintains a container capacity of 3.7 million TEU, which includes one of the industry's largest and most modern fleets of reefer containers. With approximately 14,000 employees in the Liner Shipping Segment and more than 400 offices spread across 140 countries, Hapag-Lloyd maintains a robust global presence. Through 133 liner services worldwide, we facilitate reliable connections between more than 600 ports across the continents.
 The company's Digital Customer Experience and Engineering team, distributed between Hamburg and Gdańsk, drives digital innovation by developing and maintaining customer-facing web and mobile products.
 Over the past years, the Digital Customer Experience and Engineering team has evolved from a delivery-focused channel into a true digital product driver, with strong customer focus, engineering excellence, and measurable business impact. We take end-to-end ownership of our digital products, combining customer-centric innovation with engineering craft to directly support growth and business outcomes. Building on a modern, independently owned tech stack and a high level of engineering maturity, we are committed to staying at the forefront of technology. Now, we are taking the next step by moving toward becoming AI-native, investing heavily in artificial intelligence as a core capability. This journey is about amplifying powerful engineering with AI to build smarter products, faster innovation, and greater customer value.
 
 ## **Understanding user impact.**
 
 ## 相关实体
-- [Aws Bedrock Agentcore Quality Optimization Flywheel](/ch11-118-aws-bedrock-agentcore-quality-optimization-flywheel/)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/)
-- [Aws Bedrock Serverless Async Inference Sqs Lambda](/ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda/)
-- [Aws Bedrock Multi Agent Collaboration Guide](/ch11-008-aws-bedrock-多智能体协作指南/)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](/ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2/)
+- [Aws Bedrock Agentcore Quality Optimization Flywheel](../ch11-118-aws-bedrock-agentcore-quality-optimization-flywheel)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多)
+- [Aws Bedrock Serverless Async Inference Sqs Lambda](../ch11-084-aws-bedrock-serverless-async-inference-sqs-lambda)
+- [Aws Bedrock Multi Agent Collaboration Guide](../ch11-008-aws-bedrock-多智能体协作指南)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch11-045-aws-一周综述-amazon-bedrock-agentcore-付款-适用于-aws-的-agent-工具套件等-2)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-hapag-lloyd-bedrock-customer-feedback.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-hapag-lloyd-bedrock-customer-feedback.md)
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 20.0KB | `entities/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md`
 
-## StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚
+# StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚
 
 ## Overview
 
@@ -31,15 +31,15 @@
 **新增 `wsh` / `wcp`**，让 WebTerminal 像 SSH/SCP 一样用：
 
 ```bash
-## 浏览器登录一次，后续复用 cookie cache
+# 浏览器登录一次，后续复用 cookie cache
 ./bin/wt auth login --target-ip x.y.z.w
-## 黑屏进 shell
+# 黑屏进 shell
 ./bin/wsh x.y.z.w
-## 远程命令执行
+# 远程命令执行
 ./bin/wsh x.y.z.w -- 'hostname; pwd'
-## 上传
+# 上传
 ./bin/wcp /tmp/x.txt x.y.z.w:/tmp/x.txt --force
-## 下载
+# 下载
 ./bin/wcp x.y.z.w:/tmp/x.txt /tmp/x.down.txt --force
 ```
 
@@ -76,9 +76,7 @@
 `wt run` 在远端命令后追加**唯一 marker** 识别完成：
 
 ```bash
-printf '
-__WT_DONE___:%s
-' "$?"
+printf '\n__WT_DONE___:%s\n' "$?"
 ```
 
 > 这比单纯依赖 prompt 更稳，因为远端 prompt 可能被用户配置、conda 环境、容器 shell、颜色控制字符影响。
@@ -240,11 +238,11 @@ Program terminated with signal SIGSEGV, Segmentation fault.
 
 本文是 **"Agent 远程执行能力"** 的工程化实现：
 
-- [CLI / MCP / SDK 选型](/ch07-053-cli系列④-选型cli-mcp还是api/) — 工具原语选择（理论层）
-- [AgentCore OpenClaw 多租户](/ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多/) — AWS 视角的远程 Agent
-- [OpenClaw Security 部署](/ch11-090-企业级openclaw安全部署架构指南-亚马逊aws官方博客/) — OpenClaw 安全部署
-- [DIPG](/ch05-075-dipg-蚂蚁保-host-research-verify-三-agent-离线-verify-闭环-c-端-aigc/) — 蚂蚁保险 verify 闭环（也是 Agent 远程任务）
-- [250 行 CLI Agent 教程](/ch04-075-ai-agent-的内核是-250-行-while-循环-用-python-ollama-从零搭建-cli-agen/) — minimal 教学
+- [CLI / MCP / SDK 选型](../ch07-053-cli系列④-选型cli-mcp还是api) — 工具原语选择（理论层）
+- [AgentCore OpenClaw 多租户](../ch11-012-基于-aws-示例项目-展示如何将-openclaw-迁移为基于-amazon-bedrock-agentcore-的多) — AWS 视角的远程 Agent
+- [OpenClaw Security 部署](../ch11-090-企业级openclaw安全部署架构指南-亚马逊aws官方博客) — OpenClaw 安全部署
+- [DIPG](../ch05-075-dipg-蚂蚁保-host-research-verify-三-agent-离线-verify-闭环-c-端-aigc) — 蚂蚁保险 verify 闭环（也是 Agent 远程任务）
+- [250 行 CLI Agent 教程](../ch04-075-ai-agent-的内核是-250-行-while-循环-用-python-ollama-从零搭建-cli-agen) — minimal 教学
 
 本文的独特贡献：
 - **WebTerminal 而非 SSH**——企业内部治理链路的现实选择
@@ -256,7 +254,7 @@ Program terminated with signal SIGSEGV, Segmentation fault.
 
 阿里基础设施团队招 AI 推理 + 高性能计算方向（LLM 推理系统工程、GPU/异构计算、性能研发、多模态推理引擎）。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md)
 
 ## 深度分析
 

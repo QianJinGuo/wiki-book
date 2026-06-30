@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 12.5KB | `entities/qwen-image-flash-beyond-objective-design.md`
 
-## Qwen-Image-Flash: Beyond Objective Design
+# Qwen-Image-Flash: Beyond Objective Design
 
 > **Background**: This is an arxiv 2606.03746 (cs.CV) paper from the Qwen team (Tianhe Wu et al., 23 authors, Alibaba). Submitted 2026-06-02, v2 on 2026-06-03. It introduces a few-step distillation methodology for the Qwen-Image-2.0 unified text-to-image + instruction-guided image editing model, producing a 4-NFE student called Qwen-Image-Flash. The paper's central message is that the **training recipe** (data composition, teacher guidance, task mixture) matters as much as the distillation objective — a contribution to the broader few-step visual generation literature where prior work focused almost exclusively on objective design (DMD, consistency, adversarial, distribution matching).
 
@@ -68,12 +68,12 @@ The central message — "recipe matters as much as objective" — generalizes be
 The Qwen-Image-Flash paper is best read as a case study of a **recipe-first** approach to distillation, applicable wherever a multi-step teacher is being compressed into a few-step student.
 
 ## 相关实体
-- [Aws Sun Finance Ai Id Extraction Fraud Detection](/ch04-345-aws-sagemaker-ai-agent-guided-workflows-finetuning/)
-- [Trackingtamperedchefclustersviacertificateandcodereuse](/ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus/)
-- [Bonsai Image 4B 1 Bit Ternary](/ch01-819-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat/)
-- [Liteframeefficientvisionencodersunlockframescalinginvideollms](/ch01-890-liteframe-efficient-vision-encoders-unlock-frame-scaling-in/)
-- [Agentexecutorgooglesdistributedagentruntime](/ch04-003-agentrun/)
-- count anything - 文本引导的通用目标计数框架
+- [Aws Sun Finance Ai Id Extraction Fraud Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sun-finance-ai-id-extraction-fraud-detection.md)
+- [Trackingtamperedchefclustersviacertificateandcodereuse](../ch01-331-tracking-tamperedchef-clusters-via-certificate-and-code-reus)
+- [Bonsai Image 4B 1 Bit Ternary](https://github.com/QianJinGuo/wiki/blob/main/entities/bonsai-image-4b-1-bit-ternary.md)
+- [Liteframeefficientvisionencodersunlockframescalinginvideollms](../ch01-890-liteframe-efficient-vision-encoders-unlock-frame-scaling-in)
+- [Agentexecutorgooglesdistributedagentruntime](../ch04-003-agentrun)
+- [count anything - 文本引导的通用目标计数框架](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2605-30846-count-anything-2026.md)
 
 ## 关键引用
 
@@ -84,7 +84,7 @@ The Qwen-Image-Flash paper is best read as a case study of a **recipe-first** ap
 - **Related unified image generation references** from the paper: song2026awaking, liu2026ernieimagetechnicalreport, mao2026wan
 - **T2I-Bench** and **GEdit-Bench** as evaluation benchmarks
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/qwen-image-flash-beyond-objective-design.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/qwen-image-flash-beyond-objective-design.md)
 
 ## 深度分析
 

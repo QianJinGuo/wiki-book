@@ -4,20 +4,20 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/skillx-zhejiang-university-hyman.md`
 
-## 浙大开源SkillX：全自动构建Agent技能知识库，即插即用提升10%性能
+# 浙大开源SkillX：全自动构建Agent技能知识库，即插即用提升10%性能
 浙江大学ZJUNLP团队提出SkillX框架，从Agent执行轨迹中自动提炼「规划-功能-原子」三级技能知识库，插到弱模型上直接提升约10%任务成功率，且跨环境可复用。LLM Agent已能完成API调用、网页导航、数据分析等复杂长程任务。但绝大多数Agent每次接到新任务都从零开始，依赖即时推理或少量示例，既昂贵又脆弱。
 
 - **孤立学习**：每个Agent独立探索，提取相似经验，大量重复劳动
 - **泛化能力弱**：高质量训练数据稀缺，技能难以迁移到新任务
 
 ## 相关实体
-- [我用 Skillmd 做了一个简历生成器](/ch07-047-我用-skill-md-做了一个简历生成器/)
-- [Claude Code Search Architecture Tencent 2026](/ch01-537-原始文章存档/)
-- [Skill Engineering Ai As Algorithm](/ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程/)
-- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](/ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti/)
-- [Hermes Agent Getting Started Guide 2026](/ch04-418-hermes-agent/)
+- [我用 Skillmd 做了一个简历生成器](../ch07-047-我用-skill-md-做了一个简历生成器)
+- [Claude Code Search Architecture Tencent 2026](../ch01-537-原始文章存档)
+- [Skill Engineering Ai As Algorithm](../ch07-056-当我把ai变成一个-算法-skill工程化设计的心路历程)
+- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](../ch01-499-llm-wiki-obsidian-wiki-gbrain-self-organization-self-evoluti)
+- [Hermes Agent Getting Started Guide 2026](../ch04-418-hermes-agent)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillx-zhejiang-university-hyman.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillx-zhejiang-university-hyman.md)
 
 ## 深度分析
 

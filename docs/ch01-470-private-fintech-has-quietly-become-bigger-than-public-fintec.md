@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/private-fintech-has-quietly-become-bigger-than-public-fintec.md`
 
-## Private Fintech Has Quietly Become Bigger Than Public Fintech. Now What?
+# Private Fintech Has Quietly Become Bigger Than Public Fintech. Now What?
 
 ## 摘要
 
 Blue Dot Investors 与 FT Partners 联合发布的报告显示，全球前 100 家私人金融科技公司总估值达 1.9 万亿美元，是过去 20 年成立的前 100 家上市金融科技公司市值总和的近 3 倍，且营收高出约 10%。 这一数据标志着金融科技行业正在经历根本性的结构转变：IPO 不再是终极目标，私人市场本身已成为目的地。2025 年金融科技二级市场交易量同比增长 4 倍，暗示围绕长期私人持有的流动性基础设施正在快速成型。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/private-fintech-has-quietly-become-bigger-than-public-fintec.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/private-fintech-has-quietly-become-bigger-than-public-fintec.md)
 
 ## 核心要点
 

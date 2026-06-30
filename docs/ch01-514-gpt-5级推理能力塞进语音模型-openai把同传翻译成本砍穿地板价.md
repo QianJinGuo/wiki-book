@@ -4,16 +4,16 @@
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md`
 
-## GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价
+# GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价
 
 ## 相关实体
-- [Openai Gpt Realtime Voice Models Qbitai](/ch01-593-openai-gpt-realtime-voice-models-qbitai/)
-- [Gpt 55实测有点翻车Nn写完文章后我已经拿Codex中的Gpt 55测了不少长步骤的复杂任务做动画做Ppt做网站Nn我的感受是这是个非常无聊的学霸会做题会尽](/ch01-448-gpt-5-5实测有点翻车-n-n写完文章后-我已经拿codex中的gpt-5-5测了不少长步骤的复杂任务-做动画-做/)
-- [Yann Dubois Openai Post Training Interview](/ch01-374-yann-dubois-matt-turck-openai-后训练与强化学习的内部视角/)
-- [Gpt 5 Is Here And Openai Has Some Tips](/ch01-489-gpt-5-is-here-and-openai-has-some-tips/)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](/ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l/)
+- [Openai Gpt Realtime Voice Models Qbitai](../ch01-593-openai-gpt-realtime-voice-models-qbitai)
+- [Gpt 55实测有点翻车Nn写完文章后我已经拿Codex中的Gpt 55测了不少长步骤的复杂任务做动画做Ppt做网站Nn我的感受是这是个非常无聊的学霸会做题会尽](../ch01-448-gpt-5-5实测有点翻车-n-n写完文章后-我已经拿codex中的gpt-5-5测了不少长步骤的复杂任务-做动画-做)
+- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
+- [Gpt 5 Is Here And Openai Has Some Tips](../ch01-489-gpt-5-is-here-and-openai-has-some-tips)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](../ch01-100-useful-memories-become-faulty-when-continuously-updated-by-l)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
 
 ## 深度分析
 
@@ -49,7 +49,7 @@ GPT-Realtime-2 引入了推理强度5档调节机制（minimal、low、medium、
 
 5. **人工同传的价值向上迁移**：基础、高频、标准化的翻译需求会被 API 大规模吞掉，但文化语境、创意表达、法律精确性等需要深度理解的内容仍需要人类专家 。同传从业者应向这些高附加值场景迁移，而不是与 API 竞争标准化翻译市场。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
 
 ---
 

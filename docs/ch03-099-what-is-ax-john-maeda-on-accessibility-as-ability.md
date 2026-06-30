@@ -4,9 +4,9 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/2026-06-11-what-is-ax.md`
 
-## What is AX? John Maeda on Accessibility as Ability
+# What is AX? John Maeda on Accessibility as Ability
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-06-11-what-is-ax.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-06-11-what-is-ax.md)
 
 ## 摘要
 
@@ -76,10 +76,10 @@ Maeda 引用了 Erika Hall 2018 年《Conversational Design》中的观点：没
 
 ## 相关实体
 
-- [Context Engineering](/ch04-403-agentic-ai-infrastructure-practice-series-9-context-enginee/)
-- [Claude Code HTML Artifact Workflow](/ch01-523-claude-code-html-artifact-workflow-ifanr-analysis/)
-- [Claude Dispatch and the Power of Interfaces](/ch01-423-claude-dispatch-and-the-power-of-interfaces/)
-- [MOC: Coding Agent Practice](/ch05-026-mac-multi-agent-coding-skills-hooks-两层-harness-完全委托-0/)
+- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
+- [Claude Code HTML Artifact Workflow](../ch01-523-claude-code-html-artifact-workflow-ifanr-analysis)
+- [Claude Dispatch and the Power of Interfaces](../ch01-423-claude-dispatch-and-the-power-of-interfaces)
+- [MOC: Coding Agent Practice](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---
 
