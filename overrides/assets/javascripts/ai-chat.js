@@ -5,7 +5,7 @@
 (function() {
   "use strict";
 
-  var PROXY_URL = "https://ai-chat-proxy.jinguo.workers.dev";
+  var PROXY_URL = "/ai-proxy";
 
   // ========== Provider 配置 ==========
   var PRESETS = [
