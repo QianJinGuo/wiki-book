@@ -4,3 +4,6 @@ pages_build_output_dir = "./site"
 [[r2_buckets]]
 binding = "SEARCH_INDEX"
 bucket_name = "ai-engineering-search"
+
+[ai]
+binding = "AI"
