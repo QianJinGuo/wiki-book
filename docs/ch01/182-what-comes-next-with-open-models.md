@@ -159,7 +159,7 @@ The path forward for open models is to solve different problems than the frontie
 
 文章揭示了 AI 系统设计中一个核心矛盾：闭源模型能够实现从芯片到用户界面的全栈垂直整合，而开源模型必须适配多样化的推理环境、工具链和使用场景。这种结构性劣势在 Agent 时代被进一步放大——当模型的能力越来越依赖于与外部工具和环境的深度集成时，开放权重本身的战略价值相对下降 。
 
-然而，这个分析也指向了一个反向可能性：如果 AI 系统的能力越来越分布在权重、工具和 Harness 三个层面，而权重只占其中一部分，那么"开放"的概念本身可能需要重新定义。真正有价值的开放可能不是权重开放，而是**工具和 Harness 层的开源**——这与 [Interconnects 对开放生态系统的观察](ch01/215-latest-open-artifacts-20-new-orgs-new-types-of-models.md) 高度一致。
+然而，这个分析也指向了一个反向可能性：如果 AI 系统的能力越来越分布在权重、工具和 Harness 三个层面，而权重只占其中一部分，那么"开放"的概念本身可能需要重新定义。真正有价值的开放可能不是权重开放，而是**工具和 Harness 层的开源**——这与 [Interconnects 对开放生态系统的观察](ch01/214-latest-open-artifacts-20-new-orgs-new-types-of-models.md) 高度一致。
 
 ### 生态构建 vs. 单点突破
 

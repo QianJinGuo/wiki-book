@@ -333,9 +333,9 @@ AI 自动摘要/标签/关联减少人工操作，但最终判断（哪些关联
 ## 相关实体
 - [Obsidian Claude Code Integration Guide](ch09/099-obsidian-claude-code-integration-guide.md)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/073-claude-code.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/310-ai.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/073-claude-code.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](ch04/310-ai.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](ch04/150-ai.md)
 
 ---
 

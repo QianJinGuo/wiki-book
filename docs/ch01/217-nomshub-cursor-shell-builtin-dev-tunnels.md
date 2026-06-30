@@ -169,9 +169,9 @@ AI coding assistant 处理 repository 内容（README、代码注释、commit me
 
 ## 相关阅读
 
-- [Microsoft MXC](ch04/310-ai.md) — 微软自家跨 OS 沙箱，提供 kernel 隔离，可作 NomShub 的防御侧
-- [CrewAI 三步防护](ch04/310-ai.md) — 应用层 guardrail 视角
-- [AI Tool Poisoning](ch04/310-ai.md) — 工具被污染的通用风险
+- [Microsoft MXC](ch04/150-ai.md) — 微软自家跨 OS 沙箱，提供 kernel 隔离，可作 NomShub 的防御侧
+- [CrewAI 三步防护](ch04/150-ai.md) — 应用层 guardrail 视角
+- [AI Tool Poisoning](ch04/150-ai.md) — 工具被污染的通用风险
 - [Microsoft RAMPART/Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — 微软同源栈，检测类似 agent 行为
 - **LotL Attack** — Living-Off-The-Land 在 AI agent 时代的演化
 

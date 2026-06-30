@@ -1,6 +1,6 @@
-# gemma 4 multi token prediction drafters
+# Gemma 4 Multi Token Prediction Drafters
 
-## Ch01.225 gemma 4 multi token prediction drafters
+## Ch01.225 Gemma 4 Multi Token Prediction Drafters
 
 > 📊 Level ⭐⭐ | 17.0KB | `entities/gemma-4-multi-token-prediction-drafters.md`
 

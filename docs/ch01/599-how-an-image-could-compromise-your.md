@@ -34,9 +34,9 @@ CVE-2026-3102 是一次典型的 command injection（命令注入）漏洞，但
 
 ## 相关实体
 - [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](https://github.com/QianJinGuo/wiki/blob/main/entities/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md)
-- [Detect Ai Agent Traffic](ch04/310-ai.md)
-- [Github Investigating Teampcp Claimed 17Cc77](ch04/310-ai.md)
-- [Detect Ai Agents Website](ch04/310-ai.md)
+- [Detect Ai Agent Traffic](ch04/150-ai.md)
+- [Github Investigating Teampcp Claimed 17Cc77](ch04/150-ai.md)
+- [Detect Ai Agents Website](ch04/150-ai.md)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch04/245-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/exiftool-compromise-mac-592994.md)

@@ -74,7 +74,7 @@ Karpathy 课程的传播数据（640万播放、HN 讨论热度）是 LLM 行业
 ## 相关实体
 - [Karpathy Vibe Engineering Silicon Era Jiangtao](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-engineering-silicon-era-jiangtao.md)
 - [Karpathy Llm Wiki V2 2026](ch01/284-karpathy-llm-wiki-v2-2026.md)
-- [Llm Wiki Architecture Karpathy Markdown Knowledge Base](ch01/890-llm.md)
+- [Llm Wiki Architecture Karpathy Markdown Knowledge Base](ch01/605-markdown.md)
 - [Karpathy Vibe Coding Agentic Engineering V3](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [Llm Wiki Architecture](ch01/890-llm.md)
 
