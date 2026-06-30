@@ -61,10 +61,10 @@
 ## 相关实体
 - [Skill.md 简历生成器 Resume Forge](ch04/245-skill.md)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/245-skill.md)
-- [Hermes Agent](ch03/086-hermes-agent.md)
+- [Hermes Agent](ch03/087-hermes-agent.md)
 - [Qoder Skills 完全指南](ch04/245-skill.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/245-skill.md)
 - [SkillClaw](ch04/245-skill.md)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/245-skill.md)

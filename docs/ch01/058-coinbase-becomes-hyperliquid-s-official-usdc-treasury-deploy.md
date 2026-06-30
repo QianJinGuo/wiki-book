@@ -50,11 +50,11 @@ Circle 同时承担技术部署者角色并积极囤积 HYPE 代币，显示出�
 ### 对交易员和投资者而言
 HYPE 的即时暴涨说明 Coinbase 入场对代币价格具有显著的信号意义。但需注意，这种短期涨幅往往包含大量情绪成分，协议实际收益的改善需要时间验证。关注 AQAv2 收益分享机制的落地情况及 USDC 在 Hyperliquid 上的实际流动性指标，是评估后续价值的重要依据。
 ## 相关实体
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md)
-- [Why Im Leaving Github For Forgejo](https://github.com/QianJinGuo/wiki/blob/main/entities/why-im-leaving-github-for-forgejo.md)
-- [From Doer To Director The Ai Mindset Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
-- [Anthropic Puts Claude Agents On A Meter Across Its](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-puts-claude-agents-on-a-meter-across-its.md)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki/blob/main/entities/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch04/150-ai.md)
+- [Why Im Leaving Github For Forgejo](ch01/688-github.md)
+- [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
+- [Anthropic Puts Claude Agents On A Meter Across Its](ch04/503-agent.md)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md)
 

@@ -52,10 +52,10 @@
 6. **开源工具链可行性**：整个链路（Docker + Ollama + n8n + Qdrant + Ghidra）均可免费搭建，对于资源有限的独立安全研究员具有较高的参考价值。
 ## 相关实体
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/310-ai.md)
-- [Amazon Quick Research Agentic Multi Source Citation](ch09/117-amazon-quick.md)
-- [Building Web Search Enabled Agents With Strands And Exa](ch04/376-building-web-search-enabled-agents-with-strands-and-exa.md)
+- [Amazon Quick Research Agentic Multi Source Citation](ch11/195-amazon-quick.md)
+- [Building Web Search Enabled Agents With Strands And Exa](ch04/379-building-web-search-enabled-agents-with-strands-and-exa.md)
 - [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/890-llm.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/506-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ghostbyt3-github-io-blog-nday-research-ai.md)
 

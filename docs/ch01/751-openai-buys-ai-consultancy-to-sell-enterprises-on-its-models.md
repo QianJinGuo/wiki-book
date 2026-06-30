@@ -33,7 +33,7 @@ TOPICS
 - [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5238213.md)
 
 ## 相关实体
-- [OpenAI buys AI consultancy to sell enterprises on its models](ch01/699-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.md)
+- [OpenAI buys AI consultancy to sell enterprises on its models](ch01/861-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.md)
 
 ## 深度分析
 OpenAI 收购 Tomoro 并成立"OpenAI Deployment Company"，这笔交易揭示了 AI 商业化的关键瓶颈——**模型能力与企业实际落地之间存在巨大鸿沟**。GPT-5.5 定价翻倍（输入 $5/1M tokens，输出 $30/1M tokens），企业即便有钱也未必能用出价值。   

@@ -13,12 +13,12 @@
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/073-claude-code.md)
 - [Build An Enterprise Observability Solution For Amazon Quick](ch11/020-build-an-enterprise-observability-solution-for-amazon-quick.md)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/073-claude-code.md)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch09/117-amazon-quick.md)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/195-amazon-quick.md)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch04/503-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prompting-amazon-nova-2-for-content-moderation.md)
 
-- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](ch01/508-garry-tan.md)
+- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](ch01/510-garry-tan.md)
 
 ## 深度分析
 ### AILuminate 分类体系：12 类危害Taxonomy

@@ -43,19 +43,19 @@ Harness Engineering 方法论，让 Coding Agent 能够可靠地完成长程任�
 5. **建立可量化的完成标准并程序化校验**：能用脚本判定的绝不交给 Agent（如 TypeScript 编译通过、构建成功、单元测试通过），程序化校验零 Token 消耗、结果完全确定、可以无限次重复执行 。
 
 ## 相关文章
-- → [Agent Harness Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
-- → [Qoder Skills Complete Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skills-complete-guide.md)
+- → [Agent Harness Architecture](ch04/503-agent.md)
+- → [Qoder Skills Complete Guide](ch04/245-skill.md)
 - → [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 ---
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)
 
 ## 相关实体
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-long-term-agent-tasks.md)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md)
-- [Agent生产级Harness工程指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-production-harness-engineering.md)
-- [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/agent架构关键变化harness正在成为新后端.md)
-- [Agent Harness 组件解析](https://github.com/QianJinGuo/wiki/blob/main/entities/langchain-anatomy-agent-harness.md)
-- [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
+- [Agent生产级Harness工程指南](ch04/503-agent.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
+- [Agent Harness 组件解析](ch04/150-ai.md)
+- [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/015-harness.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

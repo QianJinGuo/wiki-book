@@ -39,9 +39,9 @@ _Figure 1: Integrating Snowflake-managed MCP server with Amazon Quick through Mo
 The solution uses Amazon Quick Flows as the orchestration layer, with a connection managed by Amazon Quick to reach a [Snowflake Cortex Agent](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents) through a [Snowflake-managed MCP server](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp) with [OAuth authentication](https://docs.snowflake.com/en/user-guide/oauth-snowflake-overview). The Cortex Agent performs the investigative work, analyzing both structured transaction data through [Cortex Analyst](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst) and unstructured compliance documents through [Cortex Search](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview), while Quick Flows handles input validation, reasoning log
 
 ## 相关实体
-- [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/234-bedrock.md)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/236-bedrock.md)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch04/310-ai.md)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/234-bedrock.md)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/236-bedrock.md)
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch04/310-ai.md)
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](ch04/310-ai.md)
 

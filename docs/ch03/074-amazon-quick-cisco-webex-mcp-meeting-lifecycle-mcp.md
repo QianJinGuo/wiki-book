@@ -25,11 +25,11 @@
 
 Amazon Quick + MCP 集成模式已有多个 entity 覆盖不同 MCP server 家族：
 
-- **[Agentic Incident Triage](ch09/117-amazon-quick.md)**（New Relic MCP）— SRE incident response 场景，时间敏感 / RCA brief 5 段
-- **[FinOps Chat](ch09/117-amazon-quick.md)**（Billing MCP via Bedrock AgentCore）— 成本查询场景，对话式多账号 AWS 成本
-- **[Time Series Market Intelligence](ch07/054-amazon-quick-mcp.md)**（KDB-X MCP）— 金融交易场景，时间序列分析
-- **[飞书 MCP](ch09/117-amazon-quick.md)**（自建远程 MCP）— 国产办公协同场景，200+ 工具上下文治理
-- **[AML Alert Triage](ch09/117-amazon-quick.md)**（Snowflake MCP）— 合规反洗钱场景
+- **[Agentic Incident Triage](ch11/195-amazon-quick.md)**（New Relic MCP）— SRE incident response 场景，时间敏感 / RCA brief 5 段
+- **[FinOps Chat](ch11/195-amazon-quick.md)**（Billing MCP via Bedrock AgentCore）— 成本查询场景，对话式多账号 AWS 成本
+- **[Time Series Market Intelligence](ch07/057-amazon-quick-mcp.md)**（KDB-X MCP）— 金融交易场景，时间序列分析
+- **[飞书 MCP](ch11/195-amazon-quick.md)**（自建远程 MCP）— 国产办公协同场景，200+ 工具上下文治理
+- **[AML Alert Triage](ch11/195-amazon-quick.md)**（Snowflake MCP）— 合规反洗钱场景
 
 新 article 占据**完全不同的轴**：**meeting-lifecycle 场景** + **Cisco Webex MCP server 家族**（Meetings / Vidcast / Messaging 三件套）+ **第三方托管 MCP（非自建）** + **OAuth scope 分层 read/write 治理**。与 New Relic / KDB-X / Snowflake / 飞书 等 MCP server 完全没有交叉，且 meeting-lifecycle 场景是 wiki 现有 Amazon Quick 覆盖的盲区。
 
@@ -41,7 +41,7 @@ Amazon Quick + MCP 集成模式已有多个 entity 覆盖不同 MCP server 家�
 | **Vidcast MCP** | `mcp.webexapis.com/mcp/vidcast` | `vidcast-search-videos`, `vidcast-get-video-highlights`, `vidcast-get-video-transcript`, `vidcast-recommend-watch-next` | 视频内容检索 + AI highlight + 推荐 |
 | **Webex Messaging MCP** | `mcp.webexapis.com/mcp/webex-messaging` | `webex-search-spaces`, `webex-search-messages`, `webex-get-thread` | 空间检索 + 消息检索 + 线程拉取 |
 
-**关键 insight**：3 个 server 都是 **Cisco 官方托管**（`mcp.webexapis.com` 域名），用户无需自建 MCP runtime——与 [飞书自建远程 MCP](ch09/117-amazon-quick.md) 形成对比。这也意味着 OAuth 集成走 **Webex Developer Portal** 的标准 OAuth 2.0 flow，Amazon Quick 在 Add integration 阶段提供 redirect URL 回调。
+**关键 insight**：3 个 server 都是 **Cisco 官方托管**（`mcp.webexapis.com` 域名），用户无需自建 MCP runtime——与 [飞书自建远程 MCP](ch11/195-amazon-quick.md) 形成对比。这也意味着 OAuth 集成走 **Webex Developer Portal** 的标准 OAuth 2.0 flow，Amazon Quick 在 Add integration 阶段提供 redirect URL 回调。
 
 ### OAuth Scope 分层防御（read vs write）
 
@@ -58,7 +58,7 @@ Webex MCP server 提供了**完整 read/write scope 分离**，Amazon Quick 集�
 2. **Non-production space 灰度** — write action 先在 sandbox / dev space 跑通，再 enable broad
 3. **Log every write action invocation** — audit trail，便于事后追溯
 
-这一 read/write scope 分层模型与 [New Relic MCP incident triage](ch09/117-amazon-quick.md) 的 "scoped OAuth (tasks:write only)" 思路一致——MCP 集成时代，**scope 最小化是 agent 安全的第一道防线**。
+这一 read/write scope 分层模型与 [New Relic MCP incident triage](ch11/195-amazon-quick.md) 的 "scoped OAuth (tasks:write only)" 思路一致——MCP 集成时代，**scope 最小化是 agent 安全的第一道防线**。
 
 ### Meeting-lifecycle 闭环的 4 阶段
 
@@ -81,12 +81,12 @@ Webex MCP server 提供了**完整 read/write scope 分离**，Amazon Quick 集�
 
 ## 相关实体
 
-- [Amazon Quick + New Relic MCP incident triage](ch09/117-amazon-quick.md) — 同 Amazon Quick + MCP 编排模式，但 MCP server 家族和场景不同（SRE vs meeting）
-- [Amazon Quick + Bedrock AgentCore FinOps](ch09/117-amazon-quick.md) — 同 Amazon Quick 对话模式，FinOps 成本查询场景
-- [Amazon Quick + KDB-X MCP 时序市场](ch07/054-amazon-quick-mcp.md) — 金融时序场景 MCP 集成
-- [Amazon Quick 操作飞书：自建远程 MCP](ch09/117-amazon-quick.md) — 对比案例，国产办公协同自建 MCP 模式
-- [Amazon Quick + Snowflake MCP AML 反洗钱](ch09/117-amazon-quick.md) — 合规场景 MCP 集成
-- [Aderant 法律云运营案例](ch11/175-aderant-transforms-cloud-operations-with-amazon-quick.md) — Amazon Quick 行业 case study（legal-tech 角度）
+- [Amazon Quick + New Relic MCP incident triage](ch11/195-amazon-quick.md) — 同 Amazon Quick + MCP 编排模式，但 MCP server 家族和场景不同（SRE vs meeting）
+- [Amazon Quick + Bedrock AgentCore FinOps](ch11/195-amazon-quick.md) — 同 Amazon Quick 对话模式，FinOps 成本查询场景
+- [Amazon Quick + KDB-X MCP 时序市场](ch07/057-amazon-quick-mcp.md) — 金融时序场景 MCP 集成
+- [Amazon Quick 操作飞书：自建远程 MCP](ch11/195-amazon-quick.md) — 对比案例，国产办公协同自建 MCP 模式
+- [Amazon Quick + Snowflake MCP AML 反洗钱](ch11/195-amazon-quick.md) — 合规场景 MCP 集成
+- [Aderant 法律云运营案例](ch11/178-aderant-transforms-cloud-operations-with-amazon-quick.md) — Amazon Quick 行业 case study（legal-tech 角度）
 - [Amazon Bedrock AgentCore](ch04/503-agent.md) — 另一种 Amazon MCP 部署 runtime（vs Amazon Quick 原生 MCP 集成）
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 

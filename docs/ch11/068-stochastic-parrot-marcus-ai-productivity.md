@@ -1,6 +1,6 @@
-# stochastic parrot marcus ai productivity
+# Stochastic Parrot Marcus AI Productivity
 
-## Ch11.068 stochastic parrot marcus ai productivity
+## Ch11.068 Stochastic Parrot Marcus AI Productivity
 
 > 📊 Level ⭐⭐ | 11.1KB | `entities/stochastic-parrot-marcus-ai-productivity.md`
 
@@ -43,14 +43,14 @@ Marcus 和 Bjarnason 将 AI 工具本身作为批评对象，而 Upwork 报告�
 
 ## 相关实体
 - [Stochastic Parrot Thought Experiment](ch01/664-stochastic-parrot-thought-experiment.md)
-- [Stochastic Parrot Deep Mystery Llms](ch01/584-stochastic-parrot-deep-mystery-llms.md)
-- [While Breathless In Stodgy Viridian](ch01/448-while-breathless-in-stodgy-viridian.md)
+- [Stochastic Parrot Deep Mystery Llms](ch01/587-stochastic-parrot-deep-mystery-llms.md)
+- [While Breathless In Stodgy Viridian](ch01/447-while-breathless-in-stodgy-viridian.md)
 - [Aws Reinforcement Fine Tuning Llm As Judge](ch01/449-aws-reinforcement-fine-tuning-llm-as-judge.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stochastic-parrot-marcus-ai-productivity.md)
 - [商汤开源 sensenova-u1：一个模型，同时「看懂」和「画懂」](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1-sensetime.md)
-- [thinking-machines-interaction-models-ai-cold](ch01/520-thinking-machines-interaction-models-ai-cold.md)
+- [thinking-machines-interaction-models-ai-cold](ch01/522-thinking-machines-interaction-models-ai-cold.md)
 - trump media
 
 ---

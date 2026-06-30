@@ -1,6 +1,6 @@
-# aws ec2 capacity blocks gpu ml
+# AWS EC2 Capacity Blocks GPU ML
 
-## Ch11.194 aws ec2 capacity blocks gpu ml
+## Ch11.194 AWS EC2 Capacity Blocks GPU ML
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/aws-ec2-capacity-blocks-gpu-ml.md`
 
@@ -53,7 +53,7 @@ Capacity Blocks填补了"灵活但贵"与"便宜但僵化"之间的中间地带�
 - 两者共同构成GPU资源管理的"预订-使用-降级"完整链路
 ## 相关实体
 - [SageMaker容量感知推理：实例池+优先级Fallback](ch01/314-aws-sagemaker-capacity-aware-inference-fallback.md)
-- [Building Blocks for Foundation Model Training and Inference on AWS](ch04/310-ai.md)
+- [Building Blocks for Foundation Model Training and Inference on AWS](ch04/150-ai.md)
 ---
 *Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-ec2-capacity-blocks-gpu-ml.md)*
 

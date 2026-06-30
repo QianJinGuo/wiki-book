@@ -33,7 +33,7 @@ Masso 漏洞揭示了 AWS Cognito SSO 实现中一个系统性的认证绕过问
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md) ^[raw/cloudsectidbits-masso-cognito-sso.html]
 
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/031-amazon-bedrock-api.md)
+- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/032-amazon-bedrock-api.md)
 
 ---
 

@@ -9,7 +9,7 @@
 - 评分：v=7 × c=8
 ## 相关实体
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](ch04/310-ai.md)
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](ch01/396-how-claude-code-works-in-large-codebases-best-practices-and.md)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](ch03/073-claude-code.md)
 - [Low Code Api Integration](ch03/070-how-to-build-low-code-api-integrations-for-enterprise-apps-u.md)
 - [How_Claude_Code_Works_In_Large_Codebases](ch01/380-claude.md)
 - [Karpathy Claude Md Rules](ch01/380-claude.md)

@@ -1,6 +1,6 @@
-# agent principle architecture engineering practice
+# Agent Principle Architecture Engineering Practice
 
-## Ch04.304 agent principle architecture engineering practice
+## Ch04.304 Agent Principle Architecture Engineering Practice
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/agent-principle-architecture-engineering-practice.md`
 
@@ -56,8 +56,8 @@ Agent 评测结构比传统评测复杂得多：需要先准备好工具、运�
 
 ## 相关实体
 - [Agent Engineering Principles Architecture Practice](ch04/441-agent-engineering-principles-architecture-practice.md)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](ch09/042-coding-agent.md)
-- [Factory Mission Multi Agent Architecture](ch01/877-factory-mission-multi-agent-architecture.md)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](ch09/043-coding-agent.md)
+- [Factory Mission Multi Agent Architecture](ch01/888-factory-mission-multi-agent-architecture.md)
 - [Harness Engineering Long Term Agent Tasks](ch04/503-agent.md)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/245-skill.md)
 

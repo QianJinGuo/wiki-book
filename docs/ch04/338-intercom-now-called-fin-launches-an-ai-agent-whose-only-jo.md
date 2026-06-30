@@ -8,9 +8,9 @@
 - 评分：v=7 × c=9 = 63
 - 来源：venturebeat
 ## 相关实体
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/490-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/508-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch04/503-agent.md)
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs 1](ch04/310-ai.md)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs 1](ch04/150-ai.md)
 - [The 1 Ai Agent For Financial Services Fin](ch04/477-the-1-ai-agent-for-financial-services-fin.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md)

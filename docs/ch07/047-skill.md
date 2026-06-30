@@ -88,8 +88,8 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [Skill 评估方法](ch04/245-skill.md) — 如何评估 Skill 质量
 
 ## 相关实体
-- [十年老技术开发的 AI Agent 探索之路](ch04/310-ai.md)
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [SkillX — 层次化技能知识库](ch04/245-skill.md)
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/245-skill.md)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/245-skill.md)
@@ -100,13 +100,13 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 
 - [Qoder Skills 完全指南](ch04/245-skill.md)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
-- [Garry Tan](ch01/508-garry-tan.md)
-- [Agent Workflows](ch04/308-agent-workflows.md)
-- [Hermes Agent](ch03/086-hermes-agent.md)
+- [Garry Tan](ch01/510-garry-tan.md)
+- [Agent Workflows](ch04/310-agent-workflows.md)
+- [Hermes Agent](ch03/087-hermes-agent.md)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [你写的 Skill，及格了吗？](ch04/245-skill.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [AI Agent 工程师能力地图](ch04/310-ai.md)
+- [AI Agent 工程师能力地图](ch04/150-ai.md)
 - [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](ch04/503-agent.md)
 
 ---

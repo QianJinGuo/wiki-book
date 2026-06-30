@@ -42,7 +42,7 @@ microVM 的临时性（空闲超时销毁）与用户工作区持久化需求之
 
 ## 相关实体
 - [Openclaw Multi 4](ch04/448-openclaw-multi-4.md)
-- [Openclaw Multi 3](ch04/395-openclaw-multi-3.md)
+- [Openclaw Multi 3](ch04/399-openclaw-multi-3.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/503-agent.md)
 - [Strands Agents Cloud Cost Optimizer](ch04/503-agent.md)
 - [Aws Bedrock Agentcore Identity Security](ch04/503-agent.md)

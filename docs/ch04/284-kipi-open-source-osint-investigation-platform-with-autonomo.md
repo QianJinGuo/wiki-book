@@ -102,7 +102,7 @@ kipi 的图谱构建本质上是一种 **Graph RAG**（图增强检索生成）�
 - **多跳推理**：图上的路径查找天然支持"A 关联 B，B 关联 C，因此 A 可能关联 C"
 - **社区发现**：自动识别紧密关联的实体集群（团伙、网络）
 
-这与 [SchemaFlow](ch04/310-ai.md) 的思路互补：SchemaFlow 将 LLM 约束在数据库 schema 中，kipi 将 LLM 约束在图结构中。
+这与 [SchemaFlow](ch04/150-ai.md) 的思路互补：SchemaFlow 将 LLM 约束在数据库 schema 中，kipi 将 LLM 约束在图结构中。
 
 ### 开源 OSINT 的安全伦理
 
@@ -148,7 +148,7 @@ export ANTHROPIC_API_KEY=sk-ant-...    # 唯一必需的 key
 - 依赖 Anthropic API，调查成本随图谱规模增长
 - 自主 Agent 的调查质量取决于目标网站的反爬措施
 - 证据分级系统仍需人工校准
-- 与 [prompt injection](ch01/676-github.md) 相关的安全风险：Agent 处理的网页内容可能包含恶意指令
+- 与 [prompt injection](ch01/688-github.md) 相关的安全风险：Agent 处理的网页内容可能包含恶意指令
 
 ### 与同类工具对比
 
@@ -164,9 +164,9 @@ export ANTHROPIC_API_KEY=sk-ant-...    # 唯一必需的 key
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 架构工程
 - [Claude Code Workflows](ch03/073-claude-code.md) — Agent 动态工作流
-- [SchemaFlow](ch04/310-ai.md) — 结构化数据的 LLM 约束
+- [SchemaFlow](ch04/150-ai.md) — 结构化数据的 LLM 约束
 - [Gray Swan](https://github.com/QianJinGuo/wiki/blob/main/entities/latent-space-p-gray-swan.md) — AI 安全与 red-teaming
-- [Role Confusion](ch01/676-github.md) — Prompt injection 理论
+- [Role Confusion](ch01/688-github.md) — Prompt injection 理论
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kipi-osint-autonomous-agent-investigation.md)
 

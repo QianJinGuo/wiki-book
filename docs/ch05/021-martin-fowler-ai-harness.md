@@ -65,11 +65,11 @@ Annie Vella 研究：supervisory engineering work（监督式工程工作）
 6. **把经验写回 Harness**：每次失败后，往系统里多塞一点确定性  ^[martin-fowler-的-ai-研发提醒非确定性进了研发链路harness-才真正开始承重]
 
 ## 与现有知识库关联
-- [Martin Fowler AI 研发 Harness](ch04/310-ai.md) — 同一主题的另一个来源
+- [Martin Fowler AI 研发 Harness](ch04/150-ai.md) — 同一主题的另一个来源
 - Karpathy Vibe Coding → Agentic Engineering — Vibe Coding 边界问题
 - [Cursor Harness 复盘](ch05/015-harness.md) — Harness 工程实践
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — guides/sensors/garbage collection 框架
-- [告别氛围编程](ch04/310-ai.md) — Harness 团队级实践
+- [告别氛围编程](ch04/150-ai.md) — Harness 团队级实践
 
 ## 原始存档
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/martin-fowler-的-ai-研发提醒非确定性进了研发链路harness-才真正开始承重.md)
@@ -81,9 +81,9 @@ Annie Vella 研究：supervisory engineering work（监督式工程工作）
 
 ## 相关实体
 
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/310-ai.md)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/150-ai.md)
 
-- [腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](ch04/310-ai.md)
+- [腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](ch04/150-ai.md)
 
 ## 深度分析
 ### 1. 非确定性建模的本质意义

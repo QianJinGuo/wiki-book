@@ -78,7 +78,7 @@ survey 指出一个值得注意的产业演化趋势：从 agent frameworks 到 
 ## 相关实体
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch04/310-ai.md)
 - [Harness Engineering Alibaba Java Case Study](ch05/061-harness-engineering.md)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](ch09/042-coding-agent.md)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](ch09/043-coding-agent.md)
 - [Harness Engineering Systematic Framework](ch05/061-harness-engineering.md)
 - [Agentscope Java Harness Framework](ch04/503-agent.md)
 

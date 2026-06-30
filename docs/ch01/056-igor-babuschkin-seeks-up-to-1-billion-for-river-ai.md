@@ -97,7 +97,7 @@ Forbes 的报道基于"多位知情人士"和"文件审查"（incorporation docu
 - [Jensen Huang 投资英国 AI 初创](ch04/310-ai.md)
 - [Anthropic 计费变更](ch04/503-agent.md) — 推动 Knowledge Agent 等替代方案的经济因素
 - [模型规模推演](ch01/463-model-size-scaling-in-2023-2031.md) — 算力军备竞赛的技术背景
-- [从执行者到导演的 AI 心态转变](ch01/032-from-doer-to-director-the-ai-mindset-shift.md) — AI 时代的人才战略思考
+- [从执行者到导演的 AI 心态转变](ch01/031-from-doer-to-director-the-ai-mindset-shift.md) — AI 时代的人才战略思考
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/letsdatascience-igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09.md)
 

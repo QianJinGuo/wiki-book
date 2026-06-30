@@ -137,8 +137,8 @@ TIR-Judge-Zero、OpenRS 等已有 agentic judge路线，但 Skill-RM 的差异�
 ## 与已有实体的差异化
 
 - **vs [AWS RL LLM-as-Judge](ch01/449-aws-reinforcement-fine-tuning-llm-as-judge.md)**：AWS走 Amazon Bedrock集成路线；Skill-RM走 Skill协议 +跨骨干通用路线
-- **vs [Evaluating Netflix with LLM-as-a-Judge](ch01/262-evaluating-netflix-show-synopses-with-llm-as-a-judge.md)**：Netflix案例是 judge 应用层；Skill-RM 是 judge框架层
-- **vs [Multimodal Evaluators](ch01/890-llm.md)**：多模态 judge 是另一维度（输入模态）；Skill-RM 是单模态但评估协议层
+- **vs [Evaluating Netflix with LLM-as-a-Judge](ch01/259-evaluating-netflix-show-synopses-with-llm-as-a-judge.md)**：Netflix案例是 judge 应用层；Skill-RM 是 judge框架层
+- **vs [Multimodal Evaluators](ch01/285-multimodal.md)**：多模态 judge 是另一维度（输入模态）；Skill-RM 是单模态但评估协议层
 
 ## 上手资源
 

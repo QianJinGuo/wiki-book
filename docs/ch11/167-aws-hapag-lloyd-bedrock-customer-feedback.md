@@ -1,6 +1,6 @@
-# aws hapag lloyd bedrock customer feedback
+# AWS Hapag Lloyd Bedrock Customer Feedback
 
-## Ch11.167 aws hapag lloyd bedrock customer feedback
+## Ch11.167 AWS Hapag Lloyd Bedrock Customer Feedback
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/aws-hapag-lloyd-bedrock-customer-feedback.md`
 
@@ -70,7 +70,7 @@ Bedrock 的模型调用日志 + CloudTrail API 捕获 + CloudWatch 指标，形�
 
 ### 更新日期
 
-updated: 2026-05-21
+updated: 2026-06-30
 
 ---
 

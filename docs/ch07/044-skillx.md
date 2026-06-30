@@ -65,7 +65,7 @@ SkillX的三层技能体系（Planning / Functional / Atomic）揭示了Agent经
 
 ## 相关实体
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/245-skill.md)
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/348-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/245-skill.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/245-skill.md)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/245-skill.md)

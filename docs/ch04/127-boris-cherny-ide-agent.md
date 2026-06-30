@@ -7,11 +7,11 @@
 ## 相关实体
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/503-agent.md)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](ch04/503-agent.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/379-claude-code-harness-deep-understanding.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/378-claude-code-harness-deep-understanding.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
 - [Harness如何支撑Agent在生产环境稳定运行？](ch04/503-agent.md)
 - [Claude Code 可控性：软规则无法变成硬约束](ch03/073-claude-code.md)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/042-coding-agent.md)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/310-ai.md)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](ch04/503-agent.md)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)

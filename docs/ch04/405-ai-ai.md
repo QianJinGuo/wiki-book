@@ -66,11 +66,11 @@ L1个人工具 → L2团队助手 → L3流程节点 → L4数字员工 → L5�
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-org-guide-slowdown.md)
 - https://mp.weixin.qq.com/s/MFmOciB003eKLeZim3mp1w
 ## 相关实体
-- [Ai Native Team Building Yexiaochai](ch04/310-ai.md)
-- [Ai Native Team Building Failures Ceo Digital Twin Case](ch04/310-ai.md)
+- [Ai Native Team Building Yexiaochai](ch04/150-ai.md)
+- [Ai Native Team Building Failures Ceo Digital Twin Case](ch04/150-ai.md)
 - from-system-of-record-to-system-of-intelligence.md-intelligence
-- [Anthropic Founders Playbook Huashu 2026](ch01/692-anthropic.md)
-- [Ai Native Startup Cyberfund Guide](ch04/310-ai.md)
+- [Anthropic Founders Playbook Huashu 2026](ch01/707-anthropic.md)
+- [Ai Native Startup Cyberfund Guide](ch04/150-ai.md)
 
 ---
 

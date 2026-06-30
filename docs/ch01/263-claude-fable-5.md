@@ -87,7 +87,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 **弹性机制 — Trusted Access Program**：经过审核的安全研究者可申请完整 Mythos 级能力访问。**护栏松紧度不是固定的，而是根据使用者的信任等级动态调整**——与阿里云 AI 网关"按消费者匹配"策略同设计思路。
 
-> 与 [Fable 5 AWS 中文译本](ch01/478-anthropic-claude.md) 同 Fable 5 主题，但本文 80% 篇幅在 3 域对比 + 5 原则抽象，AWS 译本聚焦 Fable 5 产品本身（能力 + 接入 + 部署）。**互补不重叠**。
+> 与 [Fable 5 AWS 中文译本](ch01/380-claude.md) 同 Fable 5 主题，但本文 80% 篇幅在 3 域对比 + 5 原则抽象，AWS 译本聚焦 Fable 5 产品本身（能力 + 接入 + 部署）。**互补不重叠**。
 
 ## 五大共性设计原则（跨域抽象）
 
@@ -127,9 +127,9 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 ## 相关实体
 
 - **同 Fable 5 主题**（互补不重叠）：
-  - [Fable 5 AWS 中文译本](ch01/478-anthropic-claude.md)（产品视角）
-  - [Claude Fable 5 Safety Fables (Lambert)](ch01/663-claude-fable-5-and-new-ai-safety-fables.md)（政策视角）
-  - [Fable 5 Mollick hands-on](ch01/265-claude-fable-5.md)（用户体验视角）
+  - [Fable 5 AWS 中文译本](ch01/380-claude.md)（产品视角）
+  - [Claude Fable 5 Safety Fables (Lambert)](ch01/675-claude-fable-5-and-new-ai-safety-fables.md)（政策视角）
+  - [Fable 5 Mollick hands-on](ch01/380-claude.md)（用户体验视角）
 - **同护栏 / 安全主题**：
   - [AI Gateway vs MCP Gateway 安全分析](ch04/310-ai.md)
   - [NVIDIA Nemotron 3 Agents RAG Voice Safety](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md)

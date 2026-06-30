@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [How to create websites with great UX designs: Principles and examples](ch01/130-how-to-create-websites-with-great-ux-designs-principles-and.md)
+- [How to create websites with great UX designs: Principles and examples](ch01/129-how-to-create-websites-with-great-ux-designs-principles-and.md)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch04/310-ai.md)
 - [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/887-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.md)
 

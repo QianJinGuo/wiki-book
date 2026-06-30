@@ -1,6 +1,6 @@
-# aws quicksight dataset qa natural language
+# AWS Quicksight Dataset QA Natural Language
 
-## Ch11.163 aws quicksight dataset qa natural language
+## Ch11.163 AWS Quicksight Dataset QA Natural Language
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/aws-quicksight-dataset-qa-natural-language.md`
 
@@ -30,9 +30,9 @@ QuickSight Dataset Q&A 的核心价值在于重新定义了什么叫做"BI 数�
 
 ## 相关实体
 - [Aws Quicksight Dataset Qa Tara Case](ch11/154-aws-quicksight-dataset-qa-tara-case.md)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/179-cost-effective-deployment-of-vision-language-models-for-pet.md)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/181-cost-effective-deployment-of-vision-language-models-for-pet.md)
 - [Natural Language Autoencoders](ch01/908-natural-language-autoencoders-anthropic.md)
-- [Anthropic Natural Language Autoencoders](ch01/692-anthropic.md)
+- [Anthropic Natural Language Autoencoders](ch01/707-anthropic.md)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-quicksight-dataset-qa-natural-language.md)

@@ -68,10 +68,10 @@ Google Ads 实验数据是平台级别的，但业务影响是全链路的。成
 - 建立实验库，记录所有历史实验和结论
 ## 相关实体
 - [3Rdfsmp](https://github.com/QianJinGuo/wiki/blob/main/entities/3rdfsmp.md)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch04/310-ai.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/065-building-ai-agents-for-business-support-using-amazon-bedrock.md)
-- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch04/310-ai.md)
-- [Building Blocks For Foundation Model Training And Inference On Aws](ch04/310-ai.md)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch04/150-ai.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/064-building-ai-agents-for-business-support-using-amazon-bedrock.md)
+- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch04/150-ai.md)
+- [Building Blocks For Foundation Model Training And Inference On Aws](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/almcorp-google-ads-expanded-experiment-v24-1.md)
 

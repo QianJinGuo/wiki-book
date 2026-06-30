@@ -78,7 +78,7 @@ Boris 说他最初觉得 auto mode"不靠谱——把 prompt 路由给一个模�
 - Auto mode：用专门训练的 Sonnet 4.6 分类器持续学习；收集成千上万条 Agent 运行轨迹 + 红队 prompt 注入 + 内部攻击测试 + 真实发现 → eval。
 - **结论**：auto mode 比人工形式审查更安全，因为它对所有请求都做实质性判断。
 
-这与 [Agent Security 三步走: Harness + Governance + Identity](ch04/310-ai.md) 中"governance 必须可验证、可审计"的原则一致——Auto Mode 是 governance 的工业级实现。
+这与 [Agent Security 三步走: Harness + Governance + Identity](ch04/150-ai.md) 中"governance 必须可验证、可审计"的原则一致——Auto Mode 是 governance 的工业级实现。
 
 ### 五、Context 极简主义对 prompt engineering 的反叛
 
@@ -150,10 +150,10 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [Claude Code Prompt 源码分析 fanone](ch03/073-claude-code.md)
 - [Claude Code Prompt Context Harness](ch03/073-claude-code.md)
 - [From Prompt to Harness: Claude 官方](ch01/380-claude.md)
-- [Anthropic Prompt Caching 与 Claude Code](ch01/200-anthropic-prompt-caching-claude-code.md)
+- [Anthropic Prompt Caching 与 Claude Code](ch01/198-anthropic-prompt-caching-claude-code.md)
 - [24h Worker Agent](ch04/503-agent.md)
-- [Agent Security 三步走: Harness + Governance + Identity](ch04/310-ai.md)
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](ch04/310-ai.md)
+- [Agent Security 三步走: Harness + Governance + Identity](ch04/150-ai.md)
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](ch04/150-ai.md)
 - [Karpathy: Software 3.0 与 vibe coding 时代的终结](ch04/503-agent.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
