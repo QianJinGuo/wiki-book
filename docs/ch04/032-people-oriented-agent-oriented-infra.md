@@ -245,7 +245,7 @@
 - 晓斌 = "**harness = 根据角色、任务、权限范围自动组装的完整工作环境**"——具体落地 + 工具、凭证、workspace、skill 4 维组装
 - 共同点：harness 决定 agent 自主空间
 
-### vs [wow-harness v3](ch05/015-harness.md)
+### vs [wow-harness v3](ch05/009-harness.md)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - 晓斌 = "harness 平台化"（**运行环境层**变革）——"组装的对象从'应用'变成了'agent 工作环境'"
 - 共同点：都强调"infra / 协议"是 AI Agent 落地的关键
@@ -323,7 +323,7 @@
 
 ## 相关对照
 - [Agent Harness 架构](ch03/044-agent.md) —— 7 层 harness 模型
-- [wow-harness v3](ch05/015-harness.md) —— 跨 session 事件时间线
+- [wow-harness v3](ch05/009-harness.md) —— 跨 session 事件时间线
 - [Kimi Work](ch01/436-codex.md) —— 本地桌面 Agent
 - [PilotDeck](ch03/044-agent.md) —— 多项目隔离
 - [Rein](ch03/044-agent.md) —— 4 模块 + 5 类型边界

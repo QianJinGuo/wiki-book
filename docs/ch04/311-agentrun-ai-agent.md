@@ -13,7 +13,7 @@
 ## 相关实体
 - [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](ch03/044-agent.md)
 - [Aliyun Agentrun 5Min Quickstart](ch03/044-agent.md)
-- [Wow Harness V3 Governance Protocol](ch05/015-harness.md)
+- [Wow Harness V3 Governance Protocol](ch05/009-harness.md)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/044-agent.md)
 - [Ath Agent Trust Handshake Protocol](ch03/044-agent.md)
 

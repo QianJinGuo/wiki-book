@@ -274,7 +274,7 @@ Coding Agent 干活
 - 高德 = **具体落地实现**（AI 全托管 / 监督 Agent / Self-Healing / 质量门禁 / Benchmark）
 - 共同点：都强调"infra 决定 agent 自主空间"+"给 infra 补能力"
 
-### vs [wow-harness v3](ch05/015-harness.md)
+### vs [wow-harness v3](ch05/009-harness.md)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - 高德 = **7×24 生产线层**（Self-Healing + Harness 反馈闭环 + Benchmark 体系）
 - 共同点：都强调"治理 + 自进化"是 AI Agent 长期可用的关键
@@ -346,7 +346,7 @@ Coding Agent 干活
 
 ## 相关对照
 - [晓斌 Agent-Oriented Infra](ch03/044-agent.md) —— 哲学框架
-- [wow-harness v3](ch05/015-harness.md) —— 跨 session 治理
+- [wow-harness v3](ch05/009-harness.md) —— 跨 session 治理
 - [Kimi Work](ch01/436-codex.md) —— 本地 Agent
 - [Rein](ch03/044-agent.md) —— 单 agent 架构
 - [Agent Harness 架构](ch03/044-agent.md) —— 7 层模型

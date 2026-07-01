@@ -24,7 +24,7 @@
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](ch03/044-agent.md)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/150-ai.md)
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch04/150-ai.md)
-- [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/015-harness.md)
+- [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/009-harness.md)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/133-skillos-learning-skill-curation-for-self-evolving-agents.md)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](ch01/334-codeindex.md)

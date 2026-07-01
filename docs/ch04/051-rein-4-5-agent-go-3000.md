@@ -237,7 +237,7 @@ WithWorkingDir(cwd)            // 工作目录
 ### vs Agent Harness 上下文管理（[Agent Harness Context Management Working Set](ch03/044-agent.md)）
 - 工作集视角：logical_messages 原样保留 + 投影 = Rein 的"存储完整，发送压缩"
 
-### vs wow-harness v3 事件溯源（[Wow Harness V3 Governance Protocol](ch05/015-harness.md)）
+### vs wow-harness v3 事件溯源（[Wow Harness V3 Governance Protocol](ch05/009-harness.md)）
 - v3 = 跨 session 事件时间线 + 概念图
 - Rein = session 原子写入 + 完整 logical_messages
 - **共同点**：完整历史 + 不可篡改 + 确定性回放
@@ -294,7 +294,7 @@ WithWorkingDir(cwd)            // 工作目录
 ## 相关对照
 - [Claude Code 20000 字符源码分析](ch03/074-claude-code.md)
 - [Agent Harness 上下文管理](ch03/044-agent.md) —— 工作集视角
-- [wow-harness v3](ch05/015-harness.md) —— 事件溯源 + 概念图
+- [wow-harness v3](ch05/009-harness.md) —— 事件溯源 + 概念图
 - [PilotDeck](ch03/044-agent.md) —— 白盒记忆
 - [Agent Harness 架构](ch03/044-agent.md) —— 7 层 harness 模型
 - [17 种 agent 架构演进](ch03/044-agent.md) —— 类型边界视角

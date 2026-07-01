@@ -142,7 +142,7 @@
 - MAC = "**Skills + Hooks 两层叠加**"——更具体、更轻量、更聚焦"完全委托"的信任问题
 - 共同点：都强调 harness 决定 agent 自主空间
 
-### vs [wow-harness v3](ch05/015-harness.md)
+### vs [wow-harness v3](ch05/009-harness.md)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理，更重）
 - MAC = **Skills（概率 SOP）+ Hooks（确定性触发）**——**更轻量级**，可复用框架 vs 项目脚手架
 - 共同点：都强调"跨 session 上下文持久 / 失败记录 / 知识积累"是 Harness 关键
@@ -189,7 +189,7 @@
 
 ## 相关对照
 - [晓斌 Agent-Oriented Infra](ch03/044-agent.md) —— 哲学框架
-- [wow-harness v3](ch05/015-harness.md) —— 跨 session 治理
+- [wow-harness v3](ch05/009-harness.md) —— 跨 session 治理
 - [高德 AI-Native 生产线](ch04/150-ai.md) —— 企业级 R&D 生产线
 - [Claude Code Dynamic Workflows](ch03/074-claude-code.md) —— 动态工作流
 - [Agent Harness 架构](ch03/044-agent.md) —— 7 层模型

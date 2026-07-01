@@ -178,7 +178,7 @@
   - [Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)（Winty 视角：基于 SKILL.md 自我迭代）
 - **同领域框架**：
   - [Agent Harness Engineering 综述](ch03/044-agent.md)（harness 视角）
-  - [Harness 演化论文集](ch05/015-harness.md)（harness 论文集合）
+  - [Harness 演化论文集](ch05/009-harness.md)（harness 论文集合）
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-self-improvement-system-survey-zesearch-nlp.md)
 

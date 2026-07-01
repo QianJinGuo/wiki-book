@@ -172,7 +172,7 @@ Claude Code 不是用一种方式处理上下文膨胀，而是分层处理：
 
 历史教训：1,279 个会话连续失败 3,000+ 次，每天浪费 25 万次 API 调用——**任何自动化机制都必须有熔断**。
 
-这与 [Harness 状态边界与失败闭环](ch05/015-harness.md) 中关于"边界即熔断点"的工程哲学一致——失败应当被显式处理，而非无限循环。
+这与 [Harness 状态边界与失败闭环](ch05/009-harness.md) 中关于"边界即熔断点"的工程哲学一致——失败应当被显式处理，而非无限循环。
 
 ### 9. Plan Mode：行为引导而非权限关闭
 
@@ -307,7 +307,7 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 - [GSD 上下文管理工具](ch01/196-gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](ch03/044-agent.md)
 - [Harness Engineering Core Patterns](ch03/074-claude-code.md)
-- [Harness 状态边界与失败闭环](ch05/015-harness.md)
+- [Harness 状态边界与失败闭环](ch05/009-harness.md)
 - [Factory Mission Multi-Agent 系统](ch04/150-ai.md)
 - [Claude Managed Agents 企业自托管](ch03/044-agent.md)
 - [OpenClaw 多 Agent 团队实践](ch04/038-openclaw-multi-agent-team-practice-v2.md)

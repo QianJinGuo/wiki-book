@@ -67,7 +67,7 @@ Annie Vella 研究：supervisory engineering work（监督式工程工作）
 ## 与现有知识库关联
 - [Martin Fowler AI 研发 Harness](ch04/150-ai.md) — 同一主题的另一个来源
 - Karpathy Vibe Coding → Agentic Engineering — Vibe Coding 边界问题
-- [Cursor Harness 复盘](ch05/015-harness.md) — Harness 工程实践
+- [Cursor Harness 复盘](ch05/009-harness.md) — Harness 工程实践
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — guides/sensors/garbage collection 框架
 - [告别氛围编程](ch04/150-ai.md) — Harness 团队级实践
 

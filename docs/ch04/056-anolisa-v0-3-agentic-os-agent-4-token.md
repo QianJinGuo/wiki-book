@@ -189,7 +189,7 @@ ANOLISA v0.3 架构
 - **ANOLISA = 4 层安全防护（提示词/代码/供应链/系统基线）** + 1 层"快照回滚"（可恢复）
 - 共同点：都强调"infra 决定 agent 自主空间"+"给 infra 补能力"
 
-### vs [wow-harness v3](ch05/015-harness.md)
+### vs [wow-harness v3](ch05/009-harness.md)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - ANOLISA = **操作系统层 Agentic OS**（叠加在传统 OS 上的转换层）
 - 共同点：都强调"治理"是 AI Agent 落地的关键
@@ -268,7 +268,7 @@ ANOLISA v0.3 架构
 
 ## 相关对照
 - [晓斌 Agent-Oriented Infra](ch03/044-agent.md) —— 哲学框架
-- [wow-harness v3](ch05/015-harness.md) —— 协议层治理
+- [wow-harness v3](ch05/009-harness.md) —— 协议层治理
 - [MAC Skills + Hooks](ch04/245-skill.md) —— 工程师个人框架
 - [高德 AI-Native 生产线](ch04/150-ai.md) —— 企业级 R&D
 - [Kimi Work](ch01/436-codex.md) —— 本地 Agent

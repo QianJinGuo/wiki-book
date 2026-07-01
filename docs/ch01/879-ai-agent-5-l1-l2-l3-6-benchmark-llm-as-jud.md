@@ -324,7 +324,7 @@ Agent输出：{agent_output}
 | [Taobao Smart Shopping Guide Agent Evaluation Pzmx](ch03/044-agent.md) | **电商导购 Agent 评测** | 淘天智能导购 Agent 评测实践 |
 | [Aliyun Agentloop Enterprise Agent Self Evolution Flywheel](ch03/044-agent.md) | **阿里 AgentLoop** | 4 环飞轮中"评估环"的产品化（Agent-as-a-Judge 13 个评估器） |
 | [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch03/044-agent.md) | **业务 Agent 评测** | 阿里"伯禹"业务 Agent 评测实践 |
-| [Better Harness Eval Trace Harness Hill Climbing](ch05/015-harness.md) | **trace 评测** | trace 级 harness 爬坡的工程方法 |
+| [Better Harness Eval Trace Harness Hill Climbing](ch05/009-harness.md) | **trace 评测** | trace 级 harness 爬坡的工程方法 |
 | [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](ch12/003-token.md) | **SWE-Bench 评测** | Claw-SWE-Bench：harness 对编程 Agent 影响的独立基准 |
 | [Anthropic Demystifying Evals For Ai Agents](ch04/399-anthropic-demystifying-evals-for-ai-agents.md) | **Anthropic evals** | Anthropic Agent 评测揭秘 |
 

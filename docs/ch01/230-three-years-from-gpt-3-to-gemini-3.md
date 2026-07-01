@@ -195,7 +195,7 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 - [Yann Dubois OpenAI 后训练访谈](ch04/150-ai.md)
 - [GPT-5.5 Copilot Session 设计](ch07/015-wiki-evolver.md)
 - [AI Agent Harness 构建](ch04/150-ai.md)
-- [Harness 状态边界与失败闭环](ch05/015-harness.md)
+- [Harness 状态边界与失败闭环](ch05/009-harness.md)
 - [Agent Vibecoder 上下文压缩](ch03/044-agent.md)
 - [腾讯混元 HY3 开源预览](ch01/109-hy3-preview.md)
 - [Agent 记忆系统工程实践](ch03/044-agent.md)

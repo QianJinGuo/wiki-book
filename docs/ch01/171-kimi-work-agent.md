@@ -144,7 +144,7 @@
 
 ## 与现有 wiki 实体的关系
 
-### vs [wow-harness v3](ch05/015-harness.md)
+### vs [wow-harness v3](ch05/009-harness.md)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - Kimi Work = Harness 搬到本地桌面（**运行环境层**变革）
 - 共同点：都在解决"AI Agent 如何与真实工作环境对接"问题
@@ -188,7 +188,7 @@
 - **Codex 500 万周活 / 桌面版 6 倍**数据来自 OpenAI 自报，缺第三方验证
 
 ## 相关对照
-- [wow-harness v3](ch05/015-harness.md) —— 协议层治理
+- [wow-harness v3](ch05/009-harness.md) —— 协议层治理
 - [PilotDeck](ch03/044-agent.md) —— 多项目隔离
 - [Agent Harness 架构](ch03/044-agent.md) —— 7 层 harness 模型
 - [Rein](ch03/044-agent.md) —— 4 模块代码架构

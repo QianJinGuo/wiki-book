@@ -47,7 +47,7 @@
 
 - [钉钉AI助手](ch04/150-ai.md)
 - [Agent Harness生产实践](ch03/044-agent.md)
-- [Harness范式](ch05/015-harness.md)
+- [Harness范式](ch05/009-harness.md)
 
 ## 标签
 

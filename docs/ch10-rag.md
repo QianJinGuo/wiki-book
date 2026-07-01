@@ -1712,7 +1712,7 @@ AI 时代，有两种行为：
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
 - [New And Improved Agent Governance Intelligent Workflows Connected App Exp](ch03/044-agent.md)
 - [Skillopt](ch05/048-skillopt.md)
-- [Two Harness Papers Microsoft Google](ch05/015-harness.md)
+- [Two Harness Papers Microsoft Google](ch05/009-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tCjNDrk4fRMUmngmbOih-w.md)
 
