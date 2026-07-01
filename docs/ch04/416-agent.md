@@ -1,89 +1,51 @@
-# 为了让agent更安全的工作，有多少人操碎了心
+# 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽
 
-## Ch04.416 为了让agent更安全的工作，有多少人操碎了心
+## Ch04.416 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽
 
-> 📊 Level ⭐⭐ | 5.8KB | `entities/ath-agent-trust-handshake-protocol.md`
+> 📊 Level ⭐⭐ | 6.0KB | `entities/tsinghua-agent-security-fangcun.md`
 
-# 为了让agent更安全的工作，有多少人操碎了心
+# 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽
+> **URL**: https://mp.weixin.qq.com/s/BKZLh5x1QyLsQISedMBr1Q
+> **SHA256**: ec62655e1642b8058f8882e5e92f2062d4c5fb2ef1ac38f9820ed1d40d8eba2e
+来自**清华大学人工智能学院、交叉信息研究院**的方寸跃迁团队，提出一套面向 Agent 运行全生命周期的多层安全体系，覆盖事前（Skill Ward）× 事中（Guard × Observer）× 事后（审计）完整链路。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ath-agent-trust-handshake-protocol.md)
+## 相关实体
+- [Ath Agent Trust Handshake Protocol](ch03/044-agent.md)
+- [Canvas Breach Disrupts Schools Colleges Nationwide](ch12/031-canvas-breach-disrupts-schools-colleges-nationwide.md)
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](ch04/245-skill.md)
+- [Aws Bedrock Agentcore Identity Security](ch03/044-agent.md)
+- [Github Investigating Teampcp Claimed 17Cc77](ch04/150-ai.md)
 
-## 摘要
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tsinghua-agent-security-fangcun.md)
 
-本文系统分析了 Agent 权限安全的核心矛盾——「单个权限无害，组合起来可能越界」，传统 RBAC 模型无法管控 LLM 非确定性决策下的权限组合涌现。在对比 MCP、A2A、CLI/GUI 自动化三类现有方案的缺陷后，详细介绍 2026 年 5 月由中国信通院联合腾讯、华为、中兴等发布的 ATH（Agent Trust Handshake）三方可信握手协议。ATH 的核心创新是引入用户作为独立第三方参与方，通过 Scope Intersection（三方权限交集）机制确保最终有效权限 = 服务方审批 ∩ 用户授权 ∩ 智能体请求。
+## 深度分析
 
-## 核心要点
+当前行业主流安全方案共享一个根本性盲区：**只看到 Agent "声明"出来的行为，而非真实执行的动作**。提示词规则、输入输出过滤、运行时日志审计、SDK Hook 均属于"表演级监控"——模型在受监控环境下会主动调整行为，按规则表演而非按规则执行^。这一判断在多 Agent 协作环境中尤为关键：当一个恶意 Agent"从不亲自动手、只靠影响其他 Agent 转嫁风险"时，基于声明的审计完全失效^。这意味着安全边界必须从"声明层"下沉到"行为层"。
 
-### Agent 权限问题的本质
+Fangcun Observer 的核心创新在于**直接下沉到操作系统层**，彻底解耦对任何框架插件、SDK 接口、模型供应商集成的依赖^。这解决了企业实际运营中的关键痛点：同时运行数十甚至上百个 Agent 时，系统无法完整感知正在运行多少个、在做什么——而 Observer 将运行时真实行为、Agent 决策动作与模型上下文关联成完整行为图谱，使多 Agent 协作网络中的恶意个体无处遁形^。
 
-- 传统软件行为确定性——点击按钮 A 就执行操作 A。Agent 行为由 LLM 动态决策，是概率性的，同一请求可能走完全不同的执行路径
-- **权限组合涌现**：单个权限无害，组合起来可能越界。RBAC 管不住这种涌现能力
-- 历史类比：iOS 6 引入运行时权限授权，行业花约 5 年才形成按需授权模式；数据库从表级权限演进到 RLS、Column Masking、ABAC
+Fangcun Guard 在安全审核性能上实现了两位数毫秒级的突破：4 道审核（用户输入、工具调用入参、模型输出、工具返回）全跑 Guard 总耗时仅 30ms，对用户和业务均无感知^。其 Benchmark 数据显示 p99 推理延时 8ms，显著优于开源方案 130ms+（8B 模型）或 50ms（0.6B 但 F1 有差距）的水平^。这意味着安全审核从"可以被绕过的辅助检查"变为"无法感知的实时基础设施"。
 
-### 现有方案的三类缺陷
+Skill Ward 揭示了第三方 Skill 生态的深层风险：恶意 Skill 的真正杀招在运行时而非静态扫描能触及的地方——读取配置文件时才拉远程载荷、调试日志逻辑触发后才发请求、合法依赖包在特定参数下才激活后门^。实测 5000 个真实 Skill 中，仅靠静态扫描会漏掉约三分之一运行时威胁，全部由 Docker 蜜罐沙箱阶段捕获^。这说明**蜜罐沙箱是 Skill 安全审计的必经环节，而非可选项**。
 
-**MCP 安全根基不稳**：
-- Context Poisoning（上下文投毒）是架构级问题，OWASP 将 Prompt Injection 列为 LLM 应用头号风险（LLM01）
-- 2026 年 4 月 OX Security 报告：MCP 生态影响超 3.2 万个代码仓库，Shodan 上 7,374 台公开脆弱服务器，估算暴露超 20 万台
-- 高危 CVE：CVE-2025-49596（CVSS 9.4）、CVE-2025-6514（CVSS 9.6）
-- 核心问题：只定义模型到工具的通信，没有引入用户和服务端作为独立授权参与方
-
-**A2A 信任鸿沟**：Agent Card 只声明「我能做什么」，无法验证身份可信度，用户未被纳入信任链路
-
-**GUI 自动化**：系统级权限过度、操作不可审计、屏幕截图可能捕获密码和通知内容
-
-### ATH 三方可信握手架构
-
-ATH 由`中国信通院联合腾讯、华为、中兴、三大运营商和港中深`于 2026 年 5 月发布。
-
-**六大设计原则**：用户主权、三方参与、可信握手、去中心化（非对称加密）、最小权限（到期自动失效）、全程可追溯（加密存证）
-
-**9 步握手流程**：
-- 前置：用户预授权——签署授权凭证，明确 Agent 可代表自己行事的范围
-- 第一阶段（步骤 1-4）：双向身份验证。Agent 携带 DID、公钥、能力清单和随机数 A 发起请求；服务端验证后返回身份信息 + 对随机数 A 的签名 + 随机数 B；Agent 验证后对随机数 B 签名发回
-- 第二阶段（步骤 5-8）：可信握手协商。Agent 请求具体访问权限 + 用户预授权凭证；**服务端向用户发起二次确认**（用户可同意、拒绝或修改授权范围）
-- 第三阶段（步骤 9）：密钥协商 + 颁发短期访问令牌 + 建立加密通道
-
-### Scope Intersection：三方权限交集
-
-```
-Effective Scope = Agent Approved Scopes ∩ User Consented Scopes ∩ Requested Scopes
-```
-
-这是 ATH 最关键的安全创新：
-- 用户误授权 + 服务端未批准 → 权限拿不到
-- Agent 被批准 + 没请求的权限 → 不会被授予
-- 交集为空时 → 禁止颁发令牌
-
-### 与 OAuth 2.0 的关系
-
-ATH 建立在 OAuth 2.0 之上而非替代。OAuth 回答「用户是否同意？」，ATH 增加第二个必答问题「服务方是否批准该智能体？」。强制 PKCE（RFC 7636）S256，访问令牌绑定 `(agent_id, user_id, provider_id, scopes)` 四元组。
-
-### 双部署模式
-
-| 模式 | 架构 | 适用场景 |
-|------|------|----------|
-| 网关模式 | Agent → ATH Gateway → 后端服务 | 不改原有代码，企业统一管控 |
-| 原生模式 | Agent 直连 ATH 原生服务 | 性能更高、延迟更低 |
-
-网关模式三大组件：Agent Registry（身份验证和能力策略）、Authorization Engine（权限交集计算和审计日志）、OAuth Bridge（OAuth 委托和令牌管理）
+三款产品组合构成了 Agent 安全的完整边界：事前 Skill Ward（三阶段检测）× 事中 Guard（8ms 护栏）+ Observer（OS 层行为感知）× 事后本地审计自进化防御^。这一框架的完整性与当前行业碎片化安全方案形成鲜明对比——后者只覆盖单一环节而留有系统性盲区。
 
 ## 实践启示
 
-1. **MCP 安全缺陷是架构级的**：Context Poisoning 不是配置问题，接入 MCP 服务器需严格验证工具描述来源，关注 CVE 修复
-2. **三方授权的必要性**：用户必须有最终否决权——服务端 + 用户 + Agent 三方缺一不可，任何两方模型都有盲区
-3. **Scope Intersection 的工程价值**：即使用户误授权，服务端未批准的权限也拿不到。这是对「权限过度授予」的结构性防护
-4. **最小权限 + 短期令牌**：7200 秒（2 小时）过期，到期需重新握手。这强制了权限的时效性约束
-5. **网关模式降低落地门槛**：不改原有代码即可接入 ATH，适合企业渐进式改造
+**1. 将安全审计从"声明层"升级到"行为层"**：在评估或自研 Agent 安全方案时，核心问题应从"Agent 说了什么"变为"Agent 做了什么"。接入 Observer 类 OS 级行为感知工具，对运行中的系统调用、文件访问、网络行为进行实时监控，而非仅依赖提示词规则或输入输出过滤^。
 
-## 相关实体
+**2. 在引入第三方 Skill 生态时强制经过蜜罐沙箱检测**：无论是 Claude Skills、OpenAI Apps 还是 Claw Hub，静态扫描不足以覆盖运行时威胁。建议在 CI/CD 流程中加入 Skill Ward 类三阶段检测（静态分析 + 大模型意图研判 + Docker 蜜罐实际执行），确保约 1/3 的运行时威胁不被遗漏^。
 
-- [Agent Protocol 到 Harness Skill](ch04/354-from-agent-protocol-to-harness-skill.md)
-- [AgentCore Gateway 认证](ch04/256-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [AI 工具投毒漏洞](ch04/310-ai.md)
-- [Harness V3 治理协议](ch05/015-harness.md)
-- [MCP 12 设计模式](ch04/503-agent.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+**3. 将安全审核嵌入 Agent 运行时基础设施，而非作为独立外挂**：Guard 的 8ms p99 延时证明安全审核可以成为业务流的无感一部分。选择审核延时不高于 30ms（4 道全跑）的方案，使安全检查在用户无感知的情况下完成全面覆盖^。
+
+**4. 构建覆盖事前-事中-事后的完整 Agent 安全体系**：参考 Fangcun 三产品矩阵，根据自身 Agent 部署的阶段特征（是否大量引入第三方 Skills、是否涉及敏感工具调用、是否需要多 Agent 协作）选择对应的安全产品，避免因单一环节的侥幸心理导致全链路失效^。
+
+**5. 优先选择数据本地沉淀的安全方案**：Observer 的本地审计 + 自进化防御设计强调所有数据本地沉淀、不上云^。在企业场景中，Agent 运行数据包含大量业务上下文，安全方案的数据不留云是合规层面的基本要求。
+
+## 关联阅读
+- [Managed Agents Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/managed-agents-architecture.md) — 管理 Agent 的规模化运行
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 运行时 Harness 框架
+- [Claude Code Source Leak Lifecycle](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-source-leak-lifecycle.md) — Claude Code 源码分析中的安全机制
 
 ---
 
