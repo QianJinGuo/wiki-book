@@ -2,7 +2,7 @@
 
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
-> 本章收录 **131 篇**实体，按深度递增排列。
+> 本章收录 **132 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
-| ⭐⭐ 工程师 | 需编程基础 | 123 |
+| ⭐⭐ 工程师 | 需编程基础 | 124 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -141,28 +141,29 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [104. Vibe Coding in Production — Erik Schluntz / Anthropic](ch09/104-vibe-coding-in-production-erik-schluntz-anthropic.md)
 - [105. Codex can now control other desktop devices via Computer Use](ch09/105-codex-can-now-control-other-desktop-devices-via-computer-use.md)
 - [106. Code is the easy part, or how we refactored half the business to fix a janky script | Swizec Teller](ch09/106-code-is-the-easy-part-or-how-we-refactored-half-the-busines.md)
-- [107. Linn Fritz looks at the lighter side of life](ch09/107-linn-fritz-looks-at-the-lighter-side-of-life.md)
-- [108. Claude Code 为什么会忽略指令：四类失效原因 + 五层规则框架](ch09/108-claude-code.md)
-- [109. 无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时](ch09/109-vibe-coding-ai.md)
-- [110. Tether launches developer grants program for local AI payments](ch09/110-tether-launches-developer-grants-program-for-local-ai-paymen.md)
-- [111. Introducing deepsec: The security harness for finding vulnerabilities in your codebase](ch09/111-introducing-deepsec-the-security-harness-for-finding-vulner.md)
-- [112. 从需求到原型：50 个设计师与产品经理值得掌握的 AI 智能体技能](ch09/112-50-ai.md)
-- [113. 天猫新品营销技术团队AI编码实战指南（上）](ch09/113-ai.md)
-- [114. The New Bottleneck: Theory of Constraints in the Age of AI Coding](ch09/114-the-new-bottleneck-theory-of-constraints-in-the-age-of-ai-c.md)
-- [115. 打造 Claude Code 可持续推进的工作流：Loop Engineering 完整上手攻略](ch09/115-claude-code-loop-engineering.md)
-- [116. 天猫新品团队AI编码实战指南（下）](ch09/116-ai.md)
-- [117. Automate progressive rollouts with Vercel Flags - Vercel](ch09/117-automate-progressive-rollouts-with-vercel-flags-vercel.md)
-- [118. We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks](ch09/118-we-have-mythos-at-home-glm-5-2-beats-claude-in-our-cyber-be.md)
-- [119. 从需求到原型：50 个设计师与产品经理的 AI 智能体技能](ch09/119-50-ai.md)
-- [120. Using Local Coding Agents](ch09/120-using-local-coding-agents.md)
-- [121. AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判](ch09/121-ai-anomaly-vibe-coding.md)
-- [122. Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access](ch09/122-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region.md)
-- [123. Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads](ch09/123-dynamically-splitting-wide-partitions-in-cassandra-for-time.md)
-- [124. How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore](ch09/124-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md)
-- [125. OpenAI大神教你如何榨干Codex](ch09/125-openai-codex.md)
-- [126. Code Intelligence – Changelog](ch09/126-code-intelligence-changelog.md)
-- [127. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/127-device-code-phishing-forensics-what-we-learned-from-bec-inv.md)
-- [128. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/128-fastcontext-coding-agent.md)
-- [129. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/129-deepseek-visual-primitives.md)
-- [130. AI Coding Agent Token 成本控制五层模型](ch09/130-ai-coding-agent-token.md)
-- [131. GLM-5 Scaling Pain 推理复盘](ch09/131-glm-5-scaling-pain.md)
+- [107. Claude Code Loop Engineering 完整攻略](ch09/107-claude-code-loop-engineering.md)
+- [108. Linn Fritz looks at the lighter side of life](ch09/108-linn-fritz-looks-at-the-lighter-side-of-life.md)
+- [109. Claude Code 为什么会忽略指令：四类失效原因 + 五层规则框架](ch09/109-claude-code.md)
+- [110. 无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时](ch09/110-vibe-coding-ai.md)
+- [111. Tether launches developer grants program for local AI payments](ch09/111-tether-launches-developer-grants-program-for-local-ai-paymen.md)
+- [112. Introducing deepsec: The security harness for finding vulnerabilities in your codebase](ch09/112-introducing-deepsec-the-security-harness-for-finding-vulner.md)
+- [113. 从需求到原型：50 个设计师与产品经理值得掌握的 AI 智能体技能](ch09/113-50-ai.md)
+- [114. 天猫新品营销技术团队AI编码实战指南（上）](ch09/114-ai.md)
+- [115. The New Bottleneck: Theory of Constraints in the Age of AI Coding](ch09/115-the-new-bottleneck-theory-of-constraints-in-the-age-of-ai-c.md)
+- [116. 打造 Claude Code 可持续推进的工作流：Loop Engineering 完整上手攻略](ch09/116-claude-code-loop-engineering.md)
+- [117. 天猫新品团队AI编码实战指南（下）](ch09/117-ai.md)
+- [118. Automate progressive rollouts with Vercel Flags - Vercel](ch09/118-automate-progressive-rollouts-with-vercel-flags-vercel.md)
+- [119. We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks](ch09/119-we-have-mythos-at-home-glm-5-2-beats-claude-in-our-cyber-be.md)
+- [120. 从需求到原型：50 个设计师与产品经理的 AI 智能体技能](ch09/120-50-ai.md)
+- [121. Using Local Coding Agents](ch09/121-using-local-coding-agents.md)
+- [122. AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判](ch09/122-ai-anomaly-vibe-coding.md)
+- [123. Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access](ch09/123-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region.md)
+- [124. Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads](ch09/124-dynamically-splitting-wide-partitions-in-cassandra-for-time.md)
+- [125. How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore](ch09/125-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md)
+- [126. OpenAI大神教你如何榨干Codex](ch09/126-openai-codex.md)
+- [127. Code Intelligence – Changelog](ch09/127-code-intelligence-changelog.md)
+- [128. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/128-device-code-phishing-forensics-what-we-learned-from-bec-inv.md)
+- [129. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/129-fastcontext-coding-agent.md)
+- [130. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/130-deepseek-visual-primitives.md)
+- [131. AI Coding Agent Token 成本控制五层模型](ch09/131-ai-coding-agent-token.md)
+- [132. GLM-5 Scaling Pain 推理复盘](ch09/132-glm-5-scaling-pain.md)

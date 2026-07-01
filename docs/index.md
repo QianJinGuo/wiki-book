@@ -11,7 +11,7 @@
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
 | 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1109 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 919 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 921 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 425 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 95 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 31 篇 |
@@ -65,7 +65,7 @@
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 545 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 546 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
   - ⭐ From idea to AI app: creating intelligent research assistants
-  - ... 共 **545** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **546** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 91 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -130,7 +130,7 @@
   - ⭐⭐⭐ JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiu
   - ... 共 **26** 篇 → [完整章节](ch08-multi-agent.md)
 
-### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 131 篇
+### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 132 篇
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
   - ⭐ Claude Code Agent View
@@ -141,7 +141,7 @@
   - ⭐⭐ AI Coding 入门指南 - 如何更好地让AI真正帮你干活
   - ⭐⭐ 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类
   - ⭐⭐ Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
-  - ... 共 **131** 篇 → [完整章节](ch09-ai-coding.md)
+  - ... 共 **132** 篇 → [完整章节](ch09-ai-coding.md)
 
 ### [Ch10 RAG 与知识检索](ch10-rag.md) — 24 篇
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
@@ -156,7 +156,7 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **24** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 919 篇**
+> 📖 **本篇共 921 篇**
 
 ---
 
@@ -304,6 +304,6 @@
 
 ---
 
-**📊 全书收录：2579 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：2581 篇实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-06-25 | 来源: ~/wiki/entities/
