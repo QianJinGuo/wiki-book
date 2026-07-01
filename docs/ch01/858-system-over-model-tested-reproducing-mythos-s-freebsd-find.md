@@ -32,9 +32,9 @@ System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Wei
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/209-openclaw.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/210-openclaw.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
 
 ## 实践启示
 1. **工程落地**: article领域方案需关注可观测性、可维护性和成本效率

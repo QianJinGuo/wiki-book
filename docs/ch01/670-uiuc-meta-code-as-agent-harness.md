@@ -20,7 +20,7 @@
 - [democratizing machine learning at netflix: building the mode](ch11/232-democratizing-machine-learning-at-netflix-building-the-mode.md)
 - [gemma 4 and what makes an open model succeed](ch01/608-gemma-4-and-what-makes-an-open-model-succeed.md)
 - [how my non-engineering team at sentry learned to ship](ch01/422-how-my-non-engineering-team-at-sentry-learned-to-ship.md)
-- [我把 karpathy 的 autoresearch 搬到了软件开发领域，效果炸了](ch04/244-karpathy-autoresearch.md)
+- [我把 karpathy 的 autoresearch 搬到了软件开发领域，效果炸了](ch04/246-karpathy-autoresearch.md)
 - [building is just the beginning: introducing discoverability](ch12/082-building-is-just-the-beginning-introducing-discoverability.md)
 - [opd revisiting failure modes simple fixes storm](ch01/791-opd-revisiting-failure-modes-simple-fixes-storm.md)
 - [scaling camera file processing at netflix](ch11/018-scaling-camera-file-processing-at-netflix.md)
@@ -63,9 +63,9 @@ UIUC、Meta、斯坦福等最新综述！Code as Agent Harness 涉及agent领域
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/044-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 

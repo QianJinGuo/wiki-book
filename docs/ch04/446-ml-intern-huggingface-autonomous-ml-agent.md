@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [Anthropic Multi Agent Research System](ch04/462-anthropic-multi-agent-research-system.md)
-- [Deerflow Hermes Openclaw Comparison](ch11/209-openclaw.md)
+- [Deerflow Hermes Openclaw Comparison](ch11/210-openclaw.md)
 - [Hermes Agent Getting Started Guide 2026](ch03/044-agent.md)
 - [Hermes Agent Deep Dive Alibaba](ch03/044-agent.md)
 - [Claude Opus 47](ch01/380-claude.md)

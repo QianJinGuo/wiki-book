@@ -267,7 +267,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
 - [Kimi Work 300 Agent Cluster Yin John Agi Hunt](ch03/044-agent.md)
 - [Your First Ai Agent Should Do One Thing Badly](ch04/341-your-first-ai-agent-should-do-one-thing-badly.md)
-- [A Missing Layer In Agentic Systems](ch04/314-a-missing-layer-in-agentic-systems.md)
+- [A Missing Layer In Agentic Systems](ch04/323-a-missing-layer-in-agentic-systems.md)
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps 1778979925](ch03/044-agent.md)
 - [Hermes Agent Soul Md Personality Shugex](ch03/044-agent.md)
 - [Lessons From 2 Billion Agentic Workflows](ch04/369-lessons-from-2-billion-agentic-workflows.md)

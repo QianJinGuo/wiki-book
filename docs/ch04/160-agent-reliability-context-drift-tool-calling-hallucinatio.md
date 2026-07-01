@@ -91,7 +91,7 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/378-claude-code-harness-deep-understanding.md)
 - [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
 - [Agent 自我改进的六条路](ch03/044-agent.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/044-agent.md)
 - [Harness如何支撑Agent在生产环境稳定运行？](ch03/044-agent.md)
 - [Agent架构关键变化：Harness正在成为新后端](ch03/044-agent.md)

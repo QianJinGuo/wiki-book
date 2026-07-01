@@ -93,8 +93,8 @@ Steinberger 的观点：做某件事超过一次 → 转化为自动化技能；
 ## 相关实体
 
 - [MCP 12 设计模式](ch03/044-agent.md)
-- [OpenClaw 多智能体团队](ch11/209-openclaw.md)
-- [OpenClaw 完全指南](ch11/209-openclaw.md)
+- [OpenClaw 多智能体团队](ch11/210-openclaw.md)
+- [OpenClaw 完全指南](ch11/210-openclaw.md)
 - [Claude Code 源码机制](ch03/074-claude-code.md)
 - [Karpathy: Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
 - [Agent 原理与工程实践](ch03/044-agent.md)

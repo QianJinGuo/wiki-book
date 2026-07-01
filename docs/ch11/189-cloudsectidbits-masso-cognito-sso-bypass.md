@@ -29,7 +29,7 @@
 **使用maSSO进行Cognito多租户平台的OIDC/SAML入站测试。** Doyensec开源的maSSO工具（doyensec/maSSO）可模拟恶意IdP向目标SP发送可控的OIDC code flow、SAML断言和/userinfo响应，是发现本文所述各类攻击面的标准化测试工具。建议在CI/CD流程中集成基于maSSO的模糊测试用例，覆盖triggerSource分支和sub字段注入场景 。
 
 ## 相关实体
-- [Aws Transform Ezconvertbi Bi Migration](ch11/187-aws-transform-ezconvertbi-bi-migration.md)
+- [Aws Transform Ezconvertbi Bi Migration](ch11/192-aws-transform-ezconvertbi-bi-migration.md)
 - [Amazon Cloudfront Deploy Guide Cloudfront Domain Multi Tenant Architecture](ch04/150-ai.md)
 - [Amazon Bedrock Api Security Guide](ch12/032-amazon-bedrock-api.md)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/256-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)

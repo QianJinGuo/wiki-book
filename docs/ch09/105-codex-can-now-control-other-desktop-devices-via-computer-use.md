@@ -15,7 +15,7 @@
 - [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](ch12/058-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.md)
 - [Cve 2026 20182 Cisco Sd Wan Vhub Bypass](https://github.com/QianJinGuo/wiki/blob/main/entities/cve-2026-20182-cisco-sd-wan-vhub-bypass.md)
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
-- [Computer Use 45X More Expensive Than Structured Apis](ch04/242-computer-use-45x-more-expensive-than-structured-apis.md)
+- [Computer Use 45X More Expensive Than Structured Apis](ch04/248-computer-use-45x-more-expensive-than-structured-apis.md)
 - [Workspaceupdates Googleblog Com Google Workspace Updates](https://github.com/QianJinGuo/wiki/blob/main/entities/workspaceupdates-googleblog-com-google-workspace-updates.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/codex-can-now-control-other-desktop-devices-via-computer-use.md)

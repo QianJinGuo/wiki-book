@@ -96,9 +96,9 @@ Dispatch 不仅是一个产品功能，而是 Anthropic 界面战略的关键一
 ## 相关实体
 
 - [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/074-claude-code.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/210-openclaw.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
 - [incendium fuzzing ms rpc](ch12/103-incendium-fuzzing-ms-rpc.md)

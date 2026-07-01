@@ -51,7 +51,7 @@ A²RD 本质上是一个"智能体驱动的闭环系统"。Retrieve–Synthesize
 
 - [A²RD: Agentic Autoregressive Diffusion for Long Video Consistency](ch03/044-agent.md)
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch03/044-agent.md)
-- [Extreme Co-Design for Agentic Systems Complexity (NVIDIA)](ch04/041-nvidia-extreme-co-design-agentic-systems.md)
+- [Extreme Co-Design for Agentic Systems Complexity (NVIDIA)](ch04/042-nvidia-extreme-co-design-agentic-systems.md)
 - [cvpr冠军代码开源：小米svor破解视频消除三大顽疾，连人带影一键抹除](https://github.com/QianJinGuo/wiki/blob/main/entities/cvpr-xiaomi-svor-video-masking.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 

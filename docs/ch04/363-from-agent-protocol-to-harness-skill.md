@@ -49,7 +49,7 @@ Agent Protocol → MCP Tool Calling → A2A Collaboration → Harness Skill
 
 ## 相关实体
 - [Agent Harness 架构](ch03/044-agent.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/209-openclaw.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/210-openclaw.md)
 - [Claude Code 源码核心机制详解](ch03/074-claude-code.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
 - [柚漫剧 AI 全流程提效拆解](ch04/150-ai.md)

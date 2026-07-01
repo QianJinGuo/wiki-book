@@ -52,7 +52,7 @@ AWS Network Firewall 允许在同一个 Firewall Policy 下关联多个 Rule Gro
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)

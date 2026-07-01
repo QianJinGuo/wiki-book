@@ -103,11 +103,11 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 - [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/150-ai.md)
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](ch03/044-agent.md)
 - [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](ch04/150-ai.md)
-- [foundation capital agent era six insights](ch04/173-foundation-capital-agent-era-six-insights.md)
+- [foundation capital agent era six insights](ch04/175-foundation-capital-agent-era-six-insights.md)
 - [Agent 时代架构师技能指南](ch04/245-skill.md)
 - [快手首个打工人Agent](ch04/150-ai.md)
-- [from](ch04/259-from-system-of-record-to-system-of-intelligence.md)
-- [from](ch04/259-from-system-of-record-to-system-of-intelligence.md)
+- [from](ch04/260-from-system-of-record-to-system-of-intelligence.md)
+- [from](ch04/260-from-system-of-record-to-system-of-intelligence.md)
 - [meet customers where they are: agentforce contact center now](ch03/044-agent.md)
 
 ---

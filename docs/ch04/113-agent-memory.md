@@ -148,7 +148,7 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 - [Agent Memory 架构本质](ch03/044-agent.md)
 - [memory agent systems cobanov](ch04/480-memory-agent-systems-cobanov.md)
 
-- [AI Agent 记忆系统架构](ch04/145-how-ai-agent-memory-works.md)
+- [AI Agent 记忆系统架构](ch04/147-how-ai-agent-memory-works.md)
 - [深度拆解 Hermes Agent 记忆系统](ch03/044-agent.md)
 - [ai agent memory systems](ch04/150-ai.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
@@ -156,7 +156,7 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 - [Agent Harness 架构](ch03/044-agent.md)
 - [Agent 自我改进的六条路](ch03/044-agent.md)
 - [Agent架构关键变化：Harness正在成为新后端](ch03/044-agent.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/209-openclaw.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/210-openclaw.md)
 - [AI Coding Agent 记忆系统](ch04/150-ai.md)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)

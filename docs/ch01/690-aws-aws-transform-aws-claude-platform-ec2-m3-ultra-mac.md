@@ -55,7 +55,7 @@ AWS Interconnect 扩展至 Oracle Cloud（预览），加上已有的 Google Clo
 ## 相关实体
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/380-claude.md)
 - [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
-- [Aws Transform Ezconvertbi Bi Migration](ch11/187-aws-transform-ezconvertbi-bi-migration.md)
+- [Aws Transform Ezconvertbi Bi Migration](ch11/192-aws-transform-ezconvertbi-bi-migration.md)
 - [Aws Aidl Paradigm Shift Platform Driven Data Engineering](ch04/150-ai.md)
 - [Aws Reinvent Game Demo 2024 25](ch11/210-aws-reinvent-game-demo-2024-25.md)
 

@@ -145,7 +145,7 @@ Luke 公开的 Mission 实战数字值得仔细解读：
 - [Factory Missions Multi-Agent Shipping](ch03/044-agent.md)——同主题的姊妹篇
 - [Claude Code Agent Teams 任务分解](ch03/074-claude-code.md)——任务分解策略的另一视角
 - [Harness Engineering Core Patterns](ch03/074-claude-code.md)——声明式编排的工程哲学
-- [OpenClaw 多 Agent 团队实践](ch04/038-openclaw-multi-agent-team-practice-v2.md)——多 Agent 落地的国内实践
+- [OpenClaw 多 Agent 团队实践](ch04/040-openclaw-multi-agent-team-practice-v2.md)——多 Agent 落地的国内实践
 - [Claude Managed Agents 企业自托管](ch03/044-agent.md)——Multi-Agent 的企业部署形态
 - [Agent 记忆系统工程实践](ch03/044-agent.md)——过程资产积累的方向
 - [Harness 状态边界与失败闭环](ch05/009-harness.md)——边界即文档的工程哲学

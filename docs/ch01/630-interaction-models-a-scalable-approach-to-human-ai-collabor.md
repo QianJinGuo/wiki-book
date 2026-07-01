@@ -21,7 +21,7 @@ We train an interaction model from...
 ## 相关实体
 - [OpenAI buys AI consultancy to sell enterprises on its models](ch01/861-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.md)
 - [Interaction Models](ch01/522-thinking-machines-interaction-models-ai-cold.md)
-- [Thinking Machines 交互模型（Interaction Models）](ch04/284-thinking-machines-interaction-models.md)
+- [Thinking Machines 交互模型（Interaction Models）](ch04/285-thinking-machines-interaction-models.md)
 
 ## 深度分析
 **1. "协作瓶颈"揭示的人机交互根本矛盾**

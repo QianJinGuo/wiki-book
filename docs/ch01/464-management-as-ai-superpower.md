@@ -106,7 +106,7 @@ Mollick 的三变量公式（Human Baseline Time、Probability of Success、AI P
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
 - [The Bitter Lesson Versus The Garbage Can](ch04/309-the-bitter-lesson-versus-the-garbage-can.md)
 - [Claude Code And What Comes Next](ch01/403-claude-code-and-what-comes-next.md)
 - [Your First Ai Agent Should Do One Thing Badly](ch04/341-your-first-ai-agent-should-do-one-thing-badly.md)

@@ -10,8 +10,8 @@
 
 ## 相关实体
 - [Ai Is Writing More Code Your Ci Pipeline](ch04/150-ai.md)
-- [From System Of Record To System Of Intelligence](ch04/259-from-system-of-record-to-system-of-intelligence.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/818-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
+- [From System Of Record To System Of Intelligence](ch04/260-from-system-of-record-to-system-of-intelligence.md)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/888-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](ch04/150-ai.md)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/245-skill.md)
 

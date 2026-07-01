@@ -320,7 +320,7 @@ final_answer_mismatch
 - [Agent YAML 评测](ch03/044-agent.md) — YAML-driven evaluation 是 Evaluator 工程化的一种
 - [Claude Code 深度解析](ch03/074-claude-code.md) — Claude Code 的评估观测层工程实践
 - [深入理解 Claude Code Harness](ch03/074-claude-code.md) — Plan Mode + Tasks 系统的"避免问题复发"机制
-- [OpenClaw 完整指南](ch11/209-openclaw.md) — 开源 Agent 的故障处理与自我恢复机制
+- [OpenClaw 完整指南](ch11/210-openclaw.md) — 开源 Agent 的故障处理与自我恢复机制
 - [Agent 记忆系统实践](ch03/044-agent.md) — Agent Overview 是 Memory 模块的诊断侧应用- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](ch04/150-ai.md)
 
 ---

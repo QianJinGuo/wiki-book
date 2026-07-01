@@ -25,7 +25,7 @@ workspace/
 对比 vault 中其他工作区方案：
 
 - [Agent Harness 架构](ch03/044-agent.md) — 7层金字塔模型，Harness 定位为 Agent 的"后台基础设施"
-- [OpenClaw Prompt/Harness](ch11/209-openclaw.md) — 个人单机假设，workspace 即本地目录
+- [OpenClaw Prompt/Harness](ch11/210-openclaw.md) — 个人单机假设，workspace 即本地目录
 - [Thin Harness Fat Skills](ch04/245-skill.md) — Thin Harness 理念：Harness 做薄（最小协调层），Skill 做厚（业务逻辑）
 
 ### 支柱二：AbstractFilesystem 抽象

@@ -15,7 +15,7 @@ Amazon Web Services (AWS)
 
 ## 相关实体
 - [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/038-openclaw-multi-agent-team-practice-v2.md)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/040-openclaw-multi-agent-team-practice-v2.md)
 - [Agent 原理、架构与工程实践](ch04/441-agent-engineering-principles-architecture-practice.md)
 - [OpenClaw 多智能体团队搭建实战经验](ch03/044-agent.md)
 - [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](ch04/150-ai.md)

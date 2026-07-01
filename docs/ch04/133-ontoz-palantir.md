@@ -178,7 +178,7 @@
 
 ## 相关主题
 
-- 多智能体协同 — [Openclaw Multi Agent Team Practice V2](ch04/038-openclaw-multi-agent-team-practice-v2.md)
+- 多智能体协同 — [Openclaw Multi Agent Team Practice V2](ch04/040-openclaw-multi-agent-team-practice-v2.md)
 - 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch04/150-ai.md)
 - 智能体协议 — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](ch01/436-codex.md)

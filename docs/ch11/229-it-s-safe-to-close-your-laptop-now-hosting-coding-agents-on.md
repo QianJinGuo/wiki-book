@@ -38,9 +38,9 @@ There’s a habit going around.
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
 - [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/074-claude-code.md)
 
 ## 实践启示

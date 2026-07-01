@@ -665,7 +665,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 - [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](ch03/044-agent.md)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch04/150-ai.md)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/240-bedrock.md)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/025-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/026-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch11/197-amazon-quick.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 
@@ -1646,8 +1646,8 @@ Oracle 强调其数据库将验证直接构建到数据核心中，以应对 AI 
 - [Introducing Oracle Deep Data Security: Context-Aware Data Access Control for Agentic AI in Oracle AI Database 26ai](https://blogs.oracle.com/database/introducing-oracle-deep-data-security-identity-aware-data-access-control-for-agentic-ai-in-oracle-ai-database-26ai)（2026-03-24）
 
 ## 相关实体
-- [From System Of Record To System Of Intelligence](ch04/259-from-system-of-record-to-system-of-intelligence.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/818-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
+- [From System Of Record To System Of Intelligence](ch04/260-from-system-of-record-to-system-of-intelligence.md)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/888-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](ch04/150-ai.md)
 - [A2Rd Agentic Autoregressive Diffusion Long Video](ch03/044-agent.md)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/245-skill.md)
@@ -1796,10 +1796,10 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md) — Agent 原理架构的综合性参考
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md) — Agent 范式跃迁的视角
-- [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md) — 同源访谈的另一标题版本
+- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md) — 同源访谈的另一标题版本
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md) — AWS Bedrock AgentOps 的规模化运营实践
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/209-openclaw.md) — 多智能体团队搭建的实战经验
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md) — OpenClaw 多智能体系统化教程
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/210-openclaw.md) — 多智能体团队搭建的实战经验
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/210-openclaw.md) — OpenClaw 多智能体系统化教程
 - [Cline Agent Runtime Sdk](ch03/044-agent.md) — Cline SDK 的多工具编排能力，与 EVA-Bench 121 工具规模相互映照
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 
@@ -3022,7 +3022,7 @@ Transforming rare cancer research with Amazon Quick: Integrating biomedical data
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
 
 ## 实践启示
@@ -3127,8 +3127,8 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
 
@@ -3238,7 +3238,7 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 <div style="line-height: 1.8;margin: 0;padding: 0">
 
 ## 相关实体
-- [From System Of Record To System Of Intelligence](ch04/259-from-system-of-record-to-system-of-intelligence.md)
+- [From System Of Record To System Of Intelligence](ch04/260-from-system-of-record-to-system-of-intelligence.md)
 - [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](ch04/150-ai.md)
 - [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki/blob/main/entities/london-met-police-big-tech-data-requests.md)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/044-agent.md)

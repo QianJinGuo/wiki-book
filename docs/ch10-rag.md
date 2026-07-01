@@ -46,7 +46,7 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 - [Tcjndrk4Frmumngmboih W](https://github.com/QianJinGuo/wiki/blob/main/entities/tCjNDrk4fRMUmngmbOih-w.md)
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
 - [Identity Behavior Context Itdr Solution](ch01/115-identity-behavior-context-itdr-solution-teleport.md)
-- [Openclaw Cloud Storage Config Guide Wechat](ch11/209-openclaw.md)
+- [Openclaw Cloud Storage Config Guide Wechat](ch11/210-openclaw.md)
 - [Microsoft Is Quietly Shopping For An Openai Replac](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/PGpkC04XfF7ilMDb9vOcNQ.md)
@@ -94,7 +94,7 @@ FRAGMENTED AUDIT LOGS NO CROSS-SYSTEM CONTEXT MANUAL LOG CORRELATION AI SESSIONS
 - [Identity Behavior Context Itdr Solution Teleport](ch01/115-identity-behavior-context-itdr-solution-teleport.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
 - [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/PGpkC04XfF7ilMDb9vOcNQ.md)
-- [Openclaw Cloud Storage Config Guide Wechat](ch11/209-openclaw.md)
+- [Openclaw Cloud Storage Config Guide Wechat](ch11/210-openclaw.md)
 - [Microsoft Agent Framework Python Full Guide Zizhi](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/identity-behavior-context-itdr-solution.md)
@@ -815,9 +815,9 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md)
-- [Nvidia Extreme Co Design Agentic Systems](ch04/041-nvidia-extreme-co-design-agentic-systems.md)
+- [Nvidia Extreme Co Design Agentic Systems](ch04/042-nvidia-extreme-co-design-agentic-systems.md)
 - [Nvidia Agentic Ai Subsurface Engineering](ch04/324-nvidia-agentic-ai-subsurface-engineering.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/344-nvidia-secure-local-agent-nemoclaw-openclaw.md)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/351-nvidia-secure-local-agent-nemoclaw-openclaw.md)
 - [Nvidia Telco Reasoning Models Nemo](ch01/189-nvidia-telco-reasoning-models-nemo.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
@@ -949,7 +949,7 @@ RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embed
 - [RAG 全链路技术详解](ch01/207-rag.md)
 - [RAG 分块向量化召回重排流水线](ch01/207-rag.md)
 - [向量库 vs 知识图谱：RAG 的进阶路径](ch01/207-rag.md)
-- [AI Agent 记忆系统工作原理](ch04/145-how-ai-agent-memory-works.md)
+- [AI Agent 记忆系统工作原理](ch04/147-how-ai-agent-memory-works.md)
 
 ## 深度分析
 
@@ -2285,8 +2285,8 @@ Please note that the text representation of the host-level graph is shipped in 2
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)

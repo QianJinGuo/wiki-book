@@ -58,7 +58,7 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 - [Rag技术框架的演进方向](ch01/207-rag.md)
 - [Graphify](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md) — 同一赛道的另一款软件工程知识图谱工具
 - [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor.com-composer-2-5.md) — 同为 AI coding 工具
-- [How Ai Agent Memory Works](ch04/145-how-ai-agent-memory-works.md) — Agent 记忆机制
+- [How Ai Agent Memory Works](ch04/147-how-ai-agent-memory-works.md) — Agent 记忆机制
 
 ## 第 2 来源：码途漫谈 2026-06-11 补充视角
 

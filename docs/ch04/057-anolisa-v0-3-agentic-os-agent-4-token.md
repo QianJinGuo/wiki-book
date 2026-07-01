@@ -256,7 +256,7 @@ ANOLISA v0.3 架构
 
 - **通过 OpenClaw 的 Hook 机制扩展 ANOLISA 的安全策略**。ANOLISA 的 Copilot Shell（cosh）提供了完善的 Hook 功能，支持会话导出和自定义状态栏。可以利用 Hook 在每次 Agent 执行敏感操作前自动插入人工确认步骤，或将安全事件导出到 SIEM 系统，实现 ANOLISA 与企业现有安全基础设施的集成 
 
-- **关注 ANOLISA 与 [OpenClaw](ch11/209-openclaw.md) 的集成深度**。ANOLISA 的入口是 OpenClaw，而 OpenClaw 本身支持多租户和多种部署形态（ECS/Fargate/Graviton）。在评估企业级部署时，需要考虑 ANOLISA 的多 Agent 保护能力是否满足多租户场景下的隔离需求，以及 [Hermes Agent](ch03/044-agent.md) 等其他 Agent 系统是否能与 ANOLISA 的安全框架无缝协同 
+- **关注 ANOLISA 与 [OpenClaw](ch11/210-openclaw.md) 的集成深度**。ANOLISA 的入口是 OpenClaw，而 OpenClaw 本身支持多租户和多种部署形态（ECS/Fargate/Graviton）。在评估企业级部署时，需要考虑 ANOLISA 的多 Agent 保护能力是否满足多租户场景下的隔离需求，以及 [Hermes Agent](ch03/044-agent.md) 等其他 Agent 系统是否能与 ANOLISA 的安全框架无缝协同 
 
 ## 11. 局限 / 待验证
 

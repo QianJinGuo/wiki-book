@@ -13,7 +13,7 @@ Mira Murati的Thinking Machines Lab刚刚发布了新的研究成果：交互模
 用过语音AI的人都有这种感受：你必须说完，它才开始听。它说完，你才能接话。
 
 ## 相关实体
-- [Thinking Machines Interaction Models](ch04/284-thinking-machines-interaction-models.md)
+- [Thinking Machines Interaction Models](ch04/285-thinking-machines-interaction-models.md)
 - [Interaction Models](ch01/522-thinking-machines-interaction-models-ai-cold.md)
 - [Thinking Machines Lab](ch01/526-thinking-machines-lab.md)
 - [Interaction Models Human Ai](ch04/150-ai.md)

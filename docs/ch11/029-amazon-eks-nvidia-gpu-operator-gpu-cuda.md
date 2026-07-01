@@ -195,7 +195,7 @@ CUDA workload image nvidia/cuda:12.2.2-runtime-ubuntu22.04
 - [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](https://github.com/QianJinGuo/wiki/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
 - [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](https://github.com/QianJinGuo/wiki/blob/main/entities/gpu-virtualization-using-mig-technology-on-amazon-sagemaker-hyperpod.md)
 - [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch04/150-ai.md)
-- [Openclaw Amazon Bedrock Eks Printer Qc](ch11/209-openclaw.md)
+- [Openclaw Amazon Bedrock Eks Printer Qc](ch11/210-openclaw.md)
 
 ---
 

@@ -58,7 +58,7 @@ AI Coding 含量低的老系统不一定适合全自动 AI 优化。建议先用
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](ch04/245-skill.md)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/061-harness-engineering.md)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/209-openclaw.md)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/210-openclaw.md)
 
 - [Hermes Agent /goal 长任务运行时架构](ch03/044-agent.md)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](ch03/044-agent.md)

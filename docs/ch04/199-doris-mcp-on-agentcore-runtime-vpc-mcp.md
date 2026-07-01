@@ -92,7 +92,7 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [Hands Free First Notice Of Loss Using Strands Agents And Ama](ch03/044-agent.md)
 - [How Baz Improved Its Ai Agent Code Review Accuracy Using Ama](ch09/124-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md)
-- [Secure Ai Agents With Policy And Lambda Interceptors In Amaz](ch11/239-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
+- [Secure Ai Agents With Policy And Lambda Interceptors In Amaz](ch11/243-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

@@ -112,10 +112,10 @@ Hermes 在中国社区的爆发，微信集成、Notion 知识管理、股票盯
 ## 相关实体
 
 - [Hermes Agent 记忆系统深度拆解](ch03/044-agent.md)
-- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](ch11/209-openclaw.md)
-- [DeerFlow vs Hermes vs OpenClaw 深度对比](ch11/209-openclaw.md)
+- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](ch11/210-openclaw.md)
+- [DeerFlow vs Hermes vs OpenClaw 深度对比](ch11/210-openclaw.md)
 - [Hermes Agent 深度解析](ch03/044-agent.md)
-- [OpenClaw 架构八部总结](ch11/209-openclaw.md)
+- [OpenClaw 架构八部总结](ch11/210-openclaw.md)
 - [Hermes Agent 记忆系统](ch03/044-agent.md)
 - [深度拆解 Hermes 记忆系统：它修正了 OpenClaw 的哪层误区](ch03/044-agent.md)
 

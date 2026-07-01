@@ -13,7 +13,7 @@
 ## 相关实体
 - [Lbs Intentbench](ch04/252-lbs-intentbench.md)
 - [Programbench Agent Benchmark](ch04/152-programbench-agent-benchmark.md)
-- [Computer Use 45X More Expensive Than Structured Apis](ch04/242-computer-use-45x-more-expensive-than-structured-apis.md)
+- [Computer Use 45X More Expensive Than Structured Apis](ch04/248-computer-use-45x-more-expensive-than-structured-apis.md)
 - [3 Persons 100 Ai Programmers 1 3 Million Openai Pays](ch04/150-ai.md)
 - [Cursor Harness Model Production Floor](ch01/285-cursor-harness-model-production-floor.md)
 

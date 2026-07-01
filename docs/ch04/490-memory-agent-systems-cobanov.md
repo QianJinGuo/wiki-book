@@ -32,7 +32,7 @@ Mert Cobanov 的综述覆盖了 Agent 记忆系统的四种主流范式：向量
 ## 相关实体
 - [ai agent memory systems](ch04/150-ai.md)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](ch03/044-agent.md)
-- [AI Agent 记忆系统架构](ch04/145-how-ai-agent-memory-works.md)
+- [AI Agent 记忆系统架构](ch04/147-how-ai-agent-memory-works.md)
 - [深度拆解 Hermes Agent 记忆系统](ch03/044-agent.md)
 
 - [Agent Memory 架构解析](ch03/044-agent.md)

@@ -96,8 +96,8 @@ Anthropic 已经建立了一个正向飞轮：模型越强 → Harness 越顺手
 
 ## 相关实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/210-openclaw.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/074-claude-code.md)

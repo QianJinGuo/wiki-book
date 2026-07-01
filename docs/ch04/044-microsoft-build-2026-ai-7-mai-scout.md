@@ -144,7 +144,7 @@
 
 ## 与现有 wiki 实体的关系
 
-### vs [OpenClaw](ch11/209-openclaw.md)
+### vs [OpenClaw](ch11/210-openclaw.md)
 - OpenClaw = 开源 AI 编程框架，席卷 AI 圈
 - **Scout = "升级版 OpenClaw"**——基于 OpenClaw 框架构建，但加上微软企业级安全 / Entra 身份 / Intune 治理
 - **关键差异**：Scout 是"实验性 + opt-in"起步，微软承诺**向开源 OpenClaw 项目进行上游贡献**（与社区共生，非取代）
@@ -272,7 +272,7 @@
 ## 相关对照
 - [Kimi Work](ch01/436-codex.md) —— 本地桌面 Agent + Vibe Working
 - [wow-harness v3](ch05/009-harness.md) —— 跨 session 事件时间线
-- [OpenClaw](ch11/209-openclaw.md) —— 开源 AI 编程框架（Scout 基于它）
+- [OpenClaw](ch11/210-openclaw.md) —— 开源 AI 编程框架（Scout 基于它）
 - [Agent Harness 架构](ch03/044-agent.md) —— 7 层 harness 模型
 - [Agent Harness 上下文管理](ch03/044-agent.md) —— 工作集视角
 

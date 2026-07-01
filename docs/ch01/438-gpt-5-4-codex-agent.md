@@ -62,7 +62,7 @@ Nathan 的预言很值得玩味：
 
 > "I expect them to eventually look like Slack (when multiple agents need to talk to each other, under my watch)."
 
-含义：未来 agent 工具不再是"我 → 单个 agent"的对话界面，而是"我 → 多个 agent 在频道里互相沟通"的协作界面。用户从"指挥单个 agent"变成"管理 agent 团队"——这与 [Karpathy 谈的 agentic engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md) 范式转变一致：从 vibe coding（人写代码）→ agentic engineering（人协调 agent）。
+含义：未来 agent 工具不再是"我 → 单个 agent"的对话界面，而是"我 → 多个 agent 在频道里互相沟通"的协作界面。用户从"指挥单个 agent"变成"管理 agent 团队"——这与 [Karpathy 谈的 agentic engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md) 范式转变一致：从 vibe coding（人写代码）→ agentic engineering（人协调 agent）。
 
 ### 五、共同的"轻微遗忘"问题
 

@@ -139,7 +139,7 @@ graph TB
 训练 = 上学，这些机制 = 毕业后的**自学能力**。
 
 ## 相关实体
-- [foundation capital agent era six insights](ch04/173-foundation-capital-agent-era-six-insights.md)
+- [foundation capital agent era six insights](ch04/175-foundation-capital-agent-era-six-insights.md)
 - [Hermes Agent 自进化机制源码解析](ch03/044-agent.md)
 - [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch04/245-skill.md)
 - [AI Coding Agent 记忆系统](ch04/150-ai.md)
@@ -156,8 +156,8 @@ graph TB
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/378-claude-code-harness-deep-understanding.md)
 - [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
 - [Agent Harness 架构](ch03/044-agent.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/209-openclaw.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/210-openclaw.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](ch04/150-ai.md)
 - [GBrain](ch04/150-ai.md)
@@ -249,7 +249,7 @@ Meta-Harness 提出的 Big Model / Big Harness 框架有直接的工程含义：
 Tax AI 的全部知识产权归 **Thrive Holdings**（Joshua Kushner 创办，OpenAI 最大投资方之一），OpenAI 派了 6 个月工程师、给模型、给深度集成，**最后连 IP 都没留**——在硅谷大厂 AI 合作里极其罕见。
 - **OpenAI 图的不是报税产品 IP，而是「可复制的自我改进方法论」**——一个生产验证的飞轮范式
 - Thrive Holdings 已经在把同样闭环复制到 **记账、审计、IT 运维**
-- 这与 [Foundation Capital agent era](ch04/173-foundation-capital-agent-era-six-insights.md) 中"infra 厂商抢应用层 IP"的趋势一致，**但 OpenAI 反向操作：放弃应用层 IP 换生产方法论**——是更上游的卡位
+- 这与 [Foundation Capital agent era](ch04/175-foundation-capital-agent-era-six-insights.md) 中"infra 厂商抢应用层 IP"的趋势一致，**但 OpenAI 反向操作：放弃应用层 IP 换生产方法论**——是更上游的卡位
 
 ### 与现有六条框架的对应与扩展
 | OpenAI 元素 | 对应六条框架 | 本文新增洞见 |

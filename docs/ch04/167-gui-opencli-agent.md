@@ -129,7 +129,7 @@ opencli cascade https://api.example.com/hot
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)

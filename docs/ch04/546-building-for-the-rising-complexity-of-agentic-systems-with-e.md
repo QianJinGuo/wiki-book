@@ -168,7 +168,7 @@ NVIDIA 的 Extreme Co-Design 强调 Vera CPU 承担「长上下文检索操作�
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md) — 记忆系统与上下文压缩机制
 
 ## 相关实体
-- [Nvidia Extreme Co Design Agentic Systems](ch04/041-nvidia-extreme-co-design-agentic-systems.md)
+- [Nvidia Extreme Co Design Agentic Systems](ch04/042-nvidia-extreme-co-design-agentic-systems.md)
 - [Lightseek Tokenspeed](ch01/854-lightseek-tokenspeed.md)
 - [Subagents 详解Claude Code 如何避免上下文污染 V2](ch03/074-claude-code.md)
 - [Amazon Bedrock Agentic Payments Guardrails](ch04/150-ai.md)

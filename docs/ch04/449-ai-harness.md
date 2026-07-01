@@ -19,7 +19,7 @@
 - [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](https://github.com/QianJinGuo/wiki/blob/main/entities/neurips-2026-pangram-desk-reject-controversy.md)
 - [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-team-knowledge-engine-compiled-knowledge.md)
 - [scaling camera file processing at netflix](ch11/018-scaling-camera-file-processing-at-netflix.md)
-- [state of routing in model serving](ch11/172-state-of-routing-in-model-serving.md)
+- [state of routing in model serving](ch11/173-state-of-routing-in-model-serving.md)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](ch01/722-steering.md)
 - [the recent history of ai in 32 otters](ch01/505-the-recent-history-of-ai-in-32-otters.md)
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](ch04/150-ai.md)
@@ -57,10 +57,10 @@
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/210-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/044-agent.md)
 
 ## 实践启示

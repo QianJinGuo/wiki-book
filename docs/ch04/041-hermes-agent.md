@@ -88,7 +88,7 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 ## 相关实体
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](ch04/150-ai.md)
 - [AI Coding Agent 记忆系统](ch04/150-ai.md)
-- [AI Agent 记忆系统架构](ch04/145-how-ai-agent-memory-works.md)
+- [AI Agent 记忆系统架构](ch04/147-how-ai-agent-memory-works.md)
 - [Self-Evolving Agents 系统性综述](ch03/044-agent.md)
 - [Hermes Agent 记忆系统深度拆解](ch03/044-agent.md)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)

@@ -97,13 +97,13 @@ OpenAI 的"garbage collection"思路值得借鉴：后台定期运行清理 Agen
 - [Harness Engineering](ch05/061-harness-engineering.md) — 传感器失效是 latent space 工作分类错位的体现
 - [Harness 从 Prompt 到工程体系](ch01/380-claude.md) — 约束与自主权的辩证关系
 - [AIAIGC峰会嘉宾阵容](ch04/150-ai.md)
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](ch11/209-openclaw.md)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](ch11/210-openclaw.md)
 - [从提需求到部署发布全AI全自动化后研发效能全面跃升](ch04/150-ai.md)
 - [Hermes Agent vs OpenClaw 对比分析](ch03/044-agent.md)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/245-skill.md)
 - [Harness Engineering 实战：AI Coding 率从 25% 提升至 90%](ch04/150-ai.md)
 - [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
-- [OpenCLAW 完全指南](ch11/209-openclaw.md)
+- [OpenCLAW 完全指南](ch11/210-openclaw.md)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](ch03/044-agent.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/074-claude-code.md)
