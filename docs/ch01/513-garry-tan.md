@@ -109,17 +109,17 @@ Garry的80-90%标准：
 - [Agent Skill 设计模式](ch04/245-skill.md)
 - [柚漫剧 AI 全流程提效拆解](ch04/150-ai.md)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/150-ai.md)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch04/503-agent.md)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch04/502-agent.md)
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Improving token efficiency in GitHub Agentic Workflows](ch04/503-agent.md)
+- [Improving token efficiency in GitHub Agentic Workflows](ch04/502-agent.md)
 - [复杂度棘轮：AI编程的质量只升不降机制](https://github.com/QianJinGuo/wiki/blob/main/entities/complexity-ratchet.md)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
 - [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)
 - [Agent Workflows](ch04/310-agent-workflows.md)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/245-skill.md)
-- [四种 Sub Agent 模式](ch04/503-agent.md)
+- [四种 Sub Agent 模式](ch04/502-agent.md)
 
 ---
 

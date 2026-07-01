@@ -15,7 +15,7 @@
 - [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](ch04/150-ai.md)
 - [Ai Driven Layoffs Business Sense Cio](ch04/150-ai.md)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/150-ai.md)
-- [Clinereleasesopen Sourceagentruntimesdk](ch04/503-agent.md)
+- [Clinereleasesopen Sourceagentruntimesdk](ch04/502-agent.md)
 - [Running An Ai Native Engineering Org](ch01/045-running-an-ai-native-engineering-org.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-driven-layoffs-arent-making-business-sense.md)

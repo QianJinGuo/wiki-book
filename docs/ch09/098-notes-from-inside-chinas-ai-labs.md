@@ -15,7 +15,7 @@ The Chinese companies building language models are set up as the perfect fast-fo
 - [Notes Inside China Ai Labs Lambert](ch09/081-notes-inside-china-ai-labs-lambert.md)
 - [Anthropic](ch01/707-anthropic.md)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
-- [Anthropic Claude Managed Agents Platform 2026](ch04/503-agent.md)
+- [Anthropic Claude Managed Agents Platform 2026](ch04/502-agent.md)
 - [News Sap Com Sap Unveils The Autonomous Enterprise](ch04/094-sap-unveils-the-autonomous-enterprise.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/notes-from-inside-chinas-ai-labs.md)

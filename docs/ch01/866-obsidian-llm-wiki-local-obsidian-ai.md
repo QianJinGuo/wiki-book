@@ -60,7 +60,7 @@ obsidian-llm-wiki-local: Obsidian本地AI知识图谱自动构建工具 涉及da
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/502-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
 
 ## 实践启示

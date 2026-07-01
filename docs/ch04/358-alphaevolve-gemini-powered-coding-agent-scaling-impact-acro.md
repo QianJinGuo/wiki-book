@@ -13,7 +13,7 @@
 <path d="M5.41 7.59L4 9l8 8 8-8-1.41-1.41L12 14.17"></path></svg><svg viewbox="0 0 24 24" id=arrow-back>
 
 ## 相关实体
-- [Alphaevolve Deepmind Discovery Agent](ch04/503-agent.md)
+- [Alphaevolve Deepmind Discovery Agent](ch04/502-agent.md)
 - [Agentmemory Source Analysis Coding Agent Local Memory](ch09/034-agentmemory.md)
 - [Alphaevolve Impact Deepmind](ch04/382-alphaevolve-impact-deepmind.md)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](ch09/043-coding-agent.md)

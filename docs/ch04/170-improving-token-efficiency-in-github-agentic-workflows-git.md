@@ -83,8 +83,8 @@ ET = m × (1.0 × I + 0.1 × C + 4.0 × O)
 - → ：MCP 工具注册优化的不同路径（Tool Search vs 裁剪）
 - → ：Subagent 模式的上下文隔离与本文的 CLI subagent 策略互补
 - → [Prompt Caching 工程实践](ch01/198-anthropic-prompt-caching-claude-code.md)：缓存策略是 token 优化的另一维度
-- → [Agent Harness 12 组件与 7 个关键决策](ch04/503-agent.md)：工具选择决策树与本文的 MCP vs CLI 选型呼应
-- → [Agentic Systems Extreme Co-Design（NVIDIA）](ch04/503-agent.md)：从硬件/推理引擎角度审视 token 效率，与本文的 workflow 层优化形成互补
+- → [Agent Harness 12 组件与 7 个关键决策](ch04/502-agent.md)：工具选择决策树与本文的 MCP vs CLI 选型呼应
+- → [Agentic Systems Extreme Co-Design（NVIDIA）](ch04/502-agent.md)：从硬件/推理引擎角度审视 token 效率，与本文的 workflow 层优化形成互补
 
 ## 深度分析
 ### 1. API Proxy 架构是 token 可观测性的基础设施
@@ -122,9 +122,9 @@ Auditor + Optimizer 的双 workflow 设计值得借鉴：每日扫描 → 标记
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/github-agentic-token-efficiency.md)
 
 ## 相关实体
-- [Improving token efficiency in GitHub Agentic Workflows](ch04/503-agent.md)
+- [Improving token efficiency in GitHub Agentic Workflows](ch04/502-agent.md)
 
-- [Token Efficiency](ch04/503-agent.md)
+- [Token Efficiency](ch04/502-agent.md)
 ````
 
 ---

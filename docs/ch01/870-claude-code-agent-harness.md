@@ -44,7 +44,7 @@
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch04/502-agent.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

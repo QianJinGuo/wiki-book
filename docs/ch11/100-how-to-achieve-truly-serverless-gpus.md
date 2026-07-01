@@ -28,9 +28,9 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cloud-infrastructure.md)
 
-- [TiDB Cloud — Agent-native 数据库与 Kimi K2.6 合作](ch04/503-agent.md)
-- [Kimi K2.6 Agent Database：Agent-native 数据 Infra](ch04/503-agent.md)
-- [阿里云 EventHouse 企业级 Agent 上下文供给体系](ch04/503-agent.md)
+- [TiDB Cloud — Agent-native 数据库与 Kimi K2.6 合作](ch04/502-agent.md)
+- [Kimi K2.6 Agent Database：Agent-native 数据 Infra](ch04/502-agent.md)
+- [阿里云 EventHouse 企业级 Agent 上下文供给体系](ch04/502-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mcp-server-patterns.md)
 
 ---

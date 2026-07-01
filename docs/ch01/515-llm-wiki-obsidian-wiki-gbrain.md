@@ -15,7 +15,7 @@
 ## 相关实体
 - [Claude Code Harness Deep Dive Founder Park](ch03/073-claude-code.md)
 - [Claude Code Prompt Context Harness](ch03/073-claude-code.md)
-- [Hermes Agent Deep Dive Alibaba](ch04/503-agent.md)
+- [Hermes Agent Deep Dive Alibaba](ch04/502-agent.md)
 - [Claude Code Search Architecture Tencent 2026](ch03/073-claude-code.md)
 - [Openclaw Prompt Context Harness](ch11/209-openclaw.md)
 

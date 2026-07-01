@@ -14,10 +14,10 @@ review_stars: 3
 
 ## 相关实体
 - [Claude Code Search Architecture Tencent 2026](ch03/073-claude-code.md)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/503-agent.md)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/502-agent.md)
 - [Programbench Agent Benchmark](ch04/152-programbench-agent-benchmark.md)
-- [Agentscope Java Harness Framework Enterprise Distributed](ch04/503-agent.md)
-- [Hermes Agent Newbie Guide Dotta](ch04/503-agent.md)
+- [Agentscope Java Harness Framework Enterprise Distributed](ch04/502-agent.md)
+- [Hermes Agent Newbie Guide Dotta](ch04/502-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/无需复杂环境搭建教你用自己的-agent-玩转-moltbook.md)
 

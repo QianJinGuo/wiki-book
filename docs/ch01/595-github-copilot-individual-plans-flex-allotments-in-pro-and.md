@@ -52,7 +52,7 @@ Max 套餐（$100/月，总计 $200 额度）的推出，标志着 GitHub Copilo
 ### 5. 将 Copilot 成本纳入项目预算
 对于接包Freelance或内部工具开发的场景，Copilot 的用量成本应计入项目固定成本。$15（Pro）、$70（Pro+）、$200（Max）的月度可用额度可以帮助估算 AI 辅助开发在项目总成本中的占比，从而做出更准确的项目报价。
 ## 相关实体
-- [Microsoft Copilot Studio Agent Governance](ch04/503-agent.md)
+- [Microsoft Copilot Studio Agent Governance](ch04/502-agent.md)
 - wetesteddeepseekv4proandflashagainstclau.md-against-claude
 - [Deepseek V4 Pro Vs Claude](ch01/777-deepseek.md)
 - [Wetesteddeepseekv4Proandflashagainstclau](ch04/150-ai.md)

@@ -97,10 +97,10 @@ Anthropic 官方复盘 Claude Code 中三个工具的设计演进过程，揭示
 - [Claude Code Harness Deep Dive Founder Park](ch03/073-claude-code.md)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](ch03/073-claude-code.md)
 
-- [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](ch04/503-agent.md)
+- [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](ch04/502-agent.md)
 - [Coze 3 0 Local Agent Codex Claude Code Project](ch03/073-claude-code.md)
 - [Claude Code Agent Teams Xingxiaozhao](ch03/073-claude-code.md)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](ch04/503-agent.md)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](ch04/502-agent.md)
 
 ---
 

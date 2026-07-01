@@ -85,7 +85,7 @@ Sandbox worker（microVM 级别硬件隔离）本身就是一个 worker，这意
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
 ## 相关页面
-[Agentcore Harness](ch04/503-agent.md) — AWS 托管 Harness 平台，同样探索 Agent 基础设施抽象
+[Agentcore Harness](ch04/502-agent.md) — AWS 托管 Harness 平台，同样探索 Agent 基础设施抽象
 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 六层框架
 [Thin Harness Fat Skills](ch04/245-skill.md) — YC/Garry Tan 的 Fat Skills + Thin Harness 思路
 [Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — OpenClaw 同样探索 Agent 基础设施薄抽象

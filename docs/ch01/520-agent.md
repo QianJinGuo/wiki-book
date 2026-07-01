@@ -20,8 +20,8 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/你不知道的-agent原理架构与工程实践.md)
 
 ## 相关实体
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](ch04/503-agent.md)
-- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](ch04/503-agent.md)
+- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](ch04/502-agent.md)
+- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](ch04/502-agent.md)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/150-ai.md)
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch04/150-ai.md)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/015-harness.md)
@@ -34,9 +34,9 @@
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/150-ai.md)
 
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](ch04/503-agent.md)
+- [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](ch04/502-agent.md)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch04/150-ai.md)
-- [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch04/502-agent.md)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/073-claude-code.md)
 - [吴恩达：AI 将最先杀死前端](ch04/150-ai.md)
@@ -45,9 +45,9 @@
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
 - [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/707-anthropic.md)
 - [你写的 Skill，及格了吗？](ch04/245-skill.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/503-agent.md)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/502-agent.md)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch01/380-claude.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/503-agent.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/502-agent.md)
 - [AI Agent 工程师能力地图](ch04/150-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 

@@ -39,8 +39,8 @@ Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI 
 ### 与现有知识体系的关联
 
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/503-agent.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/502-agent.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/502-agent.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md)
 

@@ -51,7 +51,7 @@ AWS 在 2026-06 发布的一篇 IDP（智能文档处理）架构深度文章，
 
 - [optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat](ch12/045-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.md) — 同 BDA 平台，本文是 IDP 4 层架构全景，optimize-blueprint 是单点 blueprint 优化深度
 - [building-supercharger-how-rocket-close-optimized-title-opera](ch04/188-building-supercharger-how-rocket-close-optimized-title-oper.md) — 金融场景生产 case study (Rocket Close)，Strands Agents + Bedrock + MCP
-- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](ch04/503-agent.md) — AgentCore Runtime 深度（与本文 Strands on AgentCore 对应）
+- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](ch04/502-agent.md) — AgentCore Runtime 深度（与本文 Strands on AgentCore 对应）
 - [process-financial-documents-using-amazon-bedrock-data-automa](ch11/240-bedrock.md) — 金融文档 BDA 案例
 - [automate-schema-generation-for-intelligent-document-processing](ch11/160-automate-schema-generation-for-intelligent-document-processi.md) — schema 自动生成（与 BDA blueprint 互补）
 

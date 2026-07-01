@@ -37,12 +37,12 @@ MCP 正在成为 Agent 集成的实际标准，但厂商实现差异很大。Ser
 ServiceNow 愿意接纳 Anthropic 等竞品 Agent 在其平台运行，反映了一种"平台优先"的自信战略。对企业客户而言，这意味着选择企业软件时，应优先考虑那些愿意开放自己执行层、而不是试图将客户锁在自己的 Agent 生态中的供应商。
 
 ## 相关实体
-- [The UI is dead, long live the agent: ServiceNow goes headless](ch04/503-agent.md)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/503-agent.md)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/503-agent.md)
-- [Auto-Improving Agent Platform (Ashpreet Bedi)](ch04/503-agent.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)
+- [The UI is dead, long live the agent: ServiceNow goes headless](ch04/502-agent.md)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/502-agent.md)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/502-agent.md)
+- [Auto-Improving Agent Platform (Ashpreet Bedi)](ch04/502-agent.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/502-agent.md)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch04/502-agent.md)
 
 ---
 

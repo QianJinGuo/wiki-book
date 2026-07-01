@@ -484,7 +484,7 @@ const agentTrace = {
 ## 相关实体
 
 - [Claude Code Prompt Context Harness](ch03/073-claude-code.md) - Claude Code Prompt/Context/Harness设计
-- [Hermes Agent Memory System](ch04/503-agent.md) - Hermes记忆系统
+- [Hermes Agent Memory System](ch04/502-agent.md) - Hermes记忆系统
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

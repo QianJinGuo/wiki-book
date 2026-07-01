@@ -14,7 +14,7 @@
 ## 相关实体
 - [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md)
 - [Claude Code Search Architecture Tencent 2026](ch03/073-claude-code.md)
-- [Ralph Loop 不够用长时间 Agent 还缺这 3 件事](ch04/503-agent.md)
+- [Ralph Loop 不够用长时间 Agent 还缺这 3 件事](ch04/502-agent.md)
 - [Claude Code Harness Deep Dive Founder Park](ch03/073-claude-code.md)
 - wetesteddeepseekv4proandflashagainstclau.md-against-claude
 

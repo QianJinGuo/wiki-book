@@ -22,7 +22,7 @@
 
 Self-Harness 的根本性差异化：**不依赖更强外部模型，也不靠人类逐行改配置**。Agent 在"当前 Harness 约束下"用"自己的失败证据"提出"有界修改"——本质上是 Agent 在给自己写"操作手册"。
 
-这与 [L6 Meta-Harness 编排自优化](ch04/503-agent.md) 同属一脉，但**Self-Harness 走得更远**——它把"Big Harness > Big Model"的 thesis 推到了**单模型自举**的极端：哪怕没有更强模型，固定权重的模型也能通过 Harness 自进化获得显著提升。
+这与 [L6 Meta-Harness 编排自优化](ch04/502-agent.md) 同属一脉，但**Self-Harness 走得更远**——它把"Big Harness > Big Model"的 thesis 推到了**单模型自举**的极端：哪怕没有更强模型，固定权重的模型也能通过 Harness 自进化获得显著提升。
 
 ## Harness 形式化定义
 
@@ -183,7 +183,7 @@ Self-Harness 真实运行更像**分支搜索**，会有平台期和回撤。绿
 
 ### 1. Self-Harness 与 L6 Meta-Harness 的关系
 
-[L6 Meta-Harness 编排自优化](ch04/503-agent.md) 是 [Agent 自我改进六层模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) 的最顶层，强调"Big Harness > Big Model"。Stanford 的 Meta-Harness 用 **Claude Code + Opus 4.6** 迭代优化 Harness（强模型改弱模型），7 轮迭代把文本分类推到比 ACE 高 7.7 个百分点。
+[L6 Meta-Harness 编排自优化](ch04/502-agent.md) 是 [Agent 自我改进六层模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) 的最顶层，强调"Big Harness > Big Model"。Stanford 的 Meta-Harness 用 **Claude Code + Opus 4.6** 迭代优化 Harness（强模型改弱模型），7 轮迭代把文本分类推到比 ACE 高 7.7 个百分点。
 
 Self-Harness 是**同模型自举**版本——把"需要更强模型"这个外部依赖彻底拿掉。这条路线走通后有几个深远含义：
 
@@ -224,7 +224,7 @@ Self-Harness 的接受门 **接受 ⟺ (Δa ≥ 0 AND Δb ≥ 0) AND (Δa > 0 OR
 | 方向 | 代表 | 改进对象 | Self-Harness 差异 |
 |------|------|---------|------------------|
 | 上下文/记忆自适应 | [Reflexion](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md), ACE | 回复策略、上下文 | 改**声明式 Harness 状态** |
-| 外部 Agent 设计搜索 | [ADAS](ch04/503-agent.md), [Meta-Harness](ch04/503-agent.md) | Harness 代码空间 | **无更强外部优化器** |
+| 外部 Agent 设计搜索 | [ADAS](ch04/502-agent.md), [Meta-Harness](ch04/502-agent.md) | Harness 代码空间 | **无更强外部优化器** |
 | 开放 ended 自进化 | AI Scientist, DGM | 算法/能力扩展 | **有界编辑 + 固定基准** |
 
 Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harness 变更都记录修改表面、split 结果、接受/拒绝决策，形成可追溯的 lineage。这对工程团队意味着——**Harness 可以像代码一样走 PR + 回归测试流程**，告别纯靠手感调 Prompt 的黑盒时代。
@@ -270,10 +270,10 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 
 ## 与现有实体的互补关系
 
-- [Agent 自我改进六条路](ch04/503-agent.md) — L6 Meta-Harness 编排自优化的"同模型自举"实现
-- [Agent Harness 工程学调研 2026](ch04/503-agent.md) — Self-Harness 是该领域的最新论文
-- [Agent Harness 工程学调研 etcvlovg Taxonomy](ch04/503-agent.md)
-- [Agent Production Harness Engineering](ch04/503-agent.md)
+- [Agent 自我改进六条路](ch04/502-agent.md) — L6 Meta-Harness 编排自优化的"同模型自举"实现
+- [Agent Harness 工程学调研 2026](ch04/502-agent.md) — Self-Harness 是该领域的最新论文
+- [Agent Harness 工程学调研 etcvlovg Taxonomy](ch04/502-agent.md)
+- [Agent Production Harness Engineering](ch04/502-agent.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Harness as Product Surface](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-as-product-surface.md)
 - [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)
@@ -283,7 +283,7 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 - [SGLang](ch01/555-1-sglang-radixark-ai.md) — Qwen3.5 部署用到的推理引擎
 - [DeepAgent 架构演进](ch04/150-ai.md) — 初始 Harness 基于 DeepAgent SDK
 - [ByteDance TRAE Harness Engineering Guide](ch01/531-trae-harness-engineering.md)
-- [复旦 AHE Agentic Harness Engineering](ch04/503-agent.md)
+- [复旦 AHE Agentic Harness Engineering](ch04/502-agent.md)
 - [Harness Engineering 七层架构](ch03/073-claude-code.md)
 - [Harness Component Expiry and Build-to-Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md) — Self-Harness 的"接受门"是这一思想的工程化实现
 

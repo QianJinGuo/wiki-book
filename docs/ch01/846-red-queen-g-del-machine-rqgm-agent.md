@@ -61,7 +61,7 @@ RQGM 将搜索组织为 epoch：
 ## 相关实体
 
 - [AI 递归自改进](ch04/150-ai.md) — 自改进的更广泛背景
-- [Agent 自改进六机制](ch04/503-agent.md) — 自改进机制分类
+- [Agent 自改进六机制](ch04/502-agent.md) — 自改进机制分类
 - [验证器驱动开发](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md) — 验证器在 Agent 系统中的角色
 
 ---

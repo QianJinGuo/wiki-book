@@ -105,7 +105,7 @@ Mollick 的三变量公式（Human Baseline Time、Probability of Success、AI P
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/502-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [The Bitter Lesson Versus The Garbage Can](ch04/306-the-bitter-lesson-versus-the-garbage-can.md)
 - [Claude Code And What Comes Next](ch01/362-claude-code-and-what-comes-next.md)
@@ -113,7 +113,7 @@ Mollick 的三变量公式（Human Baseline Time、Probability of Success、AI P
 - [Co Existence And The End Of Co Intelligence](ch01/496-co-existence-and-the-end-of-co-intelligence.md)
 - [Giving Your Ai A Job Interview](ch11/125-giving-your-ai-a-job-interview.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/502-agent.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)

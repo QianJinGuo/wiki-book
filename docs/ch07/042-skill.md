@@ -100,7 +100,7 @@ v1.2.0 → v1.3.0 diff:
 
 - Hermes Agent Skill Authoring — Skill 规范与编写指南
 - [Claude Code Skill Writing Guide](ch04/245-skill.md) — 另一套 Skill 编写范式
-- [高德 Uplift Model Harness](ch04/503-agent.md) — 类似的版本演进思路
+- [高德 Uplift Model Harness](ch04/502-agent.md) — 类似的版本演进思路
 - [阿里云 LoongSuite Pilot](ch09/043-coding-agent.md) — 企业级 Agent 系统的质量保障
 
 ## 结论

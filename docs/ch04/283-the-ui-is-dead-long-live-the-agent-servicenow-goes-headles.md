@@ -54,10 +54,10 @@
 *   [Awards](https://awards.thehackernews.com/)
 
 ## 相关实体
-- [Servicenow Ui Is Dead Agent](ch04/503-agent.md)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch04/503-agent.md)
-- [The Ui Is Dead Long Live The Agent](ch04/503-agent.md)
-- [Alphaevolve Deepmind Discovery Agent](ch04/503-agent.md)
+- [Servicenow Ui Is Dead Agent](ch04/502-agent.md)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch04/502-agent.md)
+- [The Ui Is Dead Long Live The Agent](ch04/502-agent.md)
+- [Alphaevolve Deepmind Discovery Agent](ch04/502-agent.md)
 - [Langchain Anatomy Agent Harness](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md)

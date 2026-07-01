@@ -92,7 +92,7 @@ SenseNova-U1 的开源选择（GitHub + HuggingFace + arXiv）是一个完整的
 3. **当前局限需要针对性评估**：32K 上下文上限对超长图文创作有约束；人物复杂场景的稳定性问题在娱乐内容生成场景需要额外后处理或人工审核。
 
 ## 相关技术
-- [DeepSeek Visual Primitives](ch09/129-deepseek-visual-primitives.md) — 视觉原语作为思考媒介（同期多模态前沿）
+- [DeepSeek Visual Primitives](ch09/130-deepseek-visual-primitives.md) — 视觉原语作为思考媒介（同期多模态前沿）
 - [Kimi AttnRes](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-attention-residuals-preNorm-dilution-block-attnres.md) — 训练效率优化
 - [Attention Mechanism](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md) — 注意力机制基础
 - [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md) — Transformer 架构演进

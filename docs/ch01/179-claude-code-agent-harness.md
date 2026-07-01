@@ -85,7 +85,7 @@ MCP 指令:         ~300 tokens
 
 **用户消息只占 0.04% 的上下文**——Agent 看到的 99.96% 是系统、规则、记忆、历史的组合。
 
-这一数据点对 Agent 设计者极有启示：**你给 Agent 的"消息"不是你输入的那一句，而是系统为你准备的所有上下文**。这与 [Headroom Context Compression](ch04/503-agent.md) 中关于"上下文是工程产物"的论述一致——上下文不是自然涌现的，而是被精心组装的。
+这一数据点对 Agent 设计者极有启示：**你给 Agent 的"消息"不是你输入的那一句，而是系统为你准备的所有上下文**。这与 [Headroom Context Compression](ch04/502-agent.md) 中关于"上下文是工程产物"的论述一致——上下文不是自然涌现的，而是被精心组装的。
 
 ### 5. 技能预算控制：1% 规则的设计哲学
 
@@ -182,7 +182,7 @@ Plan Mode 的本质是"权限系统里的状态切换"——技术上 Claude 仍
 
 **这一设计哲学揭示了 Agent 系统设计的一个深层原则**：**不要用权限禁锢 Agent，而要用行为引导**。完全禁止 Agent 做某些事会大幅降低其能力；通过提示词和行为约束引导它"先规划再执行"是更优雅的方案。
 
-这与 [Claude Managed Agents 企业自托管](ch04/503-agent.md) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
+这与 [Claude Managed Agents 企业自托管](ch04/502-agent.md) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
 
 ### 10. 终止原因的多样性：8 种退出路径
 
@@ -305,15 +305,15 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 - [Claude Code Harness 深度解析](ch03/073-claude-code.md)
 - [Claude Code Harness 深度理解](ch01/378-claude-code-harness-deep-understanding.md)
 - [GSD 上下文管理工具](ch01/196-gsd-get-shit-done-context-management-tool.md)
-- [Agent 记忆系统工程实践](ch04/503-agent.md)
+- [Agent 记忆系统工程实践](ch04/502-agent.md)
 - [Harness Engineering Core Patterns](ch03/073-claude-code.md)
 - [Harness 状态边界与失败闭环](ch05/015-harness.md)
 - [Factory Mission Multi-Agent 系统](ch04/150-ai.md)
-- [Claude Managed Agents 企业自托管](ch04/503-agent.md)
+- [Claude Managed Agents 企业自托管](ch04/502-agent.md)
 - [OpenClaw 多 Agent 团队实践](ch04/038-openclaw-multi-agent-team-practice-v2.md)
 - [OpenClaw 完全指南](ch11/209-openclaw.md)
 - [OpenClaw 多智能体团队搭建经验](ch11/209-openclaw.md)
-- [Headroom Context Compression](ch04/503-agent.md)
+- [Headroom Context Compression](ch04/502-agent.md)
 - [AI Agent Harness 构建](ch04/150-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 

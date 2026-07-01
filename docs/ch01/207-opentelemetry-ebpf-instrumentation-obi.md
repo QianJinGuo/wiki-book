@@ -176,15 +176,15 @@ ReadFromChannel -> Routes -> KubeDecorator -> DockerDecorator -> NameResolution 
 
 - **vs [Cilium Tetragon](ch01/207-rag.md)**：Tetragon 聚焦 **运行时安全/拦截**（TracingPolicy + inline kill，syscall 级防护）；OBI 聚焦 **可观测性/追踪**（trace/metrics 生成、协议语义解析）。两者都基于 eBPF 但目标层不同
 - **vs 传统 APM Agent（SkyWalking/Instana/Datadog）**：Agent 需要挂载 SDK + 改代码 + 重新发布，OBI 零侵入；代价是无法做应用层自定义埋点
-- **vs [OpenClaw 可观测 (OTel+SLS)](ch04/503-agent.md)**：OpenClaw 走的是 LLM 应用层 Session 日志方案；OBI 是内核层全栈（含 LLM Provider 协议级追踪）
+- **vs [OpenClaw 可观测 (OTel+SLS)](ch04/502-agent.md)**：OpenClaw 走的是 LLM 应用层 Session 日志方案；OBI 是内核层全栈（含 LLM Provider 协议级追踪）
 
 ## 相关实体
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-telemetry-ebpf-instrumentation-obi-zero-code-observability-aliyun-2026.md)
 → [Cilium Tetragon Kubernetes Runtime Security Ebpf](ch01/207-rag.md) — 同为 eBPF 内核级方案，但聚焦运行时安全拦截
-→ [Openclaw Agent Observability Session Logs Otel Sls](ch04/503-agent.md) — LLM 应用层 Session 日志可观测（OTel + SLS）
+→ [Openclaw Agent Observability Session Logs Otel Sls](ch04/502-agent.md) — LLM 应用层 Session 日志可观测（OTel + SLS）
 → [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/245-skill.md) — 阿里云 CMS 2.0 可观测接入的 AI Agent Skill 化（OBI 是其底层引擎之一）
-→ [Agent Harness Observability Production](ch04/503-agent.md) — Agent Harness 生产可观测性
+→ [Agent Harness Observability Production](ch04/502-agent.md) — Agent Harness 生产可观测性
 
 ---
 

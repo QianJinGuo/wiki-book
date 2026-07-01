@@ -46,7 +46,7 @@ Alpamayo 1 使用 Flow Matching 轨迹解码（超越简单回归）、历史轨
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch04/150-ai.md)
 - [Nvidia Gpu Kernel Translation Cute Python Julia](ch03/054-nvidia-gpu-kernel-translation-cute-python-julia.md)
 - [Nvidia Cut Checkpoint Costs Nvcomp](ch03/030-nvidia-cut-checkpoint-costs-nvcomp.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch04/503-agent.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch04/502-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-misc-topics-frontier.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-edge-first-llms-av-robotics.md)

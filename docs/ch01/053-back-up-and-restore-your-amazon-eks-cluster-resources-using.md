@@ -11,7 +11,7 @@
 - [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](ch11/014-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.md)
 - [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/197-amazon-quick.md)
-- [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](ch04/503-agent.md)
+- [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](ch04/502-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
 

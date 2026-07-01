@@ -17,7 +17,7 @@ Searchlight Cyber 的这篇研究披露了 Salesforce Marketing Cloud（ExactTar
 ## 相关实体
 - [Detect Ai Agent Traffic](ch04/150-ai.md)
 - [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki/blob/main/entities/exiftool-compromise-mac-592994.md)
-- [Oz Multi Harness Cloud Agent Orchestration](ch04/503-agent.md)
+- [Oz Multi Harness Cloud Agent Orchestration](ch04/502-agent.md)
 - [Langgraph State Machine Under The Hood](ch04/186-langgraph.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
 

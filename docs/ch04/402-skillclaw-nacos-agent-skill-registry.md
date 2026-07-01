@@ -37,7 +37,7 @@ Agent Skill 的落地面临两个核心难题：
 - draft/reviewing/online 状态机
 - Pipeline 审核、label 分发、审计、Trace
 
-这与 [Agent Capability Library](ch04/503-agent.md) 的设计理念相通——都需要一个中心化的 Skill 治理基础设施。
+这与 [Agent Capability Library](ch04/502-agent.md) 的设计理念相通——都需要一个中心化的 Skill 治理基础设施。
 
 ## 深度分析
 
@@ -58,7 +58,7 @@ SkillClaw × Nacos 的联合工作流程：
 - Agent 运行时只读取 Skill，**不持有发布和删除权限**
 - 敏感信息、危险命令、越权工具等检查，通过 Nacos Pipeline 和 `skill-scanner` 插件接入
 
-这种"生成-治理分离"的架构与 [Anthropic 对抗式架构](ch04/503-agent.md) 中的"合同谈判机制"有异曲同工之妙——都强调生成方和验证方的职责隔离。
+这种"生成-治理分离"的架构与 [Anthropic 对抗式架构](ch04/502-agent.md) 中的"合同谈判机制"有异曲同工之妙——都强调生成方和验证方的职责隔离。
 
 ### QuickStart 流程（7 步）
 
@@ -97,7 +97,7 @@ SkillClaw × Nacos 的联合工作流程：
 
 ## 相关实体
 
-- [Agent Capability Library](ch04/503-agent.md)
+- [Agent Capability Library](ch04/502-agent.md)
 - [工作流的 Skill 怎么写从 7 个顶级 Skill 中提炼的模式与最佳实践](ch04/245-skill.md)
 - [Qoder Skills 完全指南从零开始让 Ai 按你的标准执行](ch04/245-skill.md)
 - [Perplexity Internal Skill Design Guide Xiaojianke](ch04/245-skill.md)

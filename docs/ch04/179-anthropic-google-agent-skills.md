@@ -10,10 +10,10 @@
 - [Anthropic 官方 14 种 Skill 设计模式](ch04/245-skill.md)
 - [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](ch01/546-skills-anthropic-openai-comparison-frontend-design.md)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
-- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](ch04/503-agent.md)
+- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](ch04/502-agent.md)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
-- [Anthropic Claude Managed Agents 平台正式发布](ch04/503-agent.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/503-agent.md)
+- [Anthropic Claude Managed Agents 平台正式发布](ch04/502-agent.md)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/502-agent.md)
 - [Anthropic Computer Use 最佳实践](ch01/689-anthropic-computer-use.md)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/380-claude.md)
 
@@ -21,8 +21,8 @@
 - [Claude Code Agent 工程设计](ch03/073-claude-code.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch04/245-skill.md)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/150-ai.md)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch04/503-agent.md)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch04/503-agent.md)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch04/502-agent.md)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch04/502-agent.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 ## 深度分析

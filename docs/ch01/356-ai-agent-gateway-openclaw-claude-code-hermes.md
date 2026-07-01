@@ -13,7 +13,7 @@
 ## 与现有 wiki 的关系
 - **互补**：现有  侧重整体选型（三步选型法+效率五维表格），本文聚焦 **Gateway 单一架构层次的三框架深对比**
 - **填补空白**：wiki 目前有 OpenClaw 源码拆解、Claude Code Prompt/Context/Harness 拆解、Hermes 深度解析，但缺少以 **Gateway 为分析轴的三框架横向对比**
-- **交叉引用**：与 [OpenClaw Prompt/Context/Harness](ch11/209-openclaw.md)、[Claude Code Prompt/Context/Harness](ch03/073-claude-code.md)、[Hermes Agent 深度解析](ch04/503-agent.md) 互为补充
+- **交叉引用**：与 [OpenClaw Prompt/Context/Harness](ch11/209-openclaw.md)、[Claude Code Prompt/Context/Harness](ch03/073-claude-code.md)、[Hermes Agent 深度解析](ch04/502-agent.md) 互为补充
 
 ## 文章导航
 - 本系列共（一）~（九）篇，本文为第（八）篇 Gateway 专题
@@ -71,8 +71,8 @@
 ## 相关实体
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/073-claude-code.md)
 
-- [深度拆解 Hermes Agent 记忆系统](ch04/503-agent.md)
-- [Hermes Agent vs OpenClaw 对比分析](ch04/503-agent.md)
+- [深度拆解 Hermes Agent 记忆系统](ch04/502-agent.md)
+- [Hermes Agent vs OpenClaw 对比分析](ch04/502-agent.md)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](ch03/073-claude-code.md)
 - [Claude Code 设计原则与对照分析](ch03/073-claude-code.md)
 - [Claude Code Integration Other Tools](ch03/073-claude-code.md)

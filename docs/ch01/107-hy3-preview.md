@@ -17,7 +17,7 @@
 - 已接入腾讯生态：元宝、ima、CodeBuddy、WorkBuddy、QQ、腾讯文档等
 
 ## 相关实体
-- [Cline releases open-source agent runtime SDK](ch04/503-agent.md)
+- [Cline releases open-source agent runtime SDK](ch04/502-agent.md)
 - [Cline releases open-source agent runtime SDK](ch04/401-cline-releases-open-source-agent-runtime-sdk.md)
 
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](ch03/073-claude-code.md)

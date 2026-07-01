@@ -104,8 +104,8 @@ Cline 的核心差异化在于：(1) 把 agent loop 做成 portable kernel；(2)
 
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md) — Claude Code 的源码级解读，与 Cline SDK 形成"闭源深度 vs 开源可移植"对照
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md) — Claude Code harness 设计的深度剖析
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md) — Agent 记忆系统的工程实践，与"持久化在文件系统"理念呼应
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md) — 从 vibe coding 到 agentic engineering 的范式跃迁
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/502-agent.md) — Agent 记忆系统的工程实践，与"持久化在文件系统"理念呼应
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/502-agent.md) — 从 vibe coding 到 agentic engineering 的范式跃迁
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md) — Vibe Coding 与 Agentic Engineering 的同源访谈
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md) — AWS Bedrock AgentOps 的规模化运营实践
 - [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md) — Claude Code harness 的另一深度解析

@@ -108,9 +108,9 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 - [OpenClaw 完整指南](ch11/209-openclaw.md) — 自主 Agent 阶段（阶段三）代表
 - [Claude Code Dynamic Workflows](ch03/073-claude-code.md) — 阶段三到阶段四过渡的 Dynamic Workflow 范式
 - [从氛围编程到智能体工程](ch04/123-karpathy-vibe-coding-agentic-engineering.md) — Agentic Engineering 范式演进
-- [Agent 记忆系统实践](ch04/503-agent.md) — Memory 模块工程化
-- [Hermes Agent Operator](ch04/503-agent.md) — 自进化 Agent（阶段四）代表
-- [Agent YAML 评测](ch04/503-agent.md) — 自进化机制中的评估反馈环
+- [Agent 记忆系统实践](ch04/502-agent.md) — Memory 模块工程化
+- [Hermes Agent Operator](ch04/502-agent.md) — 自进化 Agent（阶段四）代表
+- [Agent YAML 评测](ch04/502-agent.md) — 自进化机制中的评估反馈环
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 阶段二到阶段四贯穿的核心工程化思想
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — Prompt 解耦与渐进式加载的方法论
 - [gene/gep — evomap×清华 提出的「策略基因」经验对象框架（arxiv 2604.15097）](https://github.com/QianJinGuo/wiki/blob/main/entities/gene-gep-evomap-qinghua-strategy-genes-arxiv-2604-15097-2026.md)

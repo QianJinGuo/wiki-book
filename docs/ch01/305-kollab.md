@@ -114,7 +114,7 @@ S3 作为真值源，Runtime 与 S3 之间的同步是由两个动作构成：hy
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
 
-- [stop hand-tuning kernels: how neuron agentic development acc](ch04/503-agent.md)
+- [stop hand-tuning kernels: how neuron agentic development acc](ch04/502-agent.md)
 
 ## 相关主题
 

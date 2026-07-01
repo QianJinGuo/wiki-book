@@ -73,8 +73,8 @@ Claude Code 负责人 Boris Cherny：
 
 ## 与现有实体的关系
 
-- 补充 [Agent Loop Engineering Handbook 8 Questions Chen Jin Tencent Self 2026](ch04/503-agent.md) 的工程视角（本文更偏实操指南，陈进版更偏理论探讨）
-- 与 [Agent Harness Architecture](ch04/503-agent.md) 形成架构+工程对照
+- 补充 [Agent Loop Engineering Handbook 8 Questions Chen Jin Tencent Self 2026](ch04/502-agent.md) 的工程视角（本文更偏实操指南，陈进版更偏理论探讨）
+- 与 [Agent Harness Architecture](ch04/502-agent.md) 形成架构+工程对照
 
 ---
 

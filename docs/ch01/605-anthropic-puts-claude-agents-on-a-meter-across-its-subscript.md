@@ -25,18 +25,18 @@
 ## 相关实体
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/073-claude-code.md)
 - [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch04/150-ai.md)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch04/503-agent.md)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch04/502-agent.md)
 > ai agent platforms topic map（已删除）
 
-- [Claude Managed Agents 开发者指南](ch04/503-agent.md)
+- [Claude Managed Agents 开发者指南](ch04/502-agent.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/073-claude-code.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/503-agent.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/502-agent.md)
 - [Introducing Claude for Small Business](ch01/380-claude.md)
 - [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.md)
 - [Xero Announces Integration with Anthropic's Claude](ch01/380-claude.md)
 - [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/380-claude.md)
-- [Anthropic Claude Managed Agents 平台正式发布](ch04/503-agent.md)
-- [Claude Managed Agents 官方 Harness 平台指南](ch04/503-agent.md)
+- [Anthropic Claude Managed Agents 平台正式发布](ch04/502-agent.md)
+- [Claude Managed Agents 官方 Harness 平台指南](ch04/502-agent.md)
 - [Anthropic Computer Use 最佳实践](ch01/689-anthropic-computer-use.md)
 
 ## 深度分析

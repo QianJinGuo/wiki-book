@@ -80,7 +80,7 @@ survey 指出一个值得注意的产业演化趋势：从 agent frameworks 到 
 - [Harness Engineering Alibaba Java Case Study](ch05/061-harness-engineering.md)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](ch09/043-coding-agent.md)
 - [Harness Engineering Systematic Framework](ch05/061-harness-engineering.md)
-- [Agentscope Java Harness Framework](ch04/503-agent.md)
+- [Agentscope Java Harness Framework](ch04/502-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-engineering-survey-2026.md)
 

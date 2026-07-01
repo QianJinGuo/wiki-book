@@ -15,7 +15,7 @@
 - [Claude Code Search Architecture Tencent 2026](ch03/073-claude-code.md)
 - [Skill Engineering Ai As Algorithm](ch04/245-skill.md)
 - [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](ch04/150-ai.md)
-- [Hermes Agent Getting Started Guide 2026](ch04/503-agent.md)
+- [Hermes Agent Getting Started Guide 2026](ch04/502-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillx-zhejiang-university-hyman.md)
 

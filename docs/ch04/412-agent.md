@@ -47,11 +47,11 @@ Harness 在长任务里会撞上后端同样的问题：状态、队列、日志
 
 ## 关联阅读
 
-* [Agent Harness 上下文管理：聊天记录还是工作集](ch04/503-agent.md)
-* [Karpathy：Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
+* [Agent Harness 上下文管理：聊天记录还是工作集](ch04/502-agent.md)
+* [Karpathy：Vibe Coding 到 Agentic Engineering](ch04/502-agent.md)
 * [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/015-harness.md)
 * [Subagents 详解：Claude Code 如何避免上下文污染](ch03/073-claude-code.md)
-* [从 30 分钟手搓 Agent 到 Harness 成为新后端](ch04/503-agent.md)
+* [从 30 分钟手搓 Agent 到 Harness 成为新后端](ch04/502-agent.md)
 
 ---
 

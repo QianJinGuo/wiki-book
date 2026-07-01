@@ -53,7 +53,7 @@ HYPE 的即时暴涨说明 Coinbase 入场对代币价格具有显著的信号�
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch04/150-ai.md)
 - [Why Im Leaving Github For Forgejo](ch01/690-github.md)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
-- [Anthropic Puts Claude Agents On A Meter Across Its](ch04/503-agent.md)
+- [Anthropic Puts Claude Agents On A Meter Across Its](ch04/502-agent.md)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md)

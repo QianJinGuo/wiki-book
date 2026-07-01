@@ -10,8 +10,8 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1109 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 921 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1110 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 922 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 425 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 95 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 31 篇 |
@@ -46,7 +46,7 @@
   - ⭐⭐ Hermes Agent 深度解析（阿里云/飞樰）
   - ... 共 **33** 篇 → [完整章节](ch02-prompt.md)
 
-### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 126 篇
+### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 127 篇
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
 
   - ⭐ The Interface Is No Longer the Product
@@ -57,15 +57,15 @@
   - ⭐ The 2026 SaaSOps checklist: Managing and securing your enterprise SaaS
   - ⭐ What the design-to-code loop unlocks
   - ⭐ Choosing to Stay Human
-  - ... 共 **126** 篇 → [完整章节](ch03-ai-tools.md)
+  - ... 共 **127** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1109 篇**
+> 📖 **本篇共 1110 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 546 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 547 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
   - ⭐ From idea to AI app: creating intelligent research assistants
-  - ... 共 **546** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **547** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 91 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -156,7 +156,7 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **24** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 921 篇**
+> 📖 **本篇共 922 篇**
 
 ---
 
@@ -304,6 +304,6 @@
 
 ---
 
-**📊 全书收录：2581 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：2583 篇实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-06-25 | 来源: ~/wiki/entities/

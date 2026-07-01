@@ -15,7 +15,7 @@ GitHub 描述写的是 "Your Personal AI super intelligence. Private, Simple and
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](ch03/073-claude-code.md)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/245-skill.md)
 - [Agent Memory Architecture Past Influence Future Ruofei](ch04/030-agent-memory-architecture-past-influence-future-ruofei.md)
-- [Agent Memory Architecture Ruofei](ch04/503-agent.md)
+- [Agent Memory Architecture Ruofei](ch04/502-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openhuman-ai-agent-memory-tree-tokenjuice.md)
 

@@ -37,7 +37,7 @@
 - [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/818-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
 - [Shinyhunters Canvas Domain Suspended](ch04/150-ai.md)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/150-ai.md)
-- [Clinereleasesopen Sourceagentruntimesdk](ch04/503-agent.md)
+- [Clinereleasesopen Sourceagentruntimesdk](ch04/502-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
 

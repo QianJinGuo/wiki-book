@@ -22,7 +22,7 @@
 ## 与本文相关
 - [Claude Code Agent Engineering](ch03/073-claude-code.md) — Claude Code工程设计
 - [Claude Code Prompt Context Harness](ch03/073-claude-code.md) — Claude Code Prompt/Harness分析
-- [Hermes Agent Deep Dive](ch04/503-agent.md) — Anthropic的Self-Evolution对照
+- [Hermes Agent Deep Dive](ch04/502-agent.md) — Anthropic的Self-Evolution对照
 -  — 详细访谈内容（raw）
 
 ## 相关实体
@@ -39,7 +39,7 @@
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/150-ai.md)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/150-ai.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/073-claude-code.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/503-agent.md)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/502-agent.md)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/380-claude.md)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/073-claude-code.md)

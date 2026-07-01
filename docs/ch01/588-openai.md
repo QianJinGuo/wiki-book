@@ -12,7 +12,7 @@ OpenAI今天在API中推出三款全新音频模型，面向开发者开放。
 
 ## 相关实体
 - [Prompt Debugger Compare Templates Winty](ch01/619-prompt-debugger-compare-templates-winty.md)
-- [Aliyun Agentrun 2Line Integration](ch04/503-agent.md)
+- [Aliyun Agentrun 2Line Integration](ch04/502-agent.md)
 - [Pi Mono Github](ch01/621-pi-mono-github.md)
 - [2 Year 25 Ai Projects Summary](ch04/150-ai.md)
 - [Openai Realtime Api Architecture](ch04/150-ai.md)

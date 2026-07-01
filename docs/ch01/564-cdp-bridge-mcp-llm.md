@@ -45,8 +45,8 @@
 - [Agentic Ai System Architecture Harness Skill Mcp](ch04/245-skill.md)
 - [Browser Harness Github](ch05/067-browser-harness-github.md)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch04/503-agent.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch04/503-agent.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch04/502-agent.md)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch04/502-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cdp-bridge-mcp-real-browser-agent.md)
 

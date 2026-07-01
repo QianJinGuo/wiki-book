@@ -28,7 +28,7 @@ Observe → Read → Act → Feedback → Write
 - **Feedback**：Judge 给出正确/错误反馈
 - **Write**：更新 skill utility、做 failure 归因和 file-level rewrite、必要时进入 skill discovery
 
-**三层写回策略**：局部修补优先，只在 utility 降至阈值时才生成新技能，避免破坏已有能力。这种策略在 [Agent Self Improvement Six Mechanisms](ch04/503-agent.md) 中被称为"输出自审"的工程化升级版——从单次执行的反射进化为跨 session 的持久化技能积累。
+**三层写回策略**：局部修补优先，只在 utility 降至阈值时才生成新技能，避免破坏已有能力。这种策略在 [Agent Self Improvement Six Mechanisms](ch04/502-agent.md) 中被称为"输出自审"的工程化升级版——从单次执行的反射进化为跨 session 的持久化技能积累。
 
 ## 技能路由器：行为对齐而非语义相似
 
@@ -84,7 +84,7 @@ Biology/Humanities 提升最明显（可抽象程度高）。
 3. 单技能检索可能限制更长链任务（需多技能串联/并行/动态组合）
 4. 安全性（Judge 误判、sandbox 风险）尚未系统性量化
 
-第三点是当前最大工程障碍：当一个任务需要多个 skill 协同（先做数据清洗、再做分析、再做可视化）时，Memento-Skills 的单技能检索模型无法处理技能间的依赖图。这与 [Hermes Agent Self Evolving](ch04/503-agent.md) 中"定期回顾 nudging"的设计形成互补——Hermes 的方式更适合长链任务的状态管理。
+第三点是当前最大工程障碍：当一个任务需要多个 skill 协同（先做数据清洗、再做分析、再做可视化）时，Memento-Skills 的单技能检索模型无法处理技能间的依赖图。这与 [Hermes Agent Self Evolving](ch04/502-agent.md) 中"定期回顾 nudging"的设计形成互补——Hermes 的方式更适合长链任务的状态管理。
 
 ## 未来改进方向
 

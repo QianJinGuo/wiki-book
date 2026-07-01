@@ -92,7 +92,7 @@
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md) — Claude Code 源码级机制
 - [Gsd Get Shit Done Context Management Tool](ch01/196-gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md) — Claude Code 中的 agent harness 构建
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md) — Agent 记忆系统
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/502-agent.md) — Agent 记忆系统
 - [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md) — Claude Code harness 深度解析
 - [Claude Code Harness Deep Dive Founder Park](ch03/073-claude-code.md) — Founder Park 的 Claude Code harness 深度文章
 

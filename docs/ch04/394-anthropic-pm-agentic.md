@@ -67,8 +67,8 @@ METR 测出 41x（16 个月）：Sonnet 3.5 (new) 21 分钟 → Opus 4.6 的 12 
 ## 相关
 - [Claude Code 搜索架构](ch03/073-claude-code.md)
 - [Cat Wu: Claude Code PM 工作流](ch03/073-claude-code.md)
-- [AutoResearch 多 Agent 开发](ch04/503-agent.md)
-- [Agent Memory 模块化框架](ch04/503-agent.md)
+- [AutoResearch 多 Agent 开发](ch04/502-agent.md)
+- [Agent Memory 模块化框架](ch04/502-agent.md)
 - [AI Team 知识 Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)
 
 ## 相关实体

@@ -10,7 +10,7 @@
 **Rein** 是一个 Go agent 框架，用 **4 个模块 + 5 条类型边界 + 7 个不变量** 解决"agent.go 200 行 → 3000 行"的问题。核心思路：**模块之间的数据契约定义清楚 = 防止上帝文件**。每条数据流都对应一个**严格类型 + 单一职责 + 不可见字段**。
 
 ## 相关实体
-- [Youre Building Agent Security In The Wrong Order](ch04/503-agent.md)
+- [Youre Building Agent Security In The Wrong Order](ch04/502-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
 
@@ -234,7 +234,7 @@ WithWorkingDir(cwd)            // 工作目录
 - Claude Code 98.4% 基础设施 + 1.6% AI 决策
 - Rein 用 4 模块 + 5 类型边界把 3000 行结构化
 
-### vs Agent Harness 上下文管理（[Agent Harness Context Management Working Set](ch04/503-agent.md)）
+### vs Agent Harness 上下文管理（[Agent Harness Context Management Working Set](ch04/502-agent.md)）
 - 工作集视角：logical_messages 原样保留 + 投影 = Rein 的"存储完整，发送压缩"
 
 ### vs wow-harness v3 事件溯源（[Wow Harness V3 Governance Protocol](ch05/015-harness.md)）
@@ -242,7 +242,7 @@ WithWorkingDir(cwd)            // 工作目录
 - Rein = session 原子写入 + 完整 logical_messages
 - **共同点**：完整历史 + 不可篡改 + 确定性回放
 
-### vs PilotDeck 白盒记忆（[Pilotdeck Agent Os Openbmb Tsinghua](ch04/503-agent.md)）
+### vs PilotDeck 白盒记忆（[Pilotdeck Agent Os Openbmb Tsinghua](ch04/502-agent.md)）
 - PilotDeck 记忆可读可改 + Dream 回滚
 - Rein observation envelope retryable 字段
 - **共同点**：把"AI 思考过程"暴露给用户/调用方
@@ -293,13 +293,13 @@ WithWorkingDir(cwd)            // 工作目录
 
 ## 相关对照
 - [Claude Code 20000 字符源码分析](ch03/073-claude-code.md)
-- [Agent Harness 上下文管理](ch04/503-agent.md) —— 工作集视角
+- [Agent Harness 上下文管理](ch04/502-agent.md) —— 工作集视角
 - [wow-harness v3](ch05/015-harness.md) —— 事件溯源 + 概念图
-- [PilotDeck](ch04/503-agent.md) —— 白盒记忆
-- [Agent Harness 架构](ch04/503-agent.md) —— 7 层 harness 模型
-- [17 种 agent 架构演进](ch04/503-agent.md) —— 类型边界视角
+- [PilotDeck](ch04/502-agent.md) —— 白盒记忆
+- [Agent Harness 架构](ch04/502-agent.md) —— 7 层 harness 模型
+- [17 种 agent 架构演进](ch04/502-agent.md) —— 类型边界视角
 - [Agent 工程原则](ch04/441-agent-engineering-principles-architecture-practice.md) —— 模块化设计实践
-- [短期记忆压缩](ch04/503-agent.md) —— 投影压缩对比
+- [短期记忆压缩](ch04/502-agent.md) —— 投影压缩对比
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
 

@@ -129,7 +129,7 @@ graph TB
 - **两层天花板**：Big Model 决定理论上限，Big Harness 决定实际达到的高度
 
 ## 与现有 Wiki 的关联
-与 [Hermes Agent Deep Dive](ch04/503-agent.md) 互补：Hermes Agent 的 Skill 提炼和 nudging 在本文有更系统化的分类定位。
+与 [Hermes Agent Deep Dive](ch04/502-agent.md) 互补：Hermes Agent 的 Skill 提炼和 nudging 在本文有更系统化的分类定位。
 与 [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 互补：self-evolution 主题的完整六条路归类，ADCA-GRPO/HyperAgents/Meta-Harness 是新维度。
 与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 互补：第六条"编排自优化"是 Harness 工程化的最新前沿（Stanford Meta-Harness）。
 与 [Agent Engineering Principles Architecture Practice](ch04/441-agent-engineering-principles-architecture-practice.md) 互补：后者 Harness 比模型关键 → 前者第六条机制具体展示如何自动化 Harness。
@@ -140,33 +140,33 @@ graph TB
 
 ## 相关实体
 - [foundation capital agent era six insights](ch04/173-foundation-capital-agent-era-six-insights.md)
-- [Hermes Agent 自进化机制源码解析](ch04/503-agent.md)
+- [Hermes Agent 自进化机制源码解析](ch04/502-agent.md)
 - [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch04/245-skill.md)
 - [AI Coding Agent 记忆系统](ch04/150-ai.md)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/150-ai.md)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](ch04/503-agent.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)
+- [Agent Reliability: Context Drift & Tool Calling Hallucination](ch04/502-agent.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/502-agent.md)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch04/150-ai.md)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch04/503-agent.md)
+- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch04/502-agent.md)
 - [hermes-agent-self-evolving-source-analysis](ch04/040-hermes-agent-self-evolving-source-analysis.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [Agent Memory 架构解析](ch04/503-agent.md)
+- [Agent Memory 架构解析](ch04/502-agent.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/378-claude-code-harness-deep-understanding.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [Agent Harness 架构](ch04/503-agent.md)
+- [Agent Harness 架构](ch04/502-agent.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/209-openclaw.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](ch04/150-ai.md)
 - [GBrain](ch04/150-ai.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/503-agent.md)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/502-agent.md)
 - [SkillClaw](ch04/245-skill.md)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/245-skill.md)
 - [OpenHuman: AI Agent 持久记忆框架](ch04/150-ai.md)
-- [Harness如何支撑Agent在生产环境稳定运行？](ch04/503-agent.md)
-- [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
+- [Harness如何支撑Agent在生产环境稳定运行？](ch04/502-agent.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch04/502-agent.md)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 - [AI Agent 工程师能力地图](ch04/150-ai.md)
 
@@ -267,7 +267,7 @@ Tax AI 的全部知识产权归 **Thrive Holdings**（Joshua Kushner 创办，Op
 - **模糊证据路由回产品团队**是抗幻觉的关键设计：Codex 不是万能的，不知道就是不知道，硬塞流程会污染训练集
 - **3-5 个 Agent 的工程师注意力上限**是工程现实——Symphony 的"管工作不管 Agent"思路值得借鉴
 - **6 周 25%→86% 的曲线**证明：自我改进不是匀速，而是**指数加速**（更复杂的问题被解决 → 每份省下的人工时间越多 → 反哺训练 → 处理更复杂的问题）
-- **生产方法论 > 应用层 IP**：OpenAI 放弃 Tax AI IP 换范式，是把"自我改进工程"作为下一代护城河，与 [Harness Engineering 长程任务](ch04/503-agent.md) 中"Big Harness > Big Model"的判断完全一致
+- **生产方法论 > 应用层 IP**：OpenAI 放弃 Tax AI IP 换范式，是把"自我改进工程"作为下一代护城河，与 [Harness Engineering 长程任务](ch04/502-agent.md) 中"Big Harness > Big Model"的判断完全一致
 
 → [第 2 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
 

@@ -11,8 +11,8 @@
 让模型具备"长期个性化能力"——记忆、推理与对齐三能力协同。
 
 ## 相关实体
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch04/503-agent.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch04/503-agent.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch04/502-agent.md)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch04/502-agent.md)
 - [Two Harness Papers Microsoft Google](ch05/015-harness.md)
 - [Trace2Skill Trajectory Distillation Agent Skills](ch04/245-skill.md)
 - [05 11 The Great Memory Panic Of 2026](ch01/657-the-great-memory-panic-of-2026.md)

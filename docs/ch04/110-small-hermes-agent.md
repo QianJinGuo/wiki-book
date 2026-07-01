@@ -148,9 +148,9 @@ Small Hermes的核心贡献在于**同时给出七个解法，且七个解法相
 |----|------|------|
 | [hermes-agent-self-evolving-source-analysis](ch04/040-hermes-agent-self-evolving-source-analysis.md) | 同系列 | Hermes官方Agent的self-improve机制源码解析，与small Hermes互相印证 |
 | [hermes-self-evolution-closed-loop-skill-reuse-winty](ch04/245-skill.md) | 补充 | 6阶段完整闭环的具体实现（npm发包案例） |
-| [hermes-agent-deep-dive](ch04/503-agent.md) | 扩展 | 阿里云飞樰的深度解析，包含RL训练闭环和Harness Engineering |
-| [acker-agent-evolution-three-routes-convergence](ch04/503-agent.md) | 框架 | 三路线汇聚框架：small Hermes对应"学习层（进化）" |
-| [openclaw-hermes-source-code-agent-architecture-review](ch04/503-agent.md) | 对比 | OpenClaw与Hermes架构对比，Channel契约和Gateway设计 |
+| [hermes-agent-deep-dive](ch04/502-agent.md) | 扩展 | 阿里云飞樰的深度解析，包含RL训练闭环和Harness Engineering |
+| [acker-agent-evolution-three-routes-convergence](ch04/502-agent.md) | 框架 | 三路线汇聚框架：small Hermes对应"学习层（进化）" |
+| [openclaw-hermes-source-code-agent-architecture-review](ch04/502-agent.md) | 对比 | OpenClaw与Hermes架构对比，Channel契约和Gateway设计 |
 
 ## 实践启示
 

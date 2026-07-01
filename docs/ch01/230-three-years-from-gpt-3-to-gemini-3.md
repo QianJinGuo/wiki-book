@@ -113,7 +113,7 @@ Mollick 给整篇文章的总结：
 
 > "三年前，我们对机器能写关于水獭的诗印象深刻。不到 1000 天后，我在与一个建立自己研究环境的 Agent 争论统计方法论。chatbot 时代正在变成数字同事时代。"
 
-**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](ch04/503-agent.md) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
+**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](ch04/502-agent.md) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
 
 ### 7. 与 OpenAI Codex 演进的方向对照
 
@@ -189,16 +189,16 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 
 - [Code as Agent Harness Survey](ch09/046-code-as-agent-harness.md)
 - [GPT-5.4 Codex 进展](ch01/436-codex.md)
-- [Karpathy Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
+- [Karpathy Vibe Coding 到 Agentic Engineering](ch04/502-agent.md)
 - [Karpathy Agentic Engineering 综述](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [AgentOps on Bedrock](ch04/150-ai.md)
 - [Yann Dubois OpenAI 后训练访谈](ch04/150-ai.md)
 - [GPT-5.5 Copilot Session 设计](ch07/015-wiki-evolver.md)
 - [AI Agent Harness 构建](ch04/150-ai.md)
 - [Harness 状态边界与失败闭环](ch05/015-harness.md)
-- [Agent Vibecoder 上下文压缩](ch04/503-agent.md)
+- [Agent Vibecoder 上下文压缩](ch04/502-agent.md)
 - [腾讯混元 HY3 开源预览](ch01/109-hy3-preview.md)
-- [Agent 记忆系统工程实践](ch04/503-agent.md)
+- [Agent 记忆系统工程实践](ch04/502-agent.md)
 
 ---
 

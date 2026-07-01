@@ -69,7 +69,7 @@ NTP 交叉熵损失，梯度不更新大模型参数 θ_LLM，只更新检索器
 ## 关联
 
 - [RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/rag-retrieval-augmented-generation.md) — DREAM 训练的检索器直接提升 RAG 系统质量
-- [Agentic RL 六框架](ch04/503-agent.md) — Agentic search 的检索质量是关键瓶颈
+- [Agentic RL 六框架](ch04/502-agent.md) — Agentic search 的检索质量是关键瓶颈
 
 ---
 

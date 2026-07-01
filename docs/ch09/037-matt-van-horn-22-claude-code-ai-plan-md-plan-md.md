@@ -80,8 +80,8 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 - **与 [Claude Code 1 周年回顾](ch03/073-claude-code.md)** 互补：1 周年是时间线 + 团队视角；本文是开发者工作流哲学
 - **与 [Harness Engineering 核心模式](ch03/073-claude-code.md)** 互补：CE plan.md 循环是 harness engineering 的具体实现
 - **与 [工作流 Skill 模式](ch04/245-skill.md)** 呼应：「任何做超过 2 次的事 → 做成技能」是 SkillOS 哲学的实战版
-- **与 [Hermes 自进化](ch04/503-agent.md)** 平行：Matt 用 OpenClaw + Hermes 跑远程工作
-- **与 [Agent 六机制](ch04/503-agent.md)** 呼应：「先 plan 后 work」是六机制中"计划-执行分离"的具体实现
+- **与 [Hermes 自进化](ch04/502-agent.md)** 平行：Matt 用 OpenClaw + Hermes 跑远程工作
+- **与 [Agent 六机制](ch04/502-agent.md)** 呼应：「先 plan 后 work」是六机制中"计划-执行分离"的具体实现
 
 ## 工程可复现项
 
@@ -97,7 +97,7 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 
 ### 核心观点：80% 计划 + 20% 执行是 AI 时代人机协作的结构性反转
 
-传统软件工程中，开发者的时间大量投入"执行"（写代码、调试），计划只是前期铺垫。Matt Van Horn 的实验揭示了一个结构性反转：当 AI 能承担高质量执行时，人类的价值迁移到**计划质量本身**。写计划强迫 Agent 研究、承诺方法、列出验收标准——这是防止 Agent 偷懒的机制，而不是给人类自己看的文档。[Agent Self Improvement Six Mechanisms](ch04/503-agent.md) 中的"计划-执行分离"与此呼应，但本文的贡献在于将这个原则 operationalize 为日常工具使用行为（每件事都先 /ce-plan）。
+传统软件工程中，开发者的时间大量投入"执行"（写代码、调试），计划只是前期铺垫。Matt Van Horn 的实验揭示了一个结构性反转：当 AI 能承担高质量执行时，人类的价值迁移到**计划质量本身**。写计划强迫 Agent 研究、承诺方法、列出验收标准——这是防止 Agent 偷懒的机制，而不是给人类自己看的文档。[Agent Self Improvement Six Mechanisms](ch04/502-agent.md) 中的"计划-执行分离"与此呼应，但本文的贡献在于将这个原则 operationalize 为日常工具使用行为（每件事都先 /ce-plan）。
 
 ### 技术要点："让 AI 写 plan.md 但不读 plan.md"本质是委托-代理最优分离
 

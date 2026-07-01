@@ -132,10 +132,10 @@ Factory 押注模型会持续 speciate（分化），而不是收敛到单一 su
 ## 相关实体
 - [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](ch04/150-ai.md)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](ch04/503-agent.md)
-- [OpenClaw 多智能体团队搭建实战经验](ch04/503-agent.md)
+- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](ch04/502-agent.md)
+- [OpenClaw 多智能体团队搭建实战经验](ch04/502-agent.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
-- [Agent Harness 架构](ch04/503-agent.md)
+- [Agent Harness 架构](ch04/502-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

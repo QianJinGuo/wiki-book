@@ -40,7 +40,7 @@ Meanwhile, the Gemini app is preparing to add more integrations with third-party
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
 - [Rag技术框架的演进方向](ch01/207-rag.md)
 - [Restive Ventures Announces 45M Fund Iii To Back Ai Native Financial Services Tar](ch04/150-ai.md)
-- [Alphaevolve Deepmind Discovery Agent](ch04/503-agent.md)
+- [Alphaevolve Deepmind Discovery Agent](ch04/502-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/9to5google-gemini-app-extended-thinking.md)
 

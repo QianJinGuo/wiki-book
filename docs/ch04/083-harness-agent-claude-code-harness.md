@@ -162,7 +162,7 @@
 
 - [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](ch04/150-ai.md) — 关注"AI 全自动做评测 + 系统级自动优化循环"（产品/平台视角，AI 自主从入口到分析）。本实体是"评测方案设计"的方法论层，那个是"评测平台产品"的实现层；两者形成"方法论 ↔ 平台实现"互补。
 - [Ai Evals Methodology](ch04/150-ai.md) — Langfuse 出品的通用 AI Evals 三种方法（人工 / 自动 / LLM-as-Judge）。本实体是"业务 Agent 评测"的具体工程方案；那个是评估方法论的科普。
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch04/503-agent.md) — Go 语言 YAML 驱动的 AgentEval 框架（pass@k + pass^k + SQLite + CI/CD）。本实体是"Prompt 即评测逻辑"路线（评测逻辑编码为自然语言）；那个是"YAML 配置驱动"路线（评测逻辑仍是代码）。两条互补路径。
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch04/502-agent.md) — Go 语言 YAML 驱动的 AgentEval 框架（pass@k + pass^k + SQLite + CI/CD）。本实体是"Prompt 即评测逻辑"路线（评测逻辑编码为自然语言）；那个是"YAML 配置驱动"路线（评测逻辑仍是代码）。两条互补路径。
 - [Cursor Harness Model Production Floor](ch01/248-cursor-harness-model-production-floor.md) — Cursor 复盘"模型 + Harness 组合发布" + 三层评估（离线/线上/代理）。本实体是"Harness 评测自身"的方法论；那个是"被评测的 Harness"如何运营。
 - [Better Harness Eval Trace Harness Hill Climbing](ch05/015-harness.md) — Trace-driven 评测 + Harness hill-climbing 自优化循环。本实体是"评测方案设计"的人工智能辅助；那个是"评测驱动的 Harness 优化"反馈环。
 

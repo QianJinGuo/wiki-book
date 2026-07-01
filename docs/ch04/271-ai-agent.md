@@ -11,7 +11,7 @@
 - [柚漫剧 AI 全流程提效拆解](ch04/150-ai.md)
 - [Agent Skill 设计模式](ch04/245-skill.md)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/150-ai.md)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch04/503-agent.md)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch04/502-agent.md)
 
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
 - [ai agent memory systems](ch04/150-ai.md)
@@ -20,7 +20,7 @@
 - [Agent Workflows](ch04/310-agent-workflows.md)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/245-skill.md)
-- [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)- [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)- [四种 Sub Agent 模式](ch04/503-agent.md) 
+- [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)- [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)- [四种 Sub Agent 模式](ch04/502-agent.md) 
 
 ## 深度分析
 ### 范式转移：人是瓶颈，但解决方式不是替代人

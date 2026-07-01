@@ -206,9 +206,9 @@ Harness Engineering 的核心信号：**AI 落地的核心挑战，正在从"让
 - [Claude Code 深度解析](ch03/073-claude-code.md) — Anthropic Harness 的具体实现
 - [Claude Code Dynamic Workflows](ch03/073-claude-code.md) — Harness 第三层执行编排的 Dynamic Workflow 实现
 - [OpenClaw 完整指南](ch11/209-openclaw.md) — OpenAI-style 渐进式披露 + Agent-first 工程环境
-- [Agent Evolution 四阶段六维](ch04/503-agent.md) — Harness 维度在六维框架中的对应
-- [Hermes Agent Operator](ch04/503-agent.md) — 自进化 Agent 的 Harness 实现
-- [Agent YAML 评测](ch04/503-agent.md) — Harness 第五层评估与观测的工程实现
+- [Agent Evolution 四阶段六维](ch04/502-agent.md) — Harness 维度在六维框架中的对应
+- [Hermes Agent Operator](ch04/502-agent.md) — 自进化 Agent 的 Harness 实现
+- [Agent YAML 评测](ch04/502-agent.md) — Harness 第五层评估与观测的工程实现
 - [深入理解 Claude Code Agent Harness](ch03/073-claude-code.md) — Harness 在 Claude Code 源码层的具体构建
 
 ---

@@ -91,8 +91,8 @@ Anthropic 的方案本质上是在 Agent 系统中引入了三个工程原则：
 
 - [Anthropic Multi Agent Research System](ch04/462-anthropic-multi-agent-research-system.md)
 - [Claude Code Large Codebase Team Deployment Agent Harness](ch03/073-claude-code.md)
-- [Hidden Technical Debt Agent Harness](ch04/503-agent.md)
-- [Long Running Agent Ralph Loop Harness Takeover](ch04/503-agent.md)
+- [Hidden Technical Debt Agent Harness](ch04/502-agent.md)
+- [Long Running Agent Ralph Loop Harness Takeover](ch04/502-agent.md)
 - [Harness Engineering 核心模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 

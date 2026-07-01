@@ -14,8 +14,8 @@ Claude Code正在被部署进数百万行代码的单体仓库、运行了数十
 ## 相关实体
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/073-claude-code.md)
 - [Anthropic Founders Playbook Huashu 2026](ch01/707-anthropic.md)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch04/503-agent.md)
-- [Anthropic Claude Managed Agents Platform 2026](ch04/503-agent.md)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch04/502-agent.md)
+- [Anthropic Claude Managed Agents Platform 2026](ch04/502-agent.md)
 - [Claude Code Large Codebase Enterprise Deployment](ch03/073-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-large-codebase-enterprise-deployment-anthropic-aihanshijì.md)

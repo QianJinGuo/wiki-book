@@ -111,7 +111,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - **审计层**：所有动作的完整记录
 - **责任层**：失败的归属与决策追溯
 
-这些边界问题在 [Agent 记忆系统工程实践](ch04/503-agent.md) 中被称为"过程资产"——Agent 系统不仅要完成任务，还要留下可审查、可重放、可学习的中间表示。
+这些边界问题在 [Agent 记忆系统工程实践](ch04/502-agent.md) 中被称为"过程资产"——Agent 系统不仅要完成任务，还要留下可审查、可重放、可学习的中间表示。
 
 ### 7. 与 Karpathy Software 3.0 的呼应
 
@@ -122,7 +122,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - Karpathy（理论侧）：Software 3.0——执行层自动化后，方向层变得更重要
 - Boris（工程侧）：控制点迁移——人从写代码的人变成管 Agent 工作流的人
 
-这与 [Karpathy Vibe Coding 到 Agentic Engineering](ch04/503-agent.md) 中的论述相互印证——"Vibe Coding"是 Agent 时代的临时形态，"Agentic Engineering"才是稳定形态。
+这与 [Karpathy Vibe Coding 到 Agentic Engineering](ch04/502-agent.md) 中的论述相互印证——"Vibe Coding"是 Agent 时代的临时形态，"Agentic Engineering"才是稳定形态。
 
 ## 实践启示
 
@@ -177,8 +177,8 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - [Claude Code Harness 深度理解](ch01/378-claude-code-harness-deep-understanding.md)
 - [深入理解 Claude Code Agent Harness 构建之道](ch03/073-claude-code.md)
 - [GSD 上下文管理工具](ch01/196-gsd-get-shit-done-context-management-tool.md)
-- [Agent 记忆系统工程实践](ch04/503-agent.md)
-- [Karpathy Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
+- [Agent 记忆系统工程实践](ch04/502-agent.md)
+- [Karpathy Vibe Coding 到 Agentic Engineering](ch04/502-agent.md)
 - [Anthropic 内部实践](https://github.com/QianJinGuo/wiki/blob/main/entities/E9FFy3r5KWA1Ja5pyWBBrg.md)
 - [DeepSeek V4 Flash Pro](ch01/777-deepseek.md)
 - [加速 LLM 模型加载与上下文窗口](ch01/842-accelerate-llm-model-loading-and-increase-context-windows-wi.md)

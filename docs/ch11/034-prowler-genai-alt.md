@@ -66,14 +66,14 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 
 ## 相关实体
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/250-amazon-nova.md)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/503-agent.md)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/502-agent.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/084-aws-bedrock-serverless-async-inference-sqs-lambda.md)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/380-claude.md)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/048-build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
 
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/503-agent.md)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/502-agent.md)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/529-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/503-agent.md)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/502-agent.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](ch11/197-amazon-quick.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/150-ai.md)

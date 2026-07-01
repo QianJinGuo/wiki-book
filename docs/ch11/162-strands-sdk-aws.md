@@ -14,12 +14,12 @@ Strands Agent SDK、Amazon Bedrock、AgentCore
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk/)
 
 ## 相关实体
-- [CI&amp;T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](ch04/503-agent.md)
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch04/503-agent.md)
-- [从0到1:联想基于Strands Agent SDK的资源智能巡检Agent创新 | 亚马逊AWS官方博客](ch04/503-agent.md)
+- [CI&amp;T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](ch04/502-agent.md)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch04/502-agent.md)
+- [从0到1:联想基于Strands Agent SDK的资源智能巡检Agent创新 | 亚马逊AWS官方博客](ch04/502-agent.md)
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](ch03/073-claude-code.md)
 - [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](ch04/150-ai.md)
-- [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](ch04/503-agent.md)
+- [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](ch04/502-agent.md)
 
 ## 深度分析
 1. **传统 BI 的"模板化陷阱"被 Agentic 问数范式绕过**：文章揭示传统 BI 陷入"配置穷尽困境"——永远无法穷举业务动态问题，导致工程团队疲于扩表。DecisionAI 通过 LLM 理解自然语言意图 + REACT 策略动态生成 SQL，从"预设指标"转向"即时生成"，是对 BI 范式的根本性颠覆。

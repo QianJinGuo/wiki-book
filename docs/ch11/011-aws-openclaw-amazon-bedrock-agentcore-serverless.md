@@ -312,9 +312,9 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 ## 相关实体
 - [OpenClaw多租户迁移: Phase 2&3部署](ch04/460-openclaw-multi-4.md)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/250-amazon-nova.md)
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/503-agent.md)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/502-agent.md)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/529-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/503-agent.md)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/502-agent.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/150-ai.md)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/571-from-siloed-data-to-unified-insights-cross-account-athena-a.md)

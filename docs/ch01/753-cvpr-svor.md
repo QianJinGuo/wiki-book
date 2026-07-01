@@ -14,7 +14,7 @@
 - 小米SVOR
 - 视频消除三大顽疾
 ## 相关实体
-- [A2Rd Agentic Autoregressive Diffusion Long Video](ch04/503-agent.md)
+- [A2Rd Agentic Autoregressive Diffusion Long Video](ch04/502-agent.md)
 - [Yumanju Ai Full Flow Efficiency](ch04/150-ai.md)
 - [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](ch04/150-ai.md)
 - [腾讯研究院Ai速递 20260430](ch04/150-ai.md)

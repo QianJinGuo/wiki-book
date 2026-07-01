@@ -141,7 +141,7 @@
 | 现有 entity | 应用域 | 核心方法 |
 |-------------|--------|---------|
 | [AI 自主科研 L0-L4](ch04/150-ai.md) (6KB) | 科学发现 (AlphaFold / The AI Scientist) | L0-L4 五级自主性框架 |
-| [AutoResearch 多 Agent 软件开发](ch04/503-agent.md) (14KB) | 软件开发 (Codex / Claude Code) | 多 Agent 异步 + 评审者回路 |
+| [AutoResearch 多 Agent 软件开发](ch04/502-agent.md) (14KB) | 软件开发 (Codex / Claude Code) | 多 Agent 异步 + 评审者回路 |
 | Karpathy AutoResearch (Query Engine Bug) | 个人研究循环 | Nightly research loop |
 
 **高德 Marketing AutoResearch** 是**第四个独立 AutoResearch 范式**：
@@ -155,7 +155,7 @@
 | **业务结果** | 7 小时 5 次自主决策收窄 -20% → -3% 利润缺口 |
 | **哲学** | 人定义边界，Agent 在边界内自治 |
 
-**与 [多 Agent 软件开发](ch04/503-agent.md) 的方法论共鸣**：
+**与 [多 Agent 软件开发](ch04/502-agent.md) 的方法论共鸣**：
 - 同样强调**多 Agent 角色分工**（研究员 / 审稿人 / 复盘者 ≈ Planner / Reviewer / Reflector）
 - 同样重视**真实反馈**（业务结果 ≈ 单元测试 / Linter / 编译）
 - 同样需要**安全门/边界**（业务协议 ≈ CI/CD Pipeline）
@@ -221,7 +221,7 @@
 ## 与已有实体的差异化定位
 
 - vs [AI 科研 L0-L4](ch04/150-ai.md) — 科学发现域，本文是营销业务域
-- vs [多 Agent 软件开发](ch04/503-agent.md) — 软件开发域，本文是营销业务域
+- vs [多 Agent 软件开发](ch04/502-agent.md) — 软件开发域，本文是营销业务域
 - vs [高德 7x24 Self-Healing Pipeline](ch04/150-ai.md) — 同公司研发线，本文是营销业务线
 - vs [高德 AI Companion Agent](ch04/150-ai.md) — C 端用户交互，本文是 B 端业务托管
 - vs [天猫营销 AI 工作流](ch04/150-ai.md) — 营销自动化，本文是营销**研究**（研究 + 实验 + 反馈循环）

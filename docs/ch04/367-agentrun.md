@@ -121,7 +121,7 @@ AgentRun 实现了平均 TCO 降低 60%，这主要来自：
 
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](ch04/150-ai.md)
-- [我给Hermes配了4个Agent，真正有用的是这些事](ch04/503-agent.md)
+- [我给Hermes配了4个Agent，真正有用的是这些事](ch04/502-agent.md)
 - [ai4s 2026 h1 跨学科前沿全景（弦论泰斗、ai 提速百倍、与](ch04/150-ai.md)
 
 ---

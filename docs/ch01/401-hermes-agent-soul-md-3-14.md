@@ -70,7 +70,7 @@ SOUL.md 是用户写的文件，原样注入到系统提示词。如果有人写
 
 截断机制 `_truncate_content()` 保留头部和尾部，中间插入截断标记——开头身份描述 + 结尾风格约束都被保留，砍掉中间可能不那么关键的内容。
 
-这种安全设计与 [Hermes Agent v0.14 核心架构](ch04/503-agent.md) 中讨论的整体安全模型一致。
+这种安全设计与 [Hermes Agent v0.14 核心架构](ch04/502-agent.md) 中讨论的整体安全模型一致。
 
 ### /personality 命令：14 个内置人格 + 自定义
 
@@ -137,7 +137,7 @@ SOUL.md 是持久人格基线。临时换风格用 `/personality`。
 
 ## 相关实体
 
-- [Hermes Agent V014 Architecture Shugex](ch04/503-agent.md)
+- [Hermes Agent V014 Architecture Shugex](ch04/502-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
 - [From Prompt To Harness Claude Official](ch01/380-claude.md)

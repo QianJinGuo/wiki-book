@@ -311,7 +311,7 @@ Physical AI is moving from research into production.
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/214-latest-open-artifacts-20-new-orgs-new-types-of-models.md)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch04/150-ai.md)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch04/503-agent.md)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch04/502-agent.md)
 - [Code As Agent Harness Survey 2026](ch09/046-code-as-agent-harness.md)
 
 ## 实践启示
@@ -375,9 +375,9 @@ Physical AI is moving from research into production.
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/503-agent.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/502-agent.md)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch04/502-agent.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/209-openclaw.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md)

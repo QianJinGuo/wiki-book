@@ -37,7 +37,7 @@
 - [Claude Code 架构解析](ch03/073-claude-code.md) — 互补页面，本文更深更全面
 - [Claude Code Prompt/Context/Harness](ch03/073-claude-code.md) — 三层工程视角
 - [Prompt Caching 工程实践](ch01/198-anthropic-prompt-caching-claude-code.md) — 与 microCompact 相关
-- [Agent Harness 12 组件](ch04/503-agent.md) — Harness 通用框架
+- [Agent Harness 12 组件](ch04/502-agent.md) — Harness 通用框架
 - [Claude Code Subagent 上下文卫生](ch03/073-claude-code.md) — Sub-Agent 设计
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-source-deep-dive-warrior.md)
 

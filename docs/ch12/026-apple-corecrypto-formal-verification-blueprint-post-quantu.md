@@ -92,7 +92,7 @@ Apple 公开的方法涉及多个工具和层次：
 ## 链接到现有实体
 
 - [Agent Formal Verification Ai Code](ch04/150-ai.md) — 互补层：软件工程层（AI 写证明）vs 密码学实现层（人工 ACL2 证明）
-- [Alphaevolve Deepmind Discovery Agent](ch04/503-agent.md) — 同样在"AI × 形式化"边界，但走 discovery 路线而非验证路线
+- [Alphaevolve Deepmind Discovery Agent](ch04/502-agent.md) — 同样在"AI × 形式化"边界，但走 discovery 路线而非验证路线
 - How Ethereum Plans To Replace Bls With Post Quantum Signatur 20260606 — 同样 post-quantum 主题，但关注 BLS aggregate signatures 而非核心 KEM/DSA
 
 ## 上线状态

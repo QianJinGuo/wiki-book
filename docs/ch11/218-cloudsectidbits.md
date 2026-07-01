@@ -29,7 +29,7 @@ Masso 漏洞揭示了 AWS Cognito SSO 实现中一个系统性的认证绕过问
 
 ## 相关实体
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/150-ai.md)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch04/503-agent.md)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch04/502-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md) ^[raw/cloudsectidbits-masso-cognito-sso.html]
 

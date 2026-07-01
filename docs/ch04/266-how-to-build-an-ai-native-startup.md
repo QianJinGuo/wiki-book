@@ -83,7 +83,7 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 
 ### 评估驱动的复利增长
 
-文章对 Evals 的强调体现了 AI 原生系统与传统软件工程的根本区别：传统系统通过代码测试保证质量，AI 原生系统通过评估保证技能的持续改进。接受率作为核心指标，本质上是一个信号——它告诉你技能是否已经「理解」了任务的边界。这与 [Karpathy 关于 Agentic Engineering](ch04/503-agent.md) 的观点相呼应：评估系统是 AI 原生公司的质量基础设施。
+文章对 Evals 的强调体现了 AI 原生系统与传统软件工程的根本区别：传统系统通过代码测试保证质量，AI 原生系统通过评估保证技能的持续改进。接受率作为核心指标，本质上是一个信号——它告诉你技能是否已经「理解」了任务的边界。这与 [Karpathy 关于 Agentic Engineering](ch04/502-agent.md) 的观点相呼应：评估系统是 AI 原生公司的质量基础设施。
 
 ### 评论者的补充
 
@@ -102,11 +102,11 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 
 ## 相关实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch04/502-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/502-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/502-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-startup-cyberfund-2026.md)

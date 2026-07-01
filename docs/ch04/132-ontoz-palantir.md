@@ -168,7 +168,7 @@
 
 - **开展企业内容层的 AI Ready 审计**：在引入 OntoZ 之前，企业应审视现有内容资产（产品描述、客户案例、FAQ）的结构化程度。OntoZ 的产业世界模型虽能一键冷启动，但冷启动质量仍取决于企业初始知识的完整度。内容层的 AI Ready 程度直接决定本体构建的速度和准确性。 
 
-- **以 Skill/MCP 标准封装能力而非定制开发**：百型强调「封装 Skill 与 MCP 和 API 的工具层」是三个准备层面之一。企业应将内部能力标准化为可复用的 Skill，而非依赖定制开发。这与 [Aws Bedrock Multi Agent Collaboration Guide](ch04/503-agent.md) 倡导的多智能体协作需标准协议的观点一致——能力标准化是可交互的基础。 
+- **以 Skill/MCP 标准封装能力而非定制开发**：百型强调「封装 Skill 与 MCP 和 API 的工具层」是三个准备层面之一。企业应将内部能力标准化为可复用的 Skill，而非依赖定制开发。这与 [Aws Bedrock Multi Agent Collaboration Guide](ch04/502-agent.md) 倡导的多智能体协作需标准协议的观点一致——能力标准化是可交互的基础。 
 
 - **在业务流程中嵌入持续的反馈回路**：OntoZ 的飞轮依赖用户在产品交互中持续给予反馈。企业应主动设计反馈触点（询盘回复评价、需求确认动作），而非将系统当作静态查询工具。强结果信号（成交数据）的积累速度直接决定系统进化速度。 
 
@@ -184,7 +184,7 @@
 - Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](ch01/436-codex.md)
 - Claude Code 架构 — [Claude Code Architecture](ch03/073-claude-code.md)
 - Harness 工程 — [Harness Engineering Systematic Framework](ch05/061-harness-engineering.md)
-- A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](ch04/503-agent.md)
+- A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](ch04/502-agent.md)
 - 本体论 / 知识图谱 — [Rag Vector Knowledge Graph Ontology](ch01/207-rag.md)
 - 多智能体研究系统 — [Anthropic Multi Agent Research System](ch04/462-anthropic-multi-agent-research-system.md)
 - Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](https://github.com/QianJinGuo/wiki/blob/main/entities/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md)

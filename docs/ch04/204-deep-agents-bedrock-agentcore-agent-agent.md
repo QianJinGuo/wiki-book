@@ -117,7 +117,7 @@ Runtime 关键能力：
 
 | 实体 | 关注点 | 本文差异 |
 |------|--------|---------|
-| [Agentcore Harness](ch04/503-agent.md) | AgentCore 平台概念 + Harness 趋势 | 偏理论，无代码 |
+| [Agentcore Harness](ch04/502-agent.md) | AgentCore 平台概念 + Harness 趋势 | 偏理论，无代码 |
 | [Agentcore Managed Harness](ch04/209-agentcore-managed-harness.md) | 托管 Harness 平台 overview | 无具体 subagent 编排 |
 | [Langchain Harrison Chase Sandbox Architecture](ch04/150-ai.md) | LangChain 沙箱架构演进 | 聚焦 sandbox，不涉及 Bedrock AgentCore 集成 |
 | [Production Harness 12 Components Framework Comparison](ch05/034-harness-12.md) | 12 组件框架对比 | 偏理论框架，无 AWS 端到端代码 |

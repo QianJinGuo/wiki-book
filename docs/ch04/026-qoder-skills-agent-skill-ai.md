@@ -366,7 +366,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/245-skill.md)
 - [Agent Skill 设计模式](ch04/245-skill.md)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/150-ai.md)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch04/503-agent.md)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch04/502-agent.md)
 - [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/245-skill.md)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/245-skill.md)
