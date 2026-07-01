@@ -10,7 +10,7 @@
 
 - [cola dlm：字节跳动连续潜空间扩散语言模型](ch01/318-cola-dlm.md)
 - [explicit vs. implicit in the age of intelligences — le secré](ch04/150-ai.md)
-- [what it feels like to work with mythos](ch01/623-what-it-feels-like-to-work-with-mythos.md)
+- [what it feels like to work with mythos](ch01/626-what-it-feels-like-to-work-with-mythos.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)

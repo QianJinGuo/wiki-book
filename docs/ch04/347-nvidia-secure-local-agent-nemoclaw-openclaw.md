@@ -11,7 +11,7 @@ Build a More Secure, Always&#x2d;On Local AI Agent with OpenClaw and NVIDIA Nemo
 - [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](ch04/503-agent.md)
 - [Nvidia Multimodal Rag Knowledge Systems](ch01/285-multimodal.md)
 - [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/150-ai.md)
-- [Nvidia Agentic Ai Subsurface Engineering](ch04/316-nvidia-agentic-ai-subsurface-engineering.md)
+- [Nvidia Agentic Ai Subsurface Engineering](ch04/321-nvidia-agentic-ai-subsurface-engineering.md)
 - [Hermes Agent Vs Openclaw Comparison](ch04/503-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-secure-local-agent-nemoclaw-openclaw.md)

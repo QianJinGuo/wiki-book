@@ -190,7 +190,7 @@ Skill 没触发
 ## 相关主题
 
 - Skill 系统综述 — [Agent Skills Comprehensive Survey](ch04/245-skill.md)
-- Skill 元技能 — [Meta Skill](ch07/022-meta-skill.md)
+- Skill 元技能 — [Meta Skill](ch07/023-meta-skill.md)
 - Skill vs Coze/Dify/n8n — [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](ch04/245-skill.md)
 - Skill 质量优化 — [Skills Refiner Design Quality Evaluation Framework](ch04/245-skill.md)
 - Anthropic 95% 数据分析 Skill 栈 — [Anthropic 95Pct Data Analysis Skill Stack Architecture](ch04/245-skill.md)

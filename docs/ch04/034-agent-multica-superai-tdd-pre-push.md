@@ -227,7 +227,7 @@
 
 ## 11. 与现有实体的差异化
 
-**与 [Multica Managed Agents Platform](ch07/053-multica-managed-agents.md)**: Multica entity 讲平台本身（开源、25,584⭐、Go 守护进程、独立 issue 工作区、pgvector 记忆）。新文章讲**业务需求 Agent 怎么在 Multica 之上编排 superai-* 技能跑通端到端交付闭环**。同一平台，不同视角（平台能力 vs. 业务交付实践）。
+**与 [Multica Managed Agents Platform](ch07/054-multica-managed-agents.md)**: Multica entity 讲平台本身（开源、25,584⭐、Go 守护进程、独立 issue 工作区、pgvector 记忆）。新文章讲**业务需求 Agent 怎么在 Multica 之上编排 superai-* 技能跑通端到端交付闭环**。同一平台，不同视角（平台能力 vs. 业务交付实践）。
 
 **与 [Alibaba Aone Agentic Rd Mode Xiangbangyu](ch04/046-alibaba-aone-agentic-rd-mode-xiangbangyu.md)**: Aone Agentic RD 模式（向邦煜）讲"组织层重构"——传统协作和分工在 Agent 时代成为效率阻碍，All-in-One 版本化管理。**新文章不讲组织重构，讲具体交付 pipeline 怎么运转**（澄清门 → 方案门 → 实现 → 验收 → 结项），是用具体工程实现验证 Aone 模式的可行性。
 
@@ -257,7 +257,7 @@
 
 ### 阿里云 Agent 平台策略：Multica 的选择逻辑
 
-选择 Multica 而非自建平台，核心原因不是技术不可替代，而是**基础设施成本**。独立 issue 工作区带来上下文隔离，Agent 与 skill 绑定减少每次手动拼装，多运行时和沙箱让需求可以持续推进，不依赖本地开发机在线。这套方案本身不绑定特定平台，核心仍然是 skill 的组合编排和提示词设计——平台只是落地载体，[Multica Managed Agents Platform](ch07/053-multica-managed-agents.md) 的开源属性（25,584 ⭐、Go 守护进程、pgvector 记忆）提供了足够的定制灵活性。
+选择 Multica 而非自建平台，核心原因不是技术不可替代，而是**基础设施成本**。独立 issue 工作区带来上下文隔离，Agent 与 skill 绑定减少每次手动拼装，多运行时和沙箱让需求可以持续推进，不依赖本地开发机在线。这套方案本身不绑定特定平台，核心仍然是 skill 的组合编排和提示词设计——平台只是落地载体，[Multica Managed Agents Platform](ch07/054-multica-managed-agents.md) 的开源属性（25,584 ⭐、Go 守护进程、pgvector 记忆）提供了足够的定制灵活性。
 
 ### 双仓库上下文管理：知识升格的节奏控制
 
@@ -287,7 +287,7 @@
 
 ## 相关实体
 
-- [Multica Managed Agents Platform](ch07/053-multica-managed-agents.md) — 新文章选用的运行时平台
+- [Multica Managed Agents Platform](ch07/054-multica-managed-agents.md) — 新文章选用的运行时平台
 - [Alibaba Aone Agentic Rd Mode Xiangbangyu](ch04/046-alibaba-aone-agentic-rd-mode-xiangbangyu.md) — 阿里 Aone Agentic RD 模式（组织层重构视角）
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch04/503-agent.md) — 阿里泊予 评测 Harness 视角（兄弟文章）
 - [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch04/150-ai.md) — 腾讯 CodeBuddy L1→L2→L3 演进

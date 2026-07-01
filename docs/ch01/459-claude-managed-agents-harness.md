@@ -86,14 +86,14 @@ MCP 服务器的价值在于复用现有生态。如果你已经有 Slack、GitH
 - [Claude Managed Agents 开发者指南](ch04/503-agent.md)
 - [claude managed agents official](ch04/477-claude-managed-agents-official.md)
 
-- [obsidian claude code integration guide](ch09/099-obsidian-claude-code-integration-guide.md)
+- [obsidian claude code integration guide](ch09/103-obsidian-claude-code-integration-guide.md)
 - [Anthropic puts Claude agents on a meter across its subscriptions](ch04/503-agent.md)
 - [Introducing Claude for Small Business](ch01/380-claude.md)
 - [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.md)
 - [Xero Announces Integration with Anthropic's Claude](ch01/380-claude.md)
 - [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/380-claude.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/073-claude-code.md)
-- [Anthropic Computer Use 最佳实践](ch01/684-anthropic-computer-use.md)
+- [Anthropic Computer Use 最佳实践](ch01/689-anthropic-computer-use.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

@@ -162,7 +162,7 @@ When the Asset Bundle APIs import the bundle into the target account, they autom
 
 ## 相关实体
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](ch11/197-amazon-quick.md)
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/569-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/571-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Amazon Quick Research Agentic Multi Source Citation](ch11/197-amazon-quick.md)
 - [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](ch11/240-bedrock.md)
 - [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch04/150-ai.md)

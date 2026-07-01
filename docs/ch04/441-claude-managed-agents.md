@@ -16,7 +16,7 @@ Anthropic's official Claude managed agents: persistent sessions, tool use, memor
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/503-agent.md)
 - [Anthropic Claude Managed Agents 平台正式发布](ch04/503-agent.md)
 - [Claude Managed Agents 开发者指南](ch04/503-agent.md)
-- [Multica — 开源 Managed Agents 平台](ch07/053-multica-managed-agents.md)
+- [Multica — 开源 Managed Agents 平台](ch07/054-multica-managed-agents.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 深度分析

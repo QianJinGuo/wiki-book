@@ -13,7 +13,7 @@
 
 ## 核心研究
 - [Natural Language Autoencoders（NLAs）](ch01/908-natural-language-autoencoders-anthropic.md) — 激活→文字翻译
-- [LLM 内省意识检测](ch01/707-anthropic.md)
+- [LLM 内省意识检测](ch01/890-llm.md)
 - [MCP 协议](ch07/016-anthropic-mcp.md)
 
 ## 深度分析

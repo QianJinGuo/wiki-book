@@ -255,7 +255,7 @@ Claude-Opus-4.7 在通用基准上顶级但在空间领域表现最差，DeepSee
 ## 相关实体
 - [Claude Code Tool Design Evolution Anthropic](ch03/073-claude-code.md)
 - [Claude Code Memory Setup Token 71X楠楠自瑜](ch03/073-claude-code.md)
-- [Codex Goal Implementation Breakdown](ch09/041-codex-goal.md)
+- [Codex Goal Implementation Breakdown](ch09/043-codex-goal.md)
 - [Elf Embedded Language Flows Hekaiming 105M](ch04/150-ai.md)
 - [2026 05 06 2201](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-05-06-2201.md)
 

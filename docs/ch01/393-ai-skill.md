@@ -38,7 +38,7 @@ SkillsBench研究：84个任务中19%出现负向增益。
 
 - [Skill工程化设计：把Agent当算法用](ch04/245-skill.md)
 - [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](ch04/150-ai.md)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/207-rag.md)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/890-llm.md)
 - [AgentEval：YAML驱动的Agent评测框架](ch04/503-agent.md)
 - [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/247-lbs-intentbench.md)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](ch04/503-agent.md)

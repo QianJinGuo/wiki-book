@@ -21,7 +21,7 @@
 - [scaling camera file processing at netflix](ch11/018-scaling-camera-file-processing-at-netflix.md)
 - [state of routing in model serving](ch11/172-state-of-routing-in-model-serving.md)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](ch01/722-steering.md)
-- [the recent history of ai in 32 otters](ch01/501-the-recent-history-of-ai-in-32-otters.md)
+- [the recent history of ai in 32 otters](ch01/505-the-recent-history-of-ai-in-32-otters.md)
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](ch04/150-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 

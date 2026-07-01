@@ -14,7 +14,7 @@
 ## 相关实体
 - [基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理与增量同步](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)
 - [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](ch04/150-ai.md)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/248-amazon-nova.md)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/250-amazon-nova.md)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/503-agent.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/150-ai.md)

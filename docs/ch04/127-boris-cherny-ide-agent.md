@@ -29,7 +29,7 @@
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/245-skill.md)
 - [Claude Code 源码核心机制详解](ch03/073-claude-code.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](ch03/073-claude-code.md)
-- [Claude Code MCP Server](ch07/024-claude-code-mcp-server.md)
+- [Claude Code MCP Server](ch07/025-claude-code-mcp-server.md)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/380-claude.md)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](ch03/073-claude-code.md)
 - [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)

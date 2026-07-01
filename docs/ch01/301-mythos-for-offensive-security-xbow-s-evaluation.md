@@ -106,7 +106,7 @@ Point Estimate 对 AI Security Institute 基准测试的分析也印证了这一
 
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/245-skill.md)
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/245-skill.md)
-- [Anthropic Computer Use 最佳实践](ch01/684-anthropic-computer-use.md)
+- [Anthropic Computer Use 最佳实践](ch01/689-anthropic-computer-use.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
 
 ---

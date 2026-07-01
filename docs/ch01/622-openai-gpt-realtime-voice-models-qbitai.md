@@ -15,7 +15,7 @@
 - [Build Live Translation Apps With Gpt Realtime Translate](ch01/139-build-live-translation-apps-with-gpt-realtime-translate.md)
 - [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch04/150-ai.md)
 - GPT-5.5 实测
-- [Gpt 5 Is Here And Openai Has Some Tips](ch01/502-gpt-5-is-here-and-openai-has-some-tips.md)
+- [Gpt 5 Is Here And Openai Has Some Tips](ch01/504-gpt-5-is-here-and-openai-has-some-tips.md)
 - [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-gpt-realtime-voice-models-qbitai.md)

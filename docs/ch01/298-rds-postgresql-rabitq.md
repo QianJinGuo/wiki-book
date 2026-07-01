@@ -67,7 +67,7 @@ RaBitQ 的理论基础来自论文《RaBitQ: Quantizing High-Dimensional Vectors
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/在-rds-postgresql-中实现-rabitq-量化.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/207-rag.md)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/890-llm.md)
 - [你不知道的 Agent：原理、架构与工程实践](ch04/503-agent.md)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch04/150-ai.md)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/503-agent.md)

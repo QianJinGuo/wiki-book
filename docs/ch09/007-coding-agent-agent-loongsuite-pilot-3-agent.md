@@ -330,7 +330,7 @@ Pilot 平台的 OTel 标准化输出意味着企业可以将 Coding Agent 的执
 - [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/245-skill.md)
 - [Baidu Comate Coding Agent Feedback Loop Wanpeng](ch04/150-ai.md)
 - [Harness Engineering Reliable Long Term Agent](ch04/503-agent.md)
-- [Anthropic Coding Agents Social Science Survey 2026](ch09/037-anthropic-coding-agent.md)
+- [Anthropic Coding Agents Social Science Survey 2026](ch09/039-anthropic-coding-agent.md)
 
 → [第 1 来源原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md)
 ---

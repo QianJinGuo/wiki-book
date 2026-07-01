@@ -94,7 +94,7 @@ Google 的独立 AI 对话产品，任何人可用（需 Google 账号）。
 - [AI 知识管理工具横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md)
 - [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md) — Google 专用研究助手
 - [ChatGPT Memory](ch01/325-chatgpt-memory.md) — 对话式记忆
-- [Obsidian](ch09/099-obsidian-claude-code-integration-guide.md) — 本地笔记
+- [Obsidian](ch09/103-obsidian-claude-code-integration-guide.md) — 本地笔记
 
 ---
 

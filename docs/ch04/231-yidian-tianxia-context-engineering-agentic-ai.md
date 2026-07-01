@@ -74,7 +74,7 @@ Layer 5: 强制回滚机制 — 所有修改类工具必须附带降级回滚逻
 *评审：Value 8 × Confidence 7 = 56 | ★★★★ | STRONG PASS*  
 
 ## 相关实体
-- [Agentic AI for Subsurface Engineering Simulation (NVIDIA)](ch04/316-nvidia-agentic-ai-subsurface-engineering.md)
+- [Agentic AI for Subsurface Engineering Simulation (NVIDIA)](ch04/321-nvidia-agentic-ai-subsurface-engineering.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/192-tencent-vibe-coding-to-agentic-engineering-backend.md)
 - [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](ch04/150-ai.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)

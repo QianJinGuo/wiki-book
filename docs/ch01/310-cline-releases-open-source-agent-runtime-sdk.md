@@ -129,7 +129,7 @@ npx skills add cline/sdk-skill
 - [Cline releases open-source agent runtime SDK](ch04/401-cline-releases-open-source-agent-runtime-sdk.md)
 - [腾讯混元Hy3-preview发布](ch04/503-agent.md)
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](ch03/073-claude-code.md)
-- [Codex /goal：长任务Agent的目标运行时](ch09/041-codex-goal.md)
+- [Codex /goal：长任务Agent的目标运行时](ch09/043-codex-goal.md)
 - [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch04/503-agent.md)
 - [CLI、MCP、API 选型：Agent 接入层决策指南](ch04/503-agent.md)
 

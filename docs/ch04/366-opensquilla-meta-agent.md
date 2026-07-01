@@ -24,7 +24,7 @@ OpenSquilla 推出 **9 个内置 Meta Skill**，代表从 Skill 1.0（单 Skill 
 
 **实测**：meta-kid-project-planner 5 步流程（立项/可行性/执行/外部信息/安全审查）跑 20+ 分钟，交付 3000 字 md + HTML 交互页面（哈利波特风格）。整体比龙虾类 Agent 省 **60-80%** token。
 
-**范式三线交点**：(1) 模型复杂指令理解能力飞升 (2) 社区 Skill 爆发需要更高抽象 (3) 大模型成本压力大 → Meta Skill 把 trial-and-error 烧 token 前置到 Skill 层。详见 [Meta Skill](ch07/022-meta-skill.md) 实体页。
+**范式三线交点**：(1) 模型复杂指令理解能力飞升 (2) 社区 Skill 爆发需要更高抽象 (3) 大模型成本压力大 → Meta Skill 把 trial-and-error 烧 token 前置到 Skill 层。详见 [Meta Skill](ch07/023-meta-skill.md) 实体页。
 
 ## 深度分析
 ### 1. 路由决策的分层复杂性

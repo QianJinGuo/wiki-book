@@ -229,7 +229,7 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
   - [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](ch04/150-ai.md)（架构分析）
   - [Karpathy LLM Wiki v2](ch01/284-karpathy-llm-wiki-v2-2026.md)（原始方法论）
   - [Karpathy LLM Wiki 第二大脑](ch04/150-ai.md)
-  - [Obsidian 工具概览](ch09/099-obsidian-claude-code-integration-guide.md)
+  - [Obsidian 工具概览](ch09/103-obsidian-claude-code-integration-guide.md)
   - [Claude Code Memory Setup (Obsidian + Graphify)](ch01/694-claude-code-memory-setup-obsidian-graphify.md)
 - **同 Hermes Agent 生态**：
   - [Hermes Skills + LLM Wiki 越用越懂你](ch04/245-skill.md)（三层互相喂养）

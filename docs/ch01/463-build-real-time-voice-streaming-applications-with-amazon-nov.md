@@ -11,19 +11,19 @@
 
 ## 相关实体
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/503-agent.md)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/248-amazon-nova.md)
-- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](ch11/248-amazon-nova.md)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/250-amazon-nova.md)
+- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](ch11/250-amazon-nova.md)
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch04/503-agent.md)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](ch04/150-ai.md)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](ch04/150-ai.md)
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/509-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/890-llm.md)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/032-amazon-bedrock-api.md)
 
 - [Www A16Z News Need Series C Call A16Z](ch11/146-need-series-c-call-a16z.md)
 - [Amazon Nova Forge Hyperparameter Tuning Art Science](ch11/057-amazon-nova-forge.md)
 - [Object Detection With Amazon Nova 2 Lite](ch11/108-amazon-nova-2-lite.md)
 - [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](ch04/150-ai.md)
-- [Accelerate Llm Model Loading And Increase Context Windows Wi](ch01/839-accelerate-llm-model-loading-and-increase-context-windows-wi.md)
+- [Accelerate Llm Model Loading And Increase Context Windows Wi](ch01/842-accelerate-llm-model-loading-and-increase-context-windows-wi.md)
 - [用 Amazon Quick 加速日常数据工作](ch11/197-amazon-quick.md)
 - [使用 Amazon Cognito 多区域复制提高应用程序韧性](ch11/232-amazon-cognito.md)
 - [Amazon Quick Arns Cross Account Migration And Namespace Perm](ch11/197-amazon-quick.md)

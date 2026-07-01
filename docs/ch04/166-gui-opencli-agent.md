@@ -136,7 +136,7 @@ opencli cascade https://api.example.com/hot
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 - [Agent Reliability Engineering Skillify Continuous Improvement](ch04/245-skill.md)
 - [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](ch01/707-anthropic.md)
-- [Codex Goal Source Code Deep Dive](ch09/041-codex-goal.md)
+- [Codex Goal Source Code Deep Dive](ch09/043-codex-goal.md)
 - [Impeccable Frontend Design Skill Harness Vibecoder](ch04/245-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/opencli-browser-automation-jingxing.md)

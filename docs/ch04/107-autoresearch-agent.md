@@ -34,7 +34,7 @@
 - 同样的 GPT-5.4 在 Karpathy autoresearch（线性循环）下 vs AIDE（树搜索）下产出的论文质量差异巨大
 - 同样的 Claude Opus 在 AI Scientist v2（树搜索 + Agent 自主选择）下 vs CORAL（异步多 Agent）下，产出效率完全不同
 
-这呼应了 [Nathan 评测 GPT 5.4 时的核心论点](ch01/434-codex.md)：模型权重之外的"系统"才是真正的差异化来源。Agent Loop 就是研究的"系统"。
+这呼应了 [Nathan 评测 GPT 5.4 时的核心论点](ch01/436-codex.md)：模型权重之外的"系统"才是真正的差异化来源。Agent Loop 就是研究的"系统"。
 
 ### 二、四种循环的工程取舍
 

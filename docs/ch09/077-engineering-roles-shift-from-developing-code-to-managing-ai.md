@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [scaling archunit with nebula archrules](ch11/241-scaling-archunit-with-nebula-archrules.md)
+- [scaling archunit with nebula archrules](ch11/247-scaling-archunit-with-nebula-archrules.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/820297.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)

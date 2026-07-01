@@ -117,7 +117,7 @@ Mollick 给整篇文章的总结：
 
 ### 7. 与 OpenAI Codex 演进的方向对照
 
-Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/434-codex.md) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
+Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/436-codex.md) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
 
 ## 实践启示
 
@@ -188,7 +188,7 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 ## 相关实体
 
 - [Code as Agent Harness Survey](ch09/046-code-as-agent-harness.md)
-- [GPT-5.4 Codex 进展](ch01/434-codex.md)
+- [GPT-5.4 Codex 进展](ch01/436-codex.md)
 - [Karpathy Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
 - [Karpathy Agentic Engineering 综述](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [AgentOps on Bedrock](ch04/150-ai.md)

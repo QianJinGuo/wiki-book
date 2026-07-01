@@ -11,7 +11,7 @@
 - [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/777-deepseek.md)
 - [dynamically splitting wide partitions in cassandra for time](ch11/024-dynamically-splitting-wide-partitions-in-cassandra-for-time.md)
 - [interconnects ai p open and closed models are on different](ch04/150-ai.md)
-- [reducing container cold start times using soci index on dlam](ch01/860-reducing-container-cold-start-times-using-soci-index-on-dlam.md)
+- [reducing container cold start times using soci index on dlam](ch01/863-reducing-container-cold-start-times-using-soci-index-on-dlam.md)
 - [state of routing in model serving](ch11/172-state-of-routing-in-model-serving.md)
 - [the distillation panic](ch01/276-the-distillation-panic.md)
 - [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki/blob/main/entities/untitled-v2.md)

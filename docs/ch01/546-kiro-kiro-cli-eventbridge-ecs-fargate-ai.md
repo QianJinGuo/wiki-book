@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [xz, two years on: what scanners still cannot catch](ch01/508-xz.md)
+- [xz, two years on: what scanners still cannot catch](ch01/510-xz.md)
 - [autoresearch 迁移到软件开发：多 agent 交叉审核的工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-software-development.md)
 - [扣子 3.0 正式发布：@ 一下全员开工](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-release-official-quantum-bit.md)
 - [知识库问答 @文档：从 dom 方案到 prosemirror 落地](https://github.com/QianJinGuo/wiki/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)

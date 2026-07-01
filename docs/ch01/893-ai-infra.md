@@ -150,7 +150,7 @@ FlashAttention 的核心机制是 **Kernel Fusion + 分块计算 + Online Softma
 - [Gemma 4 Multi Token Prediction Drafters](ch01/227-gemma-4-multi-token-prediction-drafters.md)
 - [Continuous Async](https://github.com/QianJinGuo/wiki/blob/main/entities/continuous-async.md)
 - [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](ch01/707-anthropic.md)
-- [Codex Goal Source Code Deep Dive](ch09/041-codex-goal.md)
+- [Codex Goal Source Code Deep Dive](ch09/043-codex-goal.md)
 - [Impeccable Frontend Design Skill Harness Vibecoder](ch04/245-skill.md)
 - [Opencli Browser Automation Jingxing](ch03/080-opencli.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)

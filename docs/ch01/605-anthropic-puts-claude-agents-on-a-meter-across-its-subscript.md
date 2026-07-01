@@ -37,7 +37,7 @@
 - [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/380-claude.md)
 - [Anthropic Claude Managed Agents 平台正式发布](ch04/503-agent.md)
 - [Claude Managed Agents 官方 Harness 平台指南](ch04/503-agent.md)
-- [Anthropic Computer Use 最佳实践](ch01/684-anthropic-computer-use.md)
+- [Anthropic Computer Use 最佳实践](ch01/689-anthropic-computer-use.md)
 
 ## 深度分析
 **从 Token 计费到 Agent-Aware 计费的范式转变**
