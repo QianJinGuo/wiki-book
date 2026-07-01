@@ -83,12 +83,12 @@
 
   - ⭐ Impeccable：大规模自动化测试框架
   - ⭐⭐ Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（13 来源深度合并：Addy Osmani 
+  - ⭐⭐ Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
   - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ QQ音乐 Harness Engineering 实践（大仓多服务场景）
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
   - ⭐⭐ 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记（2 周 3 次实测 + 3 个测试 + 加法传播学 +
-  - ⭐⭐ 阿里工程师 Harness 工程化实践 (双案例合并)
   - ... 共 **91** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 36 篇

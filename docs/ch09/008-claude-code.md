@@ -270,7 +270,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [A Missing Layer In Agentic Systems](ch04/314-a-missing-layer-in-agentic-systems.md)
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps 1778979925](ch03/044-agent.md)
 - [Hermes Agent Soul Md Personality Shugex](ch03/044-agent.md)
-- [Lessons From 2 Billion Agentic Workflows](ch04/365-lessons-from-2-billion-agentic-workflows.md)
+- [Lessons From 2 Billion Agentic Workflows](ch04/369-lessons-from-2-billion-agentic-workflows.md)
 - [Local Vs Cloud Agent Onsite Context Debate Xingxiaozhao](ch03/044-agent.md)
 - [Volcengine Data Agent Marketing Strategy Agent](ch03/044-agent.md)
 - [Phoneworld Mobile Agent Scaling Mock Environments Tencent Hunyuan Arxiv 2605 29486](ch03/044-agent.md)
@@ -278,7 +278,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Real Ai Agents And Real Work](ch04/212-real-ai-agents-and-real-work.md)
 - [Volcengine Data Agent Intelligent Query Agent](ch03/044-agent.md)
 - [Hermes Agent Tool System Analysis](ch03/044-agent.md)
-- [How To Build Agents Where Data Already Lives](ch04/431-how-to-build-agents-where-data-already-lives.md)
+- [How To Build Agents Where Data Already Lives](ch04/432-how-to-build-agents-where-data-already-lives.md)
 - [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](ch04/150-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 

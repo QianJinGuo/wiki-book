@@ -15,7 +15,7 @@
 - [codex discovered a hidden http/2 bomb](ch01/436-codex.md)
 - [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](ch03/074-claude-code.md)
 - [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](ch03/074-claude-code.md)
-- [code intelligence – changelog](ch04/403-code-intelligence-changelog.md)
+- [code intelligence – changelog](ch04/412-code-intelligence-changelog.md)
 - [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/777-deepseek.md)
 - [democratizing machine learning at netflix: building the mode](ch11/232-democratizing-machine-learning-at-netflix-building-the-mode.md)
 - [gemma 4 and what makes an open model succeed](ch01/563-gemma-4-and-what-makes-an-open-model-succeed.md)
