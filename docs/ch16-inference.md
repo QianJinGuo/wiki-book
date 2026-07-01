@@ -41,8 +41,8 @@
 
 ## 相关实体
 - [Vector Db Chroma Vs Qdrant](ch11/177-chroma-vs-qdrant.md)
-- [Deepseek V4 Pro Vs Claude](ch01/380-claude.md)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](ch01/380-claude.md)
+- [Deepseek V4 Pro Vs Claude](ch01/777-deepseek.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](ch11/210-openclaw.md)
 - [Context Engineering Three Memory Paradigms Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
@@ -394,8 +394,8 @@ SageMaker AI 端点按实例运行时长计费 ：
 ## 扩展阅读
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
-→ [Voice Agent 设计 - Nova Sonic 多 Agent 工具与会话](ch04/503-agent.md)
-→ [Nova Sonic WebRTC 实时语音流](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
+→ [Voice Agent 设计 - Nova Sonic 多 Agent 工具与会话](ch03/044-agent.md)
+→ [Nova Sonic WebRTC 实时语音流](ch11/250-amazon-nova.md)
 → [OpenAI Realtime Voice 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/openai-realtime-voice-architecture.md)
 
 ---
@@ -582,7 +582,7 @@ Green 的结论是：隐私保护（如果存在）活在法律、政策和商�
 - **乱码和生僻字**：通常伴随极低的 spec_accept_length（目标模型连续接受的 draft token 前缀长度），即草稿模型生成的候选 token 几乎全部被目标模型拒绝，表明目标模型所看到的 KV Cache 状态与草稿模型预期之间存在显著偏差。
 - **复读**：通常伴随偏高的 spec_accept_rate（draft token 被接受的比例），表明损坏的 KV Cache 可能使注意力模式退化，并将生成过程推向高置信度的重复循环。
 基于上述观察，我们进一步实现了一套在线异常监控策略：当 spec_accept_length 持续低于 1.4 且生成长度已超过 128 token，或 spec_accept_rate 超过 0.96 时，系统主动中止当前生成，并将请求交由负载均衡器重试。
---- See also [Karpathy Vibe Coding To Agentic Engineering](ch04/503-agent.md)
+--- See also [Karpathy Vibe Coding To Agentic Engineering](ch03/044-agent.md)
 
 ## BugFix #1：PD 分离架构下的 KV Cache 竞态
 ### 原因分析：异步 Abort 引发的 KV Cache 复用竞态
@@ -829,7 +829,7 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [小米AI — ICML 2026 论文矩阵（11篇）](ch04/150-ai.md)
-- [OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](ch05/015-harness.md)
+- [OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](ch05/009-harness.md)
 - [百度文心大模型后训练进化（ERNIE 3.0→5.0）](ch04/150-ai.md)
 
 ---
@@ -929,9 +929,9 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 ## 与现有实体的关系
 
 - **与 [Skill 自进化三路线](ch04/245-skill.md)** 呼应：PithTrain 的 agent skills 哲学与 SkillOS/SkillOpt 一脉相承（>30% 重复劳动 → 技能化）
-- **与 [SaaS-Bench](ch04/503-agent.md)** 平行：两者都创建"为 agent 量身定制的工程指标" —— SaaS-Bench 测 GUI Agent 完成率，PithTrain 测训练框架的 agent-task efficiency
-- **与 [Matt Van Horn 22 黑客技巧](ch03/073-claude-code.md)** 呼应：Matt 的"任何做超过 2 次的事 → 技能"是 PithTrain agent skills 哲学的应用层验证
-- **与 [Agent 六机制](ch04/503-agent.md)** 平行：双重效率思想是六机制中"系统-环境协同"的具体实现
+- **与 [SaaS-Bench](ch03/044-agent.md)** 平行：两者都创建"为 agent 量身定制的工程指标" —— SaaS-Bench 测 GUI Agent 完成率，PithTrain 测训练框架的 agent-task efficiency
+- **与 [Matt Van Horn 22 黑客技巧](ch03/074-claude-code.md)** 呼应：Matt 的"任何做超过 2 次的事 → 技能"是 PithTrain agent skills 哲学的应用层验证
+- **与 [Agent 六机制](ch03/044-agent.md)** 平行：双重效率思想是六机制中"系统-环境协同"的具体实现
 
 ## 核心洞察
 
@@ -1094,7 +1094,7 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/887-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.md)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/901-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.md)
 - [Toto 2.0: Time series forecasting enters the scaling era](ch01/025-toto-2-0-time-series-forecasting-enters-the-scaling-era.md)
 
 ---
@@ -1139,10 +1139,10 @@ CUDA event 是一个标记，可记录到 stream 中，当 GPU 执行到该点�
 5. **实践建议**：如果你的 LLM 推理服务吞吐量不达预期，在优化模型或硬件之前，先用 profiling 工具（如 HuggingFace 提供的脚本）确认是否存在 CPU-GPU 交替空闲问题。22% 的加速可能是免费午餐。
 ## 相关实体
 - [Continuousasync](https://github.com/QianJinGuo/wiki/blob/main/entities/continuousasync.md)
-- [Gemma 4 Multi Token Prediction Drafters](ch01/227-gemma-4-multi-token-prediction-drafters.md)
+- [Gemma 4 Multi Token Prediction Drafters](ch01/265-gemma-4-multi-token-prediction-drafters.md)
 - [How To Calculate The Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
-- [Introducing The Ettin Reranker Family](ch01/371-introducing-the-ettin-reranker-family.md)
-- [Lightseek Tokenspeed](ch01/850-lightseek-tokenspeed.md)
+- [Introducing The Ettin Reranker Family](ch01/372-introducing-the-ettin-reranker-family.md)
+- [Lightseek Tokenspeed](ch01/854-lightseek-tokenspeed.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/continuous-async.md)
@@ -1215,11 +1215,11 @@ End-to-end encrypted ML inference with Amazon SageMaker AI and FHE 涉及apple�
 
 ### 与现有知识体系的关联
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
 
 ## 实践启示
 
@@ -1391,7 +1391,7 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 ## 相关实体
 
 - [automation anywhere collaborates with cisco, nvidia, okta, a](ch04/150-ai.md)
-- [ettin reranker family](ch01/371-introducing-the-ettin-reranker-family.md)
+- [ettin reranker family](ch01/372-introducing-the-ettin-reranker-family.md)
 - [mathematical optimization at enterprise scale: aws innovatio](https://github.com/QianJinGuo/wiki/blob/main/entities/mathematical-optimization-aws-innovation-center-enterprise.md)
 - [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
 - [AI GPUs probably live longer than three years](ch04/150-ai.md)
@@ -1591,8 +1591,8 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 ---
 ## 相关实体
 - [ai-infra-auto-driven-skills v0.1.0：给 codex / claude code 的推理](ch04/245-skill.md)
-- [gemma 4 multi token prediction drafters](ch01/227-gemma-4-multi-token-prediction-drafters.md)
-- [tokenspeed agentic inference engine](ch04/534-tokenspeed-agentic-inference-engine.md)
+- [gemma 4 multi token prediction drafters](ch01/265-gemma-4-multi-token-prediction-drafters.md)
+- [tokenspeed agentic inference engine](ch04/538-tokenspeed-agentic-inference-engine.md)
 
 ---
 
@@ -1616,8 +1616,8 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 
 ## 相关实体
 <!-- ⚠️ 以下交叉引用在 lint 时未通过，请确认 slug 后再取消注释 -->
-<!-- - [servicenow vllm correctness](ch01/866-vllm.md) -->
-<!-- - [servicenow vllm correctness huggingface](ch01/866-vllm.md) -->
+<!-- - [servicenow vllm correctness](ch01/890-llm.md) -->
+<!-- - [servicenow vllm correctness huggingface](ch01/890-llm.md) -->
 
 ## 深度分析
 ### 背景：为什么 V0→V1 迁移是个高风险操作
@@ -1737,8 +1737,8 @@ ServiceNow 的经验是：**错误的顺序（先改目标函数再修后端）�
 
 ## 相关实体
 
-- [ServiceNow vLLM Correctness（更完整的分析）](ch01/866-vllm.md)
-- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/866-vllm.md)
+- [ServiceNow vLLM Correctness（更完整的分析）](ch01/890-llm.md)
+- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/890-llm.md)
 
 ## 深度分析
 
@@ -1837,7 +1837,7 @@ ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——�
 
 ### 相关实体
 
-- [Deepseek V4 Triton Fp4 Optimization](ch01/528-deepseek-v4.md) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
+- [Deepseek V4 Triton Fp4 Optimization](ch01/777-deepseek.md) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
 - [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理优化通识，包含本文未覆盖的量化 / 蒸馏 / serving 层面的优化策略
 
 ## 实践启示
@@ -1970,7 +1970,7 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 - → [DeepSeek V4 本地推理](ch09/041-deepseek-v4-ds4c-antirez-local-inference-qbitai.md)：V4 的 CSA/HCA 架构创新（本文第 6 节）与 antirez 的 ds4.c 本地推理引擎互补
 - → [GLM-5 Scaling Pain](ch04/150-ai.md)：高并发推理下的竞态 Bug，是本文第 8 节"推理服务基础设施"的反面案例
-- → [vLLM](ch01/866-vllm.md)：PagedAttention 的具体实现
+- → [vLLM](ch01/715-vllm.md)：PagedAttention 的具体实现
 
 ---
 
@@ -1982,10 +1982,10 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 ## 相关实体
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
-- [Claude Code Hidden Settings 18](ch03/073-claude-code.md)
+- [Claude Code Hidden Settings 18](ch03/074-claude-code.md)
 - [Alphaevolve交出一周年炸裂成绩单Ai自我改进不再科幻](ch04/150-ai.md)
 - [Rag Chunking Optimization 2025](ch01/207-rag.md)
-- [Wangyunhe Harness Optimization Agentsoul](ch04/503-agent.md)
+- [Wangyunhe Harness Optimization Agentsoul](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
 
@@ -2088,7 +2088,7 @@ GPU→CPU→KVStore 三级缓存体系，请求按 L1→L2→L3 顺序查询可�
 
 ## 与现有知识库的关联
 
-- [腾讯混元 Hy3 preview 发布](ch04/503-agent.md)：互补实体，该篇讲模型能力与发布，本篇讲推理优化技术细节
+- [腾讯混元 Hy3 preview 发布](ch03/044-agent.md)：互补实体，该篇讲模型能力与发布，本篇讲推理优化技术细节
 - [LLM 推理流水线](ch01/890-llm.md)：推理优化基础知识，本篇是 Hy3 的具体工程实践
 - [模型蒸馏与压缩](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-distillation-compression.md)：量化压缩（W4A8、AngelSlim）是模型压缩的推理侧实践
 - [Transformer 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)：GQA + MoE 架构是 Hy3 的基础
@@ -2118,11 +2118,11 @@ vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇
 **后端等效性恢复后，下一步是 async/off-policy 清理。** 保持 rollout 时刻的 behavior policy logprobs，在优化时重新计算 trainer-side old policy logprobs，将后端差异修正与策略更新比率分离，跟踪 ESS 等诊断指标——这些是后端 parity 达成后的自然下一步。    
 
 ## 相关实体
-- [servicenow vllm correctness huggingface](ch01/866-vllm.md)
+- [servicenow vllm correctness huggingface](ch01/890-llm.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vllm-v0-to-v1-correctness-before-corrections.md)
 
-- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/866-vllm.md)
+- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/890-llm.md)
 - [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
 
 ---
@@ -2199,7 +2199,7 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ## 深度分析
 
-**消除而非优化：Kernel 层设计的方法论突破：** IKBO 的核心洞察是"broadcast 是数据布局问题，而非计算必需"——传统方法在系统层面处理 broadcast 复制，浪费内存带宽和计算资源；而 IKBO 在计算原语层面消除复制，让 kernel 内部处理 mismatched batch sizes。这个思维转换将优化方向从"workaround 问题"转向"消除问题根源"，实现了 2/3 的延迟降低。这种**在根源处解决问题**而非在表面做修补的思想，对其他 AI 系统优化有普遍借鉴意义。 See also [Harness Production Agent Engineering Deficit](ch04/503-agent.md)
+**消除而非优化：Kernel 层设计的方法论突破：** IKBO 的核心洞察是"broadcast 是数据布局问题，而非计算必需"——传统方法在系统层面处理 broadcast 复制，浪费内存带宽和计算资源；而 IKBO 在计算原语层面消除复制，让 kernel 内部处理 mismatched batch sizes。这个思维转换将优化方向从"workaround 问题"转向"消除问题根源"，实现了 2/3 的延迟降低。这种**在根源处解决问题**而非在表面做修补的思想，对其他 AI 系统优化有普遍借鉴意义。 See also [Harness Production Agent Engineering Deficit](ch03/044-agent.md)
 
 **Kernel-Model-System 三层协同设计是性能突破的关键：** IKBO 的成功不只是 kernel 优化的功劳，而是 kernel、ML 编译器、inference runtime 三层协同设计的结果。Kernel 层提供支持 mismatched RO/NRO batch sizes 的原生接口；编译器层需要 per-operator dynamic shape ranges 来选择正确形状的 kernel；runtime 层通过 candidate-to-user mapping 而非 materializing broadcast 传递信息。任何一层单独优化都无法达到最终效果，**系统级协同优化才能实现数量级突破**。
 

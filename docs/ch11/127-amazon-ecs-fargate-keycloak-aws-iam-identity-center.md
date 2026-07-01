@@ -66,9 +66,9 @@ ALB 安全组在网络层做来源 IP 控制，Keycloak 自定义 IP Check SPI �
 ## 相关实体
 - [Kiro Job Scheduler Eventbridge Ecs Fargate](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md)
 - [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/010-how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/503-agent.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/044-agent.md)
 - [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch04/503-agent.md)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
 

@@ -138,7 +138,7 @@ ds4.c 在 M3 Ultra 128GB 配置下达到 **468 token/s 预填充速度** 和 **2
 ## 相关实体
 
 - [离线 LLM 能量使用](ch01/890-llm.md) — 同一作者的另一篇相关文章
-- [LightSeek TokenSpeed](ch01/850-lightseek-tokenspeed.md) — 推理引擎优化技术（Speculative Decoding、KV Cache、Continuous Batching）
+- [LightSeek TokenSpeed](ch01/854-lightseek-tokenspeed.md) — 推理引擎优化技术（Speculative Decoding、KV Cache、Continuous Batching）
 - [Ollama 安全问题](ch12/013-bleeding-llama-critical-unauthenticated-memory-leak-in-ollam.md) — 本地推理基础设施的安全考量
 
 ## 相关概念

@@ -64,7 +64,7 @@ assert 和 fuzzing 的协同效应在实际项目中需要主动构建。实践�
 - [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](https://github.com/QianJinGuo/wiki/blob/main/entities/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md)
 - [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](ch04/150-ai.md)
 - [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](https://github.com/QianJinGuo/wiki/blob/main/entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
-- [Seangoedeckecom Build Agents Not Pipelines](ch04/503-agent.md)
+- [Seangoedeckecom Build Agents Not Pipelines](ch03/044-agent.md)
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md)
 
 ## 相关主题

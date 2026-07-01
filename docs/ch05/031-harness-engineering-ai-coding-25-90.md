@@ -68,7 +68,7 @@
 
 ## 相关页面
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 六层结构与核心方程
-- [Cursor Harness 复盘](ch01/248-cursor-harness-model-production-floor.md) — 模型决定上限，Harness 决定生产下限
+- [Cursor Harness 复盘](ch01/285-cursor-harness-model-production-floor.md) — 模型决定上限，Harness 决定生产下限
 - [字节跳动 TRAE Harness Engineering 指南](ch01/531-trae-harness-engineering.md) — R.E.S.T 框架/PPAF 循环/上下文 Token 流水线
 
 ## 相关实体

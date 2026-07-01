@@ -85,7 +85,7 @@ Kimi Code CLI 的**多模态输入 + Agent Swarm** 特性，更适合做需要�
 两个层的能力边界清晰，组合起来形成完整的 Agent 闭环。  
 
 ## 相关链接
-- [Hermes Agent Goal And Kanban](ch04/503-agent.md)
+- [Hermes Agent Goal And Kanban](ch03/044-agent.md)
 
 ## 实践启示
 ### 对 Hermes-Agent Kanban 使用者的建议
@@ -112,12 +112,12 @@ Kimi Code CLI 的**多模态输入 + Agent Swarm** 特性，更适合做需要�
 - 发布：2026-05-10
 
 ## 相关实体
-- [Claude Code 设计原则与对照分析](ch03/073-claude-code.md)
-- [Claude Code 架构解析](ch03/073-claude-code.md)
+- [Claude Code 设计原则与对照分析](ch03/074-claude-code.md)
+- [Claude Code 架构解析](ch03/074-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-kanban-deep-test-by-wjjagi-2026.md)
 
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](ch03/073-claude-code.md)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](ch03/074-claude-code.md)
 
 ---
 

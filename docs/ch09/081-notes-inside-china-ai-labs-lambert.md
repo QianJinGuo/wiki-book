@@ -1,6 +1,6 @@
-# notes inside china ai labs lambert
+# Notes Inside China AI Labs Lambert
 
-## Ch09.081 notes inside china ai labs lambert
+## Ch09.081 Notes Inside China AI Labs Lambert
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/notes-inside-china-ai-labs-lambert.md`
 
@@ -11,8 +11,8 @@ Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes fr
 - [Notes From Inside Chinas Ai Labs](ch09/095-notes-from-inside-chinas-ai-labs.md)
 - [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/446-score-by-collisions-patch-by-panic.md)
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](ch01/643-google-adds-llms-txt-check-to-chrome-lighthouse.md)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/503-agent.md)
-- [Agentcore Managed Harness](ch04/207-agentcore-managed-harness.md)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/044-agent.md)
+- [Agentcore Managed Harness](ch04/210-agentcore-managed-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/notes-inside-china-ai-labs-lambert.md)
 

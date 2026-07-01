@@ -2,7 +2,7 @@
 
 ## Ch04.074 DESIGN.md：AI 设计 Agent 的视觉约束对齐文件（Google Stitch × VoltAgent）
 
-> 📊 Level ⭐⭐ | 18.1KB | `entities/design-md-google-stitch-voltagent-ai-design-agent.md`
+> 📊 Level ⭐⭐ | 18.2KB | `entities/design-md-google-stitch-voltagent-ai-design-agent.md`
 
 # DESIGN.md：AI 设计 Agent 的视觉约束对齐文件（Google Stitch × VoltAgent）
 
@@ -225,11 +225,11 @@ VoltAgent awesome-design-md 集合仍在活跃更新中（学术pro 使用"71 �
 ---
 
 ## 相关实体
-- [Agentexecutorgooglesdistributedagentruntime](ch04/503-agent.md)
+- [Agentexecutorgooglesdistributedagentruntime](ch03/044-agent.md)
 - [Anthropic Google Agent Skills Design Patterns](ch04/245-skill.md)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](ch04/503-agent.md)
-- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](ch04/503-agent.md)
-- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch04/503-agent.md)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](ch03/044-agent.md)
+- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](ch03/044-agent.md)
+- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch03/044-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/design-md-google-stitch-voltagent-ai-design-agent.md)

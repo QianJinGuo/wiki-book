@@ -44,7 +44,7 @@ Marcus 和 Bjarnason 将 AI 工具本身作为批评对象，而 Upwork 报告�
 ## 相关实体
 - [Stochastic Parrot Thought Experiment](ch01/664-stochastic-parrot-thought-experiment.md)
 - [Stochastic Parrot Deep Mystery Llms](ch01/587-stochastic-parrot-deep-mystery-llms.md)
-- [While Breathless In Stodgy Viridian](ch01/447-while-breathless-in-stodgy-viridian.md)
+- [While Breathless In Stodgy Viridian](ch01/490-while-breathless-in-stodgy-viridian.md)
 - [Aws Reinforcement Fine Tuning Llm As Judge](ch01/449-aws-reinforcement-fine-tuning-llm-as-judge.md)
 - [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 

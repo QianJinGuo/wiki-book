@@ -563,11 +563,11 @@ Agent 时代研究焦点从单次生成转向持续运行，三个关键事实�
 | 本报告概念 | 本 wiki 已有实体 | 视角关系 |
 |---|---|---|
 | Loop Engineering | [Tsinghua Harness Engineering Report](ch05/061-harness-engineering.md) (清华前一份) | **演进**：Harness → Loop，前者讲"系统层"，后者讲"循环层" |
-| Loop Stack 六件套 | [Agent Harness 12 Components 7 Decisions](ch04/503-agent.md) | **视角互补**：六件套偏"循环骨架"，12 件套偏"工程组件" |
-| Loop Ledger | [Agent Harness Observability Production](ch04/503-agent.md) | **深化**：从可观测性到可审计账本 |
+| Loop Stack 六件套 | [Agent Harness 12 Components 7 Decisions](ch03/044-agent.md) | **视角互补**：六件套偏"循环骨架"，12 件套偏"工程组件" |
+| Loop Ledger | [Agent Harness Observability Production](ch03/044-agent.md) | **深化**：从可观测性到可审计账本 |
 | Worktree Fleet | [Agent Engineering Principles Architecture Practice](ch04/441-agent-engineering-principles-architecture-practice.md) | **深化**：从"隔离原则"到"舰队编排" |
 | Entropy Janitor | [Hermes Agent Closed Learning Loop](ch01/337-hermes-agent-closed-learning-loop.md) | **扩展**：闭环学习的"清理步骤"形式化 |
-| Triage 三种输出 | [Agent Harness Context Management Working Set](ch04/503-agent.md) | **深化**：从"上下文管理"到"信号路由" |
+| Triage 三种输出 | [Agent Harness Context Management Working Set](ch03/044-agent.md) | **深化**：从"上下文管理"到"信号路由" |
 | Claude Code /goal | (官方文档：code.claude.com/docs/en/goal) | **产品映射** |
 | Claude Code Routines | (官方文档：code.claude.com/docs/en/routines) | **产品映射** |
 
@@ -795,20 +795,20 @@ NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一�
 
 ## 相关实体
 
-- [EVA-Bench Data 2.0](ch04/503-agent.md) — 语音 Agent 垂直领域评估
-- [MobileGym](ch04/503-agent.md) — Mobile Agent 训练与评测基础设施
-- [YAML 驱动的 Agent 评估框架](ch04/503-agent.md)
-- [Agent 记忆评估综述](ch04/503-agent.md)
+- [EVA-Bench Data 2.0](ch03/044-agent.md) — 语音 Agent 垂直领域评估
+- [MobileGym](ch03/044-agent.md) — Mobile Agent 训练与评测基础设施
+- [YAML 驱动的 Agent 评估框架](ch03/044-agent.md)
+- [Agent 记忆评估综述](ch03/044-agent.md)
 - [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
 - [AI 评估的三种方法](ch04/150-ai.md)
 - [Agent Skill 写作评估](ch04/245-skill.md)
 - [AI 工作面试与模型评估](ch04/150-ai.md)
-- [Inngest 2026 AI 评测报告](ch01/459-inngest-ai-in-production-the-2026-benchmark-report.md)
-- [Agent Harness 生产设计指南](ch04/503-agent.md)
+- [Inngest 2026 AI 评测报告](ch01/501-inngest-ai-in-production-the-2026-benchmark-report.md)
+- [Agent Harness 生产设计指南](ch03/044-agent.md)
 - [Agent 工程原则](ch04/441-agent-engineering-principles-architecture-practice.md)
 - [SkillClaw Hyman 阿里 Skill 框架](ch04/245-skill.md)
-- [SkillX 浙大 Hyman](ch04/245-skill.md)
-- [Claude Code 最佳社区 Fork 演进](ch03/073-claude-code.md)
+- [SkillX 浙大 Hyman](ch07/045-skillx.md)
+- [Claude Code 最佳社区 Fork 演进](ch03/074-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nice-zhejiang-university-social-intelligence-benchmark-hyman-2026-06-12.md)
 
@@ -1331,7 +1331,7 @@ Stddev > 0.1 时，按以下顺序排查：
 - [Ai Skill Evolution Framework](ch04/245-skill.md)
 - [Ai Skill 测评报告解读](ch04/245-skill.md)
 - [Ai Skill Skill Creator 源码拆解](ch04/245-skill.md)
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch04/503-agent.md)
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch03/044-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-skill-测评指标体系.md)
@@ -1700,7 +1700,7 @@ hermes gateway start  # 后台
 
 ## Related
 - [Hermes Agent](ch03/087-hermes-agent.md) — Nous Research 开源 Agent 框架，可观测性是其生产落地关键能力
-- [Hermes Agent 深度解析](ch04/503-agent.md) — Self-Evolving/动态 Skill 沉淀/RL 训练闭环等深度解析
+- [Hermes Agent 深度解析](ch03/044-agent.md) — Self-Evolving/动态 Skill 沉淀/RL 训练闭环等深度解析
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — 无内置可观测方案，对比参考
 - [原始文章存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-observability-aliyun.md)
 
@@ -1776,7 +1776,7 @@ Brown 以 GPT-5.5 为例：发布初期基准分数与 GPT-5.4 相比提升有�
 
 - OneReason — 快手在推荐领域验证了 test-time compute scaling 的价值
 - ARC-AGI — 已尝试衡量模型分数与运行成本关系
-- [Claude Code 深度解析](ch03/073-claude-code.md) — agentic 系统的性能—成本权衡
+- [Claude Code 深度解析](ch03/074-claude-code.md) — agentic 系统的性能—成本权衡
 - AI Safety Evaluation — 安全评估方法论
 
 ## 结论
@@ -2027,7 +2027,7 @@ MCG 采用了三路独立检索器（Code Retriever、Config Retriever、Documen
 
 **3. "不猜测"原则是合规文档系统的设计底线**
 
-MCG 在无法置信填充字段时，输出 "not found" 或 "information not available" 而非猜测捏造。这一设计选择对监管合规场景至关重要——[治理软规则](ch03/073-claude-code.md) 中同样指出，不确定情况下的"猜测性生成"在审计场景会构成风险。模型卡需要具备完整的审计追溯性，自动生成的内容若是编造而非基于真实数据，反而会加剧监管风险。MCG 将"Gap 发现"功能定位为卖点而非缺陷，这意味着它既适合文档完善的团队加速生产，也适合文档初建的团队识别缺口。
+MCG 在无法置信填充字段时，输出 "not found" 或 "information not available" 而非猜测捏造。这一设计选择对监管合规场景至关重要——[治理软规则](ch03/074-claude-code.md) 中同样指出，不确定情况下的"猜测性生成"在审计场景会构成风险。模型卡需要具备完整的审计追溯性，自动生成的内容若是编造而非基于真实数据，反而会加剧监管风险。MCG 将"Gap 发现"功能定位为卖点而非缺陷，这意味着它既适合文档完善的团队加速生产，也适合文档初建的团队识别缺口。
 
 **4. 灵活性三层解耦使工具具备长期适用性**
 
@@ -2189,9 +2189,9 @@ EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维
 ## 相关实体
 - [Datacomp For Language Models](https://github.com/QianJinGuo/wiki/blob/main/entities/datacomp-for-language-models.md)
 - [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
-- [Servicenow Ui Is Dead Agent](ch04/503-agent.md)
-- [The Ui Is Dead Long Live The Agent](ch04/503-agent.md)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch04/503-agent.md)
+- [Servicenow Ui Is Dead Agent](ch03/044-agent.md)
+- [The Ui Is Dead Long Live The Agent](ch03/044-agent.md)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch03/044-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 
 ---
@@ -2372,7 +2372,7 @@ EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维
 - **与 [CVPR 2026 小米 SVOR 视频掩码](https://github.com/QianJinGuo/wiki/blob/main/entities/cvpr-xiaomi-svor-video-masking.md)**：同属 CVPR 2026 + 顶级中国大厂 + 视频/图像生成；**互补不重复**（小米是视频生成，美团是海报生成）
 - **与 [JOYAI Echo 长视频框架（京东）](ch04/150-ai.md)**：同属顶会论文 + 顶级中国大厂 + 内容生成；美团侧重**海报（静态 + 文字）**，京东侧重**视频**
 - **与 [GPT-Image-2 完全指南](ch04/245-skill.md)**：都讲 AIGC 文生图；GPT-Image-2 是**工具使用**，美团 PosterCraft 是**学术论文级** + 完整技术体系
-- **与 [腾讯陈进 Agent Loop 工程手册](ch04/503-agent.md)**：都强调"评估驱动生成"思想（陈进的 SELF Protocol 30 天实验 / 美团 PosterReward RL 奖励信号）
+- **与 [腾讯陈进 Agent Loop 工程手册](ch03/044-agent.md)**：都强调"评估驱动生成"思想（陈进的 SELF Protocol 30 天实验 / 美团 PosterReward RL 奖励信号）
 
 ## 深度分析
 
@@ -2405,7 +2405,7 @@ EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维
 - [CVPR 2026 小米 SVOR 视频掩码](https://github.com/QianJinGuo/wiki/blob/main/entities/cvpr-xiaomi-svor-video-masking.md)
 - [JOYAI Echo 长视频框架（京东）](ch04/150-ai.md)
 - [GPT-Image-2 完全指南](ch04/245-skill.md)
-- [腾讯陈进 Agent Loop 工程手册](ch04/503-agent.md)
+- [腾讯陈进 Agent Loop 工程手册](ch03/044-agent.md)
 - [Harness Engineering](ch05/061-harness-engineering.md)
 - [ConardLi Harness Engineering 综合性指南（+ Beautiful Article 第 2 来源）](ch05/061-harness-engineering.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)

@@ -121,11 +121,11 @@ Karpathy 隐含的警告最容易被忽略的部分是时序：问题定义能�
 2. **建立 Agent 编排能力的岗位**：这是 2026 年最稀缺的新工程角色之一
 3. **技术深度的价值重估**：深度技术理解在 Agent 时代的价值不是更低了，而是以不同的方式体现了——从"生成价值"变成"评估价值"
 ## 相关实体
-- [Karpathy Ai Agent 7 Bits Value Decline](ch04/310-ai.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/310-ai.md)
-- [Gepa Optimize Anything](ch01/274-gepa-optimize-anything.md)
-- [Github Investigating Teampcp Claimed 17Cc77](ch04/310-ai.md)
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](ch03/073-claude-code.md)
+- [Karpathy Ai Agent 7 Bits Value Decline](ch04/150-ai.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
+- [Gepa Optimize Anything](ch01/313-gepa-optimize-anything.md)
+- [Github Investigating Teampcp Claimed 17Cc77](ch04/150-ai.md)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](ch03/074-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-ai-agent-7-bits-value-decline-2026-allentan.md)
 

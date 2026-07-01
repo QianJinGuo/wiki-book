@@ -113,14 +113,14 @@ QAT 模型消除了用户自行量化的技术门槛——直接下载即部署�
 在关键场景中部署量化模型时，保留 FP16 版本作为回退——当量化模型的输出质量不可接受时，自动切换到高精度版本。
 
 ## 相关实体
-- [Alphaevolve Deepmind Discovery Agent](ch04/503-agent.md)
+- [Alphaevolve Deepmind Discovery Agent](ch03/044-agent.md)
 - [Gemma 4 Multi Token Prediction Drafters](ch01/227-gemma-4-multi-token-prediction-drafters.md)
-- [Google Ai Vulnerability Exploitation Threat Intel](ch04/310-ai.md)
-- [Bonsai Image 4B 1 Bit Ternary](ch04/310-ai.md)
-- [Stochastic Parrot Language Models And Meaning](ch01/385-language-models-and-meaning.md)
+- [Google Ai Vulnerability Exploitation Threat Intel](ch04/150-ai.md)
+- [Bonsai Image 4B 1 Bit Ternary](ch04/150-ai.md)
+- [Stochastic Parrot Language Models And Meaning](ch01/383-language-models-and-meaning.md)
 
 - [新程alpha认知模型：4b参数端侧部署，群体智能以小搏大比肩gpt-5.4](https://github.com/QianJinGuo/wiki/blob/main/entities/nextie-alpha-cognitive-model-4b-on-device.md)
-- [notes on pretraining parallelisms and failed training runs.](ch04/310-ai.md)
+- [notes on pretraining parallelisms and failed training runs.](ch04/150-ai.md)
 
 ## 原文链接
 

@@ -168,10 +168,10 @@ Gateway 是 agent 工具调用的单点——监控其延迟、错误率和可�
 
 ## 相关实体
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/256-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch04/503-agent.md)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch03/044-agent.md)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/064-building-ai-agents-for-business-support-using-amazon-bedrock.md)
-- [Amazon Quick Bedrock Agentcore Finops Chat](ch11/195-amazon-quick.md)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/503-agent.md)
+- [Amazon Quick Bedrock Agentcore Finops Chat](ch11/197-amazon-quick.md)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/044-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)

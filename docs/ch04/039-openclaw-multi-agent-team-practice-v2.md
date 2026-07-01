@@ -1,6 +1,6 @@
-# openclaw multi agent team practice v2
+# Openclaw Multi Agent Team Practice V2
 
-## Ch04.039 openclaw multi agent team practice v2
+## Ch04.039 Openclaw Multi Agent Team Practice V2
 
 > 📊 Level ⭐⭐ | 26.6KB | `entities/openclaw-multi-agent-team-practice-v2.md`
 
@@ -294,11 +294,11 @@ subagents: {
 - agent-claude-code — Claude Code 集成
 
 ## 相关实体
-- [Hermes Agent Memory System](ch04/503-agent.md)
-- [Openclaw Agent Loop Design Patterns](ch04/503-agent.md)
+- [Hermes Agent Memory System](ch03/044-agent.md)
+- [Openclaw Agent Loop Design Patterns](ch03/044-agent.md)
 - [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
-- [Openclaw Multi 2](ch03/012-openclaw.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 3](ch04/503-agent.md)
+- [Openclaw Multi 2](ch11/209-openclaw.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 3](ch03/044-agent.md)
 
 ---
 

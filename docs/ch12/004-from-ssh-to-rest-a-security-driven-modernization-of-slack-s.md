@@ -71,7 +71,7 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - [Wetesteddeepseekv4Proandflashagainstclau](ch04/150-ai.md)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/150-ai.md)
-- [Why Internally Built Ai Fails Fund Accounting Audits](ch01/622-why-internally-built-ai-fails-fund-accounting-audits.md)
+- [Why Internally Built Ai Fails Fund Accounting Audits](ch01/677-why-internally-built-ai-fails-fund-accounting-audits.md)
 - Senatorsquerycreditbureausonbnpl
 
 - [Cpanel Whm Patch 3 New Vulnerabilities](https://github.com/QianJinGuo/wiki/blob/main/entities/cpanel-whm-patch-3-new-vulnerabilities.md)
@@ -84,7 +84,7 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - [2026 04 15](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-04-15.md)
 - [What My Privacy And Security Stack Actually Looks Like](ch12/019-what-my-privacy-and-security-stack-actually-looks-like.md)
 - [Ai Traffic Cyberthreat Benchmark 2026](ch04/150-ai.md)
-- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](ch09/116-device-code-phishing-forensics-what-we-learned-from-bec-inv.md)
+- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](ch09/128-device-code-phishing-forensics-what-we-learned-from-bec-inv.md)
 
 ---
 

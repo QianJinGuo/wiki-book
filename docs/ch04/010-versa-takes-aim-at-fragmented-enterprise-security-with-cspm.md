@@ -53,7 +53,7 @@ Versa 的三路更新（CSPM + Orchestration + Agent Trust）勾勒出 SASE 平�
 ## 相关实体
 - [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/150-ai.md)
 - [AI tool poisoning — VentureBeat](ch04/150-ai.md)
-- [企业级OpenClaw安全部署架构指南](ch11/207-openclaw.md)
+- [企业级OpenClaw安全部署架构指南](ch11/210-openclaw.md)
 
 ---
 

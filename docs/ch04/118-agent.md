@@ -46,9 +46,9 @@
 > [!contradiction] 参见 **持相反观点**：当前 AI 辅助编程范式（包括 vibe coding）已被广泛应用于生产环境，其可行性不应被全盘否定。
 > 关于 Vibe Coding 的生产可行性，另一种观点认为当前的 AI 能力尚未成熟，不应完全依赖 AI 生成代码。
 ## 相关实体
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/310-ai.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch04/310-ai.md)
-- [Tmall Marketing Ai Workflow](ch04/310-ai.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch04/150-ai.md)
+- [Tmall Marketing Ai Workflow](ch04/150-ai.md)
 - [Harness Engineering Alibaba Java Case Study](ch05/061-harness-engineering.md)
 - [Skill Formal Theory Survey 10Papers](ch04/245-skill.md)
 

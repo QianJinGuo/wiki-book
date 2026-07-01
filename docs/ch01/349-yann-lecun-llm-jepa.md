@@ -91,11 +91,11 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 
 ## 相关实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/503-agent.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/044-agent.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Karpathy 从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
-- [OpenClaw 多 Agent 协同开发](ch11/207-openclaw.md)
+- [Karpathy 从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
+- [OpenClaw 多 Agent 协同开发](ch11/209-openclaw.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - 
 - 
@@ -106,9 +106,9 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 - [introducing 1-bit and ternary bonsai image 4b: image generat](ch04/150-ai.md)
 - [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](ch04/150-ai.md)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](ch04/150-ai.md)
-- [private fintech has quietly become bigger than public fintec](ch03/098-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
-- [private fintech has quietly become bigger than public fintec](ch03/098-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
-- [the inevitable need for an open model consortium](ch01/369-the-inevitable-need-for-an-open-model-consortium.md)
+- [private fintech has quietly become bigger than public fintec](ch03/099-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
+- [private fintech has quietly become bigger than public fintec](ch03/099-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
+- [the inevitable need for an open model consortium](ch01/853-the-inevitable-need-for-an-open-model-consortium.md)
 
 ---
 

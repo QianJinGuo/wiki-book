@@ -121,7 +121,7 @@ PyTorch 2.x系列的演进方向（硬件无关性、编译优化、生产就绪
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
 - [Llm From Scratch 7 Stage Pytorch Tutorial](ch01/890-llm.md)
-- [Deepseek V4 Triton Fp4 Optimization](ch01/528-deepseek-v4.md)
+- [Deepseek V4 Triton Fp4 Optimization](ch01/777-deepseek.md)
 
 ---
 

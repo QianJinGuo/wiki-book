@@ -207,15 +207,15 @@ Hermes的Smart Approval是**分诊导向**：先用LLM判断危险等级，再�
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent治理工程
 
 ## 相关实体
-- [Hermes Agent Vs Openclaw Comparison](ch04/503-agent.md)
+- [Hermes Agent Vs Openclaw Comparison](ch03/044-agent.md)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](ch01/380-claude.md)
 - [Skill System Design Three Way Comparison](ch04/245-skill.md)
-- [Hermes Agent Memory System Vs Openclaw](ch04/503-agent.md)
-- [Openclaw Prompt Context Harness](ch11/207-openclaw.md)
+- [Hermes Agent Memory System Vs Openclaw](ch03/044-agent.md)
+- [Openclaw Prompt Context Harness](ch11/209-openclaw.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-hermes-source-code-agent-architecture-review.md)
 
-- [Openclaw Architecture 800Lines](ch11/207-openclaw.md)
+- [Openclaw Architecture 800Lines](ch11/209-openclaw.md)
 - [Aliyun Mse Ai Task Scheduling Agent Sandbox Cost 90 Percent](ch04/150-ai.md)
 
 ---

@@ -30,8 +30,8 @@ import requests
 SEARCH_INDEX_PATH = "site/search/search_index.json"
 API_URL = "https://maas-api.cn-huabei-1.xf-yun.com/v2/embeddings"
 MODEL = "xop3qwen8bembedding"
-DIMENSIONS = int(os.environ.get("EMBEDDING_DIMENSIONS", "1024"))
-CHUNK_SIZE = int(os.environ.get("EMBEDDING_CHUNK_SIZE", "10000"))
+DIMENSIONS = int(os.environ.get("EMBEDDING_DIMENSIONS", "768"))
+CHUNK_SIZE = int(os.environ.get("EMBEDDING_CHUNK_SIZE", "12400"))
 BATCH_SIZE = int(os.environ.get("EMBEDDING_BATCH_SIZE", "16"))
 MAX_RETRIES = int(os.environ.get("EMBEDDING_MAX_RETRIES", "5"))
 REQUEST_TIMEOUT_SECONDS = int(os.environ.get("EMBEDDING_REQUEST_TIMEOUT_SECONDS", "120"))

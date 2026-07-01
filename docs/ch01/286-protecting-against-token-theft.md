@@ -163,17 +163,17 @@ Vercel 选择在「请求级」部署 BotID，本质上是把攻击者的破解�
 ## 相关实体
 
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/207-openclaw.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/209-openclaw.md)
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/150-ai.md)
 - [Apple Siri Private Inference Lethal Trifecta Matthew Green](https://github.com/QianJinGuo/wiki/blob/main/entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md)
 - [Automate Progressive Rollouts With Vercel Flags Vercel](ch09/113-automate-progressive-rollouts-with-vercel-flags-vercel.md)
 - [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)
 - [Ai Infra Llm Efficient Inference Vllm](ch04/150-ai.md)
-- [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](ch04/503-agent.md)
+- [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](ch03/044-agent.md)
 - [Model Inference Comparison](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-inference-comparison.md)
 
 ---

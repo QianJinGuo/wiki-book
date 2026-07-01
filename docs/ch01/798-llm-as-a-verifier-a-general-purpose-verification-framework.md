@@ -12,7 +12,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-as-a-verifier-a-general-purpose-verification-framework.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification](ch01/739-llm-as-a-verifier-a-general-purpose-verification.md)
+- [LLM-as-a-Verifier: A General-Purpose Verification](ch01/757-llm-as-a-verifier-a-general-purpose-verification.md)
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/890-llm.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)

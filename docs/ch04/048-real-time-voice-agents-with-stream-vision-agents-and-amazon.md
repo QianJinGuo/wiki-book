@@ -136,9 +136,9 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 5. **For high-volume inbound phone support, design voice agents as the first-line resolution layer**: The architectural emphasis on deflecting repetitive requests to voice agents and escalating to human agents only when confidence thresholds are exceeded suggests a specific design philosophy: treat voice AI as the primary resolver, not a fallback. This means designing your escalation criteria carefully, ensuring structured context is attached when escalating, and measuring containment rate as a key performance indicator for the voice agent system.
 
 ## 相关实体
-- [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md) — 同一技术栈的 WebRTC 集成方案
-- [Amazon Nova Lite Fine-Tuning](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) — Nova 视觉模型微调实践
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md) — Nova 多模态嵌入能力
+- [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](ch11/248-amazon-nova.md) — 同一技术栈的 WebRTC 集成方案
+- [Amazon Nova Lite Fine-Tuning](ch11/248-amazon-nova.md) — Nova 视觉模型微调实践
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/248-amazon-nova.md) — Nova 多模态嵌入能力
 - [Nemotron 3 Multi-Agent System](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md) — NVIDIA 多Agent系统参考
 - [Amazon Bedrock AgentCore Memory](ch04/150-ai.md) — Bedrock Agent 记忆哲学
 - [Strands Agents SDK](ch04/503-agent.md) — 确定性数据分析实践
@@ -154,7 +154,7 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/032-amazon-bedrock-api.md)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch04/399-openclaw-multi-3.md)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch04/503-agent.md)
-- [Amazon Bedrock模型推理的Serverless异步架构](ch11/236-bedrock.md)
+- [Amazon Bedrock模型推理的Serverless异步架构](ch11/240-bedrock.md)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/503-agent.md)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch04/503-agent.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)

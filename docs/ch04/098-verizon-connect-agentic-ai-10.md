@@ -159,10 +159,10 @@ Verizon Connect 的模型演进路径（Claude 4.5 Sonnet → Claude 4.5 Haiku �
 5. **分阶段部署验证**：建议从小型试点开始验证用例和成本效率，再逐步扩展到全企业级部署。这与 AWS 官方倡导的三阶段方法论（试点 → 扩展 → 全企业部署）一致。
 
 ## 相关实体
-- [Aws Bedrock Multi Agent Collaboration Guide](ch04/503-agent.md)
-- [Spec Review Agent Baz Bedrock Agentcore Multi Agent](ch04/503-agent.md)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/503-agent.md)
-- [Aws Bedrock Agentcore Identity Security](ch04/503-agent.md)
+- [Aws Bedrock Multi Agent Collaboration Guide](ch03/044-agent.md)
+- [Spec Review Agent Baz Bedrock Agentcore Multi Agent](ch03/044-agent.md)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/044-agent.md)
+- [Aws Bedrock Agentcore Identity Security](ch03/044-agent.md)
 - [航班变更信息智能识别解决方案](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 
 ## 相关主题

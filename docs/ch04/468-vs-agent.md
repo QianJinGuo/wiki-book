@@ -8,9 +8,9 @@
 
 ## 相关实体
 
-- [llmreaper - dom based ai conversation exfiltration via brows](ch04/310-ai.md)
+- [llmreaper - dom based ai conversation exfiltration via brows](ch04/150-ai.md)
 - [review agent：后台复盘 agent 如何判断什么值得保存](ch04/503-agent.md)
-- [不用再学ai了！生成结果包稳的agent来了](ch04/310-ai.md)
+- [不用再学ai了！生成结果包稳的agent来了](ch04/150-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/local-vs-cloud-agent-onsite-context-debate-xingxiaozhao.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
@@ -44,8 +44,8 @@
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch03/012-openclaw.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/310-ai.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)

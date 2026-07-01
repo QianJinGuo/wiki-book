@@ -54,8 +54,8 @@
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/150-ai.md)
 - [Amazon Quick Research Agentic Multi Source Citation](ch11/195-amazon-quick.md)
 - [Building Web Search Enabled Agents With Strands And Exa](ch04/379-building-web-search-enabled-agents-with-strands-and-exa.md)
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/506-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
+- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](ch11/248-amazon-nova.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/509-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ghostbyt3-github-io-blog-nday-research-ai.md)
 

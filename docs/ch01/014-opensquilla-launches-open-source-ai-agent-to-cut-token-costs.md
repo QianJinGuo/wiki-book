@@ -16,9 +16,9 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Cline releases open-source agent runtime SDK](ch04/503-agent.md)
+- [Cline releases open-source agent runtime SDK](ch03/044-agent.md)
 - [Spring AI AI Agent Demo](ch04/150-ai.md)
-- [SkillX — 层次化技能知识库](ch04/245-skill.md)
+- [SkillX — 层次化技能知识库](ch07/045-skillx.md)
 
 - [intercom, now called fin, launches an ai agent whose only jo](ch04/150-ai.md)
 
