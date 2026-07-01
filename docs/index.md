@@ -12,7 +12,7 @@
 |---|------|------|----------|
 | 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1179 篇 |
 | 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 934 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 427 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 428 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 97 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 31 篇 |
 
@@ -175,7 +175,7 @@
   - ⭐⭐ From silos to service topology: why Netflix built a real-time architec
   - ... 共 **254** 篇 → [完整章节](ch11-infra.md)
 
-### [Ch12 安全与治理](ch12-security.md) — 121 篇
+### [Ch12 安全与治理](ch12-security.md) — 122 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
 
   - ⭐ CISA urges critical infrastructure firms to 'fortify' before it's too 
@@ -186,7 +186,7 @@
   - ⭐ Offensive Security Blog
   - ⭐ Sandworm Hackers Shift From IT Breaches to Critical OT Targets
   - ⭐ 5 Things to Know about the CLARITY Act
-  - ... 共 **121** 篇 → [完整章节](ch12-security.md)
+  - ... 共 **122** 篇 → [完整章节](ch12-security.md)
 
 ### [Ch13 MLOps 与评估](ch13-mlops.md) — 17 篇
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
@@ -214,7 +214,7 @@
   - ⭐⭐ Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
   - ... 共 **35** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 427 篇**
+> 📖 **本篇共 428 篇**
 
 ---
 
@@ -304,6 +304,6 @@
 
 ---
 
-**📊 全书收录：2668 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：2669 篇实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-06-25 | 来源: ~/wiki/entities/
