@@ -2,7 +2,7 @@
 
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
-> 本章收录 **68 篇**实体，按深度递增排列。
+> 本章收录 **69 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 67 |
+| ⭐⭐ 工程师 | 需编程基础 | 68 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -75,29 +75,30 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [040. 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构](ch07/040-hermesagent-vlm-skill-agent.md)
 - [041. Autonomous Vulnerability Hunting with MCP](ch07/041-autonomous-vulnerability-hunting-with-mcp.md)
 - [042. AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](ch07/042-aws-devops-agent-mcp-server.md)
-- [043. Skill 版本管理五大原则：从越改越差到持续演进](ch07/043-skill.md)
-- [044. Skill Craft — Claude Skill 质量工程框架](ch07/044-skill-craft-claude-skill.md)
-- [045. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/045-agent-loop-loop-skill-orchestrator.md)
-- [046. SkillX — 层次化技能知识库](ch07/046-skillx.md)
-- [047. Skill Craft：Claude Skill 质量工程工具](ch07/047-skill-craft-claude-skill.md)
-- [048. Anthropic MCP 重新定义：Tool Search + 代码编排](ch07/048-anthropic-mcp-tool-search.md)
-- [049. 重新定义Skill开发：保姆级教程&一站式开发助手发布](ch07/049-skill.md)
-- [050. 你写的 Skill，及格了吗？](ch07/050-skill.md)
-- [051. 我用 SKILL.md 做了一个简历生成器](ch07/051-skill-md.md)
-- [052. Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch07/052-anthropic-agent-12-mcp.md)
-- [053. AI + Skills 打通中间件迁移：Android 到鸿蒙定位服务实践](ch07/053-ai-skills-android.md)
-- [054. Anthropic Claude Skill 9 类任务分类法](ch07/054-anthropic-claude-skill-9.md)
-- [055. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/055-skill.md)
-- [056. Multica — 开源 Managed Agents 平台](ch07/056-multica-managed-agents.md)
-- [057. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/057-skill-skill.md)
-- [058. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/058-ai-mcp-cli.md)
-- [059. CLI系列④·选型CLI、MCP还是API？](ch07/059-cli-cli-mcp-api.md)
-- [060. 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](ch07/060-amazon-quick-mcp.md)
-- [061. Introducing the MDN MCP server](ch07/061-introducing-the-mdn-mcp-server.md)
-- [062. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/062-ai-skill.md)
-- [063. skill-mcp — 把 AI 技能当软件包管理（MCP 权限网关 + 只调度不执行的 Pipeline）](ch07/063-skill-mcp-ai-mcp-pipeline.md)
-- [064. Create Custom MCP Catalogs and Profiles](ch07/064-create-custom-mcp-catalogs-and-profiles.md)
-- [065. 25个Skills详解：从生产力清单到AI工作流资产](ch07/065-25-skills-ai.md)
-- [066. Perplexity 首次公开了内部 Skill 设计指南](ch07/066-perplexity-skill.md)
-- [067. Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获](ch07/067-codex-record-replay-gui-skill.md)
-- [068. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/068-microsoft-agent-framework-tools-4-provider-tool-ap.md)
+- [043. OpenClaw 深度架构分析：Agent 引擎、多源 Skill 系统、子 Agent steer 重定向、五层容错](ch07/043-openclaw-agent-skill-agent-steer.md)
+- [044. Skill 版本管理五大原则：从越改越差到持续演进](ch07/044-skill.md)
+- [045. Skill Craft — Claude Skill 质量工程框架](ch07/045-skill-craft-claude-skill.md)
+- [046. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/046-agent-loop-loop-skill-orchestrator.md)
+- [047. SkillX — 层次化技能知识库](ch07/047-skillx.md)
+- [048. Skill Craft：Claude Skill 质量工程工具](ch07/048-skill-craft-claude-skill.md)
+- [049. Anthropic MCP 重新定义：Tool Search + 代码编排](ch07/049-anthropic-mcp-tool-search.md)
+- [050. 重新定义Skill开发：保姆级教程&一站式开发助手发布](ch07/050-skill.md)
+- [051. 你写的 Skill，及格了吗？](ch07/051-skill.md)
+- [052. 我用 SKILL.md 做了一个简历生成器](ch07/052-skill-md.md)
+- [053. Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch07/053-anthropic-agent-12-mcp.md)
+- [054. AI + Skills 打通中间件迁移：Android 到鸿蒙定位服务实践](ch07/054-ai-skills-android.md)
+- [055. Anthropic Claude Skill 9 类任务分类法](ch07/055-anthropic-claude-skill-9.md)
+- [056. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/056-skill.md)
+- [057. Multica — 开源 Managed Agents 平台](ch07/057-multica-managed-agents.md)
+- [058. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/058-skill-skill.md)
+- [059. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/059-ai-mcp-cli.md)
+- [060. CLI系列④·选型CLI、MCP还是API？](ch07/060-cli-cli-mcp-api.md)
+- [061. 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](ch07/061-amazon-quick-mcp.md)
+- [062. Introducing the MDN MCP server](ch07/062-introducing-the-mdn-mcp-server.md)
+- [063. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/063-ai-skill.md)
+- [064. skill-mcp — 把 AI 技能当软件包管理（MCP 权限网关 + 只调度不执行的 Pipeline）](ch07/064-skill-mcp-ai-mcp-pipeline.md)
+- [065. Create Custom MCP Catalogs and Profiles](ch07/065-create-custom-mcp-catalogs-and-profiles.md)
+- [066. 25个Skills详解：从生产力清单到AI工作流资产](ch07/066-25-skills-ai.md)
+- [067. Perplexity 首次公开了内部 Skill 设计指南](ch07/067-perplexity-skill.md)
+- [068. Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获](ch07/068-codex-record-replay-gui-skill.md)
+- [069. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/069-microsoft-agent-framework-tools-4-provider-tool-ap.md)

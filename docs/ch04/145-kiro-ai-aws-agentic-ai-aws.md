@@ -2,7 +2,7 @@
 
 ## Ch04.145 用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐ | 13.0KB | `entities/building-enterprise-agentic-ai-with-kiro-on-aws.md`
+> 📊 Level ⭐⭐ | 13.1KB | `entities/building-enterprise-agentic-ai-with-kiro-on-aws.md`
 
 ## 概述
 用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 by awschina on 04 3月 2026 in Artificial Intelligence Permalink Share 摘要：我们如何用 Kiro（AI IDE）完成全流程开发，基于 Strands Agents 框架、Amazon Bedrock AgentCore 和 AWS 基础设施，在一周内构建了一个能交付实际产出的 AI Agent 平台——全程零人工编码。 目录 01 一、为什么需要 "能交付" 的 AI Agent？ 02 二、开发层：用 Kiro 完成全流程开发 03 三、整体架构 04 四、运行层一：Strands Agents —— Agent 框架 05 五、运行层二：Amazon Bedrock AgentCore —— 运行时、记忆与沙箱 06 六、运行层三：AWS 基础设施 —— AWS CDK 一把梭 07 七、平台能力展示 08 八、实践经验 09 九、快速上手 10 十、总结 11 十一、项目源码 12 十二、参考文档 一、为什么需要 "能交付" 的 AI Agent？ 大多数 AI 聊天产品止步于对话——你问一个问题，得到一段文字，然后就没有然后了。但企业场景需要的不是聊天，而是产出：一份架构图、一个部署好的网页、一份账单分析报告、一段可执行的代码。 这正是我们构建这个 AI Agent 平台的出发点。我们希望用户用自然语言描述需求， Agent 直接产出可交付的成果——图片、视频、文档、数据分析、部署好的静态网站，甚至 AWS 架构图。 [图：平台主界面——左侧为会话列表和功能导航，右侧为 Agent 对话区域，实时展示工具调用进度和交付物产出。] 挑战不在于 "做一个 Agent" ，而在于让它在生产环境中可靠运行：自动扩缩容、安全的代码执行沙箱、跨会话的记忆持久化、多工具的编排协调。如果从零搭建这些能力，至少需要数月。 我们的答案是三层运行时架构： Strands Agents （ Agent 框架） + Amazon Bedrock AgentCore （运行时 + 记忆 + 沙箱） + AWS Cloud Development Kit (AWS CDK) （基础设施即代码）。 而更关键的是——整个平台从需求到上线，全程由 AI 完成开发。 二、开发层：用 Kiro 完成全流程开发 这个项目最值得分享的一点是：从需求整理、架构设计、任务拆分、代码开发、测试到部署，全部由 Kiro （ AWS 推出的 AI IDE ）完成，全程不需要人工编写代码。 这不是 "AI 辅助开发"，而是真正的 AI 驱动开发——人类负责描述意图和验收结果， Kiro 负责从意图到代码的全链路执行。 2.1 Spec-Driven Development：从模糊想法到可执行任务 Kiro 的核心工作流是 Spec-Driven Development （规格驱动开发）。我们只需要用自然语言描述想要什么， Kiro 会自动生成三层规格文档： 第一步：需求文档 (Requirements) 我们告诉 Kiro ："构建一个 delivery-focused 的 AI Agent 平台，用户通过对话让 Agent 产出图片、视频、文档、网页等交付物。后端用 FastAPI + Strands Agents ，其中 Strands Agents 部署在 AgentCore Runtime 上。" Kiro 自动生成了结构化的需求文档，包含用户故事、验收标准和技术约束： ### Requirement 1: User Authentication **User Story:** As a user, I want to sign in with my Google account, so that I can securely access my personal workspace and deliverables. ### Requirement 3: Agent Tool Integration **User Story:** As a user, I want the Agent to execute code, browse web, generate images/videos, and deploy web pages... [图：Kiro Spec-Driven Development 自动生成的需求文档，包含结构化的用户故事、验收标准和技术约束。] 第二步：技术设计 (Design) 需求确认后， Kiro 自动生成技术设计文档——数据库 schema 、 API 接口定义、组件架构、时序图：... [truncated] 2.2 Vibe Coding：对话式迭代开发 除了 Spec-Driven 的结构化开发，日常的功能迭代和 bug 修复通过 Vibe Coding 完成——直接在 Kiro 中用自然语言描述需求， Kiro 即时修改代码。 2.3 Steering Files：让 AI 理解项目全貌 Kiro 之所以能准确地编写代码，关键在于 Steering Files ——放在 .kiro/steering/ 目录下的项目上下文文档。 2.4 Hooks：自动化质量保障 Kiro 的 Hooks 机制实现了自动化的质量保障。 2.5 MCP Server 集成：实时参考最新文档 通过配置 Model Context Protocol (MCP) Server 让 Kiro 能实时参考最新的官方文档。 2.6 开发效率：数天完成数月的工作量 整个项目一个人在一周内完成了从零到生产部署的全流程。
@@ -66,13 +66,16 @@ else:
 ## 来源
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/building-enterprise-agentic-ai-with-kiro-on-aws/)
 
+## 架构图
+→ [C4 架构图](assets/c4/building-enterprise-agentic-ai-with-kiro-on-aws-c4.html)
+
 ## 相关实体
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-network-claude-code-kiro-cli-implement-aws-ipsec-vpn.md)
-- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md)
-- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md)
-- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/using-kiro-cli-agent-client-protocol-build-ai-chat.md)
-- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/blog-03-kiro-ai-cdk-development.md)
-- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-graviton-migration-kiro-power-guide.md)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch04/150-ai.md)
+- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](ch04/245-skill.md)
+- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch04/150-ai.md)
+- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](ch04/150-ai.md)
+- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](ch04/150-ai.md)
+- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](ch04/150-ai.md)
 
 ---
 
