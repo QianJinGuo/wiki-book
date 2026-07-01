@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md)
-- [Claude Code Harness Deep Dive Founder Park](ch03/073-claude-code.md)
+- [Claude Code Harness Deep Dive Founder Park](ch03/074-claude-code.md)
 - [Claude Opus 47](ch01/380-claude.md)
 - [Openclaw Prompt Context Harness](ch11/209-openclaw.md)
 - [Anthropic Managed Agents Scaling](ch04/292-anthropic-managed-agents-scaling.md)

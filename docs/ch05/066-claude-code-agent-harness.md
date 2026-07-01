@@ -69,7 +69,7 @@ Prompt Caching 折扣条件：**字节级完全相同**（byte-identical）。
 
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 定义了"模型外面的脚手架"——本文展示了这层脚手架在工业级系统中长什么样
 - [Harness 实践指南 10步](ch05/061-harness-engineering.md) 的 Step 3（上下文管理）和 Step 10（并行多 agent）在本文有源码级对照
-- [Claude Code Dynamic Workflows](ch03/073-claude-code.md) 侧重编排模式和实战场景，本文侧重底层通信/隔离/缓存/并行机制——**互补不重复**
+- [Claude Code Dynamic Workflows](ch03/074-claude-code.md) 侧重编排模式和实战场景，本文侧重底层通信/隔离/缓存/并行机制——**互补不重复**
 
 ## 关键洞察
 
@@ -80,8 +80,8 @@ Prompt Caching 折扣条件：**字节级完全相同**（byte-identical）。
 ## 相关实体
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Harness Engineering 10 Step Practical Guide 2026](ch05/061-harness-engineering.md)
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](ch03/073-claude-code.md)
-- [Long Running Agent Ralph Loop Harness Takeover](ch04/502-agent.md)
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](ch03/074-claude-code.md)
+- [Long Running Agent Ralph Loop Harness Takeover](ch03/044-agent.md)
 - [Gufabiancheng Spec For Complex Tasks Cc Codex](ch01/436-codex.md)
 - [Production Harness 12 Components Framework Comparison](ch05/034-harness-12.md)
 

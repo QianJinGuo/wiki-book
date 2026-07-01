@@ -107,17 +107,17 @@ Hermes 在中国社区的爆发，微信集成、Notion 知识管理、股票盯
 5. **关注 AI Agent 从"通用"向"分工"的演进趋势**：OpenClaw 和 Hermes 的互补关系不是特例，而是 AI Agent 赛道的普遍趋势。 未来更可能出现的格局是：多个专用 Agent 各司其职，通过标准协议协作，而非一个全能 Agent 解决所有问题。在选型和架构设计时需要考虑这种分工趋势。
 
 > [!contradiction]
-> 与 [Hermes 记忆系统深度拆解](ch04/502-agent.md) 一文的判断一致：Hermes 的核心优势在于 cache-aware runtime 与分层记忆设计，而非 OpenClaw 式的控制面架构。两文从不同维度（功能定位 vs 记忆工程）得出相同的互补性结论。
+> 与 [Hermes 记忆系统深度拆解](ch03/044-agent.md) 一文的判断一致：Hermes 的核心优势在于 cache-aware runtime 与分层记忆设计，而非 OpenClaw 式的控制面架构。两文从不同维度（功能定位 vs 记忆工程）得出相同的互补性结论。
 
 ## 相关实体
 
-- [Hermes Agent 记忆系统深度拆解](ch04/502-agent.md)
+- [Hermes Agent 记忆系统深度拆解](ch03/044-agent.md)
 - [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](ch01/380-claude.md)
 - [DeerFlow vs Hermes vs OpenClaw 深度对比](ch11/209-openclaw.md)
-- [Hermes Agent 深度解析](ch04/502-agent.md)
+- [Hermes Agent 深度解析](ch03/044-agent.md)
 - [OpenClaw 架构八部总结](ch11/209-openclaw.md)
-- [Hermes Agent 记忆系统](ch04/502-agent.md)
-- [深度拆解 Hermes 记忆系统：它修正了 OpenClaw 的哪层误区](ch04/502-agent.md)
+- [Hermes Agent 记忆系统](ch03/044-agent.md)
+- [深度拆解 Hermes 记忆系统：它修正了 OpenClaw 的哪层误区](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-vs-openclaw-comparison.md)
 

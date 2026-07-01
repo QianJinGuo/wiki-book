@@ -60,7 +60,7 @@ Agent 团队协作的关键是**信任校准**：
 - vs `sub-agent-vs-agent-team-selection-guide`：后者是技术选型指南，本文是**组织层面的协作模式分析**
 
 ## 相关主题
-- [Claude Code Agent Teams Architecture](ch03/073-claude-code.md)
+- [Claude Code Agent Teams Architecture](ch03/074-claude-code.md)
 - [Sub Agent Vs Agent Team Selection Guide](ch04/103-sub-agent-vs-agent-team-selection-guide.md)
 - [Claude Managed Agents](ch04/537-claude-managed-agents.md)
 

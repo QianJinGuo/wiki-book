@@ -12,7 +12,7 @@
 
 ## 相关实体
 
-- [Designers are a rare breed](ch03/113-designers-are-a-rare-breed.md)
+- [Designers are a rare breed](ch03/116-designers-are-a-rare-breed.md)
 
 ## 深度分析
 **图标库选择本质上是"一致性"vs"丰富度"的权衡**：文章列举的 11 个图标库可以分为三类：①以 Lucide、Feather 为代表的"一致性优先"路线，风格统一但数量有限；②以 Iconsax、Noun Project 为代表的"丰富度优先"路线，数量大但风格多样需要筛选；③以 Pixelarticons 为代表的"风格化"路线，专为特定场景（像素风、游戏风）设计。这种分类揭示了一个普遍规律：没有任何图标库能同时做到最多、最一致、最免费——你必须做取舍。

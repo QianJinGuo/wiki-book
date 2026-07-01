@@ -76,7 +76,7 @@ Tomassetti 归纳了软件持续提供价值的四个维度：
 
 ### Agent 架构验证了这一分层
 
-现代 agent 架构（如 [Claude Code](ch03/073-claude-code.md)、Codex）的设计本质上就是这一分层的实现：
+现代 agent 架构（如 [Claude Code](ch03/074-claude-code.md)、Codex）的设计本质上就是这一分层的实现：
 
 1. **LLM 层**：理解用户意图，规划执行步骤
 2. **编排层**：决定调用哪些工具，以什么顺序
@@ -125,7 +125,7 @@ LLM 时代软件工程师的核心技能：
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 概率层与确定性层的边界管理
 - [Agent Harnesses](ch04/542-agent-harnesses-are-dead-long-live-agent-harnesses.md) — Agent 架构的演进
-- [Claude Code Workflows](ch03/073-claude-code.md) — Agent 工作流设计
+- [Claude Code Workflows](ch03/074-claude-code.md) — Agent 工作流设计
 - [本文实体](ch01/890-llm.md) — Tomassetti 的分析
 - [AI Agent Hype](ch04/150-ai.md) — 对 AI agent 过度炒作的冷静分析
 

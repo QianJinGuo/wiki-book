@@ -10,7 +10,7 @@
 ## 基本信息
 - **来源**: 数据派THU（背靠清华大学）
 - **日期**: 2026-04-25
-- **相关实体**: [Hermes Agent Deep Dive](ch04/502-agent.md)（Hermes的Self-Evolution机制）
+- **相关实体**: [Hermes Agent Deep Dive](ch03/044-agent.md)（Hermes的Self-Evolution机制）
 - **相关实体**: [Minimax M2 7](ch03/099-minimax-m2-7.md)（MiniMax的自我进化实践）
 
 ## M⋆ — 微软记忆Harness进化

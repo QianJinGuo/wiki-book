@@ -67,14 +67,14 @@ Hy3 preview可以视为混元快速探索实用性大模型、解决真实世界
 2. **开源生态的战略价值**：开源成为大厂建立影响力、获取反馈、构建生态的重要手段，这将继续推动头部模型的开放进程，惠及整个 AI 开发者社区。
 3. **全链路优化的竞争壁垒**：腾讯混元"预训练基础设施→强化学习→推理框架"全链路协同优化的实践，显示出自研基础设施已成为头部玩家的核心竞争壁垒。
 ## 相关实体
-- [Agent框架Owl原理详解](ch04/502-agent.md)
-- [Agent Framework Owl Principles](ch04/502-agent.md)
+- [Agent框架Owl原理详解](ch03/044-agent.md)
+- [Agent Framework Owl Principles](ch03/044-agent.md)
 - [Agent Memory Architecture Past Influence Future Ruofei](ch04/030-agent-memory-architecture-past-influence-future-ruofei.md)
 - [Autobrowse Browserbase Persistent Skill](ch07/035-autobrowse-browserbase-persistent-skill.md)
 - [Lightseek Tokenspeed](ch01/854-lightseek-tokenspeed.md)
 
-- [Eva Bench Data 2 Voice Agent Evaluation](ch04/502-agent.md)
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation](ch04/502-agent.md)
+- [Eva Bench Data 2 Voice Agent Evaluation](ch03/044-agent.md)
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation](ch03/044-agent.md)
 
 ---
 

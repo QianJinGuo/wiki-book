@@ -8,7 +8,7 @@
 > ai agent platforms topic map（已删除）
 
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/245-skill.md)
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](ch04/502-agent.md)
+- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](ch03/044-agent.md)
 
 ## 深度分析
 **Python 泛型仓库模式是 DRY 原则在数据访问层的工程化落地，它解决的不是"代码复用"而是"逻辑集中维护"问题。** 文章通过 FastAPI + SQLAlchemy + 泛型的组合，展示了一种生产级的Repository 模式抽象方案。

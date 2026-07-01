@@ -43,12 +43,12 @@ Coze（扣子）3.
 - **claude趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/502-agent.md)
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/074-claude-code.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/209-openclaw.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/502-agent.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/502-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/044-agent.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

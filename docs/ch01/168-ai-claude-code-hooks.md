@@ -523,10 +523,10 @@ PostToolUse hook 如果修改了文件，会再次触发 PostToolUse，形成连
 
 ## 相关实体
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/073-claude-code.md)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/073-claude-code.md)
-- [Claude Code Founder Harness 100 Lines](ch03/073-claude-code.md)
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](ch03/073-claude-code.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/074-claude-code.md)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/074-claude-code.md)
+- [Claude Code Founder Harness 100 Lines](ch03/074-claude-code.md)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](ch03/074-claude-code.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

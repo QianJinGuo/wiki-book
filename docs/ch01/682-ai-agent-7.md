@@ -12,11 +12,11 @@
 - Agent 岗位面试通过率：18.7%（Stanford AI Index 2026）
 
 ## 相关实体
-- [Claude Code Source Leak Lifecycle Analysis](ch03/073-claude-code.md)
+- [Claude Code Source Leak Lifecycle Analysis](ch03/074-claude-code.md)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/043-coding-agent.md)
 - [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md)
 - [Pi Mono Github](ch01/621-pi-mono-github.md)
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](ch03/073-claude-code.md)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](ch03/074-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-interview-7-capabilities.md)
 

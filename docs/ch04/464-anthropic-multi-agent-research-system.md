@@ -22,7 +22,7 @@
 
 **3. Eval Suite 设计应以真实使用模式为中心**：文章强调"优先围绕真实使用模式设计 eval suite"，而非依赖理论推导的合成任务。这意味着评估集的质量取决于对实际用户行为的理解深度，而不是合成任务的规模。这对任何生产级 AI 系统的评估体系设计都有指导意义 。
 
-**4. Orchestration 系统的评估特殊性**：wiki-evolver 等 orchestration 系统因为涉及多组件协调，评估难度更高。固定步骤完全一致作为正确性标准过于脆弱——它只能验证"没有偏离预设"，而无法验证"是否解决了真正的问题"。这与 [Claude Code Harness Deep Dive Founder Park](ch03/073-claude-code.md) 中 Claude Code 的 checkpoint/rollback/fork 机制形成有趣的呼应：两者都在解决"如何评估不确定性执行"的问题 。
+**4. Orchestration 系统的评估特殊性**：wiki-evolver 等 orchestration 系统因为涉及多组件协调，评估难度更高。固定步骤完全一致作为正确性标准过于脆弱——它只能验证"没有偏离预设"，而无法验证"是否解决了真正的问题"。这与 [Claude Code Harness Deep Dive Founder Park](ch03/074-claude-code.md) 中 Claude Code 的 checkpoint/rollback/fork 机制形成有趣的呼应：两者都在解决"如何评估不确定性执行"的问题 。
 
 ## 实践启示
 

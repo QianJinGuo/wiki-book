@@ -73,7 +73,7 @@ APIRouter 的工程化收益体现在多个层面：
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/245-skill.md)
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](ch04/502-agent.md)
+- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](ch03/044-agent.md)
 
 ---
 

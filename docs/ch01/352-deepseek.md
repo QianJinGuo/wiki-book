@@ -22,7 +22,7 @@
 - [From Prompt To Harness Claude Official](ch01/380-claude.md)
 - [Cursor Harness Model Production Floor](ch01/248-cursor-harness-model-production-floor.md)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/043-coding-agent.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](ch03/073-claude-code.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](ch03/074-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md)
 

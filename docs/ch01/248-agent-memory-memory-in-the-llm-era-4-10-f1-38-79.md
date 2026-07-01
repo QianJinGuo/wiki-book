@@ -39,20 +39,20 @@
 ### 新 SOTA
 组合 MemTree/MemOS 的树状组织能力与 MemoryOS 的分层存储架构，设计出低 token 开销新框架（lme-sota）。
 
-## 与 [Agent Memory Architecture](ch04/502-agent.md) 的关系
+## 与 [Agent Memory Architecture](ch03/044-agent.md) 的关系
  从**架构本质**层面探讨 Agent Memory 的治理命题（write–manage–read 闭环、四类建模对象、六维度记忆单元）。本文在此基础上提供**模块化抽象 + 实验验证**：四组件框架将的直觉概念分解为可评测的子系统，并量化了不同设计选择的效果。
 
 ## 相关主题
 -  — Agent Memory 架构本质（治理视角）
-- [Agent Self Improvement Six Mechanisms](ch04/502-agent.md) — Agent 自我改进机制，与 Memory 的"修正+遗忘"机制有交叉
+- [Agent Self Improvement Six Mechanisms](ch03/044-agent.md) — Agent 自我改进机制，与 Memory 的"修正+遗忘"机制有交叉
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Hermes 的 Self-Evolving 机制与动态 Skill 沉淀，依赖有效 Memory 子系统
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/memory-in-the-llm-era-iclr2026.md)
 
 ## 相关实体
 - [memory agent systems cobanov](ch04/480-memory-agent-systems-cobanov.md)
-- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](ch04/502-agent.md)
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](ch03/044-agent.md)
 - [AI Agent 记忆系统架构](ch04/145-how-ai-agent-memory-works.md)
-- [深度拆解 Hermes Agent 记忆系统](ch04/502-agent.md)
+- [深度拆解 Hermes Agent 记忆系统](ch03/044-agent.md)
 
 - [ai agent memory systems](ch04/150-ai.md)
 

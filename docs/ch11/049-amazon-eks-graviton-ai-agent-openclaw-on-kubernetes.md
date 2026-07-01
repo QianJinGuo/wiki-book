@@ -47,7 +47,7 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP、Amazon EKS、Kubernetes
 
 ## 相关实体
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/038-openclaw-multi-agent-team-practice-v2.md)
-- [OpenClaw 多智能体团队搭建实战经验](ch04/502-agent.md)
+- [OpenClaw 多智能体团队搭建实战经验](ch03/044-agent.md)
 - [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](ch04/150-ai.md)
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](ch04/150-ai.md)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](ch04/150-ai.md)

@@ -63,9 +63,9 @@ Webwright 将代码量级与主流框架对比：
 ## 相关实体
 - [Two Harness Papers Microsoft Google](ch05/015-harness.md)
 - [Claude Opus 47](ch01/380-claude.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](ch03/073-claude-code.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](ch03/074-claude-code.md)
 - [Wow Harness V3 Governance Protocol](ch05/015-harness.md)
-- [Agent Memory Architecture Ruofei](ch04/502-agent.md)
+- [Agent Memory Architecture Ruofei](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/webwright-microsoft-1000-lines.md)
 

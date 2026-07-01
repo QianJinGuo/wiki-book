@@ -77,7 +77,7 @@ Anthropic 的方案本质上是在 Agent 系统中引入了三个工程原则：
 2. **外部状态持久化**：用文件系统替代上下文窗口存储中间状态，突破 Token 限制
 3. **对抗性验证**：通过制度化的批评机制防止自我欺骗，类似于传统软件工程中的代码审查
 
-这与 [Claude Code 大型代码库团队部署](ch03/073-claude-code.md) 中讨论的 Harness 工程实践高度互补。
+这与 [Claude Code 大型代码库团队部署](ch03/074-claude-code.md) 中讨论的 Harness 工程实践高度互补。
 
 ## 实践启示
 
@@ -90,9 +90,9 @@ Anthropic 的方案本质上是在 Agent 系统中引入了三个工程原则：
 ## 相关实体
 
 - [Anthropic Multi Agent Research System](ch04/462-anthropic-multi-agent-research-system.md)
-- [Claude Code Large Codebase Team Deployment Agent Harness](ch03/073-claude-code.md)
-- [Hidden Technical Debt Agent Harness](ch04/502-agent.md)
-- [Long Running Agent Ralph Loop Harness Takeover](ch04/502-agent.md)
+- [Claude Code Large Codebase Team Deployment Agent Harness](ch03/074-claude-code.md)
+- [Hidden Technical Debt Agent Harness](ch03/044-agent.md)
+- [Long Running Agent Ralph Loop Harness Takeover](ch03/044-agent.md)
 - [Harness Engineering 核心模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 

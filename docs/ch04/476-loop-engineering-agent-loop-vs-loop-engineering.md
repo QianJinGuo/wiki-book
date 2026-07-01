@@ -48,7 +48,7 @@ Loop Engineering 本质上就是一种可以循环起来的 Pipeline，触发方
 ## 相关实体
 
 - [Loop Engineering 系统框架](ch05/004-loop-engineering.md) — 四次跃迁、五要素模型、成本公式
-- [Agent Loop 工程手册](ch04/502-agent.md) — 腾讯陈进的8个未解问题
+- [Agent Loop 工程手册](ch03/044-agent.md) — 腾讯陈进的8个未解问题
 - [Loop Engineering: 设计替你写提示词的循环](ch05/004-loop-engineering.md) — Addy Osmani 原始框架
 
 ---

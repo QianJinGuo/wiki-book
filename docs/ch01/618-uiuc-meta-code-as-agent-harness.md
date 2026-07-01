@@ -13,8 +13,8 @@
 - [cmu language models need sleep (arxiv 2605.26099)：ssm-attent](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2605-26099-ssm-attention-sleep-consolidation-cmu.md)
 - [autoresearch 迁移到软件开发：多 agent 交叉审核的工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-software-development.md)
 - [codex discovered a hidden http/2 bomb](ch01/436-codex.md)
-- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](ch03/073-claude-code.md)
-- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](ch03/073-claude-code.md)
+- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](ch03/074-claude-code.md)
+- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](ch03/074-claude-code.md)
 - [code intelligence – changelog](ch04/403-code-intelligence-changelog.md)
 - [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/777-deepseek.md)
 - [democratizing machine learning at netflix: building the mode](ch11/232-democratizing-machine-learning-at-netflix-building-the-mode.md)
@@ -62,9 +62,9 @@ UIUC、Meta、斯坦福等最新综述！Code as Agent Harness 涉及agent领域
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/502-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/502-agent.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/044-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)

@@ -20,7 +20,7 @@ Reinforcement Fine-Tuning can use any reward signal, straightforward hand‑craf
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-reinforcement-fine-tuning-llm-as-judge.md)
 
-- [stop hand-tuning kernels: how neuron agentic development acc](ch04/502-agent.md)
+- [stop hand-tuning kernels: how neuron agentic development acc](ch03/044-agent.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)

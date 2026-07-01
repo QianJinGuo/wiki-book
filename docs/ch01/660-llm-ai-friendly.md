@@ -14,7 +14,7 @@
 - [百型智能 ontoz：企业本体论 + 群智能体协同体系，新一代企业级 ai 基础设施](ch04/150-ai.md)
 - [从零构建大语言模型 —— 读完这篇你就懂了](ch01/890-llm.md)
 - [扣子 3.0 正式发布：@ 一下全员开工](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-release-official-quantum-bit.md)
-- [一个 mission 跑 16 天、烧 7.78 亿 token：factory 公开了多 agent 系统的构建哲学](ch04/502-agent.md)
+- [一个 mission 跑 16 天、烧 7.78 亿 token：factory 公开了多 agent 系统的构建哲学](ch03/044-agent.md)
 - [垂类 ai 创企的自救：flashlabs 从 flashintel 到 ai native](ch04/150-ai.md)
 - [from silos to service topology: why netflix built a real-tim](ch11/008-from-silos-to-service-topology-why-netflix-built-a-real-tim.md)
 - [nemotron 3.5 content safety: customizable multimodal safety](ch01/285-multimodal.md)
@@ -54,10 +54,10 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/502-agent.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/502-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/044-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/502-agent.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
 

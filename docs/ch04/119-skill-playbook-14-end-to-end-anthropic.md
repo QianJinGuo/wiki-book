@@ -195,7 +195,7 @@ Skill 没触发
 - Skill 质量优化 — [Skills Refiner Design Quality Evaluation Framework](ch04/245-skill.md)
 - Anthropic 95% 数据分析 Skill 栈 — [Anthropic 95Pct Data Analysis Skill Stack Architecture](ch04/245-skill.md)
 - AI 技能自动演进 — [Ai Skill Evolution Framework](ch04/245-skill.md)
-- Claude Code 架构 — [Claude Code Architecture](ch03/073-claude-code.md)
+- Claude Code 架构 — [Claude Code Architecture](ch03/074-claude-code.md)
 - AHE 通用 Harness — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 
 ---

@@ -75,7 +75,7 @@ Nathan 的核心论点：
 - **方法论文**：
   - Nathan 的 [open-models-in-perpetual-catch-up](https://www.interconnects.ai/p/open-models-in-perpetual-catch-up) — 能力差距基础
   - [How much does distillation really matter](https://www.interconnects.ai/p/how-much-does-distillation-really) — distillation 实证
-- **Agent 时代背景**：[Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/073-claude-code.md) — Claude Code 是闭源主导 RL 时代的样本
+- **Agent 时代背景**：[Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/074-claude-code.md) — Claude Code 是闭源主导 RL 时代的样本
 
 ## 上线状态与发布信息
 

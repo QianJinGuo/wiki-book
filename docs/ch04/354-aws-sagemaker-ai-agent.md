@@ -13,10 +13,10 @@ What makes this experience truly powerful is [agent Skills for model customizati
 
 ## 相关实体
 - [Aws Reinforcement Fine Tuning Llm As Judge](ch01/449-aws-reinforcement-fine-tuning-llm-as-judge.md)
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](ch04/502-agent.md)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](ch03/044-agent.md)
 - [Agent Workflows](ch04/310-agent-workflows.md)
-- [Habby Game Aws Devops Agent](ch04/502-agent.md)
-- [将 Aws Devops Agent 智能运维能力延伸到中国区](ch04/502-agent.md)
+- [Habby Game Aws Devops Agent](ch03/044-agent.md)
+- [将 Aws Devops Agent 智能运维能力延伸到中国区](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 

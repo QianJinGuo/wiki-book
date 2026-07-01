@@ -20,9 +20,9 @@ Anthropic宣布与SpaceX达成合作协议，将大幅提升算力储备。
 
 ## 相关实体
 - [Claude Opus 47](ch01/380-claude.md)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch04/502-agent.md)
-- [Anthropic Claude Managed Agents Platform 2026](ch04/502-agent.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/073-claude-code.md)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch03/044-agent.md)
+- [Anthropic Claude Managed Agents Platform 2026](ch03/044-agent.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/074-claude-code.md)
 - [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/突发anthropic拿下马斯克colossus-1全部算力claude要放开用了.md)

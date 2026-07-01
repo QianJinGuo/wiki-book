@@ -254,9 +254,9 @@ AIOS 范式的核心突破在于：**将规范从"文档"重构为"操作系统"
 
 ## 相关实体
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](ch04/150-ai.md)
-- [Business Agent Augmentation Layer Practitioner Methodology 20260606](ch04/502-agent.md)
+- [Business Agent Augmentation Layer Practitioner Methodology 20260606](ch03/044-agent.md)
 - [Ai Native Project Management Git](ch04/150-ai.md)
-- [Claude Code Founder Harness 100 Lines](ch03/073-claude-code.md)
+- [Claude Code Founder Harness 100 Lines](ch03/074-claude-code.md)
 - [Claude Code Skills Mcp Rules Source Analysis](ch07/006-claude-code-skills-mcp-rules-source-analysis.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md)

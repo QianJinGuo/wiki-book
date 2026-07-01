@@ -9,7 +9,7 @@
 - 来源：venturebeat
 ## 相关实体
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/508-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch04/502-agent.md)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch03/044-agent.md)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs 1](ch04/150-ai.md)
 - [The 1 Ai Agent For Financial Services Fin](ch04/477-the-1-ai-agent-for-financial-services-fin.md)
 

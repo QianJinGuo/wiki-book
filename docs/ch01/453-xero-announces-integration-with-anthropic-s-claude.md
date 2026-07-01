@@ -90,12 +90,12 @@ Xero 与 Anthropic 的合作验证了几个趋势：
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 
 ## 相关实体
-- [Anthropic Claude Managed Agents 平台正式发布](ch04/502-agent.md)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/073-claude-code.md)
+- [Anthropic Claude Managed Agents 平台正式发布](ch03/044-agent.md)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/074-claude-code.md)
 - [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch04/150-ai.md)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch04/502-agent.md)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch03/044-agent.md)
 
-- [Claude Managed Agents 官方 Harness 平台指南](ch04/502-agent.md)
+- [Claude Managed Agents 官方 Harness 平台指南](ch03/044-agent.md)
 - [Anthropic Computer Use 最佳实践](ch01/689-anthropic-computer-use.md)
 
 ---

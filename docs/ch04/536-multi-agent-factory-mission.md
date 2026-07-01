@@ -33,7 +33,7 @@ Luke Alvoeiro 在 AI Engineer 大会上系统阐述了 Factory Mission 系统的
 
 Luke 开篇抛出的判断是软件工程协作的关键转折：当模型智能本身已经足够，关键瓶颈转移到**人的注意力带宽**。 这意味着 Multi-Agent 系统的核心价值不是"更多 AI 并行"，而是"用更少的人类监督同时驱动更多工作流"。Factory 用 30 条工作流替代 5 人团队 10 条工作流的数字（人效 6 倍提升），其本质是把"5 人各推 2 条"的人力监督模式重构为"1 人监督 30 个 Agent Mission"的杠杆模式。
 
-这一观察与 [Agent 记忆系统工程实践](ch04/502-agent.md) 中关于"过程资产积累"的方向一致——治理带宽的瓶颈不能只靠堆人来突破，必须靠结构化的 Handoff 机制和 Validation Contract 来降低单次审查的认知负担。
+这一观察与 [Agent 记忆系统工程实践](ch03/044-agent.md) 中关于"过程资产积累"的方向一致——治理带宽的瓶颈不能只靠堆人来突破，必须靠结构化的 Handoff 机制和 Validation Contract 来降低单次审查的认知负担。
 
 ### 2. 五种协作策略的工程取舍
 
@@ -70,7 +70,7 @@ Mission 的解法是**精准混合**：
 
 **整体原则：串行执行 + 定点内部并行**。纸面更慢，但错误率大幅下降，长任务里正确性不断复利。
 
-这与 [Claude Code Agent Teams 任务分解](ch03/073-claude-code.md) 中"任务分解策略决定 Agent 协作模式"的判断相互印证——并行不是越多越好，而是要在不引入冲突的边界内最大化吞吐。
+这与 [Claude Code Agent Teams 任务分解](ch03/074-claude-code.md) 中"任务分解策略决定 Agent 协作模式"的判断相互印证——并行不是越多越好，而是要在不引入冲突的边界内最大化吞吐。
 
 ### 5. Droid Whispering：用异构模型对抗同质偏见
 
@@ -89,7 +89,7 @@ Mission 的编排逻辑几乎全写在 prompt 和 skill 里，避免硬编码状
 
 Worker 行为由 Orchestrator 每个 Mission 动态定义的 skill 驱动，确定性代码层非常薄，只做 bookkeeping（跑验证、交接阻塞时进度）。Luke 的总结极其精炼："**mission 负责提供纪律，模型负责提供智能。**"
 
-这与 [Harness Engineering Core Patterns](ch03/073-claude-code.md) 中关于"声明式优先于命令式"的设计原则形成强对应——编排层应当尽量薄，复杂逻辑让模型在 prompt 中处理，这样模型升级能自动带动系统升级。
+这与 [Harness Engineering Core Patterns](ch03/074-claude-code.md) 中关于"声明式优先于命令式"的设计原则形成强对应——编排层应当尽量薄，复杂逻辑让模型在 prompt 中处理，这样模型升级能自动带动系统升级。
 
 ### 7. Mission 克隆 Slack 的实战数字揭示的真相
 
@@ -142,12 +142,12 @@ Luke 公开的 Mission 实战数字值得仔细解读：
 
 ## 相关实体
 
-- [Factory Missions Multi-Agent Shipping](ch04/502-agent.md)——同主题的姊妹篇
-- [Claude Code Agent Teams 任务分解](ch03/073-claude-code.md)——任务分解策略的另一视角
-- [Harness Engineering Core Patterns](ch03/073-claude-code.md)——声明式编排的工程哲学
+- [Factory Missions Multi-Agent Shipping](ch03/044-agent.md)——同主题的姊妹篇
+- [Claude Code Agent Teams 任务分解](ch03/074-claude-code.md)——任务分解策略的另一视角
+- [Harness Engineering Core Patterns](ch03/074-claude-code.md)——声明式编排的工程哲学
 - [OpenClaw 多 Agent 团队实践](ch04/038-openclaw-multi-agent-team-practice-v2.md)——多 Agent 落地的国内实践
-- [Claude Managed Agents 企业自托管](ch04/502-agent.md)——Multi-Agent 的企业部署形态
-- [Agent 记忆系统工程实践](ch04/502-agent.md)——过程资产积累的方向
+- [Claude Managed Agents 企业自托管](ch03/044-agent.md)——Multi-Agent 的企业部署形态
+- [Agent 记忆系统工程实践](ch03/044-agent.md)——过程资产积累的方向
 - [Harness 状态边界与失败闭环](ch05/015-harness.md)——边界即文档的工程哲学
 - [AgentOps on Bedrock](ch04/150-ai.md)——多模型编排降低单点故障
 

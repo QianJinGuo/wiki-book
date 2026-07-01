@@ -95,7 +95,7 @@ Code Intelligence 的访问权限直接继承 GitHub 权限模型——"Limited 
 - `Pydantic Ai Progressive Agent Skills Automatorrunner` — Agent 框架的另一视角
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-05-14-code-intelligence-1778979927.md)
 - [code intelligence – changelog](ch04/403-code-intelligence-changelog.md)
-- [stack overflow for agents — ephemeral intelligence gap 框架与 a](ch04/502-agent.md)
+- [stack overflow for agents — ephemeral intelligence gap 框架与 a](ch03/044-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

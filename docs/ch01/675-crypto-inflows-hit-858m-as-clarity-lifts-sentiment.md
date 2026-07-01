@@ -26,7 +26,7 @@
 - [Ai Native Dan Shipper Every Layered Thinking Walkwalk](ch04/150-ai.md)
 - [Fastlane Create Winning Short Form Content In Seconds](ch03/099-fastlane-create-winning-short-form-content-in-seconds.md)
 - [Mira Mpa Deep Principle Ai4S 40 Sota](ch04/150-ai.md)
-- [Localmaxxing](ch03/102-localmaxxing.md)
+- [Localmaxxing](ch03/103-localmaxxing.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 ### 资金流向结构与市场情绪

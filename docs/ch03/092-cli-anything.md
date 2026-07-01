@@ -35,7 +35,7 @@ CLI-Anything 是由 HKUDS 实验室（香港大学数据科学实验室）开源
 - AdGuard Home、ChromaDB、Draw.io、CloudAnalyzer、CloudCompare
 
 ## Agent 兼容性
-支持 OpenClaw, [OpenCLI](ch03/080-opencli.md), Nanobot, Claude Code, Codex, Antigravity 等主流 Agent。
+支持 OpenClaw, [OpenCLI](ch03/082-opencli.md), Nanobot, Claude Code, Codex, Antigravity 等主流 Agent。
 安装命令：
 ```bash
 npx skills add HKUDS/CLI-Anything --skill cli-hub-meta-skill -g -y
@@ -125,7 +125,7 @@ HKUDS 通过 CLI-Anything 建立了在 Agent Tools 领域的技术影响力，St
 
 ## Related
 - [AutoCLI](ch03/114-autocli.md) — 极速网页信息获取 CLI
-- [AgentBrowser](ch04/502-agent.md) — AI 专用浏览器
+- [AgentBrowser](ch03/044-agent.md) — AI 专用浏览器
 
 ## 相关实体
 

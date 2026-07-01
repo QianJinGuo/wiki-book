@@ -65,10 +65,10 @@ CrewAI 的 Flows 架构通过确定性路由、可观测执行和升级路径来
 ### 相关实体
 
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/502-agent.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/502-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
-- [Tencentdb Agent Memory Context Offloading](ch04/502-agent.md)
+- [Tencentdb Agent Memory Context Offloading](ch03/044-agent.md)
 - [how developers can build agentic agreement workflows on docu](ch04/272-how-developers-can-build-agentic-agreement-workflows-on-docu.md)
 
 ---

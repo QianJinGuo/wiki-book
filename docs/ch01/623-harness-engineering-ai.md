@@ -16,7 +16,7 @@ Agent = Model + Harness
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/245-skill.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
 - [Harness Engineering Systematic Explainer](ch05/036-harness-engineering-systematic-explainer.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch04/502-agent.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-第三代工程范式.md)
 

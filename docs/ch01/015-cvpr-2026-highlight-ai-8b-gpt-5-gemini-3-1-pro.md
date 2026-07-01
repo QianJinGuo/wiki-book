@@ -12,7 +12,7 @@
 ## 相关实体
 - [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)
 - [Cvpr 2026 Highlight 清华打破多模态音频生成的通才困境Omni2Sound 音频基础模型开源](https://github.com/QianJinGuo/wiki/blob/main/entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
-- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](ch04/502-agent.md)
+- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](ch03/044-agent.md)
 - [Qoder 1 0 Release Ai Ide Agent Workbench](ch04/150-ai.md)
 - [Gpt 55来了我撤回了退订Chatgpt的决定](ch01/690-chatgpt.md)
 

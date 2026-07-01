@@ -13,8 +13,8 @@ Linux说过一句很经典的话：Talk is cheap, show me the code.
 
 ## 相关实体
 - [Code As Agent Harness Survey](ch09/046-code-as-agent-harness.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch04/502-agent.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch04/502-agent.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/044-agent.md)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch03/044-agent.md)
 - [Harness Engineering 第三代工程范式](ch05/061-harness-engineering.md)
 - [Agentic Ai System Architecture Harness Skill Mcp](ch04/245-skill.md)
 

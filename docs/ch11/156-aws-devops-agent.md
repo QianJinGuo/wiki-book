@@ -8,13 +8,13 @@
 
 ## 标签
 #aws #devops-agent #china-region #mcp
-**原文**: [将 Aws Devops Agent 智能运维能力延伸到中国区](ch04/502-agent.md)(raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
+**原文**: [将 Aws Devops Agent 智能运维能力延伸到中国区](ch03/044-agent.md)(raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
 
 ## 相关实体
 - [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [AWS DevOps Agent × MCP Server：混合云网络排障](ch07/041-aws-devops-agent-mcp-server.md)
 
-- [Design And Practical Application Of Intelligent Agents In E Commerce Industry](ch04/502-agent.md)
+- [Design And Practical Application Of Intelligent Agents In E Commerce Industry](ch03/044-agent.md)
 ## 深度分析
 ### 分区隔离是架构级硬约束，非配置问题
 AWS Commercial 分区（aws）与 AWS 中国分区（aws-cn）之间的隔离体现在 IAM 信任策略层面：你无法在 aws-cn 的 IAM Role 中信任一个 aws 分区的 Principal，尝试建立跨分区的 AssumeRole 会直接返回 `CREATE_FAILED`。这意味着任何依赖 IAM Role 跨分区信任的 Agent 管理机制（如 DevOps Agent 原生的 Secondary Account）在 aws-cn 分区物理不可行。本文将 MCP Server 部署在 Commercial 分区侧，正是绕开了 IAM 信任跨分区的限制，转而通过 API 调用（而非直接 Role 模拟）访问中国区资源。

@@ -61,8 +61,8 @@ AgentCore 通过三层知识架构扩展 agent 的可达性：
 ## 相关主题
 
 - [Agentcore Managed Harness](ch04/209-agentcore-managed-harness.md) — 前篇：Harness 编排框架
-- [Agentcore Harness](ch04/502-agent.md) — 同期：其他 AgentCore 工程实践
-- [Agentcore Payments X402 Agentic Commerce](ch04/502-agent.md) — 同期：x402 商业化
+- [Agentcore Harness](ch03/044-agent.md) — 同期：其他 AgentCore 工程实践
+- [Agentcore Payments X402 Agentic Commerce](ch03/044-agent.md) — 同期：x402 商业化
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/new-in-amazon-bedrock-agentcore-build-agents-with-broader-kn.md)
 
 ---

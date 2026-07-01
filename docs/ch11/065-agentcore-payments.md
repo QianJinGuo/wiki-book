@@ -68,9 +68,9 @@ x402 已成为代理商务支付协议的事实标准，新项目在评估付费
 ## 参考来源
 
 ## 相关实体
-- [Bedrock Agentcore Payment X402 Agent](ch04/502-agent.md)
-- [Firecracker Bedrock Agentcore Multi Tenant](ch04/502-agent.md)
-- [Claude Code Aws Bedrock Guide](ch03/073-claude-code.md)
+- [Bedrock Agentcore Payment X402 Agent](ch03/044-agent.md)
+- [Firecracker Bedrock Agentcore Multi Tenant](ch03/044-agent.md)
+- [Claude Code Aws Bedrock Guide](ch03/074-claude-code.md)
 - [Openclaw Amazon Bedrock Eks Printer Qc](ch11/209-openclaw.md)
 - [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-real-time-service-topology.md)
 

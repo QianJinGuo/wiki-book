@@ -51,7 +51,7 @@ Agent Teams（并行 + 共享 Context）
 
 ## 与 Wiki 已有内容的关系
 - 补充 [Agent 工程实践](ch04/441-agent-engineering-principles-architecture-practice.md)的"架构演进路径"章节（增加量化数据）
-- 补充 [Hermes Agent 深度解析](ch04/502-agent.md)的 Multi-Agent 协作部分（Google 论文 5 条结论）
+- 补充 [Hermes Agent 深度解析](ch03/044-agent.md)的 Multi-Agent 协作部分（Google 论文 5 条结论）
 - 补充 [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)的错误放大效应数据
 - 补充 [Anthropic MCP 重新定义](ch07/016-anthropic-mcp.md)的 Skills 机制解析
 ---
@@ -72,9 +72,9 @@ Agent Teams（并行 + 共享 Context）
 - [Agent 时代架构师技能指南](ch04/245-skill.md)
 - [factory mission multi agent architecture](ch01/888-factory-mission-multi-agent-architecture.md)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
-- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](ch04/502-agent.md)
+- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](ch03/044-agent.md)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/245-skill.md)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](ch04/502-agent.md)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](ch03/044-agent.md)
 
 - [Data Agent Platform Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/data-agent-platform-architecture.md)
 - [Multi Agent Collaboration 2025 Top 10 Challenges](https://github.com/QianJinGuo/wiki/blob/main/queries/multi-agent-collaboration-2025-top-10-challenges.md)

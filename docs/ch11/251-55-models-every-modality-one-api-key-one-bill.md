@@ -16,7 +16,7 @@
 - [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/084-aws-bedrock-serverless-async-inference-sqs-lambda.md)
 - [Aws Network Firewall Ai Conflict Detection Bedrock](ch04/150-ai.md)
 - [Kiro Job Scheduler Eventbridge Ecs Fargate](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/502-agent.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/digitalocean-serverless-inference-55-models.md)
 

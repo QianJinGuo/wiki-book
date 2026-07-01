@@ -126,7 +126,7 @@ Knowledge Base 的 Sync Reports 是易被忽视的运维窗口。定期检查「
 - [Aderant Transforms Cloud Operations With Amazon Quick](ch11/178-aderant-transforms-cloud-operations-with-amazon-quick.md)
 - [Amazon Quick Research Agentic Multi Source Citation](ch11/197-amazon-quick.md)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/197-amazon-quick.md)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch04/502-agent.md)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch03/044-agent.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
 
 ---

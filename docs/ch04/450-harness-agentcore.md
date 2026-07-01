@@ -16,9 +16,9 @@
 ## 相关实体
 - [Openclaw Prompt Context Harness](ch11/209-openclaw.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
-- [Agent Harness 12 Components 7 Decisions](ch04/502-agent.md)
+- [Agent Harness 12 Components 7 Decisions](ch03/044-agent.md)
 - [From Prompt To Harness Claude Official](ch01/380-claude.md)
-- [Agentcore Harness](ch04/502-agent.md)
+- [Agentcore Harness](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcore-managed-harness.md)
 

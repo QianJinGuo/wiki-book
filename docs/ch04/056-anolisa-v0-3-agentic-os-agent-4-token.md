@@ -184,7 +184,7 @@ ANOLISA v0.3 架构
 
 ## 9. 与已有 wiki 实体的关系
 
-### vs [晓斌 Agent-Oriented Infra](ch04/502-agent.md)
+### vs [晓斌 Agent-Oriented Infra](ch03/044-agent.md)
 - 晓斌 = "**Agent 能不能自主操作 = infra 提供了多强的安全护栏**"（Comprehensible/Operable/Observable/Traceable 4 层）
 - **ANOLISA = 4 层安全防护（提示词/代码/供应链/系统基线）** + 1 层"快照回滚"（可恢复）
 - 共同点：都强调"infra 决定 agent 自主空间"+"给 infra 补能力"
@@ -209,7 +209,7 @@ ANOLISA v0.3 架构
 - **ANOLISA = 阿里云 ECS 镜像 + Agentic OS**（**云端系统级**）
 - 共同点：都强调"为 AI 套上家 / 套上 OS"
 
-### vs [Agent Harness 架构](ch04/502-agent.md)
+### vs [Agent Harness 架构](ch03/044-agent.md)
 - 7 层 harness 模型 = 抽象框架
 - **ANOLISA = 具体落地：3 大可观测（AgentSight）+ 4 层安全（AgentSecCore）+ 1 层快照（ws-ckpt）**
 
@@ -218,7 +218,7 @@ ANOLISA v0.3 架构
 - **ANOLISA = 阿里全栈 AI（ANOLISA Agentic OS + 阿里云 Linux 镜像 + ECS 部署）**
 - 共同点：都是"大厂全栈 AI"路线——模型 + Harness + 平台 + 智能体
 
-### vs [PilotDeck](ch04/502-agent.md)
+### vs [PilotDeck](ch03/044-agent.md)
 - PilotDeck = WorkSpace + Always-on + Dream 模式（**多项目隔离**）
 - **ANOLISA = 阿里云 WorkSpace 快照 + AgentSecCore 安全**（**单 OS 多 Agent 保护**）
 - 共同点：都强调"为 AI 套上家"——PilotDeck = 应用层 / ANOLISA = 操作系统层
@@ -244,7 +244,7 @@ ANOLISA v0.3 架构
 
 - **SkillFS 的 Token 节省采用"可见方可量化"的设计哲学**。传统 Token 优化工具往往只输出最终节省百分比，用户无法追溯每次优化的来源。ANOLISA 的方案是：系统自动记录每一笔优化前后的对比，面板上清晰展示"花了多少、省了多少"——把成本从"应该省了一些"变成"白纸黑字的数字"。配合 TOON（Token-Oriented Object Notation）格式，ANOLISA 在协议层引入压缩效果统计，为 Token 成本优化提供了可解释性基础 
 
-- **ANOLISA 的"Agentic OS"定位代表了 OS 层与 AI Agent 融合的新范式竞争**。文章明确指出 ANOLISA 是"叠加在传统 OS 上的转换层"，这与 Microsoft Scout（应用层）、Apple Intelligence（模型层）和各种 agent framework（中间件层）形成差异化——它选择从操作系统层面为 Agent 提供原生支持，让 Agent 获得更好的 OS 访问性能和安全性。这条路线与 [PilotDeck](ch04/502-agent.md) 的"应用层 OS"路线形成对照，代表了"AI Agent 操作系统"的两种不同设计哲学 
+- **ANOLISA 的"Agentic OS"定位代表了 OS 层与 AI Agent 融合的新范式竞争**。文章明确指出 ANOLISA 是"叠加在传统 OS 上的转换层"，这与 Microsoft Scout（应用层）、Apple Intelligence（模型层）和各种 agent framework（中间件层）形成差异化——它选择从操作系统层面为 Agent 提供原生支持，让 Agent 获得更好的 OS 访问性能和安全性。这条路线与 [PilotDeck](ch03/044-agent.md) 的"应用层 OS"路线形成对照，代表了"AI Agent 操作系统"的两种不同设计哲学 
 
 ## 实践启示
 
@@ -256,7 +256,7 @@ ANOLISA v0.3 架构
 
 - **通过 OpenClaw 的 Hook 机制扩展 ANOLISA 的安全策略**。ANOLISA 的 Copilot Shell（cosh）提供了完善的 Hook 功能，支持会话导出和自定义状态栏。可以利用 Hook 在每次 Agent 执行敏感操作前自动插入人工确认步骤，或将安全事件导出到 SIEM 系统，实现 ANOLISA 与企业现有安全基础设施的集成 
 
-- **关注 ANOLISA 与 [OpenClaw](ch11/209-openclaw.md) 的集成深度**。ANOLISA 的入口是 OpenClaw，而 OpenClaw 本身支持多租户和多种部署形态（ECS/Fargate/Graviton）。在评估企业级部署时，需要考虑 ANOLISA 的多 Agent 保护能力是否满足多租户场景下的隔离需求，以及 [Hermes Agent](ch04/502-agent.md) 等其他 Agent 系统是否能与 ANOLISA 的安全框架无缝协同 
+- **关注 ANOLISA 与 [OpenClaw](ch11/209-openclaw.md) 的集成深度**。ANOLISA 的入口是 OpenClaw，而 OpenClaw 本身支持多租户和多种部署形态（ECS/Fargate/Graviton）。在评估企业级部署时，需要考虑 ANOLISA 的多 Agent 保护能力是否满足多租户场景下的隔离需求，以及 [Hermes Agent](ch03/044-agent.md) 等其他 Agent 系统是否能与 ANOLISA 的安全框架无缝协同 
 
 ## 11. 局限 / 待验证
 
@@ -267,14 +267,14 @@ ANOLISA v0.3 架构
 - **"Agentic OS" 概念** vs Microsoft Scout / Apple Intelligence / 各种 agent framework 的差异化定位未在文章中明确
 
 ## 相关对照
-- [晓斌 Agent-Oriented Infra](ch04/502-agent.md) —— 哲学框架
+- [晓斌 Agent-Oriented Infra](ch03/044-agent.md) —— 哲学框架
 - [wow-harness v3](ch05/015-harness.md) —— 协议层治理
 - [MAC Skills + Hooks](ch04/245-skill.md) —— 工程师个人框架
 - [高德 AI-Native 生产线](ch04/150-ai.md) —— 企业级 R&D
 - [Kimi Work](ch01/436-codex.md) —— 本地 Agent
-- [Agent Harness 架构](ch04/502-agent.md) —— 7 层模型
+- [Agent Harness 架构](ch03/044-agent.md) —— 7 层模型
 - [Microsoft Build 2026](ch04/150-ai.md) —— 全栈 AI
-- [PilotDeck](ch04/502-agent.md) —— 多项目隔离
+- [PilotDeck](ch03/044-agent.md) —— 多项目隔离
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anolisa-v03-alibaba-agentic-os.md)
 

@@ -12,7 +12,7 @@
 ## 相关实体
 
 - [10 common component architecture mistakes in Figma design systems](https://github.com/QianJinGuo/wiki/blob/main/entities/component-architecture-mistakes-figma-zeroheight.md)
-- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](ch04/502-agent.md)
+- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](ch03/044-agent.md)
 - [What the design-to-code loop unlocks](https://github.com/QianJinGuo/wiki/blob/main/entities/design-to-code-loop-figma.md)
 
 ## 深度分析

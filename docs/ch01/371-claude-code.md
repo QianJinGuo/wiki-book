@@ -92,15 +92,15 @@ Anthropic 官方复盘 Claude Code 中三个工具的设计演进过程，揭示
 ## 关联阅读
 ## 相关实体
 - [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md)
-- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](ch03/073-claude-code.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/073-claude-code.md)
-- [Claude Code Harness Deep Dive Founder Park](ch03/073-claude-code.md)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](ch03/073-claude-code.md)
+- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](ch03/074-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/074-claude-code.md)
+- [Claude Code Harness Deep Dive Founder Park](ch03/074-claude-code.md)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](ch03/074-claude-code.md)
 
-- [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](ch04/502-agent.md)
-- [Coze 3 0 Local Agent Codex Claude Code Project](ch03/073-claude-code.md)
-- [Claude Code Agent Teams Xingxiaozhao](ch03/073-claude-code.md)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](ch04/502-agent.md)
+- [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](ch03/044-agent.md)
+- [Coze 3 0 Local Agent Codex Claude Code Project](ch03/074-claude-code.md)
+- [Claude Code Agent Teams Xingxiaozhao](ch03/074-claude-code.md)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](ch03/044-agent.md)
 
 ---
 

@@ -81,18 +81,18 @@ MCP 服务器的价值在于复用现有生态。如果你已经有 Slack、GitH
 - **SHA256**: fac150d4db129656134597c4791bc1b54dea6601f52cefe3227537858581d609
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/502-agent.md)
-- [Anthropic Claude Managed Agents 平台正式发布](ch04/502-agent.md)
-- [Claude Managed Agents 开发者指南](ch04/502-agent.md)
-- [claude managed agents official](ch04/477-claude-managed-agents-official.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch03/044-agent.md)
+- [Anthropic Claude Managed Agents 平台正式发布](ch03/044-agent.md)
+- [Claude Managed Agents 开发者指南](ch03/044-agent.md)
+- [claude managed agents official](ch04/479-claude-managed-agents-official.md)
 
 - [obsidian claude code integration guide](ch09/103-obsidian-claude-code-integration-guide.md)
-- [Anthropic puts Claude agents on a meter across its subscriptions](ch04/502-agent.md)
+- [Anthropic puts Claude agents on a meter across its subscriptions](ch03/044-agent.md)
 - [Introducing Claude for Small Business](ch01/380-claude.md)
 - [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.md)
 - [Xero Announces Integration with Anthropic's Claude](ch01/380-claude.md)
 - [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/380-claude.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/073-claude-code.md)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/074-claude-code.md)
 - [Anthropic Computer Use 最佳实践](ch01/689-anthropic-computer-use.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 

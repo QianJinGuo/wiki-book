@@ -10,10 +10,10 @@
 - Source: https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-streaming-applications-with-amazon-nova-sonic-and-webrtc/
 
 ## 相关实体
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/502-agent.md)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch03/044-agent.md)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/250-amazon-nova.md)
 - [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](ch11/250-amazon-nova.md)
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch04/502-agent.md)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch03/044-agent.md)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](ch04/150-ai.md)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](ch04/150-ai.md)
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/890-llm.md)

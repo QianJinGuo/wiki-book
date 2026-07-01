@@ -5,7 +5,7 @@
 > 📊 Level ⭐ | 11.3KB | `entities/four-browser-automation-tools-comparison.md`
 
 > 来源：[行小招 - 科技充电站](https://mp.weixin.qq.com/s/2aqrTvswa6FtqI-GK-EmvQ)，2026-05-19
-> 评分：v=6, c=7, v×c=42 → 作为 [OpenCLI](ch03/080-opencli.md) entity 的补充
+> 评分：v=6, c=7, v×c=42 → 作为 [OpenCLI](ch03/082-opencli.md) entity 的补充
 | 维度 | chrome-devtools-mcp | Playwright | agent-browser | browser-use | BrowserAct | [raw/articles/browseract-agent-browser-execution-layer-rejected.md]
 |------|--------------------|-----------|---------------|-------------|------------|
 | 语言/运行时 | Node.js | Node.js，多语言绑定 | Rust，原生二进制 | Python | Node.js + Rust 内核 |

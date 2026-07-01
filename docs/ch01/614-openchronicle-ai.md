@@ -11,9 +11,9 @@ GitHub: https://github.com/Einsia/OpenChronicle
 > "OpenAI的Chronicle指向了一个重要的未来。但AI的记忆，不应该被锁在100美元/月的付费墙之后。所以，我们把它开源了。"
 
 ## 相关实体
-- [Agent Self Improvement Six Mechanisms](ch04/502-agent.md)
+- [Agent Self Improvement Six Mechanisms](ch03/044-agent.md)
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](ch01/268-agi.md)
-- [Vayne Lw Personal Agent System](ch04/502-agent.md)
+- [Vayne Lw Personal Agent System](ch03/044-agent.md)
 - [Chatgpt Memory](ch01/325-chatgpt-memory.md)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/245-skill.md)
 

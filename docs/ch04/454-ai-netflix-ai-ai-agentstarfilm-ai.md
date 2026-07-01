@@ -22,7 +22,7 @@ source:
 ## 相关实体
 > 主题导航
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch04/502-agent.md)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch03/044-agent.md)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/150-ai.md)
 ## 深度分析
 **Starfilm的定位与核心创新**

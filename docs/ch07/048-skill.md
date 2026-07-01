@@ -95,7 +95,7 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/245-skill.md)
 - [SkillClaw](ch04/245-skill.md)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/245-skill.md)
-- [四种 Sub Agent 模式](ch04/502-agent.md)
+- [四种 Sub Agent 模式](ch03/044-agent.md)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/245-skill.md)
 
 - [Qoder Skills 完全指南](ch04/245-skill.md)
@@ -107,7 +107,7 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [你写的 Skill，及格了吗？](ch04/245-skill.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 - [AI Agent 工程师能力地图](ch04/150-ai.md)
-- [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](ch04/502-agent.md)
+- [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](ch03/044-agent.md)
 
 ---
 

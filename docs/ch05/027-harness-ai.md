@@ -133,7 +133,7 @@ log.md 只追加不修改确保了知识变更的历史完整性；evidence.cont
 当每个阶段入口/出口都有明确持久化产物时，Agent 可以在任意时间点暂停、人类在任意时间审批后继续。这解决了 Harness 工作流的"在场依赖"问题——真正实现了 7×24 小时流转而不需要工程师全程在场。^
 **与行业 Harness 实践的呼应关系**
 文章第一节对比的三大 Harness 实践（OpenAI Codex 的指令协议 / Cursor Self-Driving 的多 Agent 协同 / Anthropic Claude Code 的长时稳定性）分别对应了人机交互、编排和记忆三个维度。腾讯 AI Team 的知识管理框架本质上是为这三个维度提供持续的知识供给和生命周期管理能力。^
-这与 [Harness Engineering 全面解读](ch05/061-harness-engineering.md) 中描述的"约束校验与失败恢复"支柱以及 [Claude Code 大型代码库最佳实践](ch03/073-claude-code.md) 中的多层记忆系统形成互补——本文提供了知识层面的系统性方案，而行业实践提供了工具层面的具体实现路径。^
+这与 [Harness Engineering 全面解读](ch05/061-harness-engineering.md) 中描述的"约束校验与失败恢复"支柱以及 [Claude Code 大型代码库最佳实践](ch03/074-claude-code.md) 中的多层记忆系统形成互补——本文提供了知识层面的系统性方案，而行业实践提供了工具层面的具体实现路径。^
 
 ## Related entities
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/015-harness.md)

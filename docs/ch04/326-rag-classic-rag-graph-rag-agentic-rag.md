@@ -14,10 +14,10 @@
 
 ## 相关实体
 - [Protocol H Hierarchical Agentic Rag Enterprise](ch04/080-protocol-h-hierarchical-agentic-rag-enterprise.md)
-- [Claude Code Search Architecture Tencent 2026](ch03/073-claude-code.md)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](ch03/073-claude-code.md)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](ch04/502-agent.md)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](ch03/073-claude-code.md)
+- [Claude Code Search Architecture Tencent 2026](ch03/074-claude-code.md)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](ch03/074-claude-code.md)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](ch03/044-agent.md)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](ch03/074-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/three-rag-architectures-classic-graph-agentic.md)
 

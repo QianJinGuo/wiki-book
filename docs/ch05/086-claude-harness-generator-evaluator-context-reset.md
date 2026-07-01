@@ -114,20 +114,20 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 ## 相关
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-design-long-running-apps.md)
 -  — 七环节控制回路 + Generator/Evaluator 框架
-- [Agent Harness 上下文管理：工作集视角](ch04/502-agent.md) — compaction 光谱 + session/harness/sandbox 解耦
+- [Agent Harness 上下文管理：工作集视角](ch03/044-agent.md) — compaction 光谱 + session/harness/sandbox 解耦
 - [LangChain Anatomy of Agent Harness](ch04/150-ai.md) — Ralph 循环 + 规划/自我验证双闭环
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/502-agent.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch03/044-agent.md)
 - [Ai Agent Harness Construction Akshay Baoyu](ch04/150-ai.md)
 - [Code As Agent Harness Survey 2026](ch09/046-code-as-agent-harness.md)
 - [Agent Harnesses Are Dead Long Live Agent Harnesses](ch04/542-agent-harnesses-are-dead-long-live-agent-harnesses.md)
 - [Harness 之后 状态边界与失败闭环 若飞](ch05/015-harness.md)
-- [Agentscope Java 2.0 Enterprise Distributed Harness](ch04/502-agent.md)
+- [Agentscope Java 2.0 Enterprise Distributed Harness](ch03/044-agent.md)
 - [Gaode Uplift Model Iteration Agent Long Running Harness](ch01/750-gaode-uplift-model-iteration-agent-long-running-harness.md)
-- [Long Running Agent Ralph Loop Harness Takeover](ch04/502-agent.md)
+- [Long Running Agent Ralph Loop Harness Takeover](ch03/044-agent.md)
 - [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch04/150-ai.md)
-- [Langgraph A2A Adversarial Agent Team](ch04/502-agent.md)
+- [Langgraph A2A Adversarial Agent Team](ch03/044-agent.md)
 
 ---
 

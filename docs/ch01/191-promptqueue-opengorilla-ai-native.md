@@ -19,7 +19,7 @@
 - [Schemaflow Openai Cookbook Staged Agentic Workflow](ch04/150-ai.md)
 - [Prompt Context Harness Three Evolutions](ch05/015-harness.md)
 - [From Prompt To Harness Claude Official](ch01/380-claude.md)
-- [Claude Code Large Codebase Harness Configuration](ch03/073-claude-code.md)
+- [Claude Code Large Codebase Harness Configuration](ch03/074-claude-code.md)
 - [Openai Skills Shell Compaction Agent Primitives](ch04/245-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/promptqueue-opengorilla-project-analysis-ljguo.md)

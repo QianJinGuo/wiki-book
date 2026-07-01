@@ -121,11 +121,11 @@ Auto mode 通过**模型驱动的分类器**判定命令是否安全可执行，
 
 ## 关联实体
 
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](ch03/073-claude-code.md) — Claude Code 多 Agent 编排完整指南
-- [Claude Code Dynamic Workflows 8Th Translation Xingxiaozhao](ch03/073-claude-code.md) — Claude Code 动态工作流译注
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md) — Claude Code 源码机制
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](ch03/074-claude-code.md) — Claude Code 多 Agent 编排完整指南
+- [Claude Code Dynamic Workflows 8Th Translation Xingxiaozhao](ch03/074-claude-code.md) — Claude Code 动态工作流译注
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md) — Claude Code 源码机制
 - [Gsd Get Shit Done Context Management Tool](ch01/196-gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/502-agent.md) — Agent 原理架构与工程实践
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md) — Agent 原理架构与工程实践
 
 ---
 

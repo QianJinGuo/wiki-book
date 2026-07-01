@@ -19,7 +19,7 @@ class PersonInfo(BaseModel):
     age: int | None = None
     occupation: str | None = None
 ```
-字段类型与 `required` 语义映射为 JSON Schema 发给模型；模型被约束在 Schema 内生成，降低幻觉字段与格式错误 。 See also [Agent Harness Architecture](ch04/502-agent.md)
+字段类型与 `required` 语义映射为 JSON Schema 发给模型；模型被约束在 Schema 内生成，降低幻觉字段与格式错误 。 See also [Agent Harness Architecture](ch03/044-agent.md)
 
 ### 方式二：JSON Schema dict
 ```python

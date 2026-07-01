@@ -77,11 +77,11 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 
 ## 与现有实体的关系
 
-- **与 [Claude Code 1 周年回顾](ch03/073-claude-code.md)** 互补：1 周年是时间线 + 团队视角；本文是开发者工作流哲学
-- **与 [Harness Engineering 核心模式](ch03/073-claude-code.md)** 互补：CE plan.md 循环是 harness engineering 的具体实现
+- **与 [Claude Code 1 周年回顾](ch03/074-claude-code.md)** 互补：1 周年是时间线 + 团队视角；本文是开发者工作流哲学
+- **与 [Harness Engineering 核心模式](ch03/074-claude-code.md)** 互补：CE plan.md 循环是 harness engineering 的具体实现
 - **与 [工作流 Skill 模式](ch04/245-skill.md)** 呼应：「任何做超过 2 次的事 → 做成技能」是 SkillOS 哲学的实战版
-- **与 [Hermes 自进化](ch04/502-agent.md)** 平行：Matt 用 OpenClaw + Hermes 跑远程工作
-- **与 [Agent 六机制](ch04/502-agent.md)** 呼应：「先 plan 后 work」是六机制中"计划-执行分离"的具体实现
+- **与 [Hermes 自进化](ch03/044-agent.md)** 平行：Matt 用 OpenClaw + Hermes 跑远程工作
+- **与 [Agent 六机制](ch03/044-agent.md)** 呼应：「先 plan 后 work」是六机制中"计划-执行分离"的具体实现
 
 ## 工程可复现项
 
@@ -97,11 +97,11 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 
 ### 核心观点：80% 计划 + 20% 执行是 AI 时代人机协作的结构性反转
 
-传统软件工程中，开发者的时间大量投入"执行"（写代码、调试），计划只是前期铺垫。Matt Van Horn 的实验揭示了一个结构性反转：当 AI 能承担高质量执行时，人类的价值迁移到**计划质量本身**。写计划强迫 Agent 研究、承诺方法、列出验收标准——这是防止 Agent 偷懒的机制，而不是给人类自己看的文档。[Agent Self Improvement Six Mechanisms](ch04/502-agent.md) 中的"计划-执行分离"与此呼应，但本文的贡献在于将这个原则 operationalize 为日常工具使用行为（每件事都先 /ce-plan）。
+传统软件工程中，开发者的时间大量投入"执行"（写代码、调试），计划只是前期铺垫。Matt Van Horn 的实验揭示了一个结构性反转：当 AI 能承担高质量执行时，人类的价值迁移到**计划质量本身**。写计划强迫 Agent 研究、承诺方法、列出验收标准——这是防止 Agent 偷懒的机制，而不是给人类自己看的文档。[Agent Self Improvement Six Mechanisms](ch03/044-agent.md) 中的"计划-执行分离"与此呼应，但本文的贡献在于将这个原则 operationalize 为日常工具使用行为（每件事都先 /ce-plan）。
 
 ### 技术要点："让 AI 写 plan.md 但不读 plan.md"本质是委托-代理最优分离
 
-这个看似反直觉的做法有深刻的工程逻辑：plan.md 是 Agent 的作业而非人类的阅读材料。人类只需要扫一眼标题判断方向，然后 /ce-work 内联提问 TLDR/eli5。这意味着人类扮演的是**评审者而非消费者**——计划的生产者和计划的执行者是同一个 Agent，但人类只消费计划的摘要而非完整内容。这与 [Harness Engineering Core Patterns Claude Code](ch03/073-claude-code.md) 中描述的 Harness Engineering 原则一致：人类定义验收标准，Agent 负责实现路径。
+这个看似反直觉的做法有深刻的工程逻辑：plan.md 是 Agent 的作业而非人类的阅读材料。人类只需要扫一眼标题判断方向，然后 /ce-work 内联提问 TLDR/eli5。这意味着人类扮演的是**评审者而非消费者**——计划的生产者和计划的执行者是同一个 Agent，但人类只消费计划的摘要而非完整内容。这与 [Harness Engineering Core Patterns Claude Code](ch03/074-claude-code.md) 中描述的 Harness Engineering 原则一致：人类定义验收标准，Agent 负责实现路径。
 
 ### 实践价值：cmux 6 标签页并行 + 声音钩子是分布式认知的物理实现
 

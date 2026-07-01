@@ -91,12 +91,12 @@
 ## 相关实体
 
 - [Harness Engineering](ch05/061-harness-engineering.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/074-claude-code.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/502-agent.md)
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/209-openclaw.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](ch03/073-claude-code.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](ch03/074-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-future-persistence-vs-erosion.md)
 

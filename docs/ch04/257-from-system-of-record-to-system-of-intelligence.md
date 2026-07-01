@@ -90,7 +90,7 @@ GTM 调查中，CRM 使用量在 AI 工具大规模采用后实际上**上升了
 
 这篇文章与 a16z 同期发表的 [Is Software Losing Its Head?](ch01/123-is-software-losing-its-head.md) 构成姊妹篇，后者探讨软件本身的结构性挑战。Investing in Stitch 一文则从投资视角讨论了同一核心判断：没有干净的 SOR，就没有可靠的 AI 层。
 
-[Salesforce Headless](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md) 战略可视为 CRM 巨头应对这一迁移的防御性布局。[Enterprise Software Moats in the Agent Era](ch04/502-agent.md) 则从护城河视角分析了同一趋势。
+[Salesforce Headless](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md) 战略可视为 CRM 巨头应对这一迁移的防御性布局。[Enterprise Software Moats in the Agent Era](ch03/044-agent.md) 则从护城河视角分析了同一趋势。
 
 ## 结论
 

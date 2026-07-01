@@ -36,11 +36,11 @@ Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required 涉
 ### 关联实体
 
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/502-agent.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/502-agent.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/502-agent.md)
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

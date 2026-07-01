@@ -20,8 +20,8 @@
 
 | 层次 | 对应路线 | 核心能力 | 代表系统 |
 |------|---------|---------|---------|
-| **理解层**（上下文） | 个人上下文 | 用户意图理解、上下文记忆、偏好推断 | [Agent Harness 工作集管理](ch04/502-agent.md) |
-| **学习层**（进化） | 自我进化 | 经验沉淀、Skills 版本化、可审计的回滚 | [Small Hermes 自我进化架构](ch04/502-agent.md) |
+| **理解层**（上下文） | 个人上下文 | 用户意图理解、上下文记忆、偏好推断 | [Agent Harness 工作集管理](ch03/044-agent.md) |
+| **学习层**（进化） | 自我进化 | 经验沉淀、Skills 版本化、可审计的回滚 | [Small Hermes 自我进化架构](ch03/044-agent.md) |
 | **行动层**（执行力） | 执行力 | 工具调用、任务分解、可靠执行 | [Agent 编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) |
 
 ## 短期分化原因
@@ -55,7 +55,7 @@ Agent能力越强，治理越重要。成熟Agent的关键词不是"完全自主
 6. **Skill版本管理** — 技能迭代有版本号、可对比、可回滚
 7. **数据访问控制** — 敏感数据的访问级别和范围精确管控
 
-参考：[Agent Harness Engineering Survey](ch04/502-agent.md) 中的 ETCLOVG 治理维度。
+参考：[Agent Harness Engineering Survey](ch03/044-agent.md) 中的 ETCLOVG 治理维度。
 
 ## 模型非唯一壁垒
 
@@ -89,7 +89,7 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 
 ## 与17种架构演进的关系
 
-[17种Agent架构](ch04/502-agent.md)的演化史本质上是三条路线在不同历史阶段的不同侧重：
+[17种Agent架构](ch03/044-agent.md)的演化史本质上是三条路线在不同历史阶段的不同侧重：
 
 - **早期架构**（Reflection/Tool Use/ReAct）→ 偏重**执行力**路线，解决"能不能做"
 - **中期架构**（Self-Evolve/Reflexion/ExpeL）→ 偏重**自我进化**路线，解决"能不能越用越强"

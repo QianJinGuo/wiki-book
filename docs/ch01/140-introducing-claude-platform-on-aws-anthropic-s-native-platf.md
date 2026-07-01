@@ -16,12 +16,12 @@ In this post, we explore how Claude Platform on AWS works and how you can start 
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/197-amazon-quick.md)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
 - [Claude For Small Business](ch01/380-claude.md)
-- [Anthropic Claude Managed Agents Platform 2026](ch04/502-agent.md)
+- [Anthropic Claude Managed Agents Platform 2026](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-claude-platform-on-aws.md)
 
 - [Anthropic出手Ai的内心独白曝光了](ch04/150-ai.md)
-- [Claude Code Context Engineering Anthropic Thariq](ch03/073-claude-code.md)
+- [Claude Code Context Engineering Anthropic Thariq](ch03/074-claude-code.md)
 - [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](ch04/150-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)

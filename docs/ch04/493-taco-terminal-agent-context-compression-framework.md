@@ -40,7 +40,7 @@ TACO 在 TerminalBench 1.0、TerminalBench 2.0 以及多个 terminal-related ben
 
 ## 相关实体
 
-- [Terminus CLI Agent](ch04/502-agent.md)
+- [Terminus CLI Agent](ch03/044-agent.md)
 - [SWE-Bench](https://github.com/QianJinGuo/wiki/blob/main/entities/swe-bench-software-engineering-benchmark.md)
 - [Context Compression Techniques](ch01/890-llm.md)
 - [Autonomous Coding Agents](ch09/043-coding-agent.md)

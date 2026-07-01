@@ -117,9 +117,9 @@ LLMReaper 演示的技术完整对应到 MITRE ATT&CK：
 ## 相关实体
 
 - [Harness Engineering 概念](ch04/150-ai.md) — AI 工程实践
-- [Agent 记忆系统](ch04/502-agent.md) — Agent 系统的工程实践
-- [Claude Code 源码机制](ch03/073-claude-code.md) — AI 工具架构
-- [Karpathy Vibe Coding 访谈](ch04/502-agent.md) — Agentic Engineering 范式
+- [Agent 记忆系统](ch03/044-agent.md) — Agent 系统的工程实践
+- [Claude Code 源码机制](ch03/074-claude-code.md) — AI 工具架构
+- [Karpathy Vibe Coding 访谈](ch03/044-agent.md) — Agentic Engineering 范式
 - [OpenClaw 完整指南](ch11/209-openclaw.md) — AI 工具教程
 - [天猫 AI 编码实战](ch04/150-ai.md) — 企业 AI 编码案例
 - [What My Privacy and Security Stack Actually Looks Like](ch12/019-what-my-privacy-and-security-stack-actually-looks-like.md) — 个人安全栈案例

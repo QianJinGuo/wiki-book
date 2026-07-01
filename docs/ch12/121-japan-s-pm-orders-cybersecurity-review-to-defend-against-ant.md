@@ -29,7 +29,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/japan-pm-cybersecurity-review-anthropic-mythos.md)
 
 ## 相关实体
-- [Anthropic PM 的 Agentic 工作流](ch04/502-agent.md)
+- [Anthropic PM 的 Agentic 工作流](ch03/044-agent.md)
 - [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](ch12/102-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)

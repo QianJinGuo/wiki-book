@@ -35,9 +35,9 @@ v2.1.85 引入的 `if` 字段是配置复杂度管理的重要里程碑。以前
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/150-ai.md)
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch04/150-ai.md)
 - [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch04/150-ai.md)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/073-claude-code.md)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/073-claude-code.md)
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/074-claude-code.md)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/074-claude-code.md)
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
 
 ---
 

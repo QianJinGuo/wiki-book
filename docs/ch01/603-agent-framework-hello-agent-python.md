@@ -20,11 +20,11 @@ Agent Framework 是微软面向 .NET / Python 的统一 Agent 开发框架，承
 - 纯确定性逻辑 → 普通函数，不必上 Agent
 
 ## 相关实体
-- [Microsoft Agent Framework Python Zizhi](ch04/502-agent.md)
+- [Microsoft Agent Framework Python Zizhi](ch03/044-agent.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
-- [Agentscope Java Harness Framework Enterprise Distributed](ch04/502-agent.md)
+- [Agentscope Java Harness Framework Enterprise Distributed](ch03/044-agent.md)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/245-skill.md)
-- [Agent Harness 12 Components 7 Decisions](ch04/502-agent.md)
+- [Agent Harness 12 Components 7 Decisions](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-agent-framework-python-full-guide-zizhi.md)
 

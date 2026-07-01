@@ -273,8 +273,8 @@
 - [Kimi Work](ch01/436-codex.md) —— 本地桌面 Agent + Vibe Working
 - [wow-harness v3](ch05/015-harness.md) —— 跨 session 事件时间线
 - [OpenClaw](ch11/209-openclaw.md) —— 开源 AI 编程框架（Scout 基于它）
-- [Agent Harness 架构](ch04/502-agent.md) —— 7 层 harness 模型
-- [Agent Harness 上下文管理](ch04/502-agent.md) —— 工作集视角
+- [Agent Harness 架构](ch03/044-agent.md) —— 7 层 harness 模型
+- [Agent Harness 上下文管理](ch03/044-agent.md) —— 工作集视角
 
 ## 深度分析
 

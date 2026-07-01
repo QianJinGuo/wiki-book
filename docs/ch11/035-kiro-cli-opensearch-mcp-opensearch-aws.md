@@ -14,7 +14,7 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock ^[https://aws.amazon.com/
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert/)
 
 ## 相关实体
-- [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](ch04/502-agent.md)
+- [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](ch03/044-agent.md)
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](ch04/150-ai.md)
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch04/150-ai.md)
 - [将 Kiro CLI 封装为 REST API：双通道架构实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-rest-api-architecture-practice.md)

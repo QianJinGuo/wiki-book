@@ -83,7 +83,7 @@ LangChain 通常推荐团队构建**应用特定的评估器**（因为判断 tr
 ## 原文链接
 
 ## 相关实体
-- [langsmith engine: trace-based self-improving agent](ch04/502-agent.md)
+- [langsmith engine: trace-based self-improving agent](ch03/044-agent.md)
 - [skillsui 企业 agent 中间层](ch04/245-skill.md)
 - [gaode uplift model iteration agent long running harness](ch01/750-gaode-uplift-model-iteration-agent-long-running-harness.md)
 

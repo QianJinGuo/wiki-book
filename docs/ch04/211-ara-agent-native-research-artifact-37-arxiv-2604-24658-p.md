@@ -48,8 +48,8 @@ ARA（Agent-native Research Artifact）论文的 37 位作者规模反映了 AI 
 ARA 类工作推动的是整个研究工具链的演进——从文献搜索到实验执行到论文写作。关注这一生态的发展。
 
 ## 相关实体
-- [Kimi K2 6 Tidb Agent Database](ch04/502-agent.md)
-- [Kimi K2 Tidb Agent Database Huangdongxu 20260513](ch04/502-agent.md)
+- [Kimi K2 6 Tidb Agent Database](ch03/044-agent.md)
+- [Kimi K2 Tidb Agent Database Huangdongxu 20260513](ch03/044-agent.md)
 - [Anthropic Multi Agent Research System](ch04/462-anthropic-multi-agent-research-system.md)
 - [Gaode Ai Native 7X24 Pipeline Self Healing](ch04/150-ai.md)
 - [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/150-ai.md)

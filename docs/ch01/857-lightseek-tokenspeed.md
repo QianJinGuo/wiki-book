@@ -17,11 +17,11 @@ TokenSpeed 的核心竞争力来自三个正交的技术决策，针对 agentic 
 - **生态整合**：vLLM 集成意味着 TokenSpeed 不需要你重写 inference serving layer——如果已在用 vLLM，关注其上游 PR 进展可能是更低的迁移成本。
 
 ## 相关资源
-- [Agent Memory 架构](ch04/502-agent.md)
+- [Agent Memory 架构](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lightseek-tokenspeed.md)
 
-- [Claude Managed Agents 开发者指南](ch04/502-agent.md)
+- [Claude Managed Agents 开发者指南](ch03/044-agent.md)
 
 ## 相关实体
 

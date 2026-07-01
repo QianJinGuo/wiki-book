@@ -8,10 +8,10 @@
 - Sentry Seer Agent：利用 LLM 在 Sentry 内直接回答开发者问题
 - 将调试工作流从人工排查转变为自然语言问答
 ## 相关实体
-- [Seer Agent Workshop](ch04/502-agent.md)
+- [Seer Agent Workshop](ch03/044-agent.md)
 - [Introducing The Ettin Reranker Family](ch01/372-introducing-the-ettin-reranker-family.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Alphaevolve Deepmind Discovery Agent](ch04/502-agent.md)
+- [Alphaevolve Deepmind Discovery Agent](ch03/044-agent.md)
 - [Ai Agents Inside Perimeter Hackernews](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)

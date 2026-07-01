@@ -109,7 +109,7 @@ Harness 的渐进披露信息系统：
 5. **持续修正 Evaluator 本身**：提示词、评分标准、测试深度要根据真实误判不断修正——Evaluator 不是一次性建好就完事的，它本身也是需要被 Harness 的组件。
 
 ## 相关实体
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch04/502-agent.md)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch03/044-agent.md)
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/061-harness-engineering.md)
 - [Harness Engineering 四根支柱与四要素架构](ch05/061-harness-engineering.md)
 - [Harness Engineering 指南（字节跳动TRAE）](ch01/531-trae-harness-engineering.md)

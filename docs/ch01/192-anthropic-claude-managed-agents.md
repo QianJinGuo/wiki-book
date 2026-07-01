@@ -103,34 +103,34 @@ Webhook 机制是实现"委托-等待"模式的关键。你的应用可以将任
 Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需要单独申请权限。在生产环境中使用这些功能时，需要考虑：权限申请的不确定性、功能可能变化的兼容性维护、备用方案的准备。建议将预览阶段的功能用于非关键路径，或者设计成可降级方案（如 Outcomes Loop 暂时用人工评估替代）。同时关注官方文档的更新，及时跟进正式发布后的变化。
 
 ## 相关产品/人物
-- [Claude Managed Agents 开发者指南](ch04/502-agent.md)
+- [Claude Managed Agents 开发者指南](ch03/044-agent.md)
 - [Anthropic Computer Use 最佳实践](ch01/689-anthropic-computer-use.md)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/073-claude-code.md)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch04/502-agent.md) — 另一篇技术解读，覆盖 API 细节和定价
-- [Anthropic PM 的 Agentic 工作流](ch04/502-agent.md) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/074-claude-code.md)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch03/044-agent.md) — 另一篇技术解读，覆盖 API 细节和定价
+- [Anthropic PM 的 Agentic 工作流](ch03/044-agent.md) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-claude-managed-agents-platform-launch.md)
 
 ## 架构图
 → [C4 架构图](assets/c4/anthropic-claude-managed-agents-platform-2026-c4.html)
 
 ## 相关实体
-- [Claude Managed Agents 官方 Harness 平台指南](ch04/502-agent.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/502-agent.md)
+- [Claude Managed Agents 官方 Harness 平台指南](ch03/044-agent.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch03/044-agent.md)
 - [Multica — 开源 Managed Agents 平台](ch07/054-multica-managed-agents.md)
-- [claude managed agents official](ch04/477-claude-managed-agents-official.md)
+- [claude managed agents official](ch04/479-claude-managed-agents-official.md)
 - [claude managed agents](ch04/537-claude-managed-agents.md)
 
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/245-skill.md)
-- [Anthropic puts Claude agents on a meter across its subscriptions](ch04/502-agent.md)
+- [Anthropic puts Claude agents on a meter across its subscriptions](ch03/044-agent.md)
 - [Introducing Claude for Small Business](ch01/380-claude.md)
 - [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.md)
 - [Xero Announces Integration with Anthropic's Claude](ch01/380-claude.md)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/380-claude.md)
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/245-skill.md)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch04/502-agent.md)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch03/044-agent.md)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/245-skill.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/502-agent.md)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/044-agent.md)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/380-claude.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)

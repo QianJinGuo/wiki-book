@@ -29,12 +29,12 @@ sources:
 related:
 
   - [Harness 工程化体系](ch05/036-harness-engineering-systematic-explainer.md)
-  - [Context Management 与 Working Set](ch04/502-agent.md)
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch04/502-agent.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/502-agent.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
-- [Agent Harness 12 组件与 7 个关键决策](ch04/502-agent.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/502-agent.md)
+  - [Context Management 与 Working Set](ch03/044-agent.md)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch03/044-agent.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch03/044-agent.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/074-claude-code.md)
+- [Agent Harness 12 组件与 7 个关键决策](ch03/044-agent.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch03/044-agent.md)
 
 ## 深度分析
 ### 核心命题：harness 与后端的边界是临时状态
@@ -66,11 +66,11 @@ related:
 
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/150-ai.md)
-- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](ch04/502-agent.md)
+- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](ch03/044-agent.md)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/015-harness.md)
-- [你不知道的 Agent：原理、架构与工程实践](ch04/502-agent.md)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/502-agent.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/502-agent.md)
+- [你不知道的 Agent：原理、架构与工程实践](ch03/044-agent.md)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch03/044-agent.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/061-harness-engineering.md)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/209-openclaw.md)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/150-ai.md)

@@ -116,7 +116,7 @@ Agent 遵循预定义的 `skill` 剧本，根据关系状态差异化处理：
 ## 相关实体
 
 - [Agent Harness 组件解析](ch04/150-ai.md)
-- [MCP 设计模式](ch04/502-agent.md)
+- [MCP 设计模式](ch03/044-agent.md)
 - Agent 评估
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langchain用agent做销售获客3个月转化率提升25倍看完后我发现国内-agent-落地的方法都错了.md)

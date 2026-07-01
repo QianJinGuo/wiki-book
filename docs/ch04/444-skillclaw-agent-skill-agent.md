@@ -15,7 +15,7 @@
 - [Ai Skill Skill Creator 源码拆解](ch04/245-skill.md)
 - [Agentic Ai System Architecture Harness Skill Mcp](ch04/245-skill.md)
 - [Agent Skill Writing Guide](ch04/245-skill.md)
-- [Agent Memory Engineering Tax Aws China 2026](ch04/502-agent.md)
+- [Agent Memory Engineering Tax Aws China 2026](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-collective-intelligence.md)
 

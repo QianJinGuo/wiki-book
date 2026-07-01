@@ -11,11 +11,11 @@
 模型本身只是能力的来源，只有通过 Harness 把状态、工具调用、反馈循环和约束机制串起来，它才真正变成一个 Agent。
 
 ## 相关实体
-- [Agent Harness 12 Components 7 Decisions](ch04/502-agent.md)
+- [Agent Harness 12 Components 7 Decisions](ch03/044-agent.md)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/245-skill.md)
 - [Code As Agent Harness Survey](ch09/046-code-as-agent-harness.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch04/502-agent.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch04/502-agent.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/044-agent.md)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langchain-anatomy-agent-harness.md)
 

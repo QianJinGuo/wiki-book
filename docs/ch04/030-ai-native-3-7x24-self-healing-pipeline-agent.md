@@ -269,7 +269,7 @@ Coding Agent 干活
 
 ## 与已有 wiki 实体的关系
 
-### vs [晓斌 Agent-Oriented Infra](ch04/502-agent.md)
+### vs [晓斌 Agent-Oriented Infra](ch03/044-agent.md)
 - 晓斌 = 哲学框架（People-Oriented → Agent-Oriented）+ 4 层设计
 - 高德 = **具体落地实现**（AI 全托管 / 监督 Agent / Self-Healing / 质量门禁 / Benchmark）
 - 共同点：都强调"infra 决定 agent 自主空间"+"给 infra 补能力"
@@ -284,12 +284,12 @@ Coding Agent 干活
 - 高德 = 7×24 永动生产线（**企业级 R&D 链路**）
 - 共同点：都是"人定规则 + AI 永动"哲学的具体落地
 
-### vs [Rein](ch04/502-agent.md)
+### vs [Rein](ch03/044-agent.md)
 - Rein = 4 模块 + 5 类型边界（**单 agent 内部**架构）
 - 高德 = **多 agent 协作**（Coding Agent + 监督 Agent + 质量门禁 Agent）
 - 共同点：都强调"边界"是工程化关键
 
-### vs [Agent Harness 架构](ch04/502-agent.md)
+### vs [Agent Harness 架构](ch03/044-agent.md)
 - 7 层 harness 模型 = 抽象框架
 - 高德 = "**工具定义、中间件和长期记忆三个模块贡献了最大的性能增益**" —— Harness Engineering 实证
 
@@ -345,13 +345,13 @@ Coding Agent 干活
 - **Benchmark 评测体系设计应包含持续扩展机制和版本对比能力**。静态 benchmark 容易被记忆逐渐失去区分能力。评测集应支持任务增量扩展、场景维度扩展、指标体系扩展，并建立版本对比机制（对不同规范版本、Skill 配置和 Agent 编排方式进行纵向比较）。目标不是建立排行榜，而是形成持续积累证据的机制，回答哪些规范真正降低了返工与漂移 
 
 ## 相关对照
-- [晓斌 Agent-Oriented Infra](ch04/502-agent.md) —— 哲学框架
+- [晓斌 Agent-Oriented Infra](ch03/044-agent.md) —— 哲学框架
 - [wow-harness v3](ch05/015-harness.md) —— 跨 session 治理
 - [Kimi Work](ch01/436-codex.md) —— 本地 Agent
-- [Rein](ch04/502-agent.md) —— 单 agent 架构
-- [Agent Harness 架构](ch04/502-agent.md) —— 7 层模型
+- [Rein](ch03/044-agent.md) —— 单 agent 架构
+- [Agent Harness 架构](ch03/044-agent.md) —— 7 层模型
 - [Microsoft Build 2026](ch04/150-ai.md) —— 全栈 AI
-- [Agent Harness 上下文管理](ch04/502-agent.md) —— 工作集视角
+- [Agent Harness 上下文管理](ch03/044-agent.md) —— 工作集视角
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
 

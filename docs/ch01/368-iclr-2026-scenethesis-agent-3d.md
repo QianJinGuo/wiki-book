@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](ch04/502-agent.md)
+- [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](ch03/044-agent.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/3CITzkDLeeDM0Olz9wudrg.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
@@ -154,7 +154,7 @@ Scenethesis 的真正贡献在于范式层面：
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md) — NVIDIA Isaac Lab 机器人 RL 扩展
 - [Minimax M3 Frontier Three Set Open Source](ch09/063-minimax-m3-frontier.md) — MiniMax M3 开源前沿三件套
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md) — NVIDIA Isaac Lab + SageMaker 人形机器人 RL
-- [Four Sub Agent Patterns 2026](ch04/502-agent.md) — 2026 四大子 Agent 模式
+- [Four Sub Agent Patterns 2026](ch03/044-agent.md) — 2026 四大子 Agent 模式
 
 ---
 

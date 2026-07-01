@@ -56,7 +56,7 @@ MiniCPM-V 4.6（1.3B）的核心价值主张是"在端侧可运行的GPT-4V级�
 - [Hermes Agent Closed Learning Loop](ch01/337-hermes-agent-closed-learning-loop.md)
 - [How Open Model Ecosystems Compound](ch01/677-how-open-model-ecosystems-compound.md)
 - [Factory Mission Multi Agent Architecture](ch01/888-factory-mission-multi-agent-architecture.md)
-- [Agentium Agent Framework](ch04/502-agent.md)
+- [Agentium Agent Framework](ch03/044-agent.md)
 - [Cheriot Ibex Memory Safety Hardware Enforcement](https://github.com/QianJinGuo/wiki/blob/main/entities/cheriot-ibex-memory-safety-hardware-enforcement.md)
 
 ---

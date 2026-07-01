@@ -93,16 +93,16 @@ Point Estimate 对 AI Security Institute 基准测试的分析也印证了这一
 ## 相关实体
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/380-claude.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch04/245-skill.md)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/073-claude-code.md)
-- [Claude Code Agent 工程设计](ch03/073-claude-code.md)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/074-claude-code.md)
+- [Claude Code Agent 工程设计](ch03/074-claude-code.md)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/150-ai.md)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch04/502-agent.md)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch03/044-agent.md)
 - [Agent Skill 设计模式](ch04/245-skill.md)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch04/502-agent.md)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch03/044-agent.md)
 
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/502-agent.md)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch04/502-agent.md)
-- [Anthropic Claude Managed Agents 平台正式发布](ch04/502-agent.md)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/044-agent.md)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch03/044-agent.md)
+- [Anthropic Claude Managed Agents 平台正式发布](ch03/044-agent.md)
 
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/245-skill.md)
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/245-skill.md)

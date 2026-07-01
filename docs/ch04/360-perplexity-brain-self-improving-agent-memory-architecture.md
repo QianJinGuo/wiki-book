@@ -15,7 +15,7 @@ Brain 的记忆模型沿两个正交维度展开：
 1. **记忆内容（What）**：传统 AI 记忆关注用户偏好、口味、工作风格；Brain 关注 **agent 做了什么** — 哪些操作成功、哪些失败、用户做了哪些修正
 2. **记忆目的（Why）**：用户记忆的目的是提升参与感；工作记忆的目的是 **让 agent 更擅长完成任务**
 
-这一区分直接回应了 [Agent Memory Architecture](ch04/502-agent.md) 中讨论的"记忆应服务于 agent 能力提升而非用户粘性"这一核心论点。
+这一区分直接回应了 [Agent Memory Architecture](ch03/044-agent.md) 中讨论的"记忆应服务于 agent 能力提升而非用户粘性"这一核心论点。
 
 ## Context Graph（上下文图）
 
@@ -24,7 +24,7 @@ Brain 构建一个动态的上下文图，追踪：
 - 历史会话中有效的策略和来源
 - 失败路径和修正记录
 
-该图随每次交互演化，形成一个复利型知识库。与 [Agent Memory Modular Framework](ch04/502-agent.md) 的模块化架构不同，Brain 采用的是 **单一图结构** 而非分层存储。
+该图随每次交互演化，形成一个复利型知识库。与 [Agent Memory Modular Framework](ch03/044-agent.md) 的模块化架构不同，Brain 采用的是 **单一图结构** 而非分层存储。
 
 ## 递归自改进循环
 

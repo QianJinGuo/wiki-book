@@ -18,8 +18,8 @@ AlphaEvolve 不是把 LLM 当成一个更聪明的程序员，而是把 LLM 放�
 - [Alphaevolve Impact](ch04/382-alphaevolve-impact-deepmind.md)
 - [Agentmemory Source Analysis Coding Agent Local Memory](ch09/034-agentmemory.md)
 - [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
-- [Servicenow Ui Is Dead Agent](ch04/502-agent.md)
-- [Agentexecutorgooglesdistributedagentruntime](ch04/502-agent.md)
+- [Servicenow Ui Is Dead Agent](ch03/044-agent.md)
+- [Agentexecutorgooglesdistributedagentruntime](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alphaevolve-deepmind-discovery-agent.md)
 

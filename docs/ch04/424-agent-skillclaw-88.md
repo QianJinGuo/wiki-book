@@ -15,7 +15,7 @@
 - [Skillclaw](ch04/245-skill.md)
 - [Skillclaw Alibaba Paperagent](ch04/245-skill.md)
 - [Wow Harness V3 Governance Protocol](ch05/015-harness.md)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/502-agent.md)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-hyman-nightly-evolution-alibaba.md)
 

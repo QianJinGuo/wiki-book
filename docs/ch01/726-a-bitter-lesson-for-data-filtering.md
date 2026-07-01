@@ -37,10 +37,10 @@ ai, agent, runtime
 - **关注后续同行评审**：作为 arXiv 预印本，论文结论需要经过同行评审验证。标记关注该论文的正式发表版本，以获取更完整的方法论评估。
 
 ## 相关实体
-- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](ch04/502-agent.md)
+- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](ch03/044-agent.md)
 - [Architecture Data Foundations For Ai Powered Search](ch01/667-architecture-data-foundations-for-ai-powered-search.md)
 - [Running An Ai Native Engineering Org](ch01/045-running-an-ai-native-engineering-org.md)
-- [Minimax Agent Team Mavis Owner Worker Verifier](ch04/502-agent.md)
+- [Minimax Agent Team Mavis Owner Worker Verifier](ch03/044-agent.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/a-bitter-lesson-for-data-filtering-e8807d.md)

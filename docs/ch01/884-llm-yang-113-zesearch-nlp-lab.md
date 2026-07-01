@@ -18,7 +18,7 @@
 
 这一数据标志 AI 已开始**自主参与下一代模型的设计与训练**，人类认知边界（高等数学/前沿代码/科研推理）正成为限制模型进化的天花板——传统依赖人类监督的训练范式（高质量人工标注昂贵、专家反馈难规模化）面临结构性瓶颈。
 
-> 与 [Agent 自我改进的六条路](ch04/502-agent.md)（J0hn 视角：L1-L6 机制分类，关注部署阶段权重冻结下的外部状态层学习）形成**互补关系**——六条路聚焦"如何不重新训练就变强"，本综述聚焦"如何在系统级闭环中持续变强"。
+> 与 [Agent 自我改进的六条路](ch03/044-agent.md)（J0hn 视角：L1-L6 机制分类，关注部署阶段权重冻结下的外部状态层学习）形成**互补关系**——六条路聚焦"如何不重新训练就变强"，本综述聚焦"如何在系统级闭环中持续变强"。
 
 ## 核心框架：四阶段闭环 + 一控制层
 
@@ -82,7 +82,7 @@
 |------|------|--------------|
 | **解码策略（Decoding Strategies）** | 采样、树搜索、logit 调整、效率优化 | MCTS、beam search、constrained decoding |
 | **推理式增强（Reasoning-based Improvement）** | 生成中加执行、反馈、反思、协作推理 | ReAct、Reflexion、self-consistency |
-| **智能体系统增强（Agentic System-based Improvement）** | 提示词、工具、记忆、工作流整合 | [LangSmith 链路追踪](ch04/502-agent.md)、harness 编排 |
+| **智能体系统增强（Agentic System-based Improvement）** | 提示词、工具、记忆、工作流整合 | [LangSmith 链路追踪](ch03/044-agent.md)、harness 编排 |
 | **测试时训练（Test-Time Training, TTT）** | 利用任务反馈临时更新参数再生成 | TTT 层、LoRA 在线适配 |
 
 > 与 [Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md) 在"运行时改进"维度高度共振——Hermes 是工业级实现（基于 Hermes Agent 的 SKILL.md 自我迭代），本综述是学术级分类。
@@ -123,14 +123,14 @@
 3. **建立统一基准与自主评估（Unified Benchmarks & Autonomous Evaluation）**——衡量"是否真的在持续进步"而非单点能力
 4. **在自动化与人类监督之间取得平衡（Balancing Automation and Human Oversight）**——自主进化 + 安全可控
 
-> 第四点直接呼应 [Agent 自我改进的六条路](ch04/502-agent.md) 的 L6 Meta-Harness（Big Harness > Big Model）哲学——"如何让模型安全地变强"是工程与治理的共同命题。
+> 第四点直接呼应 [Agent 自我改进的六条路](ch03/044-agent.md) 的 L6 Meta-Harness（Big Harness > Big Model）哲学——"如何让模型安全地变强"是工程与治理的共同命题。
 
 ## 与现有实体的差异化定位
 
 | 维度 | 本文（Yang 等综述） | 既有覆盖 |
 |------|-------------------|---------|
 | **canonical artifact** | arXiv 2603.25681 + GitHub Zesearch/self-improvement-llm（**113 页 500+ 论文**） | 多为单点应用/单一框架 |
-| **问题域** | LLM 自我提升的**系统级闭环** | 多为单点机制（[六条路](ch04/502-agent.md)）/ 单点实验（[nanoGPT](ch04/150-ai.md)）/ 单点产品（[LangSmith](ch04/502-agent.md)） |
+| **问题域** | LLM 自我提升的**系统级闭环** | 多为单点机制（[六条路](ch03/044-agent.md)）/ 单点实验（[nanoGPT](ch04/150-ai.md)）/ 单点产品（[LangSmith](ch03/044-agent.md)） |
 | **方法学** | 学术全景综述 + GRO 框架 + 6 风险 + 6 应用 + 4 方向 | 工业实战 / 单一案例 |
 | **目标读者** | 学术研究者 + 系统架构师 | 工程开发者 / 特定工具用户 |
 | **可复用抽象** | **极高**（4 阶段闭环 + 1 控制层可直接用作系统设计 checklist） | 中等（需自行抽象） |
@@ -153,7 +153,7 @@
 
 **实践价值**：对于 AI 系统架构师，这篇综述的最大价值是一个**可直接用作设计 checklist 的四阶段闭环框架**。在设计任何自我提升系统时，先问：这个系统的数据来自哪里（静态/环境交互/合成）？如何筛选？优化机制是 SFT/RL/混合？推理时是否有细化机制？是否有动态评估控制层？任何一个阶段的缺失都会导致闭环失效。
 
-[Agent 自我改进的六条路](ch04/502-agent.md) 的 L6 Meta-Harness 哲学（Big Harness > Big Model）与本综述第四方向（自动化与人类监督的平衡）直接呼应——两篇都指向同一个命题：**如何在让模型安全地持续变强的同时保持人类对进化方向的有效控制**。
+[Agent 自我改进的六条路](ch03/044-agent.md) 的 L6 Meta-Harness 哲学（Big Harness > Big Model）与本综述第四方向（自动化与人类监督的平衡）直接呼应——两篇都指向同一个命题：**如何在让模型安全地持续变强的同时保持人类对进化方向的有效控制**。
 
 ## 实践启示
 
@@ -169,15 +169,15 @@
 - **核心概念（必读）**：
   - [AI 自我改进与自举](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md)（4 类自举路径统一视角 + lossy 风险 + 工程实践）
 - **同主题不同 artifact**：
-  - [Agent 自我改进的六条路](ch04/502-agent.md)（J0hn 视角：L1-L6 机制分类）
+  - [Agent 自我改进的六条路](ch03/044-agent.md)（J0hn 视角：L1-L6 机制分类）
   - [AI 科研超越人类 — Prime Intellect 递归自改进实验](ch04/150-ai.md)（单点实验：nanoGPT 突破人类纪录）
   - [Lossy Self-Improvement](ch01/263-lossy-self-improvement.md)（自噬数据风险的理论分析）
   - [编排自演化 Agent — CrewAI + NVIDIA Nemotron](ch01/864-orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne.md)（多 Agent 仿真环境）
   - [MUSE AutoSkill — 字节 ByteBrain 自演化 Agent](ch04/245-skill.md)（arXiv 2605.27366 工业级实现）
-  - [LangSmith Engine — 基于链路追踪的自改进 Agent](ch04/502-agent.md)（工业级 trace-based 自改进）
+  - [LangSmith Engine — 基于链路追踪的自改进 Agent](ch03/044-agent.md)（工业级 trace-based 自改进）
   - [Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)（Winty 视角：基于 SKILL.md 自我迭代）
 - **同领域框架**：
-  - [Agent Harness Engineering 综述](ch04/502-agent.md)（harness 视角）
+  - [Agent Harness Engineering 综述](ch03/044-agent.md)（harness 视角）
   - [Harness 演化论文集](ch05/015-harness.md)（harness 论文集合）
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-self-improvement-system-survey-zesearch-nlp.md)

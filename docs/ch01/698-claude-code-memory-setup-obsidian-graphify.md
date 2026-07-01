@@ -66,12 +66,12 @@ Claude Code 启动 → /resume 加载 Obsidian 上下文
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-memory-setup-token-71x楠楠自瑜.md)
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/073-claude-code.md)
-- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](ch03/073-claude-code.md)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/074-claude-code.md)
+- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](ch03/074-claude-code.md)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/150-ai.md)
 - [obsidian claude code integration guide](ch09/103-obsidian-claude-code-integration-guide.md)
-- [Obsidian + Claude Code 集成指南](ch03/073-claude-code.md)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/073-claude-code.md)
+- [Obsidian + Claude Code 集成指南](ch03/074-claude-code.md)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/074-claude-code.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

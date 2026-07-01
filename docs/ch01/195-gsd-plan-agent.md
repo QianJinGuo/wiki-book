@@ -208,13 +208,13 @@ GSD 的实践数据表明，"discuss-phase 是最值得投入的一步"。这个
 这是最重要的一条认知：GSD 不是万能的。它的价值在"一个人脑装不下的规模"时才真正显现。如果你的项目是探索性的小 demo、POC、或者功能本身还没想清楚，GSD 的 frontmatter 体系会是负担而非助力。
 **判断标准**：当你发现自己在向 agent 解释项目背景时，需要反复提到"之前那个模块"、"那个状态机"、"那个接口"——这些跨上下文引用说明项目的依赖关系已经超出了人脑的直接管理范围，这时 GSD 的价值就显现了。如果项目还在 POC 阶段，依赖关系还不稳定，frontmatter 的结构化约束反而会限制探索的灵活性。
 
-- [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](ch04/502-agent.md)
+- [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](ch03/044-agent.md)
 - [Personal AI 工作台：Claude 18 动作框架](ch04/150-ai.md)
 
 ## Related
 - [Code as Agent Harness 综述](ch09/046-code-as-agent-harness.md)
 
-- [Claude Code 源码核心机制详解](ch03/073-claude-code.md)
+- [Claude Code 源码核心机制详解](ch03/074-claude-code.md)
 
 ---
 

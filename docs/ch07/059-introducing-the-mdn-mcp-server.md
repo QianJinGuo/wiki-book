@@ -50,9 +50,9 @@
 ## 相关主题
 
 - [Anthropic MCP 协议回顾](ch07/016-anthropic-mcp.md) — MCP 协议本身的设计
-- [AWS Bedrock AgentCore MCP](ch04/502-agent.md) — 商业 MCP server
+- [AWS Bedrock AgentCore MCP](ch03/044-agent.md) — 商业 MCP server
 - [Claude Code MCP server](ch07/025-claude-code-mcp-server.md) — Claude Code 工具系统
-- [Hermes Agent 工具系统架构](ch04/502-agent.md) — agent 工具调用一般化框架
+- [Hermes Agent 工具系统架构](ch03/044-agent.md) — agent 工具调用一般化框架
 
 ## References
 

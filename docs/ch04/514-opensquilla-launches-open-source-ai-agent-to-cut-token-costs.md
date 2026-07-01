@@ -40,10 +40,10 @@ OpenSquilla 的核心洞察是：**大多数 agent 部署都在浪费 token**，
 - XML-escaping 是处理动态内容的正确安全实践，任何从外部引入的 skill/tool metadata 都应先 escape
 ## 相关实体
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/508-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
-- [Cline Open Source Agent Runtime Sdk](ch04/502-agent.md)
-- [Pilotdeck Agent Os Openbmb Tsinghua](ch04/502-agent.md)
+- [Cline Open Source Agent Runtime Sdk](ch03/044-agent.md)
+- [Pilotdeck Agent Os Openbmb Tsinghua](ch03/044-agent.md)
 - [Cline Releases Open Source Agent Runtime Sdk](ch04/401-cline-releases-open-source-agent-runtime-sdk.md)
-- [Clinereleasesopen Sourceagentruntimesdk](ch04/502-agent.md)
+- [Clinereleasesopen Sourceagentruntimesdk](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/opensquilla-launches-open-source-ai-agent-to-cut-token-costs-1.md)
 

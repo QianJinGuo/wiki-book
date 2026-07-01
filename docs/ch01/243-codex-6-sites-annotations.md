@@ -85,7 +85,7 @@
 - [Codex Goal 实现拆解](ch09/043-codex-goal.md)
 - [Codex Computer Use](ch09/103-codex-can-now-control-other-desktop-devices-via-computer-use.md)
 - [Codex 自主赚钱](ch01/437-codex-autonomous-earning-money.md)
-- [Claude Code vs Codex 上下文架构](ch03/073-claude-code.md)
+- [Claude Code vs Codex 上下文架构](ch03/074-claude-code.md)
 - [Meta Skill](ch07/023-meta-skill.md)（Skill 2.0 抽象）
 - [扣子 3.0 协作系统](ch01/835-3-0.md)（同类协作产品）
 - [Embabel](ch07/019-embabel.md)（可解释+类型系统集成）

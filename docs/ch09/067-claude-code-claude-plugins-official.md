@@ -117,10 +117,10 @@ Anthropic 采用「官方维护 30+ 内部插件 + 社区贡献 10+ 外部插件
 - GitHub：https://github.com/anthropics/claude-plugins-official
 
 ## 相关实体
-- [Claude Code Agent Teams Task Decomposition Ruofei](ch03/073-claude-code.md)
+- [Claude Code Agent Teams Task Decomposition Ruofei](ch03/074-claude-code.md)
 - [Claude Code Self Repair Hooks Memory Config](ch04/150-ai.md)
 - [Claude Code Agent View Huashu](ch03/065-claude-code-agent-view-huashu.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/073-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/074-claude-code.md)
 - [Claude Code 7 Layer Memory Architecture](ch01/869-claude-code-7-layer-memory-architecture.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-official-plugins-anthropic.md)

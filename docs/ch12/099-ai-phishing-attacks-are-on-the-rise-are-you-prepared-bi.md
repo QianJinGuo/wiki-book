@@ -16,7 +16,7 @@
 - [Ai Agents Inside Perimeter Hackernews](ch04/150-ai.md)
 - [Llm Raiders Private Ai Server](ch04/150-ai.md)
 - [Bluekit](ch12/081-meet-bluekit-the-ai-powered-all-in-one-phishing-kit.md)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch04/502-agent.md)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 

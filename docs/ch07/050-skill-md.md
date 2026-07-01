@@ -13,7 +13,7 @@
 
 ## 相关实体
 - [Skill Engineering Ai As Algorithm](ch04/245-skill.md)
-- [Hermes Agent Getting Started Guide 2026](ch04/502-agent.md)
+- [Hermes Agent Getting Started Guide 2026](ch03/044-agent.md)
 - [Llm Raiders Private Ai Server](ch04/150-ai.md)
 - [Pi Mono Github](ch01/621-pi-mono-github.md)
 - [我用 Skillmd 做了一个简历生成器](ch04/245-skill.md)

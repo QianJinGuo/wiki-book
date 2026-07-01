@@ -187,7 +187,7 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 - [DeepSeek 成本迁移系统层 KV Cache Harness](ch01/777-deepseek.md)
 - [DeepSeek Code Harness](ch09/070-deepseek-code-harness.md)
 - [DeepSeek Code Harness 竞争者 Tina](ch09/070-deepseek-code-harness.md)
-- [17 种 agent 架构演进](ch04/502-agent.md)
+- [17 种 agent 架构演进](ch03/044-agent.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

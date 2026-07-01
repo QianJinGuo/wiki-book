@@ -55,8 +55,8 @@ AgentCore 支持任何开源框架（CrewAI、LangGraph、LlamaIndex、Strands A
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](ch04/150-ai.md)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](ch04/150-ai.md)
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](ch11/118-aws-bedrock-agentcore-quality-optimization-flywheel.md)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/502-agent.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](ch04/502-agent.md)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/044-agent.md)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](ch03/044-agent.md)
 
 ---
 

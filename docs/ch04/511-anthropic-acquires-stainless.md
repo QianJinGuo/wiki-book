@@ -28,7 +28,7 @@ Stainless成立于2022年，专注于将API规范自动转换为多语言SDK（T
 - [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/571-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Improve Bot Accuracy With Amazon Lex Assisted Nlu](ch01/529-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [Opensquilla](ch01/512-opensquilla.md)
-- [Dictation Agents Human Workspace](ch04/502-agent.md)
+- [Dictation Agents Human Workspace](ch03/044-agent.md)
 - [Google Deepmind Accelerator Asia Pacific](https://github.com/QianJinGuo/wiki/blob/main/entities/google-deepmind-accelerator-asia-pacific.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-acquires-stainless.md)

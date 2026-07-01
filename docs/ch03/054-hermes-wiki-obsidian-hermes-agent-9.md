@@ -233,8 +233,8 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
   - [Claude Code Memory Setup (Obsidian + Graphify)](ch01/694-claude-code-memory-setup-obsidian-graphify.md)
 - **同 Hermes Agent 生态**：
   - [Hermes Skills + LLM Wiki 越用越懂你](ch04/245-skill.md)（三层互相喂养）
-  - [Hermes Agent 自进化机制源码解析](ch04/502-agent.md)
-  - [Hermes Agent Memory System vs OpenClaw](ch04/502-agent.md)
+  - [Hermes Agent 自进化机制源码解析](ch03/044-agent.md)
+  - [Hermes Agent Memory System vs OpenClaw](ch03/044-agent.md)
 - **同上下文工程 / 记忆架构**：
   - [AI Coding Agent 记忆系统](ch04/150-ai.md)
   - [上下文工程三种记忆范式对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)

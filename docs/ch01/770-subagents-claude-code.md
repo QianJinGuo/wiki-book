@@ -18,11 +18,11 @@ Daniel San 给出的量化参考很有价值：半小时的探索性会话可能
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/subagents-详解claude-code-如何避免上下文污染-v2.md)
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/073-claude-code.md)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/074-claude-code.md)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/150-ai.md)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/073-claude-code.md)
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [Claude Code Subagent 上下文卫生](ch03/073-claude-code.md)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/074-claude-code.md)
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
+- [Claude Code Subagent 上下文卫生](ch03/074-claude-code.md)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch07/006-claude-code-skills-mcp-rules-source-analysis.md)
 - [claude-code-kairos-paradigm-2026](ch01/293-claude-code-kairos-paradigm-2026.md)
 

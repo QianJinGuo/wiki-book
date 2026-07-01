@@ -12,7 +12,7 @@
 - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch04/150-ai.md)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/150-ai.md)
 - [Shub Reaper Macos Stealer Attack Chain](ch04/150-ai.md)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch04/502-agent.md)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch03/044-agent.md)
 - [Npm Supply Chain Compromise Postmortem](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-open-sources-rampart-clarity.md)

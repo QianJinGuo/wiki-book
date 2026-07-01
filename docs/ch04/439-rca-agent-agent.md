@@ -93,7 +93,7 @@
 - [Harness Engineering](ch05/061-harness-engineering.md)
 - [Claw-SWE-Bench](ch12/003-token.md) — harness 独立评测基准
 - [Skill 版本对比五大原则](ch04/245-skill.md) — 评估方法论
-- [OpenClaw Agent Loop 设计模式](ch04/502-agent.md)
+- [OpenClaw Agent Loop 设计模式](ch03/044-agent.md)
 
 ---
 

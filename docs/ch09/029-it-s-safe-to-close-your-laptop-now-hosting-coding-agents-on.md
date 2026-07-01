@@ -86,10 +86,10 @@ Let’s see how AgentCore gets you both.
 ## 相关实体
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch04/150-ai.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/502-agent.md)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch04/502-agent.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/044-agent.md)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch03/044-agent.md)
 - [Amazon Quick Bedrock Agentcore Finops Chat](ch11/197-amazon-quick.md)
-- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](ch04/502-agent.md)
+- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](ch03/044-agent.md)
 - [development environments for your cloud agents](ch09/093-development-environments-for-your-cloud-agents.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

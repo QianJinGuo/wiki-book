@@ -13,7 +13,7 @@
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](ch04/150-ai.md)
 - [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](ch04/150-ai.md)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](ch04/150-ai.md)
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch04/502-agent.md)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch03/044-agent.md)
 - [Automate Schema Generation for Intelligent Document Processing](ch11/160-automate-schema-generation-for-intelligent-document-processi.md)
 - [Navigating EU AI Act Requirements for LLM Fine-Tuning](ch04/150-ai.md)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](ch04/150-ai.md)

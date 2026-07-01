@@ -16,10 +16,10 @@
 - In this blog, we'll share more about Agent Executor and how you can get started.
 
 ## 相关实体
-- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](ch04/502-agent.md)
+- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](ch03/044-agent.md)
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/245-skill.md)
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/245-skill.md)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](ch04/502-agent.md)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](ch03/044-agent.md)
 - [Anthropic Google Agent Skills Design Patterns](ch04/245-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentexecutorgooglesdistributedagentruntime.md)

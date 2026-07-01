@@ -266,7 +266,7 @@ OWL适合以下场景：
 - **引入多模态能力**：结合视觉理解处理图文混合任务
 - **优化Critic机制**：使用更精细的评估标准提升输出质量
 ## 相关实体
-- [Agent Framework Owl Principles](ch04/502-agent.md)
+- [Agent Framework Owl Principles](ch03/044-agent.md)
 - [Karpathy Ai Agent 7 Bits Value Decline](ch04/150-ai.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
 - [Gepa Optimize Anything](ch01/273-gepa-optimize-anything.md)
