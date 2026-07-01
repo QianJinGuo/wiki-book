@@ -1,7 +1,7 @@
 {
   "name": "wiki-book",
   "version": "1.0.0",
-  "description": "> 全球第一部基于 2784 篇一手 AI 材料系统编撰的开源读物。 > 从零基础到 AI 专家到 AI 科学家，博采众长，一路到底。",
+  "description": "> 全球第一部基于 2496 篇一手 AI 材料系统编撰的开源读物。 > 从零基础到 AI 专家到 AI 科学家，博采众长，一路到底。",
   "main": "worker.js",
   "directories": {
     "doc": "docs"

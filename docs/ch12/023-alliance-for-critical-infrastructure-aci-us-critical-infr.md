@@ -65,7 +65,7 @@ ACI 接下来 18 个月的工作包括：建立工作组、定义试点项目、
 ## 相关实体
 
 - [Ai Agents Security Survey Attack Defense](ch04/150-ai.md)
-- [Anthropic Llm Attck Navigator Cyber Operations](ch01/707-anthropic.md)
+- [Anthropic Llm Attck Navigator Cyber Operations](ch01/890-llm.md)
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/150-ai.md)
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](ch04/150-ai.md)
 - [Aws Software Supply Chain Security Well Architected Best Practices](ch04/150-ai.md)

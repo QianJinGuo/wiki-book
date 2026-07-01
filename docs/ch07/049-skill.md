@@ -1,111 +1,113 @@
-# Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁
+# 重新定义Skill开发：保姆级教程&一站式开发助手发布
 
-## Ch07.049 Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁
+## Ch07.049 重新定义Skill开发：保姆级教程&一站式开发助手发布
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/skill-version-comparison-five-principles-winty.md`
+> 📊 Level ⭐⭐ | 7.3KB | `entities/skill-development-guide-aliyun-2026.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-version-comparison-five-principles-winty.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-development-guide-aliyun-2026.md)
 
-Skill 版本升级不能只看总分变化，需要多维度对比 + 分场景拆解 + 失败 case 人眼复核 + 统计显著性检验 + Token/时延纳入门禁。本文提出 5 条原则和完整的版本对比报告 YAML 模板。
+## 核心价值
+阿里内部工程师分享的 **Skill（技能）开发完整教程**，从概念定义到一站式开发助手，覆盖 Skill 整个生命周期。
 
-## 一句话
+## 关键知识点
+### Skill 定义与加载机制
+- **定义**：结构化指令文档，告诉 Agent「在什么场景下、按什么步骤、用什么工具、完成什么任务」
+- **三级加载**：渐进式加载策略，按需提供信息，节省上下文空间
 
-**版本对比不是"两个数字比大小"：8 维度对比 + 5 层场景拆解 + regression/improvement/drift 三集 diff + 2σ 显著性 + Token/时延门禁 + CI 自动化。**
+### Skill 平台生态
+| 平台 | 类型 | 特点 |
+|------|------|------|
+| skills.sh | 外部 | 开源工作流自动化 |
+| ClawHub | 外部 | 社区驱动，版本管理 |
+| SkillsMP | 外部 | 283K+ 最大数据库 |
+| Aone Skills | 内部 | 阿里内部，与 Aone Copilot 深度集成 |
 
-## 六种"假改进"陷阱
+### Agent 平台 Skill 使用
+- **Aone Copilot**：放入 ~/.aone_copilot/skills/ 或市场一键安装
+- **AccioWork**：内置 Skill 直接安装，自定义需上传安装包
+- **QCoder**：放入项目级 .skills/ 目录
+- **悟空**：平台 UI 上传或系统提示词加载
 
-1. **均值改善但分布退化** — 总分涨了但关键场景回退
-2. **整体提升但 P0 翻车** — 高优先级 case 回退即事故
-3. **主要场景持平边缘场景下滑** — 低频但高风险场景被忽视
-4. **看似变好其实是测试集偏移** — 新版刚好更适配测试集分布
-5. **Token 暴涨换正确率** — 成本飙升但收益微小
-6. **稳定性下降换正确率** — 正确率波动变大，确定性降低
+### SKILL.md 规范
+- **必需字段**：name（最长64字符）、description（最长1024字符，是触发关键）
+- **可选字段**：license, compatibility, allowed-tools, metadata
+- **正文结构**：快速开始 → 参数列表 → 工作流 → 错误处理 → 附加资源引用
 
-## 五条原则
+### 三大痛点与解决方案
+**痛点一：跨平台一致性**
 
-### 原则 1：永远多维度对比，不要只看一个数字
+- 三纯净原则：正文纯文本、工具用能力描述、路径不写死
+- 用 HTML 注释隔离平台增量语法
+- 确定性逻辑下沉到 scripts/
+**痛点二：版本管理和更新分发**
 
-8 个必看维度：
+- 强制 PR + 1人 CR
+- CI 跑 schema 校验、prompt-lint
+- 平台支持时优先发 beta 通道
+- 弃用时在 description 加 [DEPRECATED]
+**痛点三：开发调试效率低**
 
-| 维度 | 关心什么 | 例子 |
-|------|----------|------|
-| 总体正确率 | 平均效果 | overall_score 0.78 → 0.82 |
-| 分层指标 | L1/L2/L3/L4 各层 | L3 +5pt, L4 -2pt |
-| 分类型场景 | 不同 case 类型 | P0 +0pt, P1 +6pt, P2 +4pt |
-| 一致性 | 多次跑的稳定性 | consistency 0.86 → 0.92 |
-| 鲁棒性 | 扰动场景 | tool_junk 72% → 75% |
-| 资源消耗 | Token / 步骤数 | tokens +18%, steps +0.6 |
-| 时延 | 平均响应时间 | latency +1.4s |
-| 失败模式 | 失败的种类 | 新版本是否引入新失败模式 |
+- Hot Reload（Claude Code 2.1+）
+- Symlink 软链方案
+- 双窗口对照：dev 版 vs prod 版并排对比
 
-### 原则 2：分场景看，不要只看均值
+### Skill 自我进化机制
+- Binary Eval 自动打分（pass/fail）
+- 失败时 Reflection Agent 提炼修复 patch
+- 每次改完跑回归用例，通过率不达标自动阻断
 
-必须按 5 种维度拆分：
+## 深度分析
+### 跨平台一致性的工程挑战
+三纯净原则（正文纯文本、工具用能力描述、路径不写死）是该文最核心的方法论创新。本质上，这是将 Skill 从"平台绑定指令"转化为"语义驱动指令"的范式转变。HTML 注释隔离增量语法的设计尤为巧妙——允许多平台共存而不引入冗余维护成本，同时也为未来新平台预留扩展空间。
 
-- 按业务严重性：P0 / P1 / P2
-- 按使用频率：高频 / 中频 / 低频
-- 按用户角色：开发 / 运维 / 业务
-- 按风险等级：涉及生产 / 涉及测试 / 只读
-- 按已知难度：经典 case / 边缘 case / 难 case
+### 版本管理的流水线设计
+强制 PR + 1人 CR + CI schema 校验构成三重门禁，将版本管理从人力驱动转为流程驱动。beta 通道设计体现了灰度发布的工程思维，description 加 [DEPRECATED] 则是一种低技术成本的优雅弃用协议。这些设计共同构成一个小型但完整的软件交付流水线。
 
-**P0 回退 = 事故**，不管总体分数涨多少。
+### 自我进化机制的战略价值
+Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进从"隐式经验积累"变成"显式可度量的迭代优化"。每次改完跑回归用例、通过率不达标自动阻断——这引入了一个自动化的质量门禁，填补了传统 skill 开发中缺失的测试环节。这一机制与学术界关于 LLM 自动评估（LLM-Eval）的研究方向高度吻合，表明阿里内部已在将学术前沿转化为工程实践。
 
-### 原则 3：失败 case 必须人眼复核
+## 实践启示
+### 开发阶段
+- **起点**：严格遵循 SKILL.md 规范，特别是 name（≤64字符）和 description（≤1024字符）字段——description 是触发的关键，措辞要精准
+- **结构化**：采用标准五段正文（快速开始 → 参数列表 → 工作流 → 错误处理 → 附加资源引用），便于用户理解和平台解析
+- **调试效率**：善用 Hot Reload 和 Symlink 软链方案，特别是 Claude Code 2.1+ 环境，可显著缩短迭代周期
 
-三集 diff：
+### 发布阶段
+- **跨平台**：始终以三纯净原则为基准，用 HTML 注释隔离平台增量语法，避免"写死平台"的常见陷阱
+- **版本控制**：提交前必走 CI 流程（schema 校验、prompt-lint），发布前优先走 beta 通道验证
+- **协作规范**：强制 PR + 1人 CR，代码审查不只是质量保障，也是知识传递机制
 
-- **Regression set** — v1 ✅ → v2 ❌（最关键，P0 regression 原则不上线）
-- **Improvement set** — v1 ❌ → v2 ✅
-- **Drift set** — 都失败但方式不同（v1 死循环 vs v2 错误结论）
+### 运维阶段
+- **质量门禁**：建立 Binary Eval 回归机制，每次修改后必须通过自动化评估，不达标则阻断发布
+- **弃用协议**：需要弃用时，在 description 首行加 [DEPRECATED]，不要直接删除——保障用户侧的平稳过渡
+- **持续进化**：Reflection Agent 思路可推广至其他 AI 工作流，将人工修复经验结构化为可复用的 patch 资产
 
-### 原则 4：用统计方法，不要凭感觉
-
-- 每个版本至少跑 3 次评估
-- 显著性判断：`diff > 2 * pooled_std`（最简版）
-- 更严肃用配对 t 检验
-
-如果 v2 比 v1 高 2pp 但波动 ±3pp，这 2pp 不是真改进。
-
-### 原则 5：Token 与时延必须纳入对比
-
-**Token/时延门禁标准：**
-
-- 总分提升 ≤ 5pt → Token 增长 ≤ 10%，时延增长 ≤ 15%
-- 总分提升 > 5pt → Token 增长 ≤ 25%，时延增长 ≤ 30%
-
-反面案例：正确率 +2pp 但 Token +75%、时延 +75%，生产实际收益为负。
-
-## 完整版本对比报告模板
-
-YAML 结构化模板（关键字段）：
-
-- `overall`：v1/v2 mean + diff + significant (bool)
-- `by_layer`：L1-L4 各层变化
-- `by_severity`：P0/P1/P2 变化
-- `stability`：consistency_score + robustness_avg
-- `cost`：avg_tokens + avg_latency 变化率
-- `regression_cases`：具体 case 编号 + 描述
-- `improvement_cases`：具体 case 编号 + 描述
-- `verdict`：结论 + blockers + recommended_actions
-
-## 真实案例：db-query Skill v2.0.0 被 P0 回退拦下
-
-总分 +6pt 但 DELETE -30pt、DDL -35pt → 回退原因：新 prompt 过于激进 → 保留 v1 的"先确认再执行"逻辑后全部场景改进才上线。
-
-## CI 自动化建议
-
-- PR 提交后自动触发评估
-- 自动生成对比报告贴回 PR 评论
-- 指标回退 > 阈值自动加 regression 标签
-- regression 标签 PR 需特殊审批才能 merge
+## 相关页面
+- [Skill 写作基础指南](ch04/245-skill.md) — 入门级别的 Skill 写作教程
+- [Skill 写作进阶](ch04/245-skill.md) — 高级技巧
+- [Skill 评估方法](ch04/245-skill.md) — 如何评估 Skill 质量
 
 ## 相关实体
+- [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [SkillX — 层次化技能知识库](ch07/045-skillx.md)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/245-skill.md)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/245-skill.md)
+- [SkillClaw](ch04/245-skill.md)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/245-skill.md)
+- [四种 Sub Agent 模式](ch03/044-agent.md)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/245-skill.md)
 
-- [Skill 版本管理五大原则](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-version-management-semantic-versioning-practices-winty.md) — 同作者同系列，版本管理侧
-- [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-evaluation.md)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
-- [Claw-SWE-Bench](https://github.com/QianJinGuo/wiki/blob/main/entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md) — harness 独立评测基准
-- [Agent Eval WalleZhang](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md) — YAML 驱动评估框架
+- [Qoder Skills 完全指南](ch04/245-skill.md)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
+- [Garry Tan](ch01/510-garry-tan.md)
+- [Agent Workflows](ch04/310-agent-workflows.md)
+- [Hermes Agent](ch03/087-hermes-agent.md)
+- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
+- [你写的 Skill，及格了吗？](ch04/245-skill.md)
+- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+- [AI Agent 工程师能力地图](ch04/150-ai.md)
+- [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](ch03/044-agent.md)
 
 ---
 

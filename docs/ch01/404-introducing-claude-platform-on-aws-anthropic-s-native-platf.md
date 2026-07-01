@@ -48,7 +48,7 @@ Claude Platform on AWS is available in US East (N. Virginia), US East (Ohio), US
 - [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
 - [Anthropic Claude Managed Agents Platform Launch](ch04/340-anthropic-claude-managed-agents-platform-launch.md)
 - [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/707-anthropic.md)
-- [Anthropic Prompt Caching Claude Code Agihunt](ch03/073-claude-code.md)
+- [Anthropic Prompt Caching Claude Code Agihunt](ch03/074-claude-code.md)
 - [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](ch01/380-claude.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-claude-platform-on-aws-anthropics-native-platfor.md)

@@ -15,7 +15,7 @@
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](ch04/150-ai.md)
 - [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/150-ai.md)
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch04/150-ai.md)
-- [Why Im Leaving Github For Forgejo](ch01/688-github.md)
+- [Why Im Leaving Github For Forgejo](ch01/690-github.md)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cybersecurityreach-revoke-token-wipe-computer.md)

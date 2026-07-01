@@ -68,7 +68,7 @@ Sierra 以 $150M ARR 估值 $15.8B，105x 收入倍数。Brett Taylor（OpenAI �
 - [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)
 - [Toto 2.0: Time series forecasting enters the scaling era](ch01/025-toto-2-0-time-series-forecasting-enters-the-scaling-era.md)
 - [Public Stealth Leaves Opportunity on the Table](https://github.com/QianJinGuo/wiki/blob/main/entities/thisisgoingtobebig-public-stealth.md)
-- [Https Posthog Com Blog Karpathy Autoresearch Query Engine Bug](ch04/241-karpathy-autoresearch.md)
+- [Https Posthog Com Blog Karpathy Autoresearch Query Engine Bug](ch04/246-karpathy-autoresearch.md)
 
 ---
 

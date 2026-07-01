@@ -2,20 +2,31 @@
 
 ## 背景
 
-wiki-book 现有 9,547 篇 Markdown 文档（96MB），搜索索引 47,522 条（16.9MB），使用 lunr.js 客户端关键词搜索。AI Chat 功能已上线，但 LLM 回答时**没有 wiki-book 内容作为上下文**，只能依赖模型自身知识。
+wiki-book 现有 9,547 篇 Markdown 文档（96MB），搜索索引 37,204 条（13MB），使用 lunr.js 客户端关键词搜索。AI Chat 功能已上线，但 LLM 回答时**没有 wiki-book 内容作为上下文**，只能依赖模型自身知识。
 
 ## 目标
 
 让 AI Chat 能基于 wiki-book 的实际内容回答用户问题，并附上来源链接。
 
+## 当前状态（2026-07-01）
+
+**线上稳定运行 Phase 1+2，Phase 3 待 Workers Paid 升级后启用。**
+
+| Phase | 状态 | 稳定性 |
+|-------|------|--------|
+| Phase 1: 关键词搜索 | ✅ 线上运行 | 10/10 200 |
+| Phase 2: Reranker 重排序 | ✅ 线上运行 | 10/10 200 |
+| Phase 3: 语义搜索 | ❌ 间歇 503 | 受 Free 计划限制 |
+
 ## 可用基础设施
 
 | 资源 | 用途 |
 |------|------|
-| R2 bucket `ai-engineering-search` | 存储 search_index.json（16.9MB） |
-| Pages Function | 服务端逻辑，可调 Workers AI + 讯飞 API |
+| R2 bucket `ai-engineering-search` | 存储 search_index.json |
+| Pages Function | 服务端逻辑，可调 Workers AI |
 | `@cf/baai/bge-reranker-base` | 重排序模型（query + doc → 相关性分数） |
-| 讯飞 `xop3qwen8bembedding` | 8B 中文 Embedding 模型（1024维，通过 HTTP API 调用） |
+| `@cf/baai/bge-m3` | 多语言 Embedding 模型（1024维），Phase 3 使用 |
+| Vectorize `wiki-book-embeddings` | 托管向量索引（已创建，37,204 条向量已写入） |
 
 ## 架构总览
 
@@ -37,8 +48,8 @@ AI Chat (ai-chat.js)
     │      │     输入: 问题 + 30 篇候选文档
     │      │     输出: 每篇相关性分数
     │      │
-    │      ├─ Phase 3: 语义 embedding 补充（讯飞 8B）
-    │      │     问题 embedding → 余弦相似度 → 与关键词结果融合
+    │      ├─ [Phase 3: 语义搜索 — 待 Workers Paid 升级]
+    │      │     Workers AI bge-m3 → Vectorize 查询
     │      │
     │      └─ 返回 top 5 片段 + 章节链接
     │
@@ -51,7 +62,7 @@ AI Chat (ai-chat.js)
 
 ### 算法
 ```
-输入: 用户问题 Q, 搜索索引 docs[47,522]
+输入: 用户问题 Q, 搜索索引 docs[37,204]
 输出: top 30 候选文档
 
 1. 分词: Q → words[]（去停用词，>1 字符）
@@ -89,39 +100,52 @@ AI Chat (ai-chat.js)
 - 每次查询 = 1 次 reranker 调用
 - 个人网站用量远低于免费额度 → **零成本**
 
-### 为什么不用 Workers AI embedding 做语义搜索
-- Workers AI 的 embedding 模型太小（0.6B），中文效果不够好
-- 改用讯飞 `xop3qwen8bembedding`（8B），MTEB 多语言 70.58，排行榜第 1
-- 通过 HTTP API 调用，不依赖 Workers AI 的 embedding 模型
+## Phase 3：语义搜索（待 Workers Paid 升级）
 
-## Phase 3：语义 Embedding 补充（可选）
+### 当前限制
 
-### 何时需要
-- Phase 1+2 上线后发现关键词搜索遗漏了明显相关的内容
-- 用户问题经常是概念性、口语化表达
-- 需要跨语言匹配
+Cloudflare Pages Functions **Free 计划**限制：
+- **128MB 内存** — 37K 篇 × 1024 维向量全量加载约 152MB，超限
+- **10ms CPU 时间** — 流式加载 4 个 chunk + 余弦相似度扫描超限
+- **实例回收** — 全局缓存不持久，冷启动必超时
 
-### 实现方案
+尝试过的方案及失败原因：
+
+| 方案 | 失败原因 |
+|------|---------|
+| R2 二进制 chunk + 全量加载 | 内存超限（152MB > 128MB） |
+| R2 二进制 chunk + 流式搜索 | CPU 超限（4 次 R2 读取 + 4 次余弦扫描 > 10ms） |
+| 全量加载 + 全局缓存 | 冷启动超时，实例回收后间歇 503 |
+| Vectorize 托管搜索 | loadIndex + embedding + query 超 CPU 限制 |
+
+### 解决方案
+
+升级 Workers Paid 计划（$5/月）：
+- CPU 时间从 **10ms → 30s**
+- 内存限制大幅放宽
+- 超出 10K neurons/天的 embedding 调用自动扣费
+
+### 已就绪的基础设施
+
+升级 Workers Paid 后，只需部署 `functions/rag-query.js` 即可启用 Phase 3：
+
 ```
-构建时:
-  for each doc in search_index.docs:
-    embedding = 讯飞 xop3qwen8bembedding(doc.title + doc.text)
-    存储: { doc_id, embedding: float[1024], metadata }
-
 查询时:
-  query_embedding = 讯飞 xop3qwen8bembedding(question)
-  for each stored embedding:
-    similarity = cosine(query_embedding, doc_embedding)
-  top N 语义结果 → 与关键词结果融合 → reranker
+  1. env.AI.run("@cf/baai/bge-m3", query) → query embedding
+  2. env.VECTORIZE.query(embedding) → top 15 语义结果
+  3. 与关键词结果融合 → reranker → 返回
 ```
 
-### 存储方案
-- 向量存入 R2（二进制 chunk 格式，~192MB）
-- 5 个 chunk，每个 ~38MB
+Vectorize 索引 `wiki-book-embeddings` 已创建并写入 37,204 条向量（1024 维，cosine 距离），直接可用。
 
-### 额外成本
-- 构建时：47K 次 embedding 调用（一次性，免费额度内）
-- 每次查询：多 1 次 embedding 调用（零成本）
+### 构建脚本
+
+```bash
+cd ~/wiki-book
+python3 scripts/build-vectorize.py
+```
+
+从 search_index.json 读取文档，调用 Workers AI bge-m3 生成向量，批量插入 Vectorize 索引。
 
 ## 安全
 
@@ -157,7 +181,34 @@ AI Chat (ai-chat.js)
 |------|------|
 | `functions/rag-query.js` | 随 Cloudflare Pages 部署 |
 | `wrangler.toml` 加 AI binding | 已配置 |
-| `XUNFEI_API_KEY` | `wrangler pages secret put` 已设置 |
+| `wrangler.toml` 加 Vectorize binding | 已配置 |
 | `ai-chat.js` 修改 | 随 mkdocs build 部署 |
-| search_index.json | 已有，存在 R2 |
-| embeddings 二进制文件 | 构建后上传到 R2 |
+| search_index.json | 存在 R2 |
+| Vectorize `wiki-book-embeddings` | 已创建，37,204 条向量已写入 |
+
+### 部署 Pages Function
+```bash
+cd ~/wiki-book
+rm -f site/search/search_index.json  # 超 25MB，从 R2 读取
+npx wrangler pages deploy site --project-name=ai-engineering --branch=main
+```
+
+### 验证
+```bash
+curl "https://jinguo.tech/rag-query?q=Agent记忆"
+# 返回 source: reranker（Phase 1+2）
+# 升级 Workers Paid 后返回 source: hybrid（Phase 1+2+3）
+```
+
+## 页面 404 修复
+
+Cloudflare Pages 使用扁平文件名（`ch04-001-agent.html`），但章节索引页链接使用子目录格式（`ch04/001-agent.html`）。
+
+修复方案：
+1. `site/_redirects` — Cloudflare Pages 重写规则，`ch04/* → ch04-:splat 200`
+2. `fix_filenames.py` — 按序号前缀创建短 slug 文件副本
+
+三套部署环境独立：
+- **Docker**（localhost:8002）— nginx `try_files` 兜底
+- **GitHub Pages**（wiki.jinguo.tech）— 自有构建流程
+- **Cloudflare Pages**（jinguo.tech）— `_redirects` + 短 slug 副本

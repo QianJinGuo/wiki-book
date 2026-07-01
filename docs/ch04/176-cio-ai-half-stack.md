@@ -5,11 +5,11 @@
 > 📊 Level ⭐⭐ | 11.9KB | `entities/aliyun-cio-ai-rd-efficiency.md`
 
 ## 相关实体
-- [Yumanju Ai Full Flow Efficiency](ch04/310-ai.md)
+- [Yumanju Ai Full Flow Efficiency](ch04/150-ai.md)
 - [Skill Development Guide Aliyun 2026](ch04/245-skill.md)
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch04/503-agent.md)
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch03/044-agent.md)
 - [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md)
-- [Aliyun Agentrun](ch04/503-agent.md)
+- [Aliyun Agentrun](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-cio-ai-rd-efficiency.md)
 

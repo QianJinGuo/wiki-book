@@ -24,7 +24,7 @@
 
 - [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)
 
-- [Why I'm leaving GitHub for Forgejo](ch01/688-github.md)
+- [Why I'm leaving GitHub for Forgejo](ch01/690-github.md)
 
 ---
 

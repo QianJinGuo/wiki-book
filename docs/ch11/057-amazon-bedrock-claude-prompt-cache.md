@@ -50,21 +50,21 @@ Claude thinking (extended thinking 或 adaptive thinking) 引入了一个特殊�
 核心逻辑是：每次请求前先清理历史 cachePoint，然后在 system prompt 末尾、tools 定义末尾和当前请求尾部各放置一个 cachePoint，这样即使某轮动态内容导致尾部 checkpoint 无法命中最长的历史 prefix，system 和 tools 仍然有独立 checkpoint 可以命中。
 
 ## 相关实体
-- [Anthropic Prompt Caching for Claude Code](ch03/073-claude-code.md) — Anthropic 官方博客解析：Prompt Caching 的 7 条经验与架构约束
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
+- [Anthropic Prompt Caching for Claude Code](ch03/074-claude-code.md) — Anthropic 官方博客解析：Prompt Caching 的 7 条经验与架构约束
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/250-amazon-nova.md)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/150-ai.md)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/503-agent.md)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/044-agent.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/084-aws-bedrock-serverless-async-inference-sqs-lambda.md)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/048-build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
 
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/503-agent.md)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/525-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/503-agent.md)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch03/044-agent.md)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/572-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch03/044-agent.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [SunFinance: Textract+Claude准确率90.8%的ID提取方案](ch04/150-ai.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/150-ai.md)
 - [Amazon Finance 监管查询自动化](ch11/010-how-amazon-finance-streamlines-regulatory-inquiries-by-using.md) — Bedrock + RAG 在金融合规场景的实战：多级 KV Cache、Query Expansion、DynamoDB 状态管理的完整架构
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/569-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/571-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/150-ai.md)
 - [yc掌门人60天写了60万行代码：gstack开源](ch01/510-garry-tan.md)
 - [markdown 不会过时](ch04/150-ai.md)

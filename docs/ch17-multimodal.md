@@ -52,7 +52,7 @@ Perceptron Mk1 is a video analysis reasoning model priced at $0.15/$1.50 per mil
 
 - [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md)
 - [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
-- [Anthropic Computer Use 最佳实践](ch01/684-anthropic-computer-use.md)
+- [Anthropic Computer Use 最佳实践](ch01/689-anthropic-computer-use.md)
 
 ## 深度分析
 ### 「效率前沿」：新的竞争维度
@@ -423,13 +423,13 @@ DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**
 
 - [面向电商直播场景的全模态大模型推理加速方案](https://github.com/QianJinGuo/wiki/blob/main/entities/面向电商直播场景的全模态大模型推理加速方案.md)（多模态推理加速对照）
 - [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)（视频 8B 反超同主题 — 多模态 8B 起步）
-- [A2Rd Agentic Autoregressive Diffusion Long Video](ch04/503-agent.md)（多模态生成对照）
+- [A2Rd Agentic Autoregressive Diffusion Long Video](ch03/044-agent.md)（多模态生成对照）
 - [Openai Realtime Api Architecture](ch04/150-ai.md)（OpenAI Realtime API — 实时语音对照）
 - [刚刚Openai 放出三个语音模型顺便杀死了同传](ch04/150-ai.md)（OpenAI 语音模型同主题）
 - [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch04/150-ai.md)（OpenAI GPT-5 语音同主题）
-- [Amazon Bedrock Model Inference Serverless Architecture Case Study](ch11/236-bedrock.md)（Bedrock 多模态推理对照）
+- [Amazon Bedrock Model Inference Serverless Architecture Case Study](ch11/240-bedrock.md)（Bedrock 多模态推理对照）
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md)（Nemotron 语音 + 智能体对照）
-- [Snowflake Agentic Enterprise Summit 2026](ch04/503-agent.md)（Snowflake 真实感场景对照）
+- [Snowflake Agentic Enterprise Summit 2026](ch03/044-agent.md)（Snowflake 真实感场景对照）
 - [Loss Function Development Elvis Sun Goal Loop 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/loss-function-development-elvis-sun-goal-loop-2026.md)（LFD 质量 > 体量同源思想）
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)
@@ -529,12 +529,12 @@ Pixelle-Video 把这个哲学推到极致:LLM 可换 + 图像模型可换 + TTS 
 ## 与现有实体的交叉对比
 
 - vs **[AI 视频工具悄悄走到了第三阶段](ch04/150-ai.md)** — 那是**行业历史阶段综述**(20KB,花叔 2026-05-07),本文是**单一项目深测**。两者互补:阶段综述给宏观背景,本文给工程细节。
-- vs **[Video Agent 范式迁移与算力-人才飞轮](ch04/503-agent.md)** — 那是**底层视频模型视角**(nvidia Cosmos + xAI Grok Imagine),本文是**pipeline 编排层视角**。两层视角互补。
+- vs **[Video Agent 范式迁移与算力-人才飞轮](ch03/044-agent.md)** — 那是**底层视频模型视角**(nvidia Cosmos + xAI Grok Imagine),本文是**pipeline 编排层视角**。两层视角互补。
 - vs **[JoyAI-Echo:京东长视频框架](ch04/150-ai.md)** — 那是**长视频(5 分钟一致性)底层生成框架**(DMD 蒸馏 + Director Agent),本文是**短视频 pipeline 装配**。时长 / 抽象层完全不同。
 - vs **[Fastlane 短视频内容](ch03/099-fastlane-create-winning-short-form-content-in-seconds.md)** — 另一款短视频工具,但**未开源**;Pixelle-Video 是 Apache 2.0 开源,可二开。
-- vs **[Agentium Agent Framework](ch04/503-agent.md)** — 同为 pipeline 编排思路,但 Agentium 偏**通用 agent 编排**,Pixelle-Video 偏**视频生成专精**。
+- vs **[Agentium Agent Framework](ch03/044-agent.md)** — 同为 pipeline 编排思路,但 Agentium 偏**通用 agent 编排**,Pixelle-Video 偏**视频生成专精**。
 - vs **[纳德拉「Token 资本」论](ch04/150-ai.md)** — Pixelle-Video 是该战略宣言"模型可替换性"哲学的**工程范本**。
-- vs **[800 行 OpenClaw tool 消息总线子 agent 管理架构](ch04/503-agent.md)** — 两者都体现"**装配工胜过生成器**"的工程哲学(OpenClaw 是 agent 工具总线装配)。
+- vs **[800 行 OpenClaw tool 消息总线子 agent 管理架构](ch03/044-agent.md)** — 两者都体现"**装配工胜过生成器**"的工程哲学(OpenClaw 是 agent 工具总线装配)。
 
 ## 深度分析
 
@@ -570,14 +570,14 @@ Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型
 
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pixelle-video-aidc-ali-international-2026.md)
 - [AI 视频工具悄悄走到了第三阶段](ch04/150-ai.md)
-- [Video Agent 范式迁移与算力-人才飞轮](ch04/503-agent.md)
+- [Video Agent 范式迁移与算力-人才飞轮](ch03/044-agent.md)
 - [JoyAI-Echo:京东长视频框架](ch04/150-ai.md)
 - [Fastlane 短视频内容](ch03/099-fastlane-create-winning-short-form-content-in-seconds.md)
-- [Agentium Agent Framework](ch04/503-agent.md)
+- [Agentium Agent Framework](ch03/044-agent.md)
 - [纳德拉「Token 资本」论](ch04/150-ai.md)
-- [800 行 OpenClaw tool 消息总线](ch04/503-agent.md)
-- [Harness Engineering 7 层架构](ch03/073-claude-code.md)
-- [A²RD 长视频一致性框架](ch04/503-agent.md)
+- [800 行 OpenClaw tool 消息总线](ch03/044-agent.md)
+- [Harness Engineering 7 层架构](ch03/074-claude-code.md)
+- [A²RD 长视频一致性框架](ch03/044-agent.md)
 - [Anthropic 缓存 Token 经济](ch12/003-token.md)
 - [Google Gemini Omni 视频模型](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
 
@@ -758,7 +758,7 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 - [Llava Onevision 2 Full Frame Rate Vlm](ch01/612-vlm.md)
 
 ## 相关实体
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/181-cost-effective-deployment-of-vision-language-models-for-pet.md)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/184-cost-effective-deployment-of-vision-language-models-for-pet.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
 
@@ -1015,7 +1015,7 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 
 ## 相关实体
 
-- [AMap Abot Earth 0.5 3D Native World Model](https://github.com/QianJinGuo/wiki/blob/main/entities/amap-abot-earth-0.5-3d-native-world-model.md)
+- [AMap Abot Earth 0.5 3D Native World Model](ch01/181-3d.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/flat-feedforward-latent-triangle-splatting.md)
 
@@ -1111,7 +1111,7 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 核心贡献：五类记忆分层 + 大五人格动态追踪 + 双阶段协作流，在 Persona-MME 评测基准上提升超 20%。
 
 ## 五类记忆分层结构
-与 [Agent Memory 架构本质](ch04/503-agent.md) 的六维度记忆单元相比，PersonaVLM 的记忆分层更贴近认知心理学框架：
+与 [Agent Memory 架构本质](ch03/044-agent.md) 的六维度记忆单元相比，PersonaVLM 的记忆分层更贴近认知心理学框架：
 | 类型 | 功能 |
 |------|------|
 | 性格画像 | 大五人格量化追踪，动态更新 |
@@ -1177,7 +1177,7 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 ## 相关实体
 - [Liteframeefficientvisionencodersunlockframescalinginvideollms](ch01/890-llm.md)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Agentexecutorgooglesdistributedagentruntime](ch04/503-agent.md)
+- [Agentexecutorgooglesdistributedagentruntime](ch03/044-agent.md)
 - [How To Calculate The Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
 - [Aws Sun Finance Ai Id Extraction Fraud Detection](ch04/150-ai.md)
 
@@ -1286,7 +1286,7 @@ CLI：`voxcpm design --text "你好世界" --output out.wav`
 
 ## 相关实体
 
-- [PilotDeck：清华系Agent操作系统](ch04/503-agent.md) — 同团队（OpenBMB/面壁智能/清华）的 Agent OS 项目
+- [PilotDeck：清华系Agent操作系统](ch03/044-agent.md) — 同团队（OpenBMB/面壁智能/清华）的 Agent OS 项目
 - [EdgeClaw — 端云两栖龙虾框架](ch04/444-edgeclaw.md) — 同团队的开源框架
 
 ## References
@@ -1397,9 +1397,9 @@ LogicsDocBench为自建综合评估基准，由 900 页精心挑选的 PDF 页�
 - 教学资源建设：将纸质教材、试卷、报刊文章转化为可编辑、可搜索的数字资产，大幅降低数字化成本
 - 代码与设计稿复用：截图代码自动格式化还原、思维导图照片转可编辑版本，提高知识复用效率
 ## 相关实体
-- [Context Not Free Long Document Agent Architecture Raunak](ch04/503-agent.md)
+- [Context Not Free Long Document Agent Architecture Raunak](ch03/044-agent.md)
 - [Joyai Echo Long Video Framework Jd](ch04/150-ai.md)
-- [Nemotron 3 5 Content Safety](ch01/411-nemotron-3-5-content-safety-customizable-multimodal-safety.md)
+- [Nemotron 3 5 Content Safety](ch01/410-nemotron-3-5-content-safety-customizable-multimodal-safety.md)
 - [Xiaomi Ai Icml 2026 11Papers](ch04/150-ai.md)
 - [Sensnova U1 Deep Dive Jiqizhixin D8602Ded5C51](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md)
 
@@ -1616,7 +1616,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 ## 相关实体
 - [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki/blob/main/entities/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md)
 - [Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa6Efcef23C882E57](https://github.com/QianJinGuo/wiki/blob/main/entities/Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa6efcef23c882e57.md)
-- [How To Build Audio Transcription Agent](ch04/404-how-to-build-audio-transcription-agent.md)
+- [How To Build Audio Transcription Agent](ch04/407-how-to-build-audio-transcription-agent.md)
 - [Stable Audio 3](https://github.com/QianJinGuo/wiki/blob/main/entities/stable-audio-3.md)
 
 ---
@@ -1633,7 +1633,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 **Google DeepMind Gemma 4 12B**——把多模态智能装进笔记本电脑的本地模型。**核心架构创新：扔掉视觉/音频编码器**（视觉用极轻量嵌入模块、音频原始信号直接投影到文本 token 维度空间）。**硬件门槛：16GB 显存或统一内存**（MacBook Air M5 可跑）。Apache 2.0 + 多框架支持。
 
 ## 相关实体
-- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](ch11/236-bedrock.md)
+- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](ch11/240-bedrock.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemma-4-12b-google-multimodal-local.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
@@ -1786,10 +1786,10 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 
 ## 相关对照
 - [Microsoft Build 2026](ch04/150-ai.md) —— 大厂云端模型（MAI-Thinking-1）
-- [ANOLISA v0.3](ch04/503-agent.md) —— 阿里 Agentic OS（可在本地跑多模态模型）
-- [PilotDeck](ch04/503-agent.md) —— 多项目隔离
-- [Kimi Work](ch01/434-codex.md) —— 本地 Agent
-- [Agent Harness 架构](ch04/503-agent.md) —— 7 层模型
+- [ANOLISA v0.3](ch03/044-agent.md) —— 阿里 Agentic OS（可在本地跑多模态模型）
+- [PilotDeck](ch03/044-agent.md) —— 多项目隔离
+- [Kimi Work](ch01/436-codex.md) —— 本地 Agent
+- [Agent Harness 架构](ch03/044-agent.md) —— 7 层模型
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemma-4-12b-google-multimodal-local.md)
 
@@ -2279,8 +2279,8 @@ Gemini 3 Flash 音频输入 7.2 元/Mtok，看起来比豆包的 9 元/Mtok 便�
 
 ## 相关页面
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/doubao-seed-2-lite-agent-multimodal.md)
-- [Claude Code](ch03/073-claude-code.md) — 主要工作台（被补上眼睛和耳朵的那位）
-- [Agent 输入侧瓶颈背景](ch04/503-agent.md)
+- [Claude Code](ch03/074-claude-code.md) — 主要工作台（被补上眼睛和耳朵的那位）
+- [Agent 输入侧瓶颈背景](ch03/044-agent.md)
 ## 相关实体
 - [Video Rag Chunking Strategy](ch01/207-rag.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
@@ -2357,10 +2357,10 @@ v1.1 模型家族实现了「事半功倍」（doing more with less）的效果�
 
 ## 相关实体
 - [Olmoearth V1 1 Efficiency](https://github.com/QianJinGuo/wiki/blob/main/entities/olmoearth-v1-1-efficiency.md)
-- [Kamacoder Agent Context Drift Tool Hallucination](ch04/503-agent.md)
+- [Kamacoder Agent Context Drift Tool Hallucination](ch03/044-agent.md)
 - [Olmo Hybrid Gdn Wave 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/olmo-hybrid-gdn-wave-2026.md)
-- [How Llms Actually Work 0Xkato](ch01/890-llm.md)
-- [Agent Reliability Context Drift Tool Hallucination](ch04/503-agent.md)
+- [How Llms Actually Work 0Xkato](ch01/900-how-llms-actually-work-0xkato-transformer-walkthrough.md)
+- [Agent Reliability Context Drift Tool Hallucination](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/olmoearth-v1-1-a-more-efficient-family-of-earth-observation-models.md)
 
@@ -2444,7 +2444,7 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 
 ## 相关实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/molmomotion-language-guided-3d-motion-forecasting.md)
@@ -2518,9 +2518,9 @@ Compression only matters if the model remains useful. We evaluated Bonsai Image 
 ## 相关实体
 - [Bonsai Image 4B Quantization](ch04/150-ai.md)
 - [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
-- [Stochastic Parrot Language Models And Meaning](ch01/385-language-models-and-meaning.md)
+- [Stochastic Parrot Language Models And Meaning](ch01/383-language-models-and-meaning.md)
 - [Openai Models Codex Amazon Bedrock Ga](ch04/150-ai.md)
-- [Stochastic Parrot Language Models And Meaning](ch01/385-language-models-and-meaning.md)
+- [Stochastic Parrot Language Models And Meaning](ch01/383-language-models-and-meaning.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bonsai-image-4b-1-bit-ternary.md)
@@ -2688,7 +2688,7 @@ Moebius 的成功揭示了一个深层问题：在图像修复这一明确定义
 2. **极致压缩**需要配合**匹配的蒸馏策略**，两者缺一不可
 3. **固定大小线性矩阵**是一种突破极压缩架构表示瓶颈的有效手段
 
-这一模式与 [知识代理](ch04/503-agent.md) 的思路异曲同工——在特定领域注入结构化知识的小模型可以超越通用大模型。
+这一模式与 [知识代理](ch03/044-agent.md) 的思路异曲同工——在特定领域注入结构化知识的小模型可以超越通用大模型。
 
 ### 技术参数与基准测试
 
@@ -2722,7 +2722,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 ## 相关实体
 
 - [模型规模推演](ch01/462-model-size-scaling-in-2023-2031.md) — 模型大小与硬件约束的系统分析
-- [知识代理超越前沿模型](ch04/503-agent.md) — 小模型+领域知识超越大模型的另一范式
+- [知识代理超越前沿模型](ch03/044-agent.md) — 小模型+领域知识超越大模型的另一范式
 - 蒸馏、剪枝、量化等模型压缩技术是 Moebius 的理论背景
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/moebius.md)
@@ -2740,7 +2740,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 - [Nvidia Cosmos Fine Tuning Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md)
 - [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
-- [Nvidia Agentic Systems Extreme Co Design](ch04/503-agent.md)
+- [Nvidia Agentic Systems Extreme Co Design](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
 
@@ -2795,11 +2795,11 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 - **可控生成**：支持风格、节奏、时长等条件控制
 
 ## 相关实体
-- [How To Build Audio Transcription Agent](ch04/404-how-to-build-audio-transcription-agent.md)
+- [How To Build Audio Transcription Agent](ch04/407-how-to-build-audio-transcription-agent.md)
 - [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki/blob/main/entities/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md)
 - [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki/blob/main/entities/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md)
 - [Ntm Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki/blob/main/entities/ntm-normalizing-trajectory-models.md)
-- [Nvidia Gamma World Multi Agent World Model](ch04/503-agent.md)
+- [Nvidia Gamma World Multi Agent World Model](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stable-audio-3.md)
 
@@ -2937,9 +2937,9 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ## 与现有实体的关系
 
-- **与 [SaaS-Bench](ch04/503-agent.md)** 互补：SaaS-Bench 评测 Agent 在真实系统中工作能力；ABot-Earth 0.5 生成 Agent 训练所需的 3D 世界
-- **与 [Agent 六机制](ch04/503-agent.md)** 呼应：六机制中"环境仿真"的具体实现 —— 指数级训练场景
-- **与 [Anthropic 生物学 Agent 数据基础设施](ch04/503-agent.md)** 平行：都揭示"非合成数据是真实世界 AI 的必要条件" —— 真实时空数据 / 真实生物数据 vs 合成数据
+- **与 [SaaS-Bench](ch03/044-agent.md)** 互补：SaaS-Bench 评测 Agent 在真实系统中工作能力；ABot-Earth 0.5 生成 Agent 训练所需的 3D 世界
+- **与 [Agent 六机制](ch03/044-agent.md)** 呼应：六机制中"环境仿真"的具体实现 —— 指数级训练场景
+- **与 [Anthropic 生物学 Agent 数据基础设施](ch03/044-agent.md)** 平行：都揭示"非合成数据是真实世界 AI 的必要条件" —— 真实时空数据 / 真实生物数据 vs 合成数据
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amap-abot-earth-0.5-3d-native-world-model.md)
 

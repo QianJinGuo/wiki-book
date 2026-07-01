@@ -157,14 +157,14 @@ JiaGouX 建议避开"公司级聊天查数入口"，更小一点反而更稳。�
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/207-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
 - [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch04/150-ai.md)
-- [Claude Code Dynamic Workflows Jiagoux Architect Perspective](ch03/073-claude-code.md)
+- [Claude Code Dynamic Workflows Jiagoux Architect Perspective](ch03/074-claude-code.md)
 - [Agent Reliability Engineering Skillify Continuous Improvement](ch04/245-skill.md)
 - [Agent Skill Writing Evaluation](ch04/245-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)

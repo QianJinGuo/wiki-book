@@ -29,7 +29,7 @@ OpenAI的Cookbook指南详细介绍了如何使用gpt-realtime-translate构建�
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/619-openai-gpt-realtime-voice-models-qbitai.md)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/114-useful-memories-become-faulty-when-continuously-updated-by-l.md)
 - [Runtime Instrumentation Of Qt6 Apps With Frida Part 1 Getting Visibility](ch01/009-runtime-instrumentation-of-qt6-apps-with-frida-part-1-get.md)
-- [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](ch01/556-chatgpt.md)
+- [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](ch01/690-chatgpt.md)
 - [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/380-claude.md)
 
 ---

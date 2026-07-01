@@ -142,7 +142,7 @@ OpenAI 的经验（大量规则塞进 AGENTS.md 会失败）和 Claude Code 的�
 2. **文档需要像代码一样维护**：文章指出"文档随项目变化快速腐烂"，这提示我们，建立文档清理和校验机制是和建立测试机制同样重要的工程实践。
 3. **失败后的复盘要系统化**：Harness Update 不仅是技术动作，也是组织学习的过程。每一轮失败后，应该分析是哪个环节出了问题（Guides 不够清晰？Sensors 没有捕捉到偏差？State 丢失了关键信息？），并针对性地修复那个环节。
 
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
 - [Code as Agent Harness 综述](ch09/046-code-as-agent-harness.md)
 - [AI Skill 测评指标体系](ch04/245-skill.md)
 
@@ -150,12 +150,12 @@ OpenAI 的经验（大量规则塞进 AGENTS.md 会失败）和 Claude Code 的�
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/061-harness-engineering.md)
 
 - [RAG 全链路技术详解：从文档加载到 Ragas 评估](ch01/207-rag.md)
-- [AgentCore Managed Harness](ch04/503-agent.md)
-- [Agent Harness 解析：智能体架构深度拆解](ch04/503-agent.md)
+- [AgentCore Managed Harness](ch03/044-agent.md)
+- [Agent Harness 解析：智能体架构深度拆解](ch03/044-agent.md)
 - [From Agent Protocol to Harness Skill](ch04/354-from-agent-protocol-to-harness-skill.md)
-- [Claude Code 架构深度解析](ch03/073-claude-code.md)
-- [Agent Memory 架构解析](ch04/503-agent.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/207-openclaw.md)
+- [Claude Code 架构深度解析](ch03/074-claude-code.md)
+- [Agent Memory 架构解析](ch03/044-agent.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/210-openclaw.md)
 - [claude-code-7-layer-memory-architecture](ch01/869-claude-code-7-layer-memory-architecture.md)
 - [AI Agent 工程师能力地图](ch04/150-ai.md)
 

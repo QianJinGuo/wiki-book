@@ -81,7 +81,7 @@ Web Search Agent 代表了另一种模式——数据不在本地，需要通过
 - [Claude Code Large Codebase Harness Configuration](ch03/073-claude-code.md)
 - [Building Web Search Enabled Agents With Strands And Exa](ch04/379-building-web-search-enabled-agents-with-strands-and-exa.md)
 - [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](ch01/890-llm.md)
-- [Accelerate Llm Model Loading And Increase Context Windows Wi](ch01/817-accelerate-llm-model-loading-and-increase-context-windows-wi.md)
+- [Accelerate Llm Model Loading And Increase Context Windows Wi](ch01/839-accelerate-llm-model-loading-and-increase-context-windows-wi.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
 - 相关领域: agent, data-infrastructure, architecture
 

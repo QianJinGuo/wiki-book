@@ -2,15 +2,15 @@
 
 ## Ch05.002 Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（13 来源深度合并：Addy Osmani / Boris Cherny+Peter Steinberger / 教科书 / 若飞 工程现场 / TechFarrari 批判 / 若飞 实用指南 / 爱范儿 科普批判 / AllenTang Karpathy 尺子 / winty 7架构中文主流视角 / AutoResearch 5 决策 / 三层结构 + 三款产品对比 + Ralph Loop + 准备度总表 / Shubham Saboo PM 视角）
 
-> 📊 Level ⭐⭐ | 117.6KB | `entities/loop-engineering-addy-osmani-challengehub.md`
+> 📊 Level ⭐⭐ | 129.5KB | `entities/loop-engineering-addy-osmani-challengehub.md`
 
 created: 2026-06-10
-updated: 2026-06-30
+updated: 2026-07-01
 review_value: 10
 review_confidence: 9
 review_recommendation: strong
 provenance_state: merged
-sources: [raw/articles/loop-engineering-addy-osmani-challengehub, raw/articles/loop-engineering-infoq-boris-cherny-peter-steinberger, raw/articles/loop-engineering-peter-steinberger-boris-cherny, raw/articles/loop-engineering-工程现场-ruofei, raw/articles/loop-engineering-techferrari-prompt-is-dead-2026, raw/articles/loop-engineering-practical-guide-brakes-first-ruofei-2026-06-15, raw/articles/loop-engineering-14-step-roadmap-aitechliwen-2026-06-16, raw/articles/loop-engineering-ifanr-popular-science-critique-2026-06-16, raw/articles/loop-engineering-karpathy-autoresearch-eval-ruler-allentang-2026-06-16, raw/articles/7-agent-architectures-loop-engineering-winty-2026-06-18, raw/articles/loop-engineering-autoresearch-claude-code-five-decisions-2026-06-18, raw/articles/loop-engineering-three-layers-decision-framework-product-comparison-ralph-2026-06-18, raw/articles/loop-engineering-pm-shubham-saboo-2026, raw/articles/loop-engineering-5-loops-6-hard-boundaries-ruofei, raw/articles/loop-engineering-practical-loop-closed-loop-ruofei-2026, raw/articles/loop-engineering-14-step-codez-datathu-2026-06-30]
+sources: [raw/articles/loop-engineering-addy-osmani-challengehub, raw/articles/loop-engineering-infoq-boris-cherny-peter-steinberger, raw/articles/loop-engineering-peter-steinberger-boris-cherny, raw/articles/loop-engineering-工程现场-ruofei, raw/articles/loop-engineering-techferrari-prompt-is-dead-2026, raw/articles/loop-engineering-practical-guide-brakes-first-ruofei-2026-06-15, raw/articles/loop-engineering-14-step-roadmap-aitechliwen-2026-06-16, raw/articles/loop-engineering-ifanr-popular-science-critique-2026-06-16, raw/articles/loop-engineering-karpathy-autoresearch-eval-ruler-allentang-2026-06-16, raw/articles/7-agent-architectures-loop-engineering-winty-2026-06-18, raw/articles/loop-engineering-autoresearch-claude-code-five-decisions-2026-06-18, raw/articles/loop-engineering-three-layers-decision-framework-product-comparison-ralph-2026-06-18, raw/articles/loop-engineering-pm-shubham-saboo-2026, raw/articles/loop-engineering-5-loops-6-hard-boundaries-ruofei, raw/articles/loop-engineering-practical-loop-closed-loop-ruofei-2026, raw/articles/loop-engineering-14-step-codez-datathu-2026-06-30, raw/articles/andrew-ng-loop-engineering-three-loops-vibecoder-2026, raw/articles/loop-engineering-sre-state-machine-tiered-architecture-ruofei-2026]
 ---
 ---
 
@@ -53,7 +53,7 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 
 ### 三个循环搞不定的问题
 
-- **验证仍在人头上**："做完了"是声明不是证明——[Agent 可靠性](ch04/503-agent.md)的核心挑战
+- **验证仍在人头上**："做完了"是声明不是证明——[Agent 可靠性](ch03/044-agent.md)的核心挑战
 - **理解债（Comprehension Debt）**：循环越快交付你没写的代码，"真实存在"和"你实际搞懂"的鸿沟越大
 - **认知投降（Cognitive Surrender）**：最舒服的姿势恰最危险——循环给啥收啥。设计循环带判断力=解药；为逃避思考=助燃剂
 
@@ -65,10 +65,10 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 
 ## 相关实体
 
-- [Agent Harness Architecture](ch04/503-agent.md)
-- [Claude Code 深度分析](ch03/073-claude-code.md)
+- [Agent Harness Architecture](ch03/044-agent.md)
+- [Claude Code 深度分析](ch03/074-claude-code.md)
 - [Harness Engineering](ch05/061-harness-engineering.md)
-- [Agent Self-Improvement](ch04/503-agent.md)
+- [Agent Self-Improvement](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loop-engineering-addy-osmani-challengehub.md)
 
@@ -191,7 +191,7 @@ InfoQ 对同一 Loop Engineering 事件的深度报道，侧重**工程实现细
 
 ## 第 4 来源：微信公众号「架构师 JiaGouX」若飞「Loop Engineering 详解：把反馈循环放进工程现场」（2026-06-11）
 
-若飞是「架构师」公众号主笔，长期写 Harness Engineering 系列（前文《长周期 Agent 详解》《5 张卡治理框架》《再看 Harness Engineering》三篇已合并入 [Long Running Agent Ralph Loop Handover Harness Ruofei](ch04/503-agent.md)，这是他 Loop Engineering 主题的首篇完整论述）。本来源侧重**工程落地视角**：5 项准入表、5 条保守原则、7 天试点模板、plan.md 状态记忆——是前 3 来源（Addy Osmani 概念 + InfoQ 事件 + 微信公众号教科书）都**未涉及的实操层**。
+若飞是「架构师」公众号主笔，长期写 Harness Engineering 系列（前文《长周期 Agent 详解》《5 张卡治理框架》《再看 Harness Engineering》三篇已合并入 [Long Running Agent Ralph Loop Handover Harness Ruofei](ch03/044-agent.md)，这是他 Loop Engineering 主题的首篇完整论述）。本来源侧重**工程落地视角**：5 项准入表、5 条保守原则、7 天试点模板、plan.md 状态记忆——是前 3 来源（Addy Osmani 概念 + InfoQ 事件 + 微信公众号教科书）都**未涉及的实操层**。
 
 ### 核心创新 / 关键数据
 
@@ -224,7 +224,7 @@ InfoQ 对同一 Loop Engineering 事件的深度报道，侧重**工程实现细
 | **人在场** | 验证仍在人头上 | SPEC 文件 + 测试说"不" | 封闭循环 + 质量门禁 | **5 条保守原则** + 成熟 loop 的"诚实回答"清单 |
 | **试点方法论** | 未涉及 | 47 轮状态机调试难 10 倍 | 设计循环先于写 prompt | **7 天试点模板**（选场景/写任务卡/做 Skill/接状态/手动/自动触发/复盘） |
 | **复盘指标** | 未涉及 | 社区反应：48 轮后悔 | 从封闭循环开始 | **复盘 5 指标**（命中率/误报率/回滚率/成本/证据） |
-| **同作者系列衔接** | N/A | N/A | N/A | **衔接 [Long Running Agent Ralph Loop Handover Harness Ruofei](ch04/503-agent.md)**（若飞 Harness 系列 3 篇） |
+| **同作者系列衔接** | N/A | N/A | N/A | **衔接 [Long Running Agent Ralph Loop Handover Harness Ruofei](ch03/044-agent.md)**（若飞 Harness 系列 3 篇） |
 
 ### 与已有 source 呼应
 
@@ -232,8 +232,8 @@ InfoQ 对同一 Loop Engineering 事件的深度报道，侧重**工程实现细
 - **plan.md 状态记忆模板**（第 4 来源独家）补全了第 2 来源"SPEC 文件"和第 3 来源"记忆是脊柱"的实操形态：第 2/3 来源只说"记忆重要"，第 4 来源给具体 5 段式 Markdown 模板——可直接拷贝到项目里
 - **5 条保守原则**（第 4 来源独家）是第 1/2/3 来源"高质量门禁"思想的具体化：第 1 来源说"质量门禁是 AI 不漂移的唯一保障"是结论，第 4 来源给出 5 条可执行的"如何保证门禁不被绕过"原则
 - **7 天试点模板**（第 4 来源独家）补全了第 3 来源"设计循环先于写 prompt"和第 2 来源"Loops 从低风险自动化开始"——前 2 来源是原则（先设计 / 先低风险），第 4 来源给具体 7 天时间表
-- **Loop > Harness > Prompt 三层关系图**（第 4 来源独家 图 2）与 [Long Running Agent Ralph Loop Handover Harness Ruofei](ch04/503-agent.md) 的 5 层架构（Model / Tool / Skill / Sub-agent / Harness）**直接衔接**——若飞把 Harness 定位为"这一次任务怎么跑"，Loop 定位为"这类任务怎么持续发生"——这是同作者体系内**最自然的延伸**，前 3 来源都未给具体关系图
-- **任务卡 9 项模板**（第 4 来源独家）与 [Long Running Agent Ralph Loop Handover Harness Ruofei](ch04/503-agent.md) 的 **5 张卡治理框架**（身份/项目/记忆/Skill/运行）**正交互补**——5 张卡是工作流的 5 个角色层，任务卡是单次 loop 运行的 9 项边界——后者放在 5 张卡的"运行卡"内执行
+- **Loop > Harness > Prompt 三层关系图**（第 4 来源独家 图 2）与 [Long Running Agent Ralph Loop Handover Harness Ruofei](ch03/044-agent.md) 的 5 层架构（Model / Tool / Skill / Sub-agent / Harness）**直接衔接**——若飞把 Harness 定位为"这一次任务怎么跑"，Loop 定位为"这类任务怎么持续发生"——这是同作者体系内**最自然的延伸**，前 3 来源都未给具体关系图
+- **任务卡 9 项模板**（第 4 来源独家）与 [Long Running Agent Ralph Loop Handover Harness Ruofei](ch03/044-agent.md) 的 **5 张卡治理框架**（身份/项目/记忆/Skill/运行）**正交互补**——5 张卡是工作流的 5 个角色层，任务卡是单次 loop 运行的 9 项边界——后者放在 5 张卡的"运行卡"内执行
 - **成熟 loop 的"诚实回答"清单**（第 4 来源独家）把第 3 来源"Loop 工程师 = Harness 工程师的下一个版本"具体化——Harness 工程师需要能写"评估器"，Loop 工程师需要能写"诚实拒绝"——这是职业能力升级
 - **Gergely Orosz / Garry Tan / Graham Neubig / AlphaSignal 反方观点**（若飞独家整合）——若飞主动把反方观点纳入分析：Gergely "团队没有无限 token"、Garry Tan "不要把 Agent 做成机械重复工厂"、Graham Neubig "人先过一遍任务清单"、AlphaSignal "大多数开发者还不急着把 Agent 放进 loop"——这与第 1/2/3 来源的"乐观叙事"形成对照，**若飞本文的最大价值之一是平衡呈现反方声音**
 - **事实核验 / CI 分流 / 文档检查 / 重复故障归类 / 依赖升级预检查 5 类试点场景**（若飞独家）——具体到任务类型的"哪些场景适合先入 loop"清单——前 3 来源都未具体到任务级
@@ -314,7 +314,7 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 - **跨域应用案例**(第 5 来源独家): 与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 在 SaaS / DevOps / 客服 / 编程 的多领域应用模式相同,Loop Engineering 也已扩展到**内容选题**。这是 Loop 工具链成熟的标志——"凌晨 4 点 bot → 8 点选题会 agenda"是 24h Agent 工作流在内容产业的真实落地
 - **范式迁移叙事 4 阶段时间线**(第 5 来源独家): 与前 4 来源的"Loop > Harness > Prompt"层级关系**互为表里**——前 4 来源给"层级",第 5 来源给"时间线",合起来是"Loop 演化的完整画像"
 - **生命周期短预言**(第 5 来源独家): 与 [Anthropic 缓存 Token 经济](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic_cache_tokenomics.md) 等 raw 中对"AI 圈造词速度"的批评态度**一致**——"每过几个月就有个新词,每个新词都宣称自己要杀死上一个"——但**保持冷静的"造词速度观察期"**是工程师理性态度
-- **商业动机批判**(第 5 来源独家): 与 [纳德拉「Token 资本」论](ch04/150-ai.md) 的"前沿模型 ≠ 价值"警告**同源**——都反对"造词 = 价值"的偷换;与 [Fable 5 Runtime Contract](ch04/503-agent.md) 的"系统能不能跑完任务"判断**同源**——都强调工程责任换形态
+- **商业动机批判**(第 5 来源独家): 与 [纳德拉「Token 资本」论](ch04/150-ai.md) 的"前沿模型 ≠ 价值"警告**同源**——都反对"造词 = 价值"的偷换;与 [Fable 5 Runtime Contract](ch03/044-agent.md) 的"系统能不能跑完任务"判断**同源**——都强调工程责任换形态
 
 ### 实践启示
 
@@ -363,10 +363,10 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 ### 与其他实体的关系
 
 - **CI 分流 Loop 模板**与 [高德 Harness/SDD 体系](ch04/150-ai.md)的"ATDD 测试闭环"互补：高德讲 SDD 主链路 CI 反馈，本文给"AI 自主修复 CI"的 loop 模板
-- **Evaluator 部件**与 [Harness 架构](ch04/503-agent.md)的"验证层"同源——Loop 把 Harness 验证层拉成独立部件
-- **State 部件**与 [Hermes Loop 架构](ch04/503-agent.md)的状态管理同源——本文的 State = Hermes 的 LoopState/HandoffRecord
+- **Evaluator 部件**与 [Harness 架构](ch03/044-agent.md)的"验证层"同源——Loop 把 Harness 验证层拉成独立部件
+- **State 部件**与 [Hermes Loop 架构](ch03/044-agent.md)的状态管理同源——本文的 State = Hermes 的 LoopState/HandoffRecord
 - **reviewer agent 不允许直接修复**与 [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)的"生成器-验证器分离"模式一致
-- **18 字段设计表**与 [agent-harness 12 components 7 decisions](ch04/503-agent.md)的"Harness 完整部件清单"互补——Harness 是"环境内规则"，Loop 是"环境外循环节奏"
+- **18 字段设计表**与 [agent-harness 12 components 7 decisions](ch03/044-agent.md)的"Harness 完整部件清单"互补——Harness 是"环境内规则"，Loop 是"环境外循环节奏"
 
 ### 关键独到判断
 
@@ -932,6 +932,90 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 - **Skill 注入攻击量化**：社区 17022 个 skill 里有 520 个会泄露凭证。
 - **安全 4 条红线**：SAST/依赖审计/密钥扫描 + Skill 源码审查 + 关 verbose 日志 + 每 30 天权限复审。
 - **14 步 = 3 段式**：与第 7 来源的 14 步结构一致，但增加了"Connectors"和"Sub-agents"作为独立步骤。
+
+## 第 17 来源：吴恩达三层产品开发反馈循环 (2026-07-01)
+
+本文是 VibeCoder 对 Andrew Ng（吴恩达）在 The Batch 上发表的 Loop Engineering 文章的解读。Andrew Ng 从**产品开发反馈节奏**的视角重新定义了 Loop Engineering，与前 16 来源的工程（Addy Osmani / Boris Cherny / 若飞等）和管理（Shubham Saboo PM）视角形成互补。
+
+**独有增量**：
+- **三层时间尺度框架**：用反馈速度分层而不是工程模块分层——内层 Agentic Coding Loop（分钟级）/ 中层 Developer Feedback Loop（小时级）/ 外层 External Feedback Loop（天-周级）。这是 Loop Engineering 首次被明确按照反馈-决策周期分类
+- **Context Advantage（上下文优势）vs Taste（品味）**：Andrew Ng 把人的贡献重新定义为「上下文优势」——人知道用户是谁、业务约束、产品场景、哪些需求是噪音。这比「品味的工程化讨论更具操作性
+- **停止条件四要素**：Agentic Coding Loop 的四个停止条件——eval、预算、验证者、diff 审查。缺少任何一个，自动化循环就会把错误方向做得更精致
+- **Prompt → Loop 的范式迁移定位**：明确将 Loop Engineering 定位为 Prompt Engineering 的下一阶段——从「人写 prompt → Agent 做一次」到「系统自己提下一步、自己执行、自己验证、在需要人判断时停下来」
+
+---
+
+## 第 18 来源：若飞（架构师 JiaGouX）「Loop Engineering 详解：从 SRE 黄金信号到状态机设计与三层架构」（2026-06-28）
+
+> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loop-engineering-sre-state-machine-tiered-architecture-ruofei-2026.md)
+> Author: 若飞（架构师 JiaGouX）
+> Date: 2026-06-28
+
+这是若飞在 Loop Engineering 主题上的最新作，前 5 篇已在第 4、6、14、15 来源收录。本来源是**从高可靠系统架构视角重新审视 Loop**——把 SRE 黄金信号、状态机设计、熔断器类比、代码/日常 Loop 分层等经典工程方法系统化地应用到 Agent Loop。与第 4 来源（工程现场/试点方法论）和第 6 来源（实用指南/先写刹车）互补，本篇是**"系统架构视角的 Loop 工程"**。
+
+### 核心贡献
+
+1. **SRE 黄金信号 → Agent Loop 映射表**（本来源独家）：把传统 SRE 四信号（延迟/流量/错误/饱和度）系统化翻译为 Loop 观测指标——单轮耗时 / 每日触发次数 / 验证失败率+人工打回率 / token消耗+队列积压+API配额。这是 Loop Engineering 首次获得经典运维指标体系的工程化映射。
+
+2. **最小 Loop 状态机设计**（本来源独家状态图）：待触发→运行中→等待验证→验证通过→完成，失败分支为验证失败→重试 / 风险超界→交还给人 / 无新增证据→停止。明确把失败拆解为 4 种可区分状态（验证失败/工具失败/风险超界/无新增证据），每种对应不同的恢复策略。比前 17 来源的"47 轮状态机难调试"更接近可操作的工程模板。
+
+3. **代码 Loop vs 日常 Loop 分级对比**（本来源独家）：代码 Loop 面对仓库/测试/构建/PR，日常 Loop 面对邮件/日程/群聊/承诺/隐私。核心差异是**反馈强度**——代码有测试/lint/CI 等硬标准，日常场景缺乏可机器判定的硬指标。本文给出三级分级方案（自动生成+保留来源 / 草稿+人确认 / 默认不自动闭环），是 Loop 的非编程应用的落地框架。
+
+4. **三层架构**（本来源独家）：运行账本（记录输入/动作/证据/未确认/下一步）→ 验证接口（接入测试/日志/规则/人工复核）→ 触发入口（定时/Webhook/群聊/事件），**按此顺序建设**——账本和验证没打牢，触发越自动事故越难查。这是 Loop 系统建设的"倒序施工法"。
+
+5. **Harness → Loop → Environment 三层关系模型**（本来源独家）：Harness 规定 Agent 怎么跑，Environment 返回真实世界的变化，Loop 决定这些变化怎样进入下一轮/什么时候不该继续。这是对若飞此前"Loop > Harness > Prompt"关系的再细化——从层级关系变为**反馈接口关系**。
+
+6. **四筛问题 + 熔断器类比**（本来源独特整合）：重复发生?流程相近? 有反馈? 可回滚? 可留证据?——与第 4 来源"5 项准入表"对照但更简洁。熔断器类比：连续无新证据=打开熔断，API 限流=不重试，写权限碰生产=停自动闭环——这是经典系统设计模式在 Loop 的自然映射。
+
+7. **Daily CI 分流 Loop 实战模板**（本来源第 2 个实战模板）：与第 6 来源（CI 分流 Loop 模板）互补——第 6 来源给"AI 自主修复 CI"的 loop 模板，本来源给"每日 CI 失败分流+triage 文档"模板，聚焦**信息整理而非自动修复**。
+
+### 十八来源维度对比表
+
+| 维度 | 第 4 来源（若飞 6/11 工程现场） | 第 6 来源（若飞 6/15 实用指南） | 第 14-15 来源（若飞 5 Loop/闭环） | **第 18 来源（若飞 6/28 系统架构视角）** |
+|------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|
+| **核心定位** | 试点方法论 + 准入表 | 6 部件 + 实战模板 | 5 Loop 分类 + 6 硬边界 | **SRE 黄金信号 + 状态机 + 三层架构** |
+| **SRE 映射** | 未涉及 | 4 预算上限（含无进展检测） | 未涉及 | **四黄金信号系统化映射 + 熔断器+健康检查** |
+| **状态机** | 未涉及 | 未涉及 | 47 轮状态机难调试（概念提及） | **完整状态图：4 分支×恢复策略** |
+| **代码 vs 日常** | 5 类试点场景 | 3 类 Loop 路径 | 未涉及 | **代码/日常分级 + 三级自动化表** |
+| **三层架构** | 4 架构口 | 6 部件 | 未涉及 | **运行账本→验证接口→触发入口（顺序原则）** |
+| **Harness 关系** | Loop > Harness > Prompt | cron/workflow/harness/loop 4 层 | Harness→Loop 反馈接口 | **Harness→Loop→Environment 三层反馈接口** |
+| **熔断器类比** | 未涉及 | 未涉及 | 未涉及 | **明确类比：连续无进展=打开熔断** |
+| **人的位置** | 5 条保守原则 | 诚实回答清单 | 未涉及 | **"人从推动→设计规则和看结果" + prompts 是运行协议** |
+
+### 与已有来源的关系
+
+- **SRE 黄金信号映射**（本来源独家）补全了第 6 来源"4 预算上限"的可观测维度：第 6 来源给预算上限（量化的停），本来源给黄金信号（量化的观）——两者形成"可观→可控"闭环
+- **熔断器类比**（本来源独家）与 [Harness Engineering」](ch03/044-agent.md) 的"多层重试"直接衔接：Harness 的多层重试从"工程落地"侧实现了熔断，本来源从"架构设计"侧给出了理论映射
+- **三层架构的"倒序施工法"**（本来源独家）与第 4 来源"7 天试点模板"形成开工顺序共识：第 4 来源给时间表，本来源给**必建顺序**——运行账本 > 验证接口 > 触发入口
+- **Daily CI 分流模板**（本来源第 7 项）与第 6 来源"CI 分流 Loop 模板"互补——第 6 来源是"AI 修复 CI"，本来源是"AI 分类 CI 失败+写 triage 文档"，对应第 6 来源"提醒型 Loop"的分类——两个模板合起来覆盖了 CI 流水线的"诊断→修复"完整链路
+
+### 关键独到判断
+
+> "Loop 的关键在于让系统更容易验证、暂停、复盘和接手。"
+
+> "放回高可靠架构，Loop 并不陌生——它更像把 Agent 放进一套高可靠运行体系里：有目标，有健康检查，有故障处理，有恢复策略，有人工接管，也有成本和容量边界。"
+
+> "传统 SRE 信号 → Loop 里怎么量：延迟（单轮耗时）、流量（触发次数）、错误（验证失败率+人工打回率+工具调用失败率）、饱和度（token 消耗+队列积压+API 配额+人工审核积压）。"
+
+> "连续几轮没有新证据，就别继续让模型'再试一次'。外部 API 已经限流，就别让十个 Agent 一起重试。写权限开始碰生产数据，就别再自动闭环。"
+
+> "一段 prompt 写得差，通常只会得到一次差结果。一个 Loop 设计得差，会稳定地产生差结果。"
+
+> "人的位置没有消失，只是从'每一轮都亲自推动'，慢慢挪到'设计规则和看结果'。"
+
+> "Prompt 是一句话，Harness 是工作台，Environment 是工作现场。Loop 夹在中间，负责让工作持续发生，也负责在该停的时候停下来。"
+
+### 实践启示
+
+- **先搭四类信号再谈自动化**：延迟/流量/错误/饱和度——用经典 SRE 框架为 Loop 建立观测基线，不可观测的 loop 不可管理
+- **状态机先行，不要藏在上下文里**：待触发→运行中→验证中→完成 四个主要状态 + 四类失败分支——失败可区分才能有针对性恢复
+- **代码 Loop 和日常 Loop 分开设计**：前者有硬反馈（测试/lint），后者需要分级（自动/草稿/不自动闭环）
+- **按"账本→验证→触发"顺序建系统**：不要跳级——触发越自动化，账本和验证越要先打牢
+- **默认闭合式 Loop**：先写步骤、验收和停止条件，等稳定后再局部打开——成本可控+权限可收+失败可定位
+- **熔断器保护**：连续无进展→打开熔断，API 限流→不重试，写权限碰生产→停自动闭环
+- **人从推动→设计**：每一轮 prompt → 运行协议——从告诉模型"做什么"到告诉系统"什么能做、什么不能做、什么时候停"
+
+→ [第18原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loop-engineering-sre-state-machine-tiered-architecture-ruofei-2026.md)
 
 ---
 

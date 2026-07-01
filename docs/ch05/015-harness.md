@@ -39,7 +39,7 @@
 - 模型"试了一次"，工具却已经把外部状态改掉（候选→已执行跳过 dry-run）。
 - 模型"当前 session 的临时结论"，memory 却把它写成长期偏好（候选→已验证跳过退场）。
 
-这条链路与 [Codex /goal Runtime](ch09/041-codex-goal.md) 的 `GOAL.md → PLAN.md → PROGRESS.md` 外部状态文件互补：本文关注**单个动作的提交闸门**，Codex /goal 关注**任务级别的状态文件**。两者不冲突，前者更细粒度。
+这条链路与 [Codex /goal Runtime](ch09/043-codex-goal.md) 的 `GOAL.md → PLAN.md → PROGRESS.md` 外部状态文件互补：本文关注**单个动作的提交闸门**，Codex /goal 关注**任务级别的状态文件**。两者不冲突，前者更细粒度。
 
 ## 核心框架 2：Trace 回写 + 前馈/反馈 + 计算/语义控制
 
@@ -64,7 +64,7 @@ Agent 开工前，运行边界要清楚。至少包括：目标、停止条件�
 
 > "Prompt 如果只写'帮我做竞品分析'，它会自然扩散。运行时契约会写清读哪些站点、看哪些字段、输出几段、哪些地方不预测、什么时候停止、哪些链接打不开要标出来。Agent 任务越长，这份契约越重要。"
 
-与 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](ch04/503-agent.md) 的 "TERMINATION" 段直接相连——若飞把 Cowork 模板里的 `TERMINATION` 概念搬到了长任务 Agent Runtime。
+与 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](ch03/044-agent.md) 的 "TERMINATION" 段直接相连——若飞把 Cowork 模板里的 `TERMINATION` 概念搬到了长任务 Agent Runtime。
 
 ### 3.2 状态提交闸门
 
@@ -80,7 +80,7 @@ Agent 开工前，运行边界要清楚。至少包括：目标、停止条件�
 
 > "不是所有发生过的事情都值得记住。尤其是那些临时绕路、失败猜测、一次性偏好，如果被写进长期记忆，会变成未来判断里的噪声。"
 
-这与 [Hermes Agent Memory System Three Layer Architecture](ch04/503-agent.md) 的"记忆预算观"（注意力预算 + 上下文预算 + 判断预算）一致——若飞在 5 张卡续篇就提出过，本文再次强调。
+这与 [Hermes Agent Memory System Three Layer Architecture](ch03/044-agent.md) 的"记忆预算观"（注意力预算 + 上下文预算 + 判断预算）一致——若飞在 5 张卡续篇就提出过，本文再次强调。
 
 ### 3.3 失败回写
 
@@ -141,16 +141,16 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
 ## 与其他实体的关系
 
 - **基础理论**：
-  - [Harness Engineering Survey](ch04/503-agent.md)（CMU/Yale/Johns Hopkins，ETCLOVG 七层分类的源头）
-  - [Harness Engineering — ETCLOVG Taxonomy](ch04/503-agent.md)（七层分类的独立条目）
+  - [Harness Engineering Survey](ch03/044-agent.md)（CMU/Yale/Johns Hopkins，ETCLOVG 七层分类的源头）
+  - [Harness Engineering — ETCLOVG Taxonomy](ch03/044-agent.md)（七层分类的独立条目）
 - **同作者系列**：
   - Ralph Loop 与可接管 Harness（2026-05-10）（2026-05-10，三类漂移 + 可接手标准）
   - Hermes 5 张卡治理框架（2026-06-01）（2026-06-01，don't automate slop）
-  - [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](ch04/503-agent.md)（Cowork + TERMINATION 段）
-  - [Agent Memory 架构：过去影响未来](ch04/503-agent.md)（记忆预算的更早版本）
+  - [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](ch03/044-agent.md)（Cowork + TERMINATION 段）
+  - [Agent Memory 架构：过去影响未来](ch03/044-agent.md)（记忆预算的更早版本）
 - **互补实践**：
-  - [Codex /goal Runtime](ch09/041-codex-goal.md)（任务级状态文件 GOAL.md/PLAN.md/PROGRESS.md）
-  - [Anthropic 长时运行 Agent 架构](ch04/503-agent.md)（对抗式设计 + 合同谈判 + 审美量化）
+  - [Codex /goal Runtime](ch09/043-codex-goal.md)（任务级状态文件 GOAL.md/PLAN.md/PROGRESS.md）
+  - [Anthropic 长时运行 Agent 架构](ch03/044-agent.md)（对抗式设计 + 合同谈判 + 审美量化）
   - [六条经验：让 AI 编码 Agent 变得可控](ch04/150-ai.md)（Martin Fowler 反馈环共识）
   - [Harness design for long running apps](ch05/017-harness-design-long-running-apps.md)（Anthropic 官方长任务 Harness 解读）
   - [Martin Fowler：非确定性进了研发链路](ch04/150-ai.md)（前馈/反馈原文）
@@ -198,7 +198,7 @@ Martin Fowler 的控制二分法（feedforward/feedback × computational/inferen
 
 ### 2. 给 Agent 写运行时契约，从 TERMINATION 反推边界
 
-参考若飞在 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](ch04/503-agent.md) 里的 TERMINATION 段落，从"任务在哪里停"反推边界：目标、停止条件、输入来源、输出收件人、可读系统、可写动作、人确认动作、上一轮证据。契约不需要完美，但需要把"模糊地带"变成"明确条目"。这份契约应该落在 `AGENTS.md` 或项目入口文件里，让不同 Harness 读取但不依赖。
+参考若飞在 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](ch03/044-agent.md) 里的 TERMINATION 段落，从"任务在哪里停"反推边界：目标、停止条件、输入来源、输出收件人、可读系统、可写动作、人确认动作、上一轮证据。契约不需要完美，但需要把"模糊地带"变成"明确条目"。这份契约应该落在 `AGENTS.md` 或项目入口文件里，让不同 Harness 读取但不依赖。
 
 ### 3. 用"错误回写表"把每次失败变成一次系统改进
 

@@ -74,7 +74,7 @@ Automation Anywhere CEO Mihir Shukla 的表述揭示了其核心愿景：**AI �
 - [Strands Agents High Performance Genai Systems](ch04/150-ai.md)
 - [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](ch01/062-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.md)
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/150-ai.md)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch04/503-agent.md)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)- [the next generation of speculative decoding: dflash and spec](https://github.com/QianJinGuo/wiki/blob/main/entities/lmsys-dflash-speculative-decoding-2026-06.md)
 

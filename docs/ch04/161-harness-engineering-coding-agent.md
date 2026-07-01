@@ -108,30 +108,30 @@ Agent 在执行过程中被中断时，状态会停留在 IN_PROGRESS，但实�
 **3. 恢复逻辑必须基于产出物状态而非任务状态——这是长程任务可靠性的核心。** 具体实现：每个子任务明确定义"完成后会产出什么文件"，完成后立即写入；恢复时检查文件存在性和内容合法性，而非状态字段。Git Worktree 隔离可大幅简化半成品清理（直接丢弃 Worktree 目录）。
 **4. 分层重试策略的配置建议：内层恢复会话不设上限（只kill异常进程），中层带反馈重试限制 2-3 次，外层重新调度前先分析失败原因。** 若 FAILED 文件超过总数的 5%，优先排查任务规则本身是否有问题，而非立即重跑；盲目重跑只是浪费 Token。
 
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch03/044-agent.md)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
-- [Agent生产级Harness工程指南](ch04/503-agent.md)
-- [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
-- [Agent Harness 组件解析](ch04/310-ai.md)
+- [Agent生产级Harness工程指南](ch03/044-agent.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch03/044-agent.md)
+- [Agent Harness 组件解析](ch04/150-ai.md)
 
 ## 相关实体
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/378-claude-code-harness-deep-understanding.md)
-- [AI Coding Agent 记忆系统](ch04/310-ai.md)
+- [AI Coding Agent 记忆系统](ch04/150-ai.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
-- [柚漫剧 AI 全流程提效拆解](ch04/310-ai.md)
+- [柚漫剧 AI 全流程提效拆解](ch04/150-ai.md)
 - [Agent Skill 设计模式](ch04/245-skill.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](ch04/245-skill.md)
-- [Design Patterns for AI Agents 2026](ch04/310-ai.md)
+- [Design Patterns for AI Agents 2026](ch04/150-ai.md)
 
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [Agent Harness 架构](ch04/503-agent.md)
-- [Agent 自我改进的六条路](ch04/503-agent.md)
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
+- [Agent Harness 架构](ch03/044-agent.md)
+- [Agent 自我改进的六条路](ch03/044-agent.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/503-agent.md)
-- [Harness如何支撑Agent在生产环境稳定运行？](ch04/503-agent.md)
-- [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/044-agent.md)
+- [Harness如何支撑Agent在生产环境稳定运行？](ch03/044-agent.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch03/044-agent.md)
 
 ---
 

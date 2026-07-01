@@ -113,7 +113,7 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/073-claude-code.md)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/245-skill.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](ch03/073-claude-code.md)
-- [Claude Code MCP Server](ch07/024-claude-code-mcp-server.md)
+- [Claude Code MCP Server](ch07/025-claude-code-mcp-server.md)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/380-claude.md)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](ch03/073-claude-code.md)

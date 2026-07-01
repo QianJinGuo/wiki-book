@@ -37,7 +37,7 @@ METR（Model Evaluation and Threat Research）跟踪数据显示：AI 能以 50%
 
 这本质上是**外化长期记忆到文件系统**。类比人类工作：边工作边记工作日志，跨日工作先看昨日日志。
 
-这种"agent 即文件系统用户"的模式，与 [agent 记忆系统工程实践](ch04/503-agent.md) 中"分层记忆 + 检索增强"思路殊途同归。
+这种"agent 即文件系统用户"的模式，与 [agent 记忆系统工程实践](ch03/044-agent.md) 中"分层记忆 + 检索增强"思路殊途同归。
 
 ### 3. Skills——按需加载的指令 + 工具
 
@@ -93,7 +93,7 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 
 ### 与相邻观点的张力
 
-- 与 [苦味教训](ch04/303-the-bitter-lesson-versus-the-garbage-can.md) 的对照：Claude Code 是"工艺派"——精心设计的 harness + 强大模型。ChatGPT agent 才是"结果训练派"。两者代表了 harness 工程的两种路线。
+- 与 [苦味教训](ch04/306-the-bitter-lesson-versus-the-garbage-can.md) 的对照：Claude Code 是"工艺派"——精心设计的 harness + 强大模型。ChatGPT agent 才是"结果训练派"。两者代表了 harness 工程的两种路线。
 - 与 [CrewAI 迭代论](ch04/333-your-first-ai-agent-should-do-one-thing-badly.md)的对照：Claude Code 体现了"小时级自治"，CrewAI 强调"周迭代"——节奏不同，原则相通（都是迭代式而非瀑布式）。
 - 与 [管理即超能力](ch01/424-management-as-ai-superpower.md) 的同源：Karpathy 编程工作"变成管理 AI agent"是 Mollick 商业观察在技术领域的镜像。
 
@@ -108,14 +108,14 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [Your First Ai Agent Should Do One Thing Badly](ch04/333-your-first-ai-agent-should-do-one-thing-badly.md)
-- [The Bitter Lesson Versus The Garbage Can](ch04/303-the-bitter-lesson-versus-the-garbage-can.md)
+- [The Bitter Lesson Versus The Garbage Can](ch04/306-the-bitter-lesson-versus-the-garbage-can.md)
 - [Management As Ai Superpower](ch01/424-management-as-ai-superpower.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/074-claude-code.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [Co Existence And The End Of Co Intelligence](ch01/496-co-existence-and-the-end-of-co-intelligence.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
@@ -123,7 +123,7 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 - [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
 - [Context Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)
 - [an opinionated guide to using ai right now](ch09/074-an-opinionated-guide-to-using-ai-right-now.md)
-- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](ch04/503-agent.md)
+- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](ch03/044-agent.md)
 - [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/iqSixiNP9lxNKg7aVfHFCQ.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 

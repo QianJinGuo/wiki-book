@@ -13,10 +13,10 @@
 
 ## 相关实体
 - [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md)
-- [Claude Code Openclaw Memory Vector Db Doubt](ch03/073-claude-code.md)
-- [Claude Code Openclaw Memory Comparison](ch03/073-claude-code.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/073-claude-code.md)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](ch03/073-claude-code.md)
+- [Claude Code Openclaw Memory Vector Db Doubt](ch03/074-claude-code.md)
+- [Claude Code Openclaw Memory Comparison](ch03/074-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/074-claude-code.md)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](ch03/074-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
 

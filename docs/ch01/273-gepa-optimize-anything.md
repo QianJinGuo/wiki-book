@@ -106,8 +106,8 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 
 ## 相关概念
 - [LLM Artifact Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-artifact-optimization.md) — 文本/制品进化优化专题
-- [AlphaEvolve](ch04/503-agent.md) — DeepMind 代码进化型科学发现 Agent
-- [Agent Memory 模块化框架与评测](ch04/503-agent.md) — ICLR 2026 评测基准
+- [AlphaEvolve](ch03/044-agent.md) — DeepMind 代码进化型科学发现 Agent
+- [Agent Memory 模块化框架与评测](ch03/044-agent.md) — ICLR 2026 评测基准
 - [Skill RAG 清华 SRA](ch04/245-skill.md) — 技能增强型检索
 
 ## 深度分析
@@ -133,7 +133,7 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 - [腾讯研究院Ai速递 20260507](ch04/150-ai.md)
 - [Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](ch04/150-ai.md)
 - [Kasra Blog Llm Hacking Empirical Test](ch01/890-llm.md)
-- [Hermes Agent V014 Architecture Shugex](ch04/503-agent.md)
+- [Hermes Agent V014 Architecture Shugex](ch03/044-agent.md)
 ## 与 Hermes Agent Skill 互优化的关联
 
 **[Hermes Agent Skill 互优化](ch04/245-skill.md)**（KK大叔 4 轮互优化实验，2026-06）是 GEPA 通用优化方法论在 **Skill 自进化场景**的具体落地。

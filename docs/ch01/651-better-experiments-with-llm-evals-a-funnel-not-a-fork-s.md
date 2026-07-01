@@ -9,7 +9,7 @@
 - LLM Evaluation: A Funnel Not a Fork
 
 ## 相关实体
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/506-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/509-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
 - [Taobao Smart Shopping Guide Agent Evaluation Pzmx](ch04/503-agent.md)
 - [Multimodal Evaluators Mllm As Judge Image To Text](ch01/285-multimodal.md)
 - [Ai Skill Metrics System](ch04/245-skill.md)
