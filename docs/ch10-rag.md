@@ -816,7 +816,7 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Extreme Co Design Agentic Systems](ch04/041-nvidia-extreme-co-design-agentic-systems.md)
-- [Nvidia Agentic Ai Subsurface Engineering](ch04/321-nvidia-agentic-ai-subsurface-engineering.md)
+- [Nvidia Agentic Ai Subsurface Engineering](ch04/324-nvidia-agentic-ai-subsurface-engineering.md)
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/344-nvidia-secure-local-agent-nemoclaw-openclaw.md)
 - [Nvidia Telco Reasoning Models Nemo](ch01/189-nvidia-telco-reasoning-models-nemo.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
@@ -2580,7 +2580,7 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 ## 相关实体
 - [Introducing The Ettin Reranker Family](ch01/372-introducing-the-ettin-reranker-family.md)
 - [Claude Code Openclaw Usage Ettin](ch09/029-claude-code-openclaw-usage-ettin.md)
-- [Gemma 4 Multi Token Prediction Drafters](ch01/227-gemma-4-multi-token-prediction-drafters.md)
+- [Gemma 4 Multi Token Prediction Drafters](ch01/265-gemma-4-multi-token-prediction-drafters.md)
 - [Continuousasync](https://github.com/QianJinGuo/wiki/blob/main/entities/continuousasync.md)
 - [Continuous Async](https://github.com/QianJinGuo/wiki/blob/main/entities/continuous-async.md)
 

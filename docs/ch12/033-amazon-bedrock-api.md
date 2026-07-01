@@ -88,7 +88,7 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/150-ai.md)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](ch04/150-ai.md)
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](ch11/250-amazon-nova.md)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/529-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/572-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Autonomous Vulnerability Hunting with MCP](ch01/890-llm.md)
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/890-llm.md)

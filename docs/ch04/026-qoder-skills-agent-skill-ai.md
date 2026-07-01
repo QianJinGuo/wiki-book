@@ -381,7 +381,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
 - [AI Agent 工程师能力地图](ch04/150-ai.md)
-- [Skillx Zhejiang University](ch04/245-skill.md)
+- [Skillx Zhejiang University](ch07/045-skillx.md)
 - [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
 - [Gemini Deep Guide Prompt](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-deep-guide-prompt.md)
 - [Promptqueue Opengorilla Project Analysis Ljguo](https://github.com/QianJinGuo/wiki/blob/main/entities/promptqueue-opengorilla-project-analysis-ljguo.md)

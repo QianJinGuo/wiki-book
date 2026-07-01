@@ -70,7 +70,7 @@ AgentCore Identity的Token Vault存储access token和refresh token（当OAuth pr
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch03/044-agent.md)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch03/044-agent.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/150-ai.md)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/529-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/572-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/250-amazon-nova.md)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](ch11/197-amazon-quick.md)

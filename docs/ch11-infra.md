@@ -2,7 +2,7 @@
 
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
-> 本章收录 **252 篇**实体，按深度递增排列。
+> 本章收录 **253 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
-| ⭐⭐ 工程师 | 需编程基础 | 237 |
+| ⭐⭐ 工程师 | 需编程基础 | 238 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 11 |
 
 ---
@@ -270,19 +270,20 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 - [234. The art and science of hyperparameter optimization on Amazon Nova Forge](ch11/234-the-art-and-science-of-hyperparameter-optimization-on-amazon.md)
 - [235. SeedVR2 on Amazon SageMaker: 视频超分辨率部署实践](ch11/235-seedvr2-on-amazon-sagemaker.md)
 - [236. OpenAI models and Codex on Amazon Bedrock are now generally available](ch11/236-openai-models-and-codex-on-amazon-bedrock-are-now-generally.md)
-- [237. Amazon Quick ARNs: Cross-account migration and namespace permissions](ch11/237-amazon-quick-arns-cross-account-migration-and-namespace-per.md)
-- [238. Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph](ch11/238-democratizing-machine-learning-at-netflix-building-the-mode.md)
-- [239. Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity](ch11/239-reference-your-own-aws-secrets-manager-secrets-in-amazon-bed.md)
-- [240. Outpost VFX: Multi-GPU AI Training on AWS P5 for Visual Effects](ch11/240-outpost-vfx-multi-gpu-ai-training-on-aws-p5-for-visual-effe.md)
-- [241. Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway](ch11/241-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
-- [242. AgentScope Java 2.0：企业级分布式 Harness 框架](ch11/242-agentscope-java-2-0-harness.md)
-- [243. HiClaw 发布 v1.1.0，提供 Kubernetes 集群部署实现，支持 Hermes Worker 运行时](ch11/243-hiclaw-v1-1-0-kubernetes-hermes-worker.md)
-- [244. 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）](ch11/244-bedrock.md)
-- [245. Build a highly scalable serverless LangGraph multi-agent system](ch11/245-build-a-highly-scalable-serverless-langgraph-multi-agent-sys.md)
-- [246. AgentScope Java Harness Framework — 企业级 Agent 分布式场景的 Harness 实现](ch11/246-agentscope-java-harness-framework-agent-harness.md)
-- [247. Scaling ArchUnit with Nebula ArchRules](ch11/247-scaling-archunit-with-nebula-archrules.md)
-- [248. 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引](ch11/248-ingress-nginx-api-gateway-api.md)
-- [249. Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构](ch11/249-netflix-thinking-fast-slow-slow-fast-rl.md)
-- [250. 微调 Amazon Nova 模型实现精准邮件数据提取](ch11/250-amazon-nova.md)
-- [251. 55+ models, every modality. One API key, one bill.](ch11/251-55-models-every-modality-one-api-key-one-bill.md)
-- [252. GenPage: Netflix 端到端生成式首页构建](ch11/252-genpage-netflix.md)
+- [237. AWS DevOps Agent 接入中国区（二）：多账号扩展与跨云接入](ch11/237-aws-devops-agent.md)
+- [238. Amazon Quick ARNs: Cross-account migration and namespace permissions](ch11/238-amazon-quick-arns-cross-account-migration-and-namespace-per.md)
+- [239. Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph](ch11/239-democratizing-machine-learning-at-netflix-building-the-mode.md)
+- [240. Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity](ch11/240-reference-your-own-aws-secrets-manager-secrets-in-amazon-bed.md)
+- [241. Outpost VFX: Multi-GPU AI Training on AWS P5 for Visual Effects](ch11/241-outpost-vfx-multi-gpu-ai-training-on-aws-p5-for-visual-effe.md)
+- [242. Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway](ch11/242-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
+- [243. AgentScope Java 2.0：企业级分布式 Harness 框架](ch11/243-agentscope-java-2-0-harness.md)
+- [244. HiClaw 发布 v1.1.0，提供 Kubernetes 集群部署实现，支持 Hermes Worker 运行时](ch11/244-hiclaw-v1-1-0-kubernetes-hermes-worker.md)
+- [245. 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）](ch11/245-bedrock.md)
+- [246. Build a highly scalable serverless LangGraph multi-agent system](ch11/246-build-a-highly-scalable-serverless-langgraph-multi-agent-sys.md)
+- [247. AgentScope Java Harness Framework — 企业级 Agent 分布式场景的 Harness 实现](ch11/247-agentscope-java-harness-framework-agent-harness.md)
+- [248. Scaling ArchUnit with Nebula ArchRules](ch11/248-scaling-archunit-with-nebula-archrules.md)
+- [249. 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引](ch11/249-ingress-nginx-api-gateway-api.md)
+- [250. Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构](ch11/250-netflix-thinking-fast-slow-slow-fast-rl.md)
+- [251. 微调 Amazon Nova 模型实现精准邮件数据提取](ch11/251-amazon-nova.md)
+- [252. 55+ models, every modality. One API key, one bill.](ch11/252-55-models-every-modality-one-api-key-one-bill.md)
+- [253. GenPage: Netflix 端到端生成式首页构建](ch11/253-genpage-netflix.md)

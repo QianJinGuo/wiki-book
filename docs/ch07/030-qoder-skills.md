@@ -87,7 +87,7 @@
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 - [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/245-skill.md)
-- [SkillX — 层次化技能知识库](ch04/245-skill.md)
+- [SkillX — 层次化技能知识库](ch07/045-skillx.md)
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/245-skill.md)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/245-skill.md)
 - [SkillClaw](ch04/245-skill.md)
@@ -95,7 +95,7 @@
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/245-skill.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/192-tencent-vibe-coding-to-agentic-engineering-backend.md)
 - [Thin Harness Fat Skills](ch04/245-skill.md)
-- [code intelligence – changelog](ch04/412-code-intelligence-changelog.md)
+- [code intelligence – changelog](ch04/418-code-intelligence-changelog.md)
 
 ---
 

@@ -111,7 +111,7 @@
 ## 相关实体
 - [Pi Openclaw Coding Harness](ch11/209-openclaw.md)
 - [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](ch01/380-claude.md)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](ch01/380-claude.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](ch11/209-openclaw.md)
 - [Hermes Agent Vs Openclaw Comparison](ch03/044-agent.md)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/150-ai.md)
 

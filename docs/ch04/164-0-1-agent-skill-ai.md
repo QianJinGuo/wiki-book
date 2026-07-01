@@ -166,7 +166,7 @@ Ruby：`bundler/inline`
 - [Thin Harness Fat Skills](ch04/245-skill.md)
 
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/245-skill.md)
-- [SkillX — 层次化技能知识库](ch04/245-skill.md)
+- [SkillX — 层次化技能知识库](ch07/045-skillx.md)
 - [SkillClaw](ch04/245-skill.md)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/245-skill.md)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/245-skill.md)

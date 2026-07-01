@@ -663,7 +663,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](ch03/044-agent.md)
 - [Hermes Agent 记忆系统深度拆解](ch03/044-agent.md)
 - [Hermes Agent vs OpenClaw 对比分析](ch03/044-agent.md)
-- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](ch01/380-claude.md)
+- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](ch11/209-openclaw.md)
 - [DeerFlow vs Hermes vs OpenClaw 深度对比](ch11/209-openclaw.md)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/074-claude-code.md)
 - [Agent Harness 上下文管理：聊天记录还是工作集](ch03/044-agent.md)
@@ -3154,7 +3154,7 @@ CrewAI 的"不同 agent 访问同一 memory 但有不同 recall 权重"设计是
 ## 相关实体
 - [Memory Agent Systems Cobanov](ch04/480-memory-agent-systems-cobanov.md)
 - [Stripe Sessions 2026 Ai Agents](ch04/312-stripe-sessions-2026-ai-agents.md)
-- [Production Harness 12 Components Framework Comparison](ch05/034-harness-12.md)
+- [Production Harness 12 Components Framework Comparison](ch05/009-harness.md)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/245-skill.md)
 - [Agent Memory Architecture Past Influence Future Ruofei](ch04/030-agent-memory-architecture-past-influence-future-ruofei.md)
 
@@ -4356,7 +4356,7 @@ Agent 每次进入项目都要重新读代码、猜结构、问人。
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

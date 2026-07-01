@@ -48,7 +48,7 @@ First one was **uniformity**. Every service deploys the same way. No one secretl
 - 引用源：[Notnotp K8S Interviews Non Technical](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/notnotp-k8s-interviews-non-technical.md)
 ## 相关实体
 - [from doer to director: the ai mindset shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
-- [why internally-built ai fails fund accounting audits](ch01/624-why-internally-built-ai-fails-fund-accounting-audits.md)
+- [why internally-built ai fails fund accounting audits](ch01/677-why-internally-built-ai-fails-fund-accounting-audits.md)
 - [back up and restore your amazon eks cluster resources using](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
 
 ---

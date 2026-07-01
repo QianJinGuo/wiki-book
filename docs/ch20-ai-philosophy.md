@@ -1083,7 +1083,7 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 > -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gitlab-layoffs-memo-2026-5.md)
 ## 相关实体
 
-- [iii.dev](ch01/354-iii-dev.md)
+- [iii.dev](ch01/391-iii-dev.md)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工

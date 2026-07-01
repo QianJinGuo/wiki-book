@@ -47,7 +47,7 @@ The repo felt like a React frontend with a Node backend. The trap was in `app/te
 - 引用源：[Roman Linkedin Backdoor Supply Chain](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/roman-linkedin-backdoor-supply-chain.md)
 ## 相关实体
 - [from doer to director: the ai mindset shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
-- [why internally-built ai fails fund accounting audits](ch01/624-why-internally-built-ai-fails-fund-accounting-audits.md)
+- [why internally-built ai fails fund accounting audits](ch01/677-why-internally-built-ai-fails-fund-accounting-audits.md)
 - [back up and restore your amazon eks cluster resources using](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 

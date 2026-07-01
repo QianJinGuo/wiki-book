@@ -2,7 +2,7 @@
 
 ## Ch09.011 Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线
 
-> 📊 Level ⭐⭐ | 24.4KB | `entities/claude-code-first-year-retrospective-boris-cat-2026.md`
+> 📊 Level ⭐⭐ | 26.3KB | `entities/claude-code-first-year-retrospective-boris-cat-2026.md`
 
 # Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线
 
@@ -210,14 +210,26 @@ Claude Code 用一年时间，从两个 Slack 点赞走到了一个 PM 在写代
 ## 相关实体
 
 - [Loop Engineering Addy Osmani Challengehub](ch05/004-loop-engineering.md) — Loop 架构的工程实践
-- [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](ch04/503-agent.md) — Boris Cherny 对开发工具演进方向的判断
+- [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](ch03/044-agent.md) — Boris Cherny 对开发工具演进方向的判断
 - [Claude Opus 4 7 Launch](ch01/671-claude-opus-4-7.md) — Opus 4.7 的能力跃升
 - [Anthropic 95Pct Data Analysis Skill Stack Architecture](ch04/245-skill.md) — Skills 系统的架构设计
 - [Anthropic Mcp Revisited Tool Search Code Orchestration](ch07/016-anthropic-mcp.md) — 工具调用与代码编排
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md) — Claude Code 源码的工程实现深度解读
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md) — Claude Code 源码的工程实现深度解读
 - [Kimi Work Beta Foundation Model Company Advantage](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-beta-foundation-model-company-advantage.md) — 模型公司做 Agent 的战略逻辑
-- [Anthropic Biology Agent Data Infrastructure Virbench](ch04/503-agent.md) — 数据基础设施对 Agent 能力的影响
-- [claude code 一周年回顾：boris cherny + cat wu 对话](ch03/073-claude-code.md)
+- [Anthropic Biology Agent Data Infrastructure Virbench](ch03/044-agent.md) — 数据基础设施对 Agent 能力的影响
+- [claude code 一周年回顾：boris cherny + cat wu 对话](ch03/074-claude-code.md)
+
+## 第 2 来源 — 2026-06-30：子智能体默认后台运行
+
+2026 年 6 月 30 日，Claude Code 创造者 Boris Cherny 宣布下一版 Claude Code 的子智能体默认在后台运行。用户可以边跟 Claude 聊天，子智能体在后台完成代码重构、测试，并开出 PR。
+
+这一功能是 Claude Code 三条演进路线的集大成：4 月的 **Routines**（定时任务 + 事件触发）、5 月底的 **Dynamic workflows**（Ultracode——一个 AI 写编排脚本，子智能体分阶段推进并行验证）、以及现在的**后台子智能体默认运行**（无需手动指定「去后台跑」，它天生就在后台跑）。
+
+**Spotify 实战**：Spotify 工程副总裁 Niklas Gustavsson 披露了一组关键数据——Spotify 每天生产环境部署约 4500 次，73% 的 PR 由 AI 辅助完成。其超过 2000 万行代码的超级单体仓库中，工程师同时开 5 到 10 个 Claude 会话各自对应独立 git 工作树，多个智能体在后台并行干活，自己只负责看 diff、做决策。Niklas 给同行的建议是「代码库越一致、工具链越统一，Claude 在里面的表现就越好」。
+
+**组织影响**：Anthropic 增长团队已转向多招产品经理——每位工程师产出翻三倍，PM 与工程师配比从 1:8 变为 1:20。Boris Cherny 本人已八个月没手写过代码，有时管理数千甚至上万个 AI 智能体。他总结「当后台子智能体成为标配，写代码不再是工程师最重要的事情，决定干什么、判断对不对才是」。
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-background-sub-agents-boris-cherny-2026.md)
 
 ---
 

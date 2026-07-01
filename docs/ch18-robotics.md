@@ -141,7 +141,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 ## 与现有知识的链接
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/weilan-babyalpha-a3-machine-dog.md)
 - → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
-- → [NVIDIA边缘端LLM for机器人](ch01/208-nvidia-edge-first-llms-av-robotics.md) — 英伟达边缘AI方案对比
+- → [NVIDIA边缘端LLM for机器人](ch01/245-nvidia-edge-first-llms-av-robotics.md) — 英伟达边缘AI方案对比
 
 ## 深度分析
 ### 异构计算vs单芯片：架构选择的工程哲学
@@ -307,7 +307,7 @@ Physical AI is moving from research into production.
 
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/214-latest-open-artifacts-20-new-orgs-new-types-of-models.md)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch04/150-ai.md)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
@@ -376,7 +376,7 @@ Physical AI is moving from research into production.
 ### 关联实体
 
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/044-agent.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/209-openclaw.md)

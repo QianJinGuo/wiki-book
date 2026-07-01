@@ -45,7 +45,7 @@
 **实战踩坑：RequestExpired 凭证一小时后全失效。** Roles Anywhere 签发的临时凭证默认有效期 1 小时，MCP Server 长时间运行不刷新会导致所有 API 调用返回 RequestExpired。修复：启动时初始化凭证刷新循环，每 50 分钟重新调用 CreateSession 获取新凭证。
 
 ## 相关实体
-- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](ch07/041-aws-devops-agent-mcp-server.md)
+- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](ch07/042-aws-devops-agent-mcp-server.md)
 - [Aws Devops Agent 实战云网络故障自主调查与修复建议](ch03/044-agent.md)
 - [Habby Game Aws Devops Agent](ch03/044-agent.md)
 - [Outlook Ai Agent Aws Fargate Claude Agent Sdk](ch04/150-ai.md)

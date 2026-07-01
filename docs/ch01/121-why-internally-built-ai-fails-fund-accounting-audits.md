@@ -23,7 +23,7 @@
 - **AI 产品设计者**：面向金融行业的 AI 产品，必须从一开始内置审计轨迹（输入记录、逻辑版本、执行时间戳），而非事后补充；这是产品能否进入金融行业控制环境的准入门槛。
 
 ## 相关实体
-- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/624-why-internally-built-ai-fails-fund-accounting-audits.md)
+- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/677-why-internally-built-ai-fails-fund-accounting-audits.md)
 - [Why Internally-Built AI Fails Fund Accounting Audits](ch04/150-ai.md)
 - [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)- [agentic code review](ch03/044-agent.md)- [apple foundation models](ch01/380-claude.md)- [the oracle and the firm](https://github.com/QianJinGuo/wiki/blob/main/entities/calv-oracle-and-the-firm.md)- [what job interviews taught me about kubernetes](https://github.com/QianJinGuo/wiki/blob/main/entities/notnotp-k8s-interviews-non-technical.md)- [here](https://github.com/QianJinGuo/wiki/blob/main/entities/randsinrepose-we-dont-believe-you-rub.md)- [a backdoor in a linkedin job offer](ch04/150-ai.md)- [every frame perfect](ch01/156-every-frame-perfect.md)
 
