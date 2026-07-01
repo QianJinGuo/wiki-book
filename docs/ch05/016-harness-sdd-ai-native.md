@@ -14,7 +14,7 @@
 ## 相关实体
 - [Claude Code Prompt Context Harness](ch03/073-claude-code.md)
 - [Fudan Peking Ahe Agentic Harness Engineering](ch04/221-fudan-peking-ahe-agentic-harness-engineering.md)
-- [Pi Openclaw Coding Harness](ch11/207-openclaw.md)
+- [Pi Openclaw Coding Harness](ch11/209-openclaw.md)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/150-ai.md)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch04/150-ai.md)
 
@@ -197,7 +197,7 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 ## 相关实体（更新）
 - [Claude Code Prompt Context Harness](ch03/073-claude-code.md)
 - [Fudan Peking Ahe Agentic Harness Engineering](ch04/221-fudan-peking-ahe-agentic-harness-engineering.md)
-- [Pi Openclaw Coding Harness](ch11/207-openclaw.md)
+- [Pi Openclaw Coding Harness](ch11/209-openclaw.md)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/150-ai.md)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch04/150-ai.md)
 - [K/S/T 知识底座](ch04/503-agent.md)（相关：K/S/T 是知识用途分类，本文在工程层落地）

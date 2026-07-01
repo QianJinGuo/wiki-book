@@ -85,7 +85,7 @@ Cursor 另外看了两个代理指标：
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/061-harness-engineering.md)
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/207-openclaw.md)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/209-openclaw.md)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/150-ai.md)
 
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](ch04/503-agent.md)

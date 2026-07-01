@@ -2,7 +2,7 @@
 
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
-> 本章收录 **250 篇**实体，按深度递增排列。
+> 本章收录 **252 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
-| ⭐⭐ 工程师 | 需编程基础 | 235 |
+| ⭐⭐ 工程师 | 需编程基础 | 237 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 11 |
 
 ---
@@ -256,31 +256,33 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 - [220. Amazon launches Supply Chain Services for businesses of all sizes](ch11/220-amazon-launches-supply-chain-services-for-businesses-of-all.md)
 - [221. AWS SageMaker Async Inference 内联 Payload 支持](ch11/221-aws-sagemaker-async-inference-payload.md)
 - [222. Anthropic 工程团队 1680 人画像：不是博士实验室，是 Infra 工程军团](ch11/222-anthropic-1680-infra.md)
-- [223. Amazon Bedrock Managed Entitlements — 多账号模型访问治理](ch11/223-amazon-bedrock-managed-entitlements.md)
-- [224. AWS Bedrock AgentCore](ch11/224-aws-bedrock-agentcore.md)
-- [225. AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战](ch11/225-aws-bedrock-agentcore-equipment-repair-assistant-ai.md)
-- [226. Task Queue Priority and Fairness: Your Task Queue, your way](ch11/226-task-queue-priority-and-fairness-your-task-queue-your-way.md)
-- [227. It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore](ch11/227-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on.md)
-- [228. 基于 Application Inference Profile 为 Amazon Bedrock 构建分业务单元的近实时成本告警](ch11/228-application-inference-profile-amazon-bedrock.md)
-- [229. Gemma 4 模型发布 — Google DeepMind 开源权重家族在 Amazon Bedrock 上线](ch11/229-gemma-4-google-deepmind-amazon-bedrock.md)
-- [230. Netflix OCI-Agent: 人机协同因果推断 Agentic Workflow](ch11/230-netflix-oci-agent-agentic-workflow.md)
-- [231. Network Firewall 部署小指南 (六) 利用 Amazon Bedrock AI 实现Network Firewall规则冲突的实时检测与智能分析](ch11/231-network-firewall-amazon-bedrock-ai-network-firewall.md)
-- [232. 使用 Amazon Cognito 多区域复制提高应用程序韧性](ch11/232-amazon-cognito.md)
-- [233. The art and science of hyperparameter optimization on Amazon Nova Forge](ch11/233-the-art-and-science-of-hyperparameter-optimization-on-amazon.md)
-- [234. SeedVR2 on Amazon SageMaker: 视频超分辨率部署实践](ch11/234-seedvr2-on-amazon-sagemaker.md)
-- [235. OpenAI models and Codex on Amazon Bedrock are now generally available](ch11/235-openai-models-and-codex-on-amazon-bedrock-are-now-generally.md)
-- [236. Amazon Quick ARNs: Cross-account migration and namespace permissions](ch11/236-amazon-quick-arns-cross-account-migration-and-namespace-per.md)
-- [237. Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph](ch11/237-democratizing-machine-learning-at-netflix-building-the-mode.md)
-- [238. Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity](ch11/238-reference-your-own-aws-secrets-manager-secrets-in-amazon-bed.md)
-- [239. Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway](ch11/239-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
-- [240. AgentScope Java 2.0：企业级分布式 Harness 框架](ch11/240-agentscope-java-2-0-harness.md)
-- [241. HiClaw 发布 v1.1.0，提供 Kubernetes 集群部署实现，支持 Hermes Worker 运行时](ch11/241-hiclaw-v1-1-0-kubernetes-hermes-worker.md)
-- [242. 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）](ch11/242-bedrock.md)
-- [243. Build a highly scalable serverless LangGraph multi-agent system](ch11/243-build-a-highly-scalable-serverless-langgraph-multi-agent-sys.md)
-- [244. AgentScope Java Harness Framework — 企业级 Agent 分布式场景的 Harness 实现](ch11/244-agentscope-java-harness-framework-agent-harness.md)
-- [245. Scaling ArchUnit with Nebula ArchRules](ch11/245-scaling-archunit-with-nebula-archrules.md)
-- [246. 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引](ch11/246-ingress-nginx-api-gateway-api.md)
-- [247. Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构](ch11/247-netflix-thinking-fast-slow-slow-fast-rl.md)
-- [248. 微调 Amazon Nova 模型实现精准邮件数据提取](ch11/248-amazon-nova.md)
-- [249. 55+ models, every modality. One API key, one bill.](ch11/249-55-models-every-modality-one-api-key-one-bill.md)
-- [250. GenPage: Netflix 端到端生成式首页构建](ch11/250-genpage-netflix.md)
+- [223. SES Sender: Generative AI Email Marketing Platform on AWS](ch11/223-ses-sender-generative-ai-email-marketing-platform-on-aws.md)
+- [224. Amazon Bedrock Managed Entitlements — 多账号模型访问治理](ch11/224-amazon-bedrock-managed-entitlements.md)
+- [225. AWS Bedrock AgentCore](ch11/225-aws-bedrock-agentcore.md)
+- [226. AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战](ch11/226-aws-bedrock-agentcore-equipment-repair-assistant-ai.md)
+- [227. Task Queue Priority and Fairness: Your Task Queue, your way](ch11/227-task-queue-priority-and-fairness-your-task-queue-your-way.md)
+- [228. It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore](ch11/228-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on.md)
+- [229. 基于 Application Inference Profile 为 Amazon Bedrock 构建分业务单元的近实时成本告警](ch11/229-application-inference-profile-amazon-bedrock.md)
+- [230. Gemma 4 模型发布 — Google DeepMind 开源权重家族在 Amazon Bedrock 上线](ch11/230-gemma-4-google-deepmind-amazon-bedrock.md)
+- [231. Netflix OCI-Agent: 人机协同因果推断 Agentic Workflow](ch11/231-netflix-oci-agent-agentic-workflow.md)
+- [232. Network Firewall 部署小指南 (六) 利用 Amazon Bedrock AI 实现Network Firewall规则冲突的实时检测与智能分析](ch11/232-network-firewall-amazon-bedrock-ai-network-firewall.md)
+- [233. 使用 Amazon Cognito 多区域复制提高应用程序韧性](ch11/233-amazon-cognito.md)
+- [234. The art and science of hyperparameter optimization on Amazon Nova Forge](ch11/234-the-art-and-science-of-hyperparameter-optimization-on-amazon.md)
+- [235. SeedVR2 on Amazon SageMaker: 视频超分辨率部署实践](ch11/235-seedvr2-on-amazon-sagemaker.md)
+- [236. OpenAI models and Codex on Amazon Bedrock are now generally available](ch11/236-openai-models-and-codex-on-amazon-bedrock-are-now-generally.md)
+- [237. Amazon Quick ARNs: Cross-account migration and namespace permissions](ch11/237-amazon-quick-arns-cross-account-migration-and-namespace-per.md)
+- [238. Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph](ch11/238-democratizing-machine-learning-at-netflix-building-the-mode.md)
+- [239. Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity](ch11/239-reference-your-own-aws-secrets-manager-secrets-in-amazon-bed.md)
+- [240. Outpost VFX: Multi-GPU AI Training on AWS P5 for Visual Effects](ch11/240-outpost-vfx-multi-gpu-ai-training-on-aws-p5-for-visual-effe.md)
+- [241. Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway](ch11/241-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
+- [242. AgentScope Java 2.0：企业级分布式 Harness 框架](ch11/242-agentscope-java-2-0-harness.md)
+- [243. HiClaw 发布 v1.1.0，提供 Kubernetes 集群部署实现，支持 Hermes Worker 运行时](ch11/243-hiclaw-v1-1-0-kubernetes-hermes-worker.md)
+- [244. 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）](ch11/244-bedrock.md)
+- [245. Build a highly scalable serverless LangGraph multi-agent system](ch11/245-build-a-highly-scalable-serverless-langgraph-multi-agent-sys.md)
+- [246. AgentScope Java Harness Framework — 企业级 Agent 分布式场景的 Harness 实现](ch11/246-agentscope-java-harness-framework-agent-harness.md)
+- [247. Scaling ArchUnit with Nebula ArchRules](ch11/247-scaling-archunit-with-nebula-archrules.md)
+- [248. 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引](ch11/248-ingress-nginx-api-gateway-api.md)
+- [249. Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构](ch11/249-netflix-thinking-fast-slow-slow-fast-rl.md)
+- [250. 微调 Amazon Nova 模型实现精准邮件数据提取](ch11/250-amazon-nova.md)
+- [251. 55+ models, every modality. One API key, one bill.](ch11/251-55-models-every-modality-one-api-key-one-bill.md)
+- [252. GenPage: Netflix 端到端生成式首页构建](ch11/252-genpage-netflix.md)

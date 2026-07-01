@@ -115,10 +115,10 @@ AI加速了一切，包括焦虑本身。「不用这个工具就会被淘汰」
 
 ## 相关实体
 - [Karpathy Llm Full Stack Course 2026井底之硅](ch01/890-llm.md)
-- [Joyai Echo Long Video Framework Jd](ch04/310-ai.md)
+- [Joyai Echo Long Video Framework Jd](ch04/150-ai.md)
 - [Kiro Job Scheduler Eventbridge Ecs Fargate](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md)
 - [Bitter Lesson Garbage Can Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/bitter-lesson-garbage-can-mollick.md)
-- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](ch04/310-ai.md)
+- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-vibe-engineering-silicon-era-jiangtao.md)
 

@@ -56,11 +56,11 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [Agent Harness 解析：智能体架构深度拆解](ch04/503-agent.md)
 - [From Agent Protocol to Harness Skill](ch04/354-from-agent-protocol-to-harness-skill.md)
 - [Agent Memory 架构解析](ch04/503-agent.md)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/310-ai.md)
-- [AI Native 时代 —— 研发组织何去何从](ch04/310-ai.md)
+- [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/150-ai.md)
+- [AI Native 时代 —— 研发组织何去何从](ch04/150-ai.md)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch04/503-agent.md)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](ch04/503-agent.md)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](ch04/310-ai.md)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](ch04/150-ai.md)
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/528-deepseek-v4.md)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)
 - [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
@@ -70,7 +70,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [Thin Harness Fat Skills](ch04/245-skill.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [AI Agent 工程师能力地图](ch04/310-ai.md)
+- [AI Agent 工程师能力地图](ch04/150-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 第 2 来源：前端 T 站 4 模式选型决策树（2026-06-07）

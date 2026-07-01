@@ -1,38 +1,35 @@
-# 曾经爆火的小龙虾凉了？现在圈内都在用这款新 Agent
+# Agent 记忆存储方案深度洞察
 
-## Ch01.828 曾经爆火的小龙虾凉了？现在圈内都在用这款新 Agent
+## Ch01.828 Agent 记忆存储方案深度洞察
 
-> 📊 Level ⭐⭐ | 3.4KB | `entities/pilotdeck-data派thu-2026.md`
+> 📊 Level ⭐⭐ | 3.5KB | `entities/agent-memory-storage-six-schools-quantumtransf-debate-frank.md`
 
-# 曾经爆火的小龙虾凉了？现在圈内都在用这款新 Agent
+# Agent 记忆存储方案深度洞察
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pilotdeck-data派thu-2026.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)
 
 ## 深度分析
 
-曾经爆火的小龙虾凉了？现在圈内都在用这款新 Agent 涉及agent领域的核心技术议题。
+Agent 记忆存储方案深度洞察 涉及agent领域的核心技术议题。
 ### 核心观点
-1. 现在圈内都在用这款新 Agent
-> 数据派THU 2026-06-09 17:00 报道，转发新智元原稿。
-2. 同一清华 PilotDeck 开源事件的第 2 中文译本，与 2026-05-28 ASI启示录译本形成多公众号传播。
-3. ## 三大核心场景实测（数据派 THU 视角独到之处）
-### 1.
-4. 三层舱结构：文件系统 + 记忆 + 技能
-- **专属文件系统**：哪些文件归这个项目、AI 生成了什么，边界清楚
-- **专属记忆**：Project Memory（项目定义+进度）+ Collaboration Feedback（用户偏好），全可改可追源
-- **专属技能**：Skill 应用商店一键安装到对应 WorkSpace（game-asset-finder → 游戏舱，minimax-pdf → 文档舱）
-**对比叙事**: "别家的 WorkSpace 是文件夹加静态规则。
-5. PilotDeck 的 WorkSpace 是 AI 的完整生存环境。
+1. # Agent 记忆存储方案深度洞察
+> 原文讨论来自 Twitter @QuantumTransf，围绕 ai-memory 项目的 Wiki 编译模式与原始数据直存模式的争论展开。
+2. ## 一条推文引发的争论
+最近，AI 编码 Agent 的记忆方案在社区引发热议。
+3. @QuantumTransf 对 ai-memory 项目提出了尖锐质疑：
+> 我没明白为什么要把 agent session 编译成 wiki。
+4. 原始 session 本来就是结构化数据——messages、tool calls、tool results、files、subagents。
+5. 直接放进 SQLite，就已经是一个很强的结构。
 
 ### 内容结构
-- 曾经爆火的小龙虾凉了？现在圈内都在用这款新 Agent
-- 三大核心场景实测（数据派 THU 视角独到之处）
-- 1. 跨域 WorkSpace 并行：奶茶店 + 数据大屏 + 性格测试
-- 2. 三层舱结构：文件系统 + 记忆 + 技能
-- 3. Token 账单砍一半（具体数据 + 路由机制）
-- 4. 端侧模型自动调度（独到技术细节）
-- 5. 记忆白盒 + Dream + Rollback
-- 立场与叙事
+- Agent 记忆存储方案深度洞察
+- 一条推文引发的争论
+- 当前主流方案全景
+- 记忆分层模型：行业共识
+- 核心争论：信息压缩 vs 信息保真
+- 检索策略演进
+- 前沿趋势
+- 知识图谱记忆
 
 ### 技术要点
 
@@ -41,18 +38,22 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/207-openclaw.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/503-agent.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/209-openclaw.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
 2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
 3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现
 4. **风险管控**: 引入新技术需评估对现有系统稳定性的影响，做好降级预案
+
+## 相关实体
+
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 
 ---
 

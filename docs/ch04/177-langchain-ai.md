@@ -79,7 +79,7 @@ LangChain 创始人 Harrison Chase 系统分析 AI 智能体与沙盒集成的�
 ## 相关主题
 - [Harness Generator Evaluator Anthropic](ch01/707-anthropic.md) — Generator-Evaluator 架构
 - [Agent Harness Engineering Survey 2026](ch04/503-agent.md) — Agent Harness 工程综述
-- [Pi Openclaw Coding Harness](ch03/012-openclaw.md) — OpenClaw Coding Harness
+- [Pi Openclaw Coding Harness](ch11/209-openclaw.md) — OpenClaw Coding Harness
 
 ## 深度分析
 

@@ -13,7 +13,7 @@ In this post, we explore how Claude Platform on AWS works and how you can start 
 
 ## 相关实体
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/380-claude.md)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/195-amazon-quick.md)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/197-amazon-quick.md)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
 - [Claude For Small Business](ch01/380-claude.md)
 - [Anthropic Claude Managed Agents Platform 2026](ch04/503-agent.md)

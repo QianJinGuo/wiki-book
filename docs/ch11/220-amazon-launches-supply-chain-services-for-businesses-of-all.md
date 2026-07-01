@@ -41,7 +41,7 @@ ASCS 三大模块——Move（全球 freight 网络）、Store（warehouse + 第
 ## Tags
 #amazon #logistics #supply-chain #ecommerce
 ## 相关实体
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/195-amazon-quick.md)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/197-amazon-quick.md)
 - [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](ch11/014-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.md)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens 1](ch04/150-ai.md)
 - [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)

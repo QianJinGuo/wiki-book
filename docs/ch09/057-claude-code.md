@@ -1,63 +1,132 @@
-# 两万字详解Claude Code源码核心机制
+# Claude Code 七种自定义方法：官方全景指南
 
-## Ch09.057 两万字详解Claude Code源码核心机制
+## Ch09.057 Claude Code 七种自定义方法：官方全景指南
 
-> 📊 Level ⭐⭐ | 9.5KB | `entities/claude-code-20000-char-source-analysis.md`
+> 📊 Level ⭐⭐ | 10.2KB | `entities/claude-code-seven-customization-methods-anthropic-official.md`
 
-## 关键洞察
-本页分析了 两万字详解Claude Code源码核心机制 的核心内容。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-20000-char-source-analysis.md)
+# Claude Code 七种自定义方法：官方全景指南
+
+Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其对比。每种方法影响三件事：指令何时加载进上下文、压缩后是否持续生效、指令权重有多高。
+
+与 [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch07/006-claude-code-skills-mcp-rules-source-analysis.md) 互补——源码分析侧重底层 API 注入位置，本文侧重官方使用指南和决策框架。
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
+
+## 七种方法对比
+
+| 方法 | 何时加载 | 压缩行为 | 上下文成本 | 适用场景 |
+|------|----------|----------|------------|----------|
+| CLAUDE.md（根目录） | 会话开始时，整个会话保留 | 记忆化；压缩后重新读取 | 高（每行都消耗 token） | 构建命令、目录布局、编码约定 |
+| CLAUDE.md（子目录） | 按需加载（读取该子目录文件时） | 丢失，直到再次触碰 | 低 | 子目录专属约定 |
+| 规则 | 用户级：会话开始时；路径作用域：匹配文件被触碰时 | 压缩后重新注入 | 中（除非限定路径） | 具体约束（如 API handler 用 Zod 校验） |
+| 技能 | 会话开始时加载名称/描述；调用时加载全文 | 共享预算内重新注入；最早调用的先丢弃 | 低（调用时才加载） | 流程型工作（部署、发布检查清单） |
+| 子智能体 | 名称/描述/工具列表加载；正文 Agent 调用时才加载 | 只有最终摘要返回主会话 | 低（隔离上下文窗口） | 并行工作、侧任务（深度搜索、日志分析） |
+| 钩子 | 生命周期事件触发 | 完全绕过压缩 | 低（配置在主上下文外） | 确定性自动化（linter、Slack、阻止命令） |
+| 输出风格 | 会话开始时注入系统提示词 | 永不压缩 | 高（覆盖默认系统提示词） | 显著改变角色 |
+| 追加系统提示词 | 会话开始时，CLI flag 传入 | 永不压缩；只作用于本次调用 | 中（首次请求后缓存） | 语气、回复长度、格式偏好 |
+
+## CLAUDE.md：控制在 200 行以内
+
+- **根目录 CLAUDE.md**：始终加载，压缩后重新读取。适合构建命令、monorepo 结构、团队规范
+- **子目录 CLAUDE.md**：按需加载（读取该子目录文件时）。适合子目录专属约定
+- monorepo 中给每个团队目录放自己的子目录 CLAUDE.md，用 `claudeMdExcludes` 跳过不相关团队文件
+- 组织级标准（安全策略、合规）通过 MDM 部署，不允许个人排除
+
+→ [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/073-claude-code.md)
+
+## 规则：路径作用域是关键
+
+```yaml
+---
+paths:
+  - "src/api/**"
+  - "**/*.handler.ts"
+---
+All API handlers must validate input with Zod before processing.
+```
+
+未限定作用域的规则 = CLAUDE.md（始终加载，始终消耗 token）。
+
+## 技能：流程型指令的归宿
+
+会话开始时只加载名称和描述；完整正文调用时才加载。压缩时在已调用技能的共享预算内重新注入，最早调用的先丢弃。
+
+部署流程、发布检查清单、审查流程 → 技能，不是 CLAUDE.md。
+
+→ [Claude Code 源码解析](ch07/006-claude-code-skills-mcp-rules-source-analysis.md)
+
+## 子智能体：隔离是核心价值
+
+在自己的全新上下文窗口里运行，返回主会话的只有最终摘要。最多嵌套五层，动态工作流可编排数十到数百个后台 agent。
+
+深度搜索、日志分析、依赖审计 → 子智能体。流程在主线程展开方便调整 → 技能。
+
+→ [Claude Code 子智能体上下文卫生](ch03/073-claude-code.md)
+
+## 钩子：确定性执行
+
+类型：command、HTTP、mcp_tool、prompt、agent。所有 hook 确定性触发；前三类确定性执行，后两类用 Claude 判断。
+
+上下文成本低——配置位于主上下文之外。PreToolUse hook 可以用退出码 2 拒绝工具调用。
+
+→ [Claude Code Hooks 完整指南](ch04/150-ai.md)
+
+## 输出风格：权重最高，谨慎使用
+
+位于系统提示词中，指令遵循权重最高。自定义输出风格会替换默认输出风格，丢弃所有默认指令（变更范围界定、代码注释规范、安全问题处理、验证习惯等）。
+
+内置风格 Proactive、Explanatory、Learning 覆盖了最常见的需求。
+
+## 快速建议
+
+| 你在做的事 | 应该换成 |
+|-----------|----------|
+| CLAUDE.md 写"每次 X，都要 Y" | hook（确定性执行） |
+| CLAUDE.md 写"绝不要做这件事" | hooks + 权限（护栏） |
+| CLAUDE.md 写 30 行流程 | 技能（按需加载） |
+| API 规则没有路径限定 | paths 作用域规则 |
+| 个人偏好写进项目级 CLAUDE.md | 用户级本地文件 |
+
+核心原则：**CLAUDE.md 保存事实（构建命令、布局、约定），不保存流程和护栏。**
 
 ## 深度分析
-Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：不是依赖模型自身的推理能力来管理复杂任务，而是通过多层机制将不确定性转化为可控行为。与 OpenCode、Codex、Gemini-CLI 等竞品相比，Claude Code 在以下维度展现了更成熟的工程思考。
-**动态 System Prompt 机制**是理解 Claude Code 的第一个关键。传统框架使用静态 prompt，启动后不变；Claude Code 则通过 `buildEffectiveSystemPrompt` 函数在每次会话启动时动态组装内容，涵盖工具描述、MCP 服务器指令、Skill 索引、环境信息等六层优先级。这一设计使系统能够根据当前环境状态调整模型的行为契约，而非用一套固定规则应对所有场景。
-**并发调度与延迟加载**构成了工具层的核心创新。每个工具通过 `isConcurrencySafe` 声明并发安全性，调度层据此将工具调用分成批次——只读工具并行执行、写操作串行执行。更精妙的是 `shouldDefer + ToolSearch` 的延迟加载机制：非必需的复杂工具（如 Plan Mode）在初始请求中只携带空壳 schema，模型通过 `ToolSearch` 发现后才会注入完整描述。这套机制通过独立的 `deferred_tools_delta` attachment 发送，避免破坏 prompt cache 的前缀复用。Token 优化效果显著：对于接入十几个 MCP 服务器的企业场景，每次任务只注入实际用到的工具描述。
-**五层 Context 压缩体系**是 Claude Code 最复杂、也最能体现工程细腻度的部分。从最轻量的工具结果大小限制（超限写磁盘替换为路径引用），到基于规则的 `snipCompact` 消息截断，再到利用 API `cache_edits` 参数在服务端屏蔽旧工具结果的 `microCompact`，最后到保留近期原始粒度的 `contextCollapse` 和完整摘要的 `autoCompact`——每层之间互斥且递进覆盖，既避免重复工作，又确保在不同压力下都有合适的压缩策略应对。
-**Hooks 系统**将 Claude Code 从"命令行工具"升格为"可扩展平台"。24 种 Hook 事件覆盖工具调用前后、Sub-Agent 生命周期、权限决策、Session 压缩等关键节点，允许外部脚本以 JSON 格式返回决策来介入 Agent 行为。这是 Claude Code 区别于所有竞品最显著的特性，也是其被定位为"平台"而非单纯工具的核心依据。
-**子 Agent 系统**通过 `AgentTool` 统一入口支持七种执行模式：同步/异步后台、自动转后台、Worktree 隔离、远端执行、Fork 模式和 Teammate 模式。内置四类 Agent 类型（general-purpose、Explore、Plan、claude-code-guide）加 YAML 自定义，父子 Context 共享机制（Fork 模式共享完整对话历史）确保了复杂任务分解的可行性。
+
+### 上下文成本是自定义方法选择的核心约束
+
+Claude Code 七种自定义方法的本质区别在于**上下文成本模型**：CLAUDE.md 根目录每行都消耗 token，技能按需加载，钩子完全绕过压缩，输出风格永不压缩。这意味着选择自定义方法不仅是"功能匹配"问题，更是"token 预算分配"问题。在长会话中，根目录 CLAUDE.md 过长会挤占实际编码所需的上下文空间。
+
+### "事实 vs 流程 vs 护栏"的三层分类法
+
+官方给出的核心原则——"CLAUDE.md 保存事实，不保存流程和护栏"——实际上定义了自定义方法的三层分类法：事实（构建命令、目录布局）放 CLAUDE.md，流程（部署、发布检查清单）放技能，护栏（绝不要做的事）放钩子+权限。这个分类法解决了开发者最常见的困惑："这段指令应该放在哪里？"。
+
+### 子智能体的隔离价值不仅是上下文卫生
+
+子智能体在独立上下文窗口中运行，只返回最终摘要。这不仅是上下文卫生（避免污染主会话），更是**认知隔离**——子智能体可以大胆探索、试错、回滚，不影响主会话的决策状态。深度搜索、日志分析、依赖审计等"侧任务"天然适合子智能体，因为它们的中间过程对主任务没有价值。
+
+### 钩子是"确定性自动化"的唯一可靠路径
+
+Claude Code 中，钩子是唯一能保证"确定性触发、确定性执行"的自定义方法。CLAUDE.md 中的"每次 X，都要 Y"依赖 LLM 的指令遵循能力，而钩子通过退出码 2 拒绝工具调用是硬性的。对于安全护栏（阻止危险命令）和质量门控（lint 检查），钩子比 CLAUDE.md 中的软规则可靠得多。
+
+### 输出风格的"权重最高"是双刃剑
+
+输出风格位于系统提示词中，指令遵循权重最高——但自定义输出风格会替换默认输出风格，丢弃所有默认指令。这意味着开发者在自定义输出风格时，必须手动重新包含变更范围界定、代码注释规范、安全问题处理等默认行为，否则会意外丢失这些保护。
 
 ## 实践启示
-基于源码分析，Claude Code 的设计为 AI 工程化实践提供了几个重要启示。
-**架构层面**：Agent 系统的核心挑战不是模型能力，而是**状态管理和资源控制**。Claude Code 的预算管理体系（Token 预算、成本预算、工具结果大小限制、轮次预算四维控制）为 Agent 失控问题提供了工程化解法。在构建自研 Agent 框架时，应尽早考虑多维度预算控制，而非仅依赖"对话轮次上限"。
-**工具设计层面**：`isConcurrencySafe + 分批调度`机制表明，只读工具与写操作应严格区分并发策略。这不是模型能"学会"的约定，而是框架层面必须强制执行的约束。工具的 `maxResultSizeChars` 和磁盘持久化机制同样重要——大文件读取、批量搜索等场景若无结果大小控制，极易撑爆 Context。
-**权限与安全层面**：Plan Mode 的权限系统约束（`mode='plan'` 写操作在权限层直接拦截）比"在 prompt 中要求模型只读"要可靠得多。对于需要人工审批的高风险操作，应设计独立的权限状态机，而非依赖模型自我约束。
-**Context 管理层面**：`microCompact` 利用 `cache_edits` 在不修改本地消息序列的情况下实现服务端 token 屏蔽，是一项精妙的工程技巧。它解决了一个看似矛盾的问题：如何在压缩历史的同时保持 prompt cache 有效性。Fork 模式下的字节级 system prompt 复制也同理——确保长会话场景下 cache 命中率 。
-**扩展性层面**：MCP 协议和 Hooks 系统代表了 Agent 框架的两种扩展路径——前者通过标准协议接入外部工具生态，后者通过事件介入框架行为。构建生产级 Agent 平台时，这两层扩展能力是区分" demo "与"产品"的关键分水岭 。
 
-## 相关实体
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
-- [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-source-analysis.md)
-- [Claude Code 源码深度解析（13 核心机制）](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-source-deep-dive-warrior.md)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-source-architecture.md)
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-open-source-model-enterprise-practice.md)
-- [Claude Code 设计原则与对照分析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture-analysis.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台-v2.md)
-- [Harness如何支撑Agent在生产环境稳定运行？](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-production-agent-engineering-deficit.md)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](https://github.com/QianJinGuo/wiki/blob/main/entities/martin-fowler-ai-rd-harness-nondeterminism.md)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-reliability-context-drift-tool-hallucination.md)
-- [Boris Cherny — 从 IDE 到 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-ide-to-agent-console.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-long-term-agent-tasks.md)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md)
-- [Claude Code 可控性：软规则无法变成硬约束](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-governance-soft-rules.md)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/long-running-agent-ralph-loop-handover-harness-ruofei.md)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [AutoResearch：多 Agent 自动化软件开发](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-multi-agent-software.md)
-- [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
-- [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
-- [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-core-internals.md)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-发布官方报告承认存在-3-处质量退化问题.md)
+1. **CLAUDE.md 控制在 200 行以内**：每行都消耗 token，过长会挤占编码上下文。monorepo 中用子目录 CLAUDE.md 分散负载
+2. **用"事实-流程-护栏"三分法选择自定义方法**：事实放 CLAUDE.md，流程放技能，护栏放钩子。避免把所有东西堆进 CLAUDE.md
+3. **路径作用域规则是中等规模项目的最优解**：未限定作用域的规则 = CLAUDE.md（始终加载），路径限定后按需加载，兼顾精确性和上下文效率
+4. **安全护栏必须用钩子而非 CLAUDE.md**：阻止危险命令、强制 lint 检查等场景，钩子的确定性执行远比 LLM 指令遵循可靠
+5. **谨慎自定义输出风格**：除非明确需要改变 Claude 的角色定位，否则使用内置风格（Proactive、Explanatory、Learning）更安全
 
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
-- [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+## 相关链接
+
+- 原文：https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more
+- → [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch07/006-claude-code-skills-mcp-rules-source-analysis.md)
+- → [Claude Code 治理：软规则与硬约束](ch03/073-claude-code.md)
+- → [Claude Code 子智能体上下文卫生](ch03/073-claude-code.md)
+- → [Claude Code Hooks 完整指南](ch04/150-ai.md)
+- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 
 ---
 

@@ -664,7 +664,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 - [Hermes Agent 记忆系统深度拆解](ch04/503-agent.md)
 - [Hermes Agent vs OpenClaw 对比分析](ch04/503-agent.md)
 - [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](ch01/380-claude.md)
-- [DeerFlow vs Hermes vs OpenClaw 深度对比](ch11/207-openclaw.md)
+- [DeerFlow vs Hermes vs OpenClaw 深度对比](ch11/209-openclaw.md)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/073-claude-code.md)
 - [Agent Harness 上下文管理：聊天记录还是工作集](ch04/503-agent.md)
 - [Claude Code Subagents 详解：上下文污染隔离](ch03/073-claude-code.md)
@@ -2847,9 +2847,9 @@ curl -fsSL https://raw.githubusercontent.com/MemTensor/MemOS/openclaw-local-plug
 - [Ai Task Scheduling Dynamic Hibernate Aliyun Mse](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-task-scheduling-dynamic-hibernate-aliyun-mse.md)
 
 - [Tencentdb Agent Memory Context Offloading](ch04/503-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/207-openclaw.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/207-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/209-openclaw.md)
 - [Openclaw Boris Cherny Agent Loop Design Patterns](ch01/850-openclaw-boris-cherny-agent-loop-design-patterns.md)
 
 ---
@@ -4352,8 +4352,8 @@ Agent 每次进入项目都要重新读代码、猜结构、问人。
 ### 关联实体
 
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/207-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/209-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
@@ -4413,7 +4413,7 @@ Headroom 可以作为**库、proxy、wrapper、MCP server**使用。
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

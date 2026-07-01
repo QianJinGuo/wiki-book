@@ -12,7 +12,7 @@
 - [Harness如何支撑Agent在生产环境稳定运行？](ch04/503-agent.md)
 - [Claude Code 可控性：软规则无法变成硬约束](ch03/073-claude-code.md)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/310-ai.md)
+- [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/150-ai.md)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](ch04/503-agent.md)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch04/503-agent.md)

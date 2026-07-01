@@ -113,7 +113,7 @@
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](ch04/150-ai.md) — AI gateway 安全
 - [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](ch01/207-rag.md) — Linux 内核权限提升
 - [The Agentic Trust Management Platform Drata](ch04/017-the-agentic-trust-management-platform-drata.md) — Drata agentic trust 平台
-- [Enterprise Openclaw Security Deploy Architecture Guide](ch11/207-openclaw.md) — OpenClaw 部署安全
+- [Enterprise Openclaw Security Deploy Architecture Guide](ch11/209-openclaw.md) — OpenClaw 部署安全
 - [Introducing Aimap Security Testing For Ai Agent Bishop Fox](ch04/150-ai.md) — Bishop Fox AI agent 安全测试
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/634-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md) — Anthropic Mythos 漏洞共享
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — Microsoft Rampart/Clarity 开源

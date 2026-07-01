@@ -1,6 +1,6 @@
-# foundation capital agent era six insights
+# Foundation Capital Agent Era Six Insights
 
-## Ch04.174 foundation capital agent era six insights
+## Ch04.174 Foundation Capital Agent Era Six Insights
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/foundation-capital-agent-era-six-insights.md`
 

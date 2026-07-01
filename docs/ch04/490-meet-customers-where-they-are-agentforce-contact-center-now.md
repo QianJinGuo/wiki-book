@@ -15,8 +15,8 @@
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [Who Winning Enterprise AI Now](ch04/310-ai.md)
-- [CEOs of the classroom: Why principals are the key to the AI era](ch04/310-ai.md)
+- [Who Winning Enterprise AI Now](ch04/150-ai.md)
+- [CEOs of the classroom: Why principals are the key to the AI era](ch04/150-ai.md)
 - Late student-loan payments are rising. Is a domino effect coming
 
 ## 深度分析

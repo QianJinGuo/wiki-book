@@ -161,9 +161,9 @@ When the Asset Bundle APIs import the bundle into the target account, they autom
    「Access denied」错误的首要排查步骤：确认被授权的主体 ARN 与实际用户 ARN 完全一致，包括 account ID 和 namespace。其次检查资源是否处于 restricted folder——folder 级别限制会覆盖 ARN 级别权限声明。 
 
 ## 相关实体
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](ch11/195-amazon-quick.md)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](ch11/197-amazon-quick.md)
 - [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/569-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
-- [Amazon Quick Research Agentic Multi Source Citation](ch11/195-amazon-quick.md)
+- [Amazon Quick Research Agentic Multi Source Citation](ch11/197-amazon-quick.md)
 - [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](ch11/240-bedrock.md)
 - [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch04/150-ai.md)
 

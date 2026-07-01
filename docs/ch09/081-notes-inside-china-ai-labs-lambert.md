@@ -1,6 +1,6 @@
-# notes inside china ai labs lambert
+# Notes Inside China AI Labs Lambert
 
-## Ch09.081 notes inside china ai labs lambert
+## Ch09.081 Notes Inside China AI Labs Lambert
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/notes-inside-china-ai-labs-lambert.md`
 

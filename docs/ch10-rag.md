@@ -46,7 +46,7 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 - [Tcjndrk4Frmumngmboih W](https://github.com/QianJinGuo/wiki/blob/main/entities/tCjNDrk4fRMUmngmbOih-w.md)
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
 - [Identity Behavior Context Itdr Solution](ch01/115-identity-behavior-context-itdr-solution-teleport.md)
-- [Openclaw Cloud Storage Config Guide Wechat](ch11/207-openclaw.md)
+- [Openclaw Cloud Storage Config Guide Wechat](ch11/209-openclaw.md)
 - [Microsoft Is Quietly Shopping For An Openai Replac](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/PGpkC04XfF7ilMDb9vOcNQ.md)
@@ -94,7 +94,7 @@ FRAGMENTED AUDIT LOGS NO CROSS-SYSTEM CONTEXT MANUAL LOG CORRELATION AI SESSIONS
 - [Identity Behavior Context Itdr Solution Teleport](ch01/115-identity-behavior-context-itdr-solution-teleport.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
 - [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/PGpkC04XfF7ilMDb9vOcNQ.md)
-- [Openclaw Cloud Storage Config Guide Wechat](ch11/207-openclaw.md)
+- [Openclaw Cloud Storage Config Guide Wechat](ch11/209-openclaw.md)
 - [Microsoft Agent Framework Python Full Guide Zizhi](ch04/503-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/identity-behavior-context-itdr-solution.md)
@@ -2286,7 +2286,7 @@ Please note that the text representation of the host-level graph is shipped in 2
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/207-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/209-openclaw.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch04/503-agent.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)

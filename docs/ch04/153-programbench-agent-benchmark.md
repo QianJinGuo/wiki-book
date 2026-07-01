@@ -1,6 +1,6 @@
-# programbench agent benchmark
+# Programbench Agent Benchmark
 
-## Ch04.153 programbench agent benchmark
+## Ch04.153 Programbench Agent Benchmark
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/programbench-agent-benchmark.md`
 

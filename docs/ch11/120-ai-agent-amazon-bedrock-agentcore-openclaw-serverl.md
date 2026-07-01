@@ -8,10 +8,10 @@
 
 ## 标签
 #aws #bedrock #agentcore #openclaw #serverless
-**原文**: [Openclaw Multi 5](ch11/207-openclaw.md)(raw/articles/openclaw-multi-5.md)
+**原文**: [Openclaw Multi 5](ch11/209-openclaw.md)(raw/articles/openclaw-multi-5.md)
 
 ## 相关实体
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](ch11/207-openclaw.md)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](ch11/209-openclaw.md)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch04/399-openclaw-multi-3.md)
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/038-openclaw-multi-agent-team-practice-v2.md)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](ch04/503-agent.md)

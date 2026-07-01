@@ -42,9 +42,9 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stochastic-parrot-language-models-and-meaning.md)
 
 ## 相关实体
-- [Language Models and Meaning](ch01/385-language-models-and-meaning.md)
+- [Language Models and Meaning](ch01/383-language-models-and-meaning.md)
 - [Reinforcing Recursive Language Models | alphaXiv](ch01/658-reinforcing-recursive-language-models-alphaxiv.md)
-- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](ch11/181-cost-effective-deployment-of-vision-language-models-for-pet.md)
+- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](ch11/184-cost-effective-deployment-of-vision-language-models-for-pet.md)
 - [On the Deep Mystery of Language Models](ch01/587-stochastic-parrot-deep-mystery-llms.md)
 - [A Thought Experiment](ch01/664-stochastic-parrot-thought-experiment.md)
 - [Marcus on AI Productivity](ch11/069-stochastic-parrot-marcus-ai-productivity.md)

@@ -131,10 +131,10 @@ Catalog的价值会随着Agent数量增加而指数增长。当只有一个Agent
 从长远看，企业Agent的成功不取决于是否自建了完整的环境工程能力，而取决于能否像"接电"一样快速接入AI能力。这意味着行业会走向分工：少数公司建设"标准插座"（如EventHouse），多数公司专注于业务逻辑和Prompt优化 。
 企业应该评估自身在"环境工程"上的投入产出比——如果这方面的投入无法形成核心竞争力，就应该考虑复用成熟平台，将资源集中在真正创造差异化的业务场景上 。
 ## 相关实体
-- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/310-ai.md)
-- [从多智能体编排到Ai自主决策资损防控体系的架构演进](ch04/310-ai.md)
+- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/150-ai.md)
+- [从多智能体编排到Ai自主决策资损防控体系的架构演进](ch04/150-ai.md)
 - [Hermes Agent Goal Runtime Architecture](ch04/503-agent.md)
-- [Gpt Image 2完全指南](ch01/730-gpt-image-2.md)
+- [Gpt Image 2完全指南](ch01/729-gpt-image-2.md)
 - [一次构建随处复用Python 泛型仓库模式](ch04/486-python.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 

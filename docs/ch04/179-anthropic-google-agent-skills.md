@@ -14,13 +14,13 @@
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Anthropic Claude Managed Agents 平台正式发布](ch04/503-agent.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/503-agent.md)
-- [Anthropic Computer Use 最佳实践](ch01/685-anthropic-computer-use.md)
+- [Anthropic Computer Use 最佳实践](ch01/684-anthropic-computer-use.md)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/380-claude.md)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/073-claude-code.md)
 - [Claude Code Agent 工程设计](ch03/073-claude-code.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch04/245-skill.md)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/310-ai.md)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/150-ai.md)
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch04/503-agent.md)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch04/503-agent.md)
 

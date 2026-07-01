@@ -109,7 +109,7 @@
 - [Claude Code Best Community Fork Evolution Vibecoder](ch03/073-claude-code.md)
 - [Claude Code Dynamic Workflows Jiqizhixin 9Th Translation](ch03/073-claude-code.md)
 - [Claude Code Superpowers Workflow By Xinlingyuanyuanyuan](ch03/073-claude-code.md)
-- [Claude Dispatch And The Power Of Interfaces](ch01/435-claude-dispatch-and-the-power-of-interfaces.md)
+- [Claude Dispatch And The Power Of Interfaces](ch01/436-claude-dispatch-and-the-power-of-interfaces.md)
 - [Claude Code Dynamic Workflows Zhuge6 Yucheng Translation](ch03/073-claude-code.md)
 - [Claude Code And What Comes Next](ch01/362-claude-code-and-what-comes-next.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)

@@ -5,5 +5,9 @@ pages_build_output_dir = "./site"
 binding = "SEARCH_INDEX"
 bucket_name = "ai-engineering-search"
 
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "wiki-book-embeddings"
+
 [ai]
 binding = "AI"

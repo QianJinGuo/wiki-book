@@ -43,7 +43,7 @@ Cyberscammers are bypassing banks’ security with illicit tools sold on Telegra
 - [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/207-openclaw.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/209-openclaw.md)
 
 ## 实践启示
 1. **工程落地**: code领域方案需关注可观测性、可维护性和成本效率

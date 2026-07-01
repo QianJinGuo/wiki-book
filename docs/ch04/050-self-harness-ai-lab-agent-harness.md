@@ -110,7 +110,7 @@ Proposer 还会过滤"不可修复"的簇——纯能力上限、任务特异性
 | Qwen3.5-35B-A3B | 4×NVIDIA H200 本地 SGLang 部署 | 开源 MoE |
 | GLM-5 | OpenRouter | 闭源 |
 
-**初始 Harness**：基于 [DeepAgent](ch04/310-ai.md) SDK，刻意保持极简（默认系统 Prompt + 基础文件读写编辑 + Shell 工具）。Self-Harness 只能修改声明好的 Harness 配置接口（指令、工具策略、验证引导、运行时策略、子 Agent、Skill 等），模型、解码、工具集、评测环境、评估器全部锁定。
+**初始 Harness**：基于 [DeepAgent](ch04/150-ai.md) SDK，刻意保持极简（默认系统 Prompt + 基础文件读写编辑 + Shell 工具）。Self-Harness 只能修改声明好的 Harness 配置接口（指令、工具策略、验证引导、运行时策略、子 Agent、Skill 等），模型、解码、工具集、评测环境、评估器全部锁定。
 
 ## 主结果：三个反直觉细节
 
@@ -281,8 +281,8 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 - [Evaluation Harness Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
 - [Verifier-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
 - [SGLang](ch01/555-1-sglang-radixark-ai.md) — Qwen3.5 部署用到的推理引擎
-- [DeepAgent 架构演进](ch04/310-ai.md) — 初始 Harness 基于 DeepAgent SDK
-- [ByteDance TRAE Harness Engineering Guide](ch01/530-trae-harness-engineering.md)
+- [DeepAgent 架构演进](ch04/150-ai.md) — 初始 Harness 基于 DeepAgent SDK
+- [ByteDance TRAE Harness Engineering Guide](ch01/531-trae-harness-engineering.md)
 - [复旦 AHE Agentic Harness Engineering](ch04/503-agent.md)
 - [Harness Engineering 七层架构](ch03/073-claude-code.md)
 - [Harness Component Expiry and Build-to-Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md) — Self-Harness 的"接受门"是这一思想的工程化实现

@@ -12,7 +12,7 @@ Explicit vs. Implicit in the Age of Intelligences — Le secrétaire de Fernand 
 - [Agent Harness Architecture Design Production Guide](ch04/503-agent.md)
 - [Three Rag Architectures Classic Graph Agentic](ch04/503-agent.md)
 - [Protocol H Hierarchical Agentic Rag Enterprise](ch04/080-protocol-h-hierarchical-agentic-rag-enterprise.md)
-- [How Ai Agent Memory Works](ch04/146-how-ai-agent-memory-works.md)
+- [How Ai Agent Memory Works](ch04/145-how-ai-agent-memory-works.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lesecretairedefernand-co-en-tech-explicit-vs-implicit-in-the-age-of-intelligence.md)
 

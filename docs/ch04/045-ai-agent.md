@@ -231,7 +231,7 @@ Supervisor 的角色至关重要——它不只是路由，还定义了执行边
 Skill 动态注入解决的不只是"规则太多放不下"的问题，而是"规则出现的时机和位置"问题。L1/L2/L3 三层筛选确保：只有当前相关的 Skill 才会被激活，并且它们会出现在 Prompt 的关键位置。
 
 ## 相关链接
-- [Gaode Ai Companion Agent Architecture](ch04/310-ai.md)
+- [Gaode Ai Companion Agent Architecture](ch04/150-ai.md)
 
 ## 实践启示
 ### 1. 在实时性敏感的垂直场景中，双内核架构是值得参考的模式
@@ -256,7 +256,7 @@ Claude-Opus-4.7 在通用基准上顶级但在空间领域表现最差，DeepSee
 - [Claude Code Tool Design Evolution Anthropic](ch03/073-claude-code.md)
 - [Claude Code Memory Setup Token 71X楠楠自瑜](ch03/073-claude-code.md)
 - [Codex Goal Implementation Breakdown](ch09/041-codex-goal.md)
-- [Elf Embedded Language Flows Hekaiming 105M](ch04/310-ai.md)
+- [Elf Embedded Language Flows Hekaiming 105M](ch04/150-ai.md)
 - [2026 05 06 2201](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-05-06-2201.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)

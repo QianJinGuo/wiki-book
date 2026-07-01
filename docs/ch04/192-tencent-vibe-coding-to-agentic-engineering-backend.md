@@ -1,6 +1,6 @@
-# tencent vibe coding to agentic engineering backend
+# Tencent Vibe Coding to Agentic Engineering Backend
 
-## Ch04.192 tencent vibe coding to agentic engineering backend
+## Ch04.192 Tencent Vibe Coding to Agentic Engineering Backend
 
 > 📊 Level ⭐⭐ | 11.2KB | `entities/tencent-vibe-coding-to-agentic-engineering-backend.md`
 

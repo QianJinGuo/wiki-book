@@ -410,7 +410,7 @@ For reference, see the following resources:
 ## 相关实体
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/195-amazon-quick.md)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/197-amazon-quick.md)
 - [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
 - [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch04/150-ai.md)
 

@@ -176,7 +176,7 @@
 **Fable 5 主题簇**(本文与 4 个现有 entity 全部为新视角):
 
 - vs **[Anthropic Claude Fable 5 on AWS:Mythos 级功能](ch01/380-claude.md)** — 那是**AWS 官方产品介绍**(功能/部署/内置保护),本文是**架构师工程化拆解**(Runtime 协议层)。两者互补。
-- vs **[Claude Fable 5 and new AI safety fables](ch01/675-claude-fable-5-and-new-ai-safety-fables.md)** — Nathan Lambert 的**政策分析**(数据保留/prompt 过滤/用户未告知模型修改),本文**不**涉及政策。
+- vs **[Claude Fable 5 and new AI safety fables](ch01/677-claude-fable-5-and-new-ai-safety-fables.md)** — Nathan Lambert 的**政策分析**(数据保留/prompt 过滤/用户未告知模型修改),本文**不**涉及政策。
 - vs **[Claude Fable 5 — Mollick patron vs wizard](ch01/380-claude.md)** — Mollick 的**hands-on 用户体验视角**(4 用例 + patron vs wizard 框架),本文是**架构师工程视角**。两者对应"产品体验"vs"产品架构"。
 - vs **[Claude Fable 5 提示词泄漏 — Runtime Control Plane 安全工程启示](ch01/380-claude.md)** — 同样用"Runtime"概念,但**VibeCoder 重点在安全工程** (Prompt 不能当保险箱 / 攻击面像系统 / 分类器组合风险),**本文重点在工程协议** (Task Brief / 能力路由 / 状态账本 / 治理层)。两者**完全互补**: 一个看 Runtime 怎么被攻击,一个看 Runtime 怎么被设计。
 
@@ -192,7 +192,7 @@
 
 - vs **[dangling 已删除]** — 那个 entity 把 Harness 推为新后端;**本文**把 **Runtime 协议** 推为新运行时,Runtime ⊃ Harness
 - vs **[Harness Engineering Framework](ch05/061-harness-engineering.md)** — Runtime Contract 是 **Harness 的契约形式**;后者是工程化框架
-- vs **[纳德拉「Token 资本」论](ch04/310-ai.md)** — 纳德拉说"私有评估 / 私有 RL / 知识库" = 企业学习闭环;**本文**说"任务 Brief / 状态账本 / 证据目录 / 工具路由 / 权限清单 / 成本阈值 / fallback 预案" = Agent Runtime 闭环。两者**哲学同源**(从"模型强不强"走向"系统稳不稳"),**应用层不同**(企业战略 vs 工程协议)
+- vs **[纳德拉「Token 资本」论](ch04/150-ai.md)** — 纳德拉说"私有评估 / 私有 RL / 知识库" = 企业学习闭环;**本文**说"任务 Brief / 状态账本 / 证据目录 / 工具路由 / 权限清单 / 成本阈值 / fallback 预案" = Agent Runtime 闭环。两者**哲学同源**(从"模型强不强"走向"系统稳不稳"),**应用层不同**(企业战略 vs 工程协议)
 
 ## 深度分析
 
@@ -240,7 +240,7 @@ Anthropic 因美国政府出口管制指令暂停 Fable 5 访问,这件事在表
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-fable-5-agent-runtime-contract-ruofei-2026.md)
 - [Claude Fable 5 提示词泄漏 — Runtime Control Plane](ch01/380-claude.md)
 - [Anthropic Claude Fable 5 on AWS](ch01/380-claude.md)
-- [Claude Fable 5 and new AI safety fables](ch01/675-claude-fable-5-and-new-ai-safety-fables.md)
+- [Claude Fable 5 and new AI safety fables](ch01/677-claude-fable-5-and-new-ai-safety-fables.md)
 - [Claude Fable 5 — Mollick patron vs wizard](ch01/380-claude.md)
 - [若飞 5 张卡治理](ch04/503-agent.md)
 - [若飞 Ralph loop 状态交接](ch04/503-agent.md)
@@ -248,7 +248,7 @@ Anthropic 因美国政府出口管制指令暂停 Fable 5 访问,这件事在表
 - [Harness Engineering Deletable Worksite](ch05/073-harness-engineering-deletable-worksite-ruofei.md)
 - [Agent 架构关键变化:Harness 正在成为新后端](ch04/503-agent.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
-- [纳德拉「Token 资本」论](ch04/310-ai.md)
+- [纳德拉「Token 资本」论](ch04/150-ai.md)
 
 ---
 
