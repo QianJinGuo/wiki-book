@@ -20,7 +20,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md)
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [在 Amazon Eks 上使用 Nvidia Gpu Operator 管理自定义 Gpu 驱动与 Cuda 工作负载](https://github.com/QianJinGuo/wiki/blob/main/entities/在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载.md)
 - [Nvidia Nemotron 3 Ultra Now Available On Amazon Sagemaker Ju](ch01/858-nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.md)
 - [miro-amazon-bedrock-bug-routing](ch11/161-miro-amazon-bedrock-bug-routing.md)

@@ -2,7 +2,7 @@
 
 ## Ch04.526 Amazon Bedrock AgentCore AG-UI 协议：为 AI Agent 构建生成式 UI
 
-> 📊 Level ⭐⭐ | 1.0KB | `entities/build-generative-ui-for-ai-agents-on-amazon-bedrock-agentcor.md`
+> 📊 Level ⭐⭐ | 1.1KB | `entities/build-generative-ui-for-ai-agents-on-amazon-bedrock-agentcor.md`
 
 # Amazon Bedrock AgentCore AG-UI 协议：为 AI Agent 构建生成式 UI
 

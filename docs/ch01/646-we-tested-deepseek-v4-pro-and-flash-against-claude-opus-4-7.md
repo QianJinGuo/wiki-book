@@ -17,7 +17,7 @@
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/528-deepseek-v4.md)
 - [ds4c deepseek v4 antirez](ch01/431-ds4c-deepseek-v4-antirez.md)
 
-- [deepseek-v4深度拆解一篇论文同时做了五件大事](ch01/528-deepseek-v4.md)
+- [deepseek-v4深度拆解一篇论文同时做了五件大事](ch01/777-deepseek.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 ## 深度分析

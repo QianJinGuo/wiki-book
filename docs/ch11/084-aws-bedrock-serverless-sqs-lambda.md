@@ -68,7 +68,7 @@ if existing.get("Item", {}).get("status") == "COMPLETED":
 对于图片和文档审核等多模态批量任务，Amazon Nova 2 Lite是高性价比之选——对所有图片和文档页面统一按约230 tokens计费，不论分辨率和页面复杂度，而Claude系列每张图片约1,600 tokens。2000并发20万张图片的压测使用Nova 2 Lite正是基于此考量。
 *Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-serverless-async-inference-sqs-lambda.md)*
 ## 相关实体
-- [Amazon Bedrock模型推理的Serverless异步架构](ch11/236-bedrock.md)
+- [Amazon Bedrock模型推理的Serverless异步架构](ch11/240-bedrock.md)
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](ch11/118-aws-bedrock-agentcore-quality-optimization-flywheel.md)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch04/503-agent.md)
 - [Building Blocks for Foundation Model Training and Inference on AWS](ch04/150-ai.md)
@@ -78,7 +78,7 @@ if existing.get("Item", {}).get("status") == "COMPLETED":
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/150-ai.md)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/525-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/248-amazon-nova.md)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/569-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/150-ai.md)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/503-agent.md)

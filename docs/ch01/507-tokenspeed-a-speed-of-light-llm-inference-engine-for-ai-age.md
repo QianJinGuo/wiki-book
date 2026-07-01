@@ -120,7 +120,7 @@ TokenSpeed 的开发涉及广泛的行业协作：
 - [NVIDIA Agentic Systems Co-Design](ch04/503-agent.md)
 - [Agentic Coding](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md)
 - [LLM 推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)
-- [vLLM](ch01/866-vllm.md)
+- [vLLM](ch01/713-vllm.md)
 - [MOC: LLM 研究前沿](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 
 ---

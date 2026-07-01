@@ -63,7 +63,7 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/032-amazon-bedrock-api.md)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch04/399-openclaw-multi-3.md)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch04/503-agent.md)
-- [Amazon Bedrock模型推理的Serverless异步架构](ch11/236-bedrock.md)
+- [Amazon Bedrock模型推理的Serverless异步架构](ch11/240-bedrock.md)
 
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/503-agent.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/084-aws-bedrock-serverless-async-inference-sqs-lambda.md)

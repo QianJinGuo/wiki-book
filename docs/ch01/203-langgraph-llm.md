@@ -299,7 +299,7 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 - [Gepa Optimize Anything](ch01/273-gepa-optimize-anything.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 - [How Open Model Ecosystems Compound](ch01/677-how-open-model-ecosystems-compound.md)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/528-deepseek-v4.md)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/777-deepseek.md)
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md)
 
 - [Tomtunguz Ai Model Inflation](ch04/150-ai.md)

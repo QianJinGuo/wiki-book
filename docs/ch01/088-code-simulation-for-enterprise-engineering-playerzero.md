@@ -31,8 +31,8 @@ Sim-1的模拟方法值得关注：它结合代码嵌入（code embeddings）、
 从文章描述来看，PlayerZero的核心差异化在于：（1）跨仓库/跨服务的全局系统建模能力；（2）不需要staging环境的预测能力；（3）75万次生产模拟积累的模型基础。对于拥有多个仓库、复杂微服务架构、且工程团队规模较大的企业，这种能力具有较高的实用价值。但对于单体应用或小规模团队，传统代码审查结合完善的测试套件可能已经足够 。
 ## 相关实体
 - [Code Simulation For Enterprise Engineering Playerz](ch01/134-code-simulation-for-enterprise-engineering-playerzero.md)
-- [Engineering Roles Shift From Developing Code To Ma](ch05/060-engineering-roles-shift-from-developing-code-to-managing-ai.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/813-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
+- [Engineering Roles Shift From Developing Code To Ma](ch05/061-engineering-roles-shift-from-developing-code-to-managing-ai.md)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/818-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
 - [Low Code Api Integration](ch03/070-how-to-build-low-code-api-integrations-for-enterprise-apps-u.md)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](ch04/150-ai.md)
 

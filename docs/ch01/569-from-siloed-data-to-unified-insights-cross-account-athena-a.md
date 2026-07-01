@@ -14,7 +14,7 @@
 ## 相关实体
 - [基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理与增量同步](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)
 - [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](ch04/150-ai.md)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/248-amazon-nova.md)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/503-agent.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/150-ai.md)
@@ -34,7 +34,7 @@
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/032-amazon-bedrock-api.md)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch04/399-openclaw-multi-3.md)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch04/503-agent.md)
-- [Amazon Bedrock模型推理的Serverless异步架构](ch11/236-bedrock.md)
+- [Amazon Bedrock模型推理的Serverless异步架构](ch11/240-bedrock.md)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch04/503-agent.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)

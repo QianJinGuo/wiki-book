@@ -307,7 +307,7 @@ Physical AI is moving from research into production.
 
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/214-latest-open-artifacts-20-new-orgs-new-types-of-models.md)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch04/150-ai.md)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
@@ -376,7 +376,7 @@ Physical AI is moving from research into production.
 ### 关联实体
 
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/503-agent.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/207-openclaw.md)

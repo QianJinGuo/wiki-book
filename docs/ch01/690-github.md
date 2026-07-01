@@ -37,7 +37,7 @@ Ghostty 案例的示范效应值得重视。作为 Mitchell Hashimoto 的个人�
 - [Joyai Echo Long Video Framework Jd](ch04/150-ai.md)
 - [Openchronicle Memory Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/openchronicle-memory-layer.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-source-projects-leaving-github.md)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](ch01/688-github.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-source-projects-leaving-github.md)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](ch01/690-github.md)
 
 ---
 

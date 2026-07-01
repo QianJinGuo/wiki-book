@@ -72,7 +72,7 @@ Solid industry application of LLM-as-a-Judge methodology with meaningful technic
 
 ## 相关实体
 - [Spotify Llm Evals Funnel Not Fork](ch01/890-llm.md)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/506-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/509-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
 - [Aws Reinforcement Fine Tuning Llm As Judge](ch01/449-aws-reinforcement-fine-tuning-llm-as-judge.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)

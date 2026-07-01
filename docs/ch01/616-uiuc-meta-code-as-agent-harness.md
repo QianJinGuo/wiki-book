@@ -16,7 +16,7 @@
 - [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](ch03/073-claude-code.md)
 - [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](ch03/073-claude-code.md)
 - [code intelligence – changelog](ch04/403-code-intelligence-changelog.md)
-- [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/774-deepseek.md)
+- [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/777-deepseek.md)
 - [democratizing machine learning at netflix: building the mode](ch11/232-democratizing-machine-learning-at-netflix-building-the-mode.md)
 - [gemma 4 and what makes an open model succeed](ch01/559-gemma-4-and-what-makes-an-open-model-succeed.md)
 - [how my non-engineering team at sentry learned to ship](ch01/381-how-my-non-engineering-team-at-sentry-learned-to-ship.md)
@@ -67,7 +67,7 @@ UIUC、Meta、斯坦福等最新综述！Code as Agent Harness 涉及agent领域
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/503-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

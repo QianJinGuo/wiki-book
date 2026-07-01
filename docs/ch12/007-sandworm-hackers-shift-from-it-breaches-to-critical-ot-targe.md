@@ -45,8 +45,8 @@ DXGW + TGW 的混合云架构在本文多个场景中出现。关键启示：OT 
 - [Sandworm Hackers Shift It Breaches Ot Gbhackers](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
 - [Cisa Urges Critical Infrastructure Firms To Fortify Before I](ch12/001-cisa-urges-critical-infrastructure-firms-to-fortify-before.md)
-- [Engineering Roles Shift From Developing Code To Ma](ch05/060-engineering-roles-shift-from-developing-code-to-managing-ai.md)
-- [Engineering Roles Shift From Developing Code To Managing Ai](ch05/060-engineering-roles-shift-from-developing-code-to-managing-ai.md)
+- [Engineering Roles Shift From Developing Code To Ma](ch05/061-engineering-roles-shift-from-developing-code-to-managing-ai.md)
+- [Engineering Roles Shift From Developing Code To Managing Ai](ch05/061-engineering-roles-shift-from-developing-code-to-managing-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gbhackers-sandworm-shift-from-it-breaches.md)
 

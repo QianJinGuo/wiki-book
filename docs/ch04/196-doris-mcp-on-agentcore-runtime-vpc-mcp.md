@@ -72,12 +72,12 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 - [OpenClaw多租户迁移: Phase 2&3部署](ch04/460-openclaw-multi-4.md)
 - [OpenClaw多租户迁移: 背景与架构概览](ch04/438-openclaw-multi-1.md)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch04/399-openclaw-multi-3.md)
-- [Amazon Bedrock模型推理的Serverless异步架构](ch11/236-bedrock.md)
+- [Amazon Bedrock模型推理的Serverless异步架构](ch11/240-bedrock.md)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/503-agent.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/150-ai.md)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/525-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/248-amazon-nova.md)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/569-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/150-ai.md)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/503-agent.md)
@@ -92,7 +92,7 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
 - [Hands Free First Notice Of Loss Using Strands Agents And Ama](ch04/503-agent.md)
 - [How Baz Improved Its Ai Agent Code Review Accuracy Using Ama](ch09/113-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md)
-- [Secure Ai Agents With Policy And Lambda Interceptors In Amaz](ch11/229-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
+- [Secure Ai Agents With Policy And Lambda Interceptors In Amaz](ch11/235-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

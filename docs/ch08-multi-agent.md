@@ -439,11 +439,11 @@ CrewAI + NemoClaw 的集成支持"数据飞轮"模式——Agent 系统通过观
 ## 相关实体
 
 - [2026 LLM RL 算法综述](ch01/890-llm.md)
-- [DeepSeek V4 Flash Pro](ch01/741-deepseek-v4-flash-pro.md)
+- [DeepSeek V4 Flash Pro](ch01/777-deepseek.md)
 - [AutoResearch 多 Agent 系统](ch04/150-ai.md)
 - [RocketMQ Agent 消息](ch04/150-ai.md)
 - [高德 Uplift 模型 Agent](ch01/750-gaode-uplift-model-iteration-agent-long-running-harness.md)
-- [NVIDIA Isaac Lab 机器人 RL](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [NVIDIA Isaac Lab 机器人 RL](ch01/837-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Harness Engineering 核心模式](ch03/073-claude-code.md)
 
 ---
