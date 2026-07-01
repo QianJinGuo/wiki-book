@@ -257,11 +257,11 @@ L0-L4 模型虽然在文章靠后位置描述，但它的实现复杂度不高�
 Stream 模式的多实例冲突问题（消息重复处理）是典型的"开发环境正常、生产环境异常"场景。解决方案是环境开关 `dingtalk.stream.enabled` 配合 antx/diamond 注入，生产/预发设 `false`，只有日常开发环境才开启。这个模式可以推广到所有有状态的长连接组件。
 
 ## 相关实体
-- [Claude Code Core Internals](ch03/073-claude-code.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/073-claude-code.md)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch04/503-agent.md)
+- [Claude Code Core Internals](ch03/074-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/074-claude-code.md)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch03/044-agent.md)
 - [Agentmemory Source Analysis Coding Agent Local Memory](ch09/034-agentmemory.md)
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](ch04/503-agent.md)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dingtalk-qoder-claudecode-dual-engine-ai-assistant.md)
 

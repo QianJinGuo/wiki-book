@@ -144,27 +144,27 @@
 
 ## 与现有 wiki 实体的关系
 
-### vs [wow-harness v3](ch05/015-harness.md)
+### vs [wow-harness v3](ch05/009-harness.md)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - Kimi Work = Harness 搬到本地桌面（**运行环境层**变革）
 - 共同点：都在解决"AI Agent 如何与真实工作环境对接"问题
 
-### vs [PilotDeck](ch04/503-agent.md)
+### vs [PilotDeck](ch03/044-agent.md)
 - PilotDeck = WorkSpace + Always-on + Dream 模式（**多项目隔离**）
 - Kimi Work = **本地桌面 + 用户账号 + 真实文件**（**单桌面全场景**）
 - 共同点：都强调"AI 套上家"的工程范式
 
-### vs [Agent Harness 架构](ch04/503-agent.md)
+### vs [Agent Harness 架构](ch03/044-agent.md)
 - 7 层 harness 模型是抽象框架
 - Kimi Work + WebBridge 是具体落地实现
 - 文章强化："**Harness 决定一切**"——比模型能力重要
 
-### vs [Rein](ch04/503-agent.md)
+### vs [Rein](ch03/044-agent.md)
 - Rein = 4 模块 + 5 类型边界（**代码层**架构）
 - Kimi Work = Harness 从云端到本地（**部署层**架构）
 - 共同点：都在"防止上帝文件 / 防止环境割裂"层面做工程化
 
-### vs [Codex 6 职位插件](ch01/434-codex.md)
+### vs [Codex 6 职位插件](ch01/436-codex.md)
 - 之前 Codex 还在"加插件拓展能力"
 - 现在 OpenAI 直接把 Codex 并入 ChatGPT——**赛道战略转向**
 
@@ -188,12 +188,12 @@
 - **Codex 500 万周活 / 桌面版 6 倍**数据来自 OpenAI 自报，缺第三方验证
 
 ## 相关对照
-- [wow-harness v3](ch05/015-harness.md) —— 协议层治理
-- [PilotDeck](ch04/503-agent.md) —— 多项目隔离
-- [Agent Harness 架构](ch04/503-agent.md) —— 7 层 harness 模型
-- [Rein](ch04/503-agent.md) —— 4 模块代码架构
-- [Agent Harness 上下文管理](ch04/503-agent.md) —— 工作集视角
-- [Karpathy Vibe Coding → Agentic Engineering](ch04/503-agent.md) —— Vibe Coding 原始定义
+- [wow-harness v3](ch05/009-harness.md) —— 协议层治理
+- [PilotDeck](ch03/044-agent.md) —— 多项目隔离
+- [Agent Harness 架构](ch03/044-agent.md) —— 7 层 harness 模型
+- [Rein](ch03/044-agent.md) —— 4 模块代码架构
+- [Agent Harness 上下文管理](ch03/044-agent.md) —— 工作集视角
+- [Karpathy Vibe Coding → Agentic Engineering](ch03/044-agent.md) —— Vibe Coding 原始定义
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
 

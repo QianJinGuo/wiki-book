@@ -13,11 +13,11 @@
 <div style="line-height: 1.8;margin: 0;padding: 0">
 
 ## 相关实体
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](ch04/503-agent.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/503-agent.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 4](ch04/503-agent.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 1](ch04/503-agent.md)
-- [Openclaw Multi 5](ch11/207-openclaw.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](ch03/044-agent.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/044-agent.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 4](ch03/044-agent.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 1](ch03/044-agent.md)
+- [Openclaw Multi 5](ch11/210-openclaw.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
 

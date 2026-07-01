@@ -61,12 +61,12 @@ WBA 的出现将对测试生态系统产生深远影响。CAPTCHA 提供商（�
 
 ## 相关实体
 - [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/310-ai.md)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-intelligence-changelog.md)
 
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/503-agent.md)
-- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](ch04/310-ai.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch03/044-agent.md)
+- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](ch04/150-ai.md)
 
 ---
 

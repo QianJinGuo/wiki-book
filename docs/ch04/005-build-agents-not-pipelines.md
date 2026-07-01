@@ -87,10 +87,10 @@ Pipeline项目中应将context-gathering作为独立的、优先级最高的工�
 ## 相关主题
 
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/seangoedeckecom-build-agents-not-pipelines.md)
-- [Claude Code Tool Design Evolution](ch03/073-claude-code.md)
+- [Claude Code Tool Design Evolution](ch03/074-claude-code.md)
 - [RAG Chunking Optimization 2025](ch01/207-rag.md)
 - [Context Engineering: Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
-- [Karpathy: Vibe Coding to Agentic Engineering](ch04/503-agent.md)
+- [Karpathy: Vibe Coding to Agentic Engineering](ch03/044-agent.md)
 
 ---
 

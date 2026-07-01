@@ -1,6 +1,6 @@
-# how ai agent memory works
+# How AI Agent Memory Works
 
-## Ch04.146 how ai agent memory works
+## Ch04.146 How AI Agent Memory Works
 
 > 📊 Level ⭐⭐ | 13.0KB | `entities/how-ai-agent-memory-works.md`
 

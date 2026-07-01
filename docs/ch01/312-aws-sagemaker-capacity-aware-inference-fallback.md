@@ -80,7 +80,7 @@ Instance Pools改变了这一点：冷启动时会自动按优先级尝试可用
 ---
 *Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-sagemaker-capacity-aware-inference-fallback.md)*
 ## 相关实体
-- [EC2 Capacity Blocks：GPU短期容量决策指南](ch11/194-aws-ec2-capacity-blocks-gpu-ml.md)
+- [EC2 Capacity Blocks：GPU短期容量决策指南](ch11/196-aws-ec2-capacity-blocks-gpu-ml.md)
 - [GRPO+RLVR: Qwen数学推理3.7x提升的工程细节](ch11/098-aws-grpo-rlvr-sagemaker-math-reasoning.md)
 - [Building Blocks for Foundation Model Training and Inference on AWS](ch04/150-ai.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/084-aws-bedrock-serverless-async-inference-sqs-lambda.md)

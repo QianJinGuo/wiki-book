@@ -58,11 +58,11 @@ Peter Steinberger的100个AI Agent实验揭示了当前AI编程工具在工程�
 - [X: @steipete](https://x.com/steipete/status/2055346265869721905)
 
 ## 相关实体
-- [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](ch04/310-ai.md)
-- [Openclaw Agent Loop Design Patterns](ch04/503-agent.md)
-- [Autoresearch Multi Agent Software](ch04/503-agent.md)
+- [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](ch04/150-ai.md)
+- [Openclaw Agent Loop Design Patterns](ch03/044-agent.md)
+- [Autoresearch Multi Agent Software](ch03/044-agent.md)
 - [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
-- [Pi Openclaw Coding Harness](ch03/012-openclaw.md)
+- [Pi Openclaw Coding Harness](ch11/210-openclaw.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
 

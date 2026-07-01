@@ -83,7 +83,7 @@ Google 工程师把日常工作自动化掉一大半后剩下的是判断、拆�
 ## 与现有知识库内容的关联
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 三层演进（Prompt→Context→Harness），Fowler 的观点进一步印证 Harness 的核心地位
 - [Harness Engineering 三次范式跃迁](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — 非确定性引入是第四次跃迁的驱动力
-- [腾讯 CDN LEGO Harness Engineering](ch05/015-harness.md) — 57 案例 13 类问题中，不确定性处理是核心挑战之一
+- [腾讯 CDN LEGO Harness Engineering](ch05/009-harness.md) — 57 案例 13 类问题中，不确定性处理是核心挑战之一
 
 ## 原始存档
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/martin-fowler-ai-rd-harness-nondeterminism.md)
@@ -99,19 +99,19 @@ Google 工程师把日常工作自动化掉一大半后剩下的是判断、拆�
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/150-ai.md)
 - [告别"氛围编程"：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch04/150-ai.md)
 - [腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](ch04/150-ai.md)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](ch04/503-agent.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch04/503-agent.md)
+- [Agent Reliability: Context Drift & Tool Calling Hallucination](ch03/044-agent.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch03/044-agent.md)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch04/503-agent.md)
+- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch03/044-agent.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/378-claude-code-harness-deep-understanding.md)
-- [Agent Harness 架构](ch04/503-agent.md)
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [Agent 自我改进的六条路](ch04/503-agent.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch04/503-agent.md)
-- [Harness如何支撑Agent在生产环境稳定运行？](ch04/503-agent.md)
-- [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
+- [Agent Harness 架构](ch03/044-agent.md)
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
+- [Agent 自我改进的六条路](ch03/044-agent.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/044-agent.md)
+- [Harness如何支撑Agent在生产环境稳定运行？](ch03/044-agent.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch03/044-agent.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
 - [AI Coding Agent 记忆系统](ch04/150-ai.md)
 - [柚漫剧 AI 全流程提效拆解](ch04/150-ai.md)

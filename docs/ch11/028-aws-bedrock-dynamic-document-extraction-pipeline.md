@@ -82,10 +82,10 @@ Lambda 处理流程：
 
 ## 与现有实体的关系
 
-### [Aws Bedrock Intelligence Message Defense](ch11/236-bedrock.md) — 共享 prompt versioning 思想
+### [Aws Bedrock Intelligence Message Defense](ch11/240-bedrock.md) — 共享 prompt versioning 思想
 该 entity 提到 "Prompt CI/CD" 概念但**没有给出具体服务限制数字**（50/10 prompts/region）也没有 batch 集成方案。本 entity 是其**具体实现 + 服务约束**的工程补全。
 
-### [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/236-bedrock.md) — 同主题但不同角度
+### [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/240-bedrock.md) — 同主题但不同角度
 该 entity 描述 **Bedrock Data Automation** 自动化产品（无代码 IDP 服务），本文描述的是**自建 Bedrock pipeline**（有代码、Lambda + SQS + 动态 prompt 选取）。两文互补 —— Data Automation 适合标准化场景，自建 pipeline 适合需要 prompt 高度定制或与现有 SQS 工作流集成的场景。
 
 ### 差异化
@@ -134,7 +134,7 @@ Lambda 处理流程：
    - 实践价值：在真实生产环境中，数百页的合同/地契文档很常见，分块策略的正确性直接影响提取完整性和顺序准确性。
 
 4. **DynamoDB 存储 performance metrics 是端到端可观测性的基础**
-   - 核心观点：文章在结果存储之外额外记录 latency/token count 等性能指标，这不是论文式的"额外贡献"，而是生产可观测性的必要设计——与 [Aws Bedrock Intelligence Message Defense](ch11/236-bedrock.md) 的 prompt A/B test 思路一致。
+   - 核心观点：文章在结果存储之外额外记录 latency/token count 等性能指标，这不是论文式的"额外贡献"，而是生产可观测性的必要设计——与 [Aws Bedrock Intelligence Message Defense](ch11/240-bedrock.md) 的 prompt A/B test 思路一致。
    - 技术要点：`(doc_id, chunk_id, model_id, prompt_version, result, metrics)` 的存储结构支持细粒度的 on-demand vs batch 性能对比、prompt 版本效果分析、以及 production trace。
    - 实践价值：这是 agent/harness 可观测性设计的极简参考实现，可推广到任何需要 trace LLM 调用质量的场景。
 
@@ -153,7 +153,7 @@ Lambda 处理流程：
 
 4. **DynamoDB 存储结构应包含性能指标字段** — `(doc_id, model_id, prompt_version, latency, token_count, result)` 是 A/B test 与生产可观测性的最小必要字段集，可推广到其他 LLM 调用场景。
 
-5. **与 [Aws Bedrock Intelligence Message Defense](ch11/236-bedrock.md) 联合参考** — 后者侧重 prompt versioning + A/B test 的 80/20 流量分配策略，前者侧重动态 prompt 路由 + 混合推理模式。两者构成完整的 Bedrock Prompt Management 最佳实践。
+5. **与 [Aws Bedrock Intelligence Message Defense](ch11/240-bedrock.md) 联合参考** — 后者侧重 prompt versioning + A/B test 的 80/20 流量分配策略，前者侧重动态 prompt 路由 + 混合推理模式。两者构成完整的 Bedrock Prompt Management 最佳实践。
 
 6. **按文档格式分 prompt 而非一套 prompt 通吃** — 地契文档的 3 种格式变体说明，格式差异（列表/表格/图示）比任务差异更需要独立的 prompt。这是提升提取精度的低成本高回报工程优化。
 

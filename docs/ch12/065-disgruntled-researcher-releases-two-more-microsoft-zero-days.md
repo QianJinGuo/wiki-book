@@ -47,7 +47,7 @@ Dead man's switch 的存在意味着简单地切断研究者和企业的联系�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Cline releases open-source agent runtime SDK](ch04/503-agent.md)
+- [Cline releases open-source agent runtime SDK](ch03/044-agent.md)
 - [LLM raiders and how to repel them](ch04/150-ai.md) — AI 基础设施安全的另一个威胁向量
 
 ---

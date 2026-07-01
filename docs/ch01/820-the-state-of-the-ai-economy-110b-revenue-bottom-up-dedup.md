@@ -2,7 +2,7 @@
 
 ## Ch01.820 The State of the AI Economy — $110B Revenue, Bottom-Up Deduplicated Model
 
-> 📊 Level ⭐⭐ | 3.3KB | `entities/exponentialview-ai-economy-110b-2026.md`
+> 📊 Level ⭐⭐ | 3.5KB | `entities/exponentialview-ai-economy-110b-2026.md`
 
 # The State of the AI Economy — $110B Revenue, Bottom-Up Deduplicated Model
 
@@ -52,8 +52,8 @@ Approach:
 | Actionability | Investment/market judgment | Enterprise architecture decisions | Regulatory/compliance |
 
 → [source archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-state-of-the-ai-economy.md)
-→ [Nadella Token Capital](https://github.com/QianJinGuo/wiki/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md)
-→ [Dario Amodei Policy](https://github.com/QianJinGuo/wiki/blob/main/entities/dario-amodei-policy-ai-exponential-2026.md)
+→ [Nadella Token Capital](ch04/150-ai.md)
+→ [Dario Amodei Policy](ch04/150-ai.md)
 
 ---
 

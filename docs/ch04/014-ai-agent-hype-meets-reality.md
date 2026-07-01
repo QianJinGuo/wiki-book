@@ -94,7 +94,7 @@ Agent 产品的流失问题与 Vibe Coding 的"现实鸿沟"有相似的结构�
 
 - AI Agent Infrastructure 2026 — Agent 基础设施的技术趋势
 - Vibe Coding Reality Gap — 技术承诺与现实交付的差距
-- [Agent Harness Context Management](ch04/503-agent.md) — Agent 系统的工程挑战
+- [Agent Harness Context Management](ch03/044-agent.md) — Agent 系统的工程挑战
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 构建可靠 Agent 系统的框架
 
 ## 参考

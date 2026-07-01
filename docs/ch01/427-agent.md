@@ -84,12 +84,12 @@ CLI-Hub 的"元技能"是最具前瞻性的设计：Agent 不需要人类告诉�
 
 ### 相关实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/310-ai.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/503-agent.md)
-- [Tencentdb Agent Memory Context Offloading](ch04/503-agent.md)
-- [agent 开发范式演进：从环境工程出发](ch04/503-agent.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
+- [Tencentdb Agent Memory Context Offloading](ch03/044-agent.md)
+- [agent 开发范式演进：从环境工程出发](ch03/044-agent.md)
 - [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](ch05/001-impeccable.md)
 - [工作流的 skill 怎么写？从 7 个顶级 skill 中提炼的模式与最佳实践](ch04/245-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)

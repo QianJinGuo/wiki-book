@@ -36,7 +36,7 @@ Microsoft for Startups 是微软面向早期初创企业打造的综合性支持
 - [Microsoft Is Quietly Shopping For An Openai Replac](ch04/150-ai.md)
 - [Microsoft For Startups Microsoft V2](https://github.com/QianJinGuo/wiki/blob/main/entities/Microsoft-for-Startups-Microsoft-v2.md)
 - [Microsoft Startups](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-startups.md)
-- [Why Im Leaving Github For Forgejo](ch01/688-github.md)
+- [Why Im Leaving Github For Forgejo](ch01/690-github.md)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-for-startups-microsoft.md)

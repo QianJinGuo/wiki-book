@@ -94,7 +94,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 
 ## 相关对照
 - [Impeccable](ch05/001-impeccable.md) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
-- [Karpathy Vibe Coding](ch04/503-agent.md) —— Karpathy 原始概念出处
+- [Karpathy Vibe Coding](ch03/044-agent.md) —— Karpathy 原始概念出处
 - [Willison Vibe Coding Convergence](ch09/043-coding-agent.md) —— Willison 的同主题回应
 - [Agent Skill 编写指南](ch04/245-skill.md) —— 通用 skill 格式
 - [Agentic Design System 演化](ch01/011-agentic-design-system-from-chatbot-to-orchestration.md)
@@ -887,9 +887,9 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 过早引入全面指标体系会让团队陷入"测量瘫痪"，而不是真正推进落地。
 
 ## 相关实体
-- [AutoResearch 多Agent开发](ch04/503-agent.md) — 类似的 Agentic 循环 + 量化评分思路
-- [Harness Engineering](ch04/503-agent.md) — 约束驱动的自动化执行
-- [Enterprise Software Moats in Agent Era](ch04/503-agent.md) — 企业级 Agent 护城河分析
+- [AutoResearch 多Agent开发](ch03/044-agent.md) — 类似的 Agentic 循环 + 量化评分思路
+- [Harness Engineering](ch03/044-agent.md) — 约束驱动的自动化执行
+- [Enterprise Software Moats in Agent Era](ch03/044-agent.md) — 企业级 Agent 护城河分析
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 宪法级约束 + 量化验收标准
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md)
 
@@ -1083,7 +1083,7 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 > -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gitlab-layoffs-memo-2026-5.md)
 ## 相关实体
 
-- [iii.dev](ch01/354-iii-dev.md)
+- [iii.dev](ch01/391-iii-dev.md)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -1405,14 +1405,14 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 
 ## 相关主题
 - [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理优化是 Token 效率的工程基础
-- [Harness Engineering Long Term Agent Tasks](ch04/503-agent.md) — Harness Engineering 让 AI 产出可预期、可衡量、可持续
+- [Harness Engineering Long Term Agent Tasks](ch03/044-agent.md) — Harness Engineering 让 AI 产出可预期、可衡量、可持续
 - [Context Window Management](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md) — 上下文管理影响 Token 消耗质量
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tencent-token-economics-ai-productivity.md)
 
 ## 相关实体
-- [Improving token efficiency in GitHub Agentic Workflows](ch04/503-agent.md)
-- [Token Efficiency](ch04/503-agent.md)
-- [Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践](ch04/503-agent.md)
+- [Improving token efficiency in GitHub Agentic Workflows](ch03/044-agent.md)
+- [Token Efficiency](ch03/044-agent.md)
+- [Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践](ch03/044-agent.md)
 - [柚漫剧 AI 全流程提效拆解](ch04/150-ai.md)
 
 ---
@@ -1477,7 +1477,7 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 
 ## 相关实体
 
-- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](ch04/503-agent.md)
+- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](ch03/044-agent.md)
 - [ICO fines Cl0p victim South Staffs Water over data breach](https://github.com/QianJinGuo/wiki/blob/main/entities/computerweekly-ico-fines-cl0p-south-staffs-water.md)
 
 ---
@@ -1516,8 +1516,8 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 - [企微的这些新功能补齐了Ai在你公司的最后一公里](ch04/150-ai.md)
 - [Token Economics Ai Efficiency](ch04/150-ai.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](ch04/503-agent.md)
-- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/556-chatgpt.md)
+- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](ch03/044-agent.md)
+- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/690-chatgpt.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/让ai成为真正的社会生产力跨越token效率门槛走向ai普惠.md)
 
@@ -1602,9 +1602,9 @@ AI 工具打破了这一契约：
 ## 相关实体
 
 - [腾讯 Token 经济学](ch04/150-ai.md) — AI 工具的成本-效率分析
-- [GitHub Agentic Token 效率](ch04/503-agent.md) — Agent 在代码审查场景的效率优化
+- [GitHub Agentic Token 效率](ch03/044-agent.md) — Agent 在代码审查场景的效率优化
 - [Greptile TREX](https://github.com/QianJinGuo/wiki/blob/main/entities/greptile-trex-code-execution-artifact-generation.md) — 代码审查中"可验证证据"的工程实践
-- [Claude Code 大型代码库 Harness](ch03/073-claude-code.md) — AI 辅助开发的工具配置实践
+- [Claude Code 大型代码库 Harness](ch03/074-claude-code.md) — AI 辅助开发的工具配置实践
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-productivity-paradox-cost-shifting-poischeme.md)
 
@@ -1693,8 +1693,8 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 - 模型路由
 - AI 定价策略
-- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Hermes Agent 自进化机制](ch04/503-agent.md)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
+- [Hermes Agent 自进化机制](ch03/044-agent.md)
 
 ---
 
@@ -1830,10 +1830,10 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 - 部署平台：Hugging Face + NVIDIA NIM
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md)
-- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch04/503-agent.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/344-nvidia-secure-local-agent-nemoclaw-openclaw.md)
+- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch03/044-agent.md)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/351-nvidia-secure-local-agent-nemoclaw-openclaw.md)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/534-tokenspeed-agentic-inference-engine.md)
+- [Tokenspeed Agentic Inference Engine](ch04/538-tokenspeed-agentic-inference-engine.md)
 
 - [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](ch04/150-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
@@ -2092,7 +2092,7 @@ Amodei 的"a country of 100M geniuses"类比将 AI 地缘竞争框架从"技术�
 ---
 
 **相关实体**：
-- [Youre Building Agent Security In The Wrong Order](ch04/503-agent.md) — AI 公司政策参与的结构性困境
+- [Youre Building Agent Security In The Wrong Order](ch03/044-agent.md) — AI 公司政策参与的结构性困境
 - [Claude Opus 48 The System Card B8460F](ch01/380-claude.md) — Anthropic 前沿模型的安全评估方法
 - [Dario Amodei Policy Ai Exponential Time Mismatch](ch04/150-ai.md) — 同源姊妹篇：聚焦 Treebeard 时间错配与四大政策原则的深度解读
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) — AI 安全架构的政策维度

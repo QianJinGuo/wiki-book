@@ -56,7 +56,7 @@ ALB + ECS 认证中间层 + 私有子网 Gateway 的分层设计体现了云原�
 4. **跨渠道体验的一致性**：通过 identityLinks 实现 Telegram/WhatsApp/Web Widget 的 session 合并，但需评估隐私风险——某些场景下渠道间严格隔离（per-channel-peer）更合适。
 
 ## 相关实体
-- [当 OpenClaw 学会"团队记忆"：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](ch11/207-openclaw.md)
+- [当 OpenClaw 学会"团队记忆"：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](ch11/210-openclaw.md)
 
 ---
 

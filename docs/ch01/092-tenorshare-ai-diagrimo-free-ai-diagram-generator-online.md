@@ -95,9 +95,9 @@ Diagrimo 的核心价值主张在于**降低可视化门槛**。传统图表制�
 ## 相关实体
 - [Imagetovideoai Generator](ch04/150-ai.md)
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch04/150-ai.md)
-- [Why Im Leaving Github For Forgejo](ch01/688-github.md)
+- [Why Im Leaving Github For Forgejo](ch01/690-github.md)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
-- [Anthropic Puts Claude Agents On A Meter Across Its](ch04/503-agent.md)
+- [Anthropic Puts Claude Agents On A Meter Across Its](ch03/044-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tenorshare-ai-diagrimo---free-ai-diagram-generator-online.md)
 

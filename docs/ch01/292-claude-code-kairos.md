@@ -35,7 +35,7 @@ KAIROS 的代价主要有四类：
 2. 成本模型会变差——tick + sleep 本质上是用更多调用换取持续在线行为
 3. 安全与信任门槛更高——trusted directory 检查、KAIROS gate 是产品级放行逻辑
 4. 产品承诺和实现闭环还没完全对齐——主入口和核心状态闭环仍有明显缺口
-当前仓库成熟度评估： See also [Claude Code Architecture](ch03/073-claude-code.md)
+当前仓库成熟度评估： See also [Claude Code Architecture](ch03/074-claude-code.md)
 
 - 产品意图非常清楚：方向一致，不是东一块西一块拼起来的
 - 框架布线已经做了很多：工具层、提示词层、bridge 层、memory prompt 分叉、channel notification

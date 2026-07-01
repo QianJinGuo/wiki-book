@@ -89,8 +89,8 @@ LLM-as-a-Judge 试图对轨迹形成整体判断并输出决策，适用于需�
 
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/890-llm.md)
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/794-llm-as-a-verifier-a-general-purpose-verification-framework.md)
-- [LLM-as-a-Verifier: A General-Purpose Verification](ch01/739-llm-as-a-verifier-a-general-purpose-verification.md)
-- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](ch04/503-agent.md)
+- [LLM-as-a-Verifier: A General-Purpose Verification](ch01/757-llm-as-a-verifier-a-general-purpose-verification.md)
+- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](ch03/044-agent.md)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/133-skillos-learning-skill-curation-for-self-evolving-agents.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 - [AI Skill 测评指标体系](ch04/245-skill.md)
@@ -98,7 +98,7 @@ LLM-as-a-Judge 试图对轨迹形成整体判断并输出决策，适用于需�
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](ch01/334-codeindex.md)
 - [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/245-skill.md)
-- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](ch03/073-claude-code.md)
+- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](ch03/074-claude-code.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---

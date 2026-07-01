@@ -10,7 +10,7 @@
 - 来源：https://searchengineland.com/google-llms-txt-chrome-lighthouse-478246
 
 ## 相关实体
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](ch01/688-github.md)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](ch01/690-github.md)
 - [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/446-score-by-collisions-patch-by-panic.md)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/150-ai.md)
 - [Npm Supply Chain Compromise Postmortem](ch04/150-ai.md)

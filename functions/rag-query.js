@@ -67,108 +67,34 @@ async function loadIndex(env) {
   return cachedIndex;
 }
 
-// ========== Phase 3: Embedding（全量加载 + 缓存） ==========
-let cachedEmbeddings = null;
-let cachedEmbeddingsTime = 0;
-const EMBEDDING_CACHE_TTL = 300000;
-
-async function loadEmbeddings(env) {
-  const now = Date.now();
-  if (cachedEmbeddings && now - cachedEmbeddingsTime < EMBEDDING_CACHE_TTL) {
-    return cachedEmbeddings;
-  }
-
-  const manifestObj = await env.SEARCH_INDEX.get("embeddings_manifest.json");
-  if (!manifestObj) return null;
-
-  const manifest = JSON.parse(await manifestObj.text());
-  const numChunks = manifest.num_chunks;
-  const dims = manifest.dimensions;
-  const allData = [];
-
-  for (let i = 0; i < numChunks; i++) {
-    const chunkObj = await env.SEARCH_INDEX.get(`embeddings_${i}.bin`);
-    if (!chunkObj) continue;
-    const buf = await chunkObj.arrayBuffer();
-    const view = new DataView(buf);
-    const numDocs = view.getUint32(0, true);
-    const chunkDims = view.getUint32(4, true);
-    let offset = 8;
-
-    for (let j = 0; j < numDocs; j++) {
-      const docId = view.getUint32(offset, true);
-      offset += 4;
-      const vec = new Float32Array(chunkDims);
-      for (let k = 0; k < chunkDims; k++) {
-        vec[k] = view.getFloat32(offset, true);
-        offset += 4;
-      }
-      allData.push({ docId, vec });
-    }
-  }
-
-  cachedEmbeddings = allData;
-  cachedEmbeddingsTime = now;
-  return allData;
-}
-
-function cosineSimilarity(a, b) {
-  let dot = 0, na = 0, nb = 0;
-  for (let i = 0; i < a.length; i++) {
-    dot += a[i] * b[i];
-    na += a[i] * a[i];
-    nb += b[i] * b[i];
-  }
-  return dot / (Math.sqrt(na) * Math.sqrt(nb) + 1e-10);
-}
-
-function semanticSearch(queryVec, embeddings, topK = 15) {
-  const scored = embeddings.map(e => ({
-    docId: e.docId,
-    score: cosineSimilarity(queryVec, e.vec),
-  }));
-  scored.sort((a, b) => b.score - a.score);
-  return scored.slice(0, topK);
-}
-
-// 用讯飞 xop3qwen8bembedding 嵌入用户问题（1024 维）
-const XUNFEI_EMBEDDING_URL = "https://maas-api.cn-huabei-1.xf-yun.com/v2/embeddings";
-const XUNFEI_MODEL = "xop3qwen8bembedding";
-
-async function embedQuery(query, env) {
-  const apiKey = env.XUNFEI_API_KEY;
-  if (!apiKey) {
-    console.error("XUNFEI_API_KEY not set");
-    return null;
-  }
-
+// ========== Phase 3: 语义搜索（Vectorize 托管向量搜索） ==========
+async function vectorSearch(query, env) {
   try {
-    const resp = await fetch(XUNFEI_EMBEDDING_URL, {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model: XUNFEI_MODEL,
-        input: [query],
-        dimensions: 1024,
-      }),
+    // 1. Embed query via Workers AI bge-m3
+    const aiResp = await env.AI.run("@cf/baai/bge-m3", { text: [query] });
+    if (!aiResp || !aiResp.data || !aiResp.data[0]) return [];
+
+    const queryVec = aiResp.data[0];
+
+    // 2. Search Vectorize index
+    const matches = await env.VECTORIZE.query(queryVec, {
+      topK: 15,
+      returnValues: false,
+      returnMetadata: true,
     });
 
-    if (!resp.ok) {
-      console.error(`Xunfei embedding error: ${resp.status} ${await resp.text()}`);
-      return null;
-    }
+    if (!matches || !matches.length) return [];
 
-    const data = await resp.json();
-    if (data.data && data.data[0] && data.data[0].embedding) {
-      return new Float32Array(data.data[0].embedding);
-    }
+    return matches.map(m => ({
+      docId: parseInt(m.id, 10),
+      score: m.score,
+      title: m.metadata.title,
+      location: m.metadata.location,
+    }));
   } catch (e) {
-    console.error("Xunfei embedding error:", e);
+    console.error("Vectorize search error:", e);
+    return [];
   }
-  return null;
 }
 
 export async function onRequest(context) {
@@ -196,21 +122,15 @@ export async function onRequest(context) {
     const keywordCandidates = keywordSearch(query, docs, 30);
     const keywordDocIds = new Set(keywordCandidates.map(d => docs.indexOf(d)));
 
-    // Phase 3: 语义搜索（全量加载 + 缓存）
+    // Phase 3: 语义搜索（Vectorize）
     let semanticCandidates = [];
     try {
-      const embeddings = await loadEmbeddings(env);
-      if (embeddings && embeddings.length > 0) {
-        const queryVec = await embedQuery(query, env);
-        if (queryVec) {
-          const semanticHits = semanticSearch(queryVec, embeddings, 15);
-          for (const hit of semanticHits) {
-            if (!keywordDocIds.has(hit.docId)) {
-              const doc = docs[hit.docId];
-              if (doc) {
-                semanticCandidates.push({ ...doc, score: hit.score * 10 });
-              }
-            }
+      const semanticHits = await vectorSearch(query, env);
+      for (const hit of semanticHits) {
+        if (!keywordDocIds.has(hit.docId)) {
+          const doc = docs[hit.docId];
+          if (doc) {
+            semanticCandidates.push({ ...doc, score: hit.score * 10 });
           }
         }
       }

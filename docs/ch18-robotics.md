@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **5 篇**实体，按深度递增排列。
+> 本章收录 **6 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,6 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐⭐ 工程师 | 需编程基础 | 5 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
 
@@ -141,7 +142,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 ## 与现有知识的链接
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/weilan-babyalpha-a3-machine-dog.md)
 - → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
-- → [NVIDIA边缘端LLM for机器人](ch01/208-nvidia-edge-first-llms-av-robotics.md) — 英伟达边缘AI方案对比
+- → [NVIDIA边缘端LLM for机器人](ch01/245-nvidia-edge-first-llms-av-robotics.md) — 英伟达边缘AI方案对比
 
 ## 深度分析
 ### 异构计算vs单芯片：架构选择的工程哲学
@@ -307,11 +308,11 @@ Physical AI is moving from research into production.
 
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/214-latest-open-artifacts-20-new-orgs-new-types-of-models.md)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch04/150-ai.md)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch04/503-agent.md)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch03/044-agent.md)
 - [Code As Agent Harness Survey 2026](ch09/046-code-as-agent-harness.md)
 
 ## 实践启示
@@ -375,17 +376,84 @@ Physical AI is moving from research into production.
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch04/503-agent.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/833-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch04/503-agent.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/044-agent.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/207-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/207-openclaw.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/210-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/210-openclaw.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
 2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
 3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现
 4. **风险管控**: 引入新技术需评估对现有系统稳定性的影响，做好降级预案
+
+---
+
+## Ch18.006 NVIDIA ASPIRE：机器人技能库与持续学习新范式
+
+> 📊 Level ⭐⭐⭐⭐ | 5.6KB | `entities/nvidia-aspire-robot-skill-library-code-as-policy.md`
+
+# NVIDIA ASPIRE：机器人技能库与持续学习新范式
+
+NVIDIA 开源的 **ASPIRE**（Agentic Skill Programming through Iterative Robot Exploration）是一套让机器人通过代码执行、失败分析、修复沉淀实现持续学习的技能库系统。
+
+## ASPIRE 三阶段 Pipeline
+
+### 1. Robot Execution Engine（机器人执行引擎）
+传统机器人程序失败时只返回"任务未完成"。ASPIRE 将每一次感知、规划、抓取、控制调用的输入、输出、视觉证据和错误日志都记录下来，就像人类工程师回放视频查问题。
+
+### 2. Skill Library（技能库）
+Agent 修好程序后，将验证过的修复经验沉淀为可复用的 Skill。例如：
+- 「桌边物体需多角度接近」
+- 「抽屉把手过滤假检测」
+- 「平面物体推动时使用特定 motion primitive」
+
+Skill 本质上是一段供大模型参考的 Code Repair Pattern，让机器人遇到同类问题时无需重新试错。
+
+### 3. Evolutionary Training（进化式训练）
+多 Agent 各自练习不同技能，将经验汇总进同一个技能库，实现分布式技能积累。
+
+## Jim Fan 的范式转变
+
+Jim Fan 表示 ASPIRE 代表了全新的持续学习范式：
+
+- **训练**：从梯度下降 → Skill Refinement（技能打磨）
+- **模型**：从浮点权重 → 持续扩展的技能库（Sensorimotor Skills）
+- **分布式训练**：从数据并行 → 多 Agent 各自练习并汇总经验
+
+> "当机器人完成第 100 个任务时，它终于不再像完成第 1 个任务时那样一无所知。"
+
+## 深度分析
+
+### Code as Policy：机器人行为可编程化的范式突破
+
+ASPIRE 的底层逻辑建立在 **Code as Policy** 范式之上——机器人行为不再完全隐藏在神经网络权重里，而是变成可执行的操作代码。这一转变的关键意义在于：代码可以被 Agent 模型检查、修改、调试和优化，使机器人训练从「黑盒调参」变成「代码迭代」。一旦机器人行为代码化，Coding Agent 在软件工程中积累的「写代码→跑测试→看 trace→改 bug」循环就能直接迁移到物理世界。
+
+### 失败信息粒度的革命性提升
+
+传统机器人系统失败后只知道「任务未完成」。ASPIRE 的 Robot Execution Engine 将每一次感知、规划、抓取、控制调用的输入、输出、视觉证据和错误日志全部记录下来，使 Agent 能像人类工程师一样回放视频、分析轨迹、定位问题。这种**细粒度的执行轨迹**是 Skill 沉淀的基础——没有详细的失败信息，修复经验就无法被准确提炼。
+
+### 从梯度下降到 Skill Refinement 的训练范式变革
+
+Jim Fan 提出的持续学习新范式触及了深度学习的根基：训练不再等于梯度下降。在 ASPIRE 中，「训练」变成了对 Skill（代码修复模式）的持续打磨和积累；「模型」从浮点权重变成了持续扩展的技能库；「分布式训练」从数据并行变成了多 Agent 各自练习并汇总经验。这种转变意味着机器人不再在每次新任务上「从头开始」，而是每完成一个任务都增加了一条可复用的经验。
+
+### 跨任务迁移能力的实证验证
+
+论文在 LIBERO-90 上积累 Skill Library，再直接迁移到未见过的 LIBERO-Pro Long 长任务，结果验证了 Skill Library 的厚度与泛化能力正相关。随着技能库丰富，机器人在新任务上的成功率从几乎不会持续提升到 31%。Robosuite 双臂物体交接任务更是从 20% 提升至 92%。这些数据说明**经验的代码化存储比参数微调更适合物理世界的持续学习**。
+
+## 实践启示
+
+1. **代码化经验比权重更可迁移** — ASPIRE 的 Skill 本质上是 Code Repair Pattern，供大模型在推理时参考。这意味着知识的载体不是参数量而是经验结构的质量。
+2. **失败轨迹的精细度决定自动化修复的上限** — 只有粒度足够细的执行日志，Agent 才能定位根因并提炼可复用的修复模式。工程系统应优先提升可见性而非直接追求成功率。
+3. **多 Agent 经验共享是分布式训练的新方式** — 不同于数据并行的参数同步，ASPIRE 的「各练各的、汇总经验」模式更适合异构环境下的技能积累。
+4. **持续学习的核心是记忆结构而非算法** — ASPIRE 证明，让技能库不断变厚比设计更复杂的训练算法更有实际效果。
+
+## Code as Policy 路线
+
+不同于 VLA 等端到端策略模型，Code as Policy 让大模型写可执行的机器人控制程序，调用感知模块、规划 API 和控制原语。机器人行为不再藏在神经网络权重里，而是变成可执行的操作代码，因此可以被 Agent 模型检查、修改、调试和优化。
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-aspire-robot-skill-library-code-as-policy.md)
 
 ---

@@ -39,7 +39,7 @@ engine 采用 Elastic License 2.0，SDK 采用 Apache 2.0。内部研究、架�
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [Cline releases open-source agent runtime SDK](ch04/401-cline-releases-open-source-agent-runtime-sdk.md)
-- [Cline releases open-source agent runtime SDK](ch04/503-agent.md)
+- [Cline releases open-source agent runtime SDK](ch03/044-agent.md)
 - [OpenSquilla launches open-source AI agent to cut token costs](ch04/508-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
 - [ai gateway production index](ch04/150-ai.md)
 

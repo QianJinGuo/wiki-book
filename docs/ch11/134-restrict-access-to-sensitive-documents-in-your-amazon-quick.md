@@ -34,9 +34,9 @@ Amazon QuickSight 的文档级 ACL 功能代表了企业 AI 搜索系统中访�
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](ch04/150-ai.md)
 - [CloudSectiDbits](ch11/212-cloudsectidbits.md)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/150-ai.md)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch04/503-agent.md)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch03/044-agent.md)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/032-amazon-bedrock-api.md)
-- [amazon quick arns: cross-account migration and namespace per](ch11/195-amazon-quick.md)
+- [amazon quick arns: cross-account migration and namespace per](ch11/197-amazon-quick.md)
 
 ---
 

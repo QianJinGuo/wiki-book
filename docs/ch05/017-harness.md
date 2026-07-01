@@ -98,10 +98,10 @@ Generator 在没有 sprint 拆解的情况下连续稳定运行了两小时以�
 4. **Evaluator 的调优优先级高于 Generator**：在同等工程时间内，优化 evaluator 的评分准确性（通过 few-shot examples、硬性阈值）带来的系统提升往往超过优化 generator 的提示词。
 ## 相关实体
 - [Anthropic 14 Skill Patterns Best Practices](ch04/245-skill.md)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch04/503-agent.md)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch03/044-agent.md)
 - [Tencent Skill Writing Complete Playbook Jackjchou](ch04/245-skill.md)
 - [Anthropic 12 Mcp Production Patterns](ch01/707-anthropic.md)
-- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](ch04/503-agent.md)
+- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](ch03/044-agent.md)
 
 ---
 

@@ -157,9 +157,9 @@ Model Parameters 与 Harness Parameters 的联合优化代表着一个明确的�
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/wangyunhe-harness-optimization-agentsoul.md)
 
-- [Prompt Context Harness Three Evolutions Tencent](ch05/015-harness.md)
-- [Openclacky Prompt Cache Harness V2Ex 799662C56Ba6](ch05/015-harness.md)
-- [Agent Tools Research](ch04/503-agent.md)
+- [Prompt Context Harness Three Evolutions Tencent](ch05/009-harness.md)
+- [Openclacky Prompt Cache Harness V2Ex 799662C56Ba6](ch05/009-harness.md)
+- [Agent Tools Research](ch03/044-agent.md)
 
 ---
 

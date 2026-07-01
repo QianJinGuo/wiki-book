@@ -12,7 +12,7 @@ Anthropic 此前已做过不少尝试：
 - **Attribution Graphs（归因图）**：追踪输入到输出的因果链
 这些工具更多是"技术可视化"，而不是人类可以直接理解的"语言"。
 **NLAs 正式迈出了"读心术"的第一步：将 AI 的内部想法转化为文字。**
-> X 网友评论："这似乎是迄今为止最大的进展！" See also [Claude Code Architecture](ch03/073-claude-code.md)
+> X 网友评论："这似乎是迄今为止最大的进展！" See also [Claude Code Architecture](ch03/074-claude-code.md)
 
 ## NLAs 与"深度思考模式"的区别
 DeepSeek 等模型的"深度思考模式"本质上是**模型主动输出**给用户看的内容——这些推理步骤是模型愿意展示、并经过生成筛选后的文本。
