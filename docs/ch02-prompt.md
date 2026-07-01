@@ -2,7 +2,7 @@
 
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
 
-> 本章收录 **33 篇**实体，按深度递增排列。
+> 本章收录 **34 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 31 |
+| ⭐⭐ 工程师 | 需编程基础 | 32 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -3796,7 +3796,24 @@ PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析 涉及agent
 
 ---
 
-## Ch02.033 OneReason：快手将推理注入推荐基模的系统性尝试
+## Ch02.033 Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条\"不要\"，可能都在帮倒忙
+
+> 📊 Level ⭐⭐ | 1.0KB | `entities/superpowers-prompt-dont-experiment-shuge.md`
+
+# Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条"不要"，可能都在帮倒忙
+
+## 核心要点
+
+1. 术哥通过 Superpowers 6.0 的 25 个对照实验发现了 prompt 中"不要/禁止"指令的反直觉规律
+2. "不要"在 prompt 中不仅无法阻止 LLM 做错误行为，反而会产生反向强化效应（类似"别想白熊"）
+3. 提出用正向引导替代否定约束的 prompt 设计方法论
+4. 属于 AI 编程最佳实战系列第 45 篇，有大量可复现的实验数据支撑
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/superpowers-prompt-dont-experiment-shuge.md)
+
+---
+
+## Ch02.034 OneReason：快手将推理注入推荐基模的系统性尝试
 
 > 📊 Level ⭐⭐⭐ | 7.4KB | `entities/onereason-kuaishou-reasoning-recommender-system.md`
 

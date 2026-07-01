@@ -2,7 +2,7 @@
 
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
-> 本章收录 **254 篇**实体，按深度递增排列。
+> 本章收录 **255 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
-| ⭐⭐ 工程师 | 需编程基础 | 239 |
+| ⭐⭐ 工程师 | 需编程基础 | 240 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 11 |
 
 ---
@@ -277,14 +277,15 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 - [241. Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity](ch11/241-reference-your-own-aws-secrets-manager-secrets-in-amazon-bed.md)
 - [242. Outpost VFX: Multi-GPU AI Training on AWS P5 for Visual Effects](ch11/242-outpost-vfx-multi-gpu-ai-training-on-aws-p5-for-visual-effe.md)
 - [243. Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway](ch11/243-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
-- [244. AgentScope Java 2.0：企业级分布式 Harness 框架](ch11/244-agentscope-java-2-0-harness.md)
-- [245. HiClaw 发布 v1.1.0，提供 Kubernetes 集群部署实现，支持 Hermes Worker 运行时](ch11/245-hiclaw-v1-1-0-kubernetes-hermes-worker.md)
-- [246. 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）](ch11/246-bedrock.md)
-- [247. Build a highly scalable serverless LangGraph multi-agent system](ch11/247-build-a-highly-scalable-serverless-langgraph-multi-agent-sys.md)
-- [248. AgentScope Java Harness Framework — 企业级 Agent 分布式场景的 Harness 实现](ch11/248-agentscope-java-harness-framework-agent-harness.md)
-- [249. Scaling ArchUnit with Nebula ArchRules](ch11/249-scaling-archunit-with-nebula-archrules.md)
-- [250. 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引](ch11/250-ingress-nginx-api-gateway-api.md)
-- [251. Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构](ch11/251-netflix-thinking-fast-slow-slow-fast-rl.md)
-- [252. 微调 Amazon Nova 模型实现精准邮件数据提取](ch11/252-amazon-nova.md)
-- [253. 55+ models, every modality. One API key, one bill.](ch11/253-55-models-every-modality-one-api-key-one-bill.md)
-- [254. GenPage: Netflix 端到端生成式首页构建](ch11/254-genpage-netflix.md)
+- [244. 在 SageMaker AI 上使用 BoltzGen 加速蛋白质设计](ch11/244-sagemaker-ai-boltzgen.md)
+- [245. AgentScope Java 2.0：企业级分布式 Harness 框架](ch11/245-agentscope-java-2-0-harness.md)
+- [246. HiClaw 发布 v1.1.0，提供 Kubernetes 集群部署实现，支持 Hermes Worker 运行时](ch11/246-hiclaw-v1-1-0-kubernetes-hermes-worker.md)
+- [247. 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）](ch11/247-bedrock.md)
+- [248. Build a highly scalable serverless LangGraph multi-agent system](ch11/248-build-a-highly-scalable-serverless-langgraph-multi-agent-sys.md)
+- [249. AgentScope Java Harness Framework — 企业级 Agent 分布式场景的 Harness 实现](ch11/249-agentscope-java-harness-framework-agent-harness.md)
+- [250. Scaling ArchUnit with Nebula ArchRules](ch11/250-scaling-archunit-with-nebula-archrules.md)
+- [251. 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引](ch11/251-ingress-nginx-api-gateway-api.md)
+- [252. Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构](ch11/252-netflix-thinking-fast-slow-slow-fast-rl.md)
+- [253. 微调 Amazon Nova 模型实现精准邮件数据提取](ch11/253-amazon-nova.md)
+- [254. 55+ models, every modality. One API key, one bill.](ch11/254-55-models-every-modality-one-api-key-one-bill.md)
+- [255. GenPage: Netflix 端到端生成式首页构建](ch11/255-genpage-netflix.md)

@@ -2,7 +2,7 @@
 
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
 
-> 本章收录 **127 篇**实体，按深度递增排列。
+> 本章收录 **129 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 48 |
-| ⭐⭐ 工程师 | 需编程基础 | 78 |
+| ⭐⭐ 工程师 | 需编程基础 | 80 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
 ---
@@ -158,6 +158,8 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [122. 五一活动来啦](ch03/122-page-122.md)
 - [123. GRC Now | Free virtual event | 8 CPEs](ch03/123-grc-now-free-virtual-event-8-cpes.md)
 - [124. Langsmith Evaluation Concepts](ch03/124-langsmith-evaluation-concepts.md)
-- [125. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/125-bedrock-agentcore-pool-model-multi-tenancy.md)
-- [126. Lightfield Skills 系统介绍](ch03/126-lightfield-skills.md)
-- [127. Who Winning Enterprise AI Now](ch03/127-who-winning-enterprise-ai-now.md)
+- [125. AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局](ch03/125-ai-amazon-michael-morton-x-ben-thompson-ai.md)
+- [126. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/126-bedrock-agentcore-pool-model-multi-tenancy.md)
+- [127. Lightfield Skills 系统介绍](ch03/127-lightfield-skills.md)
+- [128. 设计系统的新作者：从 Agent 读到 Agent 写](ch03/128-agent-agent.md)
+- [129. Who Winning Enterprise AI Now](ch03/129-who-winning-enterprise-ai-now.md)

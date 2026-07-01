@@ -10,17 +10,17 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1179 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 934 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 428 篇 |
-| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 97 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1187 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 945 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 429 篇 |
+| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 98 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 31 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1019 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1024 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,9 +31,9 @@
   - ⭐ Backpressure is all you need
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ 快手首个打工人Agent
-  - ... 共 **1019** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1024** 篇 → [完整章节](ch01-ai-basics.md)
 
-### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 33 篇
+### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 34 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
 
   - ⭐ AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）
@@ -44,9 +44,9 @@
   - ⭐⭐ Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）
   - ⭐⭐ Hermes Agent 自进化机制源码解析
   - ⭐⭐ Hermes Agent 深度解析（阿里云/飞樰）
-  - ... 共 **33** 篇 → [完整章节](ch02-prompt.md)
+  - ... 共 **34** 篇 → [完整章节](ch02-prompt.md)
 
-### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 127 篇
+### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 129 篇
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
 
   - ⭐ The Interface Is No Longer the Product
@@ -57,15 +57,15 @@
   - ⭐ The 2026 SaaSOps checklist: Managing and securing your enterprise SaaS
   - ⭐ What the design-to-code loop unlocks
   - ⭐ Choosing to Stay Human
-  - ... 共 **127** 篇 → [完整章节](ch03-ai-tools.md)
+  - ... 共 **129** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1179 篇**
+> 📖 **本篇共 1187 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 555 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 564 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
   - ⭐ From idea to AI app: creating intelligent research assistants
-  - ... 共 **555** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **564** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 91 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -130,7 +130,7 @@
   - ⭐⭐⭐ JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiu
   - ... 共 **26** 篇 → [完整章节](ch08-multi-agent.md)
 
-### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 133 篇
+### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 135 篇
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
   - ⭐ Claude Code Agent View
@@ -141,7 +141,7 @@
   - ⭐⭐ AI Coding 入门指南 - 如何更好地让AI真正帮你干活
   - ⭐⭐ 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类
   - ⭐⭐ Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
-  - ... 共 **133** 篇 → [完整章节](ch09-ai-coding.md)
+  - ... 共 **135** 篇 → [完整章节](ch09-ai-coding.md)
 
 ### [Ch10 RAG 与知识检索](ch10-rag.md) — 24 篇
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
@@ -156,13 +156,13 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **24** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 934 篇**
+> 📖 **本篇共 945 篇**
 
 ---
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 254 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 255 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
@@ -173,7 +173,7 @@
   - ⭐⭐ 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
   - ⭐⭐ AWS Bedrock 多智能体协作指南
   - ⭐⭐ From silos to service topology: why Netflix built a real-time architec
-  - ... 共 **254** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **255** 篇 → [完整章节](ch11-infra.md)
 
 ### [Ch12 安全与治理](ch12-security.md) — 122 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
@@ -214,7 +214,7 @@
   - ⭐⭐ Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
   - ... 共 **35** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 428 篇**
+> 📖 **本篇共 429 篇**
 
 ---
 
@@ -259,7 +259,7 @@
   - ⭐⭐ How transparent is DiffusionGemma (and why it matters)
   - ... 共 **31** 篇 → [完整章节](ch17-multimodal.md)
 
-### [Ch18 机器人与具身智能](ch18-robotics.md) — 5 篇
+### [Ch18 机器人与具身智能](ch18-robotics.md) — 6 篇
 > 从数字到物理：强化学习、仿真、人形机器人
 
   - ⭐⭐ Unitree's IPO Filing: The State of the Robotics Market
@@ -267,8 +267,9 @@
   - ⭐⭐ Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
   - ⭐⭐ NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale
   - ⭐⭐ 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
+  - ⭐⭐⭐⭐ NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
-> 📖 **本篇共 97 篇**
+> 📖 **本篇共 98 篇**
 
 ---
 
@@ -304,6 +305,6 @@
 
 ---
 
-**📊 全书收录：2669 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：2690 篇实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-06-25 | 来源: ~/wiki/entities/

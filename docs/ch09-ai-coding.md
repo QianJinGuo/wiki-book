@@ -2,7 +2,7 @@
 
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
-> 本章收录 **133 篇**实体，按深度递增排列。
+> 本章收录 **135 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
-| ⭐⭐ 工程师 | 需编程基础 | 125 |
+| ⭐⭐ 工程师 | 需编程基础 | 127 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -164,7 +164,9 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [127. Code Intelligence – Changelog](ch09/127-code-intelligence-changelog.md)
 - [128. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/128-device-code-phishing-forensics-what-we-learned-from-bec-inv.md)
 - [129. Claude Code 前 1% 用户指南：系统级架构与全栈工程化实践](ch09/129-claude-code-1.md)
-- [130. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/130-fastcontext-coding-agent.md)
-- [131. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/131-deepseek-visual-primitives.md)
-- [132. AI Coding Agent Token 成本控制五层模型](ch09/132-ai-coding-agent-token.md)
-- [133. GLM-5 Scaling Pain 推理复盘](ch09/133-glm-5-scaling-pain.md)
+- [130. Claude Code 静默识别中国 API 路由](ch09/130-claude-code-api.md)
+- [131. Open Code Review：阿里开源的 AI 代码评审 CLI 工具](ch09/131-open-code-review-ai-cli.md)
+- [132. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/132-fastcontext-coding-agent.md)
+- [133. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/133-deepseek-visual-primitives.md)
+- [134. AI Coding Agent Token 成本控制五层模型](ch09/134-ai-coding-agent-token.md)
+- [135. GLM-5 Scaling Pain 推理复盘](ch09/135-glm-5-scaling-pain.md)
