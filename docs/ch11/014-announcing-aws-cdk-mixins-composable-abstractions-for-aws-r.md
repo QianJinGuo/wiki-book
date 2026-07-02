@@ -305,11 +305,11 @@ class ProductionMixins extends cdk.Mixin implements IMixin {
 class PipelineStack extends cdk.Stack { 
   constructor(scope: Construct, id: string, props?: cdk.StackProps) { 
     super(scope, id, props); 
-    
+
     const pipeline = new pipelines.CodePipeline(this, 'Pipeline', { 
       // ... pipeline configuration 
     }); 
-    
+
     // 在每个阶段应用不同的 Mixin 组合 
     pipeline.addStage('Production', { 
       post: [ 

@@ -23,32 +23,32 @@ flowchart TB
         B["Developer Endpoints\nIDE, Tools"]
         C["CI/CD Pipelines\nAutomation"]
     end
-    
+
     D["Traditional IAM\n(Limitations)"]
-    
+
     subgraph Solution[1Password Solution]
         E["Endpoint Discovery\n端点发现"]
         F["Usage Protection\n使用时保护"]
         G["Unified Audit\n统一审计"]
     end
-    
+
     H["Core Risks\n治理盲区 | 凭证蔓延 | 审计薄弱"]
     I["Best Practices\n动态保护 | 零信任 | 最小权限"]
-    
+
     A --> D
     B --> Solution
     C --> Solution
     D -.-> Solution
     Solution --> H
     Solution --> I
-    
+
     classDef input fill:#a5d8ff,stroke:#1e1e1e,stroke-width:2px
     classDef processing fill:#d0bfff,stroke:#1e1e1e,stroke-width:3px
     classDef storage fill:#c3fae8,stroke:#1e1e1e
     classDef output fill:#b2f2bb,stroke:#1e1e1e
     classDef warning fill:#ffd8a8,stroke:#1e1e1e
     classDef critical fill:#ffc9c9,stroke:#1e1e1e
-    
+
     class A,H critical
     class B,C input
     class D warning

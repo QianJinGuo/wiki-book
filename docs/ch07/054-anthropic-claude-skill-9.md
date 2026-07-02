@@ -2,7 +2,7 @@
 
 ## Ch07.054 Anthropic Claude Skill 9 类任务分类法
 
-> 📊 Level ⭐⭐ | 6.2KB | `entities/anthropic-claude-skill-9-categories-datawhale-2026.md`
+> 📊 Level ⭐⭐ | 6.5KB | `entities/anthropic-claude-skill-9-categories-datawhale-2026.md`
 
 # Anthropic Claude Skill 9 类任务分类法
 
