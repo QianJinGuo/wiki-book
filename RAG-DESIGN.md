@@ -10,7 +10,7 @@ wiki-book 现有 63,013 篇 Markdown 文档（200MB 源文件），搜索索引 
 
 让 AI Chat 能基于 wiki-book 的实际内容回答用户问题，并附上来源链接。跨环境支持（Cloudflare Pages / GitHub Pages / Docker），Free 计划内实现最大 RAG 能力。
 
-## 当前状态（2026-07-02）
+## 当前状态（2026-07-02 v1.3.3）
 
 ### 三层 RAG 能力
 
@@ -21,14 +21,14 @@ wiki-book 现有 63,013 篇 Markdown 文档（200MB 源文件），搜索索引 
 | **Phase 3 语义搜索** | bge-m3 embedding + Vectorize 查询 | 向量语义 | ❌ Free 10ms CPU 锁定 | 待 Workers Paid |
 | **QMD 混合搜索** (评估中) | BM25 + 本地 embedding + 本地 Reranker (HP 部署) | **全栈语义** | 📋 待评估资源 | HP 服务器 / Tunnel
 
-### 三环境对比
+### 三环境最终状态
 
 | 能力 | Docker (localhost:8002) | GitHub Pages (wiki.jinguo.tech) | CF Pages (jinguo.tech) |
 |------|------------------------|-------------------------------|----------------------|
-| **客户端搜索 (Tier 1)** | ⚠️ HTML 未重建 | ✅ Playwright 验证通过 | ✅ Playwright 验证通过 |
-| **近邻图扩展** | ❌ 无 | ❌ 无部署 | ✅ R2 流式加载 |
+| **客户端搜索 (Tier 1)** | ✅ Playwright 验证通过 | ✅ Playwright 验证通过 | ✅ Playwright 验证通过 |
+| **近邻图扩展** | ✅ 本地文件注入 (57K 节点) | ✅ GitHub Actions 自动构建 | ✅ R2 流式加载 |
 | **Reranker 重排序** | ❌ nginx fallback | ❌ 无服务器端点 | ⚠️ Free 间歇 503 |
-| **语义搜索 (Phase 3)** | ❌ | ❌ | ❌ Workers Paid 升级后 |
+| **语义搜索** | ❌ | ❌ | ❌ 待 Workers Paid 或 QMD |
 | **AI Chat 面板** | ✅ | ✅ | ✅ |
 
 ## 架构总览
