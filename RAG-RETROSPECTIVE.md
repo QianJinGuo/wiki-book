@@ -311,10 +311,10 @@ ragClient.search() → 客户端优先
 
 | 能力 | Docker (localhost:8002) | GitHub Pages (wiki.jinguo.tech) | CF Pages (jinguo.tech) |
 |------|------------------------|-------------------------------|----------------------|
-| 客户端关键词搜索 | ⚠️ HTML 未重建 | ✅ Playwright 验证通过 | ✅ Playwright 验证通过 |
-| 近邻图扩展 | ❌ 无 | ❌ 无部署 | ✅ R2 流式加载 |
+| 客户端关键词搜索 | ✅ Playwright 验证通过 | ✅ Playwright 验证通过 | ✅ Playwright 验证通过 |
+| 近邻图扩展 | ✅ 本地文件注入 (57K 节点) | ✅ GitHub Actions 自动构建 | ✅ R2 流式加载 |
 | Reranker 重排序 | ❌ nginx fallback | ❌ 无服务器端点 | ⚠️ Free 间歇 503 |
-| 语义搜索 (Phase 3) | ❌ | ❌ | ❌ Workers Paid 升级后 |
+| 语义搜索 | ❌ | ❌ | ❌ 待 Workers Paid 或 QMD |
 | AI Chat 面板 | ✅ | ✅ | ✅ |
 
 ### 5.3 数据流（用户提问时）
@@ -369,7 +369,8 @@ ragClient.search() → 客户端优先
 | **GitHub Pages** (wiki.jinguo.tech) | rag-client.js 加载 | ✅ |
 | | ragClient.search() | ✅ **5 条 / score=11 / source=keyword** |
 | **Docker** (localhost:8002) | /rag-query fallback | ✅ **5/5 200** |
-| | 客户端 RAG | ⚠️ HTML 未重建 |
+| | 客户端 RAG | ✅ **3 条 / 61669 docs / source=keyword** |
+| | 近邻图扩展 | ✅ **57380 节点 / source=neighbor** |
 
 ### 6.2 搜索质量对比
 
@@ -399,20 +400,25 @@ ragClient.search() → 客户端优先
 
 ## 7. 待办事项
 
-### 中期待办
+### 当前状态（v1.3.3）
 
 | 项 | 说明 | 优先级 |
 |----|------|--------|
-| Docker HTML 重建 | `docker build --no-cache` 使 rag-client.js 在 HTML 中生效 | 低 |
-| GitHub Pages 近邻图部署 | 将 neighbor_graph.json 作为静态文件部署到 GH Pages | 低 |
+| Docker | ✅ `rag-client.js` 注入 + `chmod 644` 修复 → 客户端搜索 + 近邻图生效 | ✅ 已完成 |
+| GitHub Pages | ✅ `deploy.yml` 自动构建近邻图 + slim 搜索索引 | ✅ 已完成 |
 | build.sh 集成 mkdocs | 当前 mkdocs build 需在 Docker 内运行，超时易失败 | 中 |
 
-### 长期：升级 Workers Paid（$5/月）
+### 下一步
 
-Phase 3 零代码改动即启用：
+**QMD 部署评估** — 检查 HP 资源决定是否部署 QMD 替代 Phase 2+3：
+- 本地 BM25 + embedding + Reranker
+- ai-chat.js 通过 HTTP API 调 QMD
+- 绕开 CF Free 10ms CPU 限制
+- 三环境共用
+
+**升级 Workers Paid**（$5/月）— 备选方案，零代码改动即启用 Phase 3：
 - bge-m3 embedding → Vectorize 查询 → hybrid 融合
 - 跨语言匹配（"hallucination" → "幻觉"文章）
-- 查询语义召回（"怎么做 AI 应用" 理解 = "开发/构建"）
 
 ---
 
