@@ -30,6 +30,17 @@ jobs:
       - name: Build site
         run: mkdocs build
 
+      - name: Build neighbor graph (Tier 1 RAG)
+        run: |
+          pip install numpy scipy
+          python3 scripts/build-neighbor-graph.py \
+            --input site/search/search_index.json \
+            --output site/assets/neighbor_graph.json \
+            --top-k 20
+
+      - name: Slim search index for browser
+        run: python3 scripts/slim-search-index.py || true
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
