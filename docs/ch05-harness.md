@@ -30,10 +30,23 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 ---
 
 
+---
+
+## 学习路径
+
+| 子节 | 内容 | 篇数 |
+|------|------|------|
+| 5.1 Harness 基础概念 | 从这里开始：什么是 Harness？为什么 Agent 需要 | 20 |
+| 5.2 Harness 设计与实践 | 实战篇：Harness 架构设计、上下文管理、Loop En | 35 |
+| 5.3 Harness 进阶与前沿 | 进阶篇：AutoHarness、自进化 Harness、企业 | 36 |
 
 ---
 
 ## 本章内容
+
+### 5.1 Harness 基础概念
+
+> 从这里开始：什么是 Harness？为什么 Agent 需要 Harness？
 
 - [001. Impeccable：大规模自动化测试框架](ch05/001-impeccable.md)
 - [002. Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（13 来源深度合并：Addy Osmani / Boris Cherny+Peter Steinberger / 教科书 / 若飞 工程现场 / TechFarrari 批判 / 若飞 实用指南 / 爱范儿 科普批判 / AllenTang Karpathy 尺子 / winty 7架构中文主流视角 / AutoResearch 5 决策 / 三层结构 + 三款产品对比 + Ralph Loop + 准备度总表 / Shubham Saboo PM 视角）](ch05/002-loop-engineering-13-addy-osmani-boris-cherny-pete.md)
@@ -55,6 +68,15 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [018. AI Native 时代研发组织何去何从](ch05/018-ai-native.md)
 - [019. AI 生产开发工作流：OpenSpec 规范驱动 + Superpowers 工具链](ch05/019-ai-openspec-superpowers.md)
 - [020. Martin Fowler AI 研发 Harness：非确定性承重层](ch05/020-martin-fowler-ai-harness.md)
+
+> 本节共 20 篇
+
+---
+
+### 5.2 Harness 设计与实践
+
+> 实战篇：Harness 架构设计、上下文管理、Loop Engineering。
+
 - [021. Martin Fowler AI 研发提醒：Harness 承重层](ch05/021-martin-fowler-ai-harness.md)
 - [022. AI Friendly 架构设计：后端系统面向无人值守开发时代的标准与路径](ch05/022-ai-friendly.md)
 - [023. OpenSpec 规范驱动开发（SDD）框架 — proposal/design/tasks/specs 四类文档意图锁定](ch05/023-openspec-sdd-proposal-design-tasks-specs.md)
@@ -90,6 +112,15 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [053. Devin Fusion: 多模型路由 Harness 实现 35% 成本降低](ch05/053-devin-fusion-harness-35.md)
 - [054. Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？](ch05/054-harness-engineering-ai.md)
 - [055. 腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](ch05/055-ai-team-harness-engineering.md)
+
+> 本节共 35 篇
+
+---
+
+### 5.3 Harness 进阶与前沿
+
+> 进阶篇：AutoHarness、自进化 Harness、企业级 Harness 部署。
+
 - [056. Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist — 系列第 15 篇收官](ch05/056-harness-engineering-10-8-checklist-15.md)
 - [057. 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术](ch05/057-harness-sdd-ai.md)
 - [058. 腾讯CDN LEGO Harness Engineering实战](ch05/058-cdn-lego-harness-engineering.md)
@@ -126,6 +157,8 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [089. 墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0 + 蚂蚁支小助 的同结论](ch05/089-stripe-minions-deerflow-2-0.md)
 - [090. Harness 工程可视化：Vibe Coding 中重建工程可控性](ch05/090-harness-vibe-coding.md)
 - [091. 知识沉淀是护城河](ch05/091-page-091.md)
-- [092. Better-Harness：Agent Harness 自动优化方法论](ch05/092-better-harness-agent-harness.md)
-- [093. Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits](ch05/093-superpowers-6-0-reviewer-progress-ledger-model.md)
-- [094. Harness进化论文 — M⋆记忆程序进化与AutoHarness动作约束](ch05/094-harness-m-autoharness.md)
+
+> 本节共 36 篇
+
+---
+
