@@ -29,10 +29,23 @@ AI 工具正在重新定义"开发者工具"的边界。
 ---
 
 
+---
+
+## 学习路径
+
+| 子节 | 内容 | 篇数 |
+|------|------|------|
+| 3.1 AI 产品与平台 | 从这里开始：2024-2026 AI 产品生态全景。从 ID | 30 |
+| 3.2 开发工具与工作流 | 实战篇：Obsidian、Claude Code、Curso | 50 |
+| 3.3 AI 工具生态与趋势 | 前瞻篇：AI 工具发展趋势、企业级 AI 平台、生态竞争格局 | 49 |
 
 ---
 
 ## 本章内容
+
+### 3.1 AI 产品与平台
+
+> 从这里开始：2024-2026 AI 产品生态全景。从 IDE 到 Agent 平台。
 
 - [001. The Interface Is No Longer the Product](ch03/001-the-interface-is-no-longer-the-product.md)
 - [002. Obsidian + Claude Code 集成指南](ch03/002-obsidian-claude-code.md)
@@ -64,6 +77,15 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [028. AI-driven layoffs aren't making business sense](ch03/028-ai-driven-layoffs-aren-t-making-business-sense.md)
 - [029. Crawler vs Opencli Doubao](ch03/029-crawler-vs-opencli-doubao.md)
 - [030. Nvidia Cut Checkpoint Costs Nvcomp](ch03/030-nvidia-cut-checkpoint-costs-nvcomp.md)
+
+> 本节共 30 篇
+
+---
+
+### 3.2 开发工具与工作流
+
+> 实战篇：Obsidian、Claude Code、Cursor 等工具的使用与实践。
+
 - [031. 还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍](ch03/031-os-getenv-pydantic-settings.md)
 - [032. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/032-03-ai-skill-8-40-90.md)
 - [033. How to Automate AI Model Documentation with NVIDIA MCG Toolkit](ch03/033-how-to-automate-ai-model-documentation-with-nvidia-mcg-toolk.md)
@@ -114,6 +136,15 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [078. 开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch03/078-ai-obsidian-claude-code.md)
 - [079. Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now](ch03/079-real-time-personalisation-at-scale-how-zepto-understands-wh.md)
 - [080. Announcing Genkit Middleware](ch03/080-announcing-genkit-middleware.md)
+
+> 本节共 50 篇
+
+---
+
+### 3.3 AI 工具生态与趋势
+
+> 前瞻篇：AI 工具发展趋势、企业级 AI 平台、生态竞争格局。
+
 - [081. Claude Code 实践：token 效率提高 71.5 倍的工作流](ch03/081-claude-code-token-71-5.md)
 - [082. 设计系统的新作者：从 Agent 读到 Agent 写](ch03/082-agent-agent.md)
 - [083. This redesign of Stokes Coffee is a masterclass in 'change everything, but don't change a thing' | Creative Boom](ch03/083-this-redesign-of-stokes-coffee-is-a-masterclass-in-change-e.md)
@@ -163,4 +194,8 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [127. AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局](ch03/127-ai-amazon-michael-morton-x-ben-thompson-ai.md)
 - [128. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/128-bedrock-agentcore-pool-model-multi-tenancy.md)
 - [129. Lightfield Skills 系统介绍](ch03/129-lightfield-skills.md)
-- [130. Who Winning Enterprise AI Now](ch03/130-who-winning-enterprise-ai-now.md)
+
+> 本节共 49 篇
+
+---
+

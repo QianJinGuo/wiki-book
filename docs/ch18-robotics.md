@@ -25,7 +25,22 @@ AI 最终要从屏幕走进物理世界。
 
 这是 AI 从数字世界走向物理世界的最后一公里。
 
+> ⚠️ **本章建设中**：当前仅 6 篇实体，覆盖机器人产业（Unitree IPO）、具身智能（NVIDIA Isaac Lab）、消费级机器人（BabyAlpha A3）。更多内容（Figure AI、Tesla Optimus、ROS2 实践、Sim-to-Real 迁移）正在整理中，预计扩充至 20+ 篇。欢迎贡献！
+
 ---
+
+## 学习路径
+
+| 子节 | 内容 | 篇数 |
+|------|------|------|
+| 18.1 机器人产业 | Unitree IPO、市场格局 | 3 |
+| 18.2 具身智能与仿真实训 | NVIDIA Isaac Lab、ASPIRE、Wall-OSS | 3 |
+
+---
+
+### 18.1 机器人产业
+
+> 从这里开始：全球机器人产业格局。Unitree IPO 案例分析、人形机器人商业化进程。
 
 ## Ch18.001 Unitree's IPO Filing: The State of the Robotics Market
 
@@ -184,6 +199,10 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 纯技术背景的团队，即使算法领先，也面临工程化和小规模验证的漫长周期。
 
 ---
+
+### 18.2 具身智能与仿真实训
+
+> 进阶篇：具身智能核心技术——仿真训练、Sim-to-Real 迁移、机器人技能库。
 
 ## Ch18.003 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
 

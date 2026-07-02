@@ -2,7 +2,7 @@
 
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
-> 本章收录 **1089 篇**实体，按深度递增排列。
+> 本章收录 **1089 篇**实体，按 7 个子主题分组，每组内由浅入深排列，并设有进度里程碑。
 
 ---
 
@@ -33,10 +33,30 @@
 ---
 
 
+---
+
+## 学习路径
+
+| 子节 | 内容 | 适合人群 | 篇数 | 阶段 |
+|------|------|---------|------|------|
+| 1.1 AI 时代全景 | 从这里开始 | 入门 | 80 | 🟢 |
+| 1.2 LLM 核心概念 | 深入引擎内部 | 基础 | 120 | 🟢 |
+| 1.3 LLM 工程实践 | 从理论到实践 | 进阶 | 200 | 🟢 |
+| 1.4 模型架构与优化 | 深入架构设计 | 深入 | 200 | 🟡 |
+| 1.5 AI 基础设施与平台 | 规模化之路 | 专家 | 250 | 🟡 |
+| 1.6 前沿模型架构 | 站在前沿 | 前沿 | 150 | 🔴 |
+| 1.7 AI 研究与前沿 | 探秘前沿 | 研究 | 89 | 🔴 |
 
 ---
 
+
+> 💡 **阅读提示**：当同一编号下有 2-6 篇同名文章时，它们是多语言版本或不同视角的同主题内容，可任意顺序阅读。
+
 ## 本章内容
+
+### 1.1 AI 时代全景
+
+> 从这里开始：AI 行业全景图。2024-2026 最重要的 AI 趋势、产品和故事。零门槛阅读，建立对 AI 世界的直觉。
 
 - [001. 2026年最值得关注的15款开发者工具深度解读](ch01/001-2026-15.md)
 - [002. 🧠 The Token Economy pt2: The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.md)
@@ -118,6 +138,15 @@
 - [078. Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](ch01/078-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.md)
 - [079. Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch01/079-anthropic-2028-ai-60.md)
 - [080. Anthropic puts Claude agents on a meter across its subscriptions](ch01/080-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.md)
+
+> 本节共 80 篇
+
+---
+
+### 1.2 LLM 核心概念
+
+> 深入引擎内部：Token 化、Embedding、Attention、Transformer 架构。理解大语言模型如何"思考"。里程碑 1/4：掌握 LLM 的核心原理。
+
 - [081. Lighthouse Attention](ch01/081-lighthouse-attention.md)
 - [082. Build the Agent or Power the Agent?](ch01/082-build-the-agent-or-power-the-agent.md)
 - [083. Google 与 Amnesty International 合作加大间谍软件检测难度](ch01/083-google-amnesty-international.md)
@@ -238,6 +267,18 @@
 - [198. 别只盯着模型：Agent 真正的护城河，是这四层循环](ch01/198-agent.md)
 - [199. Learning to Replicate Expert Judgment in Financial Tasks - Thinking Machines Lab](ch01/199-learning-to-replicate-expert-judgment-in-financial-tasks-t.md)
 - [200. 吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代](ch01/200-ai-loop.md)
+
+🧭 **阶段里程碑 1/4**：你已经掌握了 LLM 核心概念（Token/Embedding/Attention/Transformer）。接下来进入"LLM 工程实践"——学会训练和部署模型。
+
+
+> 本节共 120 篇
+
+---
+
+### 1.3 LLM 工程实践
+
+> 从理论到实践：模型训练、微调技术、部署策略、推理优化。里程碑 2/4：能用 LLM 搭建实际应用。
+
 - [201. 吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代](ch01/201-ai-loop.md)
 - [202. 吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代](ch01/202-ai-loop.md)
 - [203. 吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代](ch01/203-ai-loop.md)
@@ -438,6 +479,18 @@
 - [398. Anthropic Claude Community 插件仓库劫持事件：SHA 校验如何避免供应链攻击](ch01/398-anthropic-claude-community-sha.md)
 - [399. Hermes Agent Skill 系统深度解析](ch01/399-hermes-agent-skill.md)
 - [400. Cline releases open-source agent runtime SDK](ch01/400-cline-releases-open-source-agent-runtime-sdk.md)
+
+🧭 **阶段里程碑 2/4**：你已完成工程实践阶段（训练/微调/部署）。接下来深入"模型架构与优化"——理解模型内部的性能机制。
+
+
+> 本节共 200 篇
+
+---
+
+### 1.4 模型架构与优化
+
+> 深入架构设计：Transformer 变体、注意力机制优化、量化压缩、投机解码。里程碑 3/4：理解模型性能的底层机制。
+
 - [401. Problem with Mathematically Proven Claims About Llms](ch01/401-problem-with-mathematically-proven-claims-about-llms.md)
 - [402. AWS Sagemaker Capacity Aware Inference Fallback](ch01/402-aws-sagemaker-capacity-aware-inference-fallback.md)
 - [403. LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/403-llm-as-a-verifier-a-general-purpose-verification-framework.md)
@@ -638,6 +691,18 @@
 - [598. 刷榜AI全挂了！Meta斯坦福地狱级测试，GPT/Claude/Gemini交出0分](ch01/598-ai-meta-gpt-claude-gemini-0.md)
 - [599. 《Loop Engineering橙皮书》发布！免费，开源](ch01/599-loop-engineering.md)
 - [600. 很多企业做完 AI PoC，为什么还是上不了生产](ch01/600-ai-poc.md)
+
+🧭 **阶段里程碑 3/4**：架构设计已掌握。进入"AI 基础设施与平台"——学习 GPU 集群、分布式训练和云平台。
+
+
+> 本节共 200 篇
+
+---
+
+### 1.5 AI 基础设施与平台
+
+> 规模化之路：GPU 集群、分布式训练、推理引擎、云平台 AI 服务。里程碑 4/4：掌握 AI 基础设施全栈。
+
 - [601. Anthropic PM Jess Yan 的三个 Claude Agent 实践](ch01/601-anthropic-pm-jess-yan-claude-agent.md)
 - [602. 2026年最值得关注的15款开发者工具，你用过几个？](ch01/602-2026-15.md)
 - [603. Co-Existence and the End of Co-Intelligence](ch01/603-co-existence-and-the-end-of-co-intelligence.md)
@@ -888,6 +953,18 @@
 - [848. Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch01/848-qoder-skills-ai.md)
 - [849. 一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch01/849-mission-16-7-78-token-factory-agent.md)
 - [850. Something's Rotten in the State of macOS Icon Design](ch01/850-something-s-rotten-in-the-state-of-macos-icon-design.md)
+
+🧭 **阶段里程碑 4/4** 🎉：基础→工程→架构→基础设施，四阶通关！现在进入"前沿模型架构"——探索 Hybrid 架构、MoE 和多模态融合。
+
+
+> 本节共 250 篇
+
+---
+
+### 1.6 前沿模型架构
+
+> 站在前沿：Hybrid 架构（Transformer+Mamba）、MoE（混合专家）、多模态融合、下一代架构探索。
+
 - [851. model half-life](ch01/851-model-half-life.md)
 - [852. 深入浅出 Harness Engineering 之核心模式与理念](ch01/852-harness-engineering.md)
 - [853. never waste a token](ch01/853-never-waste-a-token.md)
@@ -1038,6 +1115,15 @@
 - [998. Anthropic Claude Code 木马门：隐私遥测争议](ch01/998-anthropic-claude-code.md)
 - [999. Miles: PyTorch-Native LLM RL Post-Training Framework](ch01/999-miles-pytorch-native-llm-rl-post-training-framework.md)
 - [1000. Claude Science：AI 科研工作台，10 倍科研提速](ch01/1000-claude-science-ai-10.md)
+
+> 本节共 150 篇
+
+---
+
+### 1.7 AI 研究与前沿
+
+> 探秘前沿：ICML/NeurIPS 最新研究、Anthropic/DeepMind 前沿成果、AI 可解释性与安全研究。
+
 - [1001. 开始在 Amazon Bedrock 上使用 OpenAI GPT-5.5、GPT-5.4 模型和 Codex](ch01/1001-amazon-bedrock-openai-gpt-5-5-gpt-5-4-codex.md)
 - [1002. ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration](ch01/1002-scarfbench-benchmarking-ai-agents-for-enterprise-java-frame.md)
 - [1003. GrowLoop：开放域对话的真人感评测 — 用种子+Rubrics自动生长Benchmark](ch01/1003-growloop-rubrics-benchmark.md)
@@ -1127,3 +1213,8 @@
 - [1087. Anthropic出手！AI的内心独白曝光了——NLA研究解读](ch01/1087-anthropic-ai-nla.md)
 - [1088. 欢迎来到 AGI 时代的 AI 治理 — Nathan Lambert 论美国政府强制 Anthropic 限制 Fable/Mythos 访问](ch01/1088-agi-ai-nathan-lambert-anthropic-fable-mythos.md)
 - [1089. the anti singularity](ch01/1089-the-anti-singularity.md)
+
+> 本节共 89 篇
+
+---
+

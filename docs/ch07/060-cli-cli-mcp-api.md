@@ -2,7 +2,7 @@
 
 ## Ch07.060 CLI系列④·选型CLI、MCP还是API？
 
-> 📊 Level ⭐⭐ | 5.0KB | `entities/cli-mcp-sdk-agent-tool-selection.md`
+> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/cli-mcp-sdk-agent-tool-selection.md`
 
 # CLI系列④·选型CLI、MCP还是API？
 CLI、MCP Server、SDK、Skills、Code Execution——这五个词看起来都在说"让 Agent 用工具"，但它们根本不在同一个抽象层级。

@@ -2,7 +2,7 @@
 
 ## Ch03.125 AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局
 
-> 📊 Level ⭐⭐ | 3.5KB | `entities/ai-commerce-brand-vs-marketplace-founder-park.md`
+> 📊 Level ⭐⭐⭐ | 3.5KB | `entities/ai-commerce-brand-vs-marketplace-founder-park.md`
 
 # AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局
 

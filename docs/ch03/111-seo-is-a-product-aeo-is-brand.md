@@ -2,7 +2,7 @@
 
 ## Ch03.111 SEO is a product, AEO is brand
 
-> 📊 Level ⭐⭐ | 5.3KB | `entities/seo-product-aeo-brand-productledseo.md`
+> 📊 Level ⭐⭐⭐ | 5.3KB | `entities/seo-product-aeo-brand-productledseo.md`
 
 ## 核心要点
 - **SEO 作为产品** — 传统 SEO 是关于驱动流量，可衡量、可量化，有转化漏斗和 ROI

@@ -2,7 +2,7 @@
 
 ## Ch03.120 langsmith evaluation concepts
 
-> 📊 Level ⭐⭐ | 3.6KB | `entities/langsmith-evaluation-concepts.md`
+> 📊 Level ⭐⭐⭐ | 3.6KB | `entities/langsmith-evaluation-concepts.md`
 
 # LangSmith Evaluation Concepts
 

@@ -2,7 +2,7 @@
 
 ## Ch03.101 Localmaxxing
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/localmaxxing.md`
+> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/localmaxxing.md`
 
 ## Summary
 > Score: 7×8=56

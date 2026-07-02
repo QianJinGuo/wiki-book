@@ -31,6 +31,11 @@
 
 ---
 
+
+### 20.1 AI 与社会
+
+> 从这里开始：AI 对社会结构的影响。就业、教育、伦理。
+
 ## Ch20.001 Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
 
 > 📊 Level ⭐ | 9.8KB | `entities/impeccable-vibe-design-philosophy-anomaly.md`
@@ -1303,6 +1308,11 @@ Evaluator Gap 的核心洞察是"流利不等于胜任"——这对企业级 AI 
 
 ---
 
+
+### 20.2 AI 哲学与治理
+
+> 思考篇：AI 哲学基础、设计哲学、AI 治理框架。
+
 ## Ch20.007 Token 经济学与 AI 效率
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/token-economics-ai-efficiency.md`
@@ -1758,6 +1768,11 @@ This is fundamentally different from general AI applications (chatbots, content 
 -> [original archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/workday-ai-inference-guardrails.md)
 
 ---
+
+
+### 20.3 AI 未来与安全
+
+> 行动篇：AI 安全政策、指数发展、人与 AI 共存。
 
 ## Ch20.013 Nemotron 3.5 Content Safety
 
