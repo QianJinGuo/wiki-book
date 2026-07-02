@@ -6,7 +6,7 @@
 
 ```
 站点名称: AI 工程
-源文件:   docs/ (4,046 篇文章)
+源文件:   docs/ (4,000+ 篇文章)
 章节:     20 章 (Ch01-Ch20)
 域名:     jinguo.tech
 仓库:     github.com/QianJinGuo/wiki-book
@@ -34,224 +34,217 @@ MkDocs 构建 → site/ (构建产物)
 deploy/
 ├── docker/
 │   ├── Dockerfile         # 多阶段构建: python→nginx
-│   ├── nginx.conf         # 缓存 + 清洁 URL 处理
+│   ├── nginx.conf         # 缓存 + RAG fallback + 清洁 URL
 │   └── docker-compose.yml
 ├── cloudflare/
-│   └── wrangler.toml
+│   ├── wrangler.toml → ../../wrangler.toml  # symlink
+│   ├── deploy.sh          # 上传 R2 + 部署 Pages
+│   └── ai-proxy/          # Cloudflare Worker: AI Chat CORS 代理
 └── github/
-    └── deploy.yml         # GitHub Actions 工作流
+    └── deploy.yml         # GitHub Actions (含近邻图构建)
 
 scripts/
-├── build.sh               # 共享构建脚本
-└── deploy.sh              # 主部署脚本 (docker|cloudflare|github|all)
+├── build.sh               # 共享构建脚本 (mkdocs + 近邻图 + slim)
+├── deploy.sh              # 主部署脚本 (docker|cloudflare|github|all)
+├── build-neighbor-graph.py  # TF-IDF 近邻图构建
+├── build-vectorize.py       # Vectorize 索引构建 (Phase 3)
+└── slim-search-index.py     # 搜索索引裁剪
+
+functions/                  # Cloudflare Pages Functions
+├── rag-query.js            # RAG 查询 (Phase 1+2)
+└── rag/
+    ├── search.js           # 搜索索引端点 (R2 流式)
+    └── graph.js            # 近邻图端点 (R2 流式)
+
+overrides/assets/javascripts/
+├── rag-client.js           # 客户端 RAG 引擎 (关键词+近邻图)
+└── ai-chat.js              # AI Chat 面板 (doRagSearch + 三路降级)
 ```
 
-### 环境隔离原则
+---
 
-| 文件类型 | 影响范围 | 修改注意事项 |
-|---------|---------|-------------|
-| `docs/` | 所有环境 | 源文件，修改后需重新构建所有环境 |
-| `site/` | 构建产物 | 不要直接修改，会被覆盖 |
-| `deploy/docker/` | 仅 Docker | nginx.conf、Dockerfile |
-| `deploy/cloudflare/` | 仅 Cloudflare | wrangler.toml |
-| `deploy/github/` | 仅 GitHub Pages | deploy.yml |
-| `mkdocs.yml` | 所有环境 | 构建配置 |
-| `overrides/` | 所有环境 | MkDocs 主题覆盖 |
+## RAG 系统
+
+### 三层 RAG 能力
+
+| 层 | 方案 | 语义程度 | 状态 | 环境 |
+|----|------|---------|------|------|
+| Tier 1 客户端搜索 | 关键词 + TF-IDF 近邻图 | 词袋级 | ✅ 线上运行 | 全部 |
+| Phase 2 Reranker | bge-reranker-base | 跨句语义 | ⚠️ Free 503 | CF Pages |
+| Phase 3 语义搜索 | bge-m3 + Vectorize | 向量语义 | ❌ Free 限制 | 待 Workers Paid |
+
+### 三环境 RAG 最终状态 (v1.3.3)
+
+| 能力 | Docker | GitHub Pages | Cloudflare Pages |
+|------|--------|-------------|-----------------|
+| 客户端搜索 | ✅ | ✅ | ✅ |
+| 近邻图扩展 | ✅ (注入) | ✅ (GHA 构建) | ✅ (R2) |
+| Reranker | ❌ nginx 兜底 | ❌ 无服务器 | ⚠️ Free 503 |
+
+### 数据流
+
+```
+用户输入 → sendMessage()
+    │
+    ├─ doRagSearch(text) ← 客户端优先
+    │    ├─ ragClient.search() → Tier 1 关键词+近邻图
+    │    ├─ fetch(/rag-query) → Phase 1+2 服务器兜底
+    │    └─ 空结果静默降级
+    │
+    └─ 注入 LLM → ai-proxy → MiMo API
+```
+
+### 客户端 RAG 引擎 (rag-client.js)
+
+- 浏览器 IndexedDB 缓存 search_index.json (61K 文档)
+- 关键词搜索 (tokenize + 词频打分)
+- 近邻图扩展 (top-10 种子 × 20 近邻, TF-IDF 余弦)
+- 融合排序 (关键词分 × 0.3 + 近邻分 × 10)
+- 三路降级: 客户端 → 服务器 → 空结果
+- 多环境 URL 降级: CF Pages → GitHub Pages / Docker 静态文件
+
+### 近邻图构建
+
+```bash
+python3 scripts/build-neighbor-graph.py \
+  --input site/search/search_index.json \
+  --output site/assets/neighbor_graph.json \
+  --top-k 20
+# 输入: 63K 文档, TF-IDF → CSR 稀疏矩阵 → A@A.T
+# 输出: 30MB, 57K 节点, 每节点 top-20 近邻
+# 耗时: ~1 分钟 (M1 MacBook)
+```
+
+---
+
+## 部署
 
 ### 部署命令
 
 ```bash
-# 部署全部环境
+# 部署全部 (构建 + Docker + CF Pages + GitHub)
 ./scripts/deploy.sh all --build
 
 # 仅部署 Docker
 ./scripts/deploy.sh docker --build
 
-# 仅部署 Cloudflare
-./scripts/deploy.sh cloudflare
+# 仅部署 Cloudflare (需先 build)
+rm -f site/search/search_index.json  # >25MB, 从 R2 读取
+npx wrangler pages deploy site --project-name=ai-engineering --branch=main
 
-# 仅部署 GitHub Pages
-./scripts/deploy.sh github
-
-# 手动构建
-./scripts/build.sh --clean
+# 仅 GitHub Pages (自动触发 Actions)
+git push origin main
 ```
+
+### 构建流程 (build.sh)
+
+1. `mkdocs build` — 生成 site/ (含 HTML/JS/搜索索引)
+2. `build-neighbor-graph.py` — 从完整搜索索引生成近邻图
+3. `slim-search-index.py` — 裁剪搜索索引 (68MB → 21MB)
+
+### Cloudflare 部署 (deploy/cloudflare/deploy.sh)
+
+1. 上传 search_index.json → R2 `ai-engineering-search`
+2. 上传 neighbor_graph.json → R2 `ai-engineering-search`
+3. 删除 site/search/search_index.json (>25MB CF 限制)
+4. `wrangler pages deploy site` — 部署 HTML + JS + Pages Functions
 
 ---
 
-## Cloudflare Pages 配置
-
-### 搜索引擎策略
-
-**问题**: MkDocs 搜索索引 (search_index.json) 原始大小 68.5MB，超过 Cloudflare Pages 25MB 限制。
-
-**解决方案**: 构建后裁剪搜索索引。
-
-```python
-# 裁剪策略
-- 移除空文本文档
-- 文本截断到 80 字符
-- location 截断到 50 字符
-- JSON 紧凑格式 (无缩进)
-- 结果: 21.3MB → Cloudflare 自动压缩到 ~8.4MB
-```
-
-**搜索功能状态**:
-```
-Docker:           ✅ 完整搜索 (68.5MB 索引)
-Cloudflare Pages: ✅ 搜索可用 (21.3MB 裁剪索引)
-GitHub Pages:     ✅ 完整搜索
-```
-
-### 缓存策略
-
-**Cloudflare Pages 默认缓存** (无需额外配置):
-```
-静态资源 (CSS/JS/图片): 自动 CDN 缓存
-HTML 页面:              每次请求回源验证
-搜索索引:               浏览器缓存 (首次加载后命中)
-```
-
-**Docker (nginx) 缓存**:
-```
-静态资源:              30天, immutable
-搜索索引:              1小时, must-revalidate
-HTML:                  无显式缓存
-```
-
-### 部署限制
-
-```
-单文件大小:  ≤25MB (搜索索引需裁剪)
-总站点大小:  无硬限制
-带宽:        免费无限
-```
-
----
-
-## 站点内容更新策略
-
-### 更新流程
-
-```
-1. 编辑源文件 (docs/*.md)
-2. 构建站点 (mkdocs build)
-3. 裁剪搜索索引 (如需部署到 Cloudflare)
-4. 部署到目标环境
-5. 验证链接和搜索
-```
-
-### 内容来源
-
-```
-wiki 实体 (~/wiki/entities/) → book_compiler → docs/ 文章
-手动编辑                    → 直接修改 docs/*.md
-```
-
-### 更新频率
-
-```
-wiki 实体更新: 每日自动同步 (book_compiler)
-手动编辑:     按需
-部署:         内容更新后手动触发
-```
-
----
-
-## 验证策略
+## 验证
 
 ### Playwright 端到端测试
 
-**规则**: 所有链接修复必须用 Playwright 点击测试，不能只用 curl 或直接访问 URL。
-
-```javascript
-// ✅ 正确: 模拟用户操作
-browser_navigate("http://localhost:8002/ch01-ai-basics")
-browser_click(link_ref)  // 点击文章链接
-browser_console("window.location.href")  // 验证跳转
-
-// ❌ 错误: 直接访问目标 URL
-browser_navigate("http://localhost:8002/ch01-001-article")
+```bash
+node test-rag.mjs
 ```
 
-### 验证清单
+覆盖:
+- 5 组查询 × 3 环境 (Docker / GH Pages / CF Pages)
+- 响应结构验证 (results 数组 + source)
+- top1 相关性验证
+- Free 503 自动重试
+- 前端脚本引用检查 (rag-client.js + ai-chat.js)
+- 客户端 ragClient.search() 验证
 
-```
-□ 按用户描述的步骤完整走一遍
-□ 用 Playwright 点击链接 (不是直接访问)
-□ 验证目标 URL 正确
-□ 验证页面内容加载正常
-□ 验证搜索功能可用
-□ 检查所有环境 (Docker/Cloudflare/GitHub)
-```
+### 手动验证
 
-### CSS 加载验证
+```bash
+# RAG 端点存活
+curl https://jinguo.tech/rag/search       # → 200
+curl https://jinguo.tech/rag/graph        # → 200
+curl https://jinguo.tech/rag-query?q=test # → 200 或 503
 
-**已知问题**: 子目录页面 CSS 路径可能错误。
-
-**根因**: MkDocs Material 的 `<base href="/">` 标签确保相对路径从站点根目录解析。
-
-**验证方法**:
-```javascript
-// 检查 CSS 是否正确加载
-document.querySelectorAll('link[rel="stylesheet"]')[0].href
-// 应该是: http://localhost:8002/assets/stylesheets/...
-// 不是:   http://localhost:8002/ch01-xxx/assets/stylesheets/...
+# RAG 客户端日志 (浏览器 Console)
+# [RagClient] 搜索索引加载完成: 61669 篇
+# [RagClient] 近邻图加载完成: 57380 个节点
+# [RagClient] 就绪 (61669 篇文档)
 ```
 
 ---
 
-## 已知问题与解决方案
+## 已知问题
 
-### 1. 尾部斜杠 404
+### 1. Free 计划 503
 
-**问题**: `http://localhost:8002/ch01-xxx/` 返回 404。
+```
+单次查询:         ✅ 200
+连续 3+ 次:       ❌ 503 1102
+等待 2-4s 后重试: ✅ 恢复
+```
 
-**解决**: nginx 配置 `location ~ ^(.+)/$` 处理尾部斜杠。
+解决方案: 升级 Workers Paid ($5/月) 或部署 QMD 到 HP。
 
-### 2. MkDocs Material 链接拦截
+### 2. Docker 文件权限
 
-**问题**: 从章节索引页点击链接不跳转。
+`docker cp` 注入文件后权限为 600，需手动 `chmod 644`。当前容器内已修复。
 
-**原因**: MkDocs Material 的 JavaScript 拦截链接点击进行 SPA 导航。
+### 3. 搜索索引太大 (200MB)
 
-**解决**: 确保 `<base href="/">` 标签存在 (overrides/main.html)。
+Docker 构建的搜索索引未 slim (200MB)，浏览器 fetch 会超时。通过 `docker cp` 注入 21MB 裁剪版解决。正式修复需修改 Dockerfile 添加 slim 步骤。
 
-### 3. 搜索索引过大
+---
 
-**问题**: search_index.json 超过 Cloudflare Pages 25MB 限制。
+## 文件索引
 
-**解决**: 构建后裁剪索引 (截断文本到 80 字符)。
-
-### 4. 重复文件
-
-**问题**: 同一文章有中英文两个 slug 版本。
-
-**解决**: 保留中文 slug 版本，删除英文版本。
+| 文件 | 用途 |
+|------|------|
+| `functions/rag-query.js` | Pages Function: Phase 1+2 服务端 RAG |
+| `functions/rag/search.js` | 搜索索引端点 (R2 流式) |
+| `functions/rag/graph.js` | 近邻图端点 (R2 流式) |
+| `overrides/assets/javascripts/rag-client.js` | 客户端 RAG 引擎 |
+| `overrides/assets/javascripts/ai-chat.js` | AI Chat + doRagSearch |
+| `overrides/main.html` | 加载 rag-client.js |
+| `scripts/build-neighbor-graph.py` | 近邻图构建 |
+| `scripts/build-vectorize.py` | Vectorize 索引构建 |
+| `scripts/slim-search-index.py` | 搜索索引裁剪 |
+| `test-rag.mjs` | Playwright E2E 测试 |
+| `RAG-DESIGN.md` | RAG 方案设计 |
+| `RAG-RETROSPECTIVE.md` | 全流程复盘 |
+| `wrangler.toml` | Pages 配置 (单一真相源) |
 
 ---
 
 ## 快速参考
 
 ```bash
-# 本地开发
+# 本地开发 (Docker)
 cd ~/wiki-book && docker compose up -d --build
 
-# 部署到 Cloudflare
-cd ~/wiki-book && npx wrangler pages deploy site --project-name=ai-engineering
+# 部署到 CF Pages
+cd ~/wiki-book && rm -f site/search/search_index.json && npx wrangler pages deploy site --project-name=ai-engineering --branch=main
 
-# 验证搜索
-curl -sI https://ai-engineering-6yk.pages.dev/search/search_index.json
-
-# 检查链接
-curl -sI http://localhost:8002/ch01-001-article | head -1
+# RAG 端点验证
+curl https://jinguo.tech/rag/search | head -c 100
+curl https://jinguo.tech/rag/graph | head -c 100
+curl "https://jinguo.tech/rag-query?q=Agent记忆" | python3 -m json.tool | head -10
 
 # Playwright 测试
-browser_navigate("http://localhost:8002/ch01-ai-basics")
-browser_click(link_ref)
+node test-rag.mjs
 ```
 
 ---
 
-*更新时间: 2026-06-28*
+*更新时间: 2026-07-02 (v1.3.3)*
 *维护者: Hermes Agent*
+*RAG 复盘: RAG-RETROSPECTIVE.md*
