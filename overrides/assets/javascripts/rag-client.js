@@ -123,28 +123,48 @@
       var needsFetch = !self._docs || !self._graph;
 
       if (needsFetch) {
-        // 加载 search_index.json
+        // 搜索索引：多环境降级
+        //   CF Pages: /rag/search (Pages Function)
+        //   GitHub Pages + Docker: /search/search_index.json (静态文件)
         if (!self._docs) {
           console.log("[RagClient] 加载搜索索引...");
-          var resp = await fetch(self.searchUrl);
-          if (!resp.ok) throw new Error("加载搜索索引失败: " + resp.status);
-          var idx = await resp.json();
-          self._docs = idx.docs || [];
-          console.log("[RagClient] 搜索索引加载完成: " + self._docs.length + " 篇");
-        }
-
-        // 加载近邻图
-        if (!self._graph) {
-          console.log("[RagClient] 加载近邻图...");
-          var resp2 = await fetch(self.graphUrl);
-          if (resp2.ok) {
-            self._graph = await resp2.json();
-            console.log("[RagClient] 近邻图加载完成: " + Object.keys(self._graph).length + " 个节点");
+          var searchData = null;
+          var searchUrls = [self.searchUrl, "/search/search_index.json"];
+          for (var si = 0; si < searchUrls.length; si++) {
+            try {
+              var resp = await fetch(searchUrls[si]);
+              if (!resp.ok) continue;
+              searchData = await resp.json();
+              if (searchData && (Array.isArray(searchData.docs) || Array.isArray(searchData))) break;
+            } catch(e) {
+              continue;
+            }
+          }
+          if (searchData) {
+            self._docs = Array.isArray(searchData) ? searchData : (searchData.docs || []);
+            console.log("[RagClient] 搜索索引加载完成: " + self._docs.length + " 篇");
           } else {
-            console.warn("[RagClient] 近邻图不可用（" + resp2.status + "），降级为纯关键词搜索");
-            self._graph = {};
+            console.warn("[RagClient] 搜索索引不可用（所有 URL 均失败），降级为无 RAG");
+            self._docs = [];
           }
         }
+
+        // 近邻图：多环境降级
+        if (!self._graph) {
+          console.log("[RagClient] 加载近邻图...");
+          var graphData = null;
+          var graphUrls = [self.graphUrl, "/assets/neighbor_graph.json"];
+          for (var gi = 0; gi < graphUrls.length; gi++) {
+            try {
+              var resp2 = await fetch(graphUrls[gi]);
+              if (!resp2.ok) continue;
+              graphData = await resp2.json();
+              if (graphData && typeof graphData === "object" && Object.keys(graphData).length > 0) break;
+            } catch(e) {
+              continue;
+            }
+          }  // closes for loop
+        }  // closes if (!self._graph)
 
         // 缓存到 IndexedDB
         if (db) {
