@@ -8,3 +8,4 @@ node_modules/
 
 # Worker secrets — API keys set via wrangler secret, not in source
 deploy/cloudflare/*/worker.js
+.workbuddy/
