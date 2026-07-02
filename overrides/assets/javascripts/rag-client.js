@@ -164,6 +164,12 @@
               continue;
             }
           }  // closes for loop
+          self._graph = graphData || {};
+          if (self._graph && Object.keys(self._graph).length > 0) {
+            console.log("[RagClient] 近邻图加载完成: " + Object.keys(self._graph).length + " 个节点");
+          } else {
+            console.warn("[RagClient] 近邻图不可用，降级为纯关键词搜索");
+          }
         }  // closes if (!self._graph)
 
         // 缓存到 IndexedDB
