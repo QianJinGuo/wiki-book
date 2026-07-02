@@ -77,7 +77,7 @@ Claude Code 内部通过调用 opus、sonnet、haiku 等多款模型实现综合
 Anthropic 的实践提供了典型案例：
 
 - opus 4 → Claude Code 1.0
-- opus 4.5 → Claude Code 2.0  
+- opus 4.5 → Claude Code 2.0
 - opus 4.6 → Claude Code 3.0
 
 基座模型与 Harness 迭代互促，形成正向飞轮。

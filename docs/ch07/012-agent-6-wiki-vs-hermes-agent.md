@@ -6,7 +6,7 @@
 
 # Agent 记忆存储方案深度洞察：6 大流派分歧与 Hermes 启示
 
-> **作者**：Frank / Q马Q马，2026-06-02  
+> **作者**：Frank / Q马Q马，2026-06-02
 > **核心事件**：`@QuantumTransf`（Twitter）针对 `ai-memory` 项目（GitHub 467⭐）发出尖锐质疑：**"原始 session 本来就是结构化数据，直接放进 SQLite 就是一个很强的结构，编译成 markdown wiki 反而引入不必要的中间实体"**——引发 Agent 记忆领域最核心的设计分歧大讨论。本文综合 GitHub 数十个项目与最新行业实践，给出全景洞察。
 
 ## 推文争论：Agent 记忆该是人浏览的 wiki 还是可查询的数据库？

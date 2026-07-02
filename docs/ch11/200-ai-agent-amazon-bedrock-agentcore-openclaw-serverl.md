@@ -1,37 +1,42 @@
-# AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客
+# AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客
 
-## Ch11.200 AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客
+## Ch11.200 AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐ | 5.6KB | `entities/using-amazon-bedrock-agentcore-openclaw-multi-1.md`
+> 📊 Level ⭐⭐ | 5.6KB | `entities/using-amazon-bedrock-agentcore-openclaw-multi-4.md`
 
 ## 概述
-AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 by awschina on 08 5月 2026 in Migration Transfer Services Permalink Share 摘要：基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第一篇：为什么要把 OpenClaw 从单机搬到 AWS，介绍背景动机、7R 迁移策略分析、数据迁移方案，以及部署架构全景。 目录 01 一、背景与动机：将 AI Agent 扩展到多用户场景 02 二、迁移策略分析：这属于 7R 中的哪一
+AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 by awschina on 08 5月 2026 in Migration Transfer Services Permalink Share 摘要：基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第四篇：Phase 2 3 — 部署 AgentCore Runtime 与业务层，构建 ARM64 容器镜像、创建 AgentCore Runtime，以及部署消息路由、定时任务和 Token 用量监控。 目录 01 五、Phase 2
 
 ## 核心技术
 Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、OpenClaw、Amazon Bedrock
 
 ## 来源
-> [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-1/)
+> [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-4/)
 
 ## 深度分析
-**OpenClaw 的"个人工具 → 企业服务"转型**是理解这系列文章的主线。OpenClaw 本质上是一个基于 Node.js 的单进程 AI Agent 框架，单机部署即可满足个人用户需求。但当需要服务多个用户时，原有架构面临五大挑战：用户隔离、弹性扩缩、数据持久化、安全防护、运维可观测性。
-**AWS 7R 迁移框架的应用**： ^[https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-1/]
+**Phase 2 是整个迁移的核心**：将 OpenClaw 从"Node.js 进程"转变为"AgentCore 托管的 Serverless 容器"。这一阶段由 `deploy.sh` 自动执行，主要做了两件事：(1) 构建 ARM64 容器镜像到 ECR；(2) 创建 AgentCore Runtime。
+**Starter Toolkit vs 手动部署**：
 
-- **Replatform**：将 OpenClaw 从 VPS 迁移到 AgentCore Runtime，获得 Serverless 的扩缩容和按需计费能力。核心改动是运行时替换，代码改动最小。
-- **Refactor**：利用 AgentCore 的 Per-Session microVM 架构重新设计多租户隔离机制。这是架构层面的重构。
-**多租户隔离的关键设计**：Per-Session microVM 意味着每个用户会话运行在独立的虚拟机中，CPU、内存、文件系统完全隔离。这是比进程隔离更高级别的安全边界。
+- **Starter Toolkit**（`agentcore configure + agentcore deploy`）：AWS 推荐，两条命令完成 Phase 2，适合快速原型。
+- **手动方式**（`docker build → ecr push → create-agent-runtime → create-endpoint`）：适合需要精细控制的场景。
+**ARM64 架构的约束**：AgentCore Runtime 运行在 Graviton 处理器上，必须构建 ARM64 镜像。CodeBuild 提供原生 ARM64 构建机，无需本地 QEMU 模拟。
+**Phase 3 业务层部署的关键组件**：
+
+- **消息路由 Lambda**：接收用户消息，按会话 ID 分发到对应的 AgentCore Runtime microVM。这是多租户路由的核心。
+- **定时任务 Lambda**：处理定时触发的工作流，如每日报告生成、定期数据同步。
+- **Token 用量监控**：基于 CloudWatch + Lambda 实现，按用户/会话追踪 Token 消耗，支持成本分摊。
 
 ## 实践启示
-1. **迁移策略选择**：如果你的 Agent 改动量能接受，优先选择 Replatform（换运行环境不停机）。Refactor（重新架构）适合有足够工程资源且对性能/隔离有更高要求的场景。 ^[https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-1/]
-2. **数据迁移是容易被低估的环节**：`~/.openclaw/` 目录包含配置、会话、凭证、工作区文件。迁移前需要规划好数据同步方案，避免用户会话丢失。 ^[https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-1/]
-3. **CDK 基础设施即代码**：使用 AWS CDK 定义基础设施，确保迁移过程可重复、可审计。修改代码后重新 `cdk deploy` 即可完成环境更新。 ^[https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-1/]
-4. **容器镜像的 ARM64 要求**：AgentCore Runtime 运行在 Graviton 处理器上，构建镜像时必须指定 ARM64 架构。CodeBuild 提供原生 ARM64 构建能力。 ^[https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-1/]
-5. **多租户安全的核心**：Cognito JWT 鉴权 + STS 临时凭证，实现用户级别的访问控制，避免横向越权。 ^[https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-1/]
+1. **构建耗时的预期**：CodeBuild 构建 ARM64 镜像需要 5-10 分钟。使用 `screen` 或 `nohup` 避免终端断开导致构建中断。
+2. **Per-Session 隔离的意义**：每个用户会话分配独立 microVM，会话间完全隔离。这意味着一个用户的高负载不会影响其他用户的体验。
+3. **消息路由的设计**：Lambda 路由需要维护"会话 ID → microVM endpoint"的映射。建议使用 Redis 或 DynamoDB 存储这个映射表。
+4. **成本监控的必要性**：AgentCore 按使用量计费，需要在业务层实现 Token 用量追踪。CloudWatch Metrics + Lambda 实现自动告警。
+5. **Session 超时管理**：配置合理的 `sessionTimeoutSeconds`，平衡资源利用率和用户体验。空闲会话应及时释放。
 
 ## 相关实体
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](ch03/044-agent.md)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](ch03/044-agent.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](ch03/044-agent.md)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](ch03/044-agent.md)
 - [CI&amp;T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](ch03/044-agent.md)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](ch04/150-ai.md)
 

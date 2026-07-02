@@ -12,8 +12,8 @@
 - CoinbaseCartel 团体声称对事件负责，被评估为 ShinyHunters、Scattered Spider、LAPSUS$ 的衍生分支 
 - CoinbaseCartel 成立于 2025 年 9 月，专注于纯数据窃取和勒索，已累积 170 名受害者 
 ## 相关实体
-- [Grafana Github Token Breach Led To Html](ch12/003-token.md)
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](ch12/003-token.md)
+- [Grafana Github Token Breach Led To Html](ch01/690-github.md)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](ch01/690-github.md)
 - [Freelance Designers Cant Compete Ai Subscription](ch04/150-ai.md)
 - [Malware Crew Teampcp Opensources Its Shaihulud Worm On](ch04/150-ai.md)
 - [What Political Censorship Looks Like Inside An Llm S Weights](ch01/124-what-political-censorship-looks-like-inside-an-llm-s-weights.md)

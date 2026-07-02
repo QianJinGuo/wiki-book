@@ -2,7 +2,7 @@
 
 ## Ch05.062 Loop Engineering 系统框架：四次跃迁、五要素模型、成本公式与三大风险
 
-> 📊 Level ⭐⭐ | 6.5KB | `entities/loop-engineering-deep-dive-mengzhaoSixi-2026.md`
+> 📊 Level ⭐⭐ | 6.9KB | `entities/loop-engineering-deep-dive-mengzhaoSixi-2026.md`
 
 # Loop Engineering 系统框架：四次跃迁、五要素模型、成本公式与三大风险
 

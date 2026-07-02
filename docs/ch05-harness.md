@@ -2,7 +2,7 @@
 
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
-> 本章收录 **91 篇**实体，按深度递增排列。
+> 本章收录 **94 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 76 |
+| ⭐⭐ 工程师 | 需编程基础 | 79 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 13 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -37,8 +37,8 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 
 - [001. Impeccable：大规模自动化测试框架](ch05/001-impeccable.md)
 - [002. Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（13 来源深度合并：Addy Osmani / Boris Cherny+Peter Steinberger / 教科书 / 若飞 工程现场 / TechFarrari 批判 / 若飞 实用指南 / 爱范儿 科普批判 / AllenTang Karpathy 尺子 / winty 7架构中文主流视角 / AutoResearch 5 决策 / 三层结构 + 三款产品对比 + Ralph Loop + 准备度总表 / Shubham Saboo PM 视角）](ch05/002-loop-engineering-13-addy-osmani-boris-cherny-pete.md)
-- [003. Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/003-harness-engineering-ai.md)
-- [004. Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）](ch05/004-harness-engineering-2026-ecc.md)
+- [003. Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）](ch05/003-harness-engineering-2026-ecc.md)
+- [004. Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/004-harness-engineering-ai.md)
 - [005. QQ音乐 Harness Engineering 实践（大仓多服务场景）](ch05/005-qq-harness-engineering.md)
 - [006. Loop Engineering: 把反馈循环放进工程现场](ch05/006-loop-engineering.md)
 - [007. 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/007-ai-harness-engineering.md)
@@ -95,34 +95,37 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [058. 腾讯CDN LEGO Harness Engineering实战](ch05/058-cdn-lego-harness-engineering.md)
 - [059. 从零复刻 Claude Code：Harness 构建学习笔记](ch05/059-claude-code-harness.md)
 - [060. 从 Autoresearch 到 Better-Harness：自动优化真正难在评价信号](ch05/060-autoresearch-better-harness.md)
-- [061. Engineering roles shift from developing code to managing AI](ch05/061-engineering-roles-shift-from-developing-code-to-managing-ai.md)
+- [061. Harness Engineering 的未来——什么会消失，什么不会](ch05/061-harness-engineering.md)
 - [062. Loop Engineering 系统框架：四次跃迁、五要素模型、成本公式与三大风险](ch05/062-loop-engineering.md)
-- [063. Harness Engineering 的未来——什么会消失，什么不会](ch05/063-harness-engineering.md)
+- [063. Engineering roles shift from developing code to managing AI](ch05/063-engineering-roles-shift-from-developing-code-to-managing-ai.md)
 - [064. 清华大学：驾驭工程 (Harness Engineering) 研究报告](ch05/064-harness-engineering.md)
 - [065. 全球首个完全AI编写的训练框架：面壁ForgeTrain速度反超英伟达Megatron，年底要把国产算力软件重写一遍](ch05/065-ai-forgetrain-megatron.md)
 - [066. Claude Code 多 Agent Harness 源码拆解：留纸条、抠上下文、抠缓存、捆手脚](ch05/066-claude-code-agent-harness.md)
 - [067. Thin Harness, Fat Skills：AI工程架构的本质](ch05/067-thin-harness-fat-skills-ai.md)
 - [068. Skill Factory：三天手搓面向Harness设计的技能工厂](ch05/068-skill-factory-harness.md)
 - [069. Browser Harness Github](ch05/069-browser-harness-github.md)
-- [070. Superpowers 深度解析：给 Claude Code 装上工程大脑](ch05/070-superpowers-claude-code.md)
-- [071. Harness 工程之道：Skill 原理与最佳实践](ch05/071-harness-skill.md)
+- [070. Harness 工程之道：Skill 原理与最佳实践](ch05/070-harness-skill.md)
+- [071. Superpowers 深度解析：给 Claude Code 装上工程大脑](ch05/071-superpowers-claude-code.md)
 - [072. 12 个 Agent 工程设计底层逻辑：脚手架 vs 承重墙](ch05/072-12-agent-vs.md)
 - [073. Cloudflare Copy Fail Linux 内核漏洞应急响应](ch05/073-cloudflare-copy-fail-linux.md)
 - [074. Beyond Vibe Coding — Directed Generation as Design Methodology](ch05/074-beyond-vibe-coding-directed-generation-as-design-methodolo.md)
 - [075. 场景营销前端 AI Coding — 从问题到方案](ch05/075-ai-coding.md)
 - [076. Harness Engineering Deletable Worksite Ruofei](ch05/076-harness-engineering-deletable-worksite-ruofei.md)
-- [077. 开启Harness Engineering探索之旅](ch05/077-harness-engineering.md)
-- [078. Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？](ch05/078-harness-engineering-ai.md)
-- [079. Loss Function Development (LFD) — 损失函数开发与 /goal 循环（Elvis Sun）](ch05/079-loss-function-development-lfd-goal-elvis-sun.md)
-- [080. Harness 工程实践复盘：100% Cache 命中的 Agent 怎么设计？](ch05/080-harness-100-cache-agent.md)
-- [081. DIPG 蚂蚁保 Host-Research-Verify 三 Agent 离线 verify 闭环：C 端 AIGC 工程化范式](ch05/081-dipg-host-research-verify-agent-verify-c-aigc.md)
-- [082. Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律](ch05/082-harness-engineering-ashby.md)
-- [083. Harness Engineering 四根支柱与四要素架构](ch05/083-harness-engineering.md)
-- [084. Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进](ch05/084-claude-harness-generator-evaluator-context-reset.md)
-- [085. Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/085-harness-ai.md)
-- [086. 墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0 + 蚂蚁支小助 的同结论](ch05/086-stripe-minions-deerflow-2-0.md)
-- [087. Harness 工程可视化：Vibe Coding 中重建工程可控性](ch05/087-harness-vibe-coding.md)
-- [088. 知识沉淀是护城河](ch05/088-page-088.md)
-- [089. Better-Harness：Agent Harness 自动优化方法论](ch05/089-better-harness-agent-harness.md)
-- [090. Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits](ch05/090-superpowers-6-0-reviewer-progress-ledger-model.md)
-- [091. Harness进化论文 — M⋆记忆程序进化与AutoHarness动作约束](ch05/091-harness-m-autoharness.md)
+- [077. Harness 工程 2026 年度调研](ch05/077-harness-2026.md)
+- [078. Spec-Driven Development (SDD) 全面总结：从5人7天案例到方法论全集](ch05/078-spec-driven-development-sdd-5-7.md)
+- [079. 开启Harness Engineering探索之旅](ch05/079-harness-engineering.md)
+- [080. 规格驱动开发与 Harness](ch05/080-harness.md)
+- [081. Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？](ch05/081-harness-engineering-ai.md)
+- [082. Loss Function Development (LFD) — 损失函数开发与 /goal 循环（Elvis Sun）](ch05/082-loss-function-development-lfd-goal-elvis-sun.md)
+- [083. Harness 工程实践复盘：100% Cache 命中的 Agent 怎么设计？](ch05/083-harness-100-cache-agent.md)
+- [084. DIPG 蚂蚁保 Host-Research-Verify 三 Agent 离线 verify 闭环：C 端 AIGC 工程化范式](ch05/084-dipg-host-research-verify-agent-verify-c-aigc.md)
+- [085. Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律](ch05/085-harness-engineering-ashby.md)
+- [086. Harness Engineering 四根支柱与四要素架构](ch05/086-harness-engineering.md)
+- [087. Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进](ch05/087-claude-harness-generator-evaluator-context-reset.md)
+- [088. Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/088-harness-ai.md)
+- [089. 墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0 + 蚂蚁支小助 的同结论](ch05/089-stripe-minions-deerflow-2-0.md)
+- [090. Harness 工程可视化：Vibe Coding 中重建工程可控性](ch05/090-harness-vibe-coding.md)
+- [091. 知识沉淀是护城河](ch05/091-page-091.md)
+- [092. Better-Harness：Agent Harness 自动优化方法论](ch05/092-better-harness-agent-harness.md)
+- [093. Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits](ch05/093-superpowers-6-0-reviewer-progress-ledger-model.md)
+- [094. Harness进化论文 — M⋆记忆程序进化与AutoHarness动作约束](ch05/094-harness-m-autoharness.md)

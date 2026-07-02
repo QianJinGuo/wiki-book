@@ -673,7 +673,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 
 ## Ch14.005 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 
-> 📊 Level ⭐⭐ | 24.3KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
+> 📊 Level ⭐⭐ | 24.2KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
 
 # 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 
@@ -2795,7 +2795,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 ## 相关实体
 - [明星开源项目，为什么开始离开 github？](ch01/690-github.md)
 - [cisa admin leaked aws govcloud keys on github](ch11/119-cisa-admin-leaked-aws-govcloud-keys-on-github.md)
-- [1-click github token stealing via a vscode bug — ammaraskar](ch12/003-token.md)
+- [1-click github token stealing via a vscode bug — ammaraskar](ch01/690-github.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/github-blog-multilingual-ai-open-dataset.md)
 
@@ -2803,7 +2803,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ## Ch14.026 DataComp for Language Models
 
-> 📊 Level ⭐⭐ | 5.0KB | `entities/datacomp-for-language-models.md`
+> 📊 Level ⭐⭐ | 4.9KB | `entities/datacomp-for-language-models.md`
 
 → （无原始来源）
 
@@ -2818,12 +2818,12 @@ DataComp 提供标准化的数据质量评估基准：
 
 ### 过滤策略对比
 DataComp 系统性地对比了多种数据过滤策略：
-| 策略 | 适用场景 | 效果 |    
-|------|----------|------|    
-| 启发式规则 | 快速清洗 | 中等效果，召回率高 |    
-| 分类器过滤 | 精细筛选 | 依赖标注质量 |    
-| 嵌入聚类 | 多样性保持 | 平衡质量与覆盖 |    
-| LLM 裁判 | 高质量目标 | 成本较高 |    
+| 策略 | 适用场景 | 效果 |
+|------|----------|------|
+| 启发式规则 | 快速清洗 | 中等效果，召回率高 |
+| 分类器过滤 | 精细筛选 | 依赖标注质量 |
+| 嵌入聚类 | 多样性保持 | 平衡质量与覆盖 |
+| LLM 裁判 | 高质量目标 | 成本较高 |
 
 ### 开源工具链
 DataComp 配套开源数据处理工具：

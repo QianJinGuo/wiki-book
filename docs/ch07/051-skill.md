@@ -74,7 +74,7 @@
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/245-skill.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch04/245-skill.md)
 - [Thin Harness Fat Skills](ch04/245-skill.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/192-tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/194-tencent-vibe-coding-to-agentic-engineering-backend.md)
 
 ---
 

@@ -49,8 +49,7 @@ Many enterprise MCP workflows go beyond straightforward request-response tool ca
 Without streaming, a tool call that takes 45 seconds returns nothing until completion, and the user stares at a spinner. With streaming, they see progress events in real time. When a client sends a `tools/call` request with `Accept: application/json, text/event-stream`, AgentCore Gateway opens an SSE stream and forwards events from the MCP server target in real time, including progress notifications, logging messages, and the final tool result. Clients that send only `Accept: application/json` continue to receive a single JSON response, preserving full backward compatibility.
 
 When response streaming is enabled on AgentCore Gateway, the response interceptor behavior changes and must check the `isStreamingResponse` field in `gatewayResponse` to distinguish between streaming and non-streaming responses. The response interceptor is invoked for events that contain a JSON-RPC `id` field. The response interceptor isn’t invoked for `notifications/progress`, `notifications/message`, and `pings`. To enable streaming, set the `enableResponseStreaming` block during the `CreateGateway` or `UpdateGateway` API call.
-    
-    
+
     "protocolConfiguration": {
       "mcp": {
         "streamingConfiguration": {
@@ -66,8 +65,7 @@ When thinking about streaming use cases with AgentCore Gateway, keep the followi
 Session management introduces stateful multi-turn workflows to AgentCore Gateway. When you enable sessions, AgentCore Gateway generates a `Mcp-Session-Id` on the first initialize request and returns it as a response header. The client includes this header on subsequent requests, allowing AgentCore Gateway to track client interactions, maintain mappings to downstream MCP server sessions, and correlate elicitation requests across tool calls.
 
 To enable sessions, add a `sessionConfiguration` block during the `CreateGateway` or `UpdateGateway` API call. You can configure the session timeout from a minimum of 15 minutes to a maximum of 8 hours. The default is 1 hour.
-    
-    
+
     "protocolConfiguration": {
       "mcp": {
         "sessionConfiguration": {
@@ -169,7 +167,7 @@ Gateway 是 agent 工具调用的单点——监控其延迟、错误率和可�
 ## 相关实体
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/256-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](ch03/044-agent.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/064-building-ai-agents-for-business-support-using-amazon-bedrock.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/067-building-ai-agents-for-business-support-using-amazon-bedrock.md)
 - [Amazon Quick Bedrock Agentcore Finops Chat](ch11/197-amazon-quick.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/044-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)

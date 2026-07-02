@@ -2,7 +2,7 @@
 
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
-> 本章收录 **69 篇**实体，按深度递增排列。
+> 本章收录 **71 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 68 |
+| ⭐⭐ 工程师 | 需编程基础 | 70 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -61,17 +61,17 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [026. SkillOpt — 微软训练 Skill 文档的方法论](ch07/026-skillopt-skill.md)
 - [027. 微信读书官方skill与huashu-weread增强版](ch07/027-skill-huashu-weread.md)
 - [028. Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏](ch07/028-securing-ai-agents-aws-cisco-ai-defense-mcp-a2a.md)
-- [029. 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局](ch07/029-ai-all-in-one-knowhow-skill-5-headless.md)
-- [030. Qoder Skills 完全指南](ch07/030-qoder-skills.md)
-- [031. CLI、MCP 和 CLI+Skill，应该如何选？](ch07/031-cli-mcp-cli-skill.md)
-- [032. The new AI lock-in](ch07/032-the-new-ai-lock-in.md)
-- [033. Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式](ch07/033-skill-trace2skill-evoskill-skillopt.md)
+- [029. Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式](ch07/029-skill-trace2skill-evoskill-skillopt.md)
+- [030. 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局](ch07/030-ai-all-in-one-knowhow-skill-5-headless.md)
+- [031. Qoder Skills 完全指南](ch07/031-qoder-skills.md)
+- [032. CLI、MCP 和 CLI+Skill，应该如何选？](ch07/032-cli-mcp-cli-skill.md)
+- [033. The new AI lock-in](ch07/033-the-new-ai-lock-in.md)
 - [034. MapSatisfyBench：首个以满意度为核心目标的地图智能体评测基准](ch07/034-mapsatisfybench.md)
 - [035. Matt Pocock Skills — AI编程技能集合](ch07/035-matt-pocock-skills-ai.md)
 - [036. Autobrowse Browserbase Persistent Skill](ch07/036-autobrowse-browserbase-persistent-skill.md)
-- [037. 使用 Kiro 和 MCP 自动化大规模升级 RDS MySQL 8.0 至 RDS MySQL 8.4](ch07/037-kiro-mcp-rds-mysql-8-0-rds-mysql-8-4.md)
-- [038. AI-Infra-Auto-Driven-SKILLS v0.1.0：给 Codex / Claude Code 的推理框架工作流](ch07/038-ai-infra-auto-driven-skills-v0-1-0-codex-claude-code.md)
-- [039. Wiki Evolver Skill System Design (GPT-5.5 Copilot Session)](ch07/039-wiki-evolver-skill-system-design-gpt-5-5-copilot-session.md)
+- [037. Wiki Evolver Skill System Design (GPT-5.5 Copilot Session)](ch07/037-wiki-evolver-skill-system-design-gpt-5-5-copilot-session.md)
+- [038. 使用 Kiro 和 MCP 自动化大规模升级 RDS MySQL 8.0 至 RDS MySQL 8.4](ch07/038-kiro-mcp-rds-mysql-8-0-rds-mysql-8-4.md)
+- [039. AI-Infra-Auto-Driven-SKILLS v0.1.0：给 Codex / Claude Code 的推理框架工作流](ch07/039-ai-infra-auto-driven-skills-v0-1-0-codex-claude-code.md)
 - [040. 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构](ch07/040-hermesagent-vlm-skill-agent.md)
 - [041. Autonomous Vulnerability Hunting with MCP](ch07/041-autonomous-vulnerability-hunting-with-mcp.md)
 - [042. AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](ch07/042-aws-devops-agent-mcp-server.md)
@@ -86,8 +86,8 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [051. 你写的 Skill，及格了吗？](ch07/051-skill.md)
 - [052. 我用 SKILL.md 做了一个简历生成器](ch07/052-skill-md.md)
 - [053. Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch07/053-anthropic-agent-12-mcp.md)
-- [054. AI + Skills 打通中间件迁移：Android 到鸿蒙定位服务实践](ch07/054-ai-skills-android.md)
-- [055. Anthropic Claude Skill 9 类任务分类法](ch07/055-anthropic-claude-skill-9.md)
+- [054. Anthropic Claude Skill 9 类任务分类法](ch07/054-anthropic-claude-skill-9.md)
+- [055. AI + Skills 打通中间件迁移：Android 到鸿蒙定位服务实践](ch07/055-ai-skills-android.md)
 - [056. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/056-skill.md)
 - [057. Multica — 开源 Managed Agents 平台](ch07/057-multica-managed-agents.md)
 - [058. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/058-skill-skill.md)
@@ -97,8 +97,10 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [062. Introducing the MDN MCP server](ch07/062-introducing-the-mdn-mcp-server.md)
 - [063. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/063-ai-skill.md)
 - [064. skill-mcp — 把 AI 技能当软件包管理（MCP 权限网关 + 只调度不执行的 Pipeline）](ch07/064-skill-mcp-ai-mcp-pipeline.md)
-- [065. Create Custom MCP Catalogs and Profiles](ch07/065-create-custom-mcp-catalogs-and-profiles.md)
-- [066. 25个Skills详解：从生产力清单到AI工作流资产](ch07/066-25-skills-ai.md)
-- [067. Perplexity 首次公开了内部 Skill 设计指南](ch07/067-perplexity-skill.md)
-- [068. Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获](ch07/068-codex-record-replay-gui-skill.md)
-- [069. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/069-microsoft-agent-framework-tools-4-provider-tool-ap.md)
+- [065. SkillComposer: 生成式技能组合](ch07/065-skillcomposer.md)
+- [066. Create Custom MCP Catalogs and Profiles](ch07/066-create-custom-mcp-catalogs-and-profiles.md)
+- [067. 25个Skills详解：从生产力清单到AI工作流资产](ch07/067-25-skills-ai.md)
+- [068. Perplexity 首次公开了内部 Skill 设计指南](ch07/068-perplexity-skill.md)
+- [069. Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获](ch07/069-codex-record-replay-gui-skill.md)
+- [070. 李继刚 ljg Skills 系列（四）：表达写作类 Skill](ch07/070-ljg-skills-skill.md)
+- [071. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/071-microsoft-agent-framework-tools-4-provider-tool-ap.md)

@@ -2,7 +2,7 @@
 
 ## Ch07.019 MCP-based Interactive PDF Text Extraction from Amazon S3
 
-> 📊 Level ⭐⭐ | 11.6KB | `entities/mcp-pdf-text-extraction-s3-interactive-aws.md`
+> 📊 Level ⭐⭐ | 11.5KB | `entities/mcp-pdf-text-extraction-s3-interactive-aws.md`
 
 # MCP-based Interactive PDF Text Extraction from Amazon S3
 
@@ -87,17 +87,17 @@ async def call_tool(name: str, arguments: dict):
     if name == "extract_s3_pdf_text":
         bucket = arguments["bucket"]
         key = arguments["key"]
-        
+
         s3_client = boto3.client('s3')
         with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp_file:
             s3_client.download_file(bucket, key, tmp_file.name)
             tmp_path = tmp_file.name
-        
+
         reader = PdfReader(tmp_path)
         text = ""
         for page in reader.pages:
             text += page.extract_text() + "\n"
-        
+
         os.unlink(tmp_path)
         return [TextContent(type="text", text=text)]
 ```
