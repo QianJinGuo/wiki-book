@@ -2,7 +2,7 @@
 
 ## Ch07.063 Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获
 
-> 📊 Level ⭐⭐ | 3.1KB | `entities/codex-record-replay-skill-generation-vibecoder.md`
+> 📊 Level ⭐⭐⭐ | 3.1KB | `entities/codex-record-replay-skill-generation-vibecoder.md`
 
 # Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获
 

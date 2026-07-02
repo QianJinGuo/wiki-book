@@ -2,7 +2,7 @@
 
 ## Ch03.103 Microsoft Agent Framework 结构化输出：response_format 与 response.value
 
-> 📊 Level ⭐⭐ | 5.8KB | `entities/microsoft-agent-framework-structured-output.md`
+> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/microsoft-agent-framework-structured-output.md`
 
 ## 核心问题
 传统方案：提示词要求"只输出 JSON" + `json.loads()` → 易夹杂 markdown、缺字段、类型漂移。Agent Framework 的解法：Schema 由 API 约束，框架负责解析 。

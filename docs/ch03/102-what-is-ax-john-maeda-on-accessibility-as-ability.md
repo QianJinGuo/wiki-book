@@ -2,7 +2,7 @@
 
 ## Ch03.102 What is AX? John Maeda on Accessibility as Ability
 
-> 📊 Level ⭐⭐ | 6.2KB | `entities/2026-06-11-what-is-ax.md`
+> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/2026-06-11-what-is-ax.md`
 
 # What is AX? John Maeda on Accessibility as Ability
 

@@ -2,7 +2,7 @@
 
 ## Ch07.065 SkillComposer: 生成式技能组合
 
-> 📊 Level ⭐⭐ | 4.1KB | `entities/skillcomposer-generative-skill-composition-agent.md`
+> 📊 Level ⭐⭐⭐ | 4.1KB | `entities/skillcomposer-generative-skill-composition-agent.md`
 
 # SkillComposer: 生成式技能组合
 

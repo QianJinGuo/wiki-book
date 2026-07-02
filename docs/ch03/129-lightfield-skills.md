@@ -2,7 +2,7 @@
 
 ## Ch03.129 Lightfield Skills 系统介绍
 
-> 📊 Level ⭐⭐ | 3.1KB | `entities/lightfield-introducing-skills.md`
+> 📊 Level ⭐⭐⭐ | 3.1KB | `entities/lightfield-introducing-skills.md`
 
 ## 核心要点
 - **持久技能开发** — AI 代理可在会话间建立和保留专业知识，无需完整模型再训练

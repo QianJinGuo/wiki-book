@@ -2,7 +2,7 @@
 
 ## Ch03.114 Edge AI Networking — Wi-Fi 7/8 Convergence Analysis
 
-> 📊 Level ⭐⭐ | 4.3KB | `entities/edge-ai-networking-wifi-convergence-2026.md`
+> 📊 Level ⭐⭐⭐ | 4.3KB | `entities/edge-ai-networking-wifi-convergence-2026.md`
 
 # Edge AI Networking — Wi-Fi 7/8 Convergence Analysis
 

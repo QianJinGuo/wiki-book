@@ -2,7 +2,7 @@
 
 ## Ch07.060 Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式
 
-> 📊 Level ⭐⭐ | 2.9KB | `entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md`
+> 📊 Level ⭐⭐⭐ | 2.9KB | `entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md`
 
 > -> [anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
 
