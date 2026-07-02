@@ -18,7 +18,8 @@ wiki-book 现有 63,013 篇 Markdown 文档（200MB 源文件），搜索索引 
 |----|------|---------|------|------|
 | **Tier 1 客户端搜索** | 关键词匹配 + TF-IDF 近邻图扩展 | 词袋级 | ✅ 线上运行 | 全部环境 |
 | **Phase 2 Reranker** | bge-reranker-base 交叉编码器重排序 | **跨句语义理解** | ⚠️ Free 间歇 503 | CF Pages 专属 |
-| **Phase 3 语义检索** | bge-m3 embedding + Vectorize 查询 | 向量语义 | ❌ Free 10ms CPU 锁定 | 待 Workers Paid |
+| **Phase 3 语义搜索** | bge-m3 embedding + Vectorize 查询 | 向量语义 | ❌ Free 10ms CPU 锁定 | 待 Workers Paid |
+| **QMD 混合搜索** (评估中) | BM25 + 本地 embedding + 本地 Reranker (HP 部署) | **全栈语义** | 📋 待评估资源 | HP 服务器 / Tunnel
 
 ### 三环境对比
 
@@ -311,15 +312,14 @@ nginx.conf 新增 `/rag-query` 端点返回 `{"results":[],"source":"nginx-fallb
 
 | 项 | 说明 | 状态 |
 |----|------|------|
-| Docker HTML 重建 | `docker build --no-cache` 使 rag-client.js 生效 | ⏳ |
-| Docker 近邻图注入 | 将 neighbor_graph.json 注入 Docker | 📋 |
-| GitHub Pages 近邻图 | 将 neighbor_graph.json 作为静态文件部署 | 📋 |
+| QMD 部署评估 | 检查 HP 资源（内存/磁盘），决定是否部署 QMD | 📋 |
+| QMD 集成 | 部署 QMD + Cloudflare Tunnel + ai-chat.js HTTP 集成 | 📋 |
 
-### 长期（升级 Workers Paid $5/月）
+### 长期（升级 Workers Paid $5/月 或 QMD 替代）
 
-- Phase 3 语义搜索 — 同义词/跨语言匹配（零代码改动即生效）
-- 融合检索（keyword + vector + reranker）— 三层综合
-- 索引自动同步 — 内容更新后全量重建向量
+- **Phase 3 语义搜索** — Workers Paid 升级，零代码改动即生效
+- **QMD 混合搜索** — BM25 + 语义 + Reranker，部署到 HP 绕开 Free 限制
+- 近邻图可被 QMD 语义搜索替代，客户端关键词搜索保留作降级
 
 ## Playwright 测试结果
 
