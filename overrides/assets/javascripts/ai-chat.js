@@ -196,6 +196,16 @@
     var conversationHistory = [];
     var articleContext = getArticleContext();
     var isStreaming = false;
+    var ragClient = null;
+
+    // 初始化客户端 RAG 引擎（异步，不阻塞面板打开）
+    if (typeof RagClient !== "undefined") {
+      ragClient = new RagClient({ searchUrl: RAG_URL.replace(/\/rag-query.*$/, "") + "/rag/search", graphUrl: RAG_URL.replace(/\/rag-query.*$/, "") + "/rag/graph" });
+      ragClient.init().catch(function(e) {
+        console.warn("[ai-chat] 客户端 RAG 引擎初始化失败:", e.message, "将使用服务器端 RAG");
+        ragClient = null;
+      });
+    }
 
     // 触发按钮
     trigger.addEventListener("click", function() {
@@ -567,9 +577,54 @@
       isStreaming = true;
       if (bubble) bubble.innerHTML = '<div class="ai-chat__typing"><span></span><span></span><span></span></div>';
 
-      fetch(RAG_URL + "?q=" + encodeURIComponent(text) + "&top_k=5")
-        .then(function(r) { return r.json(); })
-        .then(function(ragData) {
+      // ========== RAG 搜索：客户端优先，服务器兜底 ==========
+      function doRagSearch(queryText) {
+        return new Promise(function(resolve) {
+          // 客户端引擎优先（已就绪且数据已加载）
+          if (ragClient && ragClient._ready) {
+            ragClient.search(queryText, { topK: 5 }).then(function(clientResults) {
+              if (clientResults && clientResults.length > 0) {
+                resolve({ results: clientResults, source: "client" });
+                return;
+              }
+              // 客户端搜索无结果，降级到服务器
+              fallbackToServer(queryText, resolve);
+            }).catch(function() {
+              fallbackToServer(queryText, resolve);
+            });
+          } else if (ragClient) {
+            // 客户端初始化中，等待一下
+            ragClient.init().then(function() {
+              ragClient.search(queryText, { topK: 5 }).then(function(r) {
+                resolve({ results: r || [], source: r && r.length > 0 ? "client" : "server" });
+              }).catch(function() {
+                fallbackToServer(queryText, resolve);
+              });
+            }).catch(function() {
+              fallbackToServer(queryText, resolve);
+            });
+          } else {
+            // 无客户端引擎，直接走服务器
+            fallbackToServer(queryText, resolve);
+          }
+        });
+      }
+
+      function fallbackToServer(queryText, resolve) {
+        fetch(RAG_URL + "?q=" + encodeURIComponent(queryText) + "&top_k=5")
+          .then(function(r) {
+            if (!r.ok) { resolve({ results: [], source: "error-" + r.status }); return null; }
+            return r.json();
+          })
+          .then(function(data) {
+            if (data) resolve(data);
+          })
+          .catch(function() {
+            resolve({ results: [], source: "fetch-error" });
+          });
+      }
+
+      doRagSearch(text).then(function(ragData) {
           var ragContext = "";
           if (ragData.results && ragData.results.length > 0) {
             ragContext = "以下是 wiki-book 中与用户问题相关的参考资料：\n\n";
