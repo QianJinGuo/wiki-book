@@ -26,6 +26,16 @@ if [ -f "scripts/slim-search-index.py" ]; then
     python3 scripts/slim-search-index.py
 fi
 
+# Upload RAG assets to R2
+echo "Uploading RAG assets to R2..."
+if [ -f "/tmp/neighbor_graph.json" ]; then
+  npx wrangler r2 object put ai-engineering-search/neighbor_graph.json --file /tmp/neighbor_graph.json --remote 2>&1 | tail -1
+fi
+# Upload slimmed search index to R2
+if [ -f "site/search/search_index.json" ]; then
+  npx wrangler r2 object put ai-engineering-search/search_index.json --file site/search/search_index.json --remote 2>&1 | tail -1
+fi
+
 # Safety check: remove any remaining oversized files (>25MB CF Pages limit)
 find site -size +25M -delete 2>/dev/null || true
 
