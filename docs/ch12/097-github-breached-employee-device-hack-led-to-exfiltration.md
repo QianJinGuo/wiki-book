@@ -13,7 +13,7 @@
 - [Github Investigating Teampcp Claimed 17Cc77](ch04/150-ai.md)
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](ch01/643-google-adds-llms-txt-check-to-chrome-lighthouse.md)
 - [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/446-score-by-collisions-patch-by-panic.md)
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](ch12/003-token.md)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](ch01/690-github.md)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/150-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)

@@ -18,20 +18,20 @@ Claude Code 中有三个易混淆但本质不同的概念：[^1]
 - **Agent View** — 跨多个独立 Claude 实例的可视化面板（服务于**人类**）
 
 ### 关键能力
-| 功能 | 命令 |  
-|------|------|  
-| 打开 Agent View | `claude agents` 或按← |  
-| 后台启动任务 | `claude --bg "task"` 或 `/bg` |  
-| 后台会话持久化 | 关终端继续跑；重启后 `claude respawn --all` |  
+| 功能 | 命令 |
+|------|------|
+| 打开 Agent View | `claude agents` 或按← |
+| 后台启动任务 | `claude --bg "task"` 或 `/bg` |
+| 后台会话持久化 | 关终端继续跑；重启后 `claude respawn --all` |
 
 ### 四个关键技术细节[^1]
-1. **会话-终端解耦**：后台 Cloude 由常驻监工程序管理，不受终端窗口生命周期影响  
-2. **Git Worktree 隔离**：每个后台 agent 自动分配到独立 `.claude/worktrees/<会话名>/`，N 个 agent 同时改同一仓库不会冲突  
-3. **AI 驱动的状态摘要**：面板上每行状态描述由 **Haiku**（Anthropic 最小模型）每 15 秒重新生成，而非简单规则输出  
-4. **/loop 集成**：后台会话支持按 schedule 自迭代，带 ✢ 图标标识  
+1. **会话-终端解耦**：后台 Cloude 由常驻监工程序管理，不受终端窗口生命周期影响
+2. **Git Worktree 隔离**：每个后台 agent 自动分配到独立 `.claude/worktrees/<会话名>/`，N 个 agent 同时改同一仓库不会冲突
+3. **AI 驱动的状态摘要**：面板上每行状态描述由 **Haiku**（Anthropic 最小模型）每 15 秒重新生成，而非简单规则输出
+4. **/loop 集成**：后台会话支持按 schedule 自迭代，带 ✢ 图标标识
 
 ## 与 Hermes 的关联
-Agent View 解决的问题域与 Hermes 的 [Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 高度相关：  
+Agent View 解决的问题域与 Hermes 的 [Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 高度相关：
 
 - Hermes 通过 wiki-pipeline 编排多个 agent 协作
 - Agent View 的 worktree 隔离方案是 Agent Harness 中多 agent 并行的参考模式
@@ -42,13 +42,13 @@ Agent View 解决的问题域与 Hermes 的 [Agent 编排](https://github.com/Qi
 花叔在文中揭示了一个核心矛盾：**AI 派任务的边际成本趋近于零，但人类 review 任务的边际成本不是。** 这正是 Agent View 试图解决的本质问题。当 38 个项目、606 个会话并行运转时，调度者成为系统瓶颈。Anthropic 内部 Boris Cherny 需要管理 5 个终端 tab、5-10 个浏览器 session 加移动端——这不是个人管理能力问题，而是人机协作界面的设计问题。 
 
 ### 平台化的必然性：Sherlocking 时刻
-Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal、claude-squad、Vibe Kanban 等），Anthropic 选择产品化而非收购或合作，说明：  
-1. 多 Agent 调度是核心竞争力，必须官方掌控  
-2. 第三方工具能跨 vendor（同时管 Claude Code + Codex + Gemini），官方版本只需专注单一生态绑定  
-3. 这是典型的平台「Sherlocking」——但凡有长期价值的功能，平台终将纳入官方版本  
+Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal、claude-squad、Vibe Kanban 等），Anthropic 选择产品化而非收购或合作，说明：
+1. 多 Agent 调度是核心竞争力，必须官方掌控
+2. 第三方工具能跨 vendor（同时管 Claude Code + Codex + Gemini），官方版本只需专注单一生态绑定
+3. 这是典型的平台「Sherlocking」——但凡有长期价值的功能，平台终将纳入官方版本
 
 ### 三层架构的认知价值
-花叔在文中清晰地区分了 Subagent、Agent Team、Agent View 三层概念，这个划分的价值在于**服务对象不同**：  
+花叔在文中清晰地区分了 Subagent、Agent Team、Agent View 三层概念，这个划分的价值在于**服务对象不同**：
 
 - Subagent 和 Agent Team 是 AI 内部的并行优化，服务 AI 自身
 - Agent View 是人类的多路复用面板，服务操作者

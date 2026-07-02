@@ -1,55 +1,98 @@
-# 你不知道的 Agent：原理、架构与工程实践
+# 让 Agent 自主完成任务
 
-## Ch01.517 你不知道的 Agent：原理、架构与工程实践
+## Ch01.517 让 Agent 自主完成任务
 
-> 📊 Level ⭐⭐ | 7.0KB | `entities/你不知道的-agent原理架构与工程实践.md`
+> 📊 Level ⭐⭐ | 8.6KB | `entities/cli-anything-wechat-demo.md`
+
+# 让 Agent 自主完成任务
+
+CLI-Anything 是香港大学数据科学实验室（HKUDS）的开源项目，核心功能是为任意 GUI 软件自动生成结构化 CLI 接口，让 AI Agent（如 Claude Code、Codex）通过命令行直接驱动 Blender、GIMP、FreeCAD 等专业软件。7 阶段全自动流水线从源码分析到包发布，配合 CLI-Hub 社区注册表实现 Agent 自主发现和安装工具。
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cli-anything-wechat-demo.md)
+
+## 摘要
+
+当前 AI Agent 的根本局限：文本进文本出，遇到带 GUI 的专业软件就只能绕道。要么手写 wrapper（工作量随深度指数增长），要么靠截图点击的 RPA（换个系统主题就崩溃）。CLI-Anything 的解法是**自动生成 CLI 层**——把"人用的鼠标+键盘接口"转换为"Agent 用的命令行接口"。一条命令 `/cli-anything ./gimp` 跑完 7 阶段流水线，就能 pip install 一个可用的 CLI 包。已覆盖 Blender、GIMP、FreeCAD、QGIS、Godot、LibreOffice 等 20+ 软件。
 
 ## 核心要点
-微信文章：你不知道的 Agent：原理、架构与工程实践
+
+### 7 阶段全自动流水线
+
+1. **🔍 Analyze** — 扫描源码，将 GUI 操作映射到底层 API
+2. **📐 Design** — 设计命令分组、状态模型、输出格式
+3. **🔨 Implement** — 用 Click 框架实现 CLI，带 REPL 模式、JSON 输出、undo/redo
+4. **📋 Plan Tests** — 生成 TEST.md，规划单元测试和端到端测试
+5. **🧪 Write Tests** — 跑测试，覆盖真实软件调用
+6. **📝 Document** — 更新测试结果文档
+7. **📦 Publish** — 生成 setup.py，装进 PATH
+
+### SKILL.md：Agent 可读的工具说明书
+
+每个生成的 CLI 附带 SKILL.md 文件，格式专门给 Agent 读：YAML 头部写名称和描述，正文列所有命令组和子命令，加上用法示例和 JSON 输出说明。Agent 读完 SKILL.md 就知道工具能干什么、怎么调、输出什么格式。
+
+### CLI-Hub：社区驱动的 CLI 注册表
+
+- `pip install cli-anything-hub` + `cli-hub install <name>`
+- **元技能（Meta-Skill）**：Agent 可自主读 Hub 目录、选择安装合适的 CLI，无需人工指定
+- 覆盖创意类（Blender/GIMP/Krita/Shotcut）、科学计算（FreeCAD/QGIS）、开发工具（Obsidian/Zotero/n8n）、游戏（Godot）、办公（LibreOffice/Zoom）、AI/ML（Stable Diffusion/ComfyUI/Ollama）
+- 注册表实时更新，社区 PR 合并后立刻生效
+
+### 真实 Demo
+
+- **Blender 3D 无人机**：Agent 逐步搭建轨道中继无人机 3D 模型，每步可实时预览，命令和视觉状态记录进 trajectory.json
+- **FreeCAD 月球车**：用 cli-anything-freecad 搭建好奇号风格月球车，验证 CLI 覆盖 CAD 功能深度
+- **Draw.io HTTPS 握手流程图**：Agent 从零画 TCP 三次握手→TLS 协商→加密数据交换→四次挥手，产出 .drawio 和 .png
+
+### 平台支持
+
+- Claude Code：`/plugin marketplace add HKUDS/CLI-Anything`（官方支持）
+- Pi Coding Agent：bash 脚本安装扩展（官方支持）
+- OpenCode：复制命令文件（官方支持）
+- OpenClaw：复制 SKILL.md 到技能目录（社区支持）
+- Codex：bash 安装脚本（社区支持，实验性）
+- GitHub Copilot CLI：`copilot plugin install`（社区支持）
 
 ## 深度分析
-"你不知道的 Agent" 这类标题通常意味着文章会覆盖 Agent 开发中**被低估或误解的工程细节**，而非泛泛而谈 Agent 的定义和价值。本文聚焦于原理、架构与工程实践，暗示会深入探讨 Agent 系统的核心技术挑战：规划（Planning）、记忆（Memory）、工具调用（Tool Use）、以及多 Agent 协作（Multi-Agent Collaboration）的工程实现。
-从 Agent 工程的角度，最核心的架构问题有三个：**① Agent 的状态如何持久化和恢复**（长程任务中如果进程崩溃如何续接）；**② 工具调用的安全和权限控制**（Agent 能否自我修改代码、能否调用删除类操作）；**③ Agent 决策的可观测性**（当 Agent 选择了错误路径时，如何快速定位是哪一步推理出了问题）。
-多 Agent 协作引入了额外的复杂度：Agent 之间的通信协议、共享上下文的管理、分布式状态的一致性、以及死锁和循环依赖的检测。淘宝/阿里体系下有大量生产级 Agent 落地实践，这类文章的实战价值往往在于揭示互联网公司如何在资源受限条件下（延迟敏感、容错要求高）设计可靠的 Agent 系统。
+
+### 1. CLI 作为 Agent 与 GUI 软件的"接口协议层"
+
+CLI-Anything 解决的核心问题不是"给软件加命令行"，而是**建立 Agent 与专业软件之间的标准化交互协议**。当前 Agent 与软件的交互存在三层断裂：(1) GUI 层是为人眼设计的，Agent 无法可靠操作；(2) API 层虽然结构化，但每个软件的 API 设计哲学不同，Agent 需要逐个学习；(3) CLI 层恰好是中间态——格式清晰、可组合、LLM 天然擅长读写。CLI-Anything 本质上是在做**API 翻译**：将各软件碎片化的 Python API 统一翻译为 Click CLI 的标准接口。
+
+### 2. SKILL.md 是 Agent 的"工具使用手册"范式
+
+SKILL.md 的设计思路值得所有 Agent 工具开发者借鉴。当前 Agent 工具的一个普遍问题：Agent 知道一个工具"存在"，但不知道"怎么用"。SKILL.md 用结构化格式（YAML 头 + 命令列表 + 用法示例 + 输出格式）解决了这个问题。这与 MCP (Model Context Protocol) 的工具描述机制异曲同工，但更偏向"教程式文档"而非"函数签名"。**对于复杂工具，教程式文档比函数签名更有效**——Agent 需要"这个工具的工作流是什么样的"，而非"这个参数的类型是什么"。
+
+### 3. 元技能（Meta-Skill）：Agent 自主发现工具的起点
+
+CLI-Hub 的"元技能"是最具前瞻性的设计：Agent 不需要人类告诉它"用这个工具"，而是自主在注册表中搜索、评估、安装。这实现了从"工具增强 Agent"到"Agent 自主增强自身"的范式转变。但这也带来了新的挑战：如何确保 Agent 选择正确的工具？如何评估社区贡献 CLI 的质量？当前 Hub 仅靠 CI 做基础验证，这对于专业软件的深度功能覆盖可能不够。
+
+### 4. REPL 模式 + undo/redo：Agent 长流程任务的关键支撑
+
+生成的 CLI 自带 REPL 模式，保持会话状态，支持 undo/redo。这对 Agent 的长流程任务至关重要——不用每次调用都重新初始化软件上下文。**会话状态保持是 Agent 可靠执行长任务的基础设施**。undo/redo 则为 Agent 提供了"试错-回退"的能力，这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的"确定性回退路径"理念一致。
+
+### 5. 7 阶段流水线的工程质量与局限
+
+7 阶段流水线（分析→设计→实现→测试→文档→发布）本身是一个小型软件工程流水线。它的核心假设是：源码的 Python API 封装足够规范，可以通过自动分析映射到底层功能。这个假设对 Blender（成熟的 Python API）成立，对 API 封装混乱的软件可能不成立。**生成 CLI 的质量天花板取决于源码的 API 设计质量**。文章也诚实地指出了这一点："如果软件的 Python API 封装得乱七八糟，生成出来的 CLI 覆盖率可能没那么理想。"
 
 ## 实践启示
-- **状态外部化设计**：不要把 Agent 的"记忆"存放在进程内存中，而是使用外部向量数据库或结构化存储（PostgreSQL + JSON）持久化上下文，支持任务中断后无缝恢复
-- **最小权限工具集**：为每个 Agent 分配刚好够用的工具权限，避免"全能 Agent"导致的权限过大风险；关键操作（删除、支付、发送）必须人工二次确认
-- **决策链路可观测**：为 Agent 的每次推理步骤生成结构化日志（包含输入、输出、工具调用参数、耗时），使用 trace 系统串联，方便在 Agent 行为异常时快速回放和定位
-- **Multi-Agent 通信协议设计**：如果涉及多 Agent 协作，提前定义好消息格式、超时处理、重试策略和降级路径；避免在系统复杂之后才补齐通信层的容错设计
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/你不知道的-agent原理架构与工程实践.md)
 
-## 相关实体
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](ch04/503-agent.md)
-- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](ch04/503-agent.md)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/150-ai.md)
-- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch04/150-ai.md)
-- [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/015-harness.md)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/133-skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
-- [Codeindex · 让大模型更好地理解你的代码](ch01/334-codeindex.md)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/245-skill.md)
-- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](ch04/245-skill.md)
-- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](ch03/073-claude-code.md)
-- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/150-ai.md)
+1. **为 Agent 接入专业软件时，优先考虑 CLI 层而非 GUI 自动化**：RPA 方案（截图+点击）在系统主题切换、分辨率变化、软件更新时都会崩溃。CLI 层是更稳定的 Agent-Software 交互协议。
+2. **为每个 Agent 工具写 SKILL.md 式文档**：不要只提供函数签名。写一个结构化的、教程式的工具说明书，包含工作流示例和输出格式。Agent 的工具使用准确率会显著提升。
+3. **长流程任务必须支持会话状态保持和 undo/redo**：如果工具每次调用都需要重新初始化，Agent 的长任务执行效率会断崖式下降。REPL 模式是最低要求。
+4. **社区 CLI 注册表需要分层质量保障**：CI 基础验证 + 社区评分 + 核心维护者审核。当前仅靠 CI 验证，对于生产使用场景可能不够。
+5. **自动生成 CLI 的覆盖率需要人工验证**：7 阶段流水线生成的 CLI 是起点而非终点。对于关键业务软件，人工审查和补充生成 CLI 的覆盖盲区是必要的。
 
-- [两万字详解Claude Code源码核心机制](ch03/073-claude-code.md)
-- [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](ch04/503-agent.md)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch04/150-ai.md)
-- [Agent架构关键变化：Harness正在成为新后端](ch04/503-agent.md)
-- [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/073-claude-code.md)
-- [吴恩达：AI 将最先杀死前端](ch04/150-ai.md)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/245-skill.md)
-- [天猫新品营销技术团队AI编码实战指南（上）](ch04/150-ai.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/073-claude-code.md)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/707-anthropic.md)
-- [你写的 Skill，及格了吗？](ch04/245-skill.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/503-agent.md)
-- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch01/380-claude.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/503-agent.md)
-- [AI Agent 工程师能力地图](ch04/150-ai.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+### 相关实体
+
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
+- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
+- [Tencentdb Agent Memory Context Offloading](ch03/044-agent.md)
+- [agent 开发范式演进：从环境工程出发](ch03/044-agent.md)
+- [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](ch05/001-impeccable.md)
+- [工作流的 skill 怎么写？从 7 个顶级 skill 中提炼的模式与最佳实践](ch04/245-skill.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---
 
