@@ -1,5 +1,7 @@
 # wiki-book RAG 方案设计
 
+> 📖 完整复盘见 [RAG-RETROSPECTIVE.md](./RAG-RETROSPECTIVE.md)——包含问题背景、两套方案对比、实施日记、经验教训。
+
 ## 背景
 
 wiki-book 现有 63,013 篇 Markdown 文档（200MB 源文件），搜索索引 61,669 条（21MB），使用 lunr.js 客户端关键词搜索。AI Chat 功能已上线，LLM 回答需要 wiki-book 实际内容作为上下文。
