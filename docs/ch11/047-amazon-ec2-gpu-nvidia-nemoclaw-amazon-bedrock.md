@@ -113,7 +113,7 @@ def dispatch(messages, max_tokens=200):
     content = str(messages)
     if contains_pii(content) or is_sensitive_domain(content):
         return call_local(messages, max_tokens), "rule-override", "LOCAL", local_model
-    
+
     # 否则走 Router 决策
     suggestion = _post_json(ROUTER_URL, {"messages": messages, "stream": False})[...]
     ...

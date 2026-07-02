@@ -2,7 +2,7 @@
 
 ## Ch11.007 AWS Bedrock 多智能体协作指南
 
-> 📊 Level ⭐⭐ | 36.4KB | `entities/aws-bedrock-multi-agent-collaboration-guide.md`
+> 📊 Level ⭐⭐ | 35.9KB | `entities/aws-bedrock-multi-agent-collaboration-guide.md`
 
 ## 一、AWS Bedrock 多智能体核心架构
 
@@ -115,94 +115,94 @@ class BedrockMultiAgentOrchestrator:
             'coder': 'arn:aws:bedrock:...:agent/coder-agent-alias',
             'writer': 'arn:aws:bedrock:...:agent/writer-agent-alias',
         }
-    
+
     def orchestrate(self, task: str) -> dict:
         """Orchestrator 主流程"""
 
         # Step 1: 任务分解
         subtasks = self._decompose_task(task)
-        
+
         # Step 2: 并行执行 Worker Agents
         results = self._execute_workers_parallel(subtasks)
-        
+
         # Step 3: 结果聚合
         final_response = self._aggregate_results(results)
-        
+
         return {
             'task': task,
             'subtasks': subtasks,
             'worker_results': results,
             'final_response': final_response
         }
-    
+
     def _decompose_task(self, task: str) -> list:
         """使用 Orchestrator 分解任务"""
         prompt = f"""Decompose this task into independent subtasks:
         Task: {task}
-        
+
         Return a JSON array of subtasks, each with:
 
         - "subtask_id": unique identifier
         - "description": what to do
         - "required_agent": search/coder/writer
         """
-        
+
         response = self.bedrock.invoke_agent(
             agentAliasId='orchestrator-alias',
             agentId='orchestrator-agent-id',
             sessionId='session-123',
             inputText=prompt
         )
-        
+
         return self._parse_subtasks(response['completion'])
-    
+
     def _execute_workers_parallel(self, subtasks: list) -> dict:
         """并行执行多个 Worker Agents"""
         results = {}
-        
+
         with ThreadPoolExecutor(max_workers=5) as executor:
             futures = {
                 executor.submit(self._invoke_agent, subtask): subtask 
                 for subtask in subtasks
             }
-            
+
             for future in as_completed(futures):
                 subtask = futures[future]
                 try:
                     results[subtask['subtask_id']] = future.result()
                 except Exception as e:
                     results[subtask['subtask_id']] = {'error': str(e)}
-        
+
         return results
-    
+
     def _invoke_agent(self, subtask: dict) -> dict:
         """调用单个 Worker Agent"""
         agent_alias = self.agents[subtask['required_agent']]
-        
+
         response = self.bedrock.invoke_agent(
             agentAliasId=agent_alias.split('/')[-1],
             agentId=agent_alias.split(':agent/')[1].split('/')[0],
             sessionId=f"session-{subtask['subtask_id']}",
             inputText=subtask['description']
         )
-        
+
         return {'agent': subtask['required_agent'], 'output': response['completion']}
-    
+
     def _aggregate_results(self, results: dict) -> str:
         """聚合 Worker 结果生成最终响应"""
         prompt = f"""Aggregate the following worker results into a coherent response:
-        
+
         Results: {results}
-        
+
         Provide a clear, well-structured final answer."""
-        
+
         response = self.bedrock.invoke_agent(
             agentAliasId='orchestrator-alias',
             agentId='orchestrator-agent-id',
             sessionId='session-aggregate',
             inputText=prompt
         )
-        
+
         return response['completion']
 ```
 
@@ -241,16 +241,16 @@ class HierarchicalAgentManager:
             'sales': 'arn:aws:bedrock:...:agent/sales-manager',
             'operations': 'arn:aws:bedrock:...:agent/ops-manager',
         }
-    
+
     def process_enterprise_request(self, request: str) -> dict:
         """层级处理企业级请求"""
-        
+
         # Level 2: 战略分解
         strategy_response = self._invoke_agent(
             self.strategy_manager,
             f"""Analyze this enterprise request and create a hierarchical plan:
             Request: {request}
-            
+
             Return:
 
             - Strategic objective
@@ -258,9 +258,9 @@ class HierarchicalAgentManager:
             - Coordination requirements
             """
         )
-        
+
         domain_tasks = strategy_response['domain_assignments']
-        
+
         # Level 1: 领域管理并行执行
         domain_results = {}
         for domain, task in domain_tasks.items():
@@ -268,18 +268,18 @@ class HierarchicalAgentManager:
                 self.domain_managers[domain],
                 task
             )
-        
+
         # Level 2: 战略整合
         final_response = self._invoke_agent(
             self.strategy_manager,
             f"""Integrate domain results into final strategic response:
-            
+
             Domain Results: {domain_results}
-            
+
             Provide unified recommendation with risk assessment.
             """
         )
-        
+
         return {
             'strategy': strategy_response,
             'domain_results': domain_results,
@@ -295,7 +295,7 @@ class HierarchicalAgentManager:
 class AgentCommunication:
     def __init__(self):
         self.bedrock = boto3.client('bedrock-agent-runtime')
-    
+
     def agent_to_agent_message(
         self,
         from_agent: str,
@@ -304,7 +304,7 @@ class AgentCommunication:
         context: dict = None
     ) -> dict:
         """Agent 间直接消息传递"""
-        
+
         payload = {
             'source_agent': from_agent,
             'target_agent': to_agent,
@@ -313,21 +313,21 @@ class AgentCommunication:
             'protocol': 'bedrock-a2a-v1',
             'timestamp': datetime.utcnow().isoformat()
         }
-        
+
         response = self.bedrock.invoke_agent(
             agentAliasId=to_agent.split('/')[-1],
             agentId=to_agent.split(':agent/')[1].split('/')[0],
             sessionId=f"a2a-{from_agent}-{to_agent}",
             inputText=f"""Process this agent-to-agent message:
-            
+
             From: {from_agent}
             Message: {message}
             Context: {context}
-            
+
             Provide a structured response for the sending agent.
             """
         )
-        
+
         return {
             'status': 'delivered',
             'response': response['completion'],
@@ -362,7 +362,7 @@ from botocore.config import Config
 class CrossAccountAgentClient:
     def __init__(self, provider_account_id, provider_region='us-east-1'):
         self.provider_account_id = provider_account_id
-        
+
         # 配置跨账户客户端
         self.bedrock = boto3.client(
             'bedrock-agent-runtime',
@@ -372,10 +372,10 @@ class CrossAccountAgentClient:
                 retries={'max_attempts': 3}
             )
         )
-        
+
         # Account B 的执行角色（需被 Account A 信任）
         self.execution_role = 'arn:aws:iam::222222222222:role/BedrockCrossAccountRole'
-    
+
     def invoke_provider_agent(
         self, 
         agent_id: str,
@@ -384,14 +384,14 @@ class CrossAccountAgentClient:
         session_id: str = None
     ) -> dict:
         """跨账户调用 Provider 的 Agent"""
-        
+
         # 使用 AssumeRole 获取临时凭证
         sts = boto3.client('sts')
         assumed = sts.assume_role(
             RoleArn=f'arn:aws:iam::{self.provider_account_id}:role/BedrockCrossAccountInvoke',
             RoleSessionName=f'bedrock-cross-account-{session_id or uuid.uuid4().hex[:8]}'
         )
-        
+
         # 用临时凭证创建客户端
         client = boto3.client(
             'bedrock-agent-runtime',
@@ -399,14 +399,14 @@ class CrossAccountAgentClient:
             aws_secret_access_key=assumed['Credentials']['SecretAccessKey'],
             aws_session_token=assumed['Credentials']['SessionToken']
         )
-        
+
         response = client.invoke_agent(
             agentAliasId=alias_id,
             agentId=agent_id,
             sessionId=session_id or str(uuid.uuid4()),
             inputText=input_text
         )
-        
+
         return response
 
 # Account A: 设置跨账户信任策略
@@ -491,7 +491,7 @@ action_group = {
 class FunctionCallingAgent:
     def __init__(self):
         self.bedrock = boto3.client('bedrock-agent-runtime')
-    
+
     def invoke_with_functions(
         self,
         agent_id: str,
@@ -500,7 +500,7 @@ class FunctionCallingAgent:
         functions: list
     ) -> dict:
         """带函数调用的 Agent 调用"""
-        
+
         response = self.bedrock.invoke_agent(
             agentAliasId=alias_id,
             agentId=agent_id,
@@ -517,7 +517,7 @@ class FunctionCallingAgent:
                 }
             }
         )
-        
+
         # 处理函数调用响应
         if 'functionInvocations' in response:
             for invocation in response['functionInvocations']:
@@ -529,9 +529,9 @@ class FunctionCallingAgent:
                     'role': 'user',
                     'content': f"Function {invocation['name']} returned: {result}"
                 })
-        
+
         return response
-    
+
     def _execute_function(self, name: str, args: dict) -> dict:
         """执行函数并返回结果"""
         function_map = {
@@ -540,7 +540,7 @@ class FunctionCallingAgent:
             'write_file': self._write_file,
             'run_tests': self._run_tests,
         }
-        
+
         if name in function_map:
             return function_map[name](**args)
         return {'error': f'Unknown function: {name}'}
@@ -553,11 +553,11 @@ class FunctionCallingAgent:
 ```python
 class BedrockSessionManager:
     """优化 Session 重用以提升性能"""
-    
+
     def __init__(self):
         self.sessions = {}  # session_id -> metadata
         self.default_ttl = 3600  # 1 hour
-    
+
     def get_or_create_session(
         self, 
         agent_id: str, 
@@ -566,12 +566,12 @@ class BedrockSessionManager:
     ) -> str:
         """获取或创建 Session"""
         session_key = f"{agent_id}:{user_id}"
-        
+
         if session_key in self.sessions and not reset_if_exists:
             session_data = self.sessions[session_key]
             if self._is_valid(session_data):
                 return session_data['session_id']
-        
+
         # 创建新 Session
         session_id = str(uuid.uuid4())
         self.sessions[session_key] = {
@@ -582,9 +582,9 @@ class BedrockSessionManager:
             'last_used': datetime.utcnow(),
             'turn_count': 0
         }
-        
+
         return session_id
-    
+
     def update_session_activity(self, session_id: str):
         """更新 Session 活跃时间"""
         for session_data in self.sessions.values():
@@ -602,22 +602,22 @@ import threading
 
 class BedrockConcurrencyController:
     """控制 Agent 调用并发，避免限流"""
-    
+
     def __init__(self, max_concurrent=10, rate_limit=50):
         self.semaphore = threading.Semaphore(max_concurrent)
         self.rate_limiter = TokenBucket(rate_limit, window=60)  # 50 req/min
         self._lock = threading.Lock()
         self._active_calls = 0
-    
+
     def execute_with_control(self, func, *args, **kwargs):
         """带并发控制的执行"""
         with self.semaphore:
             if not self.rate_limiter.consume(1):
                 raise BedrockRateLimitError("Rate limit exceeded, retry later")
-            
+
             with self._lock:
                 self._active_calls += 1
-            
+
             try:
                 return func(*args, **kwargs)
             finally:
@@ -626,20 +626,20 @@ class BedrockConcurrencyController:
 
 class TokenBucket:
     """简单的 Token Bucket 限流器"""
-    
+
     def __init__(self, rate: int, window: int = 60):
         self.rate = rate
         self.window = window
         self.tokens = rate
         self.last_refill = time.time()
-    
+
     def consume(self, tokens: int = 1) -> bool:
         self._refill()
         if self.tokens >= tokens:
             self.tokens -= tokens
             return True
         return False
-    
+
     def _refill(self):
         now = time.time()
         elapsed = now - self.last_refill
@@ -656,10 +656,10 @@ import backoff
 
 class BedrockAgentRetry:
     """Agent 调用的智能重试策略"""
-    
+
     def __init__(self, max_retries=3):
         self.max_retries = max_retries
-    
+
     @backoff.on_exception(
         backoff.expo,
         (ClientError,),
@@ -678,10 +678,10 @@ class BedrockAgentRetry:
                 inputText=input_text
             )
             return response
-        
+
         except ClientError as e:
             error_code = e.response['Error']['Code']
-            
+
             if error_code == 'ThrottlingException':
 
                 # 限流，等待后重试
@@ -762,7 +762,7 @@ cloudwatch = boto3.client('cloudwatch')
 
 def emit_agent_metrics(agent_id: str, metrics: dict):
     """向 CloudWatch 发送 Agent 指标"""
-    
+
     metric_data = [
         {
             'MetricName': 'InvocationCount',
@@ -789,7 +789,7 @@ def emit_agent_metrics(agent_id: str, metrics: dict):
             'Unit': 'Percent'
         }
     ]
-    
+
     cloudwatch.put_metric_data(
         Namespace='AWS/Bedrock/Agent',
         MetricData=metric_data

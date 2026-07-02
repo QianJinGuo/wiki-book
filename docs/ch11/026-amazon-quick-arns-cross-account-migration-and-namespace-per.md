@@ -2,7 +2,7 @@
 
 ## Ch11.026 Amazon Quick ARNs: Cross-account migration and namespace permissions
 
-> 📊 Level ⭐⭐ | 16.2KB | `entities/amazon-quick-arns-cross-account-namespace-permissions.md`
+> 📊 Level ⭐⭐ | 16.1KB | `entities/amazon-quick-arns-cross-account-namespace-permissions.md`
 
 # Amazon Quick ARNs: Cross-account migration and namespace permissions
 
@@ -23,8 +23,7 @@ In this post, we cover the structure of Amazon Quick ARNs and provide a practica
 Amazon Quick is the service that you use today, but ARNs and API endpoints still use “quicksight” as the service identifier. We keep this for compatibility with existing AWS Identity and Access Management (IAM) policies, automation, and integrations across customer environments.
 
 Throughout this post, you see ARNs like:
-    
-    
+
     arn:aws:quicksight:us-east-1:123456789012:dashboard/...
 
 The “quicksight” portion refers to the Quick Sight capability within Amazon Quick. Existing code, IAM policies, and CLI commands continue to work without modification for current implementations. For more information, see [Amazon Quick Sight Resource ARNs](<https://docs.aws.amazon.com/quicksight/latest/APIReference/qs-resource-arns.html>).
@@ -36,14 +35,14 @@ Just as “123 Main Street, Springfield, MA” uniquely identifies a location, a
 Here’s how the components map:
 
 **Component** | **Analogy** | **What it represents**
----|---|---  
+---|---|---
 aws | Planet | AWS partition- aws / aws-cn / aws-gov-us
 quicksight | Country | The Service within an AWS partition
 us-east-1 | State | AWS Region
 111111111111 | City | AWS Account ID
 dashboard | Street | Resource Type
 04f736b4-bd1b-… | House number | Unique Resource ID
-  
+
 > _The account ID is part of the address. Move to a new city, and your address changes, even if you get a house with the same street number. The same applies to Amazon Quick resources. Migrate a dashboard from your development account to production, and the ARN changes because the account ID is different._
 
 ## What this looks like in practice: Dev/QA/Prod
@@ -55,13 +54,11 @@ AnyCompany has three AWS accounts for their Amazon Quick deployment:
   * Production (Account: 333333333333): Where business users access approved dashboards.
 
 Saanvi, a data analyst at AnyCompany, builds a sales dashboard in Development:
-    
-    
+
     arn:aws:quicksight:us-east-1:111111111111:dashboard/sales-dash-001
 
 She uses the [Asset Bundle APIs](<https://docs.aws.amazon.com/quicksight/latest/developerguide/asset-bundle-ops.html>) to migrate it to QA. The dashboard now has a new ARN:
-    
-    
+
     arn:aws:quicksight:us-east-1:222222222222:dashboard/sales-dash-001
 
 What changed and what didn’t:
@@ -75,8 +72,7 @@ The dashboard in QA is a different resource than the one in Development, even th
 ### Why permissions don’t transfer during migration
 
 In development, Saanvi granted view access to her team:
-    
-    
+
     # Development account permissions
     qs.update_dashboard_permissions(
         AwsAccountId='111111111111',
@@ -103,8 +99,7 @@ Saanvi’s dashboard doesn’t exist in isolation. It depends on:
   * A data source (sales-db-connection) that connects to the database.
 
 Each has its own ARN, and the dashboard internally references them:
-    
-    
+
     Development Account (111111111111):
     ├── Dashboard: arn:aws:quicksight:...:111111111111:dashboard/sales-dash-001
     │   └── References: arn:aws:quicksight:...:111111111111:dataset/sales-data
