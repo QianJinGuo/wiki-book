@@ -33,6 +33,9 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 
 ---
 
+
+> 💡 **阅读提示**：当同一编号下有 2-6 篇同名文章时，它们是多语言版本或不同视角的同主题内容，可任意顺序阅读。
+
 ## 本章内容
 
 - [001. Claude Code Agent View](ch09/001-claude-code-agent-view.md)

@@ -2,7 +2,7 @@
 
 ## Ch03.128 设计系统的新作者：从 Agent 读到 Agent 写
 
-> 📊 Level ⭐⭐ | 0.9KB | `entities/design-systems-agent-author-evolution.md`
+> 📊 Level ⭐⭐⭐ | 0.9KB | `entities/design-systems-agent-author-evolution.md`
 
 # 设计系统的新作者：从 Agent 读到 Agent 写
 

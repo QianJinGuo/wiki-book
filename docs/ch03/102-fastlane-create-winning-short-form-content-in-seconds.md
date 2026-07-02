@@ -2,7 +2,7 @@
 
 ## Ch03.102 Fastlane | Create Winning Short-Form Content In Seconds
 
-> 📊 Level ⭐⭐ | 6.3KB | `entities/fastlane-create-winning-short-form-content-in-seconds.md`
+> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/fastlane-create-winning-short-form-content-in-seconds.md`
 
 # Fastlane | Create Winning Short-Form Content In Seconds
 

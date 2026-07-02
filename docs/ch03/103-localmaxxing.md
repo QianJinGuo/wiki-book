@@ -2,7 +2,7 @@
 
 ## Ch03.103 Localmaxxing：局部最优陷阱
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/localmaxxing.md`
+> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/localmaxxing.md`
 
 ## Summary
 > Score: 7×8=56

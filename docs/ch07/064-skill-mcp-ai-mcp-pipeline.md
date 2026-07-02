@@ -2,7 +2,7 @@
 
 ## Ch07.064 skill-mcp — 把 AI 技能当软件包管理（MCP 权限网关 + 只调度不执行的 Pipeline）
 
-> 📊 Level ⭐⭐ | 4.2KB | `entities/skill-mcp-software-package-management.md`
+> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/skill-mcp-software-package-management.md`
 
 # skill-mcp — 把 AI 技能当软件包管理（MCP 权限网关 + 只调度不执行的 Pipeline）
 

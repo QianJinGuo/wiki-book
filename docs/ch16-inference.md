@@ -28,6 +28,11 @@
 
 ---
 
+
+### 16.1 推理优化基础
+
+> 从这里开始：推理优化全景。量化、剪枝、蒸馏、投机解码。
+
 ## Ch16.001 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
 
 > 📊 Level ⭐ | 8.2KB | `entities/chroma-to-qdrant-1m-vector-migration.md`
@@ -1099,6 +1104,11 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 
 ---
 
+
+### 16.2 推理引擎与部署
+
+> 实战篇：vLLM、TensorRT、推理加速技术对比与选型。
+
 ## Ch16.009 Unlocking asynchronicity in continuous batching
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/continuous-async.md`
@@ -1855,6 +1865,11 @@ Original URL: https://huggingface.co/blog/torch-mlp-fusion
 Source: [raw archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/huggingface-torch-mlp-fusion-profiling-2026.md)
 
 ---
+
+
+### 16.3 推理前沿
+
+> 进阶篇：长上下文推理、Mix-of-Experts、边缘推理。
 
 ## Ch16.017 MiMo-V2.5 推理系统全链路优化：Hybrid SWA + MoE + 多模态生产级落地
 
