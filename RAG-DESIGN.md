@@ -421,3 +421,25 @@ rag-client.js:             ⚠️ 文件存在，HTML 老旧未引用
 - 等待 2-4 秒后恢复 ✅
 
 这不影响 Tier 1 客户端搜索（在用户浏览器本地执行，零服务器 CPU）。
+
+## 日常维护
+
+### 每日自动流程
+
+```
+03:00  wiki-book-sync（cron）— 同步 wiki → mkdocs build → 近邻图 → 上传 R2
+03:05  sync-docs-to-hp（cron）— rsync docs/ → HP，QMD 自动增量索引
+03:30  sync-vectorize（cron）— 全量重建 Vectorize 向量索引（~100 分钟）
+```
+
+| 维护项 | 成本 | 自动化 |
+|--------|------|--------|
+| Layer 1 客户端 RAG | $0 | ✅ build.sh 自动 |
+| Layer 2 QMD BM25 (HP) | $0 | ✅ cron 自动 rsync + QMD 增量索引 |
+| Layer 3 讯飞 + Vectorize | $0（API 免费） | ✅ cron 每天 03:30 全量重建 |
+| 服务器兜底 Phase 2 | $0（Free 额度内） | ✅ 部署时自动 |
+
+### HP 上的 QMD 增量更新
+
+QMD 的索引是增量式的——检测到 docs/ 文件变更后，只 re-index 变动的部分，不需要全量重建。所以 rsync 后 QMD 自动处理，几秒内完成。
+
