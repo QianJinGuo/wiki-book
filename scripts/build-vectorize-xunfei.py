@@ -18,6 +18,7 @@ import sys
 import time
 import requests
 import base64
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 SEARCH_INDEX_PATH = "site/search/search_index.json"
 ACCOUNT_ID = "aa78649679a46fa7ed55bdc17165ced3"
@@ -28,7 +29,8 @@ XUNFEI_URL = "https://maas-api.cn-huabei-1.xf-yun.com/v2/embeddings"
 XUNFEI_MODEL = "xop3qwen8bembedding"
 
 INSERT_BATCH_SIZE = 100  # Vectorize max batch insert
-API_BATCH_SIZE = 10       # Xunfei API docs per request
+API_BATCH_SIZE = 20       # Xunfei API docs per request (QPS 20, 并发 20)
+CONCURRENCY = 10          # 并发请求数（留余量）
 
 
 def get_cf_token():
@@ -116,55 +118,76 @@ def main():
         texts.append(text)
 
     print(f"\nGenerating embeddings via Xunfei {XUNFEI_MODEL} ({VECTORIZE_DIMS}d)...")
+    print(f"Config: batch={API_BATCH_SIZE} docs/req, concurrency={CONCURRENCY}, insert_batch={INSERT_BATCH_SIZE}")
     total = len(texts)
     start_time = time.time()
     vectors = []
     embedded_count = 0
     error_count = 0
+    futures = {}  # future → (batch_index, batch_docs)
 
-    for i in range(0, total, API_BATCH_SIZE):
-        batch = texts[i : i + API_BATCH_SIZE]
-        batch_docs = valid_docs[i : i + API_BATCH_SIZE]
+    # Prepare all batch indices
+    batch_indices = list(range(0, total, API_BATCH_SIZE))
 
-        elapsed = time.time() - start_time
-        rate = (embedded_count) / elapsed if elapsed > 0 else 0
-        eta = (total - embedded_count) / rate / 60 if rate > 0 else 0
-        print(f"  [{embedded_count}/{total}] {rate:.1f} docs/s, ETA {eta:.0f} min...", end="\r")
+    with ThreadPoolExecutor(max_workers=CONCURRENCY) as executor:
+        # Submit initial batch
+        for i in batch_indices[:CONCURRENCY]:
+            batch = texts[i : i + API_BATCH_SIZE]
+            batch_docs = valid_docs[i : i + API_BATCH_SIZE]
+            future = executor.submit(get_embeddings, batch, xunfei_key)
+            futures[future] = (i, batch_docs)
 
-        try:
-            embeddings = get_embeddings(batch, xunfei_key)
-        except Exception as e:
-            print(f"\n  ERROR on batch {i}: {e}")
-            error_count += 1
-            time.sleep(5)
-            continue
+        next_batch_idx = CONCURRENCY
+        total_batches = len(batch_indices)
 
-        for j, emb in enumerate(embeddings):
-            doc_idx = i + j
-            vectors.append({
-                "id": str(doc_idx),
-                "values": emb,
-                "metadata": {
-                    "title": batch_docs[j]["title"][:100],
-                    "location": batch_docs[j]["location"][:100],
-                },
-            })
-            embedded_count += 1
+        while futures:
+            for future in as_completed(futures.keys()):
+                batch_i, batch_docs = futures.pop(future)
+                elapsed = time.time() - start_time
+                rate = embedded_count / elapsed if elapsed > 0 else 0
+                eta = (total - embedded_count) / rate / 60 if rate > 0 else 0
 
-        # Insert in batches
-        if len(vectors) >= INSERT_BATCH_SIZE:
-            ok = insert_batch(vectors, cf_token)
-            if ok:
-                print(f"\n  Inserted {len(vectors)} vectors", end="")
-            vectors = []
+                try:
+                    embeddings = future.result()
+                except Exception as e:
+                    print(f"\n  ERROR batch {batch_i}: {e}")
+                    error_count += 1
+                    continue
 
-        time.sleep(0.1)  # Rate limit safety
+                for j, emb in enumerate(embeddings):
+                    vectors.append({
+                        "id": str(batch_i + j),
+                        "values": emb,
+                        "metadata": {
+                            "title": batch_docs[j]["title"][:100],
+                            "location": batch_docs[j]["location"][:100],
+                        },
+                    })
+                    embedded_count += 1
 
-    # Insert remaining
+                # Insert batch to Vectorize
+                if len(vectors) >= INSERT_BATCH_SIZE:
+                    ok = insert_batch(vectors, cf_token)
+                    if ok:
+                        print(f"\n  [{embedded_count}/{total}] Inserted {len(vectors)} vectors, {rate:.0f} docs/s, ETA {eta:.0f} min", end="")
+                    vectors = []
+
+                # Submit next batch
+                if next_batch_idx < len(batch_indices):
+                    ni = batch_indices[next_batch_idx]
+                    next_batch = texts[ni : ni + API_BATCH_SIZE]
+                    next_docs = valid_docs[ni : ni + API_BATCH_SIZE]
+                    fut = executor.submit(get_embeddings, next_batch, xunfei_key)
+                    futures[fut] = (ni, next_docs)
+                    next_batch_idx += 1
+
+                break  # Process one future at a time, then re-enter loop
+
+    # Insert remaining vectors
     if vectors:
         ok = insert_batch(vectors, cf_token)
         if ok:
-            print(f"\n  Inserted {len(vectors)} vectors", end="")
+            print(f"\n  [{embedded_count}/{total}] Inserted final {len(vectors)} vectors")
 
     elapsed_min = (time.time() - start_time) / 60
     print(f"\n\nDone! {embedded_count}/{total} embedded in {elapsed_min:.1f} min")
