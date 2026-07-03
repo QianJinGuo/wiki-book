@@ -83,17 +83,17 @@ AutoClaw 目前仍处于早期阶段，建议持续关注：
 
 ## 相关实体
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Hermes Agent 记忆系统深度拆解](ch03/044-agent.md)
+- [Hermes Agent 记忆系统深度拆解](ch03/045-agent.md)
 
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](ch04/150-ai.md)
-- [我给Hermes配了4个Agent，真正有用的是这些事](ch03/044-agent.md)
+- [我给Hermes配了4个Agent，真正有用的是这些事](ch03/045-agent.md)
 - [AIAIGC峰会嘉宾阵容](ch04/150-ai.md)
-- [Hermes Agent vs OpenClaw 对比分析](ch03/044-agent.md)
+- [Hermes Agent vs OpenClaw 对比分析](ch03/045-agent.md)
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](ch11/210-openclaw.md)
 - [OpenCLAW 完全指南](ch11/210-openclaw.md)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](ch03/044-agent.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/074-claude-code.md)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](ch03/045-agent.md)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/075-claude-code.md)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/245-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)

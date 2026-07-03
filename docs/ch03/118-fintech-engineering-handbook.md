@@ -2,7 +2,7 @@
 
 ## Ch03.118 Fintech Engineering Handbook
 
-> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/fintech-engineering-handbook.md`
+> 📊 Level ⭐⭐ | 3.9KB | `entities/fintech-engineering-handbook.md`
 
 # Fintech Engineering Handbook
 

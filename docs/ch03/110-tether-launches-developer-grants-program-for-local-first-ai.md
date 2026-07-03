@@ -2,7 +2,7 @@
 
 ## Ch03.110 Tether launches developer grants program for local-first AI and payments infrastructure
 
-> 📊 Level ⭐⭐⭐ | 5.7KB | `entities/tether-developer-grants-local-ai.md`
+> 📊 Level ⭐⭐ | 5.7KB | `entities/tether-developer-grants-local-ai.md`
 
 > -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tether-developer-grants-local-ai.md)
 

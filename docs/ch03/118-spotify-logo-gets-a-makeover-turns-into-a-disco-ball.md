@@ -2,7 +2,7 @@
 
 ## Ch03.118 Spotify Logo Gets a Makeover, Turns Into a Disco Ball
 
-> 📊 Level ⭐⭐⭐ | 4.0KB | `entities/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md`
+> 📊 Level ⭐⭐ | 4.0KB | `entities/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md`
 
 ## 核心要点
 - 来自 newsletter 推荐的优质文章

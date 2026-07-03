@@ -93,7 +93,7 @@ Skill Craft 的 fix 回归验证逻辑与 Harness 的 Generator/Evaluator 循环
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch04/245-skill.md)
 - [Claude Design Skill Web Design Engineer](ch04/245-skill.md)
 - [Claude Code Skill Writing Guide](ch04/245-skill.md)
-- [Claude Design Skill](ch01/799-claude-design-skill.md)
+- [Claude Design Skill](ch01/946-claude-design-skill.md)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents](ch04/245-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-skill-quality-tool-skill-craft.md)

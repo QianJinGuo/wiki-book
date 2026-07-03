@@ -2,7 +2,7 @@
 
 ## Ch03.108 Microsoft Agent Framework 结构化输出：response_format 与 response.value
 
-> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/microsoft-agent-framework-structured-output.md`
+> 📊 Level ⭐⭐ | 5.8KB | `entities/microsoft-agent-framework-structured-output.md`
 
 ## 核心问题
 传统方案：提示词要求"只输出 JSON" + `json.loads()` → 易夹杂 markdown、缺字段、类型漂移。Agent Framework 的解法：Schema 由 API 约束，框架负责解析 。
@@ -19,7 +19,7 @@ class PersonInfo(BaseModel):
     age: int | None = None
     occupation: str | None = None
 ```
-字段类型与 `required` 语义映射为 JSON Schema 发给模型；模型被约束在 Schema 内生成，降低幻觉字段与格式错误 。 See also [Agent Harness Architecture](ch03/044-agent.md)
+字段类型与 `required` 语义映射为 JSON Schema 发给模型；模型被约束在 Schema 内生成，降低幻觉字段与格式错误 。 See also [Agent Harness Architecture](ch03/045-agent.md)
 
 ### 方式二：JSON Schema dict
 ```python

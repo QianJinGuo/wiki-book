@@ -86,7 +86,7 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 ### 与本文观察的对应关系
 
 文中提及的代表性框架可对应到本仓库其他实体：
-- **Cloud Code / Codex / OpenClaw / Hermes** → [Claude Code](ch03/074-claude-code.md) / [OpenClaw](ch11/210-openclaw.md) / Hermes Agent 等
+- **Cloud Code / Codex / OpenClaw / Hermes** → [Claude Code](ch03/075-claude-code.md) / [OpenClaw](ch11/210-openclaw.md) / Hermes Agent 等
 - **Workflow 引擎 LangGraph / Dify** → Agent 编排基础设施
 - **Skills 体系（SKILL.md / CLAUDE.md / AGENTS.md）** → [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心载体
 - **LLM-Wiki / GBrain** → 本地知识库理念
@@ -104,16 +104,16 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 
 ## 相关实体
 
-- [Claude Code 深度解析](ch03/074-claude-code.md) — 自主 Agent 阶段（阶段三）代表
+- [Claude Code 深度解析](ch03/075-claude-code.md) — 自主 Agent 阶段（阶段三）代表
 - [OpenClaw 完整指南](ch11/210-openclaw.md) — 自主 Agent 阶段（阶段三）代表
-- [Claude Code Dynamic Workflows](ch03/074-claude-code.md) — 阶段三到阶段四过渡的 Dynamic Workflow 范式
+- [Claude Code Dynamic Workflows](ch03/075-claude-code.md) — 阶段三到阶段四过渡的 Dynamic Workflow 范式
 - [从氛围编程到智能体工程](ch04/118-karpathy-vibe-coding-agentic-engineering.md) — Agentic Engineering 范式演进
-- [Agent 记忆系统实践](ch03/044-agent.md) — Memory 模块工程化
-- [Hermes Agent Operator](ch03/044-agent.md) — 自进化 Agent（阶段四）代表
-- [Agent YAML 评测](ch03/044-agent.md) — 自进化机制中的评估反馈环
+- [Agent 记忆系统实践](ch03/045-agent.md) — Memory 模块工程化
+- [Hermes Agent Operator](ch03/045-agent.md) — 自进化 Agent（阶段四）代表
+- [Agent YAML 评测](ch03/045-agent.md) — 自进化机制中的评估反馈环
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 阶段二到阶段四贯穿的核心工程化思想
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — Prompt 解耦与渐进式加载的方法论
-- [gene/gep — evomap×清华 提出的「策略基因」经验对象框架（arxiv 2604.15097）](https://github.com/QianJinGuo/wiki/blob/main/entities/gene-gep-evomap-qinghua-strategy-genes-arxiv-2604-15097-2026.md)
+- [gene/gep — evomap×清华 提出的「策略基因」经验对象框架（arxiv 2604.15097）](ch01/206-0.md)
 
 ---
 

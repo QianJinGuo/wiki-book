@@ -2,7 +2,7 @@
 
 ## Ch03.113 Designers are a rare breed
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/designers-are-a-rare-breed.md`
+> 📊 Level ⭐⭐ | 4.4KB | `entities/designers-are-a-rare-breed.md`
 
 > -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/designers-are-a-rare-breed.md)
 

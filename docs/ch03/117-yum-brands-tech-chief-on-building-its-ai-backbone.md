@@ -2,7 +2,7 @@
 
 ## Ch03.117 Yum Brands' tech chief on building its AI backbone
 
-> 📊 Level ⭐⭐⭐ | 3.8KB | `entities/yum-brands-ai-backbone-tech-chief.md`
+> 📊 Level ⭐⭐ | 3.8KB | `entities/yum-brands-ai-backbone-tech-chief.md`
 
 ## Summary
 *(AI-generated summary - TODO: manually review)*    

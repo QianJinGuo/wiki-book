@@ -105,8 +105,8 @@ A model registry (`models.yaml`) maps short aliases like `claude-haiku` to full 
 5. **单次测试结果不足以代表质量——对关键场景使用 `--repeat N` 测量方差**。由于 Nova Sonic 响应具有非确定性，单次运行结果可能存在偶然性。建议对核心场景至少重复 3-5 次，观察 pass rate 稳定性后再判断变更质量。
 
 ## 相关实体
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch03/044-agent.md)
-- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch03/044-agent.md)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch03/045-agent.md)
+- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch03/045-agent.md)
 - [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](ch11/250-amazon-nova.md)
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/197-amazon-quick.md)
 - [Bedrock Agentcore Coding Agent Hosting](ch09/043-coding-agent.md)

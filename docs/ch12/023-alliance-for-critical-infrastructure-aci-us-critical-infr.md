@@ -77,7 +77,7 @@ ACI 接下来 18 个月的工作包括：建立工作组、定义试点项目、
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/634-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
 - [5237875](https://github.com/QianJinGuo/wiki/blob/main/entities/5237875.md)
-- [820297](https://github.com/QianJinGuo/wiki/blob/main/entities/820297.md)
+- [820297](ch01/206-0.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---
