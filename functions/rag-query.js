@@ -92,11 +92,12 @@ function getDocMap(docs) {
 // ========== Phase 3: 语义搜索（讯飞 API + Vectorize） ==========
 async function semanticSearch(query, env) {
   try {
-    // 1. Embed query via 讯飞 API（HTTP 请求，不计 CPU 时间 ✅）
     const xunfeiKey = env.XUNFEI_API_KEY;
     if (!xunfeiKey) {
-      console.warn("XUNFEI_API_KEY not configured");
-      return [];
+      return [{ docId: -1, score: 0, title: "No Xunfei key", location: "" }];
+    }
+    if (xunfeiKey.length < 10) {
+      return [{ docId: -1, score: 0, title: "Xunfei key too short: " + xunfeiKey.length, location: "" }];
     }
 
     const embedResp = await fetch(XUNFEI_URL, {
