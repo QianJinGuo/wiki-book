@@ -19,7 +19,7 @@ import time
 import requests
 import base64
 
-SEARCH_INDEX_PATH = "/tmp/search_index.json"
+SEARCH_INDEX_PATH = "site/search/search_index.json"
 ACCOUNT_ID = "aa78649679a46fa7ed55bdc17165ced3"
 VECTORIZE_INDEX = "wiki-book-embeddings-v2"
 VECTORIZE_DIMS = 1024
