@@ -162,13 +162,13 @@
 
 - **强结果信号驱动的飞轮效应**：买卖行为天然具备可量化的强结果信号（成交/不成交），是强化学习最理想的训练场景。系统通过持续捕获买家行为模式形成越用越准的飞轮，这与传统的显性知识学习（FAQ、产品手册）截然不同——行为数据比文本语料更能反映真实的决策逻辑。 
 
-- **Palantir 类比的战略含义**：百型明确将自身定位为「出海企业的 Palantir」——两者都以本体论为底层，以数据驱动为价值主张，但目标市场不同（政府/大型企业 vs. 长尾中小企业）。 [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](https://github.com/QianJinGuo/wiki/blob/main/entities/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md) 揭示了 Palantir 在企业软件市场的强势地位，百型的差异化在于垂直于跨境 B2B 场景，并聚焦 97% 中小企业的长尾市场。 
+- **Palantir 类比的战略含义**：百型明确将自身定位为「出海企业的 Palantir」——两者都以本体论为底层，以数据驱动为价值主张，但目标市场不同（政府/大型企业 vs. 长尾中小企业）。 [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](ch01/206-0.md) 揭示了 Palantir 在企业软件市场的强势地位，百型的差异化在于垂直于跨境 B2B 场景，并聚焦 97% 中小企业的长尾市场。 
 
 ## 实践启示
 
 - **开展企业内容层的 AI Ready 审计**：在引入 OntoZ 之前，企业应审视现有内容资产（产品描述、客户案例、FAQ）的结构化程度。OntoZ 的产业世界模型虽能一键冷启动，但冷启动质量仍取决于企业初始知识的完整度。内容层的 AI Ready 程度直接决定本体构建的速度和准确性。 
 
-- **以 Skill/MCP 标准封装能力而非定制开发**：百型强调「封装 Skill 与 MCP 和 API 的工具层」是三个准备层面之一。企业应将内部能力标准化为可复用的 Skill，而非依赖定制开发。这与 [Aws Bedrock Multi Agent Collaboration Guide](ch03/044-agent.md) 倡导的多智能体协作需标准协议的观点一致——能力标准化是可交互的基础。 
+- **以 Skill/MCP 标准封装能力而非定制开发**：百型强调「封装 Skill 与 MCP 和 API 的工具层」是三个准备层面之一。企业应将内部能力标准化为可复用的 Skill，而非依赖定制开发。这与 [Aws Bedrock Multi Agent Collaboration Guide](ch03/045-agent.md) 倡导的多智能体协作需标准协议的观点一致——能力标准化是可交互的基础。 
 
 - **在业务流程中嵌入持续的反馈回路**：OntoZ 的飞轮依赖用户在产品交互中持续给予反馈。企业应主动设计反馈触点（询盘回复评价、需求确认动作），而非将系统当作静态查询工具。强结果信号（成交数据）的积累速度直接决定系统进化速度。 
 
@@ -182,12 +182,12 @@
 - 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch04/150-ai.md)
 - 智能体协议 — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](ch01/436-codex.md)
-- Claude Code 架构 — [Claude Code Architecture](ch03/074-claude-code.md)
+- Claude Code 架构 — [Claude Code Architecture](ch03/075-claude-code.md)
 - Harness 工程 — [Harness Engineering Systematic Framework](ch05/061-harness-engineering.md)
-- A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/044-agent.md)
+- A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/045-agent.md)
 - 本体论 / 知识图谱 — [Rag Vector Knowledge Graph Ontology](ch01/207-rag.md)
 - 多智能体研究系统 — [Anthropic Multi Agent Research System](ch04/462-anthropic-multi-agent-research-system.md)
-- Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](https://github.com/QianJinGuo/wiki/blob/main/entities/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md)
+- Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](ch01/206-0.md)
 - 企业 AI 数据准备 — [Enterprise Ai Investment Data Readiness Cio](ch04/150-ai.md)
 ## 相关实体
 

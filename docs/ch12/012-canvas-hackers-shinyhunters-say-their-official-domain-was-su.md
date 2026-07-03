@@ -290,7 +290,7 @@ Canvas LMS 攻击影响全球数百所大学，凸显了教育机构在网络安
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/150-ai.md)
 - [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/150-ai.md)
-- [a route to root in a 4g industrial router](https://github.com/QianJinGuo/wiki/blob/main/entities/tantosec-com-blog-2026-04-route-to-root-in-4g-industrial-router.md)
+- [a route to root in a 4g industrial router](ch01/206-0.md)
 
 ---
 

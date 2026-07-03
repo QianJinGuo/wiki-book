@@ -2,7 +2,7 @@
 
 ## Ch03.119 GRC Now | Free virtual event | 8 CPEs
 
-> 📊 Level ⭐⭐⭐ | 3.6KB | `entities/grcnow.md`
+> 📊 Level ⭐⭐ | 3.6KB | `entities/grcnow.md`
 
 # GRC Now | Free virtual event | 8 CPEs
 ![Image 4](http://optro.ai/static/icons/secure-icon.svg)

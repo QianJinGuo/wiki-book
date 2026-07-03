@@ -231,7 +231,7 @@
 
 **与 [Alibaba Aone Agentic Rd Mode Xiangbangyu](ch04/046-alibaba-aone-agentic-rd-mode-xiangbangyu.md)**: Aone Agentic RD 模式（向邦煜）讲"组织层重构"——传统协作和分工在 Agent 时代成为效率阻碍，All-in-One 版本化管理。**新文章不讲组织重构，讲具体交付 pipeline 怎么运转**（澄清门 → 方案门 → 实现 → 验收 → 结项），是用具体工程实现验证 Aone 模式的可行性。
 
-**与 [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch03/044-agent.md)**: 阿里泊予的 6 Agent 评测 Harness 视角，**聚焦"评测"环节**（L1/L2/L3 指标、test_runner.py → 评测 Agent 提示词）。新文章聚焦**研发交付全过程**（澄清→方案→实现→验收→结项），是兄弟文章，覆盖不同环节。两者是同一阿里云团队不同角色（泊予 评测 vs 阿里妹 研发交付）的实践。
+**与 [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch03/045-agent.md)**: 阿里泊予的 6 Agent 评测 Harness 视角，**聚焦"评测"环节**（L1/L2/L3 指标、test_runner.py → 评测 Agent 提示词）。新文章聚焦**研发交付全过程**（澄清→方案→实现→验收→结项），是兄弟文章，覆盖不同环节。两者是同一阿里云团队不同角色（泊予 评测 vs 阿里妹 研发交付）的实践。
 
 **与 [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch04/150-ai.md)**: 腾讯 CodeBuddy L1→L2→L3 演进视角，**6 个试点需求 90% 代码采纳率等数据**。新文章阿里云视角，**没有量化数据但有具体技能名（superai-*）+ 具体平台（Multica）+ 具体门禁（pre-push hook）**。两边互补：腾讯讲 L1→L3 演进框架，阿里讲具体某阶段的工程化深度。
 
@@ -263,7 +263,7 @@
 
 "不直接升级"原则是双仓库设计最关键的设计哲学：项目过程中产生的事实先留在项目记忆层（feature 分支），只有经过结项审视和人工确认，才会选择性地进入长期 wiki。这样既**避免了噪声污染长期 wiki**，也保证了每次结项都能沉淀出真正有复用价值的业务知识。
 
-这与 [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的"提升"边界思路一致——[Agent Memory Architecture](ch03/044-agent.md) 强调的 provenance state（extracted | merged | inferred | ambiguous）在阿里云实践里被显式化为**结项审视 + 人工确认**两个可操作的动作节点，而不是依赖 LLM 自行判断何时该"升格"。
+这与 [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的"提升"边界思路一致——[Agent Memory Architecture](ch03/045-agent.md) 强调的 provenance state（extracted | merged | inferred | ambiguous）在阿里云实践里被显式化为**结项审视 + 人工确认**两个可操作的动作节点，而不是依赖 LLM 自行判断何时该"升格"。
 
 ### 效果度量先于自我迭代：Agent 成长的可验证路径
 
@@ -289,16 +289,16 @@
 
 - [Multica Managed Agents Platform](ch07/056-multica-managed-agents.md) — 新文章选用的运行时平台
 - [Alibaba Aone Agentic Rd Mode Xiangbangyu](ch04/046-alibaba-aone-agentic-rd-mode-xiangbangyu.md) — 阿里 Aone Agentic RD 模式（组织层重构视角）
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch03/044-agent.md) — 阿里泊予 评测 Harness 视角（兄弟文章）
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch03/045-agent.md) — 阿里泊予 评测 Harness 视角（兄弟文章）
 - [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch04/150-ai.md) — 腾讯 CodeBuddy L1→L2→L3 演进
 - [Ai Native Rd Org Design](ch04/150-ai.md) — AI 原生研发组织设计
-- [Agent Harness Context Management Working Set](ch03/044-agent.md) — Agent Harness 上下文管理
+- [Agent Harness Context Management Working Set](ch03/045-agent.md) — Agent Harness 上下文管理
 - [Agent Skill Writing Guide](ch04/245-skill.md) — Skill 编写基础
 - [Agent Skill Writing Practices](ch04/245-skill.md) — Skill 编写实战（决策树替代模糊判断）
 - [Agent Role Specialization](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-role-specialization.md) — 多角色 Agent 协作
 - [Agent Self Improvement Loops](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) — 度量驱动的 Agent 自我迭代
 - [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — 记忆生命周期与"提升"边界
-- [Agent Memory Architecture](ch03/044-agent.md) — Agent 记忆架构
+- [Agent Memory Architecture](ch03/045-agent.md) — Agent 记忆架构
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — Agent 编排模式
 - [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)

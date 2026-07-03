@@ -11,7 +11,7 @@
 ## 相关实体
 - [Google Deepmind Accelerator Asia Pacific](https://github.com/QianJinGuo/wiki/blob/main/entities/google-deepmind-accelerator-asia-pacific.md)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch04/150-ai.md)
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch03/044-agent.md)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch03/045-agent.md)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents](ch04/245-skill.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
 

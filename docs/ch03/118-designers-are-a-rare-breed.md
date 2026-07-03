@@ -2,7 +2,7 @@
 
 ## Ch03.118 Designers are a rare breed
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/designers-are-a-rare-breed.md`
+> 📊 Level ⭐⭐ | 4.4KB | `entities/designers-are-a-rare-breed.md`
 
 > -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/designers-are-a-rare-breed.md)
 
@@ -39,7 +39,7 @@ YouTube 上有一类视频专门做这类测试：给新手顶级专业设备，
 
 - [柚漫剧 AI全流程提效拆解](ch04/150-ai.md)
 - [Agent Skill 设计模式](ch04/245-skill.md)
-- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
+- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](ch01/206-0.md)
 
 ---
 

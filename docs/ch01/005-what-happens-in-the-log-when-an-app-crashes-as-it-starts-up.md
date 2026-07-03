@@ -82,10 +82,10 @@ macOS 的 AppTranslocation 机制（又称 Gatekeeper Path Quarantine）是一�
 
 ## 相关实体
 - [Reasoning Lift](ch01/519-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.md)
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](https://github.com/QianJinGuo/wiki/blob/main/entities/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md)
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/206-0.md)
 - [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](ch04/150-ai.md)
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
-- [Seangoedeckecom Build Agents Not Pipelines](ch03/044-agent.md)
+- [Seangoedeckecom Build Agents Not Pipelines](ch03/045-agent.md)
 
 ## 相关主题
 

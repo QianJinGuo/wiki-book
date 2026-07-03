@@ -2,7 +2,7 @@
 
 ## Ch04.426 Agentic AI Infrastructure Practice Series 9: Context Engineering
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/agentic-ai-infrastructure-practice-series-nine-context-engineering.md`
+> 📊 Level ⭐⭐ | 6.3KB | `entities/agentic-ai-infrastructure-practice-series-nine-context-engineering.md`
 
 # Agentic AI Infrastructure Practice Series 9: Context Engineering
 

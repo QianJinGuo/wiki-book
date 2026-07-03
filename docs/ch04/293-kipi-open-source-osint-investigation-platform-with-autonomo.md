@@ -88,7 +88,7 @@ kipi 是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/conc
 3. **自主 pivot**：Agent 从发现中自动识别新的调查线索（新域名、新 IP、新组织）
 4. **人机边界**：Agent 执行调查，人类审核结果
 
-这与 [Claude Code 的动态工作流](ch03/074-claude-code.md) 有相似的架构模式：LLM 做决策，工具做执行，人类做监督。
+这与 [Claude Code 的动态工作流](ch03/075-claude-code.md) 有相似的架构模式：LLM 做决策，工具做执行，人类做监督。
 
 ### Graph RAG 的结构化知识组织
 
@@ -163,7 +163,7 @@ export ANTHROPIC_API_KEY=sk-ant-...    # 唯一必需的 key
 ## 相关实体
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 架构工程
-- [Claude Code Workflows](ch03/074-claude-code.md) — Agent 动态工作流
+- [Claude Code Workflows](ch03/075-claude-code.md) — Agent 动态工作流
 - [SchemaFlow](ch04/150-ai.md) — 结构化数据的 LLM 约束
 - [Gray Swan](https://github.com/QianJinGuo/wiki/blob/main/entities/latent-space-p-gray-swan.md) — AI 安全与 red-teaming
 - [Role Confusion](ch01/690-github.md) — Prompt injection 理论

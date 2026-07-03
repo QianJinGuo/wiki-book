@@ -8,7 +8,7 @@
 Like in many companies, engineers at Google have been able to pick their IDE of choice, and this resulted in a lot of fragmentation. In 2011, some of the most senior engineers were asked a question: "Is there a way to get a good uniform IDE for all Googlers?" The answer was essentially "No". Among others, [Jeff Dean](https://en.wikipedia.org/wiki/Jeff_Dean) replied:
 
 ## 相关实体
-- [Cli Mcp Sdk Agent Tool Selection](ch03/044-agent.md)
+- [Cli Mcp Sdk Agent Tool Selection](ch03/045-agent.md)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
 - [Pi Mono Github](ch01/621-pi-mono-github.md)
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/245-skill.md)

@@ -34,7 +34,7 @@
 
 ## 相关实体
 
-- [Design to Code](ch01/149-how-dropbox-uses-mcp-and-dash-to-close-the-design-to-code-se.md)
+- [Design to Code](ch09/005-design-to-code.md)
 - [Visual Reduction AI](ch04/150-ai.md)
 - [大淘宝前端实践](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-frontend-practices.md)
 

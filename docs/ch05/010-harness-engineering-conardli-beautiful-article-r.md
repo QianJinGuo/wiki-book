@@ -326,7 +326,7 @@ Phase 8  Delivery             ★Checkpoint 3 必须停 → 交付 article.html
 
 **补充阅读**：
 
-- [Agent Harness 与 Context Management：Working Set 管理](ch03/044-agent.md)
+- [Agent Harness 与 Context Management：Working Set 管理](ch03/045-agent.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Context Engineering 三种记忆范式](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
 

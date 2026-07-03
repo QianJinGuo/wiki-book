@@ -73,11 +73,11 @@
 - 原版下载：claude.com/blog/the-founders-playbook
 - Anthropic Startups Program（免费API credits + 最高档rate limits）
 ## 相关实体
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/074-claude-code.md)
-- [Claude Code Large Codebase Enterprise Deployment](ch03/074-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/075-claude-code.md)
+- [Claude Code Large Codebase Enterprise Deployment](ch03/075-claude-code.md)
 - [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](ch04/150-ai.md)
-- [Anthropic Prompt Caching Claude Code Agihunt](ch03/074-claude-code.md)
-- [Cat Wu Claude Code Pm](ch03/074-claude-code.md)
+- [Anthropic Prompt Caching Claude Code Agihunt](ch03/075-claude-code.md)
+- [Cat Wu Claude Code Pm](ch03/075-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-founders-playbook-huashu-2026.md)
 
