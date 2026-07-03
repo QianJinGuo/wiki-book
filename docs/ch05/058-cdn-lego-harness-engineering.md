@@ -93,7 +93,7 @@ Harness Engineering五层架构的设计逻辑是**逐层收紧AI的行为边界
 - [Harness Engineering框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 理论基础
 - [腾讯AI Team知识沉淀体系](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md) — 同一团队的另一实践维度
 - [OpenClaw Harness](ch11/210-openclaw.md) — 社区生态视角
-- [Claude Code Harness](ch03/074-claude-code.md) — 前端视角
+- [Claude Code Harness](ch03/075-claude-code.md) — 前端视角
 
 ## 相关实体
 

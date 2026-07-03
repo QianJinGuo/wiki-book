@@ -2,7 +2,7 @@
 
 ## Ch07.061 Create Custom MCP Catalogs and Profiles
 
-> 📊 Level ⭐⭐⭐ | 4.1KB | `entities/create-custom-mcp-catalogs-and-profiles.md`
+> 📊 Level ⭐⭐ | 4.1KB | `entities/create-custom-mcp-catalogs-and-profiles.md`
 
 ## 核心要点
 -

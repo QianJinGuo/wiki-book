@@ -2,7 +2,7 @@
 
 ## Ch03.113 Plaid's Effects on the Financial Ecosystem
 
-> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/plaid-effects.md`
+> 📊 Level ⭐⭐ | 5.1KB | `entities/plaid-effects.md`
 
 ## 核心要点
 - Plaid 主办的年度金融科技峰会，聚焦 AI 与金融服务的融合

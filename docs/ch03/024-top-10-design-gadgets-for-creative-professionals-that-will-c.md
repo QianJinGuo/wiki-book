@@ -76,7 +76,7 @@ Acoustic        → Sony WH-1000XM6（声学环境管理）
 - **e-Ink 全彩化**：reMarkable Paper Pro 的后续产品可能在两个周期内提供接近完整的专业色彩支持
 
 ## 相关实体
-- [Self-Filming Guide by Hello World Media](https://github.com/QianJinGuo/wiki/blob/main/entities/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md) — 自拍摄指南，含 Key Light MK.2 类似的打光建议
+- [Self-Filming Guide by Hello World Media](ch01/206-0.md) — 自拍摄指南，含 Key Light MK.2 类似的打光建议
 - [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)
 
 ---

@@ -2,7 +2,7 @@
 
 ## Ch03.109 Activity-Focused Design
 
-> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/activity-focused-design.md`
+> 📊 Level ⭐⭐ | 5.2KB | `entities/activity-focused-design.md`
 
 ## 核心要点
 

@@ -119,10 +119,10 @@ Loop Engineering    → 怎么管（跨任务编排、验证、状态管理）
 - [Loop Engineering 反馈控制系统](ch05/004-loop-engineering.md)
 - [Loop Engineering 四层循环栈（LangChain）](ch04/150-ai.md)
 - [Loop Engineering 清华框架](ch05/004-loop-engineering.md)
-- [Agent Loop 8 个未解问题（腾讯陈进）](ch03/044-agent.md)
-- [OpenClaw Agent Loop 设计范式](ch03/044-agent.md)
+- [Agent Loop 8 个未解问题（腾讯陈进）](ch03/045-agent.md)
+- [OpenClaw Agent Loop 设计范式](ch03/045-agent.md)
 - [AI Agent Loops Claude Code Codex](ch04/150-ai.md)
-- [Hermes Agent Loop 架构](ch03/044-agent.md)
+- [Hermes Agent Loop 架构](ch03/045-agent.md)
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loop-engineering-codebuddy-tencent-eliqiao-2026.md)
 
 ---
