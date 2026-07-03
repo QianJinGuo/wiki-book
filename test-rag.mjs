@@ -178,8 +178,12 @@ async function testClientRag(url, label) {
   let passed = 0, failed = 0;
 
   try {
-    // 导航到一个有 AI Chat 的文章页
-    await page.goto(url + '/ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag', {
+    // 选择一个在所有环境都存在的文章作为测试页面
+    // Docker: ch04/001-agent.html | GH Pages/CF: ch04-001-agent.html (flat)
+    var testPath = url === 'http://127.0.0.1:8002'
+      ? '/ch04/001-agent'   // Docker 子目录格式
+      : '/ch04-001-agent';   // 其他环境扁平格式
+    await page.goto(url + testPath, {
       waitUntil: 'domcontentloaded',
       timeout: 20000
     });
@@ -286,7 +290,10 @@ async function testFrontendScripts(url, label) {
   let passed = 0, failed = 0;
 
   try {
-    await page.goto(url + '/ch04-318-一文看懂三种-rag-架构-classic-rag-graph-rag-与-agentic-rag', {
+    var testPath = url === 'http://127.0.0.1:8002'
+      ? '/ch04/001-agent'
+      : '/ch04-001-agent';
+    await page.goto(url + testPath, {
       waitUntil: 'domcontentloaded',
       timeout: 20000
     });
