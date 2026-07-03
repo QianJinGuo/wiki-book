@@ -10,16 +10,16 @@ wiki-book 现有 63,013 篇 Markdown 文档（200MB 源文件），搜索索引 
 
 让 AI Chat 能基于 wiki-book 的实际内容回答用户问题，并附上来源链接。跨环境支持（Cloudflare Pages / GitHub Pages / Docker），Free 计划内实现最大 RAG 能力。
 
-## 当前状态（2026-07-02 v1.3.3）
+## 当前状态（2026-07-03 v1.3.3）
 
 ### 三层 RAG 能力
 
 | 层 | 方案 | 语义程度 | 状态 | 环境 |
 |----|------|---------|------|------|
-| **Tier 1 客户端搜索** | 关键词匹配 + TF-IDF 近邻图扩展 | 词袋级 | ✅ 线上运行 | 全部环境 |
-| **Phase 2 Reranker** | bge-reranker-base 交叉编码器重排序 | **跨句语义理解** | ⚠️ Free 间歇 503 | CF Pages 专属 |
-| **Phase 3 语义搜索** | 讯飞 xop3qwen8bembedding API + Vectorize | 向量语义 | ✅ 批量 embedding 中 | CF Pages + 讯飞 API |
-| **QMD 搜索 (HP 备选)** | BM25 + 本地理论 embedding (CPU 瓶颈) | 词袋级 | ⚠️ BM25 可用，embedding CPU 超时 | HP Docker
+| **Layer 1 客户端搜索** | 关键词匹配 + TF-IDF 近邻图扩展 | 词袋级 | ✅ 线上运行 | 全部环境 |
+| **Layer 2 QMD BM25** | SQLite FTS5 BM25 + TF-IDF 排序 | 词袋级 | ✅ HP Docker | 需 HP 在线 |
+| **Layer 3 语义搜索** | 讯飞 xop3qwen8bembedding API + Vectorize | **向量语义** | ✅ 线上运行 | CF Pages + 讯飞 API |
+| **服务器兜底** | Phase 1 关键词 + Phase 2 Reranker | 跨句语义 | ⚠️ Free 间歇 503 | CF Pages 专属 |
 
 ### 三环境最终状态
 
@@ -28,7 +28,7 @@ wiki-book 现有 63,013 篇 Markdown 文档（200MB 源文件），搜索索引 
 | **客户端搜索 (Tier 1)** | ✅ Playwright 验证通过 | ✅ Playwright 验证通过 | ✅ Playwright 验证通过 |
 | **近邻图扩展** | ✅ 本地文件注入 (57K 节点) | ✅ GitHub Actions 自动构建 | ✅ R2 流式加载 |
 | **Reranker 重排序** | ❌ nginx fallback | ❌ 无服务器端点 | ⚠️ Free 间歇 503 |
-| **语义搜索** | ❌ | ❌ | ❌ 待 Workers Paid 或 QMD |
+| **语义搜索 (Layer 3)** | ❌ 无讯飞 API 调用 | ❌ | ✅ 讯飞 + Vectorize |
 | **AI Chat 面板** | ✅ | ✅ | ✅ |
 
 ## 架构总览
@@ -343,7 +343,8 @@ nginx.conf 新增 `/rag-query` 端点返回 `{"results":[],"source":"nginx-fallb
 | `overrides/assets/javascripts/rag-client.js` | 客户端 RAG 引擎（关键词 + 近邻图 + IndexedDB） | mkdocs build |
 | `overrides/assets/javascripts/ai-chat.js` | AI Chat 面板 + doRagSearch 客户端优先逻辑 | mkdocs build |
 | `scripts/build-neighbor-graph.py` | 离线近邻图构建（TF-IDF 余弦，63K 文档，1min） | 构建阶段 |
-| `scripts/build-vectorize.py` | Vectorize 向量索引构建（bge-m3 embedding） | 构建阶段 |
+| `scripts/build-vectorize.py` | Vectorize 索引构建（旧版，Workers AI bge-m3） | 构建阶段 |
+| `scripts/build-vectorize-xunfei.py` | Vectorize 索引构建（讯飞 xop3qwen8bembedding，并发版） | 构建阶段 |
 | `scripts/slim-search-index.py` | 搜索索引裁剪（21MB → 21MB，去章节索引页） | 构建阶段 |
 | `scripts/build.sh` | 统一构建脚本（mkdocs → 近邻图 → slim） | 构建阶段 |
 | `deploy/cloudflare/deploy.sh` | CF Pages 部署（上传 R2 + deploy site） | 部署阶段 |
@@ -365,14 +366,17 @@ nginx.conf 新增 `/rag-query` 端点返回 `{"results":[],"source":"nginx-fallb
 
 | 项 | 说明 | 状态 |
 |----|------|------|
-| QMD 部署评估 | 检查 HP 资源（内存/磁盘），决定是否部署 QMD | 📋 |
-| QMD 集成 | 部署 QMD + Cloudflare Tunnel + ai-chat.js HTTP 集成 | 📋 |
+| QMD + Docker 部署 | HP 上 Docker 化 QMD（已完成） | ✅ |
+| Vectorize 并发优化 | 10 并发 × 20 doc/批，36 docs/s | ✅ |
+| CF Zero Trust SSH | 公网 SSH 隧道（已完成） | ✅ |
+| Docker 容器内 rag-client.js 权限 | chmod 644 修复（已完成） | ✅ |
 
-### 长期（升级 Workers Paid $5/月 或 QMD 替代）
+### 已完成
 
-- **Phase 3 语义搜索** — Workers Paid 升级，零代码改动即生效
-- **QMD 混合搜索** — BM25 + 语义 + Reranker，部署到 HP 绕开 Free 限制
-- 近邻图可被 QMD 语义搜索替代，客户端关键词搜索保留作降级
+- **Layer 1** 客户端 RAG → 三环境全部验证通过
+- **Layer 2** QMD BM25 → HP Docker + CF Tunnel
+- **Layer 3** 讯飞 + Vectorize → 63,012 文档，29 分钟全量重建
+- **自动运维** → 每日 cron 自动同步（03:00 wiki / 03:05 HP / 03:30 Vectorize）
 
 ## Playwright 测试结果
 
@@ -428,8 +432,8 @@ rag-client.js:             ⚠️ 文件存在，HTML 老旧未引用
 
 ```
 03:00  wiki-book-sync（cron）— 同步 wiki → mkdocs build → 近邻图 → 上传 R2
-03:05  sync-docs-to-hp（cron）— rsync docs/ → HP，QMD 自动增量索引
-03:30  sync-vectorize（cron）— 全量重建 Vectorize 向量索引（~100 分钟）
+03:05  sync-docs-to-hp（cron）— rsync docs/ → HP，QMD 自动增量索引（~10s）
+03:30  sync-vectorize（cron）— 全量重建 Vectorize 向量索引（~29 min，37 docs/s 并发）
 ```
 
 | 维护项 | 成本 | 自动化 |

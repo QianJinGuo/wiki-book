@@ -65,13 +65,14 @@ overrides/assets/javascripts/
 
 ## RAG 系统
 
-### 三层 RAG 能力
+### 四层 RAG 架构
 
-| 层 | 方案 | 语义程度 | 状态 | 环境 |
-|----|------|---------|------|------|
-| Tier 1 客户端搜索 | 关键词 + TF-IDF 近邻图 | 词袋级 | ✅ 线上运行 | 全部 |
-| Phase 2 Reranker | bge-reranker-base | 跨句语义 | ⚠️ Free 503 | CF Pages |
-| Phase 3 语义搜索 | bge-m3 + Vectorize | 向量语义 | ❌ Free 限制 | 待 Workers Paid |
+```
+Layer 1: 浏览器 rag-client.js     — IndexedDB 关键词+近邻图, 0ms
+Layer 2: QMD BM25 (HP Docker)    — SQLite FTS5 BM25, ~50ms
+Layer 3: 讯飞 + Vectorize (CF)    — 语义搜索, ~300ms
+兜底:    Pages Function           — Phase 1 关键词 + Phase 2 Reranker
+```
 
 ### 三环境 RAG 最终状态 (v1.3.3)
 
@@ -79,6 +80,7 @@ overrides/assets/javascripts/
 |------|--------|-------------|-----------------|
 | 客户端搜索 | ✅ | ✅ | ✅ |
 | 近邻图扩展 | ✅ (注入) | ✅ (GHA 构建) | ✅ (R2) |
+| 语义搜索 (Layer 3) | ❌ | ❌ | ✅ 讯飞 + Vectorize |
 | Reranker | ❌ nginx 兜底 | ❌ 无服务器 | ⚠️ Free 503 |
 
 ### 数据流
