@@ -18,8 +18,8 @@ wiki-book 现有 63,013 篇 Markdown 文档（200MB 源文件），搜索索引 
 |----|------|---------|------|------|
 | **Tier 1 客户端搜索** | 关键词匹配 + TF-IDF 近邻图扩展 | 词袋级 | ✅ 线上运行 | 全部环境 |
 | **Phase 2 Reranker** | bge-reranker-base 交叉编码器重排序 | **跨句语义理解** | ⚠️ Free 间歇 503 | CF Pages 专属 |
-| **Phase 3 语义搜索** | bge-m3 embedding + Vectorize 查询 | 向量语义 | ❌ Free 10ms CPU 锁定 | 待 Workers Paid |
-| **QMD 混合搜索** (评估中) | BM25 + 本地 embedding + 本地 Reranker (HP 部署) | **全栈语义** | 📋 待评估资源 | HP 服务器 / Tunnel
+| **Phase 3 语义搜索** | 讯飞 xop3qwen8bembedding API + Vectorize | 向量语义 | ✅ 批量 embedding 中 | CF Pages + 讯飞 API |
+| **QMD 搜索 (HP 备选)** | BM25 + 本地理论 embedding (CPU 瓶颈) | 词袋级 | ⚠️ BM25 可用，embedding CPU 超时 | HP Docker
 
 ### 三环境最终状态
 
@@ -189,24 +189,59 @@ Workers Free 计划 10ms CPU 时间限制，连续请求时触发 503/1102。实
 
 解决方案：升级 Workers Paid（$5/月），CPU 时间 10ms → 30s。
 
-## Phase 3：语义搜索（待 Workers Paid 升级）
+## Phase 3：语义搜索（讯飞 API + Vectorize）
 
-### 限制根因
+### 架构
 
-| 限制项 | Free | Paid |
-|--------|------|------|
-| CPU 时间/请求 | **10ms** | **30s** |
-| 内存 | 128MB | 128MB |
-| 子请求 | 50 | 1000 |
-
-Phase 3 流程耗时：
 ```
-用户 query → bge-m3 embedding (~200ms) → Vectorize query (~50ms) → 总计 ~300ms wall-clock
+查询时:
+  1. fetch(讯飞 API, query text)          ← HTTP 请求，不计 CPU ✅
+  2. env.VECTORIZE.query(embedding)       ← Vectorize 搜索，不计 CPU ✅
+  3. 与关键词结果融合 → reranker → top 5
+  总计 CPU: ~1ms (仅解析响应) ✅
 ```
 
-Free 计划只给 10ms CPU time，embedding 调用的序列化/反序列化就超限了。
+### Vectorize vs R2
 
-### 已就绪的基础设施
+| | Vectorize | R2 |
+|---|-----------|-----|
+| **本质** | **向量数据库** | **对象存储**（类似 S3） |
+| **存什么** | 向量（[0.1, 0.2, ...]） | 文件（JSON/图片/视频） |
+| **怎么用** | `env.VECTORIZE.query(向量, topK)` → 返回最近邻 | `env.R2.get(key)` → 返回文件 |
+| **能搜索吗** | ✅ 余弦相似度 / 欧氏距离 | ❌ 只能按文件名读 |
+| **修改** | ❌ 不能修改已有向量，只能插入/删除 | ✅ 可覆盖 |
+
+**R2** 存 search_index.json（全量文本）和 neighbor_graph.json（近邻图），按 key 读取。
+**Vectorize** 存向量索引，按余弦距离查询最近邻，两者互补不冲突。
+
+如果向量存 R2，查询时需下载全部 30K 向量（~120MB）→ 本地 cosine 搜索 → 超 10ms CPU 限制。
+Vectorize 把这步计算放在 Cloudflare 内部，不计 CPU。
+
+### 模型配置
+
+| 项 | 值 |
+|----|-----|
+| API | `https://maas-api.cn-huabei-1.xf-yun.com/v2/embeddings` |
+| 模型 | `xop3qwen8bembedding`（8B 参数） |
+| 维度 | 1024（Vectorize 上限 1536，模型支持 32/64/128/256/512/768/1024/2048/4096） |
+| 认证 | Bearer token（`key:secret` 格式） |
+| 向量库 | `wiki-book-embeddings-v2`（1024 dim, cosine） |
+
+### 为什么之前的 Workers AI 行不通
+
+```
+旧流程（Pages Function 内）:
+  env.AI.run("@cf/baai/bge-m3", query)     ← 计 CPU 时间 ❌ → 超 10ms → 503
+  env.VECTORIZE.query(embedding)            ← 不计 CPU ✅
+
+新流程（Pages Function 内）:
+  fetch(讯飞 API, query)                    ← HTTP I/O，不计 CPU ✅
+  env.VECTORIZE.query(embedding)            ← 不计 CPU ✅
+```
+
+Workers AI 调用在 GPU 推理，但请求的序列化/反序列化消耗 CPU 时间。讯飞 API 通过 HTTP 调用，网络等待不计 CPU。Vectorize 始终是纯 I/O，两者互不冲突。
+
+### 批量构建脚本
 
 升级 Workers Paid 后**零代码改动**即可启用：
 
