@@ -30,13 +30,13 @@ jobs:
       - name: Build site
         run: mkdocs build
 
-      - name: Build neighbor graph (Tier 1 RAG)
+      - name: Build neighbor graph (Tier 1 RAG) — optional, non-blocking
         run: |
           pip install numpy scipy
           python3 scripts/build-neighbor-graph.py \
             --input site/search/search_index.json \
             --output site/assets/neighbor_graph.json \
-            --top-k 20
+            --top-k 20 || echo "⚠️ Neighbor graph skipped (memory/timeout on runner). Site unaffected."
 
       - name: Slim search index for browser
         run: python3 scripts/slim-search-index.py || true
