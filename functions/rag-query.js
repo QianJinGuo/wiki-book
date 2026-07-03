@@ -1,7 +1,8 @@
 // Cloudflare Pages Function: RAG Query
-// Phase 1: 关键词搜索 → Phase 2: Reranker 重排序 → Phase 3: 语义 Embedding 补充
-// Embedding: 讯飞 xop3qwen8bembedding (8B, 1024维)
-// Reranker: Workers AI @cf/baai/bge-reranker-base
+// Phase 1: 关键词搜索 → Phase 2: Reranker 重排序 → Phase 3: 语义搜索
+// Embedding: 讯飞 xop3qwen8bembedding (8B, 1024维) via HTTP API (不计 CPU)
+// Reranker: Workers AI @cf/baai/bge-reranker-base (间歇 503 Free 限制)
+// Vectorize: wiki-book-embeddings-v2 (1024d, cosine)
 // 返回 top 5 相关文档片段
 
 const STOP_WORDS = new Set([
@@ -21,6 +22,9 @@ const STOP_WORDS = new Set([
   "or", "if", "what", "which", "who", "whom", "this", "that", "these",
   "those", "about", "up", "it", "its", "also",
 ]);
+
+const XUNFEI_URL = "https://maas-api.cn-huabei-1.xf-yun.com/v2/embeddings";
+const XUNFEI_MODEL = "xop3qwen8bembedding";
 
 function tokenize(text) {
   const tokens = text.match(/[\u4e00-\u9fff]{2,}|[a-zA-Z]{2,}/g) || [];
@@ -67,32 +71,89 @@ async function loadIndex(env) {
   return cachedIndex;
 }
 
-// ========== Phase 3: 语义搜索（Vectorize 托管向量搜索） ==========
-async function vectorSearch(query, env) {
-  try {
-    // 1. Embed query via Workers AI bge-m3
-    const aiResp = await env.AI.run("@cf/baai/bge-m3", { text: [query] });
-    if (!aiResp || !aiResp.data || !aiResp.data[0]) return [];
+// Build mapping: valid_docs index → original docs index
+// Vectorize now stores original docs indices directly (from build-vectorize-xunfei.py v2)
+// So we can use hit.docId directly to look up docs[]
+let cachedDocMap = null;
+function getDocMap(docs) {
+  if (cachedDocMap) return cachedDocMap;
+  const map = {};
+  let validIdx = 0;
+  for (let i = 0; i < docs.length; i++) {
+    if (docs[i].location) {
+      map[validIdx] = i;
+      validIdx++;
+    }
+  }
+  cachedDocMap = map;
+  return map;
+}
 
-    const queryVec = aiResp.data[0];
+// ========== Phase 3: 语义搜索（讯飞 API + Vectorize） ==========
+async function semanticSearch(query, env) {
+  try {
+    // 1. Embed query via 讯飞 API（HTTP 请求，不计 CPU 时间 ✅）
+    const xunfeiKey = env.XUNFEI_API_KEY;
+    if (!xunfeiKey) {
+      console.warn("XUNFEI_API_KEY not configured");
+      return [];
+    }
+
+    const embedResp = await fetch(XUNFEI_URL, {
+      method: "POST",
+      headers: {
+        "Authorization": "Bearer " + xunfeiKey,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: XUNFEI_MODEL,
+        input: [query],
+        dimensions: 1024,
+      }),
+    });
+
+    if (!embedResp.ok) {
+      console.error("Xunfei API error:", embedResp.status);
+      return [];
+    }
+
+    const embedData = await embedResp.json();
+    if (!embedData.data || !embedData.data[0]) {
+      console.error("Xunfei API: unexpected response");
+      return [];
+    }
+
+    const queryVec = embedData.data[0].embedding;
 
     // 2. Search Vectorize index
-    const matches = await env.VECTORIZE.query(queryVec, {
-      topK: 15,
-      returnValues: false,
-      returnMetadata: true,
-    });
+    const cfToken = env.CF_API_TOKEN || "";
+    let matches = [];
+    try {
+      if (cfToken) {
+        const r = await fetch("https://api.cloudflare.com/client/v4/accounts/aa78649679a46fa7ed55bdc17165ced3/vectorize/v2/indexes/wiki-book-embeddings-v2/query", {
+          method: "POST", headers: { "Authorization": "Bearer " + cfToken, "Content-Type": "application/json" },
+          body: JSON.stringify({ vector: queryVec, topK: 15, returnMetadata: true, returnValues: false }),
+        });
+        const d = await r.json();
+        if (d.success && d.result) matches = d.result.matches || [];
+      }
+      if (!matches.length) {
+        matches = await env.VECTORIZE.query(queryVec, { topK: 15, returnValues: false, returnMetadata: true });
+      }
+    } catch (e) {
+      return [{ docId: -1, score: 0, title: "Vec err: " + e.message.substring(0,80), location: "" }];
+    }
 
     if (!matches || !matches.length) return [];
 
     return matches.map(m => ({
       docId: parseInt(m.id, 10),
       score: m.score,
-      title: m.metadata.title,
-      location: m.metadata.location,
+      title: m.metadata ? m.metadata.title : "",
+      location: m.metadata ? m.metadata.location : "",
     }));
   } catch (e) {
-    console.error("Vectorize search error:", e);
+    console.error("Semantic search error:", e.message);
     return [];
   }
 }
@@ -122,20 +183,44 @@ export async function onRequest(context) {
     const keywordCandidates = keywordSearch(query, docs, 30);
     const keywordDocIds = new Set(keywordCandidates.map(d => docs.indexOf(d)));
 
-    // Phase 3: 语义搜索（Vectorize）
+    // Phase 3: 语义搜索（讯飞 API + Vectorize）
     let semanticCandidates = [];
+    let semanticDebug = { vecCount: -1, overlap: 0, nullDoc: 0, added: 0, err: "" };
     try {
-      const semanticHits = await vectorSearch(query, env);
+      const semanticHits = await semanticSearch(query, env);
+      semanticDebug.vecCount = semanticHits.length;
       for (const hit of semanticHits) {
-        if (!keywordDocIds.has(hit.docId)) {
-          const doc = docs[hit.docId];
-          if (doc) {
-            semanticCandidates.push({ ...doc, score: hit.score * 10 });
-          }
+        if (hit.docId === -1 && hit.title.startsWith("VecAPI")) {
+          semanticDebug.err = hit.title;
+          continue;
         }
+        if (keywordDocIds.has(hit.docId)) {
+          semanticDebug.overlap++;
+          continue;
+        }
+        const doc = docs[hit.docId];
+        if (!doc || !doc.title) {
+          // Fallback: try docMap in case IDs are valid_docs indices
+          const docMap = getDocMap(docs);
+          const origIdx = docMap[hit.docId];
+          if (origIdx !== undefined) {
+            const doc2 = docs[origIdx];
+            if (doc2 && doc2.title) {
+              semanticCandidates.push({ ...doc2, score: hit.score * 10 });
+              semanticDebug.added++;
+              continue;
+            }
+          }
+          semanticDebug.nullDoc++;
+          semanticDebug.lastId = hit.docId;
+          semanticDebug.lastMap = hit.docId;
+          continue;
+        }
+        semanticCandidates.push({ ...doc, score: hit.score * 10 });
+        semanticDebug.added++;
       }
     } catch (embedErr) {
-      console.error("Embedding error:", embedErr);
+      semanticDebug.err = embedErr.message;
     }
 
     const mergedCandidates = [...keywordCandidates, ...semanticCandidates];
@@ -146,7 +231,7 @@ export async function onRequest(context) {
       });
     }
 
-    // Phase 2: Reranker 重排序（仍用 Workers AI）
+    // Phase 2: Reranker 重排序（Workers AI，可能 503）
     let results;
     try {
       const rerankerInput = {
