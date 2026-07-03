@@ -12,7 +12,7 @@
 - 该木马建立持久化后门，每 60 秒向 C2 发送心跳，可接收远程代码执行指令
 
 ## 相关实体
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](https://github.com/QianJinGuo/wiki/blob/main/entities/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](ch01/206-0.md)
 - [Fake Job Interview Apps Drop Jobstealer Malware On Windows And Macos](ch12/046-fake-job-interview-apps-drop-jobstealer-malware-on-windows-a.md)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/150-ai.md)

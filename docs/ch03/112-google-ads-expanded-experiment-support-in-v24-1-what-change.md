@@ -2,7 +2,7 @@
 
 ## Ch03.112 Google Ads Expanded Experiment Support in v24.1: What Changed for AI Max, Video, Demand Gen, and Performance Max
 
-> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/almcorp-google-ads-expanded-experiment-v24-1.md`
+> 📊 Level ⭐⭐ | 5.1KB | `entities/almcorp-google-ads-expanded-experiment-v24-1.md`
 
 ## 核心要点
 - Google Ads v24.1 扩展了 AI Max、视频、Demand Gen 和 Performance Max 的实验支持

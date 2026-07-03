@@ -43,7 +43,7 @@
 - 
 - [Thread Openai Devs](ch04/150-ai.md)
 - [Thread Patrickogrady](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-patrickogrady.md)
-- [Thread 0Xcheeezzyyyy](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-0xcheeezzyyyy.md)
+- [Thread 0Xcheeezzyyyy](ch01/206-0.md)
 
 ---
 

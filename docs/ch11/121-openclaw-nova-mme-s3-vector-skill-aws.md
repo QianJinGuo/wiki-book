@@ -32,7 +32,7 @@ ISS 方案的核心思想可以泛化至其他 Agent 框架中的上下文管理
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-leveraging-nova-mme-s3-vector-implement-skill.md)
 
-- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](ch03/074-claude-code.md)
+- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](ch03/075-claude-code.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
 
 ---

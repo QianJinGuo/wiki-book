@@ -2,7 +2,7 @@
 
 ## Ch03.104 What is AX? John Maeda on Accessibility as Ability
 
-> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/2026-06-11-what-is-ax.md`
+> 📊 Level ⭐⭐ | 6.2KB | `entities/2026-06-11-what-is-ax.md`
 
 # What is AX? John Maeda on Accessibility as Ability
 
@@ -77,7 +77,7 @@ Maeda 引用了 Erika Hall 2018 年《Conversational Design》中的观点：没
 ## 相关实体
 
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
-- [Claude Code HTML Artifact Workflow](ch03/074-claude-code.md)
+- [Claude Code HTML Artifact Workflow](ch03/075-claude-code.md)
 - [Claude Dispatch and the Power of Interfaces](ch01/436-claude-dispatch-and-the-power-of-interfaces.md)
 - [MOC: Coding Agent Practice](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

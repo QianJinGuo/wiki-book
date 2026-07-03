@@ -45,11 +45,11 @@ GitLab Duo Agent Platform 仍处于早期阶段——评估它是否已覆盖你
 当 AI agent 可以自主修改代码和部署时，治理框架（审批流程、权限控制、审计日志）必须在 agent 上线前就位。
 
 ## 相关实体
-- [Gitlab Layoffs Memo 2026 5](https://github.com/QianJinGuo/wiki/blob/main/entities/gitlab-layoffs-memo-2026-5.md)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](ch03/044-agent.md)
-- [Auto Improving Agent Platform Ashpreetbedi](ch03/044-agent.md)
-- [The Ui Is Dead Long Live The Agent](ch03/044-agent.md)
-- [Servicenow Ui Is Dead Agent](ch03/044-agent.md)
+- [Gitlab Layoffs Memo 2026 5](ch01/206-0.md)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](ch03/045-agent.md)
+- [Auto Improving Agent Platform Ashpreetbedi](ch03/045-agent.md)
+- [The Ui Is Dead Long Live The Agent](ch03/045-agent.md)
+- [Servicenow Ui Is Dead Agent](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gitlab-14pct-layoff-agent-platform-ai-2026q1.md)
 

@@ -2,17 +2,17 @@
 
 ## Ch03.120 Spotify Logo Gets a Makeover, Turns Into a Disco Ball
 
-> 📊 Level ⭐⭐⭐ | 4.0KB | `entities/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md`
+> 📊 Level ⭐⭐ | 4.0KB | `entities/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md`
 
 ## 核心要点
 - 来自 newsletter 推荐的优质文章
 - 评分: v×c = 49
 ## 相关实体
-- [P Seo Is A Product Aeo Is Brand](ch03/108-seo-is-a-product-aeo-is-brand.md)
+- [P Seo Is A Product Aeo Is Brand](ch03/113-seo-is-a-product-aeo-is-brand.md)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 - [Spotify Llm Evals Funnel Not Fork](ch01/890-llm.md)
 - [你的一人公司品牌部带着Image 2模型的Lovart中文版来了](https://github.com/QianJinGuo/wiki/blob/main/entities/你的一人公司品牌部带着image-2模型的lovart中文版来了.md)
-- [Top 10 Design Gadgets Creative Professionals 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
+- [Top 10 Design Gadgets Creative Professionals 2026](ch01/206-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md)
 

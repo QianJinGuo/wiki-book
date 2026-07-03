@@ -12,9 +12,9 @@
 ## 相关实体
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch04/150-ai.md)
 - [Fudan Peking Ahe Agentic Harness Engineering](ch04/221-fudan-peking-ahe-agentic-harness-engineering.md)
-- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch03/044-agent.md)
-- [Harness Engineering Reliable Long Term Agent](ch03/044-agent.md)
-- [Harness Engineering Long Term Agent Tasks](ch03/044-agent.md)
+- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch03/045-agent.md)
+- [Harness Engineering Reliable Long Term Agent](ch03/045-agent.md)
+- [Harness Engineering Long Term Agent Tasks](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tencent-cdn-lego-harness-engineering.md)
 

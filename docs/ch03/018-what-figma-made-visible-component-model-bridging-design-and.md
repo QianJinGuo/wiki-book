@@ -109,8 +109,8 @@ Trueman 坦诚地承认，他自己也不确定这是真正的结构性问题还
 
 ## 相关实体
 
-- [Design-to-Code Loop: Figma](https://github.com/QianJinGuo/wiki/blob/main/entities/design-to-code-loop-figma.md)
-- [Figma Make](ch03/045-figma-make.md)
+- [Design-to-Code Loop: Figma](ch09/005-design-to-code.md)
+- [Figma Make](ch03/047-figma-make.md)
 - [Agent Harnesses](ch04/542-agent-harnesses-are-dead-long-live-agent-harnesses.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Haptics Design — Microsoft](https://github.com/QianJinGuo/wiki/blob/main/entities/haptics-design-implementation-microsoft-windows11.md)

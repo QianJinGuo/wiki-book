@@ -246,23 +246,23 @@ business_agent_profile:
 ## 与现有 Wiki 的关系
 
 ### 与 Agent Harness 工程的呼应
-[Agent Harness 架构设计](ch03/044-agent.md) + [Agent Harness Engineering Survey ETCLOVG](ch03/044-agent.md) 提供了 Harness 的 **学术框架**（Execution / Tooling / Context / Lifecycle / Observability / Verification / Governance）——本文提供了 **业务团队的 MVP 落地路径**，两者互补。Harness 框架是"通用 Agent 的 execution layer"；业务增强层是"团队给通用 Agent 补的 domain layer"。
+[Agent Harness 架构设计](ch03/045-agent.md) + [Agent Harness Engineering Survey ETCLOVG](ch03/045-agent.md) 提供了 Harness 的 **学术框架**（Execution / Tooling / Context / Lifecycle / Observability / Verification / Governance）——本文提供了 **业务团队的 MVP 落地路径**，两者互补。Harness 框架是"通用 Agent 的 execution layer"；业务增强层是"团队给通用 Agent 补的 domain layer"。
 
 ### 与其他企业级 Agent 实践的呼应
-- [AgentScope Builder 企业自进化](ch03/044-agent.md) = 阿里云 Harness 平台化（重平台路径）
-- [阿里云 EventHouse 上下文构建](ch03/044-agent.md) = 知识与上下文层的 DIKW 框架
+- [AgentScope Builder 企业自进化](ch03/045-agent.md) = 阿里云 Harness 平台化（重平台路径）
+- [阿里云 EventHouse 上下文构建](ch03/045-agent.md) = 知识与上下文层的 DIKW 框架
 - **本文 = 业务团队"复用基座 + 补增强层"的轻量路径**（平台 vs 增强层 是两种不同的工程取舍）
 
 ### 与评估 / 知识管理
-- [AgentEval YAML 评测框架](ch03/044-agent.md) = 技术评测框架（多 Agent 适配器 / pass@k + pass^k）
+- [AgentEval YAML 评测框架](ch03/045-agent.md) = 技术评测框架（多 Agent 适配器 / pass@k + pass^k）
 - **本文的评测集 = 业务评测集**（带 required_evidence / forbidden_behavior / label 字段）——比纯技术评测更面向业务闭环
 
 ### 与失败模式
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](ch03/044-agent.md) 提供了技术层的失败分析
+- [Agent Reliability: Context Drift & Tool Calling Hallucination](ch03/045-agent.md) 提供了技术层的失败分析
 - **本文的 7 个反模式 = 业务层的失败模式**（无 baseline / 长 prompt 知识 / 过早多 Agent 化等）
 
 ### 与"Agent = Model + Harness"公式
-[Agent Harness 12 组件 7 决策](ch03/044-agent.md) 提出 **Agent = Model + Harness**——本文是这公式在企业落地时的工程展开：**通用 Agent（Model + 基础 Harness）+ 业务增强层（业务能力）**。
+[Agent Harness 12 组件 7 决策](ch03/045-agent.md) 提出 **Agent = Model + Harness**——本文是这公式在企业落地时的工程展开：**通用 Agent（Model + 基础 Harness）+ 业务增强层（业务能力）**。
 
 ## 深度分析
 

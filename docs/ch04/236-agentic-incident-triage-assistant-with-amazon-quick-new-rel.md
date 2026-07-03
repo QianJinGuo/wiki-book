@@ -11,7 +11,7 @@
 ## 相关实体
 
 - [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](ch11/197-amazon-quick.md)
-- [introducing the mdn mcp server](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-mdn-mcp-server-2026.md)
+- [introducing the mdn mcp server](ch01/206-0.md)
 - [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](ch04/150-ai.md)
 - [万级实时推理的商品领域agent实践思考和总结](ch04/150-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-an-agentic-incident-triage-assistant-with-amazon-quick-and-new-relic.md)
@@ -34,7 +34,7 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 - **Aderant 场景**（[Aderant Transforms Cloud Operations With Amazon Quick](ch11/178-aderant-transforms-cloud-operations-with-amazon-quick.md)）：Quick 接入 6 个供应商系统的 MCP servers，专注 cross-source RAG 搜索
 - **本场景**：Quick 通过单 agent 同时编排 2 个 tool 类别——observability tools（New Relic 推理 + 查询）+ action tools（Asana 任务创建）
 
-这种"单 agent + 多 tool 类别"的模式是当前 agentic AI 落地的标准形态，与 [Claude Code Dynamic Workflows Multi Agent Orchestration](ch03/074-claude-code.md) 描述的动态 fan-out 模式形成对比——Amazon Quick 提供的是 **预定义工具集的稳定编排**，而非 Claude Code 的动态 sub-agent 生成。
+这种"单 agent + 多 tool 类别"的模式是当前 agentic AI 落地的标准形态，与 [Claude Code Dynamic Workflows Multi Agent Orchestration](ch03/075-claude-code.md) 描述的动态 fan-out 模式形成对比——Amazon Quick 提供的是 **预定义工具集的稳定编排**，而非 Claude Code 的动态 sub-agent 生成。
 
 ### 2. New Relic 5 个推理工具的 Tool Routing 模式
 
@@ -64,7 +64,7 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 
 这一设计直接解决 SRE 实践中的核心痛点：**shift handoff 时的 knowledge loss**。无论当班工程师是谁，AI 生成的 RCA 都遵循相同结构，下一班工程师可在 30 秒内快速理解 incident 状态。
 
-与 [Hermes Agent Tool System Architecture](ch03/044-agent.md) 等"工具架构"主题 entity 的差异：本 entity 关注 **incident response 流程标准化** 而非 agent 内部工具系统设计。
+与 [Hermes Agent Tool System Architecture](ch03/045-agent.md) 等"工具架构"主题 entity 的差异：本 entity 关注 **incident response 流程标准化** 而非 agent 内部工具系统设计。
 
 ### 4. 异步补全 vs 实时编排的对比
 
@@ -115,9 +115,9 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 ## 相关主题
 
 - [Aderant Transforms Cloud Operations With Amazon Quick](ch11/178-aderant-transforms-cloud-operations-with-amazon-quick.md) — Amazon Quick 在法律行业的 cross-source RAG 案例（同一产品不同应用场景）
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch03/044-agent.md) — Amazon Bedrock AgentCore 的 MCP gateway 扩展（MCP 在 AWS 的另一面）
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch03/045-agent.md) — Amazon Bedrock AgentCore 的 MCP gateway 扩展（MCP 在 AWS 的另一面）
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch11/197-amazon-quick.md) — Amazon Quick 在金融 AML 告警分流的应用（同一产品的规则化分流场景）
-- [Aws Bedrock Agentcore Doris Mcp Server](ch03/044-agent.md) — AWS Bedrock AgentCore + Doris MCP server 的另一个生产实战
+- [Aws Bedrock Agentcore Doris Mcp Server](ch03/045-agent.md) — AWS Bedrock AgentCore + Doris MCP server 的另一个生产实战
 - [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](ch04/245-skill.md) — 长时自驱动 agent 模式（与本 entity 的同步编排模式形成对比）
 
 ---

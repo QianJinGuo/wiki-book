@@ -204,9 +204,9 @@ Benchmark70 任务全量复现：https://github.com/EvoMap/critpt-openclaw-repro
 
 2. **结构宽容 + 语义挑剔的鲁棒性边界**：stale_paradigm（过时算法范式）比 clean Gene 更高（56.6% vs 54.0%），但换错领域/换错算法立刻掉分。这说明 Gene 的有效条件是"**保留任务相关的控制框架**"，而非"写最新的方法"。过期框架只要结构对仍然有效；新方法如果框架错则直接拖累——这对 [GEPA 通用文本优化](ch01/313-gepa-optimize-anything.md) 的"内容质量优先"前提是一个直接挑战。
 
-3. **GEP 协议是经验对象从"Prompt 片段"到"持久策略接口"的升格层**：没有协议，Gene 只是另一段 prompt——边界不稳、字段无法比较、不能累积。协议化后 Gene 变成可匹配、可替换、可修订、可组合的对象——这为 [OpenClaw Agent Loop 设计范式](ch03/044-agent.md) 中多 Agent 之间的经验交换提供了标准化的接口规范。
+3. **GEP 协议是经验对象从"Prompt 片段"到"持久策略接口"的升格层**：没有协议，Gene 只是另一段 prompt——边界不稳、字段无法比较、不能累积。协议化后 Gene 变成可匹配、可替换、可修订、可组合的对象——这为 [OpenClaw Agent Loop 设计范式](ch03/045-agent.md) 中多 Agent 之间的经验交换提供了标准化的接口规范。
 
-4. **"经验回到模型那一刻，长什么形状"是 Gene 最本质的命题**：这个问题的答案决定了 Agent 在测试时能进化成什么样。[Harness 7 层](ch03/074-claude-code.md)框架中，Gene 对应的是"控制对象层"——而这一层在之前的 harness 设计中几乎被完全忽视，所有设计努力都集中在 context 填充和 memory 系统上。
+4. **"经验回到模型那一刻，长什么形状"是 Gene 最本质的命题**：这个问题的答案决定了 Agent 在测试时能进化成什么样。[Harness 7 层](ch03/075-claude-code.md)框架中，Gene 对应的是"控制对象层"——而这一层在之前的 harness 设计中几乎被完全忽视，所有设计努力都集中在 context 填充和 memory 系统上。
 
 **实践价值**：对于 Agent 系统开发者，Gene 的最大启示是"**把写给同事的 Skill 文档和运行时注入给模型的控制信号分开**"——这是几乎没有成本、见效极快的优化。只需把已有的 Skill 文档中程序性内容（workflow/pitfalls/constraints）提取出来，重新组织成 strategy + AVOID 结构，就能显著提升控制密度。
 
@@ -228,8 +228,8 @@ Benchmark70 任务全量复现：https://github.com/EvoMap/critpt-openclaw-repro
 - [Anthropic Agent Skills Design Patterns 14](ch04/245-skill.md) — Anthropic 官方 14 个 Skill 设计模式
 - [Darwin Skill 2 Huashu](ch04/245-skill.md) — Darwin Skill 互优化
 - [Hermes Agent Skill Crossover Optimization](ch04/245-skill.md) — Hermes Agent Skill 互优化（达尔文闭环）
-- [Openclaw Agent Loop Design Patterns](ch03/044-agent.md) — OpenClaw Agent Loop 设计范式
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](ch03/074-claude-code.md) — Harness 7 层 (OpenClaw/Hermes/Claude Code)
+- [Openclaw Agent Loop Design Patterns](ch03/045-agent.md) — OpenClaw Agent Loop 设计范式
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](ch03/075-claude-code.md) — Harness 7 层 (OpenClaw/Hermes/Claude Code)
 - [Gepa Optimize Anything](ch01/313-gepa-optimize-anything.md) — GEPA 通用文本优化（与 Gene 不同的优化路径）
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gene-gep-evomap-qinghua-strategy-genes-arxiv-2604-15097-2026.md)

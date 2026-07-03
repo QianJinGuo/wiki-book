@@ -2,7 +2,7 @@
 
 ## Ch03.117 AutoCLI
 
-> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/autocli.md`
+> 📊 Level ⭐⭐ | 5.0KB | `entities/autocli.md`
 
 ## Overview
 AutoCLI 是一个用 Rust 实现的高速、内存安全的命令行网页信息获取工具，Stars 2.4k。专注于让 AI Agent 能够用一条命令从任意网站获取信息。
@@ -53,7 +53,7 @@ autocli-skill（591 stars）作为 AutoCLI 的 AI Agent 接口层，其设计目
 
 ## Related
 - [CLI-Anything](ch03/091-cli-anything.md) — 让所有软件 Agent 原生化
-- [AgentBrowser](ch03/044-agent.md) — AI 专用浏览器
+- [AgentBrowser](ch03/045-agent.md) — AI 专用浏览器
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md) — OpenCLI / CLI-Anything / AutoCLI / AgentBrowser 四项目对比
 
 ## 相关实体

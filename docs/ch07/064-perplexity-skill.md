@@ -2,7 +2,7 @@
 
 ## Ch07.064 Perplexity 首次公开了内部 Skill 设计指南
 
-> 📊 Level ⭐⭐⭐ | 3.3KB | `entities/perplexity-internal-skill-design-guide-xiaojianke.md`
+> 📊 Level ⭐⭐ | 3.3KB | `entities/perplexity-internal-skill-design-guide-xiaojianke.md`
 
 # Perplexity 首次公开了内部 Skill 设计指南
 

@@ -318,10 +318,10 @@ Dan Shipper 的"every layered thinking"模型将 AI-native 分为多个层次：
 
 ## 相关实体
 - [Running An Ai Native Engineering Org](ch01/045-running-an-ai-native-engineering-org.md)
-- [Agentic Engineering Leadership](ch03/044-agent.md)
+- [Agentic Engineering Leadership](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-dan-shipper-every-layered-thinking-walkwalk.md)
-- [how frontier teams are reinventing ai-native development](ch01/240-how-frontier-teams-are-reinventing-ai-native-development.md)
+- [how frontier teams are reinventing ai-native development](ch01/330-how-frontier-teams-are-reinventing-ai-native-development.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

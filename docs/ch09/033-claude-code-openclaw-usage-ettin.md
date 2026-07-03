@@ -174,11 +174,11 @@ scores = model.predict([("query", "document")])
 Ettin Reranker Family 的 **六档参数量 + SoTA 性能 + 长上下文 + Flash Attention 2** 组合，为 Agent 记忆系统的检索升级提供了实用选择。17M 到 1B 的灵活规格让不同场景（在线延迟敏感 vs 离线精度优先）都能找到合适平衡点。
 
 ## 相关实体
-- [Claude Code Openclaw Memory Vector Db Doubt](ch03/074-claude-code.md)
-- [Claude Code Openclaw Memory Comparison](ch03/074-claude-code.md)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](ch03/074-claude-code.md)
+- [Claude Code Openclaw Memory Vector Db Doubt](ch03/075-claude-code.md)
+- [Claude Code Openclaw Memory Comparison](ch03/075-claude-code.md)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](ch03/075-claude-code.md)
 - [Skill System Design Three Way Comparison](ch04/245-skill.md)
-- [Openclaw Agent Loop Design Patterns](ch03/044-agent.md)
+- [Openclaw Agent Loop Design Patterns](ch03/045-agent.md)
 
 → [原文存档：Ettin Reranker Family](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ettin-reranker-family.md)
 → [原文存档：Claude Code vs OpenClaw 记忆系统对比](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-openclaw-memory-comparison.md)

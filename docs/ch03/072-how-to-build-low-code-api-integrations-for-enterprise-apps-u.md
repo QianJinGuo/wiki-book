@@ -164,7 +164,7 @@ OIN + API Integration Actions 的组合创造了：
 - [Hs.Playerzero Ai Code Review](ch04/150-ai.md)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/134-code-simulation-for-enterprise-engineering-playerzero.md)
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch04/150-ai.md)
-- [Top 10 Design Gadgets Creative Professionals 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
+- [Top 10 Design Gadgets Creative Professionals 2026](ch01/206-0.md)
 
 ---
 

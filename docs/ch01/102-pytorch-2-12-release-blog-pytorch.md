@@ -12,7 +12,7 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
-- [PyTorch 2.12 Release Blog – PyTorch](ch01/184-pytorch-2-12-release-blog.md)
+- [PyTorch 2.12 Release Blog – PyTorch](ch01/273-pytorch-2-12-release-blog.md)
 - [PyTorch 2.12 Release Blog – PyTorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
 
 ## 深度分析

@@ -121,9 +121,9 @@ CPT 阶段**最多只跑一个 epoch**——重复处理有限数据会导致过
 ## 相关实体
 - [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](ch11/250-amazon-nova.md)
 - [Amazon Nova Lite Fine Tuning Cost Effective Vision Detection Model Tuning Case And Practice](ch11/250-amazon-nova.md)
-- [Evaluate Amazon Nova Sonic Voice Agent Scale No Mic](ch03/044-agent.md)
+- [Evaluate Amazon Nova Sonic Voice Agent Scale No Mic](ch03/045-agent.md)
 - [Amazon Nova Manufacturing Intelligence](ch11/250-amazon-nova.md)
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch03/044-agent.md)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md)
 

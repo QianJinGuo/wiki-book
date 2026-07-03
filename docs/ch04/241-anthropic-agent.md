@@ -111,7 +111,7 @@ Dreaming 和 Outcomes 可以独立使用，也可以组合使用。先用 Outcom
 ## 关联概念
 
 ## 相关实体
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch03/044-agent.md)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch03/045-agent.md)
 - [Anthropic 12 Mcp Production Patterns](ch01/707-anthropic.md)
 - [Anthropic 14 Skill Patterns Best Practices](ch04/245-skill.md)
 - [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/245-skill.md)

@@ -2,7 +2,7 @@
 
 ## Ch03.106 Fed Data Shows Cash Use Holding Steady
 
-> 📊 Level ⭐⭐⭐ | 5.7KB | `entities/fed-cash-use.md`
+> 📊 Level ⭐⭐ | 5.7KB | `entities/fed-cash-use.md`
 
 ## 核心要点
 - 美联储"消费者支付选择日记"(Diary of Consumer Payment Choice) 2025 年度调查

@@ -2,7 +2,7 @@
 
 ## Ch03.116 Icon Pack Websites Designers Should Bookmark
 
-> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/icon-pack-websites-designers-should-bookmark.md`
+> 📊 Level ⭐⭐ | 3.9KB | `entities/icon-pack-websites-designers-should-bookmark.md`
 
 ## Summary
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/icon-pack-websites-designers-should-bookmark.md)

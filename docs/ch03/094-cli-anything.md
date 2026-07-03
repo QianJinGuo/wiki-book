@@ -125,7 +125,7 @@ HKUDS 通过 CLI-Anything 建立了在 Agent Tools 领域的技术影响力，St
 
 ## Related
 - [AutoCLI](ch03/114-autocli.md) — 极速网页信息获取 CLI
-- [AgentBrowser](ch03/044-agent.md) — AI 专用浏览器
+- [AgentBrowser](ch03/045-agent.md) — AI 专用浏览器
 
 ## 相关实体
 

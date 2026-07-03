@@ -25,22 +25,7 @@ AI 最终要从屏幕走进物理世界。
 
 这是 AI 从数字世界走向物理世界的最后一公里。
 
-> ⚠️ **本章建设中**：当前仅 6 篇实体，覆盖机器人产业（Unitree IPO）、具身智能（NVIDIA Isaac Lab）、消费级机器人（BabyAlpha A3）。更多内容（Figure AI、Tesla Optimus、ROS2 实践、Sim-to-Real 迁移）正在整理中，预计扩充至 20+ 篇。欢迎贡献！
-
 ---
-
-## 学习路径
-
-| 子节 | 内容 | 篇数 |
-|------|------|------|
-| 18.1 机器人产业 | Unitree IPO、市场格局 | 3 |
-| 18.2 具身智能与仿真实训 | NVIDIA Isaac Lab、ASPIRE、Wall-OSS | 3 |
-
----
-
-### 18.1 机器人产业
-
-> 从这里开始：全球机器人产业格局。Unitree IPO 案例分析、人形机器人商业化进程。
 
 ## Ch18.001 Unitree's IPO Filing: The State of the Robotics Market
 
@@ -200,10 +185,6 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-### 18.2 具身智能与仿真实训
-
-> 进阶篇：具身智能核心技术——仿真训练、Sim-to-Real 迁移、机器人技能库。
-
 ## Ch18.003 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/powering-the-future-of-robotics-in-europe-deepmind-2026-06.md`
@@ -331,7 +312,7 @@ Physical AI is moving from research into production.
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/214-latest-open-artifacts-20-new-orgs-new-types-of-models.md)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch04/150-ai.md)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch03/044-agent.md)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch03/045-agent.md)
 - [Code As Agent Harness Survey 2026](ch09/046-code-as-agent-harness.md)
 
 ## 实践启示
@@ -395,9 +376,9 @@ Physical AI is moving from research into production.
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/044-agent.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/045-agent.md)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/210-openclaw.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/210-openclaw.md)

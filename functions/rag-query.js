@@ -94,12 +94,11 @@ async function semanticSearch(query, env) {
   try {
     const xunfeiKey = env.XUNFEI_API_KEY;
     if (!xunfeiKey) {
-      return [{ docId: -1, score: 0, title: "No Xunfei key", location: "" }];
-    }
-    if (xunfeiKey.length < 10) {
-      return [{ docId: -1, score: 0, title: "Xunfei key too short: " + xunfeiKey.length, location: "" }];
+      console.warn("XUNFEI_API_KEY not configured");
+      return [];
     }
 
+    // 1. Embed query via 讯飞 API
     const embedResp = await fetch(XUNFEI_URL, {
       method: "POST",
       headers: {
@@ -127,22 +126,13 @@ async function semanticSearch(query, env) {
     const queryVec = embedData.data[0].embedding;
 
     // 2. Search Vectorize index
-    const cfToken = env.CF_API_TOKEN || "";
     let matches = [];
     try {
-      if (cfToken) {
-        const r = await fetch("https://api.cloudflare.com/client/v4/accounts/aa78649679a46fa7ed55bdc17165ced3/vectorize/v2/indexes/wiki-book-embeddings-v2/query", {
-          method: "POST", headers: { "Authorization": "Bearer " + cfToken, "Content-Type": "application/json" },
-          body: JSON.stringify({ vector: queryVec, topK: 15, returnMetadata: true, returnValues: false }),
-        });
-        const d = await r.json();
-        if (d.success && d.result) matches = d.result.matches || [];
-      }
-      if (!matches.length) {
-        matches = await env.VECTORIZE.query(queryVec, { topK: 15, returnValues: false, returnMetadata: true });
-      }
-    } catch (e) {
-      return [{ docId: -1, score: 0, title: "Vec err: " + e.message.substring(0,80), location: "" }];
+      matches = await env.VECTORIZE.query(queryVec, {
+        topK: 15, returnValues: false, returnMetadata: true,
+      });
+    } catch(e) {
+      return [];
     }
 
     if (!matches || !matches.length) return [];

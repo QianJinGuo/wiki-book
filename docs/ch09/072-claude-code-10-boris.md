@@ -109,9 +109,9 @@ bq 命令行工具 + BigQuery Skill → 团队人人直接在 Claude Code 里跑
 
 ## 相关主题
 
-- [Claude Code Founder Harness 100 Lines](ch03/074-claude-code.md) — Boris 第一次公开的个人技巧
-- [Subagents 详解Claude Code 如何避免上下文污染](ch03/074-claude-code.md) — Subagents 详解
-- [Claude Code Governance Soft Rules](ch03/074-claude-code.md) — Claude Code 可控性设计
+- [Claude Code Founder Harness 100 Lines](ch03/075-claude-code.md) — Boris 第一次公开的个人技巧
+- [Subagents 详解Claude Code 如何避免上下文污染](ch03/075-claude-code.md) — Subagents 详解
+- [Claude Code Governance Soft Rules](ch03/075-claude-code.md) — Claude Code 可控性设计
 
 ---
 

@@ -53,22 +53,22 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 
 ## 相关实体
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/150-ai.md)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch03/044-agent.md)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch03/044-agent.md)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch03/045-agent.md)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch03/045-agent.md)
 - [OpenClaw多租户迁移: Phase 2&3部署](ch04/460-openclaw-multi-4.md)
 - [AgentCore Runtime部署Apache Doris MCP Server](ch04/150-ai.md)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch03/044-agent.md)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch03/045-agent.md)
 - [OpenClaw多租户迁移: 背景与架构概览](ch04/438-openclaw-multi-1.md)
-- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch03/044-agent.md)
+- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch03/045-agent.md)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/032-amazon-bedrock-api.md)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch04/399-openclaw-multi-3.md)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch03/044-agent.md)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch03/045-agent.md)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/240-bedrock.md)
 
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/044-agent.md)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/045-agent.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/084-aws-bedrock-serverless-async-inference-sqs-lambda.md)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/380-claude.md)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/048-build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)- [aws graviton5 m9g/m9gd 实例 ga 公告](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-graviton5-m9g-m9gd-launch-2026.md)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](https://github.com/QianJinGuo/wiki/blob/main/entities/ec2-nat-instance-deploy-practice-aws-china-2026.md)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/048-build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)- [aws graviton5 m9g/m9gd 实例 ga 公告](ch01/206-0.md)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](ch01/206-0.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

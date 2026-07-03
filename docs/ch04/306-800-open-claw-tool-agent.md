@@ -97,9 +97,9 @@ Open Claw 的设计哲学代表了一种日益流行的趋势——在 Agent 框
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/210-openclaw.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/210-openclaw.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
-- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
+- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 
 ---
 
