@@ -7,7 +7,7 @@ bucket_name = "ai-engineering-search"
 
 [[vectorize]]
 binding = "VECTORIZE"
-index_name = "wiki-book-embeddings"
+index_name = "wiki-book-embeddings-v2"
 
 [ai]
 binding = "AI"

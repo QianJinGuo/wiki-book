@@ -1,199 +1,126 @@
 #!/usr/bin/env python3
-"""
-Build Vectorize index for wiki-book using Xunfei Embedding API.
-Reads search_index.json, generates embeddings via Xunfei API (xop3qwen8bembedding),
-inserts into Vectorize index (1536 dim).
-
-Usage:
-  python3 scripts/build-vectorize-xunfei.py
-
-Requires:
-  - XUNFEI_API_KEY env var (format: "key:secret")
-  - ~/Library/Preferences/.wrangler/config/default.toml (CF OAuth token)
-"""
-
-import json
-import os
-import sys
-import time
-import requests
-import base64
+"""Build Vectorize index for wiki-book using Xunfei Embedding API."""
+import json, os, sys, time, requests, base64
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-SEARCH_INDEX_PATH = "site/search/search_index.json"
+SEARCH_INDEX_PATH = "/tmp/search_index.json"
 ACCOUNT_ID = "aa78649679a46fa7ed55bdc17165ced3"
 VECTORIZE_INDEX = "wiki-book-embeddings-v2"
 VECTORIZE_DIMS = 1024
-
 XUNFEI_URL = "https://maas-api.cn-huabei-1.xf-yun.com/v2/embeddings"
 XUNFEI_MODEL = "xop3qwen8bembedding"
-
-INSERT_BATCH_SIZE = 100  # Vectorize max batch insert
-API_BATCH_SIZE = 20       # Xunfei API docs per request (QPS 20, 并发 20)
-CONCURRENCY = 10          # 并发请求数（留余量）
-
+INSERT_BATCH_SIZE = 100
+API_BATCH_SIZE = 20
+CONCURRENCY = 10
 
 def get_cf_token():
-    """Get Cloudflare API token from wrangler config."""
-    config_path = os.path.expanduser(
-        "~/Library/Preferences/.wrangler/config/default.toml"
-    )
-    with open(config_path) as f:
+    p = os.path.expanduser("~/Library/Preferences/.wrangler/config/default.toml")
+    with open(p) as f:
         for line in f:
             if line.startswith("oauth_token"):
                 return line.split("=")[1].strip().strip('"')
     return None
 
-
 def get_xunfei_key():
-    """Get Xunfei API key from env or fallback."""
-    key = os.environ.get("XUNFEI_API_KEY")
-    if key:
-        return key
-    # Fallback: hardcoded (user-provided)
-    return "3a3d0cdf37f2399cf2ed0bdf870e2793:OGRkY2U5MDk1NjI0OGU3ODgwNWVhN2I0"
-
+    return os.environ.get("XUNFEI_API_KEY") or \
+        "3a3d0cdf37f2399cf2ed0bdf870e2793:OGRkY2U5MDk1NjI0OGU3ODgwNWVhN2I0"
 
 def get_embeddings(texts, api_key):
-    """Call Xunfei embedding API. Returns list of vectors."""
-    resp = requests.post(
-        XUNFEI_URL,
-        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
-        json={
-            "model": XUNFEI_MODEL,
-            "input": texts,
-            "dimensions": VECTORIZE_DIMS,
-        },
-        timeout=120,
-    )
-    if resp.status_code != 200:
-        raise Exception(f"Xunfei API error {resp.status_code}: {resp.text[:300]}")
-    data = resp.json()
-    if "data" not in data:
-        raise Exception(f"Xunfei API unexpected response: {json.dumps(data)[:200]}")
-    # Sort by index to ensure order
-    results = sorted(data["data"], key=lambda x: x["index"])
-    return [r["embedding"] for r in results]
-
+    r = requests.post(XUNFEI_URL,
+        headers={"Authorization": f"Bearer {api_key}"},
+        json={"model": XUNFEI_MODEL, "input": texts, "dimensions": VECTORIZE_DIMS},
+        timeout=120)
+    if r.status_code != 200:
+        raise Exception(f"Xunfei error {r.status_code}: {r.text[:200]}")
+    d = r.json()
+    if "data" not in d:
+        raise Exception(f"Xunfei unexpected: {json.dumps(d)[:200]}")
+    return [x["embedding"] for x in sorted(d["data"], key=lambda x: x["index"])]
 
 def insert_batch(vectors, cf_token):
-    """Insert vectors into Vectorize index."""
     url = f"https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/vectorize/v2/indexes/{VECTORIZE_INDEX}/insert"
-    headers = {"Authorization": f"Bearer {cf_token}", "Content-Type": "application/json"}
-    # API requires snake_case params
-    payload = {"vectors": vectors}
-    resp = requests.post(url, headers=headers, json=payload, timeout=120)
-    if resp.status_code != 200:
-        print(f"\n  Insert error {resp.status_code}: {resp.text[:200]}")
+    r = requests.post(url, headers={"Authorization": f"Bearer {cf_token}"},
+                       json={"vectors": vectors}, timeout=120)
+    if r.status_code != 200:
+        print(f"\n  Insert error {r.status_code}: {r.text[:200]}")
         return False
-    data = resp.json()
-    if not data.get("success"):
-        print(f"\n  Insert failed: {data.get('errors', [])}")
+    d = r.json()
+    if not d.get("success"):
+        print(f"\n  Insert failed: {d.get('errors', [])}")
         return False
     return True
 
-
 def main():
     cf_token = get_cf_token()
-    if not cf_token:
-        print("ERROR: Could not find Cloudflare API token")
-        sys.exit(1)
-
     xunfei_key = get_xunfei_key()
+    if not cf_token:
+        print("ERROR: No CF token"); sys.exit(1)
 
-    print(f"Loading {SEARCH_INDEX_PATH}...")
     with open(SEARCH_INDEX_PATH, encoding="utf-8") as f:
-        idx = json.load(f)
-    docs = idx.get("docs", [])
-    print(f"Total docs: {len(docs)}")
+        docs = json.load(f)["docs"]
 
-    # Filter: only docs with location
-    valid_docs = [d for d in docs if d.get("location")]
-    print(f"Docs with location: {len(valid_docs)}")
+    # Build valid_docs → original docs index mapping
+    orig_indices = [i for i, d in enumerate(docs) if d.get("location")]
+    valid_docs = [docs[i] for i in orig_indices]
+    print(f"Docs: {len(docs)} total, {len(valid_docs)} with location")
 
-    # Prepare texts: title + first 500 chars of text
-    texts = []
-    for d in valid_docs:
-        text = f"{d['title']}: {d['text'][:500]}"
-        texts.append(text)
-
-    print(f"\nGenerating embeddings via Xunfei {XUNFEI_MODEL} ({VECTORIZE_DIMS}d)...")
-    print(f"Config: batch={API_BATCH_SIZE} docs/req, concurrency={CONCURRENCY}, insert_batch={INSERT_BATCH_SIZE}")
+    texts = [f"{d['title']}: {d['text'][:500]}" for d in valid_docs]
     total = len(texts)
-    start_time = time.time()
-    vectors = []
-    embedded_count = 0
-    error_count = 0
-    futures = {}  # future → (batch_index, batch_docs)
+    print(f"Embedding {total} docs via {XUNFEI_MODEL} ({VECTORIZE_DIMS}d)...")
+    print(f"Config: batch={API_BATCH_SIZE}, concurrency={CONCURRENCY}")
 
-    # Prepare all batch indices
-    batch_indices = list(range(0, total, API_BATCH_SIZE))
+    start = time.time()
+    vectors, embedded, errors = [], 0, 0
+    futures = {}
+    batch_idx = list(range(0, total, API_BATCH_SIZE))
 
-    with ThreadPoolExecutor(max_workers=CONCURRENCY) as executor:
-        # Submit initial batch
-        for i in batch_indices[:CONCURRENCY]:
-            batch = texts[i : i + API_BATCH_SIZE]
-            batch_docs = valid_docs[i : i + API_BATCH_SIZE]
-            future = executor.submit(get_embeddings, batch, xunfei_key)
-            futures[future] = (i, batch_docs)
+    with ThreadPoolExecutor(max_workers=CONCURRENCY) as ex:
+        for i in batch_idx[:CONCURRENCY]:
+            f = ex.submit(get_embeddings, texts[i:i+API_BATCH_SIZE], xunfei_key)
+            futures[f] = i
 
-        next_batch_idx = CONCURRENCY
-        total_batches = len(batch_indices)
-
+        next_b = CONCURRENCY
         while futures:
-            for future in as_completed(futures.keys()):
-                batch_i, batch_docs = futures.pop(future)
-                elapsed = time.time() - start_time
-                rate = embedded_count / elapsed if elapsed > 0 else 0
-                eta = (total - embedded_count) / rate / 60 if rate > 0 else 0
-
+            for f in as_completed(futures.keys()):
+                bi = futures.pop(f)
                 try:
-                    embeddings = future.result()
+                    embs = f.result()
                 except Exception as e:
-                    print(f"\n  ERROR batch {batch_i}: {e}")
-                    error_count += 1
-                    continue
+                    print(f"\n  ERROR batch {bi}: {e}")
+                    errors += 1
+                    break
 
-                for j, emb in enumerate(embeddings):
+                for j, emb in enumerate(embs):
                     vectors.append({
-                        "id": str(batch_i + j),
+                        "id": str(orig_indices[bi + j]),  # original docs index
                         "values": emb,
                         "metadata": {
-                            "title": batch_docs[j]["title"][:100],
-                            "location": batch_docs[j]["location"][:100],
+                            "title": valid_docs[bi + j]["title"][:100],
+                            "location": valid_docs[bi + j]["location"][:100],
                         },
                     })
-                    embedded_count += 1
+                    embedded += 1
 
-                # Insert batch to Vectorize
                 if len(vectors) >= INSERT_BATCH_SIZE:
                     ok = insert_batch(vectors, cf_token)
                     if ok:
-                        print(f"\n  [{embedded_count}/{total}] Inserted {len(vectors)} vectors, {rate:.0f} docs/s, ETA {eta:.0f} min", end="")
+                        rate = embedded / (time.time() - start)
+                        eta = (total - embedded) / rate / 60
+                        print(f"\n  [{embedded}/{total}] inserted {len(vectors)}, {rate:.0f} docs/s, ETA {eta:.0f} min", end="")
                     vectors = []
 
-                # Submit next batch
-                if next_batch_idx < len(batch_indices):
-                    ni = batch_indices[next_batch_idx]
-                    next_batch = texts[ni : ni + API_BATCH_SIZE]
-                    next_docs = valid_docs[ni : ni + API_BATCH_SIZE]
-                    fut = executor.submit(get_embeddings, next_batch, xunfei_key)
-                    futures[fut] = (ni, next_docs)
-                    next_batch_idx += 1
+                if next_b < len(batch_idx):
+                    ni = batch_idx[next_b]
+                    f2 = ex.submit(get_embeddings, texts[ni:ni+API_BATCH_SIZE], xunfei_key)
+                    futures[f2] = ni
+                    next_b += 1
+                break
 
-                break  # Process one future at a time, then re-enter loop
-
-    # Insert remaining vectors
     if vectors:
-        ok = insert_batch(vectors, cf_token)
-        if ok:
-            print(f"\n  [{embedded_count}/{total}] Inserted final {len(vectors)} vectors")
+        insert_batch(vectors, cf_token)
+        print(f"\n  [{embedded}/{total}] inserted final {len(vectors)}")
 
-    elapsed_min = (time.time() - start_time) / 60
-    print(f"\n\nDone! {embedded_count}/{total} embedded in {elapsed_min:.1f} min")
-    print(f"Errors: {error_count}")
-    print(f"Vectorize index: {VECTORIZE_INDEX} ({VECTORIZE_DIMS}d)")
-
+    print(f"\nDone! {embedded}/{total} in {(time.time()-start)/60:.1f} min, errors={errors}")
 
 if __name__ == "__main__":
     main()
