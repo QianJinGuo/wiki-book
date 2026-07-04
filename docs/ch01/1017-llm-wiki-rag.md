@@ -2,7 +2,7 @@
 
 ## Ch01.1017 向量检索、知识图谱与 LLM Wiki：RAG 被嘲笑了三年，但企业还是离不开它
 
-> 📊 Level ⭐⭐ | 3.0KB | `entities/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它.md`
+> 📊 Level ⭐⭐ | 3.0KB | `entities/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它-2.md`
 
 # 向量检索、知识图谱与 LLM Wiki：RAG 被嘲笑了三年，但企业还是离不开它
 

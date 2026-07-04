@@ -13,11 +13,11 @@
 然而，仅仅是通过Skill自动更新来解决 Agent 的"自进化"，其实还是有点不够的，也有很多人反映真正在用 Hermes Agent 的时候，也没感觉到明显的变聪明，或者看到自动沉淀的比较好的 Skill。这是因为，自动沉淀 Skill 的机制很多时候还是取决于模型自己的判断和决策，这种判断和决策的触发时机和可控性相对就比较低了。因此，通过人给予Agent更多的"知识"来提升 Agent 的能力，甚至存放知识的这个"知识库"如果能"自动梳理"、"自动组织"、"自动更新"甚至"自动进化"，那就更好了，从而就能推动 Agent 的不断"自进化"。
 
 ## 相关实体
-- [Claude Code Harness Deep Dive Founder Park](ch03/075-claude-code.md)
-- [Claude Code Prompt Context Harness](ch03/075-claude-code.md)
-- [Hermes Agent Deep Dive Alibaba](ch03/045-agent.md)
-- [Claude Code Search Architecture Tencent 2026](ch03/075-claude-code.md)
-- [Openclaw Prompt Context Harness](ch11/210-openclaw.md)
+- [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
+- [Claude Code Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md)
+- [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
+- [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
+- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
 

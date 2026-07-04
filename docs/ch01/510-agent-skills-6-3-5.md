@@ -232,9 +232,9 @@ agent 截断/摘要旧消息时，应该豁免 skill 内容（skill 指令是持
 
 ## 相关实体
 
-- [Claude Code Skill 编写指南](ch04/245-skill.md) — Anthropic 官方 skill 编写指南
-- [Superpowers 深度解读](ch04/150-ai.md) — Rule/Gate/Hook 与 Iron Law 方法论
-- [Anthropic Skill 设计模式](ch04/245-skill.md) — 官方推荐的技巧和模式
+- [Claude Code Skill 编写指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skill-writing-guide.md) — Anthropic 官方 skill 编写指南
+- [Superpowers 深度解读](https://github.com/QianJinGuo/wiki/blob/main/entities/superpowers-deep-dive-kaiyuandakashuo.md) — Rule/Gate/Hook 与 Iron Law 方法论
+- [Anthropic Skill 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-design-patterns-anthropic.md) — 官方推荐的技巧和模式
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-skills-development-guide-shugex-2026.md)
 

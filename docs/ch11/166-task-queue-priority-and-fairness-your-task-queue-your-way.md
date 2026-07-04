@@ -29,11 +29,11 @@ Priority 与 Fairness 的组合使用（通过 `priority_key` + `fairness_key` +
 5. **发布 Priority 和 Fairness 配置前，务必在 staging 环境使用真实流量模式进行负载测试**。由于两者产生效果的前提是存在 Task 积压，在低负载环境下难以观察其实际表现。建议使用生产流量的回放数据或模拟流量在 staging 环境中验证调度行为是否符合预期，特别是要验证高优先级 Task 是否真的能够"插队"以及多租户 Fairness 是否真的实现了资源公平分配 。
 
 ## 相关实体
-- [Task Queue Priority And Fairness](ch04/150-ai.md)
-- [Task Queue Priority And Fairness Your Task Queue](ch04/150-ai.md)
-- [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](ch03/045-agent.md)
-- [Www.Bettercloud.Com The Saasops Mini Checklist Managing And Securing Your Enterprise Saas Applications](ch01/268-agi.md)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
+- [Task Queue Priority And Fairness](https://github.com/QianJinGuo/wiki/blob/main/entities/task-queue-priority-and-fairness.md)
+- [Task Queue Priority And Fairness Your Task Queue](https://github.com/QianJinGuo/wiki/blob/main/entities/task-queue-priority-and-fairness-your-task-queue.md)
+- [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](https://github.com/QianJinGuo/wiki/blob/main/entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
+- [Www.Bettercloud.Com The Saasops Mini Checklist Managing And Securing Your Enterprise Saas Applications](https://github.com/QianJinGuo/wiki/blob/main/entities/www.bettercloud.com-the-saasops-mini-checklist-managing-and-securing-your-enterprise-saas-applications.md)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](https://github.com/QianJinGuo/wiki/blob/main/entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
 
 ---
 

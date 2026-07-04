@@ -36,11 +36,11 @@
 ## 调研方法
 130 名后端、全栈和 AI 工程师及工程负责人，覆盖从独立开发者到 1000+ 工程师规模组织的各类公司。所有受访者均需在生产环境中运行异步工作流。调研覆盖编排、可观测性、evals、Agent 框架和扩展信心等主题。
 ## 相关实体
-- [Inngest Ai In Production The 2026 Benchmark Report](ch01/501-inngest-ai-in-production-the-2026-benchmark-report.md)
+- [Inngest Ai In Production The 2026 Benchmark Report](https://github.com/QianJinGuo/wiki/blob/main/entities/inngest-ai-in-production-the-2026-benchmark-report.md)
 - [Whats New With Vsphere 9 1](https://github.com/QianJinGuo/wiki/blob/main/entities/whats-new-with-vsphere-9-1.md)
-- [Inngest Ai And Backend Workflows Orchestrated At Any Scale](ch04/150-ai.md)
-- [Semis Memo Supply Chain Inheritance](ch01/483-semis-memo-supply-chain-inheritance.md)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](ch09/043-coding-agent.md)
+- [Inngest Ai And Backend Workflows Orchestrated At Any Scale](https://github.com/QianJinGuo/wiki/blob/main/entities/inngest-ai-and-backend-workflows-orchestrated-at-any-scale.md)
+- [Semis Memo Supply Chain Inheritance](https://github.com/QianJinGuo/wiki/blob/main/entities/semis-memo-supply-chain-inheritance.md)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/inngest-ai-in-production-the-2026-benchmark-report-2.md)
 

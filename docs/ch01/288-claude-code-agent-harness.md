@@ -288,14 +288,14 @@ const baseInputSchema = z.object({
 ## 相关实体
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 本文是 Harness Engineering 的具体源码实现验证
-- [Claude Code 深度解析](ch03/075-claude-code.md) — Claude Code 架构的另一次深度解读
-- [Claude Code Dynamic Workflows](ch03/075-claude-code.md) — AgentTool 子智能体 + Dynamic Workflow 范式
-- [Claude Code 架构](ch03/075-claude-code.md) — Claude Code 整体架构概览
-- [Agent Evolution 四阶段六维](ch03/045-agent.md) — 阶段三/阶段四对应 Claude Code 的生产实践
-- [OpenClaw 完整指南](ch11/210-openclaw.md) — 开源对应物（Worktree 隔离模式实现）
-- [Harness Engineering 一文](ch04/150-ai.md) — Harness 概念的系统阐释
-- [四种 Sub Agent 模式](ch03/045-agent.md) — AgentTool 子智能体的几种编排模式
-- [Agent YAML 评测](ch03/045-agent.md) — Harness 第五层评估与观测的工程实现
+- [Claude Code 深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md) — Claude Code 架构的另一次深度解读
+- [Claude Code Dynamic Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) — AgentTool 子智能体 + Dynamic Workflow 范式
+- [Claude Code 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture.md) — Claude Code 整体架构概览
+- [Agent Evolution 四阶段六维](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md) — 阶段三/阶段四对应 Claude Code 的生产实践
+- [OpenClaw 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md) — 开源对应物（Worktree 隔离模式实现）
+- [Harness Engineering 一文](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md) — Harness 概念的系统阐释
+- [四种 Sub Agent 模式](https://github.com/QianJinGuo/wiki/blob/main/entities/four-sub-agent-patterns.md) — AgentTool 子智能体的几种编排模式
+- [Agent YAML 评测](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation.md) — Harness 第五层评估与观测的工程实现
 
 ---
 

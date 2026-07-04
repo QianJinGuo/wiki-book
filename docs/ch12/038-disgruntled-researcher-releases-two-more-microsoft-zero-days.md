@@ -141,9 +141,9 @@ Published wed 13 May 2026 // 17:16 UTC
 [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.theregister.com%2Fsecurity%2F2026%2F05%2F13%2Fdisgruntled-researcher-
 ## 相关实体
 - [Disgruntled Researcher Microsoft Zero Days](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
-- [13 Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](ch12/028-disgruntled-researcher-releases-two-more-microsoft-zero-days.md)
+- [13 Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](https://github.com/QianJinGuo/wiki/blob/main/entities/13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md)
 - [Microsoft Zero Days Researcher Disgruntled](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled.md)
-- [Defense_At_Ai_Speed_Microsofts_New_Multi](ch04/150-ai.md)
+- [Defense_At_Ai_Speed_Microsofts_New_Multi](https://github.com/QianJinGuo/wiki/blob/main/entities/defense_at_ai_speed_microsofts_new_multi.md)
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md)
 
 ---

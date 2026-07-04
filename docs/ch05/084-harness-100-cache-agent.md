@@ -172,9 +172,9 @@ OpenClacky 16 个固定工具的设计背后是一个经过验证的经验值。
 
 ## 相关实体
 
-- [Harness Engineering 四根支柱与四要素架构](ch05/061-harness-engineering.md)
-- [AgentCore Harness](ch03/045-agent.md)
-- [Harness Production Agent 工程 deficit](ch03/045-agent.md)
+- [Harness Engineering 四根支柱与四要素架构](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-90-percent-pillars.md)
+- [AgentCore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md)
+- [Harness Production Agent 工程 deficit](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-production-agent-engineering-deficit.md)
 - [Harness 组件保质期——Model-Harness Fit 与 Build to Delete 原则](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md)
 
 ---

@@ -16,11 +16,11 @@
 → [C4 架构图](assets/c4/promptqueue-async-task-queue-opengorilla-integration-c4.html)
 
 ## 相关实体
-- [Schemaflow Openai Cookbook Staged Agentic Workflow](ch04/150-ai.md)
-- [Prompt Context Harness Three Evolutions](ch05/009-harness.md)
-- [From Prompt To Harness Claude Official](ch01/380-claude.md)
-- [Claude Code Large Codebase Harness Configuration](ch03/075-claude-code.md)
-- [Openai Skills Shell Compaction Agent Primitives](ch04/245-skill.md)
+- [Schemaflow Openai Cookbook Staged Agentic Workflow](https://github.com/QianJinGuo/wiki/blob/main/entities/schemaflow-openai-cookbook-staged-agentic-workflow.md)
+- [Prompt Context Harness Three Evolutions](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-context-harness-three-evolutions.md)
+- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md)
+- [Claude Code Large Codebase Harness Configuration](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-harness-configuration.md)
+- [Openai Skills Shell Compaction Agent Primitives](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-skills-shell-compaction-agent-primitives.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/promptqueue-opengorilla-project-analysis-ljguo.md)
 

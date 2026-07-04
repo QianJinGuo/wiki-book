@@ -49,7 +49,7 @@ Anthropic 开发的 Agent SDK 核心思想是：**不要让模型在单一对话
 - **突破谄媚效应**：调教一个严厉的批评者要比调教一个完美的创作者容易得多
 - **合同谈判机制（Contract Negotiation）**：生成器和评估器在磁盘上反复协商，确定什么才叫"功能完成"。评估器认为有漏洞就直接拒绝签署合同。只有双方达成书面一致后，构建才会真正开始
 
-这种模式与 [Anthropic 多智能体研究系统](ch04/462-anthropic-multi-agent-research-system.md) 中的验证者-执行者分离思路一脉相承。
+这种模式与 [Anthropic 多智能体研究系统](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-multi-agent-research-system.md) 中的验证者-执行者分离思路一脉相承。
 
 ### 审美量化
 
@@ -77,7 +77,7 @@ Anthropic 的方案本质上是在 Agent 系统中引入了三个工程原则：
 2. **外部状态持久化**：用文件系统替代上下文窗口存储中间状态，突破 Token 限制
 3. **对抗性验证**：通过制度化的批评机制防止自我欺骗，类似于传统软件工程中的代码审查
 
-这与 [Claude Code 大型代码库团队部署](ch03/075-claude-code.md) 中讨论的 Harness 工程实践高度互补。
+这与 [Claude Code 大型代码库团队部署](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-team-deployment-agent-harness.md) 中讨论的 Harness 工程实践高度互补。
 
 ## 实践启示
 
@@ -89,10 +89,10 @@ Anthropic 的方案本质上是在 Agent 系统中引入了三个工程原则：
 
 ## 相关实体
 
-- [Anthropic Multi Agent Research System](ch04/462-anthropic-multi-agent-research-system.md)
-- [Claude Code Large Codebase Team Deployment Agent Harness](ch03/075-claude-code.md)
-- [Hidden Technical Debt Agent Harness](ch03/045-agent.md)
-- [Long Running Agent Ralph Loop Harness Takeover](ch03/045-agent.md)
+- [Anthropic Multi Agent Research System](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-multi-agent-research-system.md)
+- [Claude Code Large Codebase Team Deployment Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-team-deployment-agent-harness.md)
+- [Hidden Technical Debt Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/hidden-technical-debt-agent-harness.md)
+- [Long Running Agent Ralph Loop Harness Takeover](https://github.com/QianJinGuo/wiki/blob/main/entities/long-running-agent-ralph-loop-harness-takeover.md)
 - [Harness Engineering 核心模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 

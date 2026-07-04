@@ -113,19 +113,19 @@ Mollick 给出两种可能：
 
 ### 核心洞察：Patron vs Wizard 是人类-AI 关系范式的结构性转变
 
-Mollick 提出的"Patron vs Wizard"框架揭示的不是接口层面的变化，而是人类-AI 工作关系的基础范式转移。Wizard 阶段（2025 年）本质上是"人在操控过程，AI 执行动作"——人类是施咒者，AI 是魔法效果。Patron 阶段（2026 年 Fable）则是"人在定义结果，AI 主导过程"——人类从 doing 层退出，只保留 steering 和 judging 层。这个转变与 [Claude Fable 5 And New Ai Safety Fables](ch01/677-claude-fable-5-and-new-ai-safety-fables.md) 中 Lambert 的安全分析形成互补：Lambert 关注 AI 能力增强后的风险边界，Mollick 关注人类角色的相应收缩。
+Mollick 提出的"Patron vs Wizard"框架揭示的不是接口层面的变化，而是人类-AI 工作关系的基础范式转移。Wizard 阶段（2025 年）本质上是"人在操控过程，AI 执行动作"——人类是施咒者，AI 是魔法效果。Patron 阶段（2026 年 Fable）则是"人在定义结果，AI 主导过程"——人类从 doing 层退出，只保留 steering 和 judging 层。这个转变与 [Claude Fable 5 And New Ai Safety Fables](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-fable-5-and-new-ai-safety-fables.md) 中 Lambert 的安全分析形成互补：Lambert 关注 AI 能力增强后的风险边界，Mollick 关注人类角色的相应收缩。
 
 ### 技术要点：Black Box 是能力增长的必然代价
 
-Mollick 对两种未来方向的判断（临时性 vs 结构性）指向了一个不舒服的真相：**模型越强，人类能参与的过程越少**。"The details of the AI's decision making are not shown to me, and the process would be too long to even be worth following"——这句话是 Fable 级别 agentic workflow 的具象化体验。[Anthropic Claude Fable 5 On Aws内置保护措施的 Mythos 级功能现已推出](ch01/265-claude-fable-5.md) 的 AWS 内置保护措施在此背景下更具现实意义：当 AI 的决策过程对人类不可见时，安全护栏是唯一的事后保障。
+Mollick 对两种未来方向的判断（临时性 vs 结构性）指向了一个不舒服的真相：**模型越强，人类能参与的过程越少**。"The details of the AI's decision making are not shown to me, and the process would be too long to even be worth following"——这句话是 Fable 级别 agentic workflow 的具象化体验。[Anthropic Claude Fable 5 On Aws内置保护措施的 Mythos 级功能现已推出](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-fable-5-on-aws内置保护措施的-mythos-级功能现已推出.md) 的 AWS 内置保护措施在此背景下更具现实意义：当 AI 的决策过程对人类不可见时，安全护栏是唯一的事后保障。
 
 ### 技术要点：9.5 小时 19 页设计文档揭示"长周期任务"的重新定义
 
-Concord 案例（9.5 小时，19 页设计文档，Calibration of Human/AI Judgment）突破了"AI 不擅长长周期任务"的传统认知。但关键在于 Mollick 的 prompting 策略：**先文档后执行**——先让 Fable 生成详细设计文档，再让 Fable 按文档执行。这意味着 Fable 不是在"摸索中执行"，而是在"已知框架内执行"。与 [Claude Fable 5 And New Ai Safety Fables](ch01/677-claude-fable-5-and-new-ai-safety-fables.md) 的 Lambert 视角对比：Lambert 关注 Fable 的安全护栏为什么会触发（"faintest hint of security problem"），Mollick 关注护栏触发频率带来的 friction（"happens way too often"）。
+Concord 案例（9.5 小时，19 页设计文档，Calibration of Human/AI Judgment）突破了"AI 不擅长长周期任务"的传统认知。但关键在于 Mollick 的 prompting 策略：**先文档后执行**——先让 Fable 生成详细设计文档，再让 Fable 按文档执行。这意味着 Fable 不是在"摸索中执行"，而是在"已知框架内执行"。与 [Claude Fable 5 And New Ai Safety Fables](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-fable-5-and-new-ai-safety-fables.md) 的 Lambert 视角对比：Lambert 关注 Fable 的安全护栏为什么会触发（"faintest hint of security problem"），Mollick 关注护栏触发频率带来的 friction（"happens way too often"）。
 
 ### 实践价值：多智能体委派是 Fable 成本控制的核心机制
 
-Fable = 2× Opus 成本，但 Mollick 指出"may lower the real price considerably"——因为 Fable 会将子任务委派给更便宜的 Sonnet。这个委派机制意味着 Fable 的实际成本取决于任务结构：需要大量检索/验证的长周期任务，真实成本可能低于单次 Opus 调用。与 [Claude Fable 5 And New Ai Safety Fables](ch01/677-claude-fable-5-and-new-ai-safety-fables.md) 的 token 消耗量化结合看，Fable 的成本优化策略不是减少用量，而是**正确的任务分层委派**。
+Fable = 2× Opus 成本，但 Mollick 指出"may lower the real price considerably"——因为 Fable 会将子任务委派给更便宜的 Sonnet。这个委派机制意味着 Fable 的实际成本取决于任务结构：需要大量检索/验证的长周期任务，真实成本可能低于单次 Opus 调用。与 [Claude Fable 5 And New Ai Safety Fables](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-fable-5-and-new-ai-safety-fables.md) 的 token 消耗量化结合看，Fable 的成本优化策略不是减少用量，而是**正确的任务分层委派**。
 
 ### 实践价值："Steering ≠ Doing" 是 AI 协作设计的新原则
 
@@ -142,8 +142,8 @@ Wizard 阶段 steering 和 doing 混在一起（人类施咒即执行），Patro
 ## 来源
 
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/oneusefulthing-mythos-fable-mollick-feels-like.md)
-- 相关 entity: [Claude Fable 5 And New Ai Safety Fables](ch01/677-claude-fable-5-and-new-ai-safety-fables.md)（Lambert/Interconnects 安全分析视角）
-- 相关 entity: [Anthropic Claude Fable 5 On Aws内置保护措施的 Mythos 级功能现已推出](ch01/265-claude-fable-5.md)（AWS 中文工程落地视角）
+- 相关 entity: [Claude Fable 5 And New Ai Safety Fables](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-fable-5-and-new-ai-safety-fables.md)（Lambert/Interconnects 安全分析视角）
+- 相关 entity: [Anthropic Claude Fable 5 On Aws内置保护措施的 Mythos 级功能现已推出](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-fable-5-on-aws内置保护措施的-mythos-级功能现已推出.md)（AWS 中文工程落地视角）
 
 ---
 

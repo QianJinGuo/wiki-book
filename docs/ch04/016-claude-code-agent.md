@@ -36,11 +36,11 @@ Claude Code 的 Hook 系统用 AI 来审查 AI ^。Prompt Hook 调用 Claude Son
 用 AI 审查 AI 时，区分单步判断（Prompt Hook）和多步验证（Agent Hook）的适用场景 ^。单步风险判断用小模型（如 Sonnet）快速判断；复杂流程验证（如安全检查、权限审查）用更小的专注模型跑完整 Agent 流程 ^。Hook 适合语义理解类约束，但安全底线、权限控制、审计记录应下沉到确定性更强的机制 ^。
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](ch03/075-claude-code.md)
-- [Claude Code Agent Teams Task Decomposition Ruofei](ch03/075-claude-code.md)
-- [Claude Code Source Architecture](ch03/075-claude-code.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/075-claude-code.md)
-- [Claude Code Tool Design Evolution Anthropic](ch03/075-claude-code.md)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
+- [Claude Code Agent Teams Task Decomposition Ruofei](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-teams-task-decomposition-ruofei.md)
+- [Claude Code Source Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-source-architecture.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
+- [Claude Code Tool Design Evolution Anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-tool-design-evolution-anthropic.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-agent-engineering.md)

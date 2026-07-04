@@ -148,11 +148,11 @@ AI 通过 curl 直接读取 npm cdn 资源（不依赖具体编码工具）
 ## Related
 
 ## 相关实体
-- [Tmall Ai Coding Practice Team Knowledge Base](ch09/068-tmall-ai-coding-practice-team-knowledge-base.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/075-claude-code.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
-- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](ch04/150-ai.md)
-- [Boris Cherny Interview 2026 Ide To Agent Console](ch03/045-agent.md)
+- [Tmall Ai Coding Practice Team Knowledge Base](https://github.com/QianJinGuo/wiki/blob/main/entities/tmall-ai-coding-practice-team-knowledge-base.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
+- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](https://github.com/QianJinGuo/wiki/blob/main/entities/柚漫剧-ai全流程提效拆解-从单点提效到工程融合.md)
+- [Boris Cherny Interview 2026 Ide To Agent Console](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-interview-2026-ide-to-agent-console.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tmall-ai-coding-practice-team-knowledge-base-npm.md)
 

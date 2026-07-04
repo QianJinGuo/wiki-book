@@ -88,14 +88,14 @@
 
 ## 资源链接
 ## 相关实体
-- [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](ch04/150-ai.md)
-- [Aliyun Agentrun](ch03/045-agent.md)
-- [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](ch03/045-agent.md)
-- [Skill Development Guide Aliyun 2026](ch04/245-skill.md)
-- [Strands Agents Cloud Cost Optimizer](ch03/045-agent.md)
+- [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](https://github.com/QianJinGuo/wiki/blob/main/entities/深势科技携手阿里云-agentrun加速科研-ai-agent-全速运行.md)
+- [Aliyun Agentrun](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-agentrun.md)
+- [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/agentrun-cli-v010-正式开源一行命令运行您的托管-agent.md)
+- [Skill Development Guide Aliyun 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-development-guide-aliyun-2026.md)
+- [Strands Agents Cloud Cost Optimizer](https://github.com/QianJinGuo/wiki/blob/main/entities/strands-agents-cloud-cost-optimizer.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
-- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](ch03/045-agent.md)
+- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](https://github.com/QianJinGuo/wiki/blob/main/entities/agentrun-multi-agent-a2a-alibaba-cloud.md)
 
 ---
 

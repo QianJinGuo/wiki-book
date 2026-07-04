@@ -125,9 +125,9 @@ Gateway 层 Guardrails 在每个 agent-to-tool 交互处实时评估，提供 ac
 
 ## 相关实体
 
-- [Agentic Overlays](ch03/045-agent.md) — 另一种 agent 化路径：REST 服务的 A2A overlay
+- [Agentic Overlays](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-overlays-rest-to-a2a-enterprise.md) — 另一种 agent 化路径：REST 服务的 A2A overlay
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 约束与验证框架
-- [Agent Harnesses Are Dead](ch04/542-agent-harnesses-are-dead-long-live-agent-harnesses.md) — Agent Harness 架构演进
+- [Agent Harnesses Are Dead](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harnesses-are-dead-long-live-agent-harnesses.md) — Agent Harness 架构演进
 
 ---
 

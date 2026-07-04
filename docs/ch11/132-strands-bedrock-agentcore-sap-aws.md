@@ -29,11 +29,11 @@
 **会话上下文管理（Memory）是多轮交互场景的核心基础设施**。本文提到 Bedrock AgentCore Memory 负责记录对话上下文，支持多轮连续交互。对于企业采购场景，多轮交互的典型模式是：用户先询问某供应商的历史报价（第一轮）→ Agent 返回数据 → 用户进一步要求对比多个供应商（第二轮）→ Agent 跨请求保持上下文。这种跨请求的上下文保持能力，使得用户无需在单一请求中提供所有背景信息，大幅提升了交互的自然性和效率。在构建类似的企业 Agent 系统时，应将 Memory 的设计视为核心架构决策，而非事后补充功能。
 
 ## 相关实体
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](ch03/045-agent.md)
-- [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/118-aws-bedrock-agentcore-quality-optimization-flywheel.md)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/045-agent.md)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/150-ai.md)
-- [Aws Bedrock Multi Agent Collaboration Guide](ch03/045-agent.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
+- [Aws Bedrock Agentcore Quality Optimization Flywheel](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-quality-optimization-flywheel.md)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
+- [Aws Bedrock Multi Agent Collaboration Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-multi-agent-collaboration-guide.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sap-intelligent-procurement-assistant-solution.md)
 - [淘宝动效解决方案分享](https://github.com/QianJinGuo/wiki/blob/main/entities/淘宝动效解决方案分享.md)

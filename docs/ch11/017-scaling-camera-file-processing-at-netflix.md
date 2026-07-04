@@ -18,7 +18,7 @@ type: entity
 
 ## 相关实体
 - [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-real-time-service-topology.md)
-- [Netflix Nebula Archrules](ch11/088-netflix-nebula-archrules-java-archunit.md)
+- [Netflix Nebula Archrules](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-nebula-archrules.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/scaling-camera-file-processing-at-netflix.md)
 

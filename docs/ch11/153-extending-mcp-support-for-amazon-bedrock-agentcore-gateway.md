@@ -87,12 +87,12 @@ Elicitation 需要同时启用流式传输和会话管理。Gateway 尊重能力
 
 ## 相关实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
-- [Bedrock Agentcore Secrets Manager Identity](ch03/045-agent.md)
-- [Shared Infrastructure Isolated Tenants Pool Model Multi Tenancy With Amazon Bedrock Agentcore](ch03/045-agent.md)
-- [Secure Ai Agents With Policy And Lambda Interceptors In Amaz](ch11/243-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
-- [New In Amazon Bedrock Agentcore Build Agents With Broader Kn](ch03/045-agent.md)
-- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](ch11/014-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
+- [Bedrock Agentcore Secrets Manager Identity](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-agentcore-secrets-manager-identity.md)
+- [Shared Infrastructure Isolated Tenants Pool Model Multi Tenancy With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/shared-infrastructure-isolated-tenants-pool-model-multi-tenancy-with-amazon-bedrock-agentcore.md)
+- [Secure Ai Agents With Policy And Lambda Interceptors In Amaz](https://github.com/QianJinGuo/wiki/blob/main/entities/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
+- [New In Amazon Bedrock Agentcore Build Agents With Broader Kn](https://github.com/QianJinGuo/wiki/blob/main/entities/new-in-amazon-bedrock-agentcore-build-agents-with-broader-kn.md)
+- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](https://github.com/QianJinGuo/wiki/blob/main/entities/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
 
 ---
 

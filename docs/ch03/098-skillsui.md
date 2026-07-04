@@ -30,7 +30,7 @@ SkillsUI 把企业 Agent 拆成三层，每层职责单一、互相解耦：
 - **意图识别** — 把用户自然语言映射到一个或多个 Skill
 - **任务规划** — 决定 Skill 执行顺序，处理依赖关系
 - **多轮 slot filling** — 缺参数主动问询，不盲目猜测
-业务规则、异常处理、人机协同节点全部下沉到 Skill 层。Agent 调度层不感知 Skill 实现细节，只感知输入输出 schema。和 LangGraph 的"显式状态机 + 节点化"思路同向。 See also [Agent Skills Teams Architecture Evolution Selection Guide](ch04/245-skill.md)
+业务规则、异常处理、人机协同节点全部下沉到 Skill 层。Agent 调度层不感知 Skill 实现细节，只感知输入输出 schema。和 LangGraph 的"显式状态机 + 节点化"思路同向。 See also [Agent Skills Teams Architecture Evolution Selection Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skills-teams-architecture-evolution-selection-guide.md)
 
 ### 2. Skill 层：原子能力的"可执行规范"
 企业级 Skill 包含五样东西：

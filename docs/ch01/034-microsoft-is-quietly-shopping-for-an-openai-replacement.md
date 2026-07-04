@@ -45,7 +45,7 @@ Microsoft 在 OpenAI 身上押注 130 亿美元后寻求替代方案，这一动
 
 ## 相关实体
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-is-quietly-shopping-for-an-openai-replac.md)
-- [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](ch04/150-ai.md)- [anthropic](ch04/150-ai.md)- [inference cost at scale with napkin math](ch01/206-0.md)- [olmo-eval: an evaluation workbench for the model development](ch01/623-olmo-eval-an-evaluation-workbench-for-the-model-development.md)- [why use app-level auth when every database has auth? (splunk](ch01/162-why-use-app-level-auth-when-every-database-has-auth-splunk.md)
+- [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](https://github.com/QianJinGuo/wiki/blob/main/entities/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md)- [anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropics-zero-trust-for-ai-agents-sets-the-right-test-the.md)- [inference cost at scale with napkin math](https://github.com/QianJinGuo/wiki/blob/main/entities/napkin-inference-cost-injuly-2026.md)- [olmo-eval: an evaluation workbench for the model development](https://github.com/QianJinGuo/wiki/blob/main/entities/olmo-eval.md)- [why use app-level auth when every database has auth? (splunk](https://github.com/QianJinGuo/wiki/blob/main/entities/why-use-app-level-auth-when-every-database-has-auth-splunk-e.md)
 
 ---
 

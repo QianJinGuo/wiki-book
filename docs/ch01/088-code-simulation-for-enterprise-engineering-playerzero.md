@@ -30,11 +30,11 @@ Sim-1的模拟方法值得关注：它结合代码嵌入（code embeddings）、
 **选型建议**
 从文章描述来看，PlayerZero的核心差异化在于：（1）跨仓库/跨服务的全局系统建模能力；（2）不需要staging环境的预测能力；（3）75万次生产模拟积累的模型基础。对于拥有多个仓库、复杂微服务架构、且工程团队规模较大的企业，这种能力具有较高的实用价值。但对于单体应用或小规模团队，传统代码审查结合完善的测试套件可能已经足够 。
 ## 相关实体
-- [Code Simulation For Enterprise Engineering Playerz](ch01/134-code-simulation-for-enterprise-engineering-playerzero.md)
-- [Engineering Roles Shift From Developing Code To Ma](ch05/061-engineering-roles-shift-from-developing-code-to-managing-ai.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/888-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
-- [Low Code Api Integration](ch03/071-how-to-build-low-code-api-integrations-for-enterprise-apps-u.md)
-- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](ch04/150-ai.md)
+- [Code Simulation For Enterprise Engineering Playerz](https://github.com/QianJinGuo/wiki/blob/main/entities/code-simulation-for-enterprise-engineering-playerz.md)
+- [Engineering Roles Shift From Developing Code To Ma](https://github.com/QianJinGuo/wiki/blob/main/entities/engineering-roles-shift-from-developing-code-to-ma.md)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
+- [Low Code Api Integration](https://github.com/QianJinGuo/wiki/blob/main/entities/low-code-api-integration.md)
+- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](https://github.com/QianJinGuo/wiki/blob/main/entities/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hs.playerzero-ai-code-review.md)
 

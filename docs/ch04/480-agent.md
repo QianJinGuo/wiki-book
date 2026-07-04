@@ -1,55 +1,64 @@
-# 智能问数Agent--数据智能体-火山引擎
+# 想让 Agent 在你睡觉时继续干活？先给它排好夜班
 
-## Ch04.480 智能问数Agent--数据智能体-火山引擎
+## Ch04.480 想让 Agent 在你睡觉时继续干活？先给它排好夜班
 
-> 📊 Level ⭐⭐ | 3.6KB | `entities/volcengine-data-agent-intelligent-query-agent.md`
+> 📊 Level ⭐⭐ | 5.0KB | `entities/agent-nightshift-cron-task-scheduling.md`
 
-# 智能问数Agent--数据智能体-火山引擎
+# 想让 Agent 在你睡觉时继续干活？先给它排好夜班
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/volcengine-data-agent-intelligent-query-agent.md)
+本文将传统 `crontab` 和定时任务的概念扩展到 AI Agent 领域，探讨「Agent 夜班」——如何让 Agent 在用户离线时继续执行任务。
+
+## 核心问题
+
+Agent 执行长任务（代码审查、批量数据处理、慢查询优化等）时，单次对话窗口和用户在线时间往往不够。需要让 Agent 能够：
+
+1. **自主排班**：识别需要长时间运行的任务，自动安排到夜间执行
+2. **结果汇总**：任务完成后整理结果，用户上班时即可查看
+3. **失败重试**：夜间任务失败时自动重试或通知
+
+## 工程架构
+
+- 任务队列 + Agent Worker 模式：将长任务拆解为可独立执行的子任务，由 Agent Worker 在后台逐个完成
+- 基于系统状态感知：Agent 需要感知系统负载、资源使用率，选择空闲时段执行
+- 定时触发器：类似 `crontab` 表达式，支持自定义排班（每 12 小时、凌晨执行等）
+
+## 实践案例
+
+文章描述了 Agent Browser 长时间运行后产生僵尸 Chrome 进程（6 个渲染进程吃满 768% CPU），以及如何通过定时任务 Agent 自动清理的案例。
 
 ## 深度分析
 
-智能问数Agent--数据智能体-火山引擎 涉及agent领域的核心技术议题。
-### 核心观点
-1. # 智能问数Agent--数据智能体-火山引擎
-**智能分析Agent是一款基于AI深度思考与大数据分析的专家顾问**。
-2. 分析Agent包含智能问数Agent和深度研究Agent，**智能问数Agent**作为一款灵活配置的智能问数工具，可以让用户以简单对话的方式更准确地查询业务数据，支持多数据集查询、语义模型解析、业务知识调用、问题推荐与收藏、个性化推送、多轮交互式问数，以及归因分析等，能够全方位满足用户多样化的数据查询需求。
-3. ## 功能概述
-智能分析 Agent 的智能问数 Agent 功能可通过自然语言对话精准解析用户意图，实现多数据集协同查询与深度归因分析，辅以个性化推荐、多轮交互等功能，为用户提供高效、精准、统一的数据查询服务。
-4. ## 具体功能
-- **推荐问题**：提前将团队大多数用户关心的问题内置到智能体，其他用户点击问题即可快速查询。
-5. - **收藏问题**：将自己常问的问题收藏起来，下次直接点击即可快速查询。
+### 从 Prompt 到 Loop：Agent 工作单元的重定义
 
-### 内容结构
-- 智能问数Agent--数据智能体-火山引擎
-- 功能概述
-- 具体功能
-- 应用场景
-- 支持的数据集类型
-- 查询结果分析
-- 常见图表分析
-- 数据解读
+文章中提出的核心转变是 Agent 的工作单元正在从「单次 prompt 调用」变成「可排班、可交接、可检查的运行过程」。这个变化的意义不在于「让模型多跑几小时」，而在于**时间维度、成本维度和交接维度**的加入。当 `/goal` 解决「做到什么才算完」、`/loop` 解决「什么时候回来再看一次」、Routines 解决「任务能不能独立跑」时，Agent 从对话工具变成了可生产部署的工作进程。
 
-### 技术要点
+### 无人值守任务的四个运行时能力
 
-- **agent架构**: 本文在agent方向提出的设计理念与实现路径
-- **工程挑战**: 实际落地中面临的关键问题与应对策略
-- **data趋势**: 相关技术演进方向与新兴范式
-### 关联实体
+文章提炼了 Agent 在无人值守模式下必须具备的四项基础能力：**保存现场**（知道上次做到哪里）、**调用工具**（不只生成文本还执行命令）、**检查结果**（拿出可验证的测试、截图、diff）、**停在边界**（遇到不可逆动作或连续失败时停止）。这四条既是对 Agent 能力的约束，也是工程保障——它们确保无人值守不会变成无人管控。
 
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
+### GOAL/STATE/EVIDENCE/PERMISSIONS 四件套
+
+文章提出了一套极简的工程实践：四份 Markdown 文件分别承载完成条件、交班状态、验收证据和权限边界。这种设计不是为了让 Agent「更聪明」，而是为了把隐含信息摊开——让 Agent 不必猜测哪些能做、哪些不能做，让人不必第二天从头翻聊天记录。传统定时脚本只负责「到点执行」，而 Agent 引入的正是这套**可交接的状态管理**。
+
+### 低峰窗口下的工程经济学
+
+模型 API 的峰谷定价（如 Qwen3.7-Max 在 off-peak 时段 Credits 倍率从 0.5x 降至 0.1x）使得时间排班从「省钱技巧」升级为系统架构考量。但文章指出，真正重要的不是便宜——而是**低成本打开了低风险实验空间**，让团队愿意让 Agent 在夜间处理那些「白天舍不得用昂贵 API 跑」的任务。
 
 ## 实践启示
-1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
-2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
-3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现
-4. **风险管控**: 引入新技术需评估对现有系统稳定性的影响，做好降级预案
+
+1. **无人值守任务必须先有验收标准** — 没有明确完成条件的任务不适合交给 Agent 夜间执行；强目标应包含可测量的结束状态和约束条件。
+2. **四文件模式可零成本实施** — GOAL → STATE → EVIDENCE → PERMISSIONS 从 Markdown 文件开始，不需要复杂系统，却能从根本上改善 Agent 任务的可交接性。
+3. **渐进的自动化路径更可靠** — 白天手动跑 → `/goal` 固化验收 → `/loop` 短周期看护 → 连续稳定后沉淀为 Routine，避免一步到位的全自动化陷阱。
+4. **让 Agent 运行时有「刹车机制」** — 权限分层（可自动做/可生成待审/需人工确认/禁止）和停机条件（连续失败 N 次即停止）是无人值守的安全底线。
+5. **白天的工作重心转向「任务拆解」** — 团队下班前准备 GOAL/STATE 文件的过程，本身就是一种知识显性化实践，生产力价值远超晚上跑的几个任务。
+
+## 关键洞见
+
+- Agent 的定时执行能力是「从工具到系统」的关键跨越
+- 类似 QoderWork 的工具提供可视化定时任务配置，降低了门槛
+- Agent 需要具备「持续性」而非「会话式」——这是 Agent 工程化的核心区别
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-nightshift-cron-task-scheduling.md)
 
 ---
 

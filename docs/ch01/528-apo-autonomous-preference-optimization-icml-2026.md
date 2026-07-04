@@ -94,10 +94,10 @@ APO 将这个问题重新形式化为**约束满足问题（Constraint Satisfact
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [小米AI — ICML 2026 论文矩阵（11篇）](ch04/150-ai.md)
-- [OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](ch05/009-harness.md)
-- [CogAlpha — LLM 驱动的认知式 Alpha 挖掘（ACL 2026）](ch01/206-0.md)
-- [Apo Icml2026 Multi Teacher Drift Uts 20260513](ch01/206-0.md)
+- [小米AI — ICML 2026 论文矩阵（11篇）](https://github.com/QianJinGuo/wiki/blob/main/entities/xiaomi-ai-icml-2026-11papers.md)
+- [OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/openclacky-harness-prompt-cache.md)
+- [CogAlpha — LLM 驱动的认知式 Alpha 挖掘（ACL 2026）](https://github.com/QianJinGuo/wiki/blob/main/entities/cogalpha-acl2026-alpha-mining.md)
+- [Apo Icml2026 Multi Teacher Drift Uts 20260513](https://github.com/QianJinGuo/wiki/blob/main/entities/apo-icml2026-multi-teacher-drift-uts-20260513.md)
 
 ---
 

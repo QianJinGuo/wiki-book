@@ -253,11 +253,11 @@ PrefixSpan/CloSpan只能挖掘**行为模式**，无法挖掘**语义意图**。
 **技能的版本治理**：随着技能数量增长，版本管理、兼容性测试、废弃策略将成为运维的主要挑战。建议从第一个技能开始就建立版本号规范，并记录每个版本的breaking change。
 **自动挖掘的成熟度**：当前挖掘管道的局限（只能捕获行为模式，无法捕获语义意图）可能在未来通过LLM辅助的语义分析得到改善。但即便如此，专家审核这一环难以完全消除——技能的最终质量责任仍在人类专家手中。
 ## 相关实体
-- [Ai Skill Skill Creator 源码拆解](ch04/245-skill.md)
-- [Hermes Skill System Winty](ch04/245-skill.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch04/150-ai.md)
-- [Agent Skill Writing Guide](ch04/245-skill.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/245-skill.md)
+- [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
+- [Hermes Skill System Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system-winty.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md)
+- [Agent Skill Writing Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-formal-theory-survey-10papers.md)
 

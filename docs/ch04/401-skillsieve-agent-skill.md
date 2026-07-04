@@ -1,0 +1,47 @@
+# SkillSieve：Agent Skill 安全检测三层框架
+
+## Ch04.401 SkillSieve：Agent Skill 安全检测三层框架
+
+> 📊 Level ⭐⭐ | 6.7KB | `entities/skillsieve-agent-skill-security.md`
+
+# SkillSieve：Agent Skill 安全检测三层框架
+**论文：** SkillSieve: Agent Skill Safety Monitoring — A Layered Framework
+**arXiv：** 2604.06550
+**来源：** 模安局（微信公众号），2026-04-27 20:08 北京
+在 Agent 生态里，Skill 正在变成一个很现实的新攻击面。一个 Skill 往往既包含 SKILL.md 里的自然语言说明，也可能带着脚本、依赖和权限声明。它看起来像一个"小插件"，但实际拿到的是 Agent 的执行能力、环境变量访问能力、文件系统访问能力，甚至网络请求能力。
+
+## 相关实体
+- [Skillclaw Collective Intelligence](https://github.com/QianJinGuo/wiki/blob/main/entities/skillclaw-collective-intelligence.md)
+- [Hermes Skill System Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system-winty.md)
+- [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
+- [Agentic Ai System Architecture Harness Skill Mcp](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
+- [Agent Skill Writing Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md)
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillsieve-agent-skill-security.md)
+
+## 深度分析
+
+Skill 的"双模态"风险结构是 SkillSieve 论文最核心的洞察。风险同时存在于代码层（窃取密钥、数据外传、下载执行）和自然语言说明层（提示注入、权限诱导、社会工程），两者往往相互配合形成"嘴上说 A、实际上做 B"的伪装攻击。这意味着传统的代码扫描工具或纯 LLM 整体判断都无法独立解决 Skill 安全问题——前者无法理解自然语言意图，后者容易被精心包装的恶意 Skill 绕过。SkillSieve 提出的核心命题是：**Skill 安全 = 说明文档、权限声明、实现逻辑三者是否一致**，而非是否包含特定恶意关键词。
+
+三层分诊流水线体现了"成本敏感型架构"的设计哲学。第一层静态分诊以不到 40ms/Skill 的延迟和零 API 成本过滤约 86% 的总量，使得后续的高成本语义分析只需处理真正可疑的 14% 样本。四种信号（正则规则、AST 结构特征、元数据信誉信号、表面统计特征）的组合使用，规避了单一方法论各自的局限性：正则无法理解语义，AST 无法处理解释型脚本，统计特征无法捕捉深层意图——四者互补形成高召回覆盖。
+
+第二层 SSD（结构化语义分解）的核心创新在于将"这个 Skill 恶不恶意"这个单一问题拆解为四个维度（意图一致性 0.35、权限正当性 0.25、隐蔽行为检测 0.25、跨文件一致性 0.15），迫使模型分别从描述-实现一致性、权限-用途匹配性、行为设计隐蔽性、跨文件逻辑一致性角度审视同一 Skill。实验数据证明这一策略的有效性：单次 LLM 提问 F1 0.746（精度 1.000，召回 0.596），SSD 后 F1 提升至 0.800（召回 0.854）。典型恶意 Skill 不是"明显地坏"，而是"局部都像正常，拼起来不正常"——SSD 正是抓住了这一特征。
+
+XGBoost 分类器泛化失败的分析揭示了安全检测领域数据偏置的深层问题。训练集中恶意样本过于集中在少数已知攻击者风格上，导致模型实际学习的是"作者特征"而非"恶意行为本身"。这一发现对所有基于 ML 的安全检测系统都具有警示意义：当攻击者群体相对小众且风格同质时，ML 模型容易形成对特定攻击者画像的过拟合，而非学习到可泛化的恶意行为模式。启发式打分方法在此场景下反而具有更好的泛化能力。
+
+多模型陪审团（Kimi 2.5、MiniMax M2.7、DeepSeek-V3）的设计引入了安全系统中少见的"不确定性显式化"理念。当三个模型判断不一致时，触发结构化辩论机制，各方参考对方证据重新判断；仍无多数则升级人工复核。这一设计的核心价值不在于"哪个模型更准"，而在于承认系统存在不确定性边界，并通过制度化流程将高不确定性样本引导至人工处理。争议升级机制本身也是安全能力的一部分。
+
+## 实践启示
+
+**Skill 安全检测的重心应从"关键词匹配"转向"一致性分析"。** 检测框架应同时分析 SKILL.md 描述、YAML 权限声明、实际代码行为三个维度，重点捕捉"描述承诺的功能与代码实际执行之间的不一致"。这种一致性分析方法比单纯扫描恶意代码或敏感关键词更能发现伪装巧妙的恶意 Skill。
+
+**分层分诊是处理大规模 Skill 生态的必由之路。** 不应将所有 Skill 都送入 LLM 评估，而应先用低成本静态分析（正则、AST、元数据信号、统计特征）过滤正常样本，将有限的深度语义分析资源集中于可疑子集。第一层的目标是"高召回低漏判"而非"精准"，漏进后续层的可疑样本越多，后续层的召回压力越大。
+
+**将检测问题拆解为多维度子任务，比单纯提升模型能力更有效。** SSD 框架证明，将"这个 Skill 恶不恶意"拆解为意图一致性、权限正当性、隐蔽行为、跨文件一致性四个维度后，同一模型的表现（F1 0.746 → 0.800）可以超越通过换用更强模型或增加提问次数的策略。在设计检测流程时，应优先思考"要问对哪些问题"，而非"要用多强的模型"。
+
+**ML 模型在安全检测中的泛化风险需要主动识别和规避。** 当训练数据中攻击样本风格同质化时，ML 模型会形成"作者画像"而非"恶意行为模式"的过拟合。在构建安全检测系统时，应对 ML 分类器的训练数据分布进行显式分析，对比启发式打分方法的泛化表现，必要时采用混合策略——用启发式方法保底召回，用 ML 方法提升精度。
+
+**高风险系统必须保留人工升级通道，不确定性显式化是安全设计的基本原则。** 多模型陪审团中"仍无多数 → 人工复核"的升级机制，体现了对系统能力边界的诚实认知。Agent 安全系统应避免追求"全自动安全感"，而应在架构层面为高风险判断预留人工介入路径，并通过制度化流程确保不确定性样本不会被直接放行。
+
+---
+

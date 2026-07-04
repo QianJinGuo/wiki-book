@@ -117,11 +117,11 @@ Anthropic 采用「官方维护 30+ 内部插件 + 社区贡献 10+ 外部插件
 - GitHub：https://github.com/anthropics/claude-plugins-official
 
 ## 相关实体
-- [Claude Code Agent Teams Task Decomposition Ruofei](ch03/075-claude-code.md)
-- [Claude Code Self Repair Hooks Memory Config](ch04/150-ai.md)
-- [Claude Code Agent View Huashu](ch03/065-claude-code-agent-view-huashu.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/075-claude-code.md)
-- [Claude Code 7 Layer Memory Architecture](ch01/869-claude-code-7-layer-memory-architecture.md)
+- [Claude Code Agent Teams Task Decomposition Ruofei](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-teams-task-decomposition-ruofei.md)
+- [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
+- [Claude Code Agent View Huashu](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-view-huashu.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
+- [Claude Code 7 Layer Memory Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-7-layer-memory-architecture.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-official-plugins-anthropic.md)
 - [prosemirror @文档 mention：知识库 agent 输入框的工程化实现](https://github.com/QianJinGuo/wiki/blob/main/entities/prosemirror-knowledge-base-mention.md)

@@ -84,7 +84,7 @@ Evals 不是孤立的测试环节，而是嵌入在完整的 AI Engineering Loop
 - **多轮交互**：评估 Agent 在多轮对话中的连贯性和状态管理
 
 ## 相关链接
-- [Ai Evals Methodology](ch04/150-ai.md)
+- [Ai Evals Methodology](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-evals-methodology.md)
 
 ## 实践启示
 ### 1. 永远从人工审阅开始
@@ -149,11 +149,11 @@ Agent 评估需要额外的维度： ^["Evals到底在评什么？一文拆解AI
 - **模型变更后**：比较新旧模型在评估集上的表现
 - **定期生产监控**：确保生产质量没有漂移
 ## 相关实体
-- [Better Harness Eval Trace Methodology](ch05/009-harness.md)
-- [Anthropic Claude Next Gen Alex Infoq](ch01/380-claude.md)
-- [Agent Skill Writing](ch04/245-skill.md)
-- [Programbench Agent Benchmark](ch04/152-programbench-agent-benchmark.md)
-- [Llm As A Verifier Framework](ch01/890-llm.md)
+- [Better Harness Eval Trace Methodology](https://github.com/QianJinGuo/wiki/blob/main/entities/better-harness-eval-trace-methodology.md)
+- [Anthropic Claude Next Gen Alex Infoq](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-next-gen-alex-infoq.md)
+- [Agent Skill Writing](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing.md)
+- [Programbench Agent Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/programbench-agent-benchmark.md)
+- [Llm As A Verifier Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-as-a-verifier-framework.md)
 
 ---
 

@@ -68,11 +68,11 @@ Google AI Studio 新增移动端应用和原生 Android 支持，标志着"vibe 
 3. **隔离持久化环境的技术实现**：Managed Agents 的 Linux 隔离环境设计是安全 Agent 执行的有趣参考
 
 ## 相关实体
-- [Google Io 2026 Agentic Gemini Era](ch03/045-agent.md)
-- [Building Is Just The Beginning Introducing Discove](ch12/082-building-is-just-the-beginning-introducing-discoverability.md)
-- [The Agentic Trust Management Platform Drata](ch04/017-the-agentic-trust-management-platform-drata.md)
-- [Nvidia Agentic Systems Extreme Co Design](ch03/045-agent.md)
-- [Google Debuts Gemini Focused Updates At Io 2026](ch01/206-0.md)
+- [Google Io 2026 Agentic Gemini Era](https://github.com/QianJinGuo/wiki/blob/main/entities/google-io-2026-agentic-gemini-era.md)
+- [Building Is Just The Beginning Introducing Discove](https://github.com/QianJinGuo/wiki/blob/main/entities/building-is-just-the-beginning-introducing-discove.md)
+- [The Agentic Trust Management Platform Drata](https://github.com/QianJinGuo/wiki/blob/main/entities/the-agentic-trust-management-platform-drata.md)
+- [Nvidia Agentic Systems Extreme Co Design](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-agentic-systems-extreme-co-design.md)
+- [Google Debuts Gemini Focused Updates At Io 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/google-debuts-gemini-focused-updates-at-io-2026.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
 

@@ -272,17 +272,17 @@ OpenAI 提出的"Entropy Garbage Collection"是一个极具工程价值的概念
 - 参考：[Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - 参考：[Managed Agents Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/managed-agents-architecture.md)
 ## 相关实体
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch04/150-ai.md)
-- [Agent Harness Engineering Survey 2026](ch03/045-agent.md)
-- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](ch04/150-ai.md)
-- [Harness Engineering Systematic Framework](ch05/061-harness-engineering.md)
-- [Agentscope Java Harness Framework](ch03/045-agent.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md)
+- [Agent Harness Engineering Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗.md)
+- [Harness Engineering Systematic Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-framework.md)
+- [Agentscope Java Harness Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-java-harness-framework.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-alibaba-java-case-study.md)
 → [原文存档 (杜学友 6 层架构)](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-alibaba-6-layer-architecture-duxueyou.md)
-- [协作涌现：agent room 的多智能体决策框架](ch03/045-agent.md)
-- [programbench swe agent benchmark](ch04/452-programbench-swe-agent-benchmark.md)
-- [harness 工程可视化：vibe coding 中重建工程可控性](ch05/061-harness-engineering.md)
+- [协作涌现：agent room 的多智能体决策框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-room-emergent-collaboration-multi-agent-decision.md)
+- [programbench swe agent benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/programbench-swe-agent-benchmark.md)
+- [harness 工程可视化：vibe coding 中重建工程可控性](https://github.com/QianJinGuo/wiki/blob/main/entities/routa-harness-engineering-visualization.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

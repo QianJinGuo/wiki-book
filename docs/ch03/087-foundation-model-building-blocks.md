@@ -27,8 +27,8 @@
 **6. 评估新 GPU 架构（B200/B300）时，需要同步验证完整的软件栈兼容性：CUDA 版本、NCCL 版本、EFA driver 版本、深度学习框架版本。** 文章指出 CUDA Toolkit 13.x 才支持 Blackwell（compute capability 10.x），aws-ofi-nccl 插件版本也需要与 EFA 代际匹配。跨代混用会导致性能退化或功能缺失。
 
 ## 相关实体
-- [Building Blocks for Foundation Model Training and Inference on AWS](ch04/150-ai.md)
-- [Genesis AI GENE-26.5 具身基础模型](ch04/150-ai.md)
+- [Building Blocks for Foundation Model Training and Inference on AWS](https://github.com/QianJinGuo/wiki/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
+- [Genesis AI GENE-26.5 具身基础模型](https://github.com/QianJinGuo/wiki/blob/main/entities/genesis-ai-gene-25-embodied-foundation-model.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

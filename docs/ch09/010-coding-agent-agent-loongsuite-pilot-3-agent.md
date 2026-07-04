@@ -326,11 +326,11 @@ Pilot 平台的 OTel 标准化输出意味着企业可以将 Coding Agent 的执
 这一架构的另一个好处是**插桩库的可测试性**——插桩库只需要验证数据提取的准确性，而不需要关注遥测输出的正确性，大幅降低了单元测试的复杂度。
 
 ## 相关实体
-- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](ch04/150-ai.md)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/245-skill.md)
-- [Baidu Comate Coding Agent Feedback Loop Wanpeng](ch04/150-ai.md)
-- [Harness Engineering Reliable Long Term Agent](ch03/045-agent.md)
-- [Anthropic Coding Agents Social Science Survey 2026](ch09/039-anthropic-coding-agent.md)
+- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](https://github.com/QianJinGuo/wiki/blob/main/entities/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](https://github.com/QianJinGuo/wiki/blob/main/entities/alibabacloud-cms-manage-skill-natural-language-observability.md)
+- [Baidu Comate Coding Agent Feedback Loop Wanpeng](https://github.com/QianJinGuo/wiki/blob/main/entities/baidu-comate-coding-agent-feedback-loop-wanpeng.md)
+- [Harness Engineering Reliable Long Term Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-reliable-long-term-agent.md)
+- [Anthropic Coding Agents Social Science Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-coding-agents-social-science-survey-2026.md)
 
 → [第 1 来源原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md)
 ---

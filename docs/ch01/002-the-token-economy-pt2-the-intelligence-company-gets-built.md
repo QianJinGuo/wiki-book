@@ -187,11 +187,11 @@ Anthropic-Blackstone $1.5B JV 模式展示 PE 作为 AI 转型加速器的潜力
 - [Anthropic Financial Services Agents](https://www.anthropic.com/news/finance-agents) 
 
 ## 相关实体
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch04/150-ai.md)
-- [Https Stratechery Com 2026 The Google Capital Company](ch01/206-0.md)
-- [The Token Economy](ch01/799-the-token-economy.md)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/634-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md)
-- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch04/150-ai.md)
+- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](https://github.com/QianJinGuo/wiki/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
+- [Https Stratechery Com 2026 The Google Capital Company](https://github.com/QianJinGuo/wiki/blob/main/entities/https-stratechery-com-2026-the-google-capital-company.md)
+- [The Token Economy](https://github.com/QianJinGuo/wiki/blob/main/entities/the-token-economy.md)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog.md)
+- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-联创2028-年实现-ai-自我构建的概率超过-60.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-intelligence-changelog.md)
 

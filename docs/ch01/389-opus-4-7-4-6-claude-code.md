@@ -114,11 +114,11 @@ Opus 4.7 的默认行为变化需要相应的架构调整：
 - **响应长度校准**：如果依赖特定长度的输出，需要在 Prompt 中明确风格和语气要求，提供正向示例而非否定式指令
 这些调整的目标是让 Agent 架构与 Opus 4.7 的新行为模式对齐，从而获得最佳性能。
 ## 相关实体
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/075-claude-code.md)
-- [Anthropic Prompt Caching Claude Code Agihunt](ch03/075-claude-code.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
-- [Claude Code Founder Harness 100 Lines](ch03/075-claude-code.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](ch03/075-claude-code.md)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](https://github.com/QianJinGuo/wiki/blob/main/entities/opus-4-7-launch-claude-code-best-practices-wechat.md)
+- [Anthropic Prompt Caching Claude Code Agihunt](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-prompt-caching-claude-code-agihunt.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
+- [Claude Code Founder Harness 100 Lines](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-founder-harness-100-lines.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
 

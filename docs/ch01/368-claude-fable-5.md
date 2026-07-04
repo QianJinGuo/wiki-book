@@ -41,7 +41,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 **典型场景**：某产品团队自动化脚本试图在新加坡 Region 创建 ECS 实例，企业安全团队在资源目录中设了 SCP 禁止子账号开通海外 Region 资源 → **API 直接返回权限拒绝，不需要审批流程介入**。
 
-> 与 [AI Gateway vs MCP Gateway 安全分析](ch04/150-ai.md) 在"网关层安全"维度同框架。
+> 与 [AI Gateway vs MCP Gateway 安全分析](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md) 在"网关层安全"维度同框架。
 
 ### 域 2 — AI 网关护栏：约束模型输出（概率性）
 
@@ -69,7 +69,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 > 这是与 Fable 5 降级路由**本质相同的设计思路**：用配置而非代码实现护栏弹性。
 
-> 与 [NVIDIA Nemotron 3 内容安全](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md) 在"token-level 流式安全审核"维度同模式（Qwen3Guard-Stream 的对应英文实现）。
+> 与 [NVIDIA Nemotron 3 内容安全](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md) 在"token-level 流式安全审核"维度同模式（Qwen3Guard-Stream 的对应英文实现）。
 
 ### 域 3 — Anthropic 护栏：约束模型间路由（决策性）
 
@@ -87,7 +87,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 **弹性机制 — Trusted Access Program**：经过审核的安全研究者可申请完整 Mythos 级能力访问。**护栏松紧度不是固定的，而是根据使用者的信任等级动态调整**——与阿里云 AI 网关"按消费者匹配"策略同设计思路。
 
-> 与 [Fable 5 AWS 中文译本](ch01/265-claude-fable-5.md) 同 Fable 5 主题，但本文 80% 篇幅在 3 域对比 + 5 原则抽象，AWS 译本聚焦 Fable 5 产品本身（能力 + 接入 + 部署）。**互补不重叠**。
+> 与 [Fable 5 AWS 中文译本](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-fable-5-on-aws内置保护措施的-mythos-级功能现已推出.md) 同 Fable 5 主题，但本文 80% 篇幅在 3 域对比 + 5 原则抽象，AWS 译本聚焦 Fable 5 产品本身（能力 + 接入 + 部署）。**互补不重叠**。
 
 ## 五大共性设计原则（跨域抽象）
 
@@ -117,7 +117,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 ## 实践启示
 
 1. **护栏设计 checklist**：直接套用 5 原则——声明式（JSON/YAML）、旁路执行（独立检测器）、梯度响应（观察→降级→拒绝）、可观测（日志+UI）、分层继承（系统级→分组级→用户级）
-2. **token-level 流式安全**：高敏感场景（金融/医疗/未成年人）应采用 [Qwen3Guard-Stream 风格](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md) 逐 token 审核，而非等整条回复完毕再判定
+2. **token-level 流式安全**：高敏感场景（金融/医疗/未成年人）应采用 [Qwen3Guard-Stream 风格](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md) 逐 token 审核，而非等整条回复完毕再判定
 3. **对抗性场景必须旁路执行**：内嵌式"让模型自己判断"在 jailbreak / prompt injection 场景**几乎必然被绕过**——必须独立分类器
 4. **可观测性是调优前提**：Fable 5 的 UI 通知是**产品级可观测**的极端——把"护栏对自己做了什么"告诉用户是**最有效的反馈循环**
 5. **降级优于拒绝**：Fable 5 不拒绝而是降级到 Opus 4.8，**用户仍然拿到有价值回复**——这是护栏"用户体验设计"的核心原则
@@ -127,20 +127,20 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 ## 相关实体
 
 - **同 Fable 5 主题**（互补不重叠）：
-  - [Fable 5 AWS 中文译本](ch01/265-claude-fable-5.md)（产品视角）
-  - [Claude Fable 5 Safety Fables (Lambert)](ch01/677-claude-fable-5-and-new-ai-safety-fables.md)（政策视角）
-  - [Fable 5 Mollick hands-on](ch01/265-claude-fable-5.md)（用户体验视角）
+  - [Fable 5 AWS 中文译本](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-fable-5-on-aws内置保护措施的-mythos-级功能现已推出.md)（产品视角）
+  - [Claude Fable 5 Safety Fables (Lambert)](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-fable-5-and-new-ai-safety-fables.md)（政策视角）
+  - [Fable 5 Mollick hands-on](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-fable-5-mollick-patron-vs-wizard.md)（用户体验视角）
 - **同护栏 / 安全主题**：
-  - [AI Gateway vs MCP Gateway 安全分析](ch04/150-ai.md)
-  - [NVIDIA Nemotron 3 Agents RAG Voice Safety](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md)
-  - [Amazon Bedrock Agentic Payments Guardrails](ch04/150-ai.md)
-  - [Enable Safe Agentic Payments with Built-in Guardrails](ch04/150-ai.md)
-  - [Nemotron 3.5 Content Safety](ch01/410-nemotron-3-5-content-safety-customizable-multimodal-safety.md)
-  - [阿里集团 AI 代码评审安全带](ch04/150-ai.md)
+  - [AI Gateway vs MCP Gateway 安全分析](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
+  - [NVIDIA Nemotron 3 Agents RAG Voice Safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
+  - [Amazon Bedrock Agentic Payments Guardrails](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-agentic-payments-guardrails.md)
+  - [Enable Safe Agentic Payments with Built-in Guardrails](https://github.com/QianJinGuo/wiki/blob/main/entities/enable-safe-agentic-payments-with-built-in-guardrails-using-.md)
+  - [Nemotron 3.5 Content Safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nemotron-3-5-content-safety.md)
+  - [阿里集团 AI 代码评审安全带](https://github.com/QianJinGuo/wiki/blob/main/entities/给氛围编程系上安全带阿里集团-ai-代码评审实践与-benchmark-开源.md)
 - **同阿里云生态**：
-  - [Aliyun AgentRun](ch03/045-agent.md)
-  - [阿里云 CMS CLI 可观测](ch04/245-skill.md)
-  - [阿里云 哈勃业务 Agent 评估](ch03/045-agent.md)
+  - [Aliyun AgentRun](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-agentrun.md)
+  - [阿里云 CMS CLI 可观测](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-cms2-cli-skill-natural-language-observability.md)
+  - [阿里云 哈勃业务 Agent 评估](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-cloud-native-fable-5-safety-guardrails-evolution.md)

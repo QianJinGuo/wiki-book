@@ -165,11 +165,11 @@ Strands Evals 的多模态 judge 保持了与文本 judge 完全相同的 `Case`
 - Anthropic Claude 系列
 
 ## 相关实体
-- [Yidian Tianxia Context Engineering Agentic Ai Qcon](ch04/130-yidian-tianxia-context-engineering-agentic-ai-qcon.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md)
-- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/449-aws-reinforcement-fine-tuning-llm-as-judge.md)
-- [Amazon Bedrock Api Security Guide](ch12/032-amazon-bedrock-api.md)
+- [Yidian Tianxia Context Engineering Agentic Ai Qcon](https://github.com/QianJinGuo/wiki/blob/main/entities/yidian-tianxia-context-engineering-agentic-ai-qcon.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
+- [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
+- [Aws Reinforcement Fine Tuning Llm As Judge](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-reinforcement-fine-tuning-llm-as-judge.md)
+- [Amazon Bedrock Api Security Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-api-security-guide.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/multimodal-evaluators-mllm-as-judge-image-to-text.md)
 

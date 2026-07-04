@@ -208,8 +208,8 @@ Anthropic 原文提到：Canva、Notion、Sentry 等已经在 Claude 中把 Skil
 这意味着未来 MCP Server 的竞争焦点从「连接能力」转向「使用指南」。Server 开发者不只需要实现 API 封装，还需要编写与自身能力配套的 Skill/Playbook，并通过 Server-Distributed Skills 模式分发出去。这是一个从基础设施层面向应用层面延伸的价值链扩展。
 
 ## Related entities
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch03/045-agent.md)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch03/045-agent.md)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式.md)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
 
 ## 实践启示
 ### 1. 从模式1开始，先想清楚分发形态

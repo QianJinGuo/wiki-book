@@ -1,49 +1,58 @@
-# 为了让agent更安全的工作，有多少人操碎了心
+# 你不知道的 Agent：原理、架构与工程实践
 
-## Ch04.509 为了让agent更安全的工作，有多少人操碎了心
+## Ch04.509 你不知道的 Agent：原理、架构与工程实践
 
-> 📊 Level ⭐⭐ | 2.9KB | `entities/ath-agent-trust-handshake-protocol.md`
+> 📊 Level ⭐⭐ | 4.1KB | `entities/你不知道的-agent原理架构与工程实践-v2.md`
 
-# 为了让agent更安全的工作，有多少人操碎了心
+# 你不知道的 Agent：原理、架构与工程实践
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/你不知道的-agent原理架构与工程实践-v2.md)
 
 ## 深度分析
 
-本文来自"运维有术"公众号（术哥无界），分析 Agent 权限安全问题以及 2026 年 5 月新发布的 ATH 三方可信握手协议。
+0
+review_recommendation: strong
+review_stars: 4ingested: 2026-05-10
+# 你不知道的 Agent：原理、架构与工程实践
+文章内容基于作者个人技术实践与独立思考，旨在分享经验，仅代表个人观点。
 
-**核心问题**：Agent 权限问题的本质是"权限组合后的涌现能力"——单个权限无害，组合起来可能越界，传统 RBAC 根本管不住。
+### 核心观点
 
-**现有方案缺陷**：
-- **MCP**：无用户/服务端参与方，权限要么全给要么全不给；Context Poisoning 投毒风险；CVSS 9.4/9.6 高危漏洞
-- **A2A**：用户未纳入信任链路，Agent Card 无法验证身份可信度
-- **GUI 自动化**：系统级权限过度、操作不可审计、数据边界模糊
+1. 这篇文章主要讲 Agent 架构里几块最影响工程效果的内容，包括控制流、上下文工程、工具设计、记忆、多 Agent 组织、评测、追踪和安全，最后再用 OpenClaw 的实现把这些设计原则串起来看一遍。
+2. 整理下来，有几处判断和我原来想的不太一样，更贵的模型带来的提升，很多时候没有想象中那么大，反而 Harness 和验证测试质量对成功率的影响更大，调试 Agent 行为时，也应优先检查工具定义，因为多数工具选择错误都出在描述不准确，另外，评测系统本身的问题，很多时候比 Agent 出问题更难发现，如果一直在 Agent 代码上反复调，效果未必明显，读完这篇，这几个问题应该能有些答案。
+3. 一、Agent Loop 的基本运转方式
+Agent Loop 的核心实现逻辑抽象后其实不到 20 行代码：
+const messages: MessageParam[] = [{ role: "user", content: userInput }];while (true) {  const response = await client.
+4. create({    model: "claude-opus-4-6",    max_tokens: 8096,    tools: toolDefinitions,    messages,  });  if (response.
+5. stop_reason === "tool_use") {    const toolResults = await Promise.
 
-**ATH 三方握手架构**：
-1. 前置：用户预授权
-2. 第一阶段（1-4步）：双向身份验证（DID + 非对称加密）
-3. 第二阶段（5-8步）：**服务端向用户二次确认**（核心创新，解决用户认知盲区）
-4. 第三阶段（9步）：颁发短期访问令牌
+### 内容结构
 
-**Scope Intersection**：`有效权限 = 服务方审批 ∩ 用户授权 ∩ 智能体请求`。交集为空时禁止颁发令牌。
+- 你不知道的 Agent：原理、架构与工程实践
+- ** MEMORY.md  和 Skills 如何协作  **
+- 参考资料
 
-**与 OAuth 2.0 关系**：在 OAuth 基础上增加第二个必答问题"服务方是否批准该智能体"。PKCE 强制，访问令牌绑定四元组。
+### 技术要点
+
+- **agent架构**: 本文在agent方向提出的设计理念与实现路径
+- **工程挑战**: 实际落地中面临的关键问题与应对策略
+- **architecture趋势**: 相关技术演进方向与新兴范式
+
+### 关联实体
+
+- [Harness 之后 状态边界与失败闭环 若飞](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-之后-状态边界与失败闭环-若飞.md)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-learning-roadmap-backend-2026.md)
+- [Ai Friendly Architecture Design Taobao](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-friendly-architecture-design-taobao.md)
+- [Headroom Context Compression Agent Vibecoder](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-agent-vibecoder.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [Ai Agent Harness Construction Akshay Baoyu](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-harness-construction-akshay-baoyu.md)
 
 ## 实践启示
 
-1. **MCP 安全缺陷**：Context Poisoning 投毒是架构级问题，接入 MCP 服务器需严格验证工具描述来源
-2. **三方授权必要性**：用户必须有最终否决权——服务端 + 用户 + Agent 三方缺一不可
-3. **Scope Intersection 价值**：即使用户误授权，服务端未批准的权限也拿不到；即使 Agent 被批准，它没请求的权限也不会被授予
-4. **最小权限 + 短期令牌**：7200 秒（2小时）过期，到期需重新握手
-5. **企业级落地**：网关模式不改原有代码，适合企业统一管控
-
-## 相关实体
-- [From Agent Protocol To Harness Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/from-agent-protocol-to-harness-skill.md)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](https://github.com/QianJinGuo/wiki/blob/main/entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security V2](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
-- [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
-- [Canvas Breach Disrupts Schools Colleges Nationwide](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
-
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ath-agent-trust-handshake-protocol.md)
+1. **Agent 设计**: 关注控制流与上下文工程的平衡，Harness 约束比模型能力更影响成功率
+2. **可观测性**: Agent 行为调试应优先检查工具定义和上下文质量
+3. **渐进式部署**: 从简单 ReAct 循环起步，逐步引入多 Agent 编排
+4. **验证优先**: 建立完善的测试验证体系，确保 Agent 行为可预测
 
 ---
 

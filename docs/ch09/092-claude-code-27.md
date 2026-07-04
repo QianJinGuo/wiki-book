@@ -125,10 +125,10 @@
 
 ## 相关实体
 
-- [Loop Engineering](ch05/004-loop-engineering.md)：第 23 条"Loop 先做只读小闭环"直接呼应 Loop Engineering 的保守五原则
-- [Claude 18 个动作](ch04/150-ai.md)：同一作者（若飞）的前作，本文是更系统的升级版
-- [Harness Engineering](ch04/150-ai.md)：Hooks/CLAUDE.md/Skills 的分层设计呼应 Harness 的制动优先原则
-- [Skills 重新定义 Agent 知识](ch04/245-skill.md)：第 11 条"重复提示沉淀成 Skills"的实践指南
+- [Loop Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-addy-osmani-challengehub.md)：第 23 条"Loop 先做只读小闭环"直接呼应 Loop Engineering 的保守五原则
+- [Claude 18 个动作](https://github.com/QianJinGuo/wiki/blob/main/entities/ruofei-claude-18-actions-personal-ai-workbench.md)：同一作者（若飞）的前作，本文是更系统的升级版
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md)：Hooks/CLAUDE.md/Skills 的分层设计呼应 Harness 的制动优先原则
+- [Skills 重新定义 Agent 知识](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-redefine-agent-knowledge-allen-tang-2026.md)：第 11 条"重复提示沉淀成 Skills"的实践指南
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-27-tips-engineering-upgrade-jiagoux-2026.md)
 

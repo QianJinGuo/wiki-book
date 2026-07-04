@@ -72,11 +72,11 @@ Netflix 内部 1,500+ 微服务每日产生海量 ops 事件（service → servi
 Part II 将介绍 query engine、impact analysis 算法、client libraries。
 
 ## 相关实体
-- [High Throughput Graph Abstraction At Netflix Part I](ch11/101-high-throughput-graph-abstraction-at-netflix-part-i.md)
+- [High Throughput Graph Abstraction At Netflix Part I](https://github.com/QianJinGuo/wiki/blob/main/entities/high-throughput-graph-abstraction-at-netflix-part-i.md)
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Plaid Effects](ch04/150-ai.md)
+- [Plaid Effects](https://github.com/QianJinGuo/wiki/blob/main/entities/plaid-effects.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 相关主题

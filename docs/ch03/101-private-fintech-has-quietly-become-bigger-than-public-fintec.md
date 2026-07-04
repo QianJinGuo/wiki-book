@@ -45,10 +45,10 @@ Here’s where the report’s headline finding gets complicated. The top 10 are 
 
 ## 相关实体
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
-- [Plaid Effects](ch04/150-ai.md)
-- [The Stablecoin 24X7 Money Loop Fintechbrainfood](ch04/150-ai.md)
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch04/150-ai.md)
-- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](ch01/062-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.md)
+- [Plaid Effects](https://github.com/QianJinGuo/wiki/blob/main/entities/plaid-effects.md)
+- [The Stablecoin 24X7 Money Loop Fintechbrainfood](https://github.com/QianJinGuo/wiki/blob/main/entities/the-stablecoin-24x7-money-loop-fintechbrainfood.md)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](https://github.com/QianJinGuo/wiki/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
+- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](https://github.com/QianJinGuo/wiki/blob/main/entities/klarna-delivers-strong-start-to-2026-with-1bn-revenue-and-68m-adj-operating-prof.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/private-fintech-vs-public-fintech.md)
 

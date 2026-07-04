@@ -64,11 +64,11 @@ Activity-Focused Design 的核心价值在于将设计视角从"用户是谁"转
 7. **产出多样化**：任务分析的结果可以多种形式呈现——简单的任务分析图、分层任务图、序列图、流程图等，选择团队最易理解和沟通的形式即可。
 
 ## 相关实体
-- [Icon Pack Websites Designers Should Bookmark](ch03/120-icon-pack-websites-designers-should-bookmark.md)
+- [Icon Pack Websites Designers Should Bookmark](https://github.com/QianJinGuo/wiki/blob/main/entities/icon-pack-websites-designers-should-bookmark.md)
 - [Blog.Tubikstudio.Com Form Over Function Mistakes](https://github.com/QianJinGuo/wiki/blob/main/entities/blog.tubikstudio.com-form-over-function-mistakes.md)
-- [Designing Small Is Harder Than Designing Big Ux Magazine](ch03/088-designing-small-is-harder-than-designing-big-ux-magazine.md)
-- [Deepmind Ai Pointer](ch04/150-ai.md)
-- [Qoder Skill Ui](ch04/245-skill.md)
+- [Designing Small Is Harder Than Designing Big Ux Magazine](https://github.com/QianJinGuo/wiki/blob/main/entities/designing-small-is-harder-than-designing-big-ux-magazine.md)
+- [Deepmind Ai Pointer](https://github.com/QianJinGuo/wiki/blob/main/entities/deepmind-ai-pointer.md)
+- [Qoder Skill Ui](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skill-ui.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/activity-focused-design.md)
 

@@ -75,7 +75,7 @@ ARiES 采**加性评分**（0-100），三个维度：
 
 ## 与 N-days 研究的互补
 
-本文与 [N-days Frontier Agent 研究](ch04/246-anthropic-n-days-frontier-agent-vulnerability-research.md) 构成 Anthropic 2026-06 的**双联报告**：
+本文与 [N-days Frontier Agent 研究](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-n-days-frontier-agent-vulnerability-research.md) 构成 Anthropic 2026-06 的**双联报告**：
 
 | 维度 | N-days 研究 | ATT&CK Navigator |
 |------|-------------|------------------|
@@ -120,10 +120,10 @@ ARiES 采**加性评分**（0-100），三个维度：
 -
 ## 相关实体
 
-- [hackers accessed bwh hotels reservation system for months](ch04/150-ai.md)
+- [hackers accessed bwh hotels reservation system for months](https://github.com/QianJinGuo/wiki/blob/main/entities/securityaffairs-bwh-hotels-breach.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-llm-attck-navigator-cyber-operations.md)
-- → [同 Anthropic 红队研究：前沿模型 N-day 利用能力](ch04/246-anthropic-n-days-frontier-agent-vulnerability-research.md)
-- → [Mythos 营销角度](ch01/707-anthropic.md)
+- → [同 Anthropic 红队研究：前沿模型 N-day 利用能力](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-n-days-frontier-agent-vulnerability-research.md)
+- → [Mythos 营销角度](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mythos-bug-hunting-marketing.md)
 - → [Cloudflare Glasswing 视角 Mythos 安全](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - → [Arctic Wolf SOC 机器速度运营](https://github.com/QianJinGuo/wiki/blob/main/entities/arctic-wolf-security-operations-machine-speed.md)
 - → MITRE ATT&CK 框架（V18，外部参考）

@@ -157,9 +157,9 @@ RAG 里的迭代 ≠ Agent 里的 ReAct 循环：
 ## 相关实体
 
 - [原文链接](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md)
-- [Agent 记忆系统的工程实践](ch03/045-agent.md)
-- [Karpathy: 从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [AgentOps: Amazon Bedrock 上的 Agent 运维](ch04/150-ai.md)
+- [Agent 记忆系统的工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
+- [Karpathy: 从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [AgentOps: Amazon Bedrock 上的 Agent 运维](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - 谷歌研究博客: https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/
 - Gemini Enterprise: https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/rag-engine/cross-corpus-retrieval
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)

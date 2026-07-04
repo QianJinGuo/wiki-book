@@ -7,7 +7,7 @@
 # Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-dynamic-workflows-8th-translation-xingxiaozhao.md)
-→ 主条目：[Claude Code Dynamic Workflows Multi Agent Orchestration](ch03/075-claude-code.md)
+→ 主条目：[Claude Code Dynamic Workflows Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md)
 
 ## 摘要
 
@@ -88,13 +88,13 @@
 
 ## 关联实体
 
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](ch03/075-claude-code.md) — 主条目，51KB 完整多 Agent 编排指南
-- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md) — Claude Code 源码级机制
-- [Gsd Get Shit Done Context Management Tool](ch01/196-gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/075-claude-code.md) — Claude Code 中的 agent harness 构建
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md) — Agent 记忆系统
-- [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md) — Claude Code harness 深度解析
-- [Claude Code Harness Deep Dive Founder Park](ch03/075-claude-code.md) — Founder Park 的 Claude Code harness 深度文章
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) — 主条目，51KB 完整多 Agent 编排指南
+- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md) — Claude Code 源码级机制
+- [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md) — Claude Code 中的 agent harness 构建
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md) — Agent 记忆系统
+- [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md) — Claude Code harness 深度解析
+- [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md) — Founder Park 的 Claude Code harness 深度文章
 
 ## 相关实体
 

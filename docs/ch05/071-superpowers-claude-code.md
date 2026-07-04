@@ -62,10 +62,10 @@
 
 ## 相关实体
 
-- [Harness Engineering](ch05/061-harness-engineering.md)
-- [Claude Code Skills Superpowers 实践](ch01/420-claude-code-skills-superpowers-practice.md)
-- [AI Coding Agent Token 成本控制](ch09/043-coding-agent.md)
-- [Skill 版本对比五大原则](ch04/245-skill.md)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
+- [Claude Code Skills Superpowers 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-superpowers-practice.md)
+- [AI Coding Agent Token 成本控制](https://github.com/QianJinGuo/wiki/blob/main/entities/token-cost-control-coding-agent-devinyzeng-tencent.md)
+- [Skill 版本对比五大原则](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-version-comparison-five-principles-winty.md)
 
 ---
 

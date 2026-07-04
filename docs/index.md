@@ -10,17 +10,17 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1280 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1015 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1282 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1018 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 436 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 104 篇 |
-| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 31 篇 |
+| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 32 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1115 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1117 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ Backpressure is all you need
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ 快手首个打工人Agent
-  - ... 共 **1115** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1117** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 34 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **131** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1280 篇**
+> 📖 **本篇共 1282 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 601 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 603 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ Build agents, not pipelines
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
-  - ... 共 **601** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **603** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 97 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -104,7 +104,7 @@
   - ⭐⭐ Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge 
   - ... 共 **42** 篇 → [完整章节](ch06-memory.md)
 
-### [Ch07 技能、工具与 MCP](ch07-skill-tool.md) — 72 篇
+### [Ch07 技能、工具与 MCP](ch07-skill-tool.md) — 73 篇
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
   - ⭐⭐ Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生
@@ -115,7 +115,7 @@
   - ⭐⭐ Claude Code Skills / MCP / Rules 源码分析
   - ⭐⭐ Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）
   - ⭐⭐ 重新定义Skill开发：保姆级教程&一站式开发助手
-  - ... 共 **72** 篇 → [完整章节](ch07-skill-tool.md)
+  - ... 共 **73** 篇 → [完整章节](ch07-skill-tool.md)
 
 ### [Ch08 多 Agent 协作](ch08-multi-agent.md) — 26 篇
 > 从单兵到团队：编排、通信、治理
@@ -156,7 +156,7 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **25** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1015 篇**
+> 📖 **本篇共 1018 篇**
 
 ---
 
@@ -288,7 +288,7 @@
   - ⭐⭐⭐ LoopWM (Looped World Models)
   - ... 共 **14** 篇 → [完整章节](ch19-research-frontier.md)
 
-### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 17 篇
+### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 18 篇
 > 超级智能、存在风险、AI 治理、人类命运
 
   - ⭐ Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
@@ -299,12 +299,12 @@
   - ⭐⭐ Multilingual AI
   - ⭐⭐ Token 经济学与 AI 效率
   - ⭐⭐ Nearly every enterprise is investing in AI, but only 5% say their data
-  - ... 共 **17** 篇 → [完整章节](ch20-ai-philosophy.md)
+  - ... 共 **18** 篇 → [完整章节](ch20-ai-philosophy.md)
 
-> 📖 **本篇共 31 篇**
+> 📖 **本篇共 32 篇**
 
 ---
 
-**📊 全书收录：2866 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：2872 篇实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-06-25 | 来源: ~/wiki/entities/

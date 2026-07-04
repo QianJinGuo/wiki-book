@@ -83,8 +83,8 @@ Thinking Machines 提出了现有基准无法覆盖的新能力维度：
 
 ## 相关实体
 
-- [Thinking Machines 交互模型](ch04/285-thinking-machines-interaction-models.md)
-- [Interaction Models: A Scalable Approach to Human-AI Collaboration](ch04/150-ai.md)
+- [Thinking Machines 交互模型](https://github.com/QianJinGuo/wiki/blob/main/entities/thinking-machines-interaction-models.md)
+- [Interaction Models: A Scalable Approach to Human-AI Collaboration](https://github.com/QianJinGuo/wiki/blob/main/entities/interaction-models-human-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/interaction-models.md)
 

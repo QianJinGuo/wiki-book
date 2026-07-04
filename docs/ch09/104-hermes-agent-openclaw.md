@@ -43,8 +43,8 @@
 
 ## 与现有知识的链接
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-self-evolution-源码解析.md)
-- → [Hermes Agent自进化机制](ch03/045-agent.md) — 另一角度分析
-- → [Hermes记忆系统](ch03/045-agent.md) — vs OpenClaw
+- → [Hermes Agent自进化机制](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-self-evolving.md) — 另一角度分析
+- → [Hermes记忆系统](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md) — vs OpenClaw
 - → [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md) — Skill格式
 
 ## 行业意义

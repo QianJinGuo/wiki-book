@@ -42,11 +42,11 @@ Alpamayo 1 使用 Flow Matching 轨迹解码（超越简单回归）、历史轨
 5. **VLA 端到端轨迹规划已成生产现实**：APlamayo 表明端到端 VLA 生产级部署已到达临界点，自动驾驶团队应加速从模块化栈向 VLA 的技术路线迁移。
 
 ## 相关实体
-- [Nvidia Gemma 4 Edge Ai](ch01/687-nvidia-gemma-4-edge-ai.md)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch04/150-ai.md)
-- [Nvidia Gpu Kernel Translation Cute Python Julia](ch03/054-nvidia-gpu-kernel-translation-cute-python-julia.md)
-- [Nvidia Cut Checkpoint Costs Nvcomp](ch03/030-nvidia-cut-checkpoint-costs-nvcomp.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/045-agent.md)
+- [Nvidia Gemma 4 Edge Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-gemma-4-edge-ai.md)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](https://github.com/QianJinGuo/wiki/blob/main/entities/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md)
+- [Nvidia Gpu Kernel Translation Cute Python Julia](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-gpu-kernel-translation-cute-python-julia.md)
+- [Nvidia Cut Checkpoint Costs Nvcomp](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cut-checkpoint-costs-nvcomp.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-misc-topics-frontier.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-edge-first-llms-av-robotics.md)

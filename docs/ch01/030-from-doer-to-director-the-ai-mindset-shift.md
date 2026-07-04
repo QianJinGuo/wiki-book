@@ -7,14 +7,14 @@
 > -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-doer-to-director-the-ai-mindset-shift.md)
 
 ## 相关实体
-- [独家对话罗福莉：AI范式已然巨变！](ch04/150-ai.md)
-- [agentic code review](ch03/045-agent.md)
-- [apple foundation models](ch01/380-claude.md)
+- [独家对话罗福莉：AI范式已然巨变！](https://github.com/QianJinGuo/wiki/blob/main/entities/luo-fuli-ai-paradigm-shift.md)
+- [agentic code review](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-code-review-addyosmani.md)
+- [apple foundation models](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-apple-foundation-models-claude.md)
 - [the oracle and the firm](https://github.com/QianJinGuo/wiki/blob/main/entities/calv-oracle-and-the-firm.md)
 - [what job interviews taught me about kubernetes](https://github.com/QianJinGuo/wiki/blob/main/entities/notnotp-k8s-interviews-non-technical.md)
 - [here](https://github.com/QianJinGuo/wiki/blob/main/entities/randsinrepose-we-dont-believe-you-rub.md)
-- [a backdoor in a linkedin job offer](ch04/150-ai.md)
-- [every frame perfect](ch01/156-every-frame-perfect.md)
+- [a backdoor in a linkedin job offer](https://github.com/QianJinGuo/wiki/blob/main/entities/roman-linkedin-backdoor-supply-chain.md)
+- [every frame perfect](https://github.com/QianJinGuo/wiki/blob/main/entities/tonsky-every-frame-perfect.md)
 - [the golden rule of customizable select](https://github.com/QianJinGuo/wiki/blob/main/entities/webkit-customizable-select-golden-rule.md)
 
 ## 文章摘要

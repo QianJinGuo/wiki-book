@@ -54,20 +54,20 @@ Teams 模式的工程挑战尤为突出。死锁检测（A 等 B，B 等 A）需
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/four-sub-agent-patterns-2026.md)
 
 ## 相关实体
-- [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)
-- [OpenCLAW 完全指南](ch11/210-openclaw.md)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/245-skill.md)
+- [十年老技术开发的 AI Agent 探索之路](https://github.com/QianJinGuo/wiki/blob/main/entities/十年老技术开发的-ai-agent-探索之路-v2.md)
+- [OpenCLAW 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-comprehensive-guide.md)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-development-guide-aliyun-2026.md)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/245-skill.md)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/trace2skill-trajectory-distillation-agent-skills.md)
 
-- [Agent Workflows](ch04/310-agent-workflows.md)
-- [Hermes+Kimi K2.6 多Agent军团实战教程](ch03/045-agent.md)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
-- [Garry Tan](ch01/510-garry-tan.md)
+- [Agent Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-workflows.md)
+- [Hermes+Kimi K2.6 多Agent军团实战教程](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-k2-6-tutorial.md)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](https://github.com/QianJinGuo/wiki/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
+- [Garry Tan](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
-- [AI Agent 工程师能力地图](ch04/150-ai.md)
-- [Agent 原理、架构与工程实践](ch04/441-agent-engineering-principles-architecture-practice.md)
+- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
+- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

@@ -42,15 +42,15 @@ Lenovo在技术选型时提出了三个核心需求：**上手快、复杂度低
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/strands-agent-sdk-resource-intelligent-inspection-agent-innovation/)
 
 ## 相关实体
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch03/045-agent.md)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/product-ad-review-agent-with-strands-sdk-bedrock.md)
 - [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch03/045-agent.md)
-- [Cline releases open-source agent runtime SDK](ch03/045-agent.md)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](ch03/045-agent.md)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/strands-agents-sdk-build-analytics-layer-vqr-amazon-bedrock-practice.md)
+- [Cline releases open-source agent runtime SDK](https://github.com/QianJinGuo/wiki/blob/main/entities/cline-open-source-agent-runtime-sdk.md)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](https://github.com/QianJinGuo/wiki/blob/main/entities/cli-mcp-sdk-agent-tool-selection.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5-ways-to-curb-ai-sprawl-without-stifling-innovation.md)
 
-- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](ch03/045-agent.md)
+- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/easy-deployment-of-claude-agent-sdk-in-production.md)
 
 ---
 

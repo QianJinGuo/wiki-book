@@ -93,20 +93,20 @@ OpenAI 的"garbage collection"思路值得借鉴：后台定期运行清理 Agen
 每个 skill 都是对当前模型能力边界的假设。Anthropic 的演进经验：context reset 先被淘汰，sprint 分解随后被淘汰，evaluator 仍然有价值。正确的做法：**逐一移除旧组件，测试质量是否真的下降**，而不是继续叠加新组件。Skill 腐朽有 Context Rot 式、数据漂移式、架构错位式三种形态。
 
 ## 相关概念
-- [GBrain 自进化体系](ch04/150-ai.md) — skillify 是 gbrain 自演化的核心机制
-- [Harness Engineering](ch05/061-harness-engineering.md) — 传感器失效是 latent space 工作分类错位的体现
-- [Harness 从 Prompt 到工程体系](ch01/380-claude.md) — 约束与自主权的辩证关系
-- [AIAIGC峰会嘉宾阵容](ch04/150-ai.md)
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](ch11/210-openclaw.md)
-- [从提需求到部署发布全AI全自动化后研发效能全面跃升](ch04/150-ai.md)
-- [Hermes Agent vs OpenClaw 对比分析](ch03/045-agent.md)
-- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/245-skill.md)
-- [Harness Engineering 实战：AI Coding 率从 25% 提升至 90%](ch04/150-ai.md)
+- [GBrain 自进化体系](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md) — skillify 是 gbrain 自演化的核心机制
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-framework.md) — 传感器失效是 latent space 工作分类错位的体现
+- [Harness 从 Prompt 到工程体系](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md) — 约束与自主权的辩证关系
+- [AIAIGC峰会嘉宾阵容](https://github.com/QianJinGuo/wiki/blob/main/entities/aiaigc-summit-guest-lineup.md)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-comprehensive-guide-32k-chars.md)
+- [从提需求到部署发布全AI全自动化后研发效能全面跃升](https://github.com/QianJinGuo/wiki/blob/main/entities/从提需求到部署发布全ai全自动化后研发效能全面跃升.md)
+- [Hermes Agent vs OpenClaw 对比分析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-vs-openclaw-comparison.md)
+- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](https://github.com/QianJinGuo/wiki/blob/main/entities/autoclaw-使用体验自带-66-个-skill可接入聊天工具安全性高.md)
+- [Harness Engineering 实战：AI Coding 率从 25% 提升至 90%](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-90-percent-ai-coding-rate.md)
 - [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
-- [OpenCLAW 完全指南](ch11/210-openclaw.md)
+- [OpenCLAW 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-comprehensive-guide.md)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](ch03/045-agent.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/075-claude-code.md)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-agent-observability-session-logs-otel-sls.md)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
 
 ## 深度分析
@@ -159,7 +159,7 @@ Harness Engineering 的核心悖论在实践中经常被误解：增加约束不
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-reliability-engineering-skillify-continuous-improvement.md)
 
-- [Agent 原理、架构与工程实践](ch04/441-agent-engineering-principles-architecture-practice.md)
+- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 
 ---
 

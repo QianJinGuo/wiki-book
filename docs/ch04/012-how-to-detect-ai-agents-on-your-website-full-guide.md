@@ -74,11 +74,11 @@ Google 发布了网站 agent-ready 指南，明确包含视觉 UI 优化（Agent
 
 ## 相关实体
 
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](ch04/150-ai.md)
-- [Your AI Agents Are Already Inside the Perimeter](ch04/150-ai.md)
-- [Chrome Enterprise Policies on Amazon Bedrock AgentCore](ch04/150-ai.md)
-- [AI-powered honeypots](ch04/150-ai.md)
-- [Securing AI agents: AWS and Cisco AI Defense](ch04/150-ai.md)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](https://github.com/QianJinGuo/wiki/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md)
+- [Your AI Agents Are Already Inside the Perimeter](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
+- [Chrome Enterprise Policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
+- [AI-powered honeypots](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
+- [Securing AI agents: AWS and Cisco AI Defense](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
 
 ---
 

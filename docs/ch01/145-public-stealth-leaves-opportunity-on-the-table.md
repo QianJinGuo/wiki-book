@@ -9,9 +9,9 @@
 
 ## 相关实体
 
-- [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)
-- [Toto 2.0: Time series forecasting enters the scaling era](ch01/025-toto-2-0-time-series-forecasting-enters-the-scaling-era.md)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch03/045-agent.md)
+- [How Superset built the IDE for AI agents on Vercel](https://github.com/QianJinGuo/wiki/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
+- [Toto 2.0: Time series forecasting enters the scaling era](https://github.com/QianJinGuo/wiki/blob/main/entities/toto-2.md)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
 
 ## 深度分析
 文章揭示了创始人可见性问题的结构性矛盾：**信息不对称导致的机会成本在早期最大**，但创始人恰恰在最早期的"隐身模式"中损失最严重。

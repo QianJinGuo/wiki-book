@@ -103,11 +103,11 @@ CLAUDE.md 文件在此方案中承担双重角色：
 - claude-code-memory-setup: https://github.com/lucasrosati/claude-code-memory-setup
 - Graphify: https://github.com/lucasrosati/graphify
 ## 相关实体
-- [Claude Code Self Repair Hooks Memory Config](ch04/150-ai.md)
-- [Claude Code Memory Setup Obsidian Graphify](ch01/694-claude-code-memory-setup-obsidian-graphify.md)
-- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](ch04/150-ai.md)
-- [Claude Code Prompt Source Analysis](ch03/075-claude-code.md)
-- [Claude Code Tool Design Evolution Anthropic](ch03/075-claude-code.md)
+- [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
+- [Claude Code Memory Setup Obsidian Graphify](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-memory-setup-obsidian-graphify.md)
+- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
+- [Claude Code Prompt Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-source-analysis.md)
+- [Claude Code Tool Design Evolution Anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-tool-design-evolution-anthropic.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-memory-setup-token-71x楠楠自瑜.md)
 

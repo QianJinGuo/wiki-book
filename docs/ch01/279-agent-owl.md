@@ -266,11 +266,11 @@ OWL适合以下场景：
 - **引入多模态能力**：结合视觉理解处理图文混合任务
 - **优化Critic机制**：使用更精细的评估标准提升输出质量
 ## 相关实体
-- [Agent Framework Owl Principles](ch03/045-agent.md)
-- [Karpathy Ai Agent 7 Bits Value Decline](ch04/150-ai.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
-- [Gepa Optimize Anything](ch01/313-gepa-optimize-anything.md)
-- [Tmall Marketing Ai Workflow Best Practices](ch04/150-ai.md)
+- [Agent Framework Owl Principles](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-framework-owl-principles.md)
+- [Karpathy Ai Agent 7 Bits Value Decline](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-ai-agent-7-bits-value-decline.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
+- [Gepa Optimize Anything](https://github.com/QianJinGuo/wiki/blob/main/entities/gepa-optimize-anything.md)
+- [Tmall Marketing Ai Workflow Best Practices](https://github.com/QianJinGuo/wiki/blob/main/entities/tmall-marketing-ai-workflow-best-practices.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

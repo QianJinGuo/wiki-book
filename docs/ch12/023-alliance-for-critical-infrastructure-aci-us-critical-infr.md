@@ -64,20 +64,20 @@ ACI 接下来 18 个月的工作包括：建立工作组、定义试点项目、
 
 ## 相关实体
 
-- [Ai Agents Security Survey Attack Defense](ch04/150-ai.md)
-- [Anthropic Llm Attck Navigator Cyber Operations](ch01/890-llm.md)
-- [Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/150-ai.md)
-- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](ch04/150-ai.md)
-- [Aws Software Supply Chain Security Well Architected Best Practices](ch04/150-ai.md)
-- [Cilium Tetragon Kubernetes Runtime Security Ebpf](ch01/207-rag.md)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/150-ai.md)
-- [Ai Traffic Cyberthreat Benchmark 2026](ch04/150-ai.md)
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch04/150-ai.md)
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](ch04/150-ai.md)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/634-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md)
+- [Ai Agents Security Survey Attack Defense](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-security-survey-attack-defense.md)
+- [Anthropic Llm Attck Navigator Cyber Operations](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-llm-attck-navigator-cyber-operations.md)
+- [Agent Security Three Step Sequence Harness Governance Identity Crewai](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-security-three-step-sequence-harness-governance-identity-crewai.md)
+- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
+- [Aws Software Supply Chain Security Well Architected Best Practices](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-software-supply-chain-security-well-architected-best-practices.md)
+- [Cilium Tetragon Kubernetes Runtime Security Ebpf](https://github.com/QianJinGuo/wiki/blob/main/entities/cilium-tetragon-kubernetes-runtime-security-ebpf.md)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security.md)
+- [Ai Traffic Cyberthreat Benchmark 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-traffic-cyberthreat-benchmark-2026.md)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](https://github.com/QianJinGuo/wiki/blob/main/entities/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md)
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog.md)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
 - [5237875](https://github.com/QianJinGuo/wiki/blob/main/entities/5237875.md)
-- [820297](ch01/206-0.md)
+- [820297](https://github.com/QianJinGuo/wiki/blob/main/entities/820297.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

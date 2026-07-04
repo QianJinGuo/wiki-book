@@ -83,31 +83,31 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - **持续进化**：Reflection Agent 思路可推广至其他 AI 工作流，将人工修复经验结构化为可复用的 patch 资产
 
 ## 相关页面
-- [Skill 写作基础指南](ch04/245-skill.md) — 入门级别的 Skill 写作教程
-- [Skill 写作进阶](ch04/245-skill.md) — 高级技巧
-- [Skill 评估方法](ch04/245-skill.md) — 如何评估 Skill 质量
+- [Skill 写作基础指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md) — 入门级别的 Skill 写作教程
+- [Skill 写作进阶](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-advanced.md) — 高级技巧
+- [Skill 评估方法](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-evaluation.md) — 如何评估 Skill 质量
 
 ## 相关实体
-- [十年老技术开发的 AI Agent 探索之路](ch04/150-ai.md)
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [SkillX — 层次化技能知识库](ch07/045-skillx.md)
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/245-skill.md)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/245-skill.md)
-- [SkillClaw](ch04/245-skill.md)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/245-skill.md)
-- [四种 Sub Agent 模式](ch03/045-agent.md)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/245-skill.md)
+- [十年老技术开发的 AI Agent 探索之路](https://github.com/QianJinGuo/wiki/blob/main/entities/十年老技术开发的-ai-agent-探索之路-v2.md)
+- [9个Agent技能模块化SageMaker微调生命周期](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [SkillX — 层次化技能知识库](https://github.com/QianJinGuo/wiki/blob/main/entities/skillx-hierarchical-skill-library.md)
+- [Anthropic 14 个 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-agent-skills-design-patterns-14.md)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-internal-skill-design-guide.md)
+- [SkillClaw](https://github.com/QianJinGuo/wiki/blob/main/entities/skillclaw.md)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system-winty.md)
+- [四种 Sub Agent 模式](https://github.com/QianJinGuo/wiki/blob/main/entities/four-sub-agent-patterns.md)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/trace2skill-trajectory-distillation-agent-skills.md)
 
-- [Qoder Skills 完全指南](ch04/245-skill.md)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/245-skill.md)
-- [Garry Tan](ch01/510-garry-tan.md)
-- [Agent Workflows](ch04/310-agent-workflows.md)
-- [Hermes Agent](ch03/087-hermes-agent.md)
+- [Qoder Skills 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skills-complete-guide.md)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](https://github.com/QianJinGuo/wiki/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
+- [Garry Tan](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
+- [Agent Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-workflows.md)
+- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent.md)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
-- [你写的 Skill，及格了吗？](ch04/245-skill.md)
+- [你写的 Skill，及格了吗？](https://github.com/QianJinGuo/wiki/blob/main/entities/ni-xie-de-skill-ji-ge-liao-ma.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [AI Agent 工程师能力地图](ch04/150-ai.md)
-- [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](ch03/045-agent.md)
+- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
+- [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-end-to-end-business-requirements-agent-multica-2026.md)
 
 ---
 

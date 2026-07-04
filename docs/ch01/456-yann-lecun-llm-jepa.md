@@ -91,24 +91,24 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 
 ## 相关实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/045-agent.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Karpathy 从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [OpenClaw 多 Agent 协同开发](ch11/210-openclaw.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy 从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [OpenClaw 多 Agent 协同开发](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
+- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
 - 
 - 
 -
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
-- [better decisions at scale: how mathematical optimization del](ch11/158-better-decisions-at-scale-how-mathematical-optimization-del.md)
-- [farewell ai2](ch01/658-farewell-ai2.md)
-- [introducing 1-bit and ternary bonsai image 4b: image generat](ch04/150-ai.md)
-- [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](ch04/150-ai.md)
-- [introducing 1-bit and ternary bonsai image 4b: image generat](ch04/150-ai.md)
-- [private fintech has quietly become bigger than public fintec](ch03/101-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
-- [private fintech has quietly become bigger than public fintec](ch03/101-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
-- [the inevitable need for an open model consortium](ch01/853-the-inevitable-need-for-an-open-model-consortium.md)
+- [better decisions at scale: how mathematical optimization del](https://github.com/QianJinGuo/wiki/blob/main/entities/better-decisions-at-scale-how-mathematical-optimization-deli.md)
+- [farewell ai2](https://github.com/QianJinGuo/wiki/blob/main/entities/farewell-ai2.md)
+- [introducing 1-bit and ternary bonsai image 4b: image generat](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-1-bit-and-ternary-bonsai-image-4b-image-generati-352fe9.md)
+- [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](https://github.com/QianJinGuo/wiki/blob/main/entities/minicpm5-1b-forgetrain-agh-hunt.md)
+- [introducing 1-bit and ternary bonsai image 4b: image generat](https://github.com/QianJinGuo/wiki/blob/main/entities/news-bonsai-image-4b.md)
+- [private fintech has quietly become bigger than public fintec](https://github.com/QianJinGuo/wiki/blob/main/entities/private-fintech-has-quietly-become-bigger-than-public-fintec.md)
+- [private fintech has quietly become bigger than public fintec](https://github.com/QianJinGuo/wiki/blob/main/entities/private-fintech-has-quietly-become-bigger-than-public-fintec-569278.md)
+- [the inevitable need for an open model consortium](https://github.com/QianJinGuo/wiki/blob/main/entities/the-inevitable-need-for-an-open-model-consortium.md)
 
 ---
 

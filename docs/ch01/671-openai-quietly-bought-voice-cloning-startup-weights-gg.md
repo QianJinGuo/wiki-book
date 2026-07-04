@@ -58,11 +58,11 @@ OpenAI 已在 2026 年 2 月聘请 Instagram 前明星合作负责人 Charles Po
 - AI 公司的"安全限制"声明不意味着他们不拥有相关技术；需要更主动地通过法律工具保护自身权益
 - 即便无法阻止技术扩散，通过商标等工具建立Consent框架，仍能在商业层面保持控制力
 ## 相关实体
-- [Openai Gpt Realtime Voice Models Qbitai](ch01/619-openai-gpt-realtime-voice-models-qbitai.md)
-- [Microsoft Is Quietly Shopping For An Openai Replac](ch04/150-ai.md)
+- [Openai Gpt Realtime Voice Models Qbitai](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-gpt-realtime-voice-models-qbitai.md)
+- [Microsoft Is Quietly Shopping For An Openai Replac](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-is-quietly-shopping-for-an-openai-replac.md)
 - [Ai Voice Cloning The Technology Behind It Whos Building It A](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/114-useful-memories-become-faulty-when-continuously-updated-by-l.md)
-- [Build Live Translation Apps With Gpt Realtime Translate](ch01/139-build-live-translation-apps-with-gpt-realtime-translate.md)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](https://github.com/QianJinGuo/wiki/blob/main/entities/useful-memories-become-faulty-when-continuously-updated-by-llms.md)
+- [Build Live Translation Apps With Gpt Realtime Translate](https://github.com/QianJinGuo/wiki/blob/main/entities/build-live-translation-apps-with-gpt-realtime-translate.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-quietly-bought-voice-cloning-star.md)
 

@@ -94,21 +94,21 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 3. **Schema 迁移规划**：现有企业软件 Schema（为人类设计）迁移到 Agent 友好 Schema 是一个长期工程，需要现在就规划数据模型层的演进路径
 
 ## 与 vault 知识关联
-- [Agent Harness 架构](ch03/045-agent.md) — Agent 与企业软件的交互层，Harness 是 Agent 执行时的"护城河"
+- [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md) — Agent 与企业软件的交互层，Harness 是 Agent 执行时的"护城河"
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作世界里，跨 Agent 身份认证和授权是全新机会（深思SenseAI 补充）
-- [Agent Memory 模块化框架](ch03/045-agent.md) — 数据排放（data exhaust）与记忆系统的关系
+- [Agent Memory 模块化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-modular-framework.md) — 数据排放（data exhaust）与记忆系统的关系
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/salesforce-headless-software-losing-head-a16z.md)
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/150-ai.md)
-- [阿里云 EventHouse 企业级 Agent 上下文供给体系](ch03/045-agent.md)
-- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](ch04/150-ai.md)
-- [foundation capital agent era six insights](ch04/175-foundation-capital-agent-era-six-insights.md)
-- [Agent 时代架构师技能指南](ch04/245-skill.md)
-- [快手首个打工人Agent](ch04/150-ai.md)
-- [from](ch04/260-from-system-of-record-to-system-of-intelligence.md)
-- [from](ch04/260-from-system-of-record-to-system-of-intelligence.md)
-- [meet customers where they are: agentforce contact center now](ch03/045-agent.md)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
+- [阿里云 EventHouse 企业级 Agent 上下文供给体系](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-eventhouse-enterprise-agent-context.md)
+- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security.md)
+- [foundation capital agent era six insights](https://github.com/QianJinGuo/wiki/blob/main/entities/foundation-capital-agent-era-six-insights.md)
+- [Agent 时代架构师技能指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-era-architect-skills-guide.md)
+- [快手首个打工人Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/kuaishou-worker-agent-desktop-software.md)
+- [from](https://github.com/QianJinGuo/wiki/blob/main/entities/from-system-of-record-to-system-of-intelligence.md)
+- [from](https://github.com/QianJinGuo/wiki/blob/main/entities/from-system-of-record-to-system-of-intelligence-1.md)
+- [meet customers where they are: agentforce contact center now](https://github.com/QianJinGuo/wiki/blob/main/entities/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
 
 ---
 

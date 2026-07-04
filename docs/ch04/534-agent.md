@@ -1,62 +1,62 @@
-# Agent评测的反直觉感悟：质量优化与可规模化性的取舍
+# Agent核心技术概念与范式发生了哪些演变以及背后的思考
 
-## Ch04.534 Agent评测的反直觉感悟：质量优化与可规模化性的取舍
+## Ch04.534 Agent核心技术概念与范式发生了哪些演变以及背后的思考
 
-> 📊 Level ⭐⭐ | 3.3KB | `entities/agent-eval-counterintuitive-insights-langfuse.md`
+> 📊 Level ⭐⭐ | 3.7KB | `entities/agent-paradigm-evolution-feipeng-alibaba.md`
 
-# Agent评测的反直觉感悟：质量优化与可规模化性的取舍
-
-## 摘要
-
-基于 Langfuse 实战经验，揭示 Agent 评测中的核心反直觉现象：**质量优化可能破坏产品可规模化性**。Tracing 的价值不在调试，而在让成本-质量取舍成为产品评审中可讨论的线索。
-
-## 核心要点
-
-### Bad Case 归因的陷阱
-
-从用户 bad case 入手做评测归因是常见做法，但 bad case 有四个棘手特征：
-- **极端边界**：不代表典型用户场景
-- **模型幻觉**：随机性强，难以系统性修复
-- **技术修复 ROI 高**：修复单个 bad case 可能引入更大成本
-- **偶发性**：难以稳定复现，修复效果难以验证
-
-更关键的是：修好 bad case 后，token 成本可能反而上升。
-
-### 反直觉核心：质量优化破坏可规模化性
-
-一个 Agent 如果每次做 8 次检索、3 次 rerank、5 次模型调用，demo 会显得很聪明，但线上变成不可承受的成本结构。这不是假设，而是 Langfuse Tracing 能直接暴露的现实。
-
-具体表现：
-- **更多上下文塞进 prompt** → 短期提升准确率，但 token 成本和 latency 上升
-- **引入更强 judge / 更多 self-check** → 体验等待变长
-- **增加检索和 rerank 次数** → 答案更稳，但每个请求的成本翻倍
-
-这一洞察与 [Llm Observability 4 Layer Model](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-observability-4-layer-model.md) 中的成本监控层直接相关。
-
-### Tracing 的真正价值
-
-Trace 的价值不是"总成本高"或"整体慢"这类笼统结论，而是：
-- **哪一个 Observation 让成本失控** — 精确定位成本热点
-- **哪一步阻塞了用户等待** — 精确定位延迟瓶颈
-
-Tracing 让成本-质量取舍不再停留在架构师脑中，而变成产品评审中可讨论的线索。这是将技术决策透明化的产品化实践。
-
-## 深度分析
-
-本文的核心价值在于提出了一个可操作的评估框架：**用 Tracing 驱动产品决策，而非仅用于调试**。传统 Agent 评测关注"答对没有"，而本文关注"答对的代价是什么"——这是一个从工程视角到产品视角的转换。
-
-与离线评测方法论互补：离线评测验证功能正确性，Tracing 验证生产可规模化性。
-
-## 实践启示
-
-1. **评测时同时关注正确性和成本**：每个 bad case 修复后，追踪 token 成本变化
-2. **用 Observation 级别而非 Task 级别分析成本**：定位具体哪一步消耗过多
-3. **在产品评审中引入 Tracing 数据**：让非技术人员也能理解成本-质量取舍
-4. **警惕"demo 聪明，线上昂贵"的陷阱**：8 次检索 + 3 次 rerank + 5 次模型调用可能是过度优化
+# Agent核心技术概念与范式发生了哪些演变以及背后的思考
 
 ## 相关实体
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-eval-counterintuitive-insights-langfuse.md)
+- [《从零实现 agent 系统》连载 01｜agent 系统是什么：问题空间与架构切片](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-system-zero-to-one-01-architecture-slices-2026.md)
+- [cola dlm：字节跳动连续潜空间扩散语言模型](https://github.com/QianJinGuo/wiki/blob/main/entities/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
+- [explicit vs. implicit in the age of intelligences — le secré](https://github.com/QianJinGuo/wiki/blob/main/entities/lesecretairedefernand-co-en-tech-explicit-vs-implicit-in-the-age-of-intelligence.md)
+- [review agent：后台复盘 agent 如何判断什么值得保存](https://github.com/QianJinGuo/wiki/blob/main/entities/review-agent-how-it-decides-what-to-save-winty.md)
+- [不用再学ai了！生成结果包稳的agent来了](https://github.com/QianJinGuo/wiki/blob/main/entities/不用再学ai了生成结果包稳的agent来了.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-paradigm-evolution-feipeng-alibaba.md)
+
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+## 深度分析
+
+Agent核心技术概念与范式发生了哪些演变以及背后的思考 涉及agent领域的核心技术议题。
+### 核心观点
+1. # Agent核心技术概念与范式发生了哪些演变以及背后的思考
+**作者：** 飞樰
+**发布日期：** 2026年6月1日
+梳理 Agent 技术从2023-2026年的四个阶段演进（被动ReAct→工作流→自主→自进化）及六大核心维度（Prompt/Planning/Memory/Tools/Workflow/Environment）的技术概念变化。
+2. 强调四个阶段非替代关系而是并存互补。
+3. 核心洞察：宏观架构"形"未变，内核已重构——从"人为适配模型"到"利用模型原生能力"，从"刚性约束"到"动态智能"。
+4. （本文覆盖的4阶段+6维度Agent框架已由 entity [Agent 四阶段演化与六维度技术变化](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md) 完整收录。
+5. ）
+### Prompt：渐进式披露
+System Prompt 从"单体大作文"到"System Prompt + 渐进式加载上下文文件"的解耦。
+
+### 内容结构
+- Agent核心技术概念与范式发生了哪些演变以及背后的思考
+- Prompt：渐进式披露
+- Memory：文件系统化+向量混合
+- Tools：CLI 命令行原生化
+- 总结框架
+
+### 技术要点
+
+- **agent架构**: 本文在agent方向提出的设计理念与实现路径
+- **工程挑战**: 实际落地中面临的关键问题与应对策略
+- **architecture趋势**: 相关技术演进方向与新兴范式
+### 关联实体
+
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
+- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
+- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
+
+## 实践启示
+1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
+2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
+3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现
+4. **风险管控**: 引入新技术需评估对现有系统稳定性的影响，做好降级预案
 
 ---
 

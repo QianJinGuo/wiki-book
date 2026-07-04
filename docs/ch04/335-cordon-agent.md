@@ -79,7 +79,7 @@ Cordon 不要求重写整个 Agent，而是在 tool-dispatch boundary 插入 tra
 
 ## 相关页面
 
-- [Claude Code 工具调用安全事故](ch03/075-claude-code.md)
+- [Claude Code 工具调用安全事故](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-tool-call-security-incident-gitignore-redis-anthropic-apology-2026-06-17.md)
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cordon-semantic-transactions-tool-using-llm-agents-2026-06-17.md)
 
 ---
