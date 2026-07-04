@@ -2,7 +2,7 @@
 
 ## Ch04.373 Adobe Marketing Agent 与 Amazon Quick MCP 集成实战
 
-> 📊 Level ⭐⭐ | 7.0KB | `entities/adobe-marketing-agent-amazon-quick-mcp-integration.md`
+> 📊 Level ⭐⭐ | 7.3KB | `entities/adobe-marketing-agent-amazon-quick-mcp-integration.md`
 
 # Adobe Marketing Agent 与 Amazon Quick MCP 集成实战
 
@@ -102,7 +102,7 @@ Adobe Marketing Agent 通过 MCP (Model Context Protocol) 协议与 Amazon Quick
 
 ## 相关实体
 
-- [Amazon Bedrock AgentCore Web Search](ch04/390-amazon-bedrock-agentcore-web-search-ga.md)
+- [Amazon Bedrock AgentCore Web Search](ch04/400-amazon-bedrock-agentcore-web-search-ga.md)
 
 ---
 

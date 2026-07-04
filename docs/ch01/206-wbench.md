@@ -2,7 +2,7 @@
 
 ## Ch01.206 从月球漫步到赛博都市，WBench测出了世界模型的边界
 
-> 📊 Level ⭐ | 2.6KB | `entities/从月球漫步到赛博都市wbench测出了世界模型的边界.md`
+> 📊 Level ⭐ | 2.6KB | `entities/从月球漫步到赛博都市wbench测出了世界模型的边界-1.md`
 
 # 从月球漫步到赛博都市，WBench测出了世界模型的边界
 

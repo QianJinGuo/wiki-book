@@ -10,17 +10,17 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1282 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1018 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 436 篇 |
-| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 104 篇 |
-| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 32 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1385 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1020 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 437 篇 |
+| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 109 篇 |
+| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 33 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1117 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1220 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ Backpressure is all you need
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ 快手首个打工人Agent
-  - ... 共 **1117** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1220** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 34 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **131** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1282 篇**
+> 📖 **本篇共 1385 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 603 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 605 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ Build agents, not pipelines
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
-  - ... 共 **603** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **605** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 97 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -156,7 +156,7 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **25** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1018 篇**
+> 📖 **本篇共 1020 篇**
 
 ---
 
@@ -188,7 +188,7 @@
   - ⭐ 5 Things to Know about the CLARITY Act
   - ... 共 **123** 篇 → [完整章节](ch12-security.md)
 
-### [Ch13 MLOps 与评估](ch13-mlops.md) — 17 篇
+### [Ch13 MLOps 与评估](ch13-mlops.md) — 18 篇
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
   - ⭐ 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
@@ -199,7 +199,7 @@
   - ⭐⭐ ai-skill-测评指标体系
   - ⭐⭐ 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
   - ⭐⭐ SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
-  - ... 共 **17** 篇 → [完整章节](ch13-mlops.md)
+  - ... 共 **18** 篇 → [完整章节](ch13-mlops.md)
 
 ### [Ch14 数据工程](ch14-data.md) — 35 篇
 > AI 的燃料：实时入湖、流处理、数据质量
@@ -214,13 +214,13 @@
   - ⭐⭐ Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
   - ... 共 **35** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 436 篇**
+> 📖 **本篇共 437 篇**
 
 ---
 
 ## 第四篇 · 科学家篇 — 研究与创新
 
-### [Ch15 训练与微调](ch15-training.md) — 39 篇
+### [Ch15 训练与微调](ch15-training.md) — 40 篇
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
   - ⭐⭐ What I’ve been building: ATOM Report, post-training course, finishing 
@@ -231,9 +231,9 @@
   - ⭐⭐ xai解散但grok还没死马斯克声称新模型正在训练
   - ⭐⭐ Notes on pretraining parallelisms and failed training runs.
   - ⭐⭐ 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
-  - ... 共 **39** 篇 → [完整章节](ch15-training.md)
+  - ... 共 **40** 篇 → [完整章节](ch15-training.md)
 
-### [Ch16 推理优化与架构](ch16-inference.md) — 24 篇
+### [Ch16 推理优化与架构](ch16-inference.md) — 25 篇
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
   - ⭐ 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
@@ -244,9 +244,9 @@
   - ⭐⭐ PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python 
   - ⭐⭐ 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
   - ⭐⭐ How to Calculate the Inference Efficiency Ratio
-  - ... 共 **24** 篇 → [完整章节](ch16-inference.md)
+  - ... 共 **25** 篇 → [完整章节](ch16-inference.md)
 
-### [Ch17 多模态与生成](ch17-multimodal.md) — 35 篇
+### [Ch17 多模态与生成](ch17-multimodal.md) — 38 篇
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
   - ⭐ Perceptron Mk1 shocks with highly performant video analysis AI model 8
@@ -257,7 +257,7 @@
   - ⭐⭐ LLaVA-OneVision-2：全帧率视频理解
   - ⭐⭐ SunFinance: Textract+Claude准确率90.8%的ID提取方案
   - ⭐⭐ How transparent is DiffusionGemma (and why it matters)
-  - ... 共 **35** 篇 → [完整章节](ch17-multimodal.md)
+  - ... 共 **38** 篇 → [完整章节](ch17-multimodal.md)
 
 ### [Ch18 机器人与具身智能](ch18-robotics.md) — 6 篇
 > 从数字到物理：强化学习、仿真、人形机器人
@@ -269,13 +269,13 @@
   - ⭐⭐ 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
   - ⭐⭐⭐⭐ NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
-> 📖 **本篇共 104 篇**
+> 📖 **本篇共 109 篇**
 
 ---
 
 ## 第五篇 · 大师篇 — 哲学、安全与未来
 
-### [Ch19 前沿研究与理论](ch19-research-frontier.md) — 14 篇
+### [Ch19 前沿研究与理论](ch19-research-frontier.md) — 15 篇
 > Scaling Law、涌现能力、世界模型、自我博弈
 
   - ⭐⭐ NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议
@@ -283,10 +283,10 @@
   - ⭐⭐ Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
   - ⭐⭐ The Complexity of Simplicity | Jim Nielsen's Notes
   - ⭐⭐ Lean Software Scaling Laws
+  - ⭐⭐ arXiv 脱离康奈尔，正式独立为非营利组织
   - ⭐⭐⭐ Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
   - ⭐⭐⭐ Count Anything - 文本引导的通用目标计数框架
-  - ⭐⭐⭐ LoopWM (Looped World Models)
-  - ... 共 **14** 篇 → [完整章节](ch19-research-frontier.md)
+  - ... 共 **15** 篇 → [完整章节](ch19-research-frontier.md)
 
 ### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 18 篇
 > 超级智能、存在风险、AI 治理、人类命运
@@ -301,10 +301,10 @@
   - ⭐⭐ Nearly every enterprise is investing in AI, but only 5% say their data
   - ... 共 **18** 篇 → [完整章节](ch20-ai-philosophy.md)
 
-> 📖 **本篇共 32 篇**
+> 📖 **本篇共 33 篇**
 
 ---
 
-**📊 全书收录：2872 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：2984 篇实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-06-25 | 来源: ~/wiki/entities/

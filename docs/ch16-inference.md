@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **24 篇**实体，按深度递增排列。
+> 本章收录 **25 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 10 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 13 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 14 |
 
 ---
 
@@ -2316,5 +2316,51 @@ This post is the engineering log: what we tried, what surprised us, what we thre
 *   No user-facing API changes. A table that already points at an ONNX-capable `MODEL_NAME` picks up the new path automatically
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/14-faster-embeddings-how-we-rebuilt-the-onnx-path-in-mantico.md)
+
+---
+
+## Ch16.025 SAME：稳定MoE持续微调
+
+> 📊 Level ⭐⭐⭐ | 2.2KB | `entities/nju-same-moe-continual-learning.md`
+
+# SAME：稳定MoE持续微调
+
+> ICML 2026 南京大学论文，解决 MoE-based 多模态持续指令微调（MCIT）中的双重遗忘问题。
+
+## 核心问题
+
+MoE-based MCIT 中存在两个核心漂移问题：
+
+- **路由漂移（Routing Drift）**：旧任务样本在后续训练后会被路由到不同专家
+- **专家漂移（Expert Drift）**：即使路由恢复，专家本身的功能也可能被新任务覆盖
+
+## 三个创新
+
+SAME（Stabilized Mixture-of-Experts）从三方面稳定 MoE 持续学习过程：
+
+1. **谱感知路由（Spectral-aware Routing）**：利用历史输入协方差的 SVD 分解，在谱子空间中约束路由器更新，减少旧样本被重新分配到错误专家
+
+2. **曲率感知缩放（Curvature-aware Scaling）**：基于历史输入协方差诱导的 Riemannian 缩放更新专家参数，降低专家功能被覆盖的风险
+
+3. **自适应专家激活（Adaptive Expert Activation）**：在当前任务训练时冻结部分"当前任务不常用但历史重要"的专家，减少冗余计算和跨任务干扰
+
+## 实验结果
+
+SAME 在 TriGap、CoIN 和 UCIT 三个 MCIT 基准上均取得领先性能，同时提升训练效率：
+- TriGap：46.53%（+2.08pp vs MoE-LoRA）
+- CoIN：66.82%（超过 HiDe-LLaVA 63.95%）
+- UCIT：67.12%（超过 ModalPrompt 65.52%）
+
+自适应专家激活平均每个任务减少 32.1 分钟训练时间，并平均降低 2.3K MiB/GPU 显存占用。
+
+## 论文信息
+
+- **论文标题**：SAME: Stabilized Mixture-of-Experts for Multimodal Continual Instruction Tuning
+- **作者**：Zhen-Hao Xie, Jun-Tao Tang, Yu-Cheng Shi, Han-Jia Ye, De-Chuan Zhan, Da-Wei Zhou
+- **收录会议**：ICML 2026
+- **论文地址**：https://arxiv.org/abs/2602.01990
+- **代码**：https://github.com/LAMDA-CL/Prism
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/icml-2026-nju-same-stabilized-moe-mcit.md)
 
 ---

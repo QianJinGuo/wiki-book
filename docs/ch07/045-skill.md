@@ -1,113 +1,137 @@
-# 重新定义Skill开发：保姆级教程&一站式开发助手发布
+# Skill 版本管理五大原则：从越改越差到持续演进
 
-## Ch07.045 重新定义Skill开发：保姆级教程&一站式开发助手发布
+## Ch07.045 Skill 版本管理五大原则：从越改越差到持续演进
 
-> 📊 Level ⭐⭐ | 7.3KB | `entities/skill-development-guide-aliyun-2026.md`
+> 📊 Level ⭐⭐ | 8.1KB | `entities/skill-version-management-semantic-versioning-practices-winty.md`
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-development-guide-aliyun-2026.md)
+> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-version-management-semantic-versioning-practices-winty.md)
 
-## 核心价值
-阿里内部工程师分享的 **Skill（技能）开发完整教程**，从概念定义到一站式开发助手，覆盖 Skill 整个生命周期。
+Skill 版本管理是企业 AI 系统落地的硬骨头。与代码不同，Skill 是一段"自然语言指令"，它的"对不对"、"有没有变好"没有工具能直接告诉你。本文提出 Skill 版本管理的五大原则以及从 v1.0.0 到 v1.3.0 的真实演进案例。
 
-## 关键知识点
-### Skill 定义与加载机制
-- **定义**：结构化指令文档，告诉 Agent「在什么场景下、按什么步骤、用什么工具、完成什么任务」
-- **三级加载**：渐进式加载策略，按需提供信息，节省上下文空间
+## 一句话
 
-### Skill 平台生态
-| 平台 | 类型 | 特点 |
-|------|------|------|
-| skills.sh | 外部 | 开源工作流自动化 |
-| ClawHub | 外部 | 社区驱动，版本管理 |
-| SkillsMP | 外部 | 283K+ 最大数据库 |
-| Aone Skills | 内部 | 阿里内部，与 Aone Copilot 深度集成 |
+**把 Skill 当软件管：**语义化版本 + PR 模板（动机/影响/评估）+ 结构化 diff + 跨版本评估对比 + 灰度发布。
 
-### Agent 平台 Skill 使用
-- **Aone Copilot**：放入 ~/.aone_copilot/skills/ 或市场一键安装
-- **AccioWork**：内置 Skill 直接安装，自定义需上传安装包
-- **QCoder**：放入项目级 .skills/ 目录
-- **悟空**：平台 UI 上传或系统提示词加载
+## 为什么 Skill 比代码更危险
 
-### SKILL.md 规范
-- **必需字段**：name（最长64字符）、description（最长1024字符，是触发关键）
-- **可选字段**：license, compatibility, allowed-tools, metadata
-- **正文结构**：快速开始 → 参数列表 → 工作流 → 错误处理 → 附加资源引用
+| 弱点 | 说明 |
+|------|------|
+| 没有强类型检查 | 写错变量名、漏写步骤，编译器不会告诉你 |
+| 影响范围隐式 | 改了某一段，可能影响一大批场景，但看不到连接 |
+| "我以为这样更好" | 每处改动都没错，叠加起来可能让整体行为往坏的方向漂 |
+| 没有明确退出语义 | 改坏了等线上出现一连串"Agent 行为变怪"才被注意到 |
 
-### 三大痛点与解决方案
-**痛点一：跨平台一致性**
+## 五大原则
 
-- 三纯净原则：正文纯文本、工具用能力描述、路径不写死
-- 用 HTML 注释隔离平台增量语法
-- 确定性逻辑下沉到 scripts/
-**痛点二：版本管理和更新分发**
+### 原则一：每次改动必须有版本号
 
-- 强制 PR + 1人 CR
-- CI 跑 schema 校验、prompt-lint
-- 平台支持时优先发 beta 通道
-- 弃用时在 description 加 [DEPRECATED]
-**痛点三：开发调试效率低**
+语义化版本规则：
 
-- Hot Reload（Claude Code 2.1+）
-- Symlink 软链方案
-- 双窗口对照：dev 版 vs prod 版并排对比
+| 版本类型 | 格式 | 含义 | 例子 |
+|---------|------|------|------|
+| major | X.0.0 | 行为发生不兼容变化 | 删除 step、改变默认行为、status→deprecated |
+| minor | 0.X.0 | 新增能力，向前兼容 | 新增可选 Input、新增 step |
+| patch | 0.0.X | bug 修复、措辞优化 | 增加 Pitfall、改 owner |
 
-### Skill 自我进化机制
-- Binary Eval 自动打分（pass/fail）
-- 失败时 Reflection Agent 提炼修复 patch
-- 每次改完跑回归用例，通过率不达标自动阻断
+### 原则二：PR 必须包含动机和影响
+
+每次改动回答三个问题：
+
+1. **为什么改？** — 哪个真实事件触发了这次改动
+2. **改了什么？** — diff 总结
+3. **影响哪些场景？** — 哪些调用方可能受影响
+
+**PR 模板必须包含**：版本变化、改动动机、改动内容、影响范围、评估结果。
+
+### 原则三：版本之间的 diff 必须可读
+
+结构化 diff 示例：
+
+```
+v1.2.0 → v1.3.0 diff:
+  frontmatter:
+    + version: 1.2.0 → 1.3.0
+    + last_updated: 2026-04-10 → 2026-04-25
+  Steps:
+    + 新增 step 1: 检查近 30 分钟 SLB 健康检查变更
+    ~ 原 step 1-5 编号变为 step 2-6
+  Pitfalls:
+    + 新增: Redis 异常常常是症状不是根因
+```
+
+### 原则四：跨版本必须有评估对比
+
+测试集来源：
+
+- **历史调用回放**：从过去 30 天调用日志里采样有代表性的 case
+- **人工策展样本**：故意覆盖典型场景和边缘场景
+- **故障案例**：来自真实线上事故的复盘 case
+
+**评估指标**：任务成功率、步骤数、错误归因率、禁飞区触发。任何一项回退则不能合并。
+
+### 原则五：危险变更必须强制灰度
+
+| 风险档 | 例子 | 上线策略 |
+|--------|------|---------|
+| 低风险 | 修措辞、加 Pitfall | 直接合并 |
+| 中风险 | 新增 step、修改判断条件 | 灰度 1-3 天 |
+| 高风险 | major 版本、删除 step、改默认行为 | 灰度 7 天 + 多团队验证 |
+
+灰度监控指标：调用成功率、异常退出比例、用户纠正比例、平均执行步骤数。
+
+## 真实案例：incident-triage 演进轨迹
+
+| 版本 | 改动 | 评估结果 |
+|------|------|---------|
+| v1.0.0 | 初版 | 任务成功率 62% |
+| v1.1.0 | + Inputs/Verification | 任务成功率 71% |
+| v1.2.0 | + 3 条 Pitfalls | 错误归因率 -8% |
+| v1.3.0 | + SLB 检查作为第 1 步 | 平均定位时间 -30% |
+| v2.0.0 (规划中) | 拆成 3 个 Skill | 待评估 |
+
+## 反模式：越改越差的典型
+
+1. **堆 Pitfalls 不删除**：30 条 Pitfalls 让 Agent 反而懒了
+2. **所有改动都是 patch**：版本号毫无意义
+3. **v2 推倒重来**：丢失 v1 沉淀的所有经验
+4. **修一个 bug 引入两个 bug**：缺乏回归测试
+
+## 与已有实体的关联
+
+- Hermes Agent Skill Authoring — Skill 规范与编写指南
+- [Claude Code Skill Writing Guide](ch04/256-skill.md) — 另一套 Skill 编写范式
+- [高德 Uplift Model Harness](ch03/045-agent.md) — 类似的版本演进思路
+- [阿里云 LoongSuite Pilot](ch09/047-coding-agent.md) — 企业级 Agent 系统的质量保障
+
+## 结论
+
+Skill 版本管理最关键的不是工具，而是组织里有没有"把 Skill 当软件管"的共识。
+
+共识立起来后，工程化都不难：语义化版本是现成的，diff 工具可以基于结构化解析做，评估测试集可以从调用日志里采样，灰度策略可以基于 feature flag。
+
+如果共识没立起来，工程做得再好也没用。
 
 ## 深度分析
-### 跨平台一致性的工程挑战
-三纯净原则（正文纯文本、工具用能力描述、路径不写死）是该文最核心的方法论创新。本质上，这是将 Skill 从"平台绑定指令"转化为"语义驱动指令"的范式转变。HTML 注释隔离增量语法的设计尤为巧妙——允许多平台共存而不引入冗余维护成本，同时也为未来新平台预留扩展空间。
 
-### 版本管理的流水线设计
-强制 PR + 1人 CR + CI schema 校验构成三重门禁，将版本管理从人力驱动转为流程驱动。beta 通道设计体现了灰度发布的工程思维，description 加 [DEPRECATED] 则是一种低技术成本的优雅弃用协议。这些设计共同构成一个小型但完整的软件交付流水线。
+### 1. Skill 语义化版本管理
+Skill 版本管理引入语义化版本（semver）——major（不兼容变更）、minor（向后兼容的新功能）、patch（bug 修复）。这使 skill 的依赖关系可管理、可追踪。
 
-### 自我进化机制的战略价值
-Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进从"隐式经验积累"变成"显式可度量的迭代优化"。每次改完跑回归用例、通过率不达标自动阻断——这引入了一个自动化的质量门禁，填补了传统 skill 开发中缺失的测试环节。这一机制与学术界关于 LLM 自动评估（LLM-Eval）的研究方向高度吻合，表明阿里内部已在将学术前沿转化为工程实践。
+### 2. 与软件包管理的类比
+Skill 版本管理与 npm/pip 等包管理的逻辑一致——版本锁定、依赖解析、兼容性检查。AI agent 的 skill 系统正在复用软件工程的成熟模式。
+
+### 3. 版本兼容性的挑战
+Skill 的版本兼容性比软件包更复杂——prompt 模板的细微变化可能导致 LLM 输出大不相同，而软件 API 的兼容性更可预测。
 
 ## 实践启示
-### 开发阶段
-- **起点**：严格遵循 SKILL.md 规范，特别是 name（≤64字符）和 description（≤1024字符）字段——description 是触发的关键，措辞要精准
-- **结构化**：采用标准五段正文（快速开始 → 参数列表 → 工作流 → 错误处理 → 附加资源引用），便于用户理解和平台解析
-- **调试效率**：善用 Hot Reload 和 Symlink 软链方案，特别是 Claude Code 2.1+ 环境，可显著缩短迭代周期
 
-### 发布阶段
-- **跨平台**：始终以三纯净原则为基准，用 HTML 注释隔离平台增量语法，避免"写死平台"的常见陷阱
-- **版本控制**：提交前必走 CI 流程（schema 校验、prompt-lint），发布前优先走 beta 通道验证
-- **协作规范**：强制 PR + 1人 CR，代码审查不只是质量保障，也是知识传递机制
+### 1. 为 skill 采用 semver
+每个 skill 都应有版本号，变更时遵循 semver 规则——让依赖方知道兼容性影响。
 
-### 运维阶段
-- **质量门禁**：建立 Binary Eval 回归机制，每次修改后必须通过自动化评估，不达标则阻断发布
-- **弃用协议**：需要弃用时，在 description 首行加 [DEPRECATED]，不要直接删除——保障用户侧的平稳过渡
-- **持续进化**：Reflection Agent 思路可推广至其他 AI 工作流，将人工修复经验结构化为可复用的 patch 资产
+### 2. 锁定 skill 版本
+在生产 agent 中锁定 skill 版本——避免自动更新引入不兼容变更。
 
-## 相关页面
-- [Skill 写作基础指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md) — 入门级别的 Skill 写作教程
-- [Skill 写作进阶](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-advanced.md) — 高级技巧
-- [Skill 评估方法](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-evaluation.md) — 如何评估 Skill 质量
-
-## 相关实体
-- [十年老技术开发的 AI Agent 探索之路](https://github.com/QianJinGuo/wiki/blob/main/entities/十年老技术开发的-ai-agent-探索之路-v2.md)
-- [9个Agent技能模块化SageMaker微调生命周期](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [SkillX — 层次化技能知识库](https://github.com/QianJinGuo/wiki/blob/main/entities/skillx-hierarchical-skill-library.md)
-- [Anthropic 14 个 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-agent-skills-design-patterns-14.md)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-internal-skill-design-guide.md)
-- [SkillClaw](https://github.com/QianJinGuo/wiki/blob/main/entities/skillclaw.md)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system-winty.md)
-- [四种 Sub Agent 模式](https://github.com/QianJinGuo/wiki/blob/main/entities/four-sub-agent-patterns.md)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/trace2skill-trajectory-distillation-agent-skills.md)
-
-- [Qoder Skills 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skills-complete-guide.md)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](https://github.com/QianJinGuo/wiki/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
-- [Garry Tan](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
-- [Agent Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-workflows.md)
-- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent.md)
-- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
-- [你写的 Skill，及格了吗？](https://github.com/QianJinGuo/wiki/blob/main/entities/ni-xie-de-skill-ji-ge-liao-ma.md)
-- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
-- [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-end-to-end-business-requirements-agent-multica-2026.md)
+### 3. 版本变更的测试
+每次 skill 版本升级后，运行回归测试确保 agent 行为没有意外变化。
 
 ---
 

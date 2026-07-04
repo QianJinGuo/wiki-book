@@ -2,7 +2,7 @@
 
 ## Ch01.193 Agent 评测：方法论与体系设计
 
-> 📊 Level ⭐ | 2.7KB | `entities/agent-评测方法论与体系设计-3.md`
+> 📊 Level ⭐ | 2.7KB | `entities/agent-评测方法论与体系设计-1.md`
 
 # Agent 评测：方法论与体系设计
 
