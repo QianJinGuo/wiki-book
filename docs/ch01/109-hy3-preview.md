@@ -17,10 +17,10 @@
 - 已接入腾讯生态：元宝、ima、CodeBuddy、WorkBuddy、QQ、腾讯文档等
 
 ## 相关实体
-- [Cline releases open-source agent runtime SDK](https://github.com/QianJinGuo/wiki/blob/main/entities/cline-open-source-agent-runtime-sdk.md)
-- [Cline releases open-source agent runtime SDK](https://github.com/QianJinGuo/wiki/blob/main/entities/cline-releases-open-source-agent-runtime-sdk.md)
+- [Cline releases open-source agent runtime SDK](ch03/045-agent.md)
+- [Cline releases open-source agent runtime SDK](ch04/429-cline-releases-open-source-agent-runtime-sdk.md)
 
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-open-source-model-enterprise-practice.md)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](ch03/075-claude-code.md)
 
 ## 深度分析
 ### 架构选择：快慢融合的 MoE 路线

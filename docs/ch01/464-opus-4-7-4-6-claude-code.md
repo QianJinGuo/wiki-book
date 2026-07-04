@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [claude opus 4.8 系统卡片深度分析](ch01/380-claude.md)
+- [claude opus 4.8 系统卡片深度分析](ch01/485-claude.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
@@ -124,7 +124,7 @@ Auto mode 通过**模型驱动的分类器**判定命令是否安全可执行，
 - [Claude Code Dynamic Workflows Multi Agent Orchestration](ch03/075-claude-code.md) — Claude Code 多 Agent 编排完整指南
 - [Claude Code Dynamic Workflows 8Th Translation Xingxiaozhao](ch03/075-claude-code.md) — Claude Code 动态工作流译注
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md) — Claude Code 源码机制
-- [Gsd Get Shit Done Context Management Tool](ch01/196-gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
+- [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md) — Agent 原理架构与工程实践
 
 ---

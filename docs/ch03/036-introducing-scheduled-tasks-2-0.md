@@ -77,7 +77,7 @@ Project 在此版本中成为定时任务的「**上下文容器**」——定�
 5. **执行环境选择**：资源密集型任务使用云端计算资源，避免拖慢本地设备
 ## 相关实体
 - [Introducing Scheduled Tasks 2 0](ch03/036-introducing-scheduled-tasks-2-0.md)
-- [Skill Development Guide Aliyun 2026](ch04/245-skill.md)
+- [Skill Development Guide Aliyun 2026](ch04/256-skill.md)
 - [Openclaw Multi Agent Team Practice](ch03/045-agent.md)
 - [Strands Agents Cloud Cost Optimizer](ch03/045-agent.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)

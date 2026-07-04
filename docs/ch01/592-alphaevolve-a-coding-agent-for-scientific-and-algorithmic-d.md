@@ -15,17 +15,17 @@ AlphaEvolve 不是把 LLM 当成一个更聪明的程序员，而是把 LLM 放�
 核心判断：只要问题存在可执行、可验证、可比较的反馈回路，LLM 就可以不只"直接答题"，而是被放进一个进化系统里持续生成、评估、保留和重组更好的程序。
 
 ## 相关实体
-- [Alphaevolve Impact](ch04/388-alphaevolve-impact-deepmind.md)
-- [Agentmemory Source Analysis Coding Agent Local Memory](ch09/034-agentmemory.md)
+- [Alphaevolve Impact](ch04/405-alphaevolve-impact-deepmind.md)
+- [Agentmemory Source Analysis Coding Agent Local Memory](ch09/047-coding-agent.md)
 - [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
 - [Servicenow Ui Is Dead Agent](ch03/045-agent.md)
 - [Agentexecutorgooglesdistributedagentruntime](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alphaevolve-deepmind-discovery-agent.md)
 
-- [hacker news 热帖：ai 会写代码了，为啥还要用 python？](ch04/150-ai.md)
-- [7个月，234次提交，1690行代码：ai编程大型翻车现场：我决定全部作废，手动重写！](ch04/150-ai.md)
-- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](ch04/150-ai.md)
+- [hacker news 热帖：ai 会写代码了，为啥还要用 python？](ch04/277-ai.md)
+- [7个月，234次提交，1690行代码：ai编程大型翻车现场：我决定全部作废，手动重写！](ch04/277-ai.md)
+- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](ch04/277-ai.md)
 
 ## 深度分析
 

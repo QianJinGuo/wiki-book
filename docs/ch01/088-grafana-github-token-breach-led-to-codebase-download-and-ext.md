@@ -12,19 +12,19 @@
 - CoinbaseCartel 团体声称对事件负责，被评估为 ShinyHunters、Scattered Spider、LAPSUS$ 的衍生分支 
 - CoinbaseCartel 成立于 2025 年 9 月，专注于纯数据窃取和勒索，已累积 170 名受害者 
 ## 相关实体
-- [Grafana Github Token Breach Led To Html](https://github.com/QianJinGuo/wiki/blob/main/entities/grafana-github-token-breach-led-to-html.md)
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](https://github.com/QianJinGuo/wiki/blob/main/entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt-2.md)
-- [Freelance Designers Cant Compete Ai Subscription](https://github.com/QianJinGuo/wiki/blob/main/entities/freelance-designers-cant-compete-ai-subscription.md)
-- [Malware Crew Teampcp Opensources Its Shaihulud Worm On](https://github.com/QianJinGuo/wiki/blob/main/entities/malware-crew-teampcp-opensources-its-shaihulud-worm-on.md)
-- [What Political Censorship Looks Like Inside An Llm S Weights](https://github.com/QianJinGuo/wiki/blob/main/entities/what-political-censorship-looks-like-inside-an-llm-s-weights.md)
+- [Grafana Github Token Breach Led To Html](ch01/833-github.md)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](ch01/833-github.md)
+- [Freelance Designers Cant Compete Ai Subscription](ch04/277-ai.md)
+- [Malware Crew Teampcp Opensources Its Shaihulud Worm On](ch04/277-ai.md)
+- [What Political Censorship Looks Like Inside An Llm S Weights](ch01/122-what-political-censorship-looks-like-inside-an-llm-s-weights.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md)
 
 - Cios Rise To The Global Challenge
-- [Dumb Ways For An Open Source Project To Die](https://github.com/QianJinGuo/wiki/blob/main/entities/dumb-ways-for-an-open-source-project-to-die.md)
-- [Is This Why Science Advances One Funeral At](https://github.com/QianJinGuo/wiki/blob/main/entities/is-this-why-science-advances-one-funeral-at.md)
-- [Tokens Per Result](https://github.com/QianJinGuo/wiki/blob/main/entities/tokens-per-result.md)
-- [Viktor Not A Tool A Hire](https://github.com/QianJinGuo/wiki/blob/main/entities/viktor-not-a-tool-a-hire.md)
+- [Dumb Ways For An Open Source Project To Die](ch01/120-dumb-ways-for-an-open-source-project-to-die.md)
+- [Is This Why Science Advances One Funeral At](ch01/160-is-this-why-science-advances-one-funeral-at-a-time.md)
+- [Tokens Per Result](ch12/003-token.md)
+- [Viktor Not A Tool A Hire](ch01/050-viktor-not-a-tool-a-hire.md)
 ## 深度分析
 1. **纯数据勒索模式正在取代传统勒索软件**：CoinbaseCartel 明确只做数据窃取和勒索，放弃加密锁定环节。这反映了网络犯罪地下经济的分工细化——代码签名和加密不再是入门门槛，直接公开敏感数据更能对受害者施压。
 2. **GitHub Token 作为初始攻击向量具有高性价比**：获取一个 GitHub Personal Access Token 成本极低，但能直接访问代码库、私钥、CI/CD 配置甚至其他集成系统的潜在入口（如 PyPI token、npm token）。相比鱼叉式钓鱼和漏洞利用，Token 泄露的检测难度更高，且大多数企业未对代码托管权限实施最小特权原则。

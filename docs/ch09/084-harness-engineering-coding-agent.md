@@ -44,17 +44,17 @@ Harness Engineering 方法论，让 Coding Agent 能够可靠地完成长程任�
 
 ## 相关文章
 - → [Agent Harness Architecture](ch03/045-agent.md)
-- → [Qoder Skills Complete Guide](ch04/245-skill.md)
+- → [Qoder Skills Complete Guide](ch04/256-skill.md)
 - → [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 ---
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)
 
 ## 相关实体
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch03/045-agent.md)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
-- [Agent生产级Harness工程指南](ch03/045-agent.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch05/061-harness-engineering.md)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/047-coding-agent.md)
+- [Agent生产级Harness工程指南](ch05/061-harness-engineering.md)
 - [Agent架构关键变化：Harness正在成为新后端](ch03/045-agent.md)
-- [Agent Harness 组件解析](ch04/150-ai.md)
+- [Agent Harness 组件解析](ch04/277-ai.md)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/009-harness.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

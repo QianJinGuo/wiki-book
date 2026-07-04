@@ -71,7 +71,7 @@ AI 生成速度导致的一个结构性问题：没有人在一个屏幕上停�
 
 AI 工具的问题在于它跳过了这个学习循环——直接给出答案，而不是让设计师自己发现问题、理解问题、解决问题。
 
-### 与 [Agent Harness 设计](ch04/542-agent-harnesses-are-dead-long-live-agent-harnesses.md) 的类比
+### 与 [Agent Harness 设计](ch04/593-agent-harnesses-are-dead-long-live-agent-harnesses.md) 的类比
 
 Trueman 的论点可以直接映射到 AI Agent 工具设计：
 
@@ -111,7 +111,7 @@ Trueman 坦诚地承认，他自己也不确定这是真正的结构性问题还
 
 - [Design-to-Code Loop: Figma](ch09/005-design-to-code.md)
 - [Figma Make](ch03/047-figma-make.md)
-- [Agent Harnesses](ch04/542-agent-harnesses-are-dead-long-live-agent-harnesses.md)
+- [Agent Harnesses](ch04/593-agent-harnesses-are-dead-long-live-agent-harnesses.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Haptics Design — Microsoft](https://github.com/QianJinGuo/wiki/blob/main/entities/haptics-design-implementation-microsoft-windows11.md)
 

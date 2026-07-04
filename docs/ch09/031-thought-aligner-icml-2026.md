@@ -134,11 +134,11 @@ Agent 以「**Thought-Action-Observation**」循环完成任务。危险行为�
 
 本文是**具体方法**层级的安全方案：
 
-- [AI Agents Security Survey](ch04/150-ai.md) — 攻击/防御**综述**（清华 Fangcun / Bishop Fox AIMap / 1Password），覆盖威胁格局
-- [AI Tool Poisoning](ch04/150-ai.md) — 工具投毒攻击分析
-- [Claw Chain](ch04/150-ai.md) — OpenClaw 漏洞研究
+- [AI Agents Security Survey](ch04/277-ai.md) — 攻击/防御**综述**（清华 Fangcun / Bishop Fox AIMap / 1Password），覆盖威胁格局
+- [AI Tool Poisoning](ch04/277-ai.md) — 工具投毒攻击分析
+- [Claw Chain](ch04/277-ai.md) — OpenClaw 漏洞研究
 - [Anthropic 长时运行 Agent 架构](ch03/045-agent.md) — 对抗式设计 + 合同谈判
-- [Enterprise OpenClaw Security](ch11/210-openclaw.md) — 部署架构
+- [Enterprise OpenClaw Security](ch11/215-openclaw.md) — 部署架构
 
 Thought-Aligner 的独特贡献：
 - **不重新训练原始 Agent**——可插拔即用

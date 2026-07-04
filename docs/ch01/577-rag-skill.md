@@ -23,20 +23,20 @@ RAG 的工程链路分为离线阶段（文档解析→清洗→分块→向量�
 5. **Skill + RAG 是真正的"AI 同事"最小完整集**。只部署 Skill 而不接 RAG，AI 同事知道怎么做但不知道参考资料在哪里；只部署 RAG 而不接 Skill，AI 同事知道资料在哪但不知道按什么顺序使用。两者合一，配合 Judgement 层（模型能力+业务边界+人类兜底），才构成一个可以独立工作的 AI 同事的数字分身。
 
 ## 相关实体
-- [RAG技术框架的演进方向](ch01/207-rag.md)
-- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch04/150-ai.md)
+- [RAG技术框架的演进方向](ch01/310-rag.md)
+- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch04/277-ai.md)
 - [你不知道的 Agent：原理、架构与工程实践](ch03/045-agent.md)
-- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch04/150-ai.md)
+- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch04/277-ai.md)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch03/045-agent.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
-- [Codeindex · 让大模型更好地理解你的代码](ch01/334-codeindex.md)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/245-skill.md)
+- [Codeindex · 让大模型更好地理解你的代码](ch01/440-codeindex.md)
+- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/256-skill.md)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/061-harness-engineering.md)
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](ch03/075-claude-code.md)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/210-openclaw.md)
-- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/150-ai.md)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/215-openclaw.md)
+- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 
 ---

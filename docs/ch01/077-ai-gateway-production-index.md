@@ -42,8 +42,8 @@ Claude Sonnet 4.6 在发布后第一个完整月就吸收了 Sonnet 系列的大
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - AI Gateway production index
-- [AI Gateway production index](ch04/310-ai.md)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch04/310-ai.md)
+- [AI Gateway production index](ch04/277-ai.md)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

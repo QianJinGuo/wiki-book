@@ -30,8 +30,8 @@
 ## 与现有知识关联
 - [Claude Managed Agents 开发者指南](ch03/045-agent.md) — Managed Agents 概念扩展
 - [Anthropic PM 的 Agentic 工作流](ch03/045-agent.md) — 管理多个 Agent 的场景
-- [Agentic AI 系统架构](ch04/245-skill.md) — 五层架构，管理层问题
-- [Skill-RAG：清华 SRA](ch04/245-skill.md) — Skill 检索增强相关
+- [Agentic AI 系统架构](ch04/256-skill.md) — 五层架构，管理层问题
+- [Skill-RAG：清华 SRA](ch04/256-skill.md) — Skill 检索增强相关
 - [Agent自我改进六条路](ch03/045-agent.md) — Skill 积累属于经验沉淀
 - Paperclip — 定位对比（个人AI公司模拟）
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/multica-managed-agents-platform.md)
@@ -54,11 +54,11 @@ Multica 的核心创新在于将"管理层"从框架层抽离出来，成为独�
 4. **并发控制注意**：默认 20 并发适合中小团队，大规模调度需要调整或引入任务队列层
 
 ## 相关实体
-- [Anthropic Claude Managed Agents 平台正式发布](ch03/045-agent.md)
+- [Anthropic Claude Managed Agents 平台正式发布](ch01/217-0.md)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch03/045-agent.md)
 - [Claude Managed Agents 官方 Harness 平台指南](ch03/045-agent.md)
-- [claude managed agents](ch04/537-claude-managed-agents.md)
-- [claude managed agents official](ch04/479-claude-managed-agents-official.md)
+- [claude managed agents](ch04/474-claude-managed-agents.md)
+- [claude managed agents official](ch04/511-claude-managed-agents-official.md)
 
 ---
 

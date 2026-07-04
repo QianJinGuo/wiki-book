@@ -101,7 +101,7 @@ Computer Misuse Act 1990 的 "authorised person" 概念预设了一个**人类�
 
 ## 相关实体
 
-- [DeepMind AI Agent 安全](ch04/150-ai.md) — Agent 安全的技术框架
+- [DeepMind AI Agent 安全](ch04/277-ai.md) — Agent 安全的技术框架
 - [CVE 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/getting-cve-without-shipping-slop.md) — 安全研究的实操视角
 - [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md) — Agent 安全概念框架
 - [Agent 内存架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md) — Agent 身份管理与归属

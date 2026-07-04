@@ -172,9 +172,9 @@ AWS 中国团队在 agent memory 工程上的实践反映了中国的特殊情�
 ## 相关阅读
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-→ [AI Agent Memory Systems（架构模式全景)](ch04/150-ai.md)
+→ [AI Agent Memory Systems（架构模式全景)](ch04/277-ai.md)
 → [Agent Memory 架构本质](ch03/045-agent.md)
-→ [Agent Memory 过去-现在-未来](ch04/030-agent-memory-architecture-past-influence-future-ruofei.md)
+→ [Agent Memory 过去-现在-未来](ch03/045-agent.md)
 → [Agent-Memory 评测全景（淘天综述）](ch03/045-agent.md)
 → [AgentCore Harness 架构](ch03/045-agent.md)
 → [Hermes Agent 记忆系统](ch03/045-agent.md)

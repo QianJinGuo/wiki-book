@@ -195,13 +195,13 @@ def aggregate_results(results):
 
 ## 相关主题
 
-→ [Ai Skill Evolution底层逻辑](ch04/245-skill.md) — Skill 的演进框架底层逻辑
+→ [Ai Skill Evolution底层逻辑](ch04/256-skill.md) — Skill 的演进框架底层逻辑
 
-→ [Skills Refiner Design Quality Evaluation Framework](ch04/245-skill.md) — skill-creator 的质量评估补充工具
+→ [Skills Refiner Design Quality Evaluation Framework](ch04/256-skill.md) — skill-creator 的质量评估补充工具
 
-→ [Ai Skill Metrics System](ch04/245-skill.md) — AI Skill 测评指标体系
+→ [Ai Skill Metrics System](ch04/256-skill.md) — AI Skill 测评指标体系
 
-→ [Ai Skill 四层验证体系](ch04/245-skill.md) — SkillSentry 四层验证体系（四）
+→ [Ai Skill 四层验证体系](ch04/256-skill.md) — SkillSentry 四层验证体系（四）
 
 ## 深度分析
 

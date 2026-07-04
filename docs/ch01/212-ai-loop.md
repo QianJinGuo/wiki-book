@@ -2,7 +2,7 @@
 
 ## Ch01.212 吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代
 
-> 📊 Level ⭐ | 2.6KB | `entities/吴恩达最新思考从分钟到天ai产品如何靠三层loop迭代.md`
+> 📊 Level ⭐ | 2.6KB | `entities/吴恩达最新思考从分钟到天ai产品如何靠三层loop迭代-2.md`
 
 # 吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代
 

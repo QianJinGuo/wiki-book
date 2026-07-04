@@ -102,9 +102,9 @@ Kiro CLI 的非交互模式意味着结果完全由输出内容决定。建议�
 
 ## 相关实体
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
-- [Using Kiro Cli Agent Client Protocol Build Ai Chat](ch04/150-ai.md)
+- [Using Kiro Cli Agent Client Protocol Build Ai Chat](ch04/277-ai.md)
 - [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](https://github.com/QianJinGuo/wiki/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
-- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](ch04/150-ai.md)
+- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](ch04/277-ai.md)
 - [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
 
 ## 相关引用

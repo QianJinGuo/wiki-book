@@ -78,8 +78,8 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 ## 与用户 Harness 体系的关系
 本文与以下页面形成呼应：
 
-- [高德伴行Agent](ch04/150-ai.md)（工作现场六组件）
-- [Hermes Agent](ch03/087-hermes-agent.md)（Karpathy 观点被多次引用）
+- [高德伴行Agent](ch04/277-ai.md)（工作现场六组件）
+- [Hermes Agent](ch03/090-hermes-agent.md)（Karpathy 观点被多次引用）
 - [Agent Memory Architecture](ch03/045-agent.md)（状态为什么得落在模型外面）
 
 ## 相关页面
@@ -87,10 +87,10 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 
 ## 相关实体
 - [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](ch09/057-codex-goal-six-hour-run.md)
-- [Cline releases open-source agent runtime SDK](ch04/401-cline-releases-open-source-agent-runtime-sdk.md)
+- [Cline releases open-source agent runtime SDK](ch04/429-cline-releases-open-source-agent-runtime-sdk.md)
 - [Cline releases open-source agent runtime SDK](ch03/045-agent.md)
 
-- [Openai Symphony Codex Orchestration Linear Control Plane](ch04/150-ai.md)
+- [Openai Symphony Codex Orchestration Linear Control Plane](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 深度分析
 ### 目标状态机的本质：把"意图"变成"运行时对象"

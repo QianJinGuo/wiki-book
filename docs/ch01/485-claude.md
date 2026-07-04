@@ -94,27 +94,27 @@
 - [Coding Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md)——从技术架构角度理解AI Agent与传统软件的根本差异
 
 ## 相关实体
-- [Claude Code Commands Usage Guide](ch09/099-claude-code-commands-usage-guide.md)
+- [Claude Code Commands Usage Guide](ch03/075-claude-code.md)
 
 - [这样的程序员应该招吗](https://github.com/QianJinGuo/wiki/blob/main/entities/这样的程序员应该招吗.md)
-- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/380-claude.md)
+- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/485-claude.md)
 - [Claude Code Prompt Source Analysis Fanone](ch03/075-claude-code.md)
 - [Claude Code Html Artifact Workflow Ifanr](ch03/075-claude-code.md)
 - [Claude Code Team 10 Tips Boris Data派Thu](ch03/075-claude-code.md)
-- [Claude Md 12 Rules Mnilax Cf2019](ch01/380-claude.md)
+- [Claude Md 12 Rules Mnilax Cf2019](ch01/217-0.md)
 - [Claude Code Dynamic Workflows Thariq Practical Patterns](ch03/075-claude-code.md)
-- [Claude Opus 48 The System Card B8460F](ch01/380-claude.md)
-- [Ruofei Claude 18 Actions Personal Ai Workbench](ch04/150-ai.md)
+- [Claude Opus 48 The System Card B8460F](ch01/217-0.md)
+- [Ruofei Claude 18 Actions Personal Ai Workbench](ch04/277-ai.md)
 - [Claude Code Dynamic Workflows 8Th Translation Xingxiaozhao](ch03/075-claude-code.md)
 - [Claude Code Best Community Fork Evolution Vibecoder](ch03/075-claude-code.md)
 - [Claude Code Dynamic Workflows Jiqizhixin 9Th Translation](ch03/075-claude-code.md)
 - [Claude Code Superpowers Workflow By Xinlingyuanyuanyuan](ch03/075-claude-code.md)
-- [Claude Dispatch And The Power Of Interfaces](ch01/436-claude-dispatch-and-the-power-of-interfaces.md)
+- [Claude Dispatch And The Power Of Interfaces](ch01/543-claude-dispatch-and-the-power-of-interfaces.md)
 - [Claude Code Dynamic Workflows Zhuge6 Yucheng Translation](ch03/075-claude-code.md)
-- [Claude Code And What Comes Next](ch01/403-claude-code-and-what-comes-next.md)
+- [Claude Code And What Comes Next](ch01/469-claude-code-and-what-comes-next.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
-- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/380-claude.md)
-- [Dingtalk Qoder Claudecode Dual Engine Ai Assistant](ch04/150-ai.md)
+- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/485-claude.md)
+- [Dingtalk Qoder Claudecode Dual Engine Ai Assistant](ch04/277-ai.md)
 
 ---
 

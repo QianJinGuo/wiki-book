@@ -1,141 +1,133 @@
-# 复旦北大 AHE：Agentic Harness Engineering 瓶颈分析
+# AHE：Agentic Harness Engineering
 
-## Ch04.225 复旦北大 AHE：Agentic Harness Engineering 瓶颈分析
+## Ch04.225 AHE：Agentic Harness Engineering
 
-> 📊 Level ⭐⭐ | 10.5KB | `entities/fudan-peking-ahe-agentic-harness-engineering.md`
+> 📊 Level ⭐⭐ | 10.5KB | `entities/agentic-harness-engineering-ahe.md`
 
-## 1. 被忽视的「Harness Engineering」瓶颈
+## 核心问题
+Harness Engineering 迭代依赖人工经验，模型以月为单位进化、任务场景往长尾分布发展——如何让 Harness 自动从经验中学习并改进？
 
-Coding Agent 的进展不只取决于 Base Model 的智商，更取决于它外围的工程架构——Harness。Harness 是模型与外部世界之间的「中介层」，包括：System Prompt、Tools、Middleware、Skills/Sub-agents、Long-term Memory。
+## 论文信息
+- **标题：** Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses
+- **arXiv:** arxiv.org/abs/2604.25850
+- **代码:** github.com/china-qijizhifeng/agentic-Harness-engineering
+- **团队:** 复旦大学、北京大学、上海奇绩智峰
 
-核心问题：如何让一个「进化 Agent」自动、稳定地联合优化 Harness 的所有可编辑组件？
+## 方法：三角色 × 三层可观测
+### 三角色
+| 角色 | 职责 |
+|------|------|
+| Coding Agent | 运行测试 |
+| Agent Debugger | 整理轨迹 |
+| Evolve Agent | 修改 Harness 实现进化 |
 
-作者抛出了一个反直觉的判断：进化 Agent 稳定优化 Harness瓶颈，不是因为 Agent 不够聪明，而是因为整个进化循环缺乏可观测性。
+### 三层可观测性
+**1. 组件可观测性（NexAU）**
+Harness 拆成七种正交文件级组件，每个独立文件，通过 Git 版本管理：
 
-## 2. AHE 核心设计：三大可观测性支柱
+- System Prompt
+- Tool Description
+- Tool Implementation
+- Middleware
+- Skill
+- Sub-agent Config
+- Long-term Memory
+目标 Coding Agent 从"零先验"极简形态起步（只有一个 run_shell_command 工具），确保每次新增组件都能被干净归因。
+**2. 经验可观测性（Agent Debugger）**
+分层提炼流水线：
 
-AHE 的核心洞察是：瓶颈不在 Agent 能力，而在可观测性（Observability）。整个闭环由三大支柱支撑：
+- 底层：完整记录所有原始轨迹
+- 中层：Cleaner 去除重复工具输出
+- 上层：QA Sub-agent 针对每题多次 rollout 自动切换提问策略
+**10M token raw trace → 10K token 概览报告。** Evolve Agent 默认只需阅读概览，随时可回溯原始轨迹。
+**3. 决策可观测性（Evolve Agent）**
+证据驱动修改，每次变更必须附带"变更清单"：
 
-### 2.1 组件可观测性：文件级解耦 Harness
+- 失败的证据（具体哪些任务失败了）
+- 推断的根因
+- 针对性的修改方案
+- 自我声明的预测（预计修复哪些任务、可能破坏哪些任务）
+**约束：** 只能修改 workspace 内的 Harness 组件文件；评测框架、LLM 配置、原始 System Prompt 均为只读。预测正确的修改保留，预测错误的自主回滚。
+> 每一次 Harness 变动不再是无工程师的直觉、抽象经验，而是一条可被下一轮实验所证伪的假说。**Harness 进化由此从艺术走向工程，从经验走向科学。**
 
-AHE 将 Harness 显式解耦为 7 种正交组件类型：System Prompt、Tool Description & Implementation、Middleware、Skill、Sub-agent Configuration、Long-term Memory。每个失败模式都能映射到单一组件类别。
+## 实验结果
+| 配置 | 结果 |
+|------|------|
+| GPT-5.4 + AHE Terminal-Bench 2 | 69.7 → **77.0**（+7.3点，相对+10.5%）|
+| vs OpenAI Codex-CLI | 71.9%（AHE 更高）|
+| 全球排名 | **第三** |
+| 跨模型泛化（GPT-5.4 演化 Harness 直接迁移）| Qwen-3.6-Plus: +5.1点；Gemini-3.1-Flash: +7.3点；DeepSeek-V4: +10.1点 |
+| 跨任务泛化 | SWE-Bench Verified 上比 ACE 和 TF-GRPO 更高成功率 |
 
-种子 Harness 被刻意设计得极简（只有一个 shell 执行工具，无中间件、无技能），迫使后续每个组件都必须靠实测数据「挣」到自己的位置。
+### 修改分布
+middleware 37% + tool 48% + prompt 10%——没有任何层级单独占比超过一半，不同阶段灵活调整。
 
-### 2.2 经验可观测性：分层蒸馏轨迹证据
+## 关键洞察
+### "事实比策略更可迁移"
+消融实验（Memory/Tool/Middleware/System Prompt 逐一单独放回）：
+| 组件 | 效果 |
+|------|------|
+| **Memory** | **单独恢复全局增幅的 95% 以上** |
+| Tool | 中等难度题目提升显著 |
+| System Prompt | 单独迁移反而导致性能下降 |
+**原因：** Prompt 的语义是"策略性的"（你应该这样做），而 Memory 和 Tool 的语义是"事实性的"（这里有一段可复用代码）。事实比策略迁移性好。
 
-原始轨迹是数百万 token 的「噪音海洋」。AHE 引入 Agent Debugger 框架，输出两层报告：Per-task Analysis（每个任务的根因分析）和 Benchmark-level Overview（聚合所有任务的全局概览）。这种渐进式披露既省 token，又保证决策有据可依。
+### 人工先验的陷阱
+| 策略 | 结果 |
+|------|------|
+| 仅在 30 道 hard 题目上演化 | 16-20 间反复震荡，Evolve Agent 写针对性 hack |
+| 加入"Safety/Creativity/Generality"原则指导 | 75.3% 早早触顶，人工行为先验成了进化的僵化之源 |
+| 删除所有行为指导，只保留证据驱动 | 77.0% 稳步提升，修改分布健康 |
 
-### 2.3 决策可观测性：可证伪的编辑契约
-
-进化 Agent 每轮读取分层证据后，决定增删改哪些组件。AHE 对编辑施加两道约束：
-
-- **可控性**：进化 Agent 只能在 Harness 工作区内写入，运行目录、验证器、LLM 配置均为只读，种子 System Prompt 不可删除
-- **自声明预测**：每个编辑附带 Manifest 记录，包含：失败证据推断的根因、目标修复方案、预测影响
-
-## 3. 实验结果
-
-### 3.1 AHE 能否超越人类与自动化基线？
-
-在 Terminal-Bench 2（89 个任务，k=2 rollout/任务）上运行 10 轮 AHE：
-
-- AHE 从种子 69.7% 提升至 77.0%
-- 超越人类设计的 Codex-CLI（71.9%）和自进化基线 ACE（68.9%）、TF-GRPO（72.3%）
-
-为什么 ACE 和 TF-GRPO 追不上？它们只编辑单一表面（Prompt 或工具序列），但 AHE 的增益恰恰来自工具实现、中间件和记忆。
-
-### 3.2 进化结果是否过拟合？
-
-跨基准迁移（SWE-bench-verified）：
-
-- AHE 取得最高整体成功率，比种子少用 12% token
-- ACE 和 TF-GRPO 的 Prompt 级注入在跨任务表面时变成「昂贵噪音」
-
-跨模型迁移（5 个不同基座）：
-
-- GPT-5.4 medium: +2.3 pp
-- GPT-5.4 high: +7.3 pp
-- GPT-5.4 xhigh: +2.3 pp
-- Gemini-3.1-flash-lite: +5.1 pp
-- DeepSeek-v4-flash: +10.1 pp
-- Qwen-3.6-plus: +6.3 pp
-
-规律：离饱和越远的模型，增益越大。
-
-### 3.3 增益从哪来？自归因可靠性
-
-组件消融：
-
-- Long-term Memory: +5.6 pp
-- Tools: +3.3 pp
-- Middleware: +2.2 pp
-- System Prompt: -2.3 pp（回归）
-
-自归因可靠性：
-
-- Fix Precision: 33.7%（随机基线 6.5%）
-- Fix Recall: 51.4%（随机基线 10.6%）
-- Regression Precision: 11.8%（随机 5.6%）
-- Regression Recall: 11.1%（随机 5.4%）
-
-进化 Agent 能可靠地知道自己要修什么，但预见不到自己的改动会搞坏什么。这是 AHE 当前最大的局限。
+### 核心启示
+> 当模型足够强，搭建一个结构化的、可观测的演化环境，比直接开发 Harness 更重要。
+无需替 Agent 思考方法论——给它清晰的 workspace、明确的修改接口、高质量的反馈信号，Evolve Agent 的行为便自动向真实工程师收敛。
 
 ## 深度分析
+### AHE 的工程哲学：从直觉迭代到假说-验证闭环
+传统 Harness Engineering 依赖人类工程师的隐性知识——对模型行为的直觉、对失败模式的经验感知。这种方式的问题在于知识无法形式化、无法累积、无法自动化。每次模型升级（如 GPT-4 → GPT-4.5），大量人工经验直接失效，工程师必须重新"培养手感"。
+AHE 的核心贡献是将这套隐式知识显式化为**可证伪的假说体系**：每次修改必须有失败证据、根因推断、修改方案和自我预测。这个框架的精妙之处在于——它让进化本身变得可观测、可回滚、可累积。Evolve Agent 不再是"碰运气"，而是像一个真正的工程师那样工作：提出假说、设计实验、观察结果、修正方向。
 
-### 可观测性驱动的范式转移
+### 三层可观测性的递进价值
+组件可观测性解决的是**归因问题**：当性能提升或下降时，到底是哪个组件的贡献？传统 Harness 的所有组件混在一个文件里，修改即污染，归因几乎不可能。NexAU 的七种正交组件 + Git 版本控制，从工程基础设施层面保证了这一点。
+经验可观测性解决的是**信息压缩问题**：10M token 原始轨迹 → 10K token 概览报告，压缩比 1000:1，但关键信息得以保留。Agent Debugger 的分层提炼（原始 → Cleaner → QA Sub-agent）本质上是做了一个蒸馏（distillation）操作——把模型行为的事实蒸馏成工程师可读的语义报告。
+决策可观测性解决的是**自我修正问题**：约束条件（只能改 workspace 内的 Harness 组件；评测框架、LLM 配置、原始 System Prompt 只读） + 预测错误的自主回滚机制，让 Evolve Agent 的错误成本可控。这两条约束是整个体系的"护栏"，没有它们，自动化进化会迅速失控。
 
-传统观点认为 Coding Agent 的进化瓶颈在于模型能力不足，但 AHE 揭示了一个更深层的结构性缺陷：进化循环缺乏足够的信号来指导编辑决策。当进化 Agent 无法准确判断「哪个组件导致了失败」时，它只能进行盲目搜索或依赖人类干预。这与机器学习中「没有观测就没有优化」的核心原则完全对应——在缺乏可观测性的情况下，进化搜索退化为随机扰动。
+### "事实比策略更可迁移"的深层含义
+这个发现对整个 AI Engineering 领域有普遍意义。System Prompt 的语义是策略性的——"你应该这样做"——这意味着它绑定到特定任务的特定解决路径。一旦任务分布或模型能力发生变化，这条策略就可能完全失效，甚至产生反效果（单独迁移 System Prompt 导致性能下降）。
+Memory 和 Tool 的语义是事实性的——"这里有一段可复用代码"、"这个工具有这个功能"。事实性知识不依赖任务上下文，不依赖"应该怎么做"的推理链，它就是客观存在。跨模型迁移时，事实性知识天然抗分布漂移。
+这给 AI 工程实践的启示是：**我们应该把越多的决策逻辑编码为事实（Memory/Tool），而非策略（Prompt）**。例如，不在 System Prompt 里写"遇到排序问题先用快速排序"，而是构建一个包含排序算法实现的 Memory 库，让模型自己决定何时调用。
 
-### 进化 Agent 的能力边界
+### 人工先验的双刃剑效应
+实验揭示了一个深刻矛盾：人类工程师倾向于为 Evolve Agent 提供"行为指导原则"（Safety/Creativity/Generality），但这些原则在实践中反而成了进化路径的"局部最优陷阱"——提前触顶，无法继续探索。
+这与强化学习中的"奖赏函数工程"问题高度相似：过于具体或狭窄的奖赏函数会导致策略收敛到意外角落。75.3% 早早触顶的原因很可能是 Generality 原则过于抽象，模型在追求通用性的过程中牺牲了针对性和深度；而删除所有行为指导后，反而释放了进化的探索空间。
+**启示**：在设计自动化进化系统时，要极度谨慎地引入人类先验。如果必须引入，应该让先验足够抽象和宽松，不要用先验替代演化过程中的探索。
 
-AHE 的实验数据精确划定了进化 Agent 的能力边界：Fix Precision 达到 33.7%（随机基线的 5 倍），说明进化 Agent 在正向修复任务上具备可靠的自归因能力。但 Regression 相关指标（Precision 11.8%, Recall 11.1%）几乎等于随机基线，意味着进化 Agent 完全无法可靠预测自身改动带来的负面副作用。这解释了为什么 AHE 需要在 Harness 层面施加「种子 System Prompt 不可删除」这样的保守约束。
-
-### 组件非加性交互
-
-组件消融数据揭示了一个违反直觉的现象：System Prompt 的单独优化反而导致 -2.3 pp 的性能回归。这说明 Harness 组件之间存在强烈的非加性交互——单独优化某个组件可能破坏其他组件已经建立的协作模式。Long-term Memory（+5.6 pp）贡献最大，说明对于 Coding Agent 而言，历史任务经验的结构化积累是比精心设计的 System Prompt 更有价值的进化方向。
-
-### 任务饱和效应与跨模型迁移
-
-跨模型实验的核心发现是「离饱和越远，增益越大」——DeepSeek-v4-flash（+10.1 pp）和 GPT-5.4 high（+7.3 pp）远超 GPT-5.4 xhigh（+2.3 pp）。这一定量规律揭示了一个重要洞察：模型本身的能力越接近某个任务的上界，Harness 优化的边际收益越小。更重要的是，AHE 的跨模型迁移不依赖任何模型特定适配，说明通过可观测性驱动的 Harness 优化具有某种「领域无关」的通用性。
-
-### 编码通用协调模式 vs 模型特定提示词
-
-AHE 的架构选择（Tool Description、Middleware、Skill 作为独立可编辑组件）与传统 Prompt Engineering 的本质区别在于：前者编码的是「通用协调模式」，后者调优的是「模型特定提示词」。通用协调模式可以在不同模型家族之间零样本迁移，而模型特定提示词在跨模型时变成「昂贵噪音」。这解释了为什么 AHE 的进化结果在 SWE-bench 上比种子基线少用 12% token——因为它学会的是「如何协调工具」而不是「如何给特定模型写 prompt」。
+## 相关链接
+- [Agent Harness Engineering Survey 2026](ch05/061-harness-engineering.md)
+- [Hermes Agent Closed Learning Loop](ch03/045-agent.md)
 
 ## 实践启示
+### 对 Harness 工程团队
+1. **建立组件化 Harness 基础设施**：将 System Prompt、Tool Description、Middleware、Skill 等拆分为独立文件，配合 Git 管理。这是最重要的技术债务，也是后续所有自动化的前提。
+2. **构建轨迹蒸馏流水线**：用 Agent Debugger 自动化原始轨迹的提炼——Cleaner 去噪 + QA Sub-agent 策略分析。这是 Evolve Agent 高效工作的信息基础。
+3. **强制证据驱动的修改规范**：要求每次 Harness 变更必须附带失败证据、根因分析和预测，消除"凭感觉改"的习惯。预测正确的修改保留，错误的自主回滚。
+4. **优先迁移事实性组件**：跨模型或跨任务迁移时，优先迁移 Memory 和 Tool 实现，谨慎迁移 System Prompt。必要时可以完全丢弃原 System Prompt，只在新模型上重新设计。
+5. **警惕人工先验的过早收敛**：如果引入行为原则指导，确保原则足够抽象；在自动化进化早期阶段，让系统充分探索，再考虑引入约束。
 
-### 可观测性基础设施建设优先
+### 对 AI  工程平台设计者
+1. **算力分配应向可观测性基础设施倾斜**：在 AHE 的三角色中，Coding Agent 和 Evolve Agent 本质上都在消耗算力，但 Agent Debugger 的可观测性基础设施决定了进化的效率上限。
+2. **评测框架必须只读**：这是 AHE 能实现自动回滚的技术前提。如果评测框架可被修改，Evolve Agent 可能通过修改评测来"作弊"，而不是真正改进 Harness。
+3. **设计多模型 adversarial 验证**：AHE 中 Evolve Agent 的约束机制本质上是一种 adversarial 设置——让修改者无法替自己圆场。在设计自动化优化系统时，应内置这种"对立方"角色。
+4. **跨任务泛化比单任务优化更有长期价值**：SWE-Bench Verified 上的泛化结果比单任务分数更有说服力——这说明 AHE 学到的是可迁移的结构，而非针对特定评测的 hack。
 
-在构建任何生产级 Coding Agent 时，应将可观测性基础设施（轨迹记录、根因分析、组件级归因）作为与模型能力同等优先的工程投资。缺乏可观测性的 Agent 系统，其优化空间将很快遭遇瓶颈。AHE 框架的 Agent Debugger 输出设计（Per-task Analysis + Benchmark-level Overview）是一个值得参考的分层设计模式。
+## 相关概念
+- HarnessEngineering — Harness Engineering 基本框架（实体不存在，待创建）
+- MemoryInAgent — Memory 是事实性载体，比策略性 Prompt 更可迁移（实体不存在，待创建）
 
-### 极简种子设计原则
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)
 
-设计进化 Harness 的起点时，遵循「极简种子」原则：只包含最少数量的必要组件（如 AHE 只用一个 shell 执行工具），让每个后续添加的组件都必须通过实测数据证明自己的存在价值。这避免了「过早复杂化」陷阱——在还没有足够观测数据时添加中间件或技能，只会让问题空间膨胀而无法定位真正有效的组件。
-
-### 硬约束与自声明预测
-
-在构建进化 Agent 时，为编辑操作添加「可控性」约束（如只读运行目录和验证器）和「自声明预测」机制（每个编辑附带 Manifest 记录预测影响）。AHE 的实验表明，Fix Precision 高达 33.7% 是因为进化 Agent 有了自声明预测的压力后，决策质量显著提升。在没有约束的情况下，进化 Agent 倾向于过度乐观地评估自己的改动。
-
-### 预测-验证闭环
-
-利用 AHE 的「自声明预测 + 实际结果对比」机制建立预测-验证闭环。每个编辑决策之前，记录预测影响；执行后，对比实际结果与预测的偏差。这个闭环不仅能积累可归因的进化知识，还能逐步校准进化 Agent 对自身能力边界的认知——减少「预见不到搞坏什么」的问题。
-
-### 正交组件设计与分层评估
-
-将 Harness 解耦为正交组件类型（System Prompt、Tool、Middleware、Skill、Memory 等），确保每个组件的职责边界清晰。这种设计使得组件级消融实验成为可能——只有能够独立评估，才能独立优化。AHE 的 7 类组件划分提供了一个可参考的粒度标准。
-
-### 任务饱和感知调度
-
-在分配进化计算资源时，优先选择「离饱和越远」的模型和任务组合——同样的进化投入，在低饱和场景下可以获得 3-5 倍的相对收益。对于已接近任务上界的模型，应该将优化方向从「提升绝对性能」转向「降低 token 消耗」或「提升跨任务鲁棒性」。
-
-## 相关实体
-- [Harness Engineering Framework](ch05/061-harness-engineering.md)
-- [Harness Engineering 第三代工程范式](ch05/061-harness-engineering.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/245-skill.md)
-- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/192-tencent-vibe-coding-to-agentic-engineering-backend.md)
-- [Agentic Ai System Architecture Harness Skill Mcp](ch04/245-skill.md)
-
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fudan-peking-ahe-agentic-harness-engineering.md)
+- ToolUseInAgent — Tool 在中等难度题目上效果显著（实体不存在，待创建）
 
 ---
 

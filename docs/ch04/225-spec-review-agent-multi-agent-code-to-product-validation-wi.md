@@ -149,8 +149,8 @@ AI 可以加速审查但不是替代——业务逻辑和用户体验的判断�
 ## 相关实体
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/266-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch03/045-agent.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Verizon Connect Agentic Ai 100K Users](ch04/150-ai.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
+- [Verizon Connect Agentic Ai 100K Users](ch04/277-ai.md)
 - [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](ch07/042-aws-devops-agent-mcp-server.md)
 
 ---

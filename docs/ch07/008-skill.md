@@ -370,11 +370,11 @@ Skill 采用渐进式加载策略，而非一次性将所有内容塞入上下�
 
 ## 相关实体
 
-- [Anthropic 官方 14 种 Skill 设计模式](ch04/245-skill.md)
-- [Skill 设计模式](ch04/245-skill.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/194-tencent-vibe-coding-to-agentic-engineering-backend.md)
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](ch01/546-skills-anthropic-openai-comparison-frontend-design.md)
-- [Claude Design 系统提示词 → web-design-engineer Skill](ch01/946-claude-design-skill.md)
+- [Anthropic 官方 14 种 Skill 设计模式](ch04/256-skill.md)
+- [Skill 设计模式](ch04/256-skill.md)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/196-tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](ch01/677-skills-anthropic-openai-comparison-frontend-design.md)
+- [Claude Design 系统提示词 → web-design-engineer Skill](ch01/972-claude-design-skill.md)
 
 ---
 

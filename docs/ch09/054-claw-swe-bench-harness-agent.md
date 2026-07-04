@@ -120,12 +120,12 @@ Git 历史泄露问题在被发现前存在于 SWE-bench-Multilingual 的生产�
 ## 相关实体
 
 - [Harness Engineering](ch05/061-harness-engineering.md)
-- [Coding Harness 工程本质](ch11/210-openclaw.md)
-- [复旦北大 AHE Agentic Harness Engineering](ch04/221-fudan-peking-ahe-agentic-harness-engineering.md)
+- [Coding Harness 工程本质](ch11/215-openclaw.md)
+- [复旦北大 AHE Agentic Harness Engineering](ch05/061-harness-engineering.md)
 - [OpenClaw Agent Loop Design Patterns](ch03/045-agent.md)
 - [Harness Engineering 7 Layers](ch03/075-claude-code.md)
 - [Agent Eval 框架](ch03/045-agent.md)
-- [AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级](ch04/150-ai.md)
+- [AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级](ch04/277-ai.md)
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 

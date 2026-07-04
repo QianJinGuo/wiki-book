@@ -62,11 +62,11 @@ Every layer in the stack now has to price the same way the customer thinks : per
 - **关注 Artificial Analysis 等独立基准平台** — 文章提到 Artificial Analysis 已在做 Intelligence Index 和成本对比，这类独立分析平台将成为企业决策的重要参考。建议定期参考此类平台的数据来指导模型选择和预算分配。
 
 ## 相关实体
-- [How We Made Window Join Parallel And Vectorized](https://github.com/QianJinGuo/wiki/blob/main/entities/how-we-made-window-join-parallel-and-vectorized.md)
-- [Products Are Out Brains Are In](https://github.com/QianJinGuo/wiki/blob/main/entities/products-are-out-brains-are-in.md)
+- [How We Made Window Join Parallel And Vectorized](ch01/032-how-we-made-window-join-parallel-and-vectorized.md)
+- [Products Are Out Brains Are In](ch01/127-products-are-out-brains-are-in.md)
 - Investing In Stitch
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Offline Llm Energy Use Html](https://github.com/QianJinGuo/wiki/blob/main/entities/offline-llm-energy-use-html.md)
+- [Offline Llm Energy Use Html](ch01/606-llm.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tokens-per-result.md)
 

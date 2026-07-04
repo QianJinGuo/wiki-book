@@ -194,14 +194,14 @@ Anthropic 把缓存命中率当作基础设施级别指标来监控，一旦下�
 ### 7. 账号隔离策略
 缓存按账号隔离，如果使用账号池，需要确保每个项目/用户的请求尽量路由到同一账号，避免缓存命中率因账号混用而下降。
 ## 相关实体
-- [Anthropic Prompt Caching Claude Code](ch01/198-anthropic-prompt-caching-claude-code.md)
+- [Anthropic Prompt Caching Claude Code](ch01/303-anthropic-prompt-caching-claude-code.md)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/075-claude-code.md)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/075-claude-code.md)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/380-claude.md)
-- [Anthropic Claude Managed Agents Platform Launch](ch04/340-anthropic-claude-managed-agents-platform-launch.md)
-- [腾讯研究院ai速递 20260506](ch01/517-ai-20260506.md)
-- [claude-code-kairos-paradigm-2026](ch01/293-claude-code-kairos-paradigm-2026.md)
-- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](ch01/510-garry-tan.md)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/854-anthropic.md)
+- [Anthropic Claude Managed Agents Platform Launch](ch03/045-agent.md)
+- [腾讯研究院ai速递 20260506](ch01/644-ai-20260506.md)
+- [claude-code-kairos-paradigm-2026](ch04/277-ai.md)
+- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](ch01/636-garry-tan.md)
 
 ---
 

@@ -15,8 +15,8 @@
 ## 相关实体
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/045-agent.md)
 - [Agent Memory Architecture Ruofei](ch03/045-agent.md)
-- [Code As Agent Harness Survey](ch09/046-code-as-agent-harness.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
+- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/277-ai.md)
 - [Agent Context Management Architecture Patterns](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-architecture-8-part-summary.md)

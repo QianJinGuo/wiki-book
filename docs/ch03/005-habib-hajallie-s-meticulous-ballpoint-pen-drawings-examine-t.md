@@ -120,7 +120,7 @@ Hajallie 选择在"philosophical and historical texts"（哲学与历史文献�
 
 ## 相关实体
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
-- [Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/150-ai.md)
+- [Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/habib-hajallie-s-meticulous-ballpoint-pen-drawings-examine-the-depths-of-emotion.md)
 

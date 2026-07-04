@@ -234,10 +234,10 @@ Anthropic 反复强调："将做事的 Agent 和评判的 Agent 分开，是一�
 
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md) — Claude Code 源码级机制详解，与本文互补
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/075-claude-code.md) — Claude Code harness 设计的深度剖析
-- [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md) — Claude Code harness 另一深度解析
+- [Claude Code Harness Deep Understanding](ch01/484-claude-code-harness-deep-understanding.md) — Claude Code harness 另一深度解析
 - [Claude Code Harness Deep Dive Founder Park](ch03/075-claude-code.md) — 同主题的另一种解读视角
 - [Claude Code Dynamic Workflows 8Th Translation Xingxiaozhao](ch03/075-claude-code.md) — Claude Code 动态工作流的翻译对照
-- [Gsd Get Shit Done Context Management Tool](ch01/196-gsd-get-shit-done-context-management-tool.md) — 上下文管理工具
+- [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — 上下文管理工具
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md) — Agent 记忆系统的工程实践，与"持久化在文件系统"理念呼应
 - [Cline Agent Runtime Sdk](ch03/045-agent.md) — Cline SDK 的分层可移植设计，与 Harness Engineering 形成"开源平台 vs 工程化体系"对照
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md) — Vibe Coding → Agentic Engineering 的范式跃迁

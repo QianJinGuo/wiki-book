@@ -207,7 +207,7 @@ SMD 漫游是 Wi-Fi 8 对企业网络体验影响最大的功能，但支持程�
 
 ---
 
-**关联概念**：[Wi-Fi 8 技术解析](ch03/065-wi-fi-8.md) | [Wi-Fi 8 详情](ch03/052-wi-fi-8-is-closer-than-you-think.md) | [Wi-Fi 8 NetworkWorld](ch03/065-wi-fi-8.md)
+**关联概念**：[Wi-Fi 8 技术解析](ch03/066-wi-fi-8.md) | [Wi-Fi 8 详情](ch03/054-wi-fi-8-is-closer-than-you-think.md) | [Wi-Fi 8 NetworkWorld](ch03/066-wi-fi-8.md)
 
 ---
 

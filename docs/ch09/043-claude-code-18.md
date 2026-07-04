@@ -187,10 +187,10 @@ hooks.SessionStart 按分支加载 context 是聪明的设计，但它也是双�
 
 ## 相关实体
 - [Claude Code Performance Benchmarking](ch03/075-claude-code.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/150-ai.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/277-ai.md)
 - [Claude Code Source Architecture](ch03/075-claude-code.md)
 - [Claude Code Openclaw Memory Vector Db Doubt](ch03/075-claude-code.md)
-- [Skill System Design Three Way Comparison](ch04/245-skill.md)
+- [Skill System Design Three Way Comparison](ch04/256-skill.md)
 
 ---
 

@@ -91,10 +91,10 @@ Agent 的进化不只来自参数更新，也来自它如何利用外部知识�
 **评估与迭代层面**：这篇综述也提示我们，当前的 Agent 评估体系存在根本性不足——静态基准无法衡量 Agent 的进化潜力。需要建立能够评估"学习效率"、"探索多样性"和"知识迁移能力"的动态评估框架，而非仅仅关注最终任务准确率。
 
 ## 相关实体
-- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/133-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/139-skillos-learning-skill-curation-for-self-evolving-agents.md)
 - [Self Evolving Agents Survey](ch03/045-agent.md)
-- [Skill Os Learning Skill Curation Self Evolving Agents](ch04/245-skill.md)
-- [Hermes Agent Self Evolving Source Analysis](ch04/040-hermes-agent-self-evolving-source-analysis.md)
+- [Skill Os Learning Skill Curation Self Evolving Agents](ch04/256-skill.md)
+- [Hermes Agent Self Evolving Source Analysis](ch03/045-agent.md)
 - [Claude Code Search Architecture Tencent 2026](ch03/075-claude-code.md)
 
 ---

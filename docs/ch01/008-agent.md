@@ -83,7 +83,7 @@ KroWork 在执行 AI 热点追踪器任务时，**主动规划**而非直接开�
 - **替代方案推荐**：当首选方案不可行时主动给出备选
 - **等待用户授权**：而非自作主张降级
 
-这与 [Factory Mission 系统](ch04/150-ai.md) 中 Orchestrator 的"梳理模糊需求"角色形成跨厂商印证——成熟 Agent 工具的核心是从"被动响应"升级为"主动规划 + 授权执行"。
+这与 [Factory Mission 系统](ch04/277-ai.md) 中 Orchestrator 的"梳理模糊需求"角色形成跨厂商印证——成熟 Agent 工具的核心是从"被动响应"升级为"主动规划 + 授权执行"。
 
 ### 4. browser-use 能力：Agent 的最后一块拼图
 
@@ -169,9 +169,9 @@ browser-use 能力让 Agent 能够访问没有 API 的信息源，这是 Agent �
 - [24h 打工人](ch03/045-agent.md)
 - [Enterprise Software Moats in the Agent Era](ch03/045-agent.md)
 - [AutoResearch 多 Agent 软件开发](ch03/045-agent.md)
-- [Factory Mission Multi-Agent 系统](ch04/150-ai.md)
-- [AgentOps on Bedrock](ch04/150-ai.md)
-- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch04/150-ai.md)
+- [Factory Mission Multi-Agent 系统](ch04/277-ai.md)
+- [AgentOps on Bedrock](ch04/277-ai.md)
+- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch04/277-ai.md)
 
 ---
 

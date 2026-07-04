@@ -34,10 +34,10 @@ Databricks、PyTorch 缔造者、OpenAI / Thinking Machines / xAI 的一线人�
 5. **关注 chunkah 工具的增量下载策略**：如果你的基础设施对带宽敏感（边缘节点、高频更新），chunkah 的「只下载变更部分」机制可以显著降低更新流量。建议在 CI 流程中测试 100 次连续小更新与 1 次大更新之间的带宽成本差异。
 
 ## 相关实体
-- [Fedora Hummingbird Container Security](ch04/150-ai.md)
+- [Fedora Hummingbird Container Security](ch04/277-ai.md)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md)
-- [The It And Security Field Guide To Ai Adoption Tines](ch12/072-the-it-and-security-field-guide-to-ai-adoption-tines.md)
+- [The It And Security Field Guide To Ai Adoption Tines](ch12/078-the-it-and-security-field-guide-to-ai-adoption-tines.md)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fedora-hummingbird-container-security.md)

@@ -70,11 +70,11 @@ Sentry 给每种页面类型写了 Skills（AI 指令文件）：landing pages�
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/075-claude-code.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/988-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [DDoSing Software Delivery Pipelines](ch01/206-0.md)
-- [Unexpected lessons from an AI-assisted prototyping experiment](ch04/150-ai.md)
+- [DDoSing Software Delivery Pipelines](ch01/217-0.md)
+- [Unexpected lessons from an AI-assisted prototyping experiment](ch04/277-ai.md)
 
 ## 实践启示
 

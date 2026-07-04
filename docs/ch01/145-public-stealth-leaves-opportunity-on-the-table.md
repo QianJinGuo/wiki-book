@@ -9,7 +9,7 @@
 
 ## 相关实体
 
-- [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)
+- [How Superset built the IDE for AI agents on Vercel](ch04/277-ai.md)
 - [Toto 2.0: Time series forecasting enters the scaling era](ch01/025-toto-2-0-time-series-forecasting-enters-the-scaling-era.md)
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch03/045-agent.md)
 

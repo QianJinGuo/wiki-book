@@ -103,7 +103,7 @@ Comet 使用 Chrome UA 的原因与其他 Chromium 系浏览器相同：规避�
 ## 相关实体
 
 - [Agent Harness 可观测性](ch03/045-agent.md)
-- [Agent 安全三步序列](ch04/150-ai.md)
+- [Agent 安全三步序列](ch04/277-ai.md)
 - [Agent Trust Handshake Protocol](ch03/045-agent.md)
 - Prompt Injection
 

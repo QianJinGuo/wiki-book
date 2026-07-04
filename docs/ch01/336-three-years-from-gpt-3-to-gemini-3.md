@@ -37,7 +37,7 @@ Ethan Mollick 通过让 Gemini 3 复刻自己三年前 GPT-3 时代的"糖果驱
 2. **通用工具与专用工具的分野**：能编码的 Agent 是通用工具，不能编码的 Agent 是专用工具。
 3. **编程语言作为 Agent 的元能力**：编程语言不只是给程序员用的，而是 Agent 系统能力的元层级。
 
-这与 [Code as Agent Harness Survey](ch09/046-code-as-agent-harness.md) 中关于"代码即 Agent Harness"的论述形成强对应——编程能力是 Agent 系统能力的"乘数因子"，而不是"附属技能"。
+这与 [Code as Agent Harness Survey](ch09/051-code-as-agent-harness.md) 中关于"代码即 Agent Harness"的论述形成强对应——编程能力是 Agent 系统能力的"乘数因子"，而不是"附属技能"。
 
 ### 2. Antigravity Inbox：从 Chatbox 到 Coworker 的产品形态
 
@@ -50,7 +50,7 @@ Google 配套 Gemini 3 推出的 Antigravity 工具引入 **Inbox** 概念——
 - **多 Agent 并行**：可以同时管理多个 Agent，识别"哪个在工作、哪个需要你的帮助"
 - **权限模型**：Agent 自主工作时，遇到关键决策点会 ping 用户等待授权
 
-Mollick 截图展示的工作场景："同时有四个不同 Agent 在工作，一个在工作，另一个需要你的帮助才能继续"——这与 [Factory Mission](ch04/150-ai.md) 中 Orchestrator 协调多 Worker 的模式有异曲同工之妙，但 Inbox 把"协调者"角色直接交给了用户。
+Mollick 截图展示的工作场景："同时有四个不同 Agent 在工作，一个在工作，另一个需要你的帮助才能继续"——这与 [Factory Mission](ch04/277-ai.md) 中 Orchestrator 协调多 Worker 的模式有异曲同工之妙，但 Inbox 把"协调者"角色直接交给了用户。
 
 ### 3. "管理数字同事"的人机协作模式
 
@@ -117,7 +117,7 @@ Mollick 给整篇文章的总结：
 
 ### 7. 与 OpenAI Codex 演进的方向对照
 
-Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/436-codex.md) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
+Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/542-codex.md) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
 
 ## 实践启示
 
@@ -187,17 +187,17 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 
 ## 相关实体
 
-- [Code as Agent Harness Survey](ch09/046-code-as-agent-harness.md)
-- [GPT-5.4 Codex 进展](ch01/436-codex.md)
+- [Code as Agent Harness Survey](ch09/051-code-as-agent-harness.md)
+- [GPT-5.4 Codex 进展](ch01/542-codex.md)
 - [Karpathy Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [Karpathy Agentic Engineering 综述](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
-- [AgentOps on Bedrock](ch04/150-ai.md)
-- [Yann Dubois OpenAI 后训练访谈](ch04/150-ai.md)
+- [Karpathy Agentic Engineering 综述](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
+- [AgentOps on Bedrock](ch04/277-ai.md)
+- [Yann Dubois OpenAI 后训练访谈](ch04/277-ai.md)
 - [GPT-5.5 Copilot Session 设计](ch07/015-wiki-evolver.md)
-- [AI Agent Harness 构建](ch04/150-ai.md)
+- [AI Agent Harness 构建](ch04/277-ai.md)
 - [Harness 状态边界与失败闭环](ch05/009-harness.md)
 - [Agent Vibecoder 上下文压缩](ch03/045-agent.md)
-- [腾讯混元 HY3 开源预览](ch01/109-hy3-preview.md)
+- [腾讯混元 HY3 开源预览](ch01/107-hy3-preview.md)
 - [Agent 记忆系统工程实践](ch03/045-agent.md)
 
 ---

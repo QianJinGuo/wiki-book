@@ -64,18 +64,18 @@ AI + Skills 模式在 154 个服务的规模化迁移中节省 **25 小时**（�
 
 ## 相关实体
 
-- [Agent Skill Writing Guide](ch04/245-skill.md) — Skill 编写方法论
-- [Hermes Skill System](ch04/245-skill.md) — Hermes 技能系统
+- [Agent Skill Writing Guide](ch04/256-skill.md) — Skill 编写方法论
+- [Hermes Skill System](ch04/256-skill.md) — Hermes 技能系统
 - [Harness Engineering](ch05/061-harness-engineering.md) — Harness 工程范式
-- [Thin Harness, Fat Skills](ch04/245-skill.md) — 薄 Harness 厚 Skills 架构
-- [如何将经验编码为 Skills](ch04/245-skill.md) — 经验 → Skills 转化方法论
-- [Agent Skills vs 低代码平台](ch04/245-skill.md) — Skills 与低代码对比
-- [Skill Craft](ch04/245-skill.md) — Skill 工艺学
-- [Skill Engineering as Algorithm](ch04/245-skill.md) — Skill 工程即算法
-- [Anthropic 14 Skill Patterns](ch04/245-skill.md) — Anthropic 技能设计模式
-- [百度网盘 KMP 迁移三层架构](ch04/150-ai.md) — 同类跨平台迁移案例
-- [SkillX 分层技能库](ch07/045-skillx.md) — 分层技能库架构
-- [Skill Hub 组织资产](ch04/245-skill.md) — 组织级技能管理中心
+- [Thin Harness, Fat Skills](ch04/256-skill.md) — 薄 Harness 厚 Skills 架构
+- [如何将经验编码为 Skills](ch04/256-skill.md) — 经验 → Skills 转化方法论
+- [Agent Skills vs 低代码平台](ch04/256-skill.md) — Skills 与低代码对比
+- [Skill Craft](ch04/256-skill.md) — Skill 工艺学
+- [Skill Engineering as Algorithm](ch04/256-skill.md) — Skill 工程即算法
+- [Anthropic 14 Skill Patterns](ch04/256-skill.md) — Anthropic 技能设计模式
+- [百度网盘 KMP 迁移三层架构](ch04/277-ai.md) — 同类跨平台迁移案例
+- [SkillX 分层技能库](ch04/256-skill.md) — 分层技能库架构
+- [Skill Hub 组织资产](ch04/256-skill.md) — 组织级技能管理中心
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-skills-middleware-migration-android-harmonyos-taobao-2026.md)
 

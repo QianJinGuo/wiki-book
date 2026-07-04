@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [dean ball on open models and government control](ch01/853-dean-ball-on-open-models-and-government-control.md)
+- [dean ball on open models and government control](ch01/778-dean-ball-on-open-models-and-government-control.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/my-bets-on-open-models-mid-2026.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
@@ -58,7 +58,7 @@ Lambert 预测：开源模型在 **重复性自动化任务** 的 API 市场份�
 
 **本地 agent、OpenClaw 等个人 agent** 代表一个到目前大多被忽略的开源使用市场。Lambert 把它称为"暗物质" — 普遍存在、潜力巨大、对开源/闭源平衡影响深远。
 
-这一观察对 [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md) 类工作意义重大：个人 agent 很可能成为开源模型的真正主战场，而不是云端 API 服务的二等替代品。
+这一观察对 [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md) 类工作意义重大：个人 agent 很可能成为开源模型的真正主战场，而不是云端 API 服务的二等替代品。
 
 ### 8. 开源融资结构必然出现新形式
 
@@ -87,11 +87,11 @@ RL 训练时代真正的新护城河不是公开 benchmark 上的分数，而是
 ## 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/210-openclaw.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/045-agent.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/215-openclaw.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/217-0.md)
 - [Rlhf Dpo Grpo Alignment](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md)
 
 ---

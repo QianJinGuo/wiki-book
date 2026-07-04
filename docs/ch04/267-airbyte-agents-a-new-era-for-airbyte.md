@@ -114,11 +114,11 @@ Airbyte 的数据表明，当 Agent 能先在 Context Store 中完成实体发�
 传统 AI 功能用"准确率"衡量，Agent 功能的衡量维度应该是：Tool calls 数量（越少越说明上下文质量高）、Token 消耗（越低越说明数据管道效率高）、任务完成率（而非模型回答质量）。Airbyte 的 40% Tool calls 减少和 80% Token 降低，是比"准确率提升 5%"更有商业价值的指标。
 
 ## 相关实体
-- [Airbyte Agents](ch04/150-ai.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/133-skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/067-building-ai-agents-for-business-support-using-amazon-bedrock.md)
+- [Airbyte Agents](ch04/277-ai.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/139-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/070-building-ai-agents-for-business-support-using-amazon-bedrock.md)
 - [Oz Multi Harness Cloud Agent Orchestration](ch03/045-agent.md)
-- [Skill Os Learning Skill Curation Self Evolving Agents](ch04/245-skill.md)
+- [Skill Os Learning Skill Curation Self Evolving Agents](ch04/256-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/airbyte-agents-a-new-era-for-airbyte-airbyte.md)

@@ -104,9 +104,9 @@ AI Native 转型最难的部分不是技术，是处理"被转型"的人 。组�
 
 ## 相关实体
 - [Agent Harness 架构](ch03/045-agent.md)
-- [Thin Harness Fat Skills](ch04/245-skill.md)
-- [你不知道的 Agent 原理架构与工程实践](ch04/304-agent-principle-architecture-engineering-practice.md)
-- [Design Patterns for AI Agents 2026](ch04/150-ai.md)
+- [Thin Harness Fat Skills](ch04/256-skill.md)
+- [你不知道的 Agent 原理架构与工程实践](ch04/316-agent-principle-architecture-engineering-practice.md)
+- [Design Patterns for AI Agents 2026](ch04/277-ai.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 - [Claude Code 设计原则与对照分析](ch03/075-claude-code.md)

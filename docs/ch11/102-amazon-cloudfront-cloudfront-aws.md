@@ -44,11 +44,11 @@ Connection Group支持Unicast和Anycast的动态切换，这为网络架构演�
 由于每个租户可关联独立的WebACL，建议建立标准化的WAF规则集模板，既保证安全基线一致，又允许租户级别的定制化调整。
 
 ## 相关实体
-- [Yidian Tianxia Context Engineering Agentic Ai Qcon](ch04/130-yidian-tianxia-context-engineering-agentic-ai-qcon.md)
-- [在 Amazon Ec2 Gpu 实例上部署 Nvidia Nemoclaw 以 Amazon Bedrock 作为推理](ch11/240-bedrock.md)
+- [Yidian Tianxia Context Engineering Agentic Ai Qcon](ch04/277-ai.md)
+- [在 Amazon Ec2 Gpu 实例上部署 Nvidia Nemoclaw 以 Amazon Bedrock 作为推理](ch11/253-bedrock.md)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/045-agent.md)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch03/045-agent.md)
-- [Aws Sagemaker Capacity Aware Inference Fallback](ch01/352-aws-sagemaker-capacity-aware-inference-fallback.md)
+- [Aws Sagemaker Capacity Aware Inference Fallback](ch01/418-aws-sagemaker-capacity-aware-inference-fallback.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture.md)
 

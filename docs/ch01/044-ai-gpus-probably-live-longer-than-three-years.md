@@ -73,11 +73,11 @@ Oak Ridge Summit（27,000+ V100，2018-2024）和前代 Cray Titan（2012-2019�
 
 ## 相关实体
 
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](ch04/150-ai.md)
-- [system over model, tested: reproducing mythos's freebsd find](ch01/206-0.md)
-- [from doer to director: the ai mindset shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
-- [DDoSing Software Delivery Pipelines](ch01/206-0.md)
-- [Unexpected lessons from an AI-assisted prototyping experiment](ch04/150-ai.md)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](ch04/277-ai.md)
+- [system over model, tested: reproducing mythos's freebsd find](ch01/217-0.md)
+- [from doer to director: the ai mindset shift](ch01/030-from-doer-to-director-the-ai-mindset-shift.md)
+- [DDoSing Software Delivery Pipelines](ch01/217-0.md)
+- [Unexpected lessons from an AI-assisted prototyping experiment](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
 

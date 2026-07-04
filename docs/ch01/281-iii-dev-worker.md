@@ -137,9 +137,9 @@ iii 的核心价值主张不是"它是一个更好的 harness"，而是"它消�
 iii 最值得学习的不是它的具体功能，而是它的设计哲学：找到一个足够小、足够通用的 primitive 集合，让"添加功能"的答案变成"添加一个 Worker"。在设计任何复杂系统时，先问：能否用一个 primitive 回答"我想要 X"这个问题？如果不能，为什么？如果能，这个 primitive 是什么？"添加一个 worker"这个答案的优雅之处在于它是自描述的——它告诉你具体做什么（添加 worker）以及这会带来的效果（系统获得新能力并立即可发现、可观测）。
 ## 相关实体
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch03/045-agent.md)
-- [Anthropic 12 Mcp Production Patterns](ch01/707-anthropic.md)
+- [Anthropic 12 Mcp Production Patterns](ch01/854-anthropic.md)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch03/045-agent.md)
-- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/245-skill.md)
+- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/256-skill.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/075-claude-code.md)
 
 - [Anthropic Long Running Agent Architecture 6H Retroforge](ch03/045-agent.md)

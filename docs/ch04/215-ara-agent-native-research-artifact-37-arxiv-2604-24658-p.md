@@ -49,14 +49,14 @@ ARA 类工作推动的是整个研究工具链的演进——从文献搜索到�
 
 ## 相关实体
 - [Kimi K2 6 Tidb Agent Database](ch03/045-agent.md)
-- [Kimi K2 Tidb Agent Database Huangdongxu 20260513](ch03/045-agent.md)
-- [Anthropic Multi Agent Research System](ch04/462-anthropic-multi-agent-research-system.md)
-- [Gaode Ai Native 7X24 Pipeline Self Healing](ch04/150-ai.md)
-- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/150-ai.md)
+- [Kimi K2 Tidb Agent Database Huangdongxu 20260513](ch01/217-0.md)
+- [Anthropic Multi Agent Research System](ch04/495-anthropic-multi-agent-research-system.md)
+- [Gaode Ai Native 7X24 Pipeline Self Healing](ch04/277-ai.md)
+- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ara-agent-native-research-artifact-37authors.md)
 
-- [pithtrain：陈天奇 + cmu flame center 推出的 agent-native moe 训练框架（1](ch04/150-ai.md)
+- [pithtrain：陈天奇 + cmu flame center 推出的 agent-native moe 训练框架（1](ch04/277-ai.md)
 
 ## 核心问题
 

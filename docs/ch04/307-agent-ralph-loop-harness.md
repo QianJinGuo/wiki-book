@@ -16,8 +16,8 @@
 - [Agent Harness 12 Components 7 Decisions](ch03/045-agent.md)
 - [Long Running Agent Ralph Loop Handover Harness Ruofei](ch03/045-agent.md)
 - [Agent Harness Architecture Deep Dive Aksahy](ch03/045-agent.md)
-- [Code As Agent Harness Survey](ch09/046-code-as-agent-harness.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/045-agent.md)
+- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch01/217-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/长周期-agent-详解-从-ralph-loop-到可接管-harness.md)
 

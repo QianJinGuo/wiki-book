@@ -104,8 +104,8 @@ Memory 和 Tool 的语义是事实性的——"这里有一段可复用代码"�
 **启示**：在设计自动化进化系统时，要极度谨慎地引入人类先验。如果必须引入，应该让先验足够抽象和宽松，不要用先验替代演化过程中的探索。
 
 ## 相关链接
-- [Agent Harness Engineering Survey 2026](ch03/045-agent.md)
-- [Hermes Agent Closed Learning Loop](ch01/337-hermes-agent-closed-learning-loop.md)
+- [Agent Harness Engineering Survey 2026](ch05/061-harness-engineering.md)
+- [Hermes Agent Closed Learning Loop](ch03/045-agent.md)
 
 ## 实践启示
 ### 对 Harness 工程团队

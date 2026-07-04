@@ -101,7 +101,7 @@ SkillEvolver、Darwin Skill 和 EmbodiSkill 代表了三种不同的 Skill 本�
 
 ### 与 Skill Hub 治理的关联
 
-本文的互优化实验与 [Skill Hub Organization Asset Winty](ch04/245-skill.md) 提出的 Skill Hub 治理框架形成技术层与应用层的对照：
+本文的互优化实验与 [Skill Hub Organization Asset Winty](ch04/256-skill.md) 提出的 Skill Hub 治理框架形成技术层与应用层的对照：
 
 - Skill Hub 关注的是 Skill 作为**组织资产**的治理（版本、灰度、回滚）
 - 互优化实验关注的是 Skill 作为**进化单元**的技术可行性（交叉、变异、适应度）
@@ -124,7 +124,7 @@ SkillEvolver、Darwin Skill 和 EmbodiSkill 代表了三种不同的 Skill 本�
 
 ### 4. 互优化结果应纳入 Skill Hub 的审核流程
 
-当跨框架 Skill 进入企业级部署时，Skill Hub 的治理机制（[Skill Design Spec 8 Block Checklist Winty](ch04/245-skill.md)）需要扩展以支持多源 Skill 的审核——传统的单 Skill 审核清单无法覆盖跨框架继承的行为风险。
+当跨框架 Skill 进入企业级部署时，Skill Hub 的治理机制（[Skill Design Spec 8 Block Checklist Winty](ch04/256-skill.md)）需要扩展以支持多源 Skill 的审核——传统的单 Skill 审核清单无法覆盖跨框架继承的行为风险。
 
 ### 5. 具身条件编码是当前框架中最被低估的组件
 
@@ -132,12 +132,12 @@ EmbodiSkill 的感知-动作闭环在纯软件 Agent 场景中往往被忽视。
 
 ## 相关实体
 
-- [Ai Skill Evolution底层逻辑](ch04/245-skill.md)
-- [Agent Skill Writing Guide](ch04/245-skill.md)
-- [Hermes Agent Skills Source Code Analysis Shuge](ch04/245-skill.md)
-- [Skill Hub Organization Asset Winty](ch04/245-skill.md)
-- [Skill Design Spec 8 Block Checklist Winty](ch04/245-skill.md)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/245-skill.md)
+- [Ai Skill Evolution底层逻辑](ch04/256-skill.md)
+- [Agent Skill Writing Guide](ch04/256-skill.md)
+- [Hermes Agent Skills Source Code Analysis Shuge](ch04/256-skill.md)
+- [Skill Hub Organization Asset Winty](ch04/256-skill.md)
+- [Skill Design Spec 8 Block Checklist Winty](ch04/256-skill.md)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/256-skill.md)
 
 ---
 

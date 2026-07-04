@@ -162,7 +162,7 @@ Karpathy 做的事情是用准确的语言把这些挫败感说了出来，并�
 - 作者：ChallengeHub 小编
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md)
+- [Claude Code Harness Deep Understanding](ch01/484-claude-code-harness-deep-understanding.md)
 - [Claude Code Harness Deep Dive Founder Park](ch03/075-claude-code.md)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](ch03/075-claude-code.md)
 - [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](ch03/075-claude-code.md)

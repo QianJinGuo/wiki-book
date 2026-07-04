@@ -65,13 +65,13 @@ Lambert 指出"依赖单一私人公司来评估国际关键基础设施的安�
 当前最大的知识空白是：在网络安全等窄域，开源模型与闭源前沿的真实差距到底有多大？建议建立标准化的网络安全 CTF benchmark，定期对比开源/闭源模型表现，为政策讨论提供实证基础而非直觉推测。
 
 ## 相关实体
-- [Nathan Lambert Open Models Bets 2026](ch01/368-nathan-lambert.md)
-- [Chinese Ai Lab Insights Nathan](ch04/150-ai.md)
-- [How Open Model Ecosystems Compound](ch01/677-how-open-model-ecosystems-compound.md)
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/777-deepseek.md)
-- [Multilingual Ai](ch04/150-ai.md)
+- [Nathan Lambert Open Models Bets 2026](ch01/217-0.md)
+- [Chinese Ai Lab Insights Nathan](ch04/277-ai.md)
+- [How Open Model Ecosystems Compound](ch01/822-how-open-model-ecosystems-compound.md)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/974-deepseek-v4.md)
+- [Multilingual Ai](ch04/277-ai.md)
 
-- [dean ball on open models and government control](ch01/853-dean-ball-on-open-models-and-government-control.md)
+- [dean ball on open models and government control](ch01/778-dean-ball-on-open-models-and-government-control.md)
 
 ## 相关引用
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nathan-lambert-claude-mythos-open-weights.md)
