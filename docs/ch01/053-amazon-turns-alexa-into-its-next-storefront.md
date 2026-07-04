@@ -8,11 +8,11 @@
 - 来源：https://www.pymnts.com/news/retail/2026/amazon-bets-on-voice-as-agentic-commerces-winning-ai-interface/
 - 评分：v=8 c=7
 ## 相关实体
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/310-ai.md)
-- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/151-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
-- [Notion Ai Agents](ch04/310-ai.md)
-- [Code Simulation For Enterprise Engineering Playerz](ch01/134-code-simulation-for-enterprise-engineering-playerzero.md)
-- [Thrive Capital Bets 100 Million On Shopifys Ai Future](https://github.com/QianJinGuo/wiki/blob/main/entities/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future.md)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/277-ai.md)
+- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/149-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
+- [Notion Ai Agents](ch04/277-ai.md)
+- [Code Simulation For Enterprise Engineering Playerz](ch01/133-code-simulation-for-enterprise-engineering-playerzero.md)
+- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/217-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 

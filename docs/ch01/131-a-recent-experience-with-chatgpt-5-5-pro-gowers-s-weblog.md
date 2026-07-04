@@ -7,7 +7,7 @@
 > -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md)
 
 ## 相关实体
-- [GPT-5.5来了！我撤回了退订ChatGPT的决定](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-55来了我撤回了退订chatgpt的决定.md)
+- [GPT-5.5来了！我撤回了退订ChatGPT的决定](ch01/987-chatgpt.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析

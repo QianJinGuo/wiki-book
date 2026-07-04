@@ -246,7 +246,7 @@ business_agent_profile:
 ## 与现有 Wiki 的关系
 
 ### 与 Agent Harness 工程的呼应
-[Agent Harness 架构设计](ch03/045-agent.md) + [Agent Harness Engineering Survey ETCLOVG](ch03/045-agent.md) 提供了 Harness 的 **学术框架**（Execution / Tooling / Context / Lifecycle / Observability / Verification / Governance）——本文提供了 **业务团队的 MVP 落地路径**，两者互补。Harness 框架是"通用 Agent 的 execution layer"；业务增强层是"团队给通用 Agent 补的 domain layer"。
+[Agent Harness 架构设计](ch03/045-agent.md) + [Agent Harness Engineering Survey ETCLOVG](ch05/061-harness-engineering.md) 提供了 Harness 的 **学术框架**（Execution / Tooling / Context / Lifecycle / Observability / Verification / Governance）——本文提供了 **业务团队的 MVP 落地路径**，两者互补。Harness 框架是"通用 Agent 的 execution layer"；业务增强层是"团队给通用 Agent 补的 domain layer"。
 
 ### 与其他企业级 Agent 实践的呼应
 - [AgentScope Builder 企业自进化](ch03/045-agent.md) = 阿里云 Harness 平台化（重平台路径）
@@ -310,7 +310,7 @@ business_agent_profile:
 
 ## 相关实体
 
-- [循环工程 (loop engineering) — 清华 2026 框架](ch05/004-loop-engineering.md)
+- [循环工程 (loop engineering) — 清华 2026 框架](ch01/217-0.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 

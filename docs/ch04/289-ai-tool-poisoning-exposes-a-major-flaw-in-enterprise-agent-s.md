@@ -94,15 +94,15 @@ Agent 调用某个工具后，该工具进一步调用其他未声明的外部�
 ---
 
 ## 相关实体
-- [AI tool poisoning — 另一存档版本](ch04/150-ai.md)
-- [AI MAP: Bishop Fox 安全测试工具](ch04/150-ai.md)
-- [Amazon Quick — 企业数据到 AI 决策](ch04/150-ai.md)
+- [AI tool poisoning — 另一存档版本](ch04/277-ai.md)
+- [AI MAP: Bishop Fox 安全测试工具](ch04/277-ai.md)
+- [Amazon Quick — 企业数据到 AI 决策](ch04/277-ai.md)
 - [Headless cloud security: Rewriting security without the UI.](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch03/045-agent.md)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](ch03/045-agent.md)
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch03/045-agent.md)
-- [AI Agent 工程师能力地图](ch04/150-ai.md)
+- [AI Agent 工程师能力地图](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

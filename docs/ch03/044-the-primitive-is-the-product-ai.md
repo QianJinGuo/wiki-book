@@ -60,11 +60,11 @@ VC 喜欢平台（网络效应、高切换成本、拥有整个品类）。原�
 
 ## 相关实体
 
-- [AI-Native 分层思维](ch04/150-ai.md) — AI 时代的产品思维框架
+- [AI-Native 分层思维](ch04/277-ai.md) — AI 时代的产品思维框架
 - [Stripe Agent 经济基础设施](ch03/045-agent.md) — Stripe 的 Agent-first 产品实践
 - [Stripe Agent 基础设施（Emily Sands）](ch03/045-agent.md) — 支付原语的 agent 生态扩展
-- [AI-Native 研发组织设计](ch04/150-ai.md) — 组织如何适应 AI 时代
-- [AI-Native 组织指南](ch04/150-ai.md) — AI 时代的组织原则
+- [AI-Native 研发组织设计](ch04/277-ai.md) — 组织如何适应 AI 时代
+- [AI-Native 组织指南](ch04/277-ai.md) — AI 时代的组织原则
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/primitive-is-the-product-amplify-partners.md)
 

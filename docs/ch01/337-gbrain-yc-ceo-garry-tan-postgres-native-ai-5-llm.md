@@ -134,29 +134,29 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 **性能基准**：P@5 49.1%、R@5 97.9%。关闭 KG 功能后 P@5 下降 31.4pp，优于纯 ripgrep-BM25+向量 RAG 。
 
 ## 相关实体
-- [AgentBrowser](ch03/045-agent.md)
-- [企业级AI记忆基质三层架构：事实/交互/行动记忆](ch04/150-ai.md)
+- [AgentBrowser](ch09/147-agent-browser-claude-code-qoderwork.md)
+- [企业级AI记忆基质三层架构：事实/交互/行动记忆](ch04/277-ai.md)
 - [Agent 自我改进的六条路](ch03/045-agent.md)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](ch01/206-0.md)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](ch01/217-0.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [SkillClaw](ch04/245-skill.md)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/245-skill.md)
-- [OpenHuman: AI Agent 持久记忆框架](ch04/150-ai.md)
+- [SkillClaw](ch04/256-skill.md)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/256-skill.md)
+- [OpenHuman: AI Agent 持久记忆框架](ch04/277-ai.md)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 
-- [AutoCLI](ch03/114-autocli.md)
-- [阿里巴巴 Aone 面向 Agent 的研发模式探索](ch04/046-alibaba-aone-agentic-rd-mode-xiangbangyu.md)
-- [CLI-Anything](ch03/091-cli-anything.md)
+- [AutoCLI](ch03/117-autocli.md)
+- [阿里巴巴 Aone 面向 Agent 的研发模式探索](ch03/045-agent.md)
+- [CLI-Anything](ch03/094-cli-anything.md)
 - [AgentRun](ch03/045-agent.md)
-- [OpenCLI](ch03/082-opencli.md)
+- [OpenCLI](ch03/084-opencli.md)
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
 - [24h打工人](ch03/045-agent.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch04/150-ai.md)
-- [hermes-agent-self-evolving-source-analysis](ch04/040-hermes-agent-self-evolving-source-analysis.md)
-- [Agent 原理、架构与工程实践](ch04/441-agent-engineering-principles-architecture-practice.md)
-- [AI Agent 工程师能力地图](ch04/150-ai.md)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch04/277-ai.md)
+- [hermes-agent-self-evolving-source-analysis](ch03/045-agent.md)
+- [Agent 原理、架构与工程实践](ch03/045-agent.md)
+- [AI Agent 工程师能力地图](ch04/277-ai.md)
 
-- [agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（memguide/sti](ch03/045-agent.md)
+- [agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（memguide/sti](ch01/217-0.md)
 
 ## 第 3 来源：术哥无界 v0.42.44.0 源码深度解析
 

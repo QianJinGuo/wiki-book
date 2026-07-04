@@ -65,11 +65,11 @@ Bedrock Ops Alert 体现的范式转变是：将"监控→告警→人工判断�
 当 Bedrock 使用超过 5 个基础模型时，统一阈值（如所有模型 80% 配额告警）不再适用，因为不同模型的 RPM/TPM 限制和业务重要性不同。为每个模型配置独立的阈值百分比和告警类别路由，确保高优先级模型获得更快响应。
 
 ## 相关实体
-- [Zenjoy Aiops Agent Bedrock Eks Prometheus](ch04/150-ai.md)
+- [Zenjoy Aiops Agent Bedrock Eks Prometheus](ch04/277-ai.md)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](ch03/045-agent.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/045-agent.md)
-- [Amazon Bedrock Claude Prompt Cache Strategy](ch01/380-claude.md)
+- [Amazon Bedrock Claude Prompt Cache Strategy](ch01/485-claude.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 相关引用

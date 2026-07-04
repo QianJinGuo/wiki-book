@@ -168,12 +168,12 @@ S3 会话持久化是另一个关键的企业级特性。传统的对话助手�
 
 ## 相关实体
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](ch03/045-agent.md)
-- [Yidian Tianxia Context Engineering Agentic Ai Qcon](ch04/130-yidian-tianxia-context-engineering-agentic-ai-qcon.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
+- [Yidian Tianxia Context Engineering Agentic Ai Qcon](ch04/277-ai.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/045-agent.md)
 - [航班变更信息智能识别解决方案](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/strands-agents-cloud-cost-optimizer.md)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](ch01/206-0.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/strands-agents-cloud-cost-optimizer.md)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](ch01/217-0.md)
 
 ---
 

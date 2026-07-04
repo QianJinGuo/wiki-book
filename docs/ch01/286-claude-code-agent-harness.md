@@ -68,7 +68,7 @@ CLAUDE.md 文件从根目录向下逐层加载：
 
 **@include 指令**让一个 CLAUDE.md 可以拉入其他文件（最多 5 层深度）。**`git worktree` 兼容性**——避免同一份规则被重复加载。
 
-这与 [Claude Code Harness Deep Understanding](ch01/378-claude-code-harness-deep-understanding.md) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
+这与 [Claude Code Harness Deep Understanding](ch01/484-claude-code-harness-deep-understanding.md) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
 
 ### 4. 完整上下文包：用户消息只是冰山一角
 
@@ -116,7 +116,7 @@ Claude Code 通过 `isConcurrencySafe()` 标记控制并发执行：
 
 **关键工程细节**：工具可以修改后续上下文——有些工具返回"上下文修改函数"用于更新 `ToolUseContext`。并发批次先收集修改，整批完再统一应用；串行批次每个工具执行完立刻应用。**这一设计避免了并发冲突**。
 
-这与 [Factory Mission](ch04/150-ai.md) 的"串行 + 定点内部并行"策略有异曲同工之妙——但 Mission 是 Agent 间的串行，Claude Code 是工具间的串行。
+这与 [Factory Mission](ch04/277-ai.md) 的"串行 + 定点内部并行"策略有异曲同工之妙——但 Mission 是 Agent 间的串行，Claude Code 是工具间的串行。
 
 ### 7. 分层权限机制：4 层检查的设计取舍
 
@@ -303,18 +303,18 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 
 - [两万字详解 Claude Code 源码核心机制](ch03/075-claude-code.md)
 - [Claude Code Harness 深度解析](ch03/075-claude-code.md)
-- [Claude Code Harness 深度理解](ch01/378-claude-code-harness-deep-understanding.md)
-- [GSD 上下文管理工具](ch01/196-gsd-get-shit-done-context-management-tool.md)
+- [Claude Code Harness 深度理解](ch01/484-claude-code-harness-deep-understanding.md)
+- [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](ch03/045-agent.md)
 - [Harness Engineering Core Patterns](ch03/075-claude-code.md)
 - [Harness 状态边界与失败闭环](ch05/009-harness.md)
-- [Factory Mission Multi-Agent 系统](ch04/150-ai.md)
+- [Factory Mission Multi-Agent 系统](ch04/277-ai.md)
 - [Claude Managed Agents 企业自托管](ch03/045-agent.md)
-- [OpenClaw 多 Agent 团队实践](ch04/040-openclaw-multi-agent-team-practice-v2.md)
-- [OpenClaw 完全指南](ch11/210-openclaw.md)
-- [OpenClaw 多智能体团队搭建经验](ch11/210-openclaw.md)
+- [OpenClaw 多 Agent 团队实践](ch04/044-openclaw-multi-agent-team-practice-v2.md)
+- [OpenClaw 完全指南](ch11/215-openclaw.md)
+- [OpenClaw 多智能体团队搭建经验](ch11/215-openclaw.md)
 - [Headroom Context Compression](ch03/045-agent.md)
-- [AI Agent Harness 构建](ch04/150-ai.md)
+- [AI Agent Harness 构建](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

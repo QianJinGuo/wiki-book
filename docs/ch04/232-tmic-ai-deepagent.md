@@ -142,7 +142,7 @@ Tree Action模式的核心洞察是：**工具调用之间存在依赖关系**�
 
 ## 相关实体
 - [Agent Harness Architecture Design Production Guide](ch03/045-agent.md)
-- [Ai Agent Engineer Capability Map](ch04/150-ai.md)
+- [Ai Agent Engineer Capability Map](ch04/277-ai.md)
 - [Claude Code Agent Teams Task Decomposition Ruofei](ch03/075-claude-code.md)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/045-agent.md)
 - [17 Agent Architectures Evolution](ch03/045-agent.md)

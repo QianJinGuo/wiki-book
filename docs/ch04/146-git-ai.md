@@ -181,11 +181,11 @@ Git 作为 Source of Truth 的选择看似朴素，实则精妙。Git 的内容�
 这套方案最适合：**中小型研发团队（10-50人）、多业务线并行、缺乏统一项目管理工具、工程师主导的团队**。最不适用的场景：**高度依赖非技术干系人的合规场景、需要审批流转的项目管理、无法接受 Git 工作流的运营/非技术团队**。
 
 ## 相关实体
-- [Ai Native Project Management Git](ch04/150-ai.md)
-- [P Ai Pms Guide To Claude](ch04/150-ai.md)
-- [Harness不是目的知识才是护城河 一个Ai工程交付团队的知识沉淀实践](ch04/150-ai.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/245-skill.md)
-- [Building Ai Agents In Accounting](ch04/004-building-ai-agents-in-accounting.md)
+- [Ai Native Project Management Git](ch04/277-ai.md)
+- [P Ai Pms Guide To Claude](ch04/277-ai.md)
+- [Harness不是目的知识才是护城河 一个Ai工程交付团队的知识沉淀实践](ch04/277-ai.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/256-skill.md)
+- [Building Ai Agents In Accounting](ch04/005-building-ai-agents-in-accounting.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/git-repo-based-pm-automation.md)
 

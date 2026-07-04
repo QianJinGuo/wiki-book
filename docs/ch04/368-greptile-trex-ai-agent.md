@@ -65,7 +65,7 @@ TREX 第一版输出 bullet point 列表（"测试了 X，发现了 Y"），但�
 ## 相关实体
 
 - [Claude Code 大型代码库 Harness](ch03/075-claude-code.md) — 代码库索引和 Agent 配置的工程实践
-- [StackOverflow for Agents](ch03/045-agent.md) — Agent 间知识共享的另一种模式
+- [StackOverflow for Agents](ch01/217-0.md) — Agent 间知识共享的另一种模式
 - [GitHub Agentic Token 效率](ch03/045-agent.md) — Agent 在代码审查场景的 token 优化
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/greptile-trex-code-execution-artifact-generation.md)

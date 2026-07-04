@@ -14,9 +14,9 @@ LangChain 证明：只改 Harness（不改模型权重），TerminalBench 2.0 �
 ## 相关实体
 - [长周期 Agent 详解 从 Ralph Loop 到可接管 Harness](ch03/045-agent.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
-- [Langchain Anatomy Agent Harness](ch04/150-ai.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/245-skill.md)
-- [Code As Agent Harness Survey](ch09/046-code-as-agent-harness.md)
+- [Langchain Anatomy Agent Harness](ch04/277-ai.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/256-skill.md)
+- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-12-components-7-decisions.md)
 

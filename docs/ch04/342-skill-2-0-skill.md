@@ -80,8 +80,8 @@ SkillLens 的三个药方（失败模式编码、可执行具体性、高风险�
 ## 相关概念
 
 - [LLM Artifact Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-artifact-optimization.md) — 文本/制品进化优化专题
-- [GEPA optimize_anything](ch01/313-gepa-optimize-anything.md) — 通用文本优化 API（ASI + Pareto 搜索）
-- [Hermes Agent Skill 互优化](ch04/245-skill.md) — KK大叔：Darwin × SkillEvolver 4 轮互优化闭环，验证清华论文核心结论**AI 不需要更强模型**
+- [GEPA optimize_anything](ch01/380-gepa-optimize-anything.md) — 通用文本优化 API（ASI + Pareto 搜索）
+- [Hermes Agent Skill 互优化](ch04/256-skill.md) — KK大叔：Darwin × SkillEvolver 4 轮互优化闭环，验证清华论文核心结论**AI 不需要更强模型**
 
 ---
 

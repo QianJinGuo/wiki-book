@@ -2,7 +2,7 @@
 
 ## Ch04.548 Agent 可观测体系五层架构
 
-> 📊 Level ⭐⭐ | 3.3KB | `entities/agent-observability-5-layer-architecture.md`
+> 📊 Level ⭐⭐ | 3.5KB | `entities/agent-observability-5-layer-architecture.md`
 
 # Agent 可观测体系五层架构
 

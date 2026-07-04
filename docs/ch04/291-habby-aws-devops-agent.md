@@ -50,10 +50,10 @@ DevOps Agent 的 Skill 上传功能和 RCA 报告是团队知识沉淀的载体�
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/habby-game-aws-devops-agent.md)
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/351-aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/277-ai.md)
 
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/045-agent.md)
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch03/045-agent.md)- [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](ch03/045-agent.md)- [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](ch03/045-agent.md)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch03/045-agent.md)- [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](ch01/217-0.md)- [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](ch03/045-agent.md)
 
 ---
 

@@ -30,24 +30,24 @@ SkillsBench研究：84个任务中19%出现负向增益。
 **有学术/工业来源：** 通过率（OpenAI Evals/HELM）、Δ（SkillsBench论文arxiv.org/abs/2602.12670）、触发率（Recall/Precision）、幻觉检测（TruthfulQA/FactScore）、稳定性（统计学标准差）
 **内部经验值（无直接学术背书）：** S级通过率≥95%、IFR=100%、σ<0.05
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-skill-测评指标体系.md)
-→ [AI Skill 测评体系：从零到一](ch04/245-skill.md)（系列主框架）
+→ [AI Skill 测评体系：从零到一](ch04/256-skill.md)（系列主框架）
 
 ## 相关实体
-- [Agentic AI 系统架构与分层模型](ch04/245-skill.md)
-- [Hermes Agent Skill 系统深度解析](ch04/245-skill.md)
+- [Agentic AI 系统架构与分层模型](ch04/256-skill.md)
+- [Hermes Agent Skill 系统深度解析](ch04/256-skill.md)
 
-- [Skill工程化设计：把Agent当算法用](ch04/245-skill.md)
-- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](ch04/150-ai.md)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/890-llm.md)
+- [Skill工程化设计：把Agent当算法用](ch04/256-skill.md)
+- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](ch04/277-ai.md)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/310-rag.md)
 - [AgentEval：YAML驱动的Agent评测框架](ch03/045-agent.md)
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/252-lbs-intentbench.md)
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/258-lbs-intentbench.md)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](ch03/045-agent.md)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/133-skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/245-skill.md)
-- [Skills赏析：使用skills-refiner提升skill质量](ch04/245-skill.md)
-- [harness-engineering-systematic-explainer](ch05/036-harness-engineering-systematic-explainer.md)
-- [Agent 原理、架构与工程实践](ch04/441-agent-engineering-principles-architecture-practice.md)
-- [AI Agent 工程师能力地图](ch04/150-ai.md)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/139-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/256-skill.md)
+- [Skills赏析：使用skills-refiner提升skill质量](ch04/256-skill.md)
+- [harness-engineering-systematic-explainer](ch04/277-ai.md)
+- [Agent 原理、架构与工程实践](ch03/045-agent.md)
+- [AI Agent 工程师能力地图](ch04/277-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析

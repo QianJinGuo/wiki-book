@@ -28,13 +28,13 @@ sources:
   - https://mp.weixin.qq.com/s/6bKuYLV1E5LGqUEKV0tbtA
 related:
 
-  - [Harness 工程化体系](ch05/036-harness-engineering-systematic-explainer.md)
+  - [Harness 工程化体系](ch04/277-ai.md)
   - [Context Management 与 Working Set](ch03/045-agent.md)
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch03/045-agent.md)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/061-harness-engineering.md)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch03/045-agent.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/075-claude-code.md)
 - [Agent Harness 12 组件与 7 个关键决策](ch03/045-agent.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch03/045-agent.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch05/061-harness-engineering.md)
 
 ## 深度分析
 ### 核心命题：harness 与后端的边界是临时状态
@@ -62,18 +62,18 @@ related:
 5. **规模化路径**：Agent 系统扩展时，应采用"添加 Worker"而非"添加集成"的方式。每新增加一种能力（不论是新的微服务、新的 ML pipeline 还是新的 agent），让它以 Worker 身份接入实时发现目录，而非通过点对点集成的方式连接。
 
 ## 相关实体
-- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch04/150-ai.md)
+- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch04/277-ai.md)
 
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/150-ai.md)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/277-ai.md)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](ch03/045-agent.md)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/009-harness.md)
 - [你不知道的 Agent：原理、架构与工程实践](ch03/045-agent.md)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch03/045-agent.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/061-harness-engineering.md)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/210-openclaw.md)
-- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/150-ai.md)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/215-openclaw.md)
+- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/277-ai.md)
 
 ---
 

@@ -12,8 +12,8 @@
 ## 相关实体
 - [Agentscope Java Harness Framework Enterprise Distributed](ch03/045-agent.md)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/045-agent.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch03/045-agent.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch01/217-0.md)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch01/217-0.md)
 - [Claude Code Search Architecture Tencent 2026](ch03/075-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pi-agent-framework-event-bus-design.md)

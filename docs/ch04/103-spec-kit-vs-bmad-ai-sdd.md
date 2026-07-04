@@ -120,8 +120,8 @@ Spec-Kit 基础流程在多仓项目里不够用——主仓沉淀需求，前�
 **本实体关注"双框架实战对比 + 重构迁移项目场景"**（Spec-Kit 强秩序 vs BMAD 强圆桌的对比维度 + 各自适用场景）。
 
 - [Openspec Spec Driven Development Trae Solo](ch05/046-openspec.md) — Trae IDE 内置的 OpenSpec 框架（proposal/design/tasks/specs 四类文档）。本实体是**外部 SDD 工具对比**（Spec-Kit/BMAD），那个是**集成 IDE 的 SDD 工具**；形成"独立工具谱系 ↔ IDE 集成 SDD"对照。
-- [Ai Native Team Building Failures Ceo Digital Twin Case](ch04/150-ai.md) — 叶小钗 16.8KB 旧文，深度讲 AI 原生团队组织建设的"脏乱差"（CEO 数字分身失败案例 / AI 销售线索分配兴衰）。本实体是"**SDD 双框架在重构迁移项目**的实战"，那个是"**AI 原生团队组织建设**的失败教训"；同作者同主题不同场景。
-- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch04/150-ai.md) — 高德 AI 原生系列第 2 篇：Spec 作为 AIOS 抗熵增架构。本实体是 SDD 流程工具对比，那个是 Spec 作为架构概念的延伸。
+- [Ai Native Team Building Failures Ceo Digital Twin Case](ch04/277-ai.md) — 叶小钗 16.8KB 旧文，深度讲 AI 原生团队组织建设的"脏乱差"（CEO 数字分身失败案例 / AI 销售线索分配兴衰）。本实体是"**SDD 双框架在重构迁移项目**的实战"，那个是"**AI 原生团队组织建设**的失败教训"；同作者同主题不同场景。
+- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch04/277-ai.md) — 高德 AI 原生系列第 2 篇：Spec 作为 AIOS 抗熵增架构。本实体是 SDD 流程工具对比，那个是 Spec 作为架构概念的延伸。
 
 ## 深度分析
 
@@ -169,9 +169,9 @@ Spec-Kit 的顺序流程（specify → plan → tasks → implement）在多仓�
 
 ## 相关主题
 
-- AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/045-agent.md) / [Agent Skills Teams Architecture Evolution Selection Guide](ch04/245-skill.md)
-- 多 Agent 圆桌协作 — [Openclaw Multi Agent Team Practice V2](ch04/040-openclaw-multi-agent-team-practice-v2.md)
-- 规格驱动开发概念 — [Ai Agent Exploration Path Legacy Tech](ch04/150-ai.md)
+- AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/045-agent.md) / [Agent Skills Teams Architecture Evolution Selection Guide](ch04/256-skill.md)
+- 多 Agent 圆桌协作 — [Openclaw Multi Agent Team Practice V2](ch04/044-openclaw-multi-agent-team-practice-v2.md)
+- 规格驱动开发概念 — [Ai Agent Exploration Path Legacy Tech](ch04/277-ai.md)
 - AI Coding Agent 评测 — [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch03/045-agent.md)
 
 ---

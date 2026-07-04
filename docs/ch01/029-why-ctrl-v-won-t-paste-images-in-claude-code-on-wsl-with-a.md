@@ -59,9 +59,9 @@ Windows Terminal 在 ConHost 层即拦截 Ctrl+V，这意味着在终端内运�
 该文的一个工程亮点是 `wsl-clip-bridge` 的调试日志设计：通过记录每次重新断言 PNG 的状态（`re-asserted clip-1.png (was: image/bmp,)`），将原本完全隐形的 WSLg 覆盖行为变得可见。在构建任何桥接或代理层时，应为每个"静默失败"路径添加主动探测（如定期采样目标状态）和结构化日志，使隐形的故障变为可诊断的现象。
 
 ## 相关实体
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](ch04/150-ai.md)
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](ch04/277-ai.md)
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/206-0.md)
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/217-0.md)
 - [Seangoedeckecom Build Agents Not Pipelines](ch03/045-agent.md)
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md)
 

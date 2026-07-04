@@ -8,12 +8,12 @@
 
 ## 相关实体
 
-- [xz, two years on: what scanners still cannot catch](ch01/551-xz.md)
+- [xz, two years on: what scanners still cannot catch](ch01/633-xz.md)
 - [autoresearch 迁移到软件开发：多 agent 交叉审核的工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-software-development.md)
 - [扣子 3.0 正式发布：@ 一下全员开工](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-release-official-quantum-bit.md)
 - [知识库问答 @文档：从 dom 方案到 prosemirror 落地](https://github.com/QianJinGuo/wiki/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)
 - [valkey 为什么这么快？盘点 valkey 中提升性能的黑科技](https://github.com/QianJinGuo/wiki/blob/main/entities/valkey-why-valkey-performance.md)
-- [zapocalypse: the attack chain that could have hijacked zapie](ch04/150-ai.md)
+- [zapocalypse: the attack chain that could have hijacked zapie](ch04/277-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
 
 ## 深度分析
@@ -57,11 +57,11 @@ Kiro 是 AWS 推出的下一代 AI 编程助手，提供 IDE 与 CLI 两种形�
 ### 关联实体
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/210-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/215-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/210-openclaw.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/215-openclaw.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

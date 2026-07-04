@@ -217,7 +217,7 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 - [Small Hermes Self Evolving Agent Architecture](ch03/045-agent.md)
 - [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](ch03/045-agent.md)
 - [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](ch11/210-openclaw.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](ch11/215-openclaw.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-loop-source-code-anatomy.md)
 
@@ -282,7 +282,7 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 
 #### Loop 3-8(本来源概览)
 - **Memory Loop**: 跨 session 持久化经验(与 [Hermes Agent Memory System Architecture](ch03/045-agent.md) 同源)
-- **Skill Loop**: 把 procedure 编码为 SKILL.md 改变未来执行(与 [Hermes Skill System](ch04/245-skill.md) 同源)
+- **Skill Loop**: 把 procedure 编码为 SKILL.md 改变未来执行(与 [Hermes Skill System](ch04/256-skill.md) 同源)
 - **Reflection Loop**: 输出经另一 agent 评价后进入下一 pass(与 [Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md) 同源)
 - **Orchestration Loop**: 跨 agent 跨时间协调(本来源独家扩展)
 - **Retry Loop**: 失败自动重试(基础能力)
@@ -315,7 +315,7 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 ### 与其他 Hermes 实体的关系
 
 - **Memory Loop** 与 [Hermes Agent Memory System Architecture](ch03/045-agent.md) 直接对应 — Hermes 记忆系统
-- **Skill Loop** 与 [Hermes Skill System](ch04/245-skill.md) 直接对应 — Hermes 技能系统
+- **Skill Loop** 与 [Hermes Skill System](ch04/256-skill.md) 直接对应 — Hermes 技能系统
 - **Reflection Loop** 与 [Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md) 直接对应 — Hermes 自进化
 - **Orchestration Loop** 与 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](ch03/045-agent.md) 互补 — Loop 视角 vs Operator 视角
 - **Core Loop / Ralph Loop** 与 [Hermes Agent Loop Architecture](ch03/045-agent.md) 直接对应 — 主循环概念

@@ -80,14 +80,14 @@ Dify 知识库的每一个配置项，本质上都是 RAG 链路某个环节的�
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rag-chunking-vectorization-rerank-distillation.md)
 
 ## 相关
-→ [中文版：RAG 深度解析](ch04/245-skill.md)（同一主题的另一存档）
+→ [中文版：RAG 深度解析](ch04/256-skill.md)（同一主题的另一存档）
 
 ## 相关实体
-- [RAG 分块向量化召回重排全链路](ch01/207-rag.md)
-- [向量库 vs 知识图谱：RAG 的进阶路径](ch01/207-rag.md)
-- [AI 客服落地全流程：意图识别到数据飞轮](ch04/150-ai.md)
-- [企业 AI POC 落地困境](ch04/150-ai.md)
-- [AI Agent 工程师能力地图](ch04/150-ai.md)
+- [RAG 分块向量化召回重排全链路](ch01/310-rag.md)
+- [向量库 vs 知识图谱：RAG 的进阶路径](ch01/310-rag.md)
+- [AI 客服落地全流程：意图识别到数据飞轮](ch04/277-ai.md)
+- [企业 AI POC 落地困境](ch04/277-ai.md)
+- [AI Agent 工程师能力地图](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
 
 ---

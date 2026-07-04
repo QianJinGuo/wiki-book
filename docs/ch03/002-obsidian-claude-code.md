@@ -155,13 +155,13 @@ last-session: 2026-05-10
 > 本页整合来源：[GitHub] ballred/obsidian-claude-pkm、obsidian-claude-code-mcp、Claudesidian MCP；[博客] Chase AI、Noah Vincent、Niclas Dern、Kenneth Reitz 等实战汇总
 
 ## 相关实体
-- [obsidian claude code integration guide](ch09/103-obsidian-claude-code-integration-guide.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/150-ai.md)
-- [Claude Code Memory Setup (Obsidian + Graphify)](ch01/694-claude-code-memory-setup-obsidian-graphify.md)
+- [obsidian claude code integration guide](ch09/112-obsidian-claude-code-integration-guide.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/277-ai.md)
+- [Claude Code Memory Setup (Obsidian + Graphify)](ch01/842-claude-code-memory-setup-obsidian-graphify.md)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/075-claude-code.md)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/075-claude-code.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
-- [gstack — AI协作开发工作流 & 复杂度棘轮](ch04/150-ai.md)
+- [gstack — AI协作开发工作流 & 复杂度棘轮](ch04/277-ai.md)
 
 ---
 

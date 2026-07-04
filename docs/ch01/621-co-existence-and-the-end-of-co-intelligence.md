@@ -39,7 +39,7 @@ Mollick 的实际工作流是分层的：
 - **网站搭建**：AI 全权（用 Claude Code + Opus 4.8，几分钟完成）
 - **AI 友好性测试**：让 AI 当目标读者，做 A/B 测试
 
-这种"高价值产出人工 + 流程性产出 AI"的分层策略，与 [The Bitter Lesson Versus The Garbage Can](ch04/311-the-bitter-lesson-versus-the-garbage-can.md) 提出的"AI 找自己的路径通过组织混乱"形成有趣对照——Mollick 在写作领域亲自示范了"定义好结果，让 AI 找到实现路径"的工作模式。
+这种"高价值产出人工 + 流程性产出 AI"的分层策略，与 [The Bitter Lesson Versus The Garbage Can](ch04/315-the-bitter-lesson-versus-the-garbage-can.md) 提出的"AI 找自己的路径通过组织混乱"形成有趣对照——Mollick 在写作领域亲自示范了"定义好结果，让 AI 找到实现路径"的工作模式。
 
 ### 4. Prompt Injection 伦理的觉醒
 
@@ -47,13 +47,13 @@ Mollick 的实际工作流是分层的：
 
 ### 5. 协同工作的"协商"性质
 
-Mollick 强调"协商"而非"解决"——模型能力快速变化，最佳工作模式是动态调整。这与 [Your First Ai Agent Should Do One Thing Badly](ch04/341-your-first-ai-agent-should-do-one-thing-badly.md) 的"crawl, walk, run"迭代哲学同源：不要追求一次性完美配置，而是建立反馈闭环持续调整。
+Mollick 强调"协商"而非"解决"——模型能力快速变化，最佳工作模式是动态调整。这与 [Your First Ai Agent Should Do One Thing Badly](ch04/352-your-first-ai-agent-should-do-one-thing-badly.md) 的"crawl, walk, run"迭代哲学同源：不要追求一次性完美配置，而是建立反馈闭环持续调整。
 
 ### 与相邻观点的张力
 
-- 与 [Karpathy 的 agentic engineering 转向](ch04/118-karpathy-vibe-coding-agentic-engineering.md)一致：人类角色在变化
-- 与 [管理即 AI 超能力](ch01/424-management-as-ai-superpower.md)互补：Mollick 强调"协商"而非"管理"，反映写作与商业的不同权力结构
-- 与 [Claude Code 现状评估](ch01/403-claude-code-and-what-comes-next.md)同源：能力跃迁带来新工作模式
+- 与 [Karpathy 的 agentic engineering 转向](ch04/131-karpathy-vibe-coding-agentic-engineering.md)一致：人类角色在变化
+- 与 [管理即 AI 超能力](ch01/531-management-as-ai-superpower.md)互补：Mollick 强调"协商"而非"管理"，反映写作与商业的不同权力结构
+- 与 [Claude Code 现状评估](ch01/469-claude-code-and-what-comes-next.md)同源：能力跃迁带来新工作模式
 
 ## 实践启示
 
@@ -66,11 +66,11 @@ Mollick 强调"协商"而非"解决"——模型能力快速变化，最佳工�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
-- [The Bitter Lesson Versus The Garbage Can](ch04/311-the-bitter-lesson-versus-the-garbage-can.md)
-- [Claude Code And What Comes Next](ch01/403-claude-code-and-what-comes-next.md)
-- [Your First Ai Agent Should Do One Thing Badly](ch04/341-your-first-ai-agent-should-do-one-thing-badly.md)
-- [Management As Ai Superpower](ch01/424-management-as-ai-superpower.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
+- [The Bitter Lesson Versus The Garbage Can](ch04/315-the-bitter-lesson-versus-the-garbage-can.md)
+- [Claude Code And What Comes Next](ch01/469-claude-code-and-what-comes-next.md)
+- [Your First Ai Agent Should Do One Thing Badly](ch04/352-your-first-ai-agent-should-do-one-thing-badly.md)
+- [Management As Ai Superpower](ch01/531-management-as-ai-superpower.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

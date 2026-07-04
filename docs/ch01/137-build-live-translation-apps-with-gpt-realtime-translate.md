@@ -26,11 +26,11 @@ OpenAI的Cookbook指南详细介绍了如何使用gpt-realtime-translate构建�
 4. **隐私合规是全球化部署的必要条件**：实时翻译涉及大量语音数据跨境处理，需严格遵守GDPR、CCPA及各地区数据本地化要求
 5. **fallback机制决定产品稳定性**：网络波动时如何保证用户体验——建议实现多级降级（WebRTC → WebSocket → REST API轮询）
 ## 相关实体
-- [Openai Gpt Realtime Voice Models Qbitai](ch01/619-openai-gpt-realtime-voice-models-qbitai.md)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/114-useful-memories-become-faulty-when-continuously-updated-by-l.md)
+- [Openai Gpt Realtime Voice Models Qbitai](ch01/761-openai-gpt-realtime-voice-models-qbitai.md)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/113-useful-memories-become-faulty-when-continuously-updated-by-l.md)
 - [Runtime Instrumentation Of Qt6 Apps With Frida Part 1 Getting Visibility](ch01/009-runtime-instrumentation-of-qt6-apps-with-frida-part-1-get.md)
-- [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](ch01/673-chatgpt.md)
-- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/380-claude.md)
+- [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](ch01/987-chatgpt.md)
+- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/485-claude.md)
 
 ---
 

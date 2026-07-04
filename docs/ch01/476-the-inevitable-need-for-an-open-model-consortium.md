@@ -39,11 +39,11 @@ Linux 的成功不仅因为开源，更因为 Linux Foundation 提供了治理�
 无论开放还是闭源，多模型策略减少单一供应商风险——与 `Netflix Switchboard Lightbulb Model Routing` 的路由策略对齐。
 
 ## 相关实体
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens 1](ch04/150-ai.md)
-- [Fedora Hummingbird Container Security](ch04/150-ai.md)
-- [Pixel 10 Zero Click Exploit Chain](ch04/150-ai.md)
-- [Anthropic_Cache_Tokenomics](ch12/003-token.md)
-- [Novee Security How To Get A 100 Conference Acceptance Rate The No](ch01/206-0.md)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens 1](ch04/277-ai.md)
+- [Fedora Hummingbird Container Security](ch04/277-ai.md)
+- [Pixel 10 Zero Click Exploit Chain](ch04/277-ai.md)
+- [Anthropic_Cache_Tokenomics](ch01/854-anthropic.md)
+- [Novee Security How To Get A 100 Conference Acceptance Rate The No](ch01/217-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-inevitable-need-for-an-open-model-consortium.md)
 

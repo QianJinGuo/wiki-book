@@ -77,10 +77,10 @@ Turnstile 的运作模式表明，互联网生态已经形成了对指纹追踪�
 开源社区可以考虑开发 WebGL 指纹的标准化模拟库，使得隐私浏览器可以返回"合理但非唯一"的指纹值——既不是完全随机的（可能触发检测），也不是真实硬件的指纹（暴露用户身份）。这种中间地带可能帮助隐私浏览器在保持保护效果的同时通过 Turnstile 一类的验证 ^。
 
 ## 相关实体
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/206-0.md)
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](ch04/150-ai.md)
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/217-0.md)
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](ch04/277-ai.md)
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/206-0.md)
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/217-0.md)
 - [Seangoedeckecom Build Agents Not Pipelines](ch03/045-agent.md)
 
 ## 相关主题

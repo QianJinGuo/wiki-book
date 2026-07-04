@@ -148,11 +148,11 @@ RAG 式的语义相似召回假设"表面语义相关 = 实质相关"。但真�
 **探索冲突保留与情境选择的计算框架。** 这是文章指出的最薄弱环节：如何在不强制覆盖的情况下，保留矛盾并实现情境依赖的选择？当前没有任何成熟方案。这需要新的记忆建模结构，而不是在现有 KV store 上加 layer。
 **意图浮现的多模型耦合机制。** 四个模型（用户、任务、世界、自我）长期耦合后浮现意图——这个假设目前没有实验验证。需要设计实验来测试：单独优化某个模型的记忆质量，对整体意图理解准确率的边际贡献是多少？哪个模型的贡献最大？
 ## 相关实体
-- [How Ai Agent Memory Works](ch04/147-how-ai-agent-memory-works.md)
-- [Memory Agent Systems Cobanov](ch04/480-memory-agent-systems-cobanov.md)
+- [How Ai Agent Memory Works](ch04/151-how-ai-agent-memory-works.md)
+- [Memory Agent Systems Cobanov](ch04/512-memory-agent-systems-cobanov.md)
 - [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
-- [Memory Vs Rag Agent Memory Systematic Framework](ch03/045-agent.md)
-- [Agent Memory Architecture Past Influence Future Ruofei](ch04/030-agent-memory-architecture-past-influence-future-ruofei.md)
+- [Memory Vs Rag Agent Memory Systematic Framework](ch01/310-rag.md)
+- [Agent Memory Architecture Past Influence Future Ruofei](ch03/045-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

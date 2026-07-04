@@ -33,12 +33,12 @@ Agent 流量的模式不同于人类——需要独立的异常检测和安全�
 ## 相关实体
 - [Running An Ai Native Engineering Org](ch01/045-running-an-ai-native-engineering-org.md)
 - [World Knowledge Agent Self Evolution Tencent Hkustgz](ch03/045-agent.md)
-- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](ch04/150-ai.md)
+- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](ch04/277-ai.md)
 - [Alphaevolve Deepmind Discovery Agent](ch03/045-agent.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/245-skill.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/256-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md)
-- [olmo-eval: an evaluation workbench for the model development](ch01/623-olmo-eval-an-evaluation-workbench-for-the-model-development.md)
+- [olmo-eval: an evaluation workbench for the model development](ch01/774-olmo-eval-an-evaluation-workbench-for-the-model-development.md)
 
 ## 摘要
 

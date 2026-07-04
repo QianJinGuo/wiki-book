@@ -79,7 +79,7 @@ Claude Code 实现：MEMORY.md（索引）→ memory/（分类文件）→ 磁�
 - [Harness Engineering](ch05/061-harness-engineering.md)
 - [Claude Code Agentic Harness 设计模式](ch03/075-claude-code.md)
 - [Harness Engineering Core Patterns](ch05/061-harness-engineering.md)
-- [fudan-peking AHE](ch04/221-fudan-peking-ahe-agentic-harness-engineering.md)
+- [fudan-peking AHE](ch05/061-harness-engineering.md)
 
 ---
 

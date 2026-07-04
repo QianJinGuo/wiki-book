@@ -114,7 +114,7 @@ Rachel 婚礼策划的例子完美展示了权限边界问题：助理需要算�
 - 论文：https://arxiv.org/pdf/2605.26086
 - 代码：https://github.com/LiberCoders/Claw-Anything
 - 数据：https://huggingface.co/datasets/LiberCoders/Claw-Anything
-- → [ProgramBench Agent Benchmark](ch04/152-programbench-agent-benchmark.md) — 程序合成能力评测
+- → [ProgramBench Agent Benchmark](ch04/158-programbench-agent-benchmark.md) — 程序合成能力评测
 - → [Agent 记忆评测全景](ch03/045-agent.md) — 记忆系统评测
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claw-anything-personal-assistant-agent-benchmark-three-dimensional-context.md)
 

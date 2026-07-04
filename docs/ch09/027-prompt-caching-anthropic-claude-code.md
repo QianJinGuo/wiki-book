@@ -145,7 +145,7 @@ Prompt Cache 命中率应该进监控，且告警阈值要严格。如果团队�
 - [Claude Code Prompt 提示词体系源码解析](ch03/075-claude-code.md)
 - [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](ch03/075-claude-code.md)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/075-claude-code.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/150-ai.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/277-ai.md)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/075-claude-code.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 - [Claude Code Agent 工程设计](ch03/075-claude-code.md)

@@ -36,9 +36,9 @@ Wi-Fi 8 AP 由于集成 AI 硅片，即使芯片厂商当前乐观估计，功�
 将 Wi-Fi 8 刷新不仅视为 RF 升级，而是边缘计算部署。盘点潜在用例：医疗保健中的跌倒检测、智能 HVAC 和照明、零售互动、或集成 Wi-Fi  sensing 与摄像头的安全分析。与 OT、楼宇管理和应用团队讨论他们如何利用 AP 层的占用分析和本地化 AI 推理能力。这些对话现在就开始，因为 AI 能力将成为 Wi-Fi 8 RFP 中的差异化因素。
 
 ## 相关实体
-- [Wi-Fi 8 is closer than you think](ch03/052-wi-fi-8-is-closer-than-you-think.md)
-- [Wi-Fi 8 is closer than you think. Here's what you need to know](ch03/052-wi-fi-8-is-closer-than-you-think.md)
-- [Wi-Fi 8 is closer than you think](ch03/065-wi-fi-8.md)
+- [Wi-Fi 8 is closer than you think](ch03/054-wi-fi-8-is-closer-than-you-think.md)
+- [Wi-Fi 8 is closer than you think. Here's what you need to know](ch03/054-wi-fi-8-is-closer-than-you-think.md)
+- [Wi-Fi 8 is closer than you think](ch03/066-wi-fi-8.md)
 
 ---
 

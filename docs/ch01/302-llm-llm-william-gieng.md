@@ -244,13 +244,13 @@ Python 案例使用 `numpy.default_rng(7)` + 4 个 logistic 方程，可重现�
 
 ## 相关实体
 
-- [Video Rag Chunking Strategy](ch01/207-rag.md)（文本 + AI 同源 — 视频 RAG 切片策略）
-- [2 Year 25 Ai Projects Summary](ch04/150-ai.md)（2 年 25 个 AI 项目总结 — 失败案例对照）
-- [Loss Function Development Elvis Sun Goal Loop 2026](ch01/206-0.md)（LFD 强制熵同源 — 都是"系统化检查"思维）
-- [State Of Memory In Agent Harness Mem0 2026](ch03/045-agent.md)（Agent 记忆体系 — 类似"看起来像观测但实际是生成"）
-- [Recent Developments In Llm Architectures Jiqizhixin](ch01/890-llm.md)（LLM 架构最新进展 — 同主题）
-- [2 Year 25 Ai Projects Summary](ch04/150-ai.md)（2 年 25 个 AI 项目 — 失败方法论对照）
-- [While Breathless In Stodgy Viridian](ch01/542-while-breathless-in-stodgy-viridian.md)（对 LLM 局限的反思同源）
+- [Video Rag Chunking Strategy](ch01/310-rag.md)（文本 + AI 同源 — 视频 RAG 切片策略）
+- [2 Year 25 Ai Projects Summary](ch04/277-ai.md)（2 年 25 个 AI 项目总结 — 失败案例对照）
+- [Loss Function Development Elvis Sun Goal Loop 2026](ch01/217-0.md)（LFD 强制熵同源 — 都是"系统化检查"思维）
+- [State Of Memory In Agent Harness Mem0 2026](ch01/217-0.md)（Agent 记忆体系 — 类似"看起来像观测但实际是生成"）
+- [Recent Developments In Llm Architectures Jiqizhixin](ch01/606-llm.md)（LLM 架构最新进展 — 同主题）
+- [2 Year 25 Ai Projects Summary](ch04/277-ai.md)（2 年 25 个 AI 项目 — 失败方法论对照）
+- [While Breathless In Stodgy Viridian](ch01/558-while-breathless-in-stodgy-viridian.md)（对 LLM 局限的反思同源）
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-themes-not-observations-william-gieng-causal-inference-2026.md)
 

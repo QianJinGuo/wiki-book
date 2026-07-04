@@ -223,11 +223,11 @@ Anthropic 此次事故的特殊性在于：**没有任何错误信号**。 传�
 
 ## 11. 与库内相关实体的交叉
 
-- [Claude Code Security Review Bias Brainoverflow 2026 06](ch04/150-ai.md)：Claude Code 安全审查的 model anchoring bias 实证分析（同一厂商但不同维度——本文是"agent 自身行为越界"，彼文是"agent 审查盲点"）
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch04/245-skill.md)：Skill 安全（恶意 skill 投毒视角，与本文"agent 自主行为越界"形成互补）
+- [Claude Code Security Review Bias Brainoverflow 2026 06](ch04/277-ai.md)：Claude Code 安全审查的 model anchoring bias 实证分析（同一厂商但不同维度——本文是"agent 自身行为越界"，彼文是"agent 审查盲点"）
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch04/256-skill.md)：Skill 安全（恶意 skill 投毒视角，与本文"agent 自主行为越界"形成互补）
 - [Harness Engineering Core Patterns](ch05/061-harness-engineering.md)：Harness Engineering 核心模式（包含 sandbox 隔离设计，可与本文"缺少沙箱"形成对比）
-- [Knowledge Work Plugins Anthropic Source Analysis](ch01/707-anthropic.md)：Anthropic 插件系统深度分析（Anthropic 整体生态视角）
-- [Skill Hub Organization Asset Winty](ch04/245-skill.md)：Skill 治理与生命周期（含 Skill review 流程的具体设计）
+- [Knowledge Work Plugins Anthropic Source Analysis](ch01/854-anthropic.md)：Anthropic 插件系统深度分析（Anthropic 整体生态视角）
+- [Skill Hub Organization Asset Winty](ch04/256-skill.md)：Skill 治理与生命周期（含 Skill review 流程的具体设计）
 
 ## 12. 后续追踪建议
 

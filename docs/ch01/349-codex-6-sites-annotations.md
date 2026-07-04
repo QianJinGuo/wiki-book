@@ -70,7 +70,7 @@
 - 不是替代，而是**生态合作**：与 Wix/Base44/Replit/Lovable/Figma/Webflow/Emergent 共建
 
 ### 5. Annotations = "局部编辑"范式
-- 与 [Embabel](ch07/019-embabel.md) 的"完全可解释可审计"思路呼应
+- 与 [Embabel](ch07/020-embabel.md) 的"完全可解释可审计"思路呼应
 - 局部修改 vs 全局重生成 = 节省用户心智 + 减少幻觉累积
 
 ## 启示
@@ -81,14 +81,14 @@
 5. **Codex 并入 ChatGPT = 边界模糊** —— Agent 能力 + Chat 界面 = 一体化产品
 
 ## 相关对照
-- [Codex Goal Agent Runtime](ch09/043-codex-goal.md)
-- [Codex Goal 实现拆解](ch09/043-codex-goal.md)
-- [Codex Computer Use](ch09/112-codex-can-now-control-other-desktop-devices-via-computer-use.md)
-- [Codex 自主赚钱](ch01/437-codex-autonomous-earning-money.md)
+- [Codex Goal Agent Runtime](ch09/046-codex-goal.md)
+- [Codex Goal 实现拆解](ch09/046-codex-goal.md)
+- [Codex Computer Use](ch09/114-codex-can-now-control-other-desktop-devices-via-computer-use.md)
+- [Codex 自主赚钱](ch01/542-codex.md)
 - [Claude Code vs Codex 上下文架构](ch03/075-claude-code.md)
 - [Meta Skill](ch07/023-meta-skill.md)（Skill 2.0 抽象）
-- [扣子 3.0 协作系统](ch01/835-3-0.md)（同类协作产品）
-- [Embabel](ch07/019-embabel.md)（可解释+类型系统集成）
+- [扣子 3.0 协作系统](ch01/217-0.md)（同类协作产品）
+- [Embabel](ch07/020-embabel.md)（可解释+类型系统集成）
 
 ## 深度分析
 
@@ -123,7 +123,7 @@
 
 - [Meta Skill](ch07/023-meta-skill.md) —— Skill 2.0 抽象层理论，解释为何"1 插件 = N 原子 Skill × M 应用集成"是技能演进的必然方向。
 
-- [Embabel](ch07/019-embabel.md) —— 与 Annotations 的"局部编辑"范式在可解释性设计上形成跨产品呼应，两者共同指向"信任用户满意部分，只改被选中部分"的协作哲学。
+- [Embabel](ch07/020-embabel.md) —— 与 Annotations 的"局部编辑"范式在可解释性设计上形成跨产品呼应，两者共同指向"信任用户满意部分，只改被选中部分"的协作哲学。
 
 ## 2nd Source：极客之家译介（2026-06-05）——Sites 落地细节与三层权限
 

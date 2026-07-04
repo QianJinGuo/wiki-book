@@ -108,7 +108,7 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 - [LLM Artifact Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-artifact-optimization.md) — 文本/制品进化优化专题
 - [AlphaEvolve](ch03/045-agent.md) — DeepMind 代码进化型科学发现 Agent
 - [Agent Memory 模块化框架与评测](ch03/045-agent.md) — ICLR 2026 评测基准
-- [Skill RAG 清华 SRA](ch04/245-skill.md) — 技能增强型检索
+- [Skill RAG 清华 SRA](ch04/256-skill.md) — 技能增强型检索
 
 ## 深度分析
 1. **ASI 即文本优化的梯度**：`evaluate()` 返回单一标量 → `oa.log()` 记录诊断信息作为 ASI，是从"告诉 LLM 打几分"到"告诉 LLM 怎么改"的信息升维。这一机制与数值优化中梯度的角色完全对称：梯度指示方向，ASI 指示修复路径^。传统进化框架将诊断上下文压缩为单一标量，相当于丢弃了梯度信息。
@@ -125,18 +125,18 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 5. **优先在 Generalization 模式构建可迁移 skill library**：对于需要在新问题上快速适配的场景（如 Agent skill 自动化），先用 Generalization 模式将优化结果固化为 skill，再用 Multi-Task 模式让 skill 在任务间互相增强^。
 
 ## 相关实体
-- [2026年最值得关注的15款开发者工具你用过几个](ch01/206-0.md)
+- [2026年最值得关注的15款开发者工具你用过几个](ch01/217-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gepa-optimize-anything-universal-text-optimization.md)
-- [腾讯研究院Ai速递 20260507](ch04/150-ai.md)
-- [Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](ch04/150-ai.md)
-- [Kasra Blog Llm Hacking Empirical Test](ch01/890-llm.md)
-- [Hermes Agent V014 Architecture Shugex](ch03/045-agent.md)
+- [腾讯研究院Ai速递 20260507](ch04/277-ai.md)
+- [Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](ch04/277-ai.md)
+- [Kasra Blog Llm Hacking Empirical Test](ch01/606-llm.md)
+- [Hermes Agent V014 Architecture Shugex](ch01/217-0.md)
 ## 与 Hermes Agent Skill 互优化的关联
 
-**[Hermes Agent Skill 互优化](ch04/245-skill.md)**（KK大叔 4 轮互优化实验，2026-06）是 GEPA 通用优化方法论在 **Skill 自进化场景**的具体落地。
+**[Hermes Agent Skill 互优化](ch04/256-skill.md)**（KK大叔 4 轮互优化实验，2026-06）是 GEPA 通用优化方法论在 **Skill 自进化场景**的具体落地。
 
 **互验证（4 维高度互补）**：
 

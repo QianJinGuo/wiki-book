@@ -11,7 +11,7 @@
 - [Wow Harness V3 Governance Protocol](ch05/009-harness.md)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/045-agent.md)
 - [Ath Agent Trust Handshake Protocol](ch03/045-agent.md)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/245-skill.md)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/256-skill.md)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/范凌当公司变成agent关于-ai-时代组织的-5-个反思.md)

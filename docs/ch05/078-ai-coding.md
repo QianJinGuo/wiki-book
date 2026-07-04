@@ -51,7 +51,7 @@
 
 - [Attention Collapse与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 - [Spec驱动开发](ch05/009-harness.md)
-- [AI Coding效率分析](ch04/150-ai.md)
+- [AI Coding效率分析](ch04/277-ai.md)
 
 ## 标签
 

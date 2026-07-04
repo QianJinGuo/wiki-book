@@ -70,9 +70,9 @@ METR 的测量基准（Sonnet 3.5 21分钟 vs Opus 4.6 12小时）反映的是�
 4. **定价模型关注 session-hour**：除了 token 成本，active runtime 成本是部署规模的关键变量
 5. **多 agent 协作时机**：当任务可分解为独立子任务时（如舆情监控按域名列表 fan-out），优先考虑并行 agent 而非串行单一 agent
 ## 相关实体
-- [Anthropic Claude Managed Agents Platform 2026](ch03/045-agent.md)
-- [Anthropic Managed Agents Scaling](ch04/292-anthropic-managed-agents-scaling.md)
-- [Anthropic Claude Managed Agents Platform Launch](ch04/340-anthropic-claude-managed-agents-platform-launch.md)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/217-0.md)
+- [Anthropic Managed Agents Scaling](ch03/045-agent.md)
+- [Anthropic Claude Managed Agents Platform Launch](ch03/045-agent.md)
 - [Anthropic Claude Managed Agents Guide](ch03/045-agent.md)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch03/045-agent.md)
 

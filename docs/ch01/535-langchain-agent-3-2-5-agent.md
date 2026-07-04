@@ -115,7 +115,7 @@ Agent 遵循预定义的 `skill` 剧本，根据关系状态差异化处理：
 
 ## 相关实体
 
-- [Agent Harness 组件解析](ch04/150-ai.md)
+- [Agent Harness 组件解析](ch04/277-ai.md)
 - [MCP 设计模式](ch03/045-agent.md)
 - Agent 评估
 

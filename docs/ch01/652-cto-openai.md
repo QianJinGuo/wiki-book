@@ -49,8 +49,8 @@ OpenAI内部权力斗争的公开化，折射出一个行业层面的深层问�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-ecosystem.md)
 
-- [破案了为啥chatgpt老想着稳稳地接住你](ch01/673-chatgpt.md)
-- [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](ch04/150-ai.md)
+- [破案了为啥chatgpt老想着稳稳地接住你](ch01/987-chatgpt.md)
+- [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](ch04/277-ai.md)
 
 ---
 

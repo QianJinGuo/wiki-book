@@ -11,17 +11,17 @@
 - 来源：AWS Machine Learning Blog
 
 ## 相关实体
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/067-building-ai-agents-for-business-support-using-amazon-bedrock.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Build Ai Powered Dashboard Automation Agents With Nlp On Amazon Bedrock Agentcor](ch04/150-ai.md)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/197-amazon-quick.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/070-building-ai-agents-for-business-support-using-amazon-bedrock.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
+- [Build Ai Powered Dashboard Automation Agents With Nlp On Amazon Bedrock Agentcor](ch04/277-ai.md)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/253-bedrock.md)
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
 
 ---
 
-- [stack overflow for agents — ephemeral intelligence gap 框架与 a](ch03/045-agent.md)
+- [stack overflow for agents — ephemeral intelligence gap 框架与 a](ch01/217-0.md)
 
 ## 案例概述
 

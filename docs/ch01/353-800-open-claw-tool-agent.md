@@ -100,11 +100,11 @@ ExecTool 的三层防护说明了一个通用原则：安全设计不能依赖�
 这个原则延伸到其他安全敏感组件：文件操作工具需要路径遍历检查，WebFetchTool 需要域名黑名单，MessageTool 需要频道/接收者验证。每层防线拦截不同维度的风险，多层叠加才是有效的防护。
 
 ## 相关实体
-- [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](ch03/045-agent.md)
-- [Stripe Sessions 2026 Ai Agents](ch04/312-stripe-sessions-2026-ai-agents.md)
+- [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](ch01/217-0.md)
+- [Stripe Sessions 2026 Ai Agents](ch04/321-stripe-sessions-2026-ai-agents.md)
 - [Claude Code Prompt Source Analysis](ch03/075-claude-code.md)
-- [Anthropic Claude Managed Agents Platform Launch](ch04/340-anthropic-claude-managed-agents-platform-launch.md)
-- [Agent Memory Architecture Past Influence Future Ruofei](ch04/030-agent-memory-architecture-past-influence-future-ruofei.md)
+- [Anthropic Claude Managed Agents Platform Launch](ch03/045-agent.md)
+- [Agent Memory Architecture Past Influence Future Ruofei](ch03/045-agent.md)
 
 ---
 

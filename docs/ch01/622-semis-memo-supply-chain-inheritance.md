@@ -46,11 +46,11 @@ Citrini 指出，Nvidia 在 2025 年 5 月的 800V DC 机架架构技术博客�
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/citriniresearch-supply-chain-inheritance.md)
 
 ## 相关实体
-- [Semis Memo: Supply Chain Inheritance](ch01/483-semis-memo-supply-chain-inheritance.md)
-- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](ch04/150-ai.md)
-- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](ch04/150-ai.md)
-- [Amazon launches Supply Chain Services for businesses of all sizes](ch04/150-ai.md)
-- [semgrep intercom php supply chain](ch12/105-semgrep-intercom-php-supply-chain.md)
+- [Semis Memo: Supply Chain Inheritance](ch01/622-semis-memo-supply-chain-inheritance.md)
+- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](ch04/277-ai.md)
+- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](ch04/277-ai.md)
+- [Amazon launches Supply Chain Services for businesses of all sizes](ch04/277-ai.md)
+- [semgrep intercom php supply chain](ch12/113-semgrep-intercom-php-supply-chain.md)
 
 ---
 

@@ -438,14 +438,14 @@ Pitfalls 不是设计时想象出来的警告，而是实际上线后沉淀下�
 ---
 
 ## 相关实体
-- [Skill Hub Organization Asset Winty](ch04/245-skill.md)
+- [Skill Hub Organization Asset Winty](ch04/256-skill.md)
 - [Openspec Spec Driven Development Trae Solo](ch05/046-openspec.md)
-- [Skills Refiner Design Quality Evaluation Framework](ch04/245-skill.md)
-- [Perplexity Internal Skill Design Guide](ch04/245-skill.md)
-- [Hermes Skill System Winty](ch04/245-skill.md)
+- [Skills Refiner Design Quality Evaluation Framework](ch04/256-skill.md)
+- [Perplexity Internal Skill Design Guide](ch04/256-skill.md)
+- [Hermes Skill System Winty](ch04/256-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-design-spec-8-block-checklist-winty.md)
-- [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](ch04/245-skill.md)
+- [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](ch04/256-skill.md)
 
 ---
 

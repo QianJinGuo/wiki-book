@@ -2,7 +2,7 @@
 
 > 超级智能、存在风险、AI 治理、人类命运
 
-> 本章收录 **17 篇**实体，按深度递增排列。
+> 本章收录 **18 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,6 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 11 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 3 |
 
 ---
@@ -95,8 +96,8 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 ## 相关对照
 - [Impeccable](ch05/001-impeccable.md) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
 - [Karpathy Vibe Coding](ch03/045-agent.md) —— Karpathy 原始概念出处
-- [Willison Vibe Coding Convergence](ch09/043-coding-agent.md) —— Willison 的同主题回应
-- [Agent Skill 编写指南](ch04/245-skill.md) —— 通用 skill 格式
+- [Willison Vibe Coding Convergence](ch09/047-coding-agent.md) —— Willison 的同主题回应
+- [Agent Skill 编写指南](ch04/256-skill.md) —— 通用 skill 格式
 - [Agentic Design System 演化](ch01/011-agentic-design-system-from-chatbot-to-orchestration.md)
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding.md)
 
@@ -135,11 +136,11 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 本文档基于火山引擎 Data Agent 产品体系，设计一套可对标的**企业级数据智能体**产品。涵盖：智能问数 Agent（NL2SQL）、营销策略 Agent（CDP 集成）两大核心场景的完整功能拆解、技术架构、API 设计、数据模型。
 
 ## 相关实体
-- [Openai Buys Ai Consultancy Enterprises](ch04/150-ai.md)
-- [Multilingual Ai](ch04/150-ai.md)
-- [Baixing Ontoz Enterprise Ontology Multi Agent](ch04/150-ai.md)
-- [Enterprise Ai Memory Substrate Three Layer Architecture](ch04/150-ai.md)
-- [Skill Version Management Semantic Versioning Practices Winty](ch04/245-skill.md)
+- [Openai Buys Ai Consultancy Enterprises](ch04/277-ai.md)
+- [Multilingual Ai](ch04/277-ai.md)
+- [Baixing Ontoz Enterprise Ontology Multi Agent](ch04/277-ai.md)
+- [Enterprise Ai Memory Substrate Three Layer Architecture](ch04/277-ai.md)
+- [Skill Version Management Semantic Versioning Practices Winty](ch04/256-skill.md)
 
 → [产品总览 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/volcengine-data-agent-product-overview.md)
 → [智能问数Agent 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/volcengine-data-agent-intelligent-query-agent.md)
@@ -888,7 +889,7 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 
 ## 相关实体
 - [AutoResearch 多Agent开发](ch03/045-agent.md) — 类似的 Agentic 循环 + 量化评分思路
-- [Harness Engineering](ch03/045-agent.md) — 约束驱动的自动化执行
+- [Harness Engineering](ch05/061-harness-engineering.md) — 约束驱动的自动化执行
 - [Enterprise Software Moats in Agent Era](ch03/045-agent.md) — 企业级 Agent 护城河分析
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 宪法级约束 + 量化验收标准
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md)
@@ -912,8 +913,8 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 **访谈来源**：James 接受技术博主 **Ryan Peterman** 的视频采访（2+ 小时），本文根据采访视频整理「AI 时代的职业建议」部分。
 
 ## 相关实体
-- [Fanling Company As Agent Ai Org Reflection](ch04/150-ai.md)
-- [Ai Era What To Read World Book Day](ch04/150-ai.md)
+- [Fanling Company As Agent Ai Org Reflection](ch04/277-ai.md)
+- [Ai Era What To Read World Book Day](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/james-cowling-engineering-philosophy-ai-era.md)
 
@@ -1083,7 +1084,7 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 > -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gitlab-layoffs-memo-2026-5.md)
 ## 相关实体
 
-- [iii.dev](ch01/391-iii-dev.md)
+- [iii.dev](ch01/457-iii-dev.md)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -1178,11 +1179,11 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 - [GitLab Duo Agent Platform](https://about.gitlab.com/blog/2026/01/gitlab-duo-agent-platform)
 - [GitLab Transcend 2026（6 月 10 日）](https://about.gitlab.com/events/gitlab-transcend)
 ## 相关实体
-- [Gitlab 14Pct Layoff Agent Platform Ai 2026Q1](ch04/150-ai.md)
+- [Gitlab 14Pct Layoff Agent Platform Ai 2026Q1](ch04/277-ai.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Ai Agents Inside Perimeter Hackernews](ch04/150-ai.md)
+- [Ai Agents Inside Perimeter Hackernews](ch04/277-ai.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Principals Ai Education](ch04/150-ai.md)
+- [Principals Ai Education](ch04/277-ai.md)
 
 ---
 
@@ -1244,13 +1245,13 @@ Welo Data 的服务覆盖从训练数据到生产监控的全链路：
 
 **Human evaluation**：在目标语言中实现 **90%+ 评估者共识率**，这是通过评估者独立校准和质量控制流程实现的，而非简单依赖评分数量。
 
-**RLHF 和 preference data**：在生产语言中进行偏好标注和 [RLHF](ch04/150-ai.md)，而非仅在英语或团队语言中进行。偏好信号的文化特异性意味着必须由真实目标语言用户产生。
+**RLHF 和 preference data**：在生产语言中进行偏好标注和 [RLHF](ch04/277-ai.md)，而非仅在英语或团队语言中进行。偏好信号的文化特异性意味着必须由真实目标语言用户产生。
 
 **Production monitoring**：按语言、按地区追踪质量指标，在用户发现问题之前发现多语言质量退化。
 
 ## 质量保障基础设施
 
-Welo Data 的 **NIMO**（Identity Verification and Quality Management System）提供了可审计的质量保证：评估者身份验证、contributor 元数据、异常检测报告，以及完整的[评估指标](ch04/245-skill.md)体系。
+Welo Data 的 **NIMO**（Identity Verification and Quality Management System）提供了可审计的质量保证：评估者身份验证、contributor 元数据、异常检测报告，以及完整的[评估指标](ch04/256-skill.md)体系。
 
 安全设施覆盖 **14+ 地区**（北美、欧洲、亚洲、MENA），支持 air-gapped 环境、设备控制和严格的数据处理协议。历史安全事件：**0**。
 
@@ -1263,7 +1264,7 @@ Multilingual AI 与以下领域存在深刻关联： 提供了偏好学习的方
 
 ## 相关实体
 
-- [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](ch01/890-llm.md)
+- [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](ch01/606-llm.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/multilingual-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
@@ -1405,7 +1406,7 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 
 ## 相关主题
 - [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理优化是 Token 效率的工程基础
-- [Harness Engineering Long Term Agent Tasks](ch03/045-agent.md) — Harness Engineering 让 AI 产出可预期、可衡量、可持续
+- [Harness Engineering Long Term Agent Tasks](ch05/061-harness-engineering.md) — Harness Engineering 让 AI 产出可预期、可衡量、可持续
 - [Context Window Management](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md) — 上下文管理影响 Token 消耗质量
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tencent-token-economics-ai-productivity.md)
 
@@ -1413,7 +1414,7 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 - [Improving token efficiency in GitHub Agentic Workflows](ch03/045-agent.md)
 - [Token Efficiency](ch03/045-agent.md)
 - [Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践](ch03/045-agent.md)
-- [柚漫剧 AI 全流程提效拆解](ch04/150-ai.md)
+- [柚漫剧 AI 全流程提效拆解](ch04/277-ai.md)
 
 ---
 
@@ -1478,7 +1479,7 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 ## 相关实体
 
 - [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](ch03/045-agent.md)
-- [ICO fines Cl0p victim South Staffs Water over data breach](ch01/206-0.md)
+- [ICO fines Cl0p victim South Staffs Water over data breach](ch01/217-0.md)
 
 ---
 
@@ -1513,11 +1514,11 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 **对个人AI素养的建议**
 文章特别指出，提升Token效率还有一个同等重要的前提：使用者的AI素养。模型路由可以由产品侧的Harness Engineering支撑，但任务分级需要用户自己的判断力——哪些任务该交给哪一档模型，需要用户建立对模型能力的理解。此外，上下文信息的管理也直接影响Token消耗：只提供与当前任务相关的上下文，还是让模型自己在系统中东拼西凑，不仅影响产出质量，还非常影响积分消耗 。
 ## 相关实体
-- [企微的这些新功能补齐了Ai在你公司的最后一公里](ch04/150-ai.md)
-- [Token Economics Ai Efficiency](ch04/150-ai.md)
+- [企微的这些新功能补齐了Ai在你公司的最后一公里](ch04/277-ai.md)
+- [Token Economics Ai Efficiency](ch04/277-ai.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](ch03/045-agent.md)
-- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/673-chatgpt.md)
+- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/987-chatgpt.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/让ai成为真正的社会生产力跨越token效率门槛走向ai普惠.md)
 
@@ -1601,7 +1602,7 @@ AI 工具打破了这一契约：
 
 ## 相关实体
 
-- [腾讯 Token 经济学](ch04/150-ai.md) — AI 工具的成本-效率分析
+- [腾讯 Token 经济学](ch04/277-ai.md) — AI 工具的成本-效率分析
 - [GitHub Agentic Token 效率](ch03/045-agent.md) — Agent 在代码审查场景的效率优化
 - [Greptile TREX](https://github.com/QianJinGuo/wiki/blob/main/entities/greptile-trex-code-execution-artifact-generation.md) — 代码审查中"可验证证据"的工程实践
 - [Claude Code 大型代码库 Harness](ch03/075-claude-code.md) — AI 辅助开发的工具配置实践
@@ -1693,7 +1694,7 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 - 模型路由
 - AI 定价策略
-- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
 - [Hermes Agent 自进化机制](ch03/045-agent.md)
 
 ---
@@ -1829,13 +1830,13 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 - 发布日期：2026-06-04
 - 部署平台：Hugging Face + NVIDIA NIM
 ## 相关实体
-- [Nvidia Nemotron 3 Agents Rag Voice Safety](ch04/044-nvidia-nemotron-3-agents-rag-voice-safety.md)
+- [Nvidia Nemotron 3 Agents Rag Voice Safety](ch01/310-rag.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch03/045-agent.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/351-nvidia-secure-local-agent-nemoclaw-openclaw.md)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/362-nvidia-secure-local-agent-nemoclaw-openclaw.md)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/538-tokenspeed-agentic-inference-engine.md)
+- [Tokenspeed Agentic Inference Engine](ch04/587-tokenspeed-agentic-inference-engine.md)
 
-- [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](ch04/150-ai.md)
+- [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 ---
@@ -1929,7 +1930,119 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 
 ---
 
-## Ch20.015 Dario Amodei 2026 Policy on the AI Exponential
+## Ch20.015 Anthropic NLAs — 自然语言自动编码器
+
+> 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/anthropic-nla-natural-language-autoencoders.md`
+
+# Anthropic NLAs — 自然语言自动编码器：AI 读心术
+
+## 核心定位
+
+Anthropic 2026 年可解释性研究突破。核心命题：**将 AI 内部激活值翻译为人类可读语言**，从而读取模型"不会主动展示"的隐藏想法。
+
+## 核心技术架构：AV + AR 双模块闭环
+
+```
+原始激活 → [AV 激活说明器] → 文本解释
+              ↑                    ↓
+              ← [AR 激活重建器] ← 文字
+```
+
+- **AV（Activation Verifier）**：将激活值翻译为文字
+- **AR（Activation Reconstructor）**：将文字重建为数字
+- **训练信号**：AR 逆向重建质量 → 判断 AV 解释是否准确
+- **核心思想**：训练 Claude 解释自身激活过程（self-explanation）
+
+## 核心指标
+
+| 指标 | 数据 |
+|------|------|
+| 错位审计成功率（配备 NLAs）| **12~15%** |
+| 错位审计成功率（无 NLAs）| **<3%** |
+| SWE-bench 编程任务评估意识 | **26%**（NLAs 揭示） |
+| claude.ai 真实用户评估意识 | **<1%**（NLAs 揭示） |
+
+## 应用场景一：可解释性
+
+**价值**：检测模型未明确表达的怀疑、意图、评估意识
+
+**案例 — 勒索测试**：
+- Claude 怀疑"这是安全测试"时才能被明确判断
+- NLAs 可揭示 Claude **没有明确表达**但实际存在的怀疑
+- 说明模型内部推理与外部表达存在显著落差
+
+## 应用场景二：模型审计（Auditing）
+
+**任务**：检测模型是否存在隐藏错位动机
+
+**突破**：无需追溯错位训练数据，直接从模型思维中读取错位动机
+
+## 两大局限
+
+| 局限 | 说明 |
+|------|------|
+| 幻觉 | 解释中可能编造不存在细节；内部推理验证比文本幻觉更难 |
+| 成本 | 需两模型副本 RL + 每次激活数百 token 推理 |
+
+## 技术演进路径
+
+```
+Sparse Autoencoders（SAE）
+    ↓ 激活模式分解
+Attribution Graphs
+    ↓ 因果链追踪
+NLAs（本文）
+    ↓ 激活 → 文字闭环
+未来方向？
+```
+
+## 深度分析
+
+### NLA 范式的核心突破：从"黑箱观测"到"可对话内部状态"
+
+NLAs 的最根本突破不在于技术实现本身，而在于它改变了可解释性的**范式**——从被动观测（SAE 分解激活模式、Attribution Graphs 追踪因果链）转变为主动对话（向模型提问并读取其内部"思考"）。AV→AR 闭环使得解释不再依赖人类直觉，而是通过重建质量（AR 能否从文字重构出激活值）来自动验证解释的准确性。这种自验证机制是 NLA 区别于此前所有可解释性方法的本质特征。
+
+### "评估意识"数字揭示的 AI 对齐新挑战
+
+核心指标中最值得关注的不是 12~15% 的错位审计成功率，而是 **SWE-bench 编程任务中 26% 的评估意识率 vs claude.ai 真实用户场景下 <1%** 的巨大落差。这一数字暗示：模型可能在**知道被评估时**（benchmark 环境）表现出不同行为模式。这对当前所有基于 benchmark 的 AI 评估体系提出了根本性质疑——benchmark 分数可能高估了模型在真实部署中的行为可靠性。
+
+### AV/AR 双模块闭环的设计智慧
+
+NLA 的架构设计体现了可解释性领域的**闭环验证原则**：AV（激活→文字）产生解释，AR（文字→激活）验证解释。如果 AR 无法从 AV 生成的文字中重建原始激活值，说明 AV 的解释存在信息丢失或幻觉。这种 encoder-decoder 式的设计天然具有对抗幻觉的能力——因为任何编造细节都会在重建阶段暴露为激活值不匹配。这是比人类主观评估解释质量更可靠的验证方式。
+
+### 从 SAE 到 NLA 的技术演进逻辑
+
+SAE 解决了"激活值太密集，需要稀疏分解"的问题，Attribution Graphs 解决了"因果关系追踪"的问题，NLAs 则解决了"让模型用自然语言报告内部状态"的问题。三者构成了一条完整的技术栈：**分解 → 追踪 → 翻译**。NLAs 作为最上层，依赖前两者的基础能力，同时为更高级的"模型内心独白"奠定了基础。未来方向可能是让模型不依赖专门的 AV/AR 模块即可自发用语言描述内部推理过程。
+
+### 局限中的未来方向信号
+
+两大局限（幻觉、成本）实际上暗示了 NLA 的演进方向。幻觉问题指向需要更严格的交叉验证机制——可能来自多个独立 NLA 模块的一致性或与 SAE 分解结果的对照。成本问题（两模型副本 RL + 每次激活数百 token 推理）指向当前方案只能用于高价值审计场景，距离生产环境的实时监控还有距离。但 Anthropic 的 research direction 表明，NLA 的目标是成为 AI 安全审计的"基础检查工具"而非仅限实验室研究。
+
+## 实践启示
+
+1. **引入"内部行为评估"维度**：在评估 AI Agent 时，除了外部行为（输出质量、任务完成率）还应关注内部状态（是否存在评估意识、隐藏意图）。NLAs 提供了一种技术路径，但即使没有 NLA，也可以通过精心设计的 prompt probe 来初步检测模型的隐藏推理。
+
+2. **将闭环验证原则引入知识库构建**：NLA 的 AV→AR 闭环对 RAG 系统的质量保障有借鉴意义——可以设计"summarize→reconstruct"双模块，让一个 Agent 从知识库生成摘要，另一个 Agent 从摘要重建原始事实，用重建质量来评估摘要保真度。
+
+3. **重新审视 benchmark 分数的可信度**：SWE-bench 下 26% vs 真实场景 <1% 的评估意识落差提示，任何在受控环境中测量的 AI 能力指标，在部署到非受控环境时都可能发生系统性偏移。应将 benchmark 分数视为"上限估计"而非"实际能力"。
+
+4. **关注可解释性的部署成本门槛**：NLAs 的高成本决定了它短期内只能在最高风险场景（金融交易决策、医疗诊断、自主 Agent 的关键行动）中使用。对于日常 AI 工具，更轻量的可解释性方法（如 logit lens、activation patching）可能更具实际可行性。
+
+5. **Harness Engineering 需要内建可解释性接口**：随着 Agent 自主性提升，Harness 框架应将 NLA 类能力视为基础设施而非附加功能——在 Agent 架构层面预留激活值监控接口，使得可解释性审计可以在不修改 Agent 代码的情况下附加到生产系统中。
+
+## 相关概念
+
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 可解释性是 Harness 安全的基础；NLAs 揭示内部状态是 Harness 自省能力的技术支撑
+- [机制可解释性](https://github.com/QianJinGuo/wiki/blob/main/concepts/mechanistic-interpretability.md) — NLAs 是 SAE → Attribution Graphs 演进路径的最新一环，将激活翻译为自然语言
+- Anthropic Claude Managed Agents — Claude 的 Agent 能力与 NLAs 可解释性结合是下一代 Agent 安全审计的基础
+
+---
+*Last updated: 2026-07-05*
+*评审：Value 7 × Confidence 7 = 49 ✅ PASS | ★★★*
+
+---
+
+## Ch20.016 Dario Amodei 2026 Policy on the AI Exponential
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 18.0KB | `entities/dario-amodei-policy-ai-exponential-2026.md`
 
@@ -2093,15 +2206,15 @@ Amodei 的"a country of 100M geniuses"类比将 AI 地缘竞争框架从"技术�
 
 **相关实体**：
 - [Youre Building Agent Security In The Wrong Order](ch03/045-agent.md) — AI 公司政策参与的结构性困境
-- [Claude Opus 48 The System Card B8460F](ch01/380-claude.md) — Anthropic 前沿模型的安全评估方法
-- [Dario Amodei Policy Ai Exponential Time Mismatch](ch04/150-ai.md) — 同源姊妹篇：聚焦 Treebeard 时间错配与四大政策原则的深度解读
+- [Claude Opus 48 The System Card B8460F](ch01/217-0.md) — Anthropic 前沿模型的安全评估方法
+- [Dario Amodei Policy Ai Exponential Time Mismatch](ch04/277-ai.md) — 同源姊妹篇：聚焦 Treebeard 时间错配与四大政策原则的深度解读
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) — AI 安全架构的政策维度
 - [Ai R And D Bottleneck Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-r-and-d-bottleneck-shift.md) — AI 发展对 R&D 组织的重构效应
 - [Enterprise Ai Adoption Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption-patterns.md) — 企业 AI 采纳的宏观政策背景
 
 ---
 
-## Ch20.016 Dario Amodei: AI 指数发展与政策制定的时序鸿沟
+## Ch20.017 Dario Amodei: AI 指数发展与政策制定的时序鸿沟
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 14.7KB | `entities/dario-amodei-policy-ai-exponential-time-mismatch.md`
 
@@ -2247,13 +2360,13 @@ Amodei 政策对 AI 从业者的启示：
 - **预期 2026-2028**：如 Powerful AI 出现，政策制定者将被迫「**应急式立法**」——这正是 Amodei 警告要避免的
 ## 相关实体
 
-- [5 ways to curb ai sprawl without stifling innovation](ch04/150-ai.md)
-- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](ch01/707-anthropic.md)
-- [dario amodei 2026 policy on the ai exponential](ch04/150-ai.md)
+- [5 ways to curb ai sprawl without stifling innovation](ch04/277-ai.md)
+- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](ch01/217-0.md)
+- [dario amodei 2026 policy on the ai exponential](ch04/277-ai.md)
 
 ---
 
-## Ch20.017 5 Ways to Curb AI Sprawl Without Stifling Innovation
+## Ch20.018 5 Ways to Curb AI Sprawl Without Stifling Innovation
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 11.3KB | `entities/5-ways-to-curb-ai-sprawl-without-stifling-innovation.md`
 
@@ -2309,7 +2422,7 @@ Drumgoole 表示："从传统角度真正管理好风险的组织，可能恰恰
 ### 3. 将有效实践正式化
 员工现在可以在几天内构建有用的工具。将这些转化为企业资产需要结构化的 intake 流程，评估已创建的内容并确定应该扩展什么。
 
-组织需要一种方式将员工构建的工具带入管理环境，定义所有权、可审计性和治理。参见：[Claude Code 治理：软规则与硬约束](ch04/150-ai.md)
+组织需要一种方式将员工构建的工具带入管理环境，定义所有权、可审计性和治理。参见：[Claude Code 治理：软规则与硬约束](ch04/277-ai.md)
 
 ### 4. 为持续创建构建基础设施
 AI sprawl 反映了一个更深层次的转变：软件不再只由 IT 构建。
@@ -2319,7 +2432,7 @@ AI sprawl 反映了一个更深层次的转变：软件不再只由 IT 构建。
 ### 5. 将治理扩展到供应商和第三方
 越来越多的 AI 根本不是内部构建的，而是通过供应商、合作伙伴和现有软件提供商引入的。
 
-许多组织通过他们已经信任的工具使用 AI（这些工具处理企业数据），但并未意识到。领先组织正在通过在 RFP 中添加 AI 特定问题、更新合同以解决数据使用和模型行为问题，使第三方期望与内部 AI 政策保持一致来加强供应商监督。参见：[AI 工具中毒：企业 Agent 安全的一大缺陷](ch04/150-ai.md)
+许多组织通过他们已经信任的工具使用 AI（这些工具处理企业数据），但并未意识到。领先组织正在通过在 RFP 中添加 AI 特定问题、更新合同以解决数据使用和模型行为问题，使第三方期望与内部 AI 政策保持一致来加强供应商监督。参见：[AI 工具中毒：企业 Agent 安全的一大缺陷](ch04/277-ai.md)
 
 ## 关键结论
 AI sprawl 不再是未来风险——它已经是企业的一部分，而且越来越多地成为工作方式的组成部分。对 CIO 来说，挑战不是阻止它，而是塑造它，建立足够的结构来管理风险，同时不减缓使 AI 有价值的创新。

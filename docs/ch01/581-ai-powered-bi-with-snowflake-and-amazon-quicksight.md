@@ -97,8 +97,8 @@ Snowflake Semantic View 是一种原生 schema 对象，将业务定义直接附
 
 Semantic Views 的应用不止于 BI：
 
-- **[SchemaFlow](ch04/150-ai.md)**：Agent 驱动的数据库 SQL 生成，同样需要语义约束
-- **[Data-Native Agents](ch04/432-how-to-build-agents-where-data-already-lives.md)**：Agent 直接在数据平台上运行，语义层是关键基础设施
+- **[SchemaFlow](ch04/277-ai.md)**：Agent 驱动的数据库 SQL 生成，同样需要语义约束
+- **[Data-Native Agents](ch04/458-how-to-build-agents-where-data-already-lives.md)**：Agent 直接在数据平台上运行，语义层是关键基础设施
 - **RAG + Semantic View**：QuickSight 的 Quick Space 支持基于语义层的 RAG，进一步扩展应用场景
 
 ### Open Semantic Interchange (OSI) 倡议
@@ -128,9 +128,9 @@ Snowflake 联合行业领导者推动的开放语义交换标准（OSI），目�
 
 ## 相关实体
 
-- [Snowflake Agentic Enterprise](ch03/045-agent.md) — Snowflake 的 Agent 平台愿景
-- [SchemaFlow](ch04/150-ai.md) — Agent 驱动的 SQL 生成
-- [Anthropic Data Analysis](ch01/707-anthropic.md) — LLM 数据分析的另一个视角
+- [Snowflake Agentic Enterprise](ch01/217-0.md) — Snowflake 的 Agent 平台愿景
+- [SchemaFlow](ch04/277-ai.md) — Agent 驱动的 SQL 生成
+- [Anthropic Data Analysis](ch01/854-anthropic.md) — LLM 数据分析的另一个视角
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 约束下放的架构理念
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-powered-bi-with-snowflake-and-amazon-quick.md)

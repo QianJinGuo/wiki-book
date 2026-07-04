@@ -47,11 +47,11 @@ Lighthouse 选择了**对称池化**：Q、K、V 在金字塔每一层按相同�
 
 ## 关联阅读
 ## 相关实体
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch04/150-ai.md)
-- [Why Im Leaving Github For Forgejo](ch01/690-github.md)
-- [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch04/277-ai.md)
+- [Why Im Leaving Github For Forgejo](ch01/833-github.md)
+- [From Doer To Director The Ai Mindset Shift](ch01/030-from-doer-to-director-the-ai-mindset-shift.md)
 - [Anthropic Puts Claude Agents On A Meter Across Its](ch03/045-agent.md)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/150-ai.md)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lighthouse_attention.md)
 

@@ -100,11 +100,11 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 
 ## 相关实体
 
-- [Obsidian Claude Code Integration Guide](ch09/103-obsidian-claude-code-integration-guide.md) — 早期版本的集成指南
+- [Obsidian Claude Code Integration Guide](ch09/112-obsidian-claude-code-integration-guide.md) — 早期版本的集成指南
 - [Obsidian Claude Code Integration](ch03/075-claude-code.md) — 集成实践综述
-- [Obsidian](ch09/103-obsidian-claude-code-integration-guide.md) — Obsidian 实体页
-- [Obsidian Llm Wiki Local Kytmanov 2026](ch01/890-llm.md) — 本地 LLM Wiki 实践
-- [Claude Code 7 Layer Memory Architecture](ch01/869-claude-code-7-layer-memory-architecture.md) — Claude Code 的 7 层记忆架构
+- [Obsidian](ch09/112-obsidian-claude-code-integration-guide.md) — Obsidian 实体页
+- [Obsidian Llm Wiki Local Kytmanov 2026](ch01/217-0.md) — 本地 LLM Wiki 实践
+- [Claude Code 7 Layer Memory Architecture](ch03/075-claude-code.md) — Claude Code 的 7 层记忆架构
 - [Agent Memory Architecture](ch03/045-agent.md) — Agent 记忆架构综述
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
 - [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — Agent 记忆生命周期哲学
