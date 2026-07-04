@@ -253,20 +253,20 @@ regression_failures | rejection_reason | review_notes
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
 | [Skillopt](ch05/048-skillopt.md) | **SkillOpt 学术理论** | Microsoft + SJTU SkillOpt 训练范式（121 行）：把 SKILL.md 当可训练状态、bounded edits、held-out validation gate；本文是其在 Hermes Agent 的工程实施蓝图 |
-| [Skillopt Microsoft Train Skill Like Neural Network](ch04/245-skill.md) | **SkillOpt 产品视角** | 别再手写 Skill！像神经网络一样训练（58 行）：SkillOpt 产品介绍 |
-| [Skillopt Microsoft Train Skill Hyman'S Blog](ch04/245-skill.md) | **SkillOpt Hyman 视角** | 微软等 SkillOpt 解读（64 行） |
-| [Hermes Agent Skill Crossover Optimization](ch04/245-skill.md) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
-| [Skill Self Evolution Three Approaches](ch04/245-skill.md) | **Skill 自进化 3 路线** | Trace2Skill 归纳法 / EvoSkill 验证闭环 / SkillOpt 训练范式（45 行）；本文是 SkillOpt + EvoSkill 的工程化展开 |
+| [Skillopt Microsoft Train Skill Like Neural Network](ch04/256-skill.md) | **SkillOpt 产品视角** | 别再手写 Skill！像神经网络一样训练（58 行）：SkillOpt 产品介绍 |
+| [Skillopt Microsoft Train Skill Hyman'S Blog](ch04/256-skill.md) | **SkillOpt Hyman 视角** | 微软等 SkillOpt 解读（64 行） |
+| [Hermes Agent Skill Crossover Optimization](ch04/256-skill.md) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
+| [Skill Self Evolution Three Approaches](ch04/256-skill.md) | **Skill 自进化 3 路线** | Trace2Skill 归纳法 / EvoSkill 验证闭环 / SkillOpt 训练范式（45 行）；本文是 SkillOpt + EvoSkill 的工程化展开 |
 | [Agent Self Improvement Six Mechanisms](ch03/045-agent.md) | **6 大自改进机制** | Agent 自改进的 6 大机制 |
-| [Ai Recursive Self Improvement Nanogpt Prime Intellect](ch04/150-ai.md) | **递归自改进** | nanogpt + Prime Intellect |
-| [Darwin Skill 2 Huashu](ch04/245-skill.md) | **Darwin Skill 2** | Darwin Skill 进化 |
-| [Embabel](ch07/019-embabel.md) | **Embabel** | Embabel 自进化框架 |
-| [Pith Train Agent Native Moe Training Framework](ch04/150-ai.md) | **Pith 训练框架** | Agent 原生 MoE 训练 |
+| [Ai Recursive Self Improvement Nanogpt Prime Intellect](ch04/277-ai.md) | **递归自改进** | nanogpt + Prime Intellect |
+| [Darwin Skill 2 Huashu](ch04/256-skill.md) | **Darwin Skill 2** | Darwin Skill 进化 |
+| [Embabel](ch07/020-embabel.md) | **Embabel** | Embabel 自进化框架 |
+| [Pith Train Agent Native Moe Training Framework](ch04/277-ai.md) | **Pith 训练框架** | Agent 原生 MoE 训练 |
 | [Hermes Agent 12 Layer Full Configuration Guide](ch03/045-agent.md) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
-| [Hermes 9 Module Architecture](ch01/342-hermes-9-module-architecture-winty.md) | **Hermes 9 模块** | Hermes 9 模块架构 |
+| [Hermes 9 Module Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-9-module-architecture.md) | **Hermes 9 模块** | Hermes 9 模块架构 |
 | [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](ch03/075-claude-code.md) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
-| [Slim Cuhk Skill Lifecycle Agentic Rl](ch04/245-skill.md) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
-| [Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/245-skill.md) | **Deli Auto Research** | Continual learning + self-improvement |
+| [Slim Cuhk Skill Lifecycle Agentic Rl](ch04/256-skill.md) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
+| [Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/256-skill.md) | **Deli Auto Research** | Continual learning + self-improvement |
 | [Claude Code Vs Hermes Session Vs Goal Lifecycle](ch03/075-claude-code.md) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |
 
 ## 十四、关键金句

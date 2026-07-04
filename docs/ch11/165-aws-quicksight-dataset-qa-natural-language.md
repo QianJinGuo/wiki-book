@@ -30,9 +30,9 @@ QuickSight Dataset Q&A 的核心价值在于重新定义了什么叫做"BI 数�
 
 ## 相关实体
 - [Aws Quicksight Dataset Qa Tara Case](ch11/157-aws-quicksight-dataset-qa-tara-case.md)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/184-cost-effective-deployment-of-vision-language-models-for-pet.md)
-- [Natural Language Autoencoders](ch01/999-natural-language-autoencoders-anthropic.md)
-- [Anthropic Natural Language Autoencoders](ch01/707-anthropic.md)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
+- [Natural Language Autoencoders](ch01/1097-natural-language-autoencoders-anthropic.md)
+- [Anthropic Natural Language Autoencoders](ch01/854-anthropic.md)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-quicksight-dataset-qa-natural-language.md)

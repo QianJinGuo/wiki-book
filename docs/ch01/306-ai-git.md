@@ -379,10 +379,10 @@ but branch -a feat/refresh-token feat/token-revocation
 
 ## 相关实体
 - [Alphaevolve Deepmind Discovery Agent](ch03/045-agent.md)
-- [Code As Agent Harness Survey](ch09/046-code-as-agent-harness.md)
-- [我用 Skillmd 做了一个简历生成器](ch04/245-skill.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/045-agent.md)
-- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/194-tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.md)
+- [我用 Skillmd 做了一个简历生成器](ch04/256-skill.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch01/217-0.md)
+- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/196-tencent-vibe-coding-to-agentic-engineering-backend.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-era-git-version-control-agentic-coding-practices.md)
 

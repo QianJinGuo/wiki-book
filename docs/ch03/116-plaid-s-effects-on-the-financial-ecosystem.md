@@ -35,9 +35,9 @@ Effects 2026 传递的隐含信号是：开放银行（Open Banking）基础设�
 - **对于 AI/ML 工程师**：金融数据质量是模型效果的天花板——Plaid Income 新引擎解决的「存款噪声变信号」问题是一个典型特征工程挑战；收入稳定性、支出模式、多账户关联是构建金融 AI 模型的高价值特征
 - **对于投资者**：Plaid 生态的广度（从 Auth 到 LendScore、从个人理财到企业支付）使其成为金融 AI 赛道的事实观察窗口；Ramp、Affirm、Brex 等高频金融场景的规模化盈利路径值得关注
 ## 相关实体
-- [The Stablecoin 24X7 Money Loop Fintechbrainfood](ch04/150-ai.md)
-- [Affirm Maps Road To 100B Gmv With Card Ai Commerce And Global Expansion](ch04/150-ai.md)
-- [Affirm Maps Road To 100B Gmv With Card Ai Commerce](ch03/082-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
+- [The Stablecoin 24X7 Money Loop Fintechbrainfood](ch04/277-ai.md)
+- [Affirm Maps Road To 100B Gmv With Card Ai Commerce And Global Expansion](ch04/277-ai.md)
+- [Affirm Maps Road To 100B Gmv With Card Ai Commerce](ch03/085-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
 - Bnpl Walmart
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
 

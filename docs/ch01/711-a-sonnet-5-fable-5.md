@@ -2,7 +2,7 @@
 
 ## Ch01.711 A社你解释下，啥叫Sonnet 5比Fable 5还贵？
 
-> 📊 Level ⭐⭐ | 5.4KB | `entities/a社你解释下啥叫sonnet-5比fable-5还贵.md`
+> 📊 Level ⭐⭐ | 6.3KB | `entities/a社你解释下啥叫sonnet-5比fable-5还贵.md`
 
 # A社你解释下，啥叫Sonnet 5比Fable 5还贵？
 

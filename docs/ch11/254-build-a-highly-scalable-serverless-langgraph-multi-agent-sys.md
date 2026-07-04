@@ -72,7 +72,7 @@ Docker 容器化提供了移植性但引入了冷启动问题。在选择部署�
 
 ## 相关实体
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Anthropic Multi Agent Research System](ch04/462-anthropic-multi-agent-research-system.md)
+- [Anthropic Multi Agent Research System](ch04/495-anthropic-multi-agent-research-system.md)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch03/045-agent.md)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-real-time-service-topology.md)

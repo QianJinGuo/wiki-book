@@ -10,7 +10,7 @@
 >
 ## 相关实体
 
-- [discord 全平台端到端加密](ch12/091-discord.md)
+- [discord 全平台端到端加密](ch12/092-discord.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-security-and-feature-enhancement-practices.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
@@ -80,7 +80,7 @@ OpenClaw 这类自托管 AI Agent 与传统 Web 应用的安全模型有本质�
 - 危险操作的二次确认（删除文件、修改配置、转账）
 - 沙箱化 Agent 进程（chroot / 容器 / separate user）
 
-这与 [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](ch04/150-ai.md) 中讨论的"工具返回值被恶意篡改"是同一类问题——L3 prompt injection 是 2026 年 Agent 安全的头号威胁。
+这与 [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](ch04/277-ai.md) 中讨论的"工具返回值被恶意篡改"是同一类问题——L3 prompt injection 是 2026 年 Agent 安全的头号威胁。
 
 ### 四、4 种 AWS 部署方式的工程含义
 
@@ -91,7 +91,7 @@ OpenClaw 这类自托管 AI Agent 与传统 Web 应用的安全模型有本质�
 3. **EKS Graviton 多租户（大规模）** —— 完整 Kubernetes 化，per-tenant namespace 隔离，适合 100+ 用户的 SaaS 化产品。
 4. **CI/CD 集成（持续运营）** —— 把 OpenClaw 配置 / Skill 版本化、灰度、回滚，适合生产级长期运营。
 
-这与 [EKS Graviton 多租户 OpenClaw 实践](ch04/150-ai.md) 直接对应——后者是该文章中"方案 3"的工程细节展开。
+这与 [EKS Graviton 多租户 OpenClaw 实践](ch04/277-ai.md) 直接对应——后者是该文章中"方案 3"的工程细节展开。
 
 ### 五、对其他自托管 Agent 的参考价值
 
@@ -117,14 +117,14 @@ OpenClaw 不是孤例——任何"本地优先、用户自治、跨消息通道"
 
 ## 关联实体
 
-- [AI Agent 的迁移与现代化: OpenClaw → Bedrock AgentCore](ch04/150-ai.md)
-- [EKS Graviton 多租户 OpenClaw K8s 实践](ch04/150-ai.md)
+- [AI Agent 的迁移与现代化: OpenClaw → Bedrock AgentCore](ch04/277-ai.md)
+- [EKS Graviton 多租户 OpenClaw K8s 实践](ch04/277-ai.md)
 - [CI/CD on Bedrock AgentCore OpenClaw 企业智能运营最佳实践](ch03/045-agent.md)
-- [Agent Security 三步走: Harness + Governance + Identity](ch04/150-ai.md)
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](ch04/150-ai.md)
+- [Agent Security 三步走: Harness + Governance + Identity](ch04/277-ai.md)
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](ch04/277-ai.md)
 - [Claude Code vs OpenClaw Memory 对比](ch03/075-claude-code.md)
 - [Claude Code vs OpenClaw Memory 向量数据库之争](ch03/075-claude-code.md)
-- [Claude Code vs OpenClaw 使用 Ettin](ch09/029-claude-code-openclaw-usage-ettin.md)
+- [Claude Code vs OpenClaw 使用 Ettin](ch09/033-claude-code-openclaw-usage-ettin.md)
 - [Claude Managed Agents 自托管沙箱企业版](ch03/045-agent.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

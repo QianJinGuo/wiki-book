@@ -44,11 +44,11 @@ depthfirst 的系统在 6 小时内完成 NGINX 代码分析，报告 5 个漏�
    攻击者使用 POST 请求体喷射伪造 `ngx_pool_cleanup_s` 结构以绕过 URI 字符集限制。 虽然完全阻止此向量需要修复底层漏洞，但可通过限制单 IP 的并发连接数、监控异常大的 POST 请求体大小等方式增加利用难度。
 
 ## 相关实体
-- [Nginx Rift Achieving Nginx Remote Code Execution V](ch12/046-nginx-rift-achieving-nginx-remote-code-execution-via-an-18.md)
+- [Nginx Rift Achieving Nginx Remote Code Execution V](ch12/048-nginx-rift-achieving-nginx-remote-code-execution-via-an-18.md)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
-- [Npm Supply Chain Compromise Postmortem](ch04/150-ai.md)
-- [Cogalpha Acl2026 Alpha Mining](ch01/206-0.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/277-ai.md)
+- [Cogalpha Acl2026 Alpha Mining](ch01/217-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability.md)
 

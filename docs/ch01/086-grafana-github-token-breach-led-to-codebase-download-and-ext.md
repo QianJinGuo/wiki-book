@@ -12,17 +12,17 @@
 - CoinbaseCartel 团体声称对事件负责，被评估为 ShinyHunters、Scattered Spider、LAPSUS$ 的衍生分支 
 - CoinbaseCartel 成立于 2025 年 9 月，专注于纯数据窃取和勒索，已累积 170 名受害者 
 ## 相关实体
-- [Grafana Github Token Breach Led To Html](ch01/690-github.md)
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](ch01/690-github.md)
-- [Freelance Designers Cant Compete Ai Subscription](ch04/150-ai.md)
-- [Malware Crew Teampcp Opensources Its Shaihulud Worm On](ch04/150-ai.md)
-- [What Political Censorship Looks Like Inside An Llm S Weights](ch01/124-what-political-censorship-looks-like-inside-an-llm-s-weights.md)
+- [Grafana Github Token Breach Led To Html](ch01/833-github.md)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](ch01/833-github.md)
+- [Freelance Designers Cant Compete Ai Subscription](ch04/277-ai.md)
+- [Malware Crew Teampcp Opensources Its Shaihulud Worm On](ch04/277-ai.md)
+- [What Political Censorship Looks Like Inside An Llm S Weights](ch01/122-what-political-censorship-looks-like-inside-an-llm-s-weights.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md)
 
 - Cios Rise To The Global Challenge
 - [Dumb Ways For An Open Source Project To Die](ch01/120-dumb-ways-for-an-open-source-project-to-die.md)
-- [Is This Why Science Advances One Funeral At](ch01/162-is-this-why-science-advances-one-funeral-at-a-time.md)
+- [Is This Why Science Advances One Funeral At](ch01/160-is-this-why-science-advances-one-funeral-at-a-time.md)
 - [Tokens Per Result](ch12/003-token.md)
 - [Viktor Not A Tool A Hire](ch01/050-viktor-not-a-tool-a-hire.md)
 ## 深度分析

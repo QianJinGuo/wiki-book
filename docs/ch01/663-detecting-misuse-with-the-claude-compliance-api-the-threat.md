@@ -91,7 +91,7 @@ Claude Enterprise Compliance API 不仅是审计工具，更是构建主动安�
 
 ## Related
 
-- [Agent Security Three-Step Sequence](ch04/150-ai.md)
+- [Agent Security Three-Step Sequence](ch04/277-ai.md)
 - [Agent Harness Observability](ch03/045-agent.md)
 
 -> [Original Archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-compliance-api-misuse-detection-papermtn.md)

@@ -88,11 +88,11 @@ MIG的价值最终体现在成本降低上，需要建立配套的监控体系�
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](ch03/045-agent.md)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](ch03/045-agent.md)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](ch03/045-agent.md)
-- [使用Amazon EMR Serverless Storage简化运维节省成本 | 亚马逊AWS官方博客](ch01/207-rag.md)
+- [使用Amazon EMR Serverless Storage简化运维节省成本 | 亚马逊AWS官方博客](ch01/310-rag.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
 
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/552-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/606-llm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
 
 ---

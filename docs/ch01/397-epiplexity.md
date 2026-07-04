@@ -95,7 +95,7 @@ Chinchilla 论文告诉我们：给定模型尺寸，应该用多少 token 训�
 - 当必须使用低 epiplexity 数据时，需要更大的数据量来弥补
 
 ## 相关链接
-- [Epiplexity Finite Compute Information Theory](ch01/328-epiplexity.md)
+- [Epiplexity Finite Compute Information Theory](ch01/397-epiplexity.md)
 
 ## 实践启示
 ### 对 LLM 训练团队
@@ -125,7 +125,7 @@ GitHub: https://github.com/shikaiqiu/epiplexity
 - LLM训练数据选择 — epiplexity 对数据选择的指导意义（实体不存在，待创建）
 
 ## 相关实体
-- [Shannon Epiplexity Finite Compute Information Theory](ch01/610-shannon-epiplexity-finite-compute-information-theory.md)
+- [Shannon Epiplexity Finite Compute Information Theory](ch01/750-shannon-epiplexity-finite-compute-information-theory.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/shannon-epiplexity-finite-compute-information-theory.md)
 

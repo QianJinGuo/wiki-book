@@ -58,13 +58,13 @@ OpenAI 的 Assistants 和 Responses API 稳居第二（23.2% → 25.7%），这�
 
 ## 关联阅读
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claudes_next_enterprise_battle_is_not_mo.md)
-- [Agent Orchestration](ch04/425-agent-orchestration.md)
+- [Agent Orchestration](ch04/453-agent-orchestration.md)
 
 ## ## 相关实体
-- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch04/150-ai.md)
+- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch04/277-ai.md)
 
 ## ## 相关实体
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/150-ai.md)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/277-ai.md)
 
 ## ## 相关实体
 - [Harness Engineering 三次范式跃迁与四根支柱](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md)

@@ -43,10 +43,10 @@ Sandworm 持续使用 EternalBlue、DoublePulsar、WannaCry 等老旧漏洞链�
 DXGW + TGW 的混合云架构在本文多个场景中出现。关键启示：OT 网络与 IT 网络之间的边界控制必须视为高优先级；TGW 路由表的静态路由覆盖动态路由的特性需要在架构层面做防护；建议对 IT/OT 互联通道实施零信任策略，持续验证而非一次性认证 （T3 场景中 TGW 静态路由覆盖 DXGW 传播路由的原理与 Sandworm 从 IT 横向进入 OT 的路径控制逻辑相通）。
 ## 相关实体
 - [Sandworm Hackers Shift It Breaches Ot Gbhackers](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
-- [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
+- [From Doer To Director The Ai Mindset Shift](ch01/030-from-doer-to-director-the-ai-mindset-shift.md)
 - [Cisa Urges Critical Infrastructure Firms To Fortify Before I](ch12/001-cisa-urges-critical-infrastructure-firms-to-fortify-before.md)
-- [Engineering Roles Shift From Developing Code To Ma](ch05/061-engineering-roles-shift-from-developing-code-to-managing-ai.md)
-- [Engineering Roles Shift From Developing Code To Managing Ai](ch05/061-engineering-roles-shift-from-developing-code-to-managing-ai.md)
+- [Engineering Roles Shift From Developing Code To Ma](ch05/063-engineering-roles-shift-from-developing-code-to-managing-ai.md)
+- [Engineering Roles Shift From Developing Code To Managing Ai](ch05/063-engineering-roles-shift-from-developing-code-to-managing-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gbhackers-sandworm-shift-from-it-breaches.md)
 

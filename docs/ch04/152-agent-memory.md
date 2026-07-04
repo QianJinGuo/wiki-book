@@ -145,19 +145,19 @@ Perplexity 推出 [Brain](https://www.perplexity.ai/computer/memory) 系统，�
 **与本 entity 的关系**：Brain 是"write–manage–read 闭环"的产品化实例——write 阶段记录工作上下文，manage 阶段构建 context graph，read 阶段在新任务起点注入经验。
 
 ## 相关主题
-- [Agent Skill Writing](ch04/245-skill.md) — Skill 是 Memory 系统持久化的载体之一
+- [Agent Skill Writing](ch04/256-skill.md) — Skill 是 Memory 系统持久化的载体之一
 - [Anthropic Mcp Revisited](ch07/016-anthropic-mcp.md) — MCP 作为 Agent 工具调用协议，与 Memory 的世界模型有交叉（环境约束信息）
-- [Gbrain](ch04/150-ai.md) — Compiled Truth + Timeline 知识模型，与 Memory 的信念追踪机制相关
+- [Gbrain](ch04/277-ai.md) — Compiled Truth + Timeline 知识模型，与 Memory 的信念追踪机制相关
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-memory-architecture-essence.md)
 
 ## 相关实体
 - [Agent Memory 架构解析](ch03/045-agent.md)
-- [memory agent systems cobanov](ch04/480-memory-agent-systems-cobanov.md)
+- [memory agent systems cobanov](ch04/512-memory-agent-systems-cobanov.md)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](ch03/045-agent.md)
-- [AI Agent 记忆系统架构](ch04/147-how-ai-agent-memory-works.md)
+- [AI Agent 记忆系统架构](ch04/151-how-ai-agent-memory-works.md)
 - [深度拆解 Hermes Agent 记忆系统](ch03/045-agent.md)
-- [ai agent memory systems](ch04/150-ai.md)
-- [Personal AI 工作台：Claude 18 动作框架](ch04/150-ai.md)
+- [ai agent memory systems](ch04/277-ai.md)
+- [Personal AI 工作台：Claude 18 动作框架](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

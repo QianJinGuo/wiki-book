@@ -64,7 +64,7 @@ MCP、Skill、Plugin 这些外部扩展机制可能在持续变化，但 Claude 
 5. **连续运行场景下，状态机模型优于函数调用模型**：显式状态转换和恢复路径是多轮交互系统可靠性的基础。
 
 ## 相关实体
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch07/006-claude-code-skills-mcp-rules-source-analysis.md)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/256-skill.md)
 - [Claude Code Prompt 提示词体系源码解析](ch03/075-claude-code.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](ch03/075-claude-code.md)
 
@@ -72,9 +72,9 @@ MCP、Skill、Plugin 这些外部扩展机制可能在持续变化，但 Claude 
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 - [Claude Code 可控性：软规则无法变成硬约束](ch03/075-claude-code.md)
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
-- [AI Native 时代 —— 研发组织何去何从](ch04/150-ai.md)
+- [AI Native 时代 —— 研发组织何去何从](ch04/277-ai.md)
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](ch03/045-agent.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/378-claude-code-harness-deep-understanding.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/484-claude-code-harness-deep-understanding.md)
 - [AutoResearch：多 Agent 自动化软件开发](ch03/045-agent.md)
 - [Agent Harness 架构](ch03/045-agent.md)
 - [Claude Code 源码核心机制详解](ch03/075-claude-code.md)
@@ -82,7 +82,7 @@ MCP、Skill、Plugin 这些外部扩展机制可能在持续变化，但 Claude 
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
 - [Harness如何支撑Agent在生产环境稳定运行？](ch03/045-agent.md)
 - [Agent架构关键变化：Harness正在成为新后端](ch03/045-agent.md)
-- [Agent 原理、架构与工程实践](ch04/441-agent-engineering-principles-architecture-practice.md)
+- [Agent 原理、架构与工程实践](ch03/045-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

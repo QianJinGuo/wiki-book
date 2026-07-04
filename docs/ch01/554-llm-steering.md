@@ -124,7 +124,7 @@ EasyEdit2 作为开源框架不仅降低了研究门槛，也为工业应用提�
 5. **警惕"脱轨"风险，建立监控机制**：由于强 Steering 会导致激活脱离流形引发崩塌，实际部署时应建立输出质量监控，当检测到效用异常下降时及时回退到较小强度。
 
 ## 相关实体
-- [Deepseek V4 Flash Means Llm Steering Is Interesting Again](ch01/895-deepseek-v4-flash-means-llm-steering-is-interesting-again.md)
+- [Deepseek V4 Flash Means Llm Steering Is Interesting Again](ch01/918-deepseek-v4-flash-means-llm-steering-is-interesting-again.md)
 
 ## 相关主题
 

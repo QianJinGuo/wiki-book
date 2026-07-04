@@ -62,7 +62,7 @@ Indexer 算子启动前引入与 Load Stream 的同步点，确保数据就绪�
 
 ## 相关页面
 [原始存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/glm5-scaling-pain-inference.md) — 完整正文
-[SGLang](ch01/672-1-sglang-radixark-ai.md) — 本次 BugFix #2 修复代码已提交至 SGLang 开源社区
+[SGLang](ch01/692-1-sglang-radixark-ai.md) — 本次 BugFix #2 修复代码已提交至 SGLang 开源社区
 [推理系统优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — LayerSplit 等推理效率优化技术
 
 ## 深度分析

@@ -82,10 +82,10 @@ Schema 设计的失误在后期修正成本极高（需要重新 Ingest 全量�
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rag-vs-llm-wiki-enterprise-knowledge-base.md)
 
 ## 相关实体
-- [5 Essential Multimodal RAG Capabilities for AI-Ready Knowledge Systems (NVIDIA)](ch01/285-multimodal.md)
-- [向量库·知识图谱·本体论：RAG知识系统演进](ch01/207-rag.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化](ch04/150-ai.md)
-- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](ch01/206-0.md)
+- [5 Essential Multimodal RAG Capabilities for AI-Ready Knowledge Systems (NVIDIA)](ch01/310-rag.md)
+- [向量库·知识图谱·本体论：RAG知识系统演进](ch01/310-rag.md)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化](ch04/277-ai.md)
+- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](ch01/217-0.md)
 - [knowledge base layer architecture: from rag to agent-native](https://github.com/QianJinGuo/wiki/blob/main/entities/pyramid-kb-knowledge-context-layer-banya.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
 

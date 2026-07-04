@@ -156,10 +156,10 @@ Anthropic 公开点名 3 家中国实验室的"蒸馏攻击"事件，作者认�
 ## 相关实体
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md) — Agent 记忆系统的工程实践，涉及 persistent memory
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md) — NVIDIA Isaac Lab 规模化 RL，与 Nemotron 的蒸馏链条相关
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/988-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md) — NVIDIA Isaac Lab 规模化 RL，与 Nemotron 的蒸馏链条相关
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md) — NVIDIA Isaac + SageMaker 人形机器人 RL
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md) — OpenClaw 系统化教程
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/045-agent.md) — 视频 agent 多模态的另一前沿
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md) — OpenClaw 系统化教程
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/217-0.md) — 视频 agent 多模态的另一前沿
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md) — Claude Code 源码核心机制
 
 ---

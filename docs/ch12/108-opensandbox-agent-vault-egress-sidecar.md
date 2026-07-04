@@ -56,8 +56,8 @@ OpenSandbox 负责执行面：创建隔离环境、执行命令、处理文件�
 ## 相关实体
 
 - [Claude Managed Agents](ch03/045-agent.md) — 类似的 sandbox 架构
-- [LangChain Sandbox Architecture](ch04/150-ai.md) — 另一种 sandbox 设计
-- [Microsoft mxc Containers](ch04/150-ai.md) — Microsoft 的 sandbox 方案
+- [LangChain Sandbox Architecture](ch04/277-ai.md) — 另一种 sandbox 设计
+- [Microsoft mxc Containers](ch04/277-ai.md) — Microsoft 的 sandbox 方案
 
 ---
 

@@ -379,10 +379,10 @@ AI Coding 不是"让 AI 替你写代码"，而是重新  定义  人与 AI 协�
 
 ## 相关实体
 - [Harness Engineering Alibaba Java Case Study](ch05/061-harness-engineering.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch04/150-ai.md)
-- [Harness Engineering Jk Launcher Baijiajie](ch04/150-ai.md)
-- [Agent Harness Engineering Survey 2026](ch03/045-agent.md)
-- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活](ch04/150-ai.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch04/277-ai.md)
+- [Harness Engineering Jk Launcher Baijiajie](ch04/277-ai.md)
+- [Agent Harness Engineering Survey 2026](ch05/061-harness-engineering.md)
+- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活](ch04/277-ai.md)
 
 ---
 

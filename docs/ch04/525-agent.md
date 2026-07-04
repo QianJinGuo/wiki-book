@@ -1,42 +1,29 @@
-# Agent核心技术概念与范式发生了哪些演变以及背后的思考
+# 小刘商业 Agent 增强层通用基座
 
-## Ch04.525 Agent核心技术概念与范式发生了哪些演变以及背后的思考
+## Ch04.525 小刘商业 Agent 增强层通用基座
 
-> 📊 Level ⭐⭐ | 3.7KB | `entities/agent-paradigm-evolution-feipeng-alibaba.md`
+> 📊 Level ⭐⭐ | 3.8KB | `entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md`
 
-# Agent核心技术概念与范式发生了哪些演变以及背后的思考
+# Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606
 
-## 相关实体
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 
-- [《从零实现 agent 系统》连载 01｜agent 系统是什么：问题空间与架构切片](ch03/044-agent.md)
-- [cola dlm：字节跳动连续潜空间扩散语言模型](ch01/358-cola-dlm.md)
-- [explicit vs. implicit in the age of intelligences — le secré](ch04/150-ai.md)
-- [review agent：后台复盘 agent 如何判断什么值得保存](ch03/044-agent.md)
-- [不用再学ai了！生成结果包稳的agent来了](ch04/150-ai.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-paradigm-evolution-feipeng-alibaba.md)
-
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析
 
-Agent核心技术概念与范式发生了哪些演变以及背后的思考 涉及agent领域的核心技术议题。
+Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606 涉及agent领域的核心技术议题。
 ### 核心观点
-1. # Agent核心技术概念与范式发生了哪些演变以及背后的思考
-**作者：** 飞樰
-**发布日期：** 2026年6月1日
-梳理 Agent 技术从2023-2026年的四个阶段演进（被动ReAct→工作流→自主→自进化）及六大核心维度（Prompt/Planning/Memory/Tools/Workflow/Environment）的技术概念变化。
-2. 强调四个阶段非替代关系而是并存互补。
-3. 核心洞察：宏观架构"形"未变，内核已重构——从"人为适配模型"到"利用模型原生能力"，从"刚性约束"到"动态智能"。
-4. （本文覆盖的4阶段+6维度Agent框架已由 entity [Agent 四阶段演化与六维度技术变化](ch03/044-agent.md) 完整收录。
-5. ）
-### Prompt：渐进式披露
-System Prompt 从"单体大作文"到"System Prompt + 渐进式加载上下文文件"的解耦。
+1. 复用通用 Agent 基座，把业务知识、工具、流程和评测做成可验证增强层。
+2. 很多团队一说要做业务 Agent，第一反应是搭一个自己的 Agent Framework：规划器、执行循环、工具调度、记忆、权限、人机交互，最好再做成平台。
+3. 这个方向听起来完整，真正落地时却很容易把团队拖进基础设施泥潭。
+4. 我更倾向于反过来做：先把 Codex、Claude Code 这类
+通用 Agent 基座
+当成现成基座，让它们承担推理、代码理解、工具调用和多轮执行。
+5. 业务团队的精力不要花在重写这些能力上，而是补它们缺的那部分：
+业务知识、内部工具、流程规则、权限边界、评测集和线上观测
+这样做不是偷懒。
 
 ### 内容结构
-- Agent核心技术概念与范式发生了哪些演变以及背后的思考
-- Prompt：渐进式披露
-- Memory：文件系统化+向量混合
-- Tools：CLI 命令行原生化
-- 总结框架
+- 元信息
 
 ### 技术要点
 
@@ -45,18 +32,22 @@ System Prompt 从"单体大作文"到"System Prompt + 渐进式加载上下文�
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/210-openclaw.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/044-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/217-0.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/215-openclaw.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
 2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
 3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现
 4. **风险管控**: 引入新技术需评估对现有系统稳定性的影响，做好降级预案
+
+## 相关实体
+
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 
 ---
 

@@ -89,8 +89,8 @@ Garry Tan 2026年5月发表的新机制，核心是**让AI写出的代码只进�
 - [复杂性棘轮原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/garry-tan-complexity-ratchet-90percent-testing-20260513.md)
 
 ## 相关实体
-- [淘天营销中后台 AI 生码工作流最佳实践](ch04/150-ai.md)
-- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch04/150-ai.md)
+- [淘天营销中后台 AI 生码工作流最佳实践](ch04/277-ai.md)
+- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch04/277-ai.md)
 - [Obsidian + Claude Code 集成指南](ch03/075-claude-code.md)
 
 ## 深度分析

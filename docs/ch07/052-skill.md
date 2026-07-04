@@ -1,111 +1,80 @@
-# Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁
+# 你写的 Skill，及格了吗？
 
-## Ch07.052 Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁
+## Ch07.052 你写的 Skill，及格了吗？
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/skill-version-comparison-five-principles-winty.md`
+> 📊 Level ⭐⭐ | 7.1KB | `entities/ni-xie-de-skill-ji-ge-liao-ma.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-version-comparison-five-principles-winty.md)
+## 核心概念
+本文提出了一套 **8 维度 Skill 量化评估框架**，通过元数据质量、执行引导清晰度、领域知识密度等指标对 Skill 进行打分评级（S/A/B/C/D 五档），解决 Skill 质量难以客观衡量的问题。
 
-Skill 版本升级不能只看总分变化，需要多维度对比 + 分场景拆解 + 失败 case 人眼复核 + 统计显著性检验 + Token/时延纳入门禁。本文提出 5 条原则和完整的版本对比报告 YAML 模板。
+## 8 个评估维度
+分布在 Skill 从发现到执行的完整生命周期，分三个阶段：
+**第一阶段：能不能被找到**
 
-## 一句话
+- D1. 元数据质量 — description 是否精准描述功能、包含触发关键词，甚至写明不应触发场景
+**第二阶段：用起来顺不顺**
 
-**版本对比不是"两个数字比大小"：8 维度对比 + 5 层场景拆解 + regression/improvement/drift 三集 diff + 2σ 显著性 + Token/时延门禁 + CI 自动化。**
+- D2. 执行引导清晰度 — Agent 能否顺畅执行任务
+- D4. 工作流完整性 — 流程是否端到端、异常是否有处理
+- D5. 输入输出清晰度 — 起点终点是否明确
+- D6. 资源利用 — 脚本、参考文档是否按需加载（渐进式披露）
+**第三阶段：值不值得存在**
 
-## 六种"假改进"陷阱
+- D3. 领域知识密度 — 是否内嵌难以获取的专业知识
+- D7. 写作质量 — 技术文档结构是否清晰
+- D8. 范围与聚焦 — 是否做好一件事而非包揽一切
 
-1. **均值改善但分布退化** — 总分涨了但关键场景回退
-2. **整体提升但 P0 翻车** — 高优先级 case 回退即事故
-3. **主要场景持平边缘场景下滑** — 低频但高风险场景被忽视
-4. **看似变好其实是测试集偏移** — 新版刚好更适配测试集分布
-5. **Token 暴涨换正确率** — 成本飙升但收益微小
-6. **稳定性下降换正确率** — 正确率波动变大，确定性降低
+## 多模型交叉验证机制
+- **独立评估**：多模型各自按 8 维度独立打分
+- **交叉互审**：分差 ≥2 分时需引用 Skill 具体内容作为证据，并可自我修正
+- **仲裁综合**：主模型汇总所有结果做最终裁决
+- **三级共识机制**：强共识/弱共识/仲裁，标注每个维度的共识度
 
-## 五条原则
+## 四种执行策略自动路由
+根据模型列表自动分类：
 
-### 原则 1：永远多维度对比，不要只看一个数字
+- 全是工具原生模型 → 策略 A
+- 全是第三方 → 策略 B（依赖 Python 脚本调用千帆 API）
+- 两者都有 → 策略 A+B
+- 出问题自动降级 → 策略 C
 
-8 个必看维度：
+## 关键价值
+- **改进路线图**：帮助开发者识别短板
+- **选型决策工具**：横向对比多个 Skill
+> 注意：评估框架度量的是 Skill 的**文档工程质量**，而非运行时全部真相。
 
-| 维度 | 关心什么 | 例子 |
-|------|----------|------|
-| 总体正确率 | 平均效果 | overall_score 0.78 → 0.82 |
-| 分层指标 | L1/L2/L3/L4 各层 | L3 +5pt, L4 -2pt |
-| 分类型场景 | 不同 case 类型 | P0 +0pt, P1 +6pt, P2 +4pt |
-| 一致性 | 多次跑的稳定性 | consistency 0.86 → 0.92 |
-| 鲁棒性 | 扰动场景 | tool_junk 72% → 75% |
-| 资源消耗 | Token / 步骤数 | tokens +18%, steps +0.6 |
-| 时延 | 平均响应时间 | latency +1.4s |
-| 失败模式 | 失败的种类 | 新版本是否引入新失败模式 |
+## 深度分析
+1. **D1 是唯一决定 Skill 生死的维度**。description 的质量决定 Agent 是否会触发该 Skill——如果这一步没做好，后面七 个维度写得再精细也毫无意义。好的 description 应同时包含触发关键词和反向排除条件，防止误触发
+2. **8 维度映射 Skill 完整生命周期三阶段**。"能不能被找到"（D1 元数据）→ "用起来顺不顺"（D2/D4/D5/D6 执行引导）→ "值不值得存在"（D3/D7/D8 存在价值）。这种分层设计让评估既有广度又有纵深
+3. **多模型共识比单模型绝对分数更可靠**。GLM-5.1 评 7.8/A，Claude Opus 4.6 评 6.5/B——分差一个等级但核心问题趋同，说明绝对值因模型而异，共识才是稳定信号。交叉互审要求分差 ≥2 分时必须引用 Skill 具体内容作为证据
+4. **渐进式披露是资源利用的核心原则**。SKILL.md 应保持精简，详细脚本和参考文档按需加载，而非把所有内容堆砌在一个巨大的 Markdown 文件中。这直接影响 Agent 能否快速扫描并抓到关键信息
+5. **D3 是 Skill 存在的根本理由**。如果通用 Agent 不依赖该 Skill 也能完成同等任务，则该 Skill 没有存在价值。真正的 Skill 应内嵌难以获取的专业知识：私有 API 调用方式、内部系统数据模型、行业特定最佳实践
 
-### 原则 2：分场景看，不要只看均值
-
-必须按 5 种维度拆分：
-
-- 按业务严重性：P0 / P1 / P2
-- 按使用频率：高频 / 中频 / 低频
-- 按用户角色：开发 / 运维 / 业务
-- 按风险等级：涉及生产 / 涉及测试 / 只读
-- 按已知难度：经典 case / 边缘 case / 难 case
-
-**P0 回退 = 事故**，不管总体分数涨多少。
-
-### 原则 3：失败 case 必须人眼复核
-
-三集 diff：
-
-- **Regression set** — v1 ✅ → v2 ❌（最关键，P0 regression 原则不上线）
-- **Improvement set** — v1 ❌ → v2 ✅
-- **Drift set** — 都失败但方式不同（v1 死循环 vs v2 错误结论）
-
-### 原则 4：用统计方法，不要凭感觉
-
-- 每个版本至少跑 3 次评估
-- 显著性判断：`diff > 2 * pooled_std`（最简版）
-- 更严肃用配对 t 检验
-
-如果 v2 比 v1 高 2pp 但波动 ±3pp，这 2pp 不是真改进。
-
-### 原则 5：Token 与时延必须纳入对比
-
-**Token/时延门禁标准：**
-
-- 总分提升 ≤ 5pt → Token 增长 ≤ 10%，时延增长 ≤ 15%
-- 总分提升 > 5pt → Token 增长 ≤ 25%，时延增长 ≤ 30%
-
-反面案例：正确率 +2pp 但 Token +75%、时延 +75%，生产实际收益为负。
-
-## 完整版本对比报告模板
-
-YAML 结构化模板（关键字段）：
-
-- `overall`：v1/v2 mean + diff + significant (bool)
-- `by_layer`：L1-L4 各层变化
-- `by_severity`：P0/P1/P2 变化
-- `stability`：consistency_score + robustness_avg
-- `cost`：avg_tokens + avg_latency 变化率
-- `regression_cases`：具体 case 编号 + 描述
-- `improvement_cases`：具体 case 编号 + 描述
-- `verdict`：结论 + blockers + recommended_actions
-
-## 真实案例：db-query Skill v2.0.0 被 P0 回退拦下
-
-总分 +6pt 但 DELETE -30pt、DDL -35pt → 回退原因：新 prompt 过于激进 → 保留 v1 的"先确认再执行"逻辑后全部场景改进才上线。
-
-## CI 自动化建议
-
-- PR 提交后自动触发评估
-- 自动生成对比报告贴回 PR 评论
-- 指标回退 > 阈值自动加 regression 标签
-- regression 标签 PR 需特殊审批才能 merge
+## 实践启示
+1. **从 D1 description 开始优先改进**。扩展 description 包含触发关键词、功能概述和明确的不触发场景——这是投入产出比最高的改进动作，能直接提升 Skill 被正确触发的概率
+2. **设计端到端工作流并预设异常处理方案**。D4 要求流程端到端、步骤衔接顺畅，且必须覆盖 API 超时、文件下载失败等异常场景。可以在 Skill 中内置重试逻辑和降级策略
+3. **单模型多视角评估可作为多模型验证的降级方案**。让同一模型扮演严格派/务实派/温和派三个评审角色，强制引入多样性视角。角色分化后的分歧（如 D4 一个给 5 分一个给 8 分）本身就有分析价值
+4. **采用场景路由表设计提升输入输出清晰度**。subordinate-weekly-report 的场景路由表设计可借鉴——每个 action 配置完整的输入输出示例，让 Agent 能快速匹配用户意图，降低理解成本
+5. **Skill 完成后用多模型横向对比选型**。对同类 Skill 分别独立评估，对比 D1-D8 各维度得分和共识度，识别各自优势领域（workos-weekly 领域知识密度更高，subordinate-weekly-report 元数据质量更优），选择时各取所长
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ni-xie-de-skill-ji-ge-liao-ma.md)
 
 ## 相关实体
-
-- [Skill 版本管理五大原则](ch04/245-skill.md) — 同作者同系列，版本管理侧
-- [Agent Skill 写作评估](ch04/245-skill.md)
-- [Harness Engineering](ch05/061-harness-engineering.md)
-- [Claw-SWE-Bench](ch12/003-token.md) — harness 独立评测基准
-- [Agent Eval WalleZhang](ch04/503-agent.md) — YAML 驱动评估框架
+- [Skill.md 简历生成器 Resume Forge](ch04/256-skill.md)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/256-skill.md)
+- [Hermes Agent](ch03/090-hermes-agent.md)
+- [Qoder Skills 完全指南](ch04/256-skill.md)
+- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/277-ai.md)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/256-skill.md)
+- [SkillClaw](ch04/256-skill.md)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/256-skill.md)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/256-skill.md)
+- [SkillX — 层次化技能知识库](ch04/256-skill.md)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/256-skill.md)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/256-skill.md)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch04/256-skill.md)
+- [Thin Harness Fat Skills](ch04/256-skill.md)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/196-tencent-vibe-coding-to-agentic-engineering-backend.md)
 
 ---
 

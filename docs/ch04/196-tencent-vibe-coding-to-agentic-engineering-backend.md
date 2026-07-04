@@ -113,9 +113,9 @@ Skill/Command/MCP 三层架构的核心价值在于分离了不同层次的关�
 ## 相关实体
 - [从Vibe Coding到Agentic Engineering重构后台开发全流程](ch03/045-agent.md)
 - [Karpathy Vibe Coding To Agentic Engineering](ch03/045-agent.md)
-- [Fudan Peking Ahe Agentic Harness Engineering](ch04/221-fudan-peking-ahe-agentic-harness-engineering.md)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/043-coding-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering V4](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
+- [Fudan Peking Ahe Agentic Harness Engineering](ch05/061-harness-engineering.md)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/047-coding-agent.md)
+- [Karpathy Vibe Coding Agentic Engineering V4](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tencent-vibe-coding-to-agentic-engineering-backend.md)
 

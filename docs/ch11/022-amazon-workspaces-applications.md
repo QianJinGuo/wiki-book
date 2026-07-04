@@ -236,7 +236,7 @@ AppStream 2.0 支持 SAML 2.0 federated authentication，企业员工使用统�
 - [Amazon IAM](https://aws.amazon.com/cn/iam/) — 身份管理和访问权限
 
 ## 相关实体
-- [Building Blocks for Foundation Model Training and Inference on AWS](ch04/150-ai.md)
+- [Building Blocks for Foundation Model Training and Inference on AWS](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 
 ---

@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **24 篇**实体，按深度递增排列。
+> 本章收录 **25 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 10 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 13 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 14 |
 
 ---
 
@@ -40,9 +40,9 @@
 - Chroma 是嵌入式帮手（零运维、<100 万向量最佳），Qdrant 是独立引擎（生产级、过滤不伤召回率）
 
 ## 相关实体
-- [Vector Db Chroma Vs Qdrant](ch11/177-chroma-vs-qdrant.md)
-- [Deepseek V4 Pro Vs Claude](ch01/777-deepseek.md)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](ch11/210-openclaw.md)
+- [Vector Db Chroma Vs Qdrant](ch11/185-chroma-vs-qdrant.md)
+- [Deepseek V4 Pro Vs Claude](ch01/974-deepseek-v4.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](ch11/215-openclaw.md)
 - [Context Engineering Three Memory Paradigms Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
@@ -395,7 +395,7 @@ SageMaker AI 端点按实例运行时长计费 ：
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
 → [Voice Agent 设计 - Nova Sonic 多 Agent 工具与会话](ch03/045-agent.md)
-→ [Nova Sonic WebRTC 实时语音流](ch11/250-amazon-nova.md)
+→ [Nova Sonic WebRTC 实时语音流](ch11/259-amazon-nova.md)
 → [OpenAI Realtime Voice 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/openai-realtime-voice-architecture.md)
 
 ---
@@ -487,7 +487,7 @@ Agent 看到用户的所有数据后，技术上能**检测犯罪行为**（CSAM
 
 **互补关系**：两者都试图用 cryptographic primitives 解决 ML inference privacy，但**FHE 局限于纯 inference 任务，Apple PCC 在 agent 场景下被 prompt + 行为流绕过**。Green 文章的核心贡献是指出"private inference ≠ private agent"的关键区分。
 
-## 与 [Simon Willison vibe-coding](ch09/043-coding-agent.md) 的呼应
+## 与 [Simon Willison vibe-coding](ch09/047-coding-agent.md) 的呼应
 
 Willison 的 **lethal trifecta** 框架（被 Green 引用）是同一问题的另一个 framing：Willison 从 LLM application 角度（数据访问 + 不可信输入 + 出站通信）描述 agentic 系统固有的安全风险，Green 从 cryptographic 角度证明**即使最强的 private inference 设计也无法缓解这个风险**。两者是**lethal trifecta 的两层解释**：
 - Willison：识别 trifecta 模式
@@ -503,9 +503,9 @@ Willison 的 **lethal trifecta** 框架（被 Green 引用）是同一问题的�
 ## 与现有实体的关联
 
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)：互补（不同加密学原语，同一目标）
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/043-coding-agent.md)：lethal trifecta 概念同源
-- [Apple Silicon Costs More Than Openrouter](ch01/361-apple-silicon-costs-more-than-openrouter.md)：Apple 硬件成本视角
-- [Apple Corecrypto Formal Verification Blueprint](ch12/024-apple-corecrypto-formal-verification-blueprint-post-quantu.md)：Apple 加密学基础设施
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/047-coding-agent.md)：lethal trifecta 概念同源
+- [Apple Silicon Costs More Than Openrouter](ch01/468-apple-silicon-costs-more-than-openrouter.md)：Apple 硬件成本视角
+- [Apple Corecrypto Formal Verification Blueprint](ch12/026-apple-corecrypto-formal-verification-blueprint-post-quantu.md)：Apple 加密学基础设施
 
 ## 深度分析
 
@@ -828,9 +828,9 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [小米AI — ICML 2026 论文矩阵（11篇）](ch04/150-ai.md)
+- [小米AI — ICML 2026 论文矩阵（11篇）](ch04/277-ai.md)
 - [OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](ch05/009-harness.md)
-- [百度文心大模型后训练进化（ERNIE 3.0→5.0）](ch04/150-ai.md)
+- [百度文心大模型后训练进化（ERNIE 3.0→5.0）](ch04/277-ai.md)
 
 ---
 
@@ -928,7 +928,7 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 
 ## 与现有实体的关系
 
-- **与 [Skill 自进化三路线](ch04/245-skill.md)** 呼应：PithTrain 的 agent skills 哲学与 SkillOS/SkillOpt 一脉相承（>30% 重复劳动 → 技能化）
+- **与 [Skill 自进化三路线](ch04/256-skill.md)** 呼应：PithTrain 的 agent skills 哲学与 SkillOS/SkillOpt 一脉相承（>30% 重复劳动 → 技能化）
 - **与 [SaaS-Bench](ch03/045-agent.md)** 平行：两者都创建"为 agent 量身定制的工程指标" —— SaaS-Bench 测 GUI Agent 完成率，PithTrain 测训练框架的 agent-task efficiency
 - **与 [Matt Van Horn 22 黑客技巧](ch03/075-claude-code.md)** 呼应：Matt 的"任何做超过 2 次的事 → 技能"是 PithTrain agent skills 哲学的应用层验证
 - **与 [Agent 六机制](ch03/045-agent.md)** 平行：双重效率思想是六机制中"系统-环境协同"的具体实现
@@ -1093,8 +1093,8 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/901-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.md)
+- [How Superset built the IDE for AI agents on Vercel](ch04/277-ai.md)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1065-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.md)
 - [Toto 2.0: Time series forecasting enters the scaling era](ch01/025-toto-2-0-time-series-forecasting-enters-the-scaling-era.md)
 
 ---
@@ -1139,10 +1139,10 @@ CUDA event 是一个标记，可记录到 stream 中，当 GPU 执行到该点�
 5. **实践建议**：如果你的 LLM 推理服务吞吐量不达预期，在优化模型或硬件之前，先用 profiling 工具（如 HuggingFace 提供的脚本）确认是否存在 CPU-GPU 交替空闲问题。22% 的加速可能是免费午餐。
 ## 相关实体
 - [Continuousasync](https://github.com/QianJinGuo/wiki/blob/main/entities/continuousasync.md)
-- [Gemma 4 Multi Token Prediction Drafters](ch01/265-gemma-4-multi-token-prediction-drafters.md)
+- [Gemma 4 Multi Token Prediction Drafters](ch01/331-gemma-4-multi-token-prediction-drafters.md)
 - [How To Calculate The Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
-- [Introducing The Ettin Reranker Family](ch01/372-introducing-the-ettin-reranker-family.md)
-- [Lightseek Tokenspeed](ch01/854-lightseek-tokenspeed.md)
+- [Introducing The Ettin Reranker Family](ch01/479-introducing-the-ettin-reranker-family.md)
+- [Lightseek Tokenspeed](ch01/1004-lightseek-tokenspeed.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/continuous-async.md)
@@ -1172,7 +1172,7 @@ SGLang作为UC Berkeley/CMU/Stability AI联合开发的LLM推理框架，其核�
 **对于云厂商和大模型团队：** HiCache的Load Stream/Forward Stream重叠设计可以与模型并行策略深度结合——在多模态推理（Visual Encoder + LLM）或MoE架构中，前缀加载与推理的重叠效果可能更加显著，因为这些场景的初始化开销更大。
 
 ## 相关页面
-[GLM-5 Scaling Pain 推理复盘](ch04/150-ai.md) — 包含 HiCache BugFix #2 的详细分析
+[GLM-5 Scaling Pain 推理复盘](ch04/277-ai.md) — 包含 HiCache BugFix #2 的详细分析
 [原始存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/glm5-scaling-pain-inference.md)
 
 ---
@@ -1216,9 +1216,9 @@ End-to-end encrypted ML inference with Amazon SageMaker AI and FHE 涉及apple�
 ### 与现有知识体系的关联
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/210-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 
 ## 实践启示
@@ -1390,11 +1390,11 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 
 ## 相关实体
 
-- [automation anywhere collaborates with cisco, nvidia, okta, a](ch04/150-ai.md)
-- [ettin reranker family](ch01/372-introducing-the-ettin-reranker-family.md)
+- [automation anywhere collaborates with cisco, nvidia, okta, a](ch04/277-ai.md)
+- [ettin reranker family](ch01/479-introducing-the-ettin-reranker-family.md)
 - [mathematical optimization at enterprise scale: aws innovatio](https://github.com/QianJinGuo/wiki/blob/main/entities/mathematical-optimization-aws-innovation-center-enterprise.md)
-- [DDoSing Software Delivery Pipelines](ch01/206-0.md)
-- [AI GPUs probably live longer than three years](ch04/150-ai.md)
+- [DDoSing Software Delivery Pipelines](ch01/217-0.md)
+- [AI GPUs probably live longer than three years](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lmsys-dflash-speculative-decoding-2026-06.md)
 
@@ -1590,9 +1590,9 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 3. **视频**：关键帧采样策略在摄入端完成，不要在推理引擎内做动态采样
 ---
 ## 相关实体
-- [ai-infra-auto-driven-skills v0.1.0：给 codex / claude code 的推理](ch04/245-skill.md)
-- [gemma 4 multi token prediction drafters](ch01/265-gemma-4-multi-token-prediction-drafters.md)
-- [tokenspeed agentic inference engine](ch04/538-tokenspeed-agentic-inference-engine.md)
+- [ai-infra-auto-driven-skills v0.1.0：给 codex / claude code 的推理](ch04/256-skill.md)
+- [gemma 4 multi token prediction drafters](ch01/331-gemma-4-multi-token-prediction-drafters.md)
+- [tokenspeed agentic inference engine](ch04/587-tokenspeed-agentic-inference-engine.md)
 
 ---
 
@@ -1616,8 +1616,8 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 
 ## 相关实体
 <!-- ⚠️ 以下交叉引用在 lint 时未通过，请确认 slug 后再取消注释 -->
-<!-- - [servicenow vllm correctness](ch01/890-llm.md) -->
-<!-- - [servicenow vllm correctness huggingface](ch01/890-llm.md) -->
+<!-- - [servicenow vllm correctness](ch01/606-llm.md) -->
+<!-- - [servicenow vllm correctness huggingface](ch01/606-llm.md) -->
 
 ## 深度分析
 ### 背景：为什么 V0→V1 迁移是个高风险操作
@@ -1737,8 +1737,8 @@ ServiceNow 的经验是：**错误的顺序（先改目标函数再修后端）�
 
 ## 相关实体
 
-- [ServiceNow vLLM Correctness（更完整的分析）](ch01/890-llm.md)
-- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/890-llm.md)
+- [ServiceNow vLLM Correctness（更完整的分析）](ch01/606-llm.md)
+- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/217-0.md)
 
 ## 深度分析
 
@@ -1837,7 +1837,7 @@ ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——�
 
 ### 相关实体
 
-- [Deepseek V4 Triton Fp4 Optimization](ch01/777-deepseek.md) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
+- [Deepseek V4 Triton Fp4 Optimization](ch01/974-deepseek-v4.md) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
 - [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理优化通识，包含本文未覆盖的量化 / 蒸馏 / serving 层面的优化策略
 
 ## 实践启示
@@ -1992,7 +1992,7 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 - KV cache：**10%**（bf16 下 9.62 GiB vs 83.9 GiB）
 - 叠加 fp4/fp8 量化可再缩小 2 倍
 
-→ 相关实体：[DeepSeek V4 本地推理](ch09/041-deepseek-v4-ds4c-antirez-local-inference-qbitai.md)
+→ 相关实体：[DeepSeek V4 本地推理](ch04/277-ai.md)
 
 ## 量化：收益最高的优化手段
 
@@ -2031,9 +2031,9 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 ## 与现有知识的关联
 
-- → [DeepSeek V4 本地推理](ch09/041-deepseek-v4-ds4c-antirez-local-inference-qbitai.md)：V4 的 CSA/HCA 架构创新（本文第 6 节）与 antirez 的 ds4.c 本地推理引擎互补
-- → [GLM-5 Scaling Pain](ch04/150-ai.md)：高并发推理下的竞态 Bug，是本文第 8 节"推理服务基础设施"的反面案例
-- → [vLLM](ch01/715-vllm.md)：PagedAttention 的具体实现
+- → [DeepSeek V4 本地推理](ch04/277-ai.md)：V4 的 CSA/HCA 架构创新（本文第 6 节）与 antirez 的 ds4.c 本地推理引擎互补
+- → [GLM-5 Scaling Pain](ch04/277-ai.md)：高并发推理下的竞态 Bug，是本文第 8 节"推理服务基础设施"的反面案例
+- → [vLLM](ch01/857-vllm.md)：PagedAttention 的具体实现
 
 ---
 
@@ -2046,8 +2046,8 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 ## 相关实体
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
 - [Claude Code Hidden Settings 18](ch03/075-claude-code.md)
-- [Alphaevolve交出一周年炸裂成绩单Ai自我改进不再科幻](ch04/150-ai.md)
-- [Rag Chunking Optimization 2025](ch01/207-rag.md)
+- [Alphaevolve交出一周年炸裂成绩单Ai自我改进不再科幻](ch04/277-ai.md)
+- [Rag Chunking Optimization 2025](ch01/310-rag.md)
 - [Wangyunhe Harness Optimization Agentsoul](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
@@ -2152,7 +2152,7 @@ GPU→CPU→KVStore 三级缓存体系，请求按 L1→L2→L3 顺序查询可�
 ## 与现有知识库的关联
 
 - [腾讯混元 Hy3 preview 发布](ch03/045-agent.md)：互补实体，该篇讲模型能力与发布，本篇讲推理优化技术细节
-- [LLM 推理流水线](ch01/890-llm.md)：推理优化基础知识，本篇是 Hy3 的具体工程实践
+- [LLM 推理流水线](ch01/606-llm.md)：推理优化基础知识，本篇是 Hy3 的具体工程实践
 - [模型蒸馏与压缩](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-distillation-compression.md)：量化压缩（W4A8、AngelSlim）是模型压缩的推理侧实践
 - [Transformer 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)：GQA + MoE 架构是 Hy3 的基础
 
@@ -2181,11 +2181,11 @@ vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇
 **后端等效性恢复后，下一步是 async/off-policy 清理。** 保持 rollout 时刻的 behavior policy logprobs，在优化时重新计算 trainer-side old policy logprobs，将后端差异修正与策略更新比率分离，跟踪 ESS 等诊断指标——这些是后端 parity 达成后的自然下一步。
 
 ## 相关实体
-- [servicenow vllm correctness huggingface](ch01/890-llm.md)
+- [servicenow vllm correctness huggingface](ch01/606-llm.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vllm-v0-to-v1-correctness-before-corrections.md)
 
-- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/890-llm.md)
+- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/217-0.md)
 - [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
 
 ---
@@ -2234,7 +2234,7 @@ Bonsai Image 4B 是其参数级别上首个直接在 iPhone 上运行的图像�
 
 如果应用场景对图像质量有要求，Ternary 的 6.4x 压缩比和 95% 性能保留是更优选择。只有在极端内存约束（如 1GB 以下 transformer）时，才考虑 1-bit 方案。Apache 2.0 许可下可直接商用，无需考虑授权成本。
 
-**2. 结合 [Ai Infra Llm Efficient Inference Vllm](ch04/150-ai.md) 进一步降低推理延迟**
+**2. 结合 [Ai Infra Llm Efficient Inference Vllm](ch04/277-ai.md) 进一步降低推理延迟**
 
 虽然 Bonsai 本身已针对 Apple Silicon（MLX）和 CUDA（Gemlite）做了 kernel 优化，但在端侧部署时可结合推理优化技术（如批处理策略、KV cache 管理）进一步提升吞吐。Bonsai Studio iOS app 的部署案例提供了参考实现路径。
 
@@ -2316,5 +2316,51 @@ This post is the engineering log: what we tried, what surprised us, what we thre
 *   No user-facing API changes. A table that already points at an ONNX-capable `MODEL_NAME` picks up the new path automatically
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/14-faster-embeddings-how-we-rebuilt-the-onnx-path-in-mantico.md)
+
+---
+
+## Ch16.025 SAME：稳定MoE持续微调
+
+> 📊 Level ⭐⭐⭐ | 2.2KB | `entities/nju-same-moe-continual-learning.md`
+
+# SAME：稳定MoE持续微调
+
+> ICML 2026 南京大学论文，解决 MoE-based 多模态持续指令微调（MCIT）中的双重遗忘问题。
+
+## 核心问题
+
+MoE-based MCIT 中存在两个核心漂移问题：
+
+- **路由漂移（Routing Drift）**：旧任务样本在后续训练后会被路由到不同专家
+- **专家漂移（Expert Drift）**：即使路由恢复，专家本身的功能也可能被新任务覆盖
+
+## 三个创新
+
+SAME（Stabilized Mixture-of-Experts）从三方面稳定 MoE 持续学习过程：
+
+1. **谱感知路由（Spectral-aware Routing）**：利用历史输入协方差的 SVD 分解，在谱子空间中约束路由器更新，减少旧样本被重新分配到错误专家
+
+2. **曲率感知缩放（Curvature-aware Scaling）**：基于历史输入协方差诱导的 Riemannian 缩放更新专家参数，降低专家功能被覆盖的风险
+
+3. **自适应专家激活（Adaptive Expert Activation）**：在当前任务训练时冻结部分"当前任务不常用但历史重要"的专家，减少冗余计算和跨任务干扰
+
+## 实验结果
+
+SAME 在 TriGap、CoIN 和 UCIT 三个 MCIT 基准上均取得领先性能，同时提升训练效率：
+- TriGap：46.53%（+2.08pp vs MoE-LoRA）
+- CoIN：66.82%（超过 HiDe-LLaVA 63.95%）
+- UCIT：67.12%（超过 ModalPrompt 65.52%）
+
+自适应专家激活平均每个任务减少 32.1 分钟训练时间，并平均降低 2.3K MiB/GPU 显存占用。
+
+## 论文信息
+
+- **论文标题**：SAME: Stabilized Mixture-of-Experts for Multimodal Continual Instruction Tuning
+- **作者**：Zhen-Hao Xie, Jun-Tao Tang, Yu-Cheng Shi, Han-Jia Ye, De-Chuan Zhan, Da-Wei Zhou
+- **收录会议**：ICML 2026
+- **论文地址**：https://arxiv.org/abs/2602.01990
+- **代码**：https://github.com/LAMDA-CL/Prism
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/icml-2026-nju-same-stabilized-moe-mcit.md)
 
 ---

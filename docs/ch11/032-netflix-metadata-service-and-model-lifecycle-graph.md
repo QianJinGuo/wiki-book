@@ -101,9 +101,9 @@ Model Lifecycle Graph 通过 AIP Portal 向 practitioners 展示，这是一个�
 - [High Throughput Graph Abstraction At Netflix](ch11/101-high-throughput-graph-abstraction-at-netflix-part-i.md)
 - [Netflix Switchboard Lightbulb Model Routing](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
 - [High Throughput Graph Abstraction At Netflix Part I](ch11/101-high-throughput-graph-abstraction-at-netflix-part-i.md)
-- [Building Blocks For Foundation Model Training And Inference On Aws](ch04/150-ai.md)
+- [Building Blocks For Foundation Model Training And Inference On Aws](ch04/277-ai.md)
 
-- [Netflix Scaling Camera File Processing At Netflix](ch01/658-scaling.md)
+- [Netflix Scaling Camera File Processing At Netflix](ch01/570-scaling.md)
 - [Netflix Cassandra Wide Partition Dynamic Splitting](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-cassandra-wide-partition-dynamic-splitting.md)
 ## 相关引用
 

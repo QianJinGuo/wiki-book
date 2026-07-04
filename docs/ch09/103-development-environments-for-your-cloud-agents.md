@@ -55,9 +55,9 @@ Cursor 现在可以自动检测仓库、推断所需工具和依赖，并生成�
 ## 相关实体
 - [Cloud Agent Development Environments](ch03/045-agent.md)
 - [Oz Multi Harness Cloud Agent Orchestration](ch03/045-agent.md)
-- [Bedrock Agentcore Coding Agent Hosting](ch09/043-coding-agent.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/067-building-ai-agents-for-business-support-using-amazon-bedrock.md)
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch04/150-ai.md)
+- [Bedrock Agentcore Coding Agent Hosting](ch09/047-coding-agent.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/070-building-ai-agents-for-business-support-using-amazon-bedrock.md)
+- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/development-environments-for-your-cloud-agents.md)

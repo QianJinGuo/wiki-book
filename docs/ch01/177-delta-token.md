@@ -2,7 +2,7 @@
 
 ## Ch01.177 强化学习没作用？人大DelTA精准识别关键token，推理正确率大幅上升
 
-> 📊 Level ⭐ | 2.7KB | `entities/强化学习没作用人大delta精准识别关键token推理正确率大幅上升.md`
+> 📊 Level ⭐ | 2.7KB | `entities/强化学习没作用人大delta精准识别关键token推理正确率大幅上升-1.md`
 
 # 强化学习没作用？人大DelTA精准识别关键token，推理正确率大幅上升
 

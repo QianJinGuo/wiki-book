@@ -36,7 +36,7 @@ Intercom PHP供应链攻击（Mini Shai-Hulud行动）揭示了Packagist/Compose
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 
-- [semgrep intercom php supply chain](ch12/105-semgrep-intercom-php-supply-chain.md)
+- [semgrep intercom php supply chain](ch12/113-semgrep-intercom-php-supply-chain.md)
 
 ---
 

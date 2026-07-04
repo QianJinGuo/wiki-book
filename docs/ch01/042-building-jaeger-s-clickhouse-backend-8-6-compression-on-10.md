@@ -61,7 +61,7 @@ We had two candidates for choosing a primary key:
 The decision came down to an asymmetric trade-off. Sorting by trace_id makes search performance terrible, but sorting by (service_name, name, start_time) hurts trace retrieval much less, because we can recover most of the lost performance with two cheap mechanisms:
 
 1.   A bloom_filter skip index on trace_id, which lets the engine prove a granule can’t contain a given ID without reading it.
-2.  
+2.
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/23-building-jaegers-clickhouse-backend-8-6x-compression-on-10-million-spans.md)
 

@@ -24,7 +24,7 @@ CLARITY Act 的核心张力在于它试图同时解决两个问题：监管透�
 - [5 Things to Know about the CLARITY Act](https://github.com/QianJinGuo/wiki/blob/main/entities/clarity-act-5-things.md)
 - [5 Things to Know about the CLARITY Act](ch03/015-5-things-to-know-about-the-clarity-act.md)
 - [Introducing deepsec: The security harness for finding vulnerabilities in your codebase](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [ai gateway production index](ch04/150-ai.md)
+- [ai gateway production index](ch04/277-ai.md)
 - [from ssh to rest: a security-driven modernization of slack](https://github.com/QianJinGuo/wiki/blob/main/entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

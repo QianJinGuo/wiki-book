@@ -135,10 +135,10 @@ Amazon Quick Research 的核心设计不是一次性检索，而是将**研究�
 
 ## 相关实体
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch03/045-agent.md)
-- [Aws Bedrock Halliburton Seismic Workflow Genai](ch04/150-ai.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Build An Enterprise Observability Solution For Amazon Quick](ch11/020-build-an-enterprise-observability-solution-for-amazon-quick.md)
-- [Aderant Transforms Cloud Operations With Amazon Quick](ch11/178-aderant-transforms-cloud-operations-with-amazon-quick.md)
+- [Aws Bedrock Halliburton Seismic Workflow Genai](ch04/277-ai.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
+- [Build An Enterprise Observability Solution For Amazon Quick](ch11/019-build-an-enterprise-observability-solution-for-amazon-quick.md)
+- [Aderant Transforms Cloud Operations With Amazon Quick](ch11/183-aderant-transforms-cloud-operations-with-amazon-quick.md)
 
 ---
 

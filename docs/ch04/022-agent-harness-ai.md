@@ -45,7 +45,7 @@
 
 ## 相关实体
 
-- [钉钉AI助手](ch04/150-ai.md)
+- [钉钉AI助手](ch04/277-ai.md)
 - [Agent Harness生产实践](ch03/045-agent.md)
 - [Harness范式](ch05/009-harness.md)
 

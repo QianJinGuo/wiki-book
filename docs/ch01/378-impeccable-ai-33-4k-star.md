@@ -139,17 +139,17 @@ Live 模式的价值是把"AI 输出"从单向的"修改文件"变成双向的"�
 
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/210-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/210-openclaw.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/215-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/215-openclaw.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
-- [Agent Reliability Engineering Skillify Continuous Improvement](ch04/245-skill.md)
-- [Agent Skill Writing Evaluation](ch04/245-skill.md)
-- [Agent Skill Writing](ch04/245-skill.md)
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](ch01/707-anthropic.md)
+- [Agent Reliability Engineering Skillify Continuous Improvement](ch04/256-skill.md)
+- [Agent Skill Writing Evaluation](ch04/256-skill.md)
+- [Agent Skill Writing](ch04/256-skill.md)
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](ch01/217-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)
-- [我把 claude design 做成了 skill，人人都能成为顶级网站设计师](ch04/245-skill.md)
+- [我把 claude design 做成了 skill，人人都能成为顶级网站设计师](ch04/256-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 
 ---

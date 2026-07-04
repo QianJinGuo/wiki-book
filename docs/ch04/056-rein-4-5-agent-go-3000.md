@@ -298,7 +298,7 @@ WithWorkingDir(cwd)            // 工作目录
 - [PilotDeck](ch03/045-agent.md) —— 白盒记忆
 - [Agent Harness 架构](ch03/045-agent.md) —— 7 层 harness 模型
 - [17 种 agent 架构演进](ch03/045-agent.md) —— 类型边界视角
-- [Agent 工程原则](ch04/441-agent-engineering-principles-architecture-practice.md) —— 模块化设计实践
+- [Agent 工程原则](ch03/045-agent.md) —— 模块化设计实践
 - [短期记忆压缩](ch03/045-agent.md) —— 投影压缩对比
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)

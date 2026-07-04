@@ -45,10 +45,10 @@ Nvidia 的自由现金流在上一财年达到 970 亿美元，使其有能力�
 
 ## 相关实体
 - [拿下1亿美元种子轮Sglang团队创立Radixark打造下一代开放Ai基础设施](https://github.com/QianJinGuo/wiki/blob/main/entities/拿下1亿美元种子轮SGLang团队创立RadixArk打造下一代开放AI基础设施.md)
-- [Edgeclaw Bemit Lobster](ch04/444-edgeclaw.md)
-- [Claude Opus 47](ch01/380-claude.md)
-- [Hermes Agent Getting Started Guide 2026](ch03/045-agent.md)
-- [Gpt 54 烧完额度后我把七家国产 Ai 公司 Coding Plan 对比了一遍想不到最应该买的竟然是这家](ch04/150-ai.md)
+- [Edgeclaw Bemit Lobster](ch04/477-edgeclaw.md)
+- [Claude Opus 47](ch01/485-claude.md)
+- [Hermes Agent Getting Started Guide 2026](ch01/217-0.md)
+- [Gpt 54 烧完额度后我把七家国产 Ai 公司 Coding Plan 对比了一遍想不到最应该买的竟然是这家](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.md)

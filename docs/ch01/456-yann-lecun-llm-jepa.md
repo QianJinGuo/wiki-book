@@ -91,24 +91,24 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 
 ## 相关实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/045-agent.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/908-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/217-0.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/988-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Karpathy 从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [OpenClaw 多 Agent 协同开发](ch11/210-openclaw.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
+- [OpenClaw 多 Agent 协同开发](ch11/215-openclaw.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
 - 
 - 
 -
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
-- [better decisions at scale: how mathematical optimization del](ch11/158-better-decisions-at-scale-how-mathematical-optimization-del.md)
-- [farewell ai2](ch01/658-farewell-ai2.md)
-- [introducing 1-bit and ternary bonsai image 4b: image generat](ch04/150-ai.md)
-- [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](ch04/150-ai.md)
-- [introducing 1-bit and ternary bonsai image 4b: image generat](ch04/150-ai.md)
+- [better decisions at scale: how mathematical optimization del](ch11/159-better-decisions-at-scale-how-mathematical-optimization-del.md)
+- [farewell ai2](ch01/804-farewell-ai2.md)
+- [introducing 1-bit and ternary bonsai image 4b: image generat](ch04/277-ai.md)
+- [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](ch04/277-ai.md)
+- [introducing 1-bit and ternary bonsai image 4b: image generat](ch04/277-ai.md)
 - [private fintech has quietly become bigger than public fintec](ch03/101-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
 - [private fintech has quietly become bigger than public fintec](ch03/101-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
-- [the inevitable need for an open model consortium](ch01/853-the-inevitable-need-for-an-open-model-consortium.md)
+- [the inevitable need for an open model consortium](ch01/476-the-inevitable-need-for-an-open-model-consortium.md)
 
 ---
 

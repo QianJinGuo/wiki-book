@@ -110,7 +110,7 @@ Bastani 等人(PNAS 2024)研究：无护栏 GPT-4 提高当场表现，但 AI �
 ## 相关实体
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Harness Engineering 10 Step Practical Guide 2026](ch05/061-harness-engineering.md)
-- [Karpathy Llm Wiki Second Brain Awkthole](ch04/150-ai.md)
+- [Karpathy Llm Wiki Second Brain Awkthole](ch04/277-ai.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/075-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-personal-learning-system-ruofei.md)

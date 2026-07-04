@@ -18,7 +18,7 @@ Mollick 认为，AI 行业正处于从"聊天机器人时代"向"自主 Agent �
 
 ## 与 Mollick 现有实体的关联
 
-本文是 Mollick 关于 AI 能力加速和 Agent 化趋势系列分析的延续。与 [Co Existence Paradigm Shift Agentic Ai Mollick 2026](ch04/150-ai.md) 等实体中讨论的范式转换一脉相承，但本文更聚焦于"聊天机器人"作为旧范式的终结，而非新范式的具体形态。
+本文是 Mollick 关于 AI 能力加速和 Agent 化趋势系列分析的延续。与 [Co Existence Paradigm Shift Agentic Ai Mollick 2026](ch04/277-ai.md) 等实体中讨论的范式转换一脉相承，但本文更聚焦于"聊天机器人"作为旧范式的终结，而非新范式的具体形态。
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-twilight-of-the-chatbots.md)
 

@@ -286,10 +286,10 @@ Claude Code 泄露事件最反直觉的发现：**LLM API 调用只是一行代�
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 框架
 ## 相关实体
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch03/045-agent.md)
-- [Anthropic 12 Mcp Production Patterns](ch01/707-anthropic.md)
+- [Anthropic 12 Mcp Production Patterns](ch01/854-anthropic.md)
 - [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](ch03/045-agent.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](ch03/075-claude-code.md)
-- [Harness Design Long Running Apps](ch05/017-harness-design-long-running-apps.md)
+- [Harness Design Long Running Apps](ch05/009-harness.md)
 
 ---
 

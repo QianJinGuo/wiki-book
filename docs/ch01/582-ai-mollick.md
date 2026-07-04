@@ -94,8 +94,8 @@ Mollick 用"GuacaDrone 牛油果无人机配送"想法测试不同 AI 的风险�
 
 ## 相关主题
 
-- [Jagged Ai Frontier Mollick](ch04/150-ai.md) — Jagged Frontier 概念（同一作者，更深入的能力地图分析）
-- [Opinionated Guide Ai Right Now Mollick](ch04/150-ai.md) — 模型选择实用指南（同一作者，同期不同议题）
+- [Jagged Ai Frontier Mollick](ch04/277-ai.md) — Jagged Frontier 概念（同一作者，更深入的能力地图分析）
+- [Opinionated Guide Ai Right Now Mollick](ch04/277-ai.md) — 模型选择实用指南（同一作者，同期不同议题）
 - [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt5-just-does-stuff-mollick.md) — GPT-5 模型能力侧写（同一作者）
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/giving-your-ai-a-job-interview.md)
 

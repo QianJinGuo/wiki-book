@@ -152,10 +152,10 @@ Canvas 被设计为"独立画布"而非对话线程的延伸，这是它与普�
 ## Related
 - [AI 知识管理工具横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md)
 - [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md) — 文档驱动的 AI 研究助手
-- [Obsidian](ch09/103-obsidian-claude-code-integration-guide.md) — 本地离线笔记
+- [Obsidian](ch09/112-obsidian-claude-code-integration-guide.md) — 本地离线笔记
 ## 相关实体
 
-- [entrypoint hijacking](ch01/143-entrypoint-hijacking.md)
+- [entrypoint hijacking](ch01/547-entrypoint-hijacking.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-memory-architecture.md)
 
 ---

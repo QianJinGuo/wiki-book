@@ -133,11 +133,11 @@ CrewAI 架构的核心维护成本不在代码层，而在 SOP 和 guardrails �
 ---
 
 ## 相关实体
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/066-building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Aws Bedrock Ops Alert](ch11/240-bedrock.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
+- [Aws Bedrock Ops Alert](ch11/253-bedrock.md)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](ch03/045-agent.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/045-agent.md)
-- [Amazon Bedrock Claude Prompt Cache Strategy](ch01/380-claude.md)
+- [Amazon Bedrock Claude Prompt Cache Strategy](ch01/485-claude.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.md)
 

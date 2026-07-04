@@ -53,10 +53,10 @@ AI 代码分析需要分层策略，而不是对所有代码一视同仁。首�
 关键实践：建立定义清晰的委员会、角色和决策流程；定义结果和关键指标以追踪进展并向执行层报告；创建策略、SLA 和异常流程以确保风险被一致地处理。指标体系应该覆盖从暴露发现到修复完成的全流程时间（MTTR），以及各层次的覆盖率。
 ## 相关实体
 - [Clinereleasesopen Sourceagentruntimesdk](ch03/045-agent.md)
-- [Where Openclaw Security Is Heading Openclaw Blog](ch12/029-where-openclaw-security-is-heading-openclaw-blog.md)
-- [Vietnamtodevelopdomesticcloud](ch01/794-opd.md)
+- [Where Openclaw Security Is Heading Openclaw Blog](ch12/031-where-openclaw-security-is-heading-openclaw-blog.md)
+- [Vietnamtodevelopdomesticcloud](ch01/941-opd.md)
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
-- [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](ch01/038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.md)
+- [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](ch01/036-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai_threat_readiness_framework.md)
 

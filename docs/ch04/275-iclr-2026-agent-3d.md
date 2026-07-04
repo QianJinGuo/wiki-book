@@ -63,10 +63,10 @@ Scenethesis是一个无需重新训练场景生成模型的系统框架，其流
 3. **评估指标需要超越视觉质量**：对于可交互3D场景，仅使用视觉保真度指标是不够的。需要评估空间关系正确性、物理稳定性、对象间接触关系等多维度指标，才能全面衡量系统质量 。
 ## 相关实体
 - [Iclr Agent 3D Generation](ch03/045-agent.md)
-- [Code As Agent Harness Survey](ch09/046-code-as-agent-harness.md)
-- [我用 Skillmd 做了一个简历生成器](ch04/245-skill.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/045-agent.md)
-- [Gepa Optimize Anything](ch01/313-gepa-optimize-anything.md)
+- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.md)
+- [我用 Skillmd 做了一个简历生成器](ch04/256-skill.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch01/217-0.md)
+- [Gepa Optimize Anything](ch01/380-gepa-optimize-anything.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/iclr-agent-3d-generation.md)
 

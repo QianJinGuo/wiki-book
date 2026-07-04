@@ -222,7 +222,7 @@ CronService 的 cron 解析是简化版本，复杂表达式会静默降级为�
 
 ## Related
 
-- [iii.dev Worker/Trigger/Function 架构](ch01/178-iii-dev-worker-trigger-function.md) — "Harness 就是后端"：iii 对后端原语的抽象（Worker/Trigger/Function）与 OpenClaw 的薄抽象哲学高度一致，都强调基础设施应该是透明的、可组合的
+- [iii.dev Worker/Trigger/Function 架构](ch01/457-iii-dev.md) — "Harness 就是后端"：iii 对后端原语的抽象（Worker/Trigger/Function）与 OpenClaw 的薄抽象哲学高度一致，都强调基础设施应该是透明的、可组合的
 - [OpenClaw Tool/消息总线/子Agent管理架构](ch03/045-agent.md) — 800行代码实现的 OpenClaw 核心架构：Tool 抽象、MessageBus、SubagentManager、REPL 主循环
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md)

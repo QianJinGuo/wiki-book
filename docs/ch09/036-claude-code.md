@@ -269,7 +269,7 @@ Claude Code 性能评测揭示了 Agent 编程工具的核心性能规律：**�
 
 - [Claude Code 架构深度解析](ch03/075-claude-code.md)
 - [12 个 Harness 设计模式](ch03/075-claude-code.md)
-- [Prompt Caching 工程实践](ch01/198-anthropic-prompt-caching-claude-code.md)
+- [Prompt Caching 工程实践](ch01/303-anthropic-prompt-caching-claude-code.md)
 - [Subagent 上下文卫生](ch03/075-claude-code.md)
 - [上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 

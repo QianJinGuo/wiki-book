@@ -81,9 +81,9 @@ macOS 的 AppTranslocation 机制（又称 Gatekeeper Path Quarantine）是一�
 对于"Failed to open document"类型的启动崩溃，由于日志中可能缺乏明确信息，建议采用系统性排除法。首先，确认应用是否在启动时尝试打开一个默认文档——某些应用会在上次退出时保存一个"最近使用"的文档路径，并在下次启动时尝试自动打开它。如果该文档已被删除或移动位置，可能导致崩溃。解决方法是在应用启动时按住 Modifier 键（Option 或 Shift），或直接删除应用的首选项文件来重置这些状态。其次，检查应用的启动参数——有些崩溃是因为命令行参数错误或环境变量冲突。可以在 Terminal 中使用 `open -a AppName` 命令启动应用，观察是否有不同的行为。最后，如果所有方法都无效，可以尝试使用 `sandbox-exec` 或 `csreq` 等工具进一步分析应用的沙盒权限和代码签名要求，这在企业部署场景中尤其有用。
 
 ## 相关实体
-- [Reasoning Lift](ch01/519-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.md)
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/206-0.md)
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](ch04/150-ai.md)
+- [Reasoning Lift](ch01/647-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.md)
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/217-0.md)
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](ch04/277-ai.md)
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
 - [Seangoedeckecom Build Agents Not Pipelines](ch03/045-agent.md)
 

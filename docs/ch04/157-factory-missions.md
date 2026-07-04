@@ -61,10 +61,10 @@ Factory 能支持 16 天（目标 30 天）的长任务，核心依赖不是长�
 - golden set evals（黄金集评估）— 验证者使用独立参考答案的评估方法 
 ## 相关实体
 - [Factory Missions Multi Agent Shipping](ch03/045-agent.md)
-- [Sap Unveils The Autonomous Enterprise](ch04/094-sap-unveils-the-autonomous-enterprise.md)
-- [Agent Formal Verification Ai Code](ch04/150-ai.md)
-- [Martin Fowler Ai Rd Harness Nondeterminism Devnote](ch04/150-ai.md)
-- [Peter Steinberger Openclaw 100 Ai Agents](ch04/150-ai.md)
+- [Sap Unveils The Autonomous Enterprise](ch04/100-sap-unveils-the-autonomous-enterprise.md)
+- [Agent Formal Verification Ai Code](ch04/277-ai.md)
+- [Martin Fowler Ai Rd Harness Nondeterminism Devnote](ch04/277-ai.md)
+- [Peter Steinberger Openclaw 100 Ai Agents](ch04/277-ai.md)
 
 ---
 

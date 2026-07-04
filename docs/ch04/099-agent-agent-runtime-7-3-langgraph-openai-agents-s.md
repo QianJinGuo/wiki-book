@@ -105,14 +105,14 @@ Router 负责**判断用户意图、分发到对应 workflow**。这是第 9 篇
 
 > **LLM 可以被替换,但不是无成本的替换**:不同模型的工具调用格式、上下文窗口、推理风格和稳定性都会影响系统表现。**Runtime 的价值在于,把这些差异尽量封装起来,让 Agent 系统更稳、更安全、更好维护。**
 
-Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token 资本」论](ch04/150-ai.md) 的"模型可替换性是 Token 资本型企业的主权测试"哲学同源 — 都是"系统层把模型差异封装"的工程范式。
+Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token 资本」论](ch04/277-ai.md) 的"模型可替换性是 Token 资本型企业的主权测试"哲学同源 — 都是"系统层把模型差异封装"的工程范式。
 
 ## 与现有实体的交叉对比
 
 **同主题(Agent Runtime)**:
 
-- vs **[若飞 Fable 5 Runtime Contract 工程化拆解](ch03/045-agent.md)** — 若飞文是**Runtime Contract 框架**(Task Brief 9 字段 / 能力路由 8 维度 / 状态账本 5 类),**深度工程协议视角**;本文是**7 职责概念入门视角** + **3 主流框架对比**。两者**完全互补**: 若飞 = Runtime **如何被设计** (契约层);二曲线 = Runtime **包含什么职责** + **用什么框架实现** (职责 + 工具层)
-- vs **[阿里云云原生安全护栏三域演进](ch04/150-ai.md)** — 那是从云资源到 AI 模型到模型间路由的**三域护栏**;本文的"风险控制"职责是 Guardrail 的**单点实现**视角
+- vs **[若飞 Fable 5 Runtime Contract 工程化拆解](ch01/217-0.md)** — 若飞文是**Runtime Contract 框架**(Task Brief 9 字段 / 能力路由 8 维度 / 状态账本 5 类),**深度工程协议视角**;本文是**7 职责概念入门视角** + **3 主流框架对比**。两者**完全互补**: 若飞 = Runtime **如何被设计** (契约层);二曲线 = Runtime **包含什么职责** + **用什么框架实现** (职责 + 工具层)
+- vs **[阿里云云原生安全护栏三域演进](ch04/277-ai.md)** — 那是从云资源到 AI 模型到模型间路由的**三域护栏**;本文的"风险控制"职责是 Guardrail 的**单点实现**视角
 
 **Agent Loop / Context / Tool 系列**(本文 7 职责的前 3 块与这些 entity 强相关):
 
@@ -123,7 +123,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 **框架生态**(本文 3 主流框架):
 
 - vs **[Google Agent Executor Distributed Runtime](ch03/045-agent.md)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
-- vs **[Anthropic Claude Managed Agents Platform](ch04/340-anthropic-claude-managed-agents-platform-launch.md)** — Anthropic Managed Agents 视角
+- vs **[Anthropic Claude Managed Agents Platform](ch03/045-agent.md)** — Anthropic Managed Agents 视角
 - vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch03/045-agent.md)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
 - vs **[AgentCore Harness](ch03/045-agent.md)** / **[AgentCore Managed Harness](ch04/216-agentcore-managed-harness.md)** — AWS 实现的 8 职责具体形态
 
@@ -143,7 +143,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 ### 1. 七职责是通用"契约清单",不是某一框架的私有设计
 
-7 大职责（工具管理 / 上下文组装 / 状态管理 / 终止判断 / 风险控制 / Trace / 可观测性）本质上是 **Agent Runtime 的概念性契约** — 无论用 LangGraph、OpenAI Agents SDK 还是自研 Runtime，都必须回答这 7 个问题。这一结论与 [若飞 Fable 5 Runtime Contract](ch03/045-agent.md) 的"工程契约"思路同源：二曲线给出**职责层面的概念契约**（"要做什么"），若飞给出**协议层面的工程契约**（"怎么做"）。两者结合构成完整的 Runtime 设计图谱。
+7 大职责（工具管理 / 上下文组装 / 状态管理 / 终止判断 / 风险控制 / Trace / 可观测性）本质上是 **Agent Runtime 的概念性契约** — 无论用 LangGraph、OpenAI Agents SDK 还是自研 Runtime，都必须回答这 7 个问题。这一结论与 [若飞 Fable 5 Runtime Contract](ch01/217-0.md) 的"工程契约"思路同源：二曲线给出**职责层面的概念契约**（"要做什么"），若飞给出**协议层面的工程契约**（"怎么做"）。两者结合构成完整的 Runtime 设计图谱。
 
 ### 2. 状态管理 + 终止判断 = 运行时"自控"机制,是 Second Curve 的核心
 
@@ -155,11 +155,11 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 ### 4. Trace ↔ 可观测性 是同一数据流的两个齿轮,必须配套设计
 
-本文清晰区分了 **Trace（记录）和 Observability（分析）**：Trace 提供原始执行链路数据，Observability 在这些数据之上构建监控与告警。[langgraph-state-machine-under-the-hood](ch04/189-langgraph.md) 等框架的实践也印证了这一点 — 没有 Trace，Observability 就是无源之水；没有 Observability，Trace 只是无人阅读的日志。两者是 Runtime 可观测性职责的不可分割两面。
+本文清晰区分了 **Trace（记录）和 Observability（分析）**：Trace 提供原始执行链路数据，Observability 在这些数据之上构建监控与告警。[langgraph-state-machine-under-the-hood](ch04/192-langgraph.md) 等框架的实践也印证了这一点 — 没有 Trace，Observability 就是无源之水；没有 Observability，Trace 只是无人阅读的日志。两者是 Runtime 可观测性职责的不可分割两面。
 
 ### 5. Runtime 是模型可替换性的工程底座,与"Token 资本"哲学异曲同工
 
-本文核心洞察 — **Runtime 把 LLM 差异封装在执行层，让业务不被任一模型锁定** — 与 [纳德拉「Token 资本」论](ch04/150-ai.md) 的"模型可替换性是主权测试"哲学在工程层面高度吻合。[Harness Engineering Framework](ch05/061-harness-engineering.md) 将 Runtime 定位为 Harness 的内脏，而 Runtime 的模型隔离能力正是 Harness 层实现"模型无关性"的底层机制。
+本文核心洞察 — **Runtime 把 LLM 差异封装在执行层，让业务不被任一模型锁定** — 与 [纳德拉「Token 资本」论](ch04/277-ai.md) 的"模型可替换性是主权测试"哲学在工程层面高度吻合。[Harness Engineering Framework](ch05/061-harness-engineering.md) 将 Runtime 定位为 Harness 的内脏，而 Runtime 的模型隔离能力正是 Harness 层实现"模型无关性"的底层机制。
 
 ## 实践启示(5 条 actionable)
 
@@ -167,29 +167,29 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - **优先用 LangGraph 做 workflow 复杂场景**: 流程分支多、状态机复杂 → LangGraph 图结构可视化
 - **优先用 OpenAI Agents SDK 做多 Agent 协作**: handoff 机制内置,省自研
 - **深度定制需求才自研 Runtime**: 工程成本 vs 灵活性 trade-off,小团队优先用框架
-- **Runtime 是模型可替换性的工程保障**: 把 LLM 差异封装在 Runtime 层,业务不被任一模型锁定 — 印证 [纳德拉「Token 资本」论](ch04/150-ai.md) 的"可替换性是主权"哲学
+- **Runtime 是模型可替换性的工程保障**: 把 LLM 差异封装在 Runtime 层,业务不被任一模型锁定 — 印证 [纳德拉「Token 资本」论](ch04/277-ai.md) 的"可替换性是主权"哲学
 
 ## 局限性 / 需关注的边界
 
 - **本文是入门视角**: 7 职责是"至少要有"清单,不是"全部要有"清单 — 真实生产 Runtime 远比 7 职责复杂
 - **3 主流框架对比浅尝辄止**: LangGraph / OpenAI SDK / 自研的 trade-off 仅 1-2 句,深度对比需各框架官方文档
-- **未涉及 prompt injection / 越权 / 隐私等高级 Guardrail**: 本文风险控制仅 1 段;深度安全参考 [阿里云安全护栏三域](ch04/150-ai.md)
+- **未涉及 prompt injection / 越权 / 隐私等高级 Guardrail**: 本文风险控制仅 1 段;深度安全参考 [阿里云安全护栏三域](ch04/277-ai.md)
 - **本文发布于 2026-06-05,早于若飞 Runtime Contract 文(2026-06-14)**: 时间上若飞受本文"Runtime 是什么"基础铺垫,后提出"Runtime Contract"上层抽象 — 形成"概念 → 协议"演化的 9 天跨度
 - **系列第 5-13 篇未发布**: 7 职责对应的 Memory / HITL / Guardrail / Trace 等深度篇未出,读者需补充
 
 ## 相关实体
 
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-runtime-7-responsibilities-secondcurve-2026.md)
-- [若飞 Fable 5 Runtime Contract](ch03/045-agent.md)
-- [阿里云安全护栏三域](ch04/150-ai.md)
+- [若飞 Fable 5 Runtime Contract](ch01/217-0.md)
+- [阿里云安全护栏三域](ch04/277-ai.md)
 - [阿里云 Agent 演化四阶段](ch03/045-agent.md)
 - [Harness Engineering Framework](ch05/061-harness-engineering.md)
 - [Agent Harness 架构设计与生产实践](ch03/045-agent.md)
 - [Google Agent Executor Runtime](ch03/045-agent.md)
-- [Anthropic Claude Managed Agents](ch04/340-anthropic-claude-managed-agents-platform-launch.md)
+- [Anthropic Claude Managed Agents](ch03/045-agent.md)
 - [Amazon Bedrock AgentCore Runtime](ch03/045-agent.md)
 - [AgentCore Harness](ch03/045-agent.md)
-- [纳德拉「Token 资本」论](ch04/150-ai.md)
+- [纳德拉「Token 资本」论](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 
 ---

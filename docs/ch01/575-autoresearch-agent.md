@@ -61,11 +61,11 @@ program.md 的权限边界设计 体现了"防止 Agent 改写自己的规则"�
 
 ## 相关实体
 
-- [OpenClaw 多 Agent 协同开发](ch11/210-openclaw.md)
+- [OpenClaw 多 Agent 协同开发](ch11/215-openclaw.md)
 - [Karpathy Agentic Engineering](ch03/045-agent.md)
-- [Karpathy Vibe Coding](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/045-agent.md)
-- [OpenClaw 多智能体团队搭建](ch11/210-openclaw.md)
+- [Karpathy Vibe Coding](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/217-0.md)
+- [OpenClaw 多智能体团队搭建](ch11/215-openclaw.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 - 
 -

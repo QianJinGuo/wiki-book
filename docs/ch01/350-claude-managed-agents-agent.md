@@ -136,13 +136,13 @@ Self-hosted sandbox 的设计更适合 worker 只返回结构化摘要和证据�
 
 ## 相关实体
 - [Claude Managed Agents Self Hosted Sandbox Enterprise](ch03/045-agent.md)
-- [Anthropic Claude Managed Agents Platform 2026](ch03/045-agent.md)
-- [Claude Managed Agents Official](ch04/479-claude-managed-agents-official.md)
-- [Claude Managed Agents](ch04/537-claude-managed-agents.md)
-- [Anthropic Pm Jess Yan Managed Agents](ch04/353-anthropic-pm-jess-yan-managed-agents.md)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/217-0.md)
+- [Claude Managed Agents Official](ch04/511-claude-managed-agents-official.md)
+- [Claude Managed Agents](ch04/474-claude-managed-agents.md)
+- [Anthropic Pm Jess Yan Managed Agents](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
-- [openai 的最强对手，离「ai windows」又近了一步](ch04/150-ai.md)
+- [openai 的最强对手，离「ai windows」又近了一步](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
 

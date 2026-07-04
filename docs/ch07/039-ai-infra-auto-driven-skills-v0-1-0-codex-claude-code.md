@@ -98,13 +98,13 @@ AI-Infra-Auto-Driven-SKILLS 的设计明确将**工程纪律编码为工作流�
 
 AI Infra 工程纪律正在变成可执行的 skill artifact——推理框架优化流程的最佳实践被编码为 Agent 工作流。
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch04/245-skill.md)
-- [Claude Code Skills Mcp Rules Source Analysis](ch07/006-claude-code-skills-mcp-rules-source-analysis.md)
-- [Skill System Design Three Way Comparison](ch04/245-skill.md)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch04/256-skill.md)
+- [Claude Code Skills Mcp Rules Source Analysis](ch04/256-skill.md)
+- [Skill System Design Three Way Comparison](ch04/256-skill.md)
 - [Openclaw Agent Loop Design Patterns](ch03/045-agent.md)
 - [Claude Code Vs Codex Context Architecture 02](ch03/075-claude-code.md)
 
-- [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)- [tliveomni vllm 适配与量化方案](ch01/890-llm.md)
+- [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)- [tliveomni vllm 适配与量化方案](ch01/606-llm.md)
 - [claude code 从 demo 到产线 · 企业 harness 工程化的 8 道关卡（黄佳/咖哥 csdn）](ch03/075-claude-code.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 

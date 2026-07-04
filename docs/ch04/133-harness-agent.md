@@ -112,33 +112,33 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 
 ## 相关实体
 - [Claude Code 可控性：软规则无法变成硬约束](ch03/075-claude-code.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/380-claude.md)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/485-claude.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
 - [AutoResearch：多 Agent 自动化软件开发](ch03/045-agent.md)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Agent Harness 架构](ch03/045-agent.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/075-claude-code.md)
 - [Agent 自我改进的六条路](ch03/045-agent.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
 - [Claude Code 设计原则与对照分析](ch03/075-claude-code.md)
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch07/006-claude-code-skills-mcp-rules-source-analysis.md)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/256-skill.md)
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](ch03/075-claude-code.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/075-claude-code.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/245-skill.md)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/256-skill.md)
 - [Claude Code 源码核心机制详解](ch03/075-claude-code.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](ch03/075-claude-code.md)
 - [Agent架构关键变化：Harness正在成为新后端](ch03/045-agent.md)
 - [Claude Code MCP Server](ch07/025-claude-code-mcp-server.md)
 
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/043-coding-agent.md)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/047-coding-agent.md)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](ch03/045-agent.md)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/150-ai.md)
+- [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/277-ai.md)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch03/045-agent.md)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](ch03/045-agent.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch03/045-agent.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch05/061-harness-engineering.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [Agent 原理、架构与工程实践](ch04/441-agent-engineering-principles-architecture-practice.md)
+- [Agent 原理、架构与工程实践](ch03/045-agent.md)
 - [为什么多数 Agent POC 无法上生产](https://github.com/QianJinGuo/wiki/blob/main/queries/why-agent-poc-fails-production.md) — POC 到生产的六大系统性鸿沟
 
 ---

@@ -107,7 +107,7 @@ PilotDeck 的路由数据揭示了一个重要趋势：复杂任务中使用混�
 
 **路由机制延伸**：第 1 来源只覆盖"按规则 + 自然语言选模型"，第 2 来源**新增一维度**——路由可以**冷启动本地模型**（VoxCPM 案例）。这一能力是 [Harness 7 层架构](ch03/075-claude-code.md) 中"环境即服务"层的具体实现：路由不只决策，更可动态拉起新资源。
 
-**OpenClaw 横向对比的反思**：两源都把 OpenClaw 定位"范式探路者而非生态建设者"，呼应 [OpenClaw 8 部分总结](ch11/210-openclaw.md) 提到的"安全/性能/可观测性短板"——PilotDeck 正是补足这些短板的后继者（隔离、记忆可控、成本）。
+**OpenClaw 横向对比的反思**：两源都把 OpenClaw 定位"范式探路者而非生态建设者"，呼应 [OpenClaw 8 部分总结](ch11/215-openclaw.md) 提到的"安全/性能/可观测性短板"——PilotDeck 正是补足这些短板的后继者（隔离、记忆可控、成本）。
 
 ### 实践启示（从 2 源综合后）
 
@@ -128,7 +128,7 @@ PilotDeck 的路由数据揭示了一个重要趋势：复杂任务中使用混�
 - → [第 1 原文存档（新智元 ASI启示录 2026-05-28）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pilotdeck-agent-os-openbmb-tsinghua.md)
 - → [第 2 原文存档（数据派THU 2026-06-09）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pilotdeck-data派thu-2026.md)
 ## 相关实体
-- [Minicpm5 1B Forgetrain Machine Heart](ch04/150-ai.md)
+- [Minicpm5 1B Forgetrain Machine Heart](ch04/277-ai.md)
 
 ---
 

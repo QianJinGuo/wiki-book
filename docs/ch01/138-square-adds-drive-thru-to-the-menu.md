@@ -24,9 +24,9 @@ Square 进入 drive-thru 赛道本质上是一次"场景补全"。Square 的核�
 
 ## 相关实体
 
-- [How Superset built the IDE for AI agents on Vercel](ch04/150-ai.md)
-- [Inngest - AI in Production: The 2026 Benchmark Report](ch01/501-inngest-ai-in-production-the-2026-benchmark-report.md)
-- [From Doer To Director: The AI Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
+- [How Superset built the IDE for AI agents on Vercel](ch04/277-ai.md)
+- [Inngest - AI in Production: The 2026 Benchmark Report](ch01/571-inngest-ai-in-production-the-2026-benchmark-report.md)
+- [From Doer To Director: The AI Mindset Shift](ch01/030-from-doer-to-director-the-ai-mindset-shift.md)
 
 ---
 

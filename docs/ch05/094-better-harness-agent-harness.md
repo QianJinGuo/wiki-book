@@ -109,7 +109,7 @@ LangChain 的大量实验揭示了一个反直觉事实：Agent 失败通常不�
 - Agent Hooks（参见 `Agent Hooks Programmable Workflow`）：生命周期可编程控制
 ## 相关实体
 - [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/061-harness-engineering.md)
-- [Agent Harness Engineering Survey 2026](ch03/045-agent.md)
+- [Agent Harness Engineering Survey 2026](ch05/061-harness-engineering.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](ch03/075-claude-code.md)
 - [Agentscope Java Harness Framework](ch03/045-agent.md)
 - [Browser Use Runtime Harness](ch05/009-harness.md)

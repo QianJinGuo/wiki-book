@@ -100,14 +100,14 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/salesforce-headless-software-losing-head-a16z.md)
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/150-ai.md)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/277-ai.md)
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](ch03/045-agent.md)
-- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](ch04/150-ai.md)
-- [foundation capital agent era six insights](ch04/175-foundation-capital-agent-era-six-insights.md)
-- [Agent 时代架构师技能指南](ch04/245-skill.md)
-- [快手首个打工人Agent](ch04/150-ai.md)
-- [from](ch04/260-from-system-of-record-to-system-of-intelligence.md)
-- [from](ch04/260-from-system-of-record-to-system-of-intelligence.md)
+- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](ch04/277-ai.md)
+- [foundation capital agent era six insights](ch04/179-foundation-capital-agent-era-six-insights.md)
+- [Agent 时代架构师技能指南](ch04/256-skill.md)
+- [快手首个打工人Agent](ch04/277-ai.md)
+- [from](ch04/264-from-system-of-record-to-system-of-intelligence.md)
+- [from](ch04/264-from-system-of-record-to-system-of-intelligence.md)
 - [meet customers where they are: agentforce contact center now](ch03/045-agent.md)
 
 ---

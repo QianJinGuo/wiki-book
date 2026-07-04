@@ -158,10 +158,10 @@ ChangeSet 是一个存在于git版本库中的，把每次变更的过程都记�
 **作者介绍**：向邦宇，在阿里工作超过10年，负责了阿里巴巴代码平台，在阿里内部建设了多个 AI Coding 工具，这些产品在阿里内部被广泛使用，同时也面向业界主导开发了一站式的，小白用户也能用 AI Development产品"搭叩"。
 
 ## 相关实体
-- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/194-tencent-vibe-coding-to-agentic-engineering-backend.md)
-- [Ai 编程的下一场架构迁移从代码检索到上下文操作](ch04/150-ai.md)
-- [Ai Era Git Version Control Agentic Coding Practices](ch04/150-ai.md)
-- [Agentmemory Source Analysis Coding Agent Local Memory](ch09/034-agentmemory.md)
+- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/196-tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [Ai 编程的下一场架构迁移从代码检索到上下文操作](ch04/277-ai.md)
+- [Ai Era Git Version Control Agentic Coding Practices](ch04/277-ai.md)
+- [Agentmemory Source Analysis Coding Agent Local Memory](ch09/047-coding-agent.md)
 - [Alphaevolve Deepmind Discovery Agent](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alibaba-aone-agentic-rd-mode-xiangbangyu.md)

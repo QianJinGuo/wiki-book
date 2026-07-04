@@ -41,7 +41,7 @@ Matteo Paz（150 万颗未知天体）、Rishab Jain（236% 蛋白质表达优�
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/chatgpt-26-future-stars.md)
 
 ## 相关实体
-- [ChatGPT 官宣 26 位未来之星，他们是：穿墙少年、街头摊贩、盲童的朋友……](ch01/673-chatgpt.md)
+- [ChatGPT 官宣 26 位未来之星，他们是：穿墙少年、街头摊贩、盲童的朋友……](ch01/987-chatgpt.md)
 
 ---
 

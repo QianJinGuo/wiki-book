@@ -82,7 +82,7 @@ mass-intelligence 概念指向一个新现象：当 AI 能力被大规模分布�
 ## 相关实体
 - [Bitter Lesson Garbage Can Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/bitter-lesson-garbage-can-mollick.md)
 - [Oneusefulthing Claude Code What Comes Next](ch03/075-claude-code.md)
-- [Openai Gdpval Real Ai Agents Threshold](ch04/150-ai.md)
+- [Openai Gdpval Real Ai Agents Threshold](ch04/277-ai.md)
 - [On Working With Wizards](ch04/207-on-working-with-wizards-ai.md)
 - [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
 

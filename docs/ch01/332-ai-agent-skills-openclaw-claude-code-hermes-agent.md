@@ -127,7 +127,7 @@ Hermes 的模型在信任方面处于中间地带——Skills 由你的 Agent �
 **定期淘汰**。Skills 库需要新陈代谢。当某个 Skill 长期未被调用，或者它描述的工作流程已经被 Agent 熟练掌握时，应该将其归档或删除。低质量的 Skills 积累会降低 Agent 的判断效率。
 ## 相关实体
 - [Openclaw Agent Loop Design Patterns](ch03/045-agent.md)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](ch11/210-openclaw.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](ch11/215-openclaw.md)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](ch03/075-claude-code.md)
 - [Claude Code Source Architecture](ch03/075-claude-code.md)
 - [Claude Code Openclaw Memory Vector Db Doubt](ch03/075-claude-code.md)

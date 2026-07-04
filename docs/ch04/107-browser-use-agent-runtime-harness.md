@@ -47,7 +47,7 @@ Contract 断言是 Browser Use 的核心概念——它用结构化的方式表�
 
 （Chrome DevTools Protocol）是 Chrome 内置的远程调试协议，允许外部程序连接控制浏览器执行以下操作：导航、点击、注入脚本、截图。Agent 通过 CDP 与浏览器对话，用截图来「看」渲染结果，实现真正的视觉感知。
 
-CDP 的核心价值在于它提供了 **Chrome 的完整控制权限**——与 [AgentBrowser](ch03/045-agent.md) 等基于 CDP 的工具不同，Browser Use 将 CDP 能力直接暴露给 Agent，使其能够自主决定验证策略。
+CDP 的核心价值在于它提供了 **Chrome 的完整控制权限**——与 [AgentBrowser](ch09/147-agent-browser-claude-code-qoderwork.md) 等基于 CDP 的工具不同，Browser Use 将 CDP 能力直接暴露给 Agent，使其能够自主决定验证策略。
 
 CDP 协议支持的关键能力：
 
