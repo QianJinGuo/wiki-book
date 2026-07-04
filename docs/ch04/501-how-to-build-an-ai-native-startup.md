@@ -50,14 +50,14 @@ Stepan Gershuni 在 cyber.fund 发布的这篇创始人指南，提出了 AI 原
 5. **创始人先用**——在会议室讲 PPT 之前，先在真实 context 下现场演示
 
 ## 相关实体
-- [Agent Harness Architecture Design Production Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture-design-production-guide.md)
-- [Schemaflow Openai Cookbook Staged Agentic Workflow](https://github.com/QianJinGuo/wiki/blob/main/entities/schemaflow-openai-cookbook-staged-agentic-workflow.md)
-- [How To Build Audio Transcription Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-build-audio-transcription-agent.md)
-- [Gaode Ai Native 7X24 Pipeline Self Healing](https://github.com/QianJinGuo/wiki/blob/main/entities/gaode-ai-native-7x24-pipeline-self-healing.md)
-- [Harness Engineering Comprehensive Guide Conardli](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md)
+- [Agent Harness Architecture Design Production Guide](ch03/045-agent.md)
+- [Schemaflow Openai Cookbook Staged Agentic Workflow](ch04/277-ai.md)
+- [How To Build Audio Transcription Agent](ch04/432-how-to-build-audio-transcription-agent.md)
+- [Gaode Ai Native 7X24 Pipeline Self Healing](ch04/277-ai.md)
+- [Harness Engineering Comprehensive Guide Conardli](ch05/061-harness-engineering.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-startup-cyberfund-2026.md)
-- [how frontier teams are reinventing ai-native development](https://github.com/QianJinGuo/wiki/blob/main/entities/how-frontier-teams-are-reinventing-ai-native-development.md)
+- [how frontier teams are reinventing ai-native development](ch01/346-how-frontier-teams-are-reinventing-ai-native-development.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

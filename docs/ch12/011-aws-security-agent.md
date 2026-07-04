@@ -350,11 +350,11 @@ AWS Security Agent 的 Cross-Account VPC 能力解决了金融科技公司长期
 **合规报告能力选型**：安全工具的选型应将"可交付合规报告"作为核心评估维度。对于 PCI DSS、SOC 2、ISO 27001 等认证要求下的支付企业，工具输出的漏洞报告必须能够直接满足内外部审计的结构化要求，而非仅提供技术性漏洞列表 。
 
 ## 相关实体
-- [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](https://github.com/QianJinGuo/wiki/blob/main/entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
+- [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](ch04/277-ai.md)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/030-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch04/277-ai.md)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/253-bedrock.md)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch11/202-amazon-quick.md)
 
 ---
 

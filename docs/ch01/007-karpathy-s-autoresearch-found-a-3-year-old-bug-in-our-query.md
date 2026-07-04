@@ -85,11 +85,11 @@ PostHog 正在将 hackathon 手工喂入模式升级为全自动 pipeline：① 
 `toTimeZone()` 包裹被团队习惯化而失去质疑动机，最终靠 AI agent 才重见天日。实践启示：组织应建立机制，用 AI 定期重新审视历史决策——特别是那些被标记为"本来就应该这样"的核心基础设施代码。这类代码的隐性技术债往往比新引入的代码风险更高，因为没有人在寻找它们。Autoresearch 框架的价值不仅在于单次 hackathon 优化，更在于将其制度化为持续的质量保障基础设施。
 
 ## 相关实体
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki/blob/main/entities/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
-- [Clinereleasesopen Sourceagentruntimesdk](https://github.com/QianJinGuo/wiki/blob/main/entities/clinereleasesopen-sourceagentruntimesdk.md)
-- [Running An Ai Native Engineering Org](https://github.com/QianJinGuo/wiki/blob/main/entities/running-an-ai-native-engineering-org.md)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/277-ai.md)
+- [Clinereleasesopen Sourceagentruntimesdk](ch03/045-agent.md)
+- [Running An Ai Native Engineering Org](ch01/045-running-an-ai-native-engineering-org.md)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
-- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
+- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/149-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/https-posthog-com-blog-karpathy-autoresearch-query-engine-bug.md)
 

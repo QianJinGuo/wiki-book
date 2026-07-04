@@ -231,16 +231,16 @@ Cortex Sense 从 Snowflake 已有数据和活动中构建信号，自动增强 A
 
 ## 相关实体
 
-- [Agent Security Three Step Sequence Harness Governance Identity Crewai](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-security-three-step-sequence-harness-governance-identity-crewai.md)（Agent Identity 同源思路 — 治理协议层）
-- [Agentscope Builder Enterprise Self Evolving Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-builder-enterprise-self-evolving-agent-harness.md)（企业级 Agent Harness 同主题）
-- [Asana Agentic Work Management Platform Lettertwo](https://github.com/QianJinGuo/wiki/blob/main/entities/asana-agentic-work-management-platform-lettertwo.md)（Asana — 另一个企业级 Agent 平台视角）
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)（AWS Bedrock AgentCore — 对比平台）
-- [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)（Anthropic Managed Agents — 另一家厂商视角）
-- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md)（Spec-as-AIOS — 治理即架构同思路）
-- [Taobao Ai Sre Digital Employee Code Quality Governance](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-ai-sre-digital-employee-code-quality-governance.md)（数字员工治理 — 行业对照）
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md)（AgentOps — 智能体可观测性对照）
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security.md)（企业 Agent 安全风险同主题）
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)（Amazon Quick — 另一家企业数据分析平台）
+- [Agent Security Three Step Sequence Harness Governance Identity Crewai](ch04/277-ai.md)（Agent Identity 同源思路 — 治理协议层）
+- [Agentscope Builder Enterprise Self Evolving Agent Harness](ch03/045-agent.md)（企业级 Agent Harness 同主题）
+- [Asana Agentic Work Management Platform Lettertwo](ch03/045-agent.md)（Asana — 另一个企业级 Agent 平台视角）
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)（AWS Bedrock AgentCore — 对比平台）
+- [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch03/045-agent.md)（Anthropic Managed Agents — 另一家厂商视角）
+- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch04/277-ai.md)（Spec-as-AIOS — 治理即架构同思路）
+- [Taobao Ai Sre Digital Employee Code Quality Governance](ch04/277-ai.md)（数字员工治理 — 行业对照）
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/277-ai.md)（AgentOps — 智能体可观测性对照）
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/277-ai.md)（企业 Agent 安全风险同主题）
+- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](ch04/277-ai.md)（Amazon Quick — 另一家企业数据分析平台）
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/snowflake-agentic-enterprise-summit-2026-infoq.md)
 

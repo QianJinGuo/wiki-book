@@ -80,9 +80,9 @@ NLAs（本文）— 激活 → 文字闭环，直接输出人类可读的解释
 ```
 
 ## 相关概念
-- [Anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic.md) — 研究机构，NLAs 是其可解释性研究的最新成果
+- [Anthropic](ch01/854-anthropic.md) — 研究机构，NLAs 是其可解释性研究的最新成果
 - [Mechanistic Interpretability](https://github.com/QianJinGuo/wiki/blob/main/concepts/mechanistic-interpretability.md) — 机械可解释性方法论，NLAs 是该领域的前沿工具
-- [Sparse Autoencoders](https://github.com/QianJinGuo/wiki/blob/main/entities/sparse-autoencoders.md) — 前代可解释性方法，NLAs 在其基础上发展出文字翻译能力
+- [Sparse Autoencoders](ch01/1104-sparse-autoencoders.md) — 前代可解释性方法，NLAs 在其基础上发展出文字翻译能力
 - [Activation Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/activation-engineering.md) — 激活工程方法体系，NLAs 提供了读取和解释激活的新手段
 - [原文存档（中文）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-nla-natural-language-autoencoders-interpretability.md)
 ---
@@ -115,11 +115,11 @@ NLAs 擅长读取"整体语义意图"，SAE 擅长定位具体激活特征。两
 NLAs 当前的高成本限制了其作为实时监控工具的可行性，但可以规划分阶段落地路径：第一阶段（当前）用于离线安全审计和模型发布前评估；第二阶段（模型压缩或硬件进步后）用于高风险场景的准实时监控；第三阶段才考虑面向用户的透明性工具。切忌在第一阶段就试图将 NLAs 内嵌到面向消费者的产品中。 
 
 ## 相关实体
-- [Natural Language Autoencoders (Anthropic)](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-natural-language-autoencoders.md)
+- [Natural Language Autoencoders (Anthropic)](ch01/854-anthropic.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-natural-language-autoencoders.md)
 
-- [QuickSight Dataset QA：NL直查S3 Iceberg](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-quicksight-dataset-qa-natural-language.md)
+- [QuickSight Dataset QA：NL直查S3 Iceberg](ch11/165-aws-quicksight-dataset-qa-natural-language.md)
 
 ---
 

@@ -11,10 +11,10 @@
 Browser Harness 是一个自愈型浏览器 Agent 框架，基于 Chrome DevTools Protocol (CDP) 直连浏览器，核心卖点是去框架化薄桥接 + 自愈（self-healing）机制。
 
 ## 相关实体
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
-- [Harness Engineering 第三代工程范式](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-第三代工程范式.md)
-- [Cdp Bridge Mcp Real Browser Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/cdp-bridge-mcp-real-browser-agent.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch01/217-0.md)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch01/217-0.md)
+- [Harness Engineering 第三代工程范式](ch05/061-harness-engineering.md)
+- [Cdp Bridge Mcp Real Browser Agent](ch03/045-agent.md)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/browser-harness-github.md)

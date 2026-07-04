@@ -19,11 +19,11 @@ Anthropic宣布与SpaceX达成合作协议，将大幅提升算力储备。
 在国际布局方面，Anthropic的企业客户尤其是金融、医疗和政府等受监管行业，对本地基础设施的需求日益增加，以满足合规和数据驻留要求。与亚马逊的合作中，已包含在亚洲和欧洲新增推理算力的安排。
 
 ## 相关实体
-- [Claude Opus 47](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-47.md)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](https://github.com/QianJinGuo/wiki/blob/main/entities/www.infoworld-4171274-anthropic-puts-claude-agents-on-a-meter-across-its-subscri.md)
-- [Anthropic Claude Managed Agents Platform 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
-- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-enterprise-deployment-anthropic-aihanshijì.md)
+- [Claude Opus 47](ch01/485-claude.md)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch03/045-agent.md)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/217-0.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/075-claude-code.md)
+- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/突发anthropic拿下马斯克colossus-1全部算力claude要放开用了.md)
 

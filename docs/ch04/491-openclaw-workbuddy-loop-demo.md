@@ -24,11 +24,11 @@
 
 本文的价值在于提供了一个务实的 Agent 市场冷热判断框架。与市面上大量技术深潜文章不同，叶小钗从"有人付钱才是真有用"的朴素标准出发，区分了"Demo 火"和"生产火"的差异。
 
-其四象限模型（容错空间 × 行动复杂度）和 Agent 成功三前提是对之前多个 Loop Engineering 话题（如 [Loop Engineering Feedback Control System](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-feedback-control-system.md)、[Loop Engineering Concept Analysis Feixue Ali 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-concept-analysis-feixue-ali-2026.md)、[Loop Engineering Langchain Four Layer Loopcraft](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-langchain-four-layer-loopcraft.md)）的有益补充——它们提供了工程视角的 Why 和 When，本文补充了市场视角的 Who 和 Where。
+其四象限模型（容错空间 × 行动复杂度）和 Agent 成功三前提是对之前多个 Loop Engineering 话题（如 [Loop Engineering Feedback Control System](ch05/006-loop-engineering.md)、[Loop Engineering Concept Analysis Feixue Ali 2026](ch01/217-0.md)、[Loop Engineering Langchain Four Layer Loopcraft](ch04/277-ai.md)）的有益补充——它们提供了工程视角的 Why 和 When，本文补充了市场视角的 Who 和 Where。
 
-文章也巧妙回应了"为什么跑出来的是 Coding Agent 和 AI 客服"这个问题：因为它们天然存在于高度结构化的数字环境，且容易做到可观测性。这与 [Agent Evolution Four Stages Six Dimensions Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md) 中论述的 Agent 演进阶段互为印证，也与 [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md) 中的 Harness 工程框架一脉相承。
+文章也巧妙回应了"为什么跑出来的是 Coding Agent 和 AI 客服"这个问题：因为它们天然存在于高度结构化的数字环境，且容易做到可观测性。这与 [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/045-agent.md) 中论述的 Agent 演进阶段互为印证，也与 [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](ch04/277-ai.md) 中的 Harness 工程框架一脉相承。
 
-文章中提到的"Token 换架构"观点——Agent 用更高的计算、效率和稳定性成本换取更强的场景泛化能力——是对 Harness 工程核心权衡的精准表述，与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md) 中描述的工程框架形成互补。
+文章中提到的"Token 换架构"观点——Agent 用更高的计算、效率和稳定性成本换取更强的场景泛化能力——是对 Harness 工程核心权衡的精准表述，与 [Harness Engineering](ch05/061-harness-engineering.md) 中描述的工程框架形成互补。
 
 ## 实践启示
 
@@ -40,14 +40,14 @@
 
 ## 相关实体
 
-- [Loop Engineering Feedback Control System](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-feedback-control-system.md)
-- [Loop Engineering Concept Analysis Feixue Ali 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-concept-analysis-feixue-ali-2026.md)
-- [Loop Engineering Langchain Four Layer Loopcraft](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-langchain-four-layer-loopcraft.md)
-- [Loop Engineering Deep Dive Mengzhaosixi 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-deep-dive-mengzhaoSixi-2026.md)
-- [Agent Evolution Four Stages Six Dimensions Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
-- [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/gateway-architecture-openclaw-claude-hermes-comparison.md)
+- [Loop Engineering Feedback Control System](ch05/006-loop-engineering.md)
+- [Loop Engineering Concept Analysis Feixue Ali 2026](ch01/217-0.md)
+- [Loop Engineering Langchain Four Layer Loopcraft](ch04/277-ai.md)
+- [Loop Engineering Deep Dive Mengzhaosixi 2026](ch01/217-0.md)
+- [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/045-agent.md)
+- [Harness Engineering](ch05/061-harness-engineering.md)
+- [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](ch04/277-ai.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](ch11/215-openclaw.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-workbuddy-loop-engineering-who-is-hot-useful-demo.md)
 

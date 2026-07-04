@@ -201,13 +201,13 @@ Emily Sands（Stripe 高管）2026-06-04 发表于 X（45.8K 次浏览，整理�
 
 ## 相关主题
 
-- AI 变现 / 定价 — [Aws Generative Ai Model Agility Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-generative-ai-model-agility-framework.md) / [Agent Skills Comprehensive Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skills-comprehensive-survey.md)
-- Agent 平台化 — [Baixing Ontoz Enterprise Ontology Multi Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/baixing-ontoz-enterprise-ontology-multi-agent.md) / [Kimi Work Codex Vibe Working Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)
-- Claude Code / Vibe Coding — [Claude Code Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture.md)
-- Token 盗窃防护 — [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md) / Vercel Token Theft 防护
-- A2A 智能体经济 — [Baixing Ontoz Enterprise Ontology Multi Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/baixing-ontoz-enterprise-ontology-multi-agent.md)（长期布局）
-- 企业 AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md)
-- 稳定币 / 加密 — [Inngest Ai And Backend Workflows Orchestrated At Any Scale](https://github.com/QianJinGuo/wiki/blob/main/entities/inngest-ai-and-backend-workflows-orchestrated-at-any-scale.md)
+- AI 变现 / 定价 — [Aws Generative Ai Model Agility Framework](ch11/143-aws-generative-ai-model-agility-framework.md) / [Agent Skills Comprehensive Survey](ch04/256-skill.md)
+- Agent 平台化 — [Baixing Ontoz Enterprise Ontology Multi Agent](ch04/277-ai.md) / [Kimi Work Codex Vibe Working Paradigm Shift](ch01/542-codex.md)
+- Claude Code / Vibe Coding — [Claude Code Architecture](ch03/075-claude-code.md)
+- Token 盗窃防护 — [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](ch01/217-0.md) / Vercel Token Theft 防护
+- A2A 智能体经济 — [Baixing Ontoz Enterprise Ontology Multi Agent](ch04/277-ai.md)（长期布局）
+- 企业 AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/045-agent.md)
+- 稳定币 / 加密 — [Inngest Ai And Backend Workflows Orchestrated At Any Scale](ch04/277-ai.md)
 
 ---
 

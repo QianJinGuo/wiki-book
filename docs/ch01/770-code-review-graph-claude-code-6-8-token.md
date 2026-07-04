@@ -11,11 +11,11 @@
 code-review-graph 是一个本地知识图谱工具，专为 Claude Code 等 AI 编码助手设计。
 
 ## 相关实体
-- [Code Review Graph Upper Intermediate Guide 20260513](https://github.com/QianJinGuo/wiki/blob/main/entities/code-review-graph-upper-intermediate-guide-20260513.md)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
-- [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
-- [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-hackathon-winners-2026.md)
-- [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
+- [Code Review Graph Upper Intermediate Guide 20260513](ch01/217-0.md)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](ch03/075-claude-code.md)
+- [Claude Code Self Repair Hooks Memory Config](ch04/277-ai.md)
+- [Claude Code Hackathon Winners 2026](ch03/075-claude-code.md)
+- [Claude Code Harness Deep Understanding](ch01/484-claude-code-harness-deep-understanding.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-review-graph.md)
 

@@ -11,11 +11,11 @@
 | 低代码 Agent | 先把东西跑起来 | 速度、协作、可视化 |
 
 ## 相关实体
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
-- [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
-- [Openclaw Comprehensive Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-comprehensive-guide.md)
-- [Ai Context Layer Kgc 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-context-layer-kgc-2026.md)
-- [Skillsieve Agent Skill Security](https://github.com/QianJinGuo/wiki/blob/main/entities/skillsieve-agent-skill-security.md)
+- [Harness Engineering Framework](ch05/061-harness-engineering.md)
+- [Agentscope Java Harness Framework Enterprise Distributed](ch03/045-agent.md)
+- [Openclaw Comprehensive Guide](ch11/215-openclaw.md)
+- [Ai Context Layer Kgc 2026](ch04/277-ai.md)
+- [Skillsieve Agent Skill Security](ch04/256-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lowcode-framework-custom-agent-decision-framework-hello-agents.md)
 

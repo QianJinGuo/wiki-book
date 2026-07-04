@@ -18,12 +18,12 @@ Claude Fable 5 与 AI 安全寓言新篇：通过寓言式叙事探讨 AI 安全
 
 ### 关联实体
 
-- [Nathan Lambert Claude Mythos Open Weights](https://github.com/QianJinGuo/wiki/blob/main/entities/nathan-lambert-claude-mythos-open-weights.md)
-- [Introducing Claude Platform On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-platform-on-aws.md)
-- [Chinese Ai Lab Insights Nathan](https://github.com/QianJinGuo/wiki/blob/main/entities/chinese-ai-lab-insights-nathan.md)
-- [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-hackathon-winners-2026.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
+- [Nathan Lambert Claude Mythos Open Weights](ch01/471-nathan-lambert.md)
+- [Introducing Claude Platform On Aws](ch01/511-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
+- [Chinese Ai Lab Insights Nathan](ch04/277-ai.md)
+- [Claude Code Hackathon Winners 2026](ch03/075-claude-code.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](ch03/075-claude-code.md)
+- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 
 ## 实践启示
 

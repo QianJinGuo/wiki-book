@@ -46,12 +46,12 @@ SIMD intrinsics 和内联汇编是迁移成本最高的区域。建议用 `grep 
 迁移完成后，建议将 `migrate_ease_scan` 集成到 CI/CD 流程中，作为每次代码提交的架构兼容性检查。任何新引入的 x86 特定代码（如新增的 SIMD 优化）都会被自动标记，防止架构耦合度在后续开发中再次积累。这是将"一次性迁移"转化为"持续架构治理"的关键步骤。
 
 ## 相关实体
-- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md)
-- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/using-kiro-cli-agent-client-protocol-build-ai-chat.md)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/building-enterprise-agentic-ai-with-kiro-on-aws.md)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-network-claude-code-kiro-cli-implement-aws-ipsec-vpn.md)
-- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/blog-03-kiro-ai-cdk-development.md)
-- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md)
+- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch04/277-ai.md)
+- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](ch04/277-ai.md)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](ch04/277-ai.md)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch04/277-ai.md)
+- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](ch04/277-ai.md)
+- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](ch04/256-skill.md)
 
 ---
 

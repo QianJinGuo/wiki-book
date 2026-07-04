@@ -100,11 +100,11 @@ AlphaEvolve和FunSearch的模式是把LLM嵌入到算法搜索的内层循环中
 3. **理解"5-10年能力背书"的含义**：Vlad说的"无法绕过5-10年能力背书"，不是说必须在学校待10年，而是说**你必须有一个可信的能力证明路径**。这可以是paper、可以是开源项目、可以是成功的创业经历。关键是：让你的能力有一个可以被验证的形式。
 
 ## 相关实体
-- [P Ic Work Is The New Career Flex](https://github.com/QianJinGuo/wiki/blob/main/entities/p-ic-work-is-the-new-career-flex.md)
+- [P Ic Work Is The New Career Flex](ch03/009-ic-work-is-the-new-career-flex.md)
 - [如何谈合作找工作](https://github.com/QianJinGuo/wiki/blob/main/entities/如何谈合作找工作.md)
 - [如何谈合作找工作](https://github.com/QianJinGuo/wiki/blob/main/entities/如何谈合作找工作.md)
 - [直播预约 数据引擎具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
-- [吴恩达2026新课上线3小时包教包会零代码小白也能成为Ai超级玩家](https://github.com/QianJinGuo/wiki/blob/main/entities/吴恩达2026新课上线3小时包教包会零代码小白也能成为ai超级玩家.md)
+- [吴恩达2026新课上线3小时包教包会零代码小白也能成为Ai超级玩家](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-to-land-frontier-lab-job-vlad-feinberg.md)
 

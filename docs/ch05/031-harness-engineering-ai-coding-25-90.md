@@ -58,7 +58,7 @@
 - 原则：**"Waiting is expensive, fixing is cheap"** —— 宁可让 Agent 多跑一轮验证
 
 ## 子页面
-- [四根支柱与四要素架构](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-90-percent-pillars.md) — 四根支柱详解、四要素架构、关键经验、效果对比
+- [四根支柱与四要素架构](ch05/061-harness-engineering.md) — 四根支柱详解、四要素架构、关键经验、效果对比
 
 ## 参考资料
 - [Anthropic: Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
@@ -68,17 +68,17 @@
 
 ## 相关页面
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 六层结构与核心方程
-- [Cursor Harness 复盘](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-harness-model-production-floor.md) — 模型决定上限，Harness 决定生产下限
-- [字节跳动 TRAE Harness Engineering 指南](https://github.com/QianJinGuo/wiki/blob/main/entities/bytedance-trae-harness-engineering-guide.md) — R.E.S.T 框架/PPAF 循环/上下文 Token 流水线
+- [Cursor Harness 复盘](ch01/351-cursor-harness-model-production-floor.md) — 模型决定上限，Harness 决定生产下限
+- [字节跳动 TRAE Harness Engineering 指南](ch05/061-harness-engineering.md) — R.E.S.T 框架/PPAF 循环/上下文 Token 流水线
 
 ## 相关实体
 
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md)
-- [Harness Engineering实践，做了一个平台让AI一晚上自动评测和优化你的系统](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](https://github.com/QianJinGuo/wiki/blob/main/entities/harness不是目的知识才是护城河-一个ai工程交付团队的知识沉淀实践.md)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/047-coding-agent.md)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch04/277-ai.md)
+- [Harness Engineering实践，做了一个平台让AI一晚上自动评测和优化你的系统](ch04/277-ai.md)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch04/277-ai.md)
 - [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
-- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-reliability-engineering-skillify-continuous-improvement.md)
+- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/256-skill.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 深度分析

@@ -14,11 +14,11 @@
 - Prompt injection 攻击面大：不可信代码和凭证在同一环境
 
 ## 相关实体
-- [Anthropic Pm Jess Yan Managed Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-pm-jess-yan-managed-agents.md)
-- [Anthropic Claude Managed Agents Platform 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
-- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [Anthropic Demystifying Evals For Ai Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-demystifying-evals-for-ai-agents.md)
+- [Anthropic Pm Jess Yan Managed Agents](ch03/045-agent.md)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/217-0.md)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch03/045-agent.md)
+- [From Prompt To Harness Claude Official](ch05/009-harness.md)
+- [Anthropic Demystifying Evals For Ai Agents](ch04/423-anthropic-demystifying-evals-for-ai-agents.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-managed-agents-scaling.md)
 

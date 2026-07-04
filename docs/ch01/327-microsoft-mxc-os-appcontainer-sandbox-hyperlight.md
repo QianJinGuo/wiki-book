@@ -149,8 +149,8 @@ Hyperlight 让 CPython 直接 library call 进 Unikraft micro-VM，每次 rewind
 
 - [Microsoft RAMPART/Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — 同期微软开源的 agent 红队 + 可观测性栈
 - **Cloud Agent Infrastructure** — 云端 agent state/凭据隔离
-- [CrewAI Agent Security 三步防护](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-security-three-step-sequence-harness-governance-identity-crewai.md) — 应用层 guardrail 视角
-- [AI Tool Poisoning 调查](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security.md) — agent 工具被污染的攻击面
+- [CrewAI Agent Security 三步防护](ch04/277-ai.md) — 应用层 guardrail 视角
+- [AI Tool Poisoning 调查](ch04/277-ai.md) — agent 工具被污染的攻击面
 - **Harness Engineering** — 隔离是 harness 的关键支柱之一
 
 ---

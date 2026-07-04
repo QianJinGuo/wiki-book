@@ -95,10 +95,10 @@ Mollick 的核心判断：我们正在逼近一个临界点——AI 生成的图
 
 ## 相关实体
 
-- [Karpathy: Vibe Coding to Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [OLMo Hybrid LLM Architectures](https://github.com/QianJinGuo/wiki/blob/main/entities/olmo-hybrid-and-future-llm-architectures.md)
+- [Karpathy: Vibe Coding to Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/217-0.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+- [OLMo Hybrid LLM Architectures](ch01/487-olmo-hybrid-and-future-llm-architectures.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-recent-history-of-ai-in-32-otters.md)

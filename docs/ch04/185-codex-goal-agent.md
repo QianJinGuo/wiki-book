@@ -112,7 +112,7 @@ Codex `/goal` 的实现揭示了一个深刻转变：Agent 系统设计正在从
 这对长期任务至关重要：Agent 可能因为合理原因没做完（外部依赖、数据问题、需求变更），这时候最重要的输出不是"失败了"，而是"做到了哪、卡在哪、下一步是什么"。
 
 ## 相关链接
-- [Codex Goal Agent Runtime](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-goal-agent-runtime.md)
+- [Codex Goal Agent Runtime](ch09/046-codex-goal.md)
 
 ## 实践启示
 ### 1. 给每个长期任务配备"状态记录"机制

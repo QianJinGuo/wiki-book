@@ -285,12 +285,12 @@ Canvas LMS 攻击影响全球数百所大学，凸显了教育机构在网络安
 2. **了解暗网风险的局限性** — 虽然 Tor 提供了匿名性，但它也是欺诈者和攻击者的避风港，对任何暗网内容的信任都应保持谨慎。
 
 ## 相关实体
-- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](https://github.com/QianJinGuo/wiki/blob/main/entities/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
+- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](ch04/277-ai.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/277-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](https://github.com/QianJinGuo/wiki/blob/main/entities/www-wiz-io-mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised.md)
-- [a route to root in a 4g industrial router](https://github.com/QianJinGuo/wiki/blob/main/entities/tantosec-com-blog-2026-04-route-to-root-in-4g-industrial-router.md)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/277-ai.md)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/277-ai.md)
+- [a route to root in a 4g industrial router](ch01/217-0.md)
 
 ---
 

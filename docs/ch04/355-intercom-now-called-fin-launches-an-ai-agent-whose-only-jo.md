@@ -8,10 +8,10 @@
 - 评分：v=7 × c=9 = 63
 - 来源：venturebeat
 ## 相关实体
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](https://github.com/QianJinGuo/wiki/blob/main/entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs 1](https://github.com/QianJinGuo/wiki/blob/main/entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs-1.md)
-- [The 1 Ai Agent For Financial Services Fin](https://github.com/QianJinGuo/wiki/blob/main/entities/the-1-ai-agent-for-financial-services-fin.md)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/549-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch03/045-agent.md)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs 1](ch04/277-ai.md)
+- [The 1 Ai Agent For Financial Services Fin](ch04/532-the-1-ai-agent-for-financial-services-fin.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md)
 

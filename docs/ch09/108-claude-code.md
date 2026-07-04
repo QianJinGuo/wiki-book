@@ -13,11 +13,11 @@
 - `rewind`：回退到之前的节点，精细化回退而非全盘重开）
 
 ## 相关实体
-- [Claude Code Openclaw Usage Ettin](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-usage-ettin.md)
-- [Obsidian Claude Code Integration Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/obsidian-claude-code-integration-guide.md)
-- [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
+- [Claude Code Openclaw Usage Ettin](ch09/033-claude-code-openclaw-usage-ettin.md)
+- [Obsidian Claude Code Integration Guide](ch09/112-obsidian-claude-code-integration-guide.md)
+- [Claude Code Self Repair Hooks Memory Config](ch04/277-ai.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/075-claude-code.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-commands-usage-guide.md)
 

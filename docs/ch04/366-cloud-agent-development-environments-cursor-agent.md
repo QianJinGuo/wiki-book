@@ -79,11 +79,11 @@ Dockerfile 即代码的环境配置带来了几个关键工程优势：
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md) — Claude Code 的 Agent 执行环境
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Agentic Engineering 的工程实践
+- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md) — Claude Code 的 Agent 执行环境
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md) — Agentic Engineering 的工程实践
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md) — 多 Agent 系统的环境隔离
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 中的环境管理
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md) — 云端 Agent 训练环境
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/988-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md) — 云端 Agent 训练环境
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

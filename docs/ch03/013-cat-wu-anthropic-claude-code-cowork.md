@@ -20,30 +20,30 @@
 - **Cowork**：非代码产出（文档/邮件/PPT/Slack）
 
 ## 与本文相关
-- [Claude Code Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-engineering.md) — Claude Code工程设计
-- [Claude Code Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md) — Claude Code Prompt/Harness分析
-- [Hermes Agent Deep Dive](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-deep-dive.md) — Anthropic的Self-Evolution对照
+- [Claude Code Agent Engineering](ch03/075-claude-code.md) — Claude Code工程设计
+- [Claude Code Prompt Context Harness](ch03/075-claude-code.md) — Claude Code Prompt/Harness分析
+- [Hermes Agent Deep Dive](ch03/045-agent.md) — Anthropic的Self-Evolution对照
 -  — 详细访谈内容（raw）
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-12-rules-karpathy-extension.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-20000-char-source-analysis.md)
-- [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-subagent-context-hygiene.md)
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/075-claude-code.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/277-ai.md)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/075-claude-code.md)
+- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
+- [Claude Code Subagent 上下文卫生](ch03/075-claude-code.md)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/256-skill.md)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
-- [claude-code-agent-view](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-view.md)
-- [Claude Opus 4.7 发布分析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-4-7-launch.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-tool-count-trap.md)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-ai-native-startup-handbook.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-发布官方报告承认存在-3-处质量退化问题.md)
+- [claude-code-agent-view](ch09/001-claude-code-agent-view.md)
+- [Claude Opus 4.7 发布分析](ch01/817-claude-opus-4-7.md)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/256-skill.md)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/277-ai.md)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/277-ai.md)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/075-claude-code.md)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/485-claude.md)
 
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
-- [Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-prompt-caching-claude-code.md)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/075-claude-code.md)
+- [Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](ch01/303-anthropic-prompt-caching-claude-code.md)
 
 ## 深度分析
 ### 使命驱动 vs 流程驱动：Anthropic 的双重护城河

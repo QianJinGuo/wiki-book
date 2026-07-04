@@ -9,10 +9,10 @@
 ## 相关实体
 - AI Gateway production index
 - 吴恩达2026新课上线！3小时包教包会，零代码小白也能成为AI超级玩家
-- [很多企业做完 AI PoC，为什么还是上不了生产](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-poc-why-fail-to-production.md)
-- [Chime Turns a Profit as Members Hit 10.2 Million](https://github.com/QianJinGuo/wiki/blob/main/entities/chime-earnings-q1-2026-ai-upmarket.md)
+- [很多企业做完 AI PoC，为什么还是上不了生产](ch04/277-ai.md)
+- [Chime Turns a Profit as Members Hit 10.2 Million](ch04/277-ai.md)
 
-- [AI Gateway production index](https://github.com/QianJinGuo/wiki/blob/main/entities/aigatewayproductionindex.md)
+- [AI Gateway production index](ch04/277-ai.md)
 
 ## 深度分析
 Inngest 2026 报告的核心发现可以用一个矛盾概括：**AI 生产系统的信心与规模成反比**。19% 的团队对 2-3 倍扩展有信心，而 500+ 工程师组织这一比例为 0%——这并非因为大型组织技术更差，而是因为复杂性随规模非线性增长。

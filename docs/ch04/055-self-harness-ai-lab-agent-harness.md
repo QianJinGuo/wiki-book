@@ -22,7 +22,7 @@
 
 Self-Harness 的根本性差异化：**不依赖更强外部模型，也不靠人类逐行改配置**。Agent 在"当前 Harness 约束下"用"自己的失败证据"提出"有界修改"——本质上是 Agent 在给自己写"操作手册"。
 
-这与 [L6 Meta-Harness 编排自优化](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md) 同属一脉，但**Self-Harness 走得更远**——它把"Big Harness > Big Model"的 thesis 推到了**单模型自举**的极端：哪怕没有更强模型，固定权重的模型也能通过 Harness 自进化获得显著提升。
+这与 [L6 Meta-Harness 编排自优化](ch03/045-agent.md) 同属一脉，但**Self-Harness 走得更远**——它把"Big Harness > Big Model"的 thesis 推到了**单模型自举**的极端：哪怕没有更强模型，固定权重的模型也能通过 Harness 自进化获得显著提升。
 
 ## Harness 形式化定义
 
@@ -110,7 +110,7 @@ Proposer 还会过滤"不可修复"的簇——纯能力上限、任务特异性
 | Qwen3.5-35B-A3B | 4×NVIDIA H200 本地 SGLang 部署 | 开源 MoE |
 | GLM-5 | OpenRouter | 闭源 |
 
-**初始 Harness**：基于 [DeepAgent](https://github.com/QianJinGuo/wiki/blob/main/entities/tmic-ai-xiaoxin-deepagent-architecture-evolution.md) SDK，刻意保持极简（默认系统 Prompt + 基础文件读写编辑 + Shell 工具）。Self-Harness 只能修改声明好的 Harness 配置接口（指令、工具策略、验证引导、运行时策略、子 Agent、Skill 等），模型、解码、工具集、评测环境、评估器全部锁定。
+**初始 Harness**：基于 [DeepAgent](ch04/277-ai.md) SDK，刻意保持极简（默认系统 Prompt + 基础文件读写编辑 + Shell 工具）。Self-Harness 只能修改声明好的 Harness 配置接口（指令、工具策略、验证引导、运行时策略、子 Agent、Skill 等），模型、解码、工具集、评测环境、评估器全部锁定。
 
 ## 主结果：三个反直觉细节
 
@@ -183,7 +183,7 @@ Self-Harness 真实运行更像**分支搜索**，会有平台期和回撤。绿
 
 ### 1. Self-Harness 与 L6 Meta-Harness 的关系
 
-[L6 Meta-Harness 编排自优化](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md) 是 [Agent 自我改进六层模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) 的最顶层，强调"Big Harness > Big Model"。Stanford 的 Meta-Harness 用 **Claude Code + Opus 4.6** 迭代优化 Harness（强模型改弱模型），7 轮迭代把文本分类推到比 ACE 高 7.7 个百分点。
+[L6 Meta-Harness 编排自优化](ch03/045-agent.md) 是 [Agent 自我改进六层模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) 的最顶层，强调"Big Harness > Big Model"。Stanford 的 Meta-Harness 用 **Claude Code + Opus 4.6** 迭代优化 Harness（强模型改弱模型），7 轮迭代把文本分类推到比 ACE 高 7.7 个百分点。
 
 Self-Harness 是**同模型自举**版本——把"需要更强模型"这个外部依赖彻底拿掉。这条路线走通后有几个深远含义：
 
@@ -224,7 +224,7 @@ Self-Harness 的接受门 **接受 ⟺ (Δa ≥ 0 AND Δb ≥ 0) AND (Δa > 0 OR
 | 方向 | 代表 | 改进对象 | Self-Harness 差异 |
 |------|------|---------|------------------|
 | 上下文/记忆自适应 | [Reflexion](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md), ACE | 回复策略、上下文 | 改**声明式 Harness 状态** |
-| 外部 Agent 设计搜索 | [ADAS](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md), [Meta-Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md) | Harness 代码空间 | **无更强外部优化器** |
+| 外部 Agent 设计搜索 | [ADAS](ch03/045-agent.md), [Meta-Harness](ch03/045-agent.md) | Harness 代码空间 | **无更强外部优化器** |
 | 开放 ended 自进化 | AI Scientist, DGM | 算法/能力扩展 | **有界编辑 + 固定基准** |
 
 Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harness 变更都记录修改表面、split 结果、接受/拒绝决策，形成可追溯的 lineage。这对工程团队意味着——**Harness 可以像代码一样走 PR + 回归测试流程**，告别纯靠手感调 Prompt 的黑盒时代。
@@ -270,21 +270,21 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 
 ## 与现有实体的互补关系
 
-- [Agent 自我改进六条路](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md) — L6 Meta-Harness 编排自优化的"同模型自举"实现
-- [Agent Harness 工程学调研 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md) — Self-Harness 是该领域的最新论文
-- [Agent Harness 工程学调研 etcvlovg Taxonomy](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-etcvlovg-taxonomy.md)
-- [Agent Production Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-production-harness-engineering.md)
+- [Agent 自我改进六条路](ch03/045-agent.md) — L6 Meta-Harness 编排自优化的"同模型自举"实现
+- [Agent Harness 工程学调研 2026](ch05/061-harness-engineering.md) — Self-Harness 是该领域的最新论文
+- [Agent Harness 工程学调研 etcvlovg Taxonomy](ch05/061-harness-engineering.md)
+- [Agent Production Harness Engineering](ch05/061-harness-engineering.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Harness as Product Surface](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-as-product-surface.md)
 - [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)
 - [AI 自我改进自举](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md)
 - [Evaluation Harness Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
 - [Verifier-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
-- [SGLang](https://github.com/QianJinGuo/wiki/blob/main/entities/sglang.md) — Qwen3.5 部署用到的推理引擎
-- [DeepAgent 架构演进](https://github.com/QianJinGuo/wiki/blob/main/entities/tmic-ai-xiaoxin-deepagent-architecture-evolution.md) — 初始 Harness 基于 DeepAgent SDK
-- [ByteDance TRAE Harness Engineering Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/bytedance-trae-harness-engineering-guide.md)
-- [复旦 AHE Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)
-- [Harness Engineering 七层架构](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1aNu.md)
+- [SGLang](ch01/692-1-sglang-radixark-ai.md) — Qwen3.5 部署用到的推理引擎
+- [DeepAgent 架构演进](ch04/277-ai.md) — 初始 Harness 基于 DeepAgent SDK
+- [ByteDance TRAE Harness Engineering Guide](ch05/061-harness-engineering.md)
+- [复旦 AHE Agentic Harness Engineering](ch05/061-harness-engineering.md)
+- [Harness Engineering 七层架构](ch03/075-claude-code.md)
 - [Harness Component Expiry and Build-to-Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md) — Self-Harness 的"接受门"是这一思想的工程化实现
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/self-harness-shanghai-ai-lab-agent-improves-harness-hyman-2026-06-12.md)

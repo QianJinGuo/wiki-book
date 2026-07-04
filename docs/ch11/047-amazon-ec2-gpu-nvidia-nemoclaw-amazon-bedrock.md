@@ -13,17 +13,17 @@
 
 ## 相关实体
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/045-agent.md)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch03/045-agent.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md)
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/988-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [在 Amazon Eks 上使用 Nvidia Gpu Operator 管理自定义 Gpu 驱动与 Cuda 工作负载](https://github.com/QianJinGuo/wiki/blob/main/entities/在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载.md)
-- [Nvidia Nemotron 3 Ultra Now Available On Amazon Sagemaker Ju](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.md)
-- [miro-amazon-bedrock-bug-routing](https://github.com/QianJinGuo/wiki/blob/main/entities/miro-amazon-bedrock-bug-routing.md)
+- [Nvidia Nemotron 3 Ultra Now Available On Amazon Sagemaker Ju](ch01/1014-nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.md)
+- [miro-amazon-bedrock-bug-routing](ch11/253-bedrock.md)
 
 ## 深度分析
 

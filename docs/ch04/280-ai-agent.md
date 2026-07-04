@@ -5,22 +5,22 @@
 > 📊 Level ⭐⭐ | 9.1KB | `entities/十年老技术开发的-ai-agent-探索之路-v2.md`
 
 ## 相关实体
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
-- [柚漫剧 AI 全流程提效拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
-- [Agent Skill 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-employment-eight-changes-tencent-research.md)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](https://github.com/QianJinGuo/wiki/blob/main/entities/cdp-bridge-mcp-real-browser-agent.md)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/277-ai.md)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/277-ai.md)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch04/256-skill.md)
+- [柚漫剧 AI 全流程提效拆解](ch04/277-ai.md)
+- [Agent Skill 设计模式](ch04/256-skill.md)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/277-ai.md)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](ch03/045-agent.md)
 
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](https://github.com/QianJinGuo/wiki/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
-- [ai agent memory systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](https://github.com/QianJinGuo/wiki/blob/main/entities/精选-10-个开发者常用的-ai-智能体技能agent-skills.md)
-- [Garry Tan](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
-- [Agent Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-workflows.md)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/256-skill.md)
+- [ai agent memory systems](ch04/277-ai.md)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/256-skill.md)
+- [Garry Tan](ch01/636-garry-tan.md)
+- [Agent Workflows](ch04/322-agent-workflows.md)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-development-guide-aliyun-2026.md)
-- [十年老技术开发的 AI Agent 探索之路](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-exploration-path-legacy-tech.md)- [十年老技术开发的 AI Agent 探索之路](https://github.com/QianJinGuo/wiki/blob/main/entities/十年老技术开发的-ai-agent-探索之路.md)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-exploration-path-legacy-tech.md)- [四种 Sub Agent 模式](https://github.com/QianJinGuo/wiki/blob/main/entities/four-sub-agent-patterns.md) 
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/256-skill.md)
+- [十年老技术开发的 AI Agent 探索之路](ch04/277-ai.md)- [十年老技术开发的 AI Agent 探索之路](ch04/277-ai.md)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/277-ai.md)- [四种 Sub Agent 模式](ch03/045-agent.md) 
 
 ## 深度分析
 ### 范式转移：人是瓶颈，但解决方式不是替代人

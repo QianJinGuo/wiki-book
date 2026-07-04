@@ -131,11 +131,11 @@ Skill和MCP的选择本质上是「按需加载」和「全量加载」的选择
 原文：https://mp.weixin.qq.com/s/rKnNaGJnlfhdIufpGDuHuQ
 
 ## 相关实体
-- [Harness Engineering Reliable Long Term Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-reliable-long-term-agent.md)
-- [Harness Engineering Jk Launcher Baijiajie](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-jk-launcher-baijiajie.md)
-- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md)
-- [Anthropic Coding Agents Social Science Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-coding-agents-social-science-survey-2026.md)
-- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](https://github.com/QianJinGuo/wiki/blob/main/entities/柚漫剧-ai全流程提效拆解-从单点提效到工程融合.md)
+- [Harness Engineering Reliable Long Term Agent](ch05/061-harness-engineering.md)
+- [Harness Engineering Jk Launcher Baijiajie](ch04/277-ai.md)
+- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](ch09/047-coding-agent.md)
+- [Anthropic Coding Agents Social Science Survey 2026](ch09/047-coding-agent.md)
+- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

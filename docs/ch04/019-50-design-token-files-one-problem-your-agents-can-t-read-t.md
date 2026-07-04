@@ -45,8 +45,8 @@ Color tokens may depend on theme tokens, spacing tokens may have grid alignment 
 
 ## Related
 
-- [DESIGN.md](https://github.com/QianJinGuo/wiki/blob/main/entities/design-md-google-stitch-voltagent-ai-design-agent.md) -- also an AI Agent interface for design systems
-- [Claude Design Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-design-skill-web-design-engineer.md) -- agent operating design systems in practice
+- [DESIGN.md](ch04/277-ai.md) -- also an AI Agent interface for design systems
+- [Claude Design Skill](ch01/972-claude-design-skill.md) -- agent operating design systems in practice
 
 -> [Original Article Archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/design-token-agent-readability-50-systems.md)
 

@@ -72,31 +72,31 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - **跨 vendor 工具的窗口期**：官方方案只管 Claude Code，第三方跨 vendor 工具仍有存在价值，尤其在多生态并行的工作场景
 
 ## 参考来源
-[^1]: 花叔. *Claude Code 发布 Agent View，多任务流的 ADHD 患者有救了*. 微信公众号, 2026-05-12. [raw](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-view.md)
+[^1]: 花叔. *Claude Code 发布 Agent View，多任务流的 ADHD 患者有救了*. 微信公众号, 2026-05-12. [raw](ch09/001-claude-code-agent-view.md)
 
 - 官方博客: https://claude.com/blog/agent-view-in-claude-code
 - Release v2.1.139: https://github.com/anthropics/claude-code/releases/tag/v2.1.139
 
 ## 相关实体
-- [Claude Code Agent 工程设计](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-engineering.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md)
-- [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](https://github.com/QianJinGuo/wiki/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-12-rules-karpathy-extension.md)
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](https://github.com/QianJinGuo/wiki/blob/main/entities/cat-wu-claude-code-pm.md)
+- [Claude Code Agent 工程设计](ch03/075-claude-code.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/075-claude-code.md)
+- [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](ch03/075-claude-code.md)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/075-claude-code.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/277-ai.md)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/075-claude-code.md)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](ch03/075-claude-code.md)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
-- [AutoResearch：多 Agent 自动化软件开发](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-multi-agent-software.md)
-- [Claude Opus 4.7 发布分析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-4-7-launch.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-tool-count-trap.md)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-ai-native-startup-handbook.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-发布官方报告承认存在-3-处质量退化问题.md)
+- [AutoResearch：多 Agent 自动化软件开发](ch03/045-agent.md)
+- [Claude Opus 4.7 发布分析](ch01/817-claude-opus-4-7.md)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/256-skill.md)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/277-ai.md)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/277-ai.md)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/075-claude-code.md)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/485-claude.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
-- [2026年最值得关注的15款开发者工具深度解读](https://github.com/QianJinGuo/wiki/blob/main/entities/2026年最值得关注的15款开发者工具-深度解读.md)
+- [2026年最值得关注的15款开发者工具深度解读](ch01/217-0.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

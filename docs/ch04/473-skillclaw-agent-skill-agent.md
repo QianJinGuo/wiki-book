@@ -11,11 +11,11 @@
 > 代码：https://github.com/AMAP-ML/SkillClaw
 
 ## 相关实体
-- [Hermes Skill System Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system-winty.md)
-- [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
-- [Agentic Ai System Architecture Harness Skill Mcp](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
-- [Agent Skill Writing Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md)
-- [Agent Memory Engineering Tax Aws China 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-engineering-tax-aws-china-2026.md)
+- [Hermes Skill System Winty](ch04/256-skill.md)
+- [Ai Skill Skill Creator 源码拆解](ch01/593-skill-skill.md)
+- [Agentic Ai System Architecture Harness Skill Mcp](ch04/256-skill.md)
+- [Agent Skill Writing Guide](ch04/256-skill.md)
+- [Agent Memory Engineering Tax Aws China 2026](ch01/217-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-collective-intelligence.md)
 

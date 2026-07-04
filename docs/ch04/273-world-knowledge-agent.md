@@ -120,11 +120,11 @@ R(K) = Success(T_E | K) - Success(T_E | ∅)
 5. **将 World Knowledge 视为可版本化的共享资产**：静态 Markdown 格式天然支持 Git 版本化管理，后续可引人动态更新机制（定期 re-explore + diff 合并），使环境知识随网站结构演变保持新鲜度，而非一次性生成后僵化。
 
 ## 相关实体
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](https://github.com/QianJinGuo/wiki/blob/main/entities/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md)
-- [Tencent Skill Writing Complete Playbook Jackjchou](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-skill-writing-complete-playbook-jackjchou.md)
-- [Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md)
-- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-agent脚手架如何具备自进化能力以hermes-agent为例.md)
-- [Deli Auto Research Skill Deepseek](https://github.com/QianJinGuo/wiki/blob/main/entities/deli-auto-research-skill-deepseek.md)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch04/277-ai.md)
+- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/256-skill.md)
+- [Agent Self Improvement Six Mechanisms](ch03/045-agent.md)
+- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](ch03/045-agent.md)
+- [Deli Auto Research Skill Deepseek](ch04/256-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/world-knowledge-agent-self-evolution-tencent-hkustgz.md)
 

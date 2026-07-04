@@ -45,11 +45,11 @@ DeepSeek-V4选择在同一篇论文中同时发布多个相互依赖的技术贡
 ## 标签
 - source/wechat
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4.md)
-- [ds4c deepseek v4 antirez](https://github.com/QianJinGuo/wiki/blob/main/entities/ds4c-deepseek-v4-antirez.md)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-pro-vs-claude.md)
-- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki/blob/main/entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/974-deepseek-v4.md)
+- [ds4c deepseek v4 antirez](ch01/541-ds4c-deepseek-v4-antirez.md)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/974-deepseek-v4.md)
+- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](ch01/974-deepseek-v4.md)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch04/277-ai.md)
 
 ---
 

@@ -10,15 +10,15 @@
 - Structured（XML/JSON）与 Free-form 两种 prompt 策略对比
 - Nova 2 Lite 三项公开基准测试平均 F1 75.70%，优于同期对照模型
 ## 相关实体
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
-- [Build An Enterprise Observability Solution For Amazon Quick](https://github.com/QianJinGuo/wiki/blob/main/entities/build-an-enterprise-observability-solution-for-amazon-quick.md)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](https://github.com/QianJinGuo/wiki/blob/main/entities/opus-4-7-launch-claude-code-best-practices-wechat.md)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](https://github.com/QianJinGuo/wiki/blob/main/entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for--2.md)
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](https://github.com/QianJinGuo/wiki/blob/main/entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/075-claude-code.md)
+- [Build An Enterprise Observability Solution For Amazon Quick](ch11/019-build-an-enterprise-observability-solution-for-amazon-quick.md)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/075-claude-code.md)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/210-restrict-access-to-sensitive-documents-in-your-amazon-quick.md)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prompting-amazon-nova-2-for-content-moderation.md)
 
-- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](https://github.com/QianJinGuo/wiki/blob/main/entities/complexity-ratchet-garry-tan.md)
+- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](ch01/636-garry-tan.md)
 
 ## 深度分析
 ### AILuminate 分类体系：12 类危害Taxonomy

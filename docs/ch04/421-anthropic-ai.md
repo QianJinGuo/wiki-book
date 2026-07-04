@@ -33,10 +33,10 @@ source_url: https://mp.weixin.qq.com/s/ZYZTTcel9_To123vcvoY4w
 5. **用"极端追问法"评估 AI 宪法质量**：设计边界挑战追问——"当规则与自身存续冲突时怎么办？""目的正当能为手段过激辩护吗？""论据越有说服力时该怎么做？"——观察模型的推理过程而非结论，揭示其对原则精神的理解深度。若模型只能给出行为判断而无法解释背后的价值观，则说明宪法本身需要升级。
 
 ## 相关实体
-- [anthropic联创2028-ai自我构建概率超60](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic联创2028-ai自我构建概率超60.md)
-- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-联创2028-年实现-ai-自我构建的概率超过-60.md)
-- [Yc Ryo Self Improving Company Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/yc-ryo-self-improving-company-ai.md)
+- [anthropic联创2028-ai自我构建概率超60](ch04/277-ai.md)
+- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch04/277-ai.md)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch04/277-ai.md)
+- [Yc Ryo Self Improving Company Ai](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 
 ---

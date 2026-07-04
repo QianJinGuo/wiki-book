@@ -8,11 +8,11 @@
 ![Image 2](https://bishopfox.com/static/assets/images/backgrounds/promobar-bg-lines-left.svg)
 
 ## 相关实体
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security.md)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security V2](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/277-ai.md)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security V2](ch04/277-ai.md)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Alphaevolve Deepmind Discovery Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaevolve-deepmind-discovery-agent.md)
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](https://github.com/QianJinGuo/wiki/blob/main/entities/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md)
+- [Alphaevolve Deepmind Discovery Agent](ch03/045-agent.md)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md)
 

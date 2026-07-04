@@ -73,11 +73,11 @@
 - 原版下载：claude.com/blog/the-founders-playbook
 - Anthropic Startups Program（免费API credits + 最高档rate limits）
 ## 相关实体
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
-- [Claude Code Large Codebase Enterprise Deployment](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)
-- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-enterprise-deployment-anthropic-aihanshijì.md)
-- [Anthropic Prompt Caching Claude Code Agihunt](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-prompt-caching-claude-code-agihunt.md)
-- [Cat Wu Claude Code Pm](https://github.com/QianJinGuo/wiki/blob/main/entities/cat-wu-claude-code-pm.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/075-claude-code.md)
+- [Claude Code Large Codebase Enterprise Deployment](ch03/075-claude-code.md)
+- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](ch04/277-ai.md)
+- [Anthropic Prompt Caching Claude Code Agihunt](ch03/075-claude-code.md)
+- [Cat Wu Claude Code Pm](ch03/075-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-founders-playbook-huashu-2026.md)
 

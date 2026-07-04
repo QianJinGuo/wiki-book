@@ -68,17 +68,17 @@ Layer 5: 强制回滚机制 — 所有修改类工具必须附带降级回滚逻
 3. Token 如何**花在刀刃上**（L0/L1/L2 三级分层 + PreCompact 压缩续接）
 
 ## 相关概念
-- [Factory Mission](https://github.com/QianJinGuo/wiki/blob/main/entities/factory-mission-multi-agent-architecture.md) — 同为 Agent Loop 架构，但 Mission 侧重多 Agent 编排，易点天下侧重企业级单 Agent 深度工程
+- [Factory Mission](ch01/1053-factory-mission-multi-agent-architecture.md) — 同为 Agent Loop 架构，但 Mission 侧重多 Agent 编排，易点天下侧重企业级单 Agent 深度工程
 ---
 *Last updated: 2026-05-08*
 *评审：Value 8 × Confidence 7 = 56 | ★★★★ | STRONG PASS*
 
 ## 相关实体
-- [Agentic AI for Subsurface Engineering Simulation (NVIDIA)](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-agentic-ai-subsurface-engineering.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-vibe-coding-to-agentic-engineering-backend.md)
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-era-git-version-control-agentic-coding-practices.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v3.md)
+- [Agentic AI for Subsurface Engineering Simulation (NVIDIA)](ch04/331-nvidia-agentic-ai-subsurface-engineering.md)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/196-tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](ch04/277-ai.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
 
 ## 深度分析
 **1. 六层上下文体系（L1–L6）的系统性工程视角**

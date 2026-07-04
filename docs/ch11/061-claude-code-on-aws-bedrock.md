@@ -84,11 +84,11 @@ aws iam create-access-key --user-name claude-code-bedrock
 ## 参考来源
 
 ## 相关实体
-- [From Code To Molecules An Ai Driven Egfr Inhibitor Discovery Journey](https://github.com/QianJinGuo/wiki/blob/main/entities/from-code-to-molecules-an-ai-driven-egfr-inhibitor-discovery-journey.md)
-- [Bedrock Agentcore Payment X402 Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-agentcore-payment-x402-agent.md)
-- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-network-claude-code-kiro-cli-implement-aws-ipsec-vpn.md)
-- [Easy Deployment Of Claude Agent Sdk In Production](https://github.com/QianJinGuo/wiki/blob/main/entities/easy-deployment-of-claude-agent-sdk-in-production.md)
-- [Claude Code Open Source Model Enterprise Practice](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-open-source-model-enterprise-practice.md)
+- [From Code To Molecules An Ai Driven Egfr Inhibitor Discovery Journey](ch04/277-ai.md)
+- [Bedrock Agentcore Payment X402 Agent](ch01/217-0.md)
+- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](ch04/277-ai.md)
+- [Easy Deployment Of Claude Agent Sdk In Production](ch03/045-agent.md)
+- [Claude Code Open Source Model Enterprise Practice](ch03/075-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-aws-bedrock-guide.md)
 

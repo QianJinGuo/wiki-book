@@ -8,9 +8,9 @@
 
 ## 相关实体
 
-- [cola dlm：字节跳动连续潜空间扩散语言模型](https://github.com/QianJinGuo/wiki/blob/main/entities/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
-- [explicit vs. implicit in the age of intelligences — le secré](https://github.com/QianJinGuo/wiki/blob/main/entities/lesecretairedefernand-co-en-tech-explicit-vs-implicit-in-the-age-of-intelligence.md)
-- [what it feels like to work with mythos](https://github.com/QianJinGuo/wiki/blob/main/entities/what-it-feels-like-to-work-with-mythos.md)
+- [cola dlm：字节跳动连续潜空间扩散语言模型](ch01/424-cola-dlm.md)
+- [explicit vs. implicit in the age of intelligences — le secré](ch04/277-ai.md)
+- [what it feels like to work with mythos](ch04/575-what-it-feels-like-to-work-with-mythos.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
@@ -55,12 +55,12 @@ source_published: 2026-03-11
 
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](https://github.com/QianJinGuo/wiki/blob/main/entities/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
-- [Hermes Agent V014 Architecture Shugex](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-v014-architecture-shugex.md)
-- [Ai Friendly Architecture Design Taobao](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-friendly-architecture-design-taobao.md)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
-- [Deepseek Code Harness Competitor Tina](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-code-harness-competitor-tina.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/215-openclaw.md)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch04/277-ai.md)
+- [Hermes Agent V014 Architecture Shugex](ch01/217-0.md)
+- [Ai Friendly Architecture Design Taobao](ch04/277-ai.md)
+- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/217-0.md)
+- [Deepseek Code Harness Competitor Tina](ch09/076-deepseek-code-harness.md)
 
 ## 实践启示
 

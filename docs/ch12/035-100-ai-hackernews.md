@@ -13,7 +13,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/1-million-exposed-ai-services-hackernews.md)
 
 ## 相关实体
-- [Your AI Agents Are Already Inside the Perimeter. Do You Know Who They Are?](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
+- [Your AI Agents Are Already Inside the Perimeter. Do You Know Who They Are?](ch04/277-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析

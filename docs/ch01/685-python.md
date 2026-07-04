@@ -43,8 +43,8 @@ source_url: https://mp.weixin.qq.com/s/LIjNSJOVlsYoqnzoxjRYaw
 
 ## 相关实体
 
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](https://github.com/QianJinGuo/wiki/blob/main/entities/精选-10-个开发者常用的-ai-智能体技能agent-skills.md)
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/民生银行基于规格驱动开发sdd的-codeagent-私域研发探索与实践.md)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/256-skill.md)
+- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](ch03/045-agent.md)
 
 ---
 

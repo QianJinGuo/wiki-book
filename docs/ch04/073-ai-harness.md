@@ -297,11 +297,11 @@ OpenAI SDK 的三层护栏（输入→工具→输出）体现了**纵深防御*
 - 原文：https://x.com/akshay_pachaar/status/2041146899319971922
 - 中文编译：宝玉AI
 ## 相关实体
-- [Guide Ai Agents Models Apps Harnesses Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/guide-ai-agents-models-apps-harnesses-mollick.md)
-- [Claude Code Large Codebase Enterprise Deployment](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
-- [Claude Code Routines Proactive Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-routines-proactive-agent.md)
-- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md)
+- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/277-ai.md)
+- [Claude Code Large Codebase Enterprise Deployment](ch03/075-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/075-claude-code.md)
+- [Claude Code Routines Proactive Agent](ch03/075-claude-code.md)
+- [From Prompt To Harness Claude Official](ch05/009-harness.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)

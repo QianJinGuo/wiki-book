@@ -21,9 +21,9 @@
 
 ## 与现有实体的差异化
 
-- [Agent 数据治理模式](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-data-governance-crewai-credential-patterns.md) 聚焦数据库凭证安全，本文聚焦企业级构建吞吐量和 Snowflake 集成
-- [CrewAI 小步快跑](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-development-crawl-walk-run-crewai-iterative.md) 聚焦开发方法论，本文聚焦数据治理和平台集成
-- [Agent 安全三步序列](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-security-three-step-sequence-harness-governance-identity-crewai.md) 聚焦安全，本文聚焦数据所在处的 Agent 构建
+- [Agent 数据治理模式](ch04/277-ai.md) 聚焦数据库凭证安全，本文聚焦企业级构建吞吐量和 Snowflake 集成
+- [CrewAI 小步快跑](ch04/277-ai.md) 聚焦开发方法论，本文聚焦数据治理和平台集成
+- [Agent 安全三步序列](ch04/277-ai.md) 聚焦安全，本文聚焦数据所在处的 Agent 构建
 
 ## 实践启示
 
@@ -33,11 +33,11 @@
 
 ## 相关实体
 
-- [Agent 数据治理模式](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-data-governance-crewai-credential-patterns.md)
-- [CrewAI 小步快跑](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-development-crawl-walk-run-crewai-iterative.md)
-- [Agent 安全三步序列](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-security-three-step-sequence-harness-governance-identity-crewai.md)
-- [Agentium Agent 框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agentium-agent-framework.md)
-- [Snowflake Agentic Enterprise Summit](https://github.com/QianJinGuo/wiki/blob/main/entities/snowflake-agentic-enterprise-summit-2026.md)
+- [Agent 数据治理模式](ch04/277-ai.md)
+- [CrewAI 小步快跑](ch04/277-ai.md)
+- [Agent 安全三步序列](ch04/277-ai.md)
+- [Agentium Agent 框架](ch03/045-agent.md)
+- [Snowflake Agentic Enterprise Summit](ch01/217-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-to-build-agents-where-data-already-lives.md)
 

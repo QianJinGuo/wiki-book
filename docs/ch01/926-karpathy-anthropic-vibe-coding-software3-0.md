@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](https://github.com/QianJinGuo/wiki/blob/main/entities/impeccable-anomaly-vibe-design-vs-vibe-coding.md)
+- [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](ch05/001-impeccable.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-software3-vibe-coding-dead-agentic-engineering.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
@@ -45,12 +45,12 @@ Karpathy加入Anthropic后首讲：Vibe Coding已死，Software3.0来了 涉及a
 - **ai-coding趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
+- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/277-ai.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

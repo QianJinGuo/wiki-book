@@ -23,7 +23,7 @@ Most of the compute to build a leading frontier model comes from R&D costs, rath
 - [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-open-model-ecosystems-compound.md)
 
 ## 相关实体
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-open-source-model-enterprise-practice.md)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](ch03/075-claude-code.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 ## 深度分析

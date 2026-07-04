@@ -45,9 +45,9 @@ Hermes Agent 是 **Nous Research** 开源的自主演式 AI Agent 框架，GitHu
 ## Related
 - [Hermes-Agent 自进化机制](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Skill 生成 + RL 训练双路径详解
 - [原始调研存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-tools-research.md)
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
-- [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/thin-harness-fat-skills.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch04/256-skill.md)
+- [Thin Harness Fat Skills](ch04/256-skill.md)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/196-tencent-vibe-coding-to-agentic-engineering-backend.md)
 
 ## 深度分析
 Hermes Agent 的自进化机制代表了一种新型的 AI Agent 设计范式：**外挂式技能生成 + 内功式强化学习**的双轨并行架构。
@@ -63,16 +63,16 @@ Hermes Agent 的自进化机制代表了一种新型的 AI Agent 设计范式：
 4. **警惕"进化陷阱"**：Skill 自动生成若缺乏质量控制，会导致技术债务累积，需要配套的 Skill 评估与淘汰机制
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/277-ai.md)
 
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-internal-skill-design-guide.md)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-development-guide-aliyun-2026.md)
-- [Anthropic 14 个 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-agent-skills-design-patterns-14.md)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system-winty.md)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/256-skill.md)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/256-skill.md)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/256-skill.md)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/256-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-closed-learning-loop.md)
 
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/trace2skill-trajectory-distillation-agent-skills.md)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/256-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

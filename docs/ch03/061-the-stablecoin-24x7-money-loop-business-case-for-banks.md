@@ -112,13 +112,13 @@ The article documents a "subtle vibe shift" in banks over 2026 Q1-Q2: from loudl
 
 - [Clarity Act 5 Things](https://github.com/QianJinGuo/wiki/blob/main/entities/clarity-act-5-things.md) — CLARITY Act 立法细节
 - CLARITY Act — CLARITY Act 5 个关键点
-- [Agentcore Payments X402 Agentic Commerce](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-payments-x402-agentic-commerce.md) — AWS Bedrock AgentCore x402 协议（agent-to-agent 支付）
-- [Amazon Bedrock Agentic Payments Guardrails](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-agentic-payments-guardrails.md) — Bedrock agentic payments 护栏
+- [Agentcore Payments X402 Agentic Commerce](ch01/217-0.md) — AWS Bedrock AgentCore x402 协议（agent-to-agent 支付）
+- [Amazon Bedrock Agentic Payments Guardrails](ch04/277-ai.md) — Bedrock agentic payments 护栏
 - enable safe agentic payments with built in guardrails using  — 安全 agent 支付
 - [Coinbase Becomes Hyperliquids Official Usdc Treasury Deployer As Usdh Sunsets](https://github.com/QianJinGuo/wiki/blob/main/entities/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md) — Coinbase USDC treasury
-- [Tether Launches Developer Grants Program For Local Ai Paymen](https://github.com/QianJinGuo/wiki/blob/main/entities/tether-launches-developer-grants-program-for-local-ai-paymen.md) — Tether 本地 AI 支付开发者资助
+- [Tether Launches Developer Grants Program For Local Ai Paymen](ch09/120-tether-launches-developer-grants-program-for-local-ai-paymen.md) — Tether 本地 AI 支付开发者资助
 - [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](https://github.com/QianJinGuo/wiki/blob/main/entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md) — 加密基金 6 周连续流入
-- [The Token Economy Pt2 The Intelligence Company Gets Built](https://github.com/QianJinGuo/wiki/blob/main/entities/the-token-economy-pt2-the-intelligence-company-gets-built.md) — Token 经济与 AI 智能公司
+- [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.md) — Token 经济与 AI 智能公司
 
 ---
 

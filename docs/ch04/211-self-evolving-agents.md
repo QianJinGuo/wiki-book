@@ -31,9 +31,9 @@
 
 ## 与 Wiki 现有页面的关系
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Hermes 的自进化机制，侧重 Skill 生成 + RL 训练双路径
-- [Memento Skills Agent Self Evolving](https://github.com/QianJinGuo/wiki/blob/main/entities/memento-skills-agent-self-evolving.md) — 技能外部记忆维度，与 Environment-Centric Static Knowledge Evolution 相关
-- [Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md) — Agent 自我改进六条路，与本文 taxonomy 有重叠但视角不同
-- [Agent Memory Modular Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-modular-framework.md) — Memory 模块化框架，与 Environment-Centric Modular Architecture Evolution 相关
+- [Memento Skills Agent Self Evolving](ch04/256-skill.md) — 技能外部记忆维度，与 Environment-Centric Static Knowledge Evolution 相关
+- [Agent Self Improvement Six Mechanisms](ch03/045-agent.md) — Agent 自我改进六条路，与本文 taxonomy 有重叠但视角不同
+- [Agent Memory Modular Framework](ch03/045-agent.md) — Memory 模块化框架，与 Environment-Centric Modular Architecture Evolution 相关
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/self-evolving-agents-survey-papersagent.md)
 
 ## 深度分析
@@ -73,18 +73,18 @@ Model-Environment Co-Evolution 的两个方向：
 3. **Co-Evolution 环境的技术要求**：如果目标是构建支持 Model-Environment Co-Evolution 的平台，需要满足：a）环境能生成多样化的任务（task generation）；b）环境能提供可验证的 reward signal；c）环境能按 Agent 能力调整难度（curriculum）。这是比简单模拟器复杂得多的工程系统。
 
 ## 相关实体
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/139-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/256-skill.md)
 
-- [Hermes Agent 自进化机制源码解析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-self-evolving.md)
-- [基于AgentCore构建自学习、可进化的文旅行业近似信息抽取Agents | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/self-learning-evolvable-agents-for-cultural-tourism-info-extraction-with-agentcore.md)
-- [GBrain](https://github.com/QianJinGuo/wiki/blob/main/entities/gbrain.md)
+- [Hermes Agent 自进化机制源码解析](ch03/045-agent.md)
+- [基于AgentCore构建自学习、可进化的文旅行业近似信息抽取Agents | 亚马逊AWS官方博客](ch03/045-agent.md)
+- [GBrain](ch04/277-ai.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
-- [17种Agent架构演进：控制流设计的完整演化史](https://github.com/QianJinGuo/wiki/blob/main/entities/17-agent-architectures-evolution.md)
-- [hermes-agent-self-evolving-source-analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-self-evolving-source-analysis.md)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch04/277-ai.md)
+- [17种Agent架构演进：控制流设计的完整演化史](ch03/045-agent.md)
+- [hermes-agent-self-evolving-source-analysis](ch03/045-agent.md)
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
-- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
+- [AI Agent 工程师能力地图](ch04/277-ai.md)
 
 ---
 

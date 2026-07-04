@@ -69,11 +69,11 @@ AgentCore Runtime 用 Cognito Authorizer 校验 JWT
 - Quick Chat Agent 上下文管理
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-agentcore-gateway-mcp-extension.md)
-- [Bedrock Agentcore Coding Agent Hosting](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-agentcore-coding-agent-hosting.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch03/045-agent.md)
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch03/045-agent.md)
+- [Bedrock Agentcore Coding Agent Hosting](ch09/047-coding-agent.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/045-agent.md)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch01/217-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-quick-bedrock-agentcore-finops-chat.md)
 

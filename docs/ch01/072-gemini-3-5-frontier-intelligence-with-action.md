@@ -51,11 +51,11 @@ Salesforce is integrating 3.5 Flash into Agentforce to reliably automate complic
 Xero is 
 
 ## 相关实体
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
-- [Gemini 3 5 Frontier Intelligence](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-3-5-frontier-intelligence.md)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Process Financial Documents Using Amazon Bedrock Data Automa](https://github.com/QianJinGuo/wiki/blob/main/entities/process-financial-documents-using-amazon-bedrock-data-automa.md)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch11/202-amazon-quick.md)
+- [Gemini 3 5 Frontier Intelligence](ch01/520-gemini-3-5-frontier-intelligence-with-action.md)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch04/277-ai.md)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/253-bedrock.md)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/253-bedrock.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemini-3-5-frontier-intelligence-with-action.md)
 

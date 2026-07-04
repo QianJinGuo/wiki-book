@@ -74,8 +74,8 @@ SchemaFlow 将数据库 schema 文档（PDF 格式）分块向量化，作为 LL
 
 ## 相关实体
 
-- [MCP 12 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
-- [Agent Loop 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-boris-cherny-agent-loop-design-patterns.md)
+- [MCP 12 设计模式](ch03/045-agent.md)
+- [Agent Loop 设计模式](ch03/045-agent.md)
 - [Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agentic Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)

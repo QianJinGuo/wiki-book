@@ -90,10 +90,10 @@
 
 ## 相关实体
 
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
-- [Claw-SWE-Bench](https://github.com/QianJinGuo/wiki/blob/main/entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md) — harness 独立评测基准
-- [Skill 版本对比五大原则](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-version-comparison-five-principles-winty.md) — 评估方法论
-- [OpenClaw Agent Loop 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-agent-loop-design-patterns.md)
+- [Harness Engineering](ch05/061-harness-engineering.md)
+- [Claw-SWE-Bench](ch05/009-harness.md) — harness 独立评测基准
+- [Skill 版本对比五大原则](ch04/256-skill.md) — 评估方法论
+- [OpenClaw Agent Loop 设计模式](ch03/045-agent.md)
 
 ---
 

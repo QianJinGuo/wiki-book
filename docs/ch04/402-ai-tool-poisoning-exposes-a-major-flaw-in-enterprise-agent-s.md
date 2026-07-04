@@ -31,12 +31,12 @@ AI tool poisoning exposes a major flaw in enterprise agent se...
 - [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](https://github.com/QianJinGuo/wiki/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
-- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
-- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-software-moats-agent-era.md)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/277-ai.md)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/277-ai.md)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch04/277-ai.md)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/277-ai.md)
+- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](ch04/277-ai.md)
+- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](ch03/045-agent.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析

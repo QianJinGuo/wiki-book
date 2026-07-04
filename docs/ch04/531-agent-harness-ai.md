@@ -35,11 +35,11 @@
 5. **回放不是严格复现**：模型有随机性，回放只能做相似条件下的验证，用于判断优化方向
 
 ## 相关实体
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
-- [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
-- [Agent Harness Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch03/045-agent.md)
+- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch01/217-0.md)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch01/217-0.md)
+- [Agent Harness Architecture](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-observability-production.md)
 - [perplexity computer empirical study: how ai agents reshape k](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-computer-knowledge-work-empirical-study.md)

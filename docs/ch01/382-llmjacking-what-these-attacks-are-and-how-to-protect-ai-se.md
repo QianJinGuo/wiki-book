@@ -38,11 +38,11 @@ Key defensive measures for private AI infrastructure
 - Maintain detailed logs of LLM responses and requests made to the model and its supporting tools. Integrate these data sources with [your SIEM](https://www.kaspersky.com/enterprise-security/unified-monitoring-and-analysis-platform?icid=gl_kdailyplacehold_acq_ona_smm__onl_b2b_kasperskydaily_wpplaceholder____). Ensure logs are resilient against tampering or deletion.
 
 ## 相关实体
-- [Ai Agents Inside Perimeter Hackernews](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
+- [Ai Agents Inside Perimeter Hackernews](ch04/277-ai.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Llm Raiders How To Repel](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-raiders-how-to-repel.md)
-- [我用 Skillmd 做了一个简历生成器](https://github.com/QianJinGuo/wiki/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
-- [Skill Engineering Ai As Algorithm](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-engineering-ai-as-algorithm.md)
+- [Llm Raiders How To Repel](ch04/277-ai.md)
+- [我用 Skillmd 做了一个简历生成器](ch04/256-skill.md)
+- [Skill Engineering Ai As Algorithm](ch04/256-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-raiders-private-ai-server.md)
 

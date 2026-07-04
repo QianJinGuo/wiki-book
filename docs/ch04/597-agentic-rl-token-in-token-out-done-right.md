@@ -111,11 +111,11 @@ Most of the time you don’t think about it. You feed messages, you get tokens, 
 Multi-turn is where it starts to matter. When the assistant emits tokens, you d
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
-- [Skill Os Learning Skill Curation Self Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
-- [Hermes Agent Deep Dive](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-deep-dive.md)
-- [Baixing Ontoz Enterprise Ontology Multi Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/baixing-ontoz-enterprise-ontology-multi-agent.md)
-- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](ch03/075-claude-code.md)
+- [Skill Os Learning Skill Curation Self Evolving Agents](ch04/256-skill.md)
+- [Hermes Agent Deep Dive](ch03/045-agent.md)
+- [Baixing Ontoz Enterprise Ontology Multi Agent](ch04/277-ai.md)
+- [Yann Dubois Openai Post Training Interview](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-rl-token-in-token-out.md)

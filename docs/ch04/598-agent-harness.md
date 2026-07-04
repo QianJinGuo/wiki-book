@@ -35,7 +35,7 @@
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture-design-production-guide.md)。 相关主题通过 [高德 Uplift 模型迭代 Agent：长时间运行 Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/gaode-uplift-model-iteration-agent-long-running-harness.md) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](ch03/045-agent.md)。 相关主题通过 [高德 Uplift 模型迭代 Agent：长时间运行 Harness](ch03/045-agent.md) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -47,11 +47,11 @@
 
 ## 相关实体
 
-- [Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture-design-production-guide.md)
-- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/gaode-uplift-model-iteration-agent-long-running-harness.md)
-- [Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-之后-状态边界与失败闭环-若飞.md)
-- [Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist — 系列第 15 篇收官](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-10-step-practical-guide-2026.md)
-- [UIUC、Meta、斯坦福等最新综述！Code as Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey-2026.md)
+- [Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](ch03/045-agent.md)
+- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](ch03/045-agent.md)
+- [Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环](ch05/009-harness.md)
+- [Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist — 系列第 15 篇收官](ch05/061-harness-engineering.md)
+- [UIUC、Meta、斯坦福等最新综述！Code as Agent Harness](ch09/051-code-as-agent-harness.md)
 
 ---
 

@@ -12,9 +12,9 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [How to Calculate the Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/253-bedrock.md)
 
-- [55+ models, every modality. one api key, one bill.](https://github.com/QianJinGuo/wiki/blob/main/entities/digitalocean-serverless-inference-55-models.md)
+- [55+ models, every modality. one api key, one bill.](ch11/003-serverless-inference.md)
 
 ## 深度分析
 ### Serverless Inference 的定位与市场逻辑

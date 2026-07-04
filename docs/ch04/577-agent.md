@@ -10,7 +10,7 @@
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](https://github.com/QianJinGuo/wiki/blob/main/entities/fanling-company-as-agent-ai-org-reflection.md)。 相关主题通过 [CUGA: IBM Research Enterprise Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/cuga-ibm-research-agent-harness-enterprise.md) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](ch04/277-ai.md)。 相关主题通过 [CUGA: IBM Research Enterprise Agent Harness](ch03/045-agent.md) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -22,11 +22,11 @@
 
 ## 相关实体
 
-- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](https://github.com/QianJinGuo/wiki/blob/main/entities/fanling-company-as-agent-ai-org-reflection.md)
-- [CUGA: IBM Research Enterprise Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/cuga-ibm-research-agent-harness-enterprise.md)
-- [CLI、MCP 和 CLI+Skill，应该如何选？](https://github.com/QianJinGuo/wiki/blob/main/entities/cli-mcp-skill-architecture-decision-vibecoder.md)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
-- [Claude Managed Agents 新更新\"专属云\"模式：把Agent的手放回企业内部](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
+- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](ch04/277-ai.md)
+- [CUGA: IBM Research Enterprise Agent Harness](ch03/045-agent.md)
+- [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/256-skill.md)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch03/045-agent.md)
+- [Claude Managed Agents 新更新\"专属云\"模式：把Agent的手放回企业内部](ch03/045-agent.md)
 
 ---
 

@@ -70,7 +70,7 @@
 
 ### 与 Agent 安全研究的连接
 
-这项研究也直接呼应了 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md) 的核心议题：MCP / A2A 协议让 AI Agent 拥有更强的工具调用和跨系统能力，但同样的能力既可以被良性 Agent 使用，也可以被恶意 Agent 武器化。AI 蠕虫本质上就是"恶意 Agent 在网络中的传播"。
+这项研究也直接呼应了 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](ch04/277-ai.md) 的核心议题：MCP / A2A 协议让 AI Agent 拥有更强的工具调用和跨系统能力，但同样的能力既可以被良性 Agent 使用，也可以被恶意 Agent 武器化。AI 蠕虫本质上就是"恶意 Agent 在网络中的传播"。
 
 U of T 的研究在企业 Agent 部署的语境下有额外含义：当企业部署 MCP 服务器、A2A 协议时，**这些 Agent 通信通道本身也可能是 AI 蠕虫的传播介质**。安全审计不仅要审计代码，还要审计 Agent 之间的通信模式。
 
@@ -92,13 +92,13 @@ Papernot 团队的措辞很值得注意："It was imperative for us to understan
 
 ## 相关实体
 
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
-- [Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](ch04/277-ai.md)
+- [Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](ch12/030-disgruntled-researcher-releases-two-more-microsoft-zero-days.md)
+- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/277-ai.md)
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)
 - [Agent Security Threat Models](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md)
 - [Llm Security Red Teaming](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-security-red-teaming.md)

@@ -37,9 +37,9 @@
 
 ## 相关实体
 
-- [AWS DevOps Agent 接入中国区（一）](https://github.com/QianJinGuo/wiki/blob/main/entities/将-aws-devops-agent-智能运维能力延伸到中国区.md) — 前篇：单账号部署与 MCP 桥接
-- [FinOps 与 DevOps 双 Agent 成本优化](https://github.com/QianJinGuo/wiki/blob/main/entities/finops-devops-dual-agent-cost-optimization.md) — 相关的 Agent 成本治理实践
-- [AgentCore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) — Agent 基础设施框架
+- [AWS DevOps Agent 接入中国区（一）](ch03/045-agent.md) — 前篇：单账号部署与 MCP 桥接
+- [FinOps 与 DevOps 双 Agent 成本优化](ch03/045-agent.md) — 相关的 Agent 成本治理实践
+- [AgentCore Harness](ch03/045-agent.md) — Agent 基础设施框架
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-devops-agent-接入-aws-中国区二多账号扩展跨云接入与无长期-aksk-认证.md)
 

@@ -9,11 +9,11 @@
 > 作者苍何（521篇原创）分享了用 Hermes Agent + Kimi K2.6 搭建 7×24h 不间断运行的 AI 研发军团的完整教程。从飞书下达需求到最终交付，市场调研、PRD、架构设计、开发、测试全部由不同 Agent 自主完成。
 
 ## 相关实体
-- [Hermes Agent K2 6 Tutorial](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-k2-6-tutorial.md)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
-- [Small Hermes Self Evolving Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/small-hermes-self-evolving-agent-architecture.md)
-- [Kimi K2 Tidb Agent Database Huangdongxu 20260513](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-k2-tidb-agent-database-huangdongxu-20260513.md)
-- [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](https://github.com/QianJinGuo/wiki/blob/main/entities/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md)
+- [Hermes Agent K2 6 Tutorial](ch03/045-agent.md)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/045-agent.md)
+- [Small Hermes Self Evolving Agent Architecture](ch03/045-agent.md)
+- [Kimi K2 Tidb Agent Database Huangdongxu 20260513](ch01/217-0.md)
+- [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-k2-6-multi-agent.md)
 

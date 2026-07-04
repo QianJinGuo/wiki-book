@@ -44,7 +44,7 @@ AgentCore 通过三层知识架构扩展 agent 的可达性：
 ### 修复策略
 - 修 prompt、改 tool 描述、调 orchestration — 全靠猜测，无结构化方法判断改动是否真的改善
 
-## 与现有 [AgentCore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-managed-harness.md) 实体的差异化
+## 与现有 [AgentCore Harness](ch04/216-agentcore-managed-harness.md) 实体的差异化
 
 | 维度 | 旧 entity (2026-05-21) | 本次 (2026-06-17) |
 |------|---------------------|-----------------|
@@ -60,9 +60,9 @@ AgentCore 通过三层知识架构扩展 agent 的可达性：
 
 ## 相关主题
 
-- [Agentcore Managed Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-managed-harness.md) — 前篇：Harness 编排框架
-- [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) — 同期：其他 AgentCore 工程实践
-- [Agentcore Payments X402 Agentic Commerce](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-payments-x402-agentic-commerce.md) — 同期：x402 商业化
+- [Agentcore Managed Harness](ch04/216-agentcore-managed-harness.md) — 前篇：Harness 编排框架
+- [Agentcore Harness](ch03/045-agent.md) — 同期：其他 AgentCore 工程实践
+- [Agentcore Payments X402 Agentic Commerce](ch01/217-0.md) — 同期：x402 商业化
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/new-in-amazon-bedrock-agentcore-build-agents-with-broader-kn.md)
 
 ---

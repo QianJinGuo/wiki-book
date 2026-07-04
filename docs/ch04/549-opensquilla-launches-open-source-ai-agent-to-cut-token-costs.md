@@ -39,11 +39,11 @@ OpenSquilla 的核心洞察是：**大多数 agent 部署都在浪费 token**，
 - denial ledger 机制（3 次拒绝后暂停 agent）是防止 prompt injection 的有效工程手段
 - XML-escaping 是处理动态内容的正确安全实践，任何从外部引入的 skill/tool metadata 都应先 escape
 ## 相关实体
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](https://github.com/QianJinGuo/wiki/blob/main/entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
-- [Cline Open Source Agent Runtime Sdk](https://github.com/QianJinGuo/wiki/blob/main/entities/cline-open-source-agent-runtime-sdk.md)
-- [Pilotdeck Agent Os Openbmb Tsinghua](https://github.com/QianJinGuo/wiki/blob/main/entities/pilotdeck-agent-os-openbmb-tsinghua.md)
-- [Cline Releases Open Source Agent Runtime Sdk](https://github.com/QianJinGuo/wiki/blob/main/entities/cline-releases-open-source-agent-runtime-sdk.md)
-- [Clinereleasesopen Sourceagentruntimesdk](https://github.com/QianJinGuo/wiki/blob/main/entities/clinereleasesopen-sourceagentruntimesdk.md)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch04/549-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
+- [Cline Open Source Agent Runtime Sdk](ch03/045-agent.md)
+- [Pilotdeck Agent Os Openbmb Tsinghua](ch03/045-agent.md)
+- [Cline Releases Open Source Agent Runtime Sdk](ch04/429-cline-releases-open-source-agent-runtime-sdk.md)
+- [Clinereleasesopen Sourceagentruntimesdk](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/opensquilla-launches-open-source-ai-agent-to-cut-token-costs-1.md)
 

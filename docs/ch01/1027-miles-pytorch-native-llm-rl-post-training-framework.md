@@ -22,12 +22,12 @@ Miles 的核心设计是将 RL 训练分解为四个可组合层：Ray 负责分
 
 ## 相关实体
 
-- [SGLang](https://github.com/QianJinGuo/wiki/blob/main/entities/sglang.md) — Miles 使用 SGLang 作为 rollout 引擎
-- [LLM RL 算法概览](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
-- [DeepSeek V4 训练方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-training-58-page-paper-deep-dive.md)
-- [前沿后训练配方回顾](https://github.com/QianJinGuo/wiki/blob/main/entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
-- [百度文心后训练演进](https://github.com/QianJinGuo/wiki/blob/main/entities/baidu-wenxin-post-training-evolution.md)
-- [PyTorch 训练循环实践](https://github.com/QianJinGuo/wiki/blob/main/entities/essays-pytorch-training-loop.md)
+- [SGLang](ch01/692-1-sglang-radixark-ai.md) — Miles 使用 SGLang 作为 rollout 引擎
+- [LLM RL 算法概览](ch01/217-0.md)
+- [DeepSeek V4 训练方法论](ch04/277-ai.md)
+- [前沿后训练配方回顾](ch04/277-ai.md)
+- [百度文心后训练演进](ch04/277-ai.md)
+- [PyTorch 训练循环实践](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pytorch-miles-llm-rl-post-training-2026.md)
 

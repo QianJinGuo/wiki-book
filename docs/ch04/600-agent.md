@@ -30,7 +30,7 @@
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](https://github.com/QianJinGuo/wiki/blob/main/entities/factory-missions-multi-agent-shipping-for-days-luke.md)。 相关主题通过 [AutoResearch 异步多 Agent AI 寒武纪新阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-next-phase-async-multi-agent-ai寒武纪.md) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch03/045-agent.md)。 相关主题通过 [AutoResearch 异步多 Agent AI 寒武纪新阶段](ch04/277-ai.md) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -42,11 +42,11 @@
 
 ## 相关实体
 
-- [一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](https://github.com/QianJinGuo/wiki/blob/main/entities/factory-missions-multi-agent-shipping-for-days-luke.md)
-- [AutoResearch 异步多 Agent AI 寒武纪新阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-next-phase-async-multi-agent-ai寒武纪.md)
-- [Anthropic Multi Agent Research System](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-multi-agent-research-system.md)
-- [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey.md)
-- [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](https://github.com/QianJinGuo/wiki/blob/main/entities/orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne.md)
+- [一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch03/045-agent.md)
+- [AutoResearch 异步多 Agent AI 寒武纪新阶段](ch04/277-ai.md)
+- [Anthropic Multi Agent Research System](ch04/495-anthropic-multi-agent-research-system.md)
+- [Code as Agent Harness 综述](ch09/051-code-as-agent-harness.md)
+- [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](ch04/277-ai.md)
 
 ---
 

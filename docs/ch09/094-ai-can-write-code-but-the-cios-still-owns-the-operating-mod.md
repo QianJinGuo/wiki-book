@@ -9,11 +9,11 @@
 - AI Can Write Code but CIOs Own the Operating Model
 
 ## 相关实体
-- [Ai Is Writing More Code Your Ci Pipeline](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-is-writing-more-code-your-ci-pipeline.md)
-- [From System Of Record To System Of Intelligence](https://github.com/QianJinGuo/wiki/blob/main/entities/from-system-of-record-to-system-of-intelligence.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
-- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](https://github.com/QianJinGuo/wiki/blob/main/entities/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
-- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](https://github.com/QianJinGuo/wiki/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
+- [Ai Is Writing More Code Your Ci Pipeline](ch04/277-ai.md)
+- [From System Of Record To System Of Intelligence](ch04/264-from-system-of-record-to-system-of-intelligence.md)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/968-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
+- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](ch04/277-ai.md)
+- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/256-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-can-write-code-cios-operating-model.md)
 

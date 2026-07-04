@@ -99,9 +99,9 @@ v1.2.0 → v1.3.0 diff:
 ## 与已有实体的关联
 
 - Hermes Agent Skill Authoring — Skill 规范与编写指南
-- [Claude Code Skill Writing Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skill-writing-guide.md) — 另一套 Skill 编写范式
-- [高德 Uplift Model Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/gaode-uplift-model-iteration-agent-harness.md) — 类似的版本演进思路
-- [阿里云 LoongSuite Pilot](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md) — 企业级 Agent 系统的质量保障
+- [Claude Code Skill Writing Guide](ch04/256-skill.md) — 另一套 Skill 编写范式
+- [高德 Uplift Model Harness](ch03/045-agent.md) — 类似的版本演进思路
+- [阿里云 LoongSuite Pilot](ch09/047-coding-agent.md) — 企业级 Agent 系统的质量保障
 
 ## 结论
 

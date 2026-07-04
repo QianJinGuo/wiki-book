@@ -55,9 +55,9 @@ Boris 提出了 5 条让 Opus 系统自动运行数小时或数天的技巧：
 
 ## 与已有实体的关联
 
-- [OpenClaw 技术架构分析](https://github.com/QianJinGuo/wiki/blob/main/entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md) — 本文补充了设计哲学层面的循环范式
-- [Agent 架构演进](https://github.com/QianJinGuo/wiki/blob/main/entities/17-agent-architectures-evolution.md) — 可作为循环阶段的系统性补充
-- [Hermes Agent 0.14 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-v014-core-architecture-shugex.md) — 具体实现层面的循环机制
+- [OpenClaw 技术架构分析](ch01/217-0.md) — 本文补充了设计哲学层面的循环范式
+- [Agent 架构演进](ch03/045-agent.md) — 可作为循环阶段的系统性补充
+- [Hermes Agent 0.14 架构](ch01/217-0.md) — 具体实现层面的循环机制
 
 ## 核心论点
 
@@ -116,7 +116,7 @@ Claude Code 的 agent loop 遵循"tool call → observation → reasoning → ne
 多步 loop 需要维护跨步骤的状态——使用 working set / scratchpad 模式，避免上下文溢出。
 
 ## 相关实体
-- [Steipete Skill Cleaner Liangzide](https://github.com/QianJinGuo/wiki/blob/main/entities/steipete-skill-cleaner-liangzide.md)
+- [Steipete Skill Cleaner Liangzide](ch04/256-skill.md)
 
 ---
 

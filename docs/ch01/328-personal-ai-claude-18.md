@@ -221,7 +221,7 @@ good example:   ^[原文存档](https://raw.githubusercontent.com/QianJinGuo/wik
 ## 关联阅读
 - 原文：https://mp.weixin.qq.com/s/pAVt6MeapUIDyVu256FI4w（若飞/架构师，2026-05-18）
 - 属于 JiaGouX 公众号 Harness 系列文章之一（Agent Harness、Memory、Goal、Skills、Personal Harness）
-- [Agent Memory 架构本质](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)
+- [Agent Memory 架构本质](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md) ^[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)]
 

@@ -113,7 +113,7 @@ Chaplin 的长期愿景是与 AWS DevOps Agent 集成，实现从自助分析到
 
 - [MCP 模型上下文协议](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md)
 - [Agent 架构模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-patterns.md)
-- [AWS Bedrock AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore.md)
+- [AWS Bedrock AgentCore](ch11/231-aws-bedrock-agentcore.md)
 - [MOC: MCP 工具使用模式](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

@@ -24,7 +24,7 @@ AI正在从少数人的工具，变成所有人的日常。
 
 ## 相关实体
 
-- [Karpathy Vibe Coding To Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md) - Agentic Engineering相关
+- [Karpathy Vibe Coding To Agentic Engineering](ch03/045-agent.md) - Agentic Engineering相关
 - [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) - 自主Agent系统概念
 
 ## 深度分析

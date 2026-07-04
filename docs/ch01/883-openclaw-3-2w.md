@@ -43,12 +43,12 @@
 
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Ai Friendly Architecture Design Taobao](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-friendly-architecture-design-taobao.md)
-- [Ai Agent Harness Construction Akshay Baoyu](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-harness-construction-akshay-baoyu.md)
-- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](https://github.com/QianJinGuo/wiki/blob/main/entities/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](https://github.com/QianJinGuo/wiki/blob/main/entities/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
-- [Hermes Agent V014 Architecture Shugex](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-v014-architecture-shugex.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
+- [Ai Friendly Architecture Design Taobao](ch04/277-ai.md)
+- [Ai Agent Harness Construction Akshay Baoyu](ch04/277-ai.md)
+- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](ch04/277-ai.md)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch04/277-ai.md)
+- [Hermes Agent V014 Architecture Shugex](ch01/217-0.md)
 
 ## 实践启示
 

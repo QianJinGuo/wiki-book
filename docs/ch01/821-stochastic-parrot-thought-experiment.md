@@ -11,11 +11,11 @@ Now, let's consider two training scenarios:
 1. The first scenario involves training a standard LLM on this corpus through the typical autoregressive next-word prediction method used by contemporary models.
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-thought-experiment.md)
-- [While Breathless In Stodgy Viridian](https://github.com/QianJinGuo/wiki/blob/main/entities/while-breathless-in-stodgy-viridian.md)
-- [Stochastic Parrot Deep Mystery Llms](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-deep-mystery-llms.md)
-- [Stochastic Parrot Marcus Ai Productivity](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-marcus-ai-productivity.md)
-- [Aws Grpo Rlvr Sagemaker Math Reasoning](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md)
+- [Stochastic Parrot Thought Experiment](ch01/821-stochastic-parrot-thought-experiment.md)
+- [While Breathless In Stodgy Viridian](ch01/558-while-breathless-in-stodgy-viridian.md)
+- [Stochastic Parrot Deep Mystery Llms](ch01/722-stochastic-parrot-deep-mystery-llms.md)
+- [Stochastic Parrot Marcus Ai Productivity](ch11/068-stochastic-parrot-marcus-ai-productivity.md)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/098-aws-grpo-rlvr-sagemaker-math-reasoning.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stochastic-parrot-thought-experiment.md)
 

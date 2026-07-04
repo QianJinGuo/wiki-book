@@ -252,15 +252,15 @@ MSA 论文花了大量篇幅讲"试过、没用、砍掉"：
 
 ## 与现有实体的互补关系
 
-- [MiniMax M3 开源 Frontier 模型](https://github.com/QianJinGuo/wiki/blob/main/entities/minimax-m3-frontier-open-source-model.md) — MSA 是 M3 的核心架构创新
-- [DeepSeek V4 Flash Pro 1M 上下文](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元-v2.md) — 压得狠路线的最新代表
-- [DeepSeek V4 训练方法学](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-training-methodology.md) — 训练配方对比
+- [MiniMax M3 开源 Frontier 模型](ch09/071-minimax-m3-frontier.md) — MSA 是 M3 的核心架构创新
+- [DeepSeek V4 Flash Pro 1M 上下文](ch01/974-deepseek-v4.md) — 压得狠路线的最新代表
+- [DeepSeek V4 训练方法学](ch04/277-ai.md) — 训练配方对比
 - [Lighthouse Attention](https://github.com/QianJinGuo/wiki/blob/main/entities/lighthouse_attention.md) — 另一款稀疏 attention 方案（对称 Q/K/V 池化）
 - [Attention Mechanism](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md) — 稀疏注意力的概念基础
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 长上下文管理的核心议题
-- [近期 LLM 架构进展](https://github.com/QianJinGuo/wiki/blob/main/entities/recent-developments-in-llm-architectures-jiqizhixin.md) — 注意力架构的近期综述
+- [近期 LLM 架构进展](ch01/606-llm.md) — 注意力架构的近期综述
 - [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) — KL 对齐作为 "强教弱" 范式的理论基础
-- [M3 开源三件套](https://github.com/QianJinGuo/wiki/blob/main/entities/minimax-m3-frontier-three-set-open-source.md) — 同一文章的不同角度解读
+- [M3 开源三件套](ch09/071-minimax-m3-frontier.md) — 同一文章的不同角度解读
 
 ## 总结：长上下文之争转向"成本"
 

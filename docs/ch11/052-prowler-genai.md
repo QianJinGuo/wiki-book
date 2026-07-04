@@ -13,11 +13,11 @@
 *(Add your notes here)*
 
 ## 相关实体
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](https://github.com/QianJinGuo/wiki/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
-- [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](https://github.com/QianJinGuo/wiki/blob/main/entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for-.md)
-- [CloudSectiDbits](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudsectidbits.md)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-identity-security.md)
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-api-security-guide.md)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](ch04/277-ai.md)
+- [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](ch11/210-restrict-access-to-sensitive-documents-in-your-amazon-quick.md)
+- [CloudSectiDbits](ch11/224-cloudsectidbits.md)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch03/045-agent.md)
+- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/033-amazon-bedrock-api.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 ## 深度分析

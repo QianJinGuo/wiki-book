@@ -72,7 +72,7 @@ Agent 写代码 → 代码调函数 → 函数操作电子表格。**没有 read
 2. **execute_code 把所有决策折叠成一步**——让模型用编程语言的完整表达力组合各种能力，而非拼凑僵硬的工具调用
 3. **三个缓存层从同一个入口触达**——模型始终在写代码，L1/L2/L3 只决定它知道哪些函数可调用，以及找到这些函数要付出多少代价
 
-### 与 [Anthropic 工具数量陷阱](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-tool-count-trap.md) 的对比
+### 与 [Anthropic 工具数量陷阱](ch04/277-ai.md) 的对比
 
 | 维度 | Anthropic 答案 | 本文答案 |
 |------|----------------|----------|
@@ -273,16 +273,16 @@ grep -n '"isEnum": true' api-reference.json -B2 -A10  # 枚举所有枚举值
 
 ## 与现有实体的互补关系
 
-- [AI Agent 工具数量陷阱](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-tool-count-trap.md) — "5-10 工具"是 Anthropic 答案；"1 execute_code"是本文答案（更激进的同向论述）
-- [Agent Harness 上下文管理工作集视角](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — 工作集是 **L1 内部**的精细化设计；本文是工作集的 L1/L2/L3 宏观扩展
-- [智能体编排层中的上下文管理架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-context-management-architecture-patterns.md) — 框架主动约束 vs 模型自主管理的权衡；本文是同向的更激进的 execute_code 推论
+- [AI Agent 工具数量陷阱](ch04/277-ai.md) — "5-10 工具"是 Anthropic 答案；"1 execute_code"是本文答案（更激进的同向论述）
+- [Agent Harness 上下文管理工作集视角](ch03/045-agent.md) — 工作集是 **L1 内部**的精细化设计；本文是工作集的 L1/L2/L3 宏观扩展
+- [智能体编排层中的上下文管理架构](ch03/045-agent.md) — 框架主动约束 vs 模型自主管理的权衡；本文是同向的更激进的 execute_code 推论
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 上下文工程的概念基础
-- [Code as Agent Harness Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey.md) — 编程语言作为 Agent 接口的更广义论述
-- [Claude Code 工具设计演进](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-tool-design-evolution-anthropic.md) — Anthropic 工具设计的演进
+- [Code as Agent Harness Survey](ch09/051-code-as-agent-harness.md) — 编程语言作为 Agent 接口的更广义论述
+- [Claude Code 工具设计演进](ch03/075-claude-code.md) — Anthropic 工具设计的演进
 - [上下文工程三种记忆范式对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md) — 记忆/上下文/信息的层级
-- [Claude Code 上下文工程 Thariq](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-context-engineering-anthropic-thariq.md) — 官方 Anthropic 视角
-- [Codex 上下文工程 LastWhisper](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-context-engineering-lastwhisper-thinking-in-context.md) — 另一家 Code 厂商的上下文视角
-- [上下文工程系列](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-infrastructure-practice-series-nine-context-engineering.md) — 系列化上下文工程讨论
+- [Claude Code 上下文工程 Thariq](ch03/075-claude-code.md) — 官方 Anthropic 视角
+- [Codex 上下文工程 LastWhisper](ch01/542-codex.md) — 另一家 Code 厂商的上下文视角
+- [上下文工程系列](ch04/277-ai.md) — 系列化上下文工程讨论
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cpu-cache-analogy-agent-context-management-liwen-2026-06-12.md)
 

@@ -79,8 +79,8 @@ Ball 的加入对开源模型政策有深远影响。作为长期关注开放权
 
 ## 相关实体
 
-- [Nathan Lambert 论开源权重](https://github.com/QianJinGuo/wiki/blob/main/entities/nathan-lambert-claude-mythos-open-weights.md)
-- [Dean Ball 政策观点](https://github.com/QianJinGuo/wiki/blob/main/entities/dean-ball-on-open-models-and-government-control.md)
+- [Nathan Lambert 论开源权重](ch01/471-nathan-lambert.md)
+- [Dean Ball 政策观点](ch01/778-dean-ball-on-open-models-and-government-control.md)
 - [MOC: LLM 研究前沿](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 
 ---

@@ -37,11 +37,11 @@ Amazon Bedrock模型推理的Serverless 异步架构 – 处理在线多模态�
 八、总结
 
 ## 相关实体
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
-- [Aws Bedrock Serverless Async Inference Multimodal](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-serverless-async-inference-multimodal.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
-- [Aws Bedrock Serverless Async Inference Sqs Lambda](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](ch03/045-agent.md)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/277-ai.md)
+- [Aws Bedrock Serverless Async Inference Multimodal](ch11/253-bedrock.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/045-agent.md)
+- [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/253-bedrock.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
 

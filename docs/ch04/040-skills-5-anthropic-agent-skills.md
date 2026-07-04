@@ -272,25 +272,25 @@ Spec 驱动原则强调项目评估、技术方案等前置环节的准确性—
 
 ### 9.1 Skill 主题相关
 
-- [Skill Hub Organization Asset Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-hub-organization-asset-winty.md)：**winty Skill Hub 系列**（3 来源合并 / 550 行 / Skill Hub 组织 + 质量门禁 + 生命周期 6 阶段）—— 与本文 **企业级 Skill 实战** 视角深度互补
-- [Agent Skills Comprehensive Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skills-comprehensive-survey.md)：Agent Skills 系统性综述（表示 → 获取 → 检索 → 进化）—— 与本文 Skills 体系完整图景
-- [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-system-design-three-way-comparison.md)：OpenClaw / Claude Code / Hermes Skills 系统设计对比
-- [Skill Craft](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-craft.md)：Skill Craft — Claude Skill 质量工程框架
-- [Skill Writing Patterns Best Practices](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-writing-patterns-best-practices.md)：7 个顶级 Skill 提炼的模式与最佳实践
-- [Skill Development Guide Linyi](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-development-guide-linyi.md)：重新定义 Skill 开发保姆级教程
+- [Skill Hub Organization Asset Winty](ch04/256-skill.md)：**winty Skill Hub 系列**（3 来源合并 / 550 行 / Skill Hub 组织 + 质量门禁 + 生命周期 6 阶段）—— 与本文 **企业级 Skill 实战** 视角深度互补
+- [Agent Skills Comprehensive Survey](ch04/256-skill.md)：Agent Skills 系统性综述（表示 → 获取 → 检索 → 进化）—— 与本文 Skills 体系完整图景
+- [Skill System Design Three Way Comparison](ch04/256-skill.md)：OpenClaw / Claude Code / Hermes Skills 系统设计对比
+- [Skill Craft](ch04/256-skill.md)：Skill Craft — Claude Skill 质量工程框架
+- [Skill Writing Patterns Best Practices](ch04/256-skill.md)：7 个顶级 Skill 提炼的模式与最佳实践
+- [Skill Development Guide Linyi](ch04/256-skill.md)：重新定义 Skill 开发保姆级教程
 
 ### 9.2 Harness / 工具 / 范式相关
 
-- [Harness Engineering Paradigm Comprehensive 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-paradigm-comprehensive-2026.md)：Harness Engineering 综合论述（2026 年真正重要的是 Harness）
-- [Harness Engineering Core Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns.md)：Harness Engineering 核心模式（持久化指令/分层记忆/Session-Harness-Sandbox/凭证安全）
-- [Claude Code Skills Mcp Rules Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)：Claude Code Skills/MCP/Rules 源码分析
-- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](https://github.com/QianJinGuo/wiki/blob/main/entities/three-tools-comet-openspec-superpowers-ai-coding-shuge-2026-06-17.md)：OpenSpec 工具（本文阶段 3 SDD 直接使用）+ Superpowers 工程取舍
+- [Harness Engineering Paradigm Comprehensive 2026](ch05/061-harness-engineering.md)：Harness Engineering 综合论述（2026 年真正重要的是 Harness）
+- [Harness Engineering Core Patterns](ch05/061-harness-engineering.md)：Harness Engineering 核心模式（持久化指令/分层记忆/Session-Harness-Sandbox/凭证安全）
+- [Claude Code Skills Mcp Rules Source Analysis](ch04/256-skill.md)：Claude Code Skills/MCP/Rules 源码分析
+- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](ch04/277-ai.md)：OpenSpec 工具（本文阶段 3 SDD 直接使用）+ Superpowers 工程取舍
 
 ### 9.3 实战案例相关
 
 - `raw/articles/agent-skill-iterative-writing-taobao-logistics.md`：**同公司（淘天集团）不同团队（物流技术 其林 2026-06-12）** 的 Skill 迭代式编写实战——**孤儿 raw 无 entity**（建议后续批处理整合，本文仅标注，不合并避免 scope creep）
-- [Ai Skills Middleware Migration Android Harmonyos Taobao 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skills-middleware-migration-android-harmonyos-taobao-2026.md)：淘天 AI Skills 中间件迁移（Android→HarmonyOS）
-- [Agent Memory Evaluation Landscape Taobao Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-evaluation-landscape-taobao-survey.md)：淘天 Agent Memory 评测综述
+- [Ai Skills Middleware Migration Android Harmonyos Taobao 2026](ch04/256-skill.md)：淘天 AI Skills 中间件迁移（Android→HarmonyOS）
+- [Agent Memory Evaluation Landscape Taobao Survey](ch03/045-agent.md)：淘天 Agent Memory 评测综述
 
 ## 10. 孤儿 raw 提示（pre-existing issue）
 

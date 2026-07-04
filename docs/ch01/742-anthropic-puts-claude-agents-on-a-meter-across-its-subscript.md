@@ -23,21 +23,21 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-claude-agents-meter-infoworld.md)
 
 ## 相关实体
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
-- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-long-running-agent-adversarial-architecture.md)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/075-claude-code.md)
+- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch04/277-ai.md)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch03/045-agent.md)
 > ai agent platforms topic map（已删除）
 
-- [Claude Managed Agents 开发者指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-developer-guide.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
-- [Introducing Claude for Small Business](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-for-small-business.md)
-- [Introducing Claude for Small Business](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-for-small-business.md)
-- [Xero Announces Integration with Anthropic's Claude](https://github.com/QianJinGuo/wiki/blob/main/entities/xero-announces-integration-with-anthropics-claude.md)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-next-gen-alex-infoq.md)
-- [Anthropic Claude Managed Agents 平台正式发布](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
-- [Claude Managed Agents 官方 Harness 平台指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-guide.md)
-- [Anthropic Computer Use 最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-computer-use-best-practices.md)
+- [Claude Managed Agents 开发者指南](ch03/045-agent.md)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/075-claude-code.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch03/045-agent.md)
+- [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.md)
+- [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.md)
+- [Xero Announces Integration with Anthropic's Claude](ch01/854-anthropic.md)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1110-anthropic-claude.md)
+- [Anthropic Claude Managed Agents 平台正式发布](ch01/217-0.md)
+- [Claude Managed Agents 官方 Harness 平台指南](ch03/045-agent.md)
+- [Anthropic Computer Use 最佳实践](ch01/830-anthropic-computer-use.md)
 
 ## 深度分析
 **从 Token 计费到 Agent-Aware 计费的范式转变**

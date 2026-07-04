@@ -314,19 +314,19 @@ Agent输出：{agent_output}
 
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
-| [Ai Evals Methodology](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-evals-methodology.md) | **方法论概念层** | 概念页：人工/代码/LLM-as-Judge 三大评估类型 + 何时需要评估器的判断框架；本文是其在 Agent 场景的工程化展开 |
-| [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md) | **YAML 驱动框架** | AgentEval 工具（130 行）：YAML 驱动的 Agent 评测框架 + pass@k + Golang + CI-CD |
-| [Agent Evalkit Aws Opensource Cli Agent Eval Toolkit](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evalkit-aws-opensource-cli-agent-eval-toolkit.md) | **AWS 开源工具** | AgentEvalKit：AWS 开源的 CLI Agent 评测工具包 |
-| [Aws Reinforcement Fine Tuning Llm As Judge](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-reinforcement-fine-tuning-llm-as-judge.md) | **LLM-as-Judge RFT** | AWS 用 LLM-as-Judge 做 RLHF/RFT 的实践 |
-| [Spotify Llm Evals Funnel Not Fork](https://github.com/QianJinGuo/wiki/blob/main/entities/spotify-llm-evals-funnel-not-fork.md) | **评测漏斗** | Spotify：评测要 funnel 而非 fork |
-| [Langsmith Trajectory Evals](https://github.com/QianJinGuo/wiki/blob/main/entities/langsmith-trajectory-evals.md) | **LangSmith trace 评测** | LangSmith trajectory 级评测 |
-| [Saas Bench Gui Agent Eval Unipat](https://github.com/QianJinGuo/wiki/blob/main/entities/saas-bench-gui-agent-eval-unipat.md) | **GUI Agent 评测** | SaaS-Bench：GUI Agent 评测基准 |
-| [Taobao Smart Shopping Guide Agent Evaluation Pzmx](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-smart-shopping-guide-agent-evaluation-pzmx.md) | **电商导购 Agent 评测** | 淘天智能导购 Agent 评测实践 |
-| [Aliyun Agentloop Enterprise Agent Self Evolution Flywheel](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md) | **阿里 AgentLoop** | 4 环飞轮中"评估环"的产品化（Agent-as-a-Judge 13 个评估器） |
-| [Harness Engineered Business Agent Evaluation Aliyun Boyu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md) | **业务 Agent 评测** | 阿里"伯禹"业务 Agent 评测实践 |
-| [Better Harness Eval Trace Harness Hill Climbing](https://github.com/QianJinGuo/wiki/blob/main/entities/better-harness-eval-trace-harness-hill-climbing.md) | **trace 评测** | trace 级 harness 爬坡的工程方法 |
-| [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](https://github.com/QianJinGuo/wiki/blob/main/entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md) | **SWE-Bench 评测** | Claw-SWE-Bench：harness 对编程 Agent 影响的独立基准 |
-| [Anthropic Demystifying Evals For Ai Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-demystifying-evals-for-ai-agents.md) | **Anthropic evals** | Anthropic Agent 评测揭秘 |
+| [Ai Evals Methodology](ch04/277-ai.md) | **方法论概念层** | 概念页：人工/代码/LLM-as-Judge 三大评估类型 + 何时需要评估器的判断框架；本文是其在 Agent 场景的工程化展开 |
+| [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch03/045-agent.md) | **YAML 驱动框架** | AgentEval 工具（130 行）：YAML 驱动的 Agent 评测框架 + pass@k + Golang + CI-CD |
+| [Agent Evalkit Aws Opensource Cli Agent Eval Toolkit](ch03/045-agent.md) | **AWS 开源工具** | AgentEvalKit：AWS 开源的 CLI Agent 评测工具包 |
+| [Aws Reinforcement Fine Tuning Llm As Judge](ch01/606-llm.md) | **LLM-as-Judge RFT** | AWS 用 LLM-as-Judge 做 RLHF/RFT 的实践 |
+| [Spotify Llm Evals Funnel Not Fork](ch01/606-llm.md) | **评测漏斗** | Spotify：评测要 funnel 而非 fork |
+| [Langsmith Trajectory Evals](ch01/713-langsmith-trajectory-evals.md) | **LangSmith trace 评测** | LangSmith trajectory 级评测 |
+| [Saas Bench Gui Agent Eval Unipat](ch03/045-agent.md) | **GUI Agent 评测** | SaaS-Bench：GUI Agent 评测基准 |
+| [Taobao Smart Shopping Guide Agent Evaluation Pzmx](ch03/045-agent.md) | **电商导购 Agent 评测** | 淘天智能导购 Agent 评测实践 |
+| [Aliyun Agentloop Enterprise Agent Self Evolution Flywheel](ch03/045-agent.md) | **阿里 AgentLoop** | 4 环飞轮中"评估环"的产品化（Agent-as-a-Judge 13 个评估器） |
+| [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch03/045-agent.md) | **业务 Agent 评测** | 阿里"伯禹"业务 Agent 评测实践 |
+| [Better Harness Eval Trace Harness Hill Climbing](ch05/009-harness.md) | **trace 评测** | trace 级 harness 爬坡的工程方法 |
+| [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](ch05/009-harness.md) | **SWE-Bench 评测** | Claw-SWE-Bench：harness 对编程 Agent 影响的独立基准 |
+| [Anthropic Demystifying Evals For Ai Agents](ch04/423-anthropic-demystifying-evals-for-ai-agents.md) | **Anthropic evals** | Anthropic Agent 评测揭秘 |
 
 ## 十一、实践启示
 

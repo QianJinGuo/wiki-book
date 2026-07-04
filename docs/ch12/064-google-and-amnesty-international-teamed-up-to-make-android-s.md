@@ -12,8 +12,8 @@
 - 目前仅支持 Pixel 设备，需要 Android 16 和 Google 账户
 ## 相关实体
 - [Google Amnesty Spyware Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/google-amnesty-spyware-detection.md)
-- [Google And Amnesty International Teamed Up To Make Android S](https://github.com/QianJinGuo/wiki/blob/main/entities/google-and-amnesty-international-teamed-up-to-make-android-s.md)
-- [Shub Reaper Macos Stealer Attack Chain](https://github.com/QianJinGuo/wiki/blob/main/entities/shub-reaper-macos-stealer-attack-chain.md)
+- [Google And Amnesty International Teamed Up To Make Android S](ch12/064-google-and-amnesty-international-teamed-up-to-make-android-s.md)
+- [Shub Reaper Macos Stealer Attack Chain](ch04/277-ai.md)
 - [Google And Amnesty International Teamed Up To Make It Harder](https://github.com/QianJinGuo/wiki/blob/main/entities/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
 

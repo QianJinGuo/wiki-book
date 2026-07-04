@@ -37,11 +37,11 @@ AI 辅助开发正在从根本上改变代码生产节奏。Stack Overflow 2025 
 **5. 衡量真正的工程效能指标。** 除了代码产出量，还应关注流水线完成时间、工程师等待时间、重跑率等指标。一 个 6 小时预提交测试降至 2 小时带来的工程效能提升，远比单纯的代码行数增长更有价值。
 
 ## 相关实体
-- [Ai Can Write Code Cios Operating Model](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-can-write-code-cios-operating-model.md)
-- [Aws Network Firewall Ai Conflict Detection Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-network-firewall-ai-conflict-detection-bedrock.md)
-- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](https://github.com/QianJinGuo/wiki/blob/main/entities/从提需求到部署发布全ai全自动化后研发效能全面跃升.md)
-- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](https://github.com/QianJinGuo/wiki/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
+- [Ai Can Write Code Cios Operating Model](ch04/277-ai.md)
+- [Aws Network Firewall Ai Conflict Detection Bedrock](ch04/277-ai.md)
+- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch04/277-ai.md)
+- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch04/277-ai.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-is-writing-more-code-your-ci-pipeline.md)
 

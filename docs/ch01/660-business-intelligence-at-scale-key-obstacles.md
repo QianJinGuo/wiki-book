@@ -58,11 +58,11 @@ NarrateAI batch-generates comprehensive persona-based narratives for each user t
 ### Conversational AI
 
 ## 相关实体
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](https://github.com/QianJinGuo/wiki/blob/main/entities/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](https://github.com/QianJinGuo/wiki/blob/main/entities/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
-- [Process Financial Documents Using Amazon Bedrock Data Automa](https://github.com/QianJinGuo/wiki/blob/main/entities/process-financial-documents-using-amazon-bedrock-data-automa.md)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/253-bedrock.md)
+- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch04/277-ai.md)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch11/202-amazon-quick.md)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](ch04/277-ai.md)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/253-bedrock.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
 

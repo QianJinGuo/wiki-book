@@ -23,7 +23,7 @@
 - 基础设施完备度（算力、存储、网络）
 - 数据治理成熟度（质量、标注、版本管理）
 - AI 平台能力（训练、推理、监控）
-**流程维度**  See also [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
+**流程维度**  See also [Harness Engineering](ch05/061-harness-engineering.md)
 
 - 需求发现与优先级排序机制
 - AI 项目的立项与变更流程

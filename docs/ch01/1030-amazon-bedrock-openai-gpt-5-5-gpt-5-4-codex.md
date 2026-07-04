@@ -20,12 +20,12 @@ Amazon Bedrock 正式接入 OpenAI GPT-5.5、GPT-5.4 模型和 Codex，标志跨
 
 ### 关联实体
 
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](https://github.com/QianJinGuo/wiki/blob/main/entities/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch04/277-ai.md)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
-- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](https://github.com/QianJinGuo/wiki/blob/main/entities/全球ai新王诞生anthropic估值冲爆12万亿首次反超openai.md)
-- [Openai Models And Codex On Amazon Bedrock Are Now Generally ](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-models-and-codex-on-amazon-bedrock-are-now-generally-.md)
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
-- [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
+- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](ch04/277-ai.md)
+- [Openai Models And Codex On Amazon Bedrock Are Now Generally ](ch04/277-ai.md)
+- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](ch11/259-amazon-nova.md)
+- [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](ch04/277-ai.md)
 
 ## 实践启示
 

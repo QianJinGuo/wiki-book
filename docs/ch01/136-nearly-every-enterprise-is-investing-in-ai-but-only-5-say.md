@@ -33,11 +33,11 @@
 4. **小步快跑验证数据假设**：在大规模AI投资前，通过PoC验证核心数据的可用性，避免大规模沉没成本
 5. **数据治理成熟度评估**：将数据治理成熟度作为AI项目立项的前置条件
 ## 相关实体
-- [Enterprise Ai Investment Data Readiness Cio](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-ai-investment-data-readiness-cio.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
-- [Shinyhunters Canvas Domain Suspended](https://github.com/QianJinGuo/wiki/blob/main/entities/shinyhunters-canvas-domain-suspended.md)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki/blob/main/entities/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
-- [Clinereleasesopen Sourceagentruntimesdk](https://github.com/QianJinGuo/wiki/blob/main/entities/clinereleasesopen-sourceagentruntimesdk.md)
+- [Enterprise Ai Investment Data Readiness Cio](ch04/277-ai.md)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/968-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
+- [Shinyhunters Canvas Domain Suspended](ch04/277-ai.md)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/277-ai.md)
+- [Clinereleasesopen Sourceagentruntimesdk](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
 

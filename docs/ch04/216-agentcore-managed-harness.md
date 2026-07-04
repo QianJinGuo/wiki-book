@@ -85,7 +85,7 @@ npm i -g @aws/agentcore@preview   # 安装CLI
 | 成本 | 用多少算多少 | 固定人力成本 |
 
 ## 关联分析
-本文与 [Claude Code 架构解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture.md) 高度相关：
+本文与 [Claude Code 架构解析](ch03/075-claude-code.md) 高度相关：
 
 - Claude Code 拆解的七大模块（Tool Runtime / Permission / Query Loop / Task System / 扩展层）本质都是 **Harness 的一部分**
 - AgentCore 是云厂商对"每个团队都在重复造轮子"这一痛点的**平台化回应**
@@ -141,25 +141,25 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 
 ## Related
 - [原始文章存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentcore-managed-harness.md)
-- [OpenClaw多租户迁移: Phase 2&3部署](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-4.md)
-- [AgentCore Runtime部署Apache Doris MCP Server](https://github.com/QianJinGuo/wiki/blob/main/entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-identity-security.md)
-- [OpenClaw多租户迁移: 背景与架构概览](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-1.md)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-3.md)
-- [柚漫剧 AI 全流程提效拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-os-level-actions-browser.md)
-- [Amazon Bedrock模型推理的Serverless异步架构](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
-- [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey.md)
-- [harness-engineering-systematic-explainer](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-explainer.md)
-- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
+- [OpenClaw多租户迁移: Phase 2&3部署](ch11/215-openclaw.md)
+- [AgentCore Runtime部署Apache Doris MCP Server](ch04/277-ai.md)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch03/045-agent.md)
+- [OpenClaw多租户迁移: 背景与架构概览](ch11/215-openclaw.md)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/215-openclaw.md)
+- [柚漫剧 AI 全流程提效拆解](ch04/277-ai.md)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch03/045-agent.md)
+- [Amazon Bedrock模型推理的Serverless异步架构](ch11/253-bedrock.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/215-openclaw.md)
+- [Code as Agent Harness 综述](ch09/051-code-as-agent-harness.md)
+- [harness-engineering-systematic-explainer](ch04/277-ai.md)
+- [AI Agent 工程师能力地图](ch04/277-ai.md)
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/045-agent.md)
 
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
-- [Your Chief Agent Operator Lobehub](https://github.com/QianJinGuo/wiki/blob/main/entities/your-chief-agent-operator-lobehub.md)
-- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](https://github.com/QianJinGuo/wiki/blob/main/entities/当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架.md)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch03/045-agent.md)
+- [Your Chief Agent Operator Lobehub](ch04/397-your-chief-agent-operator-lobehub.md)
+- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

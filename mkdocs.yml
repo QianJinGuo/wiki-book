@@ -3,7 +3,7 @@ site_description: "基于 2496 篇一手 AI 材料系统编撰的开源读物 �
 repo_url: "https://github.com/QianJinGuo/wiki-book"
 repo_name: "QianJinGuo/wiki-book"
 site_url: "https://wiki.jinguo.tech"
-use_directory_urls: true
+use_directory_urls: false
 
 theme:
   name: material

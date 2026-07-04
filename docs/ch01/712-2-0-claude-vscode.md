@@ -12,11 +12,11 @@
 每天用 Comate 写代码，但配额是月度的。经常到月底才发现快用完了，或者不知道哪个模型消耗最快。
 
 ## 相关实体
-- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](https://github.com/QianJinGuo/wiki/blob/main/entities/2-小时0-行手写代码我用-claude-做了一个生产级-vscode-插件.md)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](https://github.com/QianJinGuo/wiki/blob/main/entities/www.infoworld-4171274-anthropic-puts-claude-agents-on-a-meter-across-its-subscri.md)
-- [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
-- [Skill Factory Yueheng](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-factory-yueheng.md)
-- [Code Review Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/code-review-graph.md)
+- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](ch01/217-0.md)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch03/045-agent.md)
+- [Claude Code Self Repair Hooks Memory Config](ch04/277-ai.md)
+- [Skill Factory Yueheng](ch04/256-skill.md)
+- [Code Review Graph](ch01/688-claude-code-code-review-graph.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-vscode-plugin-zero-code.md)
 

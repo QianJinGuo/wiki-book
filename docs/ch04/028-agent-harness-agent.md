@@ -607,19 +607,19 @@ class RecoveryManager:
 → [C4 架构图](assets/c4/agent-harness-architecture-design-production-guide-c4.html)
 
 ## 相关实体
-- [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey.md)
-- [Agent Harness Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
-- [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
-- [Agentic Ai System Architecture Harness Skill Mcp](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
-- [Harness Production Agent Engineering Deficit](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-production-agent-engineering-deficit.md)
+- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.md)
+- [Agent Harness Architecture](ch03/045-agent.md)
+- [Agentscope Java Harness Framework Enterprise Distributed](ch03/045-agent.md)
+- [Agentic Ai System Architecture Harness Skill Mcp](ch04/256-skill.md)
+- [Harness Production Agent Engineering Deficit](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-architecture-design-production-guide.md)（主源）
 → [Harness Engineering 综合性指南](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-comprehensive-guide-conardli.md)
 → [Claude Code 12 个设计模式](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-agentic-harness-design-patterns.md)
 → [ETCLOVG Survey (CMU 2026)](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-engineering-survey-2026.md)
 
-- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](https://github.com/QianJinGuo/wiki/blob/main/entities/versa-takes-aim-at-fragmented-enterprise-security-with-cspm-orchestration-updat.md)
-- [k-dense — the model is no longer the bottleneck](https://github.com/QianJinGuo/wiki/blob/main/entities/k-dense-the-model-is-no-longer-the-bottleneck.md)
+- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](ch04/277-ai.md)
+- [k-dense — the model is no longer the bottleneck](ch04/160-k-dense-the-model-is-no-longer-the-bottleneck.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

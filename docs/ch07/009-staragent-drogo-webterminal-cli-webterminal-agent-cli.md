@@ -238,11 +238,11 @@ Program terminated with signal SIGSEGV, Segmentation fault.
 
 本文是 **"Agent 远程执行能力"** 的工程化实现：
 
-- [CLI / MCP / SDK 选型](https://github.com/QianJinGuo/wiki/blob/main/entities/cli-mcp-sdk-agent-tool-selection.md) — 工具原语选择（理论层）
-- [AgentCore OpenClaw 多租户](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md) — AWS 视角的远程 Agent
-- [OpenClaw Security 部署](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-openclaw-security-deploy-architecture-guide.md) — OpenClaw 安全部署
+- [CLI / MCP / SDK 选型](ch03/045-agent.md) — 工具原语选择（理论层）
+- [AgentCore OpenClaw 多租户](ch03/045-agent.md) — AWS 视角的远程 Agent
+- [OpenClaw Security 部署](ch11/215-openclaw.md) — OpenClaw 安全部署
 - [DIPG](https://github.com/QianJinGuo/wiki/blob/main/entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md) — 蚂蚁保险 verify 闭环（也是 Agent 远程任务）
-- [250 行 CLI Agent 教程](https://github.com/QianJinGuo/wiki/blob/main/entities/minimal-cli-agent-250-line-python-ollama-7-stages.md) — minimal 教学
+- [250 行 CLI Agent 教程](ch01/217-0.md) — minimal 教学
 
 本文的独特贡献：
 - **WebTerminal 而非 SSH**——企业内部治理链路的现实选择

@@ -6,7 +6,7 @@
 
 ## 深度分析
 
-Sentry 的 Seer Agent 代表了**AI 原生可观测性**的重大跃迁：不是将 LLM 作为聊天界面叠加在现有监控工具之上，而是将自然语言查询直接嵌入遥测数据的语义层。Paul Jaffre 在这个 workshop 中展示的核心场景——用自然语言提问"端到端用户感知延迟是多少"并获得精确答案——意味着开发者无需理解 Sentry 的查询语法或 MetricsQL，直接用业务语言就能驱动调试流程 。 See also [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
+Sentry 的 Seer Agent 代表了**AI 原生可观测性**的重大跃迁：不是将 LLM 作为聊天界面叠加在现有监控工具之上，而是将自然语言查询直接嵌入遥测数据的语义层。Paul Jaffre 在这个 workshop 中展示的核心场景——用自然语言提问"端到端用户感知延迟是多少"并获得精确答案——意味着开发者无需理解 Sentry 的查询语法或 MetricsQL，直接用业务语言就能驱动调试流程 。 See also [Harness Engineering](ch05/061-harness-engineering.md)
 
 Seer Agent 的三个学习目标揭示了 AI 在可观测性领域的三个层次：**行为询问**（"告诉我应用的行為模式"）、**事故调查**（"为什么这个错误率突然升高，哪些功能受影响"）和**隐性问题发现**（"为什么用户有时看到空白设置页"）。这三个层次对应了监控->可观测性->主动发现的技术演进路径，说明 Seer Agent 不仅是一个问答工具，而是一个具备一定推理能力的监控代理 。
 

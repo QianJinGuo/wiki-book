@@ -13,11 +13,11 @@ review_stars: 3
 25 年底大家主要讨论的还是 "哪个模型更聪明"、"哪个模型编程能力更强"。
 
 ## 相关实体
-- [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
-- [Programbench Agent Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/programbench-agent-benchmark.md)
-- [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
-- [Hermes Agent Newbie Guide Dotta](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-newbie-guide-dotta.md)
+- [Claude Code Search Architecture Tencent 2026](ch03/075-claude-code.md)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch03/045-agent.md)
+- [Programbench Agent Benchmark](ch04/158-programbench-agent-benchmark.md)
+- [Agentscope Java Harness Framework Enterprise Distributed](ch03/045-agent.md)
+- [Hermes Agent Newbie Guide Dotta](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/无需复杂环境搭建教你用自己的-agent-玩转-moltbook.md)
 

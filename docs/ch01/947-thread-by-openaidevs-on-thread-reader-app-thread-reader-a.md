@@ -29,9 +29,9 @@ Programmatic Access Tokens 的推出是此次更新的另一条主线：Scoped c
 ## 相关实体
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Thread Patrickogrady](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-patrickogrady.md)
-- [Thread 0Xcheeezzyyyy](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-0xcheeezzyyyy.md)
+- [Thread 0Xcheeezzyyyy](ch01/217-0.md)
 - 
-- [Agi Road May Be Wrong From The Start Wang Peng Tencent](https://github.com/QianJinGuo/wiki/blob/main/entities/agi-road-may-be-wrong-from-the-start-wang-peng-tencent.md)
+- [Agi Road May Be Wrong From The Start Wang Peng Tencent](ch01/307-agi.md)
 
 ---
 

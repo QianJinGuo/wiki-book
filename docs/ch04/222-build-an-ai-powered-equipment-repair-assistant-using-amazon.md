@@ -87,11 +87,11 @@ Strands Agent 的 `@tool` 装饰器模式使得能力扩展无需基础设施变
 
 ## 相关实体
 
-- [Building Web Search Enabled Agents With Strands And Exa](https://github.com/QianJinGuo/wiki/blob/main/entities/building-web-search-enabled-agents-with-strands-and-exa.md) — Strands SDK 构建搜索 Agent 的实践
+- [Building Web Search Enabled Agents With Strands And Exa](ch04/406-building-web-search-enabled-agents-with-strands-and-exa.md) — Strands SDK 构建搜索 Agent 的实践
 - [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md) — Strands SDK 企业级数据查询方案
-- [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) — AgentCore 工程化实践
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](https://github.com/QianJinGuo/wiki/blob/main/entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md) — AgentCore 安全认证流程
-- [Aws Bedrock Agentcore Doris Mcp Server](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md) — AgentCore + MCP Server 集成
+- [Agentcore Harness](ch03/045-agent.md) — AgentCore 工程化实践
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/266-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md) — AgentCore 安全认证流程
+- [Aws Bedrock Agentcore Doris Mcp Server](ch03/045-agent.md) — AgentCore + MCP Server 集成
 - [Retrieval Augmented Generation Advanced](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-advanced.md) — RAG 高级模式
 - [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
 - [Aws Ai Services](https://github.com/QianJinGuo/wiki/blob/main/concepts/aws-ai-services.md) — AWS AI 服务全景

@@ -60,9 +60,9 @@ Agent 团队协作的关键是**信任校准**：
 - vs `sub-agent-vs-agent-team-selection-guide`：后者是技术选型指南，本文是**组织层面的协作模式分析**
 
 ## 相关主题
-- [Claude Code Agent Teams Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-teams-architecture.md)
-- [Sub Agent Vs Agent Team Selection Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/sub-agent-vs-agent-team-selection-guide.md)
-- [Claude Managed Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents.md)
+- [Claude Code Agent Teams Architecture](ch03/075-claude-code.md)
+- [Sub Agent Vs Agent Team Selection Guide](ch03/045-agent.md)
+- [Claude Managed Agents](ch04/474-claude-managed-agents.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-building-effective-human-agent-teams.md)
 

@@ -156,11 +156,11 @@ When the Asset Bundle APIs import the bundle into the target account, they autom
    「Access denied」错误的首要排查步骤：确认被授权的主体 ARN 与实际用户 ARN 完全一致，包括 account ID 和 namespace。其次检查资源是否处于 restricted folder——folder 级别限制会覆盖 ARN 级别权限声明。 
 
 ## 相关实体
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](https://github.com/QianJinGuo/wiki/blob/main/entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for-.md)
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](https://github.com/QianJinGuo/wiki/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
-- [Amazon Quick Research Agentic Multi Source Citation](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-research-agentic-multi-source-citation.md)
-- [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-cross-region-inference-cris-eu-gdpr.md)
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](ch11/210-restrict-access-to-sensitive-documents-in-your-amazon-quick.md)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/701-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
+- [Amazon Quick Research Agentic Multi Source Citation](ch03/045-agent.md)
+- [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](ch11/253-bedrock.md)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch04/277-ai.md)
 
 ---
 

@@ -8,11 +8,11 @@
 Build a More Secure, Always&#x2d;On Local AI Agent with OpenClaw and NVIDIA NemoClaw | NVIDIA Technical Blog DEVELOPER Home Blog Forums Docs Downloads Training Join Technical Blog Subscribe Related Resources Agentic AI / Generative AI English Build a More Secure, Always-On Local AI Agent with OpenClaw and NVIDIA NemoClaw Use NVIDIA DGX Spark to deploy OpenClaw and NemoClaw end-to-end, from model serving to Telegram connectivity, with full control over your runtime environment. Apr 17, 2026 By Patrick Moorhead and Edward Li Like Discuss (0) L T F R E AI-Generated Summary Like Dislike NVIDIA NemoClaw is an open-source stack that enables secure, on-premises deployment of autonomous AI assistants using NVIDIA Nemotron 3 Super models, orchestrated by NVIDIA OpenShell and OpenClaw for sandboxed execution and tool integration. The tutorial guides users through deploying NemoClaw on NVIDIA DGX Spark, covering hardware prerequisites, Docker and Ollama setup, model download, sandbox configuration, and integration with Telegram for remote access. Key security features include network and filesystem isolation managed by OpenShell, real-time policy approval for external access, and full local inference to ensure that no data leaves the device during agent operation. AI-generated content may summarize information incompletely. Verify important information. Learn more Agents are evolving from question-and-answer systems into long-running autonomous assistants that read files, call APIs, and drive multi-step workflows. However, deploying an agent to execute code and use tools without proper isolation raises real risks especially when using third-party cloud infrastructure due to data privacy and control. NVIDIA NemoClaw is an open-source reference stack that orchestrates NVIDIA OpenShell to run OpenClaw , a self-hosted gateway that connects messaging platforms to AI coding agents powered by open models like NVIDIA Nemotron. NemoClaw adds guided onboarding, lifecycle management, ima... [truncated]
 
 ## 相关实体
-- [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](https://github.com/QianJinGuo/wiki/blob/main/entities/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md)
-- [Nvidia Multimodal Rag Knowledge Systems](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-multimodal-rag-knowledge-systems.md)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
-- [Nvidia Agentic Ai Subsurface Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-agentic-ai-subsurface-engineering.md)
-- [Hermes Agent Vs Openclaw Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-vs-openclaw-comparison.md)
+- [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](ch03/045-agent.md)
+- [Nvidia Multimodal Rag Knowledge Systems](ch01/310-rag.md)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/277-ai.md)
+- [Nvidia Agentic Ai Subsurface Engineering](ch04/331-nvidia-agentic-ai-subsurface-engineering.md)
+- [Hermes Agent Vs Openclaw Comparison](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-secure-local-agent-nemoclaw-openclaw.md)
 

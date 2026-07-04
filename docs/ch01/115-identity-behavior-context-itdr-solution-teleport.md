@@ -12,7 +12,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/identity-behavior-context-itdr-solution-teleport.md)
 
 ## 相关实体
-- [Identity Behavior & Context: ITDR Solution](https://github.com/QianJinGuo/wiki/blob/main/entities/identity-behavior-context-itdr-solution.md)
+- [Identity Behavior & Context: ITDR Solution](ch01/115-identity-behavior-context-itdr-solution-teleport.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-memory-architecture.md)
 ## 深度分析

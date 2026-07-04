@@ -34,7 +34,7 @@
 ## 与本文相关
 - [Openclaw Architecture 800Lines](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-architecture-800lines.md) — OpenClaw架构分析（OpenClaw生态）
 -  — 飞书aily企业级Agent（企业级落地对比）
-- [Gstack Ai Workflow](https://github.com/QianJinGuo/wiki/blob/main/entities/gstack-ai-workflow.md) — YC的AI协作工作流（协作Agent）
+- [Gstack Ai Workflow](ch04/277-ai.md) — YC的AI协作工作流（协作Agent）
 - [Edgeclaw Bemit Lobster](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/edgeclaw-bemit-lobster.md) — 详细评测（raw）
 
 ---

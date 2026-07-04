@@ -112,11 +112,11 @@ AI 原生创业公司每周改进一次自己的操作系统。
 7. **每周进化循环**：后台智能体全天候给外环输送候选项，人决定追哪个——保持学习和改进的系统性节奏。
 
 ## 相关实体
-- [Ai Native Startup Cyberfund Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-startup-cyberfund-guide.md)
-- [Ai Agent Harness Construction Akshay](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-harness-construction-akshay.md)
-- [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
-- [Guide Ai Agents Models Apps Harnesses Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/guide-ai-agents-models-apps-harnesses-mollick.md)
+- [Ai Native Startup Cyberfund Guide](ch04/277-ai.md)
+- [Ai Agent Harness Construction Akshay](ch04/277-ai.md)
+- [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](ch05/009-harness.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/256-skill.md)
+- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stepan-gershuni-ai-native-startup-guide.md)
 

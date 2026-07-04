@@ -331,11 +331,11 @@ AI 自动摘要/标签/关联减少人工操作，但最终判断（哪些关联
 在 Obsidian vault 根目录放 CLAUDE.md，定义标签体系、命名规范、模板格式——让 AI 遵循你的知识库规范而非随机生成。
 
 ## 相关实体
-- [Obsidian Claude Code Integration Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/obsidian-claude-code-integration-guide.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](https://github.com/QianJinGuo/wiki/blob/main/entities/opus-4-7-launch-claude-code-best-practices-wechat.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南.md)
+- [Obsidian Claude Code Integration Guide](ch09/112-obsidian-claude-code-integration-guide.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/075-claude-code.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/277-ai.md)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/075-claude-code.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](ch04/277-ai.md)
 
 ---
 

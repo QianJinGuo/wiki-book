@@ -73,12 +73,12 @@ Karpathy 的原始规则用身份语言（"像资深工程师"）来传递行为
 - Karpathy 原始模板：[Forrest Chang's repo](https://github.com/forrestchang/andrej-karpathy-skills) (120K star)
 
 ## 相关实体
-- [Claude Code 可控性：软规则无法变成硬约束](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-governance-soft-rules.md) — 软规则 vs 硬约束的深度对比
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-20000-char-source-analysis.md)
-- [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-subagent-context-hygiene.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
+- [Claude Code 可控性：软规则无法变成硬约束](ch03/075-claude-code.md) — 软规则 vs 硬约束的深度对比
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/256-skill.md)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/075-claude-code.md)
+- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
+- [Claude Code Subagent 上下文卫生](ch03/075-claude-code.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 
 ---

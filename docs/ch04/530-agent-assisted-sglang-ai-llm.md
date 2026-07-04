@@ -38,7 +38,7 @@ SGLang 仓库已从单一的 LLM serving 项目扩展到 LLM serving、分布式
 
 ## 与 Agent Skill Engineering 的关系
 
-本文档与 wiki 中的 [Agent Skill 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-design-patterns.md)、[BBuf AI-Infra-Auto-Driven-SKILLS](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-infra-auto-driven-skills-v0-bbuf-giantpanda.md) 和 [Skill Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-engineering-ai-as-algorithm.md) 实体直接关联。SGLang 的实践展示了如何在真实的生产级基础设施项目中应用 Agent Skill Engineering 的方法论。
+本文档与 wiki 中的 [Agent Skill 设计模式](ch04/256-skill.md)、[BBuf AI-Infra-Auto-Driven-SKILLS](ch04/256-skill.md) 和 [Skill Engineering](ch04/256-skill.md) 实体直接关联。SGLang 的实践展示了如何在真实的生产级基础设施项目中应用 Agent Skill Engineering 的方法论。
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-assisted-sglang-development-lmsys-2026-07.md)
 

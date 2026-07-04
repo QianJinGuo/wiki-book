@@ -27,13 +27,13 @@ BigQuery 威胁模型覆盖了完整的 STRIDE 分类（Spoofing、Tampering、R
 5. **对 authorized views 和 row-level security 策略实施强制代码审查和测试**。这些安全机制的逻辑漏洞（漏写 WHERE 子句、逻辑错误）会导致数据访问范围超出预期，且不易通过常规监控发现 。
 
 ## 相关实体
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
-- [Cloudsectidbits Masso Cognito Sso.Html](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudsectidbits-masso-cognito-sso.html.md)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](https://github.com/QianJinGuo/wiki/blob/main/entities/www-wiz-io-mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised.md)
-- [Aws Bedrock Halliburton Seismic Workflow Genai](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-halliburton-seismic-workflow-genai.md)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/256-skill.md)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/256-skill.md)
+- [Cloudsectidbits Masso Cognito Sso.Html](ch11/224-cloudsectidbits.md)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/277-ai.md)
+- [Aws Bedrock Halliburton Seismic Workflow Genai](ch04/277-ai.md)
 
-- [A History Of Ides At Google](https://github.com/QianJinGuo/wiki/blob/main/entities/a-history-of-ides-at-google.md)
+- [A History Of Ides At Google](ch03/038-a-history-of-ides-at-google.md)
 - [gemini app rolling out](https://github.com/QianJinGuo/wiki/blob/main/entities/9to5google-gemini-app-extended-thinking.md)
 
 ---

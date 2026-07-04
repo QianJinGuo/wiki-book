@@ -78,11 +78,11 @@
 
 ## 相关实体
 - [gemma 4 12b：google 多模态本地模型 —— 扔掉编码器](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-12b-google-multimodal-local.md)
-- [amazon bedrock模型推理的serverless异步架构 – 处理在线多模态高负载案例](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-serverless-async-inference-multimodal.md)
-- [gemma 4 multi token prediction drafters](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-multi-token-prediction-drafters.md)
+- [amazon bedrock模型推理的serverless异步架构 – 处理在线多模态高负载案例](ch11/253-bedrock.md)
+- [gemma 4 multi token prediction drafters](ch01/331-gemma-4-multi-token-prediction-drafters.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-gemma-4-models-on-amazon-bedrock.md)
-- [diffusiongemma：扩散式文本生成模型（google 26b moe，4× 推理加速）](https://github.com/QianJinGuo/wiki/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md)
+- [diffusiongemma：扩散式文本生成模型（google 26b moe，4× 推理加速）](ch01/217-0.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

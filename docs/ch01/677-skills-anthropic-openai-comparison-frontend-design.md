@@ -12,11 +12,11 @@
 Skill 的核心思路是**把提示词从对话框搬到文件系统**：一个文件夹，一个 SKILL.md，可以附带参考文档和脚本。搬到文件系统之后，它就可以被版本控制、被 PR review、被跨项目复用。
 
 ## 相关实体
-- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](https://github.com/QianJinGuo/wiki/blob/main/entities/全球ai新王诞生anthropic估值冲爆12万亿首次反超openai.md)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)
-- [Anthropic Google Agent Skills Design Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-google-agent-skills-design-patterns.md)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
+- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](ch04/277-ai.md)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/256-skill.md)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/256-skill.md)
+- [Anthropic Google Agent Skills Design Patterns](ch04/256-skill.md)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/256-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skills-anthropic-openai-comparison-frontend-design.md)
 

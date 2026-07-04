@@ -148,11 +148,11 @@ pi 的扩展性验证了一个原则：**核心引擎只暴露最小必要接口
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pi-main-agent-engineering-17-dimensions.md)
 
 ## 相关实体
-- [Ai 内容创作开始进入画布 Agent时代](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-内容创作开始进入画布-agent时代.md)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](https://github.com/QianJinGuo/wiki/blob/main/entities/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](https://github.com/QianJinGuo/wiki/blob/main/entities/alibabacloud-cms-manage-skill-natural-language-observability.md)
-- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](https://github.com/QianJinGuo/wiki/blob/main/entities/国产顶尖模型-benchmark-评分那么高可实际效果为什么差看完-anthropic-这篇博客刷分的因素太单一了.md)
-- [Starfilm Ai Agent Ai Short Film Platform](https://github.com/QianJinGuo/wiki/blob/main/entities/starfilm-ai-agent-ai-short-film-platform.md)
+- [Ai 内容创作开始进入画布 Agent时代](ch04/277-ai.md)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/492-score-by-collisions-patch-by-panic.md)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/256-skill.md)
+- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](ch01/854-anthropic.md)
+- [Starfilm Ai Agent Ai Short Film Platform](ch04/277-ai.md)
 
 ---
 

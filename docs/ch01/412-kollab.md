@@ -106,15 +106,15 @@ S3 作为真值源，Runtime 与 S3 之间的同步是由两个动作构成：hy
 举个例子。用户配置一个每天早 8 点的 cron 任务：“汇总过去 24 小时的 GitHub Issue 进展，写到团队 Notion 周报草稿”。第一次执行时工作区是空的，Agent 建立基础结构，写入第一次记录。第二次执行时
 
 ## 相关实体
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
-- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](https://github.com/QianJinGuo/wiki/blob/main/entities/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md)
-- [Process Financial Documents Using Amazon Bedrock Data Automa](https://github.com/QianJinGuo/wiki/blob/main/entities/process-financial-documents-using-amazon-bedrock-data-automa.md)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch04/277-ai.md)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/253-bedrock.md)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](ch11/202-amazon-quick.md)
+- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch04/277-ai.md)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/253-bedrock.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
 
-- [stop hand-tuning kernels: how neuron agentic development acc](https://github.com/QianJinGuo/wiki/blob/main/entities/stop-hand-tuning-kernels-how-neuron-agentic-development-acce.md)
+- [stop hand-tuning kernels: how neuron agentic development acc](ch03/045-agent.md)
 
 ## 相关主题
 

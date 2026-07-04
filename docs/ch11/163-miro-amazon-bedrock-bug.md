@@ -15,7 +15,7 @@ _This post is co-authored with Philipp Pavlov, Dmytro Romantsov, Evgeny Mironenk
 2. **多模态理解（Amazon Nova Pro）→ RAG 上下文补充 → LLM 分类的三段式 Pipeline 是处理「脏数据」的标准范式** — Bug 报告中的截图、视频若无语境会被 LLM 误读；Miro 的解法是先用 RAG 检索产品上下文（feature 所属团队），再将上下文注入 Nova Pro 的提示词，最后才让 LLM 做分类。这种「先检索后理解」的模式使附件解析特异性大幅提升。
 3. **Top-3 95% 准确率 + human-in-the-loop 是生产级分类系统的工程现实** — 100 团队的多分类场景下，Top-1 75% 已显著优于 fine-tuned GPT，但无法满足 SLA 要求；Top-3 95% 意味着只要呈现前三个选项供人确认，整体准确率接近完美。这揭示了一个重要工程原则：**在分类精度不足时，交互设计比模型调优更有效**。
 4. **Anthropic 扩展思考（Extended Thinking）带来 7-9% 边际提升** — 文章披露 Claude Sonnet 4 启用扩展思考后额外提升 7-9% 准确率，成本是延迟增加（在 53 秒平均延迟内可接受）。这一数据点与业界普遍感知的「扩展思考换精度」经验吻合，可作为生产部署的性能预算参考。
-5. **透明路由理由是用户接受度的关键驱动力** — 对比实验显示，仅返回单一预测结果的 fine-tuned 模型用户信任度远低于提供每条路由 Rationale 的方案。这也与 [Claude Code Governance Soft Rules](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-governance-soft-rules.md) 中强调的「可解释性建立信任」原则一致，也呼应了 [Wangyunhe Harness Optimization Agentsoul](https://github.com/QianJinGuo/wiki/blob/main/entities/wangyunhe-harness-optimization-agentsoul.md) 中 human-in-the-loop 反馈的校准价值。
+5. **透明路由理由是用户接受度的关键驱动力** — 对比实验显示，仅返回单一预测结果的 fine-tuned 模型用户信任度远低于提供每条路由 Rationale 的方案。这也与 [Claude Code Governance Soft Rules](ch03/075-claude-code.md) 中强调的「可解释性建立信任」原则一致，也呼应了 [Wangyunhe Harness Optimization Agentsoul](ch03/045-agent.md) 中 human-in-the-loop 反馈的校准价值。
 6. **团队描述作为版本化管理对象，赋予了 LLM 系统真正的动态适应性** — BugManager 将团队描述维护在 GitHub-backed Backstage 中，每次团队合并/新建只需更新 Markdown 文档，Prompt 无需改动。这种「知识与推理解耦」的设计是 RAG 架构的核心优势
 
 ## 实践启示

@@ -56,11 +56,11 @@ Harness SVP Trevor Stuart 指出了本质矛盾：**"行业过去十年所依赖
 3. **区分自动化层级**：明确哪些环节可以完全信任 AI 输出，哪些需要人工审核，为团队建立清晰的 AI 使用 guardrails
 4. **与技术领导者合作**：与开发者共同制定衡量标准，而不是自上而下强加指标
 ## 相关实体
-- [Engineering Roles Shift From Developing Code To Ma](https://github.com/QianJinGuo/wiki/blob/main/entities/engineering-roles-shift-from-developing-code-to-ma.md)
-- [From Doer To Director The Ai Mindset Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
+- [Engineering Roles Shift From Developing Code To Ma](ch05/063-engineering-roles-shift-from-developing-code-to-managing-ai.md)
+- [From Doer To Director The Ai Mindset Shift](ch01/030-from-doer-to-director-the-ai-mindset-shift.md)
 - [Gbhackers Sandworm Shift From It Breaches](https://github.com/QianJinGuo/wiki/blob/main/entities/gbhackers-sandworm-shift-from-it-breaches.md)
 - [Sandworm Hackers Shift It Breaches Ot Gbhackers](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
-- [Hs.Playerzero Ai Code Review](https://github.com/QianJinGuo/wiki/blob/main/entities/hs.playerzero-ai-code-review.md)
+- [Hs.Playerzero Ai Code Review](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/engineering-roles-shift-from-developing-code-to-managing-ai.md)
 

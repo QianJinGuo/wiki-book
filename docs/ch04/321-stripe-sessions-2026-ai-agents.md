@@ -13,8 +13,8 @@
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stripe-sessions-2026-ai-agents.md)
 
 ## 相关资源
-- [Agent Memory 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)
-- [Claude Managed Agents 开发者指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-developer-guide.md)
+- [Agent Memory 架构](ch03/045-agent.md)
+- [Claude Managed Agents 开发者指南](ch03/045-agent.md)
 
 ## 深度分析
 **1. Stripe 押注"AI 原生经济基础设施"战略定位的本质跃迁**
@@ -41,15 +41,15 @@ Issuing for agents 允许企业为 Agent 程序化签发单次使用的虚拟卡
 Stripe Treasury 年底前将在 US、UK 支持 15 种货币存储，并扩展至 Australia、Canada，且 Privy 非托管钱包将支持 150+ 市场的稳定币。这为构建"全球运营 Agent"提供了多币种资金管理基础。建议在 Q3 前评估 Agent 的稳定币持有策略——尤其是涉及跨境外汇、自动换汇、跨境付款等场景时，Stripe Treasury + Privy 的组合可能是最简接入路径。
 
 ## 相关实体
-- [stripe sessions 2026 ai](https://github.com/QianJinGuo/wiki/blob/main/entities/stripe-sessions-2026-ai.md)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
-- [Inngest - AI in Production: The 2026 Benchmark Report](https://github.com/QianJinGuo/wiki/blob/main/entities/inngest-ai-in-production-the-2026-benchmark-report.md)
-- [How Superset built the IDE for AI agents on Vercel](https://github.com/QianJinGuo/wiki/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
-- [How to Detect AI Agents on Your Website | Full Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/detect-ai-agents-website.md)
-- [AI-powered honeypots: Turning the tables on malicious AI agents](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
+- [stripe sessions 2026 ai](ch04/390-stripe-sessions-2026-ai.md)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/277-ai.md)
+- [Inngest - AI in Production: The 2026 Benchmark Report](ch01/571-inngest-ai-in-production-the-2026-benchmark-report.md)
+- [How Superset built the IDE for AI agents on Vercel](ch04/277-ai.md)
+- [How to Detect AI Agents on Your Website | Full Guide](ch04/277-ai.md)
+- [AI-powered honeypots: Turning the tables on malicious AI agents](ch04/277-ai.md)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [十年老技术开发的 ai agent 探索之路](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-exploration-legacy-developer.md)
-- [entrypoint hijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypoint-hijacking.md)
+- [十年老技术开发的 ai agent 探索之路](ch04/277-ai.md)
+- [entrypoint hijacking](ch01/547-entrypoint-hijacking.md)
 
 ---
 

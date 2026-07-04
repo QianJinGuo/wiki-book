@@ -29,14 +29,14 @@ Intercom PHP供应链攻击（Mini Shai-Hulud行动）揭示了Packagist/Compose
 **对于安全工具厂商：** Semgrep的这次快速响应（多生态联动：PyPI+npm+Packagist）展示了自动化威胁情报共享的价值。在新攻击手法可以在多平台快速复制的今天，安全规则的生成和分发速度是竞争的关键维度。
 
 ## 相关资源
-- [Agent Memory 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)
-- [Claude Managed Agents 开发者指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-developer-guide.md)
+- [Agent Memory 架构](ch03/045-agent.md)
+- [Claude Managed Agents 开发者指南](ch03/045-agent.md)
 
 ## 相关实体
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 
-- [semgrep intercom php supply chain](https://github.com/QianJinGuo/wiki/blob/main/entities/semgrep-intercom-php-supply-chain.md)
+- [semgrep intercom php supply chain](ch12/113-semgrep-intercom-php-supply-chain.md)
 
 ---
 

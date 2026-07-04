@@ -124,7 +124,7 @@ MCP 生态：
 - 用专用文件夹
 - 不要给它访问你不能承受丢失的东西
 
-## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](https://github.com/QianJinGuo/wiki/blob/main/entities/opus-4-7-launch-claude-code-best-practices-wechat.md) 的关系
+## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/075-claude-code.md) 的关系
 
 | 维度 | 现有 entity | 本文 |
 |------|------------|------|

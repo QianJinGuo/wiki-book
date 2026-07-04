@@ -117,13 +117,13 @@ Agent 和 Grader 两个接口的极简设计（各两个方法）降低了插件
 - 分布式执行
 
 ## 相关实体
-- [Anthropic Generator-Evaluator Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-generator-evaluator-anthropic.md) — 另一种评测闭环思路
-- [Superpowers](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-superpowers-practice.md) — Agent 工作流规范
-- [Skill Writing Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-writing-patterns-best-practices.md) — Skill 质量评估相关
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](https://github.com/QianJinGuo/wiki/blob/main/entities/lbs-intentbench.md)
-- [AI Skill 测评指标体系](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-metrics-system.md)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-internal-skill-design-guide.md)
-- [Skills赏析：使用skills-refiner提升skill质量](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-refiner-design-quality-evaluation-framework.md)
+- [Anthropic Generator-Evaluator Harness](ch05/009-harness.md) — 另一种评测闭环思路
+- [Superpowers](ch04/256-skill.md) — Agent 工作流规范
+- [Skill Writing Patterns](ch04/256-skill.md) — Skill 质量评估相关
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/258-lbs-intentbench.md)
+- [AI Skill 测评指标体系](ch04/256-skill.md)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/256-skill.md)
+- [Skills赏析：使用skills-refiner提升skill质量](ch04/256-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

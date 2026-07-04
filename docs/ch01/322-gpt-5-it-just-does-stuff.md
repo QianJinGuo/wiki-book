@@ -142,18 +142,18 @@ Mollick 结尾那句 Premonition 特别值得抄下来：**「我们会搞清楚
 
 ## 相关实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/217-0.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/277-ai.md)
+- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/988-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](https://github.com/QianJinGuo/wiki/blob/main/entities/chatgpt默认模型大升级gpt-55-instant正式上线新增记忆来源功能.md)
-- [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)
-- [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/cvpr-2026-highlight让ai像电影人一样看视频8b小模型反超gpt-5与gemini-31-pro.md)
-- [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](https://github.com/QianJinGuo/wiki/blob/main/entities/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](ch01/987-chatgpt.md)
+- [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](ch01/217-0.md)
+- [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](ch04/277-ai.md)
+- [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](ch01/987-chatgpt.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

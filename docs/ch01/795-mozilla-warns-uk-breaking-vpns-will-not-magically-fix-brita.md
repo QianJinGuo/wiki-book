@@ -7,14 +7,14 @@
 ## 核心要点
 - Published Time: 2026-05-18T09:54:01.000Z # Mozilla warns UK: Breaking VPNs will not magically fix Britain's age-check mess [Jump to main content](https://www.theregister.com/security/2026/05/18/mozill
 ## 相关实体
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](https://github.com/QianJinGuo/wiki/blob/main/entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess.md)
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](https://github.com/QianJinGuo/wiki/blob/main/entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britai.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](ch04/277-ai.md)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](ch04/277-ai.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/277-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess-1.md)
-- [不用学ai了！圈内公开的秘密：顶级玩家已开始让ai用ai](https://github.com/QianJinGuo/wiki/blob/main/entities/不用学ai了圈内公开的秘密顶级玩家已开始让ai用ai.md)
+- [不用学ai了！圈内公开的秘密：顶级玩家已开始让ai用ai](ch04/277-ai.md)
 
 ## 深度分析
 **VPN 的核心定位：基础安全基础设施，而非规避工具**

@@ -17,13 +17,13 @@ type: entity
 # The distillation panic
 
 ## 相关实体
-- [05 11 The Great Memory Panic Of 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/05-11-the-great-memory-panic-of-2026.md)
+- [05 11 The Great Memory Panic Of 2026](ch01/217-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-distillation-panic.md)
 
-- [Qwen Image Flash Beyond Objective Design](https://github.com/QianJinGuo/wiki/blob/main/entities/qwen-image-flash-beyond-objective-design.md)
-- [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](https://github.com/QianJinGuo/wiki/blob/main/entities/interconnects-what-ive-been-building-atom-report-post-training-course-finishing-my-book-and-on.md)
-- [Interconnects The Inevitable Need For An Open Model Consortium](https://github.com/QianJinGuo/wiki/blob/main/entities/interconnects-the-inevitable-need-for-an-open-model-consortium.md)
+- [Qwen Image Flash Beyond Objective Design](ch01/1054-qwen-image-flash-beyond-objective-design-few-step-distill.md)
+- [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](ch04/277-ai.md)
+- [Interconnects The Inevitable Need For An Open Model Consortium](ch01/476-the-inevitable-need-for-an-open-model-consortium.md)
 ## 深度分析
 
 ### 术语污名化的系统性风险

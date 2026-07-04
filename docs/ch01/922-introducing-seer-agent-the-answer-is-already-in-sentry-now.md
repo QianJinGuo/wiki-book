@@ -8,15 +8,15 @@
 - Sentry Seer Agent：利用 LLM 在 Sentry 内直接回答开发者问题
 - 将调试工作流从人工排查转变为自然语言问答
 ## 相关实体
-- [Seer Agent Workshop](https://github.com/QianJinGuo/wiki/blob/main/entities/seer-agent-workshop.md)
-- [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-the-ettin-reranker-family.md)
+- [Seer Agent Workshop](ch03/045-agent.md)
+- [Introducing The Ettin Reranker Family](ch01/479-introducing-the-ettin-reranker-family.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Alphaevolve Deepmind Discovery Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaevolve-deepmind-discovery-agent.md)
-- [Ai Agents Inside Perimeter Hackernews](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
+- [Alphaevolve Deepmind Discovery Agent](ch03/045-agent.md)
+- [Ai Agents Inside Perimeter Hackernews](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
 
-- [intercom, now called fin, launches an ai agent whose only jo](https://github.com/QianJinGuo/wiki/blob/main/entities/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md)
+- [intercom, now called fin, launches an ai agent whose only jo](ch04/277-ai.md)
 
 ## 深度分析
 Seer Agent 的核心产品逻辑是**"答案已在 Sentry 中，只是需要被正确提问"**。Sentry 积累的 telemetry 数据（错误堆栈、性能追踪、用户事件）本身就包含了问题的答案，但传统界面要求开发者具备手动检索和分析的能力。Seer Agent 将这一过程语言模型化——开发者用自然语言描述问题，LLM 在 telemetry 图谱中检索并合成答案。

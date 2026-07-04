@@ -71,7 +71,7 @@ MoonBit 定位为面向云和边缘计算的 AI-native 编程语言，支持 was
 - [微调技术](https://github.com/QianJinGuo/wiki/blob/main/concepts/fine-tuning-techniques.md)
 - [Prompt 工程模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-patterns.md)
 - [RAG 检索增强生成](https://github.com/QianJinGuo/wiki/blob/main/concepts/rag-retrieval-augmented-generation.md)
-- [DeepSeek Code Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-code-harness.md)
+- [DeepSeek Code Harness](ch09/076-deepseek-code-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/moonbit-llm-code-generation-no-resource-languages-ieee-2026.md)
 

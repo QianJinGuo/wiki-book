@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [hermes新顶流agent skills闭环系统深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system-deep-dive.md)
+- [hermes新顶流agent skills闭环系统深度解析](ch04/256-skill.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-skills-source-code-analysis-shuge.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
@@ -17,7 +17,7 @@
 Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描
-> 源码分析版（vs [Hermes Agent Skill 系统深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system.md) winty版）
+> 源码分析版（vs [Hermes Agent Skill 系统深度解析](ch04/256-skill.md) winty版）
 ## 核心定位
 Hermes 两套记忆机制：
 - **通用记忆**（MEMORY.
@@ -52,11 +52,11 @@ Skills 遵循 **agentskills.
 - **aws趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/215-openclaw.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 
 ## 实践启示

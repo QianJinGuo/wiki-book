@@ -36,9 +36,9 @@ PAPO 在保持 Agent 研究能力的同时，显著降低了隐私泄露率。
 
 MosaicLeaks 补充了 wiki 中关于 Agent 安全的多个视角：
 
-- 与 [Nvidia Secure Local Agent Nemoclaw Openclaw](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-secure-local-agent-nemoclaw-openclaw.md) 的本地安全 Agent 方案互补：NVIDIA 方案从架构层隔离，MosaicLeaks 从训练层优化
+- 与 [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/362-nvidia-secure-local-agent-nemoclaw-openclaw.md) 的本地安全 Agent 方案互补：NVIDIA 方案从架构层隔离，MosaicLeaks 从训练层优化
 - 隐私保护是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中安全层的重要维度
-- 研究 Agent 的隐私问题与 [Interconnects What Comes Next With Open Models](https://github.com/QianJinGuo/wiki/blob/main/entities/interconnects-what-comes-next-with-open-models.md) 讨论的开源模型安全话题相关
+- 研究 Agent 的隐私问题与 [Interconnects What Comes Next With Open Models](ch01/287-what-comes-next-with-open-models.md) 讨论的开源模型安全话题相关
 
 ## 独特价值
 

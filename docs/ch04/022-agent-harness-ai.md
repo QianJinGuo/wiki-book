@@ -45,9 +45,9 @@
 
 ## 相关实体
 
-- [钉钉AI助手](https://github.com/QianJinGuo/wiki/blob/main/entities/dingtalk-ai-assistant.md)
-- [Agent Harness生产实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-production.md)
-- [Harness范式](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-paradigm.md)
+- [钉钉AI助手](ch04/277-ai.md)
+- [Agent Harness生产实践](ch03/045-agent.md)
+- [Harness范式](ch05/009-harness.md)
 
 ## 标签
 

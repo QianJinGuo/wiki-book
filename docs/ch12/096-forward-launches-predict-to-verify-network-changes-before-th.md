@@ -11,13 +11,13 @@
 ## 相关实体
 - [Huntress Edr Itdr](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr.md)
 - [Huntress Edr Itdr Unified Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr-unified-detection.md)
-- [From Kubernetes Dev Setup To Production What Actually Change](https://github.com/QianJinGuo/wiki/blob/main/entities/from-kubernetes-dev-setup-to-production-what-actually-change.md)
-- [Habby Game Aws Devops Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/habby-game-aws-devops-agent.md)
-- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md)
+- [From Kubernetes Dev Setup To Production What Actually Change](ch11/082-from-kubernetes-dev-setup-to-production-what-actually-chang.md)
+- [Habby Game Aws Devops Agent](ch03/045-agent.md)
+- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](ch07/042-aws-devops-agent-mcp-server.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/forward-networks-predict-network-verification.md)
 
-- [jane street — 形式化方法与编程的未来](https://github.com/QianJinGuo/wiki/blob/main/entities/jane-street-formal-methods-future-programming.md)
+- [jane street — 形式化方法与编程的未来](ch12/112-jane-street.md)
 
 ## 深度分析
 

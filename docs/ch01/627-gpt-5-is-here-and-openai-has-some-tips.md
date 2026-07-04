@@ -39,11 +39,11 @@ OpenAI 发布的 GPT-5 使用建议：
 4. **对于生产级结构化输出，仍保留输出验证层**。尽管 GPT-5 的 JSON 模式可靠性大幅提升，生产环境不应完全移除 schema 验证。LLM 的概率本质意味着即使模型能力提升，仍可能在边界条件下输出非预期格式。建议的架构：GPT-5 JSON 模式输出 → Pydantic 验证 → 降级处理（格式异常时回退到简单回复或人工介入）。参考 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的 Guardrails 设计。
 5. **工具调用架构从"单工具顺序调用"升级到"多工具并行协调"**。GPT-5 支持多工具并行调用的能力，使得 Agent 可以一次性规划多个工具调用、并行执行、聚合结果，而无需像 GPT-4 时代那样逐个工具串行调用。这对需要多数据源查询（如同时查询天气、股票、新闻）的应用，延迟可以从 O(n) 降低到 O(1)。建议在 Agent 架构中实现工具调用的并行化改造。
 ## 相关实体
-- [Openai Gpt Realtime Voice Models Qbitai](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-gpt-realtime-voice-models-qbitai.md)
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
-- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
-- [Openai Models Codex Amazon Bedrock Ga](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-models-codex-amazon-bedrock-ga.md)
-- [Openai Gdpval Real Ai Agents Threshold](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-gdpval-real-ai-agents-threshold.md)
+- [Openai Gpt Realtime Voice Models Qbitai](ch01/761-openai-gpt-realtime-voice-models-qbitai.md)
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch04/277-ai.md)
+- [Yann Dubois Openai Post Training Interview](ch04/277-ai.md)
+- [Openai Models Codex Amazon Bedrock Ga](ch04/277-ai.md)
+- [Openai Gdpval Real Ai Agents Threshold](ch04/277-ai.md)
 
 ---
 

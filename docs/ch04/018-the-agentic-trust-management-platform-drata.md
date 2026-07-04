@@ -36,7 +36,7 @@ Drata 积累了 8,000+ 企业客户，其平台的网络效应在于：客户越
 - **在 ISO 42001 成为行业标准前抢先获得认证**：ISO 42001 是 2024 年新发布的标准，目前持有者寥寥。早期认证将在 AI 合规需求爆发时形成显著的差异化优势。
 
 ## 相关实体
-- [Exaforce | Agentic SOC Platform and MDR](https://github.com/QianJinGuo/wiki/blob/main/entities/exaforce-agentic-soc-platform-and-mdr.md)
+- [Exaforce | Agentic SOC Platform and MDR](ch04/020-exaforce-agentic-soc-platform-and-mdr.md)
 
 ---
 

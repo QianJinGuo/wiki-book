@@ -69,11 +69,11 @@ Agent Team 把四类提取任务（UI 组件、布局文件、业务逻辑、资
 5. **在提取阶段投入足够的 Skill 规范，因为后续所有阶段都依赖它** ].md]
    整体方案的稳定性由 Skill 的规范质量决定，SubAgent 和 Agent Team 提供的是调度骨架，骨架上每个节点能不能稳定输出，取决于 Skill 有没有真正约束执行过程。这意味着在三层架构中，Skill 层的基础设施投入回报率最高——一个 extractor Skill 的改进会同时惠及所有使用它的 Teammate 和 SubAgent。 ].md]
 ## 相关实体
-- [Baidu Netdisk Kmp Migration Three Layer Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/baidu-netdisk-kmp-migration-three-layer-agent-architecture.md)
-- [Agent Memory Engineering Tax Aws China 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-engineering-tax-aws-china-2026.md)
-- [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
-- [From Agent Protocol To Harness Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/from-agent-protocol-to-harness-skill.md)
-- [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](https://github.com/QianJinGuo/wiki/blob/main/entities/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md)
+- [Baidu Netdisk Kmp Migration Three Layer Agent Architecture](ch04/277-ai.md)
+- [Agent Memory Engineering Tax Aws China 2026](ch01/217-0.md)
+- [Ai Skill Skill Creator 源码拆解](ch01/593-skill-skill.md)
+- [From Agent Protocol To Harness Skill](ch04/375-from-agent-protocol-to-harness-skill.md)
+- [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](ch01/310-rag.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/baidu-netdisk-kmp-migration-three-layer-agent-architecture.md)].md]
 

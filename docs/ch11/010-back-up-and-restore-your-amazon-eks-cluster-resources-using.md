@@ -408,11 +408,11 @@ For reference, see the following resources:
 
 ## 关联阅读
 ## 相关实体
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](https://github.com/QianJinGuo/wiki/blob/main/entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](https://github.com/QianJinGuo/wiki/blob/main/entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for--2.md)
-- [Introducing Claude Platform On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-platform-on-aws.md)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://github.com/QianJinGuo/wiki/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](ch11/210-restrict-access-to-sensitive-documents-in-your-amazon-quick.md)
+- [Introducing Claude Platform On Aws](ch01/511-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
 - [规划 amazon eks 从 1.32 升级到 1.35：关键变更识别与逐版本实施路径](https://github.com/QianJinGuo/wiki/blob/main/entities/规划-amazon-eks-从-132-升级到-135关键变更识别与逐版本实施路径.md)

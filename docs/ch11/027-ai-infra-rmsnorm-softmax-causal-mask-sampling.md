@@ -106,7 +106,7 @@
 
 ## 相关页面
 
-- [AI Infra 入门：vLLM 推理管线](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-infra-llm-efficient-inference-vllm.md) — 同作者同系列第一篇
+- [AI Infra 入门：vLLM 推理管线](ch04/277-ai.md) — 同作者同系列第一篇
 - [模型推理对比](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-inference-comparison.md)
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-infra-math-foundations-rmsnorm-softmax-causal-mask-sampling-binnnliu-2026-06-17.md)
 

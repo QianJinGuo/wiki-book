@@ -54,8 +54,8 @@ Economic Index Survey 揭示了用户预期与使用方式的系统性关联：
 
 ## 相关主题
 
-- [Dario Amodei: AI Exponential Policy](https://github.com/QianJinGuo/wiki/blob/main/entities/dario-amodei-policy-ai-exponential-2026.md)
-- [Exponential View: AI Economy $110B](https://github.com/QianJinGuo/wiki/blob/main/entities/exponentialview-ai-economy-110b-2026.md)
+- [Dario Amodei: AI Exponential Policy](ch04/277-ai.md)
+- [Exponential View: AI Economy $110B](ch04/277-ai.md)
 
 ---
 

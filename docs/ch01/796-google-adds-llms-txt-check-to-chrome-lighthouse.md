@@ -10,15 +10,15 @@
 - 来源：https://searchengineland.com/google-llms-txt-chrome-lighthouse-478246
 
 ## 相关实体
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](https://github.com/QianJinGuo/wiki/blob/main/entities/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](https://github.com/QianJinGuo/wiki/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](ch01/833-github.md)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/492-score-by-collisions-patch-by-panic.md)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/277-ai.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/277-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
 
-- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-main-agent-engineering-17-dimensions.md)
+- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](ch04/277-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析

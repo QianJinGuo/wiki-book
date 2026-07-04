@@ -29,11 +29,11 @@
 5. **始终保持数据安全意识**：在使用任何调用云端模型的 Agent 系统时，应默认将请求内容视为可能被服务商访问的数据。了解数据流的完整路径，评估敏感信息的处理方式，是安全使用 AI 工具的基本素养。对于企业环境，还需考虑隔离方案和权限控制。
 
 ## 相关实体
-- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](https://github.com/QianJinGuo/wiki/blob/main/entities/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md)
-- [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-rag-tsinghua-sra.md)
-- [Doubao Seed 2 Lite Agent Multimodal](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite-agent-multimodal.md)
-- [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
+- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](ch01/217-0.md)
+- [Skill Rag Tsinghua Sra](ch04/256-skill.md)
+- [Doubao Seed 2 Lite Agent Multimodal](ch03/045-agent.md)
+- [Claude Code Search Architecture Tencent 2026](ch03/075-claude-code.md)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-newbie-guide-dotta.md)
 

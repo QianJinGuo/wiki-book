@@ -10,8 +10,8 @@
 
 ## 三个独有贡献（不应合并到现有 entity）
 
-1. **亚马逊内部 pathfinder / structured sprint / in-situ 三种结构化实验路径**——这是首次在公开 AWS 博客中给出 **完整 3 路径 + 真实数据** 的对比，每条路径都有 Amazon 内部团队名（Bedrock inference engine / Prime Video Financial Systems / Amazon Stores / Perfect Order Experience / WW Grocery）。与现有 entities（如 [Agentops Operationalize Agentic Ai Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md) 偏技术产品、`long-running-agent-*` 偏长时执行）形成**互补**：本文偏 **组织级 AI 重构**，不是产品或 agent loop。
-2. **「5 步变成 frontier team」框架**（agent context / slow down to speed up / feed agents not babysit / explicit intent / shift testing left）——是**可复用的工程组织 playbook**，比 [Openspec Spec Driven Development Trae Solo](https://github.com/QianJinGuo/wiki/blob/main/entities/openspec-spec-driven-development-trae-solo.md) 单一 spec-driven 视角更宽（覆盖 monorepo / 注释为持久 memory / spec 模板 / 集成测试自愈），比 [Skill Design Spec 8 Block Checklist Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-design-spec-8-block-checklist-winty.md) 个人 Skill 视角上升到组织层。
+1. **亚马逊内部 pathfinder / structured sprint / in-situ 三种结构化实验路径**——这是首次在公开 AWS 博客中给出 **完整 3 路径 + 真实数据** 的对比，每条路径都有 Amazon 内部团队名（Bedrock inference engine / Prime Video Financial Systems / Amazon Stores / Perfect Order Experience / WW Grocery）。与现有 entities（如 [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/277-ai.md) 偏技术产品、`long-running-agent-*` 偏长时执行）形成**互补**：本文偏 **组织级 AI 重构**，不是产品或 agent loop。
+2. **「5 步变成 frontier team」框架**（agent context / slow down to speed up / feed agents not babysit / explicit intent / shift testing left）——是**可复用的工程组织 playbook**，比 [Openspec Spec Driven Development Trae Solo](ch05/046-openspec.md) 单一 spec-driven 视角更宽（覆盖 monorepo / 注释为持久 memory / spec 模板 / 集成测试自愈），比 [Skill Design Spec 8 Block Checklist Winty](ch04/256-skill.md) 个人 Skill 视角上升到组织层。
 3. **3 因子乘法公式**（low-judgment 工作加速 1.5x × 高判断工作不被打断 1.5x × domain expertise 立即访问 1.5x = 3.4x，再叠加其他因子达 6x 实际增益）—— Prime Video Financial Systems 10 天 sprint 的归因模型。这是组织级 AI 重构的**量化解释**，不是模糊「AI 加速」说法。
 
 ## 三条 AI-native 开发路径
@@ -110,34 +110,34 @@
 | 平台产品 | Kiro 嵌入 | Kiro / Hermes / Bedrock AgentCore / 各类 Skill 框架 |
 
 **互补**（不合并）方向：
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md) — Bedrock AgentCore 技术产品
-- [Openspec Spec Driven Development Trae Solo](https://github.com/QianJinGuo/wiki/blob/main/entities/openspec-spec-driven-development-trae-solo.md) — 单一 spec-driven 实践
-- [Skill Design Spec 8 Block Checklist Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-design-spec-8-block-checklist-winty.md) — 个人 Skill 视角
-- [Aliyun Cio Ai Rd Efficiency](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-cio-ai-rd-efficiency.md) — CIO 视角 AI RD 效率
-- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md) — 高德 AI Native 系列
-- [Ai Native Dan Shipper Every Layered Thinking Walkwalk](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-dan-shipper-every-layered-thinking-walkwalk.md) — Dan Shipper 创业公司视角
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/277-ai.md) — Bedrock AgentCore 技术产品
+- [Openspec Spec Driven Development Trae Solo](ch05/046-openspec.md) — 单一 spec-driven 实践
+- [Skill Design Spec 8 Block Checklist Winty](ch04/256-skill.md) — 个人 Skill 视角
+- [Aliyun Cio Ai Rd Efficiency](ch04/277-ai.md) — CIO 视角 AI RD 效率
+- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch04/277-ai.md) — 高德 AI Native 系列
+- [Ai Native Dan Shipper Every Layered Thinking Walkwalk](ch04/277-ai.md) — Dan Shipper 创业公司视角
 
 ## 深度分析
 
 ### 核心洞察：工具不是瓶颈，workflow 才是
 
-Swami 的核心论断是"they are using the right tools inside the wrong workflows"——这是对 2025-2026 年 AI 落地热潮的一针冷静剂。AI 编码工具的普及使所有团队站在同一起跑线上，而分胜负的变量已从"是否用 AI"转变为"如何重组 workflow 以降低 agent 获得上下文的门槛、扩大 agent 独立工作的覆盖面"。[Openspec Spec Driven Development Trae Solo](https://github.com/QianJinGuo/wiki/blob/main/entities/openspec-spec-driven-development-trae-solo.md) 的 spec-driven 视角印证了这一点——明确的 spec 是降低 agent 认知负担的关键手段。
+Swami 的核心论断是"they are using the right tools inside the wrong workflows"——这是对 2025-2026 年 AI 落地热潮的一针冷静剂。AI 编码工具的普及使所有团队站在同一起跑线上，而分胜负的变量已从"是否用 AI"转变为"如何重组 workflow 以降低 agent 获得上下文的门槛、扩大 agent 独立工作的覆盖面"。[Openspec Spec Driven Development Trae Solo](ch05/046-openspec.md) 的 spec-driven 视角印证了这一点——明确的 spec 是降低 agent 认知负担的关键手段。
 
 ### 技术要点：3 因子乘法模型是 frontier team 状态的诊断工具
 
-1.5x × 1.5x × 1.5x = 3.4x（实测 6x 因叠加效应）的三因子模型揭示了一个非线性的真相：如果团队只观察到 1.5x 的单因子增益，说明其余两个因子根本没有建立。**任一因子缺失则整体增益归零**——这不是效果折扣，而是结构性崩溃。这意味着 [Skill Design Spec 8 Block Checklist Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-design-spec-8-block-checklist-winty.md) 的 Skill 设计和 [Aliyun Cio Ai Rd Efficiency](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-cio-ai-rd-efficiency.md) 的 RD 效率提升都不是单一维度的优化，而是多因子协同的系统工程。
+1.5x × 1.5x × 1.5x = 3.4x（实测 6x 因叠加效应）的三因子模型揭示了一个非线性的真相：如果团队只观察到 1.5x 的单因子增益，说明其余两个因子根本没有建立。**任一因子缺失则整体增益归零**——这不是效果折扣，而是结构性崩溃。这意味着 [Skill Design Spec 8 Block Checklist Winty](ch04/256-skill.md) 的 Skill 设计和 [Aliyun Cio Ai Rd Efficiency](ch04/277-ai.md) 的 RD 效率提升都不是单一维度的优化，而是多因子协同的系统工程。
 
 ### 技术要点：In-situ 对照实验揭示 practice 比 tool 更关键
 
-Amazon Stores 的 50+ 团队对照实验（25 团队新工具+新实践 vs 25 团队仅新工具）是全文章最有力的数据点。中位数 4.5x、部分团队 >10x 的差异来自 practice 而非工具。这个对照设计有力反驳了"AI 工具本身 = 生产力"的假设，指向 [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md) 中高德"anti-entropy"架构思路——熵减不是靠引入单个强大工具，而是靠持续重组工作流结构。
+Amazon Stores 的 50+ 团队对照实验（25 团队新工具+新实践 vs 25 团队仅新工具）是全文章最有力的数据点。中位数 4.5x、部分团队 >10x 的差异来自 practice 而非工具。这个对照设计有力反驳了"AI 工具本身 = 生产力"的假设，指向 [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch04/277-ai.md) 中高德"anti-entropy"架构思路——熵减不是靠引入单个强大工具，而是靠持续重组工作流结构。
 
 ### 技术要点：Agent context investment 是复合加速的前置条件
 
-"前 2 周慢"不是采用 AI 的摩擦成本，而是建立 agent context 的必要投资。Bedrock 团队将 AI 生成的 inline 注释保留为持久 memory 这一实践，是[Ai Native Dan Shipper Every Layered Thinking Walkwalk](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-dan-shipper-every-layered-thinking-walkwalk.md) 中"分层思考"在组织记忆层的具象化——注释不再是消耗性文档，而是 AI 自身记忆的外部化存储。跳过此步的团队会陷入"反复看到相同错误"的负循环，永远无法进入复合加速阶段。
+"前 2 周慢"不是采用 AI 的摩擦成本，而是建立 agent context 的必要投资。Bedrock 团队将 AI 生成的 inline 注释保留为持久 memory 这一实践，是[Ai Native Dan Shipper Every Layered Thinking Walkwalk](ch04/277-ai.md) 中"分层思考"在组织记忆层的具象化——注释不再是消耗性文档，而是 AI 自身记忆的外部化存储。跳过此步的团队会陷入"反复看到相同错误"的负循环，永远无法进入复合加速阶段。
 
 ### 实践价值：Pathfinder 和 Structured Sprint 的本质是工作流重构而非人员替换
 
-6 人 76 天完成 30 人 12-18 个月项目的关键不是人海战术，而是**前几周重设计工作流**——从离散任务转向目标驱动、多 agent 并行、离峰时段让 AI 独立工作。这意味着 [Agentops Operationalize Agentic Ai Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md) 的 Bedrock 技术产品只是载体，真正的杠杆是工作流设计方法论。这与 [Openspec Spec Driven Development Trae Solo](https://github.com/QianJinGuo/wiki/blob/main/entities/openspec-spec-driven-development-trae-solo.md) 的 spec-driven 开发模式在"目标先行"这一点上高度一致。
+6 人 76 天完成 30 人 12-18 个月项目的关键不是人海战术，而是**前几周重设计工作流**——从离散任务转向目标驱动、多 agent 并行、离峰时段让 AI 独立工作。这意味着 [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/277-ai.md) 的 Bedrock 技术产品只是载体，真正的杠杆是工作流设计方法论。这与 [Openspec Spec Driven Development Trae Solo](ch05/046-openspec.md) 的 spec-driven 开发模式在"目标先行"这一点上高度一致。
 
 ## 实践启示
 

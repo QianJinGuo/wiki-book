@@ -295,18 +295,18 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 
 ## 相关实体
 
-- [Interconnects The Distillation Panic](https://github.com/QianJinGuo/wiki/blob/main/entities/interconnects-the-distillation-panic.md)（蒸馏恐慌 — 同期产业反应）
-- [Loop Engineering Addy Osmani Challengehub](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-addy-osmani-challengehub.md)（Loop Engineering — Addy Osmani 同主线）
-- [Openspec Spec Driven Development Trae Solo](https://github.com/QianJinGuo/wiki/blob/main/entities/openspec-spec-driven-development-trae-solo.md)（Spec-driven 同对照）
-- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md)（Spec-as-AIOS — 抗熵增架构）
-- [Claude Code Vs Hermes Session Vs Goal Lifecycle](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-vs-hermes-session-vs-goal-lifecycle.md)（session vs goal lifecycle 对照）
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)（Hermes Agent Goal runtime 对照）
-- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md)（Claude Code 100 行 loop 同主线）
-- [Openclaw Boris Cherny Agent Loop Design Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-boris-cherny-agent-loop-design-patterns.md)（OpenClaw agent loop 对照）
-- [Mimo Code Xiaomi Coding Harness 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/mimo-code-xiaomi-coding-harness-2026.md)（MiMo Code Max Mode + Goal 机制同主线）
-- [Snowflake Agentic Enterprise Summit 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/snowflake-agentic-enterprise-summit-2026.md)（Snowflake — 可审计治理同主线）
-- [Hermes Agent Goal And Kanban](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-and-kanban.md)（Hermes Goal + Kanban 对照）
-- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)（接触面控制对照）
+- [Interconnects The Distillation Panic](ch01/381-the-distillation-panic.md)（蒸馏恐慌 — 同期产业反应）
+- [Loop Engineering Addy Osmani Challengehub](ch05/006-loop-engineering.md)（Loop Engineering — Addy Osmani 同主线）
+- [Openspec Spec Driven Development Trae Solo](ch05/046-openspec.md)（Spec-driven 同对照）
+- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch04/277-ai.md)（Spec-as-AIOS — 抗熵增架构）
+- [Claude Code Vs Hermes Session Vs Goal Lifecycle](ch03/075-claude-code.md)（session vs goal lifecycle 对照）
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/045-agent.md)（Hermes Agent Goal runtime 对照）
+- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](ch03/075-claude-code.md)（Claude Code 100 行 loop 同主线）
+- [Openclaw Boris Cherny Agent Loop Design Patterns](ch03/045-agent.md)（OpenClaw agent loop 对照）
+- [Mimo Code Xiaomi Coding Harness 2026](ch01/217-0.md)（MiMo Code Max Mode + Goal 机制同主线）
+- [Snowflake Agentic Enterprise Summit 2026](ch01/217-0.md)（Snowflake — 可审计治理同主线）
+- [Hermes Agent Goal And Kanban](ch03/045-agent.md)（Hermes Goal + Kanban 对照）
+- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](ch04/277-ai.md)（接触面控制对照）
 - [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)（RL 数据质量对照 — 强制熵的同源思想）
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)

@@ -109,14 +109,14 @@
 **保持平台选择的灵活性，不要锁定单一渠道。** 文章最后提到「厂商政策变化比天气还快」是务实的市场判断。国产 AI 云服务市场仍处于高速变动期，模型能力、计费方式、限额政策都可能在几个月内发生大幅调整。建议不要做超长期的刚性购买决策，而是保持2-3个平台同时可用，以便在某一平台政策恶化时快速切换 。
 
 ## 相关实体
-- [Pi Openclaw Coding Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-openclaw-coding-harness.md)
-- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](https://github.com/QianJinGuo/wiki/blob/main/entities/2-小时0-行手写代码我用-claude-做了一个生产级-vscode-插件.md)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/gateway-architecture-openclaw-claude-hermes-comparison.md)
-- [Hermes Agent Vs Openclaw Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-vs-openclaw-comparison.md)
-- [Ai Production Development Workflow Openspec Superpowers Gstack](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-production-development-workflow-openspec-superpowers-gstack.md)
+- [Pi Openclaw Coding Harness](ch11/215-openclaw.md)
+- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](ch01/217-0.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](ch11/215-openclaw.md)
+- [Hermes Agent Vs Openclaw Comparison](ch03/045-agent.md)
+- [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-54-烧完额度后我把七家国产-ai-公司-coding-plan-对比了一遍想不到最应该买的竟然是这家.md)
-- [minimax token调用第一后：agentos现实与模型厂商的系统适配挑战](https://github.com/QianJinGuo/wiki/blob/main/entities/agentos-minimax-forge-model-adaptation-yaoge.md)
+- [minimax token调用第一后：agentos现实与模型厂商的系统适配挑战](ch03/045-agent.md)
 
 ---
 

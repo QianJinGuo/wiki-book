@@ -68,9 +68,9 @@ LOL 分级的核心价值不是"更快响应"，而是"避免倦怠"——如果
 ## 相关实体
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
-- [High Throughput Graph Abstraction At Netflix](https://github.com/QianJinGuo/wiki/blob/main/entities/high-throughput-graph-abstraction-at-netflix.md)
-- [High Throughput Graph Abstraction At Netflix Part I](https://github.com/QianJinGuo/wiki/blob/main/entities/high-throughput-graph-abstraction-at-netflix-part-i.md)
-- [Netflix Nebula Archrules](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-nebula-archrules.md)
+- [High Throughput Graph Abstraction At Netflix](ch11/101-high-throughput-graph-abstraction-at-netflix-part-i.md)
+- [High Throughput Graph Abstraction At Netflix Part I](ch11/101-high-throughput-graph-abstraction-at-netflix-part-i.md)
+- [Netflix Nebula Archrules](ch11/088-netflix-nebula-archrules-java-archunit.md)
 
 ## 相关引用
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/netflix-live-operations-human-infrastructure.md)

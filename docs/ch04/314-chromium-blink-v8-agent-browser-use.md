@@ -84,8 +84,8 @@ V8 执行层级（从快到慢，从轻到重）：
 
 ## 相关实体
 
-- [BrowserBC：人类轨迹 Skill 蒸馏](https://github.com/QianJinGuo/wiki/blob/main/entities/browserbc-human-trajectory-skill-distillation-quantumbit-2026.md)
-- [Agent Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
+- [BrowserBC：人类轨迹 Skill 蒸馏](ch04/256-skill.md)
+- [Agent Harness Context Management](ch03/045-agent.md)
 
 ## 延伸资源
 

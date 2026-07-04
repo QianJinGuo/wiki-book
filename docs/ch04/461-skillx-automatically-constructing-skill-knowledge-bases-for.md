@@ -11,11 +11,11 @@
 1. 经验学习孤立化，不同任务间重复探索，效率低下
 
 ## 相关实体
-- [Skillos Learning Skill Curation For Self Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Skill Os Learning Skill Curation Self Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
-- [Airbyte Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/airbyte-agents.md)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/building-ai-agents-for-business-support-using-amazon-bedrock.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/139-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Skill Os Learning Skill Curation Self Evolving Agents](ch04/256-skill.md)
+- [Airbyte Agents](ch04/277-ai.md)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch04/256-skill.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/070-building-ai-agents-for-business-support-using-amazon-bedrock.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillx-zhejiang-university.md)
 

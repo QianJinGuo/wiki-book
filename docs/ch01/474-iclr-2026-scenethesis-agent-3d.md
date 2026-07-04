@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](https://github.com/QianJinGuo/wiki/blob/main/entities/iclr-agent-3d-generation.md)
+- [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](ch03/045-agent.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/3CITzkDLeeDM0Olz9wudrg.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
@@ -148,13 +148,13 @@ Scenethesis 的真正贡献在于范式层面：
 
 ## 关联实体
 
-- [Yann Dubois Openai Post Training Matt Turck Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-matt-turck-interview.md) — OpenAI 后训练方法访谈
-- [Yann Lecun Llm Not Intelligence Jepa](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-llm-not-intelligence-jepa.md) — LeCun 关于 LLM 与空间智能的批判
-- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — 2026 LLM RL 算法综述
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md) — NVIDIA Isaac Lab 机器人 RL 扩展
-- [Minimax M3 Frontier Three Set Open Source](https://github.com/QianJinGuo/wiki/blob/main/entities/minimax-m3-frontier-three-set-open-source.md) — MiniMax M3 开源前沿三件套
+- [Yann Dubois Openai Post Training Matt Turck Interview](ch04/277-ai.md) — OpenAI 后训练方法访谈
+- [Yann Lecun Llm Not Intelligence Jepa](ch01/606-llm.md) — LeCun 关于 LLM 与空间智能的批判
+- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](ch01/217-0.md) — 2026 LLM RL 算法综述
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/988-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md) — NVIDIA Isaac Lab 机器人 RL 扩展
+- [Minimax M3 Frontier Three Set Open Source](ch09/071-minimax-m3-frontier.md) — MiniMax M3 开源前沿三件套
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md) — NVIDIA Isaac Lab + SageMaker 人形机器人 RL
-- [Four Sub Agent Patterns 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/four-sub-agent-patterns-2026.md) — 2026 四大子 Agent 模式
+- [Four Sub Agent Patterns 2026](ch01/217-0.md) — 2026 四大子 Agent 模式
 
 ---
 

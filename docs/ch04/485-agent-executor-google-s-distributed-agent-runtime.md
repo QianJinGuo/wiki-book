@@ -37,11 +37,11 @@ Agent Executor 的开放性设计——支持 LangChain/LangGraph、ADK、以及
 - **通过 A2A 协议实现跨组织 agent 协作**：Agent2Agent Protocol 的开放性意味着不同组织开发的 agent 可以互操作。在设计 agent 系统时，应考虑支持 A2A 以便未来与其他供应商的 agent 无缝集成。
 
 ## 相关实体
-- [Agentexecutorgooglesdistributedagentruntime](https://github.com/QianJinGuo/wiki/blob/main/entities/agentexecutorgooglesdistributedagentruntime.md)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
-- [A Bitter Lesson For Data Filtering E8807D](https://github.com/QianJinGuo/wiki/blob/main/entities/a-bitter-lesson-for-data-filtering-e8807d.md)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
+- [Agentexecutorgooglesdistributedagentruntime](ch03/045-agent.md)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](ch01/310-rag.md)
+- [A Bitter Lesson For Data Filtering E8807D](ch01/217-0.md)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/256-skill.md)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/256-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-executor-googles-distributed-agent-runtime-da1bb4.md)
 

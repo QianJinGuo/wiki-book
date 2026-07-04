@@ -12,10 +12,10 @@
 - 不存在的问题：他不认为几年后会有人说当前路线走错了
 
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
-- [Ath Agent Trust Handshake Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/ath-agent-trust-handshake-protocol.md)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md)
+- [Wow Harness V3 Governance Protocol](ch05/009-harness.md)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/045-agent.md)
+- [Ath Agent Trust Handshake Protocol](ch03/045-agent.md)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/256-skill.md)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/demis-hassabis-yc-interview-2026.md)

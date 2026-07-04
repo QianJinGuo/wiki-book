@@ -34,7 +34,7 @@
 
 **Project OS 愿景**：用户将大目标和项目给出，系统自动构建出一套在自己运转、围绕目标持续进化的任务系统。人从停不下来的中心走出来，站到这些系统的上方。
 
-**与工程视角的关系**：本文与 [Loop Engineering 综合实体](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-addy-osmani-challengehub.md) 互补——该实体侧重工程组件（worktree/skill/connector/sub-agent/state file），本文补充产品/PM 视角（人与 Loop 的关系变化、经验的跨 loop 流动、普通人友好的设计原则）。也与 [反馈控制系统实体](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-feedback-control-system.md) 中"人的位置"讨论形成对照。
+**与工程视角的关系**：本文与 [Loop Engineering 综合实体](ch05/006-loop-engineering.md) 互补——该实体侧重工程组件（worktree/skill/connector/sub-agent/state file），本文补充产品/PM 视角（人与 Loop 的关系变化、经验的跨 loop 流动、普通人友好的设计原则）。也与 [反馈控制系统实体](ch05/006-loop-engineering.md) 中"人的位置"讨论形成对照。
 
 ## Dittos Loop For Codex
 

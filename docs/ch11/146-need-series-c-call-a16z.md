@@ -10,11 +10,11 @@ Published Time: 2026-05-19T14:00:52+00:00
 **[[America](https://www.a16z.news/t/america) | [Tech](https://www.a16z.news/t/technology) | [Opinion](https://www.a16z.news/t/opinion) | [Culture](https://www.a16z.news/t/culture) | [Charts](https://www.a16z.news/t/charts)]**
 
 ## 相关实体
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](https://github.com/QianJinGuo/wiki/blob/main/entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
-- [Aws Bedrock Intelligence Message Defense](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-intelligence-message-defense.md)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-platform-on-aws-anthropics-native-platfor.md)
-- [How Amazon Finance Streamlines Regulatory Inquiries By Using](https://github.com/QianJinGuo/wiki/blob/main/entities/how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
+- [Aws Bedrock Intelligence Message Defense](ch11/253-bedrock.md)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/854-anthropic.md)
+- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/009-how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www-a16z-news-need-series-c-call-a16z.md)
 

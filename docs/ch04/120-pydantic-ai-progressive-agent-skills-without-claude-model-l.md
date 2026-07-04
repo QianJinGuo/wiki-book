@@ -161,7 +161,7 @@ Pydantic AI：`RunContext[DepsType]` 依赖注入——IDE 自动补全，静态
 - `Tencent Ai Infra Backend Engineer Huangrunpeng` — Python-first AI 框架的另一视角
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 工程化的更高层抽象
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pydantic-ai-progressive-agent-skills-automatorrunner.md)
-- [面向 skills 编程：大淘宝企业购 5 阶段演进与 anthropic agent skills 标准实战](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-driven-programming-taobao-enterprise-5-phase-evolution-2026-06-17.md)
+- [面向 skills 编程：大淘宝企业购 5 阶段演进与 anthropic agent skills 标准实战](ch04/256-skill.md)
 
 ---
 
