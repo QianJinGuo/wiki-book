@@ -81,7 +81,7 @@ if existing.get("Item", {}).get("status") == "COMPLETED":
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/259-amazon-nova.md)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/701-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/277-ai.md)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch01/217-0.md)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch01/216-0.md)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/045-agent.md)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/277-ai.md)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/485-claude.md)

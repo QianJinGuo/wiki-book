@@ -8,10 +8,10 @@
 
 ## 相关实体
 
-- [canvas hackers shinyhunters say their official domain was su](ch04/150-ai.md)
-- [canvas hackers shinyhunters say their official domain was su](ch04/150-ai.md)
-- [private fintech has quietly become bigger than public fintec](ch03/099-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
-- [private fintech has quietly become bigger than public fintec](ch03/099-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
+- [canvas hackers shinyhunters say their official domain was su](ch04/277-ai.md)
+- [canvas hackers shinyhunters say their official domain was su](ch04/277-ai.md)
+- [private fintech has quietly become bigger than public fintec](ch03/101-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
+- [private fintech has quietly become bigger than public fintec](ch03/101-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-04-15.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
@@ -38,12 +38,12 @@ Cyberscammers are bypassing banks’ security with illicit tools sold on Telegra
 - **data趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/150-ai.md)
-- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/210-openclaw.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
+- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/215-openclaw.md)
 
 ## 实践启示
 1. **工程落地**: code领域方案需关注可观测性、可维护性和成本效率

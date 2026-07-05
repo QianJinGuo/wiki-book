@@ -12,7 +12,7 @@
 ## 相关实体
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 - [Tether Launches Developer Grants Program For Local First Ai ](ch04/277-ai.md)
-- [Anthropic_Cache_Tokenomics](ch01/854-anthropic.md)
+- [Anthropic_Cache_Tokenomics](ch12/003-token.md)
 - [Introducing Claude For Small Business](ch01/027-introducing-claude-for-small-business.md)
 - [Wetesteddeepseekv4Proandflashagainstclau](ch04/277-ai.md)
 

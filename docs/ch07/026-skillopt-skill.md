@@ -134,11 +134,11 @@ SpreadsheetBench 从 77.5 暴跌到 55.0（-22.5 分）的实验揭示：跨 epo
 - 项目主页：https://microsoft.github.io/SkillOpt/
 
 ## 相关实体
-- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/256-skill.md)
-- [Claude Design Skill](ch01/972-claude-design-skill.md)
+- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/255-skill.md)
+- [Claude Design Skill](ch01/1060-claude-design-skill.md)
 - [Git Repo Based Pm Automation](https://github.com/QianJinGuo/wiki/blob/main/entities/git-repo-based-pm-automation.md)
-- [Ai Skill Skill Creator 源码拆解](ch01/593-skill-skill.md)
-- [Qoder Skill Ui Agent Human Collaboration](ch04/256-skill.md)
+- [Ai Skill Skill Creator 源码拆解](ch01/592-skill-skill.md)
+- [Qoder Skill Ui Agent Human Collaboration](ch04/255-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillopt-microsoft-train-skill-like-neural-network.md)
 

@@ -1,58 +1,94 @@
-# 你不知道的 Agent：原理、架构与工程实践
+# Agent之间，有互联网了！
 
-## Ch04.478 你不知道的 Agent：原理、架构与工程实践
+## Ch04.478 Agent之间，有互联网了！
 
-> 📊 Level ⭐⭐ | 4.1KB | `entities/你不知道的-agent原理架构与工程实践-v2.md`
+> 📊 Level ⭐⭐ | 5.2KB | `entities/agent之间有互联网了.md`
 
-# 你不知道的 Agent：原理、架构与工程实践
+# Agent之间，有互联网了！
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/你不知道的-agent原理架构与工程实践-v2.md)
+**来源**: 量子位
 
-## 深度分析
+**发布日期**: 2026-06-30
 
-0
-review_recommendation: strong
-review_stars: 4ingested: 2026-05-10
-# 你不知道的 Agent：原理、架构与工程实践
-文章内容基于作者个人技术实践与独立思考，旨在分享经验，仅代表个人观点。
+**原文链接**: https://mp.weixin.qq.com/s/dXFJfseigkhtWGTH0Gp7pA
 
-### 核心观点
+---
 
-1. 这篇文章主要讲 Agent 架构里几块最影响工程效果的内容，包括控制流、上下文工程、工具设计、记忆、多 Agent 组织、评测、追踪和安全，最后再用 OpenClaw 的实现把这些设计原则串起来看一遍。
-2. 整理下来，有几处判断和我原来想的不太一样，更贵的模型带来的提升，很多时候没有想象中那么大，反而 Harness 和验证测试质量对成功率的影响更大，调试 Agent 行为时，也应优先检查工具定义，因为多数工具选择错误都出在描述不准确，另外，评测系统本身的问题，很多时候比 Agent 出问题更难发现，如果一直在 Agent 代码上反复调，效果未必明显，读完这篇，这几个问题应该能有些答案。
-3. 一、Agent Loop 的基本运转方式
-Agent Loop 的核心实现逻辑抽象后其实不到 20 行代码：
-const messages: MessageParam[] = [{ role: "user", content: userInput }];while (true) {  const response = await client.
-4. create({    model: "claude-opus-4-6",    max_tokens: 8096,    tools: toolDefinitions,    messages,  });  if (response.
-5. stop_reason === "tool_use") {    const toolResults = await Promise.
+金磊 发自 凹非寺 量子位 | 公众号 QbitAI
 
-### 内容结构
+这一次， 联网 的不再是电脑，而是一群会干活的 Agent 。
 
-- 你不知道的 Agent：原理、架构与工程实践
-- ** MEMORY.md  和 Skills 如何协作  **
-- 参考资料
+它们为什么需要联网？
 
-### 技术要点
+因为以前我们用AI，更像是在各自开单机，Claude Code写代码，Codex跑任务，另一个Agent做调研，再来一个Agent改文档。每个都挺能干，但大多数时候，它们各干各的。
 
-- **agent架构**: 本文在agent方向提出的设计理念与实现路径
-- **工程挑战**: 实际落地中面临的关键问题与应对策略
-- **architecture趋势**: 相关技术演进方向与新兴范式
+那么问题来了：
 
-### 关联实体
+当一个人只有一个Agent，这叫效率工具；当一个公司里开始出现十个、一百个、甚至更多 Agent，事情就没那么简单了。
 
-- [Harness 之后 状态边界与失败闭环 若飞](ch05/009-harness.md)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/150-ai.md)
-- [Ai Friendly Architecture Design Taobao](ch04/150-ai.md)
-- [Headroom Context Compression Agent Vibecoder](ch03/044-agent.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Ai Agent Harness Construction Akshay Baoyu](ch04/150-ai.md)
+这时候它们就需要一张网，能分工，能沟通，能交接，能验收，还能把每一次协作里的经验沉淀下来。
 
-## 实践启示
+而这也正是 明略科技 这次开源发布 Octo 的切入点。
 
-1. **Agent 设计**: 关注控制流与上下文工程的平衡，Harness 约束比模型能力更影响成功率
-2. **可观测性**: Agent 行为调试应优先检查工具定义和上下文质量
-3. **渐进式部署**: 从简单 ReAct 循环起步，逐步引入多 Agent 编排
-4. **验证优先**: 建立完善的测试验证体系，确保 Agent 行为可预测
+像下面的例子中，你只需要给一个Agent下达任务，它就会自动带着其它Agent一起协作干活：
+
+简单来说，Octo想做的是一个开源可信的Agent协作网络，也就是 让人、Agent和外部工具一起进入同一套协作系统 ：
+
+- Open，是开放和可自部署；
+
+- Context，是让工作上下文在协作中流动；
+
+- Taste，是把人的判断、偏好和品味留下来；
+
+- Orchestration，是把人、Agent 和工具编排到同一层协作里。
+
+一言蔽之，就是Agents do. Humans decide.
+
+这句话背后，其实藏着AI应用下一阶段的一个关键变化。AI不再只是在聊天框里回答问题，它开始进入组织流程，成为可以被分工、被管理、被验收的数字劳动力。
+
+## 三个核心概念：Agent需要一个真正的工位
+
+Octo要做的第一件事，就是给Agent一个可以进入组织协作的工位。
+
+这里面有三个核心概念， Bot 、 Channel/Thread 、 Matter 。
+
+先看Bot。
+
+在Octo里，Agent不是一个临时调用的功能按钮，它会以Bot身份进入团队，有身份、有名片、有能力说明，也有工作记录。
+
+一个写代码强的Bot，可能文档能力一般；另一个做调研扎实的Bot，可能更适合写行业报告。如果所有Agent都只是聊天框里的
+
+## 第 2 来源 — 机器之心（Octo 深度分析：Agent 数字劳动力组织网络）
+
+> 机器之心 2026-07-02 对 Octo 平台的深度报道，提供了比首篇量子位报道更详细的架构分析、企业组织视角和工程实践。
+
+### 核心理念：从「单一 Agent」到「一张组织网络」
+
+机器之心的报道以 ARPANET 的历史类比开场：就像 20 世纪 60 年代的计算孤岛在 ARPANET 连接后被打通一样，当前 Agent 正面临"单体能力强但系统分散"的困境。Agent 被困在各自的工作流中，运行在不同工具、上下文和权限体系里，彼此看不见、调不动，也无法形成连续任务链条。
+
+### Octo 架构：Bot / Channel / Matter 三要素
+
+与首篇报道的四个英文概念（Open/Context/Taste/Orchestration）不同，机器之心深入阐述了 Octo 的三个核心产品概念：
+
+1. **Bot** — Agent 不是临时功能按钮，而是以 Bot 身份进入团队，有身份、名片、能力说明和工作记录。不同 Bot 各有专长（写代码 vs 文档 vs 调研），组成数字员工矩阵。
+2. **Channel/Thread** — 协作空间和对话线程，人与 Bot、Bot 与 Bot 之间在此沟通、交接、反馈。
+3. **Matter** — 任务单元。Matter 是一个标准化工作包，可被多个 Bot 接力处理，并在过程中积累反馈和评价。
+
+### A2A 协作与组织级部署
+
+在 Octo 的底层通信协议中，人和 Agent 被设计为**同等身份的消息主体**。Bot 之间可以直接对话、互相补充：一只搜集信息、一只分析、一只纠错，最后交给人来品鉴。这标志着从单人单 AI 到多人多 AI 协作的范式转变。
+
+### 互补角度
+
+本报道相对于首篇（量子位）的独特视角：
+1. **ARPANET 历史类比** — 将 Agent 互联比作 60 年代计算孤岛的破局
+2. **Bot/Channel/Matter 三要素** — 更完整的产品架构描述
+3. **A2A 协作协议细节** — 人与 Agent 同等身份的消息设计
+4. **企业组织视角** — Bot 作为数字员工 / 组织级资产的定位
+5. **工程实践细节** — 多 Bot 接力、反馈闭环、关键节点人类决策
+6. **开源地址** — 直接指向 GitHub 仓库
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/octo-agent-internet-collaboration-platform-minglue-2026-07-02.md)
 
 ---
 

@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [9个Agent技能模块化SageMaker微调生命周期](ch04/277-ai.md)
-- [AWS DevOps Agent × MCP Server：混合云网络排障](ch07/042-aws-devops-agent-mcp-server.md)
+- [AWS DevOps Agent × MCP Server：混合云网络排障](ch07/043-aws-devops-agent-mcp-server.md)
 
 - [Design And Practical Application Of Intelligent Agents In E Commerce Industry](ch03/045-agent.md)
 ## 深度分析

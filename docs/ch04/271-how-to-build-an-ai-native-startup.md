@@ -2,7 +2,7 @@
 
 ## Ch04.271 How to Build an AI-Native Startup
 
-> 📊 Level ⭐⭐ | 9.3KB | `entities/ai-native-startup-cyberfund-2026.md`
+> 📊 Level ⭐⭐ | 9.4KB | `entities/ai-native-startup-cyberfund-2026.md`
 
 # How to Build an AI-Native Startup
 
@@ -79,11 +79,11 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 
 ### Harness 的必要性
 
-文章中提到的「每个智能体外面必须套一个防护层」直接呼应了 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心原则。六个阶段的 harness 流程（预检→计划→审批→执行→验证→记录）与 [Claude Code](ch03/074-claude-code.md) 的内部机制异曲同工。Replit 事件则是一个典型的反面案例——提示词层面的安全约束在实际工程中是不可靠的。
+文章中提到的「每个智能体外面必须套一个防护层」直接呼应了 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心原则。六个阶段的 harness 流程（预检→计划→审批→执行→验证→记录）与 [Claude Code](ch03/075-claude-code.md) 的内部机制异曲同工。Replit 事件则是一个典型的反面案例——提示词层面的安全约束在实际工程中是不可靠的。
 
 ### 评估驱动的复利增长
 
-文章对 Evals 的强调体现了 AI 原生系统与传统软件工程的根本区别：传统系统通过代码测试保证质量，AI 原生系统通过评估保证技能的持续改进。接受率作为核心指标，本质上是一个信号——它告诉你技能是否已经「理解」了任务的边界。这与 [Karpathy 关于 Agentic Engineering](ch03/044-agent.md) 的观点相呼应：评估系统是 AI 原生公司的质量基础设施。
+文章对 Evals 的强调体现了 AI 原生系统与传统软件工程的根本区别：传统系统通过代码测试保证质量，AI 原生系统通过评估保证技能的持续改进。接受率作为核心指标，本质上是一个信号——它告诉你技能是否已经「理解」了任务的边界。这与 [Karpathy 关于 Agentic Engineering](ch03/045-agent.md) 的观点相呼应：评估系统是 AI 原生公司的质量基础设施。
 
 ### 评论者的补充
 
@@ -102,12 +102,12 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 
 ## 相关实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/044-agent.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/150-ai.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/044-agent.md)
-- [两万字详解Claude Code源码核心机制](ch03/074-claude-code.md)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/277-ai.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
+- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-native-startup-cyberfund-2026.md)
 

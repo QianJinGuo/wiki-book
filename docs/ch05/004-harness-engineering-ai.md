@@ -149,7 +149,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 - [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md)
 - [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-build-to-delete.md)
 - [Harness Engineering Theory To Practice Helen](ch05/061-harness-engineering.md)
-- [Evaluating Netflix Show Synopses With Llm As A Judge](ch01/364-evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
+- [Evaluating Netflix Show Synopses With Llm As A Judge](ch01/363-evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)

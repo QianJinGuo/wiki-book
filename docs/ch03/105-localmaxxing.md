@@ -40,7 +40,7 @@ Localmaxxing 不是"取代云端"而是"分流任务"。随着本地模型能力
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/localmaxxing.md)
 
 - [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](https://github.com/QianJinGuo/wiki/blob/main/entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
-- [Ico Fines South Staffordshire 2022 Breach](ch01/217-0.md)
+- [Ico Fines South Staffordshire 2022 Breach](ch01/216-0.md)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Interaction Models](ch03/099-interaction-models-a-scalable-approach-to-human-ai-collabor.md)
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](ch04/277-ai.md)

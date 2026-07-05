@@ -1,39 +1,32 @@
-# 多 Agent 编排系统
+# Agent 后端架构
 
-## Ch04.585 多 Agent 编排系统
+## Ch04.585 Agent 后端架构
 
-> 📊 Level ⭐⭐⭐ | 2.5KB | `entities/agent-orchestration-multi-agent-systems.md`
+> 📊 Level ⭐⭐ | 1.7KB | `entities/backend-for-agent.md`
 
-# 多 Agent 编排系统
+# Agent 后端架构
 
-多 Agent 编排的核心问题：任务分解、角色分配、通信协议、冲突消解。主流模式包括层级编排（Orchestrator-Worker）、对等协作（Peer-to-Peer）、市场竞争（Auction-based）等。
+面向 Agent 的后端架构设计：API 优先、结构化输出、状态机化、可回放。传统 BFF（Backend for Frontend）的进化——从服务人类 UI 到服务 Agent 的 Machine-to-Machine 接口。
 
 ## 深度分析
 
-### 四种编排模式的设计哲学
+本页作为知识图谱锚点，连接了以下关键实体：[后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](ch04/277-ai.md)。 相关主题通过 [Agent架构关键变化：Harness正在成为新后端](ch03/045-agent.md) 延伸。
 
-四种主流多 Agent 编排模式对应不同的设计哲学。层级编排（Orchestrator-Worker）强调"分治"——中央协调者负责任务分解和结果合并。对等协作（Peer-to-Peer）强调"自主"——各 Agent 通过消息传递自行协调，没有中心节点。市场竞争（Auction-based）强调"择优"——多个 Agent 根据能力和报价竞标任务。投票/共识模式强调"民主"——多个 Agent 独立判断，通过加权投票确定最终输出。
-
-### 任务分解粒度的核心权衡
-
-过粗的分解消解了多 Agent 的优势；过细的分解引入了过多的通信和协调开销。最优粒度在每个子任务刚好填满单 Agent 上下文窗口的大部分容量、执行时间在 1-5 分钟之间。这个粒度保证 Agent 有足够信息独立决策，同时不会因任务过大而需要二次分解。
-
-### 通信协议的核心设计选择
-
-同步 vs 异步：同步通信简单但引入阻塞依赖，异步通信灵活但增加状态管理复杂度。点对点 vs 发布订阅：点对点直接可控，适合已知协作关系；发布订阅解耦可扩展，适合动态 Agent 集群。消息格式：结构化格式（JSON Schema）保证互操作性，自然语言格式灵活但引入解析不确定性。实际系统往往采用控制流用同步点对点、事件流用异步发布订阅的混合策略。
+> 本页内容将在入库相关溯源素材后进一步深化。
 
 ## 实践启示
 
-1. **从层级编排开始**：Orchestrator-Worker 是最容易理解和调试的模式，适合 80% 的多 Agent 场景。
-2. **粒度规则：1 Agent = 1 上下文窗口**：子任务的大小应以"填满但不溢出单个 Agent 上下文窗口"为准。
-3. **通信标准化先行**：在实现任何编排逻辑之前，先定义 Agent 之间的消息格式和通信协议。
+1. 本领域系统性内容尚待采集——当前知识库在此方向的覆盖密度偏低
+2. 建议优先采集 Agent 后端架构 相关的一手来源（论文/官方文档/工程博客）
+3. 通过交叉链接密度评估本领域的知识图谱成熟度
 
-## 关联
+## 相关实体
 
-- [AgentRun 多 Agent 协作](ch03/044-agent.md)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
-> 本页为概念锚点页（stub），用于修复知识图谱断链。后续将在相关实体入库时补充溯源引用与深度内容。
+- [后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](ch04/277-ai.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch03/045-agent.md)
+- [AI 友好架构设计](ch04/277-ai.md)
+- [AI Agent 工程师能力地图](ch04/277-ai.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 
 ---
 
