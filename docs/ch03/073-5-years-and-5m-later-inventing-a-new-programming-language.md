@@ -104,7 +104,7 @@ Wasp 团队是 Haskell 老兵，对 DSL + 编译器 + 形式化规范有深厚�
 - [Ai Coding Agent From Helloworld To Production](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md) — AI Coding Agent 走向生产
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
 - [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — Harness 工程范式转移
-- [qwen code skill testing framework: recording, playback, and](ch04/256-skill.md)
+- [qwen code skill testing framework: recording, playback, and](ch04/255-skill.md)
 
 ---
 

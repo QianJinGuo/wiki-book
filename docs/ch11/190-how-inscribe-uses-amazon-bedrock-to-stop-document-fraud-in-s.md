@@ -56,7 +56,7 @@ Inscribe 的 AWS 基础设施设计体现了生产级 Agentic AI 的几个关键
 - [Amazon Bedrock AgentCore](ch03/045-agent.md)
 - [Bedrock Claude Prompt Cache](ch01/485-claude.md)
 - [Bedrock Cross-Region Inference](ch11/253-bedrock.md)
-- [Agentic AI 系统架构](ch04/256-skill.md)
+- [Agentic AI 系统架构](ch04/255-skill.md)
 - [Bedrock Serverless Inference](ch11/253-bedrock.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-inscribe-uses-amazon-bedrock-to-stop-document-fraud.md)

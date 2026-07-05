@@ -11,11 +11,11 @@
 - **影响范围**：任何通过 `npx skills add`、GitHub仓库或 skills.sh 等平台安装未审查 Skill 的用户均受影响
 - **攻击前提**：用户需主动触发恶意 Skill，且 Claude Code 未启用沙箱隔离
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch04/256-skill.md)
-- [Skill System Design Three Way Comparison](ch04/256-skill.md)
-- [Claude Code Skills Mcp Rules Source Analysis](ch04/256-skill.md)
-- [Claude Code Skills Mcp Rules Source Analysis](ch04/256-skill.md)
-- [Claude Code Skills Mcp Rules Source Analysis](ch04/256-skill.md)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch04/255-skill.md)
+- [Skill System Design Three Way Comparison](ch04/255-skill.md)
+- [Claude Code Skills Mcp Rules Source Analysis](ch04/255-skill.md)
+- [Claude Code Skills Mcp Rules Source Analysis](ch04/255-skill.md)
+- [Claude Code Skills Mcp Rules Source Analysis](ch04/255-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents.md)
 

@@ -86,7 +86,7 @@ Patrick 关于"loss-y 模型"的问题指出了一个有价值的研究方向：
 ## 相关实体
 - [Thread Openai Devs](ch04/277-ai.md)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
-- [Thread 0Xcheeezzyyyy](ch01/217-0.md)
+- [Thread 0Xcheeezzyyyy](ch01/216-0.md)
 - 
 - Axie Infinity Ronin Ethereum Layer2 Migration
 

@@ -11,7 +11,7 @@
 - 案例：Udemy、Canva、Jamf、Vimeo
 ## 相关实体
 - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch04/277-ai.md)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch01/217-0.md)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch01/216-0.md)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Fedora Hummingbird Container Security](ch04/277-ai.md)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md)

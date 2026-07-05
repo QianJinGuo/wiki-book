@@ -175,16 +175,16 @@ bootstrap → spec-lint → build → lint → unit-test → ac-coverage → int
 
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
-| [Ssd Spec Driven Development Harness Asd Shuge 2026 06 17](ch01/217-0.md) | **同作者昨日（6/17）ASD 实战文** | 116 行深度文档：4 条设计约束 + ASD 三层架构 + 8 步闸门管道 + 5 Agent Skill；本文是其次日（6/18）的反思篇，专攻"缝合怪识别 + 减法决策论" |
-| [Openspec 四步法深度复盘 流程完整不等于代码正确](ch05/046-openspec.md) | **同主题批判视角** | OpenSpec 流程完整 ≠ 代码正确（与本文"流程完整不等于工程有效"同脉） |
+| [Ssd Spec Driven Development Harness Asd Shuge 2026 06 17](ch01/216-0.md) | **同作者昨日（6/17）ASD 实战文** | 116 行深度文档：4 条设计约束 + ASD 三层架构 + 8 步闸门管道 + 5 Agent Skill；本文是其次日（6/18）的反思篇，专攻"缝合怪识别 + 减法决策论" |
+| [Openspec 四步法深度复盘 流程完整不等于代码正确](ch01/1065-spec.md) | **同主题批判视角** | OpenSpec 流程完整 ≠ 代码正确（与本文"流程完整不等于工程有效"同脉） |
 | [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](ch04/277-ai.md) | **同作者 6/17 三件套** | 术哥 6/17 OpenSpec+Superpowers+Comet 三件套（420 行）；与本文 6/18 OpenSpec+Superpowers **主动下线**形成强烈对照 — 同作者 24 小时内从"整合"到"拆分"的决策弧 |
 | [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](ch04/277-ai.md) | **同三件套范式** | gstack + Superpowers + OpenSpec 三器合一工程化（114 行） |
 | [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/277-ai.md) | **gstack 三件套** | 同上 gstack 三件套另一角度（233 行） |
 | [Claude Code Superpowers Workflow By Xinlingyuanyuanyuan](ch03/075-claude-code.md) | **Superpowers 单独实战** | Superpowers 工作流详细解读（无 OpenSpec） |
-| [Claude Code Skills Superpowers Practice](ch04/256-skill.md) | **Superpowers 技能实践** | Superpowers Skills 实践 |
-| [Spec Kit Bmad Sdd Practice Yexiaocha](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-kit-bmad-sdd-practice-yexiaocha.md) | **Spec-Kit + BMAD** | Spec-Kit + BMAD SDD 实践（不同 SDD 流派） |
+| [Claude Code Skills Superpowers Practice](ch04/255-skill.md) | **Superpowers 技能实践** | Superpowers Skills 实践 |
+| [Spec Kit Bmad Sdd Practice Yexiaocha](ch01/1065-spec.md) | **Spec-Kit + BMAD** | Spec-Kit + BMAD SDD 实践（不同 SDD 流派） |
 | [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch04/277-ai.md) | **Spec-as-AIOS** | 高德 Spec-as-AIOS 反熵架构（Spec 即操作系统的不同视角） |
-| [Openspec Spec Driven Development Trae Solo](ch05/046-openspec.md) | **OpenSpec 单独实战** | OpenSpec + TRAE 单独使用 |
+| [Openspec Spec Driven Development Trae Solo](ch01/1065-spec.md) | **OpenSpec 单独实战** | OpenSpec + TRAE 单独使用 |
 | [Harness Engineering Alibaba Java Case Study](ch05/061-harness-engineering.md) | **阿里 Harness 工程** | 阿里 Harness 工程实践（与 SDD 互补） |
 | [Harness Pilot Claude Code Plugin Yangtong 2026 06 17](ch03/075-claude-code.md) | **Harness Pilot** | Claude Code Harness 插件 |
 
@@ -235,7 +235,7 @@ ASD ⑤ 注入点的核心洞察：**verification 不能让 Agent 自查**。Age
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openspec-superpowers-decommissioning-frankenstein-test-three-questions-shuge-2026-06-18.md)
 
 **同作者系列**：
-- 03 篇（SSD 实战 / 6/17）：[Ssd Spec Driven Development Harness Asd Shuge 2026 06 17](ch01/217-0.md)
+- 03 篇（SSD 实战 / 6/17）：[Ssd Spec Driven Development Harness Asd Shuge 2026 06 17](ch01/216-0.md)
 - 04 篇（本反思 / 6/18）：本文
 - 预告：05 篇 — 业界工具全景对比（Spec Kit / OpenSpec / Kiro / Plan Mode）+ 下线 OpenSpec 的完整决策过程
 

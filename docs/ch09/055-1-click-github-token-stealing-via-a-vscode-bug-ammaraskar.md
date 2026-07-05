@@ -56,7 +56,7 @@ VSCode 在 webview 与扩展 host 之间使用 `postMessage` API 通信。ammara
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md)
 
-- [bagel — fleet 级 secret scanning 守护开发工作站](ch01/217-0.md)
+- [bagel — fleet 级 secret scanning 守护开发工作站](ch01/216-0.md)
 
 ## 深度分析
 

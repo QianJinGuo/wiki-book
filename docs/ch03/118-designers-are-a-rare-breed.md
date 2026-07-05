@@ -38,8 +38,8 @@ YouTube 上有一类视频专门做这类测试：给新手顶级专业设备，
 > ai agent platforms topic map（已删除）
 
 - [柚漫剧 AI全流程提效拆解](ch04/277-ai.md)
-- [Agent Skill 设计模式](ch04/256-skill.md)
-- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](ch01/217-0.md)
+- [Agent Skill 设计模式](ch04/255-skill.md)
+- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](ch01/216-0.md)
 
 ---
 

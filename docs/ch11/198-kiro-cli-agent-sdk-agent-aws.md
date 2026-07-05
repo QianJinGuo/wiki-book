@@ -34,7 +34,7 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/freelance-designers-cant-compete-ai-subscription.md)
 
-- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/use-kiro-specification-driven-development-to-accelerate-data-quality-construction.md)
+- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](ch01/1065-spec.md)
 
 ---
 
