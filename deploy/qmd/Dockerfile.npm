@@ -1,0 +1,8 @@
+FROM node:22-bullseye-slim
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3 make g++ && rm -rf /var/lib/apt/lists/*
+RUN npm install -g @tobilu/qmd --ignore-scripts && npm cache clean --force
+RUN cd /usr/local/lib/node_modules/@tobilu/qmd && npm rebuild better-sqlite3
+WORKDIR /data
+EXPOSE 8005
+CMD ["qmd", "mcp", "--http", "--port", "8005", "--host", "0.0.0.0"]

@@ -260,7 +260,7 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 
 ### 与 Cloud Agent 基础设施
 - [Development environments for your cloud agents](ch03/045-agent.md) = Cursor 视角：dev environment 配置工具 + 多 repo 环境——**关注 dev tooling**，本文关注 **production runtime 隔离与凭据**
-- [Cloudflare + Claude Managed Agents](ch01/100-announcing-claude-managed-agents-on-cloudflare.md) = "脑手分离"架构：推理在 Anthropic 平台 + 代码执行在 Cloudflare Sandboxes——**关注架构分工**，本文关注 **平台自身的 hot-swap + 凭据隔离**
+- [Cloudflare + Claude Managed Agents](ch01/102-announcing-claude-managed-agents-on-cloudflare.md) = "脑手分离"架构：推理在 Anthropic 平台 + 代码执行在 Cloudflare Sandboxes——**关注架构分工**，本文关注 **平台自身的 hot-swap + 凭据隔离**
 - [Claude Managed Agents 企业边界更新](ch03/045-agent.md) = 同一系列，**关注企业 hybrid control plane**（self-hosted + Anthropic 推理）
 
 ### 与多租户 / Serverless Agent
@@ -269,7 +269,7 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 - [Stripe Agent 经济基础设施 5 套图谱](ch03/045-agent.md) = 关注 **agent 经济层基础设施**（支付/钱包/订阅），**与本文 runtime 隔离互补**
 
 ### 与 RAG / Agent 评估
-- [RAG 技术框架的演进方向](ch01/310-rag.md) = 关注 **retrieval 充分性**（充分上下文智能体 = 信息的"够不够"判断）
+- [RAG 技术框架的演进方向](ch01/309-rag.md) = 关注 **retrieval 充分性**（充分上下文智能体 = 信息的"够不够"判断）
 - **本文 = 关注 runtime 充分性**（状态 / 代码 / 凭据的"够不够"判断 + ownership 边界）
 
 ### 与上下文隔离

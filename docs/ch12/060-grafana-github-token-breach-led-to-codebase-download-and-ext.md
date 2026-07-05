@@ -2,7 +2,7 @@
 
 ## Ch12.060 Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt
 
-> 📊 Level ⭐⭐ | 7.3KB | `entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt-2.md`
+> 📊 Level ⭐⭐ | 7.3KB | `entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md`
 
 ## 事件概要
 Grafana 于 2026 年 5 月披露，公司遭 unauthorized party 获取了可访问其 GitHub 环境的 token，并下载了代码库。调查显示无客户数据或个人信息的访问痕迹，Grafana 随即启动取证分析、定位泄露源头、作废凭证并强化安全管控。攻击者随后试图勒索 Grafana，要求支付赎金以阻止被盗数据库公开，Grafana 拒绝支付并遵循 FBI 一贯立场——不与勒索者谈判。
@@ -58,11 +58,11 @@ Grafana 主动在 X 平台公布事件进展，遵循了 modern breach disclosur
 - Grafana 可通过监控 dark web 论坛判断其代码是否已被公开或出售
 - 将 CoinbaseCartel 的 TTPs（战术、技术、流程）纳入 SOC 检测规则
 ## 相关实体
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch01/833-github.md)
-- [Grafana Github Token Breach Led To Html](ch01/833-github.md)
-- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](ch01/217-0.md)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch01/834-github.md)
+- [Grafana Github Token Breach Led To Html](ch01/834-github.md)
+- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](ch01/216-0.md)
 - [Github Investigating Teampcp Claimed 17Cc77](ch04/277-ai.md)
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](ch01/833-github.md)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](ch01/834-github.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt-2.md)

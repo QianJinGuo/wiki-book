@@ -18,7 +18,7 @@
 ## 相关实体
 - [Microsoft Agent Framework Structured Output](ch03/045-agent.md)
 - [Microsoft Agent Framework Python Zizhi](ch03/045-agent.md)
-- [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](ch01/217-0.md)
+- [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](ch01/216-0.md)
 - [Open Claw Tool Bus Subagent Architecture](ch03/045-agent.md)
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/277-ai.md)
 

@@ -91,10 +91,10 @@ Adobe Design 的 Veronica Peitong Chen 在 2026 年 6 月复盘了一个在 Adob
 ## 相关实体
 
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](ch04/277-ai.md)
-- [system over model, tested: reproducing mythos's freebsd find](ch01/217-0.md)
+- [system over model, tested: reproducing mythos's freebsd find](ch01/216-0.md)
 - [from doer to director: the ai mindset shift](ch01/030-from-doer-to-director-the-ai-mindset-shift.md)
-- [DDoSing Software Delivery Pipelines](ch01/217-0.md)
-- [How my non-engineering team at Sentry learned to ship](ch01/217-0.md)
+- [DDoSing Software Delivery Pipelines](ch01/216-0.md)
+- [How my non-engineering team at Sentry learned to ship](ch01/216-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 
