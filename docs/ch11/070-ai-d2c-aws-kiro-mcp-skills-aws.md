@@ -78,7 +78,7 @@ Steering 文件中配置的 `AUTONOMOUS MODE` 使 AI 能够完整执行 Step 1-6
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](ch04/277-ai.md)
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch04/277-ai.md)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](ch04/277-ai.md)
-- [Agentic AI 系统架构与分层模型](ch04/256-skill.md)
+- [Agentic AI 系统架构与分层模型](ch04/255-skill.md)
 - [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch04/277-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md)

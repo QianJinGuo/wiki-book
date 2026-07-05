@@ -96,7 +96,7 @@ Hermes-Wiki/
 
 **这对长期知识库是致命的**。
 
-> 与 [Hermes Skills + Karpathy LLM Wiki 让 AI 越用越懂你](ch04/256-skill.md) 在"三层互相喂养（Memory + Skills + Wiki）"维度同源——本文把 Wiki 单层做深，给出 9 步可执行搭建法。
+> 与 [Hermes Skills + Karpathy LLM Wiki 让 AI 越用越懂你](ch04/255-skill.md) 在"三层互相喂养（Memory + Skills + Wiki）"维度同源——本文把 Wiki 单层做深，给出 9 步可执行搭建法。
 
 ## 9 步可执行搭建法
 
@@ -192,9 +192,9 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 
 2. **三层分离架构的深层逻辑**：`raw/`（证据层）+ `concepts/`（长期知识节点）+ `entities/`（工具/项目/公司）的分离，本质是让 Agent 在编译时就能区分"事实来源""抽象概念""具体实例"三类认知对象——这种区分能力直接决定 wikilink 能否形成有意义的语义网络，而非同质链接堆砌。
 
-3. **SCHEMA.md 是行为约束而非格式规范**：Agent 知识库失败的根本原因是 Agent 的"创意自由"——今天建 summary、明天建 note、后天换命名。SCHEMA.md 的核心价值在于把"如何维护知识库"变成一个**可执行的行为契约**，而不是一个可被忽略的建议。[Hermes Skills + LLM Wiki 越用越懂你](ch04/256-skill.md)的三层互相喂养框架在这里有直接呼应——Wiki 层需要 Schema 层来稳定行为预期。
+3. **SCHEMA.md 是行为约束而非格式规范**：Agent 知识库失败的根本原因是 Agent 的"创意自由"——今天建 summary、明天建 note、后天换命名。SCHEMA.md 的核心价值在于把"如何维护知识库"变成一个**可执行的行为契约**，而不是一个可被忽略的建议。[Hermes Skills + LLM Wiki 越用越懂你](ch04/255-skill.md)的三层互相喂养框架在这里有直接呼应——Wiki 层需要 Schema 层来稳定行为预期。
 
-4. **"先只读再写"是初始化对齐而非谨慎措施**：步骤 5 的初始化检查（读 SCHEMA.md / index.md / log.md 并总结结构）的本质是**在 Agent 和 Wiki 之间建立共同认知基底**，确保 Agent 理解目录角色和操作规范。这与 [Karpathy LLM Wiki v2](ch01/217-0.md) 的"LLM Wiki 是关于如何组织知识而非存储知识"的核心理念一脉相承。
+4. **"先只读再写"是初始化对齐而非谨慎措施**：步骤 5 的初始化检查（读 SCHEMA.md / index.md / log.md 并总结结构）的本质是**在 Agent 和 Wiki 之间建立共同认知基底**，确保 Agent 理解目录角色和操作规范。这与 [Karpathy LLM Wiki v2](ch01/216-0.md) 的"LLM Wiki 是关于如何组织知识而非存储知识"的核心理念一脉相承。
 
 **实践价值**：对于想构建自生长知识网络的团队，9 步法的最大启示是"**先规则后内容**"——不给 Agent 规则而直接给资料，最终得到的是一堆 AI 生成的新垃圾，命名混乱、链接无意义、不可追溯。
 
@@ -227,12 +227,12 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 
 - **同 LLM Wiki / Obsidian 知识管理**：
   - [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](ch04/277-ai.md)（架构分析）
-  - [Karpathy LLM Wiki v2](ch01/217-0.md)（原始方法论）
+  - [Karpathy LLM Wiki v2](ch01/216-0.md)（原始方法论）
   - [Karpathy LLM Wiki 第二大脑](ch04/277-ai.md)
   - [Obsidian 工具概览](ch09/112-obsidian-claude-code-integration-guide.md)
-  - [Claude Code Memory Setup (Obsidian + Graphify)](ch01/842-claude-code-memory-setup-obsidian-graphify.md)
+  - [Claude Code Memory Setup (Obsidian + Graphify)](ch01/843-claude-code-memory-setup-obsidian-graphify.md)
 - **同 Hermes Agent 生态**：
-  - [Hermes Skills + LLM Wiki 越用越懂你](ch04/256-skill.md)（三层互相喂养）
+  - [Hermes Skills + LLM Wiki 越用越懂你](ch04/255-skill.md)（三层互相喂养）
   - [Hermes Agent 自进化机制源码解析](ch03/045-agent.md)
   - [Hermes Agent Memory System vs OpenClaw](ch03/045-agent.md)
 - **同上下文工程 / 记忆架构**：

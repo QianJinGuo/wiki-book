@@ -381,7 +381,7 @@ AI编码过程中，有个比较重要的关注点是在保证迭代成功率的
 ---
 
 ## 相关实体
-- [Karpathy Claude Md Rules](ch01/323-claude-md.md)
+- [Karpathy Claude Md Rules](ch01/322-claude-md.md)
 - [Ai Memory Architecture Deep Dive](ch04/277-ai.md)
 - [Tmall Ai Coding Practice Team Knowledge Base](ch04/277-ai.md)
 - [Tmall Ai Coding Practice Team Knowledge Base Npm](ch04/277-ai.md)

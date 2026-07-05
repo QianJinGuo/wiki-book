@@ -88,7 +88,7 @@ Optimizer    = paged_adamw_8bit
 
 ## 相关实体
 - [CyberSecQwen-4B](ch12/099-cybersecqwen-4b.md)
-- [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](ch01/036-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.md)
+- [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](ch01/1065-spec.md)
 
 ---
 

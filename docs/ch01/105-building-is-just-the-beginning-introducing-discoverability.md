@@ -24,8 +24,8 @@
 ## 相关实体
 - [Lovable Discoverability Intro](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
 - [Building Is Just The Beginning Introducing Discoverability](ch12/084-building-is-just-the-beginning-introducing-discoverability.md)
-- [Building The Agentic Future Developer Highlights From Io 2026](ch01/217-0.md)
-- [Introducing The Ettin Reranker Family](ch01/479-introducing-the-ettin-reranker-family.md)
+- [Building The Agentic Future Developer Highlights From Io 2026](ch01/216-0.md)
+- [Introducing The Ettin Reranker Family](ch01/478-introducing-the-ettin-reranker-family.md)
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-is-just-the-beginning-introducing-discove.md)

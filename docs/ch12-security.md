@@ -2,7 +2,7 @@
 
 > Agent 权限越大，安全责任越重：凭据、审计、合规
 
-> 本章收录 **123 篇**实体，按深度递增排列。
+> 本章收录 **122 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 9 |
-| ⭐⭐ 工程师 | 需编程基础 | 112 |
+| ⭐⭐ 工程师 | 需编程基础 | 111 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
@@ -128,33 +128,32 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 - [091. Guide to Security Operations at Machine Speed](ch12/091-guide-to-security-operations-at-machine-speed)
 - [092. Discord 全平台端到端加密](ch12/092-discord)
 - [093. Nikesh Arora 20VC 访谈：Token 定价、FDE、SaaS→AI 转型与记忆护城河](ch12/093-nikesh-arora-20vc-token-fde-saas-ai)
-- [094. A 0-click exploit chain for the Pixel 10: When a Door Closes, a Window Opens](ch12/094-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes)
-- [095. Funnel Builder Flaw Under Active Exploitation Enables WooCommerce Checkout Skimming](ch12/095-funnel-builder-flaw-under-active-exploitation-enables-woocom)
-- [096. Forward launches Predict to verify network changes before they reach production - SiliconANGLE](ch12/096-forward-launches-predict-to-verify-network-changes-before-th)
-- [097. Static Devirtualization of Themida](ch12/097-static-devirtualization-of-themida)
-- [098. GitHub Breached — Employee Device Hack Led to Exfiltration](ch12/098-github-breached-employee-device-hack-led-to-exfiltration)
-- [099. CyberSecQwen-4B](ch12/099-cybersecqwen-4b)
-- [100. Mystery Microsoft bug leaker keeps the zero-days coming](ch12/100-mystery-microsoft-bug-leaker-keeps-the-zero-days-coming)
-- [101. AI phishing attacks are on the rise — Are you prepared? | Bitwarden](ch12/101-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
-- [102. cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now](ch12/102-cpanel-whm-release-fixes-for-three-new-vulnerabilities-pa)
-- [103. Semgrep Intercom Php Security](ch12/103-semgrep-intercom-php-security)
-- [104. A DOD contractor’s API flaw exposed military course data and service member records](ch12/104-a-dod-contractor-s-api-flaw-exposed-military-course-data-and)
-- [105. peerd: 浏览器原生的 AI Agent Harness](ch12/105-peerd-ai-agent-harness)
-- [106. Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](ch12/106-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt)
-- [107. Incendium Fuzzing Ms Rpc](ch12/107-incendium-fuzzing-ms-rpc)
-- [108. OpenSandbox：阿里开源的云端 Agent 安全沙箱（凭据 Vault + egress sidecar）](ch12/108-opensandbox-agent-vault-egress-sidecar)
-- [109. How Semgrep Cut Taint Analysis Time by 75%](ch12/109-how-semgrep-cut-taint-analysis-time-by-75)
-- [110. Sandworm Hackers Shift From IT Breaches to Critical OT Targets](ch12/110-sandworm-hackers-shift-from-it-breaches-to-critical-ot-targe)
-- [111. On Post-Quantum Security Adoption](ch12/111-on-post-quantum-security-adoption)
-- [112. Jane Street — 形式化方法与编程的未来](ch12/112-jane-street)
-- [113. Semgrep Intercom Php Supply Chain](ch12/113-semgrep-intercom-php-supply-chain)
-- [114. ICO fines Cl0p victim South Staffs Water over data breach](ch12/114-ico-fines-cl0p-victim-south-staffs-water-over-data-breach)
-- [115. Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare](ch12/115-drupal-to-release-urgent-core-security-updates-on-may-20-si)
-- [116. Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram](ch12/116-cyberscammers-are-bypassing-banks-security-with-illicit-too)
-- [117. Hackers accessed BWH Hotels reservation system for months](ch12/117-hackers-accessed-bwh-hotels-reservation-system-for-months)
-- [118. ICO fines South Staffordshire £963K over 2022 breach](ch12/118-ico-fines-south-staffordshire-963k-over-2022-breach)
-- [119. 中国用户安全高性能访问海外 Bedrock](ch12/119-bedrock)
-- [120. ShinyHunters hack 7-Eleven: franchisee data and Salesforce records exposed](ch12/120-shinyhunters-hack-7-eleven-franchisee-data-and-salesforce-r)
-- [121. Temporarily disabling new user registrations](ch12/121-temporarily-disabling-new-user-registrations)
-- [122. U of T researchers demonstrate AI worm: self-spreading malware using open-weight models](ch12/122-u-of-t-researchers-demonstrate-ai-worm-self-spreading-malwa)
-- [123. Japan’s PM orders cybersecurity review to defend against Anthropic Mythos](ch12/123-japan-s-pm-orders-cybersecurity-review-to-defend-against-ant)
+- [094. Funnel Builder Flaw Under Active Exploitation Enables WooCommerce Checkout Skimming](ch12/094-funnel-builder-flaw-under-active-exploitation-enables-woocom)
+- [095. Forward launches Predict to verify network changes before they reach production - SiliconANGLE](ch12/095-forward-launches-predict-to-verify-network-changes-before-th)
+- [096. Static Devirtualization of Themida](ch12/096-static-devirtualization-of-themida)
+- [097. GitHub Breached — Employee Device Hack Led to Exfiltration](ch12/097-github-breached-employee-device-hack-led-to-exfiltration)
+- [098. CyberSecQwen-4B](ch12/098-cybersecqwen-4b)
+- [099. Mystery Microsoft bug leaker keeps the zero-days coming](ch12/099-mystery-microsoft-bug-leaker-keeps-the-zero-days-coming)
+- [100. AI phishing attacks are on the rise — Are you prepared? | Bitwarden](ch12/100-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
+- [101. cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now](ch12/101-cpanel-whm-release-fixes-for-three-new-vulnerabilities-pa)
+- [102. Semgrep Intercom Php Security](ch12/102-semgrep-intercom-php-security)
+- [103. A DOD contractor’s API flaw exposed military course data and service member records](ch12/103-a-dod-contractor-s-api-flaw-exposed-military-course-data-and)
+- [104. peerd: 浏览器原生的 AI Agent Harness](ch12/104-peerd-ai-agent-harness)
+- [105. Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](ch12/105-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt)
+- [106. Incendium Fuzzing Ms Rpc](ch12/106-incendium-fuzzing-ms-rpc)
+- [107. OpenSandbox：阿里开源的云端 Agent 安全沙箱（凭据 Vault + egress sidecar）](ch12/107-opensandbox-agent-vault-egress-sidecar)
+- [108. How Semgrep Cut Taint Analysis Time by 75%](ch12/108-how-semgrep-cut-taint-analysis-time-by-75)
+- [109. Sandworm Hackers Shift From IT Breaches to Critical OT Targets](ch12/109-sandworm-hackers-shift-from-it-breaches-to-critical-ot-targe)
+- [110. On Post-Quantum Security Adoption](ch12/110-on-post-quantum-security-adoption)
+- [111. Jane Street — 形式化方法与编程的未来](ch12/111-jane-street)
+- [112. Semgrep Intercom Php Supply Chain](ch12/112-semgrep-intercom-php-supply-chain)
+- [113. ICO fines Cl0p victim South Staffs Water over data breach](ch12/113-ico-fines-cl0p-victim-south-staffs-water-over-data-breach)
+- [114. Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare](ch12/114-drupal-to-release-urgent-core-security-updates-on-may-20-si)
+- [115. Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram](ch12/115-cyberscammers-are-bypassing-banks-security-with-illicit-too)
+- [116. Hackers accessed BWH Hotels reservation system for months](ch12/116-hackers-accessed-bwh-hotels-reservation-system-for-months)
+- [117. ICO fines South Staffordshire £963K over 2022 breach](ch12/117-ico-fines-south-staffordshire-963k-over-2022-breach)
+- [118. 中国用户安全高性能访问海外 Bedrock](ch12/118-bedrock)
+- [119. ShinyHunters hack 7-Eleven: franchisee data and Salesforce records exposed](ch12/119-shinyhunters-hack-7-eleven-franchisee-data-and-salesforce-r)
+- [120. Temporarily disabling new user registrations](ch12/120-temporarily-disabling-new-user-registrations)
+- [121. U of T researchers demonstrate AI worm: self-spreading malware using open-weight models](ch12/121-u-of-t-researchers-demonstrate-ai-worm-self-spreading-malwa)
+- [122. Japan’s PM orders cybersecurity review to defend against Anthropic Mythos](ch12/122-japan-s-pm-orders-cybersecurity-review-to-defend-against-ant)

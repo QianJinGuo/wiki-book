@@ -18,7 +18,7 @@
 
 - [Cline releases open-source agent runtime SDK](ch03/045-agent.md)
 - [Spring AI AI Agent Demo](ch04/277-ai.md)
-- [SkillX — 层次化技能知识库](ch04/256-skill.md)
+- [SkillX — 层次化技能知识库](ch04/255-skill.md)
 
 - [intercom, now called fin, launches an ai agent whose only jo](ch04/277-ai.md)
 

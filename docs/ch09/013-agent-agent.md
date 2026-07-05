@@ -310,7 +310,7 @@ business_agent_profile:
 
 ## 相关实体
 
-- [循环工程 (loop engineering) — 清华 2026 框架](ch01/217-0.md)
+- [循环工程 (loop engineering) — 清华 2026 框架](ch01/216-0.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 

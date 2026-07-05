@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [Claude Code Prompt Context Harness](ch03/075-claude-code.md)
-- [From Prompt To Harness Claude Official](ch05/009-harness.md)
+- [From Prompt To Harness Claude Official](ch01/485-claude.md)
 - [Claude Code Harness Deep Dive Founder Park](ch03/075-claude-code.md)
 - [Anthropic Managed Agents Scaling](ch03/045-agent.md)
 - [Hermes Agent Deep Dive Alibaba](ch03/045-agent.md)

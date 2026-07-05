@@ -26,7 +26,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/computerweekly-ico-fines-cl0p-south-staffs-water.md)
 
 ## 相关实体
-- [ICO fines South Staffordshire £963K over 2022 breach](https://github.com/QianJinGuo/wiki/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
+- [ICO fines South Staffordshire £963K over 2022 breach](ch01/216-0.md)
 
 ---
 

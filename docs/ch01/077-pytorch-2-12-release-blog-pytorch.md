@@ -16,9 +16,9 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pytorch-2-12-release-blog.md)
 
 ## 相关实体
-- [Pytorch 2 12 Release](ch01/077-pytorch-2-12-release-blog-pytorch.md) — 同一博客的平行存档
+- [Pytorch 2 12 Release](ch01/078-pytorch-2-12-release-blog-pytorch.md) — 同一博客的平行存档
 
-- [profiling in pytorch (part 2): from nn.linear to a fused mlp](ch01/217-0.md)
+- [profiling in pytorch (part 2): from nn.linear to a fused mlp](ch01/216-0.md)
 
 ## 深度分析
 ### 从研究框架到生产平台的演变

@@ -140,7 +140,7 @@ Hermes 当前已经实现了**原始数据派的核心能力**：
 - [Hermes Agent 12 Layer Full Configuration Guide](ch03/045-agent.md)
 - [Hermes Agent Memory System Three Layer Architecture](ch03/045-agent.md)
 - [Hermes Agent Self Evolving](ch03/045-agent.md)
-- [Hermes Skill System](ch04/256-skill.md)
+- [Hermes Skill System](ch04/255-skill.md)
 - [Hermes 9 Module Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-9-module-architecture.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)

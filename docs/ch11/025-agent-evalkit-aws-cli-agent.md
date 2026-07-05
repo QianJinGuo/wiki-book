@@ -93,7 +93,7 @@ Agent-EvalKit 团队在 Strands Agents SDK + Bedrock 旅行研究 agent 上跑 1
 - [Langsmith Evaluation Concepts](ch03/126-langsmith-evaluation-concepts.md) — LangSmith 评测概念框架
 - [Agent Harness Observability Production](ch03/045-agent.md) — Agent harness 生产可观测性
 - [Agent Memory Evaluation Landscape Taobao Survey](ch03/045-agent.md) — Agent 记忆评估方法论全景
-- [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](ch01/217-0.md)
+- [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](ch01/216-0.md)
 - [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](ch03/045-agent.md)
 
 - [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](ch04/277-ai.md)

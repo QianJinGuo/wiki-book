@@ -1,58 +1,64 @@
-# 你不知道的 Agent：原理、架构与工程实践
+# 想让 Agent 在你睡觉时继续干活？先给它排好夜班
 
-## Ch04.486 你不知道的 Agent：原理、架构与工程实践
+## Ch04.486 想让 Agent 在你睡觉时继续干活？先给它排好夜班
 
-> 📊 Level ⭐⭐ | 4.1KB | `entities/你不知道的-agent原理架构与工程实践-v2.md`
+> 📊 Level ⭐⭐ | 5.0KB | `entities/agent-nightshift-cron-task-scheduling.md`
 
-# 你不知道的 Agent：原理、架构与工程实践
+# 想让 Agent 在你睡觉时继续干活？先给它排好夜班
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/你不知道的-agent原理架构与工程实践-v2.md)
+本文将传统 `crontab` 和定时任务的概念扩展到 AI Agent 领域，探讨「Agent 夜班」——如何让 Agent 在用户离线时继续执行任务。
+
+## 核心问题
+
+Agent 执行长任务（代码审查、批量数据处理、慢查询优化等）时，单次对话窗口和用户在线时间往往不够。需要让 Agent 能够：
+
+1. **自主排班**：识别需要长时间运行的任务，自动安排到夜间执行
+2. **结果汇总**：任务完成后整理结果，用户上班时即可查看
+3. **失败重试**：夜间任务失败时自动重试或通知
+
+## 工程架构
+
+- 任务队列 + Agent Worker 模式：将长任务拆解为可独立执行的子任务，由 Agent Worker 在后台逐个完成
+- 基于系统状态感知：Agent 需要感知系统负载、资源使用率，选择空闲时段执行
+- 定时触发器：类似 `crontab` 表达式，支持自定义排班（每 12 小时、凌晨执行等）
+
+## 实践案例
+
+文章描述了 Agent Browser 长时间运行后产生僵尸 Chrome 进程（6 个渲染进程吃满 768% CPU），以及如何通过定时任务 Agent 自动清理的案例。
 
 ## 深度分析
 
-0
-review_recommendation: strong
-review_stars: 4ingested: 2026-05-10
-# 你不知道的 Agent：原理、架构与工程实践
-文章内容基于作者个人技术实践与独立思考，旨在分享经验，仅代表个人观点。
+### 从 Prompt 到 Loop：Agent 工作单元的重定义
 
-### 核心观点
+文章中提出的核心转变是 Agent 的工作单元正在从「单次 prompt 调用」变成「可排班、可交接、可检查的运行过程」。这个变化的意义不在于「让模型多跑几小时」，而在于**时间维度、成本维度和交接维度**的加入。当 `/goal` 解决「做到什么才算完」、`/loop` 解决「什么时候回来再看一次」、Routines 解决「任务能不能独立跑」时，Agent 从对话工具变成了可生产部署的工作进程。
 
-1. 这篇文章主要讲 Agent 架构里几块最影响工程效果的内容，包括控制流、上下文工程、工具设计、记忆、多 Agent 组织、评测、追踪和安全，最后再用 OpenClaw 的实现把这些设计原则串起来看一遍。
-2. 整理下来，有几处判断和我原来想的不太一样，更贵的模型带来的提升，很多时候没有想象中那么大，反而 Harness 和验证测试质量对成功率的影响更大，调试 Agent 行为时，也应优先检查工具定义，因为多数工具选择错误都出在描述不准确，另外，评测系统本身的问题，很多时候比 Agent 出问题更难发现，如果一直在 Agent 代码上反复调，效果未必明显，读完这篇，这几个问题应该能有些答案。
-3. 一、Agent Loop 的基本运转方式
-Agent Loop 的核心实现逻辑抽象后其实不到 20 行代码：
-const messages: MessageParam[] = [{ role: "user", content: userInput }];while (true) {  const response = await client.
-4. create({    model: "claude-opus-4-6",    max_tokens: 8096,    tools: toolDefinitions,    messages,  });  if (response.
-5. stop_reason === "tool_use") {    const toolResults = await Promise.
+### 无人值守任务的四个运行时能力
 
-### 内容结构
+文章提炼了 Agent 在无人值守模式下必须具备的四项基础能力：**保存现场**（知道上次做到哪里）、**调用工具**（不只生成文本还执行命令）、**检查结果**（拿出可验证的测试、截图、diff）、**停在边界**（遇到不可逆动作或连续失败时停止）。这四条既是对 Agent 能力的约束，也是工程保障——它们确保无人值守不会变成无人管控。
 
-- 你不知道的 Agent：原理、架构与工程实践
-- ** MEMORY.md  和 Skills 如何协作  **
-- 参考资料
+### GOAL/STATE/EVIDENCE/PERMISSIONS 四件套
 
-### 技术要点
+文章提出了一套极简的工程实践：四份 Markdown 文件分别承载完成条件、交班状态、验收证据和权限边界。这种设计不是为了让 Agent「更聪明」，而是为了把隐含信息摊开——让 Agent 不必猜测哪些能做、哪些不能做，让人不必第二天从头翻聊天记录。传统定时脚本只负责「到点执行」，而 Agent 引入的正是这套**可交接的状态管理**。
 
-- **agent架构**: 本文在agent方向提出的设计理念与实现路径
-- **工程挑战**: 实际落地中面临的关键问题与应对策略
-- **architecture趋势**: 相关技术演进方向与新兴范式
+### 低峰窗口下的工程经济学
 
-### 关联实体
-
-- [Harness 之后 状态边界与失败闭环 若飞](ch05/009-harness.md)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/150-ai.md)
-- [Ai Friendly Architecture Design Taobao](ch04/150-ai.md)
-- [Headroom Context Compression Agent Vibecoder](ch03/044-agent.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/044-agent.md)
-- [Ai Agent Harness Construction Akshay Baoyu](ch04/150-ai.md)
+模型 API 的峰谷定价（如 Qwen3.7-Max 在 off-peak 时段 Credits 倍率从 0.5x 降至 0.1x）使得时间排班从「省钱技巧」升级为系统架构考量。但文章指出，真正重要的不是便宜——而是**低成本打开了低风险实验空间**，让团队愿意让 Agent 在夜间处理那些「白天舍不得用昂贵 API 跑」的任务。
 
 ## 实践启示
 
-1. **Agent 设计**: 关注控制流与上下文工程的平衡，Harness 约束比模型能力更影响成功率
-2. **可观测性**: Agent 行为调试应优先检查工具定义和上下文质量
-3. **渐进式部署**: 从简单 ReAct 循环起步，逐步引入多 Agent 编排
-4. **验证优先**: 建立完善的测试验证体系，确保 Agent 行为可预测
+1. **无人值守任务必须先有验收标准** — 没有明确完成条件的任务不适合交给 Agent 夜间执行；强目标应包含可测量的结束状态和约束条件。
+2. **四文件模式可零成本实施** — GOAL → STATE → EVIDENCE → PERMISSIONS 从 Markdown 文件开始，不需要复杂系统，却能从根本上改善 Agent 任务的可交接性。
+3. **渐进的自动化路径更可靠** — 白天手动跑 → `/goal` 固化验收 → `/loop` 短周期看护 → 连续稳定后沉淀为 Routine，避免一步到位的全自动化陷阱。
+4. **让 Agent 运行时有「刹车机制」** — 权限分层（可自动做/可生成待审/需人工确认/禁止）和停机条件（连续失败 N 次即停止）是无人值守的安全底线。
+5. **白天的工作重心转向「任务拆解」** — 团队下班前准备 GOAL/STATE 文件的过程，本身就是一种知识显性化实践，生产力价值远超晚上跑的几个任务。
+
+## 关键洞见
+
+- Agent 的定时执行能力是「从工具到系统」的关键跨越
+- 类似 QoderWork 的工具提供可视化定时任务配置，降低了门槛
+- Agent 需要具备「持续性」而非「会话式」——这是 Agent 工程化的核心区别
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-nightshift-cron-task-scheduling.md)
 
 ---
 

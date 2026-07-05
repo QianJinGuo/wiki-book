@@ -76,7 +76,7 @@ Fidelity Center for Applied Technology（FCAT）的案例特别值得关注：ML
 
 ## 相关实体
 
-- [规模化机器人强化学习](ch01/988-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [规模化机器人强化学习](ch01/1086-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [NVIDIA Isaac Lab 机器人 RL](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [AWS SageMaker AI Agent 工作流](ch04/277-ai.md)
 

@@ -92,7 +92,7 @@ TOOLSETS = {
 - **MCP 工具**：toolset 名为 `mcp-<server_name>`，与内置工具完全等价
 
 ## 相关实体
-- [Hermes Agent V014 Core Architecture Shugex](ch01/217-0.md)
+- [Hermes Agent V014 Core Architecture Shugex](ch01/216-0.md)
 - [Hermes Agent Memory System Three Layer Architecture](ch03/045-agent.md)
 - [Hermes Agent Deep Dive](ch03/045-agent.md)
 - [Hermes Agent Self Evolution Tengxun](ch03/045-agent.md)

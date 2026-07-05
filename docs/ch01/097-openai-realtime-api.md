@@ -14,7 +14,7 @@
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch04/277-ai.md)
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/761-openai-gpt-realtime-voice-models-qbitai.md)
 - [Aliyun Agentrun 2Line Integration](ch03/045-agent.md)
-- [Pi Mono Github](ch01/771-pi-mono-github.md)
+- [Pi Mono Github](ch01/772-pi-mono-github.md)
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-realtime-api-architecture.md)

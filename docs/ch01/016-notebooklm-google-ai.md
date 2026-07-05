@@ -136,7 +136,7 @@ NotebookLM 的护城河在于：Google 拥有 Gemini 的模型能力 + Google Wo
 ## Related
 - [AI 知识管理工具横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md)
 - [Obsidian](ch09/112-obsidian-claude-code-integration-guide.md) — 本地离线笔记
-- [ChatGPT Memory](ch01/437-chatgpt-memory.md) — 对话式记忆
+- [ChatGPT Memory](ch01/436-chatgpt-memory.md) — 对话式记忆
 ## 相关实体
 
 - [the interface is no longer the product](ch04/277-ai.md)

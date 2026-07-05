@@ -55,7 +55,7 @@ Microsoft Build 2026 全景：7 款 MAI 模型 + Scout + OpenClaw 登 Windows + 
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/215-openclaw.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/988-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1086-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 
 ## 实践启示

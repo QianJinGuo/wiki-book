@@ -8,7 +8,7 @@
 
 王云鹤（华为诺亚方舟实验室）提出 **Agent = Models + Harness** 的定义框架，其中 Models 特指多模型协作而非单一 Base Model。这一定义直接回应了 Agent 概念长期缺乏清晰边界的问题。
 
-Harness 在此语境下指围绕模型的所有高价值元素——包括 [prompt 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)、RAG（检索增强生成）、tools（工具调用）、memory（记忆）等——联动形成的有机系统。王云鹤强调，Harness 不会消亡：RAG 不是在消失而是在升级——当 RAG 加上 prompt、工具调用、知识后，它演变为 [skills](ch04/256-skill.md) 的核心组件。Harness 元素始终存在，并随模型能力和算法创新不断进化。
+Harness 在此语境下指围绕模型的所有高价值元素——包括 [prompt 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)、RAG（检索增强生成）、tools（工具调用）、memory（记忆）等——联动形成的有机系统。王云鹤强调，Harness 不会消亡：RAG 不是在消失而是在升级——当 RAG 加上 prompt、工具调用、知识后，它演变为 [skills](ch04/255-skill.md) 的核心组件。Harness 元素始终存在，并随模型能力和算法创新不断进化。
 
 ## 国内模型格局：七国八制与异构竞争
 

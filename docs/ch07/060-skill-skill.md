@@ -72,10 +72,10 @@ user happy
 
 ## 相关实体
 - [Openclaw Prompt Context Harness](ch11/215-openclaw.md)
-- [Skill System Design Three Way Comparison](ch04/256-skill.md)
+- [Skill System Design Three Way Comparison](ch04/255-skill.md)
 - [Openclaw Agent Loop Design Patterns](ch03/045-agent.md)
-- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/256-skill.md)
-- [Ai Skill Skill Creator 源码拆解](ch01/593-skill-skill.md)
+- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/255-skill.md)
+- [Ai Skill Skill Creator 源码拆解](ch01/592-skill-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/steipete-skill-cleaner-liangzide.md)
 

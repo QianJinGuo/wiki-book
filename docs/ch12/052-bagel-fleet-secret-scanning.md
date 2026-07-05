@@ -99,7 +99,7 @@
 ## 关联主题
 
 - [Bedrock Agentcore Secrets Manager Identity](ch03/045-agent.md) — AWS Bedrock AgentCore 的 secret 管理视角（云端 secret 而非本地泄漏）
-- [Trail Of Bits Skill Scanner Bypass Distribution](ch04/256-skill.md) — Trail of Bits 的 Skill scanner 工具，AI 编程安全的另一个维度
+- [Trail Of Bits Skill Scanner Bypass Distribution](ch04/255-skill.md) — Trail of Bits 的 Skill scanner 工具，AI 编程安全的另一个维度
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/recyclebin-zip-secret-scanning-fleet-bagel-2026.md)
 
 ## 相关实体

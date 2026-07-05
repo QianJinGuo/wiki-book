@@ -49,7 +49,7 @@ Slack 是整个 Agent 的交互界面。用户通过slash command（`/prepaid Ap
 ## 相关实体
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/277-ai.md)
 - [Create Custom Mcp Catalogs And Profiles](ch07/066-create-custom-mcp-catalogs-and-profiles.md)
-- [Turn Repeated Instructions Into Reusable Skills In Lovable L](ch04/256-skill.md)
+- [Turn Repeated Instructions Into Reusable Skills In Lovable L](ch04/255-skill.md)
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/139-skillos-learning-skill-curation-for-self-evolving-agents.md)
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](ch04/277-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)

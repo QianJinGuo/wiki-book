@@ -188,7 +188,7 @@ Anthropic-Blackstone $1.5B JV 模式展示 PE 作为 AI 转型加速器的潜力
 
 ## 相关实体
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch04/277-ai.md)
-- [Https Stratechery Com 2026 The Google Capital Company](ch01/217-0.md)
+- [Https Stratechery Com 2026 The Google Capital Company](ch01/216-0.md)
 - [The Token Economy](ch01/878-the-token-economy.md)
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/110-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md)
 - [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch04/277-ai.md)

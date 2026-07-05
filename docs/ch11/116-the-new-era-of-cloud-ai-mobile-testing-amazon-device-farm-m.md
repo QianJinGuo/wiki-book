@@ -97,7 +97,7 @@ Amazon Web Services (AWS)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-agentcore-doris-mcp-server.md)
 
-- [Agent 时代架构师技能指南](ch04/256-skill.md)
+- [Agent 时代架构师技能指南](ch04/255-skill.md)
 
 ---
 

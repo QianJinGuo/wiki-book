@@ -87,8 +87,8 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](ch03/075-claude-code.md)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [AutoResearch：多 Agent 自动化软件开发](ch03/045-agent.md)
-- [Claude Opus 4.7 发布分析](ch01/817-claude-opus-4-7.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/256-skill.md)
+- [Claude Opus 4.7 发布分析](ch01/485-claude.md)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/255-skill.md)
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/277-ai.md)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/277-ai.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/075-claude-code.md)
@@ -96,7 +96,7 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/485-claude.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
-- [2026年最值得关注的15款开发者工具深度解读](ch01/217-0.md)
+- [2026年最值得关注的15款开发者工具深度解读](ch01/216-0.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

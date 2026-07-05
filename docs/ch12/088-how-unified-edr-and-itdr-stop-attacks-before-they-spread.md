@@ -11,7 +11,7 @@
 - [Huntress Edr Itdr Unified Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr-unified-detection.md)
 - [Llm Raiders Private Ai Server](ch04/277-ai.md)
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](ch03/075-claude-code.md)
-- [Llm Raiders And How To Repel Them](ch01/746-llm-raiders-and-how-to-repel-them.md)
+- [Llm Raiders And How To Repel Them](ch01/747-llm-raiders-and-how-to-repel-them.md)
 - [How To Create Websites With Great Ux Designs](ch01/128-how-to-create-websites-with-great-ux-designs-principles-and.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/huntress-edr-itdr.md)

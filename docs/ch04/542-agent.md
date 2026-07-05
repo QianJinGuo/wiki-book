@@ -1,50 +1,55 @@
-# 万级实时推理的商品领域Agent实践思考和总结
+# 智能问数Agent--数据智能体-火山引擎
 
-## Ch04.542 万级实时推理的商品领域Agent实践思考和总结
+## Ch04.542 智能问数Agent--数据智能体-火山引擎
 
-> 📊 Level ⭐⭐ | 3.4KB | `entities/taobao-product-domain-agent-architecture.md`
+> 📊 Level ⭐⭐ | 3.6KB | `entities/volcengine-data-agent-intelligent-query-agent.md`
 
-# 万级实时推理的商品领域Agent实践思考和总结
+# 智能问数Agent--数据智能体-火山引擎
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/volcengine-data-agent-intelligent-query-agent.md)
 
 ## 深度分析
 
-本文来自淘天集团商品中心技术团队，详述商品域如何构建"事件驱动的Function-Centric Agent架构"，实现万级实时推理，覆盖亿级商品。
+智能问数Agent--数据智能体-火山引擎 涉及agent领域的核心技术议题。
+### 核心观点
+1. # 智能问数Agent--数据智能体-火山引擎
+**智能分析Agent是一款基于AI深度思考与大数据分析的专家顾问**。
+2. 分析Agent包含智能问数Agent和深度研究Agent，**智能问数Agent**作为一款灵活配置的智能问数工具，可以让用户以简单对话的方式更准确地查询业务数据，支持多数据集查询、语义模型解析、业务知识调用、问题推荐与收藏、个性化推送、多轮交互式问数，以及归因分析等，能够全方位满足用户多样化的数据查询需求。
+3. ## 功能概述
+智能分析 Agent 的智能问数 Agent 功能可通过自然语言对话精准解析用户意图，实现多数据集协同查询与深度归因分析，辅以个性化推荐、多轮交互等功能，为用户提供高效、精准、统一的数据查询服务。
+4. ## 具体功能
+- **推荐问题**：提前将团队大多数用户关心的问题内置到智能体，其他用户点击问题即可快速查询。
+5. - **收藏问题**：将自己常问的问题收藏起来，下次直接点击即可快速查询。
 
-**核心技术架构**：
-- 两层结构：上层workflow编排层 + 下层统一能力供给层，通过AIFunction接口交互
-- 轻量aiagentsdk：@AIWorkflow、@AIAction、@AIFunction、@AIParameter、@AIResult、@AIResultField注解体系
-- 链式调用规范：`registry.item().query().invoke(params)`
+### 内容结构
+- 智能问数Agent--数据智能体-火山引擎
+- 功能概述
+- 具体功能
+- 应用场景
+- 支持的数据集类型
+- 查询结果分析
+- 常见图表分析
+- 数据解读
 
-**商品领域知识库三层**：
-1. 显性事实知识（客观描述）→ 运营决策、prompt增强
-2. 关联情景知识（主配件场景）→ 10个类目10000条案例，53条规则
-3. 隐性经验知识（用户/专家经验）→ 商品卖点、参数说明
+### 技术要点
 
-**在离线统一方案**：
-- Function/Action/Workflow三组件标准化
-- 离线批量推理（调度触发）+ 在线增量推理（实时事件驱动）
-- 统一存储：MySQL（在线）+ ODPS（离线）
+- **agent架构**: 本文在agent方向提出的设计理念与实现路径
+- **工程挑战**: 实际落地中面临的关键问题与应对策略
+- **data趋势**: 相关技术演进方向与新兴范式
+### 关联实体
 
-**实时推理关键**：精卫链路基于商品ID+事务ID聚合变更，将处理量级降低一个数量级。
-
-**应用效果**：覆盖亿级商品，搜索转化率提升，新需求1周/人交付。
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/215-openclaw.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/277-ai.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
 
 ## 实践启示
-
-1. **Java生态Agent选型**：spring-ai-alibaba是集团内落地的最优选择，与现有系统集成成本最低
-2. **Function-Centric设计**：通过AIFunction标准化封装工具和领域知识，上层workflow可灵活编排
-3. **事务型事件驱动**：商品领域事件的聚合转发是实现实时推理的关键基础设施
-4. **三层知识库**：显性→情景→隐性的递进设计，覆盖了商品智能化的完整知识需求
-5. **在离线统一**：同一套Workflow逻辑，通过触发源差异区分在线/离线，代码复用率最大化
-
-## 相关实体
-- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](ch04/150-ai.md)
-- [Verizon Connect Agentic Ai 100K Users](ch04/150-ai.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/133-skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](ch04/150-ai.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/245-skill.md)
-
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/taobao-product-domain-agent-architecture.md)
+1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
+2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
+3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现
+4. **风险管控**: 引入新技术需评估对现有系统稳定性的影响，做好降级预案
 
 ---
 

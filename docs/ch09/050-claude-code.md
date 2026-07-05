@@ -116,7 +116,7 @@ Anthropic + Cerebral Valley 黑客松六组获奖项目（Opus 4.7 + Claude Code
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/075-claude-code.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 - [Claude Code Subagent 上下文卫生](ch03/075-claude-code.md)
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/256-skill.md)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/255-skill.md)
 
 ---
 

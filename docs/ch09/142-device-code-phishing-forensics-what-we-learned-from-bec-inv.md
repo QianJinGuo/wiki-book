@@ -37,10 +37,10 @@ April 1st started with the kind of phishing reports we receive all the time from
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/988-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1086-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 
 ## 实践启示

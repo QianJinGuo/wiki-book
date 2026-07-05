@@ -122,9 +122,9 @@ Anthropic 明确定义了两者关系：
 - Anthropic 博客原文：https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp
 ## 相关实体
 - [Anthropic Mcp Revisited](ch07/016-anthropic-mcp.md)
-- [Anthropic 12 Mcp Production Patterns](ch01/854-anthropic.md)
+- [Anthropic 12 Mcp Production Patterns](ch01/855-anthropic.md)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch03/045-agent.md)
-- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/256-skill.md)
+- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/255-skill.md)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch03/045-agent.md)
 
 - [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](ch04/277-ai.md)

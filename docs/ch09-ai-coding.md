@@ -2,7 +2,7 @@
 
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
-> 本章收录 **152 篇**实体，按深度递增排列。
+> 本章收录 **153 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 7 |
-| ⭐⭐ 工程师 | 需编程基础 | 140 |
+| ⭐⭐ 工程师 | 需编程基础 | 141 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -171,19 +171,20 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [134. Vibe Coding 与 AI 软件工程](ch09/134-vibe-coding-ai)
 - [135. Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access](ch09/135-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region)
 - [136. Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads](ch09/136-dynamically-splitting-wide-partitions-in-cassandra-for-time)
-- [137. 腾讯 AI 编码实践](ch09/137-ai)
-- [138. How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore](ch09/138-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama)
-- [139. AI 编码效率分析方法论](ch09/139-ai)
-- [140. OpenAI大神教你如何榨干Codex](ch09/140-openai-codex)
-- [141. Code Intelligence – Changelog](ch09/141-code-intelligence-changelog)
+- [137. Claude code创始人最新揭秘：Claude Tag如何在团队内部「大杀四方」](ch09/137-claude-code-claude-tag)
+- [138. 腾讯 AI 编码实践](ch09/138-ai)
+- [139. How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore](ch09/139-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama)
+- [140. AI 编码效率分析方法论](ch09/140-ai)
+- [141. OpenAI大神教你如何榨干Codex](ch09/141-openai-codex)
 - [142. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/142-device-code-phishing-forensics-what-we-learned-from-bec-inv)
 - [143. 一年吃掉一块固态硬盘，Codex日志bug被骂「劣质软件](ch09/143-codex-bug)
-- [144. Codex 五层架构：记忆/知识/护栏/委派/分发](ch09/144-codex)
-- [145. Claude Code 前 1% 用户指南：系统级架构与全栈工程化实践](ch09/145-claude-code-1)
-- [146. CoDA-Bench：Code Agent 数据智能基准](ch09/146-coda-bench-code-agent)
-- [147. Agent Browser 僵尸进程排查与定时清理（Claude Code + QoderWork 实战）](ch09/147-agent-browser-claude-code-qoderwork)
-- [148. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/148-fastcontext-coding-agent)
-- [149. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/149-deepseek-visual-primitives)
-- [150. AI Coding Agent Token 成本控制五层模型](ch09/150-ai-coding-agent-token)
-- [151. Dockerless: 免环境补丁验证器](ch09/151-dockerless)
-- [152. GLM-5 Scaling Pain 推理复盘](ch09/152-glm-5-scaling-pain)
+- [144. Claude官方教你用 Loop：如何让Claude Code上夜班的四个交接点](ch09/144-claude-loop-claude-code)
+- [145. Codex 五层架构：记忆/知识/护栏/委派/分发](ch09/145-codex)
+- [146. Claude Code 前 1% 用户指南：系统级架构与全栈工程化实践](ch09/146-claude-code-1)
+- [147. CoDA-Bench：Code Agent 数据智能基准](ch09/147-coda-bench-code-agent)
+- [148. Agent Browser 僵尸进程排查与定时清理（Claude Code + QoderWork 实战）](ch09/148-agent-browser-claude-code-qoderwork)
+- [149. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/149-fastcontext-coding-agent)
+- [150. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/150-deepseek-visual-primitives)
+- [151. AI Coding Agent Token 成本控制五层模型](ch09/151-ai-coding-agent-token)
+- [152. Dockerless: 免环境补丁验证器](ch09/152-dockerless)
+- [153. GLM-5 Scaling Pain 推理复盘](ch09/153-glm-5-scaling-pain)

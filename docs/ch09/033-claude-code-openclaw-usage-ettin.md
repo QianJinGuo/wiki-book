@@ -177,7 +177,7 @@ Ettin Reranker Family 的 **六档参数量 + SoTA 性能 + 长上下文 + Flash
 - [Claude Code Openclaw Memory Vector Db Doubt](ch03/075-claude-code.md)
 - [Claude Code Openclaw Memory Comparison](ch03/075-claude-code.md)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](ch03/075-claude-code.md)
-- [Skill System Design Three Way Comparison](ch04/256-skill.md)
+- [Skill System Design Three Way Comparison](ch04/255-skill.md)
 - [Openclaw Agent Loop Design Patterns](ch03/045-agent.md)
 
 → [原文存档：Ettin Reranker Family](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ettin-reranker-family.md)

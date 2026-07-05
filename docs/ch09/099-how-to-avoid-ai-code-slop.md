@@ -12,7 +12,7 @@
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](ch03/075-claude-code.md)
 - [Low Code Api Integration](ch03/072-how-to-build-low-code-api-integrations-for-enterprise-apps-u.md)
 - [How_Claude_Code_Works_In_Large_Codebases](ch01/485-claude.md)
-- [Karpathy Claude Md Rules](ch01/323-claude-md.md)
+- [Karpathy Claude Md Rules](ch01/322-claude-md.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-to-avoid-ai-code-slop.md)
 
