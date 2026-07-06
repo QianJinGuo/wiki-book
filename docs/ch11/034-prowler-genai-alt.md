@@ -65,9 +65,9 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 值得注意的是，该方案明确指出根据 Amazon Bedrock 的数据隐私合规标准，客户的提示词、安全扫描结果以及生成的报告都不会被用于训练底层的基座模型，确保金融级的数据隔离与隐私安全。 对于金融行业客户，这是一个关键的合规考量点——在使用云端 GenAI 服务时，需要确认服务提供商的数据处理政策，特别是涉及安全扫描结果等敏感信息时。
 
 ## 相关实体
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/259-amazon-nova.md)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/257-amazon-nova.md)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/045-agent.md)
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/253-bedrock.md)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/251-bedrock.md)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/485-claude.md)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch03/045-agent.md)
 
@@ -76,13 +76,13 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch01/216-0.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](ch11/210-restrict-access-to-sensitive-documents-in-your-amazon-quick.md)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/277-ai.md)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/701-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/277-ai.md)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/069-ai.md)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/665-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/航班变更信息智能识别解决方案.md)
 
-- [CloudSectiDbits](ch11/224-cloudsectidbits.md)
+- [CloudSectiDbits](ch11/222-cloudsectidbits.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

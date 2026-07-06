@@ -14,7 +14,7 @@ Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](http
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch03/045-agent.md)
 - [Airbyte Agents A New Era For Airbyte Airbyte](ch04/497-airbyte-agents-a-new-era-for-airbyte-airbyte.md)
-- [Airbyte Agents](ch04/277-ai.md)
+- [Airbyte Agents](ch04/069-ai.md)
 - [5 Years And 5M Later Inventing A New](ch03/073-5-years-and-5m-later-inventing-a-new-programming-language.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)

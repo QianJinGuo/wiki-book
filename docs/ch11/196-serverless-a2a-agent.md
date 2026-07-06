@@ -95,7 +95,7 @@ cd terraform && terraform apply
 
 - [Agentic Overlays：从 REST 到 A2A 的企业转型](ch03/045-agent.md) — REST → A2A 过渡的互补方案
 - [Alibaba Cloud AgentRun 多 Agent A2A](ch03/045-agent.md) — 不同云上的 A2A 实现
-- [AWS/Cisco A2A 安全方案](ch04/277-ai.md) — A2A 安全治理生态
+- [AWS/Cisco A2A 安全方案](ch04/069-ai.md) — A2A 安全治理生态
 - [LangGraph A2A 对抗 Agent 团队](ch03/045-agent.md) — A2A 协议的应用示例
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md)

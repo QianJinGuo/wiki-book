@@ -40,11 +40,11 @@ NVIDIA driver 535.
 - **fine-tuning趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1086-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1046-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/216-0.md)
 - [End To End Encrypted Ml Inference With Amazon Sagemaker Ai A](ch11/043-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/215-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/213-openclaw.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 
 ## 实践启示

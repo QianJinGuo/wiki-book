@@ -78,7 +78,7 @@
 
 ## 相关实体
 - [gemma 4 12b：google 多模态本地模型 —— 扔掉编码器](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-12b-google-multimodal-local.md)
-- [amazon bedrock模型推理的serverless异步架构 – 处理在线多模态高负载案例](ch11/253-bedrock.md)
+- [amazon bedrock模型推理的serverless异步架构 – 处理在线多模态高负载案例](ch11/251-bedrock.md)
 - [gemma 4 multi token prediction drafters](ch01/331-gemma-4-multi-token-prediction-drafters.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-gemma-4-models-on-amazon-bedrock.md)

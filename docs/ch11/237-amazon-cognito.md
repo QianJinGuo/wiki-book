@@ -29,12 +29,12 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1086-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1046-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/213-openclaw.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

@@ -129,19 +129,19 @@
 
 1. **在企业级 Agent 系统中，优先考虑确定性规划层**：不是让 LLM 决定下一步动作，而是用 GOAP/A* 类算法做运行时规划，把 LLM 定位为"动作步骤里的一次 HTTP 调用"——这样才能实现可解释、可审计的业务流程
 
-2. **用注解 + 类型签名声明动作，而非 prompt 工程**：Embabel 的方案是用户用 Java 注解标记方法声明动作，类型系统自动保证动作不会被缺少所需参数的上下文调用——这是比大量 prompt 约束更可靠的设计 [Agentscope Java Harness Framework Enterprise Distributed](ch03/045-agent.md)
+2. **用注解 + 类型签名声明动作，而非 prompt 工程**：Embabel 的方案是用户用 Java 注解标记方法声明动作，类型系统自动保证动作不会被缺少所需参数的上下文调用——这是比大量 prompt 约束更可靠的设计 [Agentscope Java Harness Framework Enterprise Distributed](ch05/009-harness.md)
 
 3. **警惕 Alien Stack：技术选型要遵循邻接性原则**：在什么技术栈就用什么技术栈的 AI 工具，不要为了赶潮流引入根本不懂核心业务的技术栈——这会把战略决策权交给错误的人
 
-4. **MCP 是催化剂不是银弹：为每个 Agent 定制工具集**：跨 Agent 共享工具听起来美好，但实践中完美适合某 Agent 的工具往往就是该 Agent 独有的——不要为了追求标准化而牺牲工具的有效性 [Agent Architecture Harness New Backend](ch03/045-agent.md)
+4. **MCP 是催化剂不是银弹：为每个 Agent 定制工具集**：跨 Agent 共享工具听起来美好，但实践中完美适合某 Agent 的工具往往就是该 Agent 独有的——不要为了追求标准化而牺牲工具的有效性 [Agent Architecture Harness New Backend](ch05/009-harness.md)
 
-5. **控制权是 5%+95% 范式的核心前提**：Rod 的 5% 手写 + 95% AI 公式成立的前提是"牢牢掌握控制权"——没有架构监督，Coding Agent 会导致设计退化。保持人类对架构决策的 100% 控制，AI 生成代码必须经过人工纠正才能合入代码库 [Skillopt](ch05/048-skillopt.md) [Impeccable](ch05/001-impeccable.md)
+5. **控制权是 5%+95% 范式的核心前提**：Rod 的 5% 手写 + 95% AI 公式成立的前提是"牢牢掌握控制权"——没有架构监督，Coding Agent 会导致设计退化。保持人类对架构决策的 100% 控制，AI 生成代码必须经过人工纠正才能合入代码库 [Skillopt](ch05/041-skillopt.md) [Impeccable](ch05/001-impeccable.md)
 
 ## 相关对照
 - 状态机/规划对照：LangGraph、Crew.ai、Semantic Kernel
-- 企业 Java Harness：[AgentScope Java Harness](ch03/045-agent.md)
-- Alien Stack 反思：[Harness 成为新后端](ch03/045-agent.md)（同样"邻接性"原则）
-- 模型 vs Harness 之争：[SkillOpt](ch05/048-skillopt.md) / [Impeccable](ch05/001-impeccable.md)
+- 企业 Java Harness：[AgentScope Java Harness](ch05/009-harness.md)
+- Alien Stack 反思：[Harness 成为新后端](ch05/009-harness.md)（同样"邻接性"原则）
+- 模型 vs Harness 之争：[SkillOpt](ch05/041-skillopt.md) / [Impeccable](ch05/001-impeccable.md)
 - GOAP 起源：游戏 NPC AI（学术界 F.E.A.R / Left 4 Dead 等已用）
 
 ## 相关实体

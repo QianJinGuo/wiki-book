@@ -1,61 +1,67 @@
-# Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本）
+# 两万字详解Claude Code源码核心机制
 
-## Ch01.943 Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本）
+## Ch01.943 两万字详解Claude Code源码核心机制
 
-> 📊 Level ⭐⭐ | 3.6KB | `entities/claude-code-dynamic-workflows-jiqizhixin-9th-translation.md`
+> 📊 Level ⭐⭐ | 3.8KB | `entities/两万字详解claude-code源码核心机制.md`
 
-# Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本）
+# 两万字详解Claude Code源码核心机制
 
-## 相关实体
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/两万字详解claude-code源码核心机制.md)
 
-- [现在如何使用 ai：一份快速指南（ethan mollick）](ch04/277-ai.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-dynamic-workflows-jiqizhixin-9th-translation.md)
-
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析
 
-Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本） 涉及agent领域的核心技术议题。
+source: wechat
+source_url: https://mp.
+
 ### 核心观点
-1. # Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本）
-> 原文作者：Thariq Shihipar（@trq212, Anthropic Claude Code 团队）
-> 原文地址：https://x.
-2. com/trq212/status/2061907337154367865
-> 机器之心译本地址：https://mp.
-3. com/s/YJFC1uk_dxsNQd3Jr7kOeA
-> 发布时间：2026-06-05
-> 机器之心导读：上周 Claude Code 发布了一个新能力"动态工作流"。
-4. 该功能允许 Claude 根据具体任务即时编写定制化执行框架，协调多个子 Agent 并行工作，解决大规模、高并行、对抗性任务中的系统性失效问题。
-5. 近日 Anthropic 工程师 Thariq 发了篇长文分享经验心得。
+
+1. com/s/bMjXlD-OcnFW-wuN1yW8FA
+ingested: 2026-05-16
+feed_name: 炼钢AI
+wechat_mp_fakeid: MP_WXS_3942529661
+source_published: 2026-04-01
+# 两万字详解Claude Code源码核心机制
+本文对Claude Code的核心机制实现上进行详解，包括system prompt、tool、context管理、sub agent、MCP等。
+2. 除此之外，在一些模块，会将Claude Code和OpenCode、Gemini-CLI、Codex等其他开源agent脚手架进行横向对比。
+3. 总体来讲，Claude Code各种机制处理的细致程度还是要比其他开源框架强不少的。
+4. System Prompt
+大多数 AI 编程工具的 system prompt 是一段写死的文本，启动时原样注入，整个会话中保持不变。
+5. Claude Code 的做法不同——它的 system prompt 是  ** 运行时动态组装  ** 的，每次会话启动时由  ` buildEffectiveSystemPrompt  ` 函数现场构建，最终内容取决于当前环境、工具集、MCP 连接状态，以及用户的配置覆盖。
 
 ### 内容结构
-- Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本）
-- 译本特色
-- 核心机制（一句话）
-- 三大失败模式
-- 六大常用模式
-- 十大使用场景（机器之心版完整保留 Thariq 原文）
-- Token 使用预算
-- 保存与分享
+
+- 两万字详解Claude Code源码核心机制
+- 1.System Prompt
+- 默认 Prompt 写了什么
+- 运行时动态注入
+- 与其他框架对比
+- 2.工具
+- 并发调度：isConcurrencySafe
+- 延迟加载：shouldDefer + ToolSearch
+- 工具结果大小控制
+- 权限检查
 
 ### 技术要点
 
 - **agent架构**: 本文在agent方向提出的设计理念与实现路径
 - **工程挑战**: 实际落地中面临的关键问题与应对策略
-- **claude趋势**: 相关技术演进方向与新兴范式
+- **architecture趋势**: 相关技术演进方向与新兴范式
+
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+- [Hermes Agent V014 Architecture Shugex](ch01/216-0.md)
+- [Claude Code Team 10 Tips Boris Data派Thu](ch03/075-claude-code.md)
+- [Hermes Agent Soul Md Personality Shugex](ch03/045-agent.md)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](ch01/542-codex.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/075-claude-code.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/131-karpathy-vibe-coding-agentic-engineering.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/215-openclaw.md)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch04/069-ai.md)
 
 ## 实践启示
-1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
-2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
-3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现
-4. **风险管控**: 引入新技术需评估对现有系统稳定性的影响，做好降级预案
+
+1. **Agent 设计**: 关注控制流与上下文工程的平衡，Harness 约束比模型能力更影响成功率
+2. **可观测性**: Agent 行为调试应优先检查工具定义和上下文质量
+3. **渐进式部署**: 从简单 ReAct 循环起步，逐步引入多 Agent 编排
+4. **验证优先**: 建立完善的测试验证体系，确保 Agent 行为可预测
 
 ---
 

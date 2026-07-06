@@ -38,7 +38,7 @@ Databricks 的分类揭示了一个重要的系统可靠性洞察：故障的可
 
 ### 2. NCCL 看门狗超时：症状的聚合器而非故障的定位器
 
-文章中一个关键洞察：几乎所有分布式训练故障最终都表现为 NCCL 看门狗超时，但这个超时信息几乎不包含任何根因线索。这意味着故障诊断必须采用跨层的根因分析方法——从堆栈跟踪中唯一的症状出发，同时检查 GPU 硬件状态（DCGM 指标）、互连网络（RDMA 链路健康）、I/O 系统（存储延迟和吞吐量）、CPU 层（rank 进程状态）和软件层（框架日志和 NCCL 调试信息）。这与 [Meta 的 AI 存储架构](ch04/277-ai.md) 中讨论的存储延迟问题形成直接关联——存储系统 I/O hang 也是 NCCL 超时的常见来源之一。
+文章中一个关键洞察：几乎所有分布式训练故障最终都表现为 NCCL 看门狗超时，但这个超时信息几乎不包含任何根因线索。这意味着故障诊断必须采用跨层的根因分析方法——从堆栈跟踪中唯一的症状出发，同时检查 GPU 硬件状态（DCGM 指标）、互连网络（RDMA 链路健康）、I/O 系统（存储延迟和吞吐量）、CPU 层（rank 进程状态）和软件层（框架日志和 NCCL 调试信息）。这与 [Meta 的 AI 存储架构](ch04/069-ai.md) 中讨论的存储延迟问题形成直接关联——存储系统 I/O hang 也是 NCCL 超时的常见来源之一。
 
 ### 3. GPU 硬件故障率 vs 传统硬件的显著差异
 
@@ -66,11 +66,11 @@ Databricks 的实践为大规模 AI 设施运维提供了几个重要参考：(1
 
 ## 相关实体
 
-- [Meta AI 存储架构](ch04/277-ai.md)
+- [Meta AI 存储架构](ch04/069-ai.md)
 - [Graviton 优化 Agentic RL Sandbox](ch03/045-agent.md)
 - [AI Infrastructure & Cost Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md)
 - GPU 可靠性工程
-- [Lambda MicroVM 对比](ch11/249-lambda-microvms-vs-lambda-functions.md)
+- [Lambda MicroVM 对比](ch11/247-lambda-microvms-vs-lambda-functions.md)
 
 ## 来源
 

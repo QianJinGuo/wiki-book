@@ -2,7 +2,7 @@
 
 ## Ch05.071 Harness 工程之道：Skill 原理与最佳实践
 
-> 📊 Level ⭐⭐ | 4.6KB | `entities/harness-skill-engineering-alibaba-practice.md`
+> 📊 Level ⭐⭐ | 4.8KB | `entities/harness-skill-engineering-alibaba-practice.md`
 
 # Harness 工程之道：Skill 原理与最佳实践
 
@@ -81,7 +81,7 @@ description: 为用户提供 AB 实验的创建与修改能力，支持实验创
 
 ## 与现有实体的关系
 
-- 补充 [50 Ai Agent Skills For Designers And Pms](ch04/245-skill.md) 的工程实践角度
+- 补充 [50 Ai Agent Skills For Designers And Pms](ch04/258-skill.md) 的工程实践角度
 
 ---
 

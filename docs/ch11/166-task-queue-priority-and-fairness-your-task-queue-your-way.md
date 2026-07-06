@@ -29,8 +29,8 @@ Priority 与 Fairness 的组合使用（通过 `priority_key` + `fairness_key` +
 5. **发布 Priority 和 Fairness 配置前，务必在 staging 环境使用真实流量模式进行负载测试**。由于两者产生效果的前提是存在 Task 积压，在低负载环境下难以观察其实际表现。建议使用生产流量的回放数据或模拟流量在 staging 环境中验证调度行为是否符合预期，特别是要验证高优先级 Task 是否真的能够"插队"以及多租户 Fairness 是否真的实现了资源公平分配 。
 
 ## 相关实体
-- [Task Queue Priority And Fairness](ch04/277-ai.md)
-- [Task Queue Priority And Fairness Your Task Queue](ch04/277-ai.md)
+- [Task Queue Priority And Fairness](ch04/069-ai.md)
+- [Task Queue Priority And Fairness Your Task Queue](ch04/069-ai.md)
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](ch03/045-agent.md)
 - [Www.Bettercloud.Com The Saasops Mini Checklist Managing And Securing Your Enterprise Saas Applications](ch01/307-agi.md)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)

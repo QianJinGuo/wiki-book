@@ -140,11 +140,11 @@ SQS 和 Lambda 的成本结构：
 - [Amazon Bedrock Converse API 文档](https://docs.aws.amazon.com/bedrock/latest/userguide/converse-api.html)
 - [Using AWS Lambda with Amazon SQS](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html)
 ## 相关实体
-- [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/253-bedrock.md)
+- [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/251-bedrock.md)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/045-agent.md)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](ch03/045-agent.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/045-agent.md)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](ch11/253-bedrock.md)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/045-agent.md)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](ch11/251-bedrock.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

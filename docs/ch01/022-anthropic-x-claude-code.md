@@ -75,7 +75,7 @@
 ## 相关实体
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/075-claude-code.md)
 - [Claude Code Large Codebase Enterprise Deployment](ch03/075-claude-code.md)
-- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](ch04/277-ai.md)
+- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](ch04/069-ai.md)
 - [Anthropic Prompt Caching Claude Code Agihunt](ch03/075-claude-code.md)
 - [Cat Wu Claude Code Pm](ch03/075-claude-code.md)
 

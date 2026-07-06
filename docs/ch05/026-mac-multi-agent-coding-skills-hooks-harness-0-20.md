@@ -147,7 +147,7 @@
 - MAC = **Skills（概率 SOP）+ Hooks（确定性触发）**——**更轻量级**，可复用框架 vs 项目脚手架
 - 共同点：都强调"跨 session 上下文持久 / 失败记录 / 知识积累"是 Harness 关键
 
-### vs [高德 AI-Native 生产线](ch04/277-ai.md)
+### vs [高德 AI-Native 生产线](ch04/069-ai.md)
 - 高德 = **企业级 R&D 生产线**（AI 全托管 / Self-Healing / 监督 Agent / 7×24 永动）
 - MAC = **工程师个人 Harness 框架**（20 个 Skills + Hooks / Planning + Verify 两个节点）
 - 共同点：都强调"用机制保证关键事件发生"（Hooks = 高德的 Self-Healing + 监督 Agent 思想）
@@ -157,7 +157,7 @@
 - MAC = **预定义 Skills + 触发式 Hooks**（工程师自定义 SOP + 自动化机制）
 - 共同点：都强调"流程 = 数据"——workflow 是 skill 文件，hooks 是 code
 
-### vs [Agent Harness 架构](ch03/045-agent.md)
+### vs [Agent Harness 架构](ch05/009-harness.md)
 - 7 层 harness 模型 = 抽象框架
 - MAC = "**Skills 概率层 + Hooks 确定性层**"——harness 设计的**关键分层原则**
 - 共同点：都把 harness 视为多层叠加
@@ -190,9 +190,9 @@
 ## 相关对照
 - [晓斌 Agent-Oriented Infra](ch03/045-agent.md) —— 哲学框架
 - [wow-harness v3](ch05/009-harness.md) —— 跨 session 治理
-- [高德 AI-Native 生产线](ch04/277-ai.md) —— 企业级 R&D 生产线
+- [高德 AI-Native 生产线](ch04/069-ai.md) —— 企业级 R&D 生产线
 - [Claude Code Dynamic Workflows](ch03/075-claude-code.md) —— 动态工作流
-- [Agent Harness 架构](ch03/045-agent.md) —— 7 层模型
+- [Agent Harness 架构](ch05/009-harness.md) —— 7 层模型
 - [Rein](ch03/045-agent.md) —— 单 agent 架构
 - [Kimi Work](ch01/542-codex.md) —— 本地 Agent
 

@@ -92,15 +92,15 @@ Harness Engineering五层架构的设计逻辑是**逐层收紧AI的行为边界
 ## 相关条目
 - [Harness Engineering框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 理论基础
 - [腾讯AI Team知识沉淀体系](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md) — 同一团队的另一实践维度
-- [OpenClaw Harness](ch11/215-openclaw.md) — 社区生态视角
+- [OpenClaw Harness](ch05/009-harness.md) — 社区生态视角
 - [Claude Code Harness](ch03/075-claude-code.md) — 前端视角
 
 ## 相关实体
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tencent-cdn-lego-harness-engineering.md)
 
-- [腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](ch04/277-ai.md)
-- [Qq Music Harness Engineering Monorepo Microservices](ch05/061-harness-engineering.md)
+- [腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](ch04/069-ai.md)
+- [Qq Music Harness Engineering Monorepo Microservices](ch05/009-harness.md)
 
 ---
 

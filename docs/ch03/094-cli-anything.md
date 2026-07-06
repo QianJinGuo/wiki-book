@@ -131,7 +131,7 @@ HKUDS 通过 CLI-Anything 建立了在 Agent Tools 领域的技术影响力，St
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [GBrain](ch04/277-ai.md)
+- [GBrain](ch04/069-ai.md)
 
 ---
 

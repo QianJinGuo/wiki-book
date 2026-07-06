@@ -14,7 +14,7 @@
 ## 相关实体
 - [Anthropic Claude Agents Meter Infoworld](ch03/045-agent.md)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch03/045-agent.md)
-- [Notion Ai Agents](ch04/277-ai.md)
+- [Notion Ai Agents](ch04/069-ai.md)
 - [Announcing Claude Managed Agents On Cloudflare](ch01/102-announcing-claude-managed-agents-on-cloudflare.md)
 - [Anthropic Claude Managed Agents Platform Launch](ch03/045-agent.md)
 

@@ -190,14 +190,14 @@ A: Shadow AI是Shadow IT的子集，专指未批准的AI工具使用。清单将
 A: 可以从ROI最高的项开始：用户生命周期管理自动化（#2）和SaaS可视化（#3）是最佳起点，成本节约和安全提升效果最明显。
 
 ## 相关实体
-- [Ai Agents Inside Perimeter Hackernews](ch04/277-ai.md)
+- [Ai Agents Inside Perimeter Hackernews](ch04/069-ai.md)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/277-ai.md)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/069-ai.md)
 - [The It And Security Field Guide To Ai Adoption Tines](ch12/078-the-it-and-security-field-guide-to-ai-adoption-tines.md)
-- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch04/277-ai.md)
+- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www.bettercloud.com-the-saasops-mini-checklist-managing-and-securing-your-enterprise-saas-applications.md)
-- [5 ways to curb ai sprawl without stifling innovation](ch04/277-ai.md)
+- [5 ways to curb ai sprawl without stifling innovation](ch04/069-ai.md)
 
 ---
 

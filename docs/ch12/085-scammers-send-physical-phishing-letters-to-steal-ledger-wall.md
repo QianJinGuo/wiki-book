@@ -14,7 +14,7 @@
 ## 相关实体
 - [Ai Voice Cloning The Technology Behind It Whos Building It A](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Npm Supply Chain Compromise Postmortem](ch04/277-ai.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/069-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 

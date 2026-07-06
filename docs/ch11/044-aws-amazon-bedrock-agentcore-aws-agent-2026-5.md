@@ -52,21 +52,21 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 对于基础设施团队，EC2 M8/R8 实例的 43% 单 vCPU 性能提升和 600Gbps 网络带宽对运行 AI 推理和大规模分布式工作负载有直接价值。如果当前工作负载受制于计算或网络瓶颈，升级到新实例类型可能获得显著收益。评估时应结合实际 benchmark 而非理论数字。
 
 ## 相关实体
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/277-ai.md)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/069-ai.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch03/045-agent.md)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch03/045-agent.md)
-- [OpenClaw多租户迁移: Phase 2&3部署](ch11/215-openclaw.md)
-- [AgentCore Runtime部署Apache Doris MCP Server](ch04/277-ai.md)
+- [OpenClaw多租户迁移: Phase 2&3部署](ch11/213-openclaw.md)
+- [AgentCore Runtime部署Apache Doris MCP Server](ch04/069-ai.md)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch03/045-agent.md)
-- [OpenClaw多租户迁移: 背景与架构概览](ch11/215-openclaw.md)
+- [OpenClaw多租户迁移: 背景与架构概览](ch11/213-openclaw.md)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch03/045-agent.md)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/033-amazon-bedrock-api.md)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/215-openclaw.md)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/213-openclaw.md)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch03/045-agent.md)
-- [Amazon Bedrock模型推理的Serverless异步架构](ch11/253-bedrock.md)
+- [Amazon Bedrock模型推理的Serverless异步架构](ch11/251-bedrock.md)
 
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/045-agent.md)
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/253-bedrock.md)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/251-bedrock.md)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/485-claude.md)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch03/045-agent.md)- [aws graviton5 m9g/m9gd 实例 ga 公告](ch01/216-0.md)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](ch01/216-0.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)

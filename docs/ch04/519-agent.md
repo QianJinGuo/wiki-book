@@ -1,50 +1,58 @@
-# 万级实时推理的商品领域Agent实践思考和总结
+# 你不知道的 Agent：原理、架构与工程实践
 
-## Ch04.519 万级实时推理的商品领域Agent实践思考和总结
+## Ch04.519 你不知道的 Agent：原理、架构与工程实践
 
-> 📊 Level ⭐⭐ | 3.4KB | `entities/taobao-product-domain-agent-architecture.md`
+> 📊 Level ⭐⭐ | 4.1KB | `entities/你不知道的-agent原理架构与工程实践-v2.md`
 
-# 万级实时推理的商品领域Agent实践思考和总结
+# 你不知道的 Agent：原理、架构与工程实践
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/你不知道的-agent原理架构与工程实践-v2.md)
 
 ## 深度分析
 
-本文来自淘天集团商品中心技术团队，详述商品域如何构建"事件驱动的Function-Centric Agent架构"，实现万级实时推理，覆盖亿级商品。
+0
+review_recommendation: strong
+review_stars: 4ingested: 2026-05-10
+# 你不知道的 Agent：原理、架构与工程实践
+文章内容基于作者个人技术实践与独立思考，旨在分享经验，仅代表个人观点。
 
-**核心技术架构**：
-- 两层结构：上层workflow编排层 + 下层统一能力供给层，通过AIFunction接口交互
-- 轻量aiagentsdk：@AIWorkflow、@AIAction、@AIFunction、@AIParameter、@AIResult、@AIResultField注解体系
-- 链式调用规范：`registry.item().query().invoke(params)`
+### 核心观点
 
-**商品领域知识库三层**：
-1. 显性事实知识（客观描述）→ 运营决策、prompt增强
-2. 关联情景知识（主配件场景）→ 10个类目10000条案例，53条规则
-3. 隐性经验知识（用户/专家经验）→ 商品卖点、参数说明
+1. 这篇文章主要讲 Agent 架构里几块最影响工程效果的内容，包括控制流、上下文工程、工具设计、记忆、多 Agent 组织、评测、追踪和安全，最后再用 OpenClaw 的实现把这些设计原则串起来看一遍。
+2. 整理下来，有几处判断和我原来想的不太一样，更贵的模型带来的提升，很多时候没有想象中那么大，反而 Harness 和验证测试质量对成功率的影响更大，调试 Agent 行为时，也应优先检查工具定义，因为多数工具选择错误都出在描述不准确，另外，评测系统本身的问题，很多时候比 Agent 出问题更难发现，如果一直在 Agent 代码上反复调，效果未必明显，读完这篇，这几个问题应该能有些答案。
+3. 一、Agent Loop 的基本运转方式
+Agent Loop 的核心实现逻辑抽象后其实不到 20 行代码：
+const messages: MessageParam[] = [{ role: "user", content: userInput }];while (true) {  const response = await client.
+4. create({    model: "claude-opus-4-6",    max_tokens: 8096,    tools: toolDefinitions,    messages,  });  if (response.
+5. stop_reason === "tool_use") {    const toolResults = await Promise.
 
-**在离线统一方案**：
-- Function/Action/Workflow三组件标准化
-- 离线批量推理（调度触发）+ 在线增量推理（实时事件驱动）
-- 统一存储：MySQL（在线）+ ODPS（离线）
+### 内容结构
 
-**实时推理关键**：精卫链路基于商品ID+事务ID聚合变更，将处理量级降低一个数量级。
+- 你不知道的 Agent：原理、架构与工程实践
+- ** MEMORY.md  和 Skills 如何协作  **
+- 参考资料
 
-**应用效果**：覆盖亿级商品，搜索转化率提升，新需求1周/人交付。
+### 技术要点
+
+- **agent架构**: 本文在agent方向提出的设计理念与实现路径
+- **工程挑战**: 实际落地中面临的关键问题与应对策略
+- **architecture趋势**: 相关技术演进方向与新兴范式
+
+### 关联实体
+
+- [Harness 之后 状态边界与失败闭环 若飞](ch05/009-harness.md)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/069-ai.md)
+- [Ai Friendly Architecture Design Taobao](ch04/069-ai.md)
+- [Headroom Context Compression Agent Vibecoder](ch03/045-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+- [Ai Agent Harness Construction Akshay Baoyu](ch04/069-ai.md)
 
 ## 实践启示
 
-1. **Java生态Agent选型**：spring-ai-alibaba是集团内落地的最优选择，与现有系统集成成本最低
-2. **Function-Centric设计**：通过AIFunction标准化封装工具和领域知识，上层workflow可灵活编排
-3. **事务型事件驱动**：商品领域事件的聚合转发是实现实时推理的关键基础设施
-4. **三层知识库**：显性→情景→隐性的递进设计，覆盖了商品智能化的完整知识需求
-5. **在离线统一**：同一套Workflow逻辑，通过触发源差异区分在线/离线，代码复用率最大化
-
-## 相关实体
-- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](ch04/150-ai.md)
-- [Verizon Connect Agentic Ai 100K Users](ch04/150-ai.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/133-skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](ch04/150-ai.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/245-skill.md)
-
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/taobao-product-domain-agent-architecture.md)
+1. **Agent 设计**: 关注控制流与上下文工程的平衡，Harness 约束比模型能力更影响成功率
+2. **可观测性**: Agent 行为调试应优先检查工具定义和上下文质量
+3. **渐进式部署**: 从简单 ReAct 循环起步，逐步引入多 Agent 编排
+4. **验证优先**: 建立完善的测试验证体系，确保 Agent 行为可预测
 
 ---
 

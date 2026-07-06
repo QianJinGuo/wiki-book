@@ -57,12 +57,12 @@ AI 生成的文本分析应配合 SVG/HTML 可视化图，并通过邮件/IM 主
 ## 相关实体
 - [Amazon Bedrock Api Security Guide](ch12/033-amazon-bedrock-api.md)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/265-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch04/277-ai.md)
-- [Aws Bedrock Serverless Async Inference Multimodal](ch11/253-bedrock.md)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch04/069-ai.md)
+- [Aws Bedrock Serverless Async Inference Multimodal](ch11/251-bedrock.md)
 - [Aws Bedrock Agentcore Identity Security](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
-- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](ch01/1065-spec.md)
+- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](ch01/1026-spec.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

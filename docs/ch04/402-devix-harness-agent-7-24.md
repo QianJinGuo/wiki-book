@@ -2,7 +2,7 @@
 
 ## Ch04.402 阿里 Devix Harness 运维 Agent：7×24 自动化故障诊断-决策-处置闭环
 
-> 📊 Level ⭐⭐ | 6.3KB | `entities/alibaba-devix-harness-ops-agent-7x24.md`
+> 📊 Level ⭐⭐ | 6.8KB | `entities/alibaba-devix-harness-ops-agent-7x24.md`
 
 # 阿里 Devix Harness 运维 Agent：7×24 自动化运维闭环
 
@@ -119,9 +119,9 @@ Agent 像运维工程师一样执行完整诊断流程：
 
 ## 相关实体
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Harness Engineering 10 Step Practical Guide 2026](ch05/061-harness-engineering.md)
-- [Claude Code Multi Agent Harness Source Analysis](ch03/074-claude-code.md)
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/150-ai.md)
+- [Harness Engineering 10 Step Practical Guide 2026](ch05/009-harness.md)
+- [Claude Code Multi Agent Harness Source Analysis](ch03/075-claude-code.md)
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alibaba-devix-harness-ops-agent-7x24.md)
 

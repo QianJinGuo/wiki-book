@@ -70,10 +70,10 @@ AI 虽是单一智能复制，其"多样性"输出被训练数据模式限制。
 
 ## 相关实体
 - [Choosing To Stay Human](ch03/008-choosing-to-stay-human.md)
-- [Lightfield Introducing Skills](ch04/255-skill.md)
+- [Lightfield Introducing Skills](ch04/258-skill.md)
 - [Claude Code Team 10 Tips Boris](ch03/075-claude-code.md)
 - [Learning Path To Senior](https://github.com/QianJinGuo/wiki/blob/main/entities/learning-path-to-senior.md)
-- [The Main Path To Truly Creative Ai](ch01/1113-the-main-path-to-truly-creative-ai.md)
+- [The Main Path To Truly Creative Ai](ch01/1181-the-main-path-to-truly-creative-ai.md)
 
 ## 相关引用
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/against-brain-damage.md)

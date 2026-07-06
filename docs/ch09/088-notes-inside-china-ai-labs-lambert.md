@@ -9,7 +9,7 @@ Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes fr
 
 ## 相关实体
 - [Notes From Inside Chinas Ai Labs](ch09/107-notes-from-inside-chinas-ai-labs.md)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/492-score-by-collisions-patch-by-panic.md)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/498-score-by-collisions-patch-by-panic.md)
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](ch01/1171-llm.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/045-agent.md)
 - [Agentcore Managed Harness](ch04/216-agentcore-managed-harness.md)

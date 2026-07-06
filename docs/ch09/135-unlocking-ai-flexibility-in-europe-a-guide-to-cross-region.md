@@ -37,10 +37,10 @@ Unlocking AI flexibility in Europe: A guide to cross-region inference for EU dat
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/215-openclaw.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/213-openclaw.md)
 
 ## 实践启示
 1. **工程落地**: aws领域方案需关注可观测性、可维护性和成本效率

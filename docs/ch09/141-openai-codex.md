@@ -39,11 +39,11 @@ OpenAI大神教你如何榨干Codex 涉及agent领域的核心技术议题。
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/215-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/215-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/213-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/213-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/213-openclaw.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/216-0.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
 
 ## 实践启示

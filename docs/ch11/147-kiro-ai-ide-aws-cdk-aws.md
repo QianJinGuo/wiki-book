@@ -75,15 +75,15 @@ FrontendStack（前端应用，经常更新）
 - 深入研究 Kiro MCP Skills 与 Amazon Bedrock 的集成
 
 ## 相关实体
-- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch04/277-ai.md)
-- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](ch04/277-ai.md)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](ch04/277-ai.md)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch04/277-ai.md)
-- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](ch01/1065-spec.md)
+- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch04/069-ai.md)
+- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](ch04/069-ai.md)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](ch04/069-ai.md)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch04/069-ai.md)
+- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](ch01/1026-spec.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/autoresearch-software-development.md)
 
-- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](ch04/277-ai.md)
+- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](ch04/069-ai.md)
 
 ---
 

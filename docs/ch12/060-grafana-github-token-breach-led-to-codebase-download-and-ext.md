@@ -61,7 +61,7 @@ Grafana 主动在 X 平台公布事件进展，遵循了 modern breach disclosur
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch01/834-github.md)
 - [Grafana Github Token Breach Led To Html](ch01/834-github.md)
 - [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](ch01/216-0.md)
-- [Github Investigating Teampcp Claimed 17Cc77](ch04/277-ai.md)
+- [Github Investigating Teampcp Claimed 17Cc77](ch04/069-ai.md)
 - [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](ch01/834-github.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 

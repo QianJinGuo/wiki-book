@@ -18,7 +18,7 @@ Amazon Web Services (AWS)
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/043-openclaw-multi-agent-team-practice-v2.md)
 - [Agent 原理、架构与工程实践](ch03/045-agent.md)
 - [OpenClaw 多智能体团队搭建实战经验](ch03/045-agent.md)
-- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](ch04/277-ai.md)
+- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](ch04/069-ai.md)
 - [factory mission multi agent architecture](ch01/1053-factory-mission-multi-agent-architecture.md)
 
 ## 深度分析

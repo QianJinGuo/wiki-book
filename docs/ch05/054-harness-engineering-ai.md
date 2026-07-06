@@ -11,11 +11,11 @@
 但正因为难，才值得做。 我们系统性地探索了 AI Coding 在高风险后端场景的落地路径：一方面，用 AI 零人工代码实现了一个 Rust 版 Nonstop 代理框架，以此探测 AI 编码的能力边界与行为特性；另一方面，在超大规模 C++ LEGO  项目中构建了 Harness Engineering 五层架构和多模型对抗式CR，为 AI 产出的每一行代码建立从生成到上线的完整质量屏障。本文不仅是一份将 AI Coding 引入  腾讯  CDN核心框架的实战记录，更是一条从"AI 能写"到"AI 写了敢用" 的完整工程路径。
 
 ## 相关实体
-- [Tencent Cdn Lego Harness Engineering](ch05/061-harness-engineering.md)
-- [Fudan Peking Ahe Agentic Harness Engineering](ch05/061-harness-engineering.md)
-- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/061-harness-engineering.md)
-- [Harness Engineering Reliable Long Term Agent](ch05/061-harness-engineering.md)
-- [Harness Engineering Long Term Agent Tasks](ch05/061-harness-engineering.md)
+- [Tencent Cdn Lego Harness Engineering](ch05/009-harness.md)
+- [Fudan Peking Ahe Agentic Harness Engineering](ch05/009-harness.md)
+- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/009-harness.md)
+- [Harness Engineering Reliable Long Term Agent](ch05/009-harness.md)
+- [Harness Engineering Long Term Agent Tasks](ch05/009-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗-v2.md)
 

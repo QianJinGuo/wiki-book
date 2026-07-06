@@ -12,7 +12,7 @@ Published Time: 2026-05-19T14:00:52+00:00
 ## 相关实体
 - [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
-- [Aws Bedrock Intelligence Message Defense](ch11/253-bedrock.md)
+- [Aws Bedrock Intelligence Message Defense](ch11/251-bedrock.md)
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/485-claude.md)
 - [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/009-how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
 

@@ -46,11 +46,11 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1086-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1046-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/215-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/213-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/213-openclaw.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
 
 ## 实践启示

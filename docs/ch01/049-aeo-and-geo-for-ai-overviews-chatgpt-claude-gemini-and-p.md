@@ -11,10 +11,10 @@
 - AI surfaces 的爬取生态与传统的 SEO bot 完全不同，需要分别管理索引爬虫和训练爬虫 
 ## 相关实体
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Tether Launches Developer Grants Program For Local First Ai ](ch04/277-ai.md)
+- [Tether Launches Developer Grants Program For Local First Ai ](ch04/069-ai.md)
 - [Anthropic_Cache_Tokenomics](ch12/003-token.md)
 - [Introducing Claude For Small Business](ch01/027-introducing-claude-for-small-business.md)
-- [Wetesteddeepseekv4Proandflashagainstclau](ch04/277-ai.md)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 

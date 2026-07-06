@@ -10,8 +10,8 @@ Seismic data analysis is an essential component of energy exploration, but confi
 
 ## 相关实体
 - [Amazon Quick Research Agentic Multi Source Citation](ch03/045-agent.md)
-- [Build Financial Document Processing With Pulse Ai And Amazon Bedrock](ch04/277-ai.md)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/277-ai.md)
+- [Build Financial Document Processing With Pulse Ai And Amazon Bedrock](ch04/069-ai.md)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/069-ai.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/1171-llm.md)
 

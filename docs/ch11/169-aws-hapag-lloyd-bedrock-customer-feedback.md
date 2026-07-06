@@ -14,7 +14,7 @@ Over the past years, the Digital Customer Experience and Engineering team has ev
 ## 相关实体
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/118-aws-bedrock-agentcore-quality-optimization-flywheel.md)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/045-agent.md)
-- [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/253-bedrock.md)
+- [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/251-bedrock.md)
 - [Aws Bedrock Multi Agent Collaboration Guide](ch03/045-agent.md)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch01/216-0.md)
 

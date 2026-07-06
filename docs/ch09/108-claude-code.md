@@ -15,9 +15,9 @@
 ## 相关实体
 - [Claude Code Openclaw Usage Ettin](ch09/033-claude-code-openclaw-usage-ettin.md)
 - [Obsidian Claude Code Integration Guide](ch09/112-obsidian-claude-code-integration-guide.md)
-- [Claude Code Self Repair Hooks Memory Config](ch04/277-ai.md)
+- [Claude Code Self Repair Hooks Memory Config](ch04/069-ai.md)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/075-claude-code.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/277-ai.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-commands-usage-guide.md)
 

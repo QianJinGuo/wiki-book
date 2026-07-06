@@ -12,11 +12,11 @@
 - 发布渠道：GIS极客公众号（2026-04-10）
 
 ## 相关实体
-- [Harness Engineering Reliable Long Term Agent](ch05/061-harness-engineering.md)
-- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/061-harness-engineering.md)
-- [Harness Engineering Long Term Agent Tasks](ch05/061-harness-engineering.md)
-- [Harness Engineering Systematic Explainer](ch04/277-ai.md)
-- [Harness Engineering Framework](ch05/061-harness-engineering.md)
+- [Harness Engineering Reliable Long Term Agent](ch05/009-harness.md)
+- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/009-harness.md)
+- [Harness Engineering Long Term Agent Tasks](ch05/009-harness.md)
+- [Harness Engineering Systematic Explainer](ch04/069-ai.md)
+- [Harness Engineering Framework](ch05/009-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tsinghua-harness-engineering-report.md)
 

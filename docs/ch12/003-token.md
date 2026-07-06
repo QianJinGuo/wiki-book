@@ -12,9 +12,9 @@
 - 令牌窃取后通过 GitHub 提交搜索实现 P2P 中继，绕过一切 C2 阻断
 - 持久化 `gh-token-monitor` 含真实 `rm -rf ~/` 逻辑，构成死亡开关； revocation 必须在移除持久化单元之后
 ## 相关实体
-- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](ch04/277-ai.md)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/277-ai.md)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch04/277-ai.md)
+- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](ch04/069-ai.md)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/069-ai.md)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch04/069-ai.md)
 - [Why Im Leaving Github For Forgejo](ch01/834-github.md)
 - [From Doer To Director The Ai Mindset Shift](ch01/030-from-doer-to-director-the-ai-mindset-shift.md)
 

@@ -14,12 +14,12 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock、Claude Code、Amazon Be
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow/)
 
 ## 相关实体
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch04/277-ai.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/277-ai.md)
-- [打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南](ch04/277-ai.md)
-- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](ch04/277-ai.md)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](ch04/277-ai.md)
-- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](ch04/277-ai.md)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch04/069-ai.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch04/069-ai.md)
+- [打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南](ch04/069-ai.md)
+- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](ch04/069-ai.md)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](ch04/069-ai.md)
+- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](ch04/069-ai.md)
 
 ## 深度分析
 ### 1. ACP 协议：CLI AI Agent 的标准化桥梁

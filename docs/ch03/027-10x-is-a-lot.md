@@ -10,7 +10,7 @@ You have probably heard people say things like "this product makes you 10x more 
 Here are a few examples of what things would look like if they were 10x faster/better/bigger:
 
 ## 相关实体
-- [Skill Development Guide Aliyun 2026](ch04/255-skill.md)
+- [Skill Development Guide Aliyun 2026](ch04/258-skill.md)
 - [Manus.Im Manus Schedules](https://github.com/QianJinGuo/wiki/blob/main/entities/manus.im-manus-schedules.md)
 - [Openclaw Multi Agent Team Practice](ch03/045-agent.md)
 - [Strands Agents Cloud Cost Optimizer](ch03/045-agent.md)

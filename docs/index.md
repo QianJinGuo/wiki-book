@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 2967 篇一手 AI 材料系统编撰的开源读物。
+> 全球第一部基于 2983 篇一手 AI 材料系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,8 +10,8 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1350 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1034 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1361 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1039 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 434 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 116 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 33 篇 |
@@ -20,7 +20,7 @@
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1185 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1196 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ Backpressure is all you need
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ 快手首个打工人Agent
-  - ... 共 **1185** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1196** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 34 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **131** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1350 篇**
+> 📖 **本篇共 1361 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 613 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 616 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,9 +76,9 @@
   - ⭐ Build agents, not pipelines
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
-  - ... 共 **613** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **616** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 101 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 103 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
@@ -89,7 +89,7 @@
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
   - ⭐⭐ 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记（2 周 3 次实测 + 3 个测试 + 加法传播学 +
-  - ... 共 **101** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **103** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 42 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -156,7 +156,7 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **26** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1034 篇**
+> 📖 **本篇共 1039 篇**
 
 ---
 
@@ -306,6 +306,6 @@
 
 ---
 
-**📊 全书收录：2967 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：2983 篇实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-07-06 | 来源: ~/wiki/entities/

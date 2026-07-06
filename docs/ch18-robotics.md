@@ -41,10 +41,10 @@ AI 最终要从屏幕走进物理世界。
 - IPO 融资款约一半（3 亿美元）将用于 AI 模型训练，包括"Embodied Large Model"
 ## 相关实体
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch04/277-ai.md)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch04/069-ai.md)
 - [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
 - [User Interviews Guide Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/user-interviews-guide-pro.md)
-- [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](ch04/277-ai.md)
+- [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/unitree-ipo-robotics-market.md)
 
@@ -308,9 +308,9 @@ Physical AI is moving from research into production.
 
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1086-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1046-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/216-0.md)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch04/277-ai.md)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch04/069-ai.md)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch03/045-agent.md)
 - [Code As Agent Harness Survey 2026](ch09/051-code-as-agent-harness.md)
@@ -377,11 +377,11 @@ Physical AI is moving from research into production.
 ### 关联实体
 
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/216-0.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1086-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1046-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/215-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/215-openclaw.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/213-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/213-openclaw.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

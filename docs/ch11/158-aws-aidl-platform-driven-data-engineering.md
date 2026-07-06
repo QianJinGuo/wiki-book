@@ -13,7 +13,7 @@
 - [Introducing Claude Platform On Aws](ch01/511-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
 - [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](ch01/485-claude.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch03/045-agent.md)
-- [Openclaw Multi 4](ch11/215-openclaw.md)
+- [Openclaw Multi 4](ch11/213-openclaw.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-aidl-paradigm-shift-platform-driven-data-engineering.md)
 

@@ -14,7 +14,7 @@ Cybersecurity reporter
 - [Disgruntled Researcher Microsoft Zero Days](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
 - [13 Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](ch12/030-disgruntled-researcher-releases-two-more-microsoft-zero-days.md)
 - [Down Fall Of Bug Bounties](ch12/069-the-down-fall-of-bug-bounties.md)
-- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch04/277-ai.md)
+- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-zero-days-researcher-disgruntled.md)
 

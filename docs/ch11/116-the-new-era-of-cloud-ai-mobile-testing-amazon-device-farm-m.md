@@ -90,14 +90,14 @@ Amazon Web Services (AWS)
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/cloud-ai-mobile-testing-new-era-amazon-device-farm-mcp-server-practical-guide-en/)
 
 ## 相关实体
-- [AgentCore Runtime部署Apache Doris MCP Server](ch04/277-ai.md)
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/277-ai.md)
-- [停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南](ch04/277-ai.md)
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](ch04/277-ai.md)
+- [AgentCore Runtime部署Apache Doris MCP Server](ch04/069-ai.md)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/069-ai.md)
+- [停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南](ch04/069-ai.md)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-agentcore-doris-mcp-server.md)
 
-- [Agent 时代架构师技能指南](ch04/255-skill.md)
+- [Agent 时代架构师技能指南](ch04/258-skill.md)
 
 ---
 

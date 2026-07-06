@@ -1,96 +1,57 @@
-# 一句话生图要过时了？开源图像生成Agent进化出「工具编排」
+# Agent 时代，我们架构师应该学什么？
 
-## Ch04.445 一句话生图要过时了？开源图像生成Agent进化出「工具编排」
+## Ch04.445 Agent 时代，我们架构师应该学什么？
 
-> 📊 Level ⭐⭐ | 5.5KB | `entities/一句话生图要过时了开源图像生成agent进化出工具编排.md`
+> 📊 Level ⭐⭐ | 6.1KB | `entities/agent-时代我们架构师应该学什么.md`
 
-# 一句话生图要过时了？开源图像生成Agent进化出「工具编排」
+# Agent 时代，我们架构师应该学什么？
+架构师（JiaGouX）  我们都是架构师！
 
----
-source: wechat
-source_url: https://mp.weixin.qq.com/s/qY75YeOY2Gnj-YfILEFuQg
-ingested: 2026-07-01
-feed_name: 机器之心
-wechat_mp_fakeid: MP_WXS_3073282833
-source_published: 2026-07-01
----
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代我们架构师应该学什么.md)
 
-# 一句话生图要过时了？开源图像生成Agent进化出「工具编排」
+## 深度分析
 
-图像生成正在从「  一句话生成一张图」，走向更接近真实创作流程的开放任务。
+**1. 筛选能力比学习路线图更耐用**
 
-在实际使用中，用户常常不只是给出一个 prompt：他可能要求画面对齐某个地标、人物、商品或事件，也可能要求参考图身份一致、材质特殊、或者要求模糊的描述也能表达清楚。面对这些需求，单靠生成模型一次前向推理很难稳定完成。
+在 Agent 领域，"filter > feed"——评估新技术的半衰期比追路线图更重要。模型封装层、CLI 参数、某个"类 Devin 产品"的半衰期通常很短；协议、状态、沙箱、评估、工具契约这些东西，半衰期会长很多。前者更多是工具选择，后者会慢慢变成系统能力。能在最热的时候说"我半年后再看"，是架构师难得的克制。
 
-近期，来自香港科技大学（广州）、美团、香港科技大学、新加坡国立大学等机构的研究团队提出  GenEvolve  ，一个面向开放图像生成的自我进化智能体框架。它将一次生成建模为一「  工具编排轨迹」：智能体先理解请求，再调用搜索、图像检索和生成知识工具，最后
+**2. 上下文是运行时工作集，而非聊天记录**
 
-## 核心要点
+Agent 跑长任务时，很多失败表面看是"模型没想明白"，往里看常常是上下文坏了——目标被工具输出淹没、旧错误一直留在窗口里、压缩把用户最初的约束磨平。把上下文按运行时工作集分层设计（模型窗口 / 会话状态 / 文件数据库 / 项目规范 / 工具层），比当聊天记录或资料仓库更顺。Claude Code 92% 缓存命中率的背后，正是把稳定内容和动态内容分得很干净。
 
-> 本文为微信公众号文章，由 WeChat backfill 收录。
+**3. 工具设计即业务接口设计**
 
-## 详细信息
+模型不是人类工程师——人看到 400 Bad Request 会自己翻文档，模型靠的是工具的名字、描述、参数、返回和错误消息来理解外部世界。五到十个命名清楚、边界清楚的工具，通常比二十个互相重叠的工具更稳。工具描述本身就是一份很小的接口文档：写宽了模型会滥用，写窄了模型不敢用，返回太多窗口会变脏，错误太抽象模型会重复犯错。
 
----
-source: wechat
-source_url: https://mp.weixin.qq.com/s/qY75YeOY2Gnj-YfILEFuQg
-ingested: 2026-07-01
-feed_name: 机器之心
-wechat_mp_fakeid: MP_WXS_3073282833
-source_published: 2026-07-01
----
+**4. 评估前置是工程能力的分水岭**
 
-# 一句话生图要过时了？开源图像生成Agent进化出「工具编排」
+Agent 系统最麻烦的地方在于，它很多时候不会显式崩掉，而是给一个看上去挺像答案的答案。把 eval 类比成 Agent 的单元测试——它不保证系统永远正确，但至少能让团队知道这次改动有没有把昨天还正常的能力搞坏。没有这层东西，团队很容易陷在体感讨论里。Cursor 复盘 Harness 也印证了这点：模型决定能力上限，Harness 决定生产下限，但评估才是让下限可度量的手段。
 
-图像生成正在从「  一句话生成一张图」，走向更接近真实创作流程的开放任务。
+**5. Harness 是模型的运行底座，而非薄壳**
 
-在实际使用中，用户常常不只是给出一个 prompt：他可能要求画面对齐某个地标、人物、商品或事件，也可能要求参考图身份一致、材质特殊、或者要求模糊的描述也能表达清楚。面对这些需求，单靠生成模型一次前向推理很难稳定完成。
+Harness 在长任务里会撞上后端同样的问题：状态、队列、日志、权限、恢复、审计、成本。模型负责选下一步，Harness 负责验证、执行、捕获输出、决定反馈、设置检查点、必要时调度子任务。同一个模型，放在不同的上下文策略、工具契约、评估体系和权限边界里，表现差得很远。Agent 产品的质量很难只按模型版本讨论，更准确的发布单元是模型加 Harness 的组合。
 
-近期，来自香港科技大学（广州）、美团、香港科技大学、新加坡国立大学等机构的研究团队提出  GenEvolve  ，一个面向开放图像生成的自我进化智能体框架。它将一次生成建模为一「  工具编排轨迹」：智能体先理解请求，再调用搜索、图像检索和生成知识工具，最后把外部证据、视觉参考和硬约束整理成 prompt-reference program，交给不同底层生成器渲染。
+## 实践启示
 
-* 论文标题：  GenEvolve: Self-Evolving Image Generation Agents via Tool-Orchestrated Visual Experience Distillation
+1. **用筛选问题评估新框架**：问自己——半年后它还重要吗？能接进现有系统吗？解决什么真实失败模式？能被 trace 和 eval 证明有用吗？多数新框架晚点看没关系，稳定原语错过了才麻烦。
 
-* 论文链接：https://arxiv.org/abs/2605.21605
+2. **把上下文分层当作架构决策**：当前目标、关键约束、最近观察放模型窗口；任务计划、已完成动作、待办放会话状态；大对象、日志、代码、历史文档放文件/数据库；AGENTS.md、README、Runbook、团队约定放项目规范层。
 
-* 项目页面：https://ephemeral182.github.io/GenEvolve/
+3. **用接口文档思维写工具描述**：一个工具要让模型看懂——什么时候该用、什么时候不该用、参数填什么、返回哪些是关键结果、失败以后下一步怎么修、危险动作有没有权限和确认。
 
-* 代码链接：https://github.com/MeiGen-AI/GenEvolve
+4. **上线前先做一版哪怕粗糙的评估集**：从真实 trace 里长出来，第一次上线前哪怕只有五十条样本也比没有强；每次失败就把样本补进去，每次改 prompt、换模型、调上下文压缩都跑一遍。
 
-* 模型权重：https://huggingface.co/MeiGen-AI/GenEvolve
+5. **从窄目标小闭环起步**：一个明确目标 + 单 Agent 主循环 + 三到七个边界清楚的工具 + 窗口外状态层 + 沙箱 + trace + 五十条初始评估样本 + 能回滚的发布方式。多 Agent 和长期记忆可以晚一点——Agent 早期最值钱的地方，不在它会做多少事，而在团队能不能看清它怎么失败。
 
-* 数据与评测：https://huggingface.co/datasets/MeiGen-AI/GenEvolve-Data-Bench
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代我们架构师应该学什么.md)
 
-GenEvolve 使用同一套智能体策略，分别搭配开源 Qwen-Image-Edit 与强生成器 Nano Banana Pro。
+## 关联阅读
 
-从 prompt 到工具轨迹
-
-GenEvolve 关注两类开放生成需求。第一类是  Knowledge-Anchored  ：生成结果依赖外部世界知识，例如真实建筑、公众人物、商品结构或事件线索。第二类是  Quality-Anchored  ：结果依赖可校验的视觉质量约束，例如文字、计数、布局、属性绑定、解剖、材质和美学。
-
-为此，GenEvolve 给智能体配置三类工具：文本搜索 search (q) 用于补充事实证据；图像搜索 image_search (q) 用于获取视觉参考；生成知识查询 query_knowledge (skill) 用于激活内部对于文字渲染、空间布局、材质一致性等复杂需求所需要的技能。
-
-因此，一次生成不再只是「  写一个更长的 prompt」，而是多轮决策：搜什么、看哪张参考图、调用哪类生成知识、最终程序里必须写入哪些约束。
-
-数据与评测
-
-为了训练这样的智能体，研究团队构建了 GenEvolve-Data 和 GenEvolve-Bench。作者团队没有直接收集普通 prompt-image 对，而是从约 2 万条结构化 recipe 出发，覆盖实体、地标、产品、事件、文字、布局、计数、属性、解剖、材质、美学和创意转化等场景。
-
-每个请求都会先交给 Teacher Agent 走一遍完整工具流程：查事实、找参考、调用生成知识、写出最终 prompt-reference program。之后，数据还要经过程序检查、VLM 审计、GT 图像渲染和视觉过滤，最后切分成 SFT 轨迹、自我进化样本和 对应的 benchmark。
-
-GenEvolve-Data 数据闭环：从结构化 recipe 到工具轨迹、VLM 审计、GT 图像过滤，再切分为训练和评测视图。
-
-自我进化：先筛出更好的轨迹
-
-训练过程分为两步。
-
-首先，GenEvolve 使用高质量 Teacher 轨迹对 Qwen3-VL-8B-Instruct 做 SFT 冷启动，让模型学会基本工具调用和程序写法。
-
-随后进入自我进化的 Rollout 阶段：对同一请求采样多条 rollout，渲染成图像后由视觉判分器和文本判分器共同打分，并使用 GRPO 优化轨迹级奖励。
-
-视觉经验自蒸馏：把「  好在哪里」教给模型
-
-仅有轨迹级奖励仍然不够。它能告诉模型「  哪条轨迹更好」，却很难说
-
-## 原文
-
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/一句话生图要过时了开源图像生成agent进化出工具编排.md)
+* [Agent Harness 上下文管理：聊天记录还是工作集](ch05/009-harness.md)
+* [Karpathy：Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+* [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/009-harness.md)
+* [Subagents 详解：Claude Code 如何避免上下文污染](ch03/075-claude-code.md)
+* [从 30 分钟手搓 Agent 到 Harness 成为新后端](ch05/009-harness.md)
 
 ---
 

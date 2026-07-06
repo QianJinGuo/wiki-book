@@ -108,8 +108,8 @@ Fowler 提出的六件小事不是零散建议，而是一个不断把"人判断
 - [LangChain: The Anatomy of an Agent Harness](https://www.langchain.com/blog/the-anatomy-of-an-agent-harness)
 - [Simon Willison: The lethal trifecta for AI agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)
 - → [Harness Engineering 实体](ch05/061-harness-engineering.md)：Harness 部分与该实体高度互补，提供更完整的框架拆解
-- → [2026 Harness 工程survey](ch05/061-harness-engineering.md)：行业层面的 Harness 工程全景图
-- → [生产级 Harness 工程](ch05/061-harness-engineering.md)：侧重生产环境的治理与 control plane 实践
+- → [2026 Harness 工程survey](ch05/009-harness.md)：行业层面的 Harness 工程全景图
+- → [生产级 Harness 工程](ch05/009-harness.md)：侧重生产环境的治理与 control plane 实践
 
 ---
 

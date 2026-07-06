@@ -57,10 +57,10 @@ TDD 铁律（先写失败测试再写代码）作为 skill 文件规则自动执
 - OpenSpec：需求层工具，DAG 产物依赖图，写代码前对齐需求
 - Superpowers：质量层工具，HARD-GATE + TDD 铁律
 - gstack：执行层工具，Browse 引擎 + 7 阶段 Sprint 管线
-- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch04/277-ai.md)
+- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch04/069-ai.md)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](ch01/439-codeindex.md)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/255-skill.md)
+- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/258-skill.md)
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](ch03/075-claude-code.md)
 - [Claude Code Agent 工程设计](ch03/075-claude-code.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/317-agent-principle-architecture-engineering-practice.md)
