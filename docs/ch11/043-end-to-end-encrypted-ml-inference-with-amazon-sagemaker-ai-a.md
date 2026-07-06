@@ -102,9 +102,9 @@ Concrete-Ml 在训练阶段仍使用 plaintext 数据，训练流程与标准 sk
 文章指出 Concrete-ML 对原型验证和非商业用途免费，但商业部署需要商业许可。企业用户在评估成本时，应将 Zama 商业许可费用纳入 TCO 计算，并与合规团队确认数据处理 jurisdiction 是否对加密方案有特定要求。
 
 ## 相关实体
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch04/229-ai.md)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01/609-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.md)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch04/070-ai.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01/619-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/056-real-time-voice-agents-with-stream-vision-agents-and-amazon.md)
 - [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](ch11/152-amazon-bedrock.md)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
 

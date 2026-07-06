@@ -111,14 +111,14 @@ GitHub: `aws-samples/sample-agentic-genai-agentcore/aws-genai-campaign-review-st
 
 ## 相关实体
 - [Bedrock Agentcore Coding Agent Hosting](ch11/048-bedrock-agentcore.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/499-amazon-bedrock-agentcore.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/500-amazon-bedrock-agentcore.md)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch11/128-control-where-your-ai-agents-can-browse-with-chrome-enterpri.md)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/271-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/499-amazon-bedrock-agentcore.md)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/500-amazon-bedrock-agentcore.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/strands-agents-high-performance-genai-systems.md)
 
-- [aws bedrock agentcore 多账户对话式运维助手：基于 strands agents + devops](../ch04/499-amazon-bedrock-agentcore.md)
+- [aws bedrock agentcore 多账户对话式运维助手：基于 strands agents + devops](../ch04/500-amazon-bedrock-agentcore.md)
 
 ## 深度分析
 

@@ -107,19 +107,19 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 ## 相关实体
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/456-claude-code-harness-deep-understanding.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/465-claude-code-harness-deep-understanding.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/075-claude-code.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/375-agent-skills.md)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/376-agent-skills.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](ch03/075-claude-code.md)
 - [Claude Code MCP Server](../ch07/025-claude-code-mcp-server.md)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.md)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1036-claude.md)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](ch03/075-claude-code.md)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.md)
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/075-claude-code.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/201-tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/200-tencent-vibe-coding-to-agentic-engineering-backend.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)
 
