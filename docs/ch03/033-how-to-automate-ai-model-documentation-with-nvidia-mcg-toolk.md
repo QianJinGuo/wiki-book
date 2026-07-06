@@ -45,7 +45,7 @@ _Figure 1. MCG toolkit architecture: Generate a comprehensive model card by dire
 - [Nvidia Cut Checkpoint Costs Nvcomp](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cut-checkpoint-costs-nvcomp.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-mcg-toolkit-model-documentation.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidia-mcg-toolkit-model-documentation.md)
 
 ---
 

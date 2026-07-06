@@ -91,7 +91,7 @@ AGENTS.md 中写的规则，如果没有自动化检查，AI 和人都会违反 
 
 在推广 AGENTS.md 时，明确标注每个文件的目标读者 ：README.md 给人看、AGENTS.md 给 AI 为主、人可浏览、docs/*.md 给 AI 为主、人可参考、scripts/*.sh 人和 AI 都用。一句话总结：**脚本是人和 AI 共用的，AGENTS.md 和 docs/ 下的文档主要是给 AI 的上下文，人不需要刻意阅读但可以参考**。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/一个文件让-ai-coding-效率翻倍agentsmd-实践指南.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/一个文件让-ai-coding-效率翻倍agentsmd-实践指南.md)
 
 ---
 

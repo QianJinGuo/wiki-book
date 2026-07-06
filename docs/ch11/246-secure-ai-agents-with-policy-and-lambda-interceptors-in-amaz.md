@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [direct connect (dx) 迁移最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/direct-connect-dx-迁移最佳实践.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
 
 ## 深度分析
 

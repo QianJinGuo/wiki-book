@@ -41,7 +41,7 @@ We designed a quantitative evaluation across two task families, 250 runs total:
 
 *   **CLI extensions:**Building [Wix CLI](https://dev.wix.com/docs/wix-cli)app extensions: dashboard pages, backend APIs, site widgets, event handlers, embedded scripts, modals, and plugins.
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/we-ran-250-ai-agent-evals-to-find-out-if-skills-beat-docs-th.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/we-ran-250-ai-agent-evals-to-find-out-if-skills-beat-docs-th.md)
 
 ---
 

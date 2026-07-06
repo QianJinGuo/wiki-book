@@ -60,7 +60,7 @@ Vibe Coding 解决了"能不能用 AI 写代码"。
 
 SPEC Coding 解决了"AI
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/979采纳率胶水编程业务需求出码最佳实践天猫ai-coding实践系列.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/979采纳率胶水编程业务需求出码最佳实践天猫ai-coding实践系列.md)
 
 ---
 

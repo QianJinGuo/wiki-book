@@ -19,7 +19,7 @@
 - [Openai Realtime Api Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-realtime-api-architecture.md)
 - [Browser Harness Github](https://github.com/QianJinGuo/wiki/blob/main/entities/browser-harness-github.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/crawler-vs-opencli-doubao.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/crawler-vs-opencli-doubao.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 ## 深度分析

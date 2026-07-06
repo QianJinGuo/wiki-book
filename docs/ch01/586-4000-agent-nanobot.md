@@ -82,7 +82,7 @@ MCP 工具被自动包装为 Tool 对象，命名规则为 `mcp_{server_name}_{t
 - **Agent 记忆系统对比**
 - **Agent 上下文管理策略**
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/4000行代码撑起一个agent框架nanobot架构深度解析.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/4000行代码撑起一个agent框架nanobot架构深度解析.md)
 
 ---
 

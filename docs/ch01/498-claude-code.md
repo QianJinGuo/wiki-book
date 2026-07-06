@@ -53,7 +53,7 @@ Claude Code 的七大模块设计，本质上是在回答一个问题：**当 Ag
 3. **工具是带语义的对象**。不是函数签名，而是包含权限、并发策略、执行约束的完整运行时单元。设计工具接口时，同步/异步、流式/非流式、幂等性都是第一公民属性。
 4. **权限系统的本质是决策链，不是弹框**。每一个"是否允许"的判断，背后都应该有明确的规则层 → 自动判定 → 交互层的链条。弹框只是交互层的末端，隔离执行才是最后防线。
 5. **多 Agent 的核心挑战是任务回收，不是 prompt 分工**。子 Agent 的结果如何被主 Agent 理解、接纳、继续使用，决定了整个系统的上界。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-architecture-analysis.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-architecture-analysis.md)
 
 ## 相关实体
 - [Claude Code 设计原则与对照分析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture-analysis.md)

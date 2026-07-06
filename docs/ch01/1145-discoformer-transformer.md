@@ -120,7 +120,7 @@ DiScoFormer 的推理时适应机制是一个优雅的设计：
 - [Prime Intellect Auto NanoGPT](https://github.com/QianJinGuo/wiki/blob/main/entities/prime-intellect-auto-nanogpt-opus-2930.md)
 - [Moneyball for Physical AI](https://github.com/QianJinGuo/wiki/blob/main/entities/moneyball-for-physical-ai.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/discoformer.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/discoformer.md)
 
 ---
 

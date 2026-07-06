@@ -116,7 +116,7 @@ Models favor monolithic, single-file implementations that diverge sharply from h
 
 ## 原文
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-05-07-0-完成率-Claude-GPT-Gemini-全灭-SWE-Bench作者新作-机器之心.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-05-07-0-完成率-Claude-GPT-Gemini-全灭-SWE-Bench作者新作-机器之心.md)
 
 ---
 

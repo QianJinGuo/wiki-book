@@ -72,7 +72,7 @@ AWS 的经验规则是：如果人工完成该任务需要 N 步，则设置 `ma
 
 5. **谨慎设置 Token 预算并监控截断率**：合理设置 `max_turns` 和 `sampling_max_tokens`，并监控 `rollout/tokens/response_max` 的截断率（应低于 5%）。无声截断是多轮 RL 中最隐蔽的训练质量问题，会导致模型在不完整的轨迹上学习而无人察觉。
 
--> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/best-practices-multi-turn-reinforcement-learning-sagemaker-ai.md)
+-> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/best-practices-multi-turn-reinforcement-learning-sagemaker-ai.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # 为了让agent更安全的工作，有多少人操碎了心
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ath-agent-trust-handshake-protocol.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ath-agent-trust-handshake-protocol.md)
 
 ## 摘要
 

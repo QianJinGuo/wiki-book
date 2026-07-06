@@ -10,7 +10,7 @@
 
 > 核心洞察：生产级 Agent 失败的原因不在模型或算法，而在 Infra。Demo 只需要 L1（模型）+ L4（编排），生产需要全部 9 层 + 4 横切。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-infra-panorama-9-layer-agent-framework-production.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-infra-panorama-9-layer-agent-framework-production.md)
 
 ## 9 层架构全景
 
@@ -58,7 +58,7 @@
 - [腾讯研究院 AI 速递](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯研究院ai速递-20260702.md) — 行业动态
 - [Agentic AI System Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md) — 分层 Agent 系统架构（5 层：Orchestrator → Harness → Skill → MCP → Model）
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-infra-panorama-9-layer-agent-framework-production.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-infra-panorama-9-layer-agent-framework-production.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/obsidian-claude-code-integration-guide.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/obsidian-claude-code-integration-guide.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/obsidian-claude-code-integration-guide.md)
 
 # Obsidian Claude Code 集成指南
 Obsidian Claude Code 集成：双向链接 + 块引用 + 本地模型支持
@@ -13,7 +13,7 @@ Obsidian Claude Code 集成：双向链接 + 块引用 + 本地模型支持
 大家平时在使用 Claude Code 的过程中，会有大量的跟知识相关的文件需要去管理，也相信大家找到的答案肯定是 Obsidian 。这两个工具本身都很好用，Claude Code 主要负责生成 Markdown （比如计划、记忆、 CLAUDE.md ），而 Obsidian 更擅长管理这些内容...
 
 ## 原文存档
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/obsidian-claude-code-integration-guide.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/obsidian-claude-code-integration-guide.md)
 
 ## 相关资源
 ## 深度分析

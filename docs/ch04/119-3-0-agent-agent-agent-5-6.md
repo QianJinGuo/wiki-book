@@ -206,7 +206,7 @@ Coze 3.0 提供的解决思路是**云端托管 + 统一消息总线**。本地 
 - [Baidu Netdisk Three Layer Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/baidu-netdisk-three-layer-agent-architecture.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/coze-3-multimagent-team-orchestration-wangheige.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/coze-3-multimagent-team-orchestration-wangheige.md)
 
 ---
 

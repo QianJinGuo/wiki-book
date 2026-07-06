@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/task-queue-priority-and-fairness.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/task-queue-priority-and-fairness.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/task-queue-priority-and-fairness.md)
 
 ## 核心要点
 - value=8, confidence=8, product=64
 - Well-structured technical Temporal article
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/task-queue-priority-and-fairness.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/task-queue-priority-and-fairness.md)
 
 ## 相关实体
 - [Task Queue Priority and Fairness: Your Task Queue, your way](https://github.com/QianJinGuo/wiki/blob/main/entities/task-queue-priority-and-fairness-your-task-queue.md)

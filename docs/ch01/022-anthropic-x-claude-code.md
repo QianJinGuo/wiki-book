@@ -79,7 +79,7 @@
 - [Anthropic Prompt Caching Claude Code Agihunt](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-prompt-caching-claude-code-agihunt.md)
 - [Cat Wu Claude Code Pm](https://github.com/QianJinGuo/wiki/blob/main/entities/cat-wu-claude-code-pm.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-founders-playbook-huashu-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-founders-playbook-huashu-2026.md)
 
 ---
 

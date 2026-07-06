@@ -6,7 +6,7 @@
 
 # 龙虾之父教你省钱：开源Skill给你的Skill减肥
 
-> **来源**：量子位（2026-05-26）| 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/steipete-skill-cleaner-liangzide.md)
+> **来源**：量子位（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/steipete-skill-cleaner-liangzide.md)
 
 ## 深度分析
 
@@ -77,7 +77,7 @@ user happy
 - [Tencent Skill Writing Complete Playbook Jackjchou](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-skill-writing-complete-playbook-jackjchou.md)
 - [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/steipete-skill-cleaner-liangzide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/steipete-skill-cleaner-liangzide.md)
 
 ---
 

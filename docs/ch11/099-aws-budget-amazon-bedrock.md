@@ -98,7 +98,7 @@
 - [Aws Bedrock Ops Alert](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-ops-alert.md)
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-budget-bedrock-cost-governance.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-budget-bedrock-cost-governance.md)
 
 ## 深度分析
 

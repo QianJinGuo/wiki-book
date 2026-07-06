@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/laser-acl2026-latent-superposition-visual-reasoning.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/laser-acl2026-latent-superposition-visual-reasoning.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/laser-acl2026-latent-superposition-visual-reasoning.md)
 
 # Laser — 隐式视觉推理（ACL 2026）
 **来源：** 新智元（微信）
@@ -51,7 +51,7 @@ Laser 用"概率叠加"在隐空间实现多模态推理，Token 消耗降低 97
 - [DeepSeek Visual Primitives](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-visual-primitives.md) — 视觉原语推理
 - [SensNova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md) — 商汤多模态模型
 - [NVIDIA 多模态 RAG](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-multimodal-rag-knowledge-systems.md) — 多模态知识系统
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/laser-acl2026-latent-superposition-visual-reasoning.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/laser-acl2026-latent-superposition-visual-reasoning.md)
 
 ## 深度分析
 1. **隐式概率叠加 ≠ 压缩 token**：传统注意力机制将多语义压成单一输出，Laser 通过在隐空间维持多重概率分布来保留细粒度视觉信息。这意味着模型可以在不丢失细节的情况下完成复杂视觉推理，而非简单地将长思维链"翻译"成短文本

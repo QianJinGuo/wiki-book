@@ -116,7 +116,7 @@
 - [Google Debuts Gemini Focused Updates At Io 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/google-debuts-gemini-focused-updates-at-io-2026.md)
 - [Shub Reaper Macos Stealer Attack Chain](https://github.com/QianJinGuo/wiki/blob/main/entities/shub-reaper-macos-stealer-attack-chain.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/workspaceupdates-googleblog-com-google-workspace-updates.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/workspaceupdates-googleblog-com-google-workspace-updates.md)
 
 ---
 

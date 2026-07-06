@@ -17,7 +17,7 @@
 - [Agentic Ai System Architecture Harness Skill Mcp](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
 - [Agent Skill Writing Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillsieve-agent-skill-security.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillsieve-agent-skill-security.md)
 
 ## 深度分析
 

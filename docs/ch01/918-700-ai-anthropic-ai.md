@@ -77,7 +77,7 @@ Anthropic在这七百多个有毛病的模型上，联合训练一个共享的Lo
 
 接下来还有一道DPO偏好优化的精修：把适配器从一些训练模型中拿掉，让它在没见过的模型上试着自我报告，由大模型
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/700多个坏模型喂出ai测谎仪anthropic审计神器让ai自曝黑料.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/700多个坏模型喂出ai测谎仪anthropic审计神器让ai自曝黑料.md)
 
 ---
 

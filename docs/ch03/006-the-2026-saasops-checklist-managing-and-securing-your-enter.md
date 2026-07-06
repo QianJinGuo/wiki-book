@@ -196,7 +196,7 @@ A: 可以从ROI最高的项开始：用户生命周期管理自动化（#2）和
 - [The It And Security Field Guide To Ai Adoption Tines](https://github.com/QianJinGuo/wiki/blob/main/entities/the-it-and-security-field-guide-to-ai-adoption-tines.md)
 - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www.bettercloud.com-the-saasops-mini-checklist-managing-and-securing-your-enterprise-saas-applications.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.bettercloud.com-the-saasops-mini-checklist-managing-and-securing-your-enterprise-saas-applications.md)
 - [5 ways to curb ai sprawl without stifling innovation](https://github.com/QianJinGuo/wiki/blob/main/entities/5-ways-to-curb-ai-sprawl-without-stifling-innovation.md)
 
 ---

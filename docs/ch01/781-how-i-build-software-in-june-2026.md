@@ -6,7 +6,7 @@
 
 # How I Build Software in June 2026
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-i-build-software-june-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-i-build-software-june-2026.md)
 
 ## 摘要
 

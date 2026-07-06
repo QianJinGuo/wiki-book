@@ -66,7 +66,7 @@ mmlu
 
 仅使用340w英文数据直接进行微调，mmlu和gsm8k（数学）的分数如下（因为没微调中文数据，没有测中文benchmark）。和实验1加入了大规模的中文数据相比，mmlu
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从零训练steel-llm微调阶段优化.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从零训练steel-llm微调阶段优化.md)
 
 ---
 

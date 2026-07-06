@@ -6,7 +6,7 @@
 
 # 国内首个 Frontier 三件套开源大模型：MiniMax M3 完整技术拆解
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/minimax-m3-frontier-three-set-open-source.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/minimax-m3-frontier-three-set-open-source.md)
 
 ## 深度分析
 

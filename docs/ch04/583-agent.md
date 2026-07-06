@@ -39,7 +39,7 @@ source_published: 2026年6月30日 17:00
 
 毛卓从成本维度切入，语气沉稳却直击要害：“对传统企业来说，一个 Agent 能不能落地，首先
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent落地真相-协议-成本与进化-关于智能体从能跑通到能投产的讨论.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent落地真相-协议-成本与进化-关于智能体从能跑通到能投产的讨论.md)
 
 ---
 

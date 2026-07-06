@@ -6,7 +6,7 @@
 
 # 高德 Marketing AutoResearch：AI Native 营销增长经营托管框架
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/autoresearch-marketing-growth-amap-ai-native.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/autoresearch-marketing-growth-amap-ai-native.md)
 
 ## 深度分析
 

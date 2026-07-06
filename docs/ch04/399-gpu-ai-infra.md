@@ -62,7 +62,7 @@ AISHPerf 的评估体系以结果为导向，主指标为综合得分（不同�
 - [Databricks GPU 可靠性](https://github.com/QianJinGuo/wiki/blob/main/entities/how-we-keep-gpus-reliable-across-databricks-ai.md)
 - [Attention Collapse 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/直击gpu集群真实故障首个ai-infra运维智能体基准开源.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/直击gpu集群真实故障首个ai-infra运维智能体基准开源.md)
 
 ---
 

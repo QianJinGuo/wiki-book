@@ -63,7 +63,7 @@
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md)
 - [Aws Bedrock Ops Alert](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-ops-alert.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bedrock-image-content-precise-analysis.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/bedrock-image-content-precise-analysis.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析

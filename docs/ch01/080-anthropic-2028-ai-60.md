@@ -17,7 +17,7 @@ Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称： 
 - [Anthropic Claude Managed Agents Platform 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
 - [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-hackathon-winners-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic联创2028-ai自我构建概率超60.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic联创2028-ai自我构建概率超60.md)
 
 ## 深度分析
 

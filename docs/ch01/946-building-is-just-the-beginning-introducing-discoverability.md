@@ -6,7 +6,7 @@
 
 # Building is just the beginning: Introducing Discoverability | Lovable
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lovable-building-is-just-the-beginning-introducing-discoverability.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lovable-building-is-just-the-beginning-introducing-discoverability.md)
 
 ## 深度分析
 

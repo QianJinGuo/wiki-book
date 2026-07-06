@@ -31,7 +31,7 @@ Stainless成立于2022年，专注于将API规范自动转换为多语言SDK（T
 - [Dictation Agents Human Workspace](https://github.com/QianJinGuo/wiki/blob/main/entities/dictation-agents-human-workspace.md)
 - [Google Deepmind Accelerator Asia Pacific](https://github.com/QianJinGuo/wiki/blob/main/entities/google-deepmind-accelerator-asia-pacific.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-acquires-stainless.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-acquires-stainless.md)
 
 ---
 

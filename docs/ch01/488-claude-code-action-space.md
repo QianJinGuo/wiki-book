@@ -18,7 +18,7 @@
 - [Claude Code Tool Design Evolution Anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-tool-design-evolution-anthropic.md)
 - [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-hackathon-winners-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-core-developer-lessons-action-space-design.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-core-developer-lessons-action-space-design.md)
 
 - new york design week is here, may 14–20 - core77
 

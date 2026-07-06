@@ -69,7 +69,7 @@ import asynciofrom datetime import timedelta
 from code_interpreter import CodeInterpreter, SupportedLanguagefrom opensandbox import Sandboxfrom opensandbox.models import WriteEntry  
 async def main() -> None:    # 1. Create a sandbox    sandbox = await Sandbox.create(        "sandbox-registry.cn-zhangjiakou.cr.aliyuncs.com/opensandbox/code-interpreter:latest",        entrypoint= ["/opt/opensandbox/code-interpreter.sh"],        env={"P
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/阿里重磅开源opensandbox专为-ai-agent-打造的下一代沙箱.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/阿里重磅开源opensandbox专为-ai-agent-打造的下一代沙箱.md)
 
 ---
 

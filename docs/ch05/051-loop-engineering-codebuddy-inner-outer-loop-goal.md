@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/loop-engineering-codebuddy-tencent-eliqiao-2026.md`
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loop-engineering-codebuddy-tencent-eliqiao-2026.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/loop-engineering-codebuddy-tencent-eliqiao-2026.md)
 
 # Loop Engineering 实践指南：CodeBuddy 中的自主循环系统
 
@@ -123,7 +123,7 @@ Loop Engineering    → 怎么管（跨任务编排、验证、状态管理）
 - [OpenClaw Agent Loop 设计范式](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-agent-loop-design-patterns.md)
 - [AI Agent Loops Claude Code Codex](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-loops-claude-code-codex.md)
 - [Hermes Agent Loop 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-loop-architecture.md)
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loop-engineering-codebuddy-tencent-eliqiao-2026.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/loop-engineering-codebuddy-tencent-eliqiao-2026.md)
 
 ---
 

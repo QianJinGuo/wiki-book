@@ -6,7 +6,7 @@
 
 # Stripe Agent 经济基础设施 5 套图谱
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/stripe-agent-economic-infrastructure-emily-sands.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stripe-agent-economic-infrastructure-emily-sands.md)
 
 Emily Sands（Stripe 高管）2026-06-04 发表于 X（45.8K 次浏览，整理：深思圈 2026-06-05）——提出 **"agent 是互联网的新经济主体"** 框架。Stripe 5 套基础设施全面上线：**MPP（机器支付协议）+ Link Agent 钱包（2.5 亿用户）+ Stripe Projects（vibe-deploying）+ Metronome + Tempo（流式支付）+ Radar（防 token 盗窃）**。战略目标：把整个 agent 经济的基础设施层**锁定**，如同当年锁定互联网支付。
 

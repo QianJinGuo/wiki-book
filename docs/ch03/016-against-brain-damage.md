@@ -6,7 +6,7 @@
 
 # Against "Brain Damage"
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/against-brain-damage.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/against-brain-damage.md)
 
 > **Core insight**: Ethan Mollick 的"反 Brain Damage"框架：AI 本身不会破坏大脑，但不加思索地使用会损害思维能力。关键区分是 AI 作为 shortcut（替代思考）vs scaffold（推动思考）——Penn/Turkey 研究显示无指导的 ChatGPT 使考试分数下降 17%，而 World Bank/Nigeria 的教师引导 AI 辅导效果超过"一些最有效的教育干预"。核心原则：先思考、先写作、先开会。
 
@@ -76,7 +76,7 @@ AI 虽是单一智能复制，其"多样性"输出被训练数据模式限制。
 - [The Main Path To Truly Creative Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/the-main-path-to-truly-creative-ai.md)
 
 ## 相关引用
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/against-brain-damage.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/against-brain-damage.md)
 
 ---
 

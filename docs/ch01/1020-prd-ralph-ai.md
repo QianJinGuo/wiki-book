@@ -92,7 +92,7 @@ AGENTS.md / CLAUDE.md 的更新很重要
 
 每
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从-prd-到代码ralph-驱动的自治-ai-智能体执行循环.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从-prd-到代码ralph-驱动的自治-ai-智能体执行循环.md)
 
 ---
 

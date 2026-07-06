@@ -49,7 +49,7 @@ Problem Statement / Success Metrics / User Stories / Acceptance Criteria / Non-G
 - 无 Spec AI 编程 45% 代码含安全漏洞（Veracode 2025）
 - 4 年代码重复率增长 4 倍（GitClear）
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sdd-spec-driven-development-summary-qoder.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sdd-spec-driven-development-summary-qoder.md)
 
 ---
 

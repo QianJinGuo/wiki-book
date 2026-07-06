@@ -12,7 +12,7 @@
 ## 相关实体
 - [Youre Building Agent Security In The Wrong Order](https://github.com/QianJinGuo/wiki/blob/main/entities/youre-building-agent-security-in-the-wrong-order.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
 
 ## 一句话定位
 
@@ -301,7 +301,7 @@ WithWorkingDir(cwd)            // 工作目录
 - [Agent 工程原则](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md) —— 模块化设计实践
 - [短期记忆压缩](https://github.com/QianJinGuo/wiki/blob/main/entities/tencentdb-agent-memory-short-term-compression.md) —— 投影压缩对比
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
 
 ---
 

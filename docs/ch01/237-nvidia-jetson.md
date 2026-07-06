@@ -35,7 +35,7 @@ source_published: 2026年7月1日 18:38
 
 以上为摘要内容，点击“阅读原文”或扫描下方二维码阅读完整内容：
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/如视借助-nvidia-jetson-将毫米级三维重建带到边缘端.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/如视借助-nvidia-jetson-将毫米级三维重建带到边缘端.md)
 
 ---
 

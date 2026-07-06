@@ -101,7 +101,7 @@ Cursor 明确表示不将标准 SWE-bench Pro 分数作为 Composer 的可靠 be
 
 - [Cursor Harness Model Production Floor](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-harness-model-production-floor.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cursor-reward-hacking-coding-benchmarks.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor-reward-hacking-coding-benchmarks.md)
 
 ---
 

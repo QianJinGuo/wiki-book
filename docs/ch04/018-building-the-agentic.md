@@ -6,7 +6,7 @@
 
 # Building the agentic future: Developer highlights from I/O 2026
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
 
 ## 核心要点
 
@@ -74,7 +74,7 @@ Google AI Studio 新增移动端应用和原生 Android 支持，标志着"vibe 
 - [Nvidia Agentic Systems Extreme Co Design](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-agentic-systems-extreme-co-design.md)
 - [Google Debuts Gemini Focused Updates At Io 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/google-debuts-gemini-focused-updates-at-io-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
 
 ---
 

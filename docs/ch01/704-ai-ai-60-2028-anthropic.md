@@ -6,7 +6,7 @@
 
 # AI自己造AI，概率60%，2028年底前！Anthropic联创坐不住了
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-05-05-AI自己造AI-概率60-2028年底前-Anthropic联创坐不住了-新智元.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-05-05-AI自己造AI-概率60-2028年底前-Anthropic联创坐不住了-新智元.md)
 
 ## 核心要点
 
@@ -110,7 +110,7 @@ https://github.com/openai/mle-bench
 
 ---
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-05-05-AI自己造AI-概率60-2028年底前-Anthropic联创坐不住了-新智元.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-05-05-AI自己造AI-概率60-2028年底前-Anthropic联创坐不住了-新智元.md)
 
 ---
 

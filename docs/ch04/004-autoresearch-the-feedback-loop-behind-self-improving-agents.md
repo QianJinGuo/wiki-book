@@ -62,7 +62,7 @@ The autoresearch paradigm is particularly well-suited to these verticals because
 
 5. **Start with a factory blueprint but build toward it gradually.** Don't assume you can create a fully autonomous system on day one. Follow "design the human as a core component" — start with heavy human oversight and systematically transfer routine decisions to the agent as confidence grows, using the "ask a human" tool pattern for novelty detection.
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/autoresearch-feedback-loop-self-improving-agents-introspection.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/autoresearch-feedback-loop-self-improving-agents-introspection.md)
 
 ---
 

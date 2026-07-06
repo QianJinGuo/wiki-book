@@ -73,7 +73,7 @@ Eat Marketing 采取的策略方法论具有重要的借鉴意义：他们选择
 
 5. **平衡"尊重历史"与"拥抱变化"的双重目标**：品牌升级不是非此即彼的选择题，而是需要在两者之间找到动态平衡点。Stokes Coffee 案例的启示是：真正的尊重历史不是固守所有传统元素，而是在保留品牌核心价值的前提下，对表现形式进行符合时代语境的创新演绎。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/this-redesign-of-stokes-coffee-is-a-masterclass-in-change-everything-but-don-t-c.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/this-redesign-of-stokes-coffee-is-a-masterclass-in-change-everything-but-don-t-c.md)
 
 ---
 

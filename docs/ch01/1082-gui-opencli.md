@@ -88,7 +88,7 @@ OpenCLI 提供 5 级认证策略。使用  cascade  命令自动探测：
 
 opencli c
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/浏览器自动化从gui到opencli.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/浏览器自动化从gui到opencli.md)
 
 ---
 

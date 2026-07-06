@@ -20,7 +20,7 @@
 - [Strands Agents Cloud Cost Optimizer](https://github.com/QianJinGuo/wiki/blob/main/entities/strands-agents-cloud-cost-optimizer.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-complete-guide-alibaba.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-complete-guide-alibaba.md)
 
 ## 深度分析
 

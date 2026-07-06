@@ -140,7 +140,7 @@ MetaCompress团队 投稿 凹非寺 量子位 | 公众号 QbitAI
 
 ## 原文
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-05-07-只看图片就能学会压缩Token-浙大-阿里新框架多轮VQA压缩率90-精度不掉--量子位.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-05-07-只看图片就能学会压缩Token-浙大-阿里新框架多轮VQA压缩率90-精度不掉--量子位.md)
 
 ---
 

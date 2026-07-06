@@ -57,7 +57,7 @@ Goldfeder 等人的工作方法论的独特价值在于：它不是从单一的 
 
 5. **跟踪专业化的指标信号：垂直领域 API 调用量增速 > 通用 API 增速。** 当这一信号初现时，专业化的正反馈循环已经在运转。对于产品策略而言，这是决定"是否加大垂直投入"的关键观察指标。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-specialization-inevitable-goldfeder-wyder-lecun-dharma.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-specialization-inevitable-goldfeder-wyder-lecun-dharma.md)
 
 ---
 

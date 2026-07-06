@@ -13,7 +13,7 @@
 - [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](https://github.com/QianJinGuo/wiki/blob/main/entities/opus-4-7-launch-claude-code-best-practices-wechat.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-new-ai-lock-in.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-new-ai-lock-in.md)
 
 ## 深度分析
 **锁定的本质从未消失，只是上移了层级**

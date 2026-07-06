@@ -84,7 +84,7 @@ ZCode 作为初代产品，面临以下挑战：
 - Agent Harness 范式
 - Vibe Coding
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/zcode-glm-5-2-harness.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/zcode-glm-5-2-harness.md)
 
 ---
 

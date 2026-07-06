@@ -52,7 +52,7 @@
 
 这便是当前具身智能在云端的主流开发工作流。 针对上述环节，我们将从 AI In
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/百度百舸-ai-infra-助力具身智能模型加速迭代.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/百度百舸-ai-infra-助力具身智能模型加速迭代.md)
 
 ---
 

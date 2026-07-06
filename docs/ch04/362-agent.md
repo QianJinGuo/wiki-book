@@ -84,7 +84,7 @@ PTC 嵌入合适的编排层后，可以在四个维度获得收益：
 
 ## 原文
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-05-01-Agent的编排层-长任务中的上下文管理架构-unknown.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-05-01-Agent的编排层-长任务中的上下文管理架构-unknown.md)
 
 ---
 

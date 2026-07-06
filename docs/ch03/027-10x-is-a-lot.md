@@ -16,7 +16,7 @@ Here are a few examples of what things would look like if they were 10x faster/b
 - [Strands Agents Cloud Cost Optimizer](https://github.com/QianJinGuo/wiki/blob/main/entities/strands-agents-cloud-cost-optimizer.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/10x-is-a-lot.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/10x-is-a-lot.md)
 
 ## 10x 类比图谱：16 个具体场景
 
@@ -90,7 +90,7 @@ Here are a few examples of what things would look like if they were 10x faster/b
 5. **对外沟通时，用具体类比替代抽象倍数表述**
    自己在做产品或技术推广时，避免仅声称"10x 改进"，而是用具体类比说明："相当于把原来 4 小时的任务缩短到 24 分钟"——受众立刻产生量级感知，而非被数字本身迷惑。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/10x-is-a-lot.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/10x-is-a-lot.md)
 
 ## 相关实体
 - `AI辅助开发` — AI作为陌生领域的知识倍增器

@@ -14,7 +14,7 @@ Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称： 
 - [Claudes_Next_Enterprise_Battle_Is_Not_Mo](https://github.com/QianJinGuo/wiki/blob/main/entities/claudes_next_enterprise_battle_is_not_mo.md)
 - [Anthropic联创2028 Ai自我构建概率超60](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic联创2028-ai自我构建概率超60.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-联创2028-年实现-ai-自我构建的概率超过-60.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-联创2028-年实现-ai-自我构建的概率超过-60.md)
 
 ## 深度分析
 

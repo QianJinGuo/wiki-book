@@ -138,7 +138,7 @@ MCP 协议支持是一个值得关注的长期差异化方向。随着 AI Agent 
 - [Minimax Agent Team Mavis Owner Worker Verifier](https://github.com/QianJinGuo/wiki/blob/main/entities/minimax-agent-team-mavis-owner-worker-verifier.md)
 - [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fusedash-generative-analytics-platform.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fusedash-generative-analytics-platform.md)
 
 ---
 

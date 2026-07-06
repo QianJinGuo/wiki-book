@@ -33,7 +33,7 @@
 - **个人AI革命 = 个人电脑革命**：每个人都将有满足自己独特需求的AI
 - **"个人AI主权"**：自己写提示词 vs 被平台黑箱控制
 - **当前阶段**：类似1970年代"自制电脑俱乐部"阶段
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/yc-ceo-garry-tan-200-dollar-vs-4-million.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/yc-ceo-garry-tan-200-dollar-vs-4-million.md)
 
 ## 深度分析
 ### Token经济学的范式转变

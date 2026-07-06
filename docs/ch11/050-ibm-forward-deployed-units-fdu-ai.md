@@ -81,7 +81,7 @@ FDU 运行在 IBM Consulting Advantage 平台上，形成了"平台+交付模型
 - **Agentic AI** — FDU 的核心能力载体，AI agent 可自主执行 coding、evaluation、testing 等任务（概念页待建）
 - **IBM watsonx** — IBM 企业 AI 平台，与 FDU 形成平台+交付模型的组合（实体页待建）
 - **企业 AI 部署** — FDU 试图解决的正是从 experiment 到 production 的规模化落地难题（概念页待建）
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ibm-forward-deployed-units-ai-deployment.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ibm-forward-deployed-units-ai-deployment.md)
 
 ---
 

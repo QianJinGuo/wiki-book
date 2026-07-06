@@ -12,7 +12,7 @@
 - [canvas hackers shinyhunters say their official domain was su](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md)
 - [private fintech has quietly become bigger than public fintec](https://github.com/QianJinGuo/wiki/blob/main/entities/private-fintech-has-quietly-become-bigger-than-public-fintec.md)
 - [private fintech has quietly become bigger than public fintec](https://github.com/QianJinGuo/wiki/blob/main/entities/private-fintech-has-quietly-become-bigger-than-public-fintec-569278.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-04-15.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-04-15.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析

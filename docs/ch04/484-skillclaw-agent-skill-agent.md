@@ -17,7 +17,7 @@
 - [Agent Skill Writing Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md)
 - [Agent Memory Engineering Tax Aws China 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-engineering-tax-aws-china-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-collective-intelligence.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw-collective-intelligence.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析

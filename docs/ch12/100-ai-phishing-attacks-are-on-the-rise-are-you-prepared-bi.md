@@ -18,7 +18,7 @@
 - [Bluekit](https://github.com/QianJinGuo/wiki/blob/main/entities/bluekit.md)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](https://github.com/QianJinGuo/wiki/blob/main/entities/schmoozing-is-dead-agents-are-hitting-120-of-humans-and-growth-is-the-only-thing.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 
 - [Interpol Operation Ramz Mena Cybercrime](https://github.com/QianJinGuo/wiki/blob/main/entities/interpol-operation-ramz-mena-cybercrime.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.3KB | `entities/minimax-agent-team-mavis-owner-worker-verifier.md`
 
-[Minimax Agent Team Mavis Owner Worker Verifier](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/minimax-agent-team-mavis-owner-worker-verifier.md)
+[Minimax Agent Team Mavis Owner Worker Verifier](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/minimax-agent-team-mavis-owner-worker-verifier.md)
 
 # 一个 AI 还是不够的：MiniMax Agent Team（Mavis）
 **作者**：MiniMax 稀宇科技

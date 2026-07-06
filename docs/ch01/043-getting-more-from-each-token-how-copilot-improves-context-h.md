@@ -61,7 +61,7 @@ Figure 1: Three HyDRA operating points illustrate tunability: (Peak) exceeds Son
 
 ![Image 2: Chart showing quality and cost tradeoffs of HyDRA and other published research and commercial routers using SWEBench benchmarks. HyDRA (Cons.) ties OpenRouter Auto on resolution rate (70.8%) at 3.3x the savings. HyDRA (Aggr.) outperforms both Azure Foundry operat
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/github-copilot-getting-more-from-each-token-how-copilot-improves-context-handlin.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/github-copilot-getting-more-from-each-token-how-copilot-improves-context-handlin.md)
 
 ---
 

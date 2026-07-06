@@ -98,7 +98,7 @@ cd terraform && terraform apply
 - [AWS/Cisco A2A 安全方案](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md) — A2A 安全治理生态
 - [LangGraph A2A 对抗 Agent 团队](https://github.com/QianJinGuo/wiki/blob/main/entities/langgraph-a2a-adversarial-agent-team.md) — A2A 协议的应用示例
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md)
 
 ---
 

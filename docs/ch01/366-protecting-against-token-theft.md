@@ -6,7 +6,7 @@
 
 # Protecting against token theft
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vercel-com-blog-protecting-against-token-theft.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vercel-com-blog-protecting-against-token-theft.md)
 
 > Vercel 工程团队 2026-05-29 发布的实战复盘：当 AI 推理调用比 HTTP 请求贵 6 个数量级时，「能不能推理」和「能不能防盗用」就成了完全不同的问题。这篇文章描述了一种新的滥用形态 — Inference Theft — 并给出 Vercel 用 BotID 在每个请求上做深度分析的防御方案。
 

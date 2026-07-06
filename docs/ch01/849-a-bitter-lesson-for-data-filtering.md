@@ -43,7 +43,7 @@ ai, agent, runtime
 - [Minimax Agent Team Mavis Owner Worker Verifier](https://github.com/QianJinGuo/wiki/blob/main/entities/minimax-agent-team-mavis-owner-worker-verifier.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/a-bitter-lesson-for-data-filtering-e8807d.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/a-bitter-lesson-for-data-filtering-e8807d.md)
 
 ---
 

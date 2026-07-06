@@ -6,7 +6,7 @@
 
 ## 核心要点
 - Newsletter article, source: https://try.digitalocean.com/serverless-inference/
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/serverless-inference.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/serverless-inference.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
@@ -63,7 +63,7 @@ DigitalOcean 的 marketing 明确将市面解决方案分为四类：Hyperscaler
 ### 监控和成本控制
 DigitalOcean Serverless Inference 的内置 observability 工具覆盖了 latency、tokens、errors、spend 四个维度，这是生产监控的基础。对于成本控制，建议设置 usage alerts 和 rate limits 以防止意外的费用激增。特别值得注意的是 Off-peak dynamic pricing 的引入——对于可以等待的批处理任务，选择 off-peak 时段（如 MiniMax M2.5 或 Kimi K2.5）可以获得约 50% 的价格优惠，这是一个值得利用的成本优化手段。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md)
 
 ### 风险提示
 1. **供应商锁定风险**：虽然 API 兼容，但不同模型的输出格式、safety layers、pricing behavior 存在差异，深度使用后迁移仍有一定成本。

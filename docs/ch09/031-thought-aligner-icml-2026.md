@@ -160,7 +160,7 @@ Thought-Aligner 的独特贡献：
 - **通讯作者**：杨珉，复旦大学教授，复旦大学计算与智能创新学院执行院长（智能系统安全）
 - **团队**：上海创智学院 × 复旦大学
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thought-aligner-shanghai-fudan-icml-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thought-aligner-shanghai-fudan-icml-2026.md)
 
 ## 深度分析
 

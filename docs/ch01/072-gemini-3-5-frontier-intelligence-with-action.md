@@ -57,7 +57,7 @@ Xero is
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
 - [Process Financial Documents Using Amazon Bedrock Data Automa](https://github.com/QianJinGuo/wiki/blob/main/entities/process-financial-documents-using-amazon-bedrock-data-automa.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gemini-3-5-frontier-intelligence-with-action.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemini-3-5-frontier-intelligence-with-action.md)
 
 ## 相关主题
 

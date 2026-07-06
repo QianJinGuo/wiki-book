@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 7.0KB | `entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md`
 
-> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
+> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
 
 ## 摘要
 Superset 是由三位前 YC CTO 联合创立的多 Agent 开发 IDE，旨在解决传统开发工具无法适配并行 Agent 工作流的问题。其核心价值在于：将串行开发范式转变为并行开发范式，使团队能够同时调度多个 AI Coding Agent 在各自独立的隔离环境中协同工作。

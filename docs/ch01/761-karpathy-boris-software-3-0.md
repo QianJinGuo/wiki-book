@@ -18,7 +18,7 @@
 - [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
 - wetesteddeepseekv4proandflashagainstclau.md-against-claude
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-boris-software3-llm-era-programming-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-boris-software3-llm-era-programming-2026.md)
 
 ## 深度分析
 

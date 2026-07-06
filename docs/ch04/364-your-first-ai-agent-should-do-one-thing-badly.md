@@ -6,7 +6,7 @@
 
 # Your First AI Agent Should Do One Thing Badly
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/your-first-ai-agent-should-do-one-thing-badly.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/your-first-ai-agent-should-do-one-thing-badly.md)
 
 ## 摘要
 

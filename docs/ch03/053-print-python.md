@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 19.9KB | `entities/日志别再print了深入对比python三大日志方案.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/日志别再print了深入对比python三大日志方案.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/日志别再print了深入对比python三大日志方案.md)
 
 ## 标准库 logging：什么都能做，但什么都不好做
 标准库 logging 是 Python 自带的"瑞士军刀"。先看一段最典型的配置代码：

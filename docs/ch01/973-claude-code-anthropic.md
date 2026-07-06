@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [anthropic 最新播客：如何打造下一代 claude](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-building-next-claude.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-context-engineering-anthropic-thariq.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-context-engineering-anthropic-thariq.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析

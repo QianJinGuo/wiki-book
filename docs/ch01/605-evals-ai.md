@@ -17,7 +17,7 @@ AI Evals 的本质：**把"好不好"变成可重复判断的工程机制**。
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-quality-optimization-flywheel.md)
 - [Generalization Dynamics Of Lm Pre Training Jiaxin Wen 1](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen-1.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evals-three-methods-of-ai-evaluation.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evals-three-methods-of-ai-evaluation.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 ## 深度分析

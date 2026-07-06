@@ -42,7 +42,7 @@ Janusflow整体结构
 
 - 在进行图像生成任务时，使用 rectified flow模型的范式去生成图像，LLM的文本内容当作条件去控制 rectified flow模型生成和文本相关的内容。 rectified flow模型的编码器和解码器都是由ConvNeXt block堆叠而成。图像生成实际是在 latent space中进行的， latent space中特征图大小为44848，最后用VAE的decoder将图像从 latent空间映射到像素空间（3384384），在latent space进行图像生成更加高效（注意，SDXL-VAE在图中并没有体现），
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/多模态理解与生成统一模型llmflow模型生成范式原理与代码解析.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/多模态理解与生成统一模型llmflow模型生成范式原理与代码解析.md)
 
 ---
 

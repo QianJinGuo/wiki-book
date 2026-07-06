@@ -6,7 +6,7 @@
 
 # Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/unlocking-ai-flexibility-in-europe-a-guide-to-cross-region-i.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/unlocking-ai-flexibility-in-europe-a-guide-to-cross-region-i.md)
 
 ## 深度分析
 

@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/vietnam-domestic-cloud.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vietnam-domestic-cloud.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vietnam-domestic-cloud.md)
 
 ## 核心要点
 - value=7, confidence=8, product=56
 - Vietnam cloud decision accurate sourcing
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vietnam-domestic-cloud.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vietnam-domestic-cloud.md)
 
 ## 深度分析
 **1. 主权云的地缘政治逻辑：数据本地化不仅是合规，更是战略自主**

@@ -36,7 +36,7 @@ LEAP 对 Agent 工程有重要启示：
 - `Code is Cheap：Harness 方法论` — 结构化交互与可验证过程的设计哲学共鸣
 - `Skill Hell` — LEAP 展示了 agentic 框架在非编码领域的扩展能力
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/raw-leap-agentic-formal-theorem-proving-google-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/raw-leap-agentic-formal-theorem-proving-google-2026.md)
 
 ---
 

@@ -96,7 +96,7 @@ Vanlightly 承认分类法存在边界案例（如 LTAP 可能演化为 Shared-S
 4. **不要忽视数据模型差异**：OLTP 的 3NF 和 OLAP 的 Kimball 模型在查询模式和索引策略上根本不同，统一系统必须在某一层面妥协。
 5. **存储架构决策应考虑未来扩展性**：选择支持分层、物化、共享等多种数据流模式的系统，避免因架构锁定而无法适应业务变化。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/storage-workload-architecture-taxonomy-vanlightly.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/storage-workload-architecture-taxonomy-vanlightly.md)
 
 ---
 

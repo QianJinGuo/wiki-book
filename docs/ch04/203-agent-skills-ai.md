@@ -90,7 +90,7 @@ AI 表格/多维表格之所以成为企业 80% AI 项目的承载体，**不是
 - [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
 - [Agent Skills Comprehensive Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skills-comprehensive-survey.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
 
 ## 深度分析
 

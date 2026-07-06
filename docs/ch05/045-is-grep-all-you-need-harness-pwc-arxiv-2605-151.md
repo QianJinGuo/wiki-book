@@ -21,7 +21,7 @@
 - [Harness Engineering Comprehensive Guide Conardli](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/is-grep-all-you-need-pwc-retrieval-harness-coupling.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/is-grep-all-you-need-pwc-retrieval-harness-coupling.md)
 
 ## 三个核心实验发现
 

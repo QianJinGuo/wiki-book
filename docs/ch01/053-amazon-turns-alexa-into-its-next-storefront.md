@@ -14,7 +14,7 @@
 - [Code Simulation For Enterprise Engineering Playerz](https://github.com/QianJinGuo/wiki/blob/main/entities/code-simulation-for-enterprise-engineering-playerz.md)
 - [Thrive Capital Bets 100 Million On Shopifys Ai Future](https://github.com/QianJinGuo/wiki/blob/main/entities/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 
 ## 深度分析
 ### 从搜索框到语音：零售 AI 的范式转移

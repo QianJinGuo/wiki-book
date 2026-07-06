@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 8.6KB | `entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md`
 
-> -> [Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
+> -> [Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
 ## 核心要点
 - Genkit 是用于构建全栈 AI 应用和 Agentic 应用的开源框架，支持 TypeScript、Go、Dart 和 Python
 - v=8, c=8

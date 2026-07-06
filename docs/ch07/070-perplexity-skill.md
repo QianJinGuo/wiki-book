@@ -6,7 +6,7 @@
 
 # Perplexity 首次公开了内部 Skill 设计指南
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/perplexity-internal-skill-design-guide-xiaojianke.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/perplexity-internal-skill-design-guide-xiaojianke.md)
 
 ## 深度分析
 

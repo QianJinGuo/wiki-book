@@ -8,7 +8,7 @@
 
 > Source: Figma Blog, "Figma Make, now on your local code", 2026-05-28. URL: https://www.figma.com/blog/figma-make-now-on-your-local-code/
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/figma-make-now-on-your-local-code-3e6a33.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/figma-make-now-on-your-local-code-3e6a33.md)
 
 ## 摘要
 

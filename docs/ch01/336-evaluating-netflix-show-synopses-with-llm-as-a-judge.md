@@ -6,7 +6,7 @@
 
 # Evaluating Netflix Show Synopses with LLM-as-a-Judge
 
-> **Source**: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
+> **Source**: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 
 ## 核心内容
 
@@ -75,7 +75,7 @@ Solid industry application of LLM-as-a-Judge methodology with meaningful technic
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
 - [Aws Reinforcement Fine Tuning Llm As Judge](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-reinforcement-fine-tuning-llm-as-judge.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 ## 深度分析
@@ -112,7 +112,7 @@ Consensus scoring（多次采样取均值）在 vanilla CoT 上无增益，在 t
 ### 5. 对事实性评估采用 Multi-Agent 门控架构
 当评估对象涉及需要与外部知识库核对的维度时，使用专门的 agent 处理每个 narrow factuality 子维度。每个 agent 只接收与其评估维度相关的上下文（plot summary / award list 等），最终使用 minimum 聚合——任何子维度的失败都导致整体 fail。这一模式适用于任何"由多个独立正确性条件共同保证"的评估场景，比在单一 agent 中塞入所有上下文更可靠。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 
 ---
 

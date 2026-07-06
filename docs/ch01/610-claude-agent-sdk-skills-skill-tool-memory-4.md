@@ -111,7 +111,7 @@ Skills/Hooks/Subagents/MCP 四方分工不只是技术分类，更是产品化�
 - [Hermes Agent Skills 源码分析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-skills-source-code-analysis-shuge.md)
 - [Harness Engineering Core Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns.md)
 - [Claude Code + Superpowers 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-superpowers-practice.md)
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-agent-sdk-skills-reusable-knowledge.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-agent-sdk-skills-reusable-knowledge.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 
 ---

@@ -72,7 +72,7 @@ AI虚拟细胞（AIVC）的时代，正式宣告到来。
 
 核心在于，它们的训练目标主要是学习基因表达模式本身，而非细胞状态变化的内在机制，因此 难以区分哪些表达变化只是背景噪声 ，哪些才是真正驱动细胞状态
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从llm到jepa中国团队正在把世界模型搬进细胞内部.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从llm到jepa中国团队正在把世界模型搬进细胞内部.md)
 
 ---
 

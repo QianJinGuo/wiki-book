@@ -50,7 +50,7 @@ Here’s where the report’s headline finding gets complicated. The top 10 are 
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](https://github.com/QianJinGuo/wiki/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
 - [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](https://github.com/QianJinGuo/wiki/blob/main/entities/klarna-delivers-strong-start-to-2026-with-1bn-revenue-and-68m-adj-operating-prof.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/private-fintech-vs-public-fintech.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/private-fintech-vs-public-fintech.md)
 
 ---
 

@@ -10,7 +10,7 @@
 
 - [被裁了想转 ai agent？先看面试官到底在筛你哪 7 样东西](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-interview-7-capabilities.md)
 - [试用 amazon bedrock 中的新控制台体验：该体验针对兼容 anthropic 和 openai 的 api](https://github.com/QianJinGuo/wiki/blob/main/entities/试用-amazon-bedrock-中的新控制台体验该体验针对兼容-anthropic-和-openai-的-api-进.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/全球ai新王诞生anthropic估值冲爆12万亿首次反超openai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/全球ai新王诞生anthropic估值冲爆12万亿首次反超openai.md)
 
 ## 深度分析
 

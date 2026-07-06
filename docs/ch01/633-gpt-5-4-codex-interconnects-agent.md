@@ -79,7 +79,7 @@ GPT 5.4 是把极强软件基础（GPT 5.3 Codex）和更多简单可用性/Agen
 - [Kimi Work Codex Vibe Working Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)
 - [Openai Codex Super Computer Network Xinzhiyuan](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-codex-super-computer-network-xinzhiyuan.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-54-is-a-big-step-for-codex.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-54-is-a-big-step-for-codex.md)
 
 ---
 

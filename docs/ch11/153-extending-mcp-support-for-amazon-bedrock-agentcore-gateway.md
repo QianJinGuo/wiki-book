@@ -6,7 +6,7 @@
 
 # Extending MCP support for Amazon Bedrock AgentCore Gateway
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
 
 ## 摘要
 

@@ -139,7 +139,7 @@ HiCache加载时序缺失
 
 ## 原文
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-05-01-智谱公布-降智-的秘密-Scaling不可避免的痛-量子位.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-05-01-智谱公布-降智-的秘密-Scaling不可避免的痛-量子位.md)
 
 ---
 

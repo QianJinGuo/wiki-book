@@ -82,7 +82,7 @@ survey 指出一个值得注意的产业演化趋势：从 agent frameworks 到 
 - [Harness Engineering Systematic Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-framework.md)
 - [Agentscope Java Harness Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-java-harness-framework.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-engineering-survey-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-harness-engineering-survey-2026.md)
 
 ---
 

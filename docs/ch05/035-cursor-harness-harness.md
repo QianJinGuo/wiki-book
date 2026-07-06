@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.4KB | `entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md`
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
 
 ## 核心要点
 - **问题核心**：同一个模型放进不同 Coding Agent，体感差异巨大——核心在于 Harness 而非模型本身
@@ -72,7 +72,7 @@ Cursor 另外看了两个代理指标：
 - 客服 Agent → 回答后用户是否继续追问同一问题、是否转人工、是否重复投诉
 - 写作 Agent → 生成段落最终保留比例、标题是否被直接采用、改稿轮数有没有减少
 - 数据分析 Agent → 生成 SQL 有没有被执行、图表有没有进入报告、用户有没有回到同一问题反复修正
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
 
 ## 相关实体
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-20000-char-source-analysis.md)

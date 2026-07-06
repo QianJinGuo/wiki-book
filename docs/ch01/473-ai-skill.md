@@ -29,7 +29,7 @@ SkillsBench研究：84个任务中19%出现负向增益。
 ## 权威来源 vs 经验值
 **有学术/工业来源：** 通过率（OpenAI Evals/HELM）、Δ（SkillsBench论文arxiv.org/abs/2602.12670）、触发率（Recall/Precision）、幻觉检测（TruthfulQA/FactScore）、稳定性（统计学标准差）
 **内部经验值（无直接学术背书）：** S级通过率≥95%、IFR=100%、σ<0.05
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-skill-测评指标体系.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-skill-测评指标体系.md)
 → [AI Skill 测评体系：从零到一](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-evolution-framework.md)（系列主框架）
 
 ## 相关实体

@@ -6,7 +6,7 @@
 
 # GPT 5.4 是 Codex 的一次大跨越：四维评估视角与 Agent 战争回归
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-54-is-a-big-step-for-codex.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-54-is-a-big-step-for-codex.md)
 
 ## 摘要
 

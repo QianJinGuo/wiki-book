@@ -49,7 +49,7 @@ ChatGPT 出来之后，每天的消息都快爆炸了，到处都是标题党、
 
 [昨天的文章](<https://mp.weixin.qq.com/s?__biz=MzA4NzgzMjA4MQ==&mid=2453486370&idx=1&sn=a14...
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fable-5-实战之五亿-token-暴改我三年前的网站.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fable-5-实战之五亿-token-暴改我三年前的网站.md)
 
 ---
 

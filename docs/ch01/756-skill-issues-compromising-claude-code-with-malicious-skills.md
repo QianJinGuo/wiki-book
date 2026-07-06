@@ -13,7 +13,7 @@
 - [Claude Code Skill Writing Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skill-writing-guide.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
 
 - [qwen code skill testing framework: recording, playback, and](https://github.com/QianJinGuo/wiki/blob/main/entities/qwen-code-skill-testing-framework-issue-2447.md)
 

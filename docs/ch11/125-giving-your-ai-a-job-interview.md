@@ -8,7 +8,7 @@
 
 Ethan Mollick（One Useful Thing）关于 AI 评估方法论的深度文章。核心论点：标准基准测试（MMLU/GPQA/AIME）虽然整体趋势有意义，但对个人和组织的具体需求几乎无用。你需要像面试候选人一样，系统性地测试 AI 在你实际工作场景中的表现——包括"态度"和"判断倾向"。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/giving-your-ai-a-job-interview.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/giving-your-ai-a-job-interview.md)
 
 ## 摘要
 

@@ -115,7 +115,7 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 
 ## 第 2 来源 — 清华+MSRA STAR-PólyaMath：Reasoner-Verifier-Meta-Strategist 三智能体推理 Harness（2026-06）
 
-> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/star-polya-math-reasoner-verifier-meta-strategist-tsinghua-msra-2026.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/star-polya-math-reasoner-verifier-meta-strategist-tsinghua-msra-2026.md)
 > Author: 清华大学 T-STAR Lab + 微软亚洲研究院
 > Paper: arxiv 2605.19338
 
@@ -158,10 +158,10 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 
 核心机制（长程任务分解为可验证子步骤 + 结构化检验 + 跨尝试记忆 + 高层监督）适用于代码生成（生成-测试-调试循环）和科学发现（假设提出-实验-综合判断）场景。项目已开源完整代码框架、prompt 和 skill 定义。
 
-→ [第2原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/star-polya-math-reasoner-verifier-meta-strategist-tsinghua-msra-2026.md)
+→ [第2原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/star-polya-math-reasoner-verifier-meta-strategist-tsinghua-msra-2026.md)
 
 ## 相关
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-design-long-running-apps.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-design-long-running-apps.md)
 -  — 七环节控制回路 + Generator/Evaluator 框架
 - [Agent Harness 上下文管理：工作集视角](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — compaction 光谱 + session/harness/sandbox 解耦
 - [LangChain Anatomy of Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/langchain-anatomy-agent-harness.md) — Ralph 循环 + 规划/自我验证双闭环

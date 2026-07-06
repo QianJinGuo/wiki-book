@@ -12,7 +12,7 @@ Practical and specific macOS debugging guide from a trusted source, with actiona
 
 ## 深入分析
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
 
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=8, stars=4。
 
@@ -89,7 +89,7 @@ macOS 的 AppTranslocation 机制（又称 Gatekeeper Path Quarantine）是一�
 
 ## 相关主题
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
 
 ---
 

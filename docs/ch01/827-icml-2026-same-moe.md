@@ -129,7 +129,7 @@ MLLM 通常由视觉编码器、多模态投影器和大语言模型组成，并
 
   * 提出曲率感知专家缩放，用
 
--> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/icml-2026-南大same稳住moe缓解多模态持续微调双重遗忘.md)
+-> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/icml-2026-南大same稳住moe缓解多模态持续微调双重遗忘.md)
 
 ---
 

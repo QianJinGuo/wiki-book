@@ -12,7 +12,7 @@ Accept Deny Non-Essential
 Skip to main content
 Don’t miss tomorrow’s Cybersecurity industry news
 Let Cybersecurity Dive’s fre...
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/818662.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/818662.md)
 
 ## 深度分析
 **1. 这是一个"行业自发填补政策真空"的典型案例**

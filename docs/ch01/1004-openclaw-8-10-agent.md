@@ -91,7 +91,7 @@ memory/YYYY-MM-DD.md
 HEARTBEAT.md
 定时心跳检查的清单
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/拆解-openclaw-架构二8-个文件-10-步流水线agent-人格系统的源码级设计.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/拆解-openclaw-架构二8-个文件-10-步流水线agent-人格系统的源码级设计.md)
 
 ---
 

@@ -33,7 +33,7 @@ source_published: 2026年6月26日 18:00
 
 它为各类智能体和 AI 平台——从通用助手到专业科学智能体、软件平台及企业内部的生物制药系统提供所需工具，使其能够综合与总结科学知识、调用模型、评估结果、进行推理并执行后续行动。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-bionemo-agent-toolkit-加速科学发现的智能体工具.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidia-bionemo-agent-toolkit-加速科学发现的智能体工具.md)
 
 ---
 

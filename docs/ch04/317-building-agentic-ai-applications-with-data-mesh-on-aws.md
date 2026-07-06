@@ -10,7 +10,7 @@
 
 AWS 官方博客展示了如何在现代 data mesh 架构上构建受治理的 agentic AI 应用。核心创新有三点：用 Amazon S3 Vectors 替代 OpenSearch Serverless 作为知识库（成本降低 90%）；用 S3 Tables（内置 Apache Iceberg）替代通用 S3 作为结构化数据存储（TPS 提升 10 倍）；通过 AgentCore Gateway 将 data mesh 暴露为 MCP 工具，实现确定性的 agent-to-data 访问控制。文章以客服场景为例，展示了从工具发现到查询执行到响应合成的全链路治理。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-agentic-ai-applications-with-a-modern-data-mesh-str.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-agentic-ai-applications-with-a-modern-data-mesh-str.md)
 
 ## 核心要点
 

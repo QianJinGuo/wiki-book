@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 62.1KB | `entities/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗.md`
 
-[Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗.md)
+[Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗.md)
 
 ###  ** 引言  **
 当 AI Coding 的聚光灯几乎全部打在前端和客户端——生成一个页面、写一个 App  .  .  .  .  .  .  的时候，一个  重要  的  问题  却  似乎  被  回避了：AI 能在真正"出事会炸"的后端系统里写代码  吗  ？

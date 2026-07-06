@@ -124,7 +124,7 @@ https://github.com/AIGNLAI/GOLD 
 
 因此，CTTA 不是一次性的微调问
 
--> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cvpr-2026-只改少量关键方向模型就能连续适应南大gold来了.md)
+-> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cvpr-2026-只改少量关键方向模型就能连续适应南大gold来了.md)
 
 ---
 

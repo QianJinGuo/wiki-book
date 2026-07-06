@@ -48,7 +48,7 @@ __ _ _ _ _
 
 这场讨论揭示了一个核心共识：Agent 从 Demo 到投产，不是单个模型能力的提升问题，而是工程体系、管理流
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent落地真相协议成本与进化一场关于智能体从能跑通到能投产的讨论.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent落地真相协议成本与进化一场关于智能体从能跑通到能投产的讨论.md)
 
 ---
 

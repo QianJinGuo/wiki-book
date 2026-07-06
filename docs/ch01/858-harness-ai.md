@@ -40,7 +40,7 @@ Supermemory（2.18 万星） 明确将自身定位为"记忆不是 RAG"。其核
 
 Supermemory 提供丰富的连接器，支持谷歌云盘、Gmail、Notion、
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness技术手册-ai-记忆的两种范式从向量检索到上下文积累.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness技术手册-ai-记忆的两种范式从向量检索到上下文积累.md)
 
 ---
 

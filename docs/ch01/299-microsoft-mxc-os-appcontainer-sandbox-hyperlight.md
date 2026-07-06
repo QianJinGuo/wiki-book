@@ -8,7 +8,7 @@
 
 > **Background**: Microsoft 在 Build 2026（2026-06-02）开源的 MXC (Microsoft eXecution Container) 是首个由 **OS 厂商**提供、专门面向 agent 代码执行的跨平台沙箱层。本文基于 Origin Research 2026-06-04 的源码级深度分析 [`originhq.com/research/mxc-execution-containers-internals`](http://www.originhq.com/research/mxc-execution-containers-internals)，涵盖 10 个 containment backends 的实现细节（AppContainer 三层 fallback、bubblewrap/seatbelt/LXC/micro-VM/Hyperlight），交叉引用微软同期开源的 RAMPART/Clarity，形成完整的"微软代理安全栈"图景。
 >
-> 原文：→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-mxc-execution-containers-agent-sandbox-origin.md)
+> 原文：→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-mxc-execution-containers-agent-sandbox-origin.md)
 
 ## 一句话总结
 
@@ -143,7 +143,7 @@ Hyperlight 让 CPython 直接 library call 进 Unikraft micro-VM，每次 rewind
 
 ## 原文链接
 
-→ [MXC Internals 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-mxc-execution-containers-agent-sandbox-origin.md)
+→ [MXC Internals 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-mxc-execution-containers-agent-sandbox-origin.md)
 
 ## 相关阅读
 

@@ -17,7 +17,7 @@
 - [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
 
 - [Openai Models And Codex On Amazon Bedrock Are Now Generally ](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-models-and-codex-on-amazon-bedrock-are-now-generally-.md)
 - [开始在 Amazon Bedrock 上使用 Openai Gpt 55Gpt 54 模型和 Codex](https://github.com/QianJinGuo/wiki/blob/main/entities/开始在-amazon-bedrock-上使用-openai-gpt-55gpt-54-模型和-codex.md)

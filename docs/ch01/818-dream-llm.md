@@ -8,7 +8,7 @@
 
 DREAM (Dense Retrieval Embeddings via Autoregressive Modeling) 证明了**不需要任何人工标注的正负样本**，只凭"一篇文档能不能帮冻结大模型预测出正确答案"这一个信号，就能把稠密检索器训得很强。关键诀窍：把检索器的相似度分数注入到冻结大模型的 query-focused retrieval attention heads 中，让 NTP 损失沿注意力路径反向传播调教检索器。0.5B-8B 全规模领先。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dream-dense-retrieval-autoregressive-modeling-challengehub-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dream-dense-retrieval-autoregressive-modeling-challengehub-2026.md)
 
 ## 问题：检索器训练的标注瓶颈
 

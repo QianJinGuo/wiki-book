@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 9.6KB | `entities/natural-language-autoencoders.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-nla-natural-language-autoencoders-interpretability.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-nla-natural-language-autoencoders-interpretability.md)
 
 ## 核心定位
 Anthropic 2026 年可解释性研究突破。核心命题：**将 AI 内部激活值翻译为人类可读语言**，从而读取模型"不会主动展示"的隐藏想法。论文发表于 transformer-circuits.pub，代码与 Neuronpedia 前端已开源。
@@ -84,7 +84,7 @@ NLAs（本文）— 激活 → 文字闭环，直接输出人类可读的解释
 - [Mechanistic Interpretability](https://github.com/QianJinGuo/wiki/blob/main/concepts/mechanistic-interpretability.md) — 机械可解释性方法论，NLAs 是该领域的前沿工具
 - [Sparse Autoencoders](https://github.com/QianJinGuo/wiki/blob/main/entities/sparse-autoencoders.md) — 前代可解释性方法，NLAs 在其基础上发展出文字翻译能力
 - [Activation Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/activation-engineering.md) — 激活工程方法体系，NLAs 提供了读取和解释激活的新手段
-- [原文存档（中文）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-nla-natural-language-autoencoders-interpretability.md)
+- [原文存档（中文）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-nla-natural-language-autoencoders-interpretability.md)
 ---
 *Last updated: 2026-05-19*
 *评审：Value 9 × Confidence 9 = 81 ✅ STRONG | ★★★★★*
@@ -117,7 +117,7 @@ NLAs 当前的高成本限制了其作为实时监控工具的可行性，但可
 ## 相关实体
 - [Natural Language Autoencoders (Anthropic)](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-natural-language-autoencoders.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-natural-language-autoencoders.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-natural-language-autoencoders.md)
 
 - [QuickSight Dataset QA：NL直查S3 Iceberg](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-quicksight-dataset-qa-natural-language.md)
 

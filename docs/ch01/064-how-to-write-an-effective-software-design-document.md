@@ -74,7 +74,7 @@ Consider these questions:
 *   Will the implementation run in production for several years?
 *
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/excerpts-write-an-effective-design-doc.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/excerpts-write-an-effective-design-doc.md)
 
 ---
 

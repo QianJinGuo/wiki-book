@@ -66,7 +66,7 @@ One person sent 20 variations in four minutes. Another posed as an “OpenClaw A
 
 *   **Some sent Anthropic’s magic string*
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-happened-after-2-000-people-tried-to-hack-my-ai-assista.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-happened-after-2-000-people-tried-to-hack-my-ai-assista.md)
 
 ---
 

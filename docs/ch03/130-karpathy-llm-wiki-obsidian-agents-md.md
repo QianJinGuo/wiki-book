@@ -32,7 +32,7 @@ LLM 把记账接过去了，wiki 才能持续被维护。Karpathy 关联到 Vann
 
 这与 [LLM Wiki 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-architecture.md) 实体互补——该实体侧重概念框架，本文侧重具体实现。也与本 wiki 自身的运作模式一致（见 [Hermes Skills LLM Wiki](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skills-llm-wiki-self-improving-knowledge-system.md)）。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-llm-wiki-obsidian-tutorial-shuge-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-llm-wiki-obsidian-tutorial-shuge-2026.md)
 
 ---
 

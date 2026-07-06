@@ -140,7 +140,7 @@ SpreadsheetBench 从 77.5 暴跌到 55.0（-22.5 分）的实验揭示：跨 epo
 - [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
 - [Qoder Skill Ui Agent Human Collaboration](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skill-ui-agent-human-collaboration.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillopt-microsoft-train-skill-like-neural-network.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillopt-microsoft-train-skill-like-neural-network.md)
 
 ---
 

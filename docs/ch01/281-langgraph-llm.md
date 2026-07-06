@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 19.9KB | `entities/langgraph-state-machine-under-the-hood.md`
 
-[Langgraph State Machine Under The Hood](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langgraph-state-machine-under-the-hood.md)
+[Langgraph State Machine Under The Hood](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langgraph-state-machine-under-the-hood.md)
 
 ## 01 LangChain 的老问题
 LangChain 早期架构是**线性 Chain**：

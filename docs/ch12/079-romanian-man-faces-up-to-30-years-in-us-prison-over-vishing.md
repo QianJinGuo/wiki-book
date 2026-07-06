@@ -91,7 +91,7 @@ Sandu 在犯罪链条中担任 money mule——负责将数字盗窃转化为物
 - [Ath Agent Trust Handshake Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/ath-agent-trust-handshake-protocol.md)
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/romanian-man-30-years-us-prison-vishing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/romanian-man-30-years-us-prison-vishing.md)
 
 ---
 

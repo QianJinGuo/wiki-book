@@ -52,7 +52,7 @@ C = 1.81014 3600 24  25M_opt = 0.1715C0.5243 # 10701818976D_opt = 5.8316C0.4757 
 
 模型
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从零训练steel-llm模型设计.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从零训练steel-llm模型设计.md)
 
 ---
 

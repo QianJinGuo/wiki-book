@@ -13,7 +13,7 @@
 - [Gpt 5 Is Here And Openai Has Some Tips](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-5-is-here-and-openai-has-some-tips.md)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](https://github.com/QianJinGuo/wiki/blob/main/entities/useful-memories-become-faulty-when-continuously-updated-by-llms.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
 
 ## 深度分析
 
@@ -49,7 +49,7 @@ GPT-Realtime-2 引入了推理强度5档调节机制（minimal、low、medium、
 
 5. **人工同传的价值向上迁移**：基础、高频、标准化的翻译需求会被 API 大规模吞掉，但文化语境、创意表达、法律精确性等需要深度理解的内容仍需要人类专家 。同传从业者应向这些高附加值场景迁移，而不是与 API 竞争标准化翻译市场。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
 
 ---
 

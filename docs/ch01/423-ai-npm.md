@@ -154,7 +154,7 @@ AI 通过 curl 直接读取 npm cdn 资源（不依赖具体编码工具）
 - [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](https://github.com/QianJinGuo/wiki/blob/main/entities/柚漫剧-ai全流程提效拆解-从单点提效到工程融合.md)
 - [Boris Cherny Interview 2026 Ide To Agent Console](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-interview-2026-ide-to-agent-console.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tmall-ai-coding-practice-team-knowledge-base-npm.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tmall-ai-coding-practice-team-knowledge-base-npm.md)
 
 - `AI Coding 入门指南`
 

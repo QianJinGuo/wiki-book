@@ -9,7 +9,7 @@
 
 **Embabel = Rod Johnson 2024 回归一线创业做的企业 AI Agent 框架**。核心用 **GOAP（Goal-Oriented-Action-Planning）寻路算法**（来自游戏 NPC）做**确定性规划**，让 LLM 嵌入可控、可解释、可审计的业务流程。Apache 2.0，0.3.5（4-6 周到 1.0），核心 Kotlin / 示例 Java。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/embabel-rod-johnson-framework-era-interview.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/embabel-rod-johnson-framework-era-interview.md)
 
 ## 核心命题
 **企业 AI 应用需要规划** — 不是"扔 30 工具给模型循环跑"。业务流程要一致性、可预测性、可解释性。**LLM 只是动作步骤里的一次 HTTP 调用**，不应该是整个控制流。

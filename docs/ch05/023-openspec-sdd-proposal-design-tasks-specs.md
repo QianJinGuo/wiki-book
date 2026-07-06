@@ -30,7 +30,7 @@
 - [24H Worker Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/24h-worker-agent.md)
 - [十年老技术开发的 Ai Agent 探索之路 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/十年老技术开发的-ai-agent-探索之路-v2.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openspec-spec-driven-development-trae-solo.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openspec-spec-driven-development-trae-solo.md)
 
 ## 目录结构 — 两大核心模块
 

@@ -18,7 +18,7 @@
 - [The 1 Ai Agent For Financial Services Fin](https://github.com/QianJinGuo/wiki/blob/main/entities/the-1-ai-agent-for-financial-services-fin.md)
 - [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki/blob/main/entities/rag技术框架的演进方向.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/restive-ventures-announces-45m-fund-iii-to-back-ai-native-financial-services-tar.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/restive-ventures-announces-45m-fund-iii-to-back-ai-native-financial-services-tar.md)
 
 ## 深度分析
 

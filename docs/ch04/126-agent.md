@@ -52,7 +52,7 @@
 - [Harness Engineering Alibaba Java Case Study](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-alibaba-java-case-study.md)
 - [Skill Formal Theory Survey 10Papers](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-formal-theory-survey-10papers.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代的生产力悖论当协作本身成为最大的瓶颈.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-时代的生产力悖论当协作本身成为最大的瓶颈.md)
 三、Agent 在交付和稳定性链路中的缺席
 传统协作模式的核心是"人与人的沟通"。无论是站会、需求评审、技术方案讨论还是代码审查，本质上都是人类之间的信息交换。这种协作方式的成本随着团队规模呈几何级数增长。在AI时代，这种协作模式暴露出了根本性的局限：
 

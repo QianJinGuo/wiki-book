@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/cli-mcp-skill-architecture-decision-vibecoder.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cli-mcp-skill-architecture-decision-vibecoder.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cli-mcp-skill-architecture-decision-vibecoder.md)
 
 # CLI、MCP 和 CLI+Skill：企业Agent架构选择指南
 

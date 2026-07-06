@@ -115,7 +115,7 @@ Trueman 坦诚地承认，他自己也不确定这是真正的结构性问题还
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Haptics Design — Microsoft](https://github.com/QianJinGuo/wiki/blob/main/entities/haptics-design-implementation-microsoft-windows11.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-figma-made-visible.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-figma-made-visible.md)
 
 ---
 

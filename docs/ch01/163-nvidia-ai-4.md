@@ -73,7 +73,7 @@ Associate 初级
 本文的核心技术价值在于：
 - 想从事 AI 基础架构、AI 工厂或 AI 网络相关工作，需要具备哪些核心技能？从 AI 数据中心设计、GPU 集群部署到高性能网络和 AI 运维管理，相关岗位对专业技能的要求不断提升。NVIDIA ...
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-认证-ai-基础架构与网络-4-大认证报考指南.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidia-认证-ai-基础架构与网络-4-大认证报考指南.md)
 
 ---
 

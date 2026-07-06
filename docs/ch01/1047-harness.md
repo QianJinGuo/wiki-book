@@ -85,7 +85,7 @@
 TypeScript 源文件
 ~1,332 个 .ts + ~552 个 .tsx = 1,884 个
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/技术教科书顶级开发团队设计的harness工程项目源码什么样.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/技术教科书顶级开发团队设计的harness工程项目源码什么样.md)
 
 ---
 

@@ -10,7 +10,7 @@
 
 - [claude skill 质检工具 skill craft](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-skill-quality-tool-skill-craft.md)
 - [karpathy × boris 访谈：software 3.0 时代编程完整地图](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-boris-software3-llm-era-programming-2026.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-team-10-tips-boris-data派THU.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-team-10-tips-boris-data派THU.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 深度分析

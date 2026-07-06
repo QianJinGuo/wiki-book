@@ -17,7 +17,7 @@
 - [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skillclaw-hyman-nightly-evolution-alibaba.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw-hyman-nightly-evolution-alibaba.md)
 
 ## 深度分析
 

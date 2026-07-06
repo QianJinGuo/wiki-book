@@ -157,7 +157,7 @@ Harness Engineering 的核心悖论在实践中经常被误解：增加约束不
 
 ## Related
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-reliability-engineering-skillify-continuous-improvement.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-reliability-engineering-skillify-continuous-improvement.md)
 
 - [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 

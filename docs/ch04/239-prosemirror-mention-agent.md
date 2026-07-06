@@ -9,7 +9,7 @@
 
 这是一份难得的**"踩坑 → 选型 → 工程化落地"完整复盘**：知识库问答场景下，如何用 ProseMirror 实现稳定可用的 @文档 mention 能力。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prosemirror-knowledge-base-mention-vivo.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/prosemirror-knowledge-base-mention-vivo.md)
 
 ## 核心命题
 **@文档 表面是"输入 @ 后选一个文档"，实则是编辑器稳定性的工程问题**。当交互从"插得进去"变成"一直稳定"，抽象层级必须从裸 `contenteditable` 提升到 ProseMirror 这类不可变文档模型。

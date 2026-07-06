@@ -84,7 +84,7 @@ Anthropic 的策略是最"轻量"的——不依赖独占的科学模型或数�
 - [NVIDIA BioNeMo Agent Toolkit](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-bionemo-agent-toolkit-science-discovery.md)
 - [Claude Code 系统工程指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-top-1-guide-system-engineering.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic推出claude-science科研界的claude-code来了附实测.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic推出claude-science科研界的claude-code来了附实测.md)
 
 ---
 

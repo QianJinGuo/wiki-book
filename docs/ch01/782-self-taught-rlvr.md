@@ -53,7 +53,7 @@
 - [Baidu Wenxin Post Training Evolution](https://github.com/QianJinGuo/wiki/blob/main/entities/baidu-wenxin-post-training-evolution.md)
 - [Vllm V0 To V1 Correctness Before Corrections](https://github.com/QianJinGuo/wiki/blob/main/entities/vllm-v0-to-v1-correctness-before-corrections.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/self-taught-rlvr-jd-cii-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/self-taught-rlvr-jd-cii-2026.md)
 
 ---
 

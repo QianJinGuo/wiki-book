@@ -169,7 +169,7 @@ Top100 安装占比
 
 这组数据给出的结论很直接：开发/编程仍然是主航道。不是“供给多所以卷死了”，而是“供给大，安装也强”。办公/文档、搜索/研究、图像/音视频已
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/33万个skills为什么大多数都死在安装这一步.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/33万个skills为什么大多数都死在安装这一步.md)
 
 ---
 

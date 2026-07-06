@@ -19,7 +19,7 @@
 - [Sensnova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md)
 - [读完这篇你就搞懂 Deepseek V4 了 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/读完这篇你就搞懂-deepseek-v4-了-v2.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www.blocksandfiles.com-5241795.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.blocksandfiles.com-5241795.md)
 
 ## 深度分析
 **Redis 的战略转型：从内存数据库到 AI Agent 上下文引擎**：Redis 最初为缓存场景设计，如今明确转型为 AI 基础设施层。Iris 的定位不是数据库，而是"Agent 平台"——提供对公司数据的访问和长期记忆能力。这种转变反映了 AI 时代数据层的重新分工：传统数据库负责持久化和事务，Redis/Iris 负责为 Agent 提供实时上下文。
@@ -31,7 +31,7 @@
 1. **评估数据平台时加入 Agent 维度**：传统数据库选型标准（事务、一致性、SQL 支持）已不充分。需新增"Agent 可访问性"评估——数据是否能通过 MCP/CLI 工具暴露给 Agent？实时数据同步延迟是否在 Agent 可接受范围？
 2. **MCP 协议正在成为数据- Agent 接口的事实标准**：Iris 通过 MCP 暴露工具接口给 Agent，这是一个重要信号。如果你的数据平台尚未支持 MCP，需要尽快评估集成路径。
 3. **关注企业 AI 规模化的数据层瓶颈**：当 Agent 密度从现在的几十/几百增长到 Trollope 预言的百万级时，数据层的扩展性将是瓶颈。先行的企业应开始评估数据架构的 Agent-Friendly 改造路径。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www.blocksandfiles.com-5241795.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.blocksandfiles.com-5241795.md)
 
 ---
 

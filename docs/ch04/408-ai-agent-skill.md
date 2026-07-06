@@ -74,7 +74,7 @@ HARD-GATE 语法是对 Anthropic "渐进披露"理念的工程化加强。Anthro
 6. **自由度由任务脆弱度决定，不由作者自信决定**：脆弱操作（旋转 PDF = 低自由度）和判断操作（写方案 = 高自由度）分开处理
 
 ## 原始存档
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-system-design-taobao-technology-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-system-design-taobao-technology-2026.md)
 
 ---
 

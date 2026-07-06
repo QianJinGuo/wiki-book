@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/cvpr-xiaomi-svor-video-masking.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cvpr-xiaomi-svor-video-masking.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cvpr-xiaomi-svor-video-masking.md)
 
 ## Summary
 小米SVOR视频消除技术，CVPR冠军代码开源。
@@ -20,7 +20,7 @@
 - [腾讯研究院Ai速递 20260430](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯研究院ai速递-20260430.md)
 - [Gbrain Garry Tan Yanfa Zhili](https://github.com/QianJinGuo/wiki/blob/main/entities/gbrain-garry-tan-yanfa-zhili.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cvpr-xiaomi-svor-video-masking.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cvpr-xiaomi-svor-video-masking.md)
 
 - [Joyai Echo Long Video Jd Qbitai](https://github.com/QianJinGuo/wiki/blob/main/entities/joyai-echo-long-video-jd-qbitai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)

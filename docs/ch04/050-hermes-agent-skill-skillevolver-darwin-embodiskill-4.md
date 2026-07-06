@@ -12,7 +12,7 @@
 
  作者（**KK大叔**）用 Hermes Agent 让 **Darwin-skill** × **SkillEvolver** 互相优化，4 轮迭代后**意外验证了清华 SkillEvolver 论文核心结论**。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-skill-crossover-optimization-skillevolver-darwin.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-skill-crossover-optimization-skillevolver-darwin.md)
 
 ## 三个主角
 

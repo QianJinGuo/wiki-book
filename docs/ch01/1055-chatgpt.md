@@ -6,7 +6,7 @@
 
 # ChatGPT记忆大升级，十亿人免费用！
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/chatgpt-dreaming-v3-long-term-memory-xinzhiyuan.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/chatgpt-dreaming-v3-long-term-memory-xinzhiyuan.md)
 
 ## 深度分析
 

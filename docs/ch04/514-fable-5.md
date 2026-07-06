@@ -50,7 +50,7 @@ Thariq 把和 Fable 一起工作的过程，描述成一个在实施之前、之
 7. **说明文档与汇报材料（Docs & Briefs）** — 将原型、规格实施笔记打包，方便评审者快速理解，展示未知数已被考虑。
 8. **测验（Quiz）** — 让 Claude 出一份关于改动的测验，只有完全答对才合并代码，确保自己真正理解发生了什么。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fable-5-field-guide-unknowns-ai-coding.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fable-5-field-guide-unknowns-ai-coding.md)
 
 ---
 

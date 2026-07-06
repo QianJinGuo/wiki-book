@@ -22,7 +22,7 @@
 - [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-team-knowledge-engine-compiled-knowledge.md)
 - [天猫新品团队ai编码实战指南（下）](https://github.com/QianJinGuo/wiki/blob/main/entities/天猫新品团队ai编码实战指南下-v2.md)
 - [我把 claude design 做成了 skill，人人都能成为顶级网站设计师](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-claude-design-做成了-skill人人都能成为顶级网站设计师.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-friendly-architecture-design-taobao.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-friendly-architecture-design-taobao.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析

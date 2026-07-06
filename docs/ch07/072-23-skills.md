@@ -28,7 +28,7 @@ Read (6) → Think (5) → Write (5) → Publish (5)
 - ljg-roundtable：3-5 位真实人物逐轮交锋 + ASCII 结构图
 - ljg-plain / ljg-writes / ljg-card 等覆盖写作、可视化、发布输出
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ljg-skills-deep-dive-datastudio-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ljg-skills-deep-dive-datastudio-2026.md)
 
 ---
 

@@ -12,7 +12,7 @@ Niche but well-documented analysis of Cloudflare Turnstile WebGL fingerprinting 
 
 ## 深入分析
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md)
 
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=8, stars=4。
 
@@ -85,7 +85,7 @@ Turnstile 的运作模式表明，互联网生态已经形成了对指纹追踪�
 
 ## 相关主题
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md)
 
 ---
 

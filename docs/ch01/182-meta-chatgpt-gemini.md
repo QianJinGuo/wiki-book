@@ -104,7 +104,7 @@ WIRED 审阅了其中 3748 条提示词，随便挑几条感受一下。
 
 ##### **【新智元导读】** Meta 再出丑闻：让旗下几百名外包员工，假扮未成年人，大规模引导 ChatGPT、Gemini、C...
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/投毒meta竟雇外包大规模给chatgpt和gemini下套.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/投毒meta竟雇外包大规模给chatgpt和gemini下套.md)
 
 ---
 

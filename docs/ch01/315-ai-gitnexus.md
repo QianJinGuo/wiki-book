@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.6KB | `entities/gitnexus-ai-zhi-neng-ti-kai-fa-dai-ma-zhi-shi-ku.md`
 
-[Gitnexus Ai Zhi Neng Ti Kai Fa Dai Ma Zhi Shi Ku](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gitnexus-ai-zhi-neng-ti-kai-fa-dai-ma-zhi-shi-ku.md)
+[Gitnexus Ai Zhi Neng Ti Kai Fa Dai Ma Zhi Shi Ku](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gitnexus-ai-zhi-neng-ti-kai-fa-dai-ma-zhi-shi-ku.md)
 
 # 打造 AI 智能体专属的代码知识库：GitNexus 完整上手攻略
 AI 编码工具发展到今天，已经不只是帮你补全几行代码了。像 Claude Code、Cursor、 Codex 这类工具，正在慢慢变成真正能参与开发流程的「搭档」。但在真实项目里，一个问题会越来越明显：  ** AI 不是不会写代码，而是经常看不全代码。  **

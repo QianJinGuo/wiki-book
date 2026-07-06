@@ -92,7 +92,7 @@ Cursor Memory / Claude Memory
 全量记忆压缩（把对话摘要存下来）
 信号驱动提
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/知识基座让ai-越用越懂业务的团队经验实践天猫ai-coding实践系列.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/知识基座让ai-越用越懂业务的团队经验实践天猫ai-coding实践系列.md)
 
 ---
 

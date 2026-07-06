@@ -39,7 +39,7 @@
 - [Agentium Agent 框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agentium-agent-framework.md)
 - [Snowflake Agentic Enterprise Summit](https://github.com/QianJinGuo/wiki/blob/main/entities/snowflake-agentic-enterprise-summit-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-to-build-agents-where-data-already-lives.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-build-agents-where-data-already-lives.md)
 
 ---
 

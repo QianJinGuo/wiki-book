@@ -50,7 +50,7 @@ Economic Index Survey 揭示了用户预期与使用方式的系统性关联：
 2. **产品形态决定使用模式**：Chat vs API vs Cowork 产出类型截然不同，不能一概而论
 3. **自动化与乐观正相关**：最深度使用 AI 的用户最乐观，而非最焦虑——这对 AI 经济影响的悲观叙事构成反证
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-economic-index-cadences-june-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-economic-index-cadences-june-2026.md)
 
 ## 相关主题
 

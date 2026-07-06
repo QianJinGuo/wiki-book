@@ -22,7 +22,7 @@ FastAPI生产级认证+限流实战；零停机部署方案；一套代码覆盖
 ## 相关实体
 
 - [fastapi上线实战：认证、限流、零停机，一套代码搞定](https://github.com/QianJinGuo/wiki/blob/main/entities/fastapi上线实战认证限流零停机一套代码搞定.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fastapi-auth-rate-limit-zero-downtime.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi-auth-rate-limit-zero-downtime.md)
 
 ## 元数据
 - **来源**: WeChat（data-flow）

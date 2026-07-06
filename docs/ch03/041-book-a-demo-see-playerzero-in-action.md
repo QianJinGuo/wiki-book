@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 5.1KB | `entities/playerzero-request-demo.md`
 
-> -> [Book a Demo | See PlayerZero in Action](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/playerzero-request-demo.md)
+> -> [Book a Demo | See PlayerZero in Action](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/playerzero-request-demo.md)
 
 ## 深度分析
 **1. Cookie声明页暴露的追踪生态规模**

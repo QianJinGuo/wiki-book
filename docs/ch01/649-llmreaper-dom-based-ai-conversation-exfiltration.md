@@ -61,7 +61,7 @@ I have used various selector queries to match user prompts and LLM responses but
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Amazon Bedrock Api Security Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-api-security-guide.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llmreaper-dom-based-ai-exfiltration.md)- [llmreaper - dom based ai conversation exfiltration via brows](https://github.com/QianJinGuo/wiki/blob/main/entities/blog-ai-chat-llmreaper.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llmreaper-dom-based-ai-exfiltration.md)- [llmreaper - dom based ai conversation exfiltration via brows](https://github.com/QianJinGuo/wiki/blob/main/entities/blog-ai-chat-llmreaper.md)
 
 ---
 

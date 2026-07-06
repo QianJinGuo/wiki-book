@@ -51,7 +51,7 @@ AgentCore Identity的Token Vault存储access token和refresh token（当OAuth pr
 当出现ALB OIDC认证失败（561错误）时，首先检查OIDC scope中是否误包含了Application ID——Entra ID的UserInfo端点兼容性是常见原因。
 当token获取流程卡住时，确认Session Binding URL可公开访问（不能被ALB authentication规则拦截），且`session_id`参数正确传递。
 ---
-*Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-agentcore-identity-security.md)*
+*Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-bedrock-agentcore-identity-security.md)*
 
 ## 相关实体
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-quality-optimization-flywheel.md)

@@ -11,7 +11,7 @@
 - [vietnam to develop domestic cloud](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnamtodevelopdomesticcloud.md)
 - [akamai acquires israeli ai browser security startup layerx f](https://github.com/QianJinGuo/wiki/blob/main/entities/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/why-use-app-level-auth-when-every-database-has-auth-splunk-e.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/why-use-app-level-auth-when-every-database-has-auth-splunk-e.md)
 
 ## 核心要点
 

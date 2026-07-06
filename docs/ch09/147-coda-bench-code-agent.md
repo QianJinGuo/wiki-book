@@ -30,7 +30,7 @@ CoDA-Bench 将 Code Agent 的能力拆分为两个正交维度：
 - `QoderWork 诊断` — 生产环境中 Agent 在复杂目录结构下的行为问题
 - `QoderWork Skills 实践` — 数据科学场景下 Agent 的工作流封装
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/raw-coda-bench-code-agent-data-benchmark-renmin-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/raw-coda-bench-code-agent-data-benchmark-renmin-2026.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # 面向 Skills 编程：大淘宝企业购 5 阶段演进与 Anthropic Agent Skills 标准实战
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skills-driven-programming-taobao-enterprise-5-phase-evolution-2026-06-17.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skills-driven-programming-taobao-enterprise-5-phase-evolution-2026-06-17.md)
 
 ## 概述
 

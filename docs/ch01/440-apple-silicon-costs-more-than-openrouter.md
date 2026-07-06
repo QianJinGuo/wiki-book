@@ -145,7 +145,7 @@ ds4.c 在 M3 Ultra 128GB 配置下达到 **468 token/s 预填充速度** 和 **2
 
 -  — KV Cache、PD 分离、量化等核心优化技术的系统性梳理
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/apple-silicon-costs-more-than-openrouter.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/apple-silicon-costs-more-than-openrouter.md)
 
 ---
 

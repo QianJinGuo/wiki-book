@@ -83,7 +83,7 @@ Agent 应能够恰当的获取需要的上下文，不多不少。
 
 读懂别人的代码，相当于跟着别人的思路在我们脑子里再写一遍。很多时候开发者耗时许久才思考出的一个巧妙解法（就几行莫名其妙的代码），作者本人不仔细讲一遍的话，他人几乎理解不了。没有背景对齐，review 只能
 
--> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering长程自动化-ai-coding-skills-开发实践.md)
+-> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering长程自动化-ai-coding-skills-开发实践.md)
 
 ---
 

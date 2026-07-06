@@ -94,7 +94,7 @@
 - [Skill Development Guide Aliyun 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-development-guide-aliyun-2026.md)
 - [Strands Agents Cloud Cost Optimizer](https://github.com/QianJinGuo/wiki/blob/main/entities/strands-agents-cloud-cost-optimizer.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
 - [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](https://github.com/QianJinGuo/wiki/blob/main/entities/agentrun-multi-agent-a2a-alibaba-cloud.md)
 
 ---

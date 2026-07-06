@@ -78,7 +78,7 @@ Karpathy 课程的传播数据（640万播放、HN 讨论热度）是 LLM 行业
 - [Karpathy Vibe Coding Agentic Engineering V3](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v3.md)
 - [Llm Wiki Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-architecture.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-llm-full-stack-course-2026井底之硅.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-llm-full-stack-course-2026井底之硅.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 课程链接

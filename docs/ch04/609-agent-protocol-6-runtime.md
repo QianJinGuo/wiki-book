@@ -80,7 +80,7 @@ Agent Runtime 暴露给外部世界的契约回答的是：
 - [Agent 架构关键变化：Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-architecture-harness-new-backend.md) — Harness 作为 Runtime 演进方向
 - [MCP · Skill · Agent · LLM · Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md) — 高层架构关系图
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-protocol-unchanged-across-frameworks-aliyun-2026-07-02.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-protocol-unchanged-across-frameworks-aliyun-2026-07-02.md)
 
 ---
 

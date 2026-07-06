@@ -116,7 +116,7 @@ GitHub: `aws-samples/sample-agentic-genai-agentcore/aws-genai-campaign-review-st
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](https://github.com/QianJinGuo/wiki/blob/main/entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/strands-agents-high-performance-genai-systems.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/strands-agents-high-performance-genai-systems.md)
 
 - [aws bedrock agentcore 多账户对话式运维助手：基于 strands agents + devops](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-bedrock-agentcore-与-aws-devops-agent-打造对话式多账户运维助手.md)
 

@@ -388,7 +388,7 @@ AI编码过程中，有个比较重要的关注点是在保证迭代成功率的
 - [Pi Openclaw Coding Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-openclaw-coding-harness.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-coding-guide-tmall-deep-dive.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-coding-guide-tmall-deep-dive.md)
 
 ---
 

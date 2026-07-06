@@ -6,7 +6,7 @@
 
 # GPT-5: It Just Does Stuff
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-5-it-just-does-stuff.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-5-it-just-does-stuff.md)
 
 > 来源：One Useful Thing (Ethan Mollick)，2025-08-07。这是一篇 GPT-5 早期上手评测，但比普通测评走得更远 — Mollick 把 GPT-5 的核心变化总结成一句话：**「GPT-5 just does stuff, often extraordinary stuff, sometimes weird stuff, sometimes very AI stuff, on its own」**。这背后真正发生的不是「模型更聪明」，而是模型选择机制、proactive 程度、agentic 长链路执行三项同时跃迁 — 改变了人和 AI 协作时的负担结构。
 

@@ -10,7 +10,7 @@
 - 推荐布局：受控场景单 CP，通用 agentic 场景三 CP
 - Claude Thinking 与 cache checkpoint 的交互需要注意 TTL 和成本权衡
 - 代码示例提供三 CP 稳健布局的工程实践
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-bedrock-claude-prompt-cache-strategy.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-bedrock-claude-prompt-cache-strategy.md)
 
 ## 深度分析
 ### 20-block 回看限制的几何含义

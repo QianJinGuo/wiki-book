@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [hermes新顶流agent skills闭环系统深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system-deep-dive.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-skills-source-code-analysis-shuge.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-skills-source-code-analysis-shuge.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析

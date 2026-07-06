@@ -54,7 +54,7 @@ Agent 时代的“不可能三角”：
 
 要理解这次自我兑现为什么重要
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从-hy3-preview-看-ai-下半场单位智能时代的一次工程答卷.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从-hy3-preview-看-ai-下半场单位智能时代的一次工程答卷.md)
 
 ---
 

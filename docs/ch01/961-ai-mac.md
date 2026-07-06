@@ -46,7 +46,7 @@ Axiom Math 表示，Axplorer 还在另外两个图论大问题上取得了与已
 
 "如果你想做的事是基于已有成果的衍生，那大语言模型非常擅长，"Charton 说，"这没什么好惊讶的——大语言模型是用所有已有数据训练出来的。但也可以说，大语言模型很保守，它们倾向于复用已有的东西。"
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/超级计算机上的数学-ai现在能在你-mac-上跑了.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/超级计算机上的数学-ai现在能在你-mac-上跑了.md)
 
 ---
 

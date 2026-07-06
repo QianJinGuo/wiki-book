@@ -14,7 +14,7 @@
 ## 相关实体
 
 - [self-harness：上海ai lab 提出的 agent 自我改进 harness 范式](https://github.com/QianJinGuo/wiki/blob/main/entities/self-harness-shanghai-ai-lab-agent-improves-harness.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
 → 系列：超级应用的 AI 原生研发模式探索（第 3 期）
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
@@ -353,7 +353,7 @@ Coding Agent 干活
 - [Microsoft Build 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-build-2026-mai-models-scout-agent.md) —— 全栈 AI
 - [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) —— 工作集视角
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
 
 ---
 

@@ -18,7 +18,7 @@
 - [Nginx Rift Achieving Nginx Remote Code Execution V](https://github.com/QianJinGuo/wiki/blob/main/entities/nginx-rift-achieving-nginx-remote-code-execution-v.md)
 - [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/llmreaper-dom-based-ai-conversation-exfiltration-via-browser.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cogalpha-acl2026-alpha-mining.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cogalpha-acl2026-alpha-mining.md)
 
 ## 深度分析
 

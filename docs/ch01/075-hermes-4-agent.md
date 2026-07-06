@@ -14,7 +14,7 @@
 - **评分**: 42
 
 ## 原始内容
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/我给hermes配了4个agent真正有用的是这些事.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/我给hermes配了4个agent真正有用的是这些事.md)
 
 ## 深度分析
 **从"不知道拿它做什么"到"真正有用"的转变方法：先记录活动，再识别模式。** 作者自述在 OpenClaw 最热的时候也装了，但盯了一小时不知道用来做什么就放弃了。真正开始用起来是因为作者开始记录自己一天/一周的活动，然后问自己两个问题："哪些事花了很多时间？"和"哪些事必须做但对我的工作流价值不高？"。这个方法的核心洞察是：AI Agent 的价值不在于"它能做什么"，而在于"你重复做什么"。不是技术导向发现场景，而是需求导向匹配技术。

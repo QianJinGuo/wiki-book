@@ -74,7 +74,7 @@ Databricks 的实践为大规模 AI 设施运维提供了几个重要参考：(1
 
 ## 来源
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-we-keep-gpus-reliable-across-databricks-ai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-we-keep-gpus-reliable-across-databricks-ai.md)
 
 ---
 

@@ -14,7 +14,7 @@
 - [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-hackathon-winners-2026.md)
 - [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md)
 
 ## 深度分析
 ### RAG vs Agentic Search的本质差异

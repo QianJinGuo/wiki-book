@@ -67,7 +67,7 @@ Nielsen 的观察触及了当代 design systems 运动的核心悖论。Design s
 - [文档组织: 为人类和 AI](https://github.com/QianJinGuo/wiki/blob/main/entities/documentation-organisation-humans-ai.md) — 系统化结构 vs 知识发现
 - Design Systems — 设计系统的理论与实践
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/consistency-excellence-jim-nielsen.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/consistency-excellence-jim-nielsen.md)
 
 ---
 

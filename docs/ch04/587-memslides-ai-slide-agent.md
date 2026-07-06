@@ -14,7 +14,7 @@ MemSlides 是清华和上交联合提出的一种层级记忆驱动的 AI Slide 
 
 该工作表明：在 Agent 记忆管理领域，层级化设计（Profile + Working + Episodic）正在成为处理复杂创作任务的标准范式，与 [Agent 记忆力工程税](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-engineering-tax-aws-china-2026.md) 中讨论的工程化挑战相呼应。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/huggingface热榜第一清华上交推出memslides精准锁定ppt局部修改.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/huggingface热榜第一清华上交推出memslides精准锁定ppt局部修改.md)
 
 ---
 

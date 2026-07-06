@@ -54,7 +54,7 @@ Slack 是整个 Agent 的交互界面。用户通过slash command（`/prepaid Ap
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](https://github.com/QianJinGuo/wiki/blob/main/entities/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-ai-agents-in-accounting.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-ai-agents-in-accounting.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # Reading today's open-closed performance gap
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/reading-todays-open-closed-performance-gap.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/reading-todays-open-closed-performance-gap.md)
 
 > **Core insight**: 将开放-闭源性能差距视为单一"距离"数字掩盖了关键动态：benchmark 每 12-18 个月焦点转移、RLVR 训练 regimes 快速演化、以及评估复杂 LLM 工作流本身的挑战性。中国实验室在蒸馏杠杆上领先，但 RL 环境私有化趋势正在关闭这一路径。
 
@@ -82,7 +82,7 @@ RLVR 的结果更可复现、更难刷榜，是评估模型真实能力的更好
 - [Mythos_Offensive_Security_Xbow_Evaluatio](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 
 ## 相关引用
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/reading-todays-open-closed-performance-gap.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/reading-todays-open-closed-performance-gap.md)
 
 ---
 

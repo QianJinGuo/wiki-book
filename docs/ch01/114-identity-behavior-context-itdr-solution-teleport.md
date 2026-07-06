@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐ | 4.7KB | `entities/identity-behavior-context-itdr-solution-teleport.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/identity-behavior-context-itdr-solution-teleport.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/identity-behavior-context-itdr-solution-teleport.md)
 
 ## 核心要点
 - 来源：fandf.co
 - 评分：v=7, c=8, product=56
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/identity-behavior-context-itdr-solution-teleport.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/identity-behavior-context-itdr-solution-teleport.md)
 
 ## 相关实体
 - [Identity Behavior & Context: ITDR Solution](https://github.com/QianJinGuo/wiki/blob/main/entities/identity-behavior-context-itdr-solution.md)

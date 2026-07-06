@@ -102,7 +102,7 @@ Brain2Qwerty
 
 ## 原文
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-06-30-登上Nature子刊-Meta脑机接口重大阶段性进展-超高实时解码准确率-机器之心.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-06-30-登上Nature子刊-Meta脑机接口重大阶段性进展-超高实时解码准确率-机器之心.md)
 
 ---
 

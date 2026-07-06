@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [读完这篇，你就搞懂 deepseek v4 了](https://github.com/QianJinGuo/wiki/blob/main/entities/读完这篇你就搞懂-deepseek-v4-了.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gepa-optimize-anything-universal-text-optimization.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gepa-optimize-anything-universal-text-optimization.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析

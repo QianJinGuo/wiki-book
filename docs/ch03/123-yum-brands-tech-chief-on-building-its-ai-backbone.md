@@ -28,7 +28,7 @@
 ## 相关实体
 - [819775](https://github.com/QianJinGuo/wiki/blob/main/entities/819775.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/819775.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/819775.md)
 
 ## 实践启示
 **对餐饮/零售行业的技术负责人：** Yum Brands 的"common data model"是最大的工程挑战，也是最大的竞争壁垒。如果你的公司有多个历史系统（POS、库存、CRM、供应链），优先解决数据统一问题，而不是急着上 AI。数据质量不过关，AI 再强也是垃圾进垃圾出。

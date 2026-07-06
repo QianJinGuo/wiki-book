@@ -17,7 +17,7 @@
 - [Ai Agents Inside Perimeter Hackernews](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
 - [Tsinghua Agent Security Fangcun](https://github.com/QianJinGuo/wiki/blob/main/entities/tsinghua-agent-security-fangcun.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/canvas-breach-disrupts-schools-colleges-nationwide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/canvas-breach-disrupts-schools-colleges-nationwide.md)
 
 ## 深度分析
 

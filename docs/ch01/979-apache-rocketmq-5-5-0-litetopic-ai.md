@@ -6,7 +6,7 @@
 
 # Apache RocketMQ 5.5.0 开源 LiteTopic：百万级 AI 会话专属通道
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rocketmq-5-5-0-litetopics-ai-agent-messaging.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rocketmq-5-5-0-litetopics-ai-agent-messaging.md)
 
 ## 深度分析
 

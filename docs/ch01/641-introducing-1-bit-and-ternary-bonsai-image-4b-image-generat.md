@@ -6,7 +6,7 @@
 
 # Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/news-bonsai-image-4b.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/news-bonsai-image-4b.md)
 
 ## 摘要
 

@@ -8,7 +8,7 @@
 
 ## 相关实体
 - [unexpected lessons from an ai-assisted prototyping experimen](https://github.com/QianJinGuo/wiki/blob/main/entities/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
 - [ai gpus probably live longer than three years](https://github.com/QianJinGuo/wiki/blob/main/entities/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
 - [ddosing software delivery pipelines](https://github.com/QianJinGuo/wiki/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
 

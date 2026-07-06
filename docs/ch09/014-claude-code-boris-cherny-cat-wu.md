@@ -229,7 +229,7 @@ Claude Code 用一年时间，从两个 Slack 点赞走到了一个 PM 在写代
 
 **组织影响**：Anthropic 增长团队已转向多招产品经理——每位工程师产出翻三倍，PM 与工程师配比从 1:8 变为 1:20。Boris Cherny 本人已八个月没手写过代码，有时管理数千甚至上万个 AI 智能体。他总结「当后台子智能体成为标配，写代码不再是工程师最重要的事情，决定干什么、判断对不对才是」。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-background-sub-agents-boris-cherny-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-background-sub-agents-boris-cherny-2026.md)
 
 ---
 

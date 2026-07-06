@@ -76,7 +76,7 @@ Figma 原生画布 Agent（2026 年 5 月 beta，Config 2026 全面开放）进�
 
 ## 参考来源
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/design-systems-agent-author-evolution-murphytrueman.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/design-systems-agent-author-evolution-murphytrueman.md)
 
 ---
 

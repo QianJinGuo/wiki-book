@@ -6,7 +6,7 @@
 
 # 美团 LongCat-2.0：万亿参数大模型
 
-> **Background**：本文基于美团技术团队公众号报道 [Meituan Longcat 2 0 Official Release Wechat 2026](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/meituan-longcat-2-0-official-release-wechat-2026.md) 整理。美团于 2026 年 6 月 30 日正式发布新一代万亿参数大模型 LongCat-2.0，并对外开源。
+> **Background**：本文基于美团技术团队公众号报道 [Meituan Longcat 2 0 Official Release Wechat 2026](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meituan-longcat-2-0-official-release-wechat-2026.md) 整理。美团于 2026 年 6 月 30 日正式发布新一代万亿参数大模型 LongCat-2.0，并对外开源。
 
 ## 概述
 
@@ -41,7 +41,7 @@ LongCat-2.0 正式对外开源，推动国产大模型生态发展。
 ## 相关链接
 
 - API 平台：https://longcat.chat/platform/product
-- 原文存档：→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/meituan-longcat-2-0-official-release-wechat-2026.md)
+- 原文存档：→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meituan-longcat-2-0-official-release-wechat-2026.md)
 
 ## 补充信息
 

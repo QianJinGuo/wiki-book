@@ -52,7 +52,7 @@ Reducto 的解析响应是为了工程灵活性而设计的。每个模块（Blo
 
 但这不是你希望放入智能体上下文窗口
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/context-不是免费的解析长文档-agent-的性能天花板与架构优化.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/context-不是免费的解析长文档-agent-的性能天花板与架构优化.md)
 
 ---
 

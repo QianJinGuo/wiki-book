@@ -103,7 +103,7 @@ Dispatch 不仅是一个产品功能，而是 Anthropic 界面战略的关键一
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
 - [incendium fuzzing ms rpc](https://github.com/QianJinGuo/wiki/blob/main/entities/incendium-fuzzing-ms-rpc.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-dispatch-and-the-power-of-interfaces.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-dispatch-and-the-power-of-interfaces.md)
 
 ---
 

@@ -16,7 +16,7 @@ updated: '2026-06-08'
 type: entity
 # What comes next with open models
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-comes-next-with-open-models.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-comes-next-with-open-models.md)
 
 # What comes next with open models
 

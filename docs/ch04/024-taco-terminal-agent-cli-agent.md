@@ -36,7 +36,7 @@ TACO 的核心是一个**轻量级自进化规则引擎**，而非 LLM 实时摘
 - 与 Context Engineering 中 "上下文不是越长越好" 的观察一致
 - 可与其他 CLi Agent 工具链（如 Claude Code、Codex Shell）形成互补
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/taco-cli-agent-context-compression-terminalbench.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/taco-cli-agent-context-compression-terminalbench.md)
 → [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
 → [CLI Agent 模式](https://github.com/QianJinGuo/wiki/blob/main/entities/cli-agent-patterns-mcp-shell-agents.md)
 

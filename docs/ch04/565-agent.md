@@ -44,7 +44,7 @@
 - [Co Existence Paradigm Shift Agentic Ai Mollick 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/co-existence-paradigm-shift-agentic-ai-mollick-2026.md)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/taobao-product-domain-agent-architecture.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/taobao-product-domain-agent-architecture.md)
 
 ---
 

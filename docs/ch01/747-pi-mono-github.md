@@ -17,7 +17,7 @@ pi-mono 是一个 npm workspace monorepo 的 TypeScript 项目，提供构建 AI
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](https://github.com/QianJinGuo/wiki/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md)
 - [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pi-mono-github.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pi-mono-github.md)
 
 - [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-engineering-team-1680-portrait-sebastian-cuadros.md)
 

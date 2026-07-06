@@ -37,7 +37,7 @@ Either way, local solutions become more and more attractive each day. One aspect
 
 (Then, if we keep in mind that Anthropic was recently [throttling their flagship model’s performa
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/using-local-coding-agents.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/using-local-coding-agents.md)
 
 ---
 

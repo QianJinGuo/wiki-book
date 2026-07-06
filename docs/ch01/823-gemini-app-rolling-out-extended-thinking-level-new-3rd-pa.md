@@ -42,7 +42,7 @@ Meanwhile, the Gemini app is preparing to add more integrations with third-party
 - [Restive Ventures Announces 45M Fund Iii To Back Ai Native Financial Services Tar](https://github.com/QianJinGuo/wiki/blob/main/entities/restive-ventures-announces-45m-fund-iii-to-back-ai-native-financial-services-tar.md)
 - [Alphaevolve Deepmind Discovery Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaevolve-deepmind-discovery-agent.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/9to5google-gemini-app-extended-thinking.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/9to5google-gemini-app-extended-thinking.md)
 
 ---
 

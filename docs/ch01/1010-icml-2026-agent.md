@@ -71,7 +71,7 @@ V_0：一种适用于任意策略在初始状态下的通用价值模型
 
 论文简介  ：
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/美团icml-2026入选论文精选两场直播聚焦agent与视频生成.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/美团icml-2026入选论文精选两场直播聚焦agent与视频生成.md)
 
 ---
 

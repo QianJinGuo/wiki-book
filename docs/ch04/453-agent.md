@@ -16,7 +16,7 @@
 - [Aws Bedrock Agentcore Identity Security](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-identity-security.md)
 - [Github Investigating Teampcp Claimed 17Cc77](https://github.com/QianJinGuo/wiki/blob/main/entities/github-investigating-teampcp-claimed-17cc77.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tsinghua-agent-security-fangcun.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tsinghua-agent-security-fangcun.md)
 
 ## 深度分析
 

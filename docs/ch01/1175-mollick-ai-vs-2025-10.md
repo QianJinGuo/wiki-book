@@ -66,7 +66,7 @@ Deep Research 让 AI 进行 10-15 分钟网络研究后给出报告，质量往�
 - [Guide Ai Agents Models Apps Harnesses Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/guide-ai-agents-models-apps-harnesses-mollick.md) — 同一作者的 2026-02 更新版（更聚焦 agentic era）
 - [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt5-just-does-stuff-mollick.md) — GPT-5 模型能力侧写（同一作者）
 - [Jagged Ai Frontier Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/jagged-ai-frontier-mollick.md) — Jagged Frontier / GDPval 实际工作评估（同一作者）
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/an-opinionated-guide-to-using-ai-right-now.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/an-opinionated-guide-to-using-ai-right-now.md)
 
 ## 深度分析
 

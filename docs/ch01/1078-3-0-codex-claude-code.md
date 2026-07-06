@@ -10,7 +10,7 @@
 
 - [你的ai代码越写越乱，他72小时合了14个pr——差距只在一个机制](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-complexity-ratchet-90percent-testing-20260513.md)
 - [karpathy × boris 访谈：software 3.0 时代编程完整地图](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-boris-software3-llm-era-programming-2026.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/coze-3-0-local-agent-codex-claude-code-project.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/coze-3-0-local-agent-codex-claude-code-project.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 深度分析

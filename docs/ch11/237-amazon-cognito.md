@@ -6,7 +6,7 @@
 
 # 使用 Amazon Cognito 多区域复制提高应用程序韧性
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/使用-amazon-cognito-多区域复制提高应用程序韧性.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/使用-amazon-cognito-多区域复制提高应用程序韧性.md)
 
 ## 深度分析
 

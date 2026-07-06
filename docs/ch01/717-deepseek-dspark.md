@@ -6,7 +6,7 @@
 
 # DeepSeek DSpark：推测性解码工程落地
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-dspark-speculative-decoding-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-dspark-speculative-decoding-2026.md)
 
 ## 摘要
 

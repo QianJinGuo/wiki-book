@@ -6,7 +6,7 @@
 
 # Google Antigravity agents get full context with GitLab Orbit
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gitlab-orbit-google-antigravity.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gitlab-orbit-google-antigravity.md)
 
 ## 摘要
 

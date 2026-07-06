@@ -49,7 +49,7 @@ Agentic Engineering 需要接口级约定：Agent 能看到哪些上下文、能
 ## 关联条目
 - [同主题入库（宝玉解读、不同角度）](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
 - [Harness Engineering — Agent 工程化落地的实践体系](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-framework.md)
-- [Vibe Coding 主题入库文章](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-vibe-coding-to-agentic-engineering.md)
+- [Vibe Coding 主题入库文章](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-vibe-coding-to-agentic-engineering.md)
 
 ## 深度分析
 **1. Software 3.0 的本质不是"Prompt 替代代码"，而是上下文成了可编程对象。** Karpathy 的核心命题是：LLM 将上下文窗口变成了新的"编程平面"——你不再只写代码文件，而是在 prompt、context、工具、测试和运行环境之间组织一段给模型执行的"上下文程序"。这意味着架构师的工作重心要从模块/接口设计往上挪一层，去思考 Agent 在怎样的上下文中能安全、可验证地工作。这个转变对习惯传统软件架构的工程师而言是认知上的根本挑战。 
@@ -72,7 +72,7 @@ Agentic Engineering 需要接口级约定：Agent 能看到哪些上下文、能
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v3.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-vibe-coding-to-agentic-engineering-backend.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
 
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](https://github.com/QianJinGuo/wiki/blob/main/entities/从vibe-coding到agentic-engineering重构后台开发全流程.md)
 

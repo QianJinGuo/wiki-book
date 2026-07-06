@@ -59,7 +59,7 @@ Inscribe 的 AWS 基础设施设计体现了生产级 Agentic AI 的几个关键
 - [Agentic AI 系统架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
 - [Bedrock Serverless Inference](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-inscribe-uses-amazon-bedrock-to-stop-document-fraud.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-inscribe-uses-amazon-bedrock-to-stop-document-fraud.md)
 
 ---
 

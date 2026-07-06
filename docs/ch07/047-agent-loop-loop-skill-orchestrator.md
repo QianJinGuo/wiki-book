@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/inngest-cto-agent-loop-architecture-three-layers-2026-06-27.md`
 
-> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/inngest-cto-agent-loop-architecture-three-layers-2026-06-27.md)
+> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/inngest-cto-agent-loop-architecture-three-layers-2026-06-27.md)
 
 ## 核心命题
 

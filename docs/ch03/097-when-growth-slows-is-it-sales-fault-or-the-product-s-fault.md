@@ -48,7 +48,7 @@ Lemkin 提供了系统的诊断框架来定位增长放缓的根本原因：
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](https://github.com/QianJinGuo/wiki/blob/main/entities/schmoozing-is-dead-agents-are-hitting-120-of-humans-and-growth-is-the-only-thing.md)
 - [Asana Agentic Work Management Platform Lettertwo](https://github.com/QianJinGuo/wiki/blob/main/entities/asana-agentic-work-management-platform-lettertwo.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 
 ## 关联阅读
 

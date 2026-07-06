@@ -126,7 +126,7 @@ R(K) = Success(T_E | K) - Success(T_E | ∅)
 - [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-agent脚手架如何具备自进化能力以hermes-agent为例.md)
 - [Deli Auto Research Skill Deepseek](https://github.com/QianJinGuo/wiki/blob/main/entities/deli-auto-research-skill-deepseek.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/world-knowledge-agent-self-evolution-tencent-hkustgz.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/world-knowledge-agent-self-evolution-tencent-hkustgz.md)
 
 ---
 

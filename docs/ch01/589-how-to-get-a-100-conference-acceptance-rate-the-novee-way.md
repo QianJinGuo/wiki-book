@@ -70,7 +70,7 @@ _De
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](https://github.com/QianJinGuo/wiki/blob/main/entities/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
 
 ## 相关主题
 

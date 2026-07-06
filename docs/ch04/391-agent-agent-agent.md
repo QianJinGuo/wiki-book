@@ -17,7 +17,7 @@
 - [Ai Context Layer Kgc 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-context-layer-kgc-2026.md)
 - [Skillsieve Agent Skill Security](https://github.com/QianJinGuo/wiki/blob/main/entities/skillsieve-agent-skill-security.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lowcode-framework-custom-agent-decision-framework-hello-agents.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lowcode-framework-custom-agent-decision-framework-hello-agents.md)
 
 ## 深度分析
 

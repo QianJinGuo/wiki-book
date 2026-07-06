@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐ | 3.3KB | `entities/openai-three-voice-models-kill-simultaneous-translation.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-three-voice-models-kill-simultaneous-translation.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-three-voice-models-kill-simultaneous-translation.md)
 
 ## 摘要
 OpenAI三个语音模型发布同传被杀死
 
 ## 关键要点
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openai-three-voice-models-kill-simultaneous-translation.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-three-voice-models-kill-simultaneous-translation.md)
 
 ## 深度分析
 **从对话界面到 AI 基础设施。** 这次发布是 OpenAI 语音战略的一次根本性转变：不再将语音能力当作 ChatGPT 的一个附加模式，而是将其拆分为三个独立可用的 API 产品，覆盖对话、翻译、转录三大场景。这意味着语音 AI 正式成为可被任何人通过 WebRTC/WebSocket/SIP 接入的基础设施层——竞争维度从「模型质量」迁移到「接入体验和可靠性」。

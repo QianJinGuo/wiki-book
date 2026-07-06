@@ -54,7 +54,7 @@ if (isSubagentSessionKey(requesterSessionKey)) {
 
 就一个 if 判断，连参数都不用看，session key 格式一匹配就直
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/拆解openclaw架构八多agent编排与自主运行.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/拆解openclaw架构八多agent编排与自主运行.md)
 
 ---
 

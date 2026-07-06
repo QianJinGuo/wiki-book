@@ -47,7 +47,7 @@ HF Space网址：https://huggingface.co/spaces/123123aa123/UniGeo
 
 UniGeo 成功打通了视频模型与三维几何理解之间的壁垒，
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/打破碎片化瓶颈浙大哈佛开源unigeo高保真相机可控编辑.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/打破碎片化瓶颈浙大哈佛开源unigeo高保真相机可控编辑.md)
 
 ---
 

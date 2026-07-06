@@ -17,7 +17,7 @@
 - [Claude Code Skills Mcp Rules Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
 - [Claude Code Skills Mcp Rules Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents.md)
 
 - [xz-utils backdoor 2 years on — maintainer trust hijack patte](https://github.com/QianJinGuo/wiki/blob/main/entities/xz-utils-backdoor-maintainer-trust-hijack-2-years-on.md)
 

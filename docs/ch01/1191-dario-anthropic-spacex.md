@@ -72,7 +72,7 @@
 - [Anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic.md)
 - [AI 安全与治理](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-safety-governance.md)
 - [云 AI 基础设施](https://github.com/QianJinGuo/wiki/blob/main/concepts/cloud-ai-infrastructure.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/大反转马斯克牵手对手-darioanthropic-与-spacex-罕见合作.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/大反转马斯克牵手对手-darioanthropic-与-spacex-罕见合作.md)
 
 ---
 

@@ -67,9 +67,9 @@ Windows Terminal 在 ConHost 层即拦截 Ctrl+V，这意味着在终端内运�
 
 ## 相关主题
 
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md)
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md)
 
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=8, c=9, stars=5。
 

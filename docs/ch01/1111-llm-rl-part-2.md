@@ -401,7 +401,7 @@ $$r_g = \frac{H_g - \bar{H}}{std(H)}$$
 - 自我反思（Self-reflection）
 - [LLM RL中的熵 Part 1: 熵的调控](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-rl中的熵-part-1-熵的调控.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-rl中的熵-part-2-熵对训练的调控.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-rl中的熵-part-2-熵对训练的调控.md)
 
 ## 相关实体
 

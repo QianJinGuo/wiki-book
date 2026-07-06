@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐ | 3.7KB | `entities/thisisgoingtobebig-public-stealth.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thisisgoingtobebig-public-stealth.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thisisgoingtobebig-public-stealth.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thisisgoingtobebig-public-stealth.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thisisgoingtobebig-public-stealth.md)
 
 ## 相关实体
 

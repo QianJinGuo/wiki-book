@@ -184,7 +184,7 @@ Ronacher 的"软件作为有机体"隐喻捕捉了软件工程正在经历的范
 
 ## 参考
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-coming-loop.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-coming-loop.md)
 → [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

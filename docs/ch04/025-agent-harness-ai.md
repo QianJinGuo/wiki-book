@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 2.7KB | `entities/agent-harness-dingtalk-recruitment.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-dingtalk-recruitment-alicloud-2026-06-30.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-harness-dingtalk-recruitment-alicloud-2026-06-30.md)
 
 阿里云开发者分享钉钉AI招聘场景的Agent Harness工程实践，从范式理论到真实落地的完整案例。
 

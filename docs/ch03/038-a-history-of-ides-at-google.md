@@ -14,7 +14,7 @@ Like in many companies, engineers at Google have been able to pick their IDE of 
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/a-history-of-ides-at-google.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/a-history-of-ides-at-google.md)
 
 ## 深度分析
 

@@ -64,7 +64,7 @@ NarrateAI batch-generates comprehensive persona-based narratives for each user t
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](https://github.com/QianJinGuo/wiki/blob/main/entities/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
 - [Process Financial Documents Using Amazon Bedrock Data Automa](https://github.com/QianJinGuo/wiki/blob/main/entities/process-financial-documents-using-amazon-bedrock-data-automa.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
 
 ## 相关主题
 

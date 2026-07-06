@@ -91,7 +91,7 @@ eve is that shape made into a framework. Every generation of software earns its 
 
 5. **关注 Vercel 的 agent 生态演进**：eve 作为 Vercel 的 agent 框架，与 Next.js、AI Gateway、v0 形成完整的 agent 开发-部署-运行生态。如果你在 Vercel 生态内构建 agent，eve 应该是首选框架。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-eve.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-eve.md)
 
 ---
 

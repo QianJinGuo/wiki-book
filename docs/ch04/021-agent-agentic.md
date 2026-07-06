@@ -47,7 +47,7 @@
 本文的核心技术价值在于：
 - 当数据消费主体从 “Human + Application” 扩张至千万级 AI Agent，传统数据库的能力边界已被彻底打破——海量 AI Agent 全天候自主检索、推理、协作、调度数据，传统数据...
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从数据库到-agent-原生数据底座火山引擎发布-agentic-全栈数据管理服务.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从数据库到-agent-原生数据底座火山引擎发布-agentic-全栈数据管理服务.md)
 
 ---
 

@@ -32,7 +32,7 @@
 
 这篇文章记录了使用 AI 编码工具（QoderWork）debug 真实系统问题的完整工程实践——AI 工具诊断 AI 工具产生的问题。Agent Browser 作为 Claude Code 的浏览器自动化组件，其进程泄漏问题对于重度使用 Agent Browser 的用户有实际参考价值。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-browser-zombie-process-cleanup-mac-tool-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-browser-zombie-process-cleanup-mac-tool-2026.md)
 
 ---
 

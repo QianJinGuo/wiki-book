@@ -17,7 +17,7 @@ Browser Harness 是一个自愈型浏览器 Agent 框架，基于 Chrome DevTool
 - [Cdp Bridge Mcp Real Browser Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/cdp-bridge-mcp-real-browser-agent.md)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/browser-harness-github.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/browser-harness-github.md)
 
 ## 深度分析
 

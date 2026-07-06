@@ -6,7 +6,7 @@
 
 # Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md)
 
 ## 深度分析
 

@@ -110,7 +110,7 @@ Cognition 的模型路由架构经历了三代演进：
 - [Agent Harnesses 的演进](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harnesses-are-dead-long-live-agent-harnesses.md)
 - [Harness Engineering 核心模式](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/devin-fusion.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/devin-fusion.md)
 
 ---
 

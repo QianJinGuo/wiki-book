@@ -6,7 +6,7 @@
 
 # 百型智能 OntoZ：企业本体论 + 群智能体协同体系
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/baixing-ontoz-enterprise-ontology-xinzhiyuan.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/baixing-ontoz-enterprise-ontology-xinzhiyuan.md)
 
 百型智能 2026-06-05 发布第三代企业级 AI 基础设施 **OntoZ**——以**企业本体**为底层基座 + **可动态自迭代的群智能体协同体系**，目标是为每一家出海企业构建"**全局共识大脑**"（Palantir 中国类比）。服务上千家中国出海企业，近千个智能体活跃在 160+ 国家，累计 700+ 万海外采购商 KP 建联 / 数十万笔采购询单 / 数十亿成交潜力。
 

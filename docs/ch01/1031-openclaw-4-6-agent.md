@@ -54,7 +54,7 @@ OpenClaw 嵌入 Pi Agent 的方式很有讲究。它不是把 Pi 当作一个子
 
 Agent 循环的完整路径是：intake → context assembly → model inference → tool execution → streaming replies → persistence
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/拆解-openclaw-架构三4-组件-6-级降级agent-运行引擎的源码级设计.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/拆解-openclaw-架构三4-组件-6-级降级agent-运行引擎的源码级设计.md)
 
 ---
 

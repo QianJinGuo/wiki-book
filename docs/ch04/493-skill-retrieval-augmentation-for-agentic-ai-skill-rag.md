@@ -17,7 +17,7 @@ RAG改换换了！清华提出Skill-RAG
 - [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
 - [Three Rag Architectures Classic Graph Agentic](https://github.com/QianJinGuo/wiki/blob/main/entities/three-rag-architectures-classic-graph-agentic.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-rag-tsinghua-sra.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-rag-tsinghua-sra.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析
@@ -44,7 +44,7 @@ RAG改换换了！清华提出Skill-RAG
 
 5. **在 SRA-Bench 上评估多模型的需求感知能力。** SRA-Bench 包含 5,400 个测试实例，覆盖六大领域，是评估 Agent 是否具备"知道自己会不会"能力的标准 benchmark。在选型 Agent 时，可以用这个 benchmark 测试模型的自我评估准确性，而不只是测任务准确率。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/skill-rag-tsinghua-sra.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-rag-tsinghua-sra.md)
 
 ---
 

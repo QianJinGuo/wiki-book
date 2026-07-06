@@ -12,7 +12,7 @@
 - [垂类 ai 创企的自救：flashlabs 从 flashintel 到 ai native](https://github.com/QianJinGuo/wiki/blob/main/entities/flashlabs-vertical-ai-startup-pivot.md)
 - [latest open artifacts (#19): qwen 3.5, glm 5, minimax 2.5 —](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md)
 - [perplexity 首次公开了内部 skill 设计指南](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-internal-skill-design-guide-xiaojianke.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-之后-状态边界与失败闭环-若飞.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-之后-状态边界与失败闭环-若飞.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析

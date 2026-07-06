@@ -68,7 +68,7 @@ npm run deploy
 
 Amazon Pinpoint 将于 2026 年 10 月 30 日终止支持，现有用户需规划迁移。SES Sender 是针对这一场景的替代选择，提供自托管、开源、多团队协作的完整方案。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/生成式-ai-给邮件营销提效从写模板到质量把关的自动化闭环.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/生成式-ai-给邮件营销提效从写模板到质量把关的自动化闭环.md)
 
 ---
 

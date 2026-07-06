@@ -89,7 +89,7 @@ I don’t love that they used this as a reason to skip a bunch
 - [Anthropic Long Running Agent Adversarial Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-long-running-agent-adversarial-architecture.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-opus-4-8-system-card-zvi.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-opus-4-8-system-card-zvi.md)
 
 ---
 

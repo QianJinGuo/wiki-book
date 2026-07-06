@@ -7,7 +7,7 @@
 # APPO：阿里高德 AMAP-ML 把 Agent RL 信用分配细化到每个决策点
 
 > Paper: **APPO: Agentic Procedural Policy Optimization**
-> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/appo-agentic-procedural-policy-optimization-amap-ml-2026-06-16.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/appo-agentic-procedural-policy-optimization-amap-ml-2026-06-16.md)
 > Paper Link: https://arxiv.org/abs/2606.12384
 > GitHub: https://github.com/AMAP-ML/APPO
 > Authors: 中科大 + 阿里高德 AMAP-ML 团队
@@ -197,7 +197,7 @@ A = α · A_base + (1-α) · A_future
 - [Harness Engineering 综述](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md)（相关：APPO 是 Agentic RL 的"过程工程化"）
 - [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)（相关：过程级 credit 与编排的"阶段化"同源）
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/appo-agentic-procedural-policy-optimization-amap-ml-2026-06-16.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/appo-agentic-procedural-policy-optimization-amap-ml-2026-06-16.md)
 - [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](https://github.com/QianJinGuo/wiki/blob/main/entities/gaode-routing-dual-pathway-mobilitybench-transitlm-2026.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 

@@ -8,7 +8,7 @@
 
 Individual SDD（Spec-Driven Development）向团队级 Harness 演进的完整实践指南。核心论点：Spec 只能解决 0→80，剩下 20 分需要 Context Engineering、独立 Verification、Drift Check、Evidence 系统和 Loop。提出了 Lattice——一个 repo-local AI Coding control plane，把交付控制点变成仓库内可版本化的 contracts。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sdd-practice-lattice-harness-team-ai-coding.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sdd-practice-lattice-harness-team-ai-coding.md)
 
 ## 五大工程缺口
 

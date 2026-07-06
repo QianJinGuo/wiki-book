@@ -62,7 +62,7 @@ Most features work the same. Some do not.
 
 `$#` - the cou
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/posix-is-not-a-shell.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/posix-is-not-a-shell.md)
 
 ---
 

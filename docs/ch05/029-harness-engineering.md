@@ -226,7 +226,7 @@ Harness Engineering的六层架构（Rule/Skill/Sub Agent/Workflow/Scripts/MCP�
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md)
 - [Baidu Comate Coding Agent Feedback Loop Wanpeng](https://github.com/QianJinGuo/wiki/blob/main/entities/baidu-comate-coding-agent-feedback-loop-wanpeng.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-jk-launcher-baijiajie.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-jk-launcher-baijiajie.md)
 
 ---
 

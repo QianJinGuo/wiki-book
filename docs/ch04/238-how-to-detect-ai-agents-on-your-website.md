@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/detect-ai-agent-traffic.md`
 
-[Detect Ai Agent Traffic](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/detect-ai-agent-traffic.md)
+[Detect Ai Agent Traffic](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/detect-ai-agent-traffic.md)
 
 # "How to Detect AI Agents on Your Website"
 # How to Detect AI Agents on Your Website

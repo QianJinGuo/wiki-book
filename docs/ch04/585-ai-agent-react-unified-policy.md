@@ -24,7 +24,7 @@ UP-ReAct 通过统一策略路由层解决了上述问题：
 
 该实践与 [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md) 和 [Agent 上下文管理架构模式](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-context-management-architecture-patterns.md) 中的架构演进路线一致，是千万级 Agent 系统的宝贵实战参考。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/火山引擎-ai-搜索千万级-agent-架构演进与实践从-react-三节点到-unified-policy.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/火山引擎-ai-搜索千万级-agent-架构演进与实践从-react-三节点到-unified-policy.md)
 
 ---
 

@@ -114,7 +114,7 @@ OCR 4 对 RAG pipeline 的影响最直接：
 - Document Intelligence — 文档智能领域的更广泛概念
 - Self-hosted LLM — OCR 4 的单容器自托管能力
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mistral-ai-news-ocr-4.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mistral-ai-news-ocr-4.md)
 
 ---
 

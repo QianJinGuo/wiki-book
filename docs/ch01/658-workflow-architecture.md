@@ -45,7 +45,7 @@ Custom quality metrics c
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](https://github.com/QianJinGuo/wiki/blob/main/entities/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
 - [Process Financial Documents Using Amazon Bedrock Data Automa](https://github.com/QianJinGuo/wiki/blob/main/entities/process-financial-documents-using-amazon-bedrock-data-automa.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 ## 相关主题

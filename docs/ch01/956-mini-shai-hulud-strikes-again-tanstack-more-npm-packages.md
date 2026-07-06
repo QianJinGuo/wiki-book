@@ -41,7 +41,7 @@ Mini Shai-Hulud 攻击标志着 AI 开源生态系统的供应链攻击进入新
 - [Cybersecurityreach Revoke Token Wipe Computer](https://github.com/QianJinGuo/wiki/blob/main/entities/cybersecurityreach-revoke-token-wipe-computer.md)
 - [Thehackernews Fake Openai Privacy Filter](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-fake-openai-privacy-filter.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www-wiz-io-mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www-wiz-io-mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised.md)
 -
 
 ---

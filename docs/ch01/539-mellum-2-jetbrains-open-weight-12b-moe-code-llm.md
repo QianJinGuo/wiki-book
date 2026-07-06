@@ -72,7 +72,7 @@
 ## 来源
 
 - [arXiv:2605.31268](https://arxiv.org/abs/2605.31268) — 原始技术报告
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mellum-2-jetbrains-open-12b-moe-code-model.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mellum-2-jetbrains-open-12b-moe-code-model.md)
 
 ---
 

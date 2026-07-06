@@ -6,7 +6,7 @@
 
 # Anthropic 实战分享：如何让 AI Agent 持续工作几天？
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-long-running-agent-architecture-6h-retroforge.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-long-running-agent-architecture-6h-retroforge.md)
 
 ## 摘要
 

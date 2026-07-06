@@ -92,7 +92,7 @@ CLAUDE.md  和  .claude/  。
 
 - • 还有一条我自己踩过坑才想明
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/小白也能搞懂claude-文件夹里到底应该放什么.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/小白也能搞懂claude-文件夹里到底应该放什么.md)
 
 ---
 

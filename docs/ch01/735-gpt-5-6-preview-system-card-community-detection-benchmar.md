@@ -39,7 +39,7 @@ This system card is a detailed report of the work we did to understand and mitig
 - **Prompt Caching**：新增显式 cache breakpoints，最低 30 分钟缓存生命周期。
 - **官方矛盾**：OpenAI 公告称“仅对政府批准合作伙伴开放”，但 48 小时后土耳其 Plus 用户在 Codex 中可用。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gpt-5-6-偷偷灰度-codex提前用上-夕小瑶-2026-07-04.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-5-6-偷偷灰度-codex提前用上-夕小瑶-2026-07-04.md)
 
 ---
 

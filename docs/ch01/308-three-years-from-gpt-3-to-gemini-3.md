@@ -9,7 +9,7 @@
 > Source: One Useful Thing (Ethan Mollick, Substack), 2025-11-18
 > URL: https://www.oneusefulthing.org/p/three-years-from-gpt-3-to-gemini
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/three-years-from-gpt-3-to-gemini-3.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/three-years-from-gpt-3-to-gemini-3.md)
 
 ## 摘要
 

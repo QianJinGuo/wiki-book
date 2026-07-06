@@ -6,7 +6,7 @@
 
 # GIAC 2026 圆满落幕：AI Native 进入深水区，技术组织如何重构？
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/giac-2026-圆满落幕ai-native-进入深水区技术组织如何重构.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/giac-2026-圆满落幕ai-native-进入深水区技术组织如何重构.md)
 
 ## 核心要点
 
@@ -61,7 +61,7 @@ Google Cloud Agentic AI 打造出海“超级引擎”  ** _  Google Cloud AI GT
 
 ---
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/giac-2026-圆满落幕ai-native-进入深水区技术组织如何重构.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/giac-2026-圆满落幕ai-native-进入深水区技术组织如何重构.md)
 
 ---
 

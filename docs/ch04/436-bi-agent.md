@@ -59,7 +59,7 @@
 - `Trace 即 Evals` — 轨迹数据作为评估基础的理念
 - `AgentCore 结构化记忆过滤` — Agent 数据治理的 AWS 实践
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/insight-agent-trustworthy-reasoning-guandata.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/insight-agent-trustworthy-reasoning-guandata.md)
 
 ---
 

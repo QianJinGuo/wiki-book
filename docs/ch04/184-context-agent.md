@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/context-not-free-long-document-agent-architecture-raunak.md`
 
-> -> [Context不是免费的：长文档Agent性能天花板与架构优化](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/context-not-free-long-document-agent-architecture-raunak.md)
+> -> [Context不是免费的：长文档Agent性能天花板与架构优化](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/context-not-free-long-document-agent-architecture-raunak.md)
 
 ## 核心命题
 构建文档密集型 Agent 时，原始解析 JSON（坐标、置信度分数、边界框）塞满上下文窗口导致 Agent 无法工作。解决方案：将 Content（Markdown 编号块）和 Metadata（CSV/JSON 结构化文件）分离，让 Agent 用代码按需查询元数据，而非全部塞进上下文。

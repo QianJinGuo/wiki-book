@@ -42,7 +42,7 @@ Kiro-cli 是 AWS Kiro IDE 的命令行版本，结合 Arm MCP Server（嵌入 Ar
 
 Kiro 系统将 Kubernetes 运维从"人工记忆 + 手动执行"升级为"Skill 知识库 + Agent 自主执行"。Skill 知识库不仅是静态文档，而是随实战自动演化的执行指南——agent 在执行过程中发现的新约束自动补回 Skill，形成"执行 → 发现 → 沉淀 → 复用"的正向循环。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-eks-upgrade-kiro-cli-agent-paradigm-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-eks-upgrade-kiro-cli-agent-paradigm-2026.md)
 
 ---
 

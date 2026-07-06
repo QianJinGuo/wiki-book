@@ -63,7 +63,7 @@ Code Interpreter 的持久化会话是一把双刃剑——它提供了必要的
 - [Secure Ai Agents Policy Lambda Interceptors Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/secure-ai-agents-policy-lambda-interceptors-aws.md)
 - [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md)
 
 ---
 

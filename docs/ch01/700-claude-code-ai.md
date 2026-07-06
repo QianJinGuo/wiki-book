@@ -94,7 +94,7 @@ Claude Code 被曝用隐形代码标记中国用户
 
 ## 原文
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/实锤了claude-code偷查用户时区中国ai实验室全是关键词.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/实锤了claude-code偷查用户时区中国ai实验室全是关键词.md)
 
 ---
 

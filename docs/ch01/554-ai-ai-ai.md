@@ -8,7 +8,7 @@
 
 > 新智元评测文章，通过实测「胖鹅AI」产品，探讨 AI 工具从「需要用户精通 Prompt」到「低提示词直接交付结果」的产品范式转变。核心论点：AI 工具的下半场不是比谁更强，是比谁的产出更直接。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/不用学ai了圈内公开的秘密顶级玩家已开始让ai用ai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/不用学ai了圈内公开的秘密顶级玩家已开始让ai用ai.md)
 
 ## 摘要
 

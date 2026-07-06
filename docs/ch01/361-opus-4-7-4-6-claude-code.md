@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md`
 
-[刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
+[刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
 
 ###  Claude Opus 4.7 正式发布：
 Anthropic 今天发布了 Opus 4.7。定价与 4.6 持平（每百万 Token 为  $5 / $  25），现已在 API、Amazon Bedrock、Google Vertex AI 和 Microsoft Foundry 同步上线。
@@ -120,7 +120,7 @@ Opus 4.7 的默认行为变化需要相应的架构调整：
 - [Claude Code Founder Harness 100 Lines](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-founder-harness-100-lines.md)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 22.3KB | `entities/gsd-get-shit-done-context-management-tool.md`
 
-[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gsd-get-shit-done-context-management-tool.md)
+[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gsd-get-shit-done-context-management-tool.md)
 
 # gsd-get-shit-done-context-management-tool
 > 原文: https://mp.weixin.qq.com/s/LA3ZBVMUEUJMhek_LeHhjA

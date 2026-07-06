@@ -17,7 +17,7 @@ GitHub 描述写的是 "Your Personal AI super intelligence. Private, Simple and
 - [Agent Memory Architecture Past Influence Future Ruofei](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md)
 - [Agent Memory Architecture Ruofei](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture-ruofei.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openhuman-ai-agent-memory-tree-tokenjuice.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openhuman-ai-agent-memory-tree-tokenjuice.md)
 
 ## 深度分析
 

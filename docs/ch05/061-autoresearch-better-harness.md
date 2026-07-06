@@ -17,7 +17,7 @@
 - [Better Harness Eval Trace Methodology](https://github.com/QianJinGuo/wiki/blob/main/entities/better-harness-eval-trace-methodology.md)
 - [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/better-harness-eval-trace-harness-hill-climbing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/better-harness-eval-trace-harness-hill-climbing.md)
 
 ## 深度分析
 

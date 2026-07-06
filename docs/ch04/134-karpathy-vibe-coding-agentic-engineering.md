@@ -8,7 +8,7 @@
 
 > 来源：架构师（JiaGouX）公众号，2026-05 编译自 Karpathy 在 Sequoia AI Ascent 2026 的访谈视频。原文链接：https://www.youtube.com/watch?v=96jN2OCOfLs
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 
 ## 摘要
 

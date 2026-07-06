@@ -18,7 +18,7 @@
 - [Computer Use 45X More Expensive Than Structured Apis](https://github.com/QianJinGuo/wiki/blob/main/entities/computer-use-45x-more-expensive-than-structured-apis.md)
 - [Workspaceupdates Googleblog Com Google Workspace Updates](https://github.com/QianJinGuo/wiki/blob/main/entities/workspaceupdates-googleblog-com-google-workspace-updates.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/codex-can-now-control-other-desktop-devices-via-computer-use.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/codex-can-now-control-other-desktop-devices-via-computer-use.md)
 
 ## 深度分析
 **技术演进路径**
