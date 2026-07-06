@@ -181,8 +181,8 @@ bootstrap → spec-lint → build → lint → unit-test → ac-coverage → int
 | [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](ch05/081-ai-coding.md) | **同三件套范式** | gstack + Superpowers + OpenSpec 三器合一工程化（114 行） |
 | [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/047-openspec.md) | **gstack 三件套** | 同上 gstack 三件套另一角度（233 行） |
 | [Claude Code Superpowers Workflow By Xinlingyuanyuanyuan](../ch03/075-claude-code.md) | **Superpowers 单独实战** | Superpowers 工作流详细解读（无 OpenSpec） |
-| [Claude Code Skills Superpowers Practice](../ch01/499-claude-code-skills-superpowers.md) | **Superpowers 技能实践** | Superpowers Skills 实践 |
-| [Spec Kit Bmad Sdd Practice Yexiaocha](../ch01/1036-spec.md) | **Spec-Kit + BMAD** | Spec-Kit + BMAD SDD 实践（不同 SDD 流派） |
+| [Claude Code Skills Superpowers Practice](../ch01/508-claude-code-skills-superpowers.md) | **Superpowers 技能实践** | Superpowers Skills 实践 |
+| [Spec Kit Bmad Sdd Practice Yexiaocha](../ch01/1050-spec.md) | **Spec-Kit + BMAD** | Spec-Kit + BMAD SDD 实践（不同 SDD 流派） |
 | [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch05/018-ai-native.md) | **Spec-as-AIOS** | 高德 Spec-as-AIOS 反熵架构（Spec 即操作系统的不同视角） |
 | [Openspec Spec Driven Development Trae Solo](ch05/047-openspec.md) | **OpenSpec 单独实战** | OpenSpec + TRAE 单独使用 |
 | [Harness Engineering Alibaba Java Case Study](ch05/092-harness-engineering.md) | **阿里 Harness 工程** | 阿里 Harness 工程实践（与 SDD 互补） |

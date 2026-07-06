@@ -14,12 +14,12 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、AgentCore
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy/)
 
 ## 相关实体
-- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/499-amazon-bedrock-agentcore.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/499-amazon-bedrock-agentcore.md)
+- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/500-amazon-bedrock-agentcore.md)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/500-amazon-bedrock-agentcore.md)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/130-build-financial-document-processing-with-pulse-ai-and-amazon.md)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/361-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/499-amazon-bedrock-agentcore.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/499-amazon-bedrock-agentcore.md)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/362-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.md)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/500-amazon-bedrock-agentcore.md)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/500-amazon-bedrock-agentcore.md)
 
 ## 深度分析
 ### 记忆哲学的根本转变

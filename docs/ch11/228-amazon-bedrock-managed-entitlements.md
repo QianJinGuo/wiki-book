@@ -41,7 +41,7 @@ Managed Entitlements 仅适用于第三类（AWS Marketplace 模型）。
 
 ## 相关实体
 
-- [AWS Budget Bedrock 成本治理](ch11/251-bedrock.md) — Bedrock 用量监控与预算告警
+- [AWS Budget Bedrock 成本治理](ch11/252-bedrock.md) — Bedrock 用量监控与预算告警
 - [Bedrock Inference Profile 成本告警](ch11/152-amazon-bedrock.md) — 按业务单元追踪 Bedrock 成本
 - [AWS DevOps Agent MCP 中国区桥接](ch11/156-aws-devops-agent.md) — 多账号场景的 DevOps Agent 部署
 

@@ -282,7 +282,7 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 
 **关键实践**：每个 Skill 在进入 Hub 时，至少需要准备一个**最小可用测试集**（哪怕是 5-10 个历史输入输出对），用于后续版本比较。
 
-这是"测得准"的最小实现——不是说要有一整套复杂的 Benchmark，而是每次 Skill 改动后能自动跑历史回放、生成正确率报告，证明新版本不比旧版本差。[Agent Skill Writing Evaluation](../ch04/260-agent-skill.md) 中提到的"基于回放的回归评估"是这个思路的技术实现。**不要等到 Skill 质量完美再进 Hub**——进 Hub 本身就是让 Skill 接受组织检验的开始。
+这是"测得准"的最小实现——不是说要有一整套复杂的 Benchmark，而是每次 Skill 改动后能自动跑历史回放、生成正确率报告，证明新版本不比旧版本差。[Agent Skill Writing Evaluation](../ch04/554-agent-skill.md) 中提到的"基于回放的回归评估"是这个思路的技术实现。**不要等到 Skill 质量完美再进 Hub**——进 Hub 本身就是让 Skill 接受组织检验的开始。
 
 ### 4. 设计 Skill 的 Fork / 分支策略，明确所有权边界
 
@@ -296,7 +296,7 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 ### 5. 建立 Skill Hub 与现有工程流程的嵌入点，防止 Hub 成为孤岛
 
 **实践警示**：Skill Hub 如果只是"另一个工具"，很快会被团队遗忘。**必须将 Skill Hub 与现有工程流程深度嵌入**：
-- CI/CD 流水线触发时，自动调用相关 Skill 进行检查（[Skill Os Learning Skill Curation Self Evolving Agents](../ch04/216-self-evolving-agents.md) 中提到的"技能编排"思路）
+- CI/CD 流水线触发时，自动调用相关 Skill 进行检查（[Skill Os Learning Skill Curation Self Evolving Agents](../ch04/215-self-evolving-agents.md) 中提到的"技能编排"思路）
 - 代码评审 Agent 默认加载 Skill Hub 中的团队规范 Skill
 - 新项目初始化时，Agent 自动从 Hub 拉取该项目类型对应的 Skill 集
 

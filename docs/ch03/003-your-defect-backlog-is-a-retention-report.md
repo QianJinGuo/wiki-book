@@ -38,7 +38,7 @@ How many paper cuts are your customers bleeding through right now, while you're 
 
 ## 相关实体
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/611-garry-tan.md)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/621-garry-tan.md)
 - [Against Brain Damage](ch03/016-against-brain-damage.md)
 - [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](ch03/011-cio.md)
 - [Alibaba Cloud Cio Ai Productivity Reframe](ch03/011-cio.md)

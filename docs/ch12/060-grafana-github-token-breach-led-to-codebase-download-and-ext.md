@@ -59,10 +59,10 @@ Grafana 主动在 X 平台公布事件进展，遵循了 modern breach disclosur
 - 将 CoinbaseCartel 的 TTPs（战术、技术、流程）纳入 SOC 检测规则
 ## 相关实体
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch12/060-grafana-github-token-breach-led-to-codebase-download-and-ext.md)
-- [Grafana Github Token Breach Led To Html](../ch01/811-github.md)
-- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/811-github.md)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/811-github.md)
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/811-github.md)
+- [Grafana Github Token Breach Led To Html](../ch01/749-github.md)
+- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/749-github.md)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/749-github.md)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/749-github.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt-2.md)

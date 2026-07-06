@@ -40,8 +40,8 @@ Lightfield 的 Skills 系统代表了 AI Agent 从"通用工具"向"专业化助
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](../ch04/378-memento-skills-agent.md)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/142-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](../ch04/379-memento-skills-agent.md)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/141-skillos-learning-skill-curation-for-self-evolving-agents.md)
 - [SkillOS](../ch04/262-skill.md)
 
 ---

@@ -2,7 +2,7 @@
 
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
-> 本章收录 **153 篇**实体，按深度递增排列。
+> 本章收录 **156 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 7 |
-| ⭐⭐ 工程师 | 需编程基础 | 141 |
+| ⭐⭐ 工程师 | 需编程基础 | 144 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -177,14 +177,17 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [140. AI 编码效率分析方法论](ch09/140-ai)
 - [141. OpenAI大神教你如何榨干Codex](ch09/141-openai-codex)
 - [142. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/142-device-code-phishing-forensics-what-we-learned-from-bec-inv)
-- [143. 一年吃掉一块固态硬盘，Codex日志bug被骂「劣质软件](ch09/143-codex-bug)
-- [144. Claude官方教你用 Loop：如何让Claude Code上夜班的四个交接点](ch09/144-claude-loop-claude-code)
-- [145. Codex 五层架构：记忆/知识/护栏/委派/分发](ch09/145-codex)
-- [146. Claude Code 前 1% 用户指南：系统级架构与全栈工程化实践](ch09/146-claude-code-1)
-- [147. CoDA-Bench：Code Agent 数据智能基准](ch09/147-coda-bench-code-agent)
-- [148. Agent Browser 僵尸进程排查与定时清理（Claude Code + QoderWork 实战）](ch09/148-agent-browser-claude-code-qoderwork)
-- [149. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/149-fastcontext-coding-agent)
-- [150. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/150-deepseek-visual-primitives)
-- [151. AI Coding Agent Token 成本控制五层模型](ch09/151-ai-coding-agent-token)
-- [152. Dockerless: 免环境补丁验证器](ch09/152-dockerless)
-- [153. GLM-5 Scaling Pain 推理复盘](ch09/153-glm-5-scaling-pain)
+- [143. 百度网盘主端 FE AICR：AI Code Review 准入实践](ch09/143-fe-aicr-ai-code-review)
+- [144. 一年吃掉一块固态硬盘，Codex日志bug被骂「劣质软件](ch09/144-codex-bug)
+- [145. Claude官方教你用 Loop：如何让Claude Code上夜班的四个交接点](ch09/145-claude-loop-claude-code)
+- [146. Anthropic 8x 产出复盘：从代码吞吐到验证协作接口](ch09/146-anthropic-8x)
+- [147. Codex 五层架构：记忆/知识/护栏/委派/分发](ch09/147-codex)
+- [148. Claude Code 前 1% 用户指南：系统级架构与全栈工程化实践](ch09/148-claude-code-1)
+- [149. CoDA-Bench：Code Agent 数据智能基准](ch09/149-coda-bench-code-agent)
+- [150. Agent Browser 僵尸进程排查与定时清理（Claude Code + QoderWork 实战）](ch09/150-agent-browser-claude-code-qoderwork)
+- [151. Thariq（Claude Code工程师）的Fable 5使用心法：地图≠领土，用未知消除法突破模型瓶颈](ch09/151-thariq-claude-code-fable-5)
+- [152. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/152-fastcontext-coding-agent)
+- [153. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/153-deepseek-visual-primitives)
+- [154. AI Coding Agent Token 成本控制五层模型](ch09/154-ai-coding-agent-token)
+- [155. Dockerless: 免环境补丁验证器](ch09/155-dockerless)
+- [156. GLM-5 Scaling Pain 推理复盘](ch09/156-glm-5-scaling-pain)

@@ -135,7 +135,7 @@ Skill和MCP的选择本质上是「按需加载」和「全量加载」的选择
 - [Harness Engineering Jk Launcher Baijiajie](../ch05/092-harness-engineering.md)
 - [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](ch09/047-coding-agent.md)
 - [Anthropic Coding Agents Social Science Survey 2026](ch09/042-anthropic-coding-agent.md)
-- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](../ch04/229-ai.md)
+- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](../ch04/070-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

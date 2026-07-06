@@ -131,10 +131,10 @@ MiniMax M3 的三件套不是功能堆砌，而是一个系统能力的三个接
 
 ## 相关实体
 - [Claude Code Open Source Model Enterprise Practice](../ch03/075-claude-code.md)
-- [Tencent Hunyuan Hy3 Preview Open Source Agent](../ch01/107-hy3-preview.md)
+- [Tencent Hunyuan Hy3 Preview Open Source Agent](../ch01/108-hy3-preview.md)
 - [Cline Open Source Agent Runtime Sdk](../ch03/045-agent.md)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01/014-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
-- [How Open Model Ecosystems Compound](../ch01/798-how-open-model-ecosystems-compound.md)
+- [How Open Model Ecosystems Compound](../ch01/811-how-open-model-ecosystems-compound.md)
 
 - [minimax token调用第一后：agentos现实与模型厂商的系统适配挑战](../ch03/045-agent.md)
 

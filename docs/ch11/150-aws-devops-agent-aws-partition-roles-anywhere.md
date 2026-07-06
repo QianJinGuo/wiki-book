@@ -48,7 +48,7 @@
 - [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07/043-aws-devops-agent-mcp-server.md)
 - [Aws Devops Agent 实战云网络故障自主调查与修复建议](ch11/156-aws-devops-agent.md)
 - [Habby Game Aws Devops Agent](ch11/156-aws-devops-agent.md)
-- [Outlook Ai Agent Aws Fargate Claude Agent Sdk](../ch04/030-ai-agent.md)
+- [Outlook Ai Agent Aws Fargate Claude Agent Sdk](../ch04/147-ai-agent.md)
 - [将 Aws Devops Agent 智能运维能力延伸到中国区](ch11/156-aws-devops-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 

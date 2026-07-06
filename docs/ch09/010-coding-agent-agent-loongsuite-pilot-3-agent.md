@@ -326,7 +326,7 @@ Pilot 平台的 OTel 标准化输出意味着企业可以将 Coding Agent 的执
 这一架构的另一个好处是**插桩库的可测试性**——插桩库只需要验证数据提取的准确性，而不需要关注遥测输出的正确性，大幅降低了单元测试的复杂度。
 
 ## 相关实体
-- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](../ch04/420-loongsuite-genai.md)
+- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](../ch04/421-loongsuite-genai.md)
 - [Alibabacloud Cms Manage Skill Natural Language Observability](../ch04/262-skill.md)
 - [Baidu Comate Coding Agent Feedback Loop Wanpeng](ch09/047-coding-agent.md)
 - [Harness Engineering Reliable Long Term Agent](../ch05/092-harness-engineering.md)

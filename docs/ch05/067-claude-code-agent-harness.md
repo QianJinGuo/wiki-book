@@ -82,7 +82,7 @@ Prompt Caching 折扣条件：**字节级完全相同**（byte-identical）。
 - [Harness Engineering 10 Step Practical Guide 2026](ch05/092-harness-engineering.md)
 - [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/078-claude-code-dynamic-workflows.md)
 - [Long Running Agent Ralph Loop Harness Takeover](ch05/012-agent-ralph-loop-harness.md)
-- [Gufabiancheng Spec For Complex Tasks Cc Codex](../ch01/516-codex.md)
+- [Gufabiancheng Spec For Complex Tasks Cc Codex](../ch01/525-codex.md)
 - [Production Harness 12 Components Framework Comparison](ch05/034-harness-12.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-multi-agent-harness-source-analysis.md)

@@ -101,7 +101,7 @@ L1: 基础设施层 (数据平台、训练平台、Git 存档)
 
 ## 与已有实体的关联
 
-- [高德 Marketing AutoResearch](../ch04/088-marketing-autoresearch-ai-native.md) — 同属营销算法团队，本文聚焦 Uplift 模型迭代自动化，对方聚焦营销决策托管
+- [高德 Marketing AutoResearch](../ch04/087-marketing-autoresearch-ai-native.md) — 同属营销算法团队，本文聚焦 Uplift 模型迭代自动化，对方聚焦营销决策托管
 - [高德 AI 伴行架构](../ch03/045-agent.md) — 空间智能场景的 Agent 架构
 - [阿里 LoongSuite Pilot 观测审计](../ch09/047-coding-agent.md) — 企业级 Agent 可观测性方案
 - [Agent Harness Engineering Survey 2026](ch05/092-harness-engineering.md) — 业界 harness 范式综述
@@ -143,7 +143,7 @@ Agent harness 不只控制行为，还作为实验基础设施——控制变量
 快速迭代小幅优化比慢速大幅重构更有效——harness 的实验能力支撑快速迭代。
 ## 相关实体
 
-- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](../ch01/897-20.md)
+- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](../ch01/911-20.md)
 
 ---
 

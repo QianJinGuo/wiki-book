@@ -53,11 +53,11 @@ autocli-skill（591 stars）作为 AutoCLI 的 AI Agent 接口层，其设计目
 
 ## Related
 - [CLI-Anything](ch03/094-cli-anything.md) — 让所有软件 Agent 原生化
-- [AgentBrowser](../ch09/148-agent-browser-claude-code-qoderwork.md) — AI 专用浏览器
+- [AgentBrowser](../ch09/150-agent-browser-claude-code-qoderwork.md) — AI 专用浏览器
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md) — OpenCLI / CLI-Anything / AutoCLI / AgentBrowser 四项目对比
 
 ## 相关实体
-- [GBrain](../ch01/309-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.md)
+- [GBrain](../ch01/318-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

@@ -9,10 +9,10 @@
 - v×c = 7×8 = 56，stars = 4
 
 ## 相关实体
-- [Intelligent Radiology Workflow Optimization With Ai Agents](../ch04/307-intelligent-radiology-workflow-optimization-with-ai-agents.md)
-- [Amazon Nova Act Is Now Hipaa Eligible](../ch04/440-amazon-nova-act-is-now-hipaa-eligible.md)
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/675-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
-- [Improve Bot Accuracy With Amazon Lex Assisted Nlu](../ch01/630-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
+- [Intelligent Radiology Workflow Optimization With Ai Agents](../ch04/308-intelligent-radiology-workflow-optimization-with-ai-agents.md)
+- [Amazon Nova Act Is Now Hipaa Eligible](../ch04/441-amazon-nova-act-is-now-hipaa-eligible.md)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/687-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
+- [Improve Bot Accuracy With Amazon Lex Assisted Nlu](../ch01/640-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch11/128-control-where-your-ai-agents-can-browse-with-chrome-enterpri.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-deepmind-accelerator-asia-pacific.md)

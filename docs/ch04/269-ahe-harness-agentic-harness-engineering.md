@@ -94,9 +94,9 @@ AHE 的演化曲线揭示了一个反直觉的现象：
 
 - [Harness Engineering Core Patterns Claude Code](../ch05/092-harness-engineering.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md)
-- [Claude Code Harness Deep Understanding](../ch01/456-claude-code-harness-deep-understanding.md)
-- [Ai Job Interview Model Evaluation Mollick](ch04/229-ai.md)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/030-ai-agent.md)
+- [Claude Code Harness Deep Understanding](../ch01/465-claude-code-harness-deep-understanding.md)
+- [Ai Job Interview Model Evaluation Mollick](ch04/070-ai.md)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/147-ai-agent.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent Observability](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-observability.md)
 

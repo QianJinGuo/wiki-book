@@ -2,7 +2,7 @@
 
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
-> 本章收录 **73 篇**实体，按深度递增排列。
+> 本章收录 **74 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 72 |
+| ⭐⭐ 工程师 | 需编程基础 | 73 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -104,5 +104,6 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [069. 25个Skills详解：从生产力清单到AI工作流资产](ch07/069-25-skills-ai)
 - [070. Perplexity 首次公开了内部 Skill 设计指南](ch07/070-perplexity-skill)
 - [071. Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获](ch07/071-codex-record-replay-gui-skill)
-- [072. 李继刚 23 个 Skills 深度拆解——认知工序流水线](ch07/072-23-skills)
-- [073. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/073-microsoft-agent-framework-tools-4-provider-tool-ap)
+- [072. 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践](ch07/072-skill-skill)
+- [073. 李继刚 23 个 Skills 深度拆解——认知工序流水线](ch07/073-23-skills)
+- [074. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/074-microsoft-agent-framework-tools-4-provider-tool-ap)

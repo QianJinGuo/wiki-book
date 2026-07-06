@@ -5,22 +5,22 @@
 > 📊 Level ⭐⭐ | 9.1KB | `entities/十年老技术开发的-ai-agent-探索之路-v2.md`
 
 ## 相关实体
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/393-introducing-aimap-security-testing-for-ai-agent-bishop-f.md)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/394-introducing-aimap-security-testing-for-ai-agent-bishop-f.md)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/296-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/032-qoder-skills.md)
-- [柚漫剧 AI 全流程提效拆解](ch04/229-ai.md)
-- [Agent Skill 设计模式](ch04/375-agent-skills.md)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/229-ai.md)
+- [柚漫剧 AI 全流程提效拆解](ch04/070-ai.md)
+- [Agent Skill 设计模式](ch04/376-agent-skills.md)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/070-ai.md)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/045-agent.md)
 
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/375-agent-skills.md)
-- [ai agent memory systems](ch04/120-agent-memory.md)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/375-agent-skills.md)
-- [Garry Tan](../ch01/611-garry-tan.md)
-- [Agent Workflows](ch04/334-agent-workflows.md)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/376-agent-skills.md)
+- [ai agent memory systems](ch04/096-agent-memory.md)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/376-agent-skills.md)
+- [Garry Tan](../ch01/621-garry-tan.md)
+- [Agent Workflows](ch04/335-agent-workflows.md)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/262-skill.md)
-- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.md)- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.md)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.md)- [四种 Sub Agent 模式](../ch03/045-agent.md) 
+- [十年老技术开发的 AI Agent 探索之路](ch04/147-ai-agent.md)- [十年老技术开发的 AI Agent 探索之路](ch04/147-ai-agent.md)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/147-ai-agent.md)- [四种 Sub Agent 模式](../ch03/045-agent.md) 
 
 ## 深度分析
 ### 范式转移：人是瓶颈，但解决方式不是替代人

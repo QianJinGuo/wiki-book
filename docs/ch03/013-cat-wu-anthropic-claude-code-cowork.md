@@ -28,22 +28,22 @@
 ## 相关实体
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/075-claude-code.md)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch03/002-obsidian-claude-code.md)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/146-claude-code-1.md)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/148-claude-code-1.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
-- [Claude Code Subagent 上下文卫生](../ch04/318-claude-code-subagent.md)
+- [Claude Code Subagent 上下文卫生](../ch04/319-claude-code-subagent.md)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.md)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [claude-code-agent-view](../ch09/001-claude-code-agent-view.md)
-- [Claude Opus 4.7 发布分析](../ch01/403-claude-opus-4-7.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/375-agent-skills.md)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/030-ai-agent.md)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/431-anthropic-ai.md)
+- [Claude Opus 4.7 发布分析](../ch01/412-claude-opus-4-7.md)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/376-agent-skills.md)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/147-ai-agent.md)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/432-anthropic-ai.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/075-claude-code.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.md)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1036-claude.md)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/075-claude-code.md)
-- [Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](../ch01/275-anthropic-prompt-caching-claude-code.md)
+- [Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](../ch01/284-anthropic-prompt-caching-claude-code.md)
 
 ## 深度分析
 ### 使命驱动 vs 流程驱动：Anthropic 的双重护城河

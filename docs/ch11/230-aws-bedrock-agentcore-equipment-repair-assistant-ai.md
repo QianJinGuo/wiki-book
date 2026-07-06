@@ -50,9 +50,9 @@
 ## 原文链接
 
 ## 相关实体
-- [agentops: operationalize agentic ai at scale with amazon bed](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md)
+- [agentops: operationalize agentic ai at scale with amazon bed](../ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md)
 - [how baz improved its ai agent code review accuracy using ama](../ch09/139-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md)
-- [extending mcp support for amazon bedrock agentcore gateway](../ch04/499-amazon-bedrock-agentcore.md)
+- [extending mcp support for amazon bedrock agentcore gateway](../ch04/500-amazon-bedrock-agentcore.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md)
 

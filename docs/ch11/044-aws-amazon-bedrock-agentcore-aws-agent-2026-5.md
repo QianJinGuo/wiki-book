@@ -54,21 +54,21 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 ## 相关实体
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/052-prowler-genai.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch11/229-aws-bedrock-agentcore.md)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/499-amazon-bedrock-agentcore.md)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/500-amazon-bedrock-agentcore.md)
 - [OpenClaw多租户迁移: Phase 2&3部署](ch11/213-openclaw.md)
 - [AgentCore Runtime部署Apache Doris MCP Server](ch11/160-apache-doris-mcp-server-quick-suite-ai.md)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/229-aws-bedrock-agentcore.md)
 - [OpenClaw多租户迁移: 背景与架构概览](ch11/213-openclaw.md)
-- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/499-amazon-bedrock-agentcore.md)
+- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/500-amazon-bedrock-agentcore.md)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/033-amazon-bedrock-api.md)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/213-openclaw.md)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/229-aws-bedrock-agentcore.md)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/152-amazon-bedrock.md)
 
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/361-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.md)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/362-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/007-aws-bedrock.md)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/057-amazon-bedrock-claude-prompt-cache.md)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/152-amazon-bedrock.md)- [aws graviton5 m9g/m9gd 实例 ga 公告](../ch01/897-20.md)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](../ch01/897-20.md)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/152-amazon-bedrock.md)- [aws graviton5 m9g/m9gd 实例 ga 公告](../ch01/911-20.md)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](../ch01/911-20.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

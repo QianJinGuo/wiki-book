@@ -260,16 +260,16 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 
 ### 与 Cloud Agent 基础设施
 - [Development environments for your cloud agents](../ch03/045-agent.md) = Cursor 视角：dev environment 配置工具 + 多 repo 环境——**关注 dev tooling**，本文关注 **production runtime 隔离与凭据**
-- [Cloudflare + Claude Managed Agents](../ch01/100-announcing-claude-managed-agents-on-cloudflare.md) = "脑手分离"架构：推理在 Anthropic 平台 + 代码执行在 Cloudflare Sandboxes——**关注架构分工**，本文关注 **平台自身的 hot-swap + 凭据隔离**
-- [Claude Managed Agents 企业边界更新](../ch04/485-claude-managed-agents.md) = 同一系列，**关注企业 hybrid control plane**（self-hosted + Anthropic 推理）
+- [Cloudflare + Claude Managed Agents](../ch01/101-announcing-claude-managed-agents-on-cloudflare.md) = "脑手分离"架构：推理在 Anthropic 平台 + 代码执行在 Cloudflare Sandboxes——**关注架构分工**，本文关注 **平台自身的 hot-swap + 凭据隔离**
+- [Claude Managed Agents 企业边界更新](../ch04/606-claude-managed-agents.md) = 同一系列，**关注企业 hybrid control plane**（self-hosted + Anthropic 推理）
 
 ### 与多租户 / Serverless Agent
-- [OpenClaw → Bedrock AgentCore 多租户迁移](../ch04/499-amazon-bedrock-agentcore.md) = 阿里云/AWS 的多租户 serverless 路径，**关注迁移路径**
+- [OpenClaw → Bedrock AgentCore 多租户迁移](../ch04/500-amazon-bedrock-agentcore.md) = 阿里云/AWS 的多租户 serverless 路径，**关注迁移路径**
 - [AgentScope Builder](../ch05/038-agent-harness.md) = 阿里云 Harness 框架 + 平台化，**关注 harness 框架**
 - [Stripe Agent 经济基础设施 5 套图谱](../ch03/045-agent.md) = 关注 **agent 经济层基础设施**（支付/钱包/订阅），**与本文 runtime 隔离互补**
 
 ### 与 RAG / Agent 评估
-- [RAG 技术框架的演进方向](../ch01/1019-rag.md) = 关注 **retrieval 充分性**（充分上下文智能体 = 信息的"够不够"判断）
+- [RAG 技术框架的演进方向](../ch01/1033-rag.md) = 关注 **retrieval 充分性**（充分上下文智能体 = 信息的"够不够"判断）
 - **本文 = 关注 runtime 充分性**（状态 / 代码 / 凭据的"够不够"判断 + ownership 边界）
 
 ### 与上下文隔离
@@ -277,7 +277,7 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 - **本文 = 关注 execution boundary 内的多租户隔离**——**两者维度不同，但思想相通**："默认不可信 + 强制隔离 + 边界归一"
 
 ### 与阿里云 Agentic Cloud
-- [阿里云 Agentic Cloud](../ch04/320-agentic-cloud.md) = 关注 **云平台级别的 agent-as-a-service**（Bailian/Qwen/MaaS）——**关注平台对外的能力**
+- [阿里云 Agentic Cloud](../ch04/321-agentic-cloud.md) = 关注 **云平台级别的 agent-as-a-service**（Bailian/Qwen/MaaS）——**关注平台对外的能力**
 - **本文 = 关注平台对内的工程化**（snapshot + hot-swap + 凭据隔离）——**关注平台自身的建设**
 
 ## 实战检查清单（4 条铁律 → 9 项检查）
