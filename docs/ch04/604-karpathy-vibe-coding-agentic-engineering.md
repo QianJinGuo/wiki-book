@@ -48,7 +48,7 @@ Agentic Engineering 需要接口级约定：Agent 能看到哪些上下文、能
 
 ## 关联条目
 - [同主题入库（宝玉解读、不同角度）](ch03/045-agent.md)
-- [Harness Engineering — Agent 工程化落地的实践体系](ch05/009-harness.md)
+- [Harness Engineering — Agent 工程化落地的实践体系](ch05/085-harness.md)
 - [Vibe Coding 主题入库文章](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-vibe-coding-to-agentic-engineering.md)
 
 ## 深度分析
@@ -66,10 +66,10 @@ Agentic Engineering 需要接口级约定：Agent 能看到哪些上下文、能
 5. **区分"品味问题"和"能力问题"来调整优化方向：** 如果 Agent 生成的代码能跑但臃肿、缺乏优雅抽象，这大概率是因为审美和简洁性尚未进入 RL 奖励环境，而非模型理解力不足。对此的应对策略是：建立代码审查规范，用 human-in-the-loop 弥补 RL 训练的空缺，而不是指望模型自我进化。
 
 ## 相关实体
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/196-tencent-vibe-coding-to-agentic-engineering-backend.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)

@@ -45,7 +45,7 @@
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/213-openclaw.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/213-openclaw.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

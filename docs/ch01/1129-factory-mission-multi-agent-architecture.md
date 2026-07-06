@@ -135,7 +135,7 @@ Factory 押注模型会持续 speciate（分化），而不是收敛到单一 su
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](ch03/045-agent.md)
 - [OpenClaw 多智能体团队搭建实战经验](ch03/045-agent.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/317-agent-principle-architecture-engineering-practice.md)
-- [Agent Harness 架构](ch05/009-harness.md)
+- [Agent Harness 架构](ch05/085-harness.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

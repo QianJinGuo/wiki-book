@@ -51,7 +51,7 @@ Memory safety vulner
 - [Memory In The Llm Era Iclr2026](ch01/216-0.md)
 - [Openchronicle Memory Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/openchronicle-memory-layer.md)
 - [Hermes 9 Module Architecture Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-9-module-architecture-winty.md)
-- [Openclaw Prompt Context Harness](ch05/009-harness.md)
+- [Openclaw Prompt Context Harness](ch05/085-harness.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

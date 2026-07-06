@@ -22,7 +22,7 @@ Miles 的核心设计是将 RL 训练分解为四个可组合层：Ray 负责分
 
 ## 相关实体
 
-- [SGLang](ch01/692-1-sglang-radixark-ai.md) — Miles 使用 SGLang 作为 rollout 引擎
+- [SGLang](ch01/666-1-sglang-radixark-ai.md) — Miles 使用 SGLang 作为 rollout 引擎
 - [LLM RL 算法概览](ch01/216-0.md)
 - [DeepSeek V4 训练方法论](ch04/069-ai.md)
 - [前沿后训练配方回顾](ch04/069-ai.md)

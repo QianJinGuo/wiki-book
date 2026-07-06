@@ -17,8 +17,8 @@
 
 ## 相关实体
 - [Schemaflow Openai Cookbook Staged Agentic Workflow](ch04/069-ai.md)
-- [Prompt Context Harness Three Evolutions](ch05/009-harness.md)
-- [From Prompt To Harness Claude Official](ch05/009-harness.md)
+- [Prompt Context Harness Three Evolutions](ch05/085-harness.md)
+- [From Prompt To Harness Claude Official](ch05/085-harness.md)
 - [Claude Code Large Codebase Harness Configuration](ch03/075-claude-code.md)
 - [Openai Skills Shell Compaction Agent Primitives](ch04/258-skill.md)
 

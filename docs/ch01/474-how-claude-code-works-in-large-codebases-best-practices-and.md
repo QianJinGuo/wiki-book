@@ -8,11 +8,11 @@
 - 评分：v=7 × c=8 = 56
 - The article is a well-structured, informative piece on deploying Claude Code at scale. It provides practical patterns, clear explanations of technical concepts (harness, extension points, LSP integrat
 ## 相关实体
-- [How_Claude_Code_Works_In_Large_Codebases](ch01/485-claude.md)
+- [How_Claude_Code_Works_In_Large_Codebases](ch01/1022-claude.md)
 - [Claude Code Self Repair Hooks Memory Config](ch04/069-ai.md)
 - [Code Review Graph](ch01/653-claude-code-code-review-graph.md)
 - [Claude Code Hackathon Winners 2026](ch03/075-claude-code.md)
-- [Claude Code Harness Deep Understanding](ch01/484-claude-code-harness-deep-understanding.md)
+- [Claude Code Harness Deep Understanding](ch01/456-claude-code-harness-deep-understanding.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md)
 

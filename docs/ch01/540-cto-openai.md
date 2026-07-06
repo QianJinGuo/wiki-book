@@ -16,7 +16,7 @@
 本文报道 2026 年 OpenAI 内部权力斗争公开化的关键庭审过程，涉及 Musk 对 OpenAI 改组的诉讼以及公司内部高管矛盾的公开化。来源为新智元（量子位公众号），属于科技媒体对公开庭审事件的报道性文章。
 
 ## 相关实体
-- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](ch01/784-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md)
+- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](ch01/759-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md)
 - [奥特曼最险一战前女Cto当庭翻脸Openai权斗彻底打到台前](ch04/069-ai.md)
 - [Openai Buys Ai Consultancy Enterprises](ch04/069-ai.md)
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](ch01/307-agi.md)
@@ -27,12 +27,12 @@
 - [Openai官方Cli上线跟复杂的Sdk说拜拜](ch04/069-ai.md)
 - [Ciodive Openai Daybreak Cyber Threats](ch04/069-ai.md)
 - [快来和Ai实战派一起Aiaigc峰会最新嘉宾阵容来了](ch04/069-ai.md)
-- [Ai True Moat Organizational Capability](ch01/806-ai-true-moat-organizational-capability.md)
+- [Ai True Moat Organizational Capability](ch01/780-ai-true-moat-organizational-capability.md)
 - [The Anti Singularity](ch01/1117-the-anti-singularity.md)
 - [Wiki Evolver Skill System Design Gpt55 Copilot Session](ch07/015-wiki-evolver.md)
-- [Gpt 54 Is A Big Step For Codex](ch01/542-codex.md)
+- [Gpt 54 Is A Big Step For Codex](ch01/516-codex.md)
 - [Yann Dubois Openai Post Training Matt Turck Interview](ch04/069-ai.md)
-- [Codex Sites Cloudflare Worker One Click Deploy Geekhome](ch01/542-codex.md)
+- [Codex Sites Cloudflare Worker One Click Deploy Geekhome](ch01/516-codex.md)
 - [Prime Intellect Auto Nanogpt Opus 2930](ch01/216-0.md)
 - [Gpt 5 It Just Does Stuff](ch01/322-gpt-5-it-just-does-stuff.md)
 - [Three Years From Gpt 3 To Gemini 3](ch01/335-three-years-from-gpt-3-to-gemini-3.md)

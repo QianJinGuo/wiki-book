@@ -14,8 +14,8 @@
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/216-0.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
-- [Anthropic Computer Use 最佳实践](ch01/831-anthropic-computer-use.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/485-claude.md)
+- [Anthropic Computer Use 最佳实践](ch01/855-anthropic.md)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1022-claude.md)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/075-claude-code.md)
 - [Claude Code Agent 工程设计](ch03/075-claude-code.md)

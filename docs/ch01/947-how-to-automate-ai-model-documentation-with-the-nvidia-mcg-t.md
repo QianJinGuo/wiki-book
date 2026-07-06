@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
-- [reducing container cold start times using soci index on dlam](ch01/1074-reducing-container-cold-start-times-using-soci-index-on-dlam.md)
+- [reducing container cold start times using soci index on dlam](ch01/1084-reducing-container-cold-start-times-using-soci-index-on-dlam.md)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](ch01/871-steering.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 
@@ -36,10 +36,10 @@ How to Automate AI Model Documentation with the NVIDIA MCG Toolkit 涉及archite
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/213-openclaw.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1046-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1057-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 
 ## 实践启示
 1. **工程落地**: architecture领域方案需关注可观测性、可维护性和成本效率

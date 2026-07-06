@@ -11,7 +11,7 @@
 - 来源：AWS Machine Learning Blog
 
 ## 相关实体
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/070-building-ai-agents-for-business-support-using-amazon-bedrock.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/073-building-ai-agents-for-business-support-using-amazon-bedrock.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
 - [Build Ai Powered Dashboard Automation Agents With Nlp On Amazon Bedrock Agentcor](ch04/069-ai.md)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/251-bedrock.md)

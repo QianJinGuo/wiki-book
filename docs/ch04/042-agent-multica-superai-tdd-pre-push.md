@@ -231,7 +231,7 @@
 
 **与 [Alibaba Aone Agentic Rd Mode Xiangbangyu](ch03/045-agent.md)**: Aone Agentic RD 模式（向邦煜）讲"组织层重构"——传统协作和分工在 Agent 时代成为效率阻碍，All-in-One 版本化管理。**新文章不讲组织重构，讲具体交付 pipeline 怎么运转**（澄清门 → 方案门 → 实现 → 验收 → 结项），是用具体工程实现验证 Aone 模式的可行性。
 
-**与 [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch05/009-harness.md)**: 阿里泊予的 6 Agent 评测 Harness 视角，**聚焦"评测"环节**（L1/L2/L3 指标、test_runner.py → 评测 Agent 提示词）。新文章聚焦**研发交付全过程**（澄清→方案→实现→验收→结项），是兄弟文章，覆盖不同环节。两者是同一阿里云团队不同角色（泊予 评测 vs 阿里妹 研发交付）的实践。
+**与 [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch05/085-harness.md)**: 阿里泊予的 6 Agent 评测 Harness 视角，**聚焦"评测"环节**（L1/L2/L3 指标、test_runner.py → 评测 Agent 提示词）。新文章聚焦**研发交付全过程**（澄清→方案→实现→验收→结项），是兄弟文章，覆盖不同环节。两者是同一阿里云团队不同角色（泊予 评测 vs 阿里妹 研发交付）的实践。
 
 **与 [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch04/069-ai.md)**: 腾讯 CodeBuddy L1→L2→L3 演进视角，**6 个试点需求 90% 代码采纳率等数据**。新文章阿里云视角，**没有量化数据但有具体技能名（superai-*）+ 具体平台（Multica）+ 具体门禁（pre-push hook）**。两边互补：腾讯讲 L1→L3 演进框架，阿里讲具体某阶段的工程化深度。
 
@@ -289,10 +289,10 @@
 
 - [Multica Managed Agents Platform](ch07/059-multica-managed-agents.md) — 新文章选用的运行时平台
 - [Alibaba Aone Agentic Rd Mode Xiangbangyu](ch03/045-agent.md) — 阿里 Aone Agentic RD 模式（组织层重构视角）
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch05/009-harness.md) — 阿里泊予 评测 Harness 视角（兄弟文章）
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch05/085-harness.md) — 阿里泊予 评测 Harness 视角（兄弟文章）
 - [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch04/069-ai.md) — 腾讯 CodeBuddy L1→L2→L3 演进
 - [Ai Native Rd Org Design](ch04/069-ai.md) — AI 原生研发组织设计
-- [Agent Harness Context Management Working Set](ch05/009-harness.md) — Agent Harness 上下文管理
+- [Agent Harness Context Management Working Set](ch05/085-harness.md) — Agent Harness 上下文管理
 - [Agent Skill Writing Guide](ch04/258-skill.md) — Skill 编写基础
 - [Agent Skill Writing Practices](ch04/258-skill.md) — Skill 编写实战（决策树替代模糊判断）
 - [Agent Role Specialization](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-role-specialization.md) — 多角色 Agent 协作

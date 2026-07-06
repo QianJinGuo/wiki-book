@@ -13,7 +13,7 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - **评分**: score=80
 
 ## 与现有知识库内容的关联
-- [Claude Managed Agents](ch04/592-claude-managed-agents.md) — 托管 Harness 平台
+- [Claude Managed Agents](ch04/603-claude-managed-agents.md) — 托管 Harness 平台
 - [Agent/Skills/Teams 架构演进与选型](ch04/258-skill.md) — Anthropic Skills 认知一致性机制
 - [Skill 形式化理论](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) — Skill 的六元组定义与 DAG 步骤计划
 
@@ -46,8 +46,8 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/258-skill.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/258-skill.md)
-- [Anthropic Computer Use 最佳实践](ch01/831-anthropic-computer-use.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/485-claude.md)
+- [Anthropic Computer Use 最佳实践](ch01/855-anthropic.md)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1022-claude.md)
 - [SkillClaw](ch04/258-skill.md)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/258-skill.md)
 

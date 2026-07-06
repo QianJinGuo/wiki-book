@@ -12,7 +12,7 @@
 
 - **M**（Main instruction）：主指令文档，告诉 Agent 怎么做
 - **R**（Resources）：辅助资源（模板、脚本、参考资料等）
-- **C**（Condition）：触发条件，什么时候该用这个技能 See also [Harness Engineering](ch05/061-harness-engineering.md)
+- **C**（Condition）：触发条件，什么时候该用这个技能 See also [Harness Engineering](ch05/091-harness-engineering.md)
 
 ### 三种技能类型
 | 类型 | 特点 | 代表 |

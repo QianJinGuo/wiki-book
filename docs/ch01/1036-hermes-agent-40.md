@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [codex discovered a hidden http/2 bomb](ch01/542-codex.md)
+- [codex discovered a hidden http/2 bomb](ch01/516-codex.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hermes-agent-tool-system-analysis.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)

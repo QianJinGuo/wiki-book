@@ -11,8 +11,8 @@
 - [Llm Steering Behavior Guidance](ch01/1171-llm.md)
 - [Wetesteddeepseekv4Proandflashagainstclau](ch04/069-ai.md)
 - [Wetesteddeepseekv4Proandflashagainstclau](ch04/069-ai.md)
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/295-deepseek-v4.md)
-- [Deepseek V4 Pro Vs Claude](ch01/295-deepseek-v4.md)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/305-deepseek-v4.md)
+- [Deepseek V4 Pro Vs Claude](ch01/305-deepseek-v4.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-flash-means-llm-steering-is-interesting-again.md)
 

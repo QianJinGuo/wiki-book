@@ -13,10 +13,10 @@
 
 ## 相关实体
 - [告别氛围编程基于 Harness 治理和 Sdd 的团队级 Ai 研发范式演进与实践](ch04/069-ai.md)
-- [Wow Harness V3 Governance Protocol](ch05/009-harness.md)
+- [Wow Harness V3 Governance Protocol](ch05/085-harness.md)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/069-ai.md)
 - [Stepan Gershuni Ai Native Startup Guide](ch04/069-ai.md)
-- [Oz Multi Harness Cloud Agent Orchestration](ch05/009-harness.md)
+- [Oz Multi Harness Cloud Agent Orchestration](ch05/085-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-sdd-duiwu-ai-fullstack-dewux.md)
 

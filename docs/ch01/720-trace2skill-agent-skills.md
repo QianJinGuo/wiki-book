@@ -12,8 +12,8 @@
 - 根据新轨迹顺序式更新 skill bank，容易把局部 lesson 直接糊到技能上，得到碎片化、局部过拟合的结果
 
 ## 相关实体
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch05/009-harness.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch05/009-harness.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch01/216-0.md)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch01/216-0.md)
 - [Yidian Tianxia Context Engineering Agentic Ai](ch04/241-yidian-tianxia-context-engineering-agentic-ai.md)
 - [Agentic Ai System Architecture Harness Skill Mcp](ch04/258-skill.md)
 - [Memory Agent Systems Cobanov](ch04/512-memory-agent-systems-cobanov.md)

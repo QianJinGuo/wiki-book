@@ -38,7 +38,7 @@ Meanwhile, the Gemini app is preparing to add more integrations with third-party
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/761-openai-gpt-realtime-voice-models-qbitai.md)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
-- [Rag技术框架的演进方向](ch01/309-rag.md)
+- [Rag技术框架的演进方向](ch01/1019-rag.md)
 - [Restive Ventures Announces 45M Fund Iii To Back Ai Native Financial Services Tar](ch04/069-ai.md)
 - [Alphaevolve Deepmind Discovery Agent](ch03/045-agent.md)
 

@@ -9,7 +9,7 @@
 - 将调试工作流从人工排查转变为自然语言问答
 ## 相关实体
 - [Seer Agent Workshop](ch03/045-agent.md)
-- [Introducing The Ettin Reranker Family](ch01/478-introducing-the-ettin-reranker-family.md)
+- [Introducing The Ettin Reranker Family](ch01/451-introducing-the-ettin-reranker-family.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 - [Alphaevolve Deepmind Discovery Agent](ch03/045-agent.md)
 - [Ai Agents Inside Perimeter Hackernews](ch04/069-ai.md)

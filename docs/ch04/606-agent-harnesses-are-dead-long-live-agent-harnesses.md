@@ -80,7 +80,7 @@ CrewAI 同时构建了框架（CrewAI Flows）和 Harness（CrewAI Crews and Age
 - [Hermes Agent Operator](ch03/045-agent.md)
 - [Harness Engineering 核心模式](ch03/075-claude-code.md)
 - [Claude Code 动态工作流](ch04/069-ai.md)
-- [Harness Generator-Evaluator](ch05/009-harness.md)
+- [Harness Generator-Evaluator](ch05/085-harness.md)
 - [Agent Reliability Engineering](ch04/258-skill.md)
 - [当 AI 构建自身](ch04/069-ai.md)
 - [Prime Intellect Auto NanoGPT](ch01/216-0.md)

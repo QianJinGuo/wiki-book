@@ -77,10 +77,10 @@ survey 指出一个值得注意的产业演化趋势：从 agent frameworks 到 
 **对于评估和验证团队**：Verification & evaluation 当前在开源生态中已有 21 个主要项目，覆盖相对完整。但关键缺口在于 trace-native failure diagnosis——现有的评估方案多依赖事后 log 分析而非实时轨迹质量判断。建议投入资源建立以 trace 为核心对象的 evaluation 基础设施。
 ## 相关实体
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch04/069-ai.md)
-- [Harness Engineering Alibaba Java Case Study](ch05/009-harness.md)
+- [Harness Engineering Alibaba Java Case Study](ch05/085-harness.md)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](ch09/047-coding-agent.md)
-- [Harness Engineering Systematic Framework](ch05/009-harness.md)
-- [Agentscope Java Harness Framework](ch05/009-harness.md)
+- [Harness Engineering Systematic Framework](ch05/085-harness.md)
+- [Agentscope Java Harness Framework](ch05/085-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-engineering-survey-2026.md)
 

@@ -35,7 +35,7 @@ Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606 涉及agen
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/216-0.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/213-openclaw.md)
 

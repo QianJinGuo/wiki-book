@@ -153,7 +153,7 @@
 | [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](ch04/069-ai.md) | **同源早期表述** | 2026-04-29 阿里云"一晚上自动评测和优化你的系统"平台（评测→优化三轮 90.7→97.4→99.1），可能是 AgentLoop 早期形态或同系列产品 |
 | [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/045-agent.md) | **理论框架** | 阿里"四阶段六维度"Agent 进化理论框架 |
 | [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/069-ai.md) | **AWS 平行方案** | Amazon Bedrock AgentCore Quality Evaluations |
-| [Better Harness Eval Trace Harness Hill Climbing](ch05/009-harness.md) | **trace 评估方法** | trace 级 harness 爬坡的工程方法 |
+| [Better Harness Eval Trace Harness Hill Climbing](ch05/085-harness.md) | **trace 评估方法** | trace 级 harness 爬坡的工程方法 |
 
 ## 六、关键概念辨析
 

@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [claude skill 质检工具 skill craft](ch04/258-skill.md)
-- [code intelligence – changelog](ch04/442-code-intelligence-changelog.md)
+- [code intelligence – changelog](ch04/444-code-intelligence-changelog.md)
 - [opd revisiting failure modes simple fixes storm](ch04/069-ai.md)
 - [what i’ve been building: atom report, post-training course,](ch04/069-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
@@ -36,7 +36,7 @@ Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606 涉及agent领�
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/213-openclaw.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/216-0.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)

@@ -131,7 +131,7 @@ Skill和MCP的选择本质上是「按需加载」和「全量加载」的选择
 原文：https://mp.weixin.qq.com/s/rKnNaGJnlfhdIufpGDuHuQ
 
 ## 相关实体
-- [Harness Engineering Reliable Long Term Agent](ch05/009-harness.md)
+- [Harness Engineering Reliable Long Term Agent](ch05/085-harness.md)
 - [Harness Engineering Jk Launcher Baijiajie](ch04/069-ai.md)
 - [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](ch09/047-coding-agent.md)
 - [Anthropic Coding Agents Social Science Survey 2026](ch09/047-coding-agent.md)

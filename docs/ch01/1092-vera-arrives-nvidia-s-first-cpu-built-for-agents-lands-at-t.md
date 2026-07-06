@@ -17,7 +17,7 @@ NVIDIA Vera 是全球首款专为 AI Agent 场景设计的 CPU，标志着芯片
 - **行业信号**：Vera 进入头部 Labs 意味着 Agent 推理芯片正在从"可有可无"变成"基础设施层"，建议提前研究 Agent 专用芯片对现有架构（基于 GPU 的 vLLM/Ollama）的影响，尤其是推理延迟和成本结构
 - **技术跟进**：密切注意 NVIDIA 未来软件栈（CUDA、TensorRT-LLM、NIM）对 Vera 的支持节奏，硬件就绪不等于软件就绪，生态成熟度是决定 Agent 落地速度的关键变量
 ## 相关实体
-- [Nvidia Nemotron 3 Agents Rag Voice Safety](ch01/309-rag.md)
+- [Nvidia Nemotron 3 Agents Rag Voice Safety](ch01/1019-rag.md)
 - [Blogs.Nvidia.Com Vera Cpu Delivery](https://github.com/QianJinGuo/wiki/blob/main/entities/blogs.nvidia.com-vera-cpu-delivery.md)
 - [Anthropic Demystifying Evals For Ai Agents](ch04/423-anthropic-demystifying-evals-for-ai-agents.md)
 - [Nvidia Edge First Llms Av Robotics](ch01/310-nvidia-edge-first-llms-av-robotics.md)

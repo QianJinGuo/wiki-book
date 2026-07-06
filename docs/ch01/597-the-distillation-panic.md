@@ -23,7 +23,7 @@ type: entity
 
 - [Qwen Image Flash Beyond Objective Design](ch01/1157-qwen-image-flash-beyond-objective-design-few-step-distill.md)
 - [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](ch04/069-ai.md)
-- [Interconnects The Inevitable Need For An Open Model Consortium](ch01/1103-the-inevitable-need-for-an-open-model-consortium.md)
+- [Interconnects The Inevitable Need For An Open Model Consortium](ch01/1075-the-inevitable-need-for-an-open-model-consortium.md)
 ## 深度分析
 
 ### 术语污名化的系统性风险

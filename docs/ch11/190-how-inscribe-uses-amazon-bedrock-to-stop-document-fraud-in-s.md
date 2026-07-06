@@ -53,8 +53,8 @@ Inscribe 的 AWS 基础设施设计体现了生产级 Agentic AI 的几个关键
 
 ## 相关实体
 
-- [Amazon Bedrock AgentCore](ch05/009-harness.md)
-- [Bedrock Claude Prompt Cache](ch01/485-claude.md)
+- [Amazon Bedrock AgentCore](ch05/085-harness.md)
+- [Bedrock Claude Prompt Cache](ch01/1022-claude.md)
 - [Bedrock Cross-Region Inference](ch11/251-bedrock.md)
 - [Agentic AI 系统架构](ch04/258-skill.md)
 - [Bedrock Serverless Inference](ch11/251-bedrock.md)

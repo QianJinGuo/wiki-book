@@ -119,7 +119,7 @@ Agent 像运维工程师一样执行完整诊断流程：
 
 ## 相关实体
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Harness Engineering 10 Step Practical Guide 2026](ch05/009-harness.md)
+- [Harness Engineering 10 Step Practical Guide 2026](ch01/216-0.md)
 - [Claude Code Multi Agent Harness Source Analysis](ch03/075-claude-code.md)
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](ch04/069-ai.md)
 

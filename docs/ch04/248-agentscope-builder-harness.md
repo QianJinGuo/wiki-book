@@ -99,7 +99,7 @@ fork 机制尤其关键：它解决了一个根本矛盾——「我想用你的
 
 ## 相关主题
 
-- [AgentScope Java Harness Framework 企业分布式版](ch05/009-harness.md) — 同一作者，更早的框架介绍
+- [AgentScope Java Harness Framework 企业分布式版](ch05/085-harness.md) — 同一作者，更早的框架介绍
 ## 相关实体
 
 - [enterprise readiness maturity model](ch11/207-enterprise-readiness-maturity-model.md)

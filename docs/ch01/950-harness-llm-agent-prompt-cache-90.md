@@ -49,7 +49,7 @@ Harness 工程分享：LLM Agent 的 prompt cache 命中率 90% 实战 涉及age
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/069-ai.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/075-claude-code.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
 

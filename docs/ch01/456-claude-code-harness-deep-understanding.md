@@ -14,7 +14,7 @@
 ## 相关实体
 - [Claude Code Harness Deep Dive Founder Park](ch03/075-claude-code.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/075-claude-code.md)
-- [From Prompt To Harness Claude Official](ch05/009-harness.md)
+- [From Prompt To Harness Claude Official](ch05/085-harness.md)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](ch03/075-claude-code.md)
 - [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](ch03/075-claude-code.md)
 

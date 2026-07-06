@@ -105,7 +105,7 @@ LLM 的输入本质上是一个**单一的、连续的文本流**。这与人类
 
 - [Hermes Agent Self-Evolving](ch03/045-agent.md) — Agent 安全治理
 - Agent Security Threat Model — Agent 安全威胁模型
-- [Agent Harness Context Management](ch05/009-harness.md) — 上下文管理中的安全挑战
+- [Agent Harness Context Management](ch05/085-harness.md) — 上下文管理中的安全挑战
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程中的安全设计
 
 ## 参考

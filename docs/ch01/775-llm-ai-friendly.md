@@ -19,7 +19,7 @@
 - [from silos to service topology: why netflix built a real-tim](ch11/008-from-silos-to-service-topology-why-netflix-built-a-real-tim.md)
 - [nemotron 3.5 content safety: customizable multimodal safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)
 - [perplexity 首次公开了内部 skill 设计指南](ch04/258-skill.md)
-- [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](ch01/777-qoder.md)
+- [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](ch01/789-qoder.md)
 - [天猫新品团队ai编码实战指南（下）](ch04/069-ai.md)
 - [我把 claude design 做成了 skill，人人都能成为顶级网站设计师](ch04/258-skill.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-friendly-architecture-design-taobao.md)
@@ -56,7 +56,7 @@
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/216-0.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/213-openclaw.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/213-openclaw.md)

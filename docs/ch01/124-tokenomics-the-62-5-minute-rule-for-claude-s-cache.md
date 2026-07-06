@@ -7,7 +7,7 @@
 ## 核心要点
 -
 ## 相关实体
-- [Tokenomics The 625 Minute Rule For Claudes Cache](ch01/485-claude.md)
+- [Tokenomics The 625 Minute Rule For Claudes Cache](ch01/1022-claude.md)
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch04/069-ai.md)
 - [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch04/069-ai.md)
 - [Introducing Claude For Small Business](ch01/027-introducing-claude-for-small-business.md)

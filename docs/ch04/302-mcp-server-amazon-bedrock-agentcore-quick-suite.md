@@ -14,7 +14,7 @@
 ## 相关实体
 - [AgentCore Runtime部署Apache Doris MCP Server](ch04/069-ai.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch03/045-agent.md)
-- [AgentCore Managed Harness](ch05/009-harness.md)
+- [AgentCore Managed Harness](ch05/085-harness.md)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/045-agent.md)
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch03/045-agent.md)
 - [OpenClaw多租户迁移: Phase 2&3部署](ch11/213-openclaw.md)

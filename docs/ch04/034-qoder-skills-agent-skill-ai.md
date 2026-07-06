@@ -356,7 +356,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [Agent Skill 设计模式](ch04/258-skill.md)（Anthropic → Google 演进）
 - [重新定义Skill开发：保姆级教程](ch04/258-skill.md)
 - [你写的 Skill，及格了吗？](ch04/258-skill.md)（skill-judge 对照）
-- [Harness Engineering 90 Percent Pillars](ch05/009-harness.md)（与 Skill 同源的工程化思路）
+- [Harness Engineering 90 Percent Pillars](ch01/216-0.md)（与 Skill 同源的工程化思路）
 - [Qoder Skills 完全指南](ch07/031-qoder-skills.md)
 - [qoder skills](ch07/031-qoder-skills.md)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/258-skill.md)
@@ -370,7 +370,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [十年老技术开发的 AI Agent 探索之路](ch04/069-ai.md)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/258-skill.md)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/258-skill.md)
-- [Garry Tan](ch01/601-garry-tan.md)
+- [Garry Tan](ch01/611-garry-tan.md)
 - [Agent Workflows](ch04/323-agent-workflows.md)
 - [Hermes Agent](ch03/090-hermes-agent.md)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
@@ -385,7 +385,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
 - [Gemini Deep Guide Prompt](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-deep-guide-prompt.md)
 - [Promptqueue Opengorilla Project Analysis Ljguo](https://github.com/QianJinGuo/wiki/blob/main/entities/promptqueue-opengorilla-project-analysis-ljguo.md)
-- [qoder 团队知识引擎](ch01/777-qoder.md)
+- [qoder 团队知识引擎](ch01/789-qoder.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 2nd Source 原文存档

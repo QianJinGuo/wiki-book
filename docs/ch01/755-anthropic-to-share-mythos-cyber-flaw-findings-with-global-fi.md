@@ -9,7 +9,7 @@
 ## 相关实体
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/110-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md)
 - [Japan Pm Cybersecurity Review Anthropic Mythos](ch01/855-anthropic.md)
-- [Xero Announces Integration With Anthropics Claude](ch01/485-claude.md)
+- [Xero Announces Integration With Anthropics Claude](ch01/1022-claude.md)
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/069-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 

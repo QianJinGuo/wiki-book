@@ -75,7 +75,7 @@ AgentCore Identity的Token Vault存储access token和refresh token（当OAuth pr
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/257-amazon-nova.md)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](ch11/210-restrict-access-to-sensitive-documents-in-your-amazon-quick.md)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/665-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
-- [AgentCore Managed Harness](ch05/009-harness.md)
+- [AgentCore Managed Harness](ch05/085-harness.md)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](ch04/069-ai.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/069-ai.md)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch01/216-0.md)

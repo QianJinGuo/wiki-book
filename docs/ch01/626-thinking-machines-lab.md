@@ -76,7 +76,7 @@ OpenAI、Google、Meta FAIR 的研究部门正在变成高级 AI 人才的中转
 - [Thinking Machines Interaction Models](ch04/237-thinking-machines-interaction-models.md)
 - [Yann Dubois Openai Post Training Interview](ch04/069-ai.md)
 - [Microsoft Agent Framework Python Full Guide Zizhi](ch03/045-agent.md)
-- [Kimi Work Codex Vibe Working Paradigm Shift](ch01/542-codex.md)
+- [Kimi Work Codex Vibe Working Paradigm Shift](ch01/516-codex.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai.md)
 

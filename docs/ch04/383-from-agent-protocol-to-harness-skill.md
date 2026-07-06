@@ -48,15 +48,15 @@ Agent Protocol → MCP Tool Calling → A2A Collaboration → Harness Skill
 5. **建立 Skill 版本管理和回滚机制**。当 Skill 升级导致回归问题时，需要能快速回退到历史版本。建议每个 Skill 维护独立的版本号（语义化版本），并在 Agent 初始化时锁定 Skill 版本。运行时动态加载最新 Skill 版本的功能应仅在充分测试后开启。
 
 ## 相关实体
-- [Agent Harness 架构](ch05/009-harness.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch05/009-harness.md)
+- [Agent Harness 架构](ch05/085-harness.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch05/085-harness.md)
 - [Claude Code 源码核心机制详解](ch03/075-claude-code.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/317-agent-principle-architecture-engineering-practice.md)
 - [柚漫剧 AI 全流程提效拆解](ch04/069-ai.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/196-tencent-vibe-coding-to-agentic-engineering-backend.md)
 - [Design Patterns for AI Agents 2026](ch04/069-ai.md)
 
-- [Agent架构关键变化：Harness正在成为新后端](ch05/009-harness.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch05/085-harness.md)
 - [harness-engineering-systematic-explainer](ch04/069-ai.md)
 - [claude-code-7-layer-memory-architecture](ch03/075-claude-code.md)
 - [AI Agent 工程师能力地图](ch04/069-ai.md)

@@ -144,7 +144,7 @@ Outcomes grader 的有效性取决于 rubric 质量。建议 rubric 设计原则
 ## 相关实体
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch03/045-agent.md)
 - [Claude Managed Agents Official](ch04/511-claude-managed-agents-official.md)
-- [Claude Managed Agents](ch04/592-claude-managed-agents.md)
+- [Claude Managed Agents](ch04/603-claude-managed-agents.md)
 - [Anthropic Claude Managed Agents Platform Launch](ch03/045-agent.md)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/216-0.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)

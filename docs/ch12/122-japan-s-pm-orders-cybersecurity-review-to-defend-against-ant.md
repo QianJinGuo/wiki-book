@@ -30,7 +30,7 @@
 
 ## 相关实体
 - [Anthropic PM 的 Agentic 工作流](ch03/045-agent.md)
-- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](ch12/105-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.md)
+- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](ch01/855-anthropic.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
 

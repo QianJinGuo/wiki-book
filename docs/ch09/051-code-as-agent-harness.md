@@ -106,16 +106,16 @@ Code as Agent Harness 可以被视为 Software 2.0（以神经网络替代手工
 
 ## 相关实体
 - [Design Patterns for AI Agents 2026](ch04/069-ai.md)
-- [Agent Harness 架构](ch05/009-harness.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Agent Harness 架构](ch05/085-harness.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Agent架构关键变化：Harness正在成为新后端](ch05/009-harness.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch05/085-harness.md)
 - [harness-engineering-systematic-explainer](ch04/069-ai.md)
 
 - [Claude Code 架构深度解析](ch03/075-claude-code.md)
 - [Claude Code Prompt 提示词体系源码解析](ch03/075-claude-code.md)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](ch03/075-claude-code.md)
-- [AgentCore Managed Harness](ch05/009-harness.md)
+- [AgentCore Managed Harness](ch05/085-harness.md)
 - [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [AI Agent 工程师能力地图](ch04/069-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)

@@ -6,10 +6,10 @@
 
 # Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶
 ## 相关实体
-- [Pi Mono Github](ch01/772-pi-mono-github.md)
+- [Pi Mono Github](ch01/747-pi-mono-github.md)
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/761-openai-gpt-realtime-voice-models-qbitai.md)
-- [Harness Engineering Three Evolutions](ch05/009-harness.md)
+- [Harness Engineering Three Evolutions](ch05/085-harness.md)
 - [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](ch01/420-deepseek.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)

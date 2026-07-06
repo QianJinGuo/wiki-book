@@ -20,7 +20,7 @@
 
 | 层次 | 对应路线 | 核心能力 | 代表系统 |
 |------|---------|---------|---------|
-| **理解层**（上下文） | 个人上下文 | 用户意图理解、上下文记忆、偏好推断 | [Agent Harness 工作集管理](ch05/009-harness.md) |
+| **理解层**（上下文） | 个人上下文 | 用户意图理解、上下文记忆、偏好推断 | [Agent Harness 工作集管理](ch05/085-harness.md) |
 | **学习层**（进化） | 自我进化 | 经验沉淀、Skills 版本化、可审计的回滚 | [Small Hermes 自我进化架构](ch03/045-agent.md) |
 | **行动层**（执行力） | 执行力 | 工具调用、任务分解、可靠执行 | [Agent 编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) |
 
@@ -55,7 +55,7 @@ Agent能力越强，治理越重要。成熟Agent的关键词不是"完全自主
 6. **Skill版本管理** — 技能迭代有版本号、可对比、可回滚
 7. **数据访问控制** — 敏感数据的访问级别和范围精确管控
 
-参考：[Agent Harness Engineering Survey](ch05/009-harness.md) 中的 ETCLOVG 治理维度。
+参考：[Agent Harness Engineering Survey](ch01/216-0.md) 中的 ETCLOVG 治理维度。
 
 ## 模型非唯一壁垒
 

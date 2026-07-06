@@ -89,9 +89,9 @@ Agent-EvalKit 团队在 Strands Agents SDK + Bedrock 旅行研究 agent 上跑 1
 ## 相关实体
 
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch03/045-agent.md) — YAML 驱动的 AgentEval 框架，Go 实现
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch05/009-harness.md) — 阿里云泊予用 Claude Code 搭建评测 Harness
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch05/085-harness.md) — 阿里云泊予用 Claude Code 搭建评测 Harness
 - [Langsmith Evaluation Concepts](ch03/126-langsmith-evaluation-concepts.md) — LangSmith 评测概念框架
-- [Agent Harness Observability Production](ch05/009-harness.md) — Agent harness 生产可观测性
+- [Agent Harness Observability Production](ch05/085-harness.md) — Agent harness 生产可观测性
 - [Agent Memory Evaluation Landscape Taobao Survey](ch03/045-agent.md) — Agent 记忆评估方法论全景
 - [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](ch01/216-0.md)
 - [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](ch03/045-agent.md)

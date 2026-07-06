@@ -138,7 +138,7 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 - `Agent Skill Writing Evaluation` — Skill 评测相关
 
 ## 相关实体
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/257-lbs-intentbench.md)
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/262-lbs-intentbench.md)
 - [9个Agent技能模块化SageMaker微调生命周期](ch04/069-ai.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/258-skill.md)
 - [SkillX — 层次化技能知识库](ch04/258-skill.md)

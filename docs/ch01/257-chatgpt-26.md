@@ -25,7 +25,7 @@ source_url: https://mp.weixin.qq.com/s/XaleRcQthIPkiS1rvikwUg
 - ##  第一代 AI 原住民
 
 ## 相关实体
-- [ChatGPT官宣26位未来之星](ch01/987-chatgpt.md)
+- [ChatGPT官宣26位未来之星](ch01/667-chatgpt.md)
 
 ## 深度分析
 **跨越"作业工具"的认知边界**

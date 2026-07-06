@@ -15,7 +15,7 @@ code-review-graph 是一个本地知识图谱工具，专为 Claude Code 等 AI 
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](ch03/075-claude-code.md)
 - [Claude Code Self Repair Hooks Memory Config](ch04/069-ai.md)
 - [Claude Code Hackathon Winners 2026](ch03/075-claude-code.md)
-- [Claude Code Harness Deep Understanding](ch01/484-claude-code-harness-deep-understanding.md)
+- [Claude Code Harness Deep Understanding](ch01/456-claude-code-harness-deep-understanding.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-review-graph.md)
 

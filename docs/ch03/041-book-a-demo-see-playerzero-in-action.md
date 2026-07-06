@@ -29,7 +29,7 @@
 ## 相关实体
 - [Hs.Playerzero Ai Code Review](ch04/069-ai.md)
 - [Aws Reinvent Game Demo 2024 25](ch11/221-aws-reinvent-game-demo-2024-25.md)
-- [Claude For Small Business](ch01/485-claude.md)
+- [Claude For Small Business](ch01/1022-claude.md)
 - [Notebook Lm](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md)
 - [Kuse Junior Ai Employee](ch04/069-ai.md)
 

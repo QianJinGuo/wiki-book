@@ -83,14 +83,14 @@ Cursor 另外看了两个代理指标：
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch03/045-agent.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/061-harness-engineering.md)
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/009-harness.md)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/091-harness-engineering.md)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/085-harness.md)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/213-openclaw.md)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch04/069-ai.md)
 
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](ch03/045-agent.md)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch04/069-ai.md)
-- [Agent架构关键变化：Harness正在成为新后端](ch05/009-harness.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch05/085-harness.md)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/075-claude-code.md)
 - [吴恩达：AI 将最先杀死前端](ch04/069-ai.md)
@@ -101,7 +101,7 @@ Cursor 另外看了两个代理指标：
 - [你写的 Skill，及格了吗？](ch04/258-skill.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch03/045-agent.md)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch01/216-0.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch05/009-harness.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch05/085-harness.md)
 
 ---
 

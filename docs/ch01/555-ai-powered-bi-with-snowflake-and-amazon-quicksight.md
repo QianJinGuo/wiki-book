@@ -98,7 +98,7 @@ Snowflake Semantic View 是一种原生 schema 对象，将业务定义直接附
 Semantic Views 的应用不止于 BI：
 
 - **[SchemaFlow](ch04/069-ai.md)**：Agent 驱动的数据库 SQL 生成，同样需要语义约束
-- **[Data-Native Agents](ch04/464-how-to-build-agents-where-data-already-lives.md)**：Agent 直接在数据平台上运行，语义层是关键基础设施
+- **[Data-Native Agents](ch04/466-how-to-build-agents-where-data-already-lives.md)**：Agent 直接在数据平台上运行，语义层是关键基础设施
 - **RAG + Semantic View**：QuickSight 的 Quick Space 支持基于语义层的 RAG，进一步扩展应用场景
 
 ### Open Semantic Interchange (OSI) 倡议

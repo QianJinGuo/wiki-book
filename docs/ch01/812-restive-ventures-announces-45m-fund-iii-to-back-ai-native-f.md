@@ -12,11 +12,11 @@
 *   [Follow on Google News](https://news.google.com/publications/CAAqBwgKMMfxpQswn_y9Aw?oc=3&ceid=GB:en&hl=en-GB&gl=GB)
 
 ## 相关实体
-- [Introducing Claude Platform On Aws](ch01/511-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
+- [Introducing Claude Platform On Aws](ch01/139-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
 - [The 1 Ai Agent For Financial Services Fin](ch04/535-the-1-ai-agent-for-financial-services-fin.md)
-- [Rag技术框架的演进方向](ch01/309-rag.md)
+- [Rag技术框架的演进方向](ch01/1019-rag.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/restive-ventures-announces-45m-fund-iii-to-back-ai-native-financial-services-tar.md)
 

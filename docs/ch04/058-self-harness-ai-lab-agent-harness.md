@@ -271,19 +271,19 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 ## 与现有实体的互补关系
 
 - [Agent 自我改进六条路](ch03/045-agent.md) — L6 Meta-Harness 编排自优化的"同模型自举"实现
-- [Agent Harness 工程学调研 2026](ch05/009-harness.md) — Self-Harness 是该领域的最新论文
-- [Agent Harness 工程学调研 etcvlovg Taxonomy](ch05/009-harness.md)
-- [Agent Production Harness Engineering](ch05/009-harness.md)
+- [Agent Harness 工程学调研 2026](ch01/216-0.md) — Self-Harness 是该领域的最新论文
+- [Agent Harness 工程学调研 etcvlovg Taxonomy](ch05/085-harness.md)
+- [Agent Production Harness Engineering](ch05/085-harness.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Harness as Product Surface](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-as-product-surface.md)
 - [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)
 - [AI 自我改进自举](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md)
 - [Evaluation Harness Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
 - [Verifier-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
-- [SGLang](ch01/692-1-sglang-radixark-ai.md) — Qwen3.5 部署用到的推理引擎
+- [SGLang](ch01/666-1-sglang-radixark-ai.md) — Qwen3.5 部署用到的推理引擎
 - [DeepAgent 架构演进](ch04/069-ai.md) — 初始 Harness 基于 DeepAgent SDK
-- [ByteDance TRAE Harness Engineering Guide](ch05/009-harness.md)
-- [复旦 AHE Agentic Harness Engineering](ch05/009-harness.md)
+- [ByteDance TRAE Harness Engineering Guide](ch05/085-harness.md)
+- [复旦 AHE Agentic Harness Engineering](ch05/085-harness.md)
 - [Harness Engineering 七层架构](ch03/075-claude-code.md)
 - [Harness Component Expiry and Build-to-Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md) — Self-Harness 的"接受门"是这一思想的工程化实现
 

@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [读完这篇，你就搞懂 deepseek v4 了](ch01/295-deepseek-v4.md)
+- [读完这篇，你就搞懂 deepseek v4 了](ch01/305-deepseek-v4.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gepa-optimize-anything-universal-text-optimization.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
@@ -50,7 +50,7 @@ oa.
 
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/216-0.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1046-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1057-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)

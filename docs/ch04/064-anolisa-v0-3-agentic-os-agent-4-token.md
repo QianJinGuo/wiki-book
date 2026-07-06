@@ -189,7 +189,7 @@ ANOLISA v0.3 架构
 - **ANOLISA = 4 层安全防护（提示词/代码/供应链/系统基线）** + 1 层"快照回滚"（可恢复）
 - 共同点：都强调"infra 决定 agent 自主空间"+"给 infra 补能力"
 
-### vs [wow-harness v3](ch05/009-harness.md)
+### vs [wow-harness v3](ch05/085-harness.md)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - ANOLISA = **操作系统层 Agentic OS**（叠加在传统 OS 上的转换层）
 - 共同点：都强调"治理"是 AI Agent 落地的关键
@@ -204,12 +204,12 @@ ANOLISA v0.3 架构
 - **ANOLISA = 阿里系统级安全 / Token / 快照基础设施**
 - 共同点：都强调"基础设施决定 AI 自主空间"
 
-### vs [Kimi Work](ch01/542-codex.md)
+### vs [Kimi Work](ch01/516-codex.md)
 - Kimi Work = Harness 搬到本地桌面（**单用户本地**）
 - **ANOLISA = 阿里云 ECS 镜像 + Agentic OS**（**云端系统级**）
 - 共同点：都强调"为 AI 套上家 / 套上 OS"
 
-### vs [Agent Harness 架构](ch05/009-harness.md)
+### vs [Agent Harness 架构](ch05/085-harness.md)
 - 7 层 harness 模型 = 抽象框架
 - **ANOLISA = 具体落地：3 大可观测（AgentSight）+ 4 层安全（AgentSecCore）+ 1 层快照（ws-ckpt）**
 
@@ -268,11 +268,11 @@ ANOLISA v0.3 架构
 
 ## 相关对照
 - [晓斌 Agent-Oriented Infra](ch03/045-agent.md) —— 哲学框架
-- [wow-harness v3](ch05/009-harness.md) —— 协议层治理
+- [wow-harness v3](ch05/085-harness.md) —— 协议层治理
 - [MAC Skills + Hooks](ch04/258-skill.md) —— 工程师个人框架
 - [高德 AI-Native 生产线](ch04/069-ai.md) —— 企业级 R&D
-- [Kimi Work](ch01/542-codex.md) —— 本地 Agent
-- [Agent Harness 架构](ch05/009-harness.md) —— 7 层模型
+- [Kimi Work](ch01/516-codex.md) —— 本地 Agent
+- [Agent Harness 架构](ch05/085-harness.md) —— 7 层模型
 - [Microsoft Build 2026](ch04/069-ai.md) —— 全栈 AI
 - [PilotDeck](ch03/045-agent.md) —— 多项目隔离
 

@@ -33,7 +33,7 @@
 5. **独立验证**（sub-agent/reviewer/测试）——避免「自写自审」的反馈缺失
 6. **状态记忆**（plan.md、issue、日志）——让下一轮能接上前一轮
 
-这个清单与 [Harness Engineering](ch05/061-harness-engineering.md) 的核心组件（tool / context / verifier）有强对应关系，但**Loop 比 Harness 高一层**：Harness 管「这一次任务怎么跑」，Loop 管「这类任务怎么持续发生」。
+这个清单与 [Harness Engineering](ch05/091-harness-engineering.md) 的核心组件（tool / context / verifier）有强对应关系，但**Loop 比 Harness 高一层**：Harness 管「这一次任务怎么跑」，Loop 管「这类任务怎么持续发生」。
 
 ### 单 Agent 循环 vs Fleet 循环
 

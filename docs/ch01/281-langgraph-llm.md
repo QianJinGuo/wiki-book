@@ -299,12 +299,12 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 - [Gepa Optimize Anything](ch01/379-gepa-optimize-anything.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 - [How Open Model Ecosystems Compound](ch01/823-how-open-model-ecosystems-compound.md)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/295-deepseek-v4.md)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/305-deepseek-v4.md)
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md)
 
 - [Tomtunguz Ai Model Inflation](ch04/069-ai.md)
 - [Hiclaw 发布 V110提供 Kubernetes 集群部署实现支持 Hermes Worker 运行时](ch01/216-0.md)
-- [Llava Onevision 2 Full Frame Rate Vlm Glintlab](ch01/759-vlm.md)
+- [Llava Onevision 2 Full Frame Rate Vlm Glintlab](ch01/734-vlm.md)
 - [We Let Four Ais Run Radio Stations Heres What Happened](ch04/069-ai.md)
 - [Liangzi Recruitment](https://github.com/QianJinGuo/wiki/blob/main/entities/liangzi-Recruitment.md)
 - [Lightfield Ai Pipeline Generation](ch04/069-ai.md)
@@ -316,7 +316,7 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 - [Ghostbyt3 Github Io Blog Nday Research Ai](ch04/069-ai.md)
 - [Ai Friendly Architecture Design](ch04/069-ai.md)
 - [Obsidian Llm Wiki Local Kytmanov 2026](ch01/216-0.md)
-- [Olmo Hybrid And Future Llm Architectures](ch01/486-olmo-hybrid-and-future-llm-architectures.md)
+- [Olmo Hybrid And Future Llm Architectures](ch01/459-olmo-hybrid-and-future-llm-architectures.md)
 - [Ai Friendly Architecture Design Taobao](ch04/069-ai.md)
 - [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](ch04/069-ai.md)
 

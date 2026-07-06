@@ -253,7 +253,7 @@ MSA 论文花了大量篇幅讲"试过、没用、砍掉"：
 ## 与现有实体的互补关系
 
 - [MiniMax M3 开源 Frontier 模型](ch09/071-minimax-m3-frontier.md) — MSA 是 M3 的核心架构创新
-- [DeepSeek V4 Flash Pro 1M 上下文](ch01/295-deepseek-v4.md) — 压得狠路线的最新代表
+- [DeepSeek V4 Flash Pro 1M 上下文](ch01/305-deepseek-v4.md) — 压得狠路线的最新代表
 - [DeepSeek V4 训练方法学](ch04/069-ai.md) — 训练配方对比
 - [Lighthouse Attention](https://github.com/QianJinGuo/wiki/blob/main/entities/lighthouse_attention.md) — 另一款稀疏 attention 方案（对称 Q/K/V 池化）
 - [Attention Mechanism](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md) — 稀疏注意力的概念基础

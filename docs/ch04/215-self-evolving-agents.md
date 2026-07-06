@@ -73,7 +73,7 @@ Model-Environment Co-Evolution 的两个方向：
 3. **Co-Evolution 环境的技术要求**：如果目标是构建支持 Model-Environment Co-Evolution 的平台，需要满足：a）环境能生成多样化的任务（task generation）；b）环境能提供可验证的 reward signal；c）环境能按 Agent 能力调整难度（curriculum）。这是比简单模拟器复杂得多的工程系统。
 
 ## 相关实体
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/140-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/142-skillos-learning-skill-curation-for-self-evolving-agents.md)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/258-skill.md)
 
 - [Hermes Agent 自进化机制源码解析](ch03/045-agent.md)

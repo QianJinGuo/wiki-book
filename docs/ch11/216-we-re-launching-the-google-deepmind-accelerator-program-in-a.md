@@ -9,7 +9,7 @@
 - v×c = 7×8 = 56，stars = 4
 
 ## 相关实体
-- [Intelligent Radiology Workflow Optimization With Ai Agents](ch04/302-intelligent-radiology-workflow-optimization-with-ai-agents.md)
+- [Intelligent Radiology Workflow Optimization With Ai Agents](ch04/304-intelligent-radiology-workflow-optimization-with-ai-agents.md)
 - [Amazon Nova Act Is Now Hipaa Eligible](ch04/430-amazon-nova-act-is-now-hipaa-eligible.md)
 - [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/665-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Improve Bot Accuracy With Amazon Lex Assisted Nlu](ch01/655-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)

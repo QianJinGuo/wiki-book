@@ -97,7 +97,7 @@
 - [Claude Code Commands Usage Guide](ch03/075-claude-code.md)
 
 - [这样的程序员应该招吗](https://github.com/QianJinGuo/wiki/blob/main/entities/这样的程序员应该招吗.md)
-- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/485-claude.md)
+- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/1022-claude.md)
 - [Claude Code Prompt Source Analysis Fanone](ch03/075-claude-code.md)
 - [Claude Code Html Artifact Workflow Ifanr](ch03/075-claude-code.md)
 - [Claude Code Team 10 Tips Boris Data派Thu](ch03/075-claude-code.md)
@@ -113,7 +113,7 @@
 - [Claude Code Dynamic Workflows Zhuge6 Yucheng Translation](ch03/075-claude-code.md)
 - [Claude Code And What Comes Next](ch01/469-claude-code-and-what-comes-next.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
-- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/485-claude.md)
+- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/1022-claude.md)
 - [Dingtalk Qoder Claudecode Dual Engine Ai Assistant](ch04/069-ai.md)
 
 ---

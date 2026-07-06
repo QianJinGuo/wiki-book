@@ -23,7 +23,7 @@
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/045-agent.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/251-bedrock.md)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/069-ai.md)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/485-claude.md)
+- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/1022-claude.md)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch03/045-agent.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch03/045-agent.md)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch03/045-agent.md)

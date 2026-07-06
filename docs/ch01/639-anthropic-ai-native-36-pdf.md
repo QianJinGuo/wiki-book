@@ -14,7 +14,7 @@ The Founder's Playbook
 **本译本仅供个人学习与内部研究使用，不做商业发行。**原版下载请到 claude.com/blog/the-founders-playbook。
 
 ## 相关实体
-- [Introducing Claude Platform On Aws](ch01/511-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
+- [Introducing Claude Platform On Aws](ch01/139-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch03/045-agent.md)
 - [Anthropic Pm Jess Yan Managed Agents](ch03/045-agent.md)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/216-0.md)

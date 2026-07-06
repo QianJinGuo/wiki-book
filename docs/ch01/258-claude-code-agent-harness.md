@@ -68,7 +68,7 @@ CLAUDE.md 文件从根目录向下逐层加载：
 
 **@include 指令**让一个 CLAUDE.md 可以拉入其他文件（最多 5 层深度）。**`git worktree` 兼容性**——避免同一份规则被重复加载。
 
-这与 [Claude Code Harness Deep Understanding](ch01/484-claude-code-harness-deep-understanding.md) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
+这与 [Claude Code Harness Deep Understanding](ch01/456-claude-code-harness-deep-understanding.md) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
 
 ### 4. 完整上下文包：用户消息只是冰山一角
 
@@ -172,7 +172,7 @@ Claude Code 不是用一种方式处理上下文膨胀，而是分层处理：
 
 历史教训：1,279 个会话连续失败 3,000+ 次，每天浪费 25 万次 API 调用——**任何自动化机制都必须有熔断**。
 
-这与 [Harness 状态边界与失败闭环](ch05/009-harness.md) 中关于"边界即熔断点"的工程哲学一致——失败应当被显式处理，而非无限循环。
+这与 [Harness 状态边界与失败闭环](ch05/085-harness.md) 中关于"边界即熔断点"的工程哲学一致——失败应当被显式处理，而非无限循环。
 
 ### 9. Plan Mode：行为引导而非权限关闭
 
@@ -303,11 +303,11 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 
 - [两万字详解 Claude Code 源码核心机制](ch03/075-claude-code.md)
 - [Claude Code Harness 深度解析](ch03/075-claude-code.md)
-- [Claude Code Harness 深度理解](ch01/484-claude-code-harness-deep-understanding.md)
+- [Claude Code Harness 深度理解](ch01/456-claude-code-harness-deep-understanding.md)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](ch03/045-agent.md)
 - [Harness Engineering Core Patterns](ch03/075-claude-code.md)
-- [Harness 状态边界与失败闭环](ch05/009-harness.md)
+- [Harness 状态边界与失败闭环](ch05/085-harness.md)
 - [Factory Mission Multi-Agent 系统](ch04/069-ai.md)
 - [Claude Managed Agents 企业自托管](ch03/045-agent.md)
 - [OpenClaw 多 Agent 团队实践](ch04/043-openclaw-multi-agent-team-practice-v2.md)

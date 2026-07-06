@@ -6,7 +6,7 @@
 
 ## 产品概述
 
-LobeHub 是一个协作式 Agent 平台，其核心产品"Your Chief Agent Operator"（CAO）定位为用户的 AI 首席运营官。平台围绕 **Operate（运营）**、**Create（创建）**、**Collaborate（协作）**、**Evolve（进化）** 四大能力维度构建，已在 GitHub 累计获得 77.4K Stars。 See also [Harness Engineering](ch05/061-harness-engineering.md)
+LobeHub 是一个协作式 Agent 平台，其核心产品"Your Chief Agent Operator"（CAO）定位为用户的 AI 首席运营官。平台围绕 **Operate（运营）**、**Create（创建）**、**Collaborate（协作）**、**Evolve（进化）** 四大能力维度构建，已在 GitHub 累计获得 77.4K Stars。 See also [Harness Engineering](ch05/091-harness-engineering.md)
 
 ### 核心功能矩阵
 

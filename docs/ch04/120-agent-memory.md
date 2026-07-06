@@ -67,7 +67,7 @@ Memory 不只是存储，而是 Harness 里的一层控制面——解决"哪些
 
 ## 关联实体
 - [Hermes Agent 记忆系统](ch03/045-agent.md) — 本文的 memory 管理理念与 Hermes 实现直接对应
-- [Agent Harness 上下文管理](ch05/009-harness.md) — Memory 是 Harness 控制面的一层
+- [Agent Harness 上下文管理](ch05/085-harness.md) — Memory 是 Harness 控制面的一层
 - [Claude Code Agent 工程化](ch03/075-claude-code.md) — CLAUDE.md / AGENTS.md 工作区文件实践
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化控制面
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-memory-architecture-past-influence-future-ruofei.md)
@@ -153,10 +153,10 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 - [ai agent memory systems](ch04/069-ai.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/317-agent-principle-architecture-engineering-practice.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [Agent Harness 架构](ch05/009-harness.md)
+- [Agent Harness 架构](ch05/085-harness.md)
 - [Agent 自我改进的六条路](ch03/045-agent.md)
-- [Agent架构关键变化：Harness正在成为新后端](ch05/009-harness.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch05/009-harness.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch05/085-harness.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch05/085-harness.md)
 - [AI Coding Agent 记忆系统](ch04/069-ai.md)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)

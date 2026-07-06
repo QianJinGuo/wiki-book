@@ -20,7 +20,7 @@ _Meta engineers burned 60 trillion AI tokens in 30 days. Anthropic has compresse
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Americans still feel pessimistic about the economy. When will it change?](ch01/1111-consumer-confidence.md)
+- [Americans still feel pessimistic about the economy. When will it change?](ch01/1190-consumer-confidence.md)
 
 ## 深度分析
 "The Token Economy"这篇文章揭示了当前AI领域一个核心矛盾：**算力投入与实际产出的极度不对称**。Meta在30天内燃烧60万亿AI tokens，Anthropic将产品周期压缩到数天——这些是头部玩家的游戏。与此同时，90%的企业表示AI对生产力或就业没有任何影响。这三个事实同时成立，说明AI行业存在严重的**资源错配与期望落差**。

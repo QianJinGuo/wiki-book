@@ -10,7 +10,7 @@
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](ch04/069-ai.md)。 相关主题通过 [CUGA: IBM Research Enterprise Agent Harness](ch05/009-harness.md) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](ch04/069-ai.md)。 相关主题通过 [CUGA: IBM Research Enterprise Agent Harness](ch05/085-harness.md) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -23,7 +23,7 @@
 ## 相关实体
 
 - [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](ch04/069-ai.md)
-- [CUGA: IBM Research Enterprise Agent Harness](ch05/009-harness.md)
+- [CUGA: IBM Research Enterprise Agent Harness](ch05/085-harness.md)
 - [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/258-skill.md)
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch03/045-agent.md)
 - [Claude Managed Agents 新更新\"专属云\"模式：把Agent的手放回企业内部](ch03/045-agent.md)

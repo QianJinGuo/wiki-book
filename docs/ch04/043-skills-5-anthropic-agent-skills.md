@@ -281,8 +281,8 @@ Spec 驱动原则强调项目评估、技术方案等前置环节的准确性—
 
 ### 9.2 Harness / 工具 / 范式相关
 
-- [Harness Engineering Paradigm Comprehensive 2026](ch05/009-harness.md)：Harness Engineering 综合论述（2026 年真正重要的是 Harness）
-- [Harness Engineering Core Patterns](ch05/009-harness.md)：Harness Engineering 核心模式（持久化指令/分层记忆/Session-Harness-Sandbox/凭证安全）
+- [Harness Engineering Paradigm Comprehensive 2026](ch01/216-0.md)：Harness Engineering 综合论述（2026 年真正重要的是 Harness）
+- [Harness Engineering Core Patterns](ch05/085-harness.md)：Harness Engineering 核心模式（持久化指令/分层记忆/Session-Harness-Sandbox/凭证安全）
 - [Claude Code Skills Mcp Rules Source Analysis](ch04/258-skill.md)：Claude Code Skills/MCP/Rules 源码分析
 - [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](ch04/069-ai.md)：OpenSpec 工具（本文阶段 3 SDD 直接使用）+ Superpowers 工程取舍
 

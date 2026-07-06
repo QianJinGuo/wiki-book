@@ -56,7 +56,7 @@ CloudWatch 告警的 AlarmDescription 字段应包含结构化业务上下文（
 - [AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](ch07/043-aws-devops-agent-mcp-server.md)
 - [AWS Reinvent Game Demo 2024-25](ch11/221-aws-reinvent-game-demo-2024-25.md)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)
-- [AgentCore Managed Harness](ch05/009-harness.md)
+- [AgentCore Managed Harness](ch05/085-harness.md)
 - [AI Agent 工程师能力地图](ch04/069-ai.md)
 - [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](ch03/045-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)

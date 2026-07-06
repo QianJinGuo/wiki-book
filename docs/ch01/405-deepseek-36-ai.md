@@ -13,14 +13,14 @@
 ## 相关实体
 - [Deepseek Code Harness](ch09/076-deepseek-code-harness.md)
 - [Nathan Lambert Claude Mythos Open Weights](ch01/471-nathan-lambert.md)
-- [Deepseek V4 Pro Vs Claude](ch01/295-deepseek-v4.md)
+- [Deepseek V4 Pro Vs Claude](ch01/305-deepseek-v4.md)
 - [Deepseek Moe Parallel Strategy](ch01/420-deepseek.md)
 - [Deepseek V4 Training Methodology](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/chinese-ai-lab-insights-nathan.md)
 
 - [Linn Fritz Looks At The Lighter Side Of Life](ch09/117-linn-fritz-looks-at-the-lighter-side-of-life.md)
-- [deepseek-v4深度拆解一篇论文同时做了五件大事](ch01/295-deepseek-v4.md)
+- [deepseek-v4深度拆解一篇论文同时做了五件大事](ch01/305-deepseek-v4.md)
 
 ## 文化背景：为什么中国实验室擅长追赶前沿
 ### Ego 与全栈优化的矛盾

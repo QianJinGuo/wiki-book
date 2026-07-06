@@ -13,7 +13,7 @@ Anthropic 的 Alex Albert 最近上了一期播客，聊了聊他们内部是怎
 前 Claude Relations 负责人
 
 ## 相关实体
-- [Claude Opus 47](ch01/485-claude.md)
+- [Claude Opus 47](ch01/1022-claude.md)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch03/045-agent.md)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/216-0.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/075-claude-code.md)

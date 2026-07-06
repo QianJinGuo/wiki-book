@@ -83,7 +83,7 @@ AI2 在强化学习领域的贡献（如 RLHF 相关研究）为 [MOC](https://g
 
 - [Demis Hassabis Yc Interview Jiedaotixi](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-jiedaotixi.md)
 - [Code As Agent Harness Survey 2026](ch09/051-code-as-agent-harness.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1046-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1057-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 

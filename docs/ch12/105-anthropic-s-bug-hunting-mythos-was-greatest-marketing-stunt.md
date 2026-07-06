@@ -44,8 +44,8 @@ cURL 项目创始人 Daniel Stenberg 测试了 Anthropic 的 Mythos AI 安全扫
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [Anthropic Mythos Bug Hunting Marketing](ch01/855-anthropic.md)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch03/045-agent.md)
-- [Harness Engineering Three Evolutions](ch05/009-harness.md)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/485-claude.md)
+- [Harness Engineering Three Evolutions](ch05/085-harness.md)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/1022-claude.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

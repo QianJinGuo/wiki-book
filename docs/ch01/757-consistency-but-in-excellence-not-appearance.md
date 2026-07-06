@@ -52,7 +52,7 @@ Nielsen 的观察触及了当代 design systems 运动的核心悖论。Design s
 
 ### 对 AI 生成设计的隐含批判
 
-在 AI 设计工具（如 [Claude Design](ch01/485-claude.md)）兴起的背景下，Nielsen 的论点具有特殊的现实意义。AI 工具天然倾向于生成"typical"的输出——统计意义上的平均值，而非 "iconic" 的个体表达。如果设计系统已经将一致性推向极致，AI 工具则将这一趋势推向了它的逻辑终点。
+在 AI 设计工具（如 [Claude Design](ch01/1022-claude.md)）兴起的背景下，Nielsen 的论点具有特殊的现实意义。AI 工具天然倾向于生成"typical"的输出——统计意义上的平均值，而非 "iconic" 的个体表达。如果设计系统已经将一致性推向极致，AI 工具则将这一趋势推向了它的逻辑终点。
 
 ## 实践启示
 
@@ -63,7 +63,7 @@ Nielsen 的观察触及了当代 design systems 运动的核心悖论。Design s
 
 ## 相关实体
 
-- [Penpot: Claude Design 不是企业设计的未来](ch01/485-claude.md) — AI 设计工具的局限性
+- [Penpot: Claude Design 不是企业设计的未来](ch01/1022-claude.md) — AI 设计工具的局限性
 - [文档组织: 为人类和 AI](ch04/069-ai.md) — 系统化结构 vs 知识发现
 - Design Systems — 设计系统的理论与实践
 

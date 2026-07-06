@@ -84,7 +84,7 @@
 - [Codex Goal Agent Runtime](ch09/046-codex-goal.md)
 - [Codex Goal 实现拆解](ch09/046-codex-goal.md)
 - [Codex Computer Use](ch09/114-codex-can-now-control-other-desktop-devices-via-computer-use.md)
-- [Codex 自主赚钱](ch01/542-codex.md)
+- [Codex 自主赚钱](ch01/516-codex.md)
 - [Claude Code vs Codex 上下文架构](ch03/075-claude-code.md)
 - [Meta Skill](ch07/023-meta-skill.md)（Skill 2.0 抽象）
 - [扣子 3.0 协作系统](ch01/216-0.md)（同类协作产品）

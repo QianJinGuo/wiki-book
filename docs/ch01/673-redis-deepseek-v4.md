@@ -18,9 +18,9 @@ source_url: https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ
 - ##  One more thing
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/295-deepseek-v4.md)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/305-deepseek-v4.md)
 - [ds4c deepseek v4 antirez](ch01/505-ds4c-deepseek-v4-antirez.md)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/295-deepseek-v4.md)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/305-deepseek-v4.md)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch04/069-ai.md)
 
 ## 深度分析

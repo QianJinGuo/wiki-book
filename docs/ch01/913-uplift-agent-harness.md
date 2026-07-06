@@ -10,8 +10,8 @@
 
 - [xz, two years on: what scanners still cannot catch](ch01/633-xz.md)
 - [一个 mission 跑 16 天、烧 7.78 亿 token：factory 公开了多 agent 系统的构建哲学](ch03/045-agent.md)
-- [gemma 4 and what makes an open model succeed](ch01/643-gemma-4-and-what-makes-an-open-model-succeed.md)
-- [model-harness-fit-agent-harness](ch05/009-harness.md)
+- [gemma 4 and what makes an open model succeed](ch01/653-gemma-4-and-what-makes-an-open-model-succeed.md)
+- [model-harness-fit-agent-harness](ch05/085-harness.md)
 - [what i’ve been building: atom report, post-training course,](ch04/069-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-uplift-model-iteration-agent-long-running-harness.md)
 
@@ -52,7 +52,7 @@ Gaode Uplift Model Iteration Agent Long Running Harness 涉及agent领域的核�
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/213-openclaw.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/213-openclaw.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch01/216-0.md)
 

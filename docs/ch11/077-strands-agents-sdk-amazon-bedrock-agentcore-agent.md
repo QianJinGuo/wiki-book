@@ -89,7 +89,7 @@ vision Agent 的 system prompt 中最值得借鉴的是「**严格排除**」清
 
 ## 相关实体
 
-- [Agentcore Harness](ch05/009-harness.md) — AgentCore Harness 综述
+- [Agentcore Harness](ch05/085-harness.md) — AgentCore Harness 综述
 - [Agentcore Managed Harness](ch04/216-agentcore-managed-harness.md) — Managed Harness 定位与权衡
 - [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](ch03/045-agent.md) — AgentCore Runtime 深度分析
 - [Agentcore Payments X402 Agentic Commerce](ch01/216-0.md) — AgentCore 在支付场景的应用

@@ -17,7 +17,7 @@
 - [Amazon Bedrock Model Inference Serverless Architecture Case Study](ch11/251-bedrock.md)
 - [Nvidia Agentic Systems Extreme Co Design](ch03/045-agent.md)
 - [Sensnova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/295-deepseek-v4.md)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/305-deepseek-v4.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www.blocksandfiles.com-5241795.md)
 

@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [the inevitable need for an open model consortium](ch01/1103-the-inevitable-need-for-an-open-model-consortium.md)
+- [the inevitable need for an open model consortium](ch01/1075-the-inevitable-need-for-an-open-model-consortium.md)
 - [ai-driven layoffs aren’t making business sense | cio](ch04/069-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5238213.md)
 
@@ -48,7 +48,7 @@ Search
 - **aws趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1046-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1057-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/213-openclaw.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)

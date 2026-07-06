@@ -8,11 +8,11 @@
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/258-skill.md)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/258-skill.md)
 - [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](ch01/677-skills-anthropic-openai-comparison-frontend-design.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch05/009-harness.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch05/085-harness.md)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch03/045-agent.md)
 - [Agent Skill 设计模式](ch04/258-skill.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/485-claude.md)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1022-claude.md)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/075-claude-code.md)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](ch03/075-claude-code.md)
@@ -20,9 +20,9 @@
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [claude-code-agent-view](ch09/001-claude-code-agent-view.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/484-claude-code-harness-deep-understanding.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/456-claude-code-harness-deep-understanding.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
-- [Claude Opus 4.7 发布分析](ch01/485-claude.md)
+- [Claude Opus 4.7 发布分析](ch01/817-claude-opus-4-7.md)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/216-0.md)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/258-skill.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](ch03/075-claude-code.md)
@@ -33,9 +33,9 @@
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/075-claude-code.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
-- [Anthropic Computer Use 最佳实践](ch01/831-anthropic-computer-use.md)
+- [Anthropic Computer Use 最佳实践](ch01/855-anthropic.md)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](ch03/075-claude-code.md)
-- [Harness如何支撑Agent在生产环境稳定运行？](ch05/009-harness.md)
+- [Harness如何支撑Agent在生产环境稳定运行？](ch05/085-harness.md)
 
 ## 深度分析
 Anthropic 官方的 14 个 Agent Skills 设计模式并非零散技巧，而是一套覆盖技能**生命周期全链路**的系统性框架。从「如何被选中」到「如何被执行」，再到「如何被约束」，构成了一个完整的设计维度体系。

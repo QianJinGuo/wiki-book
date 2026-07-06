@@ -59,7 +59,7 @@
 ## 相关实体
 
 - [MCP Server](ch03/045-agent.md)
-- [Agentic Harness Engineering](ch05/009-harness.md)
+- [Agentic Harness Engineering](ch05/085-harness.md)
 - [Agentic AI 系统架构](ch04/258-skill.md)
 - [Token 成本控制](ch09/047-coding-agent.md)
 - [A2A 企业级协议](ch03/045-agent.md)

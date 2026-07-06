@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [claude opus 4.8 系统卡片深度分析](ch01/485-claude.md)
+- [claude opus 4.8 系统卡片深度分析](ch01/1022-claude.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)

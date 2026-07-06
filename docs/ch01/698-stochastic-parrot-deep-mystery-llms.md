@@ -11,7 +11,7 @@ A while back on [X](<https://x.com/emollick/status/1960919256452796440>), Ethan 
 > How does a model using matrix multiplication to predict the next word manage to simulate human thought well enough to do all the very human-like things it does? And what does that mean about us?
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](ch01/822-stochastic-parrot-thought-experiment.md)
+- [Stochastic Parrot Thought Experiment](ch01/797-stochastic-parrot-thought-experiment.md)
 - [Stochastic Parrot Marcus Ai Productivity](ch11/068-stochastic-parrot-marcus-ai-productivity.md)
 - [While Breathless In Stodgy Viridian](ch01/557-while-breathless-in-stodgy-viridian.md)
 - [Aws Reinforcement Fine Tuning Llm As Judge](ch01/1171-llm.md)

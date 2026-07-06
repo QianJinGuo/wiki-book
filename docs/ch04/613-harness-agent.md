@@ -30,7 +30,7 @@ Harness 范式的五大支柱存在结构性层次：上下文管理是底层基
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[高德 Uplift 模型迭代 Agent：长时间运行 Harness](ch05/009-harness.md)。 相关主题通过 [UIUC、Meta、斯坦福等最新综述！Code as Agent Harness](ch09/051-code-as-agent-harness.md) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[高德 Uplift 模型迭代 Agent：长时间运行 Harness](ch05/085-harness.md)。 相关主题通过 [UIUC、Meta、斯坦福等最新综述！Code as Agent Harness](ch09/051-code-as-agent-harness.md) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -42,11 +42,11 @@ Harness 范式的五大支柱存在结构性层次：上下文管理是底层基
 
 ## 相关实体
 
-- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](ch05/009-harness.md)
+- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](ch05/085-harness.md)
 - [UIUC、Meta、斯坦福等最新综述！Code as Agent Harness](ch09/051-code-as-agent-harness.md)
 - [逆天的架构：用 Harness+LangGraph+A2A 写一个 Agent Team](ch03/045-agent.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/075-claude-code.md)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch05/009-harness.md)
+- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch05/085-harness.md)
 
 ---
 

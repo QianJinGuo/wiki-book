@@ -82,8 +82,8 @@ ET = m × (1.0 × I + 0.1 × C + 4.0 × O)
 - → ：本文是 Token 经济学的生产级落地案例
 - → ：MCP 工具注册优化的不同路径（Tool Search vs 裁剪）
 - → ：Subagent 模式的上下文隔离与本文的 CLI subagent 策略互补
-- → [Prompt Caching 工程实践](ch01/303-anthropic-prompt-caching-claude-code.md)：缓存策略是 token 优化的另一维度
-- → [Agent Harness 12 组件与 7 个关键决策](ch05/009-harness.md)：工具选择决策树与本文的 MCP vs CLI 选型呼应
+- → [Prompt Caching 工程实践](ch01/275-anthropic-prompt-caching-claude-code.md)：缓存策略是 token 优化的另一维度
+- → [Agent Harness 12 组件与 7 个关键决策](ch05/085-harness.md)：工具选择决策树与本文的 MCP vs CLI 选型呼应
 - → [Agentic Systems Extreme Co-Design（NVIDIA）](ch03/045-agent.md)：从硬件/推理引擎角度审视 token 效率，与本文的 workflow 层优化形成互补
 
 ## 深度分析

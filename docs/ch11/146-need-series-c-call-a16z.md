@@ -13,7 +13,7 @@ Published Time: 2026-05-19T14:00:52+00:00
 - [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
 - [Aws Bedrock Intelligence Message Defense](ch11/251-bedrock.md)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/485-claude.md)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/1022-claude.md)
 - [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/009-how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/www-a16z-news-need-series-c-call-a16z.md)

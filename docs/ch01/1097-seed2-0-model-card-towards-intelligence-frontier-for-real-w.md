@@ -28,7 +28,7 @@ Seed2.0 是一个模型系列（model series），包含不同规模和能力等
 
 - [豆包 Seed 2.0 Lite：Agent 多模态](ch03/045-agent.md) — Seed2.0 的 Lite 变体，专注 Agent 感官层
 - [豆包 Seed 2.0 Lite](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite.md) — Seed 2.0 Lite 版本总览
-- [ByteDance Trae Harness 工程指南](ch05/009-harness.md) — ByteDance 相关工程实践
+- [ByteDance Trae Harness 工程指南](ch05/085-harness.md) — ByteDance 相关工程实践
 
 ---
 

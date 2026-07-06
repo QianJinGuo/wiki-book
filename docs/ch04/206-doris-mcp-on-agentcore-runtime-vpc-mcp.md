@@ -66,7 +66,7 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 - [AgentCore Runtime部署Apache Doris MCP Server](ch04/069-ai.md)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](ch04/069-ai.md)
 - [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](ch04/258-skill.md)
-- [AgentCore Managed Harness](ch05/009-harness.md)
+- [AgentCore Managed Harness](ch05/085-harness.md)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/045-agent.md)
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch03/045-agent.md)
 - [OpenClaw多租户迁移: Phase 2&3部署](ch11/213-openclaw.md)

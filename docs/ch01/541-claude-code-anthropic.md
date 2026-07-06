@@ -20,7 +20,7 @@ Claude Code正在被部署进数百万行代码的单体仓库、运行了数十
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-large-codebase-enterprise-deployment-anthropic-aihanshijì.md)
 
-- [making claude a chemist](ch01/485-claude.md)
+- [making claude a chemist](ch01/1022-claude.md)
 - [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](ch04/069-ai.md)
 
 ## 深度分析

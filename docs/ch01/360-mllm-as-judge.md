@@ -167,7 +167,7 @@ Strands Evals 的多模态 judge 保持了与文本 judge 完全相同的 `Case`
 ## 相关实体
 - [Yidian Tianxia Context Engineering Agentic Ai Qcon](ch04/069-ai.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
-- [Claude Code Harness Deep Understanding](ch01/484-claude-code-harness-deep-understanding.md)
+- [Claude Code Harness Deep Understanding](ch01/456-claude-code-harness-deep-understanding.md)
 - [Aws Reinforcement Fine Tuning Llm As Judge](ch01/1171-llm.md)
 - [Amazon Bedrock Api Security Guide](ch12/033-amazon-bedrock-api.md)
 

@@ -54,7 +54,7 @@ aily 的 AI编辑部引入了 6 种角色（总编虾、记者虾、编辑虾、
 ## 关联阅读
 
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](ch05/009-harness.md)
+- [Wow Harness V3 Governance Protocol](ch05/085-harness.md)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/045-agent.md)
 - [Ath Agent Trust Handshake Protocol](ch03/045-agent.md)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/258-skill.md)

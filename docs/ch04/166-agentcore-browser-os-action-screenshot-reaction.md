@@ -106,7 +106,7 @@ r = invoke(endpoint, sid, {"mouseClick": {"x": 410, "y": 535, "button": "LEFT"}}
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/257-amazon-nova.md)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/665-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
-- [AgentCore Managed Harness](ch05/009-harness.md)
+- [AgentCore Managed Harness](ch05/085-harness.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/069-ai.md)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch01/216-0.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)

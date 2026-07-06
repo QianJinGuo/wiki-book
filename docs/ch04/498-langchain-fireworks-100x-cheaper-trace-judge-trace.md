@@ -85,7 +85,7 @@ LangChain 通常推荐团队构建**应用特定的评估器**（因为判断 tr
 ## 相关实体
 - [langsmith engine: trace-based self-improving agent](ch03/045-agent.md)
 - [skillsui 企业 agent 中间层](ch04/258-skill.md)
-- [gaode uplift model iteration agent long running harness](ch05/009-harness.md)
+- [gaode uplift model iteration agent long running harness](ch05/085-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langchain-100x-cheaper-trace-judge-fireworks.md)
 

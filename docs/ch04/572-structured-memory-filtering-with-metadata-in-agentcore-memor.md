@@ -43,7 +43,7 @@ AgentCore Memory 通过三层生命周期管理元数据：配置（configuratio
 ## 现有覆盖
 
 - `[Agent 记忆工程挑战 (AWS China)](ch01/216-0.md)` — AgentCore 记忆系统工程实践概述
-- `[AgentCore Harness](ch05/009-harness.md)` — AgentCore 整体平台
+- `[AgentCore Harness](ch05/085-harness.md)` — AgentCore 整体平台
 - `[AI Agent Memory Systems](ch04/069-ai.md)` — Agent 记忆系统综述
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/structured-memory-filtering-metadata-agentcore-memory.md)

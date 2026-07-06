@@ -39,7 +39,7 @@
 
 - [AWS DevOps Agent 接入中国区（一）](ch03/045-agent.md) — 前篇：单账号部署与 MCP 桥接
 - [FinOps 与 DevOps 双 Agent 成本优化](ch03/045-agent.md) — 相关的 Agent 成本治理实践
-- [AgentCore Harness](ch05/009-harness.md) — Agent 基础设施框架
+- [AgentCore Harness](ch05/085-harness.md) — Agent 基础设施框架
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-devops-agent-接入-aws-中国区二多账号扩展跨云接入与无长期-aksk-认证.md)
 

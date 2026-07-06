@@ -406,7 +406,7 @@ Lambda 拦截器可以作为 AgentCore Gateway 的中间件——Gateway 负责�
 - [Amazon Bedrock Agentic Payments Guardrails](ch04/069-ai.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch03/045-agent.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/070-building-ai-agents-for-business-support-using-amazon-bedrock.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/073-building-ai-agents-for-business-support-using-amazon-bedrock.md)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/265-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)

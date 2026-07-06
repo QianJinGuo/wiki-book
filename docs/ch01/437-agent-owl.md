@@ -6,7 +6,7 @@
 
 ** 前言  **
 OWL是一个优秀的开源agent框架，在agent benchmark GAIA上，OWL是表现最好的开源agent框架。虽然deerflow star也不少，但是基于langgraph的实现不太好细究agent底层实现原理。因此本文以OWL代码为例，讲解agent框架的细节实现。OWL其实是对camel库的进一步封装，比如像agent、toolkit等核心代码内容都是在camel库中实现的。
-github仓库地址如下： See also [Agent Harness Architecture](ch05/009-harness.md)
+github仓库地址如下： See also [Agent Harness Architecture](ch05/085-harness.md)
 
 *   *
     https://github.com/camel-ai/camelhttps://github.com/camel-ai/owl

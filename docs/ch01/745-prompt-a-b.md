@@ -14,9 +14,9 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 
 ## 相关实体
 - [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch04/069-ai.md)
-- [Claude Opus 47](ch01/485-claude.md)
-- [Pi Mono Github](ch01/772-pi-mono-github.md)
-- [From Prompt To Harness Claude Official](ch05/009-harness.md)
+- [Claude Opus 47](ch01/1022-claude.md)
+- [Pi Mono Github](ch01/747-pi-mono-github.md)
+- [From Prompt To Harness Claude Official](ch05/085-harness.md)
 - [Aliyun Agentrun 2Line Integration](ch03/045-agent.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prompt-debugger-compare-templates-winty.md)

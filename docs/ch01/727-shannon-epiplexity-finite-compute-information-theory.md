@@ -13,7 +13,7 @@ Shannon 1948 年创立信息论，假设观察者有**无限算力**。这个假
 ## 相关实体
 - [Llm From Scratch 7 Stage Pytorch Tutorial](ch01/1171-llm.md)
 - [Karpathy Llm Wiki V2 2026](ch01/216-0.md)
-- [Chatgpt小心翼翼回复风格技术原因](ch01/987-chatgpt.md)
+- [Chatgpt小心翼翼回复风格技术原因](ch01/667-chatgpt.md)
 - [Skill Rag Tsinghua Sra](ch04/258-skill.md)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/1171-llm.md)
 

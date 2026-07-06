@@ -91,8 +91,8 @@ Mollick 的三变量公式（Human Baseline Time、Probability of Success、AI P
 ### 与相邻观点的张力
 
 - 与 [苦味教训](ch04/319-the-bitter-lesson-versus-the-garbage-can.md)的张力：苦味教训暗示"算力 + 通用方法"会取代"工艺精心设计"；本文强调"管理能力"成为新稀缺——前者是技术派，后者是组织派。
-- 与 [CrewAI 迭代论](ch04/353-your-first-ai-agent-should-do-one-thing-badly.md)的同源：都强调"迭代"与"真实失败数据"的重要性。不同在于本文关注"管理能力"，CrewAI 关注"工程迭代节奏"。
-- 与 [co-existence](ch01/585-co-existence-and-the-end-of-co-intelligence.md) 的互补：co-existence 关注写作/创意领域的人机关系，本文关注商业/管理领域——同一作者的两个互补视角。
+- 与 [CrewAI 迭代论](ch04/361-your-first-ai-agent-should-do-one-thing-badly.md)的同源：都强调"迭代"与"真实失败数据"的重要性。不同在于本文关注"管理能力"，CrewAI 关注"工程迭代节奏"。
+- 与 [co-existence](ch01/595-co-existence-and-the-end-of-co-intelligence.md) 的互补：co-existence 关注写作/创意领域的人机关系，本文关注商业/管理领域——同一作者的两个互补视角。
 
 ## 实践启示
 
@@ -106,11 +106,11 @@ Mollick 的三变量公式（Human Baseline Time、Probability of Success、AI P
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [The Bitter Lesson Versus The Garbage Can](ch04/319-the-bitter-lesson-versus-the-garbage-can.md)
 - [Claude Code And What Comes Next](ch01/469-claude-code-and-what-comes-next.md)
-- [Your First Ai Agent Should Do One Thing Badly](ch04/353-your-first-ai-agent-should-do-one-thing-badly.md)
-- [Co Existence And The End Of Co Intelligence](ch01/585-co-existence-and-the-end-of-co-intelligence.md)
+- [Your First Ai Agent Should Do One Thing Badly](ch04/361-your-first-ai-agent-should-do-one-thing-badly.md)
+- [Co Existence And The End Of Co Intelligence](ch01/595-co-existence-and-the-end-of-co-intelligence.md)
 - [Giving Your Ai A Job Interview](ch11/125-giving-your-ai-a-job-interview.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)

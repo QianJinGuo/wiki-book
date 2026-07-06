@@ -34,7 +34,7 @@ System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Wei
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/213-openclaw.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 
 ## 实践启示
 1. **工程落地**: article领域方案需关注可观测性、可维护性和成本效率

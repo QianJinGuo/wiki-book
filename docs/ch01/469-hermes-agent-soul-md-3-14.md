@@ -140,7 +140,7 @@ SOUL.md 是持久人格基线。临时换风格用 `/personality`。
 - [Hermes Agent V014 Architecture Shugex](ch01/216-0.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/075-claude-code.md)
-- [From Prompt To Harness Claude Official](ch05/009-harness.md)
+- [From Prompt To Harness Claude Official](ch05/085-harness.md)
 - [Harness Engineering 核心模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

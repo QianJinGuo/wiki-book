@@ -45,8 +45,8 @@
 - [Language Models and Meaning](ch01/488-language-models-and-meaning.md)
 - [Reinforcing Recursive Language Models | alphaXiv](ch01/804-reinforcing-recursive-language-models-alphaxiv.md)
 - [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
-- [On the Deep Mystery of Language Models](ch01/722-stochastic-parrot-deep-mystery-llms.md)
-- [A Thought Experiment](ch01/822-stochastic-parrot-thought-experiment.md)
+- [On the Deep Mystery of Language Models](ch01/698-stochastic-parrot-deep-mystery-llms.md)
+- [A Thought Experiment](ch01/797-stochastic-parrot-thought-experiment.md)
 - [Marcus on AI Productivity](ch11/068-stochastic-parrot-marcus-ai-productivity.md)
 - [While Breathless In Stodgy Viridian](ch01/557-while-breathless-in-stodgy-viridian.md)
 

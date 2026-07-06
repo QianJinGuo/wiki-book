@@ -274,14 +274,14 @@ grep -n '"isEnum": true' api-reference.json -B2 -A10  # 枚举所有枚举值
 ## 与现有实体的互补关系
 
 - [AI Agent 工具数量陷阱](ch04/069-ai.md) — "5-10 工具"是 Anthropic 答案；"1 execute_code"是本文答案（更激进的同向论述）
-- [Agent Harness 上下文管理工作集视角](ch05/009-harness.md) — 工作集是 **L1 内部**的精细化设计；本文是工作集的 L1/L2/L3 宏观扩展
+- [Agent Harness 上下文管理工作集视角](ch05/085-harness.md) — 工作集是 **L1 内部**的精细化设计；本文是工作集的 L1/L2/L3 宏观扩展
 - [智能体编排层中的上下文管理架构](ch03/045-agent.md) — 框架主动约束 vs 模型自主管理的权衡；本文是同向的更激进的 execute_code 推论
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 上下文工程的概念基础
 - [Code as Agent Harness Survey](ch09/051-code-as-agent-harness.md) — 编程语言作为 Agent 接口的更广义论述
 - [Claude Code 工具设计演进](ch03/075-claude-code.md) — Anthropic 工具设计的演进
 - [上下文工程三种记忆范式对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md) — 记忆/上下文/信息的层级
 - [Claude Code 上下文工程 Thariq](ch03/075-claude-code.md) — 官方 Anthropic 视角
-- [Codex 上下文工程 LastWhisper](ch01/542-codex.md) — 另一家 Code 厂商的上下文视角
+- [Codex 上下文工程 LastWhisper](ch01/516-codex.md) — 另一家 Code 厂商的上下文视角
 - [上下文工程系列](ch04/069-ai.md) — 系列化上下文工程讨论
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cpu-cache-analogy-agent-context-management-liwen-2026-06-12.md)

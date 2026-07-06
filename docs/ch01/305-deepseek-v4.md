@@ -152,14 +152,14 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 - 之前中国 LLM 的标签是"工程优化 + 性价比"
 - V4 之后中国 LLM 也有了自己的"架构创新"标签——mHC / CSA / HCA 都有理论贡献
 
-这与 [DeepSeek MoE 并行策略](ch01/420-deepseek.md)、[DeepSeek 成本迁移系统层 KV Cache Harness](ch05/009-harness.md)、[DeepSeek V4 Training 58-page Paper Deep Dive](ch04/069-ai.md) 等文章形成完整图景。
+这与 [DeepSeek MoE 并行策略](ch01/420-deepseek.md)、[DeepSeek 成本迁移系统层 KV Cache Harness](ch05/085-harness.md)、[DeepSeek V4 Training 58-page Paper Deep Dive](ch04/069-ai.md) 等文章形成完整图景。
 
 ### 六、与其他 V4 解读的关系
 
-- [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](ch01/295-deepseek-v4.md) 关注产品侧
-- [DeepSeek V4 Flash/Pro v2](ch01/295-deepseek-v4.md) 是上一条的更新版
-- [DeepSeek V4 Pro vs Claude](ch01/295-deepseek-v4.md) 关注对比评测
-- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](ch01/937-deepseek-v4-flash-means-llm-steering-is-interesting-again.md) 关注 V4 Flash 的"可控生成"能力
+- [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](ch01/305-deepseek-v4.md) 关注产品侧
+- [DeepSeek V4 Flash/Pro v2](ch01/305-deepseek-v4.md) 是上一条的更新版
+- [DeepSeek V4 Pro vs Claude](ch01/305-deepseek-v4.md) 关注对比评测
+- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](ch01/948-deepseek-v4-flash-means-llm-steering-is-interesting-again.md) 关注 V4 Flash 的"可控生成"能力
 - [DeepSeek V4 DS4C / Antirez 本地推理](ch04/069-ai.md) 关注本地部署
 - [DeepSeek V4 Training 58-page Paper Deep Dive](ch04/069-ai.md) 关注训练侧
 - [DeepSeek Code Harness](ch09/076-deepseek-code-harness.md) 关注 V4 在 Agent / Harness 场景的工程实践
@@ -177,14 +177,14 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 
 ## 关联实体
 
-- [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](ch01/295-deepseek-v4.md)
-- [DeepSeek V4 Flash/Pro v2](ch01/295-deepseek-v4.md)
-- [DeepSeek V4 Pro vs Claude](ch01/295-deepseek-v4.md)
-- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](ch01/937-deepseek-v4-flash-means-llm-steering-is-interesting-again.md)
+- [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](ch01/305-deepseek-v4.md)
+- [DeepSeek V4 Flash/Pro v2](ch01/305-deepseek-v4.md)
+- [DeepSeek V4 Pro vs Claude](ch01/305-deepseek-v4.md)
+- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](ch01/948-deepseek-v4-flash-means-llm-steering-is-interesting-again.md)
 - [DeepSeek V4 DS4C / Antirez 本地推理](ch04/069-ai.md)
 - [DeepSeek V4 Training 58-page Paper Deep Dive](ch04/069-ai.md)
 - [DeepSeek MoE 并行策略](ch01/420-deepseek.md)
-- [DeepSeek 成本迁移系统层 KV Cache Harness](ch05/009-harness.md)
+- [DeepSeek 成本迁移系统层 KV Cache Harness](ch05/085-harness.md)
 - [DeepSeek Code Harness](ch09/076-deepseek-code-harness.md)
 - [DeepSeek Code Harness 竞争者 Tina](ch09/076-deepseek-code-harness.md)
 - [17 种 agent 架构演进](ch03/045-agent.md)

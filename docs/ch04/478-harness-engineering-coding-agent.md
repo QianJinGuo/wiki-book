@@ -8,9 +8,9 @@
 微信文章：Harness Engineering: 让 Coding Agent 可靠完成长程任务
 ## 相关实体
 - [Harness Engineering耗时一周我是如何将应用的Ai Coding率提升至90的](ch04/069-ai.md)
-- [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch05/009-harness.md)
-- [Agent架构关键变化Harness正在成为新后端](ch05/009-harness.md)
-- [Harness Engineering Reliable Long Term Agent](ch05/009-harness.md)
+- [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch05/085-harness.md)
+- [Agent架构关键变化Harness正在成为新后端](ch05/085-harness.md)
+- [Harness Engineering Reliable Long Term Agent](ch05/085-harness.md)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/258-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)

@@ -71,30 +71,30 @@ Agent 运行多轮后可靠性的两个核心问题：
 ---
 
 ## 与 vault 知识关联
-- [Agent Harness 架构](ch05/009-harness.md) — Context Manager 处理上下文；工具调用校验是 Harness 层的职责
-- [Ralph Loop + Harness Takeover](ch05/009-harness.md) — 长周期 Agent 的可靠性机制，与本文上下文漂移问题高度相关
+- [Agent Harness 架构](ch05/085-harness.md) — Context Manager 处理上下文；工具调用校验是 Harness 层的职责
+- [Ralph Loop + Harness Takeover](ch05/085-harness.md) — 长周期 Agent 的可靠性机制，与本文上下文漂移问题高度相关
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作中，每个 Agent 的上下文漂移问题会叠加放大
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kamacoder-agent-context-drift-tool-hallucination.md)
 
 ## 相关实体
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](ch03/045-agent.md)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](ch03/045-agent.md)
-- [Agent Harness 上下文管理：工作集视角](ch05/009-harness.md)
+- [Agent Harness 上下文管理：工作集视角](ch05/085-harness.md)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/069-ai.md)
 - [CLI、MCP、API 选型：Agent 接入层决策指南](ch03/045-agent.md)
 - [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](ch04/069-ai.md)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](ch04/069-ai.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch05/009-harness.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch05/085-harness.md)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/047-coding-agent.md)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch05/009-harness.md)
+- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch05/085-harness.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/484-claude-code-harness-deep-understanding.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/456-claude-code-harness-deep-understanding.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 - [Agent 自我改进的六条路](ch03/045-agent.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
-- [Harness如何支撑Agent在生产环境稳定运行？](ch05/009-harness.md)
-- [Agent架构关键变化：Harness正在成为新后端](ch05/009-harness.md)
+- [Harness如何支撑Agent在生产环境稳定运行？](ch05/085-harness.md)
+- [Agent架构关键变化：Harness正在成为新后端](ch05/085-harness.md)
 - [你不知道的 Agent 原理架构与工程实践](ch04/317-agent-principle-architecture-engineering-practice.md)
 - [AI Coding Agent 记忆系统](ch04/069-ai.md)
 - [柚漫剧 AI 全流程提效拆解](ch04/069-ai.md)

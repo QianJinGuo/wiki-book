@@ -18,7 +18,7 @@
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/prompting-amazon-nova-2-for-content-moderation.md)
 
-- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](ch01/601-garry-tan.md)
+- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](ch01/611-garry-tan.md)
 
 ## 深度分析
 ### AILuminate 分类体系：12 类危害Taxonomy

@@ -17,11 +17,11 @@
 - [building is just the beginning: introducing discoverability](ch12/084-building-is-just-the-beginning-introducing-discoverability.md)
 - [nemotron 3.5 content safety: customizable multimodal safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)
 - [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](ch01/216-0.md)
-- [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](ch01/777-qoder.md)
+- [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](ch01/789-qoder.md)
 - [scaling camera file processing at netflix](ch11/017-scaling-camera-file-processing-at-netflix.md)
 - [state of routing in model serving](ch11/174-state-of-routing-in-model-serving.md)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](ch01/871-steering.md)
-- [the recent history of ai in 32 otters](ch01/590-the-recent-history-of-ai-in-32-otters.md)
+- [the recent history of ai in 32 otters](ch01/600-the-recent-history-of-ai-in-32-otters.md)
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](ch04/069-ai.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 
@@ -57,7 +57,7 @@
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/213-openclaw.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/213-openclaw.md)

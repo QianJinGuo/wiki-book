@@ -49,7 +49,7 @@
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](ch04/069-ai.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch04/069-ai.md)
 - [Tmall Marketing Ai Workflow](ch04/069-ai.md)
-- [Harness Engineering Alibaba Java Case Study](ch05/009-harness.md)
+- [Harness Engineering Alibaba Java Case Study](ch05/085-harness.md)
 - [Skill Formal Theory Survey 10Papers](ch04/258-skill.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代的生产力悖论当协作本身成为最大的瓶颈.md)

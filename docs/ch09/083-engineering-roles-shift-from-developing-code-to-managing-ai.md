@@ -85,7 +85,7 @@ Harness 报告给出的建议可以归纳为四个层面：
 ## 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md) — Karpathy 关于 AI 时代工程师角色转变的访谈
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md) — Vibe Coding 到 Agentic Engineering 范式转变
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md) — Vibe Coding 到 Agentic Engineering 范式转变
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md) — Claude Code 源码机制详解
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md) — Agent 原理架构与工程实践
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md) — 多智能体交易系统架构

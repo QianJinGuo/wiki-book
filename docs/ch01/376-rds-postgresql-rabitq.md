@@ -67,14 +67,14 @@ RaBitQ 的理论基础来自论文《RaBitQ: Quantizing High-Dimensional Vectors
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/在-rds-postgresql-中实现-rabitq-量化.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/309-rag.md)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1019-rag.md)
 - [你不知道的 Agent：原理、架构与工程实践](ch03/045-agent.md)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch04/069-ai.md)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch03/045-agent.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](ch04/258-skill.md)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/061-harness-engineering.md)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/091-harness-engineering.md)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/213-openclaw.md)
 
 - [Hermes Agent /goal 长任务运行时架构](ch03/045-agent.md)

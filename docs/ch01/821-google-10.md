@@ -11,10 +11,10 @@
 https://developers.google.com/program/my-benefits
 
 ## 相关实体
-- [Pi Mono Github](ch01/772-pi-mono-github.md)
+- [Pi Mono Github](ch01/747-pi-mono-github.md)
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
 - [Edgeclaw Bemit Lobster](ch04/479-edgeclaw.md)
-- [Claude Opus 47](ch01/485-claude.md)
+- [Claude Opus 47](ch01/1022-claude.md)
 - [Hermes Agent Getting Started Guide 2026](ch01/216-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-开发者福利每月免费领取-10-美金别忘了来领啊.md)

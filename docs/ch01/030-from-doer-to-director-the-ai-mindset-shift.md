@@ -9,7 +9,7 @@
 ## 相关实体
 - [独家对话罗福莉：AI范式已然巨变！](ch04/069-ai.md)
 - [agentic code review](ch03/045-agent.md)
-- [apple foundation models](ch01/485-claude.md)
+- [apple foundation models](ch01/141-apple-foundation-models.md)
 - [the oracle and the firm](https://github.com/QianJinGuo/wiki/blob/main/entities/calv-oracle-and-the-firm.md)
 - [what job interviews taught me about kubernetes](https://github.com/QianJinGuo/wiki/blob/main/entities/notnotp-k8s-interviews-non-technical.md)
 - [here](https://github.com/QianJinGuo/wiki/blob/main/entities/randsinrepose-we-dont-believe-you-rub.md)

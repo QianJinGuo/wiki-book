@@ -174,13 +174,13 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 
 - [两万字详解 Claude Code 源码核心机制](ch03/075-claude-code.md)
 - [Claude Code Harness 深度解析](ch03/075-claude-code.md)
-- [Claude Code Harness 深度理解](ch01/484-claude-code-harness-deep-understanding.md)
+- [Claude Code Harness 深度理解](ch01/456-claude-code-harness-deep-understanding.md)
 - [深入理解 Claude Code Agent Harness 构建之道](ch03/075-claude-code.md)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](ch03/045-agent.md)
 - [Karpathy Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
 - [Anthropic 内部实践](https://github.com/QianJinGuo/wiki/blob/main/entities/E9FFy3r5KWA1Ja5pyWBBrg.md)
-- [DeepSeek V4 Flash Pro](ch01/295-deepseek-v4.md)
+- [DeepSeek V4 Flash Pro](ch01/305-deepseek-v4.md)
 - [加速 LLM 模型加载与上下文窗口](ch01/990-accelerate-llm-model-loading-and-increase-context-windows-wi.md)
 - [大型表格模型基础](ch04/069-ai.md)
 

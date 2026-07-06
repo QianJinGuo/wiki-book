@@ -84,7 +84,7 @@ if existing.get("Item", {}).get("status") == "COMPLETED":
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch01/216-0.md)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/045-agent.md)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/069-ai.md)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/485-claude.md)
+- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/1022-claude.md)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch03/045-agent.md)
 - [55+ models, every modality. one api key, one bill.](ch11/003-serverless-inference.md)
 - [aws bedrock dynamic document extraction pipeline](https://github.com/QianJinGuo/wiki/blob/main/entities/extract-data-with-on-demand-and-batch-pipelines-dynamically.md)

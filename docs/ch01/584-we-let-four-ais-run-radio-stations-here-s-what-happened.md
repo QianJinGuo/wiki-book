@@ -13,7 +13,7 @@
 - [Npm Supply Chain Compromise Postmortem](ch04/069-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
-- [Reasoning Lift](ch01/612-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.md)
+- [Reasoning Lift](ch01/622-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.md)
 - [Tmall Ai Coding Practice Team Knowledge Base](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/we-let-four-ais-run-radio-stations-heres-what-happened.md)

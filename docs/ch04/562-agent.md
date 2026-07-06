@@ -40,7 +40,7 @@
 ## 相关实体
 - [Tmic Ai Xiaoxin Deepagent Architecture Evolution](ch04/069-ai.md)
 - [Verizon Connect Agentic Ai 100K Users](ch04/069-ai.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/140-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/142-skillos-learning-skill-curation-for-self-evolving-agents.md)
 - [Co Existence Paradigm Shift Agentic Ai Mollick 2026](ch04/069-ai.md)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/258-skill.md)
 

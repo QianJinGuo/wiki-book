@@ -101,7 +101,7 @@
 - → [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - → [KAIROS Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
 - → [Claude Code Agent 工程设计](ch03/075-claude-code.md)
-- → [Claude Harness 设计：Generator-Evaluator](ch05/009-harness.md)
+- → [Claude Harness 设计：Generator-Evaluator](ch05/085-harness.md)
 
 ## 相关实体
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/075-claude-code.md)
@@ -112,7 +112,7 @@
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/069-ai.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/075-claude-code.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/045-agent.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/485-claude.md)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1022-claude.md)
 
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
 

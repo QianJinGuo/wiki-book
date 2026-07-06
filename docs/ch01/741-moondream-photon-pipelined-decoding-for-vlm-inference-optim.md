@@ -53,7 +53,7 @@ Moondream Photon 的 pipelined decoding 与传统的推理优化方法（如 [LL
 - [LLM Inference Pipeline Internals](ch01/1171-llm.md)
 - [MorphLLM Inference Optimization](ch01/1171-llm.md)
 - [Tencent Hunyuan Hopper Inference Optimization](ch01/109-hy3-preview.md)
-- [LLaVA-OneVision VLM](ch01/759-vlm.md)
+- [LLaVA-OneVision VLM](ch01/734-vlm.md)
 - [高德 VLM 生产实践](ch01/216-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/moondream-popping-gpu-bubble-photon-engine.md)

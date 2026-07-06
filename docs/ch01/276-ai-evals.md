@@ -149,10 +149,10 @@ Agent 评估需要额外的维度： ^["Evals到底在评什么？一文拆解AI
 - **模型变更后**：比较新旧模型在评估集上的表现
 - **定期生产监控**：确保生产质量没有漂移
 ## 相关实体
-- [Better Harness Eval Trace Methodology](ch05/009-harness.md)
-- [Anthropic Claude Next Gen Alex Infoq](ch01/485-claude.md)
+- [Better Harness Eval Trace Methodology](ch05/085-harness.md)
+- [Anthropic Claude Next Gen Alex Infoq](ch01/1022-claude.md)
 - [Agent Skill Writing](ch04/258-skill.md)
-- [Programbench Agent Benchmark](ch04/158-programbench-agent-benchmark.md)
+- [Programbench Agent Benchmark](ch04/162-programbench-agent-benchmark.md)
 - [Llm As A Verifier Framework](ch01/1171-llm.md)
 
 ---
