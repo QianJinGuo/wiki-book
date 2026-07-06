@@ -10,17 +10,17 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1361 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1039 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1359 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1040 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 434 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 116 篇 |
-| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 33 篇 |
+| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 34 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1196 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1194 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ Backpressure is all you need
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ 快手首个打工人Agent
-  - ... 共 **1196** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1194** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 34 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,7 +59,7 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **131** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1361 篇**
+> 📖 **本篇共 1359 篇**
 
 ---
 
@@ -78,7 +78,7 @@
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
   - ... 共 **616** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 103 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 104 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
@@ -89,7 +89,7 @@
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
   - ⭐⭐ 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记（2 周 3 次实测 + 3 个测试 + 加法传播学 +
-  - ... 共 **103** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **104** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 42 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -156,7 +156,7 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **26** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1039 篇**
+> 📖 **本篇共 1040 篇**
 
 ---
 
@@ -289,7 +289,7 @@
   - ⭐⭐⭐ Count Anything - 文本引导的通用目标计数框架
   - ... 共 **15** 篇 → [完整章节](ch19-research-frontier.md)
 
-### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 18 篇
+### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 19 篇
 > 超级智能、存在风险、AI 治理、人类命运
 
   - ⭐ Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
@@ -298,11 +298,11 @@
   - ⭐⭐ James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）
   - ⭐⭐ GitLab employees are the latest to face layoffs limbo. Read the CEO's 
   - ⭐⭐ Multilingual AI
+  - ⭐⭐ 人机对齐？不，是人正在向机器对齐
   - ⭐⭐ Token 经济学与 AI 效率
-  - ⭐⭐ Nearly every enterprise is investing in AI, but only 5% say their data
-  - ... 共 **18** 篇 → [完整章节](ch20-ai-philosophy.md)
+  - ... 共 **19** 篇 → [完整章节](ch20-ai-philosophy.md)
 
-> 📖 **本篇共 33 篇**
+> 📖 **本篇共 34 篇**
 
 ---
 

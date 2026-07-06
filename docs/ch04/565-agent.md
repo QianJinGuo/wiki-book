@@ -1,62 +1,50 @@
-# Agent评测的反直觉感悟：质量优化与可规模化性的取舍
+# 万级实时推理的商品领域Agent实践思考和总结
 
-## Ch04.565 Agent评测的反直觉感悟：质量优化与可规模化性的取舍
+## Ch04.565 万级实时推理的商品领域Agent实践思考和总结
 
-> 📊 Level ⭐⭐ | 3.3KB | `entities/agent-eval-counterintuitive-insights-langfuse.md`
+> 📊 Level ⭐⭐ | 3.4KB | `entities/taobao-product-domain-agent-architecture.md`
 
-# Agent评测的反直觉感悟：质量优化与可规模化性的取舍
-
-## 摘要
-
-基于 Langfuse 实战经验，揭示 Agent 评测中的核心反直觉现象：**质量优化可能破坏产品可规模化性**。Tracing 的价值不在调试，而在让成本-质量取舍成为产品评审中可讨论的线索。
-
-## 核心要点
-
-### Bad Case 归因的陷阱
-
-从用户 bad case 入手做评测归因是常见做法，但 bad case 有四个棘手特征：
-- **极端边界**：不代表典型用户场景
-- **模型幻觉**：随机性强，难以系统性修复
-- **技术修复 ROI 高**：修复单个 bad case 可能引入更大成本
-- **偶发性**：难以稳定复现，修复效果难以验证
-
-更关键的是：修好 bad case 后，token 成本可能反而上升。
-
-### 反直觉核心：质量优化破坏可规模化性
-
-一个 Agent 如果每次做 8 次检索、3 次 rerank、5 次模型调用，demo 会显得很聪明，但线上变成不可承受的成本结构。这不是假设，而是 Langfuse Tracing 能直接暴露的现实。
-
-具体表现：
-- **更多上下文塞进 prompt** → 短期提升准确率，但 token 成本和 latency 上升
-- **引入更强 judge / 更多 self-check** → 体验等待变长
-- **增加检索和 rerank 次数** → 答案更稳，但每个请求的成本翻倍
-
-这一洞察与 [Llm Observability 4 Layer Model](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-observability-4-layer-model.md) 中的成本监控层直接相关。
-
-### Tracing 的真正价值
-
-Trace 的价值不是"总成本高"或"整体慢"这类笼统结论，而是：
-- **哪一个 Observation 让成本失控** — 精确定位成本热点
-- **哪一步阻塞了用户等待** — 精确定位延迟瓶颈
-
-Tracing 让成本-质量取舍不再停留在架构师脑中，而变成产品评审中可讨论的线索。这是将技术决策透明化的产品化实践。
+# 万级实时推理的商品领域Agent实践思考和总结
 
 ## 深度分析
 
-本文的核心价值在于提出了一个可操作的评估框架：**用 Tracing 驱动产品决策，而非仅用于调试**。传统 Agent 评测关注"答对没有"，而本文关注"答对的代价是什么"——这是一个从工程视角到产品视角的转换。
+本文来自淘天集团商品中心技术团队，详述商品域如何构建"事件驱动的Function-Centric Agent架构"，实现万级实时推理，覆盖亿级商品。
 
-与离线评测方法论互补：离线评测验证功能正确性，Tracing 验证生产可规模化性。
+**核心技术架构**：
+- 两层结构：上层workflow编排层 + 下层统一能力供给层，通过AIFunction接口交互
+- 轻量aiagentsdk：@AIWorkflow、@AIAction、@AIFunction、@AIParameter、@AIResult、@AIResultField注解体系
+- 链式调用规范：`registry.item().query().invoke(params)`
+
+**商品领域知识库三层**：
+1. 显性事实知识（客观描述）→ 运营决策、prompt增强
+2. 关联情景知识（主配件场景）→ 10个类目10000条案例，53条规则
+3. 隐性经验知识（用户/专家经验）→ 商品卖点、参数说明
+
+**在离线统一方案**：
+- Function/Action/Workflow三组件标准化
+- 离线批量推理（调度触发）+ 在线增量推理（实时事件驱动）
+- 统一存储：MySQL（在线）+ ODPS（离线）
+
+**实时推理关键**：精卫链路基于商品ID+事务ID聚合变更，将处理量级降低一个数量级。
+
+**应用效果**：覆盖亿级商品，搜索转化率提升，新需求1周/人交付。
 
 ## 实践启示
 
-1. **评测时同时关注正确性和成本**：每个 bad case 修复后，追踪 token 成本变化
-2. **用 Observation 级别而非 Task 级别分析成本**：定位具体哪一步消耗过多
-3. **在产品评审中引入 Tracing 数据**：让非技术人员也能理解成本-质量取舍
-4. **警惕"demo 聪明，线上昂贵"的陷阱**：8 次检索 + 3 次 rerank + 5 次模型调用可能是过度优化
+1. **Java生态Agent选型**：spring-ai-alibaba是集团内落地的最优选择，与现有系统集成成本最低
+2. **Function-Centric设计**：通过AIFunction标准化封装工具和领域知识，上层workflow可灵活编排
+3. **事务型事件驱动**：商品领域事件的聚合转发是实现实时推理的关键基础设施
+4. **三层知识库**：显性→情景→隐性的递进设计，覆盖了商品智能化的完整知识需求
+5. **在离线统一**：同一套Workflow逻辑，通过触发源差异区分在线/离线，代码复用率最大化
 
 ## 相关实体
+- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](ch04/069-ai.md)
+- [Verizon Connect Agentic Ai 100K Users](ch04/069-ai.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/142-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](ch04/069-ai.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/258-skill.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-eval-counterintuitive-insights-langfuse.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/taobao-product-domain-agent-architecture.md)
 
 ---
 
