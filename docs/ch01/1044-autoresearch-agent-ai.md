@@ -6,7 +6,7 @@
 
 # Autoresearch Next Phase Async Multi Agent Ai寒武纪
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/autoresearch-next-phase-async-multi-agent-ai寒武纪.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/autoresearch-next-phase-async-multi-agent-ai寒武纪.md)
 
 ## 深度分析
 

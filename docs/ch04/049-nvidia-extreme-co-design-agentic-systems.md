@@ -14,7 +14,7 @@ Building for the Rising Complexity of Agentic Systems with Extreme Co&#x2d;Desig
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-secure-local-agent-nemoclaw-openclaw.md)
 - [Nvidia Telco Reasoning Models Nemo](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-telco-reasoning-models-nemo.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-extreme-co-design-agentic-systems.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidia-extreme-co-design-agentic-systems.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析

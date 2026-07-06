@@ -45,7 +45,7 @@ Managed Entitlements 仅适用于第三类（AWS Marketplace 模型）。
 - [Bedrock Inference Profile 成本告警](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-application-inference-profile-per-bu-cost-alert.md) — 按业务单元追踪 Bedrock 成本
 - [AWS DevOps Agent MCP 中国区桥接](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-mcp-china-partition-bridge.md) — 多账号场景的 DevOps Agent 部署
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/simplify-multi-account-access-to-amazon-bedrock-models-with-managed-entitlements.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/simplify-multi-account-access-to-amazon-bedrock-models-with-managed-entitlements.md)
 
 ---
 

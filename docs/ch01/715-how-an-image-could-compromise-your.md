@@ -39,7 +39,7 @@ CVE-2026-3102 是一次典型的 command injection（命令注入）漏洞，但
 - [Detect Ai Agents Website](https://github.com/QianJinGuo/wiki/blob/main/entities/detect-ai-agents-website.md)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/exiftool-compromise-mac-592994.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/exiftool-compromise-mac-592994.md)
 
 ---
 

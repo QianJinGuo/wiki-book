@@ -6,7 +6,7 @@
 
 # Knowledge Agents: Beat Frontier Models with Better Structure
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/knowledge-agents-beat-frontier-models.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/knowledge-agents-beat-frontier-models.md)
 
 ## 摘要
 
@@ -92,7 +92,7 @@ Knowledge Agent 模式的一个核心经济驱动是 Anthropic 的计费变更�
 - RAG（Retrieval-Augmented Generation）是 Knowledge Agent 的理论基础和差异化点
 - [Claude Code 动态工作流](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-dynamic-workflows-thariq-practical-patterns.md) — Knowledge Agent 的主要使用场景之一
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/knowledge-agents-beat-frontier-models.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/knowledge-agents-beat-frontier-models.md)
 
 ---
 

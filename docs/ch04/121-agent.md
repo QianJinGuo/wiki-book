@@ -110,7 +110,7 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 
 ## 相关实体
 - [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](https://github.com/QianJinGuo/wiki/blob/main/entities/tsinghua-ai-self-evolving-organization-corp-paradigm.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/acker-agent-evolution-three-routes-convergence.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/acker-agent-evolution-three-routes-convergence.md)
 
 - [fanling company as agent ai org reflection v2](https://github.com/QianJinGuo/wiki/blob/main/entities/fanling-company-as-agent-ai-org-reflection-v2.md)
 
@@ -165,7 +165,7 @@ ETCLOVG 七个治理维度的组织逻辑：
 1. **工具执行稳定性是被低估的基础设施挑战**：在真实软件环境中可靠调用工具比在 benchmark 上展示工具调用能力难得多。这需要大量边缘 case 处理和真实环境适配。
 2. **跨软件协调层是新的基础设施机会**：Agent 作为软件之上的协调层，这个定位意味着需要一套标准化的跨软件数据流转协议和 API 适配层。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/acker-agent-evolution-three-routes-convergence.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/acker-agent-evolution-three-routes-convergence.md)
 
 ---
 

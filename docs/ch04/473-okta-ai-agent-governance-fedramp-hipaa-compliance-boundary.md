@@ -98,7 +98,7 @@ Okta 将此视为现有身份治理的自然扩展，而非新基础设施：
 - MCP 协议：平台将 MCP 服务器纳入治理范围
 - Anthropic Model Spec：Agent 行为规范的另一维度
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/okta-ai-agents-fedramp.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/okta-ai-agents-fedramp.md)
 
 ---
 

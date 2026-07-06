@@ -46,7 +46,7 @@ https://github.com/zhanshijinwat/Steel-LLM
 
 Infinity-Instruct微调数据集数量不少，也借此谈谈我对微调数据的看法。从很早开始，对于使用多一些的数据微调（《Exploring the Impact of Instruction Data Scaling on Large Language Models An Empirical Study on Real-World Use Cases》）还是精选几百、几千条数据微调（《LIMA：Less Is More for Alignment》）一直有争执。我觉得使用少量的微调数据得到一个好的sft模型前提是你的基础模型足够强大，如
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从零训练steel-llm微调探索与评估.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从零训练steel-llm微调探索与评估.md)
 
 ---
 

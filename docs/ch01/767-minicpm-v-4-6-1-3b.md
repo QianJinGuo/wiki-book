@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/minicpm-v-46-13b.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/minicpm-v-46-13b-xinazhiyuan.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/minicpm-v-46-13b-xinazhiyuan.md)
 
 # MiniCPM-V 4.6 (1.3B) 面壁智能
 **机构**：面壁智能 + 清华大学

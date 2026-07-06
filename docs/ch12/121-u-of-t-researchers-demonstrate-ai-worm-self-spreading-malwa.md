@@ -103,7 +103,7 @@
 
 ## 引用与回链
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
 
 ## 相关实体（Related Entities）
 

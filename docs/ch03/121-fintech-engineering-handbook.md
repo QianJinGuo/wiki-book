@@ -41,7 +41,7 @@ Money representation is one of the most fundamental decisions in financial syste
 2.   **Arbitrary precision.** Types like Java’s `BigDecimal` let you control the precision of a computation precisely. The code is predictable and we get to decide where and how rounding happens. It fits intermediate work like FX or pricing math, where many operations chain together.
 3.   **Minor-units precision.** For most fiat currencies it’s ok to keep only a fixed precision, the same that is used in the connected central banking system. The number of digits is described by ISO 4217 (don’t assume it’s always 2, it’s not!). In practice this means storing the amount as an 
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fintech-engineering-handbook.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fintech-engineering-handbook.md)
 
 ---
 

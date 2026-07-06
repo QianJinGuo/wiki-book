@@ -16,7 +16,7 @@
 - **效能监控**：Token 消耗、Latency 分解、Error 检测
 - **生产级**：通过 npm 包接入，自动检测 LangChain/LangGraph/OpenAI SDK 框架版本
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-nodejs-otel-arms-observability.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-agent-nodejs-otel-arms-observability.md)
 
 ---
 

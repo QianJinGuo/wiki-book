@@ -82,10 +82,10 @@ r = invoke(endpoint, sid, {"mouseClick": {"x": 410, "y": 535, "button": "LEFT"}}
 - 穿过浏览器边界操作OS级UI，实现端到端自动化流程
 
 ## 与知识库的连接
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-agentcore-os-level-actions-browser.md)：OS Level Actions官方详解，包含8个原子操作完整示例
-- → [Agent-Guided Workflows](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)：同属AgentCore生态，Actions是workflow的底层执行单元
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-bedrock-agentcore-os-level-actions-browser.md)：OS Level Actions官方详解，包含8个原子操作完整示例
+- → [Agent-Guided Workflows](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)：同属AgentCore生态，Actions是workflow的底层执行单元
 ---
-*Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-agentcore-os-level-actions-browser.md)*
+*Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-bedrock-agentcore-os-level-actions-browser.md)*
 
 ## 相关实体
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)

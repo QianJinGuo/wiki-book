@@ -93,7 +93,7 @@ SP 800-213r1 刻意与 NIST CSF 2.0、SP 800-53 Rev. 5 和 Risk Management Frame
 - EO 14028（改善国家网络安全行政令）
 - NIST SP 800-53（安全与隐私控制）
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nist-sp-800-213r1-iot-product-cybersecurity-guidelines.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nist-sp-800-213r1-iot-product-cybersecurity-guidelines.md)
 
 ---
 

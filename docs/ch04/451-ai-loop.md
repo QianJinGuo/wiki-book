@@ -87,7 +87,7 @@ Loop 要从一次对话进入组织流程，需要五个外置接口：
 - [Environment Engineering：Agent 不能只靠一条提示](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-environment-engineering-jiagoux-2026-06-27.md) — 架构师系列中提出 AGENT.md / STATE.md / EVIDENCE.md / PERMISSIONS.md 的先行概念
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md) — Agent 运行底座工程范式
 - [Loop Engineering 方法论](https://github.com/QianJinGuo/wiki/blob/main/concepts/loop-engineering-methodology.md) — 技术层面的 Loop 模式
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/enterprise-ai-loop-landing-goal-evidence-permission.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/enterprise-ai-loop-landing-goal-evidence-permission.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/frontend-ai-coding-problem-to-solution-taobao.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/frontend-ai-coding-problem-to-solution-taobao-2026-06-22.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/frontend-ai-coding-problem-to-solution-taobao-2026-06-22.md)
 
 大淘宝技术团队深度分析AI编码效率瓶颈，指出核心问题在于大模型的注意力机制限制、上下文膨胀与注意力坍塌，以及人机协作模式不匹配；提出通过外置“DeepResearch”型Agent分离“上下文准备”与“编码执行”，以多模态输入、结构化任务、持久化分析和增量更新提升真实提效。
 

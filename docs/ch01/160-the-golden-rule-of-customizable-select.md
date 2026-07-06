@@ -6,7 +6,7 @@
 
 # The golden rule of Customizable Select
 
-> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/webkit-customizable-select-golden-rule.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/webkit-customizable-select-golden-rule.md)
 
 ## 核心要点
 
@@ -35,7 +35,7 @@ When you remember to follow the rule, you’ll improve the user experience, supp
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 webkit.org 视角
-- 引用源：[Webkit Customizable Select Golden Rule](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/webkit-customizable-select-golden-rule.md)
+- 引用源：[Webkit Customizable Select Golden Rule](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/webkit-customizable-select-golden-rule.md)
 ## 相关实体
 - [tokenomics: the 62.5-minute rule for claude](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic_cache_tokenomics.md)
 - [from doer to director: the ai mindset shift](https://github.com/QianJinGuo/wiki/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)

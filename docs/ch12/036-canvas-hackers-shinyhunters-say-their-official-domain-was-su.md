@@ -87,7 +87,7 @@ ShinyHunters 决定"完全放弃 clearnet 运营，仅依赖 onion 平台"具有
 - [LLMReaper Browser Extension Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md) — 浏览器扩展攻击向量
 - [What My Privacy and Security Stack Actually Looks Like](https://github.com/QianJinGuo/wiki/blob/main/entities/what-my-privacy-and-security-stack-actually-looks-like.md) — 个人安全栈案例
 
-> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md)
+> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md)
 
 ---
 

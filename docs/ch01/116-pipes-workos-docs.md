@@ -42,7 +42,7 @@ Pipes 在 token 刷新上做了自动化处理，API 返回的始终是"新鲜"�
 - [Microsoft For Startups Microsoft](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-for-startups-microsoft.md)
 - [Running An Ai Native Engineering Org](https://github.com/QianJinGuo/wiki/blob/main/entities/running-an-ai-native-engineering-org.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pipes-workos-docs.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pipes-workos-docs.md)
 
 ---
 

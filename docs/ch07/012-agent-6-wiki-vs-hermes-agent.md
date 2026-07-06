@@ -143,7 +143,7 @@ Hermes 当前已经实现了**原始数据派的核心能力**：
 - [Hermes Skill System](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system.md)
 - [Hermes 9 Module Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-9-module-architecture.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)
 
 - [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-wiki-9-step-auto-growing-knowledge-network.md)
 

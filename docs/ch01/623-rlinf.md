@@ -113,7 +113,7 @@ Wan 2.2 ✅  |  GR00T ✅  |
 
 GR00T模型优化后，
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/华为云昇腾联合rlinf共筑基于昇腾算力的具身智能开发生态.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/华为云昇腾联合rlinf共筑基于昇腾算力的具身智能开发生态.md)
 
 ---
 

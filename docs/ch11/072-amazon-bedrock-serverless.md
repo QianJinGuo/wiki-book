@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.9KB | `entities/aws-bedrock-serverless-async-inference-multimodal.md`
 
-["Amazon Bedrock模型推理的Serverless异步架构 – 处理在线多模态高负载案例"](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-bedrock-serverless-async-inference-multimodal.md)
+["Amazon Bedrock模型推理的Serverless异步架构 – 处理在线多模态高负载案例"](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-bedrock-serverless-async-inference-multimodal.md)
 
 ## 摘要
 当大模型应用从纯文本扩展到图片、PDF等多模态输入时，推理耗时长且不可预测、RPM/TPM限流频发成为生产落地的两大瓶颈。本文分享一套基于 Amazon SQS 与 AWS Lambda 的 Serverless 异步架构，在 Amazon Bedrock之上串起缓冲、控速、重试与结果入库的完整管道。

@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/llm-as-a-verifier-a-general-purpose-verification.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-as-a-verifier-a-general-purpose-verification-framework.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-as-a-verifier-a-general-purpose-verification-framework.md)
 
 ## 核心要点
 - 来自 newsletter 的高质量技术文章
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-as-a-verifier-a-general-purpose-verification.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-as-a-verifier-a-general-purpose-verification.md)
 
 ## 相关实体
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-as-a-verifier-a-general-purpose-verification-framework.md)

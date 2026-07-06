@@ -70,7 +70,7 @@
 - 消费信心是经济的滞后指标——不应在信心低迷时过度看空消费板块，因为反转可能比预期更快
 - 关注"信心先行指标"：首次申请失业救济人数、信用卡拖欠率、消费者信心调查的分项指数（特别是"购房/购车意愿"子项）
 - 6-12 个月的信心恢复滞后意味着：如果当前经济数据已改善，则消费板块的估值修复行情可能在未来 2-4 个季度展开
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/consumer-confidence-economy-cnbc.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/consumer-confidence-economy-cnbc.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)

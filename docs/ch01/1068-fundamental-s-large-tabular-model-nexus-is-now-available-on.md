@@ -10,7 +10,7 @@
 
 - [百型智能 ontoz：企业本体论 + 群智能体协同体系，新一代企业级 ai 基础设施](https://github.com/QianJinGuo/wiki/blob/main/entities/baixing-ontoz-enterprise-ontology-xinzhiyuan.md)
 - [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](https://github.com/QianJinGuo/wiki/blob/main/entities/minicpm5-1b-forgetrain-agh-hunt.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析

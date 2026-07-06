@@ -6,7 +6,7 @@
 
 # 京东 Oxygen xLLM 大模型推理引擎捐赠开源
 
-> **Background**：本文基于京东技术公众号报道 [Jd Oxygen Xllm Inference Engine Opensource 2026](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/jd-oxygen-xllm-inference-engine-opensource-2026.md) 整理。京东将自研的 Oxygen xLLM 大模型推理引擎捐赠给开放原子开源基金会。
+> **Background**：本文基于京东技术公众号报道 [Jd Oxygen Xllm Inference Engine Opensource 2026](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/jd-oxygen-xllm-inference-engine-opensource-2026.md) 整理。京东将自研的 Oxygen xLLM 大模型推理引擎捐赠给开放原子开源基金会。
 
 ## 概述
 
@@ -30,7 +30,7 @@
 
 京东提出 **工程智能化（Engineering Intelligence, EI）** 作为下一代 AI 基础设施核心命题——让调度系统自主感知负载特征并动态优化，同时强调单体企业无法独立实现 EI，需要芯片厂商、框架开发者、模型团队、云服务商及开发者生态的协力共建。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/京东-oxygen-xllm-大模型推理引擎正式捐赠开放原子开源基金会共建国产-ai-infra-生态.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/京东-oxygen-xllm-大模型推理引擎正式捐赠开放原子开源基金会共建国产-ai-infra-生态.md)
 
 ---
 

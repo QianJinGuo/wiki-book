@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 2.4KB | `entities/harness-engineering-exploration-journey-tencent.md`
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-exploration-journey-tencent-2026-06-29.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-exploration-journey-tencent-2026-06-29.md)
 
 腾讯技术工程团队的Harness Engineering探索实践，分享如何在生产环境中系统化地应用AI编码技术，提升工程团队的代码质量和开发效率。
 

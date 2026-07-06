@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 8.9KB | `entities/from-doer-to-director-the-ai-mindset-shift.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/from-doer-to-director-the-ai-mindset-shift.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-doer-to-director-the-ai-mindset-shift.md)
 
 ## 相关实体
 - [独家对话罗福莉：AI范式已然巨变！](https://github.com/QianJinGuo/wiki/blob/main/entities/luo-fuli-ai-paradigm-shift.md)

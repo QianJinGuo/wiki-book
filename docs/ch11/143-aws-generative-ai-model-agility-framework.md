@@ -42,7 +42,7 @@ AWS Generative AI Model Agility Solution提供6步框架：评估→选择→迁
 2. **提示词版本化管理**：将每次提示词优化结果纳入版本管理，形成企业级的提示词资产库，支持回滚和A/B测试
 3. **迁移流程SLA标准化**：定义"从评估到上线"的SLA（如简单场景2天、复杂场景2周），让迁移从项目变为可预期速率的服务
 ---
-*Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-generative-ai-model-agility-framework.md)*
+*Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-generative-ai-model-agility-framework.md)*
 ## 相关实体
 - [MLflow v3.10：生成式AI开发新特性](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-mlflow-v310-generative-ai-development.md)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)

@@ -14,7 +14,7 @@
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/范凌当公司变成agent关于-ai-时代组织的-5-个反思.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/范凌当公司变成agent关于-ai-时代组织的-5-个反思.md)
 
 ## 深度分析
 

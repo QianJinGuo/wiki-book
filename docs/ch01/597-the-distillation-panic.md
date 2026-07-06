@@ -19,7 +19,7 @@ type: entity
 ## 相关实体
 - [05 11 The Great Memory Panic Of 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/05-11-the-great-memory-panic-of-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-distillation-panic.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-distillation-panic.md)
 
 - [Qwen Image Flash Beyond Objective Design](https://github.com/QianJinGuo/wiki/blob/main/entities/qwen-image-flash-beyond-objective-design.md)
 - [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](https://github.com/QianJinGuo/wiki/blob/main/entities/interconnects-what-ive-been-building-atom-report-post-training-course-finishing-my-book-and-on.md)

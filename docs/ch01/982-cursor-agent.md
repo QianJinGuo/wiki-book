@@ -58,7 +58,7 @@ Cursor 团队选择 Kimi K2.5 作为 Composer 2 的底座。
 
 - Ki
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cursor如何把一个通用模型训成顶级编程-agent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor如何把一个通用模型训成顶级编程-agent.md)
 
 ---
 

@@ -185,7 +185,7 @@ Content-Security-Policy:
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/weve-been-here-before-decompilers-fuzzers-and-now-ai.md)
 - [Automate Progressive Rollouts With Vercel Flags Vercel](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-progressive-rollouts-with-vercel-flags-vercel.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/afine-csp-html-injection-password-exfiltration.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/afine-csp-html-injection-password-exfiltration.md)
 - [discord 全平台端到端加密](https://github.com/QianJinGuo/wiki/blob/main/entities/discord-e2e-encryption.md)
 - [incendium fuzzing ms rpc](https://github.com/QianJinGuo/wiki/blob/main/entities/incendium-fuzzing-ms-rpc.md)
 - [the interface is no longer the product](https://github.com/QianJinGuo/wiki/blob/main/entities/interface-commoditization-ai-era.md)

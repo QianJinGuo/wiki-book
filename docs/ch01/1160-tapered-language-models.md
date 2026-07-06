@@ -95,7 +95,7 @@ TLMs 的独特之处在于：不增加参数、不减少参数、不改变精度
 - DeepSeek V3：DeepSeek 的 MLA 也是在参数效率上做文章，TLMs 提供更底层的维度
 - Transformer 架构：对 Transformer 均匀层假设的根本性挑战
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tapered-language-models-cosine-width-redistribution-mila-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tapered-language-models-cosine-width-redistribution-mila-2026.md)
 
 ---
 

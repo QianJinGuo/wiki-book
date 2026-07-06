@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.4KB | `entities/claude-code-source-leak-lifecycle-analysis.md`
 
-[Claude Code Source Leak Lifecycle Analysis](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-source-leak-lifecycle-analysis.md)
+[Claude Code Source Leak Lifecycle Analysis](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-source-leak-lifecycle-analysis.md)
 
 ## 文章概要
 Anthropic Claude Code 源码泄露事件（.map 文件未排除，1900+ TypeScript 文件，51万+ 行代码）让外界首次完整审视生产级 AI Agent 系统。本文顺着请求完整生命周期拆解每个环节——LLM 调用只是一行代码，真正让 Agent 可用的是围绕它精心设计的 Agent Harness。

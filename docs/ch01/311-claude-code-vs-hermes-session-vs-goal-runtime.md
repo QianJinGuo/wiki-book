@@ -264,7 +264,7 @@ Claude Code 的 Human-in-loop 把最后一公里责任留给工程师，是**刻
 
 5. **Harness 和 Persistent Runtime 是上下层关系**——不要把 Harness 扔掉，而是把它放进每一次执行单元里；Claude Code 把 Harness 价值放大到单次工程协作，Hermes 把这些纪律嵌进更长的运行循环
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-vs-hermes-engineer-vs-runtime-lifecycle.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-vs-hermes-engineer-vs-runtime-lifecycle.md)
 
 ---
 

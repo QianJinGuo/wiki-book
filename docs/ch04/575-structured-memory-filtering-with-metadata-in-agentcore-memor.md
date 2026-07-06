@@ -46,7 +46,7 @@ AgentCore Memory 通过三层生命周期管理元数据：配置（configuratio
 - `[AgentCore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md)` — AgentCore 整体平台
 - `[AI Agent Memory Systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)` — Agent 记忆系统综述
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/structured-memory-filtering-metadata-agentcore-memory.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/structured-memory-filtering-metadata-agentcore-memory.md)
 
 ---
 

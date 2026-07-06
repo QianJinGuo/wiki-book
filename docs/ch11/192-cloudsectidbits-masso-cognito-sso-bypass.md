@@ -35,7 +35,7 @@
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](https://github.com/QianJinGuo/wiki/blob/main/entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](https://github.com/QianJinGuo/wiki/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cloudsectidbits-masso-cognito-sso.html.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cloudsectidbits-masso-cognito-sso.html.md)
 -
 
 ---

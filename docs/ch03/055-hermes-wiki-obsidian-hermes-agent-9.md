@@ -240,7 +240,7 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
   - [上下文工程三种记忆范式对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
   - [企业 AI 记忆 substrate 三层架构](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-ai-memory-substrate-three-layer-architecture.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/obsidian-hermes-wiki-auto-growing-knowledge-network.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/obsidian-hermes-wiki-auto-growing-knowledge-network.md)
 
 ---
 

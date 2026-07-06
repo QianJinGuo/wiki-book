@@ -36,7 +36,7 @@ Sim-1的模拟方法值得关注：它结合代码嵌入（code embeddings）、
 - [Low Code Api Integration](https://github.com/QianJinGuo/wiki/blob/main/entities/low-code-api-integration.md)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](https://github.com/QianJinGuo/wiki/blob/main/entities/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hs.playerzero-ai-code-review.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hs.playerzero-ai-code-review.md)
 
 ---
 

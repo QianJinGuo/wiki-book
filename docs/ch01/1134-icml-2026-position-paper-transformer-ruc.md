@@ -44,7 +44,7 @@ ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive 
 | **工具调用 (C₄)** | **图灵完备** | 递归可枚举 | Function calling (ToolFormer) | 论文证明 |
 | **多 token + 追加 (C₅, K≥2)** | **图灵完备** | 递归可枚举 | 多 token 解码 | Schuurmans 2024 |
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/icml-2026-position-turing-completeness-context-management-ruc-wei-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/icml-2026-position-turing-completeness-context-management-ruc-wei-2026.md)
 
 ## 缩放族假设 vs 固定系统对照
 

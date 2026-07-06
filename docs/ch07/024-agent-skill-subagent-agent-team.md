@@ -75,7 +75,7 @@ Agent Team 把四类提取任务（UI 组件、布局文件、业务逻辑、资
 - [From Agent Protocol To Harness Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/from-agent-protocol-to-harness-skill.md)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](https://github.com/QianJinGuo/wiki/blob/main/entities/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/baidu-netdisk-kmp-migration-three-layer-agent-architecture.md)].md]
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/baidu-netdisk-kmp-migration-three-layer-agent-architecture.md)].md]
 
 ---
 

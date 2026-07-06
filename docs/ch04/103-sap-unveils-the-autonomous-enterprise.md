@@ -108,7 +108,7 @@ Autonomous Suite 的分阶段落地（从 RISE 客户第一年的 3 个 Assistan
 - [The Ui Is Dead Long Live The Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent.md)
 - [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sap-unveils-autonomous-enterprise.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sap-unveils-autonomous-enterprise.md)
 
 ## 参考文献
 

@@ -19,7 +19,7 @@
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md)
 - [Ai Coding Agent Memory System](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-coding-agent-memory-system.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alphaevolve-impact.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alphaevolve-impact.md)
 
 ## 深度分析
 

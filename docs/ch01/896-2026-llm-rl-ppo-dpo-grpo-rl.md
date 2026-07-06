@@ -10,7 +10,7 @@
 
 - [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](https://github.com/QianJinGuo/wiki/blob/main/entities/self-taught-rlvr-jd-cii-2026.md)
 - [the distillation panic](https://github.com/QianJinGuo/wiki/blob/main/entities/the-distillation-panic.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 ## 深度分析

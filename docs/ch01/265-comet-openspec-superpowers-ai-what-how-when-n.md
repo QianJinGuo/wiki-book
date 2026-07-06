@@ -402,7 +402,7 @@ artifacts:
 
 ## 相关实体
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/three-tools-comet-openspec-superpowers-ai-coding-shuge-2026-06-17.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/three-tools-comet-openspec-superpowers-ai-coding-shuge-2026-06-17.md)
 → [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](https://github.com/QianJinGuo/wiki/blob/main/entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md) — 同期同主题：gstack 作为第三器的视角
 → [Superpowers Deep Dive Kaiyuandakashuo](https://github.com/QianJinGuo/wiki/blob/main/entities/superpowers-deep-dive-kaiyuandakashuo.md) — Superpowers 单项目深度
 → [Openspec Spec Driven Development Trae Solo](https://github.com/QianJinGuo/wiki/blob/main/entities/openspec-spec-driven-development-trae-solo.md) — OpenSpec 单项目深度

@@ -19,7 +19,7 @@ Mira Murati的Thinking Machines Lab刚刚发布了新的研究成果：交互模
 - [Interaction Models Human Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/interaction-models-human-ai.md)
 - [Loongsuite Genai Semconv Alibaba](https://github.com/QianJinGuo/wiki/blob/main/entities/loongsuite-genai-semconv-alibaba.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thinking-machines-interaction-models-ai-cold.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thinking-machines-interaction-models-ai-cold.md)
 
 ## 深度分析
 

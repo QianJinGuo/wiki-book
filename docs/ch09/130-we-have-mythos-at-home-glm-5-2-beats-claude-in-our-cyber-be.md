@@ -23,7 +23,7 @@ So this started as a prompting-versus-harness experiment, but while we were runn
 
 If you’ve not heard of GLM-5.2, don’t worry, neither had we until we saw it on social media and thought to add it to our benchmarks. **GLM 5.2**is the latest model from Zhipu AI (Z.ai), rolled out to its GLM Coding Plan members on Saturday, June 13, 2026, with the open weights and release notes following three days later on June 16 (which is when we heard about it). Three things make
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/we-have-mythos-at-home-glm-5-2-beats-claude-in-our-cyber-ben.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/we-have-mythos-at-home-glm-5-2-beats-claude-in-our-cyber-ben.md)
 
 ---
 

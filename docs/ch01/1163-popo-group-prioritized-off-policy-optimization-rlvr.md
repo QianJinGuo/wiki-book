@@ -8,7 +8,7 @@
 
 清华大学自动化系提出的 POPO（Group Prioritized Off-Policy Optimization），面向 LLM reasoning RLVR 训练的高效 off-policy 优化框架。核心洞察：GRPO 类 RLVR 训练中大量 rollout 生成的是 "无效样本"（组内 reward 方差为 0，无训练信号）。POPO 不额外做 rollout，而是将当前 batch 中的无效组替换为最近缓存过的高质量有效组，并通过解耦式 off-policy 重要性采样稳定更新。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tsinghua-popo-group-prioritized-off-policy-optimization-rlvr.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tsinghua-popo-group-prioritized-off-policy-optimization-rlvr.md)
 
 ## 问题背景
 

@@ -15,7 +15,7 @@
 - [Improve Bot Accuracy With Amazon Lex Assisted Nlu](https://github.com/QianJinGuo/wiki/blob/main/entities/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](https://github.com/QianJinGuo/wiki/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-deepmind-accelerator-asia-pacific.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-deepmind-accelerator-asia-pacific.md)
 
 ## 深度分析
 

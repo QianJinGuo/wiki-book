@@ -74,7 +74,7 @@ Spec Coding
 依据
 依赖开发者或 LLM 对“大致感觉”的主
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/告别伪智能代码用-spec-rag-打造真正懂你的ai程序员.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/告别伪智能代码用-spec-rag-打造真正懂你的ai程序员.md)
 
 ---
 

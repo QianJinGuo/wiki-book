@@ -41,7 +41,7 @@ source_published: 2026年7月2日 18:11
   2. 5月，OpenAI旗下基金会掏出2.5亿美元，专门研究“AI 时代的经济未来”——**“AI 的钱要分给大家”** ；
   3. 6月，Anthropic交表IPO，O
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/硅谷的尽头是编制-openai要给白宫送5的股权.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/硅谷的尽头是编制-openai要给白宫送5的股权.md)
 
 ---
 

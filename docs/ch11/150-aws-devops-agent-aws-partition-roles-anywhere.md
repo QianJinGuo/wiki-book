@@ -52,8 +52,8 @@
 - [将 Aws Devops Agent 智能运维能力延伸到中国区](https://github.com/QianJinGuo/wiki/blob/main/entities/将-aws-devops-agent-智能运维能力延伸到中国区.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
-→ [原文存档（第一篇）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-devops-agent-mcp-china-partition-bridge.md)
-→ [原文存档（第二篇）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-devops-agent-mcp-china-part2-multi-account-roles-anywhere.md)
+→ [原文存档（第一篇）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-devops-agent-mcp-china-partition-bridge.md)
+→ [原文存档（第二篇）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-devops-agent-mcp-china-part2-multi-account-roles-anywhere.md)
 
 ---
 

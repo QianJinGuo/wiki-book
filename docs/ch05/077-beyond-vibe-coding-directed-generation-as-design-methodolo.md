@@ -42,7 +42,7 @@ This article is fundamentally about **how humans direct AI generation** — dire
 - "Patterns from static to contextual recomposition" = skill dynamic adaptation
 - "Designer role from specifying instances to defining conditions" = agent harness orchestration paradigm
 
-→ [source archive](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/beyond-vibe-coding-a-designer-s-case-for-directed-generation.md)
+→ [source archive](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/beyond-vibe-coding-a-designer-s-case-for-directed-generation.md)
 
 ---
 

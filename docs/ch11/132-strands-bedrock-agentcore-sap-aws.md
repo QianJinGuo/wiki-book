@@ -35,7 +35,7 @@
 - [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
 - [Aws Bedrock Multi Agent Collaboration Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-multi-agent-collaboration-guide.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/sap-intelligent-procurement-assistant-solution.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sap-intelligent-procurement-assistant-solution.md)
 - [淘宝动效解决方案分享](https://github.com/QianJinGuo/wiki/blob/main/entities/淘宝动效解决方案分享.md)
 
 ---

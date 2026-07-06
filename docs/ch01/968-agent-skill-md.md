@@ -62,7 +62,7 @@ my-skill/
 
 这是Skill的核心。它由两部分
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/手把手教你撰写-agent-skillmd.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/手把手教你撰写-agent-skillmd.md)
 
 ---
 

@@ -168,7 +168,7 @@ export ANTHROPIC_API_KEY=sk-ant-...    # 唯一必需的 key
 - [Gray Swan](https://github.com/QianJinGuo/wiki/blob/main/entities/latent-space-p-gray-swan.md) — AI 安全与 red-teaming
 - [Role Confusion](https://github.com/QianJinGuo/wiki/blob/main/entities/role-confusion-github-io.md) — Prompt injection 理论
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kipi-osint-autonomous-agent-investigation.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kipi-osint-autonomous-agent-investigation.md)
 
 ---
 

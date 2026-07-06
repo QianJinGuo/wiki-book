@@ -57,7 +57,7 @@ Voice Mode 的 killer feature 不是自然对话，而是**共享屏幕/相机**
 - [Miroflow Deep Research Agent Harness Mirothinker](https://github.com/QianJinGuo/wiki/blob/main/entities/miroflow-deep-research-agent-harness-mirothinker.md)
 - [Meta Muse Spark Voice Mode Meta Glasses](https://github.com/QianJinGuo/wiki/blob/main/entities/meta-muse-spark-voice-mode-meta-glasses.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/using-ai-right-now-a-quick-guide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/using-ai-right-now-a-quick-guide.md)
 
 ## 深度分析
 

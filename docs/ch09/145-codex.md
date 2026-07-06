@@ -52,7 +52,7 @@ Codex 团队开发环境配置的五层架构：AGENTS.md（记忆层）→ skil
 
 ## 来源
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/codex-5-layer-architecture-xiaohongshu.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/codex-5-layer-architecture-xiaohongshu.md)
 
 ---
 

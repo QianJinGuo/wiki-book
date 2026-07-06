@@ -91,7 +91,7 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 - **Agent Cookie**：将真实浏览器会话交给 CLI，是「智能体登录服务」的关键
 - **`/last30days`**：并行 9 平台研究，决策前必跑
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/matt-van-horn-22-claude-code-hacks-everyinc.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/matt-van-horn-22-claude-code-hacks-everyinc.md)
 
 ## 深度分析
 

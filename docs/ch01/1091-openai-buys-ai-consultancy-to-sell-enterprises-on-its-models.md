@@ -10,7 +10,7 @@
 
 - [the inevitable need for an open model consortium](https://github.com/QianJinGuo/wiki/blob/main/entities/the-inevitable-need-for-an-open-model-consortium.md)
 - [ai-driven layoffs aren’t making business sense | cio](https://github.com/QianJinGuo/wiki/blob/main/entities/www.cio-4171054-ai-driven-layoffs-arent-making-business-sense.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5238213.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5238213.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析

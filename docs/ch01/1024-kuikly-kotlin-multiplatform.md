@@ -64,7 +64,7 @@ npx skills add Tencent-TDS/KuiklyUI-AI/skills
 - **腾讯内部验证**：支撑日活超 5 亿的业务
 - **AI 编程深度集成**：Skills 和 Rules 机制是框架级设计，非第三方插件
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/kuikly-ai-coding-28-rounds-7-hours-triple-platform.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kuikly-ai-coding-28-rounds-7-hours-triple-platform.md)
 
 ---
 

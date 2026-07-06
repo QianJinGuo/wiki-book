@@ -60,7 +60,7 @@ OpenClaw 的做法完全不同：不截图，生成"语义快照"。
 
 所谓
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/拆解-openclaw-架构五4-个工具原语-6-层安全策略一套-agent-的放权与收权工程.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/拆解-openclaw-架构五4-个工具原语-6-层安全策略一套-agent-的放权与收权工程.md)
 
 ---
 

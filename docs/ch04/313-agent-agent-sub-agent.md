@@ -6,7 +6,7 @@
 
 # Agent 如何管理其他 Agent：四种 Sub Agent 模式
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/four-sub-agent-patterns-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/four-sub-agent-patterns-2026.md)
 
 ## 摘要
 

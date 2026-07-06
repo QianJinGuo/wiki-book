@@ -84,7 +84,7 @@ IN_PROGRESS 残留处理：检查产出物完整性，而非状态本身。
 - **错误在最小范围内解决**：子任务内闭环，不将错误带到后续阶段
 - **允许局部失败**：1000 个文件中 5 个失败不应阻塞其他 995 个
 - **Harness 是动态边界**：随着模型能力提升，曾经需要脚本控制的环节可能被自主处理，但「确定哪些该交给模型、哪些留在框架里」的判断本身不会消失
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-long-term-agent-tasks.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-long-term-agent-tasks.md)
 
 ## 深度分析
 ### 1. 3000 行经验上限的精确推导：Token 消耗的量化拆解

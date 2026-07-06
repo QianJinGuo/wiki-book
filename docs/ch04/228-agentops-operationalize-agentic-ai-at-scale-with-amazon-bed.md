@@ -8,7 +8,7 @@
 
 AWS 发布的 AgentOps 参考架构，将 Agent 运维拆解为四大支柱（治理与安全、构建与运维、评估、可观测性），并以 Amazon Bedrock AgentCore 为平台实现端到端落地。这是目前公有云厂商对 Agentic AI 生产化最系统的工程实践方案。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 
 ## 摘要
 

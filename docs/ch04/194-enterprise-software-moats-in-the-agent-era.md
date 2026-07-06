@@ -97,7 +97,7 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 - [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md) — Agent 与企业软件的交互层，Harness 是 Agent 执行时的"护城河"
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作世界里，跨 Agent 身份认证和授权是全新机会（深思SenseAI 补充）
 - [Agent Memory 模块化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-modular-framework.md) — 数据排放（data exhaust）与记忆系统的关系
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/salesforce-headless-software-losing-head-a16z.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/salesforce-headless-software-losing-head-a16z.md)
 
 ## 相关实体
 - [AI tool poisoning exposes a major flaw in enterprise agent security](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)

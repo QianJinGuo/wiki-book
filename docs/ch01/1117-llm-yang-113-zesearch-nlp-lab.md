@@ -180,7 +180,7 @@
   - [Agent Harness Engineering 综述](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-etcvlovg-taxonomy.md)（harness 视角）
   - [Harness 演化论文集](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-evolution-papers.md)（harness 论文集合）
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-self-improvement-system-survey-zesearch-nlp.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-self-improvement-system-survey-zesearch-nlp.md)
 
 ---
 

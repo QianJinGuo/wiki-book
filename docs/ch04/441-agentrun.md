@@ -14,7 +14,7 @@
 - [阿里云可观测 2026 年 4 月产品动态](https://github.com/QianJinGuo/wiki/blob/main/entities/阿里云可观测-2026-年-4-月产品动态.md)
 - [Agent 从能用到管好中间差了什么](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-从能用到管好中间差了什么.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/看-agentrun-如何玩转记忆存储最佳实践来了.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/看-agentrun-如何玩转记忆存储最佳实践来了.md)
 
 ## 深度分析
 

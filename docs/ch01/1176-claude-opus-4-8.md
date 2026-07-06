@@ -81,7 +81,7 @@ RSP 版本的演进（v3.2 → v3.3）揭示了一个重要的元评估问题：
 - [Webwright Microsoft 1000 Lines](https://github.com/QianJinGuo/wiki/blob/main/entities/webwright-microsoft-1000-lines.md)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-opus-48-the-system-card-b8460f.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-opus-48-the-system-card-b8460f.md)
 
 ---
 

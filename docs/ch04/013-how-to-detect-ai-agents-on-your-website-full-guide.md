@@ -6,7 +6,7 @@
 
 # How to Detect AI Agents on Your Website
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/detect-ai-agents-website.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/detect-ai-agents-website.md)
 
 ## 摘要
 

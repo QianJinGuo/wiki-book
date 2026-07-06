@@ -88,7 +88,7 @@ Point Estimate 对 AI Security Institute 基准测试的分析也印证了这一
 4. **安全左移的新机遇**：Mythos 读代码能力强于写代码能力的特点，使其特别适合"安全左移"场景——在代码提交前、CI/CD 流水线中集成自动化代码审计。
 ---
 > [!contradiction] 另见：`AI Threat Readiness Framework` — 从防御角度看待 AI 安全能力，与 XBOW 从攻击角度的评估形成对照
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mythos_offensive_security_xbow_evaluatio.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mythos_offensive_security_xbow_evaluatio.md)
 
 ## 相关实体
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-发布官方报告承认存在-3-处质量退化问题.md)

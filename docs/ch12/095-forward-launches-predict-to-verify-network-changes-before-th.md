@@ -15,7 +15,7 @@
 - [Habby Game Aws Devops Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/habby-game-aws-devops-agent.md)
 - [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/forward-networks-predict-network-verification.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/forward-networks-predict-network-verification.md)
 
 - [jane street — 形式化方法与编程的未来](https://github.com/QianJinGuo/wiki/blob/main/entities/jane-street-formal-methods-future-programming.md)
 
@@ -61,7 +61,7 @@ Predict 等工具的出现意味着网络工程师需要培养新的核心竞争
 
 将网络变更验证纳入标准流程可以显著降低生产故障风险，尤其是在金融、医疗等对网络可用性要求极高的行业。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/forward-networks-predict-network-verification.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/forward-networks-predict-network-verification.md)
 
 ---
 

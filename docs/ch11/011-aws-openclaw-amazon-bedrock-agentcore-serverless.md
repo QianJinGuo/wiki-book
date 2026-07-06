@@ -307,7 +307,7 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 - 后续 Phase 1/2/3 部署的所有组件都会产生追踪数据
 - 迁移完成后的调试高度依赖完整的调用链追踪
 - CloudWatch Logs 与 X-Ray 的集成是排错的基础设施
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
 
 ## 相关实体
 - [OpenClaw多租户迁移: Phase 2&3部署](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-4.md)

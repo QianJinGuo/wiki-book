@@ -40,7 +40,7 @@ Databricks、PyTorch 缔造者、OpenAI / Thinking Machines / xAI 的一线人�
 - [The It And Security Field Guide To Ai Adoption Tines](https://github.com/QianJinGuo/wiki/blob/main/entities/the-it-and-security-field-guide-to-ai-adoption-tines.md)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fedora-hummingbird-container-security.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fedora-hummingbird-container-security.md)
 
 ---
 

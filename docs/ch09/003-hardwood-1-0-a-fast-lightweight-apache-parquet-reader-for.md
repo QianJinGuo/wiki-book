@@ -31,7 +31,7 @@ Working with the [Apache Parquet](https://parquet.apache.org/) columnar file for
 
 The 1.0 release implements all the key capabilities you’d expect from a Parquet reader: coverage of all the physical and logical Parquet column types, including VARIANT and a first cut of handling geo-spatial columns,
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/hardwood-1-0-a-fast-lightweight-apache-parquet-reader-for-th.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hardwood-1-0-a-fast-lightweight-apache-parquet-reader-for-th.md)
 
 ---
 

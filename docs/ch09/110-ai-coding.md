@@ -8,7 +8,7 @@
 
 用信息论三个概念（熵、条件熵、互信息）统一解释 AI Coding 的所有优化手段：**一切优化都是在对抗熵增**——让模型少猜一点，让真实约束多暴露一点。Context Engineering、RAG、记忆、SDD、Harness Engineering 都可以放到同一个坐标系里看。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-coding-entropy-framework-baidu-geek-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-coding-entropy-framework-baidu-geek-2026.md)
 
 ## 信息论三概念 → AI Coding 映射
 

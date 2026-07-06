@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.5KB | `entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md`
 
-[腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
+[腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
 
 # 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
 ** 4 月 23 日，  ** 腾讯混元  Hy3 preview 语言模型发布并开源  。  这是一个快慢思考融合的混合专家模型，总参数  295B，激活参数 21B，最大支持 256K 上下文长度。  这  是  混元  重建后训练的第一个模型，也是混元迄今最智能的模型，在复杂推理、指令遵循、上下文学习、代码、智能体等能力  及推理性能上  实现了大幅的提升  。

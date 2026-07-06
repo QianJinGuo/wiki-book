@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.1KB | `entities/autobrowse-browserbase-persistent-skill.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/autobrowse-browserbase-persistent-skill-files.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/autobrowse-browserbase-persistent-skill-files.md)
 
 # Autobrowse — 浏览器 Agent 持久记忆：技能文件作为永久技能
 ## 核心定位

@@ -106,7 +106,7 @@ publish_date: 2026-05-06
 
 ## 原文
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-05-06-阿里开源PromptEcho-用冻结多模态大模型为文生图训练提供高质量Rewar-机器之心.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-05-06-阿里开源PromptEcho-用冻结多模态大模型为文生图训练提供高质量Rewar-机器之心.md)
 
 ---
 

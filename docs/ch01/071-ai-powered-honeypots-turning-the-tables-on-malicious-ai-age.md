@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.7KB | `entities/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
 
 ## 相关实体
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md)
