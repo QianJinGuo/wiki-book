@@ -13,10 +13,10 @@
 
 ## 相关实体
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](https://github.com/QianJinGuo/wiki/blob/main/entities/mellum-2-jetbrains-open-12b-moe-code-model.md)
-- [Nginx Rift Achieving Nginx Remote Code Execution V](https://github.com/QianJinGuo/wiki/blob/main/entities/nginx-rift-achieving-nginx-remote-code-execution-v.md)
-- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/llmreaper-dom-based-ai-conversation-exfiltration-via-browser.md)
+- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](ch01/614-llm-wiki-obsidian-wiki-gbrain.md)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch04/229-ai.md)
+- [Nginx Rift Achieving Nginx Remote Code Execution V](../ch12/048-nginx-rift-achieving-nginx-remote-code-execution-via-an-18.md)
+- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](../ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cogalpha-acl2026-alpha-mining.md)
 

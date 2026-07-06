@@ -209,15 +209,15 @@ Claude Code 用一年时间，从两个 Slack 点赞走到了一个 PM 在写代
 
 ## 相关实体
 
-- [Loop Engineering Addy Osmani Challengehub](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-addy-osmani-challengehub.md) — Loop 架构的工程实践
-- [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md) — Boris Cherny 对开发工具演进方向的判断
-- [Claude Opus 4 7 Launch](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-4-7-launch.md) — Opus 4.7 的能力跃升
-- [Anthropic 95Pct Data Analysis Skill Stack Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-95pct-data-analysis-skill-stack-architecture.md) — Skills 系统的架构设计
-- [Anthropic Mcp Revisited Tool Search Code Orchestration](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mcp-revisited-tool-search-code-orchestration.md) — 工具调用与代码编排
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md) — Claude Code 源码的工程实现深度解读
+- [Loop Engineering Addy Osmani Challengehub](../ch05/006-loop-engineering.md) — Loop 架构的工程实践
+- [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](../ch03/045-agent.md) — Boris Cherny 对开发工具演进方向的判断
+- [Claude Opus 4 7 Launch](../ch01/403-claude-opus-4-7.md) — Opus 4.7 的能力跃升
+- [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/833-anthropic.md) — Skills 系统的架构设计
+- [Anthropic Mcp Revisited Tool Search Code Orchestration](../ch07/016-anthropic-mcp.md) — 工具调用与代码编排
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md) — Claude Code 源码的工程实现深度解读
 - [Kimi Work Beta Foundation Model Company Advantage](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-beta-foundation-model-company-advantage.md) — 模型公司做 Agent 的战略逻辑
-- [Anthropic Biology Agent Data Infrastructure Virbench](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-biology-agent-data-infrastructure-virbench.md) — 数据基础设施对 Agent 能力的影响
-- [claude code 一周年回顾：boris cherny + cat wu 对话](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-first-year-retrospective-agi-hunt.md)
+- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01/833-anthropic.md) — 数据基础设施对 Agent 能力的影响
+- [claude code 一周年回顾：boris cherny + cat wu 对话](../ch03/075-claude-code.md)
 
 ## 第 2 来源 — 2026-06-30：子智能体默认后台运行
 

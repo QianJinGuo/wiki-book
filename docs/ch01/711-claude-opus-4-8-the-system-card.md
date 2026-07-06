@@ -82,11 +82,11 @@ They go over the evals and keep saying ‘Mythos is better.’ Again, reasonably
 I don’t love that they used this as a reason to skip a bunch
 
 ## 相关实体
-- [Claude Opus 47](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-47.md)
-- [Claude 4 5 Sonnet Opus Release Notes](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-4-5-sonnet-opus-release-notes.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
-- [Tokenomics The 625 Minute Rule For Claudes Cache](https://github.com/QianJinGuo/wiki/blob/main/entities/tokenomics-the-625-minute-rule-for-claudes-cache.md)
-- [Anthropic Long Running Agent Adversarial Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-long-running-agent-adversarial-architecture.md)
+- [Claude Opus 47](ch01/1022-claude.md)
+- [Claude 4 5 Sonnet Opus Release Notes](ch01/292-claude-4-5-sonnet-opus-release-notes.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/075-claude-code.md)
+- [Tokenomics The 625 Minute Rule For Claudes Cache](ch01/1022-claude.md)
+- [Anthropic Long Running Agent Adversarial Architecture](ch01/833-anthropic.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-opus-4-8-system-card-zvi.md)

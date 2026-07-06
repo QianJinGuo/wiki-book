@@ -14,11 +14,11 @@
 3. **Harness Engineering** — 怎么让 Agent 真正跑起来（2026 年新风潮）
 
 ## 相关实体
-- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
-- [Agent Harness 12 Components 7 Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-12-components-7-decisions.md)
-- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md)
+- [Openclaw Prompt Context Harness](../ch11/213-openclaw.md)
+- [Harness Engineering Framework](../ch05/092-harness-engineering.md)
+- [Agent Harness 12 Components 7 Decisions](../ch05/038-agent-harness.md)
+- [From Prompt To Harness Claude Official](../ch05/009-harness.md)
+- [Agentcore Harness](ch04/462-amazon-bedrock-agentcore-harness-ga-api-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentcore-managed-harness.md)
 

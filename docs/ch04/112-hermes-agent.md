@@ -180,12 +180,12 @@ Time To First Token 的单独记录是一个看似小但实际非常关键的 fe
 - 演示示例：https://sls.aliyun.com/doc/playground/cmsdemo.html
 - CMS 2.0 控制台：https://cmsnext.console.aliyun.com/
 ## 相关实体
-- [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-operator上手-把一个-agent-养成可运营系统-若飞.md)
-- [Hermes Agent Memory System Vs Openclaw](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-vs-openclaw.md)
-- [Hermes Agent Vs Openclaw Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-vs-openclaw-comparison.md)
-- [Hermes Agent Self Evolving Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-self-evolving-source-analysis.md)
-- [Small Hermes Self Evolving Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/small-hermes-self-evolving-agent-architecture.md)
-- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](https://github.com/QianJinGuo/wiki/blob/main/entities/open-telemetry-ebpf-instrumentation-obi-zero-code-observability-aliyun-2026.md)
+- [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/090-hermes-agent.md)
+- [Hermes Agent Memory System Vs Openclaw](../ch03/090-hermes-agent.md)
+- [Hermes Agent Vs Openclaw Comparison](../ch03/090-hermes-agent.md)
+- [Hermes Agent Self Evolving Source Analysis](../ch03/090-hermes-agent.md)
+- [Small Hermes Self Evolving Agent Architecture](../ch03/045-agent.md)
+- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01/897-20.md)
 
 ---
 

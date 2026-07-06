@@ -29,11 +29,11 @@
 5. **分阶段验收，循序渐进**：作者列出的 30 个功能点并非随意排列，而是遵循从基础到高级的递进关系。建议学习者也按此顺序分阶段验收自己的实现成果，每完成一个阶段就进行测试和总结，确保基础稳固后再进入复杂功能。
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
-- [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
-- [Claude Code Founder Harness 100 Lines](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-founder-harness-100-lines.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
-- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md)
+- [Claude Code Harness Deep Understanding](../ch01/456-claude-code-harness-deep-understanding.md)
+- [Claude Code Harness Deep Dive Founder Park](ch05/060-claude-code-harness.md)
+- [Claude Code Founder Harness 100 Lines](../ch03/075-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/342-anthropic-claude-code.md)
+- [From Prompt To Harness Claude Official](ch05/009-harness.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md)
 

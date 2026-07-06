@@ -313,7 +313,7 @@ Physical AI is moving from research into production.
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](https://github.com/QianJinGuo/wiki/blob/main/entities/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
-- [Code As Agent Harness Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey-2026.md)
+- [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey.md)
 
 ## 实践启示
 

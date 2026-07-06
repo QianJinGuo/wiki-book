@@ -8,11 +8,11 @@
 - 来源：eng-leadership
 - 评分：v=7 × c=8
 ## 相关实体
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-coding-agent-quality-defense-five-control-mechanisms.md)
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](https://github.com/QianJinGuo/wiki/blob/main/entities/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md)
-- [Low Code Api Integration](https://github.com/QianJinGuo/wiki/blob/main/entities/low-code-api-integration.md)
-- [How_Claude_Code_Works_In_Large_Codebases](https://github.com/QianJinGuo/wiki/blob/main/entities/how_claude_code_works_in_large_codebases.md)
-- [Karpathy Claude Md Rules](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-claude-md-rules.md)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/308-ai-coding-agent.md)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/474-how-claude-code-works-in-large-codebases-best-practices-and.md)
+- [Low Code Api Integration](../ch03/072-how-to-build-low-code-api-integrations-for-enterprise-apps-u.md)
+- [How_Claude_Code_Works_In_Large_Codebases](../ch01/1022-claude.md)
+- [Karpathy Claude Md Rules](../ch01/295-claude-md.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-avoid-ai-code-slop.md)
 

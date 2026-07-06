@@ -222,11 +222,11 @@
 
 ## 相关实体
 
-- [Skill Design Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-design-patterns.md) — 5 种核心设计模式(模式/结构视角)
-- [Skill Development Guide Linyi](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-development-guide-linyi.md) — 工程教程/保姆级(工程实现视角)
-- [Agent Skill Writing Practices](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-practices.md) — 高质量编写规范(写作规范视角)
-- [Skill Writing Patterns Best Practices](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-writing-patterns-best-practices.md) — 7 个顶级 Skill 提炼模式
-- [Skill Design Spec 8 Block Checklist Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-design-spec-8-block-checklist-winty.md) — 8 块检查清单
+- [Skill Design Patterns](../ch04/262-skill.md) — 5 种核心设计模式(模式/结构视角)
+- [Skill Development Guide Linyi](../ch04/262-skill.md) — 工程教程/保姆级(工程实现视角)
+- [Agent Skill Writing Practices](../ch04/260-agent-skill.md) — 高质量编写规范(写作规范视角)
+- [Skill Writing Patterns Best Practices](../ch04/262-skill.md) — 7 个顶级 Skill 提炼模式
+- [Skill Design Spec 8 Block Checklist Winty](../ch04/262-skill.md) — 8 块检查清单
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-product-philosophy-guicang-爆款经验-2026-06-12.md)
 

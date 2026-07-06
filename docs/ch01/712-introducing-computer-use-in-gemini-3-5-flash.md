@@ -101,8 +101,8 @@ Google、Anthropic 和 OpenAI 同时推出 native computer use 能力，标志�
 
 ## Related
 
-- [Gemini 3.5 Frontier Intelligence](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-3-5-frontier-intelligence.md)
-- [Agent Harness Engineering Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md)
+- [Gemini 3.5 Frontier Intelligence](ch01/493-gemini-3-5-frontier-intelligence-with-action.md)
+- [Agent Harness Engineering Survey 2026](../ch05/092-harness-engineering.md)
 
 -> [Original Archive](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemini-3-5-flash-computer-use.md)
 

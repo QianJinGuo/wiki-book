@@ -13,14 +13,14 @@
 - LLM 可将钓鱼成本降低 95% 以上，同时保持同等成功率（Harvard Business Review）
 ## 相关实体
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Ai Agents Inside Perimeter Hackernews](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
-- [Llm Raiders Private Ai Server](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-raiders-private-ai-server.md)
-- [Bluekit](https://github.com/QianJinGuo/wiki/blob/main/entities/bluekit.md)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](https://github.com/QianJinGuo/wiki/blob/main/entities/schmoozing-is-dead-agents-are-hitting-120-of-humans-and-growth-is-the-only-thing.md)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/030-ai-agent.md)
+- [Llm Raiders Private Ai Server](../ch01/580-llm.md)
+- [Bluekit](ch12/083-meet-bluekit-the-ai-powered-all-in-one-phishing-kit.md)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/138-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 
-- [Interpol Operation Ramz Mena Cybercrime](https://github.com/QianJinGuo/wiki/blob/main/entities/interpol-operation-ramz-mena-cybercrime.md)
+- [Interpol Operation Ramz Mena Cybercrime](ch12/041-interpol-operation-ramz-mena-cybercrime-networks.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析
 ### 攻击规模的几何级增长

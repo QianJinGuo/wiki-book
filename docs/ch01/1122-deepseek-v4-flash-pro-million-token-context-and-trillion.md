@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [pithtrain：陈天奇 + cmu flame center 推出的 agent-native moe 训练框架（1](https://github.com/QianJinGuo/wiki/blob/main/entities/pith-train-agent-native-moe-training-framework.md)
+- [pithtrain：陈天奇 + cmu flame center 推出的 agent-native moe 训练框架（1](../ch03/045-agent.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元-v2.md)
 
 ## 摘要
@@ -159,12 +159,12 @@ response = client.chat.completions.create(
 
 ## 关联实体
 
-- [Ai Infra Llm Efficient Inference Vllm](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-infra-llm-efficient-inference-vllm.md) — LLM 高效推理基础设施综述（vLLM 推荐 0.20.0+）
-- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](https://github.com/QianJinGuo/wiki/blob/main/entities/recent-developments-in-llm-architectures-kv-sharing-mhc-and-compressed-attention.md) — LLM 架构最新进展：KV Sharing、mHC 与压缩注意力
-- [Deepseek Moe Parallel Strategy](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-moe-parallel-strategy.md) — DeepSeek MoE 并行策略
+- [Ai Infra Llm Efficient Inference Vllm](ch01/884-ai-infra.md) — LLM 高效推理基础设施综述（vLLM 推荐 0.20.0+）
+- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](ch01/1109-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md) — LLM 架构最新进展：KV Sharing、mHC 与压缩注意力
+- [Deepseek Moe Parallel Strategy](ch01/1125-deepseek.md) — DeepSeek MoE 并行策略
 - [Msa Sparse Attention Three Kingdoms Huashu](https://github.com/QianJinGuo/wiki/blob/main/entities/msa-sparse-attention-three-kingdoms-huashu.md) — MSA 稀疏注意力（三国华术）
 - [Kimi Attention Residuals Prenorm Dilution Block Attnres](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-attention-residuals-preNorm-dilution-block-attnres.md) — Kimi 注意力残差与 PreNorm 稀释
-- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — 2026 LLM RL 算法综述（DeepSeek V4 训练方法背景）
+- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](ch01/580-llm.md) — 2026 LLM RL 算法综述（DeepSeek V4 训练方法背景）
 
 ---
 

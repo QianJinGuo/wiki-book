@@ -12,11 +12,11 @@ What makes this experience truly powerful is [agent Skills for model customizati
 ## Amazon Kiro in SageMaker AI Studio JupyterLab
 
 ## 相关实体
-- [Aws Reinforcement Fine Tuning Llm As Judge](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-reinforcement-fine-tuning-llm-as-judge.md)
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
-- [Agent Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-workflows.md)
-- [Habby Game Aws Devops Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/habby-game-aws-devops-agent.md)
-- [将 Aws Devops Agent 智能运维能力延伸到中国区](https://github.com/QianJinGuo/wiki/blob/main/entities/将-aws-devops-agent-智能运维能力延伸到中国区.md)
+- [Aws Reinforcement Fine Tuning Llm As Judge](../ch01/580-llm.md)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/156-aws-devops-agent.md)
+- [Agent Workflows](ch04/334-agent-workflows.md)
+- [Habby Game Aws Devops Agent](../ch11/156-aws-devops-agent.md)
+- [将 Aws Devops Agent 智能运维能力延伸到中国区](../ch11/156-aws-devops-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 

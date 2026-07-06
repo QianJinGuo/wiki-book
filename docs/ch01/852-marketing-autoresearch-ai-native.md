@@ -42,12 +42,12 @@
 
 ### 关联实体
 
-- [Ai Friendly Architecture Design Taobao](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-friendly-architecture-design-taobao.md)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-institute-when-ai-builds-itself-jiagoux-interpretation.md)
-- [Harness 之后 状态边界与失败闭环 若飞](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-之后-状态边界与失败闭环-若飞.md)
-- [Ai Agent Harness Construction Akshay Baoyu](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-harness-construction-akshay-baoyu.md)
-- [Harness Engineering Core Patterns Claude Code](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-learning-roadmap-backend-2026.md)
+- [Ai Friendly Architecture Design Taobao](../ch05/022-ai-friendly.md)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/833-anthropic.md)
+- [Harness 之后 状态边界与失败闭环 若飞](../ch05/009-harness.md)
+- [Ai Agent Harness Construction Akshay Baoyu](ch01/1006-ai-agent-harness.md)
+- [Harness Engineering Core Patterns Claude Code](../ch05/092-harness-engineering.md)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/030-ai-agent.md)
 
 ## 实践启示
 

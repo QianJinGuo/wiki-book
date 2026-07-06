@@ -101,11 +101,11 @@ YAML 结构化模板（关键字段）：
 
 ## 相关实体
 
-- [Skill 版本管理五大原则](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-version-management-semantic-versioning-practices-winty.md) — 同作者同系列，版本管理侧
-- [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-evaluation.md)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
-- [Claw-SWE-Bench](https://github.com/QianJinGuo/wiki/blob/main/entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md) — harness 独立评测基准
-- [Agent Eval WalleZhang](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md) — YAML 驱动评估框架
+- [Skill 版本管理五大原则](../ch04/262-skill.md) — 同作者同系列，版本管理侧
+- [Agent Skill 写作评估](../ch04/260-agent-skill.md)
+- [Harness Engineering](../ch05/092-harness-engineering.md)
+- [Claw-SWE-Bench](../ch05/009-harness.md) — harness 独立评测基准
+- [Agent Eval WalleZhang](../ch03/045-agent.md) — YAML 驱动评估框架
 
 ---
 

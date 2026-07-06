@@ -62,7 +62,7 @@ COSO 2026 指南和 PCAOB AS 2201 的组合效应是将 AI 纳入与传统系统
 
 ## 相关实体
 
-- [MCP 生产级设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
+- [MCP 生产级设计模式](ch01/833-anthropic.md)
 - [Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agentic Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)

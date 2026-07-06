@@ -37,12 +37,12 @@ MCP 正在成为 Agent 集成的实际标准，但厂商实现差异很大。Ser
 ServiceNow 愿意接纳 Anthropic 等竞品 Agent 在其平台运行，反映了一种"平台优先"的自信战略。对企业客户而言，这意味着选择企业软件时，应优先考虑那些愿意开放自己执行层、而不是试图将客户锁在自己的 Agent 生态中的供应商。
 
 ## 相关实体
-- [The UI is dead, long live the agent: ServiceNow goes headless](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent.md)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](https://github.com/QianJinGuo/wiki/blob/main/entities/servicenow-ui-is-dead-agent.md)
-- [Auto-Improving Agent Platform (Ashpreet Bedi)](https://github.com/QianJinGuo/wiki/blob/main/entities/auto-improving-agent-platform-ashpreetbedi.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-long-term-agent-tasks.md)
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-reliable-long-term-agent.md)
+- [The UI is dead, long live the agent: ServiceNow goes headless](ch04/345-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.md)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/345-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.md)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch03/045-agent.md)
+- [Auto-Improving Agent Platform (Ashpreet Bedi)](../ch03/045-agent.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.md)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.md)
 
 ---
 

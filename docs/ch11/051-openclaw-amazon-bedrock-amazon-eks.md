@@ -154,11 +154,11 @@ POC 可用 Long-term API Key 快速验证，但生产环境必须切换到 IRSA 
 ## 参考来源
 
 ## 相关实体
-- [Bedrock Agentcore Payment X402 Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-agentcore-payment-x402-agent.md)
-- [Ci T Based On Amazon Bedrock Agentcore Openclaw Enterprise Intelligent Operations Best Practices](https://github.com/QianJinGuo/wiki/blob/main/entities/ci-t-based-on-amazon-bedrock-agentcore-openclaw-enterprise-intelligent-operations-best-practices.md)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 4](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-4.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
+- [Bedrock Agentcore Payment X402 Agent](ch11/048-bedrock-agentcore.md)
+- [Ci T Based On Amazon Bedrock Agentcore Openclaw Enterprise Intelligent Operations Best Practices](../ch04/499-amazon-bedrock-agentcore.md)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/499-amazon-bedrock-agentcore.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/499-amazon-bedrock-agentcore.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/499-amazon-bedrock-agentcore.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-amazon-bedrock-eks-printer-qc.md)
 

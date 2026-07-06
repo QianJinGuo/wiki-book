@@ -120,8 +120,8 @@ ProgramBench 评估的场景与 [Harness Engineering Framework](https://github.c
 
 ## 参见
 
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md) — Claude Opus 4.7 发布详情
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md) — 另一种 Agent 评估框架
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/075-claude-code.md) — Claude Opus 4.7 发布详情
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch03/045-agent.md) — 另一种 Agent 评估框架
 -  — Agent 评估基准框架综述
 - [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统概念
 - [Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md) — 编码 Harness 工程概念

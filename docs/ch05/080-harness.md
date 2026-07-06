@@ -30,7 +30,7 @@ Vibe Coding 的不确定性来源于意图到代码的"单步映射"。Spec-Driv
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[场景营销前端 AI Coding — 从问题到方案](https://github.com/QianJinGuo/wiki/blob/main/entities/frontend-ai-coding-problem-to-solution-taobao.md)。 相关主题通过 [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[场景营销前端 AI Coding — 从问题到方案](ch05/081-ai-coding.md)。 相关主题通过 [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -42,11 +42,11 @@ Vibe Coding 的不确定性来源于意图到代码的"单步映射"。Spec-Driv
 
 ## 相关实体
 
-- [场景营销前端 AI Coding — 从问题到方案](https://github.com/QianJinGuo/wiki/blob/main/entities/frontend-ai-coding-problem-to-solution-taobao.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [AI Coding 入门指南：如何更好地让 AI 真正帮你干活](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-coding-入门指南-如何更好地让ai真正帮你干活.md)
-- [Harness Engineering 详解：如何将 AI Coding 率提升至 90%](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md)
+- [场景营销前端 AI Coding — 从问题到方案](ch05/081-ai-coding.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
+- [AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch05/081-ai-coding.md)
+- [Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch05/092-harness-engineering.md)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/092-harness-engineering.md)
 
 ---
 

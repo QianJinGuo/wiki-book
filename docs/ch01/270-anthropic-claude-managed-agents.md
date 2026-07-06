@@ -103,35 +103,35 @@ Webhook 机制是实现"委托-等待"模式的关键。你的应用可以将任
 Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需要单独申请权限。在生产环境中使用这些功能时，需要考虑：权限申请的不确定性、功能可能变化的兼容性维护、备用方案的准备。建议将预览阶段的功能用于非关键路径，或者设计成可降级方案（如 Outcomes Loop 暂时用人工评估替代）。同时关注官方文档的更新，及时跟进正式发布后的变化。
 
 ## 相关产品/人物
-- [Claude Managed Agents 开发者指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-developer-guide.md)
-- [Anthropic Computer Use 最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-computer-use-best-practices.md)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-long-running-agent-adversarial-architecture.md) — 另一篇技术解读，覆盖 API 细节和定价
-- [Anthropic PM 的 Agentic 工作流](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-pm-agentic-workflow.md) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
+- [Claude Managed Agents 开发者指南](../ch04/485-claude-managed-agents.md)
+- [Anthropic Computer Use 最佳实践](ch01/808-anthropic-computer-use.md)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/075-claude-code.md)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/833-anthropic.md) — 另一篇技术解读，覆盖 API 细节和定价
+- [Anthropic PM 的 Agentic 工作流](../ch04/429-anthropic-pm-agentic.md) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-claude-managed-agents-platform-launch.md)
 
 ## 架构图
 → [C4 架构图](assets/c4/anthropic-claude-managed-agents-platform-2026-c4.html)
 
 ## 相关实体
-- [Claude Managed Agents 官方 Harness 平台指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-guide.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
-- [Multica — 开源 Managed Agents 平台](https://github.com/QianJinGuo/wiki/blob/main/entities/multica-managed-agents-platform.md)
-- [claude managed agents official](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-official.md)
-- [claude managed agents](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents.md)
+- [Claude Managed Agents 官方 Harness 平台指南](ch01/270-anthropic-claude-managed-agents.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/485-claude-managed-agents.md)
+- [Multica — 开源 Managed Agents 平台](../ch07/059-multica-managed-agents.md)
+- [claude managed agents official](../ch04/524-claude-managed-agents-official.md)
+- [claude managed agents](../ch04/485-claude-managed-agents.md)
 
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-google-agent-skills-design-patterns.md)
-- [Anthropic puts Claude agents on a meter across its subscriptions](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-agents-meter-infoworld.md)
-- [Introducing Claude for Small Business](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-for-small-business.md)
-- [Introducing Claude for Small Business](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-for-small-business.md)
-- [Xero Announces Integration with Anthropic's Claude](https://github.com/QianJinGuo/wiki/blob/main/entities/xero-announces-integration-with-anthropics-claude.md)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/352-anthropic-google-agent-skills.md)
+- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/370-anthropic-claude-agent.md)
+- [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.md)
+- [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.md)
+- [Xero Announces Integration with Anthropic's Claude](ch01/833-anthropic.md)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-next-gen-alex-infoq.md)
-- [Anthropic 14 个 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-agent-skills-design-patterns-14.md)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-发布官方报告承认存在-3-处质量退化问题.md)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1187-anthropic-claude.md)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/247-anthropic-agent.md)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/833-anthropic.md)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/375-agent-skills.md)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.md)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1022-claude.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 

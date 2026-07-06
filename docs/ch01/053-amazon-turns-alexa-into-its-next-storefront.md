@@ -8,11 +8,11 @@
 - 来源：https://www.pymnts.com/news/retail/2026/amazon-bets-on-voice-as-agentic-commerces-winning-ai-interface/
 - 评分：v=8 c=7
 ## 相关实体
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki/blob/main/entities/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
-- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
-- [Notion Ai Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/notion-ai-agents.md)
-- [Code Simulation For Enterprise Engineering Playerz](https://github.com/QianJinGuo/wiki/blob/main/entities/code-simulation-for-enterprise-engineering-playerz.md)
-- [Thrive Capital Bets 100 Million On Shopifys Ai Future](https://github.com/QianJinGuo/wiki/blob/main/entities/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future.md)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/229-ai.md)
+- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/056-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
+- [Notion Ai Agents](../ch04/030-ai-agent.md)
+- [Code Simulation For Enterprise Engineering Playerz](ch01/088-code-simulation-for-enterprise-engineering-playerzero.md)
+- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/203-0.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 

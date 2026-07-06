@@ -14,10 +14,10 @@
 - 产品形态：海报设计、视频生成、代码生成等多模态覆盖
 - 局限性：文章为产品介绍性质，缺乏独立评测与竞品对比
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
-- [Ath Agent Trust Handshake Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/ath-agent-trust-handshake-protocol.md)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md)
+- [Wow Harness V3 Governance Protocol](../ch05/009-harness.md)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/350-hermes-agent-goal.md)
+- [Ath Agent Trust Handshake Protocol](../ch03/045-agent.md)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/262-skill.md)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-canvas-agent-era-content-creation.md)

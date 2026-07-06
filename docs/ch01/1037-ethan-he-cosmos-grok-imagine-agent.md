@@ -1,6 +1,6 @@
 # Ethan He：Cosmos Grok Imagine 潜空间视频 Agent
 
-## Ch01.1033 Ethan He：Cosmos Grok Imagine 潜空间视频 Agent
+## Ch01.1037 Ethan He：Cosmos Grok Imagine 潜空间视频 Agent
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md`
 
@@ -33,12 +33,12 @@
 
 ### 关联实体
 
-- [Ai Friendly Architecture Design Taobao](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-friendly-architecture-design-taobao.md)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
-- [Code As Agent Harness Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey-2026.md)
+- [Ai Friendly Architecture Design Taobao](../ch05/022-ai-friendly.md)
+- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/293-latest-open-artifacts-20-new-orgs-new-types-of-models.md)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/107-hy3-preview.md)
+- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.md)
 - [Demis Hassabis Yc Interview Jiedaotixi](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-jiedaotixi.md)
-- [Ai Agent Harness Construction Akshay Baoyu](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-harness-construction-akshay-baoyu.md)
+- [Ai Agent Harness Construction Akshay Baoyu](ch01/1006-ai-agent-harness.md)
 
 ## 实践启示
 

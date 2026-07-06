@@ -12,16 +12,16 @@
 - **GPT-Realtime-Whisper**：流式转写
 
 ## 相关实体
-- [Build Live Translation Apps With Gpt Realtime Translate](https://github.com/QianJinGuo/wiki/blob/main/entities/build-live-translation-apps-with-gpt-realtime-translate.md)
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
+- [Build Live Translation Apps With Gpt Realtime Translate](ch01/136-build-live-translation-apps-with-gpt-realtime-translate.md)
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch01/435-openai.md)
 - GPT-5.5 实测
-- [Gpt 5 Is Here And Openai Has Some Tips](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-5-is-here-and-openai-has-some-tips.md)
-- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)
+- [Gpt 5 Is Here And Openai Has Some Tips](ch01/602-gpt-5-is-here-and-openai-has-some-tips.md)
+- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch01/833-anthropic.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-gpt-realtime-voice-models-qbitai.md)
 
 - [gemini app rolling out](https://github.com/QianJinGuo/wiki/blob/main/entities/9to5google-gemini-app-extended-thinking.md)
-- [gpt -image 2神级提示词分享](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-image-2神级提示词分享.md)
+- [gpt -image 2神级提示词分享](ch01/835-gpt-image-2.md)
 
 ## 深度分析
 

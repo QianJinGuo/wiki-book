@@ -74,9 +74,9 @@ Step 3-4 展示 SwiGLU MLP 内核的性能分析：
 
 ## 相关实体
 
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](https://github.com/QianJinGuo/wiki/blob/main/entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md) — AgentCore 安全配置
-- [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) — AgentCore 工程化
-- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](https://github.com/QianJinGuo/wiki/blob/main/entities/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md) — AgentCore + Strands 实践
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/271-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md) — AgentCore 安全配置
+- [Agentcore Harness](ch04/462-amazon-bedrock-agentcore-harness-ga-api-agent.md) — AgentCore 工程化
+- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](ch04/226-build-an-ai-powered-equipment-repair-assistant-using-amazon.md) — AgentCore + Strands 实践
 - [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
 - [Agent Loop Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) — Agent 循环设计
 - [Aws Ai Services](https://github.com/QianJinGuo/wiki/blob/main/concepts/aws-ai-services.md) — AWS AI 服务

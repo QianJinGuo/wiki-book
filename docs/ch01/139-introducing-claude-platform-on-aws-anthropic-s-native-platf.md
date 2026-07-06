@@ -12,17 +12,17 @@ In this post, we explore how Claude Platform on AWS works and how you can start 
 ## Claude Platform experience through AWS
 
 ## 相关实体
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-platform-on-aws-anthropics-native-platfor.md)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For  2](https://github.com/QianJinGuo/wiki/blob/main/entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for--2.md)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](https://github.com/QianJinGuo/wiki/blob/main/entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-.md)
-- [Claude For Small Business](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-for-small-business.md)
-- [Anthropic Claude Managed Agents Platform 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/833-anthropic.md)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/134-restrict-access-to-sensitive-documents-in-your-amazon-quick.md)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
+- [Claude For Small Business](ch01/027-introducing-claude-for-small-business.md)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/270-anthropic-claude-managed-agents.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-claude-platform-on-aws.md)
 
-- [Anthropic出手Ai的内心独白曝光了](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic出手ai的内心独白曝光了.md)
-- [Claude Code Context Engineering Anthropic Thariq](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-context-engineering-anthropic-thariq.md)
-- [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-founder-playbook-ai-native-startup.md)
+- [Anthropic出手Ai的内心独白曝光了](ch01/833-anthropic.md)
+- [Claude Code Context Engineering Anthropic Thariq](../ch03/075-claude-code.md)
+- [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](ch01/833-anthropic.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)

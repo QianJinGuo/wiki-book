@@ -85,7 +85,7 @@ Archera 的保险模式本质上利用了云消费的可预测性特征。大部
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cloud-infrastructure.md)
 
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](ch11/184-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.md)
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
 
 ---

@@ -12,11 +12,11 @@
 博客链接：https://hy.tencent.com/research/100039
 
 ## 相关实体
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
-- [Microsoft Agent Framework Python Full Guide Zizhi](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-agent-framework-python-full-guide-zizhi.md)
-- [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
-- [Aws Bedrock Agentcore Quality Optimization Flywheel](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-quality-optimization-flywheel.md)
-- [Agent Harness 12 Components 7 Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-12-components-7-decisions.md)
+- [Harness Engineering Framework](../ch05/092-harness-engineering.md)
+- [Microsoft Agent Framework Python Full Guide Zizhi](../ch04/533-python.md)
+- [Hermes Agent Deep Dive Alibaba](../ch03/090-hermes-agent.md)
+- [Aws Bedrock Agentcore Quality Optimization Flywheel](../ch11/118-aws-bedrock-agentcore-quality-optimization-flywheel.md)
+- [Agent Harness 12 Components 7 Decisions](../ch05/038-agent-harness.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cl-bench-life-tencent-context-learning.md)
 
