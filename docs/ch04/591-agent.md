@@ -10,7 +10,7 @@
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](https://github.com/QianJinGuo/wiki/blob/main/entities/backend-ai-friendly-standards-path-alitech.md)。 相关主题通过 [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-architecture-harness-new-backend.md) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](../ch05/022-ai-friendly.md)。 相关主题通过 [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.md) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -22,11 +22,11 @@
 
 ## 相关实体
 
-- [后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](https://github.com/QianJinGuo/wiki/blob/main/entities/backend-ai-friendly-standards-path-alitech.md)
-- [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [AI 友好架构设计](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-friendly-architecture.md)
-- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](../ch05/022-ai-friendly.md)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.md)
+- [AI 友好架构设计](../ch05/022-ai-friendly.md)
+- [AI Agent 工程师能力地图](ch04/030-ai-agent.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
 
 ---
 

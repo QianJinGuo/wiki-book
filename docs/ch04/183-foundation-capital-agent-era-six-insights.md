@@ -113,18 +113,18 @@ Aparna 提出的"Agent as new hire"管理框架的真正价值在于：它把一
 
 ## 相关概念
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — "可插拔>微调"洞察与 Harness Engineering 的核心命题完全一致：框架比模型更持久
-- [Factory Mission](https://github.com/QianJinGuo/wiki/blob/main/entities/factory-mission-multi-agent-architecture.md) — 多 Agent 协作框架 vs. Foundation Capital 的 Agent 主用户原则相互印证
-- [Autobrowse](https://github.com/QianJinGuo/wiki/blob/main/entities/autobrowse-browserbase-persistent-skill.md) — 同样的"反馈循环=产品"洞察，Autobrowse 通过技能文件实现自我改进闭环
-- [Anthropic Claude Managed Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md) — Claude Managed Agents 的 Outcomes Loop 自我评估是"反馈闭环=产品"的具体工程实现
+- [Factory Mission](../ch01/1127-factory-mission-multi-agent-architecture.md) — 多 Agent 协作框架 vs. Foundation Capital 的 Agent 主用户原则相互印证
+- [Autobrowse](../ch07/037-autobrowse-browserbase-persistent-skill.md) — 同样的"反馈循环=产品"洞察，Autobrowse 通过技能文件实现自我改进闭环
+- [Anthropic Claude Managed Agents](../ch01/270-anthropic-claude-managed-agents.md) — Claude Managed Agents 的 Outcomes Loop 自我评估是"反馈闭环=产品"的具体工程实现
 -  — Jonathan Siddharth 是 Turing CEO，其 Agent 优先实践是本篇发言的背景注脚；三角 Orchestrator+Worker+Validator 架构与本文洞察相互印证
 ---
 *Last updated: 2026-05-08*
 *评审：Value 8 × Confidence 8 = 64 ✅ PASS | ★★★★*
 
 ## 相关实体
-- [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md)
-- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-software-moats-agent-era.md)
-- [Agent 时代架构师技能指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-era-architect-skills-guide.md)
+- [Agent 自我改进的六条路](../ch03/045-agent.md)
+- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/045-agent.md)
+- [Agent 时代架构师技能指南](../ch03/069-skills.md)
 
 ---
 

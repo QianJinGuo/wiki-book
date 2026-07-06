@@ -14,7 +14,7 @@
 
 **Loop Engineering**：构建在 Agent 之上的人机协同循环范式。Addy Osmani 定义："Loop engineering is replacing yourself as the person who prompts the agent. You design the system that does it instead." 不是底层的执行循环，而是人设计和控制 Agent 使用方式的上层范式。
 
-与 [Loop Engineering 系统框架](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-deep-dive-mengzhaoSixi-2026.md) 的关系：梦朝思夕的四次跃迁框架（Prompt → Context → Harness → Loop）提供了历史脉络，本文则从 Agent Loop 底层机制出发，解释了为什么 Loop Engineering 是"此 Loop 非彼 Loop"。
+与 [Loop Engineering 系统框架](../ch05/006-loop-engineering.md) 的关系：梦朝思夕的四次跃迁框架（Prompt → Context → Harness → Loop）提供了历史脉络，本文则从 Agent Loop 底层机制出发，解释了为什么 Loop Engineering 是"此 Loop 非彼 Loop"。
 
 ## 演进路径
 
@@ -47,9 +47,9 @@ Loop Engineering 本质上就是一种可以循环起来的 Pipeline，触发方
 
 ## 相关实体
 
-- [Loop Engineering 系统框架](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-deep-dive-mengzhaoSixi-2026.md) — 四次跃迁、五要素模型、成本公式
-- [Agent Loop 工程手册](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md) — 腾讯陈进的8个未解问题
-- [Loop Engineering: 设计替你写提示词的循环](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-addy-osmani-challengehub.md) — Addy Osmani 原始框架
+- [Loop Engineering 系统框架](../ch05/006-loop-engineering.md) — 四次跃迁、五要素模型、成本公式
+- [Agent Loop 工程手册](../ch05/006-loop-engineering.md) — 腾讯陈进的8个未解问题
+- [Loop Engineering: 设计替你写提示词的循环](../ch05/006-loop-engineering.md) — Addy Osmani 原始框架
 
 ---
 

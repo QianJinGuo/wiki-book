@@ -1,6 +1,6 @@
 # 打造高效易用的Agent Skill
 
-## Ch01.1034 打造高效易用的Agent Skill
+## Ch01.1033 打造高效易用的Agent Skill
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/打造高效易用的agent-skill.md`
 

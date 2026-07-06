@@ -13,9 +13,9 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [How to Calculate the Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
-- [From Doer To Director: The AI Mindset Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
+- [From Doer To Director: The AI Mindset Shift](ch01/030-from-doer-to-director-the-ai-mindset-shift.md)
 
-- [ai芯片架构：从逻辑门到矩阵乘法](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-chip-architecture-first-principles.md)
+- [ai芯片架构：从逻辑门到矩阵乘法](../ch04/229-ai.md)
 
 ## 深度分析
 ### GPU 时代的终结与新架构的萌芽

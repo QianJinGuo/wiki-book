@@ -13,11 +13,11 @@ Claude Code的Skills实践及利器推荐：工欲善其事，必先利其器
 第3篇：《Claude Code实践：从零开始，一行代码不写生成一个项目》
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
-- [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
-- [Code Review Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/code-review-graph.md)
-- [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-hackathon-winners-2026.md)
-- [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/075-claude-code.md)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/075-claude-code.md)
+- [Code Review Graph](ch01/746-code-review-graph-claude-code-6-8-token.md)
+- [Claude Code Hackathon Winners 2026](../ch03/075-claude-code.md)
+- [Claude Code Harness Deep Understanding](ch01/456-claude-code-harness-deep-understanding.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-skills-superpowers-practice.md)
 

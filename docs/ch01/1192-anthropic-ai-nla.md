@@ -82,9 +82,9 @@ Anthropic选择将NLA开源：
 
 ## 相关研究
 
-- [Anthropic最新论文：阻止AI叛变的方法](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-最新论文阻止-ai-叛变的方法.md) — 探讨AI自我保护行为与安全边界
-- [Anthropic联创2028年AI自我构建概率超60%](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic联创2028-ai自我构建概率超60.md) — 关于AI自我改进的前瞻预测
-- [Anthropic最危险路线图曝光](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md) — 涉及Anthropic技术路线与AI安全挑战
+- [Anthropic最新论文：阻止AI叛变的方法](ch01/833-anthropic.md) — 探讨AI自我保护行为与安全边界
+- [Anthropic联创2028年AI自我构建概率超60%](ch01/833-anthropic.md) — 关于AI自我改进的前瞻预测
+- [Anthropic最危险路线图曝光](ch01/833-anthropic.md) — 涉及Anthropic技术路线与AI安全挑战
 
 ---
 

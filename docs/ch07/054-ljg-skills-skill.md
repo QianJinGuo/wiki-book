@@ -28,7 +28,7 @@
 
 ljg 的表达写作 Skill 体系隐含着一条"从消极到积极"的递进路径：
 
-**第一层：去除障碍（ljg-plain）**。在能够有效表达之前，首先需要移除那些阻碍沟通的"噪音"——术语、翻译腔、冗余修饰。这类似于 [ljg 技能体系](https://github.com/QianJinGuo/wiki/blob/main/entities/ljg-skills-deep-dive-datastudio-2026.md) 中的"减法思维"：在添加任何表达技巧之前，先确保基本信息的清晰传达。ljg-plain 的作用对象不仅是文字本身，更是作者在写作时的不自觉习惯——当一个人习惯了用复杂句式来掩饰思考的不足时，plain 写作实际上是在强迫作者先想清楚再动笔。
+**第一层：去除障碍（ljg-plain）**。在能够有效表达之前，首先需要移除那些阻碍沟通的"噪音"——术语、翻译腔、冗余修饰。这类似于 [ljg 技能体系](../ch03/069-skills.md) 中的"减法思维"：在添加任何表达技巧之前，先确保基本信息的清晰传达。ljg-plain 的作用对象不仅是文字本身，更是作者在写作时的不自觉习惯——当一个人习惯了用复杂句式来掩饰思考的不足时，plain 写作实际上是在强迫作者先想清楚再动笔。
 
 **第二层：聚焦观点（ljg-writes）**。当表达已无障碍后，下一个挑战是"不跑题"。ljg-writes 强调对准一个观点下刀，这要求作者在动笔前就对核心论题有清晰界定。在 AI 辅助写作日益普及的今天，这一 Skill 的价值尤为突出——因为 LLM 天然倾向于生成面面俱到但浅尝辄止的内容，而 ljg-writes 的"聚焦"原则恰恰是反 LLM 本能的，它要求人类作者保留对信息密度的判断权。
 
@@ -45,7 +45,7 @@ ljg 的 Skill 设计呈现出几个鲜明的哲学特征：
 
 ### 表达 Skill 在 Agent 工作流中的应用
 
-在 [Codex](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-5-layer-architecture.md) 和 [Claude Code](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-top-1-guide-system-engineering.md) 等 AI 编程工具中，良好的表达 Skill 直接影响代码的可维护性和团队协作效率。写代码本质上也是一种表达——向未来的维护者（包括 AI 和自己）传达设计意图的过程。ljg 的表达 Skill 可以映射到代码写作中：
+在 [Codex](../ch01/516-codex.md) 和 [Claude Code](../ch03/075-claude-code.md) 等 AI 编程工具中，良好的表达 Skill 直接影响代码的可维护性和团队协作效率。写代码本质上也是一种表达——向未来的维护者（包括 AI 和自己）传达设计意图的过程。ljg 的表达 Skill 可以映射到代码写作中：
 
 - **ljg-plain → 干净的代码注释**：去除注释中的"翻译腔"和技术术语的滥用，让注释回归其本质——解释"为什么"而非"是什么"
 - **ljg-writes → 聚焦的 commit message**：每次提交聚焦一个变更意图，避免"修改了多个不相干问题"的混杂提交
@@ -63,7 +63,7 @@ ljg 的 Skill 设计呈现出几个鲜明的哲学特征：
 
 ### 与同类工具的对比
 
-与 [Hermes Agent 的 Skill 设计](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-skill-design-analysis.md) 相比，ljg 的 Skill 更侧重于"认知模式"而非"自动化工作流"。Hermes Skill 更像是一个可自动执行的函数（输入 → 自动处理 → 输出），而 ljg Skill 更像是一个思维框架（输入 → 引导人类思考 → 输出）。两者在技能设计中代表了"AI 代替"和"AI 辅助"两种不同的哲学。
+与 [Hermes Agent 的 Skill 设计](../ch01/387-hermes-agent-skill.md) 相比，ljg 的 Skill 更侧重于"认知模式"而非"自动化工作流"。Hermes Skill 更像是一个可自动执行的函数（输入 → 自动处理 → 输出），而 ljg Skill 更像是一个思维框架（输入 → 引导人类思考 → 输出）。两者在技能设计中代表了"AI 代替"和"AI 辅助"两种不同的哲学。
 
 ## 实践启示
 
@@ -75,10 +75,10 @@ ljg 的 Skill 设计呈现出几个鲜明的哲学特征：
 
 ## 相关实体
 
-- [ljg Skills 深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/ljg-skills-deep-dive-datastudio-2026.md)
-- [Hermes Agent Skill 设计分析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-skill-design-analysis.md)
-- [Codex 五层架构](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-5-layer-architecture.md)
-- [Claude Code 顶层指导](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-top-1-guide-system-engineering.md)
+- [ljg Skills 深度解析](../ch03/069-skills.md)
+- [Hermes Agent Skill 设计分析](../ch01/387-hermes-agent-skill.md)
+- [Codex 五层架构](../ch01/516-codex.md)
+- [Claude Code 顶层指导](../ch03/075-claude-code.md)
 
 ## 来源
 

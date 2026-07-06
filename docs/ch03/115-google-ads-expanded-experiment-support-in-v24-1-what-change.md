@@ -68,10 +68,10 @@ Google Ads 实验数据是平台级别的，但业务影响是全链路的。成
 - 建立实验库，记录所有历史实验和结论
 ## 相关实体
 - [3Rdfsmp](https://github.com/QianJinGuo/wiki/blob/main/entities/3rdfsmp.md)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](https://github.com/QianJinGuo/wiki/blob/main/entities/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/building-ai-agents-for-business-support-using-amazon-bedrock.md)
-- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](https://github.com/QianJinGuo/wiki/blob/main/entities/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
-- [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/662-announcing-openai-compatible-api-support-for-amazon-sagemake.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/073-building-ai-agents-for-business-support-using-amazon-bedrock.md)
+- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](../ch01/049-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.md)
+- [Building Blocks For Foundation Model Training And Inference On Aws](../ch11/117-building-blocks-for-foundation-model-training-and-inference.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/almcorp-google-ads-expanded-experiment-v24-1.md)
 

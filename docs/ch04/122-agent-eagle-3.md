@@ -175,11 +175,11 @@ EAGLE-3 相对 MTP 在 Mean TPOT 上有 59% 改善，但文章更强调 P95/P95 
 ## 相关技术链接
 
 ## 相关实体
-- [Eagle 3 Speculative Decoding Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/eagle-3-speculative-decoding-optimization.md)
-- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-smart-shopping-guide-agent-evaluation-pzmx.md)
-- [Gemma 4 Multi Token Prediction Drafters](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-multi-token-prediction-drafters.md)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](https://github.com/QianJinGuo/wiki/blob/main/entities/mellum-2-jetbrains-open-12b-moe-code-model.md)
-- [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
+- [Eagle 3 Speculative Decoding Optimization](../ch01/1036-spec.md)
+- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/045-agent.md)
+- [Gemma 4 Multi Token Prediction Drafters](../ch01/303-gemma-4-multi-token-prediction-drafters.md)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](ch04/229-ai.md)
+- [Wow Harness V3 Governance Protocol](../ch05/009-harness.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/didi-eagle-3-speculative-decoding-agents.md)
 

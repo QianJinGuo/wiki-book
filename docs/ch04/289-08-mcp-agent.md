@@ -91,10 +91,10 @@ MCP 自 2024 年 11 月发布以来，已经从概念验证阶段进入了初步
 
 ## 相关实体
 
-- [Claude Code 系统工程指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-top-1-guide-system-engineering.md)
-- [MCP 再探索](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mcp-revisited.md)
-- [Hermes Agent 配置指南](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-12-layer-full-configuration-guide.md)
-- [MCP 生产模式 12 种](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-12-mcp-production-patterns.md)
+- [Claude Code 系统工程指南](../ch03/075-claude-code.md)
+- [MCP 再探索](../ch07/016-anthropic-mcp.md)
+- [Hermes Agent 配置指南](../ch03/090-hermes-agent.md)
+- [MCP 生产模式 12 种](../ch01/833-anthropic.md)
 - [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mcp-agent-external-ecosystem-integration-guide-2026.md)

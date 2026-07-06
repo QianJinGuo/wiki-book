@@ -74,7 +74,7 @@ function routeAfterLLM(state): string {
 | `getGraph()` | 可视化图结构（调试用） |
 | `getState()` | 获取当前状态（需要 Checkpointer） |
 
-## 与 [Agent Skill Writing](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing.md) 的关系
+## 与 [Agent Skill Writing](ch04/260-agent-skill.md) 的关系
 LangGraph 是构建复杂 Agent Skill 的底层运行时框架。当一个 Skill 需要：
 
 - 多步骤工作流（有条件分支、循环）
@@ -136,7 +136,7 @@ Reducer 不是简单的状态合并工具，它体现了**不可变数据结构*
 Fan-out 触发时，确保并行节点之间**无状态依赖**。如果 `search_web` 和 `search_db` 共享某个 state 字段且使用了非交换的 Reducer（如覆盖型），执行顺序会导致结果不确定。
 
 ## 相关主题
-- [Anthropic Mcp Revisited](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mcp-revisited.md) — MCP 是云端 Agent 标准化接入层，与 LangGraph 的工具调用层有协同关系
+- [Anthropic Mcp Revisited](../ch07/016-anthropic-mcp.md) — MCP 是云端 Agent 标准化接入层，与 LangGraph 的工具调用层有协同关系
 -  — Skill 编写规范，LangGraph 可作为 Skill 的执行引擎
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langgraph-state-machine-under-the-hood.md)
 

@@ -17,16 +17,16 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/digital-commerce-ai-agent-scenarios-challenges.md)
 
-- [Ico Fines South Staffordshire 2022 Breach](https://github.com/QianJinGuo/wiki/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
+- [Ico Fines South Staffordshire 2022 Breach](ch01/897-20.md)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
-- [Interaction Models](https://github.com/QianJinGuo/wiki/blob/main/entities/interaction-models.md)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/weve-been-here-before-decompilers-fuzzers-and-now-ai.md)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-progressive-rollouts-with-vercel-flags-vercel.md)
+- [Interaction Models](../ch03/099-interaction-models-a-scalable-approach-to-human-ai-collabor.md)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch04/229-ai.md)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/127-automate-progressive-rollouts-with-vercel-flags-vercel.md)
 - [Afine Csp Html Injection Password Exfiltration Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration-attack.md)
-- [Ai Native Dan Shipper Every Layered Thinking Walkwalk](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-dan-shipper-every-layered-thinking-walkwalk.md)
-- [Fastlane Create Winning Short Form Content In Seconds](https://github.com/QianJinGuo/wiki/blob/main/entities/fastlane-create-winning-short-form-content-in-seconds.md)
-- [Mira Mpa Deep Principle Ai4S 40 Sota](https://github.com/QianJinGuo/wiki/blob/main/entities/mira-mpa-deep-principle-ai4s-40-sota.md)
-- [Localmaxxing](https://github.com/QianJinGuo/wiki/blob/main/entities/localmaxxing.md)
+- [Ai Native Dan Shipper Every Layered Thinking Walkwalk](../ch05/018-ai-native.md)
+- [Fastlane Create Winning Short Form Content In Seconds](../ch03/102-fastlane-create-winning-short-form-content-in-seconds.md)
+- [Mira Mpa Deep Principle Ai4S 40 Sota](../ch04/229-ai.md)
+- [Localmaxxing](../ch03/105-localmaxxing.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 ### 资金流向结构与市场情绪

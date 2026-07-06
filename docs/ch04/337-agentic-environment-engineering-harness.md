@@ -109,13 +109,13 @@ Harness 和 Environment 不是替代关系：
 
 ## 与现有知识的关联
 
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)——Environment 是 Harness 的外层延伸
-- [Harness 之后：可删的工作现场](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-deletable-worksite-ruofei.md)——"可删的工作现场"概念与 Environment 的可恢复性呼应
-- [Loop Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-addy-osmani-challengehub.md)——Loop 关心任务怎么持续发生，Environment 关心循环所依赖的事实源是否可靠
-- [Loop Engineering 反馈控制系统](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-feedback-control-system.md)——反馈控制的前提是环境能给出可信反馈
-- [Self-Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/self-harness-shanghai-ai-lab-agent-improves-harness.md)——没有可靠环境，自我改进很容易变成自我强化
-- [Agent 开发范式演进：从环境工程出发](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-开发范式演进从环境工程出发简化多源实时上下文.md)——同主题不同角度，侧重多源实时上下文简化
-- [清华 Harness Engineering 报告](https://github.com/QianJinGuo/wiki/blob/main/entities/tsinghua-harness-engineering-report.md)——EurekAgent 的权限/产物/预算/人在环四工程与清华报告互补
+- [Harness Engineering 框架](../ch05/092-harness-engineering.md)——Environment 是 Harness 的外层延伸
+- [Harness 之后：可删的工作现场](../ch05/082-harness-engineering-deletable-worksite-ruofei.md)——"可删的工作现场"概念与 Environment 的可恢复性呼应
+- [Loop Engineering](../ch05/006-loop-engineering.md)——Loop 关心任务怎么持续发生，Environment 关心循环所依赖的事实源是否可靠
+- [Loop Engineering 反馈控制系统](../ch05/006-loop-engineering.md)——反馈控制的前提是环境能给出可信反馈
+- [Self-Harness](../ch05/009-harness.md)——没有可靠环境，自我改进很容易变成自我强化
+- [Agent 开发范式演进：从环境工程出发](../ch03/045-agent.md)——同主题不同角度，侧重多源实时上下文简化
+- [清华 Harness Engineering 报告](../ch05/092-harness-engineering.md)——EurekAgent 的权限/产物/预算/人在环四工程与清华报告互补
 
 ---
 

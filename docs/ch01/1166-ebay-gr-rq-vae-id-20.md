@@ -51,7 +51,7 @@ Transformer 编码器-解码器架构：
 
 ## 与同类方案的对比
 
-与 [Instacart 生成式检索](https://github.com/QianJinGuo/wiki/blob/main/entities/instacart-ads-retrieval-generative-token-by-token.md) 的差异：
+与 [Instacart 生成式检索](../ch12/003-token.md) 的差异：
 - eBay 使用 RQ-VAE（残差量化）构建语义 ID，Instacart 使用语义 token
 - eBay 覆盖 20 亿商品全量，规模远超 Instacart
 - eBay 将语义 ID 同时用于召回和排序特征，Instacart 仅用于召回

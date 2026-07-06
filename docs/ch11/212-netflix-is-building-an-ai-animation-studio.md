@@ -10,7 +10,7 @@
 ## 相关实体
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Netflix Nebula Archrules](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-nebula-archrules.md)
+- [Netflix Nebula Archrules](ch11/088-netflix-nebula-archrules-java-archunit.md)
 - [Netflix Switchboard Lightbulb Model Routing](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 

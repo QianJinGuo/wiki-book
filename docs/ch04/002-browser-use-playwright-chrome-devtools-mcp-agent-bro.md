@@ -5,7 +5,7 @@
 > 📊 Level ⭐ | 11.3KB | `entities/four-browser-automation-tools-comparison.md`
 
 > 来源：[行小招 - 科技充电站](https://mp.weixin.qq.com/s/2aqrTvswa6FtqI-GK-EmvQ)，2026-05-19
-> 评分：v=6, c=7, v×c=42 → 作为 [OpenCLI](https://github.com/QianJinGuo/wiki/blob/main/entities/opencli.md) entity 的补充
+> 评分：v=6, c=7, v×c=42 → 作为 [OpenCLI](../ch03/084-opencli.md) entity 的补充
 | 维度 | chrome-devtools-mcp | Playwright | agent-browser | browser-use | BrowserAct | [raw/articles/browseract-agent-browser-execution-layer-rejected.md]
 |------|--------------------|-----------|---------------|-------------|------------|
 | 语言/运行时 | Node.js | Node.js，多语言绑定 | Rust，原生二进制 | Python | Node.js + Rust 内核 |
@@ -18,7 +18,7 @@
 | **反检测** | ❌ | ❌ | ❌ | ❌ | **✅ 18 项反检测全绿**（产品方自报，bot.sannysoft） |
 | **人机接力（验证码/2FA）** | ❌ | ❌ | ❌ | ❌ | **✅ Remote-assist 跨设备链接** |
 | **多身份隔离（多账号）** | ❌ | ❌ | ❌ | ❌ | **✅ 浏览器身份 × 静态代理绑定** |
-| **Skill Forge 流程打包** | ❌ | ❌ | ❌ | ❌ | ✅（注：与 [古法程序员 spec-as-code](https://github.com/QianJinGuo/wiki/blob/main/entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md) 的 SKILL.md 模式重叠） |
+| **Skill Forge 流程打包** | ❌ | ❌ | ❌ | ❌ | ✅（注：与 [古法程序员 spec-as-code](../ch01/516-codex.md) 的 SKILL.md 模式重叠） |
 
 ## 四层抽象
 

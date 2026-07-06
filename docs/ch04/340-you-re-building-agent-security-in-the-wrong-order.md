@@ -64,12 +64,12 @@ CrewAI 的 Flows 架构通过确定性路由、可观测执行和升级路径来
 
 ### 相关实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [Tencentdb Agent Memory Context Offloading](https://github.com/QianJinGuo/wiki/blob/main/entities/tencentdb-agent-memory-context-offloading.md)
-- [how developers can build agentic agreement workflows on docu](https://github.com/QianJinGuo/wiki/blob/main/entities/how-developers-can-build-agentic-agreement-workflows-on-docu.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/092-harness-engineering.md)
+- [Tencentdb Agent Memory Context Offloading](ch04/120-agent-memory.md)
+- [how developers can build agentic agreement workflows on docu](ch04/290-how-developers-can-build-agentic-agreement-workflows-on-docu.md)
 
 ---
 

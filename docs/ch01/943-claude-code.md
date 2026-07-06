@@ -49,12 +49,12 @@ source_published: 2026-04-01
 
 ### 关联实体
 
-- [Hermes Agent V014 Architecture Shugex](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-v014-architecture-shugex.md)
-- [Claude Code Team 10 Tips Boris Data派Thu](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-team-10-tips-boris-data派THU.md)
-- [Hermes Agent Soul Md Personality Shugex](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-soul-md-personality-shugex.md)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](https://github.com/QianJinGuo/wiki/blob/main/entities/imclaw通过微信飞书操控claudecodecodexgeminiclipi-agent蜂群.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-institute-when-ai-builds-itself-jiagoux-interpretation.md)
+- [Hermes Agent V014 Architecture Shugex](../ch03/090-hermes-agent.md)
+- [Claude Code Team 10 Tips Boris Data派Thu](../ch03/075-claude-code.md)
+- [Hermes Agent Soul Md Personality Shugex](../ch03/090-hermes-agent.md)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/330-pi-agent.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.md)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/833-anthropic.md)
 
 ## 实践启示
 

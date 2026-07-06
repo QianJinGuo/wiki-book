@@ -78,14 +78,14 @@ ShinyHunters 决定"完全放弃 clearnet 运营，仅依赖 onion 平台"具有
 
 ## 相关实体
 
-- [Claude Code 源码机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md) — AI 工具架构
-- [Karpathy Vibe Coding 访谈](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Agentic Engineering 范式
-- [Harness Engineering 概念](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [Karpathy Vibe Coding 完整版](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [Agent 记忆系统](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Scale Robot RL with NVIDIA Isaac Lab](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
-- [LLMReaper Browser Extension Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md) — 浏览器扩展攻击向量
-- [What My Privacy and Security Stack Actually Looks Like](https://github.com/QianJinGuo/wiki/blob/main/entities/what-my-privacy-and-security-stack-actually-looks-like.md) — 个人安全栈案例
+- [Claude Code 源码机制](../ch03/075-claude-code.md) — AI 工具架构
+- [Karpathy Vibe Coding 访谈](../ch03/045-agent.md) — Agentic Engineering 范式
+- [Harness Engineering 概念](../ch05/092-harness-engineering.md)
+- [Karpathy Vibe Coding 完整版](../ch04/134-karpathy-vibe-coding-agentic-engineering.md)
+- [Agent 记忆系统](../ch03/045-agent.md)
+- [Scale Robot RL with NVIDIA Isaac Lab](../ch01/1057-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [LLMReaper Browser Extension Attack](ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.md) — 浏览器扩展攻击向量
+- [What My Privacy and Security Stack Actually Looks Like](ch12/021-what-my-privacy-and-security-stack-actually-looks-like.md) — 个人安全栈案例
 
 > [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md)
 

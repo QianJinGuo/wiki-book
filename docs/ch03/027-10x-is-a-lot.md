@@ -10,10 +10,10 @@ You have probably heard people say things like "this product makes you 10x more 
 Here are a few examples of what things would look like if they were 10x faster/better/bigger:
 
 ## 相关实体
-- [Skill Development Guide Aliyun 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-development-guide-aliyun-2026.md)
+- [Skill Development Guide Aliyun 2026](../ch04/262-skill.md)
 - [Manus.Im Manus Schedules](https://github.com/QianJinGuo/wiki/blob/main/entities/manus.im-manus-schedules.md)
-- [Openclaw Multi Agent Team Practice](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-agent-team-practice.md)
-- [Strands Agents Cloud Cost Optimizer](https://github.com/QianJinGuo/wiki/blob/main/entities/strands-agents-cloud-cost-optimizer.md)
+- [Openclaw Multi Agent Team Practice](../ch04/047-openclaw-multi-agent-team-practice-v2.md)
+- [Strands Agents Cloud Cost Optimizer](ch03/045-agent.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/10x-is-a-lot.md)

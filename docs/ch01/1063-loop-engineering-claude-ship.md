@@ -52,9 +52,9 @@ git clone https://github.com/Peakstone-Labs/claude-ship.git && cd claude-ship &&
 
 ## 相关实体
 
-- [从 SDD 到 Lattice Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/sdd-practice-lattice-harness-team-ai-coding.md) — 另一团队级 AI Coding 闭环实践
-- [《Loop Engineering橙皮书》](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-06-17--Loop-Engineering橙皮书-发布-免费-开源-花叔.md) — Loop Engineering 概念框架
-- [Agent Loop 工程手册 8 个未解问题](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md) — 腾讯云陈进 Loop Engineering 解读
+- [从 SDD 到 Lattice Harness](../ch05/081-ai-coding.md) — 另一团队级 AI Coding 闭环实践
+- [《Loop Engineering橙皮书》](ch01/897-20.md) — Loop Engineering 概念框架
+- [Agent Loop 工程手册 8 个未解问题](../ch05/006-loop-engineering.md) — 腾讯云陈进 Loop Engineering 解读
 
 ---
 

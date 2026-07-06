@@ -2,7 +2,7 @@
 
 ## Ch04.356 Linear Code Intelligence: Controlled Codebase Access for Linear Agent
 
-> 📊 Level ⭐⭐ | 7.8KB | `entities/2026-05-14-code-intelligence-1778979927.md`
+> 📊 Level ⭐⭐ | 7.7KB | `entities/2026-05-14-code-intelligence-1778979927.md`
 
 # Linear Code Intelligence: Controlled Codebase Access for Linear Agent
 
@@ -94,8 +94,8 @@ Code Intelligence 的访问权限直接继承 GitHub 权限模型——"Limited 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 工程化的更高层抽象
 - `Pydantic Ai Progressive Agent Skills Automatorrunner` — Agent 框架的另一视角
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-05-14-code-intelligence-1778979927.md)
-- [code intelligence – changelog](https://github.com/QianJinGuo/wiki/blob/main/entities/code-intelligence-changelog-1.md)
-- [stack overflow for agents — ephemeral intelligence gap 框架与 a](https://github.com/QianJinGuo/wiki/blob/main/entities/stackoverflow-for-agents-launch-2026.md)
+- [Code Intelligence Changelog](ch04/447-code-intelligence-changelog.md)
+- [stack overflow for agents — ephemeral intelligence gap 框架与 a](../ch03/045-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

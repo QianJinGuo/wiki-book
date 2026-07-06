@@ -90,11 +90,11 @@ GLM-5 由智谱 Z.ai 推出：
 
 ## 关联实体
 
-- [DeepSeek V4](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4.md) — 业界关注度最高、即将发布的中国前沿模型
-- [CybersecQwen 4B](https://github.com/QianJinGuo/wiki/blob/main/entities/cybersecqwen-4b.md) — Qwen 在安全垂域的专用模型
-- [OpenClaw 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md) — Agent 工具栈的实践参考
-- [Agent 记忆系统的工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md) — 长上下文在 Agent 记忆中的工程化
-- [Claude Code 源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md) — 编码场景的 Agent 实现细节
+- [DeepSeek V4](ch01/305-deepseek-v4.md) — 业界关注度最高、即将发布的中国前沿模型
+- [CybersecQwen 4B](../ch12/098-cybersecqwen-4b.md) — Qwen 在安全垂域的专用模型
+- [OpenClaw 完全指南](../ch11/213-openclaw.md) — Agent 工具栈的实践参考
+- [Agent 记忆系统的工程实践](../ch03/045-agent.md) — 长上下文在 Agent 记忆中的工程化
+- [Claude Code 源码核心机制](../ch03/075-claude-code.md) — 编码场景的 Agent 实现细节
 - [Agent 循环设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) — Agent 评测与训练的核心范式
 
 ---

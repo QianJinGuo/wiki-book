@@ -38,11 +38,11 @@
 5. **在离线统一**：同一套Workflow逻辑，通过触发源差异区分在线/离线，代码复用率最大化
 
 ## 相关实体
-- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](https://github.com/QianJinGuo/wiki/blob/main/entities/tmic-ai-xiaoxin-deepagent-architecture-evolution.md)
-- [Verizon Connect Agentic Ai 100K Users](https://github.com/QianJinGuo/wiki/blob/main/entities/verizon-connect-agentic-ai-100k-users.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/co-existence-paradigm-shift-agentic-ai-mollick-2026.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
+- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/045-agent.md)
+- [Verizon Connect Agentic Ai 100K Users](ch04/107-verizon-connect-agentic-ai-10.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/142-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/556-ai-mollick.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/taobao-product-domain-agent-architecture.md)
 

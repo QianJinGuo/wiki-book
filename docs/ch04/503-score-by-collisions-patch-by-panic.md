@@ -10,10 +10,10 @@
 - 来源：https://blog.himanshuanand.com/2026/05/score-by-collisions-patch-by-panic/
 
 ## 相关实体
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](https://github.com/QianJinGuo/wiki/blob/main/entities/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](https://github.com/QianJinGuo/wiki/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/771-google-adds-llms-txt-check-to-chrome-lighthouse.md)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/811-github.md)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/1019-rag.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/229-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)

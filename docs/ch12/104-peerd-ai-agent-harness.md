@@ -78,7 +78,7 @@ Bring Your Own Key——用户可以连接任何模型提供商（OpenAI、Anthr
 
 - [Agent Harness 工程框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Computer Use Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/computer-use-agent.md)
-- [Gemini 3.5 Flash Computer Use Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-computer-use-agent-harness.md)
+- [Gemini 3.5 Flash Computer Use Agent Harness](../ch05/038-agent-harness.md)
 - [Agent 安全架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)
 
 ---

@@ -119,9 +119,9 @@ Agent 像运维工程师一样执行完整诊断流程：
 
 ## 相关实体
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Harness Engineering 10 Step Practical Guide 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-10-step-practical-guide-2026.md)
-- [Claude Code Multi Agent Harness Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-multi-agent-harness-source-analysis.md)
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md)
+- [Harness Engineering 10 Step Practical Guide 2026](../ch05/092-harness-engineering.md)
+- [Claude Code Multi Agent Harness Source Analysis](../ch05/038-agent-harness.md)
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/152-amazon-bedrock.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alibaba-devix-harness-ops-agent-7x24.md)
 
