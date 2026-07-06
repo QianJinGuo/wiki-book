@@ -189,7 +189,7 @@ Claude 在被限定到实际与任务相关的代码库部分时工作得最好�
 
 ## 与 Agent Harness Engineering 的关系
 
-参见 [Agent Harness 架构](ch03/045-agent.md)（AHE框架）。
+参见 [Agent Harness 架构](ch05/085-harness.md)（AHE框架）。
 
 AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景扩展点实现，两者互补。AHE 的"三层可观测"在大型代码库场景对应 LSP+Hooks 的调试能力。
 
@@ -239,21 +239,21 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 ## 相关实体
 - [Claude Code Best Practices Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-best-practices-prompt-engineering.md)
 
-- [Feishu Aily Agent Lobster](ch04/277-ai.md)
+- [Feishu Aily Agent Lobster](ch04/069-ai.md)
 - [Colaos Listenhub Agency Native Organization Juzi](https://github.com/QianJinGuo/wiki/blob/main/entities/colaos-listenhub-agency-native-organization-juzi.md)
-- [Red Sequoia Ai Summit Agi Declaration](ch04/277-ai.md)
+- [Red Sequoia Ai Summit Agi Declaration](ch04/069-ai.md)
 - [Hermes Self Improving Overview Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-overview-winty.md)
 - [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor.com-composer-2-5.md)
 - [100 年压缩到 100 天红杉资本这就是 Agi](ch01/216-0.md)
 - [Stripe Agent Economic Infrastructure Emily Sands](ch03/045-agent.md)
 - [Pilotdeck Data派Thu 2026](ch01/216-0.md)
 - [Four Sub Agent Patterns 2026](ch01/216-0.md)
-- [A Guide To Which Ai To Use In The Agentic Era](ch01/601-a-guide-to-which-ai-to-use-in-the-agentic-era.md)
-- [Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606](ch04/277-ai.md)
+- [A Guide To Which Ai To Use In The Agentic Era](ch01/576-a-guide-to-which-ai-to-use-in-the-agentic-era.md)
+- [Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606](ch04/069-ai.md)
 - [Cloud Agent Development Environments 1778979924](ch03/045-agent.md)
 - [Volcengine Data Agent Product Overview](ch03/045-agent.md)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/277-ai.md)
-- [Emergent Collaboration Ai High Quality Decision Agent Room](ch04/277-ai.md)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/069-ai.md)
+- [Emergent Collaboration Ai High Quality Decision Agent Room](ch04/069-ai.md)
 - [Iclr 2026 英伟达 普渡大学用Agent闭环实现文生3D](ch01/216-0.md)
 - [Agent Guide Core Concepts Overview](ch03/045-agent.md)
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch03/045-agent.md)
@@ -263,11 +263,11 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Agent Paradigm Evolution Feipeng Alibaba](ch03/045-agent.md)
 - [Hermes Agent Long Running Governance Five Cards Ruofei](ch03/045-agent.md)
 - [Agentic Rl Token In Token Out Done Right C6Aaa4](ch03/045-agent.md)
-- [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](ch04/277-ai.md)
+- [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](ch04/069-ai.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 - [Kimi Work 300 Agent Cluster Yin John Agi Hunt](ch01/216-0.md)
-- [Your First Ai Agent Should Do One Thing Badly](ch04/353-your-first-ai-agent-should-do-one-thing-badly.md)
-- [A Missing Layer In Agentic Systems](ch04/329-a-missing-layer-in-agentic-systems.md)
+- [Your First Ai Agent Should Do One Thing Badly](ch04/361-your-first-ai-agent-should-do-one-thing-badly.md)
+- [A Missing Layer In Agentic Systems](ch04/338-a-missing-layer-in-agentic-systems.md)
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps 1778979925](ch03/045-agent.md)
 - [Hermes Agent Soul Md Personality Shugex](ch03/045-agent.md)
 - [Lessons From 2 Billion Agentic Workflows](ch04/387-lessons-from-2-billion-agentic-workflows.md)
@@ -278,8 +278,8 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Real Ai Agents And Real Work](ch04/217-real-ai-agents-and-real-work.md)
 - [Volcengine Data Agent Intelligent Query Agent](ch03/045-agent.md)
 - [Hermes Agent Tool System Analysis](ch03/045-agent.md)
-- [How To Build Agents Where Data Already Lives](ch04/460-how-to-build-agents-where-data-already-lives.md)
-- [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](ch04/277-ai.md)
+- [How To Build Agents Where Data Already Lives](ch04/466-how-to-build-agents-where-data-already-lives.md)
+- [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](ch04/069-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

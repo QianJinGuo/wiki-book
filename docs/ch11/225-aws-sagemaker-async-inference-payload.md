@@ -87,7 +87,7 @@ response = sagemaker_runtime.invoke_endpoint_async(
 ## 与知识库的连接
 
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-sagemaker-ai-async-inference-now-supports-inline-requ.md)
-- 异步推理架构参考：[SQS+Lambda 异步管道](ch11/253-bedrock.md)
+- 异步推理架构参考：[SQS+Lambda 异步管道](ch11/251-bedrock.md)
 - SageMaker 工具链：[SageMaker SFT/DPO 工具调用](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-sft-dpo-tool-calling.md)
 
 ---

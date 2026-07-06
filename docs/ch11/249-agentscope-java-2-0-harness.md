@@ -313,7 +313,7 @@ AgentScope Java 2.0 将传统 Web 框架中成熟的 Middleware Chain 模式引�
 
 ### Sealed Class 作为消息类型系统的优势与局限
 
-使用 Sealed Interface 定义 Message 类型体系，获得编译期穷尽性检查的同时保持了扩展接口的灵活性。这个选择在 [Harness Engineering 核心模式](ch05/061-harness-engineering.md) 中有类似的模式讨论。值得注意的是，Sealed Class 的穷尽性检查是一把双刃剑——它强制所有 switch 语句在新增类型时必须显式处理，但同时也要求所有参与者都遵守开闭原则。大型团队中，维护 sealed hierarchy 的演化需要严格的代码审查流程。
+使用 Sealed Interface 定义 Message 类型体系，获得编译期穷尽性检查的同时保持了扩展接口的灵活性。这个选择在 [Harness Engineering 核心模式](ch05/085-harness.md) 中有类似的模式讨论。值得注意的是，Sealed Class 的穷尽性检查是一把双刃剑——它强制所有 switch 语句在新增类型时必须显式处理，但同时也要求所有参与者都遵守开闭原则。大型团队中，维护 sealed hierarchy 的演化需要严格的代码审查流程。
 
 ### Abstract FileSystem 的多租户隔离思路值得借鉴
 
@@ -335,13 +335,13 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](ch03/075-claude-code.md)
 - [Subagents 详解Claude Code 如何避免上下文污染](ch03/075-claude-code.md)
 - [Factory Mission Multi Agent Architecture](ch01/1053-factory-mission-multi-agent-architecture.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/277-ai.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/069-ai.md)
 - [Iii Dev Worker Trigger Function](ch01/456-iii-dev.md)
-- [AgentScope Java Harness Framework 42KB](ch03/045-agent.md) — 同 AgentScope Java 2.0 早期综述
-- [AgentScope Builder](ch03/045-agent.md) — 同生态自进化视角
+- [AgentScope Java Harness Framework 42KB](ch05/085-harness.md) — 同 AgentScope Java 2.0 早期综述
+- [AgentScope Builder](ch05/085-harness.md) — 同生态自进化视角
 - [Loop Engineering](ch05/006-loop-engineering.md) — 同样强调"组织级流程约束"
-- [MXC Execution Containers](ch04/277-ai.md) — 类似沙箱机制对比
-- [Agent Harness Engineering Survey](ch05/061-harness-engineering.md) — Harness 行业全景
+- [MXC Execution Containers](ch04/069-ai.md) — 类似沙箱机制对比
+- [Agent Harness Engineering Survey](ch01/216-0.md) — Harness 行业全景
 
 ## 实践启示
 

@@ -110,7 +110,7 @@ Caturegli 分析认为，该仓库的使用模式显示个人将其作为工作�
 ## 外部参考
 
 ## 相关实体
-- [Github Copilot Individual Plans Flex Allotments](ch01/732-github-copilot-individual-plans-flex-allotments-in-pro-and.md)
+- [Github Copilot Individual Plans Flex Allotments](ch01/834-github.md)
 - [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](ch01/216-0.md)
 - [Andrej Karpathy Claude Md 134K Stars 2026](ch01/216-0.md)
 - [Open Source Projects Leaving Github](ch01/834-github.md)

@@ -78,7 +78,7 @@ Boris 说他最初觉得 auto mode"不靠谱——把 prompt 路由给一个模�
 - Auto mode：用专门训练的 Sonnet 4.6 分类器持续学习；收集成千上万条 Agent 运行轨迹 + 红队 prompt 注入 + 内部攻击测试 + 真实发现 → eval。
 - **结论**：auto mode 比人工形式审查更安全，因为它对所有请求都做实质性判断。
 
-这与 [Agent Security 三步走: Harness + Governance + Identity](ch04/277-ai.md) 中"governance 必须可验证、可审计"的原则一致——Auto Mode 是 governance 的工业级实现。
+这与 [Agent Security 三步走: Harness + Governance + Identity](ch04/069-ai.md) 中"governance 必须可验证、可审计"的原则一致——Auto Mode 是 governance 的工业级实现。
 
 ### 五、Context 极简主义对 prompt engineering 的反叛
 
@@ -92,7 +92,7 @@ Boris + Cat 都明确表态：
 - 当前 Opus 4.7+：过度工程化 context 反而限制模型的内在能力。
 - **真正的工程**：保持 system prompt 极简、提供足够但不过度的 tools、让模型自己决策用什么 context。
 
-这与 [From Prompt to Harness: Claude 官方](ch01/485-claude.md) 描述的"harness 不是更大 prompt，是更好结构"理念一致——harness engineering 的核心不是"塞更多 context"，而是"提供对的 tools + 对的评估 + 对的 Skill 沉淀机制"。
+这与 [From Prompt to Harness: Claude 官方](ch05/085-harness.md) 描述的"harness 不是更大 prompt，是更好结构"理念一致——harness engineering 的核心不是"塞更多 context"，而是"提供对的 tools + 对的评估 + 对的 Skill 沉淀机制"。
 
 ### 六、源码泄露风波的工程含义
 
@@ -149,11 +149,11 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [Claude Code Prompt 源码分析](ch03/075-claude-code.md)
 - [Claude Code Prompt 源码分析 fanone](ch03/075-claude-code.md)
 - [Claude Code Prompt Context Harness](ch03/075-claude-code.md)
-- [From Prompt to Harness: Claude 官方](ch01/485-claude.md)
-- [Anthropic Prompt Caching 与 Claude Code](ch01/303-anthropic-prompt-caching-claude-code.md)
+- [From Prompt to Harness: Claude 官方](ch05/085-harness.md)
+- [Anthropic Prompt Caching 与 Claude Code](ch01/275-anthropic-prompt-caching-claude-code.md)
 - [24h Worker Agent](ch03/045-agent.md)
-- [Agent Security 三步走: Harness + Governance + Identity](ch04/277-ai.md)
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](ch04/277-ai.md)
+- [Agent Security 三步走: Harness + Governance + Identity](ch04/069-ai.md)
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](ch04/069-ai.md)
 - [Karpathy: Software 3.0 与 vibe coding 时代的终结](ch03/045-agent.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

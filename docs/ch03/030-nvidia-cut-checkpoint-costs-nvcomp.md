@@ -45,10 +45,10 @@ Optimizer state（FP32）通常是检查点体积的最大组成部分。在考�
 文章标题强调通过"约30行Python代码"即可完成集成，这大幅降低了工程门槛。建议将nvCOMP checkpoint compression作为标准训练流程的一部分，而非事后的优化项。
 
 ## 相关实体
-- [Nvidia Gpu Kernel Translation Cute Python Julia](ch04/524-python.md)
+- [Nvidia Gpu Kernel Translation Cute Python Julia](ch04/528-python.md)
 - [Nvidia Edge First Llms Av Robotics](ch01/310-nvidia-edge-first-llms-av-robotics.md)
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/363-nvidia-secure-local-agent-nemoclaw-openclaw.md)
-- [Nvidia Gemma 4 Edge Ai](ch01/708-nvidia-gemma-4-edge-ai.md)
+- [Nvidia Gemma 4 Edge Ai](ch01/683-nvidia-gemma-4-edge-ai.md)
 - [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 

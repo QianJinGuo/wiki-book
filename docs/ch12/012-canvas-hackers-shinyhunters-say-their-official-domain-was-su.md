@@ -285,11 +285,11 @@ Canvas LMS 攻击影响全球数百所大学，凸显了教育机构在网络安
 2. **了解暗网风险的局限性** — 虽然 Tor 提供了匿名性，但它也是欺诈者和攻击者的避风港，对任何暗网内容的信任都应保持谨慎。
 
 ## 相关实体
-- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](ch04/277-ai.md)
-- [Npm Supply Chain Compromise Postmortem](ch04/277-ai.md)
+- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](ch04/069-ai.md)
+- [Npm Supply Chain Compromise Postmortem](ch04/069-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/277-ai.md)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/277-ai.md)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/069-ai.md)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch04/069-ai.md)
 - [a route to root in a 4g industrial router](ch01/216-0.md)
 
 ---

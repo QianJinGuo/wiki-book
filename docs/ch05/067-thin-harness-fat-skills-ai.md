@@ -47,10 +47,10 @@ AI应用有两个完全不同的空间：Latent 空间和 Deterministic 空间�
 5. **用 Fat Code 保护关键路径**：对需要精确结果的操作（支付计算、数据写入、编译检查），完全排除 LLM 介入，由代码保证确定性，形成系统的确定性保护区 。
 
 ## 相关实体
-- [Mac Multi Agent Coding Skills Hooks Harness](ch04/255-skill.md)
+- [Mac Multi Agent Coding Skills Hooks Harness](ch04/258-skill.md)
 - [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.md)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch01/216-0.md)
-- [Claude Code Harness Deep Understanding](ch01/484-claude-code-harness-deep-understanding.md)
+- [Claude Code Harness Deep Understanding](ch01/456-claude-code-harness-deep-understanding.md)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](ch01/216-0.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thin-harness-fat-skills.md)

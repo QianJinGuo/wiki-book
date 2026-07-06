@@ -15,7 +15,7 @@
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/265-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch03/045-agent.md)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/277-ai.md)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/integrating-aws-api-mcp-server-with-amazon-quick-suite-using-amazon-bedrock-agen.md)
 
