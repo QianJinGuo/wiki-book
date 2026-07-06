@@ -6,11 +6,28 @@
 
 ```
 站点名称: AI 工程
-源文件:   docs/ (4,000+ 篇文章)
-章节:     20 章 (Ch01-Ch20)
+源文件:   docs/ (2,675 篇文章)
+章节:     20 章 5 篇 (Ch01-Ch20)
+实体数:   2,983
+子页面:   2,652
 域名:     jinguo.tech
 仓库:     github.com/QianJinGuo/wiki-book
+版本:     v1.3.5
 ```
+
+## 链接规则
+
+| 链接类型 | 目标 | 示例 |
+|---------|------|------|
+| `[[entities/xxx]]` | 站内章节目录 | `ch01/045-agent.md` → MkDocs 转 `.html` |
+| `[[raw/articles/xxx]]` | GitHub blob（`github.com/.../blob/main/raw/articles/...`） | 带 GitHub UI |
+| `[[concepts/xxx]]` / `[[moc/xxx]]` | GitHub blob | 同上 |
+
+### 常见问题
+
+- 实体站内链只在 `split-chapters.py` 运行后生效（`fix-docs-links.py` 后处理）
+- 流水线顺序：`book_compiler → mkdocs_prepare → split-chapters → fix-docs-links`
+- `mkdocs_prepare` 自身构建的 entity_page_index 为空（ch*/ 目录尚未存在），所以 `fix-docs-links.py` 是必须的后处理步骤
 
 ---
 
@@ -247,6 +264,6 @@ node test-rag.mjs
 
 ---
 
-*更新时间: 2026-07-02 (v1.3.3)*
+*更新时间: 2026-07-06 (v1.3.5)*
 *维护者: Hermes Agent*
 *RAG 复盘: RAG-RETROSPECTIVE.md*
