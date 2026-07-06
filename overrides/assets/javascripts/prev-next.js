@@ -4,12 +4,12 @@
   "use strict";
   
   var path = window.location.pathname;
-  // Match: ch01-001-xxx.html or ch01-001-xxx/
-  var match = path.match(/ch(\d+)-(\d+)-/);
+  // Match: ch01/001-xxx or ch01-001-xxx
+  var match = path.match(/ch(\d+)\/(\d+)-|ch(\d+)-(\d+)-/);
   if (!match) return; // Not an article page
   
-  var chNum = match[1];
-  var artNum = parseInt(match[2]);
+  var chNum = match[1] || match[3];
+  var artNum = parseInt(match[2] || match[4]);
   
   // Chapter index file mapping
   var chapters = {
@@ -38,8 +38,8 @@
     for (var i = 0; i < anchors.length; i++) {
       var a = anchors[i];
       var href = a.getAttribute("href");
-      if (href && /ch\d+-\d+-/.test(href) && !href.startsWith("http")) {
-        var m = href.match(/ch\d+-(\d+)-/);
+      if (href && /ch\d+[\/-]\d+-/.test(href) && !href.startsWith("http")) {
+        var m = href.match(/ch\d+[\/-](\d+)-/);
         if (m) {
           links.push({ num: parseInt(m[1]), href: href, title: a.textContent.trim() });
         }
