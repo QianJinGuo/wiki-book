@@ -116,11 +116,11 @@ If you're ready to modernize your knowledge-intensive processes with generative 
 **4. 防御 Prompt 注入应成为 AI 系统的标准 Checklist 项**
 文章中"检测到 Prompt 注入时返回固定回复"的设计反映了一种防御哲学：宁可拒答，不可误答。对于面向外部用户的 AI 系统，这应该是标准配置。但需要注意：检测本身可能产生误判（用户正常询问中包含类似攻击的词汇），需要有机制让用户申诉或重试。建议将这一防御机制设计为可配置的，允许在不同安全级别下调整阈值。
 ## 相关实体
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/499-amazon-bedrock-agentcore.md)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/500-amazon-bedrock-agentcore.md)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/152-amazon-bedrock.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/499-amazon-bedrock-agentcore.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/499-amazon-bedrock-agentcore.md)
-- [Introducing Claude Platform On Aws](../ch01/139-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/500-amazon-bedrock-agentcore.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/500-amazon-bedrock-agentcore.md)
+- [Introducing Claude Platform On Aws](../ch01/493-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
 
 ---
 

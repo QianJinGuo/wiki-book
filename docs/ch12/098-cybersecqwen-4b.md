@@ -52,9 +52,9 @@ Gemma4Defense-2B 采用完全相同的训练语料和超参数，仅更换基模
 ## 相关实体
 >
 
-- [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](../ch01/036-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.md)
-- [Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads](../ch01/435-openai.md)
-- [Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](../ch04/229-ai.md)
+- [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](../ch01/037-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.md)
+- [Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads](../ch01/444-openai.md)
+- [Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](../ch04/070-ai.md)
 
 ---
 

@@ -13,8 +13,8 @@
 ## 相关实体
 - [Ath Agent Trust Handshake Protocol](../ch03/045-agent.md)
 - [Aws Bedrock Agentcore Identity Security](../ch11/229-aws-bedrock-agentcore.md)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/811-github.md)
-- [Ai Agents Inside Perimeter Hackernews](../ch04/030-ai-agent.md)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/749-github.md)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/147-ai-agent.md)
 - [Tsinghua Agent Security Fangcun](../ch03/045-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/canvas-breach-disrupts-schools-colleges-nationwide.md)

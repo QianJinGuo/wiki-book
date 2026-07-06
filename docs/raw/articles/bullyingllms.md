@@ -1,0 +1,182 @@
+---
+source: newsletter
+source_url: https://blog.zsec.uk/bullyingllms/
+tags: [security, blog]
+title: "Autonomous Vulnerability Hunting with MCP"
+ingested: 2026-05-13
+sha256: 01bb8da12356e279
+review_value: 8
+review_confidence: 9
+review_recommendation: strong
+---
+Title: Autonomous Vulnerability Hunting with MCP
+URL Source: https://blog.zsec.uk/bullyingllms/
+Published Time: 2026-04-04T11:19:49.000Z
+Markdown Content:
+Recently I've had a week off my `$dayjob` so decided to actually write up some of my side projects and sort out various admin tasks, however writing about the 0day machine is something I've wanted todo for a number of weeks.
+I'm going to deep dive into how I built an autonomous vulnerability hunting system using Claude Code and MCP, and some of the bugs it's found along the way. One funny quote to come out of it too from a group I'm in:
+> Andy basically is slave labouring the AI
+The title comes from GenAI = Jenny and this song:
+I've been building this system since early 2026, initially in my free time, mostly the middle of the night when I _usually_ can't sleep; eventually it has become a full-blown research workflow. I'll also talk about this later in the post but it's why I built [TokenBurn](https://github.com/ZephrFish/TokenBurn/?ref=blog.zsec.uk) to work out my return on investment of Claude Max + Hardware:
+![Image 1](https://blog.zsec.uk/content/images/2026/04/image.png)
+As we know, using LLMs for security research is nothing new, nor is building custom tooling to automate the boring parts of vulnerability hunting in general, automated fuzzing has been a thing for years, I was talking to Stephen Sims back in 2014 about how he was doing fuzzing at scale and it was not dissimilar from the setup I have today just without the LLM integration; however, the combination of Claude Code's [MCP (Model Context Protocol](https://modelcontextprotocol.io/?ref=blog.zsec.uk)with a purpose-built lab has turned out to be surprisingly effective. I get there are probably hundreds if not thousands of people out there doing the same thing but alas here's what I've put together, how it all works, and some of the fruits of the labour.
+The initial motivation came from spending more time wrangling tooling than actually hunting bugs. The process would usually follow something along the lines of; Connect to a VM, stage a binary, decompile it, map the attack surface, set up fuzzing, triage crashes, write a PoC, draft a disclosure, submit to a vendor or bounty programme. Each step has its own tools, its own output formats, and its own context you need to carry forward to the next step. I wanted Claude to handle the wrangling while I did the thinking and writing, because we all know AI doesn't write like humans and I wanted to maintain some degree of ownership over my technical skills.
+## A quick rundown on MCPs
+Before diving into the specifics, a quick primer on MCP for those unfamiliar. The Model Context Protocol lets you expose tools to Claude Code as callable functions. Think of it like giving Claude native access to your terminal commands, but structured with typed inputs and outputs. Each MCP server is just a Python process that registers tools, and Claude calls them directly during a conversation. No copy-pasting terminal output, no switching windows.
+The approach is fairly straightforward: wrap every tool in my research workflow as an MCP server. I ended up with 8 MCPs servers across 5 VMs and over 300 tools (I'm not going to list the specifics but here's a rough overview):
+| Server | Purpose |
+| --- | --- |
+| **Lab Controller** | SSH/WinRM sessions, Proxmox VM management, basic RE |
+| **Hunter** | Patch diffing, attack surface enumeration, 10 fuzzing domains, crash triage, campaigns |
+| **RE Tools** | Ghidra, radare2, Frida and some other tools |
+| **Exploit Dev** | Shellcode generation, heap spray, CFG bypass, PoC assembly, emulation |
+| **Debugger** | Persistent WinDbg/GDB sessions that survive across tool calls |
+| **RAG** | Semantic search across all campaign data, findings, and prior research |
+| **Infra** | Provision and scale fuzzing VMs on Proxmox |
+| **Reporting** | Disclosure reports, bounty submissions, CVE requests |
+The coloured dots next to each VM indicate the category each falls into and the MCPs that it is assigned to, to allow me to quickly recognise what each does.
+![Image 2](https://blog.zsec.uk/content/images/2026/04/image-1.png)
+All eight run as separate Python processes under Claude Code, registered in a single `.mcp.json`. When Claude needs to check what drivers are loaded on a Windows target, it calls `tool_surface_kernel_drivers`. When it needs to decompile a function, it calls `tool_re_ghidra_decompile` or one of the many other RE tools available to it. When it needs to start a fuzzing campaign, it calls the appropriate `tool_*_fuzz_start` for whichever domain I want to select to start exploration which calls direct tools and gets to work.
+Each server is built with [FastMCP](https://github.com/jlowin/fastmcp?ref=blog.zsec.uk). The server files themselves are thin `@mcp.tool()` wrappers; the actual business logic lives in subdirectories (`hunter/`, `re_tools/`, `exploit_tools/`, `debug_tools/`). Sessions (SSH, WinRM) persist across tools within a conversation and sub agents, so you connect once and everything just works from there.
+## The Lab
+The research runs on a Proxmox-based hunt range with 5 VMs on an isolated network segment. I'm in the process of re-writing my home lab series but this is the specs of my new host which will replace my existing NUCs from my homelab series. [https://blog.zsec.uk/homelab-clustering-pt1/](https://blog.zsec.uk/homelab-clustering-pt1/)
+![Image 3](https://blog.zsec.uk/content/images/2026/04/image-8.png)
+Nothing particularly exotic here(except they all have pretty high specs as they live on my new home lab host), just purpose-built for the workflow:
+| VM | Platform | Role |
+| --- | --- | --- |
+| **hunt-win11** | Windows 11 (latest patch) | Primary target |
+| **hunt-win11-n1** | Windows 11 (N-1 patch) | Binary diffing against previous Patch Tuesday |
+| **hunt-winserv** | Server 2022 | RPC, services, AD attack surface |
+| **hunt-kali** | Kali Linux | Ghidra, radare2, GDB/pwndbg, angr, Volatility3 |
+| **hunt-fuzz** | Windows 11 | Dedicated fuzzing (WinAFL, Jackalope, DynamoRIO) |
+![Image 4](https://blog.zsec.uk/content/images/2026/04/image-7.png)
+thanks to Claude for this visualisation
+Each Windows VM also has a `lowpriv` standard user account. This matters more than you'd think. I'll come back to why later, but the short version is that one of the painful early lessons was discovering findings that looked great from `SYSTEM` but were completely unreachable as a normal user.
+Windows binaries get staged to `hunt-kali` for offline analysis via SFTP (`tool_re_stage`), which means `radare2` and `Ghidra` don't need to run on the Windows targets themselves. The two Windows 11 VMs (latest and N-1 patch) are specifically there to enable binary diffing: enumerate what changed between Patch Tuesdays, diff the binaries, and identify security-relevant fixes to target for specific campaigns, I also have a MCP tuned into Patch Tuesday specifically todo patch diffing.
+## **Campaigns and the Hallucination Bin**
+Unless you've been living under a rock, you're probably acutely aware that LLM models hallucinate things, they will be convincing in telling you a lie or leading you down a path because they have hallucinated it in some oxy filled computer dream.
+To combat the computer drug addicts, all hunting work is organised into campaigns. A campaign is essentially a directory under `hunts/campaigns/` with a structured layout for findings, crashes, coverage data, notes, and disclosures. Create one with `tool_campaign_create`, and everything else attaches to it.
+Now, the single most important design decision in the entire system, and one I wish I'd made on day one: **findings start as hallucinations**.
+Every new finding goes into `hallucinations/`, not `findings/`. It only gets promoted after passing validation gates:
+**Gate 0:** PoC exists and compiles
+**Gate 1:** PoC reproduces the crash in a clean VM snapshot
+**Gate 2:** Crash is exploitable (not just a null deref or a graceful exit)
+**Gate 3:**Bug triggers as a standard user, not SYSTEM or admin
+This sounds paranoid and for good reason, because I'm hunting for exploitable bugs I want the system to have some degree of self awareness and go from me bullying it to it bullying itself to identify flaws. It has saved me from submitting nonsense to vendors, it also helps that there is human intervention and thinking in the pipeline so that it's not just flooding programs and companies with reports and emails.
+![Image 5](https://blog.zsec.uk/content/images/2026/04/image-2.png)
+For example, in one early hunt session, the autonomous engine flagged 6 findings from manual analysis, things that looked promising in the logs and decompilation output however upon manual review and intervention, all 6 were disproven in dynamic analysis, the hallucination bin caught every single one before they got anywhere near the final report.
+The promotion flow is `tool_finding_promote` (`hallucinations/` → `findings/`) and `tool_finding_demote` (back the other way if something gets invalidated later). Simple, but it enforces the discipline that nothing leaves the pipeline without proof.
+## **The Knowledge Loop**
+This is the part I'm most pleased with. Every fuzzing start tool queries my own Retrieval-Augmented Generation(RAG) index for prior findings before launching. Every crash and finding records its outcome after, the goal being a continuous feedback loop where the system literally gets smarter with each hunt.
+![Image 6](https://blog.zsec.uk/content/images/2026/04/image-9.png)
+Early iteration of RAG and Model
+The loop works as follows:
+1. **Hunt** - Before starting a campaign, query the knowledge base: "have we seen crashes in this binary or application type before? What techniques worked? What defences blocked us?"
+2. **Collect** - Every crash across all 10 domains gets recorded with domain, target, and crash class
+3. **Enrich** - Vendor security advisories, patch diffs, variant analysis matches, bounty submissions, and coverage plateau events all feed in
+4. **Learn** - Everything auto-indexes into a [FAISS](https://github.com/facebookresearch/faiss?ref=blog.zsec.uk)vector store with sentence-transformer embeddings
+5. **Repeat** - The next hunt starts with richer context
+If I fuzz `ntoskrnl.exe` in one campaign and find a crash pattern, the next campaign targeting `ntoskrnl.exe` knows about it. Recurring vulnerability types across campaigns surface automatically through semantic similarity. Deduplication happens without manual effort.
+The system also maintains a known-defence database. When a target turns out to be hardened Antimalware Protected Process Light`AM-PPL`, SxS protection, strict Authenticode validation that gets recorded. Those defences multiplicatively reduce the target's priority score on future hunts, preventing the system from wasting cycles on the same dead ends. After the first few campaigns hit AM-PPL walls, the system stopped recommending those targets entirely.
+Alongside the lab's RAG index, I built a separate local RAG system that indexes 561,000+ chunks from basically my brain dump of notes over the last decade and a half plus 5,800+ public Sigma rules, 1,025 curated GitHub repos, tool documentation, the lot. It runs locally with Ollama and also works as an MCP server, so Claude can query my entire offensive security knowledge base inline during a hunt. When I ask about a technique, I get back my own methodology with the exact commands I use, not a generic summary from training data plus it's constantly learning new things as am I.
+## **Bounty Intelligence**
+In addition to the RAG, I also have a MCP that tracks 100+ bug bounty programs across various platforms with ROI scoring across vulnerability classes (RCE, LPE, auth-bypass, type confusion, UAF, heap overflow). Before committing time to a target, it estimates expected payout based on:
+*   The target binary's patch history (frequently patched = more attack surface being found = more to find)
+*   Vulnerability class and severity tier
+*   Programme payout ranges and historical acceptance rates plus triager knowledge based on types of findings coming out of programs 
+*   Known defence mechanisms present on the target
+This feeds into target ranking that the autonomous hunt engine uses to decide what to fuzz next. It's not perfect, bounty programmes change their scope and payouts, but it prevents the classic mistake of spending a week on a target that maxes out at $500 when there's a $250K hypervisor escape bounty sitting right there.
+## Fruits of Labour
+Now that the architecture is broken down you're likely wondering, yeah that's cool and all but has it been worth it?
+### Multiple Go Standard Library CVEs
+A fuzzing campaign against Go's `golang.org/x/image` package produced two CVEs in two weeks. Both are OOM vulnerabilities that crash any Go process handling untrusted input. The bugs are in the standard library's extended image packages, which means anything that processes user-supplied images or fonts (web servers, chat platforms, CI pipelines) is potentially affected.
+#### CVE-2026-33809 - `x/image/tiff`: OOM from Malicious IFD Offset
+[Go issue #78267](https://github.com/golang/go/issues/78267?ref=blog.zsec.uk)
+An 8-byte crafted TIFF file with IFD offset `0xFFFFFFFF` causes `buffer.fill()` to allocate ~4 GB of memory when decoding via the `io.Reader` path (non-`ReaderAt`), OOM-killing the process.
+The payload is literally 8 bytes:
+```
+\x49\x49\x2a\x00\xff\xff\xff\xff
+```
+That's a valid TIFF header (little-endian, magic `0x002A`) followed by an IFD offset pointing to the end of the 32-bit address space. When `buffer.fill()` tries to read to that offset, it allocates a buffer large enough to hold the entire range, approximately 4 GB of zeroes for an 8-byte file. The allocation happens because `safeReadAt` (the fix for CVE-2022-41727) doesn't cover the IFD offset read at `reader.go:477`, which is a distinct code path.
+**Affected versions:** All versions of `golang.org/x/image` from v0.0.0 through v0.37.0, every version ever released. The Go module graph shows 945+ downstream packages pulling in the vulnerable code.
+**The fix:** Read data and allocate buffers in chunks, capping growth to the actual size of the input rather than trusting the IFD offset. I submitted the fix as [golang/image#25](https://github.com/golang/image/pull/25?ref=blog.zsec.uk), merged as commit `23ae9ed`.
+**Downstream impact:** Reports filed against multiple downstream consumers as that's ultimately what the impact is on. Also submitted upstream via the vendor's open-source vulnerability rewards programme.
+#### CVE-2026-33812 - `x/image/font/sfnt`: OOM via Unchecked GPOS Class Count Product
+[Go issue #78382](https://github.com/golang/go/issues/78382?ref=blog.zsec.uk)
+A crafted font file triggers a multi-gigabyte allocation when parsing GPOS PairPos tables. In `parsePairPosFormat2`, `numClass1` and `numClass2` are read as `uint16` values directly from the font file and their product is passed unchecked to `source.view()`. With both values at 65,535, the product times 2 reaches approximately 8 GiB, instant OOM.
+Only the `io.ReaderAt` path is affected (the `[]byte` path is bounded by the slice length). I also found two additional issues in the same code during the investigation:
+*   `makeCachedPairPosGlyph` and `makeCachedPairPosClass` don't validate that indices derived from the font file fall within the parsed buffer before indexing
+*   `source.varLenView` doesn't check for integer overflow when computing the total length
+**The fix:** Validate the class count product against `maxTableLength` before allocating, add bounds checks on indices in the PairPos kern functions, and add overflow checks in `varLenView`. Submitted as [golang/image#26](https://github.com/golang/image/pull/26?ref=blog.zsec.uk), merged as commit `854c274`.
+#### The Broader Fuzzing Campaign
+Both CVEs came from a broader effort: 21 Go standard library packages fuzzed over ~80 million total executions across 3-30 minute sessions per target. The campaign covered `tiff`, `sfnt`, `webp`, `gif`, `png`, `jpeg`, `gob`, `asn1`, `x509`, `pem`, `ssh`, `zip`, `tar`, `gzip`, `xml`, `html`, `ccitt`, `tiff/lzw`, and more. Only TIFF and SFNT produced confirmed vulnerabilities. WebP and GIF dimension-based allocations were investigated but confirmed as working-as-intended by the Go maintainers.
+The grammar-based fuzzing domain was key here. Rather than throwing random bytes at image parsers (which mostly just gets you "invalid format" errors), the grammar engine generates structurally valid files with adversarial field values. For TIFF, that means a valid header with a malicious IFD offset. For fonts, valid OpenType structure with extreme class count values.
+### OEM Service 0-Day - Auth Bypass + SSRF → SYSTEM Code Execution
+The bounty intelligence pipeline flagged a Windows OEM system management agent as a high-value target: the vendor runs a public bounty programme, the software ships on millions of enterprise machines, and it runs a privileged SYSTEM service with a rich [WCF](https://learn.microsoft.com/en-us/dotnet/framework/wcf/whats-wcf?ref=blog.zsec.uk) interface, third-party OEM software with typically less scrutiny than OS components. The RE tools decompiled the WCF interface, revealing the full service contract. What followed was a four-stage chain from standard user to SYSTEM code execution.
+**1. Named Pipe Authentication Bypass**
+The update service exposes multiple SYSTEM-level WCF named pipes accessible from any local user. The interesting bit: the authentication mechanism is implemented entirely client-side. The server performs no authentication whatsoever on incoming pipe connections. I bypassed it via `AppDomainManager` injection into the vendor's own signed service binary.
+**2. SSRF via WCF**
+One of the WCF methods accepts an attacker-controlled URL parameter with **no admin check**. Unlike other methods in the interface, this one skips the privilege verification entirely. The SYSTEM service dutifully fetches HEAD + GET on whatever URL you give it, with a vendor-specific user-agent string. Confirmed via HTTP logs showing SYSTEM-context requests to an attacker-controlled endpoint.
+**3. Catalog Injection**
+The attacker's crafted update package descriptor is accepted and returned as an applicable update. The data contract uses a vendor-specific serialisation format. Synthetic XML causes deserialisation errors, so we had to extract the exact format from a legitimate response. The service log confirmed injection, showing our fake "Critical Update" accepted as inventoried.
+**4. SYSTEM Binary Execution**
+Triggering the full update flow causes the SYSTEM service to:
+1.   Download from the attacker-controlled URL
+2.   Verify package size - **PASSED**
+3.   Verify SHA256 checksum - **PASSED**
+4.   Verify Authenticode signature - **PASSED**
+5.   Execute the binary as SYSTEM
+The Authenticode check is the remaining barrier: the payload must be vendor-signed. But there's a BYOVD (Bring Your Own Vulnerable Driver) path: an older version of the vendor's own kernel driver is WHQL-signed, not on the vulnerable driver blocklist, loads even with Hypervisor-Protected Code Integrity (HVCI) enabled, and provides arbitrary kernel read/write primitives. The driver has a known CVE but remains loadable on fully patched Windows 11, because I'm not in the business of full disclosure I'm not going to talk about it in this blog post.
+The full chain was verified on Windows 11 25H2 (Build 26200). The Ghidra decompilation, Frida dynamic analysis, and WCF interface reversing were all done through the MCP tools: staging the binary to `hunt-kali`, running Ghidra headless analysis, then hooking the live service with Frida to confirm behaviour. Submitted to the vendor and confirmed valid.
+### macOS App Distributor - Two Findings
+The hunt machine isn't just limited to Windows and Linux, because the orchestrator runs on my Mac I also have access to a full suite of tools there too, including [Raptor](https://github.com/gadievron/raptor?ref=blog.zsec.uk), using the suite plus Raptor this netted, Two findings against a macOS application distribution platform via the vendor's bounty programme:
+**Browser History Exfiltration** - A bundled framework read browser SQLite databases plus the macOS quarantine database on launch. Static analysis found the initial lead; Frida dynamic analysis through the MCP RE tools confirmed the actual query behaviour. The interesting bit: while the browser history query turned out to be scoped to a specific search term, the quarantine query (`SELECT * FROM LSQuarantineEvent`) was completely unfiltered, exfiltrating every file the user had ever downloaded.
+**Debug RSA Key in Production Bundle** - A `debug.pem` shipped in the production app turned out to be the jwt.io RS256 example key, meaning the private key is publicly known. Combined with `CFPreferencesSetAppValue` to override the Sparkle update framework's signature verification key. PoC was a Swift script plus Frida hook demonstrating cross-process preference injection, enabling malicious update delivery.
+These findings are a good example of the workflow in practice: static analysis through the RE tools identified the leads, Frida dynamic instrumentation confirmed the behaviour, and the reporting server drafted the bounty submission. The Frida follow-up was what converted both from "needs more info" to triaged, a useful lesson in that static-only findings often need runtime validation to satisfy vendors.
+The above is just a handful of what has been found but in addition there are the following also in progress:
+*   3x LPEs on Windows affecting various vendors
+*   4x RCE affecting various applications, mostly desktop apps
+*   2x UAF in a library that is pending disclosure
+*   Handful of information disclosure via stacks of software on MacOS/Windows
+## Lessons Learnt
+A couple of things I learnt from this process and continue to feedback to the system; **The hallucination bin should be Gate 0.** My first version of the system trusted its own output. This was a mistake. LLM-driven analysis generates confident-sounding assessments that may or may not reflect reality. The "guilty until proven innocent" approach, where every finding starts in `hallucinations/`, has a near-zero false positive rate. If I were starting over, this would be the first thing I built.
+**Always verify from a low-privilege context.**Multiple early findings turned out to be admin-only or SYSTEM-only triggers. The worst example: a hardware vendor's diagnostic agent was flagged as having an exploitable named pipe, but the analysis ran from a SYSTEM context. From a standard user, the pipe is unreachable. Gate 3 (`tool_lowpriv_check`) should have been there from day one. Every finding needs to be verified as a standard user before it goes anywhere.
+**Record negative results.**When a target turns out to be hardened (AM-PPL, SxS protection, strict signature validation), record that defence mechanism. The known-defence database now multiplicatively penalises hardened targets, preventing future campaigns from burning cycles on the same dead ends. After a few campaigns hit AM-PPL walls on the same binaries, the system stopped recommending them entirely.
+**The knowledge loop compounds.** Each campaign makes the next one more efficient. After 15+ campaigns, the system's recommendations for what to fuzz and how to approach it are measurably better than cold-starting each time. The RAG queries before each campaign genuinely prevent the most expensive mistake in fuzzing: running the same campaign against the same binary with the same seeds and getting the same nothing.
+## Cost Calculations
+The obvious question with any system like this: is it actually worth it? Running five VMs on a Proxmox host, a Claude Max subscription, and the time to build and maintain 300+ tools across eight MCP servers, that's not free. I was curious what the total cost would have been if I had spent this on API credit instead of a Claude Max sub so I built a tool for it too.
+### **Tracking Token Usage**
+The first problem is knowing what you're spending. Claude Code on a Max subscription isn't billed per-token, but that doesn't mean tokens are free. There are rate limits, and understanding your consumption patterns tells you whether you're getting value from the subscription or whether you'd be better off on API billing.
+I built [TokenBurn](https://github.com/zephrfish/tokenburn?ref=blog.zsec.uk) to answer this. It's a self-hosted dashboard that syncs token usage data from every machine running Claude Code, aggregates it, and breaks down consumption by model and project. Each machine runs a lightweight sync script that parses local session data and exports it as JSON. The dashboard then shows daily consumption trends, per-project breakdowns, hourly activity patterns, and, critically, a comparison of what the same usage would cost at API rates versus the flat subscription.
+For security research specifically, the usage pattern is spiky. A hunt session might burn through significant context orchestrating a 15-step attack surface enumeration, decompiling functions, cross-referencing findings, and drafting a disclosure, all in a single conversation. Then nothing for a day while fuzzing runs. TokenBurn captures that pattern and makes it visible, rather than leaving you guessing whether the subscription pays for itself.
+### **Cost Per Finding**
+I didn't set out todo this process to make money, I originally was hunting down CVEs as previously I had netted two in my career ([https://blog.zsec.uk/nvidia-cve-2020/](https://blog.zsec.uk/nvidia-cve-2020/) and [https://blog.zsec.uk/cve-2017-3528/](https://blog.zsec.uk/cve-2017-3528/)), that number is now 4 from this process with another few in progress with vendors.
+![Image 7](https://blog.zsec.uk/content/images/2026/04/image-5.png)
+So you could argue that in actual fact it was potentially £5000 per CVE based on API costs alone however with a subscription this saved me loads and actually netted me some downstream bugs payout to offset the subscription cost.
+![Image 8](https://blog.zsec.uk/content/images/2026/04/image-6.png)![Image 9](https://blog.zsec.uk/content/images/2026/04/Greenshot-2026-04-04-11.38.02.png)
+That said I was curious how much things were costing, the system tracks this natively. Each campaign records its creation timestamp, last update time, and the number of VMs allocated. The analytics module computes a straightforward metric: total compute hours (campaign duration multiplied by VM count) divided by validated findings. Not findings in the hallucination bin, only findings that survived all of the validation loop.
+As with all things, most campaigns produce zero validated findings. Fuzzing runs that consume hundreds of VM-hours return nothing exploitable. The campaigns that do produce findings often took less wall-clock time than the ones that didn't, because the knowledge loop steered them toward targets with higher prior probability of being vulnerable, rather than grinding on hardened binaries.
+The trend matters more than any single number. Cost-per-finding has decreased meaningfully over the lifetime of the system. The first few campaigns were expensive in every sense: building the tooling, learning what doesn't work, populating the hallucination bin with confident-sounding nonsense.
+The recent campaigns benefit from all of that accumulated context. The RAG index knows which binaries are hardened. The bounty intelligence knows which programmes are worth the time. The grammar generators know which file format fields are interesting.
+### **ROI-Driven Target Selection**
+Before any campaign starts, the bounty intelligence module estimates the expected return. This isn't sophisticated financial modelling, it's a pragmatic calculation:
+**Expected ROI = conservative payout estimate / estimated hunt hours**
+The inputs are straightforward. Hunt hour estimates come from practical experience: a DLL hijack typically takes around 8 hours to identify and prove, an LPE around 20, an RCE around 40, and memory corruption classes like type confusion or use-after-free can easily run to 80. These are conservative. They assume you don't get lucky, and that validation (the hallucination bin logic flow) takes real time.
+Payout estimates use the minimum from each programme's published range, not the typical or maximum. This is a deliberate choice. The system should be pessimistic about payouts and optimistic about nothing. 100 bounty programmes are tracked with payout ranges per vulnerability class, from info-disclosure at the low end to hypervisor escape at the top.
+Competition adjustment is the final multiplier. A low-competition programme keeps 90% of the expected value. A high-competition programme like a major OS vendor drops to 40%, because you might find the bug, but so might three other researchers who'll report it first. Very high competition drops to 20%. This prevents the system from fixating on the biggest headline bounties where the odds of being first-to-report are slim.
+The net effect: the system naturally gravitates toward the sweet spot of under-scrutinised software with decent bounties. Third-party system utilities, OEM management agents, enterprise middleware, software that ships on millions of machines but doesn't attract the same researcher attention as Chrome or Windows kernel. The OEM update service 0-day described earlier is a direct product of this ranking.
+## An Honest Review
+The system has paid for itself. The bounty payouts from validated findings have exceeded the combined cost of the Proxmox hardware, the subscription, and the time invested in building the tooling. Does this mean you can replicate everything I've built and make a quick buck? Maybe but that's the rose tinted summary.
+The full picture includes a lot of campaigns that found nothing. Coverage plateaus that led nowhere. Crashes that looked exploitable until they didn't. The hallucination bin is larger than the findings directory by a significant margin, and that's working as intended. It means the system is catching its own false positives before they waste my time. Lots of work from my input too as I fed in my vast experience to the tooling to actually catch the LLM hallucinating and had to bully it now and again as it would forget its system prompt and start querying the ethics of security research.
+What makes the economics work long-term isn't any single finding, it's the compounding of findings and overall research. Each failed campaign still contributes to the knowledge base, each negative result (this binary is AM-PPL protected, this named pipe is admin-only) prevents future campaigns from repeating the same dead end. The system that runs its twentieth campaign is materially cheaper to operate per-finding than the one that ran its first, even though the subscription cost is identical. I have also been working extensively by building `CLAUDE.md` files for each campaign, tweaking the memory and system prompt each time it learns to get better and use less tokens plus offset it to local models more and more.
+## How the Pieces Slot Together
+For anyone thinking about building something similar, here's the high-level architecture:
+**Thin server wrappers, thiccccc business logic -** The MCP server files are just `@mcp.tool()` decorators around function calls. All the real work lives in dedicated modules which some were written by Claude, some I _actually_ wrote myself. This means you can test and iterate on the business logic independently of the MCP plumbing and also tweak and tune coding where required.
+**Shared sessions -** Connect once per server, sessions persist across all tool calls in a conversation. When you're chaining 10+ steps (stage binary, decompile, identify function, set breakpoint, trace execution, analyse crash) reconnecting at each step would be enough to burn through tokens and casually lose what of my sanity still remains in tact.
+**Uniform fuzzing interface** Every domain has the same tool pattern (`setup`/`start`/`status`/`crashes`/`stop`). The autonomous engine doesn't need domain-specific dispatch logic; it just picks the right domain and calls the same sequence of tools.
+**Everything feeds the loop** Crashes, findings, coverage data, MSRC advisories, patch diffs, bounty outcomes, all indexed, all searchable, all informing the next hunt. The system that ran its first campaign knew nothing, however the system running its twentieth campaign has opinions about which binaries to target and which to skip it also has a wealth of knowledge from the prior 19 including details from my brain dumps and prior research.
+## What Comes Next?
+The system currently needs me to make judgment calls at key points, mainly deciding whether a crash is worth pursuing, whether a finding chain is realistic, whether a target's defences make it impractical.
+The next step is tightening that feedback loop so more of those decisions can be informed by the accumulated knowledge base rather than my gut instinct.
+Not fully autonomous (I don't think we're there yet, and the hallucination bin exists for a reason), but better at surfacing the right information at the right time. I'm also working on training my own gated delta network + MoE transformer based model, originally based on Qwen but have built it out with lots of other data and altered the weighting to be focused on a lot of my research to help refine research and learning.
+If you're interested in MCP for security research, the protocol itself is well-documented at [modelcontextprotocol.io](https://modelcontextprotocol.io/?ref=blog.zsec.uk). The hard part isn't building the servers, that's straightforward Python. The hard part is designing the validation pipeline so you can trust the output. Start with the hallucination bin.
