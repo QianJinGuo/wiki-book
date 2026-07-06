@@ -1,0 +1,144 @@
+# AI Agent 工程师能力地图
+
+## Ch04.148 AI Agent 工程师能力地图
+
+> 📊 Level ⭐⭐ | 13.2KB | `entities/ai-agent-engineer-capability-map.md`
+
+## 核心判断
+- **Workflow-first，Agent-second** 是最务实范式
+- **Context Engineering** 比 Prompt Engineering 更关键
+- Memory 是架构问题，不是聊天记录回填
+- 生产失败七大原因：工具随意、上下文无序、状态管理缺失、失败恢复缺失、评估集缺失、trace缺失、过度自治
+
+## 三种系统形态
+| 类型 | 特点 | 适用场景 |
+|------|------|---------|
+| Tool-Using Assistant | 工具调用+短链路 | 查数据/SQL助手 |
+| Workflow-Driven Agent | 流程确定+模型节点 | **主流** |
+| Autonomous/Multi-Agent | 高自主+长链路 | 进阶方向 |
+
+## 六层能力体系
+1. **模型能力层**：任务分层+模型路由，而非一味换更强模型
+2. **上下文与知识层**：RAG = Agent外部知识供给，不只是问答
+3. **记忆层**：Working/Session/Long-Term三层架构
+4. **工具与协议层**：能力治理 > 工具接入
+5. **编排层**：代码稳定+模型弹性+工作流边界+人工兜底
+6. **生产工程层**：可观测性+评估+安全+成本
+
+## 后端工程师机会
+- 数据分析Agent（天然优势：Hive/Spark/Flink/OLAP/指标平台）
+- DevOps/运维Agent（工具接入+权限控制+风险治理）
+- 企业内部工具平台（Tool Gateway+MCP Server+Agent可观测性）
+- 大数据+Agent交叉（实时数据流+历史案例库+数据仓库+元数据系统）
+
+## 深度分析
+### 范式转变的本质：从"调模型"到"建系统"
+AI Agent不是"更高级的Prompt工程"，而是一套新的应用工程体系。对于后端/大数据工程师而言，这不是需要学习的全新领域，而是已有技能的延伸。
+后端工程师每天都在处理的这些问题——请求上下文治理、中间态编排、数据契约设计、输入输出边界控制——本质上就是Agent开发中的核心问题。这个认知框架的转换至关重要。
+
+### 六层能力体系的内在逻辑
+六层能力体系不是知识点的罗列，而是有严格的依赖关系：
+
+- **模型能力层**是基础：理解模型的能力边界决定了你如何设计任务
+- **上下文与知识层**决定效果上限：RAG不是问答系统，而是Agent的外部知识供给机制
+- **记忆层**是架构问题：三层架构（Working/Session/Long-Term）对应着不同的工程实现
+- **工具与协议层**是治理问题：能力治理大于工具接入
+- **编排层**是工程核心：Workflow-first不是保守策略，而是最务实的范式
+- **生产工程层**是交付保障：可观测性、评估、安全、成本缺一不可
+
+### 生产失败的根因分析
+七大生产失败原因可以归为三类：
+1. **设计层面的失败**（工具接口、上下文注入）—— 源于对模型能力边界的误解
+2. **架构层面的失败**（状态管理、失败恢复）—— 源于用聊天思维做Agent开发
+3. **工程层面的失败**（评估集、trace、过度自治）—— 源于缺乏工程化经验
+后端工程师的天然优势在于对第二类和第三类问题有直觉性的认知，而第一类问题正是通过学习可以快速补足的。
+
+## 实践启示
+### 对资深后端/大数据工程师的建议
+1. **不要从LangChain入门**：框架会变，抽象不会。先理解Agent的核心概念和工程挑战，再用框架验证。
+2. **从工作流开始做Agent**：不要一开始就追求"自主智能"。先把确定流程用工作流实现，模型判断节点自然浮出水面。
+3. **Context Engineering是首要技能**：把你在后端积累的请求上下文治理经验迁移过来，这比学新框架更有价值。
+4. **工具抽象是核心竞争力**：把企业内部系统模型化、可观测化、可审计化，这是后端工程师的独特优势。
+5. **从小场景切入**：数据分析Agent、DevOps助手比通用助手更容易验证价值、更容易迭代改进。
+
+### 企业落地的关键路径
+1. **先建可观测性**：Agent系统的调试本质上是理解模型决策过程，没有trace寸步难行
+2. **先做评估体系**：没有评估集就无法迭代，prompt调优不是靠"感觉"
+3. **先治理后扩展**：先建立工具权限分级、敏感操作审批，再考虑Multi-Agent扩展
+4. **人工兜底是标配**：不是所有问题都要让模型自主决策，高风险操作必须有审批节点
+
+### 技术选型的明确建议
+- **框架选择**：不要把LangChain当主线。以核心抽象（LCEL）理解流程，但不要被框架绑定。
+- **模型路由**：任务分层是必须的。小模型做分类/路由，中模型做常规执行，大模型做复杂推理。
+- **RAG深化**：不只是检索，是外部知识供给。query rewrite、rerank、hybrid retrieval是关键技术。
+- **MCP态度**：保持关注，但不要all-in。未来很长时间是混合生态。
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-engineer-learning-roadmap-backend-2026.md)
+
+## ## 相关实体
+- [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
+
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+## Related
+- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)
+
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](https://github.com/QianJinGuo/wiki/blob/main/entities/harness不是目的知识才是护城河-一个ai工程交付团队的知识沉淀实践.md)
+- [你不知道的 Agent：原理、架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践.md)
+- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/告别氛围编程基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践.md)
+- [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
+- [四种 Sub Agent 模式](https://github.com/QianJinGuo/wiki/blob/main/entities/four-sub-agent-patterns.md)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-development-guide-aliyun-2026.md)
+- [SkillClaw](https://github.com/QianJinGuo/wiki/blob/main/entities/skillclaw.md)
+- [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system-winty.md)
+- [GBrain](https://github.com/QianJinGuo/wiki/blob/main/entities/gbrain.md)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-2026.md)
+- [OpenHuman: AI Agent 持久记忆框架](https://github.com/QianJinGuo/wiki/blob/main/entities/openhuman-ai-agent-memory-tree-tokenjuice.md)
+- [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
+- [Claude Code MCP Server](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-mcp-server.md)
+- [Skills赏析：使用skills-refiner提升skill质量](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-refiner-design-quality-evaluation-framework.md)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)
+- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
+- [AI Skill 测评指标体系](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-metrics-system.md)
+- [Agent Memory 系统性框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
+- [200人销售团队企业级 Agent 知识库问答系统架构设计](https://github.com/QianJinGuo/wiki/blob/main/queries/sales-team-agent-knowledge-base-architecture.md)
+- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md)
+- [Claude Code Agent 工程设计](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-engineering.md)
+- [你不知道的 Agent 原理架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-principle-architecture-engineering-practice.md)
+- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-employment-eight-changes-tencent-research.md)
+- [Agent Skill 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](https://github.com/QianJinGuo/wiki/blob/main/entities/cdp-bridge-mcp-real-browser-agent.md)
+- [AI Coding Agent 记忆系统](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-coding-agent-memory-system.md)
+- [Self-Evolving Agents 系统性综述](https://github.com/QianJinGuo/wiki/blob/main/entities/self-evolving-agents-survey.md)
+- [Hermes Agent 记忆系统深度拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-vs-openclaw.md)
+- [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
+- [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [Design Patterns for AI Agents 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/design-patterns-for-ai-agents-2026.md)
+- [Agent 时代架构师技能指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-era-architect-skills-guide.md)
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [RAG 深度解析：分块向量化召回重排才是蒸馏同事 Skill 的关键](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunking-vectorization-rerank-distillation.md)
+- [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki/blob/main/entities/memos-hermes-plugin.md)
+- [17种Agent架构演进：控制流设计的完整演化史](https://github.com/QianJinGuo/wiki/blob/main/entities/17-agent-architectures-evolution.md)
+- [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-source-analysis.md)
+- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](https://github.com/QianJinGuo/wiki/blob/main/entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
+- [AgentCore Managed Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md)
+- [From Agent Protocol to Harness Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/from-agent-protocol-to-harness-skill.md)
+- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
+- [RAG 全链路技术详解：从文档加载到 Ragas 评估](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-full-pipeline-taobao.md)
+- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
+- [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-core-internals.md)
+- [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey.md)
+- [harness-engineering-systematic-explainer](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-explainer.md)
+
+---
+
