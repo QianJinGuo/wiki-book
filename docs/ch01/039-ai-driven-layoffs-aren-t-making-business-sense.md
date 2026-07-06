@@ -12,9 +12,9 @@
 - 真正驱动 ROI 的因素：员工再培训、upskilling、让员工构建自己的 AI 代理/自动化流程
 - 替代方案：「自动化增强」(automate-to-augment) 策略，而非「自动化替代」(automate-to-replace)
 ## 相关实体
-- [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](ch04/277-ai.md)
-- [Ai Driven Layoffs Business Sense Cio](ch04/277-ai.md)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/277-ai.md)
+- [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](ch04/069-ai.md)
+- [Ai Driven Layoffs Business Sense Cio](ch04/069-ai.md)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch04/069-ai.md)
 - [Clinereleasesopen Sourceagentruntimesdk](ch03/045-agent.md)
 - [Running An Ai Native Engineering Org](ch01/045-running-an-ai-native-engineering-org.md)
 

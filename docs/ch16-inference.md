@@ -41,8 +41,8 @@
 
 ## 相关实体
 - [Vector Db Chroma Vs Qdrant](ch11/185-chroma-vs-qdrant.md)
-- [Deepseek V4 Pro Vs Claude](ch01/974-deepseek-v4.md)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](ch01/485-claude.md)
+- [Deepseek V4 Pro Vs Claude](ch01/305-deepseek-v4.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](ch01/1022-claude.md)
 - [Context Engineering Three Memory Paradigms Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
@@ -427,7 +427,7 @@ SageMaker AI 端点按实例运行时长计费 ：
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
 → [Voice Agent 设计 - Nova Sonic 多 Agent 工具与会话](ch03/045-agent.md)
-→ [Nova Sonic WebRTC 实时语音流](ch11/259-amazon-nova.md)
+→ [Nova Sonic WebRTC 实时语音流](ch11/257-amazon-nova.md)
 → [OpenAI Realtime Voice 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/openai-realtime-voice-architecture.md)
 
 ---
@@ -536,7 +536,7 @@ Willison 的 **lethal trifecta** 框架（被 Green 引用）是同一问题的�
 
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)：互补（不同加密学原语，同一目标）
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/047-coding-agent.md)：lethal trifecta 概念同源
-- [Apple Silicon Costs More Than Openrouter](ch01/467-apple-silicon-costs-more-than-openrouter.md)：Apple 硬件成本视角
+- [Apple Silicon Costs More Than Openrouter](ch01/440-apple-silicon-costs-more-than-openrouter.md)：Apple 硬件成本视角
 - [Apple Corecrypto Formal Verification Blueprint](ch12/026-apple-corecrypto-formal-verification-blueprint-post-quantu.md)：Apple 加密学基础设施
 
 ## 深度分析
@@ -860,9 +860,9 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [小米AI — ICML 2026 论文矩阵（11篇）](ch04/277-ai.md)
-- [OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](ch05/009-harness.md)
-- [百度文心大模型后训练进化（ERNIE 3.0→5.0）](ch04/277-ai.md)
+- [小米AI — ICML 2026 论文矩阵（11篇）](ch04/069-ai.md)
+- [OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](ch05/085-harness.md)
+- [百度文心大模型后训练进化（ERNIE 3.0→5.0）](ch04/069-ai.md)
 
 ---
 
@@ -960,7 +960,7 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 
 ## 与现有实体的关系
 
-- **与 [Skill 自进化三路线](ch04/255-skill.md)** 呼应：PithTrain 的 agent skills 哲学与 SkillOS/SkillOpt 一脉相承（>30% 重复劳动 → 技能化）
+- **与 [Skill 自进化三路线](ch04/258-skill.md)** 呼应：PithTrain 的 agent skills 哲学与 SkillOS/SkillOpt 一脉相承（>30% 重复劳动 → 技能化）
 - **与 [SaaS-Bench](ch03/045-agent.md)** 平行：两者都创建"为 agent 量身定制的工程指标" —— SaaS-Bench 测 GUI Agent 完成率，PithTrain 测训练框架的 agent-task efficiency
 - **与 [Matt Van Horn 22 黑客技巧](ch03/075-claude-code.md)** 呼应：Matt 的"任何做超过 2 次的事 → 技能"是 PithTrain agent skills 哲学的应用层验证
 - **与 [Agent 六机制](ch03/045-agent.md)** 平行：双重效率思想是六机制中"系统-环境协同"的具体实现
@@ -1125,7 +1125,7 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [How Superset built the IDE for AI agents on Vercel](ch04/277-ai.md)
+- [How Superset built the IDE for AI agents on Vercel](ch04/069-ai.md)
 - [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1168-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.md)
 - [Toto 2.0: Time series forecasting enters the scaling era](ch01/025-toto-2-0-time-series-forecasting-enters-the-scaling-era.md)
 
@@ -1173,7 +1173,7 @@ CUDA event 是一个标记，可记录到 stream 中，当 GPU 执行到该点�
 - [Continuousasync](https://github.com/QianJinGuo/wiki/blob/main/entities/continuousasync.md)
 - [Gemma 4 Multi Token Prediction Drafters](ch01/331-gemma-4-multi-token-prediction-drafters.md)
 - [How To Calculate The Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
-- [Introducing The Ettin Reranker Family](ch01/478-introducing-the-ettin-reranker-family.md)
+- [Introducing The Ettin Reranker Family](ch01/451-introducing-the-ettin-reranker-family.md)
 - [Lightseek Tokenspeed](ch01/1004-lightseek-tokenspeed.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
@@ -1204,7 +1204,7 @@ SGLang作为UC Berkeley/CMU/Stability AI联合开发的LLM推理框架，其核�
 **对于云厂商和大模型团队：** HiCache的Load Stream/Forward Stream重叠设计可以与模型并行策略深度结合——在多模态推理（Visual Encoder + LLM）或MoE架构中，前缀加载与推理的重叠效果可能更加显著，因为这些场景的初始化开销更大。
 
 ## 相关页面
-[GLM-5 Scaling Pain 推理复盘](ch04/277-ai.md) — 包含 HiCache BugFix #2 的详细分析
+[GLM-5 Scaling Pain 推理复盘](ch04/069-ai.md) — 包含 HiCache BugFix #2 的详细分析
 [原始存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/glm5-scaling-pain-inference.md)
 
 ---
@@ -1248,9 +1248,9 @@ End-to-end encrypted ML inference with Amazon SageMaker AI and FHE 涉及apple�
 ### 与现有知识体系的关联
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/215-openclaw.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/213-openclaw.md)
 - [你不知道的 Agent原理架构与工程实践 V2](ch03/045-agent.md)
 
 ## 实践启示
@@ -1422,11 +1422,11 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 
 ## 相关实体
 
-- [automation anywhere collaborates with cisco, nvidia, okta, a](ch04/277-ai.md)
-- [ettin reranker family](ch01/478-introducing-the-ettin-reranker-family.md)
+- [automation anywhere collaborates with cisco, nvidia, okta, a](ch04/069-ai.md)
+- [ettin reranker family](ch01/451-introducing-the-ettin-reranker-family.md)
 - [mathematical optimization at enterprise scale: aws innovatio](https://github.com/QianJinGuo/wiki/blob/main/entities/mathematical-optimization-aws-innovation-center-enterprise.md)
 - [DDoSing Software Delivery Pipelines](ch01/216-0.md)
-- [AI GPUs probably live longer than three years](ch04/277-ai.md)
+- [AI GPUs probably live longer than three years](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/lmsys-dflash-speculative-decoding-2026-06.md)
 
@@ -1622,7 +1622,7 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 3. **视频**：关键帧采样策略在摄入端完成，不要在推理引擎内做动态采样
 ---
 ## 相关实体
-- [ai-infra-auto-driven-skills v0.1.0：给 codex / claude code 的推理](ch04/255-skill.md)
+- [ai-infra-auto-driven-skills v0.1.0：给 codex / claude code 的推理](ch04/258-skill.md)
 - [gemma 4 multi token prediction drafters](ch01/331-gemma-4-multi-token-prediction-drafters.md)
 - [tokenspeed agentic inference engine](ch04/587-tokenspeed-agentic-inference-engine.md)
 
@@ -1757,7 +1757,7 @@ JoyAI-VL-Interaction 每秒做一次判断：继续观察、保持沉默、发�
 
 ### 与 Agent 架构的深度融合
 
-JoyAI-VL-Interaction 的"前台实时助手 + 后台智能大脑"架构，与 [Hermes Agent 技能设计](ch04/255-skill.md) 中的多层架构有异曲同工之处。前台模型类似于"感知-响应"的快速路径（System 1），后台模型类似于"推理-规划"的慢速路径（System 2）。
+JoyAI-VL-Interaction 的"前台实时助手 + 后台智能大脑"架构，与 [Hermes Agent 技能设计](ch04/258-skill.md) 中的多层架构有异曲同工之处。前台模型类似于"感知-响应"的快速路径（System 1），后台模型类似于"推理-规划"的慢速路径（System 2）。
 
 这种架构设计在实际应用中具有明确的合理性：实时视频场景要求毫秒级响应，不能等后台模型慢速推理后再决定是否回应；而遇到需要复杂推理的任务时，前台模型又没有足够的能力处理——因此将两者解耦，前台负责快速判断和实时交互，后台负责深度处理和工具调用。
 
@@ -1765,7 +1765,7 @@ JoyAI-VL-Interaction 的"前台实时助手 + 后台智能大脑"架构，与 [H
 
 JoyAI-VL-Interaction 代表了 AI 从"数字世界的问答"到"物理世界的在场交互"的转变。传统大模型的价值体现在文字对话和代码生成中，而 JoyAI-VL-Interaction 的应用场景直指安防监控、老人小孩看护、直播讲解、AI 眼镜、无障碍辅助等物理世界场景。
 
-京东拥有全球领先的物理世界运营网络（仓储、配送、门店、直播、客服、售后），这些场景每天都在发生人、货、场的实时互动——对这些物理世界数据的理解和利用，是 JoyAI-VL-Interaction 的独特优势。这也与 [NVIDIA XR/AR 眼镜 Agent 基础设施](ch04/277-ai.md) 中讨论的"物理世界 AI 入口"趋势相互印证。
+京东拥有全球领先的物理世界运营网络（仓储、配送、门店、直播、客服、售后），这些场景每天都在发生人、货、场的实时互动——对这些物理世界数据的理解和利用，是 JoyAI-VL-Interaction 的独特优势。这也与 [NVIDIA XR/AR 眼镜 Agent 基础设施](ch04/069-ai.md) 中讨论的"物理世界 AI 入口"趋势相互印证。
 
 ### 开源策略的行业影响
 
@@ -1786,11 +1786,11 @@ JoyAI-VL-Interaction 选择全栈开源，与许多大模型企业的闭源策�
 ## 相关实体
 
 - [WWW 2026 频谱解耦与增强](ch01/216-0.md)
-- [NVIDIA XR/AR 眼镜 Agent 基础设施](ch04/277-ai.md)
-- [Hermes Agent 技能设计分析](ch04/255-skill.md)
+- [NVIDIA XR/AR 眼镜 Agent 基础设施](ch04/069-ai.md)
+- [Hermes Agent 技能设计分析](ch04/258-skill.md)
 - [Claude Code 系统工程能力](ch03/075-claude-code.md)
-- [NVIDIA 多模态 RAG 知识系统](ch01/309-rag.md)
-- [Agent Harness 架构](ch03/045-agent.md)
+- [NVIDIA 多模态 RAG 知识系统](ch01/1019-rag.md)
+- [Agent Harness 架构](ch05/085-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/全球首个京东全栈开源joyai-vl-interaction让大模型从一问一答走向边看边说.md)
 
@@ -1959,7 +1959,7 @@ ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——�
 
 ### 相关实体
 
-- [Deepseek V4 Triton Fp4 Optimization](ch01/974-deepseek-v4.md) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
+- [Deepseek V4 Triton Fp4 Optimization](ch01/305-deepseek-v4.md) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
 - [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理优化通识，包含本文未覆盖的量化 / 蒸馏 / serving 层面的优化策略
 
 ## 实践启示
@@ -2114,7 +2114,7 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 - KV cache：**10%**（bf16 下 9.62 GiB vs 83.9 GiB）
 - 叠加 fp4/fp8 量化可再缩小 2 倍
 
-→ 相关实体：[DeepSeek V4 本地推理](ch04/277-ai.md)
+→ 相关实体：[DeepSeek V4 本地推理](ch04/069-ai.md)
 
 ## 量化：收益最高的优化手段
 
@@ -2153,9 +2153,9 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 ## 与现有知识的关联
 
-- → [DeepSeek V4 本地推理](ch04/277-ai.md)：V4 的 CSA/HCA 架构创新（本文第 6 节）与 antirez 的 ds4.c 本地推理引擎互补
-- → [GLM-5 Scaling Pain](ch04/277-ai.md)：高并发推理下的竞态 Bug，是本文第 8 节"推理服务基础设施"的反面案例
-- → [vLLM](ch01/857-vllm.md)：PagedAttention 的具体实现
+- → [DeepSeek V4 本地推理](ch04/069-ai.md)：V4 的 CSA/HCA 架构创新（本文第 6 节）与 antirez 的 ds4.c 本地推理引擎互补
+- → [GLM-5 Scaling Pain](ch04/069-ai.md)：高并发推理下的竞态 Bug，是本文第 8 节"推理服务基础设施"的反面案例
+- → [vLLM](ch01/825-vllm.md)：PagedAttention 的具体实现
 
 ---
 
@@ -2168,9 +2168,9 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 ## 相关实体
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
 - [Claude Code Hidden Settings 18](ch03/075-claude-code.md)
-- [Alphaevolve交出一周年炸裂成绩单Ai自我改进不再科幻](ch04/277-ai.md)
-- [Rag Chunking Optimization 2025](ch01/309-rag.md)
-- [Wangyunhe Harness Optimization Agentsoul](ch03/045-agent.md)
+- [Alphaevolve交出一周年炸裂成绩单Ai自我改进不再科幻](ch04/069-ai.md)
+- [Rag Chunking Optimization 2025](ch01/216-0.md)
+- [Wangyunhe Harness Optimization Agentsoul](ch05/085-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
 
@@ -2356,7 +2356,7 @@ Bonsai Image 4B 是其参数级别上首个直接在 iPhone 上运行的图像�
 
 如果应用场景对图像质量有要求，Ternary 的 6.4x 压缩比和 95% 性能保留是更优选择。只有在极端内存约束（如 1GB 以下 transformer）时，才考虑 1-bit 方案。Apache 2.0 许可下可直接商用，无需考虑授权成本。
 
-**2. 结合 [Ai Infra Llm Efficient Inference Vllm](ch04/277-ai.md) 进一步降低推理延迟**
+**2. 结合 [Ai Infra Llm Efficient Inference Vllm](ch04/069-ai.md) 进一步降低推理延迟**
 
 虽然 Bonsai 本身已针对 Apple Silicon（MLX）和 CUDA（Gemlite）做了 kernel 优化，但在端侧部署时可结合推理优化技术（如批处理策略、KV cache 管理）进一步提升吞吐。Bonsai Studio iOS app 的部署案例提供了参考实现路径。
 
@@ -2384,7 +2384,7 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ## 深度分析
 
-**消除而非优化：Kernel 层设计的方法论突破：** IKBO 的核心洞察是"broadcast 是数据布局问题，而非计算必需"——传统方法在系统层面处理 broadcast 复制，浪费内存带宽和计算资源；而 IKBO 在计算原语层面消除复制，让 kernel 内部处理 mismatched batch sizes。这个思维转换将优化方向从"workaround 问题"转向"消除问题根源"，实现了 2/3 的延迟降低。这种**在根源处解决问题**而非在表面做修补的思想，对其他 AI 系统优化有普遍借鉴意义。 See also [Harness Production Agent Engineering Deficit](ch03/045-agent.md)
+**消除而非优化：Kernel 层设计的方法论突破：** IKBO 的核心洞察是"broadcast 是数据布局问题，而非计算必需"——传统方法在系统层面处理 broadcast 复制，浪费内存带宽和计算资源；而 IKBO 在计算原语层面消除复制，让 kernel 内部处理 mismatched batch sizes。这个思维转换将优化方向从"workaround 问题"转向"消除问题根源"，实现了 2/3 的延迟降低。这种**在根源处解决问题**而非在表面做修补的思想，对其他 AI 系统优化有普遍借鉴意义。 See also [Harness Production Agent Engineering Deficit](ch05/085-harness.md)
 
 **Kernel-Model-System 三层协同设计是性能突破的关键：** IKBO 的成功不只是 kernel 优化的功劳，而是 kernel、ML 编译器、inference runtime 三层协同设计的结果。Kernel 层提供支持 mismatched RO/NRO batch sizes 的原生接口；编译器层需要 per-operator dynamic shape ranges 来选择正确形状的 kernel；runtime 层通过 candidate-to-user mapping 而非 materializing broadcast 传递信息。任何一层单独优化都无法达到最终效果，**系统级协同优化才能实现数量级突破**。
 

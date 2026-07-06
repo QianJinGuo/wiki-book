@@ -76,19 +76,19 @@ On-Demand 评估在 CI/CD 中的角色是**门禁（gate）而非建议**——�
 删除资源时必须**先删评估器**（Lambda 函数、IAM roles、Online 评估配置），再删 Agent Runtime、Memory、ECR 等基础设施。否则 AgentCore 控制平面可能残留指向已删除 Lambda 的配置导致错误。
 
 ## 相关实体
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/259-amazon-nova.md)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/277-ai.md)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/257-amazon-nova.md)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch04/069-ai.md)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/045-agent.md)
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/253-bedrock.md)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/485-claude.md)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/251-bedrock.md)
+- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/1022-claude.md)
 
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch03/045-agent.md)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/655-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch01/216-0.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/277-ai.md)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/701-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/277-ai.md)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch04/069-ai.md)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/665-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch04/069-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 
 ---

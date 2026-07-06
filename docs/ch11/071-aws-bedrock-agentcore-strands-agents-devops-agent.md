@@ -74,13 +74,13 @@
 
 ## 深度分析
 
-1. **四阶段漏斗流水线是降低 AI 调用成本的核心工程模式**：该方案将 CloudWatch API 成本控制在 $1/月（500 实例规模），关键在于"海选粗筛 → 精选细筛"的两阶段漏斗。先用少量基础指标（CPU、连接数）筛出不到 10% 的候选，再对候选采集深度指标（IOPS、网络、7 天峰值）。这与 [Harness Engineering](ch05/061-harness-engineering.md) 中的"Harness 分层降本"原则一致——不是减少有用信息，而是用最小成本先做预判。
+1. **四阶段漏斗流水线是降低 AI 调用成本的核心工程模式**：该方案将 CloudWatch API 成本控制在 $1/月（500 实例规模），关键在于"海选粗筛 → 精选细筛"的两阶段漏斗。先用少量基础指标（CPU、连接数）筛出不到 10% 的候选，再对候选采集深度指标（IOPS、网络、7 天峰值）。这与 [Harness Engineering](ch05/091-harness-engineering.md) 中的"Harness 分层降本"原则一致——不是减少有用信息，而是用最小成本先做预判。
 
 2. **独立 Agent Space 是多账户 DevOps Agent 集成的最优解**：文章揭示了一个反直觉的设计决策——不使用集中式 Agent Space，而是每个业务账户独立部署。原因是当 Agent 将所有账户资源纳入统一拓扑时，跨账户的无关资源噪音会严重干扰根因调查准确性。独立 Agent Space 保证了每次调查仅聚焦单一账户范围，这是一条可在 [将 Aws Devops Agent 智能运维能力延伸到中国区](ch03/045-agent.md) 等类似案例中复用的设计原则。
 
 3. **MCP-first 工具暴露策略代表了 Agent 工具集成的范式转变**：21 个内部工具不对外直接调用，全部经 MCP 标准化后暴露。这意味着外部 Agent 可以用统一协议做程序化调用，而非针对每个工具写死的集成代码。从 [Mcp Protocol Ecosystem](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md) 的角度看，该案例是 MCP 从"协议规范"到"生产级工具生态"落地的典型样本——工具数量和质量都达到生产级，而非 Demo 级别。
 
-4. **异步自调用模式优雅解决了 IM 平台超时与深度分析的矛盾**：飞书 Webhook 要求 3 秒内返回 HTTP 200，但 AI Agent 的多工具编排天然需要更长时间。方案用 Lambda 异步 invoke 自身 + DynamoDB 条件写入去重，实现零额外组件的可靠异步链路。这是 [Harness Engineering](ch05/061-harness-engineering.md) 中"外部系统集成 Harness"的经典解法——不改变外部系统约束，而是在内部构建异步桥接层。
+4. **异步自调用模式优雅解决了 IM 平台超时与深度分析的矛盾**：飞书 Webhook 要求 3 秒内返回 HTTP 200，但 AI Agent 的多工具编排天然需要更长时间。方案用 Lambda 异步 invoke 自身 + DynamoDB 条件写入去重，实现零额外组件的可靠异步链路。这是 [Harness Engineering](ch05/091-harness-engineering.md) 中"外部系统集成 Harness"的经典解法——不改变外部系统约束，而是在内部构建异步桥接层。
 
 5. **Session 记忆按群隔离是多租户 IM Agent 的标准范式**：系统将每个飞书群映射为独立 session_id，AgentCore Memory 按 session 管理对话历史。这保证了不同团队（DBA 群、SRE 群、管理层群）的上下文完全隔离、互不干扰。这与 [Agent Memory Substrate Three Layer](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-substrate-three-layer.md) 中"租户级记忆隔离"原则一致，是企业级 IM Agent 部署的必要设计。
 

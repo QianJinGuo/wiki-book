@@ -8,7 +8,7 @@
 
 Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其对比。每种方法影响三件事：指令何时加载进上下文、压缩后是否持续生效、指令权重有多高。
 
-与 [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/255-skill.md) 互补——源码分析侧重底层 API 注入位置，本文侧重官方使用指南和决策框架。
+与 [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/258-skill.md) 互补——源码分析侧重底层 API 注入位置，本文侧重官方使用指南和决策框架。
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 
@@ -53,7 +53,7 @@ All API handlers must validate input with Zod before processing.
 
 部署流程、发布检查清单、审查流程 → 技能，不是 CLAUDE.md。
 
-→ [Claude Code 源码解析](ch04/255-skill.md)
+→ [Claude Code 源码解析](ch04/258-skill.md)
 
 ## 子智能体：隔离是核心价值
 
@@ -69,7 +69,7 @@ All API handlers must validate input with Zod before processing.
 
 上下文成本低——配置位于主上下文之外。PreToolUse hook 可以用退出码 2 拒绝工具调用。
 
-→ [Claude Code Hooks 完整指南](ch04/277-ai.md)
+→ [Claude Code Hooks 完整指南](ch04/069-ai.md)
 
 ## 输出风格：权重最高，谨慎使用
 
@@ -122,10 +122,10 @@ Claude Code 中，钩子是唯一能保证"确定性触发、确定性执行"的
 ## 相关链接
 
 - 原文：https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more
-- → [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/255-skill.md)
+- → [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/258-skill.md)
 - → [Claude Code 治理：软规则与硬约束](ch03/075-claude-code.md)
 - → [Claude Code 子智能体上下文卫生](ch03/075-claude-code.md)
-- → [Claude Code Hooks 完整指南](ch04/277-ai.md)
+- → [Claude Code Hooks 完整指南](ch04/069-ai.md)
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 
 ---

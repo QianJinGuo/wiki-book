@@ -30,10 +30,10 @@
 
 ## 相关实体
 - [Aws Transform Ezconvertbi Bi Migration](ch11/195-aws-transform-ezconvertbi-bi-migration.md)
-- [Amazon Cloudfront Deploy Guide Cloudfront Domain Multi Tenant Architecture](ch04/277-ai.md)
+- [Amazon Cloudfront Deploy Guide Cloudfront Domain Multi Tenant Architecture](ch04/069-ai.md)
 - [Amazon Bedrock Api Security Guide](ch12/033-amazon-bedrock-api.md)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/265-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch04/277-ai.md)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cloudsectidbits-masso-cognito-sso.html.md)
 -

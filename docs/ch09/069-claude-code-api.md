@@ -71,10 +71,10 @@ Anthropic 有合理的商业和技术理由关注非官方 API 路由。影子 A
 
 ## 相关实体
 
-- [Anthropic Skill Stack 架构](ch04/255-skill.md) — Anthropic 的 Agent 工程架构背景，帮助理解 Claude Code 的底层设计
+- [Anthropic Skill Stack 架构](ch04/258-skill.md) — Anthropic 的 Agent 工程架构背景，帮助理解 Claude Code 的底层设计
 - [Claude Code 治理软规则](ch03/075-claude-code.md) — 探讨 Claude Code 行为的治理与透明度
-- [OpenClaw 安全与功能增强实践](ch11/215-openclaw.md) — AI 工具的安全实践案例
-- [AI Gateway vs MCP Gateway 安全须知](ch04/277-ai.md) — API 路由与安全网关的讨论，与本实体的 API 路由指纹识别直接相关
+- [OpenClaw 安全与功能增强实践](ch11/213-openclaw.md) — AI 工具的安全实践案例
+- [AI Gateway vs MCP Gateway 安全须知](ch04/069-ai.md) — API 路由与安全网关的讨论，与本实体的 API 路由指纹识别直接相关
 - [组件过期模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md) — 探讨 AI 系统中的信任与安全性设计模式
 
 ## 参考来源

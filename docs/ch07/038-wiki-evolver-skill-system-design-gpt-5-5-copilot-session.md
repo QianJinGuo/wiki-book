@@ -134,16 +134,16 @@ wiki-evolver 的 Knowledge Ladder 本质上是一个记忆系统的层次模型�
 1. **先建立底层闭环**：在部署 wiki-evolver 之前，确保单篇处理闭环（ingest → synthesize → index → log → lint）已经稳定运行
 2. **从 vault-query 开始**：最轻量的运行模式是 vault-query——先让系统学会「与知识库对话」，再逐步增加涌现能力
 3. **Provenance 是生命线**：任何涌现层的产出都必须可追溯到低层来源，否则知识库的可信度会快速下降
-4. **Evals 是涌现层的关键**：正如 [AI 原生创业公司](ch04/277-ai.md) 中强调的，没有评估系统就无法实现复利增长
+4. **Evals 是涌现层的关键**：正如 [AI 原生创业公司](ch04/069-ai.md) 中强调的，没有评估系统就无法实现复利增长
 5. **渐进式披露**：参考 Claude Code Skills 的设计，wiki-evolver 的能力应该逐步开放，避免一次性暴露过多复杂性
 
 ## 相关实体
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/045-agent.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/277-ai.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch04/069-ai.md)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
 - [两万字详解Claude Code源码核心机制](ch03/075-claude-code.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/wiki-evolver-skill-system-design-gpt55-copilot-session.md)

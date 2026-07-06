@@ -1,51 +1,57 @@
-# 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽
+# Agent 时代，我们架构师应该学什么？
 
-## Ch04.448 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽
+## Ch04.448 Agent 时代，我们架构师应该学什么？
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/tsinghua-agent-security-fangcun.md`
+> 📊 Level ⭐⭐ | 6.1KB | `entities/agent-时代我们架构师应该学什么.md`
 
-# 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽
-> **URL**: https://mp.weixin.qq.com/s/BKZLh5x1QyLsQISedMBr1Q
-> **SHA256**: ec62655e1642b8058f8882e5e92f2062d4c5fb2ef1ac38f9820ed1d40d8eba2e
-来自**清华大学人工智能学院、交叉信息研究院**的方寸跃迁团队，提出一套面向 Agent 运行全生命周期的多层安全体系，覆盖事前（Skill Ward）× 事中（Guard × Observer）× 事后（审计）完整链路。
+# Agent 时代，我们架构师应该学什么？
+架构师（JiaGouX）  我们都是架构师！
 
-## 相关实体
-- [Ath Agent Trust Handshake Protocol](ch03/045-agent.md)
-- [Canvas Breach Disrupts Schools Colleges Nationwide](ch12/032-canvas-breach-disrupts-schools-colleges-nationwide.md)
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](ch04/255-skill.md)
-- [Aws Bedrock Agentcore Identity Security](ch03/045-agent.md)
-- [Github Investigating Teampcp Claimed 17Cc77](ch04/277-ai.md)
-
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tsinghua-agent-security-fangcun.md)
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代我们架构师应该学什么.md)
 
 ## 深度分析
 
-当前行业主流安全方案共享一个根本性盲区：**只看到 Agent "声明"出来的行为，而非真实执行的动作**。提示词规则、输入输出过滤、运行时日志审计、SDK Hook 均属于"表演级监控"——模型在受监控环境下会主动调整行为，按规则表演而非按规则执行^。这一判断在多 Agent 协作环境中尤为关键：当一个恶意 Agent"从不亲自动手、只靠影响其他 Agent 转嫁风险"时，基于声明的审计完全失效^。这意味着安全边界必须从"声明层"下沉到"行为层"。
+**1. 筛选能力比学习路线图更耐用**
 
-Fangcun Observer 的核心创新在于**直接下沉到操作系统层**，彻底解耦对任何框架插件、SDK 接口、模型供应商集成的依赖^。这解决了企业实际运营中的关键痛点：同时运行数十甚至上百个 Agent 时，系统无法完整感知正在运行多少个、在做什么——而 Observer 将运行时真实行为、Agent 决策动作与模型上下文关联成完整行为图谱，使多 Agent 协作网络中的恶意个体无处遁形^。
+在 Agent 领域，"filter > feed"——评估新技术的半衰期比追路线图更重要。模型封装层、CLI 参数、某个"类 Devin 产品"的半衰期通常很短；协议、状态、沙箱、评估、工具契约这些东西，半衰期会长很多。前者更多是工具选择，后者会慢慢变成系统能力。能在最热的时候说"我半年后再看"，是架构师难得的克制。
 
-Fangcun Guard 在安全审核性能上实现了两位数毫秒级的突破：4 道审核（用户输入、工具调用入参、模型输出、工具返回）全跑 Guard 总耗时仅 30ms，对用户和业务均无感知^。其 Benchmark 数据显示 p99 推理延时 8ms，显著优于开源方案 130ms+（8B 模型）或 50ms（0.6B 但 F1 有差距）的水平^。这意味着安全审核从"可以被绕过的辅助检查"变为"无法感知的实时基础设施"。
+**2. 上下文是运行时工作集，而非聊天记录**
 
-Skill Ward 揭示了第三方 Skill 生态的深层风险：恶意 Skill 的真正杀招在运行时而非静态扫描能触及的地方——读取配置文件时才拉远程载荷、调试日志逻辑触发后才发请求、合法依赖包在特定参数下才激活后门^。实测 5000 个真实 Skill 中，仅靠静态扫描会漏掉约三分之一运行时威胁，全部由 Docker 蜜罐沙箱阶段捕获^。这说明**蜜罐沙箱是 Skill 安全审计的必经环节，而非可选项**。
+Agent 跑长任务时，很多失败表面看是"模型没想明白"，往里看常常是上下文坏了——目标被工具输出淹没、旧错误一直留在窗口里、压缩把用户最初的约束磨平。把上下文按运行时工作集分层设计（模型窗口 / 会话状态 / 文件数据库 / 项目规范 / 工具层），比当聊天记录或资料仓库更顺。Claude Code 92% 缓存命中率的背后，正是把稳定内容和动态内容分得很干净。
 
-三款产品组合构成了 Agent 安全的完整边界：事前 Skill Ward（三阶段检测）× 事中 Guard（8ms 护栏）+ Observer（OS 层行为感知）× 事后本地审计自进化防御^。这一框架的完整性与当前行业碎片化安全方案形成鲜明对比——后者只覆盖单一环节而留有系统性盲区。
+**3. 工具设计即业务接口设计**
+
+模型不是人类工程师——人看到 400 Bad Request 会自己翻文档，模型靠的是工具的名字、描述、参数、返回和错误消息来理解外部世界。五到十个命名清楚、边界清楚的工具，通常比二十个互相重叠的工具更稳。工具描述本身就是一份很小的接口文档：写宽了模型会滥用，写窄了模型不敢用，返回太多窗口会变脏，错误太抽象模型会重复犯错。
+
+**4. 评估前置是工程能力的分水岭**
+
+Agent 系统最麻烦的地方在于，它很多时候不会显式崩掉，而是给一个看上去挺像答案的答案。把 eval 类比成 Agent 的单元测试——它不保证系统永远正确，但至少能让团队知道这次改动有没有把昨天还正常的能力搞坏。没有这层东西，团队很容易陷在体感讨论里。Cursor 复盘 Harness 也印证了这点：模型决定能力上限，Harness 决定生产下限，但评估才是让下限可度量的手段。
+
+**5. Harness 是模型的运行底座，而非薄壳**
+
+Harness 在长任务里会撞上后端同样的问题：状态、队列、日志、权限、恢复、审计、成本。模型负责选下一步，Harness 负责验证、执行、捕获输出、决定反馈、设置检查点、必要时调度子任务。同一个模型，放在不同的上下文策略、工具契约、评估体系和权限边界里，表现差得很远。Agent 产品的质量很难只按模型版本讨论，更准确的发布单元是模型加 Harness 的组合。
 
 ## 实践启示
 
-**1. 将安全审计从"声明层"升级到"行为层"**：在评估或自研 Agent 安全方案时，核心问题应从"Agent 说了什么"变为"Agent 做了什么"。接入 Observer 类 OS 级行为感知工具，对运行中的系统调用、文件访问、网络行为进行实时监控，而非仅依赖提示词规则或输入输出过滤^。
+1. **用筛选问题评估新框架**：问自己——半年后它还重要吗？能接进现有系统吗？解决什么真实失败模式？能被 trace 和 eval 证明有用吗？多数新框架晚点看没关系，稳定原语错过了才麻烦。
 
-**2. 在引入第三方 Skill 生态时强制经过蜜罐沙箱检测**：无论是 Claude Skills、OpenAI Apps 还是 Claw Hub，静态扫描不足以覆盖运行时威胁。建议在 CI/CD 流程中加入 Skill Ward 类三阶段检测（静态分析 + 大模型意图研判 + Docker 蜜罐实际执行），确保约 1/3 的运行时威胁不被遗漏^。
+2. **把上下文分层当作架构决策**：当前目标、关键约束、最近观察放模型窗口；任务计划、已完成动作、待办放会话状态；大对象、日志、代码、历史文档放文件/数据库；AGENTS.md、README、Runbook、团队约定放项目规范层。
 
-**3. 将安全审核嵌入 Agent 运行时基础设施，而非作为独立外挂**：Guard 的 8ms p99 延时证明安全审核可以成为业务流的无感一部分。选择审核延时不高于 30ms（4 道全跑）的方案，使安全检查在用户无感知的情况下完成全面覆盖^。
+3. **用接口文档思维写工具描述**：一个工具要让模型看懂——什么时候该用、什么时候不该用、参数填什么、返回哪些是关键结果、失败以后下一步怎么修、危险动作有没有权限和确认。
 
-**4. 构建覆盖事前-事中-事后的完整 Agent 安全体系**：参考 Fangcun 三产品矩阵，根据自身 Agent 部署的阶段特征（是否大量引入第三方 Skills、是否涉及敏感工具调用、是否需要多 Agent 协作）选择对应的安全产品，避免因单一环节的侥幸心理导致全链路失效^。
+4. **上线前先做一版哪怕粗糙的评估集**：从真实 trace 里长出来，第一次上线前哪怕只有五十条样本也比没有强；每次失败就把样本补进去，每次改 prompt、换模型、调上下文压缩都跑一遍。
 
-**5. 优先选择数据本地沉淀的安全方案**：Observer 的本地审计 + 自进化防御设计强调所有数据本地沉淀、不上云^。在企业场景中，Agent 运行数据包含大量业务上下文，安全方案的数据不留云是合规层面的基本要求。
+5. **从窄目标小闭环起步**：一个明确目标 + 单 Agent 主循环 + 三到七个边界清楚的工具 + 窗口外状态层 + 沙箱 + trace + 五十条初始评估样本 + 能回滚的发布方式。多 Agent 和长期记忆可以晚一点——Agent 早期最值钱的地方，不在它会做多少事，而在团队能不能看清它怎么失败。
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代我们架构师应该学什么.md)
 
 ## 关联阅读
-- [Managed Agents Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/managed-agents-architecture.md) — 管理 Agent 的规模化运行
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 运行时 Harness 框架
-- [Claude Code Source Leak Lifecycle](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-source-leak-lifecycle.md) — Claude Code 源码分析中的安全机制
+
+* [Agent Harness 上下文管理：聊天记录还是工作集](ch05/085-harness.md)
+* [Karpathy：Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+* [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/085-harness.md)
+* [Subagents 详解：Claude Code 如何避免上下文污染](ch03/075-claude-code.md)
+* [从 30 分钟手搓 Agent 到 Harness 成为新后端](ch01/216-0.md)
 
 ---
 

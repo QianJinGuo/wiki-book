@@ -2,7 +2,7 @@
 
 > 超级智能、存在风险、AI 治理、人类命运
 
-> 本章收录 **18 篇**实体，按深度递增排列。
+> 本章收录 **19 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 11 |
+| ⭐⭐ 工程师 | 需编程基础 | 12 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 3 |
@@ -97,7 +97,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 - [Impeccable](ch05/001-impeccable.md) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
 - [Karpathy Vibe Coding](ch03/045-agent.md) —— Karpathy 原始概念出处
 - [Willison Vibe Coding Convergence](ch09/047-coding-agent.md) —— Willison 的同主题回应
-- [Agent Skill 编写指南](ch04/255-skill.md) —— 通用 skill 格式
+- [Agent Skill 编写指南](ch04/258-skill.md) —— 通用 skill 格式
 - [Agentic Design System 演化](ch01/011-agentic-design-system-from-chatbot-to-orchestration.md)
 - → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding.md)
 
@@ -136,11 +136,11 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 本文档基于火山引擎 Data Agent 产品体系，设计一套可对标的**企业级数据智能体**产品。涵盖：智能问数 Agent（NL2SQL）、营销策略 Agent（CDP 集成）两大核心场景的完整功能拆解、技术架构、API 设计、数据模型。
 
 ## 相关实体
-- [Openai Buys Ai Consultancy Enterprises](ch04/277-ai.md)
-- [Multilingual Ai](ch04/277-ai.md)
-- [Baixing Ontoz Enterprise Ontology Multi Agent](ch04/277-ai.md)
-- [Enterprise Ai Memory Substrate Three Layer Architecture](ch04/277-ai.md)
-- [Skill Version Management Semantic Versioning Practices Winty](ch04/255-skill.md)
+- [Openai Buys Ai Consultancy Enterprises](ch04/069-ai.md)
+- [Multilingual Ai](ch04/069-ai.md)
+- [Baixing Ontoz Enterprise Ontology Multi Agent](ch04/069-ai.md)
+- [Enterprise Ai Memory Substrate Three Layer Architecture](ch04/069-ai.md)
+- [Skill Version Management Semantic Versioning Practices Winty](ch04/258-skill.md)
 
 → [产品总览 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/volcengine-data-agent-product-overview.md)
 → [智能问数Agent 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/volcengine-data-agent-intelligent-query-agent.md)
@@ -889,7 +889,7 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 
 ## 相关实体
 - [AutoResearch 多Agent开发](ch03/045-agent.md) — 类似的 Agentic 循环 + 量化评分思路
-- [Harness Engineering](ch05/061-harness-engineering.md) — 约束驱动的自动化执行
+- [Harness Engineering](ch05/085-harness.md) — 约束驱动的自动化执行
 - [Enterprise Software Moats in Agent Era](ch03/045-agent.md) — 企业级 Agent 护城河分析
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 宪法级约束 + 量化验收标准
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md)
@@ -913,8 +913,8 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 **访谈来源**：James 接受技术博主 **Ryan Peterman** 的视频采访（2+ 小时），本文根据采访视频整理「AI 时代的职业建议」部分。
 
 ## 相关实体
-- [Fanling Company As Agent Ai Org Reflection](ch04/277-ai.md)
-- [Ai Era What To Read World Book Day](ch04/277-ai.md)
+- [Fanling Company As Agent Ai Org Reflection](ch04/069-ai.md)
+- [Ai Era What To Read World Book Day](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/james-cowling-engineering-philosophy-ai-era.md)
 
@@ -1179,11 +1179,11 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 - [GitLab Duo Agent Platform](https://about.gitlab.com/blog/2026/01/gitlab-duo-agent-platform)
 - [GitLab Transcend 2026（6 月 10 日）](https://about.gitlab.com/events/gitlab-transcend)
 ## 相关实体
-- [Gitlab 14Pct Layoff Agent Platform Ai 2026Q1](ch04/277-ai.md)
+- [Gitlab 14Pct Layoff Agent Platform Ai 2026Q1](ch04/069-ai.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Ai Agents Inside Perimeter Hackernews](ch04/277-ai.md)
+- [Ai Agents Inside Perimeter Hackernews](ch04/069-ai.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Principals Ai Education](ch04/277-ai.md)
+- [Principals Ai Education](ch04/069-ai.md)
 
 ---
 
@@ -1245,13 +1245,13 @@ Welo Data 的服务覆盖从训练数据到生产监控的全链路：
 
 **Human evaluation**：在目标语言中实现 **90%+ 评估者共识率**，这是通过评估者独立校准和质量控制流程实现的，而非简单依赖评分数量。
 
-**RLHF 和 preference data**：在生产语言中进行偏好标注和 [RLHF](ch04/277-ai.md)，而非仅在英语或团队语言中进行。偏好信号的文化特异性意味着必须由真实目标语言用户产生。
+**RLHF 和 preference data**：在生产语言中进行偏好标注和 [RLHF](ch04/069-ai.md)，而非仅在英语或团队语言中进行。偏好信号的文化特异性意味着必须由真实目标语言用户产生。
 
 **Production monitoring**：按语言、按地区追踪质量指标，在用户发现问题之前发现多语言质量退化。
 
 ## 质量保障基础设施
 
-Welo Data 的 **NIMO**（Identity Verification and Quality Management System）提供了可审计的质量保证：评估者身份验证、contributor 元数据、异常检测报告，以及完整的[评估指标](ch04/255-skill.md)体系。
+Welo Data 的 **NIMO**（Identity Verification and Quality Management System）提供了可审计的质量保证：评估者身份验证、contributor 元数据、异常检测报告，以及完整的[评估指标](ch04/258-skill.md)体系。
 
 安全设施覆盖 **14+ 地区**（北美、欧洲、亚洲、MENA），支持 air-gapped 环境、设备控制和严格的数据处理协议。历史安全事件：**0**。
 
@@ -1264,7 +1264,7 @@ Multilingual AI 与以下领域存在深刻关联： 提供了偏好学习的方
 
 ## 相关实体
 
-- [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](ch01/1065-spec.md)
+- [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](ch01/1171-llm.md)
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/multilingual-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
@@ -1304,7 +1304,110 @@ Evaluator Gap 的核心洞察是"流利不等于胜任"——这对企业级 AI 
 
 ---
 
-## Ch20.007 Token 经济学与 AI 效率
+## Ch20.007 人机对齐？不，是人正在向机器对齐
+
+> 📊 Level ⭐⭐ | 9.7KB | `entities/human-aligning-to-machine-reverse-alignment-2026.md`
+
+# 人机对齐？不，是人正在向机器对齐
+
+## 摘要
+
+全球顶尖 AI 实验室正倾注巨资追求 AI 对齐人类价值观，但一个被广泛忽视的逆向趋势正在发生：**人类自身正在不知不觉地向 AI 靠拢**。腾讯研究院引用的多项研究揭示了这一「反向对齐」现象——从语言习惯（如「delve」一词的突然流行）到工作模式（AI 普及后周末工作暴增 40%、人机协作增加 34%），从认知决策（「认知投降」现象）到社会偏见（AI 生成内容影响性别刻板印象），人类正在被 AI 系统无形地重塑。谷歌 DeepMind 伦理研究负责人 Iason Gabriel 指出，双向对齐的复杂性远超我们最初的想象。
+
+## 核心要点
+
+- **反向对齐的定义**：人类在与 AI 交互中无意识地调整自身思维、语言和行为方式，而非仅仅是 AI 向人类对齐
+- **语言层面的证据**：德国马克思-普朗克研究所发现，ChatGPT 诞生后「delve」一词在学术写作中的使用频率激增，反映 AI 正在改变人类的书面语表达习惯
+- **工作模式的转变**：美国 ActivTrak《2026 年工作状态报告》显示，AI 普及后人机协作增加 34%、周末工作暴增 40%，但人们的持续聚焦时间达到三年新低
+- **认知层面的影响**：Wharton School 的研究提出了「认知投降」（Cognitive Surrender）的概念，指人类在 AI 辅助下逐渐丧失独立思考的意愿和能力
+- **社会偏见的固化**：研究发现，AI 生成的图像会强化性别刻板印象和种族同质化趋势，而模型即使被显式设定为「无偏见」仍然存在隐式关联偏差
+
+## 深度分析
+
+### 对齐的方向性：从「单向塑造」到「双向互动」
+
+传统 AI 安全领域对「对齐」的定义是单向的：人类设定价值观，AI 系统学习并遵守。这种框架假设人类是稳定的参考系，AI 是可变的对象。然而，真实世界中的对齐是一个 **动态双向博弈** 过程。
+
+实证研究表明，人类在与 AI 的交互中会发生至少三个层面的适应性变化：
+
+1. **行为层面**：用户为了获得更好的 AI 输出，会不自觉调整自己的提问方式和措辞。这是一种类似「用户驯化模型」的过程，实质上是人类主动向 AI 的训练数据分布靠拢。
+2. **认知层面**：当人类习惯性地依赖 AI 进行决策辅助后，自身独立判断的意愿会减弱。Wharton 研究将这种状态定义为「认知投降」——不是强制性的，而是渐变式的。
+3. **社会层面**：AI 生成内容的广泛传播会反过来塑造社会的语言规范、审美标准和价值观。这不再是个人层面的对齐，而是整个文化语境被 AI 系统潜移默化地重塑。
+
+这种双向对齐的动态博弈，远比技术层面的「RLHF + 价值观对齐」要复杂和深刻。它触及了一个根本性问题：当 AI 系统的训练数据本身就包含人类的历史偏见，而它的输出又反过来影响人类时，我们面对的其实是一个 **闭环反馈系统**，而非单向控制回路。
+
+### 「认知投降」现象的技术与人文双重解读
+
+Wharton School 提出的「认知投降」概念是反向对齐研究中最引人深思的发现。它并非指人类完全放弃思考，而是一种微妙的状态转移：
+
+- **简单任务的外包**：人类开始将越来越多的「思考任务」委托给 AI，从拼写检查到邮件起草，再到数据分析
+- **决策信心的转移**：当 AI 的输出与自身判断矛盾时，人类越来越倾向于相信 AI 而非自己
+- **批判性思维的弱化**：长期依赖 AI 进行信息筛选和总结，人类对信息真实性和偏好的辨别能力下降
+
+从技术角度来看，这种现象可以理解为 **「认知卸载」（Cognitive Offloading）** 的极致化——当卸载的收益（效率提升）短期可见，而成本（独立思考能力的弱化）长期累积时，个体理性选择会系统性地偏向卸载。这是一个「理性成瘾」结构：每一次向 AI 的「求助」都带来即时满足，同时略微降低下一次独立求解的概率。
+
+### 语言对齐：AI 如何通过「反向传染」改变人类的表达方式
+
+语言层面的反向对齐是一个极为敏感的社会信号。研究发现，「delve」一词的使用频率在 ChatGPT 发布后急剧上升——这并非巧合，而是模型训练数据中高频使用该词汇导致模型偏好它，而用户在使用 AI 辅助写作时不自觉地复制了这个词汇偏好。
+
+更深层次的问题是：**当大量学术论文、商业报告、新闻报道都经过 AI 润色或生成后，人类语言的多样性是否会收窄？** 如果所有文本都趋向于「最优的 AI 表达风格」，那么文化多样性的基础——语言的异质性——将受到侵蚀。
+
+这与生物多样性危机有着类似的结构：少数高效物种（AI 偏好的表达方式）挤占了多样化表达生态位，导致整体系统的韧性下降。
+
+### AI 生成内容对社会偏见的放大效应
+
+Princeton 和 Nature 的研究揭示了反向对齐在社会偏见维度的危险性：AI 生成的图像会强化性别刻板印象和种族同质化趋势。这种固化机制的链条是：
+
+1. AI 模型从带有历史偏见的数据中学习统计关联
+2. 模型在生成内容时「平均化」了这些关联，形成系统性的偏见输出
+3. 用户消费这些生成内容，在潜意识中接收并内化了这些偏见信号
+4. 用户自己创造的新数据（包括训练下一代模型的数据）进一步包含了被强化的偏见
+
+这是一个 **偏见放大循环**：初始的微弱偏差经过 AI 系统的生成→人类吸收→人类生成的反馈回路后，被系统性放大了。
+
+值得注意的是，即使用显式的去偏方法（如设置模型为「无偏见」），模型内部的隐式关联仍然存在，这说明当前的对齐技术在消除深层次偏见方面的局限性。
+
+### 双向对齐的治理挑战与应对路径
+
+双向对齐的发现对现有的 AI 治理框架提出了严峻挑战。
+
+**当前的治理假设**：
+- AI 是可变的，人类是稳定的（因此只需对齐 AI）
+- 对齐是一个技术问题（RLHF 等微调方法可解决）
+- AI 对人类社会的影响是外生的（可以被独立评估）
+
+**实际的情况**：
+- 人类也在被 AI 改变（因此需要同时关注「人类对齐」的问题）
+- 对齐是一个复杂的社会技术系统问题
+- AI 与社会的关系是内生的（两者共同演化）
+
+**应对路径**包括：(1) 建立 AI 影响追踪机制，周期性评估 AI 系统对人类行为、语言和认知的长期影响；(2) 在 AI 素养教育中加入「反向对齐」的内容，帮助用户识别和保持自身判断力；(3) 在 AI 系统设计中增加「认知主权」保护机制，确保人类始终保留最终决策权。
+
+## 实践启示
+
+1. **建立个人 AI 使用审计**：定期检查自己在哪些决策场景下不自觉地依赖 AI，以及这种依赖是否侵蚀了独立判断能力。可以设置「无 AI 时段」来维护认知自主性。
+
+2. **在 AI 系统设计中加入「认知主权」保护层**：对于关键决策场景（医疗、法律、财务），AI 系统应提供推荐理由和替代方案，而非直接给出「最终答案」。人类应该始终保留否决权。
+
+3. **关注团队/组织的「语言多样性」健康度**：定期评估团队产出物的语言多样性指标。如果所有报告、邮件、文档都呈现出同质的「AI 风格」，就需要有意识地引入多样化表达。
+
+4. **在 AI 治理框架中纳入反向对齐的监测指标**：除了传统的 AI 安全指标（越狱成功率、有害内容率等），还应增加「人类行为变化指标」（如批判性思维评分、独立决策率等），并设立周期性的人类认知影响评估。
+
+5. **培养 AI 素养中的「反向意识」**：在教育场景中，不仅要教学生如何使用 AI，还要教他们识别 AI 对自身思维模式的潜在影响。核心素养不是「更好地使用 AI」，而是「在使用 AI 时保持自主性」。
+
+## 相关实体
+
+- [AI 对齐争议 2026](ch04/069-ai.md)
+- [注意力崩溃与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
+- [AI 交互卫生规范](ch04/069-ai.md)
+- [Claude Code 系统工程指南](ch03/075-claude-code.md)
+- [禁止开源 AI 是个错误](ch04/069-ai.md)
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/human-aligning-to-machine-reverse-alignment-2026.md)
+
+---
+
+## Ch20.008 Token 经济学与 AI 效率
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/token-economics-ai-efficiency.md`
 
@@ -1406,7 +1509,7 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 
 ## 相关主题
 - [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理优化是 Token 效率的工程基础
-- [Harness Engineering Long Term Agent Tasks](ch05/061-harness-engineering.md) — Harness Engineering 让 AI 产出可预期、可衡量、可持续
+- [Harness Engineering Long Term Agent Tasks](ch05/085-harness.md) — Harness Engineering 让 AI 产出可预期、可衡量、可持续
 - [Context Window Management](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md) — 上下文管理影响 Token 消耗质量
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tencent-token-economics-ai-productivity.md)
 
@@ -1414,11 +1517,11 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 - [Improving token efficiency in GitHub Agentic Workflows](ch03/045-agent.md)
 - [Token Efficiency](ch03/045-agent.md)
 - [Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践](ch03/045-agent.md)
-- [柚漫剧 AI 全流程提效拆解](ch04/277-ai.md)
+- [柚漫剧 AI 全流程提效拆解](ch04/069-ai.md)
 
 ---
 
-## Ch20.008 Nearly every enterprise is investing in AI, but only 5% say their data is ready
+## Ch20.009 Nearly every enterprise is investing in AI, but only 5% say their data is ready
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/enterprise-ai-investment-data-readiness-cio.md`
 
@@ -1483,7 +1586,7 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 
 ---
 
-## Ch20.009 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
+## Ch20.010 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/让ai成为真正的社会生产力跨越token效率门槛走向ai普惠.md`
 
@@ -1514,17 +1617,17 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 **对个人AI素养的建议**
 文章特别指出，提升Token效率还有一个同等重要的前提：使用者的AI素养。模型路由可以由产品侧的Harness Engineering支撑，但任务分级需要用户自己的判断力——哪些任务该交给哪一档模型，需要用户建立对模型能力的理解。此外，上下文信息的管理也直接影响Token消耗：只提供与当前任务相关的上下文，还是让模型自己在系统中东拼西凑，不仅影响产出质量，还非常影响积分消耗 。
 ## 相关实体
-- [企微的这些新功能补齐了Ai在你公司的最后一公里](ch04/277-ai.md)
-- [Token Economics Ai Efficiency](ch04/277-ai.md)
+- [企微的这些新功能补齐了Ai在你公司的最后一公里](ch04/069-ai.md)
+- [Token Economics Ai Efficiency](ch04/069-ai.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](ch03/045-agent.md)
-- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/987-chatgpt.md)
+- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/667-chatgpt.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/让ai成为真正的社会生产力跨越token效率门槛走向ai普惠.md)
 
 ---
 
-## Ch20.010 AI 生产力悖论：你变快了，公司没有
+## Ch20.011 AI 生产力悖论：你变快了，公司没有
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/ai-productivity-paradox-cost-shifting-poischeme.md`
 
@@ -1602,7 +1705,7 @@ AI 工具打破了这一契约：
 
 ## 相关实体
 
-- [腾讯 Token 经济学](ch04/277-ai.md) — AI 工具的成本-效率分析
+- [腾讯 Token 经济学](ch04/069-ai.md) — AI 工具的成本-效率分析
 - [GitHub Agentic Token 效率](ch03/045-agent.md) — Agent 在代码审查场景的效率优化
 - [Greptile TREX](https://github.com/QianJinGuo/wiki/blob/main/entities/greptile-trex-code-execution-artifact-generation.md) — 代码审查中"可验证证据"的工程实践
 - [Claude Code 大型代码库 Harness](ch03/075-claude-code.md) — AI 辅助开发的工具配置实践
@@ -1611,7 +1714,7 @@ AI 工具打破了这一契约：
 
 ---
 
-## Ch20.011 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
+## Ch20.012 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/tencent-token-economics-ai-productivity.md`
 
@@ -1694,12 +1797,12 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 - 模型路由
 - AI 定价策略
-- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/593-karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 - [Hermes Agent 自进化机制](ch03/045-agent.md)
 
 ---
 
-## Ch20.012 Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path
+## Ch20.013 Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/workday-ai-inference-guardrails.md`
 
@@ -1760,7 +1863,7 @@ This is fundamentally different from general AI applications (chatbots, content 
 
 ---
 
-## Ch20.013 Nemotron 3.5 Content Safety
+## Ch20.014 Nemotron 3.5 Content Safety
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/nemotron-3-5-content-safety.md`
 
@@ -1830,18 +1933,18 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 - 发布日期：2026-06-04
 - 部署平台：Hugging Face + NVIDIA NIM
 ## 相关实体
-- [Nvidia Nemotron 3 Agents Rag Voice Safety](ch01/309-rag.md)
+- [Nvidia Nemotron 3 Agents Rag Voice Safety](ch01/1019-rag.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch03/045-agent.md)
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/363-nvidia-secure-local-agent-nemoclaw-openclaw.md)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md)
 - [Tokenspeed Agentic Inference Engine](ch04/587-tokenspeed-agentic-inference-engine.md)
 
-- [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](ch04/277-ai.md)
+- [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](ch04/069-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 ---
 
-## Ch20.014 Reinforcement learning towards broadly and persistently beneficial models
+## Ch20.015 Reinforcement learning towards broadly and persistently beneficial models
 
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/openai-beneficial-rl-broadly-persistently.md`
 
@@ -1930,7 +2033,7 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 
 ---
 
-## Ch20.015 Anthropic NLAs — 自然语言自动编码器
+## Ch20.016 Anthropic NLAs — 自然语言自动编码器
 
 > 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/anthropic-nla-natural-language-autoencoders.md`
 
@@ -2042,7 +2145,7 @@ SAE 解决了"激活值太密集，需要稀疏分解"的问题，Attribution Gr
 
 ---
 
-## Ch20.016 Dario Amodei 2026 Policy on the AI Exponential
+## Ch20.017 Dario Amodei 2026 Policy on the AI Exponential
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 18.0KB | `entities/dario-amodei-policy-ai-exponential-2026.md`
 
@@ -2207,14 +2310,14 @@ Amodei 的"a country of 100M geniuses"类比将 AI 地缘竞争框架从"技术�
 **相关实体**：
 - [Youre Building Agent Security In The Wrong Order](ch03/045-agent.md) — AI 公司政策参与的结构性困境
 - [Claude Opus 48 The System Card B8460F](ch01/216-0.md) — Anthropic 前沿模型的安全评估方法
-- [Dario Amodei Policy Ai Exponential Time Mismatch](ch04/277-ai.md) — 同源姊妹篇：聚焦 Treebeard 时间错配与四大政策原则的深度解读
+- [Dario Amodei Policy Ai Exponential Time Mismatch](ch04/069-ai.md) — 同源姊妹篇：聚焦 Treebeard 时间错配与四大政策原则的深度解读
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) — AI 安全架构的政策维度
 - [Ai R And D Bottleneck Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-r-and-d-bottleneck-shift.md) — AI 发展对 R&D 组织的重构效应
 - [Enterprise Ai Adoption Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption-patterns.md) — 企业 AI 采纳的宏观政策背景
 
 ---
 
-## Ch20.017 Dario Amodei: AI 指数发展与政策制定的时序鸿沟
+## Ch20.018 Dario Amodei: AI 指数发展与政策制定的时序鸿沟
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 14.7KB | `entities/dario-amodei-policy-ai-exponential-time-mismatch.md`
 
@@ -2360,13 +2463,13 @@ Amodei 政策对 AI 从业者的启示：
 - **预期 2026-2028**：如 Powerful AI 出现，政策制定者将被迫「**应急式立法**」——这正是 Amodei 警告要避免的
 ## 相关实体
 
-- [5 ways to curb ai sprawl without stifling innovation](ch04/277-ai.md)
+- [5 ways to curb ai sprawl without stifling innovation](ch04/069-ai.md)
 - [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](ch01/216-0.md)
-- [dario amodei 2026 policy on the ai exponential](ch04/277-ai.md)
+- [dario amodei 2026 policy on the ai exponential](ch04/069-ai.md)
 
 ---
 
-## Ch20.018 5 Ways to Curb AI Sprawl Without Stifling Innovation
+## Ch20.019 5 Ways to Curb AI Sprawl Without Stifling Innovation
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 11.3KB | `entities/5-ways-to-curb-ai-sprawl-without-stifling-innovation.md`
 
@@ -2422,7 +2525,7 @@ Drumgoole 表示："从传统角度真正管理好风险的组织，可能恰恰
 ### 3. 将有效实践正式化
 员工现在可以在几天内构建有用的工具。将这些转化为企业资产需要结构化的 intake 流程，评估已创建的内容并确定应该扩展什么。
 
-组织需要一种方式将员工构建的工具带入管理环境，定义所有权、可审计性和治理。参见：[Claude Code 治理：软规则与硬约束](ch04/277-ai.md)
+组织需要一种方式将员工构建的工具带入管理环境，定义所有权、可审计性和治理。参见：[Claude Code 治理：软规则与硬约束](ch04/069-ai.md)
 
 ### 4. 为持续创建构建基础设施
 AI sprawl 反映了一个更深层次的转变：软件不再只由 IT 构建。
@@ -2432,7 +2535,7 @@ AI sprawl 反映了一个更深层次的转变：软件不再只由 IT 构建。
 ### 5. 将治理扩展到供应商和第三方
 越来越多的 AI 根本不是内部构建的，而是通过供应商、合作伙伴和现有软件提供商引入的。
 
-许多组织通过他们已经信任的工具使用 AI（这些工具处理企业数据），但并未意识到。领先组织正在通过在 RFP 中添加 AI 特定问题、更新合同以解决数据使用和模型行为问题，使第三方期望与内部 AI 政策保持一致来加强供应商监督。参见：[AI 工具中毒：企业 Agent 安全的一大缺陷](ch04/277-ai.md)
+许多组织通过他们已经信任的工具使用 AI（这些工具处理企业数据），但并未意识到。领先组织正在通过在 RFP 中添加 AI 特定问题、更新合同以解决数据使用和模型行为问题，使第三方期望与内部 AI 政策保持一致来加强供应商监督。参见：[AI 工具中毒：企业 Agent 安全的一大缺陷](ch04/069-ai.md)
 
 ## 关键结论
 AI sprawl 不再是未来风险——它已经是企业的一部分，而且越来越多地成为工作方式的组成部分。对 CIO 来说，挑战不是阻止它，而是塑造它，建立足够的结构来管理风险，同时不减缓使 AI 有价值的创新。

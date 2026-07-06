@@ -79,7 +79,7 @@ Amazon Bedrock Data Automation (BDA) 的 **Blueprint Instruction Optimization** 
 
 ## 与现有 wiki 实体的关联
 
-- [process-financial-documents-using-amazon-bedrock-data-automa](ch11/253-bedrock.md) — 同 BDA 平台，重点是金融文档的实际提取案例
+- [process-financial-documents-using-amazon-bedrock-data-automa](ch11/251-bedrock.md) — 同 BDA 平台，重点是金融文档的实际提取案例
 - [automate-schema-generation-for-intelligent-document-processing](ch11/161-automate-schema-generation-for-intelligent-document-processi.md) — schema 自动生成（与 blueprint 优化互补：先生成 schema，再优化 instruction）
 - [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](ch03/045-agent.md) — Bedrock AgentCore 平台深度（非 BDA，但同 Bedrock 体系）
 
@@ -119,7 +119,7 @@ Amazon Bedrock Data Automation (BDA) 的 **Blueprint Instruction Optimization** 
 
 4. **优化完成后务必用 holdout set 验证** — 文章示例中 aggregate exact match 仅从 90% 提升到 92%，如果不用 holdout set 验证，容易将偶然提升误判为真实效果。
 
-5. **与 [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/253-bedrock.md) 联合使用** — 后者侧重金融文档的端到端提取场景，前者侧重 blueprint instruction 的自动化优化，两者构成"schema 设计 → instruction 优化 → 生产部署"的完整 IDP pipeline。
+5. **与 [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/251-bedrock.md) 联合使用** — 后者侧重金融文档的端到端提取场景，前者侧重 blueprint instruction 的自动化优化，两者构成"schema 设计 → instruction 优化 → 生产部署"的完整 IDP pipeline。
 
 6. **Batch 场景下注意 holdout 验证循环** — 如果优化后发现精度未达预期，应根据失败 case 补充新 example（覆盖新的变体），再次触发优化，形成 data-driven 的迭代闭环。
 

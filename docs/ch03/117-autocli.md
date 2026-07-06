@@ -57,7 +57,7 @@ autocli-skill（591 stars）作为 AutoCLI 的 AI Agent 接口层，其设计目
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md) — OpenCLI / CLI-Anything / AutoCLI / AgentBrowser 四项目对比
 
 ## 相关实体
-- [GBrain](ch04/277-ai.md)
+- [GBrain](ch04/069-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

@@ -84,7 +84,7 @@ Let’s see how AgentCore gets you both.
 **Any agent.** You can host Claude Code, Codex, Kiro, OpenCode, Cursor CLI, Gemini CLI, your own harness, and you can package anything into a container or a .zip. Push the container to Amazon Elastic Container Registry (Amazon ECR) or zip-deploy a [Python](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-toolkit.html>) or [Node.js](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-code-deploy-node.html>) project directly. You can bring your own dependencies in the image: language runtimes, build tools, git, system package
 
 ## 相关实体
-- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch04/277-ai.md)
+- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch04/069-ai.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/045-agent.md)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/045-agent.md)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch01/216-0.md)

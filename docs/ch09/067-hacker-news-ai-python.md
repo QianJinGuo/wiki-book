@@ -36,9 +36,9 @@ Python 不会消失，但它正在从一门"人人都该学的编程语言"转�
 Doocs 微信号整理：https://mp.weixin.qq.com/s/Uirhm4KubbKmhF0CQGteVQ
 
 ## 相关实体
-- [Pi Openclaw Coding Harness](ch11/215-openclaw.md)
-- [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/277-ai.md)
-- [Ai Era Git Version Control Agentic Coding Practices](ch04/277-ai.md)
+- [Pi Openclaw Coding Harness](ch05/085-harness.md)
+- [Ai Production Development Workflow Openspec Superpowers Gstack](ch04/069-ai.md)
+- [Ai Era Git Version Control Agentic Coding Practices](ch04/069-ai.md)
 - [Alphaevolve Deepmind Discovery Agent](ch03/045-agent.md)
 - [Ai Coding Guide Tmall Deep Dive](ch09/017-ai-coding-guide-tmall-deep-dive.md)
 

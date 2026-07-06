@@ -2,7 +2,7 @@
 
 ## Ch01.183 一文了解｜SkillScan 智能体技能安全扫描最佳实践
 
-> 📊 Level ⭐ | 2.7KB | `entities/一文了解skillscan-智能体技能安全扫描最佳实践-1.md`
+> 📊 Level ⭐ | 2.7KB | `entities/一文了解skillscan-智能体技能安全扫描最佳实践.md`
 
 # 一文了解｜SkillScan 智能体技能安全扫描最佳实践
 

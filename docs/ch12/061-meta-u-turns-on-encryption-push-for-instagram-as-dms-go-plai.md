@@ -61,11 +61,11 @@ Meta 发言人建议用户转向 WhatsApp（同样由 Meta 拥有但保留 E2EE�
 Meta 将用户引向 WhatsApp，但其整体商业模式持续向 AI 监控和广告定向演进。WhatsApp 虽保留 E2EE，但与 Meta AI 的交互已被用于广告定向，且 WhatsApp 的元数据收集和其他数据实践与 Instagram 存在整合可能。
 
 ## 相关实体
-- [Weve Been Here Before Ai Vulnerability Research](ch04/277-ai.md)
+- [Weve Been Here Before Ai Vulnerability Research](ch04/069-ai.md)
 - [Microsoft Zero Days Researcher Disgruntled](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled.md)
-- [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](ch01/309-rag.md)
-- [Us Bank Aws Ai Migration](ch04/277-ai.md)
-- [Deerflow Hermes Openclaw Comparison](ch11/215-openclaw.md)
+- [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](ch01/1019-rag.md)
+- [Us Bank Aws Ai Migration](ch04/069-ai.md)
+- [Deerflow Hermes Openclaw Comparison](ch11/213-openclaw.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/5235705.md)

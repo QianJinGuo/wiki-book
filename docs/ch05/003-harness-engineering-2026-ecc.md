@@ -6,7 +6,7 @@
 
 # Harness Engineering 综合论述：为什么 2026 年真正重要的是它
 
-2026 年是 Harness Engineering 概念从「Claude Code 内部实践」走向「全行业共识」的关键一年。Rahul Patil（Google）和 AI 技术立文分别在 5-6 月发布了两篇系统化论述，把 Harness Engineering 从「Anthropic 一家之言」推到了「2026 必备工程范式」的位置。 本文综合两文，结合 [Agent Harness 架构](ch03/045-agent.md) 给出 2026 视角下的 Harness Engineering 完整图景。
+2026 年是 Harness Engineering 概念从「Claude Code 内部实践」走向「全行业共识」的关键一年。Rahul Patil（Google）和 AI 技术立文分别在 5-6 月发布了两篇系统化论述，把 Harness Engineering 从「Anthropic 一家之言」推到了「2026 必备工程范式」的位置。 本文综合两文，结合 [Agent Harness 架构](ch05/085-harness.md) 给出 2026 视角下的 Harness Engineering 完整图景。
 
 ---
 
@@ -107,7 +107,7 @@ Rahul 的论述核心贡献在于**把「概率性工程的最佳实践」系统
 
 ### 洞察 3：LLM 作为新运行时的工程范式重塑
 
-Karpathy 的「Software 3.0」类比在 2026 年已经不只是隐喻，而是被工程实践充分验证的现实。当 LLM 成为新的运行时，harness 就自然成为这个运行时的「操作系统 + 标准库」。这个比喻的深层含义是：**harness 的设计目标不再是「让模型输出正确」，而是「让模型在一个安全的、可观测的、有限资源的执行环境中持续运行」**。这和操作系统内核的设计哲学高度一致——内核不保证应用程序的正确性，而是保证应用程序在有限资源下的公平调度和故障隔离。 [上下文管理](ch03/045-agent.md) 的本质就是 memory management，verifier 的本质就是 system call permission checking。
+Karpathy 的「Software 3.0」类比在 2026 年已经不只是隐喻，而是被工程实践充分验证的现实。当 LLM 成为新的运行时，harness 就自然成为这个运行时的「操作系统 + 标准库」。这个比喻的深层含义是：**harness 的设计目标不再是「让模型输出正确」，而是「让模型在一个安全的、可观测的、有限资源的执行环境中持续运行」**。这和操作系统内核的设计哲学高度一致——内核不保证应用程序的正确性，而是保证应用程序在有限资源下的公平调度和故障隔离。 [上下文管理](ch05/085-harness.md) 的本质就是 memory management，verifier 的本质就是 system call permission checking。
 
 ### 洞察 4：多层 Verifier 架构的必然性
 
@@ -115,7 +115,7 @@ Karpathy 的「Software 3.0」类比在 2026 年已经不只是隐喻，而是�
 
 ### 洞察 5：Context 稀缺性催生的「记忆分层」工程哲学
 
-当 context window 成为稀缺资源，harness 必须内建「记忆分层」机制——working set（热数据）、compressed（温数据）、discarded（冷数据）。这个机制的工程哲学意义在于：**它把 LLM 的「上下文理解能力」从隐性的模型能力变成了显性的工程可控性**。传统软件工程的 memory management 是显式设计的，harness工程的 context 管理也应该是显式设计的。 [Agent Harness 上下文管理](ch03/045-agent.md) 的工作集视角为这个工程哲学提供了具体实现路径。
+当 context window 成为稀缺资源，harness 必须内建「记忆分层」机制——working set（热数据）、compressed（温数据）、discarded（冷数据）。这个机制的工程哲学意义在于：**它把 LLM 的「上下文理解能力」从隐性的模型能力变成了显性的工程可控性**。传统软件工程的 memory management 是显式设计的，harness工程的 context 管理也应该是显式设计的。 [Agent Harness 上下文管理](ch05/085-harness.md) 的工作集视角为这个工程哲学提供了具体实现路径。
 
 ## 实践启示
 
@@ -142,7 +142,7 @@ LLM context window 是有限的——即使 Claude 200K 也有限。2026 harness
 - 哪些信息压缩（autoCompact 策略）
 - 哪些信息丢弃（decay 策略）
 
-参考 [Agent Harness 上下文管理](ch03/045-agent.md) 的工作集视角。
+参考 [Agent Harness 上下文管理](ch05/085-harness.md) 的工作集视角。
 
 ### 重点 3：建立 harness 自身的可观测性
 
@@ -344,7 +344,7 @@ iterative-retrieval
 ## 相关实体
 
 - [loop engineering: 把反馈循环放进工程现场](ch05/006-loop-engineering.md)
-- [Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环](ch04/255-skill.md)
+- [Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环](ch04/258-skill.md)
 → [第 1 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-2026-rahul-rauhul.md) · [第 2 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-everything-2026-ai-tech-article.md) · [第 3 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ecc-harness-os-everything-claude-code-vibecoder-2026-06-16.md) · [第 4 篇原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-wukong-ai-recruitment-dingtalk.md)​
 
 ## 第 4 来源：钉钉悟空 AI 招聘 Agent 实战（v×c=64）

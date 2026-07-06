@@ -2,7 +2,7 @@
 
 ## Ch05.080 规格驱动开发与 Harness
 
-> 📊 Level ⭐⭐ | 2.4KB | `entities/spec-driven-development-harness.md`
+> 📊 Level ⭐⭐ | 3.6KB | `entities/spec-driven-development-harness.md`
 
 # 规格驱动开发与 Harness
 
@@ -28,12 +28,25 @@ Vibe Coding 的不确定性来源于意图到代码的"单步映射"。Spec-Driv
 2. **三层角色分步实施**：先实现规格解析层（让 Agent 能读懂结构化 spec），再添加验证反馈层（自动比对结果），最后才需要完整的任务编排层。
 3. **从高不确定性场景切入**：Spec-Driven 比 Vibe Coding 更适合需求明确但实现复杂的任务。
 
-## 关联
+## 深度分析
 
-- [Harness 范式](ch05/009-harness.md)
-- [Claude Code Loop Engineering](ch03/074-claude-code.md)
+本页作为知识图谱锚点，连接了以下关键实体：[场景营销前端 AI Coding — 从问题到方案](ch04/069-ai.md)。 相关主题通过 [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md) 延伸。
 
-> 本页为概念锚点页（stub），用于修复知识图谱断链。后续将在相关实体入库时补充溯源引用与深度内容。
+> 本页内容将在入库相关溯源素材后进一步深化。
+
+## 实践启示
+
+1. 本领域系统性内容尚待采集——当前知识库在此方向的覆盖密度偏低
+2. 建议优先采集 规格驱动开发与 Harness 相关的一手来源（论文/官方文档/工程博客）
+3. 通过交叉链接密度评估本领域的知识图谱成熟度
+
+## 相关实体
+
+- [场景营销前端 AI Coding — 从问题到方案](ch04/069-ai.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/045-agent.md)
+- [AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch04/069-ai.md)
+- [Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch04/069-ai.md)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch04/069-ai.md)
 
 ---
 

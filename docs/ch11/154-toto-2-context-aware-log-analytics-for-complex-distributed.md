@@ -55,7 +55,7 @@ Toto 2.0包含连续分块掩码（CPM）优化，允许模型在一次并行传
 - [Nvidia Agentic Systems Extreme Co Design](ch03/045-agent.md)
 - [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
-- [Task Queue Priority And Fairness](ch04/277-ai.md)
+- [Task Queue Priority And Fairness](ch04/069-ai.md)
 - [Task Queue Priority And Fairness Your Task Queue Your Way](ch11/233-task-queue-priority-and-fairness-your-task-queue-your-way.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/toto-2-context-aware-log-analytics-for-complex-distributed-systems.md)
