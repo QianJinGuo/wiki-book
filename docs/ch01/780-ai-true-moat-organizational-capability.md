@@ -57,11 +57,11 @@ OpenAI不是"更努力的Google"，它是一种全新的组织物种。在开始
 **对创业者：护城河要从第一天就建在组织上，而不是产品上**
 产品可以快速被抄袭，组织能力的构建却需要时间。如果你的竞争优势最终是产品feature而非组织文化，当大厂入局时你会发现没有壁垒。真正的护城河是：你能招聘到什么样的人，以及你能让他们以什么样的方式协作。
 ## 相关实体
-- [Ai短漫剧的Netflix来了恒星Ai推出全球首个影视级Ai Agentstarfilm打造Ai短漫剧制作的超级梦工厂](https://github.com/QianJinGuo/wiki/blob/main/entities/ai短漫剧的netflix来了恒星ai推出全球首个影视级ai-agentstarfilm打造ai短漫剧制作的超级梦工厂.md)
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess 1](https://github.com/QianJinGuo/wiki/blob/main/entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess-1.md)
-- [Llm Rl中的熵 Part 1 熵的调控](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-rl中的熵-part-1-熵的调控.md)
-- [Anthropic S Bug Hunting Mythos Was Greatest Marketing Stunt Ever Says Curl Creat](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt-ever-says-curl-creat.md)
-- [第一批Ai原生本科生要毕业了](https://github.com/QianJinGuo/wiki/blob/main/entities/第一批ai原生本科生要毕业了.md)
+- [Ai短漫剧的Netflix来了恒星Ai推出全球首个影视级Ai Agentstarfilm打造Ai短漫剧制作的超级梦工厂](../ch04/030-ai-agent.md)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](../ch12/070-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.md)
+- [Llm Rl中的熵 Part 1 熵的调控](ch01/580-llm.md)
+- [Anthropic S Bug Hunting Mythos Was Greatest Marketing Stunt Ever Says Curl Creat](../ch12/105-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.md)
+- [第一批Ai原生本科生要毕业了](../ch04/229-ai.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-true-moat-not-llm-but-organization.md)
 

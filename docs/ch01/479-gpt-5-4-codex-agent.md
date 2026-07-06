@@ -62,7 +62,7 @@ Nathan 的预言很值得玩味：
 
 > "I expect them to eventually look like Slack (when multiple agents need to talk to each other, under my watch)."
 
-含义：未来 agent 工具不再是"我 → 单个 agent"的对话界面，而是"我 → 多个 agent 在频道里互相沟通"的协作界面。用户从"指挥单个 agent"变成"管理 agent 团队"——这与 [Karpathy 谈的 agentic engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md) 范式转变一致：从 vibe coding（人写代码）→ agentic engineering（人协调 agent）。
+含义：未来 agent 工具不再是"我 → 单个 agent"的对话界面，而是"我 → 多个 agent 在频道里互相沟通"的协作界面。用户从"指挥单个 agent"变成"管理 agent 团队"——这与 [Karpathy 谈的 agentic engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.md) 范式转变一致：从 vibe coding（人写代码）→ agentic engineering（人协调 agent）。
 
 ### 五、共同的"轻微遗忘"问题
 
@@ -84,8 +84,8 @@ Nathan 报告了一个跨模型的共同问题：
 
 ## 相关实体
 
-- [Yann Dubois Openai Post Training Matt Turck Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-matt-turck-interview.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [Yann Dubois Openai Post Training Matt Turck Interview](ch01/435-openai.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - **Agent 评估方法**
 - **Reasoning Efficiency**

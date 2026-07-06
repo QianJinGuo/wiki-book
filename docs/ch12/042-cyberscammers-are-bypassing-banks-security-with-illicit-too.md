@@ -44,9 +44,9 @@ Recent [analysis](https://www.icij.org/investigations/coin-laundry/cryptocurrenc
 
 ## 相关实体
 - [Cyberscammers Are Bypassing Banks Security With Illicit Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/Cyberscammers-are-bypassing-banks-security-with-illicit-tool.md)
-- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](https://github.com/QianJinGuo/wiki/blob/main/entities/llmreaper-dom-based-ai-conversation-exfiltration-via-browser.md)
-- [Ai_Threat_Readiness_Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/ai_threat_readiness_framework.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
+- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.md)
+- [Ai_Threat_Readiness_Framework](../ch04/229-ai.md)
+- [Npm Supply Chain Compromise Postmortem](../ch04/229-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cyberscammers-bypassing-bank-telegram.md)

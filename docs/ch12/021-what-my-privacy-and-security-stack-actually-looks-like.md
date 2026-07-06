@@ -113,13 +113,13 @@ Yael 的威胁情报来源形成了一个分层结构：
 
 ## 相关实体
 
-- [Karpathy Vibe Coding 访谈](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding 完整版](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [Claude Code 源码机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Agent 原理架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
+- [Karpathy Vibe Coding 访谈](../ch03/045-agent.md)
+- [Karpathy Vibe Coding 完整版](../ch04/134-karpathy-vibe-coding-agentic-engineering.md)
+- [Claude Code 源码机制](../ch03/075-claude-code.md)
+- [Agent 原理架构与工程实践](../ch03/045-agent.md)
 - [多智能体交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
-- [OpenClaw 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [LLMReaper Browser Extension Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md) — AI 对话的扩展窃取风险
+- [OpenClaw 完整指南](../ch11/213-openclaw.md)
+- [LLMReaper Browser Extension Attack](ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.md) — AI 对话的扩展窃取风险
 
 > [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-my-privacy-and-security-stack-actually-looks-like.md)
 

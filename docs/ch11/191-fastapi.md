@@ -13,15 +13,15 @@ FastAPI生产级认证+限流实战；零停机部署方案；一套代码覆盖
 - **评分**: score=81
 
 ## 与现有知识库内容的关联
-- [Claude Managed Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents.md) — 托管 Harness 平台
-- [Agent/Skills/Teams 架构演进与选型](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skills-teams-architecture-evolution-selection-guide.md) — Anthropic Skills 认知一致性机制
+- [Claude Managed Agents](../ch04/485-claude-managed-agents.md) — 托管 Harness 平台
+- [Agent/Skills/Teams 架构演进与选型](../ch04/233-agent-skills-teams.md) — Anthropic Skills 认知一致性机制
 - [Skill 形式化理论](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) — Skill 的六元组定义与 DAG 步骤计划
 
 ## 原始存档
 
 ## 相关实体
 
-- [fastapi上线实战：认证、限流、零停机，一套代码搞定](https://github.com/QianJinGuo/wiki/blob/main/entities/fastapi上线实战认证限流零停机一套代码搞定.md)
+- [fastapi上线实战：认证、限流、零停机，一套代码搞定](ch11/191-fastapi.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi-auth-rate-limit-zero-downtime.md)
 
 ## 元数据

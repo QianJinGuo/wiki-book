@@ -146,11 +146,11 @@ Public benchmark 由于数据公开且分数透明，开源社区可以针对性
 - 对使用开源模型进行敏感任务的情况，建立更频繁的人工审核机制
 
 ## 相关实体
-- [Mollick Ai 32 Otters Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/mollick-ai-32-otters-benchmark.md)
-- [Some Ideas For What Comes Next May 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/some-ideas-for-what-comes-next-may-2026.md)
+- [Mollick Ai 32 Otters Benchmark](ch01/542-mollick-ai-32.md)
+- [Some Ideas For What Comes Next May 2026](ch01/1189-some-ideas-for-what-comes-next-may-2026-interconnects.md)
 - [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md)
-- [Langsmith Evaluation Concepts](https://github.com/QianJinGuo/wiki/blob/main/entities/langsmith-evaluation-concepts.md)
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch03/045-agent.md)
+- [Langsmith Evaluation Concepts](../ch03/126-langsmith-evaluation-concepts.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-far-behind-are-open-models-2026.md)
 - [nice：浙大提出的理论驱动型 llm 社会智能诊断基准](https://github.com/QianJinGuo/wiki/blob/main/entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md)

@@ -314,14 +314,14 @@ final_answer_mismatch
 
 ## 相关实体
 
-- [Hermes Agent Operator](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-operator上手-把一个-agent-养成可运营系统-若飞.md) — "模型侧自改进"路径（定时任务把对话总结成 Skill），与本文"系统侧自改进"互补
-- [Agent Evolution 四阶段六维](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md) — 第四阶段"自进化 Agent"包含本文的系统侧自改进机制
+- [Hermes Agent Operator](../ch03/090-hermes-agent.md) — "模型侧自改进"路径（定时任务把对话总结成 Skill），与本文"系统侧自改进"互补
+- [Agent Evolution 四阶段六维](../ch03/045-agent.md) — 第四阶段"自进化 Agent"包含本文的系统侧自改进机制
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 第五层"评估与观测"对应本文的 trace 分析
-- [Agent YAML 评测](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation.md) — YAML-driven evaluation 是 Evaluator 工程化的一种
-- [Claude Code 深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md) — Claude Code 的评估观测层工程实践
-- [深入理解 Claude Code Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md) — Plan Mode + Tasks 系统的"避免问题复发"机制
-- [OpenClaw 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md) — 开源 Agent 的故障处理与自我恢复机制
-- [Agent 记忆系统实践](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md) — Agent Overview 是 Memory 模块的诊断侧应用- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](https://github.com/QianJinGuo/wiki/blob/main/entities/langchain-100x-cheaper-trace-judge-fireworks.md)
+- [Agent YAML 评测](../ch03/045-agent.md) — YAML-driven evaluation 是 Evaluator 工程化的一种
+- [Claude Code 深度解析](../ch05/060-claude-code-harness.md) — Claude Code 的评估观测层工程实践
+- [深入理解 Claude Code Harness](../ch05/038-agent-harness.md) — Plan Mode + Tasks 系统的"避免问题复发"机制
+- [OpenClaw 完整指南](../ch11/213-openclaw.md) — 开源 Agent 的故障处理与自我恢复机制
+- [Agent 记忆系统实践](../ch03/045-agent.md) — Agent Overview 是 Memory 模块的诊断侧应用- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](ch04/229-ai.md)
 
 ---
 

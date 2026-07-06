@@ -64,11 +64,11 @@ An organizer searches. The dropdown renders the title. The iframe loads silently
 _De
 
 ## 相关实体
-- [Tomtunguz Com Software After Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/tomtunguz-com-software-after-ai.md)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](https://github.com/QianJinGuo/wiki/blob/main/entities/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
+- [Tomtunguz Com Software After Ai](ch01/709-software-after-ai.md)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch04/229-ai.md)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/152-amazon-bedrock.md)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/202-amazon-quick.md)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/499-amazon-bedrock-agentcore.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
 

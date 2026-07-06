@@ -76,7 +76,7 @@ Panther 是 Databricks 第三个安全相关收购：
 本实体聚焦 AI-native 安全运营的架构和 Agentic SOC 工作流设计，而非通用安全防御策略。
 
 ## 相关主题
-- [Agent Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Agentic 工作流的上下文管理
+- [Agent Harness Context Management](../ch05/038-agent-harness.md) — Agentic 工作流的上下文管理
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化框架设计方法论
 
 ---

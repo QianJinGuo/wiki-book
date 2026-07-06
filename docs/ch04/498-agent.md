@@ -37,11 +37,11 @@ Agent Loop 的核心实现逻辑抽象后其实不到 20 行代码：
 5. **先建评测体系再优化 Agent**：区分 Pass@k（探索能力上限）和 Pass^k（上线回归），按确定性选择评分器（代码 > 模型 > 人工）
 
 ## 相关实体
-- [Agent Principle Architecture Engineering Practice](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-principle-architecture-engineering-practice.md)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md)
-- [Factory Mission Multi Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/factory-mission-multi-agent-architecture.md)
-- [Harness Engineering Long Term Agent Tasks](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-long-term-agent-tasks.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
+- [Agent Principle Architecture Engineering Practice](ch04/326-agent-principle-architecture-engineering-practice.md)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/092-harness-engineering.md)
+- [Factory Mission Multi Agent Architecture](../ch01/1127-factory-mission-multi-agent-architecture.md)
+- [Harness Engineering Long Term Agent Tasks](../ch05/092-harness-engineering.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-engineering-principles-architecture-practice.md)

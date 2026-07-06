@@ -18,10 +18,10 @@
 - **VOC 管线** — 客户声音趋势聚合分析 — **数小时人工 → 数分钟自动报告**
 
 ## 相关实体
-- [Multilingual Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/multilingual-ai.md)
-- [Eagle 3 Speculative Decoding Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/eagle-3-speculative-decoding-optimization.md)
-- [Didi Eagle 3 Speculative Decoding Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/didi-eagle-3-speculative-decoding-agents.md)
-- [Be More Expressive To Close More Sales](https://github.com/QianJinGuo/wiki/blob/main/entities/be-more-expressive-to-close-more-sales.md)
+- [Multilingual Ai](../ch04/229-ai.md)
+- [Eagle 3 Speculative Decoding Optimization](ch01/1036-spec.md)
+- [Didi Eagle 3 Speculative Decoding Agents](../ch09/047-coding-agent.md)
+- [Be More Expressive To Close More Sales](ch01/074-be-more-expressive-to-close-more-sales.md)
 - [Datacomp For Language Models](https://github.com/QianJinGuo/wiki/blob/main/entities/datacomp-for-language-models.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)

@@ -49,7 +49,7 @@
 
 ## 深度分析
 
-1. **MTP head 一体两用是训练-推理协同设计的典范** — 单一 Multi-Token Prediction head 同时服务预训练 auxiliary objective 和 speculative decoding draft model，避免了独立 draft model 的训练/维护成本。 这与 [Deepseek Moe Parallel Strategy](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-moe-parallel-strategy.md) 中 DeepSeek 对 MoE 通信层面的深度定制思路一致——都是通过工程化设计最大化已有资源的利用率，而非堆叠额外算力。
+1. **MTP head 一体两用是训练-推理协同设计的典范** — 单一 Multi-Token Prediction head 同时服务预训练 auxiliary objective 和 speculative decoding draft model，避免了独立 draft model 的训练/维护成本。 这与 [Deepseek Moe Parallel Strategy](ch01/1125-deepseek.md) 中 DeepSeek 对 MoE 通信层面的深度定制思路一致——都是通过工程化设计最大化已有资源的利用率，而非堆叠额外算力。
 
 2. **设计哲学从"性能优先"转向"部署成本优先"** — 技术报告明确以"inference efficiency on commodity GPUs"作为 ablation 硬约束，验证每个架构选择 。这代表一种务实的产品化思维：不在学术界刷榜benchmark，而在成本敏感的真实部署场景中寻找最优解。对比国内部分模型"性能优先"的设计哲学，Mellum 2 的路线更接近 DeepSeek 的工业导向。
 

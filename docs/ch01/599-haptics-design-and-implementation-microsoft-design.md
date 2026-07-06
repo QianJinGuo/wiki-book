@@ -117,7 +117,7 @@ InputHapticsManager.GetForCurrentThread().TryStopFeedback();
 
 - [Haptics Design Implementation Microsoft Windows11](https://github.com/QianJinGuo/wiki/blob/main/entities/haptics-design-implementation-microsoft-windows11.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [What Figma Made Visible](https://github.com/QianJinGuo/wiki/blob/main/entities/what-figma-made-visible.md)
+- [What Figma Made Visible](../ch03/018-what-figma-made-visible-component-model-bridging-design-and.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/haptics-design-implementation-microsoft-windows11.md)
 

@@ -56,14 +56,14 @@ Claude Code 的七大模块设计，本质上是在回答一个问题：**当 Ag
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-architecture-analysis.md)
 
 ## 相关实体
-- [Claude Code 设计原则与对照分析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-architecture-analysis.md)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-source-architecture.md)
+- [Claude Code 设计原则与对照分析](../ch03/075-claude-code.md)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.md)
 
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-12-rules-karpathy-extension.md)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.md)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/146-claude-code-1.md)
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
-- [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-kanban-deep-test.md)
+- [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch03/090-hermes-agent.md)
 
 ---
 

@@ -36,10 +36,10 @@ NEO-unify 架构的核心创新在于**移除了视觉编码器（VE）和变分
 
 ## 相关实体
 - [Sensnova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md)
-- [Loongsuite Genai Semconv Alibaba](https://github.com/QianJinGuo/wiki/blob/main/entities/loongsuite-genai-semconv-alibaba.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [Genesis Ai Gene 25 Embodied Foundation Model](https://github.com/QianJinGuo/wiki/blob/main/entities/genesis-ai-gene-25-embodied-foundation-model.md)
+- [Loongsuite Genai Semconv Alibaba](../ch04/420-loongsuite-genai.md)
+- [Harness Engineering Framework](../ch05/092-harness-engineering.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/380-aws-sagemaker-ai-agent.md)
+- [Genesis Ai Gene 25 Embodied Foundation Model](../ch04/229-ai.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sensnova-u1-sensetime.md)
 

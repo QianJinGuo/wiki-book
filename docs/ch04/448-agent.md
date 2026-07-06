@@ -47,11 +47,11 @@ Harness 在长任务里会撞上后端同样的问题：状态、队列、日志
 
 ## 关联阅读
 
-* [Agent Harness 上下文管理：聊天记录还是工作集](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
-* [Karpathy：Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
-* [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
-* [Subagents 详解：Claude Code 如何避免上下文污染](https://github.com/QianJinGuo/wiki/blob/main/entities/subagents-详解claude-code-如何避免上下文污染.md)
-* [从 30 分钟手搓 Agent 到 Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
+* [Agent Harness 上下文管理：聊天记录还是工作集](../ch05/038-agent-harness.md)
+* [Karpathy：Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
+* [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/009-harness.md)
+* [Subagents 详解：Claude Code 如何避免上下文污染](../ch03/075-claude-code.md)
+* [从 30 分钟手搓 Agent 到 Harness 成为新后端](../ch05/009-harness.md)
 
 ---
 

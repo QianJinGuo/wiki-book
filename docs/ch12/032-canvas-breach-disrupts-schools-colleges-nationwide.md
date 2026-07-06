@@ -11,11 +11,11 @@
 [![Image 3: Krebs on Security](https://krebsonsecurity.com/wp-content/uploads/2021/03/kos-27-03-2021.jpg)](https://krebsonsecurity.com/ "Krebs on Security")
 
 ## 相关实体
-- [Ath Agent Trust Handshake Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/ath-agent-trust-handshake-protocol.md)
-- [Aws Bedrock Agentcore Identity Security](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-identity-security.md)
-- [Github Investigating Teampcp Claimed 17Cc77](https://github.com/QianJinGuo/wiki/blob/main/entities/github-investigating-teampcp-claimed-17cc77.md)
-- [Ai Agents Inside Perimeter Hackernews](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
-- [Tsinghua Agent Security Fangcun](https://github.com/QianJinGuo/wiki/blob/main/entities/tsinghua-agent-security-fangcun.md)
+- [Ath Agent Trust Handshake Protocol](../ch03/045-agent.md)
+- [Aws Bedrock Agentcore Identity Security](../ch11/229-aws-bedrock-agentcore.md)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/811-github.md)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/030-ai-agent.md)
+- [Tsinghua Agent Security Fangcun](../ch03/045-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/canvas-breach-disrupts-schools-colleges-nationwide.md)
 

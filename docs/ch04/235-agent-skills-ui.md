@@ -120,11 +120,11 @@ Dashboard 作为输出端的意义被低估了。当前大多数 Agent 系统侧
 4. **Dashboard 是降低认知负荷的输出优化**：结果的可读性和决策效率直接相关。当 Agent 输出复杂数据时，优先考虑渲染成结构化 Dashboard（图表、指标卡、对比视图），而非依赖人类从文本中提取关系。
 5. **Skill 是 Agent 应用的基本原子**：Qoder 的设计暗示了一个趋势——未来的 Agent 应用将由大量 Skill 单元组成，每个 Skill 是一个「知识 + 脚本 + 界面」的微应用。这种设计让 Skill 可以跨 Agent 复用，也让 Agent 的能力边界通过 Skill 组合不断扩展。
 ## 相关实体
-- [Agent Skills Teams Architecture Evolution Selection Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skills-teams-architecture-evolution-selection-guide.md)
-- [Anthropic 14 Skill Patterns Best Practices](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-14-skill-patterns-best-practices.md)
-- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
-- [Agent Skills Comprehensive Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skills-comprehensive-survey.md)
-- [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-system-design-three-way-comparison.md)
+- [Agent Skills Teams Architecture Evolution Selection Guide](ch04/233-agent-skills-teams.md)
+- [Anthropic 14 Skill Patterns Best Practices](../ch01/371-anthropic-14-skill.md)
+- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](ch04/375-agent-skills.md)
+- [Agent Skills Comprehensive Survey](ch04/375-agent-skills.md)
+- [Skill System Design Three Way Comparison](ch04/262-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 
 ---

@@ -66,9 +66,9 @@ Memory 不只是存储，而是 Harness 里的一层控制面——解决"哪些
 7. 评估测 recall + 更新 + 拒答 + 遗忘 + 偏好漂移
 
 ## 关联实体
-- [Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system.md) — 本文的 memory 管理理念与 Hermes 实现直接对应
-- [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Memory 是 Harness 控制面的一层
-- [Claude Code Agent 工程化](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-engineering.md) — CLAUDE.md / AGENTS.md 工作区文件实践
+- [Hermes Agent 记忆系统](../ch03/090-hermes-agent.md) — 本文的 memory 管理理念与 Hermes 实现直接对应
+- [Agent Harness 上下文管理](../ch05/038-agent-harness.md) — Memory 是 Harness 控制面的一层
+- [Claude Code Agent 工程化](../ch03/067-claude-code-agent.md) — CLAUDE.md / AGENTS.md 工作区文件实践
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化控制面
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-memory-architecture-past-influence-future-ruofei.md)
 
@@ -145,26 +145,26 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 记住：Memory 系统早期，先做到"像工程系统一样能查账"，再追求"像人一样记忆"。
 
 ## 相关实体
-- [Agent Memory 架构本质](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)
-- [memory agent systems cobanov](https://github.com/QianJinGuo/wiki/blob/main/entities/memory-agent-systems-cobanov.md)
+- [Agent Memory 架构本质](ch04/387-perplexity-brain-self-improving-agent-memory-architecture.md)
+- [memory agent systems cobanov](ch04/525-memory-agent-systems-cobanov.md)
 
-- [AI Agent 记忆系统架构](https://github.com/QianJinGuo/wiki/blob/main/entities/how-ai-agent-memory-works.md)
-- [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
-- [ai agent memory systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
-- [你不知道的 Agent 原理架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-principle-architecture-engineering-practice.md)
+- [AI Agent 记忆系统架构](ch04/155-how-ai-agent-memory-works.md)
+- [深度拆解 Hermes Agent 记忆系统](../ch03/090-hermes-agent.md)
+- [ai agent memory systems](ch04/120-agent-memory.md)
+- [你不知道的 Agent 原理架构与工程实践](ch04/326-agent-principle-architecture-engineering-practice.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
-- [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md)
-- [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
-- [AI Coding Agent 记忆系统](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-coding-agent-memory-system.md)
+- [Agent Harness 架构](../ch05/038-agent-harness.md)
+- [Agent 自我改进的六条路](../ch03/045-agent.md)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/213-openclaw.md)
+- [AI Coding Agent 记忆系统](ch04/308-ai-coding-agent.md)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/thin-harness-fat-skills.md)
-- [Hermes Agent 记忆系统深度拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-vs-openclaw.md)
-- [Design Patterns for AI Agents 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/design-patterns-for-ai-agents-2026.md)
-- [harness-engineering-systematic-explainer](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-explainer.md)
-- [claude-code-7-layer-memory-architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-7-layer-memory-architecture.md)
+- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.md)
+- [Hermes Agent 记忆系统深度拆解](../ch03/090-hermes-agent.md)
+- [Design Patterns for AI Agents 2026](ch04/092-design-patterns-for-ai-agents-2026-4-5-reflection.md)
+- [harness-engineering-systematic-explainer](../ch05/092-harness-engineering.md)
+- [claude-code-7-layer-memory-architecture](../ch03/075-claude-code.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

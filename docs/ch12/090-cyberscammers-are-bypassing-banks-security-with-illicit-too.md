@@ -17,10 +17,10 @@ MIT Technology Review 在为期两个月的调查中发现了 22 个中越英语
 
 ## 相关实体
 - [Cyberscammers Bypassing Bank Telegram](https://github.com/QianJinGuo/wiki/blob/main/entities/cyberscammers-bypassing-bank-telegram.md)
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess 1](https://github.com/QianJinGuo/wiki/blob/main/entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess-1.md)
-- [Weve Been Here Before Ai Vulnerability Research](https://github.com/QianJinGuo/wiki/blob/main/entities/weve-been-here-before-ai-vulnerability-research.md)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security.md)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](ch12/070-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.md)
+- [Weve Been Here Before Ai Vulnerability Research](../ch04/229-ai.md)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/296-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.md)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01/685-scarcruft.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 ## 相关主题

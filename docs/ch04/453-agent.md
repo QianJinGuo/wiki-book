@@ -10,11 +10,11 @@
 来自**清华大学人工智能学院、交叉信息研究院**的方寸跃迁团队，提出一套面向 Agent 运行全生命周期的多层安全体系，覆盖事前（Skill Ward）× 事中（Guard × Observer）× 事后（审计）完整链路。
 
 ## 相关实体
-- [Ath Agent Trust Handshake Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/ath-agent-trust-handshake-protocol.md)
-- [Canvas Breach Disrupts Schools Colleges Nationwide](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-registry-公测开启为企业打造私有的-skill-管理中心.md)
-- [Aws Bedrock Agentcore Identity Security](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-identity-security.md)
-- [Github Investigating Teampcp Claimed 17Cc77](https://github.com/QianJinGuo/wiki/blob/main/entities/github-investigating-teampcp-claimed-17cc77.md)
+- [Ath Agent Trust Handshake Protocol](../ch03/045-agent.md)
+- [Canvas Breach Disrupts Schools Colleges Nationwide](../ch12/032-canvas-breach-disrupts-schools-colleges-nationwide.md)
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/069-skills.md)
+- [Aws Bedrock Agentcore Identity Security](../ch11/229-aws-bedrock-agentcore.md)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/811-github.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tsinghua-agent-security-fangcun.md)
 

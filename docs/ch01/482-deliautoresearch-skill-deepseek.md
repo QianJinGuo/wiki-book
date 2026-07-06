@@ -46,8 +46,8 @@ DeliAutoResearch SKILL 是 DeepSeek 研究员陈德里（Deli Chen）搭建的**
 
 ## 与其他自主研究框架的关系
 
-- [Karpathy AutoResearch](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-multi-agent-software.md) — 专注于软件开发领域的自动研究，本框架扩展到通用科研
-- [Claude Code Dynamic Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) — 编排子Agent执行任务，本框架关注科研任务的自主设计
+- [Karpathy AutoResearch](../ch03/045-agent.md) — 专注于软件开发领域的自动研究，本框架扩展到通用科研
+- [Claude Code Dynamic Workflows](../ch09/078-claude-code-dynamic-workflows.md) — 编排子Agent执行任务，本框架关注科研任务的自主设计
 
 ## 深度分析
 
@@ -74,7 +74,7 @@ DeliAutoResearch SKILL 是 DeepSeek 研究员陈德里（Deli Chen）搭建的**
 ## 相关实体
 
 - [mind lab lora 持续学习体系：δ-mem + mint + lora scaling law + macar](https://github.com/QianJinGuo/wiki/blob/main/entities/mind-lab-lora-continual-learning-system.md)
-- [recursive first steps toward automated ai research：sota 三基准自](https://github.com/QianJinGuo/wiki/blob/main/entities/recursive-automated-ai-research-first-steps-2026.md)
+- [recursive first steps toward automated ai research：sota 三基准自](../ch04/229-ai.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
 
 ---

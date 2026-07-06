@@ -145,11 +145,11 @@ AI 驱动的凭证填充要求企业重新审视登录安全策略：
 
 ## 相关实体
 
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md) — Karpathy 对 AI 时代安全问题的讨论
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md) — Agent 架构中的安全考量
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — AI 工具化的安全影响
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md) — 企业级 Agent 部署的安全考量
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md) — Agent 系统的可观测性与安全审计
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.md) — Karpathy 对 AI 时代安全问题的讨论
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.md) — Agent 架构中的安全考量
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md) — AI 工具化的安全影响
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md) — 企业级 Agent 部署的安全考量
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md) — Agent 系统的可观测性与安全审计
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 
 ---

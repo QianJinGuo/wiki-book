@@ -2,7 +2,7 @@
 
 ## Ch07.032 Qoder Skills 完全指南
 
-> 📊 Level ⭐⭐ | 9.9KB | `entities/qoder-skills-complete-guide.md`
+> 📊 Level ⭐⭐ | 9.8KB | `entities/qoder-skills-complete-guide.md`
 
 ## 核心概念
 **Skill** 是 AI 世界里的菜谱（Recipe），是一个开放标准的文件夹，包含一套告诉 AI 如何处理特定任务或工作流的指令。
@@ -78,24 +78,24 @@
 6. **与 MCP 协同使用**：已接入 MCP 的开发团队，可以用 Skill 封装"什么场景用什么 MCP 工具"的决策逻辑，让 AI 在正确的上下文自动调用正确的工具。
 
 ## 相关实体
-- [qoder skills](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skills.md)
-- [Agent/Skills/Teams 架构演进过程及技术选型之道](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skills-teams-architecture-evolution-selection-guide.md)
-- [Agent 时代架构师技能指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-era-architect-skills-guide.md)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md)
-- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent.md)
-- [你写的 Skill，及格了吗？](https://github.com/QianJinGuo/wiki/blob/main/entities/ni-xie-de-skill-ji-ge-liao-ma.md)
+- [qoder skills](ch07/032-qoder-skills.md)
+- [Agent/Skills/Teams 架构演进过程及技术选型之道](../ch04/233-agent-skills-teams.md)
+- [Agent 时代架构师技能指南](../ch03/069-skills.md)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/260-agent-skill.md)
+- [Hermes Agent](../ch03/090-hermes-agent.md)
+- [你写的 Skill，及格了吗？](../ch04/262-skill.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [9个Agent技能模块化SageMaker微调生命周期](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-development-guide-aliyun-2026.md)
-- [SkillX — 层次化技能知识库](https://github.com/QianJinGuo/wiki/blob/main/entities/skillx-hierarchical-skill-library.md)
-- [Anthropic 14 个 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-agent-skills-design-patterns-14.md)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-internal-skill-design-guide.md)
-- [SkillClaw](https://github.com/QianJinGuo/wiki/blob/main/entities/skillclaw.md)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system-winty.md)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/trace2skill-trajectory-distillation-agent-skills.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-vibe-coding-to-agentic-engineering-backend.md)
-- [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/thin-harness-fat-skills.md)
-- [code intelligence – changelog](https://github.com/QianJinGuo/wiki/blob/main/entities/code-intelligence-changelog-1.md)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/380-aws-sagemaker-ai-agent.md)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/262-skill.md)
+- [SkillX — 层次化技能知识库](ch07/048-skillx.md)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/247-anthropic-agent.md)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/262-skill.md)
+- [SkillClaw](../ch04/426-skillclaw-nacos-agent-skill-registry.md)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.md)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/375-agent-skills.md)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/201-tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.md)
+- [Code Intelligence Changelog](../ch04/447-code-intelligence-changelog.md)
 
 ---
 

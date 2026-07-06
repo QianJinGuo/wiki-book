@@ -152,15 +152,15 @@ DeepSeek 想要"定义工作负载"，一个关键信号是硬件厂商和云厂
 → [C4 架构图](assets/c4/deepseek-cost-migration-system-layer-kv-cache-harness-c4.html)
 
 ## 相关实体
-- [Deepseek Code Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-code-harness.md)
-- [Openclacky Harness Prompt Cache](https://github.com/QianJinGuo/wiki/blob/main/entities/openclacky-harness-prompt-cache.md)
-- [Deepseek V4 Ds4C Antirez Local Inference Qbitai](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-ds4c-antirez-local-inference-qbitai.md)
-- [Deepseek Moe Parallel Strategy](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-moe-parallel-strategy.md)
-- [Deepseek V4 Triton Fp4 Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-triton-fp4-optimization.md)
+- [Deepseek Code Harness](../ch09/076-deepseek-code-harness.md)
+- [Openclacky Harness Prompt Cache](ch05/009-harness.md)
+- [Deepseek V4 Ds4C Antirez Local Inference Qbitai](../ch09/045-deepseek-v4-ds4c-antirez.md)
+- [Deepseek Moe Parallel Strategy](../ch01/1125-deepseek.md)
+- [Deepseek V4 Triton Fp4 Optimization](../ch01/466-deepseek-v4-triton-fp4.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-cost-migration-system-layer-kv-cache-harness.md)
 
-- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](https://github.com/QianJinGuo/wiki/blob/main/entities/forgetrain-ai-written-training-framework-bidian-infoq.md)
+- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](../ch04/229-ai.md)
 
 ## 相关链接
 

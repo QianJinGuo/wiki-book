@@ -120,11 +120,11 @@ Cola DLM 的"语义部 + 文字部"分层，在多模态语境下有天然优势
 
 ## 相关实体
 
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元.md)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/读完这篇你就搞懂-deepseek-v4-了-v2.md)
-- [Harness Engineering Core Patterns Claude Code](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](ch01/922-deepseek-v4-flash-pro.md)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/305-deepseek-v4.md)
+- [Harness Engineering Core Patterns Claude Code](../ch05/092-harness-engineering.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
 - [Diffusion Model Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/diffusion-model-architecture.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)

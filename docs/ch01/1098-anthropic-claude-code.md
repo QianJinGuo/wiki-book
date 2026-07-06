@@ -18,11 +18,11 @@ Claude Code 的遥测机制涉及到本地环境探测 —— 包括时区检测
 
 ## 安全与隐私影响
 
-此事件暴露了 AI 编程工具在遥测数据采集方面的灰色地带 —— 何为"必要遥测"与"过度采集"之间的边界尚不明确。事件的背景是 Anthropic 刚刚经历过一次严重的安全争议 —— [Claude Code Tool Call Security Incident Gitignore Redis Anthropic Apology 2026 06 17](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-tool-call-security-incident-gitignore-redis-anthropic-apology-2026-06-17.md) —— 该事件涉及 tool call 导致的文件泄露。连续的安全争议凸显了 AI agent 工具在隐私和安全治理方面的系统性挑战。
+此事件暴露了 AI 编程工具在遥测数据采集方面的灰色地带 —— 何为"必要遥测"与"过度采集"之间的边界尚不明确。事件的背景是 Anthropic 刚刚经历过一次严重的安全争议 —— [Claude Code Tool Call Security Incident Gitignore Redis Anthropic Apology 2026 06 17](../ch03/075-claude-code.md) —— 该事件涉及 tool call 导致的文件泄露。连续的安全争议凸显了 AI agent 工具在隐私和安全治理方面的系统性挑战。
 
 ## 与现有实体的关联
 
-本文是对 [实锤了Claude Code偷查用户时区中国Ai实验室全是关键词](https://github.com/QianJinGuo/wiki/blob/main/entities/实锤了claude-code偷查用户时区中国ai实验室全是关键词.md) 中所述事件的深度跟进，提供了 Anthropic 官方响应和回滚计划的详细信息。这一事件链（工具安全→隐私遥测）强化了 [Claude Code Security Review Bias Brainoverflow 2026 06](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-security-review-bias-brainoverflow-2026-06.md) 中关于 AI 编码工具安全审计必要性的观点。
+本文是对 [实锤了Claude Code偷查用户时区中国Ai实验室全是关键词](../ch03/075-claude-code.md) 中所述事件的深度跟进，提供了 Anthropic 官方响应和回滚计划的详细信息。这一事件链（工具安全→隐私遥测）强化了 [Claude Code Security Review Bias Brainoverflow 2026 06](../ch03/075-claude-code.md) 中关于 AI 编码工具安全审计必要性的观点。
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-claude-code-trojan-telemetry-security-2026.md)
 

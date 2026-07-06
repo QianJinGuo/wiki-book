@@ -10,7 +10,7 @@
 **Microsoft Build 2026** 是微软的"AI 独立日"——从"AI 应用整合者"（依赖 OpenAI）转向**"全栈 AI 基础设施与模型提供者"**。核心发布：① **MAI-Thinking-1**（首个高级推理模型，350 亿活跃参数 / 1 万亿总参数 / SWE Bench Pro 与 Claude Opus 4.6 持平）② **6 款 MAI 系列模型**（Code / Image / Transcribe / Voice 等）③ **Scout**（基于 OpenClaw 框架的 365 智能体，可全天候自主运行）。**量子位补充全景视角**：④ **OpenClaw 登 Windows + MXC 沙箱** ⑤ **GitHub Copilot 独立桌面 App** ⑥ **Windows 开发者体验大升级** ⑦ **NVIDIA 合作 + Surface RTX Spark Dev Box**。
 
 ## 相关实体
-- [Microsoft Build 2026 Qbitai Full Scope](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-build-2026-qbitai-full-scope.md)
+- [Microsoft Build 2026 Qbitai Full Scope](ch04/229-ai.md)
 
 → [原文存档（AI 前线版）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-build-2026-mai-models-scout-agent.md)
 → [原文存档（量子位全景版）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-build-2026-qbitai-full-scope.md)
@@ -144,7 +144,7 @@
 
 ## 与现有 wiki 实体的关系
 
-### vs [OpenClaw](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-architecture-8-part-summary.md)
+### vs [OpenClaw](../ch11/213-openclaw.md)
 - OpenClaw = 开源 AI 编程框架，席卷 AI 圈
 - **Scout = "升级版 OpenClaw"**——基于 OpenClaw 框架构建，但加上微软企业级安全 / Entra 身份 / Intune 治理
 - **关键差异**：Scout 是"实验性 + opt-in"起步，微软承诺**向开源 OpenClaw 项目进行上游贡献**（与社区共生，非取代）
@@ -154,13 +154,13 @@
 - Codex = OpenAI 自家 harness 跑在 GPT 模型
 - **Scout = 微软智能体（基于 OpenClaw）跑在 MAI 模型**（"全栈"闭环）
 
-### vs [Kimi Work](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)
+### vs [Kimi Work](../ch01/516-codex.md)
 - Kimi Work = 月之暗面 K2.6 + Kimi Code Harness 搬到本地桌面
 - **Scout = 微软 MAI + OpenClaw 框架在 365 云端/桌面/网页** —— **"人本主义超级智能"** 哲学强调"支持人类而非取代"
 - **共同点**：都是模型公司 + 自家 Harness 的全栈组合
 - **差异**：微软是"企业级 + 治理"（Intune + Entra + opt-in attestation），Kimi 是"本地桌面 + 用户账号"
 
-### vs [wow-harness v3](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
+### vs [wow-harness v3](../ch05/009-harness.md)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - Scout = **企业身份 + 策略治理**（Entra + Intune）—— **企业治理层**变革
 - 共同点：都强调"治理"是 AI Agent 落地的关键
@@ -270,11 +270,11 @@
 - **WSL Containers 公开时间表 / Intelligent Terminal GA 时间表** 未披露
 
 ## 相关对照
-- [Kimi Work](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md) —— 本地桌面 Agent + Vibe Working
-- [wow-harness v3](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md) —— 跨 session 事件时间线
-- [OpenClaw](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-architecture-8-part-summary.md) —— 开源 AI 编程框架（Scout 基于它）
-- [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md) —— 7 层 harness 模型
-- [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) —— 工作集视角
+- [Kimi Work](../ch01/516-codex.md) —— 本地桌面 Agent + Vibe Working
+- [wow-harness v3](../ch05/009-harness.md) —— 跨 session 事件时间线
+- [OpenClaw](../ch11/213-openclaw.md) —— 开源 AI 编程框架（Scout 基于它）
+- [Agent Harness 架构](../ch05/038-agent-harness.md) —— 7 层 harness 模型
+- [Agent Harness 上下文管理](../ch05/038-agent-harness.md) —— 工作集视角
 
 ## 深度分析
 

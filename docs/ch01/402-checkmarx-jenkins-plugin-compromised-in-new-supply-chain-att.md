@@ -61,11 +61,11 @@ TeamPCP 并非首次对 Checkmarx 发起攻击——2026 年 3 月就曾入侵 c
 - 进行定期的应急响应演练，确保安全团队在真实攻击发生时能够快速协调隔离、取证、恢复等步骤
 ---
 ## 相关实体
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
-- [Semgrep Intercom Php Supply Chain](https://github.com/QianJinGuo/wiki/blob/main/entities/semgrep-intercom-php-supply-chain.md)
-- [Shub Reaper Macos Stealer Attack Chain](https://github.com/QianJinGuo/wiki/blob/main/entities/shub-reaper-macos-stealer-attack-chain.md)
-- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](https://github.com/QianJinGuo/wiki/blob/main/entities/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
+- [Npm Supply Chain Compromise Postmortem](../ch04/229-ai.md)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch01/685-scarcruft.md)
+- [Semgrep Intercom Php Supply Chain](../ch12/112-semgrep-intercom-php-supply-chain.md)
+- [Shub Reaper Macos Stealer Attack Chain](../ch04/229-ai.md)
+- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](../ch12/034-postmortem-tanstack-npm-supply-chain-compromise-tanstack.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)

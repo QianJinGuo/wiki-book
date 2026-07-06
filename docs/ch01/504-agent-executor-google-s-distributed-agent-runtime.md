@@ -16,15 +16,15 @@
 - In this blog, we'll share more about Agent Executor and how you can get started.
 
 ## 相关实体
-- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-executor-googles-distributed-agent-runtime-da1bb4.md)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
-- [Anthropic Google Agent Skills Design Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-google-agent-skills-design-patterns.md)
+- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch03/045-agent.md)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/375-agent-skills.md)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/375-agent-skills.md)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](ch01/385-google-agentic-rag-sufficient-context-agent-framesqa-90.md)
+- [Anthropic Google Agent Skills Design Patterns](../ch04/352-anthropic-google-agent-skills.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
 
-- [Design Md Google Stitch Voltagent Ai Design Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/design-md-google-stitch-voltagent-ai-design-agent.md)
+- [Design Md Google Stitch Voltagent Ai Design Agent](ch01/924-agent-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 

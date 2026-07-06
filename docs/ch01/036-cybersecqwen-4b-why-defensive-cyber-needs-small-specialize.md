@@ -87,8 +87,8 @@ Optimizer    = paged_adamw_8bit
 3. **持续评估机制不可或缺**：文章计划持续跟踪 NVD 新增 CVE 数据扩充训练集。对于已部署的领域模型，**建议建立定期重训/增量训练机制**，防止模型因数据分布漂移而逐渐失效。
 
 ## 相关实体
-- [CyberSecQwen-4B](https://github.com/QianJinGuo/wiki/blob/main/entities/cybersecqwen-4b.md)
-- [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](https://github.com/QianJinGuo/wiki/blob/main/entities/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md)
+- [CyberSecQwen-4B](../ch12/098-cybersecqwen-4b.md)
+- [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](ch01/036-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.md)
 
 ---
 

@@ -122,7 +122,7 @@ Tom Tunguz 的分析对投资者有明确的指引：
 ## 相关实体
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — harness 的价值与陷阱
-- [AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) — 平台层产品的定位参考
+- [AgentCore](../ch04/462-amazon-bedrock-agentcore-harness-ga-api-agent.md) — 平台层产品的定位参考
 - Inference Economics — 推理经济学的更广泛讨论
 - Sierra — value-based pricing 的案例
 - Devin — ACU 定价模型的案例

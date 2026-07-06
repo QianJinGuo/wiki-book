@@ -95,7 +95,7 @@ Cognition 的模型路由架构经历了三代演进：
 
 2. **缓存感知的 Agent 架构设计**：在构建多模型 Agent 系统时，缓存上下文管理应作为一等设计约束，而非事后优化。将模型切换与上下文压缩对齐是一个可复用的工程模式。
 
-3. **模型路由的成本优化杠杆**：与 [Token 成本优化五层模型](https://github.com/QianJinGuo/wiki/blob/main/entities/token-cost-control-coding-agent-devinyzeng-tencent.md) 中的"模型路由"层直接对应。Devin Fusion 证明，在不牺牲智能的前提下实现 35-41% 的成本降低是可行的——这比提示工程或缓存优化的效果更显著。
+3. **模型路由的成本优化杠杆**：与 [Token 成本优化五层模型](../ch09/047-coding-agent.md) 中的"模型路由"层直接对应。Devin Fusion 证明，在不牺牲智能的前提下实现 35-41% 的成本降低是可行的——这比提示工程或缓存优化的效果更显著。
 
 4. **多模型 Harness 是未来-proof 的投资**：随着模型种类增加和智能差距缩小，多模型路由的价值只会增长。建议编码 Agent 平台从第一天就设计多模型路由能力，而非事后添加。
 
@@ -103,12 +103,12 @@ Cognition 的模型路由架构经历了三代演进：
 
 ## 相关实体
 
-- [AI Coding Agent Token 成本控制五层模型](https://github.com/QianJinGuo/wiki/blob/main/entities/token-cost-control-coding-agent-devinyzeng-tencent.md)
+- [AI Coding Agent Token 成本控制五层模型](../ch09/047-coding-agent.md)
 - [Netflix Switchboard 模型路由](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
 - [Cursor Reward Hacking 编码基准](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-reward-hacking-coding-benchmarks.md)
-- [Cursor Harness 模型生产](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-harness-model-production-floor.md)
-- [Agent Harnesses 的演进](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harnesses-are-dead-long-live-agent-harnesses.md)
-- [Harness Engineering 核心模式](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
+- [Cursor Harness 模型生产](../ch01/323-cursor-harness-model-production-floor.md)
+- [Agent Harnesses 的演进](../ch04/606-agent-harnesses-are-dead-long-live-agent-harnesses.md)
+- [Harness Engineering 核心模式](ch05/092-harness-engineering.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/devin-fusion.md)
 

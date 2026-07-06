@@ -9,7 +9,7 @@
 - Source: https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan/
 
 ## 相关实体
-- [GitHub Copilot](https://github.com/QianJinGuo/wiki/blob/main/entities/github-copilot-individual-plans-flex-allotments.md)
+- [GitHub Copilot](ch01/708-github-copilot-individual-plans-flex-allotments-in-pro-and.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 深度分析
@@ -52,11 +52,11 @@ Max 套餐（$100/月，总计 $200 额度）的推出，标志着 GitHub Copilo
 ### 5. 将 Copilot 成本纳入项目预算
 对于接包Freelance或内部工具开发的场景，Copilot 的用量成本应计入项目固定成本。$15（Pro）、$70（Pro+）、$200（Max）的月度可用额度可以帮助估算 AI 辅助开发在项目总成本中的占比，从而做出更准确的项目报价。
 ## 相关实体
-- [Microsoft Copilot Studio Agent Governance](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-copilot-studio-agent-governance.md)
+- [Microsoft Copilot Studio Agent Governance](../ch03/045-agent.md)
 - wetesteddeepseekv4proandflashagainstclau.md-against-claude
-- [Deepseek V4 Pro Vs Claude](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-pro-vs-claude.md)
-- [Wetesteddeepseekv4Proandflashagainstclau](https://github.com/QianJinGuo/wiki/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
-- [Andrej Karpathy Claude Md 134K Stars 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/andrej-karpathy-claude-md-134k-stars-2026.md)
+- [Deepseek V4 Pro Vs Claude](ch01/305-deepseek-v4.md)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch01/1125-deepseek.md)
+- [Andrej Karpathy Claude Md 134K Stars 2026](ch01/295-claude-md.md)
 
 ---
 

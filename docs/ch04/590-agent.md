@@ -10,7 +10,7 @@
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[CLI、MCP 和 CLI+Skill，应该如何选？](https://github.com/QianJinGuo/wiki/blob/main/entities/cli-mcp-skill-architecture-decision-vibecoder.md)。 相关主题通过 [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](https://github.com/QianJinGuo/wiki/blob/main/entities/crewai-snowflake-enterprise-agent-deployment.md) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[CLI、MCP 和 CLI+Skill，应该如何选？](ch04/262-skill.md)。 相关主题通过 [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](../ch03/045-agent.md) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -22,11 +22,11 @@
 
 ## 相关实体
 
-- [CLI、MCP 和 CLI+Skill，应该如何选？](https://github.com/QianJinGuo/wiki/blob/main/entities/cli-mcp-skill-architecture-decision-vibecoder.md)
-- [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](https://github.com/QianJinGuo/wiki/blob/main/entities/crewai-snowflake-enterprise-agent-deployment.md)
-- [Enterprise AI Agent Development Tools (n8n Report 2026)](https://github.com/QianJinGuo/wiki/blob/main/entities/n8n-io-reports-2026-ai-agent-development-tools.md)
-- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
-- [多 Agent 编排系统](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-orchestration-multi-agent-systems.md)
+- [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/262-skill.md)
+- [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](../ch03/045-agent.md)
+- [Enterprise AI Agent Development Tools (n8n Report 2026)](ch04/030-ai-agent.md)
+- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](../ch05/009-harness.md)
+- [多 Agent 编排系统](ch04/464-agent-orchestration.md)
 
 ---
 

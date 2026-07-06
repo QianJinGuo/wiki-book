@@ -12,11 +12,11 @@ In this post, we walk through the full journey, from setting up your migration w
 If you're running a legacy BI tool, you face compounding pressures that go beyond licensing fees:
 
 ## 相关实体
-- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-一周综述aws-transform-上线一周年aws-云端-claude-platformec2-m3-ultr.md)
-- [Cloudsectidbits Masso Cognito Sso.Html](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudsectidbits-masso-cognito-sso.html.md)
-- [Amazon Bedrock Api Security Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-api-security-guide.md)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](https://github.com/QianJinGuo/wiki/blob/main/entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](https://github.com/QianJinGuo/wiki/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
+- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](../ch01/1022-claude.md)
+- [Cloudsectidbits Masso Cognito Sso.Html](ch11/222-cloudsectidbits.md)
+- [Amazon Bedrock Api Security Guide](../ch12/033-amazon-bedrock-api.md)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/271-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch11/052-prowler-genai.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-transform-ezconvertbi-bi-migration.md)
 

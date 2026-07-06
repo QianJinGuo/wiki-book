@@ -55,9 +55,9 @@ ChatBrowserUse (bu-ultra) 78.0% > OSS+BU Hybrid 63.3% > Claude Opus 4.6 62.0% > 
 
 ## 与已有 wiki 实体关系
 
-- 补充 [Browser Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/browser-harness.md)：该实体覆盖 Browser Harness 早期版本概念（来自 GitHub 仓库），本文聚焦 v0.13.2 最新架构变化和设计哲学。
-- 关联 [Browser Use Runtime Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/browser-use-runtime-harness.md)：互补视角。
-- 关联 [Browser Internals Chromium Blink V8 Architecture Guide Jiagoux 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/browser-internals-chromium-blink-v8-architecture-guide-jiagoux-2026.md)：CDP 协议底层背景。
+- 补充 [Browser Harness](ch05/102-browser-use-v0-13-browser-harness.md)：该实体覆盖 Browser Harness 早期版本概念（来自 GitHub 仓库），本文聚焦 v0.13.2 最新架构变化和设计哲学。
+- 关联 [Browser Use Runtime Harness](ch05/009-harness.md)：互补视角。
+- 关联 [Browser Internals Chromium Blink V8 Architecture Guide Jiagoux 2026](../ch01/897-20.md)：CDP 协议底层背景。
 
 ---
 

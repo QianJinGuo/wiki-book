@@ -11,11 +11,11 @@
 模型本身只是能力的来源，只有通过 Harness 把状态、工具调用、反馈循环和约束机制串起来，它才真正变成一个 Agent。
 
 ## 相关实体
-- [Agent Harness 12 Components 7 Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-12-components-7-decisions.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
-- [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
+- [Agent Harness 12 Components 7 Decisions](../ch05/038-agent-harness.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.md)
+- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.md)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langchain-anatomy-agent-harness.md)
 

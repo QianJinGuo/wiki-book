@@ -68,8 +68,8 @@ Prompt Caching 折扣条件：**字节级完全相同**（byte-identical）。
 这篇文章是 Harness Engineering 理论的**源码级实证**：
 
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 定义了"模型外面的脚手架"——本文展示了这层脚手架在工业级系统中长什么样
-- [Harness 实践指南 10步](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-10-step-practical-guide-2026.md) 的 Step 3（上下文管理）和 Step 10（并行多 agent）在本文有源码级对照
-- [Claude Code Dynamic Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) 侧重编排模式和实战场景，本文侧重底层通信/隔离/缓存/并行机制——**互补不重复**
+- [Harness 实践指南 10步](ch05/092-harness-engineering.md) 的 Step 3（上下文管理）和 Step 10（并行多 agent）在本文有源码级对照
+- [Claude Code Dynamic Workflows](../ch09/078-claude-code-dynamic-workflows.md) 侧重编排模式和实战场景，本文侧重底层通信/隔离/缓存/并行机制——**互补不重复**
 
 ## 关键洞察
 
@@ -79,11 +79,11 @@ Prompt Caching 折扣条件：**字节级完全相同**（byte-identical）。
 
 ## 相关实体
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Harness Engineering 10 Step Practical Guide 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-10-step-practical-guide-2026.md)
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md)
-- [Long Running Agent Ralph Loop Harness Takeover](https://github.com/QianJinGuo/wiki/blob/main/entities/long-running-agent-ralph-loop-harness-takeover.md)
-- [Gufabiancheng Spec For Complex Tasks Cc Codex](https://github.com/QianJinGuo/wiki/blob/main/entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md)
-- [Production Harness 12 Components Framework Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/production-harness-12-components-framework-comparison.md)
+- [Harness Engineering 10 Step Practical Guide 2026](ch05/092-harness-engineering.md)
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/078-claude-code-dynamic-workflows.md)
+- [Long Running Agent Ralph Loop Harness Takeover](ch05/012-agent-ralph-loop-harness.md)
+- [Gufabiancheng Spec For Complex Tasks Cc Codex](../ch01/516-codex.md)
+- [Production Harness 12 Components Framework Comparison](ch05/034-harness-12.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-multi-agent-harness-source-analysis.md)
 

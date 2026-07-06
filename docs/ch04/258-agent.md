@@ -108,11 +108,11 @@ ATH 的三个技术优势（三权分立、强制 PKCE、短期令牌）同时�
 
 ## 相关实体
 
-- [Agent Protocol 到 Harness Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/from-agent-protocol-to-harness-skill.md)
-- [AgentCore Gateway 认证](https://github.com/QianJinGuo/wiki/blob/main/entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [AI 工具投毒漏洞](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
-- [Harness V3 治理协议](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
-- [MCP 12 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
+- [Agent Protocol 到 Harness Skill](ch04/386-from-agent-protocol-to-harness-skill.md)
+- [AgentCore Gateway 认证](ch04/271-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
+- [AI 工具投毒漏洞](ch04/296-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.md)
+- [Harness V3 治理协议](../ch05/009-harness.md)
+- [MCP 12 设计模式](../ch01/833-anthropic.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

@@ -144,15 +144,15 @@ FlashAttention 的核心机制是 **Kernel Fusion + 分块计算 + Online Softma
 
 ## 相关实体
 
-- [Tokenspeed Agentic Inference Engine](https://github.com/QianJinGuo/wiki/blob/main/entities/tokenspeed-agentic-inference-engine.md)
-- [Google Io 2026 Agentic Gemini Era](https://github.com/QianJinGuo/wiki/blob/main/entities/google-io-2026-agentic-gemini-era.md)
-- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-infra-auto-driven-skills-v0-bbuf-giantpanda.md)
-- [Gemma 4 Multi Token Prediction Drafters](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-multi-token-prediction-drafters.md)
+- [Tokenspeed Agentic Inference Engine](../ch04/599-tokenspeed-agentic-inference-engine.md)
+- [Google Io 2026 Agentic Gemini Era](../ch03/045-agent.md)
+- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](ch01/884-ai-infra.md)
+- [Gemma 4 Multi Token Prediction Drafters](ch01/303-gemma-4-multi-token-prediction-drafters.md)
 - [Continuous Async](https://github.com/QianJinGuo/wiki/blob/main/entities/continuous-async.md)
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md)
-- [Codex Goal Source Code Deep Dive](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-goal-source-code-deep-dive.md)
-- [Impeccable Frontend Design Skill Harness Vibecoder](https://github.com/QianJinGuo/wiki/blob/main/entities/impeccable-frontend-design-skill-harness-vibecoder.md)
-- [Opencli Browser Automation Jingxing](https://github.com/QianJinGuo/wiki/blob/main/entities/opencli-browser-automation-jingxing.md)
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/076-harness-2026.md)
+- [Codex Goal Source Code Deep Dive](../ch09/046-codex-goal.md)
+- [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.md)
+- [Opencli Browser Automation Jingxing](../ch03/084-opencli.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-infra-llm-efficient-inference-vllm.md)

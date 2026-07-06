@@ -90,11 +90,11 @@ Skill Craft 的 fix 回归验证逻辑与 Harness 的 Generator/Evaluator 循环
 
 ## 关联阅读
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
-- [Claude Design Skill Web Design Engineer](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-design-skill-web-design-engineer.md)
-- [Claude Code Skill Writing Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skill-writing-guide.md)
-- [Claude Design Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-design-skill.md)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-issues-compromising-claude-code-with-malicious-skills-agents.md)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/756-skill-issues-compromising-claude-code-with-malicious-skills.md)
+- [Claude Design Skill Web Design Engineer](../ch01/1032-claude-design-skill.md)
+- [Claude Code Skill Writing Guide](../ch03/075-claude-code.md)
+- [Claude Design Skill](../ch01/1032-claude-design-skill.md)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents](../ch01/756-skill-issues-compromising-claude-code-with-malicious-skills.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-skill-quality-tool-skill-craft.md)
 

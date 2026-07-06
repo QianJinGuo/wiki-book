@@ -39,11 +39,11 @@ For full visibility into LLMs across the two monitoring dimensions of quantity a
 Custom quality metrics c
 
 ## 相关实体
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](https://github.com/QianJinGuo/wiki/blob/main/entities/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
-- [Process Financial Documents Using Amazon Bedrock Data Automa](https://github.com/QianJinGuo/wiki/blob/main/entities/process-financial-documents-using-amazon-bedrock-data-automa.md)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch04/229-ai.md)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/202-amazon-quick.md)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/152-amazon-bedrock.md)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/499-amazon-bedrock-agentcore.md)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/152-amazon-bedrock.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md)
 

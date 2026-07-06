@@ -92,14 +92,14 @@ Steinberger 的观点：做某件事超过一次 → 转化为自动化技能；
 
 ## 相关实体
 
-- [MCP 12 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
-- [OpenClaw 多智能体团队](https://github.com/QianJinGuo/wiki/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [OpenClaw 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
-- [Claude Code 源码机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Karpathy: Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Agent 原理与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
-- [Figma Make](https://github.com/QianJinGuo/wiki/blob/main/entities/figma-make-now-on-your-local-code-3e6a33.md)
-- [华术设计 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/huashu-design-2-0-flower-uncle-3-patterns.md)
+- [MCP 12 设计模式](ch01/833-anthropic.md)
+- [OpenClaw 多智能体团队](../ch11/213-openclaw.md)
+- [OpenClaw 完全指南](../ch11/213-openclaw.md)
+- [Claude Code 源码机制](../ch03/075-claude-code.md)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
+- [Agent 原理与工程实践](../ch03/045-agent.md)
+- [Figma Make](../ch03/047-figma-make.md)
+- [华术设计 2.0](ch01/203-0.md)
 
 ---
 

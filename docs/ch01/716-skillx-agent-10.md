@@ -11,11 +11,11 @@
 - **泛化能力弱**：高质量训练数据稀缺，技能难以迁移到新任务
 
 ## 相关实体
-- [我用 Skillmd 做了一个简历生成器](https://github.com/QianJinGuo/wiki/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
-- [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
-- [Skill Engineering Ai As Algorithm](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-engineering-ai-as-algorithm.md)
-- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
-- [Hermes Agent Getting Started Guide 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-getting-started-guide-2026.md)
+- [我用 Skillmd 做了一个简历生成器](../ch04/262-skill.md)
+- [Claude Code Search Architecture Tencent 2026](../ch03/075-claude-code.md)
+- [Skill Engineering Ai As Algorithm](../ch04/262-skill.md)
+- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](ch01/614-llm-wiki-obsidian-wiki-gbrain.md)
+- [Hermes Agent Getting Started Guide 2026](../ch03/090-hermes-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillx-zhejiang-university-hyman.md)
 

@@ -91,16 +91,16 @@ Anthropic 官方复盘 Claude Code 中三个工具的设计演进过程，揭示
 
 ## 关联阅读
 ## 相关实体
-- [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
-- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](https://github.com/QianJinGuo/wiki/blob/main/entities/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
-- [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
+- [Claude Code Harness Deep Understanding](ch01/456-claude-code-harness-deep-understanding.md)
+- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](../ch03/075-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/342-anthropic-claude-code.md)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/060-claude-code-harness.md)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/075-claude-code.md)
 
-- [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](https://github.com/QianJinGuo/wiki/blob/main/entities/无需复杂环境搭建教你用自己的-agent-玩转-moltbook.md)
-- [Coze 3 0 Local Agent Codex Claude Code Project](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-0-local-agent-codex-claude-code-project.md)
-- [Claude Code Agent Teams Xingxiaozhao](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-teams-xingxiaozhao.md)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](https://github.com/QianJinGuo/wiki/blob/main/entities/imclaw通过微信飞书操控claudecodecodexgeminiclipi-agent蜂群.md)
+- [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](../ch03/045-agent.md)
+- [Coze 3 0 Local Agent Codex Claude Code Project](../ch03/075-claude-code.md)
+- [Claude Code Agent Teams Xingxiaozhao](ch01/383-claude-code-agent-teams.md)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/330-pi-agent.md)
 
 ---
 

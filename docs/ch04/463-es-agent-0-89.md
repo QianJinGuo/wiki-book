@@ -31,7 +31,7 @@
 - **Mem0 / Letta**：向量数据库 + 基础管理 — 有向量检索但无分型生命周期
 - **LangGraph**：状态机快照 — 适合工作流重放而非跨会话知识查询
 
-三索引分型的思路与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md) 中的分层思想一致，都是将不同生命周期的信息用不同的策略管理。
+三索引分型的思路与 [Harness Engineering](../ch05/092-harness-engineering.md) 中的分层思想一致，都是将不同生命周期的信息用不同的策略管理。
 
 文章末尾提出的三个通用设计原则值得反复读：衰减曲线是领域决策不是技术参数、混合检索 BM25+vector 互补不二选一、后台提炼和矛盾处理是必须的非可选。
 
@@ -45,11 +45,11 @@
 
 ## 相关实体
 
-- [Agent Evolution Four Stages Six Dimensions Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md)
-- [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
-- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-vs-openclaw.md)
-- [State Of Memory In Agent Harness Mem0 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/state-of-memory-in-agent-harness-mem0-2026.md)
+- [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/045-agent.md)
+- [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/009-harness.md)
+- [Harness Engineering](../ch05/092-harness-engineering.md)
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/090-hermes-agent.md)
+- [State Of Memory In Agent Harness Mem0 2026](../ch05/038-agent-harness.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/es-agent-memory-layer-atlas-elasticsearch-2026.md)
 

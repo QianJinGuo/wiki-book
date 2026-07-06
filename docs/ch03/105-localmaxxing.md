@@ -40,11 +40,11 @@ Localmaxxing 不是"取代云端"而是"分流任务"。随着本地模型能力
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/localmaxxing.md)
 
 - [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](https://github.com/QianJinGuo/wiki/blob/main/entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
-- [Ico Fines South Staffordshire 2022 Breach](https://github.com/QianJinGuo/wiki/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
+- [Ico Fines South Staffordshire 2022 Breach](../ch01/897-20.md)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
-- [Interaction Models](https://github.com/QianJinGuo/wiki/blob/main/entities/interaction-models.md)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/weve-been-here-before-decompilers-fuzzers-and-now-ai.md)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-progressive-rollouts-with-vercel-flags-vercel.md)
+- [Interaction Models](ch03/099-interaction-models-a-scalable-approach-to-human-ai-collabor.md)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch04/229-ai.md)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/127-automate-progressive-rollouts-with-vercel-flags-vercel.md)
 
 ---
 

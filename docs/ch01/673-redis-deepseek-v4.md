@@ -18,10 +18,10 @@ source_url: https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ
 - ##  One more thing
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4.md)
-- [ds4c deepseek v4 antirez](https://github.com/QianJinGuo/wiki/blob/main/entities/ds4c-deepseek-v4-antirez.md)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-pro-vs-claude.md)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/305-deepseek-v4.md)
+- [ds4c deepseek v4 antirez](ch01/515-ds4c-deepseek-v4-antirez.md)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/305-deepseek-v4.md)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1125-deepseek.md)
 
 ## 深度分析
 ### 1. 项目定位：专有推理引擎的回归

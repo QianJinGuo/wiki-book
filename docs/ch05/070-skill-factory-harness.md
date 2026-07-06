@@ -11,11 +11,11 @@
 | **模式二：OpenClaw/Claude Code** | 对话驱动，依赖 Prompt 技巧 | 高 | 随机性强 | 无自动化闭环 | 串行迭代 | 不可控 & 缺乏工程验证 |
 
 ## 相关实体
-- [Claude Code Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-prompt-context-harness.md)
-- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
-- [Anthropic Managed Agents Scaling](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-managed-agents-scaling.md)
-- [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
+- [Claude Code Prompt Context Harness](../ch09/059-claude-code-prompt.md)
+- [From Prompt To Harness Claude Official](ch05/009-harness.md)
+- [Claude Code Harness Deep Dive Founder Park](ch05/060-claude-code-harness.md)
+- [Anthropic Managed Agents Scaling](../ch01/833-anthropic.md)
+- [Hermes Agent Deep Dive Alibaba](../ch03/090-hermes-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-factory-yueheng.md)
 

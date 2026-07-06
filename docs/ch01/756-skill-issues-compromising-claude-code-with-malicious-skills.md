@@ -7,15 +7,15 @@
 ## 核心要点
 - Published Time: Wed, 13 May 2026 16:58:06 GMT AI coding apps, such as Claude Code, codex, etc. are [becoming increasingly popular](https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-issues-compromising-claude-code-with-malicious-skills-agents.md)
-- [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-system-design-three-way-comparison.md)
-- [Claude Code Skills Mcp Rules Source Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
-- [Claude Code Skill Writing Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skill-writing-guide.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents](ch01/756-skill-issues-compromising-claude-code-with-malicious-skills.md)
+- [Skill System Design Three Way Comparison](../ch04/262-skill.md)
+- [Claude Code Skills Mcp Rules Source Analysis](../ch07/006-claude-code-skills-mcp-rules.md)
+- [Claude Code Skill Writing Guide](../ch03/075-claude-code.md)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/075-claude-code.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
 
-- [qwen code skill testing framework: recording, playback, and](https://github.com/QianJinGuo/wiki/blob/main/entities/qwen-code-skill-testing-framework-issue-2447.md)
+- [qwen code skill testing framework: recording, playback, and](../ch04/262-skill.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析

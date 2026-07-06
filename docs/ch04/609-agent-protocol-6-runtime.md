@@ -73,12 +73,12 @@ Agent Runtime 暴露给外部世界的契约回答的是：
 
 ## 与其他实体的关系
 
-- [Agent Runtime 7 大职责](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-runtime-7-responsibilities-secondcurve-2026.md) — 从 Runtime 职责视角（状态持久化、工具编排、可观测性等）出发，与本文的 Protocol 视角互补
-- [From Agent Protocol to Harness Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/from-agent-protocol-to-harness-skill.md) — 从 MCP/A2A 协议到 Harness Skill 的演进路径，与本文的 Runtime Protocol 抽象视角不同
-- [Google Agent Executor](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-executor-googles-distributed-agent-runtime-da1bb4.md) — 分布式 Runtime 实现案例
-- [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md) — Harness 作为 Runtime 的上层封装
-- [Agent 架构关键变化：Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-architecture-harness-new-backend.md) — Harness 作为 Runtime 演进方向
-- [MCP · Skill · Agent · LLM · Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md) — 高层架构关系图
+- [Agent Runtime 7 大职责](../ch03/045-agent.md) — 从 Runtime 职责视角（状态持久化、工具编排、可观测性等）出发，与本文的 Protocol 视角互补
+- [From Agent Protocol to Harness Skill](ch04/386-from-agent-protocol-to-harness-skill.md) — 从 MCP/A2A 协议到 Harness Skill 的演进路径，与本文的 Runtime Protocol 抽象视角不同
+- [Google Agent Executor](../ch03/045-agent.md) — 分布式 Runtime 实现案例
+- [Agent Harness 架构](../ch05/038-agent-harness.md) — Harness 作为 Runtime 的上层封装
+- [Agent 架构关键变化：Harness 成为新后端](../ch05/009-harness.md) — Harness 作为 Runtime 演进方向
+- [MCP · Skill · Agent · LLM · Harness](../ch05/072-harness-skill.md) — 高层架构关系图
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-protocol-unchanged-across-frameworks-aliyun-2026-07-02.md)
 

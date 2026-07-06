@@ -86,7 +86,7 @@ The napkin math provides a useful framework for pricing AI products:
 
 ### Connection to Local Inference Economics
 
-This analysis complements the [Apple Silicon cost analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/offline-llm-energy-use-html.md). While local inference on Apple Silicon costs ~$1.50/M tokens due to lower memory bandwidth (~200-400 GB/s vs. B200's 8 TB/s), cloud inference on B200-class GPUs achieves much better per-token economics through batched serving. The fundamental advantage of cloud GPUs is not just raw bandwidth, but the ability to **batch hundreds of users** to amortize the memory-bandwidth bottleneck.
+This analysis complements the [Apple Silicon cost analysis](ch01/580-llm.md). While local inference on Apple Silicon costs ~$1.50/M tokens due to lower memory bandwidth (~200-400 GB/s vs. B200's 8 TB/s), cloud inference on B200-class GPUs achieves much better per-token economics through batched serving. The fundamental advantage of cloud GPUs is not just raw bandwidth, but the ability to **batch hundreds of users** to amortize the memory-bandwidth bottleneck.
 
 ### Scaling to Multi-GPU
 
@@ -108,9 +108,9 @@ For serving at scale, data parallelism (multiple independent model replicas) is 
 
 ## Related Entities
 
-- [Apple Silicon costs more than OpenRouter](https://github.com/QianJinGuo/wiki/blob/main/entities/offline-llm-energy-use-html.md)
-- [Microsoft Is Quietly Shopping For An Openai Replac](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-is-quietly-shopping-for-an-openai-replac.md)
-- [Vietnamtodevelopdomesticcloud](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnamtodevelopdomesticcloud.md)
+- [Apple Silicon costs more than OpenRouter](ch01/580-llm.md)
+- [Microsoft Is Quietly Shopping For An Openai Replac](ch01/034-microsoft-is-quietly-shopping-for-an-openai-replacement.md)
+- [Vietnamtodevelopdomesticcloud](ch01/988-opd.md)
 
 ---
 

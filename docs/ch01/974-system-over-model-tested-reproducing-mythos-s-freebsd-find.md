@@ -7,10 +7,10 @@
 # System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Weight Models
 
 ## 相关实体
-- [unexpected lessons from an ai-assisted prototyping experimen](https://github.com/QianJinGuo/wiki/blob/main/entities/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
+- [unexpected lessons from an ai-assisted prototyping experimen](../ch04/229-ai.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
-- [ai gpus probably live longer than three years](https://github.com/QianJinGuo/wiki/blob/main/entities/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
-- [ddosing software delivery pipelines](https://github.com/QianJinGuo/wiki/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
+- [ai gpus probably live longer than three years](../ch04/229-ai.md)
+- [ddosing software delivery pipelines](ch01/897-20.md)
 
 ## 深度分析
 
@@ -29,12 +29,12 @@ System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Wei
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/213-openclaw.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.md)
 
 ## 实践启示
 1. **工程落地**: article领域方案需关注可观测性、可维护性和成本效率

@@ -68,9 +68,9 @@ AI 系统是非确定性的（non-deterministic），AI 系统的 golden signals
 
 ## 相关实体
 
-- [Agent Harness 可观测性：生产级 AI 项目必须补上的一课](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-observability-production.md)
-- [Agentic Incident Triage Assistant with Amazon Quick, New Relic MCP Server, and Asana](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-incident-triage-assistant-amazon-quick-new-relic-asana.md)
-- [让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md)
+- [Agent Harness 可观测性：生产级 AI 项目必须补上的一课](../ch05/038-agent-harness.md)
+- [Agentic Incident Triage Assistant with Amazon Quick, New Relic MCP Server, and Asana](../ch11/202-amazon-quick.md)
+- [让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践](../ch09/047-coding-agent.md)
 - [AI 系统可观测性](https://github.com/QianJinGuo/wiki/blob/main/concepts/observability-monitoring-ai.md)
 
 ---

@@ -12,10 +12,10 @@ Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](http
 
 ## 相关实体
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
-- [Airbyte Agents A New Era For Airbyte Airbyte](https://github.com/QianJinGuo/wiki/blob/main/entities/airbyte-agents-a-new-era-for-airbyte-airbyte.md)
-- [Airbyte Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/airbyte-agents.md)
-- [5 Years And 5M Later Inventing A New](https://github.com/QianJinGuo/wiki/blob/main/entities/5-years-and-5m-later-inventing-a-new.md)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/953-introducing-seer-agent-the-answer-is-already-in-sentry-now.md)
+- [Airbyte Agents A New Era For Airbyte Airbyte](../ch04/509-airbyte-agents-a-new-era-for-airbyte-airbyte.md)
+- [Airbyte Agents](../ch04/509-airbyte-agents-a-new-era-for-airbyte-airbyte.md)
+- [5 Years And 5M Later Inventing A New](../ch03/073-5-years-and-5m-later-inventing-a-new-programming-language.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)
 

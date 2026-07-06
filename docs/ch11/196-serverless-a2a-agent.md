@@ -19,7 +19,7 @@
 
 结果是：新 agent 工作流上线慢、安全风险高、运维开销随 agent 数量平方增长。
 
-网关模式通过在 agent 前面放置单一入口点来解决这个问题，无论 agent 运行在 [ECS](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-overlays-rest-to-a2a-enterprise.md)、[Lambda](https://github.com/QianJinGuo/wiki/blob/main/entities/agentrun-multi-agent-a2a-alibaba-cloud.md)、Bedrock AgentCore Runtime、非 AWS 云还是混合环境。
+网关模式通过在 agent 前面放置单一入口点来解决这个问题，无论 agent 运行在 [ECS](../ch03/045-agent.md)、[Lambda](../ch04/003-agentrun.md)、Bedrock AgentCore Runtime、非 AWS 云还是混合环境。
 
 ## 三层架构
 
@@ -93,10 +93,10 @@ cd terraform && terraform apply
 
 ## 相关实体
 
-- [Agentic Overlays：从 REST 到 A2A 的企业转型](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-overlays-rest-to-a2a-enterprise.md) — REST → A2A 过渡的互补方案
-- [Alibaba Cloud AgentRun 多 Agent A2A](https://github.com/QianJinGuo/wiki/blob/main/entities/agentrun-multi-agent-a2a-alibaba-cloud.md) — 不同云上的 A2A 实现
-- [AWS/Cisco A2A 安全方案](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md) — A2A 安全治理生态
-- [LangGraph A2A 对抗 Agent 团队](https://github.com/QianJinGuo/wiki/blob/main/entities/langgraph-a2a-adversarial-agent-team.md) — A2A 协议的应用示例
+- [Agentic Overlays：从 REST 到 A2A 的企业转型](../ch03/045-agent.md) — REST → A2A 过渡的互补方案
+- [Alibaba Cloud AgentRun 多 Agent A2A](../ch04/003-agentrun.md) — 不同云上的 A2A 实现
+- [AWS/Cisco A2A 安全方案](../ch04/030-ai-agent.md) — A2A 安全治理生态
+- [LangGraph A2A 对抗 Agent 团队](../ch04/196-langgraph.md) — A2A 协议的应用示例
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md)
 

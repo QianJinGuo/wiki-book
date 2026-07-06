@@ -12,11 +12,11 @@
 - 真正驱动 ROI 的因素：员工再培训、upskilling、让员工构建自己的 AI 代理/自动化流程
 - 替代方案：「自动化增强」(automate-to-augment) 策略，而非「自动化替代」(automate-to-replace)
 ## 相关实体
-- [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](https://github.com/QianJinGuo/wiki/blob/main/entities/www.cio-4171054-ai-driven-layoffs-arent-making-bus.md)
-- [Ai Driven Layoffs Business Sense Cio](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-driven-layoffs-business-sense-cio.md)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki/blob/main/entities/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
-- [Clinereleasesopen Sourceagentruntimesdk](https://github.com/QianJinGuo/wiki/blob/main/entities/clinereleasesopen-sourceagentruntimesdk.md)
-- [Running An Ai Native Engineering Org](https://github.com/QianJinGuo/wiki/blob/main/entities/running-an-ai-native-engineering-org.md)
+- [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](../ch03/011-cio.md)
+- [Ai Driven Layoffs Business Sense Cio](../ch03/011-cio.md)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/229-ai.md)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/003-agentrun.md)
+- [Running An Ai Native Engineering Org](ch01/046-running-an-ai-native-engineering-org.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-driven-layoffs-arent-making-business-sense.md)
 

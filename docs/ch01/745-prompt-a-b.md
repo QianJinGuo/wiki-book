@@ -13,15 +13,15 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 数据库设计：experiments 表（固定输入）下挂 experiment_runs 表（不同 Prompt/参数的结果），同一输入对比任意变体。
 
 ## 相关实体
-- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)
-- [Claude Opus 47](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-47.md)
-- [Pi Mono Github](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-mono-github.md)
-- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [Aliyun Agentrun 2Line Integration](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-agentrun-2line-integration.md)
+- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch01/833-anthropic.md)
+- [Claude Opus 47](ch01/1022-claude.md)
+- [Pi Mono Github](ch01/747-pi-mono-github.md)
+- [From Prompt To Harness Claude Official](../ch05/009-harness.md)
+- [Aliyun Agentrun 2Line Integration](../ch04/003-agentrun.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/prompt-debugger-compare-templates-winty.md)
 
-- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](https://github.com/QianJinGuo/wiki/blob/main/entities/openai发布新一代实时语音模型能够像人说话一样进行推理翻译和转录.md)
+- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](ch01/435-openai.md)
 
 ## 深度分析
 

@@ -18,7 +18,7 @@ In his blog post, Jiayi Weng proposes "the next paradigm" for Machine Learning: 
 - source/newsletter
 ## 相关实体
 > 主题导航
-- [the token economy](https://github.com/QianJinGuo/wiki/blob/main/entities/the-token-economy.md)
+- [the token economy](ch01/866-the-token-economy.md)
 ## 深度分析
 原文存档
 **核心论点**：反奇点（The Anti-Singularity）代表了机器学习领域的一次范式转变——不再追求寻找通用学习的优美抽象，而是利用 LLM 无穷迭代复杂设计的能力，通过构建启发式 heuristics 来解决难题。

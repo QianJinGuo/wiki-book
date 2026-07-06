@@ -93,8 +93,8 @@ FinOps Agent 对测试账号进行全景扫描后发现：
 | 案例 | $47,629 隐性成本发现 | 通用成本优化 | 多账号成本查询 |
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/finops-devops-双agent-ai驱动的云成本优化实战.md)
-→ [Strands 云成本优化](https://github.com/QianJinGuo/wiki/blob/main/entities/strands-agents-cloud-cost-optimizer.md)
-→ [Quick + AgentCore FinOps](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-bedrock-agentcore-finops-chat.md)
+→ [Strands 云成本优化](../ch03/045-agent.md)
+→ [Quick + AgentCore FinOps](../ch11/124-amazon-quick-bedrock-agentcore-finops.md)
 
 ---
 

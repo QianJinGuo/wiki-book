@@ -11,12 +11,12 @@ Anthropic's official Claude managed agents: persistent sessions, tool use, memor
 **Source**: [raw article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-managed-agents-official.md) | **Review**: value=8 confidence=9
 
 ## 相关实体
-- [Claude Managed Agents 官方 Harness 平台指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-guide.md)
-- [claude managed agents official](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-official.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
-- [Anthropic Claude Managed Agents 平台正式发布](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
-- [Claude Managed Agents 开发者指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-developer-guide.md)
-- [Multica — 开源 Managed Agents 平台](https://github.com/QianJinGuo/wiki/blob/main/entities/multica-managed-agents-platform.md)
+- [Claude Managed Agents 官方 Harness 平台指南](../ch01/270-anthropic-claude-managed-agents.md)
+- [claude managed agents official](ch04/524-claude-managed-agents-official.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/485-claude-managed-agents.md)
+- [Anthropic Claude Managed Agents 平台正式发布](../ch01/270-anthropic-claude-managed-agents.md)
+- [Claude Managed Agents 开发者指南](ch04/485-claude-managed-agents.md)
+- [Multica — 开源 Managed Agents 平台](../ch07/059-multica-managed-agents.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 深度分析

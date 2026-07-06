@@ -13,8 +13,8 @@
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-government-workloads.md)
 
 ## 相关实体
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
-- [Vietnam to develop domestic cloud](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-to-develop-domestic-cloud.md)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](ch11/184-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.md)
+- [Vietnam to develop domestic cloud](ch11/175-vietnam-to-develop-domestic-cloud.md)
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
 
 ## 深度分析

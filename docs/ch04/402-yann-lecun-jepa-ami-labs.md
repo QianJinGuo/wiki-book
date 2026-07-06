@@ -66,11 +66,11 @@ AMI Labs获得10亿美元融资并选择JEPA路线，表明世界模型已经从
 4. **抽象表示 over 精确预测**：在构建预测系统时，识别并去除不可预测的噪声，专注于与任务相关的抽象状态，比追求高精度的像素级预测更有效率。这适用于工业过程控制、机器人规划等需要高可靠性的场景。
 5. **LLM仍有价值的场景**：LeCun明确承认LLM在编程和数学等符号操作领域是有效的，因为这些领域的"预测下一个符号"与"理解逻辑"存在实质性重叠。AI团队应该在这些领域继续发挥LLM的优势，而不是试图用LLM替代所有推理任务。
 ## 相关实体
-- [Baixing Ontoz Enterprise Ontology Multi Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/baixing-ontoz-enterprise-ontology-multi-agent.md)
-- [Tsinghua Self Evolving Skill Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/tsinghua-self-evolving-skill-agent.md)
+- [Baixing Ontoz Enterprise Ontology Multi Agent](../ch03/045-agent.md)
+- [Tsinghua Self Evolving Skill Agent](ch04/144-skill-agent.md)
 - [直播预约 数据引擎具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
-- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
-- [Nvidia Gamma World Multi Agent World Model](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-gamma-world-multi-agent-world-model.md)
+- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](../ch03/045-agent.md)
+- [Nvidia Gamma World Multi Agent World Model](../ch01/220-agent-world.md)
 
 ---
 

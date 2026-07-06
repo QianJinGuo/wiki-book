@@ -81,7 +81,7 @@ description: 为用户提供 AB 实验的创建与修改能力，支持实验创
 
 ## 与现有实体的关系
 
-- 补充 [50 Ai Agent Skills For Designers And Pms](https://github.com/QianJinGuo/wiki/blob/main/entities/50-ai-agent-skills-for-designers-and-pms.md) 的工程实践角度
+- 补充 [50 Ai Agent Skills For Designers And Pms](../ch04/408-ai-agent-skill.md) 的工程实践角度
 
 ---
 

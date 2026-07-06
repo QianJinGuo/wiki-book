@@ -12,11 +12,11 @@
 - 根据新轨迹顺序式更新 skill bank，容易把局部 lesson 直接糊到技能上，得到碎片化、局部过拟合的结果
 
 ## 相关实体
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
-- [Yidian Tianxia Context Engineering Agentic Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/yidian-tianxia-context-engineering-agentic-ai.md)
-- [Agentic Ai System Architecture Harness Skill Mcp](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
-- [Memory Agent Systems Cobanov](https://github.com/QianJinGuo/wiki/blob/main/entities/memory-agent-systems-cobanov.md)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.md)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.md)
+- [Yidian Tianxia Context Engineering Agentic Ai](../ch04/248-yidian-tianxia-context-engineering-agentic-ai.md)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/072-harness-skill.md)
+- [Memory Agent Systems Cobanov](../ch04/525-memory-agent-systems-cobanov.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/trace2skill-trajectory-distillation-agent-skills.md)
 

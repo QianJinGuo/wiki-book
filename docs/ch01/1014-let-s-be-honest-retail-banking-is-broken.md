@@ -10,8 +10,8 @@
 ## 相关实体
 - [Microsoft Startups](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-startups.md)
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
-- [The Stablecoin 24X7 Money Loop Fintechbrainfood](https://github.com/QianJinGuo/wiki/blob/main/entities/the-stablecoin-24x7-money-loop-fintechbrainfood.md)
-- [Chime Earnings Q1 2026 Ai Upmarket](https://github.com/QianJinGuo/wiki/blob/main/entities/chime-earnings-q1-2026-ai-upmarket.md)
+- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch04/229-ai.md)
+- [Chime Earnings Q1 2026 Ai Upmarket](../ch04/229-ai.md)
 - [Deels Accelerate Or Die Moment](https://github.com/QianJinGuo/wiki/blob/main/entities/deels-accelerate-or-die-moment.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/finanser-retail-banking-broken.md)

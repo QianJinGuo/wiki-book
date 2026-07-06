@@ -8,11 +8,11 @@
 - 评分：v=7 × c=8 = 56
 - Well-structured technical article explaining steering vectors with good clarity and logical flow. Demonstrates solid understanding of both naive and sophisticated steering approaches, referencing rele
 ## 相关实体
-- [Llm Steering Behavior Guidance](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-steering-behavior-guidance.md)
-- [Wetesteddeepseekv4Proandflashagainstclau](https://github.com/QianJinGuo/wiki/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
-- [Wetesteddeepseekv4Proandflashagainstclau](https://github.com/QianJinGuo/wiki/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元-v2.md)
-- [Deepseek V4 Pro Vs Claude](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-pro-vs-claude.md)
+- [Llm Steering Behavior Guidance](ch01/528-llm-steering.md)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch01/1125-deepseek.md)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch01/1125-deepseek.md)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/922-deepseek-v4-flash-pro.md)
+- [Deepseek V4 Pro Vs Claude](ch01/305-deepseek-v4.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-flash-means-llm-steering-is-interesting-again.md)
 

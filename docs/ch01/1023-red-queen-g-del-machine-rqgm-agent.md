@@ -60,8 +60,8 @@ RQGM 将搜索组织为 epoch：
 
 ## 相关实体
 
-- [AI 递归自改进](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md) — 自改进的更广泛背景
-- [Agent 自改进六机制](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md) — 自改进机制分类
+- [AI 递归自改进](../ch04/229-ai.md) — 自改进的更广泛背景
+- [Agent 自改进六机制](../ch03/045-agent.md) — 自改进机制分类
 - [验证器驱动开发](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md) — 验证器在 Agent 系统中的角色
 
 ---

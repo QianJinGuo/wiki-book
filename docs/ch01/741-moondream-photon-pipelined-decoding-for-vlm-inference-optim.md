@@ -47,14 +47,14 @@ Pipelined decoding 在 Photon 上实现最高 **35% 的 decode 吞吐提升**。
 
 ## 与现有推理优化技术的区别
 
-Moondream Photon 的 pipelined decoding 与传统的推理优化方法（如 [LLM Inference Pipeline](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-inference-pipeline-internals.md) 中 covered 的 continuous batching、PagedAttention、speculative decoding）的区别在于：它解决的是**CPU-GPU 间同步开销**问题，而非模型计算效率或显存管理问题。Pipelined decoding 可以与这些技术正交组合，产生叠加效果。
+Moondream Photon 的 pipelined decoding 与传统的推理优化方法（如 [LLM Inference Pipeline](ch01/580-llm.md) 中 covered 的 continuous batching、PagedAttention、speculative decoding）的区别在于：它解决的是**CPU-GPU 间同步开销**问题，而非模型计算效率或显存管理问题。Pipelined decoding 可以与这些技术正交组合，产生叠加效果。
 
 ## 相关实体
-- [LLM Inference Pipeline Internals](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-inference-pipeline-internals.md)
-- [MorphLLM Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/morphllm-codegen-inference-optimization.md)
-- [Tencent Hunyuan Hopper Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-hunyuan-hy3-preview-hopper-inference-optimization.md)
-- [LLaVA-OneVision VLM](https://github.com/QianJinGuo/wiki/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
-- [高德 VLM 生产实践](https://github.com/QianJinGuo/wiki/blob/main/entities/gaode-saojie-image-selection-hermesagent-vlm-production-2026.md)
+- [LLM Inference Pipeline Internals](ch01/580-llm.md)
+- [MorphLLM Inference Optimization](ch01/580-llm.md)
+- [Tencent Hunyuan Hopper Inference Optimization](ch01/107-hy3-preview.md)
+- [LLaVA-OneVision VLM](ch01/734-vlm.md)
+- [高德 VLM 生产实践](../ch03/045-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/moondream-popping-gpu-bubble-photon-engine.md)
 

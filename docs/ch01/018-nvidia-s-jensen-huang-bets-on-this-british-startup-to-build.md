@@ -38,11 +38,11 @@ LLM 公司的战略规划者需要正视文章中隐含的挑战：如果强化�
 
 ## 关联阅读
 ## 相关实体
-- [Why Im Leaving Github For Forgejo](https://github.com/QianJinGuo/wiki/blob/main/entities/why-im-leaving-github-for-forgejo.md)
-- [From Doer To Director The Ai Mindset Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
-- [Anthropic Puts Claude Agents On A Meter Across Its](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-puts-claude-agents-on-a-meter-across-its.md)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki/blob/main/entities/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
-- [Microsoft For Startups Microsoft](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-for-startups-microsoft.md)
+- [Why Im Leaving Github For Forgejo](ch01/811-github.md)
+- [From Doer To Director The Ai Mindset Shift](ch01/030-from-doer-to-director-the-ai-mindset-shift.md)
+- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/081-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.md)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/229-ai.md)
+- [Microsoft For Startups Microsoft](ch01/122-microsoft-for-startups-microsoft.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md)
 

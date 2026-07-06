@@ -7,15 +7,15 @@
 ## 核心要点
 微信文章：Harness Engineering: 让 Coding Agent 可靠完成长程任务
 ## 相关实体
-- [Harness Engineering耗时一周我是如何将应用的Ai Coding率提升至90的](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md)
-- [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
-- [Agent架构关键变化Harness正在成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/agent架构关键变化harness正在成为新后端.md)
-- [Harness Engineering Reliable Long Term Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-reliable-long-term-agent.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
+- [Harness Engineering耗时一周我是如何将应用的Ai Coding率提升至90的](../ch05/092-harness-engineering.md)
+- [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch04/485-claude-managed-agents.md)
+- [Agent架构关键变化Harness正在成为新后端](../ch05/009-harness.md)
+- [Harness Engineering Reliable Long Term Agent](../ch05/092-harness-engineering.md)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)
 
-- [一次构建，随处复用：python 中的泛型仓库模式](https://github.com/QianJinGuo/wiki/blob/main/entities/一次构建随处复用python-中的泛型仓库模式.md)
+- [一次构建，随处复用：python 中的泛型仓库模式](ch04/533-python.md)
 
 ## 深度分析
 1. **Harness Engineering 是模型能力与工程可靠性之间的边界管理**。随着模型能力提升，曾经需要脚本控制的环节可能逐渐被自主处理，但"确定哪些环节该交给模型、哪些该留在框架里"这个判断本身不会消失。每次新模型出现都需要重新审视这个边界

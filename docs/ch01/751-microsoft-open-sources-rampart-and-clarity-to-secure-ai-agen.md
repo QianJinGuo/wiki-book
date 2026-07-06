@@ -9,11 +9,11 @@
 - RAMPART and Clarity: Microsoft Open-Sources AI Security Tools
 
 ## 相关实体
-- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/secure-ai-agents-policy-lambda-interceptors-aws.md)
-- [Shub Reaper Macos Stealer Attack Chain](https://github.com/QianJinGuo/wiki/blob/main/entities/shub-reaper-macos-stealer-attack-chain.md)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](https://github.com/QianJinGuo/wiki/blob/main/entities/schmoozing-is-dead-agents-are-hitting-120-of-humans-and-growth-is-the-only-thing.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
+- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch01/320-how-harnesses-and-post-training-close-the-open-weight-bug-fi.md)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/030-ai-agent.md)
+- [Shub Reaper Macos Stealer Attack Chain](../ch04/229-ai.md)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch01/138-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.md)
+- [Npm Supply Chain Compromise Postmortem](../ch04/229-ai.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-open-sources-rampart-clarity.md)
 

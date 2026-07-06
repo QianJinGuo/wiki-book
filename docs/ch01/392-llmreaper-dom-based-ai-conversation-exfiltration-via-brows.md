@@ -116,14 +116,14 @@ LLMReaper 演示的技术完整对应到 MITRE ATT&CK：
 
 ## 相关实体
 
-- [Harness Engineering 概念](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md) — AI 工程实践
-- [Agent 记忆系统](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md) — Agent 系统的工程实践
-- [Claude Code 源码机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md) — AI 工具架构
-- [Karpathy Vibe Coding 访谈](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Agentic Engineering 范式
-- [OpenClaw 完整指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md) — AI 工具教程
-- [天猫 AI 编码实战](https://github.com/QianJinGuo/wiki/blob/main/entities/天猫新品营销技术团队ai编码实战指南上.md) — 企业 AI 编码案例
-- [What My Privacy and Security Stack Actually Looks Like](https://github.com/QianJinGuo/wiki/blob/main/entities/what-my-privacy-and-security-stack-actually-looks-like.md) — 个人安全栈案例
-- [Canvas Hackers ShinyHunters Domain Suspended](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md) — 攻击者基础设施案例
+- [Harness Engineering 概念](../ch05/092-harness-engineering.md) — AI 工程实践
+- [Agent 记忆系统](../ch03/045-agent.md) — Agent 系统的工程实践
+- [Claude Code 源码机制](../ch03/075-claude-code.md) — AI 工具架构
+- [Karpathy Vibe Coding 访谈](../ch03/045-agent.md) — Agentic Engineering 范式
+- [OpenClaw 完整指南](../ch11/213-openclaw.md) — AI 工具教程
+- [天猫 AI 编码实战](../ch04/229-ai.md) — 企业 AI 编码案例
+- [What My Privacy and Security Stack Actually Looks Like](../ch12/021-what-my-privacy-and-security-stack-actually-looks-like.md) — 个人安全栈案例
+- [Canvas Hackers ShinyHunters Domain Suspended](../ch12/036-canvas-hackers-shinyhunters-say-their-official-domain-was-su.md) — 攻击者基础设施案例
 
 > [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md)
 

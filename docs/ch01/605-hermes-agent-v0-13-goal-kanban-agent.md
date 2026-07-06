@@ -1,6 +1,6 @@
 # Hermes Agent v0.13 — /goal 目标管理与 Kanban 多 agent 协作
 
-## Ch01.606 Hermes Agent v0.13 — /goal 目标管理与 Kanban 多 agent 协作
+## Ch01.605 Hermes Agent v0.13 — /goal 目标管理与 Kanban 多 agent 协作
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/hermes-agent-goal-and-kanban.md`
 
@@ -73,11 +73,11 @@ hermes doctor   # 检查环境
 ## Related
 
 ## 相关实体
-- [Hermes Agent Kanban Deep Test](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-kanban-deep-test.md)
-- [Hermes Agent Goal Runtime Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-runtime-architecture.md)
-- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent.md)
-- [Hermes Agent Kanban Deep Test By Wjjagi 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-kanban-deep-test-by-wjjagi-2026.md)
-- [Hermes Agent Self Evolution Tengxun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-self-evolution-tengxun.md)
+- [Hermes Agent Kanban Deep Test](../ch03/090-hermes-agent.md)
+- [Hermes Agent Goal Runtime Architecture](../ch04/350-hermes-agent-goal.md)
+- [Hermes Agent](../ch03/090-hermes-agent.md)
+- [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch03/090-hermes-agent.md)
+- [Hermes Agent Self Evolution Tengxun](../ch03/090-hermes-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
 

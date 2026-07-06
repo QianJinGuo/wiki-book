@@ -96,7 +96,7 @@ Nova 2 Sonic 的端到端方案解决了传统流水线的几个根本问题：
 3. **错误累积**：单一模型避免了多步骤错误传播
 4. **成本**：$0.27/小时的成本使其在大规模部署中具有经济可行性
 
-这与 [医疗预约 Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/build-a-healthcare-appointment-agent-with-amazon-nova-2-soni.md) 的设计选择一致——两者都采用了 Nova 2 Sonic 作为核心模型。
+这与 [医疗预约 Agent](ch04/545-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni.md) 的设计选择一致——两者都采用了 Nova 2 Sonic 作为核心模型。
 
 ### Prompt 工程的工程化
 
@@ -143,9 +143,9 @@ Loka 的架构设计考虑了大规模部署的需求：
 
 ## 相关实体
 
-- [医疗预约 Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/build-a-healthcare-appointment-agent-with-amazon-nova-2-soni.md) — Nova 2 Sonic 在医疗场景的应用
+- [医疗预约 Agent](ch04/545-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni.md) — Nova 2 Sonic 在医疗场景的应用
 - Voice Agent Architecture — 语音 Agent 架构设计
-- [Agent Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理
+- [Agent Harness Context Management](../ch05/038-agent-harness.md) — Agent 上下文管理
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
 
 ## 参考

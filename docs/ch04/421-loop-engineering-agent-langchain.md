@@ -66,11 +66,11 @@ LangChain 的 4 层与清华 Loop Stack 六件套（Skill/Spec/Tool/Act/Eval/Sto
 
 **2. L4 爬坡循环是真正的护城河**
 
-前三层在 Addy Osmani、Boris/Peter、若飞等人的文章中已有充分讨论。L4 的独到之处在于将 trace 分析 Agent 作为一等公民——不是事后复盘而是持续自动化。这与 OpenAI Codex 的 trace-driven improvement 和 Anthropic 的 Agent 自改进循环方向一致。 [Loop Engineering Addy Osmani Challengehub](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-addy-osmani-challengehub.md)
+前三层在 Addy Osmani、Boris/Peter、若飞等人的文章中已有充分讨论。L4 的独到之处在于将 trace 分析 Agent 作为一等公民——不是事后复盘而是持续自动化。这与 OpenAI Codex 的 trace-driven improvement 和 Anthropic 的 Agent 自改进循环方向一致。 [Loop Engineering Addy Osmani Challengehub](../ch05/006-loop-engineering.md)
 
 **3. 产品原语即架构约束**
 
-文章每层都绑定一个 LangChain 原语，这既是优势（可落地）也是局限（绑定特定产品）。使用 Hermes Agent 的团队可在 L1 用 agent loop、L2 用 pre-commit hook + lint、L3 用 cron + webhook、L4 用 session trace 分析来实现等价栈。 [Hermes Agent Skills Source Code Analysis Shuge](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-skills-source-code-analysis-shuge.md)
+文章每层都绑定一个 LangChain 原语，这既是优势（可落地）也是局限（绑定特定产品）。使用 Hermes Agent 的团队可在 L1 用 agent loop、L2 用 pre-commit hook + lint、L3 用 cron + webhook、L4 用 session trace 分析来实现等价栈。 [Hermes Agent Skills Source Code Analysis Shuge](ch04/394-hermes-agent-skills.md)
 
 **4. "辛辣教训"的可证伪性**
 
@@ -78,11 +78,11 @@ LangChain 的 4 层与清华 Loop Stack 六件套（Skill/Spec/Tool/Act/Eval/Sto
 
 ## 相关实体
 
-- [Loop Engineering — 12 来源合并](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-addy-osmani-challengehub.md)
-- [Loop Engineering: 把反馈循环放进工程现场](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-feedback-control-system.md)
-- [循环工程 — 清华 2026 框架](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-tsinghua-2026.md)
-- [Agent Loop 8 个未解问题](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
-- [Hermes Agent Skills 源码分析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-skills-source-code-analysis-shuge.md)
+- [Loop Engineering — 12 来源合并](../ch05/006-loop-engineering.md)
+- [Loop Engineering: 把反馈循环放进工程现场](../ch05/006-loop-engineering.md)
+- [循环工程 — 清华 2026 框架](../ch05/006-loop-engineering.md)
+- [Agent Loop 8 个未解问题](../ch05/006-loop-engineering.md)
+- [Hermes Agent Skills 源码分析](ch04/394-hermes-agent-skills.md)
 - [Loop Engineering 主题地图](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)
 - → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/loop-engineering-langchain-four-layer-loopcraft.md)
 

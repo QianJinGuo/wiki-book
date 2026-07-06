@@ -71,10 +71,10 @@
 在当前环境下，许多技术岗位的价值正在被重新定价。职业规划决策中，应该区分哪些技能是"可被 AI 执行的结构化任务"、哪些是"需要领域判断力的非结构化问题"。前者面临压缩，后者具有防御性价值。同时，关注那些沉淀了大量隐性知识、存在严格监管壁垒的领域，这些领域的从业者与 AI 之间有更大的能力梯度差。
 
 ## 相关实体
-- [Seangoedeckecom Build Agents Not Pipelines](https://github.com/QianJinGuo/wiki/blob/main/entities/seangoedeckecom-build-agents-not-pipelines.md)
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](https://github.com/QianJinGuo/wiki/blob/main/entities/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md)
+- [Seangoedeckecom Build Agents Not Pipelines](../ch04/006-build-agents-not-pipelines.md)
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/897-20.md)
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](https://github.com/QianJinGuo/wiki/blob/main/entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/897-20.md)
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md)
 
 ## 相关主题

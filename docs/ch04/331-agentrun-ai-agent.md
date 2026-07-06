@@ -11,11 +11,11 @@
 作为全球  AI4S  行业的开拓者和引领者，  2018  年起，深势科技就开始与阿里云合作推动科学计算上云，突破传统算力瓶颈，成功实现大规模科学计算推理的云端化。今天，  AI Agent  的爆发正在加速新格局的形成，深势科技认为，  AI  正在从最初的辅助型工具，演变为驱动科研的  "  原生范式  "  。为了承载这一愿景，深势科技打造了集算力、模型、知识于一体的科研工作入口玻尔（  Bohrium  ）科研空间站，为全球  2000  万科学家提供数智赋能。
 
 ## 相关实体
-- [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/agentrun-cli-v010-正式开源一行命令运行您的托管-agent.md)
-- [Aliyun Agentrun 5Min Quickstart](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-agentrun-5min-quickstart.md)
-- [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
-- [Ath Agent Trust Handshake Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/ath-agent-trust-handshake-protocol.md)
+- [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](ch04/003-agentrun.md)
+- [Aliyun Agentrun 5Min Quickstart](ch04/003-agentrun.md)
+- [Wow Harness V3 Governance Protocol](../ch05/009-harness.md)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/350-hermes-agent-goal.md)
+- [Ath Agent Trust Handshake Protocol](../ch03/045-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/深势科技携手阿里云-agentrun加速科研-ai-agent-全速运行.md)
 

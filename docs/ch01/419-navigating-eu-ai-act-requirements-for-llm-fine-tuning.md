@@ -22,12 +22,12 @@ The EU AI Act requires organizations fine-tuning large language models (LLMs) to
 - [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
 
 ## 相关实体
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
-- [LLM-as-Judge: RFT的6步法官设计方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-reinforcement-fine-tuning-llm-as-judge.md)
-- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md)
-- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/developing-flink-monitoring-system-on-amazon-emr-with-kiro-ai-ide.md)
-- [Build financial document processing with Pulse AI and Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md)
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/609-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
+- [LLM-as-Judge: RFT的6步法官设计方法论](ch01/580-llm.md)
+- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](../ch11/257-amazon-nova.md)
+- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](../ch04/229-ai.md)
+- [Build financial document processing with Pulse AI and Amazon Bedrock](../ch11/130-build-financial-document-processing-with-pulse-ai-and-amazon.md)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/499-amazon-bedrock-agentcore.md)
 
 ## 深度分析
 ### EU AI Act 合规框架的核心逻辑

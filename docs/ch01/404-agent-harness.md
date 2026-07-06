@@ -87,16 +87,16 @@ Boris Cherny 报告自验证提升 2-3x 质量，但这是有代价的：每步�
 8. **框架选择决策树**：需要确定性长流程 → LangGraph；需要多角色协作 → CrewAI；需要最大化定制灵活性 → 自己实现笨循环（Anthropic SDK）；需要快速原型且不确定长期需求 → OpenAI Agents SDK。
 
 ## 相关实体
-- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki/blob/main/entities/thin-harness-fat-skills.md)
-- [你不知道的 Agent 原理架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-principle-architecture-engineering-practice.md)
-- [Design Patterns for AI Agents 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/design-patterns-for-ai-agents-2026.md)
+- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/009-harness.md)
+- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.md)
+- [你不知道的 Agent 原理架构与工程实践](../ch04/326-agent-principle-architecture-engineering-practice.md)
+- [Design Patterns for AI Agents 2026](../ch04/092-design-patterns-for-ai-agents-2026-4-5-reflection.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-- [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
-- [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [harness-engineering-systematic-explainer](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-explainer.md)
-- [Claude Code Dynamic Workflows Source Code Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-dynamic-workflows-source-code-architecture.md)
+- [Agent Harness 架构](../ch05/038-agent-harness.md)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.md)
+- [harness-engineering-systematic-explainer](../ch05/092-harness-engineering.md)
+- [Claude Code Dynamic Workflows Source Code Architecture](../ch09/078-claude-code-dynamic-workflows.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-structure-navigation.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 

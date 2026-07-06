@@ -106,10 +106,10 @@ Engineering 插件的 `CONNECTORS.md` 定义了 6 个连接器类别，每个用
 
 ## 相关实体
 
-- [Knowledge Work Plugins Shuge Anthropic Deep Source](https://github.com/QianJinGuo/wiki/blob/main/entities/knowledge-work-plugins-shuge-anthropic-deep-source.md) — 同源姊妹篇：数滴云对同一仓库的深度解读，互补视角
-- [Anthropic Agent Skills Design Patterns 14](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-agent-skills-design-patterns-14.md) — Anthropic 官方 14 条 Skill 设计模式
-- [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-system-design-three-way-comparison.md) — OpenClaw / Claude Code / Hermes 三方 Skill 系统对比
-- [Claude Code Skills Workflow Encapsulation Costa Long](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-workflow-encapsulation-costa-long.md) — Claude Code Skills 工作流封装机制
+- [Knowledge Work Plugins Shuge Anthropic Deep Source](../ch01/833-anthropic.md) — 同源姊妹篇：数滴云对同一仓库的深度解读，互补视角
+- [Anthropic Agent Skills Design Patterns 14](../ch04/247-anthropic-agent.md) — Anthropic 官方 14 条 Skill 设计模式
+- [Skill System Design Three Way Comparison](../ch04/262-skill.md) — OpenClaw / Claude Code / Hermes 三方 Skill 系统对比
+- [Claude Code Skills Workflow Encapsulation Costa Long](../ch03/075-claude-code.md) — Claude Code Skills 工作流封装机制
 
 ---
 
