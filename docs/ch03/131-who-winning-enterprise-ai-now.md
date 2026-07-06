@@ -27,7 +27,7 @@
 - [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04/296-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/128-control-where-your-ai-agents-can-browse-with-chrome-enterpri.md)
 - [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](../ch11/202-amazon-quick.md)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/060-agentic-ai.md)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/059-agentic-ai.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
 

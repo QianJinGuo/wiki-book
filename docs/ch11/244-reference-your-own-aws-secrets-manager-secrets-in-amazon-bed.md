@@ -38,7 +38,7 @@ AI agents are only as powerful as the tools they can access.
 ### 关联实体
 
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/213-openclaw.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)

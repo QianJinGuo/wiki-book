@@ -40,8 +40,8 @@ _Figure 1. MCG toolkit architecture: Generate a comprehensive model card by dire
 ## 相关实体
 - [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
 - [Nvidia Mcg Model Documentation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-mcg-model-documentation.md)
-- [Nvidia Gpu Kernel Translation Cute Python Julia](../ch04/533-python.md)
-- [Nvidia Edge First Llms Av Robotics](../ch01/283-nvidia-edge-first-llms-av-robotics.md)
+- [Nvidia Gpu Kernel Translation Cute Python Julia](../ch04/534-python.md)
+- [Nvidia Edge First Llms Av Robotics](../ch01/292-nvidia-edge-first-llms-av-robotics.md)
 - [Nvidia Cut Checkpoint Costs Nvcomp](ch03/030-nvidia-cut-checkpoint-costs-nvcomp.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 

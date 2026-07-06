@@ -164,7 +164,7 @@ BFD（Bidirectional Forwarding Detection）在其中的作用是将故障检测�
 - [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/direct-connect-dx-迁移最佳实践.md)
-- [databricks storage ecosystem & opensharing：企业数据治理从 migrate e](../ch01/1019-rag.md)
+- [databricks storage ecosystem & opensharing：企业数据治理从 migrate e](../ch01/1033-rag.md)
 
 ---
 

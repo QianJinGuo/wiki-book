@@ -14,7 +14,7 @@
 - [Claude Code Prompt Context Harness](../ch09/059-claude-code-prompt.md)
 - [From Prompt To Harness Claude Official](ch05/009-harness.md)
 - [Claude Code Harness Deep Dive Founder Park](ch05/060-claude-code-harness.md)
-- [Anthropic Managed Agents Scaling](../ch01/833-anthropic.md)
+- [Anthropic Managed Agents Scaling](../ch01/846-anthropic.md)
 - [Hermes Agent Deep Dive Alibaba](../ch03/090-hermes-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-factory-yueheng.md)

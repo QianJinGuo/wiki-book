@@ -13,10 +13,10 @@
 - LLM 可将钓鱼成本降低 95% 以上，同时保持同等成功率（Harvard Business Review）
 ## 相关实体
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Ai Agents Inside Perimeter Hackernews](../ch04/030-ai-agent.md)
-- [Llm Raiders Private Ai Server](../ch01/580-llm.md)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/147-ai-agent.md)
+- [Llm Raiders Private Ai Server](../ch01/590-llm.md)
 - [Bluekit](ch12/083-meet-bluekit-the-ai-powered-all-in-one-phishing-kit.md)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/138-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.md)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/139-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 

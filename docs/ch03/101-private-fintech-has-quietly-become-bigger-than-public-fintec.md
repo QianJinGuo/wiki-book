@@ -45,10 +45,10 @@ Here’s where the report’s headline finding gets complicated. The top 10 are 
 
 ## 相关实体
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
-- [Plaid Effects](../ch04/229-ai.md)
-- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch04/229-ai.md)
+- [Plaid Effects](../ch04/070-ai.md)
+- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch04/070-ai.md)
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](../ch11/052-prowler-genai.md)
-- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01/065-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.md)
+- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01/066-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/private-fintech-vs-public-fintech.md)
 

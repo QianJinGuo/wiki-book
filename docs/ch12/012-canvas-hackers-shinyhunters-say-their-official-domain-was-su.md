@@ -285,12 +285,12 @@ Canvas LMS 攻击影响全球数百所大学，凸显了教育机构在网络安
 2. **了解暗网风险的局限性** — 虽然 Tor 提供了匿名性，但它也是欺诈者和攻击者的避风港，对任何暗网内容的信任都应保持谨慎。
 
 ## 相关实体
-- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/135-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.md)
-- [Npm Supply Chain Compromise Postmortem](../ch04/229-ai.md)
+- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/136-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.md)
+- [Npm Supply Chain Compromise Postmortem](../ch04/070-ai.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/402-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.md)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/956-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.md)
-- [a route to root in a 4g industrial router](../ch01/897-20.md)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/411-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.md)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/970-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.md)
+- [a route to root in a 4g industrial router](../ch01/911-20.md)
 
 ---
 

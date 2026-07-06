@@ -37,9 +37,9 @@ Claude Code 的 Hook 系统用 AI 来审查 AI ^。Prompt Hook 调用 Claude Son
 
 ## 相关实体
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/075-claude-code.md)
-- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/383-claude-code-agent-teams.md)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/392-claude-code-agent-teams.md)
 - [Claude Code Source Architecture](../ch03/075-claude-code.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/342-anthropic-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/1113-anthropic-claude-code.md)
 - [Claude Code Tool Design Evolution Anthropic](../ch03/075-claude-code.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 

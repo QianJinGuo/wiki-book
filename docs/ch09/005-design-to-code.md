@@ -24,7 +24,7 @@
 
 - [场景营销前端 AI Coding — AI Native 的视觉稿还原](../ch05/018-ai-native.md)
 - [场景营销前端 AI Coding — 从问题到方案](../ch05/081-ai-coding.md)
-- [视觉还原 AI 技术](../ch04/229-ai.md)
+- [视觉还原 AI 技术](../ch04/070-ai.md)
 - [淘宝前端 AI 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-frontend-practices.md)
 - [Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判](../ch05/001-impeccable.md)
 

@@ -106,8 +106,8 @@ Cognition 的模型路由架构经历了三代演进：
 - [AI Coding Agent Token 成本控制五层模型](../ch09/047-coding-agent.md)
 - [Netflix Switchboard 模型路由](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
 - [Cursor Reward Hacking 编码基准](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-reward-hacking-coding-benchmarks.md)
-- [Cursor Harness 模型生产](../ch01/323-cursor-harness-model-production-floor.md)
-- [Agent Harnesses 的演进](../ch04/606-agent-harnesses-are-dead-long-live-agent-harnesses.md)
+- [Cursor Harness 模型生产](../ch01/332-cursor-harness-model-production-floor.md)
+- [Agent Harnesses 的演进](../ch04/609-agent-harnesses-are-dead-long-live-agent-harnesses.md)
 - [Harness Engineering 核心模式](ch05/092-harness-engineering.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/devin-fusion.md)
