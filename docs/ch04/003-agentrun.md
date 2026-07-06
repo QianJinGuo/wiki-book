@@ -113,7 +113,7 @@ AgentRun 基于函数计算计费，核心优势是**按实际调用计费 + 零
 → [原文存档：5分钟上手](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
 → [原文存档：2行代码集成](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aliyun-agentrun-2line-integration.md)
 
-- [GBrain](ch04/277-ai.md)
+- [GBrain](ch04/069-ai.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)

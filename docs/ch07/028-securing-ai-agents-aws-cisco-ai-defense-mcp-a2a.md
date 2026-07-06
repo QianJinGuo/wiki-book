@@ -73,7 +73,7 @@ AWS/Cisco 把企业 AI 部署的核心痛点归纳为三个盲区，每个盲区
 3. **"扫描 + 人工复核"成为合规基线**：企业 AI 部署的合规要求从"事后审计"升级为"事前扫描 + 事中标记 + 事后追溯"
 4. **MCP/A2A 从"开发者协议"升级为"企业协议"**：随着安全护栏的成熟，MCP/A2A 不再只是 Anthropic / Google 的实验性协议，而是企业级基础设施
 
-### 与 [U Of T Ai Worm Cleverhans Research](ch04/277-ai.md) 的连接
+### 与 [U Of T Ai Worm Cleverhans Research](ch04/069-ai.md) 的连接
 
 U of T CleverHans 团队展示的 AI Worm 揭示的威胁场景，与本文描述的"自服务开通 + 安全护栏"形成直接对照：
 
@@ -106,18 +106,18 @@ AWS 在合作中开源的 **MCP Gateway Registry** 提供"agent 和 server 治�
 
 ## 相关实体
 
-- [U Of T Ai Worm Cleverhans Research](ch04/277-ai.md)
+- [U Of T Ai Worm Cleverhans Research](ch04/069-ai.md)
 - [Qy_Zacztcs1Ql3Bifmbmgg](https://github.com/QianJinGuo/wiki/blob/main/entities/qy_zaCZTCs1Ql3BIFmBMgg.md)
-- [Claude Code Harness Deep Understanding](ch01/484-claude-code-harness-deep-understanding.md)
+- [Claude Code Harness Deep Understanding](ch01/456-claude-code-harness-deep-understanding.md)
 - [Harness Engineering Core Patterns Claude Code](ch03/075-claude-code.md)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/277-ai.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/277-ai.md)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/069-ai.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/069-ai.md)
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)
 - [Mcp Protocol Ecosystem](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
 - [Llm Security Red Teaming](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-security-red-teaming.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
-- [电商 ai 操作系统崛起：从「工具人」到「all in one」+ 行业 knowhow skill 化 + 5 巨头](ch04/277-ai.md)
+- [电商 ai 操作系统崛起：从「工具人」到「all in one」+ 行业 knowhow skill 化 + 5 巨头](ch04/069-ai.md)
 
 ---
 

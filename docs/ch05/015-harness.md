@@ -54,7 +54,7 @@
 
 工程里更稳的分配是：**便宜、稳定、快速的检查尽量前移**；**昂贵、不确定、需要取舍的检查留给关键节点**。
 
-这与 [六条经验](ch04/277-ai.md) 里的"测试和重构不是旧时代包袱，而是 AI 时代的价值锚——AI 生成越快，确定性反馈环越值钱"完全一致：Martin Fowler 与 OpenAI Harness Engineering 的共识在这里再次出现。
+这与 [六条经验](ch04/069-ai.md) 里的"测试和重构不是旧时代包袱，而是 AI 时代的价值锚——AI 生成越快，确定性反馈环越值钱"完全一致：Martin Fowler 与 OpenAI Harness Engineering 的共识在这里再次出现。
 
 ## 核心框架 3：先做三件事（运行时契约 / 提交闸门 / 失败回写）
 
@@ -141,8 +141,8 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
 ## 与其他实体的关系
 
 - **基础理论**：
-  - [Harness Engineering Survey](ch05/061-harness-engineering.md)（CMU/Yale/Johns Hopkins，ETCLOVG 七层分类的源头）
-  - [Harness Engineering — ETCLOVG Taxonomy](ch05/061-harness-engineering.md)（七层分类的独立条目）
+  - [Harness Engineering Survey](ch01/216-0.md)（CMU/Yale/Johns Hopkins，ETCLOVG 七层分类的源头）
+  - [Harness Engineering — ETCLOVG Taxonomy](ch05/085-harness.md)（七层分类的独立条目）
 - **同作者系列**：
   - Ralph Loop 与可接管 Harness（2026-05-10）（2026-05-10，三类漂移 + 可接手标准）
   - Hermes 5 张卡治理框架（2026-06-01）（2026-06-01，don't automate slop）
@@ -151,9 +151,9 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
 - **互补实践**：
   - [Codex /goal Runtime](ch09/046-codex-goal.md)（任务级状态文件 GOAL.md/PLAN.md/PROGRESS.md）
   - [Anthropic 长时运行 Agent 架构](ch03/045-agent.md)（对抗式设计 + 合同谈判 + 审美量化）
-  - [六条经验：让 AI 编码 Agent 变得可控](ch04/277-ai.md)（Martin Fowler 反馈环共识）
-  - [Harness design for long running apps](ch05/009-harness.md)（Anthropic 官方长任务 Harness 解读）
-  - [Martin Fowler：非确定性进了研发链路](ch04/277-ai.md)（前馈/反馈原文）
+  - [六条经验：让 AI 编码 Agent 变得可控](ch04/069-ai.md)（Martin Fowler 反馈环共识）
+  - [Harness design for long running apps](ch05/085-harness.md)（Anthropic 官方长任务 Harness 解读）
+  - [Martin Fowler：非确定性进了研发链路](ch04/069-ai.md)（前馈/反馈原文）
 - **概念图**：
   - [Long-Running Agent 架构三大模式与演进路径](https://github.com/QianJinGuo/wiki/blob/main/concepts/long-running-agent-architecture.md)
 
@@ -180,7 +180,7 @@ CMU/Yale/Johns Hopkins 的七层 ETCLOVG 分类（Execution / Tooling / Context 
 
 ### 3. 记忆预算观重新定义了 memory 的角色
 
-若飞在本文和 5 张卡续篇里反复强调"记忆像预算，不像仓库"——长期记忆不是存储，而是选择性消耗认知资源的决策。这个框架与 [六条经验](ch04/277-ai.md) 里"AI 生成越快，确定性反馈环越值钱"共享同一个底层逻辑：资源（token 预算、注意力预算、判断预算）越稀缺，越需要把资源分配给高价值验证，而不是把所有中间结果都沉淀成"经验"。把临时绕路、失败猜测、一次性偏好写入长期记忆，是在预支明天的认知预算。
+若飞在本文和 5 张卡续篇里反复强调"记忆像预算，不像仓库"——长期记忆不是存储，而是选择性消耗认知资源的决策。这个框架与 [六条经验](ch04/069-ai.md) 里"AI 生成越快，确定性反馈环越值钱"共享同一个底层逻辑：资源（token 预算、注意力预算、判断预算）越稀缺，越需要把资源分配给高价值验证，而不是把所有中间结果都沉淀成"经验"。把临时绕路、失败猜测、一次性偏好写入长期记忆，是在预支明天的认知预算。
 
 ### 4. 前馈/反馈 × 计算/语义的二维控制矩阵有实操价值
 

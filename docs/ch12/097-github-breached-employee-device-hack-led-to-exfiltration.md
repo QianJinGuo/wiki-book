@@ -10,11 +10,11 @@
 - 来源：https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html
 
 ## 相关实体
-- [Github Investigating Teampcp Claimed 17Cc77](ch04/277-ai.md)
+- [Github Investigating Teampcp Claimed 17Cc77](ch04/069-ai.md)
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](ch01/1171-llm.md)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/492-score-by-collisions-patch-by-panic.md)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/498-score-by-collisions-patch-by-panic.md)
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt 2](ch01/834-github.md)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/277-ai.md)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)
 

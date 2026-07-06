@@ -64,13 +64,13 @@ Claude for Small Business 代表了一种新兴的「AI Native SMB 产品」范�
 ## 相关实体
 - [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.md)
 - [Anthropic puts Claude agents on a meter across its subscriptions](ch03/045-agent.md)
-- [Xero Announces Integration with Anthropic's Claude](ch01/485-claude.md)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/485-claude.md)
+- [Xero Announces Integration with Anthropic's Claude](ch01/1022-claude.md)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1022-claude.md)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/216-0.md)
 - [Claude Managed Agents 官方 Harness 平台指南](ch03/045-agent.md)
-- [Anthropic Computer Use 最佳实践](ch01/831-anthropic-computer-use.md)
+- [Anthropic Computer Use 最佳实践](ch01/855-anthropic.md)
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/075-claude-code.md)
-- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch04/277-ai.md)
+- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch04/069-ai.md)
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch03/045-agent.md)
 
 ---

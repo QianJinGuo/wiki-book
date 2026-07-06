@@ -14,10 +14,10 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [CloudSectiDbits: Masso - Cognito SSO Bypass](ch11/224-cloudsectidbits.md)
+- [CloudSectiDbits: Masso - Cognito SSO Bypass](ch11/222-cloudsectidbits.md)
 - [Vietnam to develop domestic cloud](ch01/1014-opd.md)
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch03/045-agent.md)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/277-ai.md)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/069-ai.md)
 
 - [The Agency Model Dangers](https://github.com/QianJinGuo/wiki/blob/main/concepts/the-agency-model-dangers.md)
 ## 深度分析

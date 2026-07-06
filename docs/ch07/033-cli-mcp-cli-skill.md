@@ -122,11 +122,11 @@ Skill 是组织经验和方法论的载体。不要把 Skill 看作"让 Agent �
 ## 关联阅读
 
 ## 相关实体
-- [Production Ai Agents Mcp Cli Skills Stack Ayi](ch04/255-skill.md)
-- [From Agent Protocol To Harness Skill](ch04/375-from-agent-protocol-to-harness-skill.md)
+- [Production Ai Agents Mcp Cli Skills Stack Ayi](ch04/258-skill.md)
+- [From Agent Protocol To Harness Skill](ch04/383-from-agent-protocol-to-harness-skill.md)
 - [Claude Code Core Internals](ch03/075-claude-code.md)
-- [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](ch01/309-rag.md)
-- [Agentscope Java Harness Framework Enterprise Distributed](ch03/045-agent.md)
+- [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](ch01/1019-rag.md)
+- [Agentscope Java Harness Framework Enterprise Distributed](ch05/085-harness.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

@@ -13,8 +13,8 @@
 - VPC + 默认零数据保留，平台内置 guardrails
 ## 相关实体
 - [Serverless Inference](ch11/003-serverless-inference.md)
-- [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/253-bedrock.md)
-- [Aws Network Firewall Ai Conflict Detection Bedrock](ch04/277-ai.md)
+- [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/251-bedrock.md)
+- [Aws Network Firewall Ai Conflict Detection Bedrock](ch04/069-ai.md)
 - [Kiro Job Scheduler Eventbridge Ecs Fargate](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/045-agent.md)
 

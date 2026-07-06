@@ -8,7 +8,7 @@
 - 评分：v=7, c=8（v×c=56）
 - 来源：The Guardian（Anthropic 安全漏洞披露）
 ## 相关实体
-- [Chinese Ai Lab Insights Nathan](ch04/277-ai.md)
+- [Chinese Ai Lab Insights Nathan](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/linn-fritz-looks-at-the-lighter-side-of-life.md)
 

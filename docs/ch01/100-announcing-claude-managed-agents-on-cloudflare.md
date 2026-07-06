@@ -27,7 +27,7 @@
 ## 相关实体
 - [Anthropic Puts Claude Agents On A Meter Across Its](ch03/045-agent.md)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch03/045-agent.md)
-- [Claude Managed Agents](ch04/592-claude-managed-agents.md)
+- [Claude Managed Agents](ch04/603-claude-managed-agents.md)
 - [Anthropic Claude Managed Agents Platform Launch](ch03/045-agent.md)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/216-0.md)
 

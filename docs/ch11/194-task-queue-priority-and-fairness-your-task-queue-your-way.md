@@ -12,7 +12,7 @@
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/task-queue-priority-and-fairness.md)
 
 ## 相关实体
-- [Task Queue Priority and Fairness: Your Task Queue, your way](ch04/277-ai.md)
+- [Task Queue Priority and Fairness: Your Task Queue, your way](ch04/069-ai.md)
 - [Task Queue Priority and Fairness: Your Task Queue, Your Way](ch11/233-task-queue-priority-and-fairness-your-task-queue-your-way.md)
 
 - [Neurips 2026 Pangram Controversy](ch01/216-0.md)

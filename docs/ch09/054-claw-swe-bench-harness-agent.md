@@ -99,7 +99,7 @@ SWE-bench 长期以 Python 为绝对主力，而 Claw-SWE-Bench 的 350 个实�
 
 **1. 评测报告必须包含 API 总成本，而不只是 Pass@1**
 
-单一 Pass@1 数字无法支撑真实决策。同等准确率下成本可能相差两个数量级，而成本直接影响可持续的迭代频率。未来的编程 Agent 评测规范应强制要求汇报完整运行成本，让横向比较真正有意义。 [Harness Engineering](ch05/061-harness-engineering.md)
+单一 Pass@1 数字无法支撑真实决策。同等准确率下成本可能相差两个数量级，而成本直接影响可持续的迭代频率。未来的编程 Agent 评测规范应强制要求汇报完整运行成本，让横向比较真正有意义。 [Harness Engineering](ch05/085-harness.md)
 
 **2. 使用 Lite-80 进行高频迭代，full-350 用于正式汇报**
 
@@ -119,13 +119,13 @@ Git 历史泄露问题在被发现前存在于 SWE-bench-Multilingual 的生产�
 
 ## 相关实体
 
-- [Harness Engineering](ch05/061-harness-engineering.md)
-- [Coding Harness 工程本质](ch11/215-openclaw.md)
-- [复旦北大 AHE Agentic Harness Engineering](ch05/061-harness-engineering.md)
+- [Harness Engineering](ch05/091-harness-engineering.md)
+- [Coding Harness 工程本质](ch05/085-harness.md)
+- [复旦北大 AHE Agentic Harness Engineering](ch05/085-harness.md)
 - [OpenClaw Agent Loop Design Patterns](ch03/045-agent.md)
 - [Harness Engineering 7 Layers](ch03/075-claude-code.md)
 - [Agent Eval 框架](ch03/045-agent.md)
-- [AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级](ch04/277-ai.md)
+- [AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级](ch04/069-ai.md)
 - [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 

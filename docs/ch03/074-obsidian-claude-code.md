@@ -56,7 +56,7 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 - **sync-claude-sessions**：会话结束时自动导出为 Markdown
 - **/recall 技能**：新会话开始前把相关上下文拉回来
 
-这套方案对应的不是「更好用的笔记」，而是「让每一次 Agent 对话都不是一次性消耗」。它和 [Agent 长期记忆架构](ch03/045-agent.md)、Warp Oz 的 [cross-harness Agent Memory](ch03/045-agent.md) 处于同一个赛道——都是在解决「Agent 失忆」这个根本问题，只是 QMD 选择了「本地优先 + Markdown 原生」的路径。
+这套方案对应的不是「更好用的笔记」，而是「让每一次 Agent 对话都不是一次性消耗」。它和 [Agent 长期记忆架构](ch03/045-agent.md)、Warp Oz 的 [cross-harness Agent Memory](ch05/085-harness.md) 处于同一个赛道——都是在解决「Agent 失忆」这个根本问题，只是 QMD 选择了「本地优先 + Markdown 原生」的路径。
 
 ### 文件混乱治理：四层防线
 

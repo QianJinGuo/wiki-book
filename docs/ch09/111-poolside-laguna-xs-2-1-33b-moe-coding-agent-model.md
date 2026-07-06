@@ -44,7 +44,7 @@ OpenMDW-1.1 许可证赋予了开发者最大的使用自由度，而 API 定价
 
 ### 5. 与开源 Agent 生态系统深度集成
 
-支持 vLLM、SGLang、TensorRT-LLM、Ollama 和 HuggingFace Transformers 等主流推理框架，意味着开发者可以无缝接入 [Claude Code](ch03/075-claude-code.md)、[Codex](ch01/542-codex.md) 或其他支持 BYOM 的 Agent 系统，而不受限于 Poolside 自身的工具链。这种生态兼容策略有助于其在快速演变的开源 Agent 工具链中保持长期相关性。
+支持 vLLM、SGLang、TensorRT-LLM、Ollama 和 HuggingFace Transformers 等主流推理框架，意味着开发者可以无缝接入 [Claude Code](ch03/075-claude-code.md)、[Codex](ch01/516-codex.md) 或其他支持 BYOM 的 Agent 系统，而不受限于 Poolside 自身的工具链。这种生态兼容策略有助于其在快速演变的开源 Agent 工具链中保持长期相关性。
 
 ## 实践启示
 
@@ -54,7 +54,7 @@ OpenMDW-1.1 许可证赋予了开发者最大的使用自由度，而 API 定价
 
 3. **Agentic Coding 场景的定价应匹配其使用模式**：Coding Agent 会在多次交互中重复发送项目上下文（System Prompt、CLAUDE.md 等），cache-read 友好型定价模型可降低 50%+ 的实际使用成本。采购 API 时应关注 caching tier 定价而非仅看输入/输出价格。
 
-4. **开源 Coding Agent 模型正在形成分层竞争格局**：Laguna XS 2.1 (63.1% SWE-bench ML) 与 [DeepSeek](ch01/923-deepseek.md)、Qwen 等国产模型之间的差距正在收窄，开发者应基于本地部署成本、推理速度和特定语言/框架的支持度做综合选型，而非仅看单点基准分数。
+4. **开源 Coding Agent 模型正在形成分层竞争格局**：Laguna XS 2.1 (63.1% SWE-bench ML) 与 [DeepSeek](ch01/420-deepseek.md)、Qwen 等国产模型之间的差距正在收窄，开发者应基于本地部署成本、推理速度和特定语言/框架的支持度做综合选型，而非仅看单点基准分数。
 
 5. **256K 上下文对 Coding Agent 的实际意义**：256K 上下文足够覆盖中等规模项目的完整代码库，使得 Agent 可以在不依赖 RAG 或分块策略的情况下处理大多数仓库。这一能力与 Agentic Coding 工作流的深度集成比单纯的基准分数更重要。
 
@@ -64,10 +64,10 @@ Laguna XS 2.1 是 Agentic Coding 领域当前最具竞争力的开源模型之�
 
 ## 相关实体
 
-- [Codex 五层架构](ch01/542-codex.md)
+- [Codex 五层架构](ch01/516-codex.md)
 - [Claude Code 深度架构分析](ch03/075-claude-code.md)
 - [Pi Agent](ch03/045-agent.md)
-- [LLM Post-Training](ch04/277-ai.md)
+- [LLM Post-Training](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/poolside-laguna-xs-2-1-2026.md)
 

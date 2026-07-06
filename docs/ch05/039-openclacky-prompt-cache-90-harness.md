@@ -171,11 +171,11 @@ System Prompt冻结原则体现了一个深层工程哲学：**不变性是最�
 
 ## 相关实体
 ## 相关实体
-- [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/061-harness-engineering.md)
-- [Deepseek Cost Migration System Layer Kv Cache Harness](ch01/923-deepseek.md)
-- [Openclaw Prompt Context Harness](ch11/215-openclaw.md)
-- [Prompt Context Harness Three Evolutions](ch05/009-harness.md)
-- [From Prompt To Harness Claude Official](ch01/485-claude.md)
+- [Openclacky Harness Engineering 100 Percent Cache Hit](ch01/216-0.md)
+- [Deepseek Cost Migration System Layer Kv Cache Harness](ch05/085-harness.md)
+- [Openclaw Prompt Context Harness](ch05/085-harness.md)
+- [Prompt Context Harness Three Evolutions](ch05/085-harness.md)
+- [From Prompt To Harness Claude Official](ch05/085-harness.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md)
 

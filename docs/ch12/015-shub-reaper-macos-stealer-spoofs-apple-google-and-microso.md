@@ -15,8 +15,8 @@
 - [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](ch01/216-0.md)
 - [Fake Job Interview Apps Drop Jobstealer Malware On Windows And Macos](ch12/049-fake-job-interview-apps-drop-jobstealer-malware-on-windows-a.md)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/277-ai.md)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch04/277-ai.md)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch04/069-ai.md)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/shub-reaper-macos-stealer-attack-chain.md)
 

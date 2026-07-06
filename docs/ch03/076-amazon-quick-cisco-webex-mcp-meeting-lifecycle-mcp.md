@@ -87,7 +87,7 @@ Webex MCP server 提供了**完整 read/write scope 分离**，Amazon Quick 集�
 - [Amazon Quick 操作飞书：自建远程 MCP](ch11/202-amazon-quick.md) — 对比案例，国产办公协同自建 MCP 模式
 - [Amazon Quick + Snowflake MCP AML 反洗钱](ch11/202-amazon-quick.md) — 合规场景 MCP 集成
 - [Aderant 法律云运营案例](ch11/183-aderant-transforms-cloud-operations-with-amazon-quick.md) — Amazon Quick 行业 case study（legal-tech 角度）
-- [Amazon Bedrock AgentCore](ch03/045-agent.md) — 另一种 Amazon MCP 部署 runtime（vs Amazon Quick 原生 MCP 集成）
+- [Amazon Bedrock AgentCore](ch05/085-harness.md) — 另一种 Amazon MCP 部署 runtime（vs Amazon Quick 原生 MCP 集成）
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

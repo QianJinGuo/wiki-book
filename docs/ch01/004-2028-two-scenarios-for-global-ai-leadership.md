@@ -189,9 +189,9 @@ Mythos Preview让Firefox在一个月内修复的安全漏洞超过2025年全年�
 ## 相关实体
 - [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.md)
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/110-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md)
-- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch04/277-ai.md)
-- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/485-claude.md)
-- [Anthropic联创2028 Ai自我构建概率超60](ch04/277-ai.md)
+- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch04/069-ai.md)
+- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/1022-claude.md)
+- [Anthropic联创2028 Ai自我构建概率超60](ch04/069-ai.md)
 
 → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2028-two-scenarios-for-global-ai-leadership.md)
 

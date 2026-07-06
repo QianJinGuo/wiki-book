@@ -8,7 +8,7 @@
 大家好，欢迎来到 code秘密花园，我是花园老师（ConardLi）
 
 ## 相关实体
-- [Skill Development Guide Aliyun 2026](ch04/255-skill.md)
+- [Skill Development Guide Aliyun 2026](ch04/258-skill.md)
 - [Manus.Im Manus Schedules](https://github.com/QianJinGuo/wiki/blob/main/entities/manus.im-manus-schedules.md)
 - [Openclaw Multi Agent Team Practice](ch03/045-agent.md)
 - [Strands Agents Cloud Cost Optimizer](ch03/045-agent.md)
