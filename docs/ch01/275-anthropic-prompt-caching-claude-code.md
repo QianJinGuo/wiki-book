@@ -1,0 +1,207 @@
+# Anthropic 最新博客：Prompt Caching 是构建 Claude Code 的一切
+
+## Ch01.275 Anthropic 最新博客：Prompt Caching 是构建 Claude Code 的一切
+
+> 📊 Level ⭐⭐ | 22.2KB | `entities/anthropic-prompt-caching-claude-code-agihunt.md`
+
+# Anthropic 最新博客：Prompt Caching 是构建 Claude Code 的一切
+原创 J0hn AGI Hunt
+2026年5月2日 21:30 北京
+Anthropic 的工程师们写了篇技术博客，标题是：构建 Claude Code 的经验教训：Prompt Caching 就是一切。
+Claude Code 是目前最受欢迎的 AI 编程工具之一，而支撑它流畅运行的底层秘密，其实就藏在「缓存」这两个字里。这篇博客一共讲了 7 条经验，条条都是踩坑踩出来的。
+
+## 01 缓存即基建
+Anthropic 内部把 Prompt Cache 的命中率当作基础设施级别的指标来监控，地位跟服务器 uptime 差不多。一旦命中率下降，就会触发 oncall 告警，工程师得像处理线上事故一样去排查。
+换句话说，缓存在 Claude Code 里，并非锦上添花的优化，而是整个系统能跑起来的前提。
+为什么呢？
+因为 Claude Code 这类 Agent 产品有一个特殊性：它是长对话的。用户可能在一个 session 里聊几十轮，每一轮都要把之前的上下文带上重新发给模型。如果每次都从头算，延迟和成本都会爆炸。
+而 Prompt Caching 的原理说白了就一句话：**前缀匹配**。
+API 会缓存从请求开头到每个 `cache_control` 断点之间的所有内容。只要下次请求的前缀跟上次一样，就能复用之前的计算结果，不用重新跑。
+而所有经验中最重要的一条，也就从这个原理生长出来。
+
+## 02 排好队形
+既然缓存靠前缀匹配，那 prompt 里内容的排列顺序就至关重要了。
+Anthropic 给出的最佳实践是这样排的：
+1. **静态系统 prompt 和工具定义**（全局缓存，所有 session 共享）
+2. **CLAUDE.md 文档**（项目级缓存，同一个项目内共享）
+3. **Session 上下文**（会话级缓存，单次会话内共享）
+4. **对话消息**（逐轮增长，每轮只新增最后一条）
+一句话概括：**越不容易变的东西，越往前放。**
+这就好比你收拾书桌，常年不动的参考书放最底层，这周要看的资料放中间，今天正在写的草稿放最上面。只有这样，你每天坐下来才不用把整张桌子翻一遍。
+而这里面有几个特别容易踩的坑：
+
+- 在静态 prompt 里嵌了时间戳，每秒都在变，缓存直接废掉。
+- 工具定义的排列顺序不确定（比如用了 dict 或 set），每次请求顺序都不一样，前缀就对不上了。
+- 工具参数更新了（哪怕只改一个字段），整个前缀的缓存也会失效。
+
+## 03 别动 Prompt
+那如果信息确实过时了怎么办呢？比如时间戳、文件变更状态这些。
+Anthropic 的做法是：**别去改 prompt，把更新塞进下一轮的消息里。**
+具体来说，Claude Code 会用 `<system-reminder>` 这样的标签，把需要更新的信息放进 user message 或者 tool result 里。这样系统 prompt 纹丝不动，缓存完好无损。
+这个设计背后的思路值得琢磨：prompt 是「不可变的基础设施」，消息才是「流动的信息层」。把它们分开，缓存自然就稳了。
+
+## 04 别换模型
+你可能会想：对话中遇到简单问题，切到 Haiku 省点钱，遇到难题再切回 Opus，多合理啊？
+但实际情况是，**缓存是跟模型绑定的。**
+换模型就意味着……之前积攒的所有缓存全部作废，得从头重建。重建缓存的成本，往往比让 Opus 直接回答那个简单问题还要高。
+所以 Claude Code 的策略是：**主对话自始至终用同一个模型。**
+需要用小模型干活的时候怎么办呢？用子 Agent。子 Agent 有自己独立的上下文和缓存，不会污染主对话的缓存链。做完之后，只把结果传回来就行。
+这就像办公室里，你不会为了省事让实习生坐到你工位上用你的电脑，而是给他分配一台独立的机器，做完把结果发过来。
+**注意：** 缓存是按账号隔离的。账号池混一起后缓存命中率会过低。
+
+## 05 别碰工具
+session 期间，工具集不要动。
+直觉上，你可能觉得：当前任务只需要 3 个工具，为什么要把 30 个工具的定义都留在 context 里呢？把用不着的移掉不是更干净？
+**但工具定义是缓存前缀的一部分。** 加一个、减一个……缓存就断了。一断就是整个对话的缓存全部重建，代价远远超过多放几个工具定义的 token 开销。看似在优化，实则在添乱。
+
+## 06 Plan Mode
+Claude Code 有个 Plan Mode，进入后模型只做思考和规划，不执行操作。
+按照直觉的做法，进 Plan Mode 就把执行类工具移走，退出来再加回来。但 Anthropic 没这么干。
+他们的做法是保留所有工具不动，然后加了两个特殊工具：`EnterPlanMode` 和 `ExitPlanMode`。模型调用 `EnterPlanMode` 就进入规划模式，调用 `ExitPlanMode` 就退出。
+至于「规划模式下不能执行操作」这个约束，用 system message 来传达就好，工具集不用碰。这样一来，工具集始终不变，缓存始终有效。
+而且还带来了一个额外的好处：模型可以自主判断什么时候该进 Plan Mode。遇到复杂任务，它自己调用 `EnterPlanMode` 先想清楚再动手，不需要用户手动切换。
+
+## 07 延迟加载
+Claude Code 可能会接入几十个 MCP 工具。把所有工具的完整 schema 都塞进 prompt，token 开销太大；但如果按需加减工具，又会破坏缓存。
+Anthropic 找到的折中方案是**延迟加载**。
+一开始只放一个轻量的 stub（存根），标记 `defer_loading: true`。模型看到的只是工具名和一句话描述，不含完整的参数定义。等模型真的需要用某个工具了，通过 Tool Search 去拉取完整 schema。
+这样做的好处是：prompt 前缀始终只包含那些轻量 stub，不会因为加载了某个工具的完整 schema 而变化。缓存稳稳的。
+相当于图书馆的书目索引：你先翻目录，找到想看的书再去书架取，不用把所有书都搬到桌上。
+
+## 08 压缩的学问（Cache-Safe Forking）
+长对话跑久了，context window 会被填满。这时候需要把之前的对话压缩成一个摘要，腾出空间继续聊。
+但如果另起一个 API 调用来做压缩，用了不同的 system prompt、没带工具定义……那从第一个 token 开始就跟主对话的缓存完全对不上了。两条缓存链，互相不复用，白白多花一份钱。
+Anthropic 的解决方案叫 **「Cache-Safe Forking」**：
+压缩请求必须用跟主对话**完全一样**的 system prompt、user context、工具定义，把主对话的消息作为历史带上。然后在末尾追加一条压缩指令，作为新的 user message。
+这样一来，压缩请求跟主对话共享同一条缓存链，新增的成本只有最后那条压缩指令本身。同时，还要预留一个「压缩缓冲区」，给摘要输出留够空间。
+一个压缩操作，能复用主对话积攒下来的全部缓存，几乎不会多花什么钱。
+Anthropic 还提到，Compaction 功能已经直接内置到了 API 中，开发者可以直接用，不需要自己从头实现。
+
+## 09 前缀匹配
+回头看这 7 条经验，其实都在说同一件事：**Prompt Caching 是前缀匹配。**
+所有的设计，都要围绕这一个约束来展开：
+
+- 别改 prompt
+- 别换模型
+- 别动工具
+- 别另起炉灶
+- 别瞎切账号
+这看起来是在讲缓存优化，但也是在讲一种系统设计哲学：**先确定约束，再围绕约束做设计。**
+对于正在构建 Agent 产品的开发者来说，这篇博客的价值在于：它把缓存从一个优化手段，提升到了架构约束的层面。并非「做完了顺便加个缓存」，而是得从第一天起，就围绕缓存来设计。
+---
+原文链接：https://claude.com/blog/lessons-from-building-claude-code-prompt-caching-is-everything
+Claude Code 文档：https://code.claude.com/docs/en/overview
+
+## 深度分析
+### 缓存作为架构约束，而非事后优化
+这条博客最核心的洞见是将 Prompt Caching 从"优化手段"提升到"架构约束"层面。在传统的 LLM 应用开发中，缓存通常是功能实现后才考虑的东西——先跑起来，再想着省成本。但 Anthropic 的经验说明，对于 Claude Code 这类长对话 Agent，缓存命中率高不高，直接决定了产品能不能用。
+这背后的根本原因是：**Agent 的成本结构是会话级的**。一个用户可能在单个 session 里进行几十轮交互，每轮都要带上完整上下文。如果缓存命中率低，每次请求都要从头计算，成本和延迟都会线性增长，最终导致产品不可用。
+所以正确的做法是：从设计的第一天起，就把"如何保证缓存前缀稳定"作为核心约束来考虑，而不是等功能完成后再打补丁。
+
+### 前缀匹配的核心机制与排布策略
+Prompt Caching 本质上是 **前缀匹配** —— API 缓存从请求开头到 `cache_control` 断点之间的所有内容，下一次请求如果前缀一致，就能复用之前的计算结果。这意味着：
+1. **越稳定的内容越靠前** —— 静态系统 prompt 和工具定义放最前，变动最频繁的对话消息放最后
+2. **任何对前缀的修改都会导致缓存断裂** —— 哪怕是时间戳的变化、工具顺序的调换、参数的微小修改，都会使整个缓存失效
+3. **需要分区管理缓存** —— 不同项目的 CLAUDE.md 不同，同一项目内共享；session 上下文在单次会话内共享；对话消息每轮只新增最后一条
+这其实是一种分层缓存的思想，类似于计算机架构中的多级缓存体系：L1 缓存（全局静态内容）命中最高，L2 缓存（项目级内容）次之，L3 缓存（会话级内容）再次之，对话消息则完全不缓存。
+
+### 不可变基础设施的设计哲学
+Anthropic 提出的"prompt 是不可变的基础设施，消息才是流动的信息层"这一原则，是这篇博客最值得琢磨的设计哲学。
+具体来说：
+
+- **系统 prompt 保持静态** —— 不在里面塞时间戳、文件变更状态等易变信息
+- **动态信息注入消息层** —— 通过 `<system-reminder>` 标签把更新信息放入 user message 或 tool result
+- **工具集在 session 期间保持稳定** —— 不按需加减工具，而是用延迟加载（stub + defer_loading）来管理复杂度
+这种设计的好处是：**前缀稳定，缓存连贯，全会话复用**。代价是系统 prompt 不能反映最新状态，需要靠消息层来传递更新。
+
+### 子 Agent 的隔离模型
+当需要在小模型上执行简单任务时，直觉做法是"切换模型"，但 Anthropic 明确指出这是错误做法——因为换模型会导致所有缓存作废。
+正确的做法是 **子 Agent 隔离**：主对话始终使用同一个模型，子 Agent 有自己独立的上下文和缓存体系。子 Agent 完成任务后只把结果传回主对话，不污染主对话的缓存链。
+这其实是一种 **进程隔离** 的思想，类似于操作系统中的进程间通信：主进程不直接共享内存，而是通过消息传递来共享结果。子 Agent 的缓存链独立维护，不影响主 Agent。
+
+### Cache-Safe Forking 的工程实现
+"context window 填满后如何压缩"是一个工程难题。传统的做法是另起一个 API 调用来做摘要，但这个调用跟主对话的缓存完全独立，导致两条缓存链互不复用，成本翻倍。
+Anthropic 的解决方案是 **Cache-Safe Forking**：
+1. 压缩请求使用跟主对话 **完全一致** 的 system prompt、user context、工具定义
+2. 把主对话消息作为历史带上，在末尾追加压缩指令
+3. 压缩请求复用主对话的缓存链，新增成本只有最后一条压缩指令
+这样一来，一次压缩操作几乎不产生额外缓存成本，因为压缩请求本身就是主对话缓存链的延续。
+
+### 延迟加载与 Token 成本平衡
+Claude Code 可能接入几十个 MCP 工具，如果把每个工具的完整 schema 都塞进 prompt，token 开销巨大；如果按需加载，又会破坏缓存（因为每次工具集变化都会导致前缀不一致）。
+折中方案是 **延迟加载**：
+
+- 初始只放轻量 stub（`defer_loading: true`），包含工具名和一句话描述
+- 等模型实际需要使用时，通过 Tool Search 拉取完整 schema
+- stub 不包含完整参数定义，所以不会因为某个工具的详细参数变化而破坏缓存
+这类似于图书馆的书目索引系统：先查目录找到书，再去书架取书，而不是把所有书都堆在桌上。
+
+### Plan Mode 的精巧设计
+Plan Mode 进入后模型只做规划不执行操作。按照直觉的设计，应该在进入时移除执行类工具，退出时再加回来。但这会破坏工具集的一致性，导致缓存断裂。
+Anthropic 的做法是：
+
+- **保留所有工具不动**，工具集始终稳定
+- **新增两个特殊工具**：`EnterPlanMode` 和 `ExitPlanMode`
+- 通过 system message 传达"规划模式下不能执行操作"的约束
+这种设计的好处是：工具集不变 → 缓存稳定 → 会话连贯，同时模型可以自主判断何时进入 Plan Mode，不需要用户手动切换。
+
+## 实践启示
+### 1. 从第一天起围绕缓存设计
+对于构建 Agent 产品的团队，建议在架构设计阶段就把"缓存前缀稳定性"作为核心约束来考虑。具体来说：
+
+- 在设计 system prompt 时，明确标注哪些部分是不可变的，哪些可能需要动态更新
+- 对于可能变化的信息（如时间戳、文件状态），设计好信息注入的替代方案（如 `<system-reminder>` 标签）
+- 建立缓存命中率监控体系，作为产品稳定性的核心指标
+
+### 2. 建立分层缓存意识
+借鉴 Anthropic 的分层思路：
+
+- **Layer 1（全局静态）**：系统 prompt、工具定义 —— 所有 session 共享，一致性要求最高
+- **Layer 2（项目级）**：CLAUDE.md 等项目配置文件 —— 同一项目内共享
+- **Layer 3（会话级）**：session 上下文 —— 单次会话内共享
+- **Layer 4（对话级）**：对话消息 —— 不缓存，每轮只新增最后一条
+每一层的设计都要考虑"如何保持前缀稳定"。
+
+### 3. 子 Agent 隔离原则
+当需要在不同模型上执行不同任务时，优先使用子 Agent 隔离，而不是切换主对话模型：
+
+- 每个子 Agent 有独立的上下文和缓存体系
+- 子 Agent 完成任务后只把结果传回主对话
+- 简单任务用小模型，复杂任务用大模型，但不要在主对话中切换
+
+### 4. 工具集稳定优先
+不要按需动态加减工具，这会破坏缓存前缀。正确的做法是：
+
+- 评估阶段就确定好需要的所有工具，session 期间保持不动
+- 如果工具实在太多，使用延迟加载（stub + defer_loading）方案
+- 即使某些工具在当前任务中用不到，也保留在工具集中
+
+### 5. 压缩/摘要操作使用 Cache-Safe Forking
+当需要压缩对话历史时：
+
+- 确保压缩请求使用跟主对话完全一致的 system prompt、工具定义
+- 把主对话消息作为历史带上，在末尾追加压缩指令
+- 预留"压缩缓冲区"，给摘要输出留够空间
+这样可以最大化复用已有缓存，降低压缩成本。
+
+### 6. 监控缓存命中率作为 Oncall 指标
+Anthropic 把缓存命中率当作基础设施级别指标来监控，一旦下降就触发 oncall。建议：
+
+- 设立缓存命中率告警阈值（如低于 80% 触发告警）
+- 建立缓存断裂的快速定位机制（是时间戳变化？还是工具顺序变化？）
+- 把缓存优化纳入常规的性能优化工作中
+
+### 7. 账号隔离策略
+缓存按账号隔离，如果使用账号池，需要确保每个项目/用户的请求尽量路由到同一账号，避免缓存命中率因账号混用而下降。
+## 相关实体
+- [Anthropic Prompt Caching Claude Code](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-prompt-caching-claude-code.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](https://github.com/QianJinGuo/wiki/blob/main/entities/opus-4-7-launch-claude-code-best-practices-wechat.md)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-platform-on-aws-anthropics-native-platfor.md)
+- [Anthropic Claude Managed Agents Platform Launch](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-launch.md)
+- [腾讯研究院ai速递 20260506](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-20260506.md)
+- [claude-code-kairos-paradigm-2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-kairos-paradigm-2026.md)
+- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](https://github.com/QianJinGuo/wiki/blob/main/entities/complexity-ratchet-garry-tan.md)
+
+---
+

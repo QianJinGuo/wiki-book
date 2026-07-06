@@ -1,0 +1,44 @@
+# Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？
+
+## Ch05.054 Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？
+
+> 📊 Level ⭐⭐ | 8.5KB | `entities/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗-v2.md`
+
+# Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？
+当 AI Coding 的聚光灯几乎全部打在前端和客户端——生成一个页面、写一个 App  .  .  .  .  .  .  的时候，一个  重要  的  问题  却  似乎  被  回避了：AI 能在真正"出事会炸"的后端系统里写代码  吗  ？
+
+腾讯CDN LEGO项目  就是这样一个系统。100万行核心代码、300万行深度改造的第三方库，服务亿级用户，承担流量调度、协议解析、安全防护、缓存加速等关键职责。它面对的不是确定性的输入输出，而是不可控的客户端、不可控的源站、多协议、多配置、公网全量攻击面——这些  因素  维度的叠加不是简单相加，而是乘积式的复杂度爆炸，理论组合路径高达 13,824 × N 种。在这样的  复杂  的  系统里让 AI 写代码，一行失误就可能是一场全网事故。
+但正因为难，才值得做。 我们系统性地探索了 AI Coding 在高风险后端场景的落地路径：一方面，用 AI 零人工代码实现了一个 Rust 版 Nonstop 代理框架，以此探测 AI 编码的能力边界与行为特性；另一方面，在超大规模 C++ LEGO  项目中构建了 Harness Engineering 五层架构和多模型对抗式CR，为 AI 产出的每一行代码建立从生成到上线的完整质量屏障。本文不仅是一份将 AI Coding 引入  腾讯  CDN核心框架的实战记录，更是一条从"AI 能写"到"AI 写了敢用" 的完整工程路径。
+
+## 相关实体
+- [Tencent Cdn Lego Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-cdn-lego-harness-engineering.md)
+- [Fudan Peking Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/fudan-peking-ahe-agentic-harness-engineering.md)
+- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](https://github.com/QianJinGuo/wiki/blob/main/entities/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)
+- [Harness Engineering Reliable Long Term Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-reliable-long-term-agent.md)
+- [Harness Engineering Long Term Agent Tasks](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-long-term-agent-tasks.md)
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗-v2.md)
+
+## 深度分析
+
+AI Coding在后端系统中的核心挑战不是"能力不足"，而是"不知道自己不足"。LEGO项目的13,824×N维度组合空间，使得系统的行为空间远超任何AI模型的探索覆盖能力。更危险的是，AI具有**自信错误输出**的特质——它会用高度确信的语气输出错误结论，这在工程场景中是致命的：人类工程师在AI输出的自信结论面前，反而降低了本应保持的怀疑警觉。这种"AI自信降低人工审查意愿"的效应，是比幻觉本身更难对付的系统性风险。nonstop项目20天Rust零人工代码的实现证明了AI在系统级编程上的能力边界，但同时也暴露了13类典型问题，其中"不会说'我不知道'"被标记为最高风险。
+
+Harness Engineering的核心哲学是从"用AI"到"驾驭AI"的范式转换，体现在五层架构的协同设计上。**上下文层**通过四层递进体系（Agent.md项目宪法、安全纪律反例免疫、领域知识可复用模式库、专业Skill覆盖RFC和竞品）消除AI的记忆偏差，将38,068行RFC原文固化在本地避免AI引用过时或混淆章节号。**约束层**是Harness区别于普通AI Coding的最大差异点：用结构化约束替代语言化期望——"禁止裸new必须unique_ptr"比"写高质量代码"有效得多，"测试Task阻塞后续流程"比"记得写测试"可靠得多。**反馈层**建立了踩坑→规则→Skill的进化闭环，将PIT-001（mmap nullptr→SIGSEGV）这样的真实踩坑固化为R2规则，再内化为CR检查清单，最终通过A/B实验验证效果并决定保留或标注。工程体系才是核心资产，而非某个模型或prompt。
+
+多模型多Agent对抗式CR是对抗单模型知识盲区、注意力盲区和确认偏差的系统性解法。在500+行diff场景下，单模型的上下文窗口有限，会"聚焦"于某些区域而忽略其他；同时一旦发现某个类型的问题，就倾向于沿同一方向继续搜索而忽略其他类型的问题。对抗式CR的架构让多个模型并行独立审查，然后通过交叉验证识别高置信度问题（被多个模型同时发现的问题），对只有单一模型发现的问题进行辩论式讨论（同意/反对/维持）。与传统GitHub Copilot CR（单模型静态扫描）和OpenAI Codex Review（两模型串行）相比，LEGO的三模型并行+交叉迭代+自动收敛机制在缺陷发现深度和审查效率上都显著领先。实践表明，竞品调研从3人天压缩至1天，协议安全测试从3-5人天压缩至1天，代码审查从等待1-3天压缩至30分钟。
+AI Coding时代后台开发角色的演变揭示了工程能力的升维需求。初级开发进化为驾驭AI的操作员，高级开发升维为Harness工程师（核心工作是设计AI的约束、上下文与规则），架构师转向人机协作架构设计，测试和安全工程师分别演变为AI质量工程师和AI安全专家。核心不变的能力是抽象思维——知道什么该让AI做、如何验证AI做得对不对。四个维度的能力重构：写代码→写约束、解决问题→防止问题、个人深度→知识表达、全栈开发→人机协作。误报率36%（9个代码问题中真实P0仅1个）和文档爆炸（8个需求生成99个文件）是当前Harness Engineering实践的真实局限，也是下一阶段需要解决的问题。
+
+## 实践启示
+
+1. **建立"踩坑→规则→Skill"的进化闭环**：每一行AI代码的失误都应该被系统化地追踪和固化。从真实PIT（踩坑记录）提炼出R规则（如"系统调用必须检查返回值"），再将规则内化为CR检查清单项，通过A/B实验验证有效性，最终决定保留或标注为通用知识。这保证了团队的工程经验不会随人员流动而流失。
+
+2. **用结构化约束替代语言化期望**：不要对AI说"写高质量代码"或"注意并发安全"，而是将期望转化为明确的规则（"热路径禁止全局mutex用per-thread锁"）或Task依赖关系（测试Task阻塞审查Task）。明确的约束比模糊的期望有效得多。
+
+3. **多模型对抗式CR是提升代码质量天花板的必要手段**：对于关键路径代码，单模型CR存在知识盲区、注意力盲区和确认偏差三重复合风险。三模型并行审查+交叉验证+辩论式讨论+自动收敛的架构，能够在保证质量的同时提高效率，建议在团队Code Review流程中强制引入。
+
+4. **AI时代工程师的核心不可替代性是抽象思维和规则设计能力**：当AI可以批量生成代码时，人的价值转向判断"哪些交给AI做"和"如何验证AI做得对"。工程师需要从执行者升维为规则设计者和系统架构者，这要求持续投入知识表达和抽象能力的建设。
+
+5. **警惕"AI自信降低人工审查意愿"的系统性风险**：在高频使用AI Coding的团队中，AI输出的格式工整性和语气自信度反而会降低人类的审查警觉。建议对AI关键输出强制引入二次复核机制，并建立专门的误报率监控来校准团队对AI输出的信任阈值。
+
+---
+
