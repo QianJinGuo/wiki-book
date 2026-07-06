@@ -8,11 +8,11 @@
 Opens in a new window Opens an external website Opens an external website in a new window
 
 ## 相关实体
-- [Notion Ai Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/notion-ai-agents.md)
+- [Notion Ai Agents](../ch04/030-ai-agent.md)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 - Senators Query Credit Bureaus On Bnpl 1
-- [Openai Realtime Api Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-realtime-api-architecture.md)
-- [Tencent Ai Infra Backend Engineer Huangrunpeng](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-ai-infra-backend-engineer-huangrunpeng.md)
+- [Openai Realtime Api Architecture](ch01/097-openai-realtime-api.md)
+- [Tencent Ai Infra Backend Engineer Huangrunpeng](ch01/884-ai-infra.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/block-leans-into-its-ai-future-payments-dive.md)
 

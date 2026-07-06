@@ -41,7 +41,7 @@
 
 **这一论断颠覆了"Agent = 强模型"的简化叙事**。模型能力固然关键，但生产级 Agent 系统的工程复杂度绝大部分来自 harness 层：上下文组装、缓存优化、权限控制、工具并发、状态管理、错误恢复、压缩策略、终止判断。
 
-这与 [Harness Engineering Core Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns-claude-code.md) 中"Harness 是 Agent 系统的工程价值所在"的论断一致——模型是引擎，harness 是底盘、传动、刹车、仪表盘的整套工程组合。
+这与 [Harness Engineering Core Patterns](../ch05/092-harness-engineering.md) 中"Harness 是 Agent 系统的工程价值所在"的论断一致——模型是引擎，harness 是底盘、传动、刹车、仪表盘的整套工程组合。
 
 ### 2. 上下文组装：缓存分层是性能的关键
 
@@ -68,7 +68,7 @@ CLAUDE.md 文件从根目录向下逐层加载：
 
 **@include 指令**让一个 CLAUDE.md 可以拉入其他文件（最多 5 层深度）。**`git worktree` 兼容性**——避免同一份规则被重复加载。
 
-这与 [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
+这与 [Claude Code Harness Deep Understanding](ch01/456-claude-code-harness-deep-understanding.md) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
 
 ### 4. 完整上下文包：用户消息只是冰山一角
 
@@ -85,7 +85,7 @@ MCP 指令:         ~300 tokens
 
 **用户消息只占 0.04% 的上下文**——Agent 看到的 99.96% 是系统、规则、记忆、历史的组合。
 
-这一数据点对 Agent 设计者极有启示：**你给 Agent 的"消息"不是你输入的那一句，而是系统为你准备的所有上下文**。这与 [Headroom Context Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-agent-vibecoder.md) 中关于"上下文是工程产物"的论述一致——上下文不是自然涌现的，而是被精心组装的。
+这一数据点对 Agent 设计者极有启示：**你给 Agent 的"消息"不是你输入的那一句，而是系统为你准备的所有上下文**。这与 [Headroom Context Compression](../ch03/045-agent.md) 中关于"上下文是工程产物"的论述一致——上下文不是自然涌现的，而是被精心组装的。
 
 ### 5. 技能预算控制：1% 规则的设计哲学
 
@@ -116,7 +116,7 @@ Claude Code 通过 `isConcurrencySafe()` 标记控制并发执行：
 
 **关键工程细节**：工具可以修改后续上下文——有些工具返回"上下文修改函数"用于更新 `ToolUseContext`。并发批次先收集修改，整批完再统一应用；串行批次每个工具执行完立刻应用。**这一设计避免了并发冲突**。
 
-这与 [Factory Mission](https://github.com/QianJinGuo/wiki/blob/main/entities/multi-agent-mission-factory-luke-aiengineer.md) 的"串行 + 定点内部并行"策略有异曲同工之妙——但 Mission 是 Agent 间的串行，Claude Code 是工具间的串行。
+这与 [Factory Mission](../ch03/045-agent.md) 的"串行 + 定点内部并行"策略有异曲同工之妙——但 Mission 是 Agent 间的串行，Claude Code 是工具间的串行。
 
 ### 7. 分层权限机制：4 层检查的设计取舍
 
@@ -172,7 +172,7 @@ Claude Code 不是用一种方式处理上下文膨胀，而是分层处理：
 
 历史教训：1,279 个会话连续失败 3,000+ 次，每天浪费 25 万次 API 调用——**任何自动化机制都必须有熔断**。
 
-这与 [Harness 状态边界与失败闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-之后-状态边界与失败闭环-若飞.md) 中关于"边界即熔断点"的工程哲学一致——失败应当被显式处理，而非无限循环。
+这与 [Harness 状态边界与失败闭环](../ch05/009-harness.md) 中关于"边界即熔断点"的工程哲学一致——失败应当被显式处理，而非无限循环。
 
 ### 9. Plan Mode：行为引导而非权限关闭
 
@@ -182,7 +182,7 @@ Plan Mode 的本质是"权限系统里的状态切换"——技术上 Claude 仍
 
 **这一设计哲学揭示了 Agent 系统设计的一个深层原则**：**不要用权限禁锢 Agent，而要用行为引导**。完全禁止 Agent 做某些事会大幅降低其能力；通过提示词和行为约束引导它"先规划再执行"是更优雅的方案。
 
-这与 [Claude Managed Agents 企业自托管](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-enterprise.md) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
+这与 [Claude Managed Agents 企业自托管](../ch04/485-claude-managed-agents.md) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
 
 ### 10. 终止原因的多样性：8 种退出路径
 
@@ -223,7 +223,7 @@ async function* queryLoop() {
 - **可暂停/继续**：中间可以随时暂停再继续
 - **State 对象传递**：每轮决策影响下轮行为
 
-这与 [Claude Code Harness Deep Dive](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md) 中关于"流式交互是 Agent 体验核心"的论述一致——用户感受到的"逐字输出"本质就是 `StreamEvent` 实时推送的结果。
+这与 [Claude Code Harness Deep Dive](../ch05/060-claude-code-harness.md) 中关于"流式交互是 Agent 体验核心"的论述一致——用户感受到的"逐字输出"本质就是 `StreamEvent` 实时推送的结果。
 
 ### 12. 工具调用的"上下文修改函数"
 
@@ -301,20 +301,20 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 
 ## 相关实体
 
-- [两万字详解 Claude Code 源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Claude Code Harness 深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
-- [Claude Code Harness 深度理解](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
+- [两万字详解 Claude Code 源码核心机制](../ch03/075-claude-code.md)
+- [Claude Code Harness 深度解析](../ch05/060-claude-code-harness.md)
+- [Claude Code Harness 深度理解](ch01/456-claude-code-harness-deep-understanding.md)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
-- [Agent 记忆系统工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Harness Engineering Core Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
-- [Harness 状态边界与失败闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-之后-状态边界与失败闭环-若飞.md)
-- [Factory Mission Multi-Agent 系统](https://github.com/QianJinGuo/wiki/blob/main/entities/multi-agent-mission-factory-luke-aiengineer.md)
-- [Claude Managed Agents 企业自托管](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-enterprise.md)
-- [OpenClaw 多 Agent 团队实践](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-agent-team-practice-v2.md)
-- [OpenClaw 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [OpenClaw 多智能体团队搭建经验](https://github.com/QianJinGuo/wiki/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [Headroom Context Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-agent-vibecoder.md)
-- [AI Agent Harness 构建](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-harness-construction-akshay-baoyu.md)
+- [Agent 记忆系统工程实践](../ch03/045-agent.md)
+- [Harness Engineering Core Patterns](../ch05/092-harness-engineering.md)
+- [Harness 状态边界与失败闭环](../ch05/009-harness.md)
+- [Factory Mission Multi-Agent 系统](../ch03/045-agent.md)
+- [Claude Managed Agents 企业自托管](../ch04/485-claude-managed-agents.md)
+- [OpenClaw 多 Agent 团队实践](../ch04/047-openclaw-multi-agent-team-practice-v2.md)
+- [OpenClaw 完全指南](../ch11/213-openclaw.md)
+- [OpenClaw 多智能体团队搭建经验](../ch11/213-openclaw.md)
+- [Headroom Context Compression](../ch03/045-agent.md)
+- [AI Agent Harness 构建](ch01/1006-ai-agent-harness.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

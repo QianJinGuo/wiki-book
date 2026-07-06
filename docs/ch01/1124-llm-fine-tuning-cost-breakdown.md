@@ -148,7 +148,7 @@ LLM微调的总成本主要由以下几部分组成：
 
 ### 7.1 Amazon Nova Lite 微调案例
 
-根据 [Amazon Nova Lite Fine-Tuning案例](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md)：
+根据 [Amazon Nova Lite Fine-Tuning案例](../ch11/257-amazon-nova.md)：
 
 - **训练成本**：约$0.02（10K tokens级别）
 - **推理成本**：与基础模型相同，无增量成本
@@ -192,7 +192,7 @@ LLM微调的总成本主要由以下几部分组成：
 - 
 
 - [Reinforcement Fine-Tuning (RFT)](https://github.com/QianJinGuo/wiki/blob/main/concepts/reinforcement-fine-tuning-rft.md)
-- [RLHF with LLM-as-Judge](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-reinforcement-fine-tuning-llm-as-judge.md)
+- [RLHF with LLM-as-Judge](ch01/580-llm.md)
 
 ---
 

@@ -18,13 +18,13 @@ Daniel San 给出的量化参考很有价值：半小时的探索性会话可能
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/subagents-详解claude-code-如何避免上下文污染-v2.md)
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-12-rules-karpathy-extension.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-20000-char-source-analysis.md)
-- [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-subagent-context-hygiene.md)
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
-- [claude-code-kairos-paradigm-2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-kairos-paradigm-2026.md)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.md)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/146-claude-code-1.md)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
+- [Claude Code Subagent 上下文卫生](../ch04/318-claude-code-subagent.md)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.md)
+- [claude-code-kairos-paradigm-2026](ch01/370-claude-code-kairos.md)
 
 ---
 

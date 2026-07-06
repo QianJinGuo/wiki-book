@@ -79,11 +79,11 @@ MLflow 本身是云无关的开源框架，而 AWS 将其托管在 SageMaker 中
    金融和医疗领域的 AI 应用面临模型决策可解释性和审计要求，内置的 faithfulness 和 correctness 指标可作为模型审计文档的自动化数据源，降低合规团队的人工复核成本。
 
 ## 相关实体
-- [How Amazon Finance Streamlines Regulatory Inquiries By Using](https://github.com/QianJinGuo/wiki/blob/main/entities/how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
-- [Aws Generative Ai Model Agility Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-generative-ai-model-agility-framework.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [Aws Bedrock Halliburton Seismic Workflow Genai](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-halliburton-seismic-workflow-genai.md)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](https://github.com/QianJinGuo/wiki/blob/main/entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
+- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/009-how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
+- [Aws Generative Ai Model Agility Framework](ch11/143-aws-generative-ai-model-agility-framework.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/380-aws-sagemaker-ai-agent.md)
+- [Aws Bedrock Halliburton Seismic Workflow Genai](ch11/007-aws-bedrock.md)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-mlflow-v310-generative-ai-development.md)

@@ -10,11 +10,11 @@
 **Kimi Work** 是**月之暗面 K2.6 + Kimi Code Harness 搬到本地桌面**的通用 Agent 产品（2026-06 Beta 发布）。与 **OpenAI 把 Codex 并入 ChatGPT** 同一时间发布，标志 **"Vibe Working" 时代开启**——AI Agent 主战场从写代码迁移到**普通知识工作者的日常工作**。
 
 ## 相关实体
-- [Schemaflow Agentic Database Sql Generation Openai Cookbook](https://github.com/QianJinGuo/wiki/blob/main/entities/schemaflow-agentic-database-sql-generation-openai-cookbook.md)
+- [Schemaflow Agentic Database Sql Generation Openai Cookbook](ch01/435-openai.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
 
-- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](https://github.com/QianJinGuo/wiki/blob/main/entities/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md)
+- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch01/279-agi.md)
 
 ## 一句话定位
 
@@ -144,27 +144,27 @@
 
 ## 与现有 wiki 实体的关系
 
-### vs [wow-harness v3](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md)
+### vs [wow-harness v3](../ch05/009-harness.md)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - Kimi Work = Harness 搬到本地桌面（**运行环境层**变革）
 - 共同点：都在解决"AI Agent 如何与真实工作环境对接"问题
 
-### vs [PilotDeck](https://github.com/QianJinGuo/wiki/blob/main/entities/pilotdeck-agent-os-openbmb-tsinghua.md)
+### vs [PilotDeck](../ch03/045-agent.md)
 - PilotDeck = WorkSpace + Always-on + Dream 模式（**多项目隔离**）
 - Kimi Work = **本地桌面 + 用户账号 + 真实文件**（**单桌面全场景**）
 - 共同点：都强调"AI 套上家"的工程范式
 
-### vs [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)
+### vs [Agent Harness 架构](../ch05/038-agent-harness.md)
 - 7 层 harness 模型是抽象框架
 - Kimi Work + WebBridge 是具体落地实现
 - 文章强化："**Harness 决定一切**"——比模型能力重要
 
-### vs [Rein](https://github.com/QianJinGuo/wiki/blob/main/entities/rein-go-agent-4-modules-5-type-boundaries.md)
+### vs [Rein](../ch03/045-agent.md)
 - Rein = 4 模块 + 5 类型边界（**代码层**架构）
 - Kimi Work = Harness 从云端到本地（**部署层**架构）
 - 共同点：都在"防止上帝文件 / 防止环境割裂"层面做工程化
 
-### vs [Codex 6 职位插件](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-role-plugins-sites-annotations.md)
+### vs [Codex 6 职位插件](ch01/516-codex.md)
 - 之前 Codex 还在"加插件拓展能力"
 - 现在 OpenAI 直接把 Codex 并入 ChatGPT——**赛道战略转向**
 
@@ -188,12 +188,12 @@
 - **Codex 500 万周活 / 桌面版 6 倍**数据来自 OpenAI 自报，缺第三方验证
 
 ## 相关对照
-- [wow-harness v3](https://github.com/QianJinGuo/wiki/blob/main/entities/wow-harness-v3-governance-protocol.md) —— 协议层治理
-- [PilotDeck](https://github.com/QianJinGuo/wiki/blob/main/entities/pilotdeck-agent-os-openbmb-tsinghua.md) —— 多项目隔离
-- [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md) —— 7 层 harness 模型
-- [Rein](https://github.com/QianJinGuo/wiki/blob/main/entities/rein-go-agent-4-modules-5-type-boundaries.md) —— 4 模块代码架构
-- [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) —— 工作集视角
-- [Karpathy Vibe Coding → Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md) —— Vibe Coding 原始定义
+- [wow-harness v3](../ch05/009-harness.md) —— 协议层治理
+- [PilotDeck](../ch03/045-agent.md) —— 多项目隔离
+- [Agent Harness 架构](../ch05/038-agent-harness.md) —— 7 层 harness 模型
+- [Rein](../ch03/045-agent.md) —— 4 模块代码架构
+- [Agent Harness 上下文管理](../ch05/038-agent-harness.md) —— 工作集视角
+- [Karpathy Vibe Coding → Agentic Engineering](../ch03/045-agent.md) —— Vibe Coding 原始定义
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
 

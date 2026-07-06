@@ -5,8 +5,8 @@
 > 📊 Level ⭐⭐⭐⭐ | 5.6KB | `entities/sparse-autoencoders.md`
 
 ## 关联
-- [Natural Language Autoencoders](https://github.com/QianJinGuo/wiki/blob/main/entities/natural-language-autoencoders.md) — NLA 在 SAE 基础上增加文字输出能力
-- [Anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic.md) — 主要研究机构
+- [Natural Language Autoencoders](ch01/1174-natural-language-autoencoders-anthropic.md) — NLA 在 SAE 基础上增加文字输出能力
+- [Anthropic](ch01/833-anthropic.md) — 主要研究机构
 - [Mechanistic Interpretability](https://github.com/QianJinGuo/wiki/blob/main/concepts/mechanistic-interpretability.md) — 所属研究领域
 
 ## 深度分析

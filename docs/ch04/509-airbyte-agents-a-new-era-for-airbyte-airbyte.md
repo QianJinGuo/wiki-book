@@ -9,11 +9,11 @@ Until recently, the complaints about AI have always been about the models. That 
 Agents are powerful, but they are not wise. To operate at their best, they need fresh context delivered in the right format and at the right time. From our experience, current ways of moving data simply aren't enough:
 
 ## 相关实体
-- [Airbyte Agents A New Era For Airbyte Airbyte](https://github.com/QianJinGuo/wiki/blob/main/entities/airbyte-agents-a-new-era-for-airbyte-airbyte.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/building-ai-agents-for-business-support-using-amazon-bedrock.md)
-- [Oz Multi Harness Cloud Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/entities/oz-multi-harness-cloud-agent-orchestration.md)
-- [Skill Os Learning Skill Curation Self Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
+- [Airbyte Agents A New Era For Airbyte Airbyte](ch04/509-airbyte-agents-a-new-era-for-airbyte-airbyte.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/142-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/073-building-ai-agents-for-business-support-using-amazon-bedrock.md)
+- [Oz Multi Harness Cloud Agent Orchestration](ch04/464-agent-orchestration.md)
+- [Skill Os Learning Skill Curation Self Evolving Agents](ch04/216-self-evolving-agents.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/airbyte-agents.md)
 

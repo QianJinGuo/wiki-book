@@ -37,11 +37,11 @@ AI agents are only as powerful as the tools they can access.
 - **aws趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/213-openclaw.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 
 ## 实践启示

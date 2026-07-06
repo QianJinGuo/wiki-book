@@ -57,7 +57,7 @@ Gray Swan 的 Shade 工具在 red-teaming 领域实现了突破：**专用 red-t
 3. **威胁建模**：针对 agent 场景的攻击面分析，而非通用的"安全过滤绕过"
 4. **防御工程化**：从"更好的 prompt"到"工程化的 guardrail 系统"
 
-这与 [Role Confusion](https://github.com/QianJinGuo/wiki/blob/main/entities/role-confusion-github-io.md) 研究形成互补——后者提供理论框架（prompt injection 本质是角色混淆），Gray Swan 提供实战工具和方法论。
+这与 [Role Confusion](ch01/811-github.md) 研究形成互补——后者提供理论框架（prompt injection 本质是角色混淆），Gray Swan 提供实战工具和方法论。
 
 ### Agent 安全的新威胁模型
 
@@ -103,11 +103,11 @@ AI 安全赛道正在从"学术研究"转向"商业产品"。Gray Swan 的 Serie
 
 ## 相关实体
 
-- [Role Confusion](https://github.com/QianJinGuo/wiki/blob/main/entities/role-confusion-github-io.md) — Prompt injection 的理论框架
+- [Role Confusion](ch01/811-github.md) — Prompt injection 的理论框架
 - [AFine CSP Injection](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md) — 具体的注入攻击案例
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 架构工程
-- [Claude Tag](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-tag.md) — Anthropic 的 agent 安全实践
-- [OpenClaw](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-boris-cherny-agent-loop-design-patterns.md) — 计算机使用 agent 的安全挑战
+- [Claude Tag](ch01/1132-introducing-claude-tag.md) — Anthropic 的 agent 安全实践
+- [OpenClaw](../ch11/213-openclaw.md) — 计算机使用 agent 的安全挑战
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latent-space-p-gray-swan.md)
 

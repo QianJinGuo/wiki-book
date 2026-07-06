@@ -23,10 +23,10 @@ Together Mode 的核心设计目标是解决"视频会议疲劳"（video meeting
 - 评分: v×c = 56
 ## 相关实体
 - [Microsoft For Startups Microsoft V2](https://github.com/QianJinGuo/wiki/blob/main/entities/Microsoft-for-Startups-Microsoft-v2.md)
-- [Microsoft Is Quietly Shopping For An Openai Replac](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-is-quietly-shopping-for-an-openai-replac.md)
-- [Notion Ai Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/notion-ai-agents.md)
+- [Microsoft Is Quietly Shopping For An Openai Replac](ch01/034-microsoft-is-quietly-shopping-for-an-openai-replacement.md)
+- [Notion Ai Agents](../ch04/030-ai-agent.md)
 - [Microsoft Startups](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-startups.md)
-- [Microsoft For Startups Microsoft](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-for-startups-microsoft.md)
+- [Microsoft For Startups Microsoft](ch01/122-microsoft-for-startups-microsoft.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-to-retire-together-mode-its-virtual-meeting-space-for-teams.md)
 

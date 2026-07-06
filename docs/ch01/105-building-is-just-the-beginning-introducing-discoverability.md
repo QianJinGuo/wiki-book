@@ -23,10 +23,10 @@
 **5. 利用预渲染机制加速 SEO 收敛** — Lovable 的预渲染策略使新发布页面立即对爬手可见 。对于自建站点的团队，SSR/SSG 混合渲染模式（尤其是在 edge 运行时的预渲染）可以在保持交互体验的同时消除传统 SPA 的 SEO 冷启动问题，应在架构选型阶段优先考虑。
 ## 相关实体
 - [Lovable Discoverability Intro](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
-- [Building Is Just The Beginning Introducing Discoverability](https://github.com/QianJinGuo/wiki/blob/main/entities/building-is-just-the-beginning-introducing-discoverability.md)
-- [Building The Agentic Future Developer Highlights From Io 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/building-the-agentic-future-developer-highlights-from-io-2026.md)
-- [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-the-ettin-reranker-family.md)
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
+- [Building Is Just The Beginning Introducing Discoverability](../ch12/084-building-is-just-the-beginning-introducing-discoverability.md)
+- [Building The Agentic Future Developer Highlights From Io 2026](../ch04/018-building-the-agentic.md)
+- [Introducing The Ettin Reranker Family](ch01/451-introducing-the-ettin-reranker-family.md)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch01/953-introducing-seer-agent-the-answer-is-already-in-sentry-now.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-is-just-the-beginning-introducing-discove.md)
 

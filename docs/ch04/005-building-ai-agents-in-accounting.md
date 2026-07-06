@@ -47,11 +47,11 @@ Slack 是整个 Agent 的交互界面。用户通过slash command（`/prepaid Ap
 
 ## 关联阅读
 ## 相关实体
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](https://github.com/QianJinGuo/wiki/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
-- [Create Custom Mcp Catalogs And Profiles](https://github.com/QianJinGuo/wiki/blob/main/entities/create-custom-mcp-catalogs-and-profiles.md)
-- [Turn Repeated Instructions Into Reusable Skills In Lovable L](https://github.com/QianJinGuo/wiki/blob/main/entities/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](https://github.com/QianJinGuo/wiki/blob/main/entities/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/1019-rag.md)
+- [Create Custom Mcp Catalogs And Profiles](../ch07/068-create-custom-mcp-catalogs-and-profiles.md)
+- [Turn Repeated Instructions Into Reusable Skills In Lovable L](../ch03/019-turn-repeated-instructions-into-reusable-skills-in-lovable.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/142-skillos-learning-skill-curation-for-self-evolving-agents.md)
+- [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](ch04/016-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-ai-agents-in-accounting.md)

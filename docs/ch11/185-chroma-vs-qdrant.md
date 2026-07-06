@@ -50,7 +50,7 @@
 **向量数据库的选型本质是 workload characterization 问题**：不是"哪个数据库更好"，而是"你的 workload 更接近哪种访问模式"。10 万向量以下两者无感；百万级别且有复杂过滤是关键分水岭；TB 级数据量时 S3 + Chroma 的成本优势可能超过性能劣势。 ^["从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)"]
 
 ## 相关链接
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](https://github.com/QianJinGuo/wiki/blob/main/entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/075-claude-code.md)
 
 ## 实践启示
 1. **不要等出了问题才迁移**：在 50-80 万向量时就开始监控 Chroma 延迟分布，如果 P99 开始上升，就该启动 Qdrant 迁移计划 ^["从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)"]

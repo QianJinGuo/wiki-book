@@ -52,7 +52,7 @@
 | 执行者 | Agent 自己 | Runner | Worker | Worker |
 | 复杂度 | 低 | 中 | 高 | 高 |
 
-与 [Hermes Skill 系统](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system.md) 的差异：
+与 [Hermes Skill 系统](ch07/017-hermes-skill.md) 的差异：
 - Hermes 的技能是文件系统级的（SKILL.md + 目录），skill-mcp 是 MCP 协议级的（通过 MCP 暴露）
 - Hermes 无版本管理，skill-mcp 有完整的版本历史 + rollback
 - Hermes 无内置权限控制，skill-mcp 有标签交集权限
@@ -75,7 +75,7 @@
 - GitHub：https://github.com/BeCrafter/skill-mcp
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-mcp-software-package-management-mcp-pipeline.md)
-→ [Hermes Skill 系统](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skill-system.md)
+→ [Hermes Skill 系统](ch07/017-hermes-skill.md)
 
 ---
 

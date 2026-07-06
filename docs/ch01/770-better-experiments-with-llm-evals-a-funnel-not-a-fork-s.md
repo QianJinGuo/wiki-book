@@ -9,11 +9,11 @@
 - LLM Evaluation: A Funnel Not a Fork
 
 ## 相关实体
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
-- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-smart-shopping-guide-agent-evaluation-pzmx.md)
-- [Multimodal Evaluators Mllm As Judge Image To Text](https://github.com/QianJinGuo/wiki/blob/main/entities/multimodal-evaluators-mllm-as-judge-image-to-text.md)
-- [Ai Skill Metrics System](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-metrics-system.md)
-- [Harness Engineering Systematic Explainer](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-explainer.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/609-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
+- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/045-agent.md)
+- [Multimodal Evaluators Mllm As Judge Image To Text](ch01/360-mllm-as-judge.md)
+- [Ai Skill Metrics System](ch01/473-ai-skill.md)
+- [Harness Engineering Systematic Explainer](../ch05/092-harness-engineering.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spotify-llm-evals-funnel-not-fork.md)
 

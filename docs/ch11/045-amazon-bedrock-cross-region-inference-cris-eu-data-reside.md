@@ -180,11 +180,11 @@ CloudWatch / CloudTrail / Model Invocation Logging 均**只在 source region 记
 - [Model Invocation Logging](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html)
 
 ## 相关实体
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](https://github.com/QianJinGuo/wiki/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
-- [Openai Models Codex Amazon Bedrock Ga](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-models-codex-amazon-bedrock-ga.md)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/secure-ai-agents-policy-lambda-interceptors-aws.md)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/675-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
+- [Openai Models Codex Amazon Bedrock Ga](ch11/152-amazon-bedrock.md)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/030-ai-agent.md)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/499-amazon-bedrock-agentcore.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/499-amazon-bedrock-agentcore.md)
 
 ---
 

@@ -48,7 +48,7 @@ Tether 的布局同时踩中了两个趋势：**端侧 AI 推理**和**去中心
 
 ## 相关实体
 
-- [Tether launches developer grants program](https://github.com/QianJinGuo/wiki/blob/main/entities/tether-launches-developer-grants-program-for-local-first-ai-and-payments-infrastructure.md)
+- [Tether launches developer grants program](../ch11/193-tether-launches-developer-grants-program-for-local-first-ai.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tether-launches-developer-grants-program-for-local-ai-paymen.md)
 

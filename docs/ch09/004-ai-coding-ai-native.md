@@ -34,8 +34,8 @@
 
 ## 相关实体
 
-- [Design to Code](https://github.com/QianJinGuo/wiki/blob/main/entities/design-to-code.md)
-- [Visual Reduction AI](https://github.com/QianJinGuo/wiki/blob/main/entities/visual-reduction-ai.md)
+- [Design to Code](ch09/005-design-to-code.md)
+- [Visual Reduction AI](../ch04/229-ai.md)
 - [大淘宝前端实践](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-frontend-practices.md)
 
 ## 标签

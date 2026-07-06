@@ -100,7 +100,7 @@ Mollick 的关键警告：
 
 3. **"17 PowerPoint 噩梦"** —— 用幽默捕捉了**任务自动化的隐性风险**：**AI 没有"够好"判断**，需要人类定义完成条件。这是组织使用 AI 的**核心新能力**。
 
-## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](https://github.com/QianJinGuo/wiki/blob/main/entities/opus-4-7-launch-claude-code-best-practices-wechat.md) / the Claude Code what-comes-next analysis 的关系
+## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/075-claude-code.md) / the Claude Code what-comes-next analysis 的关系
 
 | 维度 | GDPval / Real Work (本文) | Claude Code What Comes Next | Opus 4.7 实战 |
 |------|--------------------------|---------------------------|----------------|

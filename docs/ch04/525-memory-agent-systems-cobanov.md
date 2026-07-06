@@ -26,16 +26,16 @@ Mert Cobanov 的综述覆盖了 Agent 记忆系统的四种主流范式：向量
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/memory-agent-systems-cobanov.md)
 
 ## 相关资源
-- [Agent Memory 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)
-- [Claude Managed Agents 开发者指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-developer-guide.md)
+- [Agent Memory 架构](ch04/387-perplexity-brain-self-improving-agent-memory-architecture.md)
+- [Claude Managed Agents 开发者指南](ch04/485-claude-managed-agents.md)
 
 ## 相关实体
-- [ai agent memory systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
-- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system.md)
-- [AI Agent 记忆系统架构](https://github.com/QianJinGuo/wiki/blob/main/entities/how-ai-agent-memory-works.md)
-- [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
+- [ai agent memory systems](ch04/120-agent-memory.md)
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/090-hermes-agent.md)
+- [AI Agent 记忆系统架构](ch04/155-how-ai-agent-memory-works.md)
+- [深度拆解 Hermes Agent 记忆系统](../ch03/090-hermes-agent.md)
 
-- [Agent Memory 架构解析](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture-ruofei.md)
+- [Agent Memory 架构解析](ch04/120-agent-memory.md)
 
 ---
 

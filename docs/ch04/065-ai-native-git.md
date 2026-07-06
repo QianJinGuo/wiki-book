@@ -158,14 +158,14 @@ Level 3（远期）: AI 做决策辅助
 
 ## 相关实体
 - [Git Repo Based Pm Automation](https://github.com/QianJinGuo/wiki/blob/main/entities/git-repo-based-pm-automation.md)
-- [Harness Engineering Jk Launcher Baijiajie](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-jk-launcher-baijiajie.md)
-- [Harness Design Long Running Apps](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-design-long-running-apps.md)
-- [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](https://github.com/QianJinGuo/wiki/blob/main/entities/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md)
-- [Alibaba Agentic Cloud](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-agentic-cloud.md)
+- [Harness Engineering Jk Launcher Baijiajie](../ch05/092-harness-engineering.md)
+- [Harness Design Long Running Apps](../ch05/009-harness.md)
+- [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/045-agent.md)
+- [Alibaba Agentic Cloud](ch04/320-agentic-cloud.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-native-project-management-git.md)
 
-- [Impeccable Frontend Design Skill Harness Vibecoder](https://github.com/QianJinGuo/wiki/blob/main/entities/impeccable-frontend-design-skill-harness-vibecoder.md)
+- [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.md)
 ## 深度分析
 
 ### 信息工程范式的核心突破

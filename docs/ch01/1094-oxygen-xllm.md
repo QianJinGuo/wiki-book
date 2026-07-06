@@ -21,7 +21,7 @@
 ## 相关链接
 
 - entities/openatom（开放原子开源基金会）
-- [大模型推理](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-inference-pipeline-internals.md)
+- [大模型推理](ch01/580-llm.md)
 - entities/jd
 
 ## 第 2 来源 — 京东技术公众号 (2026-06-25)

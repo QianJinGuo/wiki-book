@@ -11,11 +11,11 @@
 评估大模型在 LBS 场景中，从海量隐式信号（点击、搜索、导航片段）里精准推理用户深层意图的能力——而非执行明确指令。
 
 ## 相关实体
-- [Lbs Intentbench](https://github.com/QianJinGuo/wiki/blob/main/entities/lbs-intentbench.md)
-- [Programbench Agent Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/programbench-agent-benchmark.md)
-- [Computer Use 45X More Expensive Than Structured Apis](https://github.com/QianJinGuo/wiki/blob/main/entities/computer-use-45x-more-expensive-than-structured-apis.md)
-- [3 Persons 100 Ai Programmers 1 3 Million Openai Pays](https://github.com/QianJinGuo/wiki/blob/main/entities/3-persons-100-ai-programmers-1-3-million-openai-pays.md)
-- [Cursor Harness Model Production Floor](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-harness-model-production-floor.md)
+- [Lbs Intentbench](ch04/264-lbs-intentbench.md)
+- [Programbench Agent Benchmark](ch04/162-programbench-agent-benchmark.md)
+- [Computer Use 45X More Expensive Than Structured Apis](ch04/259-computer-use-45x-more-expensive-than-structured-apis.md)
+- [3 Persons 100 Ai Programmers 1 3 Million Openai Pays](../ch01/435-openai.md)
+- [Cursor Harness Model Production Floor](../ch01/323-cursor-harness-model-production-floor.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lbs-intent-bench-lbs-intentbench.md)
 

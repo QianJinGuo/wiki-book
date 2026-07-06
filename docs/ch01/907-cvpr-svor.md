@@ -14,15 +14,15 @@
 - 小米SVOR
 - 视频消除三大顽疾
 ## 相关实体
-- [A2Rd Agentic Autoregressive Diffusion Long Video](https://github.com/QianJinGuo/wiki/blob/main/entities/a2rd-agentic-autoregressive-diffusion-long-video.md)
-- [Yumanju Ai Full Flow Efficiency](https://github.com/QianJinGuo/wiki/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
-- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md)
-- [腾讯研究院Ai速递 20260430](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯研究院ai速递-20260430.md)
-- [Gbrain Garry Tan Yanfa Zhili](https://github.com/QianJinGuo/wiki/blob/main/entities/gbrain-garry-tan-yanfa-zhili.md)
+- [A2Rd Agentic Autoregressive Diffusion Long Video](../ch03/045-agent.md)
+- [Yumanju Ai Full Flow Efficiency](../ch04/229-ai.md)
+- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.md)
+- [腾讯研究院Ai速递 20260430](../ch04/229-ai.md)
+- [Gbrain Garry Tan Yanfa Zhili](ch01/611-garry-tan.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cvpr-xiaomi-svor-video-masking.md)
 
-- [Joyai Echo Long Video Jd Qbitai](https://github.com/QianJinGuo/wiki/blob/main/entities/joyai-echo-long-video-jd-qbitai.md)
+- [Joyai Echo Long Video Jd Qbitai](../ch04/229-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 ### 技术架构：从单点优化到系统协同

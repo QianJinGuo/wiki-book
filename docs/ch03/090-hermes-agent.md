@@ -92,11 +92,11 @@ TOOLSETS = {
 - **MCP 工具**：toolset 名为 `mcp-<server_name>`，与内置工具完全等价
 
 ## 相关实体
-- [Hermes Agent V014 Core Architecture Shugex](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-v014-core-architecture-shugex.md)
-- [Hermes Agent Memory System Three Layer Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-three-layer-architecture.md)
-- [Hermes Agent Deep Dive](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-deep-dive.md)
-- [Hermes Agent Self Evolution Tengxun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-self-evolution-tengxun.md)
-- [Hermes Agent Memory System Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-architecture.md)
+- [Hermes Agent V014 Core Architecture Shugex](ch03/090-hermes-agent.md)
+- [Hermes Agent Memory System Three Layer Architecture](ch03/090-hermes-agent.md)
+- [Hermes Agent Deep Dive](ch03/090-hermes-agent.md)
+- [Hermes Agent Self Evolution Tengxun](ch03/090-hermes-agent.md)
+- [Hermes Agent Memory System Architecture](ch03/090-hermes-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-tool-system-analysis.md)
 

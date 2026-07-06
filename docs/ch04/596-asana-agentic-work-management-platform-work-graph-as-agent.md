@@ -132,7 +132,7 @@ Bose 公开表态:
 
 ## 与现有 wiki 实体的关联
 
-- 与 **[claude-code-large-codebase-harness-configuration](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-harness-configuration.md)** 的关系:Command by Asana 试图用 workflow 框架而非 coding agent 实现「人+代理协作」,与 Claude Code 在 coding 场景的 agentic 思路形成对比(work-graph orchestration vs direct coding agent)
+- 与 **[claude-code-large-codebase-harness-configuration](../ch03/075-claude-code.md)** 的关系:Command by Asana 试图用 workflow 框架而非 coding agent 实现「人+代理协作」,与 Claude Code 在 coding 场景的 agentic 思路形成对比(work-graph orchestration vs direct coding agent)
 - 与 **[harness-engineering-framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)** 的关系:Asana 的「multiplayer interaction model + shared memory + audit trail」是 enterprise work graph 层的人类-代理协作 OS 案例(对比 Claude Code 是 coding 场景的 agent harness)
 - 引用 [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/asana-agentic-work-management-platform-lettertwo.md) 作为唯一 source,做 enterprise agentic work platform 的产品定位基线
 
