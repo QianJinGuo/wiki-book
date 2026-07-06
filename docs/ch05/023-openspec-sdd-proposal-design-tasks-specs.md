@@ -1,0 +1,263 @@
+# OpenSpec 规范驱动开发（SDD）框架 — proposal/design/tasks/specs 四类文档意图锁定
+
+## Ch05.023 OpenSpec 规范驱动开发（SDD）框架 — proposal/design/tasks/specs 四类文档意图锁定
+
+> 📊 Level ⭐⭐ | 17.4KB | `entities/openspec-spec-driven-development-trae-solo.md`
+
+# OpenSpec 规范驱动开发（SDD）框架
+
+## 核心问题
+
+**AI 编程的"翻车"模式**：
+- AI 生成的代码看起来漂亮，**一跑就挂**
+- 加几个需求后，AI 开始**"自说自话"**，完全偏离原始意图
+- 三个月后回头看自己写的代码，**连自己都看不懂当时在干什么**
+
+**根本原因**：**缺乏稳定的共识基础** — 需求躺在聊天记录里，AI 每次都需要从零开始"猜"你的意图 → 过度实现 / 欠拟合 / 需求漂移。
+
+## OpenSpec 是什么
+
+**轻量级规范驱动开发（Spec-Driven Development, SDD）开源框架，专门为 AI 编程助手设计**。
+
+**核心理念**：
+
+> "**写任何一行代码之前，先让人类和 AI 就'要做什么'达成明确一致，并把这份共识记录成结构化的规范文档。**"
+
+## 相关实体
+- [Openspec 四步法深度复盘 流程完整不等于代码正确](https://github.com/QianJinGuo/wiki/blob/main/entities/openspec-四步法深度复盘-流程完整不等于代码正确.md)
+- [Spec Kit Bmad Sdd Practice Yexiaocha](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-kit-bmad-sdd-practice-yexiaocha.md)
+- [民生银行基于规格驱动开发Sdd的 Codeagent 私域研发探索与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/民生银行基于规格驱动开发sdd的-codeagent-私域研发探索与实践.md)
+- [24H Worker Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/24h-worker-agent.md)
+- [十年老技术开发的 Ai Agent 探索之路 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/十年老技术开发的-ai-agent-探索之路-v2.md)
+
+→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openspec-spec-driven-development-trae-solo.md)
+
+## 目录结构 — 两大核心模块
+
+```
+openspec/
+├── specs/         # 规范库：按能力（capability）组织
+│                   # 记录系统实际的工作方式（活文档）
+└── changes/       # 变更系统：每个功能迭代的提案/设计/任务/规范增量
+```
+
+| 模块 | 角色 |
+|---|---|
+| `specs/` | **系统规范基线** — 当前"是什么"的唯一真相源 |
+| `changes/` | **正在进行的变更** — 未来"要变成什么"的提案 |
+
+## 四类核心文档（核心方法论）
+
+### 📄 proposal.md — 提案文档
+
+**解决什么问题**：AI 不会"跑偏" — 在写代码之前就把需求的**范围、动机和边界锁定**。
+
+**实战经验**：
+
+> "**proposal.md 里最容易被忽略但又最关键的字段是'不做什么'。很多 AI 翻车的根源就是它在做需求之外的'顺手重构'——明确列出范围边界，能大幅减少 AI 的过度实现。**"
+
+### 📐 design.md — 技术设计文档
+
+**解决什么问题**：AI 不会"瞎设计" — 在动手之前把**技术选型和架构决策**写清楚。
+
+**踩坑提醒**：
+
+> "**design.md 里的'开放问题'区建议保留，大型功能总有边走边想明白的细节，先写下来留个 TODO，而不是让 AI 自由发挥。**"
+
+### ✅ tasks.md — 实施任务清单
+
+**解决什么问题**：AI 不会"乱跳步" — **按顺序逐条完成，打勾后才进入下一步**。
+
+**使用小贴士**：AI 在执行 `apply` 时会**严格按照这个清单逐条推进，每完成一项就打勾，不会"顺便"做清单外的事情**。
+
+### 📋 specs/ — 规范增量（Spec Deltas）
+
+**解决什么问题**：让 AI 清楚"具体的行为约束是什么" — 用标准的 **ADDED / MODIFIED / REMOVED** 标记来表达系统能力的变化。
+
+**典型规范增量**：
+
+```markdown
+## ADDED
+### 能力: work-log
+- 系统能生成每日工作报告
+
+## MODIFIED
+### 能力: 既有 X
+- 修改点描述
+
+## REMOVED
+### 能力: 废弃 Y
+- 废弃原因
+```
+
+**核心解读**：
+- **ADDED** 标识本次**新增**的能力
+- **MODIFIED** 标识**修改**已有能力
+- **REMOVED** 标识**废弃**的能力
+- **这种增量式的表达方式，让规范像代码一样可 diff、可审阅、可追溯**
+
+## Trae IDE 安装配置（5 分钟）
+
+**前置要求**：
+- Node.js ≥ 20.19.0（**硬门槛**，版本不够会报错）
+- npm（随 Node.js 自动安装）
+- Trae IDE（**原生支持 OpenSpec**）
+
+**踩坑提醒**：Windows 用户建议使用 Git Bash 或 WSL 终端，部分 npm 命令在原生 CMD 下可能因权限或路径问题报错。
+
+**关键步骤**：
+1. 全局安装 OpenSpec CLI
+2. 在 Trae IDE 中初始化 OpenSpec
+3. 配置完整工作流（解锁全部斜杠命令）
+
+**命令双轨**：
+- `openspec`（终端命令）= **"管理者"** — 项目宏观控制（初始化 / 校验 / 归档）
+- `/opsx:`（AI 对话斜杠命令）= **"执行者"** — 具体规范编写和代码生成
+
+## 实操案例 — Trae + OpenSpec 开发"日报生成工具"
+
+### 步骤 1：创建变更
+
+在 Trae SOLO 模式对话中输入：
+```
+/opsx:onboard 写一个简单的日报生成工具
+```
+
+OpenSpec 自动生成 4 类文档结构。
+
+### 步骤 2：审阅规划文档（人在回路）
+
+**审阅顺序**（关键）：
+1. **审阅 proposal.md** — 确认需求范围、动机、成功标准
+2. **审阅 design.md** — 确认技术选型、架构决策
+3. **审阅 specs/work-log/spec.md** — 确认 ADDED 能力描述、验收场景
+
+**核心原则**：
+
+> "**AI 生成的提案必须经过人工审查确认，再进入实施阶段。规范是共识的产物，不是 AI 的一言堂。**"
+
+### 步骤 3：实施变更
+
+执行 apply 命令：
+```
+/opsx:apply add-work-log
+```
+
+AI **严格按照 tasks.md 中的清单逐条实现，每完成一项就自动打勾**。期间可用 `/opsx:continue` 更新文档和代码。
+
+### 步骤 4：归档变更
+
+执行归档命令：
+```
+/opsx:archive add-work-log
+```
+
+**归档后**：
+- 变更文件夹**移动到 `openspec/changes/archive/`**（带日期前缀）
+- **规范增量合并回 `openspec/specs/` 目录** — 作为系统功能的新基线
+
+**为什么要归档**：
+
+> "**归档不是简单的'收尾'，而是将本次变更的规范增量正式合并到系统的'唯一真相源' specs/ 中。这样，新加入团队的成员或新开的 AI 对话，只需要浏览 openspec/specs/ 就能完整了解系统当前的能力和约束。**"
+
+## 与已有实体的关系
+
+- `Trae Solo Work Feishu Bitable Pipeline Tutorial` — TRAE SOLO Work 模式教程
+- **本实体** — TRAE SOLO + OpenSpec 规范驱动开发教程
+- **关系**：同 IDE（TRAE），不同方法论（OpenSpec = 规范先行的 SDD 框架）
+
+- `Impeccable` — Impeccable AI frontend design skill（**规范 + 41 检测规则**）
+- **OpenSpec 相似性**：都是"先有规范/规则，再让 AI 写代码"
+
+- claude md quality curve — CLAUDE.md 质量曲线
+- **OpenSpec 创新**：把 CLAUDE.md 这种**项目级**规范，演进为**变更级**（proposal + design + tasks + spec deltas）4 类文档
+
+## 落地总结
+
+> "**OpenSpec 通过'先定规范，再写代码'的理念，将 AI 从难以预测的'随机拍档'驯化为稳定可靠的'Senior Engineer'。**"
+
+**四类文档的"意图锁定闭环"**：
+| 文档 | 锁定什么 |
+|---|---|
+| **proposal.md** | 锁定**需求边界**（做什么 / 不做什么） |
+| **design.md** | 锁定**技术方案**（怎么实现） |
+| **tasks.md** | 锁定**执行顺序**（按部就班） |
+| **specs/** | 锁定**行为约束**（能力增量 ADDED/MODIFIED/REMOVED） |
+
+**配合 Trae IDE 的 SOLO 模式**：实现从规范到代码的全流程落地，**让 AI 编码真正变得可预测、可追溯、可审计**。
+
+## 深度分析
+
+### 1. "负面约束"比"正面描述"更能驯化 AI 行为
+
+proposal.md 中最容易被忽略但又最关键的字段是"不做什么"。这条经验揭示了一个深刻的 AI 交互原理：**约束性规范（negative specification）比描述性规范更能控制 AI 的行为边界**。当 AI 收到"要做 X"时，它会在 X 之外自由发挥；但当它收到"不要做 Y"时，Y 这个边界被明确锁定。这个 asymmetry 说明，AI 的过度实现问题不是靠"告诉它做什么"解决的，而是靠"告诉它不做什么"解决的 。
+
+### 2. 四类文档构成"意图锁定闭环"，缺失任一环都会导致漂移
+
+proposal → design → tasks → specs 这四个文档并非随意组合，而是一个严格的**意图传递链**：proposal 锁定需求边界，design 锁定技术方案，tasks 锁定执行顺序，specs 锁定行为约束（ADDED/MODIFIED/REMOVED）。如果缺少 design 阶段，技术方案会在 tasks 执行时被 AI 自由改写；如果缺少 tasks 阶段，AI 会在各实现步骤间跳跃式前进。**这个闭环的每一环都是强制性的，不是可选的** 。
+
+### 3. 规范增量（ADDED/MODIFIED/REMOVED）将"知识生产"变为"可审计的工程过程"
+
+OpenSpec 的 ADDED/MODIFIED/REMOVED 范式借鉴了代码 version control 的思想，但应用于系统能力描述。这不只是语法约定，而是一种**认识论转变**——它把"系统现在能做什么"变成了一份可供 diff、review 和追溯的基线。归档操作将变更合并回 specs/，本质上是把提案阶段的推测性知识转化为已验证的系统知识。这一机制使得团队新成员或新的 AI 对话可以在不依赖聊天记录的情况下，通过浏览 specs/ 目录获得完整的系统能力图谱 。
+
+### 4. "人在回路"是规范驱动开发的强制性前提，而非可选项
+
+OpenSpec 明确要求 AI 生成的提案必须经过人工审查确认后才能进入实施阶段。这不是工艺建议，而是**框架设计层面的约束**：如果人类不审阅 proposal，AI 的"自说自话"问题就得不到根源性解决。AI 可以生成 proposal，但判断"这个需求是不是真的想要"和"这个范围边界是否合理"必须由人类完成。缺乏这一环，规范驱动就会退化为"AI 驱动开发+AI 自我审查"，漂移问题依然存在 。
+
+### 5. Trae SOLO 模式与 OpenSpec 的互补性：双边"盲区"的互相弥补
+
+Trae SOLO 模式的核心价值在于为 AI 提供了一个**持续性上下文环境**（聊天历史不被丢弃）；OpenSpec 的核心价值在于为 AI 提供了一个**结构化的规范基线**（意图被显式记录）。两者的互补性在于：SOLO 模式解决了"AI 忘记之前说过什么"的问题，OpenSpec 解决了"AI 从零猜意图"的问题。单独使用任一机制都有明显短板——SOLO 无规范会漂移，规范无 SOLO 上下文会断裂。结合使用才构成完整的 AI 编程辅助范式 。
+
+## 实践启示
+
+### 1. 在 proposal.md 中强制填写"不做什么"字段
+
+在团队或个人的 AI 编程工作流中，每次发起新提案时，**必须**在 proposal.md 的显著位置填写"不做什么（Out of Scope）"。这个字段的优先级应与"需求描述"平级，甚至更高。可以参考以下模板：
+
+```markdown
+## 不做什么
+- 不会处理 X 情况（留给后续专项提案）
+- 不会重构 Y 模块（当前提案范围外）
+- 不会引入 Z 依赖（与当前技术栈不一致）
+```
+
+这一字段的价值在被 AI"顺手重构"或"顺手引入新依赖"之后会体现得尤为明显。
+
+### 2. 设计阶段强制保留"开放问题"区，不要让 AI 自由发挥
+
+design.md 应在文档末尾设置明确的"开放问题（Open Questions）"区域，格式化为 TODO 列表。**即使设计文档已经很完整，也要保留这个区域**，因为：大型功能的细节往往是边实现边想明白的，如果强行在设计阶段写死，AI 会在实现时产生更大的偏差。把未决问题显式记录为 TODO，远优于让 AI 在实施时自由发挥后产生难以追溯的副作用 。
+
+### 3. tasks.md 按最小粒度拆分，每条只描述一个原子操作
+
+tasks.md 中的每条任务应该是**不可再分的原子操作**（例如："在 `src/utils.ts` 中添加 `formatDate` 函数，签名为 `formatDate(date: Date): string`"），而非"实现日报模块"这样的高层次描述。任务粒度越细，AI 在执行 `apply` 时的偏差空间越小。可以通过以下标准自检：每条任务完成后，是否能独立验证其正确性？如果不能，说明任务粒度还不够细。
+
+### 4. 归档操作后立即更新团队共享的 specs/ 基线
+
+归档不是"收尾工作"，而是一个**知识生产的关键节点**。每次归档完成后，应确认规范增量已正确合并到 `openspec/specs/` 目录，并且团队其他成员（或后续 AI 对话）通过浏览 specs/ 能完整理解系统当前能力。对于多人协作的项目，建议在 `openspec/specs/` 目录设置 README.md，按能力（capability）分类索引所有规范文件 。
+
+### 5. 将 OpenSpec 的"负面约束"思维迁移到其他 AI 交互场景
+
+"不做什么"思维不仅适用于 proposal.md，还可以迁移到更广泛的 AI 交互中。例如：
+- 在 `/opsx:onboard` 指令中附加明确的范围说明：`"实现一个简单的日报生成工具，不涉及定时任务，不接入第三方日历 API"`
+- 在大型项目的 CLAUDE.md 或 .claude条约中，将"不做什么"作为必填段落
+- 当 AI 开始"顺手"做额外工作时，用明确的行为约束指令来限制其行为范围
+
+这一思维方式的迁移，能将 OpenSpec 从一个独立工具升华为团队 AI 交互的基础规范语言。
+
+## 核心金句
+
+- "**写任何一行代码之前，先让人类和 AI 就'要做什么'达成明确一致**"
+- "**缺乏稳定的共识基础 — 需求躺在聊天记录里，AI 每次都需要从零开始'猜'你的意图**"
+- "**proposal.md 里最容易被忽略但又最关键的字段是'不做什么'**"
+- "**明确列出范围边界，能大幅减少 AI 的过度实现**"
+- "**design.md 里的'开放问题'区建议保留，先写下来留个 TODO，而不是让 AI 自由发挥**"
+- "**AI 在执行 apply 时会严格按照清单逐条推进，每完成一项就打勾，不会'顺便'做清单外的事情**"
+- "**ADDED / MODIFIED / REMOVED — 让规范像代码一样可 diff、可审阅、可追溯**"
+- "**AI 生成的提案必须经过人工审查确认，再进入实施阶段。规范是共识的产物，不是 AI 的一言堂**"
+- "**归档不是简单的'收尾'，而是将本次变更的规范增量正式合并到系统的'唯一真相源' specs/ 中**"
+- "**新加入团队的成员或新开的 AI 对话，只需要浏览 openspec/specs/ 就能完整了解系统当前的能力和约束**"
+- "**将 AI 从难以预测的'随机拍档'驯化为稳定可靠的'Senior Engineer'**"
+- "**让 AI 编码真正变得可预测、可追溯、可审计**"
+
+---
+
