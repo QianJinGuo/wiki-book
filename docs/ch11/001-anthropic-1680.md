@@ -6,7 +6,7 @@
 
 # Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
 
-> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-hiring-1680-resumes-infrastructure-veterans-machinespirit-2026.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-hiring-1680-resumes-infrastructure-veterans-machinespirit-2026.md)
 > Original Source: seb@hiiinternet X 上的硬核背景分析
 > Reporter: 机器之心编辑部
 
@@ -138,7 +138,7 @@
 - [Harness Engineering 综述](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md)（相关：构建大规模生产系统的工程能力）
 - [Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md)（相关：Anthropic 40% 基础设施背景与 Harness 实践的组织基础）
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-hiring-1680-resumes-infrastructure-veterans-machinespirit-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-hiring-1680-resumes-infrastructure-veterans-machinespirit-2026.md)
 
 ---
 

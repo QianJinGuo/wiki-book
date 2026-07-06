@@ -20,7 +20,7 @@ The Founder's Playbook
 - [Anthropic Claude Managed Agents Platform 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
 - [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-hackathon-winners-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-founder-playbook-ai-native-startup.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-founder-playbook-ai-native-startup.md)
 
 ## 深度分析
 

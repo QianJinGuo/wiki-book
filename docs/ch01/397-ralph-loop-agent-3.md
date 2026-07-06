@@ -84,7 +84,7 @@ Jarrod建议非前端任务用GPT 5.5 xHigh，前端设计用Claude Design。这
 Codex goals允许设置token预算来控制agent运行成本。实际项目中应设置合理的预算上限，并在接近预算时触发更保守的决策策略，避免在接近耗尽时做出高风险选择 。
 
 ## 相关资源
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ralph-loop-不够用长时间-agent-还缺这-3-件事.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ralph-loop-不够用长时间-agent-还缺这-3-件事.md)
 - [Jarrod Watts GitHub: long-running-agent-skill](https://github.com/jarrodwatts/long-running-agent-skill/tree/main)
 - [Claude Delegator](https://github.com/jarrodwatts/claude-delegator/)
 - [Matt Pocock grill-me skill](https://www.aihero.dev/my-grill-me-skill-has-gone-viral)

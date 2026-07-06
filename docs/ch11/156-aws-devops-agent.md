@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/将-aws-devops-agent-智能运维能力延伸到中国区.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
 
 ## 标签
 #aws #devops-agent #china-region #mcp

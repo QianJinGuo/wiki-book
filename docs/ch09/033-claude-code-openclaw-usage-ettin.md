@@ -180,8 +180,8 @@ Ettin Reranker Family 的 **六档参数量 + SoTA 性能 + 长上下文 + Flash
 - [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-system-design-three-way-comparison.md)
 - [Openclaw Agent Loop Design Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-agent-loop-design-patterns.md)
 
-→ [原文存档：Ettin Reranker Family](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ettin-reranker-family.md)
-→ [原文存档：Claude Code vs OpenClaw 记忆系统对比](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-openclaw-memory-comparison.md)
+→ [原文存档：Ettin Reranker Family](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ettin-reranker-family.md)
+→ [原文存档：Claude Code vs OpenClaw 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-openclaw-memory-comparison.md)
 
 ## 深度分析
 

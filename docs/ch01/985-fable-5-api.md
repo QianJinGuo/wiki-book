@@ -80,7 +80,7 @@ OpenAI奥特曼曾低估了AI会有多参差不齐，直言：「在有些事上
 
 如果企业陷入「测试—调整—再测试」的单模型选型死循环，那其实用农业「挑种子」思维，应对数
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/降维打击群体智能半价打平fable-5同款api已上线.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/降维打击群体智能半价打平fable-5同款api已上线.md)
 
 ---
 

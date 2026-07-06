@@ -24,7 +24,7 @@ Claude Code 源码拆解（by 无岳，阿里云开发者，2026-04-15）。核�
 
 ## Related
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
-- [原始文章存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-architecture-analysis.md)
+- [原始文章存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-architecture-analysis.md)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Claude Code 架构深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-deep-architecture-analysis.md)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](https://github.com/QianJinGuo/wiki/blob/main/entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)

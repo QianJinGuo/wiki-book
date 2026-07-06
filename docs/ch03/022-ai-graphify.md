@@ -143,7 +143,7 @@ graphify-out/cost.json
 - [Openai Codex 521 Update Appshots Goal Computer Use](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-codex-521-update-appshots-goal-computer-use.md)
 - [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki/blob/main/entities/rag技术框架的演进方向.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/graphify-software-engineering-knowledge-graph.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/graphify-software-engineering-knowledge-graph.md)
 
 ---
 

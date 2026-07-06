@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/schemata-dod-contractor-api-flaw-military-data-exposure.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/schemata-dod-contractor-api-flaw-military-data-exposure.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/schemata-dod-contractor-api-flaw-military-data-exposure.md)
 
 ## 相关实体
 

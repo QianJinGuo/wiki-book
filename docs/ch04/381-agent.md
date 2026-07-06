@@ -13,7 +13,7 @@
 
 ** Agent 时代，架构师到底应该学什么，哪些能力半年后还站得住？  **
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-era-architect-skills-guide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-era-architect-skills-guide.md)
 
 ## 深度分析
 

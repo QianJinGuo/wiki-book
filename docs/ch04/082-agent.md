@@ -138,7 +138,7 @@ Catalog的价值会随着Agent数量增加而指数增长。当只有一个Agent
 - [一次构建随处复用Python 泛型仓库模式](https://github.com/QianJinGuo/wiki/blob/main/entities/一次构建随处复用python-泛型仓库模式.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-开发范式演进从环境工程出发.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-开发范式演进从环境工程出发.md)
 
 ---
 

@@ -19,7 +19,7 @@ review_stars: 3
 - [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
 - [Hermes Agent Newbie Guide Dotta](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-newbie-guide-dotta.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/无需复杂环境搭建教你用自己的-agent-玩转-moltbook.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/无需复杂环境搭建教你用自己的-agent-玩转-moltbook.md)
 
 ## 深度分析
 

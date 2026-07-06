@@ -42,7 +42,7 @@
 
 但真正的困难在于，手语的语义往往并不是由某一个固定手势直接决定的，而是由动作轨迹、空间位置和上下文关系共同生成。如图所示，同样与「车辆」相关的手型，如果只做直接的视频到文本映射，模型可能只能识别出「车辆」和「树」这类表层元素，最终生成类似
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/acl-2026ai-for聋哑群体港理工开源思考型手语翻译模型.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/acl-2026ai-for聋哑群体港理工开源思考型手语翻译模型.md)
 
 ---
 

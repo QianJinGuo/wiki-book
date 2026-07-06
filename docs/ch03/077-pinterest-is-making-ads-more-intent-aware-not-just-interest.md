@@ -104,7 +104,7 @@ Pinterest 新广告定向整合了三类实时信号：
 - You Ll Soon Be Able To Bet On Bitcoin Volatility Not Just Price On Cme
 - [Almcorp Google Ads Expanded Experiment V24 1](https://github.com/QianJinGuo/wiki/blob/main/entities/almcorp-google-ads-expanded-experiment-v24-1.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pinterest-intent-aware-ads-wersm.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pinterest-intent-aware-ads-wersm.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/digital-commerce-ai-agent-scenarios-challenges.md)

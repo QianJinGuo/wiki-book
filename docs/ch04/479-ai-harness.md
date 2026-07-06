@@ -23,7 +23,7 @@
 - [大模型可控新突破：steering 机制、评估体系与开源落地](https://github.com/QianJinGuo/wiki/blob/main/entities/steering-mechanism-evaluation-easyedit2-zju-alibaba.md)
 - [the recent history of ai in 32 otters](https://github.com/QianJinGuo/wiki/blob/main/entities/the-recent-history-of-ai-in-32-otters.md)
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](https://github.com/QianJinGuo/wiki/blob/main/entities/吴恩达2026新课上线3小时包教包会零代码小白也能成为ai超级玩家.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析

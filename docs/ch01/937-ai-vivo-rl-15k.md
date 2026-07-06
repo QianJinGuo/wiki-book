@@ -50,7 +50,7 @@ vivo AI Lab 团队 投稿 量子位 | 公众号 QbitAI
 
 △ 离线轨迹重构。每一步并行采样N条rollout，将相同索引的候选
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/长链路手机ai训练总崩盘vivo全新半在线rl仅15k轨迹稳定收敛.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/长链路手机ai训练总崩盘vivo全新半在线rl仅15k轨迹稳定收敛.md)
 
 ---
 

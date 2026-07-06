@@ -107,7 +107,7 @@ Voice cloning 可以用于：
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md)
 
 ---
 

@@ -20,7 +20,7 @@ In this post, you’ll learn what the Model Profiler provides, the real-world sc
 
 The Model Profiler is a web application that lets you browse, filter, and compare every foundation model available on Amazon Bedrock in one place. Instead of navigating multiple console pages and documentation sites, you get a single interface with model cards, side-by-side comparisons, regional availability maps, and pric
 
--> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/simplify-model-selection-in-amazon-bedrock-with-the-open-source-model-profiler.md)
+-> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/simplify-model-selection-in-amazon-bedrock-with-the-open-source-model-profiler.md)
 
 ---
 

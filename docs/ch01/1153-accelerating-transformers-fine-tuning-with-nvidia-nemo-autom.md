@@ -101,7 +101,7 @@ NeMo AutoModel 保存的 checkpoint 是标准 HF 格式的 safetensors，可直�
 - [SGLang](https://github.com/QianJinGuo/wiki/blob/main/entities/sglang.md) — 结构化生成推理框架
 - LoRA / PEFT — 参数高效微调方法（对比路径）
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidia-nemo-automodel-fine-tuning.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidia-nemo-automodel-fine-tuning.md)
 
 ---
 

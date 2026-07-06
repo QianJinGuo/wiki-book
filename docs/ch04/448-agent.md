@@ -7,7 +7,7 @@
 # Agent 时代，我们架构师应该学什么？
 架构师（JiaGouX）  我们都是架构师！
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代我们架构师应该学什么.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-时代我们架构师应该学什么.md)
 
 ## 深度分析
 
@@ -43,7 +43,7 @@ Harness 在长任务里会撞上后端同样的问题：状态、队列、日志
 
 5. **从窄目标小闭环起步**：一个明确目标 + 单 Agent 主循环 + 三到七个边界清楚的工具 + 窗口外状态层 + 沙箱 + trace + 五十条初始评估样本 + 能回滚的发布方式。多 Agent 和长期记忆可以晚一点——Agent 早期最值钱的地方，不在它会做多少事，而在团队能不能看清它怎么失败。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-时代我们架构师应该学什么.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-时代我们架构师应该学什么.md)
 
 ## 关联阅读
 

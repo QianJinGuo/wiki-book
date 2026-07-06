@@ -17,7 +17,7 @@
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](https://github.com/QianJinGuo/wiki/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/langchain-anatomy-agent-harness.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langchain-anatomy-agent-harness.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 ## 深度分析

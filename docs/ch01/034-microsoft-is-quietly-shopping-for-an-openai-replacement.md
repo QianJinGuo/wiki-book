@@ -9,7 +9,7 @@
 - 评分：v=8 × c=7 = 56
 - 关键事件：Microsoft 秘密接触 AI 初创公司，评估 OpenAI 替代方案
 - 核心人物：Mustafa Suleyman（MAI Superintelligence 负责人）
-- 涉及公司：Cursor、Inception、GitHub Copilot→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-is-quietly-shopping-for-an-openai-replac.md)
+- 涉及公司：Cursor、Inception、GitHub Copilot→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-is-quietly-shopping-for-an-openai-replac.md)
 
 ## 事件背景
 据 Reuters 于周三报道，引用五位知情人士的消息，Microsoft 一直在悄悄接触 AI 初创公司，寻求收购或战略合作，以建立不依赖 OpenAI 的选择权。这一动向发生在 Microsoft 重写那份将两者绑定近十年合同的三周之后——该选择权已不再是理论可能。
@@ -44,7 +44,7 @@ Microsoft 在 OpenAI 身上押注 130 亿美元后寻求替代方案，这一动
 对于开发者社区，Cursor 的案例和 GitHub Copilot 的存在共同塑造了 AI 编程助手的竞争格局。两者的竞争而非整合，可能最终有利于开发者——更多的选择和更快的创新迭代。对于投资者，Suleyman 尚未公开的 pipeline 名单代表了下一个值得关注的焦点。SpaceX 的介入已经证明优质 AI 资产的并购成本正在快速上升，早期识别这些潜在标的可能带来显著的投资回报。
 
 ## 相关实体
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-is-quietly-shopping-for-an-openai-replac.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-is-quietly-shopping-for-an-openai-replac.md)
 - [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](https://github.com/QianJinGuo/wiki/blob/main/entities/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md)- [anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropics-zero-trust-for-ai-agents-sets-the-right-test-the.md)- [inference cost at scale with napkin math](https://github.com/QianJinGuo/wiki/blob/main/entities/napkin-inference-cost-injuly-2026.md)- [olmo-eval: an evaluation workbench for the model development](https://github.com/QianJinGuo/wiki/blob/main/entities/olmo-eval.md)- [why use app-level auth when every database has auth? (splunk](https://github.com/QianJinGuo/wiki/blob/main/entities/why-use-app-level-auth-when-every-database-has-auth-splunk-e.md)
 
 ---

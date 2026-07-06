@@ -31,7 +31,7 @@ JoyAI-VL-Interaction是京东2026年模型基建系列的一部分，与[JoyAI-E
 
 JoyAI-VL-Interaction代表了从"问答式AI"到"在场式AI"的范式转变，与[Interaction Models](https://github.com/QianJinGuo/wiki/blob/main/entities/interaction-models.md)中描述的实时多模态人机协作范式高度一致。模型内建的主动交互判断能力（而非依赖外部规则触发）是其与传统回合制模型的核心区别。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/joyai-vl-interaction-jd-open-source-real-time-video-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/joyai-vl-interaction-jd-open-source-real-time-video-2026.md)
 
 ---
 

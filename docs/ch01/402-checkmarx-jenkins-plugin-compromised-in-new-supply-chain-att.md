@@ -68,7 +68,7 @@ TeamPCP 并非首次对 Checkmarx 发起攻击——2026 年 3 月就曾入侵 c
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](https://github.com/QianJinGuo/wiki/blob/main/entities/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)
 
 # "Checkmarx Jenkins plugin compromised in new supply chain attack"
 URL Source: https://www.techzine.eu/news/security/141212/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack/

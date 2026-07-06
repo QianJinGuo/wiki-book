@@ -19,7 +19,7 @@ We introduce TabFM, a new foundation model for tabular data to simplify classifi
 
 Tabular data constitutes the backbone of enterprise data infrastructure and powers a significant fraction of critical predictive machine learning [applications](https://arxiv.org/pdf/2110.01889). From predicting customer churn to identifying financial fraud, tabular regression and classification tasks are ubiquitous. For years, supervised tree-based algorithms like [AdaBoost](https://en.wikipedia.org/wiki/AdaBoost), [XGBoost](https://en.wikipedia.org/wiki/XGBoost) and [random forests](https://en.wikipedia.org/wiki/Ran
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-d.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-d.md)
 
 ---
 

@@ -19,7 +19,7 @@ GitHub: https://github.com/Openbmb/edgeclaw
 - [2 Year 25 Ai Projects Summary](https://github.com/QianJinGuo/wiki/blob/main/entities/2-year-25-ai-projects-summary.md)
 - [Agent 从能用到管好中间差了什么](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-从能用到管好中间差了什么.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/edgeclaw-bemit-lobster.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/edgeclaw-bemit-lobster.md)
 
 ## 深度分析
 
@@ -41,7 +41,7 @@ GitHub: https://github.com/Openbmb/edgeclaw
 
 **针对特定垂直场景（如投研、审计、质检），建议构建"本地解析+云端增强"的Pipeline而非单一模型调用。** EdgeClaw的FA投研场景展示了这一模式的实际效果：本地负责财务BP解析（保密），云端负责行业报告召回和推理（公开）。这种Pipeline设计的核心是将数据流和智力流解耦，分别选择最优执行环境，而非用一个大模型试图解决所有问题 。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/edgeclaw-bemit-lobster.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/edgeclaw-bemit-lobster.md)
 
 ---
 

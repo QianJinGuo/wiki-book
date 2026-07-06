@@ -6,7 +6,7 @@
 
 # Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
 
 ## 摘要
 

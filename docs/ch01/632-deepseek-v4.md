@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/deepseek-v4.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4-training-58-page-paper-deep-dive.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-training-58-page-paper-deep-dive.md)
 
 ## 摘要
 ---
@@ -31,7 +31,7 @@ DeepSeek-V4的论文试图同时完成多件事，而且这些事之间的联系
 - 评分：value=7, confidence=8, product=56
 
 ## 链接
-- [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-v4.md)
+- [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4.md)
 
 ## 相关实体
 - [ds4c deepseek v4 antirez](https://github.com/QianJinGuo/wiki/blob/main/entities/ds4c-deepseek-v4-antirez.md)

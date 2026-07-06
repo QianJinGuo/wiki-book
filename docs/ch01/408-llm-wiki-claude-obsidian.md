@@ -177,12 +177,12 @@ LLM Wiki 在企业级知识库场景面临结构性限制，不能简单替代 R
 - [Claude Md 12 Rules Mnilax](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-md-12-rules-mnilax.md)
 - [Karpathy Vibe Coding Agentic Engineering V3](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v3.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-llm-wiki-second-brain-awkthole.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-llm-wiki-second-brain-awkthole.md)
 - [yc掌门人60天写了60万行代码：gstack开源](https://github.com/QianJinGuo/wiki/blob/main/entities/gstack-garry-tan-600k-lines-60-days.md)
 - [markdown 不会过时](https://github.com/QianJinGuo/wiki/blob/main/entities/markdown-ai-era-ifanr-20260513.md)
 - [Hermes Skills + LLM Wiki 知识系统](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skills-llm-wiki-self-improving-knowledge-system.md)
 
-→ [补充存档：WorkBuddy + LLM Wiki + Obsidian 实践](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/workbuddy-llm-wiki-obsidian-practice.md)
+→ [补充存档：WorkBuddy + LLM Wiki + Obsidian 实践](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/workbuddy-llm-wiki-obsidian-practice.md)
 
 ---
 

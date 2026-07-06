@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](https://github.com/QianJinGuo/wiki/blob/main/entities/iclr-agent-3d-generation.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/3CITzkDLeeDM0Olz9wudrg.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/3CITzkDLeeDM0Olz9wudrg.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 摘要

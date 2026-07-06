@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-cisco-webex-mcp-meeting-prep-followup-assistant.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md)
 
 ## 深度分析
 

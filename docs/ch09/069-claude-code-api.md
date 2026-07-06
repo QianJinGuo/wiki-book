@@ -79,7 +79,7 @@ Anthropic 有合理的商业和技术理由关注非官方 API 路由。影子 A
 
 ## 参考来源
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-china-api-router-fingerprint-vincentschmalbach.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-china-api-router-fingerprint-vincentschmalbach.md)
 
 ---
 

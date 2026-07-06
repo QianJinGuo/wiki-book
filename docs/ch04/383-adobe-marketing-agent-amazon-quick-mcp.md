@@ -12,7 +12,7 @@
 
 Adobe Marketing Agent 通过 MCP (Model Context Protocol) 协议与 Amazon Quick 深度集成，让营销团队以自然语言查询营销数据。Amazon Quick 提供对话体验和动作编排，Adobe 提供营销领域分析能力。这是两个企业级厂商通过开放协议交换领域专用 AI 工具的典型案例。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/accelerate-campaign-workflow-with-insights-from-adobe-market.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/accelerate-campaign-workflow-with-insights-from-adobe-market.md)
 
 ## 核心要点
 

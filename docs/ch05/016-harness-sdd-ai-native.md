@@ -18,7 +18,7 @@
 - [Ai Production Development Workflow Openspec Superpowers Gstack](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-production-development-workflow-openspec-superpowers-gstack.md)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗-v2.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
 
 - [从提需求到部署发布全Ai全自动化后研发效能全面跃升](https://github.com/QianJinGuo/wiki/blob/main/entities/从提需求到部署发布全ai全自动化后研发效能全面跃升.md)
 ## 二、从"出码率"看"提效"背后的深层困境
@@ -142,7 +142,7 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 
 ## 第 2 来源 — 信息业务中心 (高德技术 2026-06-15)
 
-> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)
 > Author: 信息业务中心 (高德技术公众号)
 > Date: 2026-06-15
 
@@ -204,8 +204,8 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 - [Harness Engineering 综述](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md)（相关：三阶段 Prompt→Context→Harness）
 - [Spec as AIOS (高德 App 平台)](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md)（同团队同主题另一视角）
 
-→ [第 1 来源原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
-→ [第 2 来源原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)
+→ [第 1 来源原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
+→ [第 2 来源原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)
 
 ---
 

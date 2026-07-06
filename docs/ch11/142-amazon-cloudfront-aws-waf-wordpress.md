@@ -78,7 +78,7 @@ wp-cron.php 依赖"有访客才触发"的机制在低流量时段造成任务漏
 
 ## 相关实体
 - [aws waf ai traffic monetization — 内容所有者向 ai 收费的网络层基础设施](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-waf-ai-traffic-monetization-bot-content-access.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/使用-amazon-cloudfront-和-aws-waf-大规模交付-wordpress.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/使用-amazon-cloudfront-和-aws-waf-大规模交付-wordpress.md)
 
 ---
 

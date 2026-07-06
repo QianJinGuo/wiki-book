@@ -83,7 +83,7 @@ LoopCoder-v2（4 次）  |
 
 ## 原文
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/都在卷让大模型多循环几遍这个7b模型loopcoder-v2说多循环-1-次就够了.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/都在卷让大模型多循环几遍这个7b模型loopcoder-v2说多循环-1-次就够了.md)
 
 ---
 

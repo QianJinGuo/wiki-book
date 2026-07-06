@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
 
 ## 摘要
 Title: A rigged game: ScarCruft compromises gaming platform in a supply-chain attack
@@ -18,7 +18,7 @@ ESET researchers uncovered a multiplatform supply-chain attack by North Korea-al
 - 评分：value=7, confidence=9, product=63
 
 ## 链接
-- [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
+- [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
 
 ## 相关实体
 - [Semis Memo: Supply Chain Inheritance](https://github.com/QianJinGuo/wiki/blob/main/entities/semis-memo-supply-chain-inheritance.md)

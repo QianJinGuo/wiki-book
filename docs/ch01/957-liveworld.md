@@ -109,7 +109,7 @@ LiveWorld 的出发点很简单： 世界如何变化，不应该由相机正在
 
 形式化地说，理想的世界模型应在时刻  维护一个与视角无关
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/liveworld视频世界模型新范式让镜头之外的世界继续演化.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/liveworld视频世界模型新范式让镜头之外的世界继续演化.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # Agent 记忆注入实战：5 维框架 + 4 前沿论文
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-memory-injection-5-dimensions-4-papers-agent-shouji-2026.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-memory-injection-5-dimensions-4-papers-agent-shouji-2026.md)
 
 ## 一句话定位
 
@@ -182,7 +182,7 @@ LLM → 个性化推荐结果
 → [三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md) — MSA/Doc-to-lora/RAG 量化对比
 → [Agent Loop 8 痛点](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md) — 记忆大小是痛点 4（同模型盲区）
 → [Agent Memory 评测综述 (淘天)](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-evaluation-landscape-taobao-survey.md) — Mem0 评测视角
-→ [原文存档（本篇）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-memory-injection-5-dimensions-4-papers-agent-shouji-2026.md)
+→ [原文存档（本篇）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-memory-injection-5-dimensions-4-papers-agent-shouji-2026.md)
 
 ---
 

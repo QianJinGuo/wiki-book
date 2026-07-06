@@ -16,7 +16,7 @@ DiScoFormer（Density and Score Transformer）是 Allen AI 提出的一种新方
 
 该工作解决了 KDE（通用但高维精度差）和神经分数匹配（需重训）之间的权衡问题，对 diffusion 模型和贝叶斯采样有潜在影响。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/discoformer-one-transformer-for-density-and-score.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/discoformer-one-transformer-for-density-and-score.md)
 
 ---
 

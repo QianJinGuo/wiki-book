@@ -8,7 +8,7 @@
 
 BrowserBC 将人类在浏览器中的一次操作轨迹蒸馏为自然语言技能卡，让更小、更便宜的模型照着技能卡就能完成同类任务。核心洞察：**录的不是坐标，而是"做什么 + 怎么判断完成"的可迁移过程性知识**。装备 Sonnet-4.6 蒸馏技能的小 Agent 达到 77%，逼近大 Agent 的 80%。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/browserbc-human-trajectory-skill-distillation-quantumbit-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/browserbc-human-trajectory-skill-distillation-quantumbit-2026.md)
 
 ## 问题：Web Agent 的"从零摸索"
 

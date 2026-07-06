@@ -82,7 +82,7 @@ Harness 回答的是一个工程问题：怎样把一个无状态、会推理的
 
 聊天模
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-harness-综述同一个模型为什么做出来的-agent-差这么远.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-harness-综述同一个模型为什么做出来的-agent-差这么远.md)
 
 ---
 

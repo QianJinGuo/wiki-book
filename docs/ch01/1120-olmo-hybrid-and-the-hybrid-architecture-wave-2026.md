@@ -196,7 +196,7 @@ Chinese AI labs（Qwen 3.5, Kimi Linear）也在 2026 春季同时采用 hybrid 
 
 > "A large part of the potential benefit of hybrid models is the reduction in memory usage for long-context generation... will likely take another 3-6 months to get right for this batch of GDN models."
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/olmo-hybrid-and-future-llm-architectures.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/olmo-hybrid-and-future-llm-architectures.md)
 
 ---
 

@@ -21,7 +21,7 @@ AlphaEvolve 不是把 LLM 当成一个更聪明的程序员，而是把 LLM 放�
 - [Servicenow Ui Is Dead Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/servicenow-ui-is-dead-agent.md)
 - [Agentexecutorgooglesdistributedagentruntime](https://github.com/QianJinGuo/wiki/blob/main/entities/agentexecutorgooglesdistributedagentruntime.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/alphaevolve-deepmind-discovery-agent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alphaevolve-deepmind-discovery-agent.md)
 
 - [hacker news 热帖：ai 会写代码了，为啥还要用 python？](https://github.com/QianJinGuo/wiki/blob/main/entities/hackernews-ai-coding-why-python-20260513.md)
 - [7个月，234次提交，1690行代码：ai编程大型翻车现场：我决定全部作废，手动重写！](https://github.com/QianJinGuo/wiki/blob/main/entities/vibe-coding-god-object-7months-failure.md)

@@ -7,7 +7,7 @@
 # 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
 
 > 来源：code 秘密花园（ConardLi），2026-04-03，公众号一文读懂 Harness Engineering
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md)
 
 ## 摘要
 

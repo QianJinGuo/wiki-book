@@ -6,7 +6,7 @@
 
 # olmo-eval: An evaluation workbench for the model development
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/olmo-eval.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/olmo-eval.md)
 
 ## 摘要
 

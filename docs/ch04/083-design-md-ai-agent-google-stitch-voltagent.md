@@ -232,7 +232,7 @@ VoltAgent awesome-design-md 集合仍在活跃更新中（学术pro 使用"71 �
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](https://github.com/QianJinGuo/wiki/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/design-md-google-stitch-voltagent-ai-design-agent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/design-md-google-stitch-voltagent-ai-design-agent.md)
 
 ---
 

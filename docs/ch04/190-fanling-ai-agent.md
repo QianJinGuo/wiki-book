@@ -17,7 +17,7 @@
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
 - [Agent Harness 12 Components 7 Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-12-components-7-decisions.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fanling-company-as-agent-ai-org-reflection-v2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fanling-company-as-agent-ai-org-reflection-v2.md)
 
 ## 深度分析
 

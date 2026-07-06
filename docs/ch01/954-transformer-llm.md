@@ -56,7 +56,7 @@
 
 这个发现
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/给transformer变个形llm竟能变得更聪明.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/给transformer变个形llm竟能变得更聪明.md)
 
 ---
 

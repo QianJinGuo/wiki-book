@@ -19,7 +19,7 @@
 - [Using Amazon Bedrock Agentcore Openclaw Multi 1](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-1.md)
 - [Openclaw Multi 5](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-multi-5.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
 
 ## 深度分析
 

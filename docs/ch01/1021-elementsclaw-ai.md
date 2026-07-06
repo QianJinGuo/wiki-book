@@ -36,7 +36,7 @@ ElementsClaw 采用「通专融合」架构：
 3. **「无中生有」— HfZrRe₄ (5.9K)**：不在任何已知数据库，AI 自主生成新结构
 4. **「举一反三」— Zr₃ScRe₈ (6.5K)**：AI 总结结构模体，搜索相似体系发现新超导体
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-superconductor-discovery-elementsclaw-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-superconductor-discovery-elementsclaw-2026.md)
 
 ---
 

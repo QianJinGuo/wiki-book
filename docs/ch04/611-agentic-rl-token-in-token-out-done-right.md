@@ -118,7 +118,7 @@ Multi-turn is where it starts to matter. When the assistant emits tokens, you d
 - [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-rl-token-in-token-out.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-rl-token-in-token-out.md)
 
 ---
 

@@ -48,7 +48,7 @@
 
 - 在大模型（70B 参数以上
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/分析-100-万亿-token-后得出的关于-ai-现状的真相.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/分析-100-万亿-token-后得出的关于-ai-现状的真相.md)
 
 ---
 

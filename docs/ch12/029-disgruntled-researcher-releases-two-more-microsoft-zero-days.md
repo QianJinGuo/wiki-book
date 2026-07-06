@@ -6,7 +6,7 @@
 
 # Disgruntled researcher releases two more Microsoft zero-days
 
-> -> [13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md)
+> -> [13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md)
 
 ## 摘要
 

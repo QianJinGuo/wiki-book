@@ -26,7 +26,7 @@ Agent Framework 是微软面向 .NET / Python 的统一 Agent 开发框架，承
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](https://github.com/QianJinGuo/wiki/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
 - [Agent Harness 12 Components 7 Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-12-components-7-decisions.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/microsoft-agent-framework-python-full-guide-zizhi.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-agent-framework-python-full-guide-zizhi.md)
 
 ## 深度分析
 

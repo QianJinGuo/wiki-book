@@ -6,7 +6,7 @@
 
 # Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
 
 ## 摘要
 

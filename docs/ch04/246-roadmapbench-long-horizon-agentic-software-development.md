@@ -185,7 +185,7 @@ RoadmapBench 超越简单的 pass/fail，提供多维度质量评估：
 - 针对特定语言、框架或应用类型优化 Agent 能力
 - 利用领域知识弥补通用能力的不足
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/arxiv-2605-15846-roadmapbench.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/arxiv-2605-15846-roadmapbench.md)
 
 ---
 

@@ -214,7 +214,7 @@ Meta-Harness 提出的 Big Model / Big Harness 框架有直接的工程含义：
 
 ### 核心行动项
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-self-improvement-six-mechanisms.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-self-improvement-six-mechanisms.md)
 > 如果你只记住一件事：**权重冻结下的外部状态层（记忆 + 搜索 + 对抗 + 自修改）是 AI 部署后持续变强的主流范式。训练 = 上学，这些机制 = 毕业后的自学能力。现在是做 Agent Harness 工程的最佳时机——因为这层的回报率比换模型高得多。**
 
 ## 第 2 来源（2026-06 新智元）：OpenAI Tax AI 生产案例 + 三招具体化机制
@@ -269,7 +269,7 @@ Tax AI 的全部知识产权归 **Thrive Holdings**（Joshua Kushner 创办，Op
 - **6 周 25%→86% 的曲线**证明：自我改进不是匀速，而是**指数加速**（更复杂的问题被解决 → 每份省下的人工时间越多 → 反哺训练 → 处理更复杂的问题）
 - **生产方法论 > 应用层 IP**：OpenAI 放弃 Tax AI IP 换范式，是把"自我改进工程"作为下一代护城河，与 [Harness Engineering 长程任务](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-long-term-agent-tasks.md) 中"Big Harness > Big Model"的判断完全一致
 
-→ [第 2 原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
+→ [第 2 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
 
 ---
 

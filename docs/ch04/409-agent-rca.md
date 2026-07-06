@@ -61,7 +61,7 @@ Badcase 根因定位的「证据汇总 → 范围收敛 → 模块诊断 → 责
 - `洞察 Agent 可信推理链路` — 企业 BI Agent 评测实践
 - `GrowLoop 真人感评测` — 开放域对话评测方法论
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-evaluation-systematic-guide-metrics-to-closed-loop.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-evaluation-systematic-guide-metrics-to-closed-loop.md)
 
 ---
 

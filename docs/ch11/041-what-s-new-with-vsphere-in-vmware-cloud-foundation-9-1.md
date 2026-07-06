@@ -6,7 +6,7 @@
 
 # vSphere in VCF 9.1 新特性解析
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/whats-new-with-vsphere-9-1.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/whats-new-with-vsphere-9-1.md)
 
 ## 核心要点
 
@@ -204,7 +204,7 @@ vMotion 加密一直是 CPU 开销的大户——即便使用 AES-NI，8 个并�
 - [Aderant Transforms Cloud Operations With Amazon Quick](https://github.com/QianJinGuo/wiki/blob/main/entities/aderant-transforms-cloud-operations-with-amazon-quick.md)
 - [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](https://github.com/QianJinGuo/wiki/blob/main/entities/cloud-ai-mobile-testing-new-era-amazon-device-farm-mcp-server-practical-guide-en.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/whats-new-with-vsphere-9-1.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/whats-new-with-vsphere-9-1.md)
 
 ---
 

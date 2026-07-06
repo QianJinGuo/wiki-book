@@ -14,7 +14,7 @@
 - [introducing the mdn mcp server](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-mdn-mcp-server-2026.md)
 - [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-main-agent-engineering-17-dimensions.md)
 - [万级实时推理的商品领域agent实践思考和总结](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-product-domain-agent-architecture.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/build-an-agentic-incident-triage-assistant-with-amazon-quick-and-new-relic.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-an-agentic-incident-triage-assistant-with-amazon-quick-and-new-relic.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 ## 核心要点

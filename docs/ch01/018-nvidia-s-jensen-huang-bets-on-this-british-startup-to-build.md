@@ -44,7 +44,7 @@ LLM 公司的战略规划者需要正视文章中隐含的挑战：如果强化�
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki/blob/main/entities/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
 - [Microsoft For Startups Microsoft](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-for-startups-microsoft.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md)
 
 ---
 

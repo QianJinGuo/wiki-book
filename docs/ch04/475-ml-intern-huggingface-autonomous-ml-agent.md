@@ -17,7 +17,7 @@
 - [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
 - [Claude Opus 47](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-47.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ml-intern-huggingface-autonomous-ml-agent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ml-intern-huggingface-autonomous-ml-agent.md)
 
 ## 深度分析
 

@@ -117,7 +117,7 @@ Dreaming 和 Outcomes 可以独立使用，也可以组合使用。先用 Outcom
 - [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)
 - [Anthropic Multi Agent Research System](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-multi-agent-research-system.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/anthropic-dreaming-claude-managed-agents-ovZ5v7jJkqDKSu9xmxwt8w.md).md]
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-dreaming-claude-managed-agents-ovZ5v7jJkqDKSu9xmxwt8w.md).md]
 
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Managed Agents 是 Anthropic 官方 Harness 产品
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)

@@ -6,7 +6,7 @@
 
 # When Impressive Performance Gains Do Not Matter
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/when-impressive-performance-gains-do-not-matter.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/when-impressive-performance-gains-do-not-matter.md)
 
 ## 摘要
 

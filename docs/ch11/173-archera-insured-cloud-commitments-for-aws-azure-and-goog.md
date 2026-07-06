@@ -80,7 +80,7 @@ Archera 的保险模式本质上利用了云消费的可预测性特征。大部
 2. **保持可见性**：确保承诺的存在不影响你对云成本和使用的可视化
 3. **定期复审**：利用率模式会变化，每季度评估承诺是否仍然适合
 4. **不要过度依赖**：保险转移风险是有价值的，但根本解决方式是优化使用效率
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/3rdfsmp.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/3rdfsmp.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cloud-infrastructure.md)

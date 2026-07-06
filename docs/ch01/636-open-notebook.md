@@ -118,7 +118,7 @@ Open Notebook 支持 1-4 个 AI 说话人（NotebookLM 固定 2 人），每个�
 - GitHub: https://github.com/lfnovo/open-notebook
 - → [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md) — Google 的对标产品
 - → [MCP 协议生态](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md) — MCP 集成的技术背景
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/open-notebook-open-source-notebook-lm-alternative.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/open-notebook-open-source-notebook-lm-alternative.md)
 
 ---
 

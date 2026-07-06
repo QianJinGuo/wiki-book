@@ -37,7 +37,7 @@ When you see a performance claim from us or from anyone else, these are the ques
 
 **2. Is the configuration production-ready?**Every platform has standard settings that trade raw benchmark scores for production reliability: connection handling, result caching, scale out support for higher concurrency workloads and more. Benchmarks that omit those settings 
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/why-real-workload-performance-is-the-metric-that-matters.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/why-real-workload-performance-is-the-metric-that-matters.md)
 
 ---
 

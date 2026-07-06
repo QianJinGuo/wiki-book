@@ -18,7 +18,7 @@
 - [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki/blob/main/entities/london-met-police-big-tech-data-requests.md)
 - [Clarity Act 5 Things](https://github.com/QianJinGuo/wiki/blob/main/entities/clarity-act-5-things.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析

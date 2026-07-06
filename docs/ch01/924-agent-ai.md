@@ -73,7 +73,7 @@ Mexus 想解决什么问题
 
 Mexus
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从聊天窗口到多-agent-控制台一次-ai-编程协作范式的转移.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从聊天窗口到多-agent-控制台一次-ai-编程协作范式的转移.md)
 
 ---
 

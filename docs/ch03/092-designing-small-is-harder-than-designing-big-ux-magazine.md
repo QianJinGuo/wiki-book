@@ -12,7 +12,7 @@
 - [Codex Role Plugins Sites Annotations](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-role-plugins-sites-annotations.md)
 - [The Future Of Bmw Design A Conversation With Max Missoni](https://github.com/QianJinGuo/wiki/blob/main/entities/the-future-of-bmw-design-a-conversation-with-max-missoni.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/designing-small-is-harder-than-designing-big-ux-magazine.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/designing-small-is-harder-than-designing-big-ux-magazine.md)
 
 - [Activity Focused Design](https://github.com/QianJinGuo/wiki/blob/main/entities/activity-focused-design.md)
 ## Notes

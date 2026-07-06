@@ -100,7 +100,7 @@
 
 - [Bedrock Agentcore Secrets Manager Identity](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-agentcore-secrets-manager-identity.md) — AWS Bedrock AgentCore 的 secret 管理视角（云端 secret 而非本地泄漏）
 - [Trail Of Bits Skill Scanner Bypass Distribution](https://github.com/QianJinGuo/wiki/blob/main/entities/trail-of-bits-skill-scanner-bypass-distribution.md) — Trail of Bits 的 Skill scanner 工具，AI 编程安全的另一个维度
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/recyclebin-zip-secret-scanning-fleet-bagel-2026.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/recyclebin-zip-secret-scanning-fleet-bagel-2026.md)
 
 ## 相关实体
 

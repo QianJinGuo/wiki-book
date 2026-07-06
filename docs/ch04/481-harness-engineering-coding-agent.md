@@ -13,7 +13,7 @@
 - [Harness Engineering Reliable Long Term Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-reliable-long-term-agent.md)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)
 
 - [一次构建，随处复用：python 中的泛型仓库模式](https://github.com/QianJinGuo/wiki/blob/main/entities/一次构建随处复用python-中的泛型仓库模式.md)
 

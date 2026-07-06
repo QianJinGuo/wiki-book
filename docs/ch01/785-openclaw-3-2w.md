@@ -11,7 +11,7 @@
 - [cola dlm：字节跳动连续潜空间扩散语言模型](https://github.com/QianJinGuo/wiki/blob/main/entities/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
 - [explicit vs. implicit in the age of intelligences — le secré](https://github.com/QianJinGuo/wiki/blob/main/entities/lesecretairedefernand-co-en-tech-explicit-vs-implicit-in-the-age-of-intelligence.md)
 - [what it feels like to work with mythos](https://github.com/QianJinGuo/wiki/blob/main/entities/what-it-feels-like-to-work-with-mythos.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 ## 深度分析

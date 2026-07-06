@@ -6,7 +6,7 @@
 
 # Model Size Scaling in 2023-2031
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/model-size-scaling-in-2023-2031.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/model-size-scaling-in-2023-2031.md)
 
 ## 摘要
 
@@ -120,7 +120,7 @@ Sparsity 从 8x 到 30x 的演进是模型规模膨胀的关键驱动因素：
 - Chinchilla Scaling Law 是本文修正和扩展的理论基础
 - [模型服务路由](https://github.com/QianJinGuo/wiki/blob/main/entities/state-of-routing-in-model-serving.md) — 推理时的模型选择策略
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/model-size-scaling-in-2023-2031.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/model-size-scaling-in-2023-2031.md)
 
 ---
 

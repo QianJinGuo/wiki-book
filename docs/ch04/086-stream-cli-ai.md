@@ -263,7 +263,7 @@ Stream 模式的多实例冲突问题（消息重复处理）是典型的"开发
 - [Agentmemory Source Analysis Coding Agent Local Memory](https://github.com/QianJinGuo/wiki/blob/main/entities/agentmemory-source-analysis-coding-agent-local-memory.md)
 - [Aws Devops Agent 实战云网络故障自主调查与修复建议](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dingtalk-qoder-claudecode-dual-engine-ai-assistant.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dingtalk-qoder-claudecode-dual-engine-ai-assistant.md)
 
 - [Claude Code Best Practices Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-best-practices-prompt-engineering.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)

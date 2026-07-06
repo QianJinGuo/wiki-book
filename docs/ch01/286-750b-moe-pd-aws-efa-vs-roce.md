@@ -169,7 +169,7 @@ EFA 在用户态暴露两套接口，这些通信库分别走不同路径：
 - [Foundation Model Building Blocks](https://github.com/QianJinGuo/wiki/blob/main/entities/foundation-model-building-blocks.md) — 通用基础组件
 - [GLM-5 Scaling Pain](https://github.com/QianJinGuo/wiki/blob/main/entities/glm5-scaling-pain.md) — GLM 系列规模化的工程挑战
 
-> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/750b-moe-model-roce-cluster-migration-aws-efa-prefill-decode-disaggregation.md)
+> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/750b-moe-model-roce-cluster-migration-aws-efa-prefill-decode-disaggregation.md)
 
 ## 相关实体
 

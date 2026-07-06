@@ -103,7 +103,7 @@ Anthropic 已经建立了一个正向飞轮：模型越强 → Harness 越顺手
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/deepseek-code-harness-competitor-tina.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-code-harness-competitor-tina.md)
 
 ---
 

@@ -77,7 +77,7 @@ Slack 从 SageMaker 到 Bedrock 的迁移实现了零客户事故，其方法论
 - [GPU 推理调度](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md)
 - [AI-Friendly 后端标准](https://github.com/QianJinGuo/wiki/blob/main/entities/backend-ai-friendly-standards-path-alitech.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/slack-ai-path-to-multi-cloud.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/slack-ai-path-to-multi-cloud.md)
 
 ---
 

@@ -17,7 +17,7 @@
 - **最小权限工具集**：为每个 Agent 分配刚好够用的工具权限，避免"全能 Agent"导致的权限过大风险；关键操作（删除、支付、发送）必须人工二次确认
 - **决策链路可观测**：为 Agent 的每次推理步骤生成结构化日志（包含输入、输出、工具调用参数、耗时），使用 trace 系统串联，方便在 Agent 行为异常时快速回放和定位
 - **Multi-Agent 通信协议设计**：如果涉及多 Agent 协作，提前定义好消息格式、超时处理、重试策略和降级路径；避免在系统复杂之后才补齐通信层的容错设计
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/你不知道的-agent原理架构与工程实践.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/你不知道的-agent原理架构与工程实践.md)
 
 ## 相关实体
 - [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/民生银行基于规格驱动开发sdd的-codeagent-私域研发探索与实践.md)

@@ -68,7 +68,7 @@ Every layer in the stack now has to price the same way the customer thinks : per
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 - [Offline Llm Energy Use Html](https://github.com/QianJinGuo/wiki/blob/main/entities/offline-llm-energy-use-html.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tokens-per-result.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tokens-per-result.md)
 
 ---
 

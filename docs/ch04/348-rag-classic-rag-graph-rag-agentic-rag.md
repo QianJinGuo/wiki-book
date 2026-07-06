@@ -19,7 +19,7 @@
 - [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/three-rag-architectures-classic-graph-agentic.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/three-rag-architectures-classic-graph-agentic.md)
 
 ## 深度分析
 

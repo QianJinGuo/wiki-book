@@ -29,7 +29,7 @@ Miles 的核心设计是将 RL 训练分解为四个可组合层：Ray 负责分
 - [百度文心后训练演进](https://github.com/QianJinGuo/wiki/blob/main/entities/baidu-wenxin-post-training-evolution.md)
 - [PyTorch 训练循环实践](https://github.com/QianJinGuo/wiki/blob/main/entities/essays-pytorch-training-loop.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/pytorch-miles-llm-rl-post-training-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pytorch-miles-llm-rl-post-training-2026.md)
 
 ---
 

@@ -45,7 +45,7 @@ Linux 的成功不仅因为开源，更因为 Linux Foundation 提供了治理�
 - [Anthropic_Cache_Tokenomics](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic_cache_tokenomics.md)
 - [Novee Security How To Get A 100 Conference Acceptance Rate The No](https://github.com/QianJinGuo/wiki/blob/main/entities/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-inevitable-need-for-an-open-model-consortium.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-inevitable-need-for-an-open-model-consortium.md)
 
 # The inevitable need for an open model consortium
 

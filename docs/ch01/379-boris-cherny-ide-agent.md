@@ -9,7 +9,7 @@
 > 来源：微信公众号"架构师（JiaGouX）"——对 Boris Cherny 在 Sequoia AI Ascent 2026 上访谈的延伸解读
 > 关联文章：Claude Code 源码、Harness、上下文、Skills 系列
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/iqSixiNP9lxNKg7aVfHFCQ.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/iqSixiNP9lxNKg7aVfHFCQ.md)
 
 ## 摘要
 

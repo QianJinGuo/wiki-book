@@ -85,7 +85,7 @@ description: 为用户提供 AB 实验的创建与修改能力，支持实验创
 
 ---
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-skill-engineering-alibaba-practice.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-skill-engineering-alibaba-practice.md)
 
 ---
 

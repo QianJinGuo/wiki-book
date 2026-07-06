@@ -48,7 +48,7 @@ Nano Banana 2 Lite 延续了 Nano Banana 系列（[加速 Gemini Nano 模型](ht
 
 两个模型均集成 SynthID 水印技术，用于标识 AI 生成内容。Google 还扩展了在线验证工具，帮助用户了解内容如何被创建和编辑。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-deepmind-nano-banana-2-lite-gemini-omni-flash-launch-2026-06-30.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-deepmind-nano-banana-2-lite-gemini-omni-flash-launch-2026-06-30.md)
 
 ---
 

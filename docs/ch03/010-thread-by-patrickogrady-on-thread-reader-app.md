@@ -90,7 +90,7 @@ Patrick 关于"loss-y 模型"的问题指出了一个有价值的研究方向：
 - 
 - Axie Infinity Ronin Ethereum Layer2 Migration
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thread-patrickogrady.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thread-patrickogrady.md)
 
 ---
 

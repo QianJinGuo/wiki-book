@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/openclaw-multi-5.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-multi-5.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-multi-5.md)
 
 ## 标签
 #aws #bedrock #agentcore #openclaw #serverless

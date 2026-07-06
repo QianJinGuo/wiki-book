@@ -6,7 +6,7 @@
 
 # Every Frame Perfect
 
-> Source: [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tonsky-every-frame-perfect.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tonsky-every-frame-perfect.md)
 
 ## 核心要点
 
@@ -50,7 +50,7 @@ Now, what does it mean in practice? I can think of a few things:
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 tonsky.me 视角
-- 引用源：[Tonsky Every Frame Perfect](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tonsky-every-frame-perfect.md)
+- 引用源：[Tonsky Every Frame Perfect](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tonsky-every-frame-perfect.md)
 ## 相关实体
 - [from doer to director: the ai mindset shift](https://github.com/QianJinGuo/wiki/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
 - [why internally-built ai fails fund accounting audits](https://github.com/QianJinGuo/wiki/blob/main/entities/why-internally-built-ai-fails-fund-accounting-audits.md)

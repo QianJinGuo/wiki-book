@@ -22,7 +22,7 @@
 - [Claude Code Large Codebase Harness Configuration](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-harness-configuration.md)
 - [Openai Skills Shell Compaction Agent Primitives](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-skills-shell-compaction-agent-primitives.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/promptqueue-opengorilla-project-analysis-ljguo.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/promptqueue-opengorilla-project-analysis-ljguo.md)
 
 ## 一、立项背景（Purpose）
 

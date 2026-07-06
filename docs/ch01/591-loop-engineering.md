@@ -128,7 +128,7 @@ Addy 给了个我觉得最好懂的例子。想象这么一套东西每天早上
 
 ## 原文
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-06-17--Loop-Engineering橙皮书-发布-免费-开源-花叔.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-06-17--Loop-Engineering橙皮书-发布-免费-开源-花叔.md)
 
 ---
 

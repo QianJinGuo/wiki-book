@@ -16,7 +16,7 @@ Data Security Platform
 - [Thehackernews Com The New Phishing Click How Oauth](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-com-the-new-phishing-click-how-oauth.md)
 - [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/bluekit.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/bluekit.md)
 
 ## 深度分析
 

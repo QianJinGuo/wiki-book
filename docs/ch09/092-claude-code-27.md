@@ -130,7 +130,7 @@
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md)：Hooks/CLAUDE.md/Skills 的分层设计呼应 Harness 的制动优先原则
 - [Skills 重新定义 Agent 知识](https://github.com/QianJinGuo/wiki/blob/main/entities/skills-redefine-agent-knowledge-allen-tang-2026.md)：第 11 条"重复提示沉淀成 Skills"的实践指南
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-27-tips-engineering-upgrade-jiagoux-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-27-tips-engineering-upgrade-jiagoux-2026.md)
 
 ---
 

@@ -37,7 +37,7 @@ Opus 4.5 在结构和规范性上胜出（bullet points、headers、代码格式
 Localmaxxing 不是"取代云端"而是"分流任务"。随着本地模型能力持续提升（追赶前沿的 3-4 个月差距正在缩短），越来越多的任务会从云端迁移到本地。但短期内复杂推理任务仍然依赖云端前沿模型。最佳工程实践是设计支持本地/云端无缝切换的混合架构，根据任务特征动态路由 。
 
 ## 相关实体
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/localmaxxing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/localmaxxing.md)
 
 - [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](https://github.com/QianJinGuo/wiki/blob/main/entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
 - [Ico Fines South Staffordshire 2022 Breach](https://github.com/QianJinGuo/wiki/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)

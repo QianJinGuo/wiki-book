@@ -120,7 +120,7 @@ AI加速了一切，包括焦虑本身。「不用这个工具就会被淘汰」
 - [Bitter Lesson Garbage Can Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/bitter-lesson-garbage-can-mollick.md)
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/karpathy-vibe-engineering-silicon-era-jiangtao.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-vibe-engineering-silicon-era-jiangtao.md)
 
 ---
 

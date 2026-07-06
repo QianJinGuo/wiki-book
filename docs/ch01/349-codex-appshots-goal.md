@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [agent资本市场：自主agent融资框架与批判](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-capital-markets-wright-shensiquan.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/codex-major-update-appshots-goal-xinzhiyuan.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/codex-major-update-appshots-goal-xinzhiyuan.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 摘要

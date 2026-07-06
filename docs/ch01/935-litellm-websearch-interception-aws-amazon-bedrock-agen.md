@@ -61,7 +61,7 @@ AgentCore Web Search | Amazon Bedrock AgentCore Gateway @ us-east-1
 
 该机制默认的搜索后端是自建的 SearXNG（一款开源元搜索引擎，需自行以容器方式部署并维护）。 SearXNG 后端的搭建（启动容器、开启 JSON 输出、在 LiteLLM 中配置 search_provider: searxng） 属于 LiteLLM 原生支持的标准流程，可参考 [LiteLLM 官方文档](<https://docs.litellm.ai/docs/>) 中 web search / search tools 一节；本文不展
 
--> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/用-litellm-websearch-interception-集成-aws-托管的-amazon-bedrock-agentcore-web-search-.md)
+-> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/用-litellm-websearch-interception-集成-aws-托管的-amazon-bedrock-agentcore-web-search-.md)
 
 ---
 
