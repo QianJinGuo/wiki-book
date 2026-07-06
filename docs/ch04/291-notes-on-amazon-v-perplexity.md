@@ -107,7 +107,7 @@ Comet 使用 Chrome UA 的原因与其他 Chromium 系浏览器相同：规避�
 - [Agent Trust Handshake Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/ath-agent-trust-handshake-protocol.md)
 - Prompt Injection
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/amazon-v-perplexity-agentic-browsing-open-web.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-v-perplexity-agentic-browsing-open-web.md)
 
 ---
 

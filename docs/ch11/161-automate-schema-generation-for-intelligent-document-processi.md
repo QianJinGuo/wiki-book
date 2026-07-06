@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/automate-schema-generation-for-intelligent-document-processing.md`
 
-> → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
+> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
 
 ## 摘要
 Title: Automate schema generation for intelligent document processing | Amazon Web Services
@@ -19,7 +19,7 @@ Before you can extract information from documents using intelligent document pro
 - 评分：value=8, confidence=9, product=72
 
 ## 链接
-- [原文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
+- [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
 
 ## 相关实体
 - [Build financial document processing with Pulse AI and Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md)

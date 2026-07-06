@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/iclr-agent-3d-generation.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/iclr-agent-3d-generation.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/iclr-agent-3d-generation.md)
 
 ## Summary
 Agent闭环文生3D研究，英伟达与普渡大学合作。
@@ -68,7 +68,7 @@ Scenethesis是一个无需重新训练场景生成模型的系统框架，其流
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
 - [Gepa Optimize Anything](https://github.com/QianJinGuo/wiki/blob/main/entities/gepa-optimize-anything.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/iclr-agent-3d-generation.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/iclr-agent-3d-generation.md)
 
 ---
 

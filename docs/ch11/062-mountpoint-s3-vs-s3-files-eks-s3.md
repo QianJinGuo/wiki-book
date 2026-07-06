@@ -145,7 +145,7 @@ S3 Files 采用 NFS close-to-open 一致性模型：当一个客户端 close 文
 - **S3 Files 同步配置**：`https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization-customizing.html`
 - **EKS Mountpoint S3 CSI Driver**：EKS 控制台 addon 搜索 `aws-mountpoint-s3-csi-driver`
 
-→ 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mountpoint-s3-与-s3-files-在-eks-上的实战对比.md)
+→ 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mountpoint-s3-与-s3-files-在-eks-上的实战对比.md)
 ## 相关实体
 
 - [databricks storage ecosystem & opensharing：企业数据治理从 migrate e](https://github.com/QianJinGuo/wiki/blob/main/entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md)

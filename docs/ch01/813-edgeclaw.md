@@ -32,10 +32,10 @@
 **关注混合场景的路由自动化程度**。当前EdgeClaw的路由依赖显式的数据分类，但在实际部署中，用户并不愿意手动标记每一份数据的敏感等级。未来的进化方向是：让模型自己判断数据归属哪个等级（S0/S1/S2/S3），人类只需处理边界case。
 
 ## 与本文相关
-- [Openclaw Architecture 800Lines](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openclaw-architecture-800lines.md) — OpenClaw架构分析（OpenClaw生态）
+- [Openclaw Architecture 800Lines](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-architecture-800lines.md) — OpenClaw架构分析（OpenClaw生态）
 -  — 飞书aily企业级Agent（企业级落地对比）
 - [Gstack Ai Workflow](https://github.com/QianJinGuo/wiki/blob/main/entities/gstack-ai-workflow.md) — YC的AI协作工作流（协作Agent）
-- [Edgeclaw Bemit Lobster](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/edgeclaw-bemit-lobster.md) — 详细评测（raw）
+- [Edgeclaw Bemit Lobster](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/edgeclaw-bemit-lobster.md) — 详细评测（raw）
 
 ---
 

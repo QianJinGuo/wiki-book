@@ -85,7 +85,7 @@ Part II 将介绍 query engine、impact analysis 算法、client libraries。
 - 可观测性 pipeline 设计 — metrics/traces/logs 三支柱
 - Netflix Tech Blog 系列 (其他内容)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/high-throughput-graph-abstraction-at-netflix.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/high-throughput-graph-abstraction-at-netflix.md)
 
 ## 深度分析
 

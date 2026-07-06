@@ -39,10 +39,10 @@ Grok 的反 woke 定位在消费市场有一定传播度，但在企业市场和
 AI 模型公司的核心竞争力来自研究团队对算法创新、架构改进、训练细节的经验积累。这些知识很难通过外部招聘快速复制，因为该领域的顶尖人才高度稀缺且流动性有限。当创始团队全部离开后，公司的「组织记忆」断裂，需要数年时间重建。资本和算力只能买到物理资源，买不到这个。预防胜于治疗——核心研究团队的稳定性应该是早期风险评估的重要维度。
 
 ## 相关
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xai-grok-musk-training-new-model-wechat.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xai-grok-musk-training-new-model-wechat.md)
 
 ## 关联阅读
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/xai-grok-musk-training-new-model-wechat.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xai-grok-musk-training-new-model-wechat.md)
 
 ## 评分
 | 维度 | 分数 |

@@ -6,7 +6,7 @@
 
 # OpenRouter 2026 开源 F4：DeepSeek V4 Flash、GLM 5.2、MiniMax M3、Nemotron 3 Ultra 全景分析
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openrouter-f4-open-source-models-analysis-2026.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openrouter-f4-open-source-models-analysis-2026.md)
 
 OpenRouter 于 2026 年 6 月发布了《The Open-Weight Models That Matter》报告，整理出截至 2026 年 6 月最值得关注的 4 个开源模型（"开源 F4"）——DeepSeek V4 Flash、GLM 5.2、MiniMax M3、NVIDIA Nemotron 3 Ultra。
 
@@ -53,7 +53,7 @@ Nemotron 3 Ultra 是美国本土最能打的开源模型。5500 亿总参数 / 5
 
 开源与闭源的差距在过去 18 个月中稳定保持在 3 到 6 个月之间。闭源大厂完全没有甩开开源阵营的迹象。随着企业 AI 用量激增，控制成本成为核心诉求，开源模型迎来了真正的高光时刻。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openrouter-f4-open-source-models-analysis-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openrouter-f4-open-source-models-analysis-2026.md)
 
 ---
 

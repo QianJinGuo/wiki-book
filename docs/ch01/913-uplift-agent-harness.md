@@ -13,7 +13,7 @@
 - [gemma 4 and what makes an open model succeed](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-and-what-makes-an-open-model-succeed.md)
 - [model-harness-fit-agent-harness](https://github.com/QianJinGuo/wiki/blob/main/entities/model-harness-fit-agent-harness.md)
 - [what i’ve been building: atom report, post-training course,](https://github.com/QianJinGuo/wiki/blob/main/entities/what-ive-been-building-atom-report-post-training-course-fini.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/gaode-uplift-model-iteration-agent-long-running-harness.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-uplift-model-iteration-agent-long-running-harness.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析

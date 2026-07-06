@@ -8,7 +8,7 @@
 
 当 `CLAUDE.md` 越写越长后，Claude Code 会开始忽略某些指令。根本原因不是模型不行，而是我们把太多不同性质的规则塞进了同一个入口文件。本文提出四类失效原因和五层规则框架，将模糊的"没听话"问题拆解为可诊断、可工程化的系统设计问题。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-why-instructions-ignored-jia-gou-x-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-why-instructions-ignored-jia-gou-x-2026.md)
 
 ## 指令失效的四类原因
 

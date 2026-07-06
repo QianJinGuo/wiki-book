@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [harness engineering 的未来——什么会消失，什么不会](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-future-persistence-vs-erosion.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-deletable-worksite-ruofei.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-deletable-worksite-ruofei.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析

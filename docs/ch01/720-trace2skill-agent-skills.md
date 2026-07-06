@@ -18,7 +18,7 @@
 - [Agentic Ai System Architecture Harness Skill Mcp](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
 - [Memory Agent Systems Cobanov](https://github.com/QianJinGuo/wiki/blob/main/entities/memory-agent-systems-cobanov.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/trace2skill-trajectory-distillation-agent-skills.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/trace2skill-trajectory-distillation-agent-skills.md)
 
 ## 深度分析
 

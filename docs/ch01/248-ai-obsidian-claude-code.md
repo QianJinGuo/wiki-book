@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 39.8KB | `entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md`
 
-[开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md)
+[开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md)
 
 ##  核心痛点：文件分散与混乱
 Claude Code 的配置分散在多个位置：^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:25]

@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [浏览器 agent 的失忆问题：autobrowse 如何让每次探索变成永久技能](https://github.com/QianJinGuo/wiki/blob/main/entities/autobrowse-browserbase-persistent-skill-files.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/autobrowse-browser-agent-persistent-skills-sense-ai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/autobrowse-browser-agent-persistent-skills-sense-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析

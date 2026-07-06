@@ -179,7 +179,7 @@ AgentCore Observability 暴露了所有 ProcessPayment 调用的结果（成功�
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](https://github.com/QianJinGuo/wiki/blob/main/entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/enable-safe-agentic-payments-with-built-in-guardrails-using-.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/enable-safe-agentic-payments-with-built-in-guardrails-using-.md)
 
 ---
 

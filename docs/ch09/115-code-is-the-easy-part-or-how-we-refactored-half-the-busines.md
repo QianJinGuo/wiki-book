@@ -39,7 +39,7 @@ Well okay I was pretty stressed. You only get to test this once a month and it w
 
 Ok so, you have a billing system that runs in production and supports all your revenue. You know
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-is-the-easy-part-or-how-we-refactored-half-the-business.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/code-is-the-easy-part-or-how-we-refactored-half-the-business.md)
 
 ---
 

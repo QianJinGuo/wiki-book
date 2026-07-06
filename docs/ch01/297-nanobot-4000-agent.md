@@ -6,7 +6,7 @@
 
 # nanobot：4000行极简 Agent 框架架构解析
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/nanobot-agent-framework-architecture-deep-dive.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nanobot-agent-framework-architecture-deep-dive.md)
 
 ## 摘要
 

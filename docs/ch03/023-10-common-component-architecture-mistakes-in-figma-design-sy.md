@@ -7,7 +7,7 @@
 ## 核心要点
 - Newsletter article, source: https://zeroheight.com/blog/10-common-component-architecture-mistakes-in-figma-design-systems/
 - 设计系统组件架构的十大常见错误及解决方案
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/10-common-component-architecture-mistakes-in-figma-design-systems.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/10-common-component-architecture-mistakes-in-figma-design-systems.md)
 
 ## 相关实体
 

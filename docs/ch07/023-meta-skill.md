@@ -9,7 +9,7 @@
 
 **Meta Skill = 在 Skill 之上编排 Skill 的抽象层**。把多步骤编排（并行/串行决策、产出物上下游衔接）**全部内嵌到一份 SKILL.md**，端到端打通一整套长程 Workflow。OpenSquilla 当前内置 **9 个 Meta Skill**（2026-06-04），2,757 ⭐，Apache-2.0。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)
 
 ## 它解决了什么
 **SOP 已梳理清楚，但每个蓝色方块都要在对话框单独调 Skill** —— 像戳一下动一下，全程 Human in the loop，光翻 Skill 列表就够忙活半天。

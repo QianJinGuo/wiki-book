@@ -95,7 +95,7 @@ SOP 概念源自企业管理：成熟公司都有 SOP，因为让员工自由发
 - [Kimi K2 Agent 数据库](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-k2-6-tidb-agent-database.md) — 国产 Agent 在数据库场景的应用
 - [Claude Managed Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md) — Claude 的托管 Agent 架构与 MCP 集成
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/不用再学ai了生成结果包稳的agent来了.md)（机器之心，2026-05-12）
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/不用再学ai了生成结果包稳的agent来了.md)（机器之心，2026-05-12）
 
 ---
 

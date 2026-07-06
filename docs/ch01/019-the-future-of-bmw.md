@@ -6,7 +6,7 @@
 
 # The Future of BMW Design: A Conversation with Max Missoni
 
-> 来源：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-future-of-bmw-design-a-conversation-with-max-missoni.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-future-of-bmw-design-a-conversation-with-max-missoni.md)
 
 ## 核心要点
 
@@ -23,7 +23,7 @@
 - [Why Im Leaving Github For Forgejo](https://github.com/QianJinGuo/wiki/blob/main/entities/why-im-leaving-github-for-forgejo.md)
 - [From Doer To Director The Ai Mindset Shift](https://github.com/QianJinGuo/wiki/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/the-future-of-bmw-design-a-conversation-with-max-missoni.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-future-of-bmw-design-a-conversation-with-max-missoni.md)
 
 ## 深度分析
 

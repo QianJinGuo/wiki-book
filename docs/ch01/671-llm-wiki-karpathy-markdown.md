@@ -17,7 +17,7 @@ Karpathy 在 `llm-wiki.md` 里提出：让 LLM 在上下文窗口之外维护一
 - [Three Rag Architectures Classic Graph Agentic](https://github.com/QianJinGuo/wiki/blob/main/entities/three-rag-architectures-classic-graph-agentic.md)
 - [How Ai Agent Memory Works](https://github.com/QianJinGuo/wiki/blob/main/entities/how-ai-agent-memory-works.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-wiki-architecture-karpathy-markdown-knowledge-base.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-wiki-architecture-karpathy-markdown-knowledge-base.md)
 
 ## 深度分析
 

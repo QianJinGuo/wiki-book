@@ -47,7 +47,7 @@ Agent 负责行动，Harness 负责控制，运行时负责承载。
 - `Harness Engineering` — 任务系统的稳定性框架
 - `Skill Hell` — Skill 治理与方法论，与托管运行时中的技能管理互补
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/raw-qoder-desktop-coding-to-anything-aicon-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/raw-qoder-desktop-coding-to-anything-aicon-2026.md)
 
 ---
 

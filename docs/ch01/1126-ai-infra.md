@@ -155,11 +155,11 @@ FlashAttention 的核心机制是 **Kernel Fusion + 分块计算 + Online Softma
 - [Opencli Browser Automation Jingxing](https://github.com/QianJinGuo/wiki/blob/main/entities/opencli-browser-automation-jingxing.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-infra-llm-efficient-inference-vllm.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-infra-llm-efficient-inference-vllm.md)
 
 ### 补充：HuggingFace Jobs 一键部署 vLLM
 
-HF Jobs 提供了一键部署 vLLM 推理服务的能力，无需手动配置 GPU 集群。通过 `hf-jobs` CLI 或 Python SDK 可直接将 vLLM 模型部署为可调用的 API 端点，支持自动扩缩容和模型缓存。 → [HF Jobs 部署指南](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vllm-server-hf-jobs-one-command.md)
+HF Jobs 提供了一键部署 vLLM 推理服务的能力，无需手动配置 GPU 集群。通过 `hf-jobs` CLI 或 Python SDK 可直接将 vLLM 模型部署为可调用的 API 端点，支持自动扩缩容和模型缓存。 → [HF Jobs 部署指南](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vllm-server-hf-jobs-one-command.md)
 
 ---
 

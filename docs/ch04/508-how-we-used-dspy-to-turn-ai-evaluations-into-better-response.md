@@ -25,7 +25,7 @@ Agent evaluation is significantly more complex than traditional search relevance
 
 This makes evaluation much broader. A good agent response might depend on multiple knowledge sources, including documents, prior messages, meeting notes, or tool calls such as search and read documents. The quality of the final answer depends not only on what information was found, but also on how the
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-we-used-dspy-to-turn-ai-evaluations-into-better-response.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-we-used-dspy-to-turn-ai-evaluations-into-better-response.md)
 
 ---
 

@@ -76,7 +76,7 @@ GitHub 路由到 AWS 不是孤例。TechCrunch 报道 Google 同意从 2026 年 
 - [NVIDIA Blackwell MLPerf Training 6.0](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06.md) — Blackwell 训练性能基准
 - [5237660](https://github.com/QianJinGuo/wiki/blob/main/entities/5237660.md) — Sovereign Cloud 相关实体
 
-> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/runtimewire-microsoft-github-aws-ai-capacity-crunch-2026-06.md)
+> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/runtimewire-microsoft-github-aws-ai-capacity-crunch-2026-06.md)
 
 ---
 

@@ -17,7 +17,7 @@
 - [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
 - [Claude Code Agent View Huashu](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-view-huashu.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/code-review-graph-upper-intermediate-guide-20260513.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/code-review-graph-upper-intermediate-guide-20260513.md)
 
 ## 深度分析
 

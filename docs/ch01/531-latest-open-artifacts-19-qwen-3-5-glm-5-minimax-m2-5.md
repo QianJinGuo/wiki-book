@@ -86,7 +86,7 @@ Interconnects 的 Latest Open Artifacts 系列是跟踪中国 AI 开源前沿的
 - [Gemma 4 Open Model Adoption Framework Interconnects](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-open-model-adoption-framework-interconnects.md)
 - [Olmo Hybrid Gdn Wave 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/olmo-hybrid-gdn-wave-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md)
 
 ---
 

@@ -10,7 +10,7 @@
 - 系列性经济冲击（Covid 疫情、地缘战争、特朗普关税政策）持续叠加，美国经济咨商会（Conference Board）高级经济学家 Yelena Shulyatyeva 表示"消费者没有喘息的窗口" 
 - 伊朗战争导致全美汽油均价突破 $4/加仑，AAA 2022 年调查显示多数美国人在此价位开始改变生活方式，Gasbuddy 的日活用户数在战争升级后的 3 月份几近翻倍 
 - 消费者信心指数与消费支出的传统相关性已显著瓦解——Uber、迪士尼等公司均报告强劲消费支出，而同日 S&P 500 创历史新高但密歇根消费者信心指数创历史新低 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/consumer-confidence-us-economy-inflation-iran-war-trade-html.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/consumer-confidence-us-economy-inflation-iran-war-trade-html.md)
 
 ## 深度分析
 **为什么通胀率回落无法修复消费者信心**

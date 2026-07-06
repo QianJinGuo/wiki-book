@@ -6,7 +6,7 @@
 
 ## 核心要点
 -
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/create-custom-mcp-catalogs-and-profiles.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/create-custom-mcp-catalogs-and-profiles.md)
 
 ## 深度分析
 ### 企业 MCP 治理的结构性需求

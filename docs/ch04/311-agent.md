@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/agent-开发范式演进从环境工程出发简化多源实时上下文.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-开发范式演进从环境工程出发简化多源实时上下文.md)
-从微信文章 [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-开发范式演进从环境工程出发简化多源实时上下文.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-开发范式演进从环境工程出发简化多源实时上下文.md)
+从微信文章 [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-开发范式演进从环境工程出发简化多源实时上下文.md) 提取。
 source_url: https://mp.weixin.qq.com/s/kNZE9fzCvOi3Em6JlueB0g
 
 ## 相关实体

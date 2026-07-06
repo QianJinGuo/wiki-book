@@ -78,7 +78,7 @@ Claude Code 负责人 Boris Cherny：
 
 ---
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loop-engineering-claude-code-sustainable-workflow.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/loop-engineering-claude-code-sustainable-workflow.md)
 
 ---
 

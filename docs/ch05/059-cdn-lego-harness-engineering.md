@@ -97,7 +97,7 @@ Harness Engineering五层架构的设计逻辑是**逐层收紧AI的行为边界
 
 ## 相关实体
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tencent-cdn-lego-harness-engineering.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tencent-cdn-lego-harness-engineering.md)
 
 - [腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-ai-team-knowledge-harness.md)
 - [Qq Music Harness Engineering Monorepo Microservices](https://github.com/QianJinGuo/wiki/blob/main/entities/qq-music-harness-engineering-monorepo-microservices.md)

@@ -137,7 +137,7 @@ TamperedChef攻击链展现出高度结构化的入侵策略：
 - [Shub Reaper Macos Stealer Attack Chain](https://github.com/QianJinGuo/wiki/blob/main/entities/shub-reaper-macos-stealer-attack-chain.md)
 - [Liteframeefficientvisionencodersunlockframescalinginvideollms](https://github.com/QianJinGuo/wiki/blob/main/entities/liteframeefficientvisionencodersunlockframescalinginvideollms.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/trackingtamperedchefclustersviacertificateandcodereuse.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/trackingtamperedchefclustersviacertificateandcodereuse.md)
 
 ---
 

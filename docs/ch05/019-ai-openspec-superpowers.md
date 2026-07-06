@@ -98,7 +98,7 @@ gstack → /browse 截图验证 → /qa 端到端测试 → /ship → /land-and-
 4. **gstack 填补了"AI 写完代码但无法验证页面渲染"的空白**
 5. 与 [Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md) 一脉相承：通过 Skill 组合 + 开发规范 + 流程约束推动 AI 产出收敛
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-production-development-workflow-openspec-superpowers-gstack.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-production-development-workflow-openspec-superpowers-gstack.md)
 
 ## 相关页面
 
@@ -131,7 +131,7 @@ gstack 作为验证层填补了当前 AI 编程工具链中最薄弱的一环。
 
 ## 第 2 来源：代码随想录/程序员Carl 2026-06-12 面试视角
 
-补充自 [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/openspec-superpowers-gstack-vibe-coding-interview-carl-2026-06-12.md)，提供同一三件套的**面试导向解读**——把第 1 来源的工程视角转为求职问答结构，补充 5 个高频面试题标准答法 + "什么时候该用/别用"的决策框架。
+补充自 [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openspec-superpowers-gstack-vibe-coding-interview-carl-2026-06-12.md)，提供同一三件套的**面试导向解读**——把第 1 来源的工程视角转为求职问答结构，补充 5 个高频面试题标准答法 + "什么时候该用/别用"的决策框架。
 
 ### 补充 1：核心 thesis 的不同措辞
 

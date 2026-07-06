@@ -16,7 +16,7 @@
 - [Qoder 1 0 Release Ai Ide Agent Workbench](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-1-0-release-ai-ide-agent-workbench.md)
 - [Gpt 55来了我撤回了退订Chatgpt的决定](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-55来了我撤回了退订chatgpt的决定.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/cvpr-2026-highlight让ai像电影人一样看视频8b小模型反超gpt-5与gemini-31-pro.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cvpr-2026-highlight让ai像电影人一样看视频8b小模型反超gpt-5与gemini-31-pro.md)
 
 ## 文章摘要
 近日，由 CMU 联合哈佛大学组成的研究团队推出了 CHAI（Critique-based Human-AI Oversight），一整套从"标注体系""可扩展监督"到"后训练方法"再到"视频生成"的完整方案。该工作已被 CVPR 2026 接收为 Highlight 论文（Top 3%）。团队训练的 Qwen3-VL-8B 开源小模型得以反超闭源的 Gemini-3.1-Pro 与 GPT-5。

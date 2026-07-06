@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/why-and-how-to-implement-an-ai-asset-rationalization-strateg.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/why-and-how-to-implement-an-ai-asset-rationalization-strateg.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/why-and-how-to-implement-an-ai-asset-rationalization-strateg.md)
 
 ## 核心要点
 - AI 资产理性化策略实施指南
 - 评分：value=8, confidence=7, product=56
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/why-and-how-to-implement-an-ai-asset-rationalization-strateg.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/why-and-how-to-implement-an-ai-asset-rationalization-strateg.md)
 
 ## 相关实体
 

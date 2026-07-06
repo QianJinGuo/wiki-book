@@ -36,7 +36,7 @@ Charlie O'Donnell 的这篇文章揭示了创业公司顾问制度的两个常�
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 - [Code Simulation For Enterprise Engineering Playerz](https://github.com/QianJinGuo/wiki/blob/main/entities/code-simulation-for-enterprise-engineering-playerz.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)
 
 ---
 

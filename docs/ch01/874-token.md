@@ -42,7 +42,7 @@ __ _ _ _ _
 
 在同构部署中，这  五个设计维度  大多可以独立调节，当 Prefill 和 Decode 运行在不同硬件上，维度之间的
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/异构token工厂不再踩坑多机构联合发布工业级设计实践拆解跨硬件推理服务的核心边界-1.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/异构token工厂不再踩坑多机构联合发布工业级设计实践拆解跨硬件推理服务的核心边界-1.md)
 
 ---
 

@@ -54,7 +54,7 @@ VSCode 在 webview 与扩展 host 之间使用 `postMessage` API 通信。ammara
 ## 相关实体
 - [Auditing Gitlab Cicd Kill Chain Black Hills 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/auditing-gitlab-cicd-kill-chain-black-hills-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md)
 
 - [bagel — fleet 级 secret scanning 守护开发工作站](https://github.com/QianJinGuo/wiki/blob/main/entities/bagel-fleet-secret-scanning-dev-workstation-2026.md)
 

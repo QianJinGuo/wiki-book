@@ -65,7 +65,7 @@
 - [A2A 企业级协议](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-overlays-rest-to-a2a-enterprise.md)
 - [Agent 环境工程](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-environment-engineering-jiagoux-2026-06-27.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-protocol-cost-evolution-roundtable-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-protocol-cost-evolution-roundtable-2026.md)
 
 ---
 

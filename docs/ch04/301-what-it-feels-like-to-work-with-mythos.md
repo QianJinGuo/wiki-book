@@ -66,7 +66,7 @@ Mollick 最深刻的观察是关于人类角色的转变。在 Concord 项目（
 
 5. **拥抱"委托人"角色转型**：知识工作者需要适应从"doer"到"commissioner"的角色转变。核心能力不再是执行技能（编码、写作、分析），而是意图定义、结果评判和系统设计。Mollick 的体验表明，最有效的使用方式是用宏大而明确的指令引导模型，然后用专家的眼光评判产出——这需要更高层次的思考能力和领域判断力。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/what-it-feels-like-to-work-with-mythos.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-it-feels-like-to-work-with-mythos.md)
 
 ---
 

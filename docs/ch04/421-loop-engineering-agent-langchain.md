@@ -84,7 +84,7 @@ LangChain 的 4 层与清华 Loop Stack 六件套（Skill/Spec/Tool/Act/Eval/Sto
 - [Agent Loop 8 个未解问题](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
 - [Hermes Agent Skills 源码分析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-skills-source-code-analysis-shuge.md)
 - [Loop Engineering 主题地图](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/loop-engineering-langchain-four-layer-loopcraft.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/loop-engineering-langchain-four-layer-loopcraft.md)
 
 ---
 

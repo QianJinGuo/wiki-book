@@ -59,7 +59,7 @@ Skill 最精妙的设计在于它的三级渐进式披露（Progressive Disclosu
 
 第一级：YAML frontmatter 中的  description  字段。 本质上是一段结构化的自然语言声明，包含三层信息：这个 Skill 干什么用 （"分析 Figma 设计稿并生成开发交付文档"）、 核心能力是什么 （"设计规范提取、组件文档生成、标注导出"）、 什么时候触发 （"当用户上传 .fig 文件或要求'设计转代码交付'时"）。它始终存在于 Agent 的系统提示词中，作用类似索引，当用户输入到来
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/打造高效易用的agent-skill.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/打造高效易用的agent-skill.md)
 
 ---
 

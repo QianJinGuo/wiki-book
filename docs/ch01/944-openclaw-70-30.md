@@ -69,7 +69,7 @@ AGENTS.md
 USER.md
 用户档案：名字、时区、
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/拆解-openclaw-架构四70-向量-30-关键词一套生产级记忆检索引擎.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/拆解-openclaw-架构四70-向量-30-关键词一套生产级记忆检索引擎.md)
 
 ---
 

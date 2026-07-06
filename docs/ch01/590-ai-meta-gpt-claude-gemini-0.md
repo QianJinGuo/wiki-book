@@ -140,7 +140,7 @@ Gemini 3.1 Pro则是9个模型里最爱「观察」的。它用了94次API调用
 
 ## 原文
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026-05-06-刷榜AI全挂了-Meta斯坦福地狱级测试-GPT-Claude-Gemini交出-新智元.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-05-06-刷榜AI全挂了-Meta斯坦福地狱级测试-GPT-Claude-Gemini交出-新智元.md)
 
 ---
 

@@ -11,7 +11,7 @@
 - [interconnects ai p open and closed models are on different](https://github.com/QianJinGuo/wiki/blob/main/entities/interconnects-ai-p-open-and-closed-models-are-on-different.md)
 - [llmshare: using shared chatbot pages to distribute malware](https://github.com/QianJinGuo/wiki/blob/main/entities/llmshare-using-shared-chatbot-pages-to-distribute-malware-20260606.md)
 - [zapocalypse: the attack chain that could have hijacked zapie](https://github.com/QianJinGuo/wiki/blob/main/entities/zapocalypse-the-attack-chain-that-could-have-hijacked-zapier-20260606.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-brings-local-ai-agents-to-laptops-with-gemma-4-12b-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-brings-local-ai-agents-to-laptops-with-gemma-4-12b-20260606.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析

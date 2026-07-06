@@ -18,7 +18,7 @@
 - [Skill Factory Yueheng](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-factory-yueheng.md)
 - [Code Review Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/code-review-graph.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-vscode-plugin-zero-code.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-vscode-plugin-zero-code.md)
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.9KB | `entities/claude-code-tool-design-evolution-anthropic.md`
 
-[Claude Code 工具设计复盘（官方）](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-tool-design-evolution-anthropic.md)
+[Claude Code 工具设计复盘（官方）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-tool-design-evolution-anthropic.md)
 
 ## 相关查询
 

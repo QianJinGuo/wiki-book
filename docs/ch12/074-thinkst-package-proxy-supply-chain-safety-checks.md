@@ -6,7 +6,7 @@
 
 # Thinkst Package Proxy: Supply Chain Safety Checks
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/thinkst-package-proxy-supply-chain-security.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thinkst-package-proxy-supply-chain-security.md)
 
 ## 摘要
 

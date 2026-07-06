@@ -205,7 +205,7 @@ Skill
 
 ## 四、一个合格Skill，必须满足这9
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/从入门到精通彻底讲懂agent的skill不做炫技式浪费.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从入门到精通彻底讲懂agent的skill不做炫技式浪费.md)
 
 ---
 

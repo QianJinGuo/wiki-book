@@ -13,7 +13,7 @@
 - [explicit vs. implicit in the age of intelligences — le secré](https://github.com/QianJinGuo/wiki/blob/main/entities/lesecretairedefernand-co-en-tech-explicit-vs-implicit-in-the-age-of-intelligence.md)
 - [review agent：后台复盘 agent 如何判断什么值得保存](https://github.com/QianJinGuo/wiki/blob/main/entities/review-agent-how-it-decides-what-to-save-winty.md)
 - [不用再学ai了！生成结果包稳的agent来了](https://github.com/QianJinGuo/wiki/blob/main/entities/不用再学ai了生成结果包稳的agent来了.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agent-paradigm-evolution-feipeng-alibaba.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-paradigm-evolution-feipeng-alibaba.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析

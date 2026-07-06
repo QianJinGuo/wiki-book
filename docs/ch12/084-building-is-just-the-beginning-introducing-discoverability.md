@@ -18,7 +18,7 @@
 - [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-the-ettin-reranker-family.md)
 - [Building The Agentic Future Developer Highlights From Io 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/building-the-agentic-future-developer-highlights-from-io-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-is-just-the-beginning-introducing-discoverability.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-is-just-the-beginning-introducing-discoverability.md)
 
 ## 深度分析
 

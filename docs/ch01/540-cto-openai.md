@@ -22,7 +22,7 @@
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](https://github.com/QianJinGuo/wiki/blob/main/entities/agi-road-may-be-wrong-from-the-start-wang-peng-tencent.md)
 - [18岁高中生用Ai挖出150万未知天体首批Chatgpt原住民毕业](https://github.com/QianJinGuo/wiki/blob/main/entities/18岁高中生用ai挖出150万未知天体首批chatgpt原住民毕业.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md)
 
 - [Openai官方Cli上线跟复杂的Sdk说拜拜](https://github.com/QianJinGuo/wiki/blob/main/entities/openai官方cli上线跟复杂的sdk说拜拜.md)
 - [Ciodive Openai Daybreak Cyber Threats](https://github.com/QianJinGuo/wiki/blob/main/entities/ciodive-openai-daybreak-cyber-threats.md)

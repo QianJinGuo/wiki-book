@@ -18,7 +18,7 @@
 - [Claude Code Harness Deep Understanding](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-harness-deep-understanding.md)
 - [Claude Code Agent View Huashu](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-view-huashu.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-demand-research-taosecho.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-demand-research-taosecho.md)
 
 ## 深度分析
 

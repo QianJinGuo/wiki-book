@@ -51,7 +51,7 @@
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-vs-openclaw.md)
 - [State Of Memory In Agent Harness Mem0 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/state-of-memory-in-agent-harness-mem0-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/es-agent-memory-layer-atlas-elasticsearch-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/es-agent-memory-layer-atlas-elasticsearch-2026.md)
 
 ---
 

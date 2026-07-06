@@ -6,7 +6,7 @@
 
 # LLM 缓存原理与实践
 
-> 原文归档：[原文归档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-prefix-caching-comprehensive-guide-2026-07-03.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-prefix-caching-comprehensive-guide-2026-07-03.md)
 
 LLM 缓存技术的完整梳理，从 KV Cache 第一性原理到 Prefix Caching 跨请求复用，再到 vLLM/SGLang 引擎实现和四家商用模型落地策略，最后揭示 agent 工作负载如何天然匹配"只追加"模式驱动 90% 缓存命中率。
 
@@ -78,7 +78,7 @@ agent 多轮对话的"只追加"模式使前缀不断增长。简化模型推导
 
 #LLM推理 #KVCache #前缀缓存 #PagedAttention #RadixAttention #推理优化 #成本优化 #延迟 #Agent工作负载 #vLLM #SGLang
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm-prefix-caching-comprehensive-guide-2026-07-03.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-prefix-caching-comprehensive-guide-2026-07-03.md)
 
 ---
 

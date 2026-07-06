@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/semgrep-intercom-php-security.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/semgrep-intercom-php-security.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/semgrep-intercom-php-security.md)
 
 # Semgrep Intercom PHP Supply Chain Attack
 Semgrep: Intercom PHP 供应链攻击 Mini-Shai-Hulud，Packagist/Composer 投毒
@@ -13,7 +13,7 @@ Semgrep: Intercom PHP 供应链攻击 Mini-Shai-Hulud，Packagist/Composer 投�
 At RSA, we launched Semgrep Multimodal to combine AI reasoning with rule-based detection [Learn More → ](https://semgrep.dev/blog/2026/attackers-cant-...
 
 ## 原文存档
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/semgrep-intercom-php-security.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/semgrep-intercom-php-security.md)
 
 ## 相关资源
 ## 深度分析
@@ -34,7 +34,7 @@ Intercom PHP供应链攻击（Mini Shai-Hulud行动）揭示了Packagist/Compose
 
 ## 相关实体
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 
 - [semgrep intercom php supply chain](https://github.com/QianJinGuo/wiki/blob/main/entities/semgrep-intercom-php-supply-chain.md)
 

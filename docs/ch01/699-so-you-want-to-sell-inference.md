@@ -128,7 +128,7 @@ Tom Tunguz 的分析对投资者有明确的指引：
 - Devin — ACU 定价模型的案例
 - Model Distillation — cost optimization 的核心策略
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tomtunguz-com-so-you-want-to-sell-inference.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tomtunguz-com-so-you-want-to-sell-inference.md)
 
 ---
 

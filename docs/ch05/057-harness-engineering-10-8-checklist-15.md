@@ -98,7 +98,7 @@ Hermes Agent 已实现路线图中的大部分步骤：Step 1 = AGENTS.md + CLAU
 - [Hermes Agent Skills 源码分析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-skills-source-code-analysis-shuge.md)
 - [Agent 记忆生命周期哲学](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
 - [Agent Engineering Guide MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-10-step-practical-guide-2026.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-10-step-practical-guide-2026.md)
 
 ---
 

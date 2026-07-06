@@ -70,7 +70,7 @@ A few years ago I published [this article](https://itamargilad.com/velocity-vs-i
 
 ![Image 3](https://itamargilad.com/wp-c
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-dev-productivity.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-dev-productivity.md)
 
 ---
 

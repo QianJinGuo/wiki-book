@@ -14,7 +14,7 @@
 - [Alphaevolve Deepmind Discovery Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaevolve-deepmind-discovery-agent.md)
 - [Ai Agents Inside Perimeter Hackernews](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
 
 - [intercom, now called fin, launches an ai agent whose only jo](https://github.com/QianJinGuo/wiki/blob/main/entities/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md)
 
@@ -30,7 +30,7 @@ Sentry 将 Seer Agent 定位为"Multiplayer Mode in Slack"——这暗示了 AI 
 - **可观测性产品团队**：Seer Agent 证明了将 LLM 能力与 telemetry 数据深度集成比单纯增加 AI 助手数量更有价值——数据模型的优化（如图结构）往往比 prompt 工程更关键
 - **AI 应用开发者**：在构建 AI Debugging 产品时，关键挑战不在于 LLM 的推理能力，而在于如何将已有的监控数据建模为 LLM 可高效检索的知识图谱
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
 
 ---
 

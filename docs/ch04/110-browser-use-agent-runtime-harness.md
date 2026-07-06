@@ -215,7 +215,7 @@ Browser Use 不需要从零开始建设验证体系。建议的集成路径：
 2. **Browser Use 作为 Agent 自主验证层**，验证 Agent 新生成的代码
 3. **定期将 Browser Use Contract 断言导出为 Playwright 测试**，实现知识沉淀
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/browser-use-runtime-harness.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/browser-use-runtime-harness.md)
 
 ---
 

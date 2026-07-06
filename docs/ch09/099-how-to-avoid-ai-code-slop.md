@@ -14,7 +14,7 @@
 - [How_Claude_Code_Works_In_Large_Codebases](https://github.com/QianJinGuo/wiki/blob/main/entities/how_claude_code_works_in_large_codebases.md)
 - [Karpathy Claude Md Rules](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-claude-md-rules.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-to-avoid-ai-code-slop.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-avoid-ai-code-slop.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 深度分析
@@ -53,7 +53,7 @@ Aviator 的实验回答了核心问题：**如果审查发生在代码写出来�
 
 ## 关联阅读
 - [SDD (Spec-Driven Development)](https://github.com/QianJinGuo/wiki/blob/main/concepts/sdd-specification-driven-development-harness.md) — 规格驱动开发方法论，与本文"审意图而非审代码"核心理念高度契合
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-to-avoid-ai-code-slop.md) — Ankit Jain 的完整原文
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-avoid-ai-code-slop.md) — Ankit Jain 的完整原文
 
 ---
 

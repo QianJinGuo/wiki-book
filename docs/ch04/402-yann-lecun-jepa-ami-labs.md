@@ -48,7 +48,7 @@
 **世界模型攻两道墙**：学物理规律（跨身体成立），适配新机体 = 校准问题
 
 ## 与现有知识的链接
-- → [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/yann-lecun-llm-not-intelligence-jepa.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/yann-lecun-llm-not-intelligence-jepa.md)
 - → [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md) — 技能系统
 
 ## 深度分析

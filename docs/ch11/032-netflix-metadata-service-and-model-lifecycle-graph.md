@@ -6,7 +6,7 @@
 
 # Netflix Metadata Service and Model Lifecycle Graph
 
-> 原文存档：[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
 
 > **Core insight**: Netflix 的 Metadata Service (MDS) 通过 AIP URI 统一寻址、Kafka 事件摄取、enrichment workers 和 Datomic+Elasticsearch 双存储，构建跨域 Model Lifecycle Graph，使"该模型被哪些 A/B 测试使用"这类跨系统查询从不可能变为单次 GraphQL 查询。
 
@@ -107,7 +107,7 @@ Model Lifecycle Graph 通过 AIP Portal 向 practitioners 展示，这是一个�
 - [Netflix Cassandra Wide Partition Dynamic Splitting](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-cassandra-wide-partition-dynamic-splitting.md)
 ## 相关引用
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
 
 ---
 

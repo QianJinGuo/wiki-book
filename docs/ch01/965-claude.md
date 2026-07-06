@@ -88,7 +88,7 @@ Anthropic 自己说的是：
 
 Anth
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-的拍马屁报告.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-的拍马屁报告.md)
 
 ---
 

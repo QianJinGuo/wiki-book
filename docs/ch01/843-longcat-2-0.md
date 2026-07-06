@@ -101,7 +101,7 @@ API 平台：https://longcat.chat/platform/product
 - **超长上下文**：1M 原生支持，LSA 稀疏注意力机制
 - **开源**：对外开源发布
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/meituan-longcat-2-0-trillion-parameter-moe-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/meituan-longcat-2-0-trillion-parameter-moe-2026.md)
 
 ---
 

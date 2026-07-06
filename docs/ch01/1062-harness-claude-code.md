@@ -10,7 +10,7 @@
 
 - [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/iqSixiNP9lxNKg7aVfHFCQ.md)
 - [现在如何使用 ai：一份快速指南（ethan mollick）](https://github.com/QianJinGuo/wiki/blob/main/entities/using-ai-right-now-a-quick-guide.md)
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/claude-code-dynamic-workflows-thariq-blog-gaia.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-dynamic-workflows-thariq-blog-gaia.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 ## 深度分析

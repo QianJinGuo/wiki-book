@@ -53,7 +53,7 @@ RunningHub 生态（ComfyUI 起家，10,000+ 模型积累）是 RHTV 的核心�
 - [Starfilm Ai Agent Ai Short Film Platform](https://github.com/QianJinGuo/wiki/blob/main/entities/starfilm-ai-agent-ai-short-film-platform.md)
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](https://github.com/QianJinGuo/wiki/blob/main/entities/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ai-内容创作开始进入画布-agent时代.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-内容创作开始进入画布-agent时代.md)
 
 ---
 

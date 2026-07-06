@@ -17,7 +17,7 @@
 - [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](https://github.com/QianJinGuo/wiki/blob/main/entities/全球ai新王诞生anthropic估值冲爆12万亿首次反超openai.md)
 - [Ai Native Undergrads Graduation 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-undergrads-graduation-2026.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md)
 
 ## 深度分析
 ### 诉讼时效作为核心法律争点

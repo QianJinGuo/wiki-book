@@ -82,7 +82,7 @@ Sandbox worker（microVM 级别硬件隔离）本身就是一个 worker，这意
 - Quickstart: https://iii.dev/docs/quickstart
 - Manus 谈 Claude Code 架构重建: https://vrungta.substack.com/p/claude-code-architecture-reverse
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
 ## 相关页面
 [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) — AWS 托管 Harness 平台，同样探索 Agent 基础设施抽象

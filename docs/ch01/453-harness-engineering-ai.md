@@ -47,7 +47,7 @@ AI Coding 含量低的老系统不一定适合全自动 AI 优化。建议先用
 评测报告不只是分数，而是系统行为的完整记录——包括每个用例的评测过程、失败原因、优化建议。这些报告可以成为新员工的培训材料、故障排查的参考文档、以及架构演进的决策依据。建议将评测报告纳入知识管理体系，而不仅仅是质量门禁的通过条件 。
 
 ## 相关资源
-- [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md)
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md)
 
 ## 相关实体
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-as-a-verifierageneral-purposeverific.md)

@@ -14,7 +14,7 @@ RoadmapBench 是一个评估长周期 Agentic 软件开发的基准测试，由 
 
 该基准填补了现有评估体系的空白，与 [Agent Harness 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md) 和 [Codex 六小时目标运行](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-goal-six-hour-run.md) 中讨论的长链 Agent 执行问题相互印证。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/roadmapbench-evaluating-long-horizon-agentic-software-development.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/roadmapbench-evaluating-long-horizon-agentic-software-development.md)
 
 ---
 

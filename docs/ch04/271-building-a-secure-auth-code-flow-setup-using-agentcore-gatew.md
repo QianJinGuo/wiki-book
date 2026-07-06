@@ -73,7 +73,7 @@ Gateway 的令牌验证设计具有显著的架构灵活性。文档明确指出
 - OAuth 2.0 授权码流程
 - AWS 安全最佳实践
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
 
 ---
 

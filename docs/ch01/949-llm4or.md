@@ -58,7 +58,7 @@ LLM4OR 会先进入哪些企业决策环节？
 
 ② 对应制造现场，订单、设备、备件和班次是调整对
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/llm4or-会是下一个应用热点吗.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm4or-会是下一个应用热点吗.md)
 
 ---
 

@@ -45,7 +45,7 @@ The solution uses Amazon Quick Flows as the orchestration layer, with a connecti
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](https://github.com/QianJinGuo/wiki/blob/main/entities/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md)
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](https://github.com/QianJinGuo/wiki/blob/main/entities/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 
 - [Gemini 3 5 Frontier Intelligence With Action](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-3-5-frontier-intelligence-with-action.md)
 ## 相关主题

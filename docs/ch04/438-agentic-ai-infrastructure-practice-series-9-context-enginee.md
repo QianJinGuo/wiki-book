@@ -6,7 +6,7 @@
 
 # Agentic AI Infrastructure Practice Series 9: Context Engineering
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/agentic-ai-infrastructure-practice-series-nine-context-engineering.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-ai-infrastructure-practice-series-nine-context-engineering.md)
 
 ## 摘要
 

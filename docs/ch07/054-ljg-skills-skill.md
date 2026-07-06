@@ -82,7 +82,7 @@ ljg 的 Skill 设计呈现出几个鲜明的哲学特征：
 
 ## 来源
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/ljg-skills-series-4-writing-expression.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ljg-skills-series-4-writing-expression.md)
 
 ---
 

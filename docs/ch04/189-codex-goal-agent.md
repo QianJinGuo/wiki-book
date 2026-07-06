@@ -135,7 +135,7 @@ Codex `/goal` 的实现揭示了一个深刻转变：Agent 系统设计正在从
 - [OpenAI Codex /goal 官方用例](https://developers.openai.com/codex/use-cases/follow-goals)
 - [OpenAI Codex goals.rs 源码](https://github.com/openai/codex/blob/main/codex-rs/core/src/goals.rs)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 
 - [Martin Fowler: Harness engineering for coding agent users](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html)
 ---

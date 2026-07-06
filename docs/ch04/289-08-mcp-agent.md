@@ -97,7 +97,7 @@ MCP 自 2024 年 11 月发布以来，已经从概念验证阶段进入了初步
 - [MCP 生产模式 12 种](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-12-mcp-production-patterns.md)
 - [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/mcp-agent-external-ecosystem-integration-guide-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mcp-agent-external-ecosystem-integration-guide-2026.md)
 
 ---
 

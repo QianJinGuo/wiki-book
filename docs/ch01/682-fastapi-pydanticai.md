@@ -69,7 +69,7 @@ PydanticAI 的实践揭示了类型约束 Agent 输出时的关键原则：**核
 - **Agent 输出校验模式**
 - **类型安全的 Agent 开发**
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/fastapi-之父的-pydanticai-是真的夯.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi-之父的-pydanticai-是真的夯.md)
 
 ---
 

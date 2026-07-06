@@ -43,7 +43,7 @@ Dynamic Subagents 的代码编排是**显式编排**：编排逻辑写成 JavaSc
 - [Generator-Evaluator 对抗验证](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-generator-evaluator-anthropic.md)
 - [Claude Code Subagent 规则](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-12-rules-karpathy-extension.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/dynamic-subagents-code-driven-orchestration-langchain-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dynamic-subagents-code-driven-orchestration-langchain-2026.md)
 
 ---
 

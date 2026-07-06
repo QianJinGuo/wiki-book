@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/google-and-amnesty-international-teamed-up-to-make-android-s.md`
 
-> -> [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)
 
 ## 核心要点
 - 这是主流设备厂商首次推出专门用于法证检测高级威胁的功能
@@ -17,7 +17,7 @@
 - [Google And Amnesty International Teamed Up To Make It Harder](https://github.com/QianJinGuo/wiki/blob/main/entities/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)
 
 ## 相关实体
 

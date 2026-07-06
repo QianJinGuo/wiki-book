@@ -68,7 +68,7 @@
 
 灰
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness技术手册-会话管理与百万级上下文实战启示.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness技术手册-会话管理与百万级上下文实战启示.md)
 
 ---
 

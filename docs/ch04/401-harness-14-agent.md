@@ -100,7 +100,7 @@ Agent 即时编写 JavaScript 编排逻辑：`agent()` 生成子进程、`parall
 - [Claude Code 大型代码库配置](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-harness-configuration.md)：聚焦企业级大型代码库中的 harness 配置实践
 - [软规则 vs 硬约束](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-governance-soft-rules.md)：深入分析 CLAUDE.md 软规则的治理陷阱
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/harness-engineering-14-step-roadmap.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-14-step-roadmap.md)
 
 ## 相关实体
 

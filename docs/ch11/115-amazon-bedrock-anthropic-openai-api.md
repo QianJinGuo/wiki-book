@@ -70,7 +70,7 @@ curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
 - `amazon-bedrock-model-inference-serverless-architecture-case-study.md` — 服务端架构
 - 本文档：**客户端用户体验**（控制台 UI 升级 + 兼容端点）
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/试用-amazon-bedrock-中的新控制台体验该体验针对兼容-anthropic-和-openai-的-api-进.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/试用-amazon-bedrock-中的新控制台体验该体验针对兼容-anthropic-和-openai-的-api-进.md)
 
 ## 深度分析
 

@@ -18,7 +18,7 @@
 - [Harness Engineering Systematic Explainer](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-explainer.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/tsinghua-harness-engineering-report.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tsinghua-harness-engineering-report.md)
 
 ## 深度分析
 

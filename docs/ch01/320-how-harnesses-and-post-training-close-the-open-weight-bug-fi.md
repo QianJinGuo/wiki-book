@@ -109,7 +109,7 @@ Inverts the narrative: "open-weight models can't do security" is **empirically f
 - `agent-harness-engineering-survey concept` — survey of harness patterns (this study provides empirical grounding)
 - `post-training-vs-architecture-tradeoff concept` — broader framing of when post-training wins
 - `open-weight-llm-security-applications concept` — what open-weight + good harness can do
-- `[原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)`
+- `[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)`
 
 ## 三个独有贡献
 

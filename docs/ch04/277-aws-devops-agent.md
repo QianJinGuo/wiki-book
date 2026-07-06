@@ -45,7 +45,7 @@ CloudWatch 告警的 AlarmDescription 字段应包含结构化业务上下文（
 未启用 BFD 时，BGP holdtime 默认 180 秒，叠加 CloudWatch 指标评估周期后告警延迟可能超过 4 分钟。启用 `bfd interval 300 min_rx 300 multiplier 3` 后，BGP 本地收敛时间从分钟级降至亚秒级，是部署 Direct Connect 监控的基础前置配置 。
 **6. 将 DevOps Agent 定位为"调查工具"而非"修复工具"**
 当前 Agent 的价值在于解放工程师的调查工作，而非替代工程师做决策。建议保持"只读操作"的设计原则，让 Agent 提供上下文、假设、修复建议，由工程师判断和执行。这既降低了自动化修复的风险，也为未来向"自动修复"演进保留了安全边界 。
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
 
 ## 相关实体
 - [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/habby-game-aws-devops-agent.md)

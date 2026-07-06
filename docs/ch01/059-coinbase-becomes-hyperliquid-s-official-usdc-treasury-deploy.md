@@ -56,7 +56,7 @@ HYPE 的即时暴涨说明 Coinbase 入场对代币价格具有显著的信号�
 - [Anthropic Puts Claude Agents On A Meter Across Its](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-puts-claude-agents-on-a-meter-across-its.md)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki/blob/main/entities/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md)
 
 ---
 

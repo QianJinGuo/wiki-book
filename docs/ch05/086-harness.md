@@ -35,7 +35,7 @@ Harness 模式的三个核心转变：
 
 实践表明，该模式将原本需要 **1 天**完成的功能开发缩短至 **约 2 小时**，效率提升约 **4 倍**。显著降低了前后端联调的沟通成本。
 
-→ [原文存档](https://raw.githubusercontent.com/QianJinGuo/wiki/main/raw/articles/如何利用-harness-一句话交付产品功能.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/如何利用-harness-一句话交付产品功能.md)
 
 ---
 
