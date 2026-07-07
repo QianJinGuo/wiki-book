@@ -108,30 +108,30 @@ Agent 在执行过程中被中断时，状态会停留在 IN_PROGRESS，但实�
 **3. 恢复逻辑必须基于产出物状态而非任务状态——这是长程任务可靠性的核心。** 具体实现：每个子任务明确定义"完成后会产出什么文件"，完成后立即写入；恢复时检查文件存在性和内容合法性，而非状态字段。Git Worktree 隔离可大幅简化半成品清理（直接丢弃 Worktree 目录）。
 **4. 分层重试策略的配置建议：内层恢复会话不设上限（只kill异常进程），中层带反馈重试限制 2-3 次，外层重新调度前先分析失败原因。** 若 FAILED 文件超过总数的 5%，优先排查任务规则本身是否有问题，而非立即重跑；盲目重跑只是浪费 Token。
 
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.md)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.md)
-- [Agent生产级Harness工程指南](../ch05/092-harness-engineering.md)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.md)
-- [Agent Harness 组件解析](../ch05/038-agent-harness.md)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.html)
+- [Agent生产级Harness工程指南](../ch05/062-harness-engineering.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
+- [Agent Harness 组件解析](../ch05/038-agent-harness.html)
 
 ## 相关实体
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/465-claude-code-harness-deep-understanding.md)
-- [AI Coding Agent 记忆系统](ch04/309-ai-coding-agent.md)
-- [你不知道的 Agent 原理架构与工程实践](ch04/327-agent-principle-architecture-engineering-practice.md)
-- [柚漫剧 AI 全流程提效拆解](ch04/070-ai.md)
-- [Agent Skill 设计模式](ch04/376-agent-skills.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/460-claude-code-harness-deep-understanding.html)
+- [AI Coding Agent 记忆系统](ch04/309-ai-coding-agent.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/327-agent-principle-architecture-engineering-practice.html)
+- [柚漫剧 AI 全流程提效拆解](ch04/070-ai.html)
+- [Agent Skill 设计模式](ch04/376-agent-skills.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.md)
-- [Design Patterns for AI Agents 2026](ch04/091-design-patterns-for-ai-agents-2026-4-5-reflection.md)
+- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.html)
+- [Design Patterns for AI Agents 2026](ch04/091-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 
-- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
-- [Agent Harness 架构](../ch05/038-agent-harness.md)
-- [Agent 自我改进的六条路](../ch03/045-agent.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.md)
-- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.md)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.md)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
+- [Agent Harness 架构](../ch05/038-agent-harness.html)
+- [Agent 自我改进的六条路](../ch03/045-agent.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.html)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
 
 ---
 

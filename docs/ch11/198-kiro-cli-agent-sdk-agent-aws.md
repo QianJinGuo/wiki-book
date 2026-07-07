@@ -26,15 +26,15 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 5. **与 Bedrock 集成要注意 region 限制**：Kiro CLI 基于 Amazon Bedrock，需要注意中国区（aws.cn）和全球区（aws.com）的服务差异和合规要求。
 
 ## 相关实体
-- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch03/045-agent.md)
+- [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch03/045-agent.html)
 - [从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/045-agent.md)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/075-claude-code.md)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/045-agent.html)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/075-claude-code.html)
 - [将 Kiro CLI 封装为 REST API：双通道架构实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-rest-api-architecture-practice.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/freelance-designers-cant-compete-ai-subscription.md)
 
-- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](../ch01/1050-spec.md)
+- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](../ch01/1050-spec.html)
 
 ---
 

@@ -13,11 +13,11 @@
 周末我把 Jarrod Watts 那条长帖、他开源的 long-running-agent-skill、OpenAI /goal 的官方文档，以及 Anthropic 最近两篇 long-running agent 和 context engineering 的文章串着翻了一遍。读完之后，脑子里最先冒出来的不是某个新功能，而是我们近期一直在聊的那条线：Harness、上下文工作集、上下文操作，再到 Martin Fowler 那篇反复讲的"非确定性怎么进研发链路"。
 
 ## 相关实体
-- [Agent Harness 12 Components 7 Decisions](../ch05/038-agent-harness.md)
-- [Long Running Agent Ralph Loop Handover Harness Ruofei](../ch05/009-harness.md)
-- [Agent Harness Architecture Deep Dive Aksahy](../ch05/038-agent-harness.md)
-- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.md)
+- [Agent Harness 12 Components 7 Decisions](../ch05/038-agent-harness.html)
+- [Long Running Agent Ralph Loop Handover Harness Ruofei](../ch05/009-harness.html)
+- [Agent Harness Architecture Deep Dive Aksahy](../ch05/038-agent-harness.html)
+- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/长周期-agent-详解-从-ralph-loop-到可接管-harness.md)
 

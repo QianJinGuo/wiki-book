@@ -22,8 +22,8 @@ Anthropic 在收到报告后进行了修复，削减了约 85% 的日志写入�
 ## 相关实体
 
 - `codex-log-bug-ssd-wear`：本文主角，Codex 日志 bug 的原始分析
-- [Codex HTTP/2 HPACK Bomb](../ch01/525-codex.md) — 另一个 Codex 工程问题
-- [Claude Code vs Codex 架构对比](../ch03/075-claude-code.md)
+- [Codex HTTP/2 HPACK Bomb](../ch01/520-codex.html) — 另一个 Codex 工程问题
+- [Claude Code vs Codex 架构对比](../ch03/075-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/一年吃掉一块固态硬盘codex日志bug被骂劣质软件.md)
 

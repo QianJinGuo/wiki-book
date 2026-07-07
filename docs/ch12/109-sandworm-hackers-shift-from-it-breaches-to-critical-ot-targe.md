@@ -44,8 +44,8 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [New cybersecurity industry coalition aims to lead US critical infrastructure protection](https://github.com/QianJinGuo/wiki/blob/main/entities/new-cybersecurity-coalition-us-policy.md)
-- [From Doer To Director: The AI Mindset Shift](../ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
-- [CISA urges critical infrastructure firms to ‘fortify’ before it’s too late | Cybersecurity Dive](ch12/001-cisa-urges-critical-infrastructure-firms-to-fortify-before.md)
+- [From Doer To Director: The AI Mindset Shift](../ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
+- [CISA urges critical infrastructure firms to ‘fortify’ before it’s too late | Cybersecurity Dive](ch12/001-cisa-urges-critical-infrastructure-firms-to-fortify-before.html)
 
 ---
 

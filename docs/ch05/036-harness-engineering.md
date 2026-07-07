@@ -142,22 +142,22 @@ OpenAI 的经验（大量规则塞进 AGENTS.md 会失败）和 Claude Code 的�
 2. **文档需要像代码一样维护**：文章指出"文档随项目变化快速腐烂"，这提示我们，建立文档清理和校验机制是和建立测试机制同样重要的工程实践。
 3. **失败后的复盘要系统化**：Harness Update 不仅是技术动作，也是组织学习的过程。每一轮失败后，应该分析是哪个环节出了问题（Guides 不够清晰？Sensors 没有捕捉到偏差？State 丢失了关键信息？），并针对性地修复那个环节。
 
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.md)
-- [AI Skill 测评指标体系](../ch01/482-ai-skill.md)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.html)
+- [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
+- [AI Skill 测评指标体系](../ch01/477-ai-skill.html)
 
 ## Related
-- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/092-harness-engineering.md)
+- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/062-harness-engineering.html)
 
-- [RAG 全链路技术详解：从文档加载到 Ragas 评估](../ch01/1033-rag.md)
-- [AgentCore Managed Harness](../ch04/463-amazon-bedrock-agentcore-harness-ga-api-agent.md)
-- [Agent Harness 解析：智能体架构深度拆解](ch05/038-agent-harness.md)
-- [From Agent Protocol to Harness Skill](../ch04/387-from-agent-protocol-to-harness-skill.md)
-- [Claude Code 架构深度解析](../ch03/075-claude-code.md)
-- [Agent Memory 架构解析](../ch04/096-agent-memory.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/213-openclaw.md)
-- [claude-code-7-layer-memory-architecture](../ch03/075-claude-code.md)
-- [AI Agent 工程师能力地图](../ch04/147-ai-agent.md)
+- [RAG 全链路技术详解：从文档加载到 Ragas 评估](../ch01/1033-rag.html)
+- [AgentCore Managed Harness](../ch04/464-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [Agent Harness 解析：智能体架构深度拆解](ch05/038-agent-harness.html)
+- [From Agent Protocol to Harness Skill](../ch04/387-from-agent-protocol-to-harness-skill.html)
+- [Claude Code 架构深度解析](../ch03/075-claude-code.html)
+- [Agent Memory 架构解析](../ch04/096-agent-memory.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/213-openclaw.html)
+- [claude-code-7-layer-memory-architecture](../ch03/075-claude-code.html)
+- [AI Agent 工程师能力地图](../ch04/147-ai-agent.html)
 
 ---
 

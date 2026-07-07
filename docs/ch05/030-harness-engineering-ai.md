@@ -77,11 +77,11 @@ OpenAI 的 3-7 人团队、5 个月、近 100 万行代码的实验，揭示了�
 - llm-evaluation-harness — LLM评测的Harness思路（可参考 `Harness Generator Evaluator Anthropic`）
 - anthropic-claude-code — Anthropic的Code Agent实践（可参考 ）
 ## 相关实体
-- [Tencent Ai Team Knowledge Harness](ch05/009-harness.md)
-- [Harness Engineering Systematic Framework](ch05/092-harness-engineering.md)
-- [Harness Engineering](ch05/092-harness-engineering.md)
-- [Harness Engineering Comprehensive Guide Conardli](ch05/092-harness-engineering.md)
-- [Harness Engineering Alibaba Java Case Study](ch05/092-harness-engineering.md)
+- [Tencent Ai Team Knowledge Harness](ch05/009-harness.html)
+- [Harness Engineering Systematic Framework](ch05/062-harness-engineering.html)
+- [Harness Engineering](ch05/062-harness-engineering.html)
+- [Harness Engineering Comprehensive Guide Conardli](ch05/062-harness-engineering.html)
+- [Harness Engineering Alibaba Java Case Study](ch05/062-harness-engineering.html)
 
 ---
 

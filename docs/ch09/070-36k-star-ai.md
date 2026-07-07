@@ -52,13 +52,13 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 
 4. **大型项目分层扫描**：优先对核心业务域（如订单、支付、用户）单独跑 `/understand`，理解后再扩展到支撑模块，避免一次性全量扫描的高成本
 ## 相关实体
-- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/018-ai-native.md)
-- [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch03/045-agent.md)
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/309-ai-coding-agent.md)
-- [Rag技术框架的演进方向](../ch01/1033-rag.md)
+- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/018-ai-native.html)
+- [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch03/045-agent.html)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/309-ai-coding-agent.html)
+- [Rag技术框架的演进方向](../ch01/1033-rag.html)
 - [Graphify](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md) — 同一赛道的另一款软件工程知识图谱工具
 - [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor.com-composer-2-5.md) — 同为 AI coding 工具
-- [How Ai Agent Memory Works](../ch04/154-how-ai-agent-memory-works.md) — Agent 记忆机制
+- [How Ai Agent Memory Works](../ch04/154-how-ai-agent-memory-works.html) — Agent 记忆机制
 
 ## 第 2 来源：码途漫谈 2026-06-11 补充视角
 

@@ -12,15 +12,15 @@ CLI、MCP Server、SDK、Skills、Code Execution——这五个词看起来都�
 Scalekit 2026 年基准测试（75 次，同一 Agent 执行同一组 GitHub 任务）：
 
 ## 相关实体
-- [Cli Mcp Skill Architecture Decision Vibecoder](../ch04/262-skill.md)
-- [Aliyun Agentrun 2Line Integration](../ch04/397-agentrun.md)
-- [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/147-ai-agent.md)
-- [Pi Mono Github](../ch01/760-pi-mono-github.md)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/152-amazon-bedrock.md)
+- [Cli Mcp Skill Architecture Decision Vibecoder](../ch04/262-skill.html)
+- [Aliyun Agentrun 2Line Integration](../ch04/397-agentrun.html)
+- [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/147-ai-agent.html)
+- [Pi Mono Github](../ch01/762-pi-mono-github.html)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/152-amazon-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cli-mcp-sdk-agent-tool-selection.md)
 
-- [crawler vs opencli doubao](../ch03/029-crawler-vs-opencli-doubao.md)
+- [crawler vs opencli doubao](../ch03/029-crawler-vs-opencli-doubao.html)
 
 ## 深度分析
 

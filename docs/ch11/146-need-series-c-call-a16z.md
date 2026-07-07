@@ -10,11 +10,11 @@ Published Time: 2026-05-19T14:00:52+00:00
 **[[America](https://www.a16z.news/t/america) | [Tech](https://www.a16z.news/t/technology) | [Opinion](https://www.a16z.news/t/opinion) | [Culture](https://www.a16z.news/t/culture) | [Charts](https://www.a16z.news/t/charts)]**
 
 ## 相关实体
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.html)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
-- [Aws Bedrock Intelligence Message Defense](ch11/007-aws-bedrock.md)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/846-anthropic.md)
-- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/009-how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
+- [Aws Bedrock Intelligence Message Defense](ch11/007-aws-bedrock.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/846-anthropic.html)
+- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/009-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www-a16z-news-need-series-c-call-a16z.md)
 

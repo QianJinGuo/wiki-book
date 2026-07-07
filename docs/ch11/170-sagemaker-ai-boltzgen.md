@@ -32,7 +32,7 @@ BoltzGen on SageMaker 的设计中，从快速验证（10 个候选，~2 分钟�
 
 ### 5. 科学 AI 的工程化门槛正在被托管平台降低
 
-部署 BoltzGen 涉及 CUDA 环境搭建、GPU 实例编排、数据管线构建、长任务故障恢复等工程难题。SageMaker AI 解决了这些"非科研性"的基础设施负担——自动化的实例编排、基于 Amazon S3 的中间数据管理、和按秒计费的 GPU 使用模式。这使得计算生物学家和药物研发团队可以专注于设计迭代而非基础设施运维。类似地，[AgentScope](../ch05/009-harness.md) 在分布式 Agent 训练中也做了类似的抽象。
+部署 BoltzGen 涉及 CUDA 环境搭建、GPU 实例编排、数据管线构建、长任务故障恢复等工程难题。SageMaker AI 解决了这些"非科研性"的基础设施负担——自动化的实例编排、基于 Amazon S3 的中间数据管理、和按秒计费的 GPU 使用模式。这使得计算生物学家和药物研发团队可以专注于设计迭代而非基础设施运维。类似地，[AgentScope](../ch05/009-harness.html) 在分布式 Agent 训练中也做了类似的抽象。
 
 ## 实践启示
 
@@ -55,10 +55,10 @@ BoltzGen on SageMaker 的设计中，从快速验证（10 个候选，~2 分钟�
 
 ## 关联实体
 
-- [蛋白质研究 Copilot](../ch04/500-amazon-bedrock-agentcore.md)
-- [Claude 化学家](../ch01/591-making-claude-a-chemist.md)
-- [AgentScope 企业级分布式 Harness](../ch05/009-harness.md)
-- [Databricks GPU 可靠性](../ch01/041-how-we-keep-gpus-reliable-across-databricks-ai.md)
+- [蛋白质研究 Copilot](../ch04/501-amazon-bedrock-agentcore.html)
+- [Claude 化学家](../ch01/587-making-claude-a-chemist.html)
+- [AgentScope 企业级分布式 Harness](../ch05/009-harness.html)
+- [Databricks GPU 可靠性](../ch01/041-how-we-keep-gpus-reliable-across-databricks-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/accelerate-protein-design-with-boltzgen-on-amazon-sagemaker-.md)
 

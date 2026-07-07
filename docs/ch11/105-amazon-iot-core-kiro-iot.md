@@ -139,10 +139,10 @@ IoT 链路中断时最直接的告警信号是 S3 Object 写入停止。建议�
 
 ## 相关实体
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
-- [Kiro Quick Deploy Agent Deploy Amazon Bedrock Agentcore](../ch04/500-amazon-bedrock-agentcore.md)
-- [Developing Flink Monitoring System On Amazon Emr With Kiro Ai Ide](../ch04/070-ai.md)
-- [Quick Suite Agent Core Kiro Logistics Quote Assistant](../ch03/045-agent.md)
-- [Aws Direct Connect Dx Migration Best Practices](ch11/036-direct-connect-dx.md)
+- [Kiro Quick Deploy Agent Deploy Amazon Bedrock Agentcore](../ch04/501-amazon-bedrock-agentcore.html)
+- [Developing Flink Monitoring System On Amazon Emr With Kiro Ai Ide](../ch04/070-ai.html)
+- [Quick Suite Agent Core Kiro Logistics Quote Assistant](../ch03/045-agent.html)
+- [Aws Direct Connect Dx Migration Best Practices](ch11/036-direct-connect-dx.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-iot-core-kiro-industrial-data-pipeline.md)
 

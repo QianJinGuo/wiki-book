@@ -25,15 +25,15 @@ PHP 生态的供应链攻击揭示了一个深层问题：Composer 的插件机�
 - **开发者教育**：定期培训开发者识别包名误植攻击（typosquatting）；强调使用完整的包 URL 而非简短包名
 
 ## 相关实体
-- [semgrep intercom php security](ch12/102-semgrep-intercom-php-security.md)
-- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01/697-scarcruft.md)
-- [Semis Memo: Supply Chain Inheritance](../ch01/585-semis-memo-supply-chain-inheritance.md)
-- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](ch12/034-postmortem-tanstack-npm-supply-chain-compromise-tanstack.md)
-- [Amazon launches Supply Chain Services for businesses of all sizes](../ch04/070-ai.md)
+- [semgrep intercom php security](ch12/102-semgrep-intercom-php-security.html)
+- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01/696-scarcruft.html)
+- [Semis Memo: Supply Chain Inheritance](../ch01/581-semis-memo-supply-chain-inheritance.html)
+- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](ch12/034-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch04/070-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 
-- [Semis Memo: Supply Chain Inheritance](../ch04/070-ai.md)
+- [Semis Memo: Supply Chain Inheritance](../ch04/070-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
 ---

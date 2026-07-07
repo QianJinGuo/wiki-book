@@ -75,10 +75,10 @@ AI Agent 的发展方向是长期自主性——Agent 在后台运行数小时�
 
 ## 相关实体
 
-- [Agentic AI 系统架构](../ch05/072-harness-skill.md)
-- [Agent 环境工程](../ch03/045-agent.md)
-- [Agent Harness 生产实践](../ch05/038-agent-harness.md)
-- [Agentic Harness Engineering](../ch05/092-harness-engineering.md)
+- [Agentic AI 系统架构](../ch05/072-harness-skill.html)
+- [Agent 环境工程](../ch03/045-agent.html)
+- [Agent Harness 生产实践](../ch05/038-agent-harness.html)
+- [Agentic Harness Engineering](../ch05/062-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sandboxing-an-ai-agent.md)
 
