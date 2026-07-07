@@ -28,7 +28,7 @@ ICO 此次执法的特别之处在于：**罚款对象是公用事业机构而�
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 
-- [ICO fines Cl0p victim South Staffs Water over data breach](../ch01/204-0.md)
+- [ICO fines Cl0p victim South Staffs Water over data breach](../ch01/205-0.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 
 ---

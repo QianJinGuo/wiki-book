@@ -102,7 +102,7 @@
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
 - [Spec Coding](https://github.com/QianJinGuo/wiki/blob/main/concepts/specification-driven-agent-development.md)
-- [Claude Code Dynamic Workflows](ch09/078-claude-code-dynamic-workflows.md)
+- [Claude Code Dynamic Workflows](ch09/078-claude-code-dynamic-workflows.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

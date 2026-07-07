@@ -81,10 +81,10 @@ CLI-Hub 的设计借鉴了包管理器（npm、pip）的社区贡献模式，但
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md) — Claude Code 的工具调用与插件机制
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md) — Vibe Coding 到 Agentic Engineering 的范式转变
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.md) — Agent 架构与工具使用模式
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md) — Agent 长流程中的上下文管理
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html) — Claude Code 的工具调用与插件机制
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.html) — Vibe Coding 到 Agentic Engineering 的范式转变
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.html) — Agent 架构与工具使用模式
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.html) — Agent 长流程中的上下文管理
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 框架下的工具集成
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 

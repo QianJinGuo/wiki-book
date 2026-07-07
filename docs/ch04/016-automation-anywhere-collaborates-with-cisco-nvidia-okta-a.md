@@ -70,13 +70,13 @@ Automation Anywhere CEO Mihir Shukla 的表述揭示了其核心愿景：**AI �
 - OpenAI GPT-5.5 的企业级支持表明前沿模型正在加速进入生产环境
 
 ## 相关实体
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/1033-rag.md)
-- [Strands Agents High Performance Genai Systems](../ch03/045-agent.md)
-- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01/066-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.md)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/070-ai.md)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/139-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.md)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/1033-rag.html)
+- [Strands Agents High Performance Genai Systems](../ch03/045-agent.html)
+- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01/066-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.html)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](ch04/070-ai.html)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/140-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)- [the next generation of speculative decoding: dflash and spec](../ch01/1050-spec.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)- [the next generation of speculative decoding: dflash and spec](../ch01/1050-spec.html)
 
 ---
 

@@ -75,14 +75,14 @@ AgentCore Payments 把这些打包到托管服务：原本数月工程量 → �
 - 不同 Payment Connector 的支持范围
 
 ## 相关实体
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch11/152-amazon-bedrock.md)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/500-amazon-bedrock-agentcore.md)
-- [Bedrock Agentcore Coding Agent Hosting](ch11/048-bedrock-agentcore.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/500-amazon-bedrock-agentcore.md)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/362-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.md)
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch11/152-amazon-bedrock.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/501-amazon-bedrock-agentcore.html)
+- [Bedrock Agentcore Coding Agent Hosting](ch11/048-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/501-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/362-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-payment-x402-bedrock-agentcore.md)
-- [aws waf ai traffic monetization — 内容所有者向 ai 收费的网络层基础设施](../ch04/070-ai.md)
+- [aws waf ai traffic monetization — 内容所有者向 ai 收费的网络层基础设施](../ch04/070-ai.html)
 
 ## 深度分析
 

@@ -91,11 +91,11 @@ WorkOS Pipes 的差异化在于：面向开发者而非企业 IT、极简 API �
 
 ## 相关资源
 ## 相关实体
-- [Pipes Workos Docs](ch01/117-pipes-workos-docs.md)
+- [Pipes Workos Docs](ch01/118-pipes-workos-docs.html)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/070-ai.md)
-- [Why Im Leaving Github For Forgejo](ch01/749-github.md)
-- [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/070-ai.html)
+- [Why Im Leaving Github For Forgejo](ch01/751-github.html)
+- [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/workos-pipes-third-party-integrations.md)
 

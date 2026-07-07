@@ -104,23 +104,23 @@ Anthropic案例中，模型无故在搜索查询加"2025"，根本原因是工�
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-agent-tool-count-trap.md)
 
 ## 关联
-- [Agent工程原则架构实践](../ch03/045-agent.md)
+- [Agent工程原则架构实践](../ch03/045-agent.html)
 - [Claude Code深度架构分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
-- [MCP工具搜索与代码编排](../ch07/016-anthropic-mcp.md)
+- [MCP工具搜索与代码编排](../ch07/016-anthropic-mcp.html)
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)
 
 ## 相关实体
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/075-claude-code.md)
-- [claude-code-agent-view](../ch09/001-claude-code-agent-view.md)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.md)
-- [Claude Opus 4.7 发布分析](../ch01/412-claude-opus-4-7.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/075-claude-code.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/376-agent-skills.md)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/432-anthropic-ai.md)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/075-claude-code.html)
+- [claude-code-agent-view](../ch09/001-claude-code-agent-view.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.html)
+- [Claude Opus 4.7 发布分析](../ch01/807-claude-opus-4-7.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/075-claude-code.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/376-agent-skills.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/432-anthropic-ai.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/075-claude-code.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1036-claude.md)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/075-claude-code.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1036-claude.html)
 
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
 

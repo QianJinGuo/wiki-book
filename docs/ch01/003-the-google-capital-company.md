@@ -114,10 +114,10 @@ Google 接受 Berkshire $100 亿投资的核心目的不是钱，而是风险共
 Stratechery 将 Google 描述为"most beautiful business model of all time"，但这个模型的根基是用户对 Google 作为信息发现入口的信任。AI 时代 Google 面临的最大风险不是 AWS/Azure 的竞争，而是用户是否会绕过 Google 直接与 AI 应用交互。这一风险无法通过资本配置解决，只能通过持续的产品信任投资来应对。对所有依赖用户信任的平台公司而言：最脆弱的护城河往往不是技术壁垒或规模优势，而是用户信任本身——而信任一旦被侵蚀，Aggregator 的网络效应将在没有信任基础的情况下快速瓦解。
 
 ## 相关实体
-- [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.md)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/070-ai.md)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/397-agentrun.md)
-- [Running An Ai Native Engineering Org](ch01/047-running-an-ai-native-engineering-org.md)
+- [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/070-ai.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/397-agentrun.html)
+- [Running An Ai Native Engineering Org](ch01/047-running-an-ai-native-engineering-org.html)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/https-stratechery-com-2026-the-google-capital-company.md)

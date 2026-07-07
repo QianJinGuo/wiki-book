@@ -201,13 +201,13 @@ Emily Sands（Stripe 高管）2026-06-04 发表于 X（45.8K 次浏览，整理�
 
 ## 相关主题
 
-- AI 变现 / 定价 — [Aws Generative Ai Model Agility Framework](../ch11/143-aws-generative-ai-model-agility-framework.md) / [Agent Skills Comprehensive Survey](../ch04/376-agent-skills.md)
-- Agent 平台化 — [Baixing Ontoz Enterprise Ontology Multi Agent](ch03/045-agent.md) / [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/525-codex.md)
-- Claude Code / Vibe Coding — [Claude Code Architecture](ch03/075-claude-code.md)
-- Token 盗窃防护 — [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/749-github.md) / Vercel Token Theft 防护
-- A2A 智能体经济 — [Baixing Ontoz Enterprise Ontology Multi Agent](ch03/045-agent.md)（长期布局）
-- 企业 AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/045-agent.md)
-- 稳定币 / 加密 — [Inngest Ai And Backend Workflows Orchestrated At Any Scale](../ch01/744-inngest-ai-and-backend-workflows-orchestrated-at-any-scal.md)
+- AI 变现 / 定价 — [Aws Generative Ai Model Agility Framework](../ch11/143-aws-generative-ai-model-agility-framework.html) / [Agent Skills Comprehensive Survey](../ch04/376-agent-skills.html)
+- Agent 平台化 — [Baixing Ontoz Enterprise Ontology Multi Agent](ch03/045-agent.html) / [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/520-codex.html)
+- Claude Code / Vibe Coding — [Claude Code Architecture](ch03/075-claude-code.html)
+- Token 盗窃防护 — [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/751-github.html) / Vercel Token Theft 防护
+- A2A 智能体经济 — [Baixing Ontoz Enterprise Ontology Multi Agent](ch03/045-agent.html)（长期布局）
+- 企业 AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/045-agent.html)
+- 稳定币 / 加密 — [Inngest Ai And Backend Workflows Orchestrated At Any Scale](../ch01/746-inngest-ai-and-backend-workflows-orchestrated-at-any-scal.html)
 
 ---
 

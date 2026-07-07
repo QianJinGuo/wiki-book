@@ -187,11 +187,11 @@ Mythos Preview让Firefox在一个月内修复的安全漏洞超过2025年全年�
 美国及其盟友已经开发出世界上最强大的前沿AI模型和最先进的AI投入。这提供了 substantial advantage。如果 superior access to that technology 能够得到捍卫，这一优势可以扩大。但如果直接提供给我们的竞争对手，这种优势将丧失。决策者今年做出的决定将决定变革性AI的未来。Anthropic支持那些努力确保美国和民主盟国在2028年获胜的工作。
 
 ## 相关实体
-- [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.md)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/768-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md)
-- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch01/846-anthropic.md)
-- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/1036-claude.md)
-- [Anthropic联创2028 Ai自我构建概率超60](ch01/846-anthropic.md)
+- [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/770-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch01/846-anthropic.html)
+- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/1036-claude.html)
+- [Anthropic联创2028 Ai自我构建概率超60](ch01/846-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2028-two-scenarios-for-global-ai-leadership.md)
 

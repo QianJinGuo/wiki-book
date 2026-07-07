@@ -53,13 +53,13 @@ AISHPerf 的评估体系以结果为导向，主指标为综合得分（不同�
 
 4. **跨技术栈多跳推理是当前模型的共同短板**：实测中所有模型在硬件故障上的正确率普遍低于代码类 Bug，且 Token 消耗更高。模型"反复确认却无法确定"的行为模式表明，Agent 架构需要针对"低置信度场景"设计更高效的决策机制。
 
-5. **从"故障修复"到"效率优化"的运维 Agent 定位升级**：AISHPerf 将运维问题置于"Token 工厂"效率框架下思考，运维 Agent 的终极目标不是"修好服务器"，而是"最大化 GPU 集群的 Token 产出效率"。这一视角与 [Harness Engineering](../ch05/092-harness-engineering.md) 中的系统性工程思维高度一致。
+5. **从"故障修复"到"效率优化"的运维 Agent 定位升级**：AISHPerf 将运维问题置于"Token 工厂"效率框架下思考，运维 Agent 的终极目标不是"修好服务器"，而是"最大化 GPU 集群的 Token 产出效率"。这一视角与 [Harness Engineering](../ch05/062-harness-engineering.html) 中的系统性工程思维高度一致。
 
 ## 相关实体
 
-- [Harness Engineering 探索实践](../ch05/092-harness-engineering.md)
-- [Harness 即后端](../ch05/009-harness.md)
-- [Databricks GPU 可靠性](../ch01/041-how-we-keep-gpus-reliable-across-databricks-ai.md)
+- [Harness Engineering 探索实践](../ch05/062-harness-engineering.html)
+- [Harness 即后端](../ch05/009-harness.html)
+- [Databricks GPU 可靠性](../ch01/041-how-we-keep-gpus-reliable-across-databricks-ai.html)
 - [Attention Collapse 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/直击gpu集群真实故障首个ai-infra运维智能体基准开源.md)

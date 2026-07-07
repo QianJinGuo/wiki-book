@@ -31,14 +31,14 @@ Agent 流量的模式不同于人类——需要独立的异常检测和安全�
 追踪前沿模型的能力评估和安全测试——了解最新威胁模型以更新防护策略。
 
 ## 相关实体
-- [Running An Ai Native Engineering Org](ch01/047-running-an-ai-native-engineering-org.md)
-- [World Knowledge Agent Self Evolution Tencent Hkustgz](../ch04/278-world-knowledge-agent.md)
-- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/394-introducing-aimap-security-testing-for-ai-agent-bishop-f.md)
-- [Alphaevolve Deepmind Discovery Agent](../ch03/045-agent.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/147-ai-agent.md)
+- [Running An Ai Native Engineering Org](ch01/047-running-an-ai-native-engineering-org.html)
+- [World Knowledge Agent Self Evolution Tencent Hkustgz](../ch04/278-world-knowledge-agent.html)
+- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/394-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
+- [Alphaevolve Deepmind Discovery Agent](../ch03/045-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/147-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md)
-- [olmo-eval: an evaluation workbench for the model development](ch01/763-olmo-eval-an-evaluation-workbench-for-the-model-development.md)
+- [olmo-eval: an evaluation workbench for the model development](ch01/765-olmo-eval-an-evaluation-workbench-for-the-model-development.html)
 
 ## 摘要
 

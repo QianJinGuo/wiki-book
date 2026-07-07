@@ -202,14 +202,14 @@ Context 隔离不只是防止污染，还有另一层价值：**它让并行变�
 6. **成本控制要有硬性边界**。Agent Teams 的 token 开销是标准 session 的 7x（在 plan mode 下）。实现一个 `shouldUseAgentTeam()` 函数，在 spawn 前做判断——不是所有复杂任务都需要动态 team，固定状态机 + 按需拉 team 的混合架构更可持续。
 
 ## 相关实体
-- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/392-claude-code-agent-teams.md)
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](ch09/078-claude-code-dynamic-workflows.md)
-- [Claude Code Agent View](ch09/001-claude-code-agent-view.md)
-- [Claude Code Agent View Huashu](ch09/001-claude-code-agent-view.md)
-- [Claude Code Architecture](../ch03/075-claude-code.md)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/385-claude-code-agent-teams.html)
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](ch09/078-claude-code-dynamic-workflows.html)
+- [Claude Code Agent View](ch09/001-claude-code-agent-view.html)
+- [Claude Code Agent View Huashu](ch09/001-claude-code-agent-view.html)
+- [Claude Code Architecture](../ch03/075-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-agent-teams-xingxiaozhao.md)
-- [routa 多智能体协同交付平台](../ch03/045-agent.md)
+- [routa 多智能体协同交付平台](../ch03/045-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

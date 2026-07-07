@@ -220,11 +220,11 @@ Harness Engineering的六层架构（Rule/Skill/Sub Agent/Workflow/Scripts/MCP�
 最终，Harness Engineering的目标是：**在AI能力边界内，通过工程化手段最大化AI辅助开发的效率和质量；在AI能力边界外，清晰识别需要人类判断的领域并合理分配资源**。
 
 ## 相关实体
-- [Harness Engineering Alibaba Java Case Study](ch05/092-harness-engineering.md)
-- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](ch05/092-harness-engineering.md)
-- [Agent Harness Engineering Survey 2026](ch05/092-harness-engineering.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch05/092-harness-engineering.md)
-- [Baidu Comate Coding Agent Feedback Loop Wanpeng](../ch09/047-coding-agent.md)
+- [Harness Engineering Alibaba Java Case Study](ch05/062-harness-engineering.html)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](ch05/062-harness-engineering.html)
+- [Agent Harness Engineering Survey 2026](ch05/062-harness-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch05/062-harness-engineering.html)
+- [Baidu Comate Coding Agent Feedback Loop Wanpeng](../ch09/047-coding-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-jk-launcher-baijiajie.md)
 
