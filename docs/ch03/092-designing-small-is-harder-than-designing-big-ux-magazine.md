@@ -6,15 +6,15 @@
 
 ## Summary
 ## 相关实体
-- [Icon Pack Websites Designers Should Bookmark](ch03/122-icon-pack-websites-designers-should-bookmark.md)
+- [Icon Pack Websites Designers Should Bookmark](ch03/122-icon-pack-websites-designers-should-bookmark.html)
 - [Blog.Tubikstudio.Com Form Over Function Mistakes](https://github.com/QianJinGuo/wiki/blob/main/entities/blog.tubikstudio.com-form-over-function-mistakes.md)
-- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/911-20.md)
-- [Codex Role Plugins Sites Annotations](../ch01/520-codex.md)
-- [The Future Of Bmw Design A Conversation With Max Missoni](../ch01/019-the-future-of-bmw.md)
+- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/911-20.html)
+- [Codex Role Plugins Sites Annotations](../ch01/520-codex.html)
+- [The Future Of Bmw Design A Conversation With Max Missoni](../ch01/019-the-future-of-bmw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/designing-small-is-harder-than-designing-big-ux-magazine.md)
 
-- [Activity Focused Design](ch03/114-activity-focused-design.md)
+- [Activity Focused Design](ch03/114-activity-focused-design.html)
 ## Notes
 - Value: 7/10, Confidence: 8/10
 

@@ -64,20 +64,20 @@ ACI 接下来 18 个月的工作包括：建立工作组、定义试点项目、
 
 ## 相关实体
 
-- [Ai Agents Security Survey Attack Defense](../ch04/147-ai-agent.md)
-- [Anthropic Llm Attck Navigator Cyber Operations](../ch04/164-anthropic-llm.md)
-- [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/009-harness.md)
-- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/078-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.md)
-- [Aws Software Supply Chain Security Well Architected Best Practices](../ch04/070-ai.md)
-- [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/1033-rag.md)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/296-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.md)
-- [Ai Traffic Cyberthreat Benchmark 2026](../ch04/070-ai.md)
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/034-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.md)
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/147-ai-agent.md)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/770-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.md)
+- [Ai Agents Security Survey Attack Defense](../ch04/147-ai-agent.html)
+- [Anthropic Llm Attck Navigator Cyber Operations](../ch04/164-anthropic-llm.html)
+- [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/009-harness.html)
+- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/078-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
+- [Aws Software Supply Chain Security Well Architected Best Practices](../ch04/070-ai.html)
+- [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/1033-rag.html)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/296-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Ai Traffic Cyberthreat Benchmark 2026](../ch04/070-ai.html)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/034-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/147-ai-agent.html)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/770-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
 - [5237875](https://github.com/QianJinGuo/wiki/blob/main/entities/5237875.md)
-- [820297](../ch01/911-20.md)
+- [820297](../ch01/911-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

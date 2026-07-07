@@ -61,11 +61,11 @@ TeamPCP 并非首次对 Checkmarx 发起攻击——2026 年 3 月就曾入侵 c
 - 进行定期的应急响应演练，确保安全团队在真实攻击发生时能够快速协调隔离、取证、恢复等步骤
 ---
 ## 相关实体
-- [Npm Supply Chain Compromise Postmortem](../ch04/070-ai.md)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch01/696-scarcruft.md)
-- [Semgrep Intercom Php Supply Chain](../ch12/112-semgrep-intercom-php-supply-chain.md)
-- [Shub Reaper Macos Stealer Attack Chain](../ch04/070-ai.md)
-- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](../ch12/034-postmortem-tanstack-npm-supply-chain-compromise-tanstack.md)
+- [Npm Supply Chain Compromise Postmortem](../ch04/070-ai.html)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch01/696-scarcruft.html)
+- [Semgrep Intercom Php Supply Chain](../ch12/112-semgrep-intercom-php-supply-chain.html)
+- [Shub Reaper Macos Stealer Attack Chain](../ch04/070-ai.html)
+- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](../ch12/034-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)

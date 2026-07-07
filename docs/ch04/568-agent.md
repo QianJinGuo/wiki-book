@@ -38,11 +38,11 @@
 5. **在离线统一**：同一套Workflow逻辑，通过触发源差异区分在线/离线，代码复用率最大化
 
 ## 相关实体
-- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/045-agent.md)
-- [Verizon Connect Agentic Ai 100K Users](ch04/106-verizon-connect-agentic-ai-10.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/141-skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/562-ai-mollick.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/147-ai-agent.md)
+- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/045-agent.html)
+- [Verizon Connect Agentic Ai 100K Users](ch04/106-verizon-connect-agentic-ai-10.html)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/141-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/562-ai-mollick.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/147-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/taobao-product-domain-agent-architecture.md)
 

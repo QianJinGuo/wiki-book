@@ -103,35 +103,35 @@ Webhook 机制是实现"委托-等待"模式的关键。你的应用可以将任
 Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需要单独申请权限。在生产环境中使用这些功能时，需要考虑：权限申请的不确定性、功能可能变化的兼容性维护、备用方案的准备。建议将预览阶段的功能用于非关键路径，或者设计成可降级方案（如 Outcomes Loop 暂时用人工评估替代）。同时关注官方文档的更新，及时跟进正式发布后的变化。
 
 ## 相关产品/人物
-- [Claude Managed Agents 开发者指南](../ch04/609-claude-managed-agents.md)
-- [Anthropic Computer Use 最佳实践](ch01/821-anthropic-computer-use.md)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/075-claude-code.md)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/846-anthropic.md) — 另一篇技术解读，覆盖 API 细节和定价
-- [Anthropic PM 的 Agentic 工作流](../ch04/430-anthropic-pm-agentic.md) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
+- [Claude Managed Agents 开发者指南](../ch04/609-claude-managed-agents.html)
+- [Anthropic Computer Use 最佳实践](ch01/821-anthropic-computer-use.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/075-claude-code.html)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/846-anthropic.html) — 另一篇技术解读，覆盖 API 细节和定价
+- [Anthropic PM 的 Agentic 工作流](../ch04/430-anthropic-pm-agentic.html) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-claude-managed-agents-platform-launch.md)
 
 ## 架构图
 → [C4 架构图](assets/c4/anthropic-claude-managed-agents-platform-2026-c4.html)
 
 ## 相关实体
-- [Claude Managed Agents 官方 Harness 平台指南](ch01/272-anthropic-claude-managed-agents.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/609-claude-managed-agents.md)
-- [Multica — 开源 Managed Agents 平台](../ch07/059-multica-managed-agents.md)
-- [claude managed agents official](../ch04/525-claude-managed-agents-official.md)
-- [claude managed agents](../ch04/609-claude-managed-agents.md)
+- [Claude Managed Agents 官方 Harness 平台指南](ch01/272-anthropic-claude-managed-agents.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/609-claude-managed-agents.html)
+- [Multica — 开源 Managed Agents 平台](../ch07/059-multica-managed-agents.html)
+- [claude managed agents official](../ch04/525-claude-managed-agents-official.html)
+- [claude managed agents](../ch04/609-claude-managed-agents.html)
 
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/187-anthropic-google-agent-skills.md)
-- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/371-anthropic-claude-agent.md)
-- [Introducing Claude for Small Business](ch01/028-introducing-claude-for-small-business.md)
-- [Introducing Claude for Small Business](ch01/028-introducing-claude-for-small-business.md)
-- [Xero Announces Integration with Anthropic's Claude](ch01/846-anthropic.md)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/187-anthropic-google-agent-skills.html)
+- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/371-anthropic-claude-agent.html)
+- [Introducing Claude for Small Business](ch01/028-introducing-claude-for-small-business.html)
+- [Introducing Claude for Small Business](ch01/028-introducing-claude-for-small-business.html)
+- [Xero Announces Integration with Anthropic's Claude](ch01/846-anthropic.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1218-anthropic-claude.md)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/098-anthropic-agent.md)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/846-anthropic.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/376-agent-skills.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1036-claude.md)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1218-anthropic-claude.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/098-anthropic-agent.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/846-anthropic.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/376-agent-skills.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1036-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 

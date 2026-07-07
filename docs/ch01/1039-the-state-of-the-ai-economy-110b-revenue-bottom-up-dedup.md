@@ -52,8 +52,8 @@ Approach:
 | Actionability | Investment/market judgment | Enterprise architecture decisions | Regulatory/compliance |
 
 → [source archive](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-state-of-the-ai-economy.md)
-→ [Nadella Token Capital](../ch12/003-token.md)
-→ [Dario Amodei Policy](../ch04/070-ai.md)
+→ [Nadella Token Capital](../ch12/003-token.html)
+→ [Dario Amodei Policy](../ch04/070-ai.html)
 
 ---
 

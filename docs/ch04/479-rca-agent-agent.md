@@ -90,10 +90,10 @@
 
 ## 相关实体
 
-- [Harness Engineering](../ch05/062-harness-engineering.md)
-- [Claw-SWE-Bench](../ch05/009-harness.md) — harness 独立评测基准
-- [Skill 版本对比五大原则](ch04/262-skill.md) — 评估方法论
-- [OpenClaw Agent Loop 设计模式](../ch01/1079-openclaw-agent.md)
+- [Harness Engineering](../ch05/062-harness-engineering.html)
+- [Claw-SWE-Bench](../ch05/009-harness.html) — harness 独立评测基准
+- [Skill 版本对比五大原则](ch04/262-skill.html) — 评估方法论
+- [OpenClaw Agent Loop 设计模式](../ch01/1079-openclaw-agent.html)
 
 ---
 

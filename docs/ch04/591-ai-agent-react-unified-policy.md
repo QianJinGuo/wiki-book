@@ -22,7 +22,7 @@ UP-ReAct 通过统一策略路由层解决了上述问题：
 - 上下文缓存机制消除 Context Thrashing
 - 统一调度降低 30% TTFT
 
-该实践与 [Agent Harness 架构](../ch05/038-agent-harness.md) 和 [Agent 上下文管理架构模式](../ch03/045-agent.md) 中的架构演进路线一致，是千万级 Agent 系统的宝贵实战参考。
+该实践与 [Agent Harness 架构](../ch05/038-agent-harness.html) 和 [Agent 上下文管理架构模式](../ch03/045-agent.html) 中的架构演进路线一致，是千万级 Agent 系统的宝贵实战参考。
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/火山引擎-ai-搜索千万级-agent-架构演进与实践从-react-三节点到-unified-policy.md)
 

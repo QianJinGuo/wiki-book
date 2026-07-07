@@ -400,22 +400,22 @@ Claude Code 的架构设计折射出一个核心洞察：**Agent 编程工具的
 ## 相关概念
 - [Claude Code Source Leak Lifecycle](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-source-leak-lifecycle.md) — Claude Code 源码级生命周期解析（8步 queryLoop / CLAUDE.md 四级加载）
 - [Claude Code Tool Design Evolution](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md) — Claude Code 工具设计演进（AskUserQuestion / TodoWrite→Task）
-- [Claude Code 源码核心机制详解](../ch03/075-claude-code.md)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/075-claude-code.md)
-- [Claude Code 架构解析](../ch03/075-claude-code.md)
+- [Claude Code 源码核心机制详解](../ch03/075-claude-code.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/075-claude-code.html)
+- [Claude Code 架构解析](../ch03/075-claude-code.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
 - [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
-- [Anthropic Prompt Caching 深度解析](ch01/277-anthropic-prompt-caching-claude-code.md) — Anthropic 官方博客关于 Prompt Caching 架构经验的深度分析
-- [Cat Wu PM 访谈](ch01/846-anthropic.md) — Claude Code/Cowork 产品负责人关于产品节奏、100%自动化原则、模型进化对 Harness 影响的一手访谈
+- [Anthropic Prompt Caching 深度解析](ch01/277-anthropic-prompt-caching-claude-code.html) — Anthropic 官方博客关于 Prompt Caching 架构经验的深度分析
+- [Cat Wu PM 访谈](ch01/846-anthropic.html) — Claude Code/Cowork 产品负责人关于产品节奏、100%自动化原则、模型进化对 Harness 影响的一手访谈
 - → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-deep-architecture-analysis.md)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.md)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.html)
 
 ## Related
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/213-openclaw.md)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/213-openclaw.html)
 
-- [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.md)
-- [harness-engineering-systematic-explainer](../ch05/062-harness-engineering.md)
-- [Agent 原理、架构与工程实践](../ch03/045-agent.md)
+- [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
+- [harness-engineering-systematic-explainer](../ch05/062-harness-engineering.html)
+- [Agent 原理、架构与工程实践](../ch03/045-agent.html)
 
 ## 相关实体
 

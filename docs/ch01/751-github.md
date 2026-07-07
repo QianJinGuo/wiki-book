@@ -29,11 +29,11 @@
 **评估自建基础设施的成本与收益**。对于足够大型和成熟的开源项目，自建GitLab实例或使用托管的私有部署可能是值得考虑的方向。评估总拥有成本（TCO）包括运维人力、基础设施费用、安全合规投入等。如果决定迁移，制定详细的迁移计划，包括数据迁移、生态重建、社区沟通和回滚预案。
 
 ## 相关实体
-- [是时候讨论人类配额制了应对Ai就业冲击的一种可能性探讨](../ch04/070-ai.md)
-- [Agi 之路 可能从一开始就走错了](ch01/281-agi.md)
-- [Joyai Echo Long Video Framework Jd](../ch04/070-ai.md)
+- [是时候讨论人类配额制了应对Ai就业冲击的一种可能性探讨](../ch04/070-ai.html)
+- [Agi 之路 可能从一开始就走错了](ch01/281-agi.html)
+- [Joyai Echo Long Video Framework Jd](../ch04/070-ai.html)
 - [Openchronicle Memory Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/openchronicle-memory-layer.md)
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch01/014-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch01/014-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
 
 ---
 

@@ -18,15 +18,15 @@
 说起来，赶在五一长假之前丢个重磅论文，这风格还真挺特么DeepSeek的，熟悉的味道又回来了。以及，这次内容真的太长了，建议你可以先收藏了，假期里无聊的时候慢慢读，我这五一期间尽量...尽量不卷了，不给各位增加阅读负担。
 
 ## 相关实体
-- [Pi Mono Github](ch01/762-pi-mono-github.md)
-- [From Prompt To Harness Claude Official](../ch05/009-harness.md)
-- [Cursor Harness Model Production Floor](ch01/325-cursor-harness-model-production-floor.md)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/405-vibe-coding-agentic-engineering.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/075-claude-code.md)
+- [Pi Mono Github](ch01/762-pi-mono-github.html)
+- [From Prompt To Harness Claude Official](../ch05/009-harness.html)
+- [Cursor Harness Model Production Floor](ch01/325-cursor-harness-model-production-floor.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/405-vibe-coding-agentic-engineering.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/075-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md)
 
-- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](../ch05/082-ai-coding.md)
+- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](../ch05/082-ai-coding.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析

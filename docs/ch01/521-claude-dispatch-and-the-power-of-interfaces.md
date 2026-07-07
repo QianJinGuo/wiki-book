@@ -95,13 +95,13 @@ Dispatch 不仅是一个产品功能，而是 Anthropic 界面战略的关键一
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/213-openclaw.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/213-openclaw.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/062-harness-engineering.md)
-- [incendium fuzzing ms rpc](../ch12/106-incendium-fuzzing-ms-rpc.md)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/213-openclaw.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/213-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/062-harness-engineering.html)
+- [incendium fuzzing ms rpc](../ch12/106-incendium-fuzzing-ms-rpc.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-dispatch-and-the-power-of-interfaces.md)
 

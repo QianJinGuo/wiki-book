@@ -187,11 +187,11 @@ SAP 在 AI 时代选择了与 Anthropic、NVIDIA、Google Cloud、Microsoft、Pa
 
 ## 相关实体
 
-- [Harness Production Agent Engineering](../ch05/009-harness.md) — Agent 工程化挑战
+- [Harness Production Agent Engineering](../ch05/009-harness.html) — Agent 工程化挑战
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sap-unveils-the-autonomous-enterprise.md)
 
-- [nature | anthropic：蒸馏过程潜意识传递行为偏好](ch04/070-ai.md)
+- [nature | anthropic：蒸馏过程潜意识传递行为偏好](ch04/070-ai.html)
 
 ## 参考文献
 

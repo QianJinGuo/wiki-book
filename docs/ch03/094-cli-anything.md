@@ -35,7 +35,7 @@ CLI-Anything 是由 HKUDS 实验室（香港大学数据科学实验室）开源
 - AdGuard Home、ChromaDB、Draw.io、CloudAnalyzer、CloudCompare
 
 ## Agent 兼容性
-支持 OpenClaw, [OpenCLI](ch03/084-opencli.md), Nanobot, Claude Code, Codex, Antigravity 等主流 Agent。
+支持 OpenClaw, [OpenCLI](ch03/084-opencli.html), Nanobot, Claude Code, Codex, Antigravity 等主流 Agent。
 安装命令：
 ```bash
 npx skills add HKUDS/CLI-Anything --skill cli-hub-meta-skill -g -y
@@ -120,18 +120,18 @@ HKUDS 通过 CLI-Anything 建立了在 Agent Tools 领域的技术影响力，St
 ### 4. 多 Agent 协作中的工具标准化
 在  和 CLI-Anything 的生态中，多个 Agent 协同时面临的挑战是工具的一致性问题。标准化是解决协作复杂度的关键——当所有 Agent 都通过统一的 SKILL 接口调用工具时，工具的提供方无需感知调用者是哪个 Agent。
 
-## 与 [Hermes-Agent](ch03/090-hermes-agent.md) 的关系
+## 与 [Hermes-Agent](ch03/090-hermes-agent.html) 的关系
  支持通过 Skill 机制调用外部 CLI 工具，CLI-Anything 正是此类工具的重要来源之一。
 
 ## Related
-- [AutoCLI](ch03/117-autocli.md) — 极速网页信息获取 CLI
-- [AgentBrowser](../ch09/150-agent-browser-claude-code-qoderwork.md) — AI 专用浏览器
+- [AutoCLI](ch03/117-autocli.html) — 极速网页信息获取 CLI
+- [AgentBrowser](../ch09/150-agent-browser-claude-code-qoderwork.html) — AI 专用浏览器
 
 ## 相关实体
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [GBrain](../ch01/311-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.md)
+- [GBrain](../ch01/311-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 
 ---
 

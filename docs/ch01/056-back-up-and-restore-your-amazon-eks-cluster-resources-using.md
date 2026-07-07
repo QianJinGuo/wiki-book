@@ -7,11 +7,11 @@
 ## 核心要点
 - ...
 ## 相关实体
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
-- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](../ch11/014-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.md)
-- [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/134-restrict-access-to-sensitive-documents-in-your-amazon-quick.md)
-- [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](../ch04/008-announcing-genkit-middleware-intercept-extend-and-harden.md)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
+- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](../ch11/014-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.html)
+- [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/134-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
+- [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](../ch04/008-announcing-genkit-middleware-intercept-extend-and-harden.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
 

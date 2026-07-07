@@ -8,8 +8,8 @@
 
 ## 相关实体
 
-- [被裁了想转 ai agent？先看面试官到底在筛你哪 7 样东西](../ch03/045-agent.md)
-- [试用 amazon bedrock 中的新控制台体验：该体验针对兼容 anthropic 和 openai 的 api](../ch11/152-amazon-bedrock.md)
+- [被裁了想转 ai agent？先看面试官到底在筛你哪 7 样东西](../ch03/045-agent.html)
+- [试用 amazon bedrock 中的新控制台体验：该体验针对兼容 anthropic 和 openai 的 api](../ch11/152-amazon-bedrock.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/全球ai新王诞生anthropic估值冲爆12万亿首次反超openai.md)
 
 ## 深度分析
@@ -38,12 +38,12 @@
 - **anthropic趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/213-openclaw.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/213-openclaw.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/045-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/213-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/213-openclaw.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/045-agent.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.html)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

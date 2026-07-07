@@ -89,32 +89,32 @@
 
 ## 关联阅读
 
-- [Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)——了解「氛围编程」如何重塑开发流程
-- [Claude Code 架构](../ch03/075-claude-code.md)——Anthropic推出的AI编程代理，深入理解其设计哲学和能力边界
+- [Vibe Coding 到 Agentic Engineering](../ch03/045-agent.html)——了解「氛围编程」如何重塑开发流程
+- [Claude Code 架构](../ch03/075-claude-code.html)——Anthropic推出的AI编程代理，深入理解其设计哲学和能力边界
 - [Coding Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md)——从技术架构角度理解AI Agent与传统软件的根本差异
 
 ## 相关实体
-- [Claude Code Commands Usage Guide](../ch03/075-claude-code.md)
+- [Claude Code Commands Usage Guide](../ch03/075-claude-code.html)
 
 - [这样的程序员应该招吗](https://github.com/QianJinGuo/wiki/blob/main/entities/这样的程序员应该招吗.md)
-- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/1036-claude.md)
-- [Claude Code Prompt Source Analysis Fanone](../ch09/059-claude-code-prompt.md)
-- [Claude Code Html Artifact Workflow Ifanr](ch01/635-claude-code-html-artifact-workflow-ifanr-analysis.md)
-- [Claude Code Team 10 Tips Boris Data派Thu](../ch03/075-claude-code.md)
-- [Claude Md 12 Rules Mnilax Cf2019](ch01/297-claude-md.md)
-- [Claude Code Dynamic Workflows Thariq Practical Patterns](../ch09/078-claude-code-dynamic-workflows.md)
-- [Claude Opus 48 The System Card B8460F](ch01/1036-claude.md)
-- [Ruofei Claude 18 Actions Personal Ai Workbench](ch01/1036-claude.md)
-- [Claude Code Dynamic Workflows 8Th Translation Xingxiaozhao](../ch09/078-claude-code-dynamic-workflows.md)
-- [Claude Code Best Community Fork Evolution Vibecoder](../ch03/075-claude-code.md)
-- [Claude Code Dynamic Workflows Jiqizhixin 9Th Translation](../ch09/078-claude-code-dynamic-workflows.md)
-- [Claude Code Superpowers Workflow By Xinlingyuanyuanyuan](../ch03/075-claude-code.md)
-- [Claude Dispatch And The Power Of Interfaces](ch01/521-claude-dispatch-and-the-power-of-interfaces.md)
-- [Claude Code Dynamic Workflows Zhuge6 Yucheng Translation](../ch09/078-claude-code-dynamic-workflows.md)
-- [Claude Code And What Comes Next](ch01/444-claude-code-and-what-comes-next.md)
-- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
-- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/1036-claude.md)
-- [Dingtalk Qoder Claudecode Dual Engine Ai Assistant](ch01/1036-claude.md)
+- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/1036-claude.html)
+- [Claude Code Prompt Source Analysis Fanone](../ch09/059-claude-code-prompt.html)
+- [Claude Code Html Artifact Workflow Ifanr](ch01/635-claude-code-html-artifact-workflow-ifanr-analysis.html)
+- [Claude Code Team 10 Tips Boris Data派Thu](../ch03/075-claude-code.html)
+- [Claude Md 12 Rules Mnilax Cf2019](ch01/297-claude-md.html)
+- [Claude Code Dynamic Workflows Thariq Practical Patterns](../ch09/078-claude-code-dynamic-workflows.html)
+- [Claude Opus 48 The System Card B8460F](ch01/1036-claude.html)
+- [Ruofei Claude 18 Actions Personal Ai Workbench](ch01/1036-claude.html)
+- [Claude Code Dynamic Workflows 8Th Translation Xingxiaozhao](../ch09/078-claude-code-dynamic-workflows.html)
+- [Claude Code Best Community Fork Evolution Vibecoder](../ch03/075-claude-code.html)
+- [Claude Code Dynamic Workflows Jiqizhixin 9Th Translation](../ch09/078-claude-code-dynamic-workflows.html)
+- [Claude Code Superpowers Workflow By Xinlingyuanyuanyuan](../ch03/075-claude-code.html)
+- [Claude Dispatch And The Power Of Interfaces](ch01/521-claude-dispatch-and-the-power-of-interfaces.html)
+- [Claude Code Dynamic Workflows Zhuge6 Yucheng Translation](../ch09/078-claude-code-dynamic-workflows.html)
+- [Claude Code And What Comes Next](ch01/444-claude-code-and-what-comes-next.html)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
+- [今天起Claude正式接入Office全家桶跨应用还能共享记忆](ch01/1036-claude.html)
+- [Dingtalk Qoder Claudecode Dual Engine Ai Assistant](ch01/1036-claude.html)
 
 ---
 

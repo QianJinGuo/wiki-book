@@ -152,10 +152,10 @@ H2D/D2H 带宽因卡而异的特性，说明不同 GPU 型号对 PPCIe 的支持
 
 ## 关联阅读
 ## 相关实体
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/263-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.md)
-- [Baidu Confidential Computing Cpu Gpu Full Chain](../ch04/070-ai.md)
-- [Nemotron 3 5 Content Safety](ch01/495-nemotron-3-5-content-safety-customizable-multimodal-safety.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/375-nvidia-secure-local-agent-nemoclaw-openclaw.md)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/263-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
+- [Baidu Confidential Computing Cpu Gpu Full Chain](../ch04/070-ai.html)
+- [Nemotron 3 5 Content Safety](ch01/495-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/375-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从-cpu-到-gpu-全链路可信百度智能云新一代-ai-机密计算实例的探索与落地.md)

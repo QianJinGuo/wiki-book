@@ -163,11 +163,11 @@ EFA 在用户态暴露两套接口，这些通信库分别走不同路径：
 
 ## 相关主题
 
-- [AWS FSx Lustre GPUDirect 加载](ch01/586-llm.md) — AWS 训练/推理数据加载栈
-- [AWS GRPO RLVR SageMaker](../ch11/098-aws-grpo-rlvr-sagemaker-math-reasoning.md) — AWS 后训练栈
-- [Foundation Model Building Blocks on AWS](../ch11/117-building-blocks-for-foundation-model-training-and-inference.md) — AWS 训练与推理基础组件
-- [Foundation Model Building Blocks](../ch03/087-foundation-model-building-blocks.md) — 通用基础组件
-- [GLM-5 Scaling Pain](ch01/549-scaling.md) — GLM 系列规模化的工程挑战
+- [AWS FSx Lustre GPUDirect 加载](ch01/586-llm.html) — AWS 训练/推理数据加载栈
+- [AWS GRPO RLVR SageMaker](../ch11/098-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 后训练栈
+- [Foundation Model Building Blocks on AWS](../ch11/117-building-blocks-for-foundation-model-training-and-inference.html) — AWS 训练与推理基础组件
+- [Foundation Model Building Blocks](../ch03/087-foundation-model-building-blocks.html) — 通用基础组件
+- [GLM-5 Scaling Pain](ch01/549-scaling.html) — GLM 系列规模化的工程挑战
 
 > [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/750b-moe-model-roce-cluster-migration-aws-efa-prefill-decode-disaggregation.md)
 

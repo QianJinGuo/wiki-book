@@ -42,11 +42,11 @@ Alpamayo 1 使用 Flow Matching 轨迹解码（超越简单回归）、历史轨
 5. **VLA 端到端轨迹规划已成生产现实**：APlamayo 表明端到端 VLA 生产级部署已到达临界点，自动驾驶团队应加速从模块化栈向 VLA 的技术路线迁移。
 
 ## 相关实体
-- [Nvidia Gemma 4 Edge Ai](ch01/694-nvidia-gemma-4-edge-ai.md)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/263-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.md)
-- [Nvidia Gpu Kernel Translation Cute Python Julia](../ch04/535-python.md)
-- [Nvidia Cut Checkpoint Costs Nvcomp](../ch03/030-nvidia-cut-checkpoint-costs-nvcomp.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.md)
+- [Nvidia Gemma 4 Edge Ai](ch01/694-nvidia-gemma-4-edge-ai.html)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/263-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
+- [Nvidia Gpu Kernel Translation Cute Python Julia](../ch04/535-python.html)
+- [Nvidia Cut Checkpoint Costs Nvcomp](../ch03/030-nvidia-cut-checkpoint-costs-nvcomp.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-misc-topics-frontier.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidia-edge-first-llms-av-robotics.md)

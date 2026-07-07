@@ -67,11 +67,11 @@ LiteFrame 的 student encoder 采用：
 - **CTD 与其他视频 token 压缩方法的组合**：CTD + 后处理 token reduction 的联合优化可能带来进一步提升
 
 ## 相关实体
-- [Liteframe Efficient Vision Encoders](ch01/1182-liteframe-efficient-vision-encoders-unlock-frame-scaling-in.md)
-- [Agentexecutorgooglesdistributedagentruntime](../ch04/397-agentrun.md)
+- [Liteframe Efficient Vision Encoders](ch01/1182-liteframe-efficient-vision-encoders-unlock-frame-scaling-in.html)
+- [Agentexecutorgooglesdistributedagentruntime](../ch04/397-agentrun.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Rag技术框架的演进方向](ch01/1033-rag.md)
-- [Alphaevolve Deepmind Discovery Agent](../ch03/045-agent.md)
+- [Rag技术框架的演进方向](ch01/1033-rag.html)
+- [Alphaevolve Deepmind Discovery Agent](../ch03/045-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/liteframeefficientvisionencodersunlockframescalinginvideollms.md)
 

@@ -9,11 +9,11 @@
 - RAMPART and Clarity: Microsoft Open-Sources AI Security Tools
 
 ## 相关实体
-- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch01/322-how-harnesses-and-post-training-close-the-open-weight-bug-fi.md)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/147-ai-agent.md)
-- [Shub Reaper Macos Stealer Attack Chain](../ch04/070-ai.md)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch01/140-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.md)
-- [Npm Supply Chain Compromise Postmortem](../ch04/070-ai.md)
+- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch01/322-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/147-ai-agent.html)
+- [Shub Reaper Macos Stealer Attack Chain](../ch04/070-ai.html)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch01/140-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
+- [Npm Supply Chain Compromise Postmortem](../ch04/070-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-open-sources-rampart-clarity.md)
 

@@ -140,10 +140,10 @@ description 字段的编写应该围绕"在什么情况下 Agent 应该考虑这
 每次迭代应该先问：这个遗漏是因为规则本身表述模糊，还是因为规则覆盖范围不够？如果是前者，修改表述；如果是后者，再考虑添加新规则。
 
 ## 相关实体
-- [Agent Skill 进阶模式与治理](ch04/555-agent-skill.md)
+- [Agent Skill 进阶模式与治理](ch04/555-agent-skill.html)
 
-- [Agent Skill 评估与迭代](ch04/555-agent-skill.md)
-- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](ch04/412-skillsieve-agent-skill.md)
+- [Agent Skill 评估与迭代](ch04/555-agent-skill.html)
+- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](ch04/412-skillsieve-agent-skill.html)
 
 ---
 

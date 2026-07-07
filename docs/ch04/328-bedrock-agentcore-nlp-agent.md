@@ -11,11 +11,11 @@
 - 来源：AWS Machine Learning Blog
 
 ## 相关实体
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/501-amazon-bedrock-agentcore.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/501-amazon-bedrock-agentcore.md)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/147-ai-agent.md)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/152-amazon-bedrock.md)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/501-amazon-bedrock-agentcore.md)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/501-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/501-amazon-bedrock-agentcore.html)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/147-ai-agent.html)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/152-amazon-bedrock.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/501-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md)
 

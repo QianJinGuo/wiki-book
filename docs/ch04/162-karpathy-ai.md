@@ -114,11 +114,11 @@ AI加速了一切，包括焦虑本身。「不用这个工具就会被淘汰」
 实操方法：在团队内部推动关于「AI提升的效率如何分配」的透明讨论。不是抱怨，不是谈判，而是用数据和逻辑呈现这个问题的结构。一个可操作的切入点是：记录AI工具在具体项目中的效率提升数据（节省的时间、减少的bug数、提升的产出量），然后用这些数据向管理层提出具体诉求——比如「我们团队用AI工具把迭代速度提升了X%，建议将其中Y%转化为团队的学习和探索时间，而不是全部用于追加需求」。透明的数据比情绪化的诉求更有说服力。
 
 ## 相关实体
-- [Karpathy Llm Full Stack Course 2026井底之硅](../ch01/586-llm.md)
-- [Joyai Echo Long Video Framework Jd](ch04/070-ai.md)
+- [Karpathy Llm Full Stack Course 2026井底之硅](../ch01/586-llm.html)
+- [Joyai Echo Long Video Framework Jd](ch04/070-ai.html)
 - [Kiro Job Scheduler Eventbridge Ecs Fargate](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md)
 - [Bitter Lesson Garbage Can Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/bitter-lesson-garbage-can-mollick.md)
-- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/078-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.md)
+- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/078-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-vibe-engineering-silicon-era-jiangtao.md)
 

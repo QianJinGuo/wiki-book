@@ -11,11 +11,11 @@ AI 智能体是一匹潜力近乎无限的「野马」，Harness Engineering 是
 AI 智能体 = SOTA 模型（野马）+ Harness（控制系统）= 卓越执行者
 
 ## 相关实体
-- [Harness Engineering Systematic Explainer](../ch05/062-harness-engineering.md)
-- [Harness Engineering 第三代工程范式](../ch05/062-harness-engineering.md)
-- [Harness Engineering Reliable Long Term Agent](../ch05/062-harness-engineering.md)
-- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](../ch05/062-harness-engineering.md)
-- [Harness Engineering Long Term Agent Tasks](../ch05/062-harness-engineering.md)
+- [Harness Engineering Systematic Explainer](../ch05/062-harness-engineering.html)
+- [Harness Engineering 第三代工程范式](../ch05/062-harness-engineering.html)
+- [Harness Engineering Reliable Long Term Agent](../ch05/062-harness-engineering.html)
+- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](../ch05/062-harness-engineering.html)
+- [Harness Engineering Long Term Agent Tasks](../ch05/062-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/bytedance-trae-harness-engineering-guide.md)
 

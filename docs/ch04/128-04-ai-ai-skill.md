@@ -177,12 +177,12 @@ Status: success
 
 本文是 SkillSentry 系列的第四篇，前序文章见：
 
-- **（一）** [AI Skill 测评的底层逻辑](../ch07/010-ai-skill-evolution.md) — 入门篇，介绍自判卷偏差、随机性、负向增益三大核心问题
+- **（一）** [AI Skill 测评的底层逻辑](../ch07/010-ai-skill-evolution.html) — 入门篇，介绍自判卷偏差、随机性、负向增益三大核心问题
 - **（二）** AI Skill 触发与控制 — 待关联
 - **（三）** AI Skill 防过拟合 — 待关联
 - **（四）** 本文 — 四层验证体系完整解析
 
-> **关联**：四层验证体系是 [Harness Engineering](../ch05/062-harness-engineering.md) 在 AI Skill 评测场景的具体实现——Layer 0-1 对应 Harness 的执行基础设施，Layer 2a/2b 对应评估回路，Layer 3 对应可观测性管道。
+> **关联**：四层验证体系是 [Harness Engineering](../ch05/062-harness-engineering.html) 在 AI Skill 评测场景的具体实现——Layer 0-1 对应 Harness 的执行基础设施，Layer 2a/2b 对应评估回路，Layer 3 对应可观测性管道。
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-skill-四层验证体系.md)
 

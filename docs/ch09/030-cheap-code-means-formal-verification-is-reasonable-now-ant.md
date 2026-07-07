@@ -57,9 +57,9 @@ When code was much more expensive to write, we needed a lot more of the codebase
 Confidence in your codebase can't be automated away. It's ultimately your job as the builder to bear responsibility for what you're releasing into the world. So why not use agents to not simply make things faster, but make them _better_?
 
 ## 相关实体
-- [Apple Corecrypto Formal Verification Blueprint](../ch12/026-apple-corecrypto-formal-verification-blueprint-post-quantu.md)
-- [Is Software Losing Its Head](../ch01/823-is-software-losing-its-head.md)
-- [Npm Supply Chain Compromise Postmortem](../ch04/070-ai.md)
+- [Apple Corecrypto Formal Verification Blueprint](../ch12/026-apple-corecrypto-formal-verification-blueprint-post-quantu.html)
+- [Is Software Losing Its Head](../ch01/823-is-software-losing-its-head.html)
+- [Npm Supply Chain Compromise Postmortem](../ch04/070-ai.html)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 

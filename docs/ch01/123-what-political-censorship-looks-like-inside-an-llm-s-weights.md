@@ -10,11 +10,11 @@
 - **中文中间表示**：在 L24 左右，判决以中文 token 形式在模型内部"承诺"，后续层再翻译为英文输出
 - ** graded classifier 过泛化**：审查分类器按结构模式触发而非精确内容匹配，Kosovo、Arab Spring 等非 PRC 话题可能被错误映射
 ## 相关实体
-- [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.md)
-- [Products Are Out Brains Are In](ch01/127-products-are-out-brains-are-in.md)
+- [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
+- [Products Are Out Brains Are In](ch01/127-products-are-out-brains-are-in.html)
 - Investing In Stitch
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Offline Llm Energy Use Html](ch01/586-llm.md)
+- [Offline Llm Energy Use Html](ch01/586-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-political-censorship-looks-like-inside-an-llm-s-weights.md)
 

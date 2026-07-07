@@ -8,11 +8,11 @@
 架构师（JiaGouX）  我们都是架构师！
 
 ## 相关实体
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/501-amazon-bedrock-agentcore.md)
-- [Hermes Agent Vs Openclaw Comparison](../ch03/090-hermes-agent.md)
-- [Skill System Design Three Way Comparison](ch04/262-skill.md)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/351-hermes-agent-goal.md)
-- [Hermes Agent K2 6 Multi Agent](../ch03/090-hermes-agent.md)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/501-amazon-bedrock-agentcore.html)
+- [Hermes Agent Vs Openclaw Comparison](../ch03/090-hermes-agent.html)
+- [Skill System Design Three Way Comparison](ch04/262-skill.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/351-hermes-agent-goal.html)
+- [Hermes Agent K2 6 Multi Agent](../ch03/090-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md)
 

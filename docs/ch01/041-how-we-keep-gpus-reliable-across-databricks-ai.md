@@ -38,7 +38,7 @@ Databricks 的分类揭示了一个重要的系统可靠性洞察：故障的可
 
 ### 2. NCCL 看门狗超时：症状的聚合器而非故障的定位器
 
-文章中一个关键洞察：几乎所有分布式训练故障最终都表现为 NCCL 看门狗超时，但这个超时信息几乎不包含任何根因线索。这意味着故障诊断必须采用跨层的根因分析方法——从堆栈跟踪中唯一的症状出发，同时检查 GPU 硬件状态（DCGM 指标）、互连网络（RDMA 链路健康）、I/O 系统（存储延迟和吞吐量）、CPU 层（rank 进程状态）和软件层（框架日志和 NCCL 调试信息）。这与 [Meta 的 AI 存储架构](ch01/1033-rag.md) 中讨论的存储延迟问题形成直接关联——存储系统 I/O hang 也是 NCCL 超时的常见来源之一。
+文章中一个关键洞察：几乎所有分布式训练故障最终都表现为 NCCL 看门狗超时，但这个超时信息几乎不包含任何根因线索。这意味着故障诊断必须采用跨层的根因分析方法——从堆栈跟踪中唯一的症状出发，同时检查 GPU 硬件状态（DCGM 指标）、互连网络（RDMA 链路健康）、I/O 系统（存储延迟和吞吐量）、CPU 层（rank 进程状态）和软件层（框架日志和 NCCL 调试信息）。这与 [Meta 的 AI 存储架构](ch01/1033-rag.html) 中讨论的存储延迟问题形成直接关联——存储系统 I/O hang 也是 NCCL 超时的常见来源之一。
 
 ### 3. GPU 硬件故障率 vs 传统硬件的显著差异
 
@@ -50,7 +50,7 @@ Databricks 的分类揭示了一个重要的系统可靠性洞察：故障的可
 
 ### 5. 对 AI 基础设施运维的启示
 
-Databricks 的实践为大规模 AI 设施运维提供了几个重要参考：(1) 监控体系必须覆盖从硬件传感器到应用层指标的全栈；(2) 静默故障的检测比显式崩溃更重要——这些是最隐蔽的成本漏洞；(3) GPU 的可靠性工程需要专门的工具和知识体系（如 DCGM、NCCL Flight Recorder），不同于传统服务器运维；(4) 故障恢复的自动化程度直接影响训练效率——从检查点恢复的速度和弹性训练的能力是核心竞争力。这些发现与 [Graviton 优化 Agentic RL Sandbox](../ch04/509-agentic-rl.md) 中讨论的算力成本优化互补——可靠性问题直接影响 GPU 的有效利用率和单位算力成本。
+Databricks 的实践为大规模 AI 设施运维提供了几个重要参考：(1) 监控体系必须覆盖从硬件传感器到应用层指标的全栈；(2) 静默故障的检测比显式崩溃更重要——这些是最隐蔽的成本漏洞；(3) GPU 的可靠性工程需要专门的工具和知识体系（如 DCGM、NCCL Flight Recorder），不同于传统服务器运维；(4) 故障恢复的自动化程度直接影响训练效率——从检查点恢复的速度和弹性训练的能力是核心竞争力。这些发现与 [Graviton 优化 Agentic RL Sandbox](../ch04/509-agentic-rl.html) 中讨论的算力成本优化互补——可靠性问题直接影响 GPU 的有效利用率和单位算力成本。
 
 ## 实践启示
 
@@ -66,11 +66,11 @@ Databricks 的实践为大规模 AI 设施运维提供了几个重要参考：(1
 
 ## 相关实体
 
-- [Meta AI 存储架构](ch01/1033-rag.md)
-- [Graviton 优化 Agentic RL Sandbox](../ch04/509-agentic-rl.md)
+- [Meta AI 存储架构](ch01/1033-rag.html)
+- [Graviton 优化 Agentic RL Sandbox](../ch04/509-agentic-rl.html)
 - [AI Infrastructure & Cost Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md)
 - GPU 可靠性工程
-- [Lambda MicroVM 对比](../ch11/247-lambda-microvms-vs-lambda-functions.md)
+- [Lambda MicroVM 对比](../ch11/247-lambda-microvms-vs-lambda-functions.html)
 
 ## 来源
 

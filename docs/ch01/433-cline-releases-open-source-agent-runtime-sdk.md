@@ -102,17 +102,17 @@ Cline 的核心差异化在于：(1) 把 agent loop 做成 portable kernel；(2)
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md) — Claude Code 的源码级解读，与 Cline SDK 形成"闭源深度 vs 开源可移植"对照
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.md) — Claude Code harness 设计的深度剖析
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md) — Agent 记忆系统的工程实践，与"持久化在文件系统"理念呼应
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md) — 从 vibe coding 到 agentic engineering 的范式跃迁
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.md) — Vibe Coding 与 Agentic Engineering 的同源访谈
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md) — AWS Bedrock AgentOps 的规模化运营实践
-- [Claude Code Harness Deep Understanding](ch01/460-claude-code-harness-deep-understanding.md) — Claude Code harness 的另一深度解析
-- [Claude Code Harness Deep Dive Founder Park](../ch05/060-claude-code-harness.md) — 同主题的另一种解读视角
-- [scaling archunit with nebula archrules](../ch11/254-scaling-archunit-with-nebula-archrules.md)
-- [the code-as-content era](ch01/493-the-code-as-content-era.md)
-- [the shape of the thing](ch01/273-the-shape-of-the-thing.md)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html) — Claude Code 的源码级解读，与 Cline SDK 形成"闭源深度 vs 开源可移植"对照
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.html) — Claude Code harness 设计的深度剖析
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.html) — Agent 记忆系统的工程实践，与"持久化在文件系统"理念呼应
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.html) — 从 vibe coding 到 agentic engineering 的范式跃迁
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.html) — Vibe Coding 与 Agentic Engineering 的同源访谈
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) — AWS Bedrock AgentOps 的规模化运营实践
+- [Claude Code Harness Deep Understanding](ch01/460-claude-code-harness-deep-understanding.html) — Claude Code harness 的另一深度解析
+- [Claude Code Harness Deep Dive Founder Park](../ch05/060-claude-code-harness.html) — 同主题的另一种解读视角
+- [scaling archunit with nebula archrules](../ch11/254-scaling-archunit-with-nebula-archrules.html)
+- [the code-as-content era](ch01/493-the-code-as-content-era.html)
+- [the shape of the thing](ch01/273-the-shape-of-the-thing.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 
 ---

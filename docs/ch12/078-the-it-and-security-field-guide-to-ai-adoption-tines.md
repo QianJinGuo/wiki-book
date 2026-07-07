@@ -10,10 +10,10 @@
 - 人工介入最佳实践
 - 案例：Udemy、Canva、Jamf、Vimeo
 ## 相关实体
-- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01/322-how-harnesses-and-post-training-close-the-open-weight-bug-fi.md)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/140-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.md)
+- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01/322-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/140-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Fedora Hummingbird Container Security](../ch04/070-ai.md)
+- [Fedora Hummingbird Container Security](../ch04/070-ai.html)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-it-and-security-field-guide-to-ai-adoption-tines.md)

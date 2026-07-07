@@ -117,7 +117,7 @@ LLM 推理每次都需要把之前生成的所有 token 重新输入模型计算
 ## 相关实体
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 后台工程方法论的更高层抽象
-- [Pydantic AI Progressive Agent Skills](../ch04/376-agent-skills.md) — Python-first AI 框架的另一视角
+- [Pydantic AI Progressive Agent Skills](../ch04/376-agent-skills.html) — Python-first AI 框架的另一视角
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tencent-ai-infra-backend-engineer-huangrunpeng.md)
 
 ---

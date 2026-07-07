@@ -7,11 +7,11 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/semis-memo-supply-chain-inheritance.md)
 
 ## 相关实体
-- [Semis Memo: Supply Chain Inheritance](../ch04/070-ai.md)
-- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](ch01/696-scarcruft.md)
-- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](../ch12/034-postmortem-tanstack-npm-supply-chain-compromise-tanstack.md)
-- [Amazon launches Supply Chain Services for businesses of all sizes](../ch04/070-ai.md)
-- [semgrep intercom php supply chain](../ch12/112-semgrep-intercom-php-supply-chain.md)
+- [Semis Memo: Supply Chain Inheritance](../ch04/070-ai.html)
+- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](ch01/696-scarcruft.html)
+- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](../ch12/034-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch04/070-ai.html)
+- [semgrep intercom php supply chain](../ch12/112-semgrep-intercom-php-supply-chain.html)
 
 ## 深度分析
 本文是Citrini Research发布的半导体Memo系列文章，深入分析了AI基础设施时代模拟和功率半导体的投资逻辑，特别是提出了"Supply Chain Inheritance"（供应链继承）这一核心投资框架。

@@ -13,11 +13,11 @@ Codex摸到了市场规律！Codex已自己完成商业闭环，大牛已躺赚2
 Chris 是这样评论的："ChatGPT 就像个猎人，他出去帮我找食物，然后努力把食物带回部落，这样我们才能一起生存下去。"
 
 ## 相关实体
-- [Skill Rag Tsinghua Sra](../ch04/262-skill.md)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/114-useful-memories-become-faulty-when-continuously-updated-by-l.md)
-- [Build Live Translation Apps With Gpt Realtime Translate](ch01/138-build-live-translation-apps-with-gpt-realtime-translate.md)
-- [Chatgpt Search Web Run Fanout Searchengineland](ch01/676-chatgpt.md)
-- [Stochastic Parrot Thought Experiment](ch01/811-stochastic-parrot-thought-experiment.md)
+- [Skill Rag Tsinghua Sra](../ch04/262-skill.html)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/114-useful-memories-become-faulty-when-continuously-updated-by-l.html)
+- [Build Live Translation Apps With Gpt Realtime Translate](ch01/138-build-live-translation-apps-with-gpt-realtime-translate.html)
+- [Chatgpt Search Web Run Fanout Searchengineland](ch01/676-chatgpt.html)
+- [Stochastic Parrot Thought Experiment](ch01/811-stochastic-parrot-thought-experiment.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/codex-autonomous-earning-money.md)
 

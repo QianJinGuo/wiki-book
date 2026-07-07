@@ -30,7 +30,7 @@
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch04/160-factory-missions.md)。 相关主题通过 [AutoResearch 异步多 Agent AI 寒武纪新阶段](../ch01/938-agent-ai.md) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch04/160-factory-missions.html)。 相关主题通过 [AutoResearch 异步多 Agent AI 寒武纪新阶段](../ch01/938-agent-ai.html) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -42,11 +42,11 @@
 
 ## 相关实体
 
-- [一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch04/160-factory-missions.md)
-- [AutoResearch 异步多 Agent AI 寒武纪新阶段](../ch01/938-agent-ai.md)
-- [Anthropic Multi Agent Research System](ch04/508-anthropic-multi-agent-research-system.md)
-- [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.md)
-- [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](ch04/215-self-evolving-agents.md)
+- [一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch04/160-factory-missions.html)
+- [AutoResearch 异步多 Agent AI 寒武纪新阶段](../ch01/938-agent-ai.html)
+- [Anthropic Multi Agent Research System](ch04/508-anthropic-multi-agent-research-system.html)
+- [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
+- [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](ch04/215-self-evolving-agents.html)
 
 ---
 

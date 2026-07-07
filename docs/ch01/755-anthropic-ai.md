@@ -6,15 +6,15 @@
 
 # Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶
 ## 相关实体
-- [Pi Mono Github](ch01/762-pi-mono-github.md)
+- [Pi Mono Github](ch01/762-pi-mono-github.html)
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
-- [Openai Gpt Realtime Voice Models Qbitai](ch01/752-openai-gpt-realtime-voice-models-qbitai.md)
-- [Harness Engineering Three Evolutions](../ch05/062-harness-engineering.md)
-- [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](ch01/1146-deepseek.md)
+- [Openai Gpt Realtime Voice Models Qbitai](ch01/752-openai-gpt-realtime-voice-models-qbitai.html)
+- [Harness Engineering Three Evolutions](../ch05/062-harness-engineering.html)
+- [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](ch01/1146-deepseek.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)
 
-- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](ch01/846-anthropic.md)
+- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](ch01/846-anthropic.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析

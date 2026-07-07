@@ -135,9 +135,9 @@ AgentCore 提供了完整的 agent 基础设施：
 
 ## 相关实体
 
-- [Agentic AI Data Mesh](ch04/059-agentic-ai.md) — 另一种 agent 化路径：data mesh 的 MCP 暴露
+- [Agentic AI Data Mesh](ch04/059-agentic-ai.html) — 另一种 agent 化路径：data mesh 的 MCP 暴露
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 约束与验证框架
-- [Agent Harnesses Are Dead](ch04/612-agent-harnesses-are-dead-long-live-agent-harnesses.md) — Agent Harness 架构演进讨论
+- [Agent Harnesses Are Dead](ch04/612-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Agent Harness 架构演进讨论
 
 ---
 

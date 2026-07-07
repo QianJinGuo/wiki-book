@@ -30,24 +30,24 @@ SkillsBench研究：84个任务中19%出现负向增益。
 **有学术/工业来源：** 通过率（OpenAI Evals/HELM）、Δ（SkillsBench论文arxiv.org/abs/2602.12670）、触发率（Recall/Precision）、幻觉检测（TruthfulQA/FactScore）、稳定性（统计学标准差）
 **内部经验值（无直接学术背书）：** S级通过率≥95%、IFR=100%、σ<0.05
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-skill-测评指标体系.md)
-→ [AI Skill 测评体系：从零到一](../ch07/010-ai-skill-evolution.md)（系列主框架）
+→ [AI Skill 测评体系：从零到一](../ch07/010-ai-skill-evolution.html)（系列主框架）
 
 ## 相关实体
-- [Agentic AI 系统架构与分层模型](../ch05/072-harness-skill.md)
-- [Hermes Agent Skill 系统深度解析](../ch07/017-hermes-skill.md)
+- [Agentic AI 系统架构与分层模型](../ch05/072-harness-skill.html)
+- [Hermes Agent Skill 系统深度解析](../ch07/017-hermes-skill.html)
 
-- [Skill工程化设计：把Agent当算法用](../ch04/262-skill.md)
-- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](../ch04/070-ai.md)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/586-llm.md)
-- [AgentEval：YAML驱动的Agent评测框架](../ch03/045-agent.md)
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/264-lbs-intentbench.md)
-- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/090-hermes-agent.md)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/141-skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/262-skill.md)
-- [Skills赏析：使用skills-refiner提升skill质量](../ch03/069-skills.md)
-- [harness-engineering-systematic-explainer](../ch05/062-harness-engineering.md)
-- [Agent 原理、架构与工程实践](../ch03/045-agent.md)
-- [AI Agent 工程师能力地图](../ch04/147-ai-agent.md)
+- [Skill工程化设计：把Agent当算法用](../ch04/262-skill.html)
+- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](../ch04/070-ai.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/586-llm.html)
+- [AgentEval：YAML驱动的Agent评测框架](../ch03/045-agent.html)
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/264-lbs-intentbench.html)
+- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/090-hermes-agent.html)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/141-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/262-skill.html)
+- [Skills赏析：使用skills-refiner提升skill质量](../ch03/069-skills.html)
+- [harness-engineering-systematic-explainer](../ch05/062-harness-engineering.html)
+- [Agent 原理、架构与工程实践](../ch03/045-agent.html)
+- [AI Agent 工程师能力地图](../ch04/147-ai-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析

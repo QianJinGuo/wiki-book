@@ -10,10 +10,10 @@
 
 ## 摘要
 ## 相关实体
-- [The New Ai Lock In](ch01/800-the-new-ai-lock-in.md)
-- [New Ai Lock In](ch01/800-the-new-ai-lock-in.md)
-- [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](../ch04/070-ai.md)
-- [P Ic Work Is The New Career Flex](../ch03/009-ic-work-is-the-new-career-flex.md)
+- [The New Ai Lock In](ch01/800-the-new-ai-lock-in.html)
+- [New Ai Lock In](ch01/800-the-new-ai-lock-in.html)
+- [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](../ch04/070-ai.html)
+- [P Ic Work Is The New Career Flex](../ch03/009-ic-work-is-the-new-career-flex.html)
 - [Thehackernews Com The New Phishing Click How Oauth](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-com-the-new-phishing-click-how-oauth.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/new-lock.md)

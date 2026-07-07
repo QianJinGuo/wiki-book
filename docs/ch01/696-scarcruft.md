@@ -21,13 +21,13 @@ ESET researchers uncovered a multiplatform supply-chain attack by North Korea-al
 - [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
 
 ## 相关实体
-- [Semis Memo: Supply Chain Inheritance](ch01/581-semis-memo-supply-chain-inheritance.md)
-- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](../ch12/034-postmortem-tanstack-npm-supply-chain-compromise-tanstack.md)
-- [Amazon launches Supply Chain Services for businesses of all sizes](../ch04/070-ai.md)
-- [Semis Memo: Supply Chain Inheritance](../ch04/070-ai.md)
-- [semgrep intercom php supply chain](../ch12/112-semgrep-intercom-php-supply-chain.md)
+- [Semis Memo: Supply Chain Inheritance](ch01/581-semis-memo-supply-chain-inheritance.html)
+- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](../ch12/034-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch04/070-ai.html)
+- [Semis Memo: Supply Chain Inheritance](../ch04/070-ai.html)
+- [semgrep intercom php supply chain](../ch12/112-semgrep-intercom-php-supply-chain.html)
 
-- [xz-utils backdoor 2 years on — maintainer trust hijack patte](../ch04/070-ai.md)
+- [xz-utils backdoor 2 years on — maintainer trust hijack patte](../ch04/070-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析

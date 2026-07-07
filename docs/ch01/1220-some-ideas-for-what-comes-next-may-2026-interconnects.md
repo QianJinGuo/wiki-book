@@ -98,14 +98,14 @@
 Nathan Lambert 在 Interconnects 发表的 2026-05 月度洞察。
 
 ## 相关实体
-- [from agi to asi](ch01/281-agi.md)
+- [from agi to asi](ch01/281-agi.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/some-ideas-for-what-comes-next-may-2026.md)
 
 ## 深度分析
 
 ### 开源闭源差距的衡量维度转变
 
-开源与闭源模型差距的真实衡量标准不是 benchmark 分数，而是 [agentic harness](../ch05/038-agent-harness.md) 的实际适用性。当 Claude Code 在 2025 年 12 月展现出"响亮而明显"的性能拐点后，即使开源模型在标准测试上持续追赶，但要真正追平实际工作流中的表现，Lambert 估计需要 12 个月以上。这个判断的深层含义是：闭源模型的护城河已经从前沿能力转移到完整的产品体验和生态整合上。
+开源与闭源模型差距的真实衡量标准不是 benchmark 分数，而是 [agentic harness](../ch05/038-agent-harness.html) 的实际适用性。当 Claude Code 在 2025 年 12 月展现出"响亮而明显"的性能拐点后，即使开源模型在标准测试上持续追赶，但要真正追平实际工作流中的表现，Lambert 估计需要 12 个月以上。这个判断的深层含义是：闭源模型的护城河已经从前沿能力转移到完整的产品体验和生态整合上。
 
 ### 美国开源模型生态的结构性成熟
 

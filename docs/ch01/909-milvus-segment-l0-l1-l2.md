@@ -60,8 +60,8 @@ L2 是正在被淡化的层级：
 
 ## 相关实体
 
-- [MFS：Zilliztech 的 Agent 统一上下文 harness](ch01/1036-claude.md) — 同作者（术哥）关于 Zilliztech/Milvus 相关项目
-- [Hermes Agent v0.14 架构源码分析](../ch03/090-hermes-agent.md) — 同作者源码分析系列
+- [MFS：Zilliztech 的 Agent 统一上下文 harness](ch01/1036-claude.html) — 同作者（术哥）关于 Zilliztech/Milvus 相关项目
+- [Hermes Agent v0.14 架构源码分析](../ch03/090-hermes-agent.html) — 同作者源码分析系列
 - [RAG 检索增强生成](https://github.com/QianJinGuo/wiki/blob/main/concepts/rag-retrieval-augmented-generation.md) — Milvus 作为向量数据库的核心应用场景
 
 ---

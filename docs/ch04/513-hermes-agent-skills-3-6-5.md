@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [hermes新顶流agent skills闭环系统深度解析](../ch07/017-hermes-skill.md)
+- [hermes新顶流agent skills闭环系统深度解析](../ch07/017-hermes-skill.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-skills-source-code-analysis-shuge.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
@@ -17,7 +17,7 @@
 Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描
-> 源码分析版（vs [Hermes Agent Skill 系统深度解析](../ch07/017-hermes-skill.md) winty版）
+> 源码分析版（vs [Hermes Agent Skill 系统深度解析](../ch07/017-hermes-skill.html) winty版）
 ## 核心定位
 Hermes 两套记忆机制：
 - **通用记忆**（MEMORY.
@@ -52,11 +52,11 @@ Skills 遵循 **agentskills.
 - **aws趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/213-openclaw.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/213-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 
 ## 实践启示

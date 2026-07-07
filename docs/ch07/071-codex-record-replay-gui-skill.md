@@ -29,7 +29,7 @@ Record & Replay 在 Codex 生态中的位置：
 
 Record & Replay 是 **Skill 生成器**——降低 Skill 创作门槛，把散落在个人手里的操作经验变成可维护资产。
 
-与 [Agent Skill 写作指南](../ch04/555-agent-skill.md) 的关系：传统 Skill 写作要求人手动定义触发条件、输入拆分、步骤表达、失败处理；Record & Replay 提供了"先演示再生成草稿"的替代路径。
+与 [Agent Skill 写作指南](../ch04/555-agent-skill.html) 的关系：传统 Skill 写作要求人手动定义触发条件、输入拆分、步骤表达、失败处理；Record & Replay 提供了"先演示再生成草稿"的替代路径。
 
 ## 适用场景与边界
 

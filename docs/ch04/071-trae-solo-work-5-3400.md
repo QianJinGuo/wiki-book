@@ -21,8 +21,8 @@
 
 ## 相关实体
 - [我把Mac留在家用手机让Trae Solo替我打了一天工](https://github.com/QianJinGuo/wiki/blob/main/entities/我把mac留在家用手机让trae-solo替我打了一天工.md)
-- [Hermes Agent K2 6 Tutorial](../ch03/090-hermes-agent.md)
-- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/376-agent-skills.md)
+- [Hermes Agent K2 6 Tutorial](../ch03/090-hermes-agent.html)
+- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/376-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/trae-solo-work-feishu-bitable-tutorial.md)
 

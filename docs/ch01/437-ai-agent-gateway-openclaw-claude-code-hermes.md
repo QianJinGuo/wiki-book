@@ -8,12 +8,12 @@
 - **价值**：8/10 — 三框架 Gateway 设计哲学横向对比，视角独特，技术细节准确（端口号/bindings 配置/适配器数量）
 - **置信度**：8/10 — 公众号原创，源码级细节，与公开文档一致
 - **乘积**：64 — strong ★★★★
-- **策略对齐**：与 [DeerFlow vs Hermes vs OpenClaw](../ch04/447-deerflow-hermes-openclaw.md) 互补（整体选型 vs Gateway 专深）
+- **策略对齐**：与 [DeerFlow vs Hermes vs OpenClaw](../ch04/447-deerflow-hermes-openclaw.html) 互补（整体选型 vs Gateway 专深）
 
 ## 与现有 wiki 的关系
 - **互补**：现有  侧重整体选型（三步选型法+效率五维表格），本文聚焦 **Gateway 单一架构层次的三框架深对比**
 - **填补空白**：wiki 目前有 OpenClaw 源码拆解、Claude Code Prompt/Context/Harness 拆解、Hermes 深度解析，但缺少以 **Gateway 为分析轴的三框架横向对比**
-- **交叉引用**：与 [OpenClaw Prompt/Context/Harness](../ch11/213-openclaw.md)、[Claude Code Prompt/Context/Harness](../ch09/059-claude-code-prompt.md)、[Hermes Agent 深度解析](../ch03/090-hermes-agent.md) 互为补充
+- **交叉引用**：与 [OpenClaw Prompt/Context/Harness](../ch11/213-openclaw.html)、[Claude Code Prompt/Context/Harness](../ch09/059-claude-code-prompt.html)、[Hermes Agent 深度解析](../ch03/090-hermes-agent.html) 互为补充
 
 ## 文章导航
 - 本系列共（一）~（九）篇，本文为第（八）篇 Gateway 专题
@@ -69,16 +69,16 @@
 → [C4 架构图](assets/c4/gateway-architecture-openclaw-claude-hermes-comparison-c4.html)
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.md)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.html)
 
-- [深度拆解 Hermes Agent 记忆系统](../ch03/090-hermes-agent.md)
-- [Hermes Agent vs OpenClaw 对比分析](../ch03/090-hermes-agent.md)
-- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/075-claude-code.md)
-- [Claude Code 设计原则与对照分析](../ch03/075-claude-code.md)
-- [Claude Code Integration Other Tools](../ch03/075-claude-code.md)
+- [深度拆解 Hermes Agent 记忆系统](../ch03/090-hermes-agent.html)
+- [Hermes Agent vs OpenClaw 对比分析](../ch03/090-hermes-agent.html)
+- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/075-claude-code.html)
+- [Claude Code 设计原则与对照分析](../ch03/075-claude-code.html)
+- [Claude Code Integration Other Tools](../ch03/075-claude-code.html)
 - [Local Vs Cloud Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/local-vs-cloud-agent-deployment-strategy.md)
 - [Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
-- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](ch01/1036-claude.md)
+- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](ch01/1036-claude.html)
 
 ---
 

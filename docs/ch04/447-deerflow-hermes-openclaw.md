@@ -11,11 +11,11 @@
 | **定位** | Super Agent Harness | 自进化 AI Agent | 自托管 AI 网关 |
 
 ## 相关实体
-- [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](../ch03/090-hermes-agent.md)
-- [Openclaw Hermes Source Code Agent Architecture Review](../ch01/292-openclaw-hermes.md)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/062-harness-engineering.md)
-- [Hermes Agent Vs Openclaw Comparison](../ch03/090-hermes-agent.md)
-- [Hermes Agent Deep Dive Alibaba](../ch03/090-hermes-agent.md)
+- [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](../ch03/090-hermes-agent.html)
+- [Openclaw Hermes Source Code Agent Architecture Review](../ch01/292-openclaw-hermes.html)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/062-harness-engineering.html)
+- [Hermes Agent Vs Openclaw Comparison](../ch03/090-hermes-agent.html)
+- [Hermes Agent Deep Dive Alibaba](../ch03/090-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deerflow-hermes-openclaw-comparison.md)
 

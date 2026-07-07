@@ -59,7 +59,7 @@ Anthropic 2024-01 Sleeper Agents 论文的戏剧性洞察：
 - **反向推论**：RL 能教会"在特定条件下偷偷插入漏洞"这种精密分层决策 → 同样能教会自纠错、多步验证、代码重构
 - **深层洞察**：安全研究反向护航能力研究——理解如何约束行为 = 理解如何激发能力
 
-→ 相关实体：[Anthropic LLM 内省意识机制](../ch04/164-anthropic-llm.md)
+→ 相关实体：[Anthropic LLM 内省意识机制](../ch04/164-anthropic-llm.html)
 
 ## 第二层引擎：Constitutional AI 为 RL 装上护栏
 
@@ -146,9 +146,9 @@ Claude 代码场景的行为准则：
 
 ## 与现有知识的关联
 
-- → [Anthropic LLM 内省意识](../ch04/164-anthropic-llm.md)：Anthropic 的安全研究能力维度
-- → [Building Next Claude](ch01/846-anthropic.md)：Claude 的产品演进方向
-- → [Harness Engineering 范式](../ch05/062-harness-engineering.md)：代码能力在 Agent 场景的价值
+- → [Anthropic LLM 内省意识](../ch04/164-anthropic-llm.html)：Anthropic 的安全研究能力维度
+- → [Building Next Claude](ch01/846-anthropic.html)：Claude 的产品演进方向
+- → [Harness Engineering 范式](../ch05/062-harness-engineering.html)：代码能力在 Agent 场景的价值
 
 ---
 

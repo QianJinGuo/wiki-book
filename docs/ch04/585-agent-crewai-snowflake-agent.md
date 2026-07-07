@@ -21,9 +21,9 @@
 
 ## 与现有实体的差异化
 
-- [Agent 数据治理模式](../ch03/045-agent.md) 聚焦数据库凭证安全，本文聚焦企业级构建吞吐量和 Snowflake 集成
-- [CrewAI 小步快跑](../ch03/045-agent.md) 聚焦开发方法论，本文聚焦数据治理和平台集成
-- [Agent 安全三步序列](../ch05/009-harness.md) 聚焦安全，本文聚焦数据所在处的 Agent 构建
+- [Agent 数据治理模式](../ch03/045-agent.html) 聚焦数据库凭证安全，本文聚焦企业级构建吞吐量和 Snowflake 集成
+- [CrewAI 小步快跑](../ch03/045-agent.html) 聚焦开发方法论，本文聚焦数据治理和平台集成
+- [Agent 安全三步序列](../ch05/009-harness.html) 聚焦安全，本文聚焦数据所在处的 Agent 构建
 
 ## 实践启示
 
@@ -33,11 +33,11 @@
 
 ## 相关实体
 
-- [Agent 数据治理模式](../ch03/045-agent.md)
-- [CrewAI 小步快跑](../ch03/045-agent.md)
-- [Agent 安全三步序列](../ch05/009-harness.md)
-- [Agentium Agent 框架](../ch01/1154-agentium-agent.md)
-- [Snowflake Agentic Enterprise Summit](../ch03/045-agent.md)
+- [Agent 数据治理模式](../ch03/045-agent.html)
+- [CrewAI 小步快跑](../ch03/045-agent.html)
+- [Agent 安全三步序列](../ch05/009-harness.html)
+- [Agentium Agent 框架](../ch01/1154-agentium-agent.html)
+- [Snowflake Agentic Enterprise Summit](../ch03/045-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-build-agents-where-data-already-lives.md)
 

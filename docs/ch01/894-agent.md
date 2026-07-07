@@ -48,12 +48,12 @@
 
 ### 关联实体
 
-- [Headroom Context Compression Agent Vibecoder](../ch03/045-agent.md)
-- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch04/070-ai.md)
-- [Hermes Agent V014 Architecture Shugex](../ch03/090-hermes-agent.md)
-- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11/013-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation](../ch03/045-agent.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/109-hy3-preview.md)
+- [Headroom Context Compression Agent Vibecoder](../ch03/045-agent.html)
+- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch04/070-ai.html)
+- [Hermes Agent V014 Architecture Shugex](../ch03/090-hermes-agent.html)
+- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11/013-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.html)
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation](../ch03/045-agent.html)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/109-hy3-preview.html)
 
 ## 实践启示
 

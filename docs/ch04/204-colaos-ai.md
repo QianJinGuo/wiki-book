@@ -133,7 +133,7 @@ ListenHub 由一人 + Agents 维护 20 个 repo、覆盖全栈产出，证明 AI
 - **敢于押注下一代交互范式**：语音优先、极简界面等"反直觉"设计需要长期投入，但可能成为定义行业的关键判断。选择交互形态的战略赌注而非渐进优化。
 
 ## 相关实体
-- [Ai Native Team Building Failures Ceo Digital Twin Case](../ch05/018-ai-native.md)
+- [Ai Native Team Building Failures Ceo Digital Twin Case](../ch05/018-ai-native.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 相关主题

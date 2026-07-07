@@ -8,9 +8,9 @@
 
 ## 相关实体
 
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1161-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.md)
-- [How Superset built the IDE for AI agents on Vercel](ch01/067-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
-- [How we made WINDOW JOIN parallel and vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.md)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1161-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [How Superset built the IDE for AI agents on Vercel](ch01/067-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [How we made WINDOW JOIN parallel and vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
 
 ## 深度分析
 ### 核心洞察：数字主权不是口号，而是基础设施决策

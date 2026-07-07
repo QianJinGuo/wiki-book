@@ -70,7 +70,7 @@ Unlimited OCR 还没有真正摆脱上下文长度。DeepEncoder 压缩率虽高
 
 ## 相关实体
 
-- [DeepSeek 效率之争与 JetSpec](ch01/1146-deepseek.md) — 探讨 LLM 解码加速技术，与 R-SWA 的常量 KV cache 设计形成互补
+- [DeepSeek 效率之争与 JetSpec](ch01/1146-deepseek.html) — 探讨 LLM 解码加速技术，与 R-SWA 的常量 KV cache 设计形成互补
 - [LLM 可解释性](https://github.com/QianJinGuo/wiki/blob/main/entities/条条电路通罗马大模型可解释性的唯一机制可能从一开始就不存在.md) — 探讨注意力机制的可解释性，为理解 R-SWA 的窗口设计提供理论背景
 - [组件过期模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md) — 探讨 AI 系统的缓存策略与状态管理，与 R-SWA 的 KV cache 管理有共通之处
 

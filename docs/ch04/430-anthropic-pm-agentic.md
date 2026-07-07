@@ -65,14 +65,14 @@ METR 测出 41x（16 个月）：Sonnet 3.5 (new) 21 分钟 → Opus 4.6 的 12 
 4. **从小处实验，建立信心**：Jess 的起点是"能拿自己的产品做实验"——先用成熟产品验证工作流，再扩展到核心业务。这种渐进式采用降低了风险。
 
 ## 相关
-- [Claude Code 搜索架构](../ch03/075-claude-code.md)
-- [Cat Wu: Claude Code PM 工作流](../ch03/075-claude-code.md)
-- [AutoResearch 多 Agent 开发](../ch03/045-agent.md)
-- [Agent Memory 模块化框架](ch04/096-agent-memory.md)
+- [Claude Code 搜索架构](../ch03/075-claude-code.html)
+- [Cat Wu: Claude Code PM 工作流](../ch03/075-claude-code.html)
+- [AutoResearch 多 Agent 开发](../ch03/045-agent.html)
+- [Agent Memory 模块化框架](ch04/096-agent-memory.html)
 - [AI Team 知识 Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)
 
 ## 相关实体
-- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](../ch01/846-anthropic.md)
+- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](../ch01/846-anthropic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

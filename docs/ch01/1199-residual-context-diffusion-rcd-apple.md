@@ -30,7 +30,7 @@ RCD 的核心洞察在于：被丢弃的 token 表示仍然保留了对后续解
 
 ## 意义
 
-RCD 为扩散语言模型的推理效率提供了一个实用改进方向，特别适用于需要高精度推理能力的场景。与 `diffusion-language-models` 和 [推理优化](ch01/586-llm.md) 相关。
+RCD 为扩散语言模型的推理效率提供了一个实用改进方向，特别适用于需要高精度推理能力的场景。与 `diffusion-language-models` 和 [推理优化](ch01/586-llm.html) 相关。
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/residual-context-diffusion-apple-ml-2026-07.md)
 

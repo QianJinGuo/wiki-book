@@ -40,7 +40,7 @@ Semantic-Gradient-based Prompt Optimization——从历史轨迹中找出 Agent 
 
 ## 对 Agent 工程的意义
 
-AgentX 是**目前公开可见的最完整的工业级 Agent 驱动研发闭环实证**。与 [生产级 Harness 架构设计](ch05/038-agent-harness.md) 互补——Harness 讨论通用架构，AgentX 提供推荐系统垂直领域的完整实现 + 真实 ROI 数据。
+AgentX 是**目前公开可见的最完整的工业级 Agent 驱动研发闭环实证**。与 [生产级 Harness 架构设计](ch05/038-agent-harness.html) 互补——Harness 讨论通用架构，AgentX 提供推荐系统垂直领域的完整实现 + 真实 ROI 数据。
 
 SGPO 自进化机制（将失败轨迹转化为 harness 更新）是独特的闭环设计，在现有 Harness 实体中未覆盖。
 

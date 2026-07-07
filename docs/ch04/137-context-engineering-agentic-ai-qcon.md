@@ -152,11 +152,11 @@
 ## Related
 
 ## 相关实体
-- [Yidian Tianxia Context Engineering Agentic Ai](ch04/248-yidian-tianxia-context-engineering-agentic-ai.md)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/405-vibe-coding-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering V4](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Agent Memory Architecture Ruofei](ch04/096-agent-memory.md)
-- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.md)
+- [Yidian Tianxia Context Engineering Agentic Ai](ch04/248-yidian-tianxia-context-engineering-agentic-ai.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/405-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering V4](ch04/123-karpathy-vibe-coding-agentic-engineering.html)
+- [Agent Memory Architecture Ruofei](ch04/096-agent-memory.html)
+- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/yidian-tianxia-context-engineering-agentic-ai-qcon.md)
 

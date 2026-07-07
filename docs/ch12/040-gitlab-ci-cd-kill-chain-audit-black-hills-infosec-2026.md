@@ -6,7 +6,7 @@
 
 # GitLab CI/CD Kill Chain Audit — Black Hills InfoSec 2026 大规模审计研究
 
-> **背景**：本文基于 Black Hills Info Security 在 2026-06-03 发布的大规模 GitLab CI/CD 审计研究整理。3,757 个开源项目、1,580 个 HIGH 级别漏洞、kill chain 框架系统化分类。补充现有 [Jenkins 供应链攻击](../ch01/404-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.md) 等的 CI/CD 攻击面覆盖。
+> **背景**：本文基于 Black Hills Info Security 在 2026-06-03 发布的大规模 GitLab CI/CD 审计研究整理。3,757 个开源项目、1,580 个 HIGH 级别漏洞、kill chain 框架系统化分类。补充现有 [Jenkins 供应链攻击](../ch01/404-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html) 等的 CI/CD 攻击面覆盖。
 
 ## 研究规模与方法
 
@@ -34,7 +34,7 @@ Black Hills Info Security 在 2026-06-03 发布的审计研究是 GitLab 生态*
 ### Stage 2 — Initial Access（初始访问）
 
 - **恶意 .gitlab-ci.yml PR**：attacker 提 PR 修改 CI 脚本 → maintainer merge → CI 阶段执行恶意 payload
-- **CI 镜像供应链**：CI 镜像被植入后门（参考 [xz utils、event-stream 模式](../ch01/404-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.md)）
+- **CI 镜像供应链**：CI 镜像被植入后门（参考 [xz utils、event-stream 模式](../ch01/404-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)）
 - **可执行 artifact 滥用**：CI 产物被下载执行而非仅拉取
 
 ### Stage 3 — Privilege Escalation（权限提升）
@@ -109,7 +109,7 @@ Black Hills Info Security 在 2026-06-03 发布的审计研究是 GitLab 生态*
 
 ## 相关实体
 
-- [bagel — fleet 级 secret scanning 守护开发工作站](ch12/052-bagel-fleet-secret-scanning.md)
+- [bagel — fleet 级 secret scanning 守护开发工作站](ch12/052-bagel-fleet-secret-scanning.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/auditing-gitlab-cicd-kill-chain-black-hills-2026.md)
 

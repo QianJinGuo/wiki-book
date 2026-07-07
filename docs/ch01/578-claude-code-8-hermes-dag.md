@@ -7,7 +7,7 @@
 # Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-dynamic-workflows-8th-translation-xingxiaozhao.md)
-→ 主条目：[Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/078-claude-code-dynamic-workflows.md)
+→ 主条目：[Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/078-claude-code-dynamic-workflows.html)
 
 ## 摘要
 
@@ -88,13 +88,13 @@
 
 ## 关联实体
 
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/078-claude-code-dynamic-workflows.md) — 主条目，51KB 完整多 Agent 编排指南
-- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md) — Claude Code 源码级机制
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/078-claude-code-dynamic-workflows.html) — 主条目，51KB 完整多 Agent 编排指南
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html) — Claude Code 源码级机制
 - [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.md) — Claude Code 中的 agent harness 构建
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md) — Agent 记忆系统
-- [Claude Code Harness Deep Understanding](ch01/460-claude-code-harness-deep-understanding.md) — Claude Code harness 深度解析
-- [Claude Code Harness Deep Dive Founder Park](../ch05/060-claude-code-harness.md) — Founder Park 的 Claude Code harness 深度文章
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.html) — Claude Code 中的 agent harness 构建
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.html) — Agent 记忆系统
+- [Claude Code Harness Deep Understanding](ch01/460-claude-code-harness-deep-understanding.html) — Claude Code harness 深度解析
+- [Claude Code Harness Deep Dive Founder Park](../ch05/060-claude-code-harness.html) — Founder Park 的 Claude Code harness 深度文章
 
 ## 相关实体
 

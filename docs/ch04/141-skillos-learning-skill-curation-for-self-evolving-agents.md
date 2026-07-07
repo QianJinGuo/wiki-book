@@ -112,12 +112,12 @@ SkillRepo 作为外部 Markdown 文件存在，带来了传统记忆系统不具
 论文的实验设计提供了一个可借鉴的渐进路径：先用 SkillOS-base（初始策展人，不做 RL 训练）建立 baseline，验证技能格式和工作流设计，再引入 GRPO 训练提升策展质量。训练配置建议从以下超参数开始：学习率 1×10⁻⁶，batch size 32，group size 8，在 16×H100 GPU 上训练约 3 天（ALFWorld）。实践中，团队应先用小规模数据验证训练流程，再扩展到完整数据集，同时监控 r_fc（函数调用奖励）确保策展操作格式正确，再关注 r_task（任务结果奖励）的提升。
 
 ## 相关实体
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/141-skillos-learning-skill-curation-for-self-evolving-agents.md)
-- [Self-Evolving Agents 系统性综述](ch04/215-self-evolving-agents.md)
-- [Memento-Skills — 技能外部记忆让 Agent 自进化](ch04/379-memento-skills-agent.md)
-- [Hermes Agent 自进化机制源码解析](../ch03/090-hermes-agent.md)
-- [Native Parallel Reasoner: 原生并行推理](../ch01/911-20.md)
-- [self-evolving agents 系统性综述（厦门大学等多机构联合）](ch04/215-self-evolving-agents.md)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/141-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [Self-Evolving Agents 系统性综述](ch04/215-self-evolving-agents.html)
+- [Memento-Skills — 技能外部记忆让 Agent 自进化](ch04/379-memento-skills-agent.html)
+- [Hermes Agent 自进化机制源码解析](../ch03/090-hermes-agent.html)
+- [Native Parallel Reasoner: 原生并行推理](../ch01/911-20.html)
+- [self-evolving agents 系统性综述（厦门大学等多机构联合）](ch04/215-self-evolving-agents.html)
 
 ---
 

@@ -75,10 +75,10 @@ Parsiya 延续 Semgrep 的 Mythos 实验，用 26 种 Claude 4.6/4.7/4.8 和 GPT
 
 ## 相关实体
 
-- [gzip 作为语言模型](ch01/618-gzip.md) — 压缩视角下的推理成本分析
-- [Anthropic LLM ATT&CK 导航](../ch04/164-anthropic-llm.md) — LLM 在安全领域的另一应用
-- [LLM RL 算法综述](ch01/586-llm.md) — 推理努力与 RL 训练的关系
-- [腾讯 Token 经济学](../ch12/003-token.md) — Token 成本优化的另一视角
+- [gzip 作为语言模型](ch01/618-gzip.html) — 压缩视角下的推理成本分析
+- [Anthropic LLM ATT&CK 导航](../ch04/164-anthropic-llm.html) — LLM 在安全领域的另一应用
+- [LLM RL 算法综述](ch01/586-llm.html) — 推理努力与 RL 训练的关系
+- [腾讯 Token 经济学](../ch12/003-token.html) — Token 成本优化的另一视角
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-thonking-reasoning-effort-security-triage.md)
 

@@ -13,11 +13,11 @@
 - **Flex SSD：PB 规模低成本方案**：Redis Flex（SSD 版本）支撑 Iris，成本比 RAM 低一个数量级，实现 PetaByte 规模、<5ms 延迟、99.9999% 可用性的组合
 - **百万 Agent 规模预言**：Trollope 预测企业 AI 将达"每千名员工百万 Agent"密度，电子表格每个单元格都可能是一个 Agent，传统数据平台（Oracle、Snowflake）无法支撑此规模
 ## 相关实体
-- [Aws Sagemaker Capacity Aware Inference Fallback](ch01/392-aws-sagemaker-capacity-aware-inference-fallback.md)
-- [Amazon Bedrock Model Inference Serverless Architecture Case Study](../ch11/152-amazon-bedrock.md)
-- [Nvidia Agentic Systems Extreme Co Design](../ch03/045-agent.md)
+- [Aws Sagemaker Capacity Aware Inference Fallback](ch01/392-aws-sagemaker-capacity-aware-inference-fallback.html)
+- [Amazon Bedrock Model Inference Serverless Architecture Case Study](../ch11/152-amazon-bedrock.html)
+- [Nvidia Agentic Systems Extreme Co Design](../ch03/045-agent.html)
 - [Sensnova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/1048-deepseek-v4.md)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/1048-deepseek-v4.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.blocksandfiles.com-5241795.md)
 

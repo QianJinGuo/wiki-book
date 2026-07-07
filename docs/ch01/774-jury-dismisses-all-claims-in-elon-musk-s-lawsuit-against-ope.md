@@ -11,11 +11,11 @@
 - 潜在风险：若败诉，OpenAI 和 Microsoft 可能被迫"disgorge"高达 $1500 亿
 - Musk 已表示将上诉
 ## 相关实体
-- [奥特曼最险一战 前女Cto当庭翻脸 Openai权斗彻底打到台前 6Bf26E92E29B](ch01/438-openai.md)
-- [Thehackernews Fake Openai Privacy Filter](ch01/438-openai.md)
-- [Openai Buys Ai Consultancy Enterprises](ch01/438-openai.md)
-- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](ch01/846-anthropic.md)
-- [Ai Native Undergrads Graduation 2026](../ch05/018-ai-native.md)
+- [奥特曼最险一战 前女Cto当庭翻脸 Openai权斗彻底打到台前 6Bf26E92E29B](ch01/438-openai.html)
+- [Thehackernews Fake Openai Privacy Filter](ch01/438-openai.html)
+- [Openai Buys Ai Consultancy Enterprises](ch01/438-openai.html)
+- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](ch01/846-anthropic.html)
+- [Ai Native Undergrads Graduation 2026](../ch05/018-ai-native.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md)
 

@@ -72,9 +72,9 @@ CrewAI 处理 20 亿次工作流的数据量足以过滤掉小样本偏差。三
 
 ## 相关实体
 
-- [A Missing Layer In Agentic Systems](ch04/342-a-missing-layer-in-agentic-systems.md) — HITL 作为 Agentic 系统第三层的论述
-- [Agentcore Harness](ch04/464-amazon-bedrock-agentcore-harness-ga-api-agent.md) — AgentCore 工程化实践
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/152-amazon-bedrock.md) — AgentOps 可观测性实践
+- [A Missing Layer In Agentic Systems](ch04/342-a-missing-layer-in-agentic-systems.html) — HITL 作为 Agentic 系统第三层的论述
+- [Agentcore Harness](ch04/464-amazon-bedrock-agentcore-harness-ga-api-agent.html) — AgentCore 工程化实践
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/152-amazon-bedrock.html) — AgentOps 可观测性实践
 - [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) — 生产级 Agent 工程
 - [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
 - [Agent Framework Comparison](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-framework-comparison.md) — Agent 框架对比

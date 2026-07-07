@@ -164,20 +164,20 @@ Claude Code 的 7 层记忆架构本质上是一个**成本递增、能力递增
 3. **状态隔离是安全的基础**：分支代理模式中，克隆 LRU 缓存和 AbortController 是必须的。这提示我们，在构建多 Agent 系统时，必须为每个代理提供独立的执行状态副本，防止状态污染导致的不确定性行为。
 
 ## 相关实体
-- [Claude Code 架构解析](../ch03/075-claude-code.md)
-- [Claude Code 源码核心机制详解](../ch03/075-claude-code.md)
+- [Claude Code 架构解析](../ch03/075-claude-code.html)
+- [Claude Code 源码核心机制详解](../ch03/075-claude-code.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.md)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.html)
 
-- [From Agent Protocol to Harness Skill](../ch04/387-from-agent-protocol-to-harness-skill.md)
-- [Agent Memory 架构解析](../ch04/096-agent-memory.md)
-- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/009-harness.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/213-openclaw.md)
+- [From Agent Protocol to Harness Skill](../ch04/387-from-agent-protocol-to-harness-skill.html)
+- [Agent Memory 架构解析](../ch04/096-agent-memory.html)
+- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/009-harness.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/213-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-7-layer-memory-architecture.md)
 
-- [harness-engineering-systematic-explainer](../ch05/062-harness-engineering.md)
-- [claude code 多智能体协作体系设计：从单agent到多agent工作流](../ch03/075-claude-code.md)
+- [harness-engineering-systematic-explainer](../ch05/062-harness-engineering.html)
+- [claude code 多智能体协作体系设计：从单agent到多agent工作流](../ch03/075-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

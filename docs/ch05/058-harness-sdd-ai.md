@@ -12,11 +12,11 @@
 - 复用率低（没有利用项目已有的公共组件、工具函数、请求封装）
 
 ## 相关实体
-- [告别氛围编程基于 Harness 治理和 Sdd 的团队级 Ai 研发范式演进与实践](ch05/009-harness.md)
-- [Wow Harness V3 Governance Protocol](ch05/009-harness.md)
-- [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/047-openspec.md)
-- [Stepan Gershuni Ai Native Startup Guide](ch05/018-ai-native.md)
-- [Oz Multi Harness Cloud Agent Orchestration](../ch04/466-agent-orchestration.md)
+- [告别氛围编程基于 Harness 治理和 Sdd 的团队级 Ai 研发范式演进与实践](ch05/009-harness.html)
+- [Wow Harness V3 Governance Protocol](ch05/009-harness.html)
+- [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/047-openspec.html)
+- [Stepan Gershuni Ai Native Startup Guide](ch05/018-ai-native.html)
+- [Oz Multi Harness Cloud Agent Orchestration](../ch04/466-agent-orchestration.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-sdd-duiwu-ai-fullstack-dewux.md)
 

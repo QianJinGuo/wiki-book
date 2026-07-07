@@ -78,9 +78,9 @@ Objective → Run → Study → Iterate → Graduate (SKILL.md)
 
 ## 相关概念
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — self-improving 方向相通，但 Autobrowse 通过显式技能文件实现而非隐式记忆
-- [Browser Harness](../ch05/103-browser-use-v0-13-browser-harness.md) — Autobrowse 是 Browser Harness 持久记忆问题的具体答案
-- [Agent Skill 编写指南](../ch04/555-agent-skill.md) — SKILL.md 格式与 Skill 编写规范高度一致，Autobrowse 是这一原则在浏览器场景的工程化实践
-- [Factory Mission](../ch01/1148-factory-mission-multi-agent-architecture.md) — 两者都解决"历史探索知识无法积累"问题，但 Factory 侧重多 Agent 协作，Autobrowse 侧重单 Agent 的跨会话持久化
+- [Browser Harness](../ch05/103-browser-use-v0-13-browser-harness.html) — Autobrowse 是 Browser Harness 持久记忆问题的具体答案
+- [Agent Skill 编写指南](../ch04/555-agent-skill.html) — SKILL.md 格式与 Skill 编写规范高度一致，Autobrowse 是这一原则在浏览器场景的工程化实践
+- [Factory Mission](../ch01/1148-factory-mission-multi-agent-architecture.html) — 两者都解决"历史探索知识无法积累"问题，但 Factory 侧重多 Agent 协作，Autobrowse 侧重单 Agent 的跨会话持久化
 - [Hermes Self-Improving Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md) — 理念高度一致：都通过 markdown 技能文件实现 Agent 持久记忆，强调人类可读性作为可审计性基础，支持版本控制和迭代改进
 
 ## 深度分析

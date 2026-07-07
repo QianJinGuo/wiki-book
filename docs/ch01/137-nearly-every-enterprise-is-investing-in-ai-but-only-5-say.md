@@ -33,11 +33,11 @@
 4. **小步快跑验证数据假设**：在大规模AI投资前，通过PoC验证核心数据的可用性，避免大规模沉没成本
 5. **数据治理成熟度评估**：将数据治理成熟度作为AI项目立项的前置条件
 ## 相关实体
-- [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/1041-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
-- [Shinyhunters Canvas Domain Suspended](../ch04/070-ai.md)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/070-ai.md)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/397-agentrun.md)
+- [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.html)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/1041-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
+- [Shinyhunters Canvas Domain Suspended](../ch04/070-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/070-ai.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/397-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
 

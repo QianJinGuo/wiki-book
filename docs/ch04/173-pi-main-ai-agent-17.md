@@ -148,11 +148,11 @@ pi 的扩展性验证了一个原则：**核心引擎只暴露最小必要接口
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pi-main-agent-engineering-17-dimensions.md)
 
 ## 相关实体
-- [Ai 内容创作开始进入画布 Agent时代](../ch03/045-agent.md)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/505-score-by-collisions-patch-by-panic.md)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/262-skill.md)
-- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](../ch01/846-anthropic.md)
-- [Starfilm Ai Agent Ai Short Film Platform](ch04/147-ai-agent.md)
+- [Ai 内容创作开始进入画布 Agent时代](../ch03/045-agent.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/505-score-by-collisions-patch-by-panic.html)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/262-skill.html)
+- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](../ch01/846-anthropic.html)
+- [Starfilm Ai Agent Ai Short Film Platform](ch04/147-ai-agent.html)
 
 ---
 

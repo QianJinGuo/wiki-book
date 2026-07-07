@@ -55,14 +55,14 @@ LLM 默认不理解"高优先级 Rule Group 截获流量后低优先级不再匹
 AI 生成的文本分析应配合 SVG/HTML 可视化图，并通过邮件/IM 主动推送，而不是让用户登录到某个 dashboard 查看。这种"推"模式比"拉"模式采用率显著更高。设计原则：管理员应该在做出配置变更后 1-2 分钟内就在自己的收件箱里看到"我刚做的事对不对"的反馈，而不是事后去查询。
 
 ## 相关实体
-- [Amazon Bedrock Api Security Guide](../ch12/033-amazon-bedrock-api.md)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/271-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch11/052-prowler-genai.md)
-- [Aws Bedrock Serverless Async Inference Multimodal](ch11/007-aws-bedrock.md)
-- [Aws Bedrock Agentcore Identity Security](ch11/229-aws-bedrock-agentcore.md)
+- [Amazon Bedrock Api Security Guide](../ch12/033-amazon-bedrock-api.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/271-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch11/052-prowler-genai.html)
+- [Aws Bedrock Serverless Async Inference Multimodal](ch11/007-aws-bedrock.html)
+- [Aws Bedrock Agentcore Identity Security](ch11/229-aws-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
-- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch01/1050-spec.md)
+- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch01/1050-spec.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

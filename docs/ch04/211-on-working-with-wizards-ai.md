@@ -71,9 +71,9 @@ Mollick 提出了三个应对策略。首先，发展新的 literacy：学习何
 - **失去 expertise 的风险**：每次把工作交给 wizard，就失去了发展自己判断力和专业知识的机会——这对教育影响深远
 
 ## 相关实体
-- [Oneusefulthing Claude Code What Comes Next](../ch03/075-claude-code.md)
-- [Openai Gdpval Real Ai Agents Threshold](ch04/147-ai-agent.md)
-- [Mass Intelligence](../ch01/524-mass-intelligence-ai.md)
+- [Oneusefulthing Claude Code What Comes Next](../ch03/075-claude-code.html)
+- [Openai Gdpval Real Ai Agents Threshold](ch04/147-ai-agent.html)
+- [Mass Intelligence](../ch01/524-mass-intelligence-ai.html)
 - [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
 

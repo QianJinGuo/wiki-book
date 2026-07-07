@@ -58,11 +58,11 @@ GP at Theory Ventures. Former Google PM. Sharing data-driven insights on AI, web
 [Bloomberg](https://www.bloomberg.com/news/articles/2025-04-30/google-places-ads-inside-chatbot-conversations-with-ai-startups "Quoted on AI monetization strategies") • [WSJ](https://www.wsj.com/tech/tech-media-telecom-roundup-market-talk-f8f0355a "Featured in tech market analysis") • [Economist](https://www.economist.com/business/2023/07/25/next-generation-googles-run-a-tighter-ship "Quoted on next-generation tech leadership")
 
 ## 相关实体
-- [Novee Security How To Get A 100 Conference Acceptance Rate The No](ch01/205-0.md)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch04/070-ai.md)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/152-amazon-bedrock.md)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/202-amazon-quick.md)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/501-amazon-bedrock-agentcore.md)
+- [Novee Security How To Get A 100 Conference Acceptance Rate The No](ch01/205-0.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch04/070-ai.html)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/152-amazon-bedrock.html)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/202-amazon-quick.html)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/501-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tomtunguz-com-software-after-ai.md)
 

@@ -79,7 +79,7 @@ GSD          → 防注意力本身被噪声稀释（最内层）
 ## 与现有 wiki 实体关系
 
 - 补充 [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)：该实体聚焦 GSD 实用操作（如何用 GSD 管理项目），本文聚焦三框架对比和各自 context rot 防御机制。
-- 涉及 [Openspec Spec Driven Development Trae Solo](ch05/047-openspec.md) 和 [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](ch05/082-ai-coding.md)：从源码角度分析了 OpenSpec 和 Superpowers 的机制差异。
+- 涉及 [Openspec Spec Driven Development Trae Solo](ch05/047-openspec.html) 和 [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](ch05/082-ai-coding.html)：从源码角度分析了 OpenSpec 和 Superpowers 的机制差异。
 
 ---
 

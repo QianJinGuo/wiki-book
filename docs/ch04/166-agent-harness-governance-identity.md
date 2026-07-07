@@ -111,8 +111,8 @@
 | **互补关系** | 任何 secure agent 前必读 | 本实体执行后的技术参考 |
 
 **关键互补点**：
-- `[Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/296-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.md)` — MCP supply chain 攻击模型（**怎么攻击**）
-- `[Secure Ai Agents Policy Lambda Interceptors Aws](ch04/147-ai-agent.md)` — Policy + Lambda 实现 runtime interception（**怎么防御**）
+- `[Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/296-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)` — MCP supply chain 攻击模型（**怎么攻击**）
+- `[Secure Ai Agents Policy Lambda Interceptors Aws](ch04/147-ai-agent.html)` — Policy + Lambda 实现 runtime interception（**怎么防御**）
 - 本实体（**什么时候**做）— security 落地的**序列决策**问题
 
 ## 实践启示（5 条可执行项）
@@ -125,9 +125,9 @@
 
 ## 与相关 entity 的关系
 
-- `[Agent Development Crawl Walk Run Crewai Iterative](../ch03/045-agent.md)` — 同作者上一篇（CrewAI 迭代方法论）：先做一件事、上生产、积累数据
-- `[Agent Harness Engineering Survey 2026](../ch05/062-harness-engineering.md)` — Harness Engineering 综述：harness 是什么、为什么重要
-- `[Ai Agents Security Survey Attack Defense](ch04/147-ai-agent.md)` — Agent 安全 attack/defense survey（不同问题域）
+- `[Agent Development Crawl Walk Run Crewai Iterative](../ch03/045-agent.html)` — 同作者上一篇（CrewAI 迭代方法论）：先做一件事、上生产、积累数据
+- `[Agent Harness Engineering Survey 2026](../ch05/062-harness-engineering.html)` — Harness Engineering 综述：harness 是什么、为什么重要
+- `[Ai Agents Security Survey Attack Defense](ch04/147-ai-agent.html)` — Agent 安全 attack/defense survey（不同问题域）
 
 ## 深度分析
 

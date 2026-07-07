@@ -9,11 +9,11 @@
 - LLM Evaluation: A Funnel Not a Fork
 
 ## 相关实体
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/615-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
-- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/045-agent.md)
-- [Multimodal Evaluators Mllm As Judge Image To Text](ch01/362-mllm-as-judge.md)
-- [Ai Skill Metrics System](ch01/477-ai-skill.md)
-- [Harness Engineering Systematic Explainer](../ch05/062-harness-engineering.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/615-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/045-agent.html)
+- [Multimodal Evaluators Mllm As Judge Image To Text](ch01/362-mllm-as-judge.html)
+- [Ai Skill Metrics System](ch01/477-ai-skill.html)
+- [Harness Engineering Systematic Explainer](../ch05/062-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spotify-llm-evals-funnel-not-fork.md)
 

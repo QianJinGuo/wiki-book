@@ -36,10 +36,10 @@ flowchart LR
 
 ## 与现有知识库的关联
 
-- [Skill 设计模式](ch04/262-skill.md) — **互补**：设计模式讲 Skill 内部结构组织（线性/Tool Wrapper/Generator 等），本文讲 Skill 的工程过程（创建/验证/门控/适配）
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/098-anthropic-agent.md) — **互补**：Anthropic 14 模式讲 Skill 怎么写（渐进披露/上下文预算/排除条款等），本文补充了前向测试/门控/自由度分级等工程保障
-- [Anthropic Claude Skill 9 类任务分类法](../ch07/056-anthropic-claude-skill-9.md) — **互补**：9 类分类告诉你做什么类型的 Skill，本文告诉你怎么做和怎么验证
-- [Perplexity 内部 Skill 设计指南](ch04/262-skill.md) — Perplexity 的四维评价体系与本文的验证方法论可对照
+- [Skill 设计模式](ch04/262-skill.html) — **互补**：设计模式讲 Skill 内部结构组织（线性/Tool Wrapper/Generator 等），本文讲 Skill 的工程过程（创建/验证/门控/适配）
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/098-anthropic-agent.html) — **互补**：Anthropic 14 模式讲 Skill 怎么写（渐进披露/上下文预算/排除条款等），本文补充了前向测试/门控/自由度分级等工程保障
+- [Anthropic Claude Skill 9 类任务分类法](../ch07/056-anthropic-claude-skill-9.html) — **互补**：9 类分类告诉你做什么类型的 Skill，本文告诉你怎么做和怎么验证
+- [Perplexity 内部 Skill 设计指南](ch04/262-skill.html) — Perplexity 的四维评价体系与本文的验证方法论可对照
 
 ## 深度分析
 

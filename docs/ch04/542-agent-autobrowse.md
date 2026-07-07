@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [浏览器 agent 的失忆问题：autobrowse 如何让每次探索变成永久技能](../ch07/037-autobrowse-browserbase-persistent-skill.md)
+- [浏览器 agent 的失忆问题：autobrowse 如何让每次探索变成永久技能](../ch07/037-autobrowse-browserbase-persistent-skill.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/autobrowse-browser-agent-persistent-skills-sense-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
@@ -45,12 +45,12 @@ Browserbase 的 Kyle Jeong 提出的概念。
 - **data趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/213-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/213-openclaw.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/213-openclaw.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/045-agent.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/213-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/213-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/213-openclaw.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/045-agent.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

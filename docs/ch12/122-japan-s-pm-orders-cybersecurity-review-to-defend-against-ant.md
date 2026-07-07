@@ -29,13 +29,13 @@
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/japan-pm-cybersecurity-review-anthropic-mythos.md)
 
 ## 相关实体
-- [Anthropic PM 的 Agentic 工作流](../ch04/430-anthropic-pm-agentic.md)
-- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](ch12/105-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.md)
+- [Anthropic PM 的 Agentic 工作流](../ch04/430-anthropic-pm-agentic.html)
+- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](ch12/105-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 
-- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](../ch01/846-anthropic.md)
-- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](../ch01/846-anthropic.md)
-- [dario amodei 2026 policy on the ai exponential](../ch04/070-ai.md)
+- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](../ch01/846-anthropic.html)
+- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](../ch01/846-anthropic.html)
+- [dario amodei 2026 policy on the ai exponential](../ch04/070-ai.html)
 
 ---

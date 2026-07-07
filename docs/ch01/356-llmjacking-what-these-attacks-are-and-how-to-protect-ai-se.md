@@ -38,11 +38,11 @@ Key defensive measures for private AI infrastructure
 - Maintain detailed logs of LLM responses and requests made to the model and its supporting tools. Integrate these data sources with [your SIEM](https://www.kaspersky.com/enterprise-security/unified-monitoring-and-analysis-platform?icid=gl_kdailyplacehold_acq_ona_smm__onl_b2b_kasperskydaily_wpplaceholder____). Ensure logs are resilient against tampering or deletion.
 
 ## 相关实体
-- [Ai Agents Inside Perimeter Hackernews](../ch04/147-ai-agent.md)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/147-ai-agent.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Llm Raiders How To Repel](ch01/586-llm.md)
-- [我用 Skillmd 做了一个简历生成器](../ch04/262-skill.md)
-- [Skill Engineering Ai As Algorithm](../ch04/262-skill.md)
+- [Llm Raiders How To Repel](ch01/586-llm.html)
+- [我用 Skillmd 做了一个简历生成器](../ch04/262-skill.html)
+- [Skill Engineering Ai As Algorithm](../ch04/262-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-raiders-private-ai-server.md)
 

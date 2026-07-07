@@ -70,12 +70,12 @@ Slack 从 SageMaker 到 Bedrock 的迁移实现了零客户事故，其方法论
 
 ## 相关实体
 
-- [Token 成本控制](../ch09/047-coding-agent.md)
-- [Amazon Bedrock AgentCore](../ch04/464-amazon-bedrock-agentcore-harness-ga-api-agent.md)
-- [Bedrock Prompt Cache](../ch11/057-amazon-bedrock-claude-prompt-cache.md)
-- [Bedrock 跨区域推理](../ch11/152-amazon-bedrock.md)
-- [GPU 推理调度](../ch03/045-agent.md)
-- [AI-Friendly 后端标准](../ch05/022-ai-friendly.md)
+- [Token 成本控制](../ch09/047-coding-agent.html)
+- [Amazon Bedrock AgentCore](../ch04/464-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [Bedrock Prompt Cache](../ch11/057-amazon-bedrock-claude-prompt-cache.html)
+- [Bedrock 跨区域推理](../ch11/152-amazon-bedrock.html)
+- [GPU 推理调度](../ch03/045-agent.html)
+- [AI-Friendly 后端标准](../ch05/022-ai-friendly.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/slack-ai-path-to-multi-cloud.md)
 

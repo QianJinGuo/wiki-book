@@ -32,7 +32,7 @@ AutoCLI 是一个用 Rust 实现的高速、内存安全的命令行网页信息
 - **云端增强**：AutoCLI.ai 加持
 
 ## autocli-skill
-专为 ClaudeCode / [OpenCLI](ch03/084-opencli.md) / [Hermes-Agent](ch03/090-hermes-agent.md) 设计的 Skill，让 AI Agent 能够获取整个互联网的信息、抓取任意网页内容。
+专为 ClaudeCode / [OpenCLI](ch03/084-opencli.html) / [Hermes-Agent](ch03/090-hermes-agent.html) 设计的 Skill，让 AI Agent 能够获取整个互联网的信息、抓取任意网页内容。
 
 ## 深度分析
 ### 定位与优势
@@ -52,12 +52,12 @@ autocli-skill（591 stars）作为 AutoCLI 的 AI Agent 接口层，其设计目
 4. **垂直场景也能做出影响力**：AutoCLI 聚焦网页抓取，而非追求功能大而全。对于工具类项目，在细分场景做到极致（如 55+ 平台覆盖）本身就是竞争力。
 
 ## Related
-- [CLI-Anything](ch03/094-cli-anything.md) — 让所有软件 Agent 原生化
-- [AgentBrowser](../ch09/150-agent-browser-claude-code-qoderwork.md) — AI 专用浏览器
+- [CLI-Anything](ch03/094-cli-anything.html) — 让所有软件 Agent 原生化
+- [AgentBrowser](../ch09/150-agent-browser-claude-code-qoderwork.html) — AI 专用浏览器
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md) — OpenCLI / CLI-Anything / AutoCLI / AgentBrowser 四项目对比
 
 ## 相关实体
-- [GBrain](../ch01/311-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.md)
+- [GBrain](../ch01/311-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

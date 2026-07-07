@@ -163,20 +163,20 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 ## 相关
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-design-long-running-apps.md)
 -  — 七环节控制回路 + Generator/Evaluator 框架
-- [Agent Harness 上下文管理：工作集视角](ch05/038-agent-harness.md) — compaction 光谱 + session/harness/sandbox 解耦
-- [LangChain Anatomy of Agent Harness](ch05/038-agent-harness.md) — Ralph 循环 + 规划/自我验证双闭环
+- [Agent Harness 上下文管理：工作集视角](ch05/038-agent-harness.html) — compaction 光谱 + session/harness/sandbox 解耦
+- [LangChain Anatomy of Agent Harness](ch05/038-agent-harness.html) — Ralph 循环 + 规划/自我验证双闭环
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/609-claude-managed-agents.md)
-- [Ai Agent Harness Construction Akshay Baoyu](../ch01/1020-ai-agent-harness.md)
-- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.md)
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/612-agent-harnesses-are-dead-long-live-agent-harnesses.md)
-- [Harness 之后 状态边界与失败闭环 若飞](ch05/009-harness.md)
-- [Agentscope Java 2.0 Enterprise Distributed Harness](ch05/009-harness.md)
-- [Gaode Uplift Model Iteration Agent Long Running Harness](ch05/009-harness.md)
-- [Long Running Agent Ralph Loop Harness Takeover](ch05/012-agent-ralph-loop-harness.md)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01/846-anthropic.md)
-- [Langgraph A2A Adversarial Agent Team](../ch04/195-langgraph.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/609-claude-managed-agents.html)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch01/1020-ai-agent-harness.html)
+- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/612-agent-harnesses-are-dead-long-live-agent-harnesses.html)
+- [Harness 之后 状态边界与失败闭环 若飞](ch05/009-harness.html)
+- [Agentscope Java 2.0 Enterprise Distributed Harness](ch05/009-harness.html)
+- [Gaode Uplift Model Iteration Agent Long Running Harness](ch05/009-harness.html)
+- [Long Running Agent Ralph Loop Harness Takeover](ch05/012-agent-ralph-loop-harness.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01/846-anthropic.html)
+- [Langgraph A2A Adversarial Agent Team](../ch04/195-langgraph.html)
 
 ---
 

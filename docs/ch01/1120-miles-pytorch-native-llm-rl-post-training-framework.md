@@ -22,12 +22,12 @@ Miles 的核心设计是将 RL 训练分解为四个可组合层：Ray 负责分
 
 ## 相关实体
 
-- [SGLang](../ch04/544-agent-assisted-sglang-ai-llm.md) — Miles 使用 SGLang 作为 rollout 引擎
-- [LLM RL 算法概览](ch01/586-llm.md)
-- [DeepSeek V4 训练方法论](ch01/1048-deepseek-v4.md)
-- [前沿后训练配方回顾](../ch04/070-ai.md)
-- [百度文心后训练演进](../ch04/070-ai.md)
-- [PyTorch 训练循环实践](../ch04/070-ai.md)
+- [SGLang](../ch04/544-agent-assisted-sglang-ai-llm.html) — Miles 使用 SGLang 作为 rollout 引擎
+- [LLM RL 算法概览](ch01/586-llm.html)
+- [DeepSeek V4 训练方法论](ch01/1048-deepseek-v4.html)
+- [前沿后训练配方回顾](../ch04/070-ai.html)
+- [百度文心后训练演进](../ch04/070-ai.html)
+- [PyTorch 训练循环实践](../ch04/070-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pytorch-miles-llm-rl-post-training-2026.md)
 

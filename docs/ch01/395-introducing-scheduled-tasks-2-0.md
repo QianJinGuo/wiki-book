@@ -118,7 +118,7 @@ Scheduled Tasks 2.0 添加了更清晰的方式来审查日程、即将到来的
 | 执行环境 | 支持选择 agent 类型、云端计算资源 |
 | 连接集成 | 通过 connectors 接入外部数据源作为调度任务输入 |
 
-> [!contradiction] 另见：[Karpathy: Vibe Coding](../ch04/123-karpathy-vibe-coding-agentic-engineering.md) — 对于 AI 辅助编程中的"上下文保留"问题持不同视角，认为过度依赖上下文累积可能导致"锁定效应"
+> [!contradiction] 另见：[Karpathy: Vibe Coding](../ch04/123-karpathy-vibe-coding-agentic-engineering.html) — 对于 AI 辅助编程中的"上下文保留"问题持不同视角，认为过度依赖上下文累积可能导致"锁定效应"
 
 ---
 

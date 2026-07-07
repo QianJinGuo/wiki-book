@@ -116,14 +116,14 @@ LLMReaper 演示的技术完整对应到 MITRE ATT&CK：
 
 ## 相关实体
 
-- [Harness Engineering 概念](../ch05/062-harness-engineering.md) — AI 工程实践
-- [Agent 记忆系统](../ch03/045-agent.md) — Agent 系统的工程实践
-- [Claude Code 源码机制](../ch03/075-claude-code.md) — AI 工具架构
-- [Karpathy Vibe Coding 访谈](../ch03/045-agent.md) — Agentic Engineering 范式
-- [OpenClaw 完整指南](../ch11/213-openclaw.md) — AI 工具教程
-- [天猫 AI 编码实战](../ch04/070-ai.md) — 企业 AI 编码案例
-- [What My Privacy and Security Stack Actually Looks Like](../ch12/021-what-my-privacy-and-security-stack-actually-looks-like.md) — 个人安全栈案例
-- [Canvas Hackers ShinyHunters Domain Suspended](../ch12/036-canvas-hackers-shinyhunters-say-their-official-domain-was-su.md) — 攻击者基础设施案例
+- [Harness Engineering 概念](../ch05/062-harness-engineering.html) — AI 工程实践
+- [Agent 记忆系统](../ch03/045-agent.html) — Agent 系统的工程实践
+- [Claude Code 源码机制](../ch03/075-claude-code.html) — AI 工具架构
+- [Karpathy Vibe Coding 访谈](../ch03/045-agent.html) — Agentic Engineering 范式
+- [OpenClaw 完整指南](../ch11/213-openclaw.html) — AI 工具教程
+- [天猫 AI 编码实战](../ch04/070-ai.html) — 企业 AI 编码案例
+- [What My Privacy and Security Stack Actually Looks Like](../ch12/021-what-my-privacy-and-security-stack-actually-looks-like.html) — 个人安全栈案例
+- [Canvas Hackers ShinyHunters Domain Suspended](../ch12/036-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html) — 攻击者基础设施案例
 
 > [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md)
 

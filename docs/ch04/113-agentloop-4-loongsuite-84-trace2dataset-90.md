@@ -62,7 +62,7 @@
 
 > 一条 23 秒的慢请求，通过 4 层视图交叉定位，可精确到"某一轮 LLM 多步冗余循环调用"。
 
-**与既有 LoongSuite 实体的关系**：[Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/047-coding-agent.md)（401 行深度文档）覆盖 LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力。本 entity 在其基础上扩展到 AgentLoop **整平台**视角，包含后续 3 环。
+**与既有 LoongSuite 实体的关系**：[Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/047-coding-agent.html)（401 行深度文档）覆盖 LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力。本 entity 在其基础上扩展到 AgentLoop **整平台**视角，包含后续 3 环。
 
 ### 第 2 环：Agent Ontology + Pipeline（Trace2Dataset）
 
@@ -147,13 +147,13 @@
 
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
-| [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/047-coding-agent.md) | **第 1 环底层** | LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力（401 行深度文档） |
-| [Loongsuite Genai Semconv Alibaba](ch04/421-loongsuite-genai.md) | **第 1 环语义规范** | OTel GenAI semconv + STEP/MCP span 扩展的统一数据语言 |
-| [Aliyun Cms2 Cli Skill Natural Language Observability](ch04/262-skill.md) | **接入层** | CMS2 Skill 化（CLI 6 步 + K8s 自动注入 + 5 大场景） |
-| [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](../ch05/062-harness-engineering.md) | **同源早期表述** | 2026-04-29 阿里云"一晚上自动评测和优化你的系统"平台（评测→优化三轮 90.7→97.4→99.1），可能是 AgentLoop 早期形态或同系列产品 |
-| [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/045-agent.md) | **理论框架** | 阿里"四阶段六维度"Agent 进化理论框架 |
-| [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/152-amazon-bedrock.md) | **AWS 平行方案** | Amazon Bedrock AgentCore Quality Evaluations |
-| [Better Harness Eval Trace Harness Hill Climbing](../ch05/009-harness.md) | **trace 评估方法** | trace 级 harness 爬坡的工程方法 |
+| [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/047-coding-agent.html) | **第 1 环底层** | LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力（401 行深度文档） |
+| [Loongsuite Genai Semconv Alibaba](ch04/421-loongsuite-genai.html) | **第 1 环语义规范** | OTel GenAI semconv + STEP/MCP span 扩展的统一数据语言 |
+| [Aliyun Cms2 Cli Skill Natural Language Observability](ch04/262-skill.html) | **接入层** | CMS2 Skill 化（CLI 6 步 + K8s 自动注入 + 5 大场景） |
+| [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](../ch05/062-harness-engineering.html) | **同源早期表述** | 2026-04-29 阿里云"一晚上自动评测和优化你的系统"平台（评测→优化三轮 90.7→97.4→99.1），可能是 AgentLoop 早期形态或同系列产品 |
+| [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/045-agent.html) | **理论框架** | 阿里"四阶段六维度"Agent 进化理论框架 |
+| [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/152-amazon-bedrock.html) | **AWS 平行方案** | Amazon Bedrock AgentCore Quality Evaluations |
+| [Better Harness Eval Trace Harness Hill Climbing](../ch05/009-harness.html) | **trace 评估方法** | trace 级 harness 爬坡的工程方法 |
 
 ## 六、关键概念辨析
 

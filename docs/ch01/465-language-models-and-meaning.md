@@ -42,13 +42,13 @@
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stochastic-parrot-language-models-and-meaning.md)
 
 ## 相关实体
-- [Language Models and Meaning](ch01/465-language-models-and-meaning.md)
-- [Reinforcing Recursive Language Models | alphaXiv](ch01/792-reinforcing-recursive-language-models-alphaxiv.md)
-- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](../ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
-- [On the Deep Mystery of Language Models](ch01/710-stochastic-parrot-deep-mystery-llms.md)
-- [A Thought Experiment](ch01/811-stochastic-parrot-thought-experiment.md)
-- [Marcus on AI Productivity](../ch11/068-stochastic-parrot-marcus-ai-productivity.md)
-- [While Breathless In Stodgy Viridian](ch01/537-while-breathless-in-stodgy-viridian.md)
+- [Language Models and Meaning](ch01/465-language-models-and-meaning.html)
+- [Reinforcing Recursive Language Models | alphaXiv](ch01/792-reinforcing-recursive-language-models-alphaxiv.html)
+- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](../ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [On the Deep Mystery of Language Models](ch01/710-stochastic-parrot-deep-mystery-llms.html)
+- [A Thought Experiment](ch01/811-stochastic-parrot-thought-experiment.html)
+- [Marcus on AI Productivity](../ch11/068-stochastic-parrot-marcus-ai-productivity.html)
+- [While Breathless In Stodgy Viridian](ch01/537-while-breathless-in-stodgy-viridian.html)
 
 ---
 

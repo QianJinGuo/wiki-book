@@ -350,42 +350,42 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 3. **迭代式开发**：借助 skill-creator 和 skill-judge 等工具，通过"生成 → 评估 → 修订"的快速循环提升 Skill 质量
 
 ## 相关实体
-- [Qoder Skills 完全指南](../ch07/032-qoder-skills.md)（同主题旧版）
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/555-agent-skill.md)（同主题不同 MP — 实操指引）
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/098-anthropic-agent.md)
-- [Agent Skill 设计模式](ch04/376-agent-skills.md)（Anthropic → Google 演进）
-- [重新定义Skill开发：保姆级教程](ch04/262-skill.md)
-- [你写的 Skill，及格了吗？](ch04/262-skill.md)（skill-judge 对照）
-- [Harness Engineering 90 Percent Pillars](../ch05/062-harness-engineering.md)（与 Skill 同源的工程化思路）
-- [Qoder Skills 完全指南](../ch07/032-qoder-skills.md)
-- [qoder skills](../ch07/032-qoder-skills.md)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/376-agent-skills.md)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/376-agent-skills.md)
-- [让 AI 理解你的组件库：新一代智能 D2C 架构 — 基于 AWS Kiro MCP Skills 的智能转换实践](../ch03/069-skills.md)
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/098-anthropic-agent.md)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/262-skill.md)
-- [Agent Skill 设计模式](ch04/376-agent-skills.md)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/070-ai.md)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/045-agent.md)
-- [十年老技术开发的 AI Agent 探索之路](ch04/147-ai-agent.md)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/555-agent-skill.md)
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/187-anthropic-google-agent-skills.md)
-- [Garry Tan](../ch01/617-garry-tan.md)
-- [Agent Workflows](ch04/335-agent-workflows.md)
-- [Hermes Agent](../ch03/090-hermes-agent.md)
+- [Qoder Skills 完全指南](../ch07/032-qoder-skills.html)（同主题旧版）
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/555-agent-skill.html)（同主题不同 MP — 实操指引）
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/098-anthropic-agent.html)
+- [Agent Skill 设计模式](ch04/376-agent-skills.html)（Anthropic → Google 演进）
+- [重新定义Skill开发：保姆级教程](ch04/262-skill.html)
+- [你写的 Skill，及格了吗？](ch04/262-skill.html)（skill-judge 对照）
+- [Harness Engineering 90 Percent Pillars](../ch05/062-harness-engineering.html)（与 Skill 同源的工程化思路）
+- [Qoder Skills 完全指南](../ch07/032-qoder-skills.html)
+- [qoder skills](../ch07/032-qoder-skills.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/376-agent-skills.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/376-agent-skills.html)
+- [让 AI 理解你的组件库：新一代智能 D2C 架构 — 基于 AWS Kiro MCP Skills 的智能转换实践](../ch03/069-skills.html)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/098-anthropic-agent.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/262-skill.html)
+- [Agent Skill 设计模式](ch04/376-agent-skills.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/070-ai.html)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/045-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/147-ai-agent.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/555-agent-skill.html)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/187-anthropic-google-agent-skills.html)
+- [Garry Tan](../ch01/617-garry-tan.html)
+- [Agent Workflows](ch04/335-agent-workflows.html)
+- [Hermes Agent](../ch03/090-hermes-agent.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
-- [你写的 Skill，及格了吗？](ch04/262-skill.md)
+- [你写的 Skill，及格了吗？](ch04/262-skill.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [AI Agent 工程师能力地图](ch04/147-ai-agent.md)
-- [Skillx Zhejiang University](../ch07/048-skillx.md)
+- [AI Agent 工程师能力地图](ch04/147-ai-agent.html)
+- [Skillx Zhejiang University](../ch07/048-skillx.html)
 - [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
 - [Gemini Deep Guide Prompt](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-deep-guide-prompt.md)
 - [Promptqueue Opengorilla Project Analysis Ljguo](https://github.com/QianJinGuo/wiki/blob/main/entities/promptqueue-opengorilla-project-analysis-ljguo.md)
-- [qoder 团队知识引擎](../ch01/803-qoder.md)
+- [qoder 团队知识引擎](../ch01/803-qoder.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 2nd Source 原文存档

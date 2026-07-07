@@ -30,7 +30,7 @@
 
 Agent 记忆面临三个核心挑战：**上下文窗口有限**（200K tokens ≈ 15 万字也经不起超长交互）、**LLM 调用无状态**（上次对话不会自动带入下次）、**Token 成本随历史线性增长**（50 轮对话 ≈ 10,000 tokens）。传统方案将所有历史原文塞入 Context，既浪费 Token，又因注意力衰减降低推理质量。
 
-OpenViking 的渐进加载机制提供了优雅解决：高分记忆读全文、低分记忆只给 URI（type="link"），LLM 在需要时通过工具调用深读。这与 [Agent 记忆模块化框架](../ch04/096-agent-memory.md) 的理念一致——在有限的 Context 预算下做最优信息分配。
+OpenViking 的渐进加载机制提供了优雅解决：高分记忆读全文、低分记忆只给 URI（type="link"），LLM 在需要时通过工具调用深读。这与 [Agent 记忆模块化框架](../ch04/096-agent-memory.html) 的理念一致——在有限的 Context 预算下做最优信息分配。
 
 ### 2. AgentCore Memory 与 OpenViking 的设计哲学差异
 
@@ -72,11 +72,11 @@ AgentCore 适合快速 PoC 和生产级多租户 SaaS，OpenViking 在 Token 效
 
 ## 相关实体
 
-- [AI Agent 记忆系统](../ch04/096-agent-memory.md)
-- [Hermes Agent 记忆系统](../ch03/090-hermes-agent.md)
-- [Agent 记忆模块化框架](../ch04/096-agent-memory.md)
-- [Agent 记忆架构](../ch04/096-agent-memory.md)
-- [Amazon Bedrock AgentCore MCP 扩展](../ch04/501-amazon-bedrock-agentcore.md)
+- [AI Agent 记忆系统](../ch04/096-agent-memory.html)
+- [Hermes Agent 记忆系统](../ch03/090-hermes-agent.html)
+- [Agent 记忆模块化框架](../ch04/096-agent-memory.html)
+- [Agent 记忆架构](../ch04/096-agent-memory.html)
+- [Amazon Bedrock AgentCore MCP 扩展](../ch04/501-amazon-bedrock-agentcore.html)
 - [Agent 记忆架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md)
 - [AI Agent 记忆类型](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-memory-types.md)
 

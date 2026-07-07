@@ -11,11 +11,11 @@ _ ** AgentRun 平台优势已立，开发者侧补位  ** _
 AgentRun 是以高代码为核心、生态开放、灵活组装的一站式 Agentic AI 基础设施平台，为企业级 Agent 提供开发、调试、部署、运维的全生命周期管理。助力企业和开发者专注于 AI 业务创新，无需自建和管理底层基础设施，让 Agentic AI 真正进入企业生产环境。从定位上来讲，  ** AgentRun 是阿里云提供的 Managed Agents 平台  ** ，  与 CMA 相比具备企业级、无厂商锁定两大差异化优势。
 
 ## 相关实体
-- [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch03/090-hermes-agent.md)
-- [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](ch04/147-ai-agent.md)
-- [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/535-python.md)
-- [Aliyun Agentrun 5Min Quickstart](ch04/397-agentrun.md)
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/069-skills.md)
+- [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch03/090-hermes-agent.html)
+- [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](ch04/147-ai-agent.html)
+- [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/535-python.html)
+- [Aliyun Agentrun 5Min Quickstart](ch04/397-agentrun.html)
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/069-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentrun-cli-v010-正式开源一行命令运行您的托管-agent.md)
 

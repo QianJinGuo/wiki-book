@@ -11,11 +11,11 @@
 阿里 DreamX 团队提出 SkillClaw，一个让多用户 Agent 生态中的技能库持续自动进化的框架——用户正常使用 Agent，系统在后台收集交互轨迹、夜间进化技能、次日同步给所有用户，不需要人工介入。
 
 ## 相关实体
-- [Skillclaw Collective Intelligence](ch04/262-skill.md)
-- [Skillclaw](ch04/427-skillclaw-nacos-agent-skill-registry.md)
-- [Skillclaw Alibaba Paperagent](ch04/262-skill.md)
-- [Wow Harness V3 Governance Protocol](../ch05/009-harness.md)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/351-hermes-agent-goal.md)
+- [Skillclaw Collective Intelligence](ch04/262-skill.html)
+- [Skillclaw](ch04/427-skillclaw-nacos-agent-skill-registry.html)
+- [Skillclaw Alibaba Paperagent](ch04/262-skill.html)
+- [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/351-hermes-agent-goal.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw-hyman-nightly-evolution-alibaba.md)
 

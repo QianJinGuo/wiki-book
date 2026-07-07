@@ -40,10 +40,10 @@ Kyverno 本身运行在 CoCo 信任模型中标记为不可信的 Kubernetes 控
 
 ## 相关实体
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
-- [From Kubernetes Dev Setup To Production What Actually Change](ch11/082-from-kubernetes-dev-setup-to-production-what-actually-chang.md)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
-- [Hiclaw V110 K8S Hermes Worker](../ch01/205-0.md)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch04/147-ai-agent.md)
+- [From Kubernetes Dev Setup To Production What Actually Change](ch11/082-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/205-0.html)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch04/147-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/automating-confidential-containers-coco-infrastructure-with-kyverno.md)（CNCF Blog, 2026-05-19）
 

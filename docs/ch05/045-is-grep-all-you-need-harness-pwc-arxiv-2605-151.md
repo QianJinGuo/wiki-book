@@ -15,11 +15,11 @@
 **论文给出的更扎心结论**：是，但有严格前提。
 
 ## 相关实体
-- [Lucasfcostacom Blog Backpressure Is All You Need](../ch01/006-backpressure-is-all-you-need.md)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/387-google-agentic-rag-sufficient-context-agent-framesqa-90.md)
-- [Ai Native Startup Cyberfund Guide](ch05/018-ai-native.md)
-- [Harness Engineering Comprehensive Guide Conardli](ch05/062-harness-engineering.md)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/147-ai-agent.md)
+- [Lucasfcostacom Blog Backpressure Is All You Need](../ch01/006-backpressure-is-all-you-need.html)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/387-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
+- [Ai Native Startup Cyberfund Guide](ch05/018-ai-native.html)
+- [Harness Engineering Comprehensive Guide Conardli](ch05/062-harness-engineering.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/147-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/is-grep-all-you-need-pwc-retrieval-harness-coupling.md)
 

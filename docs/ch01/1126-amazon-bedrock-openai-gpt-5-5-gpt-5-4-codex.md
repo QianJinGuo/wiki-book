@@ -20,12 +20,12 @@ Amazon Bedrock 正式接入 OpenAI GPT-5.5、GPT-5.4 模型和 Codex，标志跨
 
 ### 关联实体
 
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/670-announcing-openai-compatible-api-support-for-amazon-sagemake.md)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/670-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
-- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](ch01/846-anthropic.md)
-- [Openai Models And Codex On Amazon Bedrock Are Now Generally ](../ch11/240-openai-models-and-codex-on-amazon-bedrock-are-now-generally.md)
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](../ch11/258-amazon-nova.md)
-- [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](../ch11/252-bedrock.md)
+- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](ch01/846-anthropic.html)
+- [Openai Models And Codex On Amazon Bedrock Are Now Generally ](../ch11/240-openai-models-and-codex-on-amazon-bedrock-are-now-generally.html)
+- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](../ch11/258-amazon-nova.html)
+- [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](../ch11/252-bedrock.html)
 
 ## 实践启示
 

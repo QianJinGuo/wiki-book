@@ -8,11 +8,11 @@
 AlphaEvolve: Gemini-powered coding agent scaling impact across fields — Google DeepMind Skip to main content Google DeepMind DeepMind Build with Gemini Try Gemini May 7, 2026 Science AlphaEvolve: How our Gemini-powered coding agent is scaling impact across fields AlphaEvolve team Share Your browser does not support the video tag. A year ago, we introduced AlphaEvolve , a Gemini-powered coding agent for designing advanced algorithms. We showed that AlphaEvolve can help make new discoveries on open problems across mathematics and computer science, and optimize algorithms that have since been deployed across critical parts of Google's infrastructure. Today, because algorithms are part of nearly every aspect of life, the landscape of what AlphaEvolve can achieve is even broader. From helping explain the physics of the natural world to powering electricity grids and computing infrastructure, there are countless ways AlphaEvolve can help accelerate progress for scientists and businesses across a variety of fields. We're excited to share a collection of AlphaEvolve's most significant impact to date. Driving social impact and sustainability AlphaEvolve has helped uncover key connections in health and sustainability research. In genomics, AlphaEvolve was used to improve DeepConsensus —a model developed by Google Research for correcting DNA sequencing errors— achieving a 30% reduction in variant detection errors. These improvements are helping scientists at PacBio analyze genetic data more accurately and at a lower cost. "The solution the Google team discovered using AlphaEvolve unlocks meaningfully higher accuracy rates for our sequencing instruments. For researchers, this higher-quality data might enable the discovery of previously hidden disease causing mutations." — Aaron Wenger, Senior Director at PacBio In grid optimization, AlphaEvolve was applied to the AC Optimal Power Flow problem . It helped increase the ability of our trained Graph Neural Network (GNN) model to fi... [truncated]
 
 ## 相关实体
-- [Alphaevolve Impact](ch04/416-alphaevolve-impact-deepmind.md)
-- [Alphaevolve Deepmind Discovery Agent](../ch03/045-agent.md)
+- [Alphaevolve Impact](ch04/416-alphaevolve-impact-deepmind.html)
+- [Alphaevolve Deepmind Discovery Agent](../ch03/045-agent.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/362-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.md)
-- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/200-tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/362-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/200-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alphaevolve-impact-deepmind.md)
 

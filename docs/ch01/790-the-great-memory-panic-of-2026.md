@@ -27,11 +27,11 @@
 
 ## 相关实体
 
-- [Inngest - AI in Production: The 2026 Benchmark Report](ch01/550-inngest-ai-in-production-the-2026-benchmark-report.md)
-- [How Superset built the IDE for AI agents on Vercel](ch01/067-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
-- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/154-toto-2-context-aware-log-analytics-for-complex-distributed.md)
-- [Personavlm Long Term Personalization](ch01/748-vlm.md)
-- [lightseek token speed inference](../ch12/003-token.md)
+- [Inngest - AI in Production: The 2026 Benchmark Report](ch01/550-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [How Superset built the IDE for AI agents on Vercel](ch01/067-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/154-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [Personavlm Long Term Personalization](ch01/748-vlm.html)
+- [lightseek token speed inference](../ch12/003-token.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 
 ---

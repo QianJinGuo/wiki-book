@@ -14,12 +14,12 @@ Claude Code、Amazon Bedrock、Kiro CLI
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/easy-deployment-of-claude-agent-sdk-in-production/)
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/609-claude-managed-agents.md)
-- [Claude Code Agent 工程设计](../ch03/067-claude-code-agent.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.md)
-- [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch03/075-claude-code.md)
-- [Claude Code Agent View](../ch09/001-claude-code-agent-view.md)
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/252-bedrock.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/609-claude-managed-agents.html)
+- [Claude Code Agent 工程设计](../ch03/067-claude-code-agent.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.html)
+- [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch03/075-claude-code.html)
+- [Claude Code Agent View](../ch09/001-claude-code-agent-view.html)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/252-bedrock.html)
 
 ## 深度分析
 ### 1. AgentCore Runtime 的 microVM 隔离架构与 8 小时执行窗口

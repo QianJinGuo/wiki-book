@@ -18,11 +18,11 @@
 - **最后产出一份能继续编辑的文件**
 
 ## 相关实体
-- [Cat Wu Claude Code Pm](../ch03/075-claude-code.md)
-- [Anthropic Founders Playbook Huashu 2026](ch01/846-anthropic.md)
-- [Cat Wu Anthropic Pm Interview](ch01/846-anthropic.md)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/846-anthropic.md)
-- [Anthropic Claude Managed Agents Platform Launch](ch01/272-anthropic-claude-managed-agents.md)
+- [Cat Wu Claude Code Pm](../ch03/075-claude-code.html)
+- [Anthropic Founders Playbook Huashu 2026](ch01/846-anthropic.html)
+- [Cat Wu Anthropic Pm Interview](ch01/846-anthropic.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/846-anthropic.html)
+- [Anthropic Claude Managed Agents Platform Launch](ch01/272-anthropic-claude-managed-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-claude-cowork-task-boundary-5-signals-6-stages.md)
 

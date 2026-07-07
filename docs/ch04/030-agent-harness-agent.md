@@ -607,19 +607,19 @@ class RecoveryManager:
 → [C4 架构图](assets/c4/agent-harness-architecture-design-production-guide-c4.html)
 
 ## 相关实体
-- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.md)
-- [Agent Harness Architecture](../ch05/038-agent-harness.md)
-- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.md)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/072-harness-skill.md)
-- [Harness Production Agent Engineering Deficit](../ch05/009-harness.md)
+- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
+- [Agent Harness Architecture](../ch05/038-agent-harness.html)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/072-harness-skill.html)
+- [Harness Production Agent Engineering Deficit](../ch05/009-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-harness-architecture-design-production-guide.md)（主源）
 → [Harness Engineering 综合性指南](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-comprehensive-guide-conardli.md)
 → [Claude Code 12 个设计模式](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-agentic-harness-design-patterns.md)
 → [ETCLOVG Survey (CMU 2026)](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-harness-engineering-survey-2026.md)
 
-- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](ch04/536-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.md)
-- [k-dense — the model is no longer the bottleneck](ch04/163-k-dense-the-model-is-no-longer-the-bottleneck.md)
+- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](ch04/536-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
+- [k-dense — the model is no longer the bottleneck](ch04/163-k-dense-the-model-is-no-longer-the-bottleneck.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

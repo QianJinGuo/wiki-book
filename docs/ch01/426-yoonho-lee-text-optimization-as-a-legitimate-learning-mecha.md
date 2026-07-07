@@ -101,7 +101,7 @@ Yoonho Lee (BAIR) 在 2026-06-08 发表立场论文，把 text optimization（pr
 
 Text layer 作为"staging ground"：先用它测试和提炼行为假设，再决定是否蒸馏到 weights。Anthropic Constitution、OpenAI Deliberative Alignment、Cursor、Hippoocratic AI 等案例表明这是当前 SOTA 的主流做法。这本质上是 dual-process 理论在系统层面的实现：fast text-layer adaptation + slow weight consolidation。
 
-## 与现有 [Hermes Agent Skill Crossover Optimization](ch01/389-hermes-agent-skill.md) 的关系
+## 与现有 [Hermes Agent Skill Crossover Optimization](ch01/389-hermes-agent-skill.html) 的关系
 
 - hermes-agent-skill-crossover-optimization = 工程实践（Hermes agent 中 skill 进化）
 - yoonho text-optimization = 理论立场（text 作为合法学习目标）

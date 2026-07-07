@@ -7,15 +7,15 @@
 ## 核心要点
 - Published Time: Wed, 13 May 2026 16:58:06 GMT AI coding apps, such as Claude Code, codex, etc. are [becoming increasingly popular](https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents](ch01/771-skill-issues-compromising-claude-code-with-malicious-skills.md)
-- [Skill System Design Three Way Comparison](../ch04/262-skill.md)
-- [Claude Code Skills Mcp Rules Source Analysis](../ch07/006-claude-code-skills-mcp-rules.md)
-- [Claude Code Skill Writing Guide](../ch03/075-claude-code.md)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/075-claude-code.md)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents](ch01/771-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Skill System Design Three Way Comparison](../ch04/262-skill.html)
+- [Claude Code Skills Mcp Rules Source Analysis](../ch07/006-claude-code-skills-mcp-rules.html)
+- [Claude Code Skill Writing Guide](../ch03/075-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/075-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
 
-- [qwen code skill testing framework: recording, playback, and](../ch04/262-skill.md)
+- [qwen code skill testing framework: recording, playback, and](../ch04/262-skill.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析

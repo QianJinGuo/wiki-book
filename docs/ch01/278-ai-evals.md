@@ -84,7 +84,7 @@ Evals 不是孤立的测试环节，而是嵌入在完整的 AI Engineering Loop
 - **多轮交互**：评估 Agent 在多轮对话中的连贯性和状态管理
 
 ## 相关链接
-- [Ai Evals Methodology](ch01/278-ai-evals.md)
+- [Ai Evals Methodology](ch01/278-ai-evals.html)
 
 ## 实践启示
 ### 1. 永远从人工审阅开始
@@ -149,11 +149,11 @@ Agent 评估需要额外的维度： ^["Evals到底在评什么？一文拆解AI
 - **模型变更后**：比较新旧模型在评估集上的表现
 - **定期生产监控**：确保生产质量没有漂移
 ## 相关实体
-- [Better Harness Eval Trace Methodology](../ch05/009-harness.md)
-- [Anthropic Claude Next Gen Alex Infoq](ch01/1218-anthropic-claude.md)
-- [Agent Skill Writing](../ch04/555-agent-skill.md)
-- [Programbench Agent Benchmark](../ch04/161-programbench-agent-benchmark.md)
-- [Llm As A Verifier Framework](ch01/586-llm.md)
+- [Better Harness Eval Trace Methodology](../ch05/009-harness.html)
+- [Anthropic Claude Next Gen Alex Infoq](ch01/1218-anthropic-claude.html)
+- [Agent Skill Writing](../ch04/555-agent-skill.html)
+- [Programbench Agent Benchmark](../ch04/161-programbench-agent-benchmark.html)
+- [Llm As A Verifier Framework](ch01/586-llm.html)
 
 ---
 

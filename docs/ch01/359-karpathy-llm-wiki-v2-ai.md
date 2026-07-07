@@ -45,11 +45,11 @@ LLM Wiki 发布不到一个月，已经有不少值得一试的实现方案：
 Karpathy 在原文里还提到了一个细节：1945 年万尼瓦尔·布什的一篇论文，构想了 Memex，一个能自动关联所有知识条目的私人知识机器。布什想了这个东西 80 年，一直没实现。不是技术做不到，而是没人愿意当那个"维护员"。现在 AI 愿意了。它不会烦，不会忘，不会因为维护了 200 个页面的交叉引用就辞职。
 
 ## 相关实体
-- [Llm Wiki Architecture Karpathy Markdown Knowledge Base](ch01/735-markdown.md)
-- [Rag技术框架的演进方向](ch01/1033-rag.md)
-- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](ch01/620-llm-wiki-obsidian-wiki-gbrain.md)
-- [Llm Wiki Architecture](ch01/586-llm.md)
-- [Rag Vs Llm Wiki Enterprise Knowledge Base](ch01/038-rag-vs-llm-wiki.md)
+- [Llm Wiki Architecture Karpathy Markdown Knowledge Base](ch01/735-markdown.html)
+- [Rag技术框架的演进方向](ch01/1033-rag.html)
+- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](ch01/620-llm-wiki-obsidian-wiki-gbrain.html)
+- [Llm Wiki Architecture](ch01/586-llm.html)
+- [Rag Vs Llm Wiki Enterprise Knowledge Base](ch01/038-rag-vs-llm-wiki.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-llm-wiki-v2-2026.md)
 

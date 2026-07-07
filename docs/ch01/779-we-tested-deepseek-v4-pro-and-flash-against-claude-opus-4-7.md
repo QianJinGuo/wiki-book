@@ -13,11 +13,11 @@
 
 ## 相关实体
 - We Tested DeepSeek V4 Pro and Flash Against Claude
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1146-deepseek.md)
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/1048-deepseek-v4.md)
-- [ds4c deepseek v4 antirez](ch01/519-ds4c-deepseek-v4-antirez.md)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1146-deepseek.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/1048-deepseek-v4.html)
+- [ds4c deepseek v4 antirez](ch01/519-ds4c-deepseek-v4-antirez.html)
 
-- [deepseek-v4深度拆解一篇论文同时做了五件大事](ch01/1048-deepseek-v4.md)
+- [deepseek-v4深度拆解一篇论文同时做了五件大事](ch01/1048-deepseek-v4.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 ## 深度分析

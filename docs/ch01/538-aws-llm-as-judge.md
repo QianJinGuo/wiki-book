@@ -12,15 +12,15 @@ At the heart of modern RFT is reward functions. They're built for each domain th
 Reinforcement Fine-Tuning can use any reward signal, straightforward hand‑crafted rules (RLVR), or an LLM that evaluates model outputs (LLM-as-a-judge or RLAIF). RLAIF makes alignment far more flexible and powerful, especially when reward signals are vague and hard to craft manually. Unlike generic RFT rewards that rely on blunt numeric scoring like substring matching, an LLM judge reasons across multiple dimensions—correctness, tone, safety, relevance—providing context-aware feedback that captures subtleties and domain-specific nuances without task-specific retraining. Additionally, LLM judges offer built-in explainability through rationales (for example, "Response A cites peer-reviewed studies"), providing diagnostics that accelerate iteration, pinpoint failure modes directly, and reduce hidden misalignments, something static reward functions can't do.
 
 ## 相关实体
-- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](ch01/421-navigating-eu-ai-act-requirements-for-llm-fine-tuning.md)
-- [Llm Finetuning Cost Breakdown](ch01/586-llm.md)
-- [Harness Engineering 第三代工程范式](../ch05/062-harness-engineering.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/381-aws-sagemaker-ai-agent.md)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/615-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.md)
+- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](ch01/421-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
+- [Llm Finetuning Cost Breakdown](ch01/586-llm.html)
+- [Harness Engineering 第三代工程范式](../ch05/062-harness-engineering.html)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/381-aws-sagemaker-ai-agent.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/615-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-reinforcement-fine-tuning-llm-as-judge.md)
 
-- [stop hand-tuning kernels: how neuron agentic development acc](../ch04/315-stop-hand-tuning-kernels-how-neuron-agentic-development-acc.md)
+- [stop hand-tuning kernels: how neuron agentic development acc](../ch04/315-stop-hand-tuning-kernels-how-neuron-agentic-development-acc.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)

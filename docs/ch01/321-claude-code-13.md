@@ -34,11 +34,11 @@
 5. **两阶段 AI 分类器** — 先 64t 快速判断放行，再 4096t 链式推理降低误报，都利用 prompt cache 复用
 
 ## 与现有知识关联
-- [Claude Code 架构解析](../ch03/075-claude-code.md) — 互补页面，本文更深更全面
-- [Claude Code Prompt/Context/Harness](../ch09/059-claude-code-prompt.md) — 三层工程视角
-- [Prompt Caching 工程实践](ch01/277-anthropic-prompt-caching-claude-code.md) — 与 microCompact 相关
-- [Agent Harness 12 组件](../ch05/038-agent-harness.md) — Harness 通用框架
-- [Claude Code Subagent 上下文卫生](../ch04/319-claude-code-subagent.md) — Sub-Agent 设计
+- [Claude Code 架构解析](../ch03/075-claude-code.html) — 互补页面，本文更深更全面
+- [Claude Code Prompt/Context/Harness](../ch09/059-claude-code-prompt.html) — 三层工程视角
+- [Prompt Caching 工程实践](ch01/277-anthropic-prompt-caching-claude-code.html) — 与 microCompact 相关
+- [Agent Harness 12 组件](../ch05/038-agent-harness.html) — Harness 通用框架
+- [Claude Code Subagent 上下文卫生](../ch04/319-claude-code-subagent.html) — Sub-Agent 设计
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-source-deep-dive-warrior.md)
 
 ## 深度分析
@@ -95,12 +95,12 @@ microCompact 通过 `cache_edits` 保留本地消息不变，解决的是"cache 
 在对 Claude Code 进行基准测试或功能对比时，必须使用 `--no-hooks` 参数禁用所有 Hooks，或者在测试报告中显式说明 Hooks 配置。因为 `PreToolUse` 可以修改工具输入、`PostToolUse` 可以修改工具输出、`UserPromptSubmit` 可以注入额外上下文——这些 Hook 行为会让测试结果无法复现，破坏评测的公平性。这个原则也适用于团队内部的 prompt 调优：调优过程中如果依赖 Hooks 注入上下文，调优得到的 prompt 参数在实际生产环境中可能表现不同。
 
 ## 相关实体
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.md)
-- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.md)
-- [Claude Code Prompt 提示词体系源码解析](../ch09/059-claude-code-prompt.md)
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/075-claude-code.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/460-claude-code-harness-deep-understanding.md)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.html)
+- [Claude Code Prompt 提示词体系源码解析](../ch09/059-claude-code-prompt.html)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/075-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/460-claude-code-harness-deep-understanding.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

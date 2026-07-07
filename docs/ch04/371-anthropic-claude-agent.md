@@ -22,12 +22,12 @@ Anthropic 此次发布的意义远不止功能更新，而是清晰定义了"AI 
 Anthropic 悄悄搭好了一套 Agent 基础设施 Claude Managed Agents 正式开放，智能体进入工程化时代 前几天也写了一篇介绍Claude Managed Agents的文章，今天正式发布，重新讲一下更清楚些： Claude Managed Agents AI基础设施化 2025年以来，业界谈了太多“AI Agent”这个词，但大多数讨论停留在概念层面：Agent 能做什么、理论上有多强、未来会取代多少工作。 Anthropic 上周做了一件更务实的事：把一整套让 Agent 真正能跑起来、跑得稳、越跑越好的基础设施开放出来了。 这套东西叫 Claude Managed Agents，同步发布的还有多 Agent 协作（Multiagent Sessions）、结果驱动的自我评估循环（Outcomes Loop）、Webhook 通知机制，以及一个概念上相当超前的300c做梦300d（Dreams）功能。 这不是新模型发布， 却有更大的意义， Anthropic 在悄悄铺一条让 AI Agent 变成工业品的路。 ▍ 从「会聊天」到「会干活」：Managed Agents 解决了什么问题 过去，开发者如果想让 Claude 帮忙执行复杂任务——比如分析几十份文档、写代码然后运行测试、自动化处理一批文件——需要自己搭一套「Agent 框架「： 要管理模型的上下文窗口，防止超出限制；要自己配置代码执行环境；要处理工具调用、错误重试、中间结果存储；要写轮询逻辑来知道任务是否完成…… 工作量不小，而且坑很多。 Claude Managed Agents 的定位是：把这些基础设施全部托管给 Anthropic，开发者只需要定义「这个 Agent 是干什么的「，剩下的交给平台。 官方文档的对比： Messages API 是直接调模型，适合需要精细控制的场景；Managed Agents 是一套预建好的 Agent 运行框架，适合长时间运行的异步任务。 具体来说，Managed Agents 提供了四个核心概念： Agent，就是你定义的那个「角色」——用哪个模型、系统提示是什么、能用哪些工具和 MCP 服务器； Environment，是运行容器——预装了 Python、Node.js、Go 等环境，配置好网络访问规则； Session，是一次具体的任务执行实例； Events，是你的应用和 Agent 之间互发的消息流。 打个比方：你招了一个员工（Agent），给他配了办公室和电脑（Environment），然后交代他今天要做一项工作（Session），途中随时可以发消息协调（Events）。 ▍ 多 Agent 协作：一个人搞不定的事，让团队来 Multiagent Sessions 是这次发布里技术含量最高的部分，目前处于研究预览阶段。 核心逻辑是：一个「协调者 Agent」可以把子任务分配给其他专门的「执行者 Agent」，各自独立工作，共享同一个容器和文件系统。 举个文档里给的例子： 你有一个总的工程负责人 Agent，它可以把「代码审查」交给专门的 Reviewer Agent，把「写测试用例」交给 Test Writer Agent。这三个 Agent 各自有独立的上下文窗口（所以不会互相干扰），但都在同一个文件系统里工作（所以可以读写对方的产出）。 每个 Agent 有自己的「记忆」，但共用同一个「工作台」——这是多 Agent 协作的核心设计。 从实现上看，Managed Agents 引入了「线程（Threa
 
 ## 相关实体
-- [Claude Managed Agents Official](ch04/525-claude-managed-agents-official.md)
-- [Claude Managed Agents](ch04/609-claude-managed-agents.md)
-- [Anthropic Claude Managed Agents Platform 2026](../ch01/272-anthropic-claude-managed-agents.md)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/846-anthropic.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/1117-anthropic-claude-code.md)
-- [programbench swe agent benchmark](ch04/499-programbench-swe-agent-benchmark.md)
+- [Claude Managed Agents Official](ch04/525-claude-managed-agents-official.html)
+- [Claude Managed Agents](ch04/609-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01/272-anthropic-claude-managed-agents.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/846-anthropic.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/1117-anthropic-claude-code.html)
+- [programbench swe agent benchmark](ch04/499-programbench-swe-agent-benchmark.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

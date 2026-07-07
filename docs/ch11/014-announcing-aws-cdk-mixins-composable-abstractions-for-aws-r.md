@@ -351,11 +351,11 @@ class PipelineStack extends cdk.Stack {
 - `AI安全全景` — 基础设施安全与AI防护的交叉领域
 - `Harness架构` — 云原生基础设施的抽象设计
 ## 相关实体
-- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](ch11/014-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.md)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
-- [Us Bank Aws Ai Migration](../ch04/070-ai.md)
+- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](ch11/014-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Us Bank Aws Ai Migration](../ch04/070-ai.html)
 - [3Rdfsmp](https://github.com/QianJinGuo/wiki/blob/main/entities/3rdfsmp.md)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/670-announcing-openai-compatible-api-support-for-amazon-sagemake.md)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/670-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 
 ---
 

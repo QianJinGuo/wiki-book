@@ -16,12 +16,12 @@ Claude Code创始人关于Harness和编程未来的观点。
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-founder-harness-100-lines.md)
 
 ## 相关实体
-- [Claude Code 之父最新访谈：编程已经结束、harness 将消失，Claude Code 将只有 100 行代码，loop 才是未来](../ch03/075-claude-code.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/460-claude-code-harness-deep-understanding.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.md)
-- [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](../ch09/059-claude-code-prompt.md)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.md)
+- [Claude Code 之父最新访谈：编程已经结束、harness 将消失，Claude Code 将只有 100 行代码，loop 才是未来](../ch03/075-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/460-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.html)
+- [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](../ch09/059-claude-code-prompt.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
 
 - [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md)
 - [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-build-to-delete.md)
@@ -30,16 +30,16 @@ Claude Code创始人关于Harness和编程未来的观点。
 Boris 团队在 2024 年底判断模型能力已经「溢出」现有产品边界，选择在能力还未完全成熟时就启动产品构建。这是一种逆向思考方式——与其等待模型完美，不如在溢出节点就开始释放潜力。他们的判断从一开始就是确定的：「六个月内不会有 PMF，因为是在为下一代模型建产品」。这种预建未来产品的思维，与传统 MVP 思维完全相反，却是 AI 产品开发的特有节奏 。
 
 ### 2. Loop 机制揭示了 Agent 级联架构的规模临界点
-Boris 平均每天同时运行几百个 Agent，每晚还有几千个做深度异步任务。Loop 作为一等公民（cron 调度定期任务）的设计，本质是将单体 Agent 拆解为可编排的分布式单元。这个量级上的质变在于：人类从「管理单个 Agent」退到「管理 Agent 拓扑结构」，而拓扑本身由任务语义驱动而非人工指派。对比 [Generator-Evaluator 架构](ch01/846-anthropic.md) 中三代理结构的单体设计，Boris 的架构已经是完全不同的规模化阶段 。
+Boris 平均每天同时运行几百个 Agent，每晚还有几千个做深度异步任务。Loop 作为一等公民（cron 调度定期任务）的设计，本质是将单体 Agent 拆解为可编排的分布式单元。这个量级上的质变在于：人类从「管理单个 Agent」退到「管理 Agent 拓扑结构」，而拓扑本身由任务语义驱动而非人工指派。对比 [Generator-Evaluator 架构](ch01/846-anthropic.html) 中三代理结构的单体设计，Boris 的架构已经是完全不同的规模化阶段 。
 
 ### 3. 全科型团队的实质是专业壁垒的重组
-「工程经理、产品经理、设计师、数据科学家、财务、用户研究员每个人都在写代码」——这不是说编码变得容易，而是说业务理解力成为了新的核心壁垒。最好的会计软件未来作者不一定是工程师，因为业务知识才是难点。这与 [12 个 Harness 设计模式](../ch03/067-claude-code-agent.md) 中提到的「分层记忆结构」逻辑一致：专业化壁垒从代码层转移到知识层 。
+「工程经理、产品经理、设计师、数据科学家、财务、用户研究员每个人都在写代码」——这不是说编码变得容易，而是说业务理解力成为了新的核心壁垒。最好的会计软件未来作者不一定是工程师，因为业务知识才是难点。这与 [12 个 Harness 设计模式](../ch03/067-claude-code-agent.html) 中提到的「分层记忆结构」逻辑一致：专业化壁垒从代码层转移到知识层 。
 
 ### 4. SaaS 护城河重排揭示了 AI 的真实影响半径
 Boris 的护城河分析框架是迄今最清晰的 AI 商业影响地图：切换成本降低（AI 可以帮你迁移）、流程壁垒削弱（ Opus 4.7 可以自主迭代优化），但网络效应、规模经济、稀缺资源不变。这意味着 AI 对不同类型护城河的影响是非对称的——企业在重新评估战略时，首先应该识别自己的护城河类型，而非泛泛谈论 AI 威胁 。
 
 ### 5. Harness 递减定律：产品层正在被模型能力「蒸发」
-Boris 预测 Claude Code 未来只有 100 行代码，因为安全机制（防 prompt 注入、静态校验、权限模式、人工审批）都是模型能力不足时的补丁。这个判断的深层含义是：Harness 的价值在于填补模型不确定性，一旦模型足够可靠，Harness 就变成了纯粹的效率拖累。这条定律同样适用于 [Harness Engineering](../ch05/062-harness-engineering.md) 的所有实践者 。
+Boris 预测 Claude Code 未来只有 100 行代码，因为安全机制（防 prompt 注入、静态校验、权限模式、人工审批）都是模型能力不足时的补丁。这个判断的深层含义是：Harness 的价值在于填补模型不确定性，一旦模型足够可靠，Harness 就变成了纯粹的效率拖累。这条定律同样适用于 [Harness Engineering](../ch05/062-harness-engineering.html) 的所有实践者 。
 
 ## 实践启示
 ### 1. 建立「模型能力-产品层」的对标节奏

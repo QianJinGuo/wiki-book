@@ -11,11 +11,11 @@
 Review Agent 解决的就是这个问题。它换了个角色、换了个 prompt、换了套判断标准，专门干"复盘 + 决定该记什么"这一件事。
 
 ## 相关实体
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/069-skills.md)
-- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/200-tencent-vibe-coding-to-agentic-engineering-backend.md)
-- [Claude Code Search Architecture Tencent 2026](../ch03/075-claude-code.md)
-- [Openclaw Prompt Context Harness](../ch11/213-openclaw.md)
-- [Harness Engineering Framework](../ch05/062-harness-engineering.md)
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/069-skills.html)
+- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/200-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/075-claude-code.html)
+- [Openclaw Prompt Context Harness](../ch11/213-openclaw.html)
+- [Harness Engineering Framework](../ch05/062-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)
 

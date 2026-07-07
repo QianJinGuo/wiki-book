@@ -8,10 +8,10 @@
 
 ## 相关实体
 
-- [claude skill 质检工具 skill craft](ch01/1036-claude.md)
-- [code intelligence – changelog](../ch04/449-code-intelligence-changelog.md)
-- [opd revisiting failure modes simple fixes storm](ch01/1002-opd.md)
-- [what i’ve been building: atom report, post-training course,](../ch04/070-ai.md)
+- [claude skill 质检工具 skill craft](ch01/1036-claude.html)
+- [code intelligence – changelog](../ch04/449-code-intelligence-changelog.html)
+- [opd revisiting failure modes simple fixes storm](ch01/1002-opd.html)
+- [what i’ve been building: atom report, post-training course,](../ch04/070-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
 
 ## 深度分析
@@ -35,12 +35,12 @@ Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606 涉及agent领�
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/213-openclaw.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/045-agent.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/213-openclaw.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/045-agent.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

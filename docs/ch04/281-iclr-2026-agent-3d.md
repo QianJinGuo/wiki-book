@@ -62,11 +62,11 @@ Scenethesis是一个无需重新训练场景生成模型的系统框架，其流
 2. **拒绝"脑补"，拥抱真实物理约束**：仅凭语言模型的符号推理无法保证生成结果的物理真实性；仅凭视觉模型的统计先验无法保证场景逻辑的一致性。将两者结合并引入物理验证，才能真正实现"物理真实"的空间生成 。
 3. **评估指标需要超越视觉质量**：对于可交互3D场景，仅使用视觉保真度指标是不够的。需要评估空间关系正确性、物理稳定性、对象间接触关系等多维度指标，才能全面衡量系统质量 。
 ## 相关实体
-- [Iclr Agent 3D Generation](../ch03/045-agent.md)
-- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.md)
-- [我用 Skillmd 做了一个简历生成器](ch04/262-skill.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.md)
-- [Gepa Optimize Anything](../ch01/354-gepa-optimize-anything.md)
+- [Iclr Agent 3D Generation](../ch03/045-agent.html)
+- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
+- [我用 Skillmd 做了一个简历生成器](ch04/262-skill.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
+- [Gepa Optimize Anything](../ch01/354-gepa-optimize-anything.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/iclr-agent-3d-generation.md)
 

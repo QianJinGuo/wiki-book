@@ -37,7 +37,7 @@ Agent Skill 的落地面临两个核心难题：
 - draft/reviewing/online 状态机
 - Pipeline 审核、label 分发、审计、Trace
 
-这与 [Agent Capability Library](ch04/566-an-agent-capability-library.md) 的设计理念相通——都需要一个中心化的 Skill 治理基础设施。
+这与 [Agent Capability Library](ch04/566-an-agent-capability-library.html) 的设计理念相通——都需要一个中心化的 Skill 治理基础设施。
 
 ## 深度分析
 
@@ -58,7 +58,7 @@ SkillClaw × Nacos 的联合工作流程：
 - Agent 运行时只读取 Skill，**不持有发布和删除权限**
 - 敏感信息、危险命令、越权工具等检查，通过 Nacos Pipeline 和 `skill-scanner` 插件接入
 
-这种"生成-治理分离"的架构与 [Anthropic 对抗式架构](../ch01/846-anthropic.md) 中的"合同谈判机制"有异曲同工之妙——都强调生成方和验证方的职责隔离。
+这种"生成-治理分离"的架构与 [Anthropic 对抗式架构](../ch01/846-anthropic.html) 中的"合同谈判机制"有异曲同工之妙——都强调生成方和验证方的职责隔离。
 
 ### QuickStart 流程（7 步）
 
@@ -80,7 +80,7 @@ SkillClaw × Nacos 的联合工作流程：
 | 统一 Agent 工作方式 | SkillClaw 从多人真实使用中提炼稳定工作模式，Nacos 统一管理分发 |
 | 一线支持沉淀高频问题 | 支持类 Skill 审核发布，减少重复答疑 |
 
-这些场景与 [Skill 编写最佳实践](ch04/262-skill.md) 中总结的 Skill 设计模式高度吻合。
+这些场景与 [Skill 编写最佳实践](ch04/262-skill.html) 中总结的 Skill 设计模式高度吻合。
 
 ### 未来方向
 
@@ -97,11 +97,11 @@ SkillClaw × Nacos 的联合工作流程：
 
 ## 相关实体
 
-- [Agent Capability Library](ch04/566-an-agent-capability-library.md)
-- [工作流的 Skill 怎么写从 7 个顶级 Skill 中提炼的模式与最佳实践](ch04/262-skill.md)
-- [Qoder Skills 完全指南从零开始让 Ai 按你的标准执行](../ch07/032-qoder-skills.md)
-- [Perplexity Internal Skill Design Guide Xiaojianke](ch04/262-skill.md)
-- [Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/262-skill.md)
+- [Agent Capability Library](ch04/566-an-agent-capability-library.html)
+- [工作流的 Skill 怎么写从 7 个顶级 Skill 中提炼的模式与最佳实践](ch04/262-skill.html)
+- [Qoder Skills 完全指南从零开始让 Ai 按你的标准执行](../ch07/032-qoder-skills.html)
+- [Perplexity Internal Skill Design Guide Xiaojianke](ch04/262-skill.html)
+- [Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/262-skill.html)
 - [Agent 记忆系统六大学派](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 

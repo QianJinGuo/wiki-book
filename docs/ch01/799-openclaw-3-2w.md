@@ -8,9 +8,9 @@
 
 ## 相关实体
 
-- [cola dlm：字节跳动连续潜空间扩散语言模型](ch01/398-cola-dlm.md)
-- [explicit vs. implicit in the age of intelligences — le secré](../ch04/070-ai.md)
-- [what it feels like to work with mythos](../ch04/301-what-it-feels-like-to-work-with-mythos.md)
+- [cola dlm：字节跳动连续潜空间扩散语言模型](ch01/398-cola-dlm.html)
+- [explicit vs. implicit in the age of intelligences — le secré](../ch04/070-ai.html)
+- [what it feels like to work with mythos](../ch04/301-what-it-feels-like-to-work-with-mythos.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
@@ -55,12 +55,12 @@ source_published: 2026-03-11
 
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/213-openclaw.md)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch04/070-ai.md)
-- [Hermes Agent V014 Architecture Shugex](../ch03/090-hermes-agent.md)
-- [Ai Friendly Architecture Design Taobao](../ch05/022-ai-friendly.md)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/977-latest-open-artifacts-20-new-orgs-new-types-of-models.md)
-- [Deepseek Code Harness Competitor Tina](../ch09/076-deepseek-code-harness.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/213-openclaw.html)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch04/070-ai.html)
+- [Hermes Agent V014 Architecture Shugex](../ch03/090-hermes-agent.html)
+- [Ai Friendly Architecture Design Taobao](../ch05/022-ai-friendly.html)
+- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/977-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
+- [Deepseek Code Harness Competitor Tina](../ch09/076-deepseek-code-harness.html)
 
 ## 实践启示
 

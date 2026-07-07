@@ -40,7 +40,7 @@
 - **Planning Skills** = Agent 的"方法论知识"（面对新任务的策略思维）
 - **Functional Skills** = Agent 的"技能插件"（可复用工具调用流程）
 - **Atomic Skills** = Agent 的"肌肉记忆"（底层工具操作模式）
-与 [Agent Skill 编写指南](../ch04/555-agent-skill.md) 的实践视角互补： SkillX 从学习角度建立技能体系，Agent Skill 指南从编写规范角度约束技能格式。
+与 [Agent Skill 编写指南](../ch04/555-agent-skill.html) 的实践视角互补： SkillX 从学习角度建立技能体系，Agent Skill 指南从编写规范角度约束技能格式。
 
 ## 相关页面
 ## 深度分析
@@ -58,25 +58,25 @@ SkillX的三层技能体系（Planning / Functional / Atomic）揭示了Agent经
 
 ## 相关页面
 
-- [Skill 设计模式](../ch04/262-skill.md)
+- [Skill 设计模式](../ch04/262-skill.html)
 - [Hermes-Agent 自进化机制](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)
-- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.md)
+- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.html)
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillx-zhejiang-university.md)
 
 ## 相关实体
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/555-agent-skill.md)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/381-aws-sagemaker-ai-agent.md)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/098-anthropic-agent.md)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/262-skill.md)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/262-skill.md)
-- [SkillClaw](../ch04/427-skillclaw-nacos-agent-skill-registry.md)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.md)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/376-agent-skills.md)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/555-agent-skill.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/381-aws-sagemaker-ai-agent.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/098-anthropic-agent.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/262-skill.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/262-skill.html)
+- [SkillClaw](../ch04/427-skillclaw-nacos-agent-skill-registry.html)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/376-agent-skills.html)
 
-- [Qoder Skills 完全指南](ch07/032-qoder-skills.md)
-- [你写的 Skill，及格了吗？](../ch04/262-skill.md)
+- [Qoder Skills 完全指南](ch07/032-qoder-skills.html)
+- [你写的 Skill，及格了吗？](../ch04/262-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [wiki evolver](ch07/015-wiki-evolver.md)
+- [wiki evolver](ch07/015-wiki-evolver.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 
 ---

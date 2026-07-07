@@ -28,7 +28,7 @@ source_url: https://mp.weixin.qq.com/s/0yVKN5cu8oOOBhRZHkyYPg
 - ####  场景三：ChatGPT Web / Lovart / 任何有生图能力的对话界面
 
 ## 相关实体
-- [gpt-image-2完全指南](ch01/848-gpt-image-2.md)
+- [gpt-image-2完全指南](ch01/848-gpt-image-2.html)
 
 ## 深度分析
 **GPT-Image-2 的出现不是"又一个大模型发布"，而是图像生成在工程化层面的一次质变。** 1512 分在 Arena.AI Text-to-Image 排行榜上领先第二名 242 分——这是断档式的领先，而非微幅领先。

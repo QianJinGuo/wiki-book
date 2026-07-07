@@ -36,11 +36,11 @@ Starfilm的出现折射出一个根本性的转变：AI视频工具正从"炫技
 - "超级个体"叙事背后的长尾创作者市场值得关注——AI视频工具的真正机会可能不在大厂，而在被传统制作门槛压制多年的大量"准创作者"的释放
 
 ## 相关实体
-- [Ai 内容创作开始进入画布 Agent时代](../ch03/045-agent.md)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/505-score-by-collisions-patch-by-panic.md)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/262-skill.md)
-- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](../ch01/846-anthropic.md)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/786-google-adds-llms-txt-check-to-chrome-lighthouse.md)
+- [Ai 内容创作开始进入画布 Agent时代](../ch03/045-agent.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/505-score-by-collisions-patch-by-panic.html)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/262-skill.html)
+- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](../ch01/846-anthropic.html)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/786-google-adds-llms-txt-check-to-chrome-lighthouse.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/starfilm-ai-agent-ai-short-film-platform.md)
 

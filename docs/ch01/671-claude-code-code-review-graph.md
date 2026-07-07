@@ -11,11 +11,11 @@
 本文要讲的，就是如何用 code-review-graph 给本地代码仓库建立一张知识图谱，再通过 MCP 接入 Claude Code。这样 Claude Code 不再只会反复读文件，而是能像查地图一样查询代码结构、依赖关系、核心节点和影响范围。
 
 ## 相关实体
-- [Code Review Graph](ch01/761-code-review-graph-claude-code-6-8-token.md)
-- [Claude Code Self Repair Hooks Memory Config](../ch03/075-claude-code.md)
-- [Claude Code Hackathon Winners 2026](../ch03/075-claude-code.md)
-- [Claude Code Harness Deep Understanding](ch01/460-claude-code-harness-deep-understanding.md)
-- [Claude Code Agent View Huashu](../ch09/001-claude-code-agent-view.md)
+- [Code Review Graph](ch01/761-code-review-graph-claude-code-6-8-token.html)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/075-claude-code.html)
+- [Claude Code Hackathon Winners 2026](../ch03/075-claude-code.html)
+- [Claude Code Harness Deep Understanding](ch01/460-claude-code-harness-deep-understanding.html)
+- [Claude Code Agent View Huashu](../ch09/001-claude-code-agent-view.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/code-review-graph-upper-intermediate-guide-20260513.md)
 

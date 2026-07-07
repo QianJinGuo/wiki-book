@@ -175,7 +175,7 @@ nanobot 把所有决策路径强塞进一个 while 循环，与 LangGraph 的 DA
 - 能力的版本控制天然受 git 支持
 - 失败的 skill 可以一键回滚（删除文件）
 
-这与 [天猫团队的 AGENT.md 持续约定](../ch04/070-ai.md)、Anthropic Skills、Claude Code 的 `.claude/` 目录是同一种范式。**Markdown-as-Config 正在成为 LLM 时代的事实标准**。
+这与 [天猫团队的 AGENT.md 持续约定](../ch04/070-ai.html)、Anthropic Skills、Claude Code 的 `.claude/` 目录是同一种范式。**Markdown-as-Config 正在成为 LLM 时代的事实标准**。
 
 ### 3. Progressive Loading 是 context 管理的关键模式
 
@@ -184,7 +184,7 @@ nanobot 把所有决策路径强塞进一个 while 循环，与 LangGraph 的 DA
 - 大型代码库：只放目录树，LLM 需要时调用 `read_file`
 - 长对话历史：只放主题摘要，LLM 需要时 grep HISTORY.md
 
-参见 [working set 管理](../ch05/038-agent-harness.md)。这种模式的代价是**额外的 tool call 延迟**——但对长寿命 Agent 而言，延迟的代价远小于 context 污染的代价。
+参见 [working set 管理](../ch05/038-agent-harness.html)。这种模式的代价是**额外的 tool call 延迟**——但对长寿命 Agent 而言，延迟的代价远小于 context 污染的代价。
 
 ### 4. "错误恢复委托给 LLM"是健壮性的范式转移
 
@@ -254,11 +254,11 @@ nanobot 把所有决策路径强塞进一个 while 循环，与 LangGraph 的 DA
 
 ## 关联实体
 
-- [Agent Harness Context Management Working Set](../ch05/038-agent-harness.md) — Progressive Loading 与 working set 管理理论
-- [Loop Engineering Addy Osmani Challengehub](../ch05/006-loop-engineering.md) — ReAct 循环工程化的另一视角
-- [Codex Major Update Appshots Goal Xinzhiyuan](ch01/520-codex.md) — Codex 同样采用单循环 + 长寿命任务设计
-- [天猫新品营销技术团队Ai编码实战指南上](../ch04/070-ai.md) — AGENT.md 持续约定模式的实战
-- [腾讯研究院Ai速递 20260506](../ch04/070-ai.md) — CL-Bench Life 揭示的"上下文误用"问题，呼应 nanobot 的 progressive loading 设计
+- [Agent Harness Context Management Working Set](../ch05/038-agent-harness.html) — Progressive Loading 与 working set 管理理论
+- [Loop Engineering Addy Osmani Challengehub](../ch05/006-loop-engineering.html) — ReAct 循环工程化的另一视角
+- [Codex Major Update Appshots Goal Xinzhiyuan](ch01/520-codex.html) — Codex 同样采用单循环 + 长寿命任务设计
+- [天猫新品营销技术团队Ai编码实战指南上](../ch04/070-ai.html) — AGENT.md 持续约定模式的实战
+- [腾讯研究院Ai速递 20260506](../ch04/070-ai.html) — CL-Bench Life 揭示的"上下文误用"问题，呼应 nanobot 的 progressive loading 设计
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent harness 的工程框架
 
 ## 相关链接

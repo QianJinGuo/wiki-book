@@ -45,9 +45,9 @@ Hermes Agent 是 **Nous Research** 开源的自主演式 AI Agent 框架，GitHu
 ## Related
 - [Hermes-Agent 自进化机制](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Skill 生成 + RL 训练双路径详解
 - [原始调研存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-tools-research.md)
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/032-qoder-skills.md)
-- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/200-tencent-vibe-coding-to-agentic-engineering-backend.md)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/032-qoder-skills.html)
+- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/200-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 ## 深度分析
 Hermes Agent 的自进化机制代表了一种新型的 AI Agent 设计范式：**外挂式技能生成 + 内功式强化学习**的双轨并行架构。
@@ -63,16 +63,16 @@ Hermes Agent 的自进化机制代表了一种新型的 AI Agent 设计范式：
 4. **警惕"进化陷阱"**：Skill 自动生成若缺乏质量控制，会导致技术债务累积，需要配套的 Skill 评估与淘汰机制
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/381-aws-sagemaker-ai-agent.md)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/381-aws-sagemaker-ai-agent.html)
 
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/262-skill.md)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/262-skill.md)
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/098-anthropic-agent.md)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.md)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/262-skill.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/262-skill.html)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/098-anthropic-agent.html)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-closed-learning-loop.md)
 
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/376-agent-skills.md)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/376-agent-skills.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

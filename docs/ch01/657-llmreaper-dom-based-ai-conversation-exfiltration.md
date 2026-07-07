@@ -55,13 +55,13 @@ I have used various selector queries to match user prompts and LLM responses but
 `const STOP_SIGNALS = {  ChatGPT: 'button[data-
 
 ## 相关实体
-- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](../ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.md)
+- [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](../ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Llm Raiders Private Ai Server](ch01/586-llm.md)
+- [Llm Raiders Private Ai Server](ch01/586-llm.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Amazon Bedrock Api Security Guide](../ch12/033-amazon-bedrock-api.md)
+- [Amazon Bedrock Api Security Guide](../ch12/033-amazon-bedrock-api.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llmreaper-dom-based-ai-exfiltration.md)- [llmreaper - dom based ai conversation exfiltration via brows](../ch12/087-llmreaper.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llmreaper-dom-based-ai-exfiltration.md)- [llmreaper - dom based ai conversation exfiltration via brows](../ch12/087-llmreaper.html)
 
 ---
 

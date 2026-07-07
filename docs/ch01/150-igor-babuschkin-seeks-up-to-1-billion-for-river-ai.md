@@ -8,11 +8,11 @@
 - 来源：https://letsdatascience.com/news/igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09
 - 评分：v=7 × c=8 = 56
 ## 相关实体
-- [Letsdatascience Igor Babuschkin Seeks Up To 1 Billion For River Ai 8C36Ce09](ch01/150-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/070-ai.md)
+- [Letsdatascience Igor Babuschkin Seeks Up To 1 Billion For River Ai 8C36Ce09](ch01/150-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/070-ai.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
-- [Code Simulation For Enterprise Engineering Playerz](ch01/133-code-simulation-for-enterprise-engineering-playerzero.md)
-- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/205-0.md)
+- [Code Simulation For Enterprise Engineering Playerz](ch01/133-code-simulation-for-enterprise-engineering-playerzero.html)
+- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/205-0.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
 

@@ -8,10 +8,10 @@
 
 ## 相关实体
 
-- [canvas hackers shinyhunters say their official domain was su](../ch04/070-ai.md)
-- [canvas hackers shinyhunters say their official domain was su](ch12/036-canvas-hackers-shinyhunters-say-their-official-domain-was-su.md)
-- [private fintech has quietly become bigger than public fintec](../ch03/101-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
-- [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/101-private-fintech-has-quietly-become-bigger-than-public-fintec.md)
+- [canvas hackers shinyhunters say their official domain was su](../ch04/070-ai.html)
+- [canvas hackers shinyhunters say their official domain was su](ch12/036-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html)
+- [private fintech has quietly become bigger than public fintec](../ch03/101-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
+- [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/101-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-04-15.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
@@ -38,12 +38,12 @@ Cyberscammers are bypassing banks’ security with illicit tools sold on Telegra
 - **data趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md)
-- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/213-openclaw.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/213-openclaw.html)
 
 ## 实践启示
 1. **工程落地**: code领域方案需关注可观测性、可维护性和成本效率

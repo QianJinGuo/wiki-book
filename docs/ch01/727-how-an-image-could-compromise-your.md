@@ -33,11 +33,11 @@ CVE-2026-3102 是一次典型的 command injection（命令注入）漏洞，但
 - **供应链依赖审计**：使用 [Kaspersky Open Source Software Threats Data Feed](https://securelist.com/exiftool-compromise-mac/119866/) 持续监控开源组件，将 ExifTool 纳入软件物料清单（SBOM）管理范围
 
 ## 相关实体
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](ch01/911-20.md)
-- [Detect Ai Agent Traffic](../ch04/147-ai-agent.md)
-- [Github Investigating Teampcp Claimed 17Cc77](ch01/751-github.md)
-- [Detect Ai Agents Website](../ch04/147-ai-agent.md)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch01/771-skill-issues-compromising-claude-code-with-malicious-skills.md)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](ch01/911-20.html)
+- [Detect Ai Agent Traffic](../ch04/147-ai-agent.html)
+- [Github Investigating Teampcp Claimed 17Cc77](ch01/751-github.html)
+- [Detect Ai Agents Website](../ch04/147-ai-agent.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch01/771-skill-issues-compromising-claude-code-with-malicious-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/exiftool-compromise-mac-592994.md)
 

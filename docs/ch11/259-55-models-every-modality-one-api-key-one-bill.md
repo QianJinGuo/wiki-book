@@ -12,11 +12,11 @@
 - 支持多模态：图像（Stable Diffusion 3.5）、视频（Wan 2.2）、语音（Qwen3 TTS）、视觉语言（Nemotron、Kimi）
 - VPC + 默认零数据保留，平台内置 guardrails
 ## 相关实体
-- [Serverless Inference](ch11/003-serverless-inference.md)
-- [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/007-aws-bedrock.md)
-- [Aws Network Firewall Ai Conflict Detection Bedrock](ch11/122-aws-network-firewall-ai.md)
+- [Serverless Inference](ch11/003-serverless-inference.html)
+- [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/007-aws-bedrock.html)
+- [Aws Network Firewall Ai Conflict Detection Bedrock](ch11/122-aws-network-firewall-ai.html)
 - [Kiro Job Scheduler Eventbridge Ecs Fargate](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/501-amazon-bedrock-agentcore.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/501-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/digitalocean-serverless-inference-55-models.md)
 

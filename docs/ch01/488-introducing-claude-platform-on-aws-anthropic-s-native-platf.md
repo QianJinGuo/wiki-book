@@ -45,11 +45,11 @@ You can monitor usage in the Claude Console, including breakdowns by workspace, 
 ## Conclusion
 Claude Platform on AWS is available in US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), South America (São Paulo), Europe (Dublin), Europe (London), Europe (Frankfurt), Europe (Milan), Europe (Zurich), Europe (Paris), Europe (Stockholm), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Melbourne), Asia Pacific (Jakarta), Asia Pacific (Sydney).
 ## 相关实体
-- [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
-- [Anthropic Claude Managed Agents Platform Launch](ch01/272-anthropic-claude-managed-agents.md)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/846-anthropic.md)
-- [Anthropic Prompt Caching Claude Code Agihunt](ch01/277-anthropic-prompt-caching-claude-code.md)
-- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](ch01/1036-claude.md)
+- [Introducing Claude Platform On Aws](ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
+- [Anthropic Claude Managed Agents Platform Launch](ch01/272-anthropic-claude-managed-agents.html)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/846-anthropic.html)
+- [Anthropic Prompt Caching Claude Code Agihunt](ch01/277-anthropic-prompt-caching-claude-code.html)
+- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](ch01/1036-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-claude-platform-on-aws-anthropics-native-platfor.md)
 

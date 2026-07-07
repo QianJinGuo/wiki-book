@@ -408,11 +408,11 @@ For reference, see the following resources:
 
 ## 关联阅读
 ## 相关实体
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.md)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](ch11/010-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](ch11/134-restrict-access-to-sensitive-documents-in-your-amazon-quick.md)
-- [Introducing Claude Platform On Aws](../ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch04/147-ai-agent.md)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](ch11/134-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
+- [Introducing Claude Platform On Aws](../ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch04/147-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
 - [规划 amazon eks 从 1.32 升级到 1.35：关键变更识别与逐版本实施路径](https://github.com/QianJinGuo/wiki/blob/main/entities/规划-amazon-eks-从-132-升级到-135关键变更识别与逐版本实施路径.md)

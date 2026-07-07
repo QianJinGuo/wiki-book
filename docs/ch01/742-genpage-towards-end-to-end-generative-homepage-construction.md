@@ -24,7 +24,7 @@ Netflix 提出了 GenPage，一种基于单 Transformer 模型的端到端生成
 
 ### 4. 训练信号从"离线指标"到"用户满意度"的转变
 
-GenPage 的训练目标被表述为"最大化用户满意度"（Maximize User Satisfaction），而非传统的离线指标（CTR、时长等）。这一目标的设定意味着模型需要在训练过程中学习用户的综合体验偏好，而不是孤立地优化每个元素的点击率。这与 [AI-Native 架构](../ch05/022-ai-friendly.md) 中"以用户意图为中心"的设计理念一致。
+GenPage 的训练目标被表述为"最大化用户满意度"（Maximize User Satisfaction），而非传统的离线指标（CTR、时长等）。这一目标的设定意味着模型需要在训练过程中学习用户的综合体验偏好，而不是孤立地优化每个元素的点击率。这与 [AI-Native 架构](../ch05/022-ai-friendly.html) 中"以用户意图为中心"的设计理念一致。
 
 ### 5. 端到端单模型 vs 多阶段管线的工程权衡
 
@@ -46,7 +46,7 @@ GenPage 的单模型架构简化了推荐系统的工程复杂度——不再需
 
 - [Netflix VMAF](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-vmaf-v1-video-quality-metric-upgrade.md)
 - [Netflix Switchboard](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
-- [Netflix ML 平台](../ch11/243-democratizing-machine-learning-at-netflix-building-the-mode.md)
+- [Netflix ML 平台](../ch11/243-democratizing-machine-learning-at-netflix-building-the-mode.html)
 - [Attention Collapse 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/genpage-end-to-end-generative-homepage-construction-netflix.md)

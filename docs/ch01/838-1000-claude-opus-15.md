@@ -61,11 +61,11 @@ Webwright 将代码量级与主流框架对比：
 5. **关注微软后续**：MSR 在 minimalist Agent 路线的持续发布值得跟，OpenAI/Anthropic 官方 Agents SDK 可能内嵌类似"写脚本"模式。
 
 ## 相关实体
-- [Two Harness Papers Microsoft Google](../ch05/009-harness.md)
-- [Claude Opus 47](ch01/1036-claude.md)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/075-claude-code.md)
-- [Wow Harness V3 Governance Protocol](../ch05/009-harness.md)
-- [Agent Memory Architecture Ruofei](../ch04/096-agent-memory.md)
+- [Two Harness Papers Microsoft Google](../ch05/009-harness.html)
+- [Claude Opus 47](ch01/1036-claude.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/075-claude-code.html)
+- [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
+- [Agent Memory Architecture Ruofei](../ch04/096-agent-memory.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/webwright-microsoft-1000-lines.md)
 

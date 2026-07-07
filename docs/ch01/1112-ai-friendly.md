@@ -46,8 +46,8 @@
 
 ## 相关实体
 
-- [AI Friendly架构](../ch05/022-ai-friendly.md)
-- [后端for Agent](../ch03/045-agent.md)
+- [AI Friendly架构](../ch05/022-ai-friendly.html)
+- [后端for Agent](../ch03/045-agent.html)
 - [阿里技术标准](https://github.com/QianJinGuo/wiki/blob/main/entities/alitech-standards.md)
 
 ## 标签
