@@ -116,7 +116,7 @@ StoreClaw 预装几十个电商相关 Skills（Listing 优化/关键词研究/GE
 ## 关联引用
 
 → [电商智能体设计实践 (AWS Bedrock AgentCore)](../ch03/045-agent.html) — AWS 技术栈视角
-→ [OpenClaw 电商平台应用场景](../ch11/213-openclaw.html) — OpenClaw 工具视角
+→ [OpenClaw 电商平台应用场景](../ch11/214-openclaw.html) — OpenClaw 工具视角
 → [快时尚电商语音系统 (AWS)](../ch03/045-agent.html) — 语音交互电商 Agent
 → [vivo AI 导购](../ch03/045-agent.html) — vivo 单品牌 AI 导购
 → [Thrive 1 亿投资 Shopify AI](../ch01/205-0.html) — Shopify AI 战略投资

@@ -18,8 +18,8 @@
 - **VOC 管线** — 客户声音趋势聚合分析 — **数小时人工 → 数分钟自动报告**
 
 ## 相关实体
-- [Multilingual Ai](../ch04/070-ai.html)
-- [Eagle 3 Speculative Decoding Optimization](ch01/1050-spec.html)
+- [Multilingual Ai](../ch05/077-ai.html)
+- [Eagle 3 Speculative Decoding Optimization](ch01/1051-spec.html)
 - [Didi Eagle 3 Speculative Decoding Agents](../ch09/047-coding-agent.html)
 - [Be More Expressive To Close More Sales](ch01/075-be-more-expressive-to-close-more-sales.html)
 - [Datacomp For Language Models](https://github.com/QianJinGuo/wiki/blob/main/entities/datacomp-for-language-models.md)

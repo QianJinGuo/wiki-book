@@ -14,8 +14,8 @@
 3. **Harness Engineering** — 怎么让 Agent 真正跑起来（2026 年新风潮）
 
 ## 相关实体
-- [Openclaw Prompt Context Harness](../ch11/213-openclaw.html)
-- [Harness Engineering Framework](../ch05/062-harness-engineering.html)
+- [Openclaw Prompt Context Harness](../ch11/214-openclaw.html)
+- [Harness Engineering Framework](../ch05/092-harness-engineering.html)
 - [Agent Harness 12 Components 7 Decisions](../ch05/038-agent-harness.html)
 - [From Prompt To Harness Claude Official](../ch05/009-harness.html)
 - [Agentcore Harness](ch04/464-amazon-bedrock-agentcore-harness-ga-api-agent.html)

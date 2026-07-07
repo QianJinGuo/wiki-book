@@ -83,9 +83,9 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - **持续进化**：Reflection Agent 思路可推广至其他 AI 工作流，将人工修复经验结构化为可复用的 patch 资产
 
 ## 相关页面
-- [Skill 写作基础指南](../ch04/555-agent-skill.html) — 入门级别的 Skill 写作教程
-- [Skill 写作进阶](../ch04/555-agent-skill.html) — 高级技巧
-- [Skill 评估方法](../ch04/555-agent-skill.html) — 如何评估 Skill 质量
+- [Skill 写作基础指南](../ch04/260-agent-skill.html) — 入门级别的 Skill 写作教程
+- [Skill 写作进阶](../ch04/260-agent-skill.html) — 高级技巧
+- [Skill 评估方法](../ch04/260-agent-skill.html) — 如何评估 Skill 质量
 
 ## 相关实体
 - [十年老技术开发的 AI Agent 探索之路](../ch04/147-ai-agent.html)
@@ -100,7 +100,7 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 
 - [Qoder Skills 完全指南](ch07/032-qoder-skills.html)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/376-agent-skills.html)
-- [Garry Tan](../ch01/617-garry-tan.html)
+- [Garry Tan](../ch01/618-garry-tan.html)
 - [Agent Workflows](../ch04/335-agent-workflows.html)
 - [Hermes Agent](../ch03/090-hermes-agent.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)

@@ -12,8 +12,8 @@
 博客链接：https://hy.tencent.com/research/100039
 
 ## 相关实体
-- [Harness Engineering Framework](../ch05/062-harness-engineering.html)
-- [Microsoft Agent Framework Python Full Guide Zizhi](../ch04/535-python.html)
+- [Harness Engineering Framework](../ch05/092-harness-engineering.html)
+- [Microsoft Agent Framework Python Full Guide Zizhi](../ch04/540-python.html)
 - [Hermes Agent Deep Dive Alibaba](../ch03/090-hermes-agent.html)
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](../ch11/118-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [Agent Harness 12 Components 7 Decisions](../ch05/038-agent-harness.html)

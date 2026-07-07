@@ -32,7 +32,7 @@ Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其
 - monorepo 中给每个团队目录放自己的子目录 CLAUDE.md，用 `claudeMdExcludes` 跳过不相关团队文件
 - 组织级标准（安全策略、合规）通过 MDM 部署，不允许个人排除
 
-→ [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/148-claude-code-1.html)
+→ [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/151-claude-code-1.html)
 
 ## 规则：路径作用域是关键
 

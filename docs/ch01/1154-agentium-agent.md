@@ -119,7 +119,7 @@ Agentium 的核心价值不在于成为一个生产级框架，而在于**演示
 - GitHub: https://github.com/ichbinderek/agentium
 
 ## 相关实体
-- [Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation](../ch11/258-amazon-nova.html)
+- [Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation](../ch11/259-amazon-nova.html)
 - [Claude Code 架构解析](../ch03/075-claude-code.html)
 - [Agent 时代架构师技能指南](../ch03/069-skills.html)
 

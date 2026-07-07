@@ -6,7 +6,7 @@
 
 ## 关联
 - [Natural Language Autoencoders](ch01/1205-natural-language-autoencoders-anthropic.html) — NLA 在 SAE 基础上增加文字输出能力
-- [Anthropic](ch01/846-anthropic.html) — 主要研究机构
+- [Anthropic](ch01/847-anthropic.html) — 主要研究机构
 - [Mechanistic Interpretability](https://github.com/QianJinGuo/wiki/blob/main/concepts/mechanistic-interpretability.md) — 所属研究领域
 
 ## 深度分析

@@ -14,7 +14,7 @@
 
 ## 相关资源
 - [Agent Memory 架构](ch04/388-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [Claude Managed Agents 开发者指南](ch04/609-claude-managed-agents.html)
+- [Claude Managed Agents 开发者指南](ch04/616-claude-managed-agents.html)
 
 ## 深度分析
 **1. Stripe 押注"AI 原生经济基础设施"战略定位的本质跃迁**
@@ -43,7 +43,7 @@ Stripe Treasury 年底前将在 US、UK 支持 15 种货币存储，并扩展至
 ## 相关实体
 - [stripe sessions 2026 ai](ch04/401-stripe-sessions-2026-ai.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/128-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [Inngest - AI in Production: The 2026 Benchmark Report](../ch01/550-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Inngest - AI in Production: The 2026 Benchmark Report](../ch01/551-inngest-ai-in-production-the-2026-benchmark-report.html)
 - [How Superset built the IDE for AI agents on Vercel](../ch01/067-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [How to Detect AI Agents on Your Website | Full Guide](ch04/147-ai-agent.html)
 - [AI-powered honeypots: Turning the tables on malicious AI agents](../ch01/072-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
