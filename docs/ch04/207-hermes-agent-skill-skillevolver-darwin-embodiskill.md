@@ -133,7 +133,7 @@ EmbodiSkill 的感知-动作闭环在纯软件 Agent 场景中往往被忽视。
 ## 相关实体
 
 - [Ai Skill Evolution底层逻辑](../ch07/010-ai-skill-evolution.md)
-- [Agent Skill Writing Guide](ch04/554-agent-skill.md)
+- [Agent Skill Writing Guide](ch04/555-agent-skill.md)
 - [Hermes Agent Skills Source Code Analysis Shuge](ch04/395-hermes-agent-skills.md)
 - [Skill Hub Organization Asset Winty](ch04/262-skill.md)
 - [Skill Design Spec 8 Block Checklist Winty](ch04/262-skill.md)

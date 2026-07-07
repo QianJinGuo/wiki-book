@@ -9,7 +9,7 @@
 
 ## 相关实体
 
-- [anthropic acquires stainless](../ch04/558-anthropic-acquires-stainless.md)
+- [anthropic acquires stainless](../ch04/559-anthropic-acquires-stainless.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/down-fall-of-bug-bounties.md)
 
 ## 深度分析

@@ -17,7 +17,7 @@
 - [introducing 1-bit and ternary bonsai image 4b: image generat](../ch04/070-ai.md)
 - [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](ch01/796-self-taught-rlvr.md)
 - [the recent history of ai in 32 otters](ch01/606-the-recent-history-of-ai-in-32-otters.md)
-- [5亿视频炼出全球最大gui开源数据集、推理token省71%小模型反超大模型——小米ai团队多篇论文入选icml 202](ch01/1169-icml-2026.md)
+- [5亿视频炼出全球最大gui开源数据集、推理token省71%小模型反超大模型——小米ai团队多篇论文入选icml 202](ch01/1174-icml-2026.md)
 - [天猫新品团队ai编码实战指南（下）](../ch04/070-ai.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tencent-hunyuan-hy3-preview-open-source.md)
 

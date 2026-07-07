@@ -11,7 +11,7 @@
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01/014-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/967-introducing-seer-agent-the-answer-is-already-in-sentry-now.md)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01/014-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md)
-- [The 1 Ai Agent For Financial Services Fin](ch04/545-the-1-ai-agent-for-financial-services-fin.md)
+- [The 1 Ai Agent For Financial Services Fin](ch04/546-the-1-ai-agent-for-financial-services-fin.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md)
 

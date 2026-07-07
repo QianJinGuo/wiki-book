@@ -26,8 +26,8 @@
 5. **通过自定义工具扩展构建差异化能力** — fork 仓库后，仅需在 `custom-tools.js` 中用 Zod 定义输入 schema 并实现 `run` 函数，即可将 R2 存储、Cloudflare Workers、第三方 API 等任何服务包装为 Agent 工具。这种低代码扩展方式适合在通用能力之上构建垂直场景的竞争壁垒。
 ## 相关实体
 - [Anthropic Puts Claude Agents On A Meter Across Its](ch01/082-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.md)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04/608-claude-managed-agents.md)
-- [Claude Managed Agents](../ch04/608-claude-managed-agents.md)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04/609-claude-managed-agents.md)
+- [Claude Managed Agents](../ch04/609-claude-managed-agents.md)
 - [Anthropic Claude Managed Agents Platform Launch](ch01/272-anthropic-claude-managed-agents.md)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/272-anthropic-claude-managed-agents.md)
 

@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3016 篇一手 AI 材料系统编撰的开源读物。
+> 全球第一部基于 3031 篇一手 AI 材料系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,8 +10,8 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1379 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1051 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1391 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1054 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 435 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 117 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 34 篇 |
@@ -20,7 +20,7 @@
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1214 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1226 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ Backpressure is all you need
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ 快手首个打工人Agent
-  - ... 共 **1214** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1226** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 34 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **131** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1379 篇**
+> 📖 **本篇共 1391 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 621 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 623 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ Build agents, not pipelines
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
-  - ... 共 **621** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **623** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 105 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -104,7 +104,7 @@
   - ⭐⭐ Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge 
   - ... 共 **43** 篇 → [完整章节](ch06-memory.md)
 
-### [Ch07 技能、工具与 MCP](ch07-skill-tool.md) — 74 篇
+### [Ch07 技能、工具与 MCP](ch07-skill-tool.md) — 75 篇
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
   - ⭐⭐ Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生
@@ -115,7 +115,7 @@
   - ⭐⭐ Claude Code Skills / MCP / Rules 源码分析
   - ⭐⭐ Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）
   - ⭐⭐ 重新定义Skill开发：保姆级教程&一站式开发助手
-  - ... 共 **74** 篇 → [完整章节](ch07-skill-tool.md)
+  - ... 共 **75** 篇 → [完整章节](ch07-skill-tool.md)
 
 ### [Ch08 多 Agent 协作](ch08-multi-agent.md) — 26 篇
 > 从单兵到团队：编排、通信、治理
@@ -156,7 +156,7 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **26** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1051 篇**
+> 📖 **本篇共 1054 篇**
 
 ---
 
@@ -307,6 +307,6 @@
 
 ---
 
-**📊 全书收录：3016 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3031 篇实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-07-07 | 来源: ~/wiki/entities/

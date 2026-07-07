@@ -32,7 +32,7 @@
 - [Claude Code Harness Deep Understanding](../ch01/460-claude-code-harness-deep-understanding.md)
 - [Claude Code Harness Deep Dive Founder Park](ch05/060-claude-code-harness.md)
 - [Claude Code Founder Harness 100 Lines](../ch03/075-claude-code.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/1113-anthropic-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/1117-anthropic-claude-code.md)
 - [From Prompt To Harness Claude Official](ch05/009-harness.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md)

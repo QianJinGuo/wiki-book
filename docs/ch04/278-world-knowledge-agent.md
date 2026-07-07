@@ -124,7 +124,7 @@ R(K) = Success(T_E | K) - Success(T_E | ∅)
 - [Tencent Skill Writing Complete Playbook Jackjchou](ch04/262-skill.md)
 - [Agent Self Improvement Six Mechanisms](../ch03/045-agent.md)
 - [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](../ch03/090-hermes-agent.md)
-- [Deli Auto Research Skill Deepseek](../ch01/969-deepseek.md)
+- [Deli Auto Research Skill Deepseek](../ch01/1146-deepseek.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/world-knowledge-agent-self-evolution-tencent-hkustgz.md)
 

@@ -258,7 +258,7 @@ Stream 模式的多实例冲突问题（消息重复处理）是典型的"开发
 
 ## 相关实体
 - [Claude Code Core Internals](../ch03/075-claude-code.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/1113-anthropic-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/1117-anthropic-claude-code.md)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/846-anthropic.md)
 - [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/047-coding-agent.md)
 - [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/156-aws-devops-agent.md)

@@ -33,7 +33,7 @@
 - **[Claude Code Prompt Context Harness](../ch09/059-claude-code-prompt.md)**（飞樰）侧重 Prompt 模块化/Harness 安全/多 Agent 体系
 - **[Claude Code Agent Engineering](../ch03/067-claude-code-agent.md)**（SooKool）侧重 StreamingToolExecutor/主循环/压缩/小模型/Hook
 - **[Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)**（800行轻量架构）与 Claude Code 同体系但更精简
-- **[Agent Skill Writing](../ch04/554-agent-skill.md)** Skill 编写规范对应 Fat Skills 理念
+- **[Agent Skill Writing](../ch04/555-agent-skill.md)** Skill 编写规范对应 Fat Skills 理念
 - **[Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)** Hermes 的 Self-Evolving 与 Claude Code 架构的关系
 
 ## 相关实体

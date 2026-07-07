@@ -11,7 +11,7 @@
 
 - [How Superset built the IDE for AI agents on Vercel](ch01/067-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
 - [Toto 2.0: Time series forecasting enters the scaling era](../ch11/154-toto-2-context-aware-log-analytics-for-complex-distributed.md)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04/533-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.md)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04/520-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.md)
 
 ## 深度分析
 文章揭示了创始人可见性问题的结构性矛盾：**信息不对称导致的机会成本在早期最大**，但创始人恰恰在最早期的"隐身模式"中损失最严重。

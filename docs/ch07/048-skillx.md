@@ -40,7 +40,7 @@
 - **Planning Skills** = Agent 的"方法论知识"（面对新任务的策略思维）
 - **Functional Skills** = Agent 的"技能插件"（可复用工具调用流程）
 - **Atomic Skills** = Agent 的"肌肉记忆"（底层工具操作模式）
-与 [Agent Skill 编写指南](../ch04/554-agent-skill.md) 的实践视角互补： SkillX 从学习角度建立技能体系，Agent Skill 指南从编写规范角度约束技能格式。
+与 [Agent Skill 编写指南](../ch04/555-agent-skill.md) 的实践视角互补： SkillX 从学习角度建立技能体系，Agent Skill 指南从编写规范角度约束技能格式。
 
 ## 相关页面
 ## 深度分析
@@ -64,7 +64,7 @@ SkillX的三层技能体系（Planning / Functional / Atomic）揭示了Agent经
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillx-zhejiang-university.md)
 
 ## 相关实体
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/554-agent-skill.md)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/555-agent-skill.md)
 - [9个Agent技能模块化SageMaker微调生命周期](../ch04/381-aws-sagemaker-ai-agent.md)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/098-anthropic-agent.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/262-skill.md)

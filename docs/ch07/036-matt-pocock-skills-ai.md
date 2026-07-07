@@ -114,7 +114,7 @@ Matt Pocock Skills 不只是零散命令，它们串成一条完整开发流：
 - [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/297-claude-md.md)
 - [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/141-openai-codex.md)
 - [Graphify Software Engineering Knowledge Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/1113-anthropic-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/1117-anthropic-claude-code.md)
 - [Stepan Gershuni Ai Native Startup Guide](../ch05/018-ai-native.md)
 
 ---

@@ -38,7 +38,7 @@ That led us to build a system that combines three technologies: Model Context Pr
 - 与现有实体的差异化角度：本文来自 dropbox.tech 视角
 - 引用源：[Dropbox Mcp Dash Design Code Security](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dropbox-mcp-dash-design-code-security.md)
 ## 相关实体
-- [what is urban density design? a clear guide to how cities ge](ch01/1156-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.md)
+- [what is urban density design? a clear guide to how cities ge](ch01/1161-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.md)
 - [how to create websites with great ux designs: principles and](ch01/128-how-to-create-websites-with-great-ux-designs-principles-and.md)
 - [how we made window join parallel and vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.md)
 

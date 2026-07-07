@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Factory Mission Multi Agent Architecture](../ch01/1143-factory-mission-multi-agent-architecture.md)
+- [Factory Mission Multi Agent Architecture](../ch01/1148-factory-mission-multi-agent-architecture.md)
 - [Anthropic Multi Agent Research System](ch04/508-anthropic-multi-agent-research-system.md)
 - [Multi Agent Mission Factory Luke Aiengineer](../ch03/045-agent.md)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)

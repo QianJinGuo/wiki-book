@@ -47,7 +47,7 @@
 - [你写的 Skill，及格了吗？](../ch04/262-skill.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch03/045-agent.md)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch01/1036-claude.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/608-claude-managed-agents.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/609-claude-managed-agents.md)
 - [AI Agent 工程师能力地图](../ch04/147-ai-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 

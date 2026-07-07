@@ -49,7 +49,7 @@ DeepSeek-V4选择在同一篇论文中同时发布多个相互依赖的技术贡
 - [ds4c deepseek v4 antirez](ch01/519-ds4c-deepseek-v4-antirez.md)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1048-deepseek-v4.md)
 - [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](ch01/1048-deepseek-v4.md)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/969-deepseek.md)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1146-deepseek.md)
 
 ---
 

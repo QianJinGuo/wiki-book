@@ -21,7 +21,7 @@ TokenSpeed 的核心竞争力来自三个正交的技术决策，针对 agentic 
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/lightseek-tokenspeed.md)
 
-- [Claude Managed Agents 开发者指南](../ch04/608-claude-managed-agents.md)
+- [Claude Managed Agents 开发者指南](../ch04/609-claude-managed-agents.md)
 
 ## 相关实体
 

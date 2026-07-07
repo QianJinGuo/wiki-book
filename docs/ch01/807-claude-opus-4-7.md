@@ -14,7 +14,7 @@ Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 
 ## 相关实体
 - [From Prompt To Harness Claude Official](../ch05/009-harness.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/1113-anthropic-claude-code.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/1117-anthropic-claude-code.md)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/075-claude-code.md)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/272-anthropic-claude-managed-agents.md)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/075-claude-code.md)

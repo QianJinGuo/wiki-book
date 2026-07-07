@@ -13,7 +13,7 @@ Claude Managed Agents官方Harness平台完整手册。本文来自 WeChat data-
 - **评分**: score=81
 
 ## 与现有知识库内容的关联
-- [Claude Managed Agents](../ch04/608-claude-managed-agents.md) — 托管 Harness 平台
+- [Claude Managed Agents](../ch04/609-claude-managed-agents.md) — 托管 Harness 平台
 - [Agent/Skills/Teams 架构演进与选型](../ch04/232-agent-skills-teams.md) — Anthropic Skills 认知一致性机制
 - [Skill 形式化理论](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) — Skill 的六元组定义与 DAG 步骤计划
 
@@ -81,9 +81,9 @@ MCP 服务器的价值在于复用现有生态。如果你已经有 Slack、GitH
 - **SHA256**: fac150d4db129656134597c4791bc1b54dea6601f52cefe3227537858581d609
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/608-claude-managed-agents.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/609-claude-managed-agents.md)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/272-anthropic-claude-managed-agents.md)
-- [Claude Managed Agents 开发者指南](../ch04/608-claude-managed-agents.md)
+- [Claude Managed Agents 开发者指南](../ch04/609-claude-managed-agents.md)
 - [claude managed agents official](../ch04/525-claude-managed-agents-official.md)
 
 - [obsidian claude code integration guide](../ch09/112-obsidian-claude-code-integration-guide.md)
@@ -91,7 +91,7 @@ MCP 服务器的价值在于复用现有生态。如果你已经有 Slack、GitH
 - [Introducing Claude for Small Business](ch01/028-introducing-claude-for-small-business.md)
 - [Introducing Claude for Small Business](ch01/028-introducing-claude-for-small-business.md)
 - [Xero Announces Integration with Anthropic's Claude](ch01/846-anthropic.md)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1206-anthropic-claude.md)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1218-anthropic-claude.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/075-claude-code.md)
 - [Anthropic Computer Use 最佳实践](ch01/821-anthropic-computer-use.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)

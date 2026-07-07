@@ -13,7 +13,7 @@
 
 ## 相关实体
 - We Tested DeepSeek V4 Pro and Flash Against Claude
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/969-deepseek.md)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1146-deepseek.md)
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/1048-deepseek-v4.md)
 - [ds4c deepseek v4 antirez](ch01/519-ds4c-deepseek-v4-antirez.md)
 

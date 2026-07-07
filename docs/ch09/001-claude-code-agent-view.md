@@ -96,7 +96,7 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1036-claude.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
-- [2026年最值得关注的15款开发者工具深度解读](../ch01/911-20.md)
+- [2026年最值得关注的15款开发者工具深度解读](../ch01/1204-15.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

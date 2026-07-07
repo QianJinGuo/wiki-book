@@ -182,7 +182,7 @@ Plan Mode 的本质是"权限系统里的状态切换"——技术上 Claude 仍
 
 **这一设计哲学揭示了 Agent 系统设计的一个深层原则**：**不要用权限禁锢 Agent，而要用行为引导**。完全禁止 Agent 做某些事会大幅降低其能力；通过提示词和行为约束引导它"先规划再执行"是更优雅的方案。
 
-这与 [Claude Managed Agents 企业自托管](../ch04/608-claude-managed-agents.md) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
+这与 [Claude Managed Agents 企业自托管](../ch04/609-claude-managed-agents.md) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
 
 ### 10. 终止原因的多样性：8 种退出路径
 
@@ -309,7 +309,7 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 - [Harness Engineering Core Patterns](../ch05/062-harness-engineering.md)
 - [Harness 状态边界与失败闭环](../ch05/009-harness.md)
 - [Factory Mission Multi-Agent 系统](../ch03/045-agent.md)
-- [Claude Managed Agents 企业自托管](../ch04/608-claude-managed-agents.md)
+- [Claude Managed Agents 企业自托管](../ch04/609-claude-managed-agents.md)
 - [OpenClaw 多 Agent 团队实践](../ch04/046-openclaw-multi-agent-team-practice-v2.md)
 - [OpenClaw 完全指南](../ch11/213-openclaw.md)
 - [OpenClaw 多智能体团队搭建经验](../ch11/213-openclaw.md)

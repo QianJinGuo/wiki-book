@@ -73,7 +73,7 @@ AI 虽是单一智能复制，其"多样性"输出被训练数据模式限制。
 - [Lightfield Introducing Skills](ch03/069-skills.md)
 - [Claude Code Team 10 Tips Boris](ch03/075-claude-code.md)
 - [Learning Path To Senior](https://github.com/QianJinGuo/wiki/blob/main/entities/learning-path-to-senior.md)
-- [The Main Path To Truly Creative Ai](../ch01/1209-the-main-path-to-truly-creative-ai.md)
+- [The Main Path To Truly Creative Ai](../ch01/1221-the-main-path-to-truly-creative-ai.md)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/against-brain-damage.md)

@@ -78,7 +78,7 @@ Widget 运行在 `sandbox="allow-scripts allow-forms"` 的 iframe 中，**不加
 ### 输出端 Dashboard
 Agent 执行完数据分析任务后，把结果渲染成 Dashboard：关键指标卡片 + 趋势折线图 + 留存曲线 + 响应时间分布图并排对比。
 
-## 与 [Agent Skill Writing](../ch04/554-agent-skill.md) 的关系
+## 与 [Agent Skill Writing](../ch04/555-agent-skill.md) 的关系
 Skill UI 是 Skill 编写规范的自然延伸：
 
 - **** 定义了 Skill 的 CLI 层（SKILL.md + scripts/ + references/）

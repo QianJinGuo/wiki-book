@@ -337,7 +337,7 @@ Anthropic 的 Activation Metadata 模式指出：一个好的 description 必须
 - 对于真正「不能出错」的低自由度场景，直接命令式反而更合适
 
 ## Related
-- [Agent Skill 编写指南](../ch04/554-agent-skill.md) — Skill 格式、渐进式披露、编写规范、评估迭代的基础知识
+- [Agent Skill 编写指南](../ch04/555-agent-skill.md) — Skill 格式、渐进式披露、编写规范、评估迭代的基础知识
 - [Hermes Agent](../ch03/090-hermes-agent.md) — 支持 Skill 机制的核心开源 Agent
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — 内置 Skill 系统实现
 - [Anthropic 14 模式原始文章](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-14-skill-patterns-best-practices.md)

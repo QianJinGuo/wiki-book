@@ -31,7 +31,7 @@ related:
   - [Harness 工程化体系](../ch05/062-harness-engineering.md)
   - [Context Management 与 Working Set](../ch05/038-agent-harness.md)
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/608-claude-managed-agents.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/609-claude-managed-agents.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.md)
 - [Agent Harness 12 组件与 7 个关键决策](../ch05/038-agent-harness.md)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.md)

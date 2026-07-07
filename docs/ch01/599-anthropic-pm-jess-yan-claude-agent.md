@@ -74,7 +74,7 @@ METR 的测量基准（Sonnet 3.5 21分钟 vs Opus 4.6 12小时）反映的是�
 - [Anthropic Managed Agents Scaling](ch01/846-anthropic.md)
 - [Anthropic Claude Managed Agents Platform Launch](ch01/272-anthropic-claude-managed-agents.md)
 - [Anthropic Claude Managed Agents Guide](ch01/272-anthropic-claude-managed-agents.md)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04/608-claude-managed-agents.md)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04/609-claude-managed-agents.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-pm-jess-yan-managed-agents.md)
 

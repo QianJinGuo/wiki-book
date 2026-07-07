@@ -83,7 +83,7 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/501-amazon-bedrock-agentcore.md)
 - [AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](../ch07/043-aws-devops-agent-mcp-server.md)
 - [AI Agent 工程师能力地图](ch04/147-ai-agent.md)
-- [Enable Safe Agentic Payments With Built In Guardrails Using ](ch04/555-enable-safe-agentic-payments-with-built-in-guardrails-using.md)
+- [Enable Safe Agentic Payments With Built In Guardrails Using ](ch04/067-enable-safe-agentic-payments-with-built-in-guardrails-using.md)
 - [让 Amazon Quick 操作飞书构建远程 Mcp 服务的设计实践](../ch11/202-amazon-quick.md)
 - [Bedrock Agentcore Secrets Manager Identity](../ch11/048-bedrock-agentcore.md)
 - [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11/013-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)

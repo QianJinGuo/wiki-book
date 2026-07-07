@@ -20,7 +20,7 @@ source_url: https://mp.weixin.qq.com/s/kNZE9fzCvOi3Em6JlueB0g
 - [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/846-anthropic.md)
 - [你写的 Skill，及格了吗？](ch04/262-skill.md)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1036-claude.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/608-claude-managed-agents.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/609-claude-managed-agents.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/075-claude-code.md)
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
 - [天猫新品营销技术团队AI编码实战指南（上）](ch04/070-ai.md)
@@ -38,7 +38,7 @@ source_url: https://mp.weixin.qq.com/s/kNZE9fzCvOi3Em6JlueB0g
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/213-openclaw.md)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/062-harness-engineering.md)
 
-- [一次构建，随处复用：python 中的泛型仓库模式](ch04/534-python.md)
+- [一次构建，随处复用：python 中的泛型仓库模式](ch04/535-python.md)
 
 ## 深度分析
 本文从**环境工程**视角重新定义了企业级 Agent 的核心瓶颈：不是模型能力不足，而是**上下文供给能力**的缺失。与软件工程天然数字化不同，传统行业的 Agent 处于"半失明"状态——缺乏对真实业务环境的持续感知能力。

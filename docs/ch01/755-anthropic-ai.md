@@ -10,7 +10,7 @@
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/752-openai-gpt-realtime-voice-models-qbitai.md)
 - [Harness Engineering Three Evolutions](../ch05/062-harness-engineering.md)
-- [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](ch01/969-deepseek.md)
+- [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](ch01/1146-deepseek.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)
 

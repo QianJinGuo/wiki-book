@@ -85,7 +85,7 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 - [Claude Code 源码核心机制详解](../ch03/075-claude-code.md)
 - [柚漫剧 AI全流程提效拆解](../ch04/070-ai.md)
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/075-claude-code.md)
-- [Claude Managed Agents 开发者指南](../ch04/608-claude-managed-agents.md)
+- [Claude Managed Agents 开发者指南](../ch04/609-claude-managed-agents.md)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/075-claude-code.md)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 

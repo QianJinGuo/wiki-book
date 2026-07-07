@@ -15,7 +15,7 @@ pi-mono 是一个 npm workspace monorepo 的 TypeScript 项目，提供构建 AI
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/376-agent-skills.md)
 - [Cursor Harness Model Production Floor](ch01/325-cursor-harness-model-production-floor.md)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/405-vibe-coding-agentic-engineering.md)
-- [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](ch01/969-deepseek.md)
+- [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](ch01/1146-deepseek.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pi-mono-github.md)
 

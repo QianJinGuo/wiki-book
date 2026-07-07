@@ -13,7 +13,7 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - **评分**: score=80
 
 ## 与现有知识库内容的关联
-- [Claude Managed Agents](ch04/608-claude-managed-agents.md) — 托管 Harness 平台
+- [Claude Managed Agents](ch04/609-claude-managed-agents.md) — 托管 Harness 平台
 - [Agent/Skills/Teams 架构演进与选型](ch04/232-agent-skills-teams.md) — Anthropic Skills 认知一致性机制
 - [Skill 形式化理论](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) — Skill 的六元组定义与 DAG 步骤计划
 
@@ -34,7 +34,7 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/376-agent-skills.md)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/045-agent.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/032-qoder-skills.md)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/554-agent-skill.md)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/555-agent-skill.md)
 - [Qoder Skills 完全指南](../ch07/032-qoder-skills.md)
 - [Hermes Agent](../ch03/090-hermes-agent.md)
 - [你写的 Skill，及格了吗？](ch04/262-skill.md)

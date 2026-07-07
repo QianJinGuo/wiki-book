@@ -19,7 +19,7 @@ Amazon Web Services (AWS)
 - [Agent 原理、架构与工程实践](../ch03/045-agent.md)
 - [OpenClaw 多智能体团队搭建实战经验](../ch04/046-openclaw-multi-agent-team-practice-v2.md)
 - [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](../ch04/147-ai-agent.md)
-- [factory mission multi agent architecture](../ch01/1143-factory-mission-multi-agent-architecture.md)
+- [factory mission multi agent architecture](../ch01/1148-factory-mission-multi-agent-architecture.md)
 
 ## 深度分析
 本文揭示了零售供应链中从 data-informed 到 data-driven 的本质瓶颈：**查询壁垒、洞察缺位、行动脱节**。传统数字化解决了数据采集问题，但"从查询到行动"的链路仍高度依赖人工。研究显示供应链团队 60-70% 的时间花在数据查询和格式对齐上，真正的分析时间被压缩。

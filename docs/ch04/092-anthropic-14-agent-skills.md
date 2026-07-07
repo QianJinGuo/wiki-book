@@ -8,7 +8,7 @@
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/098-anthropic-agent.md)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/187-anthropic-google-agent-skills.md)
 - [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/660-skills-anthropic-openai-comparison-frontend-design.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/608-claude-managed-agents.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/609-claude-managed-agents.md)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/846-anthropic.md)
 - [Agent Skill 设计模式](ch04/376-agent-skills.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.md)

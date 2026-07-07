@@ -135,7 +135,7 @@ Catalog的价值会随着Agent数量增加而指数增长。当只有一个Agent
 - [从多智能体编排到Ai自主决策资损防控体系的架构演进](ch04/070-ai.md)
 - [Hermes Agent Goal Runtime Architecture](ch04/351-hermes-agent-goal.md)
 - [Gpt Image 2完全指南](../ch01/848-gpt-image-2.md)
-- [一次构建随处复用Python 泛型仓库模式](ch04/534-python.md)
+- [一次构建随处复用Python 泛型仓库模式](ch04/535-python.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-开发范式演进从环境工程出发.md)

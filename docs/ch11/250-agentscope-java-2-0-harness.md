@@ -334,7 +334,7 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/038-agent-harness.md)
 - [Subagents 详解Claude Code 如何避免上下文污染](../ch03/075-claude-code.md)
-- [Factory Mission Multi Agent Architecture](../ch01/1143-factory-mission-multi-agent-architecture.md)
+- [Factory Mission Multi Agent Architecture](../ch01/1148-factory-mission-multi-agent-architecture.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/062-harness-engineering.md)
 - [Iii Dev Worker Trigger Function](../ch01/255-iii-dev-worker.md)
 - [AgentScope Java Harness Framework 42KB](../ch05/009-harness.md) — 同 AgentScope Java 2.0 早期综述

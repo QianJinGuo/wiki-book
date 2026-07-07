@@ -14,7 +14,7 @@
 - [Tether Launches Developer Grants Program For Local First Ai ](../ch11/193-tether-launches-developer-grants-program-for-local-first-ai.md)
 - [Anthropic_Cache_Tokenomics](ch01/846-anthropic.md)
 - [Introducing Claude For Small Business](ch01/028-introducing-claude-for-small-business.md)
-- [Wetesteddeepseekv4Proandflashagainstclau](ch01/969-deepseek.md)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch01/1146-deepseek.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 

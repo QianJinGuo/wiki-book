@@ -280,7 +280,7 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 - [AI 自我改进自举](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md)
 - [Evaluation Harness Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
 - [Verifier-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
-- [SGLang](ch04/543-agent-assisted-sglang-ai-llm.md) — Qwen3.5 部署用到的推理引擎
+- [SGLang](ch04/544-agent-assisted-sglang-ai-llm.md) — Qwen3.5 部署用到的推理引擎
 - [DeepAgent 架构演进](../ch03/045-agent.md) — 初始 Harness 基于 DeepAgent SDK
 - [ByteDance TRAE Harness Engineering Guide](../ch01/642-trae-harness-engineering.md)
 - [复旦 AHE Agentic Harness Engineering](../ch05/062-harness-engineering.md)

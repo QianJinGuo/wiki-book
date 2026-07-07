@@ -83,9 +83,9 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - **持续进化**：Reflection Agent 思路可推广至其他 AI 工作流，将人工修复经验结构化为可复用的 patch 资产
 
 ## 相关页面
-- [Skill 写作基础指南](../ch04/554-agent-skill.md) — 入门级别的 Skill 写作教程
-- [Skill 写作进阶](../ch04/554-agent-skill.md) — 高级技巧
-- [Skill 评估方法](../ch04/554-agent-skill.md) — 如何评估 Skill 质量
+- [Skill 写作基础指南](../ch04/555-agent-skill.md) — 入门级别的 Skill 写作教程
+- [Skill 写作进阶](../ch04/555-agent-skill.md) — 高级技巧
+- [Skill 评估方法](../ch04/555-agent-skill.md) — 如何评估 Skill 质量
 
 ## 相关实体
 - [十年老技术开发的 AI Agent 探索之路](../ch04/147-ai-agent.md)

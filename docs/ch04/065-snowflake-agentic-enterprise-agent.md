@@ -235,7 +235,7 @@ Cortex Sense 从 Snowflake 已有数据和活动中构建信号，自动增强 A
 - [Agentscope Builder Enterprise Self Evolving Agent Harness](../ch05/038-agent-harness.md)（企业级 Agent Harness 同主题）
 - [Asana Agentic Work Management Platform Lettertwo](../ch03/045-agent.md)（Asana — 另一个企业级 Agent 平台视角）
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/501-amazon-bedrock-agentcore.md)（AWS Bedrock AgentCore — 对比平台）
-- [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch04/608-claude-managed-agents.md)（Anthropic Managed Agents — 另一家厂商视角）
+- [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch04/609-claude-managed-agents.md)（Anthropic Managed Agents — 另一家厂商视角）
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/018-ai-native.md)（Spec-as-AIOS — 治理即架构同思路）
 - [Taobao Ai Sre Digital Employee Code Quality Governance](../ch01/1015-ai-sre.md)（数字员工治理 — 行业对照）
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/152-amazon-bedrock.md)（AgentOps — 智能体可观测性对照）

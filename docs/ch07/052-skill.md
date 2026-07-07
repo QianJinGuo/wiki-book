@@ -60,7 +60,7 @@
 
 ## 相关实体
 - [Skill.md 简历生成器 Resume Forge](../ch04/262-skill.md)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/554-agent-skill.md)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/555-agent-skill.md)
 - [Hermes Agent](../ch03/090-hermes-agent.md)
 - [Qoder Skills 完全指南](ch07/032-qoder-skills.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)

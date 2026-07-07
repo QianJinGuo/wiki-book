@@ -74,7 +74,7 @@ function routeAfterLLM(state): string {
 | `getGraph()` | 可视化图结构（调试用） |
 | `getState()` | 获取当前状态（需要 Checkpointer） |
 
-## 与 [Agent Skill Writing](ch04/554-agent-skill.md) 的关系
+## 与 [Agent Skill Writing](ch04/555-agent-skill.md) 的关系
 LangGraph 是构建复杂 Agent Skill 的底层运行时框架。当一个 Skill 需要：
 
 - 多步骤工作流（有条件分支、循环）

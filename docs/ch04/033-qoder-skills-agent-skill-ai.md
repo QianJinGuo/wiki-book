@@ -351,7 +351,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 
 ## 相关实体
 - [Qoder Skills 完全指南](../ch07/032-qoder-skills.md)（同主题旧版）
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/554-agent-skill.md)（同主题不同 MP — 实操指引）
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/555-agent-skill.md)（同主题不同 MP — 实操指引）
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/098-anthropic-agent.md)
 - [Agent Skill 设计模式](ch04/376-agent-skills.md)（Anthropic → Google 演进）
 - [重新定义Skill开发：保姆级教程](ch04/262-skill.md)
@@ -368,7 +368,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](ch04/070-ai.md)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/045-agent.md)
 - [十年老技术开发的 AI Agent 探索之路](ch04/147-ai-agent.md)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/554-agent-skill.md)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/555-agent-skill.md)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/187-anthropic-google-agent-skills.md)
 - [Garry Tan](../ch01/617-garry-tan.md)
 - [Agent Workflows](ch04/335-agent-workflows.md)

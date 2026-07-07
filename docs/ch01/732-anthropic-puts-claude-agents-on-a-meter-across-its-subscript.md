@@ -28,13 +28,13 @@
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/846-anthropic.md)
 > ai agent platforms topic map（已删除）
 
-- [Claude Managed Agents 开发者指南](../ch04/608-claude-managed-agents.md)
+- [Claude Managed Agents 开发者指南](../ch04/609-claude-managed-agents.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/075-claude-code.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/608-claude-managed-agents.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/609-claude-managed-agents.md)
 - [Introducing Claude for Small Business](ch01/028-introducing-claude-for-small-business.md)
 - [Introducing Claude for Small Business](ch01/028-introducing-claude-for-small-business.md)
 - [Xero Announces Integration with Anthropic's Claude](ch01/846-anthropic.md)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1206-anthropic-claude.md)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1218-anthropic-claude.md)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/272-anthropic-claude-managed-agents.md)
 - [Claude Managed Agents 官方 Harness 平台指南](ch01/272-anthropic-claude-managed-agents.md)
 - [Anthropic Computer Use 最佳实践](ch01/821-anthropic-computer-use.md)

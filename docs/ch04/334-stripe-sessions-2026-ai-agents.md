@@ -14,7 +14,7 @@
 
 ## 相关资源
 - [Agent Memory 架构](ch04/388-perplexity-brain-self-improving-agent-memory-architecture.md)
-- [Claude Managed Agents 开发者指南](ch04/608-claude-managed-agents.md)
+- [Claude Managed Agents 开发者指南](ch04/609-claude-managed-agents.md)
 
 ## 深度分析
 **1. Stripe 押注"AI 原生经济基础设施"战略定位的本质跃迁**
