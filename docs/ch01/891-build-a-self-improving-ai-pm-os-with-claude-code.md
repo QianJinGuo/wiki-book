@@ -11,7 +11,7 @@
 ## 相关实体
 
 - [Hermes Agent 深度解析（阿里云/飞樰）](../ch03/090-hermes-agent.md)
-- [Build Live Translation Apps with gpt-realtime-translate](ch01/137-build-live-translation-apps-with-gpt-realtime-translate.md)
+- [Build Live Translation Apps with gpt-realtime-translate](ch01/138-build-live-translation-apps-with-gpt-realtime-translate.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.md)
 
 ## 深度分析

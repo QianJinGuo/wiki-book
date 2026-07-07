@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [the inevitable need for an open model consortium](ch01/1089-the-inevitable-need-for-an-open-model-consortium.md)
+- [the inevitable need for an open model consortium](ch01/452-the-inevitable-need-for-an-open-model-consortium.md)
 - [ai-driven layoffs aren’t making business sense | cio](../ch03/011-cio.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/5238213.md)
 

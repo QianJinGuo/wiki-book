@@ -52,7 +52,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 ## 相关实体
 - [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.md)
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/009-harness.md)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.md)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.md)
 - [Agent Harness 解析：智能体架构深度拆解](../ch05/038-agent-harness.md)
 - [From Agent Protocol to Harness Skill](ch04/387-from-agent-protocol-to-harness-skill.md)
 - [Agent Memory 架构解析](ch04/096-agent-memory.md)
@@ -62,7 +62,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/045-agent.md)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](ch04/070-ai.md)
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/1048-deepseek-v4.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.md)
 - [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)

@@ -50,7 +50,7 @@ Karpathy加入Anthropic后首讲：Vibe Coding已死，Software3.0来了 涉及a
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/213-openclaw.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/092-harness-engineering.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/062-harness-engineering.md)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

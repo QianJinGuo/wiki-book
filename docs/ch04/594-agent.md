@@ -1,32 +1,32 @@
-# 企业级 Agent 编排
+# 特赞企业级生成式 Agent
 
-## Ch04.594 企业级 Agent 编排
+## Ch04.594 特赞企业级生成式 Agent
 
-> 📊 Level ⭐⭐ | 1.7KB | `entities/enterprise-agent-orchestration.md`
+> 📊 Level ⭐⭐ | 1.8KB | `entities/tezign-generative-enterprise-agent.md`
 
-# 企业级 Agent 编排
+# 特赞企业级生成式 Agent
 
-企业场景下的 Agent 编排挑战：权限隔离、审计合规、多租户、资源配额、故障隔离。与开源场景相比更强调可控性和可观测性。
+特赞（Tezign）在企业场景的生成式 Agent 实践：将创意内容生产流程 Agent 化，涵盖素材理解、创意生成、合规审核、多渠道分发。
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[CLI、MCP 和 CLI+Skill，应该如何选？](ch04/262-skill.md)。 相关主题通过 [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](../ch03/045-agent.md) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/938-agent-ai.md)。 相关主题通过 [CUGA: IBM Research Enterprise Agent Harness](../ch05/038-agent-harness.md) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
 ## 实践启示
 
 1. 本领域系统性内容尚待采集——当前知识库在此方向的覆盖密度偏低
-2. 建议优先采集 企业级 Agent 编排 相关的一手来源（论文/官方文档/工程博客）
+2. 建议优先采集 特赞企业级生成式 Agent 相关的一手来源（论文/官方文档/工程博客）
 3. 通过交叉链接密度评估本领域的知识图谱成熟度
 
 ## 相关实体
 
+- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/938-agent-ai.md)
+- [CUGA: IBM Research Enterprise Agent Harness](../ch05/038-agent-harness.md)
 - [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/262-skill.md)
-- [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](../ch03/045-agent.md)
-- [Enterprise AI Agent Development Tools (n8n Report 2026)](ch04/147-ai-agent.md)
-- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](../ch05/009-harness.md)
-- [多 Agent 编排系统](ch04/465-agent-orchestration.md)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/533-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.md)
+- [Claude Managed Agents 新更新\"专属云\"模式：把Agent的手放回企业内部](ch04/608-claude-managed-agents.md)
 
 ---
 

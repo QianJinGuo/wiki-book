@@ -37,7 +37,7 @@ $1,000 → $150,000 的阶梯式解锁机制，本质上是将云厂商常见的
 - [Finanser Retail Banking Broken](../ch04/070-ai.md)
 - [Microsoft For Startups Microsoft V2](https://github.com/QianJinGuo/wiki/blob/main/entities/Microsoft-for-Startups-Microsoft-v2.md)
 - [Microsoft Is Quietly Shopping For An Openai Replac](ch01/035-microsoft-is-quietly-shopping-for-an-openai-replacement.md)
-- [Microsoft For Startups Microsoft](ch01/859-microsoft-for-startups-microsoft.md)
+- [Microsoft For Startups Microsoft](ch01/124-microsoft-for-startups-microsoft.md)
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-startups.md)

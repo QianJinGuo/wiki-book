@@ -48,7 +48,7 @@ source_url: https://mp.weixin.qq.com/s/ieQhpziDVspRQ0Kun_mYzw
 - [十年老技术开发的 AI Agent 探索之路](ch04/147-ai-agent.md)
 - [ai agent memory systems](ch04/096-agent-memory.md)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/606-claude-managed-agents.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/608-claude-managed-agents.md)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/846-anthropic.md)
 - [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/846-anthropic.md)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1036-claude.md)
@@ -65,9 +65,9 @@ source_url: https://mp.weixin.qq.com/s/ieQhpziDVspRQ0Kun_mYzw
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/045-agent.md)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/397-agentrun.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/092-harness-engineering.md)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/062-harness-engineering.md)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/213-openclaw.md)
-- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/092-harness-engineering.md)
+- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/062-harness-engineering.md)
 - [token级，精准控制生成长度：3b模型击败gpt 5.4、claude](../ch01/1036-claude.md)
 
 ---

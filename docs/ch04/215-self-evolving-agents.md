@@ -78,10 +78,10 @@ Model-Environment Co-Evolution 的两个方向：
 
 - [Hermes Agent 自进化机制源码解析](../ch03/090-hermes-agent.md)
 - [基于AgentCore构建自学习、可进化的文旅行业近似信息抽取Agents | 亚马逊AWS官方博客](../ch03/045-agent.md)
-- [GBrain](../ch01/318-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.md)
+- [GBrain](../ch01/311-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/624-llm-wiki-obsidian-wiki-gbrain.md)
-- [17种Agent架构演进：控制流设计的完整演化史](ch04/596-17-agent.md)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/620-llm-wiki-obsidian-wiki-gbrain.md)
+- [17种Agent架构演进：控制流设计的完整演化史](ch04/598-17-agent.md)
 - [hermes-agent-self-evolving-source-analysis](../ch03/090-hermes-agent.md)
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
 - [AI Agent 工程师能力地图](ch04/147-ai-agent.md)

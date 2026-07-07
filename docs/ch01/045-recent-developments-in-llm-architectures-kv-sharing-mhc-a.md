@@ -40,10 +40,10 @@ DeepSeek V4引入两项关键创新：
 **数据质量仍是核心驱动力**：尽管架构调整贡献显著，Sebastian Raschka在文末强调，模型质量的主要驱动力仍然是数据质量和训练配方，而非架构本身。  这提示在关注架构演进的同时，不应低估数据工程和训练稳定性的基础价值。
 ## 相关实体
 - [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](ch01/1125-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md)
-- [Recent Developments In Llm Architectures Jiqizhixin](ch01/590-llm.md)
-- [Why Im Leaving Github For Forgejo](ch01/749-github.md)
+- [Recent Developments In Llm Architectures Jiqizhixin](ch01/586-llm.md)
+- [Why Im Leaving Github For Forgejo](ch01/751-github.md)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
-- [Microsoft For Startups Microsoft](ch01/859-microsoft-for-startups-microsoft.md)
+- [Microsoft For Startups Microsoft](ch01/124-microsoft-for-startups-microsoft.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/recent_developments_in_llm_architectures.md)
 

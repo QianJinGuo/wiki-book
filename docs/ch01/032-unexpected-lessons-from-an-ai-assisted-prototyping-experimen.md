@@ -94,7 +94,7 @@ Adobe Design 的 Veronica Peitong Chen 在 2026 年 6 月复盘了一个在 Adob
 - [system over model, tested: reproducing mythos's freebsd find](ch01/911-20.md)
 - [from doer to director: the ai mindset shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
 - [DDoSing Software Delivery Pipelines](ch01/911-20.md)
-- [How my non-engineering team at Sentry learned to ship](ch01/469-how-my-non-engineering-team-at-sentry-learned-to-ship.md)
+- [How my non-engineering team at Sentry learned to ship](ch01/464-how-my-non-engineering-team-at-sentry-learned-to-ship.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 

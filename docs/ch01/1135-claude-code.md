@@ -176,7 +176,7 @@ Claude Code 的 7 层记忆架构本质上是一个**成本递增、能力递增
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-7-layer-memory-architecture.md)
 
-- [harness-engineering-systematic-explainer](../ch05/092-harness-engineering.md)
+- [harness-engineering-systematic-explainer](../ch05/062-harness-engineering.md)
 - [claude code 多智能体协作体系设计：从单agent到多agent工作流](../ch03/075-claude-code.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 

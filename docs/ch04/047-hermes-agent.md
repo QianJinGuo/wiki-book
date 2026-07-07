@@ -98,7 +98,7 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 - [SkillClaw](ch04/427-skillclaw-nacos-agent-skill-registry.md)
 - [Agent 自我改进的六条路](../ch03/045-agent.md)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.md)
-- [GBrain](../ch01/318-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.md)
+- [GBrain](../ch01/311-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.md)
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/911-20.md)
 - [OpenHuman: AI Agent 持久记忆框架](ch04/096-agent-memory.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)

@@ -8,13 +8,13 @@
 
 ## 相关实体
 - [独家对话罗福莉：AI范式已然巨变！](../ch04/070-ai.md)
-- [agentic code review](ch01/158-agentic-code-review.md)
-- [apple foundation models](ch01/143-apple-foundation-models.md)
+- [agentic code review](ch01/159-agentic-code-review.md)
+- [apple foundation models](ch01/144-apple-foundation-models.md)
 - [the oracle and the firm](https://github.com/QianJinGuo/wiki/blob/main/entities/calv-oracle-and-the-firm.md)
 - [what job interviews taught me about kubernetes](https://github.com/QianJinGuo/wiki/blob/main/entities/notnotp-k8s-interviews-non-technical.md)
 - [here](https://github.com/QianJinGuo/wiki/blob/main/entities/randsinrepose-we-dont-believe-you-rub.md)
 - [a backdoor in a linkedin job offer](../ch04/070-ai.md)
-- [every frame perfect](ch01/154-every-frame-perfect.md)
+- [every frame perfect](ch01/155-every-frame-perfect.md)
 - [the golden rule of customizable select](https://github.com/QianJinGuo/wiki/blob/main/entities/webkit-customizable-select-golden-rule.md)
 
 ## 文章摘要

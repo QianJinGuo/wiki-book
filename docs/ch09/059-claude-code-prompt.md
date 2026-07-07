@@ -154,8 +154,8 @@ coordinator/worker/verifier/planner 四种 Agent 角色通过强角色边界 SOP
 **硬覆盖 > 协调者 > Agent > Custom > Default**：当多个 prompt 来源共存时，这个优先级顺序确保行为可预测。在设计自定义 prompt 机制时，需要明确它处于哪个优先级层级。
 
 ## 相关实体
-- [Anthropic Prompt Caching Claude Code Agihunt](../ch01/284-anthropic-prompt-caching-claude-code.md)
-- [Anthropic Prompt Caching Claude Code](../ch01/284-anthropic-prompt-caching-claude-code.md)
+- [Anthropic Prompt Caching Claude Code Agihunt](../ch01/277-anthropic-prompt-caching-claude-code.md)
+- [Anthropic Prompt Caching Claude Code](../ch01/277-anthropic-prompt-caching-claude-code.md)
 - [Claude Code Prompt Source Analysis](ch09/059-claude-code-prompt.md)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/075-claude-code.md)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/075-claude-code.md)

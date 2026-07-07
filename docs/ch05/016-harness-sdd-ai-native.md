@@ -16,7 +16,7 @@
 - [Fudan Peking Ahe Agentic Harness Engineering](../ch04/230-ahe-agentic-harness-engineering.md)
 - [Pi Openclaw Coding Harness](../ch11/213-openclaw.md)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/047-openspec.md)
-- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/092-harness-engineering.md)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/062-harness-engineering.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
 
@@ -199,9 +199,9 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 - [Fudan Peking Ahe Agentic Harness Engineering](../ch04/230-ahe-agentic-harness-engineering.md)
 - [Pi Openclaw Coding Harness](../ch11/213-openclaw.md)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/047-openspec.md)
-- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/092-harness-engineering.md)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/062-harness-engineering.md)
 - [K/S/T 知识底座](ch05/038-agent-harness.md)（相关：K/S/T 是知识用途分类，本文在工程层落地）
-- [Harness Engineering 综述](ch05/092-harness-engineering.md)（相关：三阶段 Prompt→Context→Harness）
+- [Harness Engineering 综述](ch05/062-harness-engineering.md)（相关：三阶段 Prompt→Context→Harness）
 - [Spec as AIOS (高德 App 平台)](../ch01/1050-spec.md)（同团队同主题另一视角）
 
 → [第 1 来源原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)

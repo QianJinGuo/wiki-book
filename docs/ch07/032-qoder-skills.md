@@ -95,7 +95,7 @@
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/376-agent-skills.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/200-tencent-vibe-coding-to-agentic-engineering-backend.md)
 - [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.md)
-- [Code Intelligence Changelog](../ch04/448-code-intelligence-changelog.md)
+- [Code Intelligence Changelog](../ch04/449-code-intelligence-changelog.md)
 
 ---
 

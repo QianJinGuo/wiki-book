@@ -11,9 +11,9 @@
 https://developers.google.com/program/my-benefits
 
 ## 相关实体
-- [Pi Mono Github](ch01/760-pi-mono-github.md)
+- [Pi Mono Github](ch01/762-pi-mono-github.md)
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
-- [Edgeclaw Bemit Lobster](../ch04/489-edgeclaw.md)
+- [Edgeclaw Bemit Lobster](../ch04/490-edgeclaw.md)
 - [Claude Opus 47](ch01/1036-claude.md)
 - [Hermes Agent Getting Started Guide 2026](../ch03/090-hermes-agent.md)
 

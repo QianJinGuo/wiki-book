@@ -13,9 +13,9 @@
 
 ## 相关实体
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/500-amazon-bedrock-agentcore.md)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/500-amazon-bedrock-agentcore.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/500-amazon-bedrock-agentcore.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/501-amazon-bedrock-agentcore.md)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/501-amazon-bedrock-agentcore.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/501-amazon-bedrock-agentcore.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/362-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md)

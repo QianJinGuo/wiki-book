@@ -13,7 +13,7 @@
 
 ## 相关实体
 - [Cline releases open-source agent runtime SDK](../ch03/045-agent.md)
-- [腾讯混元Hy3-preview发布](../ch01/108-hy3-preview.md)
+- [腾讯混元Hy3-preview发布](../ch01/109-hy3-preview.md)
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/075-claude-code.md)
 - [Codex /goal：长任务Agent的目标运行时](ch04/103-codex-goal-agent.md)
 - [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](../ch11/252-bedrock.md)

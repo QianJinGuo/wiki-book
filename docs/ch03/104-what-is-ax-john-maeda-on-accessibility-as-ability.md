@@ -77,8 +77,8 @@ Maeda 引用了 Erika Hall 2018 年《Conversational Design》中的观点：没
 ## 相关实体
 
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
-- [Claude Code HTML Artifact Workflow](../ch01/639-claude-code-html-artifact-workflow-ifanr-analysis.md)
-- [Claude Dispatch and the Power of Interfaces](../ch01/526-claude-dispatch-and-the-power-of-interfaces.md)
+- [Claude Code HTML Artifact Workflow](../ch01/635-claude-code-html-artifact-workflow-ifanr-analysis.md)
+- [Claude Dispatch and the Power of Interfaces](../ch01/521-claude-dispatch-and-the-power-of-interfaces.md)
 - [MOC: Coding Agent Practice](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

@@ -24,7 +24,7 @@ Daniel San 给出的量化参考很有价值：半小时的探索性会话可能
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
 - [Claude Code Subagent 上下文卫生](../ch04/319-claude-code-subagent.md)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.md)
-- [claude-code-kairos-paradigm-2026](ch01/379-claude-code-kairos.md)
+- [claude-code-kairos-paradigm-2026](ch01/372-claude-code-kairos.md)
 
 ---
 

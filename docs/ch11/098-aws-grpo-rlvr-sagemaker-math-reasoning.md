@@ -134,9 +134,9 @@ env["NCCL_IB_DISABLE"] = "1"  # 禁用IB，使用EFA
 
 ## 相关实体
 - [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/381-aws-sagemaker-ai-agent.md)
-- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01/399-aws-sagemaker-capacity-aware-inference-fallback.md)
-- [Stochastic Parrot Thought Experiment](../ch01/810-stochastic-parrot-thought-experiment.md)
-- [Stochastic Parrot Thought Experiment](../ch01/810-stochastic-parrot-thought-experiment.md)
+- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01/392-aws-sagemaker-capacity-aware-inference-fallback.md)
+- [Stochastic Parrot Thought Experiment](../ch01/811-stochastic-parrot-thought-experiment.md)
+- [Stochastic Parrot Thought Experiment](../ch01/811-stochastic-parrot-thought-experiment.md)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 

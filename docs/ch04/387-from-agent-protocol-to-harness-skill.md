@@ -57,10 +57,10 @@ Agent Protocol → MCP Tool Calling → A2A Collaboration → Harness Skill
 - [Design Patterns for AI Agents 2026](ch04/091-design-patterns-for-ai-agents-2026-4-5-reflection.md)
 
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.md)
-- [harness-engineering-systematic-explainer](../ch05/092-harness-engineering.md)
+- [harness-engineering-systematic-explainer](../ch05/062-harness-engineering.md)
 - [claude-code-7-layer-memory-architecture](../ch03/075-claude-code.md)
 - [AI Agent 工程师能力地图](ch04/147-ai-agent.md)
-- [huashu-design 2.0 — agent skill 反收敛三套逻辑](../ch01/204-0.md)
+- [huashu-design 2.0 — agent skill 反收敛三套逻辑](../ch01/205-0.md)
 - [introducing the mdn mcp server](../ch01/911-20.md)
 - [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/059-agentic-ai.md)
 

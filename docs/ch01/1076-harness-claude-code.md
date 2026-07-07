@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](ch01/250-9.md)
+- [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](ch01/682-9.md)
 - [现在如何使用 ai：一份快速指南（ethan mollick）](../ch04/070-ai.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-dynamic-workflows-thariq-blog-gaia.md)
 
@@ -48,7 +48,7 @@
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/092-harness-engineering.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/062-harness-engineering.md)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.md)
 
 ## 实践启示

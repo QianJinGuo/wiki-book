@@ -14,7 +14,7 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、Strands A
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/building-enterprise-level-with-bedrock-agentcore-and-strands/)
 
 ## 相关实体
-- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/500-amazon-bedrock-agentcore.md)
+- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/501-amazon-bedrock-agentcore.md)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/229-aws-bedrock-agentcore.md)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/362-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.md)
 - [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)

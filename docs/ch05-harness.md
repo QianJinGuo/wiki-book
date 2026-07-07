@@ -2,7 +2,7 @@
 
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
-> 本章收录 **104 篇**实体，按深度递增排列。
+> 本章收录 **105 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 85 |
+| ⭐⭐ 工程师 | 需编程基础 | 86 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 17 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -109,33 +109,34 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [072. Harness 工程之道：Skill 原理与最佳实践](ch05/072-harness-skill)
 - [073. Superpowers 深度解析：给 Claude Code 装上工程大脑](ch05/073-superpowers-claude-code)
 - [074. 12 个 Agent 工程设计底层逻辑：脚手架 vs 承重墙](ch05/074-12-agent-vs)
-- [075. Cloudflare Copy Fail Linux 内核漏洞应急响应](ch05/075-cloudflare-copy-fail-linux)
-- [076. Harness 工程 2026 年度调研](ch05/076-harness-2026)
-- [077. Beyond Vibe Coding — Directed Generation as Design Methodology](ch05/077-beyond-vibe-coding-directed-generation-as-design-methodolo)
-- [078. 去哪儿网 AI Coding 研发平台实践：L0-L5 自动化分级 + Harness 四把锁 + QunarDevCenter + 天弦 QDO](ch05/078-ai-coding-l0-l5-harness-qunardevcenter-qdo)
-- [079. 快手 AgentX——推荐系统自我迭代的 Agent 驱动研发闭环](ch05/079-agentx-agent)
-- [080. 规格驱动开发与 Harness](ch05/080-harness)
-- [081. 场景营销前端 AI Coding — 从问题到方案](ch05/081-ai-coding)
-- [082. Harness Engineering Deletable Worksite Ruofei](ch05/082-harness-engineering-deletable-worksite-ruofei)
-- [083. 从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践](ch05/083-sdd-lattice-harness-ai-coding)
-- [084. Spec-Driven Development (SDD) 全面总结：从5人7天案例到方法论全集](ch05/084-spec-driven-development-sdd-5-7)
-- [085. 开启Harness Engineering探索之旅](ch05/085-harness-engineering)
-- [086. 如何利用 Harness 一句话交付产品功能](ch05/086-harness)
-- [087. Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？](ch05/087-harness-engineering-ai)
-- [088. Loss Function Development (LFD) — 损失函数开发与 /goal 循环（Elvis Sun）](ch05/088-loss-function-development-lfd-goal-elvis-sun)
-- [089. Harness 工程实践复盘：100% Cache 命中的 Agent 怎么设计？](ch05/089-harness-100-cache-agent)
-- [090. DIPG 蚂蚁保 Host-Research-Verify 三 Agent 离线 verify 闭环：C 端 AIGC 工程化范式](ch05/090-dipg-host-research-verify-agent-verify-c-aigc)
-- [091. Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律](ch05/091-harness-engineering-ashby)
-- [092. Harness Engineering 四根支柱与四要素架构](ch05/092-harness-engineering)
-- [093. Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进](ch05/093-claude-harness-generator-evaluator-context-reset)
-- [094. Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/094-harness-ai)
-- [095. 墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0 + 蚂蚁支小助 的同结论](ch05/095-stripe-minions-deerflow-2-0)
-- [096. Harness 工程可视化：Vibe Coding 中重建工程可控性](ch05/096-harness-vibe-coding)
-- [097. 知识沉淀是护城河](ch05/097-page-097)
-- [098. 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统](ch05/098-harness-ai-coding)
-- [099. Better-Harness：Agent Harness 自动优化方法论](ch05/099-better-harness-agent-harness)
-- [100. Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits](ch05/100-superpowers-6-0-reviewer-progress-ledger-model)
-- [101. Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop](ch05/101-code-is-cheap-harness-slop)
-- [102. browser-use v0.13 Browser Harness：薄抽象层设计哲学](ch05/102-browser-use-v0-13-browser-harness)
-- [103. 为什么 2026 年真正重要的是 Harness Engineering？](ch05/103-2026-harness-engineering)
-- [104. Harness进化论文 — M⋆记忆程序进化与AutoHarness动作约束](ch05/104-harness-m-autoharness)
+- [075. Karpathy AutoResearch Loop Cycle & Harness Optimization](ch05/075-karpathy-autoresearch-loop-cycle-harness-optimization)
+- [076. Cloudflare Copy Fail Linux 内核漏洞应急响应](ch05/076-cloudflare-copy-fail-linux)
+- [077. Harness 工程 2026 年度调研](ch05/077-harness-2026)
+- [078. Beyond Vibe Coding — Directed Generation as Design Methodology](ch05/078-beyond-vibe-coding-directed-generation-as-design-methodolo)
+- [079. 去哪儿网 AI Coding 研发平台实践：L0-L5 自动化分级 + Harness 四把锁 + QunarDevCenter + 天弦 QDO](ch05/079-ai-coding-l0-l5-harness-qunardevcenter-qdo)
+- [080. 快手 AgentX——推荐系统自我迭代的 Agent 驱动研发闭环](ch05/080-agentx-agent)
+- [081. 规格驱动开发与 Harness](ch05/081-harness)
+- [082. 场景营销前端 AI Coding — 从问题到方案](ch05/082-ai-coding)
+- [083. Harness Engineering Deletable Worksite Ruofei](ch05/083-harness-engineering-deletable-worksite-ruofei)
+- [084. 从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践](ch05/084-sdd-lattice-harness-ai-coding)
+- [085. Spec-Driven Development (SDD) 全面总结：从5人7天案例到方法论全集](ch05/085-spec-driven-development-sdd-5-7)
+- [086. 开启Harness Engineering探索之旅](ch05/086-harness-engineering)
+- [087. 如何利用 Harness 一句话交付产品功能](ch05/087-harness)
+- [088. Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？](ch05/088-harness-engineering-ai)
+- [089. Loss Function Development (LFD) — 损失函数开发与 /goal 循环（Elvis Sun）](ch05/089-loss-function-development-lfd-goal-elvis-sun)
+- [090. Harness 工程实践复盘：100% Cache 命中的 Agent 怎么设计？](ch05/090-harness-100-cache-agent)
+- [091. DIPG 蚂蚁保 Host-Research-Verify 三 Agent 离线 verify 闭环：C 端 AIGC 工程化范式](ch05/091-dipg-host-research-verify-agent-verify-c-aigc)
+- [092. Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律](ch05/092-harness-engineering-ashby)
+- [093. Harness Engineering 四根支柱与四要素架构](ch05/093-harness-engineering)
+- [094. Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进](ch05/094-claude-harness-generator-evaluator-context-reset)
+- [095. Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/095-harness-ai)
+- [096. 墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0 + 蚂蚁支小助 的同结论](ch05/096-stripe-minions-deerflow-2-0)
+- [097. Harness 工程可视化：Vibe Coding 中重建工程可控性](ch05/097-harness-vibe-coding)
+- [098. 知识沉淀是护城河](ch05/098-page-098)
+- [099. 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统](ch05/099-harness-ai-coding)
+- [100. Better-Harness：Agent Harness 自动优化方法论](ch05/100-better-harness-agent-harness)
+- [101. Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits](ch05/101-superpowers-6-0-reviewer-progress-ledger-model)
+- [102. Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop](ch05/102-code-is-cheap-harness-slop)
+- [103. browser-use v0.13 Browser Harness：薄抽象层设计哲学](ch05/103-browser-use-v0-13-browser-harness)
+- [104. 为什么 2026 年真正重要的是 Harness Engineering？](ch05/104-2026-harness-engineering)
+- [105. Harness进化论文 — M⋆记忆程序进化与AutoHarness动作约束](ch05/105-harness-m-autoharness)

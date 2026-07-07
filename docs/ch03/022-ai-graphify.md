@@ -139,7 +139,7 @@ graphify-out/cost.json
 
 - [Cli Mcp Skill Architecture Decision Vibecoder](../ch04/262-skill.md)
 - [Mattpocock Skills Grill Me Grill With Docs Caveman](ch03/069-skills.md)
-- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/304-claude-md.md)
+- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/297-claude-md.md)
 - [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/141-openai-codex.md)
 - [Rag技术框架的演进方向](../ch01/1033-rag.md)
 

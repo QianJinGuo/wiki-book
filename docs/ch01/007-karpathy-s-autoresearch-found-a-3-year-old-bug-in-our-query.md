@@ -89,7 +89,7 @@ PostHog 正在将 hackathon 手工喂入模式升级为全自动 pipeline：① 
 - [Clinereleasesopen Sourceagentruntimesdk](../ch04/397-agentrun.md)
 - [Running An Ai Native Engineering Org](ch01/047-running-an-ai-native-engineering-org.md)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
-- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/149-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
+- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/150-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/https-posthog-com-blog-karpathy-autoresearch-query-engine-bug.md)
 

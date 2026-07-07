@@ -67,7 +67,7 @@
 - [Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agentic Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
 - [Agent Loop 设计模式](../ch11/213-openclaw.md)
-- [AI 审计失败分析](../ch01/752-why-internally-built-ai-fails-fund-accounting-audits.md)
+- [AI 审计失败分析](../ch01/754-why-internally-built-ai-fails-fund-accounting-audits.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

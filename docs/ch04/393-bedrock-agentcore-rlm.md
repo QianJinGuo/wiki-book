@@ -57,11 +57,11 @@ Code Interpreter 的持久化会话是一把双刃剑——它提供了必要的
 对于已有向量数据库或知识库的企业，RLM 可以作为**向量检索的上层编排层**：先用向量相似度找到 Top-K 相关文档块，将这些块加载至 Code Interpreter 沙盒，再由 RLM 进行深度推理。这种混合架构兼顾了向量检索的精准召回和 RLM 的深度推理能力，特别适合"先广泛定位再深度分析"的两阶段工作流。
 
 ## 相关实体
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/500-amazon-bedrock-agentcore.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/501-amazon-bedrock-agentcore.md)
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/152-amazon-bedrock.md)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/152-amazon-bedrock.md)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/147-ai-agent.md)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/500-amazon-bedrock-agentcore.md)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/501-amazon-bedrock-agentcore.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md)
 

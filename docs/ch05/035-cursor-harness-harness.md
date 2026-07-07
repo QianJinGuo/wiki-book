@@ -83,10 +83,10 @@ Cursor 另外看了两个代理指标：
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/397-agentrun.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/092-harness-engineering.md)
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/092-harness-engineering.md)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/062-harness-engineering.md)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/062-harness-engineering.md)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/213-openclaw.md)
-- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch05/092-harness-engineering.md)
+- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch05/062-harness-engineering.md)
 
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/045-agent.md)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/846-anthropic.md)
@@ -101,7 +101,7 @@ Cursor 另外看了两个代理指标：
 - [你写的 Skill，及格了吗？](../ch04/262-skill.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch03/045-agent.md)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1036-claude.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/606-claude-managed-agents.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/608-claude-managed-agents.md)
 
 ---
 

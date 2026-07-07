@@ -17,8 +17,8 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/141-skillos-learning-skill-curation-for-self-evolving-agents.md)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/215-self-evolving-agents.md)
 - [Self-Evolving Agents 系统性综述](../ch04/215-self-evolving-agents.md)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/500-amazon-bedrock-agentcore.md)
-- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/500-amazon-bedrock-agentcore.md)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/501-amazon-bedrock-agentcore.md)
+- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/501-amazon-bedrock-agentcore.md)
 
 ## 深度分析
 **1. "近似文本"是文旅行业信息抽取的核心难题**

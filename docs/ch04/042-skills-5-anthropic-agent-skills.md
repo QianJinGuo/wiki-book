@@ -281,15 +281,15 @@ Spec 驱动原则强调项目评估、技术方案等前置环节的准确性—
 
 ### 9.2 Harness / 工具 / 范式相关
 
-- [Harness Engineering Paradigm Comprehensive 2026](../ch05/092-harness-engineering.md)：Harness Engineering 综合论述（2026 年真正重要的是 Harness）
-- [Harness Engineering Core Patterns](../ch05/092-harness-engineering.md)：Harness Engineering 核心模式（持久化指令/分层记忆/Session-Harness-Sandbox/凭证安全）
+- [Harness Engineering Paradigm Comprehensive 2026](../ch05/062-harness-engineering.md)：Harness Engineering 综合论述（2026 年真正重要的是 Harness）
+- [Harness Engineering Core Patterns](../ch05/062-harness-engineering.md)：Harness Engineering 核心模式（持久化指令/分层记忆/Session-Harness-Sandbox/凭证安全）
 - [Claude Code Skills Mcp Rules Source Analysis](../ch07/006-claude-code-skills-mcp-rules.md)：Claude Code Skills/MCP/Rules 源码分析
-- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](../ch05/081-ai-coding.md)：OpenSpec 工具（本文阶段 3 SDD 直接使用）+ Superpowers 工程取舍
+- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](../ch05/082-ai-coding.md)：OpenSpec 工具（本文阶段 3 SDD 直接使用）+ Superpowers 工程取舍
 
 ### 9.3 实战案例相关
 
 - `raw/articles/agent-skill-iterative-writing-taobao-logistics.md`：**同公司（淘天集团）不同团队（物流技术 其林 2026-06-12）** 的 Skill 迭代式编写实战——**孤儿 raw 无 entity**（建议后续批处理整合，本文仅标注，不合并避免 scope creep）
-- [Ai Skills Middleware Migration Android Harmonyos Taobao 2026](../ch01/482-ai-skill.md)：淘天 AI Skills 中间件迁移（Android→HarmonyOS）
+- [Ai Skills Middleware Migration Android Harmonyos Taobao 2026](../ch01/477-ai-skill.md)：淘天 AI Skills 中间件迁移（Android→HarmonyOS）
 - [Agent Memory Evaluation Landscape Taobao Survey](ch04/096-agent-memory.md)：淘天 Agent Memory 评测综述
 
 ## 10. 孤儿 raw 提示（pre-existing issue）

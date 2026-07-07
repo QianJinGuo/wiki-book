@@ -47,8 +47,8 @@ Codex 团队开发环境配置的五层架构：AGENTS.md（记忆层）→ skil
 
 ## 参照
 
-- [Codex AGENTS.md 配置实践](../ch01/525-codex.md)
-- [古法程序员 Codex 三层 Skill 架构](../ch01/525-codex.md)
+- [Codex AGENTS.md 配置实践](../ch01/520-codex.md)
+- [古法程序员 Codex 三层 Skill 架构](../ch01/520-codex.md)
 
 ## 来源
 

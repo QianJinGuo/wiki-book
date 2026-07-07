@@ -18,7 +18,7 @@
 - [Yumanju Ai Full Flow Efficiency](../ch04/070-ai.md)
 - [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.md)
 - [腾讯研究院Ai速递 20260430](../ch04/070-ai.md)
-- [Gbrain Garry Tan Yanfa Zhili](ch01/621-garry-tan.md)
+- [Gbrain Garry Tan Yanfa Zhili](ch01/617-garry-tan.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cvpr-xiaomi-svor-video-masking.md)
 

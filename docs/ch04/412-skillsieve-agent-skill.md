@@ -13,7 +13,7 @@
 ## 相关实体
 - [Skillclaw Collective Intelligence](ch04/262-skill.md)
 - [Hermes Skill System Winty](../ch07/017-hermes-skill.md)
-- [Ai Skill Skill Creator 源码拆解](../ch01/577-skill-skill.md)
+- [Ai Skill Skill Creator 源码拆解](../ch01/573-skill-skill.md)
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/072-harness-skill.md)
 - [Agent Skill Writing Guide](ch04/554-agent-skill.md)
 

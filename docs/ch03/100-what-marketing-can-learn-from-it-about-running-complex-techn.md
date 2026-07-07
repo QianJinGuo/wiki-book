@@ -11,7 +11,7 @@
 ## 相关实体
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
 - [Workspaceupdates Googleblog Com Google Workspace Updates](https://github.com/QianJinGuo/wiki/blob/main/entities/workspaceupdates-googleblog-com-google-workspace-updates.md)
-- [B2B Email Marketing What Still Works](../ch01/146-b2b-email-marketing-what-still-works.md)
+- [B2B Email Marketing What Still Works](../ch01/147-b2b-email-marketing-what-still-works.md)
 - [What Do Your Startup Advisors Say About You Charlie Odonnell   Coach Author Vc](https://github.com/QianJinGuo/wiki/blob/main/entities/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)
 - [From Kubernetes Dev Setup To Production What Actually Change](../ch11/082-from-kubernetes-dev-setup-to-production-what-actually-chang.md)
 

@@ -140,12 +140,12 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 - [Amazon Nova Lite Fine-Tuning](../ch11/258-amazon-nova.md) — Nova 视觉模型微调实践
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/258-amazon-nova.md) — Nova 多模态嵌入能力
 - [Nemotron 3 Multi-Agent System](../ch03/045-agent.md) — NVIDIA 多Agent系统参考
-- [Amazon Bedrock AgentCore Memory](ch04/500-amazon-bedrock-agentcore.md) — Bedrock Agent 记忆哲学
+- [Amazon Bedrock AgentCore Memory](ch04/501-amazon-bedrock-agentcore.md) — Bedrock Agent 记忆哲学
 - [Strands Agents SDK](../ch11/152-amazon-bedrock.md) — 确定性数据分析实践
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/128-control-where-your-ai-agents-can-browse-with-chrome-enterpri.md)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/687-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/686-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/252-bedrock.md)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/500-amazon-bedrock-agentcore.md)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/501-amazon-bedrock-agentcore.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/229-aws-bedrock-agentcore.md)
 - [OpenClaw多租户迁移: Phase 2&3部署](../ch11/213-openclaw.md)
 - [AgentCore Runtime部署Apache Doris MCP Server](../ch11/160-apache-doris-mcp-server-quick-suite-ai.md)
@@ -155,8 +155,8 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/213-openclaw.md)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/229-aws-bedrock-agentcore.md)
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/152-amazon-bedrock.md)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/500-amazon-bedrock-agentcore.md)
-- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch04/500-amazon-bedrock-agentcore.md)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/501-amazon-bedrock-agentcore.md)
+- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch04/501-amazon-bedrock-agentcore.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
 
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/362-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.md)

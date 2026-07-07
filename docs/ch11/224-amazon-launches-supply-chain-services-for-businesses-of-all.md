@@ -44,8 +44,8 @@ ASCS 三大模块——Move（全球 freight 网络）、Store（warehouse + 第
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](ch11/134-restrict-access-to-sensitive-documents-in-your-amazon-quick.md)
 - [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](ch11/014-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.md)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/056-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.md)
-- [Introducing Claude Platform On Aws](../ch01/493-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/674-announcing-openai-compatible-api-support-for-amazon-sagemake.md)
+- [Introducing Claude Platform On Aws](../ch01/141-introducing-claude-platform-on-aws-anthropic-s-native-platf.md)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/670-announcing-openai-compatible-api-support-for-amazon-sagemake.md)
 
 ---
 

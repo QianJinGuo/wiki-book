@@ -14,7 +14,7 @@ Claude Code、Amazon Bedrock、Kiro CLI
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/easy-deployment-of-claude-agent-sdk-in-production/)
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/606-claude-managed-agents.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/608-claude-managed-agents.md)
 - [Claude Code Agent 工程设计](../ch03/067-claude-code-agent.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.md)
 - [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch03/075-claude-code.md)

@@ -53,7 +53,7 @@
 - [Hermes Agent V014 Architecture Shugex](../ch03/090-hermes-agent.md)
 - [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11/013-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation](../ch03/045-agent.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/108-hy3-preview.md)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/109-hy3-preview.md)
 
 ## 实践启示
 

@@ -9,10 +9,10 @@
 - AI Can Write Code but CIOs Own the Operating Model
 
 ## 相关实体
-- [Ai Is Writing More Code Your Ci Pipeline](../ch01/756-ai-is-writing-more-code-your-ci-pipeline-can-t-keep-up.md)
-- [From System Of Record To System Of Intelligence](../ch01/319-from-system-of-record-to-system-of-intelligence.md)
+- [Ai Is Writing More Code Your Ci Pipeline](../ch01/758-ai-is-writing-more-code-your-ci-pipeline-can-t-keep-up.md)
+- [From System Of Record To System Of Intelligence](../ch01/312-from-system-of-record-to-system-of-intelligence.md)
 - [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/1041-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
-- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/136-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.md)
+- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/137-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.md)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](../ch04/376-agent-skills.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-can-write-code-cios-operating-model.md)

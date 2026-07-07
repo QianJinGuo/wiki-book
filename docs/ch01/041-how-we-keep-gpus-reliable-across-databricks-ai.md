@@ -50,7 +50,7 @@ Databricks 的分类揭示了一个重要的系统可靠性洞察：故障的可
 
 ### 5. 对 AI 基础设施运维的启示
 
-Databricks 的实践为大规模 AI 设施运维提供了几个重要参考：(1) 监控体系必须覆盖从硬件传感器到应用层指标的全栈；(2) 静默故障的检测比显式崩溃更重要——这些是最隐蔽的成本漏洞；(3) GPU 的可靠性工程需要专门的工具和知识体系（如 DCGM、NCCL Flight Recorder），不同于传统服务器运维；(4) 故障恢复的自动化程度直接影响训练效率——从检查点恢复的速度和弹性训练的能力是核心竞争力。这些发现与 [Graviton 优化 Agentic RL Sandbox](../ch04/508-agentic-rl.md) 中讨论的算力成本优化互补——可靠性问题直接影响 GPU 的有效利用率和单位算力成本。
+Databricks 的实践为大规模 AI 设施运维提供了几个重要参考：(1) 监控体系必须覆盖从硬件传感器到应用层指标的全栈；(2) 静默故障的检测比显式崩溃更重要——这些是最隐蔽的成本漏洞；(3) GPU 的可靠性工程需要专门的工具和知识体系（如 DCGM、NCCL Flight Recorder），不同于传统服务器运维；(4) 故障恢复的自动化程度直接影响训练效率——从检查点恢复的速度和弹性训练的能力是核心竞争力。这些发现与 [Graviton 优化 Agentic RL Sandbox](../ch04/509-agentic-rl.md) 中讨论的算力成本优化互补——可靠性问题直接影响 GPU 的有效利用率和单位算力成本。
 
 ## 实践启示
 
@@ -67,7 +67,7 @@ Databricks 的实践为大规模 AI 设施运维提供了几个重要参考：(1
 ## 相关实体
 
 - [Meta AI 存储架构](ch01/1033-rag.md)
-- [Graviton 优化 Agentic RL Sandbox](../ch04/508-agentic-rl.md)
+- [Graviton 优化 Agentic RL Sandbox](../ch04/509-agentic-rl.md)
 - [AI Infrastructure & Cost Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md)
 - GPU 可靠性工程
 - [Lambda MicroVM 对比](../ch11/247-lambda-microvms-vs-lambda-functions.md)

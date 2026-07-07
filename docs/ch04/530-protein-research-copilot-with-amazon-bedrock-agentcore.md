@@ -62,7 +62,7 @@ Strands Agent (Bedrock AgentCore Runtime)
 
 ## 相关主题
 
-- [Bedrock AgentCore 多租户模式](ch04/500-amazon-bedrock-agentcore.md) — 同系列文章，聚焦 AgentCore 的多租户架构
+- [Bedrock AgentCore 多租户模式](ch04/501-amazon-bedrock-agentcore.md) — 同系列文章，聚焦 AgentCore 的多租户架构
 - Amazon Bedrock AgentCore — AWS Agent 部署平台
 - Strands Agents SDK — AWS 开源 Agent 框架
 - pgvector — PostgreSQL 向量扩展

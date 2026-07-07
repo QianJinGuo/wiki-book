@@ -58,8 +58,8 @@
 
 ## 相关实体
 
-- [MCP Server](ch04/500-amazon-bedrock-agentcore.md)
-- [Agentic Harness Engineering](../ch05/092-harness-engineering.md)
+- [MCP Server](ch04/501-amazon-bedrock-agentcore.md)
+- [Agentic Harness Engineering](../ch05/062-harness-engineering.md)
 - [Agentic AI 系统架构](../ch05/072-harness-skill.md)
 - [Token 成本控制](../ch09/047-coding-agent.md)
 - [A2A 企业级协议](../ch03/045-agent.md)

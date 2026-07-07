@@ -63,7 +63,7 @@
 
 ### 与 Harness Engineering 概念体系的关系
 
-本文的"主权线"框架为 [Harness Engineering](ch05/092-harness-engineering.md) 概念提供了时间维度的演进视角。它回答了一个关键问题：当模型越来越强时，Harness Engineering 师的角色如何变化？
+本文的"主权线"框架为 [Harness Engineering](ch05/062-harness-engineering.md) 概念提供了时间维度的演进视角。它回答了一个关键问题：当模型越来越强时，Harness Engineering 师的角色如何变化？
 
 答案不是"消失"，而是"上移"——从技术实现层上移到治理决策层。这与软件工程中"抽象层次不断提升"的历史规律一致：汇编程序员没有消失，而是演化为系统架构师和安全工程师。
 
@@ -90,9 +90,9 @@
 
 ## 相关实体
 
-- [Harness Engineering](ch05/092-harness-engineering.md)
+- [Harness Engineering](ch05/062-harness-engineering.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch05/038-agent-harness.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/092-harness-engineering.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/062-harness-engineering.md)
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.md)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/213-openclaw.md)

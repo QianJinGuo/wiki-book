@@ -8,8 +8,8 @@
 
 ## 相关实体
 
-- [你的ai代码越写越乱，他72小时合了14个pr——差距只在一个机制](ch01/621-garry-tan.md)
-- [karpathy × boris 访谈：software 3.0 时代编程完整地图](ch01/590-llm.md)
+- [你的ai代码越写越乱，他72小时合了14个pr——差距只在一个机制](ch01/617-garry-tan.md)
+- [karpathy × boris 访谈：software 3.0 时代编程完整地图](ch01/586-llm.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/coze-3-0-local-agent-codex-claude-code-project.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)

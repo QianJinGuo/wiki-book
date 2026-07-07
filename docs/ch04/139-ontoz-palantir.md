@@ -156,7 +156,7 @@
 
 - **本体竞争取代工具竞争**：OntoZ 的核心命题是「2B AI 从工具辅助进入本体竞争新阶段」——企业间竞争的不再是谁买了更多 SaaS，而是谁的数字分身（企业本体）更懂业务、更能自迭代。这一判断与 [Rag Vector Knowledge Graph Ontology](../ch01/1033-rag.md) 中知识图谱本体是数据驱动成交基础设施的观点高度一致。 
 
-- **二阶控制论架构的工程验证**：马尔可夫毯 + 强化学习任务规划器（2024 验证）与带先验因果结构的图神经网络（2024 验证），构成二阶控制论（控制控制系统）的工程实现。这使得多智能体协作有了「可控边界」，解决了单点 Agent「止步于部门墙之前」的根本缺陷。对照 [Anthropic Multi Agent Research System](ch04/507-anthropic-multi-agent-research-system.md) 中多智能体系统需要显式协调机制的设计原则，百型的马尔可夫毯方法提供了一种无需中心化调度的去中心化控制路径。 
+- **二阶控制论架构的工程验证**：马尔可夫毯 + 强化学习任务规划器（2024 验证）与带先验因果结构的图神经网络（2024 验证），构成二阶控制论（控制控制系统）的工程实现。这使得多智能体协作有了「可控边界」，解决了单点 Agent「止步于部门墙之前」的根本缺陷。对照 [Anthropic Multi Agent Research System](ch04/508-anthropic-multi-agent-research-system.md) 中多智能体系统需要显式协调机制的设计原则，百型的马尔可夫毯方法提供了一种无需中心化调度的去中心化控制路径。 
 
 - **RL + Reflection 的无人化知识蒸馏**：百型以「强化学习 + Reflection 架构」实现企业知识库的无人化、短时间蒸馏，形成 cognition infra。这与传统的知识工程（专家建模、RDF 本体）有本质区别——不是工程师将知识注入系统，而是系统在买卖交互中自主涌现结构。对照 [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.md) 中企业 AI 落地依赖数据质量和结构化程度的前提，OntoZ 的冷启动能力直接绕过了这一瓶颈。 
 
@@ -181,12 +181,12 @@
 - 多智能体协同 — [Openclaw Multi Agent Team Practice V2](ch04/046-openclaw-multi-agent-team-practice-v2.md)
 - 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/034-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.md)
 - 智能体协议 — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
-- Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/525-codex.md)
+- Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/520-codex.md)
 - Claude Code 架构 — [Claude Code Architecture](../ch03/075-claude-code.md)
-- Harness 工程 — [Harness Engineering Systematic Framework](../ch05/092-harness-engineering.md)
+- Harness 工程 — [Harness Engineering Systematic Framework](../ch05/062-harness-engineering.md)
 - A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/045-agent.md)
 - 本体论 / 知识图谱 — [Rag Vector Knowledge Graph Ontology](../ch01/1033-rag.md)
-- 多智能体研究系统 — [Anthropic Multi Agent Research System](ch04/507-anthropic-multi-agent-research-system.md)
+- 多智能体研究系统 — [Anthropic Multi Agent Research System](ch04/508-anthropic-multi-agent-research-system.md)
 - Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/911-20.md)
 - 企业 AI 数据准备 — [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.md)
 ## 相关实体

@@ -63,10 +63,10 @@ Every layer in the stack now has to price the same way the customer thinks : per
 
 ## 相关实体
 - [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.md)
-- [Products Are Out Brains Are In](ch01/126-products-are-out-brains-are-in.md)
+- [Products Are Out Brains Are In](ch01/127-products-are-out-brains-are-in.md)
 - Investing In Stitch
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Offline Llm Energy Use Html](ch01/590-llm.md)
+- [Offline Llm Energy Use Html](ch01/586-llm.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tokens-per-result.md)
 

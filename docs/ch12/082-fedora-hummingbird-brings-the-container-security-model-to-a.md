@@ -14,7 +14,7 @@
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md)
 - [The It And Security Field Guide To Ai Adoption Tines](ch12/078-the-it-and-security-field-guide-to-ai-adoption-tines.md)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Drinking Llms](../ch01/590-llm.md)
+- [Drinking Llms](../ch01/586-llm.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fedora-hummingbird-container-security.md)
 

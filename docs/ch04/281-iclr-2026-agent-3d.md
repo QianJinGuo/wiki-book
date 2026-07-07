@@ -66,7 +66,7 @@ Scenethesis是一个无需重新训练场景生成模型的系统框架，其流
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.md)
 - [我用 Skillmd 做了一个简历生成器](ch04/262-skill.md)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.md)
-- [Gepa Optimize Anything](../ch01/361-gepa-optimize-anything.md)
+- [Gepa Optimize Anything](../ch01/354-gepa-optimize-anything.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/iclr-agent-3d-generation.md)
 

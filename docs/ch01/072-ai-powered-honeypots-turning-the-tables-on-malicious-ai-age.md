@@ -7,7 +7,7 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
 
 ## 相关实体
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/500-amazon-bedrock-agentcore.md)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/501-amazon-bedrock-agentcore.md)
 - [How to Detect AI Agents on Your Website | Full Guide](../ch04/147-ai-agent.md)
 - [Your AI Agents Are Already Inside the Perimeter. Do You Know Who They Are?](../ch04/147-ai-agent.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/128-control-where-your-ai-agents-can-browse-with-chrome-enterpri.md)

@@ -15,8 +15,8 @@
 
 ## 相关实体
 - [Anthropic Pm Jess Yan Managed Agents](../ch01/846-anthropic.md)
-- [Anthropic Claude Managed Agents Platform 2026](../ch01/279-anthropic-claude-managed-agents.md)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/606-claude-managed-agents.md)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01/272-anthropic-claude-managed-agents.md)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/608-claude-managed-agents.md)
 - [From Prompt To Harness Claude Official](../ch05/009-harness.md)
 - [Anthropic Demystifying Evals For Ai Agents](ch04/434-anthropic-demystifying-evals-for-ai-agents.md)
 

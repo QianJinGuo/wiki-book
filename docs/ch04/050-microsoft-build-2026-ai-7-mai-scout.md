@@ -154,7 +154,7 @@
 - Codex = OpenAI 自家 harness 跑在 GPT 模型
 - **Scout = 微软智能体（基于 OpenClaw）跑在 MAI 模型**（"全栈"闭环）
 
-### vs [Kimi Work](../ch01/525-codex.md)
+### vs [Kimi Work](../ch01/520-codex.md)
 - Kimi Work = 月之暗面 K2.6 + Kimi Code Harness 搬到本地桌面
 - **Scout = 微软 MAI + OpenClaw 框架在 365 云端/桌面/网页** —— **"人本主义超级智能"** 哲学强调"支持人类而非取代"
 - **共同点**：都是模型公司 + 自家 Harness 的全栈组合
@@ -270,7 +270,7 @@
 - **WSL Containers 公开时间表 / Intelligent Terminal GA 时间表** 未披露
 
 ## 相关对照
-- [Kimi Work](../ch01/525-codex.md) —— 本地桌面 Agent + Vibe Working
+- [Kimi Work](../ch01/520-codex.md) —— 本地桌面 Agent + Vibe Working
 - [wow-harness v3](../ch05/009-harness.md) —— 跨 session 事件时间线
 - [OpenClaw](../ch11/213-openclaw.md) —— 开源 AI 编程框架（Scout 基于它）
 - [Agent Harness 架构](../ch05/038-agent-harness.md) —— 7 层 harness 模型

@@ -8,8 +8,8 @@
 
 ## 相关实体
 
-- [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](ch01/795-self-taught-rlvr.md)
-- [the distillation panic](ch01/362-the-distillation-panic.md)
+- [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](ch01/796-self-taught-rlvr.md)
+- [the distillation panic](ch01/355-the-distillation-panic.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)

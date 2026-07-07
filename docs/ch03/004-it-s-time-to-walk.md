@@ -33,9 +33,9 @@ Which means the office, if there even is one anymore, probably looks more like t
 I am not sure what to call this. It is not a coworking space. It is not a coffee shop. It is not a corporate office. It is not a home office, which has its own problems. It might be closer to a private club, or a boutique hotel you live near, or something that does not have a word yet. What I keep coming back to is that the most valuable work in the world is now the work of direction, and the people doing it are working in environments built for a workload that no longer exists. There is something to build here. I do not know its full shape.
 
 ## 相关实体
-- [刚刚Openai 放出三个语音模型顺便杀死了同传](../ch01/444-openai.md)
+- [刚刚Openai 放出三个语音模型顺便杀死了同传](../ch01/438-openai.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/621-garry-tan.md)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/617-garry-tan.md)
 - [Defect Backlog Retention Report](https://github.com/QianJinGuo/wiki/blob/main/entities/defect-backlog-retention-report.md)
 - [Against Brain Damage](ch03/016-against-brain-damage.md)
 

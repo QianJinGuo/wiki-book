@@ -271,9 +271,9 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 ## 与现有实体的互补关系
 
 - [Agent 自我改进六条路](../ch03/045-agent.md) — L6 Meta-Harness 编排自优化的"同模型自举"实现
-- [Agent Harness 工程学调研 2026](../ch05/092-harness-engineering.md) — Self-Harness 是该领域的最新论文
-- [Agent Harness 工程学调研 etcvlovg Taxonomy](../ch05/092-harness-engineering.md)
-- [Agent Production Harness Engineering](../ch05/092-harness-engineering.md)
+- [Agent Harness 工程学调研 2026](../ch05/062-harness-engineering.md) — Self-Harness 是该领域的最新论文
+- [Agent Harness 工程学调研 etcvlovg Taxonomy](../ch05/062-harness-engineering.md)
+- [Agent Production Harness Engineering](../ch05/062-harness-engineering.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Harness as Product Surface](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-as-product-surface.md)
 - [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)
@@ -282,9 +282,9 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 - [Verifier-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
 - [SGLang](ch04/543-agent-assisted-sglang-ai-llm.md) — Qwen3.5 部署用到的推理引擎
 - [DeepAgent 架构演进](../ch03/045-agent.md) — 初始 Harness 基于 DeepAgent SDK
-- [ByteDance TRAE Harness Engineering Guide](../ch01/646-trae-harness-engineering.md)
-- [复旦 AHE Agentic Harness Engineering](../ch05/092-harness-engineering.md)
-- [Harness Engineering 七层架构](../ch05/092-harness-engineering.md)
+- [ByteDance TRAE Harness Engineering Guide](../ch01/642-trae-harness-engineering.md)
+- [复旦 AHE Agentic Harness Engineering](../ch05/062-harness-engineering.md)
+- [Harness Engineering 七层架构](../ch05/062-harness-engineering.md)
 - [Harness Component Expiry and Build-to-Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md) — Self-Harness 的"接受门"是这一思想的工程化实现
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/self-harness-shanghai-ai-lab-agent-improves-harness-hyman-2026-06-12.md)

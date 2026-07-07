@@ -151,7 +151,7 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/152-amazon-bedrock.md)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/213-openclaw.md)
 - [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.md)
-- [harness-engineering-systematic-explainer](../ch05/092-harness-engineering.md)
+- [harness-engineering-systematic-explainer](../ch05/062-harness-engineering.md)
 - [AI Agent 工程师能力地图](ch04/147-ai-agent.md)
 
 ## 相关实体

@@ -68,17 +68,17 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - **平台可演进性**：Airflow 与 EMR 基础设施细节解耦，集群替换对 DAG 无感
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
 ## 相关实体
-- [Wetesteddeepseekv4Proandflashagainstclau](../ch01/439-deepseek.md)
+- [Wetesteddeepseekv4Proandflashagainstclau](../ch01/969-deepseek.md)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch04/070-ai.md)
-- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/752-why-internally-built-ai-fails-fund-accounting-audits.md)
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/754-why-internally-built-ai-fails-fund-accounting-audits.md)
 - Senatorsquerycreditbureausonbnpl
 
 - [Cpanel Whm Patch 3 New Vulnerabilities](https://github.com/QianJinGuo/wiki/blob/main/entities/cpanel-whm-patch-3-new-vulnerabilities.md)
 - [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch04/070-ai.md)
 - [Automating Confidential Containers Coco Infrastructure With Kyverno](../ch11/094-automating-confidential-containers-coco-infrastructure-wit.md)
 - [Gptomics Com How Ai Changes Software P L](../ch01/064-how-ai-changes-software-p-l.md)
-- [Romanian Man 30 Years Us Prison Vishing](../ch01/204-0.md)
+- [Romanian Man 30 Years Us Prison Vishing](../ch01/205-0.md)
 - [Youcom Download The Guide Why Api Latency Is A Misleading Metric](https://github.com/QianJinGuo/wiki/blob/main/entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 - [818662](https://github.com/QianJinGuo/wiki/blob/main/entities/818662.md)
 - [2026 04 15](../ch01/911-20.md)

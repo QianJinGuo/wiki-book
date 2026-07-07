@@ -113,14 +113,14 @@ AgentRun 基于函数计算计费，核心优势是**按实际调用计费 + 零
 → [原文存档：5分钟上手](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
 → [原文存档：2行代码集成](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-agentrun-2line-integration.md)
 
-- [GBrain](../ch01/318-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.md)
+- [GBrain](../ch01/311-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)
 
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/397-agentrun.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](ch04/500-amazon-bedrock-agentcore.md)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](ch04/500-amazon-bedrock-agentcore.md)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](ch04/501-amazon-bedrock-agentcore.md)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](ch04/501-amazon-bedrock-agentcore.md)
 - [OpenCLI](../ch03/084-opencli.md)
 - [AutoCLI](../ch03/117-autocli.md)
 - [阿里巴巴 Aone 面向 Agent 的研发模式探索](ch04/054-aone-agentic.md)

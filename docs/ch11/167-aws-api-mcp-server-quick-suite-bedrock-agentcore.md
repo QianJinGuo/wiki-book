@@ -11,11 +11,11 @@
 - 来源：AWS Machine Learning Blog
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/500-amazon-bedrock-agentcore.md)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/501-amazon-bedrock-agentcore.md)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/271-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/500-amazon-bedrock-agentcore.md)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04/500-amazon-bedrock-agentcore.md)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/500-amazon-bedrock-agentcore.md)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/501-amazon-bedrock-agentcore.md)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04/501-amazon-bedrock-agentcore.md)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/501-amazon-bedrock-agentcore.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/integrating-aws-api-mcp-server-with-amazon-quick-suite-using-amazon-bedrock-agen.md)
 

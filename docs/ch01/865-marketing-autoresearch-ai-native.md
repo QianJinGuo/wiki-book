@@ -46,7 +46,7 @@
 - [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/846-anthropic.md)
 - [Harness 之后 状态边界与失败闭环 若飞](../ch05/009-harness.md)
 - [Ai Agent Harness Construction Akshay Baoyu](ch01/1020-ai-agent-harness.md)
-- [Harness Engineering Core Patterns Claude Code](../ch05/092-harness-engineering.md)
+- [Harness Engineering Core Patterns Claude Code](../ch05/062-harness-engineering.md)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/147-ai-agent.md)
 
 ## 实践启示

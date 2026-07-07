@@ -8,7 +8,7 @@
 架构师（JiaGouX）  我们都是架构师！
 
 ## 相关实体
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/500-amazon-bedrock-agentcore.md)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/501-amazon-bedrock-agentcore.md)
 - [Hermes Agent Vs Openclaw Comparison](../ch03/090-hermes-agent.md)
 - [Skill System Design Three Way Comparison](ch04/262-skill.md)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/351-hermes-agent-goal.md)

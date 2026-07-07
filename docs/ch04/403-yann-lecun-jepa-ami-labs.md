@@ -70,7 +70,7 @@ AMI Labs获得10亿美元融资并选择JEPA路线，表明世界模型已经从
 - [Tsinghua Self Evolving Skill Agent](ch04/143-skill-agent.md)
 - [直播预约 数据引擎具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
 - [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](../ch03/045-agent.md)
-- [Nvidia Gamma World Multi Agent World Model](../ch01/221-agent-world.md)
+- [Nvidia Gamma World Multi Agent World Model](../ch01/222-agent-world.md)
 
 ---
 

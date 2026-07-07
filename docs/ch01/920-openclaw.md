@@ -47,7 +47,7 @@
 - [Aliyun Mse Ai Task Scheduling Agent Sandbox Cost 90 Percent](../ch03/045-agent.md)
 - [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch04/070-ai.md)
 - [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/846-anthropic.md)
-- [Harness Engineering Core Patterns Claude Code](../ch05/092-harness-engineering.md)
+- [Harness Engineering Core Patterns Claude Code](../ch05/062-harness-engineering.md)
 
 ## 实践启示
 

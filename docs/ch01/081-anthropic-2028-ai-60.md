@@ -14,7 +14,7 @@ Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称： 
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/846-anthropic.md)
 - [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.md)
 - [Anthropic Pm Jess Yan Managed Agents](ch01/846-anthropic.md)
-- [Anthropic Claude Managed Agents Platform 2026](ch01/279-anthropic-claude-managed-agents.md)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/272-anthropic-claude-managed-agents.md)
 - [Claude Code Hackathon Winners 2026](../ch03/075-claude-code.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic联创2028-ai自我构建概率超60.md)

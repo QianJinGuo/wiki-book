@@ -14,7 +14,7 @@
 ## 相关实体
 - [AgentCore Runtime部署Apache Doris MCP Server](../ch11/160-apache-doris-mcp-server-quick-suite-ai.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/229-aws-bedrock-agentcore.md)
-- [AgentCore Managed Harness](ch04/463-amazon-bedrock-agentcore-harness-ga-api-agent.md)
+- [AgentCore Managed Harness](ch04/464-amazon-bedrock-agentcore-harness-ga-api-agent.md)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/362-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.md)
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/156-aws-devops-agent.md)
 - [OpenClaw多租户迁移: Phase 2&3部署](../ch11/213-openclaw.md)
@@ -25,12 +25,12 @@
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/152-amazon-bedrock.md)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/258-amazon-nova.md)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/056-real-time-voice-agents-with-stream-vision-agents-and-amazon.md)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/640-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/636-improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/687-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/686-from-siloed-data-to-unified-insights-cross-account-athena-a.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/128-control-where-your-ai-agents-can-browse-with-chrome-enterpri.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/252-bedrock.md)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/500-amazon-bedrock-agentcore.md)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/501-amazon-bedrock-agentcore.md)
 - [AI Agent 工程师能力地图](ch04/147-ai-agent.md)
 
 ## 深度分析

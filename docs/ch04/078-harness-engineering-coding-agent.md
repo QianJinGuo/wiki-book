@@ -5,15 +5,15 @@
 > 📊 Level ⭐⭐ | 18.6KB | `entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md`
 
 ## 相关实体
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.md)
-- [Agent生产级Harness工程指南](../ch05/092-harness-engineering.md)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.md)
+- [Agent生产级Harness工程指南](../ch05/062-harness-engineering.md)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.md)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/009-harness.md)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/045-agent.md)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/465-claude-code-harness-deep-understanding.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/460-claude-code-harness-deep-understanding.md)
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
 - [Agent Harness 架构](../ch05/038-agent-harness.md)
 - [Agent 自我改进的六条路](../ch03/045-agent.md)

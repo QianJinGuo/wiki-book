@@ -105,7 +105,7 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/092-harness-engineering.md)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/062-harness-engineering.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md)
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
 

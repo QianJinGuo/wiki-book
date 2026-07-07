@@ -355,7 +355,7 @@ class PipelineStack extends cdk.Stack {
 - [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
 - [Us Bank Aws Ai Migration](../ch04/070-ai.md)
 - [3Rdfsmp](https://github.com/QianJinGuo/wiki/blob/main/entities/3rdfsmp.md)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/674-announcing-openai-compatible-api-support-for-amazon-sagemake.md)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/670-announcing-openai-compatible-api-support-for-amazon-sagemake.md)
 
 ---
 

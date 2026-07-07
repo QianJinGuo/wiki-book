@@ -52,11 +52,11 @@ CloudWatch 告警的 AlarmDescription 字段应包含结构化业务上下文（
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/846-anthropic.md)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/296-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.md)
 
-- [Agent orchestration](ch04/465-agent-orchestration.md)
+- [Agent orchestration](ch04/466-agent-orchestration.md)
 - [AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](../ch07/043-aws-devops-agent-mcp-server.md)
 - [AWS Reinvent Game Demo 2024-25](../ch11/221-aws-reinvent-game-demo-2024-25.md)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)
-- [AgentCore Managed Harness](ch04/463-amazon-bedrock-agentcore-harness-ga-api-agent.md)
+- [AgentCore Managed Harness](ch04/464-amazon-bedrock-agentcore-harness-ga-api-agent.md)
 - [AI Agent 工程师能力地图](ch04/147-ai-agent.md)
 - [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](../ch11/156-aws-devops-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)

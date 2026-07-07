@@ -60,8 +60,8 @@ Reference 在三端各有侧重：iPhone 用于随时捕获灵感，iPad 提供�
 - [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/911-20.md)
 - [Shub Reaper Macos Stealer Attack Chain](../ch04/070-ai.md)
 - [Somethings Rotten In The State Of Macos Icon Design](https://github.com/QianJinGuo/wiki/blob/main/entities/somethings-rotten-in-the-state-of-macos-icon-design.md)
-- [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](../ch05/081-ai-coding.md)
-- [Apple Silicon Costs More Than Openrouter](../ch01/094-apple-silicon-costs-more-than-openrouter.md)
+- [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](../ch05/082-ai-coding.md)
+- [Apple Silicon Costs More Than Openrouter](../ch01/443-apple-silicon-costs-more-than-openrouter.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www-referenceboard-app.md)
 

@@ -115,7 +115,7 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 ## 相关主题
 
 - [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/183-aderant-transforms-cloud-operations-with-amazon-quick.md) — Amazon Quick 在法律行业的 cross-source RAG 案例（同一产品不同应用场景）
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/500-amazon-bedrock-agentcore.md) — Amazon Bedrock AgentCore 的 MCP gateway 扩展（MCP 在 AWS 的另一面）
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/501-amazon-bedrock-agentcore.md) — Amazon Bedrock AgentCore 的 MCP gateway 扩展（MCP 在 AWS 的另一面）
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/202-amazon-quick.md) — Amazon Quick 在金融 AML 告警分流的应用（同一产品的规则化分流场景）
 - [Aws Bedrock Agentcore Doris Mcp Server](../ch11/229-aws-bedrock-agentcore.md) — AWS Bedrock AgentCore + Doris MCP server 的另一个生产实战
 - [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](../ch01/898-ai-infra.md) — 长时自驱动 agent 模式（与本 entity 的同步编排模式形成对比）

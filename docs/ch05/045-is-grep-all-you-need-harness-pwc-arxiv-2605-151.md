@@ -16,9 +16,9 @@
 
 ## 相关实体
 - [Lucasfcostacom Blog Backpressure Is All You Need](../ch01/006-backpressure-is-all-you-need.md)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/394-google-agentic-rag-sufficient-context-agent-framesqa-90.md)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/387-google-agentic-rag-sufficient-context-agent-framesqa-90.md)
 - [Ai Native Startup Cyberfund Guide](ch05/018-ai-native.md)
-- [Harness Engineering Comprehensive Guide Conardli](ch05/092-harness-engineering.md)
+- [Harness Engineering Comprehensive Guide Conardli](ch05/062-harness-engineering.md)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/147-ai-agent.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/is-grep-all-you-need-pwc-retrieval-harness-coupling.md)

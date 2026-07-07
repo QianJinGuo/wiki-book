@@ -108,11 +108,11 @@ Van Horn 框架 Stage 5 的五个挑战：
 
 ## 与现有知识的关联
 
-- [Inngest 产品概述](../ch01/744-inngest-ai-and-backend-workflows-orchestrated-at-any-scal.md)——本文是 CTO 的架构愿景，产品概述侧重功能特性
+- [Inngest 产品概述](../ch01/746-inngest-ai-and-backend-workflows-orchestrated-at-any-scal.md)——本文是 CTO 的架构愿景，产品概述侧重功能特性
 - [Loop Engineering (Addy Osmani)](../ch05/006-loop-engineering.md)——Osmani 拆解 loop 内部构成模块，本文把 loop 放进耐久执行层
 - [Loop Engineering 反馈控制系统](../ch05/006-loop-engineering.md)——反馈控制的前提是耐久执行层提供可靠 checkpoint
 - [Agent Loop 工程手册](../ch05/006-loop-engineering.md)——8 问框架与本文三层模型互补
-- [Harness Engineering 框架](../ch05/092-harness-engineering.md)——三层中 Orchestrator 层对应 Harness 的运行时职责
+- [Harness Engineering 框架](../ch05/062-harness-engineering.md)——三层中 Orchestrator 层对应 Harness 的运行时职责
 - [Self-Harness](../ch05/009-harness.md)——自建 Skill agent 是 Self-Harness 的工程实现路径
 - [Agentic Environment Engineering](../ch03/045-agent.md)——Environment 决定反馈质量，Orchestrator 决定执行耐久性
 

@@ -163,7 +163,7 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 - [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.md)
 - [Hermes Agent 记忆系统深度拆解](../ch03/090-hermes-agent.md)
 - [Design Patterns for AI Agents 2026](ch04/091-design-patterns-for-ai-agents-2026-4-5-reflection.md)
-- [harness-engineering-systematic-explainer](../ch05/092-harness-engineering.md)
+- [harness-engineering-systematic-explainer](../ch05/062-harness-engineering.md)
 - [claude-code-7-layer-memory-architecture](../ch03/075-claude-code.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 

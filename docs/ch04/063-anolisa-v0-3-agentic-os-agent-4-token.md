@@ -204,7 +204,7 @@ ANOLISA v0.3 架构
 - **ANOLISA = 阿里系统级安全 / Token / 快照基础设施**
 - 共同点：都强调"基础设施决定 AI 自主空间"
 
-### vs [Kimi Work](../ch01/525-codex.md)
+### vs [Kimi Work](../ch01/520-codex.md)
 - Kimi Work = Harness 搬到本地桌面（**单用户本地**）
 - **ANOLISA = 阿里云 ECS 镜像 + Agentic OS**（**云端系统级**）
 - 共同点：都强调"为 AI 套上家 / 套上 OS"
@@ -271,7 +271,7 @@ ANOLISA v0.3 架构
 - [wow-harness v3](../ch05/009-harness.md) —— 协议层治理
 - [MAC Skills + Hooks](../ch05/026-mac-multi-agent-coding-skills-hooks-harness-0-20.md) —— 工程师个人框架
 - [高德 AI-Native 生产线](../ch05/018-ai-native.md) —— 企业级 R&D
-- [Kimi Work](../ch01/525-codex.md) —— 本地 Agent
+- [Kimi Work](../ch01/520-codex.md) —— 本地 Agent
 - [Agent Harness 架构](../ch05/038-agent-harness.md) —— 7 层模型
 - [Microsoft Build 2026](../ch03/045-agent.md) —— 全栈 AI
 - [PilotDeck](../ch03/045-agent.md) —— 多项目隔离

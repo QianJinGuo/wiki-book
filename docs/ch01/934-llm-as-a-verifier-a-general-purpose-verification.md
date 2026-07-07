@@ -11,8 +11,8 @@
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-as-a-verifier-a-general-purpose-verification.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/400-llm-as-a-verifier-a-general-purpose-verification-framework.md)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/590-llm.md)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/393-llm-as-a-verifier-a-general-purpose-verification-framework.md)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/586-llm.md)
 
 - [jane street — 形式化方法与编程的未来](../ch12/111-jane-street.md)
 

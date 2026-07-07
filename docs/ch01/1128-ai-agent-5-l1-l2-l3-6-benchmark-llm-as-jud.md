@@ -314,12 +314,12 @@ Agent输出：{agent_output}
 
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
-| [Ai Evals Methodology](ch01/285-ai-evals.md) | **方法论概念层** | 概念页：人工/代码/LLM-as-Judge 三大评估类型 + 何时需要评估器的判断框架；本文是其在 Agent 场景的工程化展开 |
+| [Ai Evals Methodology](ch01/278-ai-evals.md) | **方法论概念层** | 概念页：人工/代码/LLM-as-Judge 三大评估类型 + 何时需要评估器的判断框架；本文是其在 Agent 场景的工程化展开 |
 | [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch03/045-agent.md) | **YAML 驱动框架** | AgentEval 工具（130 行）：YAML 驱动的 Agent 评测框架 + pass@k + Golang + CI-CD |
 | [Agent Evalkit Aws Opensource Cli Agent Eval Toolkit](../ch03/045-agent.md) | **AWS 开源工具** | AgentEvalKit：AWS 开源的 CLI Agent 评测工具包 |
-| [Aws Reinforcement Fine Tuning Llm As Judge](ch01/590-llm.md) | **LLM-as-Judge RFT** | AWS 用 LLM-as-Judge 做 RLHF/RFT 的实践 |
-| [Spotify Llm Evals Funnel Not Fork](ch01/590-llm.md) | **评测漏斗** | Spotify：评测要 funnel 而非 fork |
-| [Langsmith Trajectory Evals](ch01/700-langsmith-trajectory-evals.md) | **LangSmith trace 评测** | LangSmith trajectory 级评测 |
+| [Aws Reinforcement Fine Tuning Llm As Judge](ch01/586-llm.md) | **LLM-as-Judge RFT** | AWS 用 LLM-as-Judge 做 RLHF/RFT 的实践 |
+| [Spotify Llm Evals Funnel Not Fork](ch01/586-llm.md) | **评测漏斗** | Spotify：评测要 funnel 而非 fork |
+| [Langsmith Trajectory Evals](ch01/699-langsmith-trajectory-evals.md) | **LangSmith trace 评测** | LangSmith trajectory 级评测 |
 | [Saas Bench Gui Agent Eval Unipat](../ch03/045-agent.md) | **GUI Agent 评测** | SaaS-Bench：GUI Agent 评测基准 |
 | [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/045-agent.md) | **电商导购 Agent 评测** | 淘天智能导购 Agent 评测实践 |
 | [Aliyun Agentloop Enterprise Agent Self Evolution Flywheel](../ch03/045-agent.md) | **阿里 AgentLoop** | 4 环飞轮中"评估环"的产品化（Agent-as-a-Judge 13 个评估器） |

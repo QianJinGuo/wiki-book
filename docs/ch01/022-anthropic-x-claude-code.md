@@ -76,7 +76,7 @@
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/1113-anthropic-claude-code.md)
 - [Claude Code Large Codebase Enterprise Deployment](../ch03/075-claude-code.md)
 - [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](../ch04/432-anthropic-ai.md)
-- [Anthropic Prompt Caching Claude Code Agihunt](ch01/284-anthropic-prompt-caching-claude-code.md)
+- [Anthropic Prompt Caching Claude Code Agihunt](ch01/277-anthropic-prompt-caching-claude-code.md)
 - [Cat Wu Claude Code Pm](../ch03/075-claude-code.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-founders-playbook-huashu-2026.md)

@@ -118,7 +118,7 @@ MiniMax 的 Owner-Worker-Verifier 模型揭示了一个关键认知：多 Agent 
 
 ## 相关实体
 - [Minimax Agent Team Mavis](ch04/145-ai-minimax-agent-team-mavis.md)
-- [Gepa Optimize Anything](../ch01/361-gepa-optimize-anything.md)
+- [Gepa Optimize Anything](../ch01/354-gepa-optimize-anything.md)
 - [Sub Agent Vs Agent Team Selection Guide](ch04/110-sub-agent-vs-agent-team.md)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/376-agent-skills.md)
 - [Memory Agent Systems Cobanov](ch04/526-memory-agent-systems-cobanov.md)

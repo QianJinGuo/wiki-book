@@ -28,13 +28,13 @@ sources:
   - https://mp.weixin.qq.com/s/6bKuYLV1E5LGqUEKV0tbtA
 related:
 
-  - [Harness 工程化体系](../ch05/092-harness-engineering.md)
+  - [Harness 工程化体系](../ch05/062-harness-engineering.md)
   - [Context Management 与 Working Set](../ch05/038-agent-harness.md)
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.md)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/606-claude-managed-agents.md)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.md)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/608-claude-managed-agents.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/038-agent-harness.md)
 - [Agent Harness 12 组件与 7 个关键决策](../ch05/038-agent-harness.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.md)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.md)
 
 ## 深度分析
 ### 核心命题：harness 与后端的边界是临时状态
@@ -71,9 +71,9 @@ related:
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/045-agent.md)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/397-agentrun.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/092-harness-engineering.md)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/062-harness-engineering.md)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/213-openclaw.md)
-- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/092-harness-engineering.md)
+- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/062-harness-engineering.md)
 
 ---
 
