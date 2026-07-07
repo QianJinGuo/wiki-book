@@ -29,14 +29,14 @@ Amazon QuickSight 的文档级 ACL 功能代表了企业 AI 搜索系统中访�
 **不可逆性的准备**：启用文档级 ACL 是单向操作，无法在后续关闭。建议在任何生产部署前先在测试或非生产知识库上完整验证配置正确性，特别是验证 ALLOW 和 DENY 规则的优先级行为是否符合预期 。
 
 ## 相关实体
-- [PyTorch 2.12 Release Blog – PyTorch](../ch01/270-pytorch-2-12-release-blog.md) — 另一个 2026 年重大技术发布
-- [TeamPCP Claims Sale of Mistral AI Repositories](../ch12/058-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha.md) — AI 基础设施安全事件
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch04/070-ai.md)
-- [CloudSectiDbits](ch11/222-cloudsectidbits.md)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/052-prowler-genai.md)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/229-aws-bedrock-agentcore.md)
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/033-amazon-bedrock-api.md)
-- [amazon quick arns: cross-account migration and namespace per](ch11/202-amazon-quick.md)
+- [PyTorch 2.12 Release Blog – PyTorch](../ch01/263-pytorch-2-12-release-blog.html) — 另一个 2026 年重大技术发布
+- [TeamPCP Claims Sale of Mistral AI Repositories](../ch12/058-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha.html) — AI 基础设施安全事件
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch04/070-ai.html)
+- [CloudSectiDbits](ch11/222-cloudsectidbits.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/052-prowler-genai.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/229-aws-bedrock-agentcore.html)
+- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/033-amazon-bedrock-api.html)
+- [amazon quick arns: cross-account migration and namespace per](ch11/202-amazon-quick.html)
 
 ---
 

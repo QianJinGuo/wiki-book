@@ -19,23 +19,23 @@ Claude Code 源码拆解（by 无岳，阿里云开发者，2026-04-15）。核�
 | 7 | 平台扩展性 = 外部多样 + 内部收敛 | 扩展层 |
 
 ## 子页面
-- [七大模块详解](../ch03/075-claude-code.md) — 入口链路、REPL、Query Loop、Tool Runtime、Permission、多Agent、扩展性
-- [设计原则与对照分析](../ch03/075-claude-code.md) — 五条设计原则、Harness 映射、OpenClaw/Hermes 对比
+- [七大模块详解](../ch03/075-claude-code.html) — 入口链路、REPL、Query Loop、Tool Runtime、Permission、多Agent、扩展性
+- [设计原则与对照分析](../ch03/075-claude-code.html) — 五条设计原则、Harness 映射、OpenClaw/Hermes 对比
 
 ## Related
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
 - [原始文章存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-architecture-analysis.md)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Claude Code 架构深度解析](../ch03/075-claude-code.md)
-- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/075-claude-code.md)
+- [Claude Code 架构深度解析](../ch03/075-claude-code.html)
+- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/075-claude-code.html)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
 - [上下文隔离](https://github.com/QianJinGuo/wiki/blob/main/entities/context-isolation.md)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch04/070-ai.md)
-- [Agentium — 从零实现 Agent 系统的开源框架](ch01/1149-agentium-agent.md)
-- [17种Agent架构演进：控制流设计的完整演化史](../ch04/596-17-agent.md)
-- [Owner-Worker-Verifier 架构](ch01/1173-owner-worker-verifier.md)
-- [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch03/090-hermes-agent.md)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch04/070-ai.html)
+- [Agentium — 从零实现 Agent 系统的开源框架](ch01/1154-agentium-agent.html)
+- [17种Agent架构演进：控制流设计的完整演化史](../ch04/599-17-agent.html)
+- [Owner-Worker-Verifier 架构](ch01/1179-owner-worker-verifier.html)
+- [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch03/090-hermes-agent.html)
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
 
 ## 深度分析
@@ -54,9 +54,9 @@ Claude Code 架构的核心价值在于将"野生函数"转化为"带完整运�
 → [C4 架构图](assets/c4/claude-code-architecture-c4.html)
 
 ## 相关实体
-- [claude-code-7-layer-memory-architecture](../ch03/075-claude-code.md)
+- [claude-code-7-layer-memory-architecture](../ch03/075-claude-code.html)
 
-- [Agent 时代架构师技能指南](../ch03/069-skills.md)
+- [Agent 时代架构师技能指南](../ch03/069-skills.html)
 - [Data Agent Platform Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/data-agent-platform-architecture.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 

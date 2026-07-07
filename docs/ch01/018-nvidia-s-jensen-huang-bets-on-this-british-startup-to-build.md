@@ -38,11 +38,11 @@ LLM 公司的战略规划者需要正视文章中隐含的挑战：如果强化�
 
 ## 关联阅读
 ## 相关实体
-- [Why Im Leaving Github For Forgejo](ch01/749-github.md)
-- [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.md)
-- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/082-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.md)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/070-ai.md)
-- [Microsoft For Startups Microsoft](ch01/859-microsoft-for-startups-microsoft.md)
+- [Why Im Leaving Github For Forgejo](ch01/751-github.html)
+- [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
+- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/082-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/070-ai.html)
+- [Microsoft For Startups Microsoft](ch01/124-microsoft-for-startups-microsoft.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md)
 

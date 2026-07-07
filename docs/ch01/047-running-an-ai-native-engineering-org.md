@@ -31,9 +31,9 @@ AI 生成代码 → AI 自动审查 → 人类重点审查——三层审查模�
 审查工具（diff 可视化、AI 审查助手、自动测试）比写代码工具更重要。
 
 ## 相关实体
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch01/034-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.md)
-- [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.md)
-- [Products Are Out Brains Are In](ch01/126-products-are-out-brains-are-in.md)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch01/034-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
+- [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
+- [Products Are Out Brains Are In](ch01/127-products-are-out-brains-are-in.html)
 - Investing In Stitch
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 

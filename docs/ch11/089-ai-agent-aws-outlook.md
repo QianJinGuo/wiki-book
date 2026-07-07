@@ -79,11 +79,11 @@
 
 ### 1. Skill 文件作为业务语言层的架构意图
 
-Skill 层用 Markdown 描述业务流程，其核心设计意图是在工程层与业务层之间建立一个可直接沟通的中间层。这一层使非技术背景的业务同事能够独立调整自动化流程，而无需触及代码或重新部署服务。从工程角度看，这是一种职责分离（separation of concerns）实践：底层 API 调用相对稳定，而业务流程变化频繁。将流程定义从代码层抽离到 Markdown 文件，既降低了流程变更的操作成本，也使得同一份 Skill 可以在不同模型之间移植时保持行为基本一致。这种设计思路与 [Harness Engineering](../ch05/092-harness-engineering.md) 框架中"慢知识"（静态版本化知识）的概念相呼应 — Skill 文件本质上是结构化的业务知识载体，而非运行时逻辑。
+Skill 层用 Markdown 描述业务流程，其核心设计意图是在工程层与业务层之间建立一个可直接沟通的中间层。这一层使非技术背景的业务同事能够独立调整自动化流程，而无需触及代码或重新部署服务。从工程角度看，这是一种职责分离（separation of concerns）实践：底层 API 调用相对稳定，而业务流程变化频繁。将流程定义从代码层抽离到 Markdown 文件，既降低了流程变更的操作成本，也使得同一份 Skill 可以在不同模型之间移植时保持行为基本一致。这种设计思路与 [Harness Engineering](../ch05/062-harness-engineering.html) 框架中"慢知识"（静态版本化知识）的概念相呼应 — Skill 文件本质上是结构化的业务知识载体，而非运行时逻辑。
 
 ### 2. MCP 协议作为企业级异构系统接入标准的价值
 
-四层架构中 MCP 工具层承担了隔离 Agent 运行时与底层企业 API 差异的关键职责。Microsoft Graph、OneDrive、ServiceNow、Jira、企业 ERP 系统各有不同的 API 形态和认证机制，但 MCP 协议将它们收敛到统一的工具发现与调用接口。这意味着新增一个外部系统集成只需要开发一个新的 MCP Server，原有的 Skill 文件和 Agent 运行时无需改动。在 [Aderant Transforms Cloud Operations With Amazon Quick](ch11/183-aderant-transforms-cloud-operations-with-amazon-quick.md) 中已记录类似模式：MCP 作为连接 AI Agent 与企业数据孤岛的核心中间层，将系统打通成本从月级降至周级。该架构的可扩展性验证了 MCP 协议在企业级 Agent 部署中的标准化价值。
+四层架构中 MCP 工具层承担了隔离 Agent 运行时与底层企业 API 差异的关键职责。Microsoft Graph、OneDrive、ServiceNow、Jira、企业 ERP 系统各有不同的 API 形态和认证机制，但 MCP 协议将它们收敛到统一的工具发现与调用接口。这意味着新增一个外部系统集成只需要开发一个新的 MCP Server，原有的 Skill 文件和 Agent 运行时无需改动。在 [Aderant Transforms Cloud Operations With Amazon Quick](ch11/183-aderant-transforms-cloud-operations-with-amazon-quick.html) 中已记录类似模式：MCP 作为连接 AI Agent 与企业数据孤岛的核心中间层，将系统打通成本从月级降至周级。该架构的可扩展性验证了 MCP 协议在企业级 Agent 部署中的标准化价值。
 
 ### 3. 模型可替换性作为中国区合规约束下的关键设计选择
 
@@ -91,7 +91,7 @@ Skill 层用 Markdown 描述业务流程，其核心设计意图是在工程层�
 
 ### 4. 草稿确认门作为外发动作合规基线的设计意图
 
-Agent 不直接发送邮件，而是将起草的回复落入用户"草稿"文件夹由用户审阅后发送 — 这是方案中唯一的外发动作约束，也是一项硬编码设计而非可配置选项。这反映了在企业 AI Agent 部署中的一条核心原则：涉及外部各方的动作必须有人工确认环节。邮件草稿门的设计将 AI 定位为人类判断的增强而非替代，这与 [Harness Engineering 90 Percent Pillars](../ch05/092-harness-engineering.md) 中强调的可验证循环和约束验证理念一致。在更广泛的场景扩展中（审批流转、工单关闭、会议邀请发送），同一原则被建议作为安全与合规基线 — 所有外发动作落入待审状态或通过 IM 审批卡片推送确认。
+Agent 不直接发送邮件，而是将起草的回复落入用户"草稿"文件夹由用户审阅后发送 — 这是方案中唯一的外发动作约束，也是一项硬编码设计而非可配置选项。这反映了在企业 AI Agent 部署中的一条核心原则：涉及外部各方的动作必须有人工确认环节。邮件草稿门的设计将 AI 定位为人类判断的增强而非替代，这与 [Harness Engineering 90 Percent Pillars](../ch05/062-harness-engineering.html) 中强调的可验证循环和约束验证理念一致。在更广泛的场景扩展中（审批流转、工单关闭、会议邀请发送），同一原则被建议作为安全与合规基线 — 所有外发动作落入待审状态或通过 IM 审批卡片推送确认。
 
 ### 5. Skill 自动生成机制对系统可维护性的深远影响
 

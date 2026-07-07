@@ -29,16 +29,16 @@ Obsidian与Claude Code的集成本质上解决了AI编程工具的一个核心�
 **对于工程团队：** 建立项目知识库的Obsidian规范，包括：(1) 每个重大架构决策的ADR（Architecture Decision Records）笔记，(2) 每个API的交互记录，(3) 每次代码审查的决策记录。这些结构化文档既是团队知识资产，也是Claude Code在长程任务中的外部记忆。Claude Code在执行任务时，应被明确指示将关键上下文写入Obsidian而非仅输出到终端。
 
 ## 相关资源
-- [Agent Memory 架构](../ch04/388-perplexity-brain-self-improving-agent-memory-architecture.md)
-- [Claude Managed Agents 开发者指南](../ch04/606-claude-managed-agents.md)
+- [Agent Memory 架构](../ch04/388-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Claude Managed Agents 开发者指南](../ch04/609-claude-managed-agents.html)
 
 ## 相关实体
-- [Obsidian + Claude Code 集成指南](ch09/112-obsidian-claude-code-integration-guide.md)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.md)
-- [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/833-claude-code-memory-setup-obsidian-graphify.md)
-- [Claude Code 命令完全指南](../ch03/075-claude-code.md)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.md)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/148-claude-code-1.md)
+- [Obsidian + Claude Code 集成指南](ch09/112-obsidian-claude-code-integration-guide.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
+- [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/833-claude-code-memory-setup-obsidian-graphify.html)
+- [Claude Code 命令完全指南](../ch03/075-claude-code.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.html)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/148-claude-code-1.html)
 
 ---
 

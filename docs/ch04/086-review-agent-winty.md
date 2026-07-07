@@ -143,8 +143,8 @@ Review Agent 优先 patch 已有的 Memory/Skill，避免了"同一个事实被�
 5. **定期人工审查 Review Agent 输出**: 每两周扫一次 .hermes/memory/ 和 .hermes/skills/，用 .hermes/review-feedback.md 反馈针对性问题，逐步优化复盘质量。
 
 ## 相关实体
-- [Skill 系统](../ch07/017-hermes-skill.md) — Skill 的触发条件、Patch 机制、版本管理
-- [Hermes 九模块架构](../ch01/250-9.md) — 架构全图，Review Agent 在第 7 模块
+- [Skill 系统](../ch07/017-hermes-skill.html) — Skill 的触发条件、Patch 机制、版本管理
+- [Hermes 九模块架构](../ch01/682-9.html) — 架构全图，Review Agent 在第 7 模块
 
 ---
 

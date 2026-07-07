@@ -5,9 +5,9 @@
 > 📊 Level ⭐⭐ | 4.2KB | `entities/gpt-image-2完全指南.md`
 
 ## 相关实体
-- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](ch01/848-gpt-image-2.md)
+- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](ch01/848-gpt-image-2.html)
 
-- [agent 开发范式演进：从环境工程出发](../ch03/045-agent.md)
+- [agent 开发范式演进：从环境工程出发](../ch03/045-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析

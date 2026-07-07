@@ -757,14 +757,14 @@ x402 协议经历了从 v1 到 v2 的重大变化，核心差异在于支付要�
 在部署步骤 4 中，Agent 的 Docker 镜像更新后需要调用 `update_agent_runtime` 触发重新拉取，然后用 `update_agent_runtime_endpoint` 指向新版本。这是一个容易遗漏的运维细节——如果只推送了新镜像但没有调用 update 接口，AgentCore Runtime 仍会运行旧版本，导致新功能或 Bug 修复无法生效。配合 CI/CD 流水线时，应该将镜像推送和 Runtime 更新打包成原子操作。
 
 ## 相关实体
-- [Firecracker Bedrock Agentcore Multi Tenant](ch11/048-bedrock-agentcore.md)
-- [Agentcore Payments X402 Agentic Commerce](ch11/065-agentcore-payments.md)
-- [Openclaw Amazon Bedrock Eks Printer Qc](ch11/152-amazon-bedrock.md)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/500-amazon-bedrock-agentcore.md)
-- [Agentic Payment X402 Bedrock Agentcore](ch11/048-bedrock-agentcore.md)
+- [Firecracker Bedrock Agentcore Multi Tenant](ch11/048-bedrock-agentcore.html)
+- [Agentcore Payments X402 Agentic Commerce](ch11/065-agentcore-payments.html)
+- [Openclaw Amazon Bedrock Eks Printer Qc](ch11/152-amazon-bedrock.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/501-amazon-bedrock-agentcore.html)
+- [Agentic Payment X402 Bedrock Agentcore](ch11/048-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/bedrock-agentcore-payment-x402-agent.md)
-- [Ai Research Assistant From Idea To App](../ch04/070-ai.md)
+- [Ai Research Assistant From Idea To App](../ch04/070-ai.html)
 
 ---
 

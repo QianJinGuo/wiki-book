@@ -37,12 +37,12 @@ NVIDIA Nemotron 3 Ultra is an open large language model with 550 billion total p
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1071-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1071-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.md)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

@@ -105,13 +105,13 @@ Bastani 等人(PNAS 2024)研究：无护栏 GPT-4 提高当场表现，但 AI �
 - CLAUDE.md 护栏 = 安全护栏（Step 5）
 - 学习卡 = 上下文恢复机制
 
-作者若飞（JiaGouX）系列关联：[Harness 实践指南](../ch05/092-harness-engineering.md)、[Harness 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+作者若飞（JiaGouX）系列关联：[Harness 实践指南](../ch05/062-harness-engineering.html)、[Harness 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ## 相关实体
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Harness Engineering 10 Step Practical Guide 2026](../ch05/092-harness-engineering.md)
-- [Karpathy Llm Wiki Second Brain Awkthole](../ch01/590-llm.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/1113-anthropic-claude-code.md)
+- [Harness Engineering 10 Step Practical Guide 2026](../ch05/062-harness-engineering.html)
+- [Karpathy Llm Wiki Second Brain Awkthole](../ch01/586-llm.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/1117-anthropic-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-personal-learning-system-ruofei.md)
 

@@ -29,10 +29,10 @@ QuickSight Dataset Q&A 的核心价值在于重新定义了什么叫做"BI 数�
 4. **适用场景判断**：Dataset Q&A 最适合的场景是：数据模型相对规范、字段有基本描述、但业务用户无法提前预判所有分析需求的动态探索场景。如果你的团队已经有完善的语义层（Topic Q&A 的场景），或者分析边界非常固定（Dashboard Q&A 的场景），Dataset Q&A 的增量价值会显著下降。
 
 ## 相关实体
-- [Aws Quicksight Dataset Qa Tara Case](ch11/157-aws-quicksight-dataset-qa-tara-case.md)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.md)
-- [Natural Language Autoencoders](../ch01/1191-natural-language-autoencoders-anthropic.md)
-- [Anthropic Natural Language Autoencoders](../ch01/846-anthropic.md)
+- [Aws Quicksight Dataset Qa Tara Case](ch11/157-aws-quicksight-dataset-qa-tara-case.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/188-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Natural Language Autoencoders](../ch01/1205-natural-language-autoencoders-anthropic.html)
+- [Anthropic Natural Language Autoencoders](../ch01/846-anthropic.html)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-quicksight-dataset-qa-natural-language.md)

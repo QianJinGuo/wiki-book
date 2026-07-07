@@ -403,11 +403,11 @@ Lambda 拦截器可以作为 AgentCore Gateway 的中间件——Gateway 负责�
 低频/高风险工具用拦截器（灵活策略），高频/低风险工具用内嵌安全（低延迟）——不要一刀切。
 
 ## 相关实体
-- [Amazon Bedrock Agentic Payments Guardrails](../ch11/152-amazon-bedrock.md)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/500-amazon-bedrock-agentcore.md)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/500-amazon-bedrock-agentcore.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/072-building-ai-agents-for-business-support-using-amazon-bedrock.md)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/271-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md)
+- [Amazon Bedrock Agentic Payments Guardrails](../ch11/152-amazon-bedrock.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/501-amazon-bedrock-agentcore.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/501-amazon-bedrock-agentcore.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/072-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/271-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
 

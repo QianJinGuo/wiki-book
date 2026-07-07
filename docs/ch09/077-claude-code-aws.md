@@ -58,12 +58,12 @@ LiteLLM Proxy 的审计日志 + CloudWatch 集成是基础，但企业还应关�
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/claude-code-open-source-model-enterprise-practice/)
 
 ## 相关实体
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.md)
-- [Claude Code 源码深度解析（13 核心机制）](../ch03/075-claude-code.md)
-- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.md)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.md)
-- [Claude Code Prompt 提示词体系源码解析](ch09/059-claude-code-prompt.md)
-- [Claude Code Skills 实践与 Superpowers 利器推荐](../ch01/508-claude-code-skills-superpowers.md)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
+- [Claude Code 源码深度解析（13 核心机制）](../ch03/075-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.html)
+- [Claude Code Prompt 提示词体系源码解析](ch09/059-claude-code-prompt.html)
+- [Claude Code Skills 实践与 Superpowers 利器推荐](../ch01/503-claude-code-skills-superpowers.html)
 
 ---
 

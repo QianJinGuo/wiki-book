@@ -98,14 +98,14 @@ AI-Infra-Auto-Driven-SKILLS 的设计明确将**工程纪律编码为工作流�
 
 AI Infra 工程纪律正在变成可执行的 skill artifact——推理框架优化流程的最佳实践被编码为 Agent 工作流。
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/769-skill-issues-compromising-claude-code-with-malicious-skills.md)
-- [Claude Code Skills Mcp Rules Source Analysis](ch07/006-claude-code-skills-mcp-rules.md)
-- [Skill System Design Three Way Comparison](../ch04/262-skill.md)
-- [Openclaw Agent Loop Design Patterns](../ch01/1079-openclaw-agent.md)
-- [Claude Code Vs Codex Context Architecture 02](../ch03/075-claude-code.md)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/771-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Claude Code Skills Mcp Rules Source Analysis](ch07/006-claude-code-skills-mcp-rules.html)
+- [Skill System Design Three Way Comparison](../ch04/262-skill.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1079-openclaw-agent.html)
+- [Claude Code Vs Codex Context Architecture 02](../ch03/075-claude-code.html)
 
-- [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)- [tliveomni vllm 适配与量化方案](../ch01/849-vllm.md)
-- [claude code 从 demo 到产线 · 企业 harness 工程化的 8 道关卡（黄佳/咖哥 csdn）](../ch03/075-claude-code.md)
+- [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)- [tliveomni vllm 适配与量化方案](../ch01/849-vllm.html)
+- [claude code 从 demo 到产线 · 企业 harness 工程化的 8 道关卡（黄佳/咖哥 csdn）](../ch03/075-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

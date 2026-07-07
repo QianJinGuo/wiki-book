@@ -64,11 +64,11 @@ AI 能力一直领先于 AI 可及性。Chatbot 格式在主动对抗用户。�
 5. **为"AI失望"做结构性归因——先改接口再弃AI**：当团队反映AI"不好用"时，应首先识别是否是接口问题（输入方式、输出格式、交互流程），而非直接判定AI能力不足。往往是接口错了，而非AI
 
 ## 相关实体
-- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/213-openclaw.md)
-- [Skill System Design Three Way Comparison](../ch04/262-skill.md)
-- [Openclaw Agent Loop Design Patterns](../ch01/1079-openclaw-agent.md)
-- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/1204-anthropic-claude.md)
-- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/147-ai-agent.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/213-openclaw.html)
+- [Skill System Design Three Way Comparison](../ch04/262-skill.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1079-openclaw-agent.html)
+- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/1218-anthropic-claude.html)
+- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/147-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-dispatch-and-the-power-of-interfaces.md)
 

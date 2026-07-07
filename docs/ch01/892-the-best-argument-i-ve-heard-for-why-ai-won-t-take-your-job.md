@@ -10,11 +10,11 @@
 - value=7, confidence=8, product=56
 - Well-written Platformer article on AI job impact
 ## 相关实体
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/056-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.md)
-- [Principals Ai Education](../ch04/070-ai.md)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/056-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.md)
-- [Pixel 10 Zero Click Exploit Chain](../ch04/070-ai.md)
-- [Anthropic_Cache_Tokenomics](ch01/846-anthropic.md)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/056-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
+- [Principals Ai Education](../ch04/070-ai.html)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/056-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
+- [Pixel 10 Zero Click Exploit Chain](../ch04/070-ai.html)
+- [Anthropic_Cache_Tokenomics](ch01/846-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/platformer-ai-job-loss-levie.md)
 
