@@ -11,10 +11,10 @@
 > **参考原文**: https://openai.com/index/delivering-low-latency-voice-ai-at-scale/
 
 ## 相关实体
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/670-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
-- [Openai Gpt Realtime Voice Models Qbitai](ch01/752-openai-gpt-realtime-voice-models-qbitai.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/671-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Openai Gpt Realtime Voice Models Qbitai](ch01/753-openai-gpt-realtime-voice-models-qbitai.html)
 - [Aliyun Agentrun 2Line Integration](../ch04/397-agentrun.html)
-- [Pi Mono Github](ch01/762-pi-mono-github.html)
+- [Pi Mono Github](ch01/763-pi-mono-github.html)
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-realtime-api-architecture.md)

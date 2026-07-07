@@ -70,12 +70,12 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 ## 相关实体
 - [Wetesteddeepseekv4Proandflashagainstclau](../ch01/1146-deepseek.html)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch04/070-ai.html)
-- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/754-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/077-ai.html)
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/755-why-internally-built-ai-fails-fund-accounting-audits.html)
 - Senatorsquerycreditbureausonbnpl
 
 - [Cpanel Whm Patch 3 New Vulnerabilities](https://github.com/QianJinGuo/wiki/blob/main/entities/cpanel-whm-patch-3-new-vulnerabilities.md)
-- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch04/070-ai.html)
+- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch05/077-ai.html)
 - [Automating Confidential Containers Coco Infrastructure With Kyverno](../ch11/094-automating-confidential-containers-coco-infrastructure-wit.html)
 - [Gptomics Com How Ai Changes Software P L](../ch01/064-how-ai-changes-software-p-l.html)
 - [Romanian Man 30 Years Us Prison Vishing](../ch01/205-0.html)
@@ -83,8 +83,8 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - [818662](https://github.com/QianJinGuo/wiki/blob/main/entities/818662.md)
 - [2026 04 15](../ch01/1204-15.html)
 - [What My Privacy And Security Stack Actually Looks Like](ch12/021-what-my-privacy-and-security-stack-actually-looks-like.html)
-- [Ai Traffic Cyberthreat Benchmark 2026](../ch04/070-ai.html)
-- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09/142-device-code-phishing-forensics-what-we-learned-from-bec-inv.html)
+- [Ai Traffic Cyberthreat Benchmark 2026](../ch05/077-ai.html)
+- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09/144-device-code-phishing-forensics-what-we-learned-from-bec-inv.html)
 
 ---
 

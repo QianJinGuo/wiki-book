@@ -182,7 +182,7 @@ PowerShell
 ## 相关实体
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/501-amazon-bedrock-agentcore.html)
 - [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/501-amazon-bedrock-agentcore.html)
-- [Openclaw Multi 2](ch11/213-openclaw.html)
+- [Openclaw Multi 2](ch11/214-openclaw.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 3](../ch04/501-amazon-bedrock-agentcore.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch04/501-amazon-bedrock-agentcore.html)
 

@@ -163,7 +163,7 @@ Ruby：`bundler/inline`
 - [9个Agent技能模块化SageMaker微调生命周期](ch04/381-aws-sagemaker-ai-agent.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/032-qoder-skills.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/200-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/071-thin-harness-fat-skills-ai.html)
 
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/098-anthropic-agent.html)
 - [SkillX — 层次化技能知识库](../ch07/048-skillx.html)

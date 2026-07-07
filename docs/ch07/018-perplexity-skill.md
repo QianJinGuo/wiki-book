@@ -143,7 +143,7 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/262-skill.html)
 - [SkillX — 层次化技能知识库](ch07/048-skillx.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/098-anthropic-agent.html)
-- [AI Skill 测评指标体系](../ch01/477-ai-skill.html)
+- [AI Skill 测评指标体系](../ch01/478-ai-skill.html)
 - [SkillClaw](../ch04/427-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
 - [Skills赏析：使用skills-refiner提升skill质量](../ch03/069-skills.html)

@@ -17,17 +17,17 @@
 - [Agent Memory 架构解析](ch04/096-agent-memory.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/009-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/045-agent.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.html)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.html)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.html)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/620-llm-wiki-obsidian-wiki-gbrain.html)
-- [AI Context Layer 框架](ch04/070-ai.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/621-llm-wiki-obsidian-wiki-gbrain.html)
+- [AI Context Layer 框架](../ch05/077-ai.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/090-hermes-agent.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [AI Agent 工程师能力地图](ch04/147-ai-agent.html)
 
-- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](ch04/070-ai.html)
+- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](../ch05/077-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析

@@ -34,8 +34,8 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 
-- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](../ch01/846-anthropic.html)
-- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](../ch01/846-anthropic.html)
-- [dario amodei 2026 policy on the ai exponential](../ch04/070-ai.html)
+- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](../ch01/847-anthropic.html)
+- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](../ch01/847-anthropic.html)
+- [dario amodei 2026 policy on the ai exponential](../ch05/077-ai.html)
 
 ---

@@ -110,7 +110,7 @@ Code as Agent Harness 可以被视为 Software 2.0（以神经网络替代手工
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
-- [harness-engineering-systematic-explainer](../ch05/062-harness-engineering.html)
+- [harness-engineering-systematic-explainer](../ch05/092-harness-engineering.html)
 
 - [Claude Code 架构深度解析](../ch03/075-claude-code.html)
 - [Claude Code Prompt 提示词体系源码解析](ch09/059-claude-code-prompt.html)

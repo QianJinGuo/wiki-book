@@ -15,7 +15,7 @@
 - [Deerflow Hermes Openclaw Comparison](ch04/447-deerflow-hermes-openclaw.html)
 - [Hermes Agent Getting Started Guide 2026](../ch03/090-hermes-agent.html)
 - [Hermes Agent Deep Dive Alibaba](../ch03/090-hermes-agent.html)
-- [Claude Opus 47](../ch01/1036-claude.html)
+- [Claude Opus 47](../ch01/1037-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ml-intern-huggingface-autonomous-ml-agent.md)
 

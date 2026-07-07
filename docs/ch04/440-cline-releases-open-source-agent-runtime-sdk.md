@@ -16,7 +16,7 @@
 - [腾讯混元Hy3-preview发布](../ch01/109-hy3-preview.html)
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/075-claude-code.html)
 - [Codex /goal：长任务Agent的目标运行时](ch04/103-codex-goal-agent.html)
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](../ch11/252-bedrock.html)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](../ch11/253-bedrock.html)
 - [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/045-agent.html)
 
 - [淘宝动效解决方案分享](https://github.com/QianJinGuo/wiki/blob/main/entities/淘宝动效解决方案分享.md)

@@ -164,7 +164,7 @@
 - Kimi Work = Harness 从云端到本地（**部署层**架构）
 - 共同点：都在"防止上帝文件 / 防止环境割裂"层面做工程化
 
-### vs [Codex 6 职位插件](ch01/520-codex.html)
+### vs [Codex 6 职位插件](ch01/521-codex.html)
 - 之前 Codex 还在"加插件拓展能力"
 - 现在 OpenAI 直接把 Codex 并入 ChatGPT——**赛道战略转向**
 
