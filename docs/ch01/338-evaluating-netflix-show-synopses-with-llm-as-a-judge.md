@@ -71,9 +71,9 @@ Higher take fraction indicates more choosing, while lower abandonment suggests a
 Solid industry application of LLM-as-a-Judge methodology with meaningful technical depth: per-criteria dedicated judges, zero-shot CoT prompting, Automatic Prompt Optimization, inference-time scaling (longer rationales, consensus scoring), and tiered rationale generation. Includes practical details on human-AI calibration (8 rounds, 80% agreement), golden set construction (~600 synopses with binary labels), and correlation of LLM scores with business metrics (take fraction, abandonment rate). Draws on relevant academic references (CoT, APO). The article is clearly written and well-structured, authored by named researchers/practitioners. However, the content is truncated mid-section (cuts off during 'tiered rationales' discussion), quantitative results in the excerpt are limited, no full comparison to baselines, and it is an industry blog rather than peer-reviewed research. Despite these issues, the methodology, calibration process, and integration of LLM evaluation with implicit feedback signals make it a useful case study for a technical AI/ML wiki.
 
 ## 相关实体
-- [Spotify Llm Evals Funnel Not Fork](ch01/586-llm.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/615-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
-- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/586-llm.html)
+- [Spotify Llm Evals Funnel Not Fork](ch01/587-llm.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/616-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/587-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 

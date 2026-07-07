@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [scaling archunit with nebula archrules](../ch11/254-scaling-archunit-with-nebula-archrules.html)
+- [scaling archunit with nebula archrules](../ch11/255-scaling-archunit-with-nebula-archrules.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/820297.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
@@ -89,7 +89,7 @@ Harness 报告给出的建议可以归纳为四个层面：
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html) — Claude Code 源码机制详解
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.html) — Agent 原理架构与工程实践
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md) — 多智能体交易系统架构
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/213-openclaw.html) — OpenClaw 完全指南
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/214-openclaw.html) — OpenClaw 完全指南
 
 ---
 

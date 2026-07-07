@@ -90,9 +90,9 @@ GLM-5 由智谱 Z.ai 推出：
 
 ## 关联实体
 
-- [DeepSeek V4](ch01/1048-deepseek-v4.html) — 业界关注度最高、即将发布的中国前沿模型
+- [DeepSeek V4](ch01/1049-deepseek-v4.html) — 业界关注度最高、即将发布的中国前沿模型
 - [CybersecQwen 4B](../ch12/098-cybersecqwen-4b.html) — Qwen 在安全垂域的专用模型
-- [OpenClaw 完全指南](../ch11/213-openclaw.html) — Agent 工具栈的实践参考
+- [OpenClaw 完全指南](../ch11/214-openclaw.html) — Agent 工具栈的实践参考
 - [Agent 记忆系统的工程实践](../ch03/045-agent.html) — 长上下文在 Agent 记忆中的工程化
 - [Claude Code 源码核心机制](../ch03/075-claude-code.html) — 编码场景的 Agent 实现细节
 - [Agent 循环设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) — Agent 评测与训练的核心范式

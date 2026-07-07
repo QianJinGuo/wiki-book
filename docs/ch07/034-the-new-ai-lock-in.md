@@ -88,7 +88,7 @@ MIT NANDA 报告显示 95% 企业 genAI pilot 未能交付可衡量的业务影�
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/new-ai-lock-in.md)
 
 ## ## 相关实体
-- [柚漫剧 AI 全流程提效拆解](../ch04/070-ai.html)
+- [柚漫剧 AI 全流程提效拆解](../ch05/077-ai.html)
 
 ---
 

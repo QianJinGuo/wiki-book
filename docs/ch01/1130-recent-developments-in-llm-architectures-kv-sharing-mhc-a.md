@@ -45,10 +45,10 @@ DeepSeek V4 的 CSA/HCA 压缩的是序列维度本身（每 128 token 压缩为
 
 ## 相关实体
 - [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](ch01/045-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html)
-- [Recent_Developments_In_Llm_Architectures](ch01/586-llm.html)
-- [Memory In The Llm Era Iclr2026](ch01/586-llm.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/615-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
-- [Llm Raiders How To Repel](ch01/586-llm.html)
+- [Recent_Developments_In_Llm_Architectures](ch01/587-llm.html)
+- [Memory In The Llm Era Iclr2026](ch01/587-llm.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/616-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Llm Raiders How To Repel](ch01/587-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/recent-developments-in-llm-architectures-jiqizhixin.md)
 

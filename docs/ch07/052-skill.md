@@ -60,7 +60,7 @@
 
 ## 相关实体
 - [Skill.md 简历生成器 Resume Forge](../ch04/262-skill.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/555-agent-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/260-agent-skill.html)
 - [Hermes Agent](../ch03/090-hermes-agent.html)
 - [Qoder Skills 完全指南](ch07/032-qoder-skills.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
@@ -73,7 +73,7 @@
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/098-anthropic-agent.html)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/376-agent-skills.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch07/032-qoder-skills.html)
-- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/071-thin-harness-fat-skills-ai.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/200-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 ---

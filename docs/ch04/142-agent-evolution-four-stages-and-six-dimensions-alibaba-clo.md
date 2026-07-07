@@ -86,7 +86,7 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 ### 与本文观察的对应关系
 
 文中提及的代表性框架可对应到本仓库其他实体：
-- **Cloud Code / Codex / OpenClaw / Hermes** → [Claude Code](../ch05/060-claude-code-harness.html) / [OpenClaw](../ch11/213-openclaw.html) / Hermes Agent 等
+- **Cloud Code / Codex / OpenClaw / Hermes** → [Claude Code](../ch05/061-claude-code-harness.html) / [OpenClaw](../ch11/214-openclaw.html) / Hermes Agent 等
 - **Workflow 引擎 LangGraph / Dify** → Agent 编排基础设施
 - **Skills 体系（SKILL.md / CLAUDE.md / AGENTS.md）** → [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心载体
 - **LLM-Wiki / GBrain** → 本地知识库理念
@@ -104,8 +104,8 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 
 ## 相关实体
 
-- [Claude Code 深度解析](../ch05/060-claude-code-harness.html) — 自主 Agent 阶段（阶段三）代表
-- [OpenClaw 完整指南](../ch11/213-openclaw.html) — 自主 Agent 阶段（阶段三）代表
+- [Claude Code 深度解析](../ch05/061-claude-code-harness.html) — 自主 Agent 阶段（阶段三）代表
+- [OpenClaw 完整指南](../ch11/214-openclaw.html) — 自主 Agent 阶段（阶段三）代表
 - [Claude Code Dynamic Workflows](../ch09/078-claude-code-dynamic-workflows.html) — 阶段三到阶段四过渡的 Dynamic Workflow 范式
 - [从氛围编程到智能体工程](ch04/123-karpathy-vibe-coding-agentic-engineering.html) — Agentic Engineering 范式演进
 - [Agent 记忆系统实践](../ch03/045-agent.html) — Memory 模块工程化

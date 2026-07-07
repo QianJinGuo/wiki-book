@@ -33,7 +33,7 @@
 - **[Claude Code Prompt Context Harness](../ch09/059-claude-code-prompt.html)**（飞樰）侧重 Prompt 模块化/Harness 安全/多 Agent 体系
 - **[Claude Code Agent Engineering](../ch03/067-claude-code-agent.html)**（SooKool）侧重 StreamingToolExecutor/主循环/压缩/小模型/Hook
 - **[Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)**（800行轻量架构）与 Claude Code 同体系但更精简
-- **[Agent Skill Writing](../ch04/555-agent-skill.html)** Skill 编写规范对应 Fat Skills 理念
+- **[Agent Skill Writing](../ch04/260-agent-skill.html)** Skill 编写规范对应 Fat Skills 理念
 - **[Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)** Hermes 的 Self-Evolving 与 Claude Code 架构的关系
 
 ## 相关实体
@@ -46,7 +46,7 @@
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/045-agent.html)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch04/070-ai.html)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/077-ai.html)
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch03/090-hermes-agent.html)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/075-claude-code.html)
 - [Claude Code 架构深度解析](../ch03/075-claude-code.html)
@@ -63,7 +63,7 @@
 - [Agent Memory 系统性框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1036-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1037-claude.html)
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/075-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)

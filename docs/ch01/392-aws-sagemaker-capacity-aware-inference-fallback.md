@@ -85,7 +85,7 @@ Instance Pools改变了这一点：冷启动时会自动按优先级尝试可用
 - [Building Blocks for Foundation Model Training and Inference on AWS](../ch11/117-building-blocks-for-foundation-model-training-and-inference.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11/007-aws-bedrock.html)
 - [9个Agent技能模块化SageMaker微调生命周期](../ch04/381-aws-sagemaker-ai-agent.html)
-- [redis agentic ai flowers with iris](ch01/682-9.html)
+- [redis agentic ai flowers with iris](ch01/683-9.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---
