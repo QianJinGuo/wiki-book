@@ -85,7 +85,7 @@ ByteByteGo 对 Thinking Machines 交互模型的深度科普，核心贡献在**
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/interaction-models.md)
 
-- [Interaction Models: A Scalable Approach to Human-AI Collaboration](ch04/070-ai.html)
+- [Interaction Models: A Scalable Approach to Human-AI Collaboration](../ch05/077-ai.html)
 - [thinking-machines-interaction-models-ai-cold](ch04/244-thinking-machines-interaction-models.html)
 
 ---

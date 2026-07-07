@@ -81,7 +81,7 @@
 - [qoder skills](ch07/032-qoder-skills.html)
 - [Agent/Skills/Teams 架构演进过程及技术选型之道](../ch04/232-agent-skills-teams.html)
 - [Agent 时代架构师技能指南](../ch03/069-skills.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/555-agent-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/260-agent-skill.html)
 - [Hermes Agent](../ch03/090-hermes-agent.html)
 - [你写的 Skill，及格了吗？](../ch04/262-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
@@ -94,7 +94,7 @@
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/376-agent-skills.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/200-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/071-thin-harness-fat-skills-ai.html)
 - [Code Intelligence Changelog](../ch04/449-code-intelligence-changelog.html)
 
 ---

@@ -31,7 +31,7 @@ Dausch 强调："Digital has become an enormous part of our business. And so, of
 
 Dausch 的原话："The starting point was a very fragmented data estate. It was for us, not only getting all of the data in one place, but also that all of the data means the same things across all of our systems and all of our markets."
 
-这揭示了大型传统企业 AI 落地的关键前置条件——在 60 年历史的品牌上建立统一数据模型耗时巨大，但没有这个基础，AI 系统无法获得一致的训练信号。这与 [Netflix ML 平台建设](../ch11/243-democratizing-machine-learning-at-netflix-building-the-mode.html) 中讨论的数据治理挑战高度相似。
+这揭示了大型传统企业 AI 落地的关键前置条件——在 60 年历史的品牌上建立统一数据模型耗时巨大，但没有这个基础，AI 系统无法获得一致的训练信号。这与 [Netflix ML 平台建设](../ch11/244-democratizing-machine-learning-at-netflix-building-the-mode.html) 中讨论的数据治理挑战高度相似。
 
 ### AI 战略三维度框架
 
@@ -78,7 +78,7 @@ Dausch 强调衡量标准包括三个层次：
 
 Dausch 的关键提醒："AI, at the end of the day, in my view, is still just a tool, as is the rest of technology. We focus on delivering great food at great value with great service to our customers. That's the business that we're in."
 
-这与 [Platformer AI 就业影响讨论](../ch04/070-ai.html) 中 Box CEO 的观点形成呼应——技术是手段，业务价值才是目的。
+这与 [Platformer AI 就业影响讨论](../ch05/077-ai.html) 中 Box CEO 的观点形成呼应——技术是手段，业务价值才是目的。
 
 ## 实践启示
 
@@ -90,8 +90,8 @@ Dausch 的关键提醒："AI, at the end of the day, in my view, is still just a
 
 ## 相关实体
 
-- [Democratizing Machine Learning At Netflix Building The Model](../ch11/243-democratizing-machine-learning-at-netflix-building-the-mode.html)
-- [Platformer Ai Job Loss Levie](../ch04/070-ai.html)
+- [Democratizing Machine Learning At Netflix Building The Model](../ch11/244-democratizing-machine-learning-at-netflix-building-the-mode.html)
+- [Platformer Ai Job Loss Levie](../ch05/077-ai.html)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/137-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
 
 ---

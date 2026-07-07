@@ -16,7 +16,7 @@ GitHub: https://github.com/Openbmb/edgeclaw
 - [我用 Skillmd 做了一个简历生成器](ch04/262-skill.html)
 - [Aliyun Agentrun 2Line Integration](ch04/397-agentrun.html)
 - [Computer Use 45X More Expensive Than Structured Apis](ch04/259-computer-use-45x-more-expensive-than-structured-apis.html)
-- [2 Year 25 Ai Projects Summary](../ch01/1005-5-ai.html)
+- [2 Year 25 Ai Projects Summary](../ch01/1006-5-ai.html)
 - [Agent 从能用到管好中间差了什么](../ch03/045-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/edgeclaw-bemit-lobster.md)

@@ -108,7 +108,7 @@
 - [OpenSquilla](../ch01/014-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html) —— Meta Skill 的实现载体
 - [SkillOpt](../ch05/041-skillopt.html) —— 互补（Skill 变好 vs Skill 变多）
 - [Impeccable](../ch05/001-impeccable.html) —— skill 内命令的范例
-- [Agent Skill 编写指南](../ch04/555-agent-skill.html)
+- [Agent Skill 编写指南](../ch04/260-agent-skill.html)
 - [10 篇论文看懂 AI Agent Skill](../ch04/262-skill.html)
 - [Agent Skills 系统性综述](../ch04/376-agent-skills.html)
 - [Skills 系统设计三路对比](../ch04/262-skill.html)

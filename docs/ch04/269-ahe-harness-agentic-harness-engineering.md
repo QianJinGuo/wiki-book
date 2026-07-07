@@ -30,7 +30,7 @@ Harness Engineering 迭代依赖人工经验，但模型以月为单位进化、
 
 ### 核心问题：Harness 迭代速度跟不上模型进化
 
-Harness Engineering 的实践已经证明"Harness matters more than the model"（参见 [Harness Engineering Core Patterns Claude Code](../ch05/062-harness-engineering.html)），但 Harness 本身的迭代仍是人工经验驱动的。模型以月为单位迭代到 GPT-5.4、Claude 4.5、Gemini 3.1 这种代际，任务场景又往长尾分布发展——工程师手动调 prompt 写 tool description 配 middleware 的速度，已经追不上"模型升级 + 任务扩展"的复合速度。
+Harness Engineering 的实践已经证明"Harness matters more than the model"（参见 [Harness Engineering Core Patterns Claude Code](../ch05/092-harness-engineering.html)），但 Harness 本身的迭代仍是人工经验驱动的。模型以月为单位迭代到 GPT-5.4、Claude 4.5、Gemini 3.1 这种代际，任务场景又往长尾分布发展——工程师手动调 prompt 写 tool description 配 middleware 的速度，已经追不上"模型升级 + 任务扩展"的复合速度。
 
 AHE 的回答是：把 Harness 的迭代本身也变成一个 Agent 任务。让 Evolve Agent 在结构化环境里，基于真实执行证据自动修改 Harness。
 
@@ -92,10 +92,10 @@ AHE 的演化曲线揭示了一个反直觉的现象：
 
 ## 相关实体
 
-- [Harness Engineering Core Patterns Claude Code](../ch05/062-harness-engineering.html)
+- [Harness Engineering Core Patterns Claude Code](../ch05/092-harness-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.html)
 - [Claude Code Harness Deep Understanding](../ch01/460-claude-code-harness-deep-understanding.html)
-- [Ai Job Interview Model Evaluation Mollick](ch04/070-ai.html)
+- [Ai Job Interview Model Evaluation Mollick](../ch05/077-ai.html)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/147-ai-agent.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent Observability](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-observability.md)

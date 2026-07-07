@@ -108,7 +108,7 @@ Reasoning Trap 的发现挑战了"更多思考 = 更好结果"的朴素直觉。
 - [生产级 Agent Harness](../ch05/038-agent-harness.html) — Harness 架构中 Orchestrator 层的设计
 - [Harness 范式](../ch05/009-harness.html) — 从 Vibe Coding 到 Harness Engineering 的范式转变
 - [Agent Harness 综述](../ch05/038-agent-harness.html) — 调度层设计对 Agent 表现的影响
-- [多 Agent 信息流设计](ch01/846-anthropic.html) — Agent 间信息流转的架构模式
+- [多 Agent 信息流设计](ch01/847-anthropic.html) — Agent 间信息流转的架构模式
 - [注意力坍缩与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md) — 长上下文场景下模型行为退化及其应对
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/icml-2026如何对multi-agent系统进行过程评估重新认识多智能体系统中的orchestrator.md)

@@ -87,7 +87,7 @@ Mollick 强调 Agent"在需要批准时会 ping 你"——这意味着有效的 
 Mollick 发现，当他对 Gemini 3 提出模糊但有空间的改进建议（"build it out more, make it better"），Agent 的表现提升显著——"就像指导学生一样"。  这提示 Agentic AI 的最佳交互模式不是"一次性给出完整指令"，而是**迭代式引导**：给方向而非给细节，让 AI 自己补全执行路径。这要求工作者具备"模糊指令精确化"的能力——既能给出战略方向，又能为 AI 的创造性执行留出空间。
 
 ## 相关实体
-- [Using Ai Right Now Mollick Quick Guide](ch04/070-ai.html)
+- [Using Ai Right Now Mollick Quick Guide](../ch05/077-ai.html)
 - [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt5-just-does-stuff-mollick.md)
 - [Guide Ai Agents Models Apps Harnesses Mollick](ch04/147-ai-agent.html)
 - [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)

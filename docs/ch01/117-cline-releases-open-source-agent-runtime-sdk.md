@@ -41,7 +41,7 @@ engine 采用 Elastic License 2.0，SDK 采用 Apache 2.0。内部研究、架�
 - [Cline releases open-source agent runtime SDK](../ch04/440-cline-releases-open-source-agent-runtime-sdk.html)
 - [Cline releases open-source agent runtime SDK](../ch03/045-agent.html)
 - [OpenSquilla launches open-source AI agent to cut token costs](ch01/014-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
-- [ai gateway production index](../ch04/070-ai.html)
+- [ai gateway production index](../ch05/077-ai.html)
 
 ---
 

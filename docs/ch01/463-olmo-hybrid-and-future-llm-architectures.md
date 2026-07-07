@@ -75,7 +75,7 @@ The most immediate practical benefit of recurrent layers is reduced KV-cache mem
 - More concurrent users per GPU for serving
 - Lower memory requirements for RL training with long rollouts
 
-This connects directly to the [inference cost analysis](ch01/911-20.html) — memory bandwidth is the bottleneck for long-context inference, and hybrid architectures fundamentally reduce this pressure.
+This connects directly to the [inference cost analysis](ch01/912-20.html) — memory bandwidth is the bottleneck for long-context inference, and hybrid architectures fundamentally reduce this pressure.
 
 ### Are Frontier Models Already Hybrid?
 
@@ -103,7 +103,7 @@ The post-training difficulties point to a significant research gap: **architectu
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/045-agent.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
-- [Inference cost at scale with napkin math](ch01/911-20.html)
+- [Inference cost at scale with napkin math](ch01/912-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 
 ---

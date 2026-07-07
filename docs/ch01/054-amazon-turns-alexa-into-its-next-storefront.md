@@ -8,7 +8,7 @@
 - 来源：https://www.pymnts.com/news/retail/2026/amazon-bets-on-voice-as-agentic-commerces-winning-ai-interface/
 - 评分：v=8 c=7
 ## 相关实体
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch04/070-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/077-ai.html)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/150-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
 - [Notion Ai Agents](../ch04/147-ai-agent.html)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/133-code-simulation-for-enterprise-engineering-playerzero.html)

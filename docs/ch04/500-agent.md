@@ -38,9 +38,9 @@ Agent Loop 的核心实现逻辑抽象后其实不到 20 行代码：
 
 ## 相关实体
 - [Agent Principle Architecture Engineering Practice](ch04/327-agent-principle-architecture-engineering-practice.html)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/062-harness-engineering.html)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/092-harness-engineering.html)
 - [Factory Mission Multi Agent Architecture](../ch01/1148-factory-mission-multi-agent-architecture.html)
-- [Harness Engineering Long Term Agent Tasks](../ch05/062-harness-engineering.html)
+- [Harness Engineering Long Term Agent Tasks](../ch05/092-harness-engineering.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/147-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 

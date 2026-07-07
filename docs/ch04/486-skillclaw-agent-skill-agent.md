@@ -12,9 +12,9 @@
 
 ## 相关实体
 - [Hermes Skill System Winty](../ch07/017-hermes-skill.html)
-- [Ai Skill Skill Creator 源码拆解](../ch01/573-skill-skill.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/072-harness-skill.html)
-- [Agent Skill Writing Guide](ch04/555-agent-skill.html)
+- [Ai Skill Skill Creator 源码拆解](../ch01/574-skill-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/075-harness-skill.html)
+- [Agent Skill Writing Guide](ch04/260-agent-skill.html)
 - [Agent Memory Engineering Tax Aws China 2026](ch04/096-agent-memory.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillclaw-collective-intelligence.md)

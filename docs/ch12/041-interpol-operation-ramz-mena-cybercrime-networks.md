@@ -78,7 +78,7 @@ Group-IB 和 Team Cymru 的参与表明私营部门威胁情报已成为执法�
 - [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki/blob/main/entities/london-met-police-big-tech-data-requests.md)
 - [Nathan Lambert Claude Mythos Open Weights](../ch01/446-nathan-lambert.html)
 - [Shinyhunters 7 Eleven Data Breach](https://github.com/QianJinGuo/wiki/blob/main/entities/shinyhunters-7-eleven-data-breach.md)
-- [Japan Pm Cybersecurity Review Anthropic Mythos](../ch01/846-anthropic.html)
+- [Japan Pm Cybersecurity Review Anthropic Mythos](../ch01/847-anthropic.html)
 - [New Cybersecurity Coalition Us Policy](https://github.com/QianJinGuo/wiki/blob/main/entities/new-cybersecurity-coalition-us-policy.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/interpol-operation-ramz-mena-cybercrime.md)

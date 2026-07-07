@@ -89,10 +89,10 @@ Frida 在 Qt6 场景下的优势来自其 JavaScript 运行时允许动态构造
 **5. Part 2 预告的攻击链值得持续关注** — 文章预告将覆盖 premium-gate bypass、五点 anti-debug 完整hook、vault 解密边界、SSL pinning bypass 等，说明第一部分只是可见性获取，后续还有完整的客户端防护突破路径 。
 ## 相关实体
 - [Build Live Translation Apps With Gpt Realtime Translate](ch01/138-build-live-translation-apps-with-gpt-realtime-translate.html)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch01/771-skill-issues-compromising-claude-code-with-malicious-skills.html)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents](ch01/771-skill-issues-compromising-claude-code-with-malicious-skills.html)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/070-ai.html)
-- [Why Im Leaving Github For Forgejo](ch01/751-github.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch01/772-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents](ch01/772-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/077-ai.html)
+- [Why Im Leaving Github For Forgejo](ch01/752-github.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/runtime-instrumentation-of-qt6-apps-with-frida-part-1-getting-visibility.md)
 

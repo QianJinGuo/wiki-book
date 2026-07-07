@@ -77,7 +77,7 @@ wp-cron.php 依赖"有访客才触发"的机制在低流量时段造成任务漏
 - **上线前用 Rate-Based Statement 的干跑模式验证限速阈值**：AWS WAF 支持将规则设置为 Count（只记录不阻止），用生产流量验证后再切换为 Block
 
 ## 相关实体
-- [aws waf ai traffic monetization — 内容所有者向 ai 收费的网络层基础设施](../ch04/070-ai.html)
+- [aws waf ai traffic monetization — 内容所有者向 ai 收费的网络层基础设施](../ch05/077-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/使用-amazon-cloudfront-和-aws-waf-大规模交付-wordpress.md)
 
 ---

@@ -39,11 +39,11 @@ Localmaxxing 不是"取代云端"而是"分流任务"。随着本地模型能力
 ## 相关实体
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/localmaxxing.md)
 
-- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](../ch01/682-9.html)
-- [Ico Fines South Staffordshire 2022 Breach](../ch01/911-20.html)
+- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](../ch01/683-9.html)
+- [Ico Fines South Staffordshire 2022 Breach](../ch01/912-20.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Interaction Models](ch03/099-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch04/070-ai.html)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/077-ai.html)
 - [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/127-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 
 ---

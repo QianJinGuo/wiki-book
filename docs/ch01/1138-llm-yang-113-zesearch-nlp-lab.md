@@ -114,7 +114,7 @@
 | **医疗（Medicine）** | 领域知识图谱、合规约束 | Med-PaLM、 Hippocratic |
 | **金融（Finance）** | 时序数据、风险评估 | BloombergGPT、量化交易 Agent |
 | **算法发现（Algorithm）** | 元学习、搜索空间探索 | AlphaTensor、FunSearch |
-| **科学研究（Science）** | 自主假设提出、实验执行 | [Prime Intellect / nanoGPT Opus 4.7 突破人类纪录](../ch04/070-ai.html) |
+| **科学研究（Science）** | 自主假设提出、实验执行 | [Prime Intellect / nanoGPT Opus 4.7 突破人类纪录](../ch05/077-ai.html) |
 
 ## 四大未来方向
 
@@ -130,7 +130,7 @@
 | 维度 | 本文（Yang 等综述） | 既有覆盖 |
 |------|-------------------|---------|
 | **canonical artifact** | arXiv 2603.25681 + GitHub Zesearch/self-improvement-llm（**113 页 500+ 论文**） | 多为单点应用/单一框架 |
-| **问题域** | LLM 自我提升的**系统级闭环** | 多为单点机制（[六条路](../ch03/045-agent.html)）/ 单点实验（[nanoGPT](../ch04/070-ai.html)）/ 单点产品（[LangSmith](../ch03/045-agent.html)） |
+| **问题域** | LLM 自我提升的**系统级闭环** | 多为单点机制（[六条路](../ch03/045-agent.html)）/ 单点实验（[nanoGPT](../ch05/077-ai.html)）/ 单点产品（[LangSmith](../ch03/045-agent.html)） |
 | **方法学** | 学术全景综述 + GRO 框架 + 6 风险 + 6 应用 + 4 方向 | 工业实战 / 单一案例 |
 | **目标读者** | 学术研究者 + 系统架构师 | 工程开发者 / 特定工具用户 |
 | **可复用抽象** | **极高**（4 阶段闭环 + 1 控制层可直接用作系统设计 checklist） | 中等（需自行抽象） |
@@ -170,14 +170,14 @@
   - [AI 自我改进与自举](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md)（4 类自举路径统一视角 + lossy 风险 + 工程实践）
 - **同主题不同 artifact**：
   - [Agent 自我改进的六条路](../ch03/045-agent.html)（J0hn 视角：L1-L6 机制分类）
-  - [AI 科研超越人类 — Prime Intellect 递归自改进实验](../ch04/070-ai.html)（单点实验：nanoGPT 突破人类纪录）
+  - [AI 科研超越人类 — Prime Intellect 递归自改进实验](../ch05/077-ai.html)（单点实验：nanoGPT 突破人类纪录）
   - [Lossy Self-Improvement](ch01/343-lossy-self-improvement.html)（自噬数据风险的理论分析）
   - [编排自演化 Agent — CrewAI + NVIDIA Nemotron](../ch04/215-self-evolving-agents.html)（多 Agent 仿真环境）
   - [MUSE AutoSkill — 字节 ByteBrain 自演化 Agent](../ch04/262-skill.html)（arXiv 2605.27366 工业级实现）
   - [LangSmith Engine — 基于链路追踪的自改进 Agent](../ch03/045-agent.html)（工业级 trace-based 自改进）
   - [Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)（Winty 视角：基于 SKILL.md 自我迭代）
 - **同领域框架**：
-  - [Agent Harness Engineering 综述](../ch05/062-harness-engineering.html)（harness 视角）
+  - [Agent Harness Engineering 综述](../ch05/092-harness-engineering.html)（harness 视角）
   - [Harness 演化论文集](../ch05/009-harness.html)（harness 论文集合）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/llm-self-improvement-system-survey-zesearch-nlp.md)

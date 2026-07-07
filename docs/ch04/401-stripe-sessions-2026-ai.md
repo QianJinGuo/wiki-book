@@ -36,10 +36,10 @@ Stripe Treasury 年底前将在 US、UK 支持 15 种货币存储，并扩展至
 
 ## 相关实体
 - [stripe sessions 2026 ai agents](ch04/334-stripe-sessions-2026-ai-agents.html)
-- [Inngest - AI in Production: The 2026 Benchmark Report](../ch01/550-inngest-ai-in-production-the-2026-benchmark-report.html)
-- [Chime Turns a Profit as Members Hit 10.2 Million](ch04/070-ai.html)
+- [Inngest - AI in Production: The 2026 Benchmark Report](../ch01/551-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Chime Turns a Profit as Members Hit 10.2 Million](../ch05/077-ai.html)
 
-- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为AI超级玩家](ch04/070-ai.html)
+- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为AI超级玩家](../ch05/077-ai.html)
 
 ---
 

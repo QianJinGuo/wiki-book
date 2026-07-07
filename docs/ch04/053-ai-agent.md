@@ -257,7 +257,7 @@ Claude-Opus-4.7 在通用基准上顶级但在空间领域表现最差，DeepSee
 - [Claude Code Memory Setup Token 71X楠楠自瑜](../ch03/075-claude-code.html)
 - [Codex Goal Implementation Breakdown](../ch09/046-codex-goal.html)
 - [Elf Embedded Language Flows Hekaiming 105M](../ch01/1159-elf-embedded-language-flows.html)
-- [2026 05 06 2201](../ch01/911-20.html)
+- [2026 05 06 2201](../ch01/912-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 

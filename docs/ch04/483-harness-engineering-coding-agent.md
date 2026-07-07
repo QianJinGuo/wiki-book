@@ -7,15 +7,15 @@
 ## 核心要点
 微信文章：Harness Engineering: 让 Coding Agent 可靠完成长程任务
 ## 相关实体
-- [Harness Engineering耗时一周我是如何将应用的Ai Coding率提升至90的](../ch05/062-harness-engineering.html)
-- [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch04/609-claude-managed-agents.html)
+- [Harness Engineering耗时一周我是如何将应用的Ai Coding率提升至90的](../ch05/092-harness-engineering.html)
+- [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch04/616-claude-managed-agents.html)
 - [Agent架构关键变化Harness正在成为新后端](../ch05/009-harness.html)
-- [Harness Engineering Reliable Long Term Agent](../ch05/062-harness-engineering.html)
+- [Harness Engineering Reliable Long Term Agent](../ch05/092-harness-engineering.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/147-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)
 
-- [一次构建，随处复用：python 中的泛型仓库模式](ch04/535-python.html)
+- [一次构建，随处复用：python 中的泛型仓库模式](ch04/540-python.html)
 
 ## 深度分析
 1. **Harness Engineering 是模型能力与工程可靠性之间的边界管理**。随着模型能力提升，曾经需要脚本控制的环节可能逐渐被自主处理，但"确定哪些环节该交给模型、哪些该留在框架里"这个判断本身不会消失。每次新模型出现都需要重新审视这个边界

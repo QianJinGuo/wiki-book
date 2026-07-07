@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3031 篇一手 AI 材料系统编撰的开源读物。
+> 全球第一部基于 3049 篇一手 AI 材料系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -11,10 +11,10 @@
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
 | 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1391 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1054 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 435 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1070 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 436 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 117 篇 |
-| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 34 篇 |
+| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 35 篇 |
 
 ---
 
@@ -65,7 +65,7 @@
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 623 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 630 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,9 +76,9 @@
   - ⭐ Build agents, not pipelines
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
-  - ... 共 **623** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **630** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 105 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 111 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
@@ -89,7 +89,7 @@
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
   - ⭐⭐ 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记（2 周 3 次实测 + 3 个测试 + 加法传播学 +
-  - ... 共 **105** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **111** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 43 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -130,7 +130,7 @@
   - ⭐⭐⭐ JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiu
   - ... 共 **26** 篇 → [完整章节](ch08-multi-agent.md)
 
-### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 156 篇
+### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 159 篇
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
   - ⭐ Claude Code Agent View
@@ -141,7 +141,7 @@
   - ⭐ 视觉还原 AI 技术
   - ⭐ 淘宝前端 AI 实践
   - ⭐⭐ Anthropic 内部 95% 数据分析自动化：分析 Agent 技术栈 + Skill 框架（21%→95% 准确率）
-  - ... 共 **156** 篇 → [完整章节](ch09-ai-coding.md)
+  - ... 共 **159** 篇 → [完整章节](ch09-ai-coding.md)
 
 ### [Ch10 RAG 与知识检索](ch10-rag.md) — 26 篇
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
@@ -156,13 +156,13 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **26** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1054 篇**
+> 📖 **本篇共 1070 篇**
 
 ---
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 260 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 261 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
@@ -173,7 +173,7 @@
   - ⭐⭐ 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
   - ⭐⭐ AWS Bedrock 多智能体协作指南
   - ⭐⭐ From silos to service topology: why Netflix built a real-time architec
-  - ... 共 **260** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **261** 篇 → [完整章节](ch11-infra.md)
 
 ### [Ch12 安全与治理](ch12-security.md) — 122 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
@@ -214,7 +214,7 @@
   - ⭐⭐ Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
   - ... 共 **35** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 435 篇**
+> 📖 **本篇共 436 篇**
 
 ---
 
@@ -238,12 +238,12 @@
 
   - ⭐ 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
   - ⭐ ACL 2026｜块越大，推理越差？扩散语言模型的新难题被T*破解了
-  - ⭐ 刚刚DeepSeek开源推理神器DSpark，V4最高提速85%，连底层训练全家桶都开源了
   - ⭐⭐ Build real-time voice applications with Amazon SageMaker AI and vLLM
   - ⭐⭐ Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
   - ⭐⭐ GLM-5 Scaling 痛点与推理优化
   - ⭐⭐ EAGLE-3 投机解码与 USP 长序列训练优化
   - ⭐⭐ PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python 
+  - ⭐⭐ 刚刚DeepSeek开源推理神器DSpark，V4最高提速85%，连底层训练全家桶都开源了
   - ... 共 **29** 篇 → [完整章节](ch16-inference.md)
 
 ### [Ch17 多模态与生成](ch17-multimodal.md) — 40 篇
@@ -268,8 +268,8 @@
   - ⭐⭐ Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
   - ⭐⭐ NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale
   - ⭐⭐ 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
-  - ⭐⭐⭐⭐ NVIDIA ASPIRE：机器人技能库与持续学习新范式
   - ⭐⭐⭐⭐ ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
+  - ⭐⭐⭐⭐ NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
 > 📖 **本篇共 117 篇**
 
@@ -290,7 +290,7 @@
   - ⭐⭐⭐ Count Anything - 文本引导的通用目标计数框架
   - ... 共 **15** 篇 → [完整章节](ch19-research-frontier.md)
 
-### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 19 篇
+### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 20 篇
 > 超级智能、存在风险、AI 治理、人类命运
 
   - ⭐ Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
@@ -301,12 +301,12 @@
   - ⭐⭐ Multilingual AI
   - ⭐⭐ 人机对齐？不，是人正在向机器对齐
   - ⭐⭐ Token 经济学与 AI 效率
-  - ... 共 **19** 篇 → [完整章节](ch20-ai-philosophy.md)
+  - ... 共 **20** 篇 → [完整章节](ch20-ai-philosophy.md)
 
-> 📖 **本篇共 34 篇**
+> 📖 **本篇共 35 篇**
 
 ---
 
-**📊 全书收录：3031 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3049 篇实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-07-07 | 来源: ~/wiki/entities/
+生成时间: 2026-07-08 | 来源: ~/wiki/entities/

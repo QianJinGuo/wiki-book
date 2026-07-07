@@ -109,9 +109,9 @@ Cline 的核心差异化在于：(1) 把 agent loop 做成 portable kernel；(2)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/123-karpathy-vibe-coding-agentic-engineering.html) — Vibe Coding 与 Agentic Engineering 的同源访谈
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/287-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) — AWS Bedrock AgentOps 的规模化运营实践
 - [Claude Code Harness Deep Understanding](ch01/460-claude-code-harness-deep-understanding.html) — Claude Code harness 的另一深度解析
-- [Claude Code Harness Deep Dive Founder Park](../ch05/060-claude-code-harness.html) — 同主题的另一种解读视角
-- [scaling archunit with nebula archrules](../ch11/254-scaling-archunit-with-nebula-archrules.html)
-- [the code-as-content era](ch01/493-the-code-as-content-era.html)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/061-claude-code-harness.html) — 同主题的另一种解读视角
+- [scaling archunit with nebula archrules](../ch11/255-scaling-archunit-with-nebula-archrules.html)
+- [the code-as-content era](ch01/494-the-code-as-content-era.html)
 - [the shape of the thing](ch01/273-the-shape-of-the-thing.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

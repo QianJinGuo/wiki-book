@@ -32,7 +32,7 @@ See [source article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/b
 -
 
 - [Agentic Scheduler with Strands AgentCore for Multi-Region GPU Inference](../ch03/045-agent.html)
-- [Product Ad Review Agent with Strands SDK and Bedrock](../ch11/252-bedrock.html)
+- [Product Ad Review Agent with Strands SDK and Bedrock](../ch11/253-bedrock.html)
 - [基于 Strands SDK 的企业级智能数据查询解决方案实践](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
 - [AI Agent Memory Systems](ch04/096-agent-memory.html)
 

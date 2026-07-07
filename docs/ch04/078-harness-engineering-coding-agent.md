@@ -5,9 +5,9 @@
 > 📊 Level ⭐⭐ | 18.6KB | `entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md`
 
 ## 相关实体
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/062-harness-engineering.html)
-- [Agent生产级Harness工程指南](../ch05/062-harness-engineering.html)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.html)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.html)
+- [Agent生产级Harness工程指南](../ch05/092-harness-engineering.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/009-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/045-agent.html)
@@ -24,10 +24,10 @@
 - [AI Coding Agent 记忆系统](ch04/309-ai-coding-agent.html)
 - [你不知道的 Agent 原理架构与工程实践](ch04/327-agent-principle-architecture-engineering-practice.html)
 - [Agent Skill 设计模式](ch04/376-agent-skills.html)
-- [柚漫剧 AI 全流程提效拆解](ch04/070-ai.html)
+- [柚漫剧 AI 全流程提效拆解](../ch05/077-ai.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Thin Harness Fat Skills](../ch05/068-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/071-thin-harness-fat-skills-ai.html)
 - [Design Patterns for AI Agents 2026](ch04/091-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 
 ## 核心定义

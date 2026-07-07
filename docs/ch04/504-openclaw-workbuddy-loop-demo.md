@@ -28,7 +28,7 @@
 
 文章也巧妙回应了"为什么跑出来的是 Coding Agent 和 AI 客服"这个问题：因为它们天然存在于高度结构化的数字环境，且容易做到可观测性。这与 [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/045-agent.html) 中论述的 Agent 演进阶段互为印证，也与 [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/009-harness.html) 中的 Harness 工程框架一脉相承。
 
-文章中提到的"Token 换架构"观点——Agent 用更高的计算、效率和稳定性成本换取更强的场景泛化能力——是对 Harness 工程核心权衡的精准表述，与 [Harness Engineering](../ch05/062-harness-engineering.html) 中描述的工程框架形成互补。
+文章中提到的"Token 换架构"观点——Agent 用更高的计算、效率和稳定性成本换取更强的场景泛化能力——是对 Harness 工程核心权衡的精准表述，与 [Harness Engineering](../ch05/092-harness-engineering.html) 中描述的工程框架形成互补。
 
 ## 实践启示
 
@@ -45,9 +45,9 @@
 - [Loop Engineering Langchain Four Layer Loopcraft](../ch05/006-loop-engineering.html)
 - [Loop Engineering Deep Dive Mengzhaosixi 2026](../ch05/006-loop-engineering.html)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/045-agent.html)
-- [Harness Engineering](../ch05/062-harness-engineering.html)
+- [Harness Engineering](../ch05/092-harness-engineering.html)
 - [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/009-harness.html)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/213-openclaw.html)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/214-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-workbuddy-loop-engineering-who-is-hot-useful-demo.md)
 

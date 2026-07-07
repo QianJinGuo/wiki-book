@@ -171,12 +171,12 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 
 ## 相关实体
 
-- [Agent Harness Engineering Survey 2026](../ch05/062-harness-engineering.html) — 学术 Survey 的 ETCLOVG 7 层分类（不同分类法）
+- [Agent Harness Engineering Survey 2026](../ch05/092-harness-engineering.html) — 学术 Survey 的 ETCLOVG 7 层分类（不同分类法）
 - [Agent Harness Context Management Working Set](../ch05/038-agent-harness.html) — 上下文管理的"工作集"视角
 - [Agent Harness 12 Components 7 Decisions](../ch05/038-agent-harness.html) — 12 组件 + 7 决策框架
-- [Agent Production Harness Engineering](../ch05/062-harness-engineering.html) — 工程赤字 + Demo vs 生产型判别
-- [Harness Engineering Systematic Framework](../ch05/062-harness-engineering.html) — Harness 工程系统化
-- [Agent Skill Writing](../ch04/555-agent-skill.html) — Skill 编写实践（第三关深入）
+- [Agent Production Harness Engineering](../ch05/092-harness-engineering.html) — 工程赤字 + Demo vs 生产型判别
+- [Harness Engineering Systematic Framework](../ch05/092-harness-engineering.html) — Harness 工程系统化
+- [Agent Skill Writing](../ch04/260-agent-skill.html) — Skill 编写实践（第三关深入）
 - [Agent Reliability Context Drift Tool Hallucination](../ch03/045-agent.html) — 漂移与幻觉的关联分析
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md)
@@ -202,21 +202,21 @@ Haiku 60% / Sonnet 30% / Opus 10% 的路由比例背后有数据支撑：41% 的
 
 ### 实践价值：Pre-task Gating 是防呆机制而非流程负担
 
-"不评估，不准写代码"的 Pre-task Gating 纪律，本质上是将 [Harness Engineering Systematic Framework](../ch05/062-harness-engineering.html) 中的"工程赤字"概念落实为可执行规则。黄佳将其定位为"防呆"而非"审批"，是因为它防止的是 AI 在信息不完整时产生大量不可靠输出的情况——这种输出在长周期任务中的修复成本远高于前置评估的时间投入。
+"不评估，不准写代码"的 Pre-task Gating 纪律，本质上是将 [Harness Engineering Systematic Framework](../ch05/092-harness-engineering.html) 中的"工程赤字"概念落实为可执行规则。黄佳将其定位为"防呆"而非"审批"，是因为它防止的是 AI 在信息不完整时产生大量不可靠输出的情况——这种输出在长周期任务中的修复成本远高于前置评估的时间投入。
 
 ### 实践价值：ADPS 共同体将个人踩坑经验转化为组织资产
 
-[Agent Skill Writing](../ch04/555-agent-skill.html) 解决个人级经验复用，而 ADPS 共同体解决跨组织级经验沉淀。Harness Engineering 的坑多数是共通的（上下文压缩、Token 成本、状态漂移），但行业内缺乏共享词汇表。ADPS 的价值在于建立共同的工程语言，使"某团队已解决的第 7 关问题"能快速映射为"另一团队的启动手册"。
+[Agent Skill Writing](../ch04/260-agent-skill.html) 解决个人级经验复用，而 ADPS 共同体解决跨组织级经验沉淀。Harness Engineering 的坑多数是共通的（上下文压缩、Token 成本、状态漂移），但行业内缺乏共享词汇表。ADPS 的价值在于建立共同的工程语言，使"某团队已解决的第 7 关问题"能快速映射为"另一团队的启动手册"。
 
 ## 实践启示
 
-1. **优先建立五层记忆 + P0-P3 分诊，而非直接上 Agent**：在[Agent Production Harness Engineering](../ch05/062-harness-engineering.html) 的"Demo vs 生产型"判别中，上线前的第一件事就是建立上下文管理基础设施。没有 P0-P3 分诊的 Agent 等于没有内存管理的 CPU——看起来在跑，实际上在受罪。
+1. **优先建立五层记忆 + P0-P3 分诊，而非直接上 Agent**：在[Agent Production Harness Engineering](../ch05/092-harness-engineering.html) 的"Demo vs 生产型"判别中，上线前的第一件事就是建立上下文管理基础设施。没有 P0-P3 分诊的 Agent 等于没有内存管理的 CPU——看起来在跑，实际上在受罪。
 
 2. **用 Stop Hook 将质量门禁自动化**：在 CI/CD pipeline 中嵌入 Stop Hook（`pnpm lint && pnpm test`，blocking=true），让每次 AI 交付都经过确定性检查。这是[Agent Reliability Context Drift Tool Hallucination](../ch03/045-agent.html) 中"反馈回路丢失"问题的最低成本解法，无需改模型，只要改 Harness 配置。
 
-3. **三层模型路由是 token 成本控制的第一优先级**：先用 Haiku 做路由分类（41% 查询根本不需要 Sonnet），再考虑压缩上下文。对应[Agent Skill Writing](../ch04/555-agent-skill.html) 的渐进式披露原则——系统应该先判断"这个问题需要多少智能"，再分配对应算力。
+3. **三层模型路由是 token 成本控制的第一优先级**：先用 Haiku 做路由分类（41% 查询根本不需要 Sonnet），再考虑压缩上下文。对应[Agent Skill Writing](../ch04/260-agent-skill.html) 的渐进式披露原则——系统应该先判断"这个问题需要多少智能"，再分配对应算力。
 
-4. **HITL 人工审核不可省，特别是删除/部署/转账类操作**：第五关的爆炸半径分级是 Harness Engineering 的安全基线。[Agent Harness Engineering Survey 2026](../ch05/062-harness-engineering.html) 的 ETCLOVG 7 层框架中"安全层"与此呼应——高爆炸半径操作的 HITL 不是流程繁琐，而是防止不可逆损失的最后防线。
+4. **HITL 人工审核不可省，特别是删除/部署/转账类操作**：第五关的爆炸半径分级是 Harness Engineering 的安全基线。[Agent Harness Engineering Survey 2026](../ch05/092-harness-engineering.html) 的 ETCLOVG 7 层框架中"安全层"与此呼应——高爆炸半径操作的 HITL 不是流程繁琐，而是防止不可逆损失的最后防线。
 
 5. **三平面分立 + 草稿纸看板是长周期任务的必选项**：[Agent Reliability Context Drift Tool Hallucination](../ch03/045-agent.html) 已记录漂移的危害，而三平面分立提供了结构化解法。叙事对齐平面（锚/账/集）确保目标不漂移，草稿纸看板确保崩溃可恢复。任何计划超过 2 小时的 Agent 任务都应该引入此架构。
 

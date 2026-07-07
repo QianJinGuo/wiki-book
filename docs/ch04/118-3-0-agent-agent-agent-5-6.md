@@ -199,7 +199,7 @@ Coze 3.0 提供的解决思路是**云端托管 + 统一消息总线**。本地 
 ---
 
 ## 相关实体
-- [Coze 3 0 Collaboration System](../ch01/1093-3-0.html)
+- [Coze 3 0 Collaboration System](../ch01/649-3-0.html)
 - [Coze 3 0 Local Agent Project Orchestration](../ch03/045-agent.html)
 - [Oz Multi Harness Cloud Agent Orchestration](ch04/466-agent-orchestration.html)
 - [Agent Orchestration](ch04/466-agent-orchestration.html)

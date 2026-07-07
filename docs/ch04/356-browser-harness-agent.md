@@ -6,7 +6,7 @@
 
 ## Overview
 Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是**去框架化**：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。
-与 [AgentBrowser](../ch09/150-agent-browser-claude-code-qoderwork.html)、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互。
+与 [AgentBrowser](../ch09/153-agent-browser-claude-code-qoderwork.html)、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互。
 
 ## 架构
 ```

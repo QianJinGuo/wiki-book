@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/072-harness-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/075-harness-skill.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/147-ai-agent.html)
