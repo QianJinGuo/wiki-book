@@ -35,8 +35,8 @@ Aderant 没有一次性全量上线，而是三阶段推进：2025 年 10 月 Cl
 将统一搜索 + Chrome 扩展 + Flows 自动化捆绑为统一入口（CloudOps Helper），而非逐个推荐功能。Aderant 95% 采用率的根因是"单一界面解决所有信息问题"的心智，而非单功能优势 。
 
 ## 关联阅读
-→ [Amazon Quick: 从企业数据到 AI 决策的加速路径](ch11/202-amazon-quick.html) — Quick 平台整体能力介绍与定位
-→ [Confluence + Amazon Quick 集成](ch11/202-amazon-quick.html) — MCP 风格连接器在知识管理场景的具体配置
+→ [Amazon Quick: 从企业数据到 AI 决策的加速路径](ch11/203-amazon-quick.html) — Quick 平台整体能力介绍与定位
+→ [Confluence + Amazon Quick 集成](ch11/203-amazon-quick.html) — MCP 风格连接器在知识管理场景的具体配置
 
 ---
 

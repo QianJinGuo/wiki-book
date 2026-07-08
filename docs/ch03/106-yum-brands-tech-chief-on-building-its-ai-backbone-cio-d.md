@@ -78,7 +78,7 @@ Dausch 强调衡量标准包括三个层次：
 
 Dausch 的关键提醒："AI, at the end of the day, in my view, is still just a tool, as is the rest of technology. We focus on delivering great food at great value with great service to our customers. That's the business that we're in."
 
-这与 [Platformer AI 就业影响讨论](../ch05/077-ai.html) 中 Box CEO 的观点形成呼应——技术是手段，业务价值才是目的。
+这与 [Platformer AI 就业影响讨论](../ch05/079-ai.html) 中 Box CEO 的观点形成呼应——技术是手段，业务价值才是目的。
 
 ## 实践启示
 
@@ -91,7 +91,7 @@ Dausch 的关键提醒："AI, at the end of the day, in my view, is still just a
 ## 相关实体
 
 - [Democratizing Machine Learning At Netflix Building The Model](../ch11/244-democratizing-machine-learning-at-netflix-building-the-mode.html)
-- [Platformer Ai Job Loss Levie](../ch05/077-ai.html)
+- [Platformer Ai Job Loss Levie](../ch05/079-ai.html)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/137-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
 
 ---

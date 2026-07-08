@@ -10,11 +10,11 @@
 - 来源：https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html
 
 ## 相关实体
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/752-github.html)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/787-google-adds-llms-txt-check-to-chrome-lighthouse.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/505-score-by-collisions-patch-by-panic.html)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/766-github.html)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/801-google-adds-llms-txt-check-to-chrome-lighthouse.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/512-score-by-collisions-patch-by-panic.html)
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch12/060-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/284-rag.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/1049-rag.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)
 

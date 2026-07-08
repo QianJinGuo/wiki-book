@@ -13,10 +13,10 @@ Over the past years, the Digital Customer Experience and Engineering team has ev
 
 ## 相关实体
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/118-aws-bedrock-agentcore-quality-optimization-flywheel.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/501-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/507-amazon-bedrock-agentcore.html)
 - [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/007-aws-bedrock.html)
 - [Aws Bedrock Multi Agent Collaboration Guide](ch11/007-aws-bedrock.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/501-amazon-bedrock-agentcore.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/507-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-hapag-lloyd-bedrock-customer-feedback.md)
 
