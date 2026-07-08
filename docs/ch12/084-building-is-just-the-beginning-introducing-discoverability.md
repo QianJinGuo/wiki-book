@@ -15,7 +15,7 @@
 - [Lovable Discoverability Intro](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
 - [Building Is Just The Beginning Introducing Discove](ch12/084-building-is-just-the-beginning-introducing-discoverability.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Introducing The Ettin Reranker Family](../ch01/455-introducing-the-ettin-reranker-family.html)
+- [Introducing The Ettin Reranker Family](../ch01/463-introducing-the-ettin-reranker-family.html)
 - [Building The Agentic Future Developer Highlights From Io 2026](../ch04/018-building-the-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-is-just-the-beginning-introducing-discoverability.md)

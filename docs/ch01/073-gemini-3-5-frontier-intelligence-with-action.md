@@ -51,9 +51,9 @@ Salesforce is integrating 3.5 Flash into Agentforce to reliably automate complic
 Xero is 
 
 ## 相关实体
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/202-amazon-quick.html)
-- [Gemini 3 5 Frontier Intelligence](ch01/498-gemini-3-5-frontier-intelligence-with-action.html)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/077-ai.html)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/203-amazon-quick.html)
+- [Gemini 3 5 Frontier Intelligence](ch01/506-gemini-3-5-frontier-intelligence-with-action.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/079-ai.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/152-amazon-bedrock.html)
 - [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/152-amazon-bedrock.html)
 
