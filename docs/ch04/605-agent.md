@@ -1,32 +1,45 @@
-# Agent 后端架构
+# Agent落地真相：协议、成本与进化——关于智能体从能跑通到能投产的讨论
 
-## Ch04.605 Agent 后端架构
+## Ch04.605 Agent落地真相：协议、成本与进化——关于智能体从能跑通到能投产的讨论
 
-> 📊 Level ⭐⭐ | 1.7KB | `entities/backend-for-agent.md`
+> 📊 Level ⭐⭐ | 2.9KB | `entities/agent落地真相-协议-成本与进化-关于智能体从能跑通到能投产的讨论.md`
 
-# Agent 后端架构
+# Agent落地真相：协议、成本与进化——关于智能体从能跑通到能投产的讨论
 
-面向 Agent 的后端架构设计：API 优先、结构化输出、状态机化、可回放。传统 BFF（Backend for Frontend）的进化——从服务人类 UI 到服务 Agent 的 Machine-to-Machine 接口。
+> **v×c=64** | value=8 confidence=8 stars=4 | 2026-07-05
 
-## 深度分析
+---
+source: wechat
+source_url: https://mp.weixin.qq.com/s/CyA5UUXhH7MzLwes1XPgnQ
+ingested: 2026-07-05
+source_published: 2026年6月30日 17:00
+---
 
-本页作为知识图谱锚点，连接了以下关键实体：[后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](../ch05/022-ai-friendly.html)。 相关主题通过 [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html) 延伸。
+直播推荐  
 
-> 本页内容将在入库相关溯源素材后进一步深化。
+从金融风控到数据语义，再到自进化工程，谈谈智能体的“进化与防退化”
 
-## 实践启示
+扫码加入直播交流群，更有精华资料免费领！
 
-1. 本领域系统性内容尚待采集——当前知识库在此方向的覆盖密度偏低
-2. 建议优先采集 Agent 后端架构 相关的一手来源（论文/官方文档/工程博客）
-3. 通过交叉链接密度评估本领域的知识图谱成熟度
+2026年6月25日晚，DataFun 技术社区举办了一场关于 Agent 智能体企业级落地的深度对话。主持人古永丰——FoundationAgents 开源社区核心成员、DeepWisdom 学术研究员——与两位来自一线实战派的技术负责人：深圳价值网络科技技术副总监况雨平，以及碧桂园服务集团技术总监毛卓，围绕 Agent 落地的三个核心命题——协议协作、自进化能力与成本控制——展开了一场长达90分钟的坦诚讨论。
 
-## 相关实体
+这场对话没有回避任何尖锐问题：Agent 跑通了 Demo 却无法投产，到底缺什么？60%以上的 Token 都是无效消耗，这是技术问题还是管理问题？当 AI Coding 大规模铺开，产品经理、开发、测试的角色究竟谁被强化、谁被弱化？三位嘉宾从协议层、工程层、管理层三个维度，用各自的实战经验，描绘了 Agent 在理想与现实之间的真实图景。
 
-- [后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](../ch05/022-ai-friendly.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
-- [AI 友好架构设计](../ch05/022-ai-friendly.html)
-- [AI Agent 工程师能力地图](ch04/147-ai-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/045-agent.html)
+本文完整记录了这场讨论的核心内容，力求以对话的形式还原现场的思辨氛围，为正在推动 AI 落地的技术团队提供有温度的实战参考。
+
+扫码报名
+
+**01  
+**
+
+**话题一：Agent 进入业务，最被忽视的短板是什么？  
+**
+
+当主持人古永丰抛出第一个问题时，三位嘉宾几乎不约而同地指向了同一个方向——但角度完全不同。
+
+毛卓从成本维度切入，语气沉稳却直击要害：“对传统企业来说，一个 Agent 能不能落地，首先
+
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent落地真相-协议-成本与进化-关于智能体从能跑通到能投产的讨论.md)
 
 ---
 

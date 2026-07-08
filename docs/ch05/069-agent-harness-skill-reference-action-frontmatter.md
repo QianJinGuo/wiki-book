@@ -2,13 +2,13 @@
 
 ## Ch05.069 Agent Harness Skill 系统实战指南 — Reference/Action 类型、动态注入与 frontmatter 全解
 
-> 📊 Level ⭐⭐ | 5.8KB | `entities/agent-harness-skill-system-practical-guide.md`
+> 📊 Level ⭐⭐ | 6.1KB | `entities/agent-harness-skill-system-practical-guide.md`
 
 # Agent Harness Skill 系统实战指南 — Reference/Action 类型、动态注入与 frontmatter 全解
 
 > 数字理想「Harness 工程」系列第 6 课。聚焦 **Anthropic Agent Harness** 的 Skill 系统（区别于 Claude Code Skills），从概念到实操的完整教程。
 
-与 [Claude Code Skills 实战指南](../ch09/147-claude-code-skills.html) 互补——该实体聚焦 Claude Code 的 Skill 发现机制与安全限制，本实体聚焦 **Agent Harness** 框架的 Skill 系统（类型体系、frontmatter 字段、动态注入、Agent Teams、执行上下文控制）。
+与 [Claude Code Skills 实战指南](../ch09/151-claude-code-skills.html) 互补——该实体聚焦 Claude Code 的 Skill 发现机制与安全限制，本实体聚焦 **Agent Harness** 框架的 Skill 系统（类型体系、frontmatter 字段、动态注入、Agent Teams、执行上下文控制）。
 
 ## Skill 的本质
 
@@ -112,8 +112,8 @@ code-reviewer/
 
 ## 与已有实体的关系
 
-- [Claude Code Skills 实战指南](../ch09/147-claude-code-skills.html) — 互补：该实体聚焦 Claude Code 的发现机制（6 种来源）和安全限制，本实体聚焦 Agent Harness Skill 系统（类型、frontmatter 字段、动态注入、context fork）
-- [Harness Engineering](ch05/092-harness-engineering.html) — 上位框架：Skill 是 Harness Engineering 六层架构中"工具与技能体系"层的具体实现
+- [Claude Code Skills 实战指南](../ch09/151-claude-code-skills.html) — 互补：该实体聚焦 Claude Code 的发现机制（6 种来源）和安全限制，本实体聚焦 Agent Harness Skill 系统（类型、frontmatter 字段、动态注入、context fork）
+- [Harness Engineering](ch05/050-harness-engineering.html) — 上位框架：Skill 是 Harness Engineering 六层架构中"工具与技能体系"层的具体实现
 - [Claude Code Skill Writing 指南](../ch03/075-claude-code.html) — 互补：前者侧重编写方法，本实体侧重执行原理
 
 ## 参考

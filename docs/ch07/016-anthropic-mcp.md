@@ -122,13 +122,13 @@ Anthropic 明确定义了两者关系：
 - Anthropic 博客原文：https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp
 ## 相关实体
 - [Anthropic Mcp Revisited](ch07/016-anthropic-mcp.html)
-- [Anthropic 12 Mcp Production Patterns](../ch01/847-anthropic.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/847-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/262-skill.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/847-anthropic.html)
+- [Anthropic 12 Mcp Production Patterns](../ch01/863-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/863-anthropic.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/267-skill.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/863-anthropic.html)
 
-- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](../ch05/077-ai.html)
-- [Cursor Recall Anthropic Daily Release Cat Wu](../ch01/847-anthropic.html)
+- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](../ch05/079-ai.html)
+- [Cursor Recall Anthropic Daily Release Cat Wu](../ch01/863-anthropic.html)
 - [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 

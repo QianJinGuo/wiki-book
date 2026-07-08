@@ -37,9 +37,9 @@ YouTube 上有一类视频专门做这类测试：给新手顶级专业设备，
 对新工具的正确反应是好奇心和意愿——愿意以初学者心态学习，持续进化。这是每个伟大的工匠一直在做的事：随着新资源的出现，找到新的方式来做最好的工作。击败了这么多困难走到这里，现在可以再击败一次。工具会变，但设计的底层能力（鉴赏力、执行力、对用户需求的理解）不会过时。
 > ai agent platforms topic map（已删除）
 
-- [柚漫剧 AI全流程提效拆解](../ch05/077-ai.html)
-- [Agent Skill 设计模式](../ch04/376-agent-skills.html)
-- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](../ch01/912-20.html)
+- [柚漫剧 AI全流程提效拆解](../ch05/079-ai.html)
+- [Agent Skill 设计模式](../ch04/382-agent-skills.html)
+- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](../ch01/927-20.html)
 
 ---
 

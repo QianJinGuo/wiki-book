@@ -2,7 +2,7 @@
 
 ## Ch05.066 Harness Engineering for Self-Improvement — 翁荔 Lilian Weng 系统梳理 Harness 自我提升研究全景
 
-> 📊 Level ⭐⭐ | 6.5KB | `entities/harness-engineering-self-improvement-survey-lilian-weng.md`
+> 📊 Level ⭐⭐ | 6.7KB | `entities/harness-engineering-self-improvement-survey-lilian-weng.md`
 
 # Harness Engineering for Self-Improvement — 翁荔系统梳理 Harness 自我提升研究全景
 
@@ -14,10 +14,10 @@
 
 ## 与已有实体的关系
 
-- [Self-Harness 论文深度分析](ch05/009-harness.html) — 互补：该实体聚焦 Self-Harness 单篇论文的具体方法论（Weakness Mining → Proposal → Validation 三阶段），本实体覆盖 Harness 自我提升的**全部研究谱系**（ACE → MCE → Meta-Harness → STOP → Self-Harness → DGM → SIA）
-- [Harness Engineering](ch05/092-harness-engineering.html) — 上位框架：本实体是 Harness Engineering 在**自我提升**这一前沿子方向的研究全景
+- [Self-Harness 论文深度分析](ch05/018-harness.html) — 互补：该实体聚焦 Self-Harness 单篇论文的具体方法论（Weakness Mining → Proposal → Validation 三阶段），本实体覆盖 Harness 自我提升的**全部研究谱系**（ACE → MCE → Meta-Harness → STOP → Self-Harness → DGM → SIA）
+- [Harness Engineering](ch05/050-harness-engineering.html) — 上位框架：本实体是 Harness Engineering 在**自我提升**这一前沿子方向的研究全景
 - [Agent 自我提升六种机制](../ch03/045-agent.html) — 互补：该实体从 Agent 视角归纳六种路径，本实体从 **Harness 优化**视角系统梳理研究论文
-- [Harness 工程五大支柱](ch05/092-harness-engineering.html) — 互补：该实体聚焦生产级 Harness 实践，本实体聚焦前沿研究
+- [Harness 工程五大支柱](ch05/050-harness-engineering.html) — 互补：该实体聚焦生产级 Harness 实践，本实体聚焦前沿研究
 
 ## Harness 设计模式
 

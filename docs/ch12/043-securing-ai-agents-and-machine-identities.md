@@ -104,7 +104,7 @@ AI 代理具有自主决策和行动能力，其身份验证凭证（如 API 密
 - 以机器身份执行敏感操作
 - 绕过基于人类行为的异常检测机制
 
-这与 [Tool Poisoning 攻击](../ch04/296-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 形成互补威胁——后者针对工具供应链，前者针对身份认证层。
+这与 [Tool Poisoning 攻击](../ch04/301-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 形成互补威胁——后者针对工具供应链，前者针对身份认证层。
 
 ### 传统 IAM 的局限性
 
@@ -124,7 +124,7 @@ AI 代理具有自主决策和行动能力，其身份验证凭证（如 API 密
 2. **使用时保护**：在凭证被调用的瞬间进行安全处理，而非静态存储
 3. **统一审计**：生成跨越人类和机器身份的完整审计轨迹
 
-这一思路与 [AWS 和 Cisco 的 AI Defense 方案](../ch04/147-ai-agent.html) 在「覆盖人类和机器的统一审计」目标上形成呼应，但 1Password 更聚焦于开发者端点侧的凭证发现与保护。
+这一思路与 [AWS 和 Cisco 的 AI Defense 方案](../ch04/291-ai-agent.html) 在「覆盖人类和机器的统一审计」目标上形成呼应，但 1Password 更聚焦于开发者端点侧的凭证发现与保护。
 
 ## 与其他安全方案的关联
 

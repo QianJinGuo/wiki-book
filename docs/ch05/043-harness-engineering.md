@@ -1,172 +1,157 @@
-# Harness Engineering 核心模式
+# Harness Engineering 概念框架
 
-## Ch05.043 Harness Engineering 核心模式
+## Ch05.043 Harness Engineering 概念框架
 
-> 📊 Level ⭐⭐ | 11.6KB | `entities/harness-engineering-core-patterns.md`
+> 📊 Level ⭐⭐ | 11.8KB | `entities/harness-engineering-framework.md`
 
-# Harness Engineering 核心模式
+## 核心方程
 
-> [!summary] 核心洞察
-> Harness Engineering 的核心是**通过工程化手段构建确定性，以承载模型不确定性**。三个生产系统（Claude Code、Claude Managed Agents、Hermes）的共同模式：持久化指令分离、分层记忆、会话不可变事件流、执行环境隔离、凭证安全设计。
+- Agent = Model + Harness
+- Harness = Agent - Model = 除模型外的所有东西
 
-## Claude Code 的八大模式
+## Anthropic 实践
 
-### 指令与上下文管理
+### 上下文焦虑：Compaction vs Reset
 
-| 模式 | 做法 | 代价 |
-|------|------|------|
-| **持久化指令文件** | 指令不随对话消失 | 需要随项目更新维护，否则误导 |
-| **作用域上下文组装** | 按范围（组织/项目）拆分指令，动态加载 | 规则分散、可读性变差、可能冲突 |
-| **分层记忆** | 常驻摘要→按需细节→仅搜索历史 | 实现复杂，需设计分层流动 |
-| **做梦整理** | 后台定期去重/清理/重组记忆 | 消耗资源，可能误删 |
-| **渐进式上下文压缩** | 新对话保留细节→旧对话总结→更早摘要 | 压缩有信息损失，可能导致"编造" |
+任务一长，模型上下文窗口越来越满，开始丢细节、丢重点、急着收尾。Compaction（同一 Agent，历史变短，心理状态延续）与 Reset（直接换干净上下文的新 Agent，交班时交接清楚）两种策略的选择，决定了长程任务的可靠性。对于某些模型（如 Claude Sonnet 4.5），Reset 才能真正"清空包袱、重新出发"——压缩历史会丢失 Agent 对任务的心理模型，这些无法被显式压缩保存。
 
-### 工作流与编排
+### 自评失真：Generator + Evaluator 分离
 
-| 模式 | 说明 | 代价 |
-|------|------|------|
-| **探索-规划-行动循环** | 三步严格分离（只读→规划→执行） | 小任务显得"笨重" |
-| **上下文隔离子智能体** | 不同阶段独立上下文和权限 | 需要协调信息传递 |
-| **分支-合并并行** | 并行子任务分发到独立环境，合并结果 | 合并复杂、代码冲突 |
+模型做完之后自评偏乐观（设计、体验、产品完整度等无绝对二元答案的问题）。Generator + Evaluator 分离是解法：Planner 把短需求扩展成完整产品规格，Generator 逐步实现，Evaluator 实际操作页面、跑交互、看结果——不是读代码打分。生产与验收必须分离才能保证输出质量。
 
-### 工具与权限
+## OpenAI 实践
 
-- **渐进式工具扩展：** 开始只提供必要工具，复杂工具按需动态加载
-- **命令风险分类：** 按类型/参数/影响自动评估风险等级，自动执行/请求确认/拦截
-- **单用途工具设计：** 常用操作封装为专用工具，非通用 Shell 命令
+### 渐进式披露
 
-### 自动化
+早期错误是巨大的 AGENTS.md 把所有规范、架构、约定一股脑塞进去。最终方案是 AGENTS.md 只有 ~100 行，充当"目录页"，指向仓库里的详细文档：ARCHITECTURE.md（架构总览）、docs/design-docs/（设计文档，带验证状态）、docs/exec-plans/（执行计划）、docs/QUALITY_SCORE.md（各模块质量评分），配合 CI 自动校验文档新鲜度和交叉引用，以及"文档园丁"Agent 定期扫描过时文档并提 PR 修复。
 
-- **确定性生命周期钩子：** 在关键节点自动触发预设动作（格式化等），不依赖可能被遗忘的指令
+OpenAI 另一核心经验是：人类不写代码，只负责设计环境——拆解意图（把产品目标拆成 Agent 能理解的小块任务）、补全能力（Agent 失败时问"环境里缺了什么让它失败的"然后补上）、建立反馈回路（让 Agent 能看到自己工作的结果）。
 
-## Claude Managed Agents：三件套解耦架构
+## LangChain 案例
 
-### 宠物与牲畜哲学
-
-- **Session（会话）是宠物：** 精心培育、持久保存、不可丢失
-- **Harness + Sandbox 是牲畜：** 随时创建、销毁、替换
-
-### 三件套解耦
-
-| 组件 | 角色 | 关键特性 |
-|------|------|---------|
-| **Claude（大脑）** | 推理和决策 | LLM 核心 |
-| **Harness（双手）** | 驱动运行循环 | 无状态，可随时替换 |
-| **Sandbox（工作台）** | 隔离执行环境 | 可隔离、可重建、可扩展 |
-
-**Session 设计：** 只追加事件流（`emitEvent()` / `getEvents()`），天然支持重放和状态恢复。
-
-**Harness 设计：** 循环：取上下文→调用 Claude→记录响应→路由工具→记录结果→循环。无状态→可替换。
-
-**Sandbox 设计：** 完全隔离（独立文件系统/进程/网络）。
-
-### 核心安全：凭证永不进沙盒
-
-保险库(vault) + 代理(proxy)架构：
-
-1. 第三方凭证存储在独立保险库，Harness/Sandbox 都无法直接访问
-2. 调用外部工具时，通过代理按需获取凭证执行
-3. 凭证始终不暴露给 Sandbox 代码
-
-优势：最小权限原则、所有外部调用可审计、凭证可统一轮换。
-
-### 多智能体协作模式
-
-| 模式 | 架构 | 适用场景 |
-|------|------|---------|
-| **多脑一手** | 多 Claude 共享 1 Sandbox | 多角度分析同一代码（安全+性能） |
-| **一脑多手** | 1 Claude 控制多 Sandbox | 多环境同时执行 |
-| **多脑多手** | 多 Claude 各有 Sandbox，共享 Session | 最复杂的多步骤任务 |
-
-### 上下文工程三件套
-
-- **上下文压缩：** 将满时压缩早期对话为总结，原始数据保留在 Session
-- **记忆工具：** Claude 主动写入持久存储，后续主动检索
-- **上下文裁剪：** 发送前智能裁剪不相关内容
-
-### 性能优化
-
-**大脑从沙盒解耦：** 解耦前每次推理需等 Sandbox 启动；解耦后 Session 拉取事件后推理立即开始。首 Token 延迟降低 **60-90%**。
-
-## Hermes：五段式循环 + 五层记忆
-
-### 五段式循环
-
-规划 → 执行 → 观察 → 学习 → 适应
-
-### 五层记忆架构
-
-| 层级 | 定位 | 说明 |
-|------|------|------|
-| **L1 短期记忆** | 便利贴 | 当前对话临时信息 |
-| **L2 技能手册** | 肌肉记忆 | 复杂任务后自动生成 SKILL.md，形成可复用流程 |
-| **L3 知识库** | 语义记忆 | 向量存储实现模糊检索 |
-| **L4 用户建模** | 对你的了解 | "辩证式"更新：不一次定终身，持续观察调整 |
-| **L5 工作日志** | 长期档案 | FTS5 全文检索 + LLM 摘要，跨会话搜索 |
-
-## 三大系统的共性与差异
-
-| 维度 | Claude Code | Claude Managed Agents | Hermes |
-|------|------------|----------------------|--------|
-| 会话管理 | 持久化指令+渐进压缩 | 不可变事件流+重放 | 五层记忆+FTS5检索 |
-| 隔离执行 | Sandbox（牲畜哲学） | Sandbox（牲畜哲学） | 本地+沙箱两种环境 |
-| 安全设计 | 命令风险分类 | 凭证永不进沙盒 | 确定性钩子 |
-| 记忆进化 | 做梦整理 | 记忆工具 | 五层自动演进 |
-| 协作模式 | 子智能体隔离 | 多脑/多手组合 | 单智能体自进化 |
+底层模型完全不变，仅仅通过改造和迭代 Harness，Terminal Bench 2.0 得分就从 52.8 提升到 66.5（Top30 到 Top5）。真正决定 AI 产品上限的也许是模型，但真正决定能否稳定交付的往往是 Harness。
 
 ## 深度分析
 
-### 1. 三件套解耦的本质是关注点分离
+**1. Prompt → Context → Harness 的三次演进揭示 AI 落地能力的层次跃迁**
 
-Claude Managed Agents 的 Session/Harness/Sandbox 三件套并非简单的模块拆分，而是一种**系统级的关注点分离（Separation of Concerns）**设计。Session 专司状态持久化（类比 K8s 的 PersistentVolume），Harness 专司推理循环（控制器），Sandbox 专司执行（计算资源）。这种分离的深层价值在于：每个组件都可以独立演进、独立故障、独立替换，而不影响整体系统的正确性。解耦后的首 Token 延迟降低 60-90%，这不是优化的结果，而是架构正确性带来的副产品。
+从"怎么说"到"给什么"到"别跑偏"，这条演进链本质上是 AI 系统责任的转移：模型能力不足时，责任在 Prompt；模型变强后，责任转向 Context；Agent 进入真实任务执行时，责任落在 Harness。理解这个层次对于正确诊断 AI 系统故障至关重要——输出质量下降时，答案往往不在换模型，而在调整 Harness 层。
 
-### 2. 凭证永不进沙盒是结构性安全而非权限控制
+**2. "评估与观测"层是当前行业最薄弱的环节**
 
-传统安全思维是"给受限 Token"，而 Claude Managed Agents 的设计是"让 Token 物理上不可达"。 这不是程度上的差异，而是范式上的根本区别——前者是权限收窄（假设攻击者还能拿到东西），后者是架构性消除（攻击者根本拿不到）。当 Claude 被 prompt injection 攻击时，架构性安全仍然有效，因为 Token 不在 Claude 的可达范围内。
+在六层结构中，上下文管理、工具系统已有大量积累，但评估与观测层（包括环境验证、过程日志、质量归因）仍是大多数内部 AI 系统的盲区。Generator + Evaluator 分离的启示是：模型自评不可信，只有在实际环境中操作并观察结果才能真正验证质量。AI 系统的可观测性建设与模型本身同等重要。
 
-### 3. 做梦整理与做梦生产是一体两面
+**3. 渐进式披露是解决上下文焦虑的工程化最优解**
 
-Claude Code 的"做梦整理"（后台去重/清理/重组记忆）与 Hermes 的五层记忆演进，都隐含一个共同洞察：**记忆系统必须同时具备整理（遗忘）和积累（留存）两种机制**。没有整理机制的系统会因熵增而崩溃（所有历史都等权重要 = 没有重要），没有积累机制的系统无法形成跨会话的连续性。有效的记忆设计不是增加层数，而是设计层与层之间的流动规则——哪些信息升级、哪些降级、哪些淘汰。
+OpenAI 的 AGENTS.md 从"巨册"压缩到 ~100 行目录页，配合后台"文档园丁"Agent 定期修复，这一方案解决了两个问题：避免了过多信息撑爆上下文窗口，同时通过机器可执行的规则保持了文档的新鲜度和引用完整性。文档不再是静态文本，而是与 CI 流程绑定的活性资产。
 
-### 4. 宠物与牲畜的哲学映射到 Agent 生命周期管理
+**3. Reset vs Compaction 的选择揭示了 Agent 记忆管理的根本矛盾**
 
-Session 是宠物（精心培育、不可丢失），Sandbox 是牲畜（随时替换）——这个隐喻揭示了一个深刻的工程哲学：**不同组件应有不同的变更频率和恢复策略**。Session 承载了任务的完整历史，是系统恢复的真相来源，必须严格保护；Sandbox 是执行计算的资源，应该设计为可任意替换的 cattle，而非需要人工修复的 pet。这一原则直接延伸到现代云原生架构的核心教条——无状态、可替换、弹性扩展。
-
-### 5. 多脑多手模式暴露状态一致性难题
-
-多脑多手（多 Claude 各自 Sandbox，共享 Session）是最复杂的多智能体协作模式，也是当前最容易出问题的模式。 当多个专业化的 Claude 实例并行工作时，它们对"任务完成"的判断可能不一致——Generator 认为代码写完了，Evaluator 认为测试没通过，Planner 认为需求理解有偏差。这种状态不一致如果不能被及时仲裁，整个系统的协作效率会急剧下降。现有解决方案（STATE.yaml、共享状态文件）都是临时工程，都缺乏像 Git 一样的版本控制和冲突合并机制。
+压缩历史会丢失"心理上下文"——Agent 对任务的心理模型、当前进度的主观判断无法被显式压缩保存。显式状态交接（交接文档）比隐式历史传递更可靠，在构建超过 10 步的多步骤 Agent 时应优先设计状态交接协议。
 
 ## 实践启示
 
-### 1. 设计 Harness 时先确定组件的生命周期策略
+1. **建立六层结构的内部审计清单**：对照 Harness Engineering 的六层结构逐一评估现有 AI 系统的覆盖程度。"评估与观测"和"约束校验"两层是多数团队的盲区，应优先补充环境验证（可运行/可交互）和输出前的格式规范校验规则。
 
-在设计任何 Harness 系统之前，首先要回答：**每个组件是宠物还是牲畜？** Session 必须是宠物，需要持久化保护；Harness 应该是无状态的 cattle，可随时替换；Sandbox 是计算资源，应该设计为可快速创建和销毁的 cattle。这个分类决定了后续所有的架构决策——持久化策略、故障恢复机制、扩展策略。如果不确定某个组件的生命周期，后续设计就会在根本上摇摆。
+2. **强制执行 Generator + Evaluator 分离**：在内部 AI 项目中，不允许 Generator 代理自己验证自己的输出。Evaluator 必须是一个独立的、具有实际环境访问权限的 Agent，实际执行操作而非读取代码判断结果。
 
-### 2. 凭证管理必须走保险库+代理架构
+3. **采用渐进式文档结构替代单一 AGENTS.md**：将项目文档拆分为分层目录（架构总览 / 设计文档 / 执行计划 / 质量评分），通过 CI 自动检查文档新鲜度和交叉引用，并设置"文档园丁"Agent 定期清理过时内容。
 
-在任何涉及外部 API 调用的 Agent 系统中，都不应该让 Agent（无论是 Harness 还是 Sandbox）直接持有第三方凭证。正确做法是：凭证存储在独立保险库中，Agent 通过代理按需获取，凭证对 Agent 代码物理不可达。这个架构性原则比任何权限收窄策略都更可靠——因为它不依赖于"攻击者拿不到"或"模型不会被注入"这些假设，而是从根本上消除了攻击面。
+4. **优先设计状态交接协议**：对于超过 10 步的复杂任务，显式设计 Agent 之间的交接文档格式（包含当前进度、已完成步骤的证据、待解决的核心问题），而不是依赖对话历史传递上下文。
 
-### 3. 质量门禁必须可程序化验证
+## 第二来源: 2026 Rahul 综述 (学科正式确立版)
 
-"检查 CI 是否通过"这类自然语言描述在 Agent 执行中几乎无效——Agent 可能将仅有状态码 SUCCESS（测试数为 0）理解为通过。正确的设计是：将门禁条件拆解为**可程序化验证的精确条件组合**（如 `status == SUCCESS && total_tests > 0 && passed == total`）。如果一个约束无法被机器自动验证，在 Agent 执行中它就是无效约束。质量门禁的可验证性比门禁本身的严格性更重要——不可验证的严格门禁在实际运行中会产生更多歧义。
+> **核心信息**: 2026 年 2 月 OpenAI 1M LOC 之后 90 天内, OpenAI / Anthropic / ThoughtWorks / Hugging Face 共同命名"**Harness Engineering**"为新工程学科. Rahul 在 X 发表的 canonical 综述 (公众号转载), 是该领域第一份面向工程师的"全景图 + 5 工件 + 5 原则 + 3 阵营 + 衰减论"完整指南.
 
-### 4. 多智能体协作用共享 Session 而非共享状态文件
+### 学科确立时间线 (90 天)
 
-当多个 Agent 需要协作时，避免使用共享状态文件（这会引入竞态条件和版本冲突）。正确的模式是通过 Session 的不可变事件流来协调——每个 Agent 追加自己的事件，通过事件的偏序关系来重建全局状态。这种模式的天然优势是：事件流天然支持重放，任意 Agent 崩溃后都可以从最后一个事件恢复，冲突由偏序关系自然解决。如果必须共享状态，应该像 Git 一样引入版本控制和冲突合并机制。
+- **2026-02**: OpenAI 小团队交付 1M 行生产代码, 0 手写
+- **2026-02-03**: Anthropic 发表 3 篇相关论文
+- **2026-03**: ThoughtWorks 形式化为框架
+- **2026-04**: Hugging Face Philipp Schmid 命名"2026 最重要学科"
 
-### 5. 渐进式工具扩展比全量工具暴露更安全
+### 5 种 Harness 工件 (Rahul 框架)
 
-Agent 系统应该采用渐进式工具扩展策略——开始只提供必要工具，复杂工具按需动态加载。这个策略的价值不仅是降低选择成本，更重要的是**缩小攻击面和减少误操作概率**。每增加一个工具，都是在增加一个潜在的故障点和安全风险点。动态加载机制确保在任何时刻，Agent 只需要知道它当前需要的工具，而非整个工具生态的全貌。
+| # | 工件 | 关键创新 | 跨阵营共识 |
+|---|------|----------|------------|
+| 1 | **AGENT.md / CLAUDE.md** | 仓库各处 Markdown, 每次会话开始读取 | OpenAI/AGENT.md / Anthropic/CLAUDE.md / Cursor/.cursorrules |
+| 2 | **JSON 功能列表** | 跨会话进度追踪器 (覆盖概率 < Markdown) | Anthropic 实测 |
+| 3 | **会话初始化例程** | Anthropic 7 步启动序列, 每次完全一致 | 节省 20 分钟 |
+| 4 | **Sprint 合约** | 双 Agent 协商 (Generator + Evaluator) | 规划执行分离 |
+| 5 | **结构化任务模板** | 基于真实代码库的影响地图 | Red Hat 实现 |
 
-## 相关主题
+> **为什么 JSON 而非 Markdown?** Anthropic 发现 agent 意外覆盖 JSON 的概率低于 Markdown. 小细节, 6 小时自主运行里非常重要.
 
-- [Harness Engineering 三次范式跃迁与四根支柱](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md)
-- [Anthropic Managed Agents 架构：脑手分离设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/managed-agents-architecture.md)
-- [Harness Engineering 四根支柱与四要素架构](ch05/092-harness-engineering.html)
+### 操作系统类比 (Philipp Schmid)
+
+| 层级 | 计算机类比 | 含义 |
+|------|------|------|
+| Model | CPU | 原始处理能力 |
+| Context window | RAM | 有限、易失的工作记忆 |
+| Harness | Operating System | 管理 CPU 在何时看到什么 |
+| Agent | App | 运行在上面的应用 |
+
+> 大多数人正在运行没有操作系统的应用. 这就是他们的 agent 在生产环境失败的原因.
+
+### 3 阵营对比 (撞同一堵墙, 搭出三种梯子)
+
+| 阵营 | 核心方法 | 代表成果 | 量化 |
+|------|----------|----------|------|
+| **OpenAI 环境优先** | 设计彻底环境, 放手让 agent 工作 | Sora Android (4 工程师 / 28 天) | 99.9% 无崩溃, Codex 处理 70% PR |
+| **Anthropic 执行评判分离** | Planner + Generator + Evaluator 3 Agent | A/B 测试 9 美元 vs 200 美元 | 22 倍成本, 换来可用产品 |
+| **ThoughtWorks 2×2 框架** | Feedforward/Feedback × Computational/Inferential | 50+ 团队观察 | 跨 2 象限叠加 |
+
+**Anthropic A/B 测试真实数字**:
+- 单独 agent (无 harness): **9 美元, 20 分钟** → 破损应用
+- 完整 harness (Opus 4.5): **200 美元, 6 小时** → 精致 UI + 物理逻辑正确
+- 模型升级后 harness: **124 美元** (38% 节省)
+
+### 5 项普适原则 (三支团队独立走到这里)
+
+1. **上下文胜过指令**: 给地图, 不要给 1000 页手册
+2. **规划和执行必须分离**: 同一次处理中同时做会产出不可靠结果
+3. **反馈回路不可协商**: 没有反馈的 harness 只是一个绕了远路的 prompt
+4. **一次只做一件事**: 强制增量主义, 是所有成功 harness 的共性
+5. **代码库就是文档**: 投资代码组织的团队会免费获得更好的 agent 性能
+
+### Harness 衰减 (最反直觉的真相)
+
+**Anthropic 实测演化路径**:
+- **Opus 4.5**: sprint 拆解 + 每个 sprint 评估 (200 美元)
+- **Opus 4.6**: 不做 sprint 拆解 + 单次评估 (**节省 38% 成本**)
+- **Opus 4.7**: 模型开始自我验证 → evaluator 角色进一步缩小
+
+> Harness 中的每个组件, 都编码了一个关于"模型做不到什么"的假设. 随着模型进步, 这些假设会过期, 组件也会变成开销.
+
+### 构建是为了删除 (Philipp Schmid)
+
+> 把每个 harness 组件都设计成可移除的. 定期关掉每个组件, 测试输出质量是否变化. 如果没有变化: 删除它.
+
+- **Manus** 6 个月重构 5 次 harness
+- **LangChain** 1 年重组 3 次
+- **Vercel** 移除 80% 工具, 性能反而更好
+
+### 与本实体原版 (ConardLi) 的视角差异
+
+| 维度 | 原版 (ConardLi, 2026-04) | Rahul 综述 (2026-06) |
+|------|------|------|
+| **定位** | 概念框架 + 三次演进 | 新学科确立的 canonical 综述 |
+| **重点** | Prompt → Context → Harness 演进 | Harness 本身作为"操作系统类比" |
+| **案例深度** | OpenAI/Claude/LangChain 各 1 例 | OpenAI + Anthropic + ThoughtWorks + Red Hat + LangChain + Vercel + Manus 7 例 |
+| **新增概念** | 六层结构, Generator+Evaluator | Sprint 合约 / 会话初始化 / 衰减论 / 构建是为了删除 / 成本现实 |
+| **价值增量** | 框架本身 | 工业级成本 + 跨阵营共识 + 演化趋势 |
+
+> **判断**: Rahul 综述不是新概念, 是对 Harness Engineering 在 2026 学科确立期的全景图 + 工业成本 + 演化规律的整合. 与 ConardLi 框架互补, 不重复. 5 种 artifact / 5 原则 / 3 阵营 / 衰减论全部是新增视角.
 
 ## 相关实体
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/234-ahe-agentic-harness-engineering.html)
+- [Agent Harness 12 Components 7 Decisions](ch05/039-agent-harness.html)
+- [Harness Engineering 第三代工程范式](ch05/050-harness-engineering.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/291-ai-agent.html)
+- [Openclaw Prompt Context Harness](../ch11/214-openclaw.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+→ [原文存档 (ConardLi)](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-framework.md)
+→ [原文存档 (Rahul 2026 综述)](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-2026-rahul-rauhul.md)
 
 ---
 

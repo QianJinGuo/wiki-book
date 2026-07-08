@@ -12,11 +12,11 @@
 - 该木马建立持久化后门，每 60 秒向 C2 发送心跳，可接收远程代码执行指令
 
 ## 相关实体
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/912-20.html)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/927-20.html)
 - [Fake Job Interview Apps Drop Jobstealer Malware On Windows And Macos](ch12/049-fake-job-interview-apps-drop-jobstealer-malware-on-windows-a.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/404-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01/697-scarcruft.html)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/412-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01/711-scarcruft.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/shub-reaper-macos-stealer-attack-chain.md)
 

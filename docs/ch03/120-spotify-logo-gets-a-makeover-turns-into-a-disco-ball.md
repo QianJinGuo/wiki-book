@@ -10,9 +10,9 @@
 ## 相关实体
 - [P Seo Is A Product Aeo Is Brand](ch03/113-seo-is-a-product-aeo-is-brand.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
-- [Spotify Llm Evals Funnel Not Fork](../ch01/587-llm.html)
+- [Spotify Llm Evals Funnel Not Fork](../ch01/1182-llm.html)
 - [你的一人公司品牌部带着Image 2模型的Lovart中文版来了](https://github.com/QianJinGuo/wiki/blob/main/entities/你的一人公司品牌部带着image-2模型的lovart中文版来了.md)
-- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/912-20.html)
+- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/927-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md)
 

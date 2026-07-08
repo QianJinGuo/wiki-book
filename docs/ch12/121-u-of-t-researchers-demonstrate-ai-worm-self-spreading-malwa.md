@@ -108,14 +108,14 @@
 ## 相关实体（Related Entities）
 
 - [Mythos For Offensive Security Xbows Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos-for-offensive-security-xbows-evaluation.md) — Claude Mythos 攻防评估
-- [Llm Raiders Private Ai Server](../ch01/587-llm.html) — LLM Raiders 私人 AI 服务器
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/147-ai-agent.html) — AWS + Cisco AI Defense MCP/A2A
+- [Llm Raiders Private Ai Server](../ch01/1182-llm.html) — LLM Raiders 私人 AI 服务器
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/291-ai-agent.html) — AWS + Cisco AI Defense MCP/A2A
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/078-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) — AI gateway 安全
-- [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](../ch01/284-rag.html) — Linux 内核权限提升
+- [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](../ch01/1049-rag.html) — Linux 内核权限提升
 - [The Agentic Trust Management Platform Drata](../ch04/020-the-agentic-trust-management-platform-drata.html) — Drata agentic trust 平台
 - [Enterprise Openclaw Security Deploy Architecture Guide](../ch11/214-openclaw.html) — OpenClaw 部署安全
-- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/394-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox AI agent 安全测试
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/771-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html) — Anthropic Mythos 漏洞共享
+- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/400-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox AI agent 安全测试
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/785-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html) — Anthropic Mythos 漏洞共享
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — Microsoft Rampart/Clarity 开源
 
 ---
