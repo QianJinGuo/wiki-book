@@ -39,11 +39,11 @@ DeepSeek V4引入两项关键创新：
 **mHC对系统设计的影响值得关注**：mHC的多残差流意味着hidden state维度在层间会动态变化（n倍展开），这对内存带宽、流水线调度和显存分配都提出新的要求。在设计训练或推理系统时，需要考虑这种非均匀残差流带来的复杂度。
 **数据质量仍是核心驱动力**：尽管架构调整贡献显著，Sebastian Raschka在文末强调，模型质量的主要驱动力仍然是数据质量和训练配方，而非架构本身。  这提示在关注架构演进的同时，不应低估数据工程和训练稳定性的基础价值。
 ## 相关实体
-- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](ch01/045-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html)
-- [Recent Developments In Llm Architectures Jiqizhixin](ch01/587-llm.html)
-- [Why Im Leaving Github For Forgejo](ch01/752-github.html)
+- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](ch01/509-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html)
+- [Recent Developments In Llm Architectures Jiqizhixin](ch01/1182-llm.html)
+- [Why Im Leaving Github For Forgejo](ch01/766-github.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](ch01/519-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](ch01/124-microsoft-for-startups-microsoft.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/recent_developments_in_llm_architectures.md)
 
