@@ -14,7 +14,7 @@ Strands Agent SDK、Amazon Bedrock、AgentCore
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk/)
 
 ## 相关实体
-- [CI&amp;T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/507-amazon-bedrock-agentcore.html)
+- [CI&amp;T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/512-amazon-bedrock-agentcore.html)
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch11/152-amazon-bedrock.html)
 - [从0到1:联想基于Strands Agent SDK的资源智能巡检Agent创新 | 亚马逊AWS官方博客](../ch03/045-agent.html)
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/075-claude-code.html)

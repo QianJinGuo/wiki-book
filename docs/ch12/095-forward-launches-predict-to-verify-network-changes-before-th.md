@@ -13,7 +13,7 @@
 - [Huntress Edr Itdr Unified Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr-unified-detection.md)
 - [From Kubernetes Dev Setup To Production What Actually Change](../ch11/082-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
 - [Habby Game Aws Devops Agent](../ch11/156-aws-devops-agent.html)
-- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07/043-aws-devops-agent-mcp-server.html)
+- [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07/044-aws-devops-agent-mcp-server.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/forward-networks-predict-network-verification.md)
 

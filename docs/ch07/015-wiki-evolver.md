@@ -21,7 +21,7 @@ Wiki Evolver 的作用正是在这里：它把 ``、`[Ai Team Knowledge Harness]
 5. 基于 vault 的 paper / practice 草稿
 6. 治理修复：index / log / lint / links
 7. 改进后的 Skill / checklist / playbook
-这比 `[Skill Craft](ch07/049-skill-craft-claude-skill.html)` 的关注点更上层：Skill Craft 关注 Skill 质量本身，Wiki Evolver 关注整个知识系统如何把价值不断向上提升。
+这比 `[Skill Craft](ch07/050-skill-craft-claude-skill.html)` 的关注点更上层：Skill Craft 关注 Skill 质量本身，Wiki Evolver 关注整个知识系统如何把价值不断向上提升。
 
 ## Operating Loop
 Wiki Evolver 的推荐循环是：

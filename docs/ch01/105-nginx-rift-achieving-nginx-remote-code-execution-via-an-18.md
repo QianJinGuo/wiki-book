@@ -9,7 +9,7 @@
 - 评分：v=5 c=12 (56分)
 ## 相关实体
 - [Nginx Rift Achieving Nginx Rce Via An 18 Year Old Vulnerability](https://github.com/QianJinGuo/wiki/blob/main/entities/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability.md)
-- [Cogalpha Acl2026 Alpha Mining](ch01/927-20.html)
+- [Cogalpha Acl2026 Alpha Mining](ch01/939-20.html)
 - [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Runtime Instrumentation Of Qt6 Apps With Frida Part 1 Getting Visibility](ch01/009-runtime-instrumentation-of-qt6-apps-with-frida-part-1-get.html)

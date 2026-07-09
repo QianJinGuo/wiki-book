@@ -381,10 +381,10 @@ AI编码过程中，有个比较重要的关注点是在保证迭代成功率的
 ---
 
 ## 相关实体
-- [Karpathy Claude Md Rules](../ch01/305-claude-md.html)
-- [Ai Memory Architecture Deep Dive](../ch05/079-ai.html)
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/090-ai-coding.html)
-- [Tmall Ai Coding Practice Team Knowledge Base Npm](../ch05/090-ai-coding.html)
+- [Karpathy Claude Md Rules](../ch01/308-claude-md.html)
+- [Ai Memory Architecture Deep Dive](../ch05/081-ai.html)
+- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/092-ai-coding.html)
+- [Tmall Ai Coding Practice Team Knowledge Base Npm](../ch05/092-ai-coding.html)
 - [Pi Openclaw Coding Harness](../ch11/214-openclaw.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

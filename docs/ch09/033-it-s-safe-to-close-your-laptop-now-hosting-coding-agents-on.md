@@ -85,12 +85,12 @@ Let’s see how AgentCore gets you both.
 
 ## 相关实体
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11/128-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/507-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/507-amazon-bedrock-agentcore.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/507-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/512-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/512-amazon-bedrock-agentcore.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/512-amazon-bedrock-agentcore.html)
 - [Amazon Quick Bedrock Agentcore Finops Chat](../ch11/124-amazon-quick-bedrock-agentcore-finops.html)
-- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04/472-agent-orchestration.html)
-- [development environments for your cloud agents](ch09/105-development-environments-for-your-cloud-agents.html)
+- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04/476-agent-orchestration.html)
+- [development environments for your cloud agents](ch09/107-development-environments-for-your-cloud-agents.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

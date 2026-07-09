@@ -32,7 +32,7 @@ Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其
 - monorepo 中给每个团队目录放自己的子目录 CLAUDE.md，用 `claudeMdExcludes` 跳过不相关团队文件
 - 组织级标准（安全策略、合规）通过 MDM 部署，不允许个人排除
 
-→ [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/155-claude-code-1.html)
+→ [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/156-claude-code-1.html)
 
 ## 规则：路径作用域是关键
 
@@ -61,7 +61,7 @@ All API handlers must validate input with Zod before processing.
 
 深度搜索、日志分析、依赖审计 → 子智能体。流程在主线程展开方便调整 → 技能。
 
-→ [Claude Code 子智能体上下文卫生](../ch04/174-claude-code-subagents.html)
+→ [Claude Code 子智能体上下文卫生](../ch04/173-claude-code-subagents.html)
 
 ## 钩子：确定性执行
 
@@ -124,7 +124,7 @@ Claude Code 中，钩子是唯一能保证"确定性触发、确定性执行"的
 - 原文：https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more
 - → [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 - → [Claude Code 治理：软规则与硬约束](../ch03/075-claude-code.html)
-- → [Claude Code 子智能体上下文卫生](../ch04/174-claude-code-subagents.html)
+- → [Claude Code 子智能体上下文卫生](../ch04/173-claude-code-subagents.html)
 - → [Claude Code Hooks 完整指南](../ch03/075-claude-code.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 

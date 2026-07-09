@@ -28,7 +28,7 @@
 
 ## 相关实体
 - [Building Blocks for Foundation Model Training and Inference on AWS](../ch11/117-building-blocks-for-foundation-model-training-and-inference.html)
-- [Genesis AI GENE-26.5 具身基础模型](../ch05/079-ai.html)
+- [Genesis AI GENE-26.5 具身基础模型](../ch05/081-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

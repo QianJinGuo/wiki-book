@@ -11,8 +11,8 @@
 **原文**: [将 Aws Devops Agent 智能运维能力延伸到中国区](ch11/156-aws-devops-agent.html)(raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/387-aws-sagemaker-ai-agent.html)
-- [AWS DevOps Agent × MCP Server：混合云网络排障](../ch07/043-aws-devops-agent-mcp-server.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/388-aws-sagemaker-ai-agent.html)
+- [AWS DevOps Agent × MCP Server：混合云网络排障](../ch07/044-aws-devops-agent-mcp-server.html)
 
 - [Design And Practical Application Of Intelligent Agents In E Commerce Industry](../ch03/045-agent.html)
 ## 深度分析
