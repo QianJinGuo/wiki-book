@@ -26,7 +26,7 @@
 关于 ROI 衡量，Dausch 说"customer/team member experience 是最难衡量的"，这透露了 AI 落地项目最常见的困境：最容易量化的是 top-line sales 和 margins/costs，但 AI 最直接影响的恰恰是体验这类软指标。企业如果只用财务指标衡量 AI ROI，会系统性地低估 AI 的真实价值。
 
 ## 相关实体
-- [819775](../ch01/697-9.html)
+- [819775](../ch01/704-9.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/819775.md)
 

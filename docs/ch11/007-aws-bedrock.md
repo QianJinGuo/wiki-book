@@ -897,8 +897,8 @@ events.put_targets(
 ## 十、相关资源
 
 - → [Multi Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) — 多智能体协作模式通用理论
-- → [Openclaw Multi Agent Team Practice](../ch04/049-openclaw-multi-agent-team-practice-v2.html) — OpenClaw 多智能体团队实践
-- → [Building Enterprise Agentic Ai With Kiro On Aws](../ch04/538-agentic-ai.html) — Kiro 在 AWS 上的企业 Agent 构建
+- → [Openclaw Multi Agent Team Practice](../ch04/048-openclaw-multi-agent-team-practice-v2.html) — OpenClaw 多智能体团队实践
+- → [Building Enterprise Agentic Ai With Kiro On Aws](../ch04/543-agentic-ai.html) — Kiro 在 AWS 上的企业 Agent 构建
 
 ---
 

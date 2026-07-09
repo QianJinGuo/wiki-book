@@ -92,11 +92,11 @@ Agent-EvalKit 团队在 Strands Agents SDK + Bedrock 旅行研究 agent 上跑 1
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/018-harness.html) — 阿里云泊予用 Claude Code 搭建评测 Harness
 - [Langsmith Evaluation Concepts](../ch03/126-langsmith-evaluation-concepts.html) — LangSmith 评测概念框架
 - [Agent Harness Observability Production](../ch05/039-agent-harness.html) — Agent harness 生产可观测性
-- [Agent Memory Evaluation Landscape Taobao Survey](../ch04/099-agent-memory.html) — Agent 记忆评估方法论全景
+- [Agent Memory Evaluation Landscape Taobao Survey](../ch04/121-agent-memory.html) — Agent 记忆评估方法论全景
 - [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](../ch03/045-agent.html)
-- [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](../ch04/289-aws-security-agent.html)
+- [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](../ch04/288-aws-security-agent.html)
 
-- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](../ch05/079-ai.html)
+- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](../ch05/081-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 ## 深度分析

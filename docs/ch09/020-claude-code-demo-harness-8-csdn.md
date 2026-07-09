@@ -176,7 +176,7 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 - [Agent Harness 12 Components 7 Decisions](../ch05/039-agent-harness.html) — 12 组件 + 7 决策框架
 - [Agent Production Harness Engineering](../ch05/050-harness-engineering.html) — 工程赤字 + Demo vs 生产型判别
 - [Harness Engineering Systematic Framework](../ch05/050-harness-engineering.html) — Harness 工程系统化
-- [Agent Skill Writing](../ch04/265-agent-skill.html) — Skill 编写实践（第三关深入）
+- [Agent Skill Writing](../ch04/264-agent-skill.html) — Skill 编写实践（第三关深入）
 - [Agent Reliability Context Drift Tool Hallucination](../ch03/045-agent.html) — 漂移与幻觉的关联分析
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md)
@@ -206,7 +206,7 @@ Haiku 60% / Sonnet 30% / Opus 10% 的路由比例背后有数据支撑：41% 的
 
 ### 实践价值：ADPS 共同体将个人踩坑经验转化为组织资产
 
-[Agent Skill Writing](../ch04/265-agent-skill.html) 解决个人级经验复用，而 ADPS 共同体解决跨组织级经验沉淀。Harness Engineering 的坑多数是共通的（上下文压缩、Token 成本、状态漂移），但行业内缺乏共享词汇表。ADPS 的价值在于建立共同的工程语言，使"某团队已解决的第 7 关问题"能快速映射为"另一团队的启动手册"。
+[Agent Skill Writing](../ch04/264-agent-skill.html) 解决个人级经验复用，而 ADPS 共同体解决跨组织级经验沉淀。Harness Engineering 的坑多数是共通的（上下文压缩、Token 成本、状态漂移），但行业内缺乏共享词汇表。ADPS 的价值在于建立共同的工程语言，使"某团队已解决的第 7 关问题"能快速映射为"另一团队的启动手册"。
 
 ## 实践启示
 
@@ -214,7 +214,7 @@ Haiku 60% / Sonnet 30% / Opus 10% 的路由比例背后有数据支撑：41% 的
 
 2. **用 Stop Hook 将质量门禁自动化**：在 CI/CD pipeline 中嵌入 Stop Hook（`pnpm lint && pnpm test`，blocking=true），让每次 AI 交付都经过确定性检查。这是[Agent Reliability Context Drift Tool Hallucination](../ch03/045-agent.html) 中"反馈回路丢失"问题的最低成本解法，无需改模型，只要改 Harness 配置。
 
-3. **三层模型路由是 token 成本控制的第一优先级**：先用 Haiku 做路由分类（41% 查询根本不需要 Sonnet），再考虑压缩上下文。对应[Agent Skill Writing](../ch04/265-agent-skill.html) 的渐进式披露原则——系统应该先判断"这个问题需要多少智能"，再分配对应算力。
+3. **三层模型路由是 token 成本控制的第一优先级**：先用 Haiku 做路由分类（41% 查询根本不需要 Sonnet），再考虑压缩上下文。对应[Agent Skill Writing](../ch04/264-agent-skill.html) 的渐进式披露原则——系统应该先判断"这个问题需要多少智能"，再分配对应算力。
 
 4. **HITL 人工审核不可省，特别是删除/部署/转账类操作**：第五关的爆炸半径分级是 Harness Engineering 的安全基线。[Agent Harness Engineering Survey 2026](../ch05/050-harness-engineering.html) 的 ETCLOVG 7 层框架中"安全层"与此呼应——高爆炸半径操作的 HITL 不是流程繁琐，而是防止不可逆损失的最后防线。
 
