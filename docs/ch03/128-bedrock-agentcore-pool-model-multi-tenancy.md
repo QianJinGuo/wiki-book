@@ -72,7 +72,7 @@ User (终端用户: 医生 / 护士)
 
 ## 相关主题
 
-- [Protein Research Copilot](../ch04/507-amazon-bedrock-agentcore.html) — 同系列文章，聚焦 AgentCore 的单租户 Agent 应用
+- [Protein Research Copilot](../ch04/512-amazon-bedrock-agentcore.html) — 同系列文章，聚焦 AgentCore 的单租户 Agent 应用
 - Amazon Bedrock AgentCore — AWS Agent 部署平台
 - AI Agent 多租户架构 — SaaS 场景下的 Agent 隔离设计
 - Healthcare AI — 医疗 AI 应用场景

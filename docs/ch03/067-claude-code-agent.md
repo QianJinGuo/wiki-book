@@ -101,7 +101,7 @@ Agent View 的单 vendor 定位为第三方工具留下了差异化空间。跨 
 - Boris Cherny 工作流访谈：https://newsletter.pragmaticengineer.com/p/building-claude-code-with-b
 
 ## ## 相关实体
-- [Claude Code Skills 实践与 Superpowers 利器推荐](../ch01/512-claude-code-skills-superpowers.html)
+- [Claude Code Skills 实践与 Superpowers 利器推荐](../ch01/517-claude-code-skills-superpowers.html)
 
 ## ## 相关实体
 - [Hermes+Kimi K2.6 多Agent军团实战教程](ch03/090-hermes-agent.html)
