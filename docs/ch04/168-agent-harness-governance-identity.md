@@ -111,7 +111,7 @@
 | **互补关系** | 任何 secure agent 前必读 | 本实体执行后的技术参考 |
 
 **关键互补点**：
-- `[Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/421-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)` — MCP supply chain 攻击模型（**怎么攻击**）
+- `[Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/423-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)` — MCP supply chain 攻击模型（**怎么攻击**）
 - `[Secure Ai Agents Policy Lambda Interceptors Aws](ch04/030-ai-agent.html)` — Policy + Lambda 实现 runtime interception（**怎么防御**）
 - 本实体（**什么时候**做）— security 落地的**序列决策**问题
 

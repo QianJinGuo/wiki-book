@@ -263,7 +263,7 @@
 
 "不直接升级"原则是双仓库设计最关键的设计哲学：项目过程中产生的事实先留在项目记忆层（feature 分支），只有经过结项审视和人工确认，才会选择性地进入长期 wiki。这样既**避免了噪声污染长期 wiki**，也保证了每次结项都能沉淀出真正有复用价值的业务知识。
 
-这与 [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的"提升"边界思路一致——[Agent Memory Architecture](ch04/395-perplexity-brain-self-improving-agent-memory-architecture.html) 强调的 provenance state（extracted | merged | inferred | ambiguous）在阿里云实践里被显式化为**结项审视 + 人工确认**两个可操作的动作节点，而不是依赖 LLM 自行判断何时该"升格"。
+这与 [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的"提升"边界思路一致——[Agent Memory Architecture](ch04/396-perplexity-brain-self-improving-agent-memory-architecture.html) 强调的 provenance state（extracted | merged | inferred | ambiguous）在阿里云实践里被显式化为**结项审视 + 人工确认**两个可操作的动作节点，而不是依赖 LLM 自行判断何时该"升格"。
 
 ### 效果度量先于自我迭代：Agent 成长的可验证路径
 
@@ -298,7 +298,7 @@
 - [Agent Role Specialization](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-role-specialization.md) — 多角色 Agent 协作
 - [Agent Self Improvement Loops](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) — 度量驱动的 Agent 自我迭代
 - [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — 记忆生命周期与"提升"边界
-- [Agent Memory Architecture](ch04/395-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构
+- [Agent Memory Architecture](ch04/396-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — Agent 编排模式
 - [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
