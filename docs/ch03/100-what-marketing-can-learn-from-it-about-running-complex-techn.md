@@ -11,9 +11,9 @@
 ## 相关实体
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
 - [Workspaceupdates Googleblog Com Google Workspace Updates](https://github.com/QianJinGuo/wiki/blob/main/entities/workspaceupdates-googleblog-com-google-workspace-updates.md)
-- [B2B Email Marketing What Still Works](../ch01/147-b2b-email-marketing-what-still-works.html)
+- [B2B Email Marketing What Still Works](../ch01/152-b2b-email-marketing-what-still-works.html)
 - [What Do Your Startup Advisors Say About You Charlie Odonnell   Coach Author Vc](https://github.com/QianJinGuo/wiki/blob/main/entities/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)
-- [From Kubernetes Dev Setup To Production What Actually Change](../ch11/082-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
+- [From Kubernetes Dev Setup To Production What Actually Change](../ch11/084-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-marketing-can-learn-from-it-about-running-complex-technology.md)
 

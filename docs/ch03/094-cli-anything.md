@@ -124,14 +124,14 @@ HKUDS 通过 CLI-Anything 建立了在 Agent Tools 领域的技术影响力，St
  支持通过 Skill 机制调用外部 CLI 工具，CLI-Anything 正是此类工具的重要来源之一。
 
 ## Related
-- [AutoCLI](ch03/117-autocli.html) — 极速网页信息获取 CLI
+- [AutoCLI](ch03/118-autocli.html) — 极速网页信息获取 CLI
 - [AgentBrowser](../ch09/068-agent-browser-claude-code-qoderwork.html) — AI 专用浏览器
 
 ## 相关实体
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [GBrain](../ch01/322-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [GBrain](../ch01/323-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 
 ---
 

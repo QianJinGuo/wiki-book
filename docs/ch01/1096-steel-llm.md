@@ -1,24 +1,22 @@
-# 【从零训练Steel-LLM】模型设计
+# 【从零训练Steel-LLM】微调阶段优化
 
-## Ch01.1096 【从零训练Steel-LLM】模型设计
+## Ch01.1096 【从零训练Steel-LLM】微调阶段优化
 
-> 📊 Level ⭐⭐ | 3.4KB | `entities/从零训练steel-llm模型设计.md`
+> 📊 Level ⭐⭐ | 3.4KB | `entities/从零训练steel-llm微调阶段优化.md`
 
-# 【从零训练Steel-LLM】模型设计
+# 【从零训练Steel-LLM】微调阶段优化
 
 **来源**: 炼钢AI
 
-**发布日期**: 2024-09-03
+**发布日期**: 2025-01-28
 
-**原文链接**: https://mp.weixin.qq.com/s/JaZyf1jOEOtNDCcFqSj8TQ
+**原文链接**: https://mp.weixin.qq.com/s/-hG9PYxYvF1siCx2sakuPA
 
 ---
 
-这是从零训练Steel-LLM的第三篇文章，于24年7月9日首发于我的zhi hu帐号：“战士金”，略有修改。目前正在进行模型微调和评估的相关工作，近期已经将训练过程中的多个checkpoint上传到HuggingFace，最终一共训练了1060k个step，1.1T个token（2个epoch）。
+前言
 
-1
-
-从零训练Steel-LLM目录
+Steel-LLM是个人发起的从零预训练中文大模型项目。我们使用了1T token的数据预训练一个1B左右参数量的中文LLM。项目从开始到微调出第一版模型耗时了8个月。我们详细的分享了数据收集、数据处理、预训练框架选择、模型设计等全过程，并开源全部代码。历史文章：
 
 【从零训练Steel-LLM】预训练数据收集与处理
 
@@ -26,33 +24,49 @@
 
 【从零训练Steel-LLM】模型设计
 
+【从零训练Steel-LLM】微调探索与评估
+
+个人从零预训练1B LLM心路历程
+
+这是从零训练Steel-LLM的第6篇文章，对微调环节做了进一步的探索，相比第一版微调模型，加入英文SFT数据，ceval从38分涨到了42分，cmmlu从33分涨到了36分，mmlu从23分涨到了30分。后续笔者会继续基于Steel-LLM进行更多的探索，如数学能力增强、强化学习、长思维推理等，欢迎关注。
+
+github：
+
+https://github.com/zhanshijinwat/Steel-LLM
+
+交流群：加 a1843450905，拉群
+
+实验
+
+Steel-LLM的预训练数据中只有20%的英文数据，定位是中文LLM，开始只计划测一下中文benchmark（ceval和cmmlu），因此第一版微调模型的SFT数据中并没有加入英文数据。此次探索的主要目的是增强一下模型的英文能力，但同时中文benchmark指标也有所提升。除了保留了之前用到的Infinity-Instruct(去除英文数据)、自我认知数据，ruozhibao、预训练数据集中的wanjuan-exam数据（共计340w条中文数据，详见第一版微调模型的文章），还引入了如下3个英文数据集：
+
+- Code-Feedback（6.6w条）：代码SFT数据，数据来源于各种开源代码数据集以及leetcode，并进行了一系列的过滤和筛选。
+
+- WebInstructSub（233w条）：包含数学、物理、生物、化学、计算机等领域的SFT数据。
+
+- OpenHermes-2.5（100w条）：主要包含大模型合成的样本和聊天样本，基于Airoboros、ChatBot Arena、Evol Instruct 等开源数据进行筛选。
+
+训练时global batch size=256，最大学习率=3e-5。实验3 看起来微调的step少一些，是因为使用的卡多，global batch size大一些，训练的数据量是差不多，大概训练了3-4epoch的数据。
+
+1
+
+全部中文数据+英文数据微调
+
+使用全部的340w中文数据以及340w英文数据直接进行微调，ceval、cmmlu、mmlu的指标如下所示。相比于第一版微调模型（ceval：38分；cmmlu：33分），第二版微调模型按照1：1比例加入大量的英文数据至少是没让中文能力下降的，即使加入的英文数据有点多，预训练时的中文比例是4：1。
+
+ceval
+
+cmmlu
+
+mmlu
+
 2
 
-前言
+仅使用英文数据微调
 
-我们的目标是从0预训练一个1B左右的LLM，使用T级别的数据，模型被称为Steel-LLM。我们会分享预训练过程中的关于数据收集、清洗、模型设计、训练程序等内容的所有细节和代码，更详细的项目介绍请见本系列的第一篇文章。相关资源链接如下：
+仅使用340w英文数据直接进行微调，mmlu和gsm8k（数学）的分数如下（因为没微调中文数据，没有测中文benchmark）。和实验1加入了大规模的中文数据相比，mmlu
 
-github链接：https://github.com/zhanshijinwat/Steel-LLM/tree/mainhuggingface链接：https://huggingface.co/gqszhanshijin/Steel-LLM
-
-本篇文章是该系列的第三篇文章，主要分享一下笔者在模型设计上的思考与探索。
-
-3
-
-关于Scaling Law
-
-考虑到算力以及训练完的模型最终包含的知识量，Steel-LLM在开始时就已经确定了要训练的是1B的模型，使用1T左右的数据（最终用来训练的数据为1.6T数据，400B个token）。但在项目过程中，仍然简单的根据scaling law计算了一下在我们拥有的算力的情况下，模型尺寸和数据规模的“最优”（能达到最低的loss）值。计算scaling law时，Steel-LLM项目并未使用Chinchilla等早起工作拟合出来的参数，而是使用DeepSeek技术报告中给出的参数，如下所示，M为模型规模，D为数据规模，C为预计使用的计算里量：
-
-通过在wandb上的打点来看，训练1.1B模型时我们单卡A100实际的算力是 1.88∗10  14  flops/s左右（因为是数据并行，各卡是独立消费token的，因此算scaling law时候用单卡的算力算），在假设训练25天的情况下，能达到最低loss的模型大小为10B左右，单卡数据消费量为36B左右。（但如果真换成10B模型，25天应该消费不了36B数据，因为mfu会下降，实际的每秒的flops不会有 1.88∗10  14  这么高，所以这块的具体数值并不准确，计算的最优的模型和数据规模是偏大的。这篇文章撰写时候，我们的最终模型已经开始训练，暂时不会停下来测scaling law这块。并且，单卡也撑不下10B模型的训练）。
-
-C = 1.81014 3600 24  25M_opt = 0.1715C0.5243 # 10701818976D_opt = 5.8316C0.4757 # 36334610364
-
-我们的训练目标是，在有限算力并且模型不太小的情况下，尽量消费更多的数据，让模型学到更多的东西，因此并不严格遵守scaling law。并且，目前开源的LLM训练的数据量通常也是比通过scaling law计算出来的“最优数据量”大的多的多的。
-
-4
-
-模型
-
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从零训练steel-llm模型设计.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从零训练steel-llm微调阶段优化.md)
 
 ---
 

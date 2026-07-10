@@ -3,35 +3,6 @@ source_url: "https://mp.weixin.qq.com/s/axLHmFoNretapSPCUP68PQ""
 ingested: 2026-06-26
 sha256: 370b8050414cf853
 ---
-sha256: fb5b485ec4289700
----
-title: "AI Agent 的内核是 250 行 while 循环：从零用 Python + Ollama 搭建 CLI Agent 的 7 个阶段"
-source_url: "https://mp.weixin.qq.com/s/axLHmFoNretapSPCUP68PQ"
-author: "未署名"
-feed_name: "未知公众号"
-publish_date: 2026-06-01
-created: 2026-06-01
-ingested: 2026-06-01
-tags:
-  - agent
-  - cli
-  - tutorial
-  - python
-  - ollama
-  - qwen
-  - while-loop
-  - from-scratch
-  - 250-line
-  - tool-calling
-  - context-compaction
-  - wechat
-type: article
-review_value: 7
-review_confidence: 9
-review_recommendation: strong
-review_stars: 4
-sha256: 9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c
----
 
 # AI Agent 的内核是 250 行 while 循环：从零用 Python + Ollama 搭建 CLI Agent 的 7 个阶段
 

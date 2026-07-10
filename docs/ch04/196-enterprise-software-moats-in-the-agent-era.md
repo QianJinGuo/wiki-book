@@ -100,15 +100,15 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/salesforce-headless-software-losing-head-a16z.md)
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/421-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/423-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](../ch03/045-agent.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](ch04/421-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](ch04/423-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [foundation capital agent era six insights](ch04/184-foundation-capital-agent-era-six-insights.html)
 - [Agent 时代架构师技能指南](../ch03/069-skills.html)
 - [快手首个打工人Agent](../ch03/045-agent.html)
-- [from](../ch01/323-from-system-of-record-to-system-of-intelligence.html)
-- [From System Of Record To System Of Intelligence](../ch01/323-from-system-of-record-to-system-of-intelligence.html)
-- [meet customers where they are: agentforce contact center now](ch04/557-meet-customers-where-they-are-agentforce-contact-center-now.html)
+- [from](../ch01/324-from-system-of-record-to-system-of-intelligence.html)
+- [From System Of Record To System Of Intelligence](../ch01/324-from-system-of-record-to-system-of-intelligence.html)
+- [meet customers where they are: agentforce contact center now](ch04/563-meet-customers-where-they-are-agentforce-contact-center-now.html)
 
 ---
 

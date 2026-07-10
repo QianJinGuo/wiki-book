@@ -3,23 +3,7 @@ source_url: "https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcor
 ingested: 2026-06-26
 sha256: 76ecdde22d4c770f
 ---
-sha256: 7c6096d49bf6a5c6
----
-title: "基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构"
-source: rss
-source_url: https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-2/
-url: https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-2/
-fetcher: inbox
-created: 2026-05-13
-updated: 2026-05-13
-type: raw-article
-tags: [aws, bedrock, agentcore, openclaw, serverless, architecture]
-review_value: 8
-review_confidence: 9
-review_recommendation: strong
-review_stars: 4
-sha256: 3b26b0785703
----
+
 ---
 title: AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第二篇 | Amazon Web Services
 url: https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-2/

@@ -9,45 +9,6 @@ published: 2026-06-02
 tags: [skill-design, skill-specification, skill-hub, hermes-agent, winty, skill-template, enterprise-skill, agent-skill, when-to-use, verification, failure-handling]
 ---
 
-# AI 总跑偏？Skill 太人话了：企业级 Skill 8 块最小骨架 + 8 条 checklist
-
-> 来源：前端Q / 2026-06-02 / winty（Hermes Agent 系列第 4 篇）
-> 上一篇：AI 越用越聪明，公司却越用越白用（Skill Hub） · 下一篇：写完 Skill 之后怎么管版本
-
-## 1. 核心命题
-
-> **Skill 不是文档，是程序。**
-
-写文档可以模糊、可以省略、可以靠"读者自己脑补"。**但 Skill 不一样——Agent 不会脑补**。
-
-Agent 会：
-- 逐字读 Skill
-- 按写的步骤执行
-- 按写的判断条件分支
-- 按写的失败处理 fallback
-
-**任何一处含糊，要么 Agent 跳过这一步，要么 Agent 自己编一套，要么 Agent 直接卡住问你**。
-
-### 第一原则
-
-> **写 Skill 的时候，要假设这个 Skill 之后会被一个不熟悉业务的实习生 Agent 反复执行。**
->
-> 每一步都得明确。每个判断都得有依据。每个失败都得有 fallback。
-
-## 2. 一个可上线 Skill 的 8 块最小骨架
-
-```
----
-name: kebab-case-name
-version: 1.0.0
-owner: team-or-person
-status: active | deprecated | experimental
-last_updated: 2026-04-30
-tags: [domain, scenario]
-required_tools: [git, kubectl, jira-mcp]
-required_permissions: [read:repo, write:branch]
----
-
 ## When to use
 ## Do not use when
 ## Inputs

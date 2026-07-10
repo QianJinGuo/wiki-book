@@ -12,10 +12,10 @@
 
 ## 相关实体
 - [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/074-building-ai-agents-for-business-support-using-amazon-bedrock.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/512-amazon-bedrock-agentcore.html)
-- [Build Ai Powered Dashboard Automation Agents With Nlp On Amazon Bedrock Agentcor](../ch11/152-amazon-bedrock.html)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/152-amazon-bedrock.html)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/512-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/518-amazon-bedrock-agentcore.html)
+- [Build Ai Powered Dashboard Automation Agents With Nlp On Amazon Bedrock Agentcor](../ch11/154-amazon-bedrock.html)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/154-amazon-bedrock.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/518-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
 

@@ -113,7 +113,7 @@ Co-Existence 模式下，人类的核心技能不再是 prompt engineering，而
 ## 相关主题
 
 - [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch05/081-ai.html) — 同一时间窗口的 AI 自主研究叙事（自举训练 vs 自主编码生产）— 互补视角
-- [Stochastic Parrot Deep Mystery Llms](../ch01/732-stochastic-parrot-deep-mystery-llms.html) — 引述 Mollick 关于"next-word prediction 是否模拟思维"的挑战 — 同一作者不同议题
+- [Stochastic Parrot Deep Mystery Llms](../ch01/744-stochastic-parrot-deep-mystery-llms.html) — 引述 Mollick 关于"next-word prediction 是否模拟思维"的挑战 — 同一作者不同议题
 - Anthropic 80% / 8x 报告原始 URL: https://www.anthropic.com/institute/recursive-self-improvement
 - Ethan Mollick Twitter: https://x.com/emollick
 - 新书《Co-Existence》pre-order: https://co-existence.ai/

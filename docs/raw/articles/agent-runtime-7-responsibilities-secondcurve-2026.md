@@ -3,29 +3,6 @@ source_url: "https://mp.weixin.qq.com/s/5sftvwAZL4Hj5v40HZ1rVw"
 ingested: 2026-06-26
 sha256: 02d730ea5a5ccaf8
 ---
-sha256: dc1804caf4657c29
----
-title: Agent 的骨架:一文讲透 Agent Runtime — 二曲线工程师 7 职责 + 3 主流框架
-source_url: https://mp.weixin.qq.com/s/5sftvwAZL4Hj5v40HZ1rVw
-author: 二曲线工程师
-publisher: 工程师的第二曲线
-publish_time: 2026-06-05 21:50
-related_series: Agent 工程系列第 04 篇 (前 3 篇: Loop / Context / Tool Calling,后 9 篇: Memory / Trace / HITL / Eval / Multi-Agent / Planning / RAG / Prompt Engineering / 安全)
-related_first_source: claude-fable-5-agent-runtime-contract-ruofei-2026 (若飞 Runtime Contract 框架)
-ingested: 2026-06-15
-type: raw
-sources: []
-review_value: 7
-review_confidence: 7
-review_recommendation: worth-reading
-review_stars: 3
-char_count: 3095
-sha256: bd1511b115a00953ec596526344dc585d01894c504b7c1cf6ff98568ef28e5a4
-notes: |
-  「工程师的第二曲线」Agent 工程系列第 04 篇,讲 Agent Runtime 7 大职责 + 3 主流框架对比。
-  定位:通用 Agent Runtime 概念入门视角;与若飞 Runtime Contract 框架(深度工程协议视角)互补不重叠。
-  短小精悍(3095 字符),系列关联强(后续 9 篇),对构建完整 Agent Runtime 知识体系是入门必备。
----
 
 # Agent 的骨架:一文讲透 Agent Runtime
 

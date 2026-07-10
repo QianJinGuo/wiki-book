@@ -3,19 +3,6 @@ source_url: "https://mp.weixin.qq.com/s/JZhN6auXKOzEh3OHgkjrdw""
 ingested: 2026-06-26
 sha256: f9c5dda077a81cd5
 ---
-sha256: ce243ac4519fc49a
----
-title: "Agent-Memory 评测全景：基准、评估与记忆系统（理论篇）"
-description: "淘天集团场景智能技术团队综述：9 大代表性方案（2 Benchmark + 3 Evaluation + 4 System）— MUSE/LOCOMO/MemoryAgentBench/LONGMEMEVAL/MemBench/THEANINE/RMM/M3-Agent/Mem0 — 4 维度统一评测框架（检索正确性/使用有效性/时间维度/成本维度）"
-source_url: "https://mp.weixin.qq.com/s/JZhN6auXKOzEh3OHgkjrdw"
-feed_name: "大淘宝技术"
-author: "阿元（淘天集团 - 场景智能技术团队）"
-publish_date: "2026-06-03"
-ingested: "2026-06-03"
-type: article
-tags: [agent-memory, memory-evaluation, benchmark, MUSE, LOCOMO, MemoryAgentBench, LONGMEMEVAL, MemBench, THEANINE, RMM, M3-Agent, Mem0, taobao, survey]
-sha256: "e57ec2428b3c1b5a0028175f8f0f534642f0d95c1b61beceae8ee9b5aa9b841d"
----
 
 # Agent-Memory 评测全景：基准、评估与记忆系统（理论篇）
 
