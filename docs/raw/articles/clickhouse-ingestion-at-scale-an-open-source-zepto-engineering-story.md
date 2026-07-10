@@ -3,13 +3,6 @@ source_url: "https://blog.zepto.com/clickhouse-ingestion-at-scale-an-open-source
 ingested: 2026-06-26
 sha256: f5cdf1dd2f70953b
 ---
-sha256: 35e3b345393d59e6
----
-title: "ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story"
-source_url: "https://blog.zepto.com/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story-7f57309e2175"
-ingested: 2026-06-22
-type: article
----
 
 # ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
 

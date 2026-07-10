@@ -118,7 +118,7 @@ hermes dashboard
 - [Hermes Agent Deep Dive Alibaba](../ch03/090-hermes-agent.html)
 - [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](../ch03/090-hermes-agent.html)
 - [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch03/090-hermes-agent.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/358-hermes-agent-goal.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/359-hermes-agent-goal.html)
 - [我用 Skillmd 做了一个简历生成器](ch04/266-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-getting-started-guide-2026.md)

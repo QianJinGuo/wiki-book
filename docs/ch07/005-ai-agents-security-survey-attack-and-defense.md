@@ -255,10 +255,10 @@ Bishop Fox 的 AIMap 提供了互联网规模的 AI Agent 安全测试能力：
 ## 九、相关实体
 
 - [清华大学方寸跃迁团队](../ch03/045-agent.html) — 全链路安全体系
-- [VentureBeat 工具投毒报告](../ch04/421-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — behavioral integrity vs artifact integrity
-- [Bishop Fox AIMap](../ch04/401-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — AI Agent 安全测试框架
+- [VentureBeat 工具投毒报告](../ch04/423-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — behavioral integrity vs artifact integrity
+- [Bishop Fox AIMap](../ch04/402-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — AI Agent 安全测试框架
 - [AWS + Cisco AI Defense](../ch04/030-ai-agent.html) — 企业级 Agent 安全生态
-- [Amazon Bedrock AgentCore Identity Security](../ch11/230-aws-bedrock-agentcore.html) — AWS Bedrock 身份安全
+- [Amazon Bedrock AgentCore Identity Security](../ch11/238-aws-bedrock-agentcore.html) — AWS Bedrock 身份安全
 
 ---
 

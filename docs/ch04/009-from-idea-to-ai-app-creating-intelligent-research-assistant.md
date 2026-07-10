@@ -64,10 +64,10 @@ Strands 的 @tool decorator 机制展示了工具增强型代理（Tool-Augmente
 
 ## 相关实体
 - [Claude Code Aws Bedrock Guide](../ch09/081-claude-code-aws.html)
-- [Bedrock Agentcore Payment X402 Agent](../ch11/048-bedrock-agentcore.html)
+- [Bedrock Agentcore Payment X402 Agent](../ch11/050-bedrock-agentcore.html)
 - [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-real-time-service-topology.md)
-- [Firecracker Bedrock Agentcore Multi Tenant](../ch11/048-bedrock-agentcore.html)
-- [Serverless Langgraph Multi Agent Aws](../ch11/215-multi-agent-aws.html)
+- [Firecracker Bedrock Agentcore Multi Tenant](../ch11/050-bedrock-agentcore.html)
+- [Serverless Langgraph Multi Agent Aws](../ch11/223-multi-agent-aws.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-research-assistant-from-idea-to-app.md)
 

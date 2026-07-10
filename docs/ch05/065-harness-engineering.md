@@ -95,7 +95,7 @@
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/050-harness-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/214-openclaw.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/222-openclaw.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](ch05/039-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-future-persistence-vs-erosion.md)

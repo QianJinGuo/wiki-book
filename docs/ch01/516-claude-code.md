@@ -1,69 +1,89 @@
-# Claude Code 七大模块详解
+# Claude Code 设计原则与对照分析
 
-## Ch01.516 Claude Code 七大模块详解
+## Ch01.516 Claude Code 设计原则与对照分析
 
-> 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-architecture-modules.md`
+> 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-architecture-analysis.md`
 
-### 1. 入口与启动链路
-**问题**：多启动模式各自长出运行语义，系统裂成多套。
-**解法**：三段式启动
-1. **入口分流** — 先判断启动类型，动态加载
-2. **进程初始化** — 配置/telemetry/远程设置，不碰会话语义
-3. **会话准备** — 定型工具面/权限模式/恢复方式
-**关键设计**：进程状态与交互状态**分开下沉**。
+## 五条系统设计原则
+### 1. 先定边界，再开始执行
+在第一轮请求前，尽量把工具面、权限模式、恢复方式、承载宿主这些会影响执行边界的因素先定下来。
 
-### 2. REPL / UI Orchestration
-REPL 是 runtime 的**操作台**，用户输入进入后，先判断快捷指令、组装执行上下文、合并能力面、准备约束，最后才进入 `query()`。
-REPL 消费的是**带语义的事件流**，归并成用户能理解的会话视图。
+### 2. 把连续运行当状态机，不当函数调用
+把 Agent 的连续运行过程建模成显式状态，并为取消、超时、错误提供恢复路径。
 
-### 3. Query Loop
-- **Compact 机制**：上下文超阈值时自动压缩历史
-- **恢复机制**：错误/取消/超时都有兜底路径
-- **状态机设计**：Pending/Running/Waiting/Done 各有明确语义
-> 把"上下文治理"和"失败恢复"从 prompt 层挪到**运行时层**。
+### 3. 把横切复杂度收敛到运行时层
+校验、并发、权限、错误处理、进度流、结果回填这些横切问题收敛在 Tool Runtime。
 
-### 4. Tool Runtime
-工具是带完整运行时语义的对象。执行链四段式：**schema 校验 → 调用前准备 → permission 决策 → 执行 → 归一化结构化反馈**
-两个关键判断：1) 并发策略由工具语义决定；2) 流式工具执行必须被认真建模。
+### 4. 把多 Agent 设计成任务系统
+子 Agent 是带状态、消息回流、后台可见性和回收语义的任务对象。真正难的不是"怎么分工"，而是"怎么把分出去的执行重新收回来"。
 
-### 5. Permission System
-完整决策链：`规则层 → 运行时自动判定 → 交互层 → 沙箱执行隔离`
-关键是把**逻辑授权**和**执行隔离**分开。Auto mode 是**收紧危险能力后尽量自动**。
+### 5. 外部扩展越动态，内部模型越要稳定
+MCP、Skill、Plugin 都可能持续变化，但进入主系统后，必须尽量映射为统一抽象。
 
-### 6. Task / 多 Agent
-子 Agent 是**带邮箱的任务对象**。前台/后台差别变成调度与可见性差异，而不是两套世界观。
+## 与 Harness Engineering 的对应关系
+| Claude Code 模块 | 对应 Harness 能力 |
+|---|---|
+| 启动链路 | 编排入口、会话装配、宿主初始化 |
+| REPL / Query Loop | 运行时编排、状态管理、恢复机制 |
+| Tool Runtime | 工具连接、执行语义、结果归一化 |
+| Permission System | 安全控制、授权决策、执行隔离 |
+| Task / 多 Agent | 调度系统、执行体管理、后台任务承载 |
+| Extensibility | 扩展协议治理、外部能力接入 |
 
-### 7. Extensibility
-**外部可以动态多变，内部必须尽量收敛**。MCP tool → 本地 Tool，MCP prompt → Command。Skill 是轻量能力声明对象。
+## Claude Code、OpenClaw、Hermes 的位置差异
+- **OpenClaw**：用薄抽象把 Agent 跑起来 — 更轻、更薄、更强调显式控制流和工程确定性
+- **Claude Code**：用完整 runtime 把 Agent 跑稳 — 更重、更完整、更强调 runtime 收敛和系统寿命
+- **Hermes**：在跑稳基础上，让 Agent 越跑越强 — Self-Evolving：自动复盘生成 Skill、RL 训练闭环
+
+## 核心启示
+- 复杂度不会消失，只会从 prompt 层外溢到 runtime 层
+- 真正稳定的 Agent，不靠"模型一次答对"，而靠"运行时允许它长期执行、犯错、恢复、继续前进"
+- 多 Agent 的关键不是 prompt 分工设计得多聪明，而是任务系统能不能把执行分出去、跟回来、在失败时重新接住
 →
 
 ## 深度分析
-Claude Code 的七大模块设计，本质上是在回答一个问题：**当 Agent 系统从 Demo 走向生产，复杂度从哪里来，如何控制？**
-**入口与启动链路**的三段式设计，解决了"多启动模式长出多套语义"的问题。关键洞察是把**进程状态**（配置、telemetry、远程连接）和**交互状态**（工具面、权限模式、会话恢复）分开下沉——两者生命周期不同，混在一起就会互相污染。
-**REPL / UI Orchestration** 被定位为 runtime 的操作台，而不是消息展示壳。这意味着用户输入进入后，REPL 承担了上下文组装、能力面合并、约束准备的职责，query() 收到的是已经过语义清洗的执行上下文。这与简单的 ChatGPT-style REPL 有本质区别。
-**Query Loop** 的状态机设计（Pending/Running/Waiting/Done）把"上下文治理"和"失败恢复"从 prompt 层挪到了运行时层。Compact 机制解决上下文溢出，恢复机制解决错误/取消/超时——这些都是 prompt 层无法优雅处理的问题。
-**Tool Runtime** 四段式执行链（schema 校验 → 调用前准备 → permission 决策 → 执行 → 归一化结构化反馈）把工具从"野生函数"变成受控对象。关键判断：并发策略由工具语义决定，流式工具必须被认真建模。
-**Permission System** 的决策链（规则层 → 运行时自动判定 → 交互层 → 沙箱执行隔离）把逻辑授权和执行隔离分开。Auto mode 是"收紧危险能力后尽量自动"——这是一种有节制的自动化哲学。
-**Task / 多 Agent** 的核心洞察：子 Agent 是带邮箱的任务对象，前台/后台的差别是调度与可见性差异，而不是两套世界观。多 Agent 从 demo 走向系统，靠的是任务抽象能否把分出去的执行重新收回来。
-**Extensibility** 体现了"外部可以动态多变，内部必须尽量收敛"的原则：MCP tool → 本地 Tool，MCP prompt → Command，Skill 是轻量能力声明对象。
+Claude Code 的设计选择揭示了 Agent 系统从 demo 走向生产的关键转折点：**[!summary]当工具数量增长、交互模式复杂化后，模型能力不再是瓶颈，运行时架构成为决定性因素。**
+
+### 从"函数调用"到"状态机"的范式转移
+传统 Agent 框架将连续对话建模为函数调用序列——输入→推理→输出→结束。但 Claude Code 将其重构为显式状态机：每一次交互都是状态转换，支持取消、超时、错误恢复。这意味着 Agent 不是在"回答问题"，而是在"维持一个持续运行的执行上下文"。这一设计直接影响了系统的可靠性和容错能力。
+
+### Tool Runtime 的收敛价值
+Claude Code 将工具的"野生函数"属性转化为"带完整运行时语义的受控对象"——包括结果归一化、错误处理、并发控制、权限校验等横切关注点全部收敛在 Tool Runtime 层，而非散落在业务代码或 prompt 层。这一设计避免了复杂度外溢，使工具扩展不会导致系统不稳定。
+
+### 多 Agent 的本质是任务系统
+多 Agent 协作的难点不在于 prompt 分工设计，而在于**任务系统能否将分出去的执行重新收回来**——包括状态同步、结果汇聚、失败重接、后台可见性。Claude Code 通过统一的 Task 抽象来承载多 Agent 执行体，而非让各 Agent 独立运行后再尝试协调。
+
+### 稳定性来源于内部抽象的收敛
+MCP、Skill、Plugin 这些外部扩展机制可能在持续变化，但 Claude Code 的策略是：进入主系统后必须映射为统一抽象，阻止外部复杂性污染内部模型。这一原则保证了系统可以在外部生态快速迭代的同时维持核心逻辑的稳定。
 
 ## 实践启示
-1. **进程状态与交互状态必须分离**。当启动模式变多时，先问自己：新模式的运行语义是新建还是复用现有状态？答案决定了架构选择。
-2. **上下文治理和失败恢复属于运行时层**，不应该用 prompt engineering 来弥补。如果发现 prompt 里写了大量"如果出错请重试"的指令，说明运行时层缺失。
-3. **工具是带语义的对象**。不是函数签名，而是包含权限、并发策略、执行约束的完整运行时单元。设计工具接口时，同步/异步、流式/非流式、幂等性都是第一公民属性。
-4. **权限系统的本质是决策链，不是弹框**。每一个"是否允许"的判断，背后都应该有明确的规则层 → 自动判定 → 交互层的链条。弹框只是交互层的末端，隔离执行才是最后防线。
-5. **多 Agent 的核心挑战是任务回收，不是 prompt 分工**。子 Agent 的结果如何被主 Agent 理解、接纳、继续使用，决定了整个系统的上界。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-architecture-analysis.md)
+1. **优先投资运行时架构，而非模型选型**：当系统规模扩大后，运行时设计对稳定性的影响远超模型能力差异。
+2. **将横切关注点收敛到 Runtime 层**：权限、校验、并发、错误处理应统一在工具执行层，而非散落在 prompt 或业务代码。
+3. **多 Agent 系统的核心是任务回收机制**：设计时应优先考虑任务分派后的状态同步和结果汇聚能力，而非仅仅关注 prompt 分工。
+4. **外部扩展应经过统一抽象层再接入**：保持内部模型的稳定性是系统长期演化的前提。
+5. **连续运行场景下，状态机模型优于函数调用模型**：显式状态转换和恢复路径是多轮交互系统可靠性的基础。
 
 ## 相关实体
-- [Claude Code 设计原则与对照分析](../ch03/075-claude-code.html)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
+- [Claude Code Prompt 提示词体系源码解析](../ch09/060-claude-code-prompt.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.html)
 
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.html)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/156-claude-code-1.html)
+- [Claude Code 七大模块详解](../ch03/075-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
+- [Claude Code 可控性：软规则无法变成硬约束](../ch03/075-claude-code.html)
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
+- [AI Native 时代 —— 研发组织何去何从](../ch05/019-ai-native.html)
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch03/090-hermes-agent.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/472-claude-code-harness-deep-understanding.html)
+- [AutoResearch：多 Agent 自动化软件开发](../ch03/045-agent.html)
+- [Agent Harness 架构](../ch05/039-agent-harness.html)
+- [Claude Code 源码核心机制详解](../ch03/075-claude-code.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/075-claude-code.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.html)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/018-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
+- [Agent 原理、架构与工程实践](../ch03/045-agent.html)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---
 

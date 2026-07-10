@@ -81,11 +81,11 @@ Aris Tsakpinis is a Senior Specialist Solutions Architect for Generative AI focu
 在 AgentCore Gateway 中配置 Cedar 策略引擎，拦截所有工具调用请求进行策略评估。每个工具通过 manifest 声明其归属（shared 或 application-specific）、认证方式和合规元数据，由 CI/CD pipeline 在 merge 时完成注册和验证。这种机制确保：即使攻击者通过 agent manipulation 尝试绕过，Policy 层仍会在 tool invocation 层面拒绝未授权操作，实现"纵深防御"。
 
 ## 相关实体
-- [Amazon Bedrock Agentic Payments Guardrails](../ch11/152-amazon-bedrock.html)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/512-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock Agentic Payments Guardrails](../ch11/154-amazon-bedrock.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/518-amazon-bedrock-agentcore.html)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/030-ai-agent.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/512-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/369-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/518-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/370-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 

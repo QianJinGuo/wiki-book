@@ -61,9 +61,9 @@ Zig 对 assert 的实现（基于 `unreachable`）揭示了一个重要的语言
 assert 和 fuzzing 的协同效应在实际项目中需要主动构建。实践中应该在所有「外部输入处理」「解析逻辑」「状态机转换」等高风险路径上同时放置 assert 和 fuzzing 测试。Fuzzer 使用这些 assert 作为 oracle：当 fuzzer 生成的输入触发了 assert failure 时，它自动获得了该输入违反程序契约的证明。进一步，可以在 CI pipeline 中将 fuzzing 作为持续运行时 assertion 验证的一部分，利用 fuzzing 的随机输入发现 assert 未覆盖的边界情况。这种做法将 assert 从静态的防御代码转变为 fuzzing 动态探索的锚点。
 
 ## 相关实体
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/939-20.html)
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/950-20.html)
 - [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/081-ai.html)
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/939-20.html)
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/950-20.html)
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/006-build-agents-not-pipelines.html)
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md)
 

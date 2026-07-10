@@ -3,22 +3,6 @@ source_url: "https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-
 ingested: 2026-06-26
 sha256: b6a9f273332fa453
 ---
-sha256: bdcbd05dbad37278
----
-title: "The future of Siri, or: why private inference isn't private enough"
-description: "Matthew Green (Cryptography Engineering) 2026-06-09 对 Apple Siri AI + Private Cloud Compute 架构的批判性分析：private inference 不能阻止 search/agent 行为导致的数据外流，三个对抗者 (operator / remote prompt injection / government) 都不受 cryptographic 保护。"
-source_url: "https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/"
-author: "Matthew Green"
-publish_date: 2026-06-09
-ingested: 2026-06-10
-sha256: "0c1b0da3e02f449511a95ab1a314819bdc692388717afc0317f964fe83ad9d0f"
-tags: [apple, siri, private-inference, private-cloud-compute, cryptography, security, agent-security, lethal-trifecta, prompt-injection, matthew-green]
-type: article
-review_value: 8
-review_confidence: 8
-review_recommendation: strong
-review_stars: 4
----
 
 # The future of Siri, or: why private inference isn't private enough
 

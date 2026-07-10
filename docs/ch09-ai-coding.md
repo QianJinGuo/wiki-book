@@ -2,7 +2,7 @@
 
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
-> 本章收录 **164 篇**实体，按深度递增排列。
+> 本章收录 **168 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 8 |
-| ⭐⭐ 工程师 | 需编程基础 | 151 |
+| ⭐⭐ 工程师 | 需编程基础 | 155 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -192,10 +192,14 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [155. Codex 五层架构：记忆/知识/护栏/委派/分发](ch09/155-codex)
 - [156. Claude Code 前 1% 用户指南：系统级架构与全栈工程化实践](ch09/156-claude-code-1)
 - [157. CoDA-Bench：Code Agent 数据智能基准](ch09/157-coda-bench-code-agent)
-- [158. Thariq（Claude Code工程师）的Fable 5使用心法：地图≠领土，用未知消除法突破模型瓶颈](ch09/158-thariq-claude-code-fable-5)
-- [159. Claude Code /checkup 功能：清理 Skills/MCP 提升性能](ch09/159-claude-code-checkup-skills-mcp)
-- [160. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/160-fastcontext-coding-agent)
-- [161. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/161-deepseek-visual-primitives)
-- [162. AI Coding Agent Token 成本控制五层模型](ch09/162-ai-coding-agent-token)
-- [163. Dockerless: 免环境补丁验证器](ch09/163-dockerless)
-- [164. GLM-5 Scaling Pain 推理复盘](ch09/164-glm-5-scaling-pain)
+- [158. Code is cheap. Don't write any.——AI Native，程序员如何提升五倍coding效率](ch09/158-code-is-cheap-don-t-write-any-ai-native-coding)
+- [159. Meta Muse Spark 1.1 — 匹敌 Opus 4.8 的 Agentic/Coding 模型](ch09/159-meta-muse-spark-1-1-opus-4-8-agentic-coding)
+- [160. QoderWork Skills 开发实践：从传统数科到 AI 数科的转型探索](ch09/160-qoderwork-skills-ai)
+- [161. Thariq（Claude Code工程师）的Fable 5使用心法：地图≠领土，用未知消除法突破模型瓶颈](ch09/161-thariq-claude-code-fable-5)
+- [162. 我把Seed 2.1 Pro塞进Claude Code，让它修我自己产品的bug](ch09/162-seed-2-1-pro-claude-code-bug)
+- [163. Claude Code /checkup 功能：清理 Skills/MCP 提升性能](ch09/163-claude-code-checkup-skills-mcp)
+- [164. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/164-fastcontext-coding-agent)
+- [165. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/165-deepseek-visual-primitives)
+- [166. AI Coding Agent Token 成本控制五层模型](ch09/166-ai-coding-agent-token)
+- [167. Dockerless: 免环境补丁验证器](ch09/167-dockerless)
+- [168. GLM-5 Scaling Pain 推理复盘](ch09/168-glm-5-scaling-pain)

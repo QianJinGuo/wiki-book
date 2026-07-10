@@ -30,15 +30,15 @@ source_url: https://mp.weixin.qq.com/s/JFvYo9RCn9Xm8ilx1Chd6g
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/383-agent-skills.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/384-agent-skills.html)
 - [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/045-agent.html)
 - [吴恩达：AI 将最先杀死前端](../ch05/081-ai.html)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/873-anthropic.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/884-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/873-anthropic.html)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/884-anthropic.html)
 - [你写的 Skill，及格了吗？](ch04/266-skill.html)
-- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/472-claude.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/498-claude-managed-agents.html)
+- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/473-claude.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/504-claude-managed-agents.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/075-claude-code.html)
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
 - [天猫新品营销技术团队AI编码实战指南（上）](../ch05/081-ai.html)
@@ -50,10 +50,10 @@ source_url: https://mp.weixin.qq.com/s/JFvYo9RCn9Xm8ilx1Chd6g
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/090-hermes-agent.html)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/018-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/045-agent.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/451-agentrun.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/003-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/050-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/214-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/222-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/050-harness-engineering.html)
 
 ---
