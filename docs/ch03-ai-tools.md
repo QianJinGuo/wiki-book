@@ -2,7 +2,7 @@
 
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
 
-> 本章收录 **131 篇**实体，按深度递增排列。
+> 本章收录 **132 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 49 |
-| ⭐⭐ 工程师 | 需编程基础 | 81 |
+| ⭐⭐ 工程师 | 需编程基础 | 82 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
 ---
@@ -143,25 +143,26 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [107. Enterprise AI Agent Development Tools (n8n Report 2026)](ch03/107-enterprise-ai-agent-development-tools-n8n-report-2026)
 - [108. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/108-microsoft-agent-framework-response-format-response-value)
 - [109. Fed Data Shows Cash Use Holding Steady](ch03/109-fed-data-shows-cash-use-holding-steady)
-- [110. Tether launches developer grants program for local-first AI and payments infrastructure](ch03/110-tether-launches-developer-grants-program-for-local-first-ai)
-- [111. 升职那天我才明白自己是来填坑的](ch03/111-page-111)
-- [112. 我用Claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](ch03/112-claude-30)
-- [113. SEO is a product, AEO is brand](ch03/113-seo-is-a-product-aeo-is-brand)
-- [114. Activity-Focused Design](ch03/114-activity-focused-design)
-- [115. Google Ads Expanded Experiment Support in v24.1: What Changed for AI Max, Video, Demand Gen, and Performance Max](ch03/115-google-ads-expanded-experiment-support-in-v24-1-what-change)
-- [116. Plaid's Effects on the Financial Ecosystem](ch03/116-plaid-s-effects-on-the-financial-ecosystem)
-- [117. AutoCLI](ch03/117-autocli)
-- [118. Designers are a rare breed](ch03/118-designers-are-a-rare-breed)
-- [119. Edge AI Networking — Wi-Fi 7/8 Convergence Analysis](ch03/119-edge-ai-networking-wi-fi-7-8-convergence-analysis)
-- [120. Spotify Logo Gets a Makeover, Turns Into a Disco Ball](ch03/120-spotify-logo-gets-a-makeover-turns-into-a-disco-ball)
-- [121. Fintech Engineering Handbook](ch03/121-fintech-engineering-handbook)
-- [122. Icon Pack Websites Designers Should Bookmark](ch03/122-icon-pack-websites-designers-should-bookmark)
-- [123. Yum Brands' tech chief on building its AI backbone](ch03/123-yum-brands-tech-chief-on-building-its-ai-backbone)
-- [124. 五一活动来啦](ch03/124-page-124)
-- [125. GRC Now | Free virtual event | 8 CPEs](ch03/125-grc-now-free-virtual-event-8-cpes)
-- [126. Langsmith Evaluation Concepts](ch03/126-langsmith-evaluation-concepts)
-- [127. AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局](ch03/127-ai-amazon-michael-morton-x-ben-thompson-ai)
-- [128. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/128-bedrock-agentcore-pool-model-multi-tenancy)
-- [129. Lightfield Skills 系统介绍](ch03/129-lightfield-skills)
-- [130. Karpathy LLM Wiki 搭建实战——Obsidian + AGENTS.md 实现三层架构与三大操作](ch03/130-karpathy-llm-wiki-obsidian-agents-md)
-- [131. Who Winning Enterprise AI Now](ch03/131-who-winning-enterprise-ai-now)
+- [110. 零代码快速体验 Amazon Quick 操作飞书/Lark](ch03/110-amazon-quick-lark)
+- [111. Tether launches developer grants program for local-first AI and payments infrastructure](ch03/111-tether-launches-developer-grants-program-for-local-first-ai)
+- [112. 升职那天我才明白自己是来填坑的](ch03/112-page-112)
+- [113. 我用Claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](ch03/113-claude-30)
+- [114. SEO is a product, AEO is brand](ch03/114-seo-is-a-product-aeo-is-brand)
+- [115. Activity-Focused Design](ch03/115-activity-focused-design)
+- [116. Google Ads Expanded Experiment Support in v24.1: What Changed for AI Max, Video, Demand Gen, and Performance Max](ch03/116-google-ads-expanded-experiment-support-in-v24-1-what-change)
+- [117. Plaid's Effects on the Financial Ecosystem](ch03/117-plaid-s-effects-on-the-financial-ecosystem)
+- [118. AutoCLI](ch03/118-autocli)
+- [119. Designers are a rare breed](ch03/119-designers-are-a-rare-breed)
+- [120. Edge AI Networking — Wi-Fi 7/8 Convergence Analysis](ch03/120-edge-ai-networking-wi-fi-7-8-convergence-analysis)
+- [121. Spotify Logo Gets a Makeover, Turns Into a Disco Ball](ch03/121-spotify-logo-gets-a-makeover-turns-into-a-disco-ball)
+- [122. Fintech Engineering Handbook](ch03/122-fintech-engineering-handbook)
+- [123. Icon Pack Websites Designers Should Bookmark](ch03/123-icon-pack-websites-designers-should-bookmark)
+- [124. Yum Brands' tech chief on building its AI backbone](ch03/124-yum-brands-tech-chief-on-building-its-ai-backbone)
+- [125. 五一活动来啦](ch03/125-page-125)
+- [126. GRC Now | Free virtual event | 8 CPEs](ch03/126-grc-now-free-virtual-event-8-cpes)
+- [127. Langsmith Evaluation Concepts](ch03/127-langsmith-evaluation-concepts)
+- [128. AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局](ch03/128-ai-amazon-michael-morton-x-ben-thompson-ai)
+- [129. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/129-bedrock-agentcore-pool-model-multi-tenancy)
+- [130. Lightfield Skills 系统介绍](ch03/130-lightfield-skills)
+- [131. Karpathy LLM Wiki 搭建实战——Obsidian + AGENTS.md 实现三层架构与三大操作](ch03/131-karpathy-llm-wiki-obsidian-agents-md)
+- [132. Who Winning Enterprise AI Now](ch03/132-who-winning-enterprise-ai-now)

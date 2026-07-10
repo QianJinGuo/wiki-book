@@ -30,7 +30,7 @@ Vibe Coding 的不确定性来源于意图到代码的"单步映射"。Spec-Driv
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[场景营销前端 AI Coding — 从问题到方案](ch05/092-ai-coding.html)。 相关主题通过 [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[场景营销前端 AI Coding — 从问题到方案](ch05/093-ai-coding.html)。 相关主题通过 [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -42,9 +42,9 @@ Vibe Coding 的不确定性来源于意图到代码的"单步映射"。Spec-Driv
 
 ## 相关实体
 
-- [场景营销前端 AI Coding — 从问题到方案](ch05/092-ai-coding.html)
+- [场景营销前端 AI Coding — 从问题到方案](ch05/093-ai-coding.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
-- [AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch05/092-ai-coding.html)
+- [AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch05/093-ai-coding.html)
 - [Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch05/050-harness-engineering.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/050-harness-engineering.html)
 

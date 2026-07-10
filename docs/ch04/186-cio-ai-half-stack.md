@@ -9,7 +9,7 @@
 - [Skill Development Guide Aliyun 2026](ch04/266-skill.html)
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/018-harness.html)
 - [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md)
-- [Aliyun Agentrun](ch04/451-agentrun.html)
+- [Aliyun Agentrun](ch04/003-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-cio-ai-rd-efficiency.md)
 

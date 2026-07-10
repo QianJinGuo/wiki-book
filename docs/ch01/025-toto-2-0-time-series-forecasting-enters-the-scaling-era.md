@@ -17,7 +17,7 @@
 
 - [时间序列预测数据增强方法](https://github.com/QianJinGuo/wiki/blob/main/entities/time-series-forecasting-augmentation.md)
 - [CEOs of the classroom: Why principals are the key to the AI era](../ch05/081-ai.html)
-- [How Superset built the IDE for AI agents on Vercel](ch01/067-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [How Superset built the IDE for AI agents on Vercel](ch01/070-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 
 ## 深度分析
 **时间序列基础模型的"BERT 时刻"已经到来**
