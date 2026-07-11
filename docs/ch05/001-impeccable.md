@@ -102,7 +102,7 @@ npx impeccable detect --json .
 ## 相关对照
 - [Agent Skill 编写指南](../ch04/264-agent-skill.html) —— 通用 skill 格式 + 渐进式披露
 - [Agent Harness 架构](ch05/039-agent-harness.html) —— 7 层 harness 模型
-- [Agent Skills 综合调研](../ch04/384-agent-skills.html) —— skill 系统全景
+- [Agent Skills 综合调研](../ch04/385-agent-skills.html) —— skill 系统全景
 - [Skills Refiner 设计质量评估框架](../ch03/069-skills.html)
 - [Agentic Design System 演化](../ch01/011-agentic-design-system-from-chatbot-to-orchestration.html)
 
@@ -159,8 +159,8 @@ npx impeccable detect --json .
 ## 关联阅读
 - [Agent Skill 编写指南](../ch04/264-agent-skill.html) —— skill 格式规范与渐进式披露机制
 - [Karpathy Vibe Coding → Agentic Engineering](../ch04/235-agentic.html) —— Vibe Coding 原始定义与 Software 3.0 演化
-- [Claude Design Skill](../ch01/1087-claude-design-skill.html) —— Anthropic 的设计 skill 实践对比
-- [前端 Design Skills 全景对比](../ch01/690-skills-anthropic-openai-comparison-frontend-design.html) —— Anthropic vs OpenAI 设计 skill 生态比较
+- [Claude Design Skill](../ch01/1088-claude-design-skill.html) —— Anthropic 的设计 skill 实践对比
+- [前端 Design Skills 全景对比](../ch01/691-skills-anthropic-openai-comparison-frontend-design.html) —— Anthropic vs OpenAI 设计 skill 生态比较
 
 ---
 

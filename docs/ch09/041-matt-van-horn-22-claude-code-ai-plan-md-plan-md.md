@@ -78,7 +78,7 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 ## 与现有实体的关系
 
 - **与 [Claude Code 1 周年回顾](../ch03/075-claude-code.html)** 互补：1 周年是时间线 + 团队视角；本文是开发者工作流哲学
-- **与 [Harness Engineering 核心模式](../ch05/050-harness-engineering.html)** 互补：CE plan.md 循环是 harness engineering 的具体实现
+- **与 [Harness Engineering 核心模式](../ch05/066-harness-engineering.html)** 互补：CE plan.md 循环是 harness engineering 的具体实现
 - **与 [工作流 Skill 模式](../ch04/266-skill.html)** 呼应：「任何做超过 2 次的事 → 做成技能」是 SkillOS 哲学的实战版
 - **与 [Hermes 自进化](../ch03/090-hermes-agent.html)** 平行：Matt 用 OpenClaw + Hermes 跑远程工作
 - **与 [Agent 六机制](../ch03/045-agent.html)** 呼应：「先 plan 后 work」是六机制中"计划-执行分离"的具体实现
@@ -101,7 +101,7 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 
 ### 技术要点："让 AI 写 plan.md 但不读 plan.md"本质是委托-代理最优分离
 
-这个看似反直觉的做法有深刻的工程逻辑：plan.md 是 Agent 的作业而非人类的阅读材料。人类只需要扫一眼标题判断方向，然后 /ce-work 内联提问 TLDR/eli5。这意味着人类扮演的是**评审者而非消费者**——计划的生产者和计划的执行者是同一个 Agent，但人类只消费计划的摘要而非完整内容。这与 [Harness Engineering Core Patterns Claude Code](../ch05/050-harness-engineering.html) 中描述的 Harness Engineering 原则一致：人类定义验收标准，Agent 负责实现路径。
+这个看似反直觉的做法有深刻的工程逻辑：plan.md 是 Agent 的作业而非人类的阅读材料。人类只需要扫一眼标题判断方向，然后 /ce-work 内联提问 TLDR/eli5。这意味着人类扮演的是**评审者而非消费者**——计划的生产者和计划的执行者是同一个 Agent，但人类只消费计划的摘要而非完整内容。这与 [Harness Engineering Core Patterns Claude Code](../ch05/066-harness-engineering.html) 中描述的 Harness Engineering 原则一致：人类定义验收标准，Agent 负责实现路径。
 
 ### 实践价值：cmux 6 标签页并行 + 声音钩子是分布式认知的物理实现
 
@@ -113,7 +113,7 @@ Agent Cookie（将真实浏览器会话交给 CLI）解决了 AI Agent 落地最
 
 ### 技术判断：成瘾是真实风险，而非边缘警告
 
-Matt 坦诚提到"成瘾是真实问题，不是休息"，这个判断值得认真对待。AI coding 的反馈循环（快速产出 → 即时满足 → 更大目标）在神经机制上与游戏/社交媒体类似，但产出的社会价值完全不同。这不是道德说教，而是可持续性问题。当"努力工作"变成了 Agent 代为执行、人类负责批准的状态时，职业身份的瓦解可能比工作效率的提升来得更快。这与 [Agentic Ai System Architecture Harness Skill Mcp](../ch05/079-harness-skill.html) 中讨论的"AI 影子采纳率"问题（77.55% 管理者无法分辨 AI 使用）形成微观-宏观对应：成瘾是个人层面的影子采纳，影子采纳是组织层面的成瘾。
+Matt 坦诚提到"成瘾是真实问题，不是休息"，这个判断值得认真对待。AI coding 的反馈循环（快速产出 → 即时满足 → 更大目标）在神经机制上与游戏/社交媒体类似，但产出的社会价值完全不同。这不是道德说教，而是可持续性问题。当"努力工作"变成了 Agent 代为执行、人类负责批准的状态时，职业身份的瓦解可能比工作效率的提升来得更快。这与 [Agentic Ai System Architecture Harness Skill Mcp](../ch05/080-harness-skill.html) 中讨论的"AI 影子采纳率"问题（77.55% 管理者无法分辨 AI 使用）形成微观-宏观对应：成瘾是个人层面的影子采纳，影子采纳是组织层面的成瘾。
 
 ## 实践启示
 

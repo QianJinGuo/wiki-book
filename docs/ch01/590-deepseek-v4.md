@@ -45,11 +45,11 @@ DeepSeek-V4选择在同一篇论文中同时发布多个相互依赖的技术贡
 ## 标签
 - source/wechat
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/670-deepseek-v4.html)
-- [ds4c deepseek v4 antirez](ch01/537-ds4c-deepseek-v4-antirez.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/670-deepseek-v4.html)
-- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](ch01/670-deepseek-v4.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1008-deepseek.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/318-deepseek-v4.html)
+- [ds4c deepseek v4 antirez](ch01/536-ds4c-deepseek-v4-antirez.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/318-deepseek-v4.html)
+- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](ch01/318-deepseek-v4.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1009-deepseek.html)
 
 ---
 

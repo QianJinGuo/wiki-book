@@ -610,7 +610,7 @@ class RecoveryManager:
 - [Code As Agent Harness Survey](../ch09/052-code-as-agent-harness.html)
 - [Agent Harness Architecture](../ch05/039-agent-harness.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/018-harness.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/079-harness-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/080-harness-skill.html)
 - [Harness Production Agent Engineering Deficit](../ch05/018-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-harness-architecture-design-production-guide.md)（主源）
@@ -618,7 +618,7 @@ class RecoveryManager:
 → [Claude Code 12 个设计模式](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-agentic-harness-design-patterns.md)
 → [ETCLOVG Survey (CMU 2026)](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-harness-engineering-survey-2026.md)
 
-- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](ch04/560-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
+- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](ch04/562-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
 - [k-dense — the model is no longer the bottleneck](ch04/165-k-dense-the-model-is-no-longer-the-bottleneck.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

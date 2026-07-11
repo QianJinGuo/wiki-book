@@ -23,11 +23,11 @@
 
 ## 关联阅读
 ## 相关实体
-- [Why Im Leaving Github For Forgejo](ch01/786-github.html)
+- [Why Im Leaving Github For Forgejo](ch01/862-github.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/032-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](ch01/898-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](ch01/899-microsoft-for-startups-microsoft.html)
 - [Running An Ai Native Engineering Org](ch01/049-running-an-ai-native-engineering-org.html)
-- [White House Federal Identity Security Ai](../ch05/081-ai.html)
+- [White House Federal Identity Security Ai](../ch05/082-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/products-are-out-brains-are-in.md)
 
