@@ -24,7 +24,7 @@ CDK Mixins 的核心价值在于**解耦抽象与实现**，彻底解决了 CDK 
 - [Announcing Aws Cdk Mixins Composable Abstractions For Aws Re](../ch11/016-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.html)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](../ch11/012-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 - [Introducing Claude Platform On Aws](ch01/146-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/136-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/137-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11/012-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)

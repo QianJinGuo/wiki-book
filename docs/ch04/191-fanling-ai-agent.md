@@ -13,8 +13,8 @@
 ## 相关实体
 - [Acker Agent Evolution Three Routes Convergence](../ch03/045-agent.html)
 - [Agent Context Management Architecture Patterns](../ch03/045-agent.html)
-- [Openclaw Prompt Context Harness](../ch11/222-openclaw.html)
-- [Harness Engineering Framework](../ch05/050-harness-engineering.html)
+- [Openclaw Prompt Context Harness](../ch11/225-openclaw.html)
+- [Harness Engineering Framework](../ch05/066-harness-engineering.html)
 - [Agent Harness 12 Components 7 Decisions](../ch05/039-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fanling-company-as-agent-ai-org-reflection-v2.md)

@@ -176,9 +176,9 @@ Ettin Reranker Family 的 **六档参数量 + SoTA 性能 + 长上下文 + Flash
 ## 相关实体
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/075-claude-code.html)
 - [Claude Code Openclaw Memory Comparison](../ch03/075-claude-code.html)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/050-harness-engineering.html)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/066-harness-engineering.html)
 - [Skill System Design Three Way Comparison](../ch04/266-skill.html)
-- [Openclaw Agent Loop Design Patterns](../ch01/1121-openclaw-agent.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1122-openclaw-agent.html)
 
 → [原文存档：Ettin Reranker Family](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ettin-reranker-family.md)
 → [原文存档：Claude Code vs OpenClaw 记忆系统对比](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-openclaw-memory-comparison.md)

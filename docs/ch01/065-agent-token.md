@@ -33,7 +33,7 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/081-ai.html)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/082-ai.html)
 - [我给Hermes配了4个Agent，真正有用的是这些事](../ch03/045-agent.html)
 - [强化学习如何不用奖励模型提高通用问题推理能力](https://github.com/QianJinGuo/wiki/blob/main/entities/强化学习如何不用奖励模型提高通用问题推理能力.md)
 

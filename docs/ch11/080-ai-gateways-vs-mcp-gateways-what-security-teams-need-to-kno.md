@@ -59,9 +59,9 @@ Kong 等主流平台已经开始将 MCP 网关功能整合进现有 AI 网关产
 
 ## 关联阅读
 - [Securing AI Agents: How AWS and Cisco AI Defense Scale MCP and A2A](../ch04/030-ai-agent.html) — MCP 和 A2A 协议在企业级部署中的规模实践
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/423-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — 工具投毒作为企业代理安全的核心缺陷
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04/402-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox 的 AI 代理安全测试框架
-- [AgentCore Runtime 部署 Apache Doris MCP Server](ch11/162-apache-doris-mcp-server-quick-suite-ai.html) — MCP Server 部署实践
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/425-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — 工具投毒作为企业代理安全的核心缺陷
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04/404-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox 的 AI 代理安全测试框架
+- [AgentCore Runtime 部署 Apache Doris MCP Server](ch11/164-apache-doris-mcp-server-quick-suite-ai.html) — MCP Server 部署实践
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
 
 ---

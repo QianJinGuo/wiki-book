@@ -24,8 +24,8 @@
 > "**写任何一行代码之前，先让人类和 AI 就'要做什么'达成明确一致，并把这份共识记录成结构化的规范文档。**"
 
 ## 相关实体
-- [Openspec 四步法深度复盘 流程完整不等于代码正确](ch05/048-openspec.html)
-- [Spec Kit Bmad Sdd Practice Yexiaocha](../ch01/1091-spec.html)
+- [Openspec 四步法深度复盘 流程完整不等于代码正确](ch05/049-openspec.html)
+- [Spec Kit Bmad Sdd Practice Yexiaocha](../ch01/1092-spec.html)
 - [民生银行基于规格驱动开发Sdd的 Codeagent 私域研发探索与实践](../ch03/045-agent.html)
 - [24H Worker Agent](../ch03/045-agent.html)
 - [十年老技术开发的 Ai Agent 探索之路 V2](../ch04/030-ai-agent.html)

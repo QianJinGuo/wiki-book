@@ -58,7 +58,7 @@ Fable 5 的 megakernel 代表了算子融合的终极形态。传统优化工具
 
 ### 3. 个体开发者与大型 AI Lab 的「能力倒挂」
 
-Fable 5（作为 Claude Mythos 的「安全版本」）在 GPU 内核优化上超越了 Claude Opus 4.8（14.4×）和 GPT-5.5（4.34×），这展示了 LLM 推理优化的「democratization」趋势。高级性能优化不再局限于大公司的内核工程师团队，具备开放生态的模型（如 Fable 5）允许个体开发者和研究者在专业领域实现 SOTA 级别的加速。这与 [Agent Teams 架构](ch01/397-claude-code-agent-teams.html) 中的「大团队 vs 小团队」竞争格局形成对称呼应。
+Fable 5（作为 Claude Mythos 的「安全版本」）在 GPU 内核优化上超越了 Claude Opus 4.8（14.4×）和 GPT-5.5（4.34×），这展示了 LLM 推理优化的「democratization」趋势。高级性能优化不再局限于大公司的内核工程师团队，具备开放生态的模型（如 Fable 5）允许个体开发者和研究者在专业领域实现 SOTA 级别的加速。这与 [Agent Teams 架构](ch01/396-claude-code-agent-teams.html) 中的「大团队 vs 小团队」竞争格局形成对称呼应。
 
 ### 4. 「一半狂奔，一半敬畏」的行业情绪
 

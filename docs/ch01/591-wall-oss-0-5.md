@@ -80,7 +80,7 @@ DMuon 将 Muon 优化器的开销降低 100 倍，使得原本理论上优越但
 - [Tsinghua Self Evolving Skill Agent](../ch04/145-skill-agent.html)
 - [直播预约 数据引擎具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
 - [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/045-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/058-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 
 ---
 
