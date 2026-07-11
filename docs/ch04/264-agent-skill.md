@@ -143,7 +143,7 @@ description 字段的编写应该围绕"在什么情况下 Agent 应该考虑这
 - [Agent Skill 进阶模式与治理](ch04/264-agent-skill.html)
 
 - [Agent Skill 评估与迭代](ch04/264-agent-skill.html)
-- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](ch04/422-skillsieve-agent-skill.html)
+- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](ch04/424-skillsieve-agent-skill.html)
 
 ---
 

@@ -90,7 +90,7 @@
 - 反幻觉规则：`"Never reshape evidence to fit earlier assumptions"`
 
 ## Anthropic 14 种实现模式（5 大类）
-> 详细解读参见 [Anthropic 官方 14 种设计模式](../ch01/884-anthropic.html)
+> 详细解读参见 [Anthropic 官方 14 种设计模式](../ch01/885-anthropic.html)
 
 ### 发现与选择（2 模式）
 | 模式 | 核心问题 | 关键做法 |

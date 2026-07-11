@@ -152,7 +152,7 @@
 - MAC = **工程师个人 Harness 框架**（20 个 Skills + Hooks / Planning + Verify 两个节点）
 - 共同点：都强调"用机制保证关键事件发生"（Hooks = 高德的 Self-Healing + 监督 Agent 思想）
 
-### vs [Claude Code Dynamic Workflows](../ch09/082-claude-code-dynamic-workflows.html)
+### vs [Claude Code Dynamic Workflows](../ch09/083-claude-code-dynamic-workflows.html)
 - Dynamic Workflows = **运行时动态生成 Harness**（Anthropic 官方功能，claude 现场写 workflow）
 - MAC = **预定义 Skills + 触发式 Hooks**（工程师自定义 SOP + 自动化机制）
 - 共同点：都强调"流程 = 数据"——workflow 是 skill 文件，hooks 是 code
@@ -191,7 +191,7 @@
 - [晓斌 Agent-Oriented Infra](../ch03/045-agent.html) —— 哲学框架
 - [wow-harness v3](ch05/018-harness.html) —— 跨 session 治理
 - [高德 AI-Native 生产线](ch05/019-ai-native.html) —— 企业级 R&D 生产线
-- [Claude Code Dynamic Workflows](../ch09/082-claude-code-dynamic-workflows.html) —— 动态工作流
+- [Claude Code Dynamic Workflows](../ch09/083-claude-code-dynamic-workflows.html) —— 动态工作流
 - [Agent Harness 架构](ch05/039-agent-harness.html) —— 7 层模型
 - [Rein](../ch03/045-agent.html) —— 单 agent 架构
 - [Kimi Work](../ch01/538-codex.html) —— 本地 Agent

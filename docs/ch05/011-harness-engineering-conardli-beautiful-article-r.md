@@ -293,7 +293,7 @@ Phase 8  Delivery             ★Checkpoint 3 必须停 → 交付 article.html
 
 ### 与 wiki 既有内容的关系
 
-- **与 [Harness Engineering 实体](ch05/050-harness-engineering.html)（290 行 5 source merged）**：Harness 理论 + 5 制品 + 3 阵营 + 5 原则；本 ConardLi 实践 = Harness 理论的**工程实现**
+- **与 [Harness Engineering 实体](ch05/066-harness-engineering.html)（290 行 5 source merged）**：Harness 理论 + 5 制品 + 3 阵营 + 5 原则；本 ConardLi 实践 = Harness 理论的**工程实现**
 - **与 [古法程序员 spec 写作](../ch01/538-codex.html)（2026-05-25）**：古法程序员 = spec 写作的通用框架（rule/docs/skill 三类目录 + skill 三层 + gate 四态 + edge 三种）；Beautiful Article = skill 三层架构的**特化应用**（编排层 + 阶段层 Phase 0-8 + 原子层 component-policy/raw-policy）；Beautiful Article 的 gate = ConardLi 9 套 Checkpoint + 三视角终审
 
 ---

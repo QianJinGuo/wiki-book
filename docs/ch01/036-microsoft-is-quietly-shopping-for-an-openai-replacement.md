@@ -45,7 +45,7 @@ Microsoft 在 OpenAI 身上押注 130 亿美元后寻求替代方案，这一动
 
 ## 相关实体
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-is-quietly-shopping-for-an-openai-replac.md)
-- [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](ch01/450-openai.html)- [anthropic](ch01/884-anthropic.html)- [inference cost at scale with napkin math](ch01/950-20.html)- [olmo-eval: an evaluation workbench for the model development](ch01/801-olmo-eval-an-evaluation-workbench-for-the-model-development.html)- [why use app-level auth when every database has auth? (splunk](ch01/169-why-use-app-level-auth-when-every-database-has-auth-splunk.html)
+- [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](ch01/449-openai.html)- [anthropic](ch01/885-anthropic.html)- [inference cost at scale with napkin math](ch01/951-20.html)- [olmo-eval: an evaluation workbench for the model development](ch01/802-olmo-eval-an-evaluation-workbench-for-the-model-development.html)- [why use app-level auth when every database has auth? (splunk](ch01/169-why-use-app-level-auth-when-every-database-has-auth-splunk.html)
 
 ---
 
