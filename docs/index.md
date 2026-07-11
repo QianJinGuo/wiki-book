@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3239 篇一手 AI 材料系统编撰的开源读物。
+> 全球第一部基于 3252 篇一手 AI 材料系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,17 +10,17 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1463 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1137 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 458 篇 |
-| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 140 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1465 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1140 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 460 篇 |
+| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 146 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 41 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1294 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1296 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ Backpressure is all you need
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ 快手首个打工人Agent
-  - ... 共 **1294** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1296** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 37 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **132** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1463 篇**
+> 📖 **本篇共 1465 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 668 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 669 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,9 +76,9 @@
   - ⭐ Build agents, not pipelines
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
-  - ... 共 **668** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **669** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 122 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 123 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
@@ -89,7 +89,7 @@
   - ⭐⭐ QQ音乐 Harness Engineering 实践（大仓多服务场景）
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
-  - ... 共 **122** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **123** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 44 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -117,18 +117,18 @@
   - ⭐⭐ 重新定义Skill开发：保姆级教程&一站式开发助手
   - ... 共 **80** 篇 → [完整章节](ch07-skill-tool.md)
 
-### [Ch08 多 Agent 协作](ch08-multi-agent.md) — 26 篇
+### [Ch08 多 Agent 协作](ch08-multi-agent.md) — 27 篇
 > 从单兵到团队：编排、通信、治理
 
   - ⭐ Hermes+Kimi K2.6 多Agent军团实战教程
   - ⭐ OpenClaw 多智能体团队搭建实战经验
   - ⭐⭐ Oz Multi-Harness Cloud Agent Orchestration (Warp)
   - ⭐⭐ Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
+  - ⭐⭐ ICML 2026 HOI-Edit & SCPE — 图像编辑的认知评测基准与智能体自纠错框架
   - ⭐⭐ 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
   - ⭐⭐ 微软 Agent Framework 全栈指南（Python）
   - ⭐⭐⭐ Claude Code Dynamic Workflows 多Agent编排
-  - ⭐⭐⭐ JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiu
-  - ... 共 **26** 篇 → [完整章节](ch08-multi-agent.md)
+  - ... 共 **27** 篇 → [完整章节](ch08-multi-agent.md)
 
 ### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 168 篇
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
@@ -156,13 +156,13 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **29** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1137 篇**
+> 📖 **本篇共 1140 篇**
 
 ---
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 280 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 281 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
@@ -173,9 +173,9 @@
   - ⭐ Data Projects: Managing Data Assets at Netflix Scale
   - ⭐⭐ 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
   - ⭐⭐ 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
-  - ... 共 **280** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **281** 篇 → [完整章节](ch11-infra.md)
 
-### [Ch12 安全与治理](ch12-security.md) — 124 篇
+### [Ch12 安全与治理](ch12-security.md) — 125 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
 
   - ⭐ CISA urges critical infrastructure firms to 'fortify' before it's too 
@@ -186,7 +186,7 @@
   - ⭐ Offensive Security Blog
   - ⭐ Sandworm Hackers Shift From IT Breaches to Critical OT Targets
   - ⭐ 5 Things to Know about the CLARITY Act
-  - ... 共 **124** 篇 → [完整章节](ch12-security.md)
+  - ... 共 **125** 篇 → [完整章节](ch12-security.md)
 
 ### [Ch13 MLOps 与评估](ch13-mlops.md) — 18 篇
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
@@ -214,13 +214,13 @@
   - ⭐⭐ Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
   - ... 共 **36** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 458 篇**
+> 📖 **本篇共 460 篇**
 
 ---
 
 ## 第四篇 · 科学家篇 — 研究与创新
 
-### [Ch15 训练与微调](ch15-training.md) — 53 篇
+### [Ch15 训练与微调](ch15-training.md) — 54 篇
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
   - ⭐⭐ What I’ve been building: ATOM Report, post-training course, finishing 
@@ -231,9 +231,9 @@
   - ⭐⭐ 多轮Agent蒸馏终于不翻车！港中文x通义新方法成功率暴涨18点，训练还快32%
   - ⭐⭐ xai解散但grok还没死马斯克声称新模型正在训练
   - ⭐⭐ Notes on pretraining parallelisms and failed training runs.
-  - ... 共 **53** 篇 → [完整章节](ch15-training.md)
+  - ... 共 **54** 篇 → [完整章节](ch15-training.md)
 
-### [Ch16 推理优化与架构](ch16-inference.md) — 29 篇
+### [Ch16 推理优化与架构](ch16-inference.md) — 30 篇
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
   - ⭐ 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
@@ -244,9 +244,9 @@
   - ⭐⭐ PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python 
   - ⭐⭐ 刚刚DeepSeek开源推理神器DSpark，V4最高提速85%，连底层训练全家桶都开源了
   - ⭐⭐ 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
-  - ... 共 **29** 篇 → [完整章节](ch16-inference.md)
+  - ... 共 **30** 篇 → [完整章节](ch16-inference.md)
 
-### [Ch17 多模态与生成](ch17-multimodal.md) — 46 篇
+### [Ch17 多模态与生成](ch17-multimodal.md) — 48 篇
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
   - ⭐ Perceptron Mk1 shocks with highly performant video analysis AI model 8
@@ -257,22 +257,22 @@
   - ⭐⭐ Normalizing Trajectory Models
   - ⭐⭐ LLaVA-OneVision-2：全帧率视频理解
   - ⭐⭐ SunFinance: Textract+Claude准确率90.8%的ID提取方案
-  - ... 共 **46** 篇 → [完整章节](ch17-multimodal.md)
+  - ... 共 **48** 篇 → [完整章节](ch17-multimodal.md)
 
-### [Ch18 机器人与具身智能](ch18-robotics.md) — 12 篇
+### [Ch18 机器人与具身智能](ch18-robotics.md) — 14 篇
 > 从数字到物理：强化学习、仿真、人形机器人
 
   - ⭐ 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
   - ⭐⭐ 机器人为什么要拟人？终于有人正确回答了
+  - ⭐⭐ LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
   - ⭐⭐ 啊？这是机器人的手？！
   - ⭐⭐ Unitree's IPO Filing: The State of the Robotics Market
   - ⭐⭐ 蔚蓝BabyAlpha A3消费级机器狗
   - ⭐⭐ Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
   - ⭐⭐ NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale
-  - ⭐⭐ 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
-  - ... 共 **12** 篇 → [完整章节](ch18-robotics.md)
+  - ... 共 **14** 篇 → [完整章节](ch18-robotics.md)
 
-> 📖 **本篇共 140 篇**
+> 📖 **本篇共 146 篇**
 
 ---
 
@@ -308,6 +308,6 @@
 
 ---
 
-**📊 全书收录：3239 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3252 篇实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-07-11 | 来源: ~/wiki/entities/
+生成时间: 2026-07-12 | 来源: ~/wiki/entities/

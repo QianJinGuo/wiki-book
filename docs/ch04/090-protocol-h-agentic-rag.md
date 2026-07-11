@@ -153,7 +153,7 @@ Protocol-H 的核心贡献在于揭示了**企业级 RAG 的主要瓶颈不是 L
 ## 相关实体
 - [Three Rag Architectures Classic Graph Agentic](ch04/235-agentic.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/075-claude-code.html)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/399-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/398-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/075-claude-code.html)
 - [Skill Rag Tsinghua Sra](ch04/266-skill.html)
 

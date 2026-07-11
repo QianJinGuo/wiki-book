@@ -70,15 +70,15 @@ Agent Teams（并行 + 共享 Context）
 
 ## 相关实体
 - [Agent 时代架构师技能指南](../ch03/069-skills.html)
-- [factory mission multi agent architecture](../ch01/1196-factory-mission-multi-agent-architecture.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/384-agent-skills.html)
+- [factory mission multi agent architecture](../ch01/1197-factory-mission-multi-agent-architecture.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/385-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/045-agent.html)
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/361-anthropic-google-agent-skills.html)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/475-anthropic-google-agent-skills.html)
 - [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/045-agent.html)
 
 - [Data Agent Platform Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/data-agent-platform-architecture.md)
 - [Multi Agent Collaboration 2025 Top 10 Challenges](https://github.com/QianJinGuo/wiki/blob/main/queries/multi-agent-collaboration-2025-top-10-challenges.md)
-- [Autoresearch Next Phase Async Multi Agent Ai寒武纪](../ch01/977-agent-ai.html)
+- [Autoresearch Next Phase Async Multi Agent Ai寒武纪](../ch01/978-agent-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 深度分析
 ### 从技术演进视角重新理解四种架构范式

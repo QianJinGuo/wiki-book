@@ -6,7 +6,7 @@
 
 ## 相关实体
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/090-hermes-agent.html)
-- [Agent 记忆架构](ch04/396-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent 记忆架构](ch04/398-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Agent 记忆模块化框架](ch04/121-agent-memory.html)
 - [AI Agent 记忆系统](ch04/121-agent-memory.html)
 - [上下文窗口管理](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
@@ -17,17 +17,17 @@
 - [Agent Memory 架构解析](ch04/121-agent-memory.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/018-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/045-agent.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/050-harness-engineering.html)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/050-harness-engineering.html)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/066-harness-engineering.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/066-harness-engineering.html)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/649-llm-wiki-obsidian-wiki-gbrain.html)
-- [AI Context Layer 框架](../ch05/081-ai.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/650-llm-wiki-obsidian-wiki-gbrain.html)
+- [AI Context Layer 框架](../ch05/082-ai.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/018-harness.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/090-hermes-agent.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 
-- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](../ch05/081-ai.html)
+- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](../ch05/082-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析

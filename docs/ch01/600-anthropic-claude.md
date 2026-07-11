@@ -13,11 +13,11 @@ Anthropic 的 Alex Albert 最近上了一期播客，聊了聊他们内部是怎
 前 Claude Relations 负责人
 
 ## 相关实体
-- [Claude Opus 47](ch01/473-claude.html)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/884-anthropic.html)
-- [Anthropic Claude Managed Agents Platform 2026](ch01/284-anthropic-claude-managed-agents.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/356-anthropic-claude-code.html)
-- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](../ch04/442-anthropic-ai.html)
+- [Claude Opus 47](ch01/1132-claude.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/885-anthropic.html)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/283-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/1166-anthropic-claude-code.html)
+- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](../ch04/444-anthropic-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-building-next-claude.md)
 

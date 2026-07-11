@@ -111,7 +111,7 @@ Vercel 案例中，攻击导致流量达到 10x 正常量 。建议在 AI endpoi
 
 ## 关联阅读
 
-→ [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/786-github.html) — 另一个高利润 AI endpoint 攻击向量：通过 VS Code webview postMessage 实现的 1-click token stealing PoC。与本文的攻击经济学框架互补：ammaraskar 实体聚焦代码层漏洞（postMessage 处理缺陷），本文聚焦推理资源的经济学驱动因素和 per-request 防御架构。 ^["[Vercel Com Blog Protecting Against Token Theft](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vercel-com-blog-protecting-against-token-theft.md)"]
+→ [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/862-github.html) — 另一个高利润 AI endpoint 攻击向量：通过 VS Code webview postMessage 实现的 1-click token stealing PoC。与本文的攻击经济学框架互补：ammaraskar 实体聚焦代码层漏洞（postMessage 处理缺陷），本文聚焦推理资源的经济学驱动因素和 per-request 防御架构。 ^["[Vercel Com Blog Protecting Against Token Theft](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vercel-com-blog-protecting-against-token-theft.md)"]
 
 → [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/314-ai-coding-agent.html) — 从 agent 使用方视角的系统性防御策略：5 种 control mechanisms 防止 AI coding agent 产出低质量代码。 inference theft 是攻击方利用 AI endpoint 经济价值的案例，该 entity 提供了 agent 使用方在接收方一侧的防御思路，两者共同构成 AI agent security 的攻防全景。 ^["[Vercel Com Blog Protecting Against Token Theft](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vercel-com-blog-protecting-against-token-theft.md)"]
 

@@ -70,9 +70,9 @@
 ## 与现有实体的关系
 
 - **支撑 [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)** — K-Dense 提供 4 个科学 AI 案例佐证 "harness 决定上限"
-- **呼应 [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01/334-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html)** — Anthropic 主张 harness > pretraining；K-Dense 用科学 AI 数据给出量化证明
+- **呼应 [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01/333-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html)** — Anthropic 主张 harness > pretraining；K-Dense 用科学 AI 数据给出量化证明
 - **支持 [Miroflow Deep Research Agent Harness Mirothinker](../ch05/039-agent-harness.html)** — Deep Research 类 harness 是设计典范，单模型质量不及 harness
-- **补充 [Agent Harness Engineering Survey 2026](../ch05/050-harness-engineering.html)** — Survey 中 "context engineering" 一节的科学 AI 实例
+- **补充 [Agent Harness Engineering Survey 2026](../ch05/066-harness-engineering.html)** — Survey 中 "context engineering" 一节的科学 AI 实例
 
 ## 实践启示
 
@@ -98,7 +98,7 @@
 1. **科学 AI 的瓶颈已从"模型能做什么"转向"系统让模型做什么"**
    - 核心观点：Anthropic 的 Chemistry 结果（通用模型在 NMR 任务上击败专用软件）证明模型能力已不再是科学 AI 的瓶颈。真正的限制是模型周围的 scaffolding——数据接入、代码执行、验证机制、审计输出。
    - 技术要点：K-Dense 公式 **Effective Capability = Model IQ × Context Quality × Harness Design** 说明在 2026 年，Model IQ 的边际收益已递减，而 Context Quality 和 Harness Design 成为新的价值杠杆。
-   - 实践价值：当"用更强的模型"带来的提升<5%时，工程资源应转向 harness 设计。这与 [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01/334-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html) 中 Anthropic 的主张呼应。
+   - 实践价值：当"用更强的模型"带来的提升<5%时，工程资源应转向 harness 设计。这与 [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01/333-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html) 中 Anthropic 的主张呼应。
 
 2. **4 个 case 提供了 harness 设计量化价值的稀缺证据**
    - 核心观点：K-Dense 的 4 个科学 AI case（材料/药物/气候/蛋白质）是少数提供了"同一模型 + 不同 harness → 4.3× 质量差异"量化数据的来源。这打破了"harness 只是锦上添花"的误解。

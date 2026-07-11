@@ -10,7 +10,7 @@
 
 ## 为什么需要这一层
 当前 vault 已经有比较成熟的 ingest / index / log / lint 闭环，也已经有 `[Wiki Master Map](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)`、``、`` 这样的导航与治理面。但这些层更多解决的是"怎么把知识存进去、找出来、维护好"，还没有系统性解决"如何让知识库主动长出新的研究问题、论文候选、工程实践和下一代 Skill"。
-Wiki Evolver 的作用正是在这里：它把 ``、`[Ai Team Knowledge Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)`、`[Harness Engineering Systematic Framework](../ch05/050-harness-engineering.html)` 等现有思想，提升成一个统一编排层。
+Wiki Evolver 的作用正是在这里：它把 ``、`[Ai Team Knowledge Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)`、`[Harness Engineering Systematic Framework](../ch05/066-harness-engineering.html)` 等现有思想，提升成一个统一编排层。
 
 ## Core Contract
 这个 Skill 的完成条件不是"发现了有趣文章"，而是每轮至少要产出一个 durable outcome：
@@ -21,7 +21,7 @@ Wiki Evolver 的作用正是在这里：它把 ``、`[Ai Team Knowledge Harness]
 5. 基于 vault 的 paper / practice 草稿
 6. 治理修复：index / log / lint / links
 7. 改进后的 Skill / checklist / playbook
-这比 `[Skill Craft](ch07/050-skill-craft-claude-skill.html)` 的关注点更上层：Skill Craft 关注 Skill 质量本身，Wiki Evolver 关注整个知识系统如何把价值不断向上提升。
+这比 `[Skill Craft](ch07/049-skill-craft-claude-skill.html)` 的关注点更上层：Skill Craft 关注 Skill 质量本身，Wiki Evolver 关注整个知识系统如何把价值不断向上提升。
 
 ## Operating Loop
 Wiki Evolver 的推荐循环是：

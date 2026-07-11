@@ -187,8 +187,8 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | Agent Harness 生产指南 | [Agent Production Harness Engineering](ch05/039-agent-harness.html) | [{{BASE_URL}}/raw/articles/harness-production-agent-engineering-deficit]({{BASE_URL}}/raw/articles/harness-production-agent-engineering-deficit)|
 | 生产级 Harness 12 组件 | [Production Harness 12 Components Framework Comparison](ch05/035-harness-12.html) | [{{BASE_URL}}/raw/articles/production-harness-12-components-framework-comparison]({{BASE_URL}}/raw/articles/production-harness-12-components-framework-comparison)|
 | 10 步路线图 + 8 失败模式 | [Harness Engineering 10 Step Practical Guide 2026](ch05/060-harness-engineering-10-8-checklist-15.html) | [{{BASE_URL}}/raw/articles/harness-engineering-10-step-practical-guide-2026]({{BASE_URL}}/raw/articles/harness-engineering-10-step-practical-guide-2026)|
-| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/098-harness-100-cache-agent.html) | [{{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit]({{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit)|
-| Better-Harness | [Better Harness Eval Trace Methodology](ch05/109-better-harness-agent-harness.html) | 先读实体页：`docs/ch05/085-better-harness-agent-harness.md` |
+| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/102-harness-100-cache-agent.html) | [{{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit]({{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit)|
+| Better-Harness | [Better Harness Eval Trace Methodology](ch05/113-better-harness-agent-harness.html) | 先读实体页：`docs/ch05/085-better-harness-agent-harness.md` |
 
 ### 4.4 Memory 精读清单
 
@@ -214,13 +214,13 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | CLI / MCP / CLI+Skill 选型 | [Cli Mcp Skill Architecture Decision Vibecoder](ch07/035-cli-mcp-cli-skill.html) | [{{BASE_URL}}/raw/articles/cli-mcp-skill-architecture-decision-vibecoder]({{BASE_URL}}/raw/articles/cli-mcp-skill-architecture-decision-vibecoder)|
 | Skill 版本管理 | [Skill Version Management Semantic Versioning Practices Winty](ch07/046-skill.html) | [{{BASE_URL}}/raw/articles/skill-version-management-semantic-versioning-practices-winty]({{BASE_URL}}/raw/articles/skill-version-management-semantic-versioning-practices-winty)|
 | Anthropic 12 个 MCP 模式 | [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch07/057-anthropic-agent-12-mcp.html) | [{{BASE_URL}}/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2]({{BASE_URL}}/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2)|
-| Microsoft Agent Framework Tools | [Microsoft Agent Framework Tools Overview Provider Matrix](ch07/077-microsoft-agent-framework-tools-4-provider-tool-ap.html) | [{{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix]({{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix)|
+| Microsoft Agent Framework Tools | [Microsoft Agent Framework Tools Overview Provider Matrix](ch07/080-microsoft-agent-framework-tools-4-provider-tool-ap.html) | [{{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix]({{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix)|
 
 ### 4.6 RAG 精读清单
 
 | 主题 | entity | raw |
 |---|---|---|
-| RAG 到知识图谱到本体论 | [向量库是Rag的前菜知识图谱是答案本体论是灵魂](ch01/295-rag.html) | [{{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂]({{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂)|
+| RAG 到知识图谱到本体论 | [向量库是Rag的前菜知识图谱是答案本体论是灵魂](ch01/1074-rag.html) | [{{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂]({{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂)|
 | Google Agentic RAG 5 阶段 | [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](ch04/117-google-agentic-rag-5.html) | [{{BASE_URL}}/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606]({{BASE_URL}}/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606)|
 | Protocol H 分层 Agentic RAG | [Protocol H Hierarchical Agentic Rag Enterprise](ch04/090-protocol-h-agentic-rag.html) | [{{BASE_URL}}/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise]({{BASE_URL}}/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise)|
 | Chroma 到 Qdrant 迁移 | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [{{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration]({{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration)|
@@ -231,12 +231,12 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | Anthropic 95% 数据分析自动化 | [Anthropic 95Pct Data Analysis Skill Stack Architecture](ch09/009-anthropic-95-agent-skill-21-95.html) | [{{BASE_URL}}/raw/articles/anthropic-95pct-data-analysis-skill-stack-architecture]({{BASE_URL}}/raw/articles/anthropic-95pct-data-analysis-skill-stack-architecture)|
-| Data Agent 产品设计 | [Data Agent Product Design](ch04/595-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview]({{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview)|
-| 智能问数 Agent | [Data Agent Product Design](ch04/595-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-intelligent-query-agent]({{BASE_URL}}/raw/articles/volcengine-data-agent-intelligent-query-agent)|
-| 营销策略 Agent | [Data Agent Product Design](ch04/595-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent]({{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent)|
+| Data Agent 产品设计 | [Data Agent Product Design](ch04/605-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview]({{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview)|
+| 智能问数 Agent | [Data Agent Product Design](ch04/605-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-intelligent-query-agent]({{BASE_URL}}/raw/articles/volcengine-data-agent-intelligent-query-agent)|
+| 营销策略 Agent | [Data Agent Product Design](ch04/605-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent]({{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent)|
 | TiDB Cloud Agent-native Database | [Tidb Cloud Agent Database](ch11/076-tidb-cloud-agent-native-kimi-k2-6.html) | [{{BASE_URL}}/raw/articles/kimi-k2-tidb-agent-database-huangdongxu-20260513]({{BASE_URL}}/raw/articles/kimi-k2-tidb-agent-database-huangdongxu-20260513)|
 | ClickHouse 大规模摄取 | [Clickhouse Ingestion At Scale An Open Source Zepto Engineering Story](https://github.com/QianJinGuo/wiki/blob/main/entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md) | [{{BASE_URL}}/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story]({{BASE_URL}}/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story)|
-| Kafka × Iceberg 零 ETL | [Aliyun Kafka Iceberg Zero Etl Architecture Subtraction 2026 06 18](ch01/939-20.html) | [{{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18]({{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18)|
+| Kafka × Iceberg 零 ETL | [Aliyun Kafka Iceberg Zero Etl Architecture Subtraction 2026 06 18](ch01/950-20.html) | [{{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18]({{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18)|
 
 ### 4.8 工程师期必须完成的 4 个项目
 
@@ -331,23 +331,23 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 | 主题 | entity | raw |
 |---|---|---|
-| Firecracker + Bedrock AgentCore 多租户 | [Firecracker Bedrock Agentcore Multi Tenant](ch11/006-firecracker-microvm-bedrock-agentcore-ai-agent.html) | [{{BASE_URL}}/raw/articles/firecracker-bedrock-agentcore-multi-tenant]({{BASE_URL}}/raw/articles/firecracker-bedrock-agentcore-multi-tenant)|
-| OpenClaw 迁移 AgentCore Serverless | [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch11/011-aws-openclaw-amazon-bedrock-agentcore-serverless.html) | [{{BASE_URL}}/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2]({{BASE_URL}}/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2)|
-| OpenClaw on Kubernetes | [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/049-amazon-eks-graviton-ai-agent-openclaw-on-kubernetes.html) | 先读实体页：`docs/ch11/049-amazon-eks-graviton-ai-agent-openclaw-on-kubernetes.md` |
-| LiteLLM 成本治理 | [Litellm Amazon Bedrock Cost Control Four Layer](ch11/040-litellm-amazon-bedrock.html) | [{{BASE_URL}}/raw/articles/通过-litellm-实现-amazon-bedrock-成本管控实时限额多维监控与平台级兜底]({{BASE_URL}}/raw/articles/通过-litellm-实现-amazon-bedrock-成本管控实时限额多维监控与平台级兜底)|
-| AgentCore 质量优化飞轮 | [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/118-aws-bedrock-agentcore-quality-optimization-flywheel.html) | [{{BASE_URL}}/raw/articles/aws-bedrock-agentcore-quality-optimization-flywheel]({{BASE_URL}}/raw/articles/aws-bedrock-agentcore-quality-optimization-flywheel)|
-| 企业级 OpenClaw 安全部署 | [Enterprise Openclaw Security Deploy Architecture Guide](ch11/085-openclaw-aws.html) | 先读实体页：`docs/ch11/085-openclaw-aws.md` |
+| Firecracker + Bedrock AgentCore 多租户 | [Firecracker Bedrock Agentcore Multi Tenant](ch11/008-firecracker-microvm-bedrock-agentcore-ai-agent.html) | [{{BASE_URL}}/raw/articles/firecracker-bedrock-agentcore-multi-tenant]({{BASE_URL}}/raw/articles/firecracker-bedrock-agentcore-multi-tenant)|
+| OpenClaw 迁移 AgentCore Serverless | [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch11/013-aws-openclaw-amazon-bedrock-agentcore-serverless.html) | [{{BASE_URL}}/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2]({{BASE_URL}}/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2)|
+| OpenClaw on Kubernetes | [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/052-amazon-eks-graviton-ai-agent-openclaw-on-kubernetes.html) | 先读实体页：`docs/ch11/049-amazon-eks-graviton-ai-agent-openclaw-on-kubernetes.md` |
+| LiteLLM 成本治理 | [Litellm Amazon Bedrock Cost Control Four Layer](ch11/042-litellm-amazon-bedrock.html) | [{{BASE_URL}}/raw/articles/通过-litellm-实现-amazon-bedrock-成本管控实时限额多维监控与平台级兜底]({{BASE_URL}}/raw/articles/通过-litellm-实现-amazon-bedrock-成本管控实时限额多维监控与平台级兜底)|
+| AgentCore 质量优化飞轮 | [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/120-aws-bedrock-agentcore-quality-optimization-flywheel.html) | [{{BASE_URL}}/raw/articles/aws-bedrock-agentcore-quality-optimization-flywheel]({{BASE_URL}}/raw/articles/aws-bedrock-agentcore-quality-optimization-flywheel)|
+| 企业级 OpenClaw 安全部署 | [Enterprise Openclaw Security Deploy Architecture Guide](ch11/087-openclaw-aws.html) | 先读实体页：`docs/ch11/085-openclaw-aws.md` |
 
 ### 5.3 安全治理精读清单
 
 | 主题 | entity | raw |
 |---|---|---|
 | OpenClaw 安全增强 | [Openclaw Security And Feature Enhancement Practices](ch12/027-openclaw.html) | [{{BASE_URL}}/raw/articles/openclaw-security-and-feature-enhancement-practices]({{BASE_URL}}/raw/articles/openclaw-security-and-feature-enhancement-practices)|
-| OpenClaw Security Roadmap | [Where Openclaw Security Is Heading Openclaw Blog](ch12/031-where-openclaw-security-is-heading-openclaw-blog.html) | [{{BASE_URL}}/raw/articles/where-openclaw-security-is-heading-openclaw-blog]({{BASE_URL}}/raw/articles/where-openclaw-security-is-heading-openclaw-blog)|
+| OpenClaw Security Roadmap | [Where Openclaw Security Is Heading Openclaw Blog](ch12/032-where-openclaw-security-is-heading-openclaw-blog.html) | [{{BASE_URL}}/raw/articles/where-openclaw-security-is-heading-openclaw-blog]({{BASE_URL}}/raw/articles/where-openclaw-security-is-heading-openclaw-blog)|
 | AI Agent 机器身份安全 | [1Password Securing Ai Agents Machine Identities](ch12/043-securing-ai-agents-and-machine-identities.html) | [{{BASE_URL}}/raw/articles/1password-securing-ai-agents-machine-identities]({{BASE_URL}}/raw/articles/1password-securing-ai-agents-machine-identities)|
-| Autonomous Vulnerability Hunting with MCP | [Bullyingllms](ch12/055-autonomous-vulnerability-hunting-with-mcp.html) | [{{BASE_URL}}/raw/articles/bullyingllms]({{BASE_URL}}/raw/articles/bullyingllms)|
+| Autonomous Vulnerability Hunting with MCP | [Bullyingllms](ch12/056-autonomous-vulnerability-hunting-with-mcp.html) | [{{BASE_URL}}/raw/articles/bullyingllms]({{BASE_URL}}/raw/articles/bullyingllms)|
 | AI Detection and Response | [Ai Detection And Response Aidr A Zero Impact Operating Model](ch12/075-ai-detection-and-response-aidr-a-zero-impact-operating-model.html) | [{{BASE_URL}}/raw/articles/ai-detection-and-response-aidr-a-zero-impact-operating-model]({{BASE_URL}}/raw/articles/ai-detection-and-response-aidr-a-zero-impact-operating-model)|
-| LLMReaper 对话窃取攻击 | [Llmreaper Dom Conversation Exfiltration](ch12/087-llmreaper.html) | [{{BASE_URL}}/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512]({{BASE_URL}}/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512)|
+| LLMReaper 对话窃取攻击 | [Llmreaper Dom Conversation Exfiltration](ch12/088-llmreaper.html) | [{{BASE_URL}}/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512]({{BASE_URL}}/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512)|
 | OpenSandbox 安全沙箱 | [Opensandbox Aliyun Cloud Agent Sandbox Vibecoder](ch12/107-opensandbox-agent-vault-egress-sidecar.html) | 先读实体页：`docs/ch12/119-opensandbox-agent-vault-egress-sidecar.md` |
 
 ### 5.4 评估与 MLOps 精读清单
@@ -355,7 +355,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | AI Skill 测评报告 | [Ai Skill 测评报告解读](ch07/068-ai-skill.html) | [{{BASE_URL}}/raw/articles/ai-skill-测评报告解读]({{BASE_URL}}/raw/articles/ai-skill-测评报告解读)|
-| LoongSuite GenAI 可观测语义规范 | [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](ch04/429-loongsuite-genai.html) | [{{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地]({{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地)|
+| LoongSuite GenAI 可观测语义规范 | [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](ch04/431-loongsuite-genai.html) | [{{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地]({{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地)|
 | Agent-EvalKit | [Agent Evalkit Aws Opensource Cli Agent Eval Toolkit](ch11/025-agent-evalkit-aws-cli-agent.html) | [{{BASE_URL}}/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit]({{BASE_URL}}/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit)|
 | AgentEval YAML | [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch04/151-agenteval-yaml-agent.html) | 先读实体页：`docs/ch04/141-agenteval-yaml-agent.md` |
 | Claw-SWE-Bench | [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](ch09/055-claw-swe-bench-harness-agent.html) | [{{BASE_URL}}/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm]({{BASE_URL}}/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm)|
@@ -413,7 +413,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 |---|---|---|
 | RLHF / Post-training / ATOM | [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](ch09/035-ai.html) | [{{BASE_URL}}/raw/articles/what-ive-been-building-atom-report-post-training-course-fini]({{BASE_URL}}/raw/articles/what-ive-been-building-atom-report-post-training-course-fini)|
 | NVIDIA Blackwell MLPerf Training | [Nvidia Blackwell Mlperf Training 6 0 Benchmark Results 2026 06](ch09/035-ai.html) | [{{BASE_URL}}/raw/articles/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06]({{BASE_URL}}/raw/articles/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06)|
-| PRISM 并行残差迭代序列模型 | [Icml 2026 Prism Parallel Residual Iterative Sequence Model](ch01/1212-icml-2026.html) | [{{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model]({{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model)|
+| PRISM 并行残差迭代序列模型 | [Icml 2026 Prism Parallel Residual Iterative Sequence Model](ch01/1232-icml-2026.html) | [{{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model]({{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model)|
 
 ### 6.3 推理优化精读清单
 
@@ -429,7 +429,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | Recursive 自动化 AI 研究 | [Recursive Automated Ai Research First Steps 2026](ch09/035-ai.html) | [{{BASE_URL}}/raw/articles/recursive-automated-ai-research-first-steps-2026]({{BASE_URL}}/raw/articles/recursive-automated-ai-research-first-steps-2026)|
-| NeurIPS Pangram 事件 | [Neurips 2026 Pangram Controversy](ch01/939-20.html) | [{{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy]({{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy)|
+| NeurIPS Pangram 事件 | [Neurips 2026 Pangram Controversy](ch01/950-20.html) | [{{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy]({{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy)|
 | Agent 自我改进六条路 | `docs/ch04/047-agent.md` | 先读实体页 |
 | Hermes Agent Eval Harness | `docs/ch04/035-hermes-agent-eval-harness-skill-7-taskset-harnessadapt.md` | 先读实体页 |
 | MUSE-Autoskill | `docs/ch04/046-muse-autoskill-bytebrain-agent-arxiv-2605-27366.md` | 先读实体页 |
@@ -496,8 +496,8 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | Vibe Design ≠ Vibe Coding | [Impeccable Vibe Design Philosophy Anomaly](ch05/001-impeccable.html) | [{{BASE_URL}}/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding]({{BASE_URL}}/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding)|
-| Data Agent 产品设计 | [Data Agent Product Design](ch04/595-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview]({{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview)|
-| 下一代企业架构：系统 CLI 化、流程 Skill 化、员工 Agent 化 | [Enterprise Next Gen Architecture System Cli Process Skill Employee Agent Zhan](ch04/611-cli-skill-agent.html) | [{{BASE_URL}}/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan]({{BASE_URL}}/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan)|
+| Data Agent 产品设计 | [Data Agent Product Design](ch04/605-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview]({{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview)|
+| 下一代企业架构：系统 CLI 化、流程 Skill 化、员工 Agent 化 | [Enterprise Next Gen Architecture System Cli Process Skill Employee Agent Zhan](ch04/622-cli-skill-agent.html) | [{{BASE_URL}}/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan]({{BASE_URL}}/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan)|
 | James Cowling AI 时代工程哲学 | [James Cowling Engineering Philosophy Ai Era](ch09/035-ai.html) | [{{BASE_URL}}/raw/articles/james-cowling-engineering-philosophy-ai-era]({{BASE_URL}}/raw/articles/james-cowling-engineering-philosophy-ai-era)|
 | Token 经济学与 AI 效率 | [Tencent Token Economics Ai Productivity](ch12/003-token.html) | [{{BASE_URL}}/raw/articles/tencent-token-economics-ai-productivity]({{BASE_URL}}/raw/articles/tencent-token-economics-ai-productivity)|
 | AI 普惠与 Token 效率门槛 | `docs/ch20-ai-philosophy.md` | 读 Ch20.009 / Ch20.011 |

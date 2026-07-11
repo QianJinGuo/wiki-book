@@ -66,10 +66,10 @@ AWS 教程展示了"可以做到"，但未讨论"如何做好"——生产级低
 AWS 教程提供了可运行的基础流水线，但生产化需要自行补齐：持续数据更新、用户反馈循环、A/B 测试框架和监控告警。
 
 ## 相关实体
-- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/1217-llm.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/643-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
-- [Aws Sagemaker Capacity Aware Inference Fallback](ch01/404-aws-sagemaker-capacity-aware-inference-fallback.html)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/389-aws-sagemaker-ai-agent.html)
+- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/947-llm.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/644-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Aws Sagemaker Capacity Aware Inference Fallback](ch01/403-aws-sagemaker-capacity-aware-inference-fallback.html)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/391-aws-sagemaker-ai-agent.html)
 - [Aws Grpo Rlvr Sagemaker Math Reasoning](../ch11/100-aws-grpo-rlvr-sagemaker-math-reasoning.html)
 
 ## 相关引用

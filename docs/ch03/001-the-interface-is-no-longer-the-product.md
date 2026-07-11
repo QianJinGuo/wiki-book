@@ -53,11 +53,11 @@ The old tools will not vanish quickly. They have distribution, habits, enterpris
 The more interesting future is not only agents operating apps. It is applications designed so agents, humans, and existing tools can all work with the same underlying objects. Not because every app disappears but because the source of truth may move.
 
 ## 相关实体
-- [From System Of Record To System Of Intelligence](../ch01/324-from-system-of-record-to-system-of-intelligence.html)
+- [From System Of Record To System Of Intelligence](../ch01/323-from-system-of-record-to-system-of-intelligence.html)
 - [Notebook Lm](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md)
 - [Claude Code Founder Harness 100 Lines](ch03/075-claude-code.html)
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/267-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
-- [Thehackernews Fake Openai Privacy Filter](../ch01/450-openai.html)
+- [Thehackernews Fake Openai Privacy Filter](../ch01/449-openai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/interface-commoditization-ai-era.md)
 

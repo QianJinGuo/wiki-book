@@ -51,9 +51,9 @@ Google 以 32 亿美元收购 Wiz 将 CSPM 赛道推向资本热点，但 Versa 
 Versa 的三路更新（CSPM + Orchestration + Agent Trust）勾勒出 SASE 平台的演进方向：**单平台融合**正在从营销概念走向工程现实。对于已有 Versa 部署的企业，这是评估平台扩展能力的窗口；对于新评估者，Concerto 13.1.1 的策略统一能力和 AI Agent 验证框架是差异化的技术买点。
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/423-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [AI tool poisoning — VentureBeat](ch04/423-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [企业级OpenClaw安全部署架构指南](../ch11/222-openclaw.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/425-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning — VentureBeat](ch04/425-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [企业级OpenClaw安全部署架构指南](../ch11/225-openclaw.html)
 
 ---
 

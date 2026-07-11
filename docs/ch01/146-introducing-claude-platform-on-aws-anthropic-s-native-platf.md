@@ -12,15 +12,15 @@ In this post, we explore how Claude Platform on AWS works and how you can start 
 ## Claude Platform experience through AWS
 
 ## 相关实体
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/884-anthropic.html)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/136-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/885-anthropic.html)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/137-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11/012-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 - [Claude For Small Business](ch01/028-introducing-claude-for-small-business.html)
-- [Anthropic Claude Managed Agents Platform 2026](ch01/284-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/283-anthropic-claude-managed-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-claude-platform-on-aws.md)
 
-- [Anthropic出手Ai的内心独白曝光了](ch01/884-anthropic.html)
+- [Anthropic出手Ai的内心独白曝光了](ch01/885-anthropic.html)
 - [Claude Code Context Engineering Anthropic Thariq](../ch03/075-claude-code.html)
 - [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](../ch05/019-ai-native.html)
 

@@ -85,7 +85,7 @@ Lambda 处理流程：
 ### [Aws Bedrock Intelligence Message Defense](ch11/009-aws-bedrock.html) — 共享 prompt versioning 思想
 该 entity 提到 "Prompt CI/CD" 概念但**没有给出具体服务限制数字**（50/10 prompts/region）也没有 batch 集成方案。本 entity 是其**具体实现 + 服务约束**的工程补全。
 
-### [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/154-amazon-bedrock.html) — 同主题但不同角度
+### [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/156-amazon-bedrock.html) — 同主题但不同角度
 该 entity 描述 **Bedrock Data Automation** 自动化产品（无代码 IDP 服务），本文描述的是**自建 Bedrock pipeline**（有代码、Lambda + SQS + 动态 prompt 选取）。两文互补 —— Data Automation 适合标准化场景，自建 pipeline 适合需要 prompt 高度定制或与现有 SQS 工作流集成的场景。
 
 ### 差异化
@@ -113,7 +113,7 @@ Lambda 处理流程：
 
 ## 相关实体
 
-- [from pdfs to insights: architecting an intelligent document](ch11/229-from-pdfs-to-insights-architecting-an-intelligent-document.html)
+- [from pdfs to insights: architecting an intelligent document](ch11/232-from-pdfs-to-insights-architecting-an-intelligent-document.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/extract-data-with-on-demand-and-batch-pipelines-dynamically.md)
 
 ## 深度分析
@@ -139,7 +139,7 @@ Lambda 处理流程：
    - 实践价值：这是 agent/harness 可观测性设计的极简参考实现，可推广到任何需要 trace LLM 调用质量的场景。
 
 5. **按文档格式动态选 prompt 是提升提取精度的关键工程细节**
-   - 核心观点：文章强调"地契文档有 3 种格式变体（编号列表/表格/图示），不假设一个 prompt 适用所有"。这与 [Optimize Blueprint Extraction Accuracy In Amazon Bedrock Dat](../ch12/047-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.html) 的"跨版面泛化"问题呼应，但本文给出了具体的工程解法。
+   - 核心观点：文章强调"地契文档有 3 种格式变体（编号列表/表格/图示），不假设一个 prompt 适用所有"。这与 [Optimize Blueprint Extraction Accuracy In Amazon Bedrock Dat](../ch12/048-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.html) 的"跨版面泛化"问题呼应，但本文给出了具体的工程解法。
    - 技术要点：每种文档格式对应独立的 prompt（3 格式 × 2-3 任务 = 6-9 prompts），SQS 消息的 `prompt_id` 字段按文档格式路由选择。这是"格式感知 prompt 路由"的工程实现。
    - 实践价值：在实际 IDP 项目中，按格式分 prompt 的准确率提升往往比优化单一 prompt 更显著，因为不同格式的版面特征差异远大于同一格式内的措辞差异。
 

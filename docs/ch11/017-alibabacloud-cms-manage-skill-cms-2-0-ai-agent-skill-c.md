@@ -187,7 +187,7 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 ## 相关主题
 
 —
-- Agent Skill 生态 — [Agent Skills Comprehensive Survey](../ch04/384-agent-skills.html)
+- Agent Skill 生态 — [Agent Skills Comprehensive Survey](../ch04/385-agent-skills.html)
 - 可观测性 — [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md)
 - OTel / APM 接入 — [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/048-coding-agent.html)
 - K8s 自动注入 — [Higress Cncf Sandbox Ingress Nginx Replacement](https://github.com/QianJinGuo/wiki/blob/main/entities/higress-cncf-sandbox-ingress-nginx-replacement.md)
@@ -273,7 +273,7 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 - **阿里云 CLI 安装指南**：https://help.aliyun.com/zh/cli/install-update-alibaba-cloud-cli
 ## 相关实体
 
-- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01/950-20.html)
+- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01/951-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 
 ---
