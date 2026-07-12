@@ -162,7 +162,7 @@
 
 - **强结果信号驱动的飞轮效应**：买卖行为天然具备可量化的强结果信号（成交/不成交），是强化学习最理想的训练场景。系统通过持续捕获买家行为模式形成越用越准的飞轮，这与传统的显性知识学习（FAQ、产品手册）截然不同——行为数据比文本语料更能反映真实的决策逻辑。 
 
-- **Palantir 类比的战略含义**：百型明确将自身定位为「出海企业的 Palantir」——两者都以本体论为底层，以数据驱动为价值主张，但目标市场不同（政府/大型企业 vs. 长尾中小企业）。 [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/951-20.html) 揭示了 Palantir 在企业软件市场的强势地位，百型的差异化在于垂直于跨境 B2B 场景，并聚焦 97% 中小企业的长尾市场。 
+- **Palantir 类比的战略含义**：百型明确将自身定位为「出海企业的 Palantir」——两者都以本体论为底层，以数据驱动为价值主张，但目标市场不同（政府/大型企业 vs. 长尾中小企业）。 [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/956-20.html) 揭示了 Palantir 在企业软件市场的强势地位，百型的差异化在于垂直于跨境 B2B 场景，并聚焦 97% 中小企业的长尾市场。 
 
 ## 实践启示
 
@@ -181,13 +181,13 @@
 - 多智能体协同 — [Openclaw Multi Agent Team Practice V2](ch04/048-openclaw-multi-agent-team-practice-v2.html)
 - 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - 智能体协议 — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
-- Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/538-codex.html)
+- Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/542-codex.html)
 - Claude Code 架构 — [Claude Code Architecture](../ch03/075-claude-code.html)
 - Harness 工程 — [Harness Engineering Systematic Framework](../ch05/066-harness-engineering.html)
 - A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/045-agent.html)
 - 本体论 / 知识图谱 — [Rag Vector Knowledge Graph Ontology](../ch01/295-rag.html)
 - 多智能体研究系统 — [Anthropic Multi Agent Research System](ch04/528-anthropic-multi-agent-research-system.html)
-- Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/951-20.html)
+- Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/956-20.html)
 - 企业 AI 数据准备 — [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.html)
 ## 相关实体
 

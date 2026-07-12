@@ -120,7 +120,7 @@ Cola DLM 的"语义部 + 文字部"分层，在多模态语境下有天然优势
 
 ## 相关实体
 
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](ch01/976-deepseek-v4-flash-pro.html)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](ch01/981-deepseek-v4-flash-pro.html)
 - [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/318-deepseek-v4.html)
 - [Harness Engineering Core Patterns Claude Code](../ch05/066-harness-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/045-agent.html)

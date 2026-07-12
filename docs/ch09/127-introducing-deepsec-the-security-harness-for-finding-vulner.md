@@ -27,7 +27,7 @@ deepsec 的架构代表了一种新型 AI-native 安全扫描范式：不是用 
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)
 
-- [How Superset built the IDE for AI agents on Vercel](../ch01/070-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [How Superset built the IDE for AI agents on Vercel](../ch01/071-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 
 ---
 

@@ -49,7 +49,7 @@
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/memory-in-the-llm-era-iclr2026.md)
 
 ## 相关实体
-- [memory agent systems cobanov](../ch04/549-memory-agent-systems-cobanov.html)
+- [memory agent systems cobanov](../ch04/550-memory-agent-systems-cobanov.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/090-hermes-agent.html)
 - [AI Agent 记忆系统架构](../ch04/156-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/090-hermes-agent.html)

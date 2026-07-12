@@ -256,7 +256,7 @@ nanobot 把所有决策路径强塞进一个 while 循环，与 LangGraph 的 DA
 
 - [Agent Harness Context Management Working Set](../ch05/039-agent-harness.html) — Progressive Loading 与 working set 管理理论
 - [Loop Engineering Addy Osmani Challengehub](../ch05/007-loop-engineering.html) — ReAct 循环工程化的另一视角
-- [Codex Major Update Appshots Goal Xinzhiyuan](ch01/538-codex.html) — Codex 同样采用单循环 + 长寿命任务设计
+- [Codex Major Update Appshots Goal Xinzhiyuan](ch01/542-codex.html) — Codex 同样采用单循环 + 长寿命任务设计
 - [天猫新品营销技术团队Ai编码实战指南上](../ch05/082-ai.html) — AGENT.md 持续约定模式的实战
 - [腾讯研究院Ai速递 20260506](../ch05/082-ai.html) — CL-Bench Life 揭示的"上下文误用"问题，呼应 nanobot 的 progressive loading 设计
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent harness 的工程框架

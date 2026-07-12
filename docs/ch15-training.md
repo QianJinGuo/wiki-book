@@ -2,7 +2,7 @@
 
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
-> 本章收录 **54 篇**实体，按深度递增排列。
+> 本章收录 **55 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐⭐ 工程师 | 需编程基础 | 15 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 35 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 36 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 
 ---
@@ -4933,7 +4933,42 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ---
 
-## Ch15.050 50FPS、成本打掉70%，魔芯MoWorld把世界模型带进产业时代
+## Ch15.050 北航、北大和美团联合提出策略提升强化学习（PIRL/PIPO）
+
+> 📊 Level ⭐⭐⭐ | 2.6KB | `entities/pirl-pipo-policy-improvement-rl-buaa-pku-meituan-2026.md`
+
+# 北航、北大和美团联合提出策略提升强化学习（PIRL/PIPO）
+
+来自北航、北大、美团的研究团队提出了 **Policy Improvement Reinforcement Learning（PIRL）**，以及对应的落地算法 **PIPO**。这项工作关注的是大模型 RL 后训练中一个非常基础但长期被默认跳过的问题：一次更新在当前数据上看起来优化了学习信号，是否就真的说明模型策略变强了？
+
+## 核心问题
+
+过去很多 RL 后训练方法主要回答的是：当前这批轨迹该怎么学？PIRL/PIPO 进一步追问的是：这一步学完之后，模型真的进步了吗？如果进步了，能否进一步巩固这一方向？如果没有进步，甚至带来了负面影响，能否及时削弱或校正这次更新？
+
+## 主要贡献
+
+1. **PIRL 新视角**：不只看当前批次里的奖励、优势估计或教师信号，而是把跨迭代的策略提升本身作为优化目标。
+2. **PIPO 闭环框架**：即插即用，可以直接接入现有几乎所有 RL 后训练算法（PPO、GRPO、DAPO、自蒸馏等）。
+3. **跨迭代评估**：在多个迭代间追踪策略的真实变化方向，而非仅依赖单批次数据拟合。
+
+## 技术细节
+
+PIPO 的核心思路是引入一个**跨迭代的闭环反馈机制**：在每个训练步完成后，检查模型在新数据上的表现是否真正代表了策略提升。如果是正向提升，则继续朝该方向优化；如果是负向或噪声更新，则回调或削弱该步的影响。
+
+论文与代码已公开：
+- 论文：https://arxiv.org/abs/2604.00860
+- 代码：https://github.com/JacckMa/pipo_verl
+
+## 相关实体
+
+- [2026年LLM RL算法全景](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
+- [Agentic RL框架与实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pirl-pipo-policy-improvement-rl-buaa-pku-meituan-2026.md)
+
+---
+
+## Ch15.051 50FPS、成本打掉70%，魔芯MoWorld把世界模型带进产业时代
 
 > 📊 Level ⭐⭐⭐ | 2.3KB | `entities/50fps成本打掉70魔芯moworld把世界模型带进产业时代.md`
 
@@ -4991,7 +5026,7 @@ _切换到竖屏全屏_ _退出全屏_
 
 ---
 
-## Ch15.051 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.052 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 27.8KB | `entities/generalization-dynamics-lm-pretraining.md`
 
@@ -5372,7 +5407,7 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 
 ---
 
-## Ch15.052 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.053 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 21.4KB | `entities/generalization-dynamics-pre-training-jiaxin-wen.md`
 
@@ -5687,7 +5722,7 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 
 ---
 
-## Ch15.053 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
+## Ch15.054 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
 > 📊 Level ⭐⭐⭐⭐ | 7.0KB | `entities/what-ive-been-building-atom-report-post-training-course-fini.md`
 
@@ -5756,7 +5791,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 
 ---
 
-## Ch15.054 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.055 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md`
 

@@ -61,8 +61,8 @@ Agent Protocol → MCP Tool Calling → A2A Collaboration → Harness Skill
 - [claude-code-7-layer-memory-architecture](../ch03/075-claude-code.html)
 - [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 - [huashu-design 2.0 — agent skill 反收敛三套逻辑](../ch01/214-0.html)
-- [introducing the mdn mcp server](../ch01/951-20.html)
-- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/551-agentic-ai.html)
+- [introducing the mdn mcp server](../ch01/956-20.html)
+- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/552-agentic-ai.html)
 
 ---
 

@@ -18,7 +18,7 @@
 - [Harness Engineering Framework](../ch05/066-harness-engineering.html)
 - [Agent Harness 12 Components 7 Decisions](../ch05/039-agent-harness.html)
 - [From Prompt To Harness Claude Official](../ch05/018-harness.html)
-- [Agentcore Harness](ch04/479-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [Agentcore Harness](ch04/480-amazon-bedrock-agentcore-harness-ga-api-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentcore-managed-harness.md)
 

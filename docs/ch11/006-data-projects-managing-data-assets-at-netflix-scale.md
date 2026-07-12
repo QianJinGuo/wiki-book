@@ -2,7 +2,7 @@
 
 ## Ch11.006 Data Projects: Managing Data Assets at Netflix Scale
 
-> 📊 Level ⭐ | 3.4KB | `entities/data-projects-managing-data-assets-at-netflix-scale.md`
+> 📊 Level ⭐ | 3.8KB | `entities/data-projects-managing-data-assets-at-netflix-scale.md`
 
 # Data Projects: Managing Data Assets at Netflix Scale
 

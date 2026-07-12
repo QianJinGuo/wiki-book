@@ -408,7 +408,7 @@ artifacts:
 → [Openspec Spec Driven Development Trae Solo](../ch05/049-openspec.html) — OpenSpec 单项目深度
 → [Openspec 四步法深度复盘 流程完整不等于代码正确](../ch05/049-openspec.html) — OpenSpec 四步法实战复盘
 → [Ai Production Development Workflow Openspec Superpowers Gstack](../ch05/049-openspec.html) — gstack + OpenSpec + Superpowers 生产级实践
-→ [Claude Code Skills Superpowers Practice](ch01/520-claude-code-skills-superpowers.html) — Claude Code + Superpowers 实践
+→ [Claude Code Skills Superpowers Practice](ch01/523-claude-code-skills-superpowers.html) — Claude Code + Superpowers 实践
 → [Hermes Agent Skills Source Code Analysis Shuge](../ch04/405-hermes-agent-skills.html) — 术哥本人对 Hermes Agent Skills 的源码分析（方法论参照）
 → [缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记](../ch05/049-openspec.html) — 同期同作者 24h 后反思
 
