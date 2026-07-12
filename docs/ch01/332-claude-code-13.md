@@ -100,7 +100,7 @@ microCompact 通过 `cache_edits` 保留本地消息不变，解决的是"cache 
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.html)
 - [Claude Code Prompt 提示词体系源码解析](../ch09/060-claude-code-prompt.html)
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/075-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/471-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/472-claude-code-harness-deep-understanding.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

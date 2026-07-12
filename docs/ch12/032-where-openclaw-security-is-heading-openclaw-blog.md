@@ -58,7 +58,7 @@ Loose files 作为运行时状态存储存在的问题：文件可能被篡改�
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/where-openclaw-security-is-heading-openclaw-blog.md)
 
 ## 相关实体
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1122-openclaw-agent.html)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1128-openclaw-agent.html)
 
 - [The Agency Model Dangers](https://github.com/QianJinGuo/wiki/blob/main/concepts/the-agency-model-dangers.md)
 

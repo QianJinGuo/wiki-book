@@ -30,12 +30,12 @@
 
 ## 相关实体
 - [Anthropic PM 的 Agentic 工作流](../ch04/442-anthropic-pm-agentic.html)
-- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](ch12/108-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.html)
+- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](ch12/109-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
 
-- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](../ch01/885-anthropic.html)
-- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](../ch01/885-anthropic.html)
+- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](../ch01/890-anthropic.html)
+- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](../ch01/890-anthropic.html)
 - [dario amodei 2026 policy on the ai exponential](../ch05/082-ai.html)
 
 ---

@@ -62,8 +62,8 @@ TeamPCP 并非首次对 Checkmarx 发起攻击——2026 年 3 月就曾入侵 c
 ---
 ## 相关实体
 - [Npm Supply Chain Compromise Postmortem](../ch05/082-ai.html)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch01/730-scarcruft.html)
-- [Semgrep Intercom Php Supply Chain](../ch12/115-semgrep-intercom-php-supply-chain.html)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch01/736-scarcruft.html)
+- [Semgrep Intercom Php Supply Chain](../ch12/116-semgrep-intercom-php-supply-chain.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch05/082-ai.html)
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](../ch12/035-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)

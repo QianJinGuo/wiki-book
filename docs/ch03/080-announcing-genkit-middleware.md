@@ -108,7 +108,7 @@ Middleware 链会增加每次调用的延迟：
 - [Pi Mono](ch03/070-pi-mono-ai-agent-openclaw.html)
 - [Microsoft Agent Framework Structured Output](ch03/045-agent.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/018-harness.html)
-- [Skillsui](ch03/098-skillsui.html)
+- [Skillsui](ch03/099-skillsui.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/developers.googleblog-announcing-genkit-middleware-intercept-extend-and-harden-y.md)
 

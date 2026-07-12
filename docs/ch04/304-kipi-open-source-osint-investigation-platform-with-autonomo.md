@@ -148,7 +148,7 @@ export ANTHROPIC_API_KEY=sk-ant-...    # 唯一必需的 key
 - 依赖 Anthropic API，调查成本随图谱规模增长
 - 自主 Agent 的调查质量取决于目标网站的反爬措施
 - 证据分级系统仍需人工校准
-- 与 [prompt injection](../ch01/862-github.html) 相关的安全风险：Agent 处理的网页内容可能包含恶意指令
+- 与 [prompt injection](../ch01/792-github.html) 相关的安全风险：Agent 处理的网页内容可能包含恶意指令
 
 ### 与同类工具对比
 
@@ -166,7 +166,7 @@ export ANTHROPIC_API_KEY=sk-ant-...    # 唯一必需的 key
 - [Claude Code Workflows](../ch09/083-claude-code-dynamic-workflows.html) — Agent 动态工作流
 - [SchemaFlow](ch04/235-agentic.html) — 结构化数据的 LLM 约束
 - [Gray Swan](https://github.com/QianJinGuo/wiki/blob/main/entities/latent-space-p-gray-swan.md) — AI 安全与 red-teaming
-- [Role Confusion](../ch01/862-github.html) — Prompt injection 理论
+- [Role Confusion](../ch01/792-github.html) — Prompt injection 理论
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kipi-osint-autonomous-agent-investigation.md)
 

@@ -10,7 +10,7 @@
 >
 ## 相关实体
 
-- [discord 全平台端到端加密](ch12/094-discord.html)
+- [discord 全平台端到端加密](ch12/096-discord.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-security-and-feature-enhancement-practices.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
@@ -125,7 +125,7 @@ OpenClaw 不是孤例——任何"本地优先、用户自治、跨消息通道"
 - [Claude Code vs OpenClaw Memory 对比](../ch03/075-claude-code.html)
 - [Claude Code vs OpenClaw Memory 向量数据库之争](../ch03/075-claude-code.html)
 - [Claude Code vs OpenClaw 使用 Ettin](../ch09/034-claude-code-openclaw-usage-ettin.html)
-- [Claude Managed Agents 自托管沙箱企业版](../ch04/652-claude-managed-agents.html)
+- [Claude Managed Agents 自托管沙箱企业版](../ch04/655-claude-managed-agents.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
