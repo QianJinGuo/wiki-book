@@ -260,8 +260,8 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 
 ### 与 Cloud Agent 基础设施
 - [Development environments for your cloud agents](../ch03/045-agent.html) = Cursor 视角：dev environment 配置工具 + 多 repo 环境——**关注 dev tooling**，本文关注 **production runtime 隔离与凭据**
-- [Cloudflare + Claude Managed Agents](../ch01/107-announcing-claude-managed-agents-on-cloudflare.html) = "脑手分离"架构：推理在 Anthropic 平台 + 代码执行在 Cloudflare Sandboxes——**关注架构分工**，本文关注 **平台自身的 hot-swap + 凭据隔离**
-- [Claude Managed Agents 企业边界更新](../ch04/652-claude-managed-agents.html) = 同一系列，**关注企业 hybrid control plane**（self-hosted + Anthropic 推理）
+- [Cloudflare + Claude Managed Agents](../ch01/108-announcing-claude-managed-agents-on-cloudflare.html) = "脑手分离"架构：推理在 Anthropic 平台 + 代码执行在 Cloudflare Sandboxes——**关注架构分工**，本文关注 **平台自身的 hot-swap + 凭据隔离**
+- [Claude Managed Agents 企业边界更新](../ch04/655-claude-managed-agents.html) = 同一系列，**关注企业 hybrid control plane**（self-hosted + Anthropic 推理）
 
 ### 与多租户 / Serverless Agent
 - [OpenClaw → Bedrock AgentCore 多租户迁移](../ch04/520-amazon-bedrock-agentcore.html) = 阿里云/AWS 的多租户 serverless 路径，**关注迁移路径**

@@ -152,7 +152,7 @@
 | [Aliyun Cms2 Cli Skill Natural Language Observability](ch04/266-skill.html) | **接入层** | CMS2 Skill 化（CLI 6 步 + K8s 自动注入 + 5 大场景） |
 | [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](../ch05/066-harness-engineering.html) | **同源早期表述** | 2026-04-29 阿里云"一晚上自动评测和优化你的系统"平台（评测→优化三轮 90.7→97.4→99.1），可能是 AgentLoop 早期形态或同系列产品 |
 | [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/045-agent.html) | **理论框架** | 阿里"四阶段六维度"Agent 进化理论框架 |
-| [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/156-amazon-bedrock.html) | **AWS 平行方案** | Amazon Bedrock AgentCore Quality Evaluations |
+| [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/157-amazon-bedrock.html) | **AWS 平行方案** | Amazon Bedrock AgentCore Quality Evaluations |
 | [Better Harness Eval Trace Harness Hill Climbing](../ch05/018-harness.html) | **trace 评估方法** | trace 级 harness 爬坡的工程方法 |
 
 ## 六、关键概念辨析

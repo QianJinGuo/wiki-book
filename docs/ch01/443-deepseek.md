@@ -18,7 +18,7 @@
 说起来，赶在五一长假之前丢个重磅论文，这风格还真挺特么DeepSeek的，熟悉的味道又回来了。以及，这次内容真的太长了，建议你可以先收藏了，假期里无聊的时候慢慢读，我这五一期间尽量...尽量不卷了，不给各位增加阅读负担。
 
 ## 相关实体
-- [Pi Mono Github](ch01/799-pi-mono-github.html)
+- [Pi Mono Github](ch01/804-pi-mono-github.html)
 - [From Prompt To Harness Claude Official](../ch05/018-harness.html)
 - [Cursor Harness Model Production Floor](ch01/336-cursor-harness-model-production-floor.html)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/416-vibe-coding-agentic-engineering.html)

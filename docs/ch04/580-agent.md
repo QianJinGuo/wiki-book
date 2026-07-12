@@ -1,49 +1,56 @@
-# 智能问数Agent--数据智能体-火山引擎
+# Agent核心技术概念与范式发生了哪些演变以及背后的思考
 
-## Ch04.580 智能问数Agent--数据智能体-火山引擎
+## Ch04.580 Agent核心技术概念与范式发生了哪些演变以及背后的思考
 
-> 📊 Level ⭐⭐ | 3.6KB | `entities/volcengine-data-agent-intelligent-query-agent.md`
+> 📊 Level ⭐⭐ | 3.7KB | `entities/agent-paradigm-evolution-feipeng-alibaba.md`
 
-# 智能问数Agent--数据智能体-火山引擎
+# Agent核心技术概念与范式发生了哪些演变以及背后的思考
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/volcengine-data-agent-intelligent-query-agent.md)
+## 相关实体
 
+- [《从零实现 agent 系统》连载 01｜agent 系统是什么：问题空间与架构切片](../ch03/045-agent.html)
+- [cola dlm：字节跳动连续潜空间扩散语言模型](../ch01/409-cola-dlm.html)
+- [explicit vs. implicit in the age of intelligences — le secré](../ch05/082-ai.html)
+- [review agent：后台复盘 agent 如何判断什么值得保存](../ch03/045-agent.html)
+- [不用再学ai了！生成结果包稳的agent来了](../ch03/045-agent.html)
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-paradigm-evolution-feipeng-alibaba.md)
+
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析
 
-智能问数Agent--数据智能体-火山引擎 涉及agent领域的核心技术议题。
+Agent核心技术概念与范式发生了哪些演变以及背后的思考 涉及agent领域的核心技术议题。
 ### 核心观点
-1. # 智能问数Agent--数据智能体-火山引擎
-**智能分析Agent是一款基于AI深度思考与大数据分析的专家顾问**。
-2. 分析Agent包含智能问数Agent和深度研究Agent，**智能问数Agent**作为一款灵活配置的智能问数工具，可以让用户以简单对话的方式更准确地查询业务数据，支持多数据集查询、语义模型解析、业务知识调用、问题推荐与收藏、个性化推送、多轮交互式问数，以及归因分析等，能够全方位满足用户多样化的数据查询需求。
-3. ## 功能概述
-智能分析 Agent 的智能问数 Agent 功能可通过自然语言对话精准解析用户意图，实现多数据集协同查询与深度归因分析，辅以个性化推荐、多轮交互等功能，为用户提供高效、精准、统一的数据查询服务。
-4. ## 具体功能
-- **推荐问题**：提前将团队大多数用户关心的问题内置到智能体，其他用户点击问题即可快速查询。
-5. - **收藏问题**：将自己常问的问题收藏起来，下次直接点击即可快速查询。
+1. # Agent核心技术概念与范式发生了哪些演变以及背后的思考
+**作者：** 飞樰
+**发布日期：** 2026年6月1日
+梳理 Agent 技术从2023-2026年的四个阶段演进（被动ReAct→工作流→自主→自进化）及六大核心维度（Prompt/Planning/Memory/Tools/Workflow/Environment）的技术概念变化。
+2. 强调四个阶段非替代关系而是并存互补。
+3. 核心洞察：宏观架构"形"未变，内核已重构——从"人为适配模型"到"利用模型原生能力"，从"刚性约束"到"动态智能"。
+4. （本文覆盖的4阶段+6维度Agent框架已由 entity [Agent 四阶段演化与六维度技术变化](../ch03/045-agent.html) 完整收录。
+5. ）
+### Prompt：渐进式披露
+System Prompt 从"单体大作文"到"System Prompt + 渐进式加载上下文文件"的解耦。
 
 ### 内容结构
-- 智能问数Agent--数据智能体-火山引擎
-- 功能概述
-- 具体功能
-- 应用场景
-- 支持的数据集类型
-- 查询结果分析
-- 常见图表分析
-- 数据解读
+- Agent核心技术概念与范式发生了哪些演变以及背后的思考
+- Prompt：渐进式披露
+- Memory：文件系统化+向量混合
+- Tools：CLI 命令行原生化
+- 总结框架
 
 ### 技术要点
 
 - **agent架构**: 本文在agent方向提出的设计理念与实现路径
 - **工程挑战**: 实际落地中面临的关键问题与应对策略
-- **data趋势**: 相关技术演进方向与新兴范式
+- **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/225-openclaw.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/225-openclaw.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/066-harness-engineering.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/045-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/132-karpathy-vibe-coding-agentic-engineering.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/045-agent.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

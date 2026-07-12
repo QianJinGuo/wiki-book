@@ -117,7 +117,7 @@ Mollick 给整篇文章的总结：
 
 ### 7. 与 OpenAI Codex 演进的方向对照
 
-Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/538-codex.html) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
+Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/542-codex.html) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
 
 ## 实践启示
 
@@ -188,16 +188,16 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 ## 相关实体
 
 - [Code As Agent Harness Survey](../ch09/052-code-as-agent-harness.html)
-- [GPT-5.4 Codex 进展](ch01/538-codex.html)
+- [GPT-5.4 Codex 进展](ch01/542-codex.html)
 - [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
 - [Karpathy Agentic Engineering 综述](../ch04/132-karpathy-vibe-coding-agentic-engineering.html)
 - [AgentOps on Bedrock](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Yann Dubois OpenAI 后训练访谈](ch01/449-openai.html)
 - [GPT-5.5 Copilot Session 设计](../ch07/015-wiki-evolver.html)
-- [AI Agent Harness 构建](ch01/1060-ai-agent-harness.html)
+- [AI Agent Harness 构建](ch01/1065-ai-agent-harness.html)
 - [Harness 状态边界与失败闭环](../ch05/018-harness.html)
 - [Agent Vibecoder 上下文压缩](../ch03/045-agent.html)
-- [腾讯混元 HY3 开源预览](ch01/114-hy3-preview.html)
+- [腾讯混元 HY3 开源预览](ch01/115-hy3-preview.html)
 - [Agent 记忆系统工程实践](../ch03/045-agent.html)
 
 ---

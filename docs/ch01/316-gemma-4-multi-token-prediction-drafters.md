@@ -211,8 +211,8 @@ MTP drafters 对 Apple Silicon 的适配揭示了 MoE（混合专家）模型在
 [^8]: 同上 — 官方技术文档链接 https://ai.google.dev/gemma/docs/mtp/overview?hl=zh-cn
 
 ## 相关实体
-- [Aws Fsx Lustre Gpudirect Sharded Llm Loading](ch01/947-llm.html)- [tliveomni vllm 适配与量化方案](ch01/888-vllm.html)
-- [diffusiongemma：扩散式文本生成模型（google 26b moe，4× 推理加速）](ch01/607-gemma-4.html)
+- [Aws Fsx Lustre Gpudirect Sharded Llm Loading](ch01/618-llm.html)- [tliveomni vllm 适配与量化方案](ch01/893-vllm.html)
+- [diffusiongemma：扩散式文本生成模型（google 26b moe，4× 推理加速）](ch01/612-gemma-4.html)
 
 ---
 

@@ -72,7 +72,7 @@ METR 测出 41x（16 个月）：Sonnet 3.5 (new) 21 分钟 → Opus 4.6 的 12 
 - [AI Team 知识 Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)
 
 ## 相关实体
-- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](../ch01/885-anthropic.html)
+- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](../ch01/890-anthropic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

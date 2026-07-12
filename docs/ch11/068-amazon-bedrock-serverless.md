@@ -45,7 +45,7 @@ Amazon Bedrock模型推理的Serverless 异步架构 – 处理在线多模态�
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
 
-- [redis agentic ai flowers with iris](../ch01/715-9.html)
+- [redis agentic ai flowers with iris](../ch01/721-9.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mcp-server-patterns.md)

@@ -74,10 +74,10 @@ ACI 接下来 18 个月的工作包括：建立工作组、定义试点项目、
 - [Ai Traffic Cyberthreat Benchmark 2026](../ch05/082-ai.html)
 - [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/030-ai-agent.html)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/807-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/812-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
 - [5237875](https://github.com/QianJinGuo/wiki/blob/main/entities/5237875.md)
-- [820297](../ch01/951-20.html)
+- [820297](../ch01/956-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

@@ -68,7 +68,7 @@ Layer 5: 强制回滚机制 — 所有修改类工具必须附带降级回滚逻
 3. Token 如何**花在刀刃上**（L0/L1/L2 三级分层 + PreCompact 压缩续接）
 
 ## 相关概念
-- [Factory Mission](../ch01/1197-factory-mission-multi-agent-architecture.html) — 同为 Agent Loop 架构，但 Mission 侧重多 Agent 编排，易点天下侧重企业级单 Agent 深度工程
+- [Factory Mission](../ch01/1203-factory-mission-multi-agent-architecture.html) — 同为 Agent Loop 架构，但 Mission 侧重多 Agent 编排，易点天下侧重企业级单 Agent 深度工程
 ---
 *Last updated: 2026-05-08*
 *评审：Value 8 × Confidence 7 = 56 | ★★★★ | STRONG PASS*

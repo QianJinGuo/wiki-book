@@ -199,9 +199,9 @@ def aggregate_results(results):
 
 → [Skills Refiner Design Quality Evaluation Framework](../ch03/069-skills.html) — skill-creator 的质量评估补充工具
 
-→ [Ai Skill Metrics System](ch01/492-ai-skill.html) — AI Skill 测评指标体系
+→ [Ai Skill Metrics System](ch01/494-ai-skill.html) — AI Skill 测评指标体系
 
-→ [Ai Skill 四层验证体系](ch01/492-ai-skill.html) — SkillSentry 四层验证体系（四）
+→ [Ai Skill 四层验证体系](ch01/494-ai-skill.html) — SkillSentry 四层验证体系（四）
 
 ## 深度分析
 

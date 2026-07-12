@@ -135,8 +135,8 @@ MCP 协议支持是一个值得关注的长期差异化方向。随着 AI Agent 
 - [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
 - [Langgraph State Machine Under The Hood](../ch04/198-langgraph.html)
 - [Deepseek V4 Training 58 Page Paper Deep Dive](ch01/318-deepseek-v4.html)
-- [Minimax Agent Team Mavis Owner Worker Verifier](ch01/1241-owner-worker-verifier.html)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/885-anthropic.html)
+- [Minimax Agent Team Mavis Owner Worker Verifier](ch01/1247-owner-worker-verifier.html)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/890-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fusedash-generative-analytics-platform.md)
 

@@ -289,7 +289,7 @@ Spec 驱动原则强调项目评估、技术方案等前置环节的准确性—
 ### 9.3 实战案例相关
 
 - `raw/articles/agent-skill-iterative-writing-taobao-logistics.md`：**同公司（淘天集团）不同团队（物流技术 其林 2026-06-12）** 的 Skill 迭代式编写实战——**孤儿 raw 无 entity**（建议后续批处理整合，本文仅标注，不合并避免 scope creep）
-- [Ai Skills Middleware Migration Android Harmonyos Taobao 2026](../ch01/492-ai-skill.html)：淘天 AI Skills 中间件迁移（Android→HarmonyOS）
+- [Ai Skills Middleware Migration Android Harmonyos Taobao 2026](../ch01/494-ai-skill.html)：淘天 AI Skills 中间件迁移（Android→HarmonyOS）
 - [Agent Memory Evaluation Landscape Taobao Survey](ch04/121-agent-memory.html)：淘天 Agent Memory 评测综述
 
 ## 10. 孤儿 raw 提示（pre-existing issue）

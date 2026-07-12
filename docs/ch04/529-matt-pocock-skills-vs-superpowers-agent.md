@@ -66,7 +66,7 @@
 ## 关联
 
 - [Superpowers 三器合一](../ch05/095-ai-coding.html) — Superpowers 在 Comet+OpenSpec 流水线中的角色
-- [Agent vs Workflow 控制权连续谱](ch04/618-agent-vs-workflow.html) — "控制权交给谁"是这场路线之争的本质
+- [Agent vs Workflow 控制权连续谱](ch04/620-agent-vs-workflow.html) — "控制权交给谁"是这场路线之争的本质
 
 ---
 

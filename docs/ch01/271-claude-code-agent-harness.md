@@ -68,7 +68,7 @@ CLAUDE.md 文件从根目录向下逐层加载：
 
 **@include 指令**让一个 CLAUDE.md 可以拉入其他文件（最多 5 层深度）。**`git worktree` 兼容性**——避免同一份规则被重复加载。
 
-这与 [Claude Code Harness Deep Understanding](ch01/471-claude-code-harness-deep-understanding.html) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
+这与 [Claude Code Harness Deep Understanding](ch01/472-claude-code-harness-deep-understanding.html) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
 
 ### 4. 完整上下文包：用户消息只是冰山一角
 
@@ -182,7 +182,7 @@ Plan Mode 的本质是"权限系统里的状态切换"——技术上 Claude 仍
 
 **这一设计哲学揭示了 Agent 系统设计的一个深层原则**：**不要用权限禁锢 Agent，而要用行为引导**。完全禁止 Agent 做某些事会大幅降低其能力；通过提示词和行为约束引导它"先规划再执行"是更优雅的方案。
 
-这与 [Claude Managed Agents 企业自托管](../ch04/652-claude-managed-agents.html) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
+这与 [Claude Managed Agents 企业自托管](../ch04/655-claude-managed-agents.html) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
 
 ### 10. 终止原因的多样性：8 种退出路径
 
@@ -303,18 +303,18 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 
 - [两万字详解 Claude Code 源码核心机制](../ch03/075-claude-code.html)
 - [Claude Code Harness 深度解析](../ch05/064-claude-code-harness.html)
-- [Claude Code Harness 深度理解](ch01/471-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness 深度理解](ch01/472-claude-code-harness-deep-understanding.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](../ch03/045-agent.html)
 - [Harness Engineering Core Patterns](../ch05/066-harness-engineering.html)
 - [Harness 状态边界与失败闭环](../ch05/018-harness.html)
 - [Factory Mission Multi-Agent 系统](../ch03/045-agent.html)
-- [Claude Managed Agents 企业自托管](../ch04/652-claude-managed-agents.html)
+- [Claude Managed Agents 企业自托管](../ch04/655-claude-managed-agents.html)
 - [OpenClaw 多 Agent 团队实践](../ch04/048-openclaw-multi-agent-team-practice-v2.html)
 - [OpenClaw 完全指南](../ch11/225-openclaw.html)
 - [OpenClaw 多智能体团队搭建经验](../ch11/225-openclaw.html)
 - [Headroom Context Compression](../ch03/045-agent.html)
-- [AI Agent Harness 构建](ch01/1060-ai-agent-harness.html)
+- [AI Agent Harness 构建](ch01/1065-ai-agent-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

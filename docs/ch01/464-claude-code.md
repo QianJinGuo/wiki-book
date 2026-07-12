@@ -91,9 +91,9 @@ Anthropic 官方复盘 Claude Code 中三个工具的设计演进过程，揭示
 
 ## 关联阅读
 ## 相关实体
-- [Claude Code Harness Deep Understanding](ch01/471-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](ch01/472-claude-code-harness-deep-understanding.html)
 - [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](../ch03/075-claude-code.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/1166-anthropic-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/1171-anthropic-claude-code.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/064-claude-code-harness.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/075-claude-code.html)
 

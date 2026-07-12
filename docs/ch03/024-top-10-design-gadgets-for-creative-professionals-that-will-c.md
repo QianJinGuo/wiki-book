@@ -77,7 +77,7 @@ Acoustic        → Sony WH-1000XM6（声学环境管理）
 
 ## 相关实体
 - [Self-Filming Guide by Hello World Media](../ch01/214-0.html) — 自拍摄指南，含 Key Light MK.2 类似的打光建议
-- [How Superset built the IDE for AI agents on Vercel](../ch01/070-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [How Superset built the IDE for AI agents on Vercel](../ch01/071-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 
 ---
 

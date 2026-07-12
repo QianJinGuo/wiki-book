@@ -14,7 +14,7 @@
 
 - [Exaforce | Agentic SOC Platform and MDR](../ch04/023-exaforce-agentic-soc-platform-and-mdr.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/295-rag.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](ch01/1009-deepseek.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](ch01/1201-deepseek.html)
 
 ## 深度分析
 Exaforce 的两大运营模式——**自运营（Platform）** 和 **托管运营（MDR）**——代表了安全运营的两种主流需求：控制权 vs 省心力。前者适合有成熟安全团队的大型企业，后者让中小企业也能获得顶级 SOC 能力。相同架构、相同 Exabots、相同结果，只是运营责任转移。

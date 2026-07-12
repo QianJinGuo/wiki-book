@@ -7,7 +7,7 @@
 ## 相关实体
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/045-agent.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/471-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/472-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/018-harness.html)
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/075-claude-code.html)
@@ -30,7 +30,7 @@
 - [Claude Code 源码核心机制详解](../ch03/075-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/075-claude-code.html)
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1132-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1024-claude.html)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/075-claude-code.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.html)- - [Agent 原理、架构与工程实践](../ch03/045-agent.html)

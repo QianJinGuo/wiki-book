@@ -204,7 +204,7 @@ Benchmark70 任务全量复现：https://github.com/EvoMap/critpt-openclaw-repro
 
 2. **结构宽容 + 语义挑剔的鲁棒性边界**：stale_paradigm（过时算法范式）比 clean Gene 更高（56.6% vs 54.0%），但换错领域/换错算法立刻掉分。这说明 Gene 的有效条件是"**保留任务相关的控制框架**"，而非"写最新的方法"。过期框架只要结构对仍然有效；新方法如果框架错则直接拖累——这对 [GEPA 通用文本优化](../ch01/365-gepa-optimize-anything.html) 的"内容质量优先"前提是一个直接挑战。
 
-3. **GEP 协议是经验对象从"Prompt 片段"到"持久策略接口"的升格层**：没有协议，Gene 只是另一段 prompt——边界不稳、字段无法比较、不能累积。协议化后 Gene 变成可匹配、可替换、可修订、可组合的对象——这为 [OpenClaw Agent Loop 设计范式](../ch01/1122-openclaw-agent.html) 中多 Agent 之间的经验交换提供了标准化的接口规范。
+3. **GEP 协议是经验对象从"Prompt 片段"到"持久策略接口"的升格层**：没有协议，Gene 只是另一段 prompt——边界不稳、字段无法比较、不能累积。协议化后 Gene 变成可匹配、可替换、可修订、可组合的对象——这为 [OpenClaw Agent Loop 设计范式](../ch01/1128-openclaw-agent.html) 中多 Agent 之间的经验交换提供了标准化的接口规范。
 
 4. **"经验回到模型那一刻，长什么形状"是 Gene 最本质的命题**：这个问题的答案决定了 Agent 在测试时能进化成什么样。[Harness 7 层](../ch05/066-harness-engineering.html)框架中，Gene 对应的是"控制对象层"——而这一层在之前的 harness 设计中几乎被完全忽视，所有设计努力都集中在 context 填充和 memory 系统上。
 
@@ -228,7 +228,7 @@ Benchmark70 任务全量复现：https://github.com/EvoMap/critpt-openclaw-repro
 - [Anthropic Agent Skills Design Patterns 14](../ch04/277-anthropic-agent.html) — Anthropic 官方 14 个 Skill 设计模式
 - [Darwin Skill 2 Huashu](../ch04/266-skill.html) — Darwin Skill 互优化
 - [Hermes Agent Skill Crossover Optimization](../ch01/400-hermes-agent-skill.html) — Hermes Agent Skill 互优化（达尔文闭环）
-- [Openclaw Agent Loop Design Patterns](../ch01/1122-openclaw-agent.html) — OpenClaw Agent Loop 设计范式
+- [Openclaw Agent Loop Design Patterns](../ch01/1128-openclaw-agent.html) — OpenClaw Agent Loop 设计范式
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/066-harness-engineering.html) — Harness 7 层 (OpenClaw/Hermes/Claude Code)
 - [Gepa Optimize Anything](../ch01/365-gepa-optimize-anything.html) — GEPA 通用文本优化（与 Gene 不同的优化路径）
 

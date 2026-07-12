@@ -13,7 +13,7 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - **评分**: score=80
 
 ## 与现有知识库内容的关联
-- [Claude Managed Agents](ch04/652-claude-managed-agents.html) — 托管 Harness 平台
+- [Claude Managed Agents](ch04/655-claude-managed-agents.html) — 托管 Harness 平台
 - [Agent/Skills/Teams 架构演进与选型](ch04/236-agent-skills-teams.html) — Anthropic Skills 认知一致性机制
 - [Skill 形式化理论](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) — Skill 的六元组定义与 DAG 步骤计划
 
@@ -29,8 +29,8 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 ## 相关实体
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/475-anthropic-google-agent-skills.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/385-agent-skills.html)
-- [Anthropic 官方 14 种 Skill 设计模式](../ch01/885-anthropic.html)
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/691-skills-anthropic-openai-comparison-frontend-design.html)
+- [Anthropic 官方 14 种 Skill 设计模式](../ch01/890-anthropic.html)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/697-skills-anthropic-openai-comparison-frontend-design.html)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/385-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/045-agent.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/034-qoder-skills.html)
@@ -46,8 +46,8 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/266-skill.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/266-skill.html)
-- [Anthropic Computer Use 最佳实践](../ch01/859-anthropic-computer-use.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1132-claude.html)
+- [Anthropic Computer Use 最佳实践](../ch01/864-anthropic-computer-use.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1024-claude.html)
 - [SkillClaw](ch04/439-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
 
