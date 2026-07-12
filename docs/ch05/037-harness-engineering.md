@@ -144,13 +144,13 @@ OpenAI 的经验（大量规则塞进 AGENTS.md 会失败）和 Claude Code 的�
 
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/132-karpathy-vibe-coding-agentic-engineering.html)
 - [Code as Agent Harness 综述](../ch09/052-code-as-agent-harness.html)
-- [AI Skill 测评指标体系](../ch01/492-ai-skill.html)
+- [AI Skill 测评指标体系](../ch01/494-ai-skill.html)
 
 ## Related
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/066-harness-engineering.html)
 
 - [RAG 全链路技术详解：从文档加载到 Ragas 评估](../ch01/295-rag.html)
-- [AgentCore Managed Harness](../ch04/479-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [AgentCore Managed Harness](../ch04/480-amazon-bedrock-agentcore-harness-ga-api-agent.html)
 - [Agent Harness 解析：智能体架构深度拆解](ch05/039-agent-harness.html)
 - [From Agent Protocol to Harness Skill](../ch04/397-from-agent-protocol-to-harness-skill.html)
 - [Claude Code 架构深度解析](../ch03/075-claude-code.html)

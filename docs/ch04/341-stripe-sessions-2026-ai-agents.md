@@ -14,7 +14,7 @@
 
 ## 相关资源
 - [Agent Memory 架构](ch04/398-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [Claude Managed Agents 开发者指南](ch04/652-claude-managed-agents.html)
+- [Claude Managed Agents 开发者指南](ch04/655-claude-managed-agents.html)
 
 ## 深度分析
 **1. Stripe 押注"AI 原生经济基础设施"战略定位的本质跃迁**
@@ -42,14 +42,14 @@ Stripe Treasury 年底前将在 US、UK 支持 15 种货币存储，并扩展至
 
 ## 相关实体
 - [stripe sessions 2026 ai](ch04/411-stripe-sessions-2026-ai.html)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/131-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [Inngest - AI in Production: The 2026 Benchmark Report](../ch01/571-inngest-ai-in-production-the-2026-benchmark-report.html)
-- [How Superset built the IDE for AI agents on Vercel](../ch01/070-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/132-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
+- [Inngest - AI in Production: The 2026 Benchmark Report](../ch01/575-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [How Superset built the IDE for AI agents on Vercel](../ch01/071-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [How to Detect AI Agents on Your Website | Full Guide](ch04/030-ai-agent.html)
-- [AI-powered honeypots: Turning the tables on malicious AI agents](../ch01/075-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
+- [AI-powered honeypots: Turning the tables on malicious AI agents](../ch01/076-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [十年老技术开发的 ai agent 探索之路](ch04/030-ai-agent.html)
-- [entrypoint hijacking](../ch01/148-entrypoint-hijacking.html)
+- [entrypoint hijacking](../ch01/149-entrypoint-hijacking.html)
 
 ---
 

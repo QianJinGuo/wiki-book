@@ -13,7 +13,7 @@
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/045-agent.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/018-harness.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/471-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/472-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/075-claude-code.html)
 - [Agent Harness 架构](../ch05/039-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/045-agent.html)

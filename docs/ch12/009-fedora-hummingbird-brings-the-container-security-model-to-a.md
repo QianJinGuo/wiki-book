@@ -37,7 +37,7 @@ Databricks、PyTorch 缔造者、OpenAI / Thinking Machines / xAI 的一线人�
 - [Fedora Hummingbird Container Security](../ch05/082-ai.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md)
-- [The It And Security Field Guide To Ai Adoption Tines](ch12/080-the-it-and-security-field-guide-to-ai-adoption-tines.html)
+- [The It And Security Field Guide To Ai Adoption Tines](ch12/081-the-it-and-security-field-guide-to-ai-adoption-tines.html)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fedora-hummingbird-container-security.md)
