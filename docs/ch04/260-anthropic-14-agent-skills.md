@@ -13,7 +13,7 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - **评分**: score=80
 
 ## 与现有知识库内容的关联
-- [Claude Managed Agents](ch04/655-claude-managed-agents.html) — 托管 Harness 平台
+- [Claude Managed Agents](ch04/660-claude-managed-agents.html) — 托管 Harness 平台
 - [Agent/Skills/Teams 架构演进与选型](ch04/236-agent-skills-teams.html) — Anthropic Skills 认知一致性机制
 - [Skill 形式化理论](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) — Skill 的六元组定义与 DAG 步骤计划
 
@@ -27,11 +27,11 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - **SHA256**: b86edc6b7fd2278a2e205739e276ed9e303e16467d5b600254cc879cf2bea8e4
 
 ## 相关实体
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/475-anthropic-google-agent-skills.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/385-agent-skills.html)
-- [Anthropic 官方 14 种 Skill 设计模式](../ch01/890-anthropic.html)
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/697-skills-anthropic-openai-comparison-frontend-design.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/385-agent-skills.html)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/477-anthropic-google-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/387-agent-skills.html)
+- [Anthropic 官方 14 种 Skill 设计模式](../ch01/893-anthropic.html)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/700-skills-anthropic-openai-comparison-frontend-design.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/387-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/045-agent.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/034-qoder-skills.html)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/264-agent-skill.html)
@@ -40,18 +40,18 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - [你写的 Skill，及格了吗？](ch04/266-skill.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch12/030-mythos.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [Anthropic Claude Managed Agents 平台正式发布](../ch01/283-anthropic-claude-managed-agents.html)
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/391-aws-sagemaker-ai-agent.html)
+- [Anthropic Claude Managed Agents 平台正式发布](../ch01/278-anthropic-claude-managed-agents.html)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/393-aws-sagemaker-ai-agent.html)
 - [SkillX — 层次化技能知识库](../ch07/051-skillx.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/266-skill.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/266-skill.html)
-- [Anthropic Computer Use 最佳实践](../ch01/864-anthropic-computer-use.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1024-claude.html)
-- [SkillClaw](ch04/439-skillclaw-nacos-agent-skill-registry.html)
+- [Anthropic Computer Use 最佳实践](../ch01/867-anthropic-computer-use.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1085-claude.html)
+- [SkillClaw](ch04/441-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
 
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/385-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/387-agent-skills.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)

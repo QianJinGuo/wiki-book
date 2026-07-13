@@ -61,7 +61,7 @@ Google 明确指出网站需为 AI 代理做好视觉 UI 优化（而非 API-onl
 **自适应响应而非简单屏蔽**：保险公司通过检测到的 Bot 在 quoting flow 末端展示"contact us"屏幕而非生成报价，防止价格数据泄露到竞争对手/聚合平台；可构建识别 AI 代理后提供 purpose-built view 的机制，而非简单 block。Bot 检测 + fingerprinting + 账户活动信号协同工作，在自动化活动呈现欺诈特征时触发 enforcement actions 。
 **信号交叉验证的必要性**：TLS 指纹（JA3/JA4）可发现声称是 Chrome 但 TLS 指纹实际是 Python script 的 mismatch；IP 地理位置与浏览器时区/语言的不一致是强力信号；WebGL 报告强大 GPU 但 Canvas 输出不匹配，或 Audio context fingerprint 完全缺失，表明被篡改；设备声明的 GPU、屏幕分辨率和操作系统组合需符合逻辑（如 375x812 移动分辨率报告桌面 NVIDIA GPU on Linux 明显不合理） 。
 **长期应对**：检测信号需持续演进，AI 代理变得更智能，今日的检测信号明日可能被 patch。需持续收集行为数据并用 AI 模型 surface 新模式，同时关注 Browserbase 的 AI agent "passport" 加密验证凭证是否成为行业标准——若成为标准，AI 流量过滤将对组织更容易 。
-> [!contradiction] 另参见 [Anthropic](../ch01/890-anthropic.html) 持相反观点 — Anthropic 主张 Model Context Protocol (MCP) 将成为 AI 代理与网站交互的主流范式，浏览器层检测的必要性将被 API 层替代
+> [!contradiction] 另参见 [Anthropic](../ch01/893-anthropic.html) 持相反观点 — Anthropic 主张 Model Context Protocol (MCP) 将成为 AI 代理与网站交互的主流范式，浏览器层检测的必要性将被 API 层替代
 
 ---
 

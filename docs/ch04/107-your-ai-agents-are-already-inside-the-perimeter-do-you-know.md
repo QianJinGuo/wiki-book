@@ -173,7 +173,7 @@ Orchid 的方法论建立在五个核心原则之上：
 
 ## 相关实体
 
-- [We Scanned 1 Million Exposed AI Services](../ch05/082-ai.html) — 同一来源的后续大规模 AI 安全扫描报道
+- [We Scanned 1 Million Exposed AI Services](../ch05/084-ai.html) — 同一来源的后续大规模 AI 安全扫描报道
 - [新型 OAuth 网络钓鱼](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-com-the-new-phishing-click-how-oauth.md) — 身份黑暗物质与钓鱼攻击的关联
 - [AI 代理安全架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) — AI 代理治理的安全架构原则
 - [AI 代理安全威胁模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md) — 相关的威胁建模概念

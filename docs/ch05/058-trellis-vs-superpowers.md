@@ -148,9 +148,9 @@ Phase 3: Finish  → 验证、回写 spec、提交、归档
 
 ## 互补关系
 
-- → [GSD vs OpenSpec vs Superpowers 源码对比](ch05/076-gsd-openspec-superpowers-context-rot.html)（同一作者的前作，聚焦 context rot）
+- → [GSD vs OpenSpec vs Superpowers 源码对比](ch05/078-gsd-openspec-superpowers-context-rot.html)（同一作者的前作，聚焦 context rot）
 - → [Superpowers v6 SDD 重写](https://github.com/QianJinGuo/wiki/blob/main/entities/superpowers-6-sdd-review-redesign-file-handoff.md)（SDD 细节补充）
-- → [Superpowers 深度解析](ch05/082-ai.html)（superpowers 全景）
+- → [Superpowers 深度解析](ch05/084-ai.html)（superpowers 全景）
 
 ---
 

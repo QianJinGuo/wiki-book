@@ -34,7 +34,7 @@ Drupal 此次安全更新的紧急程度体现在其发布的措辞中："exploi
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Funnel Builder Flaw Under Active Exploitation Enables Woocommerce Checkout Skimm](ch12/098-funnel-builder-flaw-under-active-exploitation-enables-woocom.html)
 - [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](ch12/062-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/956-20.html)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/959-20.html)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch12/059-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/drupal-core-security-drupal-to-release-urgent-core-security.md)
