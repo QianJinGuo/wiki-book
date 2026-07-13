@@ -56,7 +56,7 @@ Boris 提出了 5 条让 Opus 系统自动运行数小时或数天的技巧：
 ## 与已有实体的关联
 
 - [OpenClaw 技术架构分析](../ch03/045-agent.html) — 本文补充了设计哲学层面的循环范式
-- [Agent 架构演进](ch04/645-17-agent.html) — 可作为循环阶段的系统性补充
+- [Agent 架构演进](ch04/650-17-agent.html) — 可作为循环阶段的系统性补充
 - [Hermes Agent 0.14 架构](../ch03/090-hermes-agent.html) — 具体实现层面的循环机制
 
 ## 核心论点

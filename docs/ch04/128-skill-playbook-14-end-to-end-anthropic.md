@@ -155,12 +155,12 @@ Skill 没触发
 
 **本实体关注"鹅厂一线 14 章节 end-to-end 完整 Playbook + 5 大评估指标 + Skill Creator 工程化评估 3 阶段"**。
 
-- [Anthropic 14 Skill Patterns Best Practices](../ch01/384-anthropic-14-skill.html) — 60KB，14 patterns 5 类（发现与选择/上下文经济/指令校准/工作流控制/可执行代码）。本实体是**鹅厂实战版完整 Playbook**（14 章节顺序结构），那个是**14 设计模式分类索引**。两者互补：patterns 提供分类视角，playbook 提供流程视角。
+- [Anthropic 14 Skill Patterns Best Practices](../ch01/379-anthropic-14-skill.html) — 60KB，14 patterns 5 类（发现与选择/上下文经济/指令校准/工作流控制/可执行代码）。本实体是**鹅厂实战版完整 Playbook**（14 章节顺序结构），那个是**14 设计模式分类索引**。两者互补：patterns 提供分类视角，playbook 提供流程视角。
 - [Agent Skill Writing Guide](ch04/264-agent-skill.html) — 21KB，"从 0 到 1" 入门级（岗位职责说明书 + SOP + 避坑指南）。本实体是**进阶 + 团队管理 + 工程化评估**的扩展版。
-- [Ai Skill Skill Creator 源码拆解](ch04/423-skill-skill.html) — 28KB，skill-creator 源码深度拆解（3 Agent 评审）。本实体是 Skill Creator **5 步工作流 + 3 阶段评估的实战使用**视角，那个是**源码内部机制**视角。
-- [Ai Skill 四层验证体系](../ch01/494-ai-skill.html) — Skill 四层验证体系（已覆盖部分质量评估）。本实体是**5 大指标 + 工程化评估 3 阶段**的补充扩展。
-- [Ai Skill 测评指标体系](../ch01/494-ai-skill.html) / [Ai Skill 测评报告解读](../ch01/494-ai-skill.html) / [Ai Skill 测评体系进阶指南](../ch01/494-ai-skill.html) / [Ai Skill 测试用例设计](../ch01/494-ai-skill.html) / [Ai Skill 测评指标体系](../ch01/494-ai-skill.html) — AI Skill 测评系列（覆盖部分指标体系）。本实体是**腾讯视角的工程化评估**，与系列互补。
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/385-agent-skills.html) — Anthropic 官方 14 patterns 译本。命名相似但内容不同。
+- [Ai Skill Skill Creator 源码拆解](ch04/425-skill-skill.html) — 28KB，skill-creator 源码深度拆解（3 Agent 评审）。本实体是 Skill Creator **5 步工作流 + 3 阶段评估的实战使用**视角，那个是**源码内部机制**视角。
+- [Ai Skill 四层验证体系](../ch01/493-ai-skill.html) — Skill 四层验证体系（已覆盖部分质量评估）。本实体是**5 大指标 + 工程化评估 3 阶段**的补充扩展。
+- [Ai Skill 测评指标体系](../ch01/493-ai-skill.html) / [Ai Skill 测评报告解读](../ch01/493-ai-skill.html) / [Ai Skill 测评体系进阶指南](../ch01/493-ai-skill.html) / [Ai Skill 测试用例设计](../ch01/493-ai-skill.html) / [Ai Skill 测评指标体系](../ch01/493-ai-skill.html) — AI Skill 测评系列（覆盖部分指标体系）。本实体是**腾讯视角的工程化评估**，与系列互补。
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/387-agent-skills.html) — Anthropic 官方 14 patterns 译本。命名相似但内容不同。
 - [Agent Skill Writing Practices](ch04/264-agent-skill.html) / [Agent Skill Writing Advanced](ch04/264-agent-skill.html) / [Agent Skill Writing Evaluation](ch04/264-agent-skill.html) — 系列其他 skill 写作视角。本实体是**鹅厂完整 Playbook 视角**。
 
 ## 深度分析
@@ -189,11 +189,11 @@ Skill 没触发
 
 ## 相关主题
 
-- Skill 系统综述 — [Agent Skills Comprehensive Survey](ch04/385-agent-skills.html)
+- Skill 系统综述 — [Agent Skills Comprehensive Survey](ch04/387-agent-skills.html)
 - Skill 元技能 — [Meta Skill](../ch07/025-meta-skill.html)
-- Skill vs Coze/Dify/n8n — [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](ch04/385-agent-skills.html)
+- Skill vs Coze/Dify/n8n — [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](ch04/387-agent-skills.html)
 - Skill 质量优化 — [Skills Refiner Design Quality Evaluation Framework](../ch03/069-skills.html)
-- Anthropic 95% 数据分析 Skill 栈 — [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/890-anthropic.html)
+- Anthropic 95% 数据分析 Skill 栈 — [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/893-anthropic.html)
 - AI 技能自动演进 — [Ai Skill Evolution Framework](../ch07/010-ai-skill-evolution.html)
 - Claude Code 架构 — [Claude Code Architecture](../ch03/075-claude-code.html)
 - AHE 通用 Harness — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)

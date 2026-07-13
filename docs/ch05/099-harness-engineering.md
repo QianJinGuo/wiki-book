@@ -2,46 +2,41 @@
 
 ## Ch05.099 开启Harness Engineering探索之旅
 
-> 📊 Level ⭐⭐ | 2.4KB | `entities/harness-engineering-exploration-journey-tencent.md`
+> 📊 Level ⭐⭐ | 2.8KB | `entities/harness-engineering-exploration-tencent-tech.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-exploration-journey-tencent-2026-06-29.md)
+# 开启Harness Engineering探索之旅
 
-腾讯技术工程团队的Harness Engineering探索实践，分享如何在生产环境中系统化地应用AI编码技术，提升工程团队的代码质量和开发效率。
+> **Source**：腾讯技术工程，发布于 2026-06-29。本文是对 腾讯技术工程 关于 开启Harness Engineering探索之旅 实践的系统整理。
 
-## 一句话
+## 核心洞察
 
-**腾讯技术工程团队的Harness Engineering实践探索，从理论到生产落地的完整路径。**
+腾讯技术工程团队对 Harness Engineering 的实践探索，涵盖 Agent = Model + Harness 的核心架构定义、研发全链路的轨道设计（需求澄清→方案→实现→测试→部署→归档）、协议层/执行层/反馈层的三层设计，以及状态机与质量门禁的工程实践。
 
-## 核心内容
+## 详细内容
 
-### Harness Engineering理解
+# 开启Harness Engineering探索之旅
 
-Harness Engineering是一套用于规范和优化AI代码生成过程的工程方法论，核心目标是让AI在生产环境中更可靠、更可控。
+作者：fanniemeng
 
-### 实践要点
+过去两年，AI Coding 从"能写出能跑的代码"走到"能放手让它写一整段功能"。但把这个能力放进真实业务、放进多人协作、放进存量系统里跑时我们发现一件怪事——AI 写得越快，整体节奏并没有同步加快。盘点下来，单看"AI 写出来的代码占比"这个数字一路走高，可真正落到版本节奏上，提效却远没有这个数字好看。出码率和提效之间，裂开了一道缝。从 OpenAI Codex 团队那篇 Harness 工程博客里反复强调的一个观察——"早期进展比预期慢，并不是因为 Codex 不具备相应的能力，而是因为环境的规范不够明确"——开始，整个行业都在补同一件事：给模型搭一套能稳定干活的"工作环境"。这一层最近被业界命名为 Harness Engineering——它不是教模型怎么回答，而是设计模型怎么工作。 在这里，也分享下我们的探索之旅，是踩过的坑、做过的取舍、和到现在还没解决的问题。
 
-- **规范设计**：明确什么场景适合AI编码，什么场景需要人工干预
-- **过程控制**：建立从需求理解到代码验证的完整流程
-- **质量保障**：设置多层次的代码评审和测试机制
-- **持续迭代**：基于反馈不断优化Harness规则
+###  ** 序章：Harness Engineering 是怎么"结晶"出来的  **
 
-### 生产落地
+####  ** 0.1 先把话
 
-文章分享了腾讯内部多个团队应用Harness Engineering的实际案例，包括：
+## 关键特征
 
-- 前后端开发场景的Harness实践
-- 测试和运维阶段的AI协助
-- 团队协作中的规范落地
+- 来源为 腾讯技术工程 的技术实践分享
+- 涵盖 Harness Engineering / Agent 框架的设计与工程落地
+- 包含实际代码架构与工程经验沉淀
 
 ## 相关实体
 
-- [Agent Harness架构](ch05/039-agent-harness.html)
-- [Harness Engineering综述2026](ch05/066-harness-engineering.html)
-- [腾讯AI编码实践](ch05/095-ai-coding.html)
+[Claude Code Large Codebase Harness Configuration](../ch03/075-claude-code.html)、[超级Ai背后的秘密武器Agent Harness深度解析](ch05/062-agent-harness.html)、[Harness Engineering](ch05/068-harness-engineering.html)、[Claude Code Founder Harness 100 Lines](../ch03/075-claude-code.html)、[Tencent Knowledge Harness Practice](ch05/018-harness.html)
 
-## 标签
+## 原文存档
 
-#HarnessEngineering #腾讯 #Agent #AI编码 #生产实践
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/开启harness-engineering探索之旅.md)
 
 ---
 

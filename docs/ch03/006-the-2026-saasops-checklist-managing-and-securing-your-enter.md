@@ -192,12 +192,12 @@ A: 可以从ROI最高的项开始：用户生命周期管理自动化（#2）和
 ## 相关实体
 - [Ai Agents Inside Perimeter Hackernews](../ch04/030-ai-agent.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/295-rag.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/1082-rag.html)
 - [The It And Security Field Guide To Ai Adoption Tines](../ch12/081-the-it-and-security-field-guide-to-ai-adoption-tines.html)
-- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01/333-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html)
+- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01/328-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.bettercloud.com-the-saasops-mini-checklist-managing-and-securing-your-enterprise-saas-applications.md)
-- [5 ways to curb ai sprawl without stifling innovation](../ch05/082-ai.html)
+- [5 ways to curb ai sprawl without stifling innovation](../ch05/084-ai.html)
 
 ---
 

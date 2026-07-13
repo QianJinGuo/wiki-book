@@ -31,7 +31,7 @@ Amazon Bedrock 提供三种服务层级：
 
 MiniMax M2.5 是 M2 系列中在 Agent 场景下最具差异化的模型。它不仅采用标准的指令微调，而是通过强化学习（RL）在 Agentic Scaffolds 上进行专门训练。这意味着模型在训练阶段就学习了工具调用的完整流程——解析用户意图 → 选择工具 → 构造参数 → 解析返回 → 整合结果。这与传统模型在推理阶段"事后"附加工具调用能力的设计有本质区别：Agent-native 训练使工具调用成为模型的"本能"而非"外挂"。
 
-从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 视角看，M2.5 的 Agent-native 训练是对"能力-执行"分离模式的挑战：当模型本身就能理解 Agent 工作流时，外部的 Harness 层可以显著简化，仅仅负责资源调度和安全隔离，而非模型能力补全。这与 [Agent Harness 层级设计](../ch05/039-agent-harness.html) 中「智能体应具备自主工具选择能力」的理念一致。
+从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 视角看，M2.5 的 Agent-native 训练是对"能力-执行"分离模式的挑战：当模型本身就能理解 Agent 工作流时，外部的 Harness 层可以显著简化，仅仅负责资源调度和安全隔离，而非模型能力补全。这与 [Agent Harness 层级设计](../ch05/062-agent-harness.html) 中「智能体应具备自主工具选择能力」的理念一致。
 
 ### MoE 架构的推理成本经济学
 

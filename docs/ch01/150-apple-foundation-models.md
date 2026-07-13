@@ -41,7 +41,7 @@ Requests go directly from your app to the Claude API; Apple is not in the reques
 - 引用源：[Anthropic Apple Foundation Models Claude](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-apple-foundation-models-claude.md)
 ## 相关实体
 - [from doer to director: the ai mindset shift](ch01/032-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](ch01/128-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [why internally-built ai fails fund accounting audits](ch01/798-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [back up and restore your amazon eks cluster resources using](../ch11/012-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 ---

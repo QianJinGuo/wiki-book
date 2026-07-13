@@ -79,24 +79,24 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 
 ## 相关实体
 - [Claude Code Agent 工程设计](../ch03/067-claude-code-agent.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/062-agent-harness.html)
 - [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch03/075-claude-code.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/075-claude-code.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/158-claude-code-1.html)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/161-claude-code-1.html)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/075-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/045-agent.html)
-- [Claude Opus 4.7 发布分析](../ch01/849-claude-opus-4-7.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/385-agent-skills.html)
+- [Claude Opus 4.7 发布分析](../ch01/852-claude-opus-4-7.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/387-agent-skills.html)
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/030-ai-agent.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/444-anthropic-ai.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/446-anthropic-ai.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/075-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/045-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1024-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1085-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
-- [2026年最值得关注的15款开发者工具深度解读](../ch01/956-20.html)
+- [2026年最值得关注的15款开发者工具深度解读](../ch01/959-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

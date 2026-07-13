@@ -14,7 +14,7 @@
 
 ## 相关实体
 
-- [mountpoint s3 vs s3 files：eks 上 s3 数据接入的两种方案实战对比](../ch01/295-rag.html)
+- [mountpoint s3 vs s3 files：eks 上 s3 数据接入的两种方案实战对比](../ch01/1082-rag.html)
 - [规划 amazon eks 从 1.32 升级到 1.35：关键变更识别与逐版本实施路径](https://github.com/QianJinGuo/wiki/blob/main/entities/规划-amazon-eks-从-132-升级到-135关键变更识别与逐版本实施路径.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载.md)
 
@@ -194,7 +194,7 @@ CUDA workload image nvidia/cuda:12.2.2-runtime-ubuntu22.04
 - [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
 - [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](https://github.com/QianJinGuo/wiki/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
 - [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](../ch04/029-pod.html)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/225-openclaw.html)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch04/030-ai-agent.html)
 - [Openclaw Amazon Bedrock Eks Printer Qc](ch11/157-amazon-bedrock.html)
 
 ---

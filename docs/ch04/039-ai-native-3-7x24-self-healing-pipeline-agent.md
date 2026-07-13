@@ -279,7 +279,7 @@ Coding Agent 干活
 - 高德 = **7×24 生产线层**（Self-Healing + Harness 反馈闭环 + Benchmark 体系）
 - 共同点：都强调"治理 + 自进化"是 AI Agent 长期可用的关键
 
-### vs [Kimi Work](../ch01/542-codex.html)
+### vs [Kimi Work](../ch01/541-codex.html)
 - Kimi Work = Harness 搬到本地桌面（**单用户本地**）
 - 高德 = 7×24 永动生产线（**企业级 R&D 链路**）
 - 共同点：都是"人定规则 + AI 永动"哲学的具体落地
@@ -289,7 +289,7 @@ Coding Agent 干活
 - 高德 = **多 agent 协作**（Coding Agent + 监督 Agent + 质量门禁 Agent）
 - 共同点：都强调"边界"是工程化关键
 
-### vs [Agent Harness 架构](../ch05/039-agent-harness.html)
+### vs [Agent Harness 架构](../ch05/062-agent-harness.html)
 - 7 层 harness 模型 = 抽象框架
 - 高德 = "**工具定义、中间件和长期记忆三个模块贡献了最大的性能增益**" —— Harness Engineering 实证
 
@@ -347,11 +347,11 @@ Coding Agent 干活
 ## 相关对照
 - [晓斌 Agent-Oriented Infra](../ch03/045-agent.html) —— 哲学框架
 - [wow-harness v3](../ch05/018-harness.html) —— 跨 session 治理
-- [Kimi Work](../ch01/542-codex.html) —— 本地 Agent
+- [Kimi Work](../ch01/541-codex.html) —— 本地 Agent
 - [Rein](../ch03/045-agent.html) —— 单 agent 架构
-- [Agent Harness 架构](../ch05/039-agent-harness.html) —— 7 层模型
+- [Agent Harness 架构](../ch05/062-agent-harness.html) —— 7 层模型
 - [Microsoft Build 2026](../ch03/045-agent.html) —— 全栈 AI
-- [Agent Harness 上下文管理](../ch05/039-agent-harness.html) —— 工作集视角
+- [Agent Harness 上下文管理](../ch05/062-agent-harness.html) —— 工作集视角
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
 
