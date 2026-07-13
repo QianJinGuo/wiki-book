@@ -104,7 +104,7 @@ AlphaEvolve和FunSearch的模式是把LLM嵌入到算法搜索的内层循环中
 - [如何谈合作找工作](https://github.com/QianJinGuo/wiki/blob/main/entities/如何谈合作找工作.md)
 - [如何谈合作找工作](https://github.com/QianJinGuo/wiki/blob/main/entities/如何谈合作找工作.md)
 - [直播预约 数据引擎具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
-- [吴恩达2026新课上线3小时包教包会零代码小白也能成为Ai超级玩家](../ch05/082-ai.html)
+- [吴恩达2026新课上线3小时包教包会零代码小白也能成为Ai超级玩家](../ch05/084-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-land-frontier-lab-job-vlad-feinberg.md)
 

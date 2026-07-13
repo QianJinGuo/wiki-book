@@ -37,10 +37,10 @@
 130 名后端、全栈和 AI 工程师及工程负责人，覆盖从独立开发者到 1000+ 工程师规模组织的各类公司。所有受访者均需在生产环境中运行异步工作流。调研覆盖编排、可观测性、evals、Agent 框架和扩展信心等主题。
 ## 相关实体
 - [Inngest Ai In Production The 2026 Benchmark Report](ch01/575-inngest-ai-in-production-the-2026-benchmark-report.html)
-- [Whats New With Vsphere 9 1](ch01/721-9.html)
-- [Inngest Ai And Backend Workflows Orchestrated At Any Scale](ch01/787-inngest-ai-and-backend-workflows-orchestrated-at-any-scal.html)
-- [Semis Memo Supply Chain Inheritance](ch01/613-semis-memo-supply-chain-inheritance.html)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/066-harness-engineering.html)
+- [Whats New With Vsphere 9 1](ch01/724-9.html)
+- [Inngest Ai And Backend Workflows Orchestrated At Any Scale](ch01/790-inngest-ai-and-backend-workflows-orchestrated-at-any-scal.html)
+- [Semis Memo Supply Chain Inheritance](ch01/614-semis-memo-supply-chain-inheritance.html)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/068-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/inngest-ai-in-production-the-2026-benchmark-report-2.md)
 

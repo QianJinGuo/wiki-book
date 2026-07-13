@@ -143,23 +143,23 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 - [原始文章存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentcore-managed-harness.md)
 - [OpenClaw多租户迁移: Phase 2&3部署](../ch11/225-openclaw.html)
 - [AgentCore Runtime部署Apache Doris MCP Server](../ch11/165-apache-doris-mcp-server-quick-suite-ai.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/244-aws-bedrock-agentcore.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/245-aws-bedrock-agentcore.html)
 - [OpenClaw多租户迁移: 背景与架构概览](../ch11/225-openclaw.html)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/225-openclaw.html)
-- [柚漫剧 AI 全流程提效拆解](../ch05/082-ai.html)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/244-aws-bedrock-agentcore.html)
+- [柚漫剧 AI 全流程提效拆解](../ch05/084-ai.html)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/245-aws-bedrock-agentcore.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/157-amazon-bedrock.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/225-openclaw.html)
 - [Code as Agent Harness 综述](../ch09/052-code-as-agent-harness.html)
-- [harness-engineering-systematic-explainer](../ch05/066-harness-engineering.html)
+- [harness-engineering-systematic-explainer](../ch05/068-harness-engineering.html)
 - [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/371-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/373-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/262-aws-devops-agent.html)
-- [Your Chief Agent Operator Lobehub](ch04/419-your-chief-agent-operator-lobehub.html)
-- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/552-agentic-ai.html)
+- [Your Chief Agent Operator Lobehub](ch04/421-your-chief-agent-operator-lobehub.html)
+- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/556-agentic-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---
