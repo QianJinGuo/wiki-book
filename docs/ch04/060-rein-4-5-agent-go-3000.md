@@ -234,7 +234,7 @@ WithWorkingDir(cwd)            // 工作目录
 - Claude Code 98.4% 基础设施 + 1.6% AI 决策
 - Rein 用 4 模块 + 5 类型边界把 3000 行结构化
 
-### vs Agent Harness 上下文管理（[Agent Harness Context Management Working Set](../ch05/039-agent-harness.html)）
+### vs Agent Harness 上下文管理（[Agent Harness Context Management Working Set](../ch05/062-agent-harness.html)）
 - 工作集视角：logical_messages 原样保留 + 投影 = Rein 的"存储完整，发送压缩"
 
 ### vs wow-harness v3 事件溯源（[Wow Harness V3 Governance Protocol](../ch05/018-harness.html)）
@@ -293,11 +293,11 @@ WithWorkingDir(cwd)            // 工作目录
 
 ## 相关对照
 - [Claude Code 20000 字符源码分析](../ch03/075-claude-code.html)
-- [Agent Harness 上下文管理](../ch05/039-agent-harness.html) —— 工作集视角
+- [Agent Harness 上下文管理](../ch05/062-agent-harness.html) —— 工作集视角
 - [wow-harness v3](../ch05/018-harness.html) —— 事件溯源 + 概念图
 - [PilotDeck](../ch03/045-agent.html) —— 白盒记忆
-- [Agent Harness 架构](../ch05/039-agent-harness.html) —— 7 层 harness 模型
-- [17 种 agent 架构演进](ch04/645-17-agent.html) —— 类型边界视角
+- [Agent Harness 架构](../ch05/062-agent-harness.html) —— 7 层 harness 模型
+- [17 种 agent 架构演进](ch04/650-17-agent.html) —— 类型边界视角
 - [Agent 工程原则](../ch03/045-agent.html) —— 模块化设计实践
 - [短期记忆压缩](ch04/121-agent-memory.html) —— 投影压缩对比
 

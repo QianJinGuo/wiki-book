@@ -31,7 +31,7 @@ Hermes Agent 成为 HiClaw Worker 的**一等公民运行时**：
 
 ### 可插拔 Provider 架构
 Controller 通过 Provider 接口委托网关（Higress）和存储（MinIO/OSS）操作，新增 `hiclaw-credential-provider` Sidecar 负责 STS Token 签发、密钥轮转和 per-worker 访问策略执行。
-→ [Agent Harness 上下文管理：工作集视角](../ch05/039-agent-harness.html)
+→ [Agent Harness 上下文管理：工作集视角](../ch05/062-agent-harness.html)
 
 ## 架构改进
 | 特性 | v1.0.9 | v1.1.0 |

@@ -14,12 +14,12 @@ Amazon Web Services (AWS)
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/multi-agent-architecture-retail-practice/)
 
 ## 相关实体
-- [你不知道的 Agent 原理架构与工程实践](../ch04/334-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](../ch04/336-agent-principle-architecture-engineering-practice.html)
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/048-openclaw-multi-agent-team-practice-v2.html)
 - [Agent 原理、架构与工程实践](../ch03/045-agent.html)
 - [OpenClaw 多智能体团队搭建实战经验](../ch04/048-openclaw-multi-agent-team-practice-v2.html)
-- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](ch11/225-openclaw.html)
-- [factory mission multi agent architecture](../ch01/1203-factory-mission-multi-agent-architecture.html)
+- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](../ch04/030-ai-agent.html)
+- [factory mission multi agent architecture](../ch01/1205-factory-mission-multi-agent-architecture.html)
 
 ## 深度分析
 本文揭示了零售供应链中从 data-informed 到 data-driven 的本质瓶颈：**查询壁垒、洞察缺位、行动脱节**。传统数字化解决了数据采集问题，但"从查询到行动"的链路仍高度依赖人工。研究显示供应链团队 60-70% 的时间花在数据查询和格式对齐上，真正的分析时间被压缩。

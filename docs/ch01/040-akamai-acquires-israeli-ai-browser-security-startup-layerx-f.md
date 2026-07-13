@@ -8,7 +8,7 @@
 - 来源：https://www.calcalistech.com/ctechnews/article/byinuqxkme
 - 评分：v=8 c=9
 ## 相关实体
-- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/061-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
+- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/156-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/139-code-simulation-for-enterprise-engineering-playerzero.html)
 - [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/214-0.html)

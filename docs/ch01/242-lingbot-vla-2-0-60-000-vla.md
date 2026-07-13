@@ -39,7 +39,7 @@
 ## 关联
 
 - [算力风洞](../ch05/019-ai-native.html) — GPU 集群稳定性验证，与 VLA 的具身计算需求互补
-- [GS-Playground 具身仿真](ch01/956-20.html) — 具身智能仿真平台
+- [GS-Playground 具身仿真](ch01/959-20.html) — 具身智能仿真平台
 
 ---
 

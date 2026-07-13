@@ -48,7 +48,7 @@ The approach Codex takes i
 - 引用源：[Calv Oracle And The Firm](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/calv-oracle-and-the-firm.md)
 ## 相关实体
 - [from doer to director: the ai mindset shift](ch01/032-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](ch01/128-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [why internally-built ai fails fund accounting audits](ch01/798-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [back up and restore your amazon eks cluster resources using](../ch11/012-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 ---

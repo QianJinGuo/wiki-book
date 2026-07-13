@@ -293,13 +293,13 @@ USE 指标让"顺手作恶"第一次可被量化捕获。建议在 Mobile GUI Ag
 
 MobileGym 证明了**浏览器内仿真**是实现高并发、低成本、移动端 App 覆盖的最优工程路径。相比原生模拟器，浏览器技术栈具备：快速启动（3s vs 分钟级）、低内存（400MB vs 4.5GB+）、天然支持 Web 技术栈 App 仿真、以及跨平台一致性等优势。
 
-**落地建议**：对于正在搭建 Mobile GUI Agent 基础设施的团队，优先考虑基于 Chromium/WebKit 的浏览器仿真路线，而非传统的安卓模拟器路线。MobileGym 的技术报告和开源代码（github.com/Purewhiter/mobilegym）提供了可直接参考的实现路径。同时关注 [Agent Harness Architecture Design Production Guide](../ch05/039-agent-harness.html) 中关于 Harness Architecture 的设计原则，可以在 MobileGym 之上构建更复杂的 Agent 训练和评测工作流。
+**落地建议**：对于正在搭建 Mobile GUI Agent 基础设施的团队，优先考虑基于 Chromium/WebKit 的浏览器仿真路线，而非传统的安卓模拟器路线。MobileGym 的技术报告和开源代码（github.com/Purewhiter/mobilegym）提供了可直接参考的实现路径。同时关注 [Agent Harness Architecture Design Production Guide](../ch05/062-agent-harness.html) 中关于 Harness Architecture 的设计原则，可以在 MobileGym 之上构建更复杂的 Agent 训练和评测工作流。
 
 ---
 
 ## 相关实体
 
-- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](../ch01/1241-icml-2026.html)
+- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](../ch01/1243-icml-2026.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/mobilegym-cas-mobile-agent-benchmark.md)
 

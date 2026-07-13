@@ -30,7 +30,7 @@ LLM 把记账接过去了，wiki 才能持续被维护。Karpathy 关联到 Vann
 
 本文提供了结构化对比表：RAG 不累积/产物不可见/不发现矛盾/用户重新上传才能更新；LLM Wiki 持续累积/可读可编辑的 markdown/主动标注矛盾/维护成本趋近于零。
 
-这与 [LLM Wiki 架构](../ch01/618-llm.html) 实体互补——该实体侧重概念框架，本文侧重具体实现。也与本 wiki 自身的运作模式一致（见 [Hermes Skills LLM Wiki](../ch07/017-hermes-skill.html)）。
+这与 [LLM Wiki 架构](../ch01/619-llm.html) 实体互补——该实体侧重概念框架，本文侧重具体实现。也与本 wiki 自身的运作模式一致（见 [Hermes Skills LLM Wiki](../ch07/017-hermes-skill.html)）。
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-llm-wiki-obsidian-tutorial-shuge-2026.md)
 
