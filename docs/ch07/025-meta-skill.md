@@ -108,18 +108,18 @@
 - [OpenSquilla](../ch01/014-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html) —— Meta Skill 的实现载体
 - [SkillOpt](../ch05/042-skillopt.html) —— 互补（Skill 变好 vs Skill 变多）
 - [Impeccable](../ch05/001-impeccable.html) —— skill 内命令的范例
-- [Agent Skill 编写指南](../ch04/264-agent-skill.html)
-- [10 篇论文看懂 AI Agent Skill](../ch04/266-skill.html)
-- [Agent Skills 系统性综述](../ch04/387-agent-skills.html)
-- [Skills 系统设计三路对比](../ch04/266-skill.html)
-- [Agent/Skills/Teams 架构演进](../ch04/236-agent-skills-teams.html)
+- [Agent Skill 编写指南](../ch04/265-agent-skill.html)
+- [10 篇论文看懂 AI Agent Skill](../ch04/267-skill.html)
+- [Agent Skills 系统性综述](../ch04/390-agent-skills.html)
+- [Skills 系统设计三路对比](../ch04/267-skill.html)
+- [Agent/Skills/Teams 架构演进](../ch04/237-agent-skills-teams.html)
 
 ## 深度分析
 - **流程知识资产化**：Meta Skill 将隐性的 SOP 流程转化为显性的可执行文档，赋予模型超越单步工具调用的宏观上下文理解能力 
 - **范式迭代节点**：从"会不会调用工具"到"会不会组织工具"的转变，标志着 AI 自动化进入长程工作流编排的新阶段，技能抽象层级随业务复杂度自然上移 
 - **三大基础设施协同**：路由（预算分配）+ 编排（步骤调度）+ 创建（Meta-skill-creator 辅助生成）构成缺一不可的闭环，单一层面的优化无法实现真正的 Skill 2.0 
 - **Token 效率验证**：实测省 60-80% 成本，弱智问题用小模型搞定（3 分钱），复杂安全审查才动用大模型 —— 智能路由的经济价值在实践中得到验证 
-- **多 Agent 收敛趋势**：Meta Skill 与 [Minimax Mavis](../ch04/147-ai-minimax-agent-team-mavis.html) 等 Agent 团队架构在"编排层"形成技术收敛，从单兵作战走向团队协作是 Agent 发展的必然方向 
+- **多 Agent 收敛趋势**：Meta Skill 与 [Minimax Mavis](../ch04/148-ai-minimax-agent-team-mavis.html) 等 Agent 团队架构在"编排层"形成技术收敛，从单兵作战走向团队协作是 Agent 发展的必然方向 
 
 ## 实践启示
 - **先有清晰 SOP 再谈 Meta Skill**：单个 Meta Skill 需 400+ 行 SKILL.md 和约 30 分钟迭代，没有清晰的流程定义就无法有效抽象，先在业务层把 SOP 跑通是前置条件 

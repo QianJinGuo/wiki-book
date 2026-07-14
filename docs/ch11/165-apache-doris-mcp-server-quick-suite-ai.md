@@ -29,9 +29,9 @@
 5. **按调用计费模式适合"按需使用"场景，自建常驻服务适合"高频使用"场景。** AgentCore Runtime 的 Pay as You Go 模式对于"业务人员偶尔查询"的场景 TCO 优势明显，但如果是 7×24 高并发查询场景，长期常驻的计算资源可能更经济。可以通过 A/B 对照（用 AgentCore Runtime 运行一周 vs 自建服务运行一周）获得真实成本数据后再做决策。
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/523-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/527-amazon-bedrock-agentcore.html)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/157-amazon-bedrock.html)
-- [Aws Bedrock Agentcore Doris Mcp Server](ch11/245-aws-bedrock-agentcore.html)
+- [Aws Bedrock Agentcore Doris Mcp Server](ch11/246-aws-bedrock-agentcore.html)
 - [Claude Code Mcp Server](../ch07/027-claude-code-mcp-server.html)
 - [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07/046-aws-devops-agent-mcp-server.html)
 

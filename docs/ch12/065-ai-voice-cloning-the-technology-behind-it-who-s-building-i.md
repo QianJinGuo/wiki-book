@@ -100,10 +100,10 @@ Voice cloning 可以用于：
 - 特殊口音
 - 跨语言切换
 ## 相关实体
-- [Openai Quietly Bought Voice Cloning Star](../ch01/694-openai-quietly-bought-voice-cloning-startup-weights-gg.html)
+- [Openai Quietly Bought Voice Cloning Star](../ch01/693-openai-quietly-bought-voice-cloning-startup-weights-gg.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 - [Scammers Send Physical Phishing Letters To Steal Ledger Wall](https://github.com/QianJinGuo/wiki/blob/main/entities/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md)
-- [Npm Supply Chain Compromise Postmortem](../ch05/084-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/085-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
