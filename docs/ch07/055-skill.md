@@ -59,22 +59,22 @@
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ni-xie-de-skill-ji-ge-liao-ma.md)
 
 ## 相关实体
-- [Skill.md 简历生成器 Resume Forge](../ch04/266-skill.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/264-agent-skill.html)
-- [Hermes Agent](../ch03/090-hermes-agent.html)
+- [Skill.md 简历生成器 Resume Forge](../ch04/267-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/265-agent-skill.html)
+- [Hermes Agent](../ch03/091-hermes-agent.html)
 - [Qoder Skills 完全指南](ch07/034-qoder-skills.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/393-aws-sagemaker-ai-agent.html)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/266-skill.html)
-- [SkillClaw](../ch04/441-skillclaw-nacos-agent-skill-registry.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/396-aws-sagemaker-ai-agent.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/267-skill.html)
+- [SkillClaw](../ch04/445-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/266-skill.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/267-skill.html)
 - [SkillX — 层次化技能知识库](ch07/051-skillx.html)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/277-anthropic-agent.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/387-agent-skills.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/252-anthropic-agent.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/390-agent-skills.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch07/034-qoder-skills.html)
-- [Thin Harness Fat Skills](../ch05/077-thin-harness-fat-skills-ai.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/203-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [Thin Harness Fat Skills](../ch05/078-thin-harness-fat-skills-ai.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/204-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 ---
 

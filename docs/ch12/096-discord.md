@@ -26,11 +26,11 @@ Discord 的 E2EE 基于 Signal 协议的双棘轮机制：
 - 支持安全 multi-party 群组通话
 
 ## 相关实体
-- [Npm Supply Chain Compromise Postmortem](../ch05/084-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/085-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
-- [Ath Agent Trust Handshake Protocol](../ch03/045-agent.html)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/410-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
+- [Ath Agent Trust Handshake Protocol](../ch03/046-agent.html)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/409-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/discord-e2e-encryption.md)
 

@@ -14,12 +14,12 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、Strands A
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/building-enterprise-level-with-bedrock-agentcore-and-strands/)
 
 ## 相关实体
-- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/523-amazon-bedrock-agentcore.html)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/245-aws-bedrock-agentcore.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/373-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/527-amazon-bedrock-agentcore.html)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/246-aws-bedrock-agentcore.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/375-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/556-agentic-ai.html)
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/273-bedrock.html)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/561-agentic-ai.html)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/275-bedrock.html)
 
 ## 深度分析
 ### 架构解耦：多层抽象的工程价值

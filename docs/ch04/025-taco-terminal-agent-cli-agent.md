@@ -38,7 +38,7 @@ TACO 的核心是一个**轻量级自进化规则引擎**，而非 LLM 实时摘
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/taco-cli-agent-context-compression-terminalbench.md)
 → [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
-→ [CLI Agent 模式](../ch03/045-agent.html)
+→ [CLI Agent 模式](../ch03/046-agent.html)
 
 ---
 

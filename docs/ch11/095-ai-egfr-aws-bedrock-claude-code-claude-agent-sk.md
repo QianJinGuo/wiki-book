@@ -63,10 +63,10 @@ AI工具的引入正在重塑药物化学家的能力模型。未来的研发团
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/from-code-to-molecules-an-ai-driven-egfr-inhibitor-discovery-journey/)
 
 ## 相关实体
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/075-claude-code.html)
-- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](../ch03/075-claude-code.html)
-- [打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南](../ch03/075-claude-code.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/075-obsidian-claude-code.html)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/076-claude-code.html)
+- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](../ch03/076-claude-code.html)
+- [打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南](../ch03/076-claude-code.html)
 
 ---
 

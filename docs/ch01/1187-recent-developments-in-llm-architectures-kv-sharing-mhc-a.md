@@ -44,11 +44,11 @@ DeepSeek V4 的 CSA/HCA 压缩的是序列维度本身（每 128 token 压缩为
 5. **警惕过度复杂化**：从 GPT-2 到 DeepSeek V4，Attention 变体的代码复杂度增长了约 10 倍，在生产引入新架构变体时需权衡实现维护成本与效率收益。
 
 ## 相关实体
-- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](ch01/1187-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html)
-- [Recent_Developments_In_Llm_Architectures](ch01/619-llm.html)
-- [Memory In The Llm Era Iclr2026](ch01/619-llm.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/652-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
-- [Llm Raiders How To Repel](ch01/619-llm.html)
+- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](ch01/518-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html)
+- [Recent_Developments_In_Llm_Architectures](ch01/1231-llm.html)
+- [Memory In The Llm Era Iclr2026](ch01/1231-llm.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/651-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Llm Raiders How To Repel](ch01/1231-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/recent-developments-in-llm-architectures-jiqizhixin.md)
 

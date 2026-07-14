@@ -31,7 +31,7 @@ Hermes Agent 成为 HiClaw Worker 的**一等公民运行时**：
 
 ### 可插拔 Provider 架构
 Controller 通过 Provider 接口委托网关（Higress）和存储（MinIO/OSS）操作，新增 `hiclaw-credential-provider` Sidecar 负责 STS Token 签发、密钥轮转和 per-worker 访问策略执行。
-→ [Agent Harness 上下文管理：工作集视角](../ch05/062-agent-harness.html)
+→ [Agent Harness 上下文管理：工作集视角](../ch05/039-agent-harness.html)
 
 ## 架构改进
 | 特性 | v1.0.9 | v1.1.0 |
@@ -85,7 +85,7 @@ v1.1.0 一口气修复了 18 个 Bug，其中令牌轮转导致消息丢失、YO
 -
 ## 相关实体
 
-- [企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取](../ch03/045-agent.html)
+- [企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取](../ch03/046-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hiclaw-v110-k8s-hermes-worker.md)
 

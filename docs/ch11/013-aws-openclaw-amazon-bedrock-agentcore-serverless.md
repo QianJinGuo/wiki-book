@@ -311,21 +311,21 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 
 ## 相关实体
 - [OpenClaw多租户迁移: Phase 2&3部署](ch11/225-openclaw.html)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/279-amazon-nova.html)
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/058-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/675-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/523-amazon-bedrock-agentcore.html)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/281-amazon-nova.html)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/059-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/674-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/527-amazon-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/273-bedrock.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/729-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/275-bedrock.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/728-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/132-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 
 - [AgentCore Runtime部署Apache Doris MCP Server](ch11/165-apache-doris-mcp-server-quick-suite-ai.html)
 - [OpenClaw多租户迁移: 背景与架构概览](ch11/225-openclaw.html)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/225-openclaw.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/157-amazon-bedrock.html)
-- [Agent 原理、架构与工程实践](../ch03/045-agent.html)
-- [from pdfs to insights: architecting an intelligent document](ch11/233-from-pdfs-to-insights-architecting-an-intelligent-document.html)
+- [Agent 原理、架构与工程实践](../ch03/046-agent.html)
+- [from pdfs to insights: architecting an intelligent document](ch11/234-from-pdfs-to-insights-architecting-an-intelligent-document.html)
 
 ---
 

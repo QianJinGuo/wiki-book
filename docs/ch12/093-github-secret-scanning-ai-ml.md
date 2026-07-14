@@ -71,7 +71,7 @@ GitHub 采用的是典型的"广度+深度"两级安全架构：
 ## 相关实体
 
 - [bagel Fleet 级 Secret Scanning](ch12/055-bagel-fleet-secret-scanning.html)
-- [Claude Code Security Incident](../ch03/075-claude-code.html)
+- [Claude Code Security Incident](../ch03/076-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
 
