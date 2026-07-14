@@ -59,7 +59,7 @@ Boris 本人第一时间运行了 /checkup，结果令人警醒：
 
 /checkup 的诞生揭示了一个被长期忽视的问题：**Agent 原生开发环境（如 Claude Code、Codex、Cursor）缺乏传统的"系统健康管理"机制**。传统 IDE（VS Code、IntelliJ）有完善的扩展管理面板、性能分析器、设置同步等基础设施，但 Agent 开发环境目前仍处于"早期 Linux 时代"——用户手动安装、手动配置、没有系统化的健康监测。
 
-这与 [Hermes Agent](../ch03/090-hermes-agent.html) 的"配置文件即代码"理念形成对比：Hermes 通过 profile 系统实现了配置的版本化和隔离管理，而 Claude Code 的 /checkup 则从另一个方向（自动诊断 + 清理）解决问题。两种思路本质上都是应对 Agent 工具生态膨胀的必然选择。
+这与 [Hermes Agent](../ch03/091-hermes-agent.html) 的"配置文件即代码"理念形成对比：Hermes 通过 profile 系统实现了配置的版本化和隔离管理，而 Claude Code 的 /checkup 则从另一个方向（自动诊断 + 清理）解决问题。两种思路本质上都是应对 Agent 工具生态膨胀的必然选择。
 
 ### 5.5K Tokens 的经济学意义
 
@@ -81,7 +81,7 @@ Boris 清理出的 5.5K tokens 每个 session 的价值不应被低估。在 202
 
 3. **追踪 MCP/Skills 的实际使用频率**：定期检查哪些工具从未被使用，果断移除。Boris 本人有 38 个 Skills 在 2345 个 session 中零使用，这个数据说明"安装后遗忘"是普遍现象。
 
-4. **利用 Git 管理 Agent 配置**：将 CLAUDE.md、Skills 配置纳入版本控制，这样 /checkup 的改动可以方便地 review（`git diff`）和回滚。这也是 [Hermes Agent](../ch03/090-hermes-agent.html) profile 系统的核心设计思路。
+4. **利用 Git 管理 Agent 配置**：将 CLAUDE.md、Skills 配置纳入版本控制，这样 /checkup 的改动可以方便地 review（`git diff`）和回滚。这也是 [Hermes Agent](../ch03/091-hermes-agent.html) profile 系统的核心设计思路。
 
 5. **关注 Session 启动后提示的 Context 使用率**：如果启动后上下文使用率接近 30-40%，说明环境中有大量冗余配置，应立即运行 /checkup 诊断。
 
@@ -89,10 +89,10 @@ Boris 清理出的 5.5K tokens 每个 session 的价值不应被低估。在 202
 
 ## 相关实体
 
-- [Hermes Agent 上手](../ch03/090-hermes-agent.html)
+- [Hermes Agent 上手](../ch03/091-hermes-agent.html)
 - [ConardLi Skills 开源项目](../ch07/036-skills-7k-star.html)
-- [MCP Tool Design Tradeoffs](../ch01/893-anthropic.html)
-- [Agent Harness Context Management](../ch05/062-agent-harness.html)
+- [MCP Tool Design Tradeoffs](../ch01/1286-anthropic.html)
+- [Agent Harness Context Management](../ch05/039-agent-harness.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - Agent Tools 生态系统
 

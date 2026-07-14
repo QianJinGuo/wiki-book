@@ -45,8 +45,8 @@ Qwen3.7-Max 在多个权威基准上与 Claude Opus 4.6 持平或超越：
 
 ## 相关实体
 
-- [Alibaba Agentic Cloud](../ch04/330-agentic-cloud.html)
-- [Qwen AgentWorld](../ch03/045-agent.html)
+- [Alibaba Agentic Cloud](../ch04/332-agentic-cloud.html)
+- [Qwen AgentWorld](../ch03/046-agent.html)
 - [Qwen Image Flash](ch01/1206-qwen-image-flash-beyond-objective-design-few-step-distill.html)
 
 ---

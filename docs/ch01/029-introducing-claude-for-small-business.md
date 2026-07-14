@@ -62,15 +62,15 @@ Claude for Small Business 的发布及其配套的非营利合作，揭示了 AI
 
 ## 相关实体
 - [Introducing Claude for Small Business](ch01/028-introducing-claude-for-small-business.html)
-- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/382-anthropic-claude-agent.html)
-- [Xero Announces Integration with Anthropic's Claude](ch01/893-anthropic.html)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/606-anthropic-claude.html)
-- [Anthropic Claude Managed Agents 平台正式发布](ch01/278-anthropic-claude-managed-agents.html)
-- [Claude Managed Agents 官方 Harness 平台指南](ch01/278-anthropic-claude-managed-agents.html)
-- [Anthropic Computer Use 最佳实践](ch01/867-anthropic-computer-use.html)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/075-claude-code.html)
-- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch01/893-anthropic.html)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/893-anthropic.html)
+- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/385-anthropic-claude-agent.html)
+- [Xero Announces Integration with Anthropic's Claude](ch01/1286-anthropic.html)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/605-anthropic-claude.html)
+- [Anthropic Claude Managed Agents 平台正式发布](ch01/277-anthropic-claude-managed-agents.html)
+- [Claude Managed Agents 官方 Harness 平台指南](ch01/277-anthropic-claude-managed-agents.html)
+- [Anthropic Computer Use 最佳实践](ch01/866-anthropic-computer-use.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/076-claude-code.html)
+- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch01/1286-anthropic.html)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/1286-anthropic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
 
 ---
