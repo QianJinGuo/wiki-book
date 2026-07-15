@@ -10,10 +10,10 @@
 > 不是简单的"我们支持插件"的声明。扩展系统不是事后打补丁式的钩子集合，而是从架构第一天起就作为一等公民存在的能力注入层。
 
 ## 相关实体
-- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/018-harness.html)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/099-harness.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/018-harness.html)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/018-harness.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/099-harness.html)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/099-harness.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/076-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pi-agent-framework-event-bus-design.md)

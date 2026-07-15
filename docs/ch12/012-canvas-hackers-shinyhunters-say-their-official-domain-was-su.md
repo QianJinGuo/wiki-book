@@ -286,9 +286,9 @@ Canvas LMS 攻击影响全球数百所大学，凸显了教育机构在网络安
 
 ## 相关实体
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/145-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/085-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/086-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/409-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/399-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
 - [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/1017-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
 - [a route to root in a 4g industrial router](../ch01/958-20.html)
 

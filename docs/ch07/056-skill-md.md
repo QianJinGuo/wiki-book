@@ -13,9 +13,9 @@
 
 ## 相关实体
 - [Skill Engineering Ai As Algorithm](../ch04/267-skill.html)
-- [Hermes Agent Getting Started Guide 2026](../ch03/091-hermes-agent.html)
-- [Llm Raiders Private Ai Server](../ch01/1231-llm.html)
-- [Pi Mono Github](../ch01/806-pi-mono-github.html)
+- [Hermes Agent Getting Started Guide 2026](../ch03/092-hermes-agent.html)
+- [Llm Raiders Private Ai Server](../ch01/953-llm.html)
+- [Pi Mono Github](../ch01/805-pi-mono-github.html)
 - [我用 Skillmd 做了一个简历生成器](../ch04/267-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/我用-skillmd-做了一个简历生成器.md)

@@ -30,7 +30,7 @@
 
 ## 相关实体
 - [Aws Transform Ezconvertbi Bi Migration](ch11/204-aws-transform-ezconvertbi-bi-migration.html)
-- [Amazon Cloudfront Deploy Guide Cloudfront Domain Multi Tenant Architecture](../ch05/085-ai.html)
+- [Amazon Cloudfront Deploy Guide Cloudfront Domain Multi Tenant Architecture](../ch05/086-ai.html)
 - [Amazon Bedrock Api Security Guide](../ch12/034-amazon-bedrock-api.html)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/276-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch11/054-prowler-genai.html)

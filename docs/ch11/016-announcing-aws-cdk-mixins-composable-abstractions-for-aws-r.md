@@ -353,9 +353,9 @@ class PipelineStack extends cdk.Stack {
 ## 相关实体
 - [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](ch11/016-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.html)
 - [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/197-cost-effective-deployment-of-vision-language-models-for-pet.html)
-- [Us Bank Aws Ai Migration](../ch05/085-ai.html)
+- [Us Bank Aws Ai Migration](../ch05/086-ai.html)
 - [3Rdfsmp](https://github.com/QianJinGuo/wiki/blob/main/entities/3rdfsmp.md)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/711-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/709-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 
 ---
 

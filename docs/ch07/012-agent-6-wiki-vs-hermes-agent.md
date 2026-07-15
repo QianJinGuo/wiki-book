@@ -137,15 +137,15 @@ Hermes 当前已经实现了**原始数据派的核心能力**：
 - **vs `hermes-agent-memory-system-openclaw-comparison`**：原 entity 侧重 **Hermes vs OpenClaw 记忆观对比**，本文侧重**全行业 6 流派 + Hermes 启示**
 
 ## 相关实体
-- [Hermes Agent 12 Layer Full Configuration Guide](../ch03/091-hermes-agent.html)
-- [Hermes Agent Memory System Three Layer Architecture](../ch03/091-hermes-agent.html)
-- [Hermes Agent Self Evolving](../ch03/091-hermes-agent.html)
+- [Hermes Agent 12 Layer Full Configuration Guide](../ch03/092-hermes-agent.html)
+- [Hermes Agent Memory System Three Layer Architecture](../ch03/092-hermes-agent.html)
+- [Hermes Agent Self Evolving](../ch03/092-hermes-agent.html)
 - [Hermes Skill System](ch07/017-hermes-skill.html)
-- [Hermes 9 Module Architecture](../ch01/723-9.html)
+- [Hermes 9 Module Architecture](../ch01/721-9.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)
 
-- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch01/723-9.html)
+- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch01/721-9.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 ## 深度分析

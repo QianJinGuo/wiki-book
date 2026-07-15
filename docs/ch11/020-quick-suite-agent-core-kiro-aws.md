@@ -199,11 +199,11 @@ MCP 作为 AI 模型与外部工具的标准化连接协议，在本案例中展
 > 本篇作者：田培军，亚马逊云科技解决方案架构师
 
 ## 相关实体
-- [以 Kiro 快速部署云上 Agent：只需几个小时，从业务需求到部署于 Amazon Bedrock AgentCore 落地 | 亚马逊 AWS 官方博客](../ch04/527-amazon-bedrock-agentcore.html)
+- [以 Kiro 快速部署云上 Agent：只需几个小时，从业务需求到部署于 Amazon Bedrock AgentCore 落地 | 亚马逊 AWS 官方博客](../ch04/528-amazon-bedrock-agentcore.html)
 - [AgentCore Runtime 部署 Apache Doris MCP Server](ch11/165-apache-doris-mcp-server-quick-suite-ai.html)
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊 AWS 官方博客](../ch03/046-agent.html)
 - [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的 Agent 应用 | 亚马逊 AWS 官方博客](../ch03/046-agent.html)
-- [Amazon Bedrock AgentCore + Quick Suite 构建 AI Analytics](../ch04/527-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock AgentCore + Quick Suite 构建 AI Analytics](../ch04/528-amazon-bedrock-agentcore.html)
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/quick-suite-agent-core-kiro-logistics-quote-assistant.md)
 
 ---

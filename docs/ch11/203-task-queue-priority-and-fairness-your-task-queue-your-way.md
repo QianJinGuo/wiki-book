@@ -12,8 +12,8 @@
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/task-queue-priority-and-fairness.md)
 
 ## 相关实体
-- [Task Queue Priority and Fairness: Your Task Queue, your way](ch11/248-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Task Queue Priority and Fairness: Your Task Queue, Your Way](ch11/248-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness: Your Task Queue, your way](ch11/249-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness: Your Task Queue, Your Way](ch11/249-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 
 - [Neurips 2026 Pangram Controversy](../ch01/958-20.html)
 - [Toto 2 Context Aware Log Analytics For Complex Distributed Systems](ch11/159-toto-2-context-aware-log-analytics-for-complex-distributed.html)

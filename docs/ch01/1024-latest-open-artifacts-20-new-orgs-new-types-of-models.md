@@ -10,10 +10,10 @@
 
 - [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/1016-deepseek.html)
 - [dynamically splitting wide partitions in cassandra for time](../ch11/026-dynamically-splitting-wide-partitions-in-cassandra-for-time.html)
-- [interconnects ai p open and closed models are on different](../ch05/085-ai.html)
-- [reducing container cold start times using soci index on dlam](ch01/1151-reducing-container-cold-start-times-using-soci-index-on-dlam.html)
+- [interconnects ai p open and closed models are on different](../ch05/086-ai.html)
+- [reducing container cold start times using soci index on dlam](ch01/1152-reducing-container-cold-start-times-using-soci-index-on-dlam.html)
 - [state of routing in model serving](../ch11/182-state-of-routing-in-model-serving.html)
-- [the distillation panic](ch01/637-the-distillation-panic.html)
+- [the distillation panic](ch01/350-the-distillation-panic.html)
 - [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki/blob/main/entities/untitled-v2.md)
 - [直播预约 | 数据引擎：具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
@@ -47,7 +47,7 @@ This Artifacts Log post is unusual in how many diverse, quirky models there are 
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/225-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/046-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/225-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/603-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

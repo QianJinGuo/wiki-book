@@ -36,10 +36,10 @@ Mini Shai-Hulud 攻击标志着 AI 开源生态系统的供应链攻击进入新
 5. **凭据管理**：最小权限原则 + 定期轮换 + MFA，保护 CI/CD 环境中的所有凭据
 ## 相关实体
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](../ch12/035-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/085-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/086-ai.html)
 - [Teampcp Claims Sale Of Mistral Ai Repositories Amid Mini Shai Hulud Attack 1](../ch12/061-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha.html)
 - [Cybersecurityreach Revoke Token Wipe Computer](../ch12/003-token.html)
-- [Thehackernews Fake Openai Privacy Filter](ch01/751-openai.html)
+- [Thehackernews Fake Openai Privacy Filter](ch01/749-openai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www-wiz-io-mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised.md)
 -

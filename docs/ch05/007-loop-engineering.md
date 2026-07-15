@@ -33,7 +33,7 @@
 5. **独立验证**（sub-agent/reviewer/测试）——避免「自写自审」的反馈缺失
 6. **状态记忆**（plan.md、issue、日志）——让下一轮能接上前一轮
 
-这个清单与 [Harness Engineering](ch05/069-harness-engineering.html) 的核心组件（tool / context / verifier）有强对应关系，但**Loop 比 Harness 高一层**：Harness 管「这一次任务怎么跑」，Loop 管「这类任务怎么持续发生」。
+这个清单与 [Harness Engineering](ch05/112-harness-engineering.html) 的核心组件（tool / context / verifier）有强对应关系，但**Loop 比 Harness 高一层**：Harness 管「这一次任务怎么跑」，Loop 管「这类任务怎么持续发生」。
 
 ### 单 Agent 循环 vs Fleet 循环
 
@@ -195,11 +195,11 @@ Peter Steinberger 提出的成本结构揭示了一个反直觉事实：Loop Eng
 
 ## 与库内相关实体的交叉
 
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/085-claude-code-dynamic-workflows.html)：Bun→Rust 75 万行移植使用的 Claude Code Dynamic Workflows（10 大实战场景 + Thariq 6 模式 + 3 类失败模式）
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/086-claude-code-dynamic-workflows.html)：Bun→Rust 75 万行移植使用的 Claude Code Dynamic Workflows（10 大实战场景 + Thariq 6 模式 + 3 类失败模式）
 - [Verifier Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)：Verifier-driven Development（"每个 AI 产出必须有 verifier"，与本文"verifier 封顶产出质量"互相印证）
 - [Ai R And D Bottleneck Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-r-and-d-bottleneck-shift.md)：AI R&D 瓶颈迁移（"当 verifier 的成本下降时，loop 才能规模化"，与本文"经济可行性取决于验证成本"同源）
 - [Agent Self Improvement Loops](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)：Agent 自我改进循环（与本文"外循环 = 教训持久化"深度交叉）
-- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](ch05/098-ai-coding.html)：同日入库的 Comet 工程取舍深度文，含完整的 harness 工程取舍 + 9 平台 PreToolUse Hook 嵌套 Skill 触发规范
+- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](ch05/100-ai-coding.html)：同日入库的 Comet 工程取舍深度文，含完整的 harness 工程取舍 + 9 平台 PreToolUse Hook 嵌套 Skill 触发规范
 
 ## 相关实体
 

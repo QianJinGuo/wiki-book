@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3303 篇一手 AI 材料系统编撰的开源读物。
+> 全球第一部基于 3318 篇一手 AI 材料系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,17 +10,17 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1482 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1165 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 464 篇 |
-| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 149 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1487 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1170 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 466 篇 |
+| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 152 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 43 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1311 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1314 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,9 +31,9 @@
   - ⭐ Backpressure is all you need
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ 快手首个打工人Agent
-  - ... 共 **1311** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1314** 篇 → [完整章节](ch01-ai-basics.md)
 
-### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 38 篇
+### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 39 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
 
   - ⭐ AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）
@@ -44,9 +44,9 @@
   - ⭐⭐ Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）
   - ⭐⭐ Hermes Agent 自进化机制源码解析
   - ⭐⭐ Hermes Agent 深度解析（阿里云/飞樰）
-  - ... 共 **38** 篇 → [完整章节](ch02-prompt.md)
+  - ... 共 **39** 篇 → [完整章节](ch02-prompt.md)
 
-### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 133 篇
+### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 134 篇
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
 
   - ⭐ The Interface Is No Longer the Product
@@ -57,15 +57,15 @@
   - ⭐ The 2026 SaaSOps checklist: Managing and securing your enterprise SaaS
   - ⭐ What the design-to-code loop unlocks
   - ⭐ Choosing to Stay Human
-  - ... 共 **133** 篇 → [完整章节](ch03-ai-tools.md)
+  - ... 共 **134** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1482 篇**
+> 📖 **本篇共 1487 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 684 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 686 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,20 +76,20 @@
   - ⭐ Build agents, not pipelines
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
-  - ... 共 **684** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **686** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 126 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 128 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
   - ⭐ Spec Kit / OpenSpec / Superpowers 融合：棕地项目的三层Harness架构
   - ⭐⭐ Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（19 来源深度合并：Addy Osmani 
-  - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
+  - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ QQ音乐 Harness Engineering 实践（大仓多服务场景）
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
-  - ... 共 **126** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **128** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 45 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -117,7 +117,7 @@
   - ⭐⭐ 重新定义Skill开发：保姆级教程&一站式开发助手
   - ... 共 **80** 篇 → [完整章节](ch07-skill-tool.md)
 
-### [Ch08 多 Agent 协作](ch08-multi-agent.md) — 28 篇
+### [Ch08 多 Agent 协作](ch08-multi-agent.md) — 29 篇
 > 从单兵到团队：编排、通信、治理
 
   - ⭐ Hermes+Kimi K2.6 多Agent军团实战教程
@@ -128,7 +128,7 @@
   - ⭐⭐ 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
   - ⭐⭐ 微软 Agent Framework 全栈指南（Python）
   - ⭐⭐⭐ Claude Code Dynamic Workflows 多Agent编排
-  - ... 共 **28** 篇 → [完整章节](ch08-multi-agent.md)
+  - ... 共 **29** 篇 → [完整章节](ch08-multi-agent.md)
 
 ### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 173 篇
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
@@ -156,13 +156,13 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **29** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1165 篇**
+> 📖 **本篇共 1170 篇**
 
 ---
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 283 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 284 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
@@ -173,7 +173,7 @@
   - ⭐ Data Projects: Managing Data Assets at Netflix Scale
   - ⭐⭐ 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
   - ⭐⭐ 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
-  - ... 共 **283** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **284** 篇 → [完整章节](ch11-infra.md)
 
 ### [Ch12 安全与治理](ch12-security.md) — 125 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
@@ -188,7 +188,7 @@
   - ⭐ 5 Things to Know about the CLARITY Act
   - ... 共 **125** 篇 → [完整章节](ch12-security.md)
 
-### [Ch13 MLOps 与评估](ch13-mlops.md) — 19 篇
+### [Ch13 MLOps 与评估](ch13-mlops.md) — 20 篇
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
   - ⭐ 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
@@ -199,7 +199,7 @@
   - ⭐⭐ ai-skill-测评指标体系
   - ⭐⭐ 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
   - ⭐⭐ SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
-  - ... 共 **19** 篇 → [完整章节](ch13-mlops.md)
+  - ... 共 **20** 篇 → [完整章节](ch13-mlops.md)
 
 ### [Ch14 数据工程](ch14-data.md) — 37 篇
 > AI 的燃料：实时入湖、流处理、数据质量
@@ -214,7 +214,7 @@
   - ⭐⭐ Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
   - ... 共 **37** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 464 篇**
+> 📖 **本篇共 466 篇**
 
 ---
 
@@ -246,7 +246,7 @@
   - ⭐⭐ 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
   - ... 共 **29** 篇 → [完整章节](ch16-inference.md)
 
-### [Ch17 多模态与生成](ch17-multimodal.md) — 49 篇
+### [Ch17 多模态与生成](ch17-multimodal.md) — 51 篇
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
   - ⭐ Perceptron Mk1 shocks with highly performant video analysis AI model 8
@@ -257,9 +257,9 @@
   - ⭐⭐ Normalizing Trajectory Models
   - ⭐⭐ Automatically redact PII in images with Amazon Nova
   - ⭐⭐ LLaVA-OneVision-2：全帧率视频理解
-  - ... 共 **49** 篇 → [完整章节](ch17-multimodal.md)
+  - ... 共 **51** 篇 → [完整章节](ch17-multimodal.md)
 
-### [Ch18 机器人与具身智能](ch18-robotics.md) — 16 篇
+### [Ch18 机器人与具身智能](ch18-robotics.md) — 17 篇
 > 从数字到物理：强化学习、仿真、人形机器人
 
   - ⭐ 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
@@ -270,9 +270,9 @@
   - ⭐⭐ Unitree's IPO Filing: The State of the Robotics Market
   - ⭐⭐ 蔚蓝BabyAlpha A3消费级机器狗
   - ⭐⭐ Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
-  - ... 共 **16** 篇 → [完整章节](ch18-robotics.md)
+  - ... 共 **17** 篇 → [完整章节](ch18-robotics.md)
 
-> 📖 **本篇共 149 篇**
+> 📖 **本篇共 152 篇**
 
 ---
 
@@ -308,6 +308,6 @@
 
 ---
 
-**📊 全书收录：3303 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3318 篇实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-07-15 | 来源: ~/wiki/entities/
+生成时间: 2026-07-16 | 来源: ~/wiki/entities/

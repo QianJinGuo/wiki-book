@@ -69,9 +69,9 @@ Claude Code 启动 → /resume 加载 Obsidian 上下文
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/076-claude-code.html)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/076-claude-code.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/075-obsidian-claude-code.html)
-- [obsidian claude code integration guide](../ch09/121-obsidian-claude-code-integration-guide.html)
-- [Obsidian + Claude Code 集成指南](../ch09/121-obsidian-claude-code-integration-guide.html)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/163-claude-code-1.html)
+- [obsidian claude code integration guide](../ch09/124-obsidian-claude-code-integration-guide.html)
+- [Obsidian + Claude Code 集成指南](../ch09/124-obsidian-claude-code-integration-guide.html)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/165-claude-code-1.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

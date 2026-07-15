@@ -76,7 +76,7 @@ Mistral 的实践表明，**质量优先于数量的仿真数据策略**——40
 
 ## 相关实体
 
-- [Mistral AI](../ch05/085-ai.html) — 开发团队
+- [Mistral AI](../ch05/086-ai.html) — 开发团队
 - **Mistral VLM** — 用于 grounding 初始化的视觉语言模型（无独立实体页面）
 - [Embodied AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md) — 具身 AI 概念框架
 - **Behavior Cloning** — 行为克隆 vs RL 的对比（无独立概念页面）

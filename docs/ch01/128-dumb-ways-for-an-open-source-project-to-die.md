@@ -22,7 +22,7 @@
 4. **将项目"可发布性"纳入维护标准。** 定期检查：发布权限是否仍然有效？CI 是否仍然绿？能否从源码构建并发布一个版本？这些检查比 commit graph 更能反映项目真实存活能力。
 5. **为 Fork 保留可能性。** 保持与社区的良好关系，避免进入 Toxic Gatekeeping 状态。即使项目当前健康，也要关注是否有替代 fork 可用。License 变更（Terraform/OpenTofu、Redis/Valkey）表明 Fork 往往是唯一出路，提前保持关系比危机时重建容易得多。
 ## 相关实体
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/003-agentrun.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/413-agentrun.html)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch01/014-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
 - [How We Made Window Join Parallel And Vectorized](ch01/034-how-we-made-window-join-parallel-and-vectorized.html)
 - [Products Are Out Brains Are In](ch01/134-products-are-out-brains-are-in.html)

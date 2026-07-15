@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [读完这篇，你就搞懂 deepseek v4 了](ch01/678-deepseek-v4.html)
+- [读完这篇，你就搞懂 deepseek v4 了](ch01/676-deepseek-v4.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)

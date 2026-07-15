@@ -123,7 +123,7 @@ R(K) = Success(T_E | K) - Success(T_E | ∅)
 - [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - [Tencent Skill Writing Complete Playbook Jackjchou](ch04/267-skill.html)
 - [Agent Self Improvement Six Mechanisms](../ch03/046-agent.html)
-- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](../ch03/091-hermes-agent.html)
+- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](../ch03/092-hermes-agent.html)
 - [Deli Auto Research Skill Deepseek](../ch01/1016-deepseek.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/world-knowledge-agent-self-evolution-tencent-hkustgz.md)

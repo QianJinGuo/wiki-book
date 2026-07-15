@@ -4578,7 +4578,7 @@ Agent 每次进入项目都要重新读代码、猜结构、问人。
 
 ## Ch06.032 Claude Code Agent Memory Systems — L0~L3 四层记忆方案
 
-> 📊 Level ⭐⭐ | 4.0KB | `entities/claude-code-agent-memory-four-levels-analysis.md`
+> 📊 Level ⭐⭐ | 3.9KB | `entities/claude-code-agent-memory-four-levels-analysis.md`
 
 # Claude Code Agent Memory Systems — L0~L3 四层记忆方案
 
@@ -4641,7 +4641,7 @@ L3 Cognitive    → "Agent 自己管自己的记忆"
 
 ## 与已有实体的关系
 
-- [Claude Code Memory Workbench + Agents SDK MCP](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-memory-workbench-agents-sdk-mcp.md) — 同为 Claude Code 记忆相关，但本实体聚焦于四层记忆架构的横向对比和决策框架
+- Claude Code Memory Workbench + Agents SDK MCP — 同为 Claude Code 记忆相关，但本实体聚焦于四层记忆架构的横向对比和决策框架
 
 ## 参考
 

@@ -70,9 +70,9 @@ Hermes slash 命令访问控制：管理员白名单 vs 普通用户白名单。
 ## 与其他实体的关系
 
 - **Hermes 生产案例系列**：继 [高德扫街榜 HermesAgent 配图系统](../ch03/046-agent.html) 后第二个来自高德技术的 Hermes 生产案例。前者聚焦 VLM + Skill 化配图，本文聚焦多 Agent 协作 + 自进化 VOC 排查。两篇互补：前者展示混合架构（确定性 Pipeline + Agent），本文展示纯 Agent 多实例协作
-- **多 Agent 通信模式**：主 Agent 通过 OpenAI 兼容 HTTP 调用专家 Agent，与 [Hermes Agent](../ch03/091-hermes-agent.html) 的 API Server 能力直接对应——每个 Hermes 实例既是对话机器人也可作为 HTTP 服务
-- **自进化闭环**：Memory+Curator 机制与 [Hermes Memory 系统](../ch03/091-hermes-agent.html) 一致——管理员纠正→写入 Memory→Curator 整理→下次更新
-- **Hook 扩展**：无侵入定制策略与 [Hermes SOUL.md 人设系统](../ch03/091-hermes-agent.html) 互补——SOUL 定义行为，Hook 定义自定义逻辑
+- **多 Agent 通信模式**：主 Agent 通过 OpenAI 兼容 HTTP 调用专家 Agent，与 [Hermes Agent](../ch03/092-hermes-agent.html) 的 API Server 能力直接对应——每个 Hermes 实例既是对话机器人也可作为 HTTP 服务
+- **自进化闭环**：Memory+Curator 机制与 [Hermes Memory 系统](../ch03/092-hermes-agent.html) 一致——管理员纠正→写入 Memory→Curator 整理→下次更新
+- **Hook 扩展**：无侵入定制策略与 [Hermes SOUL.md 人设系统](../ch03/092-hermes-agent.html) 互补——SOUL 定义行为，Hook 定义自定义逻辑
 - **路由精细化**：主调度 Agent 的模糊描述→精确领域映射，与 [Flow2Spec 结构化知识路由](../ch01/1099-spec.html) 的路由思想一脉相承
 
 ## 实践启示
