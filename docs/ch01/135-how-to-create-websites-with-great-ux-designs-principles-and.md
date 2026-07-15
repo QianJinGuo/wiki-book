@@ -8,9 +8,9 @@
 
 ## 相关实体
 
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/289-rag.html)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/1081-rag.html)
 - [How we made WINDOW JOIN parallel and vectorized](ch01/034-how-we-made-window-join-parallel-and-vectorized.html)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1226-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1227-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 - [how dropbox uses mcp and dash to close the design-to-code se](https://github.com/QianJinGuo/wiki/blob/main/entities/dropbox-mcp-dash-design-code-security.md)
 
 ## 深度分析

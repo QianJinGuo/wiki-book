@@ -20,7 +20,7 @@ XBow 团队的评测揭示了 Mythos 在实际安全场景中的表现：Mythos 
 
 Mythos 的能力提升引发了关于 AI 安全红队自动化边界的重要讨论。评测团队认为，虽然 Mythos 显著增强了安全研究效率，但人类专家的创造性思维和领域知识在当前阶段仍是不可替代的。
 
-> [!contradiction] 参见 [Anthropic Mythos Glasswing 30Days Vulnerability Report](../ch01/1286-anthropic.html) 和 [Anthropic N Days Frontier Agent Vulnerability Research](ch04/257-anthropic-n-days-frontier-agent-vulnerability-research.html) 中 Anthropic 官方对 Mythos 能力的描述。本文的第三方实测在某些指标上给出了不同的能力边界评估。
+> [!contradiction] 参见 [Anthropic Mythos Glasswing 30Days Vulnerability Report](../ch01/891-anthropic.html) 和 [Anthropic N Days Frontier Agent Vulnerability Research](ch04/256-anthropic-n-days-frontier-agent-vulnerability-research.html) 中 Anthropic 官方对 Mythos 能力的描述。本文的第三方实测在某些指标上给出了不同的能力边界评估。
 
 ## 深度分析
 

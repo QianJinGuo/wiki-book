@@ -106,7 +106,7 @@ CLAUDE.md 文件在此方案中承担双重角色：
 - [Claude Code Self Repair Hooks Memory Config](ch03/076-claude-code.html)
 - [Claude Code Memory Setup Obsidian Graphify](../ch01/878-claude-code-memory-setup-obsidian-graphify.html)
 - [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](ch03/075-obsidian-claude-code.html)
-- [Claude Code Prompt Source Analysis](../ch09/059-claude-code-prompt.html)
+- [Claude Code Prompt Source Analysis](../ch09/060-claude-code-prompt.html)
 - [Claude Code Tool Design Evolution Anthropic](ch03/076-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-memory-setup-token-71x楠楠自瑜.md)

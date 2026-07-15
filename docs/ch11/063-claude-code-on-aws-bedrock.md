@@ -84,10 +84,10 @@ aws iam create-access-key --user-name claude-code-bedrock
 ## 参考来源
 
 ## 相关实体
-- [From Code To Molecules An Ai Driven Egfr Inhibitor Discovery Journey](../ch05/085-ai.html)
+- [From Code To Molecules An Ai Driven Egfr Inhibitor Discovery Journey](../ch05/086-ai.html)
 - [Bedrock Agentcore Payment X402 Agent](ch11/050-bedrock-agentcore.html)
 - [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](../ch03/076-claude-code.html)
-- [Easy Deployment Of Claude Agent Sdk In Production](../ch01/1084-claude.html)
+- [Easy Deployment Of Claude Agent Sdk In Production](../ch01/460-claude.html)
 - [Claude Code Open Source Model Enterprise Practice](../ch03/076-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-aws-bedrock-guide.md)
