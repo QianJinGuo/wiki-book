@@ -53,7 +53,7 @@ Approach:
 
 → [source archive](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-state-of-the-ai-economy.md)
 → [Nadella Token Capital](../ch12/003-token.html)
-→ [Dario Amodei Policy](../ch05/085-ai.html)
+→ [Dario Amodei Policy](../ch05/086-ai.html)
 
 ---
 

@@ -12,8 +12,8 @@
 ## 相关实体
 - [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](ch01/958-20.html)
 - [Cvpr 2026 Highlight 清华打破多模态音频生成的通才困境Omni2Sound 音频基础模型开源](ch01/958-20.html)
-- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/046-agent.html)
-- [Qoder 1 0 Release Ai Ide Agent Workbench](ch01/847-qoder.html)
+- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch12/003-token.html)
+- [Qoder 1 0 Release Ai Ide Agent Workbench](ch01/846-qoder.html)
 - [Gpt 55来了我撤回了退订Chatgpt的决定](ch01/1120-chatgpt.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cvpr-2026-highlight让ai像电影人一样看视频8b小模型反超gpt-5与gemini-31-pro.md)

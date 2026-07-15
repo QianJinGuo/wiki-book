@@ -33,7 +33,7 @@ Google 新推出 Interactions API（Beta），借鉴 OpenAI Responses 的服务�
 - [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch01/053-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.html)
 - [Google Debuts Gemini Focused Updates At Io 2026](ch01/958-20.html)
 - [Computer Use 45X More Expensive Than Structured Apis](../ch04/264-computer-use-45x-more-expensive-than-structured-apis.html)
-- [Google Shipped Gemini 31 Flash Lite In General Availability](../ch05/085-ai.html)
+- [Google Shipped Gemini 31 Flash Lite In General Availability](../ch05/086-ai.html)
 - [How We Made Window Join Parallel And Vectorized](ch01/034-how-we-made-window-join-parallel-and-vectorized.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)

@@ -12,7 +12,7 @@ In this post, we walk through the full journey, from setting up your migration w
 If you're running a legacy BI tool, you face compounding pressures that go beyond licensing fees:
 
 ## 相关实体
-- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](../ch01/1084-claude.html)
+- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](../ch01/460-claude.html)
 - [Cloudsectidbits Masso Cognito Sso.Html](ch11/236-cloudsectidbits.html)
 - [Amazon Bedrock Api Security Guide](../ch12/034-amazon-bedrock-api.html)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/276-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)

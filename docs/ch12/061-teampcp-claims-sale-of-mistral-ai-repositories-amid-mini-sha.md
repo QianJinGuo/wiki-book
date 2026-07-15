@@ -27,7 +27,7 @@ Mistral AI 在事件后的声明确认了代码库管理系统被短暂攻破，
 
 ## 相关实体
 - [Restrict Access to Sensitive Documents in Amazon QuickSight](../ch11/138-restrict-access-to-sensitive-documents-in-your-amazon-quick.html) — 企业级文档访问控制实践
-- [PyTorch 2.12 Release Blog – PyTorch](../ch01/268-pytorch-2-12-release-blog.html) — AI 框架生态安全
+- [PyTorch 2.12 Release Blog – PyTorch](../ch01/258-pytorch-2-12-release-blog.html) — AI 框架生态安全
 
 ---
 
