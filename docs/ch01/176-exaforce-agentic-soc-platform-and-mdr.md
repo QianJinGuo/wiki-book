@@ -13,7 +13,7 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [Exaforce | Agentic SOC Platform and MDR](../ch04/023-exaforce-agentic-soc-platform-and-mdr.html)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/289-rag.html)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/1081-rag.html)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](ch01/1016-deepseek.html)
 
 ## 深度分析

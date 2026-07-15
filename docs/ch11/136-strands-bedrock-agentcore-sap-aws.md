@@ -29,10 +29,10 @@
 **会话上下文管理（Memory）是多轮交互场景的核心基础设施**。本文提到 Bedrock AgentCore Memory 负责记录对话上下文，支持多轮连续交互。对于企业采购场景，多轮交互的典型模式是：用户先询问某供应商的历史报价（第一轮）→ Agent 返回数据 → 用户进一步要求对比多个供应商（第二轮）→ Agent 跨请求保持上下文。这种跨请求的上下文保持能力，使得用户无需在单一请求中提供所有背景信息，大幅提升了交互的自然性和效率。在构建类似的企业 Agent 系统时，应将 Memory 的设计视为核心架构决策，而非事后补充功能。
 
 ## 相关实体
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/527-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/528-amazon-bedrock-agentcore.html)
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/121-aws-bedrock-agentcore-quality-optimization-flywheel.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/375-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/527-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/376-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/528-amazon-bedrock-agentcore.html)
 - [Aws Bedrock Multi Agent Collaboration Guide](ch11/009-aws-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sap-intelligent-procurement-assistant-solution.md)
