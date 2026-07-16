@@ -56,7 +56,7 @@ PRISM 的工程化思路对 AI 研究基础设施的建设有重要启示：
 
 1. **解耦是工程化的第一原则**：将精度控制、骨干适配、方法逻辑彻底解耦，使各组件可以独立演进和灵活组合。这是 PRISM 能够支持 12 种方法 + 2 种骨干 + 4 种精度模式的技术基础。
 2. **消费级硬件的极致优化可以打开更广阔的参与面**：降低硬件门槛不只是"省钱"的问题——它让小实验室、个人研究者甚至学生都能参与到前沿研究，这对整个领域的人才培养和创新活力有深远影响。
-3. **研究基础设施的标准化是领域成熟度的标志**：当一个领域从"手工打造每个实验"转向"标准化基础设施+插件式扩展"时，意味着该领域进入了工程化成熟阶段。[Harness Engineering 全景](../ch05/112-harness-engineering.html) 中提到的 AI 工程化趋势，在 MCIT 领域以 PRISM 的形式得到了充分体现。
+3. **研究基础设施的标准化是领域成熟度的标志**：当一个领域从"手工打造每个实验"转向"标准化基础设施+插件式扩展"时，意味着该领域进入了工程化成熟阶段。[Harness Engineering 全景](../ch05/052-harness-engineering.html) 中提到的 AI 工程化趋势，在 MCIT 领域以 PRISM 的形式得到了充分体现。
 
 ## 实践启示
 
@@ -71,9 +71,9 @@ PRISM 的工程化思路对 AI 研究基础设施的建设有重要启示：
 ## 相关实体
 
 - [Agent Harness 场景](../ch05/039-agent-harness.html)
-- [Harness Engineering 2026 全景](../ch05/112-harness-engineering.html)
+- [Harness Engineering 2026 全景](../ch05/052-harness-engineering.html)
 - [Fine-tuning 工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemo-automodel-fine-tuning.md)
-- [多模态评估器](ch01/357-mllm-as-judge.html)
+- [多模态评估器](ch01/353-mllm-as-judge.html)
 - [Agent 评测方法论](../ch03/046-agent.html)
 - [BAAI ORCA 世界模型](../ch05/086-ai.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

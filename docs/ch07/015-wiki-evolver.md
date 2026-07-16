@@ -10,7 +10,7 @@
 
 ## 为什么需要这一层
 当前 vault 已经有比较成熟的 ingest / index / log / lint 闭环，也已经有 `[Wiki Master Map](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)`、``、`` 这样的导航与治理面。但这些层更多解决的是"怎么把知识存进去、找出来、维护好"，还没有系统性解决"如何让知识库主动长出新的研究问题、论文候选、工程实践和下一代 Skill"。
-Wiki Evolver 的作用正是在这里：它把 ``、`[Ai Team Knowledge Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)`、`[Harness Engineering Systematic Framework](../ch05/112-harness-engineering.html)` 等现有思想，提升成一个统一编排层。
+Wiki Evolver 的作用正是在这里：它把 ``、`[Ai Team Knowledge Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)`、`[Harness Engineering Systematic Framework](../ch05/052-harness-engineering.html)` 等现有思想，提升成一个统一编排层。
 
 ## Core Contract
 这个 Skill 的完成条件不是"发现了有趣文章"，而是每轮至少要产出一个 durable outcome：

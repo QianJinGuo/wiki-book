@@ -351,12 +351,12 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 
 ## 相关实体
 - [Qoder Skills 完全指南](../ch07/034-qoder-skills.html)（同主题旧版）
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/265-agent-skill.html)（同主题不同 MP — 实操指引）
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/603-agent-skill.html)（同主题不同 MP — 实操指引）
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/251-anthropic-agent.html)
 - [Agent Skill 设计模式](ch04/391-agent-skills.html)（Anthropic → Google 演进）
 - [重新定义Skill开发：保姆级教程](ch04/267-skill.html)
 - [你写的 Skill，及格了吗？](ch04/267-skill.html)（skill-judge 对照）
-- [Harness Engineering 90 Percent Pillars](../ch05/112-harness-engineering.html)（与 Skill 同源的工程化思路）
+- [Harness Engineering 90 Percent Pillars](../ch05/052-harness-engineering.html)（与 Skill 同源的工程化思路）
 - [Qoder Skills 完全指南](../ch07/034-qoder-skills.html)
 - [qoder skills](../ch07/034-qoder-skills.html)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/391-agent-skills.html)
@@ -367,10 +367,10 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [Agent Skill 设计模式](ch04/391-agent-skills.html)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/086-ai.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/046-agent.html)
-- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/265-agent-skill.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/552-ai-agent.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/603-agent-skill.html)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/366-anthropic-google-agent-skills.html)
-- [Garry Tan](../ch01/649-garry-tan.html)
+- [Garry Tan](../ch01/652-garry-tan.html)
 - [Agent Workflows](ch04/347-agent-workflows.html)
 - [Hermes Agent](../ch03/092-hermes-agent.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
@@ -380,12 +380,12 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/552-ai-agent.html)
 - [Skillx Zhejiang University](../ch07/051-skillx.html)
 - [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
 - [Gemini Deep Guide Prompt](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-deep-guide-prompt.md)
 - [Promptqueue Opengorilla Project Analysis Ljguo](https://github.com/QianJinGuo/wiki/blob/main/entities/promptqueue-opengorilla-project-analysis-ljguo.md)
-- [qoder 团队知识引擎](../ch01/846-qoder.html)
+- [qoder 团队知识引擎](../ch01/851-qoder.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 2nd Source 原文存档

@@ -113,7 +113,7 @@ code-reviewer/
 ## 与已有实体的关系
 
 - [Claude Code Skills 实战指南](../ch07/035-claude-code-skills.html) — 互补：该实体聚焦 Claude Code 的发现机制（6 种来源）和安全限制，本实体聚焦 Agent Harness Skill 系统（类型、frontmatter 字段、动态注入、context fork）
-- [Harness Engineering](ch05/112-harness-engineering.html) — 上位框架：Skill 是 Harness Engineering 六层架构中"工具与技能体系"层的具体实现
+- [Harness Engineering](ch05/052-harness-engineering.html) — 上位框架：Skill 是 Harness Engineering 六层架构中"工具与技能体系"层的具体实现
 - [Claude Code Skill Writing 指南](../ch03/076-claude-code.html) — 互补：前者侧重编写方法，本实体侧重执行原理
 
 ## 参考

@@ -64,9 +64,9 @@ Memory Agent 判断是否需要注入记忆驱动的提醒（memory-grounded rem
 
 ## 相关实体
 
-- [Agentic RL Frameworks Long-Horizon Wolfe 2026](ch04/538-agentic-rl.html)
+- [Agentic RL Frameworks Long-Horizon Wolfe 2026](ch04/540-agentic-rl.html)
 - [RoadmapBench Long-Horizon Benchmark](ch04/250-roadmapbench-long-horizon-agentic-software-development.html)
-- [Memory Agent Systems Cobanov](ch04/560-memory-agent-systems-cobanov.html)
+- [Memory Agent Systems Cobanov](ch04/563-memory-agent-systems-cobanov.html)
 - [Agent Memory Storage Six Schools](ch04/121-agent-memory.html)
 - [Self-Evolution GUI Agents Memory](../ch03/046-agent.html)
 - [State of Memory in Agent Harness Mem0 2026](../ch05/039-agent-harness.html)

@@ -63,7 +63,7 @@
 
 ### 与 Harness Engineering 概念体系的关系
 
-本文的"主权线"框架为 [Harness Engineering](ch05/112-harness-engineering.html) 概念提供了时间维度的演进视角。它回答了一个关键问题：当模型越来越强时，Harness Engineering 师的角色如何变化？
+本文的"主权线"框架为 [Harness Engineering](ch05/052-harness-engineering.html) 概念提供了时间维度的演进视角。它回答了一个关键问题：当模型越来越强时，Harness Engineering 师的角色如何变化？
 
 答案不是"消失"，而是"上移"——从技术实现层上移到治理决策层。这与软件工程中"抽象层次不断提升"的历史规律一致：汇编程序员没有消失，而是演化为系统架构师和安全工程师。
 
@@ -90,12 +90,12 @@
 
 ## 相关实体
 
-- [Harness Engineering](ch05/112-harness-engineering.html)
+- [Harness Engineering](ch05/052-harness-engineering.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch05/039-agent-harness.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/112-harness-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/052-harness-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/225-openclaw.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/224-openclaw.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](ch05/039-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-future-persistence-vs-erosion.md)

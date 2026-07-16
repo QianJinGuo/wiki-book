@@ -92,7 +92,7 @@ description: 按标准流程 review API 代码，发现问题列出修复建议
 
 **context: fork 的隔离设计哲学**：Subagent 隔离模式体现了"最小权限"原则——Skill 的工作上下文与主 session 隔离，防止副作用扩散。这一设计理念与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的 harness 隔离机制高度一致，都是为了在多 agent 协作时保护主控制平面的稳定性。fork 模式尤其适合大规模代码库扫描等高上下文消耗操作。
 
-**安全栏杆机制的本质**：disable-model-invocation: true 是一个"人类在环"（human-in-the-loop）强制门禁，防止 autonomous agent 执行不可逆操作。与传统软件中的"双击确认"或"删除二次确认"相同，这是对 AI 执行危险操作的安全校验。该设计呼应了 [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/225-openclaw.html) 中的多 agent 权限管控思路——不同技能的自动化等级应该可配置。
+**安全栏杆机制的本质**：disable-model-invocation: true 是一个"人类在环"（human-in-the-loop）强制门禁，防止 autonomous agent 执行不可逆操作。与传统软件中的"双击确认"或"删除二次确认"相同，这是对 AI 执行危险操作的安全校验。该设计呼应了 [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/224-openclaw.html) 中的多 agent 权限管控思路——不同技能的自动化等级应该可配置。
 
 **工作流级封装 vs 原子级工具**：Skill 的可链式调用代表了一种新的抽象层次——工作流级封装。对比 [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html) 中描述的原子级 tool-use，Skill 更适合复杂多步骤流程（如"代码 review → 生成测试 → 修复 lint"流水线），而 tool 适合单点操作。两者可以共存，Skill 调用 tool，tool 执行原子步骤。
 
@@ -113,9 +113,9 @@ description: 按标准流程 review API 代码，发现问题列出修复建议
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/225-openclaw.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/224-openclaw.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/669-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/132-karpathy-vibe-coding-agentic-engineering.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Claude Code Deep Architecture Analysis](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
 
