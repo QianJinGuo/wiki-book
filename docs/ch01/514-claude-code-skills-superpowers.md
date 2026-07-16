@@ -15,9 +15,9 @@ Claude Code的Skills实践及利器推荐：工欲善其事，必先利其器
 ## 相关实体
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/076-claude-code.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/076-claude-code.html)
-- [Code Review Graph](ch01/804-code-review-graph-claude-code-6-8-token.html)
+- [Code Review Graph](ch01/809-code-review-graph-claude-code-6-8-token.html)
 - [Claude Code Hackathon Winners 2026](../ch03/076-claude-code.html)
-- [Claude Code Harness Deep Understanding](ch01/459-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](ch01/458-claude-code-harness-deep-understanding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-skills-superpowers-practice.md)
 

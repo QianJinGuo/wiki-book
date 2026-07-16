@@ -8,7 +8,7 @@
 
 ## 标签
 #aws #devops-agent #china-region #mcp
-**原文**: [将 Aws Devops Agent 智能运维能力延伸到中国区](ch11/264-aws-devops-agent.html)(raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
+**原文**: [将 Aws Devops Agent 智能运维能力延伸到中国区](ch11/267-aws-devops-agent.html)(raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
 
 ## 相关实体
 - [9个Agent技能模块化SageMaker微调生命周期](../ch04/397-aws-sagemaker-ai-agent.html)

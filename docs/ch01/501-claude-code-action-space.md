@@ -12,8 +12,8 @@
 真正上线后你会发现，最先出问题的往往是两件事：
 
 ## 相关实体
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/339-anthropic-claude-code.html)
-- [Claude Code Agent Teams Task Decomposition Ruofei](ch01/380-claude-code-agent-teams.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/1181-anthropic-claude-code.html)
+- [Claude Code Agent Teams Task Decomposition Ruofei](ch01/376-claude-code-agent-teams.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/076-claude-code.html)
 - [Claude Code Tool Design Evolution Anthropic](../ch03/076-claude-code.html)
 - [Claude Code Hackathon Winners 2026](../ch03/076-claude-code.html)

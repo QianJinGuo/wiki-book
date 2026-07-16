@@ -85,7 +85,7 @@ Sonnet 5 被直接推为 Anthropic 的主力默认模型：Claude Free 和 Claud
 
 ## 相关实体
 
-- [Anthropic Claude Code 木马遥测安全事件](ch01/339-anthropic-claude-code.html) — Sonnet 5 的安全改进与 Anthropic 整体的安全策略演进
+- [Anthropic Claude Code 木马遥测安全事件](ch01/1181-anthropic-claude-code.html) — Sonnet 5 的安全改进与 Anthropic 整体的安全策略演进
 - [Claude Code 学术文献综述](../ch03/076-claude-code.html) — Sonnet 5 在编码场景中的实际应用案例
 - [Agent 评测方法论与体系设计](../ch03/046-agent.html) — SWE-bench、HLE、OSWorld 等评测基准的设计原理
 - [禁止开源 AI 将是错误](ch01/234-banning-open-source-ai-would-be-a-mistake-interconnects.html) — 模型定价与开源/闭源生态的讨论

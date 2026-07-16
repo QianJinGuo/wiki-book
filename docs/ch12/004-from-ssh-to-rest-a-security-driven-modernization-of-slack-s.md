@@ -68,7 +68,7 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - **平台可演进性**：Airflow 与 EMR 基础设施细节解耦，集群替换对 DAG 无感
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
 ## 相关实体
-- [Wetesteddeepseekv4Proandflashagainstclau](../ch01/1016-deepseek.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](../ch01/1021-deepseek.html)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/086-ai.html)
 - [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/129-why-internally-built-ai-fails-fund-accounting-audits.html)
@@ -81,10 +81,10 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - [Romanian Man 30 Years Us Prison Vishing](../ch01/215-0.html)
 - [Youcom Download The Guide Why Api Latency Is A Misleading Metric](https://github.com/QianJinGuo/wiki/blob/main/entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 - [818662](https://github.com/QianJinGuo/wiki/blob/main/entities/818662.md)
-- [2026 04 15](../ch01/1283-15.html)
+- [2026 04 15](../ch01/1286-15.html)
 - [What My Privacy And Security Stack Actually Looks Like](ch12/021-what-my-privacy-and-security-stack-actually-looks-like.html)
 - [Ai Traffic Cyberthreat Benchmark 2026](../ch05/086-ai.html)
-- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09/158-device-code-phishing-forensics-what-we-learned-from-bec-inv.html)
+- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09/159-device-code-phishing-forensics-what-we-learned-from-bec-inv.html)
 
 ---
 

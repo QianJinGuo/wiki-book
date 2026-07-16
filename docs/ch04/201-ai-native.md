@@ -9,7 +9,7 @@
 - [Ai Native Rd Org Design](../ch05/019-ai-native.html)
 - [Ai Native 时代 研发组织何去何从](../ch05/019-ai-native.html)
 - [Ai Native Org Guide Slowdown](../ch05/019-ai-native.html)
-- [Fanling Company As Agent Ai Org Reflection](../ch01/985-agent-ai.html)
+- [Fanling Company As Agent Ai Org Reflection](../ch01/990-agent-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-native-team-building-yexiaochai.md)
 

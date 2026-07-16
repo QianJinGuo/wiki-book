@@ -10,7 +10,7 @@
 
 ## 摘要
 
-"白白小白"（陈子弘）系统性整理 AutoResearch（自动机器学习研究）领域的四种主流 Agent 循环设计：线性 Keep-or-Discard、树搜索、遗传进化池、异步多 Agent 进化。文章核心价值在于给出一个**通用四维分析框架**（搜索拓扑、反馈信号、记忆架构、决策主体），可解构任何新的 AutoResearch 方法并直接评估其优劣势。当基模固定时，**Agent 循环设计就是研究效率竞争的本质**——这正是 [Yann Dubois 强调的"AutoResearch = 基模 + Agent Loop"](../ch01/749-openai.html)。
+"白白小白"（陈子弘）系统性整理 AutoResearch（自动机器学习研究）领域的四种主流 Agent 循环设计：线性 Keep-or-Discard、树搜索、遗传进化池、异步多 Agent 进化。文章核心价值在于给出一个**通用四维分析框架**（搜索拓扑、反馈信号、记忆架构、决策主体），可解构任何新的 AutoResearch 方法并直接评估其优劣势。当基模固定时，**Agent 循环设计就是研究效率竞争的本质**——这正是 [Yann Dubois 强调的"AutoResearch = 基模 + Agent Loop"](../ch01/433-openai.html)。
 
 ## 核心要点
 
@@ -34,7 +34,7 @@
 - 同样的 GPT-5.4 在 Karpathy autoresearch（线性循环）下 vs AIDE（树搜索）下产出的论文质量差异巨大
 - 同样的 Claude Opus 在 AI Scientist v2（树搜索 + Agent 自主选择）下 vs CORAL（异步多 Agent）下，产出效率完全不同
 
-这呼应了 [Nathan 评测 GPT 5.4 时的核心论点](../ch01/533-codex.html)：模型权重之外的"系统"才是真正的差异化来源。Agent Loop 就是研究的"系统"。
+这呼应了 [Nathan 评测 GPT 5.4 时的核心论点](../ch01/535-codex.html)：模型权重之外的"系统"才是真正的差异化来源。Agent Loop 就是研究的"系统"。
 
 ### 二、四种循环的工程取舍
 
@@ -83,7 +83,7 @@
 
 **FunSearch 创新**：使用 MAP-Elites 算法，**不只保留最优个体**，而是在多个行为维度的每个 niche 中都保留最优个体，从而维持种群的多样性。
 
-**GEPA 革命**：用文本反馈取代标量奖励驱动突变——系统先对当前候选进行 rollout，记录完整的执行轨迹（推理过程、工具调用、输出），然后让 LLM 阅读这些轨迹来诊断问题、归因原因、提出针对性修改。这与 [Yann 提到"RL 的归因难题"](../ch01/749-openai.html)形成对照：GEPA 不通过 RL 自动归因，而是用 LLM 阅读 + 推理进行归因。
+**GEPA 革命**：用文本反馈取代标量奖励驱动突变——系统先对当前候选进行 rollout，记录完整的执行轨迹（推理过程、工具调用、输出），然后让 LLM 阅读这些轨迹来诊断问题、归因原因、提出针对性修改。这与 [Yann 提到"RL 的归因难题"](../ch01/433-openai.html)形成对照：GEPA 不通过 RL 自动归因，而是用 LLM 阅读 + 推理进行归因。
 
 #### 2.4 异步多 Agent 进化
 
@@ -150,8 +150,8 @@
 
 ## 相关实体
 
-- [Yann Dubois Openai Post Training Matt Turck Interview](../ch01/749-openai.html)
-- [What Comes Next With Open Models](../ch01/256-what-comes-next-with-open-models.html)
+- [Yann Dubois Openai Post Training Matt Turck Interview](../ch01/433-openai.html)
+- [What Comes Next With Open Models](../ch01/252-what-comes-next-with-open-models.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Multi-Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)
 - **Monte Carlo Tree Search**

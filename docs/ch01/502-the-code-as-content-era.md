@@ -58,7 +58,7 @@
 - **文化时机**：窗口期以"小时"计，错过的代价是整轮被遗忘。
 - **可组合性**：remix 别人作品的能力，比原创能力更被市场奖励。
 
-这与 [17 种 agent 架构演进](../ch04/657-17-agent.html) 中关于"agent 必须能被快速 prompt 改写与组合"的判断一脉相承——vibe coding 工具只是 agentic 编程的 UI 表现，背后的范式是"组合性优先于完整性"。
+这与 [17 种 agent 架构演进](../ch04/662-17-agent.html) 中关于"agent 必须能被快速 prompt 改写与组合"的判断一脉相承——vibe coding 工具只是 agentic 编程的 UI 表现，背后的范式是"组合性优先于完整性"。
 
 ### 五、对软件工程的冲击
 
@@ -83,10 +83,10 @@
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
-- [Claude Opus 48 The System Card B8460F](ch01/460-claude.html)
+- [Claude Opus 48 The System Card B8460F](ch01/459-claude.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/046-agent.html)
-- [17 种 agent 架构演进](../ch04/657-17-agent.html)
+- [17 种 agent 架构演进](../ch04/662-17-agent.html)
 - [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/235-agentic.html)
 - [Erik Schluntz: vibe coding 在生产环境](https://github.com/QianJinGuo/wiki/blob/main/entities/erik-schluntz-vibe-coding-in-production.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
