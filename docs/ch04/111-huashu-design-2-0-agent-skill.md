@@ -146,7 +146,7 @@
 
 ## 相关实体
 - Agent Skill 设计模式 — 撞/借/请 / 资产前置 / 第 0 原则 是 Skill 设计的通用模式
-- [Harness 模式 6-SubAgent 实战 — 17哥 vs 评测平台](../ch05/112-harness-engineering.html) — 互补 (决策者 vs 动手者)
+- [Harness 模式 6-SubAgent 实战 — 17哥 vs 评测平台](../ch05/052-harness-engineering.html) — 互补 (决策者 vs 动手者)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/huashu-design-2-0-flower-uncle-3-pitfalls.md)
 
@@ -212,7 +212,7 @@ Huashu-Design 的 3 个坑和 3 个原则，本质上是在回答一个问题：
 
 **相关实体**：
 - [Skill Design Patterns](ch04/267-skill.html) — skill 设计维度的通用模式
-- [Harness Engineering Practical 17Ge Versus 6 Subagent](../ch05/112-harness-engineering.html) — 互补的 Harness 模式（决策者 vs 动手者）
+- [Harness Engineering Practical 17Ge Versus 6 Subagent](../ch05/052-harness-engineering.html) — 互补的 Harness 模式（决策者 vs 动手者）
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html) — Claude Code harness 架构参考
 - [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — AI 能力提升后的 harness 设计范式转移
 - [Agent Role Specialization](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-role-specialization.md) — agent 在"做决策"和"动手"之间的角色分化

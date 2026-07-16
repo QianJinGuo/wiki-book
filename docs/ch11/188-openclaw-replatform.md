@@ -49,11 +49,11 @@ deploy.sh 完成后的 Next steps 明确要求配置 Telegram Bot Token 和 Webh
 Phase 1 部署的 VPC Flow Logs 记录所有进出 VPC 的网络流量，配合 CloudWatch Log Group（Bedrock 调用日志）可以覆盖绝大多数网络和调用问题 。建议将这两项日志的保留期设置为 30 天（默认），并配置与 SNS Alarm 联动的异常规则（如 Router Lambda 错误 > 5 次），实现无人值守期间的主动告警 。
 
 ## 相关实体
-- [Openclaw Multi 4](ch11/225-openclaw.html)
-- [Openclaw Multi 1](ch11/225-openclaw.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/371-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [Strands Agents Cloud Cost Optimizer](../ch03/045-agent.html)
-- [Aws Bedrock Agentcore Identity Security](ch11/241-aws-bedrock-agentcore.html)
+- [Openclaw Multi 4](ch11/224-openclaw.html)
+- [Openclaw Multi 1](ch11/224-openclaw.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/376-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Strands Agents Cloud Cost Optimizer](../ch03/046-agent.html)
+- [Aws Bedrock Agentcore Identity Security](ch11/246-aws-bedrock-agentcore.html)
 
 ---
 

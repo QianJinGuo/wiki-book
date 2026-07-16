@@ -85,7 +85,7 @@ AI 表格/多维表格之所以成为企业 80% AI 项目的承载体，**不是
 
 ## 相关实体
 - [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](ch04/391-agent-skills.html)
-- [Gepa Optimize Anything](../ch01/349-gepa-optimize-anything.html)
+- [Gepa Optimize Anything](../ch01/345-gepa-optimize-anything.html)
 - [Memento Skills Agent Self Evolving](ch04/395-memento-skills-agent.html)
 - [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](ch04/391-agent-skills.html)
 - [Agent Skills Comprehensive Survey](ch04/391-agent-skills.html)

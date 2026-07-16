@@ -14,9 +14,9 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [CloudSectiDbits: Masso - Cognito SSO Bypass](ch11/236-cloudsectidbits.html)
-- [Vietnam to develop domestic cloud](../ch01/1049-opd.html)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04/304-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [CloudSectiDbits: Masso - Cognito SSO Bypass](ch11/235-cloudsectidbits.html)
+- [Vietnam to develop domestic cloud](../ch01/1054-opd.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04/576-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04/431-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
 - [The Agency Model Dangers](https://github.com/QianJinGuo/wiki/blob/main/concepts/the-agency-model-dangers.md)

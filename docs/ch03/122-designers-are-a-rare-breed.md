@@ -39,7 +39,7 @@ YouTube 上有一类视频专门做这类测试：给新手顶级专业设备，
 
 - [柚漫剧 AI全流程提效拆解](../ch05/086-ai.html)
 - [Agent Skill 设计模式](../ch04/391-agent-skills.html)
-- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](../ch01/958-20.html)
+- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](../ch01/963-20.html)
 
 ---
 

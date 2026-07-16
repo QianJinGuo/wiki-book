@@ -14,7 +14,7 @@
 ## 相关实体
 - [告别氛围编程基于 Harness 治理和 Sdd 的团队级 Ai 研发范式演进与实践](ch05/099-harness.html)
 - [Wow Harness V3 Governance Protocol](ch05/099-harness.html)
-- [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/049-openspec.html)
+- [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/050-openspec.html)
 - [Stepan Gershuni Ai Native Startup Guide](ch05/019-ai-native.html)
 - [Oz Multi Harness Cloud Agent Orchestration](../ch04/490-agent-orchestration.html)
 

@@ -23,7 +23,7 @@
 
 ## 关联阅读
 ## 相关实体
-- [Why Im Leaving Github For Forgejo](ch01/868-github.html)
+- [Why Im Leaving Github For Forgejo](ch01/798-github.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/032-from-doer-to-director-the-ai-mindset-shift.html)
 - [Microsoft For Startups Microsoft](ch01/131-microsoft-for-startups-microsoft.html)
 - [Running An Ai Native Engineering Org](ch01/050-running-an-ai-native-engineering-org.html)

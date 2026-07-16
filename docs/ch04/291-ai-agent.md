@@ -16,11 +16,11 @@
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/391-agent-skills.html)
 - [ai agent memory systems](ch04/121-agent-memory.html)
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/391-agent-skills.html)
-- [Garry Tan](../ch01/649-garry-tan.html)
+- [Garry Tan](../ch01/652-garry-tan.html)
 - [Agent Workflows](ch04/347-agent-workflows.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/267-skill.html)
-- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)- [四种 Sub Agent 模式](../ch03/046-agent.html) 
+- [十年老技术开发的 AI Agent 探索之路](ch04/552-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/552-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/552-ai-agent.html)- [四种 Sub Agent 模式](../ch03/046-agent.html) 
 
 ## 深度分析
 ### 范式转移：人是瓶颈，但解决方式不是替代人

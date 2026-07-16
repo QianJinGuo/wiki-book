@@ -58,7 +58,7 @@ Kong 等主流平台已经开始将 MCP 网关功能整合进现有 AI 网关产
 - **长期（18 个月+）**：规划向统一 AI 安全平台收敛，网关层负责基础设施治理，安全平台层负责行为检测和动态执法
 
 ## 关联阅读
-- [Securing AI Agents: How AWS and Cisco AI Defense Scale MCP and A2A](../ch04/030-ai-agent.html) — MCP 和 A2A 协议在企业级部署中的规模实践
+- [Securing AI Agents: How AWS and Cisco AI Defense Scale MCP and A2A](../ch04/552-ai-agent.html) — MCP 和 A2A 协议在企业级部署中的规模实践
 - [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/431-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — 工具投毒作为企业代理安全的核心缺陷
 - [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04/410-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox 的 AI 代理安全测试框架
 - [AgentCore Runtime 部署 Apache Doris MCP Server](ch11/165-apache-doris-mcp-server-quick-suite-ai.html) — MCP Server 部署实践
