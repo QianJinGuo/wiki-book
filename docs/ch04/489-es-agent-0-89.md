@@ -31,7 +31,7 @@
 - **Mem0 / Letta**：向量数据库 + 基础管理 — 有向量检索但无分型生命周期
 - **LangGraph**：状态机快照 — 适合工作流重放而非跨会话知识查询
 
-三索引分型的思路与 [Harness Engineering](../ch05/112-harness-engineering.html) 中的分层思想一致，都是将不同生命周期的信息用不同的策略管理。
+三索引分型的思路与 [Harness Engineering](../ch05/052-harness-engineering.html) 中的分层思想一致，都是将不同生命周期的信息用不同的策略管理。
 
 文章末尾提出的三个通用设计原则值得反复读：衰减曲线是领域决策不是技术参数、混合检索 BM25+vector 互补不二选一、后台提炼和矛盾处理是必须的非可选。
 
@@ -47,7 +47,7 @@
 
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/046-agent.html)
 - [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/099-harness.html)
-- [Harness Engineering](../ch05/112-harness-engineering.html)
+- [Harness Engineering](../ch05/052-harness-engineering.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/092-hermes-agent.html)
 - [State Of Memory In Agent Harness Mem0 2026](../ch05/039-agent-harness.html)
 

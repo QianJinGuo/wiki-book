@@ -135,13 +135,13 @@
 
 4. **MCP 是催化剂不是银弹：为每个 Agent 定制工具集**：跨 Agent 共享工具听起来美好，但实践中完美适合某 Agent 的工具往往就是该 Agent 独有的——不要为了追求标准化而牺牲工具的有效性 [Agent Architecture Harness New Backend](../ch05/099-harness.html)
 
-5. **控制权是 5%+95% 范式的核心前提**：Rod 的 5% 手写 + 95% AI 公式成立的前提是"牢牢掌握控制权"——没有架构监督，Coding Agent 会导致设计退化。保持人类对架构决策的 100% 控制，AI 生成代码必须经过人工纠正才能合入代码库 [Skillopt](../ch05/042-skillopt.html) [Impeccable](../ch05/001-impeccable.html)
+5. **控制权是 5%+95% 范式的核心前提**：Rod 的 5% 手写 + 95% AI 公式成立的前提是"牢牢掌握控制权"——没有架构监督，Coding Agent 会导致设计退化。保持人类对架构决策的 100% 控制，AI 生成代码必须经过人工纠正才能合入代码库 [Skillopt](../ch05/043-skillopt.html) [Impeccable](../ch05/001-impeccable.html)
 
 ## 相关对照
 - 状态机/规划对照：LangGraph、Crew.ai、Semantic Kernel
 - 企业 Java Harness：[AgentScope Java Harness](../ch05/099-harness.html)
 - Alien Stack 反思：[Harness 成为新后端](../ch05/099-harness.html)（同样"邻接性"原则）
-- 模型 vs Harness 之争：[SkillOpt](../ch05/042-skillopt.html) / [Impeccable](../ch05/001-impeccable.html)
+- 模型 vs Harness 之争：[SkillOpt](../ch05/043-skillopt.html) / [Impeccable](../ch05/001-impeccable.html)
 - GOAP 起源：游戏 NPC AI（学术界 F.E.A.R / Left 4 Dead 等已用）
 
 ## 相关实体

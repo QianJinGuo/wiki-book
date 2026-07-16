@@ -72,9 +72,9 @@
 
 ## 相关实体
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/006-build-agents-not-pipelines.html)
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/958-20.html)
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/963-20.html)
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/958-20.html)
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/963-20.html)
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md)
 
 ## 相关主题

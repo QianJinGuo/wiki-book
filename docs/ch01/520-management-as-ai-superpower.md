@@ -78,12 +78,12 @@ Mollick 的三变量公式（Human Baseline Time、Probability of Success、AI P
 
 实操中要按"7 小时任务"经验值校准，根据自己的任务类型调整。
 
-### 6. 与 [Claude Code 现状](ch01/441-claude-code-and-what-comes-next.html)的呼应
+### 6. 与 [Claude Code 现状](ch01/440-claude-code-and-what-comes-next.html)的呼应
 
-文中提到"found Claude Code was able to generate an entire 1980s style adventure game with one prompt"——这是 Claude Code 能力的真实案例，与 [Claude Code 现状评估](ch01/441-claude-code-and-what-comes-next.html) 的"1 小时 14 分钟自建创业项目"形成同一现象的不同展示。
+文中提到"found Claude Code was able to generate an entire 1980s style adventure game with one prompt"——这是 Claude Code 能力的真实案例，与 [Claude Code 现状评估](ch01/440-claude-code-and-what-comes-next.html) 的"1 小时 14 分钟自建创业项目"形成同一现象的不同展示。
 
 **Mollick 的两个论点是同构的**：
-- [Claude Code 现状](ch01/441-claude-code-and-what-comes-next.html)：AI 能力跃迁让 Karpathy 感觉自己"落后了"
+- [Claude Code 现状](ch01/440-claude-code-and-what-comes-next.html)：AI 能力跃迁让 Karpathy 感觉自己"落后了"
 - 本文：AI 能力跃迁让非技术 EMBA 学生"四天抵一学期"
 
 **[AI 让程序员与商业人士同时感到职业重构]**
@@ -92,7 +92,7 @@ Mollick 的三变量公式（Human Baseline Time、Probability of Success、AI P
 
 - 与 [苦味教训](../ch04/337-the-bitter-lesson-versus-the-garbage-can.html)的张力：苦味教训暗示"算力 + 通用方法"会取代"工艺精心设计"；本文强调"管理能力"成为新稀缺——前者是技术派，后者是组织派。
 - 与 [CrewAI 迭代论](../ch04/379-your-first-ai-agent-should-do-one-thing-badly.html)的同源：都强调"迭代"与"真实失败数据"的重要性。不同在于本文关注"管理能力"，CrewAI 关注"工程迭代节奏"。
-- 与 [co-existence](ch01/631-co-existence-and-the-end-of-co-intelligence.html) 的互补：co-existence 关注写作/创意领域的人机关系，本文关注商业/管理领域——同一作者的两个互补视角。
+- 与 [co-existence](ch01/633-co-existence-and-the-end-of-co-intelligence.html) 的互补：co-existence 关注写作/创意领域的人机关系，本文关注商业/管理领域——同一作者的两个互补视角。
 
 ## 实践启示
 
@@ -106,15 +106,15 @@ Mollick 的三变量公式（Human Baseline Time、Probability of Success、AI P
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/669-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/132-karpathy-vibe-coding-agentic-engineering.html)
 - [The Bitter Lesson Versus The Garbage Can](../ch04/337-the-bitter-lesson-versus-the-garbage-can.html)
-- [Claude Code And What Comes Next](ch01/441-claude-code-and-what-comes-next.html)
+- [Claude Code And What Comes Next](ch01/440-claude-code-and-what-comes-next.html)
 - [Your First Ai Agent Should Do One Thing Badly](../ch04/379-your-first-ai-agent-should-do-one-thing-badly.html)
-- [Co Existence And The End Of Co Intelligence](ch01/631-co-existence-and-the-end-of-co-intelligence.html)
+- [Co Existence And The End Of Co Intelligence](ch01/633-co-existence-and-the-end-of-co-intelligence.html)
 - [Giving Your Ai A Job Interview](../ch11/129-giving-your-ai-a-job-interview.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/112-harness-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/052-harness-engineering.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)

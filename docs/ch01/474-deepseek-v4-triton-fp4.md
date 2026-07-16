@@ -59,10 +59,10 @@
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-v4-triton-fp4-optimization.md) — raw articles 中的完整版本
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/676-deepseek-v4.html)
-- [ds4c deepseek v4 antirez](ch01/531-ds4c-deepseek-v4-antirez.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/676-deepseek-v4.html)
-- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](ch01/676-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/680-deepseek-v4.html)
+- [ds4c deepseek v4 antirez](ch01/533-ds4c-deepseek-v4-antirez.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/680-deepseek-v4.html)
+- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](ch01/680-deepseek-v4.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 ---

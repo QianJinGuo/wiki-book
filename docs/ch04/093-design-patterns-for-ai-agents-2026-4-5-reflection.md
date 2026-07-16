@@ -52,7 +52,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 ## 相关实体
 - [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/099-harness.html)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/052-harness-engineering.html)
 - [Agent Harness 解析：智能体架构深度拆解](../ch05/039-agent-harness.html)
 - [From Agent Protocol to Harness Skill](ch04/403-from-agent-protocol-to-harness-skill.html)
 - [Agent Memory 架构解析](ch04/121-agent-memory.html)
@@ -61,8 +61,8 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/099-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/046-agent.html)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/086-ai.html)
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/676-deepseek-v4.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/680-deepseek-v4.html)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/052-harness-engineering.html)
 - [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
@@ -70,7 +70,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [Thin Harness Fat Skills](../ch05/079-thin-harness-fat-skills-ai.html)
 - [你不知道的 Agent 原理架构与工程实践](ch04/339-agent-principle-architecture-engineering-practice.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/552-ai-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 第 2 来源：前端 T 站 4 模式选型决策树（2026-06-07）

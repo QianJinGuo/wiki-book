@@ -48,13 +48,13 @@ Stack Overflow 在 2026-06-10 推出 **Stack Overflow for Agents** —— 面向
 
 1. **Ephemeral Intelligence Gap 本质上是 Agent 时代的"知识熵增"问题**：Agent 在独立运行时反复重新发现相同模式，且 session 结束后知识随 context window 一起蒸发。这不是某个 Agent 的能力问题，而是整个生态缺乏跨 Agent 知识沉淀基础设施的系统性缺陷。从 [Knowledge Management Ai Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/knowledge-management-ai-systems.md) 的角度看，Stack Overflow for Agents 试图在"人类知识库"与"Agent 实时发现"之间架设一条沉淀通道——将每次 Agent 的 TIL（Today I Learned）转化为社区级可检索的知识资产。
 
-2. **B2A（Business-to-Agent）平台模式是 2026 年新兴的商业范式**：Stack Overflow 明确从"人类开发者水冷器"转型为"Agent 的共享实时真理源"，这是平台定位的范式转移。平台的客户从 human developers（B2C）变为 AI agents（B2A）。这种转变与 [Agentcore Harness](ch04/647-agentcore-harness.html) 中"Agent 即服务"的趋势一致——当 Agent 成为独立的行为主体，围绕 Agent 的工具、数据、计算力都会形成新的 B2A 市场。
+2. **B2A（Business-to-Agent）平台模式是 2026 年新兴的商业范式**：Stack Overflow 明确从"人类开发者水冷器"转型为"Agent 的共享实时真理源"，这是平台定位的范式转移。平台的客户从 human developers（B2C）变为 AI agents（B2A）。这种转变与 [Agentcore Harness](ch04/652-agentcore-harness.html) 中"Agent 即服务"的趋势一致——当 Agent 成为独立的行为主体，围绕 Agent 的工具、数据、计算力都会形成新的 B2A 市场。
 
-3. **人类社区信任机制是 SO for Agents 区别于通用 RAG 的核心壁垒**：通用 RAG 依赖原始内容质量，无法验证答案正确性；而 SO for Agents 复用 Stack Overflow 积累的 peer-validated 机制——投票、accepted answer、社区审核。这使得 SO for Agents 的知识库具有"经过生产验证"的信任标签，这是任何通用向量数据库爬取方案都无法提供的。从 [Harness Engineering](../ch05/112-harness-engineering.html) 角度看，这种社区验证机制是一种"分布式 Harness"——不依赖单一权威，而是通过群体共识持续校准知识质量。
+3. **人类社区信任机制是 SO for Agents 区别于通用 RAG 的核心壁垒**：通用 RAG 依赖原始内容质量，无法验证答案正确性；而 SO for Agents 复用 Stack Overflow 积累的 peer-validated 机制——投票、accepted answer、社区审核。这使得 SO for Agents 的知识库具有"经过生产验证"的信任标签，这是任何通用向量数据库爬取方案都无法提供的。从 [Harness Engineering](../ch05/052-harness-engineering.html) 角度看，这种社区验证机制是一种"分布式 Harness"——不依赖单一权威，而是通过群体共识持续校准知识质量。
 
 4. **三种 post 类型（Question / TIL / Blueprint）对应了不同生命周期的知识**：Question 捕获"未解决的空白"，TIL 捕获"单次发现"，Blueprint 捕获"可复用的模式"。这种分层设计与 [Agent Memory Substrate Three Layer](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-substrate-three-layer.md) 的三层记忆架构（STM / LTM / 长期记忆）有异曲同工之妙——都是针对不同时间尺度、不同稳定性要求的知识设计不同的存储/检索策略。
 
-5. **Agent 通过 API 提交 Q&A + 人类审核的机制，是 AI+Human 混合知识生产的标准路径**：Agent 可以发现问题、生成草案，但由人类社区做 peer review 最终决定是否进入知识库。这既保持了知识库的准确性，又利用了 Agent 的规模化发现能力。从 Agent 工程角度，这种"Agent 生产 + Human 验证"的工作流，是 [Harness Engineering](../ch05/112-harness-engineering.html) 中"Human-in-the-loop Harness"设计的具体实现。
+5. **Agent 通过 API 提交 Q&A + 人类审核的机制，是 AI+Human 混合知识生产的标准路径**：Agent 可以发现问题、生成草案，但由人类社区做 peer review 最终决定是否进入知识库。这既保持了知识库的准确性，又利用了 Agent 的规模化发现能力。从 Agent 工程角度，这种"Agent 生产 + Human 验证"的工作流，是 [Harness Engineering](../ch05/052-harness-engineering.html) 中"Human-in-the-loop Harness"设计的具体实现。
 
 ## 实践启示
 
@@ -67,7 +67,7 @@ Stack Overflow 在 2026-06-10 推出 **Stack Overflow for Agents** —— 面向
 
 - [Claude Code 源码架构](../ch03/076-claude-code.html)：Claude Code 通过 CLAUDE.md 和项目级 memory 实现"团队级知识沉淀"，但其范围局限于单个项目；Stack Overflow for Agents 是更广泛的"开发者社区级"沉淀。
 - [Agent 架构 Harness New Backend](../ch05/099-harness.html)：Harness Engineering 关注 Agent 内部的 context/memory 管理；Stack Overflow for Agents 关注 Agent 外部的知识共享层。
-- [AI 驱动搜索的数据基础架构](../ch01/858-architecture-data-foundations-for-ai-powered-search.html)：传统搜索是"人类查询 → 文档匹配"；Agent 时代的搜索是"Agent 查询 → 经过验证的 Q&A 匹配"。
+- [AI 驱动搜索的数据基础架构](../ch01/863-architecture-data-foundations-for-ai-powered-search.html)：传统搜索是"人类查询 → 文档匹配"；Agent 时代的搜索是"Agent 查询 → 经过验证的 Q&A 匹配"。
 
 ## 评价与局限
 

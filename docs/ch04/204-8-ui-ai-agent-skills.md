@@ -40,7 +40,7 @@
 
 ### 相关参考
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
-→ [frontend-design 实体对比](../ch01/697-skills-anthropic-openai-comparison-frontend-design.html)
+→ [frontend-design 实体对比](../ch01/702-skills-anthropic-openai-comparison-frontend-design.html)
 → [开发者技能清单](ch04/391-agent-skills.html)
 
 # 精选 8 个 UI 设计师必备的 AI 智能体技能（Agent Skills）

@@ -85,10 +85,10 @@ Manus 的改进路径需要更多精心手工定制和定制化工作，而 Chat
 
 ## 相关实体
 - [Using Ai Right Now Mollick Quick Guide](../ch05/086-ai.html)
-- [The Shape Of The Thing Mollick](../ch01/268-the-shape-of-the-thing.html)
+- [The Shape Of The Thing Mollick](../ch01/264-the-shape-of-the-thing.html)
 - [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt5-just-does-stuff-mollick.md)
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
-- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/030-ai-agent.html)
+- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/552-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-bitter-lesson-versus-the-garbage-can.md)
 

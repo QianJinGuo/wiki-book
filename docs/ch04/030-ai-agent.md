@@ -455,8 +455,8 @@ Task-Driven 系统的问题不是执行不稳定，而是**任务仍需人持续
 对个人开发者的实际意义：**选技术栈时优先看是否兼容这些正在收敛的协议**。自己造的胶水层越多，未来迁移成本越高。协议层是长期资产，框架是短期工具。
 
 ## Related entities
-- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)
-- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/552-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/552-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/552-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/552-ai-agent.html)
 
 ## 实践启示
 ### 立即可执行

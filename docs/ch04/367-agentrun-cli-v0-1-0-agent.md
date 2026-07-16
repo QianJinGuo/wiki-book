@@ -12,8 +12,8 @@ AgentRun 是以高代码为核心、生态开放、灵活组装的一站式 Agen
 
 ## 相关实体
 - [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch03/092-hermes-agent.html)
-- [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](ch04/030-ai-agent.html)
-- [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/574-python.html)
+- [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](ch04/552-ai-agent.html)
+- [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/577-python.html)
 - [Aliyun Agentrun 5Min Quickstart](ch04/413-agentrun.html)
 - [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/070-skills.html)
 

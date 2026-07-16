@@ -1,18 +1,18 @@
 # 参考文献
-> 本书基于 **3318** 篇一手 AI 材料系统编撰。
+> 本书基于 **3331** 篇一手 AI 材料系统编撰。
 > 涵盖 **353** 个来源站点。
 
 ---
 ## 主要来源
 | 来源 | 文章数 |
 |---|---|
-| mp.weixin.qq.com | 1253 |
-| aws.amazon.com | 301 |
+| mp.weixin.qq.com | 1267 |
+| aws.amazon.com | 303 |
 | www.interconnects.ai | 27 |
 | www.oneusefulthing.org | 22 |
 | www.theregister.com | 20 |
 | netflixtechblog.com | 19 |
-| huggingface.co | 18 |
+| huggingface.co | 19 |
 | unknown | 15 |
 | thehackernews.com | 13 |
 | developer.nvidia.com | 13 |
@@ -38,4 +38,4 @@
 | depthfirst.com | 5 |
 
 ---
-> 共 353 个来源，3318 篇实体。
+> 共 353 个来源，3331 篇实体。

@@ -15,7 +15,7 @@
 - [Hermes Skill System Winty](../ch07/017-hermes-skill.html)
 - [Ai Skill Skill Creator 源码拆解](ch04/429-skill-skill.html)
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/084-harness-skill.html)
-- [Agent Skill Writing Guide](ch04/265-agent-skill.html)
+- [Agent Skill Writing Guide](ch04/603-agent-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skillsieve-agent-skill-security.md)
 

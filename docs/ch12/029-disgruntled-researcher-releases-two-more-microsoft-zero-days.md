@@ -121,8 +121,8 @@ Nightmare-Eclipse 事件揭示了安全研究激励结构的深层问题：
 
 - [同事件 TheRegister 主报道](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled-theregister.md)
 - [研究者背景与历史披露](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
-- [Cisco SD-WAN CVE 类似案例](../ch01/958-20.html)
-- [VSCode GitHub Token 窃取事件](../ch01/868-github.html)
+- [Cisco SD-WAN CVE 类似案例](../ch01/963-20.html)
+- [VSCode GitHub Token 窃取事件](../ch01/798-github.html)
 - [金融行业 GenAI 合规](../ch05/086-ai.html)
 - [Exaforce Agentic SOC 平台](../ch04/023-exaforce-agentic-soc-platform-and-mdr.html)
 

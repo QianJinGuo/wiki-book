@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **29 篇**实体，按深度递增排列。
+> 本章收录 **31 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,8 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 13 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 15 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 16 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
 
@@ -2725,5 +2726,90 @@ This post is the engineering log: what we tried, what surprised us, what we thre
 *   No user-facing API changes. A table that already points at an ONNX-capable `MODEL_NAME` picks up the new path automatically
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/14-faster-embeddings-how-we-rebuilt-the-onnx-path-in-mantico.md)
+
+---
+
+## Ch16.030 Model Routing Is Simple. Until It Isn't — IBM Research 多目标优化路由
+
+> 📊 Level ⭐⭐⭐ | 3.0KB | `entities/ibm-research-model-routing-optimization-2026.md`
+
+# Model Routing Is Simple. Until It Isn't — IBM Research 多目标优化路由
+
+> **IBM Research 在 Hugging Face 发表的生产级模型路由实践**：将路由从分类问题（"哪个模型最适合这个任务"）重新定义为多目标优化问题，在成本、质量和延迟之间找到最佳 operating point。
+
+## 核心洞察
+
+传统的模型路由被当作分类问题——评估任务难度，分配给相应能力的模型。IBM Research 指出这种思路在生产中失效，原因有三：
+
+**1. 成本不仅是模型定价。** Agent 工作负载往往跨步骤复用大量上下文。当缓存命中率高时，有效输入成本大幅下降。Sonnet 的低 cache-read 定价使其从这一模式中受益显著。只看定价表的路由器是在优化错误的目标。
+
+**2. 复杂度不仅是任务难度。** 一个看似简单的请求（如"总结这份合同"）可能触发检索、合规检查、工具调用和多轮细化。任务的真实复杂度在运行前不可见。生产中路由器需要同时平衡成本、延迟、模型专业化、可靠性、合规要求和数据驻留规则。
+
+**3. 延迟不仅是模型速度。** 用户实际感受到的响应时间取决于硬件、缓存状态、端点负载等基础设施因素。每一步都做路由提供更大的灵活性，但每次决策都会引入延迟和操作复杂度。
+
+## 系统实现
+
+IBM Research 的路由器将路由重新定义为**优化问题**而非分类问题：
+
+- 算法同时在 cost-quality-latency 三个维度上优化
+- 轻量级设计：每个任务仅 6ms 和 2KB 内存
+- 提供多个 operating point 供选择
+
+在 AppWorld Test Challenge + CodeAct agent 上的实测结果：
+
+| 配置 | 准确率 | 成本 | 延迟 | 相比 Opus 单独运行 |
+|------|--------|------|------|-------------------|
+| 延迟优化 | 84% | $93 | 83s | 成本↓21%, 延迟↓9%, 准确率仅↓4% |
+| 成本优化 | 略低 | 更低 | - | 进一步压降成本 |
+
+传统的基于难度的路由器（difficulty-based）能达到相近准确率范围但成本更高——因为它无法像优化方法一样探索完整的 tradeoff 空间。
+
+## 相关信息
+
+- [Netflix Switchboard → Lightbulb](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md) 侧重 A/B 实验和 ML serving 基础设施
+- [Amazon Bedrock 开源 Model Router](https://github.com/QianJinGuo/wiki/blob/main/entities/simplify-model-selection-in-amazon-bedrock-with-open-source-model-router.md) 侧重 AWS 生态下的集成方案
+
+- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ibm-research-model-routing-optimization-2026.md)
+
+---
+
+## Ch16.031 PUMA — 语义保持的推理模型早停（Semantic-Preserving Early Exit for Reasoning Models）
+
+> 📊 Level ⭐⭐⭐⭐ | 2.9KB | `entities/puma-semantic-early-exit-reasoning-convergence-2605.md`
+
+# PUMA — 语义保持的推理模型早停
+
+PUMA（**P**reserving se**U**mantics for reasoning convergence dete**M**in**A**tion）是一种用于推理大模型（LRM）的早停方法，核心思路是从语义收敛性而非答案置信度来判断推理是否完成。
+
+## 背景：LRM 的过度思考问题
+
+推理大模型（如 DeepSeek-R1、o1、Qwen3-Thinking）靠长思维链拿高分，但存在普遍过度思考问题。研究表明，五个代表性模型中有 41–52% 的推理 token 生成在模型首次给出最终答案之后，大量算力浪费在答案后的冗余续写。
+
+现有 inference-time early-exit 方法大多盯着 trial answer 的 readiness——从当前推理前缀探测临时答案，检查置信度、连续性等信号。但答案看起来稳定不代表推理真的收敛：模型可能在探索、自我纠错过程中短暂给出高置信甚至连续一致的错误答案。
+
+## PUMA 的核心思路
+
+PUMA 的早停思路是：**不只看答案是否稳定，主要看最近的推理是否还在产生新的语义进展**。当推理开始反复复述既有结论、不再提供新的语义信息时，说明推理大概率已收敛，此时才值得考虑停止。
+
+## 实验结果
+
+在 5 个模型 × 5 个高难度基准上平均减少 **26.2%** 推理 token 且保持准确率。方法具有以下特性：
+
+- **零样本迁移**：可迁移到代码生成与多模态推理场景
+- **可学习**：可作为训练信号内化进模型，实现推理效率的内生优化
+- **跨模型迁移**：在不同规模与架构的推理模型上均有效
+
+## 相关信息
+
+- 论文：*Stop When Reasoning Converges: Semantic-Preserving Early Exit for Reasoning Models*
+- arxiv：2605.17672
+- 代码：https://github.com/giovanni-vaccarino/PUMA
+
+## 相关实体
+
+- 关于推理模型过度思考的信号早在 [Qwen 3.5 分析](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-19-qwen-glm-minimax-interconnects.md) 中已有提及（小模型 overthinking 倾向）
+- 推理效率优化是 [LLM 推理成本与安全](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-thonking-reasoning-effort-security-triage.md) 讨论的重要维度
+
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/puma-semantic-early-exit-reasoning-convergence-2605.md)
 
 ---
