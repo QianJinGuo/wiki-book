@@ -48,7 +48,7 @@ Local      Remote     Sandbox
 -  — 通用 7 层金字塔模型，HarnessAgent 入口类对应其中的"执行引擎 + 上下文工程"层
 - [Harness Engineering](../ch05/052-harness-engineering.html) — Agent 从"聪明"到"可靠"的第三代工程范式；本文是 Java 生态的具体实现
 - [上下文管理与 Working Set](../ch05/039-agent-harness.html) — AgentScope 的对话压缩 + 双层记忆沉淀 + FTS5 检索，是对 working set 理念的完整实现
-- [Browser Harness](../ch05/128-browser-use-v0-13-browser-harness.html) — 浏览器端 Agent Harness；AgentScope 覆盖服务端 Java 场景
+- [Browser Harness](../ch05/129-browser-use-v0-13-browser-harness.html) — 浏览器端 Agent Harness；AgentScope 覆盖服务端 Java 场景
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentscope-java-harness-framework-enterprise-distributed.md)
 
 ## 相关实体

@@ -136,8 +136,8 @@ log.md 只追加不修改确保了知识变更的历史完整性；evidence.cont
 这与 [Harness Engineering 全面解读](ch05/052-harness-engineering.html) 中描述的"约束校验与失败恢复"支柱以及 [Claude Code 大型代码库最佳实践](../ch03/076-claude-code.html) 中的多层记忆系统形成互补——本文提供了知识层面的系统性方案，而行业实践提供了工具层面的具体实现路径。^
 
 ## Related entities
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/099-harness.html)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/099-harness.html)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/018-harness.html)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/018-harness.html)
 
 ## 实践启示
 **立即可操作的行动项**

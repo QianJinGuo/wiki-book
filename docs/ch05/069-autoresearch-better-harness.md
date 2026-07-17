@@ -12,10 +12,10 @@
 
 ## 相关实体
 - [Hermes Agent Deep Dive Alibaba](../ch03/092-hermes-agent.html)
-- [Deerflow Hermes Openclaw Comparison](../ch04/468-deerflow-hermes-openclaw.html)
-- [Harness Evolution Papers](ch05/099-harness.html)
-- [Better Harness Eval Trace Methodology](ch05/099-harness.html)
-- [Wow Harness V3 Governance Protocol](ch05/099-harness.html)
+- [Deerflow Hermes Openclaw Comparison](../ch04/469-deerflow-hermes-openclaw.html)
+- [Harness Evolution Papers](ch05/018-harness.html)
+- [Better Harness Eval Trace Methodology](ch05/018-harness.html)
+- [Wow Harness V3 Governance Protocol](ch05/018-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/better-harness-eval-trace-harness-hill-climbing.md)
 

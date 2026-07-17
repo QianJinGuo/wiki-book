@@ -84,13 +84,13 @@ Let’s see how AgentCore gets you both.
 **Any agent.** You can host Claude Code, Codex, Kiro, OpenCode, Cursor CLI, Gemini CLI, your own harness, and you can package anything into a container or a .zip. Push the container to Amazon Elastic Container Registry (Amazon ECR) or zip-deploy a [Python](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-toolkit.html>) or [Node.js](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-code-deploy-node.html>) project directly. You can bring your own dependencies in the image: language runtimes, build tools, git, system package
 
 ## 相关实体
-- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11/132-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/529-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/529-amazon-bedrock-agentcore.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/529-amazon-bedrock-agentcore.html)
-- [Amazon Quick Bedrock Agentcore Finops Chat](../ch11/127-amazon-quick-bedrock-agentcore-finops.html)
-- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04/490-agent-orchestration.html)
-- [development environments for your cloud agents](ch09/114-development-environments-for-your-cloud-agents.html)
+- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11/131-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/530-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/530-amazon-bedrock-agentcore.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/530-amazon-bedrock-agentcore.html)
+- [Amazon Quick Bedrock Agentcore Finops Chat](../ch11/126-amazon-quick-bedrock-agentcore-finops.html)
+- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04/491-agent-orchestration.html)
+- [development environments for your cloud agents](ch09/116-development-environments-for-your-cloud-agents.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

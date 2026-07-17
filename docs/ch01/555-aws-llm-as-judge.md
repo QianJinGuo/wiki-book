@@ -12,11 +12,11 @@ At the heart of modern RFT is reward functions. They're built for each domain th
 Reinforcement Fine-Tuning can use any reward signal, straightforward hand‑crafted rules (RLVR), or an LLM that evaluates model outputs (LLM-as-a-judge or RLAIF). RLAIF makes alignment far more flexible and powerful, especially when reward signals are vague and hard to craft manually. Unlike generic RFT rewards that rely on blunt numeric scoring like substring matching, an LLM judge reasons across multiple dimensions—correctness, tone, safety, relevance—providing context-aware feedback that captures subtleties and domain-specific nuances without task-specific retraining. Additionally, LLM judges offer built-in explainability through rationales (for example, "Response A cites peer-reviewed studies"), providing diagnostics that accelerate iteration, pinpoint failure modes directly, and reduce hidden misalignments, something static reward functions can't do.
 
 ## 相关实体
-- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](ch01/415-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
+- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](ch01/412-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
 - [Llm Finetuning Cost Breakdown](ch01/1235-llm.html)
 - [Harness Engineering 第三代工程范式](../ch05/052-harness-engineering.html)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/397-aws-sagemaker-ai-agent.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/650-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/398-aws-sagemaker-ai-agent.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/653-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-reinforcement-fine-tuning-llm-as-judge.md)
 

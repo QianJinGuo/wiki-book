@@ -91,7 +91,7 @@ Agent Framework 的 structured output 本质上是把 LLM 的自由文本输出*
 **4. 换 Provider 前验证 structured output 支持。** 这是跨云/跨厂商迁移时的隐性风险点，需要在架构选型阶段纳入评估。
 ## 相关实体
 
-- [announcing genkit middleware](../ch04/008-announcing-genkit-middleware-intercept-extend-and-harden.html)
+- [announcing genkit middleware](../ch04/007-announcing-genkit-middleware-intercept-extend-and-harden.html)
 
 ---
 

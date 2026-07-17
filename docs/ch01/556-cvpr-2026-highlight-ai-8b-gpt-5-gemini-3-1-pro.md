@@ -12,10 +12,10 @@
 - 8B 参数 Qwen3-VL 后训练模型超越闭源 GPT-5 和 Gemini-3.1-Pro
 ## 相关实体
 - [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](../ch05/086-ai.html)
-- [Cvpr 2026 Highlight 清华打破多模态音频生成的通才困境Omni2Sound 音频基础模型开源](ch01/963-20.html)
+- [Cvpr 2026 Highlight 清华打破多模态音频生成的通才困境Omni2Sound 音频基础模型开源](ch01/966-20.html)
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch12/003-token.html)
+- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/046-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)
 
