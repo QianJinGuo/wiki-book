@@ -334,10 +334,10 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/039-agent-harness.html)
 - [Subagents 详解Claude Code 如何避免上下文污染](../ch03/076-claude-code.html)
-- [Factory Mission Multi Agent Architecture](../ch01/1207-factory-mission-multi-agent-architecture.html)
+- [Factory Mission Multi Agent Architecture](../ch01/1205-factory-mission-multi-agent-architecture.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/052-harness-engineering.html)
-- [Iii Dev Worker Trigger Function](../ch01/246-iii-dev-worker.html)
-- [AgentScope Java Harness Framework 42KB](../ch05/099-harness.html) — 同 AgentScope Java 2.0 早期综述
+- [Iii Dev Worker Trigger Function](../ch01/242-iii-dev-worker.html)
+- [AgentScope Java Harness Framework 42KB](../ch05/018-harness.html) — 同 AgentScope Java 2.0 早期综述
 - [AgentScope Builder](../ch05/039-agent-harness.html) — 同生态自进化视角
 - [Loop Engineering](../ch05/007-loop-engineering.html) — 同样强调"组织级流程约束"
 - [MXC Execution Containers](../ch05/086-ai.html) — 类似沙箱机制对比

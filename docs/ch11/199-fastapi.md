@@ -21,7 +21,7 @@ FastAPI生产级认证+限流实战；零停机部署方案；一套代码覆盖
 
 ## 相关实体
 
-- [fastapi上线实战：认证、限流、零停机，一套代码搞定](ch11/082-fastapi.html)
+- [fastapi上线实战：认证、限流、零停机，一套代码搞定](ch11/199-fastapi.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi-auth-rate-limit-zero-downtime.md)
 
 ## 元数据

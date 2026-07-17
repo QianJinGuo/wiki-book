@@ -13,7 +13,7 @@
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stripe-sessions-2026-ai-agents.md)
 
 ## 相关资源
-- [Agent Memory 架构](ch04/404-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构](ch04/405-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Claude Managed Agents 开发者指南](ch04/673-claude-managed-agents.html)
 
 ## 深度分析
@@ -41,15 +41,15 @@ Issuing for agents 允许企业为 Agent 程序化签发单次使用的虚拟卡
 Stripe Treasury 年底前将在 US、UK 支持 15 种货币存储，并扩展至 Australia、Canada，且 Privy 非托管钱包将支持 150+ 市场的稳定币。这为构建"全球运营 Agent"提供了多币种资金管理基础。建议在 Q3 前评估 Agent 的稳定币持有策略——尤其是涉及跨境外汇、自动换汇、跨境付款等场景时，Stripe Treasury + Privy 的组合可能是最简接入路径。
 
 ## 相关实体
-- [stripe sessions 2026 ai](ch04/417-stripe-sessions-2026-ai.html)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/132-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
+- [stripe sessions 2026 ai](ch04/418-stripe-sessions-2026-ai.html)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/131-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Inngest - AI in Production: The 2026 Benchmark Report](../ch01/569-inngest-ai-in-production-the-2026-benchmark-report.html)
-- [How Superset built the IDE for AI agents on Vercel](../ch01/073-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [How to Detect AI Agents on Your Website | Full Guide](ch04/552-ai-agent.html)
-- [AI-powered honeypots: Turning the tables on malicious AI agents](../ch01/078-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
+- [How Superset built the IDE for AI agents on Vercel](../ch01/070-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [How to Detect AI Agents on Your Website | Full Guide](ch04/030-ai-agent.html)
+- [AI-powered honeypots: Turning the tables on malicious AI agents](../ch01/076-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [十年老技术开发的 ai agent 探索之路](ch04/552-ai-agent.html)
-- [entrypoint hijacking](../ch01/151-entrypoint-hijacking.html)
+- [十年老技术开发的 ai agent 探索之路](ch04/030-ai-agent.html)
+- [entrypoint hijacking](../ch01/149-entrypoint-hijacking.html)
 
 ---
 

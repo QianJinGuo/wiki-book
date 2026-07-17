@@ -70,9 +70,9 @@ agent 多轮对话的"只追加"模式使前缀不断增长。简化模型推导
 
 本实体是 wiki 中首个系统性覆盖 LLM 推理缓存的实体。与以下实体形成互补：
 
-- 与 [DeepSeek 成本迁移与系统层 KV Cache + Harness 工程](ch01/1021-deepseek.html) 互补——该实体聚焦 DeepSeek 的迁移案例，本文提供全行业全景
-- 与 [OpenClacky Prompt Cache Harness](../ch05/099-harness.html) 互补——该实体聚焦特定提示缓存方案，本文覆盖原理和所有主流方案
-- 与 [Claude Cache Tokenomics](ch01/459-claude.html) 互补——该实体聚焦 Anthropic 的 5 分钟 TTL 机制，本文提供跨厂商对比
+- 与 [DeepSeek 成本迁移与系统层 KV Cache + Harness 工程](ch01/425-deepseek.html) 互补——该实体聚焦 DeepSeek 的迁移案例，本文提供全行业全景
+- 与 [OpenClacky Prompt Cache Harness](../ch05/018-harness.html) 互补——该实体聚焦特定提示缓存方案，本文覆盖原理和所有主流方案
+- 与 [Claude Cache Tokenomics](ch01/1149-claude.html) 互补——该实体聚焦 Anthropic 的 5 分钟 TTL 机制，本文提供跨厂商对比
 
 ## 标签
 

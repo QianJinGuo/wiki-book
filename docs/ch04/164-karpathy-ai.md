@@ -118,7 +118,7 @@ AI加速了一切，包括焦虑本身。「不用这个工具就会被淘汰」
 - [Joyai Echo Long Video Framework Jd](../ch05/086-ai.html)
 - [Kiro Job Scheduler Eventbridge Ecs Fargate](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md)
 - [Bitter Lesson Garbage Can Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/bitter-lesson-garbage-can-mollick.md)
-- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/080-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
+- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/079-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-vibe-engineering-silicon-era-jiangtao.md)
 

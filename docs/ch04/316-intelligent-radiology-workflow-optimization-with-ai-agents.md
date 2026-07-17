@@ -10,10 +10,10 @@
 
 ## 相关实体
 - [Google Deepmind Accelerator Asia Pacific](https://github.com/QianJinGuo/wiki/blob/main/entities/google-deepmind-accelerator-asia-pacific.md)
-- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11/132-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
+- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11/131-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch04/058-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents](../ch01/819-skill-issues-compromising-claude-code-with-malicious-skills.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/529-amazon-bedrock-agentcore.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents](../ch01/822-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/530-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/intelligent-radiology-workflow-optimization-with-ai-agents.md)
 

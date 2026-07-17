@@ -48,7 +48,7 @@ Here’s where the report’s headline finding gets complicated. The top 10 are 
 - [Plaid Effects](../ch05/086-ai.html)
 - [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch05/086-ai.html)
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](../ch11/054-prowler-genai.html)
-- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01/072-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.html)
+- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01/069-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/private-fintech-vs-public-fintech.md)
 

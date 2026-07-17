@@ -171,8 +171,8 @@ Spec-Kit 的顺序流程（specify → plan → tasks → implement）在多仓�
 
 - AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/046-agent.html) / [Agent Skills Teams Architecture Evolution Selection Guide](ch04/236-agent-skills-teams.html)
 - 多 Agent 圆桌协作 — [Openclaw Multi Agent Team Practice V2](ch04/048-openclaw-multi-agent-team-practice-v2.html)
-- 规格驱动开发概念 — [Ai Agent Exploration Path Legacy Tech](ch04/552-ai-agent.html)
-- AI Coding Agent 评测 — [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/099-harness.html)
+- 规格驱动开发概念 — [Ai Agent Exploration Path Legacy Tech](ch04/030-ai-agent.html)
+- AI Coding Agent 评测 — [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/018-harness.html)
 
 ---
 

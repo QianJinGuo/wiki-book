@@ -155,13 +155,13 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 - [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki/blob/main/entities/memos-hermes-plugin.md)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/092-hermes-agent.html)
 - [17种Agent架构演进：控制流设计的完整演化史](ch04/662-17-agent.html)
-- [AIAIGC峰会嘉宾阵容](ch04/500-aiaigc.html)
+- [AIAIGC峰会嘉宾阵容](ch04/501-aiaigc.html)
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/224-openclaw.html)
 - [Agent Memory 架构解析](ch04/121-agent-memory.html)
 - [Claude Code Prompt 提示词体系源码解析](../ch09/060-claude-code-prompt.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch03/092-hermes-agent.html)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/267-skill.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/656-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/659-llm-wiki-obsidian-wiki-gbrain.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/092-hermes-agent.html)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/086-ai.html)
 - [Agent 原理、架构与工程实践](../ch03/046-agent.html)
@@ -171,7 +171,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 
 - [AI Agent 记忆系统架构](ch04/156-how-ai-agent-memory-works.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
-- [AI Agent 工程师能力地图](ch04/552-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 
 ---
 
