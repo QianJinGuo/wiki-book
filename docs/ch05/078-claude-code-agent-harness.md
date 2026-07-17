@@ -69,7 +69,7 @@ Prompt Caching 折扣条件：**字节级完全相同**（byte-identical）。
 
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 定义了"模型外面的脚手架"——本文展示了这层脚手架在工业级系统中长什么样
 - [Harness 实践指南 10步](ch05/052-harness-engineering.html) 的 Step 3（上下文管理）和 Step 10（并行多 agent）在本文有源码级对照
-- [Claude Code Dynamic Workflows](../ch09/087-claude-code-dynamic-workflows.html) 侧重编排模式和实战场景，本文侧重底层通信/隔离/缓存/并行机制——**互补不重复**
+- [Claude Code Dynamic Workflows](../ch09/088-claude-code-dynamic-workflows.html) 侧重编排模式和实战场景，本文侧重底层通信/隔离/缓存/并行机制——**互补不重复**
 
 ## 关键洞察
 
@@ -80,9 +80,9 @@ Prompt Caching 折扣条件：**字节级完全相同**（byte-identical）。
 ## 相关实体
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Harness Engineering 10 Step Practical Guide 2026](ch05/052-harness-engineering.html)
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/087-claude-code-dynamic-workflows.html)
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/088-claude-code-dynamic-workflows.html)
 - [Long Running Agent Ralph Loop Harness Takeover](ch05/013-agent-ralph-loop-harness.html)
-- [Gufabiancheng Spec For Complex Tasks Cc Codex](../ch01/535-codex.html)
+- [Gufabiancheng Spec For Complex Tasks Cc Codex](../ch01/534-codex.html)
 - [Production Harness 12 Components Framework Comparison](ch05/035-harness-12.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-multi-agent-harness-source-analysis.md)

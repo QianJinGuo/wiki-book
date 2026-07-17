@@ -7,9 +7,9 @@
 ## 相关实体
 - [Yumanju Ai Full Flow Efficiency](../ch05/086-ai.html)
 - [Skill Development Guide Aliyun 2026](ch04/267-skill.html)
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/099-harness.html)
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/018-harness.html)
 - [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md)
-- [Aliyun Agentrun](ch04/413-agentrun.html)
+- [Aliyun Agentrun](ch04/463-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-cio-ai-rd-efficiency.md)
 

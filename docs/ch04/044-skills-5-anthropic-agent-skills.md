@@ -273,7 +273,7 @@ Spec 驱动原则强调项目评估、技术方案等前置环节的准确性—
 ### 9.1 Skill 主题相关
 
 - [Skill Hub Organization Asset Winty](ch04/267-skill.html)：**winty Skill Hub 系列**（3 来源合并 / 550 行 / Skill Hub 组织 + 质量门禁 + 生命周期 6 阶段）—— 与本文 **企业级 Skill 实战** 视角深度互补
-- [Agent Skills Comprehensive Survey](ch04/391-agent-skills.html)：Agent Skills 系统性综述（表示 → 获取 → 检索 → 进化）—— 与本文 Skills 体系完整图景
+- [Agent Skills Comprehensive Survey](ch04/392-agent-skills.html)：Agent Skills 系统性综述（表示 → 获取 → 检索 → 进化）—— 与本文 Skills 体系完整图景
 - [Skill System Design Three Way Comparison](ch04/267-skill.html)：OpenClaw / Claude Code / Hermes Skills 系统设计对比
 - [Skill Craft](../ch07/049-skill-craft-claude-skill.html)：Skill Craft — Claude Skill 质量工程框架
 - [Skill Writing Patterns Best Practices](ch04/267-skill.html)：7 个顶级 Skill 提炼的模式与最佳实践
@@ -284,12 +284,12 @@ Spec 驱动原则强调项目评估、技术方案等前置环节的准确性—
 - [Harness Engineering Paradigm Comprehensive 2026](../ch05/052-harness-engineering.html)：Harness Engineering 综合论述（2026 年真正重要的是 Harness）
 - [Harness Engineering Core Patterns](../ch05/052-harness-engineering.html)：Harness Engineering 核心模式（持久化指令/分层记忆/Session-Harness-Sandbox/凭证安全）
 - [Claude Code Skills Mcp Rules Source Analysis](../ch07/006-claude-code-skills-mcp-rules.html)：Claude Code Skills/MCP/Rules 源码分析
-- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](../ch05/101-ai-coding.html)：OpenSpec 工具（本文阶段 3 SDD 直接使用）+ Superpowers 工程取舍
+- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](../ch05/100-ai-coding.html)：OpenSpec 工具（本文阶段 3 SDD 直接使用）+ Superpowers 工程取舍
 
 ### 9.3 实战案例相关
 
 - `raw/articles/agent-skill-iterative-writing-taobao-logistics.md`：**同公司（淘天集团）不同团队（物流技术 其林 2026-06-12）** 的 Skill 迭代式编写实战——**孤儿 raw 无 entity**（建议后续批处理整合，本文仅标注，不合并避免 scope creep）
-- [Ai Skills Middleware Migration Android Harmonyos Taobao 2026](../ch01/484-ai-skill.html)：淘天 AI Skills 中间件迁移（Android→HarmonyOS）
+- [Ai Skills Middleware Migration Android Harmonyos Taobao 2026](../ch01/483-ai-skill.html)：淘天 AI Skills 中间件迁移（Android→HarmonyOS）
 - [Agent Memory Evaluation Landscape Taobao Survey](ch04/121-agent-memory.html)：淘天 Agent Memory 评测综述
 
 ## 10. 孤儿 raw 提示（pre-existing issue）

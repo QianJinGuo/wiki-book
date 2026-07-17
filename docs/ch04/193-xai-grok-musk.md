@@ -124,7 +124,7 @@ Grok 1到Grok 4一路推下来，bench
 ## 相关实体
 - [Xai Dissolved Grok Colossus2 Analysis](../ch05/086-ai.html)
 - [Xai Shutdown Grok Still Alive](../ch05/086-ai.html)
-- [Building Blocks For Foundation Model Training And Inference On Aws](../ch11/120-building-blocks-for-foundation-model-training-and-inference.html)
+- [Building Blocks For Foundation Model Training And Inference On Aws](../ch11/119-building-blocks-for-foundation-model-training-and-inference.html)
 - [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](../ch03/046-agent.html)
 - [Hermes Skill System Winty](../ch07/017-hermes-skill.html)
 

@@ -77,7 +77,7 @@ Harness 的改进最终可能被"内化"进模型行为，但"说清楚目标、
 
 ### 关联实践
 
-- [阿里 Harness 工程实战：Agent 自主迭代 17 小时](ch05/099-harness.html) — 真实落地案例，实践了翁荔提出的 Harness 三模式 + Champion-Challenger 防 Reward Hacking
+- [阿里 Harness 工程实战：Agent 自主迭代 17 小时](ch05/018-harness.html) — 真实落地案例，实践了翁荔提出的 Harness 三模式 + Champion-Challenger 防 Reward Hacking
 
 ---
 

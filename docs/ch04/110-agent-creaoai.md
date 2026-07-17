@@ -85,13 +85,13 @@ CreaoAI 给出的可推广设计原则是：「对于云平台上持久化的每
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/422-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/610-agentic.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/423-vibe-coding-agentic-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/052-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/132-karpathy-vibe-coding-agentic-engineering.html)
-- [Claude Code Harness Deep Understanding](../ch01/458-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](../ch01/456-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/068-claude-code-harness.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/224-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/224-openclaw.html)

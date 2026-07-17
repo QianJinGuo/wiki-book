@@ -80,7 +80,7 @@ Harness **主要不是给 AI 用的，是给团队用的**。目标是让 AI 在
 
 - [Harness Engineering](ch05/052-harness-engineering.html) — 上位框架；本实体是 **30+ 微服务大仓的完整生产级实现**
 - [腾讯 CDN LEGO Harness 工程](ch05/067-cdn-lego-harness-engineering.html) — 互补：前者聚焦 C++ 高风险后端系统，本实体聚焦 Go/Ts 微服务业务平台
-- [Harness 知识沉淀实践](ch05/099-harness.html) — 互补：知识管理维度不同
+- [Harness 知识沉淀实践](ch05/018-harness.html) — 互补：知识管理维度不同
 - [Harness 10 步路线图](ch05/052-harness-engineering.html) — 互补：抽象方法论 vs 真实案例
 
 ## 参考

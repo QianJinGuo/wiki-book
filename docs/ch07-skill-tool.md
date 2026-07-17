@@ -2,7 +2,7 @@
 
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
-> 本章收录 **80 篇**实体，按深度递增排列。
+> 本章收录 **81 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 79 |
+| ⭐⭐ 工程师 | 需编程基础 | 80 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -107,9 +107,10 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [072. SkillComposer: 生成式技能组合](ch07/072-skillcomposer)
 - [073. Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio](ch07/073-building-and-connecting-a-production-ready-ecommerce-mcp-ser)
 - [074. Create Custom MCP Catalogs and Profiles](ch07/074-create-custom-mcp-catalogs-and-profiles)
-- [075. 25个Skills详解：从生产力清单到AI工作流资产](ch07/075-25-skills-ai)
-- [076. Perplexity 首次公开了内部 Skill 设计指南](ch07/076-perplexity-skill)
-- [077. Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获](ch07/077-codex-record-replay-gui-skill)
-- [078. 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践](ch07/078-skill-skill)
-- [079. 让Skill“有图可依”：openJiuwen首发多模态Skill范式Skill-Omni](ch07/079-skill-openjiuwen-skill-skill-omni)
-- [080. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/080-microsoft-agent-framework-tools-4-provider-tool-ap)
+- [075. PagePilot — PC端AI测试Skill设计与实战](ch07/075-pagepilot-pc-ai-skill)
+- [076. 25个Skills详解：从生产力清单到AI工作流资产](ch07/076-25-skills-ai)
+- [077. Perplexity 首次公开了内部 Skill 设计指南](ch07/077-perplexity-skill)
+- [078. Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获](ch07/078-codex-record-replay-gui-skill)
+- [079. 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践](ch07/079-skill-skill)
+- [080. 让Skill“有图可依”：openJiuwen首发多模态Skill范式Skill-Omni](ch07/080-skill-openjiuwen-skill-skill-omni)
+- [081. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/081-microsoft-agent-framework-tools-4-provider-tool-ap)

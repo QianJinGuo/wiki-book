@@ -80,8 +80,8 @@ MLflow 本身是云无关的开源框架，而 AWS 将其托管在 SageMaker 中
 
 ## 相关实体
 - [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/011-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
-- [Aws Generative Ai Model Agility Framework](ch11/148-aws-generative-ai-model-agility-framework.html)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/397-aws-sagemaker-ai-agent.html)
+- [Aws Generative Ai Model Agility Framework](ch11/147-aws-generative-ai-model-agility-framework.html)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/398-aws-sagemaker-ai-agent.html)
 - [Aws Bedrock Halliburton Seismic Workflow Genai](ch11/009-aws-bedrock.html)
 - [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/196-cost-effective-deployment-of-vision-language-models-for-pet.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)

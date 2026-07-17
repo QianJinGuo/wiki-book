@@ -99,7 +99,7 @@ Open Claw 的设计哲学代表了一种日益流行的趋势——在 Agent 框
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/224-openclaw.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/610-agentic.html)
 
 ---
 

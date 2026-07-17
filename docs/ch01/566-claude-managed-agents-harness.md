@@ -82,18 +82,18 @@ MCP 服务器的价值在于复用现有生态。如果你已经有 Slack、GitH
 
 ## 相关实体
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/673-claude-managed-agents.html)
-- [Anthropic Claude Managed Agents 平台正式发布](ch01/263-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents 平台正式发布](ch01/259-anthropic-claude-managed-agents.html)
 - [Claude Managed Agents 开发者指南](../ch04/673-claude-managed-agents.html)
-- [claude managed agents official](../ch04/562-claude-managed-agents-official.html)
+- [claude managed agents official](../ch04/563-claude-managed-agents-official.html)
 
-- [obsidian claude code integration guide](../ch09/125-obsidian-claude-code-integration-guide.html)
-- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/386-anthropic-claude-agent.html)
-- [Introducing Claude for Small Business](ch01/028-introducing-claude-for-small-business.html)
-- [Introducing Claude for Small Business](ch01/028-introducing-claude-for-small-business.html)
-- [Xero Announces Integration with Anthropic's Claude](ch01/1292-anthropic.html)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/602-anthropic-claude.html)
+- [obsidian claude code integration guide](../ch09/127-obsidian-claude-code-integration-guide.html)
+- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/387-anthropic-claude-agent.html)
+- [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.html)
+- [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.html)
+- [Xero Announces Integration with Anthropic's Claude](ch01/1291-anthropic.html)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1308-anthropic-claude.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/076-claude-code.html)
-- [Anthropic Computer Use 最佳实践](ch01/870-anthropic-computer-use.html)
+- [Anthropic Computer Use 最佳实践](ch01/873-anthropic-computer-use.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

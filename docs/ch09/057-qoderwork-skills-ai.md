@@ -92,7 +92,7 @@ Agent不擅长的事情：把控商业数据分析流程、理解隐性业务约
 - [Harness Engineering探索之旅](../ch05/052-harness-engineering.html)
 - [Agent配置模型](../ch04/267-skill.html)
 - [Agent落地真相](../ch03/046-agent.html)
-- [淘宝数字人Agentic架构](../ch04/235-agentic.html)
+- [淘宝数字人Agentic架构](../ch04/610-agentic.html)
 - [阿里巴巴NL2SQL Harness](../ch05/052-harness-engineering.html)
 - [AI友好后端标准](../ch05/023-ai-friendly.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

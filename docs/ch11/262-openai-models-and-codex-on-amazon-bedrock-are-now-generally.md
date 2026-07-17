@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](../ch01/963-20.html)
+- [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](../ch01/966-20.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-models-and-codex-on-amazon-bedrock-are-now-generally-.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
@@ -39,7 +39,7 @@ GPT-5.
 - **aws趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/610-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/132-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
