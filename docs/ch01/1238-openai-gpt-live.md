@@ -51,7 +51,7 @@ GPT-Live 提供的 Instant/mini 和 Medium/High 两级后台模式，标志着 O
 | 娱乐闲聊 | Instant | 自然流畅 |
 | 学术讨论、编程 | Thinking | 推理深度 |
 
-这种分级既是技术选择（不同场景需要不同的推理策略），也是商业策略（为用户提供性价比最优的选择，同时为大模型推理资源做差异化管理）。这与 [GPT-5.6 的分层定价模型](ch01/535-codex.html) 一脉相承。
+这种分级既是技术选择（不同场景需要不同的推理策略），也是商业策略（为用户提供性价比最优的选择，同时为大模型推理资源做差异化管理）。这与 [GPT-5.6 的分层定价模型](ch01/534-codex.html) 一脉相承。
 
 ### 实时语音 Agent 的未来形态
 
@@ -76,10 +76,10 @@ GPT-Live 的发布也揭示了实时语音 Agent 的未来发展方向：
 
 ## 关联实体
 
-- [GPT-5.6 分层定价模型](ch01/535-codex.html)
+- [GPT-5.6 分层定价模型](ch01/534-codex.html)
 - [Harness Engineering](../ch05/052-harness-engineering.html)
 - [Claude Code Agent Engineering](../ch03/068-claude-code-agent.html)
-- [CodeX 上位](ch01/1125-chatgpt.html)
+- [CodeX 上位](ch01/723-chatgpt.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai放出gpt-live背后是gpt55实时语音有点恐怖了.md)
 

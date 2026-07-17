@@ -24,9 +24,9 @@
 
 - [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/267-skill.html)
 - [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](../ch03/046-agent.html)
-- [Enterprise AI Agent Development Tools (n8n Report 2026)](ch04/552-ai-agent.html)
-- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](../ch05/099-harness.html)
-- [多 Agent 编排系统](ch04/490-agent-orchestration.html)
+- [Enterprise AI Agent Development Tools (n8n Report 2026)](ch04/030-ai-agent.html)
+- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](../ch05/018-harness.html)
+- [多 Agent 编排系统](ch04/491-agent-orchestration.html)
 
 ---
 

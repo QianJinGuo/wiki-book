@@ -142,7 +142,7 @@
 - MAC = "**Skills + Hooks 两层叠加**"——更具体、更轻量、更聚焦"完全委托"的信任问题
 - 共同点：都强调 harness 决定 agent 自主空间
 
-### vs [wow-harness v3](ch05/099-harness.html)
+### vs [wow-harness v3](ch05/018-harness.html)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理，更重）
 - MAC = **Skills（概率 SOP）+ Hooks（确定性触发）**——**更轻量级**，可复用框架 vs 项目脚手架
 - 共同点：都强调"跨 session 上下文持久 / 失败记录 / 知识积累"是 Harness 关键
@@ -152,7 +152,7 @@
 - MAC = **工程师个人 Harness 框架**（20 个 Skills + Hooks / Planning + Verify 两个节点）
 - 共同点：都强调"用机制保证关键事件发生"（Hooks = 高德的 Self-Healing + 监督 Agent 思想）
 
-### vs [Claude Code Dynamic Workflows](../ch09/087-claude-code-dynamic-workflows.html)
+### vs [Claude Code Dynamic Workflows](../ch09/088-claude-code-dynamic-workflows.html)
 - Dynamic Workflows = **运行时动态生成 Harness**（Anthropic 官方功能，claude 现场写 workflow）
 - MAC = **预定义 Skills + 触发式 Hooks**（工程师自定义 SOP + 自动化机制）
 - 共同点：都强调"流程 = 数据"——workflow 是 skill 文件，hooks 是 code
@@ -189,12 +189,12 @@
 
 ## 相关对照
 - [晓斌 Agent-Oriented Infra](../ch03/046-agent.html) —— 哲学框架
-- [wow-harness v3](ch05/099-harness.html) —— 跨 session 治理
+- [wow-harness v3](ch05/018-harness.html) —— 跨 session 治理
 - [高德 AI-Native 生产线](ch05/019-ai-native.html) —— 企业级 R&D 生产线
-- [Claude Code Dynamic Workflows](../ch09/087-claude-code-dynamic-workflows.html) —— 动态工作流
+- [Claude Code Dynamic Workflows](../ch09/088-claude-code-dynamic-workflows.html) —— 动态工作流
 - [Agent Harness 架构](ch05/039-agent-harness.html) —— 7 层模型
 - [Rein](../ch03/046-agent.html) —— 单 agent 架构
-- [Kimi Work](../ch01/535-codex.html) —— 本地 Agent
+- [Kimi Work](../ch01/534-codex.html) —— 本地 Agent
 
 ## 深度分析
 

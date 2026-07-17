@@ -285,12 +285,12 @@ Canvas LMS 攻击影响全球数百所大学，凸显了教育机构在网络安
 2. **了解暗网风险的局限性** — 虽然 Tor 提供了匿名性，但它也是欺诈者和攻击者的避风港，对任何暗网内容的信任都应保持谨慎。
 
 ## 相关实体
-- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/145-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
+- [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/143-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
 - [Npm Supply Chain Compromise Postmortem](../ch05/086-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/396-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/1022-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
-- [a route to root in a 4g industrial router](../ch01/963-20.html)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/393-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/1025-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
+- [a route to root in a 4g industrial router](../ch01/966-20.html)
 
 ---
 

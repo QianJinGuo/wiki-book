@@ -102,7 +102,7 @@ Created as new entity: `http2-hpack-bomb-codex-ai-discovery-32gb-dos.md`. The Ca
 - OpenAI Codex
 - Slowloris DoS
 - AI-generated exploit primitives
-- AI agent security (see [1Password Securing Ai Agents Machine Identities](../ch04/552-ai-agent.html), [Ai Agents Security Survey Attack Defense](../ch04/552-ai-agent.html))
+- AI agent security (see [1Password Securing Ai Agents Machine Identities](../ch04/030-ai-agent.html), [Ai Agents Security Survey Attack Defense](../ch04/030-ai-agent.html))
 - CVE disclosure conventions (CVE-2016-6581, CVE-2025-53020, CVE-2026-49975)
 
 ## 深度分析

@@ -13,7 +13,7 @@
 
 ## 相关实体
 
-- [self-harness：上海ai lab 提出的 agent 自我改进 harness 范式](../ch05/099-harness.html)
+- [self-harness：上海ai lab 提出的 agent 自我改进 harness 范式](../ch05/018-harness.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
 → 系列：超级应用的 AI 原生研发模式探索（第 3 期）
 
@@ -274,12 +274,12 @@ Coding Agent 干活
 - 高德 = **具体落地实现**（AI 全托管 / 监督 Agent / Self-Healing / 质量门禁 / Benchmark）
 - 共同点：都强调"infra 决定 agent 自主空间"+"给 infra 补能力"
 
-### vs [wow-harness v3](../ch05/099-harness.html)
+### vs [wow-harness v3](../ch05/018-harness.html)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - 高德 = **7×24 生产线层**（Self-Healing + Harness 反馈闭环 + Benchmark 体系）
 - 共同点：都强调"治理 + 自进化"是 AI Agent 长期可用的关键
 
-### vs [Kimi Work](../ch01/535-codex.html)
+### vs [Kimi Work](../ch01/534-codex.html)
 - Kimi Work = Harness 搬到本地桌面（**单用户本地**）
 - 高德 = 7×24 永动生产线（**企业级 R&D 链路**）
 - 共同点：都是"人定规则 + AI 永动"哲学的具体落地
@@ -346,8 +346,8 @@ Coding Agent 干活
 
 ## 相关对照
 - [晓斌 Agent-Oriented Infra](../ch03/046-agent.html) —— 哲学框架
-- [wow-harness v3](../ch05/099-harness.html) —— 跨 session 治理
-- [Kimi Work](../ch01/535-codex.html) —— 本地 Agent
+- [wow-harness v3](../ch05/018-harness.html) —— 跨 session 治理
+- [Kimi Work](../ch01/534-codex.html) —— 本地 Agent
 - [Rein](../ch03/046-agent.html) —— 单 agent 架构
 - [Agent Harness 架构](../ch05/039-agent-harness.html) —— 7 层模型
 - [Microsoft Build 2026](../ch03/046-agent.html) —— 全栈 AI
