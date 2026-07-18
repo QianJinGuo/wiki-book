@@ -79,7 +79,7 @@ Netflix 的 10M ops/sec + 毫秒级延迟 + 650TB 数据规模是特定业务需
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Netflix Nebula Archrules](ch11/090-netflix-nebula-archrules-java-archunit.html)
+- [Netflix Nebula Archrules](ch11/089-netflix-nebula-archrules-java-archunit.html)
 
 ## 原文链接
 

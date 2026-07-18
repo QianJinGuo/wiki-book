@@ -27,7 +27,7 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [Why I'm leaving GitHub for Forgejo](../ch01/801-github.html)
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11/214-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11/215-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/shinyhunters-7-eleven-data-breach.md)
 

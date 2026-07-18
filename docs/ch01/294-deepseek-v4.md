@@ -162,8 +162,8 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 - [DeepSeek V4 Flash Means LLM Steering is Interesting Again](ch01/1017-deepseek-v4-flash-means-llm-steering-is-interesting-again.html) 关注 V4 Flash 的"可控生成"能力
 - [DeepSeek V4 DS4C / Antirez 本地推理](../ch09/045-deepseek-v4-ds4c-antirez.html) 关注本地部署
 - [DeepSeek V4 Training 58-page Paper Deep Dive](ch01/294-deepseek-v4.html) 关注训练侧
-- [DeepSeek Code Harness](../ch09/086-deepseek-code-harness.html) 关注 V4 在 Agent / Harness 场景的工程实践
-- [DeepSeek Code Harness 竞争者 Tina](../ch09/086-deepseek-code-harness.html) 关注竞品分析
+- [DeepSeek Code Harness](../ch09/087-deepseek-code-harness.html) 关注 V4 在 Agent / Harness 场景的工程实践
+- [DeepSeek Code Harness 竞争者 Tina](../ch09/087-deepseek-code-harness.html) 关注竞品分析
 
 ## 实践启示
 
@@ -171,7 +171,7 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 - **关注架构创新而不是参数规模**——V4 真正硬核的是 mHC / CSA / HCA 让大参数 + 长上下文同时可承受，不是 1.6T 参数本身。
 - **mHC 的"非对称约束"是设计哲学**——对高风险组件（连乘、累积、级联）施加强约束，对低风险组件保持灵活。这种哲学适用于 harness 设计、prompt 模板设计、agent 编排等所有"系统级稳定性"问题。
 - **压缩 + 稀疏采样的双层机制值得借鉴**——CSA 的"粗筛 + 精查"模式可推广到 RAG、tool selection、context retrieval 等场景。
-- **关注 V4 在 Agent / Harness 场景的工程实践**——V4 的能力需要 harness 配合才能在生产中稳定输出，关注 [DeepSeek Code Harness](../ch09/086-deepseek-code-harness.html) 等。
+- **关注 V4 在 Agent / Harness 场景的工程实践**——V4 的能力需要 harness 配合才能在生产中稳定输出，关注 [DeepSeek Code Harness](../ch09/087-deepseek-code-harness.html) 等。
 - **开源模型的能力边界正在快速逼近闭源模型**——V4 在编程、数学、Agent、长文本同时接近 GPT-5.4 / Claude 4.6 / Gemini 3.1 水平，AI 选型需要重新评估成本效益。
 - **关注 DeepSeek 系列在企业场景的落地案例**——V4 的成本优势 + 长上下文能力可能解锁大量新应用（整仓 refactor、长合同审查、跨文档问答）。
 
@@ -185,9 +185,9 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 - [DeepSeek V4 Training 58-page Paper Deep Dive](ch01/294-deepseek-v4.html)
 - [DeepSeek MoE 并行策略](ch01/425-deepseek.html)
 - [DeepSeek 成本迁移系统层 KV Cache Harness](ch01/425-deepseek.html)
-- [DeepSeek Code Harness](../ch09/086-deepseek-code-harness.html)
-- [DeepSeek Code Harness 竞争者 Tina](../ch09/086-deepseek-code-harness.html)
-- [17 种 agent 架构演进](../ch04/662-17-agent.html)
+- [DeepSeek Code Harness](../ch09/087-deepseek-code-harness.html)
+- [DeepSeek Code Harness 竞争者 Tina](../ch09/087-deepseek-code-harness.html)
+- [17 种 agent 架构演进](../ch04/664-17-agent.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

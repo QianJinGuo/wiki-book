@@ -14,7 +14,7 @@
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/392-agent-skills.html)
 - [Sap Unveils The Autonomous Enterprise](../ch04/105-sap-unveils-the-autonomous-enterprise.html)
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/392-agent-skills.html)
-- [Anthropic Mythos Bug Hunting Marketing](ch01/1291-anthropic.html)
+- [Anthropic Mythos Bug Hunting Marketing](ch01/1292-anthropic.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthopic-distillation-behavioural-traits-nature.md)

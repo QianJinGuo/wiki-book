@@ -117,7 +117,7 @@ Mollick 提出的"Patron vs Wizard"框架揭示的不是接口层面的变化，
 
 ### 技术要点：Black Box 是能力增长的必然代价
 
-Mollick 对两种未来方向的判断（临时性 vs 结构性）指向了一个不舒服的真相：**模型越强，人类能参与的过程越少**。"The details of the AI's decision making are not shown to me, and the process would be too long to even be worth following"——这句话是 Fable 级别 agentic workflow 的具象化体验。[Anthropic Claude Fable 5 On Aws内置保护措施的 Mythos 级功能现已推出](ch01/1308-anthropic-claude.html) 的 AWS 内置保护措施在此背景下更具现实意义：当 AI 的决策过程对人类不可见时，安全护栏是唯一的事后保障。
+Mollick 对两种未来方向的判断（临时性 vs 结构性）指向了一个不舒服的真相：**模型越强，人类能参与的过程越少**。"The details of the AI's decision making are not shown to me, and the process would be too long to even be worth following"——这句话是 Fable 级别 agentic workflow 的具象化体验。[Anthropic Claude Fable 5 On Aws内置保护措施的 Mythos 级功能现已推出](ch01/1309-anthropic-claude.html) 的 AWS 内置保护措施在此背景下更具现实意义：当 AI 的决策过程对人类不可见时，安全护栏是唯一的事后保障。
 
 ### 技术要点：9.5 小时 19 页设计文档揭示"长周期任务"的重新定义
 
@@ -143,7 +143,7 @@ Wizard 阶段 steering 和 doing 混在一起（人类施咒即执行），Patro
 
 - → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/oneusefulthing-mythos-fable-mollick-feels-like.md)
 - 相关 entity: [Claude Fable 5 And New Ai Safety Fables](ch01/862-claude-fable-5-and-new-ai-safety-fables.html)（Lambert/Interconnects 安全分析视角）
-- 相关 entity: [Anthropic Claude Fable 5 On Aws内置保护措施的 Mythos 级功能现已推出](ch01/1308-anthropic-claude.html)（AWS 中文工程落地视角）
+- 相关 entity: [Anthropic Claude Fable 5 On Aws内置保护措施的 Mythos 级功能现已推出](ch01/1309-anthropic-claude.html)（AWS 中文工程落地视角）
 
 ---
 

@@ -77,16 +77,16 @@ Karpathy 引用的那句话是本次访谈最值得反复咀嚼的命题：
 3. **关注 Agent-first 基础设施**：Karpathy 描述的愿景是"一句话构建并部署 MenuGen"——这意味着部署、配置、auth、payments 等基础设施都需要为 Agent 重写。这里存在创业机会。
 
 ## 相关实体
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/132-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/610-agentic.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/132-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/132-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/612-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/203-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/610-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/612-agentic.html)
 - [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox Transparent](../ch09/047-coding-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/610-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/612-agentic.html)
 - [Ai Coding Agent Quality Defense Five Control Mechanisms Tutu Agi](ch04/317-ai-coding-agent.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/132-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

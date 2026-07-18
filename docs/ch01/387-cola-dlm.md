@@ -124,7 +124,7 @@ Cola DLM 的"语义部 + 文字部"分层，在多模态语境下有天然优势
 - [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/294-deepseek-v4.html)
 - [Harness Engineering Core Patterns Claude Code](../ch05/052-harness-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/610-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/612-agentic.html)
 - [Diffusion Model Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/diffusion-model-architecture.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)

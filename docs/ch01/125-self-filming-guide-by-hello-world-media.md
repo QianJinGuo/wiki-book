@@ -68,7 +68,7 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1229-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1230-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 
 - [World's first native color LiDAR gives machines human-like vision](https://github.com/QianJinGuo/wiki/blob/main/entities/technology-ouster-rev8-native-color-lidar.md)
 

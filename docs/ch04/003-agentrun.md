@@ -119,8 +119,8 @@ AgentRun 基于函数计算计费，核心优势是**按实际调用计费 + 零
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)
 
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/463-agentrun.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](ch04/530-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](ch04/530-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](ch04/531-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](ch04/531-amazon-bedrock-agentcore.html)
 - [OpenCLI](../ch03/085-opencli.html)
 - [AutoCLI](../ch03/121-autocli.html)
 - [阿里巴巴 Aone 面向 Agent 的研发模式探索](ch04/056-aone-agentic.html)

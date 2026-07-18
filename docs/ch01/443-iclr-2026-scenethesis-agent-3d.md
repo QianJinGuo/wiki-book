@@ -149,10 +149,10 @@ Scenethesis 的真正贡献在于范式层面：
 ## 关联实体
 
 - [Yann Dubois Openai Post Training Matt Turck Interview](ch01/757-openai.html) — OpenAI 后训练方法访谈
-- [Yann Lecun Llm Not Intelligence Jepa](ch01/1235-llm.html) — LeCun 关于 LLM 与空间智能的批判
-- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](ch01/1235-llm.html) — 2026 LLM RL 算法综述
+- [Yann Lecun Llm Not Intelligence Jepa](ch01/961-llm.html) — LeCun 关于 LLM 与空间智能的批判
+- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](ch01/961-llm.html) — 2026 LLM RL 算法综述
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1130-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html) — NVIDIA Isaac Lab 机器人 RL 扩展
-- [Minimax M3 Frontier Three Set Open Source](../ch09/076-minimax-m3-frontier.html) — MiniMax M3 开源前沿三件套
+- [Minimax M3 Frontier Three Set Open Source](../ch09/077-minimax-m3-frontier.html) — MiniMax M3 开源前沿三件套
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md) — NVIDIA Isaac Lab + SageMaker 人形机器人 RL
 - [Four Sub Agent Patterns](../ch03/046-agent.html) — 2026 四大子 Agent 模式
 

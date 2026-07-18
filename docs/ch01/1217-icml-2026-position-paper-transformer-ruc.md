@@ -16,7 +16,7 @@ ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive 
 
 **"刷屏证明" = 缩放族假设 (scaling family) 的真相**。论文梳理发现多数"Transformer 图灵完备"证明依赖两类缩放族假设：(a) **缩放上下文窗口**——任意长输入/中间结果都能放进窗口参与 attention；(b) **缩放数值精度**——内部表示精度随输入增长，甚至使用无界精度实数/有理数。**只要采用任意一条，研究对象就从"一个固定模型"悄悄滑向"一族不断变大的模型"**。刷屏的 **Li et al. 2024 CoT 论文**（"推理 token 够多就能解决任意问题"）同时使用缩放窗口 + 缩放精度——**它证明的是缩放族意义下的能力，不能直接推出你手上那个固定 LLM 本身就是图灵完备的**。这一澄清对工业实践意义重大：很多"理论保证"建立在不可实现的缩放假设上。
 
-**3 点理论建议**：(1) **明确计算设定与假设**——谈论 Transformer 图灵完备时必须说明固定系统还是缩放族；(2) **把 (T, D, C) 整体系统作为主要研究对象**——真实部署的 LLM 就是固定窗口 + 固定精度 Transformer + 某种上下文管理，系统层面的能力刻画理应得到更多关注；(3) **以资源预算和可学习性标准补充图灵完备性分析**——图灵完备性只说明"在某种编码下某个函数是否可计算"，**并不等于模型是否能够习得、泛化并稳健使用相应解法**。这与 [LLM Post-Training](ch01/1235-llm.html) 主题圈呼应：post-training 关心"是否能学会"，与可计算性正交。
+**3 点理论建议**：(1) **明确计算设定与假设**——谈论 Transformer 图灵完备时必须说明固定系统还是缩放族；(2) **把 (T, D, C) 整体系统作为主要研究对象**——真实部署的 LLM 就是固定窗口 + 固定精度 Transformer + 某种上下文管理，系统层面的能力刻画理应得到更多关注；(3) **以资源预算和可学习性标准补充图灵完备性分析**——图灵完备性只说明"在某种编码下某个函数是否可计算"，**并不等于模型是否能够习得、泛化并稳健使用相应解法**。这与 [LLM Post-Training](ch01/961-llm.html) 主题圈呼应：post-training 关心"是否能学会"，与可计算性正交。
 
 **对 Harness 工程的明确呼应**。论文最后指出："**上下文管理这类 Harness，乃至把能力沉淀、复用为可调用单元的 skill，都是模型系统的一种实现方式**"——这是学术界对工业 Harness 实践的认可。具体含义：(a) Harness 不是 prompt 工程外衣，而是**模型系统理论结构的关键组件**；(b) Skill 是把上下文管理抽象为可复用模块的实现方式；(c) **同一 T 配不同 C，能力边界会完全不同，弱则连回文都判断不了，强则可以走到图灵完备**——这从理论上解释了为什么 Coding Agent 必须配 harness 而不是裸用 LLM。
 
@@ -67,7 +67,7 @@ ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive 
 - [Codex Context Engineering](ch01/534-codex.html)
 - [Claude Code Context Engineering (Anthropic Thariq)](../ch03/076-claude-code.html)
 - [Claude Fable 5 提示词泄漏](ch01/173-claude-fable-5.html) — 同样指出 "系统 = 模型 + 上下文管理"
-- [LLM Post-Training 全景指南](ch01/1235-llm.html) — 可学习性维度对照
+- [LLM Post-Training 全景指南](ch01/961-llm.html) — 可学习性维度对照
 
 ---
 

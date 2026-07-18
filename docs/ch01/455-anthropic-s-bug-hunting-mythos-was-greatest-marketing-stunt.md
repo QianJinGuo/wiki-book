@@ -11,8 +11,8 @@
 - Value: 8/10, Confidence: 8/10
 
 ## 相关实体
-- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](ch01/1291-anthropic.html)
-- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](ch01/1291-anthropic.html)
+- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](ch01/1292-anthropic.html)
+- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](ch01/1292-anthropic.html)
 
 ## 深度分析
 ### 神话破灭：Mythos 的实际能力边界

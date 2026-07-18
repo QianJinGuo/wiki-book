@@ -14,7 +14,7 @@
 - [奥特曼最险一战 前女Cto当庭翻脸 Openai权斗彻底打到台前 6Bf26E92E29B](ch01/757-openai.html)
 - [Thehackernews Fake Openai Privacy Filter](ch01/757-openai.html)
 - [Openai Buys Ai Consultancy Enterprises](ch01/757-openai.html)
-- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](ch01/1291-anthropic.html)
+- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](ch01/1292-anthropic.html)
 - [Ai Native Undergrads Graduation 2026](../ch05/019-ai-native.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md)

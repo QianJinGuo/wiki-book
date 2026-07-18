@@ -126,7 +126,7 @@ Content/Metadata 分离的核心洞察是：智能体对待结构化元数据应
 
 ## 关联阅读
 - [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/127-why-internally-built-ai-fails-fund-accounting-audits.html) — AI 审计失败案例，文档处理是核心难点
-- [Amazon Bedrock Agentcore Browser Information Retrieval And Analysis Capabilities](ch04/530-amazon-bedrock-agentcore.html) — Agent 沙盒架构
+- [Amazon Bedrock Agentcore Browser Information Retrieval And Analysis Capabilities](ch04/531-amazon-bedrock-agentcore.html) — Agent 沙盒架构
 - [Claude Code Governance Soft Rules](../ch03/076-claude-code.html) — Agent 工具设计原则
 
 ---

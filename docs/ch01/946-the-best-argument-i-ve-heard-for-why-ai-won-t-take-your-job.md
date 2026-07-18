@@ -14,7 +14,7 @@
 - [Principals Ai Education](../ch05/086-ai.html)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/059-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 - [Pixel 10 Zero Click Exploit Chain](../ch05/086-ai.html)
-- [Anthropic_Cache_Tokenomics](ch01/1291-anthropic.html)
+- [Anthropic_Cache_Tokenomics](ch01/1292-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/platformer-ai-job-loss-levie.md)
 

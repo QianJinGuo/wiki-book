@@ -1,17 +1,17 @@
 # 参考文献
-> 本书基于 **3336** 篇一手 AI 材料系统编撰。
-> 涵盖 **353** 个来源站点。
+> 本书基于 **3339** 篇一手 AI 材料系统编撰。
+> 涵盖 **354** 个来源站点。
 
 ---
 ## 主要来源
 | 来源 | 文章数 |
 |---|---|
-| mp.weixin.qq.com | 1267 |
+| mp.weixin.qq.com | 1270 |
 | aws.amazon.com | 303 |
 | www.interconnects.ai | 27 |
 | www.oneusefulthing.org | 22 |
+| netflixtechblog.com | 20 |
 | www.theregister.com | 20 |
-| netflixtechblog.com | 19 |
 | huggingface.co | 19 |
 | unknown | 15 |
 | thehackernews.com | 13 |
@@ -24,6 +24,7 @@
 | juejin.cn | 8 |
 | hackread.com | 8 |
 | blog.crewai.com | 7 |
+| claude.com | 6 |
 | www.infoworld.com | 6 |
 | github.com | 6 |
 | www.a16z.news | 6 |
@@ -31,11 +32,10 @@
 | pytorch.org | 6 |
 | www.microsoft.com | 6 |
 | github.blog | 5 |
-| claude.com | 5 |
 | blog.google | 5 |
 | stochasticparrot.substack.com | 5 |
 | lovable.dev | 5 |
 | depthfirst.com | 5 |
 
 ---
-> 共 353 个来源，3336 篇实体。
+> 共 354 个来源，3339 篇实体。
