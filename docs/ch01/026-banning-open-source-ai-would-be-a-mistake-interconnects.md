@@ -78,8 +78,8 @@ Lambert 将开源的价值归纳为三个相互关联的维度，这一框架对
 
 ## 相关实体
 
-- [AI 公司为何把哲学家请进实验室](ch01/1291-anthropic.html) — AI 对齐与伦理治理相关讨论
-- [Anthropic 8x 输出验证瓶颈](../ch09/166-anthropic-8x.html) — Anthropic 工程实践与模型输出治理
+- [AI 公司为何把哲学家请进实验室](ch01/1292-anthropic.html) — AI 对齐与伦理治理相关讨论
+- [Anthropic 8x 输出验证瓶颈](../ch09/167-anthropic-8x.html) — Anthropic 工程实践与模型输出治理
 
 ---
 

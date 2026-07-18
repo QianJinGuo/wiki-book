@@ -107,7 +107,7 @@ ECS Fargate 消除了集群管理负担——不需要管理 EC2 实例、不需
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-multi-7-ecs-fargate-graviton.md)
 
-相关 entity：[Openclaw Multi 4](ch11/224-openclaw.html)、[Openclaw Multi 1](ch11/224-openclaw.html)、[Openclaw Multi Agent Team Practice V2](../ch04/048-openclaw-multi-agent-team-practice-v2.html)、[Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch04/529-amazon-bedrock-agentcore.html)、[Openclaw Comprehensive Guide](ch11/224-openclaw.html)、[Multi Agent Architecture Retail Practice](../ch03/046-agent.html)、[Agent Engineering Principles Architecture Practice](../ch03/046-agent.html)
+相关 entity：[Openclaw Multi 4](ch11/225-openclaw.html)、[Openclaw Multi 1](ch11/225-openclaw.html)、[Openclaw Multi Agent Team Practice V2](../ch04/048-openclaw-multi-agent-team-practice-v2.html)、[Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch04/531-amazon-bedrock-agentcore.html)、[Openclaw Comprehensive Guide](ch11/225-openclaw.html)、[Multi Agent Architecture Retail Practice](../ch03/046-agent.html)、[Agent Engineering Principles Architecture Practice](../ch03/046-agent.html)
 
 相关 raw：[Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)、[Using Amazon Bedrock Agentcore Openclaw Multi 6](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-6.md)
 

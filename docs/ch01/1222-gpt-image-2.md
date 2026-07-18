@@ -64,7 +64,7 @@ Meta 明确指出，自我修正行为不是在训练数据中标注的，也不
 
 Meta 发现测试时计算（Test-Time Compute）与图像质量的 Elo 评分之间存在近似对数线性关系。同时，将算力集中在"深入推理"（更多搜索+更多修改轮次）上的策略，优于"生成 N 张候选再挑选"的传统策略（前者持续改善，后者很快饱和）。
 
-这一发现与 [Agent 世界模型扩展](../ch04/674-agent-world.html) 中讨论的推理时 Scaling 趋势一致，也与 OpenAI o1/o3 系列模型在推理任务上的测试时计算 Scaling 现象同源——说明"用更多计算换取更高质量"是通用范式，不仅适用于语言推理，也适用于视觉生成。
+这一发现与 [Agent 世界模型扩展](../ch04/676-agent-world.html) 中讨论的推理时 Scaling 趋势一致，也与 OpenAI o1/o3 系列模型在推理任务上的测试时计算 Scaling 现象同源——说明"用更多计算换取更高质量"是通用范式，不仅适用于语言推理，也适用于视觉生成。
 
 ### 社交图谱壁垒与隐私悖论
 
@@ -95,7 +95,7 @@ Muse Video 与 Muse Image 共享同一套预训练底座，主打原生音频（
 - [Meta AI 负责人 Alex Wang 谈 Muse Spark 与 AI 战争](../ch05/086-ai.html) — Meta AI 整体战略
 - [Muse AutoSkill 自进化 Agent](../ch04/267-skill.html) — Meta 在 Agent 自主技能获取方面的研究
 - [注意力坍塌与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md) — 涌现行为的理论基础
-- [Agent 世界模型扩展](../ch04/674-agent-world.html) — 测试时计算 Scaling 的相关讨论
+- [Agent 世界模型扩展](../ch04/676-agent-world.html) — 测试时计算 Scaling 的相关讨论
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/小扎芒果生图只输gpt-image-2没人教它改稿它自己学会了.md)
 → [补充报道存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/小扎芒果生图只输gpt-image-2没人教它改稿它自己学会了-2026-07-08.md)

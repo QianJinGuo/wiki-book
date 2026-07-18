@@ -212,11 +212,11 @@ Claude Code 用一年时间，从两个 Slack 点赞走到了一个 PM 在写代
 - [Loop Engineering Addy Osmani Challengehub](../ch05/007-loop-engineering.html) — Loop 架构的工程实践
 - [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](../ch03/046-agent.html) — Boris Cherny 对开发工具演进方向的判断
 - [Claude Opus 4 7 Launch](../ch01/394-claude-opus-4-7.html) — Opus 4.7 的能力跃升
-- [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/1291-anthropic.html) — Skills 系统的架构设计
+- [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/1292-anthropic.html) — Skills 系统的架构设计
 - [Anthropic Mcp Revisited Tool Search Code Orchestration](../ch07/016-anthropic-mcp.html) — 工具调用与代码编排
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html) — Claude Code 源码的工程实现深度解读
 - [Kimi Work Beta Foundation Model Company Advantage](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-beta-foundation-model-company-advantage.md) — 模型公司做 Agent 的战略逻辑
-- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01/1291-anthropic.html) — 数据基础设施对 Agent 能力的影响
+- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01/1292-anthropic.html) — 数据基础设施对 Agent 能力的影响
 - [claude code 一周年回顾：boris cherny + cat wu 对话](../ch03/076-claude-code.html)
 
 ## 第 2 来源 — 2026-06-30：子智能体默认后台运行

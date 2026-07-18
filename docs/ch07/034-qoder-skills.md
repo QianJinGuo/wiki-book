@@ -81,7 +81,7 @@
 - [qoder skills](ch07/034-qoder-skills.html)
 - [Agent/Skills/Teams 架构演进过程及技术选型之道](../ch04/236-agent-skills-teams.html)
 - [Agent 时代架构师技能指南](../ch03/070-skills.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/604-agent-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/265-agent-skill.html)
 - [Hermes Agent](../ch03/092-hermes-agent.html)
 - [你写的 Skill，及格了吗？](../ch04/267-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)

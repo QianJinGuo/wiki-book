@@ -192,7 +192,7 @@ LLM微调的总成本主要由以下几部分组成：
 - 
 
 - [Reinforcement Fine-Tuning (RFT)](https://github.com/QianJinGuo/wiki/blob/main/concepts/reinforcement-fine-tuning-rft.md)
-- [RLHF with LLM-as-Judge](ch01/1235-llm.html)
+- [RLHF with LLM-as-Judge](ch01/961-llm.html)
 
 ---
 

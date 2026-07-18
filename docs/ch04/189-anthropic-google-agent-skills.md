@@ -7,7 +7,7 @@
 ## 相关实体
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/251-anthropic-agent.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/392-agent-skills.html)
-- [Anthropic 官方 14 种 Skill 设计模式](../ch01/1291-anthropic.html)
+- [Anthropic 官方 14 种 Skill 设计模式](../ch01/1292-anthropic.html)
 - [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/705-skills-anthropic-openai-comparison-frontend-design.html)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/392-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/046-agent.html)
@@ -21,7 +21,7 @@
 - [Claude Code Agent 工程设计](../ch03/068-claude-code-agent.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/034-qoder-skills.html)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/086-ai.html)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01/1291-anthropic.html)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01/1292-anthropic.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/046-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)

@@ -195,7 +195,7 @@ Peter Steinberger 提出的成本结构揭示了一个反直觉事实：Loop Eng
 
 ## 与库内相关实体的交叉
 
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/088-claude-code-dynamic-workflows.html)：Bun→Rust 75 万行移植使用的 Claude Code Dynamic Workflows（10 大实战场景 + Thariq 6 模式 + 3 类失败模式）
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/089-claude-code-dynamic-workflows.html)：Bun→Rust 75 万行移植使用的 Claude Code Dynamic Workflows（10 大实战场景 + Thariq 6 模式 + 3 类失败模式）
 - [Verifier Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)：Verifier-driven Development（"每个 AI 产出必须有 verifier"，与本文"verifier 封顶产出质量"互相印证）
 - [Ai R And D Bottleneck Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-r-and-d-bottleneck-shift.md)：AI R&D 瓶颈迁移（"当 verifier 的成本下降时，loop 才能规模化"，与本文"经济可行性取决于验证成本"同源）
 - [Agent Self Improvement Loops](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)：Agent 自我改进循环（与本文"外循环 = 教训持久化"深度交叉）

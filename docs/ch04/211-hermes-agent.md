@@ -121,7 +121,7 @@ SOUL.md 作为人格层，解决的不是"Agent 说什么"的问题，而是"Age
 
 ## 相关实体
 - [Claude Code Search Architecture Tencent 2026](../ch03/076-claude-code.html)
-- [Openclaw Prompt Context Harness](../ch11/224-openclaw.html)
+- [Openclaw Prompt Context Harness](../ch11/225-openclaw.html)
 - [Fudan Peking Ahe Agentic Harness Engineering](ch04/237-ahe-agentic-harness-engineering.html)
 - [Loongsuite Genai Semconv Alibaba](ch04/441-loongsuite-genai.html)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/046-agent.html)

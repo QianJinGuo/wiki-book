@@ -13,7 +13,7 @@
 
 ## 相关实体
 - [LLM-as-a-Verifier: A General-Purpose Verification](ch01/989-llm-as-a-verifier-a-general-purpose-verification.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1235-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/961-llm.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)

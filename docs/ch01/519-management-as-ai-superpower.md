@@ -105,13 +105,13 @@ Mollick 的三变量公式（Human Baseline Time、Probability of Success、AI P
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/610-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/132-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/612-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [The Bitter Lesson Versus The Garbage Can](../ch04/337-the-bitter-lesson-versus-the-garbage-can.html)
 - [Claude Code And What Comes Next](ch01/438-claude-code-and-what-comes-next.html)
 - [Your First Ai Agent Should Do One Thing Badly](../ch04/380-your-first-ai-agent-should-do-one-thing-badly.html)
 - [Co Existence And The End Of Co Intelligence](ch01/635-co-existence-and-the-end-of-co-intelligence.html)
-- [Giving Your Ai A Job Interview](../ch11/128-giving-your-ai-a-job-interview.html)
+- [Giving Your Ai A Job Interview](../ch11/129-giving-your-ai-a-job-interview.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/052-harness-engineering.html)

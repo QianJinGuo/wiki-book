@@ -164,7 +164,7 @@ response = client.chat.completions.create(
 - [Deepseek Moe Parallel Strategy](ch01/425-deepseek.html) — DeepSeek MoE 并行策略
 - [Msa Sparse Attention Three Kingdoms Huashu](https://github.com/QianJinGuo/wiki/blob/main/entities/msa-sparse-attention-three-kingdoms-huashu.md) — MSA 稀疏注意力（三国华术）
 - [Kimi Attention Residuals Prenorm Dilution Block Attnres](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-attention-residuals-preNorm-dilution-block-attnres.md) — Kimi 注意力残差与 PreNorm 稀释
-- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](ch01/1235-llm.html) — 2026 LLM RL 算法综述（DeepSeek V4 训练方法背景）
+- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](ch01/961-llm.html) — 2026 LLM RL 算法综述（DeepSeek V4 训练方法背景）
 
 ---
 

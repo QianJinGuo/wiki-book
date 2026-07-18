@@ -90,7 +90,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 ## 深度分析
 1. **Harness 是 AI 可靠性的决定性因素** — 原文提出 `Agent = Model + Harness`，Model 决定 AI 有多聪明，Harness 决定 AI 有多可靠。这与 Martin Fowler 的"非确定性引入研发链路"观点形成呼应：Harness 才是真正承重的部分。 → 见 [Martin Fowler AI 研发提醒](ch05/018-harness.html)
 2. **六层架构的信息层核心洞察：上下文窗口不是数据库** — LLM 的上下文窗口天然会"忘记"，必须通过外部状态管理（短期用 Context 直接注入、长期用 Pinecone/pgvector 向量库、情节记忆用 Redis/DynamoDB、过程记录用 PostgreSQL）来补足。 → 见 [AI Agent 记忆系统](../ch04/121-agent-memory.html)
-3. **MCP（Model Context Protocol）是动态知识实时注入的关键基础设施** — 静态知识通过 Git+向量库版本控制，动态知识通过 MCP 实时注入，这是信息层区分"慢知识"与"快知识"的核心能力。 → 见 [Anthropic MCP 设计模式](../ch01/1291-anthropic.html)
+3. **MCP（Model Context Protocol）是动态知识实时注入的关键基础设施** — 静态知识通过 Git+向量库版本控制，动态知识通过 MCP 实时注入，这是信息层区分"慢知识"与"快知识"的核心能力。 → 见 [Anthropic MCP 设计模式](../ch01/1292-anthropic.html)
 4. **"用错误喂养规则库"是 Harness 最核心的运营哲学** — AI 每次犯错不仅仅修正这一次输出，而是转化为规则/测试/约束更新约束库，形成"AI 永不再犯、系统自我进化"的正循环。这使得 Harness 与 Fine-tuning 相比具有可解释性和迭代速度优势。 → 见 [Agent 自我改进六机制](../ch03/046-agent.html)
 5. **七大反模式揭示了 Harness 工程中的高频失败路径** — 层级混淆（把 Harness 逻辑写进 Prompt）、过早自治（跳过验证回路）、无状态设计（每次对话重新开始）、忽视熵管理（Agent 无限制产生副作用）都是实践中极易犯的错误。 → 见 [Harness Engineering 系统化框架](ch05/052-harness-engineering.html)
 

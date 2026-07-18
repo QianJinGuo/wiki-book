@@ -83,7 +83,7 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch03/076-claude-code.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/076-claude-code.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/075-obsidian-claude-code.html)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/083-claude-code-1.html)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/084-claude-code-1.html)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/076-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/046-agent.html)
@@ -96,7 +96,7 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1149-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xero-announces-integration-with-anthropics-claude.md)
-- [2026年最值得关注的15款开发者工具深度解读](../ch01/966-20.html)
+- [2026年最值得关注的15款开发者工具深度解读](../ch01/1286-15.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---
