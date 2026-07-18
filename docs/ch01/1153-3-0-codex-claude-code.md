@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [你的ai代码越写越乱，他72小时合了14个pr——差距只在一个机制](ch01/655-garry-tan.html)
-- [karpathy × boris 访谈：software 3.0 时代编程完整地图](ch01/1235-llm.html)
+- [karpathy × boris 访谈：software 3.0 时代编程完整地图](ch01/961-llm.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/coze-3-0-local-agent-codex-claude-code-project.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
@@ -46,8 +46,8 @@ Coze（扣子）3.
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/224-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/610-agentic.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/225-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/612-agentic.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/046-agent.html)
 
 ## 实践启示

@@ -252,15 +252,15 @@ MSA 论文花了大量篇幅讲"试过、没用、砍掉"：
 
 ## 与现有实体的互补关系
 
-- [MiniMax M3 开源 Frontier 模型](../ch09/076-minimax-m3-frontier.html) — MSA 是 M3 的核心架构创新
+- [MiniMax M3 开源 Frontier 模型](../ch09/077-minimax-m3-frontier.html) — MSA 是 M3 的核心架构创新
 - [DeepSeek V4 Flash Pro 1M 上下文](ch01/991-deepseek-v4-flash-pro.html) — 压得狠路线的最新代表
 - [DeepSeek V4 训练方法学](ch01/294-deepseek-v4.html) — 训练配方对比
 - [Lighthouse Attention](https://github.com/QianJinGuo/wiki/blob/main/entities/lighthouse_attention.md) — 另一款稀疏 attention 方案（对称 Q/K/V 池化）
 - [Attention Mechanism](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md) — 稀疏注意力的概念基础
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 长上下文管理的核心议题
-- [近期 LLM 架构进展](ch01/1235-llm.html) — 注意力架构的近期综述
+- [近期 LLM 架构进展](ch01/961-llm.html) — 注意力架构的近期综述
 - [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) — KL 对齐作为 "强教弱" 范式的理论基础
-- [M3 开源三件套](../ch09/076-minimax-m3-frontier.html) — 同一文章的不同角度解读
+- [M3 开源三件套](../ch09/077-minimax-m3-frontier.html) — 同一文章的不同角度解读
 
 ## 总结：长上下文之争转向"成本"
 

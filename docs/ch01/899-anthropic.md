@@ -12,7 +12,7 @@
 - Claude Code 开发工具
 
 ## 核心研究
-- [Natural Language Autoencoders（NLAs）](ch01/1288-natural-language-autoencoders-anthropic.html) — 激活→文字翻译
+- [Natural Language Autoencoders（NLAs）](ch01/1289-natural-language-autoencoders-anthropic.html) — 激活→文字翻译
 - [LLM 内省意识检测](../ch04/166-anthropic-llm.html)
 - [MCP 协议](../ch07/016-anthropic-mcp.html)
 

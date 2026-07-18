@@ -13,7 +13,7 @@
 ## 与现有 wiki 的关系
 - **互补**：现有  侧重整体选型（三步选型法+效率五维表格），本文聚焦 **Gateway 单一架构层次的三框架深对比**
 - **填补空白**：wiki 目前有 OpenClaw 源码拆解、Claude Code Prompt/Context/Harness 拆解、Hermes 深度解析，但缺少以 **Gateway 为分析轴的三框架横向对比**
-- **交叉引用**：与 [OpenClaw Prompt/Context/Harness](../ch11/224-openclaw.html)、[Claude Code Prompt/Context/Harness](../ch09/060-claude-code-prompt.html)、[Hermes Agent 深度解析](../ch03/092-hermes-agent.html) 互为补充
+- **交叉引用**：与 [OpenClaw Prompt/Context/Harness](../ch11/225-openclaw.html)、[Claude Code Prompt/Context/Harness](../ch09/060-claude-code-prompt.html)、[Hermes Agent 深度解析](../ch03/092-hermes-agent.html) 互为补充
 
 ## 文章导航
 - 本系列共（一）~（九）篇，本文为第（八）篇 Gateway 专题

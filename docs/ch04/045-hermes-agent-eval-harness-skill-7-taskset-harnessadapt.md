@@ -265,7 +265,7 @@ regression_failures | rejection_reason | review_notes
 | [Hermes Agent 12 Layer Full Configuration Guide](../ch03/092-hermes-agent.html) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
 | [Hermes 9 Module Architecture](../ch01/729-9.html) | **Hermes 9 模块** | Hermes 9 模块架构 |
 | [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/052-harness-engineering.html) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
-| [Slim Cuhk Skill Lifecycle Agentic Rl](ch04/541-agentic-rl.html) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
+| [Slim Cuhk Skill Lifecycle Agentic Rl](ch04/542-agentic-rl.html) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
 | [Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/267-skill.html) | **Deli Auto Research** | Continual learning + self-improvement |
 | [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/076-claude-code.html) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |
 

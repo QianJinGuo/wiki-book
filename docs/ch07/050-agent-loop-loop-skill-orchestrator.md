@@ -114,7 +114,7 @@ Van Horn 框架 Stage 5 的五个挑战：
 - [Agent Loop 工程手册](../ch05/007-loop-engineering.html)——8 问框架与本文三层模型互补
 - [Harness Engineering 框架](../ch05/052-harness-engineering.html)——三层中 Orchestrator 层对应 Harness 的运行时职责
 - [Self-Harness](../ch05/018-harness.html)——自建 Skill agent 是 Self-Harness 的工程实现路径
-- [Agentic Environment Engineering](../ch04/610-agentic.html)——Environment 决定反馈质量，Orchestrator 决定执行耐久性
+- [Agentic Environment Engineering](../ch04/612-agentic.html)——Environment 决定反馈质量，Orchestrator 决定执行耐久性
 
 ---
 

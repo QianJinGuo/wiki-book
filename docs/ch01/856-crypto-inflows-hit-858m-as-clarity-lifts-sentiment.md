@@ -21,7 +21,7 @@
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Interaction Models](../ch03/102-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/086-ai.html)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/144-automate-progressive-rollouts-with-vercel-flags-vercel.html)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/145-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 - [Afine Csp Html Injection Password Exfiltration Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration-attack.md)
 - [Ai Native Dan Shipper Every Layered Thinking Walkwalk](../ch05/019-ai-native.html)
 - [Fastlane Create Winning Short Form Content In Seconds](../ch03/105-fastlane-create-winning-short-form-content-in-seconds.html)

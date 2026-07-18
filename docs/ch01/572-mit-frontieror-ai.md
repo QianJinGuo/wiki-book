@@ -69,8 +69,8 @@ FrontierOR 最重要的发现之一是方法分布对竞争力的决定性影响
 - [AI 评测方法论](ch01/265-ai-evals.html)
 - [AutoResearch 算法开发智能体](../ch04/116-autoresearch-agent.html)
 - [智能体自演化评测瓶颈](../ch03/046-agent.html)
-- [AREAL-2 智能体在线学习自演化](../ch04/541-agentic-rl.html)
-- [大规模数学优化决策](../ch11/163-better-decisions-at-scale-how-mathematical-optimization-del.html)
+- [AREAL-2 智能体在线学习自演化](../ch04/542-agentic-rl.html)
+- [大规模数学优化决策](../ch11/164-better-decisions-at-scale-how-mathematical-optimization-del.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/大模型能写出工业级优化算法吗mit提出frontieror给ai设下考场.md)
 

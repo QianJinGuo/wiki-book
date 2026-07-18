@@ -48,10 +48,10 @@ May 08, 2026
 Memory safety vulner
 ## 相关实体
 - [05 11 The Great Memory Panic Of 2026](ch01/842-the-great-memory-panic-of-2026.html)
-- [Memory In The Llm Era Iclr2026](ch01/1235-llm.html)
+- [Memory In The Llm Era Iclr2026](ch01/961-llm.html)
 - [Openchronicle Memory Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/openchronicle-memory-layer.md)
 - [Hermes 9 Module Architecture Winty](ch01/729-9.html)
-- [Openclaw Prompt Context Harness](../ch11/224-openclaw.html)
+- [Openclaw Prompt Context Harness](../ch11/225-openclaw.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

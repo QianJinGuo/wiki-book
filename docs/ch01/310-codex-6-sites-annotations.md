@@ -83,7 +83,7 @@
 ## 相关对照
 - [Codex Goal Agent Runtime](../ch04/106-codex-goal-agent.html)
 - [Codex Goal 实现拆解](../ch09/046-codex-goal.html)
-- [Codex Computer Use](../ch09/129-codex-can-now-control-other-desktop-devices-via-computer-use.html)
+- [Codex Computer Use](../ch09/130-codex-can-now-control-other-desktop-devices-via-computer-use.html)
 - [Codex 自主赚钱](ch01/534-codex.html)
 - [Claude Code vs Codex 上下文架构](../ch03/076-claude-code.html)
 - [Meta Skill](../ch07/025-meta-skill.html)（Skill 2.0 抽象）

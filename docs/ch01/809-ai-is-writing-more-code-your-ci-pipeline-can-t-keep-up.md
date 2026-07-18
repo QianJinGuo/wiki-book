@@ -38,9 +38,9 @@ AI 辅助开发正在从根本上改变代码生产节奏。Stack Overflow 2025 
 
 ## 相关实体
 - [Ai Can Write Code Cios Operating Model](../ch03/011-cio.html)
-- [Aws Network Firewall Ai Conflict Detection Bedrock](../ch11/124-aws-network-firewall-ai.html)
+- [Aws Network Firewall Ai Conflict Detection Bedrock](../ch11/125-aws-network-firewall-ai.html)
 - [从提需求到部署发布全Ai全自动化后研发效能全面跃升](../ch05/086-ai.html)
-- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11/131-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
+- [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11/132-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Npm Supply Chain Compromise Postmortem](../ch05/086-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-is-writing-more-code-your-ci-pipeline.md)
