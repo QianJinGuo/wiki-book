@@ -68,10 +68,10 @@ Google AI Studio 新增移动端应用和原生 Android 支持，标志着"vibe 
 3. **隔离持久化环境的技术实现**：Managed Agents 的 Linux 隔离环境设计是安全 Agent 执行的有趣参考
 
 ## 相关实体
-- [Google Io 2026 Agentic Gemini Era](ch04/610-agentic.html)
+- [Google Io 2026 Agentic Gemini Era](ch04/612-agentic.html)
 - [Building Is Just The Beginning Introducing Discove](../ch12/088-building-is-just-the-beginning-introducing-discoverability.html)
 - [The Agentic Trust Management Platform Drata](ch04/020-the-agentic-trust-management-platform-drata.html)
-- [Nvidia Agentic Systems Extreme Co Design](ch04/610-agentic.html)
+- [Nvidia Agentic Systems Extreme Co Design](ch04/612-agentic.html)
 - [Google Debuts Gemini Focused Updates At Io 2026](../ch01/966-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)

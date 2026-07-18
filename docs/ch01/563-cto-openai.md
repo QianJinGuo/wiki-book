@@ -28,7 +28,7 @@
 - [Ciodive Openai Daybreak Cyber Threats](ch01/757-openai.html)
 - [快来和Ai实战派一起Aiaigc峰会最新嘉宾阵容来了](../ch04/501-aiaigc.html)
 - [Ai True Moat Organizational Capability](ch01/845-ai-true-moat-organizational-capability.html)
-- [The Anti Singularity](ch01/1317-the-anti-singularity.html)
+- [The Anti Singularity](ch01/1318-the-anti-singularity.html)
 - [Wiki Evolver Skill System Design Gpt55 Copilot Session](../ch07/015-wiki-evolver.html)
 - [Gpt 54 Is A Big Step For Codex](ch01/534-codex.html)
 - [Yann Dubois Openai Post Training Matt Turck Interview](ch01/757-openai.html)
@@ -38,7 +38,7 @@
 - [Three Years From Gpt 3 To Gemini 3](ch01/297-three-years-from-gpt-3-to-gemini-3.html)
 - [Openai Symphony Codex Orchestration Linear Control Plane Tutuai](ch01/757-openai.html)
 - [Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606](ch01/757-openai.html)
-- [Openai Codex Jasonliu Maxxing Playbook](../ch09/156-openai-codex.html)
+- [Openai Codex Jasonliu Maxxing Playbook](../ch09/157-openai-codex.html)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-ecosystem.md)
 ## 深度分析

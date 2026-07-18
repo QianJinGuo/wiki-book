@@ -52,7 +52,7 @@ Gostev 的视频中最引人深思的一句话是："连实验室里的人，都
 
 ## 相关实体
 
-- [Fable 5](../ch04/550-fable-5.html)
+- [Fable 5](../ch04/551-fable-5.html)
 - [Andrej Karpathy](ch01/284-claude-md.html)
 - [多模态模型与视觉生成](https://github.com/QianJinGuo/wiki/blob/main/concepts/vision-language-models.md)
 - **AI 代码生成与 3D 世界**

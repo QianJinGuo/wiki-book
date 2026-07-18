@@ -16,7 +16,7 @@
 → [C4 架构图](assets/c4/promptqueue-async-task-queue-opengorilla-integration-c4.html)
 
 ## 相关实体
-- [Schemaflow Openai Cookbook Staged Agentic Workflow](../ch04/610-agentic.html)
+- [Schemaflow Openai Cookbook Staged Agentic Workflow](../ch04/612-agentic.html)
 - [Prompt Context Harness Three Evolutions](../ch05/018-harness.html)
 - [From Prompt To Harness Claude Official](../ch05/018-harness.html)
 - [Claude Code Large Codebase Harness Configuration](../ch03/076-claude-code.html)

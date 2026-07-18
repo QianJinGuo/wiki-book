@@ -19,7 +19,7 @@ pi-mono 是一个 npm workspace monorepo 的 TypeScript 项目，提供构建 AI
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pi-mono-github.md)
 
-- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](ch01/1291-anthropic.html)
+- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](ch01/1292-anthropic.html)
 
 ## 深度分析
 

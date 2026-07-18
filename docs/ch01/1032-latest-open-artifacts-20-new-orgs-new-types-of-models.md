@@ -12,7 +12,7 @@
 - [dynamically splitting wide partitions in cassandra for time](../ch11/026-dynamically-splitting-wide-partitions-in-cassandra-for-time.html)
 - [interconnects ai p open and closed models are on different](../ch05/086-ai.html)
 - [reducing container cold start times using soci index on dlam](ch01/1159-reducing-container-cold-start-times-using-soci-index-on-dlam.html)
-- [state of routing in model serving](../ch11/181-state-of-routing-in-model-serving.html)
+- [state of routing in model serving](../ch11/182-state-of-routing-in-model-serving.html)
 - [the distillation panic](ch01/637-the-distillation-panic.html)
 - [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki/blob/main/entities/untitled-v2.md)
 - [直播预约 | 数据引擎：具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
@@ -44,10 +44,10 @@ This Artifacts Log post is unusual in how many diverse, quirky models there are 
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1130-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/224-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/225-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/046-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/224-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/610-agentic.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/225-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/612-agentic.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

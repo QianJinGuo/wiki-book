@@ -108,12 +108,12 @@
 ## 相关实体（Related Entities）
 
 - [Mythos For Offensive Security Xbows Evaluation](ch12/030-mythos.html) — Claude Mythos 攻防评估
-- [Llm Raiders Private Ai Server](../ch01/1235-llm.html) — LLM Raiders 私人 AI 服务器
+- [Llm Raiders Private Ai Server](../ch01/961-llm.html) — LLM Raiders 私人 AI 服务器
 - [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/030-ai-agent.html) — AWS + Cisco AI Defense MCP/A2A
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/079-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) — AI gateway 安全
 - [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](../ch01/1089-rag.html) — Linux 内核权限提升
 - [The Agentic Trust Management Platform Drata](../ch04/020-the-agentic-trust-management-platform-drata.html) — Drata agentic trust 平台
-- [Enterprise Openclaw Security Deploy Architecture Guide](../ch11/224-openclaw.html) — OpenClaw 部署安全
+- [Enterprise Openclaw Security Deploy Architecture Guide](../ch11/225-openclaw.html) — OpenClaw 部署安全
 - [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/411-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox AI agent 安全测试
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/821-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html) — Anthropic Mythos 漏洞共享
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — Microsoft Rampart/Clarity 开源

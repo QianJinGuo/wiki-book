@@ -59,7 +59,7 @@ Stenberg 明确表示：
 
 ## 相关实体
 - [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](../ch12/109-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.html)
-- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](ch01/1291-anthropic.html)
+- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](ch01/1292-anthropic.html)
 - [Mythos 发现 curl 漏洞](../ch12/010-mythos-finds-a-curl-vulnerability.html) — Daniel Stenberg（curl 作者）亲述 Mythos 扫描 curl 代码库的真实经历：5个"确认"漏洞经人工审核后只有1个真正成立
 
 ## 链接

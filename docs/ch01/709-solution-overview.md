@@ -58,11 +58,11 @@ The following screenshot illustrates the blueprint prompt for one of the documen
 The next section describes the four documents tried as a part of this project and extraction achieved using custom blueprints based on needs. Output is available in JSON, CSV, and raw data formats, highlighting the solution’s adaptability to diverse integration
 
 ## 相关实体
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/212-amazon-quick.html)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/213-amazon-quick.html)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/086-ai.html)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/156-amazon-bedrock.html)
-- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch01/1235-llm.html)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/530-amazon-bedrock-agentcore.html)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/157-amazon-bedrock.html)
+- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch01/961-llm.html)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/531-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/process-financial-documents-using-amazon-bedrock-data-automa.md)
 

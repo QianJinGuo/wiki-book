@@ -46,7 +46,7 @@ Lemkin 提供了系统的诊断框架来定位增长放缓的根本原因：
 - [P Ai Pms Guide To Claude](../ch01/1149-claude.html)
 - [Deels Accelerate Or Die Moment](https://github.com/QianJinGuo/wiki/blob/main/entities/deels-accelerate-or-die-moment.md)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/146-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
-- [Asana Agentic Work Management Platform Lettertwo](../ch04/610-agentic.html)
+- [Asana Agentic Work Management Platform Lettertwo](../ch04/612-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 

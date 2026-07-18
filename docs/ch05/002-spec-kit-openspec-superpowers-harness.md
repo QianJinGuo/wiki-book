@@ -42,7 +42,7 @@
 
 - [Matt Pocock Skills vs Superpowers](../ch03/070-skills.html) — 同一路线对比的另一视角
 - [Superpowers 三器合一](ch05/100-ai-coding.html) — Superpowers 在 Comet+OpenSpec 流水线中的角色
-- [Agent vs Workflow 控制权连续谱](../ch04/637-agent-vs-workflow.html) — 架构选择的底层框架
+- [Agent vs Workflow 控制权连续谱](../ch04/639-agent-vs-workflow.html) — 架构选择的底层框架
 
 ---
 

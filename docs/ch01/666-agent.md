@@ -35,7 +35,7 @@
 
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/046-agent.html)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch01/1291-anthropic.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch01/1292-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/076-claude-code.html)
@@ -43,11 +43,11 @@
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/392-agent-skills.html)
 - [天猫新品营销技术团队AI编码实战指南（上）](../ch05/086-ai.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/1291-anthropic.html)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/1292-anthropic.html)
 - [你写的 Skill，及格了吗？](../ch04/267-skill.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/610-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/612-agentic.html)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch01/1149-claude.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/673-claude-managed-agents.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/515-claude-managed-agents.html)
 - [AI Agent 工程师能力地图](../ch04/030-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 

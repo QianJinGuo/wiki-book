@@ -20,7 +20,7 @@ Anthropic宣布与SpaceX达成合作协议，将大幅提升算力储备。
 
 ## 相关实体
 - [Claude Opus 47](ch01/1149-claude.html)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1291-anthropic.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1292-anthropic.html)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/259-anthropic-claude-managed-agents.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/331-anthropic-claude-code.html)
 - [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](../ch04/452-anthropic-ai.html)

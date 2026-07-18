@@ -13,7 +13,7 @@
 
 ## 相关实体
 - [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](ch01/1149-claude.html)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1291-anthropic.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1292-anthropic.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/076-claude-code.html)
 - [Skill Factory Yueheng](../ch04/267-skill.html)
 - [Code Review Graph](ch01/812-code-review-graph-claude-code-6-8-token.html)

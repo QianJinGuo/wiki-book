@@ -21,7 +21,7 @@
 ## 相关链接
 
 - entities/openatom（开放原子开源基金会）
-- [大模型推理](ch01/1235-llm.html)
+- [大模型推理](ch01/961-llm.html)
 - entities/jd
 
 ## 第 2 来源 — 京东技术公众号 (2026-06-25)

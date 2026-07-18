@@ -13,7 +13,7 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 数据库设计：experiments 表（固定输入）下挂 experiment_runs 表（不同 Prompt/参数的结果），同一输入对比任意变体。
 
 ## 相关实体
-- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch01/1291-anthropic.html)
+- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch01/1292-anthropic.html)
 - [Claude Opus 47](ch01/1149-claude.html)
 - [Pi Mono Github](ch01/813-pi-mono-github.html)
 - [From Prompt To Harness Claude Official](../ch05/018-harness.html)

@@ -15,7 +15,7 @@
 - [Task Queue Priority and Fairness: Your Task Queue, your way](ch11/249-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [Task Queue Priority and Fairness: Your Task Queue, Your Way](ch11/249-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 
-- [Neurips 2026 Pangram Controversy](../ch01/958-20.html)
+- [Neurips 2026 Pangram Controversy](../ch01/966-20.html)
 - [Toto 2 Context Aware Log Analytics For Complex Distributed Systems](ch11/159-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 ## 深度分析
 Temporal平台发布的Task Queue Priority and Fairness功能代表了任务调度领域的一个重要进化。这些功能直接回应了多租户SaaS平台和有差异化服务等级需求的企业所面临的共同挑战：如何在共享基础设施上实现可预测的性能保证。

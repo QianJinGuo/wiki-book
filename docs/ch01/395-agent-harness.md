@@ -96,7 +96,7 @@ Boris Cherny 报告自验证提升 2-3x 质量，但这是有代价的：每步�
 - [Agent Harness 架构](../ch05/039-agent-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/052-harness-engineering.html)
-- [Claude Code Dynamic Workflows Source Code Architecture](../ch09/088-claude-code-dynamic-workflows.html)
+- [Claude Code Dynamic Workflows Source Code Architecture](../ch09/089-claude-code-dynamic-workflows.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-structure-navigation.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 

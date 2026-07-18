@@ -59,11 +59,11 @@ MCP（Model Context Protocol）作为 AI 模型与外部工具之间的标准化
 
 ## 相关实体
 
-- [Amazon Quick 加速企业数据到 AI 决策](../ch11/212-amazon-quick.html)
-- [Amazon Quick + Bedrock AgentCore FinOps 实践](../ch11/126-amazon-quick-bedrock-agentcore-finops.html)
+- [Amazon Quick 加速企业数据到 AI 决策](../ch11/213-amazon-quick.html)
+- [Amazon Quick + Bedrock AgentCore FinOps 实践](../ch11/127-amazon-quick-bedrock-agentcore-finops.html)
 - [Figma 的 MCP Server 四种用法](https://github.com/QianJinGuo/wiki/blob/main/entities/4-ways-were-using-our-mcp-server-at-figma.md)
 - [AI 网关 vs MCP 网关安全对比](../ch11/079-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
-- [Amazon Quick + Cisco Webex MCP 会议助理](../ch11/212-amazon-quick.html)
+- [Amazon Quick + Cisco Webex MCP 会议助理](../ch11/213-amazon-quick.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/零代码快速体验-amazon-quick-操作飞书lark.md)
 

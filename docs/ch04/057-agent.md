@@ -156,8 +156,8 @@ graph TB
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/456-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [Agent Harness 架构](../ch05/039-agent-harness.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/132-karpathy-vibe-coding-agentic-engineering.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/224-openclaw.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/225-openclaw.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/086-ai.html)
 - [GBrain](../ch01/298-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
@@ -172,7 +172,7 @@ graph TB
 
 - [Chatgpt Dreaming V3 Long Term Memory Xinzhiyuan](../ch01/1068-chatgpt-dreaming-v3.html)
 - [Chatgpt Dreaming V3 Long Term Memory Openai](../ch01/1068-chatgpt-dreaming-v3.html)
-- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](../ch01/1235-llm.html)
+- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](../ch01/961-llm.html)
 - [recursive first steps toward automated ai research：sota 三基准自](../ch05/086-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)

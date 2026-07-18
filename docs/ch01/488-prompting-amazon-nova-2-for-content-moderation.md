@@ -13,7 +13,7 @@
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/076-claude-code.html)
 - [Build An Enterprise Observability Solution For Amazon Quick](../ch11/021-build-an-enterprise-observability-solution-for-amazon-quick.html)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/076-claude-code.html)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/137-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/138-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/058-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/prompting-amazon-nova-2-for-content-moderation.md)

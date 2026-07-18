@@ -28,7 +28,7 @@ OpenSquilla 推出 **9 个内置 Meta Skill**，代表从 Skill 1.0（单 Skill 
 
 ## 深度分析
 ### 1. 路由决策的分层复杂性
-OpenSquilla 的 token 节省并非来自单一技术，而是多层路由策略的协同效果：ML 分类器基于消息长度、代码块存在性、关键词模式等手工特征，结合基于 embedding 的语义特征对请求复杂度打分。简单查询路由至廉价模型，轻量任务禁用深度推理（chain-of-thought），Skills 按需加载而非全量塞入上下文。这与 [GitHub Agentic Token 效率](ch04/610-agentic.html) 中"消灭未使用的 MCP 工具注册"思路一脉相承——都是在 proxy 层削减不必要的 token 消耗。
+OpenSquilla 的 token 节省并非来自单一技术，而是多层路由策略的协同效果：ML 分类器基于消息长度、代码块存在性、关键词模式等手工特征，结合基于 embedding 的语义特征对请求复杂度打分。简单查询路由至廉价模型，轻量任务禁用深度推理（chain-of-thought），Skills 按需加载而非全量塞入上下文。这与 [GitHub Agentic Token 效率](ch04/612-agentic.html) 中"消灭未使用的 MCP 工具注册"思路一脉相承——都是在 proxy 层削减不必要的 token 消耗。
 
 ### 2. 四层认知架构的工程对标
 OpenSquilla 的 Working/Episodic/Semantic/Raw 四层记忆结构，直接对标认知科学中的人类记忆模型。与 [Agent Memory 模块化框架](ch04/121-agent-memory.html) 中的 Information Extraction + Memory Management + Memory Storage + Information Retrieval 组件有系统性对应——两者都承认"记忆的核心问题是治理而非容量"。OpenSquilla 的 Memory Dream Consolidation（每 24 小时将分散记忆重组为更密集的知识）对应框架中的"整合碎片 + 层级迁移"操作。

@@ -182,8 +182,8 @@ Appshots（屏幕感知） + /goal（长周期自主） + Locked Use（物理边
 - [Nanobot Agent Framework Architecture Deep Dive](../ch03/046-agent.html) — subagent / 长周期任务的极简框架样本
 - [腾讯研究院Ai速递 20260506](../ch05/086-ai.html) — 同期 AI 行业全景，含"工具型 App 消亡"判断
 - [天猫新品营销技术团队Ai编码实战指南上](../ch05/086-ai.html) — AI 编码全流程工程化方法论
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/132-karpathy-vibe-coding-agentic-engineering.html) — vibe coding 到 agentic engineering 的演进
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/610-agentic.html) — 锯齿智能与 Codex 能力组合
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/678-karpathy-vibe-coding-agentic-engineering.html) — vibe coding 到 agentic engineering 的演进
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/612-agentic.html) — 锯齿智能与 Codex 能力组合
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent harness 的工程框架
 - [Agent Harness Context Management Working Set](../ch05/039-agent-harness.html) — Appshots 引发的 working set 管理新挑战
 

@@ -59,7 +59,7 @@ Oxygen AIIC 与传统的电商知识图谱（KG）有本质区别：KG 侧重实
 ## 相关实体
 
 - [Backend Ai Friendly Standards Path Alitech](../ch05/023-ai-friendly.html) — 后端 AI 友好的标准化路径
-- [Ai Knowledge Base Llm Wiki Practice Alicloud](ch01/1235-llm.html) — AI 知识库构建实践
+- [Ai Knowledge Base Llm Wiki Practice Alicloud](ch01/961-llm.html) — AI 知识库构建实践
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化框架方法论
 - [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](../ch03/046-agent.html) — 从能跑到能投产的工程落地
 

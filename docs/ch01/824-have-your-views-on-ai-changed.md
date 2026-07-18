@@ -44,8 +44,8 @@ Matthew Gallagher 的观察触及核心："When I speak with folks about AI, man
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/creativeboom-ai-views-changed.md)
 
 ## 相关实体
-- [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/172-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/172-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/249-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/249-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [The best argument I've heard for why AI won't take your job](../ch05/086-ai.html)
 
 ---

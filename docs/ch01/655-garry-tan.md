@@ -112,7 +112,7 @@ Garry的80-90%标准：
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/046-agent.html)
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Improving token efficiency in GitHub Agentic Workflows](../ch04/610-agentic.html)
+- [Improving token efficiency in GitHub Agentic Workflows](../ch04/612-agentic.html)
 - [复杂度棘轮：AI编程的质量只升不降机制](https://github.com/QianJinGuo/wiki/blob/main/entities/complexity-ratchet.md)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/392-agent-skills.html)
 - [十年老技术开发的 AI Agent 探索之路](../ch04/030-ai-agent.html)

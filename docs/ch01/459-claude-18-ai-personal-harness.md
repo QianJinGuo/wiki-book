@@ -144,7 +144,7 @@ Custom Instructions 不应该写成"你是一个友善的、专业的助手"这�
 - [Claude Code 源码核心机制](../ch03/076-claude-code.html)
 - [Claude Code 源码中的 Agent Harness 构建](../ch05/039-agent-harness.html)
 - [Agent 记忆系统的工程实践](../ch03/046-agent.html)
-- [Karpathy: 从 Vibe Coding 到 Agentic Engineering](../ch04/610-agentic.html)
+- [Karpathy: 从 Vibe Coding 到 Agentic Engineering](../ch04/612-agentic.html)
 - 原始链接: https://mp.weixin.qq.com/s/pAVt6MeapUIDyVu256FI4w
 
 ---

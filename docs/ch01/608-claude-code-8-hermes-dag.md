@@ -7,7 +7,7 @@
 # Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-dynamic-workflows-8th-translation-xingxiaozhao.md)
-→ 主条目：[Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/088-claude-code-dynamic-workflows.html)
+→ 主条目：[Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/089-claude-code-dynamic-workflows.html)
 
 ## 摘要
 
@@ -88,7 +88,7 @@
 
 ## 关联实体
 
-- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/088-claude-code-dynamic-workflows.html) — 主条目，51KB 完整多 Agent 编排指南
+- [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/089-claude-code-dynamic-workflows.html) — 主条目，51KB 完整多 Agent 编排指南
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html) — Claude Code 源码级机制
 - [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html) — Claude Code 中的 agent harness 构建

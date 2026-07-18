@@ -99,7 +99,7 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 - Simon Willison 转述：https://simonwillison.net/2026/Feb/14/boris/
 
 ## 关联条目
-- [Karpathy Vibe Coding To Agentic Engineering](../ch04/610-agentic.html) — 同场 Sequoia AI Ascent 2026，Software 3.0 概念框架，Boris 访谈的上一层叙事
+- [Karpathy Vibe Coding To Agentic Engineering](../ch04/612-agentic.html) — 同场 Sequoia AI Ascent 2026，Software 3.0 概念框架，Boris 访谈的上一层叙事
 - [Claude Code Architecture](ch03/076-claude-code.html) — Claude Code 源码架构，包含主循环、Permission 管道等底层实现
 - [Cat Wu Claude Code Pm](ch03/076-claude-code.html) — Anthropic Claude Code/Cowork 产品负责人，同团队视角
 -  — Karpathy 访谈原文存档

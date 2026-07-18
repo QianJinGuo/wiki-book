@@ -58,11 +58,11 @@ NarrateAI batch-generates comprehensive persona-based narratives for each user t
 ### Conversational AI
 
 ## 相关实体
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/156-amazon-bedrock.html)
-- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch01/1235-llm.html)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/212-amazon-quick.html)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/530-amazon-bedrock-agentcore.html)
-- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/156-amazon-bedrock.html)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/157-amazon-bedrock.html)
+- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch01/961-llm.html)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/213-amazon-quick.html)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/531-amazon-bedrock-agentcore.html)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/157-amazon-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
 

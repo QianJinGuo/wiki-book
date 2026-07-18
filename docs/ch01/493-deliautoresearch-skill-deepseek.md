@@ -47,7 +47,7 @@ DeliAutoResearch SKILL 是 DeepSeek 研究员陈德里（Deli Chen）搭建的**
 ## 与其他自主研究框架的关系
 
 - [Karpathy AutoResearch](../ch03/046-agent.html) — 专注于软件开发领域的自动研究，本框架扩展到通用科研
-- [Claude Code Dynamic Workflows](../ch09/088-claude-code-dynamic-workflows.html) — 编排子Agent执行任务，本框架关注科研任务的自主设计
+- [Claude Code Dynamic Workflows](../ch09/089-claude-code-dynamic-workflows.html) — 编排子Agent执行任务，本框架关注科研任务的自主设计
 
 ## 深度分析
 

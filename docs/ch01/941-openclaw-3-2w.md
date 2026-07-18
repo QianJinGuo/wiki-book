@@ -43,7 +43,7 @@
 
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/224-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/225-openclaw.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)
 - [Ai Agent Harness Construction Akshay Baoyu](ch01/1075-ai-agent-harness.html)
 - [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch05/086-ai.html)

@@ -50,7 +50,7 @@ WordPress 三种内容状态的缓存键设计：
 
 ### 1. Cookie 缓存键碎片化是 WordPress CDN 化的核心矛盾
 
-WordPress 的会话模型（`wordpress_logged_in_*`、`wp-settings-*` 等 cookie）与 CDN 缓存是一对天然矛盾——如果将所有 cookie 纳入缓存键，每个用户 session 都会产生独立缓存副本，命中率趋近于零。本文揭示的解法不是"禁止缓存"，而是**在 viewer-request 阶段用 CloudFront Functions 剥离匿名访客的全部 cookie**，同时通过 Origin Request Policy 将 cookie 转发给源站。源站检测到认证会话后主动返回 `Cache-Control: no-store`，CloudFront 依此 bypass 缓存——这是一个**边缘与源站协同的缓存协商机制**，比单纯的缓存键白名单更精确。[CDN 乐高实践](../ch05/099-harness.html)中提到的边缘可编程性与此同构。
+WordPress 的会话模型（`wordpress_logged_in_*`、`wp-settings-*` 等 cookie）与 CDN 缓存是一对天然矛盾——如果将所有 cookie 纳入缓存键，每个用户 session 都会产生独立缓存副本，命中率趋近于零。本文揭示的解法不是"禁止缓存"，而是**在 viewer-request 阶段用 CloudFront Functions 剥离匿名访客的全部 cookie**，同时通过 Origin Request Policy 将 cookie 转发给源站。源站检测到认证会话后主动返回 `Cache-Control: no-store`，CloudFront 依此 bypass 缓存——这是一个**边缘与源站协同的缓存协商机制**，比单纯的缓存键白名单更精确。[CDN 乐高实践](../ch05/018-harness.html)中提到的边缘可编程性与此同构。
 
 ### 2. 三层缓存策略是可复用的会话型 CMS 模式
 

@@ -34,8 +34,8 @@ AI tool poisoning exposes a major flaw in enterprise agent se...
 - [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/432-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/411-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch01/1089-rag.html)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/131-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](../ch11/212-amazon-quick.html)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/132-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
+- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](../ch11/213-amazon-quick.html)
 - [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/046-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)

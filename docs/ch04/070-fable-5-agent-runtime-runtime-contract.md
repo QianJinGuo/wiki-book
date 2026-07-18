@@ -175,7 +175,7 @@
 
 **Fable 5 主题簇**(本文与 4 个现有 entity 全部为新视角):
 
-- vs **[Anthropic Claude Fable 5 on AWS:Mythos 级功能](../ch01/1308-anthropic-claude.html)** — 那是**AWS 官方产品介绍**(功能/部署/内置保护),本文是**架构师工程化拆解**(Runtime 协议层)。两者互补。
+- vs **[Anthropic Claude Fable 5 on AWS:Mythos 级功能](../ch01/1309-anthropic-claude.html)** — 那是**AWS 官方产品介绍**(功能/部署/内置保护),本文是**架构师工程化拆解**(Runtime 协议层)。两者互补。
 - vs **[Claude Fable 5 and new AI safety fables](../ch01/862-claude-fable-5-and-new-ai-safety-fables.html)** — Nathan Lambert 的**政策分析**(数据保留/prompt 过滤/用户未告知模型修改),本文**不**涉及政策。
 - vs **[Claude Fable 5 — Mollick patron vs wizard](../ch01/173-claude-fable-5.html)** — Mollick 的**hands-on 用户体验视角**(4 用例 + patron vs wizard 框架),本文是**架构师工程视角**。两者对应"产品体验"vs"产品架构"。
 - vs **[Claude Fable 5 提示词泄漏 — Runtime Control Plane 安全工程启示](../ch01/173-claude-fable-5.html)** — 同样用"Runtime"概念,但**VibeCoder 重点在安全工程** (Prompt 不能当保险箱 / 攻击面像系统 / 分类器组合风险),**本文重点在工程协议** (Task Brief / 能力路由 / 状态账本 / 治理层)。两者**完全互补**: 一个看 Runtime 怎么被攻击,一个看 Runtime 怎么被设计。
@@ -202,7 +202,7 @@
 
 ### 2. Task Brief 9 字段本质上是任务元数据的结构化声明
 
-Mike Krieger / Every 团队给出的 Fable 5 prompt library 核心是 9 字段 Task Brief,这在工程上意义深远:**它把"任务边界"从隐性知识变成了显性契约**。传统软件开发中,需求文档往往依赖自然语言,边界模糊,验收标准主观。长任务 Agent 的问题更严重——它没有实时人工监督,一旦对"完成"的理解偏差,会在错误方向上消耗大量资源。9 字段模板(背景/目标/Done means/上下文包/权限/验证/阻塞/交付物/降级)本质上是一种**任务元数据的强制声明**,让 Agent 在行动前先对齐期望。这与 [17 种 Agent 架构演进](ch04/662-17-agent.html) 中"控制流设计逐步显性化"的历史趋势一脉相承。
+Mike Krieger / Every 团队给出的 Fable 5 prompt library 核心是 9 字段 Task Brief,这在工程上意义深远:**它把"任务边界"从隐性知识变成了显性契约**。传统软件开发中,需求文档往往依赖自然语言,边界模糊,验收标准主观。长任务 Agent 的问题更严重——它没有实时人工监督,一旦对"完成"的理解偏差,会在错误方向上消耗大量资源。9 字段模板(背景/目标/Done means/上下文包/权限/验证/阻塞/交付物/降级)本质上是一种**任务元数据的强制声明**,让 Agent 在行动前先对齐期望。这与 [17 种 Agent 架构演进](ch04/664-17-agent.html) 中"控制流设计逐步显性化"的历史趋势一脉相承。
 
 ### 3. 能力路由 8 维度揭示了工具膨胀的失控风险
 
@@ -239,7 +239,7 @@ Anthropic 因美国政府出口管制指令暂停 Fable 5 访问,这件事在表
 
 - → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-fable-5-agent-runtime-contract-ruofei-2026.md)
 - [Claude Fable 5 提示词泄漏 — Runtime Control Plane](../ch01/173-claude-fable-5.html)
-- [Anthropic Claude Fable 5 on AWS](../ch01/1308-anthropic-claude.html)
+- [Anthropic Claude Fable 5 on AWS](../ch01/1309-anthropic-claude.html)
 - [Claude Fable 5 and new AI safety fables](../ch01/862-claude-fable-5-and-new-ai-safety-fables.html)
 - [Claude Fable 5 — Mollick patron vs wizard](../ch01/173-claude-fable-5.html)
 - [若飞 5 张卡治理](../ch03/092-hermes-agent.html)

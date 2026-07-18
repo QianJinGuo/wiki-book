@@ -96,12 +96,12 @@
 相对 4.6，这是一次极具意义的升级，精准命中 Anthropic 核心客户群的三个痛点：**Agent 编程可靠性**、**Computer-Use Agent 视觉能力**、**知识工作基准表现**（GDPval-AA）。
 
 ## Cross-links
-- → [Anthropic](ch01/1291-anthropic.html)
+- → [Anthropic](ch01/1292-anthropic.html)
 - → [Claude Code 深度架构分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
 - → [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - → [KAIROS Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
 - → [Claude Code Agent 工程设计](../ch03/068-claude-code-agent.html)
-- → [Claude Harness 设计：Generator-Evaluator](ch01/1291-anthropic.html)
+- → [Claude Harness 设计：Generator-Evaluator](ch01/1292-anthropic.html)
 
 ## 相关实体
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/076-claude-code.html)

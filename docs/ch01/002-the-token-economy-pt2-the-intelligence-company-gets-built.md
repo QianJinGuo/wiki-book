@@ -191,7 +191,7 @@ Anthropic-Blackstone $1.5B JV 模式展示 PE 作为 AI 转型加速器的潜力
 - [Https Stratechery Com 2026 The Google Capital Company](ch01/003-the-google-capital-company.html)
 - [The Token Economy](ch01/934-the-token-economy.html)
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/821-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
-- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch01/1291-anthropic.html)
+- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch01/1292-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/code-intelligence-changelog.md)
 

@@ -70,7 +70,7 @@ LOL 分级的核心价值不是"更快响应"，而是"避免倦怠"——如果
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [High Throughput Graph Abstraction At Netflix](ch11/103-high-throughput-graph-abstraction-at-netflix-part-i.html)
 - [High Throughput Graph Abstraction At Netflix Part I](ch11/103-high-throughput-graph-abstraction-at-netflix-part-i.html)
-- [Netflix Nebula Archrules](ch11/090-netflix-nebula-archrules-java-archunit.html)
+- [Netflix Nebula Archrules](ch11/089-netflix-nebula-archrules-java-archunit.html)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/netflix-live-operations-human-infrastructure.md)

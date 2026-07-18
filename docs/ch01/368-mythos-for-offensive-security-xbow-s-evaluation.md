@@ -96,12 +96,12 @@ Point Estimate 对 AI Security Institute 基准测试的分析也印证了这一
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/076-claude-code.html)
 - [Claude Code Agent 工程设计](../ch03/068-claude-code-agent.html)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/086-ai.html)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/1291-anthropic.html)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/1292-anthropic.html)
 - [Agent Skill 设计模式](../ch04/392-agent-skills.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/046-agent.html)
 
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/046-agent.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/1291-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/1292-anthropic.html)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/259-anthropic-claude-managed-agents.html)
 
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/392-agent-skills.html)

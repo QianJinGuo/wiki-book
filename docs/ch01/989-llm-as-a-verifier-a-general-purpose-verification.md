@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/382-llm-as-a-verifier-a-general-purpose-verification-framework.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1235-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/961-llm.html)
 
 - [jane street — 形式化方法与编程的未来](../ch12/115-jane-street.html)
 

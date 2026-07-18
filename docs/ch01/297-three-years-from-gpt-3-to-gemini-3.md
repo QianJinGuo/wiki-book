@@ -113,7 +113,7 @@ Mollick 给整篇文章的总结：
 
 > "三年前，我们对机器能写关于水獭的诗印象深刻。不到 1000 天后，我在与一个建立自己研究环境的 Agent 争论统计方法论。chatbot 时代正在变成数字同事时代。"
 
-**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/610-agentic.html) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
+**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/612-agentic.html) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
 
 ### 7. 与 OpenAI Codex 演进的方向对照
 
@@ -189,8 +189,8 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [GPT-5.4 Codex 进展](ch01/534-codex.html)
-- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/610-agentic.html)
-- [Karpathy Agentic Engineering 综述](../ch04/132-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/612-agentic.html)
+- [Karpathy Agentic Engineering 综述](../ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [AgentOps on Bedrock](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Yann Dubois OpenAI 后训练访谈](ch01/757-openai.html)
 - [GPT-5.5 Copilot Session 设计](../ch07/015-wiki-evolver.html)

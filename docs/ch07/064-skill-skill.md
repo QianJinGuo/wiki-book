@@ -71,7 +71,7 @@ user happy
 5. **用标准化短词组精简描述**：调试类→debug/inspect/fix；部署类→deploy/release/verify；检索类→search/sync/summarize。
 
 ## 相关实体
-- [Openclaw Prompt Context Harness](../ch11/224-openclaw.html)
+- [Openclaw Prompt Context Harness](../ch11/225-openclaw.html)
 - [Skill System Design Three Way Comparison](../ch04/267-skill.html)
 - [Openclaw Agent Loop Design Patterns](../ch01/1139-openclaw-agent.html)
 - [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/267-skill.html)

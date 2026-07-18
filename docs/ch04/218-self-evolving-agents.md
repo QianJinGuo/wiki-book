@@ -81,7 +81,7 @@ Model-Environment Co-Evolution 的两个方向：
 - [GBrain](../ch01/298-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/659-llm-wiki-obsidian-wiki-gbrain.html)
-- [17种Agent架构演进：控制流设计的完整演化史](ch04/662-17-agent.html)
+- [17种Agent架构演进：控制流设计的完整演化史](ch04/664-17-agent.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/092-hermes-agent.html)
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
 - [AI Agent 工程师能力地图](ch04/030-ai-agent.html)

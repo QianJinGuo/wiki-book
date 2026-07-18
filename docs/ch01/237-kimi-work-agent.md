@@ -10,7 +10,7 @@
 **Kimi Work** 是**月之暗面 K2.6 + Kimi Code Harness 搬到本地桌面**的通用 Agent 产品（2026-06 Beta 发布）。与 **OpenAI 把 Codex 并入 ChatGPT** 同一时间发布，标志 **"Vibe Working" 时代开启**——AI Agent 主战场从写代码迁移到**普通知识工作者的日常工作**。
 
 ## 相关实体
-- [Schemaflow Agentic Database Sql Generation Openai Cookbook](../ch04/610-agentic.html)
+- [Schemaflow Agentic Database Sql Generation Openai Cookbook](../ch04/612-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
 
@@ -193,7 +193,7 @@
 - [Agent Harness 架构](../ch05/039-agent-harness.html) —— 7 层 harness 模型
 - [Rein](../ch03/046-agent.html) —— 4 模块代码架构
 - [Agent Harness 上下文管理](../ch05/039-agent-harness.html) —— 工作集视角
-- [Karpathy Vibe Coding → Agentic Engineering](../ch04/610-agentic.html) —— Vibe Coding 原始定义
+- [Karpathy Vibe Coding → Agentic Engineering](../ch04/612-agentic.html) —— Vibe Coding 原始定义
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
 

@@ -16,7 +16,7 @@
 - [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch01/757-openai.html)
 - GPT-5.5 实测
 - [Gpt 5 Is Here And Openai Has Some Tips](ch01/642-gpt-5-is-here-and-openai-has-some-tips.html)
-- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch01/1291-anthropic.html)
+- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch01/1292-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-gpt-realtime-voice-models-qbitai.md)
 

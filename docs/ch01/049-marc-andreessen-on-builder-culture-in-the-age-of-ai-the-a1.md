@@ -77,8 +77,8 @@ Andreessen's perspective, while compelling, has notable blind spots:
 
 - [Granola — The AI Notepad for back-to-back meetings](../ch05/086-ai.html)
 - [How Superset built the IDE for AI agents on Vercel](ch01/070-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/158-toto-2-context-aware-log-analytics-for-complex-distributed.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/610-agentic.html)
+- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/159-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/612-agentic.html)
 
 ---
 

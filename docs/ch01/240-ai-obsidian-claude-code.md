@@ -297,7 +297,7 @@ QMD 语义搜索的价值在于 token 成本控制。开发者反馈显示，使
 **Obsidian CLI 是未来方向**：如果 Obsidian 版本 >= 1.12，优先使用 CLI 接入方式，比文件系统的 grep/glob 方式快 50 倍。在自动化脚本和 agent 工作流中，这意味着可量化的速度和成本优势。^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:327-344]
 **自定义命令沉淀工作流**：`/my-world` 、 `/today` 、 `/close` 、 `/trace` 、 `/ghost` 这类命令将 Claude Code 融入了 Obsidian 的日常笔记生态，让 AI 不是孤立的生成工具，而是知识循环的一部分。^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:356-362]
 ## 相关实体
-- [Obsidian Claude Code Integration Guide](../ch09/127-obsidian-claude-code-integration-guide.html)
+- [Obsidian Claude Code Integration Guide](../ch09/128-obsidian-claude-code-integration-guide.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/076-claude-code.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/076-claude-code.html)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/076-claude-code.html)

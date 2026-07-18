@@ -8,9 +8,9 @@
 - Published Time: 2026-05-16T22:36:49-06:00 Even as models get easier to swap, the work that surrounds them is not. Developers already move among Claude Code, Codex, Gemini, and local models with less c
 ## 相关实体
 - [New Lock](https://github.com/QianJinGuo/wiki/blob/main/entities/new-lock.md)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/1291-anthropic.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/1292-anthropic.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/076-claude-code.html)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/1291-anthropic.html)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/1292-anthropic.html)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/076-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-new-ai-lock-in.md)

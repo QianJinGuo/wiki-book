@@ -77,7 +77,7 @@ GPT 5.4 是把极强软件基础（GPT 5.3 Codex）和更多简单可用性/Agen
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
 - GPT-5.5 实测
 - [Kimi Work Codex Vibe Working Paradigm Shift](ch01/534-codex.html)
-- [Openai Codex Super Computer Network Xinzhiyuan](../ch09/156-openai-codex.html)
+- [Openai Codex Super Computer Network Xinzhiyuan](../ch09/157-openai-codex.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gpt-54-is-a-big-step-for-codex.md)
 

@@ -81,10 +81,10 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - [Romanian Man 30 Years Us Prison Vishing](../ch01/214-0.html)
 - [Youcom Download The Guide Why Api Latency Is A Misleading Metric](https://github.com/QianJinGuo/wiki/blob/main/entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 - [818662](https://github.com/QianJinGuo/wiki/blob/main/entities/818662.md)
-- [2026 04 15](../ch01/966-20.html)
+- [2026 04 15](../ch01/1286-15.html)
 - [What My Privacy And Security Stack Actually Looks Like](ch12/021-what-my-privacy-and-security-stack-actually-looks-like.html)
 - [Ai Traffic Cyberthreat Benchmark 2026](../ch05/086-ai.html)
-- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09/157-device-code-phishing-forensics-what-we-learned-from-bec-inv.html)
+- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09/158-device-code-phishing-forensics-what-we-learned-from-bec-inv.html)
 
 ---
 

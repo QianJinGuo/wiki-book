@@ -183,7 +183,7 @@ Content-Security-Policy:
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Interaction Models](../ch03/102-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/086-ai.html)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/144-automate-progressive-rollouts-with-vercel-flags-vercel.html)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/145-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/afine-csp-html-injection-password-exfiltration.md)
 - [discord 全平台端到端加密](../ch12/096-discord.html)

@@ -22,7 +22,7 @@
 - [Agent Harness 架构](../ch05/039-agent-harness.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/076-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/046-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/132-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [Claude Code 设计原则与对照分析](../ch03/076-claude-code.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/076-claude-code.html)

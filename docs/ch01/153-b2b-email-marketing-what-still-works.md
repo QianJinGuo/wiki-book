@@ -36,7 +36,7 @@ B2B Email Marketing 在 2026 年依然是最高价值的营销渠道之一，但
 ## 相关实体
 
 - [Freelance Designers Can't Compete With a $20/Month AI Subscription - Here's What Actually Works Now](../ch05/086-ai.html)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1229-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1230-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 - [AI in Cybersecurity Training Resources | SANS Institute](../ch05/086-ai.html)
 
 ---

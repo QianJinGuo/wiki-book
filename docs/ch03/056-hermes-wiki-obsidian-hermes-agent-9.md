@@ -194,7 +194,7 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 
 3. **SCHEMA.md 是行为约束而非格式规范**：Agent 知识库失败的根本原因是 Agent 的"创意自由"——今天建 summary、明天建 note、后天换命名。SCHEMA.md 的核心价值在于把"如何维护知识库"变成一个**可执行的行为契约**，而不是一个可被忽略的建议。[Hermes Skills + LLM Wiki 越用越懂你](../ch07/017-hermes-skill.html)的三层互相喂养框架在这里有直接呼应——Wiki 层需要 Schema 层来稳定行为预期。
 
-4. **"先只读再写"是初始化对齐而非谨慎措施**：步骤 5 的初始化检查（读 SCHEMA.md / index.md / log.md 并总结结构）的本质是**在 Agent 和 Wiki 之间建立共同认知基底**，确保 Agent 理解目录角色和操作规范。这与 [Karpathy LLM Wiki v2](../ch01/1235-llm.html) 的"LLM Wiki 是关于如何组织知识而非存储知识"的核心理念一脉相承。
+4. **"先只读再写"是初始化对齐而非谨慎措施**：步骤 5 的初始化检查（读 SCHEMA.md / index.md / log.md 并总结结构）的本质是**在 Agent 和 Wiki 之间建立共同认知基底**，确保 Agent 理解目录角色和操作规范。这与 [Karpathy LLM Wiki v2](../ch01/961-llm.html) 的"LLM Wiki 是关于如何组织知识而非存储知识"的核心理念一脉相承。
 
 **实践价值**：对于想构建自生长知识网络的团队，9 步法的最大启示是"**先规则后内容**"——不给 Agent 规则而直接给资料，最终得到的是一堆 AI 生成的新垃圾，命名混乱、链接无意义、不可追溯。
 
@@ -227,8 +227,8 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 
 - **同 LLM Wiki / Obsidian 知识管理**：
   - [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](../ch01/659-llm-wiki-obsidian-wiki-gbrain.html)（架构分析）
-  - [Karpathy LLM Wiki v2](../ch01/1235-llm.html)（原始方法论）
-  - [Karpathy LLM Wiki 第二大脑](../ch01/1235-llm.html)
+  - [Karpathy LLM Wiki v2](../ch01/961-llm.html)（原始方法论）
+  - [Karpathy LLM Wiki 第二大脑](../ch01/961-llm.html)
   - [Obsidian 工具概览](../ch01/886-claude-code-memory-setup-obsidian-graphify.html)
   - [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/886-claude-code-memory-setup-obsidian-graphify.html)
 - **同 Hermes Agent 生态**：
