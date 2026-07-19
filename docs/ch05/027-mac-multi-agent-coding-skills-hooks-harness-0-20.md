@@ -194,7 +194,7 @@
 - [Claude Code Dynamic Workflows](../ch09/089-claude-code-dynamic-workflows.html) —— 动态工作流
 - [Agent Harness 架构](ch05/039-agent-harness.html) —— 7 层模型
 - [Rein](../ch03/046-agent.html) —— 单 agent 架构
-- [Kimi Work](../ch01/534-codex.html) —— 本地 Agent
+- [Kimi Work](../ch01/537-codex.html) —— 本地 Agent
 
 ## 深度分析
 

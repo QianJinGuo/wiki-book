@@ -20,7 +20,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
 
-- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch05/086-ai.html)
+- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch05/088-ai.html)
 ## 二、从"出码率"看"提效"背后的深层困境
 
 **原因1：研发是全链路，不仅仅是写代码**

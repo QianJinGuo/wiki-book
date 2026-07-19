@@ -69,12 +69,12 @@ Karpathy 设想的 AI-native 面试是：给候选人一个大项目（如做个
 Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业观察的锚点：①前沿实验室在编程和数学之外往哪些领域注入 RL 数据——那里的能力可能突然冒出来；②Agent-first 基础设施有没有开始收敛——部署、auth、payments、DNS 等让 Karpathy 在 MenuGen 项目上最头疼的环节，是否出现"一句话给 Agent 就能跑"的标准化方案；③下一代模型有没有把审美和代码质量纳入 RL 目标——如果 Agent 写的代码不再让人"心脏病发作"，人在"品味"层守的口子就会变窄。这三个信号分别指向 Agent 能力边界的扩展速度、基础设施成熟度和人类判断力的相对价值变化。
 
 ## 相关实体
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/612-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/612-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/203-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/612-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/235-agentic.html)
 - [Design Patterns for AI Agents 2026](ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/018-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/046-agent.html)

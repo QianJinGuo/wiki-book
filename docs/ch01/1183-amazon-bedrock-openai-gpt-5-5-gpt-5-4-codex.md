@@ -20,7 +20,7 @@ Amazon Bedrock 正式接入 OpenAI GPT-5.5、GPT-5.4 模型和 Codex，标志跨
 
 ### 关联实体
 
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/717-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/720-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
 - [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](ch01/1292-anthropic.html)
 - [Openai Models And Codex On Amazon Bedrock Are Now Generally ](../ch11/263-openai-models-and-codex-on-amazon-bedrock-are-now-generally.html)

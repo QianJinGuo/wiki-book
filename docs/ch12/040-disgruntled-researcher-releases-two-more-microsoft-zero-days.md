@@ -143,7 +143,7 @@ Published wed 13 May 2026 // 17:16 UTC
 - [Disgruntled Researcher Microsoft Zero Days](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
 - [13 Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](ch12/040-disgruntled-researcher-releases-two-more-microsoft-zero-days.html)
 - [Microsoft Zero Days Researcher Disgruntled](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled.md)
-- [Defense_At_Ai_Speed_Microsofts_New_Multi](../ch05/086-ai.html)
+- [Defense_At_Ai_Speed_Microsofts_New_Multi](../ch05/088-ai.html)
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md)
 
 ---

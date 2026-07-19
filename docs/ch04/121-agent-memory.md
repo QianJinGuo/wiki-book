@@ -145,19 +145,19 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 记住：Memory 系统早期，先做到"像工程系统一样能查账"，再追求"像人一样记忆"。
 
 ## 相关实体
-- [Agent Memory 架构本质](ch04/405-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [memory agent systems cobanov](ch04/566-memory-agent-systems-cobanov.html)
+- [Agent Memory 架构本质](ch04/407-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [memory agent systems cobanov](ch04/570-memory-agent-systems-cobanov.html)
 
 - [AI Agent 记忆系统架构](ch04/156-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/092-hermes-agent.html)
 - [ai agent memory systems](ch04/121-agent-memory.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/339-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/340-agent-principle-architecture-engineering-practice.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](../ch05/039-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/046-agent.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/225-openclaw.html)
-- [AI Coding Agent 记忆系统](ch04/317-ai-coding-agent.html)
+- [AI Coding Agent 记忆系统](ch04/318-ai-coding-agent.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](../ch05/079-thin-harness-fat-skills-ai.html)

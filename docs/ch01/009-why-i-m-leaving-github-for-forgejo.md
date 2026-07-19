@@ -17,9 +17,9 @@
 
 ## 相关实体
 
-- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/127-why-internally-built-ai-fails-fund-accounting-audits.html)
-- [How Superset built the IDE for AI agents on Vercel](ch01/070-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/202-tether-launches-developer-grants-program-for-local-first-ai.html)
+- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/807-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [How Superset built the IDE for AI agents on Vercel](ch01/077-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/203-tether-launches-developer-grants-program-for-local-first-ai.html)
 
 ## 深度分析
 ### 事件时间线：从独立公司到微软 AI 部门

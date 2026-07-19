@@ -79,13 +79,13 @@ MCP（Model Context Protocol）解决了 AI 无法实时获取外部信息和执
 ## 相关实体
 - [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](../ch03/076-claude-code.html)
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch03/046-agent.html)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/568-agentic-ai.html)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/572-agentic-ai.html)
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/076-claude-code.html)
-- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](../ch05/086-ai.html)
+- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](../ch05/088-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/developing-flink-monitoring-system-on-amazon-emr-with-kiro-ai-ide.md)
 
-- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](../ch05/086-ai.html)
+- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](../ch05/088-ai.html)
 
 ---
 

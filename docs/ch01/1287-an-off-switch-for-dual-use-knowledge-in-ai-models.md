@@ -93,7 +93,7 @@ GRAM 的模块化思路对于 **AI Agent 安全** 有重要启示。Agent 系统
 - **Data Filtering (Pre-training)** — 预训练数据过滤（无独立概念页面）
 - **Machine Unlearning** — 机器遗忘技术（无独立概念页面）
 - **Fable Safeguards** — Anthropic 的越狱防护框架（无独立实体页面）
-- [Claude Opus 4.8](ch01/1149-claude.html) — Anthropic 前沿模型（未应用 GRAM）
+- [Claude Opus 4.8](ch01/1036-claude.html) — Anthropic 前沿模型（未应用 GRAM）
 - [Antidoom](https://github.com/QianJinGuo/wiki/blob/main/entities/antidoom.md) — 另一种精确对齐技术（消除循环）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/off-switch-dual-use.md)

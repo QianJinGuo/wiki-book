@@ -273,7 +273,7 @@ Spec 驱动原则强调项目评估、技术方案等前置环节的准确性—
 ### 9.1 Skill 主题相关
 
 - [Skill Hub Organization Asset Winty](ch04/267-skill.html)：**winty Skill Hub 系列**（3 来源合并 / 550 行 / Skill Hub 组织 + 质量门禁 + 生命周期 6 阶段）—— 与本文 **企业级 Skill 实战** 视角深度互补
-- [Agent Skills Comprehensive Survey](ch04/392-agent-skills.html)：Agent Skills 系统性综述（表示 → 获取 → 检索 → 进化）—— 与本文 Skills 体系完整图景
+- [Agent Skills Comprehensive Survey](ch04/394-agent-skills.html)：Agent Skills 系统性综述（表示 → 获取 → 检索 → 进化）—— 与本文 Skills 体系完整图景
 - [Skill System Design Three Way Comparison](ch04/267-skill.html)：OpenClaw / Claude Code / Hermes Skills 系统设计对比
 - [Skill Craft](../ch07/049-skill-craft-claude-skill.html)：Skill Craft — Claude Skill 质量工程框架
 - [Skill Writing Patterns Best Practices](ch04/267-skill.html)：7 个顶级 Skill 提炼的模式与最佳实践
