@@ -44,7 +44,7 @@ Memory Agent 判断是否需要注入记忆驱动的提醒（memory-grounded rem
 
 该论文的工作与 wiki 中已有的大量记忆系统研究形成互补：
 
-- [AGENT MEMORY MODULAR FRAMEWORK](ch04/121-agent-memory.html) 和 [Agent Memory Architecture](ch04/405-perplexity-brain-self-improving-agent-memory-architecture.html) 主要关注记忆存储的层次化结构，而这篇论文聚焦于记忆的 **主动干预时机**；
+- [AGENT MEMORY MODULAR FRAMEWORK](ch04/121-agent-memory.html) 和 [Agent Memory Architecture](ch04/407-perplexity-brain-self-improving-agent-memory-architecture.html) 主要关注记忆存储的层次化结构，而这篇论文聚焦于记忆的 **主动干预时机**；
 - [Hermes Agent Memory System](../ch03/092-hermes-agent.html) 的三层架构侧重持久化存储，论文的贡献在于何时以及如何 **注入记忆**；
 - [Memory Source Provenance](https://github.com/QianJinGuo/wiki/blob/main/concepts/memory-source-provenance.md) 关注记忆的来源可信度，这篇论文关注的是注入的 **时机选择**；
 - [Agent Memory Injection](ch04/121-agent-memory.html) 从注入维度角度探讨了相似主题。
@@ -64,9 +64,9 @@ Memory Agent 判断是否需要注入记忆驱动的提醒（memory-grounded rem
 
 ## 相关实体
 
-- [Agentic RL Frameworks Long-Horizon Wolfe 2026](ch04/542-agentic-rl.html)
+- [Agentic RL Frameworks Long-Horizon Wolfe 2026](ch04/547-agentic-rl.html)
 - [RoadmapBench Long-Horizon Benchmark](ch04/250-roadmapbench-long-horizon-agentic-software-development.html)
-- [Memory Agent Systems Cobanov](ch04/566-memory-agent-systems-cobanov.html)
+- [Memory Agent Systems Cobanov](ch04/570-memory-agent-systems-cobanov.html)
 - [Agent Memory Storage Six Schools](ch04/121-agent-memory.html)
 - [Self-Evolution GUI Agents Memory](../ch03/046-agent.html)
 - [State of Memory in Agent Harness Mem0 2026](../ch05/039-agent-harness.html)

@@ -83,7 +83,7 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 
 ### 评估驱动的复利增长
 
-文章对 Evals 的强调体现了 AI 原生系统与传统软件工程的根本区别：传统系统通过代码测试保证质量，AI 原生系统通过评估保证技能的持续改进。接受率作为核心指标，本质上是一个信号——它告诉你技能是否已经「理解」了任务的边界。这与 [Karpathy 关于 Agentic Engineering](ch04/612-agentic.html) 的观点相呼应：评估系统是 AI 原生公司的质量基础设施。
+文章对 Evals 的强调体现了 AI 原生系统与传统软件工程的根本区别：传统系统通过代码测试保证质量，AI 原生系统通过评估保证技能的持续改进。接受率作为核心指标，本质上是一个信号——它告诉你技能是否已经「理解」了任务的边界。这与 [Karpathy 关于 Agentic Engineering](ch04/235-agentic.html) 的观点相呼应：评估系统是 AI 原生公司的质量基础设施。
 
 ### 评论者的补充
 
@@ -103,7 +103,7 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 ## 相关实体
 
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/612-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/052-harness-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)

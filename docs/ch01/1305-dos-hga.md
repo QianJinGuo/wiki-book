@@ -28,7 +28,7 @@ HGA 的核心思路是**层次化遗传算法**：
 
 ## 相关实体
 
-- [LLM推理安全分级](ch01/662-llm-thonking.html)
+- [LLM推理安全分级](ch01/666-llm-thonking.html)
 - [提示注入角色分类](https://github.com/QianJinGuo/wiki/blob/main/entities/mechanistic-explanation-prompt-injection-roles.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hga-reasoning-model-dos-zheda-alibaba-2026.md)

@@ -16,7 +16,7 @@ Linux说过一句很经典的话：Talk is cheap, show me the code.
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/018-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/018-harness.html)
 - [Harness Engineering 第三代工程范式](../ch05/052-harness-engineering.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/084-harness-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/085-harness-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spring-ai-aiagentdemo.md)
 

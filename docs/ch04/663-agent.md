@@ -26,7 +26,7 @@
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
 - [AI 友好架构设计](../ch05/023-ai-friendly.html)
 - [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/612-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
 
 ---
 

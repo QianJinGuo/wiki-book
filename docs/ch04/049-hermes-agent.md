@@ -86,8 +86,8 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 当某个操作模式在系统中出现频率高、步骤标准化、错误后果严重时，应当考虑将其专用工具化（而不是用通用工具的组合来替代）。判断标准：调用频率（每天多次 vs. 每月一次）、操作步骤是否标准化（高度标准化可以封装为单一工具，灵活多变的操作更适合通用工具）、错误成本（patch操作错误可能导致skill失效，需要专用工具提供更清晰的参数校验）。skill_manage是一个很好的参考案例——它的6种能力（create/patch/edit/delete/write_file/remove_file）如果拆成6个独立工具会增加工具数量，用统一的action参数调度则保持了工具定义的简洁性。
 
 ## 相关实体
-- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/086-ai.html)
-- [AI Coding Agent 记忆系统](ch04/317-ai-coding-agent.html)
+- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/088-ai.html)
+- [AI Coding Agent 记忆系统](ch04/318-ai-coding-agent.html)
 - [AI Agent 记忆系统架构](ch04/156-how-ai-agent-memory-works.html)
 - [Self-Evolving Agents 系统性综述](ch04/218-self-evolving-agents.html)
 - [Hermes Agent 记忆系统深度拆解](../ch03/092-hermes-agent.html)
@@ -95,11 +95,11 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 - [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
 - [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
-- [SkillClaw](ch04/447-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](ch04/448-skillclaw-nacos-agent-skill-registry.html)
 - [Agent 自我改进的六条路](../ch03/046-agent.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
-- [GBrain](../ch01/298-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/966-20.html)
+- [GBrain](../ch01/296-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/968-20.html)
 - [OpenHuman: AI Agent 持久记忆框架](ch04/121-agent-memory.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)

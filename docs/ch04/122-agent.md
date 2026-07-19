@@ -109,10 +109,10 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 - **行动层**依赖记忆来调用技能（"我有一个SKILL可以处理这个"）
 
 ## 相关实体
-- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](../ch05/086-ai.html)
+- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](../ch05/088-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/acker-agent-evolution-three-routes-convergence.md)
 
-- [fanling company as agent ai org reflection v2](../ch01/993-agent-ai.html)
+- [fanling company as agent ai org reflection v2](../ch01/995-agent-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析

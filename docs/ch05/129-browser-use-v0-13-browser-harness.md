@@ -57,7 +57,7 @@ ChatBrowserUse (bu-ultra) 78.0% > OSS+BU Hybrid 63.3% > Claude Opus 4.6 62.0% > 
 
 - 补充 [Browser Harness](ch05/129-browser-use-v0-13-browser-harness.html)：该实体覆盖 Browser Harness 早期版本概念（来自 GitHub 仓库），本文聚焦 v0.13.2 最新架构变化和设计哲学。
 - 关联 [Browser Use Runtime Harness](ch05/018-harness.html)：互补视角。
-- 关联 [Browser Internals Chromium Blink V8 Architecture Guide Jiagoux 2026](../ch01/966-20.html)：CDP 协议底层背景。
+- 关联 [Browser Internals Chromium Blink V8 Architecture Guide Jiagoux 2026](../ch01/968-20.html)：CDP 协议底层背景。
 
 ---
 

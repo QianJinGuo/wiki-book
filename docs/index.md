@@ -204,8 +204,8 @@
 ### [Ch14 数据工程](ch14-data.md) — 37 篇
 > AI 的燃料：实时入湖、流处理、数据质量
 
-  - ⭐ DDoSing Software Delivery Pipelines
   - ⭐ 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
+  - ⭐ DDoSing Software Delivery Pipelines
   - ⭐ ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
   - ⭐ 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
   - ⭐⭐ Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
@@ -310,4 +310,4 @@
 
 **📊 全书收录：3339 篇实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-07-19 | 来源: ~/wiki/entities/
+生成时间: 2026-07-20 | 来源: ~/wiki/entities/

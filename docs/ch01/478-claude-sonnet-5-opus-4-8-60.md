@@ -55,7 +55,7 @@ Sonnet 5 的标准价格是 Opus 4.8 的 60%。2026 年 8 月 31 日前促销价
 
 Sonnet 5 的发布标志着 **Agentic 能力从旗舰模型（Opus）向主力模型（Sonnet）的下沉**。此前，可靠的 Agent 任务执行需要 Opus 级别的模型才能保证稳定性，这带来了高昂的成本门槛。Sonnet 5 以 60% 的价格提供接近 Opus 4.8 的 Agent 能力，使得 Agent 工作流在成本敏感的团队中成为默认选项。
 
-这与 [开源 AI 的成本优势讨论](ch01/026-banning-open-source-ai-would-be-a-mistake-interconnects.html) 中提到的模型推理成本下降对 AI 普及的推动作用一致——但 Sonnet 5 走的是"闭源高端模型降价"路径，而非开源模型替代。
+这与 [开源 AI 的成本优势讨论](ch01/028-banning-open-source-ai-would-be-a-mistake-interconnects.html) 中提到的模型推理成本下降对 AI 普及的推动作用一致——但 Sonnet 5 走的是"闭源高端模型降价"路径，而非开源模型替代。
 
 ### Tokenizer 变更的成本陷阱
 
@@ -85,10 +85,10 @@ Sonnet 5 被直接推为 Anthropic 的主力默认模型：Claude Free 和 Claud
 
 ## 相关实体
 
-- [Anthropic Claude Code 木马遥测安全事件](ch01/331-anthropic-claude-code.html) — Sonnet 5 的安全改进与 Anthropic 整体的安全策略演进
+- [Anthropic Claude Code 木马遥测安全事件](ch01/329-anthropic-claude-code.html) — Sonnet 5 的安全改进与 Anthropic 整体的安全策略演进
 - [Claude Code 学术文献综述](../ch03/076-claude-code.html) — Sonnet 5 在编码场景中的实际应用案例
 - [Agent 评测方法论与体系设计](../ch03/046-agent.html) — SWE-bench、HLE、OSWorld 等评测基准的设计原理
-- [禁止开源 AI 将是错误](ch01/026-banning-open-source-ai-would-be-a-mistake-interconnects.html) — 模型定价与开源/闭源生态的讨论
+- [禁止开源 AI 将是错误](ch01/028-banning-open-source-ai-would-be-a-mistake-interconnects.html) — 模型定价与开源/闭源生态的讨论
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-sonnet-5-发布性能接近-opus-48价格只有60.md)
 → [补充报道存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-sonnet-5-liangziwei-2026.md)

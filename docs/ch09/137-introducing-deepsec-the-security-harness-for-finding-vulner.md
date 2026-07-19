@@ -23,11 +23,11 @@ deepsec 的架构代表了一种新型 AI-native 安全扫描范式：不是用 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [The best argument I've heard for why AI won't take your job](../ch05/086-ai.html)
+- [The best argument I've heard for why AI won't take your job](../ch05/088-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)
 
-- [How Superset built the IDE for AI agents on Vercel](../ch01/070-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [How Superset built the IDE for AI agents on Vercel](../ch01/077-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 
 ---
 

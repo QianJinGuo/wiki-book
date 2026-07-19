@@ -272,7 +272,7 @@ allowed-tools 的配置应该遵循「功能最小化」而非「先用后收紧
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1292-anthropic.html)
 - [Anthropic 12 Mcp Production Patterns](../ch01/1292-anthropic.html)
 - [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](ch04/515-claude-managed-agents.html)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/392-agent-skills.html)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/394-agent-skills.html)
 - [Anthropic Agent Skills Design Patterns 14](ch04/251-anthropic-agent.html)
 
 ---

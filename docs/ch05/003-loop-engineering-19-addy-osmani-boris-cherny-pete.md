@@ -148,7 +148,7 @@ InfoQ 对同一 Loop Engineering 事件的深度报道，侧重**工程实现细
 - **6 构建模块**（第3 来源独有）补全第1 来源"五模块"中 Worktree 的缺位：Worktree 是隔离并行执行的关键，对应"执行"阶段——在 Fleet循环中尤其关键（多个子 Agent 同时编辑时）
 - **Token经济学系统量化**（第3 来源独有）把第2 来源"Opus vs Haiku"和"480次/8h"的具体数字串联为完整成本结构：单 Agent → Fleet →定时循环的三级成本递增，为循环经济门槛提供了**预算决策框架**
 - **AI 工程4阶段演进谱系**（第3 来源独有）补全了 [Harness Engineering框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的"3阶段演进"——Loop Engineering 是 Harness 之上的第4 层抽象，与 [AHE](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md) 共同构成 Harness 的两个延伸方向（AHE = 自动进化 Harness；Loop = 设计自驱 Harness）
-- **低成本模型战略意义**（第3 来源独有）解释了2026 年开源模型崛起的部分原因：**不是模型能力突破，而是循环经济的可负担性**——为 [harness缩小开源闭源 bug-finding gap](../ch01/309-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html) 提供了经济学视角
+- **低成本模型战略意义**（第3 来源独有）解释了2026 年开源模型崛起的部分原因：**不是模型能力突破，而是循环经济的可负担性**——为 [harness缩小开源闭源 bug-finding gap](../ch01/307-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html) 提供了经济学视角
 
 ###实践启示
 
@@ -304,7 +304,7 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 - **跨域应用案例**(第 5 来源独家): 与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 在 SaaS / DevOps / 客服 / 编程 的多领域应用模式相同,Loop Engineering 也已扩展到**内容选题**。这是 Loop 工具链成熟的标志——"凌晨 4 点 bot → 8 点选题会 agenda"是 24h Agent 工作流在内容产业的真实落地
 - **范式迁移叙事 4 阶段时间线**(第 5 来源独家): 与前 4 来源的"Loop > Harness > Prompt"层级关系**互为表里**——前 4 来源给"层级",第 5 来源给"时间线",合起来是"Loop 演化的完整画像"
 - **生命周期短预言**(第 5 来源独家): 与 [Anthropic 缓存 Token 经济](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic_cache_tokenomics.md) 等 raw 中对"AI 圈造词速度"的批评态度**一致**——"每过几个月就有个新词,每个新词都宣称自己要杀死上一个"——但**保持冷静的"造词速度观察期"**是工程师理性态度
-- **商业动机批判**(第 5 来源独家): 与 [纳德拉「Token 资本」论](../ch12/003-token.html) 的"前沿模型 ≠ 价值"警告**同源**——都反对"造词 = 价值"的偷换;与 [Fable 5 Runtime Contract](../ch01/173-claude-fable-5.html) 的"系统能不能跑完任务"判断**同源**——都强调工程责任换形态
+- **商业动机批判**(第 5 来源独家): 与 [纳德拉「Token 资本」论](../ch12/003-token.html) 的"前沿模型 ≠ 价值"警告**同源**——都反对"造词 = 价值"的偷换;与 [Fable 5 Runtime Contract](../ch01/176-claude-fable-5.html) 的"系统能不能跑完任务"判断**同源**——都强调工程责任换形态
 
 ### 实践启示
 

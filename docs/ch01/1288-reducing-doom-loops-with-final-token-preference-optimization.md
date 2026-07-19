@@ -84,7 +84,7 @@ Antidoom 的"多轮应用"模式也值得关注——第一轮修复暴露了新
 
 ## 相关实体
 
-- [LFM — Liquid Foundation Model](../ch05/086-ai.html) — Liquid AI 的基础模型系列
+- [LFM — Liquid Foundation Model](../ch05/088-ai.html) — Liquid AI 的基础模型系列
 - **Qwen 3.5 4B** — 经 Antidoom 测试的开源小模型（无独立实体页面）
 - [GRAM — Off Switch for Dual Use Knowledge](https://github.com/QianJinGuo/wiki/blob/main/entities/off-switch-dual-use.md) — 同类精确对齐技术
 - [Direct Preference Optimization (DPO)](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md) — FTPO 的基座算法

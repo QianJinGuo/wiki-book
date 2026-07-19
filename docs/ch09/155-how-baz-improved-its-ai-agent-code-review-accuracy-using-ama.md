@@ -7,9 +7,9 @@
 # How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore
 
 ## 相关实体
-- [linear code intelligence: controlled codebase access for lin](../ch01/966-20.html)
+- [linear code intelligence: controlled codebase access for lin](../ch01/968-20.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md)
-- [aws bedrock agentcore equipment repair assistant — 农业机械 ai 诊](../ch11/248-aws-bedrock-agentcore-equipment-repair-assistant-ai.html)
+- [aws bedrock agentcore equipment repair assistant — 农业机械 ai 诊](../ch11/249-aws-bedrock-agentcore-equipment-repair-assistant-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析

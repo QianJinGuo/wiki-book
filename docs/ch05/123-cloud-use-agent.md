@@ -61,7 +61,7 @@ Cloud Use 定义了 Agent 用云的成熟度路径：
 
 - 与 **Harness Engineering** 的"人在环中"安全原则一致——Agent 能力范围随信任积累逐步扩展
 - Cloud Use 的 **四层模型 (Identity→Credential→Tool→Runtime)** 是 Agent 云工作负载的完整治理栈，补充了 [Qoder Cloud Agents 用云新范式](../ch03/070-skills.html) 中 Skills 层的底层基础设施视角
-- Cloud Use 的 **Credential Use 层**（Vault 注入、短期令牌、服务端代理）可视为 Agent 版本的 [阿里云 Agentic Cloud 战略](../ch04/333-agentic-cloud.html) 中任务级身份鉴权的具体实现
+- Cloud Use 的 **Credential Use 层**（Vault 注入、短期令牌、服务端代理）可视为 Agent 版本的 [阿里云 Agentic Cloud 战略](../ch04/334-agentic-cloud.html) 中任务级身份鉴权的具体实现
 
 ## 关键洞察
 

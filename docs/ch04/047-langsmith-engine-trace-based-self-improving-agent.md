@@ -321,7 +321,7 @@ final_answer_mismatch
 - [Claude Code 深度解析](../ch05/068-claude-code-harness.html) — Claude Code 的评估观测层工程实践
 - [深入理解 Claude Code Harness](../ch05/039-agent-harness.html) — Plan Mode + Tasks 系统的"避免问题复发"机制
 - [OpenClaw 完整指南](../ch11/225-openclaw.html) — 开源 Agent 的故障处理与自我恢复机制
-- [Agent 记忆系统实践](../ch03/046-agent.html) — Agent Overview 是 Memory 模块的诊断侧应用- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](../ch05/086-ai.html)
+- [Agent 记忆系统实践](../ch03/046-agent.html) — Agent Overview 是 Memory 模块的诊断侧应用- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](../ch05/088-ai.html)
 
 ---
 

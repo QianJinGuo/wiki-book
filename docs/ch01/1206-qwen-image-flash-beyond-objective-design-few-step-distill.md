@@ -68,12 +68,12 @@ The central message — "recipe matters as much as objective" — generalizes be
 The Qwen-Image-Flash paper is best read as a case study of a **recipe-first** approach to distillation, applicable wherever a multi-step teacher is being compressed into a few-step student.
 
 ## 相关实体
-- [Aws Sun Finance Ai Id Extraction Fraud Detection](../ch05/086-ai.html)
+- [Aws Sun Finance Ai Id Extraction Fraud Detection](../ch05/088-ai.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Bonsai Image 4B 1 Bit Ternary](../ch05/086-ai.html)
-- [Liteframeefficientvisionencodersunlockframescalinginvideollms](ch01/567-scaling.html)
-- [Agentexecutorgooglesdistributedagentruntime](../ch04/463-agentrun.html)
-- [count anything - 文本引导的通用目标计数框架](ch01/966-20.html)
+- [Bonsai Image 4B 1 Bit Ternary](../ch05/088-ai.html)
+- [Liteframeefficientvisionencodersunlockframescalinginvideollms](ch01/571-scaling.html)
+- [Agentexecutorgooglesdistributedagentruntime](../ch04/003-agentrun.html)
+- [count anything - 文本引导的通用目标计数框架](ch01/968-20.html)
 
 ## 关键引用
 

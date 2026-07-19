@@ -8,9 +8,9 @@
 ## 相关实体
 - [Icon Pack Websites Designers Should Bookmark](ch03/126-icon-pack-websites-designers-should-bookmark.html)
 - [Blog.Tubikstudio.Com Form Over Function Mistakes](https://github.com/QianJinGuo/wiki/blob/main/entities/blog.tubikstudio.com-form-over-function-mistakes.md)
-- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/966-20.html)
-- [Codex Role Plugins Sites Annotations](../ch01/534-codex.html)
-- [The Future Of Bmw Design A Conversation With Max Missoni](../ch01/018-the-future-of-bmw.html)
+- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/968-20.html)
+- [Codex Role Plugins Sites Annotations](../ch01/537-codex.html)
+- [The Future Of Bmw Design A Conversation With Max Missoni](../ch01/020-the-future-of-bmw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/designing-small-is-harder-than-designing-big-ux-magazine.md)
 

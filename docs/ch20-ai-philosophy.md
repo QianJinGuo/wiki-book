@@ -2147,7 +2147,7 @@ SAE 解决了"激活值太密集，需要稀疏分解"的问题，Attribution Gr
 
 ## Ch20.017 王阳明心学，被Anthropic用来教Claude做人了
 
-> 📊 Level ⭐⭐⭐⭐ | 4.0KB | `entities/王阳明心学被anthropic用来教claude做人了.md`
+> 📊 Level ⭐⭐⭐⭐ | 4.7KB | `entities/王阳明心学被anthropic用来教claude做人了.md`
 
 # 王阳明心学，被Anthropic用来教Claude做人了
 

@@ -74,11 +74,11 @@ Agent Runtime 暴露给外部世界的契约回答的是：
 ## 与其他实体的关系
 
 - [Agent Runtime 7 大职责](../ch03/046-agent.html) — 从 Runtime 职责视角（状态持久化、工具编排、可观测性等）出发，与本文的 Protocol 视角互补
-- [From Agent Protocol to Harness Skill](ch04/404-from-agent-protocol-to-harness-skill.html) — 从 MCP/A2A 协议到 Harness Skill 的演进路径，与本文的 Runtime Protocol 抽象视角不同
+- [From Agent Protocol to Harness Skill](ch04/406-from-agent-protocol-to-harness-skill.html) — 从 MCP/A2A 协议到 Harness Skill 的演进路径，与本文的 Runtime Protocol 抽象视角不同
 - [Google Agent Executor](../ch03/046-agent.html) — 分布式 Runtime 实现案例
 - [Agent Harness 架构](../ch05/039-agent-harness.html) — Harness 作为 Runtime 的上层封装
 - [Agent 架构关键变化：Harness 成为新后端](../ch05/018-harness.html) — Harness 作为 Runtime 演进方向
-- [MCP · Skill · Agent · LLM · Harness](../ch05/084-harness-skill.html) — 高层架构关系图
+- [MCP · Skill · Agent · LLM · Harness](../ch05/085-harness-skill.html) — 高层架构关系图
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-protocol-unchanged-across-frameworks-aliyun-2026-07-02.md)
 

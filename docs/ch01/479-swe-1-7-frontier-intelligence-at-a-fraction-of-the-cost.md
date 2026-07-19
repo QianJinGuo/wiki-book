@@ -90,7 +90,7 @@ SWE-1.7 在长周期任务上的能力来自 **自压缩训练**。当 Agent 接
 - [RLHF](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md) — RL 训练的基础框架
 - **Entropy Collapse** — RL 训练中的熵坍塌现象（无独立概念页面）
 - [Speculative Decoding](https://github.com/QianJinGuo/wiki/blob/main/concepts/speculative-decoding.md) — 推理加速技术
-- [DeepSeek R1](ch01/425-deepseek.html) — 同等思路的推理 RL 训练
+- [DeepSeek R1](ch01/1026-deepseek.html) — 同等思路的推理 RL 训练
 - **Kevin-32B** — Cognition 前代模型，首次探索自压缩（无独立实体页面）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/swe-1-7.md)

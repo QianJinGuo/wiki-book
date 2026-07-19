@@ -8,7 +8,7 @@
 - **价值**：8/10 — 三框架 Gateway 设计哲学横向对比，视角独特，技术细节准确（端口号/bindings 配置/适配器数量）
 - **置信度**：8/10 — 公众号原创，源码级细节，与公开文档一致
 - **乘积**：64 — strong ★★★★
-- **策略对齐**：与 [DeerFlow vs Hermes vs OpenClaw](../ch04/469-deerflow-hermes-openclaw.html) 互补（整体选型 vs Gateway 专深）
+- **策略对齐**：与 [DeerFlow vs Hermes vs OpenClaw](../ch04/470-deerflow-hermes-openclaw.html) 互补（整体选型 vs Gateway 专深）
 
 ## 与现有 wiki 的关系
 - **互补**：现有  侧重整体选型（三步选型法+效率五维表格），本文聚焦 **Gateway 单一架构层次的三框架深对比**
@@ -78,7 +78,7 @@
 - [Claude Code Integration Other Tools](../ch03/076-claude-code.html)
 - [Local Vs Cloud Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/local-vs-cloud-agent-deployment-strategy.md)
 - [Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
-- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](ch01/1149-claude.html)
+- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](ch01/1036-claude.html)
 
 ---
 

@@ -88,7 +88,7 @@ Anthropic 举的例子很生动："两个人拿同一份商业计划书找 Claud
 ## 相关实体
 
 - [Agent Harness Dingtalk Recruitment](../ch05/039-agent-harness.html) — 企业级 Agent 部署中的模型选择策略，需考虑模型性格与任务匹配
-- [Anthropic Claude Code Trojan Telemetry Security 2026](ch01/331-anthropic-claude-code.html) — Anthropic 在安全层面的其他研究，构成完整的模型治理图景
+- [Anthropic Claude Code Trojan Telemetry Security 2026](ch01/329-anthropic-claude-code.html) — Anthropic 在安全层面的其他研究，构成完整的模型治理图景
 - [Anthropic 8X Output Verification Bottleneck Fiona Fung](../ch09/167-anthropic-8x.html) — Anthropic 在 AI 工程实践中的另一维度探索
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化框架，将模型选择与性格匹配纳入 agent 系统设计
 

@@ -33,9 +33,9 @@ Harrison Chase 披露 Nemotron-3-Ultra 在 DeepAgents 中加入 LangChain 优化
 
 ## 关联条目
 
-- [NVIDIA Nemotron-3-Ultra](../ch04/612-agentic.html) — 对话中提到的模型，开源权重达到前沿性能
-- [NVIDIA 安全本地 Agent：Nemoclaw/OpenClaw](../ch04/391-nvidia-secure-local-agent-nemoclaw-openclaw.html) — NVIDIA 的本地 Agent 运行环境（NIM）
-- [NVIDIA Agentic Systems Extreme Co-Design](../ch04/612-agentic.html) — NVIDIA Agent 系统的另一次深度技术阐述
+- [NVIDIA Nemotron-3-Ultra](../ch04/235-agentic.html) — 对话中提到的模型，开源权重达到前沿性能
+- [NVIDIA 安全本地 Agent：Nemoclaw/OpenClaw](../ch04/393-nvidia-secure-local-agent-nemoclaw-openclaw.html) — NVIDIA 的本地 Agent 运行环境（NIM）
+- [NVIDIA Agentic Systems Extreme Co-Design](../ch04/235-agentic.html) — NVIDIA Agent 系统的另一次深度技术阐述
 - [DeepAgents — AWS Bedrock AgentCore 子智能体编排](../ch04/491-agent-orchestration.html) — 对话中提及的 DeepAgents 框架的实践
 
 ## 退出

@@ -148,7 +148,7 @@
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
 | [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/047-coding-agent.html) | **第 1 环底层** | LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力（401 行深度文档） |
-| [Loongsuite Genai Semconv Alibaba](ch04/441-loongsuite-genai.html) | **第 1 环语义规范** | OTel GenAI semconv + STEP/MCP span 扩展的统一数据语言 |
+| [Loongsuite Genai Semconv Alibaba](ch04/442-loongsuite-genai.html) | **第 1 环语义规范** | OTel GenAI semconv + STEP/MCP span 扩展的统一数据语言 |
 | [Aliyun Cms2 Cli Skill Natural Language Observability](ch04/267-skill.html) | **接入层** | CMS2 Skill 化（CLI 6 步 + K8s 自动注入 + 5 大场景） |
 | [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](../ch05/052-harness-engineering.html) | **同源早期表述** | 2026-04-29 阿里云"一晚上自动评测和优化你的系统"平台（评测→优化三轮 90.7→97.4→99.1），可能是 AgentLoop 早期形态或同系列产品 |
 | [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/046-agent.html) | **理论框架** | 阿里"四阶段六维度"Agent 进化理论框架 |

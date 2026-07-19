@@ -49,7 +49,7 @@ MoE，总参 295B，激活 21B，256K 上下文。快慢思考融合模型。
 
 ## 与已有 wiki 实体关系
 
-- 补充 [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/114-hy3-preview.html)：该实体覆盖 4 月 Hy3 preview 发布，本文覆盖 7 月 Hy3 正式版及多产品落地数据。
+- 补充 [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/117-hy3-preview.html)：该实体覆盖 4 月 Hy3 preview 发布，本文覆盖 7 月 Hy3 正式版及多产品落地数据。
 
 ---
 

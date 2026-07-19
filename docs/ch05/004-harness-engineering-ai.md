@@ -139,7 +139,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 ## 相关实体
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/052-harness-engineering.html)
 - [Harness Engineering 四根支柱与四要素架构](ch05/052-harness-engineering.html)
-- [Harness Engineering 指南（字节跳动TRAE）](../ch01/685-trae-harness-engineering.html)
+- [Harness Engineering 指南（字节跳动TRAE）](../ch01/689-trae-harness-engineering.html)
 - [清华大学 Harness Engineering 研究报告](ch05/052-harness-engineering.html)
 - [Hermes Agent 深度解析（阿里云/飞樰）](../ch03/092-hermes-agent.html)
 - [harness-engineering-systematic-explainer](ch05/052-harness-engineering.html)
@@ -149,7 +149,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 - [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md)
 - [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-build-to-delete.md)
 - [Harness Engineering Theory To Practice Helen](ch05/052-harness-engineering.html)
-- [Evaluating Netflix Show Synopses With Llm As A Judge](../ch01/325-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)
+- [Evaluating Netflix Show Synopses With Llm As A Judge](../ch01/323-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)

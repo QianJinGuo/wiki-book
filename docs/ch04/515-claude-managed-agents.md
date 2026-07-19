@@ -11,10 +11,10 @@ Anthropic's official Claude managed agents: persistent sessions, tool use, memor
 **Source**: [raw article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-managed-agents-official.md) | **Review**: value=8 confidence=9
 
 ## 相关实体
-- [Claude Managed Agents 官方 Harness 平台指南](../ch01/259-anthropic-claude-managed-agents.html)
-- [claude managed agents official](ch04/565-claude-managed-agents-official.html)
+- [Claude Managed Agents 官方 Harness 平台指南](../ch01/257-anthropic-claude-managed-agents.html)
+- [claude managed agents official](ch04/569-claude-managed-agents-official.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/515-claude-managed-agents.html)
-- [Anthropic Claude Managed Agents 平台正式发布](../ch01/259-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents 平台正式发布](../ch01/257-anthropic-claude-managed-agents.html)
 - [Claude Managed Agents 开发者指南](ch04/515-claude-managed-agents.html)
 - [Multica — 开源 Managed Agents 平台](../ch07/063-multica-managed-agents.html)
 

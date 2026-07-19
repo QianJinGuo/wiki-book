@@ -10,7 +10,7 @@ Published Time: 2026-05-19T14:00:52+00:00
 **[[America](https://www.a16z.news/t/america) | [Tech](https://www.a16z.news/t/technology) | [Opinion](https://www.a16z.news/t/opinion) | [Culture](https://www.a16z.news/t/culture) | [Charts](https://www.a16z.news/t/charts)]**
 
 ## 相关实体
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/197-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/198-cost-effective-deployment-of-vision-language-models-for-pet.html)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
 - [Aws Bedrock Intelligence Message Defense](ch11/009-aws-bedrock.html)
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/1292-anthropic.html)

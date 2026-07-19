@@ -42,7 +42,7 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/612-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)

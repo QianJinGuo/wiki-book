@@ -53,7 +53,7 @@ git clone https://github.com/Peakstone-Labs/claude-ship.git && cd claude-ship &&
 ## 相关实体
 
 - [从 SDD 到 Lattice Harness](../ch05/100-ai-coding.html) — 另一团队级 AI Coding 闭环实践
-- [《Loop Engineering橙皮书》](ch01/966-20.html) — Loop Engineering 概念框架
+- [《Loop Engineering橙皮书》](ch01/968-20.html) — Loop Engineering 概念框架
 - [Agent Loop 工程手册 8 个未解问题](../ch05/007-loop-engineering.html) — 腾讯云陈进 Loop Engineering 解读
 
 ---

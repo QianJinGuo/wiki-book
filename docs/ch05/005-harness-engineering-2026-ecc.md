@@ -344,7 +344,7 @@ iterative-retrieval
 ## 相关实体
 
 - [loop engineering: 把反馈循环放进工程现场](ch05/007-loop-engineering.html)
-- [Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环](ch05/084-harness-skill.html)
+- [Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环](ch05/085-harness-skill.html)
 → [第 1 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-2026-rahul-rauhul.md) · [第 2 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-everything-2026-ai-tech-article.md) · [第 3 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ecc-harness-os-everything-claude-code-vibecoder-2026-06-16.md) · [第 4 篇原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-wukong-ai-recruitment-dingtalk.md)​
 
 ## 第 4 来源：钉钉悟空 AI 招聘 Agent 实战（v×c=64）

@@ -77,8 +77,8 @@ AgentLoop 的"Agent + Harness → 观测 → 评估 → 优化"链路，与 [Har
 - [Agent Harness 生产化](../ch05/039-agent-harness.html)
 - [Harness Engineering 2026 全景](../ch05/052-harness-engineering.html)
 - [Agent 评测方法论与体系设计](../ch03/046-agent.html)
-- [阿里云 AI 实践](../ch05/086-ai.html)
-- [Agent Teams 群聊模式](../ch01/1149-claude.html)
+- [阿里云 AI 实践](../ch05/088-ai.html)
+- [Agent Teams 群聊模式](../ch01/1036-claude.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent 可观测性](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-observability.md)
 

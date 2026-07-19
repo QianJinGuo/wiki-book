@@ -53,11 +53,11 @@ HiClaw v1.1.0 是该项目从"单容器玩具"向"企业级 Cloud Native 产品"
 4. **Credential Provider Sidecar 是多租户安全的关键**：在共享集群环境中，per-worker `accessEntries` 限定对象存储路径 + `hiclaw-credential-provider` Sidecar 负责签发限时 STS Token，这套组合是防止租户间数据串访的技术保障。部署多租户实例时，必须正确配置 Sidecar 而非将存储凭据直接放入 Worker 环境变量。
 5. **升级前备份 workers-registry.json**：虽然 v1.1.0 提供了从 `workers-registry.json` 到 CRD 的自动迁移，但建议在执行升级前对原文件进行备份，以防迁移过程中出现意外中断导致数据丢失。
 ## 相关实体
-- [Hiclaw V110 K8S Hermes Worker](../ch01/214-0.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/365-hermes-agent-goal.html)
-- [Hermes 9 Module Architecture Winty](../ch01/729-9.html)
-- [Ai 驱动的大数据工程 从平台驱动到 Aidlc 的范式迁移](../ch05/086-ai.html)
-- [Pi Agent Framework](../ch04/343-pi-agent.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/217-0.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/367-hermes-agent-goal.html)
+- [Hermes 9 Module Architecture Winty](../ch01/732-9.html)
+- [Ai 驱动的大数据工程 从平台驱动到 Aidlc 的范式迁移](../ch05/088-ai.html)
+- [Pi Agent Framework](../ch04/344-pi-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md)
 

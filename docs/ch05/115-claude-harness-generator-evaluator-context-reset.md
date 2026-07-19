@@ -168,7 +168,7 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 
 ## 相关实体
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/515-claude-managed-agents.html)
-- [Ai Agent Harness Construction Akshay Baoyu](../ch01/1075-ai-agent-harness.html)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch01/1076-ai-agent-harness.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/681-agent-harnesses-are-dead-long-live-agent-harnesses.html)
 - [Harness 之后 状态边界与失败闭环 若飞](ch05/018-harness.html)

@@ -10,11 +10,11 @@
 - value=8, confidence=7, product=56
 - Thorough Fedora Hummingbird technical overview
 ## 相关实体
-- [Fedora Hummingbird Brings The Container Security Model To Li](../ch05/086-ai.html)
+- [Fedora Hummingbird Brings The Container Security Model To Li](../ch05/088-ai.html)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md)
 - [The It And Security Field Guide To Ai Adoption Tines](ch12/081-the-it-and-security-field-guide-to-ai-adoption-tines.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Drinking Llms](../ch01/961-llm.html)
+- [Drinking Llms](../ch01/963-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fedora-hummingbird-container-security.md)
 

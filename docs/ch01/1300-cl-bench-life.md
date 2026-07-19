@@ -13,7 +13,7 @@
 
 ## 相关实体
 - [Harness Engineering Framework](../ch05/052-harness-engineering.html)
-- [Microsoft Agent Framework Python Full Guide Zizhi](../ch04/580-python.html)
+- [Microsoft Agent Framework Python Full Guide Zizhi](../ch04/582-python.html)
 - [Hermes Agent Deep Dive Alibaba](../ch03/092-hermes-agent.html)
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](../ch11/121-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [Agent Harness 12 Components 7 Decisions](../ch05/039-agent-harness.html)

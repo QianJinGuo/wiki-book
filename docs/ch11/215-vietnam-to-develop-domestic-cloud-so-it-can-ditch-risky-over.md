@@ -14,7 +14,7 @@
 
 ## 相关实体
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](ch11/215-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
-- [Vietnam to develop domestic cloud](ch11/183-vietnam-to-develop-domestic-cloud.html)
+- [Vietnam to develop domestic cloud](ch11/186-vietnam-to-develop-domestic-cloud.html)
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
 
 ## 深度分析

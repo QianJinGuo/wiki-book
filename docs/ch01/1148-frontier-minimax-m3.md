@@ -44,7 +44,7 @@ Coding、长上下文、多模态不是三个并列卖点，而是**一个系统
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/612-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/046-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1130-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
