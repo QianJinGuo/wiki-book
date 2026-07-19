@@ -67,7 +67,7 @@ Stack Overflow 在 2026-06-10 推出 **Stack Overflow for Agents** —— 面向
 
 - [Claude Code 源码架构](../ch03/076-claude-code.html)：Claude Code 通过 CLAUDE.md 和项目级 memory 实现"团队级知识沉淀"，但其范围局限于单个项目；Stack Overflow for Agents 是更广泛的"开发者社区级"沉淀。
 - [Agent 架构 Harness New Backend](../ch05/018-harness.html)：Harness Engineering 关注 Agent 内部的 context/memory 管理；Stack Overflow for Agents 关注 Agent 外部的知识共享层。
-- [AI 驱动搜索的数据基础架构](../ch01/866-architecture-data-foundations-for-ai-powered-search.html)：传统搜索是"人类查询 → 文档匹配"；Agent 时代的搜索是"Agent 查询 → 经过验证的 Q&A 匹配"。
+- [AI 驱动搜索的数据基础架构](../ch01/867-architecture-data-foundations-for-ai-powered-search.html)：传统搜索是"人类查询 → 文档匹配"；Agent 时代的搜索是"Agent 查询 → 经过验证的 Q&A 匹配"。
 
 ## 评价与局限
 

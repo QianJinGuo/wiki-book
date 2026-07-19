@@ -11,10 +11,10 @@
 - **成本冲击**：AI翻译成本约人类同传的百分之一，且7×24小时待命，不需要休息，不会心理崩溃 
 - **企业应用**：德国电信（P customer system）、Priceline（travel voice assistant）、Vimeo（video real-time voice） 
 ## 相关实体
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch01/757-openai.html)
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch01/165-openai.html)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/046-agent.html)
-- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/723-chatgpt.html)
+- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/726-chatgpt.html)
 - [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](ch01/1292-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/刚刚openai-放出三个语音模型顺便杀死了同传.md)

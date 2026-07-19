@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [canvas hackers shinyhunters say their official domain was su](../ch05/086-ai.html)
+- [canvas hackers shinyhunters say their official domain was su](../ch05/088-ai.html)
 - [canvas hackers shinyhunters say their official domain was su](ch12/037-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html)
 - [private fintech has quietly become bigger than public fintec](../ch03/104-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
 - [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/104-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
@@ -38,7 +38,7 @@ Cyberscammers are bypassing banks’ security with illicit tools sold on Telegra
 - **data趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/612-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)

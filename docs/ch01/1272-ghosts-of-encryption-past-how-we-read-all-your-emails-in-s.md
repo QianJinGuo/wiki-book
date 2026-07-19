@@ -16,7 +16,7 @@ Searchlight Cyber 的这篇研究披露了 Salesforce Marketing Cloud（ExactTar
 3. **关注 Salesforce Marketing Cloud 的密钥管理选项更新**：如果你是 Salesforce Marketing Cloud 的用户，关注其是否提供客户自管理密钥（BYOK 或 CMK）功能，以及该功能下 Salesforce 是否在架构上被排除在解密路径之外。
 ## 相关实体
 - [Detect Ai Agent Traffic](../ch04/030-ai-agent.html)
-- [Exiftool Compromise Mac 592994](ch01/729-9.html)
+- [Exiftool Compromise Mac 592994](ch01/732-9.html)
 - [Oz Multi Harness Cloud Agent Orchestration](../ch04/491-agent-orchestration.html)
 - [Langgraph State Machine Under The Hood](../ch04/198-langgraph.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/076-claude-code.html)

@@ -224,7 +224,7 @@
 
 - [Skill Design Patterns](../ch04/267-skill.html) — 5 种核心设计模式(模式/结构视角)
 - [Skill Development Guide Linyi](../ch04/267-skill.html) — 工程教程/保姆级(工程实现视角)
-- [Agent Skill Writing Practices](../ch04/265-agent-skill.html) — 高质量编写规范(写作规范视角)
+- [Agent Skill Writing Practices](../ch04/607-agent-skill.html) — 高质量编写规范(写作规范视角)
 - [Skill Writing Patterns Best Practices](../ch04/267-skill.html) — 7 个顶级 Skill 提炼模式
 - [Skill Design Spec 8 Block Checklist Winty](../ch04/267-skill.html) — 8 块检查清单
 

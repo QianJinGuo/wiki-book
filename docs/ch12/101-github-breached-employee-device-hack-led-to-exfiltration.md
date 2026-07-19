@@ -10,9 +10,9 @@
 - 来源：https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html
 
 ## 相关实体
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/801-github.html)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/838-google-adds-llms-txt-check-to-chrome-lighthouse.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/536-score-by-collisions-patch-by-panic.html)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/877-github.html)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/839-google-adds-llms-txt-check-to-chrome-lighthouse.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/538-score-by-collisions-patch-by-panic.html)
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/1089-rag.html)
 

@@ -151,9 +151,9 @@ Protocol-H 的核心贡献在于揭示了**企业级 RAG 的主要瓶颈不是 L
 4. **延迟敏感场景建议采用异步 webhook 模式**：Protocol-H 在 EntQA 基准上实现了 84.5% 的准确率，但代价是 p95 延迟 2.1 秒（标准 RAG 为 0.8 秒）。对于用户直接等待响应的同步交互场景，3.2 推理步数的成本可能无法接受；建议对延迟敏感的场景使用异步 webhook 模式，用户先收到确认回调，后台完成推理后再推送结果。
 5. **多数据库环境下优先考虑 Adapter 模式而非定制化开发**：如果企业同时使用 Snowflake、Redshift 和 BigQuery，在每个数据库上定制化 SQL 生成逻辑的维护成本会随时间急剧增长。Protocol-H 的 BaseConnector 抽象提供了云中立的数据层方案，即使当前只用一个数据库，也建议从一开始就采用这种模式，为未来的多数据库扩展预留空间。
 ## 相关实体
-- [Three Rag Architectures Classic Graph Agentic](ch04/612-agentic.html)
+- [Three Rag Architectures Classic Graph Agentic](ch04/235-agentic.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/076-claude-code.html)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/375-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/373-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/076-claude-code.html)
 - [Skill Rag Tsinghua Sra](ch04/267-skill.html)
 

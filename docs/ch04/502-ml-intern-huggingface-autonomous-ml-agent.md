@@ -11,11 +11,11 @@
 > License: Apache 2.0
 
 ## 相关实体
-- [Anthropic Multi Agent Research System](ch04/540-anthropic-multi-agent-research-system.html)
-- [Deerflow Hermes Openclaw Comparison](ch04/469-deerflow-hermes-openclaw.html)
+- [Anthropic Multi Agent Research System](ch04/543-anthropic-multi-agent-research-system.html)
+- [Deerflow Hermes Openclaw Comparison](ch04/470-deerflow-hermes-openclaw.html)
 - [Hermes Agent Getting Started Guide 2026](../ch03/092-hermes-agent.html)
 - [Hermes Agent Deep Dive Alibaba](../ch03/092-hermes-agent.html)
-- [Claude Opus 47](../ch01/1149-claude.html)
+- [Claude Opus 47](../ch01/1036-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ml-intern-huggingface-autonomous-ml-agent.md)
 
