@@ -83,7 +83,7 @@ CrewAI 同时构建了框架（CrewAI Flows）和 Harness（CrewAI Crews and Age
 - [Harness Generator-Evaluator](../ch01/1292-anthropic.html)
 - [Agent Reliability Engineering](ch04/267-skill.html)
 - [当 AI 构建自身](../ch01/1292-anthropic.html)
-- [Prime Intellect Auto NanoGPT](../ch01/729-9.html)
+- [Prime Intellect Auto NanoGPT](../ch01/732-9.html)
 
 ---
 

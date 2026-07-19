@@ -37,7 +37,7 @@ Data Agent 凭借领先的数据驱动技术，构建了多元化的应用场景
 ### 关联实体
 
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/612-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/225-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/225-openclaw.html)

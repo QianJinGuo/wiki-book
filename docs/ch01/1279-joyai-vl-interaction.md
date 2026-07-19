@@ -25,7 +25,7 @@ JoyAI-VL-Interaction的三个核心创新是：主动判断（持续观察视频
 
 ## 京东AI模型矩阵
 
-JoyAI-VL-Interaction是京东2026年模型基建系列的一部分，与[JoyAI-Echo长视频生成框架](../ch05/086-ai.html)、JoyAI-Image-Edit、JoyAI-LLM Flash等共同构成京东的开源AI矩阵。
+JoyAI-VL-Interaction是京东2026年模型基建系列的一部分，与[JoyAI-Echo长视频生成框架](../ch05/088-ai.html)、JoyAI-Image-Edit、JoyAI-LLM Flash等共同构成京东的开源AI矩阵。
 
 ## 与交互模型范式的关联
 

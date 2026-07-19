@@ -47,7 +47,7 @@ Agentic Engineering 需要接口级约定：Agent 能看到哪些上下文、能
 验证能力（测试、编译、静态扫描、安全审查、运行回放）决定了 Agent 在真实工程系统中能走多远。
 
 ## 关联条目
-- [同主题入库（宝玉解读、不同角度）](ch04/612-agentic.html)
+- [同主题入库（宝玉解读、不同角度）](ch04/235-agentic.html)
 - [Harness Engineering — Agent 工程化落地的实践体系](../ch05/052-harness-engineering.html)
 - [Vibe Coding 主题入库文章](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-vibe-coding-to-agentic-engineering.md)
 
@@ -67,14 +67,14 @@ Agentic Engineering 需要接口级约定：Agent 能看到哪些上下文、能
 
 ## 相关实体
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/612-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
 
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/203-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
 
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/612-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/235-agentic.html)
 
 ---
 

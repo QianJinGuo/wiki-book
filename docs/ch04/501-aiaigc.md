@@ -21,7 +21,7 @@
 - [Hermes Agent 记忆系统深度拆解](../ch03/092-hermes-agent.html)
 
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/086-ai.html)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/088-ai.html)
 - [我给Hermes配了4个Agent，真正有用的是这些事](../ch03/046-agent.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch03/092-hermes-agent.html)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/267-skill.html)
