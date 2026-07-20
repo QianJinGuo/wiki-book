@@ -61,7 +61,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/018-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/046-agent.html)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/088-ai.html)
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/292-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/281-deepseek-v4.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/052-harness-engineering.html)
 - [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)

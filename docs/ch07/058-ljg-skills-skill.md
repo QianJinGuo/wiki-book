@@ -45,7 +45,7 @@ ljg 的 Skill 设计呈现出几个鲜明的哲学特征：
 
 ### 表达 Skill 在 Agent 工作流中的应用
 
-在 [Codex](../ch01/537-codex.html) 和 [Claude Code](../ch03/076-claude-code.html) 等 AI 编程工具中，良好的表达 Skill 直接影响代码的可维护性和团队协作效率。写代码本质上也是一种表达——向未来的维护者（包括 AI 和自己）传达设计意图的过程。ljg 的表达 Skill 可以映射到代码写作中：
+在 [Codex](../ch01/528-codex.html) 和 [Claude Code](../ch03/076-claude-code.html) 等 AI 编程工具中，良好的表达 Skill 直接影响代码的可维护性和团队协作效率。写代码本质上也是一种表达——向未来的维护者（包括 AI 和自己）传达设计意图的过程。ljg 的表达 Skill 可以映射到代码写作中：
 
 - **ljg-plain → 干净的代码注释**：去除注释中的"翻译腔"和技术术语的滥用，让注释回归其本质——解释"为什么"而非"是什么"
 - **ljg-writes → 聚焦的 commit message**：每次提交聚焦一个变更意图，避免"修改了多个不相干问题"的混杂提交
@@ -63,7 +63,7 @@ ljg 的 Skill 设计呈现出几个鲜明的哲学特征：
 
 ### 与同类工具的对比
 
-与 [Hermes Agent 的 Skill 设计](../ch01/375-hermes-agent-skill.html) 相比，ljg 的 Skill 更侧重于"认知模式"而非"自动化工作流"。Hermes Skill 更像是一个可自动执行的函数（输入 → 自动处理 → 输出），而 ljg Skill 更像是一个思维框架（输入 → 引导人类思考 → 输出）。两者在技能设计中代表了"AI 代替"和"AI 辅助"两种不同的哲学。
+与 [Hermes Agent 的 Skill 设计](../ch01/364-hermes-agent-skill.html) 相比，ljg 的 Skill 更侧重于"认知模式"而非"自动化工作流"。Hermes Skill 更像是一个可自动执行的函数（输入 → 自动处理 → 输出），而 ljg Skill 更像是一个思维框架（输入 → 引导人类思考 → 输出）。两者在技能设计中代表了"AI 代替"和"AI 辅助"两种不同的哲学。
 
 ## 实践启示
 
@@ -76,8 +76,8 @@ ljg 的 Skill 设计呈现出几个鲜明的哲学特征：
 ## 相关实体
 
 - [ljg Skills 深度解析](../ch03/070-skills.html)
-- [Hermes Agent Skill 设计分析](../ch01/375-hermes-agent-skill.html)
-- [Codex 五层架构](../ch01/537-codex.html)
+- [Hermes Agent Skill 设计分析](../ch01/364-hermes-agent-skill.html)
+- [Codex 五层架构](../ch01/528-codex.html)
 - [Claude Code 顶层指导](../ch03/076-claude-code.html)
 
 ## 来源

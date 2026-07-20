@@ -59,7 +59,7 @@ OpenAI不是"更努力的Google"，它是一种全新的组织物种。在开始
 ## 相关实体
 - [Ai短漫剧的Netflix来了恒星Ai推出全球首个影视级Ai Agentstarfilm打造Ai短漫剧制作的超级梦工厂](../ch04/030-ai-agent.html)
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](../ch12/073-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
-- [Llm Rl中的熵 Part 1 熵的调控](ch01/963-llm.html)
+- [Llm Rl中的熵 Part 1 熵的调控](ch01/1237-llm.html)
 - [Anthropic S Bug Hunting Mythos Was Greatest Marketing Stunt Ever Says Curl Creat](../ch12/109-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.html)
 - [第一批Ai原生本科生要毕业了](../ch05/088-ai.html)
 

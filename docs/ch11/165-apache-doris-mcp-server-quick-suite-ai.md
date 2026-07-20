@@ -31,7 +31,7 @@
 ## 相关实体
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/532-amazon-bedrock-agentcore.html)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/157-amazon-bedrock.html)
-- [Aws Bedrock Agentcore Doris Mcp Server](ch11/248-aws-bedrock-agentcore.html)
+- [Aws Bedrock Agentcore Doris Mcp Server](ch11/252-aws-bedrock-agentcore.html)
 - [Claude Code Mcp Server](../ch07/027-claude-code-mcp-server.html)
 - [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07/046-aws-devops-agent-mcp-server.html)
 

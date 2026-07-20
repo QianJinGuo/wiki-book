@@ -13,10 +13,10 @@
 - 持久化 `gh-token-monitor` 含真实 `rm -rf ~/` 逻辑，构成死亡开关； revocation 必须在移除持久化单元之后
 ## 相关实体
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](ch12/035-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/1027-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/1034-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/088-ai.html)
-- [Why Im Leaving Github For Forgejo](../ch01/877-github.html)
-- [From Doer To Director The Ai Mindset Shift](../ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
+- [Why Im Leaving Github For Forgejo](../ch01/882-github.html)
+- [From Doer To Director The Ai Mindset Shift](../ch01/033-from-doer-to-director-the-ai-mindset-shift.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cybersecurityreach-revoke-token-wipe-computer.md)
 

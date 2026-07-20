@@ -14,9 +14,9 @@
 ## 相关实体
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 - [Ai Agents Inside Perimeter Hackernews](../ch04/030-ai-agent.html)
-- [Llm Raiders Private Ai Server](../ch01/963-llm.html)
+- [Llm Raiders Private Ai Server](../ch01/1237-llm.html)
 - [Bluekit](ch12/087-meet-bluekit-the-ai-powered-all-in-one-phishing-kit.html)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/149-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/151-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 

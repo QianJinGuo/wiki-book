@@ -180,7 +180,7 @@ CloudWatch / CloudTrail / Model Invocation Logging 均**只在 source region 记
 - [Model Invocation Logging](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html)
 
 ## 相关实体
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/736-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/733-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Openai Models Codex Amazon Bedrock Ga](ch11/157-amazon-bedrock.html)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/030-ai-agent.html)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/532-amazon-bedrock-agentcore.html)

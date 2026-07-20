@@ -49,9 +49,9 @@ source_url: https://mp.weixin.qq.com/s/ieQhpziDVspRQ0Kun_mYzw
 - [ai agent memory systems](ch04/121-agent-memory.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/515-claude-managed-agents.html)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/1292-anthropic.html)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/1292-anthropic.html)
-- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1036-claude.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/1291-anthropic.html)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/1291-anthropic.html)
+- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1207-claude.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/076-claude-code.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [天猫新品营销技术团队AI编码实战指南（上）](../ch05/088-ai.html)
@@ -68,7 +68,7 @@ source_url: https://mp.weixin.qq.com/s/ieQhpziDVspRQ0Kun_mYzw
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/052-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/225-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/052-harness-engineering.html)
-- [token级，精准控制生成长度：3b模型击败gpt 5.4、claude](../ch01/1036-claude.html)
+- [token级，精准控制生成长度：3b模型击败gpt 5.4、claude](../ch01/1207-claude.html)
 
 ---
 

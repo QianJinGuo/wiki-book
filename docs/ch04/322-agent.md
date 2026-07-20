@@ -14,12 +14,12 @@ source_url: https://mp.weixin.qq.com/s/kNZE9fzCvOi3Em6JlueB0g
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/394-agent-skills.html)
 - [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/046-agent.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/1292-anthropic.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/1291-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
 - [吴恩达：AI 将最先杀死前端](../ch05/088-ai.html)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/1292-anthropic.html)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/1291-anthropic.html)
 - [你写的 Skill，及格了吗？](ch04/267-skill.html)
-- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1036-claude.html)
+- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1207-claude.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/515-claude-managed-agents.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/076-claude-code.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
@@ -38,7 +38,7 @@ source_url: https://mp.weixin.qq.com/s/kNZE9fzCvOi3Em6JlueB0g
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/225-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/052-harness-engineering.html)
 
-- [一次构建，随处复用：python 中的泛型仓库模式](ch04/582-python.html)
+- [一次构建，随处复用：python 中的泛型仓库模式](ch04/583-python.html)
 
 ## 深度分析
 本文从**环境工程**视角重新定义了企业级 Agent 的核心瓶颈：不是模型能力不足，而是**上下文供给能力**的缺失。与软件工程天然数字化不同，传统行业的 Agent 处于"半失明"状态——缺乏对真实业务环境的持续感知能力。

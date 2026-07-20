@@ -20,7 +20,7 @@ MIT Technology Review 在为期两个月的调查中发现了 22 个中越英语
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](ch12/073-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
 - [Weve Been Here Before Ai Vulnerability Research](../ch05/088-ai.html)
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/434-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01/746-scarcruft.html)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01/743-scarcruft.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 ## 相关主题

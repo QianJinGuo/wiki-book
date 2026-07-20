@@ -12,7 +12,7 @@
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security V2](ch04/434-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Alphaevolve Deepmind Discovery Agent](../ch03/046-agent.html)
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/037-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md)
 

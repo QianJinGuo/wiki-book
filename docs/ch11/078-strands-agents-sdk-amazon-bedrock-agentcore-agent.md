@@ -89,7 +89,7 @@ vision Agent 的 system prompt 中最值得借鉴的是「**严格排除**」清
 
 ## 相关实体
 
-- [Agentcore Harness](../ch04/653-agentcore-harness.html) — AgentCore Harness 综述
+- [Agentcore Harness](../ch04/654-agentcore-harness.html) — AgentCore Harness 综述
 - [Agentcore Managed Harness](../ch04/222-agentcore-managed-harness.html) — Managed Harness 定位与权衡
 - [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](../ch04/532-amazon-bedrock-agentcore.html) — AgentCore Runtime 深度分析
 - [Agentcore Payments X402 Agentic Commerce](ch11/066-agentcore-payments.html) — AgentCore 在支付场景的应用
@@ -98,7 +98,7 @@ vision Agent 的 system prompt 中最值得借鉴的是「**严格排除**」清
 - [Multi Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) — 多 Agent 协作模式
 - [Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 多 Agent 编排
 - [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
-- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04/491-agent-orchestration.html)
+- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04/492-agent-orchestration.html)
 - [aws bedrock agentcore 多账户对话式运维助手：基于 strands agents + devops](../ch04/532-amazon-bedrock-agentcore.html)
 
 ---

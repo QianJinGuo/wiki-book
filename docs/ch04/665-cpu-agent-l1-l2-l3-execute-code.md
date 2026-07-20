@@ -281,8 +281,8 @@ grep -n '"isEnum": true' api-reference.json -B2 -A10  # 枚举所有枚举值
 - [Claude Code 工具设计演进](../ch03/076-claude-code.html) — Anthropic 工具设计的演进
 - [上下文工程三种记忆范式对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md) — 记忆/上下文/信息的层级
 - [Claude Code 上下文工程 Thariq](../ch03/076-claude-code.html) — 官方 Anthropic 视角
-- [Codex 上下文工程 LastWhisper](../ch01/537-codex.html) — 另一家 Code 厂商的上下文视角
-- [上下文工程系列](ch04/572-agentic-ai.html) — 系列化上下文工程讨论
+- [Codex 上下文工程 LastWhisper](../ch01/528-codex.html) — 另一家 Code 厂商的上下文视角
+- [上下文工程系列](ch04/061-agentic-ai.html) — 系列化上下文工程讨论
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cpu-cache-analogy-agent-context-management-liwen-2026-06-12.md)
 

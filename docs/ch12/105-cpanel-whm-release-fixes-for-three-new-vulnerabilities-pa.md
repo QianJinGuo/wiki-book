@@ -12,7 +12,7 @@ Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](http
 
 ## 相关实体
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/1024-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/1031-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
 - [Airbyte Agents A New Era For Airbyte Airbyte](../ch04/550-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
 - [Airbyte Agents](../ch04/550-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
 - [5 Years And 5M Later Inventing A New](../ch03/074-5-years-and-5m-later-inventing-a-new-programming-language.html)

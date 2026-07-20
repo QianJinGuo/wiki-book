@@ -53,10 +53,10 @@ Toto 2.0包含连续分块掩码（CPM）优化，允许模型在一次并行传
 3. **指标作为一种独特模态**：Datadog指标不是普通时间序列，而是具有独特属性的独特数据模态。不同指标类型、复杂季节性、复杂多变量结构都是需要专门建模的挑战 。
 ## 相关实体
 - [Nvidia Agentic Systems Extreme Co Design](../ch04/235-agentic.html)
-- [Gemma 4 Qat Models Optimizing Compression](../ch01/617-gemma-4.html)
+- [Gemma 4 Qat Models Optimizing Compression](../ch01/612-gemma-4.html)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
-- [Task Queue Priority And Fairness](ch11/250-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Task Queue Priority And Fairness Your Task Queue Your Way](ch11/250-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority And Fairness](ch11/205-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority And Fairness Your Task Queue Your Way](ch11/205-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/toto-2-context-aware-log-analytics-for-complex-distributed-systems.md)
 

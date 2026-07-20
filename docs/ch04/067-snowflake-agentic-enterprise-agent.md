@@ -237,10 +237,10 @@ Cortex Sense 从 Snowflake 已有数据和活动中构建信号，自动增强 A
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/532-amazon-bedrock-agentcore.html)（AWS Bedrock AgentCore — 对比平台）
 - [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch04/515-claude-managed-agents.html)（Anthropic Managed Agents — 另一家厂商视角）
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/019-ai-native.html)（Spec-as-AIOS — 治理即架构同思路）
-- [Taobao Ai Sre Digital Employee Code Quality Governance](../ch01/1072-ai-sre.html)（数字员工治理 — 行业对照）
+- [Taobao Ai Sre Digital Employee Code Quality Governance](../ch01/1075-ai-sre.html)（数字员工治理 — 行业对照）
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/157-amazon-bedrock.html)（AgentOps — 智能体可观测性对照）
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/434-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)（企业 Agent 安全风险同主题）
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/213-amazon-quick.html)（Amazon Quick — 另一家企业数据分析平台）
+- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/214-amazon-quick.html)（Amazon Quick — 另一家企业数据分析平台）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/snowflake-agentic-enterprise-summit-2026-infoq.md)
 

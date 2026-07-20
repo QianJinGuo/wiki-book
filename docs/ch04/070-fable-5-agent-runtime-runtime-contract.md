@@ -175,16 +175,16 @@
 
 **Fable 5 主题簇**(本文与 4 个现有 entity 全部为新视角):
 
-- vs **[Anthropic Claude Fable 5 on AWS:Mythos 级功能](../ch01/1309-anthropic-claude.html)** — 那是**AWS 官方产品介绍**(功能/部署/内置保护),本文是**架构师工程化拆解**(Runtime 协议层)。两者互补。
-- vs **[Claude Fable 5 and new AI safety fables](../ch01/863-claude-fable-5-and-new-ai-safety-fables.html)** — Nathan Lambert 的**政策分析**(数据保留/prompt 过滤/用户未告知模型修改),本文**不**涉及政策。
-- vs **[Claude Fable 5 — Mollick patron vs wizard](../ch01/176-claude-fable-5.html)** — Mollick 的**hands-on 用户体验视角**(4 用例 + patron vs wizard 框架),本文是**架构师工程视角**。两者对应"产品体验"vs"产品架构"。
-- vs **[Claude Fable 5 提示词泄漏 — Runtime Control Plane 安全工程启示](../ch01/176-claude-fable-5.html)** — 同样用"Runtime"概念,但**VibeCoder 重点在安全工程** (Prompt 不能当保险箱 / 攻击面像系统 / 分类器组合风险),**本文重点在工程协议** (Task Brief / 能力路由 / 状态账本 / 治理层)。两者**完全互补**: 一个看 Runtime 怎么被攻击,一个看 Runtime 怎么被设计。
+- vs **[Anthropic Claude Fable 5 on AWS:Mythos 级功能](../ch01/602-anthropic-claude.html)** — 那是**AWS 官方产品介绍**(功能/部署/内置保护),本文是**架构师工程化拆解**(Runtime 协议层)。两者互补。
+- vs **[Claude Fable 5 and new AI safety fables](../ch01/867-claude-fable-5-and-new-ai-safety-fables.html)** — Nathan Lambert 的**政策分析**(数据保留/prompt 过滤/用户未告知模型修改),本文**不**涉及政策。
+- vs **[Claude Fable 5 — Mollick patron vs wizard](../ch01/512-claude-fable-5.html)** — Mollick 的**hands-on 用户体验视角**(4 用例 + patron vs wizard 框架),本文是**架构师工程视角**。两者对应"产品体验"vs"产品架构"。
+- vs **[Claude Fable 5 提示词泄漏 — Runtime Control Plane 安全工程启示](../ch01/512-claude-fable-5.html)** — 同样用"Runtime"概念,但**VibeCoder 重点在安全工程** (Prompt 不能当保险箱 / 攻击面像系统 / 分类器组合风险),**本文重点在工程协议** (Task Brief / 能力路由 / 状态账本 / 治理层)。两者**完全互补**: 一个看 Runtime 怎么被攻击,一个看 Runtime 怎么被设计。
 
 **若飞同系列延伸**(本文是若飞"Agent 治理"的 Runtime 工程化主轴):
 
 - vs **[若飞 5 张卡治理 (Hermes)](../ch03/092-hermes-agent.html)** — 若飞把 Hermes Agent 长跑治理拆为 5 张卡,**侧重"治理框架"**;本文把 Fable 5 Runtime 拆为 9+8+5+8 维度,**侧重"运行时契约"**。两者是**"治理框架 vs 运行时协议"** 同主题不同切面。
 - vs **[若飞 long-running agent ralph loop 状态交接](../ch05/018-harness.html)** — 那是 **Ralph loop 状态交接**具体工程模式;本文是 **Runtime 协议**宏观框架。
-- vs **[Claude Code agent teams task decomposition ruofei](../ch01/371-claude-code-agent-teams.html)** — 那是**任务分解**(具体执行);本文是**任务协议** (前置契约)。
+- vs **[Claude Code agent teams task decomposition ruofei](../ch01/360-claude-code-agent-teams.html)** — 那是**任务分解**(具体执行);本文是**任务协议** (前置契约)。
 - vs **[Harness Engineering Deletable Worksite](../ch05/102-harness-engineering-deletable-worksite-ruofei.html)** — 那是 **Harness 可删工作位**的精简原则;本文是 **Runtime 4 层**(包含 Harness 作为"工具路由层"的子集)。
 - vs **[若飞 agent memory architecture](ch04/121-agent-memory.html)** — 那是 **Memory 架构**;本文**执行状态账本** 5 类中包含 memory。
 
@@ -238,13 +238,13 @@ Anthropic 因美国政府出口管制指令暂停 Fable 5 访问,这件事在表
 ## 相关实体
 
 - → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-fable-5-agent-runtime-contract-ruofei-2026.md)
-- [Claude Fable 5 提示词泄漏 — Runtime Control Plane](../ch01/176-claude-fable-5.html)
-- [Anthropic Claude Fable 5 on AWS](../ch01/1309-anthropic-claude.html)
-- [Claude Fable 5 and new AI safety fables](../ch01/863-claude-fable-5-and-new-ai-safety-fables.html)
-- [Claude Fable 5 — Mollick patron vs wizard](../ch01/176-claude-fable-5.html)
+- [Claude Fable 5 提示词泄漏 — Runtime Control Plane](../ch01/512-claude-fable-5.html)
+- [Anthropic Claude Fable 5 on AWS](../ch01/602-anthropic-claude.html)
+- [Claude Fable 5 and new AI safety fables](../ch01/867-claude-fable-5-and-new-ai-safety-fables.html)
+- [Claude Fable 5 — Mollick patron vs wizard](../ch01/512-claude-fable-5.html)
 - [若飞 5 张卡治理](../ch03/092-hermes-agent.html)
 - [若飞 Ralph loop 状态交接](../ch05/018-harness.html)
-- [Claude Code agent teams task decomposition](../ch01/371-claude-code-agent-teams.html)
+- [Claude Code agent teams task decomposition](../ch01/360-claude-code-agent-teams.html)
 - [Harness Engineering Deletable Worksite](../ch05/102-harness-engineering-deletable-worksite-ruofei.html)
 - [Agent 架构关键变化:Harness 正在成为新后端](../ch05/018-harness.html)
 - [Harness Engineering Framework](../ch05/052-harness-engineering.html)

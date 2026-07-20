@@ -198,7 +198,7 @@ A = α · A_base + (1-α) · A_future
 - [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)（相关：过程级 credit 与编排的"阶段化"同源）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/appo-agentic-procedural-policy-optimization-amap-ml-2026-06-16.md)
-- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](../ch01/968-20.html)
+- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](../ch01/981-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---

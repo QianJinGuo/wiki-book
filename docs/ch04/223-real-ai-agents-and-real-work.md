@@ -92,10 +92,10 @@ Mollick 的 agentic AI 图景揭示了一个根本性转变：AI 接管执行性
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/052-harness-engineering.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/132-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
-- [The Shape Of Ai Jaggedness Bottlenecks And Salients](../ch01/475-the-shape-of-ai-jaggedness-bottlenecks-and-salients.html)
+- [The Shape Of Ai Jaggedness Bottlenecks And Salients](../ch01/464-the-shape-of-ai-jaggedness-bottlenecks-and-salients.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

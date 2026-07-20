@@ -15,8 +15,8 @@
 - [Ai Skill Skill Creator 源码拆解](ch04/315-skill-skill.html)
 - [Harness Engineering Systematic Explainer](../ch05/052-harness-engineering.html)
 - [Didi Eagle 3 Speculative Decoding Agents](../ch09/047-coding-agent.html)
-- [Langsmith Trajectory Evals](../ch01/749-langsmith-trajectory-evals.html)
-- [Ai Skill Metrics System](../ch01/483-ai-skill.html)
+- [Langsmith Trajectory Evals](../ch01/746-langsmith-trajectory-evals.html)
+- [Ai Skill Metrics System](../ch01/472-ai-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/taobao-smart-shopping-guide-agent-evaluation-pzmx.md)
 
