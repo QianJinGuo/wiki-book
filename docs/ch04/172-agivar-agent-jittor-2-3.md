@@ -147,7 +147,7 @@ Jittor 已成国内主流深度学习框架之一。Agivar 对底层推理调度
 
 ## 关联引用
 
-→ [Anthropic Computer Use 最佳实践](../ch01/874-anthropic-computer-use.html) — 通用多模态大模型路径
+→ [Anthropic Computer Use 最佳实践](../ch01/879-anthropic-computer-use.html) — 通用多模态大模型路径
 → [Computer Use 45× 成本问题](ch04/264-computer-use-45x-more-expensive-than-structured-apis.html) — Computer Use 的成本痛点
 → [IBM Forward Deployed Units (FDU)](../ch05/088-ai.html) — FDE 模式企业级 AI 部署
 → [Agentic Future 竞赛 (Tidemark)](ch04/428-the-race-to-own-the-agentic-future-tidemark.html) — FDE 概念与投资视角

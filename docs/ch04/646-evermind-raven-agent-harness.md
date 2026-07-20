@@ -50,7 +50,7 @@ EverMind 提出的 AI 智能体发展四阶段划分：
 ## 关联
 
 - [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki/blob/main/entities/memos-hermes-plugin.md) — Hermes 的记忆插件系统，与 EverOS 记忆架构互补
-- [Mem0 vs WorkBuddy：Agent 记忆层对比](ch04/296-mem0-vs-workbuddy-agent.html) — 与 EverOS 的对比参考
+- [Mem0 vs WorkBuddy：Agent 记忆层对比](ch04/585-mem0-vs-workbuddy-agent.html) — 与 EverOS 的对比参考
 - [Agent 进化四阶段](../ch03/046-agent.html) — 阿里云的 Agent 进化框架，与 EverMind 的 L1-L4 可对照
 
 ---

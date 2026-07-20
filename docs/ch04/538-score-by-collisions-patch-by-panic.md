@@ -11,8 +11,8 @@
 
 ## 相关实体
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/839-google-adds-llms-txt-check-to-chrome-lighthouse.html)
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/877-github.html)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/1089-rag.html)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/882-github.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/258-rag.html)
 - [Npm Supply Chain Compromise Postmortem](../ch05/088-ai.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
 

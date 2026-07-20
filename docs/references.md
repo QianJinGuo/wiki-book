@@ -1,12 +1,12 @@
 # 参考文献
-> 本书基于 **3339** 篇一手 AI 材料系统编撰。
+> 本书基于 **3340** 篇一手 AI 材料系统编撰。
 > 涵盖 **354** 个来源站点。
 
 ---
 ## 主要来源
 | 来源 | 文章数 |
 |---|---|
-| mp.weixin.qq.com | 1270 |
+| mp.weixin.qq.com | 1271 |
 | aws.amazon.com | 303 |
 | www.interconnects.ai | 27 |
 | www.oneusefulthing.org | 22 |
@@ -38,4 +38,4 @@
 | depthfirst.com | 5 |
 
 ---
-> 共 354 个来源，3339 篇实体。
+> 共 354 个来源，3340 篇实体。

@@ -7,9 +7,9 @@
 # How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore
 
 ## 相关实体
-- [linear code intelligence: controlled codebase access for lin](../ch01/968-20.html)
+- [linear code intelligence: controlled codebase access for lin](../ch01/981-20.html)
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md)
-- [aws bedrock agentcore equipment repair assistant — 农业机械 ai 诊](../ch11/249-aws-bedrock-agentcore-equipment-repair-assistant-ai.html)
+- [aws bedrock agentcore equipment repair assistant — 农业机械 ai 诊](../ch11/255-aws-bedrock-agentcore-equipment-repair-assistant-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
@@ -42,7 +42,7 @@ Code review was always manual and ineffective because of the inherent disconnect
 
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1130-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1129-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/225-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/225-openclaw.html)

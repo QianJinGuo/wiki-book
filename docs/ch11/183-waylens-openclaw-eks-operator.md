@@ -79,7 +79,7 @@ AWS Samples 提供 `sample-your-opc-eks-agents` 仓库，包含：
 ## 相关主题
 
 - [多智能体编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)（概念层）
-- [AWS Bedrock AgentCore OS-level 浏览器工具](ch11/248-aws-bedrock-agentcore.html)
+- [AWS Bedrock AgentCore OS-level 浏览器工具](ch11/252-aws-bedrock-agentcore.html)
 - [Aliyun AgentRun 5min 快速上手](../ch04/003-agentrun.html)
 
 ---
