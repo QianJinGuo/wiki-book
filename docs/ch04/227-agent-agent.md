@@ -87,7 +87,7 @@ Wright用1970s MBS→1980s高收益债→2000s Shopify Capital来论证"Agent资
 - Aaron Wright (@awrigh01), "Agentic Capital Markets: How Autonomous Agents Will Be Funded", X Article, 2026-05-18
 - 深思圈/深思SenseAI 深度解读+批判, 2026-05-19
 ## 相关实体
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/590-ai-mollick.html)
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/583-ai-mollick.html)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/046-agent.html)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/076-claude-code.html)

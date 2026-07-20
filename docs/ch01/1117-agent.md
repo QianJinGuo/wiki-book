@@ -45,7 +45,7 @@
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/046-agent.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1130-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1129-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
 
 ## 实践启示

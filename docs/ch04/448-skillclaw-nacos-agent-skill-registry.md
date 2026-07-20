@@ -58,7 +58,7 @@ SkillClaw × Nacos 的联合工作流程：
 - Agent 运行时只读取 Skill，**不持有发布和删除权限**
 - 敏感信息、危险命令、越权工具等检查，通过 Nacos Pipeline 和 `skill-scanner` 插件接入
 
-这种"生成-治理分离"的架构与 [Anthropic 对抗式架构](../ch01/1292-anthropic.html) 中的"合同谈判机制"有异曲同工之妙——都强调生成方和验证方的职责隔离。
+这种"生成-治理分离"的架构与 [Anthropic 对抗式架构](../ch01/1291-anthropic.html) 中的"合同谈判机制"有异曲同工之妙——都强调生成方和验证方的职责隔离。
 
 ### QuickStart 流程（7 步）
 

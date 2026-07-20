@@ -30,7 +30,7 @@ Discord 的 E2EE 基于 Signal 协议的双棘轮机制：
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [Ath Agent Trust Handshake Protocol](../ch03/046-agent.html)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/391-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/380-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/discord-e2e-encryption.md)
 

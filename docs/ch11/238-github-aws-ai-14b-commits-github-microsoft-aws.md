@@ -42,7 +42,7 @@
 
 ## 相关主题
 
-- [Multi-Agent AI Safety Research Funding Call](../ch01/995-agent-ai.html) — 同为 2026-06 agentic AI 相关的产业级响应
+- [Multi-Agent AI Safety Research Funding Call](../ch01/1004-agent-ai.html) — 同为 2026-06 agentic AI 相关的产业级响应
 - AI Coding Agent 行业（概念待创建）
 
 ## 一句话定位

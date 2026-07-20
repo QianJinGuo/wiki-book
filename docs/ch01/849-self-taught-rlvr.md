@@ -47,11 +47,11 @@
 **Near-Future Checkpoint的选取**：不应仅看loss下降，核心指标是S=Q/V的综合最优。在实践中建议监控每个checkpoint的Q和V，优先选取Q提升明显且V保持低位的checkpoint作为teacher。
 **CoPD落地路径**：对于已有独立expert的团队，建议先做mutual OPD双向蒸馏拉近行为模式，再进行各expert的持续RLVR能力拓展。overlap度量需嵌入训练流程实时追踪。
 ## 相关实体
-- [Llm Post Training Full Guide](ch01/963-llm.html)
+- [Llm Post Training Full Guide](ch01/1237-llm.html)
 - [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch05/088-ai.html)
 - [Reading Todays Open Closed Performance Gap](https://github.com/QianJinGuo/wiki/blob/main/entities/reading-todays-open-closed-performance-gap.md)
 - [Baidu Wenxin Post Training Evolution](../ch05/088-ai.html)
-- [Vllm V0 To V1 Correctness Before Corrections](ch01/903-vllm.html)
+- [Vllm V0 To V1 Correctness Before Corrections](ch01/914-vllm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/self-taught-rlvr-jd-cii-2026.md)
 

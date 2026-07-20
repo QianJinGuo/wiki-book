@@ -1,0 +1,48 @@
+# 百度智能云新一代AI机密计算实例：从CPU到GPU全链路可信
+
+## Ch01.084 百度智能云新一代AI机密计算实例：从CPU到GPU全链路可信
+
+> 📊 Level ⭐ | 6.8KB | `entities/baidu-confidential-computing-cpu-gpu-full-chain.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/baidu-confidential-computing-cpu-gpu-full-chain.md)
+
+## 摘要
+百度智能云新一代AI机密计算实例：从CPU到GPU全链路可信
+
+## 关键要点
+- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/baidu-confidential-computing-cpu-gpu-full-chain.md)
+
+## 相关实体
+> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)
+
+- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/088-ai.html)
+- [我给Hermes配了4个Agent，真正有用的是这些事](../ch03/046-agent.html)
+
+## 深度分析
+**1. vDPA + TDX 的架构矛盾与融合路径**
+vDPA 追求高性能 I/O，需要"共享"内存；而 TDX 强调"私有"隔离——两者看似天然矛盾。百度通过固件优化（TDVF）在系统启动阶段提前识别并标记设备相关内存区域，确保正确的共享属性，从而在保证安全的前提下打通机密计算环境下的 I/O 通路。这一解决思路揭示了云基础设施设计中"安全边界收敛"的核心矛盾：当安全模型要求内存严格私有化，而高性能 I/O 又依赖共享内存时，必须在固件层面完成内存属性的精细化标注，而非简单地在两种模式间妥协。
+**2. PPCIe 将机密计算边界从 CPU 单点扩展为全链路保护**
+传统观念认为 TDX 就足够保护数据，但本文揭示了一个关键漏洞：数据在 CPU-GPU 传输的 PCIe 总线上以明文形式存在，形成"边界泄露"（boundary leakage）。PPCIe 通过在 CPU 信任域与 GPU 之间建立基于硬件的链路级加密，使机密计算能力从"单点保护"扩展为"全链路保护"。这一洞察对于重新审视 AI 基础设施安全边界具有重要意义——单一组件的安全能力不等于全链路安全，数据路径中任何一段明文传输都会使整个信任链失效。
+**3. 大 BAR 地址空间与 vDPA 的兼容性问题及上游社区贡献**
+单块 GPU 需要 64GB BAR 地址空间，导致系统固件在多卡场景下将 vDPA 设备的 notify region 分配到 4GB 以上地址区域，触发 32 位固件的 VM exit，导致设备初始化中断。这一问题的工程价值在于：百度不仅定位了 root cause，还对 QEMU 内存子区域查找逻辑进行了优化，并将修复提交至 QEMU 社区（commit 1, commit 2），说明云厂商在推动开源生态适配机密计算方面可以发挥关键作用。
+**4. DPU 卸载 I/O 实现"全资源售卖"的设计哲学**
+第 6 代机型因网络与存储 I/O 占用服务器侧 CPU 核心，导致计算资源无法全量交付。第 7 代通过将 I/O 全面卸载至 BlueField DPU，实现了"全资源售卖"——CPU 资源完全交付给用户。这一设计反映了云厂商从"资源租赁"到"能力交付"的思维转变：用户支付的每一分钱应该对应真实的计算算力，而不是被虚拟化开销消耗。
+**5. vDPA 架构的"数据路径硬件卸载 + 控制路径软件管理"范式**
+vDPA 的核心设计不是简单的半虚拟化，而是一种架构级的解耦思路：数据平面（数据转发）下沉到硬件加速，控制平面（设备管理、调度、迁移状态）保留在虚拟化系统。这一范式在需要同时满足"性能"与"弹性"的场景中具有普适性，为 AI 训练集群的网络虚拟化提供了可复用的架构参考。
+
+## 实践启示
+**1. 多卡 GPU + vDPA 场景必须验证 QEMU 版本**
+在部署多卡机密计算 VM 时，若使用 vDPA 进行 I/O 加速，notify region 可能被分配到 4GB 以上地址区域，导致虚拟机启动失败。必须确保 QEMU 版本包含百度提交的两个修复（commit ffa8a3e3b2e6ff017113b98d500d6a9e05b1560a 和 55fa4be6f76a3e1b1caa33a8f0ab4dc217d32e49），或在生产环境中验证与云厂商确认过固件与 QEMU 的兼容性配置。
+**2. GPU 选型需根据 H2D/D2H 带宽敏感度决策**
+文章明确指出主机到设备（H2D）与设备到主机（D2H）数据传输带宽会因 GPU 型号而异。对于大模型训练中频繁的 GPU 间数据交换场景（如 NVLink/NVSwitch 集群内的梯度同步），应优先选择 PPCIe 带宽表现更优的 GPU 型号，而非单纯追求单卡算力。安全增强与传输效率的平衡需要根据业务 profile 具体评估。
+**3. 机密计算 VM 的共享内存标注需要云厂商配合验证**
+若在私有化部署中自行构建机密计算环境，必须确保 TDVF 固件支持在启动阶段正确标注共享内存区域——特别是 virtio notify region 等关键 I/O 内存区域。不能假设标准发行版固件已处理 TDX + vDPA 共存场景，需要与硬件/固件供应商确认或参考百度的 TDVF 优化方案。
+**4. 利用百度已贡献的 QEMU 上游修复评估自研方案可行性**
+百度的两个 QEMU 修复已进入上游，这为自研机密计算虚拟化方案提供了经过验证的参考实现。团队在评估自研路线时，可直接参考这两个 commit 的 diff，理解问题定位思路（4GB 以上 MMIO 访问的 page-per-vq 处理缺失）和解决方案（MemoryRegion handler 查找优化），判断是否需要针对自有硬件配置做进一步适配。
+**5. 从"单点 TDX"转向"全链路可信"架构评审**
+对于已有 TDX 部署的企业，本文揭示的"边界泄露"问题应触发一次架构重审：检查 CPU-GPU、GPU-GPU 之间的数据传输是否在 PPCIe 或等效加密链路上运行。若原有方案仅关注 TEE 构建而忽略传输链路加密，则需要评估升级至 PPCIe 模式的迁移路径和性能影响。
+---
+
+---
+

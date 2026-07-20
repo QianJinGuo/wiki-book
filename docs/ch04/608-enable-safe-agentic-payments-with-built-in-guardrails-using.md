@@ -39,7 +39,7 @@ Enable safe agentic payments with built-in guardrails using Amazon Bedrock Agent
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/052-harness-engineering.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/678-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/132-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 
 ## 实践启示

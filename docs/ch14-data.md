@@ -3300,7 +3300,92 @@ Transforming rare cancer research with Amazon Quick: Integrating biomedical data
 
 ---
 
-## Ch14.033 Amazon Quick integration with time-series databases for market intelligence using MCP
+## Ch14.033 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
+
+> 📊 Level ⭐⭐ | 4.0KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
+
+# Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
+
+Markdown Content:
+[![Image 1: Iraklikhorguani](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*m85T5tMk8enr2P2-)](https://medium.com/@iraklikhorguani?source=post_page---byline--56bee3643c29---------------------------------------)
+
+![Image 2](https://miro.medium.com/v2/resize:fit:700/1*9r1bGT0StHEZaLhFgNhI7A.png)
+
+_Written by_[_Rohit Channe_](https://www.linkedin.com/in/rohit-channe-5368b469/)_and_[_Simran Mirchandani_](https://www.linkedin.com/in/simranmirchandani/)_at Lyft._
+
+At Lyft, data isn’t just a resource — it’s woven into everything we do. Metrics drive key forecasts, steer operational decisions, and put our boldest hypotheses to the test. But as Lyft scaled, products launched and evolved, and team members came and went, we found ourselves at risk of different teams using different definitions for a given metric. What did “Metric ABC” actually mean? The answer often depended on the context and application of the team you asked.
+
+The consequences were predictable. Without centralized version control or a shared standard, outdated metric definitions crept into decision-making.
+
+Our solution was to build an internal **Metric Semantic Layer (MSL)**: a centralized repository that serves as a single, authoritative home for every metric’s definition — providing both a clear, plain-English description and the definitive SQL code. No more hunting across codebases or tribal knowledge — just one place to store and access a standardized, agreed-upon definition. With MSL, we have **a single source of truth** — consistent terminology and assumptions across every team, so everyone is genuinely speaking the same language. We achieve this through three key principles:
+
+1.   **Simplified onboarding and change management** — update a metric definition once, and the change automatically and frictionlessly flows through every downstream application that depends on it
+2.   **Intentional governance**— clarified ownership, defined scope, clear accountability for data quality, and a structure resilient enough to survive org changes, team rotations, and attrition
+3.   **Transparency and accessibility** — definitions are easy for both technical and non-technical users (and downstream applications) to find and integrate into day-to-day workflows
+
+Taking the above principles into account, we **implemented the Metrics Semantic Layer as a Python package**:
+
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md)
+
+---
+
+## Ch14.034 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
+
+> 📊 Level ⭐⭐ | 3.7KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
+
+# Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
+
+Markdown Content:
+[InfoQ Homepage](https://www.infoq.com/ "InfoQ Homepage")[Presentations](https://www.infoq.com/presentations "Presentations")Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
+
+![Image 1](https://imgopt.infoq.com/fit-in/1288x0/filters:quality(80)/presentations/write-ahead-intent-log/en/slides/Doi-1781788191276.jpg)
+
+Vinay Chella and Akshat Goel discuss the challenges of running traditional CDC across heterogeneous databases during peak order traffic. They explain how Debezium hit limits under high load and share how they built Write-Ahead Intent Log (WAIL) - a custom architecture that utilizes a dumb producer proxy and a smart consumer pattern to cleanly separate the intent from the state payload.
+
+Vinay Chella is an Engineering Leader at DoorDash, where he leads the Storage and Streaming Infrastructure organization that powers mission-critical systems across the marketplace. Akshat Goel is a Staff Software Engineer at DoorDash, where he builds the Storage Access Platform, a unified abstraction layer powering all online data stores.
+
+Software is changing the world. QCon San Francisco empowers software development by facilitating the spread of knowledge and innovation in the developer community. A practitioner-driven conference, QCon is designed for technical team leads, architects, engineering directors, and project managers who influence innovation in their teams.
+
+*   ![Image 2](https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/sponsorship/eventsnotice/7dd71c7c-4b0e-4760-b97d-232ac1816637/resources/1NeuBirdWebinarJune25-Transcripts-1777458459989.png)June 25th, 2026, 1 PM EDT
+#### [Architecting for Autonomous Reliability: Embedding AI into Your Observability Stack](https://www.infoq.com/url/t/1799cc66-1076-4f38-ba1e-fe340c13a7b2/?label=NeuBirdAI-Transcripts)
+
+[Presented by: Justin Griffin - Head of Product at NeuBird AI](https://www.infoq.com/url/t/1799cc66-1076-4f38-ba1e-fe340c13a7b2/?label=NeuBirdAI-Transcripts)
+
+*   ![Image 3](https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/sponsorship/eventsnotice/0b46c1f1-7263-457d-82d9-12be6fa07fbd/resources/1DatadogWebinarJuly9-Transcripts-1779204853394.png)July 9th, 2026, 12 PM EDT
+#### [Rethinking Logs in the Age of AI Analysis](https://www.infoq.com/url/t/71ed3a08-6275-4ce8-adb0-1ceaa4e4161a/?label=Datadog-Transcripts)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md)
+
+---
+
+## Ch14.035 The Data Operating System for the Foundation Model Era — Data Juicer
+
+> 📊 Level ⭐⭐ | 3.6KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
+
+# The Data Operating System for the Foundation Model Era — Data Juicer
+
+Markdown Content:
+[![Image 1: PyPI](https://img.shields.io/pypi/v/py-data-juicer?logo=pypi&color=026cad)](https://pypi.org/project/py-data-juicer)[![Image 2: Downloads](https://static.pepy.tech/personalized-badge/py-data-juicer?period=total&units=INTERNATIONAL_SYSTEM&left_color=grey&right_color=green&left_text=downloads)](https://pepy.tech/projects/py-data-juicer)[![Image 3: Docker](https://img.shields.io/docker/v/datajuicer/data-juicer?logo=docker&label=Docker&color=498bdf)](https://hub.docker.com/r/datajuicer/data-juicer)
+
+[![Image 4: Docs](https://img.shields.io/badge/%F0%9F%93%96_Docs-Website-026cad)](https://datajuicer.github.io/data-juicer/)[![Image 5: Operators](https://img.shields.io/badge/%F0%9F%A7%A9_Operators-200+-blue)](https://datajuicer.github.io/data-juicer/en/main/docs/Operators.html)[![Image 6: Recipes](https://img.shields.io/badge/%F0%9F%8D%B3_Recipes-50+-brightgreen)](https://github.com/datajuicer/data-juicer-hub)
+
+[![Image 7: Chinese](https://img.shields.io/badge/%F0%9F%87%A8%F0%9F%87%B3_%E6%96%87%E6%A1%A3-%E4%B8%BB%E9%A1%B5-red)](https://datajuicer.github.io/data-juicer/zh_CN/main/index_ZH.html)[![Image 8: Paper](https://img.shields.io/badge/NeurIPS'25_Spotlight-2.0-B31B1B?logo=arxiv)](https://arxiv.org/abs/2501.14755)[![Image 9: Coverage](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fgist.githubusercontent.com%2FHYLcool%2Ff856b14416f08f73d05d32fd992a9c29%2Fraw%2Ftotal_cov.json&label=coverage&logo=codecov&color=4c1)](https://github.com/datajuicer/data-juicer)
+
+**Multimodal | Cloud-Native | AI-Ready | Large-Scale**
+
+Data-Juicer (DJ) transforms raw data chaos into AI-ready intelligence. It treats data processing as _composable infrastructure_—providing modular building blocks to clean, synthesize, and analyze data across the entire AI lifecycle, unlocking latent value in every byte.
+
+Whether you’re deduplicating web-scale pre-training corpora, curating agent interaction traces, or preparing domain-specific RAG indices, DJ scales seamlessly from your laptop to thousand-node clusters—no glue code required.
+
+## 🚀 Quick Start[#](http://datajuicer.github.io/data-juicer/en/main/#quick-start "Link to this heading")
+
+*   [JupyterLab Playground with Tutorials](http://8.138.149.181/)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-data-operating-system-for-the-foundation-model-era-data-juicer.md)
+
+---
+
+## Ch14.036 Amazon Quick integration with time-series databases for market intelligence using MCP
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
 
@@ -3353,91 +3438,6 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
 3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现
 4. **风险管控**: 引入新技术需评估对现有系统稳定性的影响，做好降级预案
-
----
-
-## Ch14.034 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
-
-> 📊 Level ⭐⭐ | 3.2KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
-
-# Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
-
-Markdown Content:
-[![Image 1: Iraklikhorguani](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*m85T5tMk8enr2P2-)](https://medium.com/@iraklikhorguani?source=post_page---byline--56bee3643c29---------------------------------------)
-
-![Image 2](https://miro.medium.com/v2/resize:fit:700/1*9r1bGT0StHEZaLhFgNhI7A.png)
-
-_Written by_[_Rohit Channe_](https://www.linkedin.com/in/rohit-channe-5368b469/)_and_[_Simran Mirchandani_](https://www.linkedin.com/in/simranmirchandani/)_at Lyft._
-
-At Lyft, data isn’t just a resource — it’s woven into everything we do. Metrics drive key forecasts, steer operational decisions, and put our boldest hypotheses to the test. But as Lyft scaled, products launched and evolved, and team members came and went, we found ourselves at risk of different teams using different definitions for a given metric. What did “Metric ABC” actually mean? The answer often depended on the context and application of the team you asked.
-
-The consequences were predictable. Without centralized version control or a shared standard, outdated metric definitions crept into decision-making.
-
-Our solution was to build an internal **Metric Semantic Layer (MSL)**: a centralized repository that serves as a single, authoritative home for every metric’s definition — providing both a clear, plain-English description and the definitive SQL code. No more hunting across codebases or tribal knowledge — just one place to store and access a standardized, agreed-upon definition. With MSL, we have **a single source of truth** — consistent terminology and assumptions across every team, so everyone is genuinely speaking the same language. We achieve this through three key principles:
-
-1.   **Simplified onboarding and change management** — update a metric definition once, and the change automatically and frictionlessly flows through every downstream application that depends on it
-2.   **Intentional governance**— clarified ownership, defined scope, clear accountability for data quality, and a structure resilient enough to survive org changes, team rotations, and attrition
-3.   **Transparency and accessibility** — definitions are easy for both technical and non-technical users (and downstream applications) to find and integrate into day-to-day workflows
-
-Taking the above principles into account, we **implemented the Metrics Semantic Layer as a Python package**:
-
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md)
-
----
-
-## Ch14.035 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
-
-> 📊 Level ⭐⭐ | 3.1KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
-
-# Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
-
-Markdown Content:
-[InfoQ Homepage](https://www.infoq.com/ "InfoQ Homepage")[Presentations](https://www.infoq.com/presentations "Presentations")Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
-
-![Image 1](https://imgopt.infoq.com/fit-in/1288x0/filters:quality(80)/presentations/write-ahead-intent-log/en/slides/Doi-1781788191276.jpg)
-
-Vinay Chella and Akshat Goel discuss the challenges of running traditional CDC across heterogeneous databases during peak order traffic. They explain how Debezium hit limits under high load and share how they built Write-Ahead Intent Log (WAIL) - a custom architecture that utilizes a dumb producer proxy and a smart consumer pattern to cleanly separate the intent from the state payload.
-
-Vinay Chella is an Engineering Leader at DoorDash, where he leads the Storage and Streaming Infrastructure organization that powers mission-critical systems across the marketplace. Akshat Goel is a Staff Software Engineer at DoorDash, where he builds the Storage Access Platform, a unified abstraction layer powering all online data stores.
-
-Software is changing the world. QCon San Francisco empowers software development by facilitating the spread of knowledge and innovation in the developer community. A practitioner-driven conference, QCon is designed for technical team leads, architects, engineering directors, and project managers who influence innovation in their teams.
-
-*   ![Image 2](https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/sponsorship/eventsnotice/7dd71c7c-4b0e-4760-b97d-232ac1816637/resources/1NeuBirdWebinarJune25-Transcripts-1777458459989.png)June 25th, 2026, 1 PM EDT
-#### [Architecting for Autonomous Reliability: Embedding AI into Your Observability Stack](https://www.infoq.com/url/t/1799cc66-1076-4f38-ba1e-fe340c13a7b2/?label=NeuBirdAI-Transcripts)
-
-[Presented by: Justin Griffin - Head of Product at NeuBird AI](https://www.infoq.com/url/t/1799cc66-1076-4f38-ba1e-fe340c13a7b2/?label=NeuBirdAI-Transcripts)
-
-*   ![Image 3](https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/sponsorship/eventsnotice/0b46c1f1-7263-457d-82d9-12be6fa07fbd/resources/1DatadogWebinarJuly9-Transcripts-1779204853394.png)July 9th, 2026, 12 PM EDT
-#### [Rethinking Logs in the Age of AI Analysis](https://www.infoq.com/url/t/71ed3a08-6275-4ce8-adb0-1ceaa4e4161a/?label=Datadog-Transcripts)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md)
-
----
-
-## Ch14.036 The Data Operating System for the Foundation Model Era — Data Juicer
-
-> 📊 Level ⭐⭐ | 3.0KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
-
-# The Data Operating System for the Foundation Model Era — Data Juicer
-
-Markdown Content:
-[![Image 1: PyPI](https://img.shields.io/pypi/v/py-data-juicer?logo=pypi&color=026cad)](https://pypi.org/project/py-data-juicer)[![Image 2: Downloads](https://static.pepy.tech/personalized-badge/py-data-juicer?period=total&units=INTERNATIONAL_SYSTEM&left_color=grey&right_color=green&left_text=downloads)](https://pepy.tech/projects/py-data-juicer)[![Image 3: Docker](https://img.shields.io/docker/v/datajuicer/data-juicer?logo=docker&label=Docker&color=498bdf)](https://hub.docker.com/r/datajuicer/data-juicer)
-
-[![Image 4: Docs](https://img.shields.io/badge/%F0%9F%93%96_Docs-Website-026cad)](https://datajuicer.github.io/data-juicer/)[![Image 5: Operators](https://img.shields.io/badge/%F0%9F%A7%A9_Operators-200+-blue)](https://datajuicer.github.io/data-juicer/en/main/docs/Operators.html)[![Image 6: Recipes](https://img.shields.io/badge/%F0%9F%8D%B3_Recipes-50+-brightgreen)](https://github.com/datajuicer/data-juicer-hub)
-
-[![Image 7: Chinese](https://img.shields.io/badge/%F0%9F%87%A8%F0%9F%87%B3_%E6%96%87%E6%A1%A3-%E4%B8%BB%E9%A1%B5-red)](https://datajuicer.github.io/data-juicer/zh_CN/main/index_ZH.html)[![Image 8: Paper](https://img.shields.io/badge/NeurIPS'25_Spotlight-2.0-B31B1B?logo=arxiv)](https://arxiv.org/abs/2501.14755)[![Image 9: Coverage](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fgist.githubusercontent.com%2FHYLcool%2Ff856b14416f08f73d05d32fd992a9c29%2Fraw%2Ftotal_cov.json&label=coverage&logo=codecov&color=4c1)](https://github.com/datajuicer/data-juicer)
-
-**Multimodal | Cloud-Native | AI-Ready | Large-Scale**
-
-Data-Juicer (DJ) transforms raw data chaos into AI-ready intelligence. It treats data processing as _composable infrastructure_—providing modular building blocks to clean, synthesize, and analyze data across the entire AI lifecycle, unlocking latent value in every byte.
-
-Whether you’re deduplicating web-scale pre-training corpora, curating agent interaction traces, or preparing domain-specific RAG indices, DJ scales seamlessly from your laptop to thousand-node clusters—no glue code required.
-
-## 🚀 Quick Start[#](http://datajuicer.github.io/data-juicer/en/main/#quick-start "Link to this heading")
-
-*   [JupyterLab Playground with Tutorials](http://8.138.149.181/)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-data-operating-system-for-the-foundation-model-era-data-juicer.md)
 
 ---
 

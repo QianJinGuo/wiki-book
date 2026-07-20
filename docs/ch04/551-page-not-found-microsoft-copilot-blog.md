@@ -9,11 +9,11 @@
 [Skip to main content](javascript:void(0))
 
 ## 相关实体
-- [Microsoft Agent Framework Python Full Guide Zizhi](ch04/582-python.html)
+- [Microsoft Agent Framework Python Full Guide Zizhi](ch04/583-python.html)
 - [Servicenow Ui Is Dead Agent](../ch03/046-agent.html)
 - [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/046-agent.html)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/394-agent-skills.html)
-- [Garry Tan Yc Ceo](../ch01/660-garry-tan.html)
+- [Garry Tan Yc Ceo](../ch01/655-garry-tan.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md)
 
