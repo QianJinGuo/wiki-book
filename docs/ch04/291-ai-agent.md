@@ -16,7 +16,7 @@
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/394-agent-skills.html)
 - [ai agent memory systems](ch04/121-agent-memory.html)
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/394-agent-skills.html)
-- [Garry Tan](../ch01/660-garry-tan.html)
+- [Garry Tan](../ch01/655-garry-tan.html)
 - [Agent Workflows](ch04/349-agent-workflows.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/267-skill.html)

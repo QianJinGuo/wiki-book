@@ -70,7 +70,7 @@ Mission 的解法是**精准混合**：
 
 **整体原则：串行执行 + 定点内部并行**。纸面更慢，但错误率大幅下降，长任务里正确性不断复利。
 
-这与 [Claude Code Agent Teams 任务分解](../ch01/371-claude-code-agent-teams.html) 中"任务分解策略决定 Agent 协作模式"的判断相互印证——并行不是越多越好，而是要在不引入冲突的边界内最大化吞吐。
+这与 [Claude Code Agent Teams 任务分解](../ch01/360-claude-code-agent-teams.html) 中"任务分解策略决定 Agent 协作模式"的判断相互印证——并行不是越多越好，而是要在不引入冲突的边界内最大化吞吐。
 
 ### 5. Droid Whispering：用异构模型对抗同质偏见
 
@@ -143,7 +143,7 @@ Luke 公开的 Mission 实战数字值得仔细解读：
 ## 相关实体
 
 - [Factory Missions Multi-Agent Shipping](ch04/162-factory-missions.html)——同主题的姊妹篇
-- [Claude Code Agent Teams 任务分解](../ch01/371-claude-code-agent-teams.html)——任务分解策略的另一视角
+- [Claude Code Agent Teams 任务分解](../ch01/360-claude-code-agent-teams.html)——任务分解策略的另一视角
 - [Harness Engineering Core Patterns](../ch05/052-harness-engineering.html)——声明式编排的工程哲学
 - [OpenClaw 多 Agent 团队实践](ch04/048-openclaw-multi-agent-team-practice-v2.html)——多 Agent 落地的国内实践
 - [Claude Managed Agents 企业自托管](ch04/515-claude-managed-agents.html)——Multi-Agent 的企业部署形态

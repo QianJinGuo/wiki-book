@@ -1804,7 +1804,7 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 ## Ch20.013 Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path
 
-> 📊 Level ⭐⭐ | 3.7KB | `entities/workday-ai-inference-guardrails.md`
+> 📊 Level ⭐⭐ | 4.0KB | `entities/workday-ai-inference-guardrails.md`
 
 # Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path
 

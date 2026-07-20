@@ -65,7 +65,7 @@
 
 ## 与已有实体的关系
 
-- [Claude Code Loop Engineering 完整攻略](ch09/132-claude-code-loop-engineering.html) — 兔兔AGI 第三方教程，侧重实战技法；本实体是官方分类法，侧重模式选择决策
+- [Claude Code Loop Engineering 完整攻略](ch09/144-claude-code-loop-engineering.html) — 兔兔AGI 第三方教程，侧重实战技法；本实体是官方分类法，侧重模式选择决策
 - [[entities/aliyun-loop-engineering-log-scan-auto-fix-deploy|阿里云 Loop 实战」— 同为 Loop 实践，但本实体聚焦 Claude Code 的 CLI 命令级 loop 原语
 
 ## 参考

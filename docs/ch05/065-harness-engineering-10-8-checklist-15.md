@@ -93,7 +93,7 @@ Hermes Agent 已实现路线图中的大部分步骤：Step 1 = AGENTS.md + CLAU
 - [Harness Engineering Framework](ch05/052-harness-engineering.html)
 - [Production Harness 12 Components](ch05/035-harness-12.html)
 - [Harness Engineering 14 步路线图](ch05/052-harness-engineering.html)
-- [AI Agent Harness Construction — Akshay](../ch01/1076-ai-agent-harness.html)
+- [AI Agent Harness Construction — Akshay](../ch01/1078-ai-agent-harness.html)
 - [Ralph Loop 长程执行](ch05/018-harness.html)
 - [Hermes Agent Skills 源码分析](../ch04/415-hermes-agent-skills.html)
 - [Agent 记忆生命周期哲学](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)

@@ -44,7 +44,7 @@ Pipeline并不比agent更安全：prompt injection在两种架构下攻击面相
 
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/seangoedeckecom-build-agents-not-pipelines.md)
 - [Claude Code Tool Design Evolution](../ch03/076-claude-code.html)
-- [RAG Chunking Optimization 2025](../ch01/1089-rag.html)
+- [RAG Chunking Optimization 2025](../ch01/258-rag.html)
 - [Context Engineering: Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
 - [Karpathy: Vibe Coding to Agentic Engineering](ch04/235-agentic.html)
 

@@ -39,7 +39,7 @@
 
 - 与 [Agent vs Workflow 控制权连续谱](../ch04/639-agent-vs-workflow.html) 互补——前者讨论宏观的 Agent/Workflow 选型，本文是 Claude Code 具体实现的控制权分层
 - 补充 [Loop Engineering](../ch05/007-loop-engineering.html) 中"停止条件"的设计——条件句 vs 愿望句可以作为停止条件设计的决策框架
-- 与 [Claude Code Loop Engineering 完整攻略](ch09/132-claude-code-loop-engineering.html) 互补——前者从功能/命令角度，本文从控制权/工程约束角度
+- 与 [Claude Code Loop Engineering 完整攻略](ch09/144-claude-code-loop-engineering.html) 互补——前者从功能/命令角度，本文从控制权/工程约束角度
 - 四档控制权的渐进路线与 腾讯 Token 优化 的"约束金字塔"理念一致
 - **核心洞察**：最容易被忽略的能力是**及时降级**——工程上能降级，才敢升级
 

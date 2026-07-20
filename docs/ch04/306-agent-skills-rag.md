@@ -46,7 +46,7 @@ Anthropic Skills 的渐进式加载策略在此场景中展现了独特的优势
 - rag-skill 开源实现：https://github.com/ConardLi/rag-skill/
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/1089-rag.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/1237-llm.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/046-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/018-harness.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/003-agentrun.html)

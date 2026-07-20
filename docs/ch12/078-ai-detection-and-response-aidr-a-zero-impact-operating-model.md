@@ -43,7 +43,7 @@ Mitiga 将云、 SaaS 、身份和 AI 遥测数据统一到单一取证系统的
 ## 相关实体
 - [Fedora Hummingbird Brings The Container Security Model To Li](../ch05/088-ai.html)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
-- [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](../ch01/038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.html)
+- [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](../ch01/040-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.html)
 - [Building Blocks For Foundation Model Training And Inference On Aws](../ch11/120-building-blocks-for-foundation-model-training-and-inference.html)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
