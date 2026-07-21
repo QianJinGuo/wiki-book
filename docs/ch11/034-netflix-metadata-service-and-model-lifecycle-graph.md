@@ -103,7 +103,7 @@ Model Lifecycle Graph 通过 AIP Portal 向 practitioners 展示，这是一个�
 - [High Throughput Graph Abstraction At Netflix Part I](ch11/103-high-throughput-graph-abstraction-at-netflix-part-i.html)
 - [Building Blocks For Foundation Model Training And Inference On Aws](ch11/120-building-blocks-for-foundation-model-training-and-inference.html)
 
-- [Netflix Scaling Camera File Processing At Netflix](ch11/144-scaling-camera-file-processing-at-netflix.html)
+- [Netflix Scaling Camera File Processing At Netflix](ch11/019-scaling-camera-file-processing-at-netflix.html)
 - [Netflix Cassandra Wide Partition Dynamic Splitting](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-cassandra-wide-partition-dynamic-splitting.md)
 ## 相关引用
 

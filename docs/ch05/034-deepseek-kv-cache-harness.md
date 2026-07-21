@@ -152,11 +152,11 @@ DeepSeek 想要"定义工作负载"，一个关键信号是硬件厂商和云厂
 → [C4 架构图](assets/c4/deepseek-cost-migration-system-layer-kv-cache-harness-c4.html)
 
 ## 相关实体
-- [Deepseek Code Harness](../ch09/087-deepseek-code-harness.html)
+- [Deepseek Code Harness](../ch09/090-deepseek-code-harness.html)
 - [Openclacky Harness Prompt Cache](ch05/018-harness.html)
 - [Deepseek V4 Ds4C Antirez Local Inference Qbitai](../ch09/045-deepseek-v4-ds4c-antirez.html)
-- [Deepseek Moe Parallel Strategy](../ch01/1201-deepseek.html)
-- [Deepseek V4 Triton Fp4 Optimization](../ch01/462-deepseek-v4-triton-fp4.html)
+- [Deepseek Moe Parallel Strategy](../ch01/1196-deepseek.html)
+- [Deepseek V4 Triton Fp4 Optimization](../ch01/455-deepseek-v4-triton-fp4.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deepseek-cost-migration-system-layer-kv-cache-harness.md)
 

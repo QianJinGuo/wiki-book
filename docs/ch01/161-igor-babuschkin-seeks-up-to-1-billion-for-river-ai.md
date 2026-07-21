@@ -12,7 +12,7 @@
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/088-ai.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/143-code-simulation-for-enterprise-engineering-playerzero.html)
-- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/1211-0.html)
+- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/1206-0.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
 

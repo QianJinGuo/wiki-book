@@ -9,7 +9,7 @@
 ## 相关实体
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
-- [Why Im Leaving Github For Forgejo](ch01/882-github.html)
+- [Why Im Leaving Github For Forgejo](ch01/895-github.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/033-from-doer-to-director-the-ai-mindset-shift.html)
 - [Microsoft For Startups Microsoft](ch01/134-microsoft-for-startups-microsoft.html)
 

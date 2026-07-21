@@ -133,10 +133,10 @@ env["NCCL_IB_DISABLE"] = "1"  # 禁用IB，使用EFA
 实例类型ml.g6.48xlarge（基于NVIDIA GPU）配合EFA网络，可有效支持亿参数模型的分布式RLVR训练。
 
 ## 相关实体
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/400-aws-sagemaker-ai-agent.html)
-- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01/368-aws-sagemaker-capacity-aware-inference-fallback.html)
-- [Stochastic Parrot Thought Experiment](../ch01/868-stochastic-parrot-thought-experiment.html)
-- [Stochastic Parrot Thought Experiment](../ch01/868-stochastic-parrot-thought-experiment.html)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/402-aws-sagemaker-ai-agent.html)
+- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01/359-aws-sagemaker-capacity-aware-inference-fallback.html)
+- [Stochastic Parrot Thought Experiment](../ch01/875-stochastic-parrot-thought-experiment.html)
+- [Stochastic Parrot Thought Experiment](../ch01/875-stochastic-parrot-thought-experiment.html)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 

@@ -170,7 +170,7 @@ EmbodiSkill = 失败归因 (WHY it failed) + 技能体/附录分离
 
 ## 与 GEPA optimize_anything 的关联
 
-**[GEPA optimize_anything](../ch01/329-gepa-optimize-anything.html)**（GEPA 官方，2026-02-18，**通用文本优化 API**）与本实验在 4 个关键维度高度互补：
+**[GEPA optimize_anything](../ch01/319-gepa-optimize-anything.html)**（GEPA 官方，2026-02-18，**通用文本优化 API**）与本实验在 4 个关键维度高度互补：
 
 | 维度 | GEPA optimize_anything | 本互优化实验 |
 |---|---|---|
