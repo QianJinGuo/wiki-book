@@ -21,16 +21,16 @@
 该工具解决了大规模主版本升级中最棘手的两大难题：系统地修复数百个实例的预检查问题，以及验证升级后的应用程序行为。
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/532-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/534-amazon-bedrock-agentcore.html)
 - [How A Mid Tier Enterprise Saas Provider Automates Cloud Supp](../ch03/063-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.html)
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/264-aws-devops-agent.html)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/265-aws-devops-agent.html)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/276-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
 
 - [Amazon Quick Mcp Kdbx Time Series](ch07/068-amazon-quick-mcp.html)
-- [Transforming Rare Cancer Research With Amazon Quick Integrat](../ch11/214-amazon-quick.html)
+- [Transforming Rare Cancer Research With Amazon Quick Integrat](../ch11/215-amazon-quick.html)
 ## 深度分析
 
 **1. "Agent + MCP + Shell"三层架构的工程实践意义**

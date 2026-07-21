@@ -23,7 +23,7 @@ Harness **主要不是给 AI 用的，是给团队用的**。目标是让 AI 在
 | Scripts | 7 道门禁（3 硬 + 4 软） | 含基线对比反作弊 |
 | MCP | 外部系统受控接口 | 5 个（TAPD/iWiki/工蜂/Knot/企微） |
 
-与 [Harness Engineering](ch05/052-harness-engineering.html) 互补——该实体是通用框架，本实体是 **30+ 微服务业务大仓的完整生产级实现**。
+与 [Harness Engineering](ch05/115-harness-engineering.html) 互补——该实体是通用框架，本实体是 **30+ 微服务业务大仓的完整生产级实现**。
 
 ## 核心方法论
 
@@ -78,10 +78,10 @@ Harness **主要不是给 AI 用的，是给团队用的**。目标是让 AI 在
 
 ## 与已有实体的关系
 
-- [Harness Engineering](ch05/052-harness-engineering.html) — 上位框架；本实体是 **30+ 微服务大仓的完整生产级实现**
+- [Harness Engineering](ch05/115-harness-engineering.html) — 上位框架；本实体是 **30+ 微服务大仓的完整生产级实现**
 - [腾讯 CDN LEGO Harness 工程](ch05/067-cdn-lego-harness-engineering.html) — 互补：前者聚焦 C++ 高风险后端系统，本实体聚焦 Go/Ts 微服务业务平台
 - [Harness 知识沉淀实践](ch05/018-harness.html) — 互补：知识管理维度不同
-- [Harness 10 步路线图](ch05/052-harness-engineering.html) — 互补：抽象方法论 vs 真实案例
+- [Harness 10 步路线图](ch05/115-harness-engineering.html) — 互补：抽象方法论 vs 真实案例
 
 ## 参考
 

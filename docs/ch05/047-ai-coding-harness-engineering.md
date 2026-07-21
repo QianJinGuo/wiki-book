@@ -10,7 +10,7 @@
 
 文章提出了 Harness Engineering 实践的四层递进模型：从个人的 AI Coding 效率提升 → 团队协作规范建设 → 组织级知识沉淀 → 跨团队工程能力平台化。每一层都对应具体的工程实践，包括问题定义框架、任务分解方法、质量保障策略和持续改进机制。这些实践共同构成了一个从"体感能用"到"实际可用"的端到端工程体系。
 
-文章特别强调了**状态机设计**在 AI Agent 工程中的核心地位——通过明确的状态定义和转移规则，将不确定性降至可控范围。这与 [Harness Engineering](ch05/052-harness-engineering.html) 框架中的"可观测性"和"可控性"原则一脉相承。文章还提供了多个来自阿里技术团队的实战案例，展示了不同阶段的工程演进路径。
+文章特别强调了**状态机设计**在 AI Agent 工程中的核心地位——通过明确的状态定义和转移规则，将不确定性降至可控范围。这与 [Harness Engineering](ch05/115-harness-engineering.html) 框架中的"可观测性"和"可控性"原则一脉相承。文章还提供了多个来自阿里技术团队的实战案例，展示了不同阶段的工程演进路径。
 
 ## 核心要点
 
@@ -64,7 +64,7 @@
 6. **Workflow 比 Prompt 更重要**——流程编排的确定性胜过反复打磨 prompt。
 7. **终局认知**——未来比拼的不是"用了多少 AI"，而是能否把 AI 当作一个工程系统来设计。
 
-这七条原则在 [Harness Engineering: Why It Matters](ch05/052-harness-engineering.html) 和 [Harness Engineering Survey](ch05/052-harness-engineering.html) 等文章中也有呼应，正在成为该领域的事实标准。
+这七条原则在 [Harness Engineering: Why It Matters](ch05/115-harness-engineering.html) 和 [Harness Engineering Survey](ch05/115-harness-engineering.html) 等文章中也有呼应，正在成为该领域的事实标准。
 
 ### 冲突治理与 Fork-Join 模式
 
@@ -91,13 +91,13 @@
 
 ## 关联实体
 
-- [Harness Engineering](ch05/052-harness-engineering.html)
-- [Harness Engineering: Why It Matters](ch05/052-harness-engineering.html)
-- [Harness Engineering Survey](ch05/052-harness-engineering.html)
-- [Harness Engineering Self-Improvement](ch05/052-harness-engineering.html)
+- [Harness Engineering](ch05/115-harness-engineering.html)
+- [Harness Engineering: Why It Matters](ch05/115-harness-engineering.html)
+- [Harness Engineering Survey](ch05/115-harness-engineering.html)
+- [Harness Engineering Self-Improvement](ch05/115-harness-engineering.html)
 - [Claude Code Agent Engineering](../ch03/068-claude-code-agent.html)
-- [Agent 从演示到生产](ch05/052-harness-engineering.html)
-- [应用宝活动 Harness Engineering](ch05/052-harness-engineering.html)
+- [Agent 从演示到生产](ch05/115-harness-engineering.html)
+- [应用宝活动 Harness Engineering](ch05/115-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从ai-coding到harness-engineering的端到端工程开发实践.md)
 

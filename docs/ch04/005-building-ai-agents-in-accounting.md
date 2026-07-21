@@ -47,7 +47,7 @@ Slack 是整个 Agent 的交互界面。用户通过slash command（`/prepaid Ap
 
 ## 关联阅读
 ## 相关实体
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/258-rag.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/248-rag.html)
 - [Create Custom Mcp Catalogs And Profiles](../ch07/074-create-custom-mcp-catalogs-and-profiles.html)
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](../ch03/019-turn-repeated-instructions-into-reusable-skills-in-lovable.html)
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)

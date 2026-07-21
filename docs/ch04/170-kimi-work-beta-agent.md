@@ -98,13 +98,13 @@ Kimi Work Beta 的整体架构可以划分为四层：
 
 ## 相关实体
 
-- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/528-codex.html) — Vibe Working 范式的详细解析
+- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/521-codex.html) — Vibe Working 范式的详细解析
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html) — Claude Code 的工程实现深度解读
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html) — Agent 记忆系统的架构设计
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html) — Agent 原理与工程实践全景
 - [Claude Code First Year Retrospective Boris Cat 2026](../ch03/076-claude-code.html) — Claude Code 一周年回顾，验证「模型公司做 Agent」路线
-- [Harness Engineering](../ch05/052-harness-engineering.html) — Harness 工程与 Agent 能力的关系
-- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01/1291-anthropic.html) — 数据基础设施对 Agent 能力的制约
+- [Harness Engineering](../ch05/115-harness-engineering.html) — Harness 工程与 Agent 能力的关系
+- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01/933-anthropic.html) — 数据基础设施对 Agent 能力的制约
 
 ---
 

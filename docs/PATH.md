@@ -220,7 +220,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 | 主题 | entity | raw |
 |---|---|---|
-| RAG 到知识图谱到本体论 | [向量库是Rag的前菜知识图谱是答案本体论是灵魂](ch01/1089-rag.html) | [{{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂]({{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂)|
+| RAG 到知识图谱到本体论 | [向量库是Rag的前菜知识图谱是答案本体论是灵魂](ch01/258-rag.html) | [{{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂]({{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂)|
 | Google Agentic RAG 5 阶段 | [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](ch04/117-google-agentic-rag-5.html) | [{{BASE_URL}}/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606]({{BASE_URL}}/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606)|
 | Protocol H 分层 Agentic RAG | [Protocol H Hierarchical Agentic Rag Enterprise](ch04/090-protocol-h-agentic-rag.html) | [{{BASE_URL}}/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise]({{BASE_URL}}/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise)|
 | Chroma 到 Qdrant 迁移 | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [{{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration]({{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration)|
@@ -236,7 +236,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 营销策略 Agent | [Data Agent Product Design](ch04/627-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent]({{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent)|
 | TiDB Cloud Agent-native Database | [Tidb Cloud Agent Database](ch11/077-tidb-cloud-agent-native-kimi-k2-6.html) | [{{BASE_URL}}/raw/articles/kimi-k2-tidb-agent-database-huangdongxu-20260513]({{BASE_URL}}/raw/articles/kimi-k2-tidb-agent-database-huangdongxu-20260513)|
 | ClickHouse 大规模摄取 | [Clickhouse Ingestion At Scale An Open Source Zepto Engineering Story](https://github.com/QianJinGuo/wiki/blob/main/entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md) | [{{BASE_URL}}/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story]({{BASE_URL}}/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story)|
-| Kafka × Iceberg 零 ETL | [Aliyun Kafka Iceberg Zero Etl Architecture Subtraction 2026 06 18](ch01/968-20.html) | [{{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18]({{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18)|
+| Kafka × Iceberg 零 ETL | [Aliyun Kafka Iceberg Zero Etl Architecture Subtraction 2026 06 18](ch01/981-20.html) | [{{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18]({{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18)|
 
 ### 4.8 工程师期必须完成的 4 个项目
 
@@ -429,7 +429,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | Recursive 自动化 AI 研究 | [Recursive Automated Ai Research First Steps 2026](ch09/034-ai.html) | [{{BASE_URL}}/raw/articles/recursive-automated-ai-research-first-steps-2026]({{BASE_URL}}/raw/articles/recursive-automated-ai-research-first-steps-2026)|
-| NeurIPS Pangram 事件 | [Neurips 2026 Pangram Controversy](ch01/968-20.html) | [{{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy]({{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy)|
+| NeurIPS Pangram 事件 | [Neurips 2026 Pangram Controversy](ch01/981-20.html) | [{{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy]({{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy)|
 | Agent 自我改进六条路 | `docs/ch04/047-agent.md` | 先读实体页 |
 | Hermes Agent Eval Harness | `docs/ch04/035-hermes-agent-eval-harness-skill-7-taskset-harnessadapt.md` | 先读实体页 |
 | MUSE-Autoskill | `docs/ch04/046-muse-autoskill-bytebrain-agent-arxiv-2605-27366.md` | 先读实体页 |
