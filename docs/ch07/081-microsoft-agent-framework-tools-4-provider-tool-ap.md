@@ -17,10 +17,10 @@
 
 ## 相关实体
 - [Microsoft Agent Framework Structured Output](../ch03/046-agent.html)
-- [Microsoft Agent Framework Python Zizhi](../ch04/583-python.html)
+- [Microsoft Agent Framework Python Zizhi](../ch04/585-python.html)
 - [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](../ch03/046-agent.html)
 - [Open Claw Tool Bus Subagent Architecture](../ch03/046-agent.html)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/434-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/304-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix.md)
 

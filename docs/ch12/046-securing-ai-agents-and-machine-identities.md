@@ -104,7 +104,7 @@ AI 代理具有自主决策和行动能力，其身份验证凭证（如 API 密
 - 以机器身份执行敏感操作
 - 绕过基于人类行为的异常检测机制
 
-这与 [Tool Poisoning 攻击](../ch04/434-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 形成互补威胁——后者针对工具供应链，前者针对身份认证层。
+这与 [Tool Poisoning 攻击](../ch04/304-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 形成互补威胁——后者针对工具供应链，前者针对身份认证层。
 
 ### 传统 IAM 的局限性
 
@@ -158,7 +158,7 @@ AI 代理具有自主决策和行动能力，其身份验证凭证（如 API 密
 
 ## 相关实体
 
-- [AgentCore Identity](../ch11/252-aws-bedrock-agentcore.html) — AWS Bedrock Agent 身份与访问管理
+- [AgentCore Identity](../ch11/253-aws-bedrock-agentcore.html) — AWS Bedrock Agent 身份与访问管理
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/1password-securing-ai-agents-machine-identities.md)
 

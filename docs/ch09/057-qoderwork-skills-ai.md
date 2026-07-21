@@ -31,7 +31,7 @@
 - **references/（知识层）**：上下文窗口是稀缺资源。SKILL.md只告诉Agent"怎么做"，references/回答"为什么这么做"。Agent在正常执行时读SKILL.md就够了；当用户追问时再按需引用references/——这是"渐进式披露"的核心实践。
 - **config.yaml（参数层）**：将"跨会话持久化"的配置从运行时对话中剥离出来，避免每次启动时重复收集信息。
 
-这一架构与[Harness Engineering](../ch05/052-harness-engineering.html)中的"三层叠加"（Prompt → Context → Harness）异曲同工：四层分离正是Harness Engineering在Skill粒度上的具体实现。
+这一架构与[Harness Engineering](../ch05/115-harness-engineering.html)中的"三层叠加"（Prompt → Context → Harness）异曲同工：四层分离正是Harness Engineering在Skill粒度上的具体实现。
 
 ### 2. Follow Builders vs Frontend Slides——两种Skill设计范式的对比
 
@@ -89,11 +89,11 @@ Agent不擅长的事情：把控商业数据分析流程、理解隐性业务约
 
 ## 相关实体
 
-- [Harness Engineering探索之旅](../ch05/052-harness-engineering.html)
+- [Harness Engineering探索之旅](../ch05/115-harness-engineering.html)
 - [Agent配置模型](../ch04/267-skill.html)
 - [Agent落地真相](../ch03/046-agent.html)
 - [淘宝数字人Agentic架构](../ch04/235-agentic.html)
-- [阿里巴巴NL2SQL Harness](../ch05/052-harness-engineering.html)
+- [阿里巴巴NL2SQL Harness](../ch05/115-harness-engineering.html)
 - [AI友好后端标准](../ch05/023-ai-friendly.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - AI原生工程

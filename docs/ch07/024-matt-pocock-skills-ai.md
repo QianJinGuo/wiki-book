@@ -105,16 +105,16 @@ Matt Pocock Skills 不只是零散命令，它们串成一条完整开发流：
 | Spec-Kit | 规格驱动开发 | 企业项目、需求评审先行 | 前期投入大，过程可控 |
 
 → [Superpowers 6.0 SDD 评审重写](https://github.com/QianJinGuo/wiki/blob/main/entities/superpowers-6-sdd-review-redesign-file-handoff.md)
-→ [三器合一工程化实战](../ch05/100-ai-coding.html)
+→ [三器合一工程化实战](../ch05/101-ai-coding.html)
 
 ## 相关概念
 - SDD（Spec-Driven Development） — 规格驱动开发，与 grill-me/grill-with-docs 理念相通
 - TDT（Task-Driven Development） — 任务驱动开发，grill-me 追问后最终产出的即为 TDT
 ## 相关实体
-- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/271-claude-md.html)
-- [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/157-openai-codex.html)
+- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/261-claude-md.html)
+- [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/073-openai-codex.html)
 - [Graphify Software Engineering Knowledge Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/318-anthropic-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/589-anthropic-claude-code.html)
 - [Stepan Gershuni Ai Native Startup Guide](../ch05/019-ai-native.html)
 - [Matt Pocock Skills vs Superpowers](../ch03/070-skills.html)
 

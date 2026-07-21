@@ -71,7 +71,7 @@ Hy3 preview可以视为混元快速探索实用性大模型、解决真实世界
 - [Agent Framework Owl Principles](../ch03/046-agent.html)
 - [Agent Memory Architecture Past Influence Future Ruofei](ch04/121-agent-memory.html)
 - [Autobrowse Browserbase Persistent Skill](../ch07/040-autobrowse-browserbase-persistent-skill.html)
-- [Lightseek Tokenspeed](../ch01/1149-lightseek-tokenspeed.html)
+- [Lightseek Tokenspeed](../ch01/1146-lightseek-tokenspeed.html)
 
 - [Eva Bench Data 2 Voice Agent Evaluation](../ch03/046-agent.html)
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation](../ch03/046-agent.html)

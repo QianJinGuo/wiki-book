@@ -83,7 +83,7 @@ Mistral 的实践表明，**质量优先于数量的仿真数据策略**——40
 - [RLHF](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md) — CISPO 算法的基础框架
 - **Sim-to-Real Transfer** — 仿真到现实迁移（无独立概念页面）
 - **R2R-CE Benchmark** — 评测基准（无独立实体页面）
-- [Milvus](ch01/981-20.html) — 向量检索（对比：Robostral 是空间导航）
+- [Milvus](ch01/1005-20.html) — 向量检索（对比：Robostral 是空间导航）
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/robostral-navigate.md)
 

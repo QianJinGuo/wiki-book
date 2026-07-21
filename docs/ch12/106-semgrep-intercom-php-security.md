@@ -29,8 +29,8 @@ Intercom PHP供应链攻击（Mini Shai-Hulud行动）揭示了Packagist/Compose
 **对于安全工具厂商：** Semgrep的这次快速响应（多生态联动：PyPI+npm+Packagist）展示了自动化威胁情报共享的价值。在新攻击手法可以在多平台快速复制的今天，安全规则的生成和分发速度是竞争的关键维度。
 
 ## 相关资源
-- [Agent Memory 架构](../ch04/407-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [Claude Managed Agents 开发者指南](../ch04/515-claude-managed-agents.html)
+- [Agent Memory 架构](../ch04/409-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Claude Managed Agents 开发者指南](../ch04/517-claude-managed-agents.html)
 
 ## 相关实体
 

@@ -120,7 +120,7 @@
 >
 > 这样质量门禁就从"Agent 应该做"变成了"不做就推不上去"，是真正的工程化卡口，而不是靠提示词的自觉。
 
-**这与 [Agent Skill Writing Practices](ch04/607-agent-skill.html) 决策树替代模糊判断的关系**: Skill 用决策树替代模糊判断是 **prompt 层的硬约束**；这里的 pre-push hook 是 **git hook 层的硬约束**。两者是不同层级的"硬规则"实现。
+**这与 [Agent Skill Writing Practices](ch04/265-agent-skill.html) 决策树替代模糊判断的关系**: Skill 用决策树替代模糊判断是 **prompt 层的硬约束**；这里的 pre-push hook 是 **git hook 层的硬约束**。两者是不同层级的"硬规则"实现。
 
 ## 5. CR / Issue 协同：把人机反馈留下来
 
@@ -253,7 +253,7 @@
 
 文章最关键的设计取舍在于：**门禁不能只靠提示词约束，必须变成 Agent 绕不过去的硬规则**。提示词再怎么写"push 前必须跑 PMD"，Agent 在复杂任务中还是可能跳过。解决方案是通过 git pre-push hook 把 PMD 校验和单元测试覆盖率检查注入到 push 流程里——Agent 执行 `git push` 时，hook 自动触发检查，不通过就直接拒绝 push。
 
-这与 [Agent Skill Writing Practices](ch04/607-agent-skill.html) 用**决策树替代模糊判断**是不同层级的"硬规则"实现：后者是 prompt 层的硬约束，前者是 git hook 层的硬约束。两者叠加，才构成真正意义上的工程化卡口，而不是靠自觉性。
+这与 [Agent Skill Writing Practices](ch04/265-agent-skill.html) 用**决策树替代模糊判断**是不同层级的"硬规则"实现：后者是 prompt 层的硬约束，前者是 git hook 层的硬约束。两者叠加，才构成真正意义上的工程化卡口，而不是靠自觉性。
 
 ### 阿里云 Agent 平台策略：Multica 的选择逻辑
 
@@ -263,7 +263,7 @@
 
 "不直接升级"原则是双仓库设计最关键的设计哲学：项目过程中产生的事实先留在项目记忆层（feature 分支），只有经过结项审视和人工确认，才会选择性地进入长期 wiki。这样既**避免了噪声污染长期 wiki**，也保证了每次结项都能沉淀出真正有复用价值的业务知识。
 
-这与 [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的"提升"边界思路一致——[Agent Memory Architecture](ch04/407-perplexity-brain-self-improving-agent-memory-architecture.html) 强调的 provenance state（extracted | merged | inferred | ambiguous）在阿里云实践里被显式化为**结项审视 + 人工确认**两个可操作的动作节点，而不是依赖 LLM 自行判断何时该"升格"。
+这与 [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的"提升"边界思路一致——[Agent Memory Architecture](ch04/409-perplexity-brain-self-improving-agent-memory-architecture.html) 强调的 provenance state（extracted | merged | inferred | ambiguous）在阿里云实践里被显式化为**结项审视 + 人工确认**两个可操作的动作节点，而不是依赖 LLM 自行判断何时该"升格"。
 
 ### 效果度量先于自我迭代：Agent 成长的可验证路径
 
@@ -277,7 +277,7 @@
 
 2. **双仓库上下文设计是"长期 wiki 不被噪声污染"的关键** — 项目过程材料留在 feature 分支，结项审视后才选择性蒸馏回长期 wiki。比"all-in-one 一次性升级"更稳健。
 
-3. **TDD 翻转（测试定义对的，让实现去满足）** — 反"AI 写测试为覆盖率"的最常见失败模式。 **[!contradiction] 参见 [Agent Skill Writing Practices](ch04/607-agent-skill.html) 的"决策树替代模糊判断"思路** —— 两篇文章用不同方式解决同一个问题：让"行为正确"成为可验证约束。
+3. **TDD 翻转（测试定义对的，让实现去满足）** — 反"AI 写测试为覆盖率"的最常见失败模式。 **[!contradiction] 参见 [Agent Skill Writing Practices](ch04/265-agent-skill.html) 的"决策树替代模糊判断"思路** —— 两篇文章用不同方式解决同一个问题：让"行为正确"成为可验证约束。
 
 4. **人只在关键节点确认** — 需求澄清、方案确认、发布动作 3 个节点保留人工门禁，其余环节 Agent 自主推进。
 
@@ -293,12 +293,12 @@
 - [从提需求到部署发布全Ai全自动化后研发效能全面跃升](../ch05/088-ai.html) — 腾讯 CodeBuddy L1→L2→L3 演进
 - [Ai Native Rd Org Design](../ch05/019-ai-native.html) — AI 原生研发组织设计
 - [Agent Harness Context Management Working Set](../ch05/039-agent-harness.html) — Agent Harness 上下文管理
-- [Agent Skill Writing Guide](ch04/607-agent-skill.html) — Skill 编写基础
-- [Agent Skill Writing Practices](ch04/607-agent-skill.html) — Skill 编写实战（决策树替代模糊判断）
+- [Agent Skill Writing Guide](ch04/265-agent-skill.html) — Skill 编写基础
+- [Agent Skill Writing Practices](ch04/265-agent-skill.html) — Skill 编写实战（决策树替代模糊判断）
 - [Agent Role Specialization](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-role-specialization.md) — 多角色 Agent 协作
 - [Agent Self Improvement Loops](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) — 度量驱动的 Agent 自我迭代
 - [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — 记忆生命周期与"提升"边界
-- [Agent Memory Architecture](ch04/407-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构
+- [Agent Memory Architecture](ch04/409-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — Agent 编排模式
 - [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)

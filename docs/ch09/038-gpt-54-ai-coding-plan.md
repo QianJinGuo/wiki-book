@@ -109,9 +109,9 @@
 **保持平台选择的灵活性，不要锁定单一渠道。** 文章最后提到「厂商政策变化比天气还快」是务实的市场判断。国产 AI 云服务市场仍处于高速变动期，模型能力、计费方式、限额政策都可能在几个月内发生大幅调整。建议不要做超长期的刚性购买决策，而是保持2-3个平台同时可用，以便在某一平台政策恶化时快速切换 。
 
 ## 相关实体
-- [Pi Openclaw Coding Harness](../ch11/225-openclaw.html)
-- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](../ch01/1207-claude.html)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/225-openclaw.html)
+- [Pi Openclaw Coding Harness](../ch11/226-openclaw.html)
+- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](../ch01/965-claude.html)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/226-openclaw.html)
 - [Hermes Agent Vs Openclaw Comparison](../ch03/092-hermes-agent.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](../ch05/050-openspec.html)
 

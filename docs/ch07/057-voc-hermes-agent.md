@@ -73,7 +73,7 @@ Hermes slash 命令访问控制：管理员白名单 vs 普通用户白名单。
 - **多 Agent 通信模式**：主 Agent 通过 OpenAI 兼容 HTTP 调用专家 Agent，与 [Hermes Agent](../ch03/092-hermes-agent.html) 的 API Server 能力直接对应——每个 Hermes 实例既是对话机器人也可作为 HTTP 服务
 - **自进化闭环**：Memory+Curator 机制与 [Hermes Memory 系统](../ch03/092-hermes-agent.html) 一致——管理员纠正→写入 Memory→Curator 整理→下次更新
 - **Hook 扩展**：无侵入定制策略与 [Hermes SOUL.md 人设系统](../ch03/092-hermes-agent.html) 互补——SOUL 定义行为，Hook 定义自定义逻辑
-- **路由精细化**：主调度 Agent 的模糊描述→精确领域映射，与 [Flow2Spec 结构化知识路由](../ch01/1107-spec.html) 的路由思想一脉相承
+- **路由精细化**：主调度 Agent 的模糊描述→精确领域映射，与 [Flow2Spec 结构化知识路由](../ch01/990-spec.html) 的路由思想一脉相承
 
 ## 实践启示
 

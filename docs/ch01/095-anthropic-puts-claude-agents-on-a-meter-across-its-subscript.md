@@ -12,11 +12,11 @@
 - Pro 用户 $20 积分，Max 5x $100，Max 20x $200
 - 之前程序化负载与交互式 Claude 使用共享同一订阅池
 ## 相关实体
-- [Anthropic Claude Agents Meter Infoworld](../ch04/389-anthropic-claude-agent.html)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1291-anthropic.html)
+- [Anthropic Claude Agents Meter Infoworld](../ch04/391-anthropic-claude-agent.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/933-anthropic.html)
 - [Notion Ai Agents](../ch04/030-ai-agent.html)
 - [Announcing Claude Managed Agents On Cloudflare](ch01/112-announcing-claude-managed-agents-on-cloudflare.html)
-- [Anthropic Claude Managed Agents Platform Launch](ch01/246-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents Platform Launch](ch01/236-anthropic-claude-managed-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-puts-claude-agents-on-a-meter-across-its.md)
 

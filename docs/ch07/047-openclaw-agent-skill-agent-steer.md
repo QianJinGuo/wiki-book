@@ -6,7 +6,7 @@
 
 # OpenClaw 深度架构分析：Agent 引擎、多源 Skill 系统、子 Agent steer 重定向、五层容错
 
-> 京东技术发布的 OpenClaw 源码深度分析，聚焦 Agent 执行引擎、Skill 系统、子 Agent 架构和容错机制——与 [OpenClaw 与 Hermes 源码架构对比](../ch01/266-openclaw-hermes.html)（Gateway/Channel/Dreaming 记忆视角）互补。
+> 京东技术发布的 OpenClaw 源码深度分析，聚焦 Agent 执行引擎、Skill 系统、子 Agent 架构和容错机制——与 [OpenClaw 与 Hermes 源码架构对比](../ch01/256-openclaw-hermes.html)（Gateway/Channel/Dreaming 记忆视角）互补。
 
 ## 架构分层
 

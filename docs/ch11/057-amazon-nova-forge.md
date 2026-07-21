@@ -119,10 +119,10 @@ LoRA 对亚优超参的宽容性使其成为 pipeline 验证的理想起点。Po
 CPT 阶段**最多只跑一个 epoch**——重复处理有限数据会导致过拟合和通用能力损失。这一约束对于私有化领域数据尤其重要，因为大多数组织的数据量相比预训练语料都极为有限。Validation loss 是核心监控指标：如果 training loss 下降而 validation loss 上升，说明已经进入过拟合状态，应该立即停止训练。对于 Checkpoint 选择，当数据规模较小时，post-trained checkpoint 的稳定性优势往往超过 pre-trained checkpoint 的灵活性收益。
 
 ## 相关实体
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](ch11/283-amazon-nova.html)
-- [Amazon Nova Lite Fine Tuning Cost Effective Vision Detection Model Tuning Case And Practice](ch11/283-amazon-nova.html)
-- [Evaluate Amazon Nova Sonic Voice Agent Scale No Mic](ch11/283-amazon-nova.html)
-- [Amazon Nova Manufacturing Intelligence](ch11/283-amazon-nova.html)
+- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](ch11/284-amazon-nova.html)
+- [Amazon Nova Lite Fine Tuning Cost Effective Vision Detection Model Tuning Case And Practice](ch11/284-amazon-nova.html)
+- [Evaluate Amazon Nova Sonic Voice Agent Scale No Mic](ch11/284-amazon-nova.html)
+- [Amazon Nova Manufacturing Intelligence](ch11/284-amazon-nova.html)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/058-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md)

@@ -26,7 +26,7 @@ EntryPoint Hijacking 是一种**无新建线程**的代码注入技术，核心�
 
 - [EntryPoint Hijacking](ch01/154-entrypoint-hijacking.html)
 - [EntryPoint Hijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/258-rag.html)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/248-rag.html)
 
 ---
 

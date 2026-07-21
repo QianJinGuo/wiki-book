@@ -90,7 +90,7 @@ Graphsignal 填补了推理引擎与基础设施监控之间的空白。与 MLOp
 - LangFuse — 应用侧 LLM 可观测性
 - [Graphsignal](https://github.com/QianJinGuo/wiki/blob/main/entities/graphsignal-inference-profiler.md) — 本文实体
 - MLOps — 机器学习运维方法论
-- [Model Serving Routing](../ch11/185-state-of-routing-in-model-serving.html) — 推理服务的路由与调度
+- [Model Serving Routing](../ch11/186-state-of-routing-in-model-serving.html) — 推理服务的路由与调度
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/graphsignal-inference-profiler.md)
 

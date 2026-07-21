@@ -135,7 +135,7 @@ opencli cascade https://api.example.com/hot
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 - [Agent Reliability Engineering Skillify Continuous Improvement](ch04/267-skill.html)
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/101-harness-2026.html)
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/102-harness-2026.html)
 - [Codex Goal Source Code Deep Dive](../ch09/046-codex-goal.html)
 - [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
 

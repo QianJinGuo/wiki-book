@@ -10,7 +10,7 @@
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[场景营销前端 AI Coding — AI Native 的视觉稿还原](../ch05/019-ai-native.html)。 相关主题通过 [场景营销前端 AI Coding — 从问题到方案](../ch05/100-ai-coding.html) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[场景营销前端 AI Coding — AI Native 的视觉稿还原](../ch05/019-ai-native.html)。 相关主题通过 [场景营销前端 AI Coding — 从问题到方案](../ch05/101-ai-coding.html) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -23,7 +23,7 @@
 ## 相关实体
 
 - [场景营销前端 AI Coding — AI Native 的视觉稿还原](../ch05/019-ai-native.html)
-- [场景营销前端 AI Coding — 从问题到方案](../ch05/100-ai-coding.html)
+- [场景营销前端 AI Coding — 从问题到方案](../ch05/101-ai-coding.html)
 - [视觉还原 AI 技术](../ch05/088-ai.html)
 - [淘宝前端 AI 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-frontend-practices.md)
 - [Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判](../ch05/001-impeccable.html)

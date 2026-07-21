@@ -48,7 +48,7 @@ clip-listener.exe + wsl-clip-bridge + Alt+V 的组合体现了一个重要的工
 | WSLg 静默覆写 | wsl-clip-bridge（Linux 端） | 延迟 0.5s 重新断言 PNG 到 Linux 剪贴板 |
 | Windows Terminal 拦截 Ctrl+V | Alt+V 快捷键绑定 | 绕过 Ctrl+V，直接触发 chat:imagePaste |
 
-这种"故障层对应修复层"的架构思路，与 [Harness Engineering](../ch05/052-harness-engineering.html) 中的容错模式如出一辙——不是消除故障源，而是在故障路径上插入补偿机制。
+这种"故障层对应修复层"的架构思路，与 [Harness Engineering](../ch05/115-harness-engineering.html) 中的容错模式如出一辙——不是消除故障源，而是在故障路径上插入补偿机制。
 
 ### 上游修复的工程权衡
 
@@ -75,7 +75,7 @@ clip-listener.exe + wsl-clip-bridge + Alt+V 的组合体现了一个重要的工
 
 - [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/088-ai.html) — 同一技术文章系列的领域工程讨论
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md) — 同为 TLDR AI Newsletter 推荐的技术深度分析
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/981-20.html) — 系统内部机制调试方法
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/1005-20.html) — 系统内部机制调试方法
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/018-build-agents-not-pipelines.html) — 软件工程实践讨论
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 跨平台工程问题分析
 
