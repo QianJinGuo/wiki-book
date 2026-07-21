@@ -117,13 +117,13 @@ SE-GA 的创新不仅在于 TTME 或 MASE 各自的效果，更在于两者协�
 - [Hermes Agent Self Evolution Tengxun](../ch03/092-hermes-agent.html)
 - [Self Learning Evolvable Agents For Cultural Tourism Info Extraction With Agentcore](../ch03/046-agent.html)
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/515-claude-managed-agents.html)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/517-claude-managed-agents.html)
 - [World Knowledge Agent Self Evolution Tencent Hkustgz](ch04/283-world-knowledge-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/se-ga-memory-augmented-self-evolution-gui-agents.md)
-- [icml 2026 position paper — transformer 图灵完备性高度依赖上下文管理 (ruc 魏](../ch01/1255-icml-2026.html)
-- [icml 2026 | prism: parallel residual iterative sequence mode](../ch01/1255-icml-2026.html)
-- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](../ch01/1255-icml-2026.html)
+- [icml 2026 position paper — transformer 图灵完备性高度依赖上下文管理 (ruc 魏](../ch01/1251-icml-2026.html)
+- [icml 2026 | prism: parallel residual iterative sequence mode](../ch01/1251-icml-2026.html)
+- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](../ch01/1251-icml-2026.html)
 
 ---
 

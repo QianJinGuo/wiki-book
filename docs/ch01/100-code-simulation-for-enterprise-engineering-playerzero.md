@@ -32,7 +32,7 @@ Sim-1的模拟方法值得关注：它结合代码嵌入（code embeddings）、
 ## 相关实体
 - [Code Simulation For Enterprise Engineering Playerz](ch01/143-code-simulation-for-enterprise-engineering-playerzero.html)
 - [Engineering Roles Shift From Developing Code To Ma](../ch05/074-engineering-roles-shift-from-developing-code-to-managing-ai.html)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/1099-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/1103-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
 - [Low Code Api Integration](../ch03/073-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](ch01/148-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
 

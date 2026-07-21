@@ -63,10 +63,10 @@ Altman 的一口价同时作用于四个利益相关方：
 
 ## 相关实体
 
-- [Anthropic Claude Code Trojan 安全争议](ch01/318-anthropic-claude-code.html)
+- [Anthropic Claude Code Trojan 安全争议](ch01/589-anthropic-claude-code.html)
 - [禁止开源 AI 将是错误](ch01/030-banning-open-source-ai-would-be-a-mistake-interconnects.html)
-- [AI 伦理学家与对齐研究](ch01/1291-anthropic.html)
-- [Anthropic Agent 平台演进](../ch04/560-anthropic-agent-platform.html)
+- [AI 伦理学家与对齐研究](ch01/933-anthropic.html)
+- [Anthropic Agent 平台演进](../ch04/562-anthropic-agent-platform.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/硅谷的尽头是编制-openai要给白宫送5的股权.md)
 
