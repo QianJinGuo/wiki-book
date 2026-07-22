@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐ | 6.6KB | `entities/be-more-expressive-to-close-more-sales.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/be-more-expressive-to-close-more-sales.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/be-more-expressive-to-close-more-sales.md)
 
 # Be more-expressive-to-close-more-sales
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/be-more-expressive-to-close-more-sales.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/be-more-expressive-to-close-more-sales.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/be-more-expressive-to-close-more-sales.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/be-more-expressive-to-close-more-sales.md)
 
 ## 研究背景
 一项来自维也纳大学（University of Vienna）和维也纳莫德尔大学（Modul University Vienna）的销售演示实验，分析了 847 名受试者观看 14 场不同行业（App、硬件、营销咨询等）销售视频后的反应。核心问题是：销售人员的表达力（expressiveness）究竟如何影响成交率。
@@ -87,9 +87,9 @@
 
 ## 相关实体
 
-- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/089-ai.html)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/1004-rag.html)
-- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/132-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/090-ai.html)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/1005-rag.html)
+- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/792-why-internally-built-ai-fails-fund-accounting-audits.html)
 
 ---
 

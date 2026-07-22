@@ -61,7 +61,7 @@ AI 生成的文本分析应配合 SVG/HTML 可视化图，并通过邮件/IM 主
 - [Aws Bedrock Serverless Async Inference Multimodal](ch11/009-aws-bedrock.html)
 - [Aws Bedrock Agentcore Identity Security](ch11/255-aws-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
 - [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch01/997-spec.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

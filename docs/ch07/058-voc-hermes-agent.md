@@ -83,7 +83,7 @@ Hermes slash 命令访问控制：管理员白名单 vs 普通用户白名单。
 - **Hook 优于 Fork**：生产系统长期维护中，无侵入扩展比修改源码更可持续
 - **降级不是可选是必须**：全部专家不可用时输出结构化人工排查摘要——生产系统必须设计失败模式
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-voc-hermes-multi-agent-auto-triage-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-voc-hermes-multi-agent-auto-triage-2026.md)
 
 ---
 

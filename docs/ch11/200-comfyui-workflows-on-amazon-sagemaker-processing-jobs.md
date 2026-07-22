@@ -78,7 +78,7 @@ Processing Job 使用 continuous S3 upload mode，图像生成后立即流式上
 
 ---
 
-**来源**: → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/running-comfyui-workflows-on-amazon-sagemaker-ai-processing.md)
+**来源**: → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/running-comfyui-workflows-on-amazon-sagemaker-ai-processing.md)
 
 ---
 

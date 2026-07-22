@@ -6,7 +6,7 @@
 
 # Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
 
 ## 摘要
 
@@ -66,8 +66,8 @@
 
 - [Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agentic Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
-- [Agent Loop 设计模式](../ch04/569-agent-loop.html)
-- [AI 审计失败分析](../ch01/132-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Agent Loop 设计模式](../ch04/570-agent-loop.html)
+- [AI 审计失败分析](../ch01/792-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

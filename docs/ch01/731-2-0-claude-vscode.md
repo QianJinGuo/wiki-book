@@ -12,13 +12,13 @@
 每天用 Comate 写代码，但配额是月度的。经常到月底才发现快用完了，或者不知道哪个模型消耗最快。
 
 ## 相关实体
-- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](ch01/430-claude.html)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/944-anthropic.html)
+- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](ch01/429-claude.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1295-anthropic.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/076-claude-code.html)
-- [Skill Factory Yueheng](../ch04/267-skill.html)
-- [Code Review Graph](ch01/800-code-review-graph-claude-code-6-8-token.html)
+- [Skill Factory Yueheng](../ch04/266-skill.html)
+- [Code Review Graph](ch01/799-code-review-graph-claude-code-6-8-token.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-vscode-plugin-zero-code.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-vscode-plugin-zero-code.md)
 
 ## 深度分析
 

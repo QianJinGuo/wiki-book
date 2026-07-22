@@ -6,7 +6,7 @@
 
 # Data modeling patterns for Amazon Quick Sight multi-dataset relationships
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/data-modeling-patterns-for-amazon-quick-sight-multi-dataset-.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/data-modeling-patterns-for-amazon-quick-sight-multi-dataset-.md)
 
 # Data modeling patterns for Amazon Quick Sight multi-dataset relationships
 

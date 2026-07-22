@@ -6,7 +6,7 @@
 
 # OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
 
 ## 深度分析
 
@@ -45,9 +45,9 @@
 
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/227-openclaw.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)
-- [Ai Agent Harness Construction Akshay Baoyu](ch01/940-ai-agent-harness.html)
-- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch05/089-ai.html)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/089-ai.html)
+- [Ai Agent Harness Construction Akshay Baoyu](ch01/939-ai-agent-harness.html)
+- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch05/090-ai.html)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/090-ai.html)
 - [Hermes Agent V014 Architecture Shugex](../ch03/092-hermes-agent.html)
 
 ## 实践启示

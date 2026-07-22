@@ -6,7 +6,7 @@
 
 # What is AX? John Maeda on Accessibility as Ability
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026-06-11-what-is-ax.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-11-what-is-ax.md)
 
 ## 摘要
 
@@ -78,7 +78,7 @@ Maeda 引用了 Erika Hall 2018 年《Conversational Design》中的观点：没
 
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
 - [Claude Code HTML Artifact Workflow](../ch01/663-claude-code-html-artifact-workflow-ifanr-analysis.html)
-- [Claude Dispatch and the Power of Interfaces](../ch01/514-claude-dispatch-and-the-power-of-interfaces.html)
+- [Claude Dispatch and the Power of Interfaces](../ch01/513-claude-dispatch-and-the-power-of-interfaces.html)
 - [MOC: Coding Agent Practice](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

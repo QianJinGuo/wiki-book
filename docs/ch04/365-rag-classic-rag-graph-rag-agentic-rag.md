@@ -13,13 +13,13 @@
 > | Agentic RAG | reasons（推理） | 多步骤调查、复杂归因、跨系统分析 |
 
 ## 相关实体
-- [Protocol H Hierarchical Agentic Rag Enterprise](ch04/235-agentic.html)
+- [Protocol H Hierarchical Agentic Rag Enterprise](ch04/616-agentic.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/076-claude-code.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/076-claude-code.html)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/343-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/340-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/076-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/three-rag-architectures-classic-graph-agentic.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/three-rag-architectures-classic-graph-agentic.md)
 
 ## 深度分析
 

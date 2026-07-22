@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/agentic-environment-engineering-jiagoux-2026-06-27.md`
 
-> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-environment-engineering-jiagoux-2026-06-27.md)
+> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-environment-engineering-jiagoux-2026-06-27.md)
 
 ## 核心命题
 
@@ -110,7 +110,7 @@ Harness 和 Environment 不是替代关系：
 ## 与现有知识的关联
 
 - [Harness Engineering 框架](../ch05/116-harness-engineering.html)——Environment 是 Harness 的外层延伸
-- [Harness 之后：可删的工作现场](../ch05/105-harness-engineering-deletable-worksite-ruofei.html)——"可删的工作现场"概念与 Environment 的可恢复性呼应
+- [Harness 之后：可删的工作现场](../ch05/106-harness-engineering-deletable-worksite-ruofei.html)——"可删的工作现场"概念与 Environment 的可恢复性呼应
 - [Loop Engineering](../ch05/007-loop-engineering.html)——Loop 关心任务怎么持续发生，Environment 关心循环所依赖的事实源是否可靠
 - [Loop Engineering 反馈控制系统](../ch05/007-loop-engineering.html)——反馈控制的前提是环境能给出可信反馈
 - [Self-Harness](../ch05/018-harness.html)——没有可靠环境，自我改进很容易变成自我强化

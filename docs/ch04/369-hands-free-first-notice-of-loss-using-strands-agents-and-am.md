@@ -6,7 +6,7 @@
 
 # Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md)
 
 ## 摘要
 
@@ -80,10 +80,10 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 
 ## 相关实体
 
-- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](ch04/228-build-an-ai-powered-equipment-repair-assistant-using-amazon.html) — AgentCore + Knowledge Base 的维修助手
-- [Building Web Search Enabled Agents With Strands And Exa](ch04/442-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 搜索 Agent
+- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](ch04/227-build-an-ai-powered-equipment-repair-assistant-using-amazon.html) — AgentCore + Knowledge Base 的维修助手
+- [Building Web Search Enabled Agents With Strands And Exa](ch04/443-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 搜索 Agent
 - [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md) — Strands SDK 企业级方案
-- [Agentcore Harness](ch04/656-agentcore-harness.html) — AgentCore 工程化
+- [Agentcore Harness](ch04/657-agentcore-harness.html) — AgentCore 工程化
 - [Aws Bedrock Agentcore Doris Mcp Server](../ch11/255-aws-bedrock-agentcore.html) — AgentCore + MCP Server
 - [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统
 - [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略

@@ -15,18 +15,18 @@ Amazon Web Services (AWS)
 
 ## 相关实体
 - [你不知道的 Agent 原理架构与工程实践](../ch04/341-agent-principle-architecture-engineering-practice.html)
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/048-openclaw-multi-agent-team-practice-v2.html)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/047-openclaw-multi-agent-team-practice-v2.html)
 - [Agent 原理、架构与工程实践](../ch03/046-agent.html)
-- [OpenClaw 多智能体团队搭建实战经验](../ch04/048-openclaw-multi-agent-team-practice-v2.html)
-- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](ch11/227-openclaw.html)
-- [factory mission multi agent architecture](../ch01/1203-factory-mission-multi-agent-architecture.html)
+- [OpenClaw 多智能体团队搭建实战经验](../ch04/047-openclaw-multi-agent-team-practice-v2.html)
+- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](../ch04/030-ai-agent.html)
+- [factory mission multi agent architecture](../ch01/1205-factory-mission-multi-agent-architecture.html)
 
 ## 深度分析
 本文揭示了零售供应链中从 data-informed 到 data-driven 的本质瓶颈：**查询壁垒、洞察缺位、行动脱节**。传统数字化解决了数据采集问题，但"从查询到行动"的链路仍高度依赖人工。研究显示供应链团队 60-70% 的时间花在数据查询和格式对齐上，真正的分析时间被压缩。
 Multi-Agent 架构的引入实质上是将"人工链路"替换为"自动化链路"。数据Agent自动完成 SQL 查询和口径对齐；分析 Agent 负责多维度对比、归因分析和异常检测；行动 Agent 触发调拨、审批等业务流程。这种分工与单一大一统 Agent 相比，更符合"专业分工"原则，也更容易定位和解决问题。
 从系统设计角度看，本文展示了一个关键原则：**Agent 之间的协作需要共享的上下文空间**。不是每个 Agent 独立工作然后汇总，而是有一个共享的"供应链数据视图"让所有 Agent 都能读取和写入。这种设计避免了 Agent 间因数据不一致导致的冲突。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture.md)
 
 ## 实践启示
 1. **用 Agent 替换"人拉肩扛"的查询和协调工作**：当团队在数据查询和格式对齐上花费 60-70% 时间时，Agent 自动化 ROI 最高。优先自动化"高频率、低复杂度"的查询工作。

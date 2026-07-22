@@ -6,7 +6,7 @@
 
 # 阿里云刚发布的 AgentLoop 是什么？
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/阿里云刚发布的-agentloop-是什么.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/阿里云刚发布的-agentloop-是什么.md)
 
 AgentLoop 是阿里云面向企业级智能体推出的一站式自进化平台，定位为帮助企业将 Agent 从"能用"提升到"好用"的工程平台。它不是 Agent 开发框架，也不是模型训练平台，而是专注于 Agent 的**观测、评估、实验与持续优化**的闭环体系。
 
@@ -77,8 +77,8 @@ AgentLoop 的"Agent + Harness → 观测 → 评估 → 优化"链路，与 [Har
 - [Agent Harness 生产化](../ch05/039-agent-harness.html)
 - [Harness Engineering 2026 全景](../ch05/116-harness-engineering.html)
 - [Agent 评测方法论与体系设计](../ch03/046-agent.html)
-- [阿里云 AI 实践](../ch05/089-ai.html)
-- [Agent Teams 群聊模式](../ch01/430-claude.html)
+- [阿里云 AI 实践](../ch05/090-ai.html)
+- [Agent Teams 群聊模式](../ch01/429-claude.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent 可观测性](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-observability.md)
 

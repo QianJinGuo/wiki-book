@@ -139,7 +139,7 @@ os.replace(tmp_path, str(path))  # 原子操作
 
 4. **团队能力建设**：培养具备 AI 时代所需技能的工程团队
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hermes-agent-memory-system-three-layer-architecture.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-memory-system-three-layer-architecture.md)
 
 ## 相关实体
 

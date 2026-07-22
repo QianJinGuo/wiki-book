@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/agent架构关键变化harness正在成为新后端.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent架构关键变化harness正在成为新后端.md)
-从微信文章 [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent架构关键变化harness正在成为新后端.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent架构关键变化harness正在成为新后端.md)
+从微信文章 [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent架构关键变化harness正在成为新后端.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/VYZq3CzaQ72-gq1FlzniMw
@@ -31,7 +31,7 @@ related:
   - [Harness 工程化体系](../ch05/116-harness-engineering.html)
   - [Context Management 与 Working Set](../ch05/039-agent-harness.html)
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/116-harness-engineering.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/678-claude-managed-agents.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/520-claude-managed-agents.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html)
 - [Agent Harness 12 组件与 7 个关键决策](../ch05/039-agent-harness.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/116-harness-engineering.html)
@@ -70,7 +70,7 @@ related:
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/018-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/046-agent.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/366-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/616-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/116-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/227-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/116-harness-engineering.html)

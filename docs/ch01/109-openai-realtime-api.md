@@ -12,12 +12,12 @@
 
 ## 相关实体
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/703-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
-- [Openai Gpt Realtime Voice Models Qbitai](ch01/791-openai-gpt-realtime-voice-models-qbitai.html)
+- [Openai Gpt Realtime Voice Models Qbitai](ch01/790-openai-gpt-realtime-voice-models-qbitai.html)
 - [Aliyun Agentrun 2Line Integration](../ch04/366-agentrun.html)
-- [Pi Mono Github](ch01/801-pi-mono-github.html)
+- [Pi Mono Github](ch01/800-pi-mono-github.html)
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-realtime-api-architecture.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-realtime-api-architecture.md)
 
 - [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](ch01/168-openai.html)
 
@@ -45,7 +45,7 @@
 
 **在系统可观测性建设中，状态集中是双刃剑——简化了问题定位，但也意味着 transceiver 成为单点**。需要在 transceiver 侧增加完善的 metrics、traces 和健康检查机制，确保状态集中带来的可见性优势不被故障定位的复杂性抵消。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai-realtime-api-architecture.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-realtime-api-architecture.md)
 
 ---
 

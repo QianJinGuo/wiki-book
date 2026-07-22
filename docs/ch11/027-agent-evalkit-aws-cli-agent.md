@@ -6,7 +6,7 @@
 
 # Agent-EvalKit：AWS 开源 CLI Agent 评测工具包
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit.md)
 
 AWS 2026-06-11 开源（Apache 2.0）的 Agent 评测工具包，定位是**"用 AI 编码助手本身做评测引擎"**——Claude Code / Kiro CLI / Kilo Code 通过 slash command (`/evalkit.*`) 直接驱动整个评测流程，无需独立评测平台。该工具包在 [GitHub awslabs/Agent-EvalKit](https://github.com/awslabs/Agent-EvalKit) 维护。
 
@@ -92,11 +92,11 @@ Agent-EvalKit 团队在 Strands Agents SDK + Bedrock 旅行研究 agent 上跑 1
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/018-harness.html) — 阿里云泊予用 Claude Code 搭建评测 Harness
 - [Langsmith Evaluation Concepts](../ch03/131-langsmith-evaluation-concepts.html) — LangSmith 评测概念框架
 - [Agent Harness Observability Production](../ch05/039-agent-harness.html) — Agent harness 生产可观测性
-- [Agent Memory Evaluation Landscape Taobao Survey](../ch04/099-agent-memory.html) — Agent 记忆评估方法论全景
+- [Agent Memory Evaluation Landscape Taobao Survey](../ch04/121-agent-memory.html) — Agent 记忆评估方法论全景
 - [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](../ch03/046-agent.html)
 - [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](../ch04/289-aws-security-agent.html)
 
-- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](../ch05/089-ai.html)
+- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](../ch05/090-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 ## 深度分析
@@ -143,7 +143,7 @@ Trace 阶段自动检测 Strands/LangGraph/CrewAI 框架并应用对应 instrume
 
 Agent-EvalKit 擅长针对特定 agent 生成定制化评测方案，但团队仍需要一套系统的评测策略框架。参见 [Agent Evaluation Benchmarks](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) 了解评测维度的理论背景，结合 agent 的具体能力边界设计有针对性的评测方案。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit.md)
 
 ---
 

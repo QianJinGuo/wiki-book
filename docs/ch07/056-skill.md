@@ -56,25 +56,25 @@
 3. **单模型多视角评估可作为多模型验证的降级方案**。让同一模型扮演严格派/务实派/温和派三个评审角色，强制引入多样性视角。角色分化后的分歧（如 D4 一个给 5 分一个给 8 分）本身就有分析价值
 4. **采用场景路由表设计提升输入输出清晰度**。subordinate-weekly-report 的场景路由表设计可借鉴——每个 action 配置完整的输入输出示例，让 Agent 能快速匹配用户意图，降低理解成本
 5. **Skill 完成后用多模型横向对比选型**。对同类 Skill 分别独立评估，对比 D1-D8 各维度得分和共识度，识别各自优势领域（workos-weekly 领域知识密度更高，subordinate-weekly-report 元数据质量更优），选择时各取所长
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ni-xie-de-skill-ji-ge-liao-ma.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ni-xie-de-skill-ji-ge-liao-ma.md)
 
 ## 相关实体
-- [Skill.md 简历生成器 Resume Forge](../ch04/267-skill.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/265-agent-skill.html)
+- [Skill.md 简历生成器 Resume Forge](../ch04/266-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/610-agent-skill.html)
 - [Hermes Agent](../ch03/092-hermes-agent.html)
 - [Qoder Skills 完全指南](ch07/034-qoder-skills.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/402-aws-sagemaker-ai-agent.html)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/267-skill.html)
-- [SkillClaw](../ch04/451-skillclaw-nacos-agent-skill-registry.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/403-aws-sagemaker-ai-agent.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/266-skill.html)
+- [SkillClaw](../ch04/452-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/267-skill.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/266-skill.html)
 - [SkillX — 层次化技能知识库](ch07/052-skillx.html)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/251-anthropic-agent.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/396-agent-skills.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/100-anthropic-agent.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/397-agent-skills.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch07/034-qoder-skills.html)
-- [Thin Harness Fat Skills](../ch05/080-thin-harness-fat-skills-ai.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/204-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [Thin Harness Fat Skills](../ch05/081-thin-harness-fat-skills-ai.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/203-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 ---
 

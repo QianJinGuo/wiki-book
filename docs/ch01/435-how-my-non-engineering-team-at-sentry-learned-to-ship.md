@@ -6,7 +6,7 @@
 
 # How my non-engineering team at Sentry learned to ship
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
 
 ## 摘要
 
@@ -70,11 +70,11 @@ Sentry 给每种页面类型写了 Skills（AI 指令文件）：landing pages�
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1129-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/292-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1131-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [DDoSing Software Delivery Pipelines](ch01/886-20.html)
-- [Unexpected lessons from an AI-assisted prototyping experiment](../ch05/089-ai.html)
+- [DDoSing Software Delivery Pipelines](ch01/885-20.html)
+- [Unexpected lessons from an AI-assisted prototyping experiment](../ch05/090-ai.html)
 
 ## 实践启示
 
@@ -89,7 +89,7 @@ Sentry 给每种页面类型写了 Skills（AI 指令文件）：landing pages�
 
 - [http://read.technically.dev/p/how-matt-learned-to-ship](http://read.technically.dev/p/how-matt-learned-to-ship)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
 
 ## 相关实体
 

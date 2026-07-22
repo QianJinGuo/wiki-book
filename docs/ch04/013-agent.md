@@ -16,7 +16,7 @@
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/018-harness.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/076-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pi-agent-framework-event-bus-design.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pi-agent-framework-event-bus-design.md)
 
 ## 深度分析
 

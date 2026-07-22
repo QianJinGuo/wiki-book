@@ -33,17 +33,17 @@
 - [Claude Code Subagent 上下文卫生](../ch04/302-claude-code-subagent.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
-- [claude-code-agent-view](../ch09/001-claude-code-agent-view.html)
-- [Claude Opus 4.7 发布分析](../ch01/362-claude-opus-4-7.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/396-agent-skills.html)
+- [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
+- [Claude Opus 4.7 发布分析](../ch01/359-claude-opus-4-7.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/397-agent-skills.html)
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/030-ai-agent.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/456-anthropic-ai.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/457-anthropic-ai.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/076-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/046-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/430-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/429-claude.html)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/076-claude-code.html)
-- [Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](../ch01/231-anthropic-prompt-caching-claude-code.html)
+- [Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](../ch01/228-anthropic-prompt-caching-claude-code.html)
 
 ## 深度分析
 ### 使命驱动 vs 流程驱动：Anthropic 的双重护城河
@@ -81,7 +81,7 @@ Cat 的逻辑很清晰：95% 自动化意味着你仍然需要人工介入，等
 5. **角色融合准备**：PM 需要具备基础工程判断力，工程师需要培养产品品味，设计师可能需要能提交代码——技能边界正在消失
 6. **模型进化适配**：定期审视产品中为模型弱点添加的 "拐杖"，在模型能力提升后主动移除，而非固守原有设计
 7. **并发思维**：从单任务向 50-100+ 并行 Agent 演进是必然方向，产品设计需要提前考虑远程任务管理、信任验证和介入时机
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cat-wu-anthropic-pm-interview.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cat-wu-anthropic-pm-interview.md)
 
 ---
 

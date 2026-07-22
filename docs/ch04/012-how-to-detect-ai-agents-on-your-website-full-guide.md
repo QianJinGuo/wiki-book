@@ -6,7 +6,7 @@
 
 # How to Detect AI Agents on Your Website
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/detect-ai-agents-website.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/detect-ai-agents-website.md)
 
 ## 摘要
 
@@ -74,7 +74,7 @@ Google 发布了网站 agent-ready 指南，明确包含视觉 UI 优化（Agent
 
 ## 相关实体
 
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](ch04/535-amazon-bedrock-agentcore.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](ch04/537-amazon-bedrock-agentcore.html)
 - [Your AI Agents Are Already Inside the Perimeter](ch04/030-ai-agent.html)
 - [Chrome Enterprise Policies on Amazon Bedrock AgentCore](../ch11/133-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [AI-powered honeypots](../ch01/085-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)

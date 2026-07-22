@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 17.3KB | `entities/static-devirtualization-themida.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/back-engineering-static-devirtualization-themida.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/back-engineering-static-devirtualization-themida.md)
 
 ## 摘要
 
@@ -143,7 +143,7 @@ Back Engineering Labs 方法的核心洞察是：去虚拟化的主要工作量�
 
 ## 相关实体
 
-- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/back-engineering-static-devirtualization-themida.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/back-engineering-static-devirtualization-themida.md)
 - [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki/blob/main/entities/back-engineering-static-devirtualization-themida.md)（另一版本）
 - [Static Devirtualization of Themida](ch12/100-static-devirtualization-of-themida.html)（另一版本）
 

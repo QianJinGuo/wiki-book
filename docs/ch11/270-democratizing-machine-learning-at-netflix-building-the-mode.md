@@ -6,7 +6,7 @@
 
 # Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
 
 ## 深度分析
 
@@ -37,10 +37,10 @@ As our ML investments scaled across these domains, a critical problem emerged: t
 - **data趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/616-agentic.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/227-openclaw.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/682-karpathy-vibe-coding-agentic-engineering.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1129-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1131-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/227-openclaw.html)
 

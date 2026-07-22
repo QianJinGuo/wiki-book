@@ -307,14 +307,14 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 - 后续 Phase 1/2/3 部署的所有组件都会产生追踪数据
 - 迁移完成后的调试高度依赖完整的调用链追踪
 - CloudWatch Logs 与 X-Ray 的集成是排错的基础设施
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
 
 ## 相关实体
 - [OpenClaw多租户迁移: Phase 2&3部署](ch11/227-openclaw.html)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/285-amazon-nova.html)
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/058-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/666-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/535-amazon-bedrock-agentcore.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/537-amazon-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/278-bedrock.html)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/719-from-siloed-data-to-unified-insights-cross-account-athena-a.html)

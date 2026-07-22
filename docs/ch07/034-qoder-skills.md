@@ -61,7 +61,7 @@
 - **用户级安装**: `~/.qoder/skills/` — 个人偏好、跨项目通用
 - **项目级安装**: `<项目根>/.qoder/skills/` — 团队规范、项目特定流程（推荐提交到 Git）
 ---
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
 
 ## 深度分析
 **Qoder Skills 的本质是"知识封装"而非"工具集成"**。与传统的 prompt 模板或固定指令不同，Skill 通过三级渐进式披露机制（YAML meta → SKILL.md → scripts/references/assets）实现了"按需加载"的知识管理范式。这种设计让 AI 在每次执行时只加载必要的上下文，避免了上下文窗口的浪费，同时保留了深度执行复杂任务的能力。
@@ -79,23 +79,23 @@
 
 ## 相关实体
 - [qoder skills](ch07/034-qoder-skills.html)
-- [Agent/Skills/Teams 架构演进过程及技术选型之道](../ch04/236-agent-skills-teams.html)
+- [Agent/Skills/Teams 架构演进过程及技术选型之道](../ch04/235-agent-skills-teams.html)
 - [Agent 时代架构师技能指南](../ch03/070-skills.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/265-agent-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/610-agent-skill.html)
 - [Hermes Agent](../ch03/092-hermes-agent.html)
-- [你写的 Skill，及格了吗？](../ch04/267-skill.html)
+- [你写的 Skill，及格了吗？](../ch04/266-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/402-aws-sagemaker-ai-agent.html)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/267-skill.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/403-aws-sagemaker-ai-agent.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/266-skill.html)
 - [SkillX — 层次化技能知识库](ch07/052-skillx.html)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/251-anthropic-agent.html)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/267-skill.html)
-- [SkillClaw](../ch04/451-skillclaw-nacos-agent-skill-registry.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/100-anthropic-agent.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/266-skill.html)
+- [SkillClaw](../ch04/452-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/396-agent-skills.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/204-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Thin Harness Fat Skills](../ch05/080-thin-harness-fat-skills-ai.html)
-- [Code Intelligence Changelog](../ch04/476-code-intelligence-changelog.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/397-agent-skills.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/203-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [Thin Harness Fat Skills](../ch05/081-thin-harness-fat-skills-ai.html)
+- [Code Intelligence Changelog](../ch04/477-code-intelligence-changelog.html)
 
 ---
 

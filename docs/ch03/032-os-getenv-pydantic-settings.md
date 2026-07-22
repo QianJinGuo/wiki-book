@@ -8,13 +8,13 @@
 #####  一个真实场景：凌晨三点，线上服务突然报错，翻遍日志发现是因为某个环境变量没传对类型，字符串当成了数字用。你盯着代码里散  落的  ` os.getenv  ` ，  想骂人却不知从何骂起。
 
 ## 相关实体
-- [Skill Development Guide Aliyun 2026](../ch04/267-skill.html)
+- [Skill Development Guide Aliyun 2026](../ch04/266-skill.html)
 - [Manus.Im Manus Schedules](https://github.com/QianJinGuo/wiki/blob/main/entities/manus.im-manus-schedules.md)
-- [Openclaw Multi Agent Team Practice](../ch04/048-openclaw-multi-agent-team-practice-v2.html)
+- [Openclaw Multi Agent Team Practice](../ch04/047-openclaw-multi-agent-team-practice-v2.html)
 - [Strands Agents Cloud Cost Optimizer](ch03/046-agent.html)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/还在手写-osgetenvpydantic-settings-让你配置管理效率翻倍.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/还在手写-osgetenvpydantic-settings-让你配置管理效率翻倍.md)
 
 ## 深度分析
 

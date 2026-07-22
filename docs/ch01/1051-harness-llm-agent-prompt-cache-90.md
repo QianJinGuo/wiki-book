@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [yoonho lee: text optimization as a legitimate learning mecha](https://github.com/QianJinGuo/wiki/blob/main/entities/yoonho-lee-text-optimization-as-legitimate-learning-mechanism.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 深度分析
@@ -47,10 +47,10 @@ Harness 工程分享：LLM Agent 的 prompt cache 命中率 90% 实战 涉及age
 ### 关联实体
 
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/116-harness-engineering.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/616-agentic.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/682-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/292-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
 
 ## 实践启示

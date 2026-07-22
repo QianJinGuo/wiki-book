@@ -14,7 +14,7 @@ Global Privacy Control Signal Detected
 - [五一活动来啦](https://github.com/QianJinGuo/wiki/blob/main/entities/五一活动来啦.md)
 - [升职那天我才明白自己是来填坑的](https://github.com/QianJinGuo/wiki/blob/main/entities/升职那天我才明白自己是来填坑的.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/grcnow.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/grcnow.md)
 
 ## 深度分析
 

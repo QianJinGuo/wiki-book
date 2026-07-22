@@ -13,14 +13,14 @@
 
 ## 相关实体
 - [Claude Code Prompt Context Harness](../ch09/060-claude-code-prompt.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/237-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/236-ahe-agentic-harness-engineering.html)
 - [Pi Openclaw Coding Harness](../ch11/227-openclaw.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/050-openspec.html)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/116-harness-engineering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
 
-- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch05/089-ai.html)
+- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch05/090-ai.html)
 ## 二、从"出码率"看"提效"背后的深层困境
 
 **原因1：研发是全链路，不仅仅是写代码**
@@ -142,7 +142,7 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 
 ## 第 2 来源 — 信息业务中心 (高德技术 2026-06-15)
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)
 > Author: 信息业务中心 (高德技术公众号)
 > Date: 2026-06-15
 
@@ -196,7 +196,7 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 
 ## 相关实体（更新）
 - [Claude Code Prompt Context Harness](../ch09/060-claude-code-prompt.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/237-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/236-ahe-agentic-harness-engineering.html)
 - [Pi Openclaw Coding Harness](../ch11/227-openclaw.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/050-openspec.html)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/116-harness-engineering.html)
@@ -204,8 +204,8 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 - [Harness Engineering 综述](ch05/116-harness-engineering.html)（相关：三阶段 Prompt→Context→Harness）
 - [Spec as AIOS (高德 App 平台)](../ch01/997-spec.html)（同团队同主题另一视角）
 
-→ [第 1 来源原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
-→ [第 2 来源原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)
+→ [第 1 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
+→ [第 2 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)
 
 ---
 

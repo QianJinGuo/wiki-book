@@ -60,7 +60,7 @@ AI 网关 Credits 体系并非完全取代传统 API 网关能力，而是在其
 
 5. **配合语义缓存进一步优化 Credits 消耗**：Credits 计量体系中缓存 Token 通常有独立且更低的单价。配合语义缓存（Semantic Cache）策略，对重复或高度相似请求命中缓存，可以显著降低整体 Credits 消耗，同时提升响应速度。这是一个在成本优化和用户体验之间取得双赢的方向。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-gateway-credits-quota-alibaba-cloud-native-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-gateway-credits-quota-alibaba-cloud-native-2026.md)
 
 ---
 

@@ -12,7 +12,7 @@
 
 ## 深入分析
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/seangoedeckecom-build-agents-not-pipelines.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/seangoedeckecom-build-agents-not-pipelines.md)
 
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=7, stars=4。
 
@@ -42,11 +42,11 @@ Pipeline并不比agent更安全：prompt injection在两种架构下攻击面相
 
 ## 相关主题
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/seangoedeckecom-build-agents-not-pipelines.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/seangoedeckecom-build-agents-not-pipelines.md)
 - [Claude Code Tool Design Evolution](../ch03/076-claude-code.html)
-- [RAG Chunking Optimization 2025](../ch01/1004-rag.html)
+- [RAG Chunking Optimization 2025](../ch01/1005-rag.html)
 - [Context Engineering: Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
-- [Karpathy: Vibe Coding to Agentic Engineering](ch04/235-agentic.html)
+- [Karpathy: Vibe Coding to Agentic Engineering](ch04/616-agentic.html)
 
 ---
 

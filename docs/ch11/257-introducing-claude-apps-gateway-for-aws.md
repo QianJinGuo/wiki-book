@@ -6,7 +6,7 @@
 
 # Introducing Claude apps gateway for AWS
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-claude-apps-gateway-for-aws.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-apps-gateway-for-aws.md)
 
 # Introducing Claude apps gateway for AWS
 

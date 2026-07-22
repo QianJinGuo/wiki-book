@@ -6,7 +6,7 @@
 
 # Unexpected lessons from an AI-assisted prototyping experiment
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 
 ## 摘要
 
@@ -90,13 +90,13 @@ Adobe Design 的 Veronica Peitong Chen 在 2026 年 6 月复盘了一个在 Adob
 
 ## 相关实体
 
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](../ch05/089-ai.html)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](../ch05/090-ai.html)
 - [system over model, tested: reproducing mythos's freebsd find](../ch12/030-mythos.html)
 - [from doer to director: the ai mindset shift](ch01/033-from-doer-to-director-the-ai-mindset-shift.html)
-- [DDoSing Software Delivery Pipelines](ch01/886-20.html)
+- [DDoSing Software Delivery Pipelines](ch01/885-20.html)
 - [How my non-engineering team at Sentry learned to ship](ch01/435-how-my-non-engineering-team-at-sentry-learned-to-ship.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 
 ---
 

@@ -91,10 +91,10 @@
 - [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](ch04/030-ai-agent.html)
 - [Aliyun Agentrun](ch04/366-agentrun.html)
 - [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](ch04/366-agentrun.html)
-- [Skill Development Guide Aliyun 2026](ch04/267-skill.html)
+- [Skill Development Guide Aliyun 2026](ch04/266-skill.html)
 - [Strands Agents Cloud Cost Optimizer](../ch03/046-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-agentrun-5min-quickstart.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-agentrun-5min-quickstart.md)
 - [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](ch04/366-agentrun.html)
 
 ---

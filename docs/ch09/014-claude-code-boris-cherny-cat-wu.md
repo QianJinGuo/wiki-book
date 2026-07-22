@@ -211,12 +211,12 @@ Claude Code 用一年时间，从两个 Slack 点赞走到了一个 PM 在写代
 
 - [Loop Engineering Addy Osmani Challengehub](../ch05/007-loop-engineering.html) — Loop 架构的工程实践
 - [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](../ch03/046-agent.html) — Boris Cherny 对开发工具演进方向的判断
-- [Claude Opus 4 7 Launch](../ch01/362-claude-opus-4-7.html) — Opus 4.7 的能力跃升
-- [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/944-anthropic.html) — Skills 系统的架构设计
+- [Claude Opus 4 7 Launch](../ch01/359-claude-opus-4-7.html) — Opus 4.7 的能力跃升
+- [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/1295-anthropic.html) — Skills 系统的架构设计
 - [Anthropic Mcp Revisited Tool Search Code Orchestration](../ch07/016-anthropic-mcp.html) — 工具调用与代码编排
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html) — Claude Code 源码的工程实现深度解读
-- [Kimi Work Beta Foundation Model Company Advantage](../ch01/1181-kimi.html) — 模型公司做 Agent 的战略逻辑
-- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01/944-anthropic.html) — 数据基础设施对 Agent 能力的影响
+- [Kimi Work Beta Foundation Model Company Advantage](../ch01/1183-kimi.html) — 模型公司做 Agent 的战略逻辑
+- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01/1295-anthropic.html) — 数据基础设施对 Agent 能力的影响
 - [claude code 一周年回顾：boris cherny + cat wu 对话](../ch03/076-claude-code.html)
 
 ## 第 2 来源 — 2026-06-30：子智能体默认后台运行
@@ -229,7 +229,7 @@ Claude Code 用一年时间，从两个 Slack 点赞走到了一个 PM 在写代
 
 **组织影响**：Anthropic 增长团队已转向多招产品经理——每位工程师产出翻三倍，PM 与工程师配比从 1:8 变为 1:20。Boris Cherny 本人已八个月没手写过代码，有时管理数千甚至上万个 AI 智能体。他总结「当后台子智能体成为标配，写代码不再是工程师最重要的事情，决定干什么、判断对不对才是」。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-background-sub-agents-boris-cherny-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-background-sub-agents-boris-cherny-2026.md)
 
 ---
 

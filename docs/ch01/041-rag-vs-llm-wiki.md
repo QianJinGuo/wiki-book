@@ -79,13 +79,13 @@ LLM Wiki 的质量上限由 Schema 决定：Schema 设计差，Wiki 层会系统
 
 ### 5. LLM Wiki 投入产出比的关键是 Schema 前瞻设计
 Schema 设计的失误在后期修正成本极高（需要重新 Ingest 全量文档）。建议用"最小可用 Schema"起步（只定义核心实体类型和必须的关系），通过 3-5 个真实查询案例验证 Schema 充分性后再扩展。Karpathy 的 LLM Wiki V2 的 5 项升级中，Schema 优化是核心。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rag-vs-llm-wiki-enterprise-knowledge-base.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rag-vs-llm-wiki-enterprise-knowledge-base.md)
 
 ## 相关实体
-- [5 Essential Multimodal RAG Capabilities for AI-Ready Knowledge Systems (NVIDIA)](ch01/1004-rag.html)
-- [向量库·知识图谱·本体论：RAG知识系统演进](ch01/1004-rag.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化](ch01/644-llm-wiki-obsidian-wiki-gbrain.html)
-- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](ch01/886-20.html)
+- [5 Essential Multimodal RAG Capabilities for AI-Ready Knowledge Systems (NVIDIA)](ch01/1005-rag.html)
+- [向量库·知识图谱·本体论：RAG知识系统演进](ch01/1005-rag.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化](ch01/643-llm-wiki-obsidian-wiki-gbrain.html)
+- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](ch01/885-20.html)
 - [knowledge base layer architecture: from rag to agent-native](https://github.com/QianJinGuo/wiki/blob/main/entities/pyramid-kb-knowledge-context-layer-banya.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
 

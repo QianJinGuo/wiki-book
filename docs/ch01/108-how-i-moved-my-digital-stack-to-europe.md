@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐ | 5.8KB | `entities/how-i-moved-my-digital-stack-to-europe.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-i-moved-my-digital-stack-to-europe.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-i-moved-my-digital-stack-to-europe.md)
 
 ## 相关实体
 
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1232-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1237-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 - [How Superset built the IDE for AI agents on Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [How we made WINDOW JOIN parallel and vectorized](ch01/035-how-we-made-window-join-parallel-and-vectorized.html)
 
@@ -64,7 +64,7 @@
 2. 例外管理很重要，不必追求 100% 迁移
 3. S3 兼容性等开放标准是欧洲生态系统的关键黏合剂
 4. 自托管工具（Matomo、Bugsink）在隐私和功能之间找到了新的平衡点
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-i-moved-my-digital-stack-to-europe.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-i-moved-my-digital-stack-to-europe.md)
 
 ---
 

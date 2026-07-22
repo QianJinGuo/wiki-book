@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 16.5KB | `entities/tencent-ai-team-knowledge-mgmt-harness-moat.md`
 
-[Tencent Ai Team Knowledge Mgmt Harness Moat](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tencent-ai-team-knowledge-mgmt-harness-moat.md)
+[Tencent Ai Team Knowledge Mgmt Harness Moat](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-ai-team-knowledge-mgmt-harness-moat.md)
 
 # "Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践"
 # Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践
@@ -157,7 +157,7 @@ log.md 只追加不修改确保了知识变更的历史完整性；evidence.cont
 以上行动项可以渐进实施，但有一个前提：**团队需要将知识视为与代码同等重要的资产**。当团队默认"工作流做完就结束了，不需要沉淀知识"时，任何工具和流程都无效。知识工程的文化基础是：每一次踩坑后的总结都是团队财富，而不只是个人记忆。^
 一旦这个认知建立，工具和流程只是放大这个价值的手段。Git 仓库、Lint 机制、三级 maturity 系统、渐进式索引——这些都只是知识复利系统的工程实现。^
 **关联阅读**
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tencent-ai-team-knowledge-mgmt-harness-moat.md)（本文为腾讯技术工程公众号下篇）
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-ai-team-knowledge-mgmt-harness-moat.md)（本文为腾讯技术工程公众号下篇）
 → 腾讯知识沉淀体系（同一作者上篇）
 → （Harness 六层构成与行业实践）
 → （多层记忆系统与长时稳定性）

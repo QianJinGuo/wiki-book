@@ -14,7 +14,7 @@ Figma Make 新的本地代码库编辑功能，支持直接代码库连接和注
 
 ---
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/figma-make-now-on-your-local-code-3e6a33.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/figma-make-now-on-your-local-code-3e6a33.md)
 
 ## 深度分析
 

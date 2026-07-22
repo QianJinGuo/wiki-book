@@ -7,12 +7,12 @@
 ## 核心要点
 - AI product announcement
 - Technical release details
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pytorch212releaseblogpytorch.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch212releaseblogpytorch.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
-- [PyTorch 2.12 Release Blog – PyTorch](ch01/217-pytorch-2-12-release-blog.html)
+- [PyTorch 2.12 Release Blog – PyTorch](ch01/214-pytorch-2-12-release-blog.html)
 - [PyTorch 2.12 Release Blog – PyTorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
 
 ## 深度分析

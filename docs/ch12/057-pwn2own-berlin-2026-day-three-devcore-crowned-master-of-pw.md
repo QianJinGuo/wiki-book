@@ -7,7 +7,7 @@
 ## 核心要点
 - 来源：securityaffairs
 - 评分：v=7 × c=8
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/pwn2own-berlin-2026-day-three-devcore-crowned-master-of-pwn-1298-million-total.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pwn2own-berlin-2026-day-three-devcore-crowned-master-of-pwn-1298-million-total.md)
 
 ## 事件概述
 Pwn2Own Berlin 2026 于 5 月 16 日在 OffensiveCon 落下帷幕，为期三天的比赛共发现 47 个独立零日漏洞，发放总奖金 $1,298,250。DEVCORE 研究团队以 50.5 Master of Pwn 积分和 $505,000 奖金的绝对优势夺得冠军，刷新了近年来历届比赛的纪录。

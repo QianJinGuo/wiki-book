@@ -118,7 +118,7 @@ Harness Engineering 的兴起标志着 AI 工程的重心从"提高模型智商"
 - [注意力崩溃与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/为什么-2026-年真正重要的是-harness-engineering.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/为什么-2026-年真正重要的是-harness-engineering.md)
 
 ---
 

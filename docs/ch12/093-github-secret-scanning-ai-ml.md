@@ -6,7 +6,7 @@
 
 # GitHub Secret Scanning: AI/ML 驱动的大规模误报降低
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
 
 ## 摘要
 
@@ -73,7 +73,7 @@ GitHub 采用的是典型的"广度+深度"两级安全架构：
 - [bagel Fleet 级 Secret Scanning](ch12/055-bagel-fleet-secret-scanning.html)
 - [Claude Code Security Incident](../ch03/076-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
 
 ---
 

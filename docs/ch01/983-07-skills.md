@@ -101,7 +101,7 @@ JSON 参数
 
 它和提示词最大的区别就是 它是按需注入的 ，如果你把"怎么写日报"这段方法论塞到系统提示词里，
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/第-07-篇-skills方法论的标准化调用.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/第-07-篇-skills方法论的标准化调用.md)
 
 ---
 

@@ -40,7 +40,7 @@ Nacos Skill Sync 的 Local mode 在本机建立中心仓库，通过软链接或
 - **Nacos AI Registry**：远端统一存储，支持命名空间隔离、安全扫描、版本灰度发布
 - **SkillClaw 工具**：打通"产生-治理-分发"全链路闭环
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-governance-nacos-ai-registry-aliyun-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-governance-nacos-ai-registry-aliyun-2026.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
 
 ## 摘要
 
@@ -95,7 +95,7 @@ Papernot 团队的措辞很值得注意："It was imperative for us to understan
 - [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/030-ai-agent.html)
 - [Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](ch12/040-disgruntled-researcher-releases-two-more-microsoft-zero-days.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/616-agentic.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/227-openclaw.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/116-harness-engineering.html)
@@ -103,7 +103,7 @@ Papernot 团队的措辞很值得注意："It was imperative for us to understan
 - [Agent Security Threat Models](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md)
 - [Llm Security Red Teaming](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-security-red-teaming.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
 
 ---
 

@@ -14,11 +14,11 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/self-learning-evolvable-agents-for-cultural-tourism-info-extraction-with-agentcore/)
 
 ## 相关实体
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/219-self-evolving-agents.html)
-- [Self-Evolving Agents 系统性综述](../ch04/219-self-evolving-agents.html)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/535-amazon-bedrock-agentcore.html)
-- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/535-amazon-bedrock-agentcore.html)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/142-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/218-self-evolving-agents.html)
+- [Self-Evolving Agents 系统性综述](../ch04/218-self-evolving-agents.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/537-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/537-amazon-bedrock-agentcore.html)
 
 ## 深度分析
 **1. "近似文本"是文旅行业信息抽取的核心难题**
@@ -28,7 +28,7 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 **3. OTA 报价单处理的工程化启示：文档理解 vs. 信息抽取**
 从实体描述推断：这个 use case 涉及 Word、Excel、PDF 等多种格式的非结构化文档处理。这揭示了一个在 AI Agent 领域常被低估的工程复杂度：多格式文档解析（Document Parsing）本身就是独立的难题——PDF 的表格结构提取、Excel 的合并单元格、Word 的修订痕迹处理，每一个都比纯文本抽取复杂得多。一个能在文旅行业落地的 Agent 系统，文档解析层的能力直接决定了上层信息抽取质量的天花板。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/intelligent-cost-analysis-and-alerting-system-powered-by-bedrock-agentcore.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/intelligent-cost-analysis-and-alerting-system-powered-by-bedrock-agentcore.md)
 
 ## 实践启示
 **1. 近似文本领域的信息抽取评估指标设计**

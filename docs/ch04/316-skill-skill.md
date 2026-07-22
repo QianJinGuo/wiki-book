@@ -6,7 +6,7 @@
 
 # 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/一份可信来源终结-skill-管理混乱skill-治理最佳实践.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一份可信来源终结-skill-管理混乱skill-治理最佳实践.md)
 
 # 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
 

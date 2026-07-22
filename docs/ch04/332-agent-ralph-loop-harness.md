@@ -19,7 +19,7 @@
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/018-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/长周期-agent-详解-从-ralph-loop-到可接管-harness.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/长周期-agent-详解-从-ralph-loop-到可接管-harness.md)
 
 ## 深度分析
 

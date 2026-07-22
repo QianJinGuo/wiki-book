@@ -110,7 +110,7 @@ Middleware 链会增加每次调用的延迟：
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/018-harness.html)
 - [Skillsui](ch03/101-skillsui.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/developers.googleblog-announcing-genkit-middleware-intercept-extend-and-harden-y.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/developers.googleblog-announcing-genkit-middleware-intercept-extend-and-harden-y.md)
 
 ## 标签
 #genkit #middleware #agent-framework #reliability #go #typescript #dart #python

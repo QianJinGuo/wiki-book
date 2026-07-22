@@ -69,7 +69,7 @@ Strands 的 @tool decorator 机制展示了工具增强型代理（Tool-Augmente
 - [Firecracker Bedrock Agentcore Multi Tenant](../ch11/050-bedrock-agentcore.html)
 - [Serverless Langgraph Multi Agent Aws](../ch11/228-multi-agent-aws.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-research-assistant-from-idea-to-app.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-research-assistant-from-idea-to-app.md)
 
 ---
 

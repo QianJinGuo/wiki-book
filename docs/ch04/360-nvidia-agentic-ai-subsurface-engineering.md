@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/nvidia-agentic-ai-subsurface-engineering.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidia-agentic-ai-subsurface-engineering.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-agentic-ai-subsurface-engineering.md)
 # Agentic AI for Subsurface Engineering Simulation (NVIDIA)
 ## 核心要点
 - 来源：NVIDIA Developer Blog
@@ -13,7 +13,7 @@
 ## 知识关联
 本文档来自 RSS 评估入库的 NVIDIA 开发者博客文章。
 ## 来源
-[原文存档（NVIDIA Developer Blog）](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nvidia-agentic-ai-subsurface-engineering.md)
+[原文存档（NVIDIA Developer Blog）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-agentic-ai-subsurface-engineering.md)
 ---
 ## 深度分析
 ### Agentic AI 在工业仿真的范式意义
@@ -47,10 +47,10 @@ NVIDIA 将 subsurface 仿真整合到 Omniverse（工业数字化平台）和 DR
 2. **DRIVE 生态的类比扩展路径**：DRIVE 是自动驾驶的仿真平台，Omniverse 是通用工业仿真平台。两者在 Agentic AI 方向的演进路径可能相互借鉴——例如 DRIVE 中的场景感知 → Omniverse 中的物理场感知
 ---
 ## 相关实体
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/204-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](ch04/235-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/203-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](ch04/616-agentic.html)
 - Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/682-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 ---

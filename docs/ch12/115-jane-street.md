@@ -6,7 +6,7 @@
 
 # Jane Street — 形式化方法与编程的未来
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/jane-street-formal-methods-future-programming.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jane-street-formal-methods-future-programming.md)
 
 ## 概述
 
@@ -46,7 +46,7 @@ Jane Street 工程师在 2026-06 发表的一篇立场文章，**核心论点是
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/jane-street-formal-methods-future-programming.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jane-street-formal-methods-future-programming.md)
 
 ---
 

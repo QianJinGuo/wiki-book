@@ -9,12 +9,12 @@ Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes fr
 
 ## 相关实体
 - [Notes From Inside Chinas Ai Labs](ch09/127-notes-from-inside-chinas-ai-labs.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/541-score-by-collisions-patch-by-panic.html)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/833-google-adds-llms-txt-check-to-chrome-lighthouse.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/381-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [Agentcore Managed Harness](../ch04/223-agentcore-managed-harness.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/543-score-by-collisions-patch-by-panic.html)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/832-google-adds-llms-txt-check-to-chrome-lighthouse.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/382-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Agentcore Managed Harness](../ch04/222-agentcore-managed-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/notes-inside-china-ai-labs-lambert.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/notes-inside-china-ai-labs-lambert.md)
 
 ## 深度分析
 

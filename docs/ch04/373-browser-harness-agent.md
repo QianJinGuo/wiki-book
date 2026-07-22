@@ -100,7 +100,7 @@ browser-harness --setup
 也可在 Claude Code 或 Codex 中通过 Prompt 引导安装（自动执行 install.md）。
 
 ## Related
-- [原始存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/browser-harness-github.md)
+- [原始存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/browser-harness-github.md)
 
 ---
 

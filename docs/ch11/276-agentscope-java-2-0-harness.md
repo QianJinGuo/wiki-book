@@ -6,7 +6,7 @@
 
 # AgentScope Java 2.0：企业级分布式 Harness 框架
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentscope-java-2.0-enterprise-distributed-harness.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentscope-java-2.0-enterprise-distributed-harness.md)
 
 ## 摘要
 
@@ -303,7 +303,7 @@ feishu:<tenantKey>:<chatId>  → SHA-256 → UUID → coding agent thread
 3. **参数截断**：`write_file` 大入参截掉（已写进文件）
 4. **溢出兜底**：撞 `context_length_exceeded` 紧急压缩后重试
 
-→ [第 2 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/coding-agent-second-half-org-level-rd-system-agentscope-2026.md)
+→ [第 2 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/coding-agent-second-half-org-level-rd-system-agentscope-2026.md)
 
 ## 深度分析
 
@@ -325,7 +325,7 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 
 ### Open SWE 与 AgentScope 的殊途同归
 
-从 [第 2 源](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/coding-agent-second-half-org-level-rd-system-agentscope-2026.md) 可以看到，Stripe Minions / Ramp Inspect / Coinbase Cloudbot 三个团队独立开发，最终收敛到相同架构：per-session 沙箱 + 确定性 thread ID 路由 + middleware 拦截链 + draft PR 契约。这是"工程问题倒逼架构收敛"的典型案例，说明企业级 Coding Agent 的核心挑战（隔离、路由、降级、安全输出）具有普遍性，AgentScope 是这一收敛趋势在 Java 生态中的具体实现。
+从 [第 2 源](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/coding-agent-second-half-org-level-rd-system-agentscope-2026.md) 可以看到，Stripe Minions / Ramp Inspect / Coinbase Cloudbot 三个团队独立开发，最终收敛到相同架构：per-session 沙箱 + 确定性 thread ID 路由 + middleware 拦截链 + draft PR 契约。这是"工程问题倒逼架构收敛"的典型案例，说明企业级 Coding Agent 的核心挑战（隔离、路由、降级、安全输出）具有普遍性，AgentScope 是这一收敛趋势在 Java 生态中的具体实现。
 
 ## 架构图
 → [C4 架构图](assets/c4/agentscope-java-2.0-enterprise-distributed-harness-c4.html)
@@ -334,13 +334,13 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/039-agent-harness.html)
 - [Subagents 详解Claude Code 如何避免上下文污染](../ch03/076-claude-code.html)
-- [Factory Mission Multi Agent Architecture](../ch01/1203-factory-mission-multi-agent-architecture.html)
+- [Factory Mission Multi Agent Architecture](../ch01/1205-factory-mission-multi-agent-architecture.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/116-harness-engineering.html)
-- [Iii Dev Worker Trigger Function](../ch01/209-iii-dev-worker.html)
+- [Iii Dev Worker Trigger Function](../ch01/206-iii-dev-worker.html)
 - [AgentScope Java Harness Framework 42KB](../ch05/018-harness.html) — 同 AgentScope Java 2.0 早期综述
 - [AgentScope Builder](../ch05/039-agent-harness.html) — 同生态自进化视角
 - [Loop Engineering](../ch05/007-loop-engineering.html) — 同样强调"组织级流程约束"
-- [MXC Execution Containers](../ch05/089-ai.html) — 类似沙箱机制对比
+- [MXC Execution Containers](../ch05/090-ai.html) — 类似沙箱机制对比
 - [Agent Harness Engineering Survey](../ch05/116-harness-engineering.html) — Harness 行业全景
 
 ## 实践启示

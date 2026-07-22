@@ -6,7 +6,7 @@
 
 > [!abstract]
 > AWS China Blog 2026-06-12 架构指南：在 AWS 上以生产级标准部署 LiteLLM AI Gateway。两条路径：ECS Fargate（零运维、Serverless）与 EKS（K8s 原生、灵活），并结合 Control Plane / Data Plane 分离实现多区域高可用。
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/litellm-生产级部署基于-aws-ecseks-的-ai-gateway-架构.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-生产级部署基于-aws-ecseks-的-ai-gateway-架构.md)
 
 ## 选型决策矩阵
 
@@ -122,7 +122,7 @@ autoscaling:
 
 ## 关键引用清单
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/litellm-生产级部署基于-aws-ecseks-的-ai-gateway-架构.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-生产级部署基于-aws-ecseks-的-ai-gateway-架构.md)
 - [LiteLLM Bedrock 成本治理](ch11/042-litellm-amazon-bedrock.html) — 姐妹篇（运行时限额 + 审计）
 - [LiteLLM + QuickSight 可视化](ch11/216-amazon-quick.html) — 姐妹篇（运维监控）
 - [AWS NFW AI 冲突检测](ch11/125-aws-network-firewall-ai.html) — NFW 与 ECS/EKS 部署组合使用

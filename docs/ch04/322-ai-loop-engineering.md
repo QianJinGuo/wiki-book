@@ -57,7 +57,7 @@ Loop Engineering 并没有让工程师消失——它只是把工程师的工作
 - [Aliyun Loop Engineering Log Scan Auto Fix Deploy](../ch05/007-loop-engineering.html) — 阿里云 Loop Engineering 的日志扫描自修复实战
 - [Ant Group Medical Agent Afu](../ch03/046-agent.html) — 蚂蚁医疗 Agent 的 Harness Engineering，对比 Loop 架构的适用边界
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/一文看懂-ai-编程智能体工程化新范式loop-engineering.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一文看懂-ai-编程智能体工程化新范式loop-engineering.md)
 
 ---
 

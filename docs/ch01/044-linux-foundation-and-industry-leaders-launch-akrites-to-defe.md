@@ -46,7 +46,7 @@ Confidentiality is central to the effort. Bug fixes flow back into each project�
 
 "The software supply chain is only as strong as the upstream it draws from, and we see how thin that layer really is. As AI finds more vulnerabilities, the industry will rush to patch them. Without coordination, those fixes will fragment across different patches and forks, and maintainers who are already overwhelmed, unreachab
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/press-linux-foundation-and-industry-leaders-launch-akrites-to-defend-critical-op.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/press-linux-foundation-and-industry-leaders-launch-akrites-to-defend-critical-op.md)
 
 ---
 

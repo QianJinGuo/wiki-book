@@ -50,14 +50,14 @@ AWS 在 2026-06 发布的一篇 IDP（智能文档处理）架构深度文章，
 ## 与现有 wiki 实体的关联
 
 - [optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat](../ch12/041-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.html) — 同 BDA 平台，本文是 IDP 4 层架构全景，optimize-blueprint 是单点 blueprint 优化深度
-- [building-supercharger-how-rocket-close-optimized-title-opera](../ch04/200-building-supercharger-how-rocket-close-optimized-title-oper.html) — 金融场景生产 case study (Rocket Close)，Strands Agents + Bedrock + MCP
-- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](../ch04/535-amazon-bedrock-agentcore.html) — AgentCore Runtime 深度（与本文 Strands on AgentCore 对应）
+- [building-supercharger-how-rocket-close-optimized-title-opera](../ch04/199-building-supercharger-how-rocket-close-optimized-title-oper.html) — 金融场景生产 case study (Rocket Close)，Strands Agents + Bedrock + MCP
+- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](../ch04/537-amazon-bedrock-agentcore.html) — AgentCore Runtime 深度（与本文 Strands on AgentCore 对应）
 - [process-financial-documents-using-amazon-bedrock-data-automa](ch11/159-amazon-bedrock.html) — 金融文档 BDA 案例
 - [automate-schema-generation-for-intelligent-document-processing](ch11/168-automate-schema-generation-for-intelligent-document-processi.html) — schema 自动生成（与 BDA blueprint 互补）
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/from-pdfs-to-insights-architecting-an-intelligent-document-p.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-pdfs-to-insights-architecting-an-intelligent-document-p.md)
 
 ---
 

@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/vietnam-domestic-cloud.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vietnam-domestic-cloud.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-domestic-cloud.md)
 
 ## 核心要点
 - value=7, confidence=8, product=56
 - Vietnam cloud decision accurate sourcing
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vietnam-domestic-cloud.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-domestic-cloud.md)
 
 ## 深度分析
 **1. 主权云的地缘政治逻辑：数据本地化不仅是合规，更是战略自主**
@@ -36,7 +36,7 @@ Decision 808 列表包含 20 项战略技术，云计算排名第 13，其他包
 相对于中美等大国的科技政策动态，越南这类中等国家的主权云决策往往被忽视。但这类决策对在当地运营的企业有直接影响。跨国企业的合规和 IT 战略团队应建立"中等国家技术政策"的信息监测机制，提前识别类似决策对业务的影响。
 
 ## 相关实体
-- [5237660 Sovereign Cloud Gartner](../ch01/1211-0.html) — Gartner 主权云分析：仅中美有能力实现完全主权云的判断，越南是典型困境案例
+- [5237660 Sovereign Cloud Gartner](../ch01/1213-0.html) — Gartner 主权云分析：仅中美有能力实现完全主权云的判断，越南是典型困境案例
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](ch11/218-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 - [Vietnam to develop domestic cloud](ch11/188-vietnam-to-develop-domestic-cloud.html)
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](ch11/218-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)

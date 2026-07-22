@@ -7,13 +7,13 @@
 ## 核心要点
 - Newsletter article, source: https://zeroheight.com/blog/10-common-component-architecture-mistakes-in-figma-design-systems/
 - 设计系统组件架构的十大常见错误及解决方案
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/10-common-component-architecture-mistakes-in-figma-design-systems.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/10-common-component-architecture-mistakes-in-figma-design-systems.md)
 
 ## 相关实体
 
 - [10 common component architecture mistakes in Figma design systems](https://github.com/QianJinGuo/wiki/blob/main/entities/component-architecture-mistakes-figma-zeroheight.md)
-- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](../ch04/235-agentic.html)
-- [What the design-to-code loop unlocks](../ch09/005-design-to-code.html)
+- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](../ch04/616-agentic.html)
+- [What the design-to-code loop unlocks](../ch09/007-design-to-code.html)
 
 ## 深度分析
 本文系统性地梳理了Figma设计系统中组件架构的十大错误，这些问题直接关系到设计系统的可维护性、可扩展性以及设计-开发协作效率。

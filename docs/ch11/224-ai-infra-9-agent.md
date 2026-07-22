@@ -10,7 +10,7 @@
 
 > 核心洞察：生产级 Agent 失败的原因不在模型或算法，而在 Infra。Demo 只需要 L1（模型）+ L4（编排），生产需要全部 9 层 + 4 横切。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-infra-panorama-9-layer-agent-framework-production.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-infra-panorama-9-layer-agent-framework-production.md)
 
 ## 9 层架构全景
 
@@ -55,10 +55,10 @@
 
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](../ch05/116-harness-engineering.html) — 互补概念：Harness 关注如何构建可靠 AI 系统，AI Infra 关注需要哪些基础设施组件
 - [Loop Engineering：反馈控制系统](../ch05/007-loop-engineering.html) — Agent 运行时的闭环控制
-- [腾讯研究院 AI 速递](../ch05/089-ai.html) — 行业动态
-- [Agentic AI System Architecture](../ch05/086-harness-skill.html) — 分层 Agent 系统架构（5 层：Orchestrator → Harness → Skill → MCP → Model）
+- [腾讯研究院 AI 速递](../ch05/090-ai.html) — 行业动态
+- [Agentic AI System Architecture](../ch05/087-harness-skill.html) — 分层 Agent 系统架构（5 层：Orchestrator → Harness → Skill → MCP → Model）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-infra-panorama-9-layer-agent-framework-production.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-infra-panorama-9-layer-agent-framework-production.md)
 
 ---
 

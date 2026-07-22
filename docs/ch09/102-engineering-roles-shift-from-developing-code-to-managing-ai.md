@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [scaling archunit with nebula archrules](../ch11/280-scaling-archunit-with-nebula-archrules.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/820297.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/820297.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 ## 摘要
@@ -84,8 +84,8 @@ Harness 报告给出的建议可以归纳为四个层面：
 
 ## 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html) — Karpathy 关于 AI 时代工程师角色转变的访谈
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/682-karpathy-vibe-coding-agentic-engineering.html) — Vibe Coding 到 Agentic Engineering 范式转变
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/616-agentic.html) — Karpathy 关于 AI 时代工程师角色转变的访谈
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.html) — Vibe Coding 到 Agentic Engineering 范式转变
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html) — Claude Code 源码机制详解
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html) — Agent 原理架构与工程实践
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md) — 多智能体交易系统架构

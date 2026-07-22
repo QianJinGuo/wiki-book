@@ -69,15 +69,15 @@
 
 ## 相关实体
 
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/089-ai.html) — 同一技术写作风格系列的领域专业知识讨论
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/886-20.html) — 同为深度技术实践分析的姊妹文章
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/090-ai.html) — 同一技术写作风格系列的领域专业知识讨论
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/885-20.html) — 同为深度技术实践分析的姊妹文章
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/018-build-agents-not-pipelines.html) — 软件工程方法论相关讨论
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 技术深度分析系列
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/886-20.html) — 系统调试方法与实践
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/885-20.html) — 系统调试方法与实践
 
 ## 相关主题
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kristoffit-blog-fix-your-asserts.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kristoffit-blog-fix-your-asserts.md)
 
 ---
 

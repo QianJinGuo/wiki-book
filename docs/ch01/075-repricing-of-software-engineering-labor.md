@@ -65,7 +65,7 @@ For the first time in a long time, I think the biggest returns in this field com
 
 _AI was used to assist with grammar and editing._
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/posts-repricing-of-software-engineering-labor.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/posts-repricing-of-software-engineering-labor.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # Choosing to Stay Human
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/choosing-to-stay-human.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/choosing-to-stay-human.md)
 
 > **Core insight**: Ethan Mollick 提出"认知投降"（cognitive surrender）概念：人类面对 AI 请求时倾向于停止思考、直接接受 AI 输出。台北 10 所高中 Python 课程的 RCT 显示，带教师引导的 AI tutor 产生 0.15 SD 效果量（= 6-9 个月额外学业进步），而简单 ChatGPT 使用则导致 17% 成绩下降——使用方式的微小差异导致结果的天壤之别。核心命题：决定什么保留给人类本身是一个需要主动做出的选择，而非默认。
 
@@ -86,11 +86,11 @@ ChatGPT 的 /learn、Gemini 的 Guided Learning、Claude 的 learning style sele
 - [Against Brain Damage](ch03/016-against-brain-damage.html)
 - [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/641-garry-tan.html)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/640-garry-tan.html)
 - [Defect Backlog Retention Report](https://github.com/QianJinGuo/wiki/blob/main/entities/defect-backlog-retention-report.md)
 
 ## 相关引用
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/choosing-to-stay-human.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/choosing-to-stay-human.md)
 
 ---
 

@@ -12,13 +12,13 @@ In this post, we walk through the full journey, from setting up your migration w
 If you're running a legacy BI tool, you face compounding pressures that go beyond licensing fees:
 
 ## 相关实体
-- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](../ch01/430-claude.html)
+- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](../ch01/429-claude.html)
 - [Cloudsectidbits Masso Cognito Sso.Html](ch11/240-cloudsectidbits.html)
 - [Amazon Bedrock Api Security Guide](../ch12/034-amazon-bedrock-api.html)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/276-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch11/054-prowler-genai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-transform-ezconvertbi-bi-migration.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-transform-ezconvertbi-bi-migration.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析

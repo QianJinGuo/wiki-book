@@ -204,7 +204,7 @@ MCP 生态：
 
 6. **关注 Karpathy 的警示——"职业正在被 dramatically refactored"**：这位 AI 领域知名工程师表示"作为程序员从未感到如此落后"，他感觉自己如果正确整合近一年可用的工具可以 10X 更强大。Mollick 以此结尾不是危言耸听，而是行动号召——主动学习和适应这些工具，否则面临"skill issue"风险。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-and-what-comes-next.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-and-what-comes-next.md)
 
 ---
 

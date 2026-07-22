@@ -61,9 +61,9 @@ Kuse内部案例中，客服端Junior发现投诉问题 → 传递给产品端Ju
 - [Gstack Ai Workflow](ch03/061-gstack-ai.html) — YC的AI协作工作流
 -  — 企业级Agent落地对比
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/05-11-the-great-memory-panic-of-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [Kuse Junior Ai Employee](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kuse-junior-ai-employee.md) — 原文存档
+- [Kuse Junior Ai Employee](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kuse-junior-ai-employee.md) — 原文存档
 
 ---
 

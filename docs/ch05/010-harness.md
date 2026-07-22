@@ -278,10 +278,10 @@ OpenAI 提出的"Entropy Garbage Collection"是一个极具工程价值的概念
 - [Harness Engineering Systematic Framework](ch05/116-harness-engineering.html)
 - [Agentscope Java Harness Framework](../ch03/051-agentscope-java-harness-framework-2-0-agent-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-alibaba-java-case-study.md)
-→ [原文存档 (杜学友 6 层架构)](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-alibaba-6-layer-architecture-duxueyou.md)
-- [协作涌现：agent room 的多智能体决策框架](../ch04/675-agent-room.html)
-- [programbench swe agent benchmark](../ch04/533-programbench-swe-agent-benchmark.html)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-alibaba-java-case-study.md)
+→ [原文存档 (杜学友 6 层架构)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-alibaba-6-layer-architecture-duxueyou.md)
+- [协作涌现：agent room 的多智能体决策框架](../ch04/676-agent-room.html)
+- [programbench swe agent benchmark](../ch04/535-programbench-swe-agent-benchmark.html)
 - [harness 工程可视化：vibe coding 中重建工程可控性](ch05/116-harness-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 

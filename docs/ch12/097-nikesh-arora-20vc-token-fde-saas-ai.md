@@ -6,7 +6,7 @@
 
 # Nikesh Arora 20VC 访谈：Token 定价、FDE、SaaS→AI 转型与记忆护城河
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nikesh-arora-20vc-business-strategy.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nikesh-arora-20vc-business-strategy.md)
 
 ## 摘要
 

@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐ | 4.3KB | `entities/how-to-create-websites-with-great-ux-designs.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-create-websites-with-great-ux-designs.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-create-websites-with-great-ux-designs.md)
 
 ## 相关实体
 
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/1004-rag.html)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/1005-rag.html)
 - [How we made WINDOW JOIN parallel and vectorized](ch01/035-how-we-made-window-join-parallel-and-vectorized.html)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1232-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1237-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 - [how dropbox uses mcp and dash to close the design-to-code se](https://github.com/QianJinGuo/wiki/blob/main/entities/dropbox-mcp-dash-design-code-security.md)
 
 ## 深度分析

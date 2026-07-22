@@ -12,7 +12,7 @@ Accept Deny Non-Essential
 Skip to main content
 Don’t miss tomorrow’s Cybersecurity industry news
 Let Cybersecurity Dive’s fre...
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/818662.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/818662.md)
 
 ## 深度分析
 **1. 这是一个"行业自发填补政策真空"的典型案例**
@@ -47,7 +47,7 @@ CISA 已经运营着 Automated Indicator Sharing（AIS）项目和一个行业-s
 
 - [CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](../ch12/001-cisa-urges-critical-infrastructure-firms-to-fortify-before.html)
 - [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
-- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](../ch01/944-anthropic.html)
+- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](../ch01/1295-anthropic.html)
 
 ---
 

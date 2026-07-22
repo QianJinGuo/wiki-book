@@ -6,7 +6,7 @@
 
 # 我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-autoresearch-software-development-niaowo.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-autoresearch-software-development-niaowo.md)
 
 ## 深度分析
 
@@ -45,10 +45,10 @@
 
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/227-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/227-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/616-agentic.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/227-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/046-agent.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/682-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

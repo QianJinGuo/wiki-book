@@ -4,12 +4,12 @@
 
 > 📊 Level ⭐ | 3.6KB | `entities/the-agentic-trust-management-platform-drata.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-agentic-trust-management-platform-drata.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-agentic-trust-management-platform-drata.md)
 
 ## 核心要点
 - 来源：drata.com
 - 评分：v=7, c=8, product=56
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-agentic-trust-management-platform-drata.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-agentic-trust-management-platform-drata.md)
 
 ## 深度分析
 Drata 的"Agentic Trust Management"定位揭示了 GRC（治理、风险、合规）领域正在发生结构性转变：

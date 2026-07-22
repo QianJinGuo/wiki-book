@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/amazon-supply-chain-services.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-supply-chain-services.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-supply-chain-services.md)
 
 ## Summary
 Amazon launched Supply Chain Services (ASCS), opening its logistics network to businesses of all sizes. The service allows any business to use Amazon's freight, warehousing, and delivery capabilities.
@@ -36,7 +36,7 @@ ASCS 三大模块——Move（全球 freight 网络）、Store（warehouse + 第
 4. **密切关注 SLA 条款**：目前公布的细节有限，实际落地时需关注服务等级协议、数据所有权、和解约条款等合同细节
 
 ## Related Entities
-- [Source Article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-supply-chain-services.md)
+- [Source Article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-supply-chain-services.md)
 
 ## Tags
 #amazon #logistics #supply-chain #ecommerce
@@ -44,7 +44,7 @@ ASCS 三大模块——Move（全球 freight 网络）、Store（warehouse + 第
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](ch11/139-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](ch11/016-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.html)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/047-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
-- [Introducing Claude Platform On Aws](../ch01/152-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
+- [Introducing Claude Platform On Aws](../ch01/470-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/703-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 
 ---

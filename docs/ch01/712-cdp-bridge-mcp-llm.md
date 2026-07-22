@@ -42,13 +42,13 @@
 - 三黄工作室第二个开源项目
 
 ## 相关实体
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/086-harness-skill.html)
-- [Browser Harness Github](../ch05/083-browser-harness-github.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/087-harness-skill.html)
+- [Browser Harness Github](../ch05/084-browser-harness-github.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/018-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/018-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cdp-bridge-mcp-real-browser-agent.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cdp-bridge-mcp-real-browser-agent.md)
 
 ## 深度分析
 

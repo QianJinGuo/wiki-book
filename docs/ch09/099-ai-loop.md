@@ -77,7 +77,7 @@
 - `Anthropic 8X Output Verification Bottleneck Fiona Fung` — AI 时代的瓶颈迁移
 - `Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2` — Spec 作为系统抗熵架构
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/吴恩达最新思考从分钟到天ai产品如何靠三层loop迭代.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/吴恩达最新思考从分钟到天ai产品如何靠三层loop迭代.md)
 
 ---
 

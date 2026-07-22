@@ -9,13 +9,13 @@
 - AI Can Write Code but CIOs Own the Operating Model
 
 ## 相关实体
-- [Ai Is Writing More Code Your Ci Pipeline](../ch01/797-ai-is-writing-more-code-your-ci-pipeline-can-t-keep-up.html)
-- [From System Of Record To System Of Intelligence](../ch01/266-from-system-of-record-to-system-of-intelligence.html)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/1103-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
+- [Ai Is Writing More Code Your Ci Pipeline](../ch01/796-ai-is-writing-more-code-your-ci-pipeline-can-t-keep-up.html)
+- [From System Of Record To System Of Intelligence](../ch01/263-from-system-of-record-to-system-of-intelligence.html)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/1108-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/148-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
-- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](../ch04/396-agent-skills.html)
+- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](../ch04/397-agent-skills.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-can-write-code-cios-operating-model.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-can-write-code-cios-operating-model.md)
 
 ## 深度分析
 
@@ -49,7 +49,7 @@ Verizon 的 2025 年数据泄露调查报告分析了 12,195 起已确认的泄�
 
 **运营模式才是真正的差异化因素**：做得好的组织不会是那些最先行动的组织，而是那些能够以控制、清晰度和责任感将 AI 引入企业的组织。CIO 仍然决定 AI 是带着纪律进入企业还是失去控制地漂移进来 。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-can-write-code-cios-operating-model.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-can-write-code-cios-operating-model.md)
 
 ---
 

@@ -50,7 +50,7 @@
 - 是 **Agent 用 Harness 循环改进另一个 Agent**（元 Harness），区别于 [Lilian Weng Harness Engineering Self Improvement](ch05/116-harness-engineering.html) 的理论框架
 - 实践了 [Loop Engineering Feedback Control System](ch05/007-loop-engineering.html) 的"小循环 → 大循环"演进路径
 - Champion-Challenger 机制与 improving-agents-data-mining-perspective-langchain 的多轮迭代实验设计互补
-- 父子 Agent 模式体现了 [Agent Vs Workflow Control Continuum Framework](../ch04/641-agent-vs-workflow.html) 中"控制权连续谱"的层级 delegation
+- 父子 Agent 模式体现了 [Agent Vs Workflow Control Continuum Framework](../ch04/642-agent-vs-workflow.html) 中"控制权连续谱"的层级 delegation
 
 ## 关键教训
 
@@ -60,7 +60,7 @@
 
 ---
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alibaba-harness-autonomous-agent-iteration.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-harness-autonomous-agent-iteration.md)
 
 ---
 

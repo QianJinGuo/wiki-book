@@ -118,7 +118,7 @@ Quick Flows 可自动化引用或更新 Confluence 内容的工作流。结合 A
 Knowledge Base 的 Sync Reports 是易被忽视的运维窗口。定期检查「skipped」和「failed」条目，可早期发现 Confluence 内容结构变化（如页面迁移、Space Key 变更）导致的索引不完整问题，避免用户发现答案缺失后才被动修复。
 
 ## 相关资源
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/integrate-atlassian-confluence-cloud-with-amazon-quick.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/integrate-atlassian-confluence-cloud-with-amazon-quick.md)
 - [Amazon Quick 文档](https://docs.aws.amazon.com/quicksuite/)
 - [Confluence Cloud Action 集成](https://docs.aws.amazon.com/quick/latest/userguide/confluence-action-integration.html)
 - [Confluence Knowledge Base ACL 配置](https://docs.aws.amazon.com/quick/latest/userguide/confluence-kb-acl.html)
@@ -126,8 +126,8 @@ Knowledge Base 的 Sync Reports 是易被忽视的运维窗口。定期检查「
 - [Aderant Transforms Cloud Operations With Amazon Quick](ch11/196-aderant-transforms-cloud-operations-with-amazon-quick.html)
 - [Amazon Quick Research Agentic Multi Source Citation](ch11/216-amazon-quick.html)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/159-amazon-bedrock.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/535-amazon-bedrock-agentcore.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/535-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/537-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/537-amazon-bedrock-agentcore.html)
 
 ---
 

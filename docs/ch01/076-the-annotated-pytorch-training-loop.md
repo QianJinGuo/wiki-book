@@ -111,7 +111,7 @@ Wire up a PyTorch DataLoader: batching, shuffling, and iterating.
 
 **`persistent_workers=True`** keeps worker processes alive between epochs. Without it, workers are respawned a
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/essays-pytorch-training-loop.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/essays-pytorch-training-loop.md)
 
 ---
 

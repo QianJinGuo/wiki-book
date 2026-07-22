@@ -90,7 +90,7 @@ Open Code Review 的应对架构：
 - `Claude Code Demo To Production 8 Gates Huang Jia Csdn 2026` — 企业级 AI 代码门禁
 - `Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding` — AI 编码工具集成栈
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/阿里开源-open-code-review一周揽下-5k-star更专业的代码评审-cli.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/阿里开源-open-code-review一周揽下-5k-star更专业的代码评审-cli.md)
 
 ---
 

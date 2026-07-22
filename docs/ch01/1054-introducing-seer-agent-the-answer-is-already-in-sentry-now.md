@@ -9,14 +9,14 @@
 - 将调试工作流从人工排查转变为自然语言问答
 ## 相关实体
 - [Seer Agent Workshop](../ch03/046-agent.html)
-- [Introducing The Ettin Reranker Family](ch01/423-introducing-the-ettin-reranker-family.html)
+- [Introducing The Ettin Reranker Family](ch01/422-introducing-the-ettin-reranker-family.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 - [Alphaevolve Deepmind Discovery Agent](../ch03/046-agent.html)
 - [Ai Agents Inside Perimeter Hackernews](../ch04/030-ai-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
 
-- [intercom, now called fin, launches an ai agent whose only jo](../ch04/388-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo.html)
+- [intercom, now called fin, launches an ai agent whose only jo](../ch04/389-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo.html)
 
 ## 深度分析
 Seer Agent 的核心产品逻辑是**"答案已在 Sentry 中，只是需要被正确提问"**。Sentry 积累的 telemetry 数据（错误堆栈、性能追踪、用户事件）本身就包含了问题的答案，但传统界面要求开发者具备手动检索和分析的能力。Seer Agent 将这一过程语言模型化——开发者用自然语言描述问题，LLM 在 telemetry 图谱中检索并合成答案。
@@ -30,7 +30,7 @@ Sentry 将 Seer Agent 定位为"Multiplayer Mode in Slack"——这暗示了 AI 
 - **可观测性产品团队**：Seer Agent 证明了将 LLM 能力与 telemetry 数据深度集成比单纯增加 AI 助手数量更有价值——数据模型的优化（如图结构）往往比 prompt 工程更关键
 - **AI 应用开发者**：在构建 AI Debugging 产品时，关键挑战不在于 LLM 的推理能力，而在于如何将已有的监控数据建模为 LLM 可高效检索的知识图谱
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
 
 ---
 

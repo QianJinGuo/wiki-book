@@ -7,7 +7,7 @@
 ## 核心要点
 - AWS 技术实践
 - AWS DevOps Agent × MCP Server：
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md)
 
 ## 文章摘要
 混合云 BGP 故障的另一半证据往往在 on-premises 设备上。本文在真实 Direct Connect 环境上，通过 MCP Server 把 Cisco 路由器的只读命令暴露给 AWS DevOps Agent，用 Private Connection 把调用流量留在 AWS 骨干网，再用 EventBridge Scheduler + Lambda 把调查结论自动回推飞书群——完成"告警 → 自主调查 → 结论回到 Chat"的混合云 ChatOps 闭环。

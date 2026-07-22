@@ -10,6 +10,7 @@ review_value: 6
 review_confidence: 5
 review_vxc: 30
 review_decision: raw-only
+sha256: 60705433c0878f3046b4c45c1b4ab850e3d2f87fe6cdf7de8e6c25d93862fe13
 ---
 
 # 改造 Multica 再让它读懂 AgentWaker

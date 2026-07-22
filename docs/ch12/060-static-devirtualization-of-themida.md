@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/static-devirtualization-of-themida.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/static-devirtualization-of-themida.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/static-devirtualization-of-themida.md)
 
 ## 摘要
 本文由 Back Engineering Labs 发布，展示了一种**通用静态去虚拟化（Static Devirtualization）框架**，核心思想是将 VM 保护的二进制代码通过符号执行（symbolic evaluation）提升（lift）至中间表示（IR），再利用一系列通用优化 passes 将虚拟机的所有"脚手架"逐一消除，最终将代码回填（reinsert）至原生 x86/ARM64。该方法在 Themida、VMProtect 等多种基于虚拟机的代码保护器上均适用，仅需少量 VM 特定知识——尤其是在处理虚拟条件分支（VJCC）时需要 Themida 特有的 `branch_taken_flag` 追踪。

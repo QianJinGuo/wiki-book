@@ -6,7 +6,7 @@
 
 # Fastlane | Create Winning Short-Form Content In Seconds
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastlane-create-winning-short-form-content-in-seconds.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastlane-create-winning-short-form-content-in-seconds.md)
 
 ## 摘要
 
@@ -60,7 +60,7 @@ Fastlane 采用了教科书级的 PLG（Product-Led Growth）策略：
 
 ## 相关实体
 
-- [AI Video Tools](../ch05/089-ai.html)
+- [AI Video Tools](../ch05/090-ai.html)
 - AI Video Generation
 - Agent Harness
 - [MOC: Vision & Multimodal](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)

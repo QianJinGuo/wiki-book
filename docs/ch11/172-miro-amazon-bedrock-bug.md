@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/miro-amazon-bedrock-bug-routing.md`
 
-[Miro Amazon Bedrock Bug Routing](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/miro-amazon-bedrock-bug-routing.md)
+[Miro Amazon Bedrock Bug Routing](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/miro-amazon-bedrock-bug-routing.md)
 
 # How Miro uses Amazon Bedrock to boost software bug routing accuracy and improve time-to-resolution from days to hours
 _This post is co-authored with Philipp Pavlov, Dmytro Romantsov, Evgeny Mironenko, and Gowri Suryanarayana from_[ _Miro_](<https://miro.com/de/index/>).

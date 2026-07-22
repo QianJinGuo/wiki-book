@@ -65,7 +65,7 @@ MCP（Model Context Protocol）作为 AI 模型与外部工具之间的标准化
 - [AI 网关 vs MCP 网关安全对比](../ch11/079-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
 - [Amazon Quick + Cisco Webex MCP 会议助理](../ch11/216-amazon-quick.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/零代码快速体验-amazon-quick-操作飞书lark.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/零代码快速体验-amazon-quick-操作飞书lark.md)
 
 ---
 

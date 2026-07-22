@@ -20,7 +20,7 @@ XBow 团队的评测揭示了 Mythos 在实际安全场景中的表现：Mythos 
 
 Mythos 的能力提升引发了关于 AI 安全红队自动化边界的重要讨论。评测团队认为，虽然 Mythos 显著增强了安全研究效率，但人类专家的创造性思维和领域知识在当前阶段仍是不可替代的。
 
-> [!contradiction] 参见 [Anthropic Mythos Glasswing 30Days Vulnerability Report](../ch01/944-anthropic.html) 和 [Anthropic N Days Frontier Agent Vulnerability Research](ch04/256-anthropic-n-days-frontier-agent-vulnerability-research.html) 中 Anthropic 官方对 Mythos 能力的描述。本文的第三方实测在某些指标上给出了不同的能力边界评估。
+> [!contradiction] 参见 [Anthropic Mythos Glasswing 30Days Vulnerability Report](../ch01/1295-anthropic.html) 和 [Anthropic N Days Frontier Agent Vulnerability Research](ch04/255-anthropic-n-days-frontier-agent-vulnerability-research.html) 中 Anthropic 官方对 Mythos 能力的描述。本文的第三方实测在某些指标上给出了不同的能力边界评估。
 
 ## 深度分析
 
@@ -66,7 +66,7 @@ Mollick 最深刻的观察是关于人类角色的转变。在 Concord 项目（
 
 5. **拥抱"委托人"角色转型**：知识工作者需要适应从"doer"到"commissioner"的角色转变。核心能力不再是执行技能（编码、写作、分析），而是意图定义、结果评判和系统设计。Mollick 的体验表明，最有效的使用方式是用宏大而明确的指令引导模型，然后用专家的眼光评判产出——这需要更高层次的思考能力和领域判断力。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/what-it-feels-like-to-work-with-mythos.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-it-feels-like-to-work-with-mythos.md)
 
 ---
 

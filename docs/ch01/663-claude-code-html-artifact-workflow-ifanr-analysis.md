@@ -6,7 +6,7 @@
 
 # Claude Code HTML Artifact Workflow (IFanR Analysis)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-code-html-artifact-workflow-ifanr.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-html-artifact-workflow-ifanr.md)
 
 ## 摘要
 
@@ -110,8 +110,8 @@ HTML artifact 是一种解决方案：它把线性信息变成空间化信息，
 
 ## 相关实体
 
-- [What is AX?](ch01/886-20.html)
-- [Claude Dispatch and the Power of Interfaces](ch01/514-claude-dispatch-and-the-power-of-interfaces.html)
+- [What is AX?](ch01/885-20.html)
+- [Claude Dispatch and the Power of Interfaces](ch01/513-claude-dispatch-and-the-power-of-interfaces.html)
 - [Claude Code 源码解析](../ch03/076-claude-code.html)
 - [MOC: Coding Agent Practice](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

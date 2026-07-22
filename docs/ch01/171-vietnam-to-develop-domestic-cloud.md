@@ -20,14 +20,14 @@
 - **系统集成商**：多技术同步推进意味着大量集成需求，跨技术栈的实施能力将成为关键竞争优势。
 - **安全厂商**：越南明确需要下一代防火墙、SIEM、AI 驱动 SOC 平台，安全厂商有机会参与标准制定。
 - **政策研究者**：越南案例表明，数据本地化法律若已存在但未执法，往往是政策干预的前奏，值得提前布局合规方案。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vietnamtodevelopdomesticcloud.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnamtodevelopdomesticcloud.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11/218-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 - [Vietnam to develop domestic cloud](../ch11/188-vietnam-to-develop-domestic-cloud.html)
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)- [anthropic](ch01/944-anthropic.html)- [inference cost at scale with napkin math](ch01/886-20.html)- [why use app-level auth when every database has auth? (splunk](ch01/175-why-use-app-level-auth-when-every-database-has-auth-splunk.html)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)- [anthropic](ch01/1295-anthropic.html)- [inference cost at scale with napkin math](ch01/885-20.html)- [why use app-level auth when every database has auth? (splunk](ch01/175-why-use-app-level-auth-when-every-database-has-auth-splunk.html)
 
 ---
 

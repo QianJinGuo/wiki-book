@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/understand-anything-code-knowledge-graph-lum-jike.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/understand-anything-code-knowledge-graph-lum-jike.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/understand-anything-code-knowledge-graph-lum-jike.md)
 
 # Understand-Anything：代码知识图谱
 
@@ -55,14 +55,14 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/019-ai-native.html)
 - [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch03/046-agent.html)
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/319-ai-coding-agent.html)
-- [Rag技术框架的演进方向](../ch01/1004-rag.html)
+- [Rag技术框架的演进方向](../ch01/1005-rag.html)
 - [Graphify](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md) — 同一赛道的另一款软件工程知识图谱工具
 - [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor.com-composer-2-5.md) — 同为 AI coding 工具
-- [How Ai Agent Memory Works](../ch04/156-how-ai-agent-memory-works.html) — Agent 记忆机制
+- [How Ai Agent Memory Works](../ch04/155-how-ai-agent-memory-works.html) — Agent 记忆机制
 
 ## 第 2 来源：码途漫谈 2026-06-11 补充视角
 
-补充自 [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/understand-anything-code-knowledge-graph-matu-2026-06-11.md)，提供同一项目的第二手解读，重点补充 4 个第 1 来源未覆盖的角度。
+补充自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/understand-anything-code-knowledge-graph-matu-2026-06-11.md)，提供同一项目的第二手解读，重点补充 4 个第 1 来源未覆盖的角度。
 
 ### 补充 1：README 的设计哲学——"Graphs that teach, not graphs that impress"
 
@@ -99,7 +99,7 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 
 两源结合：第 1 来源讲技术架构与 Token 模型，第 2 来源讲设计哲学与适用场景/风险——形成完整的产品认知。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/understand-anything-code-knowledge-graph-matu-2026-06-11.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/understand-anything-code-knowledge-graph-matu-2026-06-11.md)
 
 ---
 

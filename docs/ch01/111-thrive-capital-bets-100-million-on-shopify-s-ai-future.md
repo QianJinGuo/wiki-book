@@ -8,13 +8,13 @@
 - 来源：https://www.pymnts.com/news/ecommerce/2026/thrive-capital-bets-100-million-on-shopifys-ai-future/
 - 评分：v=7 c=8
 ## 相关实体
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/089-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/090-ai.html)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/069-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/143-code-simulation-for-enterprise-engineering-playerzero.html)
 - [Microsoft Is Quietly Shopping For An Openai Replac](ch01/038-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future.md)
 
 ## 深度分析
 ### Thrive Capital 的投资逻辑
@@ -48,7 +48,7 @@ Shopify 的 Agentic AI 战略包含几个层次：
 2. **长尾商家是 AI 电商的最大受益者**：Finkelstein 明确表示 AI 时代为长尾商家带来的机会超过以往任何时期。这提示垂直领域创业者：AI 工具的核心价值不在于服务头部商家，而在于赋能大量中小商家实现低成本的精准运营。
 3. **Agentic 范式从概念到落地**：Shopify 展示了 Agentic AI 在商业场景中的实际落地路径——从 Tinker App 的工具整合到 Agentic Shopping 的体验重塑。这对 AI 应用创业者意味着：找到能真正替代传统工作流的 Agentic 场景，比单纯打造 AI 工具更具壁垒。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 
 ### 对投资人的启示
 1. **AI 电商平台仍被低估**：Thrive Capital 在 Shopify 已有相当涨幅后仍重金投入，说明机构投资者认可 AI 驱动的电商渗透率仍有巨大提升空间。电商 AI 化不是周期性机会，而是结构性转型。

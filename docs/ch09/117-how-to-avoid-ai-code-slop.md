@@ -9,12 +9,12 @@
 - 评分：v=7 × c=8
 ## 相关实体
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/319-ai-coding-agent.html)
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/457-how-claude-code-works-in-large-codebases-best-practices-and.html)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/456-how-claude-code-works-in-large-codebases-best-practices-and.html)
 - [Low Code Api Integration](../ch03/073-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
-- [How_Claude_Code_Works_In_Large_Codebases](../ch01/430-claude.html)
-- [Karpathy Claude Md Rules](../ch01/251-claude-md.html)
+- [How_Claude_Code_Works_In_Large_Codebases](../ch01/429-claude.html)
+- [Karpathy Claude Md Rules](../ch01/248-claude-md.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-avoid-ai-code-slop.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-avoid-ai-code-slop.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 深度分析
@@ -53,7 +53,7 @@ Aviator 的实验回答了核心问题：**如果审查发生在代码写出来�
 
 ## 关联阅读
 - [SDD (Spec-Driven Development)](https://github.com/QianJinGuo/wiki/blob/main/concepts/sdd-specification-driven-development-harness.md) — 规格驱动开发方法论，与本文"审意图而非审代码"核心理念高度契合
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-to-avoid-ai-code-slop.md) — Ankit Jain 的完整原文
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-avoid-ai-code-slop.md) — Ankit Jain 的完整原文
 
 ---
 

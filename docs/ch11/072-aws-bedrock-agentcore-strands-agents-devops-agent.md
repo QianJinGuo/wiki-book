@@ -99,7 +99,7 @@
 - vs `Agentic Payment X402 Bedrock Agentcore` — 后者讲 x402 支付场景，本文讲企业级 DevOps 场景
 - vs `Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ` — 后者讲 OpenClaw 单机→多租户迁移，本文讲 Strands Agents + DevOps Agent 组合
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/基于-amazon-bedrock-agentcore-与-aws-devops-agent-打造对话式多账户运维助手.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/基于-amazon-bedrock-agentcore-与-aws-devops-agent-打造对话式多账户运维助手.md)
 
 ---
 

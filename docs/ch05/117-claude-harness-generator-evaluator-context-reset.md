@@ -115,7 +115,7 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 
 ## 第 2 来源 — 清华+MSRA STAR-PólyaMath：Reasoner-Verifier-Meta-Strategist 三智能体推理 Harness（2026-06）
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/star-polya-math-reasoner-verifier-meta-strategist-tsinghua-msra-2026.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/star-polya-math-reasoner-verifier-meta-strategist-tsinghua-msra-2026.md)
 > Author: 清华大学 T-STAR Lab + 微软亚洲研究院
 > Paper: arxiv 2605.19338
 
@@ -158,25 +158,25 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 
 核心机制（长程任务分解为可验证子步骤 + 结构化检验 + 跨尝试记忆 + 高层监督）适用于代码生成（生成-测试-调试循环）和科学发现（假设提出-实验-综合判断）场景。项目已开源完整代码框架、prompt 和 skill 定义。
 
-→ [第2原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/star-polya-math-reasoner-verifier-meta-strategist-tsinghua-msra-2026.md)
+→ [第2原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/star-polya-math-reasoner-verifier-meta-strategist-tsinghua-msra-2026.md)
 
 ## 相关
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-design-long-running-apps.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-design-long-running-apps.md)
 -  — 七环节控制回路 + Generator/Evaluator 框架
 - [Agent Harness 上下文管理：工作集视角](ch05/039-agent-harness.html) — compaction 光谱 + session/harness/sandbox 解耦
 - [LangChain Anatomy of Agent Harness](ch05/039-agent-harness.html) — Ralph 循环 + 规划/自我验证双闭环
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/678-claude-managed-agents.html)
-- [Ai Agent Harness Construction Akshay Baoyu](../ch01/940-ai-agent-harness.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/520-claude-managed-agents.html)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch01/939-ai-agent-harness.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/685-agent-harnesses-are-dead-long-live-agent-harnesses.html)
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/686-agent-harnesses-are-dead-long-live-agent-harnesses.html)
 - [Harness 之后 状态边界与失败闭环 若飞](ch05/018-harness.html)
 - [Agentscope Java 2.0 Enterprise Distributed Harness](ch05/018-harness.html)
 - [Gaode Uplift Model Iteration Agent Long Running Harness](ch05/018-harness.html)
 - [Long Running Agent Ralph Loop Harness Takeover](ch05/013-agent-ralph-loop-harness.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01/944-anthropic.html)
-- [Langgraph A2A Adversarial Agent Team](../ch04/199-langgraph.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01/1295-anthropic.html)
+- [Langgraph A2A Adversarial Agent Team](../ch04/198-langgraph.html)
 
 ---
 

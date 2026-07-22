@@ -6,7 +6,7 @@
 
 # Yann Dubois × Matt Turck：OpenAI 后训练与强化学习的内部视角
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/yann-dubois-openai-post-training-matt-turck-interview.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/yann-dubois-openai-post-training-matt-turck-interview.md)
 
 ## 摘要
 
@@ -89,8 +89,8 @@ Yann 对 Harness 工程的判断务实但清醒：
 
 ## 相关实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1129-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1131-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/616-agentic.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/227-openclaw.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - **Post-Training**

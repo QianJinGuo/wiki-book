@@ -84,7 +84,7 @@ Loop Engineering 将系统运行从「单次交互」变成了「持续运行」
 - [Agent Harness 上下文管理](ch05/039-agent-harness.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/loop-engineering-next-keyword-for-ai-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-next-keyword-for-ai-2026.md)
 
 ---
 

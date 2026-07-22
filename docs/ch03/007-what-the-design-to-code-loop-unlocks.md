@@ -76,13 +76,13 @@
 - **组件复用率**：同一代码组件在不同页面/功能中被复用的次数，循环效率高的团队通常有更高的复用率
 - **新人上手时间**：新设计师或工程师理解并参与产品开发所需的平均时间，设计系统完善的团队通常能将此时间缩短 30-50%
 - **视觉回归缺陷率**：因样式偏差在 QA 阶段被发现的缺陷数量，完善的循环和自动化测试应能显著降低此指标
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/design-to-code-loop-figma.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/design-to-code-loop-figma.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [Building is just the beginning: Introducing Discoverability](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
-- [柚漫剧 AI全流程提效拆解](../ch05/089-ai.html)
+- [柚漫剧 AI全流程提效拆解](../ch05/090-ai.html)
 - [10 common component architecture mistakes in Figma design systems](https://github.com/QianJinGuo/wiki/blob/main/entities/component-architecture-mistakes-figma-zeroheight.md)
 - [figma make, now on your local code: closing the design-to-co](ch03/048-figma-make.html)
 

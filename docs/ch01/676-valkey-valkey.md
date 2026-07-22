@@ -6,7 +6,7 @@
 
 # Valkey 为什么这么快？盘点 Valkey 中提升性能的黑科技
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/valkey-why-valkey-performance.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/valkey-why-valkey-performance.md)
 
 ## 摘要
 

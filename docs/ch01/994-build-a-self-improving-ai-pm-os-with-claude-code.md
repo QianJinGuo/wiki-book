@@ -6,7 +6,7 @@
 
 ## 核心要点
 - ...
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/p-ai-pms-guide-to-claude.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/p-ai-pms-guide-to-claude.md)
 
 ## 相关实体
 
@@ -45,7 +45,7 @@ Personal automation (Claude Code) vs Production automation (n8n) 的区分是关
 - Component library + Context engineering 是护城河：每个成功的 output 都要提取 pattern 反哺 library
 - 规则库会随时间增值，竞争对手无法复制的是你的 confirmed rules 积累
 - "McKinsey-level output vs generic AI output"的差异在于 skill 定义的质量
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/p-ai-pms-guide-to-claude.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/p-ai-pms-guide-to-claude.md)
 
 ---
 

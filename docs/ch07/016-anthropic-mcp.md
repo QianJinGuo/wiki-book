@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.0KB | `entities/anthropic-mcp-revisited-tool-search-code-orchestration.md`
 
-[Anthropic Mcp Revisited Tool Search Code Orchestration](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-mcp-revisited-tool-search-code-orchestration.md)
+[Anthropic Mcp Revisited Tool Search Code Orchestration](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-mcp-revisited-tool-search-code-orchestration.md)
 
 # Anthropic 最新博客：MCP 没死，它又来了
 > source: https://mp.weixin.qq.com/s/Sz2hzXiNCyf1YNzPbeUo5Q
@@ -122,13 +122,13 @@ Anthropic 明确定义了两者关系：
 - Anthropic 博客原文：https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp
 ## 相关实体
 - [Anthropic Mcp Revisited](ch07/016-anthropic-mcp.html)
-- [Anthropic 12 Mcp Production Patterns](../ch01/944-anthropic.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/944-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/267-skill.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/944-anthropic.html)
+- [Anthropic 12 Mcp Production Patterns](../ch01/1295-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1295-anthropic.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/266-skill.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/1295-anthropic.html)
 
-- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](../ch05/089-ai.html)
-- [Cursor Recall Anthropic Daily Release Cat Wu](../ch01/944-anthropic.html)
+- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](../ch05/090-ai.html)
+- [Cursor Recall Anthropic Daily Release Cat Wu](../ch01/1295-anthropic.html)
 - [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 

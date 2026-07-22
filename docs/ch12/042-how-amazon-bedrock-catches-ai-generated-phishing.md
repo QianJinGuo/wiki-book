@@ -96,7 +96,7 @@ The Amazon Bedrock phishing detection framework has broader implications for ent
 - Adversarial ML
 - Security Feedback Loop
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-amazon-bedrock-catches-ai-generated-phishing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-amazon-bedrock-catches-ai-generated-phishing.md)
 
 ---
 

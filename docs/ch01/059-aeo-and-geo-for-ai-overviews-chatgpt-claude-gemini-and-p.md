@@ -12,11 +12,11 @@
 ## 相关实体
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 - [Tether Launches Developer Grants Program For Local First Ai ](../ch11/206-tether-launches-developer-grants-program-for-local-first-ai.html)
-- [Anthropic_Cache_Tokenomics](ch01/944-anthropic.html)
+- [Anthropic_Cache_Tokenomics](ch01/1295-anthropic.html)
 - [Introducing Claude For Small Business](ch01/029-introducing-claude-for-small-business.html)
-- [Wetesteddeepseekv4Proandflashagainstclau](ch01/1201-deepseek.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch01/393-deepseek.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 
 ## 深度分析
 ### AEO vs GEO：概念溯源与实际差异

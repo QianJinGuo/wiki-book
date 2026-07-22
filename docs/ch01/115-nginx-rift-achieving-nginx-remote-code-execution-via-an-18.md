@@ -9,12 +9,12 @@
 - 评分：v=5 c=12 (56分)
 ## 相关实体
 - [Nginx Rift Achieving Nginx Rce Via An 18 Year Old Vulnerability](https://github.com/QianJinGuo/wiki/blob/main/entities/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability.md)
-- [Cogalpha Acl2026 Alpha Mining](ch01/886-20.html)
+- [Cogalpha Acl2026 Alpha Mining](ch01/885-20.html)
 - [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Runtime Instrumentation Of Qt6 Apps With Frida Part 1 Getting Visibility](ch01/008-runtime-instrumentation-of-qt6-apps-with-frida-part-1-get.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nginx-rift-achieving-nginx-remote-code-execution-v.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nginx-rift-achieving-nginx-remote-code-execution-v.md)
 
 ## 深度分析
 1. **双阶段脚本引擎的子引擎状态复位缺陷**：NGINX 的 rewrite 引擎在长度计算阶段使用 `ngx_memzero(&le, ...)` 创建完全清零的子引擎，导致 `le.is_args=0`；而实际复制阶段运行在主引擎上 `e->is_args=1`。两者状态不一致使得缓冲区大小被严重低估——长度计算时走了 else 分支（不计算转义扩展），复制时走了 if 分支（执行 `ngx_escape_uri` 将每个可转义字符扩展为 3 字节），最终写入量超出分配量。
@@ -31,7 +31,7 @@
 5. **升级 NGINX 前先验证版本号**：`nginx -v` 显示的版本若在 0.6.27–1.30.0 范围内立即受影响。升级路径：优先升级到 1.30.1+；若无法升级且使用 `rewrite ...? ... set $var $1` 模式，考虑临时移除 `?` 换用 `&` 并在 upstream 侧重构参数逻辑。
 
 ## 关联阅读
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/nginx-rift-achieving-nginx-remote-code-execution-v.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nginx-rift-achieving-nginx-remote-code-execution-v.md)
 
 ---
 

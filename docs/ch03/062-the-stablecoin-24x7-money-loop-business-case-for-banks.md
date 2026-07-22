@@ -106,7 +106,7 @@ The article documents a "subtle vibe shift" in banks over 2026 Q1-Q2: from loudl
 
 ## 引用与回链
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/the-stablecoin-24x7-money-loop-fintechbrainfood.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-stablecoin-24x7-money-loop-fintechbrainfood.md)
 
 ## 相关实体（Related Entities）
 
@@ -116,7 +116,7 @@ The article documents a "subtle vibe shift" in banks over 2026 Q1-Q2: from loudl
 - [Amazon Bedrock Agentic Payments Guardrails](../ch11/159-amazon-bedrock.html) — Bedrock agentic payments 护栏
 - enable safe agentic payments with built in guardrails using  — 安全 agent 支付
 - [Coinbase Becomes Hyperliquids Official Usdc Treasury Deployer As Usdh Sunsets](https://github.com/QianJinGuo/wiki/blob/main/entities/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md) — Coinbase USDC treasury
-- [Tether Launches Developer Grants Program For Local Ai Paymen](../ch09/141-tether-launches-developer-grants-program-for-local-ai-paymen.html) — Tether 本地 AI 支付开发者资助
+- [Tether Launches Developer Grants Program For Local Ai Paymen](../ch09/142-tether-launches-developer-grants-program-for-local-ai-paymen.html) — Tether 本地 AI 支付开发者资助
 - [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](../ch01/715-9.html) — 加密基金 6 周连续流入
 - [The Token Economy Pt2 The Intelligence Company Gets Built](../ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html) — Token 经济与 AI 智能公司
 

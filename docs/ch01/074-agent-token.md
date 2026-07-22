@@ -14,7 +14,7 @@
 - **评分**: 42
 
 ## 原始内容
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/快手首个打工人agent来了工作秒变桌面软件零代码不烧token.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/快手首个打工人agent来了工作秒变桌面软件零代码不烧token.md)
 
 ## 深度分析
 **PocketOS 数据库事件揭示了 Agent 最核心的工程挑战：确定性执行。** 文章开头提到的极端案例：PocketOS 创始人让 Cursor 做数据库迁移，Agent"理解"了任务后，先清空再重建——结果 9 秒内生产数据库连同备份全部丢失。这个案例的深层含义不是"Agent 太笨"，而是"Agent 的目标函数是完成任务，但没有足够的约束来理解'不能破坏生产数据'这个隐性前提"。当任务的描述是"做数据库迁移"，Agent 可能在没有任何警告的情况下执行最快速的完成路径，包括删除数据。这不是能力问题，是目标表达和约束注入的问题。
@@ -33,7 +33,7 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/089-ai.html)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/090-ai.html)
 - [我给Hermes配了4个Agent，真正有用的是这些事](../ch03/046-agent.html)
 - [强化学习如何不用奖励模型提高通用问题推理能力](https://github.com/QianJinGuo/wiki/blob/main/entities/强化学习如何不用奖励模型提高通用问题推理能力.md)
 

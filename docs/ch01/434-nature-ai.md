@@ -76,13 +76,13 @@
 - [Agent Architecture Harness](../ch05/018-harness.html)
 - [Program-as-Weights PAW](https://github.com/QianJinGuo/wiki/blob/main/entities/program-as-weights-paw-fuzzy-functions-waterloo.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/维纳智能登上nature通讯ai不只会回答问题开始生成高精度行业数据.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/维纳智能登上nature通讯ai不只会回答问题开始生成高精度行业数据.md)
 
 ## 第 2 Source — 机器之心
 
 > From WeChat MP 机器之心, supplemental coverage of the same topic.
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/维纳智能登上nature通讯ai不只会回答问题开始生成高精度行业数据-2026-07-08.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/维纳智能登上nature通讯ai不只会回答问题开始生成高精度行业数据-2026-07-08.md)
 
 ---
 

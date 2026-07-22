@@ -180,13 +180,13 @@ PowerShell
 4. **冷启动延迟需要纳入 UX 设计**：首次消息触发 microVM 创建约需 10-15 秒，用户体验上这是"等待但有响应"。建议在 Bot 欢迎消息或文档中告知用户首次交互会有稍长延迟，避免用户误以为 Bot 无响应而重复发送消息。
 5. **监控大盘是运维的主入口**：CloudWatch 的 Router Lambda 日志是排查消息路由失败的第一站；AgentCore 容器日志用于排查 OpenClaw 本身的问题；Token Analytics 大盘用于实时评估 AI 成本。三个视角缺一不可，建议运维团队为每个视角准备标准化的查询过滤条件。
 ## 相关实体
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/535-amazon-bedrock-agentcore.html)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/535-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/537-amazon-bedrock-agentcore.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/537-amazon-bedrock-agentcore.html)
 - [Openclaw Multi 2](ch11/227-openclaw.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 3](../ch04/535-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch04/535-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 3](../ch04/537-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch04/537-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # Build an AI-powered AWS support companion with Amazon Bedrock AgentCore
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-an-ai-powered-aws-support-companion-with-amazon-bedroc.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-an-ai-powered-aws-support-companion-with-amazon-bedroc.md)
 
 # Build an AI-powered AWS support companion with Amazon Bedrock AgentCore
 

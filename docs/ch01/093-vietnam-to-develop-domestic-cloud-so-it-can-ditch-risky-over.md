@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 6.5KB | `entities/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
 
 ## 核心要点
 - 来源：www.theregister.com
@@ -12,7 +12,7 @@
 - 发布时间：2026-05-13
 - 越南政府通过 **Decision 808/QD-TTg** 推出 20 项战略技术发展规划，国内云平台位列第 13 项
 - 核心目标：确保国家数据主权和网络安全，逐步替换政府机构使用的境外云服务
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
 
 ## 深度分析
 ### 1. 数据主权与合规压力交织

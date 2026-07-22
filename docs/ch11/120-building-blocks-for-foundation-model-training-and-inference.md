@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
 
 ## 核心摘要
 AWS 提供从 P5 (H100/H200) 到 P6 (B200/B300) 的 GPU 实例家族，配合 EFA v2/v3/v4 OS-bypass 网络和 FSx for Lustre 分层存储，构成基础模型训练和推理的完整基础设施层。
@@ -51,14 +51,14 @@ DCGM-Exporter 暴露 GPU 指标中，SM activity (DCGM_FI_PROF_SM_ACTIVE) 比基
 ## 相关实体
 - [Foundation Model Building Blocks](../ch03/089-foundation-model-building-blocks.html)
 - [AWS Model Agility: 6步LLM跨代际迁移框架](ch11/150-aws-generative-ai-model-agility-framework.html)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/576-agentic-ai.html)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/060-agentic-ai.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/009-aws-bedrock.html)
 - [EC2 Capacity Blocks：GPU短期容量决策指南](ch11/215-aws-ec2-capacity-blocks-gpu-ml.html)
-- [SageMaker容量感知推理：实例池+优先级Fallback](../ch01/349-aws-sagemaker-capacity-aware-inference-fallback.html)
-- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/756-ai-infra.html)
+- [SageMaker容量感知推理：实例池+优先级Fallback](../ch01/346-aws-sagemaker-capacity-aware-inference-fallback.html)
+- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/1204-ai-infra.html)
 - [基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境](ch11/024-amazon-workspaces-applications.html)
 - [End To End Encrypted Ml Inference With Amazon Sagemaker Ai A](ch11/045-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.html)
-- [notes on pretraining parallelisms and failed training runs.](../ch05/089-ai.html)
+- [notes on pretraining parallelisms and failed training runs.](../ch05/090-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 
 ---

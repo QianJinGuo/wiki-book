@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/fastapi上线实战认证限流零停机一套代码搞定.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md)
-从微信文章 [FastAPI上线实战：认证、限流、零停机，一套代码搞定](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md) 提取。
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md)
+从微信文章 [FastAPI上线实战：认证、限流、零停机，一套代码搞定](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/zYnWWSUptDtRMOelZMLkVw
@@ -30,7 +30,7 @@ source_url: https://mp.weixin.qq.com/s/zYnWWSUptDtRMOelZMLkVw
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/396-agent-skills.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/397-agent-skills.html)
 - [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/046-agent.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 

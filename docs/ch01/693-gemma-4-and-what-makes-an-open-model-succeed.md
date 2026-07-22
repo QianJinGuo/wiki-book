@@ -6,7 +6,7 @@
 
 # Gemma 4 and what makes an open model succeed
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/gemma-4-and-what-makes-an-open-model-succeed.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemma-4-and-what-makes-an-open-model-succeed.md)
 
 ## 摘要
 
@@ -88,7 +88,7 @@ GPT-OSS 从发布时的混乱到最终的巨大成功，加上 Reflection、Arce
 
 - [DeepSeek Code Harness](../ch09/090-deepseek-code-harness.html)
 - [OpenClaw 完全指南](../ch11/227-openclaw.html)
-- [From AGI to ASI](ch01/235-agi.html)
+- [From AGI to ASI](ch01/299-agi.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

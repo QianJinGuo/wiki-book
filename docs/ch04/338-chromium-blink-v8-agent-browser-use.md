@@ -84,7 +84,7 @@ V8 执行层级（从快到慢，从轻到重）：
 
 ## 相关实体
 
-- [BrowserBC：人类轨迹 Skill 蒸馏](../ch01/1302-browserbc.html)
+- [BrowserBC：人类轨迹 Skill 蒸馏](../ch01/1307-browserbc.html)
 - [Agent Harness Context Management](../ch05/039-agent-harness.html)
 
 ## 延伸资源
@@ -94,7 +94,7 @@ V8 执行层级（从快到慢，从轻到重）：
 - V8 博客 (v8.dev)
 - Chromium University YouTube 系列
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/browser-internals-chromium-blink-v8-complete-guide-jiagoux-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/browser-internals-chromium-blink-v8-complete-guide-jiagoux-2026.md)
 
 ---
 

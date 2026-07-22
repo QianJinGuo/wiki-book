@@ -111,7 +111,7 @@ Hunk 聚焦于 **review 环节**，与 [Harness Engineering](https://github.com/
 - Claude Code — 典型的 agentic coder，Hunk 的主要集成目标
 - Human-in-the-loop — Hunk 的核心价值主张
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hunk-diff-viewer.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hunk-diff-viewer.md)
 
 ---
 

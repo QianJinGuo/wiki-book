@@ -42,25 +42,25 @@ Anthropic Skills 的渐进式加载策略在此场景中展现了独特的优势
 文中提供的开源 Skill（https://github.com/ConardLi/rag-skill/）可作为起点，根据自身知识库结构进行微调，而非从零构建 。
 
 ## 相关资源
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/使用-agent-skills-做知识库检索能比传统-rag-效果更好吗.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-agent-skills-做知识库检索能比传统-rag-效果更好吗.md)
 - rag-skill 开源实现：https://github.com/ConardLi/rag-skill/
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/1004-rag.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/603-llm.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/046-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/018-harness.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/366-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
-- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](ch04/267-skill.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/616-agentic.html)
+- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](ch04/266-skill.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/116-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/227-openclaw.html)
 
 - [Hermes Agent /goal 长任务运行时架构](ch04/368-hermes-agent-goal.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/092-hermes-agent.html)
-- [LoongSuite GenAI 可观测语义规范](ch04/445-loongsuite-genai.html)
+- [LoongSuite GenAI 可观测语义规范](ch04/446-loongsuite-genai.html)
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/046-agent.html)
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/103-ai-coding.html)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/104-ai-coding.html)
 
 ---
 

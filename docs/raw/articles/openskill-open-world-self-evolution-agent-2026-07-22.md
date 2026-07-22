@@ -10,6 +10,7 @@ review_value: 7
 review_confidence: 5
 review_vxc: 35
 review_decision: raw-only
+sha256: 238c230411413ec2fa47560972198356dd2f8b290f56ca51be05da4d5d8484e0
 ---
 
 # 深读 OpenSkill：不给答案不看测试，Agent 自进化

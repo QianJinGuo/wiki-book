@@ -23,12 +23,12 @@
 - T1098 — Account Manipulation
 ## 相关实体
 - [Huntress Edr Itdr](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr.md)
-- [Llm Raiders Private Ai Server](../ch01/880-llm.html)
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/457-how-claude-code-works-in-large-codebases-best-practices-and.html)
-- [Llm Raiders And How To Repel Them](../ch01/774-llm-raiders-and-how-to-repel-them.html)
+- [Llm Raiders Private Ai Server](../ch01/603-llm.html)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/456-how-claude-code-works-in-large-codebases-best-practices-and.html)
+- [Llm Raiders And How To Repel Them](../ch01/773-llm-raiders-and-how-to-repel-them.html)
 - [How To Create Websites With Great Ux Designs](../ch01/138-how-to-create-websites-with-great-ux-designs-principles-and.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/huntress-edr-itdr-unified-detection.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/huntress-edr-itdr-unified-detection.md)
 
 ## 深度分析
 ### 1. 端点与身份融合的技术必然性

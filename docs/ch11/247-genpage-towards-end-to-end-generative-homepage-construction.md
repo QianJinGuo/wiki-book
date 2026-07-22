@@ -6,7 +6,7 @@
 
 # GenPage: Towards End-to-End Generative Homepage Construction at Netflix
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/genpage-towards-end-to-end-generative-homepage-construction-.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/genpage-towards-end-to-end-generative-homepage-construction-.md)
 
 # GenPage: Towards End-to-End Generative Homepage Construction at Netflix
 

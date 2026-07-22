@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/openai官方cli上线跟复杂的sdk说拜拜.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai官方cli上线跟复杂的sdk说拜拜.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai官方cli上线跟复杂的sdk说拜拜.md)
 
 ## Summary
 OpenAI 发布官方 CLI 工具，允许开发者通过命令行直接调用 Codex 模型，无需 SDK。
@@ -18,7 +18,7 @@ OpenAI 发布官方 CLI 工具，允许开发者通过命令行直接调用 Code
 - URL: https://mp.weixin.qq.com/s/arj09cGhfDb4rW0IRyon6A
 - 来源: 机器之心
 - 发布: 2026-05-08
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openai官方cli上线跟复杂的sdk说拜拜.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai官方cli上线跟复杂的sdk说拜拜.md)
 
 ## 深度分析
 OpenAI 推出官方 CLI 的核心意义在于**将 AI 能力标准化为 Unix 工具链的一部分**。这一转变代表着 AI 基础设施正在向"原生化"方向演进——AI 不再是需要复杂 SDK 封装的特殊能力，而是可以像 `grep`、`awk`、`curl` 一样融入日常的命令行工作流。

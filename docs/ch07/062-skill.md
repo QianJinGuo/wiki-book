@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/skill-version-comparison-five-principles-winty.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-version-comparison-five-principles-winty.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-version-comparison-five-principles-winty.md)
 
 Skill 版本升级不能只看总分变化，需要多维度对比 + 分场景拆解 + 失败 case 人眼复核 + 统计显著性检验 + Token/时延纳入门禁。本文提出 5 条原则和完整的版本对比报告 YAML 模板。
 
@@ -101,8 +101,8 @@ YAML 结构化模板（关键字段）：
 
 ## 相关实体
 
-- [Skill 版本管理五大原则](../ch04/267-skill.html) — 同作者同系列，版本管理侧
-- [Agent Skill 写作评估](../ch04/265-agent-skill.html)
+- [Skill 版本管理五大原则](../ch04/266-skill.html) — 同作者同系列，版本管理侧
+- [Agent Skill 写作评估](../ch04/610-agent-skill.html)
 - [Harness Engineering](../ch05/116-harness-engineering.html)
 - [Claw-SWE-Bench](../ch05/018-harness.html) — harness 独立评测基准
 - [Agent Eval WalleZhang](../ch03/046-agent.html) — YAML 驱动评估框架

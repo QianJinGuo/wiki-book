@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/back-engineering-static-devirtualization-themida.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/back-engineering-static-devirtualization-themida.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/back-engineering-static-devirtualization-themida.md)
 
 ## 关键要点
 - Themida 是一种软件保护壳，使用虚拟化技术保护软件
 - 文章提供了静态去虚拟化的技术细节
 - 包含代码级别的技术分析
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/back-engineering-static-devirtualization-themida.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/back-engineering-static-devirtualization-themida.md)
 
 ## 深度分析
 Themida 的虚拟机架构与 VMProtect 的主要区别在于支持嵌套虚拟化。VM context 和虚拟栈位于 binary 自身内部，而非原生栈上。devirtualization 的核心方法是将原生指令提升为可塑的中间表示（IR），通过将控制流具体化来驱动提升过程——当优化解析出未知的分支目标时， concrete control flow 使提升能够继续进行。

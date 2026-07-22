@@ -6,7 +6,7 @@
 
 # 如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/如何保护-ec2-实例存储instance-store数据不丢失场景分析与自动化防护实践.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/如何保护-ec2-实例存储instance-store数据不丢失场景分析与自动化防护实践.md)
 
 # 如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践
 

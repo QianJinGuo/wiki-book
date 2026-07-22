@@ -63,7 +63,7 @@ Thariq 在文中表示：  Fable 5 的能力上限，取决于你能发现多少
 
 Thariq 在文...
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fable-5-官方实战指南找到你的未知.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fable-5-官方实战指南找到你的未知.md)
 
 ---
 

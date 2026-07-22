@@ -79,15 +79,15 @@ ShinyHunters 决定"完全放弃 clearnet 运营，仅依赖 onion 平台"具有
 ## 相关实体
 
 - [Claude Code 源码机制](../ch03/076-claude-code.html) — AI 工具架构
-- [Karpathy Vibe Coding 访谈](../ch04/235-agentic.html) — Agentic Engineering 范式
+- [Karpathy Vibe Coding 访谈](../ch04/616-agentic.html) — Agentic Engineering 范式
 - [Harness Engineering 概念](../ch05/116-harness-engineering.html)
-- [Karpathy Vibe Coding 完整版](../ch04/682-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding 完整版](../ch04/134-karpathy-vibe-coding-agentic-engineering.html)
 - [Agent 记忆系统](../ch03/046-agent.html)
-- [Scale Robot RL with NVIDIA Isaac Lab](../ch01/1129-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot RL with NVIDIA Isaac Lab](../ch01/1131-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [LLMReaper Browser Extension Attack](ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html) — 浏览器扩展攻击向量
 - [What My Privacy and Security Stack Actually Looks Like](ch12/021-what-my-privacy-and-security-stack-actually-looks-like.html) — 个人安全栈案例
 
-> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md)
+> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md)
 
 ---
 

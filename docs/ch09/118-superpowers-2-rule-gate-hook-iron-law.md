@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/superpowers-deep-dive-kaiyuandakashuo.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/superpowers-deep-dive-kaiyuandakashuo.md)
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/superpowers-deep-dive-kaiyuandakashuo.md)
 
 Superpowers 第二篇深度解读：聚焦 Rule/Gate/Hook 核心哲学、Iron Law、TDD 应用到 prompt engineering、SDLC 范式映射。开元大咖说/原作者。
 
@@ -106,7 +106,7 @@ Jesse 探索第二种 mode："iterative greenfield"——不走 spec-first，从
 
 ## 相关实体
 
-- [Superpowers 深度解析（1）：概率操控与负向收益](../ch05/087-superpowers-claude-code.html) — 第 1 来源
+- [Superpowers 深度解析（1）：概率操控与负向收益](../ch05/088-superpowers-claude-code.html) — 第 1 来源
 - [Harness Engineering](../ch05/116-harness-engineering.html)
 - [12 Agent 设计模式](../ch03/046-agent.html) — 同样强调"确定性从 LLM 剥离"
 - [AI Coding Agent Token 成本控制](ch09/047-coding-agent.html) — Superpowers 多阶段会大幅增加 token 成本

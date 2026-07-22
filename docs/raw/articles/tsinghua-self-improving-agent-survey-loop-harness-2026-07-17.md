@@ -10,6 +10,7 @@ review_value: 5
 review_confidence: 6
 review_vxc: 30
 review_decision: raw-only
+sha256: b8401759e2717268113f6d0d2a5f68739a9be3a661788d5af9eb473c1626f8cf
 ---
 
 # Loop+Harness：清华大学自进化 Agent 论文解读

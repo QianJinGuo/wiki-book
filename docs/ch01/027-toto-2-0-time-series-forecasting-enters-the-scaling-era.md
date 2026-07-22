@@ -10,13 +10,13 @@
 - 在 BOOM、GIFT-Eval、TIME 三大基准测试中均取得 SOTA
 - 比 Toto 1.0 提升 7 倍参数效率，推理速度大幅提升
 - Apache 2.0 开源许可
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/toto-2.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/toto-2.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [时间序列预测数据增强方法](https://github.com/QianJinGuo/wiki/blob/main/entities/time-series-forecasting-augmentation.md)
-- [CEOs of the classroom: Why principals are the key to the AI era](../ch05/089-ai.html)
+- [CEOs of the classroom: Why principals are the key to the AI era](../ch05/090-ai.html)
 - [How Superset built the IDE for AI agents on Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 
 ## 深度分析

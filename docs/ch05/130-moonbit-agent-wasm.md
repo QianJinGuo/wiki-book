@@ -6,7 +6,7 @@
 
 # MoonBit：面向 Agent 协作的编程语言
 
-> **来源**：机器之心 | [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-时代的编程语言这次是来自中国的底层创新.md)
+> **来源**：机器之心 | [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-时代的编程语言这次是来自中国的底层创新.md)
 > **语言**：由中国团队开发的编程语言，面向 Agent 协作、快速反馈和工程闭环设计
 
 ## 核心架构：语言即工具链

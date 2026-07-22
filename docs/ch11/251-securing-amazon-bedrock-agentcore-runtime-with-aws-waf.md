@@ -6,7 +6,7 @@
 
 # Securing Amazon Bedrock AgentCore Runtime with AWS WAF
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/securing-amazon-bedrock-agentcore-runtime-with-aws-waf.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securing-amazon-bedrock-agentcore-runtime-with-aws-waf.md)
 
 # Securing Amazon Bedrock AgentCore Runtime with AWS WAF
 

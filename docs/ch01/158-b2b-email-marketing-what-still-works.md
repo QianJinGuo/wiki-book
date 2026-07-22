@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 3.7KB | `entities/b2b-email-marketing-what-still-works.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/b2b-email-marketing-what-still-works.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/b2b-email-marketing-what-still-works.md)
 
 ## 深度分析
 B2B Email Marketing 在 2026 年依然是最高价值的营销渠道之一，但策略重心已发生显著转移。这篇 Exit Five Live 活动预告揭示了几个关键行业动态：
@@ -35,9 +35,9 @@ B2B Email Marketing 在 2026 年依然是最高价值的营销渠道之一，但
 
 ## 相关实体
 
-- [Freelance Designers Can't Compete With a $20/Month AI Subscription - Here's What Actually Works Now](../ch05/089-ai.html)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1232-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
-- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/089-ai.html)
+- [Freelance Designers Can't Compete With a $20/Month AI Subscription - Here's What Actually Works Now](../ch05/090-ai.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1237-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/090-ai.html)
 
 ---
 

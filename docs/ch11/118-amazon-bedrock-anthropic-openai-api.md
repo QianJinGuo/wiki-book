@@ -70,7 +70,7 @@ curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
 - `amazon-bedrock-model-inference-serverless-architecture-case-study.md` — 服务端架构
 - 本文档：**客户端用户体验**（控制台 UI 升级 + 兼容端点）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/试用-amazon-bedrock-中的新控制台体验该体验针对兼容-anthropic-和-openai-的-api-进.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/试用-amazon-bedrock-中的新控制台体验该体验针对兼容-anthropic-和-openai-的-api-进.md)
 
 ## 深度分析
 
@@ -106,7 +106,7 @@ curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
 
 ### 相关实体
 
-- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](../ch04/535-amazon-bedrock-agentcore.html) — Bedrock runtime 体系深度解析，与 bedrock-mantle 兼容端点互补
+- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](../ch04/537-amazon-bedrock-agentcore.html) — Bedrock runtime 体系深度解析，与 bedrock-mantle 兼容端点互补
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](ch11/159-amazon-bedrock.html) — Bedrock 上 agent 的 production 化路径，包含 Guardrails / 知识库等安全机制
 
 ## 实践启示

@@ -81,11 +81,11 @@ Amazon Bedrock Data Automation (BDA) 的 **Blueprint Instruction Optimization** 
 
 - [process-financial-documents-using-amazon-bedrock-data-automa](../ch11/159-amazon-bedrock.html) — 同 BDA 平台，重点是金融文档的实际提取案例
 - [automate-schema-generation-for-intelligent-document-processing](../ch11/168-automate-schema-generation-for-intelligent-document-processi.html) — schema 自动生成（与 blueprint 优化互补：先生成 schema，再优化 instruction）
-- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](../ch04/535-amazon-bedrock-agentcore.html) — Bedrock AgentCore 平台深度（非 BDA，但同 Bedrock 体系）
+- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](../ch04/537-amazon-bedrock-agentcore.html) — Bedrock AgentCore 平台深度（非 BDA，但同 Bedrock 体系）
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.md)
 
 ## 深度分析
 

@@ -6,7 +6,7 @@
 
 # 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/构建-amazon-elasticache-oss-caches-慢查询监控方案.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/构建-amazon-elasticache-oss-caches-慢查询监控方案.md)
 
 # 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
 

@@ -6,7 +6,7 @@
 
 # 基于钉钉机器人的 Qoder CLI / Claude Code 双引擎 AI 助手实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dingtalk-qoder-claudecode-dual-engine-ai-assistant.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dingtalk-qoder-claudecode-dual-engine-ai-assistant.md)
 
 ## 深度分析
 
@@ -40,8 +40,8 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/682-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/616-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/227-openclaw.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/039-agent-harness.html)

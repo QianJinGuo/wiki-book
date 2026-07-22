@@ -6,7 +6,7 @@
 
 # Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-hiring-1680-resumes-infrastructure-veterans-machinespirit-2026.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-hiring-1680-resumes-infrastructure-veterans-machinespirit-2026.md)
 > Original Source: seb@hiiinternet X 上的硬核背景分析
 > Reporter: 机器之心编辑部
 
@@ -130,15 +130,15 @@
 3. **工程经验中位 12.2 年** — 几乎不招新人，应届生基本不存在；这是"拿来即用"的人才战略
 4. **Google 而非 OpenAI/DeepMind 是最大人才源** — 颠覆业界"AI 实验室互相挖研究员"叙事
 5. **MoTS 去科层化** — 用单一职级消除办公室政治与官僚作风；与[Harness Engineering](../ch05/039-agent-harness.html)"减少人工翻译/人工兜底"的组织哲学一致
-6. **唯一新人入口靠竞赛/fellowship** — IOI 银牌 + Codeforces 2900+ 或对齐 fellowship；与[Anthropic AI 原生创业手册](../ch04/456-anthropic-ai.html)的人才理念互补
+6. **唯一新人入口靠竞赛/fellowship** — IOI 银牌 + Codeforces 2900+ 或对齐 fellowship；与[Anthropic AI 原生创业手册](../ch04/457-anthropic-ai.html)的人才理念互补
 
 ## 相关实体
-- [Anthropic AI 原生创业手册](../ch04/456-anthropic-ai.html)（同公司同主题的人才战略另一视角）
+- [Anthropic AI 原生创业手册](../ch04/457-anthropic-ai.html)（同公司同主题的人才战略另一视角）
 - [Claude Code 招聘工程师](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)（不同主题：用 Claude Code 辅助招聘 vs 本文 Anthropic 招什么样的人）
 - [Harness Engineering 综述](../ch05/116-harness-engineering.html)（相关：构建大规模生产系统的工程能力）
 - [Harness 架构](../ch05/039-agent-harness.html)（相关：Anthropic 40% 基础设施背景与 Harness 实践的组织基础）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-hiring-1680-resumes-infrastructure-veterans-machinespirit-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-hiring-1680-resumes-infrastructure-veterans-machinespirit-2026.md)
 
 ---
 

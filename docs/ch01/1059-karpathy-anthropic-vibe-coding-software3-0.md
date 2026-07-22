@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](../ch05/001-impeccable.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/karpathy-software3-vibe-coding-dead-agentic-engineering.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-software3-vibe-coding-dead-agentic-engineering.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
@@ -45,8 +45,8 @@ Karpathy加入Anthropic后首讲：Vibe Coding已死，Software3.0来了 涉及a
 - **ai-coding趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/682-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/616-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/227-openclaw.html)

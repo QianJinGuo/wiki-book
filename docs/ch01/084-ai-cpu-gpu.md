@@ -4,19 +4,19 @@
 
 > 📊 Level ⭐ | 6.8KB | `entities/baidu-confidential-computing-cpu-gpu-full-chain.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/baidu-confidential-computing-cpu-gpu-full-chain.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-confidential-computing-cpu-gpu-full-chain.md)
 
 ## 摘要
 百度智能云新一代AI机密计算实例：从CPU到GPU全链路可信
 
 ## 关键要点
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/baidu-confidential-computing-cpu-gpu-full-chain.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-confidential-computing-cpu-gpu-full-chain.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)
 
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/089-ai.html)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/090-ai.html)
 - [我给Hermes配了4个Agent，真正有用的是这些事](../ch03/046-agent.html)
 
 ## 深度分析

@@ -6,7 +6,7 @@
 
 # A Missing Layer in Agentic Systems?
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/a-missing-layer-in-agentic-systems.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a-missing-layer-in-agentic-systems.md)
 
 ## 摘要
 
@@ -108,10 +108,10 @@ def review_content(self, content):
 
 ## 相关实体
 
-- [Lessons From 2 Billion Agentic Workflows](ch04/422-lessons-from-2-billion-agentic-workflows.html) — 20 亿次工作流的三核心模式
-- [Agentcore Harness](ch04/656-agentcore-harness.html) — AgentCore 工程化
+- [Lessons From 2 Billion Agentic Workflows](ch04/424-lessons-from-2-billion-agentic-workflows.html) — 20 亿次工作流的三核心模式
+- [Agentcore Harness](ch04/657-agentcore-harness.html) — AgentCore 工程化
 - [Hands Free First Notice Of Loss Using Strands Agents And Ama](ch04/369-hands-free-first-notice-of-loss-using-strands-agents-and-am.html) — 保险 FNOL 中的人类角色重置
-- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](ch04/228-build-an-ai-powered-equipment-repair-assistant-using-amazon.html) — AgentCore 维修助手的记忆层设计
+- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](ch04/227-build-an-ai-powered-equipment-repair-assistant-using-amazon.html) — AgentCore 维修助手的记忆层设计
 - [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) — 生产级 Agent 工程
 - [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
 - [Ai Safety Governance](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-safety-governance.md) — AI 安全治理

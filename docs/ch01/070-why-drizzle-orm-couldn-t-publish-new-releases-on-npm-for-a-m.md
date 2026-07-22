@@ -87,7 +87,7 @@ While Drizzle's packument is now back to 61 MiB, our NPM mirror is taking a slig
 
 So, running that same curl command on our mirror only has Drizzle at **1.7 MiB** so far. Lots of room to grow!
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/blog-packument-size-limits.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blog-packument-size-limits.md)
 
 ---
 

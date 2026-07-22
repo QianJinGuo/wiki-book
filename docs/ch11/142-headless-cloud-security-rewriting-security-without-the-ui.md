@@ -8,15 +8,15 @@
 （见原文）
 
 ## 要点
-- 来源: [raw/articles/sysdig-headless-cloud-security.md](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sysdig-headless-cloud-security.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sysdig-headless-cloud-security.md)
+- 来源: [raw/articles/sysdig-headless-cloud-security.md](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sysdig-headless-cloud-security.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sysdig-headless-cloud-security.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [CloudSectiDbits: Masso - Cognito SSO Bypass](ch11/240-cloudsectidbits.html)
-- [Vietnam to develop domestic cloud](../ch01/1076-opd.html)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04/305-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [Vietnam to develop domestic cloud](../ch01/1078-opd.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04/585-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04/304-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
 - [The Agency Model Dangers](https://github.com/QianJinGuo/wiki/blob/main/concepts/the-agency-model-dangers.md)

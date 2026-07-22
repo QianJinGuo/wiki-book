@@ -6,7 +6,7 @@
 
 # Simplify model selection in Amazon Bedrock with the open source Model Profiler
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/simplify-model-selection-in-amazon-bedrock-with-the-open-sou.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/simplify-model-selection-in-amazon-bedrock-with-the-open-sou.md)
 
 # Simplify model selection in Amazon Bedrock with the open source Model Profiler
 

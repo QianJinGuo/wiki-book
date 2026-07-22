@@ -51,10 +51,10 @@ HSCodeComp 定位在现有 Deep Search 基准的盲区——测量 Agent 在"规
 
 - [Harness Engineering](ch05/116-harness-engineering.html) — Agent Harness 提供 +8.5pt 增益，验证了 Harness 对规则应用的基础作用
 - [AINMM 成熟度模型](ch05/019-ai-native.html) — 验证回路依赖规则锚定而非模型自省
-- [AI Agent 评测 5 维体系](ch05/103-ai-coding.html) — 评测方法论参考
+- [AI Agent 评测 5 维体系](ch05/104-ai-coding.html) — 评测方法论参考
 - [评估 Harness 设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md) — 任务设计与评测方法论
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hscodecomp-acl-2026-best-resource-paper.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hscodecomp-acl-2026-best-resource-paper.md)
 
 ---
 

@@ -10,14 +10,14 @@
 - Source: https://aws.amazon.com/blogs/machine-learning/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock/
 
 ## 相关实体
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/535-amazon-bedrock-agentcore.html)
-- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/535-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/535-amazon-bedrock-agentcore.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/537-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/537-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/537-amazon-bedrock-agentcore.html)
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch11/159-amazon-bedrock.html)
 - [Automate Schema Generation for Intelligent Document Processing](ch11/168-automate-schema-generation-for-intelligent-document-processi.html)
-- [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/380-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
+- [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/377-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/030-ai-agent.html)
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/639-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/638-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/034-amazon-bedrock-api.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
@@ -77,7 +77,7 @@ Pulse + Bedrock 方案的核心差异是**领域自适应**：Pulse 提取的是
 - **文档复杂度中（合同、报告）**：Pulse AI 单阶段方案，考虑微调必要性
 - **文档复杂度高（多数据源金融报表、合规文件）**：Pulse + Bedrock Nova Micro 两阶段流水线
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
 
 ### 监控与迭代
 上线后需监控：提取字段级 precision/recall（按金融重要性加权）、下游分析系统偏差率、模型版本间一致性。建议每季度用新文档样本重新评估微调模型，捕捉金融术语和报表格式的演变。

@@ -74,11 +74,11 @@ Lambert 将开源的价值归纳为三个相互关联的维度，这一框架对
 
 5. **需要区分"开源模型"与"开源软件"在不同安全维度上的差异**：文章主要引用软件开源的经验（林纳斯定律），但 AI 模型的安全挑战（如能力滥用、对齐问题）与软件 bug 不同。未来政策讨论需要更精确地区分模型权重开源、训练数据开源和代码开源的不同安全含义。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/banning-open-source-ai-would-be-a-mistake.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/banning-open-source-ai-would-be-a-mistake.md)
 
 ## 相关实体
 
-- [AI 公司为何把哲学家请进实验室](ch01/944-anthropic.html) — AI 对齐与伦理治理相关讨论
+- [AI 公司为何把哲学家请进实验室](ch01/1295-anthropic.html) — AI 对齐与伦理治理相关讨论
 - [Anthropic 8x 输出验证瓶颈](../ch09/096-anthropic-8x.html) — Anthropic 工程实践与模型输出治理
 
 ---

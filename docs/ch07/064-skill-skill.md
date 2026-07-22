@@ -6,7 +6,7 @@
 
 # 龙虾之父教你省钱：开源Skill给你的Skill减肥
 
-> **来源**：量子位（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/steipete-skill-cleaner-liangzide.md)
+> **来源**：量子位（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/steipete-skill-cleaner-liangzide.md)
 
 ## 深度分析
 
@@ -72,12 +72,12 @@ user happy
 
 ## 相关实体
 - [Openclaw Prompt Context Harness](../ch11/227-openclaw.html)
-- [Skill System Design Three Way Comparison](../ch04/267-skill.html)
-- [Openclaw Agent Loop Design Patterns](../ch01/1005-openclaw-agent.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/267-skill.html)
+- [Skill System Design Three Way Comparison](../ch04/266-skill.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1006-openclaw-agent.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/266-skill.html)
 - [Ai Skill Skill Creator 源码拆解](../ch04/316-skill-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/steipete-skill-cleaner-liangzide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/steipete-skill-cleaner-liangzide.md)
 
 ---
 

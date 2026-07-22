@@ -12,7 +12,7 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP
 
 ## 来源
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip/)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip.md)
 
 ## 深度分析
 ### 信任模型的根本性翻转

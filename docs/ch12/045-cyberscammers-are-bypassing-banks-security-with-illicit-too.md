@@ -45,11 +45,11 @@ Recent [analysis](https://www.icij.org/investigations/coin-laundry/cryptocurrenc
 ## 相关实体
 - [Cyberscammers Are Bypassing Banks Security With Illicit Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/Cyberscammers-are-bypassing-banks-security-with-illicit-tool.md)
 - [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
-- [Ai_Threat_Readiness_Framework](../ch05/089-ai.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/089-ai.html)
+- [Ai_Threat_Readiness_Framework](../ch05/090-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/090-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cyberscammers-bypassing-bank-telegram.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cyberscammers-bypassing-bank-telegram.md)
 
 ## 深度分析
 
@@ -85,7 +85,7 @@ Talsec CEO Sergiy Yakymchuk 介绍，早期仅需反编译银行 APP 即可完�
 
 - **稳定币交易监控**：Tether 已成为赃款洗白首选工具，金融机构应建立加密货币出金业务的专项监控规则，对短期内大额稳定币转换进行预警 
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cyberscammers-bypassing-bank-telegram.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cyberscammers-bypassing-bank-telegram.md)
 
 ---
 
