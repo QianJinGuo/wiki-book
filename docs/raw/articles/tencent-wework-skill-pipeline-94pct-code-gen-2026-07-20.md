@@ -10,6 +10,7 @@ review_value: 8
 review_confidence: 8
 review_vxc: 64
 review_decision: entity
+sha256: 6b42241a31056df850119b022906c6afeec19292854fb1f61cbbfc37f75cc90f
 ---
 
 # AI代码生成率94%：用一个 Skill 跑通需求开发全流程

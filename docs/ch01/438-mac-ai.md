@@ -98,7 +98,7 @@ Cider + Mano-P 组合并非无代价。在 16GB 内存设备上，W8A8 模式需
 - **Apple Silicon MLX 推理优化**
 - **Private AI 本地推理架构**
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/国产双开源让mac成为你的私人ai工作站.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/国产双开源让mac成为你的私人ai工作站.md)
 
 ---
 

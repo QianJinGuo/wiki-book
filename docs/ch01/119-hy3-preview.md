@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 5.0KB | `entities/tencent-hunyuan-hy3-preview-open-source-agent.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tencent-hunyuan-hy3-preview-open-source-agent.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-open-source-agent.md)
 
 ## 摘要
 腾讯混元 Hy3-preview 发布并开源，这是一个快慢思考融合的混合专家模型（MoE），总参数 295B，激活参数 21B，最大支持 256K 上下文长度，在复杂推理、指令遵循、上下文学习、代码、智能体等能力上实现大幅提升。
@@ -18,7 +18,7 @@
 
 ## 相关实体
 - [Cline releases open-source agent runtime SDK](../ch03/046-agent.html)
-- [Cline releases open-source agent runtime SDK](../ch04/465-cline-releases-open-source-agent-runtime-sdk.html)
+- [Cline releases open-source agent runtime SDK](../ch04/466-cline-releases-open-source-agent-runtime-sdk.html)
 
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/076-claude-code.html)
 
@@ -46,7 +46,7 @@ Hy3 preview 在 495 步复杂工作流中的稳定表现，以及 99.99%+ 的成
 腾讯的"评测真实性"原则值得借鉴：不应仅依赖公开榜单评估模型，需结合自有业务场景设计评估集。当 Agent 场景涉及代码执行、工具调用、多轮对话等复合能力时，单一基准的得分往往不足以预测真实表现。
 
 ## 相关链接
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tencent-hunyuan-hy3-preview-open-source-agent.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-open-source-agent.md)
 - 
 -
 

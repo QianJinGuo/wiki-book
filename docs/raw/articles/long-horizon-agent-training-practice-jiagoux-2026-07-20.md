@@ -11,6 +11,7 @@ review_confidence: 7
 review_vxc: 56
 review_decision: supplementary
 supplements: entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026
+sha256: b60c2ca6f78306c2e688bfecb20fa265b1cf0da6f2f41e010d049d9a8111ed01
 ---
 
 # 长程自主 Agent 训练最佳实践：把工作现场变成可学习系统

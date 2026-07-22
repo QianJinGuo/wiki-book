@@ -57,10 +57,10 @@ Wordle 环境作为默认验证任务，展示了多轮 RL 的核心机制：模
 - [Agent Harness Production](../ch05/039-agent-harness.html) — Agent 生产级 Harness 工程实践
 - [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](../ch03/046-agent.html) — Agent 从原型到投产的关键挑战
 - [Rl训练一层就够了单层Rl超越全参数训练跨任务跨模型跨算法全部验证](https://github.com/QianJinGuo/wiki/blob/main/entities/rl训练一层就够了单层rl超越全参数训练跨任务跨模型跨算法全部验证.md) — 单层 RL 训练的效率发现
-- [Agent Config Model Tool Skill Mcp Prompt Combination Yexiaochai 09](../ch04/267-skill.html) — Agent 配置编排方法论
+- [Agent Config Model Tool Skill Mcp Prompt Combination Yexiaochai 09](../ch04/266-skill.html) — Agent 配置编排方法论
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 框架
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/deploying-multi-turn-rl-infrastructure-for-amazon-nova-on-amazon-sagemaker-hyper.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deploying-multi-turn-rl-infrastructure-for-amazon-nova-on-amazon-sagemaker-hyper.md)
 
 ---
 

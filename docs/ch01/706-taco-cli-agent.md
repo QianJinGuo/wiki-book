@@ -80,7 +80,7 @@ TACO 的自我演化包含三个核心阶段：
 - **LLM 上下文窗口优化**
 - **Agent 上下文管理策略**
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/taco-让-cli-agent-在自主迭代中学会丢掉无用上下文.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/taco-让-cli-agent-在自主迭代中学会丢掉无用上下文.md)
 
 ---
 

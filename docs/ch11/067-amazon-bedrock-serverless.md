@@ -37,13 +37,13 @@ Amazon Bedrock模型推理的Serverless 异步架构 – 处理在线多模态�
 八、总结
 
 ## 相关实体
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/535-amazon-bedrock-agentcore.html)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/535-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/537-amazon-bedrock-agentcore.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/537-amazon-bedrock-agentcore.html)
 - [Aws Bedrock Serverless Async Inference Multimodal](ch11/009-aws-bedrock.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/535-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/537-amazon-bedrock-agentcore.html)
 - [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/009-aws-bedrock.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
 
 - [redis agentic ai flowers with iris](../ch01/715-9.html)
 

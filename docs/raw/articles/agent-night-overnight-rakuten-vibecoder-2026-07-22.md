@@ -11,6 +11,7 @@ review_confidence: 6
 review_vxc: 42
 review_decision: supplementary
 supplements: entities/anthropic-long-running-agent-architecture-6h-retroforge
+sha256: f3efddbfff187f2051feaa42a8b968d38482c3a9e73e240f268a9fe264238148
 ---
 
 # Agent 能够长时夜间稳定运行，公司的瓶颈会转向人类判断

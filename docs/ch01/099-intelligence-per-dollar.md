@@ -66,9 +66,9 @@ Every layer in the stack now has to price the same way the customer thinks : per
 - [Products Are Out Brains Are In](ch01/137-products-are-out-brains-are-in.html)
 - Investing In Stitch
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Offline Llm Energy Use Html](ch01/880-llm.html)
+- [Offline Llm Energy Use Html](ch01/603-llm.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/tokens-per-result.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tokens-per-result.md)
 
 ---
 

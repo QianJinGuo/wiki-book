@@ -11,6 +11,7 @@ review_confidence: 8
 review_vxc: 56
 review_decision: supplementary
 supplements: entities/tencent-skill-writing-complete-playbook-jackjchou
+sha256: a9e29b87be890baeadc1ce297a65e1238bfd91a1579807e3d690c8b24b33c9ef
 ---
 
 # 只靠知识库救不了 AI Agent：它真正缺的是会做事的经验

@@ -74,7 +74,7 @@
 
 - GitHub：https://github.com/BeCrafter/skill-mcp
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-mcp-software-package-management-mcp-pipeline.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-mcp-software-package-management-mcp-pipeline.md)
 → [Hermes Skill 系统](ch07/017-hermes-skill.html)
 
 ---

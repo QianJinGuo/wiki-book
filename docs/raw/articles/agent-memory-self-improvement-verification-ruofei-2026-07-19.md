@@ -11,6 +11,7 @@ review_confidence: 7
 review_vxc: 56
 review_decision: supplementary
 supplements: entities/存之有序治之有矩agent-记忆系统的工程实践与演进
+sha256: 3281ade225e06f81163e08e4e09005826ca0e6ac39b18d93b254fca96adce186
 ---
 
 # Agent 记忆与可验证自我改进怎么设计

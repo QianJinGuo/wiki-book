@@ -11,6 +11,7 @@ review_confidence: 7
 review_vxc: 56
 review_decision: supplementary
 supplements: entities/prompt-context-harness-three-evolutions-tencent
+sha256: d973c7800968cf9d08f2b531d97f6017ff468e3597d64feb933284e7879d6490
 ---
 
 # 从 Prompt 到 Harness：企业级 Agent 工程的完整演进之路

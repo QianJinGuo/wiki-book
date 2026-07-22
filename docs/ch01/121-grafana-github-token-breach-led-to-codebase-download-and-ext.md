@@ -9,11 +9,11 @@
 ## 相关实体
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
-- [Why Im Leaving Github For Forgejo](ch01/790-github.html)
+- [Why Im Leaving Github For Forgejo](ch01/899-github.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/033-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](ch01/967-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](ch01/509-microsoft-for-startups-microsoft.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/grafana-github-token-breach-led-to-html.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/grafana-github-token-breach-led-to-html.md)
 
 ## 深度分析
 - **Token 泄露导致代码库失窃**：Grafana 披露攻击者通过一个被泄露的 Token 获得了对其 GitHub 环境的访问权限，并下载了完整代码库。由于 Grafana 产品线涵盖 Grafana Cloud（托管式可观测性平台）及开源监控工具，代码库本身包含大量专有逻辑和基础设施配置，攻击者可能借此发现更多 0day 漏洞或供应链攻击路径。

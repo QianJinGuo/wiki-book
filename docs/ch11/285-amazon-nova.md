@@ -6,7 +6,7 @@
 
 # 微调 Amazon Nova 模型实现精准邮件数据提取
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fine-tune-amazon-nova-models-for-accurate-email-data-extract.md)
+> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fine-tune-amazon-nova-models-for-accurate-email-data-extract.md)
 
 ## 摘要
 
@@ -90,7 +90,7 @@ Parcel Perform 的生产部署采用了 SageMaker AI Training → Amazon Bedrock
 - **Amazon Bedrock 自定义模型部署** — Bedrock 的自定义模型部署
 - **实体提取 NLP 流水线** — NLP 实体提取流水线架构
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fine-tune-amazon-nova-models-for-accurate-email-data-extract.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fine-tune-amazon-nova-models-for-accurate-email-data-extract.md)
 
 ---
 

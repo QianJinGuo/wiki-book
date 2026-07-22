@@ -78,7 +78,7 @@ Hubble Relay / Grafana / Falco Sidecar
 | 部署形态 | AWS Serverless | OTel collector | GPU 节点 | **DaemonSet per node** |
 | 拦截时机 | API 请求边界 | post-hoc 可观测 | 模型推理 sandbox | **syscall 实时拦截** |
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cilium-kubernetes-runtime-security-guide-2026-06-07.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cilium-kubernetes-runtime-security-guide-2026-06-07.md)
 
 ## 相关实体
 

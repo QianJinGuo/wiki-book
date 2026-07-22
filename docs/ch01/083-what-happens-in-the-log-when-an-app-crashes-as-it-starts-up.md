@@ -12,7 +12,7 @@ Practical and specific macOS debugging guide from a trusted source, with actiona
 
 ## 深入分析
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
 
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=8, stars=4。
 
@@ -42,14 +42,14 @@ Practical and specific macOS debugging guide from a trusted source, with actiona
 
 ## 相关实体
 - [Reasoning Lift](ch01/655-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.html)
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/886-20.html)
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/089-ai.html)
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/885-20.html)
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/090-ai.html)
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/018-build-agents-not-pipelines.html)
 
 ## 相关主题
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
 
 ---
 

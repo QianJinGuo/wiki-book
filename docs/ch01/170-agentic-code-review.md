@@ -6,7 +6,7 @@
 
 # Agentic Code Review
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-code-review-addyosmani.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-code-review-addyosmani.md)
 
 ## 核心要点
 
@@ -38,10 +38,10 @@ Code review used to work because of a happy accident of relative speed. A senior
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 addyosmani.com 视角
-- 引用源：[Agentic Code Review Addyosmani](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentic-code-review-addyosmani.md)
+- 引用源：[Agentic Code Review Addyosmani](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-code-review-addyosmani.md)
 ## 相关实体
 - [from doer to director: the ai mindset shift](ch01/033-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](ch01/132-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [why internally-built ai fails fund accounting audits](ch01/792-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [back up and restore your amazon eks cluster resources using](../ch11/012-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 ---

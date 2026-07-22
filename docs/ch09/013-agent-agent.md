@@ -312,7 +312,7 @@ business_agent_profile:
 
 - [循环工程 (loop engineering) — 清华 2026 框架](../ch05/007-loop-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 
 ---
 

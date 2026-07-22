@@ -6,7 +6,7 @@
 
 # 快手首个打工人Agent
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/kuaishou-worker-agent-desktop-software.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kuaishou-worker-agent-desktop-software.md)
 
 ## 摘要
 
@@ -170,8 +170,8 @@ browser-use 能力让 Agent 能够访问没有 API 的信息源，这是 Agent �
 - [Enterprise Software Moats in the Agent Era](../ch03/046-agent.html)
 - [AutoResearch 多 Agent 软件开发](../ch03/046-agent.html)
 - [Factory Mission Multi-Agent 系统](../ch03/046-agent.html)
-- [AgentOps on Bedrock](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch01/235-agi.html)
+- [AgentOps on Bedrock](../ch04/292-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch01/299-agi.html)
 
 ---
 

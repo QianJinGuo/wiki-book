@@ -47,14 +47,14 @@ Gemma4Defense-2B 采用完全相同的训练语料和超参数，仅更换基模
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cybersecqwen-4b.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cybersecqwen-4b.md)
 
 ## 相关实体
 >
 
 - [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](../ch01/040-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.html)
 - [Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads](../ch01/168-openai.html)
-- [Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](../ch05/089-ai.html)
+- [Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](../ch05/090-ai.html)
 
 ---
 

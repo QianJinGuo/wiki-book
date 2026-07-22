@@ -1,0 +1,119 @@
+# Claude Code 个人学习系统：从答案机到学习工作台的 5 步法
+
+## Ch09.004 Claude Code 个人学习系统：从答案机到学习工作台的 5 步法
+
+> 📊 Level ⭐ | 6.6KB | `entities/claude-code-personal-learning-system-ruofei.md`
+
+# Claude Code 个人学习系统：从答案机到学习工作台
+
+## 核心洞察
+
+> "当 AI 已经很会给答案，学习的关键就变成了：能不能给自己搭一个暴露问题的系统。"
+
+Claude Code 不只是写代码工具——它是一个能读文件、改文件、跑命令的工作台，可以维护一个**学习项目**。核心转变：从"答案机"到"学习工作台"。
+
+## 两种用法的对比
+
+| | 答案机模式 | 学习工作台模式 |
+|---|----------|--------------|
+| 交互方式 | 不懂就问→得到答案 | 目标→测验→纠错→复盘 |
+| 留下的东西 | "我好像懂了"的感觉 | 错误记录 + 学习卡 + 证据链 |
+| 能力形成 | 理解感，非迁移能力 | 可迁移的判断、操作、表达 |
+| AI 角色 | 客服（问什么答什么） | 陪练（先提示→追问→检查→揭示） |
+
+Bastani 等人(PNAS 2024)研究：无护栏 GPT-4 提高当场表现，但 AI 拿走后独立表现变差。**带护栏的 AI tutor** 通过提示、追问、不直接给答案缓解此问题。
+
+## 最小可用版：4 个文件
+
+30 分钟即可启动的学习 Harness：
+
+| 文件 | 职责 | 核心问题 |
+|------|------|----------|
+| `learning-contract.md` | 目标 + 阶段 + 完成标准 | 为什么学、学到哪、先不学什么 |
+| `source-ledger.md` | 3-5 个精选来源 | 每个来源的用途和学习顺序 |
+| `quiz-log.md` | 测验记录 | 问了什么、自己答得怎样 |
+| `mistake-log.md` | 错误模式 | 反复出错的地方 + 下一步动作 |
+
+> "这 4 个文件已经够跑第一轮。它不追求复杂，只负责把学习过程里最容易丢的东西留下来：目标、来源、测验和错误。"
+
+## 5 步法
+
+### Step 1：学习契约 — 把目标变成可检查对象
+
+不问"请教我机器学习"，先让 Claude Code 问 5 个问题确认水平/用途/时间/需求/排除项，再输出阶段+完成标准+练习+自测题。
+
+学习失败往往不是不努力，是目标一开始就太虚。与 Loop Engineering 的"反馈契约"同构：目标不清→反馈无落点→循环只是热闹。
+
+### Step 2：控制资料 — 不要超过 5 个
+
+资源越多越容易以为自己在推进，实际只是不断换入口。**学习环境要先瘦身**——资料少一点，反馈反而更清楚。
+
+这与 Environment Engineering 的核心观点一致：环境不是越大越好，关键是能不能给出高质量反馈。
+
+### Step 3：先让它做考官 — 答案不能提前出现
+
+一旦答案提前出现，大脑进入"识别答案"状态而非"生成答案"状态。**看懂答案和自己答出来，中间隔着一道很深的沟。**
+
+规则：一次一题→10 分制评分→只讲答错部分→薄弱先追问→结束后给下一组练习。
+
+学习科学支撑：
+- Karpicke & Roediger (Science 2008)：检索练习本身就是学习
+- Dunlosky et al. (PSPI 2013)：practice testing > 大多数学习策略
+- 没有测验，很多"我懂了"只是**界面渲染成功**
+
+### Step 4：带护栏的陪练 — 写进 CLAUDE.md
+
+默认规则（持久化到 CLAUDE.md）：
+
+1. 先给提示和追问，不直接给完整答案
+2. 每次只推进一个概念或一道题
+3. 回答错误→指出具体错误→更小的练习
+4. 每次结束→更新学习契约、测验记录、错误记录
+5. 涉及事实→标注来源层级（官方文档/论文/教材/经验判断/模型推断）
+
+> "普通对话里，模型天然像客服。学习场景里，完整回答不一定是好事。默认值调成：先提示，再追问，再检查，最后才揭示答案。"
+
+### Step 5：每轮只留两样 — 学习卡 + 错误记录
+
+**学习卡**：5 分钟恢复上下文（一句话问题 + 5 核心概念 + 最小例子 + 3 误区 + 3 速答）
+**错误记录**：错误→原因→下次动作（直接进入下一次练习）
+
+## 验收标准
+
+| 验收 | 方法 |
+|------|------|
+| 24h 闭卷复述 | 先自己讲→讲不出的让 Claude 追问（不让它重新解释） |
+| 换题迁移 | 同一证据链排查新问题：现象→假设→命令→证据→结论 |
+| 错误减少 | 同类错误反复出现→学习计划降一层 |
+| 小项目落地 | 本地 kind 集群 + 坏 YAML + 完整排障记录 > 三篇讲解 |
+
+## 边界与局限
+
+1. **AI 会把错误说得很顺** — 法律/医学/生产配置必须回到第一来源
+2. **AI 顺着目标走** — 目标设错了，它帮你更高效地走错路
+3. **AI 反馈 ≠ 真实反馈** — 概念漏洞能发现，项目里用出来靠真实任务验证
+
+> Bloom 的 2 Sigma Problem：让人羡慕的不是"有人讲得更细"，而是形成性测试、反馈、纠正和再测试可以持续发生。Claude Code 给了低成本入口，但入口不是终点。
+
+## 与 Harness Engineering 的关系
+
+这篇文章是 Harness Engineering 框架在**个人学习**场景的应用：
+
+- 学习契约 = AGENTS.md（目标+规范）
+- 4 文件结构 = Harness 的最小可用版
+- 测验+错误记录 = 验证循环（Step 6 of harness engineering）
+- CLAUDE.md 护栏 = 安全护栏（Step 5）
+- 学习卡 = 上下文恢复机制
+
+作者若飞（JiaGouX）系列关联：[Harness 实践指南](../ch05/116-harness-engineering.html)、[Harness 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+## 相关实体
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering 10 Step Practical Guide 2026](../ch05/116-harness-engineering.html)
+- [Karpathy Llm Wiki Second Brain Awkthole](../ch01/603-llm.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/295-anthropic-claude-code.html)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-personal-learning-system-ruofei.md)
+
+---
+

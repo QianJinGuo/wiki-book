@@ -43,8 +43,8 @@ Rapid expansion of AI coding tools (Copilot, Claude Code, Cursor) makes API Keys
 ## Related Supply Chain Incidents
 
 - [Semgrep Intercom PHP](ch12/116-semgrep-intercom-php-supply-chain.html) - malicious package via package manager
-- [Claude Code Malicious Skills](../ch01/814-skill-issues-compromising-claude-code-with-malicious-skills.html) - Agent/Skill ecosystem risk
-- [Checkmarx Jenkins Plugin](../ch01/361-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html) - plugin marketplace attack
+- [Claude Code Malicious Skills](../ch01/813-skill-issues-compromising-claude-code-with-malicious-skills.html) - Agent/Skill ecosystem risk
+- [Checkmarx Jenkins Plugin](../ch01/358-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html) - plugin marketplace attack
 
 ## 深度分析
 
@@ -68,7 +68,7 @@ Rapid expansion of AI coding tools (Copilot, Claude Code, Cursor) makes API Keys
 
 5. **关注插件市场的安全机制演进**：评估你使用的 IDE/编辑器是否具备类似的远程 kill-switch 能力。对于企业环境，考虑使用插件白名单机制，只允许经过安全审查的插件安装。
 
--> [Source Archive](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/jetbrains-marketplace-malicious-ai-plugins-security-update.md)
+-> [Source Archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jetbrains-marketplace-malicious-ai-plugins-security-update.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/skill-development-guide-aliyun-2026.md`
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/skill-development-guide-aliyun-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-development-guide-aliyun-2026.md)
 
 ## 核心价值
 阿里内部工程师分享的 **Skill（技能）开发完整教程**，从概念定义到一站式开发助手，覆盖 Skill 整个生命周期。
@@ -83,28 +83,28 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - **持续进化**：Reflection Agent 思路可推广至其他 AI 工作流，将人工修复经验结构化为可复用的 patch 资产
 
 ## 相关页面
-- [Skill 写作基础指南](../ch04/265-agent-skill.html) — 入门级别的 Skill 写作教程
-- [Skill 写作进阶](../ch04/265-agent-skill.html) — 高级技巧
-- [Skill 评估方法](../ch04/265-agent-skill.html) — 如何评估 Skill 质量
+- [Skill 写作基础指南](../ch04/610-agent-skill.html) — 入门级别的 Skill 写作教程
+- [Skill 写作进阶](../ch04/610-agent-skill.html) — 高级技巧
+- [Skill 评估方法](../ch04/610-agent-skill.html) — 如何评估 Skill 质量
 
 ## 相关实体
 - [十年老技术开发的 AI Agent 探索之路](../ch04/030-ai-agent.html)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/402-aws-sagemaker-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/403-aws-sagemaker-ai-agent.html)
 - [SkillX — 层次化技能知识库](ch07/052-skillx.html)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/251-anthropic-agent.html)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/267-skill.html)
-- [SkillClaw](../ch04/451-skillclaw-nacos-agent-skill-registry.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/100-anthropic-agent.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/266-skill.html)
+- [SkillClaw](../ch04/452-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
 - [四种 Sub Agent 模式](../ch03/046-agent.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/396-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/397-agent-skills.html)
 
 - [Qoder Skills 完全指南](ch07/034-qoder-skills.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/396-agent-skills.html)
-- [Garry Tan](../ch01/641-garry-tan.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/397-agent-skills.html)
+- [Garry Tan](../ch01/640-garry-tan.html)
 - [Agent Workflows](../ch04/350-agent-workflows.html)
 - [Hermes Agent](../ch03/092-hermes-agent.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
-- [你写的 Skill，及格了吗？](../ch04/267-skill.html)
+- [你写的 Skill，及格了吗？](../ch04/266-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 - [AI Agent 工程师能力地图](../ch04/030-ai-agent.html)
 - [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](../ch03/046-agent.html)

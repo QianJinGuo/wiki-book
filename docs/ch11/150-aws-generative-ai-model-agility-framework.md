@@ -42,11 +42,11 @@ AWS Generative AI Model Agility Solution提供6步框架：评估→选择→迁
 2. **提示词版本化管理**：将每次提示词优化结果纳入版本管理，形成企业级的提示词资产库，支持回滚和A/B测试
 3. **迁移流程SLA标准化**：定义"从评估到上线"的SLA（如简单场景2天、复杂场景2周），让迁移从项目变为可预期速率的服务
 ---
-*Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-generative-ai-model-agility-framework.md)*
+*Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-generative-ai-model-agility-framework.md)*
 ## 相关实体
 - [MLflow v3.10：生成式AI开发新特性](ch11/039-aws-mlflow-v310-generative-ai-development.html)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/030-ai-agent.html)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/576-agentic-ai.html)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/060-agentic-ai.html)
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/076-claude-code.html)
 - [Building Blocks for Foundation Model Training and Inference on AWS](ch11/120-building-blocks-for-foundation-model-training-and-inference.html)
 - [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](../ch03/070-skills.html)

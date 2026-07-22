@@ -76,7 +76,7 @@ Part II 将介绍 query engine、impact analysis 算法、client libraries。
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Plaid Effects](../ch05/089-ai.html)
+- [Plaid Effects](../ch05/090-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 相关主题
@@ -85,7 +85,7 @@ Part II 将介绍 query engine、impact analysis 算法、client libraries。
 - 可观测性 pipeline 设计 — metrics/traces/logs 三支柱
 - Netflix Tech Blog 系列 (其他内容)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/high-throughput-graph-abstraction-at-netflix.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/high-throughput-graph-abstraction-at-netflix.md)
 
 ## 深度分析
 

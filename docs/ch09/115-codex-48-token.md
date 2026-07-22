@@ -90,7 +90,7 @@ Codex 的额度问题对整个 AI 编程工具行业有重要启示：
 - LLM 成本优化策略
 - AI 工程效率
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/codex-token-quota-exhaustion-debug-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-token-quota-exhaustion-debug-2026.md)
 
 ---
 

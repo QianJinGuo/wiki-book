@@ -9,7 +9,7 @@
 
 `pbakaus/impeccable` 是当前规模最大的 **AI 前端设计 skill 项目**（截至 2026-06-04：**34,108 ⭐**，Apache-2.0，主语言 JavaScript）。它把"前端设计经验"打包成可安装的 skill，配合 23 个命令、41 条确定性检测规则、CLI、Chrome 扩展和 live 浏览器变体模式。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)
 
 ## 它解决的问题
 AI 编码助手做前端时，代码能跑只是第一步——更麻烦的是页面会"一眼看出 AI 味"：
@@ -100,9 +100,9 @@ npx impeccable detect --json .
 - 底层 agent 负责执行，Impeccable 让执行过程更像"有设计系统约束的前端同事"
 
 ## 相关对照
-- [Agent Skill 编写指南](../ch04/265-agent-skill.html) —— 通用 skill 格式 + 渐进式披露
+- [Agent Skill 编写指南](../ch04/610-agent-skill.html) —— 通用 skill 格式 + 渐进式披露
 - [Agent Harness 架构](ch05/039-agent-harness.html) —— 7 层 harness 模型
-- [Agent Skills 综合调研](../ch04/396-agent-skills.html) —— skill 系统全景
+- [Agent Skills 综合调研](../ch04/397-agent-skills.html) —— skill 系统全景
 - [Skills Refiner 设计质量评估框架](../ch03/070-skills.html)
 - [Agentic Design System 演化](../ch01/010-agentic-design-system-from-chatbot-to-orchestration.html)
 
@@ -157,9 +157,9 @@ npx impeccable detect --json .
 6. **设计 skill 应该搭配硬规则使用**：Anomaly 创始人推荐的组合是「2-3 个 design skill + 一组硬规则（颜色、字号、间距）」，两者互补而非替代
 
 ## 关联阅读
-- [Agent Skill 编写指南](../ch04/265-agent-skill.html) —— skill 格式规范与渐进式披露机制
-- [Karpathy Vibe Coding → Agentic Engineering](../ch04/235-agentic.html) —— Vibe Coding 原始定义与 Software 3.0 演化
-- [Claude Design Skill](../ch01/1106-claude-design-skill.html) —— Anthropic 的设计 skill 实践对比
+- [Agent Skill 编写指南](../ch04/610-agent-skill.html) —— skill 格式规范与渐进式披露机制
+- [Karpathy Vibe Coding → Agentic Engineering](../ch04/616-agentic.html) —— Vibe Coding 原始定义与 Software 3.0 演化
+- [Claude Design Skill](../ch01/1111-claude-design-skill.html) —— Anthropic 的设计 skill 实践对比
 - [前端 Design Skills 全景对比](../ch01/692-skills-anthropic-openai-comparison-frontend-design.html) —— Anthropic vs OpenAI 设计 skill 生态比较
 
 ---

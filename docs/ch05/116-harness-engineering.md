@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 19.0KB | `entities/harness-engineering-90-percent-pillars.md`
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/harness-engineering-90-percent-pillars.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-90-percent-pillars.md)
 
 ## 实战：四要素架构
 基于四根支柱，构建四个核心要素：

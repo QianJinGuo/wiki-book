@@ -10,6 +10,7 @@ review_value: 7
 review_confidence: 5
 review_vxc: 35
 review_decision: raw-only
+sha256: f8fd3e4bc68bc3c39082eaba4606ec4343ea5ef1e0669a42058798e1b2f3435d
 ---
 
 # NVIDIA 开源 Agentic RL 框架 Polar：支持任意 Harness

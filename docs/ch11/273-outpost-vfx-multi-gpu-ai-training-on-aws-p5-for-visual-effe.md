@@ -54,7 +54,7 @@ AWS 团队协助将模型代码转换为 **PyTorch Distributed Data Parallel (DD
 
 多 GPU 加速是下一代创意工具的基础架构，使 AI 辅助面部替换能力能够在保持安全和可扩展性的同时，满足高端视觉特效制作的需求。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-outpost-vfx-uses-aws-to-accelerate-ai-model-training-for.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-outpost-vfx-uses-aws-to-accelerate-ai-model-training-for.md)
 
 ---
 

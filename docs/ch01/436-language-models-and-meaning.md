@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.6KB | `entities/stochastic-parrot-language-models-and-meaning.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stochastic-parrot-language-models-and-meaning.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stochastic-parrot-language-models-and-meaning.md)
 
 ## Key Insights
 - Traditional semantics links language to extralinguistic reality (world, thought, social practice) - links that LLMs lack
@@ -14,7 +14,7 @@
 - LLMs exhibit impressive **fluency and structural coherence** but lack the conceptual structure for true understanding
 - Philosophical quandary: LLMs are astonishing in performance but don't understand language in the human sense
 - Author positions between dismissal (Marcus/Mitchell) and over-attribution - acknowledges impressive capabilities without explanation
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stochastic-parrot-language-models-and-meaning.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stochastic-parrot-language-models-and-meaning.md)
 
 ## 深度分析
 1. **语言形式（linguistic form）与接地语义（grounded semantics）的区分是理解 LLMs 局限的核心框架**
@@ -39,16 +39,16 @@
    作者坦承自己处于"真正的困境"：结论将其与批判派归为一类，但不认同批判派的整体立场。对于 AI 研究者，这意味着在发表关于 LLMs"真正理解"或"真正推理"的声明前，需要先建立能够解释 LLMs 显著能力的新语义理论框架。这不是哲学玄学，而是严肃的工程问题——如果不能解释能力的来源，就无法可靠地扩展或约束它。
 5. **在教育与创意产业使用 LLMs 时，需明确告知用户其"流畅性"与"意义理解"的根本区别**
    LLMs 可以产生流畅、连贯、有时富有洞察力的文本，但其输出的基础是统计共现而非命题承诺。在教育场景中，这影响对模型"解释"的信赖方式；在创意场景中，这意味着 LLMs 的"创意"本质上是风格重组而非概念性创新。明确这些区别有助于避免将 LLMs 用于超出其语义能力边界的任务，同时也避免因为误解其局限而低估其工程价值。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/stochastic-parrot-language-models-and-meaning.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stochastic-parrot-language-models-and-meaning.md)
 
 ## 相关实体
 - [Language Models and Meaning](ch01/436-language-models-and-meaning.html)
-- [Reinforcing Recursive Language Models | alphaXiv](ch01/844-reinforcing-recursive-language-models-alphaxiv.html)
+- [Reinforcing Recursive Language Models | alphaXiv](ch01/843-reinforcing-recursive-language-models-alphaxiv.html)
 - [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](../ch11/201-cost-effective-deployment-of-vision-language-models-for-pet.html)
-- [On the Deep Mystery of Language Models](ch01/744-stochastic-parrot-deep-mystery-llms.html)
-- [A Thought Experiment](ch01/876-stochastic-parrot-thought-experiment.html)
+- [On the Deep Mystery of Language Models](ch01/743-stochastic-parrot-deep-mystery-llms.html)
+- [A Thought Experiment](ch01/875-stochastic-parrot-thought-experiment.html)
 - [Marcus on AI Productivity](../ch11/069-stochastic-parrot-marcus-ai-productivity.html)
-- [While Breathless In Stodgy Viridian](ch01/534-while-breathless-in-stodgy-viridian.html)
+- [While Breathless In Stodgy Viridian](ch01/533-while-breathless-in-stodgy-viridian.html)
 
 ---
 

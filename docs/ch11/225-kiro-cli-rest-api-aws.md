@@ -26,7 +26,7 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 双通道设计的精妙之处在于**职责分离**：ACP 通道（常驻进程 + 多轮会话）处理复杂的多轮交互场景；Chat 通道（一次性进程 + 单次调用）处理简单的模型切换需求。这种设计模式实际上体现了一个更普适的原则——**当单一协议无法满足所有需求时，用两个协议的组合来覆盖完整的问题空间**。
 另一个关键洞察是**代理层（Proxy Layer）的价值**。文章中的 `mcp_server.py` 并不实现数据库逻辑，而是作为薄代理将请求委托给 `doris-mcp-server`。这种"不重复造轮子"的设计哲学使得上游升级时无需修改代理逻辑，同时允许在代理层添加拦截逻辑实现定制需求。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-engineering-principles-architecture-practice.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-engineering-principles-architecture-practice.md)
 
 ## 实践启示
 1. **评估协议限制再动手**：在封装 CLI 工具之前，先haustive 测试协议的边界能力（如模型切换）。本文的8种尝试失败案例说明，官方文档可能不完整，唯有亲自验证才能确定真实能力边界。

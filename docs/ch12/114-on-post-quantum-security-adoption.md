@@ -28,7 +28,7 @@ OpenSSH implemented and made default post-quantum key agreement [back in April 2
 
 As you might notice, this is a hybrid quantum/classical algorithm. This is a hedg
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/on-post-quantum-security-adoption.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/on-post-quantum-security-adoption.md)
 
 ---
 

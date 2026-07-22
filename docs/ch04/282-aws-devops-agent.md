@@ -45,18 +45,18 @@ CloudWatch 告警的 AlarmDescription 字段应包含结构化业务上下文（
 未启用 BFD 时，BGP holdtime 默认 180 秒，叠加 CloudWatch 指标评估周期后告警延迟可能超过 4 分钟。启用 `bfd interval 300 min_rx 300 multiplier 3` 后，BGP 本地收敛时间从分钟级降至亚秒级，是部署 Direct Connect 监控的基础前置配置 。
 **6. 将 DevOps Agent 定位为"调查工具"而非"修复工具"**
 当前 Agent 的价值在于解放工程师的调查工作，而非替代工程师做决策。建议保持"只读操作"的设计原则，让 Agent 提供上下文、假设、修复建议，由工程师判断和执行。这既降低了自动化修复的风险，也为未来向"自动修复"演进保留了安全边界 。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
 
 ## 相关实体
 - [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](../ch11/267-aws-devops-agent.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/944-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1295-anthropic.html)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/304-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
-- [Agent orchestration](ch04/495-agent-orchestration.html)
+- [Agent orchestration](ch04/496-agent-orchestration.html)
 - [AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](../ch07/046-aws-devops-agent-mcp-server.html)
 - [AWS Reinvent Game Demo 2024-25](../ch11/239-aws-reinvent-game-demo-2024-25.html)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)
-- [AgentCore Managed Harness](ch04/656-agentcore-harness.html)
+- [AgentCore Managed Harness](ch04/657-agentcore-harness.html)
 - [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 - [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](../ch11/267-aws-devops-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)

@@ -10,6 +10,7 @@ review_value: 4
 review_confidence: 8
 review_vxc: 32
 review_decision: raw-only
+sha256: d8b59c757594137f2c1459771e9f79c376b936e908f6ab995118ca27fc86d125
 ---
 
 # AI 网关 FinOps 最佳实践：如何为不同消费者控制 AI 调用预算

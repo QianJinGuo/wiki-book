@@ -11,6 +11,7 @@ review_confidence: 6
 review_vxc: 42
 review_decision: supplementary
 supplements: entities/harness-engineering-self-improvement-survey-lilian-weng
+sha256: 821dd86ab760b41e0980e1a9efc6c8c9c45c955fdc3a3414fc56a87a27b7a16c
 ---
 
 # MemoHarness：同一模型只改 harness，终端任务成功率提升 8.4 个百分点

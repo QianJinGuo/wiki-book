@@ -4,13 +4,13 @@
 
 > 📊 Level ⭐ | 3.2KB | `entities/is-this-why-science-advances-one-funeral-at.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/is-this-why-science-advances-one-funeral-at.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/is-this-why-science-advances-one-funeral-at.md)
 
 ## 相关实体
 
-- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/132-why-internally-built-ai-fails-fund-accounting-audits.html)
-- [Why I'm leaving GitHub for Forgejo](ch01/790-github.html)
-- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/089-ai.html)
+- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/792-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Why I'm leaving GitHub for Forgejo](ch01/899-github.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/090-ai.html)
 
 ## 深度分析
 这篇文章将科学创造力的二元性（Connective Novelty vs. Disruptive Innovation）置于聚光灯下，并通过对 1200 万科学家 60 年发表记录的量化分析，为 Max Planck 的经典论断提供了实证基础。核心发现是：**科学家随年龄增长趋于"连接"而非"颠覆"**——这不是能力退化，而是认知模式的结构性转变。

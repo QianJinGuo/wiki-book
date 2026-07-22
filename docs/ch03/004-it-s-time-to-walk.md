@@ -35,11 +35,11 @@ I am not sure what to call this. It is not a coworking space. It is not a coffee
 ## 相关实体
 - [刚刚Openai 放出三个语音模型顺便杀死了同传](../ch01/168-openai.html)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/641-garry-tan.html)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/640-garry-tan.html)
 - [Defect Backlog Retention Report](https://github.com/QianJinGuo/wiki/blob/main/entities/defect-backlog-retention-report.md)
 - [Against Brain Damage](ch03/016-against-brain-damage.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dictation-agents-human-workspace.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dictation-agents-human-workspace.md)
 
 ## 深度分析
 
@@ -75,7 +75,7 @@ Agent 吸收了生产层（typing → document、coding → implementation、mod
 
 5. **构建"隐私优先"的远程工作环境**：口述对隐私的要求天然限制了它的使用场景（不能在他人能听到的环境中口述机密信息）。这对于远程工作者是一个反向优势：在家中（或私密空间）工作的人在口述工具使用上反而比开放式办公室的同事更有优势。组织在设计混合办公策略时应考虑这一维度。 [^raw/articles/dictation-agents-human-workspace.md:43-46]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dictation-agents-human-workspace.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dictation-agents-human-workspace.md)
 
 ---
 

@@ -64,7 +64,7 @@
 - 反复测试直到Agent在不同温度参数下都能稳定产出符合Schema的输出
 - 通过`find-skills`元Skill检索社区已有方案，避免重复造轮子
 
-这一数字与[Agent配置模型](../ch04/267-skill.html)中"配置需要反复调参"的经验高度一致——AI工程的测试成本远高于传统软件工程，因为概率性系统的行为空间远大于确定性系统。
+这一数字与[Agent配置模型](../ch04/266-skill.html)中"配置需要反复调参"的经验高度一致——AI工程的测试成本远高于传统软件工程，因为概率性系统的行为空间远大于确定性系统。
 
 ### 5. "给代码不如给流程"的深层含义
 
@@ -90,15 +90,15 @@ Agent不擅长的事情：把控商业数据分析流程、理解隐性业务约
 ## 相关实体
 
 - [Harness Engineering探索之旅](../ch05/116-harness-engineering.html)
-- [Agent配置模型](../ch04/267-skill.html)
+- [Agent配置模型](../ch04/266-skill.html)
 - [Agent落地真相](../ch03/046-agent.html)
-- [淘宝数字人Agentic架构](../ch04/235-agentic.html)
+- [淘宝数字人Agentic架构](../ch04/616-agentic.html)
 - [阿里巴巴NL2SQL Harness](../ch05/116-harness-engineering.html)
 - [AI友好后端标准](../ch05/023-ai-friendly.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - AI原生工程
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/qoderwork-skills-开发实践.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoderwork-skills-开发实践.md)
 
 ---
 

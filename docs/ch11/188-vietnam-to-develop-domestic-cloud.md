@@ -4,11 +4,11 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/vietnam-to-develop-domestic-cloud.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
 
 ## 核心要点
 - 来自 newsletter 的高质量技术文章
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vietnam-to-develop-domestic-cloud.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud.md)
 
 ## 相关实体
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](ch11/218-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)

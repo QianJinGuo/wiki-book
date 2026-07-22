@@ -6,7 +6,7 @@
 
 # Introducing the MDN MCP server
 
-> Source: [MDN Blog 原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-mdn-mcp-server-2026.md)
+> Source: [MDN Blog 原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-mdn-mcp-server-2026.md)
 
 ## 三个独有贡献（不应合并到现有 entity）
 
@@ -56,7 +56,7 @@
 
 ## References
 
-See [MDN Blog 原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/introducing-mdn-mcp-server-2026.md)
+See [MDN Blog 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-mdn-mcp-server-2026.md)
 
 ---
 

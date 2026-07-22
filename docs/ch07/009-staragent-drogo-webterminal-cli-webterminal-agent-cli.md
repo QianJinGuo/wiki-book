@@ -239,10 +239,10 @@ Program terminated with signal SIGSEGV, Segmentation fault.
 本文是 **"Agent 远程执行能力"** 的工程化实现：
 
 - [CLI / MCP / SDK 选型](../ch03/046-agent.html) — 工具原语选择（理论层）
-- [AgentCore OpenClaw 多租户](../ch04/535-amazon-bedrock-agentcore.html) — AWS 视角的远程 Agent
+- [AgentCore OpenClaw 多租户](../ch04/537-amazon-bedrock-agentcore.html) — AWS 视角的远程 Agent
 - [OpenClaw Security 部署](../ch11/227-openclaw.html) — OpenClaw 安全部署
 - [DIPG](https://github.com/QianJinGuo/wiki/blob/main/entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md) — 蚂蚁保险 verify 闭环（也是 Agent 远程任务）
-- [250 行 CLI Agent 教程](../ch04/585-python.html) — minimal 教学
+- [250 行 CLI Agent 教程](../ch04/586-python.html) — minimal 教学
 
 本文的独特贡献：
 - **WebTerminal 而非 SSH**——企业内部治理链路的现实选择
@@ -254,7 +254,7 @@ Program terminated with signal SIGSEGV, Segmentation fault.
 
 阿里基础设施团队招 AI 推理 + 高性能计算方向（LLM 推理系统工程、GPU/异构计算、性能研发、多模态推理引擎）。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md)
 
 ## 深度分析
 

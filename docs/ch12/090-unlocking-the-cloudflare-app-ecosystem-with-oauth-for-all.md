@@ -85,7 +85,7 @@ OAuth 标准化对 AI Agent 生态具有深远影响：
 
 - [Cloudflare Temporary Accounts Ai Agents](../ch04/030-ai-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cloudflare-oauth-for-all.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cloudflare-oauth-for-all.md)
 
 ---
 

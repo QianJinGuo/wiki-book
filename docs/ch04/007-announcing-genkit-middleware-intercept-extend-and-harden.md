@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐ | 8.6KB | `entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md`
 
-> -> [Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
+> -> [Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
 ## 核心要点
 - Genkit 是用于构建全栈 AI 应用和 Agentic 应用的开源框架，支持 TypeScript、Go、Dart 和 Python
 - v=8, c=8
@@ -67,7 +67,7 @@ Genkit 明确指出中间件从左到右组合，第一个列出的在最外层�
 
 - [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/176-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/176-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Exaforce | Agentic SOC Platform and MDR](ch04/235-agentic.html)
+- [Exaforce | Agentic SOC Platform and MDR](ch04/616-agentic.html)
 
 ---
 
