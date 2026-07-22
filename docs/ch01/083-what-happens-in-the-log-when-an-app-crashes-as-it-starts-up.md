@@ -41,9 +41,9 @@ Practical and specific macOS debugging guide from a trusted source, with actiona
 在四种常见的启动崩溃原因中，"Failed to open document"（文档打开失败）是最难在日志中找到证据的类型。这是因为唯一知道发生了什么错误的进程是应用本身，而第三方应用通常不会向日志写入有意义的信息。与代码签名错误（整个系统多层验证）或 translocation（操作系统明确记录路径转换）不同，文档打开失败完全依赖于应用自身的日志记录意识。这意味着对于缺乏良好日志实践的应用，诊断工具只剩下交叉验证法：通过排除其他三种更明显的崩溃原因来间接推断问题所在。在 LogUI 中，可以通过将工具栏右侧的菜单设置为 **Processes**，然后在搜索框中输入应用名称来过滤相关条目——但即使这样做，许多情况下也不会有任何有用的信息出现。
 
 ## 相关实体
-- [Reasoning Lift](ch01/664-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.html)
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/1005-20.html)
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/088-ai.html)
+- [Reasoning Lift](ch01/655-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.html)
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/886-20.html)
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/089-ai.html)
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/018-build-agents-not-pipelines.html)
 

@@ -2,7 +2,7 @@
 
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
-> 本章收录 **81 篇**实体，按深度递增排列。
+> 本章收录 **82 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 80 |
+| ⭐⭐ 工程师 | 需编程基础 | 81 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -83,14 +83,14 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [048. Skill 版本管理五大原则：从越改越差到持续演进](ch07/048-skill)
 - [049. Skill Craft — Claude Skill 质量工程框架](ch07/049-skill-craft-claude-skill)
 - [050. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/050-agent-loop-loop-skill-orchestrator)
-- [051. SkillX — 层次化技能知识库](ch07/051-skillx)
-- [052. Skill Craft：Claude Skill 质量工程工具](ch07/052-skill-craft-claude-skill)
-- [053. Anthropic MCP 重新定义：Tool Search + 代码编排](ch07/053-anthropic-mcp-tool-search)
-- [054. 重新定义Skill开发：保姆级教程&一站式开发助手发布](ch07/054-skill)
-- [055. 你写的 Skill，及格了吗？](ch07/055-skill)
-- [056. 我用 SKILL.md 做了一个简历生成器](ch07/056-skill-md)
-- [057. 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践](ch07/057-voc-hermes-agent)
-- [058. 李继刚 ljg Skills 系列（四）：表达写作类 Skill](ch07/058-ljg-skills-skill)
+- [051. 李继刚 ljg Skills 系列（四）：表达写作类 Skill](ch07/051-ljg-skills-skill)
+- [052. SkillX — 层次化技能知识库](ch07/052-skillx)
+- [053. Skill Craft：Claude Skill 质量工程工具](ch07/053-skill-craft-claude-skill)
+- [054. Anthropic MCP 重新定义：Tool Search + 代码编排](ch07/054-anthropic-mcp-tool-search)
+- [055. 重新定义Skill开发：保姆级教程&一站式开发助手发布](ch07/055-skill)
+- [056. 你写的 Skill，及格了吗？](ch07/056-skill)
+- [057. 我用 SKILL.md 做了一个简历生成器](ch07/057-skill-md)
+- [058. 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践](ch07/058-voc-hermes-agent)
 - [059. Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch07/059-anthropic-agent-12-mcp)
 - [060. Anthropic Claude Skill 9 类任务分类法](ch07/060-anthropic-claude-skill-9)
 - [061. AI + Skills 打通中间件迁移：Android 到鸿蒙定位服务实践](ch07/061-ai-skills-android)
@@ -98,19 +98,20 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [063. Multica — 开源 Managed Agents 平台](ch07/063-multica-managed-agents)
 - [064. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/064-skill-skill)
 - [065. 李继刚 23 个 Skills 深度拆解——认知工序流水线](ch07/065-23-skills)
-- [066. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/066-ai-mcp-cli)
-- [067. CLI系列④·选型CLI、MCP还是API？](ch07/067-cli-cli-mcp-api)
-- [068. 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](ch07/068-amazon-quick-mcp)
-- [069. Introducing the MDN MCP server](ch07/069-introducing-the-mdn-mcp-server)
-- [070. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/070-ai-skill)
-- [071. skill-mcp — 把 AI 技能当软件包管理（MCP 权限网关 + 只调度不执行的 Pipeline）](ch07/071-skill-mcp-ai-mcp-pipeline)
-- [072. SkillComposer: 生成式技能组合](ch07/072-skillcomposer)
-- [073. Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio](ch07/073-building-and-connecting-a-production-ready-ecommerce-mcp-ser)
-- [074. Create Custom MCP Catalogs and Profiles](ch07/074-create-custom-mcp-catalogs-and-profiles)
-- [075. PagePilot — PC端AI测试Skill设计与实战](ch07/075-pagepilot-pc-ai-skill)
-- [076. 25个Skills详解：从生产力清单到AI工作流资产](ch07/076-25-skills-ai)
-- [077. Perplexity 首次公开了内部 Skill 设计指南](ch07/077-perplexity-skill)
-- [078. Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获](ch07/078-codex-record-replay-gui-skill)
-- [079. 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践](ch07/079-skill-skill)
-- [080. 让Skill“有图可依”：openJiuwen首发多模态Skill范式Skill-Omni](ch07/080-skill-openjiuwen-skill-skill-omni)
-- [081. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/081-microsoft-agent-framework-tools-4-provider-tool-ap)
+- [066. 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程](ch07/066-skill-ai-94)
+- [067. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/067-ai-mcp-cli)
+- [068. CLI系列④·选型CLI、MCP还是API？](ch07/068-cli-cli-mcp-api)
+- [069. 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](ch07/069-amazon-quick-mcp)
+- [070. Introducing the MDN MCP server](ch07/070-introducing-the-mdn-mcp-server)
+- [071. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/071-ai-skill)
+- [072. skill-mcp — 把 AI 技能当软件包管理（MCP 权限网关 + 只调度不执行的 Pipeline）](ch07/072-skill-mcp-ai-mcp-pipeline)
+- [073. SkillComposer: 生成式技能组合](ch07/073-skillcomposer)
+- [074. Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio](ch07/074-building-and-connecting-a-production-ready-ecommerce-mcp-ser)
+- [075. Create Custom MCP Catalogs and Profiles](ch07/075-create-custom-mcp-catalogs-and-profiles)
+- [076. PagePilot — PC端AI测试Skill设计与实战](ch07/076-pagepilot-pc-ai-skill)
+- [077. 25个Skills详解：从生产力清单到AI工作流资产](ch07/077-25-skills-ai)
+- [078. Perplexity 首次公开了内部 Skill 设计指南](ch07/078-perplexity-skill)
+- [079. Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获](ch07/079-codex-record-replay-gui-skill)
+- [080. 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践](ch07/080-skill-skill)
+- [081. 让Skill“有图可依”：openJiuwen首发多模态Skill范式Skill-Omni](ch07/081-skill-openjiuwen-skill-skill-omni)
+- [082. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/082-microsoft-agent-framework-tools-4-provider-tool-ap)

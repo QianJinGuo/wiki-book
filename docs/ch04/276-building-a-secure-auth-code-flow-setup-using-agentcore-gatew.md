@@ -59,11 +59,11 @@ Gateway 的令牌验证设计具有显著的架构灵活性。文档明确指出
 5. **验证 Gateway 认证配置后立即测试端到端流程**：文章提供的 `curl` 测试命令（POST 无令牌到 `/mcp` 端点，期望 401）是验证 Gateway 认证是否正确生效的关键一步。这个测试应在配置 IdP 和 Gateway 后、生产部署前执行，以确保认证防线在请求到达 MCP 服务器之前就已生效，避免未授权请求穿透到后端工具层。
 
 ## 相关实体
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/534-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/535-amazon-bedrock-agentcore.html)
 - [Spec Review Agent Baz Bedrock Agentcore Multi Agent](../ch11/050-bedrock-agentcore.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch04/534-amazon-bedrock-agentcore.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/534-amazon-bedrock-agentcore.html)
-- [Amazon Bedrock Agentic Payments Guardrails](../ch11/158-amazon-bedrock.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch04/535-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/535-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock Agentic Payments Guardrails](../ch11/159-amazon-bedrock.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 ## 相关主题

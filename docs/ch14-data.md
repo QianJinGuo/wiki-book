@@ -2,7 +2,7 @@
 
 > AI 的燃料：实时入湖、流处理、数据质量
 
-> 本章收录 **38 篇**实体，按深度递增排列。
+> 本章收录 **39 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
-| ⭐⭐ 工程师 | 需编程基础 | 32 |
+| ⭐⭐ 工程师 | 需编程基础 | 33 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 
 ---
@@ -2902,7 +2902,90 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ---
 
-## Ch14.027 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
+## Ch14.027 DataWorks Copilot 需求交付 Skill — 数据需求 24h 交付的 Spec Coding 实践
+
+> 📊 Level ⭐⭐ | 5.8KB | `entities/dataworks-copilot-skill-data-request-24h-delivery-taobao-2026-07-20.md`
+
+# DataWorks Copilot 需求交付 Skill — 数据需求 24h 交付的 Spec Coding 实践
+
+淘宝直播数据团队基于 DataWorks Copilot 构建了一个面向数据需求交付的 Agent Skill（`copilot_req2sql`），通过 4 阶段 Spec Coding 流程（需求澄清 → 资源管理 → 模型设计 → 交互物产出）将数据需求交付从"串行排期"转变为"Agent 自动执行、人按优先级介入决策的并行推进"。
+
+## 背景：AI 生码的五大痛点
+
+在淘宝直播数据团队内，DataWorks Copilot 等生码工具虽然能处理简单取数需求（口径清晰、来源表明确时约 10 分钟产出可用代码），但在真实工作场景中面临五个核心痛点：
+
+1. **写 Prompt 本身就很累**：用户需要同时装下业务口径 + 表结构 + 团队代码规范 + Copilot 偏好格式，一次复杂需求的 prompt 准备工作就要半小时起步
+2. **复杂业务逻辑生码质量差**：LLM 对复杂嵌套逻辑和隐含业务约束理解有限，整体 SQL 常因某个语义翻译错误而完全不可用
+3. **多轮对话的"熵增定律"**：上下文越来越长导致模型思考和效果衰减，开新对话又需重组全部上下文
+4. **需求评审后没有明确的产物**：缺乏双方认可的结构化需求方案做锚点，口径理解不一致直到验收时才暴露
+5. **多需求只能串行排期**：前置准备工作（需求澄清、口径确认、表结构梳理）耗时长且依赖人的连续注意力
+
+这些痛点的共同根因是：从"业务需求"到"高质量 Prompt"之间，缺少标准化、可复用、不依赖个人经验的自动化工具。
+
+## copilot_req2sql：4 阶段 Spec Coding 解决方案
+
+`copilot_req2sql` 是一个数据需求交付 Agent Skill，通过 4 阶段工作流将不可控的"黑盒代码生成"变为可审计的"分层交付"：
+
+| 阶段 | 产出物 | 核心任务 |
+|------|--------|----------|
+| P1 需求澄清 | `p1_requirement.md` | 拆解业务需求，澄清指标口径 |
+| P2 资源管理 | `p2_resources.md` | 确定相关表、字段映射、伪代码 |
+| P3 模型设计 | `p3_model_design.md` | 数据模型设计（人工 CR） |
+| P4 交付物产出 | `p4_copilot_input.md` | 生成结构化的 Copilot 交互物 |
+
+核心设计是 **Spec Coding（规约驱动编程）**：在让 AI 写代码之前，先产出经人类 review 的规格说明书（Spec），代码生成从"黑盒魔法"变为"翻译"——将经过 review 的模型设计翻译成代码。这与 [Spec-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-driven-development-cognitive-framework.md) 和 [SDD 规约驱动编程](https://github.com/QianJinGuo/wiki/blob/main/entities/sdd-spec-driven-development-summary-qoder.md) 的理念一致。
+
+## Spec 目录结构
+
+每个需求对应一个独立的 Spec 目录，兼顾分层、可追溯、可复用、可并行：
+
+```
+specs/yyyymmdd_{任务名}/
+├── stages/               # Agent 工作流自动生成
+│   ├── p1_requirement.md
+│   ├── p2_resources.md
+│   ├── p3_model_design.md
+│   ├── p4_copilot_input.md
+│   └── workflow_events.jsonl   # 工作流事件记录
+└── proposal/             # 人工整理的原始需求
+    └── yyyymmdd_proposal.md
+```
+
+## 渐进式披露（Progressive Disclosure）
+
+这是 Skill 区别于传统"写一份 prompt 模板"的关键设计：
+
+- 上一步不确认就不推进下一步
+- 每一阶段产出的文档都是不可篡改的"锚点"
+- 避免了 LLM 在长上下文中的"预期偏差"——不需要提前猜测用户意图
+
+这一设计与 [Agent Skill 设计](https://github.com/QianJinGuo/wiki/blob/main/entities/打造高效易用的agent-skill.md) 中提到的渐进式上下文披露理念吻合。
+
+## 技术栈与适用范围
+
+- **计算引擎**：MaxCompute（ODPS）
+- **数据开发平台**：阿里云 DataWorks（表结构查询、节点代码获取、数据血缘追溯、SQL 执行 API）
+- **Agent 运行时**：支持 Skill 定义和自然语言交互的 Agent 框架
+
+核心设计思路（标准化模板、基准表发现策略、降级验数策略）适用于任何有标准数据建模、元数据查询 API 和 SQL 执行能力的数仓研发平台。
+
+## 与相关实体的关系
+
+- [Spec-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-driven-development-cognitive-framework.md) — Spec Coding 的理论框架基础
+- [SDD 规约驱动编程](https://github.com/QianJinGuo/wiki/blob/main/entities/sdd-spec-driven-development-summary-qoder.md) — SDD 在工程实践中的总结
+- [Agent Skill 工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/打造高效易用的agent-skill.md) — Agent Skill 的设计原则（含渐进式披露）
+- [OpenSpec Spec-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/entities/openspec-spec-driven-development-trae-solo.md) — OpenSpec 的 SDD 实现
+- [阿里巴巴 Devix Harness Ops Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-devix-harness-ops-agent-7x24.md) — 阿里系 Agent 运维工程实践
+
+## 笔记
+
+2026-07-22 入库（heuristic 评分 v=7/c=7/s=4 → v×c=49）。本文发表于 2026-07-20，来自大淘宝技术公众号。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/dataworks-copilot-skill-data-request-24h-delivery-taobao-2026-07-20.md)
+
+---
+
+## Ch14.028 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/github-multilingual-repositories-dataset-cc0.md`
 
@@ -3017,7 +3100,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ---
 
-## Ch14.028 Turning Scattered Data Into Queryable Segments at Scale: Razorpay 实践
+## Ch14.029 Turning Scattered Data Into Queryable Segments at Scale: Razorpay 实践
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/turning-scattered-data-into-queryable-segments-at-scale-how.md`
 
@@ -3066,7 +3149,7 @@ DPDPA also reshaped what the platform had to be. India’s Digital Personal Data
 
 ---
 
-## Ch14.029 DataComp for Language Models
+## Ch14.030 DataComp for Language Models
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/datacomp-for-language-models.md`
 
@@ -3118,7 +3201,7 @@ DataComp 配套开源数据处理工具：
 
 ---
 
-## Ch14.030 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
+## Ch14.031 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/kafka-share-groups-pathological-fetch-waits-with-record-limi.md`
 
@@ -3169,7 +3252,7 @@ So I ran some backlog drain tests to unders
 
 ---
 
-## Ch14.031 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
+## Ch14.032 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/databend-open-source-lakehouse-ai-agent.md`
 
@@ -3246,7 +3329,7 @@ Databend Cloud on AWS 架构:
 
 ---
 
-## Ch14.032 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
+## Ch14.033 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md`
 
@@ -3300,7 +3383,7 @@ Transforming rare cancer research with Amazon Quick: Integrating biomedical data
 
 ---
 
-## Ch14.033 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
+## Ch14.034 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
 
@@ -3329,7 +3412,7 @@ Taking the above principles into account, we **implemented the Metrics Semantic 
 
 ---
 
-## Ch14.034 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
+## Ch14.035 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
 
@@ -3358,7 +3441,7 @@ Software is changing the world. QCon San Francisco empowers software development
 
 ---
 
-## Ch14.035 The Data Operating System for the Foundation Model Era — Data Juicer
+## Ch14.036 The Data Operating System for the Foundation Model Era — Data Juicer
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
 
@@ -3385,7 +3468,7 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 
 ---
 
-## Ch14.036 Amazon Quick integration with time-series databases for market intelligence using MCP
+## Ch14.037 Amazon Quick integration with time-series databases for market intelligence using MCP
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
 
@@ -3441,7 +3524,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 
 ---
 
-## Ch14.037 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
+## Ch14.038 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
 
 > 📊 Level ⭐⭐⭐ | 14.5KB | `entities/ai-驱动的大数据工程-从平台驱动到-aidlc-的范式迁移.md`
 
@@ -3578,7 +3661,7 @@ AIDLC 转型对团队能力的要求发生根本变化：
 
 ---
 
-## Ch14.038 ShotStream: Streaming Multi-Shot Video Generation (ECCV 2026, 港中文&快手可灵)
+## Ch14.039 ShotStream: Streaming Multi-Shot Video Generation (ECCV 2026, 港中文&快手可灵)
 
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/shotstream-streaming-multi-shot-video-cuhk-kling-eccv2026.md`
 

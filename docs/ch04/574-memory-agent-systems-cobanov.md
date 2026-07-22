@@ -27,15 +27,15 @@ Mert Cobanov 的综述覆盖了 Agent 记忆系统的四种主流范式：向量
 
 ## 相关资源
 - [Agent Memory 架构](ch04/409-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [Claude Managed Agents 开发者指南](ch04/517-claude-managed-agents.html)
+- [Claude Managed Agents 开发者指南](ch04/678-claude-managed-agents.html)
 
 ## 相关实体
-- [ai agent memory systems](ch04/121-agent-memory.html)
+- [ai agent memory systems](ch04/099-agent-memory.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/092-hermes-agent.html)
 - [AI Agent 记忆系统架构](ch04/156-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/092-hermes-agent.html)
 
-- [Agent Memory 架构解析](ch04/121-agent-memory.html)
+- [Agent Memory 架构解析](ch04/099-agent-memory.html)
 
 ---
 

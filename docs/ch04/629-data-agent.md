@@ -38,9 +38,9 @@ Data Agent 凭借领先的数据驱动技术，构建了多元化的应用场景
 
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/132-karpathy-vibe-coding-agentic-engineering.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/226-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/226-openclaw.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/682-karpathy-vibe-coding-agentic-engineering.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/227-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/227-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/046-agent.html)
 
 ## 实践启示

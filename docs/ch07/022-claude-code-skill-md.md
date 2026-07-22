@@ -200,7 +200,7 @@ Skill 写完后，不要直接投入生产使用。验证方式：
 - [sanyuan-skills](https://github.com/sanyuan0704/sanyuan-skills)
 - [Anthropic 官方 Skills 仓库](https://github.com/anthropics/skills)
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/820-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/814-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Claude Design Skill Web Design Engineer](../ch01/1106-claude-design-skill.html)
 - [Claude Design Skill](../ch01/1106-claude-design-skill.html)
 - [Claude Code Prompt Source Analysis](../ch09/060-claude-code-prompt.html)

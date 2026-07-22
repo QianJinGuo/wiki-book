@@ -22,7 +22,7 @@ AI 时代软件开发的核心矛盾变了：不是写不出代码，是**没人
 | Vibe Coding | 无 | 损耗裸奔 |
 | **SDD** | **spec** | **显式定位 + 人审** |
 
-与 [Harness Engineering](../ch05/115-harness-engineering.html) 互补——该实体是 Harness 工程框架，本实体是 **Spec 层的认知与选型理论**。
+与 [Harness Engineering](../ch05/116-harness-engineering.html) 互补——该实体是 Harness 工程框架，本实体是 **Spec 层的认知与选型理论**。
 
 ## Spec 的定义
 

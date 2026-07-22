@@ -52,7 +52,7 @@ Prompt → 可复用提示词面板 → Skill（固定输入/上下文/检查框
 
 其五类组织资产分类与当前 Agent Harness Engineering 讨论中的"上下文工程/知识库/Skill 系统/工作流编排/质量门禁"高度对应，可视为从**团队管理角度**对 Harness 范式的另一种表述。
 
-30 天落地路径简洁可操作，与[Harness 工程 10 步路线图](../ch05/115-harness-engineering.html)在精神上是同构的。
+30 天落地路径简洁可操作，与[Harness 工程 10 步路线图](../ch05/116-harness-engineering.html)在精神上是同构的。
 
 ## 实践启示
 
@@ -63,8 +63,8 @@ Prompt → 可复用提示词面板 → Skill（固定输入/上下文/检查框
 
 ## 关联页面
 
-- [Harness 工程 10 步路线图](../ch05/115-harness-engineering.html)
-- [企业 AI Loop 落地框架：五类工程对象](ch04/479-ai-loop.html)
+- [Harness 工程 10 步路线图](../ch05/116-harness-engineering.html)
+- [企业 AI Loop 落地框架：五类工程对象](ch04/480-ai-loop.html)
 - [AI Native 企业转型方法论](../ch05/019-ai-native.html)
 - [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-编程火了但产研团队真正缺的是-agent-loop.md)
 

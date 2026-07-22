@@ -2,7 +2,7 @@
 
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
-> 本章收录 **176 篇**实体，按深度递增排列。
+> 本章收录 **177 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 7 |
-| ⭐⭐ 工程师 | 需编程基础 | 164 |
+| ⭐⭐ 工程师 | 需编程基础 | 165 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -131,20 +131,20 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [094. An Opinionated Guide to Using AI Right Now](ch09/094-an-opinionated-guide-to-using-ai-right-now)
 - [095. 停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南](ch09/095-30-ai)
 - [096. Anthropic 8x 产出复盘：从代码吞吐到验证协作接口](ch09/096-anthropic-8x)
-- [097. Codex 5.21 更新：AI 编程助手开始变成电脑工作代理](ch09/097-codex-5-21-ai)
-- [098. 吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代](ch09/098-ai-loop)
-- [099. CoDA-Bench：Code Agent 数据智能基准](ch09/099-coda-bench-code-agent)
-- [100. Codex Discovered a Hidden HTTP/2 Bomb](ch09/100-codex-discovered-a-hidden-http-2-bomb)
-- [101. Engineering roles shift from developing code to managing AI | CIO Dive](ch09/101-engineering-roles-shift-from-developing-code-to-managing-ai)
-- [102. Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch09/102-harness-engineering-coding-agent)
-- [103. Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变](ch09/103-claude-dispatch-ai-chatbot-agent-interface)
-- [104. Peter Steinberger / OpenClaw — 100个AI程序员案例](ch09/104-peter-steinberger-openclaw-100-ai)
-- [105. AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch09/105-ai-coding-ai)
-- [106. Notes Inside China AI Labs Lambert](ch09/106-notes-inside-china-ai-labs-lambert)
-- [107. Anthropic 的 Harness 没管住 Claude Code？软规则 vs 硬约束](ch09/107-anthropic-harness-claude-code-vs)
-- [108. When I reject AI code even if it works](ch09/108-when-i-reject-ai-code-even-if-it-works)
-- [109. 天猫新品营销技术团队 AI 编码实战指南](ch09/109-ai)
-- [110. Claude Code 27 条技巧：从工具清单到工程升级路径](ch09/110-claude-code-27)
+- [097. Claude Code 27 条技巧：从工具清单到工程升级路径](ch09/097-claude-code-27)
+- [098. Codex 5.21 更新：AI 编程助手开始变成电脑工作代理](ch09/098-codex-5-21-ai)
+- [099. 吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代](ch09/099-ai-loop)
+- [100. CoDA-Bench：Code Agent 数据智能基准](ch09/100-coda-bench-code-agent)
+- [101. Codex Discovered a Hidden HTTP/2 Bomb](ch09/101-codex-discovered-a-hidden-http-2-bomb)
+- [102. Engineering roles shift from developing code to managing AI | CIO Dive](ch09/102-engineering-roles-shift-from-developing-code-to-managing-ai)
+- [103. Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch09/103-harness-engineering-coding-agent)
+- [104. Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变](ch09/104-claude-dispatch-ai-chatbot-agent-interface)
+- [105. Peter Steinberger / OpenClaw — 100个AI程序员案例](ch09/105-peter-steinberger-openclaw-100-ai)
+- [106. AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch09/106-ai-coding-ai)
+- [107. Notes Inside China AI Labs Lambert](ch09/107-notes-inside-china-ai-labs-lambert)
+- [108. Anthropic 的 Harness 没管住 Claude Code？软规则 vs 硬约束](ch09/108-anthropic-harness-claude-code-vs)
+- [109. When I reject AI code even if it works](ch09/109-when-i-reject-ai-code-even-if-it-works)
+- [110. 天猫新品营销技术团队 AI 编码实战指南](ch09/110-ai)
 - [111. Skill Issues: Compromising Claude Code with malicious skills & agents — Part 1](ch09/111-skill-issues-compromising-claude-code-with-malicious-skills)
 - [112. AI can write code, but the CIOs still owns the operating model](ch09/112-ai-can-write-code-but-the-cios-still-owns-the-operating-mod)
 - [113. Sakana Fugu 发布：Claude 禁令后的多 Agent 编排 API，LiveCodeBench 93.2](ch09/113-sakana-fugu-claude-agent-api-livecodebench-93-2)
@@ -205,9 +205,10 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [168. 腾讯 AI 编码实践](ch09/168-ai)
 - [169. 一年吃掉一块固态硬盘，Codex日志bug被骂「劣质软件](ch09/169-codex-bug)
 - [170. AI 编码效率分析方法论](ch09/170-ai)
-- [171. Meta Muse Spark 1.1 — 匹敌 Opus 4.8 的 Agentic/Coding 模型](ch09/171-meta-muse-spark-1-1-opus-4-8-agentic-coding)
-- [172. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/172-fastcontext-coding-agent)
-- [173. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/173-deepseek-visual-primitives)
-- [174. AI Coding Agent Token 成本控制五层模型](ch09/174-ai-coding-agent-token)
-- [175. Dockerless: 免环境补丁验证器](ch09/175-dockerless)
-- [176. GLM-5 Scaling Pain 推理复盘](ch09/176-glm-5-scaling-pain)
+- [171. 云效 AI Code Review — GitLab Integration for Private-Network Code Review](ch09/171-ai-code-review-gitlab-integration-for-private-network-co)
+- [172. Meta Muse Spark 1.1 — 匹敌 Opus 4.8 的 Agentic/Coding 模型](ch09/172-meta-muse-spark-1-1-opus-4-8-agentic-coding)
+- [173. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/173-fastcontext-coding-agent)
+- [174. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/174-deepseek-visual-primitives)
+- [175. AI Coding Agent Token 成本控制五层模型](ch09/175-ai-coding-agent-token)
+- [176. Dockerless: 免环境补丁验证器](ch09/176-dockerless)
+- [177. GLM-5 Scaling Pain 推理复盘](ch09/177-glm-5-scaling-pain)

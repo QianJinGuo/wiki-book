@@ -35,8 +35,8 @@
 ## 相关实体
 - [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.html)
 - [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/1103-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
-- [Shinyhunters Canvas Domain Suspended](../ch05/088-ai.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/088-ai.html)
+- [Shinyhunters Canvas Domain Suspended](../ch05/089-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/089-ai.html)
 - [Clinereleasesopen Sourceagentruntimesdk](../ch04/366-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)

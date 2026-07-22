@@ -57,7 +57,7 @@ autocli-skill（591 stars）作为 AutoCLI 的 AI Agent 接口层，其设计目
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md) — OpenCLI / CLI-Anything / AutoCLI / AgentBrowser 四项目对比
 
 ## 相关实体
-- [GBrain](../ch01/275-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [GBrain](../ch01/265-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

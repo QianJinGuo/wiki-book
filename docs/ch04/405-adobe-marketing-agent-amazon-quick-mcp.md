@@ -102,7 +102,7 @@ Adobe Marketing Agent 通过 MCP (Model Context Protocol) 协议与 Amazon Quick
 
 ## 相关实体
 
-- [Amazon Bedrock AgentCore Web Search](ch04/434-amazon-bedrock-agentcore-web-search-ga.html)
+- [Amazon Bedrock AgentCore Web Search](ch04/436-amazon-bedrock-agentcore-web-search-ga.html)
 
 ---
 

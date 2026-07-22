@@ -29,7 +29,7 @@ Agent 编排（Agent Orchestration）是多 Agent 系统从「实验原型」走
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-orchestration.md)
 
 - [Multi-Agent 深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md) — 多 Agent 协作模式的具体实践
-- [Agent Harness 工程学调研](../ch05/115-harness-engineering.html) — Agent 系统构建的核心架构要素
+- [Agent Harness 工程学调研](../ch05/116-harness-engineering.html) — Agent 系统构建的核心架构要素
 - [基于 Bedrock AgentCore 构建企业级应用](../ch11/050-bedrock-agentcore.html) — AWS 生态中 Agent 编排的具体实现路径
 - [James 多 Agent 协作模式](../ch03/046-agent.html) — 不同多 Agent 协作架构的对比分析
 

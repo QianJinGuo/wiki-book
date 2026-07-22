@@ -72,7 +72,7 @@ Google AI Studio 新增移动端应用和原生 Android 支持，标志着"vibe 
 - [Building Is Just The Beginning Introducing Discove](../ch12/088-building-is-just-the-beginning-introducing-discoverability.html)
 - [The Agentic Trust Management Platform Drata](ch04/020-the-agentic-trust-management-platform-drata.html)
 - [Nvidia Agentic Systems Extreme Co Design](ch04/235-agentic.html)
-- [Google Debuts Gemini Focused Updates At Io 2026](../ch01/1005-20.html)
+- [Google Debuts Gemini Focused Updates At Io 2026](../ch01/886-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
 

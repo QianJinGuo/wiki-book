@@ -24,7 +24,7 @@ Brain 构建一个动态的上下文图，追踪：
 - 历史会话中有效的策略和来源
 - 失败路径和修正记录
 
-该图随每次交互演化，形成一个复利型知识库。与 [Agent Memory Modular Framework](ch04/121-agent-memory.html) 的模块化架构不同，Brain 采用的是 **单一图结构** 而非分层存储。
+该图随每次交互演化，形成一个复利型知识库。与 [Agent Memory Modular Framework](ch04/099-agent-memory.html) 的模块化架构不同，Brain 采用的是 **单一图结构** 而非分层存储。
 
 ## 递归自改进循环
 

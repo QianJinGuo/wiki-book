@@ -53,7 +53,7 @@ Intuit 工程总监 Eric Anderson 提出：当 UI 迭代成本几乎为零时，
 
 ## 相关实体
 
-- [Harness Engineering 系统化框架](../ch05/115-harness-engineering.html) — 通用约束管理视角
+- [Harness Engineering 系统化框架](../ch05/116-harness-engineering.html) — 通用约束管理视角
 - [Claude Code 大型代码库配置](../ch03/076-claude-code.html) — AI 编程工具的实际约束案例
 
 ---

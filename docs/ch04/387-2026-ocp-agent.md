@@ -81,7 +81,7 @@
 
 - [Agent Harness Dingtalk Recruitment](../ch05/039-agent-harness.html) — 企业级 Agent Harness 的生产部署，与浪潮信息的 Agent 基础设施方案互补
 - [Lambda Microvms Vs Bedrock Agentcore Ai Agent Comparison](../ch11/096-lambda-microvms-vs-bedrock-agentcore-ai-agent.html) — Agent 基础设施的对比分析
-- [Tencent K8S Ray Ai Workload Scheduling](../ch11/273-k8s-ray-ai-workload.html) — 腾讯的 Agent 调度方案，与浪潮信息的 CPU+GPU 协同形成对照
+- [Tencent K8S Ray Ai Workload Scheduling](../ch11/275-k8s-ray-ai-workload.html) — 腾讯的 Agent 调度方案，与浪潮信息的 CPU+GPU 协同形成对照
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程化框架中的基础设施设计原则
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/langchao-ocp-agent-infrastructure-2026.md)

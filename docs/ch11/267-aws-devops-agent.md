@@ -1,40 +1,47 @@
-# 星合互娱借助 AWS DevOps Agent 构建多游戏智能运维体系
+# AWS DevOps Agent 接入中国区（二）：多账号扩展与跨云接入
 
-## Ch11.267 星合互娱借助 AWS DevOps Agent 构建多游戏智能运维体系
+## Ch11.267 AWS DevOps Agent 接入中国区（二）：多账号扩展与跨云接入
 
-> 📊 Level ⭐⭐ | 3.1KB | `entities/星合互娱借助-aws-devops-agent-构建多游戏智能运维体系.md`
+> 📊 Level ⭐⭐ | 3.3KB | `entities/aws-devops-agent-接入-aws-中国区二多账号扩展跨云接入与无长期-aksk-认证.md`
 
-# 星合互娱借助 AWS DevOps Agent 构建多游戏智能运维体系
+# AWS DevOps Agent 接入中国区（二）：多账号扩展、跨云接入与无长期 AK/SK 认证
 
-> **Background**：本文基于 AWS China Blog 的客户案例，介绍星合互娱（Xinghe Huyu）面对多游戏、多账号、小团队的运维压力，如何选择并落地 AWS DevOps Agent 的实践经验。
+> **背景**：本文基于 AWS China Blog 的系列文章第二篇，聚焦 DevOps Agent 在中国区的多账号 Hub-Spoke 架构部署、跨云接入（阿里云）的工程取舍，以及 IAM Roles Anywhere 凭证治理实践。
 
-## 业务挑战
+## 深度分析
 
-星合互娱是一家全球化游戏公司，运营多款游戏，面临多游戏、多账号（每个游戏独立 AWS 账户）、小团队（数人 SRE 团队支撑数十款游戏）的典型游戏公司运维困境。传统运维方式无法有效支撑这种"小团队管多游戏"的并行压力。
+本文是 AWS DevOps Agent 接入中国区系列的第二篇，在第一篇 MCP 桥接架构的基础上，进一步解决了三个关键工程问题：多账号扩展、跨云接入、长期凭证治理。
 
-## 选择 AWS DevOps Agent 的核心考量
+### 多账号 Hub-Spoke 架构
 
-星合互娱在评估多种 AI 运维方案后，最终选择了 AWS DevOps Agent。核心原因在于：DevOps Agent 并非独立于现有体系之外的另一套工具，而是能够直接融入已有监控、代码和云账号体系，让 AI 在现有数据上发挥价值，而非要求团队重新建设数据管道。
+文章提出了 Hub-Spoke 扇出模型，通过一个 Helm Chart 管理 N 个 AWS 中国区账号。核心设计是 Hub 账号部署 DevOps Agent + MCP Server，Spoke 账号通过 IAM Roles Anywhere 以证书换取临时凭证。这一架构的关键决策点包括：
 
-## 落地实践
+- **证书分发**：Hub 通过 ACM PCA 签发设备证书，Spoke 账号信任 Hub CA 签发的证书
+- **跨账号信任链**：每个 Spoke 账号建立一个 IAM Role（信任 Hub CA 证书），Hub 通过 AssumeRole 切换身份
+- **0 长期 AK/SK**：所有认证基于短期临时凭证（最长 1 小时有效），凭证泄露风险从 AK/SK 的 90 天窗口缩减到 1 小时
 
-### 多账号统一管理
-通过 DevOps Agent 的多账户支持能力，将多个游戏账户挂载在同一 Agent Space 下，实现单一入口统一管理所有游戏的监控和告警。
+### 跨云接入的工程取舍
 
-### 运维流程自动化
-DevOps Agent 自动响应告警事件，执行调查流程，输出 RCA 报告。运维团队从被动响应模式转向主动预防模式，Agent 定期生成防护建议。
+针对阿里云等非 AWS 平台的接入，文章提出了现实的工程方案：
 
-## 实践启示
+- **阿里云仍然是 AK/SK**：Iam Roles Anywhere 只适用于 AWS 内部，跨云场景无法完全消除长期凭证
+- **最小权限原则**：为阿里云 AK 设置仅覆盖目标资源的精细权限策略，降低泄露影响面
+- **凭证轮换自动化**：通过 AWS Secrets Manager + Lambda 实现阿里云 AK/SK 的 90 天自动轮换
 
-游戏行业特有的运维痛点（多产品线、小团队、高频迭代）使得 AWS DevOps Agent 的自动化调查能力尤为有价值。核心经验：先从一个游戏账户开始建立信任，再逐步扩展覆盖范围；告警质量是 Agent 效率的前提，需要先行治理。
+### 踩坑记录
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/星合互娱借助-aws-devops-agent-构建多游戏智能运维体系.md)
+文章还记录了实际部署中的关键踩坑：
+
+- **RequestExpired**：STS 临时凭证 1 小时后全部失效，跨账号操作未正确处理 AssumeRole 刷新导致批量失败
+- **证书续期**：ACM PCA 的 CA 证书过期会导致所有基于该 CA 签发的设备证书失效，需要提前 30 天规划续期
 
 ## 相关实体
-- [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](ch11/267-aws-devops-agent.html)
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch11/267-aws-devops-agent.html)
-- [AWS DevOps Agent 实战：如何使用生成式 AI 加速故障演练](ch11/267-aws-devops-agent.html)
-- [AgentCore Managed Harness](../ch04/651-agentcore-harness.html)
+
+- [AWS DevOps Agent 接入中国区（一）](ch11/267-aws-devops-agent.html) — 前篇：单账号部署与 MCP 桥接
+- [FinOps 与 DevOps 双 Agent 成本优化](../ch03/046-agent.html) — 相关的 Agent 成本治理实践
+- [AgentCore Harness](../ch04/656-agentcore-harness.html) — Agent 基础设施框架
+
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-devops-agent-接入-aws-中国区二多账号扩展跨云接入与无长期-aksk-认证.md)
 
 ---
 
