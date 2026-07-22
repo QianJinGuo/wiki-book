@@ -39,9 +39,9 @@
 
 ## 相关实体
 - [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/046-agent.html)
-- [Verizon Connect Agentic Ai 100K Users](ch04/109-verizon-connect-agentic-ai-10.html)
+- [Verizon Connect Agentic Ai 100K Users](ch04/110-verizon-connect-agentic-ai-10.html)
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/576-ai-mollick.html)
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/570-ai-mollick.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/taobao-product-domain-agent-architecture.md)

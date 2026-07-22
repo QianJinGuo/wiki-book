@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [canvas hackers shinyhunters say their official domain was su](../ch05/088-ai.html)
+- [canvas hackers shinyhunters say their official domain was su](../ch05/089-ai.html)
 - [canvas hackers shinyhunters say their official domain was su](ch12/037-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html)
 - [private fintech has quietly become bigger than public fintec](../ch03/104-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
 - [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/104-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
@@ -39,11 +39,11 @@ Cyberscammers are bypassing banks’ security with illicit tools sold on Telegra
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/132-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/682-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/046-agent.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/226-openclaw.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/227-openclaw.html)
 
 ## 实践启示
 1. **工程落地**: code领域方案需关注可观测性、可维护性和成本效率

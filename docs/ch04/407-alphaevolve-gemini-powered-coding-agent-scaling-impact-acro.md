@@ -15,8 +15,8 @@
 ## 相关实体
 - [Alphaevolve Deepmind Discovery Agent](../ch03/046-agent.html)
 - [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/047-coding-agent.html)
-- [Alphaevolve Impact Deepmind](ch04/439-alphaevolve-impact-deepmind.html)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/115-harness-engineering.html)
+- [Alphaevolve Impact Deepmind](ch04/441-alphaevolve-impact-deepmind.html)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/116-harness-engineering.html)
 - [Ai Coding Agent Memory System](ch04/319-ai-coding-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alphaevolve-impact.md)

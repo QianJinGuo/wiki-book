@@ -1,0 +1,40 @@
+---
+title: Redis agentic AI flowers with Iris
+type: entity
+tags: [article]
+created: 2026-05-20
+updated: 2026-05-20
+source: newsletter
+source_url: https://www.blocksandfiles.com/ai-ml/2026/05/18/redis-agentic-ai-flowers-with-iris/5241795
+sha256: 263ac60a6a3049a9c2d949ae7cb1a8e9ba8aaa4225b7d90344da33993050a49d
+---
+# Redis agentic AI flowers with Iris
+Published Time: 2026-05-18T13:02:51.000Z
+Markdown Content:
+In-memory database supplier[Redis](https://www.blocksandfiles.com/ai-ml/2026/01/27/redis-hits-300m-arr-as-ai-workloads-drive-growth/4090515) is launching [Iris,](https://redis.io/resources/videos/real-time-context-engine-fresh-context-for-better-ai-agents/) a Context Engine, a single context and memory layer, that makes enterprise data usable by AI agents, along with a Flex SSD-based version of Redis.
+Redis is heading full tilt into AI. It announced its [Vector Sets](https://blocksandfiles.com/2025/04/11/redis-vector-sets-and-langcache-speed-genai-models/) data type a year ago, adding to its RedisVL (Vector Library) and vector similarity search, with a LangCache semantic caching service. It says its database reduces calls to AI large language models ([LLMs](https://blocksandfiles.com/2022/08/26/llm/)) by caching common responses, and enables RAG to reduce the computational load on models. Redis’ Context Engine has three core components; Redis Context Retriever, Redis Agent Memory and Redis Data Integration (RDI).
+Iris has come about because AI agents go far beyond simple (relatively!) large language model (LLM) chatbots which provide a generated response to a one-tine request. An AI Agent provides a multi-step response to request which can be complex and require it to make subsequent internal requests to other agents or chatbots or databases to get information needed for its task. The agent needs to use software tools to make these requests and Redis is providing three tools in its Context Engine so that an agent can operate more effectively, particularly when it’s active over time and needs to refresh the context of its previous activity when it’s started up again after an interval.
+BANDF AD
+A forthcoming Redis [blog](https://redis.io/blog/context-is-all-you-need); "Redis context engine: The missing memory layer for production AI agents", will say Context Retriever makes external data sources navigable by agents, Agent Memory preserves short- and long-term context across tasks, while RDI keeps the underlying data flowing into Redis so context stays current.
+![Image 1](https://image.blocksandfiles.com/126624.webp?imageId=126624&x=0.00&y=0.00&cropw=100.00&croph=100.00&width=960&height=960&format=jpg)
+Rowan Trollope
+CEO Rowan Trollope told us that “as LLMs have gotten smarter over the last 12 months, 24 months, it has changed how agents work. So it's moved from a world where [for] agents you would prefill the context for the agent. … You go decide in advance what's relevant to this query and you hand it to the agent. [But] now it's basically flipped upside down, where you hand the agent a set of tools and you say, "Hey, here are your tools. You have a memory tool, you have a context tool, you have this tool and that tool, you figure out what you need.” … what a great agent really needs is great context. It needs the data from your enterprise served up to it in a way that makes sense for it through tools.”
+Agents operate in an environment; an enterprise’s data estate with its finance, operations, IT, manufacturing, etc. components, and the agents need to know and be able to access the contextual data, the context, for a query. Trollope said there are four pillars of what great context is:
+BANDF AD
+*   It’s dynamically navigable,
+*   Data has semantic definitions
+*   Context has to get better over time
+*   Context always has to be up to date
+He said: “Iris has these three pieces, structured data, unstructured data, and then long and short-term memory, then it has a data loader, a real-time data loader that keeps that data fresh from your underlying systems.”
+And: “Iris runs on top of Redis and it brings all these capabilities to an agent, but it's not a database. Redis is the database underneath. Iris is the agent platform that provides access to company data and provides access to long-term memory, et cetera.”
+Iris exposes a set of tools over MCP or the CLI to an agent. Trollope said: “The agent can call the Iris CLI and say, list objects or list tools and it'll show it as tools and it can say call tool. It can say search tools. Do you have a tool that will tell me about customers, et cetera. So it's a tool interface for the agent.”
+BANDF AD
+“The backend side is the data integration piece, which is a real-time data streaming, a change data capture product that connects to your underlying data [through] a bunch of connectors, MongoDB, Oracle, etc. etc.. Whenever a table changes Postgres, it'll basically get that change data and then it'll push it into Redis. The agent always has the freshest copy of the data.”
+Trollope thinks that the number of operating agents in am enterprise’s AI world will rise to the millions: ” I'm thinking about a world and wanting to build for a world where there are a thousand agents for every human being in an enterprise.”
+“Take a spreadsheet, for example. Perhaps you have a spreadsheet where every row in this spreadsheet is a company that you want to track and every column in the spreadsheet is some piece of information you want to pull in like, who's the CEO, or what's their latest press release, or how have their earnings been going? And you put in a prompt in every column. You get a hundred companies you're tracking times 10 columns of data you want. Every single one of those cells is an agent that's firing off.”
+He reckons Redis’ scalability will be crucial here: “You have a thousand agents hitting your enterprise infrastructure. That infrastructure is not going to scale. Oracle wasn't built for that. Snowflake wasn't built for that. These underlying data platforms weren't built for that kind of multiple orders of magnitude more scale.” Redis is.
+“if you use Redis as your scaling layer, you don't need to change your underlying data platforms. … You can leave your backend systems as they are. You can implement Redis, which becomes the view and cache layer for all of your data. We then expose that data through tools to the agents and we can scale massively and that's how Redis is used today.”
+Trollope then talked about Redis [Flex](https://redis.io/solutions/flex/): “We needed to be able to make sure that Redis was storing the data in a more affordable way. So if you basically make the argument that, hey, we want to take all of your company data, take a subset of that, make it available through Redis to your agents, that subset could still be very large and the cost of scaling Redis, because it's all in RAM, could be very expensive. So we launched a product called Flex, which is an SSD version of Redis and that's the product that's underpinning this new Iris.”
+“It's an order of magnitude cheaper than RAM. And we've done a ton of work to rearchitect the core of Redis to leverage flash as a native data source or storage medium. And as a result of that work, we now have the fastest flash-based data structure server in the world. We have the fastest object store running on flash and we've tested it up to a petabyte scale with sub five millisecond latency.”
+“There's a huge backlog of customers who are clamouring to get this right now. Again, in part, because it lets them save a lot of money, but the other part is it lets them do things they never could do before. So there is no product today that can do petabyte scale sub five millisecond latency at P69s [99.9999 percent request tail latency] and we can do that.”
+Read the Redis [blog](https://redis.io/blog/context-is-all-you-need) for more info.

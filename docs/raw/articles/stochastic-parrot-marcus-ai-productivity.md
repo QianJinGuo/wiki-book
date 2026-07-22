@@ -1,0 +1,27 @@
+---
+title: "stochastic parrot marcus ai productivity"
+source: rss
+source_url: https://stochasticparrot.substack.com/p/marcus-on-ai-productivity
+tags: [newsletter, llm]
+ingested: 2026-05-09
+sha256: effaac6331f4f15aaa21ab7593be4a56e251d3ae48d4cc09d13c4d72812ec154
+feed_name: Stochastic Parrot
+source_published: 2024-08-13
+type: raw
+created: 2026-05-10
+updated: 2026-05-10
+---
+# Marcus on AI Productivity
+[](<https://substackcdn.com/image/fetch/$s_!L7FR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e9cff98-e13b-432c-bb3b-6c75285f6c83_1024x1024.png>)
+Gary Marcus commends a post from Baldur Bjarnason who comments on a new study from the Upwork Research Institute titled "From Burnout to balance: AI-Enhanced Work Models." Marcus calls the report "incredibly damning" for Gen AI citing the following statistic: "Nearly half (47%) for workers using AI say they have no idea how to achieve the productivity gains their employers expect. Over three in four (77%) say AI tools have decreased their productivity and added to their workload in at least one way"
+Bjarnason provides the same quote plus two more, "Seventy-one percent are burned out and nearly two-thirds (65%) report struggling with increasing employer demands" and "Women (74%) report feeling more burned out than do men (68%). Alarmingly, 1 in 3 employees say they will likely quit their jobs in the next six months because they are burned out overworked."
+Stochastic Parrot is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
+Both Marcus and Bjarnason cite these statistics to criticize the use of Gen AI, suggesting that the technology is exacerbating worker dissatisfaction and burnout. However, these quotes are the only references to the Upwork study made by either Marcus or Bjarnason, raising the question of whether their critiques accurately reflect the broader findings of the report.
+A proper interpretation of these quotes requires an understanding of the study’s primary focus:  the rising productivity demands imposed by C-suite executives and the resulting strain on workers. Senior executives are expecting its workforce to use AI tools, expand their skills, take on more responsibilities, work more quickly and longer hours. The strain on workers is evident in the statistics Bjarnason highlights which reflect the general productivity demands made by upper management. The tension is between management demands and worker burn out. The tension between management demands and worker burnout is a central theme of the report and continues by mentioning that 84% of upper management think their companies value employee well-being, while only 60% of works would agree.
+This disconnect between management and workers is highlighted when considering the impact of AI on productivity. Initially, the report presents a positive outlook on Gen AI. There is a shared belief across organizations that Gen AI will boost productivity with 96% of C-suite executives expecting AI to increase productivity, and 65% of works agreeing. The study even confirms these expectations: "81% of leaders at companies that have deployed AI report an increase in workforce productivity in the past year versus just 42% of leaders at companies that have not"
+Despite these positive indicators, upper management remains dissatisfied. Fifty-one percent believe they are falling behind competitors, and 50% believe more productivity is possible if their workers were more skilled. Yet only 26% of these leaders have provided AI training, and only 13% have a well-implemented AI strategy. At the same time 39% require employees to use AI tools, and 37% expect the use of these tools to increase output.
+These facts provide the context for the first quote above. Workers are clearly dissatisfied, but the dissatisfaction does not stem from AI tools themselves. Rather, it arises from the lack of a strategy, guidance or training from management. Not surprisingly, 37% of management that use AI regard their workforce as highly skilled and comfortable with these tools, but only 17% of employees concur.
+The actual conclusion of the study is given by the following quote: "By deploying new technology—no matter how exciting and full of potential—without updating our organizational systems and models, we risk creating productivity strain: employees with yet another thing on their plate who are mentally, practically, and systematically unable to use this technology to achieve the anticipated gains. We risk another productivity paradox with generative AI if we don’t fundamentally rethink the way we work."
+There may be that there is a huge cost in promoting AI when it's basic functionality, as thought by Bjarnason. It may also be the case that while technologists may love ChatGPT for work, the rest of the outside world does not, as thought by Marcus. But there is little in the Upwork study that supports either of these claims. The study does highlight significant issues, but these are more about the poor implementation and lack of support for AI tools rather than the inherent shortcomings of the technology itself
+.
+Stochastic Parrot is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

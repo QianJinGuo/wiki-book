@@ -1,0 +1,27 @@
+---
+title: "stochastic parrot thought experiment"
+source: rss
+source_url: https://stochasticparrot.substack.com/p/a-thought-experiment
+tags: [newsletter, llm]
+ingested: 2026-05-09
+sha256: 15e65d9bdaa86f34f49595b334fc196139faa23f0b395f1318afad26159260da
+feed_name: Stochastic Parrot
+source_published: 2025-05-31
+type: raw
+created: 2026-05-10
+updated: 2026-05-10
+---
+# A Thought Experiment
+[](<https://substackcdn.com/image/fetch/$s_!cI5K!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40faa5d6-9564-44cd-a472-55d7d22c040a_1024x1024.png>)
+Consider the following thought experiment. Imagine you have access to a large corpus of text written entirely in a foreign language unknown to you. This corpus resembles the massive training datasets used to train models such as GPT, Claude, and Gemini. The key point is that all of the content is exclusively in this unfamiliar language, without any accompanying translation, explanation, or external context.
+Now, let's consider two training scenarios:
+  1. The first scenario involves training a standard LLM on this corpus through the typical autoregressive next-word prediction method used by contemporary models.
+  2. The second scenario imagines a human subject undergoing training using exactly the same autoregressive procedure as the LLM. As noted, this is a thought experiment: the subject does not learn the language through ordinary human methods like interaction, immersion, or reference to external contexts. Rather, the human internalize language purely by repeatedly predicting subsequent words based solely on previous textual input, just as the LLM does. While practically impossible due to cognitive and memory limitations, it remains logically conceivable, and thus suitable for our philosophical exploration.
+After successfully completing training in both scenarios, we have two outcomes:
+  * The LLM now fluently speaks the foreign language, able to generate coherent and contextually appropriate replies to prompts, just as GPT or Claude would.
+  * The human subject, having internalized the LLM-style training, also generates appropriate replies to native speakers, indistinguishable from a native speaker.
+Here's the rub. Despite the fluency exhibited by the human, there remains a profound gap in genuine understanding. The human, although producing perfectly coherent sentences, will not actually comprehend the content of these exchanges. He will not know if a statement is a question, a proposal, or a demand. He generates plausible replies by relying solely on probability distributions derived from his extensive exposure to textual patterns. Even as native speakers find the human's performance entirely convincing, the subject himself remains unaware of the actual meaning behind his utterances.
+The subject has fluency without understanding. This occurs because the subject is trained only on text, with no access to external references such as objects, people, actions, feelings or concepts. These entities appear appear in the corpus only as linguistic tokens, and any links to external reality are entirely severed by the nature of the autoregressive training. But then the subject possesses no theory of meaning for the language he is fluent in; and if if that is true of the subject, it is also true if the corresponding LLM trained in the same way. 
+But this has serious implications, to deny that a language model has any grasp of meaning is to deny it has any understanding whatsoever. Consider ELIZA, an early NLP program that mimicked a Rogerian therapist using simple parsing tricks. The program could be quite convincing so long as the subject gave a certain range of natural responses. Some people were even tricked into using it do discuss emotional issues they had. But it was clear that ELIZA had no understanding of what was being said. Our view of a language model should be no different. While it can respond appropriately to a far wider range of prompts the lack of any theory of meaning means that ultimately it has no more understanding of what it produces and ELIZA. A language model would be the stochastic parrot claimed by the harshest critics of language models. 
+But it seems rather absurd to view GPT as ELIZA on steroids. ELIZA was quickly exposed with minimal deviation from expected inputs, but models like GPT, Gemini, or Claude are far more robust. Despite occasional inaccuracies or hallucinations, their responses are generally excellent, and their command of language remains strikingly strong—even when wrong. This suggests that language models have some notion of meaning. While these models don’t connect language to the world in the way humans do, they nevertheless exhibit a rich internal semantic structure. They don’t link words to objects, but they do map complex relationships among words. This internal coherence constitutes a kind of structural meaning. If that were connected to the world, it could amount to a full semantics.
+The aim of this note has not been to answer but to question, to unsettle. The thought experiment was designed to isolate what language models actually learn, and to show that this learning does not support standard notions of meaning. This should prompt reflection on how we interpret the capabilities of these models. While a plausible rejoinder has been outlined, its implications are not yet fully clear, and further exploration is needed to understand the extent to which language models may exhibit meaningful understanding.

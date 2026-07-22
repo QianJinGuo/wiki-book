@@ -1,0 +1,43 @@
+---
+title: Qoder 1.0正式发布！从AI IDE迈向智能体自主开发工作台
+type: raw
+source: wechat
+source_url: https://mp.weixin.qq.com/s/l-L2_abmijjpG_XOCAMsZw
+tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]
+fetcher: wechat-mp-rss
+review_value: 7
+review_confidence: 8
+review_recommendation: worth-reading
+ingested: 2026-05-18
+sha256: afe74d7f356754014fd7b1a973585239a4d4bc7eb65ee6da241d57d63ecc8811
+---
+# Qoder 1.0正式发布！从AI IDE迈向智能体自主开发工作台
+今天，阿里发布Qoder 1.0，从AI IDE升级为智能体自主开发工作台，用户只需专注需求定义，Agent团队即可“自动驾驶”，自主完成执行、验证和交付全流程任务。目前，Windows、macOS和Linux系统用户均可下载使用。
+#  01
+Quest独立视窗，
+** Agent-first开发台  **
+Quest从IDE内的一个模式升级为独立视窗，集成任务管理、状态追踪、产物审查和知识调用等能力，成为面向Agent-first工作范式的开发工作台。开发者定义目标后，执行、验证和交付均由Agent在工作台内完成。
+Quest视窗的UI交互和前端体验也做了全面升级，文件目录、代码变更、终端输出、浏览器预览等工程信息均支持按需展开，开发者无需离开当前任务上下文，即可随时深入查看项目细节。
+Quest与Editor作为两个独立窗口并行运行，开发者可在任务委派与协同编程两种工作方式之间自由切换，上下文无缝衔接。
+#  02
+#  跨项目多任务并行：
+** 一屏掌握全局  **
+Qoder 1.0将并行范围扩展至跨项目、跨代码库维度，开发者可在多个Workspace中同时运行不同项目的Agent任务，通过统一面板，实时追踪所有任务的动态。
+每个Quest任务拥有独立的状态标签（运行中/等待确认/已完成），进度一目了然。开发者无需逐一切换窗口，一屏即可掌握全局进展。任务完成后，系统自动生成Summary交付清单，涵盖任务进展、产物文档和代码变更，供快速审查。
+#  03  **
+**
+#  ** 越懂项目，代码越准  **
+_** 团队共享的知识引擎  ** _
+**
+**
+1.0版本将此前分散的记忆、Repo Wiki和知识卡片整合为统一的团队级知识引擎。这是全球首次实现团队知识共享机制。记忆系统记录用户的表达习惯、技术偏好、团队规范和历史决策；Repo Wiki与Knowledge Cards从代码仓库中自动构建架构知识、模块关系、编码规范和技术栈知识。
+三类知识统一管理，Agent在执行任务时可持续调用。实测数据显示，知识引擎上线后，代码保留率提升11%，输入Token消耗降低40%，对话轮次减少33%。
+基于代码仓库，每位成员都可以贡献知识、修正知识，由智能体对知识进行持续优化。知识在云端统一存储，企业可以统一维护，并实现过程审计。个人的经验变成了组织的持续成长能力。
+#  04  **
+专家团入驻Quest，  **
+_** 且支持打造专属Agent团队  ** _
+Experts专家团模式上线以来用户反馈积极。但此前仅支持在Chat侧边栏中使用，1.0版本将其正式引入Quest视窗。开发者可在Quest内自由选择单Agent模式或Experts专家团模式。专家团由规划、调研、编码、审查、测试五类专家组成，以流水线方式协同交付。
+同时，1.0版本新增自定义专家能力。开发者可创建专属Agent团队，为其配置领域知识、任务技能和外部工具接口，打造贴合自身业务场景的Agent团队。
+上述产品升级的背后，是底层Agent Harness的系统性重构。模型提供智能，Harness决定这份智能能否转化为可用交付。Qoder 1.0在此层沿两条路径完成升级：将传统聊天对话升级为结构化的任务运行时（Task Runtime），将分散的上下文供给收敛为贯穿运行时的知识工程（Knowledge Engineering）。
+Qoder是面向全球开发者的智能体编程平台，旗下产品包括Qoder IDE、Qoder CLI、Qoder JetBrains 插件、Qoder移动端、QoderWork、QoderWake。自2025年8月上线以来，Qoder已服务全球超过500 万用户。
+欢迎留言一起参与讨论~

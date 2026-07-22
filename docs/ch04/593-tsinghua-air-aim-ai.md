@@ -39,8 +39,8 @@ AIM 深度参与了一项量子算法研究（Sign Embedding Quantum Algorithms 
 
 ### 与 AI Scientist 其他方案的对比
 
-- → [AutoResearch：AI 科学发现 L0-L4](../ch05/088-ai.html) — 定义了 AI Scientist 的自主性层级
-- → [Harness Engineering Self-Improvement Survey](../ch05/115-harness-engineering.html) — Lilian Weng 的自我改进综述，覆盖 AI Scientist 领域
+- → [AutoResearch：AI 科学发现 L0-L4](../ch05/089-ai.html) — 定义了 AI Scientist 的自主性层级
+- → [Harness Engineering Self-Improvement Survey](../ch05/116-harness-engineering.html) — Lilian Weng 的自我改进综述，覆盖 AI Scientist 领域
 - AIM 的不同：强调 **human-in-the-loop 的协同工作流**，而非全自动发现；专注于 **数学理论（而非实验科学）**；用清晰的五阶段流程定义人机分工
 
 ## 参考文献

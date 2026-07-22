@@ -1,0 +1,266 @@
+---
+tags: [wechat, article, claude, openai]
+title: "openclaw-multi-4"
+url: https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-4/
+source: rss
+feed_name: AWS China Blog
+sha256: 7b5287092eb4ad74f25b50f413a036fd01f7582007debbfe5c0d7120c34a4948
+---
+AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客
+Skip to Main Content
+想了解专为中国区域提供的云产品？请访问
+www.amazonaws.cn
+。申请中国区域免费套餐请访问
+www.amazonaws.cn/free
+。
+AWS Blog
+首页
+博客
+版本
+亚马逊AWS官方博客
+AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇
+摘要：基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第四篇：Phase 2 & 3 — 部署 AgentCore Runtime 与业务层，构建 ARM64 容器镜像、创建 AgentCore Runtime，以及部署消息路由、定时任务和 Token 用量监控。
+目录
+01
+五、Phase 2 — 部署 AgentCore Runtime
+02
+六、Phase 3 — 部署业务层
+03
+相关链接
+五、Phase 2 — 部署 AgentCore Runtime
+Phase 2 是整个迁移中最核心的一步 — 把 OpenClaw 从”一台服务器上的 Node.js 进程”变成”AgentCore 托管的 Serverless 容器”。这也是 Replatform 策略最直观的体现：运行环境从手动管理的 VPS 迁移到 AWS 托管的 Serverless 运行时，获得自动扩缩容、Per-Session 隔离、按需计费等云原生能力。
+先理解：AgentCore Runtime 的部署流程是什么样的？
+AgentCore Runtime 的核心思路：把你的 Agent 代码打包成容器镜像，注册给 AgentCore 托管。AgentCore 按需启动 microVM 来运行这个镜像。
+[图1]
+两种部署方式
+方式
+步骤
+适用场景
+手动方式
+逐步执行 docker build → ecr push → create-agent-runtime → create-endpoint
+需要精细控制每一步
+Starter Toolkit（本文使用）
+agentcore configure
++
+agentcore deploy
+两条命令搞定 ③-⑥
+AWS 官方推荐，简单快速
+本文使用 Starter Toolkit。
+deploy.sh
+脚本会自动调用这两条命令，并把 Phase 1 创建的执行角色、子网、Security Group 等参数传给它。
+本阶段由 deploy.sh 自动执行
+如果你用的是
+BUILD_MODE=codebuild ./scripts/deploy.sh
+，这一步会自动运行，你只需要等它完成。
+这一步耗时最长，AWS CodeBuild 构建镜像大约 5-10 分钟。可以用 screen 挂起，或者去 CodeBuild 控制台看构建进度。
+Phase 2 创建了什么？
+✅容器镜像构建相关
+资源
+数量
+设计说明
+功能 / 在本项目的作用
+Amazon ECR Repository
+1
+一个项目一个镜像仓库
+存储 OpenClaw 容器镜像（Node.js 22 + OpenClaw + ClawHub + AWS SDK）。AgentCore Runtime 按需从这里拉取镜像启动容器
+AWS CodeBuild Project
+1
+BUILD_MODE=codebuild 模式下由 Starter Toolkit（
+agentcore
+CLI）自动创建，不是 AgentCore Runtime 本身创建的
+CodeBuild 是 AWS 的托管构建服务，Project 是其中一个”构建任务配置”。
+AgentCore Runtime 要求容器镜像必须是 ARM64 架构，因为底层的 microVM 运行在 Graviton（AWS 自研 ARM 芯片）处理器上。所以构建镜像时必须产出 ARM64 格式。
+CodeBuild 提供 ARM64 构建机原生构建，不需要本地装 QEMU 做跨架构模拟。构建完自动推送到 ECR。
+如果选本地 Docker 构建（BUILD_MODE=local-build），就不会创建 CodeBuild Project
+✅AgentCore Runtime 核心资源
+资源
+数量
+设计说明
+功能 / 在本项目的作用
+AgentCore Runtime
+1
+一个项目一个 Runtime，按会话动态分配 microVM
+Serverless AI Agent 运行时。Router Lambda 调用时按会话 ID 分配独立的 microVM，隔离 CPU、内存、文件系统。会话空闲到期或结束后 microVM 终止、内存清零。这是从”所有用户共享一个进程”到”每用户独立 microVM”的核心改造
+AgentCore Runtime Endpoint
+1
+一个 Runtime 可以有多个 Endpoint，每个 Endpoint 指向 Runtime 的不同版本，用来做版本灰度和多环境管理。本项目不做灰度，默认的
+DEFAULT
+就够
+Runtime 的调用入口。Router Lambda 通过
+InvokeAgentRuntime
+调用这个 Endpoint 触发容器
+Session Storage 挂载
+1
+Runtime 上一个持久化挂载点
+把
+/mnt/workspace
+配置为会话持久化路径。同一会话 ID 再次调用时，这个目录下的数据自动恢复（本项目同时还有 S3 备份作为兜底）
+验证方法：
+去
+Amazon Bedrock
+控制台 → AgentCore → Agent Runtimes，应该看到一个名为
+openclaw_agent
+的 Runtime，状态 Ready
+查看
+cdk.json
+，里面的
+runtime_id
+和
+runtime_endpoint_id
+字段应该已经被填上真实值
+六、Phase 3 — 部署业务层
+Phase 3 部署的是 Refactor 策略的核心产物 — 消息路由、定时任务、用量监控。迁移后，这三个组件被设计为独立的 Serverless 组件，各自独立扩缩、独立监控，充分利用 AWS Lambda 和
+Amazon EventBridge
+的按需计费特性。
+Phase 3 再次用 CDK，部署 3 个依赖 Runtime ID 的 Stack：消息路由、定时任务、用量监控。
+本阶段由 deploy.sh 自动执行
+脚本会运行
+cdk deploy OpenClawRouter OpenClawCron OpenClawTokenMonitoring
+。
+为什么做这一步：为什么必须放在 Phase 2 之后？因为 Router Lambda 和 Cron Lambda 需要知道要调用哪个 AgentCore Runtime，这个信息是 Phase 2 产出的。
+Phase 3 创建了什么？
+✅OpenClawRouter — 消息路由层
+这是 Refactor 改造中变化较大的部分。迁移后，消息接入被重构为
+Amazon API Gateway
++ AWS Lambda 的 Serverless 架构，webhook 签名验证、用户身份解析、图片下载、容器调用、回复推送都在 Lambda 中完成。
+资源
+数量
+设计说明
+功能 / 在本项目的作用
+Amazon DynamoDB 表（openclaw-identity）
+1
+单表设计，通过 PK（分区键）/SK（排序键）区分记录类型
+存多种记录：CHANNEL# 渠道映射、USER# 用户信息、SESSION 当前会话、BIND# 跨渠道绑定码、ALLOW# 白名单、CRON# 定时任务。KMS 加密 + PITR（时间点恢复，Point-in-Time Recovery）
+Router Lambda
+1
+单入口 Lambda 处理所有渠道 webhook，按路径分发
+核心路由器：① 验证 webhook 签名（Telegram secret_token、Slack HMAC、飞书签名） ② 查 DynamoDB 解析用户身份 ③ 下载图片到 S3 ④ 调用 AgentCore 容器 ⑤ 把回复发回渠道
+Amazon API Gateway HTTP API
+1
+一个 API 承载所有 webhook 路由
+公网入口。4 条显式路由：
+/webhook/telegram
+、
+/webhook/slack
+、
+/webhook/feishu
+、
+/health
+。限流 burst 50 / sustained 100 req/s 防 DDoS
+CloudWatch Log Group
+2
+Lambda 执行日志和 API 访问日志分开存放，便于独立查询
+①
+/openclaw/lambda/router
+：Lambda 代码执行日志 ②
+/openclaw/api-access
+：API Gateway 请求日志（IP、状态码、延迟）
+IAM Role（Router Lambda）
+1
+Lambda 的执行身份
+授权 Router Lambda 调用 AgentCore、读写 DynamoDB、读 Secrets Manager、上传 S3、异步自调用
+✅OpenClawCron — 定时任务层
+资源
+数量
+设计说明
+功能 / 在本项目的作用
+Amazon EventBridge Scheduler Group
+1
+一个调度组容纳所有用户的定时任务，便于统一管理和授权
+openclaw-cron
+调度组。用户通过对话说”每天早上 8 点提醒我”，容器内的 create_schedule 工具会在这个组里创建 schedule。按用户 ID 做权限隔离
+Cron Lambda
+1
+所有定时任务共用一个执行 Lambda，按任务 ID 区分
+本质是一个 AWS Lambda 函数（项目里叫
+openclaw-cron-executor
+，Python 3.13），专门处理定时任务：
+① 被 EventBridge Scheduler 定时触发
+② 从 DynamoDB 查任务上下文（用户 ID、渠道、提示词）
+③ 调用 AgentCore 容器执行任务
+④ 把结果发回用户所在的 Telegram/Slack/飞书
+Scheduler IAM Role
+1
+EventBridge Scheduler 服务需要一个角色来触发 Lambda
+授权 EventBridge Scheduler 调用 Cron Lambda。定时触发时 Scheduler 假设这个角色再调 Lambda
+IAM Role（Cron Lambda）
+1
+Lambda 自身的执行身份
+授权 Cron Lambda 调用 AgentCore、查 DynamoDB、读 Secrets Manager（获取渠道 Bot Token 发消息）
+CloudWatch Log Group
+1
+Cron Lambda 执行日志
+/openclaw/lambda/cron
+。记录每次定时任务的执行过程，排查任务失败时看这里
+✅OpenClawTokenMonitoring — 用量监控层
+Token 用量统计是迁移后新增的能力。这个 Stack 通过订阅 Amazon Bedrock 调用日志，实时解析每次调用的 Token 数并估算成本，为多租户场景下的成本分摊和预算控制提供数据基础。
+资源
+数量
+设计说明
+功能 / 在本项目的作用
+Amazon DynamoDB 表（TokenUsageTable）
+1
+单表 + 3 个 GSI（全局二级索引，Global Secondary Index）支持多维查询
+记录每次 Bedrock 调用的 Token 数和估算成本。3 个 GSI 分别支持按渠道、按模型、按日期成本排名查询。90 天 TTL 自动清理
+Token Metrics Lambda
+1
+一个 Lambda 处理所有 Bedrock 日志
+被 CloudWatch Subscription Filter 触发，逐条解析 Bedrock 调用日志：提取 Token 数 → 计算成本 → 写入 DynamoDB → 同时推送 CloudWatch 自定义指标
+CloudWatch Subscription Filter
+1
+一条过滤器把日志流送到 Lambda
+订阅 Bedrock 调用日志 Log Group，实时把新日志转发给 Token Metrics Lambda 处理
+CloudWatch Dashboard
+1
+一个用量分析大盘
+OpenClaw-Token-Analytics-{region}
+。6 个图表：Input vs Output Token 趋势、估算成本趋势、1 小时内调用次数/总 Token/成本
+CloudWatch Alarm
+2
+Token 用量和成本两个独立预算
+① 每小时 Token 总量 > 100 万
+② 每小时估算成本 > $5
+阈值来自 cdk.json 的
+daily_token_budget
+和
+daily_cost_budget_usd
+，任一触发发 SNS 告警
+Anomaly Detector
+1
+Token 用量的异常检测器
+基于历史数据学习正常用量范围，偏离 2 个标准差即触发告警。能识别总量未超预算但模式异常的情况（比如半夜突然大量调用）
+IAM Role（Token Metrics Lambda）
+1
+Lambda 的执行身份
+授权 Lambda 读写 DynamoDB Token Usage 表、推送 CloudWatch 自定义指标（限制在 OpenClaw/TokenUsage 命名空间）
+验证方法：
+AWS CloudFormation
+控制台应该看到 8 个 OpenClaw Stack 都是 CREATE_COMPLETE
+CloudWatch → Dashboard 里能看到
+OpenClaw-Operations-
+和
+OpenClaw-Token-Analytics-
+部署脚本最后会打印出 API Gateway URL，记下来后面要用
+相关链接
+➡️ 下一步行动：
+相关产品：
+AWS Lambda
+— 无需服务器即可运行代码
+Amazon Bedrock
+— 用于构建生成式人工智能应用程序和代理的端到端平台
+Amazon DynamoDB
+— 无服务器分布式 NoSQL 数据库
+AWS CodeBuild
+— 构建和测试代码
+Amazon CloudWatch
+— 可观测性工具
+系列文章：
+第一篇：为什么要把 OpenClaw 从单机搬到 AWS
+第二篇：环境准备与代码获取
+第三篇：Phase 1 — 部署基础设施
+第五篇：配置消息渠道与端到端验证
+第六篇：清理资源与总结展望
+*前述特定亚马逊云科技生成式人工智能相关的服务目前在亚马逊云科技海外区域可用。亚马逊云科技中国区域相关云服务由西云数据和光环新网运营，具体信息以中国区域官网为准。
+本篇作者
+AWS 架构师中心：云端创新的引领者
+探索 AWS 架构师中心，获取经实战验证的最佳实践与架构指南，助您高效构建安全、可靠的云上应用

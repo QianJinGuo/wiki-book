@@ -13,9 +13,9 @@ Hooks 将 Agent 工作流从"模型记住规则"变成"确定性自动化"——
 ## 相关实体
 - [Claude Code Search Architecture Tencent 2026](../ch03/076-claude-code.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/018-harness.html)
-- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/351-claude-code-agent-teams.html)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/341-claude-code-agent-teams.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/076-claude-code.html)
-- [Anthropic Pm Agentic Workflow](ch04/453-anthropic-pm-agentic.html)
+- [Anthropic Pm Agentic Workflow](ch04/454-anthropic-pm-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agent-hooks-programmable-workflow.md)
 
