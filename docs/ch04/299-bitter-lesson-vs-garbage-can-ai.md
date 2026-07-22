@@ -84,8 +84,8 @@ Manus 的改进路径需要更多精心手工定制和定制化工作，而 Chat
 培养组织对高质量输出的敏感度和定义能力。所有利益相关者需要能够判断什么是好的结果，什么是次优的。这可能需要引入新的评估流程和质量标准，但这是 AI 时代竞争的基础能力。
 
 ## 相关实体
-- [Using Ai Right Now Mollick Quick Guide](../ch05/088-ai.html)
-- [The Shape Of The Thing Mollick](../ch01/237-the-shape-of-the-thing.html)
+- [Using Ai Right Now Mollick Quick Guide](../ch05/089-ai.html)
+- [The Shape Of The Thing Mollick](../ch01/227-the-shape-of-the-thing.html)
 - [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt5-just-does-stuff-mollick.md)
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
 - [Guide Ai Agents Models Apps Harnesses Mollick](ch04/030-ai-agent.html)

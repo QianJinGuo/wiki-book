@@ -45,7 +45,7 @@ const messages: MessageParam[] = [{ role: "user", content: userInput }];while�
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)
 - [Headroom Context Compression Agent Vibecoder](../ch03/046-agent.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
-- [Ai Agent Harness Construction Akshay Baoyu](../ch01/929-ai-agent-harness.html)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch01/940-ai-agent-harness.html)
 
 ## 实践启示
 

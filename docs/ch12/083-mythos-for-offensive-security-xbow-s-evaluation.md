@@ -22,9 +22,9 @@
 ## 相关实体
 - [Mythos_Offensive_Security_Xbow_Evaluatio](ch12/030-mythos.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/416-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
+- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/417-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
 - [Offensive Security Blog](ch12/006-offensive-security-blog.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/088-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/089-ai.html)
 
 ---
 

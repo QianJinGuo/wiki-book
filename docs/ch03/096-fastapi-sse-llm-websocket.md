@@ -70,11 +70,11 @@ async def event_generator():
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch11/284-amazon-nova.html)
+- [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch11/285-amazon-nova.html)
 - [Thinking Machines 交互模型（Interaction Models）](../ch04/248-thinking-machines-interaction-models.html)
 - [SGLang](../ch04/596-agent-assisted-sglang-ai-llm.html)
 
-- [Fastapi Sse Llm Streaming Vs Websocket 5E4A458Abf18](../ch11/081-fastapi.html)
+- [Fastapi Sse Llm Streaming Vs Websocket 5E4A458Abf18](../ch11/204-fastapi.html)
 ## 深度分析
 ### SSE 的技术本质与 HTTP 分块传输
 SSE 的核心原理是 HTTP 分块传输编码（Chunked Transfer Encoding）。服务器返回 `media_type="text/event-stream"`，每个事件以 `data: ...\n\n` 双换行符分隔，浏览器端 EventSource 自动解析。这意味着 SSE 天然复用 HTTP/1.1 的 keep-alive 连接，无需切换协议，灵活性远高于 WebSocket。   ^[https://mp.weixin.qq.com/s/7FWjN0GDBgVyvEDiaC1AMQ]
