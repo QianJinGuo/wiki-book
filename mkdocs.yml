@@ -5,6 +5,9 @@ repo_name: "QianJinGuo/wiki-book"
 site_url: "https://wiki.jinguo.tech"
 use_directory_urls: false
 
+exclude_docs:
+  raw/
+
 theme:
   name: material
   custom_dir: overrides
