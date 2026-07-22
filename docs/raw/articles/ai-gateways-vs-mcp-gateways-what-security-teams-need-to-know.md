@@ -1,0 +1,107 @@
+---
+title: "ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know"
+source: newsletter
+source_url: https://noma.security/blog/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know/
+tags: [security]
+review_value: 9
+review_confidence: 9
+review_recommendation: neutral
+ingested: 2026-05-16
+review_stars: 5
+date: 2026-05-13
+sha256: 4cc6cba9d70553f576a7b85a0d522654a49fed88fc62d898198cf2930ae1e0bd
+---
+Title: AI Gateways vs. MCP Gateways: What Security Teams Need to Know
+URL Source: https://noma.security/blog/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know/
+Published Time: 2026-05-10T20:20:34+00:00
+Markdown Content:
+Many vendors in AI security are talking about gateways right now, but they don’t all mean the same thing. Between all of these, the word “gateway” is doing a lot of work, and not all of it is consistent.
+Security teams are being asked to evaluate these technologies, and the terminology is genuinely confusing. In conversations with enterprises across financial services, insurance, pharma, and tech, we consistently find that teams conflate AI gateways with MCP gateways. They assume one covers what the other does. Some vendors actively blur the lines by combining both functions into a single product. Others treat them as entirely separate categories.
+This post breaks down what each type does, where the real value is, and where the gaps are that neither fills. We will focus on functionality first, not vendor definitions. A note on terminology: the market uses “AI gateway,” “LLM gateway,” and “MCP gateway” loosely, and some vendors bundle multiple functions under a single label. Throughout this post, we use “AI gateway” to refer specifically to the LLM inference proxy layer (managing traffic between agents and model providers), distinct from “MCP gateway” (managing traffic between agents and their tools). Where vendors combine both, we will call that out.
+![Image 1](https://noma.security/wp-content/uploads/AI-Agent-1024x536.png)
+## AI Gateways: The LLM Proxy Layer
+An AI gateway is a reverse proxy that sits between your application (or agent) and the LLM provider: OpenAI, Anthropic, Google, and others. All inference traffic routes through the gateway instead of going directly to the model’s API. Think of it as an API gateway designed specifically for LLM traffic.
+Many AI gateways originated to solve engineering and FinOps challenges such as routing, cost control, and observability, with security capabilities added or expanded over time. Understanding these operational roots helps explain why these products excel where they do, and where the gaps remain.
+### Cost optimization and token tracking:
+Every request is metered. You can set budgets per team, per model, per application. When an organization runs 30+ GenAI use cases across multiple providers, this is how the platform team avoids a surprise bill at the end of the month. Portkey, for instance, was processing trillions of tokens per month before Palo Alto acquired it.
+### Model routing and failover:
+Route requests to different models based on latency, cost, or capability. If one provider’s API goes down, fail over to another automatically. Semantic caching reduces duplicate calls and cuts cost further.
+### Unified API:
+One integration point for hundreds of LLM providers. Swap models without rewriting application code. Kong, LiteLLM, and Portkey all built their products around this idea.
+### Observability:
+Full traces showing which user made each call, which model was used, the latency, the token consumption, and the cost. For platform engineering teams managing AI infrastructure, this is table stakes.
+## Where AI Gateways Touch Security
+Because all inference traffic routes through them, AI gateways can see the full prompt, response, and tool calling. This gives them a privileged position in the execution path. Additional plugins can layer security-oriented value on top, and scoping their visibility to only prompts and responses is too narrow: they also see tool calls, which means additional detectors can be applied.
+This is an important distinction. The AI gateway itself is primarily an operational layer. But because it sits in the traffic path and sees the full agentic interaction, it creates a valuable integration point for purpose-built AI security tools. The gateway provides the data. A dedicated security platform provides the analysis, behavioral detection, and enforcement that gateway plugins alone are not designed to deliver.
+Here is what that looks like in practice. An engineering team builds a customer-facing agent on AWS Bedrock and routes all inference through an AI gateway. The gateway handles routing, cost tracking, and basic content filtering. An AI security platform integrates with the gateway to analyze the full interaction stream: detecting behavioral anomalies across the session, enforcing granular policies, and catching multi-step attack patterns that basic plugins miss.
+## Where AI Gateways Fall Short
+### Coverage is limited to what routes through them:
+This sounds obvious, but it matters. SaaS agent platforms like Microsoft Copilot Studio and Salesforce AgentForce connect directly to their own backends. You cannot route Microsoft’s internal inference traffic through your Kong instance. The gateway covers only a subset of the agent landscape: the applications your engineering team builds and controls, as well as AI agents like Claude Cowork and coding agents like Codex.
+### Prebuilt agents are a growing blind spot:
+Anthropic recently added support for third-party AI gateway routing in Cowork and Claude Code. Other vendors are beginning to follow. But this is early. Most prebuilt agent traffic today still goes directly to the provider. Enforcing that every developer actually configures their coding assistant to route through the gateway is an ongoing operational challenge that most organizations have not solved.
+### They see tool traffic but don’t govern it:
+Because all LLM traffic routes through an AI gateway, it technically sees tool calls and tool responses as part of the prompt/response stream. But AI gateways were not built to provide guardrails on tool-level activity. They do not offer per-tool access control, tool registries, or tool-level policy enforcement. The visibility is there. The security controls for what agents do with their tools are not.
+## MCP Gateways: The Tool Governance Layer
+An MCP gateway is a control point that sits between AI agents and the MCP servers (tools) they connect to. Instead of agents connecting directly to individual MCP servers, all tool traffic routes through the gateway. Where AI gateways manage the conversation between agent and model, MCP gateways manage the conversation between agent and tools.
+The primary value here is closer to the identity and access control layer: managing tokens, integrating with identity providers, and controlling which agents can reach which tools.
+### Centralized authentication:
+Developers authenticate once with the gateway using their existing identity provider (Okta, Entra ID, Auth0). The gateway handles outbound authentication to each downstream MCP server. This eliminates a real operational pain point: without a gateway, each MCP server has its own credential configuration, and credentials end up scattered across dozens of developer machines with no central management.
+### Tool registry and discovery:
+A curated catalog of approved MCP servers. Developers discover available tools through the gateway rather than downloading arbitrary MCP servers from npm or GitHub. The gateway becomes the single source of truth for what tools are available and who approved them.
+### Per-tool, per-user access control:
+A given agent can use the Slack MCP server but not the production database MCP server. Permissions are scoped by identity, not just by agent configuration. Some gateways even support disabling individual tools within an MCP server, so a developer can use the “read” tools on a server but not the “write” or “delete” tools.
+### Audit logging:
+Every tool call from every agent, centrally logged. Which user, which agent, which MCP server, which tool, what parameters, when. For compliance and forensics, this is where the record of agent actions lives.
+## Who’s Building MCP Gateways
+MCP gateways are gaining momentum. Several managed gateway providers have emerged in the past few months, and some large enterprises have built their own internally. Anthropic’s recent keynote on “Bringing MCPs to the Enterprise” recommended the pattern, and major platform vendors are also moving into the space by bundling MCP gateway features into existing AI gateway or API security products. The market interest is real, but most deployments are still early stage.
+## What it Looks Like in Practice
+A security team wants to govern MCP usage across 500 developers using Claude Code. They deploy an MCP gateway in their VPC. Developers configure their agents to route MCP connections through the gateway. The gateway authenticates each developer via Okta and checks whether that developer’s role authorizes them to use the requested MCP server and specific tools within it. It logs the call and routes it to approved MCP infrastructure. Shadow MCP servers that developers installed on their own machines will not appear in gateway logs, but may be detectable through endpoint telemetry, EDR integration, or network monitoring.
+That is the design. The reality is more complicated.
+## Where MCP Gateways Fall Short
+### Enforcement is a hard problem:
+Getting every agent on every developer’s machine to route through the gateway requires reconfiguring each agent individually. There is no reliable way to enforce this at the network level for local agents. Enterprises that have deployed MCP gateways consistently describe enforcement as the primary operational pain point. The gateway only governs what it can see. It can only see what is explicitly configured to route through it. Developers under deadline pressure will find the path of least resistance, and that path often bypasses the gateway.
+### Agents do more than MCP:
+MCP is one protocol agents use to interact with the world. It is not the only one. For example, Claude Code runs bash commands natively, agents execute code, write files, and make direct HTTP requests, none of which generates MCP traffic. An MCP gateway cannot see any of these actions. The ecosystem is also expanding. Skills (curated reference material and workflow templates loaded into an agent’s context) are gaining traction across multiple coding assistants. MCP and Skills are complementary: MCP connects agents to live external data sources and tools, while Skills guide how the agent performs specific tasks. Both are frequently used together. But an MCP gateway only governs MCP traffic. Agent activity driven by Skills, CLI invocations, or direct API calls falls outside its view entirely.
+### No user intent context:
+An MCP gateway sees tool calls and tool responses. It does not see the user’s original prompt or the model’s reasoning. It looks at one slice of the interaction without the context of why the agent is taking a given action. A tool call to send_email might be perfectly legitimate or the final step in an exfiltration chain. Without seeing the full session, the gateway cannot tell the difference. It does not know what the user asked, what data the agent accessed in prior steps, or what the model decided.
+### Static rules limit agent value:
+Because gateways lack session context, they can only enforce strict static rules: “this agent cannot send emails” or “this agent cannot delete files.” That approach kills the utility of the agent. What security teams actually want is more nuanced. Allow emails in general, but detect and block when the agent has been working with sensitive customer data in the same session and is now attempting to email it to an external address. That kind of enforcement requires session-level behavioral context. The gateway does not have it.
+## Where They Overlap and Where the Lines Are Blurring
+At a high level, both AI gateways and MCP gateways are intermediaries that provide centralized visibility and control. But they sit at different points in the architecture and manage fundamentally different traffic.
+**AI Gateway****MCP Gateway**
+**Sits between**Agent and LLM provider Agent and MCP servers/tools
+**Primary traffic**Prompts and model responses Tool calls and tool responses
+**Cost optimization**Core use case Not applicable
+**Model routing/failover**Core use case Not applicable
+**Tool registry/discovery**Not applicable Core use case
+**Per-tool access control**Not applicable Core use case
+**Sees user prompts**Yes No
+**Sees tool actions**Yes (in the traffic stream)Yes (MCP traffic only)
+**Guardrails on tool access**No Yes (core use case)
+**Runtime security integration point**Yes (execution path)Limited
+The boundaries are blurring. Kong now offers MCP gateway features alongside their AI gateway. Multiple vendors are combining both into a single control plane. The industry trajectory is convergence into a single infrastructure layer that manages both model traffic and tool traffic.
+For security teams evaluating today: these are still different technologies solving different problems. An AI gateway does not replace an MCP gateway, and vice versa. If the primary concern is cost management and LLM observability for homegrown applications, an AI gateway is the starting point. If the primary concern is governing which tools agents can access, an MCP gateway addresses that directly. But neither one, alone or together, constitutes an AI security strategy. They are infrastructure building blocks, not security solutions. Understanding what they cover, and more importantly what they do not, is essential before making architecture decisions.
+## What Neither Gateway Solves
+This is the section that matters most for security practitioners. Gateways are infrastructure layers that solve infrastructure problems. They are necessary. They are not sufficient.
+## Neither Sees the Full Picture
+AI gateways primarily evaluate prompts and model responses, while MCP gateways focus on governing tool calls and access to approved services. In many current agent architectures, tool results are fed back to the model as text, not tracked as structured security events. As a result, visibility is fragmented, and the security-relevant behavior often lives in the connections between these events.
+Consider a concrete attack chain. An indirect prompt injection is embedded in a CRM record. The agent reads the record through a tool call. It follows the injected instruction and generates a new request to the model. The model tells the agent to look up customer records. The agent then emails the data to an external address.
+![Image 2](https://noma.security/wp-content/uploads/ATTACK-CHAIN_-INDIRECT-PROMPT-INJECTION-1024x438.png)
+The AI gateway sees this traffic flowing through it. It has the data. But without a purpose-built security layer analyzing that data, it does not evaluate tool-level behavior or correlate actions across the session. The MCP gateway sees legitimate tool calls to approved servers but lacks the prompt and intent context. Neither reconstructs the causal chain on its own: poisoned input led to unauthorized data access led to exfiltration. This maps directly to [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/). Tool poisoning, prompt injection via tool response, and excessive agency all working together in a single attack.
+## Session-level Behavioral Context is the Gap
+The threat in agentic AI is rarely a single malicious event. It is the sequence. What the agent accessed in step one. What it decided in step two. What it sent in step four. Detecting these patterns requires maintaining state across the entire agent session and correlating events across prompts, tool calls, and responses together.
+Published research makes this concrete. Attack patterns like [ForcedLeak](https://noma.security/blog/forcedleak-agent-risks-exposed-in-salesforce-agentforce/), [Pandora’s Claw](https://noma.security/blog/pandoras-claw-from-internal-leak-to-industry-standard/), and [ContextCrush](https://noma.security/blog/contextcrush-context7-the-mcp-server-vulnerability/) (documented by Noma Labs) all span multiple steps and multiple signal types. A per-request scanning model, whether applied to LLM traffic through an AI gateway or to tool traffic through an MCP gateway, misses them by design. The detection surface for agentic threats is the session, not the request.
+## Large Portions of AI Usage are Invisible to Gateways
+For prebuilt agents running on developer machines (Claude Code, Cursor, Windsurf, GitHub Copilot), MCP traffic often flows through stdio transport. The agent spawns the MCP server as a local child process and communicates through stdin/stdout. No network traffic is generated. Neither type of network-based gateway can see these interactions.
+This problem extends further. Prebuilt coding agents increasingly support cloud-managed provisioning (Claude Code on the web, for example). When the agent runs in the vendor’s cloud, AI gateways lose visibility entirely because the traffic never routes through your infrastructure. SaaS agent platforms like Microsoft Copilot Studio and Salesforce AgentForce are another blind spot: agents on these platforms communicate through the vendor’s backend, outside the reach of any customer-managed gateway.
+Hooks-based approaches are emerging as the pattern that works across these surfaces. Instead of funneling traffic through a network proxy, hooks intercept at each stage of the agent’s execution inside the agent itself. They fire before and after prompts, before and after tool calls, before and after model responses. Cursor, Claude Code, and other coding assistants have built hook mechanisms into their enterprise products specifically to enable this kind of runtime interception. Because hooks operate at the agent layer rather than the network layer, they see everything the agent does: MCP calls, native bash execution, file system access, and Skills invocations.
+## Identity-aware Enforcement Goes Beyond the Gateway
+When a business user creates an agent on Microsoft Copilot Studio, the agent often runs with the creator’s credentials rather than the current user’s. This is sometimes called the “maker’s token” problem. Every subsequent user inherits the maker’s permissions. An HR manager builds an agent, shares it with the sales team, and now every sales rep can access HR data through the maker’s identity.
+MCP gateways can integrate with identity providers and apply role-based access control at the tool level. That is real value. But enforcing identity-aware policies at runtime, where you resolve who is actually driving the agent at a given moment and apply the correct permissions dynamically, requires deeper integration at the agent and platform level. The gateway can check credentials. Enforcement that accounts for the full relationship between the current user, the agent, and the agent’s effective permissions across the session requires a different type of integration.
+## The Practical Recommendation
+Think of gateways as one layer of the AI security stack, not the entire stack. AI gateways create opportunities for runtime visibility/enforcement because they sit in the execution path. MCP gateways handle identity and tool-level access control. Both are valuable. Neither was designed to solve behavioral detection, session-level correlation, or coverage of non-MCP agent actions.
+For the security problems that span both layers, a purpose-built AI security platform is the missing piece. It provides the actual runtime security analysis, behavioral detection, and enforcement that operates across the full agent interaction. The most effective pattern we see in enterprises today is integration: the gateway provides the pipe, the security platform provides the brain. Each layer does what it was built to do.
+## What Comes Next
+The gateway market is moving fast. Major acquisitions, new startups, and platform vendors adding MCP support all point toward convergence. Within a year, the distinction between AI gateway and MCP gateway may be largely academic as products merge into unified infrastructure layers.
+What will not converge is the gap between infrastructure controls and security controls. Gateways will keep improving at routing, authentication, and logging. Behavioral detection, session-level context, and enforcement will remain distinct problems that require purpose-built solutions. Agents are getting more autonomous. MCP adoption is accelerating. Multi-agent orchestration through protocols like A2A is moving toward production. The gap between what gateways see and what agents actually do is widening, not shrinking.
+Security teams evaluating their architecture today should plan for both layers: gateways for infrastructure governance, and AI security for the behavioral and access control challenges that gateways were never designed to solve. The organizations that get this right early will have a security architecture that scales with AI adoption instead of falling behind it.

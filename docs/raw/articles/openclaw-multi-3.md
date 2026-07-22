@@ -1,0 +1,380 @@
+---
+tags: [wechat, article, claude, openai]
+title: "openclaw-multi-3"
+url: https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-3/
+source: rss
+feed_name: AWS China Blog
+sha256: 18f7feef238c720c6e858f3999a048c3146fb3f71a2950bb34717720157e0b5f
+---
+AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客
+Skip to Main Content
+想了解专为中国区域提供的云产品？请访问
+www.amazonaws.cn
+。申请中国区域免费套餐请访问
+www.amazonaws.cn/free
+。
+AWS Blog
+首页
+博客
+版本
+亚马逊AWS官方博客
+AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇
+摘要：基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第三篇：Phase 1 — 部署基础设施，deploy.sh 脚本解析、CDK 部署 5 个基础 Stack（VPC / Security / Guardrails / AgentCore / Observability）及其创建的资源详解。
+目录
+01
+四、Phase 1 — 部署基础设施
+02
+相关链接
+四、Phase 1 — 部署基础设施
+Phase 1 是整个迁移的地基。在传统 OpenClaw 部署中，这些能力需要手动配置或额外搭建（比如防火墙规则、密钥管理、内容审核）。现在通过 CDK 一次性声明式部署 5 个 Stack，把网络、安全、监控的基础打好。这正是 Replatform 策略的核心 — 用 AWS 托管服务替代手动运维。
+Phase 1 用 CDK 部署 5 个基础 Stack，准备好 AgentCore Runtime 所需的网络、安全、角色、存储、监控资源。
+了解 deploy.sh 脚本在做什么
+scripts/deploy.sh
+是项目提供的一键部署脚本，自动串联三个阶段。运行前先了解它的工作流程，知道每一步在做什么。
+脚本的 5 个主要执行阶段
+[图1]
+脚本支持的运行模式
+命令
+执行哪些阶段
+./scripts/deploy.sh
+完整部署（Phase 1 + 2 + 3）— 默认模式
+./scripts/deploy.sh --phase1
+只跑 Phase 1（基础设施）
+./scripts/deploy.sh --runtime-only
+只跑 Phase 2（Runtime 部署），用于单独更新容器镜像
+./scripts/deploy.sh --phase3
+只跑 Phase 3（业务层）
+./scripts/deploy.sh --cdk-only
+跳过 Phase 2，只跑 CDK 部分（Phase 1 + Phase 3）
+关键环境变量
+环境变量
+默认值
+说明
+BUILD_MODE
+local-build
+容器构建模式。
+local-build
+本地 Docker 构建；
+codebuild
+使用 AWS CodeBuild 远程构建（不需要本地 Docker 和 ARM64 支持）
+CDK_DEFAULT_ACCOUNT
+自动检测
+AWS 账号 ID，未设置时从
+aws sts get-caller-identity
+读取
+CDK_DEFAULT_REGION
+cdk.json
+部署区域，未设置时从
+cdk.json
+或
+aws configure
+读取
+AGENTCORE_CLI
+自动检测
+agentcore CLI 路径，通常无需指定
+脚本完成后会提示
+=== Deploy complete ===
+Next steps:
+1. Store your Telegram bot token:
+aws secretsmanager update-secret --secret-id openclaw/channels/telegram \
+--secret-string 'YOUR_BOT_TOKEN' --region $REGION
+2. Set up webhook:
+./scripts/setup-telegram.sh
+部署完成后还需要配置 Telegram Bot Token 和 webhook，详见”七、配置消息渠道”。
+第一步：授予部署脚本执行权限
+chmod +x ./scripts/deploy.sh
+为什么做这一步：
+deploy.sh
+是项目提供的一键部署脚本，自动串联三个阶段。这里让它可执行。
+第二步：执行完整部署
+BUILD_MODE=codebuild ./scripts/deploy.sh
+为什么做这一步：BUILD_MODE=codebuild 告诉脚本用
+AWS CodeBuild
+在云端构建容器镜像。AgentCore 要求 ARM64 架构的镜像，而开发环境通常是 x86 架构。CodeBuild 会启动一台 ARM64 构建机原生构建，更快更稳定。
+在 codebuild 模式下，本地 Docker 实际上没有被用到（脚本会跳过 Docker 检查）。部署手册里安装 Docker 是为了环境完整性，如果以后想切换到
+BUILD_MODE=local-build
+本地构建就需要它。
+这个命令会自动跑完 Phase 1 → Phase 2 → Phase 3。本文档接下来分阶段讲解各阶段创建了什么。
+如果只想先跑 Phase 1，可以用
+./scripts/deploy.sh --phase1
+。
+Phase 1 创建了什么？
+Phase 1 的 5 个 Stack 对应了迁移中 Replatform 策略的核心：用 AWS 托管服务替代原来需要手动配置的网络、安全、监控能力。迁移后，这些能力由 AWS 托管服务统一提供，运维人员可以专注于业务逻辑而非基础设施管理。
+✅OpenClawVpc — 网络基础设施
+资源
+数量
+设计说明
+功能 / 在本项目的作用
+VPC
+1
+一个项目一个 VPC，提供独立的网络命名空间
+划定一个私有网络区域（10.0.0.0/16），所有容器、Lambda、VPC Endpoint 都在这里面。与其他 AWS 资源或其他 VPC 完全隔离，外部无法直接访问
+子网
+4
+2 个可用区 × 每个 AZ 2 种子网（1 公有 + 1 私有）= 4 个。两个 AZ 是高可用最小配置
+公有子网 ×2：放 NAT Gateway，有公网路由可以访问互联网
+私有子网 ×2：放 AgentCore 容器和 Lambda，没有公网 IP 不能被外部直接访问。跨 2 个可用区部署，单个 AZ 故障时服务仍可用
+NAT Gateway
+1
+降成本：NAT Gateway 按小时和流量计费，项目用 1 个足够；生产多 AZ 容灾时建议每 AZ 一个
+让私有子网里的容器和 Lambda 能访问互联网。容器没有公网 IP，但 AI 需要访问外网（web_search、web_fetch 工具）、下载 ClawHub 技能，必须通过 NAT 转发
+Elastic IP
+1
+NAT Gateway 需要一个固定公网 IP
+NAT Gateway 出站流量的源 IP。固定不变，便于外部服务做 IP 白名单（如需）
+Internet Gateway
+1
+一个 VPC 只能挂 1 个 Internet Gateway（AWS 规定）
+VPC 访问互联网的唯一出口。绑定到 VPC 后，公有子网就能与互联网通信。NAT Gateway 最终也是通过它出网的
+VPC Endpoint（Interface）
+7
+容器需要调用 7 个 AWS 服务，每个服务一个 Interface Endpoint（S3 用 Gateway 类型除外）
+让容器走 AWS 内部网络访问服务，不经过公网，更快更安全：
+① Bedrock Runtime：AI 模型调用 ② SSM：AgentCore 管理通信 ③ ECR API + ④ ECR Docker：容器启动时拉取镜像 ⑤ Secrets Manager：读取密钥 ⑥ CloudWatch Logs：写日志 ⑦ CloudWatch Monitoring：推送自定义指标
+VPC Endpoint（Gateway）
+1
+S3 用 Gateway 类型的 Endpoint，免费，不需要 Security Group
+容器访问 S3（工作区同步、用户文件、图片）走 AWS 内网。Gateway Endpoint 通过路由表生效，成本为 0
+Security Group
+2
+最小权限原则：不同用途用不同 SG，便于独立控制
+VPC Endpoint SG：只允许 VPC 内部（10.0.0.0/16）的 443 端口访问，外部打不进来
+容器 SG：入站允许 VPC 内 443，出站只开 443。容器不能访问非 HTTPS 端口（防止数据外泄到意外目标）
+VPC Flow Logs
+1
+整个 VPC 一份流量日志即可
+记录所有进出 VPC 的网络流量（源/目的 IP、端口、协议、字节数），写入 CloudWatch Logs。排查网络问题或审计时能看到详细的流量记录
+IAM Role（Flow Logs 用）
+1
+Flow Logs 服务需要一个角色才能往 CloudWatch 写日志
+VPC Flow Logs 服务通过这个角色写 CloudWatch Logs，遵循最小权限原则
+✅OpenClawSecurity — 安全基础
+资源
+数量
+设计说明
+功能 / 在本项目的作用
+KMS CMK（客户管理密钥，Customer Managed Key）
+1
+一个项目用一个 CMK 足够，简化密钥管理
+全局加密密钥（别名
+openclaw/secrets
+），自动轮换。用于加密 S3 用户文件桶、DynamoDB 表、Secrets Manager、SNS 主题
+Secrets Manager Secret
+8
+按不同用途分别存储，便于独立授权和轮换
+Gateway Token：容器与 Router Lambda 的认证令牌
+5 个渠道 Token：whatsapp/telegram/discord/slack/feishu Bot Token（其他 3 个是预留槽位）
+Webhook Secret：Telegram webhook 头验证、Slack HMAC（基于哈希的消息认证码）签名
+Cognito Password Secret：HMAC 密钥，用于从用户 ID 派生 Amazon Cognito 密码
+Amazon Cognito User Pool
+1
+一个项目一个用户池
+系统内部的身份管理（不是面向用户的登录）。容器内的 Proxy 自动为每个渠道用户注册一个内部身份（用户完全感知不到），用于容器内部识别”当前在服务谁”
+Cognito User Pool Client
+1
+项目只需要一种客户端（容器内的 Proxy）
+Proxy 用它获取 JWT（JSON Web Token）Token。密码不是用户设的，而是系统用 HMAC 从用户 ID 自动算出来的，用户看不到也用不到
+✅OpenClawGuardrails — AI 内容安全护栏
+这是迁移带来的一项全新能力。Amazon Bedrock Guardrails 提供了开箱即用的多层内容防护，涵盖内容过滤、主题拒绝、PII 检测、词汇过滤和正则匹配：
+资源
+数量
+设计说明
+功能 / 在本项目的作用
+Bedrock Guardrail
+1
+一个 Guardrail 包含所有过滤规则，一个项目一个就够
+每次调用 Claude 时自动应用，包含 5 类规则（详见下方展开）
+Guardrail Version
+1
+生产环境要锁定版本号，防止规则更新导致行为突变
+固定 Guardrail 配置的快照。调用时引用这个 Version，即使后续 Guardrail 本体修改了，生产调用仍用快照版本
+✅Guardrail 具体规则（定义在
+stacks/guardrails_stack.py
+）
+以下规则全部硬编码在代码中，不通过 cdk.json 配置。如需修改，直接改 guardrails_stack.py 后重新
+cdk deploy OpenClawGuardrails
+。
+① 内容过滤（Content Filters）— 输入和输出都检查
+类型
+输入强度
+输出强度
+HATE（仇恨言论）
+HIGH
+HIGH
+INSULTS（侮辱）
+MEDIUM
+HIGH
+SEXUAL（色情）
+HIGH
+HIGH
+VIOLENCE（暴力）
+HIGH
+HIGH
+MISCONDUCT（不当行为）
+HIGH
+HIGH
+PROMPT_ATTACK（提示注入攻击）
+HIGH
+NONE（仅检查输入）
+② 主题拒绝（Topic Denial）— 6 类禁止话题
+话题
+定义
+CryptoScams
+加密货币诈骗、传销、虚假代币推广
+Phishing
+钓鱼邮件、伪造登录页、社会工程攻击
+SelfHarm
+自残、自杀的指导或鼓励
+WeaponsManufacturing
+武器、爆炸物、化学/生物制剂的制造方法
+MalwareCreation
+勒索软件、键盘记录器、木马、漏洞利用代码
+IdentityFraud
+伪造证件、身份盗窃、冒充技术
+③ PII 检测（Sensitive Information）— 10 种个人身份信息
+PII 类型
+动作
+EMAIL（邮箱）
+ANONYMIZE（匿名化替换）
+PHONE（电话）
+ANONYMIZE
+USERNAME（用户名）
+ANONYMIZE
+CREDIT_DEBIT_CARD_NUMBER（信用卡号）
+BLOCK（直接阻断）
+CREDIT_DEBIT_CARD_CVV
+BLOCK
+CREDIT_DEBIT_CARD_EXPIRY
+BLOCK
+AWS_ACCESS_KEY
+BLOCK
+AWS_SECRET_KEY
+BLOCK
+PASSWORD（密码）
+BLOCK
+PIN（PIN 码）
+BLOCK
+④ 词汇过滤（Word Filters）
+类型
+内容
+托管脏话列表
+AWS 内置的 PROFANITY 词库
+自定义关键词（7 个）
+AKIA
+、
+aws_secret_access_key
+、
+aws_access_key_id
+、
+openclaw/gateway-token
+、
+openclaw/cognito-password-secret
+、
+/tmp/scoped-creds
+、
+credential_process
+⑤ 正则表达式匹配（Regex Filters）— 3 条
+名称
+正则
+动作
+AWSAccessKeyId
+AKIA[0-9A-Z]{16}
+BLOCK
+AWSSecretKey
+[0-9a-zA-Z/+=]{40}
+ANONYMIZE
+GenericAPIKey
+sk-[a-zA-Z0-9]{20,}
+ANONYMIZE
+✅OpenClawAgentCore — AgentCore 基础资源
+资源
+数量
+设计说明
+功能 / 在本项目的作用
+IAM 执行角色
+1
+所有用户的容器共用一个角色；运行时通过 STS session policy 再按用户缩小权限范围，确保用户之间数据隔离
+容器启动时假设这个角色，持有调用以下服务的权限：
+Bedrock 模型调用 · Bedrock Guardrails · Secrets Manager · Cognito · STS（用于自假设生成限制版凭证）· CloudWatch Logs / Metrics · X-Ray · ECR · S3
+Security Group（容器用）
+1
+所有用户容器共用一个 SG，规则一致
+控制容器的网络访问：出站只允许 HTTPS（443），入站只允许 VPC 内部 443。容器不能访问非 HTTPS 端口，不能被外部网络直接访问
+Amazon S3 Bucket
+1
+所有用户共用一个桶，按用户 ID 划分对象前缀来实现隔离，比多个桶更易管理
+桶名
+openclaw-user-files-{account}-{region}
+，三大用途：
+① 工作区持久化（
+.openclaw
+/ 同步）— 这是数据迁移的落地点② 用户文件存储（read/write_user_file 工具）
+③ 图片上传中转（Telegram/Slack 图片下载后存这里给 Bedrock）
+KMS 加密 + 版本控制 + 强制 SSL + 365 天生命周期
+注：AgentCore Runtime 本身还没创建，Phase 2 才创建。这一步只是为它准备好角色、Security Group 和存储桶。
+STS 权限隔离是怎么回事？
+这是 Refactor 策略中最关键的改造点之一。执行角色的权限很大（能访问所有用户的数据）。容器启动时，Contract Server 调用 AWS STS 生成一组限制版临时凭证，把权限缩小到只能访问当前用户的数据（S3 只能访问该用户的前缀、DynamoDB 只能查该用户的记录、Secrets Manager 只能读该用户的密钥）。然后把原始凭证删掉，AI 进程只能用这组限制版凭证。每 45 分钟自动刷新。这种 Per-User（按用户）权限隔离是迁移后架构的核心安全机制。
+✅OpenClawObservability — 监控基础
+监控是 Replatform 带来的另一项显著提升。迁移后，Amazon CloudWatch 提供了从日志到指标到告警的完整可观测性链路，运维团队可以通过统一的 Dashboard 掌握系统运行状态。
+资源
+数量
+设计说明
+功能 / 在本项目的作用
+Amazon SNS Topic
+1
+项目所有告警都发到同一个主题，订阅者统一管理
+告警通知目标，KMS 加密。所有 CloudWatch Alarm 触发后消息发到这里，需要手动订阅邮箱或 Slack/PagerDuty 等接收告警
+CloudWatch Log Group（Bedrock 调用日志）
+1
+Bedrock 调用日志是账号级配置，一个 Log Group 即可
+/aws/bedrock/invocation-logs
+。Bedrock 把每次模型调用的详情（用户 ID、Token 数、请求/响应摘要）写入这里，后续 Token Metrics Lambda 订阅这个日志做用量统计
+IAM Role（Bedrock 日志）
+1
+Bedrock 服务需要一个角色才能往 CloudWatch 写日志
+授权 Bedrock 写入上面的 Log Group
+Custom Resource Lambda
+1
+开启 Bedrock 调用日志是账号级 API 操作，CDK 不直接支持，需要 Custom Resource 调用 API
+部署时调用 Bedrock 的
+PutModelInvocationLoggingConfiguration
+API，把日志输出开关打开
+CloudWatch Dashboard
+1
+一个运维大盘展示所有关键指标
+OpenClaw-Operations-{region}
+。7 个图表：Bedrock 调用量/错误/限流/P99 延迟、AgentCore Runtime 调用量/错误/延迟、Router Lambda 调用量/错误/耗时
+CloudWatch Alarm
+4
+4 个核心运行指标的告警
+① Bedrock 错误数 > 5（连续 3 周期）
+② Bedrock P99 延迟 > 10 秒
+③ Bedrock 限流 > 1 次
+④ Router Lambda 错误 > 5 次
+任何一个触发都发 SNS 通知
+验证方法：到 AWS CloudFormation 控制台，应该看到 5 个以
+OpenClaw
+开头的 Stack（Vpc/Security/Guardrails/AgentCore/Observability），状态都是 CREATE_COMPLETE。
+相关链接
+➡️ 下一步行动：
+相关产品：
+Amazon Bedrock
+— 用于构建生成式人工智能应用程序和代理的端到端平台
+Amazon VPC
+— 隔离云网络
+Amazon CloudWatch
+— 可观测性工具
+Amazon CDK
+— 基础设施即代码框架
+AWS Lambda
+— 无需服务器即可运行代码
+系列文章：
+第一篇：为什么要把 OpenClaw 从单机搬到 AWS
+第二篇：环境准备与代码获取
+第四篇：Phase 2 & 3 — 部署 AgentCore Runtime 与业务层
+第五篇：配置消息渠道与端到端验证
+第六篇：清理资源与总结展望
+*前述特定亚马逊云科技生成式人工智能相关的服务目前在亚马逊云科技海外区域可用。亚马逊云科技中国区域相关云服务由西云数据和光环新网运营，具体信息以中国区域官网为准。
+本篇作者
+AWS 架构师中心：云端创新的引领者
+探索 AWS 架构师中心，获取经实战验证的最佳实践与架构指南，助您高效构建安全、可靠的云上应用
