@@ -2,7 +2,7 @@
 
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
-> 本章收录 **20 篇**实体，按深度递增排列。
+> 本章收录 **21 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 17 |
+| ⭐⭐ 工程师 | 需编程基础 | 18 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -2350,7 +2350,43 @@ EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维
 
 ---
 
-## Ch13.018 WANDR Benchmark — 评估 Research Agent 的 Wide-and-Deep 研究能力
+## Ch13.018 STAROps RUM Intelligent Inspection — Detecting Experience Degradation Early
+
+> 📊 Level ⭐⭐ | 3.5KB | `entities/starops-rum-intelligent-inspection.md`
+
+# STAROps RUM Intelligent Inspection
+
+STAROps is `Alibaba Cloud`'s full-scenario intelligent运维 (AIOps) platform built on large models and agent technology. Its **RUM (Real User Monitoring) Intelligent Inspection** capability addresses the "gray zone" between alert thresholds and visible failures — where individual metrics (LCP, INP, API p95, slow sessions) may not cross alerting lines individually, but collectively signal real experience degradation.
+
+## The Gray Zone Problem
+
+Traditional monitoring relies on deterministic alerts for clear failures (error rate spikes, complete unavailability) and dashboards for current state. But the most insidious problems live in between: conversion drops of a few percent, slightly slower LCP on mobile, a few more repeated clicks. Any single metric can be dismissed as noise — but when multiple signals converge on the same object (same page, same version, same device segment), the composite evidence demands attention.
+
+## Object-Based Inspection
+
+STAROps RUM Inspection flips the traditional metric-first approach: first identify the **object** (a page, business path, version, device class, region, or channel combination), then evaluate indicators against it. The inspection pipeline:
+
+1. **Hourly scans** — Detect objects beginning to deviate from baseline
+2. **Daily diagnostics** — Compile evidence chains for recurring degradation
+3. **Weekly reports** — Surface chronic issues (e.g., low-end device tail latency) for governance
+4. **Full RCA** — Complete root-cause analysis with timeline, impact scope, evidence chain, and remediation recommendations
+
+## Integration with STAROps Long-Running Tasks
+
+RUM Inspection uses STAROps' long-running task service to power alert-triggered auto-analysis and periodic report generation. The platform's agents autonomously execute inspection plans, correlate multi-signal degradation, and produce reports linking performance signals, user behavior (Replay, heatmaps, repeated clicks), crash data, and business metrics into actionable evidence chains.
+
+## Two Often-Missed Problem Types
+
+1. **Business Weakness Before Technical Failure** — Conversion drops 3% with no error rate spike. Inspection correlates checkout page load, submit button response, payment API p95, slow session version distribution, and repeated clicks into a single actionable finding.
+2. **Chronic Low-End Device Degradation** — Marginal but persistent LCP/INP regression on low-end Android devices. Never urgent enough for a night call, but continuously impacting a user segment. Periodic inspection surfaces these for prioritization.
+
+STAROps RUM Inspection is publicly available through the Alibaba Cloud STAROps console.
+
+→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/starops-rum-智能巡检实践把体验退化提前看清楚.md)
+
+---
+
+## Ch13.019 WANDR Benchmark — 评估 Research Agent 的 Wide-and-Deep 研究能力
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/perplexity-wandr-benchmark-research-agents-wide-deep-2026.md`
 
@@ -2397,7 +2433,7 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 
 ---
 
-## Ch13.019 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
+## Ch13.020 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
 
 > 📊 Level ⭐⭐⭐ | 22.2KB | `entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md`
 
@@ -2613,7 +2649,7 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 
 ---
 
-## Ch13.020 Discretizing Reward Models
+## Ch13.021 Discretizing Reward Models
 
 > 📊 Level ⭐⭐⭐⭐ | 6.0KB | `entities/abs-2606-21795.md`
 

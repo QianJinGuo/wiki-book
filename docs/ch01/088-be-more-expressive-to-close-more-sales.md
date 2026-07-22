@@ -87,8 +87,8 @@
 
 ## 相关实体
 
-- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/088-ai.html)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/248-rag.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/089-ai.html)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/1004-rag.html)
 - [Why Internally-Built AI Fails Fund Accounting Audits](ch01/132-why-internally-built-ai-fails-fund-accounting-audits.html)
 
 ---

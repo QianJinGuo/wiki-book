@@ -14,15 +14,15 @@ Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 
 ## 相关实体
 - [From Prompt To Harness Claude Official](../ch05/018-harness.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/589-anthropic-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/583-anthropic-claude-code.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/076-claude-code.html)
-- [Anthropic Claude Managed Agents Platform 2026](ch01/236-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/226-anthropic-claude-managed-agents.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/076-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/claude-opus-47.md)
 
-- [突发Anthropic拿下马斯克Colossus 1全部算力Claude要放开用了](ch01/933-anthropic.html)
-- [anthropic 最新播客：如何打造下一代 claude](ch01/933-anthropic.html)
+- [突发Anthropic拿下马斯克Colossus 1全部算力Claude要放开用了](ch01/944-anthropic.html)
+- [anthropic 最新播客：如何打造下一代 claude](ch01/944-anthropic.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析

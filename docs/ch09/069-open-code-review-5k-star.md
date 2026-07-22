@@ -72,7 +72,7 @@ OCR 的推出填补了 AI 代码评审工具链中的一个重要空白：此前
 
 - [Claude Code 设计原则与对照分析](../ch03/076-claude-code.html) — 同为 AI 编码工具，可以与 OCR 的架构设计做对比
 - **阿里开源生态** — OCR 是阿里开源体系中重要的 AI 开发者工具
-- [AI 编码效率分析](../ch05/101-ai-coding.html) — AI 辅助编程效果的量化评估方法论
+- [AI 编码效率分析](../ch05/103-ai-coding.html) — AI 辅助编程效果的量化评估方法论
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/阿里重磅开源open-code-review一周-5k-star为你的代码保驾护航.md)
 

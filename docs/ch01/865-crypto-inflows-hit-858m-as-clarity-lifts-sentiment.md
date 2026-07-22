@@ -17,15 +17,15 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/digital-commerce-ai-agent-scenarios-challenges.md)
 
-- [Ico Fines South Staffordshire 2022 Breach](ch01/1005-20.html)
+- [Ico Fines South Staffordshire 2022 Breach](ch01/886-20.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Interaction Models](../ch03/102-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/088-ai.html)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/089-ai.html)
 - [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/152-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 - [Afine Csp Html Injection Password Exfiltration Attack](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration-attack.md)
 - [Ai Native Dan Shipper Every Layered Thinking Walkwalk](../ch05/019-ai-native.html)
 - [Fastlane Create Winning Short Form Content In Seconds](../ch03/105-fastlane-create-winning-short-form-content-in-seconds.html)
-- [Mira Mpa Deep Principle Ai4S 40 Sota](../ch05/088-ai.html)
+- [Mira Mpa Deep Principle Ai4S 40 Sota](../ch05/089-ai.html)
 - [Localmaxxing](../ch03/108-localmaxxing.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析

@@ -28,7 +28,7 @@ AgentCore 的数据持久化文件系统在以下场景中尤为关键：
 - **知识库持续积累**：Agent 在运行中产生的知识片段持久化到 Session Storage 或 S3，供后续轮次使用
 - **审计与回放**：Agent 的完整执行历史持久化，支持事后审计和调试
 
-这些场景与 [AgentCore 运行时深度分析](ch04/534-amazon-bedrock-agentcore.html) 中覆盖的 Agent 生命周期管理直接衔接。而 [AgentCore 记忆哲学](ch04/534-amazon-bedrock-agentcore.html) 则从更底层的记忆系统角度讨论了数据持久性的设计理念。
+这些场景与 [AgentCore 运行时深度分析](ch04/535-amazon-bedrock-agentcore.html) 中覆盖的 Agent 生命周期管理直接衔接。而 [AgentCore 记忆哲学](ch04/535-amazon-bedrock-agentcore.html) 则从更底层的记忆系统角度讨论了数据持久性的设计理念。
 
 ## 性能测试
 
@@ -36,10 +36,10 @@ AgentCore 的数据持久化文件系统在以下场景中尤为关键：
 
 ## 与相关实体
 
-- [AWS Bedrock AgentCore](../ch11/253-aws-bedrock-agentcore.html) — AgentCore 整体架构
-- [突破上下文窗口壁垒](ch04/534-amazon-bedrock-agentcore.html) — AgentCore 上下文管理
+- [AWS Bedrock AgentCore](../ch11/255-aws-bedrock-agentcore.html) — AgentCore 整体架构
+- [突破上下文窗口壁垒](ch04/535-amazon-bedrock-agentcore.html) — AgentCore 上下文管理
 - [结构化记忆与元数据过滤](ch04/629-data-agent.html) — AgentCore 记忆系统
-- [Agent 记忆工程税](ch04/121-agent-memory.html) — 记忆系统的工程挑战
+- [Agent 记忆工程税](ch04/099-agent-memory.html) — 记忆系统的工程挑战
 
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-bedrock-agentcore-数据持久化文件系统session-storage-和-amazon-e.md)
 

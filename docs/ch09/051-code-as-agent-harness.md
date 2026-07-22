@@ -105,12 +105,12 @@ Code as Agent Harness 可以被视为 Software 2.0（以神经网络替代手工
 → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/code-as-agent-harness-survey-2026.md)
 
 ## 相关实体
-- [Design Patterns for AI Agents 2026](../ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
+- [Design Patterns for AI Agents 2026](../ch04/094-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 - [Agent Harness 架构](../ch05/039-agent-harness.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/132-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/682-karpathy-vibe-coding-agentic-engineering.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
-- [harness-engineering-systematic-explainer](../ch05/115-harness-engineering.html)
+- [harness-engineering-systematic-explainer](../ch05/116-harness-engineering.html)
 
 - [Claude Code 架构深度解析](../ch03/076-claude-code.html)
 - [Claude Code Prompt 提示词体系源码解析](ch09/060-claude-code-prompt.html)

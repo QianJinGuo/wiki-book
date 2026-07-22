@@ -91,8 +91,8 @@ Teams 模式下 Agent 间直接 `send_message`，主 Agent 退到监督位。这
 - [Codex Goal Six Hour Run](../ch09/058-codex-goal-six-hour-run.html)
 - [Agent Self Improvement Six Mechanisms](../ch03/046-agent.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
-- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/521-codex.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/115-harness-engineering.html)
+- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/513-codex.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/116-harness-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

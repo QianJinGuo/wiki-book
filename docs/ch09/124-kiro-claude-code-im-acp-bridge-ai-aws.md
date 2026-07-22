@@ -19,7 +19,7 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock、Claude Code、Amazon Be
 - [打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南](../ch03/076-claude-code.html)
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch03/046-agent.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/576-agentic-ai.html)
-- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](../ch05/088-ai.html)
+- [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](../ch05/089-ai.html)
 
 ## 深度分析
 ### 1. ACP 协议：CLI AI Agent 的标准化桥梁
