@@ -4,8 +4,8 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md`
 
-> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
-从微信文章 [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/redis之父下场给deepseek-v4单独造了一台推理引擎.md) 提取。
+> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
+从微信文章 [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/redis之父下场给deepseek-v4单独造了一台推理引擎.md) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ
@@ -19,9 +19,9 @@ source_url: https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ
 
 ## 相关实体
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/670-deepseek-v4.html)
-- [ds4c deepseek v4 antirez](ch01/511-ds4c-deepseek-v4-antirez.html)
+- [ds4c deepseek v4 antirez](ch01/510-ds4c-deepseek-v4-antirez.html)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/670-deepseek-v4.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1201-deepseek.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/393-deepseek.html)
 
 ## 深度分析
 ### 1. 项目定位：专有推理引擎的回归

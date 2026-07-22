@@ -99,7 +99,7 @@
 - [Agent 从演示到生产](ch05/116-harness-engineering.html)
 - [应用宝活动 Harness Engineering](ch05/116-harness-engineering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/从ai-coding到harness-engineering的端到端工程开发实践.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从ai-coding到harness-engineering的端到端工程开发实践.md)
 
 ---
 

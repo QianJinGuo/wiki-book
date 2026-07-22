@@ -7,14 +7,14 @@
 ## 核心要点
 - HuggingFace 博客文章，关于 continuous batching 技术
 - 技术深度：v=8, c=7
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/continuousasync.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/continuousasync.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [Development environments for your cloud agents](ch03/046-agent.html)
-- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/756-ai-infra.html)
-- [ml-intern — Hugging Face 自主 ML 工程代理](../ch04/506-ml-intern-huggingface-autonomous-ml-agent.html)
+- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/1204-ai-infra.html)
+- [ml-intern — Hugging Face 自主 ML 工程代理](../ch04/507-ml-intern-huggingface-autonomous-ml-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析

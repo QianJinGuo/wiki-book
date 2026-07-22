@@ -103,11 +103,11 @@ Voice cloning 可以用于：
 - [Openai Quietly Bought Voice Cloning Star](../ch01/686-openai-quietly-bought-voice-cloning-startup-weights-gg.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 - [Scammers Send Physical Phishing Letters To Steal Ledger Wall](https://github.com/QianJinGuo/wiki/blob/main/entities/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md)
-- [Npm Supply Chain Compromise Postmortem](../ch05/089-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/090-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md)
 
 ---
 

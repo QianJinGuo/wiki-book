@@ -71,13 +71,13 @@ DGM（Darwinian Agent Improvement）直接将进化搜索应用于 Agent Harness
 - `Agent Harness 生产实践`
 - `翁荔 Harness Engineering 自我改进`
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/翁荔再写万字长文ai自我改进先从harness开始.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/翁荔再写万字长文ai自我改进先从harness开始.md)
 
 ## 第 2 Source — PaperWeekly
 
 > From WeChat MP PaperWeekly, supplemental coverage of the same topic.
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/翁荔再写万字长文ai自我改进先从harness开始-2026-07-08.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/翁荔再写万字长文ai自我改进先从harness开始-2026-07-08.md)
 
 ---
 

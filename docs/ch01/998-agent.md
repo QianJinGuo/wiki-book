@@ -74,7 +74,7 @@ Salesforce 这次发布，表面上抛出的问题是：以后为什么还要登
 
 - • 有意思的地方不在"无头
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/如何为-agent-设计产品.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/如何为-agent-设计产品.md)
 
 ---
 

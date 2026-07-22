@@ -212,7 +212,7 @@ PDF 类型？
 3. **最小可行基础设施**：对于文本提取这类相对简单的任务，无需重量级托管服务
 4. **渐进式增强**：从 MCP 方案开始，随需求增长逐步添加缓存、批处理、向量搜索等能力
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-interactive-pdf-text-extraction-from-amazon-s3.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-interactive-pdf-text-extraction-from-amazon-s3.md)
 
 ---
 

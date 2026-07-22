@@ -8,7 +8,7 @@
 
 > 作者 CCC 在对比 Spec Kit、OpenSpec、Superpowers 三个框架后，选择各自取其精华，自建了一套更适合中大型团队棕地项目的三层 Harness 方案。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spec-kit-openspec-superpowers-hybrid-harness.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/spec-kit-openspec-superpowers-hybrid-harness.md)
 
 ## 三个框架的取舍
 
@@ -41,8 +41,8 @@
 ## 关联
 
 - [Matt Pocock Skills vs Superpowers](../ch03/070-skills.html) — 同一路线对比的另一视角
-- [Superpowers 三器合一](ch05/103-ai-coding.html) — Superpowers 在 Comet+OpenSpec 流水线中的角色
-- [Agent vs Workflow 控制权连续谱](../ch04/641-agent-vs-workflow.html) — 架构选择的底层框架
+- [Superpowers 三器合一](ch05/104-ai-coding.html) — Superpowers 在 Comet+OpenSpec 流水线中的角色
+- [Agent vs Workflow 控制权连续谱](../ch04/642-agent-vs-workflow.html) — 架构选择的底层框架
 
 ---
 

@@ -6,7 +6,7 @@
 
 # Disgruntled researcher releases two more Microsoft zero-days
 
-> -> [13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md)
+> -> [13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md)
 
 ## 摘要
 
@@ -121,9 +121,9 @@ Nightmare-Eclipse 事件揭示了安全研究激励结构的深层问题：
 
 - [同事件 TheRegister 主报道](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled-theregister.md)
 - [研究者背景与历史披露](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
-- [Cisco SD-WAN CVE 类似案例](../ch01/886-20.html)
-- [VSCode GitHub Token 窃取事件](../ch01/790-github.html)
-- [金融行业 GenAI 合规](../ch05/089-ai.html)
+- [Cisco SD-WAN CVE 类似案例](../ch01/885-20.html)
+- [VSCode GitHub Token 窃取事件](../ch01/899-github.html)
+- [金融行业 GenAI 合规](../ch05/090-ai.html)
 - [Exaforce Agentic SOC 平台](../ch04/023-exaforce-agentic-soc-platform-and-mdr.html)
 
 ---

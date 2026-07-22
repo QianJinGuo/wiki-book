@@ -38,11 +38,11 @@ Doocs 微信号整理：https://mp.weixin.qq.com/s/Uirhm4KubbKmhF0CQGteVQ
 ## 相关实体
 - [Pi Openclaw Coding Harness](../ch11/227-openclaw.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](../ch05/050-openspec.html)
-- [Ai Era Git Version Control Agentic Coding Practices](../ch04/235-agentic.html)
+- [Ai Era Git Version Control Agentic Coding Practices](../ch04/616-agentic.html)
 - [Alphaevolve Deepmind Discovery Agent](../ch03/046-agent.html)
 - [Ai Coding Guide Tmall Deep Dive](ch09/017-ai-coding-guide-tmall-deep-dive.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hackernews-ai-coding-why-python-20260513.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hackernews-ai-coding-why-python-20260513.md)
 
 ## 深度分析
 

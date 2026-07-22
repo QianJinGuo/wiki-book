@@ -45,7 +45,7 @@ After we launched the [Figma agent ### The Figma design agent is here Starting t
 
 5. **优先投资双向工作流**：设计→代码的单向生成已经成熟，但设计↔代码的双向同步才是真正的生产力倍增器。评估工具链时，优先选择支持 Make/Preview → Canvas → Code 完整循环的方案。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/4-ways-were-using-our-mcp-server-at-figma.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/4-ways-were-using-our-mcp-server-at-figma.md)
 
 ---
 

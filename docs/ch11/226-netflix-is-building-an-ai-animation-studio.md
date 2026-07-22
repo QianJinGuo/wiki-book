@@ -14,7 +14,7 @@
 - [Netflix Switchboard Lightbulb Model Routing](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/netflix-is-building-an-ai-animation-studio.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/netflix-is-building-an-ai-animation-studio.md)
 
 ## 深度分析
 Netflix正在内部悄悄建设一个名为INKubator（有时简称INK）的生成式AI动画工作室，这家流媒体巨头的战略意图正在从"内容分发平台"向"内容生产基础设施"延伸。INGkubator被定位为"next-generation, creative-led, GenAI-native animation studio"，目标是"develop feature-quality content"——这意味着AI生成不再局限于辅助性的特效或预览，而是要成为主流程式化内容生产的核心引擎。

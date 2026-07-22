@@ -70,7 +70,7 @@ Cloud Use 定义了 Agent 用云的成熟度路径：
 - **可执行的 Rubric 是验收关键**：并非宽松的描述性标准，而是每个结论可追溯到具体数据（如 BI 结论有数字，数字回到 SQL 查询结果）
 - **6 道工程门槛是 Cloud Use 落地的最小可行工程栈**——凭证管理、踩坑知识库、角色边界契约、运行时 Session、事件驱动的结果回传、可执行验收标准，缺一不可
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cloud-use-agent-cloud-native-execution-alibaba-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cloud-use-agent-cloud-native-execution-alibaba-2026.md)
 
 ---
 

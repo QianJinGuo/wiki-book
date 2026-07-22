@@ -6,7 +6,7 @@
 
 # Extending MCP support for Amazon Bedrock AgentCore Gateway
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
 
 ## 摘要
 
@@ -87,11 +87,11 @@ Elicitation 需要同时启用流式传输和会话管理。Gateway 尊重能力
 
 ## 相关实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/292-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Bedrock Agentcore Secrets Manager Identity](ch11/050-bedrock-agentcore.html)
-- [Shared Infrastructure Isolated Tenants Pool Model Multi Tenancy With Amazon Bedrock Agentcore](../ch04/535-amazon-bedrock-agentcore.html)
+- [Shared Infrastructure Isolated Tenants Pool Model Multi Tenancy With Amazon Bedrock Agentcore](../ch04/537-amazon-bedrock-agentcore.html)
 - [Secure Ai Agents With Policy And Lambda Interceptors In Amaz](ch11/274-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.html)
-- [New In Amazon Bedrock Agentcore Build Agents With Broader Kn](../ch04/535-amazon-bedrock-agentcore.html)
+- [New In Amazon Bedrock Agentcore Build Agents With Broader Kn](../ch04/537-amazon-bedrock-agentcore.html)
 - [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](ch11/160-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.html)
 
 ---

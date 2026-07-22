@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/auto-improving-agent-platform-ashpreetbedi.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/auto-improving-agent-platform-ashpreetbedi-shensi.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/auto-improving-agent-platform-ashpreetbedi-shensi.md)
 
 # Auto-Improving Agent Platform (Ashpreet Bedi)
 **作者**：Ashpreet Bedi（前 Airbnb/Facebook，Agno 创始人）
@@ -83,10 +83,10 @@ Ashpreet 把五条工作流的提示词全部写成 .md 文件放在 docs/ 目�
 - `Bedrock多Agent` — 企业级Agent平台的架构对比
 ## 相关实体
 - [Servicenow Ui Is Dead Agent](../ch03/046-agent.html)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](../ch04/305-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](../ch04/585-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [Agent框架Owl原理详解](../ch03/046-agent.html)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](../ch04/305-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [Gbrain Garry Tan Yanfa Zhili](ch01/641-garry-tan.html)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](../ch04/585-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [Gbrain Garry Tan Yanfa Zhili](ch01/640-garry-tan.html)
 
 ---
 

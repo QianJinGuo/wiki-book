@@ -8,10 +8,10 @@
 
 ## 相关实体
 - [microsoft is quietly shopping for an openai replacement](ch01/038-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
-- [vietnam to develop domestic cloud](ch01/1076-opd.html)
-- [akamai acquires israeli ai browser security startup layerx f](../ch05/089-ai.html)
+- [vietnam to develop domestic cloud](ch01/1078-opd.html)
+- [akamai acquires israeli ai browser security startup layerx f](../ch05/090-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropics-zero-trust-for-ai-agents-sets-the-right-test-the.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropics-zero-trust-for-ai-agents-sets-the-right-test-the.md)
 
 ## 核心要点
 

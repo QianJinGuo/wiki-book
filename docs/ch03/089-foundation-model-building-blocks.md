@@ -4,10 +4,10 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/foundation-model-building-blocks.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/foundation-model-building-blocks.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/foundation-model-building-blocks.md)
 
 ## Summary
-*(See [raw article](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/foundation-model-building-blocks.md))*
+*(See [raw article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/foundation-model-building-blocks.md))*
 
 ## 深度分析
 **三层扩展定律对基础设施的收敛效应。** 文章最核心的洞察是将扩展从单一曲线（pre-training only）重新定义为 NVIDIA 提出的三层扩展定律：pre-training compute scaling、post-training（SFT + RL）、以及 test-time compute（long-thinking、search/verification）。三者虽然 workload profile 不同，但对基础设施的需求却收敛到了同一组 building blocks：加速算力 + 高带宽低延迟网络 + 分布式存储。 这意味着 pre-training 集群和 inference 集群的设计逻辑正在融合——不再能单独优化 pre-training 效率而忽视 inference 或 post-training 的需求。
@@ -28,7 +28,7 @@
 
 ## 相关实体
 - [Building Blocks for Foundation Model Training and Inference on AWS](../ch11/120-building-blocks-for-foundation-model-training-and-inference.html)
-- [Genesis AI GENE-26.5 具身基础模型](../ch05/089-ai.html)
+- [Genesis AI GENE-26.5 具身基础模型](../ch05/090-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

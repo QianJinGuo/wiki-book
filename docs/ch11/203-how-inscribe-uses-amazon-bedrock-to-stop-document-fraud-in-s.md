@@ -53,13 +53,13 @@ Inscribe 的 AWS 基础设施设计体现了生产级 Agentic AI 的几个关键
 
 ## 相关实体
 
-- [Amazon Bedrock AgentCore](../ch04/493-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [Amazon Bedrock AgentCore](../ch04/494-amazon-bedrock-agentcore-harness-ga-api-agent.html)
 - [Bedrock Claude Prompt Cache](ch11/058-amazon-bedrock-claude-prompt-cache.html)
 - [Bedrock Cross-Region Inference](ch11/159-amazon-bedrock.html)
-- [Agentic AI 系统架构](../ch05/086-harness-skill.html)
+- [Agentic AI 系统架构](../ch05/087-harness-skill.html)
 - [Bedrock Serverless Inference](ch11/159-amazon-bedrock.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/how-inscribe-uses-amazon-bedrock-to-stop-document-fraud.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-inscribe-uses-amazon-bedrock-to-stop-document-fraud.md)
 
 ---
 

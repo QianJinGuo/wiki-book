@@ -11,7 +11,7 @@
 - AI 作为"平均智能"（Average Intelligence）：使个人能轻松达到平均水平的设计师、营销人员、产品经理水平，配合自身专业技能足以将想法落地
 - 当构建速度足够快、成本足够低时，**"尝试的代价低于争论的代价"**，因此层级审批和协调机制变得不再必要
 - HI-C 结构能形成正向循环：个人独立完成项目 → 减少协调需求 → 减少管理岗位 → 薪酬预算流向真正产生影响力的人
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/p-ic-work-is-the-new-career-flex.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/p-ic-work-is-the-new-career-flex.md)
 
 ## 深度分析
 **1. HI-C 角色是 AI 原生组织的组织结构创新，而非简单的高级 IC 回归**

@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
 
 ## 摘要
 Title: A rigged game: ScarCruft compromises gaming platform in a supply-chain attack
@@ -18,16 +18,16 @@ ESET researchers uncovered a multiplatform supply-chain attack by North Korea-al
 - 评分：value=7, confidence=9, product=63
 
 ## 链接
-- [原文](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
+- [原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
 
 ## 相关实体
-- [Semis Memo: Supply Chain Inheritance](ch01/622-semis-memo-supply-chain-inheritance.html)
+- [Semis Memo: Supply Chain Inheritance](ch01/621-semis-memo-supply-chain-inheritance.html)
 - [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](../ch12/035-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/089-ai.html)
-- [Semis Memo: Supply Chain Inheritance](../ch05/089-ai.html)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/090-ai.html)
+- [Semis Memo: Supply Chain Inheritance](../ch05/090-ai.html)
 - [semgrep intercom php supply chain](../ch12/116-semgrep-intercom-php-supply-chain.html)
 
-- [xz-utils backdoor 2 years on — maintainer trust hijack patte](../ch05/089-ai.html)
+- [xz-utils backdoor 2 years on — maintainer trust hijack patte](../ch05/090-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析

@@ -38,8 +38,8 @@
 ## 与其他实体的关系
 
 - → [Harness Engineering](ch05/116-harness-engineering.html) — 本文是该方法论在维护性工程场景的实证
-- → [Agent Skill 规范、构建与设计模式](../ch04/265-agent-skill.html) — jdk-upgrade Skill 的设计与渐进式披露机制
-- → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/vibe-coding-to-harness-engineering-jdk-upgrade-xiaomi.md)
+- → [Agent Skill 规范、构建与设计模式](../ch04/610-agent-skill.html) — jdk-upgrade Skill 的设计与渐进式披露机制
+- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vibe-coding-to-harness-engineering-jdk-upgrade-xiaomi.md)
 
 ---
 

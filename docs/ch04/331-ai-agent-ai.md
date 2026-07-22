@@ -8,7 +8,7 @@
 
 > **Background**：本文基于机器之心 PRO 会员通讯专题整理。2026 年 6 月美团 GN06 团队发布 AI 原生浏览器 Tabbit 1.0，以此为契机梳理当前 AI 浏览器的三条技术路线与架构特征。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/当-ai-浏览器走向原生ai-侧栏会被吞并还是与之共存.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/当-ai-浏览器走向原生ai-侧栏会被吞并还是与之共存.md)
 
 当前 AI 浏览器行业呈现三条并存的技术路线，它们在架构融合度、模型绑定策略和自动化执行深度三个维度上呈现不同取向。
 
@@ -78,7 +78,7 @@ AI 原生浏览器是 [Harness Engineering](https://github.com/QianJinGuo/wiki/b
 
 - [Agent Harness 招聘场景](../ch05/039-agent-harness.html)
 - [Agent Harness 生产化](../ch05/039-agent-harness.html)
-- [Perplexity 自改进记忆](../ch05/089-ai.html)
+- [Perplexity 自改进记忆](../ch05/090-ai.html)
 - [AI Native 企业转型](../ch05/019-ai-native.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent 可观测性](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-observability.md)

@@ -51,13 +51,13 @@
 5. **上下文窗口管理是工程难点**：实际部署时需要像作者一样，用 token 计算工具动态裁剪输入，而非简单截断。
 6. **开源工具链可行性**：整个链路（Docker + Ollama + n8n + Qdrant + Ghidra）均可免费搭建，对于资源有限的独立安全研究员具有较高的参考价值。
 ## 相关实体
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/089-ai.html)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/090-ai.html)
 - [Amazon Quick Research Agentic Multi Source Citation](../ch11/216-amazon-quick.html)
-- [Building Web Search Enabled Agents With Strands And Exa](../ch04/442-building-web-search-enabled-agents-with-strands-and-exa.html)
+- [Building Web Search Enabled Agents With Strands And Exa](../ch04/443-building-web-search-enabled-agents-with-strands-and-exa.html)
 - [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](../ch11/285-amazon-nova.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/639-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/638-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ghostbyt3-github-io-blog-nday-research-ai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ghostbyt3-github-io-blog-nday-research-ai.md)
 
 ---
 

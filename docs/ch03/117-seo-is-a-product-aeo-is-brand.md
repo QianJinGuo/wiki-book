@@ -28,7 +28,7 @@
 1. 明确区分 SEO 和 AEO 的目标和指标
 2. 不要用 SEO 指标衡量 AEO 成功
 3. 在内容策略中同时包含两者
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/seo-product-aeo-brand-productledseo.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/seo-product-aeo-brand-productledseo.md)
 
 ## 深度分析
 **SEO 与 AEO 的战略解耦：从流量思维到存在思维**：

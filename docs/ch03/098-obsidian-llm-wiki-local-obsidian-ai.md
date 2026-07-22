@@ -55,7 +55,7 @@ AI 第一版生成的概念页可能太泛（"这是一篇关于效率的文章"
 
 本文实践了 Karpathy LLM Wiki 的核心理念，具体实现为 Alexander Kytmanov 的 obsidian-llm-wiki-local 开源项目（60 次提交，活跃维护），100% 本地运行、不依赖任何云端 API。
 
-→ [Karpathy LLM Wiki 概念](../ch01/880-llm.html)
+→ [Karpathy LLM Wiki 概念](../ch01/603-llm.html)
 → [RAG vs LLM Wiki 对比](../ch01/041-rag-vs-llm-wiki.html)
 
 ## 技术栈
@@ -64,7 +64,7 @@ AI 第一版生成的概念页可能太泛（"这是一篇关于效率的文章"
 - **推荐模型**: qwen2.5:7b（中文效果好、门槛低）或 deepseek-r1:8b（推理能力强）
 - **依赖**: Python 3.10+
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/obsidian-llm-wiki-local-kytmanov-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/obsidian-llm-wiki-local-kytmanov-2026.md)
 
 ## 深度分析
 

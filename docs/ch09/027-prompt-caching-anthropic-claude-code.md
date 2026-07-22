@@ -65,7 +65,7 @@ Context 填满后需要压缩另起调用，但另起调用用了不同的 syste
 - 别另起炉灶做压缩
 - 别瞎切账号
 **系统设计哲学：先确定约束，再围绕约束做设计。不是「做完了顺便加个缓存」，而是从第一天起就围绕缓存来设计。**
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-prompt-caching-claude-code-agihunt.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-prompt-caching-claude-code-agihunt.md)
 
 ## 深度分析
 ### 从优化手段到架构约束的范式转移

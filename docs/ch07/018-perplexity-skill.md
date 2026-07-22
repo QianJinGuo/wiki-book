@@ -133,29 +133,29 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 
 ## 关联阅读
 - 原始文章：https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity
-- [Perplexity Internal Skill Design Guide Xiaojianke](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/perplexity-internal-skill-design-guide-xiaojianke.md) — 原始文章存档
+- [Perplexity Internal Skill Design Guide Xiaojianke](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perplexity-internal-skill-design-guide-xiaojianke.md) — 原始文章存档
 - `Agent Skill Writing Guide` — 低配版 Skill 写作指南（质量较低，仅供参考）
 - `Agent Skill Writing Evaluation` — Skill 评测相关
 
 ## 相关实体
 - [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/269-lbs-intentbench.html)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/402-aws-sagemaker-ai-agent.html)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/267-skill.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/403-aws-sagemaker-ai-agent.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/266-skill.html)
 - [SkillX — 层次化技能知识库](ch07/052-skillx.html)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/251-anthropic-agent.html)
-- [AI Skill 测评指标体系](../ch01/456-ai-skill.html)
-- [SkillClaw](../ch04/451-skillclaw-nacos-agent-skill-registry.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/100-anthropic-agent.html)
+- [AI Skill 测评指标体系](../ch01/455-ai-skill.html)
+- [SkillClaw](../ch04/452-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
 - [Skills赏析：使用skills-refiner提升skill质量](../ch03/070-skills.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/396-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/397-agent-skills.html)
 
 - [Hermes Agent](../ch03/092-hermes-agent.html)
 - [Qoder Skills 完全指南](ch07/034-qoder-skills.html)
 - [AgentEval：YAML驱动的Agent评测框架](../ch03/046-agent.html)
-- [你写的 Skill，及格了吗？](../ch04/267-skill.html)
+- [你写的 Skill，及格了吗？](../ch04/266-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 
 - [Agent 原理、架构与工程实践](../ch03/046-agent.html)
 

@@ -11,13 +11,13 @@
 - 来源：AWS Machine Learning Blog
 
 ## 相关实体
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/074-building-ai-agents-for-business-support-using-amazon-bedrock.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/535-amazon-bedrock-agentcore.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/073-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/537-amazon-bedrock-agentcore.html)
 - [Build Ai Powered Dashboard Automation Agents With Nlp On Amazon Bedrock Agentcor](../ch11/159-amazon-bedrock.html)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/159-amazon-bedrock.html)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/535-amazon-bedrock-agentcore.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/537-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
 
 ---
 
@@ -137,7 +137,7 @@ OPLOG 强调的"仅为实际执行付费"模式，结合 Serverless 自动扩缩
 
 ## 关联阅读
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
 
 ## 相关实体
 - `Bedrock多Agent协作` — AWS上的多Agent架构实践

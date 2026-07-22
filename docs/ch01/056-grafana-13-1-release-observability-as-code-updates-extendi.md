@@ -63,7 +63,7 @@ _Generally available in in all editions of Grafana_
 
 Git Sync can now [sign commits with GPG, SSH, or S/MIME keys](https://grafana.com/whats-new/2026-06-23-git-sync--verified-commits/?pg=grafana-13-1-rele
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/blog-grafana-13-1-release-all-the-latest-features.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blog-grafana-13-1-release-all-the-latest-features.md)
 
 ---
 

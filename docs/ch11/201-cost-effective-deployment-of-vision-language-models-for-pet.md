@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
 
 ## 核心要点
 - Tomofun（Furbo 智能宠物相机）将 VLM 推理从 GPU 实例迁移到 AWS Inferentia2
@@ -48,17 +48,17 @@ Furbo 的系统架构采用双层设计：
 3. **Auto Scaling 应基于实际压测数据**：每个实例类型的吞吐量上限需要通过压测确定，而非理论计算。盲目增加实例数量而不控制并发，可能导致排队延迟恶化。
 4. **组件级编译提供升级灵活性**：Tomofun 的方案允许单独更新某个 BLIP 组件。在实际项目中，这意味着一旦有新的预训练模型发布，可以只编译变更的组件，降低升级风险。
 5. **考虑 DLC（Deep Learning Containers）简化依赖管理**：文章提到 Tomofun 计划采用 AWS DLC，这可减少自定义环境配置的维护负担，适合希望减少 MLOps 复杂度的团队。
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
 
 ## 相关实体
 - [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](ch11/285-amazon-nova.html)
-- [Reinforcing Recursive Language Models | alphaXiv](../ch01/844-reinforcing-recursive-language-models-alphaxiv.html)
+- [Reinforcing Recursive Language Models | alphaXiv](../ch01/843-reinforcing-recursive-language-models-alphaxiv.html)
 - [Language Models and Meaning](../ch01/436-language-models-and-meaning.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aws-sun-finance-ai-id-extraction-fraud-detection.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-sun-finance-ai-id-extraction-fraud-detection.md)
 
 - [Language Models and Meaning](../ch01/436-language-models-and-meaning.html)
-- [llava-onevision-2：全帧率视频理解](../ch01/788-vlm.html)
+- [llava-onevision-2：全帧率视频理解](../ch01/787-vlm.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

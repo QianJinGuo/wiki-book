@@ -166,9 +166,9 @@ HTTP/1.1 的 6 个并发连接限制是 SSE 在高并发场景的主要瓶颈。
 
 - [FastAPI SSE LLM 流式传输实战](../ch11/204-fastapi.html) — 同一主题的补充实践案例
 - [FastAPI 认证限流零停机部署](../ch11/204-fastapi.html) — FastAPI 生产部署的最佳实践
-- [Python 日志方案对比](../ch04/585-python.html) — 异步应用的可观测性建设
+- [Python 日志方案对比](../ch04/586-python.html) — 异步应用的可观测性建设
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/fastapi-sse-llm-streaming-vs-websocket-5e4a458abf18.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi-sse-llm-streaming-vs-websocket-5e4a458abf18.md)
 
 ---
 

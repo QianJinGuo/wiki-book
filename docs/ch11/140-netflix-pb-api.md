@@ -6,7 +6,7 @@
 
 # Netflix 高吞吐图抽象层：PB 级图数据的统一 API 与实时遍历
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/high-throughput-graph-abstraction-at-netflix-part-i.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/high-throughput-graph-abstraction-at-netflix-part-i.md)
 
 Netflix 工程团队在 [Netflix Tech Blog](https://netflixtechblog.com/high-throughput-graph-abstraction-at-netflix-part-i-e88063e6f6d5) 发表了生产级图抽象层的深度设计文章。系统处理接近 10M ops/sec 的图操作，覆盖 650TB 图数据集，为三个核心业务场景提供毫秒级遍历能力。
 
@@ -83,7 +83,7 @@ Netflix 的 10M ops/sec + 毫秒级延迟 + 650TB 数据规模是特定业务需
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/high-throughput-graph-abstraction-at-netflix-part-i.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/high-throughput-graph-abstraction-at-netflix-part-i.md)
 
 ---
 

@@ -7,7 +7,7 @@
 # browser-use v0.13 Browser Harness：薄抽象层设计哲学
 
 > **来源**：数据STUDIO（云朵君）。browser-use v0.13.2 架构拆解——上万行 DOM 处理代码替换为约 600 行 CDP 直连的 Browser Harness，LLM 本来就懂 CDP 协议，厚封装反而阻碍其能力。
-> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/browser-use-v13-harness-thin-abstraction-数据STUDIO.md)
+> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/browser-use-v13-harness-thin-abstraction-数据STUDIO.md)
 
 ## 核心洞察：薄抽象胜过厚封装
 
@@ -57,7 +57,7 @@ ChatBrowserUse (bu-ultra) 78.0% > OSS+BU Hybrid 63.3% > Claude Opus 4.6 62.0% > 
 
 - 补充 [Browser Harness](ch05/131-browser-use-v0-13-browser-harness.html)：该实体覆盖 Browser Harness 早期版本概念（来自 GitHub 仓库），本文聚焦 v0.13.2 最新架构变化和设计哲学。
 - 关联 [Browser Use Runtime Harness](ch05/018-harness.html)：互补视角。
-- 关联 [Browser Internals Chromium Blink V8 Architecture Guide Jiagoux 2026](../ch01/886-20.html)：CDP 协议底层背景。
+- 关联 [Browser Internals Chromium Blink V8 Architecture Guide Jiagoux 2026](../ch01/885-20.html)：CDP 协议底层背景。
 
 ---
 

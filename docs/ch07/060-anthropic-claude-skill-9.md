@@ -34,10 +34,10 @@ Datawhale 编译自 Anthropic 官方博客。Anthropic 内部把 Claude Code Ski
 
 ## 与现有知识库的关联
 
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/251-anthropic-agent.html) — 互补：14 设计模式讲 **怎么写**（结构/格式），9 分类法讲 **做什么**（任务类型）
-- [Skill 设计模式](../ch04/267-skill.html) — 5 种核心结构模式（线性、Tool Wrapper、Generator 等），补充了 9 类分类中的生成/验证/运维类如何组织
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/396-agent-skills.html) — Google 5 Agent Skill 设计模式 vs Anthropic 视角
-- [Perplexity 内部 Skill 设计指南](../ch04/267-skill.html) — 另一家的 Skill 工程方法论对比
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/100-anthropic-agent.html) — 互补：14 设计模式讲 **怎么写**（结构/格式），9 分类法讲 **做什么**（任务类型）
+- [Skill 设计模式](../ch04/266-skill.html) — 5 种核心结构模式（线性、Tool Wrapper、Generator 等），补充了 9 类分类中的生成/验证/运维类如何组织
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/397-agent-skills.html) — Google 5 Agent Skill 设计模式 vs Anthropic 视角
+- [Perplexity 内部 Skill 设计指南](../ch04/266-skill.html) — 另一家的 Skill 工程方法论对比
 - [Hermes Agent](../ch03/092-hermes-agent.html) — Hermes 的 Skill 系统实现参考
 
 ## 深度分析
@@ -69,7 +69,7 @@ Google 的 5 Agent Skill 设计模式（Tool Wrapper/Generator/Reviewer/Inversio
 5. **记忆层是 Skill 的高级形态**：从纯指令 → 记忆（standups.log/SQLite） → 脚本（helper functions） → hooks（/careful、/freeze）——路径清晰可循
 
 ## 原始存档
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic-claude-skill-9-categories-datawhale-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-skill-9-categories-datawhale-2026.md)
 
 ---
 

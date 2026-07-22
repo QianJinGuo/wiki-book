@@ -8,7 +8,7 @@
 
 CrewAI 创始人提出的 Agent 安全建设顺序论：企业普遍先建安全层（IAM/授权/监控），再补 Harness（记忆/工具/状态管理），顺序反了。正确顺序是 Harness → Governance → Identity & Auth。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/youre-building-agent-security-in-the-wrong-order.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/youre-building-agent-security-in-the-wrong-order.md)
 
 ## 摘要
 
@@ -64,11 +64,11 @@ CrewAI 的 Flows 架构通过确定性路由、可观测执行和升级路径来
 
 ### 相关实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/230-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/235-agentic.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/292-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/616-agentic.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/116-harness-engineering.html)
-- [Tencentdb Agent Memory Context Offloading](ch04/099-agent-memory.html)
+- [Tencentdb Agent Memory Context Offloading](ch04/121-agent-memory.html)
 - [how developers can build agentic agreement workflows on docu](ch04/297-how-developers-can-build-agentic-agreement-workflows-on-docu.html)
 
 ---

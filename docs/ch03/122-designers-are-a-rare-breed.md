@@ -4,14 +4,14 @@
 
 > 📊 Level ⭐⭐ | 4.4KB | `entities/designers-are-a-rare-breed.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/designers-are-a-rare-breed.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/designers-are-a-rare-breed.md)
 
 ## 核心要点
 - 设计师是稀有品种——创意产业中专业设计人才的稀缺性
 - 设计思维与工程思维的结合日益重要
 - AI 工具辅助设计正在改变创意工作流程
 - 设计师的「稀有性」来自于难以被自动化的直觉和审美判断
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/designers-are-a-rare-breed.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/designers-are-a-rare-breed.md)
 
 ## 深度分析
 ### 设计师稀缺性的数据支撑
@@ -37,9 +37,9 @@ YouTube 上有一类视频专门做这类测试：给新手顶级专业设备，
 对新工具的正确反应是好奇心和意愿——愿意以初学者心态学习，持续进化。这是每个伟大的工匠一直在做的事：随着新资源的出现，找到新的方式来做最好的工作。击败了这么多困难走到这里，现在可以再击败一次。工具会变，但设计的底层能力（鉴赏力、执行力、对用户需求的理解）不会过时。
 > ai agent platforms topic map（已删除）
 
-- [柚漫剧 AI全流程提效拆解](../ch05/089-ai.html)
-- [Agent Skill 设计模式](../ch04/396-agent-skills.html)
-- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](../ch01/886-20.html)
+- [柚漫剧 AI全流程提效拆解](../ch05/090-ai.html)
+- [Agent Skill 设计模式](../ch04/397-agent-skills.html)
+- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](../ch01/885-20.html)
 
 ---
 
