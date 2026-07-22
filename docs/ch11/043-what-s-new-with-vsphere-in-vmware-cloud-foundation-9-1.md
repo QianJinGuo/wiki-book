@@ -6,7 +6,7 @@
 
 # vSphere in VCF 9.1 新特性解析
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/whats-new-with-vsphere-9-1.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/whats-new-with-vsphere-9-1.md)
 
 ## 核心要点
 
@@ -199,12 +199,12 @@ vMotion 加密一直是 CPU 开销的大户——即便使用 AES-NI，8 个并�
 
 ## 相关实体
 - [Cloud Agent Infrastructure Creaoai State Code Credential Isolation 20260606](../ch03/046-agent.html)
-- [Llm Raiders How To Repel](../ch01/880-llm.html)
+- [Llm Raiders How To Repel](../ch01/603-llm.html)
 - [Amazon Bedrock Api Security Guide](../ch12/034-amazon-bedrock-api.html)
 - [Aderant Transforms Cloud Operations With Amazon Quick](ch11/196-aderant-transforms-cloud-operations-with-amazon-quick.html)
-- [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](../ch05/089-ai.html)
+- [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](../ch05/090-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/whats-new-with-vsphere-9-1.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/whats-new-with-vsphere-9-1.md)
 
 ---
 

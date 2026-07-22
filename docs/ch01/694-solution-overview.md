@@ -40,14 +40,14 @@ The solution uses Amazon Quick Flows as the orchestration layer, with a connecti
 
 ## 相关实体
 - [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/159-amazon-bedrock.html)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/089-ai.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/090-ai.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/159-amazon-bedrock.html)
-- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch01/880-llm.html)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/535-amazon-bedrock-agentcore.html)
+- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch01/603-llm.html)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/537-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 
-- [Gemini 3 5 Frontier Intelligence With Action](ch01/483-gemini-3-5-frontier-intelligence-with-action.html)
+- [Gemini 3 5 Frontier Intelligence With Action](ch01/482-gemini-3-5-frontier-intelligence-with-action.html)
 ## 相关主题
 
 ---

@@ -6,7 +6,7 @@
 
 # The Oracle and the Firm
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/calv-oracle-and-the-firm.md)
+> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/calv-oracle-and-the-firm.md)
 
 ## 核心要点
 
@@ -45,10 +45,10 @@ The approach Codex takes i
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 calv.info 视角
-- 引用源：[Calv Oracle And The Firm](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/calv-oracle-and-the-firm.md)
+- 引用源：[Calv Oracle And The Firm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/calv-oracle-and-the-firm.md)
 ## 相关实体
 - [from doer to director: the ai mindset shift](ch01/033-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](ch01/132-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [why internally-built ai fails fund accounting audits](ch01/792-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [back up and restore your amazon eks cluster resources using](../ch11/012-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 ---

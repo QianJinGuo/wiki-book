@@ -43,10 +43,10 @@ Migration Assistant 部署在 Amazon EKS 上，通过 Argo Workflows 编排迁�
 
 - [Kiro CLI + OpenSearch MCP](https://github.com/QianJinGuo/wiki/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
 - [elasticpp Elasticsearch 性能优化](https://github.com/QianJinGuo/wiki/blob/main/entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
-- [ES Agent 记忆层](../ch04/099-agent-memory.html)
-- [Amazon Bedrock AgentCore](../ch04/493-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [ES Agent 记忆层](../ch04/121-agent-memory.html)
+- [Amazon Bedrock AgentCore](../ch04/494-amazon-bedrock-agentcore-harness-ga-api-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/elasticsearch-migration-amazon-opensearch-service-1.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/elasticsearch-migration-amazon-opensearch-service-1.md)
 
 ---
 

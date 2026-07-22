@@ -6,7 +6,7 @@
 
 # 如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/如何轻量化的在亚马逊云科技中国区安全使用-transfer-family-sftp.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/如何轻量化的在亚马逊云科技中国区安全使用-transfer-family-sftp.md)
 
 # 如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP
 

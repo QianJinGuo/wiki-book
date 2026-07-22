@@ -36,7 +36,7 @@ The framework is especially effective for autoregressive decoding where M=1 GEMV
 
 AgentCompile demonstrates a principled separation between LLM advisory capabilities and compiler verification. Rather than asking the LLM to write CUDA directly — which risks index errors, synchronization bugs, and memory violations — the system constrains the LLM's role to pattern recognition and prioritization while keeping all correctness guarantees in the compiler's deterministic pipeline. This "compiler advisor" paradigm points toward a broader `inference optimization` pattern where LLMs augment, rather than replace, traditional compilation systems.
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/agentcompile让大模型做编译参谋cuda推理平均加速566倍.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentcompile让大模型做编译参谋cuda推理平均加速566倍.md)
 
 ---
 

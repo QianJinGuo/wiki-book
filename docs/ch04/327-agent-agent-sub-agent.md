@@ -6,7 +6,7 @@
 
 # Agent 如何管理其他 Agent：四种 Sub Agent 模式
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/four-sub-agent-patterns-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/four-sub-agent-patterns-2026.md)
 
 ## 摘要
 
@@ -87,11 +87,11 @@ Teams 模式下 Agent 间直接 `send_message`，主 Agent 退到监督位。这
 
 ## 相关实体
 
-- [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/073-openai-codex.html)
+- [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/163-openai-codex.html)
 - [Codex Goal Six Hour Run](../ch09/058-codex-goal-six-hour-run.html)
 - [Agent Self Improvement Six Mechanisms](../ch03/046-agent.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
-- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/513-codex.html)
+- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/512-codex.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/116-harness-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 

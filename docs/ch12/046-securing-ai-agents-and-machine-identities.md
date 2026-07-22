@@ -160,7 +160,7 @@ AI 代理具有自主决策和行动能力，其身份验证凭证（如 API 密
 
 - [AgentCore Identity](../ch11/255-aws-bedrock-agentcore.html) — AWS Bedrock Agent 身份与访问管理
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/1password-securing-ai-agents-machine-identities.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/1password-securing-ai-agents-machine-identities.md)
 
 ---
 

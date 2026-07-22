@@ -8,7 +8,7 @@
 - Aderant 使用 Amazon Quick AI 能力统一搜索跨 6 个供应商系统的信息
 - 搜索时间加速 90%，文档处理加速 75-85%，研究时间减少 95%
 - 案例展示了 AWS Quick 在法律行业云运营中的实际应用
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aderant-transforms-cloud-operations-with-amazon-quick.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aderant-transforms-cloud-operations-with-amazon-quick.md)
 
 ## 深度分析
 **1. MCP 服务器架构：打破信息孤岛的核心设计模式**

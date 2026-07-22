@@ -50,7 +50,7 @@ Being "Agent Native" is more than connecting an agent — it's a new production 
 
 Alibaba Cloud runs 15 agents 7×24 handling development, customer support, and operations — processing 85% of Q&A, reducing operational support time by 90%, and compressing release cycles to 1 day.
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/阿里云-agent-native-cloud让智能体成为企业原生的能力.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/阿里云-agent-native-cloud让智能体成为企业原生的能力.md)
 
 ---
 

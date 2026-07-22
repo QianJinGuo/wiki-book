@@ -6,7 +6,7 @@
 
 # Data modeling best practices for Amazon Quick Sight multi-dataset relationships
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/data-modeling-best-practices-for-amazon-quick-sight-multi-da.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/data-modeling-best-practices-for-amazon-quick-sight-multi-da.md)
 
 # Data modeling best practices for Amazon Quick Sight multi-dataset relationships
 

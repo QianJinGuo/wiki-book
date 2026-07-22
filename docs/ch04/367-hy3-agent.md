@@ -77,7 +77,7 @@ Hy3 采用 MoE（Mixture of Experts）架构，总参数 295B 但每次推理仅
 - [Agent 评测框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmark-frameworks.md) — 行业 Agent 评测实践
 - [Claude Code 系统工程指南](../ch03/076-claude-code.html) — 对比 Coding Agent 能力
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/hunyuan-hy3-agent-benchmark-yaoshunyu-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hunyuan-hy3-agent-benchmark-yaoshunyu-2026.md)
 
 ---
 

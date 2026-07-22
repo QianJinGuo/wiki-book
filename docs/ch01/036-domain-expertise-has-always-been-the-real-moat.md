@@ -50,7 +50,7 @@ Agentic AI 突然拉平了这一环。现在，一个具备合理提示技巧的
 - **能做**：转录（transcription）——将清晰的领域理解转化为代码
 - **不能做**：构建领域模型——理解一个行业的规则、约束、隐性知识
 
-这与 [真实的 AI Agent 与真实工作](../ch04/224-real-ai-agents-and-real-work.html) 中关于 AI 在生产环境中的"上半场 vs 下半场"论点形成呼应：AI 擅长的是"执行已知模式"的上半场，而"建立问题框架"的下半场仍然需要人类。
+这与 [真实的 AI Agent 与真实工作](../ch04/223-real-ai-agents-and-real-work.html) 中关于 AI 在生产环境中的"上半场 vs 下半场"论点形成呼应：AI 擅长的是"执行已知模式"的上半场，而"建立问题框架"的下半场仍然需要人类。
 
 ## 实践启示
 
@@ -67,14 +67,14 @@ Agentic AI 突然拉平了这一环。现在，一个具备合理提示技巧的
 ## 相关实体
 
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/018-build-agents-not-pipelines.html) — 同一系列关于软件工程方法论的文章
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/886-20.html) — 同为 TLDR AI Newsletter 推荐的深度技术分析
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/885-20.html) — 同为 TLDR AI Newsletter 推荐的深度技术分析
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md) — 同一技术文章系列的姊妹篇
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/886-20.html) — 技术深度分析系列
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/885-20.html) — 技术深度分析系列
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 安全与工程实践交叉话题
 
 ## 相关主题
 
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md)
 
 ---
 

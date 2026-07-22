@@ -6,7 +6,7 @@
 
 # Marc Andreessen on Builder Culture in the Age of AI
 
-> → [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a16z-show.md)
+> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a16z-show.md)
 
 ## Summary
 
@@ -75,10 +75,10 @@ Andreessen's perspective, while compelling, has notable blind spots:
 
 ## Related Entities
 
-- [Granola — The AI Notepad for back-to-back meetings](../ch05/089-ai.html)
+- [Granola — The AI Notepad for back-to-back meetings](../ch05/090-ai.html)
 - [How Superset built the IDE for AI agents on Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Toto 2.0: Time series forecasting enters the scaling era](../ch11/161-toto-2-context-aware-log-analytics-for-complex-distributed.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/616-agentic.html)
 
 ---
 

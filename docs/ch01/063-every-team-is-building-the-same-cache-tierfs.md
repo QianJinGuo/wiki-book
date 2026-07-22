@@ -51,7 +51,7 @@ We think the gap can close. That's mostly what we want to talk about.
 
 We're building TierFS, an open-source filesystem 
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/blog-every-team-builds-the-same-cache-html.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blog-every-team-builds-the-same-cache-html.md)
 
 ---
 

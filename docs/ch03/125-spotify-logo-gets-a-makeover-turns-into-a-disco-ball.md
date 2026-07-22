@@ -10,11 +10,11 @@
 ## 相关实体
 - [P Seo Is A Product Aeo Is Brand](ch03/117-seo-is-a-product-aeo-is-brand.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
-- [Spotify Llm Evals Funnel Not Fork](../ch01/880-llm.html)
+- [Spotify Llm Evals Funnel Not Fork](../ch01/603-llm.html)
 - [你的一人公司品牌部带着Image 2模型的Lovart中文版来了](https://github.com/QianJinGuo/wiki/blob/main/entities/你的一人公司品牌部带着image-2模型的lovart中文版来了.md)
-- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/886-20.html)
+- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/885-20.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md)
 
 ## 深度分析
 Spotify 20周年庆将标志性的绿色圆形图标临时替换为闪光迪斯科球，这一设计选择在社交媒体上引发了激烈的分化反应。支持者认为，在各大科技品牌纷纷走向极简主义、功能优先的设计语言的当下，这种"略带混乱"的美学反而带来了一种难得的个性化和人情味。一位Reddit用户的评价颇具代表性："它很丑但我喜欢它。现在一切都太过完美、经过精密计算了。比起冷冰冰的数据驱动设计洞察，我更想要奇怪的感觉和情绪。"

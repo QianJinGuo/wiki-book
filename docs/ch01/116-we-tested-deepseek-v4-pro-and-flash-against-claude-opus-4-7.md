@@ -7,12 +7,12 @@
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/wetesteddeepseekv4proandflashagainstclau.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wetesteddeepseekv4proandflashagainstclau.md)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1201-deepseek.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/393-deepseek.html)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/670-deepseek-v4.html)
 - We Tested DeepSeek V4 Pro and Flash Against Claude
 

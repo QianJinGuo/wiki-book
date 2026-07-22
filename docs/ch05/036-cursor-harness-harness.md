@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 15.4KB | `entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
 
 ## 核心要点
 - **问题核心**：同一个模型放进不同 Coding Agent，体感差异巨大——核心在于 Harness 而非模型本身
@@ -72,7 +72,7 @@ Cursor 另外看了两个代理指标：
 - 客服 Agent → 回答后用户是否继续追问同一问题、是否转人工、是否重复投诉
 - 写作 Agent → 生成段落最终保留比例、标题是否被直接采用、改稿轮数有没有减少
 - 数据分析 Agent → 生成 SQL 有没有被执行、图表有没有进入报告、用户有没有回到同一问题反复修正
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
 
 ## 相关实体
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
@@ -81,7 +81,7 @@ Cursor 另外看了两个代理指标：
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/046-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch05/018-harness.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/366-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/235-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/616-agentic.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/116-harness-engineering.html)
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/116-harness-engineering.html)
@@ -89,19 +89,19 @@ Cursor 另外看了两个代理指标：
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch05/116-harness-engineering.html)
 
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/046-agent.html)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/944-anthropic.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/1295-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](ch05/018-harness.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/076-claude-code.html)
-- [吴恩达：AI 将最先杀死前端](ch05/089-ai.html)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/396-agent-skills.html)
-- [天猫新品营销技术团队AI编码实战指南（上）](ch05/089-ai.html)
+- [吴恩达：AI 将最先杀死前端](ch05/090-ai.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/397-agent-skills.html)
+- [天猫新品营销技术团队AI编码实战指南（上）](ch05/090-ai.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch05/039-agent-harness.html)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/944-anthropic.html)
-- [你写的 Skill，及格了吗？](../ch04/267-skill.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/235-agentic.html)
-- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/430-claude.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/678-claude-managed-agents.html)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/1295-anthropic.html)
+- [你写的 Skill，及格了吗？](../ch04/266-skill.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/616-agentic.html)
+- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/429-claude.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/520-claude-managed-agents.html)
 
 ---
 

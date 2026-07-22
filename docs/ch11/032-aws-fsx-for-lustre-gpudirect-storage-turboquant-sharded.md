@@ -179,7 +179,7 @@ Lustre 的 `-c -1` 参数让文件自动分布到所有可用 OST，配合 16 MB
 
 当前 vLLM 默认仍使用 CPU-based loading（即使指定 `--load-format sharded_state`），需要等 fastsafetensors 或框架原生 GDS 支持集成到位。建议关注 Foundation Model Stack 社区进展，在框架支持后用单 command 切换即可获得 GDS 加速，无需改变 pre-sharding 流程。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/accelerate-llm-model-loading-and-increase-context-windows-wi.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/accelerate-llm-model-loading-and-increase-context-windows-wi.md)
 
 ---
 

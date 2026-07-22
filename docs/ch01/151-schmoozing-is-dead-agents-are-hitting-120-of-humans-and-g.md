@@ -39,7 +39,7 @@ SaaStr AI Annual 2026 的闭门 Q&A 环节揭示了 AI 原生软件公司的关�
 - [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](ch01/085-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](../ch04/015-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/schmoozing-is-dead-agents-are-hitting-120-of-humans-and-growth-is-the-only-thing.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/schmoozing-is-dead-agents-are-hitting-120-of-humans-and-growth-is-the-only-thing.md)
 
 ---
 

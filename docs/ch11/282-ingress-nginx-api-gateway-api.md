@@ -6,7 +6,7 @@
 
 # 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/aliyun-cloud-native-api-gateway-gateway-api-guide.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-cloud-native-api-gateway-gateway-api-guide.md)
 
 ## 摘要
 
@@ -84,11 +84,11 @@ Gateway API 在跨命名空间路由上引入 **ReferenceGrant**——必须由�
 
 ## 相关实体
 
-- [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/1004-rag.html)
-- [Aliyun Cloud Native Safety Guardrails Three Domains](../ch05/089-ai.html)
+- [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/1005-rag.html)
+- [Aliyun Cloud Native Safety Guardrails Three Domains](../ch05/090-ai.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/046-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/227-openclaw.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1129-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1131-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 
 ---
 

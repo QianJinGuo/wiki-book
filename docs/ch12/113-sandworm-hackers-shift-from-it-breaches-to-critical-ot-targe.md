@@ -22,7 +22,7 @@
 - 深度防御架构
 - OT 特定的事件响应计划
 - 持续监控和威胁情报
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
 
 ## 深度分析
 **国家级黑客组织转向 OT 关键基础设施的战略意涵**：

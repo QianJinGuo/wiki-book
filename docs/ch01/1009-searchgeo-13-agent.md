@@ -55,7 +55,7 @@
 **论文**：arxiv.org/abs/2606.16821
 **开源**：github.com/Beastlyprime/SearchGEO
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/schmidhuber-retrieval-agent-trust-13-llm-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/schmidhuber-retrieval-agent-trust-13-llm-2026.md)
 
 ---
 

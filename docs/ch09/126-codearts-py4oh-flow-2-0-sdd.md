@@ -74,7 +74,7 @@ CodeArts AI 智能体具备深度上下文感知：理解 Blockly mutator 机制
 - `Agent Harness Engineering 范式` — 更广义的 Harness 框架
 - `Agent Harness Skill 系统实战指南` — Skill 体系与 SDD 的结合
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/codearts-py4oh-graphics-programming-refactoring.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codearts-py4oh-graphics-programming-refactoring.md)
 
 ---
 

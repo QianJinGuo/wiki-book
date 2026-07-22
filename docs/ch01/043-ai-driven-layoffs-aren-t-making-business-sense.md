@@ -14,11 +14,11 @@
 ## 相关实体
 - [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](../ch03/011-cio.html)
 - [Ai Driven Layoffs Business Sense Cio](../ch03/011-cio.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/089-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/090-ai.html)
 - [Clinereleasesopen Sourceagentruntimesdk](../ch04/366-agentrun.html)
 - [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/ai-driven-layoffs-arent-making-business-sense.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-driven-layoffs-arent-making-business-sense.md)
 
 ## 深度分析
 ### 1. 数据揭示的核心矛盾

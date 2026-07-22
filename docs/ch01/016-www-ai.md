@@ -6,7 +6,7 @@
 
 # WWW时间检验奖颁给唐建博士：图神经网络的十年远征与AI制药的底层逻辑
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/www时间检验奖颁给唐建博士图神经网络的十年远征与ai制药的底层逻辑.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www时间检验奖颁给唐建博士图神经网络的十年远征与ai制药的底层逻辑.md)
 
 # WWW时间检验奖颁给唐建博士：图神经网络的十年远征与AI制药的底层逻辑
 

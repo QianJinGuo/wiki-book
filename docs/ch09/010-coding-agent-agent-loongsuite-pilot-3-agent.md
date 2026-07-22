@@ -326,20 +326,20 @@ Pilot 平台的 OTel 标准化输出意味着企业可以将 Coding Agent 的执
 这一架构的另一个好处是**插桩库的可测试性**——插桩库只需要验证数据提取的准确性，而不需要关注遥测输出的正确性，大幅降低了单元测试的复杂度。
 
 ## 相关实体
-- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](../ch04/445-loongsuite-genai.html)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](../ch04/267-skill.html)
+- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](../ch04/446-loongsuite-genai.html)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](../ch04/266-skill.html)
 - [Baidu Comate Coding Agent Feedback Loop Wanpeng](ch09/047-coding-agent.html)
 - [Harness Engineering Reliable Long Term Agent](../ch05/116-harness-engineering.html)
 - [Anthropic Coding Agents Social Science Survey 2026](ch09/042-anthropic-coding-agent.html)
 
-→ [第 1 来源原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md)
+→ [第 1 来源原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md)
 ---
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 ## 第 2 来源：从个人生产力到组织能力——LoongSuite-Pilot×SLS 的 AI Coding 度量实践
 
 > 作者：徐可甲（阿里云云原生）
-> 原文：[归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/loongsuite-pilot-sls-ai-coding-metrics-practice.md)
+> 原文：[归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loongsuite-pilot-sls-ai-coding-metrics-practice.md)
 
 ### 核心创新
 
@@ -387,7 +387,7 @@ Entry/Step/Skill 语义 → 事件事实表结构  →  SLS SQL 分析
 数据如何采集              数据如何转化为行动
 ```
 
-→ [第 2 来源原文归档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/loongsuite-pilot-sls-ai-coding-metrics-practice.md)
+→ [第 2 来源原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loongsuite-pilot-sls-ai-coding-metrics-practice.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 # Amazon Quick ARNs: Cross-account migration and namespace permissions
 
-> **Source archive**: [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/amazon-quick-arns-cross-account-migration-and-namespace-perm.md)
+> **Source archive**: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-quick-arns-cross-account-migration-and-namespace-perm.md)
 
 # Amazon Quick ARNs: Cross-account migration and namespace permissions
 
@@ -160,7 +160,7 @@ When the Asset Bundle APIs import the bundle into the target account, they autom
 - [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/719-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Amazon Quick Research Agentic Multi Source Citation](ch11/216-amazon-quick.html)
 - [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](ch11/159-amazon-bedrock.html)
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch05/089-ai.html)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch05/090-ai.html)
 
 ---
 

@@ -9,12 +9,12 @@
 - 评分：v=7 × c=8 = 56
 ## 相关实体
 - [Letsdatascience Igor Babuschkin Seeks Up To 1 Billion For River Ai 8C36Ce09](ch01/069-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/089-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/090-ai.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/143-code-simulation-for-enterprise-engineering-playerzero.html)
-- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/1211-0.html)
+- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/1213-0.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
 
 ## 深度分析
 **xAI 核心成员的独立融资反映研究型 AI 创业的资本逻辑正在深化。** Igor Babuschkin 曾在 DeepMind 和 OpenAI 工作，现为 xAI 联合创始人，此次是他以个人身份筹资创办新公司——这种「前线研究员转身独立创业」的模式正在形成趋势。$1B 的融资规模与 $5B 估值，表明顶级 AI 研究人才的「明星溢价」已突破传统风险投资的评估框架，进入近似于「人才购买」的新阶段。

@@ -7,13 +7,13 @@
 ## 核心要点
 -
 ## 相关实体
-- [Tokenomics The 625 Minute Rule For Claudes Cache](ch01/430-claude.html)
+- [Tokenomics The 625 Minute Rule For Claudes Cache](ch01/429-claude.html)
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch01/059-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.html)
 - [Introducing Claude For Small Business](ch01/029-introducing-claude-for-small-business.html)
-- [Granola The Ai Notepad For Backtoback Meetings](../ch05/089-ai.html)
+- [Granola The Ai Notepad For Backtoback Meetings](../ch05/090-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic_cache_tokenomics.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic_cache_tokenomics.md)
 - [the golden rule of customizable select](https://github.com/QianJinGuo/wiki/blob/main/entities/webkit-customizable-select-golden-rule.md)
 
 ## 深度分析
@@ -32,7 +32,7 @@
 - **大 prefix + 长时间 idle = 放弃缓存：** 500K token idle 超过 62.5 分钟后刷新成本已超过重写，此时应主动终止缓存
 
 ## 关联阅读
-- [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/anthropic_cache_tokenomics.md) — 本文完整原文与推导细节
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic_cache_tokenomics.md) — 本文完整原文与推导细节
 
 ---
 

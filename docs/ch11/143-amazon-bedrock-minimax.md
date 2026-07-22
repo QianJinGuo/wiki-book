@@ -74,7 +74,7 @@ MiniMax 模型在 Bedrock 上支持隐式 prompt 缓存（Implicit Prompt Cachin
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [MoE 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/moe-mixture-of-experts-2025.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/run-minimax-models-on-amazon-bedrock.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/run-minimax-models-on-amazon-bedrock.md)
 
 ---
 

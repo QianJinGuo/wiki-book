@@ -59,7 +59,7 @@ eight-claw 同时接入 Codex CLI、Claude Code、OpenCode 三种引擎，不自
 - `Codex Agent 项目配置` — 多引擎实践参考
 - `腾讯 Harness Engineering 探索之旅` — 组织级 AI 工程化演进路径
 
-→ [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/xiaomi-retail-ai-engineering-three-layer-practice.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-retail-ai-engineering-three-layer-practice.md)
 
 ---
 

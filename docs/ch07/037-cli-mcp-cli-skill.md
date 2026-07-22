@@ -4,7 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/cli-mcp-skill-architecture-decision-vibecoder.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki/blob/main/raw/articles/cli-mcp-skill-architecture-decision-vibecoder.md)
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cli-mcp-skill-architecture-decision-vibecoder.md)
 
 # CLI、MCP 和 CLI+Skill：企业Agent架构选择指南
 
@@ -123,7 +123,7 @@ Skill 是组织经验和方法论的载体。不要把 Skill 看作"让 Agent �
 
 ## 相关实体
 - [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/030-ai-agent.html)
-- [From Agent Protocol To Harness Skill](../ch04/408-from-agent-protocol-to-harness-skill.html)
+- [From Agent Protocol To Harness Skill](../ch04/409-from-agent-protocol-to-harness-skill.html)
 - [Claude Code Core Internals](../ch03/076-claude-code.html)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/046-agent.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/018-harness.html)
