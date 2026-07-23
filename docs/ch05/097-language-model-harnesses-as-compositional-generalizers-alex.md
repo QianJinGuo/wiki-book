@@ -32,8 +32,8 @@
 
 ## 相关实体
 
-- [Reinforcing Recursive Language Models（RLM）](../ch01/843-reinforcing-recursive-language-models-alphaxiv.html) — RLM 的训练方法论
-- [Agent Harness Engineering Survey](ch05/116-harness-engineering.html) — AVS 的多层 harness 分类法
+- [Reinforcing Recursive Language Models（RLM）](../ch01/845-reinforcing-recursive-language-models-alphaxiv.html) — RLM 的训练方法论
+- [Agent Harness Engineering Survey](ch05/117-harness-engineering.html) — AVS 的多层 harness 分类法
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程的总体框架
 - [Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md) — Coding 场景下的 harness 工程
 

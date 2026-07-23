@@ -85,7 +85,7 @@ Lambda 处理流程：
 ### [Aws Bedrock Intelligence Message Defense](ch11/009-aws-bedrock.html) — 共享 prompt versioning 思想
 该 entity 提到 "Prompt CI/CD" 概念但**没有给出具体服务限制数字**（50/10 prompts/region）也没有 batch 集成方案。本 entity 是其**具体实现 + 服务约束**的工程补全。
 
-### [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/159-amazon-bedrock.html) — 同主题但不同角度
+### [Process Financial Documents Using Amazon Bedrock Data Automa](ch11/160-amazon-bedrock.html) — 同主题但不同角度
 该 entity 描述 **Bedrock Data Automation** 自动化产品（无代码 IDP 服务），本文描述的是**自建 Bedrock pipeline**（有代码、Lambda + SQS + 动态 prompt 选取）。两文互补 —— Data Automation 适合标准化场景，自建 pipeline 适合需要 prompt 高度定制或与现有 SQS 工作流集成的场景。
 
 ### 差异化
@@ -113,7 +113,7 @@ Lambda 处理流程：
 
 ## 相关实体
 
-- [from pdfs to insights: architecting an intelligent document](ch11/238-from-pdfs-to-insights-architecting-an-intelligent-document.html)
+- [from pdfs to insights: architecting an intelligent document](ch11/239-from-pdfs-to-insights-architecting-an-intelligent-document.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/extract-data-with-on-demand-and-batch-pipelines-dynamically.md)
 
 ## 深度分析

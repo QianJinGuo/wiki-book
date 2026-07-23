@@ -50,7 +50,7 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP、Amazon EKS、Kubernetes
 - [OpenClaw 多智能体团队搭建实战经验](../ch04/047-openclaw-multi-agent-team-practice-v2.html)
 - [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](../ch03/046-agent.html)
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch03/046-agent.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/537-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/540-amazon-bedrock-agentcore.html)
 - [Amazon CloudFront部署小指南（二十四）：将CloudFront "多域名"改造为"多租户"架构 | 亚马逊AWS官方博客](../ch05/090-ai.html)
 
 ---

@@ -38,8 +38,8 @@
 
 ## 相关实体
 
-- [How Superset built the IDE for AI agents on Vercel](../ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/161-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [How Superset built the IDE for AI agents on Vercel](../ch01/078-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/162-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 - [Public Stealth Leaves Opportunity on the Table](https://github.com/QianJinGuo/wiki/blob/main/entities/thisisgoingtobebig-public-stealth.md)
 
 ---
