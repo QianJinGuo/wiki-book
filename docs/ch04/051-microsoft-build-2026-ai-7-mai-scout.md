@@ -144,7 +144,7 @@
 
 ## 与现有 wiki 实体的关系
 
-### vs [OpenClaw](../ch11/227-openclaw.html)
+### vs [OpenClaw](../ch11/228-openclaw.html)
 - OpenClaw = 开源 AI 编程框架，席卷 AI 圈
 - **Scout = "升级版 OpenClaw"**——基于 OpenClaw 框架构建，但加上微软企业级安全 / Entra 身份 / Intune 治理
 - **关键差异**：Scout 是"实验性 + opt-in"起步，微软承诺**向开源 OpenClaw 项目进行上游贡献**（与社区共生，非取代）
@@ -154,7 +154,7 @@
 - Codex = OpenAI 自家 harness 跑在 GPT 模型
 - **Scout = 微软智能体（基于 OpenClaw）跑在 MAI 模型**（"全栈"闭环）
 
-### vs [Kimi Work](../ch01/512-codex.html)
+### vs [Kimi Work](../ch01/509-codex.html)
 - Kimi Work = 月之暗面 K2.6 + Kimi Code Harness 搬到本地桌面
 - **Scout = 微软 MAI + OpenClaw 框架在 365 云端/桌面/网页** —— **"人本主义超级智能"** 哲学强调"支持人类而非取代"
 - **共同点**：都是模型公司 + 自家 Harness 的全栈组合
@@ -270,9 +270,9 @@
 - **WSL Containers 公开时间表 / Intelligent Terminal GA 时间表** 未披露
 
 ## 相关对照
-- [Kimi Work](../ch01/512-codex.html) —— 本地桌面 Agent + Vibe Working
+- [Kimi Work](../ch01/509-codex.html) —— 本地桌面 Agent + Vibe Working
 - [wow-harness v3](../ch05/018-harness.html) —— 跨 session 事件时间线
-- [OpenClaw](../ch11/227-openclaw.html) —— 开源 AI 编程框架（Scout 基于它）
+- [OpenClaw](../ch11/228-openclaw.html) —— 开源 AI 编程框架（Scout 基于它）
 - [Agent Harness 架构](../ch05/039-agent-harness.html) —— 7 层 harness 模型
 - [Agent Harness 上下文管理](../ch05/039-agent-harness.html) —— 工作集视角
 
