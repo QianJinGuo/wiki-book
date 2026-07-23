@@ -26,7 +26,7 @@
 
 ## 相关实体
 - [The It And Security Field Guide To Ai Adoption Tines](ch12/081-the-it-and-security-field-guide-to-ai-adoption-tines.html)
-- [Http2 Hpack Bomb Codex Ai Discovery 32Gb Dos](../ch01/512-codex.html)
+- [Http2 Hpack Bomb Codex Ai Discovery 32Gb Dos](../ch01/509-codex.html)
 - [Npm Supply Chain Compromise Postmortem](../ch05/090-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)

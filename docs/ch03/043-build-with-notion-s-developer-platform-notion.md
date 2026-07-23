@@ -6,7 +6,7 @@
 
 ## 深度分析
 
-Notion 的 Developer Platform 设计理念突破了传统 CRUD API 的定位，转向「Agent-First」的基础设施思维。从已披露的文档来看，Notion 没有把 API 设计成给人类开发者使用的工具，而是针对 AI Agent 的操作模式进行了专门优化——包括结构化 schema 定义、declarative sync pattern、以及将外部数据源映射到 Notion Database 的持久化游标机制。这种设计选择背后的逻辑是：未来的 Notion 使用者将越来越多的是 AI Agent 而不是人类，因此 API 的原语（primitive）应该适配 AI 的认知方式（结构化输出、确定性状态）而不是人类的交互习惯。 See also [Harness Engineering](../ch05/116-harness-engineering.html)
+Notion 的 Developer Platform 设计理念突破了传统 CRUD API 的定位，转向「Agent-First」的基础设施思维。从已披露的文档来看，Notion 没有把 API 设计成给人类开发者使用的工具，而是针对 AI Agent 的操作模式进行了专门优化——包括结构化 schema 定义、declarative sync pattern、以及将外部数据源映射到 Notion Database 的持久化游标机制。这种设计选择背后的逻辑是：未来的 Notion 使用者将越来越多的是 AI Agent 而不是人类，因此 API 的原语（primitive）应该适配 AI 的认知方式（结构化输出、确定性状态）而不是人类的交互习惯。 See also [Harness Engineering](../ch05/117-harness-engineering.html)
 
 Workers 的 declarative schema 设计是一个值得关注的架构选择。传统的数据同步通常使用命令式代码——明确写「先查 A 的数据，再转换格式，再写入 Notion」。而 Notion Workers 采用声明式 schema：`worker.sync("ticketsSync", { schedule: "5m", execute: async () => ... })` 这种设计把同步逻辑封装成了可配置的行为，而不是硬编码的脚本。声明式的优势在于：Agent 可以更容易地理解、修改和验证同步行为，而不需要逐行阅读转换代码。对于构建 AI Agent 系统的开发者来说，这个设计提示了一个重要的 API 设计原则——当你的 API 需要被 AI 而不是人类调用时，声明式接口比命令式接口更容易实现可靠性和可预测性。
 

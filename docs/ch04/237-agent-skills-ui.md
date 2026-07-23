@@ -121,9 +121,9 @@ Dashboard 作为输出端的意义被低估了。当前大多数 Agent 系统侧
 5. **Skill 是 Agent 应用的基本原子**：Qoder 的设计暗示了一个趋势——未来的 Agent 应用将由大量 Skill 单元组成，每个 Skill 是一个「知识 + 脚本 + 界面」的微应用。这种设计让 Skill 可以跨 Agent 复用，也让 Agent 的能力边界通过 Skill 组合不断扩展。
 ## 相关实体
 - [Agent Skills Teams Architecture Evolution Selection Guide](ch04/235-agent-skills-teams.html)
-- [Anthropic 14 Skill Patterns Best Practices](../ch01/326-anthropic-14-skill.html)
-- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](ch04/397-agent-skills.html)
-- [Agent Skills Comprehensive Survey](ch04/397-agent-skills.html)
+- [Anthropic 14 Skill Patterns Best Practices](../ch01/322-anthropic-14-skill.html)
+- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](ch04/399-agent-skills.html)
+- [Agent Skills Comprehensive Survey](ch04/399-agent-skills.html)
 - [Skill System Design Three Way Comparison](ch04/266-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 

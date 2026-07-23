@@ -29,7 +29,7 @@ Agent 从两个来源获取稳定性知识：
 
 两者共同汇入结构化的故障知识图谱，为后续的验证和进化提供知识基座。
 
-参见 [AI Infra 运维智能体基准](ch01/1204-ai-infra.html) — GPU 集群故障诊断领域的前沿进展。
+参见 [AI Infra 运维智能体基准](ch01/756-ai-infra.html) — GPU 集群故障诊断领域的前沿进展。
 
 ### 验证层：在算力风洞中验证决策能力
 
@@ -70,8 +70,8 @@ Agent 从两个来源获取稳定性知识：
 
 ## 关联
 
-- [LLM 超算协议](ch01/168-openai.html) — 解决超大集群训练不稳定性的网络协议层面方案，与算力风洞在 GPU 集群稳定性领域互补
-- [AI Infra 运维智能体基准](ch01/1204-ai-infra.html) — 首个针对 GPU 集群故障的 AI Infra 运维智能体评测基准
+- [LLM 超算协议](ch01/743-openai.html) — 解决超大集群训练不稳定性的网络协议层面方案，与算力风洞在 GPU 集群稳定性领域互补
+- [AI Infra 运维智能体基准](ch01/756-ai-infra.html) — 首个针对 GPU 集群故障的 AI Infra 运维智能体评测基准
 - [Spec as AIOS：AI-Native 全栈交付的抗熵架构](../ch05/019-ai-native.html) — 高德的 AI Native 架构实践，与算力风洞同为阿里巴巴系 AI Native 体系
 
 ---

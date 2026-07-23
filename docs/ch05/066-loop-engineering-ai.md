@@ -78,7 +78,7 @@ Loop Engineering 将系统运行从「单次交互」变成了「持续运行」
 
 ## 相关实体
 
-- [Harness Engineering 行业调研](ch05/116-harness-engineering.html)
+- [Harness Engineering 行业调研](ch05/117-harness-engineering.html)
 - [Claude Code 系统工程指南](../ch03/076-claude-code.html)
 - [Claude Loop 实践](../ch03/076-claude-code.html)
 - [Agent Harness 上下文管理](ch05/039-agent-harness.html)
