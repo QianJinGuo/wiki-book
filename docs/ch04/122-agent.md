@@ -55,7 +55,7 @@ Agent能力越强，治理越重要。成熟Agent的关键词不是"完全自主
 6. **Skill版本管理** — 技能迭代有版本号、可对比、可回滚
 7. **数据访问控制** — 敏感数据的访问级别和范围精确管控
 
-参考：[Agent Harness Engineering Survey](../ch05/116-harness-engineering.html) 中的 ETCLOVG 治理维度。
+参考：[Agent Harness Engineering Survey](../ch05/117-harness-engineering.html) 中的 ETCLOVG 治理维度。
 
 ## 模型非唯一壁垒
 
@@ -89,7 +89,7 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 
 ## 与17种架构演进的关系
 
-[17种Agent架构](ch04/668-17-agent.html)的演化史本质上是三条路线在不同历史阶段的不同侧重：
+[17种Agent架构](ch04/669-17-agent.html)的演化史本质上是三条路线在不同历史阶段的不同侧重：
 
 - **早期架构**（Reflection/Tool Use/ReAct）→ 偏重**执行力**路线，解决"能不能做"
 - **中期架构**（Self-Evolve/Reflexion/ExpeL）→ 偏重**自我进化**路线，解决"能不能越用越强"
@@ -112,7 +112,7 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 - [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](../ch05/090-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/acker-agent-evolution-three-routes-convergence.md)
 
-- [fanling company as agent ai org reflection v2](../ch01/868-agent-ai.html)
+- [fanling company as agent ai org reflection v2](../ch01/871-agent-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析

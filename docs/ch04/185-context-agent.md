@@ -125,8 +125,8 @@ Content/Metadata 分离的核心洞察是：智能体对待结构化元数据应
 沙盒环境使 Agent 能够安全地读写文件系统、执行代码（pandas 查询）、使用搜索和 grep 工具。 这些能力组合起来，构成了文档密集型 Agent 的标准工作环境：文件系统存储 Markdown 内容供 Agent 阅读，代码执行能力允许按需查询元数据，带引用的单元格写入支持将发现写入结构化输出。对于构建企业级文档智能体的团队，沙盒化编码 Agent 架构应该是首选方案。
 
 ## 关联阅读
-- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/792-why-internally-built-ai-fails-fund-accounting-audits.html) — AI 审计失败案例，文档处理是核心难点
-- [Amazon Bedrock Agentcore Browser Information Retrieval And Analysis Capabilities](ch04/537-amazon-bedrock-agentcore.html) — Agent 沙盒架构
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/794-why-internally-built-ai-fails-fund-accounting-audits.html) — AI 审计失败案例，文档处理是核心难点
+- [Amazon Bedrock Agentcore Browser Information Retrieval And Analysis Capabilities](ch04/540-amazon-bedrock-agentcore.html) — Agent 沙盒架构
 - [Claude Code Governance Soft Rules](../ch03/076-claude-code.html) — Agent 工具设计原则
 
 ---

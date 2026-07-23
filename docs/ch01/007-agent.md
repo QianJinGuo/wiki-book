@@ -2,7 +2,7 @@
 
 ## Ch01.007 快手首个打工人Agent
 
-> 📊 Level ⭐ | 13.5KB | `entities/kuaishou-worker-agent-desktop-software.md`
+> 📊 Level ⭐ | 13.7KB | `entities/kuaishou-worker-agent-desktop-software.md`
 
 # 快手首个打工人Agent
 
@@ -170,8 +170,9 @@ browser-use 能力让 Agent 能够访问没有 API 的信息源，这是 Agent �
 - [Enterprise Software Moats in the Agent Era](../ch03/046-agent.html)
 - [AutoResearch 多 Agent 软件开发](../ch03/046-agent.html)
 - [Factory Mission Multi-Agent 系统](../ch03/046-agent.html)
-- [AgentOps on Bedrock](../ch04/292-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch01/299-agi.html)
+- [AgentOps on Bedrock](../ch04/229-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch01/295-agi.html)
+- [应用固化（Application Solidification）](https://github.com/QianJinGuo/wiki/blob/main/concepts/application-solidification.md)
 
 ---
 

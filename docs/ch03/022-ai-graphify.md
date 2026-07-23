@@ -138,10 +138,10 @@ graphify-out/cost.json
 ## 相关实体
 
 - [Cli Mcp Skill Architecture Decision Vibecoder](../ch04/266-skill.html)
-- [Mattpocock Skills Grill Me Grill With Docs Caveman](../ch04/622-mattpocock-skills.html)
-- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/248-claude-md.html)
-- [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/163-openai-codex.html)
-- [Rag技术框架的演进方向](../ch01/1005-rag.html)
+- [Mattpocock Skills Grill Me Grill With Docs Caveman](../ch04/625-mattpocock-skills.html)
+- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/244-claude-md.html)
+- [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/164-openai-codex.html)
+- [Rag技术框架的演进方向](../ch01/231-rag.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graphify-software-engineering-knowledge-graph.md)
 

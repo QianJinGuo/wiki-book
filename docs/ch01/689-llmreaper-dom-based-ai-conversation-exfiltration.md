@@ -57,7 +57,7 @@ I have used various selector queries to match user prompts and LLM responses but
 ## 相关实体
 - [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](../ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
-- [Llm Raiders Private Ai Server](ch01/603-llm.html)
+- [Llm Raiders Private Ai Server](ch01/882-llm.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Amazon Bedrock Api Security Guide](../ch12/034-amazon-bedrock-api.html)
 

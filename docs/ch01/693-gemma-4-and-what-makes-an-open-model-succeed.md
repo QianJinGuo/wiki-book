@@ -87,8 +87,8 @@ GPT-OSS 从发布时的混乱到最终的巨大成功，加上 Reflection、Arce
 ## 相关实体
 
 - [DeepSeek Code Harness](../ch09/090-deepseek-code-harness.html)
-- [OpenClaw 完全指南](../ch11/227-openclaw.html)
-- [From AGI to ASI](ch01/299-agi.html)
+- [OpenClaw 完全指南](../ch11/228-openclaw.html)
+- [From AGI to ASI](ch01/295-agi.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

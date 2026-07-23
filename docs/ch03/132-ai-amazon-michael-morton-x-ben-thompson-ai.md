@@ -46,7 +46,7 @@ AI 并没有取代交易闭环——ChatGPT checkout 的失败证明了这一点
 ## 与现有知识的关系
 
 - [Amazon Alexa Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md) — Amazon 自身的 AI 电商尝试，可对比本文的"AI 做不了交易平台"论点
-- [Thrive Capital Shopify AI 投资](../ch01/1213-0.html) — Shopify AI 战略的另一个视角
+- [Thrive Capital Shopify AI 投资](../ch01/1216-0.html) — Shopify AI 战略的另一个视角
 
 ---
 

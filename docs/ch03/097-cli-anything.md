@@ -131,7 +131,7 @@ HKUDS 通过 CLI-Anything 建立了在 Agent Tools 领域的技术影响力，St
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [GBrain](../ch01/262-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [GBrain](../ch01/258-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 
 ---
 

@@ -250,7 +250,7 @@
 - 晓斌 = "harness 平台化"（**运行环境层**变革）——"组装的对象从'应用'变成了'agent 工作环境'"
 - 共同点：都强调"infra / 协议"是 AI Agent 落地的关键
 
-### vs [Kimi Work](../ch01/512-codex.html)
+### vs [Kimi Work](../ch01/509-codex.html)
 - Kimi Work = Harness 搬到本地桌面
 - 晓斌 = Harness **平台化**（云上"组装对象从应用变成 agent 工作环境"）
 - 共同点：harness 决定一切
@@ -324,7 +324,7 @@
 ## 相关对照
 - [Agent Harness 架构](../ch05/039-agent-harness.html) —— 7 层 harness 模型
 - [wow-harness v3](../ch05/018-harness.html) —— 跨 session 事件时间线
-- [Kimi Work](../ch01/512-codex.html) —— 本地桌面 Agent
+- [Kimi Work](../ch01/509-codex.html) —— 本地桌面 Agent
 - [PilotDeck](../ch03/046-agent.html) —— 多项目隔离
 - [Rein](../ch03/046-agent.html) —— 4 模块 + 5 类型边界
 - [Microsoft Build 2026](../ch03/046-agent.html) —— 全栈 AI

@@ -128,8 +128,8 @@ LLM 当 judge 互打分会漂移——**上午 0.85，下午同样的输出 0.6*
 
 ## 与其他 Loop/Harness 实体的关系
 
-→ [Loop Engineering（Addy Osmani 若飞）](../ch05/007-loop-engineering.html) — 同样是 Loop 范式但面向**开发循环**（commit-iterate-fix）而非 **Agent 自循环**（prompt-tool-output-loop）
-→ [Harness Engineering Survey 2026](../ch05/116-harness-engineering.html) — 同样社区层面的 Agent 工程化范式整理，但**侧重 12 组件分类**
+→ [Loop Engineering（Addy Osmani 若飞）](../ch05/005-loop-engineering.html) — 同样是 Loop 范式但面向**开发循环**（commit-iterate-fix）而非 **Agent 自循环**（prompt-tool-output-loop）
+→ [Harness Engineering Survey 2026](../ch05/117-harness-engineering.html) — 同样社区层面的 Agent 工程化范式整理，但**侧重 12 组件分类**
 → [Harness Architecture Production Guide](../ch05/039-agent-harness.html) — Harness 12 组件 vs Agent Loop 7 件套（不同抽象层级）
 → [腾讯 Skill 写作 Playbook](ch04/266-skill.html) — 同样腾讯系但讲 **Skill 写作**（如何写好一个 Skill）
 → [从 Prompt 到 Harness 工程三次进化](../ch05/018-harness.html) — 同样腾讯系但讲**进化论**（从 Prompt 到 Harness 的迁移）

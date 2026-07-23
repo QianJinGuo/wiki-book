@@ -2,7 +2,7 @@
 
 ## Ch12.003 Token 撤销触发设备擦除的安全漏洞
 
-> 📊 Level ⭐ | 10.1KB | `entities/cybersecurityreach-revoke-token-wipe-computer.md`
+> 📊 Level ⭐ | 10.0KB | `entities/cybersecurityreach-revoke-token-wipe-computer.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cybersecurityreach-revoke-token-wipe-computer.md)
 
@@ -13,10 +13,9 @@
 - 持久化 `gh-token-monitor` 含真实 `rm -rf ~/` 逻辑，构成死亡开关； revocation 必须在移除持久化单元之后
 ## 相关实体
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](ch12/035-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/1057-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/1060-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/090-ai.html)
-- [Why Im Leaving Github For Forgejo](../ch01/899-github.html)
-- [From Doer To Director The Ai Mindset Shift](../ch01/033-from-doer-to-director-the-ai-mindset-shift.html)
+- [From Doer To Director The Ai Mindset Shift](../ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cybersecurityreach-revoke-token-wipe-computer.md)
 

@@ -86,10 +86,10 @@ PostHog 正在将 hackathon 手工喂入模式升级为全自动 pipeline：① 
 
 ## 相关实体
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/090-ai.html)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/366-agentrun.html)
-- [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/003-agentrun.html)
+- [Running An Ai Native Engineering Org](ch01/053-running-an-ai-native-engineering-org.html)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
-- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/069-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
+- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/160-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/https-posthog-com-blog-karpathy-autoresearch-query-engine-bug.md)
 
