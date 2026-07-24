@@ -1,3 +1,12 @@
+---
+title: "Surprising lessons from my research scientist job search"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 587bf1ad01cbfd6a68c7887224139aab36e82cb0cdad9d7580e5a8428edf51ac
+---
+
 sha256: df51bbb2afbdc005b999afb2a0b88d57260e4fec2be932f9955a1e3a9f7c23f0
 ---
 title: "Surprising lessons from my research scientist job search"

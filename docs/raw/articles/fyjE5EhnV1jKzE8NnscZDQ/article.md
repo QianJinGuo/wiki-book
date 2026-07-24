@@ -1,3 +1,12 @@
+---
+title: "Anthropic 发布循环设计指南：权威拆解当下最火的 AI 新范式 loop"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: b61fa9707557498df6cfe91d8cdf5710b20cf1854aba20b67ac43a03e59f5260
+---
+
 # Anthropic 发布循环设计指南：权威拆解当下最火的 AI 新范式 loop
 
 > AI寒武纪 · 2026年7月7日 17:04 · 江苏

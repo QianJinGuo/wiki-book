@@ -1,3 +1,12 @@
+---
+title: "用 Spec 驱动 AI 编程半年，我总结了四个大多数人踩的坑"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 9a1c9b06160c6ec6f16ca87b7d5f2f282ec9a31decf779c3e288238e57fda231
+---
+
 # 用 Spec 驱动 AI 编程半年，我总结了四个大多数人踩的坑
 
 > dolphin · dolphin07 · 2026年5月31日 17:21 · 广东

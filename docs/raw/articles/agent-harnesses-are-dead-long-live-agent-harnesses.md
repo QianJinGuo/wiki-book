@@ -1,3 +1,12 @@
+---
+title: "Agent Harnesses Are Dead. Long Live Agent Harnesses."
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 337bc68097dc5981e6ef0def93e3e38ea4c123e794f7e66954fa2289cf0ddbb6
+---
+
 sha256: 63777d81e644e082dbb4319300c16bdb5b541605d5b9644829cdbeec155acc51
 ---
 source: rss

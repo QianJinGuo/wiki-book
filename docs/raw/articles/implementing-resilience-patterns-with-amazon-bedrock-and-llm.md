@@ -1,3 +1,12 @@
+---
+title: "Implementing resilience patterns with Amazon Bedrock and LLM gateway"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: f3216815394c2e1a86ea9091405d2bdfba0b1da8c718b8a03652f5b5cb24a70d
+---
+
 sha256: 9fefc292cb4bfc510c41d2dd94c5ff5c236d3faa45c0efaa9b066a7108827f3c
 ---
 source: AWS China ML

@@ -11,8 +11,8 @@
 **标签:** #BetterHarness #HarnessEngineering #Eval #Trace #自动优化
 
 ## 相关实体
-- [Hermes Agent Deep Dive Alibaba](../ch03/092-hermes-agent.html)
-- [Deerflow Hermes Openclaw Comparison](../ch04/477-deerflow-hermes-openclaw.html)
+- [Hermes Agent Deep Dive Alibaba](../ch03/093-hermes-agent.html)
+- [Deerflow Hermes Openclaw Comparison](../ch04/482-deerflow-hermes-openclaw.html)
 - [Harness Evolution Papers](ch05/018-harness.html)
 - [Better Harness Eval Trace Methodology](ch05/018-harness.html)
 - [Wow Harness V3 Governance Protocol](ch05/018-harness.html)

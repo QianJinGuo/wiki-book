@@ -1,3 +1,12 @@
+---
+title: "快手AgentX：推荐系统开始自我迭代"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 818b4452b329cac77b7818c678ca755694f8e529a5a84b42a2208a97c014776a
+---
+
 sha256: bd8b91bda2c5a2494b7551439ed92c9649cf646b841b85421e2e071473fe59ed
 ---
 title: 快手AgentX：推荐系统开始自我迭代

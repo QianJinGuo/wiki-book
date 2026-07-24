@@ -1,3 +1,12 @@
+---
+title: "Why Real Workload Performance is the Metric that Matters"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 777e9a8de58a54e9902f173985a561658df3fc5e0c1067891dd03bc7286fe628
+---
+
 sha256: 2087756cf5d89ec108bcab52dd4fe379e91978ce278fbd1a2515e01d5db316e3
 ---
 title: "Why Real Workload Performance is the Metric that Matters"

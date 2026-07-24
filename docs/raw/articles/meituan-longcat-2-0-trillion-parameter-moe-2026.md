@@ -1,3 +1,12 @@
+---
+title: "美团 LongCat-2.0 正式发布：在国产算力集群上完成全流程训练与推理的万亿参数模型"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: d9c30b63c9cdc6befd4bfd8299303753ad7e9324ab324f712d492488911d57d7
+---
+
 sha256: 01abc037963d298216ecb91e3489652971c5ef66991593bad5866cac05e9328f
 ---
 title: "美团 LongCat-2.0 正式发布：在国产算力集群上完成全流程训练与推理的万亿参数模型"

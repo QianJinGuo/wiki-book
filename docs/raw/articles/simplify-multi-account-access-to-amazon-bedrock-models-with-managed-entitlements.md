@@ -1,3 +1,12 @@
+---
+title: "Simplify multi-account access to Amazon Bedrock models with managed entitlements"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 6baa912ad7fe8cda2c993f8f5e77c22d8cbe22fdca4851b2f47824114fef662d
+---
+
 sha256: c87650e36286604a71bd43abb7ba6aea1f14ea2d84d276f057fbd1f46140dc63
 ---
 source: rss

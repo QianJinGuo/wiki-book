@@ -1,3 +1,12 @@
+---
+title: "icse 2026杰出论文 突破代码模型真实工程落地瓶颈北大团队提出sealign对齐框架显著提升软件工程智能体决策质量"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: e71be9a60d9bfa80eb272c9b4d0bb01a50c1d461061fa794c2b05f120f4fdfd8
+---
+
 sha256: df4cd53fb9d5ac314eb2f240ae1f28009098ca5a36ffae93789c903e962db195
 ---
 

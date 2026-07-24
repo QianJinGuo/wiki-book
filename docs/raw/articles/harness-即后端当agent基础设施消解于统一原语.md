@@ -1,3 +1,12 @@
+---
+title: "harness 即后端当agent基础设施消解于统一原语"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 284fb3a8ea4c241ef59c86c60a44986dc6ad9bab70f0730604b1ae63317de6be
+---
+
 sha256: fae3b3157bdbae78c75dbee6bfbf531c6cd55dd6389467a9713a78b89a58ff89
 ---
 

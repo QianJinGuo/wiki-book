@@ -1,3 +1,12 @@
+---
+title: "arxiv 2605 15846 roadmapbench"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 53e34faf1c47752a01df010b7fc6f795c735cae9ad2e218a0b032a6d6402fdc3
+---
+
 sha256: 5d4d1f503377557fd21ea0082409724db3bbf6bedb9f5c715525ff70e5a6673e
 ---
 source: newsletter

@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **22 篇**实体，按深度递增排列。
+> 本章收录 **23 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,6 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
+| ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 17 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
@@ -28,7 +29,32 @@ AI 最终要从屏幕走进物理世界。
 
 ---
 
-## Ch18.001 逐际动力 Pre-IPO 融资 — 具身智能商业化路径
+## Ch18.001 小米机器人汽车工厂柔性操作与多机协同实战
+
+> 📊 Level ⭐ | 1.9KB | `entities/小米机器人汽车工厂柔性操作多机协同-2026.md`
+
+# 小米机器人汽车工厂柔性操作与多机协同实战
+
+小米机器人在小米汽车工厂完成从"实习"到"转正"的实战验证：自攻螺母上件工站双侧作业成功率提升至 98%（与人工作业合格率差 1%），并探索中控台侧盖板排序和料箱折叠回收两个新工站。
+
+## 核心技术突破
+
+- **全身运动控制**：在充分调动全身自由度的同时保持身体平衡，实现大作业范围覆盖
+- **主动柔顺策略**：基于末端力感知能力的主动柔顺控制策略，处理盖板卡滞时自动调整继续任务
+- **双手协同配合**：抓取柔性盖板后自主通过双手协同调整握持方式，增强可操作度
+- **手内精细调整**：借助仿生灵巧手本体感知能力，对大尺寸物体进行类人精细调整
+
+## 多机协同
+
+现代化工厂本身是一套庞大的自动化与数字化系统。机器人接入工厂系统后直接获取生产任务及物料信息，多机器人单元之间的动作协调与节拍匹配已在该工站得到有效解决和稳定运行。
+
+## 与基座模型的关系
+
+此实战案例与 [Xiaomi-Robotics-1 具身基座模型](https://github.com/QianJinGuo/wiki/blob/main/entities/xiaomi-robotics-1-embodied-base-model-scaling-2026.md) 形成互补：基座模型提供通用的预训练能力，工厂实战验证模型在真实产线上的部署效果和泛化能力。
+
+---
+
+## Ch18.002 逐际动力 Pre-IPO 融资 — 具身智能商业化路径
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/zhuji-dynamics-pre-ipo-embodied-ai-2026.md`
 
@@ -137,7 +163,7 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 ---
 
-## Ch18.002 机器人为什么要拟人？终于有人正确回答了
+## Ch18.003 机器人为什么要拟人？终于有人正确回答了
 
 > 📊 Level ⭐⭐ | 11.2KB | `entities/机器人为什么要拟人终于有人正确回答了.md`
 
@@ -220,7 +246,7 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 ---
 
-## Ch18.003 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
+## Ch18.004 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
 
 > 📊 Level ⭐⭐ | 10.0KB | `entities/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代-xiaomi.md`
 
@@ -323,7 +349,7 @@ Xiaomi-Robotics-U0 最核心的设计决策是**用统一的自回归框架覆�
 
 ---
 
-## Ch18.004 LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
+## Ch18.005 LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
 
 > 📊 Level ⭐⭐ | 9.1KB | `entities/lingbot-va-20-embodied-video-action-pretrain-ant-lingbo-2026.md`
 
@@ -390,7 +416,7 @@ LingBot-VA 2.0 不是孤立发布，而是蚂蚁灵波"机器人大脑 2.0"系�
 
 ---
 
-## Ch18.005 刚刚，首个空间原生的具身视觉基模开源！机器人更会看我们的世界了
+## Ch18.006 刚刚，首个空间原生的具身视觉基模开源！机器人更会看我们的世界了
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/刚刚首个空间原生的具身视觉基模开源机器人更会看我们的世界了.md`
 
@@ -466,7 +492,7 @@ LingBot-Vision 和 LingBot-Depth 2.0 已通过奥比中光深度视觉实验室�
 
 ---
 
-## Ch18.006 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
+## Ch18.007 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
 
@@ -554,7 +580,7 @@ LingBot-Vision 的"空间原生"定位与 [具身智能](https://github.com/Qian
 
 ---
 
-## Ch18.007 啊？这是机器人的手？！
+## Ch18.008 啊？这是机器人的手？！
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/啊这是机器人的手.md`
 
@@ -625,7 +651,7 @@ LingBot-Vision 的"空间原生"定位与 [具身智能](https://github.com/Qian
 
 ---
 
-## Ch18.008 Unitree's IPO Filing: The State of the Robotics Market
+## Ch18.009 Unitree's IPO Filing: The State of the Robotics Market
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/unitree-ipo-robotics-market.md`
 
@@ -695,7 +721,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.009 蔚蓝BabyAlpha A3消费级机器狗
+## Ch18.010 蔚蓝BabyAlpha A3消费级机器狗
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/weilan-babyalpha-a3.md`
 
@@ -783,7 +809,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.010 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
+## Ch18.011 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/powering-the-future-of-robotics-in-europe-deepmind-2026-06.md`
 
@@ -858,7 +884,7 @@ Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧�
 
 ---
 
-## Ch18.011 Xiaomi-Robotics-1: 10万小时训出开箱即用机器人基座模型，探索具身智能 Scaling 效应
+## Ch18.012 Xiaomi-Robotics-1: 10万小时训出开箱即用机器人基座模型，探索具身智能 Scaling 效应
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/xiaomi-robotics-1-embodied-base-model-scaling-2026.md`
 
@@ -907,7 +933,7 @@ Xiaomi-Robotics-1 验证了一条面向 [具身智能](https://github.com/QianJi
 
 ---
 
-## Ch18.012 MiniCPM-Robot：面壁智能开源具身智能 VLA 模型系列
+## Ch18.013 MiniCPM-Robot：面壁智能开源具身智能 VLA 模型系列
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/waic-minicpm-1-5b-model-2026.md`
 
@@ -939,7 +965,7 @@ RobotTrack 基于面壁 MiniCPM4-0.5B 模型加 MLP 结构训练，参数规模�
 
 ---
 
-## Ch18.013 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
+## Ch18.014 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
 
@@ -1003,7 +1029,7 @@ Physical AI is moving from research into production.
 
 ---
 
-## Ch18.014 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
+## Ch18.015 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/weilan-babyalpha-a3-machine-dog.md`
 
@@ -1070,7 +1096,7 @@ Physical AI is moving from research into production.
 
 ---
 
-## Ch18.015 原力灵机 DM0.5：4B 具身基础模型，Zero-Shot 提升 31%
+## Ch18.016 原力灵机 DM0.5：4B 具身基础模型，Zero-Shot 提升 31%
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/lingbot-dm05-4b-embodied-foundation-model-zero-shot-2026.md`
 
@@ -1120,7 +1146,7 @@ DM0.5 将 VLA（视觉-语言-动作）模型从精心搭建的"剧本环境"推
 
 ---
 
-## Ch18.016 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
+## Ch18.017 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/机器人端杯子之前在想什么afford-vla先找到杯子最趁手的那块区域.md`
 
@@ -1146,7 +1172,7 @@ Afford-VLA 包含三个关键步骤：
 
 ---
 
-## Ch18.017 TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
+## Ch18.018 TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/poxiaointelligent-tactile-robot-foundation-model-2026.md`
 
@@ -1172,7 +1198,7 @@ TouchWorld 的核心架构包含 Predictive（触觉目标预测）和 Reactive�
 
 ---
 
-## Ch18.018 具身智能空间视觉死穴，终于被最新顶会彻底解决！
+## Ch18.019 具身智能空间视觉死穴，终于被最新顶会彻底解决！
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/具身智能空间视觉死穴终于被最新顶会彻底解决.md`
 
@@ -1248,7 +1274,7 @@ VLA 模型在标准评测中动辄 90%+ 的成功率，但相机视角轻微变�
 
 ---
 
-## Ch18.019 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
+## Ch18.020 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
 
 > 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/icra26-symskill-robot-long-horizon-manipulation.md`
 
@@ -1321,7 +1347,7 @@ SymSkill 的成功呼应了具身智能领域的一个重要趋势：从"端到�
 
 ---
 
-## Ch18.020 具身原生世界动作模型（Embodied World Action Model）
+## Ch18.021 具身原生世界动作模型（Embodied World Action Model）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/全球首个具身原生世界动作模型来了.md`
 
@@ -1384,7 +1410,7 @@ LingBot-VA 2.0 的推理架构采用异步 Foresight 推理机制——"边想�
 
 ---
 
-## Ch18.021 景烁科技 — 具身智能数据基础设施
+## Ch18.022 景烁科技 — 具身智能数据基础设施
 
 > 📊 Level ⭐⭐⭐⭐ | 6.3KB | `entities/jingshuo-tech-embodied-ai-data-infrastructure-2026.md`
 
@@ -1450,7 +1476,7 @@ SkillForge 的核心产品理念是「数据基础设施即服务」——客户
 
 ---
 
-## Ch18.022 NVIDIA ASPIRE：机器人技能库与持续学习新范式
+## Ch18.023 NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
 > 📊 Level ⭐⭐⭐⭐ | 5.6KB | `entities/nvidia-aspire-robot-skill-library-code-as-policy.md`
 

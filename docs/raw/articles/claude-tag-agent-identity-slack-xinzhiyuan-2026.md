@@ -1,3 +1,12 @@
+---
+title: "Claude有「编制」了！Anthropic发的"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 116795dfa142e48c7c4cd38f270c508124926bed0f193674b10a0e9f424170be
+---
+
 sha256: 59b9fc36ae7a85398848d99b1c058298133694d7e48707f1b3f382d2b093af22
 ---
 title: "Claude 有『编制』了！Claude Tag——AI 在 Slack 里的独立身份与权限架构"

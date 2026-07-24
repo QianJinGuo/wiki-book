@@ -1,3 +1,12 @@
+---
+title: "When Impressive Performance Gains Do Not Matter"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 735c7cb004398b128d37a8f1a764ad3f079b72a0b227732dd3098384e9cc7f7b
+---
+
 sha256: c6f7793978d068e3a098454e5bb7746b07a015a1a2f6aeaa74d35f81de84afcd
 ---
 title: "When Impressive Performance Gains Do Not Matter"

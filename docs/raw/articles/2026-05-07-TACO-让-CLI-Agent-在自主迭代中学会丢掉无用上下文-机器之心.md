@@ -1,3 +1,12 @@
+---
+title: "TACO 让 CLI Agent 在自主迭代中学会丢掉无用上下文 机器之心"
+created: 2026-05-07
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: f093498824f32e52c38f7a7cb0f9a73b85c3f736bc6de877e602dc3f68ed5ee8
+---
+
 sha256: dd5f1d21f23c967a6c284b4213548c1f4ad4f8031fca8e247fcf6cbe2cabad15
 ---
 

@@ -1,3 +1,12 @@
+---
+title: "Anthropic深夜连放两弹：Sonnet 5、全新AI科研App重磅上线"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: cc260891fa32142b0a25b752f2d01a633fdcf3e544f203014b3e1778545c10af
+---
+
 sha256: bc2c497f26232c847c0eabd2c87158179f2d10af851901d1c6c158e34113eb16
 ---
 

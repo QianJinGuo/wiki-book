@@ -1,3 +1,12 @@
+---
+title: "Agents as Webs of Beliefs"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 25568971fa80068601a3c002b7b39d7eb7e169b30c4e4340719d71f007e1a164
+---
+
 sha256: 0ac7311eae15ae79470b9caccd8e6703f616f68506bf92c90cbbec2985e80cf3
 ---
 title: "Agents as Webs of Beliefs"

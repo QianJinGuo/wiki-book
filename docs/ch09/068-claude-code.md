@@ -115,12 +115,12 @@ MCP 是"连接协议"，解决的是"如何让 Claude Code talk to X"的问题�
 - 需要封装复杂操作（减少模型拼长命令）
 
 ## 相关实体
-- [Obsidian + Claude Code 集成指南](ch09/134-obsidian-claude-code-integration-guide.html) — 知识管理工具集成
+- [Obsidian + Claude Code 集成指南](ch09/136-obsidian-claude-code-integration-guide.html) — 知识管理工具集成
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html) — MCP 协议集成
 - [IMClaw](../ch03/076-claude-code.html) — IM 平台操控
-- [OpenClaw 安全增强](../ch11/228-openclaw.html) — 自托管 Agent 平台
-- [Kiro + Claude Code](../ch05/090-ai.html) — AI IDE 协同
-- [企业级 Agentic AI](../ch04/060-agentic-ai.html) — AWS 集成
+- [OpenClaw 安全增强](../ch11/230-openclaw.html) — 自托管 Agent 平台
+- [Kiro + Claude Code](../ch05/091-ai.html) — AI IDE 协同
+- [企业级 Agentic AI](../ch04/064-agentic-ai.html) — AWS 集成
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 > 本页整合来源：Claude Code 官方文档、Anthropic 源码分析、AWS China Blog、OpenClaw 社区实践
 

@@ -1,3 +1,12 @@
+---
+title: "GIAC 2026 圆满落幕：AI Native 进入深水区，技术组织如何重构？"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: caa240297aab51002cd6c6a658a67f5a8c434e4caa5fc134834299a5c3637bfa
+---
+
 sha256: b1181b0cdb49ee10bf11bf40227baad85b4750516d2dc42e3db2c875d27fbb4f
 ---
 

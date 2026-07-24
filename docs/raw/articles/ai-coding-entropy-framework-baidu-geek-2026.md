@@ -1,4 +1,13 @@
 ---
+title: "ai-coding-entropy-framework-baidu-geek-2026"
+created: 2026-07-24
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 8057913293c1e5f7ef88807d65d324e9781aca2c8543c170ebe3616157a39c01
+---
+
+---
 title: "AI Coding 的底层框架：一切优化都是在对抗熵增"
 source: wechat
 source_url: https://mp.weixin.qq.com/s/yX17UhyHuRo5IVdMKQpJUA

@@ -1,3 +1,12 @@
+---
+title: "Two days, one engineer, zero guesswork: Simplifying a complex modernization with IBM Bob"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 567d287ceb60514430d5a084d95a3caff1cfe5e9c9510b806cacaff09b168f70
+---
+
 sha256: 5ecd5f4232e44ae02b382b71b1c4b8050e38179ebad5cc2bf4f50fe92fc3dd25
 ---
 title: "Two days, one engineer, zero guesswork: Simplifying a complex modernization with IBM Bob"

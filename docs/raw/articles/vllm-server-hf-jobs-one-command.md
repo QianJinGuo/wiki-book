@@ -1,3 +1,12 @@
+---
+title: "Run a vLLM Server on HF Jobs in One Command"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 24fcdd455a17f2faa8dce6179fe62e4a00b36d555817c275d4e3015b1f3922a7
+---
+
 sha256: d7bae8670bce002d5207269ca14a76d65bf12b1862a38b1a7a160034babff90a
 ---
 title: "Run a vLLM Server on HF Jobs in One Command"

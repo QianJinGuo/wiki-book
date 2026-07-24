@@ -4,6 +4,7 @@ source_url: "https://mp.weixin.qq.com/s/Nmgink4YE0KVu8dTuEplyg"
 source_account: "百度Geek说"
 author: "地图情报团队·码农阿瑞"
 ingested: 2026-07-22
+sha256: 23eb8c8d60fb6dc4ced4b9a42aa469d89b9a537c1c27cc1675bbfda444a1434b
 type: raw-article
 tags: [trajectory-data, clickhouse, s2-geocoding, big-data, retrieval, baidu, trillion-level]
 review_value: 6

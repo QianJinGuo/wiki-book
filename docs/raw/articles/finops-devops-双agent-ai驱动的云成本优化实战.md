@@ -1,3 +1,12 @@
+---
+title: "FinOps + DevOps 双Agent — AI驱动的云成本优化实战"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 1a768a6155f8d6a4c8786d96560d1ebe3cdf09a271679c22ceceff014952ac04
+---
+
 sha256: 7c91ea3a28ef0ee0245ab90a1f49faf5223e54f1269050ff7af6bc77db73d86b
 ---
 source: rss

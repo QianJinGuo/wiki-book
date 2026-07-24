@@ -25,8 +25,8 @@
 
 ## 相关实体
 
-- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/162-toto-2-context-aware-log-analytics-for-complex-distributed.html)
-- [The best argument I've heard for why AI won't take your job](../ch05/090-ai.html)
+- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/163-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [The best argument I've heard for why AI won't take your job](../ch05/091-ai.html)
 
 ---
 

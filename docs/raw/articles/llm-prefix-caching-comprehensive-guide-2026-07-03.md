@@ -1,3 +1,12 @@
+---
+title: "llm prefix caching comprehensive guide 2026 07 03"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 443dfc295b9792362e749c9be16a5509a4d06a435b507732001df863c880b4d2
+---
+
 sha256: 0c38c7d63adf7699687663b4a67f2e8b3fc1957060e778dda9a78677b586a36f
 ---
 title: "LLM 缓存原理与实践：从 KV Cache 到 Prefix Caching，为什么 Agent 命中率常挂 90%"

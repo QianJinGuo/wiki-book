@@ -1,3 +1,12 @@
+---
+title: "从AI辅助编程到AI-DLC：紫讯落地 AI 原生研发新范式的实践"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: b009ad0ecb5d68ac24796b11f5091ffba854e049e65a5745871c1c1f8ffbe746
+---
+
 sha256: 3ff75e305379fe027ea4f85a9c217bd9bf5286e8e2b9960c38c5d45fa361a9b3
 ---
 source: rss

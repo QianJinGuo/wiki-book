@@ -1,3 +1,12 @@
+---
+title: "Building bilingual NER for cargo logistics with Amazon Bedrock"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 1ad034116fa7f73f1d38c1729f5966cc98b8797c8e3e438dd7807373fa0b1824
+---
+
 sha256: b7190a26912257dd89d6bedde7f9c47e465ed825091e3e982f5624982973d622
 ---
 source: AWS China ML

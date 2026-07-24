@@ -1,3 +1,12 @@
+---
+title: "Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: dfeaf3e4fe878b0a4110db28e88eb212c97449b1c477c15813cdc5a50eab308c
+---
+
 sha256: 8a8c9313f7e1daccc83e9a3add8c286f300f3b9ac903ef21757235d9980e7a6c
 ---
 source: rss

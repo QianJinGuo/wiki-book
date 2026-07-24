@@ -1,3 +1,12 @@
+---
+title: "刚刚OpenRouter发布2026最值得关注的“开源F4”，开源追上闭源了，差距只剩3到6个月"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 8c5840ef381a6d0c0c127ddb8039195b3a84533c06261b93ff306fee795ed9f7
+---
+
 sha256: b99d74a199b5319f0444246c579106bac462973dfd59811ecde8323d5ff27e3d
 ---
 title: "OpenRouter 发布 2026 最值得关注的『开源 F4』：DeepSeek V4 Flash、GLM 5.2、MiniMax M3、Nemotron 3 Ultra"

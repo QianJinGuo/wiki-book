@@ -1,3 +1,12 @@
+---
+title: "Build an agentic AI healthcare claims pipeline with Amazon Bedrock and AWS HealthLake"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: a7cb5a2e4f156c28e20418d58432083b237d1d3185cd7dc28e9857fd9280f475
+---
+
 sha256: 661e4fc3ca640636f2e80281858344f1ad71587fdfc371fcdcf6001f250193cb
 ---
 source: rss

@@ -1,3 +1,12 @@
+---
+title: "从「不敢发」到「天天发」：AI Agent 时代的 CI/CD 生存指南"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: a33ddac8ff6fad3a8208b0a83b3ee0a956b8aa89e1b9b4c10f950f08f179371d
+---
+
 # 从「不敢发」到「天天发」：AI Agent 时代的 CI/CD 生存指南
 
 > 吕超 · 阿里技术 · 2026年7月7日 18:08 · 浙江

@@ -1,3 +1,12 @@
+---
+title: "阿里巴巴 蚂蚁 LoongSuite GenAI 可观测语义规范 从统一数据语言到规模化落地 阿里技术"
+created: 2026-05-12
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 5355d8e0f0864d4973511f5e142a84177ac99f681500c35e9c4e0c07e80c1ca1
+---
+
 sha256: c679b3c67bc1b67cd953f41bf5092423e9fa6267f876668b46d1623973e7d919
 ---
 

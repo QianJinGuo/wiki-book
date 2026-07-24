@@ -1,3 +1,12 @@
+---
+title: "前言"
+created: 2026-06-24
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 3757ff04fc5e35f3d90ae0022f51166d7ee92396686caa1176a47eaab68343b7
+---
+
 sha256: 3c2e254d58b68297cab2ad22aa442ff5e4e2a9b5c10f9ef6896a20383b4065be
 ---
 

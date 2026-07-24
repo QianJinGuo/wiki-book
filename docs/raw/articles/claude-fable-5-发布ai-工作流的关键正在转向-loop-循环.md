@@ -1,3 +1,12 @@
+---
+title: "Claude Fable 5 发布：AI 工作流的关键正在转向 Loop 循环"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 9a93623bad042425b7e5b75bec0a21271886107370434316452bf2d5e5a20e1d
+---
+
 sha256: 31efdbac981c407c64e137e4cf08854171f30ff168c591bbcffdfc52b6675a62
 ---
 title: "Claude Fable 5 发布：AI 工作流的关键正在转向 Loop 循环"

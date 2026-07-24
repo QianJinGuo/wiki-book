@@ -1,3 +1,12 @@
+---
+title: "frontend ai coding problem to solution taobao 2026 06 22"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 7b7741bc4ca2eb6b96e508b374c8557eca2ffbd8889d413f416f393ac82438cc
+---
+
 sha256: ddee2002768b93cfd0d74c373f109cba5980d651998e63d0e5ab68db92b24bb8
 ---
 

@@ -1,3 +1,12 @@
+---
+title: "Agent 自进化(四): 评估 — 没有外置分数，就没有自动自进化"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 5efc4c7627db78dcfbf0dff3b2eb750fd4eab3ee88bc57baf8244149486c1886
+---
+
 # Agent 自进化(四): 评估 — 没有外置分数，就没有自动自进化
 
 > Theo · Theo Blog · 2026年6月18日 22:42 · 浙江

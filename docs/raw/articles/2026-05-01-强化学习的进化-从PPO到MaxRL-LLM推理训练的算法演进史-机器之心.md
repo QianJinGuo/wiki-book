@@ -1,3 +1,12 @@
+---
+title: "强化学习的进化 从PPO到MaxRL LLM推理训练的算法演进史 机器之心"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 06b90152efa21e25fd04a0a9afaf3bb13d247e9a7435a5f90ebed683429c255a
+---
+
 sha256: d1146eef9fdadc0f26576697e604241e2be8d1b39eac6cd90767fdc6e5d70ec2
 ---
 

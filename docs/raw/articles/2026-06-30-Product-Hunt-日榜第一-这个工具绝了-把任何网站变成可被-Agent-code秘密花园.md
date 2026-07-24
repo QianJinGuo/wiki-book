@@ -1,3 +1,12 @@
+---
+title: "Product Hunt 日榜第一 这个工具绝了 把任何网站变成可被 Agent code秘密花园"
+created: 2026-06-30
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: c40dba0135b1a02b928ec49080305bcc4dec0ce68ed05a608a6c00713fc2d818
+---
+
 sha256: 7cd32d7e6aaa7c380330ee3c91f5a9b428c75695da928dbbb5d222f601b96a02
 ---
 

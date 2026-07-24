@@ -1,3 +1,12 @@
+---
+title: "Building a serverless A2A gateway for agent discovery, routing, and access control"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: e250b2398210ad0b60c30cd1a99e65a2f7d50605ee4272606b15cae175dba561
+---
+
 sha256: 6d5ed28a20a3c1051e0c871d0eead2001e5b10c57bda920f83cc040d6859e7d6
 ---
 source: rss

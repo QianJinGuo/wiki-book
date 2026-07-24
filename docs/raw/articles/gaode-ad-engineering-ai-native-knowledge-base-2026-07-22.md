@@ -4,6 +4,7 @@ source_url: "https://mp.weixin.qq.com/s/1d9LDoD2SOcEZ19mDwiE-Q"
 source_account: "高德技术"
 author: "信息业务中心"
 ingested: 2026-07-22
+sha256: b379e261ad796992e44b30e3b3f5710a2b8316406124fa7689ee46ae4992db8e
 type: raw-article
 tags: [knowledge-base, ai-native, retrieval, intent-routing, knowledge-domain, gaode, enterprise-rag]
 review_value: 7

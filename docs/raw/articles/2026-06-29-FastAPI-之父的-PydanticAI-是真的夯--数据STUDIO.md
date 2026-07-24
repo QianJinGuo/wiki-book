@@ -1,3 +1,12 @@
+---
+title: "1. 定义你的输出（这是合约，不是建议）"
+created: 2026-06-29
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: fe4ad79d87d7eee67e8f22cf3a394a266be0cb0352f2bb888024078c6b3b2692
+---
+
 sha256: 48732b4d99aa53fee8fdb93d7d2bc1bf15cfa5bf6c37425e32734eae5b672d3d
 ---
 

@@ -1,3 +1,12 @@
+---
+title: "WorkBuddy专家团提示词全曝光：多Agent协作原来是这样产品化的"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 9629b365025f3ddcd120b74a8a061662110e94fc1db8524075d515ba750a136e
+---
+
 sha256: 3ff12f11e45e4fcd1c103d1bc6cb0d6404fee3ef121a070376a090bba1001f29
 ---
 title: "WorkBuddy专家团提示词全曝光：多Agent协作原来是这样产品化的"
