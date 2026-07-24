@@ -1,3 +1,12 @@
+---
+title: "Harness 工程之道：Skill 原理与最佳实践"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 9a105225e12af1ff1e263238fcc49deea6ca1a269157737fbdd0c7bc34b96bcd
+---
+
 sha256: c234aab54d41615a42491e2036c897a141137fce4bd1d691ba028400bbcaa27d
 ---
 source: wechat

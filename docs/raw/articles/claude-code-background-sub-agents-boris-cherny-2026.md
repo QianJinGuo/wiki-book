@@ -1,3 +1,12 @@
+---
+title: "Claude Code官宣下一版大升级！你在聊天，后台把活干完了"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 06fe6d2ad5202ca8b448fa4e3d1041ee36aac0d57f45bfb299e04bdbc38f2d27
+---
+
 sha256: d44c9a1d537ac1b8ea6314d232bfed12dd088b59c3d2288dfc2698b46a0f43d8
 ---
 title: "Claude Code 官宣下一版大升级：子智能体默认后台运行"

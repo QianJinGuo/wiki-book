@@ -1,4 +1,13 @@
 ---
+title: "dream-dense-retrieval-autoregressive-modeling-challengehub-2026"
+created: 2026-07-24
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 0d499544bdd05f26acb2d8696ff6f12cf0c71c1eb33dee872d6fe86cdd3b91fc
+---
+
+---
 title: "DREAM：让大模型自己'猜答案'训练稠密检索器，无需标注正负样本"
 source: wechat
 source_url: https://mp.weixin.qq.com/s/OaChk2wvXSY2s2QrkgOObw

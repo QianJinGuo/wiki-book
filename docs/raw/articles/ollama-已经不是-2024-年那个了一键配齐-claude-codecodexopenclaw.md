@@ -1,3 +1,12 @@
+---
+title: "Ollama 已经不是 2024 年那个了！一键配齐 Claude Code/Codex/OpenClaw"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 3d016cf88bccf6acc231e5bcb673e292e18e38b6b9922b140bca2c8772b7fd21
+---
+
 sha256: 28c8540562b6520e718baef2585dd4475a5c6f0a455b513edc1061db8665ff70
 ---
 title: "Ollama 已经不是 2024 年那个了！一键配齐 Claude Code/Codex/OpenClaw"

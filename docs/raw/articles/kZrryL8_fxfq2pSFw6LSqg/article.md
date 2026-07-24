@@ -1,3 +1,12 @@
+---
+title: "Harness Engineering for Self-Improvement — 通过 Harness 工程实现 AI 自我提升"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: f1b7db9ab866970d36eef62cf3be0f5ca14946e1cc7a6c300527ba1ed4bf0baa
+---
+
 # Harness Engineering for Self-Improvement — 通过 Harness 工程实现 AI 自我提升
 
 > Lilian Weng (翁荔) 博客 · 机器之心编译 · 2026年7月7日 17:31

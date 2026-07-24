@@ -1,3 +1,12 @@
+---
+title: "Build generative UI for AI agents on Amazon Bedrock AgentCore with the AG-UI protocol"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 57f0858db46d4e1375dde4c7e28df8b90c6d3bb6df71092a9c1c3b9b7bd93cfb
+---
+
 sha256: 4ca3096e06b6d9f842b7da7de7a4eee05fc660200b2b96d543bec1554e75b076
 ---
 source: AWS China ML

@@ -4,6 +4,7 @@ source_url: "https://mp.weixin.qq.com/s/t6jDH4JoLCj6ZcAOIByHdw"
 source_account: "高德技术"
 author: "信息业务中心"
 ingested: 2026-07-22
+sha256: 0b31032dedd1310119ecd3585faabb51289e342f90969749e7e608d831696f8b
 type: raw-article
 tags: [codewiki, knowledge-base, llm, code-understanding, merkle-tree, call-graph, evidence-based, gaode]
 review_value: 7

@@ -1,3 +1,12 @@
+---
+title: "agent world扩展真实世界环境让智能体与环境协同进化"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 4df68ee176a611166acce2bd50b2d8caa95eead9ad9fcfc336fae4a7fd8a1d42
+---
+
 sha256: 36d67bc36a55005c78cfd3aaf69001f341c6a7c6b659c5d8f53a72fb530e1c8c
 ---
 

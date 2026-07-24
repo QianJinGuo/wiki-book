@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **53 篇**实体，按深度递增排列。
+> 本章收录 **54 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 15 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 34 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 35 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
 
 ---
@@ -3891,7 +3891,69 @@ VLX-Seek-3B 在多项基准上超越更大参数量的模型：
 
 ---
 
-## Ch17.044 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
+## Ch17.044 FLUX 3 — Black Forest Labs 多模态流模型
+
+> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/flux-3-multimodal-flow-model-black-forest-labs-2026.md`
+
+# FLUX 3 — Black Forest Labs 多模态流模型
+
+> **Background**：本文档基于 Black Forest Labs 官方博客和早期评测数据建立。FLUX 3 是 2026 年 7 月发布的多模态基础模型，统一学习图像、视频和音频。
+
+## 概述
+
+FLUX 3 是 Black Forest Labs 发布的第三代多模态基础模型，统一学习图像、视频和音频。基于 Self-Flow 方法构建，高效对齐多模态生成与理解。核心理念是"从所有模态同时学习"，通过模态间的相互约束来理解底层现实——"图像捕捉空间结构，视频恢复时间维度，音频揭示因果关联，语言连接目标与抽象"。
+
+## 架构创新
+
+### Self-Flow 对齐方法
+
+FLUX 3 基于 Self-Flow 方法构建，这是一种高效的对齐多模态生成与理解的方法。在此方法上，团队显著扩展了计算和训练数据规模，同时训练视频、图像和音频。
+
+### 统一多模态骨干网络
+
+FLUX 3 的架构将多个模态整合在同一个骨干网络中。设计原则是"没有任何单一模态能提供完整描述"，每个模态都是同一底层现实的投影，通过联合学习它们的相互约束来获得更丰富的表示。
+
+## 核心能力
+
+### 视频生成（含原生音频）
+
+- **Text-to-video**：文本直接生成视频+音频，最长 20 秒
+- **Image-to-video**：从起始帧继续或作为视觉参考
+- **Video-to-video**：保留核心元素转换场景
+- **Keyframe-to-video**：关键帧之间可控过渡
+- **Agentic chaining**：多镜头序列链接
+- 多语言对白、广泛视觉风格、排版生成
+
+早期评测中最强胜率对比 Runway Gen-4.5 达 77%、Luma Ray 3.2 达 93%。
+
+### 图像生成
+
+相比前代 FLUX 1/2（参见 [图像生成模型](https://github.com/QianJinGuo/wiki/blob/main/entities/meta-agent-image-generation-model.md)），在复杂 prompt 处理、多语言文字渲染方面显著提升。
+
+### Action 预测
+
+FLUX 3 将动作预测直接集成到模型中，使用预训练的视频骨干网络作为动力感知基础，微调专用动作模型。与 mimic robotics 合作开发 FLUX-mimic 视频动作模型，正在奥迪工厂进行灵巧操作测试。这使其进入了 [world model](https://github.com/QianJinGuo/wiki/blob/main/entities/loopwm-looped-world-models.md) 和具身智能领域。
+
+## 与同类工作的对比
+
+FLUX 3 的定位是统一视频/图像/音频/动作的多模态基础模型，与 [NVIDIA Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)（侧重于机器人视频生成和物理仿真）和 [Google 的多模态 embedding](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-embedding-2-multimodal-unified-vector-hyman.md) 不同，前者更侧重生成质量和创意表达，同时保留了物理世界建模能力（通过 action 预测分支）。
+
+## 发布计划
+
+- **FLUX 3 Video**：API 和私有权重访问（首批开放）
+- **FLUX-mimic / FLUX 3 Action**：研究和商业合作伙伴
+- **FLUX 3 Image**：API 和私有权重访问
+- **FLUX 3 Dev**：开源权重多模态骨干网络
+
+## 意义与评估
+
+FLUX 3 代表了视频生成领域向**统一多模态基础模型**方向的重要进展。其"感知→预测→行动"的路线图指向 real-world visual intelligence。Self-Flow 方法让多模态生成和理解在同一架构中对齐，是一个值得关注的技术方向。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/flux-3-multimodal-flow-model-black-forest-labs-2026.md)
+
+---
+
+## Ch17.045 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/vivo-magicbokeh-cvpr-2026-generative-bokeh-diffusion.md`
 
@@ -3933,7 +3995,7 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.045 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
+## Ch17.046 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/feifei-li-masked-visual-actions-world-model-2026.md`
 
@@ -3977,7 +4039,7 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.046 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
+## Ch17.047 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md`
 
@@ -4022,7 +4084,7 @@ CoLT（Chain of Latent Thoughts，潜思维链）将多模态大模型（MLLM）
 
 ---
 
-## Ch17.047 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+## Ch17.048 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md`
 
@@ -4059,7 +4121,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.048 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
+## Ch17.049 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/mokus-cross-modal-knowledge-transfer.md`
 
@@ -4087,7 +4149,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.049 Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
+## Ch17.050 Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
 
 > 📊 Level ⭐⭐⭐ | 2.8KB | `entities/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md`
 
@@ -4130,7 +4192,7 @@ VLX-Flow 的训练将「观察」和「回答」分开：
 
 ---
 
-## Ch17.050 Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
+## Ch17.051 Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
 
 > 📊 Level ⭐⭐⭐ | 2.7KB | `entities/om-ai-vlx-go-vlm-navigation-0.6b-2026.md`
 
@@ -4172,7 +4234,7 @@ PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实�
 
 ---
 
-## Ch17.051 火山引擎 RTM：超低延时直播技术
+## Ch17.052 火山引擎 RTM：超低延时直播技术
 
 > 📊 Level ⭐⭐⭐ | 2.5KB | `entities/volcano-engine-rtm-low-latency-streaming.md`
 
@@ -4216,7 +4278,7 @@ PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实�
 
 ---
 
-## Ch17.052 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.053 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
@@ -4340,7 +4402,7 @@ PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实�
 
 ---
 
-## Ch17.053 GenCeption — Video Generation Models are General-Purpose Vision Learners
+## Ch17.054 GenCeption — Video Generation Models are General-Purpose Vision Learners
 
 > 📊 Level ⭐⭐⭐⭐ | 3.1KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
 

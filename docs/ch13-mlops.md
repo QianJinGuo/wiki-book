@@ -2,7 +2,7 @@
 
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
-> 本章收录 **20 篇**实体，按深度递增排列。
+> 本章收录 **21 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 17 |
+| ⭐⭐ 工程师 | 需编程基础 | 18 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -2152,7 +2152,92 @@ Oracle 将 MCG 部署在 OCI Container Engine for Kubernetes 上，结合 DAC（
 
 ---
 
-## Ch13.016 EVA-Bench Data 2.0
+## Ch13.016 AI Agent 应用精细化评测：评测体系设计与工程实践
+
+> 📊 Level ⭐⭐ | 4.7KB | `entities/agent-evaluation-fine-grained-system-aliexpress-2026.md`
+
+# AI Agent 精细化评测体系
+
+## 一句话总结
+
+AliExpress 技术团队提出了面向生产级 AI Agent 的**全链路精细化评测体系**，将 Agent 按照架构模块（感知/规划/记忆/工具）逐层拆解、按"质量 × 成本 × 性能"三维度构建 35+ 项指标，配合 8 类分层评测数据集、6 种结构化 Judge Task 和自动化执行引擎，将 Agent 评测从黑盒成绩单升级为白盒诊断系统。
+
+---
+
+## 核心贡献
+
+### 1. 评测面向架构：模块级白盒诊断
+
+Agent 按内部结构拆解为四个模块，评测指标与架构同构——意图识别准确率低直接定位感知模块，路由决策出错对应调整规划策略。端到端评测定义"好车"标准，模块级评测提供"修好车"路径。
+
+### 2. 质量 × 成本 × 性能三维指标
+
+突破传统仅关注回答质量的局限，将**成本（模型调用次数、Token 消耗、工具调用次数）**和**性能（首 Token 延迟、端到端延迟、模块级延迟）**纳入正式评测体系。健康的 Agent 是三个维度在当前业务场景下的最优平衡。
+
+### 3. 6 种结构化 Judge Task
+
+将 LLM-as-Judge 从"让 LLM 打分"升级为标准化判断任务：
+
+| Task 类型 | 核心能力 | 代表指标 |
+|----------|---------|---------|
+| 二元判断 | 语义级是否判定 | 任务完成率、意图识别准确率 |
+| 一致性判断 | 忠实性+合规性核查 | 幻觉率、指令遵循能力 |
+| 多标签匹配 | 列表交集/差集对比 | 多意图识别率、工具调用准确率 |
+| 上下文保留 | 多轮记忆评估 | 短期记忆保留率、记忆衰减曲线 |
+| 相关性判断 | RAG 检索质量 | 长期记忆检索精确率/召回率 |
+| 行为判断 | 交互行为分类 | 模糊意图澄清率 |
+
+每个 Prompt 遵循**单一职责、先推理后判断、负例引导、结构化输出**四原则。
+
+### 4. 8 类分层评测数据集
+
+"基础覆盖 + 专项探测"结构：基础技能 + 知识问答为基座，多轮对话/异常输入/工具调用/多意图/模糊意图/长对话衰减为专项探测。
+
+关键设计：Mock 模式（E2E_MOCK）保证可复现；真实模式（E2E_REAL）反映真实表现；包含负例（如虚构接口名检测幻觉）；主指标判定 + 旁路指标诊断的双层评判。
+
+### 5. 自动化执行引擎
+
+- 数据集自动装配（15 种评测范围）
+- 轻量级 EvalTrace 运行时采集（不侵入 Agent 业务逻辑）
+- 路由错误时下游指标自动跳过（不污染其他模块数据）
+- 3 线程并行 + 120s 超时 + 重试
+
+### 6. LLM 自动生成评测集
+
+"Aone 文档知识工具集"输入文档 URL → 按数据集类型 Prompt 模板生成结构化用例 → 人工审核 → 入库。
+
+---
+
+## 与现有 wiki 知识的关系
+
+- **填补空白**：wiki 此前没有专门的 Agent 评测体系内容。本文提供了从指标设计→数据集工程→Judge Task→执行引擎→可视化的完整方法论
+- **互补 WorkBuddy**：[WorkBuddy](https://github.com/QianJinGuo/wiki/blob/main/entities/workbuddy-product-framework-agent-harness-anne-2026.md) 关注 Agent 产品架构（Harness/Loop/Memory），本文关注"如何评测 Agent 做得好不好"
+- **互补 Loop Engineering**：[Loop Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-next-keyword-for-ai-2026.md) 定义了三层概念，本文将评测拆解到对应模块（感知/规划/记忆/工具）——评测结构应与架构同构
+- **前作关联**：本文是《全球化商品中心智能答疑Agent实践》的续篇，从"验证基础能力"演进到"全链路精细化诊断"
+
+---
+
+## 关键数据
+
+- 来源：AliExpress技术（★★★★★ 1st-party Alibaba Group），作者砚东
+- 指标总数：35+ 项（端到端 11 项 + 核心模块 24 项 + 成本/性能指标）
+- 数据集类型：8 类
+- Judge Task 类型：6 种
+- Mock 模式：E2E_MOCK / E2E_REAL 双模式
+- 评测范围：15 种
+
+---
+
+## 延伸阅读
+
+- [WorkBuddy：LLM 产品实践](https://github.com/QianJinGuo/wiki/blob/main/entities/workbuddy-product-framework-agent-harness-anne-2026.md) — Agent 产品架构对比
+- [Loop Engineering 会是 AI 的下个关键词吗？](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-next-keyword-for-ai-2026.md) — Loop/Harness/Graph 三层概念
+- [高德 ABot-AgentOS](https://github.com/QianJinGuo/wiki/blob/main/entities/abot-agentos-robot-agent-os-amap-2026.md) — 具身 AI 的 Agent OS（含 EmbodiedWorldBench 评测）
+- [后端系统「AI 知识库体系」建设实践](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-knowledge-base-system-backend-practice-alibaba-2026.md) — Alibaba 知识库方法论
+
+---
+
+## Ch13.017 EVA-Bench Data 2.0
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/eva-bench-data-2-voice-agent.md`
 
@@ -2247,7 +2332,7 @@ EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维
 
 ---
 
-## Ch13.017 STAROps RUM Intelligent Inspection — Detecting Experience Degradation Early
+## Ch13.018 STAROps RUM Intelligent Inspection — Detecting Experience Degradation Early
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/starops-rum-intelligent-inspection.md`
 
@@ -2283,7 +2368,7 @@ STAROps RUM Inspection is publicly available through the Alibaba Cloud STAROps c
 
 ---
 
-## Ch13.018 WANDR Benchmark — 评估 Research Agent 的 Wide-and-Deep 研究能力
+## Ch13.019 WANDR Benchmark — 评估 Research Agent 的 Wide-and-Deep 研究能力
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/perplexity-wandr-benchmark-research-agents-wide-deep-2026.md`
 
@@ -2330,7 +2415,7 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 
 ---
 
-## Ch13.019 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
+## Ch13.020 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
 
 > 📊 Level ⭐⭐⭐ | 22.2KB | `entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md`
 
@@ -2546,7 +2631,7 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 
 ---
 
-## Ch13.020 Discretizing Reward Models
+## Ch13.021 Discretizing Reward Models
 
 > 📊 Level ⭐⭐⭐⭐ | 6.0KB | `entities/abs-2606-21795.md`
 

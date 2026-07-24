@@ -1,3 +1,12 @@
+---
+title: "Agent World 扩展真实世界环境 让智能体与环境协同进化  机器之心"
+created: 2026-05-05
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 03fa75f7c7674f9fcd76f02d5dcf78468839393a3451572fdd5be5879142be85
+---
+
 sha256: ebc5dfad0bdc92a66c4625eba56b1251943a69b882227973297bd7d803288d9f
 ---
 

@@ -1,3 +1,12 @@
+---
+title: "POSIX Is Not A Shell"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 0aee0dba439e3d346ae0be52b60d502196ee1b6f0b378b3deb1b89614d805393
+---
+
 sha256: bb368efe10a81c052679b92e1a07f97cb9177ad6d7cb5750a94811fb5c53da0b
 ---
 title: "POSIX Is Not A Shell"

@@ -1,3 +1,12 @@
+---
+title: "We Ran 250 AI Agent Evals to Find Out if Skills Beat Docs. The Answer Is More Complicated Than We Expected"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 0f2ff97bd1fd688dac0f73c5b034206723e0227b974f30dd3693e31a4415ab10
+---
+
 sha256: 4907bd08b017b2ad7b197ae918d2595d6c1f4d2e114aa44fa090494e0cb4b286
 ---
 title: "We Ran 250 AI Agent Evals to Find Out if Skills Beat Docs. The Answer Is More Complicated Than We Expected"

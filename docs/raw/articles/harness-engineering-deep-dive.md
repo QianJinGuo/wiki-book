@@ -1,3 +1,12 @@
+---
+title: "深入理解 AI Agent 时代的驾御工程：Harness Engineering"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 4856774d82817aed009fab14640237e29ff872c4d2cead82bb8ac414f0386068
+---
+
 sha256: cc393ae8d84c776c1c242b4151c36b1b84aff11738cae5061819e906cd1f100d
 ---
 title: "深入理解 AI Agent 时代的驾御工程：Harness Engineering"

@@ -1,3 +1,12 @@
+---
+title: "product hunt 日榜第一这个工具绝了把任何网站变成可被 agent 复用的技能"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: db7559ed8c95ad503b46e7eefcc686aab0ac8607b9425d5e945e02c3f7d579c4
+---
+
 sha256: 57872a26d90c3dcacc4e73cf8f3c0c54f6e04f0260a88d78183eb98225957858
 ---
 

@@ -1,3 +1,12 @@
+---
+title: "打造真实项目的 AI 编程环境 Matt Pocock 的 Skill 工作流完 技术极简主义"
+created: 2026-06-20
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 5a998d13e37e27fc785b4a6bd59f4d4f8851c86e1ecd332e70ba93ec0557d9a3
+---
+
 sha256: 37ae7b4c863e350f0ad8141e2a2a02c7b4a474bc480988d0029acf47adb8f6f6
 ---
 

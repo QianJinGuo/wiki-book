@@ -1,3 +1,12 @@
+---
+title: "Multi-tenant LLM analytics with row-level security: How we built a secure agent on AWS"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 65990d072a86d3ff26bdf4b5ad0bb4c2ec6bca13ebea850b4a062c3b20c885cb
+---
+
 sha256: d563be2b62b768aed6df22493b0e90a22f66e396129c7680e6b71f6b06857a75
 ---
 source: rss

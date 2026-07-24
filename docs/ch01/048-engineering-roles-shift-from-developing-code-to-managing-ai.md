@@ -69,12 +69,12 @@ CIO Dive 的核心受众是技术管理者，因此报道着重于组织层面�
 
 ## 相关实体
 
-- [Engineering Roles Shift From Developing Code To Managing Ai](../ch05/076-engineering-roles-shift-from-developing-code-to-managing-ai.html)
+- [Engineering Roles Shift From Developing Code To Managing Ai](../ch05/077-engineering-roles-shift-from-developing-code-to-managing-ai.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 - [Gbhackers Sandworm Shift From It Breaches](https://github.com/QianJinGuo/wiki/blob/main/entities/gbhackers-sandworm-shift-from-it-breaches.md)
-- [Hs.Playerzero Ai Code Review](../ch05/090-ai.html)
+- [Hs.Playerzero Ai Code Review](../ch05/091-ai.html)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/141-code-simulation-for-enterprise-engineering-playerzero.html)
-- [DeepMind AI Pointer — 交互范式变革](../ch05/090-ai.html)
+- [DeepMind AI Pointer — 交互范式变革](../ch05/091-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/engineering-roles-shift-from-developing-code-to-ma.md)
 

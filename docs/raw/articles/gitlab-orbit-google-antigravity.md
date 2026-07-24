@@ -1,3 +1,12 @@
+---
+title: "Google Antigravity agents get full context with GitLab Orbit"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 4b7a18f1031c8699e1b3d9372ccebcc72024111ac6be5a7ecab4059d26fb2142
+---
+
 sha256: b758216d521454f2389320354c52c21a3240766f81b6c708371cdf6e68a3e837
 ---
 title: "Google Antigravity agents get full context with GitLab Orbit"

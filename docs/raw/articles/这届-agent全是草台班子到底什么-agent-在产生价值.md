@@ -1,3 +1,12 @@
+---
+title: "这届 Agent，全是草台班子：到底什么 Agent 在产生价值？"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 4afccf16d8996acdae7e9118d0ed2deea709278db6727c592754b75cb7b951a8
+---
+
 sha256: eceec6eb5f4956338d187f5ab459197c68be4ee231df5044e14dc773ca9da8db
 ---
 title: "这届 Agent，全是草台班子：到底什么 Agent 在产生价值？"

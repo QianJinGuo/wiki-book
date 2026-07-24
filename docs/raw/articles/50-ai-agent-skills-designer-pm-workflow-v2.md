@@ -1,3 +1,12 @@
+---
+title: "从需求到原型：50 个设计师与产品经理值得掌握的 AI 智能体技能"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 0f0abfdfc5ca7e94115d7755ddb6995875385784ed2e3990bc2b375704accf06
+---
+
 sha256: e0ca49ff2b5d4b18161d56b44909ffd10fc7262655eecaab030d577aeb869cb4
 ---
 source: wechat

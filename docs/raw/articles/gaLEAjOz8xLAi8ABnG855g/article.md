@@ -1,3 +1,12 @@
+---
+title: "Harness 工程：第 6 课：Skill 系统"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: b05ca9b984d12a1c79f63474e8d7519cf08d0a0e89a8189a5138f9f248bf532f
+---
+
 # Harness 工程：第 6 课：Skill 系统
 
 > 原创 · 数字理想 · AI数字理想 · 2026年7月6日 16:58 · 内蒙古

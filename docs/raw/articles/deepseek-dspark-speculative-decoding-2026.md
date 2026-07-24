@@ -1,3 +1,12 @@
+---
+title: "DeepSeek V4 DSpark：投机解码框架"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 908c9d52a85cb9520958434cad3dbb3af09064d002a104e3214dce65a9e4b7fc
+---
+
 sha256: 3bbc5f3add0c205947d50753163a8e42817d14fc9335b11d2278a49ab5e02f52
 ---
 title: "DeepSeek V4 DSpark：投机解码框架 DeepSpec 开源"

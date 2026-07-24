@@ -1,3 +1,12 @@
+---
+title: "一文看懂 AI 编程智能体工程化新范式 Loop Engineering 技术极简主义"
+created: 2026-06-12
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 7a5480f47a581ca667e3614187c1b86b88c9f25be9cd0b52c959d7fffa667044
+---
+
 sha256: c3a862af6d6b4e03f089c42794994c91489b3b266c6a7086624a2545423f22dc
 ---
 

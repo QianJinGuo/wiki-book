@@ -1,3 +1,12 @@
+---
+title: "Pair Nova 2 Lite with Claude for cost-optimized document processing"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 551e0f452914eabb05dad71d21303ce3dd0ea9ed4524ad6afd1ef2f731d55e52
+---
+
 sha256: c8851ea611bd9d2a9d198657d99d50af19600b6dbe436f61713a013c5ec51c94
 ---
 source: rss

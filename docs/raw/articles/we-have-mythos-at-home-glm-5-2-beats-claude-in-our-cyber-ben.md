@@ -1,3 +1,12 @@
+---
+title: "We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 626e261bb05eacc3d0606e9ba1e723baba54965d0dc609c41206cc9d3bff7a68
+---
+
 sha256: 63951d50c99ab6826ad7d4282168ab505b3f25dd9d06bdcb31abd088ff63dee5
 ---
 title: "We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks"

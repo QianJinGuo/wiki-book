@@ -1,3 +1,12 @@
+---
+title: "How to build Agents Where Data Already Lives"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 7cf23f22ff551699168cf68267e6a42be9e02e0d980a46325a067b378b34d462
+---
+
 sha256: b072b5b7e8984634137149aa649451b0deb754c267a7da71a2cd10116dffccba
 ---
 source: rss

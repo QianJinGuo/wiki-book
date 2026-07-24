@@ -1,3 +1,12 @@
+---
+title: "vla不够了触觉将改写具身智能新格局"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 38e308ab9f39e4a2c40743fbcaa3ddf870cc9c7fb7881c8c6cea6249be2f7fd6
+---
+
 sha256: 7fa88318c63e18e617a890e92f89c9baa7cb7c9f0a092ee96f03e44d6f91f1ea
 ---
 

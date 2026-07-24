@@ -1,3 +1,12 @@
+---
+title: "Loop世界模型论文登顶Hugging Face，来自中国一家初创，周鸿祎陆奇都投了"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 83446c8b26009fc8177ac7ff2745b4e42e2310a7397b56748ea93fc9319ceea3
+---
+
 sha256: d655c4896add889b5faa451e8dec8a6c82e2e468270d4977bedd0377387ff9d7
 ---
 source: wechat

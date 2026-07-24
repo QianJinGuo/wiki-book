@@ -1,3 +1,12 @@
+---
+title: "The Rules of the Game: A Survey of Rubrics for Large Language Models"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: 66191969e0bf401697d3adade422a5b0401dc6fe92a92c0e12dd55e9446a12e7
+---
+
 sha256: edcd7b3b3d42674a385a9f913f9f6af441001c7c2bf7b26032e25e39f869d946
 ---
 title: "The Rules of the Game: A Survey of Rubrics for Large Language Models"

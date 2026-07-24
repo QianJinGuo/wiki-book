@@ -44,7 +44,7 @@ Individual SDD（Spec-Driven Development）向团队级 Harness 演进的完整�
 
 ### 2. "执行者不能做最终裁判"——独立 Verification 的工程哲学
 
-Lattice 架构中最核心的原则是"执行者不能做最终裁判"。同一个 Agent 可以写代码、修失败、补测试，但不能只凭自己的解释宣布"已经通过"。这一原则在 Verification 层的实现是"确定性 gate 优先"：build → lint → unit-test → ac-coverage → drift-check → compliance，每个 gate 由外部信号（而非 Agent 自我评价）决定通过与否。这与 [Agent Harness 架构](ch05/039-agent-harness.html) 中"Harness 作为可信中介"的设计理念一脉相承。
+Lattice 架构中最核心的原则是"执行者不能做最终裁判"。同一个 Agent 可以写代码、修失败、补测试，但不能只凭自己的解释宣布"已经通过"。这一原则在 Verification 层的实现是"确定性 gate 优先"：build → lint → unit-test → ac-coverage → drift-check → compliance，每个 gate 由外部信号（而非 Agent 自我评价）决定通过与否。这与 [Agent Harness 架构](ch05/058-agent-harness.html) 中"Harness 作为可信中介"的设计理念一脉相承。
 
 ### 3. Context 工程的三层结构：地图→知识→依据
 
@@ -66,7 +66,7 @@ Lattice 的 Context 工程提出了一个可操作的三层结构：Context Map�
 
 ## 相关实体
 - [Loop Engineering 半年实战拆解：claude-ship](ch05/005-loop-engineering.html) — 另一 AI Coding 闭环开源实现
-- [Agent Harness 架构](ch05/039-agent-harness.html) — Harness Engineering 概念框架
+- [Agent Harness 架构](ch05/058-agent-harness.html) — Harness Engineering 概念框架
 
 ---
 

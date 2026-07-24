@@ -1,3 +1,12 @@
+---
+title: "从 Vibe Coding 到 Harness—— 一套大仓 AI 工程化实战"
+created: 2026-05-01
+updated: 2026-07-24
+type: raw
+tags: [raw, article]
+sha256: f21924a5f2f925592216b647fa741ec4f2c04405567703bb73ee695cc44b656c
+---
+
 # 从 Vibe Coding 到 Harness—— 一套大仓 AI 工程化实战
 
 > 腾讯技术工程 · 作者：fitchzheng、leoshli · 2026年7月7日 17:39 · 广东
