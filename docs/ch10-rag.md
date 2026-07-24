@@ -2,7 +2,7 @@
 
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
-> 本章收录 **29 篇**实体，按深度递增排列。
+> 本章收录 **30 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 26 |
+| ⭐⭐ 工程师 | 需编程基础 | 27 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -2267,7 +2267,78 @@ YC总裁Garry Tan开源的AI第二大脑，8层架构从"找得到"到"真正记
 
 ---
 
-## Ch10.020 为OpenClaw配置网盘空间的最佳实践
+## Ch10.020 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
+
+> 📊 Level ⭐⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
+
+# SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
+
+> 首个端到端框架：聚合开源 SKILL.md 生态，提纯为 96,401 标准化技能，在真实 Agent 任务上评测社区技能的实际价值并界定其边界。
+
+## 概览
+
+SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架，将松散的开源 SKILL.md 生态（~821,000 原始文件）经多层流水线提纯为 96,401 份合规、高质量、可商用的标准化技能，并配套微调检索排序堆栈，在真实 Agent 任务上评测了社区技能的实际增益与边界条件。
+
+## 六阶段提纯流水线
+
+1. **结构/格式检查**：标准 SKILL.md 格式 + 合理长度过滤
+2. **两阶去重**：精确指纹去重（169,465 合并）+ 语义嵌入去重（cosine 0.90 阈值，LLM 裁决 66,751 边界对）→ 合计去除 64%
+3. **三维质量打分**：LLM-as-judge 从 Utility（实用性）、Robustness（鲁棒性）、Safety（安全性）三维度输出 0-10 分
+   - 综合分 = 0.85·content_q + 0.15·prior_src（安全薄弱时衰减）
+4. **安全硬门禁 + 许可证过滤**：5 条硬规则（prompt_injection/cmd_injection/unsafe_exec/auth_bypass/csam_risk）→ 分数归零；仅保留 OSI 兼容许可证（去除 3,795 条）
+5. **归类入库**：16 类分类法（Dev 22.4%, Data 14.1%, Writing 8.2%, DevOps-Infra 7.8%...），1024 维检索嵌入
+
+## 三级检索排序堆栈
+
+- **粗召**：Qwen3-Emb-0.6B（在去重后语料上微调），3000 字符检索字段
+- **精排**：Qwen3-Rank-0.6B 微调排序模型
+- **LLM 选择门**：阅读完整 Skill 正文，返回 0-2 条注入
+- **可选查询改写**：领域术语规范化
+
+## 评测结果
+
+### 主实验（407 任务，24 配置 × 3 轮 = 74 次端到端运行）
+
+| 框架 × 模型 | SkillsBench | GDPVal | QwenClawBench | 均值 |
+|---|---|---|---|---|
+| OpenClaw × Qwen-27B | +4.2 | +1.9 | +1.5 | +2.5 |
+| OpenClaw × Qwen-397B | +5.8 | +1.8 | +1.3 | +3.0 |
+| Raven × Qwen-27B | +6.5 | +1.2 | +3.9 | +3.9 |
+| Raven × Qwen-397B | **+13.4** | +1.2 | +4.4 | **+6.3** |
+| Claude Opus 4.7 | +8.0 | — | — | — |
+
+全部配置正向增益，无净负均值（no-harm attachment）。最强单元（Raven × Q-397B）在 SkillsBench 上从失败中救回 19 个任务、损害 2 个（McNemar 检验 p<0.001）。
+
+### 两个边界条件
+
+**Harness 边界**：Raven 执行完整「推理→运行脚本→校验→修正」闭环，提升远超 OpenClaw（写代码后即终止、不校验）。Harness 执行逻辑直接影响 Skill 的落地效果。
+
+**覆盖度边界**：高检索匹配 → 平均 +25.1%；中匹配 → +6.2%；低匹配 → +2.2%。Skill 库覆盖度直接调节增益幅度。
+
+### 关键洞察
+
+- **流程适配度 > 质量分数**：单任务成败取决于 Skill 流程与任务结构的匹配度，而非综合质量分
+- **Skill 可能帮倒忙**：PPT 内嵌 Excel 修改任务中，通用 Skill（"打开 .xlsx"）无法处理 OLE 内嵌对象，反而比无 Skill 基线更差
+- **高基线任务天花板**：写作等任务模型本身能力强，Skill 提升空间有限（GDPVal 仅 +1.2-1.9pp）
+- **上下文隔离 > 并行**：规划器-执行者拆分的主要扩展优势来自上下文隔离，而非并行执行
+
+## 局限与未来方向
+
+- 质量评分依赖 LLM 文本判断，无沙箱执行验证
+- 仅英文评测，中文场景尚未覆盖
+- 静态快照（2026 Q2），无动态更新机制
+- 高基线任务受限天花板效应
+
+## 相关实体
+
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
+- [SkillComposer: 生成式技能组合](https://github.com/QianJinGuo/wiki/blob/main/entities/skillcomposer-generative-skill-composition-agent.md)
+
+→ [论文原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillcorpus-arxiv-2607-15557.md) | [中文解读](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillcorpus-skill-screening-framework-mozhi-2026.md) | [PDF](assets/skillcorpus-arxiv-2607-15557.pdf)
+
+---
+
+## Ch10.021 为OpenClaw配置网盘空间的最佳实践
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/openclaw-cloud-storage-config-guide-wechat.md`
 
@@ -2312,7 +2383,7 @@ PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机
 
 ---
 
-## Ch10.021 How we built SmithDB’s inverted index for full-text search
+## Ch10.022 How we built SmithDB’s inverted index for full-text search
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/how-we-built-smithdb-s-inverted-index-for-full-text-search.md`
 
@@ -2359,7 +2430,7 @@ Across agent traces, the same JSON paths and token values repeat in virtually ev
 
 ---
 
-## Ch10.022 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
+## Ch10.023 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/common-crawl-blog-host-and-domain-level-web-graphs-april-may.md`
 
@@ -2398,7 +2469,7 @@ Please note that the text representation of the host-level graph is shipped in 2
 
 ---
 
-## Ch10.023 Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
+## Ch10.024 Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/powering-scientific-discovery-byokg-and-graphrag-for-intelli.md`
 
@@ -2424,7 +2495,7 @@ These challenges collectively create a significant bottleneck in the drug discov
 
 ---
 
-## Ch10.024 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
+## Ch10.025 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂-v2.md`
 
@@ -2477,7 +2548,7 @@ These challenges collectively create a significant bottleneck in the drug discov
 
 ---
 
-## Ch10.025 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
+## Ch10.026 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/graphrag-needed-aws-9-rag-comparison-2026.md`
 
@@ -2531,7 +2602,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.026 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
+## Ch10.027 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/xiamen-bank-rag-competition-financial-regulation-trustrag.md`
 
@@ -2579,7 +2650,7 @@ temperature=0.0（贪心解码），max_new_tokens=512，batch_size=1。
 
 ---
 
-## Ch10.027 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
+## Ch10.028 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
 
 > 📊 Level ⭐⭐ | 2.9KB | `entities/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度.md`
 
@@ -2613,7 +2684,7 @@ source_published: 2026年7月8日 17:00
 
 ---
 
-## Ch10.028 知识库构建方法论
+## Ch10.029 知识库构建方法论
 
 > 📊 Level ⭐⭐ | 1.7KB | `entities/knowledge-base-construction.md`
 
@@ -2643,7 +2714,7 @@ AI 驱动的知识库构建方法论：从原始采集到结构化编目的完�
 
 ---
 
-## Ch10.029 Ettin Reranker Family
+## Ch10.030 Ettin Reranker Family
 
 > 📊 Level ⭐⭐⭐ | 15.1KB | `entities/ettin-reranker-family.md`
 

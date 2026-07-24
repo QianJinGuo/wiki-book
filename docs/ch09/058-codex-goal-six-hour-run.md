@@ -128,9 +128,9 @@ Old 范式下，工程师是 supervisor——监控 AI 运行，随时准备干�
 
 ## 相关实体
 
-- [Codex /goal：长任务Agent的目标运行时](../ch04/106-codex-goal-agent.html) — 若飞源码级拆解，目标状态机 + completion audit 协议 + budget_limit 收束模板
+- [Codex /goal：长任务Agent的目标运行时](../ch04/110-codex-goal-agent.html) — 若飞源码级拆解，目标状态机 + completion audit 协议 + budget_limit 收束模板
 - [Claude Code / OpenClaw Memory 对比](../ch03/076-claude-code.html) — 记忆架构与 Codex 的对比参考
-- [Anthropic Claude Code 大型代码库最佳实践](../ch01/291-anthropic-claude-code.html) — Claude Code 在大规模代码库中的实践
+- [Anthropic Claude Code 大型代码库最佳实践](../ch01/292-anthropic-claude-code.html) — Claude Code 在大规模代码库中的实践
 - [Claude Code Session 管理 1M Context](../ch03/076-claude-code.html) — 长上下文会话管理
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)

@@ -153,11 +153,11 @@ GStack 的核心创新在于通过独立 Git worktree 实现多 Agent 并行且�
 ---
 
 ## 相关实体
-- [Garry Tan Yc Ceo](../ch01/639-garry-tan.html)
+- [Garry Tan Yc Ceo](../ch01/646-garry-tan.html)
 - [Claude Code Source Architecture](ch03/076-claude-code.html)
 - [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/047-coding-agent.html)
-- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/334-claude-code-agent-teams.html)
-- [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/046-agent.html)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/335-claude-code-agent-teams.html)
+- [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/yc-ceo-garry-tan-200-dollar-vs-4-million.md)
 

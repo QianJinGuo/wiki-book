@@ -2,7 +2,7 @@
 
 > 从单兵到团队：编排、通信、治理
 
-> 本章收录 **31 篇**实体，按深度递增排列。
+> 本章收录 **34 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,8 +11,8 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 6 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 22 |
+| ⭐⭐ 工程师 | 需编程基础 | 7 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 24 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
@@ -602,7 +602,84 @@ L3的核心要求是**AI主导、人辅助**——这意味着机器不仅执行
 
 ---
 
-## Ch08.007 微软 Agent Framework 全栈指南（Python）
+## Ch08.007 Multi-agent social intelligence with Strands Agents and Amazon Bedrock AgentCore
+
+> 📊 Level ⭐⭐ | 6.2KB | `entities/multi-agent-social-intelligence-strands-bedrock.md`
+
+# Multi-agent social intelligence with Strands Agents and Amazon Bedrock AgentCore
+
+Thrad.ai built a multi-agent social intelligence system using Strands Agents framework on Amazon Bedrock AgentCore. The system discovers trending launches and buying-intent signals, enriches prospect profiles, scores prospect-trend pairs, and generates personalized outreach emails.
+
+## Agent Architecture
+
+The system uses four specialized agents:
+
+| Agent | Responsibility | Data Sources |
+|-------|---------------|--------------|
+| **Trend Research** | Discovers trending launches and buying-intent signals | Hacker News, YouTube, dev.to, ProductHunt, Reddit, Stack Overflow |
+| **Search Specialist** | Enriches prospect profiles with context | Wikipedia, GitHub, Lobste.rs, Stack Overflow |
+| **Analysis** | Scores prospect-trend pairs (0-100) | Scoring engine, ICP matcher, Claude Sonnet 4.6 on Bedrock |
+| **Email Generation** | Drafts personalized outreach | Brand knowledge retrieval, lead storage |
+
+Scoring relies on **signal triangulation**: a prospect needs correlated evidence from at least two independent sources. The Analysis Agent uses five weighted criteria: topical alignment (25%), timing relevance (20%), engagement potential (20%), intent signals (20%), and data quality (15%). ICP matching adds up to 10 bonus points for developer tools with open source presence and B2B focus. Temporal decay: signals under 24 hours old get 1.5x weight, signals over 7 days get 0.5x.
+
+## Swarm vs Graph Orchestration
+
+Strands Agents provides two orchestration patterns. Thrad.ai built and benchmarked both against 50 prospects:
+
+| Metric | Swarm | Graph |
+|--------|-------|-------|
+| Avg latency per prospect | 45s | 32s |
+| P95 latency | 78s | 38s |
+| Avg tokens per prospect | ~12,000 | ~8,500 |
+| Email relevance (human-rated 1-10) | 8.2 | 7.6 |
+| Cost per prospect (est.) | ~$0.08 | ~$0.06 |
+
+**Key findings**: Swarm produced higher-quality emails (8.2 vs 7.6) because agents looped back for more context when data was sparse. Graph cost 25% less per prospect with tighter latency bounds. For a 1,000-prospect batch, Graph saves ~3.6 hours and $20 in token costs.
+
+### Swarm Pattern
+Agents pass control dynamically using a `handoff_to_agent` tool with shared working memory. Configurable safety bounds include `max_handoffs`, `execution_timeout`, and `repetitive_handoff_detection_window` to prevent agent ping-pong. Best when prospect complexity varies and agents benefit from re-engaging earlier stages.
+
+### Graph Pattern
+Agents follow a fixed directed workflow with parallel entry points, all-dependencies-complete gating, and conditional edges. Trend Research and Search Specialist run in parallel; Analysis waits for both to finish; Email runs only if score >= 60. Best for repeatable workflows where auditability matters.
+
+## Bedrock AgentCore Deployment
+
+Production deployment uses four Amazon Bedrock AgentCore managed services:
+
+- **Runtime**: Hosts agents in isolated microVMs with IAM authentication and lifecycle controls (15-min idle timeout, 8-hour max lifetime)
+- **Gateway**: Single MCP endpoint for nine tools; agents discover tools dynamically via Strands `MCPClient`
+- **Memory**: Short-term context within sessions, long-term semantic data across sessions; agents degrade gracefully without it
+- **Observability**: Distributed traces via OpenTelemetry with span-level latency and token counts; integrates with CloudWatch
+
+A key finding: YouTube API calls accounted for 40% of total latency, leading the team to add `get_with_retry` with exponential backoff to HTTP calls.
+
+## Governance & Safety Controls
+
+Three-level guardrail system:
+
+1. **Policy gates via conditional edges**: Analysis-to-Email edge checks relevance score; prospects below 60 are logged but skipped
+2. **Scoped tool access**: Each agent receives only the tools it needs; agents cannot invoke tools outside their scope
+3. **Swarm safety bounds**: Repetitive handoff detection stops loops; `max_handoffs` and `execution_timeout` cap autonomous behavior
+
+## Practical Guidance
+
+1. **Intent signals beat passive trends**: Adding Reddit intent detection increased prospects scoring above 80 by 22%. A prospect asking "What tool should I use for X?" converts at higher rates than one trending passively.
+2. **Temporal decay prevents stale outreach**: Signals under 24 hours old get 1.5x weight; signals over 7 days get 0.5x.
+3. **Pick pattern based on the job**: Swarm wins on quality when data is sparse; Graph wins on cost and predictability for batch work. Run both in the same code base switched by a configuration flag.
+4. **Build retry logic for external APIs**: YouTube API calls were 40% of total latency — use exponential backoff.
+
+## Related Entities
+
+- [Strands Agents High Performance Genai Systems](https://github.com/QianJinGuo/wiki/blob/main/entities/strands-agents-high-performance-genai-systems.md) — Strands Agents + NVIDIA NIM + Bedrock AgentCore
+- [Hands Free First Notice Of Loss Using Strands Agents And Ama](https://github.com/QianJinGuo/wiki/blob/main/entities/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md) — Strands Agents insurance claims intake
+- [Building Enterprise Level With Bedrock Agentcore And Strands](https://github.com/QianJinGuo/wiki/blob/main/entities/building-enterprise-level-with-bedrock-agentcore-and-strands.md) — Enterprise search with Strands
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multi-agent-social-intelligence-with-strands-agents-and-amaz.md)
+
+---
+
+## Ch08.008 微软 Agent Framework 全栈指南（Python）
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/microsoft-agent-framework-python-zizhi.md`
 
@@ -640,7 +717,7 @@ Python 侧的开发体验设计良好：`pip install agent-framework` 后，用 
 
 ---
 
-## Ch08.008 高价率运营 AI 工作台：约定驱动与 AI 编排的评测优化实践
+## Ch08.009 高价率运营 AI 工作台：约定驱动与 AI 编排的评测优化实践
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/taobao-high-price-rate-ai-workbench-eval-optimization.md`
 
@@ -711,7 +788,7 @@ LLM 给修改建议约 80% 不合格。根因：LLM 区分不了四种"低分"�
 
 ---
 
-## Ch08.009 Claude Code Dynamic Workflows 多Agent编排
+## Ch08.010 Claude Code Dynamic Workflows 多Agent编排
 
 > 📊 Level ⭐⭐⭐ | 57.4KB | `entities/claude-code-dynamic-workflows-multi-agent-orchestration.md`
 
@@ -1387,7 +1464,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ---
 
-## Ch08.010 JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）
+## Ch08.011 JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）
 
 > 📊 Level ⭐⭐⭐ | 25.2KB | `entities/jiuwenswarm-coordination-engineering.md`
 
@@ -1674,7 +1751,7 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 
 ---
 
-## Ch08.011 AI Agent Memory Systems
+## Ch08.012 AI Agent Memory Systems
 
 > 📊 Level ⭐⭐⭐ | 16.0KB | `entities/ai-agent-memory-systems.md`
 
@@ -1761,7 +1838,7 @@ Latency budget 分析显示 p95 目标 800ms 中，retrieval 占用约 495ms（Q
 
 ---
 
-## Ch08.012 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
+## Ch08.013 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
 
 > 📊 Level ⭐⭐⭐ | 15.9KB | `entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md`
 
@@ -1951,7 +2028,7 @@ frontmatter（name / 用于路由的 description「含适用/不适用/典型触
 
 ---
 
-## Ch08.013 How Grab is Using AI Agents to Boost Team Productivity
+## Ch08.014 How Grab is Using AI Agents to Boost Team Productivity
 
 > 📊 Level ⭐⭐⭐ | 13.5KB | `entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md`
 
@@ -2071,7 +2148,7 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 
 ---
 
-## Ch08.014 Factory Missions
+## Ch08.015 Factory Missions
 
 > 📊 Level ⭐⭐⭐ | 13.4KB | `entities/factory-missions-multi-agent-shipping.md`
 
@@ -2168,7 +2245,7 @@ Factory 给了明确的数学：如果每个 agent run 错误率 0.1%，100 步�
 
 ---
 
-## Ch08.015 Sub-Agent vs Agent Team 选型与编排原语
+## Ch08.016 Sub-Agent vs Agent Team 选型与编排原语
 
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/sub-agent-vs-agent-team-selection.md`
 
@@ -2283,7 +2360,7 @@ description 不是注释，是路由信号。写得含糊，路由就含糊；�
 
 ---
 
-## Ch08.016 Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
+## Ch08.017 Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
 
 > 📊 Level ⭐⭐⭐ | 12.0KB | `entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md`
 
@@ -2374,7 +2451,7 @@ Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无
 
 ---
 
-## Ch08.017 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
+## Ch08.018 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
 
 > 📊 Level ⭐⭐⭐ | 11.8KB | `entities/coze-3-0-collaboration-system.md`
 
@@ -2524,7 +2601,7 @@ Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无
 
 ---
 
-## Ch08.018 Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
+## Ch08.019 Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
 
 > 📊 Level ⭐⭐⭐ | 10.6KB | `entities/thousand-token-wood-sim-v2-hackathon.md`
 
@@ -2674,7 +2751,7 @@ AI 的最大价值可能不在通用场景而在你领域的特定痛点——�
 
 ---
 
-## Ch08.019 MiniMax Agent Team: Mavis (Owner-Worker-Verifier)
+## Ch08.020 MiniMax Agent Team: Mavis (Owner-Worker-Verifier)
 
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/minimax-agent-team-mavis.md`
 
@@ -2842,7 +2919,7 @@ Agent 间交接时常见错误：把完整上下文塞给下一个 Agent。
 
 ---
 
-## Ch08.020 AgentRun：阿里云多 Agent 生产级协作方案（A2A 开放协议）
+## Ch08.021 AgentRun：阿里云多 Agent 生产级协作方案（A2A 开放协议）
 
 > 📊 Level ⭐⭐⭐ | 9.6KB | `entities/agentrun-multi-agent-a2a-alibaba-cloud.md`
 
@@ -2967,7 +3044,7 @@ A2A 是 Google 主导的开放协议，类似 MCP之于工具调用、MPI 之于
 
 ---
 
-## Ch08.021 AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
+## Ch08.022 AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/ap2-agent-payments-protocol-hands-on-analysis.md`
 
@@ -3080,7 +3157,7 @@ CartMandate 一小时有效期 + 单次 OTP 的设计，本质上是为 Human-Pr
 
 ---
 
-## Ch08.022 对抗式验证：多 Agent 交叉校验设计哲学
+## Ch08.023 对抗式验证：多 Agent 交叉校验设计哲学
 
 > 📊 Level ⭐⭐⭐ | 7.8KB | `entities/adversarial-verification.md`
 
@@ -3212,7 +3289,7 @@ Agent 输出是概率性的：同样的输入可能产生不同输出，需要�
 
 ---
 
-## Ch08.023 Routa 多智能体协同交付平台
+## Ch08.024 Routa 多智能体协同交付平台
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/routa-multi-agent-coordination-platform.md`
 
@@ -3284,7 +3361,7 @@ Web 端（Next.js 16.2）和桌面端（Tauri + Rust Axum）共享同一套 `api
 
 ---
 
-## Ch08.024 Nature丨Google和FutureHouse同日登刊，把AI科学助理推到科研前线
+## Ch08.025 Nature丨Google和FutureHouse同日登刊，把AI科学助理推到科研前线
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/nature-ai-scientific-assistant-google-futurehouse.md`
 
@@ -3344,7 +3421,7 @@ Nature 2026 同日发表 Google Co-Scientist（Gemini 2.0 多智能体）和 Fut
 
 ---
 
-## Ch08.025 CoAgent
+## Ch08.026 CoAgent
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/coagent.md`
 
@@ -3424,7 +3501,7 @@ CoAgent 的工程价值在于其代价-收益比是可接受的：冲突处理�
 
 ---
 
-## Ch08.026 Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
+## Ch08.027 Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
 
 > 📊 Level ⭐⭐⭐ | 5.0KB | `entities/investing-in-multi-agent-ai-safety-research-deepmind-2026-06.md`
 
@@ -3487,7 +3564,7 @@ Google DeepMind 联合 **Schmidt Sciences、Cooperative AI Foundation、ARIA**�
 
 ---
 
-## Ch08.027 Crayotter: Traceable Multi-Agent Workflows for Long-Form Video Editing
+## Ch08.028 Crayotter: Traceable Multi-Agent Workflows for Long-Form Video Editing
 
 > 📊 Level ⭐⭐⭐ | 4.6KB | `entities/crayotter-traceable-multi-agent-long-form-video-editing-ustc-2026.md`
 
@@ -3543,7 +3620,64 @@ Crayotter 引入带有时间戳水印的技术，将时间坐标直接渲染在�
 
 ---
 
-## Ch08.028 OpenRath：以 Session 为核心的多 Agent 运行时状态系统（清华）
+## Ch08.029 TVIR：面向图文交错报告生成的统一基准与智能体框架 — 南大 × 阿里
+
+> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/tvir-text-visual-interleaved-report-generation-nju-alibaba.md`
+
+# TVIR：面向图文交错报告生成的统一基准与智能体框架 — 南大 × 阿里
+
+> 南京大学联合阿里巴巴提出 TVIR（Text–Visual Interleaved Report Generation），一个面向图文交错报告生成的统一基准与智能体框架，首次系统性地评估深度研究智能体的多模态能力。
+
+## 核心问题
+
+现有深度研究基准与真实分析工作的需求之间存在根本性错位：它们以文本为中心评估，却忽视了真实专业报告中的视觉证据整合。一个能写出流畅文字但生成不准确视觉元素的研究智能体，在高风险决策场景中不可靠。TVIR 重新思考深度研究：它不应被视为纯文本任务，而是一个多模态综合问题，文本和视觉必须被联合生成、联合评估。
+
+## TVIR-Bench：100 道专家级多模态深度研究任务
+
+TVIR-Bench 是首个专门为端到端多模态研究报告生成设计的综合基准，包含 100 个专家策划的任务（50 中文 + 50 英文），覆盖 10 个主要领域和 3 个复杂度级别。任务设计遵循五大核心原则：角色驱动、需求导向、深度研究、前沿聚焦、多模态整合。
+
+## TVIR-Agent：四阶段分层多智能体框架
+
+TVIR-Agent 是一个专为图文交错报告生成设计的分层多智能体框架，包含四个核心阶段：
+
+### 1. 研究驱动的规划
+Planner 解析用户任务，迭代调用搜索和网页抓取工具检索相关信息，综合成结构化大纲。每个大纲单元包含章节标题和摘要、规划的视觉需求、章节级研究笔记（含引用、来源 URL 和关键发现）。
+
+### 2. 视觉资源实例化
+通过两个专门智能体实现：
+- **Image Searcher**：处理肖像、场景、架构图等视觉概念，通过 Google 图片搜索检索候选图像，使用 VQA 工具验证相关性
+- **Chart Generator**：处理数据分布或关系的内容，检索数据并验证真实性，生成 Python 绘图代码在沙盒环境中执行
+
+### 3. 上下文感知的顺序写作
+Writer 逐章节生成报告，基于当前大纲单元和动态更新的全局上下文（已生成章节的标题、摘要和子章节结构）进行条件生成，同时使用章节级研究笔记作为支撑证据。
+
+### 4. 全局索引整理
+Polisher 在报告级别处理引用和图片：移除未被引用的参考文献，按 URL 和标准化内容全局去重，重新编号为统一的参考文献列表并更新正文中的引用标记。
+
+## 双路径评估框架
+
+TVIR 提出多维度评估框架，包含文本评估（TA）和视觉评估（VA）两个互补组件。
+
+## 关键实验发现
+
+评估了 9 个深度研究系统（6 个商业系统 + 3 个 TVIR-Agent 变体）：
+
+- **TVIR-Agent 整体表现最强**：TVIR-Agent（Claude-4.5-Sonnet）取得最佳整体分数
+- **不同变体各有所长**：GLM-4.7 文本评估最高，Claude-4.5-Sonnet 视觉评估最高
+- **引用支持差距显著**：TVIR-Agent（GLM-4.7）Citation Support 达 68.64，超最佳商业系统 21.11 分
+- **结构性错误更少**：TVIR-Agent 变体产生的结构性错误显著少于商业系统
+- **工具使用平衡是关键**：Claude-4.5-Sonnet 采用更平衡的工具使用策略，实现最高图表完成率 94.61%
+
+## 意义
+
+TVIR 为未来可信的多模态深度研究智能体奠定了基础，揭示了当前系统"文本综合远强于视觉整合"的关键局限。
+
+> ---
+> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/南大-阿里提出tvir深度研究agent迈入图文交错时代.md)
+
+---
+
+## Ch08.030 OpenRath：以 Session 为核心的多 Agent 运行时状态系统（清华）
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/openrath-session-centered-agent-runtime-tsinghua-2026.md`
 
@@ -3615,7 +3749,7 @@ fork 复制当前状态并保留父子关系；detach 切断父血缘；merge �
 
 ---
 
-## Ch08.029 Cost of Consensus
+## Ch08.031 Cost of Consensus
 
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/cost-of-consensus.md`
 
@@ -3645,7 +3779,72 @@ Cost of Consensus 研究揭示了多 Agent 系统中一个关键但常被忽视�
 
 ---
 
-## Ch08.030 UnityMAS-O
+## Ch08.032 全球化商品中心智能答疑 Agent 实践
+
+> 📊 Level ⭐⭐⭐ | 3.4KB | `entities/global-product-center-qa-agent-aliexpress-2026.md`
+
+# 全球化商品中心智能答疑 Agent：从单 Agent 到多 Agent 协作
+
+## 一句话总结
+
+AliExpress 商品中心（IC）团队分享了智能答疑 Agent 从单 Agent 框架到多 Agent 融合再到多 Agent 协作的**三阶段演进路径**，以主控 Agent + 专项 Agent 的解耦架构解决功能耦合、延迟和维护成本问题，并提出了"意图拆解 + 多场景路由"作为面向复杂跨场景问题的下一阶段方向。
+
+---
+
+## 核心贡献
+
+### 1. 三阶段 Agent 框架演进路径
+
+| 阶段 | 模式 | 核心特征 | 局限 |
+|------|------|---------|------|
+| 1 | 单 Agent（场景识别+工具+SOP） | 四模块、三类知识库 | 功能耦合、延迟高、修改风险大 |
+| 2 | 多 Agent 融合（场景识别+单一路由） | 主控路由+专项执行 | 仅单场景、Agent 间无通信 |
+| 3 | 多 Agent 协作（意图拆解+多场景路由） | 意图拆解+协作路由+结果聚合 | 构建中 |
+
+### 2. 三类知识库设计
+
+- **场景知识库**：场景类型、关键信息、问题示例、解决步骤、注意事项、背景知识
+- **工具知识库**：工具类型、描述、入参格式、参数描述、原始结果是否返回
+- **SOP 知识库**：场景类型、场景名称、输出格式
+
+### 3. 实际 Prompt 设计
+
+文章公开了感知模块、规划模块、知识聚合模块的完整 Prompt，以及场景分类、意图识别、路径编排、工具调用的结构化 JSON 输出格式——对理解阿里系 Agent 实现有直接参考价值。
+
+### 4. 评测体系记录（旧版，已被取代）
+
+记录了一版较早期的评测实践，可作为 [精细化评测文章](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evaluation-fine-grained-system-aliexpress-2026.md) 的进化基线参考。
+
+---
+
+## 与现有 wiki 知识的关系
+
+- **姊妹篇**：本文是 [AI Agent 应用精细化评测](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evaluation-fine-grained-system-aliexpress-2026.md) 的前作。后者将评测部分从 5 项文本质量指标升级为 35+ 项质量×成本×性能三维指标
+- **补充 WorkBuddy**：[WorkBuddy](https://github.com/QianJinGuo/wiki/blob/main/entities/workbuddy-product-framework-agent-harness-anne-2026.md) 讨论通用 Agent 产品架构（Harness/Loop/Memory），本文展示了一个具体业务领域（国际商品 IC）的落地案例，含实际 Prompt、知识库结构、工具定义
+- **三阶段演进方法论**：单 Agent → 多 Agent 融合 → 多 Agent 协作的演进路径，对其他团队有一定参考价值
+
+---
+
+## 关键数据
+
+- 来源：AliExpress技术（★★★★★ 1st-party），作者砚东
+- 框架迭代：3 个阶段
+- 知识库类型：3 类
+- 专项 Agent：6 个（trace/错误码/标签/可见可售性/变更记录/IC文档）
+- 通用覆盖：18 类文档知识库
+- 旧版评测：专项 50 条（8.73分）+ 通用 140 条（8.29分）
+
+---
+
+## 延伸阅读
+
+- [AI Agent 应用精细化评测：评测体系设计与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evaluation-fine-grained-system-aliexpress-2026.md) — 本文评测部分的全面升级版
+- [WorkBuddy：LLM 产品实践](https://github.com/QianJinGuo/wiki/blob/main/entities/workbuddy-product-framework-agent-harness-anne-2026.md) — Agent 产品架构对比
+- [高德 ABot-AgentOS](https://github.com/QianJinGuo/wiki/blob/main/entities/abot-agentos-robot-agent-os-amap-2026.md) — 另一套 Agent OS 系统架构
+
+---
+
+## Ch08.033 UnityMAS-O
 
 > 📊 Level ⭐⭐⭐ | 2.9KB | `entities/unitymas-o-multi-agent-rl-optimization-framework-2026.md`
 
@@ -3665,7 +3864,7 @@ UnityMAS-O 与传统的提示词工程方法有本质区别。传统方法依赖
 
 ---
 
-## Ch08.031 γ-World: 多 Agent 世界建模（NVIDIA Research）
+## Ch08.034 γ-World: 多 Agent 世界建模（NVIDIA Research）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/nvidia-gamma-world-multi-agent-world-model.md`
 

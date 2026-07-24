@@ -19,7 +19,7 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 - **核心痛点**：Claude Code 配置在 5+ 个位置之间分散，跨仓库无法统一搜索；Obsidian 直接打开代码仓库时被非 Markdown 文件淹没
 - **策略 1（独立 Vault + 符号链接）**：建一个 `~/Developer-Vault`，用 `ln -s` 把关心的内容拉进来，配合 `userIgnoreFilters` 过滤代码噪音
 - **策略 2（Vault = Claude Code 工作目录）**：把 Obsidian Vault 当作 Claude Code 的工作目录，根目录 `CLAUDE.md` 既是 Claude 指令也是 Obsidian 笔记
-- **策略 3（MCP 桥接）**：代码仓库和 Obsidian 完全分离，通过 [obsidian-claude-code-mcp](../ch09/134-obsidian-claude-code-integration-guide.html) 这类插件让 Claude 按需访问 Obsidian
+- **策略 3（MCP 桥接）**：代码仓库和 Obsidian 完全分离，通过 [obsidian-claude-code-mcp](../ch09/136-obsidian-claude-code-integration-guide.html) 这类插件让 Claude 按需访问 Obsidian
 - **策略 4（每仓库一个 Vault）**：每个代码仓库独立 Vault，配置最简，但牺牲跨项目搜索
 - **策略 5（QMD + 会话同步）**：Shopify CEO Tobi Lutke 的 QMD 做语义检索 + `sync-claude-sessions` 导出对话 + `/recall` 技能拉回上下文，让每次会话沉淀为可搜索笔记
 - **Obsidian 1.12 CLI 突破**：在 4000+ 文件、16GB 仓库上找孤立笔记从十几秒降到不到 1 秒（约 50× 提升），让 AI 不必再 grep
@@ -56,7 +56,7 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 - **sync-claude-sessions**：会话结束时自动导出为 Markdown
 - **/recall 技能**：新会话开始前把相关上下文拉回来
 
-这套方案对应的不是「更好用的笔记」，而是「让每一次 Agent 对话都不是一次性消耗」。它和 [Agent 长期记忆架构](../ch04/412-perplexity-brain-self-improving-agent-memory-architecture.html)、Warp Oz 的 [cross-harness Agent Memory](../ch04/499-agent-orchestration.html) 处于同一个赛道——都是在解决「Agent 失忆」这个根本问题，只是 QMD 选择了「本地优先 + Markdown 原生」的路径。
+这套方案对应的不是「更好用的笔记」，而是「让每一次 Agent 对话都不是一次性消耗」。它和 [Agent 长期记忆架构](../ch04/417-perplexity-brain-self-improving-agent-memory-architecture.html)、Warp Oz 的 [cross-harness Agent Memory](../ch04/505-agent-orchestration.html) 处于同一个赛道——都是在解决「Agent 失忆」这个根本问题，只是 QMD 选择了「本地优先 + Markdown 原生」的路径。
 
 ### 文件混乱治理：四层防线
 
@@ -100,15 +100,15 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 
 ## 相关实体
 
-- [Obsidian Claude Code Integration Guide](../ch09/134-obsidian-claude-code-integration-guide.html) — 早期版本的集成指南
-- [Obsidian Claude Code Integration](../ch09/134-obsidian-claude-code-integration-guide.html) — 集成实践综述
-- [Obsidian](../ch01/920-claude-code-memory-setup-obsidian-graphify.html) — Obsidian 实体页
-- [Obsidian Llm Wiki Local Kytmanov](../ch01/882-llm.html) — 本地 LLM Wiki 实践
+- [Obsidian Claude Code Integration Guide](../ch09/136-obsidian-claude-code-integration-guide.html) — 早期版本的集成指南
+- [Obsidian Claude Code Integration](../ch09/136-obsidian-claude-code-integration-guide.html) — 集成实践综述
+- [Obsidian](../ch01/932-claude-code-memory-setup-obsidian-graphify.html) — Obsidian 实体页
+- [Obsidian Llm Wiki Local Kytmanov](../ch01/607-llm.html) — 本地 LLM Wiki 实践
 - [Claude Code 7 Layer Memory Architecture](ch03/076-claude-code.html) — Claude Code 的 7 层记忆架构
-- [Agent Memory Architecture](../ch04/412-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构综述
+- [Agent Memory Architecture](../ch04/417-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构综述
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
 - [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — Agent 记忆生命周期哲学
-- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](../ch01/951-claude.html)
+- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](../ch01/964-claude.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

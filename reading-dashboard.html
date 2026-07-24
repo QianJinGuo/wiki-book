@@ -31,6 +31,7 @@
   .stat-card.done .num { color: var(--green); }
   .stat-card.t1 .num { color: var(--tier1); }
   .stat-card.t2 .num { color: var(--tier2); }
+  .stat-card.t3 .num { color: var(--tier3); }
   
   .controls { max-width: 1400px; margin: 1.5rem auto; display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center; padding: 0 1rem; }
   .search-box { flex: 1; min-width: 200px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 0.7rem 1rem; color: var(--text); font-size: 0.95rem; outline: none; transition: border-color 0.2s; }
@@ -131,11 +132,12 @@
 <div class="header">
   <div class="header-inner">
     <h1>📚 Agent 工程精读仪表盘</h1>
-    <p>从 3379 篇文章中精选 50 篇 · 6 条轨道 · 3 个层级 · 约 22 小时精读</p>
+    <p>从 3379 篇文章中精选 86 篇 · 12 条轨道 · 3 个层级 · 约 5 小时精读</p>
     <div class="stats-row">
       <div class="stat-card t1"><div class="num" id="s-t1">0</div><div class="label">Tier 1 已读</div></div>
       <div class="stat-card t2"><div class="num" id="s-t2">0</div><div class="label">Tier 2 已读</div></div>
-      <div class="stat-card done"><div class="num" id="s-total">0/50</div><div class="label">总进度</div></div>
+      <div class="stat-card t3"><div class="num" id="s-t3">0</div><div class="label">Tier 3 已读</div></div>
+      <div class="stat-card done"><div class="num" id="s-total">0/86</div><div class="label">总进度</div></div>
       <div class="stat-card"><div class="num" id="s-time" style="color:var(--cyan)">0h</div><div class="label">已节省时间</div></div>
       <div class="stat-card"><div class="num" id="s-words" style="color:var(--accent2)">0</div><div class="label">已读字数</div></div>
     </div>
@@ -144,7 +146,7 @@
 
 <div class="progress-section">
   <div class="progress-bar-wrap"><div class="progress-bar-fill" id="main-progress" style="width:0%"></div></div>
-  <div class="progress-label"><span id="progress-text">0 / 50 篇完成</span><span id="progress-pct">0%</span></div>
+  <div class="progress-label"><span id="progress-text">0 / 86 篇完成</span><span id="progress-pct">0%</span></div>
   <div class="track-progress" id="track-progress"></div>
 </div>
 
@@ -217,7 +219,43 @@ const ARTICLES = [
   {id:"K3",file:"docs/ch01/1236-claude-code.md",title:"Claude Code 架构解析",words:471,tier:2,track:"K",trackName:"💻 AI Coding 进阶",desc:"Claude Code 的核心架构解析"},
   {id:"L1",file:"docs/ch07/83-microsoft-agent-framework-tools-4-provider-tool-ap.md",title:"Microsoft Agent Framework Tools 总览",words:1760,tier:2,track:"L",trackName:"🔧 工具与基础设施",desc:"微软 Agent 框架工具全景"},
   {id:"L2",file:"docs/ch11/276-agentscope-java-2-0-harness.md",title:"AgentScope Java 2.0：企业级分布式 Harness 框架",words:1550,tier:2,track:"L",trackName:"🔧 工具与基础设施",desc:"AgentScope Java 2.0 企业级分布式框架"},
-  {id:"L3",file:"docs/ch11/279-build-a-highly-scalable-serverless-langgraph-multi-agent-sys.md",title:"Build a highly scalable serverless LangGraph multi-agent system",words:621,tier:2,track:"L",trackName:"🔧 工具与基础设施",desc:"构建高可扩展的无服务器 LangGraph 多 Agent 系统"}
+  {id:"L3",file:"docs/ch11/279-build-a-highly-scalable-serverless-langgraph-multi-agent-sys.md",title:"Build a highly scalable serverless LangGraph multi-agent system",words:621,tier:2,track:"L",trackName:"🔧 工具与基础设施",desc:"构建高可扩展的无服务器 LangGraph 多 Agent 系统"},
+  {id:"A6",file:"docs/ch05/003-loop-engineering-19-addy-osmani-boris-cherny-pete.md",title:"Loop Engineering：先写刹车再写循环",words:7892,tier:3,track:"A",trackName:"🏗️ Harness Engineering",desc:"19 来源深度合并：Addy Osmani / Boris Cherny 等多视角 Loop Engineering 全景"},
+  {id:"A7",file:"docs/ch05/021-martin-fowler-ai-harness.md",title:"Martin Fowler AI 研发 Harness：非确定性承重层",words:616,tier:3,track:"A",trackName:"🏗️ Harness Engineering",desc:"Martin Fowler 论 AI 时代非确定性系统的 Harness 设计"},
+  {id:"A8",file:"docs/ch05/063-harness-engineering-for-self-improvement-lilian-weng-h.md",title:"Harness Engineering for Self-Improvement — 翁荔 Lilian Weng",words:582,tier:3,track:"A",trackName:"🏗️ Harness Engineering",desc:"Lilian Weng 系统梳理 Harness 自我提升研究全景"},
+  {id:"B6",file:"docs/ch04/049-nvidia-extreme-co-design-agentic-systems.md",title:"NVIDIA Extreme Co-Design Agentic Systems",words:3023,tier:3,track:"B",trackName:"🧠 Agent Architecture",desc:"NVIDIA 极端协同设计：Agent 系统的硬件-软件联合优化"},
+  {id:"B7",file:"docs/ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.md",title:"Design Patterns for AI Agents 2026：4 大执行模式 + Reflection Demo",words:731,tier:3,track:"B",trackName:"🧠 Agent Architecture",desc:"2026 年 AI Agent 设计模式：4 大执行模式与 5 步选型决策树"},
+  {id:"B8",file:"docs/ch04/143-agent-evolution-four-stages-and-six-dimensions-alibaba-clo.md",title:"Agent Evolution: Four Stages and Six Dimensions (Alibaba Cloud)",words:592,tier:3,track:"B",trackName:"🧠 Agent Architecture",desc:"阿里云提出的 Agent 四阶段六维度演化模型"},
+  {id:"C4",file:"docs/ch04/139-state-of-memory-in-agent-harness-mem0-harness.md",title:"State of Memory in Agent Harness — mem0 视角的九大 harness 横评",words:932,tier:3,track:"C",trackName:"💾 Context & Memory",desc:"mem0 视角的 Agent 记忆九大 Harness 方案横向评测"},
+  {id:"C5",file:"docs/ch04/155-how-ai-agent-memory-works.md",title:"How AI Agent Memory Works",words:412,tier:3,track:"C",trackName:"💾 Context & Memory",desc:"AI Agent 记忆系统的工作原理与架构选择"},
+  {id:"C6",file:"docs/ch04/185-context-agent.md",title:"Context 不是免费的：长文档 Agent 性能天花板与架构优化",words:518,tier:3,track:"C",trackName:"💾 Context & Memory",desc:"长文档场景下 Agent 的上下文成本与优化策略"},
+  {id:"D4",file:"docs/ch04/113-sub-agent-vs-agent-team.md",title:"Sub-Agent vs Agent Team 选型指南",words:678,tier:3,track:"D",trackName:"🤝 Multi-Agent",desc:"子 Agent 与 Agent Team 的架构选型决策"},
+  {id:"D5",file:"docs/ch04/339-multi-agent-supervisor-swarm.md",title:"Multi-Agent 四种协作模式：Supervisor、Swarm、网状、流水线",words:296,tier:3,track:"D",trackName:"🤝 Multi-Agent",desc:"多 Agent 协作的四种模式对比与选型"},
+  {id:"D6",file:"docs/ch04/047-openclaw-multi-agent-team-practice-v2.md",title:"OpenClaw Multi-Agent Team 实践 V2",words:967,tier:3,track:"D",trackName:"🤝 Multi-Agent",desc:"OpenClaw 多 Agent 团队协作实践第二版"},
+  {id:"E3",file:"docs/ch09/032-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on.md",title:"It's Safe to Close Your Laptop Now: Hosting Coding Agents",words:1334,tier:3,track:"E",trackName:"💻 AI Coding Agent",desc:"在 Bedrock AgentCore 上托管 Coding Agent 的实践"},
+  {id:"E4",file:"docs/ch09/118-how-to-avoid-ai-code-slop.md",title:"How to Avoid AI Code Slop",words:313,tier:3,track:"E",trackName:"💻 AI Coding Agent",desc:"避免 AI 生成低质量代码的实用策略"},
+  {id:"E5",file:"docs/ch09/135-vibe-coding-in-production-erik-schluntz-anthropic.md",title:"Vibe Coding in Production — Erik Schluntz / Anthropic",words:229,tier:3,track:"E",trackName:"💻 AI Coding Agent",desc:"Anthropic 工程师谈 Vibe Coding 在生产环境中的实践"},
+  {id:"F3",file:"docs/ch04/462-anthropic-demystifying-evals-for-ai-agents.md",title:"Anthropic Demystifying Evals for AI Agents",words:302,tier:3,track:"F",trackName:"📏 Evaluation",desc:"Anthropic 拆解 AI Agent 评测的核心概念与方法"},
+  {id:"F4",file:"docs/ch04/463-cmu-pace-proxy-for-agentic-capability-evaluation.md",title:"CMU PACE — Proxy for Agentic Capability Evaluation",words:337,tier:3,track:"F",trackName:"📏 Evaluation",desc:"CMU PACE：Agent 能力评估的代理指标体系"},
+  {id:"F5",file:"docs/ch04/537-we-ran-250-ai-agent-evals-to-find-out-if-skills-beat-docs-t.md",title:"We Ran 250 AI Agent Evals: Skills vs Docs",words:532,tier:3,track:"F",trackName:"📏 Evaluation",desc:"250 次 Agent 评测实验：Skills 与 Docs 的效果对比"},
+  {id:"G9",file:"docs/ch05/001-impeccable.md",title:"Impeccable：大规模自动化测试框架",words:951,tier:3,track:"G",trackName:"🏗️ Harness 进阶",desc:"Impeccable 大规模自动化测试框架与 Harness 的关系"},
+  {id:"G10",file:"docs/ch05/048-is-grep-all-you-need-harness-pwc-arxiv-2605-151.md",title:"Is Grep All You Need? — 检索 × Harness × 交付方式三元组",words:678,tier:3,track:"G",trackName:"🏗️ Harness 进阶",desc:"PwC 论文解读：检索策略与 Harness 交付方式的耦合分析"},
+  {id:"G11",file:"docs/ch05/098-beyond-vibe-coding-directed-generation-as-design-methodolo.md",title:"Beyond Vibe Coding — Directed Generation as Design Methodology",words:370,tier:3,track:"G",trackName:"🏗️ Harness 进阶",desc:"从 Vibe Coding 到定向生成：设计方法论升级"},
+  {id:"H9",file:"docs/ch04/168-agent-reliability-context-drift-tool-calling-hallucinatio.md",title:"Agent Reliability: Context Drift & Tool Calling Hallucination",words:713,tier:3,track:"H",trackName:"🧠 架构进阶",desc:"Agent 可靠性：上下文漂移与工具调用幻觉问题"},
+  {id:"H10",file:"docs/ch04/246-building-reliable-agentic-ai-systems.md",title:"Building Reliable Agentic AI Systems",words:519,tier:3,track:"H",trackName:"🧠 架构进阶",desc:"构建可靠的 Agentic AI 系统：原则与实践"},
+  {id:"H11",file:"docs/ch04/566-agents-as-webs-of-beliefs.md",title:"Agents as Webs of Beliefs",words:458,tier:3,track:"H",trackName:"🧠 架构进阶",desc:"将 Agent 视为信念网络：一种新的架构理解视角"},
+  {id:"I5",file:"docs/ch04/121-agent-memory.md",title:"Agent Memory 架构解析",words:653,tier:3,track:"I",trackName:"💾 Context 进阶",desc:"Agent 记忆架构的分类与设计解析"},
+  {id:"I6",file:"docs/ch04/468-agentic-ai-infrastructure-practice-series-9-context-enginee.md",title:"Context Engineering — Agentic AI 基础设施实践系列",words:325,tier:3,track:"I",trackName:"💾 Context 进阶",desc:"Agentic AI 基础设施实践第 9 篇：Context Engineering"},
+  {id:"I7",file:"docs/ch04/512-proactive-memory-agent-meta-ai-wu-et-al-2026.md",title:"Proactive Memory Agent — Meta AI (Wu et al. 2026)",words:285,tier:3,track:"I",trackName:"💾 Context 进阶",desc:"Meta AI 的主动记忆 Agent：预测性记忆管理"},
+  {id:"J5",file:"docs/ch04/584-dynamic-subagents-subagent.md",title:"Dynamic Subagents：动态子 Agent 编排",words:204,tier:3,track:"J",trackName:"🤝 Multi-Agent 进阶",desc:"动态子 Agent 的编排策略与架构设计"},
+  {id:"J6",file:"docs/ch04/551-anthropic-multi-agent-research-system.md",title:"Anthropic Multi-Agent Research System",words:193,tier:3,track:"J",trackName:"🤝 Multi-Agent 进阶",desc:"Anthropic 的多 Agent 研究系统架构"},
+  {id:"J7",file:"docs/ch04/646-harness-langgraph-a2a-agent-team.md",title:"Harness + LangGraph + A2A：Agent Team 编排",words:206,tier:3,track:"J",trackName:"🤝 Multi-Agent 进阶",desc:"Harness 约束下的 LangGraph A2A Agent Team 编排实践"},
+  {id:"K4",file:"docs/ch09/058-codex-goal-six-hour-run.md",title:"Codex Goal Six Hour Run",words:592,tier:3,track:"K",trackName:"💻 AI Coding 进阶",desc:"Codex Goal 模式的 6 小时长运行实践"},
+  {id:"K5",file:"docs/ch09/149-state-of-cli-coding-agents-mid-2026.md",title:"State of CLI Coding Agents, Mid-2026",words:243,tier:3,track:"K",trackName:"💻 AI Coding 进阶",desc:"2026 年中 CLI 编程 Agent 生态现状"},
+  {id:"K6",file:"docs/ch09/081-code-is-cheap-don-t-write-any-ai-native-coding.md",title:"Code is Cheap — AI Native 编程效率提升五倍",words:331,tier:3,track:"K",trackName:"💻 AI Coding 进阶",desc:"Code is Cheap 背景下 AI Native 编程范式与效率提升"},
+  {id:"L4",file:"docs/ch11/013-aws-openclaw-amazon-bedrock-agentcore-serverless.md",title:"OpenClaw 迁移 Bedrock AgentCore 多租户 Serverless 架构",words:1626,tier:3,track:"L",trackName:"🔧 工具与基础设施",desc:"将 OpenClaw 迁移为基于 Bedrock AgentCore 的多租户 Serverless 架构"},
+  {id:"L5",file:"docs/ch04/482-vercel-ai-sdk-7-typescript-agent.md",title:"Vercel AI SDK 7 — TypeScript Agent 开发框架全面升级",words:390,tier:3,track:"L",trackName:"🔧 工具与基础设施",desc:"Vercel AI SDK 7 对 TypeScript Agent 开发的全面升级"},
+  {id:"L6",file:"docs/ch04/137-strands-agents-ai.md",title:"Strands Agents：AWS 云成本分析与优化 AI 助手",words:562,tier:3,track:"L",trackName:"🔧 工具与基础设施",desc:"基于 Strands Agents 构建亚马逊云成本优化 AI 助手"}
 ];
 
 const TRACKS = {
@@ -259,17 +297,19 @@ function render() {
   const doneIds = Object.keys(done);
   const t1Done = doneIds.filter(id => ARTICLES.find(a=>a.id===id)?.tier===1).length;
   const t2Done = doneIds.filter(id => ARTICLES.find(a=>a.id===id)?.tier===2).length;
+  const t3Done = doneIds.filter(id => ARTICLES.find(a=>a.id===id)?.tier===3).length;
   const totalWords = doneIds.reduce((s,id) => s + (ARTICLES.find(a=>a.id===id)?.words||0), 0);
   document.getElementById('s-t1').textContent = t1Done + '/20';
   document.getElementById('s-t2').textContent = t2Done + '/30';
-  document.getElementById('s-total').textContent = doneIds.length + '/50';
+  document.getElementById('s-t3').textContent = t3Done + '/36';
+  document.getElementById('s-total').textContent = doneIds.length + '/86';
   document.getElementById('s-time').textContent = (totalWords / 250 / 60).toFixed(1) + 'h';
   document.getElementById('s-words').textContent = (totalWords/1000).toFixed(1) + 'k';
   
   // Main progress
-  const pct = Math.round(doneIds.length / 50 * 100);
+  const pct = Math.round(doneIds.length / 86 * 100);
   document.getElementById('main-progress').style.width = pct + '%';
-  document.getElementById('progress-text').textContent = doneIds.length + ' / 50 篇完成';
+  document.getElementById('progress-text').textContent = doneIds.length + ' / 86 篇完成';
   document.getElementById('progress-pct').textContent = pct + '%';
   
   // Track progress
