@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📚 Agent 工程精读仪表盘</title>
+<style>
+  :root {
+    --bg: #0f1117; --surface: #1a1d27; --surface2: #242836;
+    --border: #2e3347; --text: #e4e4e7; --text2: #a1a1aa;
+    --accent: #6366f1; --accent2: #818cf8; --green: #22c55e;
+    --orange: #f59e0b; --red: #ef4444; --cyan: #06b6d4;
+    --tier1: #f59e0b; --tier2: #6366f1; --tier3: #64748b;
+    --track-a: #ef4444; --track-b: #6366f1; --track-c: #06b6d4;
+    --track-d: #22c55e; --track-e: #f59e0b; --track-f: #a855f7;
+    --track-g: #ec4899; --track-h: #14b8a6; --track-i: #f97316;
+    --track-j: #8b5cf6; --track-k: #10b981; --track-l: #3b82f6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'SF Pro', 'PingFang SC', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  
+  .header { background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 50%, #0c1220 100%); border-bottom: 1px solid var(--border); padding: 2rem; }
+  .header-inner { max-width: 1400px; margin: 0 auto; }
+  .header h1 { font-size: 2rem; background: linear-gradient(135deg, #818cf8, #c084fc, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
+  .header p { color: var(--text2); font-size: 0.95rem; }
+  
+  .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; max-width: 1400px; margin: 1.5rem auto 0; }
+  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.2rem; text-align: center; }
+  .stat-card .num { font-size: 1.8rem; font-weight: 700; }
+  .stat-card .label { color: var(--text2); font-size: 0.8rem; margin-top: 0.2rem; }
+  .stat-card.done .num { color: var(--green); }
+  .stat-card.t1 .num { color: var(--tier1); }
+  .stat-card.t2 .num { color: var(--tier2); }
+  
+  .controls { max-width: 1400px; margin: 1.5rem auto; display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center; padding: 0 1rem; }
+  .search-box { flex: 1; min-width: 200px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 0.7rem 1rem; color: var(--text); font-size: 0.95rem; outline: none; transition: border-color 0.2s; }
+  .search-box:focus { border-color: var(--accent); }
+  .search-box::placeholder { color: var(--text2); }
+  
+  .filter-tabs { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .tab { padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text2); cursor: pointer; font-size: 0.82rem; transition: all 0.2s; white-space: nowrap; }
+  .tab:hover { border-color: var(--accent); color: var(--text); }
+  .tab.active { background: var(--accent); border-color: var(--accent); color: white; }
+  .tab.tier1.active { background: var(--tier1); border-color: var(--tier1); }
+  .tab.tier2.active { background: var(--tier2); border-color: var(--tier2); }
+  .tab.tier3.active { background: var(--tier3); border-color: var(--tier3); }
+  
+  .view-toggle { display: flex; gap: 0.3rem; margin-left: auto; }
+  .view-btn { padding: 0.5rem 0.8rem; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text2); cursor: pointer; font-size: 1.1rem; }
+  .view-btn.active { background: var(--surface2); border-color: var(--accent); color: var(--accent2); }
+  
+  .progress-section { max-width: 1400px; margin: 0 auto 1rem; padding: 0 1rem; }
+  .progress-bar-wrap { background: var(--surface); border-radius: 10px; overflow: hidden; height: 8px; }
+  .progress-bar-fill { height: 100%; border-radius: 10px; transition: width 0.5s ease; background: linear-gradient(90deg, var(--accent), var(--green)); }
+  .progress-label { display: flex; justify-content: space-between; color: var(--text2); font-size: 0.78rem; margin-top: 0.3rem; }
+  
+  .track-progress { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; margin-top: 0.8rem; }
+  .track-bar { display: flex; align-items: center; gap: 0.5rem; }
+  .track-bar .track-name { font-size: 0.75rem; color: var(--text2); min-width: 100px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .track-bar .bar { flex: 1; height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden; }
+  .track-bar .bar-fill { height: 100%; border-radius: 3px; transition: width 0.5s; }
+  .track-bar .track-count { font-size: 0.72rem; color: var(--text2); min-width: 35px; text-align: right; }
+  
+  .content { max-width: 1400px; margin: 0 auto; padding: 0 1rem 3rem; }
+  
+  .section-header { margin: 1.5rem 0 0.8rem; display: flex; align-items: center; gap: 0.8rem; }
+  .section-header h2 { font-size: 1.1rem; color: var(--text); }
+  .section-header .badge { background: var(--surface2); color: var(--text2); padding: 0.2rem 0.6rem; border-radius: 6px; font-size: 0.75rem; }
+  
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1rem; }
+  .grid.list-view { grid-template-columns: 1fr; }
+  
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1.2rem; transition: all 0.2s; position: relative; overflow: hidden; cursor: pointer; }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(99,102,241,0.1); }
+  .card.done { opacity: 0.6; }
+  .card.done .card-title { text-decoration: line-through; }
+  .card.hidden { display: none; }
+  
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.6rem; }
+  .card-id { font-size: 0.75rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 5px; color: white; }
+  .card-meta { display: flex; gap: 0.5rem; align-items: center; }
+  .card-tier { font-size: 0.68rem; padding: 0.1rem 0.4rem; border-radius: 4px; font-weight: 600; }
+  .tier-1 { background: rgba(245,158,11,0.2); color: var(--tier1); }
+  .tier-2 { background: rgba(99,102,241,0.2); color: var(--tier2); }
+  .tier-3 { background: rgba(100,116,139,0.2); color: var(--tier3); }
+  
+  .card-title { font-size: 0.95rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.5rem; }
+  .card-title a { color: var(--text); text-decoration: none; }
+  .card-title a:hover { color: var(--accent2); }
+  
+  .card-desc { font-size: 0.82rem; color: var(--text2); line-height: 1.5; margin-bottom: 0.7rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  
+  .card-footer { display: flex; justify-content: space-between; align-items: center; }
+  .card-stats { display: flex; gap: 0.8rem; font-size: 0.78rem; color: var(--text2); }
+  .card-stats span { display: flex; align-items: center; gap: 0.2rem; }
+  
+  .check-btn { width: 28px; height: 28px; border-radius: 8px; border: 2px solid var(--border); background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; font-size: 0.9rem; color: transparent; }
+  .check-btn:hover { border-color: var(--green); }
+  .check-btn.checked { background: var(--green); border-color: var(--green); color: white; }
+  
+  .list-view .card { display: flex; align-items: center; gap: 1rem; padding: 0.8rem 1.2rem; }
+  .list-view .card-top { margin-bottom: 0; flex-direction: column; min-width: 60px; }
+  .list-view .card-title { margin-bottom: 0; flex: 1; font-size: 0.9rem; }
+  .list-view .card-desc { display: none; }
+  .list-view .card-footer { min-width: 180px; }
+  
+  .empty-state { text-align: center; padding: 3rem; color: var(--text2); }
+  .empty-state .icon { font-size: 3rem; margin-bottom: 1rem; }
+  
+  .link-icon { color: var(--accent2); font-size: 0.75rem; margin-left: 0.3rem; opacity: 0; transition: opacity 0.2s; }
+  .card:hover .link-icon { opacity: 1; }
+  
+  @media (max-width: 768px) {
+    .header { padding: 1.2rem; }
+    .header h1 { font-size: 1.5rem; }
+    .stats-row { grid-template-columns: repeat(2, 1fr); }
+    .grid { grid-template-columns: 1fr; }
+    .controls { flex-direction: column; }
+    .search-box { min-width: 100%; }
+  }
+  
+  .fade-in { animation: fadeIn 0.3s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  
+  .reset-btn { padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid var(--red); background: transparent; color: var(--red); cursor: pointer; font-size: 0.8rem; transition: all 0.2s; }
+  .reset-btn:hover { background: var(--red); color: white; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <h1>📚 Agent 工程精读仪表盘</h1>
+    <p>从 3379 篇文章中精选 50 篇 · 6 条轨道 · 3 个层级 · 约 22 小时精读</p>
+    <div class="stats-row">
+      <div class="stat-card t1"><div class="num" id="s-t1">0</div><div class="label">Tier 1 已读</div></div>
+      <div class="stat-card t2"><div class="num" id="s-t2">0</div><div class="label">Tier 2 已读</div></div>
+      <div class="stat-card done"><div class="num" id="s-total">0/50</div><div class="label">总进度</div></div>
+      <div class="stat-card"><div class="num" id="s-time" style="color:var(--cyan)">0h</div><div class="label">已节省时间</div></div>
+      <div class="stat-card"><div class="num" id="s-words" style="color:var(--accent2)">0</div><div class="label">已读字数</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="progress-section">
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="main-progress" style="width:0%"></div></div>
+  <div class="progress-label"><span id="progress-text">0 / 50 篇完成</span><span id="progress-pct">0%</span></div>
+  <div class="track-progress" id="track-progress"></div>
+</div>
+
+<div class="controls">
+  <input class="search-box" id="search" placeholder="🔍 搜索标题、轨道、关键词..." />
+  <div class="filter-tabs" id="tier-tabs">
+    <div class="tab active" data-tier="all">全部</div>
+    <div class="tab tier1" data-tier="1">⭐ Tier 1 冲刺</div>
+    <div class="tab tier2" data-tier="2">⭐⭐ Tier 2 深入</div>
+    <div class="tab tier3" data-tier="3">⭐⭐⭐ Tier 3 扩展</div>
+  </div>
+  <div class="filter-tabs" id="track-tabs"></div>
+  <div class="view-toggle">
+    <button class="view-btn active" data-view="grid" title="卡片视图">▦</button>
+    <button class="view-btn" data-view="list" title="列表视图">☰</button>
+  </div>
+  <button class="reset-btn" id="reset-btn" title="重置所有进度">重置进度</button>
+</div>
+
+<div class="content" id="content"></div>
+
+<script>
+const ARTICLES = [
+  {id:"A1",file:"docs/ch05/112-harness-engineering-ai.md",title:"Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？",words:2182,tier:1,track:"A",trackName:"🏗️ Harness Engineering",desc:"探讨 AI 在高风险后端系统中编程的可行性与安全约束"},
+  {id:"A2",file:"docs/ch05/117-harness-engineering.md",title:"Harness Engineering 四根支柱与四要素架构",words:847,tier:1,track:"A",trackName:"🏗️ Harness Engineering",desc:"Harness 工程的四大支柱：Guardrail、Constraint、Feedback、Recovery"},
+  {id:"A3",file:"docs/ch05/116-harness-engineering-ashby.md",title:"Harness Engineering 从理论到实战：Ashby 定律",words:898,tier:1,track:"A",trackName:"🏗️ Harness Engineering",desc:"用 Ashby 必要多样性定律指导 Agent 约束设计"},
+  {id:"A4",file:"docs/ch05/118-claude-harness-generator-evaluator-context-reset.md",title:"Claude Harness 设计：Generator-Evaluator 与 Context Reset",words:1019,tier:1,track:"A",trackName:"🏗️ Harness Engineering",desc:"Claude 的 Generator-Evaluator 循环与上下文重置策略"},
+  {id:"A5",file:"docs/ch04/687-agent-harnesses-are-dead-long-live-agent-harnesses.md",title:"Agent Harnesses Are Dead. Long Live Agent Harnesses.",words:331,tier:1,track:"A",trackName:"🏗️ Harness Engineering",desc:"Harness 范式的兴衰与重生"},
+  {id:"B1",file:"docs/ch04/669-17-agent-architecture-evolution.md",title:"17种 Agent 架构演进：控制流设计的完整演化史",words:1558,tier:1,track:"B",trackName:"🧠 Agent Architecture",desc:"从 ReAct 到 Unified Policy，17 种架构的完整演化路径"},
+  {id:"B2",file:"docs/ch04/670-cpu-agent-l1-l2-l3-execute-code.md",title:"CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3",words:1072,tier:1,track:"B",trackName:"🧠 Agent Architecture",desc:"用 CPU 缓存层级类比 Agent 的多层上下文管理"},
+  {id:"B3",file:"docs/ch01/1190-claude-code.md",title:"Claude Code 架构深度解析",words:1861,tier:1,track:"B",trackName:"🧠 Agent Architecture",desc:"Claude Code 的完整架构：工具调用、上下文管理、安全边界"},
+  {id:"B4",file:"docs/ch01/1224-codex-codex-app-agent-harness-runtime.md",title:"Codex 全链路架构：Agent Harness Runtime",words:592,tier:1,track:"B",trackName:"🧠 Agent Architecture",desc:"OpenAI Codex 的 Agent Harness 运行时架构"},
+  {id:"B5",file:"docs/ch04/671-you-can-t-afford-to-lead-agentic-engineering-from-the-sideli.md",title:"You can't afford to lead agentic engineering from the sidelines",words:2115,tier:1,track:"B",trackName:"🧠 Agent Architecture",desc:"为什么企业必须亲自下场做 Agentic Engineering"},
+  {id:"C1",file:"docs/ch01/1195-memory-in-the-llm-era-modular-architectures-and-strategies.md",title:"Memory in the LLM Era: Modular Architectures",words:759,tier:1,track:"C",trackName:"💾 Context & Memory",desc:"LLM 时代的模块化记忆架构与策略"},
+  {id:"C2",file:"docs/ch01/1187-subagents-claude-code.md",title:"Subagents 详解：Claude Code 如何避免上下文污染",words:1412,tier:1,track:"C",trackName:"💾 Context & Memory",desc:"子 Agent 如何隔离上下文、防止污染"},
+  {id:"C3",file:"docs/ch01/1200-claude-code.md",title:"Claude Code 七层记忆架构",words:697,tier:1,track:"C",trackName:"💾 Context & Memory",desc:"Claude Code 的七层记忆系统详解"},
+  {id:"D1",file:"docs/ch01/1199-claude-code-agent-agent.md",title:"Claude Code 多智能体协作体系设计",words:958,tier:1,track:"D",trackName:"🤝 Multi-Agent",desc:"Claude Code 的多 Agent 协作架构设计"},
+  {id:"D2",file:"docs/ch04/674-multi-agent-factory-mission.md",title:"Multi-Agent 架构：Factory Mission 系统的方法论",words:629,tier:1,track:"D",trackName:"🤝 Multi-Agent",desc:"Factory Mission 多 Agent 系统的方法论框架"},
+  {id:"D3",file:"docs/ch01/1219-icml-2026-multi-agent-orchestrator.md",title:"ICML 2026 Multi-Agent Orchestrator 过程评估",words:333,tier:1,track:"D",trackName:"🤝 Multi-Agent",desc:"ICML 2026 多 Agent 编排器的过程评估方法"},
+  {id:"E1",file:"docs/ch09/174-fastcontext-coding-agent.md",title:"FastContext 微软开源 Coding Agent",words:526,tier:1,track:"E",trackName:"💻 AI Coding Agent",desc:"微软 FastContext 开源编程 Agent 解析"},
+  {id:"E2",file:"docs/ch09/176-ai-coding-agent-token.md",title:"AI Coding Agent Token 成本控制五层模型",words:356,tier:1,track:"E",trackName:"💻 AI Coding Agent",desc:"控制编程 Agent Token 成本的五层策略"},
+  {id:"F1",file:"docs/ch01/1193-ai-agent-5-l1-l2-l3-6-benchmark-llm-as-jud.md",title:"AI Agent 评测实战：5 维指标 + L1/L2/L3",words:1655,tier:1,track:"F",trackName:"📏 Evaluation",desc:"Agent 评测的五维指标体系与 L1/L2/L3 分层"},
+  {id:"F2",file:"docs/ch05/129-hscodecomp-acl-2026-agent.md",title:"HSCodeComp：阿里 ACL 2026 层级规则应用 Agent 基准",words:230,tier:1,track:"F",trackName:"📏 Evaluation",desc:"阿里 ACL 2026 的 Agent 层级规则评测基准"},
+  {id:"G1",file:"docs/ch05/113-loss-function-development-lfd-goal-elvis-sun.md",title:"Loss Function Development (LFD) — 损失函数开发与 /goal 循环",words:1850,tier:2,track:"G",trackName:"🏗️ Harness 进阶",desc:"用损失函数思维优化 Agent 的 goal 循环"},
+  {id:"G2",file:"docs/ch05/114-harness-100-cache-agent.md",title:"Harness 工程实践复盘：100% Cache 命中的 Agent",words:913,tier:2,track:"G",trackName:"🏗️ Harness 进阶",desc:"实现 100% 缓存命中的 Agent Harness 实践"},
+  {id:"G3",file:"docs/ch05/115-dipg-host-research-verify-agent-verify-c-aigc.md",title:"DIPG 蚂蚁保 Host-Research-Verify 三 Agent 闭环",words:1308,tier:2,track:"G",trackName:"🏗️ Harness 进阶",desc:"蚂蚁保三 Agent 闭环验证架构"},
+  {id:"G4",file:"docs/ch05/119-harness-ai.md",title:"Harness不是目的，知识才是护城河",words:758,tier:2,track:"G",trackName:"🏗️ Harness 进阶",desc:"从 Harness 到知识壁垒的战略思考"},
+  {id:"G5",file:"docs/ch05/120-stripe-minions-deerflow-2-0.md",title:"墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0 + 蚂蚁支小助",words:586,tier:2,track:"G",trackName:"🏗️ Harness 进阶",desc:"三大产品案例证明约束比模型更重要"},
+  {id:"G6",file:"docs/ch05/122-2026-harness-engineering.md",title:"为什么 2026 年真正重要的是 Harness Engineering？",words:568,tier:2,track:"G",trackName:"🏗️ Harness 进阶",desc:"2026 年 Harness Engineering 的战略意义"},
+  {id:"G7",file:"docs/ch05/125-better-harness-agent-harness.md",title:"Better-Harness：Agent Harness 自动优化方法论",words:401,tier:2,track:"G",trackName:"🏗️ Harness 进阶",desc:"自动化优化 Agent Harness 的方法论"},
+  {id:"G8",file:"docs/ch05/133-harness-m-autoharness.md",title:"Harness进化论文 — M⋆记忆程序进化与AutoHarness动作约束",words:195,tier:2,track:"G",trackName:"🏗️ Harness 进阶",desc:"M⋆ 记忆程序进化与 AutoHarness 论文解读"},
+  {id:"H1",file:"docs/ch04/692-agentic-rl-token-in-token-out-done-right.md",title:"Agentic RL: Token-In, Token-Out Done Right",words:829,tier:2,track:"H",trackName:"🧠 架构进阶",desc:"Agentic 强化学习的 Token 流正确做法"},
+  {id:"H2",file:"docs/ch04/682-harness-engineering-nl2sql-multi-agent.md",title:"阿里数据研发 Harness Engineering：NL2SQL × Multi-Agent × 知识工程",words:452,tier:2,track:"H",trackName:"🧠 架构进阶",desc:"阿里 NL2SQL 多 Agent 知识工程实践"},
+  {id:"H3",file:"docs/ch04/690-agent-protocol-6-runtime.md",title:"Agent Protocol 不变层：跨框架的 6 个稳定 Runtime 对象",words:399,tier:2,track:"H",trackName:"🧠 架构进阶",desc:"跨框架 Agent 协议的六个稳定运行时对象"},
+  {id:"H4",file:"docs/ch01/1270-hermes-agent-9.md",title:"Hermes Agent 9 模块系统架构",words:404,tier:2,track:"H",trackName:"🧠 架构进阶",desc:"Hermes Agent 的 9 模块系统架构详解"},
+  {id:"H5",file:"docs/ch01/1269-pi-agent.md",title:"Pi Agent：极简核心 + 事件总线扩展框架",words:189,tier:2,track:"H",trackName:"🧠 架构进阶",desc:"Pi Agent 的极简核心与事件总线设计"},
+  {id:"H6",file:"docs/ch04/684-karpathy-vibe-coding-agentic-engineering.md",title:"Karpathy：从 Vibe Coding 到 Agentic Engineering",words:474,tier:2,track:"H",trackName:"🧠 架构进阶",desc:"Karpathy 提出的从 Vibe Coding 到 Agentic Engineering 转型"},
+  {id:"H7",file:"docs/ch04/675-tokenspeed-agentic-inference-engine.md",title:"Tokenspeed Agentic Inference Engine",words:751,tier:2,track:"H",trackName:"🧠 架构进阶",desc:"Tokenspeed 的 Agentic 推理引擎架构"},
+  {id:"H8",file:"docs/ch01/1215-agentium-agent.md",title:"Agentium — 从零实现 Agent 系统的开源框架",words:509,tier:2,track:"H",trackName:"🧠 架构进阶",desc:"Agentium 开源框架的从零实现"},
+  {id:"I1",file:"docs/ch01/1191-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md",title:"LLM Architectures: KV Sharing, mHC, Compressed Attention",words:1857,tier:2,track:"I",trackName:"💾 Context 进阶",desc:"LLM 架构前沿：KV 共享、mHC、压缩注意力"},
+  {id:"I2",file:"docs/ch01/1203-deepseek-v4-flash-pro-million-token-context-and-trillion.md",title:"DeepSeek V4 Flash & Pro: Million-Token Context",words:782,tier:2,track:"I",trackName:"💾 Context 进阶",desc:"DeepSeek V4 的百万 Token 上下文能力"},
+  {id:"I3",file:"docs/ch01/1239-residual-context-diffusion-rcd-apple.md",title:"Apple Residual Context Diffusion",words:319,tier:2,track:"I",trackName:"💾 Context 进阶",desc:"Apple 的残差上下文扩散技术"},
+  {id:"I4",file:"docs/ch01/1272-llm-kv-cache-prefix-caching-agent-90.md",title:"LLM KV Cache Prefix Caching Agent 命中率 90%",words:355,tier:2,track:"I",trackName:"💾 Context 进阶",desc:"KV Cache 前缀缓存实现 90% 命中率"},
+  {id:"J1",file:"docs/ch01/1208-factory-mission-multi-agent-architecture.md",title:"Factory Mission Multi Agent Architecture",words:794,tier:2,track:"J",trackName:"🤝 Multi-Agent 进阶",desc:"Factory Mission 多 Agent 架构详解"},
+  {id:"J2",file:"docs/ch01/1218-agentteams-claude-tag.md",title:"AgentTeams 和 Claude Tag 都进入群聊模式",words:513,tier:2,track:"J",trackName:"🤝 Multi-Agent 进阶",desc:"AgentTeams 与 Claude Tag 的群聊协作模式"},
+  {id:"J3",file:"docs/ch04/672-asana-agentic-work-management-platform-work-graph-as-agent.md",title:"Asana Work Graph as Agentic OS",words:1240,tier:2,track:"J",trackName:"🤝 Multi-Agent 进阶",desc:"Asana 工作图作为 Agentic 操作系统的设计"},
+  {id:"J4",file:"docs/ch04/677-agent-room.md",title:"协作涌现：Agent Room 的多智能体决策框架",words:273,tier:2,track:"J",trackName:"🤝 Multi-Agent 进阶",desc:"Agent Room 的协作涌现与决策框架"},
+  {id:"K1",file:"docs/ch09/177-dockerless.md",title:"Dockerless: 免环境补丁验证器",words:291,tier:2,track:"K",trackName:"💻 AI Coding 进阶",desc:"无需 Docker 的轻量级环境补丁验证"},
+  {id:"K2",file:"docs/ch09/178-glm-5-scaling-pain.md",title:"GLM-5 Scaling Pain 推理复盘",words:471,tier:2,track:"K",trackName:"💻 AI Coding 进阶",desc:"GLM-5 推理过程中的 Scaling Pain 复盘"},
+  {id:"K3",file:"docs/ch01/1236-claude-code.md",title:"Claude Code 架构解析",words:471,tier:2,track:"K",trackName:"💻 AI Coding 进阶",desc:"Claude Code 的核心架构解析"},
+  {id:"L1",file:"docs/ch07/83-microsoft-agent-framework-tools-4-provider-tool-ap.md",title:"Microsoft Agent Framework Tools 总览",words:1760,tier:2,track:"L",trackName:"🔧 工具与基础设施",desc:"微软 Agent 框架工具全景"},
+  {id:"L2",file:"docs/ch11/276-agentscope-java-2-0-harness.md",title:"AgentScope Java 2.0：企业级分布式 Harness 框架",words:1550,tier:2,track:"L",trackName:"🔧 工具与基础设施",desc:"AgentScope Java 2.0 企业级分布式框架"},
+  {id:"L3",file:"docs/ch11/279-build-a-highly-scalable-serverless-langgraph-multi-agent-sys.md",title:"Build a highly scalable serverless LangGraph multi-agent system",words:621,tier:2,track:"L",trackName:"🔧 工具与基础设施",desc:"构建高可扩展的无服务器 LangGraph 多 Agent 系统"}
+];
+
+const TRACKS = {
+  A:{name:"🏗️ Harness Engineering",color:"var(--track-a)"},
+  B:{name:"🧠 Agent Architecture",color:"var(--track-b)"},
+  C:{name:"💾 Context & Memory",color:"var(--track-c)"},
+  D:{name:"🤝 Multi-Agent",color:"var(--track-d)"},
+  E:{name:"💻 AI Coding Agent",color:"var(--track-e)"},
+  F:{name:"📏 Evaluation",color:"var(--track-f)"},
+  G:{name:"🏗️ Harness 进阶",color:"var(--track-g)"},
+  H:{name:"🧠 架构进阶",color:"var(--track-h)"},
+  I:{name:"💾 Context 进阶",color:"var(--track-i)"},
+  J:{name:"🤝 Multi-Agent 进阶",color:"var(--track-j)"},
+  K:{name:"💻 AI Coding 进阶",color:"var(--track-k)"},
+  L:{name:"🔧 工具与基础设施",color:"var(--track-l)"}
+};
+
+const KEY = 'agent-reading-progress';
+let done = JSON.parse(localStorage.getItem(KEY) || '{}');
+let currentTier = 'all';
+let currentTrack = 'all';
+let currentView = 'grid';
+let searchQuery = '';
+
+function save() { localStorage.setItem(KEY, JSON.stringify(done)); }
+
+function getArticleUrl(file) {
+  // docs/ch05/112-harness-engineering-ai.md → /ch05/112-harness-engineering-ai.html
+  return 'https://jinguo.tech/' + file.replace('docs/', '').replace('.md', '.html');
+}
+
+function toggleDone(id) {
+  if (done[id]) delete done[id]; else done[id] = 1;
+  save(); render();
+}
+
+function render() {
+  // Stats
+  const doneIds = Object.keys(done);
+  const t1Done = doneIds.filter(id => ARTICLES.find(a=>a.id===id)?.tier===1).length;
+  const t2Done = doneIds.filter(id => ARTICLES.find(a=>a.id===id)?.tier===2).length;
+  const totalWords = doneIds.reduce((s,id) => s + (ARTICLES.find(a=>a.id===id)?.words||0), 0);
+  document.getElementById('s-t1').textContent = t1Done + '/20';
+  document.getElementById('s-t2').textContent = t2Done + '/30';
+  document.getElementById('s-total').textContent = doneIds.length + '/50';
+  document.getElementById('s-time').textContent = (totalWords / 250 / 60).toFixed(1) + 'h';
+  document.getElementById('s-words').textContent = (totalWords/1000).toFixed(1) + 'k';
+  
+  // Main progress
+  const pct = Math.round(doneIds.length / 50 * 100);
+  document.getElementById('main-progress').style.width = pct + '%';
+  document.getElementById('progress-text').textContent = doneIds.length + ' / 50 篇完成';
+  document.getElementById('progress-pct').textContent = pct + '%';
+  
+  // Track progress
+  const trackDiv = document.getElementById('track-progress');
+  trackDiv.innerHTML = '';
+  for (const [k, t] of Object.entries(TRACKS)) {
+    const total = ARTICLES.filter(a => a.track === k).length;
+    const completed = ARTICLES.filter(a => a.track === k && done[a.id]).length;
+    const pct = total ? Math.round(completed/total*100) : 0;
+    trackDiv.innerHTML += `<div class="track-bar"><span class="track-name">${t.name}</span><div class="bar"><div class="bar-fill" style="width:${pct}%;background:${t.color}"></div></div><span class="track-count">${completed}/${total}</span></div>`;
+  }
+  
+  // Filter
+  const filtered = ARTICLES.filter(a => {
+    if (currentTier !== 'all' && a.tier != currentTier) return false;
+    if (currentTrack !== 'all' && a.track !== currentTrack) return false;
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      return a.title.toLowerCase().includes(q) || a.desc.toLowerCase().includes(q) || a.id.toLowerCase().includes(q) || TRACKS[a.track].name.toLowerCase().includes(q);
+    }
+    return true;
+  });
+  
+  // Render cards
+  const content = document.getElementById('content');
+  content.innerHTML = '';
+  
+  if (filtered.length === 0) {
+    content.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><p>没有找到匹配的文章</p></div>';
+    return;
+  }
+  
+  // Group by tier
+  const groups = {};
+  filtered.forEach(a => {
+    const key = 'tier-' + a.tier;
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(a);
+  });
+  
+  const tierNames = {1:'⭐ Tier 1：核心冲刺',2:'⭐⭐ Tier 2：深入子域',3:'⭐⭐⭐ Tier 3：扩展阅读'};
+  
+  for (const [key, articles] of Object.entries(groups)) {
+    const tier = parseInt(key.split('-')[1]);
+    const section = document.createElement('div');
+    section.innerHTML = `<div class="section-header"><h2>${tierNames[tier]}</h2><span class="badge">${articles.filter(a=>done[a.id]).length}/${articles.length} 完成</span></div><div class="grid ${currentView==='list'?'list-view':''}" id="grid-${key}"></div>`;
+    content.appendChild(section);
+    
+    const grid = section.querySelector('.grid');
+    articles.forEach(a => {
+      const isDone = done[a.id];
+      const url = getArticleUrl(a.file);
+      const card = document.createElement('div');
+      card.className = `card fade-in ${isDone?'done':''}`;
+      card.innerHTML = `
+        <div class="card-top">
+          <span class="card-id" style="background:${TRACKS[a.track].color}">${a.id}</span>
+          <div class="card-meta">
+            <span class="card-tier tier-${a.tier}">Tier ${a.tier}</span>
+          </div>
+        </div>
+        <div class="card-title"><a href="${url}" target="_blank">${a.title}</a><span class="link-icon">↗</span></div>
+        <div class="card-desc">${a.desc}</div>
+        <div class="card-footer">
+          <div class="card-stats">
+            <span>📝 ${(a.words/1000).toFixed(1)}k字</span>
+            <span>⏱️ ${Math.max(3,Math.round(a.words/250))}min</span>
+            <span>${TRACKS[a.track].name}</span>
+          </div>
+          <button class="check-btn ${isDone?'checked':''}" onclick="event.stopPropagation();toggleDone('${a.id}')">✓</button>
+        </div>`;
+      card.addEventListener('click', (e) => { if (e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') window.open(url, '_blank'); });
+      grid.appendChild(card);
+    });
+  }
+}
+
+// Tier tabs
+document.getElementById('tier-tabs').addEventListener('click', e => {
+  const tab = e.target.closest('.tab');
+  if (!tab) return;
+  document.querySelectorAll('#tier-tabs .tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+  currentTier = tab.dataset.tier;
+  render();
+});
+
+// Track tabs
+const trackTabsDiv = document.getElementById('track-tabs');
+const allTab = document.createElement('div');
+allTab.className = 'tab active'; allTab.dataset.track = 'all'; allTab.textContent = '全部轨道';
+trackTabsDiv.appendChild(allTab);
+for (const [k, t] of Object.entries(TRACKS)) {
+  const tab = document.createElement('div');
+  tab.className = 'tab'; tab.dataset.track = k;
+  tab.textContent = t.name.split(' ')[0] + ' ' + t.name.split(' ').slice(1).join(' ');
+  tab.style.cssText = `--tc:${t.color}`;
+  trackTabsDiv.appendChild(tab);
+}
+trackTabsDiv.addEventListener('click', e => {
+  const tab = e.target.closest('.tab');
+  if (!tab) return;
+  document.querySelectorAll('#track-tabs .tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+  currentTrack = tab.dataset.track;
+  tab.style.borderColor = currentTrack !== 'all' ? TRACKS[currentTrack]?.color : '';
+  tab.style.background = currentTrack !== 'all' ? TRACKS[currentTrack]?.color : '';
+  tab.style.color = currentTrack !== 'all' ? 'white' : '';
+  render();
+});
+
+// Search
+document.getElementById('search').addEventListener('input', e => {
+  searchQuery = e.target.value;
+  render();
+});
+
+// View toggle
+document.querySelectorAll('.view-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentView = btn.dataset.view;
+    render();
+  });
+});
+
+// Reset
+document.getElementById('reset-btn').addEventListener('click', () => {
+  if (confirm('确定要重置所有阅读进度吗？')) {
+    done = {}; save(); render();
+  }
+});
+
+// Init
+render();
+</script>
+</body>
+</html>
