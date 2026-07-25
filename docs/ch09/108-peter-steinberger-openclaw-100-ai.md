@@ -59,7 +59,7 @@ Peter Steinberger的100个AI Agent实验揭示了当前AI编程工具在工程�
 
 ## 相关实体
 - [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](ch09/077-claw-chain-cyera-research-unveil-four-chainable-vulnerabili.html)
-- [Openclaw Agent Loop Design Patterns](../ch01/1023-openclaw-agent.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1026-openclaw-agent.html)
 - [Autoresearch Multi Agent Software](../ch03/035-agent.html)
 - [Hiclaw V110 K8S Hermes Worker](../ch01/1238-0.html)
 - [Pi Openclaw Coding Harness](../ch11/230-openclaw.html)

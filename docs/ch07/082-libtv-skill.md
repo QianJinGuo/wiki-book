@@ -2,7 +2,7 @@
 
 ## Ch07.082 LibTV把导演的手艺装进了Skill商店，我拿三支片子验了验
 
-> 📊 Level ⭐⭐ | 3.6KB | `entities/libtv-ai-video-agent-skill-store-creative.md`
+> 📊 Level ⭐⭐ | 3.8KB | `entities/libtv-ai-video-agent-skill-store-creative.md`
 
 # LibTV把导演的手艺装进了Skill商店，我拿三支片子验了验
 

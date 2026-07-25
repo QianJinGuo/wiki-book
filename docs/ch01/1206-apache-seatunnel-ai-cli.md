@@ -2,7 +2,7 @@
 
 ## Ch01.1206 Apache SeaTunnel AI CLI 模型评测
 
-> 📊 Level ⭐⭐ | 0.6KB | `entities/基于-amazon-bedrock-的-apache-seatunnel-ai-cli-模型评测从配置生成到真实执行.md`
+> 📊 Level ⭐⭐ | 0.7KB | `entities/基于-amazon-bedrock-的-apache-seatunnel-ai-cli-模型评测从配置生成到真实执行.md`
 
 # Apache SeaTunnel AI CLI 模型评测
 

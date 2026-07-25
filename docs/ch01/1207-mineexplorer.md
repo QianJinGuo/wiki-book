@@ -2,7 +2,7 @@
 
 ## Ch01.1207 MineExplorer: 多模态能力断层
 
-> 📊 Level ⭐⭐ | 0.6KB | `entities/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md`
+> 📊 Level ⭐⭐ | 0.7KB | `entities/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md`
 
 # MineExplorer: 多模态能力断层
 

@@ -210,7 +210,7 @@ Netflix 的 fallback 设计中有一条重要规则：**原始 wide partition �
 ## 相关实体
 - [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For G](ch11/199-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 - [Vietnam Domestic Cloud](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/1128-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/1129-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
 - [Toto 2](ch11/163-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 - [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For Government Workloads](ch11/199-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 

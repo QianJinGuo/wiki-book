@@ -43,9 +43,9 @@ AgentCore Runtime 的使用表明，Serverless Agent 托管正在成为 AI 原�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zenjoy-aiops-agent-bedrock-eks-prometheus.md)
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/389-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/391-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch11/262-aws-bedrock-agentcore.html)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/546-amazon-bedrock-agentcore.html)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/548-amazon-bedrock-agentcore.html)
 - [OpenClaw多租户迁移: Phase 2&3部署](ch11/230-openclaw.html)
 - [AgentCore Runtime部署Apache Doris MCP Server](ch11/169-apache-doris-mcp-server-quick-suite-ai.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/262-aws-bedrock-agentcore.html)
@@ -54,7 +54,7 @@ AgentCore Runtime 的使用表明，Serverless Agent 托管正在成为 AI 原�
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/230-openclaw.html)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/262-aws-bedrock-agentcore.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/161-amazon-bedrock.html)
-- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/546-amazon-bedrock-agentcore.html)
+- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/548-amazon-bedrock-agentcore.html)
 
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/009-aws-bedrock.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/054-prowler-genai.html)

@@ -14,11 +14,11 @@
 - [Build An Enterprise Observability Solution For Amazon Quick](../ch11/021-build-an-enterprise-observability-solution-for-amazon-quick.html)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/076-claude-code.html)
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/140-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/061-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/060-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompting-amazon-nova-2-for-content-moderation.md)
 
-- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](ch01/646-garry-tan.html)
+- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](ch01/650-garry-tan.html)
 
 ## 深度分析
 ### AILuminate 分类体系：12 类危害Taxonomy

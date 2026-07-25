@@ -106,7 +106,7 @@ OpenAI o 系列并非独占推理模型市场：
 
 ## 参见
 
-- [Recent Developments in LLM Architectures](ch01/607-llm.html) — 推理时代对 KV-cache 等架构的优化
+- [Recent Developments in LLM Architectures](ch01/610-llm.html) — 推理时代对 KV-cache 等架构的优化
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-reasoning-models.md)
 
 ---

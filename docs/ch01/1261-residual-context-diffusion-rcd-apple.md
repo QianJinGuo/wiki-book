@@ -66,14 +66,14 @@ RCD 解决了 dLLM 在实际部署中的核心痛点：**推理效率与精度�
 
 4. **质量与速度的联合优化**：RCD 证明减少 4-5 倍计算步骤的同时还能提升质量——这种"双赢"在 AI 系统中并不常见。在设计 Agent 的推理链路时，应持续审视是否存在"丢弃了有用信息"的低效环节，往往能找到类似的优化空间。
 
-5. **关注 token 层面的效率指标**：RCD 的研究视角提示我们，不仅要关注模型层面的准确率，还要关注"每 token 计算效率"——即单位计算量下获得的信息增益。[推理优化](ch01/607-llm.html) 领域的指标设计可以借鉴这一思路。
+5. **关注 token 层面的效率指标**：RCD 的研究视角提示我们，不仅要关注模型层面的准确率，还要关注"每 token 计算效率"——即单位计算量下获得的信息增益。[推理优化](ch01/610-llm.html) 领域的指标设计可以借鉴这一思路。
 
 ## 相关实体
 
-- [扩散语言模型后门攻击](ch01/650-baddlm.html)
-- [推理优化](ch01/607-llm.html)
+- [扩散语言模型后门攻击](ch01/654-baddlm.html)
+- [推理优化](ch01/610-llm.html)
 - [注意力坍塌与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
-- [推测解码优化](ch01/774-deepseek-dspark.html)
+- [推测解码优化](ch01/776-deepseek-dspark.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/residual-context-diffusion-apple-ml-2026-07.md)
 
