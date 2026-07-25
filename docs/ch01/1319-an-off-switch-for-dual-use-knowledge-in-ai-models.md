@@ -86,14 +86,14 @@ GRAM 的模块化思路对于 **AI Agent 安全** 有重要启示。Agent 系统
 
 ## 相关实体
 
-- [Anthropic](ch01/1324-anthropic.html) — 研究主体（Alignment Science 团队）
+- [Anthropic](ch01/963-anthropic.html) — 研究主体（Alignment Science 团队）
 - **AE Studio** — 合作研究机构（无独立实体页面）
 - **Dual-Use Knowledge** — 双重用途知识概念（无独立概念页面）
 - **AI Safety Alignment** — 对齐概念框架（无独立概念页面）
 - **Data Filtering (Pre-training)** — 预训练数据过滤（无独立概念页面）
 - **Machine Unlearning** — 机器遗忘技术（无独立概念页面）
 - **Fable Safeguards** — Anthropic 的越狱防护框架（无独立实体页面）
-- [Claude Opus 4.8](ch01/964-claude.html) — Anthropic 前沿模型（未应用 GRAM）
+- [Claude Opus 4.8](ch01/1234-claude.html) — Anthropic 前沿模型（未应用 GRAM）
 - [Antidoom](https://github.com/QianJinGuo/wiki/blob/main/entities/antidoom.md) — 另一种精确对齐技术（消除循环）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/off-switch-dual-use.md)

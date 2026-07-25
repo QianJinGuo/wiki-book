@@ -71,7 +71,7 @@ Tower 结构：MLP baseline → ResFlow MLP (AUC +0.07%) → **MMCN** (AUC +0.32
 
 ## 关联条目
 
-- [推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地](ch01/551-scaling.html) — 华为 Fuxi 推荐系统 Scaling Law 实践，与本篇淘宝爆品团形成对比视角（生成式推荐 vs Token-Based DLRM 替换）
+- [推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地](ch01/553-scaling.html) — 华为 Fuxi 推荐系统 Scaling Law 实践，与本篇淘宝爆品团形成对比视角（生成式推荐 vs Token-Based DLRM 替换）
 - [OneReason：快手 Reasoning Recommender System 实践](../ch05/091-ai.html) — 快手的推理型推荐系统，与淘宝 Token-Based RankMixer 分别探索推荐模型的不同演进方向
 
 ## 退出

@@ -123,7 +123,7 @@ Agent 不会欣赏按钮做得多圆，只在乎能不能稳定调用。GUI 服�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/crawler-vs-opencli-doubao.md)
 
-- [GBrain](../ch01/259-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [GBrain](../ch01/258-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 
 ---
 

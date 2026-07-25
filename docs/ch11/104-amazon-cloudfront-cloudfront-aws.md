@@ -46,9 +46,9 @@ Connection Group支持Unicast和Anycast的动态切换，这为网络架构演�
 ## 相关实体
 - [Yidian Tianxia Context Engineering Agentic Ai Qcon](../ch04/255-yidian-tianxia-context-engineering-agentic-ai.html)
 - [在 Amazon Ec2 Gpu 实例上部署 Nvidia Nemoclaw 以 Amazon Bedrock 作为推理](ch11/161-amazon-bedrock.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/546-amazon-bedrock-agentcore.html)
-- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch11/295-amazon-nova.html)
-- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01/343-aws-sagemaker-capacity-aware-inference-fallback.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/548-amazon-bedrock-agentcore.html)
+- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch11/298-amazon-nova.html)
+- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01/342-aws-sagemaker-capacity-aware-inference-fallback.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture.md)
 

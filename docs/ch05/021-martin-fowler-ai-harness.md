@@ -108,17 +108,17 @@ Google 工程师把日常工作自动化掉一大半后剩下的是判断、拆�
 - [Agent Harness 架构](ch05/058-agent-harness.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/129-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](ch05/018-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](ch05/018-harness.html)
-- [你不知道的 Agent 原理架构与工程实践](../ch04/348-agent-principle-architecture-engineering-practice.html)
-- [AI Coding Agent 记忆系统](../ch04/326-ai-coding-agent.html)
+- [你不知道的 Agent 原理架构与工程实践](../ch04/350-agent-principle-architecture-engineering-practice.html)
+- [AI Coding Agent 记忆系统](../ch04/328-ai-coding-agent.html)
 - [柚漫剧 AI 全流程提效拆解](ch05/091-ai.html)
-- [Agent Skill 设计模式](../ch04/404-agent-skills.html)
+- [Agent Skill 设计模式](../ch04/406-agent-skills.html)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](ch05/082-thin-harness-fat-skills-ai.html)
-- [Design Patterns for AI Agents 2026](../ch04/097-design-patterns-for-ai-agents-2026-4-5-reflection.html)
+- [Design Patterns for AI Agents 2026](../ch04/096-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 
 ---
 

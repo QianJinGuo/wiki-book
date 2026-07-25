@@ -70,9 +70,9 @@ Agent Team 把四类提取任务（UI 组件、布局文件、业务逻辑、资
    整体方案的稳定性由 Skill 的规范质量决定，SubAgent 和 Agent Team 提供的是调度骨架，骨架上每个节点能不能稳定输出，取决于 Skill 有没有真正约束执行过程。这意味着在三层架构中，Skill 层的基础设施投入回报率最高——一个 extractor Skill 的改进会同时惠及所有使用它的 Teammate 和 SubAgent。 ].md]
 ## 相关实体
 - [Baidu Netdisk Kmp Migration Three Layer Agent Architecture](../ch03/035-agent.html)
-- [Agent Memory Engineering Tax Aws China 2026](../ch04/102-agent-memory.html)
-- [Ai Skill Skill Creator 源码拆解](../ch04/323-skill-skill.html)
-- [From Agent Protocol To Harness Skill](../ch04/416-from-agent-protocol-to-harness-skill.html)
+- [Agent Memory Engineering Tax Aws China 2026](../ch04/101-agent-memory.html)
+- [Ai Skill Skill Creator 源码拆解](../ch04/325-skill-skill.html)
+- [From Agent Protocol To Harness Skill](../ch04/418-from-agent-protocol-to-harness-skill.html)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-netdisk-kmp-migration-three-layer-agent-architecture.md)].md]

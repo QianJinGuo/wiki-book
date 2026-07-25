@@ -69,10 +69,10 @@ OCI 快速拥抱 Vera 并宣布"数百千"级别部署计划，反映出企业�
 基于 Vera 的设计理念，AI 代理架构师应关注：(1) 减少跨进程/跨沙箱通信延迟；(2) 利用 CPU 端的高带宽进行上下文缓存；(3) 将代码生成、工具编排等 CPU 密集型任务与 GPU 推理解耦。Vera 的发布将推动整个行业重新思考代理架构中的 CPU 角色。
 ## 相关实体
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch04/271-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
-- [Nvidia Agentic Systems Extreme Co Design](ch04/238-agentic.html)
-- [Sap Unveils The Autonomous Enterprise](ch04/109-sap-unveils-the-autonomous-enterprise.html)
-- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch04/238-agentic.html)
-- [Nemotron 3 5 Content Safety](../ch01/477-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
+- [Nvidia Agentic Systems Extreme Co Design](ch04/237-agentic.html)
+- [Sap Unveils The Autonomous Enterprise](ch04/108-sap-unveils-the-autonomous-enterprise.html)
+- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch04/237-agentic.html)
+- [Nemotron 3 5 Content Safety](../ch01/478-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blogs.nvidia.com-vera-cpu-delivery.md)

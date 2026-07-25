@@ -59,7 +59,7 @@ DiScoFormer 最令人印象深刻的特性是**跨分布泛化**——它不仅�
 - 非高斯形状（如 Laplace 分布、Student-t 分布）
 - 训练时完全未见过的分布类型
 
-这种泛化能力意味着 DiScoFormer 实际上学习了一个"密度估计的元算法"——不是记住特定分布的形状，而是学会了"给定任意数据点集，如何估计其密度"的计算过程。这与 [Prime Intellect Auto NanoGPT](ch01/724-9.html) 中"元学习"的思想一脉相承。
+这种泛化能力意味着 DiScoFormer 实际上学习了一个"密度估计的元算法"——不是记住特定分布的形状，而是学会了"给定任意数据点集，如何估计其密度"的计算过程。这与 [Prime Intellect Auto NanoGPT](ch01/727-9.html) 中"元学习"的思想一脉相承。
 
 ### 3. 对扩散模型的直接改进潜力
 
@@ -69,7 +69,7 @@ DiScoFormer 最令人印象深刻的特性是**跨分布泛化**——它不仅�
 - **高维精度优势**：在 100 维空间中仍然保持精度，这对高分辨率图像生成至关重要
 - **推理时适应**：通过一致性损失微调，可以适应未见过的数据分布
 
-这直接关联到 [DiffusionGemma](ch01/602-gemma-4.html) 等扩散模型架构的分数估计组件。
+这直接关联到 [DiffusionGemma](ch01/605-gemma-4.html) 等扩散模型架构的分数估计组件。
 
 ### 4. 科学计算中的共享依赖
 
@@ -114,10 +114,10 @@ DiScoFormer 的推理时适应机制是一个优雅的设计：
 
 ## 相关实体
 
-- [DiffusionGemma](ch01/602-gemma-4.html)
+- [DiffusionGemma](ch01/605-gemma-4.html)
 - [DiffusionGemma Transparency Audit](https://github.com/QianJinGuo/wiki/blob/main/entities/diffusiongemma-transparency-audit-lesswrong.md)
-- [HuggingFace Torch MLP Fusion](ch01/900-20.html)
-- [Prime Intellect Auto NanoGPT](ch01/724-9.html)
+- [HuggingFace Torch MLP Fusion](ch01/902-20.html)
+- [Prime Intellect Auto NanoGPT](ch01/727-9.html)
 - [Moneyball for Physical AI](../ch05/091-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/discoformer.md)

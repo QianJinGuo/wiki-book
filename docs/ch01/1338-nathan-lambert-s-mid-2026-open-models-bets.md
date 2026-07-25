@@ -69,9 +69,9 @@ Nathan 的核心论点：
 ## 关联与延伸
 
 - **同主题 deep entity**：
-  - [How Far Behind Are Open Models 2026](ch01/900-20.html) — 能力差距量化
+  - [How Far Behind Are Open Models 2026](ch01/902-20.html) — 能力差距量化
   - [Chinese Ai Lab Insights Nathan](../ch05/091-ai.html) — Chinese labs 深度分析
-  - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch01/270-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html) — 训练后差距分析
+  - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch01/269-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html) — 训练后差距分析
 - **方法论文**：
   - Nathan 的 [open-models-in-perpetual-catch-up](https://www.interconnects.ai/p/open-models-in-perpetual-catch-up) — 能力差距基础
   - [How much does distillation really matter](https://www.interconnects.ai/p/how-much-does-distillation-really) — distillation 实证

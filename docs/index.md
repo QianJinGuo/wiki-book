@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3449 篇一手 AI 材料系统编撰的开源读物。
+> 全球第一部基于 3454 篇一手 AI 材料系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -11,8 +11,8 @@
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
 | 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1527 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1232 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 482 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1234 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 485 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 164 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 44 篇 |
 
@@ -65,7 +65,7 @@
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 718 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 719 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
   - ⭐ From idea to AI app: creating intelligent research assistants
-  - ... 共 **718** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **719** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 134 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -143,7 +143,7 @@
   - ⭐⭐ Anthropic 内部 95% 数据分析自动化：分析 Agent 技术栈 + Skill 框架（21%→95% 准确率）
   - ... 共 **182** 篇 → [完整章节](ch09-ai-coding.md)
 
-### [Ch10 RAG 与知识检索](ch10-rag.md) — 30 篇
+### [Ch10 RAG 与知识检索](ch10-rag.md) — 31 篇
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
   - ⭐ 为OpenClaw配置网盘空间的最佳实践
@@ -154,15 +154,15 @@
   - ⭐⭐ RAG 分块优化 2025：策略选择与工程实践
   - ⭐⭐ Manufacturing Intelligence with Amazon Nova Multimodal Embeddings
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
-  - ... 共 **30** 篇 → [完整章节](ch10-rag.md)
+  - ... 共 **31** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1232 篇**
+> 📖 **本篇共 1234 篇**
 
 ---
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 297 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 300 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
@@ -173,7 +173,7 @@
   - ⭐ Cloudflare Turnstile requiring fingerprintable WebGL
   - ⭐⭐ 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
   - ⭐⭐ 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
-  - ... 共 **297** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **300** 篇 → [完整章节](ch11-infra.md)
 
 ### [Ch12 安全与治理](ch12-security.md) — 125 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
@@ -214,7 +214,7 @@
   - ⭐⭐ Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
   - ... 共 **39** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 482 篇**
+> 📖 **本篇共 485 篇**
 
 ---
 
@@ -308,6 +308,6 @@
 
 ---
 
-**📊 全书收录：3449 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3454 篇实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-07-25 | 来源: ~/wiki/entities/
+生成时间: 2026-07-26 | 来源: ~/wiki/entities/
