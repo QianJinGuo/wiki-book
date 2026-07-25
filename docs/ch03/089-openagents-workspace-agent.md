@@ -114,7 +114,7 @@ OpenAgents 的架构遵循了"平台 vs 工具"的设计哲学：
 
 Hermes Agent 已经在 OpenAgents 的支持列表中。这意味着 Hermes Agent 用户可以通过 OpenAgents Workspace 与其他 Agent（如 Claude Code、Codex CLI）进行协作。这种互操作性对于 Agent 生态的健康发展至关重要。^[inferred]
 
-### 与 [Building Web Search Enabled Agents With Strands And Exa](../ch04/451-building-web-search-enabled-agents-with-strands-and-exa.html) 的互补
+### 与 [Building Web Search Enabled Agents With Strands And Exa](../ch04/454-building-web-search-enabled-agents-with-strands-and-exa.html) 的互补
 
 Web Search Agent 可以通过 OpenAgents 的 Mod 系统接入 Workspace，将搜索能力作为共享资源提供给其他 Agent。这种模式下，一个 Agent 专注于搜索，其他 Agent 专注于编码或分析，各司其职。^[inferred]
 
@@ -142,7 +142,7 @@ OpenAgents 的 Launch Partners 包括 Z.AI（智谱）、FastGPT、MiniMax 等�
 
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Hermes Agent V014 Architecture Shugex](ch03/093-hermes-agent.html)
-- [Building Web Search Enabled Agents With Strands And Exa](../ch04/451-building-web-search-enabled-agents-with-strands-and-exa.html)
+- [Building Web Search Enabled Agents With Strands And Exa](../ch04/454-building-web-search-enabled-agents-with-strands-and-exa.html)
 - [Claude Code Large Codebase Harness Configuration](ch03/076-claude-code.html)
 - [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](ch03/035-agent.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openagents-workspace-multi-agent-collaboration-itech.md)

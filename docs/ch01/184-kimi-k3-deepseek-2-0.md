@@ -26,12 +26,12 @@ Kimi K3 是月之暗面（Moonshot AI）于 2026 年 7 月发布的开源大模�
 
 ## 相关实体链接
 
-- [Kimi K3 2 8T Params Open Source](ch01/634-kimi-k3-2-8t.html) — K3 技术参数与开源信息
+- [Kimi K3 2 8T Params Open Source](ch01/638-kimi-k3-2-8t.html) — K3 技术参数与开源信息
 - [Kimi K3 2.8T Open Source Model 2026](../ch09/071-kimi-k3.html) — K3 开源模型的详细分析
 - [Kimi K3 Success Yangzhilin Speech](../ch09/071-kimi-k3.html) — 杨植麟谈 K3 成功
-- [Deepseek V4 详解1M 上下文背后真正发生了什么](ch01/678-deepseek-v4.html) — DeepSeek V4 的技术解析
-- [Fable 5 官方实战指南找到你的未知](../ch04/573-fable-5.html) — Claude Fable 5 的实战对比
-- [Seed 开启持续进化Fable 5 点评Opus 48 水准不比我差](../ch04/573-fable-5.html) — Fable 5 与 Opus 4.8 的对比
+- [Deepseek V4 详解1M 上下文背后真正发生了什么](ch01/681-deepseek-v4.html) — DeepSeek V4 的技术解析
+- [Fable 5 官方实战指南找到你的未知](../ch04/575-fable-5.html) — Claude Fable 5 的实战对比
+- [Seed 开启持续进化Fable 5 点评Opus 48 水准不比我差](../ch04/575-fable-5.html) — Fable 5 与 Opus 4.8 的对比
 - [Claude Fable 5 发布Ai 工作流的关键正在转向 Loop 循环](ch01/177-claude-fable-5.html) — Fable 5 发布与 AI 工作流演进
 
 ---

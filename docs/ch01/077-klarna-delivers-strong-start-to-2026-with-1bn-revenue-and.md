@@ -43,7 +43,7 @@ Q1 最令人印象深刻的指标之一是 Revenue per employee 达到近 140 �
 2. **Cohort 运营效率是长期价值指标**：2022 年加入的用户 cohort 年收入贡献从 12 美元增至 52 美元， 这种用户深耕能力是 Klarna 相较于单纯获客型金融科技公司的差异化优势，也是规模效应之外最值得关注的效率指标。
 ## 相关实体
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/091-ai.html)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch01/1022-rag.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch01/231-rag.html)
 - [How To Create Websites With Great Ux Designs](ch01/136-how-to-create-websites-with-great-ux-designs-principles-and.html)
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](../ch04/015-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.html)
 - [Affirm Maps Road To 100B Gmv With Card Ai Commerce And Global Expansion](../ch03/092-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo.html)

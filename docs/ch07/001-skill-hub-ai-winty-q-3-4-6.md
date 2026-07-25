@@ -296,7 +296,7 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 ### 5. 建立 Skill Hub 与现有工程流程的嵌入点，防止 Hub 成为孤岛
 
 **实践警示**：Skill Hub 如果只是"另一个工具"，很快会被团队遗忘。**必须将 Skill Hub 与现有工程流程深度嵌入**：
-- CI/CD 流水线触发时，自动调用相关 Skill 进行检查（[Skill Os Learning Skill Curation Self Evolving Agents](../ch04/222-self-evolving-agents.html) 中提到的"技能编排"思路）
+- CI/CD 流水线触发时，自动调用相关 Skill 进行检查（[Skill Os Learning Skill Curation Self Evolving Agents](../ch04/220-self-evolving-agents.html) 中提到的"技能编排"思路）
 - 代码评审 Agent 默认加载 Skill Hub 中的团队规范 Skill
 - 新项目初始化时，Agent 自动从 Hub 拉取该项目类型对应的 Skill 集
 

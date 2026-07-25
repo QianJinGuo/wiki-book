@@ -148,7 +148,7 @@ InfoQ 对同一 Loop Engineering 事件的深度报道，侧重**工程实现细
 - **6 构建模块**（第3 来源独有）补全第1 来源"五模块"中 Worktree 的缺位：Worktree 是隔离并行执行的关键，对应"执行"阶段——在 Fleet循环中尤其关键（多个子 Agent 同时编辑时）
 - **Token经济学系统量化**（第3 来源独有）把第2 来源"Opus vs Haiku"和"480次/8h"的具体数字串联为完整成本结构：单 Agent → Fleet →定时循环的三级成本递增，为循环经济门槛提供了**预算决策框架**
 - **AI 工程4阶段演进谱系**（第3 来源独有）补全了 [Harness Engineering框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的"3阶段演进"——Loop Engineering 是 Harness 之上的第4 层抽象，与 [AHE](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md) 共同构成 Harness 的两个延伸方向（AHE = 自动进化 Harness；Loop = 设计自驱 Harness）
-- **低成本模型战略意义**（第3 来源独有）解释了2026 年开源模型崛起的部分原因：**不是模型能力突破，而是循环经济的可负担性**——为 [harness缩小开源闭源 bug-finding gap](../ch01/270-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html) 提供了经济学视角
+- **低成本模型战略意义**（第3 来源独有）解释了2026 年开源模型崛起的部分原因：**不是模型能力突破，而是循环经济的可负担性**——为 [harness缩小开源闭源 bug-finding gap](../ch01/269-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html) 提供了经济学视角
 
 ###实践启示
 
@@ -354,7 +354,7 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 
 - **CI 分流 Loop 模板**与 [高德 Harness/SDD 体系](ch05/106-ai-coding.html)的"ATDD 测试闭环"互补：高德讲 SDD 主链路 CI 反馈，本文给"AI 自主修复 CI"的 loop 模板
 - **Evaluator 部件**与 [Harness 架构](ch05/058-agent-harness.html)的"验证层"同源——Loop 把 Harness 验证层拉成独立部件
-- **State 部件**与 [Hermes Loop 架构](../ch04/237-hermes-agent-loop.html)的状态管理同源——本文的 State = Hermes 的 LoopState/HandoffRecord
+- **State 部件**与 [Hermes Loop 架构](../ch04/236-hermes-agent-loop.html)的状态管理同源——本文的 State = Hermes 的 LoopState/HandoffRecord
 - **reviewer agent 不允许直接修复**与 [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)的"生成器-验证器分离"模式一致
 - **18 字段设计表**与 [agent-harness 12 components 7 decisions](ch05/058-agent-harness.html)的"Harness 完整部件清单"互补——Harness 是"环境内规则"，Loop 是"环境外循环节奏"
 
@@ -825,7 +825,7 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 > Author: Shubham Saboo (Google PM), 译/改编: AI技术立文
 > Date: 2026-06-24
 
-本来源是 Loop Engineering 主题的**第 13 来源** — 唯一从**产品经理视角**系统阐述 Loop Engineering 的文章。前 12 来源均面向工程师/架构师，本文将循环工程的方法论移植到 PM 工作流（PRD 评审、客户研究、产品信号、发布检查清单）。v×c=42（临界），但 PM 视角在前 12 来源中零覆盖，且同作者 Shubham Saboo 已有 `[Google Pm 2026 Five Developer Skills Shubham](../ch01/402-pm-2026.html)` 实体，形成跨实体交叉。
+本来源是 Loop Engineering 主题的**第 13 来源** — 唯一从**产品经理视角**系统阐述 Loop Engineering 的文章。前 12 来源均面向工程师/架构师，本文将循环工程的方法论移植到 PM 工作流（PRD 评审、客户研究、产品信号、发布检查清单）。v×c=42（临界），但 PM 视角在前 12 来源中零覆盖，且同作者 Shubham Saboo 已有 `[Google Pm 2026 Five Developer Skills Shubham](../ch01/401-pm-2026.html)` 实体，形成跨实体交叉。
 
 ### 核心贡献
 
@@ -866,7 +866,7 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 - **用已知案例校准评测**：3 好+3 差 PRD 测评审规则，不需要大规模基准
 - **PM 工作资产需要版本管理**：GitHub commit = 经验保存，diff = 变更追溯
 - **循环先赢得信任再提高自主度**：从帮助决策的循环开始，不要从能改变战略的循环开始
-- **跨实体关联**：同作者 `[Google Pm 2026 Five Developer Skills Shubham](../ch01/402-pm-2026.html)` 覆盖 PM 技能进化，本文覆盖 PM 循环工程，两者互补
+- **跨实体关联**：同作者 `[Google Pm 2026 Five Developer Skills Shubham](../ch01/401-pm-2026.html)` 覆盖 PM 技能进化，本文覆盖 PM 循环工程，两者互补
 
 ---
 

@@ -83,8 +83,8 @@ Codex 5.21 让 Agentic Engineering 真正可行——之前所有"AI 代理"工�
 ## 相关实体
 
 - [Openai Codex Super Computer Network Xinzhiyuan](ch09/074-openai-codex.html)
-- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/513-codex.html)
-- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/245-claude-md.html)
+- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/514-codex.html)
+- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/244-claude-md.html)
 - [Agent Self Improvement Six Mechanisms](../ch03/035-agent.html)
 - [Codex Goal Six Hour Run](ch09/058-codex-goal-six-hour-run.html)
 - [Four Sub Agent Patterns](../ch03/035-agent.html)

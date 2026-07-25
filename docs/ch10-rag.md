@@ -2,7 +2,7 @@
 
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
-> 本章收录 **30 篇**实体，按深度递增排列。
+> 本章收录 **31 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 27 |
+| ⭐⭐ 工程师 | 需编程基础 | 28 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -1390,7 +1390,106 @@ Graph RAG 常常被误解为"知识图谱 + 向量检索"的简单组合。它�
 
 ---
 
-## Ch10.010 Karpathy LLM Wiki V2：记忆生命周期 + 知识图谱 + 混合检索 + 落地路线图
+## Ch10.010 SIGIR 2026: RAD-DPO 生成式检索偏好对齐
+
+> 📊 Level ⭐⭐ | 10.9KB | `entities/sigir-2026oxygensearch-之生成式检索偏好对齐-rad-dpo-技术解析.md`
+
+# SIGIR 2026: RAD-DPO 生成式检索偏好对齐
+
+> **v×c score**: 72 | stars=4
+> **来源**: https://mp.weixin.qq.com/s/iPaRBCnSPk5kq0h9R6kM5Q
+> **发布**: 京东技术 (2026-07-16)
+
+## 摘要
+
+RAD-DPO（Robust Adaptive Denoising Direct Preference Optimization）是京东 OxygenSearch 团队提出的面向生成式检索（Generative Retrieval, GR）中 SID（Semantic ID）结构的偏好对齐方案，被 SIGIR 2026 接收。该方案系统性地解决了标准 DPO 在电商生成式检索场景中的三个核心问题：公共前缀被误伤（Shared Prefixes）、隐式反馈噪声敏感（Pseudo-negatives）、多正例概率挤压（Squeezing Effect）。RAD-DPO 通过三个协同模块——MLGC（Multi-Label Global Contrast, session 级多标签全局对比）、TLGD（Token-Level Gradient Detachment, token 级梯度截断保护公共前缀）、RDRW（Reward-Dependent Reweighting, 动态奖励加权降低伪负例惩罚）——将 DPO 从"简单 pair-wise 序列级偏好优化"提升为"低成本、多样本、token 级、噪声鲁棒、prefix-aware 的结构化偏好学习范式"。配合 Label Packing 高效训练方案，RAD-DPO 在 3000 万数据基准上对比 SFT 和其他 DPO 变体取得全面领先，召回和 MRR 指标在 0.6B 到 8B 模型上持续提升。
+
+## 核心要点
+
+- **三个核心问题**：共享前缀误伤（正负样本共享的类目前缀被 DPO 无差别打压）、伪负例噪声（曝光未点击≠不相关）、多正例概率挤压（打压负样本同时压缩长尾正样本概率）
+- **MLGC（多标签全局对比）**：将偏好学习从单个 pair 扩展到 session 级，同时提升所有正样本、对所有负样本做 list-wise 对比
+- **TLGD（Token 级梯度截断）**：只切断负样本公共前缀上的梯度，只在正负样本分叉点之后施加偏好惩罚
+- **RDRW（动态奖励加权）**：基于模型自身 hidden state 相似度判断正负样本相似性，对疑似伪负例做软惩罚
+- **Label Packing 工程优化**：将所有正负候选拼接到同一序列，使用 Block-diagonal Attention Mask，训练吞吐提升 300%、显存降低 50%
+- **实验结果**：在 3000 万数据集上全面领先 SFT 和竞品 DPO 变体，0.6B→8B 模型领先优势持续扩大
+
+## 深度分析
+
+### 为什么标准 DPO 在生成式检索中失败
+
+理解 RAD-DPO 的价值，需要先理解生成式检索（GR）与传统 NLP 任务的本质差异。在 GR 中，商品被编码为结构化的 Semantic ID（SID），通常由层次化聚类（如 RQ-VAE）构建——前缀 token 表示粗粒度类目（如"电子产品 > 手机"），后缀 token 区分具体商品。
+
+标准 DPO 的 loss 函数对整条序列无差别操作：正样本整条序列被提升，负样本整条序列被打压。但当正负样本共享类目前缀时（比如 iPhone 15 和 iPhone 15 Pro 都是"电子产品 > 手机 > 苹果"），打压负样本的同时也在打压正确的类目前缀——这正是"公共前缀误伤"问题的根源。
+
+此外，电商的"未点击"不等同于"不相关"。用户没点击可能是位置偏见、图片问题或已通过其他方式购买。将这种"伪负例"作为强负样本使用，会扭曲模型对商品语义的理解。这与 [eBay 生成式检索实践](https://github.com/QianJinGuo/wiki/blob/main/entities/ebay-generative-retrieval-rq-vae-semantic-id-2026-06-30.md) 中遇到的噪声问题一致。
+
+### TLGD：结构化输出的梯度保护创新
+
+TLGD（Token-Level Gradient Detachment）是 RAD-DPO 最具原创性的贡献。它的核心思路可以概括为：**"把'整条负样本序列打压'改造成'只在分叉点之后打压'"**。
+
+具体实现：前向计算时，负样本公共前缀仍然参与 likelihood 计算（保证 prefix 的表示更新）；反向传播时，通过 Stop-Gradient 操作切断公共前缀上的梯度，只让真正区分正负样本的差异后缀参与偏好优化。这个精妙的梯度操作确保了 SID 的层级语义结构不会被 DPO 破坏——粗粒度语义（类目、品牌）受到保护，细粒度语义（具体商品差异）才参与偏好学习。
+
+这个思路与 [RL 对齐算法演进](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) 中的"token 级细粒度优化"趋势一致，但 TLGD 的技术路线更直接——不是通过复杂的 reward 设计间接保护前缀，而是从梯度传播机制层面直接切断不必要的梯度。
+
+### RDRW：基于模型表示的自适应降噪
+
+RDRW 解决的是隐式反馈噪声问题。它的方法论比 TLGD 更难设计：如何判断一个负样本是"真负例"还是"伪负例"？
+
+RAD-DPO 的解法很巧妙：用模型自身生成 EOS token 时的最后一层 hidden state 作为 SID 的序列级表示，计算正负样本之间的余弦相似度。如果正负样本在表示空间中非常相似，说明负样本很可能是"伪负例"（语义相关但用户没点击），惩罚应当减轻。
+
+为了避免使用固定阈值（不适应性），论文设计了一个统计 warm-up 阶段：先缓存 4096 个 pair 的相似度，构造基准分布，计算分位点，然后根据分位点动态调整惩罚权重。相似度低的负样本保留完整惩罚（更大可能是真负例），相似度高的负样本惩罚降到 0.5（更可能是伪负例）。
+
+这种"用模型当前表征判断样本可信度"的思路，本质上是把偏好学习从"基于固定标签的训练"升级为"基于模型认知状态的自适应训练"。
+
+### Label Packing：将工程效率提升 300% 的关键创新
+
+RAD-DPO 的工程实现面临一个独特挑战：一个 session 级训练样本包含 1 个 prompt + N 个正样本 + M 个负样本。如果复用标准 DPO 框架，prompt 会被重复编码 1+(N+M) 次。
+
+在 NLP 任务中这个问题不明显（response 较长，prompt 占比不高），但 GR 场景中 SID 通常只有 3-7 个 token，prompt 可能上百 token——计算量主要在 prompt 上。
+
+Label Packing 的解决方案是将所有 candidate 拼接到同一条 unified sequence，prompt 只计算一次。通过 Block-diagonal Attention Mask 确保不同 candidate 之间互不可见，同时对齐 Position ID 防止模型通过位置差异区分样本。这一工程创新使得 RAD-DPO 的训练吞吐与 SFT 处于同一水平，对比 GRPO 等强化学习方案有数量级的优势 —— 这是论文中提到的"全链路算法优化 + 工程效率优化"的双轮驱动策略。
+
+这对于 [生产级 Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-production.md) 的设计原则——"高效训练是大规模落地的必要条件"——是一个有力的佐证。
+
+### 与 RL 对齐方法论的定位
+
+RAD-DPO 选择 DPO 路线而非 GRPO 或 PPO，有明确的技术考量：DPO 不依赖额外的 Reward Model，实现简单且样本获取成本低。但 GRPO（如 OneSearch-V2 的 TPMA-GRPO）对 SID 前缀 token 也有建模，两种路线的差异在于：
+
+- DPO 路线（RAD-DPO）：通过梯度操作保护前缀，保持 DPO 的简洁性
+- GRPO 路线：通过分组奖励建模前缀，但需要多个采样的 reward 估算
+
+两种路线各有利弊——DPO 路线训练效率更高，但 reward 信号来自身而非外部评判；GRPO 路线更灵活但训练成本更高。RAD-DPO 的 reference-free 设计（与 SimPO 一致）进一步简化了训练流程。
+
+## 实践启示
+
+1. **结构化输出场景中的 DPO 需要 token 级保护**：如果模型输出具有层级结构（如 SID、代码 AST、JSON schema），标准 DPO 会误伤公共前缀。应该在 token 级别控制梯度传播，保护底层结构不被偏好优化破坏。
+
+2. **隐式反馈信号的噪声处理应基于模型自身表示**：电商"点击/未点击"等隐式信号天然有噪声。RDRW 的方法论——用模型当前表征判断样本可信度——比固定规则过滤更适应训练过程中的表示空间变化。
+
+3. **Session 级对比优于 Pair-wise 对比**：在 multi-label 场景中（一个 query 对应多个正样本），pair-wise 对比会导致长尾正样本被挤压。使用 session 级全局对比，所有正样本都被提升，模型看到的不是"单个正负 pair"而是"正样本集合 vs 负样本集合的整体关系"。
+
+4. **Label Packing 是多候选训练场景的标配工程优化**：任何需要在一个 prompt 下对多个候选 response 计算 log-probability 的训练场景（DPO、对比学习、候选重排），都可通过 Label Packing + Block-diagonal Attention Mask 大幅提升吞吐。
+
+5. **Reference-free 设计降低训练成本**：去掉冻结的 reference model（走 SimPO 路线）在 GR 场景中有效，显存降低近 50%。如果你的场景不需要 KL 散度约束，可以考虑这条更轻量的路线。
+
+6. **从 error bar 中提炼真正有用的 insight**：论文在 0.6B、2B、8B 三个规模上做了实验。模型规模越大，RAD-DPO 领先优势越明显——这说明结构化偏好学习在大模型中释放的潜力大于小模型，可能因为大模型具有更好的 SID 结构表示能力。
+
+## 相关实体
+
+- [eBay 生成式检索实践](https://github.com/QianJinGuo/wiki/blob/main/entities/ebay-generative-retrieval-rq-vae-semantic-id-2026-06-30.md)
+- [RL 对齐算法演进](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
+- [生成式检索 RQ-VAE](https://github.com/QianJinGuo/wiki/blob/main/entities/ebay-generative-retrieval-rq-vae-semantic-id-2026-06-30.md)
+- [LLM RL 算法深度分析](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
+- Agentic 搜索检索
+- RLHF/DPO/GRPO 对齐
+- [DREAM 密集检索](https://github.com/QianJinGuo/wiki/blob/main/entities/dream-dense-retrieval-autoregressive-modeling-challengehub-2026.md)
+- [生产级 Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-production.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sigir-2026oxygensearch-之生成式检索偏好对齐-rad-dpo-技术解析.md)
+
+---
+
+## Ch10.011 Karpathy LLM Wiki V2：记忆生命周期 + 知识图谱 + 混合检索 + 落地路线图
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/karpathy-llm-wiki-v2-deep-analysis-rohit-ghumare.md`
 
@@ -1547,7 +1646,7 @@ V2 的评估方法论强调"围绕决策做"而非"功能全覆盖"。BM25、向
 
 ---
 
-## Ch10.011 MRAgent：记忆是重建的，不是检索的
+## Ch10.012 MRAgent：记忆是重建的，不是检索的
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md`
 
@@ -1705,7 +1804,7 @@ Single-hop 涨幅温和（83→91），Multi-hop 跳幅巨大（75→90）。这
 
 ---
 
-## Ch10.012 花费 2 个星期写了 8 篇 OpenClaw 源码拆解文章，我发现90% 的人对龙虾的理解都太表面了，深层次的真相竟然是这个
+## Ch10.013 花费 2 个星期写了 8 篇 OpenClaw 源码拆解文章，我发现90% 的人对龙虾的理解都太表面了，深层次的真相竟然是这个
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/tCjNDrk4fRMUmngmbOih-w.md`
 
@@ -1768,7 +1867,7 @@ OpenClaw 的多 Agent 编排采用非阻塞子 Agent 生成 + 30 分钟心跳巡
 
 ---
 
-## Ch10.013 WWW 2026 | RAG黑箱被打开！OpenDecoder把文档质量写进解码
+## Ch10.014 WWW 2026 | RAG黑箱被打开！OpenDecoder把文档质量写进解码
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/www-2026-rag黑箱被打开opendecoder把文档质量写进解码.md`
 
@@ -1847,7 +1946,7 @@ OpenDecoder 代表了一种重要的范式转变：从"外部丰富上下文"转
 
 ---
 
-## Ch10.014 Fragnesia: Linux Kernel Local Privilege Escalation via ESP-in-TCP
+## Ch10.015 Fragnesia: Linux Kernel Local Privilege Escalation via ESP-in-TCP
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp.md`
 
@@ -1942,7 +2041,7 @@ Fragnesia 利用链的第一步依赖 user namespace 隔离来获取 `CAP_NET_AD
 
 ---
 
-## Ch10.015 Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
+## Ch10.016 Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/instacart-ads-retrieval-generative-token-by-token.md`
 
@@ -2039,7 +2138,7 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 
 ---
 
-## Ch10.016 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+## Ch10.017 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
 
@@ -2084,7 +2183,7 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 
 ---
 
-## Ch10.017 Notes on Amazon v. Perplexity
+## Ch10.018 Notes on Amazon v. Perplexity
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/amazon-perplexity-legal-analysis.md`
 
@@ -2163,7 +2262,7 @@ Agentic browsing 正是这种用户代理权的最新表达——它让用户无
 
 ---
 
-## Ch10.018 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+## Ch10.019 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮-v2.md`
 
@@ -2217,7 +2316,7 @@ AI 客服出问题不是传统意义的报错，而是意图识别错、问题�
 
 ---
 
-## Ch10.019 捅破个人AI天花板！YC总裁开源GBrain：8层架构打造AI第二大脑
+## Ch10.020 捅破个人AI天花板！YC总裁开源GBrain：8层架构打造AI第二大脑
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/gbrain-8layer-51cto.md`
 
@@ -2267,7 +2366,7 @@ YC总裁Garry Tan开源的AI第二大脑，8层架构从"找得到"到"真正记
 
 ---
 
-## Ch10.020 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
+## Ch10.021 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
 
@@ -2338,7 +2437,7 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ---
 
-## Ch10.021 为OpenClaw配置网盘空间的最佳实践
+## Ch10.022 为OpenClaw配置网盘空间的最佳实践
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/openclaw-cloud-storage-config-guide-wechat.md`
 
@@ -2383,7 +2482,7 @@ PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机
 
 ---
 
-## Ch10.022 How we built SmithDB’s inverted index for full-text search
+## Ch10.023 How we built SmithDB’s inverted index for full-text search
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/how-we-built-smithdb-s-inverted-index-for-full-text-search.md`
 
@@ -2430,7 +2529,7 @@ Across agent traces, the same JSON paths and token values repeat in virtually ev
 
 ---
 
-## Ch10.023 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
+## Ch10.024 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/common-crawl-blog-host-and-domain-level-web-graphs-april-may.md`
 
@@ -2469,7 +2568,7 @@ Please note that the text representation of the host-level graph is shipped in 2
 
 ---
 
-## Ch10.024 Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
+## Ch10.025 Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/powering-scientific-discovery-byokg-and-graphrag-for-intelli.md`
 
@@ -2495,7 +2594,7 @@ These challenges collectively create a significant bottleneck in the drug discov
 
 ---
 
-## Ch10.025 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
+## Ch10.026 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂-v2.md`
 
@@ -2548,7 +2647,7 @@ These challenges collectively create a significant bottleneck in the drug discov
 
 ---
 
-## Ch10.026 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
+## Ch10.027 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/graphrag-needed-aws-9-rag-comparison-2026.md`
 
@@ -2602,7 +2701,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.027 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
+## Ch10.028 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/xiamen-bank-rag-competition-financial-regulation-trustrag.md`
 
@@ -2650,7 +2749,7 @@ temperature=0.0（贪心解码），max_new_tokens=512，batch_size=1。
 
 ---
 
-## Ch10.028 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
+## Ch10.029 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
 
 > 📊 Level ⭐⭐ | 2.9KB | `entities/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度.md`
 
@@ -2684,7 +2783,7 @@ source_published: 2026年7月8日 17:00
 
 ---
 
-## Ch10.029 知识库构建方法论
+## Ch10.030 知识库构建方法论
 
 > 📊 Level ⭐⭐ | 1.7KB | `entities/knowledge-base-construction.md`
 
@@ -2714,7 +2813,7 @@ AI 驱动的知识库构建方法论：从原始采集到结构化编目的完�
 
 ---
 
-## Ch10.030 Ettin Reranker Family
+## Ch10.031 Ettin Reranker Family
 
 > 📊 Level ⭐⭐⭐ | 15.1KB | `entities/ettin-reranker-family.md`
 

@@ -195,7 +195,7 @@ Fail-closed 行为（deny-by-default）不仅仅是一个技术特性，它代�
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/034-amazon-bedrock-api.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/262-aws-bedrock-agentcore.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/091-ai.html)
-- [mountpoint s3 vs s3 files：eks 上 s3 数据接入的两种方案实战对比](../ch01/1022-rag.html)
+- [mountpoint s3 vs s3 files：eks 上 s3 数据接入的两种方案实战对比](../ch01/231-rag.html)
 
 ---
 

@@ -110,7 +110,7 @@
 
 ## 相关实体
 - [Pi Openclaw Coding Harness](../ch11/230-openclaw.html)
-- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](../ch01/964-claude.html)
+- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](../ch01/1234-claude.html)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/230-openclaw.html)
 - [Hermes Agent Vs Openclaw Comparison](../ch03/093-hermes-agent.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](../ch05/050-openspec.html)
