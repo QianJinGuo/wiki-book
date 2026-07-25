@@ -73,7 +73,7 @@ PRISM 的工程化思路对 AI 研究基础设施的建设有重要启示：
 - [Agent Harness 场景](../ch05/058-agent-harness.html)
 - [Harness Engineering 2026 全景](../ch05/118-harness-engineering.html)
 - [Fine-tuning 工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemo-automodel-fine-tuning.md)
-- [多模态评估器](ch01/311-mllm-as-judge.html)
+- [多模态评估器](ch01/310-mllm-as-judge.html)
 - [Agent 评测方法论](../ch03/035-agent.html)
 - [BAAI ORCA 世界模型](../ch05/091-ai.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

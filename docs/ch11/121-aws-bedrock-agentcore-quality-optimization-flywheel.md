@@ -30,8 +30,8 @@ AgentCore 的质量优化飞轮代表了一种从直觉驱动到数据驱动的�
 
 ## 相关实体
 - [Sap Intelligent Procurement Assistant Solution](https://github.com/QianJinGuo/wiki/blob/main/entities/sap-intelligent-procurement-assistant-solution.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/546-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/389-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/548-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/391-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [Harness Engineering Framework](../ch05/118-harness-engineering.html)
 - [Agent Harness 12 Components 7 Decisions](../ch05/058-agent-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)

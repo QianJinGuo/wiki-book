@@ -132,11 +132,11 @@ DeepSeek 把比赛维度换了：之前大家比的是「我的视觉模型能�
 
 ## 相关实体
 ## 相关实体
-- [Personavlm Personalized Memory](ch01/800-vlm.html)
-- [Bedrock Image Content Precise Analysis](../ch11/288-bedrock.html)
-- [Redis之父下场给Deepseek V4单独造了一台推理引擎](ch01/678-deepseek-v4.html)
-- [Ds4C Deepseek V4 Antirez](ch01/511-ds4c-deepseek-v4-antirez.html)
-- [Deepseek Moe Parallel Strategy](ch01/1073-deepseek.html)
+- [Personavlm Personalized Memory](ch01/802-vlm.html)
+- [Bedrock Image Content Precise Analysis](../ch11/291-bedrock.html)
+- [Redis之父下场给Deepseek V4单独造了一台推理引擎](ch01/681-deepseek-v4.html)
+- [Ds4C Deepseek V4 Antirez](ch01/512-ds4c-deepseek-v4-antirez.html)
+- [Deepseek Moe Parallel Strategy](ch01/1075-deepseek.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度-v2.md)

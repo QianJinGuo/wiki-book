@@ -113,8 +113,8 @@ Yael 的威胁情报来源形成了一个分层结构：
 
 ## 相关实体
 
-- [Karpathy Vibe Coding 访谈](../ch04/238-agentic.html)
-- [Karpathy Vibe Coding 完整版](../ch04/129-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding 访谈](../ch04/237-agentic.html)
+- [Karpathy Vibe Coding 完整版](../ch04/134-karpathy-vibe-coding-agentic-engineering.html)
 - [Claude Code 源码机制](../ch03/076-claude-code.html)
 - [Agent 原理架构与工程实践](../ch03/035-agent.html)
 - [多智能体交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)

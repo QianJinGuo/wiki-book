@@ -50,7 +50,7 @@ Laser 用"概率叠加"在隐空间实现多模态推理，Token 消耗降低 97
 ## 延伸概念
 - [DeepSeek Visual Primitives](../ch09/178-deepseek-visual-primitives.html) — 视觉原语推理
 - [SensNova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md) — 商汤多模态模型
-- [NVIDIA 多模态 RAG](ch01/1022-rag.html) — 多模态知识系统
+- [NVIDIA 多模态 RAG](ch01/231-rag.html) — 多模态知识系统
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/laser-acl2026-latent-superposition-visual-reasoning.md)
 
 ## 深度分析

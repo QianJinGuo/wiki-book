@@ -15,7 +15,7 @@ Agent Harness覆盖：数据流水线、训练环境、评测基础设施、跨�
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/018-harness.html)
 - [Harness Engineering 第三代工程范式](../ch05/118-harness-engineering.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/018-harness.html)
-- [Cursor Harness Model Production Floor](../ch01/273-cursor-harness-model-production-floor.html)
+- [Cursor Harness Model Production Floor](../ch01/272-cursor-harness-model-production-floor.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimax-m2-7-self-evolution.md)
 
