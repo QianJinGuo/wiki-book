@@ -23,7 +23,7 @@
 
 ## Related Entities
 
-- [Kimi K3: The Open-Weights Escalation](ch01/494-kimi-k3-the-open-weights-escalation.html)
+- [Kimi K3: The Open-Weights Escalation](ch01/496-kimi-k3-the-open-weights-escalation.html)
 - [Kimi K3 2.8T 开源模型](../ch09/071-kimi-k3.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/open-models-recap-more-on-kimi-k3-qwen-38-xis-waic-speech.md)

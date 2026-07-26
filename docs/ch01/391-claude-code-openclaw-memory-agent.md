@@ -12,7 +12,7 @@
 * • **Managed** ： ` /etc/claude-code/CLAUDE.md ` ，系统管理员写的全局策略，所有用户都得遵守，企业场景下用来统一规范
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](ch01/426-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](ch01/427-claude-code-harness-deep-understanding.html)
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/076-claude-code.html)
 - [Claude Code Openclaw Memory Comparison](../ch03/076-claude-code.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/291-anthropic-claude-code.html)

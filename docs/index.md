@@ -10,17 +10,17 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1527 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1234 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 485 篇 |
-| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 164 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1525 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1233 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 487 篇 |
+| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 165 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 44 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1353 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1351 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ 快手首个打工人Agent
   - ⭐ Agentic Design System - From Chatbot to Orchestration
-  - ... 共 **1353** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1351** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 39 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **135** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1527 篇**
+> 📖 **本篇共 1525 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 719 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 718 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
   - ⭐ From idea to AI app: creating intelligent research assistants
-  - ... 共 **719** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **718** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 134 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -156,13 +156,13 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **31** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1234 篇**
+> 📖 **本篇共 1233 篇**
 
 ---
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 300 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 301 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
@@ -173,7 +173,7 @@
   - ⭐ Cloudflare Turnstile requiring fingerprintable WebGL
   - ⭐⭐ 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
   - ⭐⭐ 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
-  - ... 共 **300** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **301** 篇 → [完整章节](ch11-infra.md)
 
 ### [Ch12 安全与治理](ch12-security.md) — 125 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
@@ -201,7 +201,7 @@
   - ⭐⭐ SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
   - ... 共 **21** 篇 → [完整章节](ch13-mlops.md)
 
-### [Ch14 数据工程](ch14-data.md) — 39 篇
+### [Ch14 数据工程](ch14-data.md) — 40 篇
 > AI 的燃料：实时入湖、流处理、数据质量
 
   - ⭐ 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
@@ -212,9 +212,9 @@
   - ⭐⭐ 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
   - ⭐⭐ Good QC for RL Data
   - ⭐⭐ Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
-  - ... 共 **39** 篇 → [完整章节](ch14-data.md)
+  - ... 共 **40** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 485 篇**
+> 📖 **本篇共 487 篇**
 
 ---
 
@@ -246,7 +246,7 @@
   - ⭐⭐ 全球首个小时级世界模型来了！中国造，已开源
   - ... 共 **31** 篇 → [完整章节](ch16-inference.md)
 
-### [Ch17 多模态与生成](ch17-multimodal.md) — 54 篇
+### [Ch17 多模态与生成](ch17-multimodal.md) — 55 篇
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
   - ⭐ Perceptron Mk1 shocks with highly performant video analysis AI model 8
@@ -256,8 +256,8 @@
   - ⭐⭐ 美团海报生成 AIGC 技术创新与实践
   - ⭐⭐ Normalizing Trajectory Models
   - ⭐⭐ Automatically redact PII in images with Amazon Nova
-  - ⭐⭐ LLaVA-OneVision-2：全帧率视频理解
-  - ... 共 **54** 篇 → [完整章节](ch17-multimodal.md)
+  - ⭐⭐ MineExplorer: 多模态能力断层
+  - ... 共 **55** 篇 → [完整章节](ch17-multimodal.md)
 
 ### [Ch18 机器人与具身智能](ch18-robotics.md) — 23 篇
 > 从数字到物理：强化学习、仿真、人形机器人
@@ -272,7 +272,7 @@
   - ⭐⭐ 啊？这是机器人的手？！
   - ... 共 **23** 篇 → [完整章节](ch18-robotics.md)
 
-> 📖 **本篇共 164 篇**
+> 📖 **本篇共 165 篇**
 
 ---
 
@@ -310,4 +310,4 @@
 
 **📊 全书收录：3454 篇实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-07-26 | 来源: ~/wiki/entities/
+生成时间: 2026-07-27 | 来源: ~/wiki/entities/

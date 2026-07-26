@@ -69,7 +69,7 @@ Figma 原生画布 Agent（2026 年 5 月 beta，Config 2026 全面开放）进�
 ## 相关实体
 
 - [Figma MCP 的四种用法](https://github.com/QianJinGuo/wiki/blob/main/entities/4-ways-were-using-our-mcp-server-at-figma.md) — Figma 的实践案例，展示了 Agent 如何使用 MCP 操作设计系统
-- [Anthropic Skill Stack 架构](../ch01/963-anthropic.html) — Agent Skills 规范的工程实现
+- [Anthropic Skill Stack 架构](../ch01/969-anthropic.html) — Agent Skills 规范的工程实现
 - [Claude Code 深度架构分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md) — Claude Code 的内存管理与会话持久化机制，与 auto-memory 写入设计系统文件相关
 - [Claude Code 治理软规则](ch03/076-claude-code.html) — 探讨 Agent 行为的治理模式与审查策略
 - [设计发现性](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md) — 探讨设计系统在 AI 时代的可发现性

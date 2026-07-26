@@ -76,7 +76,7 @@ Automation Anywhere CEO Mihir Shukla 的表述揭示了其核心愿景：**AI �
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/091-ai.html)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/148-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)- [the next generation of speculative decoding: dflash and spec](../ch01/1018-spec.html)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)- [the next generation of speculative decoding: dflash and spec](../ch01/1024-spec.html)
 
 ---
 

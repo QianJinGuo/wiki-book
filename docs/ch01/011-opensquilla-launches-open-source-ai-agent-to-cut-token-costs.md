@@ -17,10 +17,10 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [Cline releases open-source agent runtime SDK](../ch04/003-agentrun.html)
-- [Spring AI AI Agent Demo](../ch04/483-ai-ai.html)
+- [Spring AI AI Agent Demo](../ch04/484-ai-ai.html)
 - [SkillX — 层次化技能知识库](../ch07/055-skillx.html)
 
-- [intercom, now called fin, launches an ai agent whose only jo](../ch04/398-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo.html)
+- [intercom, now called fin, launches an ai agent whose only jo](../ch04/399-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo.html)
 
 ## 深度分析
 ### 核心问题诊断：为什么大多数 Agent 部署在浪费 Token？

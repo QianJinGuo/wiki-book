@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [Tencent Cdn Lego Harness Engineering](ch05/069-cdn-lego-harness-engineering.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/239-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/236-ahe-agentic-harness-engineering.html)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/118-harness-engineering.html)
 - [Harness Engineering Reliable Long Term Agent](ch05/118-harness-engineering.html)
 - [Harness Engineering Long Term Agent Tasks](ch05/118-harness-engineering.html)
