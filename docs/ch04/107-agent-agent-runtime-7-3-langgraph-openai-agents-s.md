@@ -124,8 +124,8 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 - vs **[Google Agent Executor Distributed Runtime](ch04/003-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
 - vs **[Anthropic Claude Managed Agents Platform](../ch01/219-anthropic-claude-managed-agents.html)** — Anthropic Managed Agents 视角
-- vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/548-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
-- vs **[AgentCore Harness](ch04/675-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/225-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
+- vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/549-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
+- vs **[AgentCore Harness](ch04/676-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/226-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
 
 **Runtime 7 职责 ↔ 二曲线系列 13 篇主题映射**(本文是系列 4/13,后续 9 篇已规划):
 
@@ -155,7 +155,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 ### 4. Trace ↔ 可观测性 是同一数据流的两个齿轮,必须配套设计
 
-本文清晰区分了 **Trace（记录）和 Observability（分析）**：Trace 提供原始执行链路数据，Observability 在这些数据之上构建监控与告警。[langgraph-state-machine-under-the-hood](ch04/201-langgraph.html) 等框架的实践也印证了这一点 — 没有 Trace，Observability 就是无源之水；没有 Observability，Trace 只是无人阅读的日志。两者是 Runtime 可观测性职责的不可分割两面。
+本文清晰区分了 **Trace（记录）和 Observability（分析）**：Trace 提供原始执行链路数据，Observability 在这些数据之上构建监控与告警。[langgraph-state-machine-under-the-hood](ch04/202-langgraph.html) 等框架的实践也印证了这一点 — 没有 Trace，Observability 就是无源之水；没有 Observability，Trace 只是无人阅读的日志。两者是 Runtime 可观测性职责的不可分割两面。
 
 ### 5. Runtime 是模型可替换性的工程底座,与"Token 资本"哲学异曲同工
 
@@ -187,8 +187,8 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - [Agent Harness 架构设计与生产实践](../ch05/058-agent-harness.html)
 - [Google Agent Executor Runtime](ch04/003-agentrun.html)
 - [Anthropic Claude Managed Agents](../ch01/219-anthropic-claude-managed-agents.html)
-- [Amazon Bedrock AgentCore Runtime](ch04/548-amazon-bedrock-agentcore.html)
-- [AgentCore Harness](ch04/675-agentcore-harness.html)
+- [Amazon Bedrock AgentCore Runtime](ch04/549-amazon-bedrock-agentcore.html)
+- [AgentCore Harness](ch04/676-agentcore-harness.html)
 - [纳德拉「Token 资本」论](../ch12/003-token.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

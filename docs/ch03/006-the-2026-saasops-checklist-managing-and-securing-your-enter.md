@@ -190,7 +190,7 @@ A: Shadow AI是Shadow IT的子集，专指未批准的AI工具使用。清单将
 A: 可以从ROI最高的项开始：用户生命周期管理自动化（#2）和SaaS可视化（#3）是最佳起点，成本节约和安全提升效果最明显。
 
 ## 相关实体
-- [Ai Agents Inside Perimeter Hackernews](../ch04/349-ai-agent.html)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/298-ai-agent.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/231-rag.html)
 - [The It And Security Field Guide To Ai Adoption Tines](../ch12/081-the-it-and-security-field-guide-to-ai-adoption-tines.html)

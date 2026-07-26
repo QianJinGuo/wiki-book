@@ -77,11 +77,11 @@ Claude Code 在大型代码库中的表现揭示了企业 AI 编程工具部署�
 **所有权是采用瓶颈**：技术准备度与组织准备度的错位是常见失败模式。成功案例显示，专门的 agent manager 角色和插件/MCP 的开箱即用体验对于跨越"第一天可用性"障碍至关重要。
 
 ## 相关实体
-- [How_Claude_Code_Works_In_Large_Codebases](ch01/1234-claude.html)
+- [How_Claude_Code_Works_In_Large_Codebases](ch01/1232-claude.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/291-anthropic-claude-code.html)
 - [Claude Code Large Codebase Harness Configuration](../ch03/076-claude-code.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/076-claude-code.html)
-- [Code Review Graph](ch01/814-code-review-graph-claude-code-6-8-token.html)
+- [Code Review Graph](ch01/820-code-review-graph-claude-code-6-8-token.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-era-git-version-control-agentic-coding-practices.md)
 

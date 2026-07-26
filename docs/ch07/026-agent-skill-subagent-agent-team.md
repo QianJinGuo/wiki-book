@@ -71,8 +71,8 @@ Agent Team 把四类提取任务（UI 组件、布局文件、业务逻辑、资
 ## 相关实体
 - [Baidu Netdisk Kmp Migration Three Layer Agent Architecture](../ch03/035-agent.html)
 - [Agent Memory Engineering Tax Aws China 2026](../ch04/101-agent-memory.html)
-- [Ai Skill Skill Creator 源码拆解](../ch04/325-skill-skill.html)
-- [From Agent Protocol To Harness Skill](../ch04/418-from-agent-protocol-to-harness-skill.html)
+- [Ai Skill Skill Creator 源码拆解](../ch04/326-skill-skill.html)
+- [From Agent Protocol To Harness Skill](../ch04/419-from-agent-protocol-to-harness-skill.html)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-netdisk-kmp-migration-three-layer-agent-architecture.md)].md]

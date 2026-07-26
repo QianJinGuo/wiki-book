@@ -103,11 +103,11 @@ LiteTopic 定位为消息基础设施，与上层 Agent 框架的集成主要有
 两条路径的共同前提是：Agent 框架侧需要支持「发布到 LiteTopic」和「从 LiteTopic 消费」两种操作——这意味着框架侧需进行小幅改造以适配 LiteTopic SDK。预计随着 RocketMQ 5.5.0 普及，会有更多框架跟进支持。
 
 ## 相关实体
-- [Rocketmq Litetopic Ai Agent Messaging](../ch01/435-rocketmq-litetopic.html)
+- [Rocketmq Litetopic Ai Agent Messaging](../ch01/436-rocketmq-litetopic.html)
 - [Wow Harness V3 Governance Protocol](../ch05/018-harness.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/377-hermes-agent-goal.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/378-hermes-agent-goal.html)
 - [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/270-skill.html)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/272-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rocket-mq-5-litetopic-ai-agent-async-cloudnative.md)
 

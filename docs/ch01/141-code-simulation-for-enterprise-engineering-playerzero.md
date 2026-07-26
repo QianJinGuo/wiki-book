@@ -36,7 +36,7 @@ Code simulation 对以下场景价值最大：多仓库/多服务的分布式系
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/091-ai.html)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/160-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
-- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/1238-0.html)
+- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/1236-0.html)
 
 ---
 

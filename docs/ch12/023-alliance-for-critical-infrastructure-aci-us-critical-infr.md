@@ -64,20 +64,20 @@ ACI 接下来 18 个月的工作包括：建立工作组、定义试点项目、
 
 ## 相关实体
 
-- [Ai Agents Security Survey Attack Defense](../ch04/349-ai-agent.html)
+- [Ai Agents Security Survey Attack Defense](../ch04/298-ai-agent.html)
 - [Anthropic Llm Attck Navigator Cyber Operations](../ch04/168-anthropic-llm.html)
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/018-harness.html)
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/079-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
 - [Aws Software Supply Chain Security Well Architected Best Practices](../ch05/091-ai.html)
 - [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/231-rag.html)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/450-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Ai Traffic Cyberthreat Benchmark 2026](../ch05/091-ai.html)
 - [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/349-ai-agent.html)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/827-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/298-ai-agent.html)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/833-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
 - [5237875](https://github.com/QianJinGuo/wiki/blob/main/entities/5237875.md)
-- [820297](../ch01/902-20.html)
+- [820297](../ch01/908-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

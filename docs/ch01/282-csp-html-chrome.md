@@ -178,8 +178,8 @@ Content-Security-Policy:
 - **密码窃取专项测试**：如果目标有登录功能，主动尝试注入 form 标签并观察 autofill 行为（需在受控环境）
 
 ## 相关实体
-- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](ch01/727-9.html)
-- [Ico Fines South Staffordshire 2022 Breach](ch01/902-20.html)
+- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](ch01/733-9.html)
+- [Ico Fines South Staffordshire 2022 Breach](ch01/908-20.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Interaction Models](../ch03/103-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/091-ai.html)
@@ -189,7 +189,7 @@ Content-Security-Policy:
 - [discord 全平台端到端加密](../ch12/096-discord.html)
 - [incendium fuzzing ms rpc](../ch12/110-incendium-fuzzing-ms-rpc.html)
 - [the interface is no longer the product](../ch05/091-ai.html)
-- [a route to root in a 4g industrial router](ch01/902-20.html)
+- [a route to root in a 4g industrial router](ch01/908-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---
