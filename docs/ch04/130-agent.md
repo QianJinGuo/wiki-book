@@ -50,7 +50,7 @@
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05/118-harness-engineering.html)
 - [Tmall Marketing Ai Workflow](../ch05/091-ai.html)
 - [Harness Engineering Alibaba Java Case Study](../ch05/118-harness-engineering.html)
-- [Skill Formal Theory Survey 10Papers](ch04/270-skill.html)
+- [Skill Formal Theory Survey 10Papers](ch04/272-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-时代的生产力悖论当协作本身成为最大的瓶颈.md)
 三、Agent 在交付和稳定性链路中的缺席

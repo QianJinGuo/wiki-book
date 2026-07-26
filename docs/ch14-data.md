@@ -2,7 +2,7 @@
 
 > AI 的燃料：实时入湖、流处理、数据质量
 
-> 本章收录 **39 篇**实体，按深度递增排列。
+> 本章收录 **40 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
-| ⭐⭐ 工程师 | 需编程基础 | 33 |
+| ⭐⭐ 工程师 | 需编程基础 | 34 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 
 ---
@@ -2150,7 +2150,81 @@ MCP（Model Context Protocol）和 SIP 电话集成代表了 LiveKit 从"开发�
 
 ---
 
-## Ch14.016 Moneyball for Physical AI
+## Ch14.016 Apache SeaTunnel AI CLI 模型评测
+
+> 📊 Level ⭐⭐ | 8.8KB | `entities/基于-amazon-bedrock-的-apache-seatunnel-ai-cli-模型评测从配置生成到真实执行.md`
+
+# Apache SeaTunnel AI CLI 模型评测
+
+> **v×c score**: 64 | stars=4
+> **来源**: https://aws.amazon.com/cn/blogs/china/based-on-amazon-bedrock-apache-seatunnel-ai
+> **发布**: AWS China Blog (2026-07-23)
+
+有技术深度的文章。
+
+## 摘要
+
+本文以 Apache SeaTunnel AI CLI 项目为基础，通过 Amazon Bedrock 的统一模型访问层，对 7 个模型在 100 个真实 ETL 任务上完成了从静态配置生成到真实数据环境执行的三层评测。核心发现是：模型在静态校验阶段的表现不能预测其在真实执行中的成功率 —— L1 静态通过率最高的模型（GPT-5.6 Terra，93%）在 L3 真实执行中是垫底的（74%）；而 L1 第三的 Claude Opus 4.8（89%）在真实执行中表现最优（85%），损失仅 4 个百分点。
+
+## 核心要点
+
+1. **三层测评框架**：L1 静态配置验证（HOCON 语法 + 基础结构）、L2 CLI 与规则验证（OptionRule + dry-run）、L3 Docker 化真实执行验证（完整数据管道端到端运行）。
+2. **L1 vs L3 排名反转**：GPT-5.6 Terra L1 第一（93%）但 L3 垫底（74%），19 个任务在"可校验到可运行"之间失效；Claude Opus 4.8 L1 第三（89%）但 L3 第一（85%），损失最小。
+3. **100 个任务覆盖三层复杂度**：20 个 Tier 1 基础同步、45 个 Tier 2 转换/CDC/参数约束、35 个 Tier 3 复杂 DAG。CDC 任务涉及 binlog、publication、server-id、checkpoint 等多维约束。
+4. **SeaTunnel 配置的固有复杂度**：单个 connector 通常涉及 20-50 个配置参数，参数类型、必填约束、组合关系、运行模式及前置条件构成了巨大的配置空间。
+5. **AI CLI 的定位**：不是简单配置生成器，而是理解 100+ connector 参数语义、数据类型约束和 DAG 组合逻辑的 Agent 系统，核心质量指标是"首次生成即可运行"而非"看起来合理"。
+
+## 深度分析
+
+### 三层评测设计的核心理念：验证的梯度递进
+
+SeaTunnel AI CLI 评测的三层设计不仅仅是为了评估，更是对 AI 辅助数据工程的核心挑战的精准刻画。L1 回答"模型能不能生成一段 HOCON"；L2 回答"模型懂不懂 connector 规则"；L3 回答"模型能不能处理真实世界的数据集成"。
+
+这种梯度设计的深刻之处在于：每一层的失败都不是前一层成果的"退化"，而是揭示了不同层面的能力缺失。L1 失败意味着模型不理解配置语言本身；L2 失败意味着模型不了解 connector 的实现约束；L3 失败意味着模型无法处理真实环境中的隐性条件（网络连通性、CDC 前提、版本兼容性）。最危险的模型恰恰是那些通过 L1 但大量在 L3 失效的 —— 它们会产生"虚假的安全感"。
+
+### 排名反转现象：为什么静态好不等于运行好？
+
+GPT-5.6 Terra 的 L1 与 L3 排名反差最大（93% → 74%），揭示了"文本生成能力"和"工程约束理解能力"之间的割裂。L1 高通过率说明 Terra 擅长生成**语法正确、结构完整**的 HOCON 配置。但 L3 低成功率说明它在**理解隐含约束、CDC 条件、参数兼容性**这些需要深度工程知识的方面存在短板。
+
+Claude Opus 4.8 的 L1-L3 损失最小（仅 4 个百分点），说明它在配置生成的"文本流利度"和"工程正确性"之间保持了更好的平衡。这与 Claude 系列在工具调用、精确遵循指令方面的优化相一致。对 SEATunnel 这样的工程密集型场景，工程师应优先关注模型的"运行稳定性"而非"文本流畅度"。
+
+### AI for ETL 的工程挑战
+
+SeaTunnel AI CLI 面临的挑战是整个"AI for Data Engineering"领域的缩影。与通用的代码生成不同，ETL 配置生成面临几重独特困难：
+
+1. **维度爆炸**：100+ connector，每个 20-50 个参数，参数之间有复杂的依赖关系和版本兼容性矩阵。
+2. **隐式前置条件**：CDC 任务需要数据库已开启 binlog、已创建 publication、server-id 不冲突 —— 这些是配置之外的运行条件，但配置的生成必须考虑它们。
+3. **错误修复的上下文交互**：当配置在 L3 执行失败时，模型需要理解 SeaTunnel 的 Java connector 实现细节、日志信息和运行环境的约束，才能给出有效修复。
+
+这些挑战的本质是：ETL 配置不仅是"文本生成"，更是"在运行约束下的规划问题"。
+
+## 实践启示
+
+1. **拒绝静态选型，坚持三层验证**：在数据工程领域选择模型时，不要依赖 LLM 排行榜或单次配置生成结果。必须加入 L3（真实执行）验证环节，否则 19% 的模型可能在"看起来正确但运行失败"的陷阱中。
+
+2. **建立持续评测 pipeline**：将三层评测框架 CI/CD 化。每次模型版本升级、API 参数调整或 connector 生态更新后，重新跑一轮评测。SeaTunnel 的 100 个任务设计已覆盖主要场景，可以快速运行。
+
+3. **优先选择"高稳定性"模型**：对于生产级 ETL 场景，L1 到 L3 的衰减幅度比 L1 的绝对分数更重要。Claude Opus 4.8（-4pp）比 GPT-5.6 Terra（-19pp）更适合需要稳定配置生成的场景。
+
+4. **修复能力是选型关键指标**：模型在配置失败后的修复能力同样重要。从"首次通过"到"修复后通过"的增幅反映了模型的调试和迭代修复能力 —— 在 ETL 开发的真实工作流中，这比一次性生成能力更有价值。
+
+5. **用 AI CLI 降低 ETL 门槛，而非完全替代工程师**：SeaTunnel AI CLI 的合理使用方式是"工程师 + AI 辅助"：AI 生成初稿配置，工程师审查并通过三层验证后上线。完全自动化的配置生成在当前模型能力下仍有较高风险。
+
+## 相关实体
+
+- Apache SeaTunnel — AI CLI 项目所在的开源数据集成平台
+- Amazon Bedrock — 模型统一访问层和评测执行平台
+- GPT-5.6 Sol/Terra/Luna — 参与评测的模型之一，Sol 定位高能力、Terra 定位成本平衡
+- Claude Opus 4.8 — 参与评测的模型之一，L1-L3 损失最小（仅 4 个百分点）
+- Claude Sonnet 5 — 参与评测的模型之一，面向日常 Agent 工作负载
+- ETL 配置生成 — AI CLI 的核心应用场景，从自然语言到可运行配置的转化
+- 数据工程模型评测 — 三层评测框架的通用方法论
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/基于-amazon-bedrock-的-apache-seatunnel-ai-cli-模型评测从配置生成到真实执行.md)
+
+---
+
+## Ch14.017 Moneyball for Physical AI
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/moneyball-for-physical-ai.md`
 
@@ -2261,7 +2335,7 @@ $$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
 
 ---
 
-## Ch14.017 Lightfield AI pipeline generation
+## Ch14.018 Lightfield AI pipeline generation
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/lightfield-ai-pipeline-generation.md`
 
@@ -2319,7 +2393,7 @@ Lightfield 的 FAQ 中有一段值得注意的自我定位：随着对工具边�
 
 ---
 
-## Ch14.018 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
+## Ch14.019 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
 
@@ -2363,7 +2437,7 @@ AI 生成 dashboard 的定位是消除 construction phase——当分析意图�
 
 ---
 
-## Ch14.019 verify-data：一个端到端的数据验数 Agent Skill
+## Ch14.020 verify-data：一个端到端的数据验数 Agent Skill
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/verify-data-agent-skill-data-validation.md`
 
@@ -2485,7 +2559,7 @@ verify-data 与 Data Observability 工具（如 Monte Carlo、Great Expectations
 
 ---
 
-## Ch14.020 LiveKit Agents：给大模型接上麦克风，没你想的那么简单
+## Ch14.021 LiveKit Agents：给大模型接上麦克风，没你想的那么简单
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/livekit-agents-voice-ai-streaming-cascade-interruption-detection.md`
 
@@ -2580,7 +2654,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ---
 
-## Ch14.021 Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形
+## Ch14.022 Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/goodfire-predictive-data-debugging-post-training-anatomy-2026.md`
 
@@ -2642,7 +2716,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ---
 
-## Ch14.022 基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理
+## Ch14.023 基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md`
 
@@ -2671,7 +2745,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ---
 
-## Ch14.023 Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
+## Ch14.024 Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/agent-data-governance-crewai-credential-patterns.md`
 
@@ -2744,7 +2818,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ---
 
-## Ch14.024 AI 驱动的大数据工程：从平台驱动到 AIDLC 的范式迁移
+## Ch14.025 AI 驱动的大数据工程：从平台驱动到 AIDLC 的范式迁移
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/ai-engineering-platform-aidlc-migration.md`
 
@@ -2786,7 +2860,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ---
 
-## Ch14.025 Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例
+## Ch14.026 Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md`
 
@@ -2836,7 +2910,7 @@ RG 实例已在全球广泛区域推出，涵盖亚太、北美、欧洲、中�
 
 ---
 
-## Ch14.026 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
+## Ch14.027 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/sql-not-in-null-trap-demorgan-parser.md`
 
@@ -2902,7 +2976,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ---
 
-## Ch14.027 DataWorks Copilot 需求交付 Skill — 数据需求 24h 交付的 Spec Coding 实践
+## Ch14.028 DataWorks Copilot 需求交付 Skill — 数据需求 24h 交付的 Spec Coding 实践
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/dataworks-copilot-skill-data-request-24h-delivery-taobao-2026-07-20.md`
 
@@ -2985,7 +3059,7 @@ specs/yyyymmdd_{任务名}/
 
 ---
 
-## Ch14.028 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
+## Ch14.029 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/github-multilingual-repositories-dataset-cc0.md`
 
@@ -3100,7 +3174,7 @@ specs/yyyymmdd_{任务名}/
 
 ---
 
-## Ch14.029 Turning Scattered Data Into Queryable Segments at Scale: Razorpay 实践
+## Ch14.030 Turning Scattered Data Into Queryable Segments at Scale: Razorpay 实践
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/turning-scattered-data-into-queryable-segments-at-scale-how.md`
 
@@ -3149,7 +3223,7 @@ DPDPA also reshaped what the platform had to be. India’s Digital Personal Data
 
 ---
 
-## Ch14.030 DataComp for Language Models
+## Ch14.031 DataComp for Language Models
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/datacomp-for-language-models.md`
 
@@ -3201,7 +3275,7 @@ DataComp 配套开源数据处理工具：
 
 ---
 
-## Ch14.031 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
+## Ch14.032 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/kafka-share-groups-pathological-fetch-waits-with-record-limi.md`
 
@@ -3252,7 +3326,7 @@ So I ran some backlog drain tests to unders
 
 ---
 
-## Ch14.032 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
+## Ch14.033 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/databend-open-source-lakehouse-ai-agent.md`
 
@@ -3329,7 +3403,7 @@ Databend Cloud on AWS 架构:
 
 ---
 
-## Ch14.033 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
+## Ch14.034 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md`
 
@@ -3383,7 +3457,7 @@ Transforming rare cancer research with Amazon Quick: Integrating biomedical data
 
 ---
 
-## Ch14.034 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
+## Ch14.035 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
 
@@ -3412,7 +3486,7 @@ Taking the above principles into account, we **implemented the Metrics Semantic 
 
 ---
 
-## Ch14.035 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
+## Ch14.036 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
 
@@ -3441,7 +3515,7 @@ Software is changing the world. QCon San Francisco empowers software development
 
 ---
 
-## Ch14.036 The Data Operating System for the Foundation Model Era — Data Juicer
+## Ch14.037 The Data Operating System for the Foundation Model Era — Data Juicer
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
 
@@ -3468,7 +3542,7 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 
 ---
 
-## Ch14.037 Amazon Quick integration with time-series databases for market intelligence using MCP
+## Ch14.038 Amazon Quick integration with time-series databases for market intelligence using MCP
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
 
@@ -3524,7 +3598,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 
 ---
 
-## Ch14.038 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
+## Ch14.039 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
 
 > 📊 Level ⭐⭐⭐ | 14.5KB | `entities/ai-驱动的大数据工程-从平台驱动到-aidlc-的范式迁移.md`
 
@@ -3661,7 +3735,7 @@ AIDLC 转型对团队能力的要求发生根本变化：
 
 ---
 
-## Ch14.039 ShotStream: Streaming Multi-Shot Video Generation (ECCV 2026, 港中文&快手可灵)
+## Ch14.040 ShotStream: Streaming Multi-Shot Video Generation (ECCV 2026, 港中文&快手可灵)
 
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/shotstream-streaming-multi-shot-video-cuhk-kling-eccv2026.md`
 

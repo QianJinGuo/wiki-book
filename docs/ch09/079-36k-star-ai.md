@@ -54,7 +54,7 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 ## 相关实体
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/019-ai-native.html)
 - [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch03/035-agent.html)
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/328-ai-coding-agent.html)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/329-ai-coding-agent.html)
 - [Rag技术框架的演进方向](../ch01/231-rag.html)
 - [Graphify](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md) — 同一赛道的另一款软件工程知识图谱工具
 - [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor.com-composer-2-5.md) — 同为 AI coding 工具

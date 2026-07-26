@@ -91,7 +91,7 @@ Anthropic 官方复盘 Claude Code 中三个工具的设计演进过程，揭示
 
 ## 关联阅读
 ## 相关实体
-- [Claude Code Harness Deep Understanding](ch01/426-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](ch01/427-claude-code-harness-deep-understanding.html)
 - [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](../ch03/076-claude-code.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/291-anthropic-claude-code.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/070-claude-code-harness.html)
@@ -100,7 +100,7 @@ Anthropic 官方复盘 Claude Code 中三个工具的设计演进过程，揭示
 - [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](../ch03/035-agent.html)
 - [Coze 3 0 Local Agent Codex Claude Code Project](../ch03/076-claude-code.html)
 - [Claude Code Agent Teams Xingxiaozhao](ch01/334-claude-code-agent-teams.html)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/354-pi-agent.html)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/355-pi-agent.html)
 
 ---
 
