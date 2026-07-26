@@ -32,7 +32,7 @@
 ## 相关实体
 
 - [Build Live Translation Apps with gpt-realtime-translate](ch01/150-build-live-translation-apps-with-gpt-realtime-translate.html)
-- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/721-chatgpt.html)
+- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/920-chatgpt.html)
 
 ---
 

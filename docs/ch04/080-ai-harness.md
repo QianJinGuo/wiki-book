@@ -297,7 +297,7 @@ OpenAI SDK 的三层护栏（输入→工具→输出）体现了**纵深防御*
 - 原文：https://x.com/akshay_pachaar/status/2041146899319971922
 - 中文编译：宝玉AI
 ## 相关实体
-- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/349-ai-agent.html)
+- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/298-ai-agent.html)
 - [Claude Code Large Codebase Enterprise Deployment](../ch03/076-claude-code.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/291-anthropic-claude-code.html)
 - [Claude Code Routines Proactive Agent](../ch03/076-claude-code.html)

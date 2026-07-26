@@ -33,7 +33,7 @@
 - **[Claude Code Prompt Context Harness](../ch09/060-claude-code-prompt.html)**（飞樰）侧重 Prompt 模块化/Harness 安全/多 Agent 体系
 - **[Claude Code Agent Engineering](../ch03/068-claude-code-agent.html)**（SooKool）侧重 StreamingToolExecutor/主循环/压缩/小模型/Hook
 - **[Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)**（800行轻量架构）与 Claude Code 同体系但更精简
-- **[Agent Skill Writing](../ch04/268-agent-skill.html)** Skill 编写规范对应 Fat Skills 理念
+- **[Agent Skill Writing](../ch04/270-agent-skill.html)** Skill 编写规范对应 Fat Skills 理念
 - **[Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)** Hermes 的 Self-Evolving 与 Claude Code 架构的关系
 
 ## 相关实体
@@ -50,10 +50,10 @@
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch03/093-hermes-agent.html)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/076-claude-code.html)
 - [Claude Code 架构深度解析](../ch03/076-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/426-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/427-claude-code-harness-deep-understanding.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/406-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/407-agent-skills.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/076-claude-code.html)
 - [Claude Code 源码核心机制详解](../ch03/076-claude-code.html)
@@ -63,7 +63,7 @@
 - [Agent Memory 系统性框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1234-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1232-claude.html)
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/076-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/018-harness.html)

@@ -56,7 +56,7 @@ The more interesting future is not only agents operating apps. It is application
 - [From System Of Record To System Of Intelligence](../ch01/259-from-system-of-record-to-system-of-intelligence.html)
 - [Notebook Lm](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md)
 - [Claude Code Founder Harness 100 Lines](ch03/076-claude-code.html)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/271-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/186-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
 - [Thehackernews Fake Openai Privacy Filter](../ch01/396-openai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interface-commoditization-ai-era.md)

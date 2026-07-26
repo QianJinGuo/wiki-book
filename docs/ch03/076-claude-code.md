@@ -120,7 +120,7 @@ Claude Code 命令系统化指南——5 分类（会话/模型/权限/扩展/�
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch03/075-obsidian-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/088-claude-code-1.html)
 - [两万字详解Claude Code源码核心机制](ch03/076-claude-code.html)
-- [Claude Code Subagent 上下文卫生](../ch04/308-claude-code-subagent.html)
+- [Claude Code Subagent 上下文卫生](../ch04/310-claude-code-subagent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

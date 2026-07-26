@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **54 篇**实体，按深度递增排列。
+> 本章收录 **55 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 15 |
+| ⭐⭐ 工程师 | 需编程基础 | 16 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 35 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
 
@@ -888,7 +888,79 @@ Organizations processing large volumes of images (e.g., social media platforms, 
 
 ---
 
-## Ch17.008 LLaVA-OneVision-2：全帧率视频理解
+## Ch17.008 MineExplorer: 多模态能力断层
+
+> 📊 Level ⭐⭐ | 9.2KB | `entities/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md`
+
+# MineExplorer: 多模态能力断层
+
+> **v×c score**: 64 | stars=4
+> **来源**: https://mp.weixin.qq.com/s/P3yzceXkVxth7Q63nRfBLg
+> **发布**: 美团技术团队 (2026-07-23)
+
+有技术深度的文章。
+
+## 摘要
+
+MineExplorer 是美团 LongCat 团队构建的**首个在开放世界中做到分钟级长程任务的评测基准**，基于 Minecraft 沙盒环境系统性评测 18 款顶级多模态大模型在动态、含隐藏前置条件的长程任务中的真实能力。结果显示，最强模型 Claude-Opus-4.6 的整体任务成功率仅 41 分，从 1 跳任务的 77 分骤降至 4 跳任务的 12 分，揭示了当前模型"感知尚可、推理薄弱、探索无能"的根本性能力断层。
+
+## 核心要点
+
+1. **动态开放世界评测**：与静态截图问答不同，MineExplorer 在实时 3D 沙盒中运行任务，每个实例执行 1800 环境步（3 分钟连续交互），环境持续变化。
+2. **隐藏前置条件的多跳任务**：通过 1-4 hop 任务分级，核心挑战是最终目标包含未在指令中说明的隐藏前置子任务。最强模型 4-hop 成功率仅 12%。
+3. **知识解耦设计**：通过 LLM 裁判过滤掉 Minecraft 专有知识，确保评测的是通用探索能力而非"背 Wiki"能力。
+4. **多智能体数据合成**：用 5 个专业 Agent 协作造题，包含 orchestration 和 debate 两个阶段，有效率提升约 30 个百分点，最终保留 813 个高质量实例。
+5. **三大能力维度 14 项细粒度评测**：感知（空间/时序/实体/状态/资源）、推理（常识/因果/关系）、行动（移动/跳跃/采集/放置/合成/攻击）。
+6. **额外步数与记忆不是解药**：消融实验显示，增加步数或历史帧数到一定程度后性能反而下降，瓶颈不在资源而在模型无法将已有信息与当前世界状态对齐。
+
+## 深度分析
+
+### 为什么"会看"不等于"会探索"？
+
+MineExplorer 最重要的洞察是：在所有被测模型上，**感知分数 > 行动分数 > 推理分数**。以 Claude-Opus-4.6 为例，感知分 61.91，推理分 54.71。这意味着模型能"看见"环境中的物体和状态，但无法将多个视觉观察串联成一个有效的行动策略。
+
+这个发现与具身 AI 领域的一个核心假设一致：感知层的进展超过了规划层。当前最强的视觉模型已经可以在静态图像上达到甚至超越人类水平，但在**动态、具身、需要持续重规划**的环境中，感知到规划的转化仍然是瓶颈。MineExplorer 把这个定性判断变成了可量化的数据。
+
+### 隐藏前置条件：大模型的"认知盲区"
+
+MineExplorer 的四跳任务中，成功率从 77%（1-hop）到 12%（4-hop），每增加一层隐藏前置条件，性能掉一个台阶。这不仅仅是"任务变长了"，而是任务结构从"执行已知步骤序列"变成了"推断出未明确说明的步骤序列"。
+
+这暴露了当前大模型的一个根本性局限：**它们擅长在明确定义的搜索空间内优化，但不擅长在开放、未完全指定的空间中推断出缺失步骤**。这个局限在受控的 QA 基准（如 MMLU）中被完全隐藏了，因为那里所有必要信息都已包含在问题中。MineExplorer 的隐藏前置条件设计是对这种"温室评测"的直接批判。
+
+### 60% 的失败来自导航 —— 对具身 AI 的警示
+
+MineExplorer 的失败归因分析揭示了一个惊人事实：Claude-Opus-4.6 近 60% 的失败来自导航失败。模型无法在 3D 空间中持续追踪自己的位置和目标位置，或者在探索过程中迷失了方向。这不是视觉感知失败（模型能看到物体），而是空间推理和路径规划的失败。
+
+这对快速升温的具身智能赛道有着直接的警示：当机器人模型在受控演示中表现优秀，但在真实、动态、长程的任务中失败时，问题可能不在于感知能力，而在于空间推理和持续重规划能力的缺失。
+
+### 多智能体数据合成流程的工程价值
+
+MineExplorer 的方法论本身也值得关注。团队使用 5 个专业 Agent 组成的协作流程（orchestrator + specialist + verifier）来自动化生成训练数据。两个阶段（初始化和辩论）的设计允许 Agent 初稿生成后由验证器发现问题并迭代修订。这个范式对于任何需要高质量合成数据的场景都具有通用参考价值。
+
+## 实践启示
+
+1. **评测基准应反映真实世界复杂度**：如果仅使用静态 QA 基准评估多模态模型，会严重高估其真实能力。任何面向具身 AI、机器人或开放世界任务的选型评估，都应引入 MineExplorer 式的动态、多跳、含隐藏前置条件的评测。
+
+2. **感知层到规划层的转化是当前最大瓶颈**：在优化多模态 Agent 时，应优先关注"从视觉输入到行动序列"的推理能力，而非继续提升视觉 encoder 的分辨率。MineExplorer 的三维能力分数（感知 > 行动 > 推理）给出了明确的优化优先级。
+
+3. **隐藏前置条件的推理训练应成为重点**：当前训练数据大多是"指令-执行"配对。要提升模型在开放世界中的能力，需要加入含有隐藏条件的训练示例，让模型学会"推断未说明的需求"。
+
+4. **多智能体协作造线是高质量数据生成的有效范式**：MineExplorer 的多智能体数据合成流程为任何需要大规模合成训练数据的团队提供了可复用的范式 —— 使用 orchestrator 协调多个 specialist + verifier Agent，通过辩论阶段提升数据质量。
+
+5. **具身智能的资源分配关注点**：增加计算资源（步数、记忆帧数）不是解决能力的可行路径。模型需要改进的是"如何将已有信息与当前状态对齐"的认知架构，而非提供更多信息。
+
+## 相关实体
+
+- 多模态大模型 — MineExplorer 的评测对象，18 款顶级模型的系统性评测揭示了能力断层
+- 具身智能 (Embodied AI) — MineExplorer 的评测结果为该赛道提供了关键瓶颈定位
+- 美团 LongCat 团队 — MineExplorer 的构建团队
+- 开放世界评测 (Open-World Evaluation) — MineExplorer 代表的动态、含隐藏条件的新评测范式
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md)
+
+---
+
+## Ch17.009 LLaVA-OneVision-2：全帧率视频理解
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/llava-onevision-2-full-frame-rate-vlm.md`
 
@@ -992,7 +1064,7 @@ LLaVA-OneVision-2 解决的是理解侧问题，而当前很多视频生成模�
 
 ---
 
-## Ch17.009 小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow
+## Ch17.010 小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow-xiaomi.md`
 
@@ -1077,7 +1149,7 @@ Daniel Povey 加入小米这件事本身具有标志性——一位定义了一�
 
 ---
 
-## Ch17.010 SunFinance: Textract+Claude准确率90.8%的ID提取方案
+## Ch17.011 SunFinance: Textract+Claude准确率90.8%的ID提取方案
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
 
@@ -1141,7 +1213,7 @@ SunFinance在OCR+Claude之后加入了ID号码格式化验证、日期标准化�
 
 ---
 
-## Ch17.011 How transparent is DiffusionGemma (and why it matters)
+## Ch17.012 How transparent is DiffusionGemma (and why it matters)
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
 
@@ -1211,7 +1283,7 @@ Monitorability, a key downstream application of transparency, is similar between
 
 ---
 
-## Ch17.012 FLAT: Feedforward Latent Triangle Splatting
+## Ch17.013 FLAT: Feedforward Latent Triangle Splatting
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/flat-feedforward-latent-triangle-splatting.md`
 
@@ -1324,7 +1396,7 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 
 ---
 
-## Ch17.013 Multimodal AI for Searchable Aerial Imagery at Scale
+## Ch17.014 Multimodal AI for Searchable Aerial Imagery at Scale
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/multimodal-ai-searchable-aerial-imagery-aws.md`
 
@@ -1405,7 +1477,7 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 
 ---
 
-## Ch17.014 PersonaVLM — 长期个性化多模态大模型
+## Ch17.015 PersonaVLM — 长期个性化多模态大模型
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/personavlm-personalized-memory.md`
 
@@ -1469,7 +1541,7 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 
 ---
 
-## Ch17.015 LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
+## Ch17.016 LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/liteframe-efficient-vision-encoders.md`
 
@@ -1512,7 +1584,7 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 ---
 
-## Ch17.016 TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+## Ch17.017 TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/timelens2.md`
 
@@ -1568,7 +1640,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 ---
 
-## Ch17.017 VoxCPM2：OpenBMB 开源 Tokenizer-free TTS，Voice Design 文字描述生成声音
+## Ch17.018 VoxCPM2：OpenBMB 开源 Tokenizer-free TTS，Voice Design 文字描述生成声音
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/voxcpm2-openbmb-tts-voice-design-jikezhijia-2026-06-30.md`
 
@@ -1654,7 +1726,7 @@ CLI：`voxcpm design --text "你好世界" --output out.wav`
 
 ---
 
-## Ch17.018 别让格式杀死思想logics-parsing-v2定义文档解析新边界
+## Ch17.019 别让格式杀死思想logics-parsing-v2定义文档解析新边界
 
 > 📊 Level ⭐⭐⭐ | 13.0KB | `entities/别让格式杀死思想logics-parsing-v2定义文档解析新边界.md`
 
@@ -1764,7 +1836,7 @@ LogicsDocBench为自建综合评估基准，由 900 页精心挑选的 PDF 页�
 
 ---
 
-## Ch17.019 小米多篇论文入选 ECCV 2026：人脸视频修复与视频模型加速
+## Ch17.020 小米多篇论文入选 ECCV 2026：人脸视频修复与视频模型加速
 
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/小米-多篇论文入选-eccv-2026-人脸修复视频加速.md`
 
@@ -1854,7 +1926,7 @@ BeyondDrive 和 DriveFine 两篇论文都聚焦于一个被传统端到端方法
 
 ---
 
-## Ch17.020 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
+## Ch17.021 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
 
 > 📊 Level ⭐⭐⭐ | 11.6KB | `entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md`
 
@@ -1941,7 +2013,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ---
 
-## Ch17.021 Self-Filming Guide by Hello World Media
+## Ch17.022 Self-Filming Guide by Hello World Media
 
 > 📊 Level ⭐⭐⭐ | 11.5KB | `entities/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md`
 
@@ -2070,7 +2142,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 
 ---
 
-## Ch17.022 Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
+## Ch17.023 Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
 
 > 📊 Level ⭐⭐⭐ | 11.1KB | `entities/gemma-4-12b-google-multimodal-local.md`
 
@@ -2244,7 +2316,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 
 ---
 
-## Ch17.023 智源悟界·RoboBrain Orca：多模态表征世界模型
+## Ch17.024 智源悟界·RoboBrain Orca：多模态表征世界模型
 
 > 📊 Level ⭐⭐⭐ | 9.7KB | `entities/智源悟界robobrain-orca多模态表征世界模型.md`
 
@@ -2319,7 +2391,7 @@ Orca 与 Google DeepMind 的 Genie、OpenAI 的 Sora 等世界模型存在本质
 
 ---
 
-## Ch17.024 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
+## Ch17.025 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
 
 > 📊 Level ⭐⭐⭐ | 9.6KB | `entities/icrdrag-context-region-drag-eccv-2026-shanghai-jiaotong.md`
 
@@ -2425,7 +2497,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 
 ---
 
-## Ch17.025 CVPR 2026 | DGAF-VSR: 重思基于扩散模型的视频超分辨率
+## Ch17.026 CVPR 2026 | DGAF-VSR: 重思基于扩散模型的视频超分辨率
 
 > 📊 Level ⭐⭐⭐ | 9.1KB | `entities/cvpr-2026-dgaf-vsr-video-super-resolution-diffusion-taobao.md`
 
@@ -2500,7 +2572,7 @@ DGAF-VSR 由淘天音视频技术团队开发，该团队长期服务于淘宝�
 
 ---
 
-## Ch17.026 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
+## Ch17.027 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md`
 
@@ -2619,7 +2691,7 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 
 ---
 
-## Ch17.027 Normalizing Trajectory Models
+## Ch17.028 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/normalizing-trajectory-models-v2.md`
 
@@ -2737,7 +2809,7 @@ NTM 展示了一种有价值的思路：**通过架构设计保留训练目标�
 
 ---
 
-## Ch17.028 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
+## Ch17.029 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
 
@@ -2830,7 +2902,7 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 
 ---
 
-## Ch17.029 Google's Gemini Omni video model surfaces ahead of I/O debut
+## Ch17.030 Google's Gemini Omni video model surfaces ahead of I/O debut
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md`
 
@@ -2880,7 +2952,7 @@ Gemini Omni 被定位为 Agent 的事实表明，视频理解和生成能力正�
 
 ---
 
-## Ch17.030 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
+## Ch17.031 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/doubao-seed-2-lite.md`
 
@@ -2992,7 +3064,7 @@ Gemini 3 Flash 音频输入 7.2 元/Mtok，看起来比豆包的 9 元/Mtok 便�
 
 ---
 
-## Ch17.031 OlmoEarth v1.1: A more efficient family of Earth observation models
+## Ch17.032 OlmoEarth v1.1: A more efficient family of Earth observation models
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/olmoearth-v1-1-a-more-efficient-family-of-earth-observation-models.md`
 
@@ -3071,7 +3143,7 @@ v1.1 模型家族实现了「事半功倍」（doing more with less）的效果�
 
 ---
 
-## Ch17.032 MolmoMotion：语言引导的 3D 运动预测模型
+## Ch17.033 MolmoMotion：语言引导的 3D 运动预测模型
 
 > 📊 Level ⭐⭐⭐ | 7.5KB | `entities/molmomotion-language-guided-3d-motion-forecasting.md`
 
@@ -3156,7 +3228,7 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 
 ---
 
-## Ch17.033 Meta MSL（Multi-Scale Latent）：余家辉团队连发图像视频模型
+## Ch17.034 Meta MSL（Multi-Scale Latent）：余家辉团队连发图像视频模型
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/meta-msl-multi-scale-latent-yujiahui-2026.md`
 
@@ -3222,7 +3294,7 @@ MSL 视觉团队的核心成员构成反映了当前 AI 研究的高端人才流
 
 ---
 
-## Ch17.034 Video World Model Hand Tracking — 视频生成模型实现手部动捕
+## Ch17.035 Video World Model Hand Tracking — 视频生成模型实现手部动捕
 
 > 📊 Level ⭐⭐⭐ | 7.1KB | `entities/video-world-model-hand-motion-capture-2026.md`
 
@@ -3302,7 +3374,7 @@ ACE-ViDiHand 的核心洞察是：视频生成模型天天看互联网上海量�
 
 ---
 
-## Ch17.035 美团海报生成 AIGC 技术创新与实践
+## Ch17.036 美团海报生成 AIGC 技术创新与实践
 
 > 📊 Level ⭐⭐⭐ | 7.0KB | `entities/meituan-aigc-poster-generation-2026.md`
 
@@ -3391,7 +3463,7 @@ PosterReward 的出现填补了海报质量评估领域的空白。现有通用�
 
 ---
 
-## Ch17.036 Introducing 1-bit and Ternary Bonsai Image Models
+## Ch17.037 Introducing 1-bit and Ternary Bonsai Image Models
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/bonsai-image-4b-1-bit-ternary.md`
 
@@ -3467,7 +3539,7 @@ Compression only matters if the model remains useful. We evaluated Bonsai Image 
 
 ---
 
-## Ch17.037 Normalizing Trajectory Models
+## Ch17.038 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐ | 6.0KB | `entities/normalizing-trajectory-models.md`
 
@@ -3529,7 +3601,7 @@ Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致�
 
 ---
 
-## Ch17.038 ai视频工具悄悄走到了第三阶段
+## Ch17.039 ai视频工具悄悄走到了第三阶段
 
 > 📊 Level ⭐⭐⭐ | 5.8KB | `entities/ai视频工具悄悄走到了第三阶段.md`
 
@@ -3583,7 +3655,7 @@ RHTV作为第三阶段的先行者，其「画布原生」路线可能会对赛�
 
 ---
 
-## Ch17.039 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
+## Ch17.040 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
 > 📊 Level ⭐⭐⭐ | 5.8KB | `entities/moebius.md`
 
@@ -3669,7 +3741,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ---
 
-## Ch17.040 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch17.041 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
 
 > 📊 Level ⭐⭐⭐ | 5.7KB | `entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md`
 
@@ -3712,7 +3784,7 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 
 ---
 
-## Ch17.041 Stable Audio 3.0 开源音频生成模型
+## Ch17.042 Stable Audio 3.0 开源音频生成模型
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/stable-audio-3.md`
 
@@ -3769,7 +3841,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.042 扩散模型视觉生成一致性框架（2026 综述）
+## Ch17.043 扩散模型视觉生成一致性框架（2026 综述）
 
 > 📊 Level ⭐⭐⭐ | 4.4KB | `entities/diffusion-model-consistency-framework-2026-survey.md`
 
@@ -3829,7 +3901,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.043 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
+## Ch17.044 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
 
 > 📊 Level ⭐⭐⭐ | 4.4KB | `entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md`
 
@@ -3891,7 +3963,7 @@ VLX-Seek-3B 在多项基准上超越更大参数量的模型：
 
 ---
 
-## Ch17.044 FLUX 3 — Black Forest Labs 多模态流模型
+## Ch17.045 FLUX 3 — Black Forest Labs 多模态流模型
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/flux-3-multimodal-flow-model-black-forest-labs-2026.md`
 
@@ -3953,7 +4025,7 @@ FLUX 3 代表了视频生成领域向**统一多模态基础模型**方向的重
 
 ---
 
-## Ch17.045 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
+## Ch17.046 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/vivo-magicbokeh-cvpr-2026-generative-bokeh-diffusion.md`
 
@@ -3995,7 +4067,7 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.046 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
+## Ch17.047 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/feifei-li-masked-visual-actions-world-model-2026.md`
 
@@ -4039,7 +4111,7 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.047 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
+## Ch17.048 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md`
 
@@ -4084,7 +4156,7 @@ CoLT（Chain of Latent Thoughts，潜思维链）将多模态大模型（MLLM）
 
 ---
 
-## Ch17.048 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+## Ch17.049 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md`
 
@@ -4121,7 +4193,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.049 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
+## Ch17.050 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/mokus-cross-modal-knowledge-transfer.md`
 
@@ -4149,7 +4221,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.050 Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
+## Ch17.051 Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
 
 > 📊 Level ⭐⭐⭐ | 2.8KB | `entities/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md`
 
@@ -4192,7 +4264,7 @@ VLX-Flow 的训练将「观察」和「回答」分开：
 
 ---
 
-## Ch17.051 Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
+## Ch17.052 Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
 
 > 📊 Level ⭐⭐⭐ | 2.7KB | `entities/om-ai-vlx-go-vlm-navigation-0.6b-2026.md`
 
@@ -4234,7 +4306,7 @@ PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实�
 
 ---
 
-## Ch17.052 火山引擎 RTM：超低延时直播技术
+## Ch17.053 火山引擎 RTM：超低延时直播技术
 
 > 📊 Level ⭐⭐⭐ | 2.5KB | `entities/volcano-engine-rtm-low-latency-streaming.md`
 
@@ -4278,7 +4350,7 @@ PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实�
 
 ---
 
-## Ch17.053 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.054 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
@@ -4402,7 +4474,7 @@ PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实�
 
 ---
 
-## Ch17.054 GenCeption — Video Generation Models are General-Purpose Vision Learners
+## Ch17.055 GenCeption — Video Generation Models are General-Purpose Vision Learners
 
 > 📊 Level ⭐⭐⭐⭐ | 3.1KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
 

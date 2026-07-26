@@ -92,18 +92,18 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 ## 相关实体
 
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1154-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1160-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Karpathy 从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [OpenClaw 多 Agent 协同开发](../ch11/230-openclaw.html)
+- [Karpathy 从 Vibe Coding 到 Agentic Engineering](../ch04/631-agentic.html)
+- [OpenClaw 多 Agent 协同开发](../ch11/231-openclaw.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.html)
 - 
 - 
 -
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
-- [better decisions at scale: how mathematical optimization del](../ch11/168-better-decisions-at-scale-how-mathematical-optimization-del.html)
+- [better decisions at scale: how mathematical optimization del](../ch11/169-better-decisions-at-scale-how-mathematical-optimization-del.html)
 - [farewell ai2](../ch05/091-ai.html)
-- [introducing 1-bit and ternary bonsai image 4b: image generat](ch01/1159-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
+- [introducing 1-bit and ternary bonsai image 4b: image generat](ch01/697-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
 - [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](../ch05/091-ai.html)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](../ch05/091-ai.html)
 - [private fintech has quietly become bigger than public fintec](../ch03/105-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
