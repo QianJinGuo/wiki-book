@@ -2,7 +2,7 @@
 
 ## Ch12.057 Pwn2Own Berlin 2026, Day Three: DEVCORE Crowned Master of Pwn, $1.298 Million Total
 
-> 📊 Level ⭐⭐ | 7.9KB | `entities/pwn2own-berlin-2026-day-three-devcore-crowned-master-of-pwn-1298-million-total.md`
+> 📊 Level ⭐⭐ | 8.0KB | `entities/pwn2own-berlin-2026-day-three-devcore-crowned-master-of-pwn-1298-million-total.md`
 
 ## 核心要点
 - 来源：securityaffairs
@@ -43,13 +43,17 @@ Compass Security 攻击 Claude Code 时遇到漏洞碰撞，意味着部分研�
 AI 基础设施和开发者工具已成为漏洞研究的新前沿。OpenAI Codex 在单届比赛中被攻破三次，Anthropic Claude Code 遭遇碰撞问题，这些信号提示安全研究者应加大对 AI 编码助手和 AI Agent 系统的研究投入。同时，企业基础设施（SharePoint、ESXi）在比赛中多次被攻破，表明传统企业软件仍是重要的攻击目标。
 
 ### 对企业安全团队
-比赛揭示了多个产品和平台的安全问题，供应商有 90 天时间发布修复补丁。企业安全团队应重点关注：Exchange Server 零日（CVE-2026-42897）已被主动利用，需优先打补丁；Windows 11 作为被攻击次数最多的系统之一，需要加强终端安全防护；虚拟化平台（VMware ESXi）的跨租户漏洞具有极高风险，虚拟化环境需要独立的隔离策略（参见 [VCF 9.1 新特性](../ch01/734-9.html)中关于安全自动化的最新演进）。
+比赛揭示了多个产品和平台的安全问题，供应商有 90 天时间发布修复补丁。企业安全团队应重点关注：Exchange Server 零日（CVE-2026-42897）已被主动利用，需优先打补丁；Windows 11 作为被攻击次数最多的系统之一，需要加强终端安全防护；虚拟化平台（VMware ESXi）的跨租户漏洞具有极高风险，虚拟化环境需要独立的隔离策略（参见 [VCF 9.1 新特性](../ch01/736-9.html)中关于安全自动化的最新演进）。
 
 ### 对 AI 基础设施提供商
 OpenAI Codex 被三名不同研究人员以三种不同技术成功攻破，表明 AI 编码助手的攻击面广泛且多样化，而非单一漏洞问题。提供商需要重新审视 AI 系统的安全架构，特别是外部控制漏洞和代码执行路径的防护。Anthropic Claude Code 的碰撞问题也提示，AI 系统的安全性需要更全面的漏洞评估方法论。
 
 ### 对漏洞研究员
 DEVCORE 的成功展示了系统性研究方法的价值——持续、高质量、跨多个类别的研究输出是赢得比赛的关键。碰撞问题提醒研究人员需要在研究独创性和时机之间取得平衡。同时，奖金增长（20%）和目标多样化（新增 AI 基础设施类别）表明漏洞研究的职业前景持续向好。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

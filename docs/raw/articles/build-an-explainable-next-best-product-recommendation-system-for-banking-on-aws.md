@@ -1,16 +1,12 @@
-|---
-source: rss
-source_url: https://aws.amazon.com/blogs/machine-learning/build-an-explainable-next-best-product-recommendation-system-for-banking-on-aws
-ingested: 2026-07-25
-feed_name: AWS China ML
-source_published: 2026-07-24
-sha256: 895b645a1d4372ebefe147f4d858b036ef4be57c73cefcdb6b9b031889b748f7
+---
+title: "build an explainable next best product recommendation system for banking on aws"
+type: source
+created: "2026-07-27"
+updated: "2026-07-27"
+sha256: "333361c5747ee6268d4d5cb5ce7687caae802b1cf4ca12286afdeb7e4e3fc0e5"
+source_url: "https://aws.amazon.com/blogs/machine-learning/build-an-explainable-next-best-product-recommendation-system-for-banking-on-aws"
 ---
 
----
-|---
-source: rss
-source_url: https://aws.amazon.com/blogs/machine-learning/build-an-explainable-next-best-product-recommendation-system-for-banking-on-aws
 ingested: 2026-07-25
 feed_name: AWS China ML
 source_published: 2026-07-24

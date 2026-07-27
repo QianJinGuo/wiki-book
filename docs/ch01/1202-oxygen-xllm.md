@@ -2,7 +2,7 @@
 
 ## Ch01.1202 京东 Oxygen xLLM 大模型推理引擎捐赠开源
 
-> 📊 Level ⭐⭐ | 2.6KB | `entities/jd-oxygen-xllm-inference-engine.md`
+> 📊 Level ⭐⭐ | 2.7KB | `entities/jd-oxygen-xllm-inference-engine.md`
 
 # 京东 Oxygen xLLM 大模型推理引擎捐赠开源
 
@@ -21,7 +21,7 @@
 ## 相关链接
 
 - entities/openatom（开放原子开源基金会）
-- [大模型推理](ch01/617-llm.html)
+- [大模型推理](ch01/1270-llm.html)
 - entities/jd
 
 ## 第 2 来源 — 京东技术公众号 (2026-06-25)
@@ -31,6 +31,11 @@
 京东提出 **工程智能化（Engineering Intelligence, EI）** 作为下一代 AI 基础设施核心命题——让调度系统自主感知负载特征并动态优化，同时强调单体企业无法独立实现 EI，需要芯片厂商、框架开发者、模型团队、云服务商及开发者生态的协力共建。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/京东-oxygen-xllm-大模型推理引擎正式捐赠开放原子开源基金会共建国产-ai-infra-生态.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

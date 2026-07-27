@@ -2,7 +2,7 @@
 
 ## Ch07.083 LibTV把导演的手艺装进了Skill商店，我拿三支片子验了验
 
-> 📊 Level ⭐⭐ | 3.8KB | `entities/libtv-ai-video-agent-skill-store-creative.md`
+> 📊 Level ⭐⭐ | 3.9KB | `entities/libtv-ai-video-agent-skill-store-creative.md`
 
 # LibTV把导演的手艺装进了Skill商店，我拿三支片子验了验
 
@@ -29,6 +29,10 @@
 - **方法论文件的跨平台趋势**：文章通过作者本人"从方法论提供方（女娲.skill）到方法论调用方（LibTV Skill商店）"的双重视角，暗示了"Skill文件"正成为跨平台的通用创意资产这一趋势。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/libtv-ai-video-agent-skill-store-creative.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

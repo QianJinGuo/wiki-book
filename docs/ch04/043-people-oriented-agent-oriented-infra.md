@@ -245,12 +245,12 @@
 - 晓斌 = "**harness = 根据角色、任务、权限范围自动组装的完整工作环境**"——具体落地 + 工具、凭证、workspace、skill 4 维组装
 - 共同点：harness 决定 agent 自主空间
 
-### vs [wow-harness v3](../ch05/110-harness.html)
+### vs [wow-harness v3](../ch05/018-harness.html)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - 晓斌 = "harness 平台化"（**运行环境层**变革）——"组装的对象从'应用'变成了'agent 工作环境'"
 - 共同点：都强调"infra / 协议"是 AI Agent 落地的关键
 
-### vs [Kimi Work](../ch01/517-codex.html)
+### vs [Kimi Work](../ch01/519-codex.html)
 - Kimi Work = Harness 搬到本地桌面
 - 晓斌 = Harness **平台化**（云上"组装对象从应用变成 agent 工作环境"）
 - 共同点：harness 决定一切
@@ -323,12 +323,12 @@
 
 ## 相关对照
 - [Agent Harness 架构](../ch05/058-agent-harness.html) —— 7 层 harness 模型
-- [wow-harness v3](../ch05/110-harness.html) —— 跨 session 事件时间线
-- [Kimi Work](../ch01/517-codex.html) —— 本地桌面 Agent
+- [wow-harness v3](../ch05/018-harness.html) —— 跨 session 事件时间线
+- [Kimi Work](../ch01/519-codex.html) —— 本地桌面 Agent
 - [PilotDeck](../ch03/035-agent.html) —— 多项目隔离
 - [Rein](../ch03/035-agent.html) —— 4 模块 + 5 类型边界
 - [Microsoft Build 2026](../ch03/035-agent.html) —— 全栈 AI
-- [Claude Code 20000 字符源码分析](../ch03/076-claude-code.html) —— 98.4% 基础设施
+- [Claude Code 20000 字符源码分析](../ch03/077-claude-code.html) —— 98.4% 基础设施
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-oriented-infra-intent-driven-code-sedimentation.md)
 

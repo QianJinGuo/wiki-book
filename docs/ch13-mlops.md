@@ -2,7 +2,7 @@
 
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
-> 本章收录 **21 篇**实体，按深度递增排列。
+> 本章收录 **22 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 18 |
+| ⭐⭐ 工程师 | 需编程基础 | 19 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -1494,7 +1494,7 @@ SageMaker AI 与 Qualcomm AI Hub 的组合本质上是把模型交付链条的�
 
 ## Ch13.008 SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
 
-> 📊 Level ⭐⭐ | 10.2KB | `entities/saas-bench-gui-agent-eval-unipat.md`
+> 📊 Level ⭐⭐ | 10.3KB | `entities/saas-bench-gui-agent-eval-unipat.md`
 
 ## 摘要
 
@@ -1605,6 +1605,10 @@ pass@3 相比 pass@1 整体提升约 8pp，Sonnet 4.6 多模态任务提升 18.2
 - 论文：https://arxiv.org/abs/2605.15777
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/saas-bench-gui-agent-eval-unipat.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1733,7 +1737,7 @@ Agent 评测的天然挑战是工具调用的不确定性——真实 API 可能
 
 ## Ch13.010 世界模型评估立场论文 — 南京大学 (2026)
 
-> 📊 Level ⭐⭐ | 9.5KB | `entities/world-model-evaluation-position-paper-nju-2026.md`
+> 📊 Level ⭐⭐ | 9.6KB | `entities/world-model-evaluation-position-paper-nju-2026.md`
 
 # 世界模型评估立场论文 — 南京大学
 
@@ -1819,6 +1823,10 @@ Agent 评测的天然挑战是工具调用的不确定性——真实 API 可能
 - 具身原生 LLM
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/world-model-evaluation-position-paper-nju-2026.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2372,7 +2380,7 @@ EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维
 
 ## Ch13.018 STAROps RUM Intelligent Inspection — Detecting Experience Degradation Early
 
-> 📊 Level ⭐⭐ | 3.5KB | `entities/starops-rum-intelligent-inspection.md`
+> 📊 Level ⭐⭐ | 3.6KB | `entities/starops-rum-intelligent-inspection.md`
 
 # STAROps RUM Intelligent Inspection
 
@@ -2403,6 +2411,10 @@ RUM Inspection uses STAROps' long-running task service to power alert-triggered 
 STAROps RUM Inspection is publicly available through the Alibaba Cloud STAROps console.
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/starops-rum-智能巡检实践把体验退化提前看清楚.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2453,7 +2465,23 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 
 ---
 
-## Ch13.020 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
+## Ch13.020 Observability Platform
+
+> 📊 Level ⭐⭐ | 0.4KB | `entities/observability-platform.md`
+
+# Observability Platform
+
+> 🚧 占位页面 — 内容待补充
+
+工具/产品/团队实体页面，待从相关 raw 文章中提取详细信息。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch13.021 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
 
 > 📊 Level ⭐⭐⭐ | 22.2KB | `entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md`
 
@@ -2669,9 +2697,9 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 
 ---
 
-## Ch13.021 Discretizing Reward Models
+## Ch13.022 Discretizing Reward Models
 
-> 📊 Level ⭐⭐⭐⭐ | 6.0KB | `entities/abs-2606-21795.md`
+> 📊 Level ⭐⭐⭐⭐ | 6.1KB | `entities/abs-2606-21795.md`
 
 # Discretizing Reward Models
 
@@ -2764,5 +2792,9 @@ Vijay Viswanathan 等人的研究论文，揭示了奖励模型（Reward Model�
 - Dario Amodei RL Safety：RL 安全性研究的另一维度
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/abs-2606-21795.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

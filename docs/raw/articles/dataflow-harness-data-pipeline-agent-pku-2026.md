@@ -1,3 +1,12 @@
+---
+title: "dataflow harness data pipeline agent pku 2026"
+type: source
+created: "2026-07-27"
+updated: "2026-07-27"
+sha256: "2a6d06ec08bf1f6558b2fb57c4878e8d67f19cbcb2fe894385a9b4caf266fb90"
+source_url: "https://mp.weixin.qq.com/s/Gah00ChUSnHItOnDMO6jBQ"
+---
+
 # AI 数据最难搞的 Harness 工程，被北大开源了！— DataFlow-Harness
 
 > 原文：[AI 数据最难搞的 Harness 工程，被北大开源了！](https://mp.weixin.qq.com/s/Gah00ChUSnHItOnDMO6jBQ)

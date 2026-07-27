@@ -97,7 +97,7 @@ combinedScore = bm25Weight*(1/(RRF_K+bm25Rank)) + vectorWeight*(1/(RRF_K+vectorR
 ## Related
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/207-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
-- [Claude Code 源码核心机制详解](../ch03/076-claude-code.html)
+- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
 
 ## 相关实体
 

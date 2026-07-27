@@ -2,7 +2,7 @@
 
 ## Ch11.257 Securing Amazon Bedrock AgentCore Runtime with AWS WAF
 
-> 📊 Level ⭐⭐ | 3.9KB | `entities/securing-amazon-bedrock-agentcore-runtime-with-aws-waf.md`
+> 📊 Level ⭐⭐ | 4.1KB | `entities/securing-amazon-bedrock-agentcore-runtime-with-aws-waf.md`
 
 # Securing Amazon Bedrock AgentCore Runtime with AWS WAF
 
@@ -23,6 +23,11 @@ This post shows you two architecture patterns that address this problem. Both us
 The two patterns share a common foundation. A client application sends an authenticated request, either a SigV4 signature or an OAuth Bearer token, to an internet-facing ALB. AWS WAF inspects the request before the ALB forwards it to VPC Endpoint ENIs on HTTPS port 443. AgentCore validates the authentication and routes the request to the runtime container on its internal port 8080. The difference between the patterns is what sits between the ALB and the VPC Endpoint.
 
 High-level architecture, Client → AWS WAF → ALB → VPC En
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

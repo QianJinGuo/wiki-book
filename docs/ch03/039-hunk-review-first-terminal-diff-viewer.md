@@ -2,7 +2,7 @@
 
 ## Ch03.039 Hunk - Review-first Terminal Diff Viewer
 
-> 📊 Level ⭐ | 5.6KB | `entities/hunk-diff-viewer.md`
+> 📊 Level ⭐ | 5.7KB | `entities/hunk-diff-viewer.md`
 
 # Hunk - Review-first Terminal Diff Viewer
 
@@ -112,6 +112,10 @@ Hunk 聚焦于 **review 环节**，与 [Harness Engineering](https://github.com/
 - Human-in-the-loop — Hunk 的核心价值主张
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hunk-diff-viewer.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

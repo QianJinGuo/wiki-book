@@ -2,7 +2,7 @@
 
 ## Ch09.153 Using Local Coding Agents
 
-> 📊 Level ⭐⭐ | 4.2KB | `entities/using-local-coding-agents.md`
+> 📊 Level ⭐⭐ | 4.3KB | `entities/using-local-coding-agents.md`
 
 # Using Local Coding Agents
 
@@ -38,6 +38,11 @@ Either way, local solutions become more and more attractive each day. One aspect
 (Then, if we keep in mind that Anthropic was recently [throttling their flagship model’s performa
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-local-coding-agents.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

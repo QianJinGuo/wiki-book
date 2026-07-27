@@ -428,10 +428,10 @@ Audit-context-building 模式最独特的地方在于它不是告诉 LLM"做什�
 ### 9. 与 `Anthropic 14 Skill Patterns Best Practices` 的对比
  是 Anthropic 官方发布的 14 个生产级 Skill 设计模式，强调**可复用性和生产就绪**。本文的 5 种核心设计模式更偏向**分类框架**，而 Anthropic 的 14 个模式更偏向**具体场景模板**。在实际开发中，建议先用本文的决策树定位模式，再用 Anthropic 的模板细化实现。
 ## 相关实体
-- [Agent Skills Comprehensive Survey](../ch04/407-agent-skills.html)
-- [Ai Skill Skill Creator 源码拆解](../ch04/326-skill-skill.html)
-- [Yidian Tianxia Context Engineering Agentic Ai](../ch04/257-yidian-tianxia-context-engineering-agentic-ai.html)
-- [Rag Chunking Vectorization Rerank Distillation](../ch01/231-rag.html)
+- [Agent Skills Comprehensive Survey](../ch04/397-agent-skills.html)
+- [Ai Skill Skill Creator 源码拆解](../ch04/321-skill-skill.html)
+- [Yidian Tianxia Context Engineering Agentic Ai](../ch04/260-yidian-tianxia-context-engineering-agentic-ai.html)
+- [Rag Chunking Vectorization Rerank Distillation](../ch01/227-rag.html)
 - [Ai Skill Evolution底层逻辑](ch07/010-ai-skill-evolution.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 

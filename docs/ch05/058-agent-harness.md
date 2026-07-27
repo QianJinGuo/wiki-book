@@ -2,7 +2,7 @@
 
 ## Ch05.058 生产级 Agent 全景：架构、Harness 工程、组织与人才
 
-> 📊 Level ⭐⭐ | 9.3KB | `entities/生产级-agent-全景架构harness-工程组织与人才.md`
+> 📊 Level ⭐⭐ | 9.5KB | `entities/生产级-agent-全景架构harness-工程组织与人才.md`
 
 # 生产级 Agent 全景：架构、Harness 工程、组织与人才
 
@@ -110,6 +110,11 @@ v×c=49 | 同作者（叶小钗）系列第二篇，从 WorkBuddy 案例出发�
 - **WorkBuddy 月活 2000 万案例**：以 WorkBuddy 为参照分析生产级 Agent 在真实环境中的表现与挑战
 
 → [第 2 来源原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/拆完-workbuddy我看到了生产级-agent-的完整形态.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

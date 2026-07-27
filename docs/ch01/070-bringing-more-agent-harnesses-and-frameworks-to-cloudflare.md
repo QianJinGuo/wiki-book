@@ -2,7 +2,7 @@
 
 ## Ch01.070 Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue
 
-> 📊 Level ⭐ | 7.2KB | `entities/agents-platform-flue-sdk.md`
+> 📊 Level ⭐ | 7.3KB | `entities/agents-platform-flue-sdk.md`
 
 # Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue
 
@@ -69,6 +69,10 @@ Flue is a multi-cloud framework. On [Node.js](http://node.js/), each agent runs 
 By running each Flue agent inside its own Durable Object, Cloudflare can automatically scale to as many agents as you need, each with their own isolated storage a
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agents-platform-flue-sdk.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

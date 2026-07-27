@@ -2,7 +2,7 @@
 
 ## Ch11.183 Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比
 
-> 📊 Level ⭐⭐ | 6.8KB | `entities/amazon-vpc-regional-nat-gateway-与-az-nat-gateway-全面对比.md`
+> 📊 Level ⭐⭐ | 6.9KB | `entities/amazon-vpc-regional-nat-gateway-与-az-nat-gateway-全面对比.md`
 
 # Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比
 
@@ -87,6 +87,10 @@ Regional NAT 网关与整个 VPC 关联，而不是某个子网。它会根据�
     
 
 更多细节可参考官方文档
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -54,7 +54,7 @@ PROPOSE→APPLY→SHIP→ARCHIVE 四阶段生命周期将传统软件工程中�
 3. **SHIP**：代码评审通过后合并
 4. **ARCHIVE**：完成任务的 spec 归档为知识积累
 
-这种"先规格后实现"的模式避免了 AI 在方向未明确时盲目编写代码，减少了返工成本。与 [Claude Code Loop Engineering](ch09/141-claude-code-loop-engineering.html) 中的"验证-执行"循环互补。
+这种"先规格后实现"的模式避免了 AI 在方向未明确时盲目编写代码，减少了返工成本。与 [Claude Code Loop Engineering](ch09/142-claude-code-loop-engineering.html) 中的"验证-执行"循环互补。
 
 ### 错题本机制：系统化的经验积累
 
@@ -79,7 +79,7 @@ PROPOSE→APPLY→SHIP→ARCHIVE 四阶段生命周期将传统软件工程中�
 
 ### 与传统工具的对比定位
 
-与 [兔兔AGI Loop Engineering](ch09/141-claude-code-loop-engineering.html) 和 [黄佳 8 关卡](../ch03/076-claude-code.html) 互补：
+与 [兔兔AGI Loop Engineering](ch09/142-claude-code-loop-engineering.html) 和 [黄佳 8 关卡](../ch03/077-claude-code.html) 互补：
 - Loop Engineering：方法论层面，讲"怎么做"（循环执行+验证）
 - 8 关卡：企业门禁层面，讲"怎么卡"（质量门禁流程）
 - **claude-apprentice**：工程实现层面，讲"具体用什么文件/工具/规则"
@@ -102,8 +102,8 @@ PROPOSE→APPLY→SHIP→ARCHIVE 四阶段生命周期将传统软件工程中�
 
 ## 相关实体
 
-- [Claude Code Loop Engineering](ch09/141-claude-code-loop-engineering.html) — 兔兔AGI 的 Loop Engineering 方法论
-- [黄佳 8 关卡](../ch03/076-claude-code.html) — 企业级 AI 代码质量门禁框架
+- [Claude Code Loop Engineering](ch09/142-claude-code-loop-engineering.html) — 兔兔AGI 的 Loop Engineering 方法论
+- [黄佳 8 关卡](../ch03/077-claude-code.html) — 企业级 AI 代码质量门禁框架
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 分层 Harness 工程的通用理论
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html) — 上下文分层与工作集管理技术
 - [OpenSpec/Solo Spec 驱动开发](../ch05/050-openspec.html) — 规格先行在 AI 开发中的应用

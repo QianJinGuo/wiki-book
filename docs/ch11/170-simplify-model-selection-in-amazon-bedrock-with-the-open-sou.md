@@ -2,7 +2,7 @@
 
 ## Ch11.170 Simplify model selection in Amazon Bedrock with the open source Model Router
 
-> 📊 Level ⭐⭐ | 7.1KB | `entities/simplify-model-selection-in-amazon-bedrock-with-open-source-model-router.md`
+> 📊 Level ⭐⭐ | 7.2KB | `entities/simplify-model-selection-in-amazon-bedrock-with-open-source-model-router.md`
 
 # Simplify model selection in Amazon Bedrock with the open source Model Router
 
@@ -97,6 +97,10 @@ AWS 选择将 Model Profiler 以 MIT-0 许可证开源，反映了其平台竞�
 - 无服务器数据管线架构
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/simplify-model-selection-in-amazon-bedrock-with-open-source-model-router.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

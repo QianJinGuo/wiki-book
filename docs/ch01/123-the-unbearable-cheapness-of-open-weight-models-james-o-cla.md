@@ -2,7 +2,7 @@
 
 ## Ch01.123 The Unbearable Cheapness of Open Weight Models – James O'Claire
 
-> 📊 Level ⭐ | 4.7KB | `entities/25-the-unbearable-cheapness-of-open-weight-models.md`
+> 📊 Level ⭐ | 4.8KB | `entities/25-the-unbearable-cheapness-of-open-weight-models.md`
 
 # The Unbearable Cheapness of Open Weight Models – James O'Claire
 
@@ -57,6 +57,10 @@ Curious to dig more into Claude / ChatGPT tech stacks? Check out the tools they 
 You can navigate to SDKs to view even more detailed breakdowns of specific parts as well as unmapped SDK paths.
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/25-the-unbearable-cheapness-of-open-weight-models.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

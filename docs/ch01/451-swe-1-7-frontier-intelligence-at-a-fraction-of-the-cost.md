@@ -84,13 +84,13 @@ SWE-1.7 在长周期任务上的能力来自 **自压缩训练**。当 Agent 接
 ## 相关实体
 
 - **Kimi K2.7** — SWE-1.7 的基座模型（无独立实体页面）
-- [Devin](../ch05/110-harness.html) — Cognition 的 AI 软件工程师平台
+- [Devin](../ch05/018-harness.html) — Cognition 的 AI 软件工程师平台
 - **SWE-1.6 Preview** — 前代版本（无独立实体页面）
 - [FrontierCode](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md) — Cognition 的代码评测基准
 - [RLHF](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md) — RL 训练的基础框架
 - **Entropy Collapse** — RL 训练中的熵坍塌现象（无独立概念页面）
 - [Speculative Decoding](https://github.com/QianJinGuo/wiki/blob/main/concepts/speculative-decoding.md) — 推理加速技术
-- [DeepSeek R1](ch01/389-deepseek.html) — 同等思路的推理 RL 训练
+- [DeepSeek R1](ch01/1229-deepseek.html) — 同等思路的推理 RL 训练
 - **Kevin-32B** — Cognition 前代模型，首次探索自压缩（无独立实体页面）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/swe-1-7.md)

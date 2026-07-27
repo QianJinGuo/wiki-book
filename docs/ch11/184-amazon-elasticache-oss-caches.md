@@ -2,7 +2,7 @@
 
 ## Ch11.184 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
 
-> 📊 Level ⭐⭐ | 6.8KB | `entities/构建-amazon-elasticache-oss-caches-慢查询监控方案.md`
+> 📊 Level ⭐⭐ | 6.9KB | `entities/构建-amazon-elasticache-oss-caches-慢查询监控方案.md`
 
 # 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
 
@@ -97,6 +97,10 @@ ElastiCache 在 [Amazon CloudWatch](<https://aws.amazon.com/cn/cloudwatch/>) 中
 ### 3.2 数据流与指标计算逻辑
 
 理解数据如何从
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -43,4 +43,8 @@ This creates unique validation challenges that our traditional canary analysis t
 **Emergent Issues** : While each upstream data source has independent validation, problems often only manifest in the final transform
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 

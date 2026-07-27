@@ -2,7 +2,7 @@
 
 ## Ch09.149 百度 AI Coding 质量关卡实践
 
-> 📊 Level ⭐⭐ | 4.4KB | `entities/baidu-ai-coding-quality-gates.md`
+> 📊 Level ⭐⭐ | 4.6KB | `entities/baidu-ai-coding-quality-gates.md`
 
 # 百度 AI Coding 质量关卡实践
 
@@ -78,6 +78,11 @@ Agent 只被告知现象（HMR 不更新 + 构建慢），独立完成完整诊�
 - QA 高频问题 → 反向写入 Rules 和 Skill
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-agent-engineering-quality-gates.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

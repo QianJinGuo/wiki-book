@@ -450,7 +450,7 @@ CrewAI + NemoClaw 的集成支持"数据飞轮"模式——Agent 系统通过观
 
 ## Ch08.005 ICML 2026 HOI-Edit & SCPE — 图像编辑的认知评测基准与智能体自纠错框架
 
-> 📊 Level ⭐⭐ | 7.9KB | `entities/icml-2026-hoi-edit-scpe-self-correcting-pku.md`
+> 📊 Level ⭐⭐ | 8.0KB | `entities/icml-2026-hoi-edit-scpe-self-correcting-pku.md`
 
 # ICML 2026 HOI-Edit & SCPE — 图像编辑的认知评测基准与智能体自纠错框架
 
@@ -518,6 +518,10 @@ HOI-Edit + SCPE 的组合为视觉生成模型提供了一种通用的"评测-�
 5. **评估指标优先于模型优化**：在投入模型优化之前，先建立可靠的评测指标。HOI-Eval 表明，更好的指标（成对区域 grounding）能够揭示全局指标（CLIPScore）无法发现的问题。对于复杂视觉任务，建议设计任务特定的细粒度评测流程，而非依赖通用相似度指标。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/icml-2026-hoi-edit-scpe-self-correcting-pku.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -719,7 +723,7 @@ Python 侧的开发体验设计良好：`pip install agent-framework` 后，用 
 
 ## Ch08.009 高价率运营 AI 工作台：约定驱动与 AI 编排的评测优化实践
 
-> 📊 Level ⭐⭐ | 5.1KB | `entities/taobao-high-price-rate-ai-workbench-eval-optimization.md`
+> 📊 Level ⭐⭐ | 5.2KB | `entities/taobao-high-price-rate-ai-workbench-eval-optimization.md`
 
 # 高价率运营 AI 工作台：约定驱动与 AI 编排的评测优化实践
 
@@ -785,6 +789,10 @@ LLM 给修改建议约 80% 不合格。根因：LLM 区分不了四种"低分"�
 - **评估 prompt 6 段式结构**：frontmatter + 维度展开 + 占位符 + schema + 计算公式 + 接入说明
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/taobao-high-price-rate-ai-workbench-eval-optimization.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -3602,7 +3610,7 @@ CoAgent 的工程价值在于其代价-收益比是可接受的：冲突处理�
 
 ## Ch08.028 Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
 
-> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/investing-in-multi-agent-ai-safety-research-deepmind-2026-06.md`
+> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/investing-in-multi-agent-ai-safety-research-deepmind-2026-06.md`
 
 # Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
 
@@ -3660,6 +3668,10 @@ Google DeepMind 联合 **Schmidt Sciences、Cooperative AI Foundation、ARIA**�
 ## 一句话定位
 
 **"单模型安全 → 种群级安全"**的研究范式转变 + 首个主要 AI 实验室联合公益机构的 $10M 多 Agent 安全研究资助计划
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -3721,7 +3733,7 @@ Crayotter 引入带有时间戳水印的技术，将时间坐标直接渲染在�
 
 ## Ch08.030 TVIR：面向图文交错报告生成的统一基准与智能体框架 — 南大 × 阿里
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/tvir-text-visual-interleaved-report-generation-nju-alibaba.md`
+> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/tvir-text-visual-interleaved-report-generation-nju-alibaba.md`
 
 # TVIR：面向图文交错报告生成的统一基准与智能体框架 — 南大 × 阿里
 
@@ -3773,6 +3785,10 @@ TVIR 为未来可信的多模态深度研究智能体奠定了基础，揭示了
 
 > ---
 > [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/南大-阿里提出tvir深度研究agent迈入图文交错时代.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -3880,7 +3896,7 @@ Cost of Consensus 研究揭示了多 Agent 系统中一个关键但常被忽视�
 
 ## Ch08.033 UnityMAS-O
 
-> 📊 Level ⭐⭐⭐ | 2.9KB | `entities/unitymas-o-multi-agent-rl-optimization-framework-2026.md`
+> 📊 Level ⭐⭐⭐ | 3.0KB | `entities/unitymas-o-multi-agent-rl-optimization-framework-2026.md`
 
 # UnityMAS-O
 
@@ -3895,6 +3911,10 @@ UnityMAS-O 与传统的提示词工程方法有本质区别。传统方法依赖
 该项目已开源论文和代码（论文：arxiv.org/pdf/2605.26646，代码：github.com/chenyiqun/UnityMAS-O），为多智能体系统从"手工设计 agent"迈向"将整个 MAS 作为系统持续优化"提供了可复用的基础底座。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/unitymas-o-multi-agent-rl-optimization-framework-2026.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Ch01.1204 腾讯混元 Hy3 正式版：Agent 能力跃升与多产品落地
 
-> 📊 Level ⭐⭐ | 2.5KB | `entities/tencent-hunyuan-hy3-full-release.md`
+> 📊 Level ⭐⭐ | 2.6KB | `entities/tencent-hunyuan-hy3-full-release.md`
 
 # 腾讯混元 Hy3 正式版：Agent 能力跃升与多产品落地
 
@@ -50,6 +50,11 @@ MoE，总参 295B，激活 21B，256K 上下文。快慢思考融合模型。
 ## 与已有 wiki 实体关系
 
 - 补充 [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/117-hy3-preview.html)：该实体覆盖 4 月 Hy3 preview 发布，本文覆盖 7 月 Hy3 正式版及多产品落地数据。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

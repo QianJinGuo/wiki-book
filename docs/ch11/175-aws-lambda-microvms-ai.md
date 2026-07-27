@@ -2,7 +2,7 @@
 
 ## Ch11.175 AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境
 
-> 📊 Level ⭐⭐ | 7.1KB | `entities/aws-正式发布-lambda-microvms面向-ai-时代的无服务器安全代码执行环境.md`
+> 📊 Level ⭐⭐ | 7.2KB | `entities/aws-正式发布-lambda-microvms面向-ai-时代的无服务器安全代码执行环境.md`
 
 # AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境
 
@@ -143,6 +143,10 @@ AI 编程助手的代码沙箱 | AI 生成的代码需要隔离执行，用户�
 | Lambda MicroVMs | Bedrock AgentCore  
 ---|---|---  
 本质
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -68,12 +68,12 @@ Built 采用"同一管道，不同模型"的策略：对于标准文档（如发
 
 ## 相关实体
 
-- [Amazon Bedrock](../ch11/162-amazon-bedrock.html) — AWS 的基础模型服务和文档处理能力
-- [AWS IDP Accelerator](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-idp-accelerator.md) — AWS 智能文档处理加速器
-- [文档处理 Agent](../ch03/035-agent.html) — AI 驱动的文档处理 Agent
-- [金融行业 Agentic AI](../ch04/592-agentic-ai.html) — AI Agent 在金融领域的应用
+- [Amazon Bedrock](../ch11/291-amazon-bedrock.html) — AWS 的基础模型服务和文档处理能力
+- [AWS IDP Accelerator](../ch11/293-aws-idp-accelerator.html) — AWS 智能文档处理加速器
+- [文档处理 Agent](../ch04/688-document-processing-agent.html) — AI 驱动的文档处理 Agent
+- [金融行业 Agentic AI](../ch04/063-agentic-ai.html) — AI Agent 在金融领域的应用
 - [Human-in-the-Loop AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/human-in-the-loop-ai.md) — 人机协作的 AI 系统设计
-- [文档 RAG](ch01/231-rag.html) — RAG 在文档处理中的应用
+- [文档 RAG](ch01/227-rag.html) — RAG 在文档处理中的应用
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/built-technologies-ai-document-intelligence-bedrock-2026.md)
 

@@ -2,7 +2,7 @@
 
 ## Ch05.096 Cloudflare Copy Fail Linux 内核漏洞应急响应
 
-> 📊 Level ⭐⭐ | 4.0KB | `entities/cloudflare-copy-fail-linux-kernel-vulnerability-mitigation.md`
+> 📊 Level ⭐⭐ | 4.1KB | `entities/cloudflare-copy-fail-linux-kernel-vulnerability-mitigation.md`
 
 # Cloudflare Copy Fail Linux 内核漏洞应急响应
 
@@ -81,6 +81,10 @@ CVE-2026-31431（代号 "Copy Fail"）是一个 Linux 内核本地提权漏洞�
 - Linux 内核安全
 - eBPF 安全应用
 - BPF-LSM 策略引擎
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

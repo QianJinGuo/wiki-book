@@ -2,7 +2,7 @@
 
 ## Ch09.005 Hardwood 1.0: A Fast, Lightweight Apache Parquet Reader for the JVM
 
-> 📊 Level ⭐ | 4.3KB | `entities/hardwood-1-0-a-fast-lightweight-apache-parquet-reader-for-th.md`
+> 📊 Level ⭐ | 4.4KB | `entities/hardwood-1-0-a-fast-lightweight-apache-parquet-reader-for-th.md`
 
 # Hardwood 1.0: A Fast, Lightweight Apache Parquet Reader for the JVM
 
@@ -32,6 +32,10 @@ Working with the [Apache Parquet](https://parquet.apache.org/) columnar file for
 The 1.0 release implements all the key capabilities you’d expect from a Parquet reader: coverage of all the physical and logical Parquet column types, including VARIANT and a first cut of handling geo-spatial columns,
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hardwood-1-0-a-fast-lightweight-apache-parquet-reader-for-th.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

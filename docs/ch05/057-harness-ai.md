@@ -2,7 +2,7 @@
 
 ## Ch05.057 刚刚，翁荔博客又上新：通过Harness工程实现AI自我提升
 
-> 📊 Level ⭐⭐ | 9.4KB | `entities/刚刚翁荔博客又上新通过harness工程实现ai自我提升.md`
+> 📊 Level ⭐⭐ | 9.5KB | `entities/刚刚翁荔博客又上新通过harness工程实现ai自我提升.md`
 
 # 刚刚，翁荔博客又上新：通过Harness工程实现AI自我提升
 
@@ -83,6 +83,11 @@ Weng 将"弱且模糊的评估者"列为七大挑战之首，这一判断切中�
 5. **关注评估者设计的安全性**：自我提升系统会优化任何交给它的信号，因此评估者的设计需要特别谨慎。宜采用 held-out 测试、"人+自动"混合验证、以及定期审计机制来防范奖励作弊。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/刚刚翁荔博客又上新通过harness工程实现ai自我提升.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Ch11.206 Cilium Tetragon — Kubernetes Runtime Security with eBPF
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/cilium-tetragon-kubernetes-runtime-security-ebpf.md`
+> 📊 Level ⭐⭐ | 6.1KB | `entities/cilium-tetragon-kubernetes-runtime-security-ebpf.md`
 
 # Cilium Tetragon — Kubernetes Runtime Security with eBPF
 
@@ -83,6 +83,10 @@ Hubble Relay / Grafana / Falco Sidecar
 ## 相关实体
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

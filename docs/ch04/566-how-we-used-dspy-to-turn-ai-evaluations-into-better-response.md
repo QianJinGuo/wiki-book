@@ -2,7 +2,7 @@
 
 ## Ch04.566 How we used DSPy to turn AI evaluations into better responses in Dash chat
 
-> 📊 Level ⭐⭐ | 4.5KB | `entities/how-we-used-dspy-to-turn-ai-evaluations-into-better-response.md`
+> 📊 Level ⭐⭐ | 4.7KB | `entities/how-we-used-dspy-to-turn-ai-evaluations-into-better-response.md`
 
 # How we used DSPy to turn AI evaluations into better responses in Dash chat
 
@@ -26,6 +26,11 @@ Agent evaluation is significantly more complex than traditional search relevance
 This makes evaluation much broader. A good agent response might depend on multiple knowledge sources, including documents, prior messages, meeting notes, or tool calls such as search and read documents. The quality of the final answer depends not only on what information was found, but also on how the
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-we-used-dspy-to-turn-ai-evaluations-into-better-response.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 
