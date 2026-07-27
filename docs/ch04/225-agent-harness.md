@@ -54,27 +54,27 @@ L6 多 Agent 层最难的不是任务分配，而是冲突解决。建议在初�
 
 ## 参见
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-architecture-design-production-guide.md)
-- [Harness Engineering](../ch05/118-harness-engineering.html)（Harness 工程方法论）
+- [Harness Engineering](../ch05/112-harness-engineering.html)（Harness 工程方法论）
 
 ## 相关实体
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/110-harness.html)
 - [Agent Harness 组件解析](../ch05/058-agent-harness.html)
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/118-harness-engineering.html)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/532-claude-managed-agents.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
 - [Agent Harness 12 组件与 7 个关键决策](../ch05/058-agent-harness.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/110-harness.html)
 - [你不知道的 Agent 原理架构与工程实践](ch04/351-agent-principle-architecture-engineering-practice.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Thin Harness Fat Skills](../ch05/082-thin-harness-fat-skills-ai.html)
 - [Design Patterns for AI Agents 2026](ch04/096-design-patterns-for-ai-agents-2026-4-5-reflection.html)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/018-harness.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/118-harness-engineering.html)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/118-harness-engineering.html)
+- [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/110-harness.html)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/091-ai.html)
 - [AI Native 时代 —— 研发组织何去何从](../ch05/019-ai-native.html)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/018-harness.html)
+- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/110-harness.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [Agent Memory 架构解析](ch04/101-agent-memory.html)
 - [From Agent Protocol to Harness Skill](ch04/419-from-agent-protocol-to-harness-skill.html)
@@ -84,13 +84,13 @@ L6 多 Agent 层最难的不是任务分配，而是冲突解决。建议在初�
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/231-openclaw.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/232-openclaw.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Claude Code 设计原则与对照分析](../ch03/076-claude-code.html)
 - [Claude Code 源码核心机制详解](../ch03/076-claude-code.html)
 - [Agent Memory 系统性框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/018-harness.html)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/110-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-architecture-deep-dive-aksahy.md)
 

@@ -132,7 +132,7 @@ Laura Luebbert 在博客结尾提出的原则值得所有科学 Agent 建设者�
 ## 相关实体
 
 - [Anthropic Mcp Revisited Tool Search Code Orchestration](../ch07/016-anthropic-mcp.html) — Anthropic 的工具调用架构
-- [Harness Engineering](../ch05/118-harness-engineering.html) — Harness 工程与 Agent 可靠性的关系
+- [Harness Engineering](../ch05/112-harness-engineering.html) — Harness 工程与 Agent 可靠性的关系
 - [Agent Harness Context Management Working Set](../ch05/058-agent-harness.html) — 上下文管理在 Agent 执行中的作用
 - [Kimi Work Beta Foundation Model Company Advantage](../ch01/403-kimi.html) — 模型公司做 Agent 的路线对比
 - [Claude Code First Year Retrospective Boris Cat 2026](../ch03/076-claude-code.html) — Claude Code 验证了「工具层可靠性」的重要性

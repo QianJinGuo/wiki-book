@@ -94,7 +94,7 @@ coze-bridge 解决了一个根本矛盾：云端 Agent 擅长对话推理但无�
 - [Coze 3 Multimagent Team Orchestration Wangheige](../ch03/035-agent.html)
 - [Oz Multi Harness Cloud Agent Orchestration](ch04/508-agent-orchestration.html)
 - [Agent Orchestration](ch04/508-agent-orchestration.html)
-- [Openai Symphony Codex Orchestration Linear Control Plane](../ch01/396-openai.html)
+- [Openai Symphony Codex Orchestration Linear Control Plane](../ch01/762-openai.html)
 - [Aws Agent Orchestration Workshop](ch04/508-agent-orchestration.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)

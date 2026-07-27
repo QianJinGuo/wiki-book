@@ -59,13 +59,13 @@ Altman 的一口价同时作用于四个利益相关方：
 
 4. **公众利益的代表性缺失**：在 AI 治理谈判中，公众作为最直接的受影响方往往缺席。技术从业者应关注并参与 AI 治理的公共讨论，确保"分蛋糕"时公众利益不被边缘化
 
-5. **AI 行业正从"技术竞赛"进入"制度竞赛"**：随着 OpenAI、Anthropic 等陆续交表 IPO，AI 行业的下一个竞争维度将从模型能力扩展到治理框架、政府关系和公众信任。这需要 [Agent 从业者](../ch05/018-harness.html) 具备更广泛的治理和政策视野
+5. **AI 行业正从"技术竞赛"进入"制度竞赛"**：随着 OpenAI、Anthropic 等陆续交表 IPO，AI 行业的下一个竞争维度将从模型能力扩展到治理框架、政府关系和公众信任。这需要 [Agent 从业者](../ch05/110-harness.html) 具备更广泛的治理和政策视野
 
 ## 相关实体
 
 - [Anthropic Claude Code Trojan 安全争议](ch01/291-anthropic-claude-code.html)
 - [禁止开源 AI 将是错误](ch01/028-banning-open-source-ai-would-be-a-mistake-interconnects.html)
-- [AI 伦理学家与对齐研究](ch01/969-anthropic.html)
+- [AI 伦理学家与对齐研究](ch01/971-anthropic.html)
 - [Anthropic Agent 平台演进](../ch04/579-anthropic-agent-platform.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/硅谷的尽头是编制-openai要给白宫送5的股权.md)

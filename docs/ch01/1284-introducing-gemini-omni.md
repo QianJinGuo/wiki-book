@@ -54,8 +54,8 @@ Avatar 功能本质上复现了 Deepfake 的核心能力，而 Deepfake 监管�
 ---
 ## 相关实体
 - [Gemini Embedding 2 Multimodal Unified Vector Hyman](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-embedding-2-multimodal-unified-vector-hyman.md)
-- [Google Io 2026 Agentic Gemini Era](../ch04/631-agentic.html)
-- [Gemini 3 5 Frontier Intelligence](ch01/483-gemini-3-5-frontier-intelligence-with-action.html)
+- [Google Io 2026 Agentic Gemini Era](../ch04/238-agentic.html)
+- [Gemini 3 5 Frontier Intelligence](ch01/484-gemini-3-5-frontier-intelligence-with-action.html)
 - [Promptqueue Async Task Queue Opengorilla Integration](https://github.com/QianJinGuo/wiki/blob/main/entities/promptqueue-async-task-queue-opengorilla-integration.md)
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](ch01/295-agi.html)
 

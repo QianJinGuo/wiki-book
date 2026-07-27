@@ -49,7 +49,7 @@ SingGuard-NSFA提供0.8B、2B、4B、9B四个尺寸，核心设计理念是将�
 
 ## 相关实体
 
-- [Agent安全三步序列](../ch05/018-harness.html)
+- [Agent安全三步序列](../ch05/110-harness.html)
 - [AI Agent安全综述](ch04/298-ai-agent.html)
 - [AI工具投毒漏洞](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Claude Code Trojan](../ch01/291-anthropic-claude-code.html)

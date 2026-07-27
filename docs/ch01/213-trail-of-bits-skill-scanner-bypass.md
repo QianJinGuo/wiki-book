@@ -71,7 +71,7 @@ Trail of Bits 报告称攻击使用的不是高级技术，而是"标准技巧 +
 - trail-of-bits 实体 = 这些"技能市场"的安全现状
 - 共存：skillclaw 解决技能分发效率，trail-of-bits 揭示了效率带来的安全代价
 
-### 与 [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/018-harness.html) 的关系
+### 与 [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/110-harness.html) 的关系
 
 - agent-security = 通用 agent 安全三步（governance / identity / 隔离）
 - trail-of-bits 实体 = 实证某类安全工具（scanner）的实际失效模式
@@ -175,7 +175,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 
 1. **将 skill 视为不受信的外部代码**：类似浏览器对第三方脚本的隔离策略，agent 系统应对每个 skill 应用最小权限原则，限制其对文件系统、网络、凭据的访问范围。
 
-2. **建立 skill 的 provenance tracking**：记录每个 skill 的来源、版本、安装时间，并在 agent 运行时可查询。[Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/018-harness.html) 中的 identity 和 governance 框架可用于实现这一点。
+2. **建立 skill 的 provenance tracking**：记录每个 skill 的来源、版本、安装时间，并在 agent 运行时可查询。[Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/110-harness.html) 中的 identity 和 governance 框架可用于实现这一点。
 
 3. **对高风险操作强制人工确认**：涉及网络配置、凭据写入、文件修改的 skill 操作应触发人工确认，而非自动执行。
 
@@ -186,7 +186,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 **相关实体**：
 - [Skill Design Patterns](../ch04/272-skill.html) — skill 的设计维度（与攻击维度互补）
 - [Skillsieve Agent Skill Security](../ch04/450-skillsieve-agent-skill.html) — 企业级 skill 安全实践
-- [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/018-harness.html) — agent 安全的通用框架
+- [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/110-harness.html) — agent 安全的通用框架
 - [Prompt Injection Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-injection-defense.md) — prompt injection 的防御思路
 - [Agent Security Attack Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-attack-defense.md) — agent 安全攻击与防御全景
 

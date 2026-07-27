@@ -189,7 +189,7 @@ ANOLISA v0.3 架构
 - **ANOLISA = 4 层安全防护（提示词/代码/供应链/系统基线）** + 1 层"快照回滚"（可恢复）
 - 共同点：都强调"infra 决定 agent 自主空间"+"给 infra 补能力"
 
-### vs [wow-harness v3](../ch05/018-harness.html)
+### vs [wow-harness v3](../ch05/110-harness.html)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - ANOLISA = **操作系统层 Agentic OS**（叠加在传统 OS 上的转换层）
 - 共同点：都强调"治理"是 AI Agent 落地的关键
@@ -204,7 +204,7 @@ ANOLISA v0.3 架构
 - **ANOLISA = 阿里系统级安全 / Token / 快照基础设施**
 - 共同点：都强调"基础设施决定 AI 自主空间"
 
-### vs [Kimi Work](../ch01/516-codex.html)
+### vs [Kimi Work](../ch01/517-codex.html)
 - Kimi Work = Harness 搬到本地桌面（**单用户本地**）
 - **ANOLISA = 阿里云 ECS 镜像 + Agentic OS**（**云端系统级**）
 - 共同点：都强调"为 AI 套上家 / 套上 OS"
@@ -256,7 +256,7 @@ ANOLISA v0.3 架构
 
 - **通过 OpenClaw 的 Hook 机制扩展 ANOLISA 的安全策略**。ANOLISA 的 Copilot Shell（cosh）提供了完善的 Hook 功能，支持会话导出和自定义状态栏。可以利用 Hook 在每次 Agent 执行敏感操作前自动插入人工确认步骤，或将安全事件导出到 SIEM 系统，实现 ANOLISA 与企业现有安全基础设施的集成 
 
-- **关注 ANOLISA 与 [OpenClaw](../ch11/231-openclaw.html) 的集成深度**。ANOLISA 的入口是 OpenClaw，而 OpenClaw 本身支持多租户和多种部署形态（ECS/Fargate/Graviton）。在评估企业级部署时，需要考虑 ANOLISA 的多 Agent 保护能力是否满足多租户场景下的隔离需求，以及 [Hermes Agent](../ch03/093-hermes-agent.html) 等其他 Agent 系统是否能与 ANOLISA 的安全框架无缝协同 
+- **关注 ANOLISA 与 [OpenClaw](../ch11/232-openclaw.html) 的集成深度**。ANOLISA 的入口是 OpenClaw，而 OpenClaw 本身支持多租户和多种部署形态（ECS/Fargate/Graviton）。在评估企业级部署时，需要考虑 ANOLISA 的多 Agent 保护能力是否满足多租户场景下的隔离需求，以及 [Hermes Agent](../ch03/093-hermes-agent.html) 等其他 Agent 系统是否能与 ANOLISA 的安全框架无缝协同 
 
 ## 11. 局限 / 待验证
 
@@ -268,10 +268,10 @@ ANOLISA v0.3 架构
 
 ## 相关对照
 - [晓斌 Agent-Oriented Infra](../ch03/035-agent.html) —— 哲学框架
-- [wow-harness v3](../ch05/018-harness.html) —— 协议层治理
+- [wow-harness v3](../ch05/110-harness.html) —— 协议层治理
 - [MAC Skills + Hooks](../ch05/027-mac-multi-agent-coding-skills-hooks-harness-0-20.html) —— 工程师个人框架
 - [高德 AI-Native 生产线](../ch05/019-ai-native.html) —— 企业级 R&D
-- [Kimi Work](../ch01/516-codex.html) —— 本地 Agent
+- [Kimi Work](../ch01/517-codex.html) —— 本地 Agent
 - [Agent Harness 架构](../ch05/058-agent-harness.html) —— 7 层模型
 - [Microsoft Build 2026](../ch03/035-agent.html) —— 全栈 AI
 - [PilotDeck](../ch03/035-agent.html) —— 多项目隔离

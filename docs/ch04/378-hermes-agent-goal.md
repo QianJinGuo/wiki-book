@@ -72,7 +72,7 @@ subgoals 让用户在执行过程中补充约束，不必推翻原目标重来�
 - **Ralph Loop**：长程 Agent 执行模式理念，外部状态+显式停止条件替代聊天记忆
 - **Dumb Zone**：上下文堆积导致 Agent 质量下滑的区域
 - **Judge**：辅助模型负责窄判定（是否继续），可独立配置廉价 provider
-- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/118-harness-engineering.html)
+- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/112-harness-engineering.html)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](../ch01/364-codeindex.html)
 - [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/407-agent-skills.html)

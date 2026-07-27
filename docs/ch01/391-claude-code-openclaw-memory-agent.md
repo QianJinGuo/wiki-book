@@ -12,11 +12,11 @@
 * • **Managed** ： ` /etc/claude-code/CLAUDE.md ` ，系统管理员写的全局策略，所有用户都得遵守，企业场景下用来统一规范
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](ch01/427-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](ch01/428-claude-code-harness-deep-understanding.html)
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/076-claude-code.html)
 - [Claude Code Openclaw Memory Comparison](../ch03/076-claude-code.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/291-anthropic-claude-code.html)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/118-harness-engineering.html)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/112-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
 

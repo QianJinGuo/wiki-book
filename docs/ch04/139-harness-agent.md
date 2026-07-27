@@ -112,7 +112,7 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 
 ## 相关实体
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/076-claude-code.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1232-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/429-claude.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/035-agent.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
@@ -128,15 +128,15 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/407-agent-skills.html)
 - [Claude Code 源码核心机制详解](../ch03/076-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/076-claude-code.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/110-harness.html)
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
 
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/118-harness-engineering.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/035-agent.html)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/018-harness.html)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/018-harness.html)
+- [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/110-harness.html)
+- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/110-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/035-agent.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/118-harness-engineering.html)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)
 - [为什么多数 Agent POC 无法上生产](https://github.com/QianJinGuo/wiki/blob/main/queries/why-agent-poc-fails-production.md) — POC 到生产的六大系统性鸿沟

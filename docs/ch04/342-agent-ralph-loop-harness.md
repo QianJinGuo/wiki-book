@@ -14,10 +14,10 @@
 
 ## 相关实体
 - [Agent Harness 12 Components 7 Decisions](../ch05/058-agent-harness.html)
-- [Long Running Agent Ralph Loop Handover Harness Ruofei](../ch05/018-harness.html)
+- [Long Running Agent Ralph Loop Handover Harness Ruofei](../ch05/110-harness.html)
 - [Agent Harness Architecture Deep Dive Aksahy](../ch05/058-agent-harness.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/018-harness.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/110-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/长周期-agent-详解-从-ralph-loop-到可接管-harness.md)
 

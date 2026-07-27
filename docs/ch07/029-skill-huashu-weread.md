@@ -83,7 +83,7 @@ huashu-weread证明了"在官方能力上做增强层"这一模式的可行性�
 - [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](../ch03/075-obsidian-claude-code.html)
 - [Ai Era What To Read World Book Day](../ch05/091-ai.html)
 - [Imclaw通过微信飞书操控Claude Code Coodex Gemini Clipi Agent蜂群](../ch03/076-claude-code.html)
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/106-ai-coding.html)
+- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/107-ai-coding.html)
 - [Skill Craft](ch07/051-skill-craft-claude-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/weread-official-skill-huashu-critical-gap.md)

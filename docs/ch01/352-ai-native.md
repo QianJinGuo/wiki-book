@@ -138,7 +138,7 @@ OpenAI 2026年初提出：工程团队首要职责不再是写代码，而是**�
 - [Agent Memory Architecture Ruofei](../ch04/101-agent-memory.html)
 - [Gepa Optimize Anything](ch01/302-gepa-optimize-anything.html)
 - [Tmall Marketing Ai Workflow Best Practices](../ch05/091-ai.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05/118-harness-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05/112-harness-engineering.html)
 
 ---
 

@@ -3,7 +3,7 @@ FROM python:3.12-slim AS builder
 
 WORKDIR /build
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN unset http_proxy HTTP_PROXY https_proxy HTTPS_PROXY && pip install --no-cache-dir -r requirements.txt
 
 COPY mkdocs.yml .
 COPY overrides/ overrides/

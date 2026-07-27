@@ -13,8 +13,8 @@
 - [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
 - [Canvas Breach Disrupts Schools Colleges Nationwide](../ch12/033-canvas-breach-disrupts-schools-colleges-nationwide.html)
 - [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/070-skills.html)
-- [Aws Bedrock Agentcore Identity Security](../ch11/264-aws-bedrock-agentcore.html)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/923-github.html)
+- [Aws Bedrock Agentcore Identity Security](../ch11/265-aws-bedrock-agentcore.html)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/812-github.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tsinghua-agent-security-fangcun.md)
 

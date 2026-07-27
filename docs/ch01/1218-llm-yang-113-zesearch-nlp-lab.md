@@ -177,8 +177,8 @@
   - [LangSmith Engine — 基于链路追踪的自改进 Agent](../ch03/035-agent.html)（工业级 trace-based 自改进）
   - [Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)（Winty 视角：基于 SKILL.md 自我迭代）
 - **同领域框架**：
-  - [Agent Harness Engineering 综述](../ch05/118-harness-engineering.html)（harness 视角）
-  - [Harness 演化论文集](../ch05/018-harness.html)（harness 论文集合）
+  - [Agent Harness Engineering 综述](../ch05/112-harness-engineering.html)（harness 视角）
+  - [Harness 演化论文集](../ch05/110-harness.html)（harness 论文集合）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-self-improvement-system-survey-zesearch-nlp.md)
 

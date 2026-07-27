@@ -108,7 +108,7 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 - [快手首个打工人Agent](../ch03/035-agent.html)
 - [from](../ch01/259-from-system-of-record-to-system-of-intelligence.html)
 - [From System Of Record To System Of Intelligence](../ch01/259-from-system-of-record-to-system-of-intelligence.html)
-- [meet customers where they are: agentforce contact center now](ch04/604-meet-customers-where-they-are-agentforce-contact-center-now.html)
+- [meet customers where they are: agentforce contact center now](ch04/605-meet-customers-where-they-are-agentforce-contact-center-now.html)
 
 ---
 

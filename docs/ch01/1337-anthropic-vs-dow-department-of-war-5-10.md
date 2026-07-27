@@ -136,9 +136,9 @@ Lambert 是**模型能力 + 开源生态**专家（Interconnects 主理人），
 
 - [Interconnects: 未来开源模型](ch01/208-what-comes-next-with-open-models.html) — 同作者的开源能力追踪
 - [2028 全球 AI 领导力两情景](ch01/004-2028-two-scenarios-for-global-ai-leadership.html) — 远景地缘战略
-- [Cohere North Mini](../ch04/631-agentic.html) — 涉及主权 AI
-- [Claude Fable 5 与 AI 安全寓言](ch01/896-claude-fable-5-and-new-ai-safety-fables.html) — Anthropic 政策方向
-- [2026 年中开源模型下注](ch01/486-my-bets-on-open-models-mid-2026.html) — Lambert 同期评估
+- [Cohere North Mini](../ch04/238-agentic.html) — 涉及主权 AI
+- [Claude Fable 5 与 AI 安全寓言](ch01/898-claude-fable-5-and-new-ai-safety-fables.html) — Anthropic 政策方向
+- [2026 年中开源模型下注](ch01/487-my-bets-on-open-models-mid-2026.html) — Lambert 同期评估
 
 ## 原始引用
 

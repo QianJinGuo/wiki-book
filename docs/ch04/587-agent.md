@@ -40,12 +40,12 @@ const messages: MessageParam[] = [{ role: "user", content: userInput }];while�
 
 ### 关联实体
 
-- [Harness 之后 状态边界与失败闭环 若飞](../ch05/018-harness.html)
+- [Harness 之后 状态边界与失败闭环 若飞](../ch05/110-harness.html)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/298-ai-agent.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)
 - [Headroom Context Compression Agent Vibecoder](../ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/631-agentic.html)
-- [Ai Agent Harness Construction Akshay Baoyu](../ch01/965-ai-agent-harness.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/238-agentic.html)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch01/967-ai-agent-harness.html)
 
 ## 实践启示
 

@@ -141,23 +141,23 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 
 ## Related
 - [原始文章存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentcore-managed-harness.md)
-- [OpenClaw多租户迁移: Phase 2&3部署](../ch11/231-openclaw.html)
-- [AgentCore Runtime部署Apache Doris MCP Server](../ch11/170-apache-doris-mcp-server-quick-suite-ai.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/264-aws-bedrock-agentcore.html)
-- [OpenClaw多租户迁移: 背景与架构概览](../ch11/231-openclaw.html)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/231-openclaw.html)
+- [OpenClaw多租户迁移: Phase 2&3部署](../ch11/232-openclaw.html)
+- [AgentCore Runtime部署Apache Doris MCP Server](../ch11/171-apache-doris-mcp-server-quick-suite-ai.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/265-aws-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: 背景与架构概览](../ch11/232-openclaw.html)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/232-openclaw.html)
 - [柚漫剧 AI 全流程提效拆解](../ch05/091-ai.html)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/264-aws-bedrock-agentcore.html)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/265-aws-bedrock-agentcore.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/162-amazon-bedrock.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/231-openclaw.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/232-openclaw.html)
 - [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
-- [harness-engineering-systematic-explainer](../ch05/118-harness-engineering.html)
+- [harness-engineering-systematic-explainer](../ch05/112-harness-engineering.html)
 - [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
 
 ## 相关实体
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/392-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/278-aws-devops-agent.html)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/279-aws-devops-agent.html)
 - [Your Chief Agent Operator Lobehub](ch04/447-your-chief-agent-operator-lobehub.html)
 - [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/592-agentic-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
