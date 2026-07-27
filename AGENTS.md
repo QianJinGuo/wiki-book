@@ -12,7 +12,7 @@
 子页面:   2,652
 域名:     jinguo.tech
 仓库:     github.com/QianJinGuo/wiki-book
-版本:     v1.3.5
+版本:     v1.3.8
 ```
 
 ## 链接规则
@@ -91,7 +91,7 @@ Layer 3: 讯飞 + Vectorize (CF)    — 语义搜索, ~300ms
 兜底:    Pages Function           — Phase 1 关键词 + Phase 2 Reranker
 ```
 
-### 三环境 RAG 最终状态 (v1.3.3)
+### 三环境 RAG 最终状态 (v1.3.8)
 
 | 能力 | Docker | GitHub Pages | Cloudflare Pages |
 |------|--------|-------------|-----------------|
@@ -264,6 +264,6 @@ node test-rag.mjs
 
 ---
 
-*更新时间: 2026-07-06 (v1.3.5)*
+*更新时间: 2026-07-27 (v1.3.8)*
 *维护者: Hermes Agent*
 *RAG 复盘: RAG-RETROSPECTIVE.md*
