@@ -2,7 +2,7 @@
 
 ## Ch11.161 Amazon Bedrock 构建货运物流双语命名实体识别系统
 
-> 📊 Level ⭐⭐ | 7.5KB | `entities/building-bilingual-ner-for-cargo-logistics-with-amazon-bedro.md`
+> 📊 Level ⭐⭐ | 7.6KB | `entities/building-bilingual-ner-for-cargo-logistics-with-amazon-bedro.md`
 
 # Amazon Bedrock 构建货运物流双语命名实体识别系统
 
@@ -103,6 +103,10 @@ IBS Software 投入 9 名研究人员和工程师，历时约 4 个月完成项�
 - **Amazon Bedrock 无服务器推理** — Bedrock 的无服务器推理架构
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-bilingual-ner-for-cargo-logistics-with-amazon-bedro.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

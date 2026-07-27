@@ -2,7 +2,7 @@
 
 ## Ch12.008 5 Things to Know about the CLARITY Act
 
-> 📊 Level ⭐ | 6.2KB | `entities/clarity-act-5-things.md`
+> 📊 Level ⭐ | 6.3KB | `entities/clarity-act-5-things.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/clarity-act-5-things.md)
 
@@ -47,6 +47,10 @@ CLARITY Act 的策略是**间接调控**：不直接说「稳定币不能提供�
 
 ## 相关实体
 - [5 Things to Know about the CLARITY Act](../ch03/015-5-things-to-know-about-the-clarity-act.html)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

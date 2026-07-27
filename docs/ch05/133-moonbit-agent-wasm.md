@@ -2,7 +2,7 @@
 
 ## Ch05.133 MoonBit：面向 Agent 协作的编程语言（语言即工具链 + 形式化验证 + Wasm 沙箱）
 
-> 📊 Level ⭐⭐⭐ | 4.0KB | `entities/moonbit-agent-oriented-language-formal-verification-wasm.md`
+> 📊 Level ⭐⭐⭐ | 4.1KB | `entities/moonbit-agent-oriented-language-formal-verification-wasm.md`
 
 # MoonBit：面向 Agent 协作的编程语言
 
@@ -42,6 +42,10 @@ Mooncakes 包管理网站库数量过万，累计下载超 400 万次。
 ## 启示
 
 AI 不会去掉工程门槛。生态成熟度、工业验证、开发者心智和长期维护能力仍然是编程语言成功的关键问题。新语言必须同时回答：模型能不能高效学会，生态能不能快速长起来，开发者愿不愿意在真实项目中采用。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

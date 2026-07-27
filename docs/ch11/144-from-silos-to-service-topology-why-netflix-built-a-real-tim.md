@@ -2,7 +2,7 @@
 
 ## Ch11.144 From Silos to Service Topology: Why Netflix Built a Real-Time Service Map
 
-> 📊 Level ⭐⭐ | 7.8KB | `entities/from-silos-to-service-topology-why-netflix-built-a-real-time.md`
+> 📊 Level ⭐⭐ | 7.9KB | `entities/from-silos-to-service-topology-why-netflix-built-a-real-time.md`
 
 # From Silos to Service Topology: Why Netflix Built a Real-Time Service Map
 
@@ -110,6 +110,10 @@ Service Topology 提供的知识图谱基础使这种智能自动化成为可能
 - 爆炸半径分析
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-silos-to-service-topology-why-netflix-built-a-real-time.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

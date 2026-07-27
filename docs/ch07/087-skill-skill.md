@@ -2,7 +2,7 @@
 
 ## Ch07.087 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
 
-> 📊 Level ⭐⭐ | 3.0KB | `entities/skill-governance-nacos-ai-registry-aliyun-2026.md`
+> 📊 Level ⭐⭐ | 3.2KB | `entities/skill-governance-nacos-ai-registry-aliyun-2026.md`
 
 # 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
 
@@ -41,6 +41,11 @@ Nacos Skill Sync 的 Local mode 在本机建立中心仓库，通过软链接或
 - **SkillClaw 工具**：打通"产生-治理-分发"全链路闭环
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-governance-nacos-ai-registry-aliyun-2026.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

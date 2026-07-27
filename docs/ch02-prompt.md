@@ -30,7 +30,7 @@
 
 ## Ch02.001 AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）
 
-> 📊 Level ⭐ | 3.6KB | `entities/taobao-ae-to-code-animation-practice-2026.md`
+> 📊 Level ⭐ | 3.7KB | `entities/taobao-ae-to-code-animation-practice-2026.md`
 
 ## 核心概述
 
@@ -85,6 +85,10 @@ AI 的核心价值在于集成环节——需同时理解动画结构和业务 D
 ## 关联
 
 - [淘宝动效解决方案分享](https://github.com/QianJinGuo/wiki/blob/main/entities/淘宝动效解决方案分享.md) — 同团队早期平台级方案（Lottie → Anime.js、MCP 协议、跨端 Player），本篇是实践落地篇
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -3200,7 +3204,7 @@ Skills Registry 解决的四类困扰（散落各处、权限失控、外部 Ski
 
 ## Ch02.023 qoder skills
 
-> 📊 Level ⭐⭐ | 7.9KB | `entities/qoder-skills.md`
+> 📊 Level ⭐⭐ | 8.0KB | `entities/qoder-skills.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
 
@@ -3342,6 +3346,10 @@ Skill 的可分发性和开放标准属性，使其成为团队知识管理的�
 
 ## 相关实体
 - [Qoder Skills 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skills-complete-guide.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -4196,7 +4204,7 @@ Anthropic 重新定义的不是"知识的格式"，是**"知识被调用的时�
 
 ## Ch02.036 vivo LLM 游戏推荐表达层：从"推什么"到"怎么选
 
-> 📊 Level ⭐⭐ | 4.0KB | `entities/vivo-llm-game-recommendation-expression-decision-layer.md`
+> 📊 Level ⭐⭐ | 4.1KB | `entities/vivo-llm-game-recommendation-expression-decision-layer.md`
 
 # vivo LLM 游戏推荐表达层：从"推什么"到"怎么选"
 
@@ -4254,10 +4262,14 @@ Anthropic 重新定义的不是"知识的格式"，是**"知识被调用的时�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vivo-llm-game-recommendation-expression-decision-layer.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch02.037 Enrich your datasets with business context: Migrating from legacy Topics to semantic datasets in Amazon Quick
 
-> 📊 Level ⭐⭐ | 3.9KB | `entities/enrich-your-datasets-with-business-context-migrating-from-le.md`
+> 📊 Level ⭐⭐ | 4.0KB | `entities/enrich-your-datasets-with-business-context-migrating-from-le.md`
 
 # Enrich your datasets with business context: Migrating from legacy Topics to semantic datasets in Amazon Quick
 
@@ -4280,6 +4292,10 @@ Legacy Topics provided the initial approach to adding business context to datase
  
 
 | **Legacy Topics** |
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

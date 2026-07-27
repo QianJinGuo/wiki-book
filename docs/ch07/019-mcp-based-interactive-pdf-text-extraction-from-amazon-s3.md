@@ -2,7 +2,7 @@
 
 ## Ch07.019 MCP-based Interactive PDF Text Extraction from Amazon S3
 
-> 📊 Level ⭐⭐ | 11.5KB | `entities/mcp-pdf-text-extraction-s3-interactive-aws.md`
+> 📊 Level ⭐⭐ | 11.6KB | `entities/mcp-pdf-text-extraction-s3-interactive-aws.md`
 
 # MCP-based Interactive PDF Text Extraction from Amazon S3
 
@@ -213,6 +213,10 @@ PDF 类型？
 4. **渐进式增强**：从 MCP 方案开始，随需求增长逐步添加缓存、批处理、向量搜索等能力
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-interactive-pdf-text-extraction-from-amazon-s3.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

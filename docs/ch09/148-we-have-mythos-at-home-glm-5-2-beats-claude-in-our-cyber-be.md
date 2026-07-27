@@ -2,7 +2,7 @@
 
 ## Ch09.148 We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks
 
-> 📊 Level ⭐⭐ | 4.4KB | `entities/we-have-mythos-at-home-glm-5-2-beats-claude-in-our-cyber-ben.md`
+> 📊 Level ⭐⭐ | 4.6KB | `entities/we-have-mythos-at-home-glm-5-2-beats-claude-in-our-cyber-ben.md`
 
 # We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks
 
@@ -24,6 +24,11 @@ So this started as a prompting-versus-harness experiment, but while we were runn
 If you’ve not heard of GLM-5.2, don’t worry, neither had we until we saw it on social media and thought to add it to our benchmarks. **GLM 5.2**is the latest model from Zhipu AI (Z.ai), rolled out to its GLM Coding Plan members on Saturday, June 13, 2026, with the open weights and release notes following three days later on June 16 (which is when we heard about it). Three things make
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/we-have-mythos-at-home-glm-5-2-beats-claude-in-our-cyber-ben.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

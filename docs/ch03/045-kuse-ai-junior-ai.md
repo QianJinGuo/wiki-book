@@ -2,7 +2,7 @@
 
 ## Ch03.045 Kuse.ai Junior — 全球第一个AI员工
 
-> 📊 Level ⭐ | 4.8KB | `entities/kuse-junior-ai-employee.md`
+> 📊 Level ⭐ | 4.9KB | `entities/kuse-junior-ai-employee.md`
 
 # Kuse.ai Junior
 > 有独立身份、邮箱、Slack账号的AI员工，定位从"个人工具"升级为"团队成员"。
@@ -58,12 +58,17 @@ Kuse内部案例中，客服端Junior发现投诉问题 → 传递给产品端Ju
 
 ## 与本文相关
 -  — OpenClaw生态（龙虾背景）
-- [Gstack Ai Workflow](ch03/061-gstack-ai.html) — YC的AI协作工作流
+- [Gstack Ai Workflow](ch03/062-gstack-ai.html) — YC的AI协作工作流
 -  — 企业级Agent落地对比
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
 - [Kuse Junior Ai Employee](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kuse-junior-ai-employee.md) — 原文存档
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

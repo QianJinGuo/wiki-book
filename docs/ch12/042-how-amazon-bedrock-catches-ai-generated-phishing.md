@@ -2,7 +2,7 @@
 
 ## Ch12.042 How Amazon Bedrock catches AI-generated phishing
 
-> 📊 Level ⭐⭐ | 9.7KB | `entities/how-amazon-bedrock-catches-ai-generated-phishing.md`
+> 📊 Level ⭐⭐ | 9.8KB | `entities/how-amazon-bedrock-catches-ai-generated-phishing.md`
 
 # How Amazon Bedrock catches AI-generated phishing
 
@@ -97,6 +97,10 @@ The Amazon Bedrock phishing detection framework has broader implications for ent
 - Security Feedback Loop
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-amazon-bedrock-catches-ai-generated-phishing.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

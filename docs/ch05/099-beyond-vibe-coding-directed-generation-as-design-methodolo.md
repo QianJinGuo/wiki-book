@@ -2,7 +2,7 @@
 
 ## Ch05.099 Beyond Vibe Coding — Directed Generation as Design Methodology
 
-> 📊 Level ⭐⭐ | 3.7KB | `entities/beyond-vibe-coding-directed-generation-design-uxmag.md`
+> 📊 Level ⭐⭐ | 3.8KB | `entities/beyond-vibe-coding-directed-generation-design-uxmag.md`
 
 # Beyond Vibe Coding — Directed Generation as Design Methodology
 
@@ -43,6 +43,10 @@ This article is fundamentally about **how humans direct AI generation** — dire
 - "Designer role from specifying instances to defining conditions" = agent harness orchestration paradigm
 
 → [source archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/beyond-vibe-coding-a-designer-s-case-for-directed-generation.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

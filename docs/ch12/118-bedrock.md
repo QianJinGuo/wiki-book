@@ -2,7 +2,7 @@
 
 ## Ch12.118 中国用户安全高性能访问海外 Bedrock
 
-> 📊 Level ⭐⭐ | 3.4KB | `entities/user-security-high-performance-bedrock-aws-china.md`
+> 📊 Level ⭐⭐ | 3.5KB | `entities/user-security-high-performance-bedrock-aws-china.md`
 
 # 中国用户安全高性能访问海外 Bedrock
 
@@ -61,6 +61,10 @@
 - AWS Client VPN — 远程接入
 - VPC Endpoint / PrivateLink — AWS 私有链接
 - Amazon Bedrock — 海外 LLM 推理服务
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Ch09.164 Claude code创始人最新揭秘：Claude Tag如何在团队内部「大杀四方」
 
-> 📊 Level ⭐⭐ | 3.4KB | `entities/claude-code创始人最新揭秘claude-tag如何在团队内部大杀四方.md`
+> 📊 Level ⭐⭐ | 3.5KB | `entities/claude-code创始人最新揭秘claude-tag如何在团队内部大杀四方.md`
 
 # Claude code创始人最新揭秘：Claude Tag如何在团队内部「大杀四方」
 
@@ -43,6 +43,10 @@ Claude Tag  被Andrej karpathy称为一个LLM交互范式变革，可以看我�
 ---
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code创始人最新揭秘claude-tag如何在团队内部大杀四方.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

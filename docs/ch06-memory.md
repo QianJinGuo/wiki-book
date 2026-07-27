@@ -1752,7 +1752,7 @@ Claude Code 的 Auto Dream"梦境整理"隐喻尤为优雅：Agent 白天干活�
 
 ## Ch06.007 Context Window Management Comparison
 
-> 📊 Level ⭐⭐ | 15.6KB | `entities/context-window-management-comparison.md`
+> 📊 Level ⭐⭐ | 15.8KB | `entities/context-window-management-comparison.md`
 
 # Context Window 管理框架深度对比：Pi、OpenClaw、Claude Code、Letta
 
@@ -1948,6 +1948,11 @@ Agent harness 正在朝同一个方向移动。目标不是向模型展示一切
 - Arize Alyx — 独立收敛到相同设计的内部工具
 - Agent Runtime — 上下文管理是 Agent 运行时系统的核心子系统
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-memory-architecture.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 
@@ -4126,7 +4131,7 @@ D2L 的方向（将知识编码进模型权重）逻辑上可行，当前瓶颈�
 
 ## Ch06.025 Your documentation is still in your Mum's filing cabinet
 
-> 📊 Level ⭐⭐ | 6.7KB | `entities/documentation-organisation-humans-ai.md`
+> 📊 Level ⭐⭐ | 6.8KB | `entities/documentation-organisation-humans-ai.md`
 
 # Your documentation is still in your Mum's filing cabinet
 
@@ -4203,6 +4208,10 @@ Reid 的 UX 背景使她自然地将文档问题与 design systems 联系起来�
 - RAG (Retrieval-Augmented Generation) — AI 检索增强生成
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/documentation-organisation-humans-ai.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -4877,7 +4886,7 @@ Headroom 可以作为**库、proxy、wrapper、MCP server**使用。
 
 ## Ch06.036 面向复杂业务场景的智能分析 Skills 架构设计与演进实践
 
-> 📊 Level ⭐⭐ | 3.3KB | `entities/alibaba-complex-business-skills-architecture-evolution.md`
+> 📊 Level ⭐⭐ | 3.4KB | `entities/alibaba-complex-business-skills-architecture-evolution.md`
 
 # 面向复杂业务场景的智能分析 Skills 架构设计与演进实践
 
@@ -4921,10 +4930,14 @@ Headroom 可以作为**库、proxy、wrapper、MCP server**使用。
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-complex-business-skills-architecture-evolution.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch06.037 TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
 
-> 📊 Level ⭐⭐ | 3.2KB | `entities/tencentdb-agent-memory-long-term-pyramid.md`
+> 📊 Level ⭐⭐ | 3.3KB | `entities/tencentdb-agent-memory-long-term-pyramid.md`
 
 # TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
 
@@ -4977,6 +4990,11 @@ PersonaMem（人物画像记忆准确率）提升最显著（+28pp），说明�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencentdb-agent-memory-hierarchical.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
+
+---
 
 ## Ch06.038 Skill 编排的 6 种依赖关系
 
@@ -5012,6 +5030,10 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 2. 超过 5-7 个 skill 的链条必须考虑摘要压缩
 3. 敏感信息走代码变量层，不走 context 层
 4. 文件名版本号是简单但有效的版本管理——保留历史才有回滚能力
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

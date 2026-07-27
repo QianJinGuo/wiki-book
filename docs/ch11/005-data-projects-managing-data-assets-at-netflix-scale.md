@@ -2,7 +2,7 @@
 
 ## Ch11.005 Data Projects: Managing Data Assets at Netflix Scale
 
-> 📊 Level ⭐ | 3.8KB | `entities/data-projects-managing-data-assets-at-netflix-scale.md`
+> 📊 Level ⭐ | 3.9KB | `entities/data-projects-managing-data-assets-at-netflix-scale.md`
 
 # Data Projects: Managing Data Assets at Netflix Scale
 
@@ -30,6 +30,10 @@ Imagine you’re on a team that owns a few hundred tables. Your org restructures
 Scheduled and asynchronous workloads — [Maestro](<https://netflixtechblog.com/maestro-netflixs-workflow-orchestrator-ee13a06f9c78>) workflows, data movement jobs, Spark pipelines — need an identity to run as. Historically, that was a _human_ : whoever authored the workflow.
 
 Human identities are not durable. People change teams, get new responsibilities, and leave the company. When they do, their permissions change, and the workflows running under their identity start to fail. The only fix was to swap in a colleague’s identity, which inevitably had _different_ permissions, kicking off a “permissions whack-a-mole” as each fix surfaced the next missing grant. And then, eventually,
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

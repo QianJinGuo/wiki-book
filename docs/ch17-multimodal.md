@@ -800,7 +800,84 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 
 ---
 
-## Ch17.007 Automatically redact PII in images with Amazon Nova
+## Ch17.007 MineExplorer: 多模态能力断层
+
+> 📊 Level ⭐⭐ | 9.4KB | `entities/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md`
+
+# MineExplorer: 多模态能力断层
+
+> **v×c score**: 64 | stars=4
+> **来源**: https://mp.weixin.qq.com/s/P3yzceXkVxth7Q63nRfBLg
+> **发布**: 美团技术团队 (2026-07-23)
+
+有技术深度的文章。
+
+## 摘要
+
+MineExplorer 是美团 LongCat 团队构建的**首个在开放世界中做到分钟级长程任务的评测基准**，基于 Minecraft 沙盒环境系统性评测 18 款顶级多模态大模型在动态、含隐藏前置条件的长程任务中的真实能力。结果显示，最强模型 Claude-Opus-4.6 的整体任务成功率仅 41 分，从 1 跳任务的 77 分骤降至 4 跳任务的 12 分，揭示了当前模型"感知尚可、推理薄弱、探索无能"的根本性能力断层。
+
+## 核心要点
+
+1. **动态开放世界评测**：与静态截图问答不同，MineExplorer 在实时 3D 沙盒中运行任务，每个实例执行 1800 环境步（3 分钟连续交互），环境持续变化。
+2. **隐藏前置条件的多跳任务**：通过 1-4 hop 任务分级，核心挑战是最终目标包含未在指令中说明的隐藏前置子任务。最强模型 4-hop 成功率仅 12%。
+3. **知识解耦设计**：通过 LLM 裁判过滤掉 Minecraft 专有知识，确保评测的是通用探索能力而非"背 Wiki"能力。
+4. **多智能体数据合成**：用 5 个专业 Agent 协作造题，包含 orchestration 和 debate 两个阶段，有效率提升约 30 个百分点，最终保留 813 个高质量实例。
+5. **三大能力维度 14 项细粒度评测**：感知（空间/时序/实体/状态/资源）、推理（常识/因果/关系）、行动（移动/跳跃/采集/放置/合成/攻击）。
+6. **额外步数与记忆不是解药**：消融实验显示，增加步数或历史帧数到一定程度后性能反而下降，瓶颈不在资源而在模型无法将已有信息与当前世界状态对齐。
+
+## 深度分析
+
+### 为什么"会看"不等于"会探索"？
+
+MineExplorer 最重要的洞察是：在所有被测模型上，**感知分数 > 行动分数 > 推理分数**。以 Claude-Opus-4.6 为例，感知分 61.91，推理分 54.71。这意味着模型能"看见"环境中的物体和状态，但无法将多个视觉观察串联成一个有效的行动策略。
+
+这个发现与具身 AI 领域的一个核心假设一致：感知层的进展超过了规划层。当前最强的视觉模型已经可以在静态图像上达到甚至超越人类水平，但在**动态、具身、需要持续重规划**的环境中，感知到规划的转化仍然是瓶颈。MineExplorer 把这个定性判断变成了可量化的数据。
+
+### 隐藏前置条件：大模型的"认知盲区"
+
+MineExplorer 的四跳任务中，成功率从 77%（1-hop）到 12%（4-hop），每增加一层隐藏前置条件，性能掉一个台阶。这不仅仅是"任务变长了"，而是任务结构从"执行已知步骤序列"变成了"推断出未明确说明的步骤序列"。
+
+这暴露了当前大模型的一个根本性局限：**它们擅长在明确定义的搜索空间内优化，但不擅长在开放、未完全指定的空间中推断出缺失步骤**。这个局限在受控的 QA 基准（如 MMLU）中被完全隐藏了，因为那里所有必要信息都已包含在问题中。MineExplorer 的隐藏前置条件设计是对这种"温室评测"的直接批判。
+
+### 60% 的失败来自导航 —— 对具身 AI 的警示
+
+MineExplorer 的失败归因分析揭示了一个惊人事实：Claude-Opus-4.6 近 60% 的失败来自导航失败。模型无法在 3D 空间中持续追踪自己的位置和目标位置，或者在探索过程中迷失了方向。这不是视觉感知失败（模型能看到物体），而是空间推理和路径规划的失败。
+
+这对快速升温的具身智能赛道有着直接的警示：当机器人模型在受控演示中表现优秀，但在真实、动态、长程的任务中失败时，问题可能不在于感知能力，而在于空间推理和持续重规划能力的缺失。
+
+### 多智能体数据合成流程的工程价值
+
+MineExplorer 的方法论本身也值得关注。团队使用 5 个专业 Agent 组成的协作流程（orchestrator + specialist + verifier）来自动化生成训练数据。两个阶段（初始化和辩论）的设计允许 Agent 初稿生成后由验证器发现问题并迭代修订。这个范式对于任何需要高质量合成数据的场景都具有通用参考价值。
+
+## 实践启示
+
+1. **评测基准应反映真实世界复杂度**：如果仅使用静态 QA 基准评估多模态模型，会严重高估其真实能力。任何面向具身 AI、机器人或开放世界任务的选型评估，都应引入 MineExplorer 式的动态、多跳、含隐藏前置条件的评测。
+
+2. **感知层到规划层的转化是当前最大瓶颈**：在优化多模态 Agent 时，应优先关注"从视觉输入到行动序列"的推理能力，而非继续提升视觉 encoder 的分辨率。MineExplorer 的三维能力分数（感知 > 行动 > 推理）给出了明确的优化优先级。
+
+3. **隐藏前置条件的推理训练应成为重点**：当前训练数据大多是"指令-执行"配对。要提升模型在开放世界中的能力，需要加入含有隐藏条件的训练示例，让模型学会"推断未说明的需求"。
+
+4. **多智能体协作造线是高质量数据生成的有效范式**：MineExplorer 的多智能体数据合成流程为任何需要大规模合成训练数据的团队提供了可复用的范式 —— 使用 orchestrator 协调多个 specialist + verifier Agent，通过辩论阶段提升数据质量。
+
+5. **具身智能的资源分配关注点**：增加计算资源（步数、记忆帧数）不是解决能力的可行路径。模型需要改进的是"如何将已有信息与当前状态对齐"的认知架构，而非提供更多信息。
+
+## 相关实体
+
+- 多模态大模型 — MineExplorer 的评测对象，18 款顶级模型的系统性评测揭示了能力断层
+- 具身智能 (Embodied AI) — MineExplorer 的评测结果为该赛道提供了关键瓶颈定位
+- 美团 LongCat 团队 — MineExplorer 的构建团队
+- 开放世界评测 (Open-World Evaluation) — MineExplorer 代表的动态、含隐藏条件的新评测范式
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
+
+---
+
+## Ch17.008 Automatically redact PII in images with Amazon Nova
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/automatically-redact-pii-in-images-with-amazon-nova.md`
 
@@ -885,78 +962,6 @@ Organizations processing large volumes of images (e.g., social media platforms, 
 - [AI System Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-coding-practice-agent-evaluation-five-dimension-three-level-gating.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent Routing Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-dingtalk-recruitment.md)
-
----
-
-## Ch17.008 MineExplorer: 多模态能力断层
-
-> 📊 Level ⭐⭐ | 9.2KB | `entities/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md`
-
-# MineExplorer: 多模态能力断层
-
-> **v×c score**: 64 | stars=4
-> **来源**: https://mp.weixin.qq.com/s/P3yzceXkVxth7Q63nRfBLg
-> **发布**: 美团技术团队 (2026-07-23)
-
-有技术深度的文章。
-
-## 摘要
-
-MineExplorer 是美团 LongCat 团队构建的**首个在开放世界中做到分钟级长程任务的评测基准**，基于 Minecraft 沙盒环境系统性评测 18 款顶级多模态大模型在动态、含隐藏前置条件的长程任务中的真实能力。结果显示，最强模型 Claude-Opus-4.6 的整体任务成功率仅 41 分，从 1 跳任务的 77 分骤降至 4 跳任务的 12 分，揭示了当前模型"感知尚可、推理薄弱、探索无能"的根本性能力断层。
-
-## 核心要点
-
-1. **动态开放世界评测**：与静态截图问答不同，MineExplorer 在实时 3D 沙盒中运行任务，每个实例执行 1800 环境步（3 分钟连续交互），环境持续变化。
-2. **隐藏前置条件的多跳任务**：通过 1-4 hop 任务分级，核心挑战是最终目标包含未在指令中说明的隐藏前置子任务。最强模型 4-hop 成功率仅 12%。
-3. **知识解耦设计**：通过 LLM 裁判过滤掉 Minecraft 专有知识，确保评测的是通用探索能力而非"背 Wiki"能力。
-4. **多智能体数据合成**：用 5 个专业 Agent 协作造题，包含 orchestration 和 debate 两个阶段，有效率提升约 30 个百分点，最终保留 813 个高质量实例。
-5. **三大能力维度 14 项细粒度评测**：感知（空间/时序/实体/状态/资源）、推理（常识/因果/关系）、行动（移动/跳跃/采集/放置/合成/攻击）。
-6. **额外步数与记忆不是解药**：消融实验显示，增加步数或历史帧数到一定程度后性能反而下降，瓶颈不在资源而在模型无法将已有信息与当前世界状态对齐。
-
-## 深度分析
-
-### 为什么"会看"不等于"会探索"？
-
-MineExplorer 最重要的洞察是：在所有被测模型上，**感知分数 > 行动分数 > 推理分数**。以 Claude-Opus-4.6 为例，感知分 61.91，推理分 54.71。这意味着模型能"看见"环境中的物体和状态，但无法将多个视觉观察串联成一个有效的行动策略。
-
-这个发现与具身 AI 领域的一个核心假设一致：感知层的进展超过了规划层。当前最强的视觉模型已经可以在静态图像上达到甚至超越人类水平，但在**动态、具身、需要持续重规划**的环境中，感知到规划的转化仍然是瓶颈。MineExplorer 把这个定性判断变成了可量化的数据。
-
-### 隐藏前置条件：大模型的"认知盲区"
-
-MineExplorer 的四跳任务中，成功率从 77%（1-hop）到 12%（4-hop），每增加一层隐藏前置条件，性能掉一个台阶。这不仅仅是"任务变长了"，而是任务结构从"执行已知步骤序列"变成了"推断出未明确说明的步骤序列"。
-
-这暴露了当前大模型的一个根本性局限：**它们擅长在明确定义的搜索空间内优化，但不擅长在开放、未完全指定的空间中推断出缺失步骤**。这个局限在受控的 QA 基准（如 MMLU）中被完全隐藏了，因为那里所有必要信息都已包含在问题中。MineExplorer 的隐藏前置条件设计是对这种"温室评测"的直接批判。
-
-### 60% 的失败来自导航 —— 对具身 AI 的警示
-
-MineExplorer 的失败归因分析揭示了一个惊人事实：Claude-Opus-4.6 近 60% 的失败来自导航失败。模型无法在 3D 空间中持续追踪自己的位置和目标位置，或者在探索过程中迷失了方向。这不是视觉感知失败（模型能看到物体），而是空间推理和路径规划的失败。
-
-这对快速升温的具身智能赛道有着直接的警示：当机器人模型在受控演示中表现优秀，但在真实、动态、长程的任务中失败时，问题可能不在于感知能力，而在于空间推理和持续重规划能力的缺失。
-
-### 多智能体数据合成流程的工程价值
-
-MineExplorer 的方法论本身也值得关注。团队使用 5 个专业 Agent 组成的协作流程（orchestrator + specialist + verifier）来自动化生成训练数据。两个阶段（初始化和辩论）的设计允许 Agent 初稿生成后由验证器发现问题并迭代修订。这个范式对于任何需要高质量合成数据的场景都具有通用参考价值。
-
-## 实践启示
-
-1. **评测基准应反映真实世界复杂度**：如果仅使用静态 QA 基准评估多模态模型，会严重高估其真实能力。任何面向具身 AI、机器人或开放世界任务的选型评估，都应引入 MineExplorer 式的动态、多跳、含隐藏前置条件的评测。
-
-2. **感知层到规划层的转化是当前最大瓶颈**：在优化多模态 Agent 时，应优先关注"从视觉输入到行动序列"的推理能力，而非继续提升视觉 encoder 的分辨率。MineExplorer 的三维能力分数（感知 > 行动 > 推理）给出了明确的优化优先级。
-
-3. **隐藏前置条件的推理训练应成为重点**：当前训练数据大多是"指令-执行"配对。要提升模型在开放世界中的能力，需要加入含有隐藏条件的训练示例，让模型学会"推断未说明的需求"。
-
-4. **多智能体协作造线是高质量数据生成的有效范式**：MineExplorer 的多智能体数据合成流程为任何需要大规模合成训练数据的团队提供了可复用的范式 —— 使用 orchestrator 协调多个 specialist + verifier Agent，通过辩论阶段提升数据质量。
-
-5. **具身智能的资源分配关注点**：增加计算资源（步数、记忆帧数）不是解决能力的可行路径。模型需要改进的是"如何将已有信息与当前状态对齐"的认知架构，而非提供更多信息。
-
-## 相关实体
-
-- 多模态大模型 — MineExplorer 的评测对象，18 款顶级模型的系统性评测揭示了能力断层
-- 具身智能 (Embodied AI) — MineExplorer 的评测结果为该赛道提供了关键瓶颈定位
-- 美团 LongCat 团队 — MineExplorer 的构建团队
-- 开放世界评测 (Open-World Evaluation) — MineExplorer 代表的动态、含隐藏条件的新评测范式
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md)
 
 ---
 
@@ -1149,73 +1154,9 @@ Daniel Povey 加入小米这件事本身具有标志性——一位定义了一�
 
 ---
 
-## Ch17.011 SunFinance: Textract+Claude准确率90.8%的ID提取方案
+## Ch17.011 How transparent is DiffusionGemma (and why it matters)
 
-> 📊 Level ⭐⭐ | 7.9KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
-
-## 核心内容
-SunFinance将AWS Textract（文档 OCR）+ Claude（智能理解）结合，ID提取准确率从79.7%提升至90.8%，成本降低91%。系统每月处理330万次ID验证，支撑信贷审批全流程。
-
-## 三个关键洞察
-### 1. Hybrid Textract+Claude架构
-Textract负责基础OCR（文本提取），Claude负责语义理解（判断提取内容是否合法、与表单关系）。两者组合比分用各自单独使用效果更好——OCR做好结构化提取，LLM做最终判断。
-
-### 2. 准确率提升的工程路径
-79.7%→90.8%的提升来自：① 预处理优化（图像增强提升OCR质量）② prompt工程优化（让Claude更准确地判断字段关系）③ 反馈循环（将Claude的错误案例加入训练数据）。非一蹴而就。
-
-### 3. 91%成本降低的来源
-从自建CV模型（需要GPU服务器、维护团队）→ Textract API调用（serverless，按调用计费）+ Claude API。成本结构从固定成本变成可变成本，规模效应显著。
-
-## 与知识库的连接
-- → [OS-level Actions](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-agentcore-os-level-actions-browser.md)：未来Agent可替代人工完成整个ID验证流程
-- → [LLM-as-Judge](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-reinforcement-fine-tuning-llm-as-judge.md)：Claude做ID判断本质上是做judge
-
-## 深度分析
-### OCR+LLM混合架构的内在逻辑
-SunFinance案例验证了一个核心原则：专业化工具做擅长的事，LLM做理解判断。Amazon Textract负责可靠的字符级OCR提取，Claude负责语义层面的结构化理解。两者组合的关键在于——OCR做好结构化提取，LLM做最终判断——这比让LLM直接处理图像更有效，因为LLM的PII保护机制会阻碍直接从身份证件提取敏感信息 。
-
-### Claude的PII保护机制是直接用LLM做ID提取的核心障碍
-测试显示单独使用Claude Sonnet 4进行ID提取只有61.8%准确率，甚至低于79.7%的基线。根本原因不是模型能力不足，而是Claude内置的隐私保护机制——它会主动拒绝从身份证件等敏感文档提取PII信息 。这解释了为什么混合架构中LLM必须位于OCR之后而非之前。
-
-### 多层OCR降级策略的工程意义
-采用Textract（主）+ Rekognition（备）的双层OCR设计，用额外的一次API调用换取系统韧性。当Textract返回低置信度结果时自动降级到Rekognition，这种设计避免了单点失败，尤其在处理低质量扫描、异常角度或损坏证件时效果显著 。
-
-### 向量相似度搜索的选型教训
-欺诈检测中背景相似度分析揭示了文本嵌入与视觉嵌入的本质差异：文本嵌入（Claude描述背景后比对）达到91%准确率但精确率仅27.8%、召回率21.7%；视觉嵌入达到96%准确率、80%精确率、52%召回率 。直接用多模态Embedding做向量化的路线显著优于先做文本描述再做匹配的路线。
-
-## 实践启示
-### 1. 文档处理场景优先考虑混合架构
-当处理身份证、发票、合同等结构化文档时，OCR+LLM的混合方案通常优于单独使用任何一种技术。关键是把"字符提取"和"语义理解"分离，让专业OCR处理字符级任务，LLM专注于关系判断和格式标准化 。
-
-### 2. 验证规则是提升准确率的低成本高回报手段
-SunFinance在OCR+Claude之后加入了ID号码格式化验证、日期标准化、文档类型规范化等规则，这些规则"捕捉住了OCR提取了正确字符但格式不一致的边缘情况" 。对于中国身份证、营业执照等有明确格式规范的文档，格式校验规则应该是标准配置。
-
-### 3. Serverless架构支持快速迭代
-6周的概念验证周期内技术方案每周都在演进，AWS Lambda+Step Functions的serverless设计允许团队"修改和部署单个Lambda函数而不需要停机" 。这对于需要快速试错的生产AI项目至关重要。
-
-### 4. 欺诈检测需要多层防御
-单一欺诈检测方法的召回率永远不够。视觉模式检测（检测屏幕照片、数字篡改）单独使用时对已知模式有95%+置信度；背景相似度检测（检测欺诈团伙）单独使用时对已知模式召回率仅55%、对新模式16.7%。两者组合才能覆盖不同类型的攻击向量 。
-
-### 5. 成本结构转型释放新市场
-从自建CV模型（GPU服务器+维护团队=固定成本）→ Textract API + Claude API（serverless+按调用计费=可变成本），91%成本降低使低价值贷款场景首次具备经济可行性 。对于服务小微信贷、助贷等低毛利场景，成本结构的优化直接决定了业务是否成立。
----
-*Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-sun-finance-ai-id-extraction-fraud-detection.md)*
-
-## 相关实体
-- [AI Detection and Response (AIDR): A Zero-Impact Operating Model](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-detection-and-response-aidr-a-zero-impact-operating-model.md)
-- [AWS Model Agility: 6步LLM跨代际迁移框架](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-generative-ai-model-agility-framework.md)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
-- [MLflow v3.10：生成式AI开发新特性](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-mlflow-v310-generative-ai-development.md)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/building-enterprise-agentic-ai-with-kiro-on-aws.md)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-network-claude-code-kiro-cli-implement-aws-ipsec-vpn.md)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-claude-prompt-cache-strategy.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
-
----
-
-## Ch17.012 How transparent is DiffusionGemma (and why it matters)
-
-> 📊 Level ⭐⭐ | 7.9KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
+> 📊 Level ⭐⭐ | 8.0KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
 
 # How transparent is DiffusionGemma (and why it matters)
 
@@ -1282,10 +1223,78 @@ Monitorability, a key downstream application of transparency, is similar between
 本文从**透明度/可解释性**角度分析 DiffusionGemma，与现有 [DiffusionGemma 技术架构](https://github.com/QianJinGuo/wiki/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) 实体（侧重模型架构、MoE 设计、推理加速）形成互补。
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch17.012 SunFinance: Textract+Claude准确率90.8%的ID提取方案
+
+> 📊 Level ⭐⭐ | 7.9KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
+
+## 核心内容
+SunFinance将AWS Textract（文档 OCR）+ Claude（智能理解）结合，ID提取准确率从79.7%提升至90.8%，成本降低91%。系统每月处理330万次ID验证，支撑信贷审批全流程。
+
+## 三个关键洞察
+### 1. Hybrid Textract+Claude架构
+Textract负责基础OCR（文本提取），Claude负责语义理解（判断提取内容是否合法、与表单关系）。两者组合比分用各自单独使用效果更好——OCR做好结构化提取，LLM做最终判断。
+
+### 2. 准确率提升的工程路径
+79.7%→90.8%的提升来自：① 预处理优化（图像增强提升OCR质量）② prompt工程优化（让Claude更准确地判断字段关系）③ 反馈循环（将Claude的错误案例加入训练数据）。非一蹴而就。
+
+### 3. 91%成本降低的来源
+从自建CV模型（需要GPU服务器、维护团队）→ Textract API调用（serverless，按调用计费）+ Claude API。成本结构从固定成本变成可变成本，规模效应显著。
+
+## 与知识库的连接
+- → [OS-level Actions](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-agentcore-os-level-actions-browser.md)：未来Agent可替代人工完成整个ID验证流程
+- → [LLM-as-Judge](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-reinforcement-fine-tuning-llm-as-judge.md)：Claude做ID判断本质上是做judge
+
+## 深度分析
+### OCR+LLM混合架构的内在逻辑
+SunFinance案例验证了一个核心原则：专业化工具做擅长的事，LLM做理解判断。Amazon Textract负责可靠的字符级OCR提取，Claude负责语义层面的结构化理解。两者组合的关键在于——OCR做好结构化提取，LLM做最终判断——这比让LLM直接处理图像更有效，因为LLM的PII保护机制会阻碍直接从身份证件提取敏感信息 。
+
+### Claude的PII保护机制是直接用LLM做ID提取的核心障碍
+测试显示单独使用Claude Sonnet 4进行ID提取只有61.8%准确率，甚至低于79.7%的基线。根本原因不是模型能力不足，而是Claude内置的隐私保护机制——它会主动拒绝从身份证件等敏感文档提取PII信息 。这解释了为什么混合架构中LLM必须位于OCR之后而非之前。
+
+### 多层OCR降级策略的工程意义
+采用Textract（主）+ Rekognition（备）的双层OCR设计，用额外的一次API调用换取系统韧性。当Textract返回低置信度结果时自动降级到Rekognition，这种设计避免了单点失败，尤其在处理低质量扫描、异常角度或损坏证件时效果显著 。
+
+### 向量相似度搜索的选型教训
+欺诈检测中背景相似度分析揭示了文本嵌入与视觉嵌入的本质差异：文本嵌入（Claude描述背景后比对）达到91%准确率但精确率仅27.8%、召回率21.7%；视觉嵌入达到96%准确率、80%精确率、52%召回率 。直接用多模态Embedding做向量化的路线显著优于先做文本描述再做匹配的路线。
+
+## 实践启示
+### 1. 文档处理场景优先考虑混合架构
+当处理身份证、发票、合同等结构化文档时，OCR+LLM的混合方案通常优于单独使用任何一种技术。关键是把"字符提取"和"语义理解"分离，让专业OCR处理字符级任务，LLM专注于关系判断和格式标准化 。
+
+### 2. 验证规则是提升准确率的低成本高回报手段
+SunFinance在OCR+Claude之后加入了ID号码格式化验证、日期标准化、文档类型规范化等规则，这些规则"捕捉住了OCR提取了正确字符但格式不一致的边缘情况" 。对于中国身份证、营业执照等有明确格式规范的文档，格式校验规则应该是标准配置。
+
+### 3. Serverless架构支持快速迭代
+6周的概念验证周期内技术方案每周都在演进，AWS Lambda+Step Functions的serverless设计允许团队"修改和部署单个Lambda函数而不需要停机" 。这对于需要快速试错的生产AI项目至关重要。
+
+### 4. 欺诈检测需要多层防御
+单一欺诈检测方法的召回率永远不够。视觉模式检测（检测屏幕照片、数字篡改）单独使用时对已知模式有95%+置信度；背景相似度检测（检测欺诈团伙）单独使用时对已知模式召回率仅55%、对新模式16.7%。两者组合才能覆盖不同类型的攻击向量 。
+
+### 5. 成本结构转型释放新市场
+从自建CV模型（GPU服务器+维护团队=固定成本）→ Textract API + Claude API（serverless+按调用计费=可变成本），91%成本降低使低价值贷款场景首次具备经济可行性 。对于服务小微信贷、助贷等低毛利场景，成本结构的优化直接决定了业务是否成立。
+---
+*Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-sun-finance-ai-id-extraction-fraud-detection.md)*
+
+## 相关实体
+- [AI Detection and Response (AIDR): A Zero-Impact Operating Model](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-detection-and-response-aidr-a-zero-impact-operating-model.md)
+- [AWS Model Agility: 6步LLM跨代际迁移框架](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-generative-ai-model-agility-framework.md)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](https://github.com/QianJinGuo/wiki/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
+- [MLflow v3.10：生成式AI开发新特性](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-mlflow-v310-generative-ai-development.md)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/building-enterprise-agentic-ai-with-kiro-on-aws.md)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-network-claude-code-kiro-cli-implement-aws-ipsec-vpn.md)
+- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-claude-prompt-cache-strategy.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+
+---
 
 ## Ch17.013 FLAT: Feedforward Latent Triangle Splatting
 
-> 📊 Level ⭐⭐ | 6.1KB | `entities/flat-feedforward-latent-triangle-splatting.md`
+> 📊 Level ⭐⭐ | 6.2KB | `entities/flat-feedforward-latent-triangle-splatting.md`
 
 # FLAT: Feedforward Latent Triangle Splatting
 
@@ -1395,10 +1404,14 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/flat-feedforward-latent-triangle-splatting.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch17.014 Multimodal AI for Searchable Aerial Imagery at Scale
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/multimodal-ai-searchable-aerial-imagery-aws.md`
+> 📊 Level ⭐⭐ | 6.1KB | `entities/multimodal-ai-searchable-aerial-imagery-aws.md`
 
 # Multimodal AI for Searchable Aerial Imagery at Scale
 
@@ -1474,6 +1487,10 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 ---
 
 **来源**: → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/embed-the-world-multimodal-ai-for-searchable-aerial-imagery.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1838,7 +1855,7 @@ LogicsDocBench为自建综合评估基准，由 900 页精心挑选的 PDF 页�
 
 ## Ch17.020 小米多篇论文入选 ECCV 2026：人脸视频修复与视频模型加速
 
-> 📊 Level ⭐⭐⭐ | 12.3KB | `entities/小米-多篇论文入选-eccv-2026-人脸修复视频加速.md`
+> 📊 Level ⭐⭐⭐ | 12.4KB | `entities/小米-多篇论文入选-eccv-2026-人脸修复视频加速.md`
 
 # 小米多篇论文入选 ECCV 2026：人脸视频修复与视频模型加速
 
@@ -1923,6 +1940,10 @@ BeyondDrive 和 DriveFine 两篇论文都聚焦于一个被传统端到端方法
 - [SVOR 视频掩码](https://github.com/QianJinGuo/wiki/blob/main/entities/cvpr-xiaomi-svor-video-masking.md) — 小米此前在 CVPR 的研究成果
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/小米-多篇论文入选-eccv-2026-人脸修复视频加速.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2499,7 +2520,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 
 ## Ch17.026 CVPR 2026 | DGAF-VSR: 重思基于扩散模型的视频超分辨率
 
-> 📊 Level ⭐⭐⭐ | 9.1KB | `entities/cvpr-2026-dgaf-vsr-video-super-resolution-diffusion-taobao.md`
+> 📊 Level ⭐⭐⭐ | 9.2KB | `entities/cvpr-2026-dgaf-vsr-video-super-resolution-diffusion-taobao.md`
 
 # CVPR 2026 | DGAF-VSR: 重思基于扩散模型的视频超分辨率 — 利用对齐特征的稠密引导
 
@@ -2571,10 +2592,14 @@ DGAF-VSR 由淘天音视频技术团队开发，该团队长期服务于淘宝�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-2026-重思基于扩散模型的视频超分辨率利用对齐特征的稠密引导-dgaf-vsr.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch17.027 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md`
+> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md`
 
 ## 概述
 
@@ -2688,6 +2713,10 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 - [Elf Embedded Language Flows Hekaiming](https://github.com/QianJinGuo/wiki/blob/main/entities/elf-embedded-language-flows-hekaiming.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2811,7 +2840,7 @@ NTM 展示了一种有价值的思路：**通过架构设计保留训练目标�
 
 ## Ch17.029 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
+> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
 
 # Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
@@ -2899,6 +2928,10 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 当前为早期研究探索阶段，尚未达到生产部署水平。但其提出的"精确编辑 + 物理感知"范式对 AI 视频编辑领域具有方向性指导意义。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/toward-more-controllable-ai-video-editing-an-early-research-.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -3143,7 +3176,92 @@ v1.1 模型家族实现了「事半功倍」（doing more with less）的效果�
 
 ---
 
-## Ch17.033 MolmoMotion：语言引导的 3D 运动预测模型
+## Ch17.033 Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
+
+> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md`
+
+# Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
+
+VLX-Flow 是 Om AI（联汇科技）VLX 端侧流式多模态模型系列的第一弹，定位为**流式理解层**，解决「模型如何在用户提问之前就开始观察、记忆并随时响应」的问题。
+
+## 核心问题：从离线视频到在线感知
+
+传统视频理解依赖「离线模式」——视频已录好、截好、上传好后，模型再抽帧、编码、推理。但真实设备中的摄像头持续采集、屏幕不断变化、机器人第一视角持续运动，输入从「离线文件」变为「实时流」。
+
+现有 VLM 的两种路线各有取舍：
+- **全帧输入**：保留更多信息，但计算量和延迟迅速上升
+- **固定采样**：降低计算成本，但容易丢掉帧间的动作细节
+
+VLX-Flow 的方案：**增量视觉上下文建模**，将连续视频拆成小片段，按时间顺序增量处理。
+
+## 架构核心：双层记忆 + Linear Attention
+
+VLX-Flow 的语言模型包含 **Linear Attention** 模块，通过**可递推状态**保留历史信息，每次只做增量计算。
+
+双层记忆结构：
+1. **视觉缓存**：保留最近时间窗口的帧细节（动作、位置、主体状态、短时变化）
+2. **文本承接层**：保留连续描述、用户问题和回答，维持长程语义上下文
+
+多轮交互时文本承接层在合并/裁剪/回放过程中同步模型内部缓存，避免文本历史与模型实际记忆状态错位。
+
+## Stream Memory 训练范式
+
+VLX-Flow 的训练将「观察」和「回答」分开：
+- 短视频窗口（如 16 秒视频拆成 2 秒片段）生成流式 caption，训练模型将连续视觉信息写入可递推的记忆状态
+- 在后续时间点提问，模型必须基于累积记忆回答，不能回头重看视频
+
+## 深度分析
+
+### 实时流式理解的工程技术挑战
+
+真实设备中的视频并非「离线文件」形态。摄像头持续采集、无人机持续飞行、机器人第一视角不断运动——输入源是一个永不停止的流。VLX-Flow 要解决的不仅是「看得懂」，更是**如何在资源受限下维护持续更新的视觉状态**。
+
+对比全帧输入（保留信息但计算量爆炸）和固定采样（低成本但丢失帧间动作细节），VLX-Flow 的增量视觉上下文建模将视频拆成连续小片段，按时间顺序增量处理。旧信息被压缩成可递推状态，避免了历史上下文无限变长。
+
+### Linear Attention 与 TTFT 优势
+
+在标准自注意力机制中，序列变长意味着 KV Cache 膨胀，显存和计算压力随视频时长线性上升。VLX-Flow 的 Linear Attention 模块通过可递推状态保留历史信息，每次仅做增量计算，使得首 token 生成时延（TTFT）在长序列输入下保持稳定。与 Full Attention（TTFT 持续上升）和 SlideWindow（周期重置产生波动）相比，VLX-Flow 在超过一定输入长度后展现出显著的延迟优势。
+
+这种稳定的低延迟对真实交互至关重要：摄像头不会每隔 5 秒才看一眼世界，机器人也不能只在用户提问时才观察环境。TTFT 直接影响用户随时提问后的等待体验，是流式 VLM 能否实际部署的工程瓶颈之一。
+
+### 双层记忆的协同设计
+
+视觉缓存保留短时高频信息（动作、位置、主体状态、短时变化），文本承接层保留长程语义上下文（连续描述、用户问题和回答）。多轮交互时文本承接层在合并、裁剪或回放过程中同步模型内部缓存，避免文本历史与模型实际记忆状态错位。
+
+这种「短时精度 + 长程连贯」的双层设计，使得模型既能准确回答"刚才谁进来了"这种瞬时问题，也能维持对整段时间线事件关系的理解。
+
+### Stream Memory 训练的数据构造创新
+
+VLX-Flow 的训练数据构造方式是其核心技术亮点：「观察」与「回答」阶段拆分——短视频窗口（如 16 秒拆分 2 秒片段）生成流式 caption，让模型学习将连续视觉信息写入可递推记忆状态；然后在后续时间点提问（如证据出现后 10 秒或 1 分钟），模型必须基于累积记忆回答，不能重看视频。
+
+这套范式将视频问答从「打包上传-离线推理」推进到「持续在场-随时响应」，是 VLX 系列区别于传统视频 VLM 的核心差异。此外，Stream Memory 的机制可扩展到事件触发式交互：人员进入、物体遗留、异常动作等可触发主动提醒，减少事后回看需求。
+
+### VLX 系列的全链路设计
+
+VLX-Flow 是三层链路中的感知前置层：Flow（持续感知）→ Seek（精准定位）→ Go（行动决策）。这种设计意味着视频处理前移到本地，模型在运行中维护状态，语言生成只在交互或事件触发时介入。系统因此不必反复上传和重算完整历史，更适合端侧或边缘节点部署。
+
+## 实践启示
+
+1. **在线感知与离线推理的范式差异不容忽视**：真实设备中的视频是持续的流，不是打包的文件。构建实时视频理解系统时，必须从架构层面支持增量输入和状态维护，而非试图将离线流程套用到在线场景。
+
+2. **注意力机制的选型直接决定部署可行性**：对于端侧 VLM，Linear Attention 或类似的可递推注意力机制比标准自注意力更适合长视频场景。KV Cache 的管理策略（TTFT 稳定性）是比模型精度更前置的工程约束。
+
+3. **双层记忆是资源与精度的平衡点**：视觉缓存保短时精度 + 文本承接层保长程连贯，这种分层设计避免了单层记忆在容量和精度之间的矛盾。构建类似系统时，应明确短期和长期记忆的不同职责。
+
+4. **Stream Memory 训练范式可推广**：「观察」和「回答」阶段分离，要求模型在不能回看的情况下基于累积记忆回答，这种训练策略不仅适用于视频理解，也可推广到任何需要在持续输入中维持状态并随时响应的场景（如监控、直播、实时字幕）。
+
+5. **事件触发式交互是值得关注的方向**：模型在持续感知过程中可以主动识别关键事件（人员进入、异常动作等）并生成提醒，将 VLM 从「被动问答」扩展到「主动监测」，扩大了应用边界。
+
+## 同系列对比
+
+- [VLX-Seek](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md) — 细粒度视觉感知与定位
+- [VLX-Go](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-go-vlm-navigation-0.6b-2026.md) — 具身导航与执行
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md)
+
+---
+
+## Ch17.034 MolmoMotion：语言引导的 3D 运动预测模型
 
 > 📊 Level ⭐⭐⭐ | 7.5KB | `entities/molmomotion-language-guided-3d-motion-forecasting.md`
 
@@ -3228,7 +3346,7 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 
 ---
 
-## Ch17.034 Meta MSL（Multi-Scale Latent）：余家辉团队连发图像视频模型
+## Ch17.035 Meta MSL（Multi-Scale Latent）：余家辉团队连发图像视频模型
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/meta-msl-multi-scale-latent-yujiahui-2026.md`
 
@@ -3294,89 +3412,87 @@ MSL 视觉团队的核心成员构成反映了当前 AI 研究的高端人才流
 
 ---
 
-## Ch17.035 Video World Model Hand Tracking — 视频生成模型实现手部动捕
+## Ch17.036 Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
 
-> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/video-world-model-hand-motion-capture-2026.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/om-ai-vlx-go-vlm-navigation-0.6b-2026.md`
 
-# Video World Model Hand Tracking — 视频生成模型实现手部动捕
+# Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
 
-## 摘要
+VLX-Go 是 Om AI（联汇）VLX 端侧流式多模态模型系列的第三弹，定位为**行动决策层**，解决 VLM 从「看懂」到「行动」的跨越——即模型不仅能描述环境、定位目标，还能输出可执行的导航指令。
 
-ACE-ViDiHand 由大晓机器人联合南洋理工大学与上海交通大学提出，是**全球首个用视频生成模型做 4D 手部动捕的方法**。不同于传统检测器先识别再重建的管线，ACE-ViDiHand 直接从视频扩散模型的内部表征中"读取"手部姿态，在 ARCTIC、HOT3D、HOI4D 三大基准上取得全面 SOTA。该方法不需要检测器、裁剪、运动补全或测试时优化，单次前向同时输出双手 4D 轨迹。
+## 核心定位：从感知到行动
 
-## 核心要点
+前两代 VLX（Flow 流式视频理解、Seek 细粒度感知）解决了 VLM「看得懂」的问题，VLX-Go 补上了「行动决策」层：接收连续视觉流输入，输出机器人下一时刻的运动目标——往哪里走、何时修正方向、如何在动态画面中避开障碍物。
 
-- **问题本质**：手部动捕的长期难题是遮挡——端碗、拧瓶盖、掏手机时手被挡住，传统检测器全面失效
-- **技术路径**：不再"教 AI 认手"，而是从视频扩散模型中"读取"手部表征，利用模型在互联网视频上习得的**时序一致性、遮挡推理与空间几何知识**
-- **核心方法**：两步走——第一步"教模型画手"（叠加渲染遮挡下的手部），第二步"从第 15 层 DiT 特征读手"（双分支解码器）
-- **性能突破**：ARCTIC/HOT3D 九项指标全部第一，HOI4D 九项中八项第一；严重遮挡下帧准确率 0.997（此前最强 0.919）
-- **范式意义**：从"专用补丁"到"继承世界模型"——视频生成模型不再只是生成工具，而是可读取的感知基座
+## 技术特点
+
+- **0.6B 参数在端侧跑通导航**：极小模型即可驱动物理世界导航任务，不依赖云端推理
+- **从目标定位到行动**：VLX-Go 补上 VLX 系列的行动决策层，与 Flow（流式理解）、Seek（精准定位）形成「理解→定位→行动」完整链路
+- **避开突发障碍物**：依靠实时视觉推理进行动态避障，非预编程路径规划
+- **短时航点预测机制**：模型每次只预测未来一小段轨迹，执行后再根据新画面更新下一段，避免长路径累积误差
+
+## VLX 系列对比
+
+| 型号 | 定位 | 能力 |
+|------|------|------|
+| VLX-Flow | 流式视频理解 | 边看边理解连续视频流 |
+| VLX-Seek | 细粒度感知 | 区域检索 + 精确定位 |
+| **VLX-Go** | **行动决策** | **端侧导航 + 动态避障** |
+
+## 与现有实体关联
+
+- [VLX-Flow](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md) — 系列开篇：流式视频理解 VLM
+- [VLX-Seek](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md) — 系列第二弹：3B 细粒度感知 VLM
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-go-vlm-navigation-0.6b-2026.md)
+
+## 第 2 来源 — PaperWeekly 解读
+
+PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实机器人上的局部导航演示：跟随目标行走、动态避障、地面机器人平台上的短时航点预测流程。
+
+报道补充了 VLX-Go 的训练模式细节：基于**离线轨迹数据学习**，系统先缓存视频帧的视觉特征减少训练开销，规划器读取视觉 token、历史帧信息后预测短时航点序列。
 
 ## 深度分析
 
-### 手部动捕为何是具身智能的"命门"
+### VLX-Go 的技术架构设计范式
 
-手部运动是人类操作意图最直接的表达。抓、放、倒、拧、叠——每个灵巧操作的任务意图、动作过程、物体状态变化，全写在手部轨迹中。机器人要从人类视频中学习操作，手部轨迹就是最核心的监督信号。然而真实操作视频中几乎每一帧的手都被东西挡着——人类灵巧操作天然伴随遮挡。业界甚至专门雇人把设备绑在头上、按小时计费采集手部数据，只为凑高质量标注。
+VLX-Go 的核心设计选择是**将 VLM 的输出形式从文本答案推进到短时行动轨迹**。传统 VLM 输出停留在文字层面（"向左前方移动"），但真实机器人需要的是可执行的航点坐标——这要求模型的输出层与底层控制接口对齐。
 
-### 传统方法的死胡同
+VLX-Go 明确自身定位为**感知和控制之间的局部策略层**，而非替代底层控制器。模型负责将视觉、语言和历史帧接入行动预测，输出短时航点；速度命令、平台动力学和安全约束仍交给下游控制器与安全层。这种职责拆分使得模型体积可以压缩到 0.6B，同时保持与不同硬件平台的兼容性。
 
-两条主流路线都走不通：
+### 离线轨迹学习 + 在线强化学习的混合训练策略
 
-1. **图像路线**（HaMeR、WiLoR、Hamba 等）：检测器先框手再估姿态，手一被挡就全崩
-2. **视频路线**（OmniHands、Dyn-HaMR 等）：靠跨帧注意力和运动先验补帧，但时序模块是拿稀缺手部标注数据训练出来的，"猜"被挡住的部分根本学不会
+VLX-Go 采用两阶段训练：第一阶段基于离线轨迹数据学习，系统预先缓存视频帧的视觉特征以减少训练开销，规划器学习预测短时航点序列。第二阶段引入在线强化学习优化，在仿真器或闭环环境中，模型预测航点后由控制器执行，环境返回新视觉观测和反馈信号（碰撞、障碍物距离、目标保持、进度奖励等），帮助模型学到更安全、更平滑的局部策略。
 
-运动先验只建模了手本身，与物体、场景完全脱钩——手伸进抽屉那一刻，先验和现实就对不上了。两条路都是方向不对——所有人都在"手"上做文章，没人想过换出发点。
+这种混合策略的关键创新在于**仿真器贯穿数据生成、在线优化和闭环评测三个环节**，使得离线数据难以覆盖的动态避障场景（障碍物布局变化、目标遮挡、执行误差累积）可以通过交互式反馈得到有效治理。
 
-### 范式转移：从"识别"到"读取"
+### EVT-Bench STT 评测表现
 
-ACE-ViDiHand 的核心洞察是：视频生成模型天天看互联网上海量视频，早已学会"脑补"被挡住的手——只是没人从"手"的角度挖掘。Wan2.1 等视频生成模型要生成不穿帮的视频，必须在内部搞定三件事：
+在 EVT-Bench 的 STT 任务上，VLX-Go 0.6B 规划器取得 **SR（成功率）85.42%**、**TR（跟踪率）94.08%**、**CR（碰撞率）6.55%**。评测结果说明：在目标跟随任务中，0.6B 级别的模型已经具备实用竞争力；碰撞率的优化仍可通过仿真环境、奖励设计和安全约束继续收窄。
 
-- **时空一致性**——前后帧手的位置不能跳变
-- **从 2D 推 3D**——手势透视、大小变化须符合三维几何
-- **推理被遮挡内容**——手被挡住但下一秒出现，模型必须知道手还在
+### 与行业同类方案的定位差异
 
-这三样能力恰恰是手部动捕多年求而不得的——13 亿参数的视频大模型在互联网视频上自然涌现出的"世界先验"。
-
-具体实现分两步：先教模型在不同遮挡等级下手部渲染持续的追踪，再从 DiT 第 15 层（30 层正中间）、去噪至约 70% 时的特征中，用双分支解码器直接读出手部姿态。这一层的选择——"太浅还在盯像素，太深已经在想怎么'画'了"——本身就是对扩散模型内部表征分层特性的深刻理解。
-
-### 跑分数据的产业含义
-
-三大基准恰好覆盖手部动捕最典型的三类噩梦场景：
-
-- **ARCTIC（重度遮挡双手操作）**：关节误差 PA-MPJPE-p 降到 9.8mm（最佳基线 11.9mm），2D 端点误差直降 4 倍，抖动从 12.8 降到 3.18（零后处理，此前最佳方法靠外挂模块硬磨）
-- **HOT3D（鱼眼畸变+高动态光照）**：F1 达到 0.983，3D 关节误差降低 43%
-- **HOI4D（完全未见过的数据集）**：9 项指标 8 项第一，抖动仅第二名的 1/4
-
-关键数字：同样跑 1000 帧视频，WiLoR 丢 81 帧，ACE-ViDiHand 只丢 3 帧。这意味着**大规模、高质量的人手视频自动标注第一次真正成为可能**。
-
-### 与同期研究的共鸣
-
-同期工作 Vision Banana 证明：把图像生成模型拿来做视觉理解，效果比专门训练的判别式模型还强——"会画画的 AI 天然就会认东西"。ACE-ViDiHand 把同样的逻辑从图像推到视频、从 2D 推到 4D：**会生成视频的 AI，天然就懂手怎么动**。这与 [Zhuji Dynamics Pre Ipo Embodied Ai 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/zhuji-dynamics-pre-ipo-embodied-ai-2026.md) 中张巍强调的"手部操作数据不足是具身智能最大短板"形成呼应——ACE-ViDiHand 恰好给出了解决方案。
+与主流端到端导航方案不同，VLX-Go 不接管整套机器人控制栈，而是专注于将视觉语言状态转换为面向控制链路的航点输出。模型越轻，推理成本和部署压力越低，越接近真实运行约束。对端侧具身设备来说，导航决策随画面变化不断刷新，0.6B 级规划器在部署成本、调用开销和端到端延迟方面具有显著优势。
 
 ## 实践启示
 
-1. **当传统方法陷入"补丁摞补丁"的死胡同时，重新定义问题往往比优化方案更有效**。ACE-ViDiHand 没有改进检测器，而是完全换了一个框架——从"识别手"变成"读取画手的 AI 的内部表征"。这种范式转移思维适用于 agent 工程中的许多僵局。
+1. **职责拆分是模型瘦身的关键**：VLX-Go 不替代底层控制器，而是作为视觉驱动的局部策略模型。这种"模型负责视觉语言规划 + 控制器负责执行 + 安全层提供约束"的职责拆分，是将其压缩至 0.6B 仍能实用的前提。在构建端侧 AI 系统时，应清晰界定模型的能力边界。
 
-2. **视频生成模型的内部表征是尚未充分挖掘的数据金矿**。ACE-ViDiHand 证明了 DiT 的中间层包含可用于感知任务的丰富几何信息。对于 [Agent Harness Dingtalk Recruitment](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-dingtalk-recruitment.md) 等需要环境感知的 agent 系统，同样可以思考如何利用大模型的"副产物"表征。
+2. **混合训练策略解决数据覆盖不足**：纯离线轨迹学习难以覆盖所有障碍物布局和动态干扰，VLX-Go 的离线+在线强化学习混合策略证明了：仿真环境中的闭环反馈对动态避障类任务至关重要。仿真器应贯穿数据生成、策略优化和闭环评测全流程。
 
-3. **自动标注的规模化决定着具身智能的数据飞轮能否真正启动**。当你能从百万小时的互联网视频中稳定提取手部运动，把"野生视频"变成可学习、可扩展的具身数据资产，具身智能的数据飞轮才算真正开始转。
+3. **短时航点预测减少累积误差**：每次只预测一小段轨迹，执行后再根据新画面更新，这种"预测-执行-观测"的循环机制避免了长路径累积误差，也使得在真实设备上的安全检查更容易落地。这对长时延场景下的机器人部署具有普适参考价值。
 
-4. **跨机构协作的范式值得关注**。ACE-ViDiHand 由大晓机器人（产业界）+南洋理工大学+上海交通大学（学术界）联合完成，这种"产业出题、学术解题"的模式正在成为具身智能领域的主流研发范式。
+4. **VLX 三件套的协同效应**：Flow（持续感知）→ Seek（精准定位）→ Go（行动决策），三层能力形成完整闭环。在构建端侧系统时，应优先考虑能力链路的完整性而非单一模块的性能巅峰。
 
-## 相关实体
+5. **0.6B 参数量的实际意义**：在具身系统里航点预测会随着新画面不断刷新，模型越小，部署成本和端到端延迟越可控。VLX-Go 证明 VLM 可以同时做到"小参数"和"实用性能"——前提是明确的任务边界和恰当的训练策略。
 
-- [Zhuji Dynamics Pre Ipo Embodied Ai 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/zhuji-dynamics-pre-ipo-embodied-ai-2026.md) — 逐际动力强调手部操作数据瓶颈，与 ACE-ViDiHand 的技术路径互补
-- [Lingbot Vision Spatial Native Vision Foundation Model Ant](https://github.com/QianJinGuo/wiki/blob/main/entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md) — 具身智能空间视觉基础模型，感知层面的并行探索
-- [Lingbot Vla 2 60000H Open Source Vla](https://github.com/QianJinGuo/wiki/blob/main/entities/lingbot-vla-2-60000h-open-source-vla.md) — 开源 VLA 模型，与手部动捕结合可形成完整感知-控制闭环
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化框架，手部动捕可作为 agent 感知子系统集成
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/video-world-model-hand-tracking-2026.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-go-vlm-navigation-0.6b-2026.md)
+→ [PaperWeekly 报道原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-go-paperweekly-2026.md)
 
 ---
 
-## Ch17.036 美团海报生成 AIGC 技术创新与实践
+## Ch17.037 美团海报生成 AIGC 技术创新与实践
 
-> 📊 Level ⭐⭐⭐ | 7.0KB | `entities/meituan-aigc-poster-generation-2026.md`
+> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/meituan-aigc-poster-generation-2026.md`
 
 # 美团海报生成 AIGC 技术创新与实践
 
@@ -3462,8 +3578,92 @@ PosterReward 的出现填补了海报质量评估领域的空白。现有通用�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meituan-aigc-poster-generation-2026.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-## Ch17.037 Introducing 1-bit and Ternary Bonsai Image Models
+---
+
+## Ch17.038 Video World Model Hand Tracking — 视频生成模型实现手部动捕
+
+> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/video-world-model-hand-motion-capture-2026.md`
+
+# Video World Model Hand Tracking — 视频生成模型实现手部动捕
+
+## 摘要
+
+ACE-ViDiHand 由大晓机器人联合南洋理工大学与上海交通大学提出，是**全球首个用视频生成模型做 4D 手部动捕的方法**。不同于传统检测器先识别再重建的管线，ACE-ViDiHand 直接从视频扩散模型的内部表征中"读取"手部姿态，在 ARCTIC、HOT3D、HOI4D 三大基准上取得全面 SOTA。该方法不需要检测器、裁剪、运动补全或测试时优化，单次前向同时输出双手 4D 轨迹。
+
+## 核心要点
+
+- **问题本质**：手部动捕的长期难题是遮挡——端碗、拧瓶盖、掏手机时手被挡住，传统检测器全面失效
+- **技术路径**：不再"教 AI 认手"，而是从视频扩散模型中"读取"手部表征，利用模型在互联网视频上习得的**时序一致性、遮挡推理与空间几何知识**
+- **核心方法**：两步走——第一步"教模型画手"（叠加渲染遮挡下的手部），第二步"从第 15 层 DiT 特征读手"（双分支解码器）
+- **性能突破**：ARCTIC/HOT3D 九项指标全部第一，HOI4D 九项中八项第一；严重遮挡下帧准确率 0.997（此前最强 0.919）
+- **范式意义**：从"专用补丁"到"继承世界模型"——视频生成模型不再只是生成工具，而是可读取的感知基座
+
+## 深度分析
+
+### 手部动捕为何是具身智能的"命门"
+
+手部运动是人类操作意图最直接的表达。抓、放、倒、拧、叠——每个灵巧操作的任务意图、动作过程、物体状态变化，全写在手部轨迹中。机器人要从人类视频中学习操作，手部轨迹就是最核心的监督信号。然而真实操作视频中几乎每一帧的手都被东西挡着——人类灵巧操作天然伴随遮挡。业界甚至专门雇人把设备绑在头上、按小时计费采集手部数据，只为凑高质量标注。
+
+### 传统方法的死胡同
+
+两条主流路线都走不通：
+
+1. **图像路线**（HaMeR、WiLoR、Hamba 等）：检测器先框手再估姿态，手一被挡就全崩
+2. **视频路线**（OmniHands、Dyn-HaMR 等）：靠跨帧注意力和运动先验补帧，但时序模块是拿稀缺手部标注数据训练出来的，"猜"被挡住的部分根本学不会
+
+运动先验只建模了手本身，与物体、场景完全脱钩——手伸进抽屉那一刻，先验和现实就对不上了。两条路都是方向不对——所有人都在"手"上做文章，没人想过换出发点。
+
+### 范式转移：从"识别"到"读取"
+
+ACE-ViDiHand 的核心洞察是：视频生成模型天天看互联网上海量视频，早已学会"脑补"被挡住的手——只是没人从"手"的角度挖掘。Wan2.1 等视频生成模型要生成不穿帮的视频，必须在内部搞定三件事：
+
+- **时空一致性**——前后帧手的位置不能跳变
+- **从 2D 推 3D**——手势透视、大小变化须符合三维几何
+- **推理被遮挡内容**——手被挡住但下一秒出现，模型必须知道手还在
+
+这三样能力恰恰是手部动捕多年求而不得的——13 亿参数的视频大模型在互联网视频上自然涌现出的"世界先验"。
+
+具体实现分两步：先教模型在不同遮挡等级下手部渲染持续的追踪，再从 DiT 第 15 层（30 层正中间）、去噪至约 70% 时的特征中，用双分支解码器直接读出手部姿态。这一层的选择——"太浅还在盯像素，太深已经在想怎么'画'了"——本身就是对扩散模型内部表征分层特性的深刻理解。
+
+### 跑分数据的产业含义
+
+三大基准恰好覆盖手部动捕最典型的三类噩梦场景：
+
+- **ARCTIC（重度遮挡双手操作）**：关节误差 PA-MPJPE-p 降到 9.8mm（最佳基线 11.9mm），2D 端点误差直降 4 倍，抖动从 12.8 降到 3.18（零后处理，此前最佳方法靠外挂模块硬磨）
+- **HOT3D（鱼眼畸变+高动态光照）**：F1 达到 0.983，3D 关节误差降低 43%
+- **HOI4D（完全未见过的数据集）**：9 项指标 8 项第一，抖动仅第二名的 1/4
+
+关键数字：同样跑 1000 帧视频，WiLoR 丢 81 帧，ACE-ViDiHand 只丢 3 帧。这意味着**大规模、高质量的人手视频自动标注第一次真正成为可能**。
+
+### 与同期研究的共鸣
+
+同期工作 Vision Banana 证明：把图像生成模型拿来做视觉理解，效果比专门训练的判别式模型还强——"会画画的 AI 天然就会认东西"。ACE-ViDiHand 把同样的逻辑从图像推到视频、从 2D 推到 4D：**会生成视频的 AI，天然就懂手怎么动**。这与 [Zhuji Dynamics Pre Ipo Embodied Ai 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/zhuji-dynamics-pre-ipo-embodied-ai-2026.md) 中张巍强调的"手部操作数据不足是具身智能最大短板"形成呼应——ACE-ViDiHand 恰好给出了解决方案。
+
+## 实践启示
+
+1. **当传统方法陷入"补丁摞补丁"的死胡同时，重新定义问题往往比优化方案更有效**。ACE-ViDiHand 没有改进检测器，而是完全换了一个框架——从"识别手"变成"读取画手的 AI 的内部表征"。这种范式转移思维适用于 agent 工程中的许多僵局。
+
+2. **视频生成模型的内部表征是尚未充分挖掘的数据金矿**。ACE-ViDiHand 证明了 DiT 的中间层包含可用于感知任务的丰富几何信息。对于 [Agent Harness Dingtalk Recruitment](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-dingtalk-recruitment.md) 等需要环境感知的 agent 系统，同样可以思考如何利用大模型的"副产物"表征。
+
+3. **自动标注的规模化决定着具身智能的数据飞轮能否真正启动**。当你能从百万小时的互联网视频中稳定提取手部运动，把"野生视频"变成可学习、可扩展的具身数据资产，具身智能的数据飞轮才算真正开始转。
+
+4. **跨机构协作的范式值得关注**。ACE-ViDiHand 由大晓机器人（产业界）+南洋理工大学+上海交通大学（学术界）联合完成，这种"产业出题、学术解题"的模式正在成为具身智能领域的主流研发范式。
+
+## 相关实体
+
+- [Zhuji Dynamics Pre Ipo Embodied Ai 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/zhuji-dynamics-pre-ipo-embodied-ai-2026.md) — 逐际动力强调手部操作数据瓶颈，与 ACE-ViDiHand 的技术路径互补
+- [Lingbot Vision Spatial Native Vision Foundation Model Ant](https://github.com/QianJinGuo/wiki/blob/main/entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md) — 具身智能空间视觉基础模型，感知层面的并行探索
+- [Lingbot Vla 2 60000H Open Source Vla](https://github.com/QianJinGuo/wiki/blob/main/entities/lingbot-vla-2-60000h-open-source-vla.md) — 开源 VLA 模型，与手部动捕结合可形成完整感知-控制闭环
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化框架，手部动捕可作为 agent 感知子系统集成
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/video-world-model-hand-tracking-2026.md)
+
+---
+
+## Ch17.039 Introducing 1-bit and Ternary Bonsai Image Models
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/bonsai-image-4b-1-bit-ternary.md`
 
@@ -3539,7 +3739,7 @@ Compression only matters if the model remains useful. We evaluated Bonsai Image 
 
 ---
 
-## Ch17.038 Normalizing Trajectory Models
+## Ch17.040 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐ | 6.0KB | `entities/normalizing-trajectory-models.md`
 
@@ -3601,7 +3801,7 @@ Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致�
 
 ---
 
-## Ch17.039 ai视频工具悄悄走到了第三阶段
+## Ch17.041 ai视频工具悄悄走到了第三阶段
 
 > 📊 Level ⭐⭐⭐ | 5.8KB | `entities/ai视频工具悄悄走到了第三阶段.md`
 
@@ -3655,7 +3855,7 @@ RHTV作为第三阶段的先行者，其「画布原生」路线可能会对赛�
 
 ---
 
-## Ch17.040 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
+## Ch17.042 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
 > 📊 Level ⭐⭐⭐ | 5.8KB | `entities/moebius.md`
 
@@ -3741,7 +3941,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ---
 
-## Ch17.041 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch17.043 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
 
 > 📊 Level ⭐⭐⭐ | 5.7KB | `entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md`
 
@@ -3784,7 +3984,7 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 
 ---
 
-## Ch17.042 Stable Audio 3.0 开源音频生成模型
+## Ch17.044 Stable Audio 3.0 开源音频生成模型
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/stable-audio-3.md`
 
@@ -3841,9 +4041,9 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.043 扩散模型视觉生成一致性框架（2026 综述）
+## Ch17.045 扩散模型视觉生成一致性框架（2026 综述）
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/diffusion-model-consistency-framework-2026-survey.md`
+> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/diffusion-model-consistency-framework-2026-survey.md`
 
 # 扩散模型视觉生成一致性框架（2026 综述）
 
@@ -3900,10 +4100,14 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 > 开源仓库：https://github.com/Shawn-CodeDev/Awesome-Consistency-Diffusion-Visual-Generation
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-## Ch17.044 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
+---
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md`
+## Ch17.046 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
+
+> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md`
 
 # Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
 
@@ -3962,8 +4166,12 @@ VLX-Seek-3B 在多项基准上超越更大参数量的模型：
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-## Ch17.045 FLUX 3 — Black Forest Labs 多模态流模型
+---
+
+## Ch17.047 FLUX 3 — Black Forest Labs 多模态流模型
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/flux-3-multimodal-flow-model-black-forest-labs-2026.md`
 
@@ -4025,7 +4233,7 @@ FLUX 3 代表了视频生成领域向**统一多模态基础模型**方向的重
 
 ---
 
-## Ch17.046 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
+## Ch17.048 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/vivo-magicbokeh-cvpr-2026-generative-bokeh-diffusion.md`
 
@@ -4067,7 +4275,48 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.047 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
+## Ch17.049 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+
+> 📊 Level ⭐⭐⭐ | 3.3KB | `entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md`
+
+# 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+
+# 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+---
+source: wechat
+source_url: https://mp.weixin.qq.com/s/fF9D9Vvx3PsFrdy94eKyVg
+ingested: 2026-07-08
+source_published: 2026年7月8日 11:02
+---
+# 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+编辑｜杜伟
+> 时隔 5 个月后，蚂蚁灵波亮出了自家新一代具身智能大脑。这一次，它试图把跨本体 VLA 从单点 Demo，推向可复现、可高效后训练与可部署的工程链路。
+  
+2026 开年以来，具身智能最重要的技术路线之一 VLA（视觉-语言-动作）， 其受行业关注的程度以及向前推进的速度超出了很多人的想象。
+  
+科技巨头英伟达推出专为人形机器人打造的开放 VLA 系列 GR00T N1.6 和 GR00T N1.7，具身智能独角兽 Physical Intelligence 推出的 π0.7 展现出了组合泛化、跨本体迁移能力。在国内，VLA 领域同样是百花齐放，涌现出了以蚂蚁灵波 LingBot-VLA 为代表的基座模型。
+  
+它们的出现让行业形成共识：机器人要进入开放环境，必须把视觉理解、语言指令和动作生成放进同一个模型框架里。同时，当把机器人从实验室搬到开放场景，各种现实问题很快出现：桌子高度变了、物体位置偏了、任务步骤被拉长了，换一台机器人本体又得重新适配。
+  
+不少 VLA Demo 已经能在特定设置下跑通，但距离稳定执行、跨本体泛化和低成本规模化部署，仍需要跨过数据、本体适配、工程系统等多重阻碍。这也是 VLA 进入深水区的原因，并带来了更现实的技术难题：机器人需要一颗什么样的通用大脑？
+  
+面对真实世界的多样机器人任务，蚂蚁灵波今天正式发布新一代具身基座模
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md)
+
+## 第 2 Source — 机器之心
+
+> From WeChat MP 机器之心, supplemental coverage of the same topic.
+
+-> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了-2026-07-08.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch17.050 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/feifei-li-masked-visual-actions-world-model-2026.md`
 
@@ -4111,7 +4360,7 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.048 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
+## Ch17.051 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md`
 
@@ -4156,44 +4405,7 @@ CoLT（Chain of Latent Thoughts，潜思维链）将多模态大模型（MLLM）
 
 ---
 
-## Ch17.049 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
-
-> 📊 Level ⭐⭐⭐ | 3.2KB | `entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md`
-
-# 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
-
-# 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
----
-source: wechat
-source_url: https://mp.weixin.qq.com/s/fF9D9Vvx3PsFrdy94eKyVg
-ingested: 2026-07-08
-source_published: 2026年7月8日 11:02
----
-# 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
-编辑｜杜伟
-> 时隔 5 个月后，蚂蚁灵波亮出了自家新一代具身智能大脑。这一次，它试图把跨本体 VLA 从单点 Demo，推向可复现、可高效后训练与可部署的工程链路。
-  
-2026 开年以来，具身智能最重要的技术路线之一 VLA（视觉-语言-动作）， 其受行业关注的程度以及向前推进的速度超出了很多人的想象。
-  
-科技巨头英伟达推出专为人形机器人打造的开放 VLA 系列 GR00T N1.6 和 GR00T N1.7，具身智能独角兽 Physical Intelligence 推出的 π0.7 展现出了组合泛化、跨本体迁移能力。在国内，VLA 领域同样是百花齐放，涌现出了以蚂蚁灵波 LingBot-VLA 为代表的基座模型。
-  
-它们的出现让行业形成共识：机器人要进入开放环境，必须把视觉理解、语言指令和动作生成放进同一个模型框架里。同时，当把机器人从实验室搬到开放场景，各种现实问题很快出现：桌子高度变了、物体位置偏了、任务步骤被拉长了，换一台机器人本体又得重新适配。
-  
-不少 VLA Demo 已经能在特定设置下跑通，但距离稳定执行、跨本体泛化和低成本规模化部署，仍需要跨过数据、本体适配、工程系统等多重阻碍。这也是 VLA 进入深水区的原因，并带来了更现实的技术难题：机器人需要一颗什么样的通用大脑？
-  
-面对真实世界的多样机器人任务，蚂蚁灵波今天正式发布新一代具身基座模
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md)
-
-## 第 2 Source — 机器之心
-
-> From WeChat MP 机器之心, supplemental coverage of the same topic.
-
--> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了-2026-07-08.md)
-
----
-
-## Ch17.050 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
+## Ch17.052 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/mokus-cross-modal-knowledge-transfer.md`
 
@@ -4221,94 +4433,9 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.051 Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
-
-> 📊 Level ⭐⭐⭐ | 2.8KB | `entities/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md`
-
-# Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
-
-VLX-Flow 是 Om AI（联汇科技）VLX 端侧流式多模态模型系列的第一弹，定位为**流式理解层**，解决「模型如何在用户提问之前就开始观察、记忆并随时响应」的问题。
-
-## 核心问题：从离线视频到在线感知
-
-传统视频理解依赖「离线模式」——视频已录好、截好、上传好后，模型再抽帧、编码、推理。但真实设备中的摄像头持续采集、屏幕不断变化、机器人第一视角持续运动，输入从「离线文件」变为「实时流」。
-
-现有 VLM 的两种路线各有取舍：
-- **全帧输入**：保留更多信息，但计算量和延迟迅速上升
-- **固定采样**：降低计算成本，但容易丢掉帧间的动作细节
-
-VLX-Flow 的方案：**增量视觉上下文建模**，将连续视频拆成小片段，按时间顺序增量处理。
-
-## 架构核心：双层记忆 + Linear Attention
-
-VLX-Flow 的语言模型包含 **Linear Attention** 模块，通过**可递推状态**保留历史信息，每次只做增量计算。
-
-双层记忆结构：
-1. **视觉缓存**：保留最近时间窗口的帧细节（动作、位置、主体状态、短时变化）
-2. **文本承接层**：保留连续描述、用户问题和回答，维持长程语义上下文
-
-多轮交互时文本承接层在合并/裁剪/回放过程中同步模型内部缓存，避免文本历史与模型实际记忆状态错位。
-
-## Stream Memory 训练范式
-
-VLX-Flow 的训练将「观察」和「回答」分开：
-- 短视频窗口（如 16秒视频拆成 2秒片段）生成流式 caption，训练模型将连续视觉信息写入可递推的记忆状态
-- 在后续时间点提问，模型必须基于累积记忆回答，不能回头重看视频
-
-## 同系列对比
-
-- [VLX-Seek](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md) — 细粒度视觉感知与定位
-- [VLX-Go](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-go-vlm-navigation-0.6b-2026.md) — 具身导航与执行
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md)
-
----
-
-## Ch17.052 Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
-
-> 📊 Level ⭐⭐⭐ | 2.7KB | `entities/om-ai-vlx-go-vlm-navigation-0.6b-2026.md`
-
-# Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
-
-VLX-Go 是 Om AI（联汇）VLX 端侧流式多模态模型系列的第三弹，定位为**行动决策层**，解决 VLM 从「看懂」到「行动」的跨越——即模型不仅能描述环境、定位目标，还能输出可执行的导航指令。
-
-## 核心定位：从感知到行动
-
-前两代 VLX（Flow 流式视频理解、Seek 细粒度感知）解决了 VLM「看得懂」的问题，VLX-Go 补上了「行动决策」层：接收连续视觉流输入，输出机器人下一时刻的运动目标——往哪里走、何时修正方向、如何在动态画面中避开障碍物。
-
-## 技术特点
-
-- **0.6B 参数在端侧跑通导航**：极小模型即可驱动物理世界导航任务，不依赖云端推理
-- **从目标定位到行动**：VLX-Go 补上 VLX 系列的行动决策层，与 Flow（流式理解）、Seek（精准定位）形成「理解→定位→行动」完整链路
-- **避开突发障碍物**：依靠实时视觉推理进行动态避障，非预编程路径规划
-
-## VLX 系列对比
-
-| 型号 | 定位 | 能力 |
-|------|------|------|
-| VLX-Flow | 流式视频理解 | 边看边理解连续视频流 |
-| VLX-Seek | 细粒度感知 | 区域检索 + 精确定位 |
-| **VLX-Go** | **行动决策** | **端侧导航 + 动态避障** |
-
-## 与现有实体关联
-
-- [VLX-Flow](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md) — 系列开篇：流式视频理解 VLM
-- [VLX-Seek](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md) — 系列第二弹：3B 细粒度感知 VLM
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-go-vlm-navigation-0.6b-2026.md)
-
-## 第 2 来源 — PaperWeekly 解读
-
-PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实机器人上的局部导航演示：跟随目标行走、动态避障、地面机器人平台上的短时航点预测流程。
-
-报道补充了 VLX-Go 的训练模式细节：基于**离线轨迹数据学习**，系统先缓存视频帧的视觉特征减少训练开销，规划器读取视觉 token、历史帧信息后预测短时航点序列。
-
-→ [PaperWeekly 报道原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-go-paperweekly-2026.md)
-
----
-
 ## Ch17.053 火山引擎 RTM：超低延时直播技术
 
-> 📊 Level ⭐⭐⭐ | 2.5KB | `entities/volcano-engine-rtm-low-latency-streaming.md`
+> 📊 Level ⭐⭐⭐ | 2.6KB | `entities/volcano-engine-rtm-low-latency-streaming.md`
 
 # 火山引擎 RTM：超低延时直播技术
 
@@ -4347,6 +4474,10 @@ PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实�
 - entities/byte-dance（字节跳动）
 - entities/douyin（抖音）
 - entities/live-streaming（直播技术）
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -4476,7 +4607,7 @@ PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实�
 
 ## Ch17.055 GenCeption — Video Generation Models are General-Purpose Vision Learners
 
-> 📊 Level ⭐⭐⭐⭐ | 3.1KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
 
 GenCeption 是一项由 Google DeepMind、MIT、牛津大学等机构合作完成的 ECCV 2026 论文工作，作者包括何恺明、Andrew Zisserman 等视觉领域的代表性研究者。其核心目标是将大规模文生视频模型改造为通用的视频感知模型，用单一架构统一处理深度、分割、姿态和三维几何等多种视觉任务。这一思路试图回答一个根本性问题：视频生成是否就是视觉领域一直在寻找的"下一个 token 预测"？
 
@@ -4489,5 +4620,9 @@ GenCeption 是一项由 Google DeepMind、MIT、牛津大学等机构合作完�
 尽管 GenCeption 目前仍聚焦于感知任务，且 14B 模型的资源需求较高、多任务联合训练在某些任务上仍有退化，但它为视觉领域的统一预训练范式提供了重要启示：文生视频模型积累的视觉先验可以通过后训练高效迁移到多样化的下游任务中，这使其成为通向通用视觉智能的一个有前景的方向。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/genception-video-generation-general-purpose-vision-learner-2026.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

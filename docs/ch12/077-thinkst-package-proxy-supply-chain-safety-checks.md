@@ -2,7 +2,7 @@
 
 ## Ch12.077 Thinkst Package Proxy: Supply Chain Safety Checks
 
-> 📊 Level ⭐⭐ | 6.6KB | `entities/thinkst-package-proxy-supply-chain-security.md`
+> 📊 Level ⭐⭐ | 6.7KB | `entities/thinkst-package-proxy-supply-chain-security.md`
 
 # Thinkst Package Proxy: Supply Chain Safety Checks
 
@@ -115,6 +115,11 @@ Package Proxy 选择代理模式是正确的——在大型组织中，「不改
 ## 相关实体
 
 - [MCP Tools](https://github.com/QianJinGuo/wiki/blob/main/concepts/learning/chap-16-tools-mcp.md)：Agent 时代的工具协议，依赖安装安全性更关键
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

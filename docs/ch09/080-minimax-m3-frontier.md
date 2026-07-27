@@ -130,11 +130,11 @@ MiniMax M3 的三件套不是功能堆砌，而是一个系统能力的三个接
 5. **API 经济性已经发生结构性变化：** 同等价位下 M3 提供约 2 倍的 token 容量，DeepSeek API 的低价策略正在被主流厂商跟进。成本下行意味着 Agent 应用的大规模部署门槛降低，商业模式需要重新评估单位经济性。
 
 ## 相关实体
-- [Claude Code Open Source Model Enterprise Practice](../ch03/076-claude-code.html)
+- [Claude Code Open Source Model Enterprise Practice](../ch03/077-claude-code.html)
 - [Tencent Hunyuan Hy3 Preview Open Source Agent](../ch01/117-hy3-preview.html)
 - [Cline Open Source Agent Runtime Sdk](../ch03/035-agent.html)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01/011-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
-- [How Open Model Ecosystems Compound](../ch01/902-how-open-model-ecosystems-compound.html)
+- [How Open Model Ecosystems Compound](../ch01/910-how-open-model-ecosystems-compound.html)
 
 - [minimax token调用第一后：agentos现实与模型厂商的系统适配挑战](../ch03/035-agent.html)
 

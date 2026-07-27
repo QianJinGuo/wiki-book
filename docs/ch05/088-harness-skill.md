@@ -81,11 +81,15 @@ description: 为用户提供 AB 实验的创建与修改能力，支持实验创
 
 ## 与现有实体的关系
 
-- 补充 [50 Ai Agent Skills For Designers And Pms](../ch04/448-ai-agent-skill.html) 的工程实践角度
+- 补充 [50 Ai Agent Skills For Designers And Pms](../ch04/450-ai-agent-skill.html) 的工程实践角度
 
 ---
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-skill-engineering-alibaba-practice.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

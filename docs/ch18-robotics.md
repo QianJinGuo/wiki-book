@@ -325,7 +325,7 @@ Xiaomi-Robotics-U0 最核心的设计决策是**用统一的自回归框架覆�
 
 ## Ch18.004 LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
 
-> 📊 Level ⭐⭐ | 9.1KB | `entities/lingbot-va-20-embodied-video-action-pretrain-ant-lingbo-2026.md`
+> 📊 Level ⭐⭐ | 9.2KB | `entities/lingbot-va-20-embodied-video-action-pretrain-ant-lingbo-2026.md`
 
 # LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
 
@@ -387,6 +387,10 @@ LingBot-VA 2.0 不是孤立发布，而是蚂蚁灵波"机器人大脑 2.0"系�
 5. **构建"感知→理解→行动"的全栈能力而非单点突破**：蚂蚁灵波从 Depth → VLA → Video → VA 的发布序列表明，机器人智能的核心竞争力在于全栈能力而非单一基座模型。单点模型即使再强，如果缺乏空间感知、动作执行和推理效率的配套支持，也难以在真实场景中落地。建议具身智能团队在模型研发时同步规划感知、推理和控制的全链路优化。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lingbot-va-20-embodied-video-action-pretrain-ant-lingbo-2026.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -554,7 +558,7 @@ LingBot-Vision 和 LingBot-Depth 2.0 已通过奥比中光深度视觉实验室�
 
 ## Ch18.007 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
 
-> 📊 Level ⭐⭐ | 7.7KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
+> 📊 Level ⭐⭐ | 7.8KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
 
 # 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
 
@@ -637,6 +641,10 @@ LingBot-Vision 的"空间原生"定位与 [具身智能](https://github.com/Qian
 - 项目页: https://technology.robbyant.com/lingbot-vision
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lingbot-vision-spatial-native-vision-foundation-model-ant.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -871,7 +879,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ## Ch18.011 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
 
-> 📊 Level ⭐⭐ | 5.0KB | `entities/powering-the-future-of-robotics-in-europe-deepmind-2026-06.md`
+> 📊 Level ⭐⭐ | 5.1KB | `entities/powering-the-future-of-robotics-in-europe-deepmind-2026-06.md`
 
 # Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
 
@@ -943,6 +951,10 @@ Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧�
 **embodied AI 在欧洲的产业化布局图** —— 15 家初创覆盖 11 国 / 5 大领域，从工业自动化到神经外科微型机器人
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch18.012 Xiaomi-Robotics-1: 10万小时训出开箱即用机器人基座模型，探索具身智能 Scaling 效应
 
@@ -995,7 +1007,7 @@ Xiaomi-Robotics-1 验证了一条面向 [具身智能](https://github.com/QianJi
 
 ## Ch18.013 MiniCPM-Robot：面壁智能开源具身智能 VLA 模型系列
 
-> 📊 Level ⭐⭐ | 4.2KB | `entities/waic-minicpm-1-5b-model-2026.md`
+> 📊 Level ⭐⭐ | 4.3KB | `entities/waic-minicpm-1-5b-model-2026.md`
 
 # MiniCPM-Robot：面壁智能开源具身智能 VLA 模型系列
 
@@ -1022,6 +1034,10 @@ RobotTrack 基于面壁 MiniCPM4-0.5B 模型加 MLP 结构训练，参数规模�
 在产业化落地方面，面壁与乐聚机器人合作推出展厅导览和园区巡检方案，机器人在无网络环境下纯本地完成讲解和异常识别。与吉利汽车合作训练的 VLA 模型通过自研 **RoboHarness** 框架（基于 4 月发布的 EmbodiedClaw 框架），将 VLM 多模态大模型、VLA 模型、机器人本体和导航系统整合，落地到吉利生产仓储场景，支持长链条任务规划与执行，并配有可治理的数据闭环实现模型持续进化。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/waic-minicpm-1-5b-model-2026.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1208,7 +1224,7 @@ DM0.5 将 VLA（视觉-语言-动作）模型从精心搭建的"剧本环境"推
 
 ## Ch18.017 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
 
-> 📊 Level ⭐⭐ | 3.2KB | `entities/机器人端杯子之前在想什么afford-vla先找到杯子最趁手的那块区域.md`
+> 📊 Level ⭐⭐ | 3.3KB | `entities/机器人端杯子之前在想什么afford-vla先找到杯子最趁手的那块区域.md`
 
 # 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
 
@@ -1231,10 +1247,14 @@ Afford-VLA 包含三个关键步骤：
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/机器人端杯子之前在想什么afford-vla先找到杯子最趁手的那块区域.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch18.018 TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
 
-> 📊 Level ⭐⭐ | 3.0KB | `entities/poxiaointelligent-tactile-robot-foundation-model-2026.md`
+> 📊 Level ⭐⭐ | 3.1KB | `entities/poxiaointelligent-tactile-robot-foundation-model-2026.md`
 
 # TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
 
@@ -1255,6 +1275,10 @@ TouchWorld 让触觉同时承担两种角色：行动前预测"应该碰成什�
 TouchWorld 的核心架构包含 Predictive（触觉目标预测）和 Reactive（高频触觉反馈修正，频率为 World Model 的 4 倍）两个模块，在浇花、拔插头、擦锅等六项真机任务中达 65.0% 平均成功率。
 
 → [第 2 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/98-哈工大杨朔破晓智能touchworld-tactile-world-model-2026.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1472,7 +1496,7 @@ LingBot-VA 2.0 的推理架构采用异步 Foresight 推理机制——"边想�
 
 ## Ch18.022 景烁科技 — 具身智能数据基础设施
 
-> 📊 Level ⭐⭐⭐⭐ | 6.3KB | `entities/jingshuo-tech-embodied-ai-data-infrastructure-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 6.4KB | `entities/jingshuo-tech-embodied-ai-data-infrastructure-2026.md`
 
 # 景烁科技 — 具身智能数据基础设施
 
@@ -1535,10 +1559,14 @@ SkillForge 的核心产品理念是「数据基础设施即服务」——客户
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jingshuo-tech-embodied-ai-data-infrastructure-2026-07-15.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch18.023 NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
-> 📊 Level ⭐⭐⭐⭐ | 5.6KB | `entities/nvidia-aspire-robot-skill-library-code-as-policy.md`
+> 📊 Level ⭐⭐⭐⭐ | 5.7KB | `entities/nvidia-aspire-robot-skill-library-code-as-policy.md`
 
 # NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
@@ -1600,5 +1628,9 @@ Jim Fan 提出的持续学习新范式触及了深度学习的根基：训练不
 不同于 VLA 等端到端策略模型，Code as Policy 让大模型写可执行的机器人控制程序，调用感知模块、规划 API 和控制原语。机器人行为不再藏在神经网络权重里，而是变成可执行的操作代码，因此可以被 Agent 模型检查、修改、调试和优化。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-aspire-robot-skill-library-code-as-policy.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

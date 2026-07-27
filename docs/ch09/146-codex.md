@@ -2,7 +2,7 @@
 
 ## Ch09.146 逆了个大天！负责人亲自下场，教大家反代Codex
 
-> 📊 Level ⭐⭐ | 4.5KB | `entities/逆了个大天负责人亲自下场教大家反代codex.md`
+> 📊 Level ⭐⭐ | 4.7KB | `entities/逆了个大天负责人亲自下场教大家反代codex.md`
 
 # 逆了个大天！负责人亲自下场，教大家反代Codex
 
@@ -50,6 +50,11 @@ Claude 和 Codex 在 57 分钟内的来回出牌，说明额度/用量限制已�
 | 7月13日 01:02 | Claude 宣布延长 Fable 5 促销 + 增加周用量 50% |
 | 7月13日 01:52 | Tibo 引用 Claude 动态，评论「I think GPT 5.6 is pretty good」 |
 | 7月13日 01:59 | Codex 取消 5 小时限制 + 重置额度，Tibo 公布 600 万活跃用户 |
+
+---
+## 关联
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/逆了个大天负责人亲自下场教大家反代codex.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

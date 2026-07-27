@@ -111,7 +111,7 @@ eval 的核心价值不是衡量，而是**对齐团队认知**：当一个团�
 | **总分** | **81** | 强烈推荐入库 |
 
 ## 相关实体
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/076-claude-code.html)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/077-claude-code.html)
 
 ---
 

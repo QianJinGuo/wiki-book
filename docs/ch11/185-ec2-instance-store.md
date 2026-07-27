@@ -2,7 +2,7 @@
 
 ## Ch11.185 如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践
 
-> 📊 Level ⭐⭐ | 6.8KB | `entities/如何保护-ec2-实例存储instance-store数据不丢失场景分析与自动化防护实践.md`
+> 📊 Level ⭐⭐ | 6.9KB | `entities/如何保护-ec2-实例存储instance-store数据不丢失场景分析与自动化防护实践.md`
 
 # 如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践
 
@@ -100,6 +100,10 @@
     
     aws ec2 create-tags \
         --resources i-xxx \
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

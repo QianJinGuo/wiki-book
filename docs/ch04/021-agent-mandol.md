@@ -2,7 +2,7 @@
 
 ## Ch04.021 告别「碎片化」记忆：中科院开源轻量级内存原生Agent记忆系统Mandol
 
-> 📊 Level ⭐ | 3.6KB | `entities/告别碎片化记忆中科院开源轻量级内存原生agent记忆系统mandol.md`
+> 📊 Level ⭐ | 3.8KB | `entities/告别碎片化记忆中科院开源轻量级内存原生agent记忆系统mandol.md`
 
 # 告别「碎片化」记忆：中科院开源轻量级内存原生Agent记忆系统Mandol
 
@@ -64,6 +64,11 @@ Mandol 通过分层记忆模型、统一内存语义数据结构和智能量化�
 在这一过程中，Agent 的记忆模块不仅需要存储...
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/告别碎片化记忆中科院开源轻量级内存原生agent记忆系统mandol.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

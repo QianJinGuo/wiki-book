@@ -28,11 +28,11 @@ The inevitable need for an open model consortium 涉及agent领域的核心技�
 - **data趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1161-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1163-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [3Citzkdleedm0Olz9Wudrg](ch01/1236-0.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/238-agentic.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/232-openclaw.html)
+- [3Citzkdleedm0Olz9Wudrg](ch01/736-9.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/629-agentic.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/234-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
 
 ## 实践启示

@@ -119,7 +119,7 @@ TDD 落地不在代码层面，而是在接口测试用例上——一开始生�
 
 核心立场：**核心在线业务系统仍需要人守住架构这条线**——AI 代码腐化速度快、高质量代码和架构会反哺 AI、人对代码失去掌控后线上问题只能靠 AI 排查。但结果导向/容错率高的系统（如运营看板）适合 vibe coding 黑盒化。
 
-> 参见 [Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop](ch05/110-harness.html)——前者从第一性原理推导 Harness 方法论，本文提供生产级实现细节，两者互补。本文也补充了 [腾讯技术工程 Harness 探索之旅](ch05/112-harness-engineering.html) 中缺失的工程细节。
+> 参见 [Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop](ch05/018-harness.html)——前者从第一性原理推导 Harness 方法论，本文提供生产级实现细节，两者互补。本文也补充了 [腾讯技术工程 Harness 探索之旅](ch05/112-harness-engineering.html) 中缺失的工程细节。
 
 ## 标签
 

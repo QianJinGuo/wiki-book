@@ -2,7 +2,7 @@
 
 ## Ch11.108 SageMaker 推理可观测性：100+ 详细指标 + CloudWatch Insights Dashboard
 
-> 📊 Level ⭐⭐ | 9.3KB | `entities/sagemaker-inference-observability-cloudwatch-insights.md`
+> 📊 Level ⭐⭐ | 9.4KB | `entities/sagemaker-inference-observability-cloudwatch-insights.md`
 
 # SageMaker 推理可观测性：100+ 详细指标 + CloudWatch Insights Dashboard
 
@@ -123,6 +123,10 @@ SageMaker 推理端点原生发射 OpenTelemetry 格式指标到 CloudWatch，�
 ---
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/monitor-and-debug-generative-ai-inference-with-sagemaker-det.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Ch07.072 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程
 
-> 📊 Level ⭐⭐ | 5.1KB | `entities/tencent-wework-skill-requirement-development-pipeline.md`
+> 📊 Level ⭐⭐ | 5.2KB | `entities/tencent-wework-skill-requirement-development-pipeline.md`
 
 # 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程
 
@@ -70,7 +70,7 @@
 设计稿筛选不是靠 AI "觉得哪个像移动端稿"，而是用脚本做直方图统计。只要能用确定性程序解决的问题，就不该交给 LLM 的模糊判断。
 
 ### 外部知识载体 > 模型记忆
-TECH_SPEC.md 作为跨会话知识传承的外部文件，比依赖模型的内在记忆更可靠。这与 [Anthropic Long Running Agent Architecture 6H Retroforge](../ch01/971-anthropic.html) 的"文件系统 > 模型记忆"原则一致。
+TECH_SPEC.md 作为跨会话知识传承的外部文件，比依赖模型的内在记忆更可靠。这与 [Anthropic Long Running Agent Architecture 6H Retroforge](../ch01/1326-anthropic.html) 的"文件系统 > 模型记忆"原则一致。
 
 ### 阶段性验证
 每个阶段有独立验证退出标准，验证从编译（阶段⑤）到模拟器（阶段⑥）到知识沉淀（阶段⑦）逐级上升，避免"完成"的虚假声明。
@@ -87,6 +87,10 @@ TECH_SPEC.md 作为跨会话知识传承的外部文件，比依赖模型的内�
 | 代码生成率 | 94% | 84% (字段覆盖) |
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-wework-skill-pipeline-94pct-code-gen-2026-07-20.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

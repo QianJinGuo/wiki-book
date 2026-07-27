@@ -2,7 +2,7 @@
 
 ## Ch05.100 Databricks CEO用3000名程序员真实任务测试GLM 5.2 — Harness选择比模型更重要
 
-> 📊 Level ⭐⭐ | 3.7KB | `entities/databricks-glm-52-3000-engineer-benchmark-coding-agent.md`
+> 📊 Level ⭐⭐ | 3.8KB | `entities/databricks-glm-52-3000-engineer-benchmark-coding-agent.md`
 
 # Databricks CEO用3000名程序员真实任务测试GLM 5.2 — Harness选择比模型更重要
 
@@ -39,6 +39,10 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/databricks-glm-52-3000-engineer-benchmark-coding-agent.md)
 
 > 参见 [AMD跑GLM 5.2成本只要英伟达一半](https://github.com/QianJinGuo/wiki/blob/main/entities/amd跑glm-52成本只要英伟达一半.md) 从不同角度报告 GLM 5.2 推理成本。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

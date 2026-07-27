@@ -2,7 +2,7 @@
 
 ## Ch05.123 Harness 工程可视化：Vibe Coding 中重建工程可控性
 
-> 📊 Level ⭐⭐⭐ | 12.9KB | `entities/routa-harness-engineering-visualization.md`
+> 📊 Level ⭐⭐⭐ | 13.0KB | `entities/routa-harness-engineering-visualization.md`
 
 # Harness 工程可视化：Vibe Coding 中重建工程可控性
 
@@ -84,6 +84,10 @@ Review Trigger 的设计哲学体现了从"依赖人的判断"到"系统化控�
 - 反模式：规则数量持续增长但触发率持续下降；反馈日志膨胀但无人查阅
 
 ## 关联阅读
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

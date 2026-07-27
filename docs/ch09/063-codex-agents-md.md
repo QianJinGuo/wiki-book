@@ -2,7 +2,7 @@
 
 ## Ch09.063 Codex AGENTS.md 项目说明书完整指南
 
-> 📊 Level ⭐⭐ | 9.8KB | `entities/codex-agentsmd-project-instructions-rookie.md`
+> 📊 Level ⭐⭐ | 9.9KB | `entities/codex-agentsmd-project-instructions-rookie.md`
 
 # Codex AGENTS.md 项目说明书完整指南
 
@@ -150,6 +150,10 @@ Codex 按字节（默认 32 KiB）与 Claude Code 按行数（建议 ~200 行）
 | 大小上限 | 按字节（默认 32 KiB） | 按行数（建议 200 行内） |
 | 发现顺序 | override → AGENTS.md → fallback 文件名 | 逐级 CLAUDE.md |
 | 拼接规则 | 拼接不覆盖，越近越优先 | 拼接不覆盖 |
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

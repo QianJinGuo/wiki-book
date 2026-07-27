@@ -2,7 +2,7 @@
 
 ## Ch04.579 Anthropic Agent Platform 进化：三位高管深度对谈
 
-> 📊 Level ⭐⭐ | 4.2KB | `entities/anthropic-agent-platform-evolution-three-executives.md`
+> 📊 Level ⭐⭐ | 4.4KB | `entities/anthropic-agent-platform-evolution-three-executives.md`
 
 # Anthropic Agent Platform 进化：三位高管深度对谈
 
@@ -41,6 +41,11 @@ Anthropic 三位负责 Claude Platform 的高管——管理式智能体产品�
 Claude Platform 正在推的重点概念是「结果」：用户告诉智能体什么样的结果算好结果，给出一份评分标准，设定尝试次数。未来会接近用户告诉 Claude 想要什么结果、给出一个预算，然后放手不管的状态。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-agent-platform-evolution-three-executives.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

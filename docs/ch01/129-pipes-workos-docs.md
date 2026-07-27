@@ -36,10 +36,10 @@ Pipes 在 token 刷新上做了自动化处理，API 返回的始终是"新鲜"�
 
 ## 关联阅读
 ## 相关实体
-- [Workos Pipes Third Party Integrations](ch01/058-workos-pipes-third-party-integrations-without-the-headache.html)
+- [Workos Pipes Third Party Integrations](ch01/059-workos-pipes-third-party-integrations-without-the-headache.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](ch01/514-microsoft-for-startups-microsoft.html)
-- [Running An Ai Native Engineering Org](ch01/053-running-an-ai-native-engineering-org.html)
+- [Microsoft For Startups Microsoft](ch01/516-microsoft-for-startups-microsoft.html)
+- [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pipes-workos-docs.md)
 

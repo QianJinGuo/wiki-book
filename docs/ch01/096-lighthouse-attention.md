@@ -47,10 +47,10 @@ Lighthouse 选择了**对称池化**：Q、K、V 在金字塔每一层按相同�
 
 ## 关联阅读
 ## 相关实体
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/091-ai.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/092-ai.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/744-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/091-ai.html)
+- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/747-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/092-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lighthouse_attention.md)
 

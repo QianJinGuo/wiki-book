@@ -2,7 +2,7 @@
 
 ## Ch01.026 Introducing TabFM: A zero-shot foundation model for tabular data
 
-> 📊 Level ⭐ | 9.0KB | `entities/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-d.md`
+> 📊 Level ⭐ | 9.1KB | `entities/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-d.md`
 
 # Introducing TabFM: A zero-shot foundation model for tabular data
 
@@ -108,6 +108,10 @@ TabFM 的差异化优势在于 Google 的规模和资源——可用大规模预
 5. **等待生态成熟度评估**：在生产环境中，优先选择已有完善部署生态的方案。TabFM 在 2026 年仍处于早期阶段，建议在非关键路径上先进行试点验证。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-d.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

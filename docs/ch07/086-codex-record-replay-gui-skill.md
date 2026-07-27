@@ -2,7 +2,7 @@
 
 ## Ch07.086 Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获
 
-> 📊 Level ⭐⭐ | 3.1KB | `entities/codex-record-replay-skill-generation-vibecoder.md`
+> 📊 Level ⭐⭐ | 3.3KB | `entities/codex-record-replay-skill-generation-vibecoder.md`
 
 # Codex Record & Replay：GUI 演示到可复用 Skill 的工作流捕获
 
@@ -29,7 +29,7 @@ Record & Replay 在 Codex 生态中的位置：
 
 Record & Replay 是 **Skill 生成器**——降低 Skill 创作门槛，把散落在个人手里的操作经验变成可维护资产。
 
-与 [Agent Skill 写作指南](../ch04/270-agent-skill.html) 的关系：传统 Skill 写作要求人手动定义触发条件、输入拆分、步骤表达、失败处理；Record & Replay 提供了"先演示再生成草稿"的替代路径。
+与 [Agent Skill 写作指南](../ch04/271-agent-skill.html) 的关系：传统 Skill 写作要求人手动定义触发条件、输入拆分、步骤表达、失败处理；Record & Replay 提供了"先演示再生成草稿"的替代路径。
 
 ## 适用场景与边界
 
@@ -43,6 +43,11 @@ Record & Replay 是 **Skill 生成器**——降低 Skill 创作门槛，把散�
 - 依赖 Computer Use 权限和安全边界
 - 官方未公开底层事件 schema（坐标 vs 控件树 vs OCR）
 - `[features].computer_use = false` 会同时禁用 Record & Replay
+
+---
+## 关联
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-record-replay-skill-generation-vibecoder.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
