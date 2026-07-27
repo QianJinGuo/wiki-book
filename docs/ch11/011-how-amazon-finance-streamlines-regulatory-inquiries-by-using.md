@@ -120,7 +120,7 @@ If you're ready to modernize your knowledge-intensive processes with generative 
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/162-amazon-bedrock.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/549-amazon-bedrock-agentcore.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/549-amazon-bedrock-agentcore.html)
-- [Introducing Claude Platform On Aws](../ch01/470-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
+- [Introducing Claude Platform On Aws](../ch01/149-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
 
 ---
 

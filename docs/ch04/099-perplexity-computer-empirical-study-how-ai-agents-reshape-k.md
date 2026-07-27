@@ -33,9 +33,9 @@ AI 时代，验证信息的准确性和完整性比从零生成信息更重要�
 ## 相关实体
 - [Perplexity Search As Code Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-search-as-code-generation.md)
 - [Agent Harness Observability Production](../ch05/058-agent-harness.html)
-- [Harness Engineering Systematic Explainer](../ch05/118-harness-engineering.html)
+- [Harness Engineering Systematic Explainer](../ch05/112-harness-engineering.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/336-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/018-harness.html)
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/110-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perplexity-computer-knowledge-work-empirical-study.md)
 

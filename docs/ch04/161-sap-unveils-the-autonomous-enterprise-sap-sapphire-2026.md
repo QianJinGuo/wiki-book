@@ -128,8 +128,8 @@ SAP 的多基础模型策略值得借鉴。在企业内部，应尽早评估不�
 - [Sap Unveils The Autonomous Enterprise](ch04/108-sap-unveils-the-autonomous-enterprise.html)
 - [Sap Unveils Autonomous Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/sap-unveils-autonomous-enterprise.md)
 - [Enterprise Software Moats Agent Era](../ch03/035-agent.html)
-- [The Ui Is Dead Long Live The Agent](ch04/600-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/219-amazon-quick.html)
+- [The Ui Is Dead Long Live The Agent](ch04/372-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/220-amazon-quick.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/news-sap-com-sap-unveils-the-autonomous-enterprise.md)
 - [iii.dev](../ch01/385-iii-dev.html)

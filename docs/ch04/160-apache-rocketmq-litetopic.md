@@ -198,7 +198,7 @@ LiteTopic 适合以下场景：
 
 ## 相关实体
 - [Rocket Mq 5 Litetopic Ai Agent Async Cloudnative](ch04/298-ai-agent.html)
-- [Wow Harness V3 Governance Protocol](../ch05/018-harness.html)
+- [Wow Harness V3 Governance Protocol](../ch05/110-harness.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Agent Skills Teams Architecture Evolution Selection Guide](ch04/239-agent-skills-teams.html)
 - [Hermes Agent K2 6 Multi Agent](../ch03/093-hermes-agent.html)

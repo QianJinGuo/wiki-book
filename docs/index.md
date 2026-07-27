@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3454 篇一手 AI 材料系统编撰的开源读物。
+> 全球第一部基于 3456 篇一手 AI 材料系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -11,7 +11,7 @@
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
 | 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1525 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1233 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1235 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 487 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 165 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 44 篇 |
@@ -65,20 +65,20 @@
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 718 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 719 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
   - ⭐ 五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-
   - ⭐ AgentRun
   - ⭐ Autoresearch: The feedback loop behind self-improving agents
+  - ⭐ 前端如何消费 Agent 的 SSE 流 — Agent 前端工程实践
   - ⭐ Building AI Agents in Accounting
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
-  - ⭐ From idea to AI app: creating intelligent research assistants
-  - ... 共 **718** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **719** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 134 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 135 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
@@ -89,7 +89,7 @@
   - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ QQ音乐 Harness Engineering 实践（大仓多服务场景）
   - ⭐⭐ 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
-  - ... 共 **134** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **135** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 46 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -156,7 +156,7 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **31** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1233 篇**
+> 📖 **本篇共 1235 篇**
 
 ---
 
@@ -262,11 +262,11 @@
 ### [Ch18 机器人与具身智能](ch18-robotics.md) — 23 篇
 > 从数字到物理：强化学习、仿真、人形机器人
 
-  - ⭐ 小米机器人汽车工厂柔性操作与多机协同实战
   - ⭐⭐ 逐际动力 Pre-IPO 融资 — 具身智能商业化路径
   - ⭐⭐ 机器人为什么要拟人？终于有人正确回答了
   - ⭐⭐ 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
   - ⭐⭐ LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
+  - ⭐⭐ 小米机器人汽车工厂柔性操作与多机协同实战
   - ⭐⭐ 刚刚，首个空间原生的具身视觉基模开源！机器人更会看我们的世界了
   - ⭐⭐ 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
   - ⭐⭐ 啊？这是机器人的手？！
@@ -308,6 +308,6 @@
 
 ---
 
-**📊 全书收录：3454 篇实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3456 篇实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-07-27 | 来源: ~/wiki/entities/

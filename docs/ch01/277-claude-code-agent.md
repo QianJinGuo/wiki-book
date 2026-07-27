@@ -50,7 +50,7 @@
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch03/093-hermes-agent.html)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/076-claude-code.html)
 - [Claude Code 架构深度解析](../ch03/076-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/427-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/428-claude-code-harness-deep-understanding.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/407-agent-skills.html)
@@ -63,11 +63,11 @@
 - [Agent Memory 系统性框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1232-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/429-claude.html)
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/076-claude-code.html)
-- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/018-harness.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/110-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/110-harness.html)
 - [claude-code-7-layer-memory-architecture](../ch03/076-claude-code.html)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)
 

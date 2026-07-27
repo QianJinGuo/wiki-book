@@ -105,7 +105,7 @@ Matt Pocock Skills 不只是零散命令，它们串成一条完整开发流：
 | Spec-Kit | 规格驱动开发 | 企业项目、需求评审先行 | 前期投入大，过程可控 |
 
 → [Superpowers 6.0 SDD 评审重写](https://github.com/QianJinGuo/wiki/blob/main/entities/superpowers-6-sdd-review-redesign-file-handoff.md)
-→ [三器合一工程化实战](../ch05/106-ai-coding.html)
+→ [三器合一工程化实战](../ch05/107-ai-coding.html)
 
 ## 相关概念
 - SDD（Spec-Driven Development） — 规格驱动开发，与 grill-me/grill-with-docs 理念相通

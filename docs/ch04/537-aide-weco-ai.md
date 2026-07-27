@@ -69,7 +69,7 @@ AIDE₄₇ 和 AIDE₈₅ 在三项**未参与版本筛选的外部任务**上�
 
 ## 与已有 RS 框架对比
 
-AIDE² 区别于此前 [Lossy Self-Improvement](../ch01/290-lossy-self-improvement.html) 和 [AI Self-Improvement / Bootstrapping](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md) 的核心在于：它不更新模型权重，而是在 **harness 层**进行元优化，并且首次在实验上证明了改进可以**跨任务迁移**。这与 [Harness Engineering 自我改进综述](../ch05/118-harness-engineering.html) 中指出的方向一致——harness 本身可以成为自我改进的优化对象。
+AIDE² 区别于此前 [Lossy Self-Improvement](../ch01/290-lossy-self-improvement.html) 和 [AI Self-Improvement / Bootstrapping](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md) 的核心在于：它不更新模型权重，而是在 **harness 层**进行元优化，并且首次在实验上证明了改进可以**跨任务迁移**。这与 [Harness Engineering 自我改进综述](../ch05/112-harness-engineering.html) 中指出的方向一致——harness 本身可以成为自我改进的优化对象。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aide-squared-recursive-self-improvement-weco-2026-07-16.md)
 

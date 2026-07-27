@@ -102,13 +102,13 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 
 - [Obsidian Claude Code Integration Guide](../ch09/136-obsidian-claude-code-integration-guide.html) — 早期版本的集成指南
 - [Obsidian Claude Code Integration](../ch09/136-obsidian-claude-code-integration-guide.html) — 集成实践综述
-- [Obsidian](../ch01/940-claude-code-memory-setup-obsidian-graphify.html) — Obsidian 实体页
-- [Obsidian Llm Wiki Local Kytmanov](../ch01/901-llm.html) — 本地 LLM Wiki 实践
+- [Obsidian](../ch01/942-claude-code-memory-setup-obsidian-graphify.html) — Obsidian 实体页
+- [Obsidian Llm Wiki Local Kytmanov](../ch01/617-llm.html) — 本地 LLM Wiki 实践
 - [Claude Code 7 Layer Memory Architecture](ch03/076-claude-code.html) — Claude Code 的 7 层记忆架构
 - [Agent Memory Architecture](../ch04/420-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构综述
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
 - [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — Agent 记忆生命周期哲学
-- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](../ch01/1232-claude.html)
+- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](../ch01/429-claude.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

@@ -15,9 +15,9 @@
 ## 相关实体
 - [Aws Sagemaker Capacity Aware Inference Fallback](ch01/342-aws-sagemaker-capacity-aware-inference-fallback.html)
 - [Amazon Bedrock Model Inference Serverless Architecture Case Study](../ch11/162-amazon-bedrock.html)
-- [Nvidia Agentic Systems Extreme Co Design](../ch04/631-agentic.html)
+- [Nvidia Agentic Systems Extreme Co Design](../ch04/238-agentic.html)
 - [Sensnova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/687-deepseek-v4.html)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/688-deepseek-v4.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.blocksandfiles.com-5241795.md)
 

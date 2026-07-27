@@ -38,7 +38,7 @@ Agent 流量的模式不同于人类——需要独立的异常检测和安全�
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/298-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md)
-- [olmo-eval: an evaluation workbench for the model development](ch01/825-olmo-eval-an-evaluation-workbench-for-the-model-development.html)
+- [olmo-eval: an evaluation workbench for the model development](ch01/827-olmo-eval-an-evaluation-workbench-for-the-model-development.html)
 
 ## 摘要
 

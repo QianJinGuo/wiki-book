@@ -90,7 +90,7 @@ Bedrock AgentCore 提供的是"Agent 运行时"——一个假设你要跑 AI Ag
 - **Firecracker 的启动速度**（<125ms）使得按需创建 VM 成为可行选项
 - **统一底座**意味着 AgentCore 的 Session 和 MicroVM 的 VM 在安全模型上等价
 
-这种"统一底座 + 分层抽象"的策略——底层用同一套安全原语，上层暴露不同抽象级别的 API——是 AI 基础设施设计中的优秀实践，值得 [Harness 工程](../ch05/118-harness-engineering.html) 平台设计参考。
+这种"统一底座 + 分层抽象"的策略——底层用同一套安全原语，上层暴露不同抽象级别的 API——是 AI 基础设施设计中的优秀实践，值得 [Harness 工程](../ch05/112-harness-engineering.html) 平台设计参考。
 
 ### 代码沙箱：AI Agent 安全架构的关键组件
 
@@ -123,7 +123,7 @@ Lambda MicroVMs 和 Bedrock AgentCore 的出现标志着 AI Agent 运行时正�
 - [Amazon Bedrock Agent](../ch04/549-amazon-bedrock-agentcore.html)
 - [Agent 代码沙箱安全](../ch04/401-sandboxing-an-ai-agent.html)
 - [AWS Lambda Serverless](ch11/161-what-you-need-to-know-about-lambda-microvms.html)
-- [Harness Engineering](../ch05/118-harness-engineering.html)
+- [Harness Engineering](../ch05/112-harness-engineering.html)
 - [Agent 上下文管理](../ch05/058-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lambda-microvms-vs-bedrock-agentcore-ai-agent-comparison.md)

@@ -90,7 +90,7 @@ Codex goals允许设置token预算来控制agent运行成本。实际项目中�
 - [Matt Pocock grill-me skill](https://www.aihero.dev/my-grill-me-skill-has-gone-viral)
 
 ## ## 相关实体
-- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/018-harness.html)
+- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/110-harness.html)
 
 ## ## 相关实体
 - [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
@@ -105,7 +105,7 @@ Codex goals允许设置token预算来控制agent运行成本。实际项目中�
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/035-agent.html)
 
 ## ## 相关实体
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/106-ai-coding.html)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/107-ai-coding.html)
 
 ---
 

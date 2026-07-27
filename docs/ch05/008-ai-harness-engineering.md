@@ -294,14 +294,14 @@ OpenAI 那条铁律特别值得抄下来：「当出了问题，修复方案几�
 ## 相关实体
 
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/134-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/631-agentic.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/231-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/238-agentic.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/232-openclaw.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [Agent Harness Context Management Working Set](ch05/058-agent-harness.html)
-- [Agent Harness Engineering Survey 2026](ch05/118-harness-engineering.html)
+- [Agent Harness Engineering Survey 2026](ch05/112-harness-engineering.html)
 - [Agent Harness Architecture](ch05/058-agent-harness.html)
-- [Harness Engineering Framework](ch05/118-harness-engineering.html)
+- [Harness Engineering Framework](ch05/112-harness-engineering.html)
 - [Harness Engineering 7 Layers Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
 - [Harness Context Window Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-context-window-management.md)
 - [Harness Tool Design Evolution](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-tool-design-evolution.md)
@@ -309,12 +309,12 @@ OpenAI 那条铁律特别值得抄下来：「当出了问题，修复方案几�
 - [Harness As Product Surface](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-as-product-surface.md)
 - [Harness Long Running Task](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-long-running-task.md)
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
-- [Agentic Harness Engineering Ahe](ch05/118-harness-engineering.html)
+- [Agentic Harness Engineering Ahe](ch05/112-harness-engineering.html)
 - [Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - [Evaluation Harness Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
 - [Harness Gate Evaluation](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-gate-evaluation.md)
-- [harness engineering 的未来——什么会消失，什么不会](ch05/118-harness-engineering.html)
+- [harness engineering 的未来——什么会消失，什么不会](ch05/112-harness-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

@@ -76,7 +76,7 @@ SurgMotion 标志着手术 AI 领域的一个关键转折点：从「单帧感�
 
 ## 相关实体
 
-- [Agent Architecture Harness](../ch05/018-harness.html)
+- [Agent Architecture Harness](../ch05/110-harness.html)
 - [AFAC2026 Financial AI Agent](../ch04/298-ai-agent.html)
 - [维纳智能登上Nature通讯](../ch05/091-ai.html)
 

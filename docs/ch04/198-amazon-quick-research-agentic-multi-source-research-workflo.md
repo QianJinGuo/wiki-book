@@ -138,7 +138,7 @@ Amazon Quick Research 的核心设计不是一次性检索，而是将**研究�
 - [Aws Bedrock Halliburton Seismic Workflow Genai](../ch11/009-aws-bedrock.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/549-amazon-bedrock-agentcore.html)
 - [Build An Enterprise Observability Solution For Amazon Quick](../ch11/021-build-an-enterprise-observability-solution-for-amazon-quick.html)
-- [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/199-aderant-transforms-cloud-operations-with-amazon-quick.html)
+- [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/200-aderant-transforms-cloud-operations-with-amazon-quick.html)
 
 ---
 

@@ -47,7 +47,7 @@ Flow2Spec 不要求先做大规模文档工程。知识在使用过程中自然�
 - [Skill 设计模式](ch04/272-skill.html) — Flow2Spec 的 f2s-* 命令本质上是预定义的 Skill，但其知识路由协议是比 Skill 更高一层的组织抽象
 - [AI Agent Skill 系统设计：淘宝技术工程实践](ch04/272-skill.html) — Flow2Spec 的 HARD-GATE 等价物是五层约束，前向测试等价于 verify 步骤
 - [Loop Engineering](../ch05/005-loop-engineering.html) — Flow2Spec 的开发闭环（req→clarify→tech→kb→code→sync→commit）是 Loop Engineering 在产品工程场景的具体实现
-- [Memory in the LLM Era](../ch01/901-llm.html) — Flow2Spec 的 f2s-kb-distill 和 memory 系统中的抽取模块本质上是同一件事的不同抽象层级
+- [Memory in the LLM Era](../ch01/617-llm.html) — Flow2Spec 的 f2s-kb-distill 和 memory 系统中的抽取模块本质上是同一件事的不同抽象层级
 
 ## 深度分析
 

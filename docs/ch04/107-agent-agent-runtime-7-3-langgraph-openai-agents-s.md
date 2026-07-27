@@ -117,7 +117,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 **Agent Loop / Context / Tool 系列**(本文 7 职责的前 3 块与这些 entity 强相关):
 
 - vs **[阿里云 Agent 演化四阶段六维度](../ch03/035-agent.html)** — 阿里云是**演化阶段视角**;本文是**职责解剖视角**。两者都讲 Runtime 但切入维度不同
-- vs **[Harness Engineering Framework](../ch05/118-harness-engineering.html)** — Harness 是 Runtime 的**外壳**;Runtime 是 Harness 的**内脏**。Runtime 7 职责 = Harness 的实现细节
+- vs **[Harness Engineering Framework](../ch05/112-harness-engineering.html)** — Harness 是 Runtime 的**外壳**;Runtime 是 Harness 的**内脏**。Runtime 7 职责 = Harness 的实现细节
 - vs **[Agent Harness 架构设计与生产实践](../ch05/058-agent-harness.html)** — Production 视角更全;本文是入门视角
 
 **框架生态**(本文 3 主流框架):
@@ -125,7 +125,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - vs **[Google Agent Executor Distributed Runtime](ch04/003-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
 - vs **[Anthropic Claude Managed Agents Platform](../ch01/219-anthropic-claude-managed-agents.html)** — Anthropic Managed Agents 视角
 - vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/549-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
-- vs **[AgentCore Harness](ch04/676-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/226-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
+- vs **[AgentCore Harness](ch04/677-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/226-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
 
 **Runtime 7 职责 ↔ 二曲线系列 13 篇主题映射**(本文是系列 4/13,后续 9 篇已规划):
 
@@ -159,7 +159,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 ### 5. Runtime 是模型可替换性的工程底座,与"Token 资本"哲学异曲同工
 
-本文核心洞察 — **Runtime 把 LLM 差异封装在执行层，让业务不被任一模型锁定** — 与 [纳德拉「Token 资本」论](../ch12/003-token.html) 的"模型可替换性是主权测试"哲学在工程层面高度吻合。[Harness Engineering Framework](../ch05/118-harness-engineering.html) 将 Runtime 定位为 Harness 的内脏，而 Runtime 的模型隔离能力正是 Harness 层实现"模型无关性"的底层机制。
+本文核心洞察 — **Runtime 把 LLM 差异封装在执行层，让业务不被任一模型锁定** — 与 [纳德拉「Token 资本」论](../ch12/003-token.html) 的"模型可替换性是主权测试"哲学在工程层面高度吻合。[Harness Engineering Framework](../ch05/112-harness-engineering.html) 将 Runtime 定位为 Harness 的内脏，而 Runtime 的模型隔离能力正是 Harness 层实现"模型无关性"的底层机制。
 
 ## 实践启示(5 条 actionable)
 
@@ -183,12 +183,12 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - [若飞 Fable 5 Runtime Contract](../ch01/177-claude-fable-5.html)
 - [阿里云安全护栏三域](../ch05/091-ai.html)
 - [阿里云 Agent 演化四阶段](../ch03/035-agent.html)
-- [Harness Engineering Framework](../ch05/118-harness-engineering.html)
+- [Harness Engineering Framework](../ch05/112-harness-engineering.html)
 - [Agent Harness 架构设计与生产实践](../ch05/058-agent-harness.html)
 - [Google Agent Executor Runtime](ch04/003-agentrun.html)
 - [Anthropic Claude Managed Agents](../ch01/219-anthropic-claude-managed-agents.html)
 - [Amazon Bedrock AgentCore Runtime](ch04/549-amazon-bedrock-agentcore.html)
-- [AgentCore Harness](ch04/676-agentcore-harness.html)
+- [AgentCore Harness](ch04/677-agentcore-harness.html)
 - [纳德拉「Token 资本」论](../ch12/003-token.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

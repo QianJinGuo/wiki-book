@@ -14,8 +14,8 @@ LLM 部署后无法继续学习——预训练依赖海量算力，微调成本�
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/407-agent-skills.html)
 - [Agent Skills Comprehensive Survey](ch04/407-agent-skills.html)
 - [使用 Agent Skills 做知识库检索能比传统 Rag 效果更好吗](ch04/407-agent-skills.html)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/018-harness.html)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/018-harness.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/110-harness.html)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/110-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memento-skills-agent-self-evolving.md)
 

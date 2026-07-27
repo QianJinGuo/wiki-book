@@ -127,12 +127,12 @@ Demo 级循环抹掉关键信息（哪个工具失败/为什么/下一步），�
 → [Agent Memory 架构](../ch04/420-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 ## 相关实体
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/118-harness-engineering.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch05/118-harness-engineering.html)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch05/118-harness-engineering.html)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/112-harness-engineering.html)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch05/112-harness-engineering.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch05/112-harness-engineering.html)
 
-- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](../ch01/1232-claude.html)
-- [Agent架构关键变化：Harness正在成为新后端](ch05/018-harness.html)
+- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](../ch01/429-claude.html)
+- [Agent架构关键变化：Harness正在成为新后端](ch05/110-harness.html)
 
 ## 深度分析
 **工程赤字的本质是"模型可替换性假设"与"工程确定性"之间的结构性矛盾。** 当团队把 Agent 当作"只要模型够强就不用管周围工程"的产品时，边界、校验、隔离、追踪全都变成了事后补丁。这个矛盾在工具契约上表现最集中：签名约束代码但不约束模型传入值，这个设计缺陷会在每一个工具里复制。修复它需要的不是加强某个工具，而是改变整个框架的输入校验哲学。

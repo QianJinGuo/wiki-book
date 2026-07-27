@@ -31,7 +31,7 @@ Google 新推出 Interactions API（Beta），借鉴 OpenAI Responses 的服务�
 5. **将 1M 输入 tokens 纳入系统设计考量**：超长上下文窗口为 RAG 替代、多文档联合分析、大规模代码库理解等场景提供了新选择，但需注意输出 tokens 上限（65K）仍限制了单次生成的内容量 。
 ## 相关实体
 - [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch01/057-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.html)
-- [Google Debuts Gemini Focused Updates At Io 2026](ch01/908-20.html)
+- [Google Debuts Gemini Focused Updates At Io 2026](ch01/910-20.html)
 - [Computer Use 45X More Expensive Than Structured Apis](../ch04/269-computer-use-45x-more-expensive-than-structured-apis.html)
 - [Google Shipped Gemini 31 Flash Lite In General Availability](../ch05/091-ai.html)
 - [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)

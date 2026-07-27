@@ -73,8 +73,8 @@ DSpark 在 Domino 的算法主线基础上，增加了 confidence head（估计�
 
 ## 相关实体
 
-- [生产级 Agent 全景架构](../ch05/018-harness.html)
-- [LLM 语义聚类与标签体系](ch01/901-llm.html)
+- [生产级 Agent 全景架构](../ch05/110-harness.html)
+- [LLM 语义聚类与标签体系](ch01/617-llm.html)
 - [注意力塌陷与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/大三本科生一作-交出7-92倍加速的投机解码新答卷-deepseek和阶跃星辰双双引用.md)

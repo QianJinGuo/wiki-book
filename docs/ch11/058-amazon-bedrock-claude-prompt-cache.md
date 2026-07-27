@@ -58,17 +58,17 @@ Claude thinking (extended thinking 或 adaptive thinking) 引入了一个特殊�
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/162-amazon-bedrock.html)
 
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/060-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/682-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/683-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/549-amazon-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [SunFinance: Textract+Claude准确率90.8%的ID提取方案](../ch05/091-ai.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/292-bedrock.html)
 - [Amazon Finance 监管查询自动化](ch11/011-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html) — Bedrock + RAG 在金融合规场景的实战：多级 KV Cache、Query Expansion、DynamoDB 状态管理的完整架构
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/737-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/738-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/134-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [yc掌门人60天写了60万行代码：gstack开源](../ch01/656-garry-tan.html)
-- [markdown 不会过时](../ch01/790-markdown.html)
-- [miro-amazon-bedrock-bug-routing](ch11/175-miro-amazon-bedrock-bug.html)
+- [yc掌门人60天写了60万行代码：gstack开源](../ch01/657-garry-tan.html)
+- [markdown 不会过时](../ch01/792-markdown.html)
+- [miro-amazon-bedrock-bug-routing](ch11/176-miro-amazon-bedrock-bug.html)
 
 ---
 

@@ -125,7 +125,7 @@ Dynamic Workflows 消耗更多 token——多个 subagent 各有独立上下文�
 
 - [Claude Code Dynamic Workflows（已有合并实体）](ch09/093-claude-code-dynamic-workflows.html)
 - [Embabel](../ch07/021-embabel.html)
-- [扣子 3.0](../ch01/696-3-0.html)
+- [扣子 3.0](../ch01/1185-3-0.html)
 - [Meta Skill](../ch07/025-meta-skill.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
