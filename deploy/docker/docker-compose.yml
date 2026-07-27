@@ -1,6 +1,13 @@
 services:
   wiki-book:
-    build: .
+    build:
+      context: .
+      dockerfile: deploy/docker/Dockerfile
+      args:
+        http_proxy: ""
+        https_proxy: ""
+        HTTP_PROXY: ""
+        HTTPS_PROXY: ""
     container_name: wiki-book
     ports:
       - "8002:8080"
