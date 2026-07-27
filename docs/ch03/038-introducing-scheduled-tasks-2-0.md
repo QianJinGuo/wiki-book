@@ -77,13 +77,13 @@ Project 在此版本中成为定时任务的「**上下文容器**」——定�
 5. **执行环境选择**：资源密集型任务使用云端计算资源，避免拖慢本地设备
 ## 相关实体
 - [Introducing Scheduled Tasks 2 0](ch03/038-introducing-scheduled-tasks-2-0.html)
-- [Skill Development Guide Aliyun 2026](../ch04/272-skill.html)
+- [Skill Development Guide Aliyun 2026](../ch04/273-skill.html)
 - [Openclaw Multi Agent Team Practice](../ch04/050-openclaw-multi-agent-team-practice-v2.html)
-- [Strands Agents Cloud Cost Optimizer](ch03/035-agent.html)
+- [Strands Agents Cloud Cost Optimizer](../ch04/689-strands-agents.html)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/manus.im-manus-schedules.md)
-- [10x is a lot](ch03/027-10x-is-a-lot.html)
+- [10x is a lot](ch03/028-10x-is-a-lot.html)
 - [还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍](https://github.com/QianJinGuo/wiki/blob/main/entities/还在手写-osgetenvpydantic-settings-让你配置管理效率翻倍.md)
 
 ---

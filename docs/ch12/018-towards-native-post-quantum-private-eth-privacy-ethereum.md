@@ -2,7 +2,7 @@
 
 ## Ch12.018 Towards Native Post-Quantum Private ETH - Privacy - Ethereum Research
 
-> 📊 Level ⭐⭐ | 17.9KB | `entities/towards-native-post-quantum-private-eth.md`
+> 📊 Level ⭐⭐ | 18.0KB | `entities/towards-native-post-quantum-private-eth.md`
 
 # Towards Native Post-Quantum Private ETH - Privacy - Ethereum Research
 
@@ -90,6 +90,10 @@ It is possible to design key material using Pseudo Random Functions (PRFs) only.
 Since ETH secures billions in value, we avoided discussing exotic primitives enabling things like private shared state. Our rationale for not considering more involved cryptography and functionalities is threefold: we would like to (1) design our protocol with a walkaway in mind, (2) facilitate any downstream formal verification effort and (3) re-use already understood and production deployed primitives securing billions in value today.
 
 Another additional guard to consider would also consist in designing a progressive pool uncapping. Defined at the protocol level, that progressive uncapping would consist in gradually increasing deposit amounts to minimize catastrophic size losses in the early days of the enshrined pool’s life.
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

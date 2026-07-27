@@ -108,11 +108,11 @@
 - [OpenSquilla](../ch01/011-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html) —— Meta Skill 的实现载体
 - [SkillOpt](../ch05/043-skillopt.html) —— 互补（Skill 变好 vs Skill 变多）
 - [Impeccable](../ch05/001-impeccable.html) —— skill 内命令的范例
-- [Agent Skill 编写指南](../ch04/270-agent-skill.html)
-- [10 篇论文看懂 AI Agent Skill](../ch04/272-skill.html)
-- [Agent Skills 系统性综述](../ch04/407-agent-skills.html)
-- [Skills 系统设计三路对比](../ch04/272-skill.html)
-- [Agent/Skills/Teams 架构演进](../ch04/239-agent-skills-teams.html)
+- [Agent Skill 编写指南](../ch04/271-agent-skill.html)
+- [10 篇论文看懂 AI Agent Skill](../ch04/273-skill.html)
+- [Agent Skills 系统性综述](../ch04/397-agent-skills.html)
+- [Skills 系统设计三路对比](../ch04/273-skill.html)
+- [Agent/Skills/Teams 架构演进](../ch04/240-agent-skills-teams.html)
 
 ## 深度分析
 - **流程知识资产化**：Meta Skill 将隐性的 SOP 流程转化为显性的可执行文档，赋予模型超越单步工具调用的宏观上下文理解能力 

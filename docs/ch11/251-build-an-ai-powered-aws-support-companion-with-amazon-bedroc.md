@@ -2,7 +2,7 @@
 
 ## Ch11.251 Build an AI-powered AWS support companion with Amazon Bedrock AgentCore
 
-> 📊 Level ⭐⭐ | 4.1KB | `entities/build-an-ai-powered-aws-support-companion-with-amazon-bedroc.md`
+> 📊 Level ⭐⭐ | 4.3KB | `entities/build-an-ai-powered-aws-support-companion-with-amazon-bedroc.md`
 
 # Build an AI-powered AWS support companion with Amazon Bedrock AgentCore
 
@@ -36,6 +36,11 @@ The agent connects to the following components:
 **Agent runtime –** A Python application using Strands Agents, packaged as a Docker container and deployed to AgentCore Runtime. The agent orchestrates calls to a foundation model (FM) (Amazon Nova Pro through Amazon Bedrock) and tools based on your input. You can swap to supported models without changing the agent code.
 
 **MCP servers –**  Three MCP servers give the agent access to AWS documentation (`aws-documentation-mcp-server`), [AWS Support](<https://aws.amazon.com/premiumsupport/>) APIs (`aws-support-mcp-server`), and AWS service APIs (`aws
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

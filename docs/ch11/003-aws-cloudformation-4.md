@@ -2,7 +2,7 @@
 
 ## Ch11.003 使用 AWS CloudFormation 快速模式将基础设施部署速度提升多达 4 倍
 
-> 📊 Level ⭐ | 6.0KB | `entities/使用-aws-cloudformation-快速模式将基础设施部署速度提升多达-4-倍.md`
+> 📊 Level ⭐ | 6.1KB | `entities/使用-aws-cloudformation-快速模式将基础设施部署速度提升多达-4-倍.md`
 
 # 使用 AWS CloudFormation 快速模式将基础设施部署速度提升多达 4 倍
 
@@ -58,6 +58,10 @@
     --stack-name my-microservice \
     --template-body file://iteration3-sqs.yaml \
     --deployment-config '{"mode":
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

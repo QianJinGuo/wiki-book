@@ -30,7 +30,7 @@
 
 ## Ch14.001 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
 
-> 📊 Level ⭐ | 7.1KB | `entities/使用-amazon-s3-tables-优化数据湖从hudi-迁移到托管-iceberg.md`
+> 📊 Level ⭐ | 7.2KB | `entities/使用-amazon-s3-tables-优化数据湖从hudi-迁移到托管-iceberg.md`
 
 # 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
 
@@ -145,6 +145,10 @@ Amazon S3 Tables 每次增量提交都会产生新数据文件。如果不加控
 在 S3 Tables 中使用 createOrReplace 方式写入
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch14.002 DDoSing Software Delivery Pipelines
 
@@ -223,7 +227,7 @@ E2E 验证阶段是真正的瓶颈：必须在真实硬件上构造真实环境�
 
 ## Ch14.003 ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
 
-> 📊 Level ⭐ | 3.6KB | `entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md`
+> 📊 Level ⭐ | 3.7KB | `entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md`
 
 # ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
 
@@ -245,6 +249,10 @@ This is the story of how we overcame the **black box of managed cloud**, the hid
 ## The Inciting Incident: The Confluent Cloud Black Box
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1362,7 +1370,7 @@ one agent, one sandbox, one storage, one database
 
 ## Ch14.009 Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
 
-> 📊 Level ⭐⭐ | 11.7KB | `entities/kimi-k2-tidb-agent-database-huangdongxu-20260513.md`
+> 📊 Level ⭐⭐ | 11.9KB | `entities/kimi-k2-tidb-agent-database-huangdongxu-20260513.md`
 
 ## 背景
 黄东旭前几篇文章（如何做 AI Agent 喜欢的基础软件、当我们在谈论 Agent Infra 时我们在谈论什么）提出了一些猜想，本文是这些理论的大规模落地验证——TiDB Cloud 正式成为 Kimi K2.6 的供应商，为 Kimi Agent 建站服务提供动态大规模的 Agent Database 支持。
@@ -1451,6 +1459,11 @@ Kimi 和 TiDB 的合作是模型厂商通过好的基础设施服务、快速高
 ---
 来源：InfoQ 黄东旭（PingCAP/TiDB）
 https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 
@@ -1566,7 +1579,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ## Ch14.011 具身数据产业格局：97家玩家与447亿融资
 
-> 📊 Level ⭐⭐ | 10.6KB | `entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md`
+> 📊 Level ⭐⭐ | 10.7KB | `entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md`
 
 # 具身数据产业格局：97家玩家与447亿融资
 
@@ -1659,6 +1672,10 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 - 触觉感知在具身智能中的价值
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/embodied-ai-data-market-landscape-97-players-44-billion-2026.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2152,7 +2169,7 @@ MCP（Model Context Protocol）和 SIP 电话集成代表了 LiveKit 从"开发�
 
 ## Ch14.016 Apache SeaTunnel AI CLI 模型评测
 
-> 📊 Level ⭐⭐ | 8.8KB | `entities/基于-amazon-bedrock-的-apache-seatunnel-ai-cli-模型评测从配置生成到真实执行.md`
+> 📊 Level ⭐⭐ | 9.0KB | `entities/基于-amazon-bedrock-的-apache-seatunnel-ai-cli-模型评测从配置生成到真实执行.md`
 
 # Apache SeaTunnel AI CLI 模型评测
 
@@ -2221,6 +2238,11 @@ SeaTunnel AI CLI 面临的挑战是整个"AI for Data Engineering"领域的缩�
 - 数据工程模型评测 — 三层评测框架的通用方法论
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/基于-amazon-bedrock-的-apache-seatunnel-ai-cli-模型评测从配置生成到真实执行.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 
@@ -2716,38 +2738,9 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ---
 
-## Ch14.023 基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理
+## Ch14.023 Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
 
-> 📊 Level ⭐⭐ | 6.7KB | `entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md`
-
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)
-
-## 标签
-#aws #dynamodb #kinesis #data-engineering #incremental-sync
-**原文**: [基于 Amazon Kinesis Data Streams 实现 Dynamodb 历史数据清理与增量同步](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)(raw/articles/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)
-
-## 深度分析
-**DynamoDB Streams 24 小时窗口是数据迁移的核心瓶颈。** 文章指出了一个在 DynamoDB 数据迁移场景中被低估的限制：DynamoDB Streams 的数据保留期固定为 24 小时且不可修改。对于 TB 级大表的迁移，历史数据的导出、清洗、导入流程可能需要数天，远超 24 小时的窗口期。这意味着如果不做额外架构设计，增量数据（新写入的数据）在迁移期间会丢失。DynamoDB 本身的这个限制，使得传统的"导出全量数据 → 迁移 → 切换"三步走方案在大数据量场景下不可行。
-**Kinesis Data Streams 将增量同步窗口从 24 小时扩展到最长 365 天。** 这是文章的核心创新点：引入 Kinesis Data Streams 作为 DynamoDB Streams 的缓冲层，将数据保留窗口从不可修改的 24 小时扩展到最长 365 天（Kinesis 的最大保留期）。工作流程变成：DynamoDB Streams → Kinesis Data Streams → Lambda 消费 → 写入新表或 S3 归档。Kinesis 作为缓冲层，解决了"迁移时间 > 24 小时"导致的增量数据丢失问题，使大数据量迁移真正可行。
-**三层数据生命周期管理是方案的核心架构设计。** 文章描述的数据清理方案包含三个层次：① 近 30 天的活跃数据保留在 DynamoDB 在线表；② 超过 30 天的历史数据通过 Kinesis 实时同步到 S3 低成本归档存储；③ TTL 自动过期的机制在 DynamoDB 层持续清理过期数据。这个三层架构的关键洞察是：存储成本优化不能以牺牲合规数据保留为代价——TTL 自动删除不等于数据归档，S3 归档是合规数据的着陆点。
-**Glue + S3 智能分层是成本优化的关键。** 文章方案使用 AWS Glue 配合 S3 智能分层存储归档数据。S3 智能分层能够自动将访问频率降低的数据从 Standard 层移至 Infrequent Access 层甚至 Glacier 层，而无需人工判断数据温度。这意味着归档数据不需要人工判断何时该迁移到冷存储，存储成本随访问模式自动优化，是 DynamoDB 历史数据归档的标准落地点。
-**"迁移过程中不丢失任何增量写入"是方案的核心 SLA。** 字幕翻译业务的场景要求是：迁移期间新写入的数据必须完整同步到新表，不能有数据丢失。这个 SLA 驱动了整个架构选择：用 Kinesis 而非 DynamoDB Streams 直接消费，就是为了解决 24 小时窗口限制的问题。在任何涉及在线数据库的迁移项目中，"零数据丢失"应该是默认要求，而非可选项。
-
-## 实践启示
-1. **在大数据量 DynamoDB 迁移场景中，Kinesis 是 DynamoDB Streams 的必要缓冲层。** 如果你的表每天写入量很大、迁移窗口预计超过 24 小时，引入 Kinesis Data Streams 是必选项，而非可选项。DynamoDB Streams 本身的 24 小时不可修改限制，在 TB 级数据迁移场景下是致命的。提前规划 Kinesis 缓冲容量（Shard 数量决定吞吐量）是迁移方案设计的第一个技术决策点。
-2. **TTL + Kinesis 同步 + S3 归档是 DynamoDB 历史数据清理的标准三件套。** TTL 负责 DynamoDB 层的自动过期（设置在 30 天前）；Kinesis 负责增量数据的实时同步（作为缓冲）；S3 智能分层负责归档存储（接收从 Kinesis 消费并写入的历史数据）。这三层缺一不可：没有 TTL，DynamoDB 存储成本持续增长；没有 Kinesis，增量数据在迁移窗口外会丢失；没有 S3 归档，过期数据被删除后无法合规追溯。
-3. **数据迁移的 SLA 定义必须包含"迁移窗口增量数据不丢失"，而不是只关注迁移那一刻。** 大多数数据迁移失败不是因为"历史数据迁移不完整"，而是因为"迁移期间新写入的数据丢失或重复"。方案设计时，先定义清楚增量数据的处理策略，再考虑历史数据的导出方式。
-4. **DynamoDB Streams 的 24 小时窗口是一个常被低估的架构约束。** 在设计基于 DynamoDB 的实时数据管道时，如果下游消费处理出现延迟（比如 Lambda 触发率下降、下游服务故障），超过 24 小时的延迟就会导致数据永久丢失。在构建高可用数据管道时，需要在架构层面引入缓冲机制（如 Kinesis），而不是依赖 DynamoDB Streams 的默认保留期。
-
-## 相关实体
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](https://github.com/QianJinGuo/wiki/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
-- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
-
----
-
-## Ch14.024 Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
-
-> 📊 Level ⭐⭐ | 6.6KB | `entities/agent-data-governance-crewai-credential-patterns.md`
+> 📊 Level ⭐⭐ | 6.7KB | `entities/agent-data-governance-crewai-credential-patterns.md`
 
 # Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
 
@@ -2815,6 +2808,40 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 ---
 
 **来源**: → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stop-giving-your-agents-database-credentials.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
+
+---
+
+## Ch14.024 基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理
+
+> 📊 Level ⭐⭐ | 6.7KB | `entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)
+
+## 标签
+#aws #dynamodb #kinesis #data-engineering #incremental-sync
+**原文**: [基于 Amazon Kinesis Data Streams 实现 Dynamodb 历史数据清理与增量同步](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)(raw/articles/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)
+
+## 深度分析
+**DynamoDB Streams 24 小时窗口是数据迁移的核心瓶颈。** 文章指出了一个在 DynamoDB 数据迁移场景中被低估的限制：DynamoDB Streams 的数据保留期固定为 24 小时且不可修改。对于 TB 级大表的迁移，历史数据的导出、清洗、导入流程可能需要数天，远超 24 小时的窗口期。这意味着如果不做额外架构设计，增量数据（新写入的数据）在迁移期间会丢失。DynamoDB 本身的这个限制，使得传统的"导出全量数据 → 迁移 → 切换"三步走方案在大数据量场景下不可行。
+**Kinesis Data Streams 将增量同步窗口从 24 小时扩展到最长 365 天。** 这是文章的核心创新点：引入 Kinesis Data Streams 作为 DynamoDB Streams 的缓冲层，将数据保留窗口从不可修改的 24 小时扩展到最长 365 天（Kinesis 的最大保留期）。工作流程变成：DynamoDB Streams → Kinesis Data Streams → Lambda 消费 → 写入新表或 S3 归档。Kinesis 作为缓冲层，解决了"迁移时间 > 24 小时"导致的增量数据丢失问题，使大数据量迁移真正可行。
+**三层数据生命周期管理是方案的核心架构设计。** 文章描述的数据清理方案包含三个层次：① 近 30 天的活跃数据保留在 DynamoDB 在线表；② 超过 30 天的历史数据通过 Kinesis 实时同步到 S3 低成本归档存储；③ TTL 自动过期的机制在 DynamoDB 层持续清理过期数据。这个三层架构的关键洞察是：存储成本优化不能以牺牲合规数据保留为代价——TTL 自动删除不等于数据归档，S3 归档是合规数据的着陆点。
+**Glue + S3 智能分层是成本优化的关键。** 文章方案使用 AWS Glue 配合 S3 智能分层存储归档数据。S3 智能分层能够自动将访问频率降低的数据从 Standard 层移至 Infrequent Access 层甚至 Glacier 层，而无需人工判断数据温度。这意味着归档数据不需要人工判断何时该迁移到冷存储，存储成本随访问模式自动优化，是 DynamoDB 历史数据归档的标准落地点。
+**"迁移过程中不丢失任何增量写入"是方案的核心 SLA。** 字幕翻译业务的场景要求是：迁移期间新写入的数据必须完整同步到新表，不能有数据丢失。这个 SLA 驱动了整个架构选择：用 Kinesis 而非 DynamoDB Streams 直接消费，就是为了解决 24 小时窗口限制的问题。在任何涉及在线数据库的迁移项目中，"零数据丢失"应该是默认要求，而非可选项。
+
+## 实践启示
+1. **在大数据量 DynamoDB 迁移场景中，Kinesis 是 DynamoDB Streams 的必要缓冲层。** 如果你的表每天写入量很大、迁移窗口预计超过 24 小时，引入 Kinesis Data Streams 是必选项，而非可选项。DynamoDB Streams 本身的 24 小时不可修改限制，在 TB 级数据迁移场景下是致命的。提前规划 Kinesis 缓冲容量（Shard 数量决定吞吐量）是迁移方案设计的第一个技术决策点。
+2. **TTL + Kinesis 同步 + S3 归档是 DynamoDB 历史数据清理的标准三件套。** TTL 负责 DynamoDB 层的自动过期（设置在 30 天前）；Kinesis 负责增量数据的实时同步（作为缓冲）；S3 智能分层负责归档存储（接收从 Kinesis 消费并写入的历史数据）。这三层缺一不可：没有 TTL，DynamoDB 存储成本持续增长；没有 Kinesis，增量数据在迁移窗口外会丢失；没有 S3 归档，过期数据被删除后无法合规追溯。
+3. **数据迁移的 SLA 定义必须包含"迁移窗口增量数据不丢失"，而不是只关注迁移那一刻。** 大多数数据迁移失败不是因为"历史数据迁移不完整"，而是因为"迁移期间新写入的数据丢失或重复"。方案设计时，先定义清楚增量数据的处理策略，再考虑历史数据的导出方式。
+4. **DynamoDB Streams 的 24 小时窗口是一个常被低估的架构约束。** 在设计基于 DynamoDB 的实时数据管道时，如果下游消费处理出现延迟（比如 Lambda 触发率下降、下游服务故障），超过 24 小时的延迟就会导致数据永久丢失。在构建高可用数据管道时，需要在架构层面引入缓冲机制（如 Kinesis），而不是依赖 DynamoDB Streams 的默认保留期。
+
+## 相关实体
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](https://github.com/QianJinGuo/wiki/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
+- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
 
 ---
 
@@ -2912,7 +2939,7 @@ RG 实例已在全球广泛区域推出，涵盖亚太、北美、欧洲、中�
 
 ## Ch14.027 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/sql-not-in-null-trap-demorgan-parser.md`
+> 📊 Level ⭐⭐ | 6.0KB | `entities/sql-not-in-null-trap-demorgan-parser.md`
 
 # SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
 
@@ -2973,6 +3000,10 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 3. **代码审查时重点关注 NOT IN**：将 `NOT IN` 模式加入代码审查 checklist，确保审查者检查子查询是否可能返回 NULL。
 4. **理解 EXPLAIN 输出**：学会阅读 PostgreSQL EXPLAIN 中的 `= ANY` 和 `<> ALL` 节点，这有助于理解查询的实际执行逻辑。
 5. **三值逻辑的系统性影响**：NULL 的三值行为不仅影响 `NOT IN`，还影响 `NOT EXISTS`、`EXCEPT`、`GROUP BY`、`DISTINCT` 等多个 SQL 操作。理解这一底层逻辑是成为高级 SQL 用户的必经之路。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -3176,7 +3207,7 @@ specs/yyyymmdd_{任务名}/
 
 ## Ch14.030 Turning Scattered Data Into Queryable Segments at Scale: Razorpay 实践
 
-> 📊 Level ⭐⭐ | 4.9KB | `entities/turning-scattered-data-into-queryable-segments-at-scale-how.md`
+> 📊 Level ⭐⭐ | 5.0KB | `entities/turning-scattered-data-into-queryable-segments-at-scale-how.md`
 
 # Turning Scattered Data Into Queryable Segments at Scale: How Razorpay Built Its Customer Data…
 
@@ -3222,8 +3253,67 @@ DPDPA also reshaped what the platform had to be. India’s Digital Personal Data
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/turning-scattered-data-into-queryable-segments-at-scale-how.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-## Ch14.031 DataComp for Language Models
+---
+
+## Ch14.031 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
+
+> 📊 Level ⭐⭐ | 5.0KB | `entities/kafka-share-groups-pathological-fetch-waits-with-record-limi.md`
+
+# Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
+
+> Source: [Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly](https://jack-vanlightly.com/blog/2026/6/24/kafka-share-groups-pathological-fetch-waits-with-recordlimit) | Score: v*c=81
+
+## Overview
+
+Published Time: 2026-06-24T14:50:48+0200
+
+Markdown Content:
+In this post we’re going to see how `share.acquire.mode=record_limit` combined with:
+
+*   fewer consumers than partitions
+
+*   and various cases of “partition skew”
+
+…can result in subpar performance with share groups.
+
+I stumbled on these issues when running large sets of dimensional tests with Dimster’s explore-limits mode, which finds the highest sustainable throughput while staying within a target end-to-end latency target. There was a specific subset of the tests that explore-limits mode would consistently fail to complete, and they all happened to be with record_limit and a consumer count lower than the partition count. In this test, we’ll understand why Dimster had such a hard time with this combination.
+
+## Some background on share group internals
+
+Kafka share groups have two methods of acquiring records:
+
+*   `share.acquire.mode=batch_optimized`
+
+*   `share.acquire.mode=record_limit`
+
+I already explained the difference in [Kafka Share Groups and Parallelizing Consumption - Part 2: Producer Batches and share.acquire.mode](https://jack-vanlightly.com/blog/2026/5/27/kafka-share-groups-and-parallelizing-consumption-part-2-producer-batches-and-shareacquiremode) but let’s just cover it again.
+
+Share consumers are assigned partitions as part of the share group protocol. It works similarly to the consumer group protocol, except that multiple consumers can be assigned to the same partition.
+
+With `batch_optimized`, share consumers acquire records in whole batches, using max.poll.records as a soft cap. Furthermore, a share consumer assigned multiple partitions across multiple brokers will send fetch requests to each of those brokers, concurrently.
+
+With `record_limit`, share consumers acquire records as slices of batches, where the size of the slice is determined by `max.poll.records` (now a strict cap). If you set `max.poll.records=10` but the relevant batch contains 32, then only a slice of 10 records is acquired (though the whole batch is transmitted over the wire). Furthermore, a share consumer assigned multiple partitions across multiple brokers will send fetch requests round-robin (one-at-a-time) across those brokers. Each time you call poll, it will fetch from the next broker.
+
+![Image 1](https://images.squarespace-cdn.com/content/v1/56894e581c1210fead06f878/a1f0f3df-ab5a-419d-9947-0b4240a72353/explore-limits-mode.png)
+
+_Fig 1. Dimster’s explore-limits mode regularly drains a backlog while searching for the highest sustainable rate under a target e2e latency_
+
+The drain works by pausing the producers, temporarily removing any consumer processing time (if configured) and then resuming with a lower producer rate. However, with `record_limit` and fewer consumers than partitions, this lag drain would basically stall as the consumption rate would end up just a trickle (such that it would take hours to drain the backlog that had accumulated).
+
+So I ran some backlog drain tests to unders
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kafka-share-groups-pathological-fetch-waits-with-record-limi.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch14.032 DataComp for Language Models
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/datacomp-for-language-models.md`
 
@@ -3275,58 +3365,41 @@ DataComp 配套开源数据处理工具：
 
 ---
 
-## Ch14.032 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
+## Ch14.033 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
 
-> 📊 Level ⭐⭐ | 4.9KB | `entities/kafka-share-groups-pathological-fetch-waits-with-record-limi.md`
+> 📊 Level ⭐⭐ | 4.1KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
 
-# Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
-
-> Source: [Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly](https://jack-vanlightly.com/blog/2026/6/24/kafka-share-groups-pathological-fetch-waits-with-recordlimit) | Score: v*c=81
-
-## Overview
-
-Published Time: 2026-06-24T14:50:48+0200
+# Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
 
 Markdown Content:
-In this post we’re going to see how `share.acquire.mode=record_limit` combined with:
+[![Image 1: Iraklikhorguani](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*m85T5tMk8enr2P2-)](https://medium.com/@iraklikhorguani?source=post_page---byline--56bee3643c29---------------------------------------)
 
-*   fewer consumers than partitions
+![Image 2](https://miro.medium.com/v2/resize:fit:700/1*9r1bGT0StHEZaLhFgNhI7A.png)
 
-*   and various cases of “partition skew”
+_Written by_[_Rohit Channe_](https://www.linkedin.com/in/rohit-channe-5368b469/)_and_[_Simran Mirchandani_](https://www.linkedin.com/in/simranmirchandani/)_at Lyft._
 
-…can result in subpar performance with share groups.
+At Lyft, data isn’t just a resource — it’s woven into everything we do. Metrics drive key forecasts, steer operational decisions, and put our boldest hypotheses to the test. But as Lyft scaled, products launched and evolved, and team members came and went, we found ourselves at risk of different teams using different definitions for a given metric. What did “Metric ABC” actually mean? The answer often depended on the context and application of the team you asked.
 
-I stumbled on these issues when running large sets of dimensional tests with Dimster’s explore-limits mode, which finds the highest sustainable throughput while staying within a target end-to-end latency target. There was a specific subset of the tests that explore-limits mode would consistently fail to complete, and they all happened to be with record_limit and a consumer count lower than the partition count. In this test, we’ll understand why Dimster had such a hard time with this combination.
+The consequences were predictable. Without centralized version control or a shared standard, outdated metric definitions crept into decision-making.
 
-## Some background on share group internals
+Our solution was to build an internal **Metric Semantic Layer (MSL)**: a centralized repository that serves as a single, authoritative home for every metric’s definition — providing both a clear, plain-English description and the definitive SQL code. No more hunting across codebases or tribal knowledge — just one place to store and access a standardized, agreed-upon definition. With MSL, we have **a single source of truth** — consistent terminology and assumptions across every team, so everyone is genuinely speaking the same language. We achieve this through three key principles:
 
-Kafka share groups have two methods of acquiring records:
+1.   **Simplified onboarding and change management** — update a metric definition once, and the change automatically and frictionlessly flows through every downstream application that depends on it
+2.   **Intentional governance**— clarified ownership, defined scope, clear accountability for data quality, and a structure resilient enough to survive org changes, team rotations, and attrition
+3.   **Transparency and accessibility** — definitions are easy for both technical and non-technical users (and downstream applications) to find and integrate into day-to-day workflows
 
-*   `share.acquire.mode=batch_optimized`
+Taking the above principles into account, we **implemented the Metrics Semantic Layer as a Python package**:
 
-*   `share.acquire.mode=record_limit`
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md)
 
-I already explained the difference in [Kafka Share Groups and Parallelizing Consumption - Part 2: Producer Batches and share.acquire.mode](https://jack-vanlightly.com/blog/2026/5/27/kafka-share-groups-and-parallelizing-consumption-part-2-producer-batches-and-shareacquiremode) but let’s just cover it again.
-
-Share consumers are assigned partitions as part of the share group protocol. It works similarly to the consumer group protocol, except that multiple consumers can be assigned to the same partition.
-
-With `batch_optimized`, share consumers acquire records in whole batches, using max.poll.records as a soft cap. Furthermore, a share consumer assigned multiple partitions across multiple brokers will send fetch requests to each of those brokers, concurrently.
-
-With `record_limit`, share consumers acquire records as slices of batches, where the size of the slice is determined by `max.poll.records` (now a strict cap). If you set `max.poll.records=10` but the relevant batch contains 32, then only a slice of 10 records is acquired (though the whole batch is transmitted over the wire). Furthermore, a share consumer assigned multiple partitions across multiple brokers will send fetch requests round-robin (one-at-a-time) across those brokers. Each time you call poll, it will fetch from the next broker.
-
-![Image 1](https://images.squarespace-cdn.com/content/v1/56894e581c1210fead06f878/a1f0f3df-ab5a-419d-9947-0b4240a72353/explore-limits-mode.png)
-
-_Fig 1. Dimster’s explore-limits mode regularly drains a backlog while searching for the highest sustainable rate under a target e2e latency_
-
-The drain works by pausing the producers, temporarily removing any consumer processing time (if configured) and then resuming with a lower producer rate. However, with `record_limit` and fewer consumers than partitions, this lag drain would basically stall as the consumption rate would end up just a trickle (such that it would take hours to drain the backlog that had accumulated).
-
-So I ran some backlog drain tests to unders
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kafka-share-groups-pathological-fetch-waits-with-record-limi.md)
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 
-## Ch14.033 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
+## Ch14.034 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/databend-open-source-lakehouse-ai-agent.md`
 
@@ -3403,7 +3476,7 @@ Databend Cloud on AWS 架构:
 
 ---
 
-## Ch14.034 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
+## Ch14.035 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md`
 
@@ -3457,38 +3530,9 @@ Transforming rare cancer research with Amazon Quick: Integrating biomedical data
 
 ---
 
-## Ch14.035 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
-
-> 📊 Level ⭐⭐ | 4.0KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
-
-# Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
-
-Markdown Content:
-[![Image 1: Iraklikhorguani](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*m85T5tMk8enr2P2-)](https://medium.com/@iraklikhorguani?source=post_page---byline--56bee3643c29---------------------------------------)
-
-![Image 2](https://miro.medium.com/v2/resize:fit:700/1*9r1bGT0StHEZaLhFgNhI7A.png)
-
-_Written by_[_Rohit Channe_](https://www.linkedin.com/in/rohit-channe-5368b469/)_and_[_Simran Mirchandani_](https://www.linkedin.com/in/simranmirchandani/)_at Lyft._
-
-At Lyft, data isn’t just a resource — it’s woven into everything we do. Metrics drive key forecasts, steer operational decisions, and put our boldest hypotheses to the test. But as Lyft scaled, products launched and evolved, and team members came and went, we found ourselves at risk of different teams using different definitions for a given metric. What did “Metric ABC” actually mean? The answer often depended on the context and application of the team you asked.
-
-The consequences were predictable. Without centralized version control or a shared standard, outdated metric definitions crept into decision-making.
-
-Our solution was to build an internal **Metric Semantic Layer (MSL)**: a centralized repository that serves as a single, authoritative home for every metric’s definition — providing both a clear, plain-English description and the definitive SQL code. No more hunting across codebases or tribal knowledge — just one place to store and access a standardized, agreed-upon definition. With MSL, we have **a single source of truth** — consistent terminology and assumptions across every team, so everyone is genuinely speaking the same language. We achieve this through three key principles:
-
-1.   **Simplified onboarding and change management** — update a metric definition once, and the change automatically and frictionlessly flows through every downstream application that depends on it
-2.   **Intentional governance**— clarified ownership, defined scope, clear accountability for data quality, and a structure resilient enough to survive org changes, team rotations, and attrition
-3.   **Transparency and accessibility** — definitions are easy for both technical and non-technical users (and downstream applications) to find and integrate into day-to-day workflows
-
-Taking the above principles into account, we **implemented the Metrics Semantic Layer as a Python package**:
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md)
-
----
-
 ## Ch14.036 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
-> 📊 Level ⭐⭐ | 3.7KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
+> 📊 Level ⭐⭐ | 3.8KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
 
 # Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
@@ -3514,10 +3558,15 @@ Software is changing the world. QCon San Francisco empowers software development
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
+
+---
 
 ## Ch14.037 The Data Operating System for the Foundation Model Era — Data Juicer
 
-> 📊 Level ⭐⭐ | 3.6KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
+> 📊 Level ⭐⭐ | 3.8KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
 
 # The Data Operating System for the Foundation Model Era — Data Juicer
 
@@ -3539,6 +3588,11 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 *   [JupyterLab Playground with Tutorials](http://8.138.149.181/)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-data-operating-system-for-the-foundation-model-era-data-juicer.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

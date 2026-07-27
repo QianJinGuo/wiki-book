@@ -2,7 +2,7 @@
 
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
-> 本章收录 **31 篇**实体，按深度递增排列。
+> 本章收录 **33 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 28 |
+| ⭐⭐ 工程师 | 需编程基础 | 30 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -2528,10 +2528,14 @@ Across agent traces, the same JSON paths and token values repeat in virtually ev
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-we-built-smithdb-s-inverted-index-for-full-text-search.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch10.024 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
 
-> 📊 Level ⭐⭐ | 4.5KB | `entities/common-crawl-blog-host-and-domain-level-web-graphs-april-may.md`
+> 📊 Level ⭐⭐ | 4.6KB | `entities/common-crawl-blog-host-and-domain-level-web-graphs-april-may.md`
 
 # Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
 
@@ -2567,10 +2571,71 @@ Please note that the text representation of the host-level graph is shipped in 2
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/common-crawl-blog-host-and-domain-level-web-graphs-april-may.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-## Ch10.025 Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
+---
 
-> 📊 Level ⭐⭐ | 3.9KB | `entities/powering-scientific-discovery-byokg-and-graphrag-for-intelli.md`
+## Ch10.025 Task-Aware Knowledge Compression (TAKC)
+
+> 📊 Level ⭐⭐ | 4.1KB | `entities/task-aware-knowledge-compression-takc.md`
+
+# Task-Aware Knowledge Compression (TAKC)
+
+> **Task-Aware Knowledge Compression (TAKC)** 是一种将知识库离线预压缩为任务特定表示的技术方案，由 AWS 在 2026 年 7 月提出并在 AWS 上实现开源参考架构。TAKC 解决了 RAG 在跨文档推理和大规模知识库全面覆盖上的固有局限。
+
+## 核心思路
+
+TAKC 的核心洞察是：**同一文档在不同任务下需要保留不同信息**。一张年报的财务分析视图需要收入/利润率/现金流数据，而合规审查视图需要监管引文/违规历史。通用摘要试图覆盖所有内容反而稀释了信息密度。
+
+TAKC 通过任务感知提示（task-aware prompt）对文档进行离线压缩，每个任务类型对同一源文档产生不同的压缩输出。压缩后系统用 Redis 缓存存储多速率压缩结果，查询时直接检索压缩表示而非原始文档。
+
+## 多速率压缩（Multi-rate Compression）
+
+TAKC 维护四个压缩层级 —— 不同查询需要不同 fidelity：
+
+| 层級 | 压缩比 | 上下文保留 | 适用场景 |
+|------|--------|-----------|---------|
+| Light | 8× | ~12.5% | 多步推理、跨文档综合 |
+| Medium | 16× | ~6.25% | 中等复杂度分析查询 |
+| High | 32× | ~3.1% | 事实查找、定义明确的问题 |
+| Ultra | 64× | ~1.6% | 分类任务、关键词查找 |
+
+查询复杂度分析器根据查询长度、问题类型、分析性语言等信号自动路由到适-当层级。大多数企业查询可从高压缩层级低成本响应，只有少数复杂查询消耗更大上下文预算。
+
+## 与 RAG 的对比
+
+| 维度 | TAKC 更适合 | RAG 更适合 |
+|------|------------|-----------|
+| 查询类型 | 跨文档推理、综合 | 窄域事实查找 |
+| 知识库稳定性 | 每日变化或更少 | 每小时变化或更多 |
+| 任务可预测性 | 任务类型明确 | 查询模式不可预测 |
+| 覆盖需求 | 必须考虑全量语料 | 仅需少量相关文档 |
+| 来源追溯 | 不需要 | 需要（用户需看原文） |
+| Token 预算 | 紧张 | 灵活 |
+
+实践中两者互补：RAG 做快速查找，TAKC 处理分析性查询。查询复杂度分析器可在两者之间路由。
+
+## AWS 架构实现
+
+TAKC 在 AWS 上部署为两个解耦的无服务器流程：
+
+- **Ingestion Pipeline**：文档落地 S3 → S3 事件通知触发 Lambda 分块（256-token 块，50-token 重叠）→ 异步调用压缩 Lambda → Amazon Bedrock（Claude 3 Haiku / Sonnet）按四层压缩 → 存入 ElastiCache Serverless + S3 备份
+- **Query Pipeline**：Cognito JWT 认证 → API Gateway → WAF 防护 → Lambda 查询复杂度分析 → ElastiCache 获取压缩缓存 → Bedrock 推理响应
+
+参考实现开源在 [aws-samples/sample-bedrock-takc-compression](https://github.com/aws-samples/sample-bedrock-takc-compression)，单命令 CDK 部署。
+
+## 适用条件
+
+TAKC 适用于知识库变化不频繁、查询模式可预测、需要跨文档推理的场景（如金融尽调、合规审查）。对于每小时变化的知识库，RAG 的按查询检索模型更实用。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/beyond-rag-task-aware-knowledge-compression-for-enterprise-a.md)
+
+---
+
+## Ch10.026 Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
+
+> 📊 Level ⭐⭐ | 4.0KB | `entities/powering-scientific-discovery-byokg-and-graphrag-for-intelli.md`
 
 # Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
 
@@ -2593,8 +2658,12 @@ Challenges in early-stage drug discovery:
 These challenges collectively create a significant bottleneck in the drug discovery pipeline, leading to inefficiencies, missed opportunities, and potential delays in developing life-saving treatments. Our solution addresses these bottlenecks by moving beyond traditional methods: graph-powered AI supports pharmaceutical research by creating an interconnected knowledge environment. Using [Amazon Neptune Analytics](<https://docs.aws.amazon.com/neptune-analytics/latest/userguide/what-is-neptune-analytics.html>), researchers can now ask complex questions in natural language and receive instant, evidence-backed insights drawn from a unified knowledge graph that connects everything from compound interactions to gene expressions and clinical studies. This approach doesn’t only provide answers. It reveals the complete reasoning behind each result by showing detailed citation paths and graph traversal steps. By exp
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-## Ch10.026 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
+---
+
+## Ch10.027 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂-v2.md`
 
@@ -2647,7 +2716,7 @@ These challenges collectively create a significant bottleneck in the drug discov
 
 ---
 
-## Ch10.027 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
+## Ch10.028 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/graphrag-needed-aws-9-rag-comparison-2026.md`
 
@@ -2701,7 +2770,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.028 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
+## Ch10.029 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/xiamen-bank-rag-competition-financial-regulation-trustrag.md`
 
@@ -2749,7 +2818,7 @@ temperature=0.0（贪心解码），max_new_tokens=512，batch_size=1。
 
 ---
 
-## Ch10.029 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
+## Ch10.030 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
 
 > 📊 Level ⭐⭐ | 2.9KB | `entities/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度.md`
 
@@ -2782,8 +2851,12 @@ source_published: 2026年7月8日 17:00
 -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度-2026-07-08.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-## Ch10.030 知识库构建方法论
+---
+
+## Ch10.031 知识库构建方法论
 
 > 📊 Level ⭐⭐ | 1.7KB | `entities/knowledge-base-construction.md`
 
@@ -2813,7 +2886,23 @@ AI 驱动的知识库构建方法论：从原始采集到结构化编目的完�
 
 ---
 
-## Ch10.031 Ettin Reranker Family
+## Ch10.032 RAG for Documents
+
+> 📊 Level ⭐⭐ | 0.4KB | `entities/rag-for-documents.md`
+
+# RAG for Documents
+
+> 🚧 占位页面 — 内容待补充
+
+工具/产品/团队实体页面，待从相关 raw 文章中提取详细信息。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch10.033 Ettin Reranker Family
 
 > 📊 Level ⭐⭐⭐ | 15.1KB | `entities/ettin-reranker-family.md`
 

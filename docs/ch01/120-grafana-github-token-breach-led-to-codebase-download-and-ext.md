@@ -10,7 +10,7 @@
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](ch01/514-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](ch01/516-microsoft-for-startups-microsoft.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/grafana-github-token-breach-led-to-html.md)
 

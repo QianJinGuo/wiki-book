@@ -248,9 +248,9 @@ Day 5: 攻击者早已不在现场，但 Agent 执行了预期外的操作].md]
 
 ## 相关实体
 - [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md)
-- [Hermes Agent Memory System Vs Openclaw](../ch03/093-hermes-agent.html)
-- [Hermes Agent Vs Openclaw Comparison](../ch03/093-hermes-agent.html)
-- [Hermes Agent Self Evolving Source Analysis](../ch03/093-hermes-agent.html)
+- [Hermes Agent Memory System Vs Openclaw](../ch03/095-hermes-agent.html)
+- [Hermes Agent Vs Openclaw Comparison](../ch03/095-hermes-agent.html)
+- [Hermes Agent Self Evolving Source Analysis](../ch03/095-hermes-agent.html)
 - [Small Hermes Self Evolving Agent Architecture](../ch03/035-agent.html)
 
 ---

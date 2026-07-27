@@ -186,11 +186,11 @@ hooks.SessionStart 按分支加载 context 是聪明的设计，但它也是双�
 > **hook 机制是双刃剑**：强大的 context 加载能力伴随着失控风险，出问题时先切 `disableAllHooks: true` 定位。
 
 ## 相关实体
-- [Claude Code Performance Benchmarking](../ch03/076-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/076-claude-code.html)
-- [Claude Code Source Architecture](../ch03/076-claude-code.html)
-- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/076-claude-code.html)
-- [Skill System Design Three Way Comparison](../ch04/272-skill.html)
+- [Claude Code Performance Benchmarking](../ch03/077-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [Claude Code Source Architecture](../ch03/077-claude-code.html)
+- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/077-claude-code.html)
+- [Skill System Design Three Way Comparison](../ch04/273-skill.html)
 
 ---
 

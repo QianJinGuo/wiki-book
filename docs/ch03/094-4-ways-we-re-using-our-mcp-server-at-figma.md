@@ -2,7 +2,7 @@
 
 ## Ch03.094 4 ways we’re using our MCP server at Figma
 
-> 📊 Level ⭐⭐ | 8.2KB | `entities/4-ways-were-using-our-mcp-server-at-figma.md`
+> 📊 Level ⭐⭐ | 8.4KB | `entities/4-ways-were-using-our-mcp-server-at-figma.md`
 
 # 4 ways we’re using our MCP server at Figma
 
@@ -46,6 +46,11 @@ After we launched the [Figma agent ### The Figma design agent is here Starting t
 5. **优先投资双向工作流**：设计→代码的单向生成已经成熟，但设计↔代码的双向同步才是真正的生产力倍增器。评估工具链时，优先选择支持 Make/Preview → Canvas → Code 完整循环的方案。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/4-ways-were-using-our-mcp-server-at-figma.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

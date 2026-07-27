@@ -2,7 +2,7 @@
 
 ## Ch04.023 从数据库到 Agent 原生数据底座，火山引擎发布 Agentic 全栈数据管理服务
 
-> 📊 Level ⭐ | 3.2KB | `entities/从数据库到-agent-原生数据底座火山引擎发布-agentic-全栈数据管理服务.md`
+> 📊 Level ⭐ | 3.3KB | `entities/从数据库到-agent-原生数据底座火山引擎发布-agentic-全栈数据管理服务.md`
 
 # 从数据库到 Agent 原生数据底座，火山引擎发布 Agentic 全栈数据管理服务
 
@@ -48,6 +48,11 @@
 - 当数据消费主体从 “Human + Application” 扩张至千万级 AI Agent，传统数据库的能力边界已被彻底打破——海量 AI Agent 全天候自主检索、推理、协作、调度数据，传统数据...
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从数据库到-agent-原生数据底座火山引擎发布-agentic-全栈数据管理服务.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

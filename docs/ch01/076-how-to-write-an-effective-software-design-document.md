@@ -2,7 +2,7 @@
 
 ## Ch01.076 How to Write an Effective Software Design Document
 
-> 📊 Level ⭐ | 7.1KB | `entities/excerpts-write-an-effective-design-doc.md`
+> 📊 Level ⭐ | 7.2KB | `entities/excerpts-write-an-effective-design-doc.md`
 
 # How to Write an Effective Software Design Document
 
@@ -75,6 +75,10 @@ Consider these questions:
 *
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/excerpts-write-an-effective-design-doc.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

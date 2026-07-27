@@ -2,7 +2,7 @@
 
 ## Ch05.050 OpenSpec 四步法深度复盘：流程完整 ≠ 代码正确
 
-> 📊 Level ⭐⭐ | 10.6KB | `entities/openspec-四步法深度复盘-流程完整不等于代码正确.md`
+> 📊 Level ⭐⭐ | 10.7KB | `entities/openspec-四步法深度复盘-流程完整不等于代码正确.md`
 
 ## 核心洞察
 **流程完整 ≠ 代码正确。** OpenSpec 四步法（propose → apply → verify → archive）保证了需求对齐的文档链路，但无法保证 AI 实际输出的代码质量。
@@ -101,6 +101,10 @@ Archive 前设置质量门控清单（所有 Tasks 完成 → Spec Review 通过
 - **利用 OpenSpec 的 Edit 机制**：工件都是 Markdown 文件，可以手动编辑；发现问题直接改，不要将就
 - **复杂变更分批处理**：5+ 文件或 3+ 模块的变更拆成多个独立 change，每个只做一件事
 - **保持上下文干净**：apply 之前执行 /clear，避免长会话遗忘早期设计决策
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

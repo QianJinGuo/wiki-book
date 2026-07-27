@@ -24,7 +24,7 @@ Agnes AI 于 2026 年 7 月发布新一代文本模型 Agnes-2.5-Flash，定位�
 
 Agnes-2.5-Flash 的"不限期免费"策略并非简单的价格战，而是对当前 AI Coding 市场定价体系的一次结构性冲击。当前市场格局中，Claude Pro 月费 $20、GitHub Copilot $10-39/月、Cursor Pro $20/月——主流工具的年使用成本在 $120-480 区间。Agnes 将同等甚至更优的 Coding 能力以零边际成本提供，迫使竞争对手重新审视定价策略。
 
-这一策略的风险在于可持续性：模型推理成本（特别是长上下文场景下的 token 消耗）是否能够通过其他变现渠道（如企业版、Agnes-2.5-Pro 旗舰模型）覆盖。Agnes 的定价赌注是：免费基础层吸引海量用户打磨产品，企业高级特性作为利润中心。这与 [AI Coding 评估](../ch05/107-ai-coding.html) 体系中提到的"先规模后变现"策略一致。
+这一策略的风险在于可持续性：模型推理成本（特别是长上下文场景下的 token 消耗）是否能够通过其他变现渠道（如企业版、Agnes-2.5-Pro 旗舰模型）覆盖。Agnes 的定价赌注是：免费基础层吸引海量用户打磨产品，企业高级特性作为利润中心。这与 [AI Coding 评估](../ch05/108-ai-coding.html) 体系中提到的"先规模后变现"策略一致。
 
 ### Coding 能力的竞争定位
 
@@ -32,7 +32,7 @@ Agnes-2.5-Flash 的"不限期免费"策略并非简单的价格战，而是对�
 
 1. **模块级理解**：在单文件范围内定位隐藏 Bug（如参数修改导致的异常行为），这考验模型对代码语义的精确理解而非模式匹配。3 分钟定位 + 12 秒修复的速度表明其代码注意力机制和错误定位能力显著优于前代。
 2. **应用级生成**：从零构建完整网页应用（AI 前端竞技场），涉及多模块协调（代码编辑器、iframe 沙箱、评分引擎、图表组件），展示了模型的结构化规划和多步执行能力。
-3. **项目级修改**：跨十几个文件修改项目架构（增加双人竞速模式），要求模型理解文件间依赖关系并保持修改一致性——这正是 [Claude Code 深度架构分析](../ch03/076-claude-code.html) 中强调的"工程修复"核心能力。
+3. **项目级修改**：跨十几个文件修改项目架构（增加双人竞速模式），要求模型理解文件间依赖关系并保持修改一致性——这正是 [Claude Code 深度架构分析](../ch03/077-claude-code.html) 中强调的"工程修复"核心能力。
 
 与同价位区间模型对比，Agnes-2.5-Flash 在第三层（项目级修改）的能力尤为突出，这得益于 Agnes Harness 系统将模型能力、工具调用和项目理解整合为统一的 Agent 系统。
 
@@ -68,9 +68,9 @@ Agnes-2.5-Flash 定位为"日常主力模型"，而 Agnes-2.5-Pro 面向"专业�
 
 ## 相关实体
 
-- [AI Coding 评估](../ch05/107-ai-coding.html)
-- [AI Coding 入门指南](../ch05/107-ai-coding.html)
-- [Claude Code 深度架构分析](../ch03/076-claude-code.html)
+- [AI Coding 评估](../ch05/108-ai-coding.html)
+- [AI Coding 入门指南](../ch05/108-ai-coding.html)
+- [Claude Code 深度架构分析](../ch03/077-claude-code.html)
 - [Harness Engineering 2026 全景](../ch05/112-harness-engineering.html)
 - [Claude Code 技能封装](../ch07/035-claude-code-skills.html)
 - [Anthropic 输出验证瓶颈](ch09/098-anthropic-8x.html)

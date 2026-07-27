@@ -2,7 +2,7 @@
 
 ## Ch09.022 Ethan Mollick: Claude Code and What Comes Next (Practitioner View)
 
-> 📊 Level ⭐⭐ | 17.1KB | `entities/oneusefulthing-claude-code-what-comes-next.md`
+> 📊 Level ⭐⭐ | 17.2KB | `entities/oneusefulthing-claude-code-what-comes-next.md`
 
 # Ethan Mollick: Claude Code and What Comes Next (Practitioner View)
 
@@ -124,7 +124,7 @@ MCP 生态：
 - 用专用文件夹
 - 不要给它访问你不能承受丢失的东西
 
-## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/076-claude-code.html) 的关系
+## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/077-claude-code.html) 的关系
 
 | 维度 | 现有 entity | 本文 |
 |------|------------|------|
@@ -205,6 +205,10 @@ MCP 生态：
 6. **关注 Karpathy 的警示——"职业正在被 dramatically refactored"**：这位 AI 领域知名工程师表示"作为程序员从未感到如此落后"，他感觉自己如果正确整合近一年可用的工具可以 10X 更强大。Mollick 以此结尾不是危言耸听，而是行动号召——主动学习和适应这些工具，否则面临"skill issue"风险。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-and-what-comes-next.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

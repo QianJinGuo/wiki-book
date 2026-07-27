@@ -1804,7 +1804,7 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 ## Ch20.013 Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path
 
-> 📊 Level ⭐⭐ | 4.0KB | `entities/workday-ai-inference-guardrails.md`
+> 📊 Level ⭐⭐ | 4.2KB | `entities/workday-ai-inference-guardrails.md`
 
 # Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path
 
@@ -1860,6 +1860,11 @@ This is fundamentally different from general AI applications (chatbots, content 
 3. **Agent Passport pattern**: Pre-production verification + continuous monitoring dual-phase governance may become standard for enterprise agent deployment
 
 -> [original archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workday-ai-inference-guardrails.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 
@@ -1946,7 +1951,7 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 
 ## Ch20.015 Reinforcement learning towards broadly and persistently beneficial models
 
-> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/openai-beneficial-rl-broadly-persistently.md`
+> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/openai-beneficial-rl-broadly-persistently.md`
 
 # Reinforcement learning towards broadly and persistently beneficial models
 
@@ -2030,6 +2035,10 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 ## 相关实体
 
 - [强化学习 (RL)](https://github.com/QianJinGuo/wiki/blob/main/concepts/reinforcement-fine-tuning-rft.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2225,6 +2234,10 @@ Alignment Training，对齐训练。
 ## 500年前的心学，和AI
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/王阳明心学被anthropic用来教claude做人了.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

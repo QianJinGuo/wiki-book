@@ -109,9 +109,9 @@ MCP 来源的 Skill 跳过内嵌 shell 执行是一个合理的安全设计，�
 ## 相关实体
 
 - [Claude Code Skills/MCP/Rules 源码分析](ch07/006-claude-code-skills-mcp-rules.html) — 互补：该实体源码层（Rewrites/Loader/评分），本实体用户层（frontmatter/发现/安全）
-- [Claude Code Skill Writing 指南](../ch03/076-claude-code.html) — 互补：前者侧重编写方法，本实体侧重发现机制和执行原理
+- [Claude Code Skill Writing 指南](../ch03/077-claude-code.html) — 互补：前者侧重编写方法，本实体侧重发现机制和执行原理
 - [Hermes Skill System](ch07/017-hermes-skill.html)
-- [Claude Code 系统工程指南](../ch03/076-claude-code.html)
+- [Claude Code 系统工程指南](../ch03/077-claude-code.html)
 
 ## 参考
 

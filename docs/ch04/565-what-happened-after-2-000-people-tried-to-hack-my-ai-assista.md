@@ -2,7 +2,7 @@
 
 ## Ch04.565 What happened after 2,000 people tried to hack my AI assistant — Fernando Irarrázaval
 
-> 📊 Level ⭐⭐ | 4.6KB | `entities/what-happened-after-2-000-people-tried-to-hack-my-ai-assista.md`
+> 📊 Level ⭐⭐ | 4.7KB | `entities/what-happened-after-2-000-people-tried-to-hack-my-ai-assista.md`
 
 # What happened after 2,000 people tried to hack my AI assistant — Fernando Irarrázaval
 
@@ -67,6 +67,11 @@ One person sent 20 variations in four minutes. Another posed as an “OpenClaw A
 *   **Some sent Anthropic’s magic string*
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-happened-after-2-000-people-tried-to-hack-my-ai-assista.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

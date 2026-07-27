@@ -2,7 +2,7 @@
 
 ## Ch04.573 Protein Research Copilot with Amazon Bedrock AgentCore
 
-> 📊 Level ⭐⭐ | 4.3KB | `entities/protein-research-copilot-amazon-bedrock-agentcore.md`
+> 📊 Level ⭐⭐ | 4.5KB | `entities/protein-research-copilot-amazon-bedrock-agentcore.md`
 
 # Protein Research Copilot with Amazon Bedrock AgentCore
 
@@ -62,10 +62,15 @@ Strands Agent (Bedrock AgentCore Runtime)
 
 ## 相关主题
 
-- [Bedrock AgentCore 多租户模式](ch04/549-amazon-bedrock-agentcore.html) — 同系列文章，聚焦 AgentCore 的多租户架构
+- [Bedrock AgentCore 多租户模式](ch04/554-amazon-bedrock-agentcore.html) — 同系列文章，聚焦 AgentCore 的多租户架构
 - Amazon Bedrock AgentCore — AWS Agent 部署平台
 - Strands Agents SDK — AWS 开源 Agent 框架
 - pgvector — PostgreSQL 向量扩展
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

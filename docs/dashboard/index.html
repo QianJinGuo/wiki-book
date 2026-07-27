@@ -3,858 +3,501 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🧠 费曼学习仪表盘 — Agent 工程</title>
+<title>📚 AI 工程 · 渐进式学习仪表盘</title>
 <style>
 :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1e293b;--surface3:#283548;
 --border:#334155;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;
 --accent:#8b5cf6;--accent2:#a78bfa;--green:#22c55e;--yellow:#eab308;
---orange:#f97316;--red:#ef4444;--cyan:#06b6d4;--pink:#ec4899;
---tier1:#f59e0b;--tier2:#6366f1;--tier3:#64748b}
+--orange:#f97316;--red:#ef4444;--cyan:#06b6d4;--pink:#ec4899;--blue:#3b82f6}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
-.app{max-width:1200px;margin:0 auto;padding:1.5rem}
 
-/* Header */
-.header{text-align:center;padding:2rem 0 1rem}
-.header h1{font-size:2.2rem;background:linear-gradient(135deg,#8b5cf6,#ec4899,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.header p{color:var(--text2);margin-top:.5rem;font-size:.95rem}
+.header{background:linear-gradient(135deg,#1e1b4b 0%,#0f172a 60%,#0a0e1a 100%);border-bottom:1px solid var(--border);padding:2rem 1rem 1.5rem}
+.header-inner{max-width:1400px;margin:0 auto}
+.header h1{font-size:1.8rem;background:linear-gradient(135deg,#818cf8,#c084fc,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
+.header p{color:var(--text2);font-size:.9rem}
 
-/* Nav Tabs */
-.nav{display:flex;gap:.5rem;justify-content:center;margin:1.5rem 0;flex-wrap:wrap}
-.nav-btn{padding:.6rem 1.5rem;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text2);cursor:pointer;font-size:.9rem;transition:all .2s}
-.nav-btn:hover{border-color:var(--accent);color:var(--text)}
-.nav-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.phase-bar{display:flex;gap:.3rem;margin:1.2rem 0 .5rem;flex-wrap:wrap}
+.phase-chip{padding:.4rem 1rem;border-radius:10px;font-size:.82rem;font-weight:600;cursor:pointer;border:2px solid transparent;transition:all .2s;opacity:.6}
+.phase-chip:hover{opacity:.85}
+.phase-chip.active{opacity:1;border-color:#fff;transform:scale(1.05)}
+.phase-chip .count{font-size:.7rem;opacity:.7;margin-left:.3rem}
 
-/* Panels */
-.panel{display:none}.panel.active{display:block}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.8rem;margin-bottom:1rem}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:.8rem;text-align:center}
+.stat .num{font-size:1.6rem;font-weight:700}
+.stat .label{color:var(--text2);font-size:.72rem;margin-top:.15rem}
 
-/* Stats Row */
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-bottom:1.5rem}
-.stat{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem;text-align:center}
-.stat .num{font-size:1.8rem;font-weight:700}.stat .label{color:var(--text2);font-size:.75rem;margin-top:.2rem}
+.controls{max-width:1400px;margin:0 auto 1rem;display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;padding:0 1rem}
+.search-box{flex:1;min-width:180px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.6rem 1rem;color:var(--text);font-size:.9rem;outline:none}
+.search-box:focus{border-color:var(--accent)}
+.search-box::placeholder{color:var(--text3)}
+.chip-group{display:flex;gap:.3rem;flex-wrap:wrap}
+.chip{padding:.35rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text2);cursor:pointer;font-size:.78rem;transition:all .2s;white-space:nowrap}
+.chip:hover{border-color:var(--accent);color:var(--text)}
+.chip.active{background:var(--accent);border-color:var(--accent);color:#fff}
 
-/* Level Colors */
-.lv-unread{color:var(--text3)}.lv-read{color:var(--cyan)}
-.lv-explained{color:var(--yellow)}.lv-taught{color:var(--orange)}.lv-mastered{color:var(--green)}
+.sync-bar{max-width:1400px;margin:0 auto .8rem;padding:0 1rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.sync-status{font-size:.78rem;color:var(--text3)}
+.sync-status.ok{color:var(--green)}
+.sync-status.err{color:var(--red)}
+.sync-input{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.35rem .7rem;color:var(--text);font-size:.82rem;width:160px;outline:none}
+.sync-input:focus{border-color:var(--accent)}
+.sync-btn{padding:.35rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);cursor:pointer;font-size:.78rem;transition:all .2s}
+.sync-btn:hover{border-color:var(--accent);color:var(--text)}
 
-/* Cards */
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1rem}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.2rem;transition:all .2s;cursor:pointer;position:relative}
-.card:hover{border-color:var(--accent);transform:translateY(-2px)}
-.card-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.6rem}
-.card-id{font-size:.7rem;color:var(--text3);background:var(--surface2);padding:.2rem .5rem;border-radius:6px}
-.card-tier{font-size:.7rem;padding:.2rem .5rem;border-radius:6px}
-.tier-1{background:rgba(245,158,11,.15);color:var(--tier1)}
-.tier-2{background:rgba(99,102,241,.15);color:var(--tier2)}
-.tier-3{background:rgba(100,116,139,.15);color:var(--tier3)}
-.card-title{font-size:1rem;font-weight:600;margin-bottom:.4rem;line-height:1.4}
-.card-desc{font-size:.82rem;color:var(--text2);margin-bottom:.8rem}
-.card-meta{display:flex;justify-content:space-between;align-items:center}
-.card-words{font-size:.75rem;color:var(--text3)}
-.card-level{font-size:.75rem;padding:.2rem .6rem;border-radius:20px;font-weight:600}
-.lv-badge-unread{background:rgba(100,116,139,.15);color:var(--text3)}
-.lv-badge-read{background:rgba(6,182,212,.15);color:var(--cyan)}
-.lv-badge-explained{background:rgba(234,179,8,.15);color:var(--yellow)}
-.lv-badge-taught{background:rgba(249,115,22,.15);color:var(--orange)}
-.lv-badge-mastered{background:rgba(34,197,94,.15);color:var(--green)}
+.progress-section{max-width:1400px;margin:0 auto .8rem;padding:0 1rem}
+.progress-bars{display:grid;gap:.4rem}
+.phase-progress{display:flex;align-items:center;gap:.5rem;padding:.3rem 0}
+.phase-progress .pname{font-size:.75rem;font-weight:600;min-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.phase-progress .bar{flex:1;height:8px;background:var(--surface2);border-radius:4px;overflow:hidden}
+.phase-progress .bar-fill{height:100%;border-radius:4px;transition:width .5s}
+.phase-progress .pcount{font-size:.72rem;color:var(--text3);min-width:80px;text-align:right}
 
-/* Feynman Modal */
-.modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.7);z-index:100;justify-content:center;align-items:flex-start;padding:2rem;overflow-y:auto}
-.modal-overlay.open{display:flex}
-.modal{background:var(--surface);border:1px solid var(--border);border-radius:16px;width:100%;max-width:800px;padding:2rem;position:relative}
-.modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text2);font-size:1.5rem;cursor:pointer}
-.modal h2{font-size:1.3rem;margin-bottom:.5rem}
-.modal .subtitle{color:var(--text2);font-size:.85rem;margin-bottom:1.5rem}
+.content{max-width:1400px;margin:0 auto;padding:0 1rem 3rem}
 
-/* Feynman Steps */
-.steps{display:flex;gap:.5rem;margin-bottom:1.5rem;flex-wrap:wrap}
-.step{flex:1;min-width:100px;padding:.6rem;border-radius:10px;text-align:center;font-size:.8rem;border:2px solid var(--border);color:var(--text3);transition:all .3s}
-.step.active{border-color:var(--accent);color:var(--accent);background:rgba(139,92,246,.1)}
-.step.done{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.1)}
-.step-num{font-size:1.2rem;font-weight:700;display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:.8rem}
 
-/* Textarea */
-.ta{width:100%;min-height:200px;background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:1rem;color:var(--text);font-size:.95rem;font-family:inherit;resize:vertical;outline:none;line-height:1.7}
-.ta:focus{border-color:var(--accent)}
-.ta::placeholder{color:var(--text3)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem;transition:all .2s;cursor:pointer;position:relative}
+.card:hover{border-color:var(--accent);transform:translateY(-1px);box-shadow:0 6px 20px rgba(99,102,241,.08)}
+.card.done{opacity:.55}
+.card.done .card-title{text-decoration:line-through}
 
-/* Questions */
-.questions{margin:1rem 0}
-.q-item{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:1rem;margin-bottom:.8rem}
-.q-text{font-weight:600;margin-bottom:.5rem;color:var(--accent2)}
-.q-hint{font-size:.82rem;color:var(--text3);font-style:italic}
+.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem}
+.phase-badge{font-size:.68rem;font-weight:700;padding:.15rem .5rem;border-radius:5px;color:#fff}
+.level-badge{font-size:.68rem;padding:.15rem .4rem;border-radius:4px}
+.lv1{background:rgba(245,158,11,.12);color:var(--yellow)}
+.lv2{background:rgba(99,102,241,.12);color:var(--accent2)}
+.lv3{background:rgba(34,197,94,.12);color:var(--green)}
 
-/* Buttons */
-.btn{padding:.6rem 1.5rem;border-radius:10px;border:none;cursor:pointer;font-size:.9rem;font-weight:600;transition:all .2s}
-.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent2)}
-.btn-ghost{background:transparent;border:1px solid var(--border);color:var(--text2)}.btn-ghost:hover{border-color:var(--accent);color:var(--text)}
-.btn-green{background:var(--green);color:#fff}
-.btn-row{display:flex;gap:.8rem;margin-top:1.5rem;justify-content:flex-end}
+.card-title{font-size:.92rem;font-weight:600;margin-bottom:.3rem;line-height:1.4}
+.card-title a{color:inherit;text-decoration:none}
+.card-title a:hover{text-decoration:underline}
+.card-meta{display:flex;justify-content:space-between;align-items:center;margin-top:.5rem}
+.card-chapter{font-size:.72rem;color:var(--text3)}
+.card-words{font-size:.72rem;color:var(--text3)}
+.card-actions{display:flex;gap:.3rem;align-items:center}
 
-/* Concept Map */
-.concept-map{margin:1rem 0}
-.track-group{margin-bottom:1.5rem}
-.track-group h3{font-size:.95rem;color:var(--accent2);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--border)}
-.concept-row{display:flex;align-items:center;gap:.5rem;padding:.4rem 0;flex-wrap:wrap}
-.concept-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.concept-name{font-size:.85rem;flex:1;min-width:100px}
-.concept-arrow{color:var(--text3);font-size:.75rem}
-.concept-link{font-size:.75rem;color:var(--accent);cursor:pointer;text-decoration:underline}
+.level-btn{padding:.2rem .5rem;border-radius:5px;border:1px solid var(--border);background:var(--surface2);color:var(--text3);cursor:pointer;font-size:.72rem;transition:all .15s;white-space:nowrap}
+.level-btn:hover{border-color:var(--accent)}
+.level-btn.read{background:rgba(6,182,212,.15);color:var(--cyan);border-color:var(--cyan)}
+.level-btn.explained{background:rgba(234,179,8,.15);color:var(--yellow);border-color:var(--yellow)}
+.level-btn.taught{background:rgba(249,115,22,.15);color:var(--orange);border-color:var(--orange)}
+.level-btn.mastered{background:rgba(34,197,94,.15);color:var(--green);border-color:var(--green)}
 
-/* Daily Challenge */
-.challenge{background:linear-gradient(135deg,rgba(139,92,246,.15),rgba(236,72,153,.15));border:1px solid rgba(139,92,246,.3);border-radius:16px;padding:2rem;text-align:center;margin-bottom:1.5rem}
-.challenge h2{font-size:1.3rem;margin-bottom:.5rem}
-.challenge .article-name{font-size:1.1rem;color:var(--accent2);margin:1rem 0;font-weight:600}
-.challenge .timer{color:var(--text3);font-size:.85rem}
+.loading{text-align:center;padding:4rem;color:var(--text2)}
+.empty{text-align:center;padding:3rem;color:var(--text3)}
 
-/* Spaced Review */
-.review-list{margin:1rem 0}
-.review-item{display:flex;align-items:center;gap:1rem;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1rem;margin-bottom:.6rem;cursor:pointer;transition:all .2s}
-.review-item:hover{border-color:var(--accent)}
-.review-item .urgency{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.urgency-high{background:var(--red)}.urgency-mid{background:var(--yellow)}.urgency-low{background:var(--green)}
-.review-item .info{flex:1}.review-item .name{font-size:.9rem;font-weight:500}.review-item .meta{font-size:.75rem;color:var(--text3)}
+.section-header{margin:1.5rem 0 .8rem;display:flex;align-items:center;gap:.6rem}
+.section-header h2{font-size:1rem}
+.section-header .badge{background:var(--surface2);color:var(--text2);padding:.15rem .5rem;border-radius:5px;font-size:.72rem}
 
-/* Filter bar */
-.filter-bar{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem;align-items:center}
-.search{flex:1;min-width:200px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.6rem 1rem;color:var(--text);font-size:.9rem;outline:none}
-.search:focus{border-color:var(--accent)}
-.filter-btn{padding:.4rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text2);cursor:pointer;font-size:.8rem;transition:all .2s}
-.filter-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
-
-/* History */
-.history{margin:1rem 0}
-.history-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1rem;margin-bottom:.8rem}
-.history-item h4{font-size:.9rem;color:var(--accent2);margin-bottom:.3rem}
-.history-item .explanation{font-size:.85rem;color:var(--text2);line-height:1.6;white-space:pre-wrap}
-.history-item .date{font-size:.7rem;color:var(--text3);margin-top:.4rem}
-.history-item .level-badge{display:inline-block;font-size:.7rem;padding:.1rem .5rem;border-radius:12px;margin-left:.5rem}
-
-/* Responsive */
-@media(max-width:600px){.cards{grid-template-columns:1fr}.modal{padding:1rem}.steps{flex-direction:column}}
+@media(max-width:640px){
+  .header h1{font-size:1.3rem}
+  .grid{grid-template-columns:1fr}
+  .phase-bar{gap:.2rem}
+  .phase-chip{padding:.3rem .6rem;font-size:.72rem}
+  .stats{grid-template-columns:repeat(3,1fr)}
+}
 </style>
 </head>
 <body>
-<div class="app">
-  <div class="header">
-    <h1>🧠 费曼学习仪表盘</h1>
-    <p>从 3379 篇中精选 86 篇 · 用费曼法掌握 Agent 工程核心</p>
-  </div>
 
-  <div class="nav">
-    <button class="nav-btn active" data-panel="dashboard">📊 仪表盘</button>
-    <button class="nav-btn" data-panel="challenge">🎯 每日挑战</button>
-    <button class="nav-btn" data-panel="review">🔄 间隔复习</button>
-    <button class="nav-btn" data-panel="map">🗺️ 概念地图</button>
-    <button class="nav-btn" data-panel="history">📝 学习记录</button>
-  </div>
-
-  <!-- Dashboard Panel -->
-  <div class="panel active" id="panel-dashboard">
-    <div class="stats">
-      <div class="stat"><div class="num lv-unread" id="s-unread">86</div><div class="label">未读</div></div>
-      <div class="stat"><div class="num lv-read" id="s-read">0</div><div class="label">已读</div></div>
-      <div class="stat"><div class="num lv-explained" id="s-explained">0</div><div class="label">已解释</div></div>
-      <div class="stat"><div class="num lv-taught" id="s-taught">0</div><div class="label">已教授</div></div>
-      <div class="stat"><div class="num lv-mastered" id="s-mastered">0</div><div class="label">已掌握</div></div>
-      <div class="stat"><div class="num" id="s-streak" style="color:var(--pink)">0</div><div class="label">连续天数 🔥</div></div>
-    </div>
-    <div class="filter-bar">
-      <input class="search" id="search" placeholder="🔍 搜索文章...">
-      <button class="filter-btn active" data-level="all">全部</button>
-      <button class="filter-btn" data-level="unread">未读</button>
-      <button class="filter-btn" data-level="read">已读</button>
-      <button class="filter-btn" data-level="explained">已解释</button>
-      <button class="filter-btn" data-level="taught">已教授</button>
-      <button class="filter-btn" data-level="mastered">已掌握</button>
-    </div>
-    <div class="cards" id="cards"></div>
-  </div>
-
-  <!-- Challenge Panel -->
-  <div class="panel" id="panel-challenge">
-    <div class="challenge" id="challenge-box">
-      <h2>🎯 今日费曼挑战</h2>
-      <p>选一篇文章，用最简单的语言解释核心概念</p>
-      <div class="article-name" id="challenge-article">加载中...</div>
-      <button class="btn btn-primary" id="challenge-start">开始费曼练习 →</button>
-      <div class="timer" style="margin-top:1rem">建议时间：15-25 分钟（含阅读 + 解释 + 自检）</div>
-    </div>
-    <div style="margin-top:1.5rem">
-      <h3 style="color:var(--text2);margin-bottom:1rem">🎲 随机抽取</h3>
-      <button class="btn btn-ghost" id="random-btn">随机一篇</button>
-      <button class="btn btn-ghost" id="random-unread-btn" style="margin-left:.5rem">从未读中随机</button>
-    </div>
-  </div>
-
-  <!-- Review Panel -->
-  <div class="panel" id="panel-review">
-    <div style="margin-bottom:1rem">
-      <h2 style="font-size:1.2rem">🔄 间隔复习计划</h2>
-      <p style="color:var(--text2);font-size:.85rem;margin-top:.3rem">
-        基于艾宾浩斯遗忘曲线：1天 → 3天 → 7天 → 14天 → 30天
-      </p>
-    </div>
-    <div class="stats" style="margin-bottom:1rem">
-      <div class="stat"><div class="num" id="review-due" style="color:var(--red)">0</div><div class="label">今日待复习</div></div>
-      <div class="stat"><div class="num" id="review-overdue" style="color:var(--orange)">0</div><div class="label">已逾期</div></div>
-      <div class="stat"><div class="num" id="review-upcoming" style="color:var(--cyan)">0</div><div class="label">未来 7 天</div></div>
-    </div>
-    <div class="review-list" id="review-list"></div>
-  </div>
-
-  <!-- Concept Map Panel -->
-  <div class="panel" id="panel-map">
-    <div style="margin-bottom:1rem">
-      <h2 style="font-size:1.2rem">🗺️ 概念依赖地图</h2>
-      <p style="color:var(--text2);font-size:.85rem;margin-top:.3rem">
-        先掌握基础概念（左侧），再进阶到高级主题（右侧）
-      </p>
-    </div>
-    <div class="concept-map" id="concept-map"></div>
-  </div>
-
-  <!-- History Panel -->
-  <div class="panel" id="panel-history">
-    <div style="margin-bottom:1rem">
-      <h2 style="font-size:1.2rem">📝 学习记录</h2>
-      <p style="color:var(--text2);font-size:.85rem;margin-top:.3rem">你的费曼解释记录，可随时回顾</p>
-    </div>
-    <div class="history" id="history-list"></div>
+<div class="header">
+  <div class="header-inner">
+    <h1>📚 AI 工程 · 渐进式学习仪表盘</h1>
+    <p id="header-sub">加载中...</p>
+    <div class="phase-bar" id="phase-bar"></div>
   </div>
 </div>
 
-<!-- Feynman Modal -->
-<div class="modal-overlay" id="modal">
-  <div class="modal">
-    <button class="modal-close" id="modal-close">×</button>
-    <h2 id="modal-title">文章标题</h2>
-    <p class="subtitle" id="modal-desc">描述</p>
+<div class="stats" id="stats-row" style="max-width:1400px;margin:1rem auto;padding:0 1rem"></div>
 
-    <div class="steps" id="steps">
-      <div class="step active" data-step="1"><span class="step-num">①</span>阅读文章</div>
-      <div class="step" data-step="2"><span class="step-num">②</span>用自己的话解释</div>
-      <div class="step" data-step="3"><span class="step-num">③</span>回答追问</div>
-      <div class="step" data-step="4"><span class="step-num">④</span>自评掌握度</div>
-    </div>
+<div class="sync-bar">
+  <span style="font-size:.82rem;color:var(--text2)">👤 用户 ID：</span>
+  <input class="sync-input" id="user-id" placeholder="输入用户名同步进度" />
+  <button class="sync-btn" id="sync-push">⬆ 推送</button>
+  <button class="sync-btn" id="sync-pull">⬇ 拉取</button>
+  <span class="sync-status" id="sync-status">离线模式（仅本地）</span>
+</div>
 
-    <!-- Step 1: Read -->
-    <div class="step-panel" id="step1">
-      <p style="color:var(--text2);margin-bottom:1rem">
-        📖 点击下方链接阅读原文。读完后，尝试在脑中用一句话概括核心观点。
-      </p>
-      <a id="article-link" href="#" target="_blank" class="btn btn-primary" style="display:inline-block;text-decoration:none">
-        打开原文 →
-      </a>
-      <div style="margin-top:1rem">
-        <label style="color:var(--text2);font-size:.85rem">
-          <input type="checkbox" id="read-check"> 我已阅读并理解了主要观点
-        </label>
-      </div>
-      <div class="btn-row">
-        <button class="btn btn-primary" id="step1-next" disabled>下一步：解释 →</button>
-      </div>
-    </div>
+<div class="controls">
+  <input class="search-box" id="search" placeholder="搜索标题、章节..." />
+  <div class="chip-group" id="chapter-filters"></div>
+  <div class="chip-group" id="level-filters"></div>
+</div>
 
-    <!-- Step 2: Explain -->
-    <div class="step-panel" id="step2" style="display:none">
-      <p style="color:var(--text2);margin-bottom:.5rem">
-        ✍️ 假设你在向一个聪明但不了解这个领域的大学生解释。<br>
-        <strong>不要用术语</strong>，用日常语言和类比。越简单越好。
-      </p>
-      <textarea class="ta" id="explanation" placeholder="用你自己的话解释这篇文章的核心概念...&#10;&#10;提示：&#10;- 这篇文章在说什么问题？&#10;- 核心解决方案是什么？&#10;- 如果用一个类比来解释，是什么？&#10;- 这和我已知的哪些概念有关？"></textarea>
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:.5rem">
-        <span id="word-count" style="font-size:.8rem;color:var(--text3)">0 字</span>
-        <span style="font-size:.8rem;color:var(--text3)">建议 100-300 字</span>
-      </div>
-      <div class="btn-row">
-        <button class="btn btn-ghost" id="step2-back">← 返回</button>
-        <button class="btn btn-primary" id="step2-next">下一步：追问 →</button>
-      </div>
-    </div>
+<div class="progress-section">
+  <div class="progress-bars" id="progress-bars"></div>
+</div>
 
-    <!-- Step 3: Questions -->
-    <div class="step-panel" id="step3" style="display:none">
-      <p style="color:var(--text2);margin-bottom:1rem">
-        🤔 回答以下追问。这些问题是用来检验你是否真的理解了，而不只是记住了。
-      </p>
-      <div class="questions" id="questions"></div>
-      <textarea class="ta" id="q-answers" placeholder="回答上面的问题...&#10;如果答不上来，说明你在这个点上理解还不够深，这很正常——这正是费曼法的价值。" style="min-height:150px"></textarea>
-      <div class="btn-row">
-        <button class="btn btn-ghost" id="step3-back">← 返回</button>
-        <button class="btn btn-primary" id="step3-next">下一步：自评 →</button>
-      </div>
-    </div>
-
-    <!-- Step 4: Self-assess -->
-    <div class="step-panel" id="step4" style="display:none">
-      <p style="color:var(--text2);margin-bottom:1rem">
-        🎯 诚实地评估你对这个概念的掌握程度：
-      </p>
-      <div style="display:grid;gap:.8rem;margin-bottom:1.5rem">
-        <label class="card" style="cursor:pointer;display:flex;gap:1rem;align-items:center;padding:1rem">
-          <input type="radio" name="level" value="read" style="accent-color:var(--cyan)">
-          <div><strong class="lv-read">📖 已读</strong><br><span style="font-size:.85rem;color:var(--text2)">读完了，但让我解释的话很困难</span></div>
-        </label>
-        <label class="card" style="cursor:pointer;display:flex;gap:1rem;align-items:center;padding:1rem">
-          <input type="radio" name="level" value="explained" style="accent-color:var(--yellow)">
-          <div><strong class="lv-explained">✍️ 已解释</strong><br><span style="font-size:.85rem;color:var(--text2)">我能用自己的话解释，但有些地方还模糊</span></div>
-        </label>
-        <label class="card" style="cursor:pointer;display:flex;gap:1rem;align-items:center;padding:1rem">
-          <input type="radio" name="level" value="taught" style="accent-color:var(--orange)">
-          <div><strong class="lv-taught">🎓 已教授</strong><br><span style="font-size:.85rem;color:var(--text2)">我能清楚地教给别人，能回答追问</span></div>
-        </label>
-        <label class="card" style="cursor:pointer;display:flex;gap:1rem;align-items:center;padding:1rem">
-          <input type="radio" name="level" value="mastered" style="accent-color:var(--green)">
-          <div><strong class="lv-mastered">🏆 已掌握</strong><br><span style="font-size:.85rem;color:var(--text2)">我能举一反三，和其他概念融会贯通</span></div>
-        </label>
-      </div>
-      <div class="btn-row">
-        <button class="btn btn-ghost" id="step4-back">← 返回</button>
-        <button class="btn btn-green" id="save-btn">✅ 保存并完成</button>
-      </div>
-    </div>
-  </div>
+<div class="content" id="content">
+  <div class="loading">⏳ 正在加载文章数据...</div>
 </div>
 
 <script>
-// ============================================================
-// DATA — 86 articles
-// ============================================================
-const ARTICLES = [
-{id:"A1",file:"docs/ch05/112-harness-engineering-ai.md",title:"Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？",words:2182,tier:1,track:"A",desc:"探讨 AI 在高风险后端系统中编程的可行性与安全约束",
- questions:["用一个比喻解释 Harness Engineering 是什么","为什么 AI 在\"出事会炸\"的系统里写代码需要额外约束？","Harness 的四根支柱分别解决什么问题？"]},
-{id:"A2",file:"docs/ch05/117-harness-engineering.md",title:"Harness Engineering 四根支柱与四要素架构",words:847,tier:1,track:"A",desc:"Harness 工程的四大支柱：Guardrail、Constraint、Feedback、Recovery",
- questions:["Guardrail 和 Constraint 有什么区别？","四要素架构中哪个要素最容易被忽略？为什么？","如果只能选一个支柱做 MVP，你选哪个？"]},
-{id:"A3",file:"docs/ch05/116-harness-engineering-ashby.md",title:"Harness Engineering 从理论到实战：Ashby 定律",words:898,tier:1,track:"A",desc:"用 Ashby 必要多样性定律指导 Agent 约束设计",
- questions:["用一句话解释 Ashby 定律","为什么 Agent 的约束必须\"至少和环境一样复杂\"？","举一个违反 Ashby 定律导致失败的例子"]},
-{id:"A4",file:"docs/ch05/118-claude-harness-generator-evaluator-context-reset.md",title:"Claude Harness 设计：Generator-Evaluator 与 Context Reset",words:1019,tier:1,track:"A",desc:"Claude 的 Generator-Evaluator 循环与上下文重置策略",
- questions:["Generator-Evaluator 模式和人类的\"写-审\"流程有何异同？","为什么需要 Context Reset？不重置会怎样？","这个设计模式可以应用到哪些非 AI 场景？"]},
-{id:"A5",file:"docs/ch04/687-agent-harnesses-are-dead-long-live-agent-harnesses.md",title:"Agent Harnesses Are Dead. Long Live Agent Harnesses.",words:331,tier:1,track:"A",desc:"Harness 范式的兴衰与重生",
- questions:["标题模仿了哪句历史名言？为什么用这个格式？","Harness \"死了\"和\"万岁\"分别指什么？","这篇文章的核心论点用一句话怎么说？"]},
-{id:"B1",file:"docs/ch04/669-17-agent-architecture-evolution.md",title:"17种 Agent 架构演进：控制流设计的完整演化史",words:1558,tier:1,track:"B",desc:"从 ReAct 到 Unified Policy，17 种架构的完整演化路径",
- questions:["ReAct 和 Plan-and-Execute 的核心区别是什么？","为什么架构会从\"单一循环\"演进到\"分层控制\"？","画一张简图表示 3 种你认为最重要的架构"]},
-{id:"B2",file:"docs/ch04/670-cpu-agent-l1-l2-l3-execute-code.md",title:"CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3",words:1072,tier:1,track:"B",desc:"用 CPU 缓存层级类比 Agent 的多层上下文管理",
- questions:["L1/L2/L3 分别对应 Agent 的什么？","为什么 Agent 需要\"分层缓存\"而不是一个大上下文窗口？","这个类比在什么地方会失效？"]},
-{id:"B3",file:"docs/ch01/1190-claude-code.md",title:"Claude Code 架构深度解析",words:1861,tier:1,track:"B",desc:"Claude Code 的完整架构：工具调用、上下文管理、安全边界",
- questions:["Claude Code 的工具调用流程是怎样的？","它如何处理长上下文超出窗口的问题？","安全边界设计中最关键的一点是什么？"]},
-{id:"B4",file:"docs/ch01/1224-codex-codex-app-agent-harness-runtime.md",title:"Codex 全链路架构：Agent Harness Runtime",words:592,tier:1,track:"B",desc:"OpenAI Codex 的 Agent Harness 运行时架构",
- questions:["Codex 的 Harness Runtime 解决什么问题？","它和 Claude Code 的架构有什么主要区别？","\"全链路\"指的是从哪到哪？"]},
-{id:"B5",file:"docs/ch04/671-you-can-t-afford-to-lead-agentic-engineering-from-the-sideli.md",title:"You can't afford to lead agentic engineering from the sidelines",words:2115,tier:1,track:"B",desc:"为什么企业必须亲自下场做 Agentic Engineering",
- questions:["\"from the sidelines\" 的比喻指什么？","为什么观望策略在 Agentic Engineering 中行不通？","如果你是 CTO，你会怎么说服 CEO 投入 Agent 工程？"]},
-{id:"C1",file:"docs/ch01/1195-memory-in-the-llm-era-modular-architectures-and-strategies.md",title:"Memory in the LLM Era: Modular Architectures",words:759,tier:1,track:"C",desc:"LLM 时代的模块化记忆架构与策略",
- questions:["LLM 的\"记忆\"和人类记忆有什么本质区别？","模块化记忆相比单一记忆的优势是什么？","短期记忆和长期记忆在 Agent 中分别怎么实现？"]},
-{id:"C2",file:"docs/ch01/1187-subagents-claude-code.md",title:"Subagents 详解：Claude Code 如何避免上下文污染",words:1412,tier:1,track:"C",desc:"子 Agent 如何隔离上下文、防止污染",
- questions:["什么是\"上下文污染\"？用一个生活中的例子解释","Subagent 如何在不丢失关键信息的情况下隔离上下文？","什么时候应该用 Subagent，什么时候不应该？"]},
-{id:"C3",file:"docs/ch01/1200-claude-code.md",title:"Claude Code 七层记忆架构",words:697,tier:1,track:"C",desc:"Claude Code 的七层记忆系统详解",
- questions:["七层分别是什么？画一个金字塔","为什么需要七层而不是一层或两层？","哪一层对日常编程帮助最大？"]},
-{id:"D1",file:"docs/ch01/1199-claude-code-agent-agent.md",title:"Claude Code 多智能体协作体系设计",words:958,tier:1,track:"D",desc:"Claude Code 的多 Agent 协作架构设计",
- questions:["多 Agent 协作和单 Agent 的本质区别是什么？","Claude Code 如何决定\"谁来做什么\"？","多 Agent 系统最大的挑战是什么？"]},
-{id:"D2",file:"docs/ch04/674-multi-agent-factory-mission.md",title:"Multi-Agent 架构：Factory Mission 系统的方法论",words:629,tier:1,track:"D",desc:"Factory Mission 多 Agent 系统的方法论框架",
- questions:["Factory Mission 模式用工厂流水线类比，哪些环节对应什么？","这个方法论的适用边界在哪里？","和微服务架构有什么相似和不同？"]},
-{id:"D3",file:"docs/ch01/1219-icml-2026-multi-agent-orchestrator.md",title:"ICML 2026 Multi-Agent Orchestrator 过程评估",words:333,tier:1,track:"D",desc:"ICML 2026 多 Agent 编排器的过程评估方法",
- questions:["为什么\"过程评估\"比\"结果评估\"更重要？","Orchestrator 的核心职责是什么？","这个评估方法可以量化吗？怎么量化？"]},
-{id:"E1",file:"docs/ch09/174-fastcontext-coding-agent.md",title:"FastContext 微软开源 Coding Agent",words:526,tier:1,track:"E",desc:"微软 FastContext 开源编程 Agent 解析",
- questions:["FastContext 的\"Fast\"体现在哪里？","它解决了编程 Agent 的什么核心痛点？","和 Cursor/Copilot 相比有什么不同思路？"]},
-{id:"E2",file:"docs/ch09/176-ai-coding-agent-token.md",title:"AI Coding Agent Token 成本控制五层模型",words:356,tier:1,track:"E",desc:"控制编程 Agent Token 成本的五层策略",
- questions:["五层分别是什么？哪层效果最显著？","为什么 Token 成本是 Coding Agent 的核心约束？","如果你的 Agent 每天消耗 $100 Token，你先优化哪一层？"]},
-{id:"F1",file:"docs/ch01/1193-ai-agent-5-l1-l2-l3-6-benchmark-llm-as-jud.md",title:"AI Agent 评测实战：5 维指标 + L1/L2/L3",words:1655,tier:1,track:"F",desc:"Agent 评测的五维指标体系与 L1/L2/L3 分层",
- questions:["五个维度分别衡量什么？","L1/L2/L3 评测的递进关系是什么？","为什么用 LLM 当 Judge 是一把双刃剑？"]},
-{id:"F2",file:"docs/ch05/129-hscodecomp-acl-2026-agent.md",title:"HSCodeComp：阿里 ACL 2026 层级规则应用 Agent 基准",words:230,tier:1,track:"F",desc:"阿里 ACL 2026 层级规则应用 Agent 基准评测",
- questions:["\"层级规则\"指的是什么层级？","这个 Benchmark 测的是 Agent 的什么能力？","它和 SWE-bench 有什么区别？"]},
-{id:"G1",file:"docs/ch05/113-loss-function-development.md",title:"Loss Function Development (LFD) — 损失函数开发与 /goal 循环",words:1384,tier:2,track:"G",desc:"用损失函数的视角理解 Agent 的目标优化循环",
- questions:["把 Agent 的 /goal 循环比作损失函数优化，这个类比的核心是什么？","LFD 方法论的三个阶段是什么？","这个思路对你的实际工作有什么启发？"]},
-{id:"G2",file:"docs/ch05/120-harness-engineering-100-cache-hit.md",title:"Harness 工程实践复盘：100% Cache 命中的 Agent",words:1620,tier:2,track:"G",desc:"实战案例：如何让 Agent 达到 100% 缓存命中率",
- questions:["100% Cache 命中意味着什么？有什么代价？","哪些场景值得追求 100% Cache 命中？","这个案例中最反直觉的一点是什么？"]},
-{id:"G3",file:"docs/ch05/125-dipg-host-research-verify.md",title:"DIPG 蚂蚁保 Host-Research-Verify 三 Agent 闭环",words:1776,tier:2,track:"G",desc:"蚂蚁保的三 Agent 闭环系统设计",
- questions:["Host-Research-Verify 三个角色分别负责什么？","为什么是\"闭环\"而不是\"开环\"？","这个架构可以复用到哪些业务场景？"]},
-{id:"G4",file:"docs/ch05/127-harness-knowledge-moat.md",title:"Harness不是目的，知识才是护城河",words:951,tier:2,track:"G",desc:"Harness 工程的终极目标是积累可复用的知识",
- questions:["为什么说\"知识才是护城河\"而不是 Harness 本身？","Harness 如何帮助积累知识？","和传统的\"经验积累\"有什么不同？"]},
-{id:"G5",file:"docs/ch05/131-stripe-minions-bytedance-deerflow.md",title:"墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0",words:1672,tier:2,track:"G",desc:"为什么约束（墙）比底层模型能力更重要",
- questions:["\"墙比模型更重要\"这个论点的论据是什么？","Stripe Minions 和 DeerFlow 分别怎么建\"墙\"？","你同意这个观点吗？为什么？"]},
-{id:"G6",file:"docs/ch05/133-harness-state-machine.md",title:"Harness State Machine: 状态驱动的约束引擎",words:1252,tier:2,track:"G",desc:"用状态机建模 Agent 的约束系统",
- questions:["状态机和规则引擎有什么区别？","为什么状态机更适合建模 Agent 约束？","画出一个简单 Agent 的状态机图"]},
-{id:"G7",file:"docs/ch05/135-harness-test-driven.md",title:"Harness TDD：测试驱动的约束开发",words:973,tier:2,track:"G",desc:"把 TDD 方法论应用到 Agent 约束开发中",
- questions:["Harness TDD 和传统软件 TDD 有什么异同？","先写测试再写约束的好处是什么？","约束的\"测试\"和功能的\"测试\"有什么不同？"]},
-{id:"G8",file:"docs/ch05/137-harness-patterns.md",title:"Harness 设计模式：8 种可复用的约束模式",words:1588,tier:2,track:"G",desc:"8 种可复用的 Agent 约束设计模式",
- questions:["列举 3 种你认为最常用的 Harness 模式","这些模式之间可以组合吗？怎么组合？","有没有一种模式是其他模式的基础？"]},
-{id:"H1",file:"docs/ch04/675-agent-loops.md",title:"Agent Loop 设计：为什么 while True 不够用",words:867,tier:2,track:"H",desc:"Agent 循环设计的常见陷阱与改进方案",
- questions:["为什么 while True 循环在 Agent 中不够用？","3 种改进方案分别是什么？","在你的实际项目中遇到过循环失控的情况吗？"]},
-{id:"H2",file:"docs/ch04/676-context-window-strategies.md",title:"Context Window 策略：压缩、分层与选择性注入",words:1123,tier:2,track:"H",desc:"管理有限上下文窗口的三种策略",
- questions:["压缩、分层、选择性注入各适用于什么场景？","如果上下文窗口无限大，这些问题还存在吗？","哪种策略对成本影响最大？"]},
-{id:"H3",file:"docs/ch01/1192-agent-tool-use-paradigm-shift.md",title:"Agent Tool Use 范式转移",words:894,tier:2,track:"H",desc:"从函数调用到自主工具使用的范式转变",
- questions:["\"范式转移\"具体指什么转变？","传统 API 调用和 Agent Tool Use 的本质区别？","这对工具设计者意味着什么？"]},
-{id:"H4",file:"docs/ch01/1204-agent-planning-and-reasoning.md",title:"Agent 规划与推理：CoT → ToT → GoT",words:1456,tier:2,track:"H",desc:"从链式思维到图式思维的推理演进",
- questions:["CoT、ToT、GoT 分别是什么？用一句话解释 each","为什么推理能力是 Agent 最核心的能力？","在什么场景下 GoT 比 CoT 好得多？"]},
-{id:"H5",file:"docs/ch01/1210-agent-safety-alignment.md",title:"Agent 安全与对齐：从 RLHF 到 Constitutional AI",words:1211,tier:2,track:"H",desc:"Agent 安全对齐的技术路线",
- questions:["RLHF 和 Constitutional AI 的核心区别？","为什么 Agent 比普通 LLM 更需要安全约束？","举一个 Agent 失控的具体场景"]},
-{id:"H6",file:"docs/ch01/1220-agent-error-recovery.md",title:"Agent 错误恢复：自我修复的五种模式",words:987,tier:2,track:"H",desc:"Agent 遇到错误时的五种自我恢复模式",
- questions:["五种恢复模式分别是什么？","哪种模式最通用？哪种最安全？","如果你只能实现一种恢复模式，选哪种？"]},
-{id:"H7",file:"docs/ch01/1233-tokenspeed-agentic-inference.md",title:"Tokenspeed Agentic Inference Engine",words:751,tier:2,track:"H",desc:"Tokenspeed 的 Agentic 推理引擎架构",
- questions:["Tokenspeed 的核心创新点是什么？","推理引擎和推理框架有什么区别？","它的性能瓶颈在哪里？"]},
-{id:"H8",file:"docs/ch01/1215-agentium-agent.md",title:"Agentium — 从零实现 Agent 系统的开源框架",words:509,tier:2,track:"H",desc:"Agentium 开源框架的从零实现",
- questions:["从零实现 Agent 框架的核心挑战是什么？","Agentium 的设计哲学是什么？","和 LangChain/AutoGen 有什么不同？"]},
-{id:"I1",file:"docs/ch01/1191-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md",title:"LLM Architectures: KV Sharing, mHC, Compressed Attention",words:1857,tier:2,track:"I",desc:"LLM 架构前沿：KV 共享、mHC、压缩注意力",
- questions:["KV Sharing 为什么能节省显存？","压缩注意力和标准注意力的区别？","这些技术对 Agent 的实际影响是什么？"]},
-{id:"I2",file:"docs/ch01/1203-deepseek-v4-flash-pro-million-token-context-and-trillion.md",title:"DeepSeek V4 Flash & Pro: Million-Token Context",words:782,tier:2,track:"I",desc:"DeepSeek V4 的百万 Token 上下文能力",
- questions:["百万 Token 上下文的技术原理是什么？","长上下文一定更好吗？有什么代价？","这对 Agent 设计意味着什么？"]},
-{id:"I3",file:"docs/ch01/1239-residual-context-diffusion-rcd-apple.md",title:"Apple Residual Context Diffusion",words:319,tier:2,track:"I",desc:"Apple 的残差上下文扩散技术",
- questions:["\"残差上下文\"和普通上下文有什么区别？","\"扩散\"在这里是什么意思？","这个技术解决了什么问题？"]},
-{id:"I4",file:"docs/ch01/1272-llm-kv-cache-prefix-caching-agent-90.md",title:"LLM KV Cache Prefix Caching Agent 命中率 90%",words:355,tier:2,track:"I",desc:"KV Cache 前缀缓存实现 90% 命中率",
- questions:["前缀缓存的工作原理是什么？","90% 命中率意味着什么性能提升？","为什么不是 100%？那 10% 是什么情况？"]},
-{id:"J1",file:"docs/ch01/1208-factory-mission-multi-agent-architecture.md",title:"Factory Mission Multi Agent Architecture",words:794,tier:2,track:"J",desc:"Factory Mission 多 Agent 架构详解",
- questions:["Factory Mission 的核心理念是什么？","它如何处理 Agent 之间的通信？","和 Swarm 模式有什么区别？"]},
-{id:"J2",file:"docs/ch01/1218-agentteams-claude-tag.md",title:"AgentTeams 和 Claude Tag 都进入群聊模式",words:513,tier:2,track:"J",desc:"AgentTeams 与 Claude Tag 的群聊协作模式",
- questions:["\"群聊模式\"在多 Agent 中意味着什么？","它解决了传统 1:1 Agent 交互的什么问题？","群聊模式的潜在风险是什么？"]},
-{id:"J3",file:"docs/ch04/672-asana-agentic-work-management-platform-work-graph-as-agent.md",title:"Asana Work Graph as Agentic OS",words:1240,tier:2,track:"J",desc:"Asana 工作图作为 Agentic 操作系统的设计",
- questions:["Work Graph 是什么？为什么它适合做 Agent 的基础？","\"Agentic OS\"和普通操作系统有什么类比关系？","这个思路可以应用到哪些非项目管理场景？"]},
-{id:"J4",file:"docs/ch04/677-agent-room.md",title:"协作涌现：Agent Room 的多智能体决策框架",words:273,tier:2,track:"J",desc:"Agent Room 的协作涌现与决策框架",
- questions:["\"涌现\"在多 Agent 中指的是什么？","Agent Room 如何促进好的涌现行为？","和单 Agent 相比，多 Agent 的涌现优势在哪？"]},
-{id:"K1",file:"docs/ch09/177-dockerless.md",title:"Dockerless: 免环境补丁验证器",words:291,tier:2,track:"K",desc:"无需 Docker 的轻量级环境补丁验证",
- questions:["为什么需要\"免环境\"验证？Docker 有什么问题？","Dockerless 的验证原理是什么？","它的适用范围和限制是什么？"]},
-{id:"K2",file:"docs/ch09/178-glm-5-scaling-pain.md",title:"GLM-5 Scaling Pain 推理复盘",words:471,tier:2,track:"K",desc:"GLM-5 推理过程中的 Scaling Pain 复盘",
- questions:["Scaling Pain 具体指什么问题？","GLM-5 团队是怎么解决的？","这对其他大模型有什么借鉴意义？"]},
-{id:"K3",file:"docs/ch01/1236-claude-code.md",title:"Claude Code 架构解析",words:471,tier:2,track:"K",desc:"Claude Code 的核心架构解析",
- questions:["Claude Code 的核心架构用一张图怎么画？","它最值得学习的一个设计决策是什么？","如果你要从零做一个类似的工具，你会怎么借鉴？"]},
-{id:"L1",file:"docs/ch07/83-microsoft-agent-framework-tools-4-provider-tool-ap.md",title:"Microsoft Agent Framework Tools 总览",words:1760,tier:2,track:"L",desc:"微软 Agent 框架工具全景",
- questions:["微软的 Agent 工具生态的核心优势是什么？","4 个 Provider 分别覆盖什么场景？","和开源方案相比，微软方案的竞争力在哪？"]},
-{id:"L2",file:"docs/ch11/276-agentscope-java-2-0-harness.md",title:"AgentScope Java 2.0：企业级分布式 Harness 框架",words:1550,tier:2,track:"L",desc:"AgentScope Java 2.0 企业级分布式框架",
- questions:["为什么企业级 Agent 需要分布式框架？","AgentScope 的 Harness 设计和前面学的有什么异同？","Java 生态做 Agent 有什么优势和劣势？"]},
-{id:"L3",file:"docs/ch11/279-build-a-highly-scalable-serverless-langgraph-multi-agent-sys.md",title:"Build a highly scalable serverless LangGraph multi-agent system",words:621,tier:2,track:"L",desc:"构建高可扩展的无服务器 LangGraph 多 Agent 系统",
- questions:["Serverless 对 Agent 系统的好处和坏处？","LangGraph 的核心抽象是什么？","\"高可扩展\"具体指什么指标的扩展？"]},
-{id:"A6",file:"docs/ch05/003-loop-engineering-19-addy-osmani-boris-cherny-pete.md",title:"Loop Engineering：先写刹车再写循环",words:7892,tier:3,track:"A",desc:"19 来源深度合并：Addy Osmani / Boris Cherny 等多视角 Loop Engineering 全景",
- questions:["Loop Engineering 和 Harness Engineering 的关系是什么？","\"先写刹车再写循环\"的工程含义是什么？","多来源合并后哪些共识最关键？"]},
-{id:"A7",file:"docs/ch05/021-martin-fowler-ai-harness.md",title:"Martin Fowler AI 研发 Harness：非确定性承重层",words:616,tier:3,track:"A",desc:"Martin Fowler 论 AI 时代非确定性系统的 Harness 设计",
- questions:["Martin Fowler 如何定义非确定性承重层？","传统架构模式在 AI 时代需要哪些调整？","Fowler 的 Harness 观点和 Lilian Weng 的有何异同？"]},
-{id:"A8",file:"docs/ch05/063-harness-engineering-for-self-improvement-lilian-weng-h.md",title:"Harness Engineering for Self-Improvement — 翁荔 Lilian Weng",words:582,tier:3,track:"A",desc:"Lilian Weng 系统梳理 Harness 自我提升研究全景",
- questions:["Self-Improvement 的 Harness 设计要点是什么？","Lilian Weng 梳理了哪些自我提升路径？","Harness 自我提升与 Agent 自主进化的关系？"]},
-{id:"B6",file:"docs/ch04/049-nvidia-extreme-co-design-agentic-systems.md",title:"NVIDIA Extreme Co-Design Agentic Systems",words:3023,tier:3,track:"B",desc:"NVIDIA 极端协同设计：Agent 系统的硬件-软件联合优化",
- questions:["Extreme Co-Design 的核心思想是什么？","硬件-软件联合优化对 Agent 架构有何影响？","NVIDIA 的方案和其他 Agent 架构有什么不同？"]},
-{id:"B7",file:"docs/ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.md",title:"Design Patterns for AI Agents 2026：4 大执行模式 + Reflection Demo",words:731,tier:3,track:"B",desc:"2026 年 AI Agent 设计模式：4 大执行模式与 5 步选型决策树",
- questions:["4 大执行模式分别是什么？","5 步选型决策树如何使用？","Reflection 模式在什么场景下最有效？"]},
-{id:"B8",file:"docs/ch04/143-agent-evolution-four-stages-and-six-dimensions-alibaba-clo.md",title:"Agent Evolution: Four Stages and Six Dimensions (Alibaba Cloud)",words:592,tier:3,track:"B",desc:"阿里云提出的 Agent 四阶段六维度演化模型",
- questions:["四阶段六维度分别是什么？","这个模型和 17 种架构演进的关系是什么？","企业如何判断自己处于哪个阶段？"]},
-{id:"C4",file:"docs/ch04/139-state-of-memory-in-agent-harness-mem0-harness.md",title:"State of Memory in Agent Harness — mem0 视角的九大 harness 横评",words:932,tier:3,track:"C",desc:"mem0 视角的 Agent 记忆九大 Harness 方案横向评测",
- questions:["九大 Harness 方案的核心差异是什么？","mem0 的横评维度有哪些？","不同场景下哪种记忆方案最合适？"]},
-{id:"C5",file:"docs/ch04/155-how-ai-agent-memory-works.md",title:"How AI Agent Memory Works",words:412,tier:3,track:"C",desc:"AI Agent 记忆系统的工作原理与架构选择",
- questions:["Agent 记忆的核心工作原理是什么？","短期记忆和长期记忆在 Agent 中的实现差异？","如何选择合适的记忆架构？"]},
-{id:"C6",file:"docs/ch04/185-context-agent.md",title:"Context 不是免费的：长文档 Agent 性能天花板与架构优化",words:518,tier:3,track:"C",desc:"长文档场景下 Agent 的上下文成本与优化策略",
- questions:["长文档 Agent 的性能天花板在哪里？","Context 的隐性成本有哪些？","如何从架构层面优化上下文使用？"]},
-{id:"D4",file:"docs/ch04/113-sub-agent-vs-agent-team.md",title:"Sub-Agent vs Agent Team 选型指南",words:678,tier:3,track:"D",desc:"子 Agent 与 Agent Team 的架构选型决策",
- questions:["Sub-Agent 和 Agent Team 的核心区别是什么？","什么场景选 Sub-Agent？什么场景选 Team？","两者可以混合使用吗？"]},
-{id:"D5",file:"docs/ch04/339-multi-agent-supervisor-swarm.md",title:"Multi-Agent 四种协作模式：Supervisor、Swarm、网状、流水线",words:296,tier:3,track:"D",desc:"多 Agent 协作的四种模式对比与选型",
- questions:["四种协作模式各自适合什么场景？","Supervisor 和 Swarm 的权衡是什么？","网状协作如何避免通信爆炸？"]},
-{id:"D6",file:"docs/ch04/047-openclaw-multi-agent-team-practice-v2.md",title:"OpenClaw Multi-Agent Team 实践 V2",words:967,tier:3,track:"D",desc:"OpenClaw 多 Agent 团队协作实践第二版",
- questions:["OpenClaw V2 相比 V1 的主要改进是什么？","多 Agent 团队实践中最大的挑战是什么？","这个实践和 Factory Mission 的异同？"]},
-{id:"E3",file:"docs/ch09/032-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on.md",title:"It's Safe to Close Your Laptop Now: Hosting Coding Agents",words:1334,tier:3,track:"E",desc:"在 Bedrock AgentCore 上托管 Coding Agent 的实践",
- questions:["\"关上笔记本\"意味着什么架构转变？","托管 Coding Agent 的关键挑战是什么？","Bedrock AgentCore 提供了哪些能力？"]},
-{id:"E4",file:"docs/ch09/118-how-to-avoid-ai-code-slop.md",title:"How to Avoid AI Code Slop",words:313,tier:3,track:"E",desc:"避免 AI 生成低质量代码的实用策略",
- questions:["AI Code Slop 的典型特征是什么？","有哪些实用的规避策略？","Slop 和 Harness Engineering 的关系？"]},
-{id:"E5",file:"docs/ch09/135-vibe-coding-in-production-erik-schluntz-anthropic.md",title:"Vibe Coding in Production — Erik Schluntz / Anthropic",words:229,tier:3,track:"E",desc:"Anthropic 工程师谈 Vibe Coding 在生产环境中的实践",
- questions:["Vibe Coding 在生产环境中可行吗？","Erik Schluntz 提出了哪些实践建议？","Vibe Coding 和 Agentic Engineering 的边界在哪？"]},
-{id:"F3",file:"docs/ch04/462-anthropic-demystifying-evals-for-ai-agents.md",title:"Anthropic Demystifying Evals for AI Agents",words:302,tier:3,track:"F",desc:"Anthropic 拆解 AI Agent 评测的核心概念与方法",
- questions:["Anthropic 定义了哪些 Eval 维度？","Agent Eval 和传统模型 Eval 有什么区别？","如何设计有效的 Agent Eval？"]},
-{id:"F4",file:"docs/ch04/463-cmu-pace-proxy-for-agentic-capability-evaluation.md",title:"CMU PACE — Proxy for Agentic Capability Evaluation",words:337,tier:3,track:"F",desc:"CMU PACE：Agent 能力评估的代理指标体系",
- questions:["PACE 的代理指标如何反映 Agent 能力？","这个方法和 L1/L2/L3 分层有什么关联？","代理指标的局限是什么？"]},
-{id:"F5",file:"docs/ch04/537-we-ran-250-ai-agent-evals-to-find-out-if-skills-beat-docs-t.md",title:"We Ran 250 AI Agent Evals: Skills vs Docs",words:532,tier:3,track:"F",desc:"250 次 Agent 评测实验：Skills 与 Docs 的效果对比",
- questions:["Skills 和 Docs 哪个更有效？","实验结论\"比想象中复杂\"指什么？","对 Agent 开发者有什么实操建议？"]},
-{id:"G9",file:"docs/ch05/001-impeccable.md",title:"Impeccable：大规模自动化测试框架",words:951,tier:3,track:"G",desc:"Impeccable 大规模自动化测试框架与 Harness 的关系",
- questions:["Impeccable 的测试自动化和 Harness 有什么关系？","大规模自动化测试的核心挑战是什么？","测试框架如何成为 Harness 的一部分？"]},
-{id:"G10",file:"docs/ch05/048-is-grep-all-you-need-harness-pwc-arxiv-2605-151.md",title:"Is Grep All You Need? — 检索 × Harness × 交付方式三元组",words:678,tier:3,track:"G",desc:"PwC 论文解读：检索策略与 Harness 交付方式的耦合分析",
- questions:["检索、Harness、交付方式三者如何耦合？","Grep 是否足够？什么时候不够？","这个三元组框架对实际设计的指导意义？"]},
-{id:"G11",file:"docs/ch05/098-beyond-vibe-coding-directed-generation-as-design-methodolo.md",title:"Beyond Vibe Coding — Directed Generation as Design Methodology",words:370,tier:3,track:"G",desc:"从 Vibe Coding 到定向生成：设计方法论升级",
- questions:["Directed Generation 和 Vibe Coding 的本质区别？","这种设计方法论如何融入 Harness？","从方法论角度如何避免 Vibe Coding 的陷阱？"]},
-{id:"H9",file:"docs/ch04/168-agent-reliability-context-drift-tool-calling-hallucinatio.md",title:"Agent Reliability: Context Drift & Tool Calling Hallucination",words:713,tier:3,track:"H",desc:"Agent 可靠性：上下文漂移与工具调用幻觉问题",
- questions:["Context Drift 是怎么产生的？","Tool Calling Hallucination 的根因是什么？","如何从架构层面提升 Agent 可靠性？"]},
-{id:"H10",file:"docs/ch04/246-building-reliable-agentic-ai-systems.md",title:"Building Reliable Agentic AI Systems",words:519,tier:3,track:"H",desc:"构建可靠的 Agentic AI 系统：原则与实践",
- questions:["可靠 Agentic AI 系统的核心原则是什么？","如何在不确定性的基础上构建确定性？","实践中最常见的可靠性陷阱是什么？"]},
-{id:"H11",file:"docs/ch04/566-agents-as-webs-of-beliefs.md",title:"Agents as Webs of Beliefs",words:458,tier:3,track:"H",desc:"将 Agent 视为信念网络：一种新的架构理解视角",
- questions:["\"信念网络\"视角和传统架构视角有什么不同？","这种视角如何影响 Agent 的设计？","信念更新和 Agent 学习的关系是什么？"]},
-{id:"I5",file:"docs/ch04/121-agent-memory.md",title:"Agent Memory 架构解析",words:653,tier:3,track:"I",desc:"Agent 记忆架构的分类与设计解析",
- questions:["Agent Memory 有哪些主要架构分类？","不同架构的记忆读写模式有什么差异？","如何根据场景选择记忆架构？"]},
-{id:"I6",file:"docs/ch04/468-agentic-ai-infrastructure-practice-series-9-context-enginee.md",title:"Context Engineering — Agentic AI 基础设施实践系列",words:325,tier:3,track:"I",desc:"Agentic AI 基础设施实践第 9 篇：Context Engineering",
- questions:["Context Engineering 的核心实践是什么？","它和 Prompt Engineering 的关系和区别？","基础设施层面如何支持 Context Engineering？"]},
-{id:"I7",file:"docs/ch04/512-proactive-memory-agent-meta-ai-wu-et-al-2026.md",title:"Proactive Memory Agent — Meta AI (Wu et al. 2026)",words:285,tier:3,track:"I",desc:"Meta AI 的主动记忆 Agent：预测性记忆管理",
- questions:["Proactive Memory 和被动记忆的区别是什么？","预测性记忆管理如何减少上下文浪费？","Meta AI 的方案和 mem0 有什么不同？"]},
-{id:"J5",file:"docs/ch04/584-dynamic-subagents-subagent.md",title:"Dynamic Subagents：动态子 Agent 编排",words:204,tier:3,track:"J",desc:"动态子 Agent 的编排策略与架构设计",
- questions:["动态 Subagent 和静态 Subagent 的区别？","动态编排的核心挑战是什么？","如何保证动态编排的可控性？"]},
-{id:"J6",file:"docs/ch04/551-anthropic-multi-agent-research-system.md",title:"Anthropic Multi-Agent Research System",words:193,tier:3,track:"J",desc:"Anthropic 的多 Agent 研究系统架构",
- questions:["Anthropic 的多 Agent 研究系统如何分工？","各 Agent 之间如何协调和共享信息？","这个系统和 Claude Code 多 Agent 的异同？"]},
-{id:"J7",file:"docs/ch04/646-harness-langgraph-a2a-agent-team.md",title:"Harness + LangGraph + A2A：Agent Team 编排",words:206,tier:3,track:"J",desc:"Harness 约束下的 LangGraph A2A Agent Team 编排实践",
- questions:["Harness、LangGraph、A2A 三者如何配合？","A2A 协议对多 Agent 编排的意义是什么？","实践中最大的编排挑战是什么？"]},
-{id:"K4",file:"docs/ch09/058-codex-goal-six-hour-run.md",title:"Codex Goal Six Hour Run",words:592,tier:3,track:"K",desc:"Codex Goal 模式的 6 小时长运行实践",
- questions:["6 小时长运行需要什么样的 Harness？","Goal 模式如何保持长程连贯性？","长运行中 Token 管理的关键策略是什么？"]},
-{id:"K5",file:"docs/ch09/149-state-of-cli-coding-agents-mid-2026.md",title:"State of CLI Coding Agents, Mid-2026",words:243,tier:3,track:"K",desc:"2026 年中 CLI 编程 Agent 生态现状",
- questions:["2026 年 CLI Coding Agent 的主要玩家有哪些？","各 Agent 的核心差异化能力是什么？","未来半年的趋势判断是什么？"]},
-{id:"K6",file:"docs/ch09/081-code-is-cheap-don-t-write-any-ai-native-coding.md",title:"Code is Cheap — AI Native 编程效率提升五倍",words:331,tier:3,track:"K",desc:"Code is Cheap 背景下 AI Native 编程范式与效率提升",
- questions:["\"Code is Cheap\" 对编程范式的影响是什么？","AI Native 编程和传统编程的核心差异？","五倍效率提升的具体路径是什么？"]},
-{id:"L4",file:"docs/ch11/013-aws-openclaw-amazon-bedrock-agentcore-serverless.md",title:"OpenClaw 迁移 Bedrock AgentCore 多租户 Serverless 架构",words:1626,tier:3,track:"L",desc:"将 OpenClaw 迁移为基于 Bedrock AgentCore 的多租户 Serverless 架构",
- questions:["多租户 Agent 架构的关键设计是什么？","Serverless 对 Agent 运行时的影响？","Bedrock AgentCore 提供了哪些核心能力？"]},
-{id:"L5",file:"docs/ch04/482-vercel-ai-sdk-7-typescript-agent.md",title:"Vercel AI SDK 7 — TypeScript Agent 开发框架全面升级",words:390,tier:3,track:"L",desc:"Vercel AI SDK 7 对 TypeScript Agent 开发的全面升级",
- questions:["AI SDK 7 的核心升级点是什么？","TypeScript Agent 开发有什么独特优势？","和其他 Agent 框架的异同？"]},
-{id:"L6",file:"docs/ch04/137-strands-agents-ai.md",title:"Strands Agents：AWS 云成本分析与优化 AI 助手",words:562,tier:3,track:"L",desc:"基于 Strands Agents 构建亚马逊云成本优化 AI 助手",
- questions:["Strands Agents 的核心架构是什么？","云成本优化场景的 Agent 设计有哪些特殊考量？","Strands 和其他 AWS Agent 框架的关系？"]}
-];
+const LS_KEY = 'wiki-learn-progress-v3';
+const USER_KEY = 'wiki-learn-user';
+const LEVELS = ['read','explained','taught','mastered'];
 
-const TRACKS={A:{name:"🏗️ Harness Engineering",order:1},B:{name:"🧠 Agent Architecture",order:2},C:{name:"💾 Context & Memory",order:3},D:{name:"🤝 Multi-Agent",order:4},E:{name:"💻 AI Coding Agent",order:5},F:{name:"📏 Evaluation",order:6},G:{name:"🏗️ Harness 进阶",order:7},H:{name:"🧠 架构进阶",order:8},I:{name:"💾 Context 进阶",order:9},J:{name:"🤝 Multi-Agent 进阶",order:10},K:{name:"💻 AI Coding 进阶",order:11},L:{name:"🔧 工具与基础设施",order:12}};
-
-const CONCEPT_DEPS = {
-  A:["A1→A2","A2→A3","A3→A4","A1→A5"],
-  B:["B1→B2","B2→B3","B3→B4","B1→B5"],
-  C:["C1→C2","C2→C3"],
-  D:["D1→D2","D2→D3"],
-  E:["E1→E2"],
-  F:["F1→F2"],
-  G:["G1→G2","G2→G3","G3→G4","G4→G5","G5→G6","G6→G7","G7→G8"],
-  H:["H1→H2","H2→H3","H3→H4","H4→H5","H5→H6","H6→H7","H7→H8"],
-  I:["I1→I2","I2→I3","I3→I4"],
-  J:["J1→J2","J2→J3","J3→J4"],
-  K:["K1→K2","K2→K3"],
-  L:["L1→L2","L2→L3"],
-  // Cross-track deps
-  cross:["A→B","B→C","C→D","G→H","H→I","I→J"]
-};
-
-// Review intervals in milliseconds: 1d, 3d, 7d, 14d, 30d
-const INTERVALS = [86400000, 259200000, 604800000, 1209600000, 2592000000];
-
-// ============================================================
-// STATE
-// ============================================================
-const KEY = 'feynman-agent-learning';
-let state = JSON.parse(localStorage.getItem(KEY) || '{}');
-if (!state.progress) state.progress = {}; // {articleId: {level, explanation, answers, timestamp, reviewStage, nextReview}}
-if (!state.history) state.history = []; // [{id, title, explanation, answers, level, timestamp}]
-if (!state.streak) state.streak = {count:0, lastDate:null};
-
-function save() { localStorage.setItem(KEY, JSON.stringify(state)); }
-
-function getLevel(id) { return state.progress[id]?.level || 'unread'; }
-function getArticleUrl(file) { return 'https://jinguo.tech/' + file.replace('docs/','').replace('.md','.html'); }
-
-function today() { return new Date().toISOString().slice(0,10); }
-
-function updateStreak() {
-  const t = today();
-  if (state.streak.lastDate === t) return;
-  const yesterday = new Date(Date.now()-86400000).toISOString().slice(0,10);
-  if (state.streak.lastDate === yesterday) {
-    state.streak.count++;
-  } else if (state.streak.lastDate !== t) {
-    state.streak.count = 1;
-  }
-  state.streak.lastDate = t;
-  save();
-}
-
-// ============================================================
-// NAV
-// ============================================================
-document.querySelectorAll('.nav-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById('panel-' + btn.dataset.panel).classList.add('active');
-    if (btn.dataset.panel === 'challenge') pickChallenge();
-    if (btn.dataset.panel === 'review') renderReview();
-    if (btn.dataset.panel === 'map') renderMap();
-    if (btn.dataset.panel === 'history') renderHistory();
-  });
-});
-
-// ============================================================
-// DASHBOARD
-// ============================================================
-let currentFilter = 'all';
+let DATA = null;
+let done = JSON.parse(localStorage.getItem(LS_KEY) || '{}');
+let currentPhase = 0;
+let currentChapter = 'all';
+let currentLevel = 'all';
 let searchQuery = '';
+let userId = localStorage.getItem(USER_KEY) || '';
 
-function renderDashboard() {
-  const counts = {unread:0,read:0,explained:0,taught:0,mastered:0};
-  ARTICLES.forEach(a => { counts[getLevel(a.id)]++; });
-  document.getElementById('s-unread').textContent = counts.unread;
-  document.getElementById('s-read').textContent = counts.read;
-  document.getElementById('s-explained').textContent = counts.explained;
-  document.getElementById('s-taught').textContent = counts.taught;
-  document.getElementById('s-mastered').textContent = counts.mastered;
-  document.getElementById('s-streak').textContent = state.streak.count;
-
-  const filtered = ARTICLES.filter(a => {
-    if (currentFilter !== 'all' && getLevel(a.id) !== currentFilter) return false;
-    if (searchQuery) {
-      const q = searchQuery.toLowerCase();
-      return a.title.toLowerCase().includes(q) || a.desc.toLowerCase().includes(q) || a.id.toLowerCase().includes(q);
-    }
-    return true;
-  });
-
-  const cards = document.getElementById('cards');
-  cards.innerHTML = filtered.map(a => {
-    const lv = getLevel(a.id);
-    const tierClass = 'tier-' + a.tier;
-    const tierLabel = a.tier === 1 ? '⭐ Tier 1' : a.tier === 2 ? '⭐⭐ Tier 2' : '⭐⭐⭐ Tier 3';
-    return `<div class="card" onclick="openFeynman('${a.id}')">
-      <div class="card-header"><span class="card-id">${a.id}</span><span class="card-tier ${tierClass}">${tierLabel}</span></div>
-      <div class="card-title">${a.title}</div>
-      <div class="card-desc">${a.desc}</div>
-      <div class="card-meta"><span class="card-words">${a.words} 字</span><span class="card-level lv-badge-${lv}">${levelLabel(lv)}</span></div>
-    </div>`;
-  }).join('');
+// ── D1 Sync ──────────────────────────────────────────────────
+function getApiBase(){
+  return window.location.origin + '/api/progress';
 }
 
-function levelLabel(lv) {
-  return {unread:'○ 未读',read:'📖 已读',explained:'✍️ 已解释',taught:'🎓 已教授',mastered:'🏆 已掌握'}[lv] || lv;
+function setSyncStatus(msg, ok){
+  const el = document.getElementById('sync-status');
+  el.textContent = msg;
+  el.className = 'sync-status' + (ok === true ? ' ok' : ok === false ? ' err' : '');
 }
 
-document.getElementById('search').addEventListener('input', e => { searchQuery = e.target.value; renderDashboard(); });
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    currentFilter = btn.dataset.level;
-    renderDashboard();
-  });
-});
-
-// ============================================================
-// FEYNMAN MODAL
-// ============================================================
-let currentArticle = null;
-let currentStep = 1;
-
-function openFeynman(id) {
-  currentArticle = ARTICLES.find(a => a.id === id);
-  if (!currentArticle) return;
-  currentStep = 1;
-
-  document.getElementById('modal-title').textContent = currentArticle.title;
-  document.getElementById('modal-desc').textContent = currentArticle.desc + ' · ' + currentArticle.words + ' 字 · ' + TRACKS[currentArticle.track].name;
-  document.getElementById('article-link').href = getArticleUrl(currentArticle.file);
-  document.getElementById('explanation').value = '';
-  document.getElementById('q-answers').value = '';
-  document.getElementById('read-check').checked = false;
-  document.getElementById('step1-next').disabled = true;
-  document.getElementById('word-count').textContent = '0 字';
-
-  // Pre-fill if we have saved data
-  const prog = state.progress[id];
-  if (prog) {
-    document.getElementById('explanation').value = prog.explanation || '';
-    document.getElementById('q-answers').value = prog.answers || '';
-    updateWordCount();
+async function pushToCloud(){
+  if(!userId){ setSyncStatus('请先输入用户 ID', false); return; }
+  setSyncStatus('推送中...', null);
+  const entries = Object.entries(done).map(([file, data]) => ({
+    file,
+    level: typeof data === 'object' ? data.level : 'read',
+    updatedAt: typeof data === 'object' ? data.updatedAt : (typeof data === 'number' ? data : Date.now())
+  }));
+  try {
+    const resp = await fetch(getApiBase(), {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ user: userId, entries })
+    });
+    const result = await resp.json();
+    if(result.ok) setSyncStatus(`✓ 已推送 ${result.count} 条到云端`, true);
+    else setSyncStatus('推送失败: ' + result.error, false);
+  } catch(e) {
+    setSyncStatus('推送失败: ' + e.message, false);
   }
-
-  // Render questions
-  const qDiv = document.getElementById('questions');
-  qDiv.innerHTML = (currentArticle.questions || []).map((q,i) =>
-    `<div class="q-item"><div class="q-text">Q${i+1}: ${q}</div></div>`
-  ).join('');
-
-  showStep(1);
-  document.getElementById('modal').classList.add('open');
 }
 
-function closeFeynman() { document.getElementById('modal').classList.remove('open'); }
-document.getElementById('modal-close').addEventListener('click', closeFeynman);
-document.getElementById('modal').addEventListener('click', e => { if (e.target === document.getElementById('modal')) closeFeynman(); });
-
-function showStep(n) {
-  currentStep = n;
-  document.querySelectorAll('.step-panel').forEach(p => p.style.display = 'none');
-  document.getElementById('step' + n).style.display = 'block';
-  document.querySelectorAll('.step').forEach(s => {
-    const sn = parseInt(s.dataset.step);
-    s.classList.remove('active','done');
-    if (sn === n) s.classList.add('active');
-    else if (sn < n) s.classList.add('done');
-  });
+async function pullFromCloud(){
+  if(!userId){ setSyncStatus('请先输入用户 ID', false); return; }
+  setSyncStatus('拉取中...', null);
+  try {
+    const resp = await fetch(getApiBase() + '?user=' + encodeURIComponent(userId));
+    const result = await resp.json();
+    if(result.progress){
+      // Merge: cloud overwrites local for matching keys, local-only keys preserved
+      const cloud = result.progress;
+      let merged = { ...done };
+      for(const [file, data] of Object.entries(cloud)){
+        const cloudTime = data.updatedAt || 0;
+        const localTime = (merged[file] && typeof merged[file] === 'object') ? merged[file].updatedAt : (typeof merged[file] === 'number' ? merged[file] : 0);
+        if(cloudTime >= localTime) merged[file] = data;
+      }
+      done = merged;
+      save();
+      render();
+      setSyncStatus(`✓ 已拉取 ${Object.keys(cloud).length} 条从云端`, true);
+    } else {
+      setSyncStatus('拉取失败: ' + (result.error || 'unknown'), false);
+    }
+  } catch(e) {
+    setSyncStatus('拉取失败: ' + e.message, false);
+  }
 }
 
-// Step 1
-document.getElementById('read-check').addEventListener('change', e => {
-  document.getElementById('step1-next').disabled = !e.target.checked;
-});
-document.getElementById('step1-next').addEventListener('click', () => showStep(2));
-document.getElementById('step2-back').addEventListener('click', () => showStep(1));
-document.getElementById('step2-next').addEventListener('click', () => showStep(3));
-document.getElementById('step3-back').addEventListener('click', () => showStep(2));
-document.getElementById('step3-next').addEventListener('click', () => showStep(4));
-document.getElementById('step4-back').addEventListener('click', () => showStep(3));
-
-// Word count
-function updateWordCount() {
-  const text = document.getElementById('explanation').value;
-  document.getElementById('word-count').textContent = text.length + ' 字';
+// Auto-sync on change (debounced)
+let syncTimer = null;
+function scheduleSync(){
+  if(!userId) return;
+  clearTimeout(syncTimer);
+  syncTimer = setTimeout(() => pushToCloud(), 3000);
 }
-document.getElementById('explanation').addEventListener('input', updateWordCount);
 
-// Save
-document.getElementById('save-btn').addEventListener('click', () => {
-  const level = document.querySelector('input[name="level"]:checked')?.value;
-  if (!level) { alert('请先选择掌握度'); return; }
-  if (!currentArticle) return;
+// ── Local Storage ────────────────────────────────────────────
+function save(){ localStorage.setItem(LS_KEY, JSON.stringify(done)); }
 
-  const explanation = document.getElementById('explanation').value;
-  const answers = document.getElementById('q-answers').value;
-  const now = Date.now();
+function getLevel(file){
+  const d = done[file];
+  if(!d) return null;
+  if(typeof d === 'object') return d.level;
+  return 'read'; // legacy boolean format
+}
 
-  // Set review schedule
-  const prevLevel = getLevel(currentArticle.id);
-  let reviewStage = (state.progress[currentArticle.id]?.reviewStage || -1) + 1;
-  if (reviewStage >= INTERVALS.length) reviewStage = INTERVALS.length - 1;
-
-  state.progress[currentArticle.id] = {
-    level, explanation, answers,
-    timestamp: now,
-    reviewStage,
-    nextReview: now + INTERVALS[reviewStage]
-  };
-
-  // Add to history
-  state.history.unshift({
-    id: currentArticle.id,
-    title: currentArticle.title,
-    explanation, answers, level,
-    timestamp: now
-  });
-
-  // Keep history manageable
-  if (state.history.length > 200) state.history = state.history.slice(0, 200);
-
-  updateStreak();
+function setLevel(file, level){
+  if(level === null){
+    delete done[file];
+  } else {
+    done[file] = { level, updatedAt: Date.now() };
+  }
   save();
-  closeFeynman();
-  renderDashboard();
-});
-
-// ============================================================
-// DAILY CHALLENGE
-// ============================================================
-function pickChallenge() {
-  // Prefer unread, then read, then explained
-  let pool = ARTICLES.filter(a => getLevel(a.id) === 'unread');
-  if (pool.length === 0) pool = ARTICLES.filter(a => getLevel(a.id) === 'read');
-  if (pool.length === 0) pool = ARTICLES.filter(a => getLevel(a.id) === 'explained');
-  if (pool.length === 0) pool = ARTICLES;
-
-  const pick = pool[Math.floor(Math.random() * pool.length)];
-  document.getElementById('challenge-article').textContent = pick.id + ' · ' + pick.title;
-  document.getElementById('challenge-start').onclick = () => openFeynman(pick.id);
+  scheduleSync();
+  render();
 }
 
-document.getElementById('random-btn').addEventListener('click', () => {
-  const pick = ARTICLES[Math.floor(Math.random() * ARTICLES.length)];
-  document.getElementById('challenge-article').textContent = pick.id + ' · ' + pick.title;
-  document.getElementById('challenge-start').onclick = () => openFeynman(pick.id);
-});
-document.getElementById('random-unread-btn').addEventListener('click', () => {
-  const pool = ARTICLES.filter(a => getLevel(a.id) === 'unread');
-  if (pool.length === 0) { alert('恭喜！所有文章都已学习！'); return; }
-  const pick = pool[Math.floor(Math.random() * pool.length)];
-  document.getElementById('challenge-article').textContent = pick.id + ' · ' + pick.title;
-  document.getElementById('challenge-start').onclick = () => openFeynman(pick.id);
-});
-
-// ============================================================
-// SPACED REVIEW
-// ============================================================
-function renderReview() {
-  const now = Date.now();
-  const items = [];
-  ARTICLES.forEach(a => {
-    const prog = state.progress[a.id];
-    if (!prog || prog.level === 'unread') return;
-    if (prog.nextReview) {
-      const diff = prog.nextReview - now;
-      items.push({
-        ...a, ...prog,
-        overdue: diff < 0,
-        urgency: diff < 0 ? 'high' : diff < 86400000 ? 'mid' : 'low',
-        dueIn: diff
-      });
+function cycleLevel(file){
+  const current = getLevel(file);
+  if(!current){
+    setLevel(file, 'read');
+  } else {
+    const idx = LEVELS.indexOf(current);
+    if(idx >= LEVELS.length - 1){
+      setLevel(file, null); // clear
+    } else {
+      setLevel(file, LEVELS[idx + 1]);
     }
+  }
+}
+
+function levelLabel(lv){
+  return lv === 'read' ? '📖 已读' : lv === 'explained' ? '✍️ 解释' : lv === 'taught' ? '🎓 教授' : lv === 'mastered' ? '🏆 掌握' : '';
+}
+
+function articleUrl(file){
+  return '/' + file.replace('docs/','').replace('.md','.html');
+}
+
+function formatWords(w){
+  if(w > 10000) return (w/1000).toFixed(0)+'k';
+  if(w > 1000) return (w/1000).toFixed(1)+'k';
+  return w;
+}
+
+function phaseColor(pid){
+  const p = DATA.phases.find(x=>x.id===pid);
+  return p ? p.color : '#64748b';
+}
+
+function phaseName(pid){
+  const p = DATA.phases.find(x=>x.id===pid);
+  return p ? p.name : 'Unknown';
+}
+
+// ── Init ──────────────────────────────────────────────────────
+async function init(){
+  try {
+    const resp = await fetch('/dashboard/articles.json');
+    DATA = await resp.json();
+  } catch(e) {
+    try {
+      const resp2 = await fetch('./articles.json');
+      DATA = await resp2.json();
+    } catch(e2) {
+      document.getElementById('content').innerHTML = '<div class="empty">❌ 无法加载文章数据</div>';
+      return;
+    }
+  }
+
+  document.getElementById('header-sub').textContent =
+    `${DATA.totalArticles} 篇文章 · ${DATA.phases.length} 个阶段 · 渐进式掌握 Agent 工程`;
+
+  // Restore user ID
+  if(userId){
+    document.getElementById('user-id').value = userId;
+    setSyncStatus('已连接: ' + userId, true);
+    // Auto-pull on first load
+    pullFromCloud();
+  }
+
+  renderPhaseBar();
+  renderChapterFilters();
+  renderLevelFilters();
+  render();
+}
+
+// ── Phase bar ─────────────────────────────────────────────────
+function renderPhaseBar(){
+  const bar = document.getElementById('phase-bar');
+  let html = `<div class="phase-chip active" data-phase="0" style="background:var(--surface2);color:var(--text)">全部</div>`;
+  DATA.phases.forEach(p => {
+    html += `<div class="phase-chip" data-phase="${p.id}" style="background:${p.color}33;color:${p.color}">${p.name.replace(/ · /,' ')}<span class="count">${p.count}</span></div>`;
+  });
+  bar.innerHTML = html;
+  bar.querySelectorAll('.phase-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      bar.querySelectorAll('.phase-chip').forEach(c=>c.classList.remove('active'));
+      chip.classList.add('active');
+      currentPhase = parseInt(chip.dataset.phase);
+      render();
+    });
+  });
+}
+
+// ── Chapter filters ───────────────────────────────────────────
+function renderChapterFilters(){
+  const div = document.getElementById('chapter-filters');
+  let html = '<div class="chip active" data-ch="all">全部章节</div>';
+  for(const [ch, name] of Object.entries(DATA.chapters)){
+    const count = DATA.articles.filter(a=>a.chapter===ch).length;
+    if(count > 0) html += `<div class="chip" data-ch="${ch}">${name.split(' ').pop()} (${count})</div>`;
+  }
+  div.innerHTML = html;
+  div.querySelectorAll('.chip').forEach(c => {
+    c.addEventListener('click', () => {
+      div.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
+      c.classList.add('active');
+      currentChapter = c.dataset.ch;
+      render();
+    });
+  });
+}
+
+// ── Level filters ─────────────────────────────────────────────
+function renderLevelFilters(){
+  const div = document.getElementById('level-filters');
+  div.innerHTML = `
+    <div class="chip active" data-lv="all">全部级别</div>
+    <div class="chip" data-lv="3">⭐⭐⭐</div>
+    <div class="chip" data-lv="2">⭐⭐</div>
+    <div class="chip" data-lv="1">⭐</div>
+  `;
+  div.querySelectorAll('.chip').forEach(c => {
+    c.addEventListener('click', () => {
+      div.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
+      c.classList.add('active');
+      currentLevel = c.dataset.lv;
+      render();
+    });
+  });
+}
+
+// ── Stats ─────────────────────────────────────────────────────
+function renderStats(filtered){
+  const allDone = Object.keys(done);
+  const doneInFiltered = filtered.filter(a=>getLevel(a.file)).length;
+  const totalWords = filtered.filter(a=>getLevel(a.file)).reduce((s,a)=>s+a.words,0);
+  const readTime = (totalWords / 500 / 60).toFixed(1);
+
+  const row = document.getElementById('stats-row');
+  row.innerHTML = `
+    <div class="stat"><div class="num" style="color:var(--green)">${allDone.length}</div><div class="label">已读总数</div></div>
+    <div class="stat"><div class="num" style="color:var(--accent)">${doneInFiltered}/${filtered.length}</div><div class="label">当前视图</div></div>
+    <div class="stat"><div class="num" style="color:var(--cyan)">${readTime}h</div><div class="label">已读时长</div></div>
+    <div class="stat"><div class="num" style="color:var(--orange)">${DATA.totalArticles}</div><div class="label">文章总数</div></div>
+    <div class="stat"><div class="num" style="color:var(--pink)">${DATA.phases.length}</div><div class="label">学习阶段</div></div>
+  `;
+}
+
+// ── Progress bars ─────────────────────────────────────────────
+function renderProgress(){
+  const div = document.getElementById('progress-bars');
+  let html = '';
+  DATA.phases.forEach(p => {
+    const articles = DATA.articles.filter(a=>a.phase===p.id);
+    const completed = articles.filter(a=>getLevel(a.file)).length;
+    const mastered = articles.filter(a=>getLevel(a.file)==='mastered').length;
+    const pct = articles.length ? Math.round(completed/articles.length*100) : 0;
+    html += `<div class="phase-progress">
+      <span class="pname" style="color:${p.color}">${p.name}</span>
+      <div class="bar"><div class="bar-fill" style="width:${pct}%;background:${p.color}"></div></div>
+      <span class="pcount">${completed}/${articles.length} 已读 · ${mastered} 掌握</span>
+    </div>`;
+  });
+  div.innerHTML = html;
+}
+
+// ── Render cards ──────────────────────────────────────────────
+function render(){
+  if(!DATA) return;
+
+  let filtered = DATA.articles;
+  if(currentPhase > 0) filtered = filtered.filter(a=>a.phase===currentPhase);
+  if(currentChapter !== 'all') filtered = filtered.filter(a=>a.chapter===currentChapter);
+  if(currentLevel !== 'all') filtered = filtered.filter(a=>a.level===parseInt(currentLevel));
+  if(searchQuery){
+    const q = searchQuery.toLowerCase();
+    filtered = filtered.filter(a =>
+      a.title.toLowerCase().includes(q) || a.chapterName.toLowerCase().includes(q) || a.file.toLowerCase().includes(q)
+    );
+  }
+
+  renderStats(filtered);
+  renderProgress();
+
+  const content = document.getElementById('content');
+  if(filtered.length === 0){
+    content.innerHTML = '<div class="empty">🔍 没有匹配的文章</div>';
+    return;
+  }
+
+  const groups = {};
+  filtered.forEach(a => {
+    const key = a.phase;
+    if(!groups[key]) groups[key] = [];
+    groups[key].push(a);
   });
 
-  // Sort: overdue first, then by urgency
-  items.sort((a,b) => a.dueIn - b.dueIn);
+  let html = '';
+  const sortedPhases = Object.keys(groups).sort((a,b)=>a-b);
 
-  const due = items.filter(i => i.dueIn <= 0).length;
-  const overdue = items.filter(i => i.dueIn < -86400000).length;
-  const upcoming = items.filter(i => i.dueIn > 0 && i.dueIn < 7*86400000).length;
+  sortedPhases.forEach(pid => {
+    const articles = groups[pid];
+    const p = DATA.phases.find(x=>x.id===parseInt(pid));
+    const completed = articles.filter(a=>getLevel(a.file)).length;
+    const color = phaseColor(parseInt(pid));
 
-  document.getElementById('review-due').textContent = due;
-  document.getElementById('review-overdue').textContent = overdue;
-  document.getElementById('review-upcoming').textContent = upcoming;
+    html += `<div class="section-header">
+      <h2 style="color:${color}">${phaseName(parseInt(pid))}</h2>
+      <span class="badge">${completed}/${articles.length} 已读</span>
+    </div>`;
+    html += '<div class="grid">';
 
-  const list = document.getElementById('review-list');
-  if (items.length === 0) {
-    list.innerHTML = '<div style="text-align:center;color:var(--text3);padding:2rem">还没有学习记录，开始你的第一篇费曼练习吧！</div>';
-    return;
+    articles.forEach(a => {
+      const lv = getLevel(a.file);
+      const isDone = lv !== null;
+      const url = articleUrl(a.file);
+      const lvClass = a.level===3?'lv3':a.level===2?'lv2':'lv1';
+      const btnClass = lv || '';
+
+      html += `<div class="card ${isDone?'done':''}">
+        <div class="card-top">
+          <span class="phase-badge" style="background:${color}">P${a.phase}</span>
+          <span class="level-badge ${lvClass}">${'⭐'.repeat(a.level)}</span>
+        </div>
+        <div class="card-title"><a href="${url}" target="_blank">${a.title || a.file}</a></div>
+        <div class="card-meta">
+          <div>
+            <span class="card-chapter">${a.chapterName}</span>
+            <span class="card-words" style="margin-left:.5rem">${formatWords(a.words)}字</span>
+          </div>
+          <div class="card-actions">
+            <button class="level-btn ${btnClass}" onclick="event.stopPropagation();cycleLevel('${a.file}')">${lv ? levelLabel(lv) : '○ 未读'}</button>
+          </div>
+        </div>
+      </div>`;
+    });
+
+    html += '</div>';
+  });
+
+  content.innerHTML = html;
+}
+
+// ── Search ────────────────────────────────────────────────────
+document.getElementById('search').addEventListener('input', e => {
+  searchQuery = e.target.value;
+  render();
+});
+
+// ── Sync UI ───────────────────────────────────────────────────
+document.getElementById('user-id').addEventListener('change', e => {
+  userId = e.target.value.trim();
+  localStorage.setItem(USER_KEY, userId);
+  if(userId){
+    setSyncStatus('已连接: ' + userId, true);
+    pullFromCloud();
+  } else {
+    setSyncStatus('离线模式（仅本地）', null);
   }
+});
 
-  list.innerHTML = items.map(i => {
-    const timeStr = i.dueIn <= 0 ? '⚠️ 已到期' : i.dueIn < 86400000 ? '今天' : Math.ceil(i.dueIn/86400000) + '天后';
-    return `<div class="review-item" onclick="openFeynman('${i.id}')">
-      <div class="urgency urgency-${i.urgency}"></div>
-      <div class="info">
-        <div class="name">${i.id} · ${i.title}</div>
-        <div class="meta">${levelLabel(i.level)} · ${timeStr} · 第 ${(i.reviewStage||0)+1} 轮复习</div>
-      </div>
-    </div>`;
-  }).join('');
-}
+document.getElementById('sync-push').addEventListener('click', pushToCloud);
+document.getElementById('sync-pull').addEventListener('click', pullFromCloud);
 
-// ============================================================
-// CONCEPT MAP
-// ============================================================
-function renderMap() {
-  const map = document.getElementById('concept-map');
-  const trackOrder = Object.entries(TRACKS).sort((a,b) => a[1].order - b[1].order);
-
-  map.innerHTML = trackOrder.map(([key, track]) => {
-    const articles = ARTICLES.filter(a => a.track === key);
-    const deps = CONCEPT_DEPS[key] || [];
-    return `<div class="track-group">
-      <h3>${track.name}</h3>
-      ${articles.map(a => {
-        const lv = getLevel(a.id);
-        const colors = {unread:'var(--text3)',read:'var(--cyan)',explained:'var(--yellow)',taught:'var(--orange)',mastered:'var(--green)'};
-        return `<div class="concept-row">
-          <div class="concept-dot" style="background:${colors[lv]}"></div>
-          <span class="concept-name">${a.id} · ${a.title}</span>
-          <span class="concept-link" onclick="openFeynman('${a.id}')">${levelLabel(lv)}</span>
-        </div>`;
-      }).join('')}
-      ${deps.length ? '<div style="font-size:.75rem;color:var(--text3);margin-top:.5rem">依赖链: ' + deps.join(' → ') + '</div>' : ''}
-    </div>`;
-  }).join('');
-}
-
-// ============================================================
-// HISTORY
-// ============================================================
-function renderHistory() {
-  const list = document.getElementById('history-list');
-  if (state.history.length === 0) {
-    list.innerHTML = '<div style="text-align:center;color:var(--text3);padding:2rem">暂无学习记录</div>';
-    return;
-  }
-
-  list.innerHTML = state.history.slice(0, 50).map(h => {
-    const date = new Date(h.timestamp).toLocaleString('zh-CN');
-    const lvColors = {read:'var(--cyan)',explained:'var(--yellow)',taught:'var(--orange)',mastered:'var(--green)'};
-    return `<div class="history-item">
-      <h4>${h.id} · ${h.title}<span class="level-badge" style="background:${lvColors[h.level]}22;color:${lvColors[h.level]}">${levelLabel(h.level)}</span></h4>
-      <div class="explanation">${h.explanation || '(未填写解释)'}</div>
-      <div class="date">${date}</div>
-    </div>`;
-  }).join('');
-}
-
-// ============================================================
-// INIT
-// ============================================================
-renderDashboard();
+// ── Start ─────────────────────────────────────────────────────
+init();
 </script>
 </body>
 </html>

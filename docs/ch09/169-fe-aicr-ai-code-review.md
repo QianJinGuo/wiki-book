@@ -2,7 +2,7 @@
 
 ## Ch09.169 百度网盘主端 FE AICR：AI Code Review 准入实践
 
-> 📊 Level ⭐⭐ | 3.0KB | `entities/baidu-aicr-ai-code-review-ci-cd.md`
+> 📊 Level ⭐⭐ | 3.2KB | `entities/baidu-aicr-ai-code-review-ci-cd.md`
 
 # 百度网盘主端 FE AICR：AI Code Review 准入实践
 
@@ -70,6 +70,11 @@ Pre-commit（20% 完成度）：本地自检，轻量快速 → 个人级前置
 ## 与已有 wiki 实体关系
 
 - 关联 [阿里 Open Code Review](https://github.com/QianJinGuo/wiki/blob/main/entities/阿里开源-open-code-review一周揽下-5k-star更专业的代码评审-cli.md)、harness-engineering、multi-agent 等标签
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

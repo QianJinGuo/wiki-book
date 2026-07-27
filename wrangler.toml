@@ -11,3 +11,8 @@ index_name = "wiki-book-embeddings-v2"
 
 [ai]
 binding = "AI"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wiki-book-progress"
+database_id = "03dba583-2230-4ed4-b36a-01a950d386c2"

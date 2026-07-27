@@ -43,12 +43,12 @@
 
 ## 相关实体
 - [Language Models and Meaning](ch01/436-language-models-and-meaning.html)
-- [Reinforcing Recursive Language Models | alphaXiv](ch01/866-reinforcing-recursive-language-models-alphaxiv.html)
-- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](../ch11/205-cost-effective-deployment-of-vision-language-models-for-pet.html)
-- [On the Deep Mystery of Language Models](ch01/763-stochastic-parrot-deep-mystery-llms.html)
-- [A Thought Experiment](ch01/899-stochastic-parrot-thought-experiment.html)
+- [Reinforcing Recursive Language Models | alphaXiv](ch01/870-reinforcing-recursive-language-models-alphaxiv.html)
+- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](../ch11/207-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [On the Deep Mystery of Language Models](ch01/768-stochastic-parrot-deep-mystery-llms.html)
+- [A Thought Experiment](ch01/908-stochastic-parrot-thought-experiment.html)
 - [Marcus on AI Productivity](../ch11/069-stochastic-parrot-marcus-ai-productivity.html)
-- [While Breathless In Stodgy Viridian](ch01/541-while-breathless-in-stodgy-viridian.html)
+- [While Breathless In Stodgy Viridian](ch01/531-while-breathless-in-stodgy-viridian.html)
 
 ---
 

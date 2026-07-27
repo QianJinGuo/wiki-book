@@ -2,7 +2,7 @@
 
 ## Ch04.004 Autoresearch: The feedback loop behind self-improving agents
 
-> 📊 Level ⭐ | 9.4KB | `entities/autoresearch-feedback-loop-self-improving-agents-introspection.md`
+> 📊 Level ⭐ | 9.5KB | `entities/autoresearch-feedback-loop-self-improving-agents-introspection.md`
 
 # Autoresearch: The feedback loop behind self-improving agents
 
@@ -63,6 +63,11 @@ The autoresearch paradigm is particularly well-suited to these verticals because
 5. **Start with a factory blueprint but build toward it gradually.** Don't assume you can create a fully autonomous system on day one. Follow "design the human as a core component" — start with heavy human oversight and systematically transfer routine decisions to the agent as confidence grows, using the "ask a human" tool pattern for novelty detection.
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-feedback-loop-self-improving-agents-introspection.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Ch11.098 把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐ | 9.8KB | `entities/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip.md`
+> 📊 Level ⭐⭐ | 9.9KB | `entities/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip.md`
 
 ## 概述
 把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 by awschina on 17 4月 2026 in Artificial Intelligence Permalink Share 摘要：本文探讨如何将 OpenClaw 从个人 AI 助手转型为面向客户的服务Agent。围绕五个核心问题展开：会话隔离（dmScope 配置实现多客户 session 独立）、多渠道接入（Web Widget 与消息平台的身份关联）、安全模型（tools.deny 硬约束 + Bedrock Guardrails 内容过滤的双层防护）、知识库注入（Bootstrap 文件 + Amazon Bedrock Knowledge Bases 的 RAG 检索）、以及客户记忆的局限与演进方向。部署架构基于 AWS，采用 ALB + ECS 认证中间层 + 私有子网 Gateway 的分层设计，通过
@@ -56,7 +56,11 @@ ALB + ECS 认证中间层 + 私有子网 Gateway 的分层设计体现了云原�
 4. **跨渠道体验的一致性**：通过 identityLinks 实现 Telegram/WhatsApp/Web Widget 的 session 合并，但需评估隐私风险——某些场景下渠道间严格隔离（per-channel-peer）更合适。
 
 ## 相关实体
-- [当 OpenClaw 学会"团队记忆"：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](ch11/232-openclaw.html)
+- [当 OpenClaw 学会"团队记忆"：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](ch11/234-openclaw.html)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -112,11 +112,11 @@ Holographic 非对称信任评分：helpful +0.05，unhelpful -0.10，负反馈�
 **可测试性**：MemoryProvider ABC 定义了标准生命周期（initialize、prefetch、sync_turn、on_session_end、shutdown），这使得每一层都可以独立 Mock 和测试。在实现自己的 Agent 记忆系统时，定义清晰的接口契约比直接实现更重要——先有接口才能做有意义的测试替身。
 **架构取舍的方法论**：Hermes 的每一个设计结论都是"问题先于方案"的产物。先定义清楚要解决的核心问题（prefix cache 失效、工具爆炸、记忆 vs 指令混淆），再找对应解法，而不是拿着一个技术去套场景。这是值得在所有复杂系统设计中复用的方法论。
 ## 相关实体
-- [Hermes Agent Memory System Three Layer Architecture](../ch03/093-hermes-agent.html)
-- [Hermes Agent Tool System Architecture](../ch03/093-hermes-agent.html)
-- [Hermes Agent Deep Dive](../ch03/093-hermes-agent.html)
-- [Hermes Agent Self Evolution Tengxun](../ch03/093-hermes-agent.html)
-- [Hermes Agent](../ch03/093-hermes-agent.html)
+- [Hermes Agent Memory System Three Layer Architecture](../ch03/095-hermes-agent.html)
+- [Hermes Agent Tool System Architecture](../ch03/095-hermes-agent.html)
+- [Hermes Agent Deep Dive](../ch03/095-hermes-agent.html)
+- [Hermes Agent Self Evolution Tengxun](../ch03/095-hermes-agent.html)
+- [Hermes Agent](../ch03/095-hermes-agent.html)
 
 ---
 

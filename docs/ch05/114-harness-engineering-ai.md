@@ -382,7 +382,7 @@ AI Coding 不是"让 AI 替你写代码"，而是重新  定义  人与 AI 协�
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch05/112-harness-engineering.html)
 - [Harness Engineering Jk Launcher Baijiajie](ch05/112-harness-engineering.html)
 - [Agent Harness Engineering Survey 2026](ch05/112-harness-engineering.html)
-- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活](ch05/107-ai-coding.html)
+- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活](ch05/108-ai-coding.html)
 
 ---
 

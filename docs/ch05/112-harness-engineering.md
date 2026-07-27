@@ -37,7 +37,7 @@ Harness Engineering是一套用于规范和优化AI代码生成过程的工程�
 
 - [Agent Harness架构](ch05/058-agent-harness.html)
 - [Harness Engineering综述2026](ch05/112-harness-engineering.html)
-- [腾讯AI编码实践](ch05/107-ai-coding.html)
+- [腾讯AI编码实践](ch05/108-ai-coding.html)
 
 ## 标签
 

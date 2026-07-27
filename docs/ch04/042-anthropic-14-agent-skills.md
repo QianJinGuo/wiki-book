@@ -269,11 +269,11 @@ description 决定技能会不会被用到；渐进式披露决定它会占多�
 ### 权限配置的防御性思维
 allowed-tools 的配置应该遵循「功能最小化」而非「先用后收紧」——后者容易导致权限蔓延。配置完成后，应该模拟一个恶意或者误用的场景，思考：如果这个技能被用于超出其设计目标的任务，现有的工具权限会造成多大风险？这个思维实验能够帮助发现潜在的安全盲点。
 ## 相关实体
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/971-anthropic.html)
-- [Anthropic 12 Mcp Production Patterns](../ch01/971-anthropic.html)
-- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](ch04/532-claude-managed-agents.html)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/407-agent-skills.html)
-- [Anthropic Agent Skills Design Patterns 14](ch04/284-anthropic-agent.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1326-anthropic.html)
+- [Anthropic 12 Mcp Production Patterns](../ch01/1326-anthropic.html)
+- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](ch04/702-claude-managed-agents.html)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/397-agent-skills.html)
+- [Anthropic Agent Skills Design Patterns 14](ch04/259-anthropic-agent.html)
 
 ---
 

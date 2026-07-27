@@ -2,7 +2,7 @@
 
 ## Ch11.261 Agentic Vision: Building Visual Intelligence with Amazon Bedrock and MCP Servers
 
-> 📊 Level ⭐⭐ | 3.8KB | `entities/agentic-vision-building-visual-intelligence-bedrock-mcp.md`
+> 📊 Level ⭐⭐ | 4.0KB | `entities/agentic-vision-building-visual-intelligence-bedrock-mcp.md`
 
 # Agentic Vision: Building Visual Intelligence with Amazon Bedrock and MCP Servers
 
@@ -42,6 +42,11 @@ Provides a unified interface for image ingestion and retrieval:
 ## Source
 
 > [AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/agentic-vision-building-visual-intelligence-with-amazon-bedrock-and-mcp-servers)
+
+---
+## 关联
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-vision-building-visual-intelligence-with-amazon-bedr.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

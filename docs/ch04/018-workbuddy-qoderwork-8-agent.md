@@ -2,7 +2,7 @@
 
 ## Ch04.018 豆包、WorkBuddy、QoderWork怎么选？我用8个真实办公任务把三家桌面Agent测明白了
 
-> 📊 Level ⭐ | 5.0KB | `entities/豆包workbuddyqoderwork怎么选我用8个真实办公任务把三家桌面agent测明白了.md`
+> 📊 Level ⭐ | 5.2KB | `entities/豆包workbuddyqoderwork怎么选我用8个真实办公任务把三家桌面agent测明白了.md`
 
 # 豆包、WorkBuddy、QoderWork怎么选？我用8个真实办公任务把三家桌面Agent测明白了
 
@@ -53,6 +53,11 @@ QoderWork 的「下载量排名+专家套件」反映了 B 端专业场景需求
 | 外接模型 | ★☆☆☆☆ | ★★★★★ | ★★★☆☆ |
 | 语音/屏幕共享 | ★★★★★ | ★☆☆☆☆ | ★☆☆☆☆ |
 | 价格透明度 | ★★★☆☆ | ★★★★★ | ★★★★☆ |
+
+---
+## 关联
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/豆包workbuddyqoderwork怎么选我用8个真实办公任务把三家桌面agent测明白了.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

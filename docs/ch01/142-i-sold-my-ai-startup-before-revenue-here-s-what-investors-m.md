@@ -2,7 +2,7 @@
 
 ## Ch01.142 I Sold My AI Startup Before Revenue: Here’s What Investors Missed — And Founders Shouldn’t
 
-> 📊 Level ⭐ | 4.0KB | `entities/i-sold-my-ai-startup-before-revenue-here-s-what-investors-missed-and-founders-sh.md`
+> 📊 Level ⭐ | 4.1KB | `entities/i-sold-my-ai-startup-before-revenue-here-s-what-investors-missed-and-founders-sh.md`
 
 # I Sold My AI Startup Before Revenue: Here’s What Investors Missed — And Founders Shouldn’t
 
@@ -24,6 +24,10 @@ I back founders now, and the things I weigh have stayed consistent. As a founder
 In the first quarter of 2026, foundational AI startups raised around [$178 billion](https://news.crunchbase.com/venture/foundational-ai-startup-funding-doubled-openai-anthropic-xai-q1-2026/). The market is realizing that foundational AI is where the long-term value sits, and this is the year we may see the exits and IPOs that prove the bet right.
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/i-sold-my-ai-startup-before-revenue-here-s-what-investors-missed-and-founders-sh.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

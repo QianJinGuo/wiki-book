@@ -328,7 +328,7 @@ Recursive 团队在三个 SOTA benchmark 上同时取得突破，且没有 DeepM
 
 ## Ch19.004 Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
 
-> 📊 Level ⭐⭐ | 8.1KB | `entities/mechanistic-explanation-prompt-injection-roles.md`
+> 📊 Level ⭐⭐ | 8.2KB | `entities/mechanistic-explanation-prompt-injection-roles.md`
 
 # Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
 
@@ -423,6 +423,10 @@ CoT Forgery 攻击将 prompt injection 从"指令覆盖"提升到"信任链劫�
 - [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理与角色隔离
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch19.005 The Complexity of Simplicity | Jim Nielsen's Notes
 
@@ -474,7 +478,7 @@ Cantrill 强调"someone at the helm"的角色——有效控制复杂性需要�
 
 ## Ch19.006 Lean Software Scaling Laws
 
-> 📊 Level ⭐⭐ | 3.8KB | `entities/lean-scaling.md`
+> 📊 Level ⭐⭐ | 3.9KB | `entities/lean-scaling.md`
 
 # Lean Software Scaling Laws
 
@@ -509,10 +513,15 @@ How far behind?
 But this does not follow: being a popular language with a lot of training data only means that LLMs _start off by default_ performing well. (Because it’s hard to disentangle a programming language f
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
+
+---
 
 ## Ch19.007 arXiv 脱离康奈尔，正式独立为非营利组织
 
-> 📊 Level ⭐⭐ | 3.3KB | `entities/arxiv-independent-spinout-2026.md`
+> 📊 Level ⭐⭐ | 3.4KB | `entities/arxiv-independent-spinout-2026.md`
 
 # arXiv 脱离康奈尔，独立为非营利组织
 
@@ -565,6 +574,10 @@ arXiv 2025 财年支出约 670 万美元，赤字 29.7 万美元。康奈尔面�
 - entities/arxiv
 - entities/open-access
 - entities/deepseek
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1089,6 +1102,10 @@ v×c=56 的量子位文章（第 3 来源）与机器之心本篇同为大众科
 - → [第 1 来源（原始论文）原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loopwm-looped-world-models.md)
 - → [第 2 来源（机器之心）原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-30-AI圈刚开始谈Loop-Engineering-两位95后博士已经盯上了人类闭环-机器之心.md)
 - → [第 3 来源（量子位）原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loopwm-loop-world-models-2026-07-01.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2224,7 +2241,7 @@ ICML 2026 上出现了一篇方法名为 "NeurIPS" 的论文——即标题缩�
 
 ## Ch19.021 BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
 
-> 📊 Level ⭐⭐⭐⭐ | 2.9KB | `entities/baai-orca-next-state-prediction-world-model.md`
+> 📊 Level ⭐⭐⭐⭐ | 3.0KB | `entities/baai-orca-next-state-prediction-world-model.md`
 
 # BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
 
@@ -2275,6 +2292,10 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 - **对比基于同一套主干 ckpt**，未使用刷榜数据
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baai-orca-next-state-prediction-world-model.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

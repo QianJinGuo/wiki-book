@@ -132,24 +132,24 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 ## 相关主题
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — 自进化机制与 AutoResearch 的"只保留改进"思想同源
 -  — Harness Engineering 让 Agent 产出可预期、可衡量、可持续
-- [Thin Harness Fat Skills](../ch05/082-thin-harness-fat-skills-ai.html) — Fat Skills + Thin Harness 架构与 program.md 宪法约束异曲同工
+- [Thin Harness Fat Skills](../ch05/083-thin-harness-fat-skills-ai.html) — Fat Skills + Thin Harness 架构与 program.md 宪法约束异曲同工
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-software-development.md)
 
 ## 相关实体
 - [快手首个打工人Agent](../ch03/035-agent.html)
 - [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/035-agent.html)
-- [factory mission multi agent architecture](../ch01/1228-factory-mission-multi-agent-architecture.html)
+- [factory mission multi agent architecture](../ch01/1231-factory-mission-multi-agent-architecture.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [OpenClaw 多智能体团队搭建实战经验](../ch04/050-openclaw-multi-agent-team-practice-v2.html)
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/050-openclaw-multi-agent-team-practice-v2.html)
-- [Claude Code 可控性：软规则无法变成硬约束](../ch03/076-claude-code.html)
+- [Claude Code 可控性：软规则无法变成硬约束](../ch03/077-claude-code.html)
 - [claude-code-agent-view](ch09/003-claude-code-agent-view.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/428-claude-code-harness-deep-understanding.html)
-- [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
-- [Claude Code 设计原则与对照分析](../ch03/076-claude-code.html)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/076-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/425-claude-code-harness-deep-understanding.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/110-harness.html)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/018-harness.html)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 

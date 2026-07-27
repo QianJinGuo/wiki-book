@@ -2,7 +2,7 @@
 
 ## Ch11.204 ComfyUI Workflows on Amazon SageMaker Processing Jobs
 
-> 📊 Level ⭐⭐ | 6.1KB | `entities/comfyui-sagemaker-processing-workflows.md`
+> 📊 Level ⭐⭐ | 6.2KB | `entities/comfyui-sagemaker-processing-workflows.md`
 
 # ComfyUI Workflows on Amazon SageMaker Processing Jobs
 
@@ -79,6 +79,10 @@ Processing Job 使用 continuous S3 upload mode，图像生成后立即流式上
 ---
 
 **来源**: → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/running-comfyui-workflows-on-amazon-sagemaker-ai-processing.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

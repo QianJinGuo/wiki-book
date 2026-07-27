@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **31 篇**实体，按深度递增排列。
+> 本章收录 **34 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,8 +11,8 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 13 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 16 |
+| ⭐⭐ 工程师 | 需编程基础 | 14 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 18 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
@@ -1085,7 +1085,7 @@ DeepSpec 的开源不仅仅是技术共享——它同时具有战略层面的�
 
 ## Ch16.008 全球首个小时级世界模型来了！中国造，已开源
 
-> 📊 Level ⭐⭐ | 9.4KB | `entities/全球首个小时级世界模型来了中国造已开源.md`
+> 📊 Level ⭐⭐ | 9.5KB | `entities/全球首个小时级世界模型来了中国造已开源.md`
 
 # 全球首个小时级世界模型来了！中国造，已开源
 
@@ -1144,10 +1144,14 @@ LingBot-World 2.0 同时开源 14B 主模型和 1.3B 轻量模型，这一双模
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/全球首个小时级世界模型来了中国造已开源.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch16.009 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
 
-> 📊 Level ⭐⭐ | 9.1KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
+> 📊 Level ⭐⭐ | 9.2KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
 
 # 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
 
@@ -1236,6 +1240,10 @@ LingBot-World 2.0 同时开源 14B 主模型和 1.3B 轻量模型，这一双模
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
 
 ## Ch16.010 How to Calculate the Inference Efficiency Ratio
 
@@ -1271,7 +1279,7 @@ LingBot-World 2.0 同时开源 14B 主模型和 1.3B 轻量模型，这一双模
 
 ## Ch16.011 Disaggregated Prefill and Decode for LLM Inference on SageMaker HyperPod
 
-> 📊 Level ⭐⭐ | 6.1KB | `entities/disaggregated-prefill-decode-llm-inference-sagemaker.md`
+> 📊 Level ⭐⭐ | 6.2KB | `entities/disaggregated-prefill-decode-llm-inference-sagemaker.md`
 
 # Disaggregated Prefill and Decode for LLM Inference on SageMaker HyperPod
 
@@ -1325,6 +1333,10 @@ DPD 架构正在改变推理基础设施的设计范式。传统"单节点尽可
 5. **观测指标先行**：部署前确保 HyperPod Observability 已启用。重点关注 router 日志中的 `disaggregate=True/False` 分布、`prefill time (TTFT)` 和 `to decoder` 时间戳，这些是诊断拆分行为正确性的第一手数据。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/disaggregated-prefill-and-decode-for-llm-inference-on-sagema.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1463,7 +1475,23 @@ End-to-end encrypted ML inference with Amazon SageMaker AI and FHE 涉及apple�
 
 ---
 
-## Ch16.015 小米多篇论文入选 ECCV 2026 — 人脸修复、视频大模型推理加速
+## Ch16.015 Graviton Inference
+
+> 📊 Level ⭐⭐ | 0.4KB | `entities/graviton-inference.md`
+
+# Graviton Inference
+
+> 🚧 占位页面 — 内容待补充
+
+工具/产品/团队实体页面，待从相关 raw 文章中提取详细信息。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch16.016 小米多篇论文入选 ECCV 2026 — 人脸修复、视频大模型推理加速
 
 > 📊 Level ⭐⭐⭐ | 12.5KB | `entities/xiaomi-eccv-2026-face-restoration-video-llm-inference.md`
 
@@ -1594,7 +1622,7 @@ MindDrive 在离散语言空间中完成试错优化的设计巧妙地绕过了�
 
 ---
 
-## Ch16.016 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
+## Ch16.017 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
 > 📊 Level ⭐⭐⭐ | 11.1KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
 
@@ -1760,7 +1788,7 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 
 ---
 
-## Ch16.017 TLiveOmni vLLM 适配与量化方案
+## Ch16.018 TLiveOmni vLLM 适配与量化方案
 
 > 📊 Level ⭐⭐⭐ | 10.1KB | `entities/tliveomni-vllm-quantization.md`
 
@@ -1956,7 +1984,7 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 
 ---
 
-## Ch16.018 vLLM V0→V1 迁移中的 logprob 差异修复
+## Ch16.019 vLLM V0→V1 迁移中的 logprob 差异修复
 
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/vllm-v0-to-v1-correctness-before-corrections.md`
 
@@ -2034,7 +2062,7 @@ vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行�
 
 ---
 
-## Ch16.019 京东 JoyAI-VL-Interaction — 全栈开源视频语言交互模型
+## Ch16.020 京东 JoyAI-VL-Interaction — 全栈开源视频语言交互模型
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/jd-joyai-vl-interaction-video-language-open-source.md`
 
@@ -2124,7 +2152,7 @@ JoyAI-VL-Interaction 选择全栈开源，与许多大模型企业的闭源策�
 
 ---
 
-## Ch16.020 ServiceNow vLLM V0→V1 正确性修复
+## Ch16.021 ServiceNow vLLM V0→V1 正确性修复
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/servicenow-vllm-correctness-huggingface.md`
 
@@ -2212,7 +2240,7 @@ ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——�
 
 ---
 
-## Ch16.021 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
+## Ch16.022 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
 
@@ -2306,7 +2334,7 @@ Source: [raw archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw
 
 ---
 
-## Ch16.022 MiMo-V2.5 推理系统全链路优化：Hybrid SWA + MoE + 多模态生产级落地
+## Ch16.023 MiMo-V2.5 推理系统全链路优化：Hybrid SWA + MoE + 多模态生产级落地
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/mimo-v2-5-inference-system-optimization-hybrid-swa.md`
 
@@ -2369,7 +2397,7 @@ MiMo 在多模态优化上的设计体现了一个重要原则——**将瓶颈�
 
 ---
 
-## Ch16.023 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
+## Ch16.024 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
 
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/llm-inference-pipeline-internals.md`
 
@@ -2487,7 +2515,7 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 ---
 
-## Ch16.024 elasticpp重塑elasticsearch查询性能的c内核引擎
+## Ch16.025 elasticpp重塑elasticsearch查询性能的c内核引擎
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md`
 
@@ -2553,7 +2581,7 @@ elasticpp 没有选择替换整个 Elasticsearch，而是将最核心、最耗�
 
 ---
 
-## Ch16.025 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
+## Ch16.026 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
 
 > 📊 Level ⭐⭐⭐ | 5.0KB | `entities/tencent-hunyuan-hy3-preview-hopper-inference-optimization.md`
 
@@ -2610,7 +2638,7 @@ GPU→CPU→KVStore 三级缓存体系，请求按 L1→L2→L3 顺序查询可�
 
 ---
 
-## Ch16.026 vLLM V0 to V1: Correctness Before Corrections in RL
+## Ch16.027 vLLM V0 to V1: Correctness Before Corrections in RL
 
 > 📊 Level ⭐⭐⭐ | 4.6KB | `entities/servicenow-vllm-correctness.md`
 
@@ -2640,7 +2668,42 @@ vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇
 
 ---
 
-## Ch16.027 Bonsai Image 4B: 1-bit 和 Ternary 量化
+## Ch16.028 Pytorch in Kernel Recsys Optimization
+
+> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/pytorch-in-kernel-recsys-optimization.md`
+
+## 深度分析
+
+**消除而非优化：Kernel 层设计的方法论突破：** IKBO 的核心洞察是"broadcast 是数据布局问题，而非计算必需"——传统方法在系统层面处理 broadcast 复制，浪费内存带宽和计算资源；而 IKBO 在计算原语层面消除复制，让 kernel 内部处理 mismatched batch sizes。这个思维转换将优化方向从"workaround 问题"转向"消除问题根源"，实现了 2/3 的延迟降低。这种**在根源处解决问题**而非在表面做修补的思想，对其他 AI 系统优化有普遍借鉴意义。 See also [Harness Production Agent Engineering Deficit](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-production-agent-engineering-deficit.md)
+
+**Kernel-Model-System 三层协同设计是性能突破的关键：** IKBO 的成功不只是 kernel 优化的功劳，而是 kernel、ML 编译器、inference runtime 三层协同设计的结果。Kernel 层提供支持 mismatched RO/NRO batch sizes 的原生接口；编译器层需要 per-operator dynamic shape ranges 来选择正确形状的 kernel；runtime 层通过 candidate-to-user mapping 而非 materializing broadcast 传递信息。任何一层单独优化都无法达到最终效果，**系统级协同优化才能实现数量级突破**。
+
+**渐进式协同设计是工程落地的合理路径：** IKBO Linear Compression 经历了四个阶段的渐进优化：matmul decomposition → memory alignment → broadcast fusion → warp-specialized multi-stage fusion via TLX，最终在 H100 SXM5 上实现 ~4× 加速。这个过程说明**性能优化不是一步到位的**，而是需要持续迭代、逐步逼近硬件极限。每一步优化都为下一步创造条件，最终的 warp-specialized fusion 无法在初始阶段直接实现。
+
+**IO-bound 到 compute-bound 的转变是性能优化的分水岭：** IKBO 将 Flash Attention kernel 从 IO-bound 推向 compute-bound，峰值达到 621 BF16 TFLOPs（H100 SXM5）。在 GPU 编程中，IO-bound 意味着 kernel 性能受限于内存带宽，而非算力——此时增加更多计算单元也无法提升性能。**转变为 compute-bound 是优化的关键里程碑**，意味着 kernel 已经充分利用了硬件的算力潜能，继续优化需要从算法或数据布局入手。
+
+**RecSys 推理优化的独特挑战来自 user-candidate 不对称性：** 与传统 DNN 不同，RecSys 的 user embeddings 对所有 candidate 都相同，但 candidate 数量（10-10,000+）远大于 user 数量，导致 broadcast 复制开销随 candidate 数量线性增长。这个问题在 CV/NLP 任务中不存在，因为它们的 batch 维度天然对称。理解这个**领域特有的不对称性**，是设计高效 RecSys 系统的前提。
+
+## 实践启示
+
+- **遇到性能瓶颈时，先判断是 IO-bound 还是 compute-bound**：如果 kernel 已经是 compute-bound，继续优化算法或数据布局才有意义；如果是 IO-bound，优化方向应该是减少内存访问或提高内存访问效率，而非增加计算量。
+
+- **Kernel 优化采用渐进式策略**：先实现功能正确的版本，再逐步优化——从基础 matmul 到 decomposition，再到 memory alignment，最后做 fusion。一次性写出最优 kernel 既不现实也不高效。
+
+- **RecSys 系统的 broadcast 开销需要专门优化**：当 user-candidate 不对称时，传统的 explicit replication 会造成严重的内存和计算浪费。考虑在 kernel 内部处理 broadcast，而非在系统层面 materialization。
+
+- **Inference-time transformation 可实现无感的系统升级**：Meta 的 IKBO 支持在推理时自动替换标准操作为 IKBO 等效操作，无需模型代码变更。这种**无破坏性升级**能力对生产系统非常重要。
+
+- **Custom kernel 开发需要工具链配合**：TLX (Triton Low-Level Extensions) 提供了 warp-specialized fusion 能力，但需要与 ML 编译器、inference runtime 配合使用。单独优化 kernel 而忽视其他层级，往往无法达到预期效果。
+
+---
+## 关联
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch-in-kernel-recsys-optimization.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch16.029 Bonsai Image 4B: 1-bit 和 Ternary 量化
 
 > 📊 Level ⭐⭐⭐ | 4.4KB | `entities/bonsai-image-4b-quantization.md`
 
@@ -2706,39 +2769,9 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ---
 
-## Ch16.028 Pytorch in Kernel Recsys Optimization
+## Ch16.030 14× faster embeddings: how we rebuilt the ONNX path in Manticore
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/pytorch-in-kernel-recsys-optimization.md`
-
-## 深度分析
-
-**消除而非优化：Kernel 层设计的方法论突破：** IKBO 的核心洞察是"broadcast 是数据布局问题，而非计算必需"——传统方法在系统层面处理 broadcast 复制，浪费内存带宽和计算资源；而 IKBO 在计算原语层面消除复制，让 kernel 内部处理 mismatched batch sizes。这个思维转换将优化方向从"workaround 问题"转向"消除问题根源"，实现了 2/3 的延迟降低。这种**在根源处解决问题**而非在表面做修补的思想，对其他 AI 系统优化有普遍借鉴意义。 See also [Harness Production Agent Engineering Deficit](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-production-agent-engineering-deficit.md)
-
-**Kernel-Model-System 三层协同设计是性能突破的关键：** IKBO 的成功不只是 kernel 优化的功劳，而是 kernel、ML 编译器、inference runtime 三层协同设计的结果。Kernel 层提供支持 mismatched RO/NRO batch sizes 的原生接口；编译器层需要 per-operator dynamic shape ranges 来选择正确形状的 kernel；runtime 层通过 candidate-to-user mapping 而非 materializing broadcast 传递信息。任何一层单独优化都无法达到最终效果，**系统级协同优化才能实现数量级突破**。
-
-**渐进式协同设计是工程落地的合理路径：** IKBO Linear Compression 经历了四个阶段的渐进优化：matmul decomposition → memory alignment → broadcast fusion → warp-specialized multi-stage fusion via TLX，最终在 H100 SXM5 上实现 ~4× 加速。这个过程说明**性能优化不是一步到位的**，而是需要持续迭代、逐步逼近硬件极限。每一步优化都为下一步创造条件，最终的 warp-specialized fusion 无法在初始阶段直接实现。
-
-**IO-bound 到 compute-bound 的转变是性能优化的分水岭：** IKBO 将 Flash Attention kernel 从 IO-bound 推向 compute-bound，峰值达到 621 BF16 TFLOPs（H100 SXM5）。在 GPU 编程中，IO-bound 意味着 kernel 性能受限于内存带宽，而非算力——此时增加更多计算单元也无法提升性能。**转变为 compute-bound 是优化的关键里程碑**，意味着 kernel 已经充分利用了硬件的算力潜能，继续优化需要从算法或数据布局入手。
-
-**RecSys 推理优化的独特挑战来自 user-candidate 不对称性：** 与传统 DNN 不同，RecSys 的 user embeddings 对所有 candidate 都相同，但 candidate 数量（10-10,000+）远大于 user 数量，导致 broadcast 复制开销随 candidate 数量线性增长。这个问题在 CV/NLP 任务中不存在，因为它们的 batch 维度天然对称。理解这个**领域特有的不对称性**，是设计高效 RecSys 系统的前提。
-
-## 实践启示
-
-- **遇到性能瓶颈时，先判断是 IO-bound 还是 compute-bound**：如果 kernel 已经是 compute-bound，继续优化算法或数据布局才有意义；如果是 IO-bound，优化方向应该是减少内存访问或提高内存访问效率，而非增加计算量。
-
-- **Kernel 优化采用渐进式策略**：先实现功能正确的版本，再逐步优化——从基础 matmul 到 decomposition，再到 memory alignment，最后做 fusion。一次性写出最优 kernel 既不现实也不高效。
-
-- **RecSys 系统的 broadcast 开销需要专门优化**：当 user-candidate 不对称时，传统的 explicit replication 会造成严重的内存和计算浪费。考虑在 kernel 内部处理 broadcast，而非在系统层面 materialization。
-
-- **Inference-time transformation 可实现无感的系统升级**：Meta 的 IKBO 支持在推理时自动替换标准操作为 IKBO 等效操作，无需模型代码变更。这种**无破坏性升级**能力对生产系统非常重要。
-
-- **Custom kernel 开发需要工具链配合**：TLX (Triton Low-Level Extensions) 提供了 warp-specialized fusion 能力，但需要与 ML 编译器、inference runtime 配合使用。单独优化 kernel 而忽视其他层级，往往无法达到预期效果。
-
----
-
-## Ch16.029 14× faster embeddings: how we rebuilt the ONNX path in Manticore
-
-> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/14-faster-embeddings-how-we-rebuilt-the-onnx-path-in-mantico.md`
+> 📊 Level ⭐⭐⭐ | 4.3KB | `entities/14-faster-embeddings-how-we-rebuilt-the-onnx-path-in-mantico.md`
 
 # 14× faster embeddings: how we rebuilt the ONNX path in Manticore
 
@@ -2768,8 +2801,12 @@ This post is the engineering log: what we tried, what surprised us, what we thre
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/14-faster-embeddings-how-we-rebuilt-the-onnx-path-in-mantico.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-## Ch16.030 Model Routing Is Simple. Until It Isn't — IBM Research 多目标优化路由
+---
+
+## Ch16.031 Model Routing Is Simple. Until It Isn't — IBM Research 多目标优化路由
 
 > 📊 Level ⭐⭐⭐ | 3.0KB | `entities/ibm-research-model-routing-optimization-2026.md`
 
@@ -2813,7 +2850,40 @@ IBM Research 的路由器将路由重新定义为**优化问题**而非分类问
 
 ---
 
-## Ch16.031 PUMA — 语义保持的推理模型早停（Semantic-Preserving Early Exit for Reasoning Models）
+## Ch16.032 Quantization Techniques
+
+> 📊 Level ⭐⭐⭐ | 0.5KB | `entities/quantization-techniques.md`
+
+# Quantization Techniques
+
+> 🚧 占位页面 — 内容待补充
+
+工具/产品/团队实体页面，待从相关 raw 文章中提取详细信息。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
+
+---
+
+## Ch16.033 Speculative Decoding
+
+> 📊 Level ⭐⭐⭐ | 0.4KB | `entities/speculative-decoding.md`
+
+# Speculative Decoding
+
+> 🚧 占位页面 — 内容待补充
+
+工具/产品/团队实体页面，待从相关 raw 文章中提取详细信息。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch16.034 PUMA — 语义保持的推理模型早停（Semantic-Preserving Early Exit for Reasoning Models）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/puma-semantic-early-exit-reasoning-convergence-2605.md`
 

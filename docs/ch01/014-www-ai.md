@@ -2,7 +2,7 @@
 
 ## Ch01.014 WWW时间检验奖颁给唐建博士：图神经网络的十年远征与AI制药的底层逻辑
 
-> 📊 Level ⭐ | 10.3KB | `entities/www时间检验奖颁给唐建博士图神经网络的十年远征与ai制药的底层逻辑.md`
+> 📊 Level ⭐ | 10.4KB | `entities/www时间检验奖颁给唐建博士图神经网络的十年远征与ai制药的底层逻辑.md`
 
 # WWW时间检验奖颁给唐建博士：图神经网络的十年远征与AI制药的底层逻辑
 
@@ -157,6 +157,10 @@ GeoFlow V1 抗原 - 抗体复合物预测评测结果
   
 
 在此之前，结构预测和从头设计通常是两拨人、两套模型各干各的：一套负责「给定序列，算出结构」，另一套负责「给定需求，生成序列」。GeoFlow-V2 第一次把这两件事捏进了同一
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

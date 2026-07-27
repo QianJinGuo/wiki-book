@@ -63,17 +63,17 @@ Karpathy 自己做了一个 MenuGen 小应用：拍菜单照片 → OCR 抽菜�
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
-- [Claude Code Harness Deep Understanding](../ch01/428-claude-code-harness-deep-understanding.html)
-- [Claude Code Harness Deep Dive Founder Park](../ch05/070-claude-code-harness.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/443-vibe-coding-agentic-engineering.html)
+- [Claude Code Harness Deep Understanding](../ch01/425-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/071-claude-code-harness.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/137-karpathy-vibe-coding-agentic-engineering.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/446-vibe-coding-agentic-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
 - [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/112-harness-engineering.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/232-openclaw.html)
-- [protecting against token theft](../ch01/316-protecting-against-token-theft.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/234-openclaw.html)
+- [protecting against token theft](../ch01/313-protecting-against-token-theft.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

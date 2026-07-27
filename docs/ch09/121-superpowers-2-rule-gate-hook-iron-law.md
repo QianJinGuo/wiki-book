@@ -106,7 +106,7 @@ Jesse 探索第二种 mode："iterative greenfield"——不走 spec-first，从
 
 ## 相关实体
 
-- [Superpowers 深度解析（1）：概率操控与负向收益](../ch05/089-superpowers-claude-code.html) — 第 1 来源
+- [Superpowers 深度解析（1）：概率操控与负向收益](../ch05/090-superpowers-claude-code.html) — 第 1 来源
 - [Harness Engineering](../ch05/112-harness-engineering.html)
 - [12 Agent 设计模式](../ch03/035-agent.html) — 同样强调"确定性从 LLM 剥离"
 - [AI Coding Agent Token 成本控制](ch09/047-coding-agent.html) — Superpowers 多阶段会大幅增加 token 成本

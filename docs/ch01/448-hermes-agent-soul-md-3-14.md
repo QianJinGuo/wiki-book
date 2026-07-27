@@ -56,7 +56,7 @@ stable 层不是只有 SOUL.md，由 14 个部分按序拼接而成，SOUL.md �
 - **自动播种**：首次运行时 `_ensure_default_soul_md()` 只在 SOUL.md 不存在时创建，已有文件永远不会被覆盖
 - **原样注入，不加包装**：`stable_parts.append(_soul_content)` 直接 append，不加 "## SOUL.md" 包装——SOUL.md 本身就是给模型看的身份描述，加包装会干扰模型注意力
 
-这与 [Claude Code 源码分析](../ch03/076-claude-code.html) 中的 AGENTS.md 加载机制形成对比——AGENTS.md 从工作目录向上遍历到 git root 发现，而 SOUL.md 管人，人走到哪身份都一样。
+这与 [Claude Code 源码分析](../ch03/077-claude-code.html) 中的 AGENTS.md 加载机制形成对比——AGENTS.md 从工作目录向上遍历到 git root 发现，而 SOUL.md 管人，人走到哪身份都一样。
 
 ## 深度分析
 
@@ -70,7 +70,7 @@ SOUL.md 是用户写的文件，原样注入到系统提示词。如果有人写
 
 截断机制 `_truncate_content()` 保留头部和尾部，中间插入截断标记——开头身份描述 + 结尾风格约束都被保留，砍掉中间可能不那么关键的内容。
 
-这种安全设计与 [Hermes Agent v0.14 核心架构](../ch03/093-hermes-agent.html) 中讨论的整体安全模型一致。
+这种安全设计与 [Hermes Agent v0.14 核心架构](../ch03/095-hermes-agent.html) 中讨论的整体安全模型一致。
 
 ### /personality 命令：14 个内置人格 + 自定义
 
@@ -137,10 +137,10 @@ SOUL.md 是持久人格基线。临时换风格用 `/personality`。
 
 ## 相关实体
 
-- [Hermes Agent V014 Architecture Shugex](../ch03/093-hermes-agent.html)
-- [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
+- [Hermes Agent V014 Architecture Shugex](../ch03/095-hermes-agent.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
-- [From Prompt To Harness Claude Official](../ch05/110-harness.html)
+- [From Prompt To Harness Claude Official](../ch05/018-harness.html)
 - [Harness Engineering 核心模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
