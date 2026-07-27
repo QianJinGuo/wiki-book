@@ -19,7 +19,7 @@ Harness 在此语境下指围绕模型的所有高价值元素——包括 [prom
 - **长序列处理**：长上下文窗口模型各有千秋
 - **价格分层**：从开源免费到商业 API 定价差异悬殊
 
-这种异构性格局意味着没有单一基座模型能垄断所有场景。值得注意的是，Benchmark 测试分数与具体任务表现之间的关联度可能很低——典型案例是 GPT 因过度安全校准而在量化交易任务中失利，而 [DeepSeek](../ch01/687-deepseek-v4.html) 和通义千问反而表现优异。
+这种异构性格局意味着没有单一基座模型能垄断所有场景。值得注意的是，Benchmark 测试分数与具体任务表现之间的关联度可能很低——典型案例是 GPT 因过度安全校准而在量化交易任务中失利，而 [DeepSeek](../ch01/688-deepseek-v4.html) 和通义千问反而表现优异。
 
 Claude Code 的内部实现印证了多模型路线的有效性：通过调用 opus、sonnet、haiku 等多款模型实现综合最优效果。
 
@@ -53,7 +53,7 @@ Claude Code 内部通过调用 opus、sonnet、haiku 等多款模型实现综合
 
 ## Harness Engineering：形式化优化框架
 
-王云鹤将 [Harness 工程](ch05/118-harness-engineering.html) 形式化为一个优化问题：
+王云鹤将 [Harness 工程](ch05/112-harness-engineering.html) 形式化为一个优化问题：
 
 **Agent 价值范式** = 任务价值 × 成功率 × Token 性价比（Intelligence/Token）
 
@@ -153,12 +153,12 @@ Model Parameters 与 Harness Parameters 的联合优化代表着一个明确的�
 - [r7] Trivedi, Prashant, et al. "Align-Pro." AAAI 2025.
 
 ## 相关实体
-- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活 V2](ch05/106-ai-coding.html)
+- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活 V2](ch05/107-ai-coding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wangyunhe-harness-optimization-agentsoul.md)
 
-- [Prompt Context Harness Three Evolutions Tencent](ch05/018-harness.html)
-- [Openclacky Prompt Cache Harness V2Ex 799662C56Ba6](ch05/018-harness.html)
+- [Prompt Context Harness Three Evolutions Tencent](ch05/110-harness.html)
+- [Openclacky Prompt Cache Harness V2Ex 799662C56Ba6](ch05/110-harness.html)
 - [Agent Tools Research](../ch03/035-agent.html)
 
 ---

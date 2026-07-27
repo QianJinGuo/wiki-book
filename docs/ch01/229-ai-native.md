@@ -110,7 +110,7 @@ AI Native 转型最难的部分不是技术，是处理"被转型"的人 。组�
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 - [Claude Code 设计原则与对照分析](../ch03/076-claude-code.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/110-harness.html)
 
 ---
 

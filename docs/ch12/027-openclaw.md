@@ -91,7 +91,7 @@ OpenClaw 这类自托管 AI Agent 与传统 Web 应用的安全模型有本质�
 3. **EKS Graviton 多租户（大规模）** —— 完整 Kubernetes 化，per-tenant namespace 隔离，适合 100+ 用户的 SaaS 化产品。
 4. **CI/CD 集成（持续运营）** —— 把 OpenClaw 配置 / Skill 版本化、灰度、回滚，适合生产级长期运营。
 
-这与 [EKS Graviton 多租户 OpenClaw 实践](../ch04/298-ai-agent.html) 直接对应——后者是该文章中"方案 3"的工程细节展开。
+这与 [EKS Graviton 多租户 OpenClaw 实践](../ch11/232-openclaw.html) 直接对应——后者是该文章中"方案 3"的工程细节展开。
 
 ### 五、对其他自托管 Agent 的参考价值
 
@@ -118,9 +118,9 @@ OpenClaw 不是孤例——任何"本地优先、用户自治、跨消息通道"
 ## 关联实体
 
 - [AI Agent 的迁移与现代化: OpenClaw → Bedrock AgentCore](../ch04/549-amazon-bedrock-agentcore.html)
-- [EKS Graviton 多租户 OpenClaw K8s 实践](../ch04/298-ai-agent.html)
+- [EKS Graviton 多租户 OpenClaw K8s 实践](../ch11/232-openclaw.html)
 - [CI/CD on Bedrock AgentCore OpenClaw 企业智能运营最佳实践](../ch04/549-amazon-bedrock-agentcore.html)
-- [Agent Security 三步走: Harness + Governance + Identity](../ch05/018-harness.html)
+- [Agent Security 三步走: Harness + Governance + Identity](../ch05/110-harness.html)
 - [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Claude Code vs OpenClaw Memory 对比](../ch03/076-claude-code.html)
 - [Claude Code vs OpenClaw Memory 向量数据库之争](../ch03/076-claude-code.html)

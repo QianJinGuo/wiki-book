@@ -25,7 +25,7 @@ Anthropic 悄悄搭好了一套 Agent 基础设施 Claude Managed Agents 正式�
 - [Claude Managed Agents Official](ch04/589-claude-managed-agents-official.html)
 - [Claude Managed Agents](ch04/532-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents Platform 2026](../ch01/219-anthropic-claude-managed-agents.html)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/969-anthropic.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/971-anthropic.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/291-anthropic-claude-code.html)
 - [programbench swe agent benchmark](ch04/547-programbench-swe-agent-benchmark.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)

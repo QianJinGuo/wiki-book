@@ -1,6 +1,9 @@
 services:
   wiki-book:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+      network: host
     container_name: wiki-book
     ports:
       - "8002:8080"

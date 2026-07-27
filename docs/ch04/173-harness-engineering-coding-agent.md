@@ -108,14 +108,14 @@ Agent 在执行过程中被中断时，状态会停留在 IN_PROGRESS，但实�
 **3. 恢复逻辑必须基于产出物状态而非任务状态——这是长程任务可靠性的核心。** 具体实现：每个子任务明确定义"完成后会产出什么文件"，完成后立即写入；恢复时检查文件存在性和内容合法性，而非状态字段。Git Worktree 隔离可大幅简化半成品清理（直接丢弃 Worktree 目录）。
 **4. 分层重试策略的配置建议：内层恢复会话不设上限（只kill异常进程），中层带反馈重试限制 2-3 次，外层重新调度前先分析失败原因。** 若 FAILED 文件超过总数的 5%，优先排查任务规则本身是否有问题，而非立即重跑；盲目重跑只是浪费 Token。
 
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/118-harness-engineering.html)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/118-harness-engineering.html)
-- [Agent生产级Harness工程指南](../ch05/118-harness-engineering.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
+- [Agent生产级Harness工程指南](../ch05/112-harness-engineering.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/110-harness.html)
 - [Agent Harness 组件解析](../ch05/058-agent-harness.html)
 
 ## 相关实体
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/427-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/428-claude-code-harness-deep-understanding.html)
 - [AI Coding Agent 记忆系统](ch04/329-ai-coding-agent.html)
 - [你不知道的 Agent 原理架构与工程实践](ch04/351-agent-principle-architecture-engineering-practice.html)
 - [柚漫剧 AI 全流程提效拆解](../ch05/091-ai.html)
@@ -130,8 +130,8 @@ Agent 在执行过程中被中断时，状态会停留在 IN_PROGRESS，但实�
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/018-harness.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/110-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/110-harness.html)
 
 ---
 

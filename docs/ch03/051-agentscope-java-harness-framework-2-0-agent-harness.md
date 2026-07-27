@@ -433,11 +433,11 @@ Msg reply = agent.call(userMessage, ctx).block();
 | LangChain Agents | Python | 内存/向量 | 应用级 | 向量检索 |
 
 > [!analysis]
-> AgentScope Java 的设计目标与 [Harness Engineering 系统梳理](../ch05/118-harness-engineering.html) 中描述的"七环节控制回路"完全对齐：Workspace 对应 State 层、AbstractFilesystem 对应 Tools 层、RuntimeContext 对应身份和隔离层、Memory 对应 Harness Update 层。
+> AgentScope Java 的设计目标与 [Harness Engineering 系统梳理](../ch05/112-harness-engineering.html) 中描述的"七环节控制回路"完全对齐：Workspace 对应 State 层、AbstractFilesystem 对应 Tools 层、RuntimeContext 对应身份和隔离层、Memory 对应 Harness Update 层。
 
 ### 与阿里 Java 案例的关联
 
-[阿里 Java Harness 案例](../ch05/118-harness-engineering.html) 揭示的企业级挑战（隐性知识问题、质量控制缺失、熵累积），正是 AgentScope 设计时重点解决的问题：
+[阿里 Java Harness 案例](../ch05/112-harness-engineering.html) 揭示的企业级挑战（隐性知识问题、质量控制缺失、熵累积），正是 AgentScope 设计时重点解决的问题：
 
 - **隐性知识** → `knowledge/` 目录 + FTS5 检索
 - **质量控制** → Sandbox 隔离执行 + 端到端验证
@@ -526,7 +526,7 @@ Sandbox 设计需要在安全性与性能之间做出权衡 。状态快照和�
 ## 相关实体
 
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
-- [OpenClaw Prompt/Harness](../ch11/231-openclaw.html)
+- [OpenClaw Prompt/Harness](../ch11/232-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentscope-java-harness-framework-enterprise-distributed.md)
 

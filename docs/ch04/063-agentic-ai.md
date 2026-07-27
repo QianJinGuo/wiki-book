@@ -139,7 +139,7 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 - [AIDL 范式迁移：平台驱动数据工程](../ch05/091-ai.html) — 另一 AIDL 视角
 - [Agent Harness 架构设计生产指南](../ch05/058-agent-harness.html) — Aksahy 实战视角
 - [Agent 工程原则与架构实践](../ch03/035-agent.html) — 通用 Agent 工程框架
-- [Strands + AgentCore 多区域 GPU 推理调度](ch04/631-agentic.html) — 实战案例
+- [Strands + AgentCore 多区域 GPU 推理调度](ch04/238-agentic.html) — 实战案例
 
 ## 上线状态 / 链接
 

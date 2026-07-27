@@ -128,19 +128,19 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 - **同 Fable 5 主题**（互补不重叠）：
   - [Fable 5 AWS 中文译本](ch01/1339-anthropic-claude.html)（产品视角）
-  - [Claude Fable 5 Safety Fables (Lambert)](ch01/896-claude-fable-5-and-new-ai-safety-fables.html)（政策视角）
+  - [Claude Fable 5 Safety Fables (Lambert)](ch01/898-claude-fable-5-and-new-ai-safety-fables.html)（政策视角）
   - [Fable 5 Mollick hands-on](ch01/177-claude-fable-5.html)（用户体验视角）
 - **同护栏 / 安全主题**：
   - [AI Gateway vs MCP Gateway 安全分析](../ch11/079-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
   - [NVIDIA Nemotron 3 Agents RAG Voice Safety](../ch03/035-agent.html)
   - [Amazon Bedrock Agentic Payments Guardrails](../ch11/162-amazon-bedrock.html)
-  - [Enable Safe Agentic Payments with Built-in Guardrails](../ch04/626-enable-safe-agentic-payments-with-built-in-guardrails-using.html)
-  - [Nemotron 3.5 Content Safety](ch01/480-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
+  - [Enable Safe Agentic Payments with Built-in Guardrails](../ch04/072-enable-safe-agentic-payments-with-built-in-guardrails-using.html)
+  - [Nemotron 3.5 Content Safety](ch01/481-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
   - [阿里集团 AI 代码评审安全带](../ch05/091-ai.html)
 - **同阿里云生态**：
   - [Aliyun AgentRun](../ch04/003-agentrun.html)
   - [阿里云 CMS CLI 可观测](../ch04/272-skill.html)
-  - [阿里云 哈勃业务 Agent 评估](../ch05/018-harness.html)
+  - [阿里云 哈勃业务 Agent 评估](../ch05/110-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-cloud-native-fable-5-safety-guardrails-evolution.md)

@@ -13,7 +13,7 @@
 - 之前程序化负载与交互式 Claude 使用共享同一订阅池
 ## 相关实体
 - [Anthropic Claude Agents Meter Infoworld](../ch04/402-anthropic-claude-agent.html)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/969-anthropic.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/971-anthropic.html)
 - [Notion Ai Agents](../ch04/298-ai-agent.html)
 - [Announcing Claude Managed Agents On Cloudflare](ch01/110-announcing-claude-managed-agents-on-cloudflare.html)
 - [Anthropic Claude Managed Agents Platform Launch](ch01/219-anthropic-claude-managed-agents.html)

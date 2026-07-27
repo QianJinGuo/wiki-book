@@ -12,10 +12,10 @@
 几十行代码就能跑起来。Demo 通了以后，确实挺有成就感。
 
 ## 相关实体
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/018-harness.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/110-harness.html)
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/088-harness-skill.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
-- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/018-harness.html)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/110-harness.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/298-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从-30-分钟手搓-agent到-harness-成为新后端.md)

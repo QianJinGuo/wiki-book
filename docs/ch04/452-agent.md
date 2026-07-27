@@ -59,11 +59,11 @@
 ## 相关实体
 
 - [MCP Server](ch04/549-amazon-bedrock-agentcore.html)
-- [Agentic Harness Engineering](../ch05/118-harness-engineering.html)
+- [Agentic Harness Engineering](../ch05/112-harness-engineering.html)
 - [Agentic AI 系统架构](../ch05/088-harness-skill.html)
 - [Token 成本控制](../ch09/047-coding-agent.html)
-- [A2A 企业级协议](ch04/631-agentic.html)
-- [Agent 环境工程](ch04/631-agentic.html)
+- [A2A 企业级协议](ch04/238-agentic.html)
+- [Agent 环境工程](ch04/238-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-protocol-cost-evolution-roundtable-2026.md)
 

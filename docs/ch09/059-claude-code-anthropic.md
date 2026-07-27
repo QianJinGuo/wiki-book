@@ -66,19 +66,19 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 ## 相关实体
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/298-ai-agent.html)
 - [claude-code-agent-view](ch09/003-claude-code-agent-view.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/427-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/428-claude-code-harness-deep-understanding.html)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/469-anthropic-ai.html)
 - [两万字详解Claude Code源码核心机制](../ch03/076-claude-code.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/035-agent.html)
-- [Claude Opus 4.7 发布分析](../ch01/888-claude-opus-4-7.html)
+- [Claude Opus 4.7 发布分析](../ch01/355-claude-opus-4-7.html)
 - [Claude Code 设计原则与对照分析](../ch03/076-claude-code.html)
 - [Claude Managed Agents 官方 Harness 平台指南](../ch01/219-anthropic-claude-managed-agents.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/407-agent-skills.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1232-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/429-claude.html)
 
-- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/018-harness.html)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/110-harness.html)
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [Claude Code 源码深度解析（13 核心机制）](../ch03/076-claude-code.html)

@@ -194,7 +194,7 @@ CUDA workload image nvidia/cuda:12.2.2-runtime-ubuntu22.04
 - [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
 - [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](https://github.com/QianJinGuo/wiki/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
 - [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](../ch04/031-pod.html)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch04/298-ai-agent.html)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/232-openclaw.html)
 - [Openclaw Amazon Bedrock Eks Printer Qc](ch11/162-amazon-bedrock.html)
 
 ---

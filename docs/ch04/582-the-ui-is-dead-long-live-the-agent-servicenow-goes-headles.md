@@ -34,11 +34,11 @@ Anthropic 作为首个设计合作伙伴的意义重大：Claude Cowork 可直�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-ui-is-dead-long-live-the-agent.md)
 
 ## 相关实体
-- [The UI is dead, long live the agent: ServiceNow goes headless](ch04/600-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/600-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless](ch04/372-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/372-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch03/035-agent.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/118-harness-engineering.html)
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/118-harness-engineering.html)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
 
 ---
 

@@ -8,20 +8,20 @@
 
 ## 相关实体
 
-- [从零构建大语言模型 —— 读完这篇你就懂了](../ch01/901-llm.html)
+- [从零构建大语言模型 —— 读完这篇你就懂了](../ch01/617-llm.html)
 - [canvas hackers shinyhunters say their official domain was su](../ch05/091-ai.html)
 - [canvas hackers shinyhunters say their official domain was su](../ch12/037-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html)
-- [democratizing machine learning at netflix: building the mode](../ch11/281-democratizing-machine-learning-at-netflix-building-the-mode.html)
+- [democratizing machine learning at netflix: building the mode](../ch11/282-democratizing-machine-learning-at-netflix-building-the-mode.html)
 - [from silos to service topology: why netflix built a real-tim](../ch11/146-from-silos-to-service-topology-why-netflix-built-a-real-tim.html)
 - [llmreaper - dom based ai conversation exfiltration via brows](../ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
 - [building is just the beginning: introducing discoverability](../ch12/088-building-is-just-the-beginning-introducing-discoverability.html)
 - [nemotron 3.5 content safety: customizable multimodal safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)
-- [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](../ch01/908-20.html)
-- [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](../ch01/787-qoder.html)
+- [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](../ch01/910-20.html)
+- [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](../ch01/789-qoder.html)
 - [scaling camera file processing at netflix](../ch11/019-scaling-camera-file-processing-at-netflix.html)
-- [state of routing in model serving](../ch11/190-state-of-routing-in-model-serving.html)
-- [大模型可控新突破：steering 机制、评估体系与开源落地](../ch01/999-steering.html)
-- [the recent history of ai in 32 otters](../ch01/640-the-recent-history-of-ai-in-32-otters.html)
+- [state of routing in model serving](../ch11/191-state-of-routing-in-model-serving.html)
+- [大模型可控新突破：steering 机制、评估体系与开源落地](../ch01/1001-steering.html)
+- [the recent history of ai in 32 otters](../ch01/641-the-recent-history-of-ai-in-32-otters.html)
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](../ch05/091-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 
@@ -56,11 +56,11 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/631-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/238-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/134-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/231-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/231-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/232-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/232-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
 
 ## 实践启示

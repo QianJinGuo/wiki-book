@@ -51,10 +51,10 @@ Stepan Gershuni 在 cyber.fund 发布的这篇创始人指南，提出了 AI 原
 
 ## 相关实体
 - [Agent Harness Architecture Design Production Guide](../ch05/058-agent-harness.html)
-- [Schemaflow Openai Cookbook Staged Agentic Workflow](ch04/631-agentic.html)
+- [Schemaflow Openai Cookbook Staged Agentic Workflow](ch04/238-agentic.html)
 - [How To Build Audio Transcription Agent](ch04/481-how-to-build-audio-transcription-agent.html)
 - [Gaode Ai Native 7X24 Pipeline Self Healing](../ch05/019-ai-native.html)
-- [Harness Engineering Comprehensive Guide Conardli](../ch05/118-harness-engineering.html)
+- [Harness Engineering Comprehensive Guide Conardli](../ch05/112-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-startup-cyberfund-2026.md)
 - [how frontier teams are reinventing ai-native development](../ch01/267-how-frontier-teams-are-reinventing-ai-native-development.html)

@@ -11,7 +11,7 @@ Agents are powerful, but they are not wise. To operate at their best, they need 
 ## 相关实体
 - [Airbyte Agents A New Era For Airbyte Airbyte](ch04/569-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/145-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/076-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/077-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Oz Multi Harness Cloud Agent Orchestration](ch04/508-agent-orchestration.html)
 - [Skill Os Learning Skill Curation Self Evolving Agents](ch04/222-self-evolving-agents.html)
 

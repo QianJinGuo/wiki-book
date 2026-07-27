@@ -110,7 +110,7 @@ GAN 风格的对抗式架构之所以有效，根本原因在于突破了「谄�
 - [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/274-lbs-intentbench.html)
 - [Introducing Claude for Small Business](../ch01/027-introducing-claude-for-small-business.html)
 - [Introducing Claude for Small Business](../ch01/027-introducing-claude-for-small-business.html)
-- [Xero Announces Integration with Anthropic's Claude](../ch01/969-anthropic.html)
+- [Xero Announces Integration with Anthropic's Claude](../ch01/971-anthropic.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch12/030-mythos.html)
 - [Anthropic 首次揭秘下一代 Claude 怎么造](../ch01/1339-anthropic-claude.html)
 

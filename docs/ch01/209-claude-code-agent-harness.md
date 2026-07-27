@@ -292,8 +292,8 @@ const baseInputSchema = z.object({
 - [Claude Code Dynamic Workflows](../ch09/093-claude-code-dynamic-workflows.html) — AgentTool 子智能体 + Dynamic Workflow 范式
 - [Claude Code 架构](../ch03/076-claude-code.html) — Claude Code 整体架构概览
 - [Agent Evolution 四阶段六维](../ch03/035-agent.html) — 阶段三/阶段四对应 Claude Code 的生产实践
-- [OpenClaw 完整指南](../ch11/231-openclaw.html) — 开源对应物（Worktree 隔离模式实现）
-- [Harness Engineering 一文](../ch05/118-harness-engineering.html) — Harness 概念的系统阐释
+- [OpenClaw 完整指南](../ch11/232-openclaw.html) — 开源对应物（Worktree 隔离模式实现）
+- [Harness Engineering 一文](../ch05/112-harness-engineering.html) — Harness 概念的系统阐释
 - [四种 Sub Agent 模式](../ch03/035-agent.html) — AgentTool 子智能体的几种编排模式
 - [Agent YAML 评测](../ch03/035-agent.html) — Harness 第五层评估与观测的工程实现
 

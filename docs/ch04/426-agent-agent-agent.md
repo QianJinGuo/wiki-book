@@ -11,9 +11,9 @@
 | 低代码 Agent | 先把东西跑起来 | 速度、协作、可视化 |
 
 ## 相关实体
-- [Harness Engineering Framework](../ch05/118-harness-engineering.html)
-- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/018-harness.html)
-- [Openclaw Comprehensive Guide](../ch11/231-openclaw.html)
+- [Harness Engineering Framework](../ch05/112-harness-engineering.html)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/110-harness.html)
+- [Openclaw Comprehensive Guide](../ch11/232-openclaw.html)
 - [Ai Context Layer Kgc 2026](../ch05/091-ai.html)
 - [Skillsieve Agent Skill Security](ch04/450-skillsieve-agent-skill.html)
 

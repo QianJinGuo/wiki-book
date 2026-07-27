@@ -84,7 +84,7 @@ UP-ReAct 架构在实测中获得 TTFT 降低 30% + 对话质量提升 14.78% �
 
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html)
 - [注意力崩溃与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
-- [Harness Engineering 行业调研](../ch05/118-harness-engineering.html)
+- [Harness Engineering 行业调研](../ch05/112-harness-engineering.html)
 - [Loop Engineering 概念分析](../ch05/005-loop-engineering.html)
 - [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)
 
