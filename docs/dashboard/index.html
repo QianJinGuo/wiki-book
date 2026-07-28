@@ -915,7 +915,14 @@ function render(){
           </div>
           <div class="card-actions">
             <button class="level-btn ${btnClass}" onclick="handleLevelClick('${a.file}',event)">${lv ? levelLabel(lv) : '○ 未读'}</button>
-            ${lv ? (() => { const fn = getFeynmanNote(a.file); const hasThreads = fn?.threads?.length; return `<span class="feynman-badge" onclick="openFeynmanModal('${a.file}',event)">${fn ? '📝✓' : '📝'}</span>${hasThreads ? '<span class="thread-badge" onclick="openFeynmanModal(\''+a.file+'\',event)">💬</span>' : ''}`; })() : ''}
+            ${lv ? (() => { 
+              const fn = getFeynmanNote(a.file); 
+              const hasThreads = fn?.threads?.length;
+              const fileEsc = a.file.replace(/'/g, "\\'");
+              let badges = `<span class="feynman-badge" onclick="openFeynmanModal('${fileEsc}',event)">${fn ? '📝✓' : '📝'}</span>`;
+              if(hasThreads) badges += `<span class="thread-badge" onclick="openFeynmanModal('${fileEsc}',event)">💬</span>`;
+              return badges;
+            })() : ''}
           </div>
 
         </div>
