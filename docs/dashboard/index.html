@@ -749,14 +749,8 @@ function saveFeynmanNote(){
 // Level button click opens feynman modal for read articles, cycles for unread
 function handleLevelClick(file, event){
   event.stopPropagation();
-  const currentLevel = getLevel(file);
-  if(currentLevel){
-    // Already read - open feynman modal
-    openFeynmanModal(file, null);
-  } else {
-    // Not read - cycle to read
-    cycleLevel(file);
-  }
+  // Always cycle level, regardless of current state
+  cycleLevel(file);
 }
 
 function feynmanSummary(file){
