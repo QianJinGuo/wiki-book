@@ -92,8 +92,8 @@ Mollick 认为这是"ChatGPT 发布以来人们使用 AI 方式的最重要变�
 
 ## 相关主题
 
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/584-ai-mollick.html) — Mollick 2026-06 范式转换叙事（同一作者更新的 agentic 时代框架）
-- [Management As Ai Superpower Mollick](../ch01/501-management-as-ai-superpower.html) — 管理作为 AI 超级能力（同一作者，同期但不同议题）
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/583-ai-mollick.html) — Mollick 2026-06 范式转换叙事（同一作者更新的 agentic 时代框架）
+- [Management As Ai Superpower Mollick](../ch01/500-management-as-ai-superpower.html) — 管理作为 AI 超级能力（同一作者，同期但不同议题）
 - [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt5-just-does-stuff-mollick.md) — GPT-5 "It Just Does Stuff"（同一作者，模型能力侧写）
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a-guide-to-which-ai-to-use-in-the-agentic-era.md)
 ## 相关实体

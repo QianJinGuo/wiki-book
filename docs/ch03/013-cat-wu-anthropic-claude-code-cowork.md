@@ -34,16 +34,16 @@
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
-- [Claude Opus 4.7 发布分析](../ch01/352-claude-opus-4-7.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/397-agent-skills.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/184-ai-agent.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/472-anthropic-ai.html)
+- [Claude Opus 4.7 发布分析](../ch01/904-claude-opus-4-7.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/398-agent-skills.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/505-ai-agent.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/474-anthropic-ai.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/077-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/035-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1235-claude.html)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/077-claude-code.html)
-- [Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](../ch01/221-anthropic-prompt-caching-claude-code.html)
+- [Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](../ch01/219-anthropic-prompt-caching-claude-code.html)
 
 ## 深度分析
 ### 使命驱动 vs 流程驱动：Anthropic 的双重护城河

@@ -132,10 +132,10 @@ DeepSeek 把比赛维度换了：之前大家比的是「我的视觉模型能�
 
 ## 相关实体
 ## 相关实体
-- [Personavlm Personalized Memory](ch01/811-vlm.html)
-- [Bedrock Image Content Precise Analysis](../ch11/296-bedrock.html)
-- [Redis之父下场给Deepseek V4单独造了一台推理引擎](ch01/1144-deepseek-v4.html)
-- [Ds4C Deepseek V4 Antirez](ch01/517-ds4c-deepseek-v4-antirez.html)
+- [Personavlm Personalized Memory](ch01/812-vlm.html)
+- [Bedrock Image Content Precise Analysis](../ch11/298-bedrock.html)
+- [Redis之父下场给Deepseek V4单独造了一台推理引擎](ch01/692-deepseek-v4.html)
+- [Ds4C Deepseek V4 Antirez](ch01/516-ds4c-deepseek-v4-antirez.html)
 - [Deepseek Moe Parallel Strategy](ch01/1229-deepseek.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 

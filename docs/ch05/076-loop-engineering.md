@@ -21,7 +21,7 @@ AI 编程的演进路径上有四次关键的抽象跃迁，每一次都解决�
 
 关键人物和时间线：Mitchell Hashimoto 2026年2月首次系统提出 Harness Engineering；Boris Cherny 2026年6月2日定义 Loop；Steinberger 推文（500万+浏览）+ Addy Osmani 博文同日发布引爆概念。
 
-与 [Agent Loop 工程手册](ch05/005-loop-engineering.html) 的关系：陈进的8个未解问题聚焦在实践层面的痛点（软目标、同模型盲区、护栏位置等），本文则提供更上层的框架——四次跃迁的历史脉络和五要素模型的设计语言。
+与 [Agent Loop 工程手册](ch05/004-loop-engineering.html) 的关系：陈进的8个未解问题聚焦在实践层面的痛点（软目标、同模型盲区、护栏位置等），本文则提供更上层的框架——四次跃迁的历史脉络和五要素模型的设计语言。
 
 ## 五要素模型
 
@@ -89,7 +89,7 @@ Thrashing 系数取决于 Loop 设计质量——Skills 是否充分、终止逻
 
 ## 相关实体
 
-- [Agent Loop 工程手册](ch05/005-loop-engineering.html) — 腾讯陈进的8个未解问题 + SELF Protocol
+- [Agent Loop 工程手册](ch05/004-loop-engineering.html) — 腾讯陈进的8个未解问题 + SELF Protocol
 - [Claude Code 之父访谈](../ch03/077-claude-code.html) — Boris Cherny 关于 Loop 的原始论述
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Loop 的前身概念
 

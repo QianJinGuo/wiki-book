@@ -245,7 +245,7 @@ AgentScope 的记忆管理采用双层架构：
 | 检索能力 | FTS5 全文检索 | 有限 |
 
 > [!analysis]
-> AgentScope 的双层记忆与 [上下文管理四档策略](../ch05/058-agent-harness.html) 中的第三代（Checkpoint + 记忆迁移）和第四代（结构化分维压缩）理念一致，但实现路径不同：AgentScope 采用"日流水账 + 周期性合并"的工程化思路，Claude Code 采用"分维保留"的结构化思路。两者都是对单层压缩局限性的超越。
+> AgentScope 的双层记忆与 [上下文管理四档策略](../ch05/057-agent-harness.html) 中的第三代（Checkpoint + 记忆迁移）和第四代（结构化分维压缩）理念一致，但实现路径不同：AgentScope 采用"日流水账 + 周期性合并"的工程化思路，Claude Code 采用"分维保留"的结构化思路。两者都是对单层压缩局限性的超越。
 
 ## 核心概念映射
 
@@ -525,8 +525,8 @@ Sandbox 设计需要在安全性与性能之间做出权衡 。状态快照和�
 
 ## 相关实体
 
-- [Agent Harness 架构](../ch05/058-agent-harness.html)
-- [OpenClaw Prompt/Harness](../ch11/234-openclaw.html)
+- [Agent Harness 架构](../ch05/057-agent-harness.html)
+- [OpenClaw Prompt/Harness](../ch11/235-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentscope-java-harness-framework-enterprise-distributed.md)
 
@@ -541,7 +541,7 @@ Sandbox 设计需要在安全性与性能之间做出权衡 。状态快照和�
 **2.0 升级围绕 9 大主题**（每节标题都带"Cloud Native"标签 — **阿里云云原生**出品）：
 
 - [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](../ch04/003-agentrun.html)
-- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/349-pi-agent.html)
+- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/350-pi-agent.html)
 
 ## ① 企业级分布式部署 — 无状态水平扩展 + 零停机发布 + 多租户隔离
 

@@ -61,8 +61,8 @@ Grok 4.5 基于 1.5 万亿参数的 V9 基础模型，在数万张 NVIDIA GB300 
 
 - [Grok 4.5 模型发布详情](../ch05/092-ai.html)
 - [Claude Opus 4.8 系统卡分析](ch01/1235-claude.html)
-- [Cursor 复盘：模型决定能力上限，Harness 决定生产下限](../ch05/018-harness.html)
-- [Cursor Harness 模型生产化实践](ch01/269-cursor-harness-model-production-floor.html)
+- [Cursor 复盘：模型决定能力上限，Harness 决定生产下限](../ch05/009-harness.html)
+- [Cursor Harness 模型生产化实践](ch01/267-cursor-harness-model-production-floor.html)
 - [Claude Code Checkup 功能](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor让马斯克的grok45咸鱼翻身追平opus-48成本比glm52还低.md)

@@ -43,7 +43,7 @@ Harness Engineering 方法论，让 Coding Agent 能够可靠地完成长程任�
 5. **建立可量化的完成标准并程序化校验**：能用脚本判定的绝不交给 Agent（如 TypeScript 编译通过、构建成功、单元测试通过），程序化校验零 Token 消耗、结果完全确定、可以无限次重复执行 。
 
 ## 相关文章
-- → [Agent Harness Architecture](../ch05/058-agent-harness.html)
+- → [Agent Harness Architecture](../ch05/057-agent-harness.html)
 - → [Qoder Skills Complete Guide](../ch07/034-qoder-skills.html)
 - → [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 ---
@@ -53,9 +53,9 @@ Harness Engineering 方法论，让 Coding Agent 能够可靠地完成长程任�
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/112-harness-engineering.html)
 - [Agent生产级Harness工程指南](../ch05/112-harness-engineering.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/018-harness.html)
-- [Agent Harness 组件解析](../ch05/058-agent-harness.html)
-- [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/018-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
+- [Agent Harness 组件解析](../ch05/057-agent-harness.html)
+- [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/009-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

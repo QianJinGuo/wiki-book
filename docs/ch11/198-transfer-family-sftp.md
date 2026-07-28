@@ -2,7 +2,7 @@
 
 ## Ch11.198 如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP
 
-> 📊 Level ⭐⭐ | 6.3KB | `entities/如何轻量化的在亚马逊云科技中国区安全使用-transfer-family-sftp.md`
+> 📊 Level ⭐⭐ | 6.4KB | `entities/如何轻量化的在亚马逊云科技中国区安全使用-transfer-family-sftp.md`
 
 # 如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP
 
@@ -122,6 +122,10 @@ S3 桶（SFTP 后端存储）：
       --bucket sftp-poc- \
       --public-access-block-configuration \
       BlockPublicAcls=true,IgnorePublicAcls=true,Block
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

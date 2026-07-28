@@ -10,7 +10,7 @@
 
 ## 摘要
 
-云效 (Yunxiao) is [Alibaba Cloud](../ch04/348-agentic-cloud.html)'s DevOps platform. Its **AI Code Review** capability, previously available for Alibaba Cloud's Codeup, now officially supports **GitLab integration** — enabling enterprises to leverage AI-driven code review without moving their repositories out of private networks. The architecture is built around security-first principles: no public exposure required, no repository migration, and Personal Access Token based authentication.
+云效 (Yunxiao) is [Alibaba Cloud](../ch04/349-agentic-cloud.html)'s DevOps platform. Its **AI Code Review** capability, previously available for Alibaba Cloud's Codeup, now officially supports **GitLab integration** — enabling enterprises to leverage AI-driven code review without moving their repositories out of private networks. The architecture is built around security-first principles: no public exposure required, no repository migration, and Personal Access Token based authentication.
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/代码不出内网也能用上-ai-智能评审云效现已支持-gitlab.md)
 
@@ -115,7 +115,7 @@ This mirrors the broader evolution in AI Code Review from pattern-matching to se
 
 ## Related Entities
 
-- [Alibaba Cloud Agentic Cloud](../ch04/348-agentic-cloud.html)
+- [Alibaba Cloud Agentic Cloud](../ch04/349-agentic-cloud.html)
 - [Open Code Review CLI](https://github.com/QianJinGuo/wiki/blob/main/entities/阿里开源-open-code-review一周揽下-5k-star更专业的代码评审-cli.md)
 - AI Code Review
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

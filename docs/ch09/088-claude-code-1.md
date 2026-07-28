@@ -81,7 +81,7 @@ Skill 是教 Claude 如何做某事的 Markdown 文件（承载知识和指令�
 
 - [Claude Code Governance Soft Rules](../ch03/077-claude-code.html)
 - [Claude Code 大代码库配置](../ch03/077-claude-code.html)
-- [Agent Harness 上下文管理](../ch05/058-agent-harness.html)
+- [Agent Harness 上下文管理](../ch05/057-agent-harness.html)
 - **MCP 服务器集成模式**
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-top-1-guide-datapai-2026.md)

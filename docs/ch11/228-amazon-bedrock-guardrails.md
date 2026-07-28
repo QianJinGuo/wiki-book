@@ -2,7 +2,7 @@
 
 ## Ch11.228 Amazon Bedrock Guardrails 代码生成工作流六大架构模式
 
-> 📊 Level ⭐⭐ | 5.3KB | `entities/amazon-bedrock-guardrails-code-generation-six-patterns.md`
+> 📊 Level ⭐⭐ | 5.4KB | `entities/amazon-bedrock-guardrails-code-generation-six-patterns.md`
 
 # Amazon Bedrock Guardrails 代码生成工作流六大架构模式
 
@@ -67,6 +67,10 @@ Agentic 编码工作流（模型使用工具、多步推理、生成中间输出
 4. **根据风险分级** — 高风险代码全面保护，低风险代码轻量通过
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/best-practices-for-applying-amazon-bedrock-guardrails-to-cod.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -118,14 +118,14 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 - vs **[阿里云 Agent 演化四阶段六维度](../ch03/035-agent.html)** — 阿里云是**演化阶段视角**;本文是**职责解剖视角**。两者都讲 Runtime 但切入维度不同
 - vs **[Harness Engineering Framework](../ch05/112-harness-engineering.html)** — Harness 是 Runtime 的**外壳**;Runtime 是 Harness 的**内脏**。Runtime 7 职责 = Harness 的实现细节
-- vs **[Agent Harness 架构设计与生产实践](../ch05/058-agent-harness.html)** — Production 视角更全;本文是入门视角
+- vs **[Agent Harness 架构设计与生产实践](../ch05/057-agent-harness.html)** — Production 视角更全;本文是入门视角
 
 **框架生态**(本文 3 主流框架):
 
 - vs **[Google Agent Executor Distributed Runtime](ch04/003-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
-- vs **[Anthropic Claude Managed Agents Platform](../ch01/216-anthropic-claude-managed-agents.html)** — Anthropic Managed Agents 视角
-- vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/554-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
-- vs **[AgentCore Harness](ch04/679-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/226-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
+- vs **[Anthropic Claude Managed Agents Platform](../ch01/214-anthropic-claude-managed-agents.html)** — Anthropic Managed Agents 视角
+- vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/556-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
+- vs **[AgentCore Harness](ch04/683-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/226-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
 
 **Runtime 7 职责 ↔ 二曲线系列 13 篇主题映射**(本文是系列 4/13,后续 9 篇已规划):
 
@@ -151,7 +151,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 ### 3. Router 是复杂度的分水岭:简单 Agent 用提示词路由,复杂 Agent 才需要显式 Router
 
-本文将 Router 定性为"复杂 Agent 扩展层"而非第 8 个必备职责，这一判断具有重要的工程意义：**Router 的必要性是 Agent 复杂度阈值的结果，而不是功能丰富度的标志**。这与 [Agent Harness 架构设计与生产实践](../ch05/058-agent-harness.html) 的"按需引入复杂度"原则一致 — 过早引入 Router 会增加不必要的状态空间，早期 Agent 应该用提示词 + 工具选择承担简单分发。
+本文将 Router 定性为"复杂 Agent 扩展层"而非第 8 个必备职责，这一判断具有重要的工程意义：**Router 的必要性是 Agent 复杂度阈值的结果，而不是功能丰富度的标志**。这与 [Agent Harness 架构设计与生产实践](../ch05/057-agent-harness.html) 的"按需引入复杂度"原则一致 — 过早引入 Router 会增加不必要的状态空间，早期 Agent 应该用提示词 + 工具选择承担简单分发。
 
 ### 4. Trace ↔ 可观测性 是同一数据流的两个齿轮,必须配套设计
 
@@ -184,11 +184,11 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - [阿里云安全护栏三域](../ch05/092-ai.html)
 - [阿里云 Agent 演化四阶段](../ch03/035-agent.html)
 - [Harness Engineering Framework](../ch05/112-harness-engineering.html)
-- [Agent Harness 架构设计与生产实践](../ch05/058-agent-harness.html)
+- [Agent Harness 架构设计与生产实践](../ch05/057-agent-harness.html)
 - [Google Agent Executor Runtime](ch04/003-agentrun.html)
-- [Anthropic Claude Managed Agents](../ch01/216-anthropic-claude-managed-agents.html)
-- [Amazon Bedrock AgentCore Runtime](ch04/554-amazon-bedrock-agentcore.html)
-- [AgentCore Harness](ch04/679-agentcore-harness.html)
+- [Anthropic Claude Managed Agents](../ch01/214-anthropic-claude-managed-agents.html)
+- [Amazon Bedrock AgentCore Runtime](ch04/556-amazon-bedrock-agentcore.html)
+- [AgentCore Harness](ch04/683-agentcore-harness.html)
 - [纳德拉「Token 资本」论](../ch12/003-token.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

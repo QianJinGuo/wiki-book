@@ -2,7 +2,7 @@
 
 ## Ch11.273 Monitor Amazon SageMaker Pipelines cross-account with custom Amazon CloudWatch dashboards
 
-> 📊 Level ⭐⭐ | 3.6KB | `entities/monitor-sagemaker-pipelines-cross-account.md`
+> 📊 Level ⭐⭐ | 3.7KB | `entities/monitor-sagemaker-pipelines-cross-account.md`
 
 # Monitor Amazon SageMaker Pipelines cross-account with custom Amazon CloudWatch dashboards
 
@@ -41,6 +41,10 @@
 - **用户友好**：CloudWatch 自定义 Widget 实现了交互式过滤、步骤详情报弹框等高级 UI 功能，用户无需离开 AWS 控制台即可完成监控
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/monitor-sagemaker-pipelines-cross-account.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
