@@ -171,6 +171,19 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .feynman-summary{font-size:.72rem;color:var(--text3);margin-top:.3rem;line-height:1.4}
 .thread-badge{font-size:.68rem;padding:.1rem .25rem;border-radius:4px;background:rgba(59,130,246,.12);color:var(--blue);margin-left:.2rem;cursor:pointer}
 .thread-badge:hover{background:rgba(59,130,246,.25)}
+.threads-list{display:flex;flex-direction:column;gap:.3rem;margin-bottom:.4rem}
+.thread-item{display:flex;gap:.4rem;align-items:center;background:var(--surface2);border-radius:6px;padding:.3rem .5rem}
+.thread-item a{color:var(--blue);font-size:.78rem;text-decoration:none;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.thread-item a:hover{text-decoration:underline}
+.thread-item .thread-name{color:var(--text);font-size:.78rem;font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis}
+.thread-remove{color:var(--text3);cursor:pointer;font-size:.9rem;line-height:1}
+.thread-remove:hover{color:var(--red)}
+.thread-add-row{display:flex;gap:.3rem;align-items:center}
+.thread-input{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:.3rem .5rem;color:var(--text);font-size:.78rem}
+.thread-input:focus{outline:none;border-color:var(--accent)}
+.thread-url{flex:2}
+.thread-add-btn{padding:.3rem .6rem;border-radius:6px;background:var(--surface2);color:var(--accent);border:1px solid var(--border);font-size:.78rem;cursor:pointer}
+.thread-add-btn:hover{background:var(--accent);color:#fff}
 .feynman-tooltip{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.5rem .7rem;font-size:.72rem;color:var(--text);width:280px;max-height:150px;overflow-y:auto;display:none;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,.3)}
 
 @media(max-width:640px){
@@ -262,9 +275,7 @@ let recallData = JSON.parse(localStorage.getItem(RECALL_KEY) || '{}');
 let recallPanelOpen = false;
 
 // ── D1 Sync ──────────────────────────────────────────────────
-function getApiBase(){
-  return window.location.origin + '/api/progress';
-}
+function getApiBase(){ return window.location.origin + '/api/user-data'; }
 
 function setSyncStatus(msg, ok){
   const el = document.getElementById('sync-status');
@@ -275,23 +286,22 @@ function setSyncStatus(msg, ok){
 async function pushToCloud(){
   if(!userId){ setSyncStatus('请先输入用户 ID', false); return; }
   setSyncStatus('推送中...', null);
-  const entries = Object.entries(done).map(([file, data]) => ({
-    file,
-    level: typeof data === 'object' ? data.level : 'read',
+  const progress = Object.entries(done).map(([file, data]) => ({
+    file, level: typeof data === 'object' ? data.level : 'read',
     updatedAt: typeof data === 'object' ? data.updatedAt : (typeof data === 'number' ? data : Date.now())
   }));
+  const feynmanToSend = {...feynmanData};
+  const recallToSend = {...recallData};
   try {
     const resp = await fetch(getApiBase(), {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({ user: userId, entries })
+      body: JSON.stringify({ user: userId, progress, feynman: feynmanToSend, recall: recallToSend })
     });
     const result = await resp.json();
-    if(result.ok) setSyncStatus(`✓ 已推送 ${result.count} 条到云端`, true);
-    else setSyncStatus('推送失败: ' + result.error, false);
-  } catch(e) {
-    setSyncStatus('推送失败: ' + e.message, false);
-  }
+    if(result.ok) setSyncStatus('✓ 已推送 '+result.count+' 条到云端', true);
+    else setSyncStatus('推送失败: '+result.error, false);
+  } catch(e) { setSyncStatus('推送失败: '+e.message, false); }
 }
 
 async function pullFromCloud(){
@@ -301,24 +311,35 @@ async function pullFromCloud(){
     const resp = await fetch(getApiBase() + '?user=' + encodeURIComponent(userId));
     const result = await resp.json();
     if(result.progress){
-      // Merge: cloud overwrites local for matching keys, local-only keys preserved
       const cloud = result.progress;
-      let merged = { ...done };
-      for(const [file, data] of Object.entries(cloud)){
-        const cloudTime = data.updatedAt || 0;
-        const localTime = (merged[file] && typeof merged[file] === 'object') ? merged[file].updatedAt : (typeof merged[file] === 'number' ? merged[file] : 0);
-        if(cloudTime >= localTime) merged[file] = data;
+      let merged = {...done};
+      for(const [file,data] of Object.entries(cloud)){
+        const ct = data.updatedAt||0;
+        const lt = (merged[file]&&typeof merged[file]==='object')?merged[file].updatedAt:(typeof merged[file]==='number'?merged[file]:0);
+        if(ct>=lt) merged[file]=data;
       }
-      done = merged;
-      save();
-      render();
-      setSyncStatus(`✓ 已拉取 ${Object.keys(cloud).length} 条从云端`, true);
-    } else {
-      setSyncStatus('拉取失败: ' + (result.error || 'unknown'), false);
+      done=merged; save();
     }
-  } catch(e) {
-    setSyncStatus('拉取失败: ' + e.message, false);
-  }
+    if(result.feynman){
+      for(const [file,note] of Object.entries(result.feynman)){
+        const ct = note.updatedAt||0;
+        const lt = feynmanData[file]?.updatedAt||0;
+        if(ct>=lt) feynmanData[file]=note;
+      }
+      saveFeynmanStorage();
+    }
+    if(result.recall){
+      for(const [file,r] of Object.entries(result.recall)){
+        const ct = r.lastReview||r.addedAt||0;
+        const lt = recallData[file]?.lastReview||recallData[file]?.addedAt||0;
+        if(ct>=lt) recallData[file]=r;
+      }
+      saveRecall();
+    }
+    render(); renderRecallPanel();
+    const total = Object.keys(result.progress||{}).length + Object.keys(result.feynman||{}).length + Object.keys(result.recall||{}).length;
+    setSyncStatus('✓ 已拉取 '+total+' 条从云端', true);
+  } catch(e) { setSyncStatus('拉取失败: '+e.message, false); }
 }
 
 // Auto-sync on change (debounced)
@@ -598,7 +619,7 @@ function openFeynmanModal(file, event){
   document.getElementById('feynman-insight').value = note.insight || '';
   document.getElementById('feynman-next').value = note.next || '';
   document.getElementById('feynman-question').value = note.question || '';
-  document.getElementById('feynman-threads').value = (note.threads || []).join('\n');
+  renderThreadsList(note.threads || []);
   
   // Set level buttons
   const currentLevel = getLevel(file) || 'read';
@@ -614,6 +635,43 @@ function closeFeynmanModal(){
   currentFeynmanFile = null;
 }
 
+let currentThreads = [];
+
+function renderThreadsList(threads){
+  currentThreads = threads || [];
+  const list = document.getElementById('feynman-threads-list');
+  if(currentThreads.length === 0){
+    list.innerHTML = '<div style="font-size:.75rem;color:var(--text3)">暂无关联对话</div>';
+    return;
+  }
+  let html = '';
+  currentThreads.forEach((t, i) => {
+    html += '<div class="thread-item">'+
+      '<span class="thread-name">'+(t.name || '未命名')+'</span>'+
+      '<a href="'+t.url+'" target="_blank">'+t.url.slice(0, 40)+(t.url.length > 40 ? '...' : '')+'</a>'+
+      '<span class="thread-remove" onclick="removeThread('+i+')">×</span>'+
+    '</div>';
+  });
+  list.innerHTML = html;
+}
+
+function addThread(){
+  const nameInput = document.getElementById('thread-name-input');
+  const urlInput = document.getElementById('thread-url-input');
+  const name = nameInput.value.trim();
+  const url = urlInput.value.trim();
+  if(!url) return;
+  currentThreads.push({ name: name || url.slice(0, 30), url });
+  renderThreadsList(currentThreads);
+  nameInput.value = '';
+  urlInput.value = '';
+}
+
+function removeThread(index){
+  currentThreads.splice(index, 1);
+  renderThreadsList(currentThreads);
+}
+
 function saveFeynmanNote(){
   if(!currentFeynmanFile) return;
   
@@ -625,7 +683,7 @@ function saveFeynmanNote(){
     insight: document.getElementById('feynman-insight').value.trim(),
     next: document.getElementById('feynman-next').value.trim(),
     question: document.getElementById('feynman-question').value.trim(),
-    threads: document.getElementById('feynman-threads').value.trim().split('\n').filter(t => t.trim()),
+    threads: currentThreads,
     updatedAt: Date.now()
   };
   
@@ -937,8 +995,13 @@ init();
       <textarea id="feynman-question" placeholder="这篇文章引发你思考的更大问题..."></textarea>
     </div>
     <div class="feynman-field">
-      <label>关联对话（每行一个链接）</label>
-      <textarea id="feynman-threads" placeholder="codex://threads/xxx&#10;https://chatgpt.com/c/xxx&#10;https://claude.ai/chat/xxx"></textarea>
+      <label>关联对话</label>
+      <div id="feynman-threads-list" class="threads-list"></div>
+      <div class="thread-add-row">
+        <input type="text" id="thread-name-input" placeholder="Session 名称" class="thread-input" />
+        <input type="text" id="thread-url-input" placeholder="codex://threads/xxx 或 URL" class="thread-input thread-url" />
+        <button class="thread-add-btn" onclick="addThread()">+ 添加</button>
+      </div>
     </div>
     <div class="feynman-actions">
       <button class="feynman-cancel" onclick="closeFeynmanModal()">取消</button>
