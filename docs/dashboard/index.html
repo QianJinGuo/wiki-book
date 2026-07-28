@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>📚 AI 工程 · 渐进式学习仪表盘</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../assets/images/favicon-48x48.png">
+<link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+<link rel="apple-touch-icon" href="../assets/images/favicon.png">
 <style>
 :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1e293b;--surface3:#283548;
 --border:#334155;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;
@@ -92,12 +97,58 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .section-header h2{font-size:1rem}
 .section-header .badge{background:var(--surface2);color:var(--text2);padding:.15rem .5rem;border-radius:5px;font-size:.72rem}
 
+
+.recall-section{max-width:1400px;margin:0 auto .8rem;padding:0 1rem}
+.recall-header{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem;cursor:pointer;user-select:none}
+.recall-header h2{font-size:1rem;color:var(--pink)}
+.recall-header .badge{background:rgba(236,72,153,.15);color:var(--pink);padding:.15rem .5rem;border-radius:5px;font-size:.72rem}
+.recall-toggle{font-size:.78rem;color:var(--text3);margin-left:auto}
+.recall-panel{display:none}
+.recall-panel.open{display:block}
+.recall-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:.6rem;margin-bottom:.6rem}
+.recall-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.8rem;display:flex;flex-direction:column;gap:.4rem}
+.recall-card:hover{border-color:var(--pink)}
+.recall-card-title{font-size:.85rem;font-weight:600;line-height:1.3}
+.recall-card-title a{color:inherit;text-decoration:none}
+.recall-card-title a:hover{text-decoration:underline}
+.recall-card-meta{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;color:var(--text3)}
+.recall-card-meta .interval{color:var(--yellow)}
+.recall-card-meta .due{color:var(--red)}
+.recall-actions{display:flex;gap:.4rem}
+.recall-btn{padding:.3rem .7rem;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);cursor:pointer;font-size:.75rem;transition:all .15s;flex:1;text-align:center}
+.recall-btn:hover{border-color:var(--accent);color:var(--text)}
+.recall-btn.remembered{background:rgba(34,197,94,.15);color:var(--green);border-color:var(--green)}
+.recall-btn.forgot{background:rgba(239,68,68,.15);color:var(--red);border-color:var(--red)}
+.recall-stats{display:flex;gap:1rem;font-size:.78rem;color:var(--text2);margin-bottom:.6rem;flex-wrap:wrap}
+.recall-stats span{display:flex;align-items:center;gap:.3rem}
+.recall-empty{text-align:center;padding:1.5rem;color:var(--text3);font-size:.85rem}
+
+.daily-section{max-width:1400px;margin:0 auto .8rem;padding:0 1rem}
+.daily-card{background:linear-gradient(135deg,#1e1b4b 0%,#0f172a 100%);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.5rem;display:flex;gap:1rem;align-items:flex-start;position:relative;overflow:hidden}
+.daily-card::before{content:'';position:absolute;top:-40px;right:-40px;width:120px;height:120px;background:radial-gradient(circle,rgba(139,92,246,.12) 0%,transparent 70%);pointer-events:none}
+.daily-icon{font-size:2rem;flex-shrink:0;line-height:1}
+.daily-body{flex:1;min-width:0}
+.daily-label{font-size:.72rem;color:var(--accent2);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.3rem}
+.daily-title{font-size:1.1rem;font-weight:700;line-height:1.4;margin-bottom:.4rem}
+.daily-title a{color:inherit;text-decoration:none}
+.daily-title a:hover{text-decoration:underline}
+.daily-meta{display:flex;gap:.8rem;font-size:.75rem;color:var(--text3);margin-bottom:.6rem;flex-wrap:wrap}
+.daily-meta .phase-tag{padding:.1rem .4rem;border-radius:4px;font-weight:600;font-size:.68rem;color:#fff}
+.daily-actions{display:flex;gap:.4rem;align-items:center}
+.daily-read-btn{padding:.4rem 1rem;border-radius:8px;background:var(--accent);color:#fff;font-size:.82rem;font-weight:600;cursor:pointer;border:none;transition:all .15s;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem}
+.daily-read-btn:hover{background:var(--accent2);transform:translateY(-1px)}
+.daily-skip-btn{padding:.4rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);font-size:.78rem;cursor:pointer;transition:all .15s}
+.daily-skip-btn:hover{border-color:var(--accent);color:var(--text)}
+.daily-date{font-size:.72rem;color:var(--text3);margin-left:auto}
 @media(max-width:640px){
   .header h1{font-size:1.3rem}
   .grid{grid-template-columns:1fr}
   .phase-bar{gap:.2rem}
   .phase-chip{padding:.3rem .6rem;font-size:.72rem}
   .stats{grid-template-columns:repeat(3,1fr)}
+  .recall-list{grid-template-columns:1fr}
+  .daily-card{flex-direction:column}
+  .daily-icon{font-size:1.5rem}
 }
 </style>
 </head>
@@ -131,6 +182,31 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
   <div class="progress-bars" id="progress-bars"></div>
 </div>
 
+
+
+<div class="daily-section" id="daily-section">
+  <div class="daily-card" id="daily-card">
+    <div class="daily-icon">📅</div>
+    <div class="daily-body">
+      <div class="daily-label">每日一读</div>
+      <div class="daily-title" id="daily-title"></div>
+      <div class="daily-meta" id="daily-meta"></div>
+      <div class="daily-actions" id="daily-actions"></div>
+    </div>
+    <div class="daily-date" id="daily-date"></div>
+  </div>
+</div>
+<div class="recall-section" id="recall-section">
+  <div class="recall-header" id="recall-header">
+    <h2>🧠 艾宾浩斯 Recall</h2>
+    <span class="badge" id="recall-count-badge">0 待复习</span>
+    <span class="recall-toggle" id="recall-toggle">▶ 展开</span>
+  </div>
+  <div class="recall-panel" id="recall-panel">
+    <div class="recall-stats" id="recall-stats"></div>
+    <div class="recall-list" id="recall-list"></div>
+  </div>
+</div>
 <div class="content" id="content">
   <div class="loading">⏳ 正在加载文章数据...</div>
 </div>
@@ -138,6 +214,8 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 <script>
 const LS_KEY = 'wiki-learn-progress-v3';
 const USER_KEY = 'wiki-learn-user';
+const RECALL_KEY = 'wiki-learn-recall-v1';
+const RECALL_INTERVALS = [1, 2, 4, 7, 15, 30]; // days - Ebbinghaus
 const LEVELS = ['read','explained','taught','mastered'];
 
 let DATA = null;
@@ -147,6 +225,8 @@ let currentChapter = 'all';
 let currentLevel = 'all';
 let searchQuery = '';
 let userId = localStorage.getItem(USER_KEY) || '';
+let recallData = JSON.parse(localStorage.getItem(RECALL_KEY) || '{}');
+let recallPanelOpen = false;
 
 // ── D1 Sync ──────────────────────────────────────────────────
 function getApiBase(){
@@ -218,6 +298,7 @@ function scheduleSync(){
 
 // ── Local Storage ────────────────────────────────────────────
 function save(){ localStorage.setItem(LS_KEY, JSON.stringify(done)); }
+function saveRecall(){ localStorage.setItem(RECALL_KEY, JSON.stringify(recallData)); }
 
 function getLevel(file){
   const d = done[file];
@@ -229,8 +310,10 @@ function getLevel(file){
 function setLevel(file, level){
   if(level === null){
     delete done[file];
+    if(recallData[file]) removeFromRecallQueue(file);
   } else {
     done[file] = { level, updatedAt: Date.now() };
+    if(!recallData[file]) addToRecallQueue(file);
   }
   save();
   scheduleSync();
@@ -275,6 +358,190 @@ function phaseName(pid){
   return p ? p.name : 'Unknown';
 }
 
+
+// ── Recall (Ebbinghaus Forgetting Curve) ─────────────────────
+function addToRecallQueue(file){
+  if(recallData[file]) return;
+  recallData[file] = {
+    addedAt: Date.now(),
+    nextReview: Date.now() + RECALL_INTERVALS[0] * 86400000,
+    step: 0,
+    totalReviews: 0,
+    successes: 0,
+    lastReview: null
+  };
+  saveRecall();
+}
+function removeFromRecallQueue(file){
+  delete recallData[file];
+  saveRecall();
+}
+function handleRecall(file, remembered){
+  const r = recallData[file];
+  if(!r) return;
+  r.totalReviews++;
+  r.lastReview = Date.now();
+  if(remembered){
+    r.successes++;
+    r.step = Math.min(r.step + 1, RECALL_INTERVALS.length - 1);
+  } else {
+    r.step = 0;
+  }
+  r.nextReview = Date.now() + RECALL_INTERVALS[r.step] * 86400000;
+  saveRecall();
+  renderRecallPanel();
+}
+function getDueRecallArticles(){
+  const now = Date.now();
+  const due = [];
+  for(const [file, r] of Object.entries(recallData)){
+    if(r.nextReview <= now){
+      const article = DATA ? DATA.articles.find(a => a.file === file) : null;
+      due.push({file, ...r, article});
+    }
+  }
+  due.sort((a,b) => a.nextReview - b.nextReview);
+  return due;
+}
+function getRecallStats(){
+  const now = Date.now();
+  let due=0, upcoming=0, mastered=0, total=0;
+  for(const r of Object.values(recallData)){
+    total++;
+    if(r.nextReview <= now) due++;
+    else if(r.nextReview <= now + 86400000) upcoming++;
+    if(r.step >= RECALL_INTERVALS.length - 1) mastered++;
+  }
+  return {due, upcoming, mastered, total};
+}
+function renderRecallPanel(){
+  if(!DATA) return;
+  const stats = getRecallStats();
+  const dueArticles = getDueRecallArticles();
+  document.getElementById('recall-count-badge').textContent = stats.due + ' 待复习';
+  document.getElementById('recall-toggle').textContent = recallPanelOpen ? '▼ 收起' : '▶ 展开';
+  const panel = document.getElementById('recall-panel');
+  panel.classList.toggle('open', recallPanelOpen);
+  if(!recallPanelOpen) return;
+  const statsEl = document.getElementById('recall-stats');
+  statsEl.innerHTML =
+    '<span>📝 总计: <b>'+stats.total+'</b></span>'+
+    '<span>🔴 待复习: <b style="color:var(--red)">'+stats.due+'</b></span>'+
+    '<span>🟡 明日到期: <b style="color:var(--yellow)">'+stats.upcoming+'</b></span>'+
+    '<span>🟢 已稳定: <b style="color:var(--green)">'+stats.mastered+'</b></span>';
+  const listEl = document.getElementById('recall-list');
+  if(dueArticles.length === 0){
+    listEl.innerHTML = '<div class="recall-empty">✅ 暂无到期复习内容，继续保持！</div>';
+    return;
+  }
+  let html = '';
+  dueArticles.forEach(item => {
+    const title = item.article ? item.article.title : item.file;
+    const chapter = item.article ? item.article.chapterName : '';
+    const url = item.article ? articleUrl(item.article.file) : '#';
+    const interval = RECALL_INTERVALS[item.step];
+    const overdue = Date.now() - item.nextReview;
+    const overdueH = Math.floor(overdue / 3600000);
+    const escFile = item.file.replace(/'/g, "\\'");
+    html += '<div class="recall-card">'+
+      '<div class="recall-card-title"><a href="'+url+'" target="_blank" style="color:inherit;text-decoration:none">'+title+'</a></div>'+
+      '<div class="recall-card-meta">'+
+        '<span>'+chapter+'</span>'+
+        '<span class="interval">间隔 '+interval+'d · 第'+(item.step+1)+'/'+RECALL_INTERVALS.length+' 轮</span>'+
+        (overdue > 0 ? '<span class="due">超期 '+overdueH+'h</span>' : '')+
+      '</div>'+
+      '<div class="recall-actions">'+
+        '<button class="recall-btn remembered" onclick="event.stopPropagation();handleRecall(\''+escFile+'\',true)">✓ 记住了</button>'+
+        '<button class="recall-btn forgot" onclick="event.stopPropagation();handleRecall(\''+escFile+'\',false)">✗ 忘了</button>'+
+      '</div>'+
+    '</div>';
+  });
+  listEl.innerHTML = html;
+}
+
+
+// ── Daily Article ─────────────────────────────────────────────
+const DAILY_KEY = 'wiki-learn-daily-v1';
+
+function getDailyArticle(){
+  if(!DATA) return null;
+  const stored = JSON.parse(localStorage.getItem(DAILY_KEY) || 'null');
+  const today = new Date().toISOString().slice(0, 10);
+
+  // Return cached if same day and article still unread
+  if(stored && stored.date === today){
+    const article = DATA.articles.find(a => a.file === stored.file);
+    if(article && !getLevel(article.file)) return article;
+  }
+
+  // Pick new article: unread, deterministic by date
+  const unread = DATA.articles.filter(a => !getLevel(a.file));
+  if(unread.length === 0) return null;
+
+  // Seed from date string for deterministic daily pick
+  let hash = 0;
+  for(let i = 0; i < today.length; i++) hash = ((hash << 5) - hash + today.charCodeAt(i)) | 0;
+  const idx = Math.abs(hash) % unread.length;
+  const picked = unread[idx];
+
+  localStorage.setItem(DAILY_KEY, JSON.stringify({date: today, file: picked.file}));
+  return picked;
+}
+
+function skipDailyArticle(){
+  if(!DATA) return;
+  const stored = JSON.parse(localStorage.getItem(DAILY_KEY) || 'null');
+  const today = new Date().toISOString().slice(0, 10);
+  // Get unread excluding current
+  const unread = DATA.articles.filter(a => !getLevel(a.file) && (!stored || a.file !== stored.file));
+  if(unread.length === 0){ renderDailyCard(); return; }
+  let hash = 0;
+  const seed = today + '-' + Date.now();
+  for(let i = 0; i < seed.length; i++) hash = ((hash << 5) - hash + seed.charCodeAt(i)) | 0;
+  const idx = Math.abs(hash) % unread.length;
+  const picked = unread[idx];
+  localStorage.setItem(DAILY_KEY, JSON.stringify({date: today, file: picked.file}));
+  renderDailyCard();
+}
+
+function startDailyRead(phase, file){
+  // Switch to the article's phase in the dashboard
+  currentPhase = phase;
+  // Update phase bar UI
+  document.querySelectorAll('#phase-bar .phase-chip').forEach(c => {
+    c.classList.toggle('active', parseInt(c.dataset.phase) === phase);
+  });
+  render();
+  // Open the article in a new tab
+  window.open(articleUrl(file), '_blank');
+}
+
+function renderDailyCard(){
+  const section = document.getElementById('daily-section');
+  if(!DATA){ section.style.display = 'none'; return; }
+  const article = getDailyArticle();
+  if(!article){
+    section.innerHTML = '<div class="daily-card"><div class="daily-icon">🎉</div><div class="daily-body"><div class="daily-label">每日一读</div><div class="daily-title">全部文章已读完！太棒了 🏆</div></div></div>';
+    return;
+  }
+  const url = articleUrl(article.file);
+  const color = phaseColor(article.phase);
+  const today = new Date();
+  const dateStr = (today.getMonth()+1)+'/'+today.getDate();
+  const lvClass = article.level===3?'lv3':article.level===2?'lv2':'lv1';
+
+  document.getElementById('daily-title').innerHTML = '<a href="'+url+'" target="_blank" onclick="event.preventDefault();startDailyRead('+article.phase+',\''+article.file.replace(/'/g, "\\'")+'\')">'+article.title+'</a>';
+  document.getElementById('daily-meta').innerHTML =
+    '<span class="phase-tag" style="background:'+color+'">P'+article.phase+'</span>'+
+    '<span>'+article.chapterName+'</span>'+
+    '<span>'+formatWords(article.words)+'字</span>'+
+    '<span class="level-badge '+lvClass+'">'+('⭐'.repeat(article.level))+'</span>';
+  document.getElementById('daily-actions').innerHTML =
+    '<button class="daily-read-btn" onclick="startDailyRead('+article.phase+',\''+article.file.replace(/'/g, "\\'")+'\')">📖 开始阅读</button>'+
+    '<button class="daily-skip-btn" onclick="skipDailyArticle()">↻ 换一篇</button>';
+  document.getElementById('daily-date').textContent = dateStr;
+}
+
 // ── Init ──────────────────────────────────────────────────────
 async function init(){
   try {
@@ -305,6 +572,8 @@ async function init(){
   renderChapterFilters();
   renderLevelFilters();
   render();
+  renderRecallPanel();
+  renderDailyCard();
 }
 
 // ── Phase bar ─────────────────────────────────────────────────
@@ -370,13 +639,14 @@ function renderStats(filtered){
   const totalWords = filtered.filter(a=>getLevel(a.file)).reduce((s,a)=>s+a.words,0);
   const readTime = (totalWords / 500 / 60).toFixed(1);
 
+  const rStats = getRecallStats();
   const row = document.getElementById('stats-row');
   row.innerHTML = `
     <div class="stat"><div class="num" style="color:var(--green)">${allDone.length}</div><div class="label">已读总数</div></div>
     <div class="stat"><div class="num" style="color:var(--accent)">${doneInFiltered}/${filtered.length}</div><div class="label">当前视图</div></div>
     <div class="stat"><div class="num" style="color:var(--cyan)">${readTime}h</div><div class="label">已读时长</div></div>
+    <div class="stat"><div class="num" style="color:var(--pink)">${rStats.due}</div><div class="label">待复习</div></div>
     <div class="stat"><div class="num" style="color:var(--orange)">${DATA.totalArticles}</div><div class="label">文章总数</div></div>
-    <div class="stat"><div class="num" style="color:var(--pink)">${DATA.phases.length}</div><div class="label">学习阶段</div></div>
   `;
 }
 
@@ -415,6 +685,8 @@ function render(){
 
   renderStats(filtered);
   renderProgress();
+  renderRecallPanel();
+  renderDailyCard();
 
   const content = document.getElementById('content');
   if(filtered.length === 0){
@@ -474,6 +746,11 @@ function render(){
 
   content.innerHTML = html;
 }
+
+document.getElementById('recall-header').addEventListener('click', () => {
+  recallPanelOpen = !recallPanelOpen;
+  renderRecallPanel();
+});
 
 // ── Search ────────────────────────────────────────────────────
 document.getElementById('search').addEventListener('input', e => {
