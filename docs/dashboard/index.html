@@ -169,6 +169,8 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .feynman-cancel{padding:.5rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);font-size:.85rem;cursor:pointer}
 .feynman-cancel:hover{border-color:var(--accent);color:var(--text)}
 .feynman-summary{font-size:.72rem;color:var(--text3);margin-top:.3rem;line-height:1.4}
+.thread-badge{font-size:.68rem;padding:.1rem .25rem;border-radius:4px;background:rgba(59,130,246,.12);color:var(--blue);margin-left:.2rem;cursor:pointer}
+.thread-badge:hover{background:rgba(59,130,246,.25)}
 .feynman-tooltip{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.5rem .7rem;font-size:.72rem;color:var(--text);width:280px;max-height:150px;overflow-y:auto;display:none;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,.3)}
 
 @media(max-width:640px){
@@ -596,6 +598,7 @@ function openFeynmanModal(file, event){
   document.getElementById('feynman-insight').value = note.insight || '';
   document.getElementById('feynman-next').value = note.next || '';
   document.getElementById('feynman-question').value = note.question || '';
+  document.getElementById('feynman-threads').value = (note.threads || []).join('\n');
   
   // Set level buttons
   const currentLevel = getLevel(file) || 'read';
@@ -622,6 +625,7 @@ function saveFeynmanNote(){
     insight: document.getElementById('feynman-insight').value.trim(),
     next: document.getElementById('feynman-next').value.trim(),
     question: document.getElementById('feynman-question').value.trim(),
+    threads: document.getElementById('feynman-threads').value.trim().split('\n').filter(t => t.trim()),
     updatedAt: Date.now()
   };
   
@@ -853,7 +857,7 @@ function render(){
           </div>
           <div class="card-actions">
             <button class="level-btn ${btnClass}" onclick="handleLevelClick('${a.file}',event)">${lv ? levelLabel(lv) : '○ 未读'}</button>
-            ${lv ? (() => { const fn = getFeynmanNote(a.file); return `<span class="feynman-badge" onclick="openFeynmanModal('${a.file}',event)">${fn ? '📝✓' : '📝'}</span>`; })() : ''}
+            ${lv ? (() => { const fn = getFeynmanNote(a.file); const hasThreads = fn?.threads?.length; return `<span class="feynman-badge" onclick="openFeynmanModal('${a.file}',event)">${fn ? '📝✓' : '📝'}</span>${hasThreads ? '<span class="thread-badge" onclick="openFeynmanModal(\''+a.file+'\',event)">💬</span>' : ''}`; })() : ''}
           </div>
 
         </div>
@@ -931,6 +935,10 @@ init();
     <div class="feynman-field">
       <label>终局问题（可选）</label>
       <textarea id="feynman-question" placeholder="这篇文章引发你思考的更大问题..."></textarea>
+    </div>
+    <div class="feynman-field">
+      <label>关联对话（每行一个链接）</label>
+      <textarea id="feynman-threads" placeholder="codex://threads/xxx&#10;https://chatgpt.com/c/xxx&#10;https://claude.ai/chat/xxx"></textarea>
     </div>
     <div class="feynman-actions">
       <button class="feynman-cancel" onclick="closeFeynmanModal()">取消</button>
