@@ -140,6 +140,37 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .daily-skip-btn{padding:.4rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);font-size:.78rem;cursor:pointer;transition:all .15s}
 .daily-skip-btn:hover{border-color:var(--accent);color:var(--text)}
 .daily-date{font-size:.72rem;color:var(--text3);margin-left:auto}
+
+.feynman-badge{font-size:.68rem;padding:.1rem .35rem;border-radius:4px;background:rgba(139,92,246,.12);color:var(--accent);margin-left:.3rem;cursor:pointer}
+.feynman-badge:hover{background:rgba(139,92,246,.25)}
+.feynman-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:1000}
+.feynman-modal.open{display:flex}
+.feynman-panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;max-width:600px;width:90%;max-height:85vh;overflow-y:auto;padding:1.5rem}
+.feynman-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.feynman-header h3{font-size:1.1rem;background:linear-gradient(135deg,#818cf8,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.feynman-close{background:none;border:none;color:var(--text3);font-size:1.5rem;cursor:pointer;line-height:1}
+.feynman-close:hover{color:var(--text)}
+.feynman-field{margin-bottom:.8rem}
+.feynman-field label{display:block;font-size:.78rem;color:var(--text2);margin-bottom:.25rem;font-weight:600}
+.feynman-field textarea{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:.6rem;color:var(--text);font-size:.85rem;resize:vertical;min-height:60px;font-family:inherit}
+.feynman-field textarea:focus{outline:none;border-color:var(--accent)}
+.feynman-field textarea::placeholder{color:var(--text3)}
+.feynman-level-row{display:flex;gap:.5rem;margin-bottom:.8rem;flex-wrap:wrap}
+.feynman-level-btn{padding:.35rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);cursor:pointer;font-size:.8rem;transition:all .15s}
+.feynman-level-btn:hover{border-color:var(--accent);color:var(--text)}
+.feynman-level-btn.active{border-color:var(--accent);background:var(--accent);color:#fff}
+.feynman-level-btn.read.active{background:rgba(6,182,212,.2);border-color:var(--cyan);color:var(--cyan)}
+.feynman-level-btn.explained.active{background:rgba(234,179,8,.2);border-color:var(--yellow);color:var(--yellow)}
+.feynman-level-btn.taught.active{background:rgba(249,115,22,.2);border-color:var(--orange);color:var(--orange)}
+.feynman-level-btn.mastered.active{background:rgba(34,197,94,.2);border-color:var(--green);color:var(--green)}
+.feynman-actions{display:flex;gap:.5rem;justify-content:flex-end;margin-top:1rem}
+.feynman-save{padding:.5rem 1.2rem;border-radius:8px;background:var(--accent);color:#fff;font-size:.85rem;font-weight:600;cursor:pointer;border:none}
+.feynman-save:hover{background:var(--accent2)}
+.feynman-cancel{padding:.5rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);font-size:.85rem;cursor:pointer}
+.feynman-cancel:hover{border-color:var(--accent);color:var(--text)}
+.feynman-summary{font-size:.72rem;color:var(--text3);margin-top:.3rem;line-height:1.4}
+.feynman-tooltip{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.5rem .7rem;font-size:.72rem;color:var(--text);width:280px;max-height:150px;overflow-y:auto;display:none;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+
 @media(max-width:640px){
   .header h1{font-size:1.3rem}
   .grid{grid-template-columns:1fr}
@@ -542,6 +573,92 @@ function renderDailyCard(){
   document.getElementById('daily-date').textContent = dateStr;
 }
 
+
+// ── Feynman Note System ───────────────────────────────────────
+const FEYNMAN_KEY = 'wiki-learn-feynman-v1';
+let feynmanData = JSON.parse(localStorage.getItem(FEYNMAN_KEY) || '{}');
+let currentFeynmanFile = null;
+
+function saveFeynmanStorage(){ localStorage.setItem(FEYNMAN_KEY, JSON.stringify(feynmanData)); }
+
+function getFeynmanNote(file){ return feynmanData[file] || null; }
+
+function openFeynmanModal(file, event){
+  if(event) event.stopPropagation();
+  currentFeynmanFile = file;
+  const article = DATA ? DATA.articles.find(a => a.file === file) : null;
+  const title = article ? article.title : file;
+  const note = getFeynmanNote(file) || {};
+  
+  document.getElementById('feynman-article-title').textContent = title;
+  document.getElementById('feynman-got').value = note.got || '';
+  document.getElementById('feynman-missed').value = note.missed || '';
+  document.getElementById('feynman-insight').value = note.insight || '';
+  document.getElementById('feynman-next').value = note.next || '';
+  document.getElementById('feynman-question').value = note.question || '';
+  
+  // Set level buttons
+  const currentLevel = getLevel(file) || 'read';
+  document.querySelectorAll('#feynman-level-row .feynman-level-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lv === currentLevel);
+  });
+  
+  document.getElementById('feynman-modal').classList.add('open');
+}
+
+function closeFeynmanModal(){
+  document.getElementById('feynman-modal').classList.remove('open');
+  currentFeynmanFile = null;
+}
+
+function saveFeynmanNote(){
+  if(!currentFeynmanFile) return;
+  
+  const level = document.querySelector('#feynman-level-row .feynman-level-btn.active')?.dataset.lv || 'read';
+  const note = {
+    level,
+    got: document.getElementById('feynman-got').value.trim(),
+    missed: document.getElementById('feynman-missed').value.trim(),
+    insight: document.getElementById('feynman-insight').value.trim(),
+    next: document.getElementById('feynman-next').value.trim(),
+    question: document.getElementById('feynman-question').value.trim(),
+    updatedAt: Date.now()
+  };
+  
+  // Update level if changed
+  if(level !== getLevel(currentFeynmanFile)){
+    setLevel(currentFeynmanFile, level);
+  }
+  
+  feynmanData[currentFeynmanFile] = note;
+  saveFeynmanStorage();
+  closeFeynmanModal();
+  render();
+}
+
+// Level button click opens feynman modal for read articles, cycles for unread
+function handleLevelClick(file, event){
+  event.stopPropagation();
+  const currentLevel = getLevel(file);
+  if(currentLevel){
+    // Already read - open feynman modal
+    openFeynmanModal(file, null);
+  } else {
+    // Not read - cycle to read
+    cycleLevel(file);
+  }
+}
+
+function feynmanSummary(file){
+  const note = getFeynmanNote(file);
+  if(!note) return '';
+  const parts = [];
+  if(note.got) parts.push('✓ ' + note.got.slice(0, 50));
+  if(note.missed) parts.push('✗ ' + note.missed.slice(0, 50));
+  if(note.insight) parts.push('💡 ' + note.insight.slice(0, 50));
+  return parts.join(' · ');
+}
+
 // ── Init ──────────────────────────────────────────────────────
 async function init(){
   try {
@@ -735,8 +852,10 @@ function render(){
             <span class="card-words" style="margin-left:.5rem">${formatWords(a.words)}字</span>
           </div>
           <div class="card-actions">
-            <button class="level-btn ${btnClass}" onclick="event.stopPropagation();cycleLevel('${a.file}')">${lv ? levelLabel(lv) : '○ 未读'}</button>
+            <button class="level-btn ${btnClass}" onclick="handleLevelClick('${a.file}',event)">${lv ? levelLabel(lv) : '○ 未读'}</button>
+            ${lv ? (() => { const fn = getFeynmanNote(a.file); return `<span class="feynman-badge" onclick="openFeynmanModal('${a.file}',event)">${fn ? '📝✓' : '📝'}</span>`; })() : ''}
           </div>
+
         </div>
       </div>`;
     });
@@ -776,5 +895,48 @@ document.getElementById('sync-pull').addEventListener('click', pullFromCloud);
 // ── Start ─────────────────────────────────────────────────────
 init();
 </script>
+
+<div class="feynman-modal" id="feynman-modal">
+  <div class="feynman-panel">
+    <div class="feynman-header">
+      <h3>🎓 费曼检验笔记</h3>
+      <button class="feynman-close" onclick="closeFeynmanModal()">×</button>
+    </div>
+    <div id="feynman-article-title" style="font-size:.9rem;color:var(--text2);margin-bottom:.8rem"></div>
+    <div class="feynman-field">
+      <label>真实水平</label>
+      <div class="feynman-level-row" id="feynman-level-row">
+        <button class="feynman-level-btn read" data-lv="read">📖 已读</button>
+        <button class="feynman-level-btn explained" data-lv="explained">✍️ 已解释 🟡</button>
+        <button class="feynman-level-btn taught" data-lv="taught">🎓 教授 🟠</button>
+        <button class="feynman-level-btn mastered" data-lv="mastered">🏆 掌握 🟢</button>
+      </div>
+    </div>
+    <div class="feynman-field">
+      <label>你拿到了什么概念？</label>
+      <textarea id="feynman-got" placeholder="例如：L1/L2/L3 的结构和分配逻辑、execute_code 的"消解"本质..."></textarea>
+    </div>
+    <div class="feynman-field">
+      <label>你没拿到什么？</label>
+      <textarea id="feynman-missed" placeholder="例如：用类比讲给外行人听的能力、把五个点串成因果链..."></textarea>
+    </div>
+    <div class="feynman-field">
+      <label>最大的认知收获</label>
+      <textarea id="feynman-insight" placeholder="一句话概括你的顿悟时刻..."></textarea>
+    </div>
+    <div class="feynman-field">
+      <label>下次要补什么？</label>
+      <textarea id="feynman-next" placeholder="例如：给每个概念找一个日常类比，练习叙事弧..."></textarea>
+    </div>
+    <div class="feynman-field">
+      <label>终局问题（可选）</label>
+      <textarea id="feynman-question" placeholder="这篇文章引发你思考的更大问题..."></textarea>
+    </div>
+    <div class="feynman-actions">
+      <button class="feynman-cancel" onclick="closeFeynmanModal()">取消</button>
+      <button class="feynman-save" onclick="saveFeynmanNote()">保存笔记</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
