@@ -145,6 +145,10 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .feynman-badge:hover{background:rgba(139,92,246,.25)}
 .feynman-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:1000}
 .feynman-modal.open{display:flex}
+.feynman-review-info{font-size:.72rem;color:var(--text3);margin-left:auto;margin-right:.5rem;text-align:right}
+.feynman-review-info .count{color:var(--accent)}
+.feynman-review-info .age{color:var(--yellow)}
+.feynman-review-info .old{color:var(--orange)}
 .feynman-panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;max-width:600px;width:90%;max-height:85vh;overflow-y:auto;padding:1.5rem}
 .feynman-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
 .feynman-header h3{font-size:1.1rem;background:linear-gradient(135deg,#818cf8,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -179,6 +183,9 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .thread-remove{color:var(--text3);cursor:pointer;font-size:.9rem;line-height:1}
 .thread-remove:hover{color:var(--red)}
 .thread-add-row{display:flex;gap:.3rem;align-items:center}
+.feynman-upgrade-hint{font-size:.75rem;color:var(--text3);margin-top:.3rem;padding:.4rem .6rem;background:rgba(245,158,11,.08);border-radius:6px;display:none}
+.feynman-upgrade-hint.show{display:block}
+.feynman-upgrade-hint .arrow{color:var(--green)}
 .thread-input{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:.3rem .5rem;color:var(--text);font-size:.78rem}
 .thread-input:focus{outline:none;border-color:var(--accent)}
 .thread-url{flex:2}
@@ -445,6 +452,16 @@ function handleRecall(file, remembered){
   saveRecall();
   renderRecallPanel();
 }
+
+function handleRecallWithNote(file, remembered){
+  handleRecall(file, remembered);
+  // Suggest updating feynman note
+  setTimeout(() => {
+    if(confirm(remembered ? '记住了！要更新费曼笔记吗？' : '忘了...要更新费曼笔记标记未掌握的部分吗？')){
+      openFeynmanModal(file, null);
+    }
+  }, 300);
+}
 function getDueRecallArticles(){
   const now = Date.now();
   const due = [];
@@ -505,8 +522,9 @@ function renderRecallPanel(){
         (overdue > 0 ? '<span class="due">超期 '+overdueH+'h</span>' : '')+
       '</div>'+
       '<div class="recall-actions">'+
-        '<button class="recall-btn remembered" onclick="event.stopPropagation();handleRecall(\''+escFile+'\',true)">✓ 记住了</button>'+
-        '<button class="recall-btn forgot" onclick="event.stopPropagation();handleRecall(\''+escFile+'\',false)">✗ 忘了</button>'+
+        '<button class="recall-btn remembered" onclick="event.stopPropagation();handleRecallWithNote(\''+escFile+'\',true)">✓ 记住了</button>'+
+        '<button class="recall-btn forgot" onclick="event.stopPropagation();handleRecallWithNote(\''+escFile+'\',false)">✗ 忘了</button>'+
+        '<button class="recall-btn" onclick="event.stopPropagation();openFeynmanModal(\''+escFile+'\',null)" style="background:var(--surface2)">📝 笔记</button>'+
       '</div>'+
     '</div>';
   });
@@ -621,11 +639,39 @@ function openFeynmanModal(file, event){
   document.getElementById('feynman-question').value = note.question || '';
   renderThreadsList(note.threads || []);
   
+  // Show review history
+  const reviewInfo = document.getElementById('feynman-review-info');
+  if(note.updatedAt){
+    const age = Date.now() - note.updatedAt;
+    const ageDays = Math.floor(age / 86400000);
+    const ageStr = ageDays === 0 ? '今天' : ageDays < 7 ? ageDays+'天前' : ageDays < 30 ? Math.floor(ageDays/7)+'周前' : Math.floor(ageDays/30)+'月前';
+    const ageClass = ageDays > 30 ? 'old' : ageDays > 7 ? 'age' : '';
+    reviewInfo.innerHTML = '<span class="count">复习 '+Math.max(1, note.reviews || 1)+' 次</span><br><span class="'+ageClass+'">上次: '+ageStr+'</span>';
+  } else {
+    reviewInfo.innerHTML = '<span style="color:var(--green)">首次记录</span>';
+  }
+  
   // Set level buttons
   const currentLevel = getLevel(file) || 'read';
   document.querySelectorAll('#feynman-level-row .feynman-level-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lv === currentLevel);
   });
+  
+  // Show upgrade hint if note is old and not mastered
+  const upgradeHint = document.getElementById('feynman-upgrade-hint');
+  if(note.updatedAt && currentLevel !== 'mastered'){
+    const ageDays = Math.floor((Date.now() - note.updatedAt) / 86400000);
+    const reviews = note.reviews || 1;
+    if(ageDays > 7 || reviews >= 3){
+      const nextLevel = currentLevel === 'read' ? '已解释' : currentLevel === 'explained' ? '教授' : '掌握';
+      upgradeHint.innerHTML = '💡 复习 '+reviews+' 次了，考虑升级到 <span class="arrow">→ '+nextLevel+'</span>';
+      upgradeHint.classList.add('show');
+    } else {
+      upgradeHint.classList.remove('show');
+    }
+  } else {
+    upgradeHint.classList.remove('show');
+  }
   
   document.getElementById('feynman-modal').classList.add('open');
 }
@@ -676,6 +722,7 @@ function saveFeynmanNote(){
   if(!currentFeynmanFile) return;
   
   const level = document.querySelector('#feynman-level-row .feynman-level-btn.active')?.dataset.lv || 'read';
+  const existing = getFeynmanNote(currentFeynmanFile) || {};
   const note = {
     level,
     got: document.getElementById('feynman-got').value.trim(),
@@ -684,7 +731,8 @@ function saveFeynmanNote(){
     next: document.getElementById('feynman-next').value.trim(),
     question: document.getElementById('feynman-question').value.trim(),
     threads: currentThreads,
-    updatedAt: Date.now()
+    updatedAt: Date.now(),
+    reviews: (existing.reviews || 0) + 1
   };
   
   // Update level if changed
@@ -969,6 +1017,7 @@ init();
   <div class="feynman-panel">
     <div class="feynman-header">
       <h3>🎓 费曼检验笔记</h3>
+      <div class="feynman-review-info" id="feynman-review-info"></div>
       <button class="feynman-close" onclick="closeFeynmanModal()">×</button>
     </div>
     <div id="feynman-article-title" style="font-size:.9rem;color:var(--text2);margin-bottom:.8rem"></div>
@@ -980,6 +1029,7 @@ init();
         <button class="feynman-level-btn taught" data-lv="taught">🎓 教授 🟠</button>
         <button class="feynman-level-btn mastered" data-lv="mastered">🏆 掌握 🟢</button>
       </div>
+      <div class="feynman-upgrade-hint" id="feynman-upgrade-hint"></div>
     </div>
     <div class="feynman-field">
       <label>你拿到了什么概念？</label>
