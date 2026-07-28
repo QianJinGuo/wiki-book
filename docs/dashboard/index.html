@@ -448,6 +448,7 @@ function handleRecall(file, remembered){
   }
   r.nextReview = Date.now() + RECALL_INTERVALS[r.step] * 86400000;
   saveRecall();
+  scheduleSync(); // Sync to D1
   renderRecallPanel();
 }
 
@@ -740,6 +741,7 @@ function saveFeynmanNote(){
   
   feynmanData[currentFeynmanFile] = note;
   saveFeynmanStorage();
+  scheduleSync(); // Sync to D1
   closeFeynmanModal();
   render();
 }
