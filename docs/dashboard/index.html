@@ -173,8 +173,6 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .feynman-cancel{padding:.5rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);font-size:.85rem;cursor:pointer}
 .feynman-cancel:hover{border-color:var(--accent);color:var(--text)}
 .feynman-summary{font-size:.72rem;color:var(--text3);margin-top:.3rem;line-height:1.4}
-.thread-badge{font-size:.68rem;padding:.1rem .25rem;border-radius:4px;background:rgba(59,130,246,.12);color:var(--blue);margin-left:.2rem;cursor:pointer}
-.thread-badge:hover{background:rgba(59,130,246,.25)}
 .threads-list{display:flex;flex-direction:column;gap:.3rem;margin-bottom:.4rem}
 .thread-item{display:flex;gap:.4rem;align-items:center;background:var(--surface2);border-radius:6px;padding:.3rem .5rem}
 .thread-item a{color:var(--blue);font-size:.78rem;text-decoration:none;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -967,9 +965,8 @@ function render(){
               const fn = getFeynmanNote(a.file); 
               const hasThreads = fn?.threads?.length;
               const fileEsc = a.file.replace(/'/g, "\\'");
-              let badges = `<span class="feynman-badge" onclick="openFeynmanModal('${fileEsc}',event)">${fn ? '📝✓' : '📝'}</span>`;
-              if(hasThreads) badges += `<span class="thread-badge" onclick="openFeynmanModal('${fileEsc}',event)">💬</span>`;
-              return badges;
+              const icon = fn ? (hasThreads ? '📝💬' : '📝✓') : '📝';
+              return `<span class="feynman-badge" onclick="openFeynmanModal('${fileEsc}',event)">${icon}</span>`;
             })() : ''}
           </div>
 
