@@ -239,7 +239,7 @@ Ollama 返回的 tool_call 不是原生 Python dict，**直接 `json.dump` 会�
 - [从零复刻 Claude Code](../ch03/077-claude-code.html) — ConardLi 的 30 模块**路线图**（roadmap）
 - 本文 — 7 模块**完整可运行实现**（minimal 250-line implementation with Ollama）
 - [Harness Engineering 框架](../ch05/112-harness-engineering.html) — Anthropic/OpenAI 抽象框架
-- [Claude Code Harness 深度理解](../ch01/425-claude-code-harness-deep-understanding.html) — 生产级深度
+- [Claude Code Harness 深度理解](../ch01/423-claude-code-harness-deep-understanding.html) — 生产级深度
 
 两者互补：ConardLi 给"我要做哪些 30 件事"的路线，本文给"这 7 件事怎么做、能跑、可改"的具体代码。
 
@@ -249,7 +249,7 @@ Ollama 返回的 tool_call 不是原生 Python dict，**直接 `json.dump` 会�
 
 ### 1. while 循环作为 Agent 内核的架构意义
 
-250 行的 while 循环不是一个教学简化，而是一个**执行上下文的声明**——它定义了"在哪里运行 AI 判断"的物理边界。所有外部代码（工具、Skill、会话）都是这个循环的依赖注入。这个模式在 [Claude Code Harness Deep Understanding](../ch01/425-claude-code-harness-deep-understanding.html) 中被验证为生产级 harness 的核心：循环体越小、越专注，工具层和状态层的接入点就越清晰。理解"循环即内核"，比理解"LLM 是大脑"更接近实际架构真相。
+250 行的 while 循环不是一个教学简化，而是一个**执行上下文的声明**——它定义了"在哪里运行 AI 判断"的物理边界。所有外部代码（工具、Skill、会话）都是这个循环的依赖注入。这个模式在 [Claude Code Harness Deep Understanding](../ch01/423-claude-code-harness-deep-understanding.html) 中被验证为生产级 harness 的核心：循环体越小、越专注，工具层和状态层的接入点就越清晰。理解"循环即内核"，比理解"LLM 是大脑"更接近实际架构真相。
 
 ### 2. 工具描述作为 LLM 决策的唯一契约
 
@@ -261,11 +261,11 @@ Ollama 返回的 tool_call 不是原生 Python dict，**直接 `json.dump` 会�
 
 ### 4. active_skill_content 是状态压缩下人格保持的最小解
 
-全局变量 `active_skill_content` 不是优雅的设计，但它解决了压缩场景下的核心问题：如何在上下文重写后保持 Agent 的人格连续性。这个模式的本质是：**状态重构时，被保留的不仅是历史消息，还有当前执行上下文的元信息**。在更复杂的生产系统中，这对应 [Claude Code Harness Deep Understanding](../ch01/425-claude-code-harness-deep-understanding.html) 描述的"Compaction vs Reset"决策——本文选择的是 Compaction 路径，并通过重新注入 skill persona 来防止"失忆"。
+全局变量 `active_skill_content` 不是优雅的设计，但它解决了压缩场景下的核心问题：如何在上下文重写后保持 Agent 的人格连续性。这个模式的本质是：**状态重构时，被保留的不仅是历史消息，还有当前执行上下文的元信息**。在更复杂的生产系统中，这对应 [Claude Code Harness Deep Understanding](../ch01/423-claude-code-harness-deep-understanding.html) 描述的"Compaction vs Reset"决策——本文选择的是 Compaction 路径，并通过重新注入 skill persona 来防止"失忆"。
 
 ### 5. 后台循环的两个决策揭示了真实系统的基础需求
 
-1 秒分片 sleep 和独立消息列表这两个设计决策，揭示了所有生产级 Agent 系统都必须面对的两个基础问题：**可中断性**（stop 信号能否快速响应）和**状态隔离**（后台任务是否污染主会话上下文）。这两个问题在 250 行版本通过简单手法解决，但它们在 [Claude Code Harness Deep Understanding](../ch01/425-claude-code-harness-deep-understanding.html) 中对应的是细粒度的权限系统、独立 Session 管理和生命周期钩子。250 行版本和生产版本解决的是同一个问题的不同复杂度层级。
+1 秒分片 sleep 和独立消息列表这两个设计决策，揭示了所有生产级 Agent 系统都必须面对的两个基础问题：**可中断性**（stop 信号能否快速响应）和**状态隔离**（后台任务是否污染主会话上下文）。这两个问题在 250 行版本通过简单手法解决，但它们在 [Claude Code Harness Deep Understanding](../ch01/423-claude-code-harness-deep-understanding.html) 中对应的是细粒度的权限系统、独立 Session 管理和生命周期钩子。250 行版本和生产版本解决的是同一个问题的不同复杂度层级。
 
 ## 实践启示
 

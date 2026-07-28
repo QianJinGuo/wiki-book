@@ -57,7 +57,7 @@ Anthropic 的三个修复 PR 合计削减约 85% 写入。但从年化 640TB 降
 ## 相关实体
 
 - `codex-log-bug-ssd-wear`：本文主角，Codex 日志 bug 的原始分析
-- [Codex HTTP/2 HPACK Bomb](../ch01/519-codex.html) — 另一个 Codex 工程问题
+- [Codex HTTP/2 HPACK Bomb](../ch01/518-codex.html) — 另一个 Codex 工程问题
 - [Claude Code vs Codex 架构对比](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一年吃掉一块固态硬盘codex日志bug被骂劣质软件.md)

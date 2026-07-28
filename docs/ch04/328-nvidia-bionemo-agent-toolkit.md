@@ -32,7 +32,7 @@ BioNeMo Agent Toolkit 的推出标志着**科学计算领域正在经历 Agent �
 
 BioNeMo Agent Toolkit 的设计体现了 NVIDIA 一贯的平台战略：提供底层基础设施（BioNeMo、NIM、Parabricks），由生态伙伴（达索系统、Databricks、礼来、Schrödinger 等）在上层构建垂直应用。同时，与 Anthropic 和 OpenAI 的集成意味着 NVIDIA 不将自己定位为模型公司，而是**跨模型的科学 Agent 基础设施提供方**。
 
-这一策略与 [后端 AI 友好标准化路径](../ch05/023-ai-friendly.html) 中讨论的"平台化基础设施"思路一致——通过定义标准化的 Agent 技能接口，让不同模型（Claude、GPT、Nemotron 等）都能接入同一套科学工具集。
+这一策略与 [后端 AI 友好标准化路径](../ch05/022-ai-friendly.html) 中讨论的"平台化基础设施"思路一致——通过定义标准化的 Agent 技能接口，让不同模型（Claude、GPT、Nemotron 等）都能接入同一套科学工具集。
 
 ### Agent 技能（Skills）的标准化工件
 
@@ -84,7 +84,7 @@ NVIDIA 的核心竞争力在于其**底层硬件+软件栈+生态伙伴**的垂�
 - [Harness Engineering 实践](../ch05/112-harness-engineering.html) — 生产级 Agent 的可靠性设计原则
 - [Agent 评测方法论与体系设计](../ch03/035-agent.html) — Agent 自主性分级与评测标准
 - [NVIDIA BlueField DPU 助力 AI 云](../ch05/092-ai.html) — NVIDIA 计算生态的另一重要产品线
-- [后端 AI 友好标准化路径](../ch05/023-ai-friendly.html) — 平台化基础设施的设计思路
+- [后端 AI 友好标准化路径](../ch05/022-ai-friendly.html) — 平台化基础设施的设计思路
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-bionemo-agent-toolkit-加速科学发现的智能体工具.md)
 

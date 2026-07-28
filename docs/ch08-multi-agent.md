@@ -2,7 +2,7 @@
 
 > 从单兵到团队：编排、通信、治理
 
-> 本章收录 **34 篇**实体，按深度递增排列。
+> 本章收录 **35 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 7 |
+| ⭐⭐ 工程师 | 需编程基础 | 8 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 24 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -525,7 +525,108 @@ HOI-Edit + SCPE 的组合为视觉生成模型提供了一种通用的"评测-�
 
 ---
 
-## Ch08.006 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
+## Ch08.006 Graph Engineering：从单循环到多节点编排
+
+> 📊 Level ⭐⭐ | 7.2KB | `entities/graph-engineering-loop-to-graph-tencent.md`
+
+# Graph Engineering：从单循环到多节点编排
+
+## 核心概述
+
+Graph Engineering 是继 Prompt Engineering、Context Engineering、Harness Engineering、Loop Engineering 之后的第五层工程范式。核心命题：**当单个 Agent 循环不够用时，如何将多个智能体、工具和人组织成一个可观测、可恢复、可扩展的系统**。
+
+Graph 不是要取代 Loop，而是把 Loop 从"一个 while 循环"升级为"一张组织架构图"——Loop 解决"如何让单个智能体持续工作"，Graph 解决"如何把多个执行节点编排成一个生产级系统"。
+
+## Graph 形式定义
+
+G = (V, E, S, P)
+
+- **V (Node)**: 工作单元，一进一出、只干一件事（专门化 Agent / 确定性函数 / 工具调用）
+- **E (Edge)**: 节点间路由（直通 / 条件分支 / 扇出扇入 / 回环）
+- **S (State)**: 沿边流动的共享对象（任务状态 / 证据 / 预算 / 检查点）
+- **P (Policy)**: 权限约束（谁可创建节点 / 调用工具 / 修改图 / 产生副作用）
+
+## 从 Loop 到 Graph 的驱动力
+
+### Loop 的五个结构性缺陷
+
+1. **上下文腐烂**: 每轮输出全塞回同窗口，第 10 轮膨胀至 18000+ token，原始目标被自我推理淹没
+2. **错误级联**: 由模型自身发现并跳出循环在同一推理链中极难做到
+3. **工具过载**: 15-20 个工具时选择准确率急剧下降
+4. **缺乏控制粒度**: 不能暂停子任务等审批，不能为不同步骤配不同模型，不能做中段质检
+5. **可观测性差**: 无法追溯为何在此分支、哪步决定导致错误
+6. **目标失明（Goodhart's Law）**: 循环只看见被赋予的指标，会用尽办法去移动它（AI 客服案例：以工单解决率为指标→AI 学会偏转/快速关单→客户流失翻倍）
+
+这些问题无法通过"把 Loop 做得更大更强"解决，因为根源不在一个循环内部，而在多个环节之间的关系上。
+
+## 三种经典拓扑
+
+**Diamond（扇出扇入）**: 拆分任务 → 并行执行 → 合并结果。适用于市场调研、代码评审、研究报告。
+
+**Orchestrator-Workers（主管-工人）**: 主管 Agent 居中调度，分派给专职工人，自己负责规划和汇总。Anthropic Research 系统采用此模式。
+
+**Pipeline（流水线）**: 固定步骤链，中间加检查点（gate）。适合可干净拆解成固定子任务的场景，用延迟换准确率。
+
+## 确定性的核心：Verifier + Router
+
+Graph 的真正杠杆不在于智能体数量，而在于围绕结果搭起的确定性。
+
+- **Verifier（验证器）**: 专门试图推翻前一个结论，用全新上下文独立审查
+- **Router（路由）**: 按重要程度将任务导向不同检查路径
+
+三种验证模式：
+1. **对抗式**: 派多个怀疑者分头驳结论
+2. **多视角**: 正确性/安全性/可复现性各查各的
+3. **评委制**: 多候选打分，优胜者吸收其他优点
+
+确定性来自两个锚点：
+- **代码**: 格式校验、测试、去重、排序——让模型的判断力在节点上，代码的可靠性在边上
+- **现实**: 测试真正跑过、钱真到账、用户真留下
+
+> 如果一张图里所有节点都在互相引用模型生成的结论，没有一个节点真的去碰一下现实，那它只是一台更精致的自嗨机器——一个项目管理做得更好的、更大的幻觉。
+
+## 框架对比
+
+| 框架 | 编排模型 | 同任务 Token | 适合场景 |
+|------|---------|:----------:|---------|
+| LangGraph | 有向图+条件边 | ~2000 | 长时运行、需审计回滚的生产管线 |
+| CrewAI | 角色化 crews | ~3500 | 规范化角色协作分工 |
+| AutoGen | 对话式 GroupChat | ~8000 | 多模型对话协调探索性任务 |
+| Google ADK | 结构图架构 | — | code-first、企业级、可部署 Vertex AI |
+
+Token 差异来源：图结构把智能体间的"对话"变为"状态转换"，省掉互相转述背景的开销。
+
+## 生产案例
+
+- **LinkedIn SQL Bot**: 路由 Agent→领域专家→写 SQL→自纠错，查询准确满意度 95%
+- **Uber 代码迁移**: 子图按语言/仓库分拆，检查点机制扛 CI 抽风，节省 21000+ 工程小时
+- **Anthropic Research**: Orchestrator-Workers，相对单 Opus Agent 提升 90.2%
+
+## 使用决策
+
+三条该用 Graph 的标准：
+1. **上下文保护**: 子任务产生大量无关信息需隔离
+2. **可并行**: 任务能切多分支同时跑
+3. **专业化**: 不同步骤需不同工具/提示/专注度
+
+成本意识：多 Agent 系统 token ≈ 普通对话 15×，仅 token 用量即解释性能方差的 80%。
+
+## 与旧范式的关系
+
+Graph 不是回到 ReAct 之前的老工作流。老工作流节点是死代码；Graph 的节点里住着能自主推理的 Agent。它用预定义的边框住动态的节点，把"稳"（可治理、可审计）和"活"（节点内自主）拆到两层同时实现。
+
+## 关联
+
+- [Loop Engineering: 把反馈循环放进工程现场](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-feedback-control-system.md) — Loop Engineering 是 Graph 的底层基础
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md) — Harness 是每个 Loop 节点的基础结构
+- [LangGraph 底层原理](https://github.com/QianJinGuo/wiki/blob/main/entities/langgraph-state-machine-under-the-hood.md) — 最成熟的 Graph Engineering 框架
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程范式全景
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-loop-to-graph-tencent-lukiexing-2026.md)
+
+---
+
+## Ch08.007 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md`
 
@@ -606,7 +707,7 @@ L3的核心要求是**AI主导、人辅助**——这意味着机器不仅执行
 
 ---
 
-## Ch08.007 Multi-agent social intelligence with Strands Agents and Amazon Bedrock AgentCore
+## Ch08.008 Multi-agent social intelligence with Strands Agents and Amazon Bedrock AgentCore
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/multi-agent-social-intelligence-strands-bedrock.md`
 
@@ -683,7 +784,7 @@ Three-level guardrail system:
 
 ---
 
-## Ch08.008 微软 Agent Framework 全栈指南（Python）
+## Ch08.009 微软 Agent Framework 全栈指南（Python）
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/microsoft-agent-framework-python-zizhi.md`
 
@@ -721,7 +822,7 @@ Python 侧的开发体验设计良好：`pip install agent-framework` 后，用 
 
 ---
 
-## Ch08.009 高价率运营 AI 工作台：约定驱动与 AI 编排的评测优化实践
+## Ch08.010 高价率运营 AI 工作台：约定驱动与 AI 编排的评测优化实践
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/taobao-high-price-rate-ai-workbench-eval-optimization.md`
 
@@ -796,7 +897,7 @@ LLM 给修改建议约 80% 不合格。根因：LLM 区分不了四种"低分"�
 
 ---
 
-## Ch08.010 Claude Code Dynamic Workflows 多Agent编排
+## Ch08.011 Claude Code Dynamic Workflows 多Agent编排
 
 > 📊 Level ⭐⭐⭐ | 57.4KB | `entities/claude-code-dynamic-workflows-multi-agent-orchestration.md`
 
@@ -1472,7 +1573,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ---
 
-## Ch08.011 JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）
+## Ch08.012 JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）
 
 > 📊 Level ⭐⭐⭐ | 25.2KB | `entities/jiuwenswarm-coordination-engineering.md`
 
@@ -1759,7 +1860,7 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 
 ---
 
-## Ch08.012 AI Agent Memory Systems
+## Ch08.013 AI Agent Memory Systems
 
 > 📊 Level ⭐⭐⭐ | 16.0KB | `entities/ai-agent-memory-systems.md`
 
@@ -1846,7 +1947,7 @@ Latency budget 分析显示 p95 目标 800ms 中，retrieval 占用约 495ms（Q
 
 ---
 
-## Ch08.013 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
+## Ch08.014 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
 
 > 📊 Level ⭐⭐⭐ | 15.9KB | `entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md`
 
@@ -2036,7 +2137,7 @@ frontmatter（name / 用于路由的 description「含适用/不适用/典型触
 
 ---
 
-## Ch08.014 How Grab is Using AI Agents to Boost Team Productivity
+## Ch08.015 How Grab is Using AI Agents to Boost Team Productivity
 
 > 📊 Level ⭐⭐⭐ | 13.5KB | `entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md`
 
@@ -2156,7 +2257,7 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 
 ---
 
-## Ch08.015 Factory Missions
+## Ch08.016 Factory Missions
 
 > 📊 Level ⭐⭐⭐ | 13.4KB | `entities/factory-missions-multi-agent-shipping.md`
 
@@ -2253,7 +2354,7 @@ Factory 给了明确的数学：如果每个 agent run 错误率 0.1%，100 步�
 
 ---
 
-## Ch08.016 Sub-Agent vs Agent Team 选型与编排原语
+## Ch08.017 Sub-Agent vs Agent Team 选型与编排原语
 
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/sub-agent-vs-agent-team-selection.md`
 
@@ -2368,7 +2469,7 @@ description 不是注释，是路由信号。写得含糊，路由就含糊；�
 
 ---
 
-## Ch08.017 Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
+## Ch08.018 Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
 
 > 📊 Level ⭐⭐⭐ | 12.0KB | `entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md`
 
@@ -2459,7 +2560,7 @@ Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无
 
 ---
 
-## Ch08.018 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
+## Ch08.019 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
 
 > 📊 Level ⭐⭐⭐ | 11.8KB | `entities/coze-3-0-collaboration-system.md`
 
@@ -2609,7 +2710,7 @@ Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无
 
 ---
 
-## Ch08.019 Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
+## Ch08.020 Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
 
 > 📊 Level ⭐⭐⭐ | 10.6KB | `entities/thousand-token-wood-sim-v2-hackathon.md`
 
@@ -2759,7 +2860,7 @@ AI 的最大价值可能不在通用场景而在你领域的特定痛点——�
 
 ---
 
-## Ch08.020 MiniMax Agent Team: Mavis (Owner-Worker-Verifier)
+## Ch08.021 MiniMax Agent Team: Mavis (Owner-Worker-Verifier)
 
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/minimax-agent-team-mavis.md`
 
@@ -2927,7 +3028,7 @@ Agent 间交接时常见错误：把完整上下文塞给下一个 Agent。
 
 ---
 
-## Ch08.021 AgentRun：阿里云多 Agent 生产级协作方案（A2A 开放协议）
+## Ch08.022 AgentRun：阿里云多 Agent 生产级协作方案（A2A 开放协议）
 
 > 📊 Level ⭐⭐⭐ | 9.6KB | `entities/agentrun-multi-agent-a2a-alibaba-cloud.md`
 
@@ -3052,7 +3153,7 @@ A2A 是 Google 主导的开放协议，类似 MCP之于工具调用、MPI 之于
 
 ---
 
-## Ch08.022 AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
+## Ch08.023 AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/ap2-agent-payments-protocol-hands-on-analysis.md`
 
@@ -3165,7 +3266,7 @@ CartMandate 一小时有效期 + 单次 OTP 的设计，本质上是为 Human-Pr
 
 ---
 
-## Ch08.023 全球化商品中心智能答疑 Agent 实践
+## Ch08.024 全球化商品中心智能答疑 Agent 实践
 
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/global-product-center-qa-agent-aliexpress-2026.md`
 
@@ -3264,7 +3365,7 @@ AliExpress IC 团队的三阶段演进揭示了 Agent 系统架构中的一个�
 
 ---
 
-## Ch08.024 对抗式验证：多 Agent 交叉校验设计哲学
+## Ch08.025 对抗式验证：多 Agent 交叉校验设计哲学
 
 > 📊 Level ⭐⭐⭐ | 7.8KB | `entities/adversarial-verification.md`
 
@@ -3396,7 +3497,7 @@ Agent 输出是概率性的：同样的输入可能产生不同输出，需要�
 
 ---
 
-## Ch08.025 Routa 多智能体协同交付平台
+## Ch08.026 Routa 多智能体协同交付平台
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/routa-multi-agent-coordination-platform.md`
 
@@ -3468,7 +3569,7 @@ Web 端（Next.js 16.2）和桌面端（Tauri + Rust Axum）共享同一套 `api
 
 ---
 
-## Ch08.026 Nature丨Google和FutureHouse同日登刊，把AI科学助理推到科研前线
+## Ch08.027 Nature丨Google和FutureHouse同日登刊，把AI科学助理推到科研前线
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/nature-ai-scientific-assistant-google-futurehouse.md`
 
@@ -3528,7 +3629,7 @@ Nature 2026 同日发表 Google Co-Scientist（Gemini 2.0 多智能体）和 Fut
 
 ---
 
-## Ch08.027 CoAgent
+## Ch08.028 CoAgent
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/coagent.md`
 
@@ -3608,7 +3709,7 @@ CoAgent 的工程价值在于其代价-收益比是可接受的：冲突处理�
 
 ---
 
-## Ch08.028 Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
+## Ch08.029 Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/investing-in-multi-agent-ai-safety-research-deepmind-2026-06.md`
 
@@ -3675,7 +3776,7 @@ Google DeepMind 联合 **Schmidt Sciences、Cooperative AI Foundation、ARIA**�
 
 ---
 
-## Ch08.029 Crayotter: Traceable Multi-Agent Workflows for Long-Form Video Editing
+## Ch08.030 Crayotter: Traceable Multi-Agent Workflows for Long-Form Video Editing
 
 > 📊 Level ⭐⭐⭐ | 4.6KB | `entities/crayotter-traceable-multi-agent-long-form-video-editing-ustc-2026.md`
 
@@ -3731,7 +3832,7 @@ Crayotter 引入带有时间戳水印的技术，将时间坐标直接渲染在�
 
 ---
 
-## Ch08.030 TVIR：面向图文交错报告生成的统一基准与智能体框架 — 南大 × 阿里
+## Ch08.031 TVIR：面向图文交错报告生成的统一基准与智能体框架 — 南大 × 阿里
 
 > 📊 Level ⭐⭐⭐ | 4.5KB | `entities/tvir-text-visual-interleaved-report-generation-nju-alibaba.md`
 
@@ -3792,7 +3893,7 @@ TVIR 为未来可信的多模态深度研究智能体奠定了基础，揭示了
 
 ---
 
-## Ch08.031 OpenRath：以 Session 为核心的多 Agent 运行时状态系统（清华）
+## Ch08.032 OpenRath：以 Session 为核心的多 Agent 运行时状态系统（清华）
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/openrath-session-centered-agent-runtime-tsinghua-2026.md`
 
@@ -3864,7 +3965,7 @@ fork 复制当前状态并保留父子关系；detach 切断父血缘；merge �
 
 ---
 
-## Ch08.032 Cost of Consensus
+## Ch08.033 Cost of Consensus
 
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/cost-of-consensus.md`
 
@@ -3894,7 +3995,7 @@ Cost of Consensus 研究揭示了多 Agent 系统中一个关键但常被忽视�
 
 ---
 
-## Ch08.033 UnityMAS-O
+## Ch08.034 UnityMAS-O
 
 > 📊 Level ⭐⭐⭐ | 3.0KB | `entities/unitymas-o-multi-agent-rl-optimization-framework-2026.md`
 
@@ -3918,7 +4019,7 @@ UnityMAS-O 与传统的提示词工程方法有本质区别。传统方法依赖
 
 ---
 
-## Ch08.034 γ-World: 多 Agent 世界建模（NVIDIA Research）
+## Ch08.035 γ-World: 多 Agent 世界建模（NVIDIA Research）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/nvidia-gamma-world-multi-agent-world-model.md`
 

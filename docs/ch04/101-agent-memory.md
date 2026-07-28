@@ -149,7 +149,7 @@ RAG 式的语义相似召回假设"表面语义相关 = 实质相关"。但真�
 **意图浮现的多模型耦合机制。** 四个模型（用户、任务、世界、自我）长期耦合后浮现意图——这个假设目前没有实验验证。需要设计实验来测试：单独优化某个模型的记忆质量，对整体意图理解准确率的边际贡献是多少？哪个模型的贡献最大？
 ## 相关实体
 - [How Ai Agent Memory Works](ch04/158-how-ai-agent-memory-works.html)
-- [Memory Agent Systems Cobanov](ch04/595-memory-agent-systems-cobanov.html)
+- [Memory Agent Systems Cobanov](ch04/599-memory-agent-systems-cobanov.html)
 - [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
 - [Memory Vs Rag Agent Memory Systematic Framework](ch04/101-agent-memory.html)
 - [Agent Memory Architecture Past Influence Future Ruofei](ch04/101-agent-memory.html)

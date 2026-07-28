@@ -243,8 +243,8 @@ Goal-Driven 的五个前提（目标清晰、边界清晰、状态可见、过�
 3. **脚手架 > 模型的结论是情境依赖的**：当模型能力成为瓶颈时（例如需要更复杂的推理），模型升级的优先级会上升。这不是一个绝对原则，而是资源分配的经验法则。
 
 ## Related entities
-- [十年老技术开发的 AI Agent 探索之路](ch04/184-ai-agent.html)
-- [十年老技术开发的 AI Agent 探索之路](ch04/184-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/184-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路
+- [十年老技术开发的 AI Agent 探索之路](ch04/505-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/505-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/505-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路
 
 ## 实践启示
 ### 针对 Agent 开发者的具体建议

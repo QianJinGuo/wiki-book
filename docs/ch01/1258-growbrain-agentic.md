@@ -49,7 +49,7 @@ PES 架构的核心创新在于把「规划」和「执行」在时序上解耦�
 2. **将 Memory 从 Agent 级拆到请求级**：MemoryManager 实现三级隔离——请求级（用完即释放）、会话级（跨请求保持上下文）、共享级（跨 Agent 共享知识）
 3. **将 Skills/Tools 从构造时拆到运行时**：通过全局注册中心实现动态加载和热更新，新增能力无需重建 Agent 实例
 
-这三个设计原则构成了一个通用范式：**Agent 架构的「无状态化」是生产级部署的前提**。这与 [Agent Harness 上下文管理](../ch05/058-agent-harness.html) 中的工作集隔离设计不谋而合。
+这三个设计原则构成了一个通用范式：**Agent 架构的「无状态化」是生产级部署的前提**。这与 [Agent Harness 上下文管理](../ch05/057-agent-harness.html) 中的工作集隔离设计不谋而合。
 
 ### 子 Agent 矩阵的协同设计
 
@@ -76,12 +76,12 @@ SystemPipeline 和 ChatPipeline 共享同一套 Agent 矩阵和底层能力底�
 ## 相关实体
 
 - [Agent 配置组合](../ch04/273-skill.html)
-- [Agent Harness 上下文管理](../ch05/058-agent-harness.html)
+- [Agent Harness 上下文管理](../ch05/057-agent-harness.html)
 - [Marvis 多智能体桌面助手](../ch03/088-marvis.html)
-- [AgentCore Trip Allocation](../ch04/679-agentcore-harness.html)
+- [AgentCore Trip Allocation](../ch04/683-agentcore-harness.html)
 - [Agent 评测方法论](../ch03/035-agent.html)
 - [Harness Engineering Survey 2026](../ch05/112-harness-engineering.html)
-- [Alibaba Agentic Cloud](../ch04/348-agentic-cloud.html)
+- [Alibaba Agentic Cloud](../ch04/349-agentic-cloud.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/淘宝内容生态-growbrain-淘宝agentic内容成长引擎.md)
 

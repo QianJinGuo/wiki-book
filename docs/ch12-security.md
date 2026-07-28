@@ -2,7 +2,7 @@
 
 > Agent 权限越大，安全责任越重：凭据、审计、合规
 
-> 本章收录 **125 篇**实体，按深度递增排列。
+> 本章收录 **126 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 9 |
-| ⭐⭐ 工程师 | 需编程基础 | 114 |
+| ⭐⭐ 工程师 | 需编程基础 | 115 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
@@ -155,8 +155,9 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 - [118. 中国用户安全高性能访问海外 Bedrock](ch12/118-bedrock)
 - [119. Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare](ch12/119-drupal-to-release-urgent-core-security-updates-on-may-20-si)
 - [120. Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram](ch12/120-cyberscammers-are-bypassing-banks-security-with-illicit-too)
-- [121. ShinyHunters hack 7-Eleven: franchisee data and Salesforce records exposed](ch12/121-shinyhunters-hack-7-eleven-franchisee-data-and-salesforce-r)
-- [122. Hackers accessed BWH Hotels reservation system for months](ch12/122-hackers-accessed-bwh-hotels-reservation-system-for-months)
-- [123. Temporarily disabling new user registrations](ch12/123-temporarily-disabling-new-user-registrations)
-- [124. U of T researchers demonstrate AI worm: self-spreading malware using open-weight models](ch12/124-u-of-t-researchers-demonstrate-ai-worm-self-spreading-malwa)
-- [125. Japan’s PM orders cybersecurity review to defend against Anthropic Mythos](ch12/125-japan-s-pm-orders-cybersecurity-review-to-defend-against-ant)
+- [121. DeepSecBench：评估 AI 模型在网络安全漏洞发现中的性能](ch12/121-deepsecbench-ai)
+- [122. ShinyHunters hack 7-Eleven: franchisee data and Salesforce records exposed](ch12/122-shinyhunters-hack-7-eleven-franchisee-data-and-salesforce-r)
+- [123. Hackers accessed BWH Hotels reservation system for months](ch12/123-hackers-accessed-bwh-hotels-reservation-system-for-months)
+- [124. Temporarily disabling new user registrations](ch12/124-temporarily-disabling-new-user-registrations)
+- [125. U of T researchers demonstrate AI worm: self-spreading malware using open-weight models](ch12/125-u-of-t-researchers-demonstrate-ai-worm-self-spreading-malwa)
+- [126. Japan’s PM orders cybersecurity review to defend against Anthropic Mythos](ch12/126-japan-s-pm-orders-cybersecurity-review-to-defend-against-ant)

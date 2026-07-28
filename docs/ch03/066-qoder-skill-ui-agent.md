@@ -147,11 +147,11 @@ Skill UI 的案例中，设计方向面板经过了三轮增强（初版→加�
 
 ## 相关实体
 
-- [qoder 团队知识引擎](../ch01/773-qoder.html)
+- [qoder 团队知识引擎](../ch01/774-qoder.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skill-ui-agent-human-collaboration.md)
 
 ## 相关主题
-- [Claude Design Skill](../ch01/1143-claude-design-skill.html) — 设计领域 Skill 的实战案例（420行系统提示词 → Skill）
+- [Claude Design Skill](../ch01/1144-claude-design-skill.html) — 设计领域 Skill 的实战案例（420行系统提示词 → Skill）
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md) — Hermes Agent 的 Skill 格式
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skill-ui-agent-human-collaboration.md)
 

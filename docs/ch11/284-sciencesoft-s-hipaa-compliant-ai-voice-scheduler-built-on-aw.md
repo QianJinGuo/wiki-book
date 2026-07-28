@@ -2,7 +2,7 @@
 
 ## Ch11.284 ScienceSoft's HIPAA-Compliant AI Voice Scheduler Built on AWS
 
-> 📊 Level ⭐⭐ | 3.1KB | `entities/sciencesofts-hipaa-compliant-ai-voice-scheduler-built-on-aws.md`
+> 📊 Level ⭐⭐ | 3.2KB | `entities/sciencesofts-hipaa-compliant-ai-voice-scheduler-built-on-aws.md`
 
 # ScienceSoft's HIPAA-Compliant AI Voice Scheduler Built on AWS
 
@@ -23,6 +23,10 @@ In this post, you will learn how [ScienceSoft](<https://www.scnsoft.com/case-stu
 Healthcare scheduling relies on manual, phone-based workflows that are slow, hard to scale, and expensive to maintain. These inefficiencies directly affect patient access and staff productivity. Solving them with AI is promising, but healthcare organizations must als
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sciencesofts-hipaa-compliant-ai-voice-scheduler-built-on-aws.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -168,7 +168,7 @@ Anthropic 的使命是"为全人类带来安全 AGI"。这个使命不仅是宣�
 - [Cat Wu Claude Code Pm](../ch03/077-claude-code.html)
 - [Claude Code Large Codebase Enterprise Deployment](../ch03/077-claude-code.html)
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/077-claude-code.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/600-anthropic-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/287-anthropic-claude-code.html)
 - [Claude Code Openclaw Memory Comparison](../ch03/077-claude-code.html)
 
 ---

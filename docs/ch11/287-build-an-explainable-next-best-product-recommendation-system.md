@@ -2,7 +2,7 @@
 
 ## Ch11.287 Build an explainable next-best-product recommendation system for banking on AWS
 
-> 📊 Level ⭐⭐ | 3.0KB | `entities/build-an-explainable-nbp-recommendation-system-on-aws.md`
+> 📊 Level ⭐⭐ | 3.1KB | `entities/build-an-explainable-nbp-recommendation-system-on-aws.md`
 
 # Build an explainable next-best-product recommendation system for banking on AWS
 
@@ -50,6 +50,10 @@
 - **为什么用 GRU**：相比 LSTM 参数更少，在序列推荐场景下表现相当
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-an-explainable-next-best-product-recommendation-system-for-banking-on-aws.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

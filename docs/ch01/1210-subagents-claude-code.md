@@ -354,7 +354,7 @@ description字段的本质是**路由契约**而非说明文档。它告诉Claud
 - 观察子代理返回的结论是否主Agent能直接使用
 - 模式稳定后再考虑沉淀为团队规范
 ## 相关实体
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/058-agent-harness.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/057-agent-harness.html)
 - [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/077-claude-code.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
 - [Claude Code Source Architecture](../ch03/077-claude-code.html)

@@ -117,8 +117,8 @@ IAM Toolkit（CLI）将 Agreement Manager 配置版本化、自动化，这意�
 - **Agreement Manager API 是 GA**：但与旧 Navigator API 的迁移路径需提前规划
 
 ## 相关实体
-- [Ai Native Startup Cyberfund Guide](../ch05/019-ai-native.html)
-- [How To Build Audio Transcription Agent](ch04/477-how-to-build-audio-transcription-agent.html)
+- [Ai Native Startup Cyberfund Guide](../ch05/018-ai-native.html)
+- [How To Build Audio Transcription Agent](ch04/479-how-to-build-audio-transcription-agent.html)
 - [我用 Skillmd 做了一个简历生成器](ch04/273-skill.html)
 - [Servicenow Ui Is Dead Agent](../ch03/035-agent.html)
 - [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/035-agent.html)

@@ -127,7 +127,7 @@ v1.1 论文中提到的"修改预训练策略以补偿 token 合并带来的性�
 ## 相关实体
 - [Olmoearth V1 1 A More Efficient Family Of Earth Observation Models](ch01/1236-olmoearth-v1-1-a-more-efficient-family-of-earth-observation.html)
 - [Kamacoder Agent Context Drift Tool Hallucination](../ch03/035-agent.html)
-- [Olmo Hybrid Gdn Wave 2026](ch01/906-20.html)
+- [Olmo Hybrid Gdn Wave 2026](ch01/907-20.html)
 - [How Llms Actually Work 0Xkato](ch01/1267-how-llms-actually-work-0xkato-transformer-walkthrough.html)
 - [Agent Reliability Context Drift Tool Hallucination](../ch03/035-agent.html)
 

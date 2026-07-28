@@ -115,7 +115,7 @@ Claude Code 命令系统化指南——5 分类（会话/模型/权限/扩展/�
 - [Cat Wu: Claude Code PM 工作流](ch03/077-claude-code.html)
 
 ## 相关实体
-- [obsidian claude code integration guide](../ch09/137-obsidian-claude-code-integration-guide.html)
+- [obsidian claude code integration guide](../ch09/138-obsidian-claude-code-integration-guide.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/077-claude-code.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch03/076-obsidian-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/088-claude-code-1.html)

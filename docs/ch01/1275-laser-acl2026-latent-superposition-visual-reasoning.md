@@ -50,7 +50,7 @@ Laser 用"概率叠加"在隐空间实现多模态推理，Token 消耗降低 97
 ## 延伸概念
 - [DeepSeek Visual Primitives](../ch09/179-deepseek-visual-primitives.html) — 视觉原语推理
 - [SensNova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md) — 商汤多模态模型
-- [NVIDIA 多模态 RAG](ch01/227-rag.html) — 多模态知识系统
+- [NVIDIA 多模态 RAG](ch01/1029-rag.html) — 多模态知识系统
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/laser-acl2026-latent-superposition-visual-reasoning.md)
 
 ## 深度分析
@@ -72,7 +72,7 @@ updated: 2026-06-30
 - [Pytorch In Kernel Recsys Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch-in-kernel-recsys-optimization.md)
 
 - [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md)
-- [Unlocking Ai Flexibility In Europe A Guide To Cross Region I](../ch09/163-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region.html)
+- [Unlocking Ai Flexibility In Europe A Guide To Cross Region I](../ch09/164-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region.html)
 
 ---
 

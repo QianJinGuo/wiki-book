@@ -49,9 +49,9 @@ Agent 的行为比传统代码更不透明。我们用确定性换取了自主�
 
 ## 关联
 
-- [Agent vs Workflow 控制权连续谱](ch04/666-agent-vs-workflow.html) — Agent 工程化
-- [Loop Engineering](../ch05/005-loop-engineering.html) — Agent 循环决策与 Harness 工程的交叉
-- [Spec Kit/OpenSpec/Superpowers 融合 Harness](../ch05/050-openspec.html) — Harness 工程实践
+- [Agent vs Workflow 控制权连续谱](ch04/671-agent-vs-workflow.html) — Agent 工程化
+- [Loop Engineering](../ch05/004-loop-engineering.html) — Agent 循环决策与 Harness 工程的交叉
+- [Spec Kit/OpenSpec/Superpowers 融合 Harness](../ch05/049-openspec.html) — Harness 工程实践
 
 ---
 

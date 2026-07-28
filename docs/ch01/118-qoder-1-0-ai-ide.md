@@ -8,8 +8,8 @@
 -
 ## 相关实体
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/035-agent.html)
-- [Gpt 55来了我撤回了退订Chatgpt的决定](ch01/732-chatgpt.html)
-- [Openai Three Voice Models Kill Simultaneous Translation](ch01/393-openai.html)
+- [Gpt 55来了我撤回了退订Chatgpt的决定](ch01/1161-chatgpt.html)
+- [Openai Three Voice Models Kill Simultaneous Translation](ch01/391-openai.html)
 - [Baidu Confidential Computing Cpu Gpu Full Chain](../ch05/092-ai.html)
 - [Tencent Hunyuan Hy3 Preview Open Source Agent](ch01/117-hy3-preview.html)
 
