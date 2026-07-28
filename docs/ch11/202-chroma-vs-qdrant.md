@@ -2,7 +2,7 @@
 
 ## Ch11.202 向量数据库选型：Chroma vs Qdrant
 
-> 📊 Level ⭐⭐ | 6.2KB | `entities/vector-db-chroma-vs-qdrant.md`
+> 📊 Level ⭐⭐ | 6.3KB | `entities/vector-db-chroma-vs-qdrant.md`
 
 ## 核心框架
 **"Chroma 和 Qdrant 哪个更好"——这是错的。选型不是在比产品，是在比场景。** ^["从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)"]
@@ -50,7 +50,7 @@
 **向量数据库的选型本质是 workload characterization 问题**：不是"哪个数据库更好"，而是"你的 workload 更接近哪种访问模式"。10 万向量以下两者无感；百万级别且有复杂过滤是关键分水岭；TB 级数据量时 S3 + Chroma 的成本优势可能超过性能劣势。 ^["从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)"]
 
 ## 相关链接
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/076-claude-code.html)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/077-claude-code.html)
 
 ## 实践启示
 1. **不要等出了问题才迁移**：在 50-80 万向量时就开始监控 Chroma 延迟分布，如果 P99 开始上升，就该启动 Qdrant 迁移计划 ^["从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)"]
@@ -58,6 +58,10 @@
 3. **多租户场景只考虑 Qdrant**：Qdrant 的 namespace 和 tenant isolation 功能是生产多租户 RAG 系统的标配，Chroma 没有等效能力 ^["从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)"]
 4. **S3 + Chroma 适合冷存储 RAG**：如果你的向量数据主要是历史档案、查询频率低、数据量大（TB 级），Chroma 的 S3 后端比 Qdrant 的纯内存/SSD 方案成本低 1-2 个数量级，此时性能不是主要矛盾 ^["从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)"]
 5. **上线前必做生产规模验证**：用实际 embedding 维度和查询模式做压力测试，不要相信供应商的基准数字 ^["从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)"]
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

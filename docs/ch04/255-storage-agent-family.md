@@ -28,19 +28,19 @@ Storage Agent Family 是火山引擎（Volcano Engine）推出的面向云存储
 
 Storage Agent Family 最值得关注的不是技术实现，而是其产品设计思路的转变。传统云存储控制台的核心假设是"用户愿意学习如何使用工具"——功能都有，但需要用户在多个 Tab 之间来回切换、记住不同产品的操作差异。Storage Agent Family 的假设转变为"工具应该适应用户的思维方式"：用户只需说清楚意图（"建一个 AI 训练数据桶，开 KMS 加密和版本控制"），Agent 自主拆解为可执行步骤链 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:29-36]。
 
-这种转变与 [生产级 Agent Harness](../ch05/058-agent-harness.html) 的设计哲学高度一致——将多步操作编排从"体力活"变为"一句话"。但 Storage Agent Family 的特殊之处在于：它不是在一个产品内做 Agent 化，而是在一个产品家族内做 Agent 化，且每个 Agent 由不同的产品团队独立打造。
+这种转变与 [生产级 Agent Harness](../ch05/057-agent-harness.html) 的设计哲学高度一致——将多步操作编排从"体力活"变为"一句话"。但 Storage Agent Family 的特殊之处在于：它不是在一个产品内做 Agent 化，而是在一个产品家族内做 Agent 化，且每个 Agent 由不同的产品团队独立打造。
 
 ### 家族架构的深层逻辑：避免"中央 Agent"的扩展瓶颈
 
 "统一大 Agent"方案在跨产品场景中存在天然的限制：每个产品的 API、数据结构、错误码体系差异巨大，一个中央 Agent 需要理解所有产品的细节，维护成本随产品数量线性增长。Storage Agent Family 的"去中心化家族"架构巧妙地回避了这一问题——每个 Agent 只精通自己的产品领域，家族约定只在交互范式和安全机制层面做统一 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:31-32]。
 
-这本质上是 [多 Agent 协作架构](../ch11/296-bedrock.html) 中"专业化分工"思路的体现。每个 Agent 的能力边界明确（只做自己产品的事），但通过统一的交互入口和产品间引导机制（跨产品问题主动引导跳转），用户获得的是"多个专家协同服务"的体验，而非"一个什么都懂一点但都不精的通才"。
+这本质上是 [多 Agent 协作架构](../ch11/298-bedrock.html) 中"专业化分工"思路的体现。每个 Agent 的能力边界明确（只做自己产品的事），但通过统一的交互入口和产品间引导机制（跨产品问题主动引导跳转），用户获得的是"多个专家协同服务"的体验，而非"一个什么都懂一点但都不精的通才"。
 
 ### 安全模型的核心创新：凭证贯穿而非权限放大
 
 Agent 安全的一个核心难题是：Agent 调用工具时，应该用谁的权限？如果 Agent 有自己的服务账户，它可能做用户本不能做的事（权限放大）；如果每次都让用户确认，又破坏了自动化的流畅性。
 
-Storage Agent Family 的解决方案是"User 凭证贯穿"——发起任务的 User 凭证会贯穿 Agent 触发的每一个动作，Agent 能做的永远是"用户本来就能做的事"的子集 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:86-89]。这与 [Amazon Bedrock AgentCore](ch04/508-amazon-bedrock-agentcore-harness-ga-api-agent.html) 的身份安全模型理念一致。加上三级风险分级（只读直接执行、写入二次确认、破坏性拒绝自动执行）和 Dry-Run 预演机制，工作台拥有了自动执行的能力，但把"按下确认键"的权力始终交还给用户 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:91-97]。
+Storage Agent Family 的解决方案是"User 凭证贯穿"——发起任务的 User 凭证会贯穿 Agent 触发的每一个动作，Agent 能做的永远是"用户本来就能做的事"的子集 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:86-89]。这与 [Amazon Bedrock AgentCore](ch04/510-amazon-bedrock-agentcore-harness-ga-api-agent.html) 的身份安全模型理念一致。加上三级风险分级（只读直接执行、写入二次确认、破坏性拒绝自动执行）和 Dry-Run 预演机制，工作台拥有了自动执行的能力，但把"按下确认键"的权力始终交还给用户 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:91-97]。
 
 ### TLS Agent 的 LLMWiki：超越传统 RAG 的知识探索
 
@@ -52,7 +52,7 @@ TLS Agent 的知识底座方案值得特别关注。它没有简单地将文档�
 
 TLS Agent 选择 CLI 而非 API 作为 Agent 的能力入口，是一个务实的工程决策——TLS 的 API 数量和变体太多，若每个 API 都包装为模型可见的工具，工具列表会迅速膨胀到模型无法有效选择的程度。CLI 方案让 Agent 像工程师一样，通过命令分组、子命令和 help 渐进式了解产品能力 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:125-133]。
 
-Sandbox 执行环境支持运行命令、保存中间文件、读取输出、失败继续调整重试；每个 Skill 还自带验证脚本，可检查返回字段是否完整、时间范围是否正确。这种"执行-验证-重试"的循环正是 [Agent Harness 运行时模式](../ch05/058-agent-harness.html) 中"沙箱执行"模式的实践。
+Sandbox 执行环境支持运行命令、保存中间文件、读取输出、失败继续调整重试；每个 Skill 还自带验证脚本，可检查返回字段是否完整、时间范围是否正确。这种"执行-验证-重试"的循环正是 [Agent Harness 运行时模式](../ch05/057-agent-harness.html) 中"沙箱执行"模式的实践。
 
 ## 实践启示
 
@@ -70,14 +70,14 @@ Sandbox 执行环境支持运行命令、保存中间文件、读取输出、失
 
 ## 相关实体
 
-- [Agent Harness 生产级实践](../ch05/058-agent-harness.html)
-- [多 Agent 协作架构](../ch11/296-bedrock.html)
-- [Amazon Bedrock AgentCore](ch04/508-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [Agent Harness 生产级实践](../ch05/057-agent-harness.html)
+- [多 Agent 协作架构](../ch11/298-bedrock.html)
+- [Amazon Bedrock AgentCore](ch04/510-amazon-bedrock-agentcore-harness-ga-api-agent.html)
 - Agentic RAG 模式
-- [Agent Harness 运行时模式](../ch05/058-agent-harness.html)
+- [Agent Harness 运行时模式](../ch05/057-agent-harness.html)
 - [Agent 记忆存储工程实践](ch04/101-agent-memory.html)
 - [State Lake 火山引擎存储](../ch03/035-agent.html)
-- [Agent Harness 钉钉招聘案例](../ch05/058-agent-harness.html)
+- [Agent Harness 钉钉招聘案例](../ch05/057-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md)
 

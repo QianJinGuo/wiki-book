@@ -168,7 +168,7 @@
 | 期 | 主题 | 核心 entity |
 |----|------|------------|
 | 第 1-2 期 | (背景调研)| 待补充 |
-| **第 3 期** | **7×24 Self-Healing Pipeline + Agent 自进化** (研发生产线) | [Gaode Ai Native 7X24 Pipeline Self Healing](../ch05/019-ai-native.html) (30KB) |
+| **第 3 期** | **7×24 Self-Healing Pipeline + Agent 自进化** (研发生产线) | [Gaode Ai Native 7X24 Pipeline Self Healing](../ch05/018-ai-native.html) (30KB) |
 | **第 4 期** (本期) | **Marketing AutoResearch** (营销增长托管) | 本文 |
 
 **两条线的并列**：
@@ -222,7 +222,7 @@
 
 - vs [AI 科研 L0-L4](../ch05/092-ai.html) — 科学发现域，本文是营销业务域
 - vs [多 Agent 软件开发](../ch03/035-agent.html) — 软件开发域，本文是营销业务域
-- vs [高德 7x24 Self-Healing Pipeline](../ch05/019-ai-native.html) — 同公司研发线，本文是营销业务线
+- vs [高德 7x24 Self-Healing Pipeline](../ch05/018-ai-native.html) — 同公司研发线，本文是营销业务线
 - vs [高德 AI Companion Agent](../ch03/035-agent.html) — C 端用户交互，本文是 B 端业务托管
 - vs [天猫营销 AI 工作流](../ch05/092-ai.html) — 营销自动化，本文是营销**研究**（研究 + 实验 + 反馈循环）
 - vs 火山引擎营销策略 Agent — 营销决策支持，本文是**业务托管**（Agent 直接调整预算）
@@ -236,7 +236,7 @@
 ## 原文链接
 
 ## 相关实体
-- [Autoresearch Marketing Growth Amap Ai Native](../ch05/019-ai-native.html)
+- [Autoresearch Marketing Growth Amap Ai Native](../ch05/018-ai-native.html)
 
 → [原文存档（高德技术 2026-06-09）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-marketing-autoresearch-ai-native-practice.md)
 

@@ -135,13 +135,13 @@ Decoration.inline(range.from, range.to, {
 
 - **@文档 mention 能力可以视为 Agent harness 的"上下文组合协议"**：用户通过 @ 自由组织意图和上下文，harness 需要设计好上下文节点的解释和序列化方式。建议参考 [Agent Skill Writing](ch04/271-agent-skill.html) 中的 Skill 格式设计上下文引用的渐进式披露机制。 
 
-- **编辑器稳定性的治理思路可以推广到整个 Agent 系统架构**：把复杂度从"经验修补"推进到"结构化治理"，核心是把问题讲清楚、把边界拆清楚。这正是 [Agent Architecture Harness New Backend](../ch05/018-harness.html) 所描述的"harness 成为新后端"趋势在输入层的具体落地。 
+- **编辑器稳定性的治理思路可以推广到整个 Agent 系统架构**：把复杂度从"经验修补"推进到"结构化治理"，核心是把问题讲清楚、把边界拆清楚。这正是 [Agent Architecture Harness New Backend](../ch05/009-harness.html) 所描述的"harness 成为新后端"趋势在输入层的具体落地。 
 
 ## 相关对照
 - [Impeccable](../ch05/001-impeccable.html) —— harness 之上"设计能力层"
 - [vivo AI 导购在官网落地实践](../ch03/035-agent.html) —— 同作者团队
 - [Agent Skill 编写指南](ch04/271-agent-skill.html) —— Skill 格式 + 渐进式披露
-- [Harness 成为新后端](../ch05/018-harness.html)
+- [Harness 成为新后端](../ch05/009-harness.html)
 
 ---
 

@@ -113,7 +113,7 @@ Harness Engineering 的兴起标志着 AI 工程的重心从"提高模型智商"
 
 - [Backend for Agent — 智能体后端架构](../ch03/035-agent.html)
 - [Agent 落地真相：从能跑通到能投产](../ch03/035-agent.html)
-- [Agent Harness 钉钉招聘实践](ch05/058-agent-harness.html)
+- [Agent Harness 钉钉招聘实践](ch05/057-agent-harness.html)
 - [Claude Code Skills 实践指南](../ch07/035-claude-code-skills.html)
 - [注意力崩溃与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

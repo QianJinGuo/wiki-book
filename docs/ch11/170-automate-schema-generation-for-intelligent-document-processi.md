@@ -2,7 +2,7 @@
 
 ## Ch11.170 Automate Schema Generation for Intelligent Document Processing
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/automate-schema-generation-for-intelligent-document-processing.md`
+> 📊 Level ⭐⭐ | 7.3KB | `entities/automate-schema-generation-for-intelligent-document-processing.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
 
@@ -22,7 +22,7 @@ Before you can extract information from documents using intelligent document pro
 - [原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
 
 ## 相关实体
-- [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/136-build-financial-document-processing-with-pulse-ai-and-amazon.html)
+- [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/137-build-financial-document-processing-with-pulse-ai-and-amazon.html)
 
 ## 深度分析
 ### 技术架构的核心创新
@@ -86,6 +86,10 @@ Before you can extract information from documents using intelligent document pro
 - 编排层：AWS Step Functions状态机
 - 计算层：AWS Lambda（无服务器）
 这一技术栈组合代表了AWS平台上典型的无服务器AI管道架构，其设计模式可复用于其他需要批量文档处理的项目。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

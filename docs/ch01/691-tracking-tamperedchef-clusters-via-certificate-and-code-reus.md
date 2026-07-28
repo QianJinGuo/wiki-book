@@ -35,9 +35,9 @@ TamperedChef 绝非普通的广告软件（adware）活动，其背后是三个�
 ## 相关实体
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Nginx Rift Achieving Nginx Rce Via An 18 Year Old Vulnerability](https://github.com/QianJinGuo/wiki/blob/main/entities/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability.md)
-- [Github Investigating Teampcp Claimed 17Cc77](ch01/814-github.html)
-- [Exiftool Compromise Mac 592994](ch01/736-9.html)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch01/838-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Github Investigating Teampcp Claimed 17Cc77](ch01/815-github.html)
+- [Exiftool Compromise Mac 592994](ch01/737-9.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch01/839-skill-issues-compromising-claude-code-with-malicious-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tracking-tampered-chef-clusters-aef374.md)
 

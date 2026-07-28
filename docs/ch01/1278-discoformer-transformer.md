@@ -59,7 +59,7 @@ DiScoFormer 最令人印象深刻的特性是**跨分布泛化**——它不仅�
 - 非高斯形状（如 Laplace 分布、Student-t 分布）
 - 训练时完全未见过的分布类型
 
-这种泛化能力意味着 DiScoFormer 实际上学习了一个"密度估计的元算法"——不是记住特定分布的形状，而是学会了"给定任意数据点集，如何估计其密度"的计算过程。这与 [Prime Intellect Auto NanoGPT](ch01/736-9.html) 中"元学习"的思想一脉相承。
+这种泛化能力意味着 DiScoFormer 实际上学习了一个"密度估计的元算法"——不是记住特定分布的形状，而是学会了"给定任意数据点集，如何估计其密度"的计算过程。这与 [Prime Intellect Auto NanoGPT](ch01/737-9.html) 中"元学习"的思想一脉相承。
 
 ### 3. 对扩散模型的直接改进潜力
 
@@ -116,8 +116,8 @@ DiScoFormer 的推理时适应机制是一个优雅的设计：
 
 - [DiffusionGemma](ch01/621-gemma-4.html)
 - [DiffusionGemma Transparency Audit](https://github.com/QianJinGuo/wiki/blob/main/entities/diffusiongemma-transparency-audit-lesswrong.md)
-- [HuggingFace Torch MLP Fusion](ch01/906-20.html)
-- [Prime Intellect Auto NanoGPT](ch01/736-9.html)
+- [HuggingFace Torch MLP Fusion](ch01/907-20.html)
+- [Prime Intellect Auto NanoGPT](ch01/737-9.html)
 - [Moneyball for Physical AI](../ch05/092-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/discoformer.md)

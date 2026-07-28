@@ -27,4 +27,10 @@ fi
 echo "=== Slimming search index ==="
 python3 scripts/slim-search-index.py
 
+# Copy Cloudflare Pages _headers for cache control
+if [ -f "docs/_headers" ]; then
+  cp docs/_headers site/_headers
+  echo "Copied _headers to site/"
+fi
+
 echo "=== Build complete ==="

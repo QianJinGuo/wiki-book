@@ -48,13 +48,11 @@ def generate_markdown(refs):
     lines = []
     lines.append("# 参考文献")
     lines.append("")
-    lines.append(f"> 本书基于 **{len(refs)}** 篇一手 AI 材料系统编撰。")
+    lines.append(f"> 本书基于 **{len(refs)}** 篇原始来源文章系统编撰。")
     lines.append(f"> 涵盖 **{len(domains)}** 个来源站点。")
     lines.append("")
     lines.append("---")
     lines.append("")
-    
-    # Top sources summary
     lines.append("## 主要来源")
     lines.append("")
     lines.append("| 来源 | 文章数 |")
@@ -64,8 +62,6 @@ def generate_markdown(refs):
     lines.append("")
     lines.append("---")
     lines.append("")
-    
-    # Full reference list by domain
     lines.append("## 完整索引")
     lines.append("")
     for domain, articles in domains.items():
@@ -75,7 +71,9 @@ def generate_markdown(refs):
             date_str = f" ({a['date']})" if a["date"] else ""
             lines.append(f"- [{a['title']}]({a['url']}){date_str}")
         lines.append("")
-    
+    lines.append("---")
+    lines.append("")
+    lines.append(f"> 共 {len(domains)} 个来源，{len(refs)} 篇原始文章。")
     return "\n".join(lines)
 
 if __name__ == "__main__":

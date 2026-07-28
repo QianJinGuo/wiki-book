@@ -319,8 +319,8 @@ final_answer_mismatch
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 第五层"评估与观测"对应本文的 trace 分析
 - [Agent YAML 评测](../ch03/035-agent.html) — YAML-driven evaluation 是 Evaluator 工程化的一种
 - [Claude Code 深度解析](../ch05/071-claude-code-harness.html) — Claude Code 的评估观测层工程实践
-- [深入理解 Claude Code Harness](../ch05/058-agent-harness.html) — Plan Mode + Tasks 系统的"避免问题复发"机制
-- [OpenClaw 完整指南](../ch11/234-openclaw.html) — 开源 Agent 的故障处理与自我恢复机制
+- [深入理解 Claude Code Harness](../ch05/057-agent-harness.html) — Plan Mode + Tasks 系统的"避免问题复发"机制
+- [OpenClaw 完整指南](../ch11/235-openclaw.html) — 开源 Agent 的故障处理与自我恢复机制
 - [Agent 记忆系统实践](../ch03/035-agent.html) — Agent Overview 是 Memory 模块的诊断侧应用- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](../ch05/092-ai.html)
 
 ---

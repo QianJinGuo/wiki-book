@@ -172,8 +172,8 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 ## 相关实体
 
 - [Agent Harness Engineering Survey 2026](../ch05/112-harness-engineering.html) — 学术 Survey 的 ETCLOVG 7 层分类（不同分类法）
-- [Agent Harness Context Management Working Set](../ch05/058-agent-harness.html) — 上下文管理的"工作集"视角
-- [Agent Harness 12 Components 7 Decisions](../ch05/058-agent-harness.html) — 12 组件 + 7 决策框架
+- [Agent Harness Context Management Working Set](../ch05/057-agent-harness.html) — 上下文管理的"工作集"视角
+- [Agent Harness 12 Components 7 Decisions](../ch05/057-agent-harness.html) — 12 组件 + 7 决策框架
 - [Agent Production Harness Engineering](../ch05/112-harness-engineering.html) — 工程赤字 + Demo vs 生产型判别
 - [Harness Engineering Systematic Framework](../ch05/112-harness-engineering.html) — Harness 工程系统化
 - [Agent Skill Writing](../ch04/271-agent-skill.html) — Skill 编写实践（第三关深入）
@@ -190,7 +190,7 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 
 ### 技术要点：上下文分诊的 OS 虚拟内存类比
 
-P0-P3 上下文分诊的核心价值在于将 LLM 视作 CPU、Context 视作内存、文件系统视作磁盘，从而借用 OS 虚拟内存的分页调度思想。**18K→2K Token 的实测压缩**不是 magic，而是"只调相关段"的工程必然。[Agent Harness Context Management Working Set](../ch05/058-agent-harness.html) 的"工作集"视角与此处 P0-P3 分诊本质同构，但黄佳的 OS 类比更易于向传统工程师传达。
+P0-P3 上下文分诊的核心价值在于将 LLM 视作 CPU、Context 视作内存、文件系统视作磁盘，从而借用 OS 虚拟内存的分页调度思想。**18K→2K Token 的实测压缩**不是 magic，而是"只调相关段"的工程必然。[Agent Harness Context Management Working Set](../ch05/057-agent-harness.html) 的"工作集"视角与此处 P0-P3 分诊本质同构，但黄佳的 OS 类比更易于向传统工程师传达。
 
 ### 技术要点：Stop Hook 作为确定性工程契约
 
@@ -198,7 +198,7 @@ P0-P3 上下文分诊的核心价值在于将 LLM 视作 CPU、Context 视作内
 
 ### 技术要点：三层模型路由的成本结构性压缩
 
-Haiku 60% / Sonnet 30% / Opus 10% 的路由比例背后有数据支撑：41% 的查询只是 SQL 模板填空，根本用不上 Opus。**月账单 48 万→12 万**不是通过压缩质量实现，而是通过正确的任务-模型匹配实现。[Agent Harness 12 Components 7 Decisions](../ch05/058-agent-harness.html) 的 12 组件框架可为此路由决策提供系统性组件视角。
+Haiku 60% / Sonnet 30% / Opus 10% 的路由比例背后有数据支撑：41% 的查询只是 SQL 模板填空，根本用不上 Opus。**月账单 48 万→12 万**不是通过压缩质量实现，而是通过正确的任务-模型匹配实现。[Agent Harness 12 Components 7 Decisions](../ch05/057-agent-harness.html) 的 12 组件框架可为此路由决策提供系统性组件视角。
 
 ### 实践价值：Pre-task Gating 是防呆机制而非流程负担
 

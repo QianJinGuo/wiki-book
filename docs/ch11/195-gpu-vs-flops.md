@@ -2,7 +2,7 @@
 
 ## Ch11.195 数据中心 GPU 液冷 vs 风冷：FLOPs 可用率与工程权衡
 
-> 📊 Level ⭐⭐ | 6.4KB | `entities/gpu-liquid-cooling-vs-air-cooling-datacenter.md`
+> 📊 Level ⭐⭐ | 6.5KB | `entities/gpu-liquid-cooling-vs-air-cooling-datacenter.md`
 
 # 数据中心 GPU 液冷 vs 风冷：FLOPs 可用率与工程权衡
 
@@ -57,6 +57,10 @@
 ## 相关实体
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

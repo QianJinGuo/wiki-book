@@ -2,7 +2,7 @@
 
 ## Ch11.242 Data modeling patterns for Amazon Quick Sight multi-dataset relationships
 
-> 📊 Level ⭐⭐ | 4.5KB | `entities/data-modeling-patterns-for-amazon-quick-sight-multi-dataset-.md`
+> 📊 Level ⭐⭐ | 4.6KB | `entities/data-modeling-patterns-for-amazon-quick-sight-multi-dataset-.md`
 
 # Data modeling patterns for Amazon Quick Sight multi-dataset relationships
 
@@ -62,6 +62,10 @@ Total sales by customer segment and region:
     
     SELECT c.segment, c.region,
         SUM
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

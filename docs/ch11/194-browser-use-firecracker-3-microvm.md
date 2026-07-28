@@ -2,7 +2,7 @@
 
 ## Ch11.194 Browser Use Firecracker：云端浏览器成本降 3 倍的 microVM 架构
 
-> 📊 Level ⭐⭐ | 6.4KB | `entities/browser-use-firecracker-cloud-browsers-3x-cheaper.md`
+> 📊 Level ⭐⭐ | 6.5KB | `entities/browser-use-firecracker-cloud-browsers-3x-cheaper.md`
 
 # Browser Use Firecracker：云端浏览器成本降 3 倍的 microVM 架构
 
@@ -52,6 +52,10 @@ browser-use 团队通过 Firecracker microVM 在 EC2 上运行云端浏览器隔
 ## 与现有实体差异化
 
 现有 `browser-use-runtime-harness` 关注 Browser Use 作为 Agent Harness 的架构设计；本文关注**底层基础设施层**——如何用 Firecracker 降低云端浏览器的运行成本。现有 `firecracker-bedrock-agentcore-multi-tenant` 关注 AgentCore 的多租户安全隔离；本文关注**浏览器工作负载**的特定优化。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

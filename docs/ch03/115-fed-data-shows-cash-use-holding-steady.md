@@ -53,7 +53,7 @@ Crone Consulting 数据显示，现金的年度成本达 $124/人（ATM 费用�
 - [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch05/092-ai.html)
 - [Tether Developer Grants Local Ai](../ch05/092-ai.html)
 - [Affirm Maps Road To 100B Gmv With Card Ai Commerce](ch03/089-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.html)
-- [Amazon Bedrock Agentic Payments Guardrails](../ch11/291-amazon-bedrock.html)
+- [Amazon Bedrock Agentic Payments Guardrails](../ch11/293-amazon-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fed-cash-use.md)
 

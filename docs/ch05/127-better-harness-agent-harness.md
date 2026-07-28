@@ -110,9 +110,9 @@ LangChain 的大量实验揭示了一个反直觉事实：Agent 失败通常不�
 ## 相关实体
 - [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/112-harness-engineering.html)
 - [Agent Harness Engineering Survey 2026](ch05/112-harness-engineering.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](ch05/058-agent-harness.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](ch05/057-agent-harness.html)
 - [Agentscope Java Harness Framework](../ch03/052-agentscope-java-harness-framework-2-0-agent-harness.html)
-- [Browser Use Runtime Harness](ch05/018-harness.html)
+- [Browser Use Runtime Harness](ch05/009-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 
 ---

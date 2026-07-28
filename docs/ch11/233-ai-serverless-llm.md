@@ -2,7 +2,7 @@
 
 ## Ch11.233 从一键部署到 AI 洞察 — 基于 Serverless 架构与 LLM 的压测与分析平台
 
-> 📊 Level ⭐⭐ | 4.9KB | `entities/从一键部署到-ai-洞察基于-serverless-架构与-llm-的压测与分析平台-load-testing-pilo.md`
+> 📊 Level ⭐⭐ | 5.1KB | `entities/从一键部署到-ai-洞察基于-serverless-架构与-llm-的压测与分析平台-load-testing-pilo.md`
 
 # 从一键部署到 AI 洞察 — 基于 Serverless 架构与 LLM 的压测与分析平台
 
@@ -57,6 +57,11 @@ AI分析 | 浏览器 + LLM API | 浏览器直接调用LLM API，流式输出
 [](<https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从一键部署到-ai-洞察基于-serverless-架构与-llm-的压测与分析平台-load-testing-pilo.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

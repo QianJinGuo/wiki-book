@@ -35,7 +35,7 @@ Seema Amble 指出粘性来自：围绕人的使用习惯搭建的组织流程�
 
 ## 关联
 
-- [AI Agent 工具数量陷阱](ch04/184-ai-agent.html) — Agent 工具工程的设计原则与 headless 架构互补
+- [AI Agent 工具数量陷阱](ch04/505-ai-agent.html) — Agent 工具工程的设计原则与 headless 架构互补
 
 ---
 ## 关联

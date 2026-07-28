@@ -61,8 +61,8 @@ Meta 的 AI 存储实践揭示了数个重要趋势：(1) 存储与计算之间�
 
 - [Databricks GPU 可靠性实践](ch01/043-how-we-keep-gpus-reliable-across-databricks-ai.html)
 - [AI Infrastructure & Cost Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md)
-- [Graviton 优化 Agentic RL Sandbox](../ch04/441-agentic-rl.html)
-- [AI 友好的后端标准](../ch05/023-ai-friendly.html)
+- [Graviton 优化 Agentic RL Sandbox](../ch04/329-agentic-rl.html)
+- [AI 友好的后端标准](../ch05/022-ai-friendly.html)
 
 ## 来源
 

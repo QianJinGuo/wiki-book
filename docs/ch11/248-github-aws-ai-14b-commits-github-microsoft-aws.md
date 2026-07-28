@@ -2,7 +2,7 @@
 
 ## Ch11.248 GitHub + AWS 多云转折：AI 编码激增 14B commits 压垮 GitHub，Microsoft 跨云买 AWS 容量
 
-> 📊 Level ⭐⭐ | 4.2KB | `entities/microsoft-github-aws-ai-capacity-crunch-2026-06.md`
+> 📊 Level ⭐⭐ | 4.3KB | `entities/microsoft-github-aws-ai-capacity-crunch-2026-06.md`
 
 # GitHub + AWS 多云转折：AI 编码激增 14B commits 压垮 GitHub，Microsoft 跨云买 AWS 容量
 
@@ -42,12 +42,16 @@
 
 ## 相关主题
 
-- [Multi-Agent AI Safety Research Funding Call](../ch01/892-agent-ai.html) — 同为 2026-06 agentic AI 相关的产业级响应
+- [Multi-Agent AI Safety Research Funding Call](../ch01/890-agent-ai.html) — 同为 2026-06 agentic AI 相关的产业级响应
 - AI Coding Agent 行业（概念待创建）
 
 ## 一句话定位
 
 **AI 编码激增 → 14× commits → 30× 容量需求 → 微软被迫向 AWS 买容量** —— 2026 年最具体的"agentic AI 改变基础设施"案例
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Ch11.254 GenPage: Towards End-to-End Generative Homepage Construction at Netflix
 
-> 📊 Level ⭐⭐ | 4.0KB | `entities/genpage-towards-end-to-end-generative-homepage-construction-.md`
+> 📊 Level ⭐⭐ | 4.2KB | `entities/genpage-towards-end-to-end-generative-homepage-construction-.md`
 
 # GenPage: Towards End-to-End Generative Homepage Construction at Netflix
 
@@ -30,6 +30,11 @@ This shift is motivated by several goals:
 
   * **End-to-end modeling.** A single transformer model that constructs the page from raw input signals can replace a complex multi-stage recommender stack. This reduces the number of ML models to maintain, avoids misaligned objectives across stages, and eliminates much of the traditional feature engineering.
   * **Whole-page optimization via reinforcement learning (RL).** Autoregressive page generation makes it possible to optimize for page-level rewards with RL. This can capture interactions across rows and entities, such as diversity or the balance between rows with different _stopping power_. For example, a Continue Watching row near the top of the page may strongly satisfy a user’s immediate intent, but also reduce how much of the page they browse.
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

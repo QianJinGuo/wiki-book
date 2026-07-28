@@ -87,7 +87,7 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 
 ## 相关实体
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/092-ai.html)
-- [AI Coding Agent 记忆系统](ch04/331-ai-coding-agent.html)
+- [AI Coding Agent 记忆系统](ch04/332-ai-coding-agent.html)
 - [AI Agent 记忆系统架构](ch04/158-how-ai-agent-memory-works.html)
 - [Self-Evolving Agents 系统性综述](ch04/222-self-evolving-agents.html)
 - [Hermes Agent 记忆系统深度拆解](../ch03/095-hermes-agent.html)
@@ -95,11 +95,11 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 - [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
 - [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
-- [SkillClaw](ch04/468-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](ch04/470-skillclaw-nacos-agent-skill-registry.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
-- [GBrain](../ch01/255-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/906-20.html)
+- [GBrain](../ch01/253-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/907-20.html)
 - [OpenHuman: AI Agent 持久记忆框架](ch04/101-agent-memory.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)

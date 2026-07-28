@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>📚 AI 工程 · 渐进式学习仪表盘</title>
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
@@ -18,9 +21,19 @@
 body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
 
 .header{background:linear-gradient(135deg,#1e1b4b 0%,#0f172a 60%,#0a0e1a 100%);border-bottom:1px solid var(--border);padding:2rem 1rem 1.5rem}
-.header-inner{max-width:1400px;margin:0 auto}
+.header-inner{max-width:1400px;margin:0 auto;position:relative}
 .header h1{font-size:1.8rem;background:linear-gradient(135deg,#818cf8,#c084fc,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
 .header p{color:var(--text2);font-size:.9rem}
+
+.countdown{position:absolute;top:0;right:0;background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.3);border-radius:12px;padding:.5rem 1rem;cursor:pointer;transition:all .25s;user-select:none}
+.countdown:hover{background:rgba(139,92,246,.2);border-color:rgba(139,92,246,.5);transform:translateY(-1px)}
+.countdown-label{font-size:.72rem;color:var(--text3);margin-bottom:.15rem}
+.countdown-days{font-size:1.5rem;font-weight:800;background:linear-gradient(135deg,#f97316,#ef4444);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.2}
+.countdown-days.urgent{background:linear-gradient(135deg,#ef4444,#dc2626);-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:pulse-urgent 2s infinite}
+.countdown-days.passed{background:linear-gradient(135deg,var(--text3),var(--text2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.countdown-unit{font-size:.8rem;font-weight:400;color:var(--text2);margin-left:.15rem}
+@keyframes pulse-urgent{0%,100%{opacity:1}50%{opacity:.6}}
+@media(max-width:768px){.countdown{position:static;margin-top:.8rem;display:inline-block}}
 
 .phase-bar{display:flex;gap:.3rem;margin:1.2rem 0 .5rem;flex-wrap:wrap}
 .phase-chip{padding:.4rem 1rem;border-radius:10px;font-size:.82rem;font-weight:600;cursor:pointer;border:2px solid transparent;transition:all .2s;opacity:.6}
@@ -209,6 +222,10 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
   <div class="header-inner">
     <h1>📚 AI 工程 · 渐进式学习仪表盘</h1>
     <p id="header-sub">加载中...</p>
+    <div class="countdown" id="countdown" onclick="openCountdownEditor()" title="点击编辑倒计时">
+      <div class="countdown-label" id="countdown-label">距离面试还有</div>
+      <div><span class="countdown-days" id="countdown-days">--</span><span class="countdown-unit">天</span></div>
+    </div>
     <div class="phase-bar" id="phase-bar"></div>
   </div>
 </div>
@@ -266,6 +283,7 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 const LS_KEY = 'wiki-learn-progress-v3';
 const USER_KEY = 'wiki-learn-user';
 const RECALL_KEY = 'wiki-learn-recall-v1';
+const COUNTDOWN_KEY = 'wiki-learn-countdown-v1';
 const RECALL_INTERVALS = [1, 2, 4, 7, 15, 30]; // days - Ebbinghaus
 const LEVELS = ['read','explained','taught','mastered'];
 
@@ -276,6 +294,7 @@ let currentChapter = 'all';
 let currentLevel = 'all';
 let searchQuery = '';
 let userId = localStorage.getItem(USER_KEY) || '';
+let countdownCfg = JSON.parse(localStorage.getItem(COUNTDOWN_KEY) || 'null') || { label: '面试', targetDate: new Date(Date.now() + 30 * 86400000).toISOString().slice(0, 10) };
 let recallData = JSON.parse(localStorage.getItem(RECALL_KEY) || '{}');
 let recallPanelOpen = false;
 
@@ -766,11 +785,11 @@ function feynmanSummary(file){
 // ── Init ──────────────────────────────────────────────────────
 async function init(){
   try {
-    const resp = await fetch('/dashboard/articles.json');
+    const resp = await fetch('/dashboard/articles.json?v=' + Date.now(), { cache: 'no-store' });
     DATA = await resp.json();
   } catch(e) {
     try {
-      const resp2 = await fetch('./articles.json');
+      const resp2 = await fetch('./articles.json?v=' + Date.now(), { cache: 'no-store' });
       DATA = await resp2.json();
     } catch(e2) {
       document.getElementById('content').innerHTML = '<div class="empty">❌ 无法加载文章数据</div>';
@@ -792,9 +811,60 @@ async function init(){
   renderPhaseBar();
   renderChapterFilters();
   renderLevelFilters();
+  renderCountdown();
   render();
   renderRecallPanel();
   renderDailyCard();
+}
+
+// ── Countdown ─────────────────────────────────────────────────
+function renderCountdown(){
+  const el = document.getElementById('countdown-days');
+  const labelEl = document.getElementById('countdown-label');
+  const target = new Date(countdownCfg.targetDate + 'T00:00:00');
+  const today = new Date(); today.setHours(0,0,0,0);
+  const diff = Math.ceil((target - today) / 86400000);
+  el.textContent = Math.abs(diff);
+  labelEl.textContent = diff > 0 ? `距离${countdownCfg.label}还有` : diff === 0 ? `${countdownCfg.label}就是今天！` : `${countdownCfg.label}已过`;
+  el.className = 'countdown-days' + (diff <= 3 && diff >= 0 ? ' urgent' : '') + (diff < 0 ? ' passed' : '');
+  if(diff === 0){ el.textContent = '🎉'; el.className = 'countdown-days'; }
+}
+
+function openCountdownEditor(){
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1000;display:flex;align-items:center;justify-content:center';
+  overlay.onclick = e => { if(e.target === overlay) overlay.remove(); };
+  const box = document.createElement('div');
+  box.style.cssText = 'background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.5rem;width:320px;box-shadow:0 20px 60px rgba(0,0,0,.5)';
+  box.innerHTML = `
+    <div style="font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--accent2)">⏱ 编辑倒计时</div>
+    <label style="font-size:.82rem;color:var(--text2);display:block;margin-bottom:.3rem">事件名称</label>
+    <input id="cd-label" value="${countdownCfg.label}" style="width:100%;padding:.5rem .7rem;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.9rem;margin-bottom:.8rem;outline:none" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'" />
+    <label style="font-size:.82rem;color:var(--text2);display:block;margin-bottom:.3rem">目标日期</label>
+    <input id="cd-date" type="date" value="${countdownCfg.targetDate}" style="width:100%;padding:.5rem .7rem;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.9rem;margin-bottom:.8rem;outline:none;color-scheme:dark" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'" />
+    <div style="display:flex;gap:.5rem;justify-content:flex-end;margin-top:.4rem">
+      <button id="cd-cancel" style="padding:.4rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);cursor:pointer;font-size:.82rem">取消</button>
+      <button id="cd-save" style="padding:.4rem 1rem;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer;font-size:.82rem;font-weight:600">保存</button>
+    </div>
+    <button id="cd-reset" style="margin-top:.6rem;padding:.3rem .6rem;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--text3);cursor:pointer;font-size:.72rem;width:100%">重置为 30 天后</button>
+  `;
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+  document.getElementById('cd-label').focus();
+  document.getElementById('cd-cancel').onclick = () => overlay.remove();
+  document.getElementById('cd-save').onclick = () => {
+    const label = document.getElementById('cd-label').value.trim() || '面试';
+    const date = document.getElementById('cd-date').value;
+    if(!date){ return; }
+    countdownCfg = { label, targetDate: date };
+    localStorage.setItem(COUNTDOWN_KEY, JSON.stringify(countdownCfg));
+    renderCountdown();
+    overlay.remove();
+  };
+  document.getElementById('cd-reset').onclick = () => {
+    document.getElementById('cd-label').value = '面试';
+    document.getElementById('cd-date').value = new Date(Date.now() + 30 * 86400000).toISOString().slice(0, 10);
+  };
 }
 
 // ── Phase bar ─────────────────────────────────────────────────

@@ -39,7 +39,7 @@ Claude Code 2025-02 内部演示只收到 2 个赞。两年后（2026-06），�
 - **AI 产品的复合效应**——模型能力提升与用户工作流沉淀是两条独立曲线：模型每月升级（Claude 3.7 → 4.0 → 4.5 → 4.6 → 4.7 → 4.8），但 Skill / Routine / 验证回路是用户在使用中沉淀的资产，**两者叠加产生指数级复合**。
 - **AI 工具的反馈周期**——传统工具的反馈是"今天能干什么"；AI 工具的反馈是"今天 + 模型升级后 + 用户技能沉淀后"能干什么。早期反馈对长期价值预测力很弱。
 
-这与 [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/629-agentic.html) 中关于"AI 编程工具的最终形态是 agentic engineering"的判断同构——只有当 Agent 工具沉淀出"自我验证 + 异步调度 + 异步 Routine"的工程模式时，它的价值才会从"工具"升级为"基础设施"。
+这与 [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/633-agentic.html) 中关于"AI 编程工具的最终形态是 agentic engineering"的判断同构——只有当 Agent 工具沉淀出"自我验证 + 异步调度 + 异步 Routine"的工程模式时，它的价值才会从"工具"升级为"基础设施"。
 
 ### 二、Self-Validating Loop：Agent 长期自主的真正关键
 
@@ -78,7 +78,7 @@ Boris 说他最初觉得 auto mode"不靠谱——把 prompt 路由给一个模�
 - Auto mode：用专门训练的 Sonnet 4.6 分类器持续学习；收集成千上万条 Agent 运行轨迹 + 红队 prompt 注入 + 内部攻击测试 + 真实发现 → eval。
 - **结论**：auto mode 比人工形式审查更安全，因为它对所有请求都做实质性判断。
 
-这与 [Agent Security 三步走: Harness + Governance + Identity](../ch05/018-harness.html) 中"governance 必须可验证、可审计"的原则一致——Auto Mode 是 governance 的工业级实现。
+这与 [Agent Security 三步走: Harness + Governance + Identity](../ch05/009-harness.html) 中"governance 必须可验证、可审计"的原则一致——Auto Mode 是 governance 的工业级实现。
 
 ### 五、Context 极简主义对 prompt engineering 的反叛
 
@@ -92,7 +92,7 @@ Boris + Cat 都明确表态：
 - 当前 Opus 4.7+：过度工程化 context 反而限制模型的内在能力。
 - **真正的工程**：保持 system prompt 极简、提供足够但不过度的 tools、让模型自己决策用什么 context。
 
-这与 [From Prompt to Harness: Claude 官方](../ch05/018-harness.html) 描述的"harness 不是更大 prompt，是更好结构"理念一致——harness engineering 的核心不是"塞更多 context"，而是"提供对的 tools + 对的评估 + 对的 Skill 沉淀机制"。
+这与 [From Prompt to Harness: Claude 官方](../ch05/009-harness.html) 描述的"harness 不是更大 prompt，是更好结构"理念一致——harness engineering 的核心不是"塞更多 context"，而是"提供对的 tools + 对的评估 + 对的 Skill 沉淀机制"。
 
 ### 六、源码泄露风波的工程含义
 
@@ -145,16 +145,16 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台 v2](../ch03/035-agent.html)
 - [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Claude Code 一周年回顾 Boris+Cat 2026](../ch03/077-claude-code.html)
-- [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/592-agent-loop.html)
+- [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/596-agent-loop.html)
 - [Claude Code Prompt 源码分析](ch09/060-claude-code-prompt.html)
 - [Claude Code Prompt 源码分析 fanone](ch09/060-claude-code-prompt.html)
 - [Claude Code Prompt Context Harness](ch09/060-claude-code-prompt.html)
-- [From Prompt to Harness: Claude 官方](../ch05/018-harness.html)
-- [Anthropic Prompt Caching 与 Claude Code](../ch01/221-anthropic-prompt-caching-claude-code.html)
+- [From Prompt to Harness: Claude 官方](../ch05/009-harness.html)
+- [Anthropic Prompt Caching 与 Claude Code](../ch01/219-anthropic-prompt-caching-claude-code.html)
 - [24h Worker Agent](../ch03/035-agent.html)
-- [Agent Security 三步走: Harness + Governance + Identity](../ch05/018-harness.html)
+- [Agent Security 三步走: Harness + Governance + Identity](../ch05/009-harness.html)
 - [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/629-agentic.html)
+- [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/633-agentic.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

@@ -113,7 +113,7 @@ Mnilax 给出的是单任务 4K / 单会话 30K 的基准值，但这个数字�
 **版本 3.0（定期修剪）**：每季度审查时，统计 CLAUDE.md 中每条规则的触发频率（可以在 Claude 的每次输出末尾加上`[规则N被触发]`的标记）。删除从未触发过的规则，或将它们移入 `CLAUDE.md.archive` 作为备选而非active状态。 
 
 ### 与 Harness Engineering 的关联
-CLAUDE.md 本质上是 **Agent 的架构约束层（Architecture Constraints）** 在 Harness Engineering 三支柱中的具体实现。它与 [Agent Harness Context Management Working Set](../ch05/058-agent-harness.html) 中的 working set 管理共同构成 Claude Code 的记忆-约束体系。Mnilax 的 12 条规则可视为对这一约束体系的系统性补全。 
+CLAUDE.md 本质上是 **Agent 的架构约束层（Architecture Constraints）** 在 Harness Engineering 三支柱中的具体实现。它与 [Agent Harness Context Management Working Set](../ch05/057-agent-harness.html) 中的 working set 管理共同构成 Claude Code 的记忆-约束体系。Mnilax 的 12 条规则可视为对这一约束体系的系统性补全。 
 规则 6（Token 预算）和规则 10（检查点强制）是 Harness 思维在 CLAUDE.md 中的直接映射——前者防止语义漂移，后者确保长任务的可恢复性。这两条规则与  中定义的"状态管理"和"熔断机制"在逻辑上完全一致，说明 Mnilax 的实践实际上是在用更低成本的方式实现 Harness Engineering 的核心目标。 
 
 ## 相关链接

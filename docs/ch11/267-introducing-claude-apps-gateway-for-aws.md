@@ -2,7 +2,7 @@
 
 ## Ch11.267 Introducing Claude apps gateway for AWS
 
-> 📊 Level ⭐⭐ | 3.8KB | `entities/introducing-claude-apps-gateway-for-aws.md`
+> 📊 Level ⭐⭐ | 3.9KB | `entities/introducing-claude-apps-gateway-for-aws.md`
 
 # Introducing Claude apps gateway for AWS
 
@@ -31,6 +31,10 @@ The gateway handles five core responsibilities:
   * **Identity:** The gateway connects to any standards-compliant OpenID Connect (OIDC) identity provider. After a developer signs in through browser single sign-on (SSO), the gateway issues a short-lived token that the CLI uses for all subsequent requests.
   * **Policy:** You define managed settings once on the server. Clients receive policy at sign-in, and the gateway enforces it on every request. You can adjust allowed models, tool permissions, and default settings centrally, scoped by IdP group.
   * **Telemetry:** The client stamps a usage metric for every request, and the gateway relays it over OpenTelemetry Protocol (OTLP) to a collector you configure, such as Amazon CloudWatch or Amazon Managed Service for Prometheus in your own account, or a third-party platform. You control where telemetry goes
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

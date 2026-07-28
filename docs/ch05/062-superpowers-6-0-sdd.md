@@ -8,7 +8,7 @@
 
 Superpowers 6.0（2026-06-16 发布，06-18 v6.0.3 修补）的核心主线不是新增平台或补安全策略，而是**重新设计了 AI Agent 软件工程中最贵、最容易跑偏的流程：任务后的代码评审**。
 
-与 [术哥的反作弊视角](../ch01/906-20.html) 互补——术哥聚焦 reviewer 隔离堵作弊路径，本文聚焦文件交接降低上下文成本 + 多平台 harness 映射。
+与 [术哥的反作弊视角](../ch01/907-20.html) 互补——术哥聚焦 reviewer 隔离堵作弊路径，本文聚焦文件交接降低上下文成本 + 多平台 harness 映射。
 
 ## SDD 评审重写
 
@@ -125,8 +125,8 @@ progress ledger（.superpowers/sdd/progress.md）让长任务在上下文压缩�
 
 ## 相关链接
 
-- → [术哥反作弊视角分析](../ch01/906-20.html) — 互补视角
-- → [三器合一工程化实战](ch05/050-openspec.html) — Superpowers + OpenSpec + gstack 串联
+- → [术哥反作弊视角分析](../ch01/907-20.html) — 互补视角
+- → [三器合一工程化实战](ch05/049-openspec.html) — Superpowers + OpenSpec + gstack 串联
 - → [Superpowers 工作流入门](../ch03/077-claude-code.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/superpowers-6-sdd-review-redesign-file-handoff.md)
 
