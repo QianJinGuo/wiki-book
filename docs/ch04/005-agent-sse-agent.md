@@ -126,9 +126,9 @@ mini-openclaw 的 SSE 流设计遵循了 Agent Loop 的核心思想：Agent 只�
 ## 相关实体
 
 - [CLI Agent 模式与 MCP Shell Agent](../ch03/035-agent.html)
-- [多 Agent 编排系统](ch04/513-agent-orchestration.html)
+- [多 Agent 编排系统](ch04/515-agent-orchestration.html)
 - [Spec-Driven Development](../ch05/009-harness.html)
-- [Skill 编排与依赖管理](ch04/273-skill.html)
+- [Skill 编排与依赖管理](ch04/271-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/前端如何消费agent-sse流.md)
 

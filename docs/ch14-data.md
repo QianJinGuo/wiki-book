@@ -10,8 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 4 |
-| ⭐⭐ 工程师 | 需编程基础 | 34 |
+| ⭐ 入门 | 零基础可读 | 3 |
+| ⭐⭐ 工程师 | 需编程基础 | 35 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 
 ---
@@ -256,52 +256,7 @@ This is the story of how we overcame the **black box of managed cloud**, the hid
 
 ---
 
-## Ch14.004 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
-
-> 📊 Level ⭐ | 2.3KB | `entities/ai-knowledge-base-llm-wiki-practice-alicloud.md`
-
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-knowledge-base-llm-wiki-practice-alicloud-2026-06-26.md)
-
-阿里云开发者分享基于直播数据构建LLM Wiki知识底座的实践经验，探讨如何在AI时代管理和运用企业知识资产。
-
-## 一句话
-
-**基于直播数据场景的LLM Wiki实践，从知识采集到应用的完整链路。**
-
-## 核心内容
-
-### 背景挑战
-
-- 直播数据增长快、格式多样，传统知识管理方式难以应对
-- 需要支持多模态数据（文本、图像、时序）的统一管理
-- 业务场景复杂，需要快速检索和应用
-
-### 解决方案
-
-- **多源数据采集**：整合直播平台、用户反馈、运营数据等多种来源
-- **结构化处理**：使用LLM对非结构化数据进行理解和分类
-- **向量化存储**：支持语义检索的知识库设计
-- **持续更新**：建立知识的增量更新机制
-
-### 应用场景
-
-- 直播内容推荐优化
-- 运营决策支持
-- 用户问题自助回复
-
-## 相关实体
-
-- [LLM Wiki知识管理](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-knowledge-management.md)
-- [Knowledge Base构建](https://github.com/QianJinGuo/wiki/blob/main/entities/knowledge-base-construction.md)
-- [阿里云AI实践](https://github.com/QianJinGuo/wiki/blob/main/entities/alicloud-ai-practices.md)
-
-## 标签
-
-#LLMWiki #知识底座 #阿里云 #直播数据 #知识管理
-
----
-
-## Ch14.005 Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
+## Ch14.004 Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 
 > 📊 Level ⭐⭐ | 35.4KB | `entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md`
 
@@ -797,7 +752,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 
 ---
 
-## Ch14.006 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
+## Ch14.005 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 
 > 📊 Level ⭐⭐ | 24.2KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
 
@@ -1062,7 +1017,7 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 
 ---
 
-## Ch14.007 Good QC for RL Data
+## Ch14.006 Good QC for RL Data
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/good-qc-for-rl-data.md`
 
@@ -1227,7 +1182,7 @@ Alignment-faking 基线 12%、Reward Tampering、Sycophancy——这三个已发
 
 ---
 
-## Ch14.008 Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
+## Ch14.007 Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
 
 > 📊 Level ⭐⭐ | 12.8KB | `entities/kimi-k2-6-tidb-agent-database.md`
 
@@ -1368,7 +1323,7 @@ one agent, one sandbox, one storage, one database
 
 ---
 
-## Ch14.009 Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
+## Ch14.008 Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/kimi-k2-tidb-agent-database-huangdongxu-20260513.md`
 
@@ -1467,7 +1422,7 @@ https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ
 
 ---
 
-## Ch14.010 Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变
+## Ch14.009 Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变
 
 > 📊 Level ⭐⭐ | 11.5KB | `entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md`
 
@@ -1577,7 +1532,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ---
 
-## Ch14.011 具身数据产业格局：97家玩家与447亿融资
+## Ch14.010 具身数据产业格局：97家玩家与447亿融资
 
 > 📊 Level ⭐⭐ | 10.7KB | `entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md`
 
@@ -1679,7 +1634,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ---
 
-## Ch14.012 London's police asked Big Tech for comms data over 700,000 times last year
+## Ch14.011 London's police asked Big Tech for comms data over 700,000 times last year
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/london-met-police-big-tech-data-requests.md`
 
@@ -1796,7 +1751,7 @@ LycaMobile 请求量 500% 的增长和针对移民的新立法动向表明，移
 
 ---
 
-## Ch14.013 AI-Enhanced Data Solutions with Database 26ai
+## Ch14.012 AI-Enhanced Data Solutions with Database 26ai
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/ai-enhanced-data-solutions-with-database-26ai.md`
 
@@ -1910,7 +1865,7 @@ JSON Relational Duality 的创新在于重新定义文档与关系表的竞争�
 
 ---
 
-## Ch14.014 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
+## Ch14.013 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/eva-bench-data-2-voice-agent-evaluation.md`
 
@@ -2038,7 +1993,7 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 ---
 
-## Ch14.015 LiveKit Agents 语音 AI 框架工程解析
+## Ch14.014 LiveKit Agents 语音 AI 框架工程解析
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/livekit-agents-voice-ai-framework.md`
 
@@ -2167,7 +2122,7 @@ MCP（Model Context Protocol）和 SIP 电话集成代表了 LiveKit 从"开发�
 
 ---
 
-## Ch14.016 Apache SeaTunnel AI CLI 模型评测
+## Ch14.015 Apache SeaTunnel AI CLI 模型评测
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/基于-amazon-bedrock-的-apache-seatunnel-ai-cli-模型评测从配置生成到真实执行.md`
 
@@ -2246,7 +2201,7 @@ SeaTunnel AI CLI 面临的挑战是整个"AI for Data Engineering"领域的缩�
 
 ---
 
-## Ch14.017 Moneyball for Physical AI
+## Ch14.016 Moneyball for Physical AI
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/moneyball-for-physical-ai.md`
 
@@ -2357,7 +2312,7 @@ $$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
 
 ---
 
-## Ch14.018 Lightfield AI pipeline generation
+## Ch14.017 Lightfield AI pipeline generation
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/lightfield-ai-pipeline-generation.md`
 
@@ -2415,7 +2370,7 @@ Lightfield 的 FAQ 中有一段值得注意的自我定位：随着对工具边�
 
 ---
 
-## Ch14.019 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
+## Ch14.018 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
 
@@ -2459,7 +2414,7 @@ AI 生成 dashboard 的定位是消除 construction phase——当分析意图�
 
 ---
 
-## Ch14.020 verify-data：一个端到端的数据验数 Agent Skill
+## Ch14.019 verify-data：一个端到端的数据验数 Agent Skill
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/verify-data-agent-skill-data-validation.md`
 
@@ -2581,7 +2536,7 @@ verify-data 与 Data Observability 工具（如 Monte Carlo、Great Expectations
 
 ---
 
-## Ch14.021 LiveKit Agents：给大模型接上麦克风，没你想的那么简单
+## Ch14.020 LiveKit Agents：给大模型接上麦克风，没你想的那么简单
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/livekit-agents-voice-ai-streaming-cascade-interruption-detection.md`
 
@@ -2676,7 +2631,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ---
 
-## Ch14.022 Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形
+## Ch14.021 Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/goodfire-predictive-data-debugging-post-training-anatomy-2026.md`
 
@@ -2735,6 +2690,85 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 ## 相关实体
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+
+---
+
+## Ch14.022 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
+
+> 📊 Level ⭐⭐ | 6.9KB | `entities/ai-knowledge-base-llm-wiki-practice-alicloud.md`
+
+> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-knowledge-base-llm-wiki-practice-alicloud-2026-06-26.md)
+
+阿里云开发者分享基于直播数据构建LLM Wiki知识底座的实践经验，探讨如何在AI时代管理和运用企业知识资产。
+
+## 一句话
+
+**基于直播数据场景的LLM Wiki实践，从知识采集到应用的完整链路。**
+
+## 核心内容
+
+### 背景挑战
+
+- 直播数据增长快、格式多样，传统知识管理方式难以应对
+- 需要支持多模态数据（文本、图像、时序）的统一管理
+- 业务场景复杂，需要快速检索和应用
+
+### 解决方案
+
+- **多源数据采集**：整合直播平台、用户反馈、运营数据等多种来源
+- **结构化处理**：使用LLM对非结构化数据进行理解和分类
+- **向量化存储**：支持语义检索的知识库设计
+- **持续更新**：建立知识的增量更新机制
+
+### 应用场景
+
+- 直播内容推荐优化
+- 运营决策支持
+- 用户问题自助回复
+
+## 深度分析
+
+### 1. 知识编译思维：从"写文档"到"编译知识"
+
+LLM Wiki 的核心洞见是将知识管理从"人工编写文档"模式升级为"编译知识"模式——把散落在 DDL、任务代码、钉钉文档、看板配置等载体中的原始材料，通过流水线编译为结构化、可验证的知识资产。这种思维转变的关键在于：**知识的问题出在知识本身，不在检索**。RAG 只是给散乱知识加了向量索引，并没有解决知识的矛盾、过期和离散问题。LLM Wiki 在检索之前加了一道"编译过程"，从源头治理知识质量。
+
+### 2. 四维质量框架：可解析、可下钻、可遍历、可度量
+
+Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（frontmatter + 正文双层结构，脚本可直接读取关系字段）、**层级可下钻**（域按业务主题嵌套，支持渐进式披露）、**关系可遍历**（血缘、归属、消费等关系显式存储为图）、**正确性可度量**（结构、语义、人工三层校验）。这四维框架把"知识库质量"从主观判断转化为可度量的工程指标，是 LLM Wiki 区别于传统维基的核心特征。
+
+### 3. 图即检索基础设施
+
+将关系从正文中抽取出来显式存储为图（8 种正向边 × 4 类语义），是 LLM Wiki 架构中最重要的设计决策之一。显式建图带来影响范围可计算、归属关系可聚合、枢纽节点可识别三个核心能力，同时也是多路召回的基础——命中一个节点后沿边扩展关联节点，覆盖关键词未命中但血缘强相关的知识。只存正向边 + 反向按需回填的设计，将存储减半且避免了一致性问题。
+
+### 4. "编译时 vs 运行时"的分工架构
+
+系统对知识做编译时知识（稳定、可预先结构化的信息）和运行时知识（查询那一刻才能确定的数据）的清晰划分。编译时知识固化到 Wiki 页面，运行时知识通过 Agent 工具调用现取。这种"编译时 + 运行时"的分工避免了将易变数据写入 Wiki 导致的持续腐化问题，使 Wiki 聚焦在"不变的事实层"。配合增量编译机制，构建成本只与变化量相关而非总规模。
+
+### 5. 编排与干活分离的系统架构
+
+7 个 skill 分层协作——编排层（wiki-orchestrator）只做意图路由、用户确认、调度和汇报，不读源材料、不写文件、不做 LLM 内容生成；干活层 6 个 skill 各司其职，通过文件系统约定的目录交互。这种拆分带来可并行（批内 5 路并发）、可独立调试（某阶段出错只重跑对应 skill）、可单独复用（任何 skill 可脱离编排器独立调用）三个收益。
+
+## 实践启示
+
+1. **从源头治理知识，而非加一层索引**：绝大多数团队面对知识散落的第一个想法是"上 RAG"。但 LLM Wiki 的实践表明——RAG 不改变知识本身的质量，只是把"人找不到"变成了"AI 找到了但答不准"。优先解决知识的矛盾、过期和离散问题，再考虑搜索方式。
+
+2. **代码即真相——多源冲突的仲裁原则**：当不同来源对同一对象描述不一致时，以任务代码为权威。注释和文档可能长期失修，但任务代码每天实际跑在生产上，代表系统当下的真实行为。这条单一规则把"以谁为准"的争议收敛到唯一答案。
+
+3. **生成与判断分离**：不要在生成阶段让 LLM 做主观推断。基础 Wiki 生成时 domain 等推断字段强制留空，所有页面落盘后再独立跑判断阶段。这道多余的工序防止 LLM 在信息不完整时做出错误推断，是工程质量的关键护栏。
+
+4. **渐进式披露对抗上下文瓶颈**：Agent 的上下文有限，知识库的层级结构必须支持从全景概览 → 核心域 → 关键页面 → 字段细节的逐层下钻。每次只加载一级，在上下文预算内传递最相关的信息。这是 LLM Wiki 区别于平铺式知识库的关键设计。
+
+5. **增量编译保证持续生命力**：知识不是一次建完就锁起来的。增量编译的目标是让构建成本只与变化量相关——未变化的部分跳过，变化的部分按依赖关系局部重跑。加上持续性 Lint 巡检，知识库的健康度从"构建时合格"变为"持续合格"。
+
+## 相关实体
+
+- [LLM Wiki知识管理](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-knowledge-management.md)
+- [Knowledge Base构建](https://github.com/QianJinGuo/wiki/blob/main/entities/knowledge-base-construction.md)
+- [阿里云AI实践](https://github.com/QianJinGuo/wiki/blob/main/entities/alicloud-ai-practices.md)
+
+## 标签
+
+#LLMWiki #知识底座 #阿里云 #直播数据 #知识管理
 
 ---
 

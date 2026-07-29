@@ -43,8 +43,8 @@ SkillComposer 将 Agent 技能选择建模为闭集技能序列生成任务，�
 
 ## 相关实体
 
-- [Agent Skills 完整指南](../ch04/273-skill.html)
-- [Agent 协议到 Harness Skill](../ch04/425-from-agent-protocol-to-harness-skill.html)
+- [Agent Skills 完整指南](../ch04/271-skill.html)
+- [Agent 协议到 Harness Skill](../ch04/426-from-agent-protocol-to-harness-skill.html)
 - [Claude Code Skills/MCP/Rules 分析](ch07/006-claude-code-skills-mcp-rules.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillcomposer-generative-skill-composition-agent-arxiv-2606-32025.md)

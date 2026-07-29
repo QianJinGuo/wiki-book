@@ -50,7 +50,7 @@ BioNeMo Agent Toolkit 的架构设计遵循"基础模型 + 科学工具 + 智能
 
 BioNeMo Agent Toolkit 代表了 AI 在科学研究中的应用从"工具辅助"到"智能体驱动"的范式转变。传统科研计算模式中，研究人员需要手动操作多个科学工具和库，在数据准备、参数调优、结果分析等环节花费大量精力。BioNeMo Agent Toolkit 通过智能体编排，将多步骤科学工作流自动化——从问题定义、数据采集、模型选择到结果解释，智能体可以端到端地执行科研任务。
 
-这与 [Agent Harness 架构](../ch05/057-agent-harness.html) 中的"编排-执行-反馈"循环模式高度一致，但将应用场景从软件开发延展到了科学计算领域。
+这与 [Agent Harness 架构](../ch05/058-agent-harness.html) 中的"编排-执行-反馈"循环模式高度一致，但将应用场景从软件开发延展到了科学计算领域。
 
 ### 生态集成策略的价值
 
@@ -64,7 +64,7 @@ BioNeMo Agent Toolkit 代表了 AI 在科学研究中的应用从"工具辅助"�
 
 1. **科学领域的 Agent 设计应坚持"领域知识优先"**：BioNeMo 的成功表明，科学 Agent 的核心竞争力在于领域专业知识的深度封装，而非通用推理能力的堆叠。开发者应优先构建高质量的领域知识库和专用工具集。
 
-2. **分层架构是科学 Agent 工程化的关键**：模型层、工具层、编排层的三层分离设计使得系统各组件可独立演进、灵活替换，这一模式值得在 [Hermes Agent 技能设计](../ch01/334-hermes-agent-skill.html) 等项目中参考借鉴。
+2. **分层架构是科学 Agent 工程化的关键**：模型层、工具层、编排层的三层分离设计使得系统各组件可独立演进、灵活替换，这一模式值得在 [Hermes Agent 技能设计](../ch01/332-hermes-agent-skill.html) 等项目中参考借鉴。
 
 3. **广泛生态集成比自建闭环更具战略价值**：NVIDIA 选择与多家 AI 平台和行业伙伴集成，而非要求所有用户使用自有平台。对于企业级 Agent 平台，开放集成策略可以显著降低用户迁移成本，加速 adoption。
 
@@ -77,8 +77,8 @@ BioNeMo Agent Toolkit 代表了 AI 在科学研究中的应用从"工具辅助"�
 - [NVIDIA Nemotron-3：Agent、RAG、语音与安全](../ch03/035-agent.html)
 - [NVIDIA NeMo AutoModel 微调](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemo-automodel-fine-tuning.md)
 - [NVIDIA 安全本地 Agent：NemoClaw 与 OpenClaw](ch04/410-nvidia-secure-local-agent-nemoclaw-openclaw.html)
-- [Hermes Agent 技能设计分析](../ch01/334-hermes-agent-skill.html)
-- [Agent Harness 架构](../ch05/057-agent-harness.html)
+- [Hermes Agent 技能设计分析](../ch01/332-hermes-agent-skill.html)
+- [Agent Harness 架构](../ch05/058-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-发布-bionemo-agent-toolkit加速科学发现的智能体工具.md)
 

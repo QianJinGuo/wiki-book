@@ -79,7 +79,7 @@ MLflow 本身是云无关的开源框架，而 AWS 将其托管在 SageMaker 中
    金融和医疗领域的 AI 应用面临模型决策可解释性和审计要求，内置的 faithfulness 和 correctness 指标可作为模型审计文档的自动化数据源，降低合规团队的人工复核成本。
 
 ## 相关实体
-- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/011-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
+- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/012-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
 - [Aws Generative Ai Model Agility Framework](ch11/155-aws-generative-ai-model-agility-framework.html)
 - [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/417-aws-sagemaker-ai-agent.html)
 - [Aws Bedrock Halliburton Seismic Workflow Genai](ch11/009-aws-bedrock.html)

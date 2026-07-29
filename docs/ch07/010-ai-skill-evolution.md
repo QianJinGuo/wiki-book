@@ -169,11 +169,11 @@ Skill 规则只写「必须约束」的部分，不写「可以推断」的部�
 **Q：AI Skill 测评需要哪些前提条件？**
 在正式开跑测评之前，需要准备三类资产：测试账号（拥有对应权限，能触发 Skill 的目标流程）、测试数据（对应场景的发票、单据等，类型必须和测试用例匹配），以及对被测 Skill 的规则清单（测评工具可以自动从 SKILL.md 提炼，但人工确认一遍更准确）。如果测试资产不匹配，用例会进入 INCONCLUSIVE（无法验证）状态，不代表失败，但必须补充资产后重跑，不能忽略。
 ## 相关实体
-- [Yidian Tianxia Context Engineering Agentic Ai](../ch04/260-yidian-tianxia-context-engineering-agentic-ai.html)
-- [Skill Formal Theory Survey 10Papers](../ch04/273-skill.html)
-- [Glm5 Scaling Pain Inference](../ch01/552-scaling.html)
+- [Yidian Tianxia Context Engineering Agentic Ai](../ch04/258-yidian-tianxia-context-engineering-agentic-ai.html)
+- [Skill Formal Theory Survey 10Papers](../ch04/271-skill.html)
+- [Glm5 Scaling Pain Inference](../ch01/551-scaling.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
-- [Gepa Optimize Anything](../ch01/297-gepa-optimize-anything.html)
+- [Gepa Optimize Anything](../ch01/295-gepa-optimize-anything.html)
 
 - [Auto Improving Agent Platform Ashpreetbedi Shensi](../ch03/035-agent.html)
 - [Hermes Skills Llm Wiki Self Improving Knowledge System](ch07/017-hermes-skill.html)
