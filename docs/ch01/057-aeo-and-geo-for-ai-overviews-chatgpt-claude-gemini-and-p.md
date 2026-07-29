@@ -12,9 +12,9 @@
 ## 相关实体
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 - [Tether Launches Developer Grants Program For Local First Ai ](../ch11/212-tether-launches-developer-grants-program-for-local-first-ai.html)
-- [Anthropic_Cache_Tokenomics](ch01/1327-anthropic.html)
+- [Anthropic_Cache_Tokenomics](ch01/986-anthropic.html)
 - [Introducing Claude For Small Business](ch01/027-introducing-claude-for-small-business.html)
-- [Wetesteddeepseekv4Proandflashagainstclau](ch01/1229-deepseek.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch01/1088-deepseek.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 

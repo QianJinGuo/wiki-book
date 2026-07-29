@@ -2,7 +2,7 @@
 
 ## Ch11.250 Simplify model selection in Amazon Bedrock with the open source Model Profiler
 
-> 📊 Level ⭐⭐ | 4.2KB | `entities/simplify-model-selection-in-amazon-bedrock-with-the-open-sou.md`
+> 📊 Level ⭐⭐ | 4.3KB | `entities/simplify-model-selection-in-amazon-bedrock-with-the-open-sou.md`
 
 # Simplify model selection in Amazon Bedrock with the open source Model Profiler
 
@@ -33,6 +33,10 @@ AWS Price List API | AWS API | IAM (Sigv4) | On-demand, batch, and reserved-tier
 AWS Service Quotas API | AWS API | IAM (Sigv4) | Tokens-per-minute (TPM) limits, requests-per-minute (RPM) quotas, and throughput constraints  
 Amazon Bedrock ListInferenceProfiles API | AWS API | IAM (Sigv4) | Cross-region inference configurations and geographic scopes  
 Amazon Bedrock Mantle API | AWS API | IAM (Sigv4) | Mantle inference availabi
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

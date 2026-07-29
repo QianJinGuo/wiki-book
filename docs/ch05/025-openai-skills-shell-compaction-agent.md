@@ -182,7 +182,7 @@ Glean 的生产经验表明，基于技能的路由在初期会导致正确触�
 
 ### 4. `/mnt/data` 模式代表 Agent 架构从"内存推理"到"磁盘推理"的范式转变
 
-将工具输出写入 `/mnt/data`、模型基于磁盘文件进行下一步推理、开发者从磁盘检索 artifact 制品——这一模式的核心意义在于将模型的"工作记忆"外部化。  传统 Agent 中模型依靠上下文窗口内的信息推理，当上下文被压缩后信息丢失；而磁盘推理模式下压缩仅影响元数据，核心产出物的完整性不受影响。这与 [Harness Engineering Long Term Agent Tasks](ch05/112-harness-engineering.html) 中"持久化中间状态"的设计原则一致。
+将工具输出写入 `/mnt/data`、模型基于磁盘文件进行下一步推理、开发者从磁盘检索 artifact 制品——这一模式的核心意义在于将模型的"工作记忆"外部化。  传统 Agent 中模型依靠上下文窗口内的信息推理，当上下文被压缩后信息丢失；而磁盘推理模式下压缩仅影响元数据，核心产出物的完整性不受影响。这与 [Harness Engineering Long Term Agent Tasks](ch05/120-harness-engineering.html) 中"持久化中间状态"的设计原则一致。
 
 ### 5. 技能作为企业 SOP 载体，压缩了"多工具编排"与"单工具调用"之间的准确性鸿沟
 
@@ -200,7 +200,7 @@ Glean 针对 Salesforce 的技能将准确率从 73% 提升至 85%，首 token �
 
 ### 及早为长周期运行设计：容器复用 + Compaction 默认开启
 
-长周期 Agent 的成功很少来自"一劳永逸"的提示词，而需要在架构设计初期就考虑连续性。  具体实践：在设计技能时就将 `previous_response_id` 的传递纳入考量；将 Compaction 配置为默认开启而非手动触发；跨步骤复用同一个容器实例以保持依赖和缓存的稳定性。参见 [Harness Engineering Reliable Long Term Agent](ch05/112-harness-engineering.html) 的持续性设计模式。
+长周期 Agent 的成功很少来自"一劳永逸"的提示词，而需要在架构设计初期就考虑连续性。  具体实践：在设计技能时就将 `previous_response_id` 的传递纳入考量；将 Compaction 配置为默认开启而非手动触发；跨步骤复用同一个容器实例以保持依赖和缓存的稳定性。参见 [Harness Engineering Reliable Long Term Agent](ch05/120-harness-engineering.html) 的持续性设计模式。
 
 ### 对于需要确定性的生产工作流，使用显式命令而非依赖模型路由
 
@@ -215,10 +215,10 @@ Skills + Shell + 开放网络访问是高风险组合。  推荐默认安全姿�
 Skills 同时适用于托管 Shell 和本地 Shell 模式，且在同一 API 下保持行为一致。  推荐的开发节奏是：本地环境下快速迭代技能定义和示例 → 验证无误后迁移到托管容器获得可重复性和部署一致性。对于企业级技能，建议在 CI/CD 流程中加入"本地验证 → 托管验证"的双阶段门禁。
 
 ## 相关主题
-- [Skills Anthropic Openai Comparison Frontend Design](../ch01/715-skills-anthropic-openai-comparison-frontend-design.html) — Anthropic/Google Skills 设计模式对比
+- [Skills Anthropic Openai Comparison Frontend Design](../ch01/717-skills-anthropic-openai-comparison-frontend-design.html) — Anthropic/Google Skills 设计模式对比
 - [Claude Code Openclaw Memory Comparison](../ch03/077-claude-code.html) — OpenClaw vs Claude Code 内存对比
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md) — 上下文窗口管理方案对比
-- [Harness Engineering Long Term Agent Tasks](ch05/112-harness-engineering.html) — 长周期 Agent 的 Harness 设计
+- [Harness Engineering Long Term Agent Tasks](ch05/120-harness-engineering.html) — 长周期 Agent 的 Harness 设计
 
 ---
 
