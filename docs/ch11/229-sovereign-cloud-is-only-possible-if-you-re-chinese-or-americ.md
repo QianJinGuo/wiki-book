@@ -68,8 +68,8 @@ Toombs 引用波士顿咨询集团的"三四法则"：稳定竞争市场中不�
 
 - [越南发展国内云](ch11/196-vietnam-to-develop-domestic-cloud.html)
 - [越南国内云](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
-- [澳大利亚多云 Agent 编排](../ch04/513-agent-orchestration.html)
-- [5237660](../ch01/1239-0.html)
+- [澳大利亚多云 Agent 编排](../ch04/515-agent-orchestration.html)
+- [5237660](../ch01/1240-0.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5237660.md)
 

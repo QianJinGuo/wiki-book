@@ -65,7 +65,7 @@ Nova 采用 0-1000 归一化坐标而非直接的像素坐标，这是一个影�
 
 ### Serverless 架构的成本经济学
 
-文章推荐的 Lambda + API Gateway + S3 + CloudFront 组合，本质上是将"空闲成本"降为零。Lambda 按调用计费，无请求时完全不产生费用；Bedrock API 本身也是按 token 计费。 结合 [Bedrock Serverless 架构案例](ch11/293-amazon-bedrock.html) 的经验，这种模式在日均处理量波动大或不可预测的场景下（农业季节性采集、物流大促期间）具有明显优势。对于日均 1.2M 张图像的农业场景，$200/season 的成本远低于自建 GPU 集群的固定支出。
+文章推荐的 Lambda + API Gateway + S3 + CloudFront 组合，本质上是将"空闲成本"降为零。Lambda 按调用计费，无请求时完全不产生费用；Bedrock API 本身也是按 token 计费。 结合 [Bedrock Serverless 架构案例](ch11/294-amazon-bedrock.html) 的经验，这种模式在日均处理量波动大或不可预测的场景下（农业季节性采集、物流大促期间）具有明显优势。对于日均 1.2M 张图像的农业场景，$200/season 的成本远低于自建 GPU 集群的固定支出。
 
 ### 三行业用例的泛化性分析
 
@@ -73,13 +73,13 @@ Nova 采用 0-1000 归一化坐标而非直接的像素坐标，这是一个影�
 
 ### Prompt 模板的可复用性工程
 
-模板中 `elements`（检测目标列表）和 `schema`（输出 JSON 结构）作为变量动态注入，使同一模板可复用于完全不同的检测任务。 这种设计将"任务定义"与"执行引擎"分离，是 [Nova Lite Fine-Tuning](ch11/304-amazon-nova.html) 一文中微调路线的对立面——后者通过训练固化任务知识，前者通过语言输入动态指定任务。对于需要频繁切换检测目标的场景（如质检线上切换产品类型），模板化设计的工程价值尤为突出。
+模板中 `elements`（检测目标列表）和 `schema`（输出 JSON 结构）作为变量动态注入，使同一模板可复用于完全不同的检测任务。 这种设计将"任务定义"与"执行引擎"分离，是 [Nova Lite Fine-Tuning](ch11/305-amazon-nova.html) 一文中微调路线的对立面——后者通过训练固化任务知识，前者通过语言输入动态指定任务。对于需要频繁切换检测目标的场景（如质检线上切换产品类型），模板化设计的工程价值尤为突出。
 
 ## 实践启示
 
 ### 快速验证优先于复杂架构
 
-30-45 分钟即可完成端到端部署意味着团队应**先验证再优化**。在投入生产级基础设施前，用 Lambda + Bedrock Converse API 原型验证目标类别的检测效果。对于street scene 这类开放场景，"vehicle" 和 "stop sign" 的 baseline 测试能快速暴露模型在遮挡、小目标上的能力边界。 验证完成后再决定是否需要 [Nova Lite 微调](ch11/304-amazon-nova.html) 或自定义模型。
+30-45 分钟即可完成端到端部署意味着团队应**先验证再优化**。在投入生产级基础设施前，用 Lambda + Bedrock Converse API 原型验证目标类别的检测效果。对于street scene 这类开放场景，"vehicle" 和 "stop sign" 的 baseline 测试能快速暴露模型在遮挡、小目标上的能力边界。 验证完成后再决定是否需要 [Nova Lite 微调](ch11/305-amazon-nova.html) 或自定义模型。
 
 ### Prompt 模板是核心工程资产
 
@@ -87,7 +87,7 @@ Nova 采用 0-1000 归一化坐标而非直接的像素坐标，这是一个影�
 
 ### 生产部署优先考虑 Serverless 弹性
 
-对于日均处理量不可预测的场景（农业季节性采集、电商大促、突发质检任务），Lambda 的自动扩缩容 + Bedrock 按调用计费是最优成本结构。 当日均调用量超过约 50K 张图像时，可评估 Bedrock Provisioned Throughput 的预留容量方案，将边际成本降低 30-50%。[详细架构参考](ch11/293-amazon-bedrock.html)。
+对于日均处理量不可预测的场景（农业季节性采集、电商大促、突发质检任务），Lambda 的自动扩缩容 + Bedrock 按调用计费是最优成本结构。 当日均调用量超过约 50K 张图像时，可评估 Bedrock Provisioned Throughput 的预留容量方案，将边际成本降低 30-50%。[详细架构参考](ch11/294-amazon-bedrock.html)。
 
 ### 坐标转换是必须处理的实现细节
 

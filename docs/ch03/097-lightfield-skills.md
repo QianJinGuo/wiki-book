@@ -87,9 +87,9 @@ Lightfield 的挑战在于：如果 Skills 只在自家平台上可用，其网�
 ## 相关实体
 
 - [Memento-Skills — 技能外部记忆让 Agent 自进化](../ch04/415-memento-skills-agent.html)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/145-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [SkillOS](../ch04/273-skill.html)
-- [Browser Act — Agent 技能工具](../ch04/271-agent-skill.html)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [SkillOS](../ch04/271-skill.html)
+- [Browser Act — Agent 技能工具](../ch04/269-agent-skill.html)
 - [Hermes Agent — 技能系统与插件架构](ch03/095-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lightfield-introducing-skills.md)

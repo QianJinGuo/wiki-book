@@ -35,7 +35,7 @@
 - **内参数优化**：模型经预训练和后训练得到的参数可通过推理数据持续精调
 - **外参数优化**：基于上下文的因果锚定Few-shot，来自于高精度推理数据生成的业务知识和对抗式因果，对最终推理结果影响重大
 
-这种「数据即参数」的视角，与[AReaL 2.0的在线强化学习闭环](../ch04/329-agentic-rl.html)形成互补——前者聚焦数据生成，后者聚焦训练基础设施。
+这种「数据即参数」的视角，与[AReaL 2.0的在线强化学习闭环](../ch04/327-agentic-rl.html)形成互补——前者聚焦数据生成，后者聚焦训练基础设施。
 
 ### Agent三重困局的系统化解法
 
@@ -47,7 +47,7 @@
 | 优化难 | 缺乏有效动态测试，系统处于无反馈状态 | 测试提供反馈，对整个系统结构和超参数进行优化 |
 | 答不准 | 经典LLM+RAG架构通常只有~70%准确度 | 离线生成海量cQrA，为在线推理注入逻辑先验（类比考前刷题） |
 
-这一框架与[Harness Engineering](../ch05/112-harness-engineering.html)中强调的「可观测性→反馈→优化」闭环高度吻合。
+这一框架与[Harness Engineering](../ch05/120-harness-engineering.html)中强调的「可观测性→反馈→优化」闭环高度吻合。
 
 ### 从Nature通讯到工业级Agent基础设施
 
@@ -69,10 +69,10 @@
 
 ## 相关实体
 
-- [DeepSeek V4](ch01/692-deepseek-v4.html) — 同为登上Nature主要期刊的中国AI公司
-- [AReaL 2.0](../ch04/329-agentic-rl.html) — 在线强化学习基础设施，与推理数据生成互补
+- [DeepSeek V4](ch01/694-deepseek-v4.html) — 同为登上Nature主要期刊的中国AI公司
+- [AReaL 2.0](../ch04/327-agentic-rl.html) — 在线强化学习基础设施，与推理数据生成互补
 - [AI自我改进：从Harness开始](../ch05/009-harness.html) — Agent通过运行轨迹持续优化的理念
-- [Harness Engineering](../ch05/112-harness-engineering.html) — Agent工程治理的系统方法论
+- [Harness Engineering](../ch05/120-harness-engineering.html) — Agent工程治理的系统方法论
 - [Agent落地真相](../ch03/035-agent.html) — Agent从演示到投产的核心挑战
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek之后中国ai自己出题杀进nature通讯全球仅4家.md)

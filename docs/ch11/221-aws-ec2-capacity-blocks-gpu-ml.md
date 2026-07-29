@@ -49,10 +49,10 @@ Capacity Blocks填补了"灵活但贵"与"便宜但僵化"之间的中间地带�
 ### 大规模部署提前量
 对于生产部署或重大活动（如Hackathon）需要大量GPU容量，文章建议**至少提前三周**联系AWS account team评估需求并制定容量策略。
 ### 与知识库的连接
-- 容量感知推理Fallback机制（[Aws Sagemaker Capacity Aware Inference Fallback](../ch01/337-aws-sagemaker-capacity-aware-inference-fallback.html)）体现了GPU资源管理的另一面——当容量受限时如何优雅降级
+- 容量感知推理Fallback机制（[Aws Sagemaker Capacity Aware Inference Fallback](../ch01/335-aws-sagemaker-capacity-aware-inference-fallback.html)）体现了GPU资源管理的另一面——当容量受限时如何优雅降级
 - 两者共同构成GPU资源管理的"预订-使用-降级"完整链路
 ## 相关实体
-- [SageMaker容量感知推理：实例池+优先级Fallback](../ch01/337-aws-sagemaker-capacity-aware-inference-fallback.html)
+- [SageMaker容量感知推理：实例池+优先级Fallback](../ch01/335-aws-sagemaker-capacity-aware-inference-fallback.html)
 - [Building Blocks for Foundation Model Training and Inference on AWS](ch11/121-building-blocks-for-foundation-model-training-and-inference.html)
 ---
 *Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-ec2-capacity-blocks-gpu-ml.md)*

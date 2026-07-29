@@ -191,17 +191,17 @@ AI可观测、AI评测、Agent安全——SLA衡量标准与传统架构不同�
 > "架构治理会越来越多地通过规则、元数据、CI、权限和 Harness 自动执行。"
 
 ## 相关实体
-- [Agent Harness Context Management Working Set](ch05/057-agent-harness.html)（相关：上下文装载层是 Harness 第一层）
-- [Agent Harness Architecture](ch05/057-agent-harness.html)（相关：Harness 7 层是 agent-harness-architecture 的具体化）
-- [Agent Harness Engineering Survey 2026](ch05/112-harness-engineering.html)（相关：Harness Engineering 综述与本文 Harness 7 层互补）
-- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](../ch01/1010-spec.html)（相关：Spec as AIOS 是 Spec 工程化的另一视角）
-- [Gaode Sdd Harness Team Ai Coding Paradigm Ibjfu](ch05/108-ai-coding.html)（相关：高德 Harness/SDD 体系演进同主题）
+- [Agent Harness Context Management Working Set](ch05/058-agent-harness.html)（相关：上下文装载层是 Harness 第一层）
+- [Agent Harness Architecture](ch05/058-agent-harness.html)（相关：Harness 7 层是 agent-harness-architecture 的具体化）
+- [Agent Harness Engineering Survey 2026](ch05/120-harness-engineering.html)（相关：Harness Engineering 综述与本文 Harness 7 层互补）
+- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](../ch01/1013-spec.html)（相关：Spec as AIOS 是 Spec 工程化的另一视角）
+- [Gaode Sdd Harness Team Ai Coding Paradigm Ibjfu](ch05/111-ai-coding.html)（相关：高德 Harness/SDD 体系演进同主题）
 - [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)（相关：评测体系一脉相承）
 - [AI Friendly 架构设计（淘天久游）](ch05/022-ai-friendly.html)（同主题另一视角）
 
 → [第 1 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-friendly-architecture-design-taobao.md)
 → [第 2 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-friendly-backend-architecture-standard-pathway-alibaba-liu-ruizhou-2026.md)
-- [协作涌现：agent room 的多智能体决策框架](../ch04/701-agent-room.html)
+- [协作涌现：agent room 的多智能体决策框架](../ch04/705-agent-room.html)
 - [从全量启动到最小核：手淘外链唤端链路的三次架构演进](https://github.com/QianJinGuo/wiki/blob/main/entities/从全量启动到最小核手淘外链唤端链路的三次架构演进.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

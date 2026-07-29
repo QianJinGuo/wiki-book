@@ -1,58 +1,62 @@
-# 生产级 Agent 全景框架 (叶小钗)
+# Agent评测的反直觉感悟：质量优化与可规模化性的取舍
 
-## Ch04.658 生产级 Agent 全景框架 (叶小钗)
+## Ch04.658 Agent评测的反直觉感悟：质量优化与可规模化性的取舍
 
-> 📊 Level ⭐⭐ | 3.4KB | `entities/production-grade-agent-framework-yexiaochai.md`
+> 📊 Level ⭐⭐ | 3.4KB | `entities/agent-eval-counterintuitive-insights-langfuse.md`
 
-# 生产级 Agent 全景框架 (叶小钗)
+# Agent评测的反直觉感悟：质量优化与可规模化性的取舍
 
-叶小钗基于 6 场企业培训总结的生产级 Agent 系统性框架，覆盖**架构、Harness 工程、组织与人才**三大维度，回答 "Agent 进入企业后应该做什么、怎样做成可长期运行的生产系统" 这一核心问题。
+## 摘要
 
-## 核心框架
+基于 Langfuse 实战经验，揭示 Agent 评测中的核心反直觉现象：**质量优化可能破坏产品可规模化性**。Tracing 的价值不在调试，而在让成本-质量取舍成为产品评审中可讨论的线索。
 
-### Agent 在企业中的定位
-传统企业软件 = System of Record。Agent 增加 **认知与行动层**，形成三层结构：用户入口与交互层 + 认知与行动层 + 业务记录层。
+## 核心要点
 
-### Workflow vs Agent 选型矩阵
-以业务知识专业程度（横轴）× 行动复杂度（纵轴）二维判断：
-- **Workflow**：固定流程、规则稳定
-- **知识工程**：专业知识重（知识库 + Skill + 本体）
-- **通用 Agent**：Deep Research / Coding / 办公助手
-- **业务型 Agent**：金融/法律/医疗（专业知识+多轮行动）
+### Bad Case 归因的陷阱
 
-## 技术架构
+从用户 bad case 入手做评测归因是常见做法，但 bad case 有四个棘手特征：
+- **极端边界**：不代表典型用户场景
+- **模型幻觉**：随机性强，难以系统性修复
+- **技术修复 ROI 高**：修复单个 bad case 可能引入更大成本
+- **偶发性**：难以稳定复现，修复效果难以验证
 
-8 层架构：Agent Loop → Tool 层 → Context 层 → 编排与会话管理 → Skill 与插件层 → 观测与评估 → 任务与调度 → 治理层。
+更关键的是：修好 bad case 后，token 成本可能反而上升。
 
-其中 **Harness** 是核心概念：模型外围的整套运行机制，负责每次模型调用前组装合适 Context，返回后推动任务继续。大量 Agent 问题出在 Harness 而非模型本身。
+### 反直觉核心：质量优化破坏可规模化性
 
-## Tool / Skill / Pipeline / Agent 四概念
+一个 Agent 如果每次做 8 次检索、3 次 rerank、5 次模型调用，demo 会显得很聪明，但线上变成不可承受的成本结构。这不是假设，而是 Langfuse Tracing 能直接暴露的现实。
 
-| 概念 | 解决的问题 |
-|------|-----------|
-| Tool | Agent 可以执行什么动作 |
-| Skill | 某类任务应该怎样完成 |
-| Pipeline | 谁在什么阶段使用什么能力交付 |
-| Agent | 谁长期承担这类任务 |
+具体表现：
+- **更多上下文塞进 prompt** → 短期提升准确率，但 token 成本和 latency 上升
+- **引入更强 judge / 更多 self-check** → 体验等待变长
+- **增加检索和 rerank 次数** → 答案更稳，但每个请求的成本翻倍
 
-## AI 原生组织四层
+这一洞察与 [Llm Observability 4 Layer Model](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-observability-4-layer-model.md) 中的成本监控层直接相关。
 
-1. **Context Layer**：汇聚跨系统信息，动态装配
-2. **Pipeline Layer**：定义角色/阶段/输入/输出/交付标准
-3. **Skill Layer**：保存组织做事方法
-4. **Agent Governance Layer**：Agent 作为执行单元管理
+### Tracing 的真正价值
 
-## 生产级成熟度 6 阶段
+Trace 的价值不是"总成本高"或"整体慢"这类笼统结论，而是：
+- **哪一个 Observation 让成本失控** — 精确定位成本热点
+- **哪一步阻塞了用户等待** — 精确定位延迟瓶颈
 
-聊天 → 调用工具 → 规划产出成果 → 长时间运行（队列/Heartbeat/断点恢复）→ 被治理（身份/权限/审计）→ 沉淀能力（Skill/评测集）
+Tracing 让成本-质量取舍不再停留在架构师脑中，而变成产品评审中可讨论的线索。这是将技术决策透明化的产品化实践。
 
-Demo 通常只覆盖前两个阶段。生产系统的大部分工程集中在后四个阶段。
+## 深度分析
 
-## 多 Agent 设计原则
+本文的核心价值在于提出了一个可操作的评估框架：**用 Tracing 驱动产品决策，而非仅用于调试**。传统 Agent 评测关注"答对没有"，而本文关注"答对的代价是什么"——这是一个从工程视角到产品视角的转换。
 
-先回答两个问题：用户是否需要长期认识多个角色（产品形态）？当前任务是否需要多个执行单元协作（运行架构）？
+与离线评测方法论互补：离线评测验证功能正确性，Tracing 验证生产可规模化性。
 
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/生产级-agent-全景架构harness-工程组织与人才.md)
+## 实践启示
+
+1. **评测时同时关注正确性和成本**：每个 bad case 修复后，追踪 token 成本变化
+2. **用 Observation 级别而非 Task 级别分析成本**：定位具体哪一步消耗过多
+3. **在产品评审中引入 Tracing 数据**：让非技术人员也能理解成本-质量取舍
+4. **警惕"demo 聪明，线上昂贵"的陷阱**：8 次检索 + 3 次 rerank + 5 次模型调用可能是过度优化
+
+## 相关实体
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-eval-counterintuitive-insights-langfuse.md)
 
 ---
 ## 关联

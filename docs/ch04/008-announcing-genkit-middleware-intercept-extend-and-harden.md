@@ -67,7 +67,7 @@ Genkit 明确指出中间件从左到右组合，第一个列出的在最外层�
 
 - [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/182-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/182-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Exaforce | Agentic SOC Platform and MDR](ch04/633-agentic.html)
+- [Exaforce | Agentic SOC Platform and MDR](ch04/237-agentic.html)
 
 ---
 
