@@ -31,7 +31,7 @@ AI 生成代码 → AI 自动审查 → 人类重点审查——三层审查模�
 审查工具（diff 可视化、AI 审查助手、自动测试）比写代码工具更重要。
 
 ## 相关实体
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch05/094-ai.html)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch01/035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
 - [Products Are Out Brains Are In](ch01/135-products-are-out-brains-are-in.html)
 - Investing In Stitch

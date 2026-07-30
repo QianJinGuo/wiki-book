@@ -7,9 +7,9 @@
 # Anthropic's Zero Trust for AI Agents Sets the Right Test. The Bearer Token Fails It
 
 ## 相关实体
-- [microsoft is quietly shopping for an openai replacement](ch05/094-ai.html)
+- [microsoft is quietly shopping for an openai replacement](ch01/036-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [vietnam to develop domestic cloud](ch01/1116-opd.html)
-- [akamai acquires israeli ai browser security startup layerx f](ch05/094-ai.html)
+- [akamai acquires israeli ai browser security startup layerx f](../ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropics-zero-trust-for-ai-agents-sets-the-right-test-the.md)
 

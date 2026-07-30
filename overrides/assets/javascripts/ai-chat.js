@@ -12,6 +12,7 @@
  var PRESETS = [
    { name: "默认 (站点内置)", endpoint: "", apiKey: "", model: "" },
    { name: "OpenCode (DeepSeek)", endpoint: "", apiKey: "", model: "deepseek-v4-flash-free", _provider: "opencode" },
+   { name: "Sensenova (DeepSeek)", endpoint: "", apiKey: "", model: "deepseek-v4-flash", _provider: "sensenova" },
    { name: "DeepSeek", endpoint: "https://api.deepseek.com/v1/chat/completions", apiKey: "", model: "deepseek-chat" },
     { name: "讯飞星火", endpoint: "https://spark-api-open.xf-yun.com/v1/chat/completions", apiKey: "", model: "generalv3.5" },
     { name: "MiMo (OpenRouter)", endpoint: "https://openrouter.ai/api/v1/chat/completions", apiKey: "", model: "xiaomi/mimo-v2.5-pro" },

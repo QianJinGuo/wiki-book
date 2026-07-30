@@ -11,15 +11,15 @@
 pi-mono 是一个 npm workspace monorepo 的 TypeScript 项目，提供构建 AI Agent 的工具链。OpenClaw 的 Agent 执行引擎几乎全部构建在 pi-mono 之上。
 
 ## 相关实体
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/271-skill.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/271-skill.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/397-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/397-agent-skills.html)
 - [Cursor Harness Model Production Floor](ch01/265-cursor-harness-model-production-floor.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/047-coding-agent.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/451-vibe-coding-agentic-engineering.html)
 - [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](ch01/1091-deepseek.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pi-mono-github.md)
 
-- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](ch05/094-ai.html)
+- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](ch01/989-anthropic.html)
 
 ## 深度分析
 

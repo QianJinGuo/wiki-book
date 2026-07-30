@@ -29,12 +29,12 @@ Chime Prime 的推出（要求 $3,000+ 月薪 direct deposit）标志着从「�
 - [Inngest - AI in Production: The 2026 Benchmark Report](ch01/561-inngest-ai-in-production-the-2026-benchmark-report.html)
 - 吴恩达2026新课上线！3小时包教包会，零代码小白也能成为AI超级玩家
 
-- [stripe sessions 2026 ai](ch04/446-stripe-sessions-2026-ai.html)
-- [stripe sessions 2026 ai agents](ch04/363-stripe-sessions-2026-ai-agents.html)
+- [stripe sessions 2026 ai](../ch04/446-stripe-sessions-2026-ai.html)
+- [stripe sessions 2026 ai agents](../ch04/363-stripe-sessions-2026-ai-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 
-- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为AI超级玩家](ch05/094-ai.html)
+- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为AI超级玩家](../ch05/094-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chime-earnings-q1-2026-ai-upmarket.md)
 
 ---

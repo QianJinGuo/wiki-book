@@ -6,7 +6,7 @@
 
 ## Overview
 Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是**去框架化**：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。
-与 [AgentBrowser](ch09/071-agent-browser-claude-code-qoderwork.html)、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互。
+与 [AgentBrowser](../ch09/071-agent-browser-claude-code-qoderwork.html)、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互。
 
 ## 架构
 ```
@@ -48,7 +48,7 @@ Agent 在处理 GitHub、LinkedIn、Amazon 等特定网站时，自动沉淀交�
 | Domain Skills | ✅ 自动沉淀 | ❌ 无 | ❌ 无 | ❌ |
 | 安装复杂度 | 低（uv install -e .） | 中等 | 高（需配置 WebDriver） | 中等 |
 | 适用场景 | Agent 原生操作浏览器 | Agent 浏览器运行时 | 测试自动化 | Agent 浏览器操作 |
-与 [CLI-Anything](ch03/100-cli-anything.html)/[OpenCLI](ch03/087-opencli.html)/[AutoCLI](ch03/124-autocli.html) 等 CLI 化方案不同，Browser Harness 走的是**浏览器原生操作**路线而非命令行封装，二者互补而非替代。
+与 [CLI-Anything](../ch03/101-cli-anything.html)/[OpenCLI](../ch03/088-opencli.html)/[AutoCLI](../ch03/125-autocli.html) 等 CLI 化方案不同，Browser Harness 走的是**浏览器原生操作**路线而非命令行封装，二者互补而非替代。
 
 ## 安全边界
 连接到用户真实 Chrome，遵循原则：

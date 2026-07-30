@@ -129,11 +129,11 @@ AHE 的架构选择（Tool Description、Middleware、Skill 作为独立可编�
 在分配进化计算资源时，优先选择「离饱和越远」的模型和任务组合——同样的进化投入，在低饱和场景下可以获得 3-5 倍的相对收益。对于已接近任务上界的模型，应该将优化方向从「提升绝对性能」转向「降低 token 消耗」或「提升跨任务鲁棒性」。
 
 ## 相关实体
-- [Harness Engineering Framework](ch05/120-harness-engineering.html)
-- [Harness Engineering 第三代工程范式](ch05/120-harness-engineering.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/271-skill.html)
+- [Harness Engineering Framework](../ch05/120-harness-engineering.html)
+- [Harness Engineering 第三代工程范式](../ch05/120-harness-engineering.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/298-ai-agent.html)
 - [Tencent Vibe Coding To Agentic Engineering Backend](ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](ch04/271-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/090-harness-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fudan-peking-ahe-agentic-harness-engineering.md)
 

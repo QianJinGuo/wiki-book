@@ -22,13 +22,13 @@
 
 百度搭子此次升级的核心技术亮点是 Harness 引擎引入的"环境路由"机制。系统根据任务的计算需求、响应速度要求和数据安全等级，在云端沙箱、本地沙箱以及 Chat 模式之间自动选择合适的执行环境：需要高算力时调用云端资源，强调低延迟或数据安全时切换到本地环境。这种动态环境编排机制使任务平均耗时降低 20%，Token 利用率提升 25%。
 
-从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 视角分析，环境路由本质上是将执行环境的异构性从用户侧抽象掉，让 Agent 在统一语义层上运行，底层资源调度由框架自动完成。这与 [Agent Harness 上下文管理工作集](ch03/035-agent.html) 的设计思路一致——将基础设施的复杂性封装在引擎层，暴露给上层应用的始终是简洁的编程接口。
+从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 视角分析，环境路由本质上是将执行环境的异构性从用户侧抽象掉，让 Agent 在统一语义层上运行，底层资源调度由框架自动完成。这与 [Agent Harness 上下文管理工作集](../ch05/058-agent-harness.html) 的设计思路一致——将基础设施的复杂性封装在引擎层，暴露给上层应用的始终是简洁的编程接口。
 
 ### 企业版 Skill 接入标准：Agent 互联的桥梁架构
 
 企业版发布的行业首个企业级 Skill 接入标准，本质上解决了 Agent 生态中最棘手的「连接问题」——企业内部系统和第三方 SaaS 服务的接口碎片化。该标准在百度搭子技能体系与企业自有系统之间搭建了一座统一的桥梁，将内外部能力整合成标准化的可复用 Skill。
 
-这一设计的工程价值在于：它把传统"每个系统单独对接 Agent"的 M×N 连接复杂度，降低为"一次对接标准、多次复用 Skill"的 M+N 复杂度。这与 [MCP 协议设计](ch07/016-anthropic-mcp.html) 在工具调用标准化方面的思路一致，只是粒度从「工具」扩展到了「完整业务流程」。
+这一设计的工程价值在于：它把传统"每个系统单独对接 Agent"的 M×N 连接复杂度，降低为"一次对接标准、多次复用 Skill"的 M+N 复杂度。这与 [MCP 协议设计](../ch07/016-anthropic-mcp.html) 在工具调用标准化方面的思路一致，只是粒度从「工具」扩展到了「完整业务流程」。
 
 ### Agent 资产沉淀循环：从个人效率到组织智能
 
@@ -57,9 +57,9 @@
 ## 相关实体
 
 - [LingBot-VA 具身原生模型](https://github.com/QianJinGuo/wiki/blob/main/entities/全球首个具身原生世界动作模型来了.md)
-- [MCP 协议设计](ch07/016-anthropic-mcp.html)
+- [MCP 协议设计](../ch07/016-anthropic-mcp.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Agent Harness 上下文管理工作集](ch03/035-agent.html)
+- [Agent Harness 上下文管理工作集](../ch05/058-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/刚刚百度搭子全面升级要让agent接住人类90以上的活.md)
 

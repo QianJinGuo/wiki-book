@@ -71,7 +71,7 @@ Morphllm 的三个技术选择——训练专属推测器、自动搜索 kernel�
 5. **考虑跨机器缓存共享的架构**：对于多 GPU 部署，即使没有 NVLink，通过 TCP 共享前缀缓存也能显著降低 time-to-first-token（最高 84%）。前提是缓存命中率足够高，使得 TCP 获取优于本地重计算。
 
 ## Related
-- [NVIDIA Enpire agent self-improvement](ch03/035-agent.html)
+- [NVIDIA Enpire agent self-improvement](../ch04/237-agentic.html)
 
 ---
 ## 关联

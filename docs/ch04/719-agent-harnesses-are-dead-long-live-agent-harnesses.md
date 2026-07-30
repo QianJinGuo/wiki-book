@@ -30,7 +30,7 @@ Garry Tan 精准指出：Harness 应该是薄的。Harness 是管道（plumbing�
 
 当构建变得便宜时，受影响的不只是创业公司——现有 SaaS 巨头同样面临挑战。每个企业用户只使用了所购软件的"一小部分功能"，他们在脑中运行着自己的定制版本。当构建成本趋近于零，企业的第一直觉是"我只构建我真正需要的"，这意味着传统 SaaS 的"功能膨胀"定价模式面临根本性质疑。
 
-这与 [Hermes Agent Operator](ch03/095-hermes-agent.html) 中讨论的"Agent 可运营性"形成呼应——当 Agent 构建足够便宜，竞争焦点从"能否构建"转向"能否运营和持续改进"。
+这与 [Hermes Agent Operator](../ch03/096-hermes-agent.html) 中讨论的"Agent 可运营性"形成呼应——当 Agent 构建足够便宜，竞争焦点从"能否构建"转向"能否运营和持续改进"。
 
 ### 2. 真正能复利的事物
 
@@ -49,13 +49,13 @@ Moura 提出的核心概念：从物理学借用的"纠缠"隐喻——当两个
 
 这与过去三十年软件的工作方式完全相反——我们一直构建工具并要求人类适应它们。纠缠式软件翻转了这一假设：软件适应行为，而不是行为适应软件。这在没有 Agent 之前是不可能的。
 
-**对 Agent 系统的含义**：Agent 系统正在演变为"纠缠式 Agent 系统"（Entangled Agentic Systems）。当 Agent 真正部署到客户的流程、数据和工作中，它们变得完全纠缠——客户无法轻易替换，因为 Agent 已经深度嵌入其运营方式。这与 [Harness Engineering 核心模式](ch03/077-claude-code.html) 中讨论的"Agent 与工作流的深度耦合"一致。
+**对 Agent 系统的含义**：Agent 系统正在演变为"纠缠式 Agent 系统"（Entangled Agentic Systems）。当 Agent 真正部署到客户的流程、数据和工作中，它们变得完全纠缠——客户无法轻易替换，因为 Agent 已经深度嵌入其运营方式。这与 [Harness Engineering 核心模式](../ch05/120-harness-engineering.html) 中讨论的"Agent 与工作流的深度耦合"一致。
 
 ### 4. "路，而不是车"——基础设施 vs 应用层的价值分配
 
 框架和 Harness 的争论是关于"如何造车"。但赢得这个时代的公司不会是造出最好车的公司，而是造出"路"的公司——信任、数据和适应的基础设施，每辆车都需要在这条路上行驶。
 
-这一洞察与 [Claude Code 动态工作流](ch05/094-ai.html) 中讨论的"工作流即基础设施"观点一致：真正的护城河不是 Agent 框架本身，而是围绕 Agent 建立的运营数据、用户习惯和组织流程。
+这一洞察与 [Claude Code 动态工作流](../ch09/094-claude-code-dynamic-workflows.html) 中讨论的"工作流即基础设施"观点一致：真正的护城河不是 Agent 框架本身，而是围绕 Agent 建立的运营数据、用户习惯和组织流程。
 
 ### 5. CrewAI 的平台化转型
 
@@ -71,19 +71,19 @@ CrewAI 同时构建了框架（CrewAI Flows）和 Harness（CrewAI Crews and Age
 
 3. **纠缠式软件是终极锁定**：如果 Agent 深度嵌入客户的工作流、数据和决策模式，替换成本将远超任何合同条款。设计 Agent 产品时应优先考虑"纠缠深度"——Agent 与客户运营的耦合程度——而非功能数量。
 
-4. **Harness 选型的未来-proof 原则**：优先选择那些"薄而开放"的 Harness（如 [Hermes Agent](ch03/095-hermes-agent.html)），它们提供核心约束但不绑定到特定模型或基础设施。避免选择"厚而封闭"的 Harness，后者在模型提供商吸收栈后迅速贬值。
+4. **Harness 选型的未来-proof 原则**：优先选择那些"薄而开放"的 Harness（如 [Hermes Agent](../ch03/096-hermes-agent.html)），它们提供核心约束但不绑定到特定模型或基础设施。避免选择"厚而封闭"的 Harness，后者在模型提供商吸收栈后迅速贬值。
 
 5. **"路 vs 车"的资源配置**：在 Agent 产品组合中，区分"车"（Agent 功能/界面）和"路"（数据管道、反馈循环、信任机制）。前者需要快速迭代但不必完美，后者需要深度投资因为它是长期护城河。建议"路"的投入是"车"的 2-3 倍。
 
 ## 相关实体
 
-- [Hermes Agent Operator](ch03/095-hermes-agent.html)
-- [Harness Engineering 核心模式](ch03/077-claude-code.html)
-- [Claude Code 动态工作流](ch05/094-ai.html)
-- [Harness Generator-Evaluator](ch05/009-harness.html)
+- [Hermes Agent Operator](../ch03/096-hermes-agent.html)
+- [Harness Engineering 核心模式](../ch05/120-harness-engineering.html)
+- [Claude Code 动态工作流](../ch09/094-claude-code-dynamic-workflows.html)
+- [Harness Generator-Evaluator](../ch01/989-anthropic.html)
 - [Agent Reliability Engineering](ch04/271-skill.html)
-- [当 AI 构建自身](ch05/094-ai.html)
-- [Prime Intellect Auto NanoGPT](ch01/742-9.html)
+- [当 AI 构建自身](../ch01/989-anthropic.html)
+- [Prime Intellect Auto NanoGPT](../ch01/742-9.html)
 
 ---
 

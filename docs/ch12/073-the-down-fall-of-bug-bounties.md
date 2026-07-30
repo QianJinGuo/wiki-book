@@ -9,7 +9,7 @@
 
 ## 相关实体
 
-- [anthropic acquires stainless](ch04/650-anthropic-acquires-stainless.html)
+- [anthropic acquires stainless](../ch04/650-anthropic-acquires-stainless.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/down-fall-of-bug-bounties.md)
 
 ## 深度分析
@@ -26,7 +26,7 @@ HackerOne 选择用 AI 对抗 AI，试图通过自动化检测识别 AI 生成�
 作者坦承自己参与 bug bounty 的动力已从经济回报彻底转向对技术的纯粹热爱——这是经济激励失效的危险信号。 当顶尖研究员发现其十年积累的可信度在平台算法中毫无权重、提交高价值漏洞得不到及时响应时，理性选择是转向能快速验证成果的平台，或将精力投入纯粹以兴趣为导向的研究。人才流失将进一步降低平台的有效报告密度，形成恶性循环。
 
 ### 安全研究的自动化博弈：防御方的结构性劣势
-更宏观地看，AI 正在重塑安全研究的攻防经济学。勒索软件集团已经开始使用 LLM 生成了30种语言的钓鱼邮件，而 bug bounty 自动化工具有能力快速完成 fuzz→分类→利用的全链路（参见 [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](ch01/1016-spec.html)）。防御方若不拥有并运营自己的 AI 工具，将在反应速度上处于系统性劣势。这一趋势意味着传统依赖人工审查的 bug bounty 模式，不仅在人力资源上面临 AI slop 的压力，在与攻击方的自动化博弈中也逐渐丧失优势。
+更宏观地看，AI 正在重塑安全研究的攻防经济学。勒索软件集团已经开始使用 LLM 生成了30种语言的钓鱼邮件，而 bug bounty 自动化工具有能力快速完成 fuzz→分类→利用的全链路（参见 [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](../ch01/038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.html)）。防御方若不拥有并运营自己的 AI 工具，将在反应速度上处于系统性劣势。这一趋势意味着传统依赖人工审查的 bug bounty 模式，不仅在人力资源上面临 AI slop 的压力，在与攻击方的自动化博弈中也逐渐丧失优势。
 
 ### 平台与社区的认知错位
 作者批评平台在应对 AI 浪潮时缺乏对自身社区的深层理解——尤其是对那些贡献了十年高水平研究的老牌研究员缺乏差异化保护机制。 这种「 hacker first 」精神的背离，正在腐蚀 bug bounty 计划最初存在的社区信任基础。Uber 作为作者持续贡献近十年的平台，其对待高质量报告的冷漠态度，是一个警示性的案例：当平台将所有报告一视同仁地置入噪音队列，它实际上是在向最 valuable 的贡献者发送退出信号。

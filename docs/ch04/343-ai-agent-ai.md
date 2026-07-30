@@ -43,7 +43,7 @@ Tabbit 的四阶迭代过程直观展示了这一演进：从传统网址输入 
 Tabbit 的 "Browser + Agent + Workflow" 架构标志着浏览器从"信息展示工具"向"任务执行平台"的转变。其关键架构特性包括：
 
 - **Agent 运行时写入浏览器内核**：传统浏览器中，标签页是网页的容器；在 Tabbit 架构中，标签页被 Agent 调度系统接管，AI 可以跨页面执行信息采集、表单填写和文件生成等操作。
-- **多模型调度层**：不绑定单一模型体系，而是将模型能力以可切换、可调度的形式存在，根据任务类型、响应效果或成本条件动态调用不同的模型。这与 [Agent Harness 招聘场景](ch03/035-agent.html) 中提到的"多模型路由"架构一致。
+- **多模型调度层**：不绑定单一模型体系，而是将模型能力以可切换、可调度的形式存在，根据任务类型、响应效果或成本条件动态调用不同的模型。这与 [Agent Harness 招聘场景](../ch05/058-agent-harness.html) 中提到的"多模型路由"架构一致。
 - **自主 Agent 能力**：Tabbit 的 Agent 可以自主跨网页执行复杂任务（信息采集、表单填写、文件生成），其成功率在公测期内从 53.1% 提升到 91.8%，展示了 AI 原生浏览器的自主学习能力。
 
 ### 技术分化背后的商业逻辑
@@ -76,10 +76,10 @@ AI 原生浏览器是 [Harness Engineering](https://github.com/QianJinGuo/wiki/b
 
 ## 相关实体
 
-- [Agent Harness 招聘场景](ch03/035-agent.html)
-- [Agent Harness 生产化](ch03/035-agent.html)
-- [Perplexity 自改进记忆](ch05/094-ai.html)
-- [AI Native 企业转型](ch05/094-ai.html)
+- [Agent Harness 招聘场景](../ch05/058-agent-harness.html)
+- [Agent Harness 生产化](../ch05/058-agent-harness.html)
+- [Perplexity 自改进记忆](../ch05/094-ai.html)
+- [AI Native 企业转型](../ch05/018-ai-native.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent 可观测性](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-observability.md)
 

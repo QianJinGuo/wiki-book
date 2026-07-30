@@ -41,7 +41,7 @@
 
 ## 相关实体
 - 
-- [Thread Openai Devs](ch05/094-ai.html)
+- [Thread Openai Devs](ch01/390-openai.html)
 - [Thread Patrickogrady](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-patrickogrady.md)
 - [Thread 0Xcheeezzyyyy](ch01/1243-0.html)
 

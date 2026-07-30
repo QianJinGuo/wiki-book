@@ -85,15 +85,15 @@ OpenViking 的虚拟文件系统范式解决了这些问题：
 
 1. **Agent 记忆是 2026 年 Agent 产品的关键差异化能力**：无状态 Agent 正在快速变得不可接受。无论是自建还是使用 OpenViking 这样的开源方案，Agent 团队都应该将"持久化记忆"作为产品的标配能力。
 2. **虚拟文件系统范式值得关注**：相比传统 chunk-based RAG，虚拟文件系统范式在组织效率、Token 效率和记忆积累三个方面都有显著优势，特别适合需要长期跟进客户关系的场景。
-3. **"编排 + 记忆"正在成为 Agent 架构的标准模式**：AgentPlan 作为编排中枢、OpenViking 作为记忆体——这套架构与 [如何利用 Agentcore Openviking 快速搭建具备高效记忆的 Agent](ch03/035-agent.html) 中介绍的 AWS Bedrock AgentCore + OpenViking 方案高度一致，说明行业正在收敛到类似的架构模式。
+3. **"编排 + 记忆"正在成为 Agent 架构的标准模式**：AgentPlan 作为编排中枢、OpenViking 作为记忆体——这套架构与 [如何利用 Agentcore Openviking 快速搭建具备高效记忆的 Agent](../ch03/035-agent.html) 中介绍的 AWS Bedrock AgentCore + OpenViking 方案高度一致，说明行业正在收敛到类似的架构模式。
 4. **产品设计要以"Aha moment"为核心**：不要一次性铺开所有功能，而是设计 1-2 个让用户"第一次用就感到惊喜"的关键场景。对销售助手来说，"拜访前 10 秒生成完整客户档案"比"功能丰富但需要学习"的体验更有说服力。
 
 ## 相关实体
 
-- [AgentCore + OpenViking 搭建指南](ch03/035-agent.html)
-- [火山引擎 Data Agent 产品概述](ch03/035-agent.html)
-- [火山引擎 Agentic 全栈数据管理](ch03/035-agent.html)
-- [火山引擎 AI 搜索 Agent 架构](ch05/094-ai.html)
+- [AgentCore + OpenViking 搭建指南](../ch03/035-agent.html)
+- [火山引擎 Data Agent 产品概述](ch04/667-data-agent.html)
+- [火山引擎 Agentic 全栈数据管理](ch04/237-agentic.html)
+- [火山引擎 AI 搜索 Agent 架构](../ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/99-元月用-agentplan-openviking-给销售团队配一个不会忘事的-ai-助手-bytedance.md)
 

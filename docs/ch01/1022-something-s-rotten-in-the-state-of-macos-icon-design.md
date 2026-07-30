@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](ch01/913-20.html)
-- [Shub Reaper Macos Stealer Attack Chain](ch05/094-ai.html)
+- [Shub Reaper Macos Stealer Attack Chain](../ch05/094-ai.html)
 - [Www Referenceboard App](https://github.com/QianJinGuo/wiki/blob/main/entities/www-referenceboard-app.md)
 - [Apple Silicon Costs More Than Openrouter](ch01/398-apple-silicon-costs-more-than-openrouter.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)

@@ -45,7 +45,7 @@ Boris Cherny 的判断代表了 Anthropic 对这一技术选型的官方立场�
 
 Claude Code 本身就是一个高度 Agent Harness 化的系统——它给模型提供了文件系统访问、终端、浏览器等工具。在这种架构下，让 Agent 自己去"翻文件、搜代码、查文档"比预先构建向量数据库更自然，也更符合"像人一样工作"的设计理念。
 
-这与 [Claude Code 源码分析](ch03/077-claude-code.html) 中揭示的架构一致：Claude Code 的核心不是 RAG pipeline，而是工具编排能力。
+这与 [Claude Code 源码分析](../ch03/078-claude-code.html) 中揭示的架构一致：Claude Code 的核心不是 RAG pipeline，而是工具编排能力。
 
 ### 实践中的平衡策略
 
@@ -75,7 +75,7 @@ Claude Code 本身就是一个高度 Agent Harness 化的系统——它给模�
 - RAG
 - Agent Harness
 - Agent 记忆系统
-- [Claude Code 源码分析](ch03/077-claude-code.html)
+- [Claude Code 源码分析](../ch03/078-claude-code.html)
 - [Karpathy: Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 
 ---

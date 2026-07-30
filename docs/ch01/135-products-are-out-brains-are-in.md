@@ -26,7 +26,7 @@
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 - [Microsoft For Startups Microsoft](ch01/1010-microsoft-for-startups-microsoft.html)
 - [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
-- [White House Federal Identity Security Ai](ch05/094-ai.html)
+- [White House Federal Identity Security Ai](../ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/products-are-out-brains-are-in.md)
 

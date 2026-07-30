@@ -11,11 +11,11 @@ Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称： 
 这篇文章发在他的 Newsletter「Import AI」第 455 期，标题直接挑明了主题：  ** AI 系统即将开始自我构建。  **
 
 ## 相关实体
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch03/035-agent.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)
 - [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
-- [Anthropic Pm Jess Yan Managed Agents](ch03/035-agent.html)
-- [Anthropic Claude Managed Agents Platform 2026](ch01/604-anthropic-claude.html)
-- [Claude Code Hackathon Winners 2026](ch03/077-claude-code.html)
+- [Anthropic Pm Jess Yan Managed Agents](ch01/989-anthropic.html)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/212-anthropic-claude-managed-agents.html)
+- [Claude Code Hackathon Winners 2026](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic联创2028-ai自我构建概率超60.md)
 

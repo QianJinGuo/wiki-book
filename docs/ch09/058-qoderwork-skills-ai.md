@@ -31,7 +31,7 @@
 - **references/（知识层）**：上下文窗口是稀缺资源。SKILL.md只告诉Agent"怎么做"，references/回答"为什么这么做"。Agent在正常执行时读SKILL.md就够了；当用户追问时再按需引用references/——这是"渐进式披露"的核心实践。
 - **config.yaml（参数层）**：将"跨会话持久化"的配置从运行时对话中剥离出来，避免每次启动时重复收集信息。
 
-这一架构与[Harness Engineering](ch05/120-harness-engineering.html)中的"三层叠加"（Prompt → Context → Harness）异曲同工：四层分离正是Harness Engineering在Skill粒度上的具体实现。
+这一架构与[Harness Engineering](../ch05/120-harness-engineering.html)中的"三层叠加"（Prompt → Context → Harness）异曲同工：四层分离正是Harness Engineering在Skill粒度上的具体实现。
 
 ### 2. Follow Builders vs Frontend Slides——两种Skill设计范式的对比
 
@@ -55,7 +55,7 @@
 | 复用性 | 每次从头对话 | 一次编写多次调用 |
 | 团队协作 | 个人经验 | 团队知识沉淀 |
 
-这一演进映射了AI工程化从"让AI更聪明"到"让系统更可控"的范式转变——不是追求模型本身能力的提升，而是通过工程手段将确定性注入概率性系统。这与[Agent落地真相](ch03/035-agent.html)中"从跑通到投产"的鸿沟是同一枚硬币的两面。
+这一演进映射了AI工程化从"让AI更聪明"到"让系统更可控"的范式转变——不是追求模型本身能力的提升，而是通过工程手段将确定性注入概率性系统。这与[Agent落地真相](../ch03/035-agent.html)中"从跑通到投产"的鸿沟是同一枚硬币的两面。
 
 ### 4. 测试驱动Skill开发的70-80%法则
 
@@ -64,7 +64,7 @@
 - 反复测试直到Agent在不同温度参数下都能稳定产出符合Schema的输出
 - 通过`find-skills`元Skill检索社区已有方案，避免重复造轮子
 
-这一数字与[Agent配置模型](ch04/271-skill.html)中"配置需要反复调参"的经验高度一致——AI工程的测试成本远高于传统软件工程，因为概率性系统的行为空间远大于确定性系统。
+这一数字与[Agent配置模型](../ch04/271-skill.html)中"配置需要反复调参"的经验高度一致——AI工程的测试成本远高于传统软件工程，因为概率性系统的行为空间远大于确定性系统。
 
 ### 5. "给代码不如给流程"的深层含义
 
@@ -89,12 +89,12 @@ Agent不擅长的事情：把控商业数据分析流程、理解隐性业务约
 
 ## 相关实体
 
-- [Harness Engineering探索之旅](ch05/120-harness-engineering.html)
-- [Agent配置模型](ch04/271-skill.html)
-- [Agent落地真相](ch03/035-agent.html)
-- [淘宝数字人Agentic架构](ch03/035-agent.html)
-- [阿里巴巴NL2SQL Harness](ch05/120-harness-engineering.html)
-- [AI友好后端标准](ch05/094-ai.html)
+- [Harness Engineering探索之旅](../ch05/120-harness-engineering.html)
+- [Agent配置模型](../ch04/271-skill.html)
+- [Agent落地真相](../ch03/035-agent.html)
+- [淘宝数字人Agentic架构](../ch04/237-agentic.html)
+- [阿里巴巴NL2SQL Harness](../ch05/120-harness-engineering.html)
+- [AI友好后端标准](../ch05/022-ai-friendly.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - AI原生工程
 

@@ -31,10 +31,10 @@ CLI Agent 的核心特征在于 Shell 级的进程编排能力：管道组合（
 ## 相关实体
 
 - [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/271-skill.html)
-- [如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch04/271-skill.html)
-- [Agent-EvalKit：AWS 开源 CLI Agent 评测工具包](ch03/035-agent.html)
-- [CLI-Anything：让 Agent 自主驱动任意 GUI 软件](ch03/100-cli-anything.html)
-- [AI Agent 的内核是 250 行 while 循环：用 Python + Ollama 从零搭建 CLI Agent 的 7 阶段教程](ch03/035-agent.html)
+- [如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch04/298-ai-agent.html)
+- [Agent-EvalKit：AWS 开源 CLI Agent 评测工具包](../ch03/035-agent.html)
+- [CLI-Anything：让 Agent 自主驱动任意 GUI 软件](../ch03/101-cli-anything.html)
+- [AI Agent 的内核是 250 行 while 循环：用 Python + Ollama 从零搭建 CLI Agent 的 7 阶段教程](ch04/617-python.html)
 
 ---
 

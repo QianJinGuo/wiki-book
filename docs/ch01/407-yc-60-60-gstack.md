@@ -80,7 +80,7 @@
 
 **1. 流程化是多人 Agent 协作从混乱到可管理的关键**
 
-在没有流程的情况下，并行运行多个 Agent 只会产生混乱——每个 Agent 独立决策、资源冲突、重复工作、甚至相互否定 。gstack 的核心洞察是：一旦引入结构化流程，管理多个 Agent 的方式与 CEO 管理团队完全相同——重要决策介入，其余让它们跑。这个转变意味着 [Multi Agent Architecture Retail Practice](ch05/094-ai.html) 的瓶颈不在于 Agent 数量，而在于是否有清晰的流程定义。
+在没有流程的情况下，并行运行多个 Agent 只会产生混乱——每个 Agent 独立决策、资源冲突、重复工作、甚至相互否定 。gstack 的核心洞察是：一旦引入结构化流程，管理多个 Agent 的方式与 CEO 管理团队完全相同——重要决策介入，其余让它们跑。这个转变意味着 [Multi Agent Architecture Retail Practice](../ch03/035-agent.html) 的瓶颈不在于 Agent 数量，而在于是否有清晰的流程定义。
 
 **2. 分工精细化（15个角色）是专业化与效率平衡的结果**
 
@@ -88,7 +88,7 @@ gstack 定义了 15 个高度专业化的角色，从 `/office-hours`（问题�
 
 **3. QA 角色是并行效率倍增的杠杆**
 
-将 QA 角色引入并行流程后，6 个工作流可以扩展到 12 个 。原因是 Claude 看到问题后 → 修复 → 生成回归测试 → 验证，形成了一个自我强化的循环。这意味着在 [Agent Harness Engineering Survey 2026](ch03/035-agent.html) 中，验证闭环不仅是质量保障的手段，更是吞吐量提升的杠杆——更好的验证机制允许更激进的并行。
+将 QA 角色引入并行流程后，6 个工作流可以扩展到 12 个 。原因是 Claude 看到问题后 → 修复 → 生成回归测试 → 验证，形成了一个自我强化的循环。这意味着在 [Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html) 中，验证闭环不仅是质量保障的手段，更是吞吐量提升的杠杆——更好的验证机制允许更激进的并行。
 
 **4. 设计文档（DESIGN.md）是多 Agent 协作的锚点**
 

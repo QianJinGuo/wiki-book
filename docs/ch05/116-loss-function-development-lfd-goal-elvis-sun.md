@@ -295,18 +295,18 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 
 ## 相关实体
 
-- [Interconnects The Distillation Panic](ch01/642-the-distillation-panic.html)（蒸馏恐慌 — 同期产业反应）
+- [Interconnects The Distillation Panic](../ch01/642-the-distillation-panic.html)（蒸馏恐慌 — 同期产业反应）
 - [Loop Engineering Addy Osmani Challengehub](ch05/004-loop-engineering.html)（Loop Engineering — Addy Osmani 同主线）
-- [Openspec Spec Driven Development Trae Solo](ch01/1016-spec.html)（Spec-driven 同对照）
-- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch05/094-ai.html)（Spec-as-AIOS — 抗熵增架构）
-- [Claude Code Vs Hermes Session Vs Goal Lifecycle](ch03/077-claude-code.html)（session vs goal lifecycle 对照）
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/095-hermes-agent.html)（Hermes Agent Goal runtime 对照）
-- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](ch03/077-claude-code.html)（Claude Code 100 行 loop 同主线）
-- [Openclaw Boris Cherny Agent Loop Design Patterns](ch03/035-agent.html)（OpenClaw agent loop 对照）
-- [Mimo Code Xiaomi Coding Harness 2026](ch05/009-harness.html)（MiMo Code Max Mode + Goal 机制同主线）
-- [Snowflake Agentic Enterprise Summit 2026](ch03/035-agent.html)（Snowflake — 可审计治理同主线）
-- [Hermes Agent Goal And Kanban](ch03/095-hermes-agent.html)（Hermes Goal + Kanban 对照）
-- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](ch05/094-ai.html)（接触面控制对照）
+- [Openspec Spec Driven Development Trae Solo](ch05/050-openspec.html)（Spec-driven 同对照）
+- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch05/018-ai-native.html)（Spec-as-AIOS — 抗熵增架构）
+- [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/078-claude-code.html)（session vs goal lifecycle 对照）
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/381-hermes-agent-goal.html)（Hermes Agent Goal runtime 对照）
+- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](../ch03/078-claude-code.html)（Claude Code 100 行 loop 同主线）
+- [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/601-agent-loop.html)（OpenClaw agent loop 对照）
+- [Mimo Code Xiaomi Coding Harness 2026](ch05/112-harness-2026.html)（MiMo Code Max Mode + Goal 机制同主线）
+- [Snowflake Agentic Enterprise Summit 2026](../ch04/237-agentic.html)（Snowflake — 可审计治理同主线）
+- [Hermes Agent Goal And Kanban](../ch04/381-hermes-agent-goal.html)（Hermes Goal + Kanban 对照）
+- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/080-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)（接触面控制对照）
 - [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)（RL 数据质量对照 — 强制熵的同源思想）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)

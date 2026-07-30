@@ -12,10 +12,10 @@
 
 ## 相关实体
 - [Skillclaw Collective Intelligence](ch04/271-skill.html)
-- [Hermes Skill System Winty](ch04/271-skill.html)
+- [Hermes Skill System Winty](../ch07/017-hermes-skill.html)
 - [Ai Skill Skill Creator 源码拆解](ch04/319-skill-skill.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](ch04/271-skill.html)
-- [Agent Skill Writing Guide](ch04/271-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/090-harness-skill.html)
+- [Agent Skill Writing Guide](ch04/269-agent-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillsieve-agent-skill-security.md)
 

@@ -7,14 +7,14 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md)
 
 ## 核心产品
-- [Claude Managed Agents 平台](ch01/604-anthropic-claude.html)
+- [Claude Managed Agents 平台](ch01/212-anthropic-claude-managed-agents.html)
 - Claude 系列模型（Claude Haiku/Sonnet/Opus）
 - Claude Code 开发工具
 
 ## 核心研究
 - [Natural Language Autoencoders（NLAs）](ch01/1330-natural-language-autoencoders-anthropic.html) — 激活→文字翻译
-- [LLM 内省意识检测](ch01/1016-spec.html)
-- [MCP 协议](ch07/016-anthropic-mcp.html)
+- [LLM 内省意识检测](../ch04/166-anthropic-llm.html)
+- [MCP 协议](../ch07/016-anthropic-mcp.html)
 
 ## 深度分析
 ### 对齐泛化失败问题

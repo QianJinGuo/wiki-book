@@ -134,29 +134,29 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 **性能基准**：P@5 49.1%、R@5 97.9%。关闭 KG 功能后 P@5 下降 31.4pp，优于纯 ripgrep-BM25+向量 RAG 。
 
 ## 相关实体
-- [AgentBrowser](ch09/071-agent-browser-claude-code-qoderwork.html)
-- [企业级AI记忆基质三层架构：事实/交互/行动记忆](ch05/094-ai.html)
-- [Agent 自我改进的六条路](ch03/035-agent.html)
+- [AgentBrowser](../ch09/071-agent-browser-claude-code-qoderwork.html)
+- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/094-ai.html)
+- [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](ch01/913-20.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [SkillClaw](ch04/271-skill.html)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/271-skill.html)
-- [OpenHuman: AI Agent 持久记忆框架](ch05/094-ai.html)
+- [SkillClaw](../ch04/474-skillclaw-nacos-agent-skill-registry.html)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
+- [OpenHuman: AI Agent 持久记忆框架](../ch04/121-agent-memory.html)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 
-- [AutoCLI](ch03/124-autocli.html)
-- [阿里巴巴 Aone 面向 Agent 的研发模式探索](ch03/035-agent.html)
-- [CLI-Anything](ch03/100-cli-anything.html)
-- [AgentRun](ch03/035-agent.html)
-- [OpenCLI](ch03/087-opencli.html)
+- [AutoCLI](../ch03/125-autocli.html)
+- [阿里巴巴 Aone 面向 Agent 的研发模式探索](../ch04/055-aone-agentic.html)
+- [CLI-Anything](../ch03/101-cli-anything.html)
+- [AgentRun](../ch04/003-agentrun.html)
+- [OpenCLI](../ch03/088-opencli.html)
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
-- [24h打工人](ch03/035-agent.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch05/094-ai.html)
-- [hermes-agent-self-evolving-source-analysis](ch03/095-hermes-agent.html)
-- [Agent 原理、架构与工程实践](ch03/035-agent.html)
-- [AI Agent 工程师能力地图](ch05/094-ai.html)
+- [24h打工人](../ch03/035-agent.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
+- [hermes-agent-self-evolving-source-analysis](../ch03/096-hermes-agent.html)
+- [Agent 原理、架构与工程实践](../ch03/035-agent.html)
+- [AI Agent 工程师能力地图](../ch04/298-ai-agent.html)
 
-- [agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（memguide/sti](ch03/035-agent.html)
+- [agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（memguide/sti](../ch04/121-agent-memory.html)
 
 ## 第 3 来源：术哥无界 v0.42.44.0 源码深度解析
 

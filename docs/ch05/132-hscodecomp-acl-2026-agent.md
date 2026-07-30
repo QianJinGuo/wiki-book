@@ -45,13 +45,13 @@ Level 3 三大天然挑战：层级深一步错步步错、语义边界模糊（
 
 ## 与现有 Agent 评测体系的关系
 
-HSCodeComp 定位在现有 Deep Search 基准的盲区——测量 Agent 在"规则/知识中心"而非"检索算力中心"任务上的真实能力。决策成败不取决于算力或推理深度，而取决于能否检索到正确的专家规则并严格逐层应用。这与 [AINMM](ch05/094-ai.html) 的 ML2→ML3 验证门禁升级方向一致——验证回路不依赖模型"想更多"而依赖规则锚定。
+HSCodeComp 定位在现有 Deep Search 基准的盲区——测量 Agent 在"规则/知识中心"而非"检索算力中心"任务上的真实能力。决策成败不取决于算力或推理深度，而取决于能否检索到正确的专家规则并严格逐层应用。这与 [AINMM](ch05/018-ai-native.html) 的 ML2→ML3 验证门禁升级方向一致——验证回路不依赖模型"想更多"而依赖规则锚定。
 
 ## 链接
 
 - [Harness Engineering](ch05/120-harness-engineering.html) — Agent Harness 提供 +8.5pt 增益，验证了 Harness 对规则应用的基础作用
-- [AINMM 成熟度模型](ch05/094-ai.html) — 验证回路依赖规则锚定而非模型自省
-- [AI Agent 评测 5 维体系](ch05/094-ai.html) — 评测方法论参考
+- [AINMM 成熟度模型](ch05/018-ai-native.html) — 验证回路依赖规则锚定而非模型自省
+- [AI Agent 评测 5 维体系](ch05/111-ai-coding.html) — 评测方法论参考
 - [评估 Harness 设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md) — 任务设计与评测方法论
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hscodecomp-acl-2026-best-resource-paper.md)

@@ -84,9 +84,9 @@ Lindsey（2025）首次在 Claude 模型中观察到内省现象，但对其机�
 ## 相关实体
 
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](ch05/009-harness.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/095-hermes-agent.html)
-- [Ath Agent Trust Handshake Protocol](ch03/035-agent.html)
+- [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/381-hermes-agent-goal.html)
+- [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/271-skill.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 

@@ -75,10 +75,10 @@ def lambda_handler(event, context=None):
 
 ### 关联实体
 
-- [Google Brings Local Ai Agents To Laptops With Gemma 4 12B 20260606](ch05/094-ai.html)
-- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](ch05/094-ai.html)
-- [Ai Friendly Architecture Design Taobao](ch05/094-ai.html)
-- [Headroom Context Compression Agent Vibecoder](ch03/035-agent.html)
+- [Google Brings Local Ai Agents To Laptops With Gemma 4 12B 20260606](../ch01/1033-google-brings-local-ai-agents-to-laptops-with-gemma-4-12b.html)
+- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch05/094-ai.html)
+- [Ai Friendly Architecture Design Taobao](../ch05/022-ai-friendly.html)
+- [Headroom Context Compression Agent Vibecoder](../ch03/035-agent.html)
 - [5237875](https://github.com/QianJinGuo/wiki/blob/main/entities/5237875.md)
 - [Demis Hassabis Yc Interview Jiedaotixi](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-jiedaotixi.md)
 

@@ -49,7 +49,7 @@ print(result['content'][0]['text'])
 
 ### 2. 通过 Bedrock AgentCore 集成
 
-在 [Amazon Bedrock AgentCore](ch03/035-agent.html) 中，可以将 OpenAI 模型配置为 Agent 的推理引擎，实现完整的工具调用、记忆管理和多步推理：
+在 [Amazon Bedrock AgentCore](../ch04/515-amazon-bedrock-agentcore-harness-ga-api-agent.html) 中，可以将 OpenAI 模型配置为 Agent 的推理引擎，实现完整的工具调用、记忆管理和多步推理：
 
 ```json
 {
@@ -62,7 +62,7 @@ print(result['content'][0]['text'])
 
 ### 3. 作为 Codex Agent 的推理后端
 
-[OpenAI Codex on Bedrock](ch05/094-ai.html) 可直接使用 Bedrock 作为推理运行时，Codex 的编码 Agent 能力与 Bedrock 的安全基础设施深度整合——适合需要企业级审计和合规的软件开发场景。
+[OpenAI Codex on Bedrock](../ch11/295-amazon-bedrock.html) 可直接使用 Bedrock 作为推理运行时，Codex 的编码 Agent 能力与 Bedrock 的安全基础设施深度整合——适合需要企业级审计和合规的软件开发场景。
 
 ## 模型对比与选型
 
@@ -91,18 +91,18 @@ GPT-5.5 在 Bedrock 上表现出显著的 Agentic Coding 能力提升：
 
 ### 多模型路由策略
 
-在实际生产部署中，建议采用[多模型路由](ch01/1274-llm.html)策略：将简单查询路由到 GPT-5.4（低成本），复杂推理任务使用 GPT-5.5，编码自动化使用 Codex。通过 Bedrock 的单一 API 端点实现模型间无缝切换。
+在实际生产部署中，建议采用[多模型路由](../ch11/042-litellm-amazon-bedrock.html)策略：将简单查询路由到 GPT-5.4（低成本），复杂推理任务使用 GPT-5.5，编码自动化使用 Codex。通过 Bedrock 的单一 API 端点实现模型间无缝切换。
 
 ### 成本管控
 
-[Bedrock 模型选择器](ch11/250-simplify-model-selection-in-amazon-bedrock-with-the-open-sou.html)可以帮助团队基于任务复杂度自动选择最优模型。结合 AWS 的成本管理工具，可实现：
+[Bedrock 模型选择器](../ch11/250-simplify-model-selection-in-amazon-bedrock-with-the-open-sou.html)可以帮助团队基于任务复杂度自动选择最优模型。结合 AWS 的成本管理工具，可实现：
 - 按团队/项目维度的模型调用成本拆分
 - 月度预算预警与自动限流
 - 模型调用量的可视化和趋势分析
 
 ### 安全合规
 
-通过 [Bedrock AgentCore 安全加固](ch11/259-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)，可以为 OpenAI 模型的调用叠加多层防护：
+通过 [Bedrock AgentCore 安全加固](../ch11/259-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)，可以为 OpenAI 模型的调用叠加多层防护：
 - WAF 策略：过滤恶意输入和提示注入攻击
 - 数据加密：TLS 传输加密 + KMS 静态加密
 - 审计日志：所有模型调用写入 CloudTrail，满足 SOC2/GDPR 合规要求
@@ -110,12 +110,12 @@ GPT-5.5 在 Bedrock 上表现出显著的 Agentic Coding 能力提升：
 
 ## 与 Anthropic 模型的混合使用
 
-Bedrock 的一大优势是可以在同一平台上混合使用 OpenAI 和 [Anthropic Claude](ch05/094-ai.html) 模型。典型场景：
+Bedrock 的一大优势是可以在同一平台上混合使用 OpenAI 和 [Anthropic Claude](ch01/989-anthropic.html) 模型。典型场景：
 - **代码生成**：使用 OpenAI Codex 做代码生成
 - **安全审查**：使用 Claude 做代码安全审计（取长补短）
 - **成本优化**：简单任务用 Claude Haiku，复杂任务用 GPT-5.5
 
-这种混合策略已在 [某头部科技公司](ch11/122-aws-bedrock-agentcore-quality-optimization-flywheel.html) 的生产环境中验证，综合成本降低 30-40%，同时保持输出质量。
+这种混合策略已在 [某头部科技公司](../ch11/122-aws-bedrock-agentcore-quality-optimization-flywheel.html) 的生产环境中验证，综合成本降低 30-40%，同时保持输出质量。
 
 ## 深度分析
 
@@ -125,7 +125,7 @@ OpenAI 模型登陆 Bedrock 不仅是产品集成，更是 AI 基础设施走向
 
 ### 多模型路由策略的工程经济学
 
-三层路由（简单→GPT-5.4、复杂→GPT-5.5、编码→Codex）具有清晰的工程经济学依据：GPT-5.4 的 token 价格约为 GPT-5.5 的 1/3-1/2，假设一个应用 60% 的请求是简单查询路由到 GPT-5.4，40% 的复杂请求使用 GPT-5.5，综合成本降低约 30%。加上 AWS 承诺消费抵扣，实际成本降低可达 40-50%。更重要的是，多模型路由消除了"单点故障"——当某个模型出现性能退化或服务中断时，流量可自动切换到替代模型。这与 [LiteLLM + Bedrock 四层成本控制](ch01/1274-llm.html) 中的框架一致。
+三层路由（简单→GPT-5.4、复杂→GPT-5.5、编码→Codex）具有清晰的工程经济学依据：GPT-5.4 的 token 价格约为 GPT-5.5 的 1/3-1/2，假设一个应用 60% 的请求是简单查询路由到 GPT-5.4，40% 的复杂请求使用 GPT-5.5，综合成本降低约 30%。加上 AWS 承诺消费抵扣，实际成本降低可达 40-50%。更重要的是，多模型路由消除了"单点故障"——当某个模型出现性能退化或服务中断时，流量可自动切换到替代模型。这与 [LiteLLM + Bedrock 四层成本控制](../ch11/042-litellm-amazon-bedrock.html) 中的框架一致。
 
 ### 模型混合编排的"比较优势"原则
 
@@ -149,13 +149,13 @@ Codex 作为编码 Agent 在 Bedrock 上的部署模式，代表了 AI 编码工
 
 ## 相关实体
 
-- [OpenAI models and Codex on Amazon Bedrock - GA](ch05/094-ai.html)
-- [Amazon Bedrock AgentCore Harness GA](ch03/035-agent.html)
-- [AWS Bedrock Multi-Agent Collaboration Guide](ch03/035-agent.html)
-- [Securing Bedrock AgentCore with AWS WAF](ch11/259-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)
-- [LiteLLM + Bedrock Cost Control](ch01/1274-llm.html)
-- [Bedrock AgentCore Quality Optimization Flywheel](ch11/122-aws-bedrock-agentcore-quality-optimization-flywheel.html)
-- [Deep Agents on Bedrock AgentCore](ch03/035-agent.html)
+- [OpenAI models and Codex on Amazon Bedrock - GA](../ch11/295-amazon-bedrock.html)
+- [Amazon Bedrock AgentCore Harness GA](../ch04/515-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [AWS Bedrock Multi-Agent Collaboration Guide](../ch11/009-aws-bedrock.html)
+- [Securing Bedrock AgentCore with AWS WAF](../ch11/259-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)
+- [LiteLLM + Bedrock Cost Control](../ch11/042-litellm-amazon-bedrock.html)
+- [Bedrock AgentCore Quality Optimization Flywheel](../ch11/122-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- [Deep Agents on Bedrock AgentCore](../ch04/518-agent-orchestration.html)
 
 ---
 

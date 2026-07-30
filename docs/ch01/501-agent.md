@@ -84,14 +84,14 @@ CLI-Hub 的"元技能"是最具前瞻性的设计：Agent 不需要人类告诉�
 
 ### 相关实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](ch03/077-claude-code.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch05/094-ai.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
-- [Tencentdb Agent Memory Context Offloading](ch03/035-agent.html)
-- [agent 开发范式演进：从环境工程出发](ch03/035-agent.html)
-- [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](ch05/001-impeccable.html)
-- [工作流的 skill 怎么写？从 7 个顶级 skill 中提炼的模式与最佳实践](ch04/271-skill.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Tencentdb Agent Memory Context Offloading](../ch04/121-agent-memory.html)
+- [agent 开发范式演进：从环境工程出发](../ch03/035-agent.html)
+- [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](../ch05/001-impeccable.html)
+- [工作流的 skill 怎么写？从 7 个顶级 skill 中提炼的模式与最佳实践](../ch04/271-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

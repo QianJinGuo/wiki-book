@@ -166,12 +166,12 @@ ESAA 出现是"好消息"——意味着这个方向不是孤立判断，是领�
 - **语义升级路径的格式设计比决策本身更重要**：用产品语言描述情况、列出选项和各自代价——这让人在不了解工程细节的情况下依然能做出有效判断。格式的清晰度直接决定人机协作的效率，应投入与算法设计同等的工程注意力
 
 ## 相关对照
-- [Agent Harness 架构](ch03/035-agent.html) —— 7 层 harness 模型
-- [Claude Code 20000 字符源码分析](ch03/077-claude-code.html) —— 98.4% 基础设施论据
-- [Agent Harness 上下文管理](ch03/035-agent.html) —— 工作集视角 + subagent 隔离
+- [Agent Harness 架构](ch05/058-agent-harness.html) —— 7 层 harness 模型
+- [Claude Code 20000 字符源码分析](../ch03/078-claude-code.html) —— 98.4% 基础设施论据
+- [Agent Harness 上下文管理](ch05/058-agent-harness.html) —— 工作集视角 + subagent 隔离
 - [Harness Engineering](ch05/120-harness-engineering.html) —— 系统性 harness 实践
-- [Agent Self-Improvement Six Mechanisms](ch03/035-agent.html) —— 长期连贯性相关
-- [From Agent Protocol to Harness Skill](ch04/428-from-agent-protocol-to-harness-skill.html) —— 协议 → skill 演化
+- [Agent Self-Improvement Six Mechanisms](../ch03/035-agent.html) —— 长期连贯性相关
+- [From Agent Protocol to Harness Skill](../ch04/428-from-agent-protocol-to-harness-skill.html) —— 协议 → skill 演化
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wow-harness-v3-governance-protocol.md)
 

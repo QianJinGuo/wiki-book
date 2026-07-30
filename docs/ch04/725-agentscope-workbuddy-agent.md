@@ -10,7 +10,7 @@
 
 本文来自叶小钗，是一篇 AgentScope Python 框架的实践教程。作者使用阿里开源的 AgentScope 框架（Python 版），完整复刻了 WorkBuddy 的核心工作流，涵盖模型配置管理、Toolkit 工具系统、权限控制、工作目录管理和前端交互等关键模块。
 
-与现有 [WorkBuddy 产品架构](ch03/035-agent.html) 文章从提示词和产品化角度切入不同，本文聚焦于**工程实现层面**——如何在 AgentScope 框架上构建一个具备完整功能的 Agent 产品。
+与现有 [WorkBuddy 产品架构](../ch03/035-agent.html) 文章从提示词和产品化角度切入不同，本文聚焦于**工程实现层面**——如何在 AgentScope 框架上构建一个具备完整功能的 Agent 产品。
 
 ## 关键技术点
 
@@ -53,10 +53,10 @@ AgentScope 通过 ToolCallStartEvent、ToolCallDeltaEvent、ToolCallEndEvent 流
 
 ## 与既有内容的关系
 
-- [WorkBuddy 产品架构](ch03/035-agent.html) — 提示词与产品化视角，本文补充了工程实现视角
-- [AgentScope Java Harness](ch03/035-agent.html) — AgentScope Java 版的企业级 Harness 实现，本文对应 Python 版实践
-- [WorkBuddy 记忆对比](ch03/035-agent.html) — 记忆层面的比较分析
-- [OpenClaw vs WorkBuddy](ch11/235-openclaw.html) — 工作流引擎对比
+- [WorkBuddy 产品架构](../ch03/035-agent.html) — 提示词与产品化视角，本文补充了工程实现视角
+- [AgentScope Java Harness](../ch03/053-agentscope-java-harness-framework-2-0-agent-harness.html) — AgentScope Java 版的企业级 Harness 实现，本文对应 Python 版实践
+- [WorkBuddy 记忆对比](ch04/303-mem0-vs-workbuddy-agent.html) — 记忆层面的比较分析
+- [OpenClaw vs WorkBuddy](../ch05/004-loop-engineering.html) — 工作流引擎对比
 
 ## 四层工具架构
 

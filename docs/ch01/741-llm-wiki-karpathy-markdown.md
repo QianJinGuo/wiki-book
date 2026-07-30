@@ -12,10 +12,10 @@ Karpathy 在 `llm-wiki.md` 里提出：让 LLM 在上下文窗口之外维护一
 
 ## 相关实体
 - [Karpathy Llm Wiki V2 2026](ch01/1274-llm.html)
-- [Rag Vs Llm Wiki Enterprise Knowledge Base](ch01/1274-llm.html)
-- [Claude Code Search Architecture Tencent 2026](ch03/077-claude-code.html)
-- [Three Rag Architectures Classic Graph Agentic](ch03/035-agent.html)
-- [How Ai Agent Memory Works](ch04/156-how-ai-agent-memory-works.html)
+- [Rag Vs Llm Wiki Enterprise Knowledge Base](ch01/039-rag-vs-llm-wiki.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
+- [Three Rag Architectures Classic Graph Agentic](../ch04/237-agentic.html)
+- [How Ai Agent Memory Works](../ch04/156-how-ai-agent-memory-works.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-wiki-architecture-karpathy-markdown-knowledge-base.md)
 

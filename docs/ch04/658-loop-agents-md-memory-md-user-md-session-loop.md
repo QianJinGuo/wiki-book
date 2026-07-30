@@ -49,8 +49,8 @@ MEMORY 允许试探性表达（"这次学到"），AGENTS 是硬约束（"以后
 
 ## 与其他实体的关系
 
-- → [Loop Engineering：Addy Osmani 的六个框架](ch05/004-loop-engineering.html) — 本文的 Loop 六大框架理论基础
-- → [Agentic Loop Engineering 工程手册](ch03/035-agent.html) — 17 种 Loop 工程化技术
+- → [Loop Engineering：Addy Osmani 的六个框架](../ch05/004-loop-engineering.html) — 本文的 Loop 六大框架理论基础
+- → [Agentic Loop Engineering 工程手册](../ch05/004-loop-engineering.html) — 17 种 Loop 工程化技术
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/意识-loop跨session自进化最佳实践.md)
 
 ---

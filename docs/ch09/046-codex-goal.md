@@ -167,16 +167,16 @@ TUI 显示：
 
 ## 相关实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/094-ai.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [两万字详解Claude Code源码核心机制](ch03/077-claude-code.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/235-openclaw.html)
-- [Agent Reliability Engineering Skillify Continuous Improvement](ch04/271-skill.html)
-- [Agent Harness Context Management Working Set](ch03/035-agent.html)
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](ch01/742-9.html)
-- [Impeccable Frontend Design Skill Harness Vibecoder](ch04/271-skill.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/235-openclaw.html)
+- [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/271-skill.html)
+- [Agent Harness Context Management Working Set](../ch05/058-agent-harness.html)
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/112-harness-2026.html)
+- [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-goal-source-code-deep-dive.md)

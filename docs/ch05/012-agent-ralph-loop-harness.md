@@ -179,10 +179,10 @@ Boris Cherny 的观点指出：一个 Agent 引入的 bug，常常要靠另一�
 ---
 
 ## 相关实体
-- [长周期 Agent 详解 从 Ralph Loop 到可接管 Harness](ch03/035-agent.html)
-- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.html)
-- [Agentscope Java Harness Framework Enterprise Distributed](ch03/035-agent.html)
-- [Agent Harness Architecture Design Production Guide](ch03/035-agent.html)
+- [长周期 Agent 详解 从 Ralph Loop 到可接管 Harness](ch05/009-harness.html)
+- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
+- [Agentscope Java Harness Framework Enterprise Distributed](ch05/009-harness.html)
+- [Agent Harness Architecture Design Production Guide](ch05/058-agent-harness.html)
 - [Harness 之后 状态边界与失败闭环 Ruofei](ch05/009-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/long-running-agent-ralph-loop-handover-harness-ruofei.md)

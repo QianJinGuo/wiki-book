@@ -69,9 +69,9 @@ Tencent 的 Harness 实践采用了清晰的两轨架构：**轨道 1（研发�
 
 ## 相关实体
 
-- [Agent Harness架构](ch03/035-agent.html)
+- [Agent Harness架构](ch05/058-agent-harness.html)
 - [Harness Engineering综述2026](ch05/120-harness-engineering.html)
-- [腾讯AI编码实践](ch05/094-ai.html)
+- [腾讯AI编码实践](ch05/111-ai-coding.html)
 
 ## 标签
 

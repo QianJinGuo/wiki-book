@@ -73,7 +73,7 @@ RCD 解决了 dLLM 在实际部署中的核心痛点：**推理效率与精度�
 - [扩散语言模型后门攻击](ch01/647-baddlm.html)
 - [推理优化](ch01/1274-llm.html)
 - [注意力坍塌与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
-- [推测解码优化](ch01/1016-spec.html)
+- [推测解码优化](ch01/794-deepseek-dspark.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/residual-context-diffusion-apple-ml-2026-07.md)
 

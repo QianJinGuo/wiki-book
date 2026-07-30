@@ -111,10 +111,10 @@ Skill/Command/MCP 三层架构的核心价值在于分离了不同层次的关�
 5. **跨模型审查避免单一模型盲区**：用 Claude 写的代码用 Codex 审查，反之亦然。 在团队中建立机制，让不同模型交叉审查同一代码，能显著提高问题发现率。
 
 ## 相关实体
-- [从Vibe Coding到Agentic Engineering重构后台开发全流程](ch03/035-agent.html)
-- [Karpathy Vibe Coding To Agentic Engineering](ch03/035-agent.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](ch03/035-agent.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/047-coding-agent.html)
+- [从Vibe Coding到Agentic Engineering重构后台开发全流程](ch04/237-agentic.html)
+- [Karpathy Vibe Coding To Agentic Engineering](ch04/237-agentic.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](ch04/239-ahe-agentic-harness-engineering.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/451-vibe-coding-agentic-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering V4](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-vibe-coding-to-agentic-engineering-backend.md)

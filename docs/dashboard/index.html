@@ -350,15 +350,34 @@ function doMigrateToEntityKeys(){
 // Migrate file→entity keys in all data stores (after D1 pull or localStorage load)
 function migrateStaleKeys(){
   if(!DATA || !DATA.articles) return;
+  // Build file→entity map from current articles
   const f2e = {};
-  for(const a of DATA.articles){ if(a.entity) f2e[a.file] = a.entity; }
-  if(Object.keys(f2e).length === 0) return;
+  // Also build slug→entity map for old file keys (ch04/NNN-slug.md)
+  const slug2e = {};
+  for(const a of DATA.articles){
+    if(a.entity){
+      f2e[a.file] = a.entity;
+      // Extract slug after chXX/NNN- for matching old keys
+      const m = a.file.match(/ch\d+\/\d+-(.+)/);
+      if(m) slug2e[m[1]] = a.entity;
+    }
+  }
+  const resolveKey = (k) => {
+    // Already an entity
+    if(f2e[k] === k || slug2e[k]) return k;
+    // Current file path
+    if(f2e[k]) return f2e[k];
+    // Try slug match for old file keys
+    const m = k.match(/ch\d+\/\d+-(.+)/);
+    if(m && slug2e[m[1]]) return slug2e[m[1]];
+    return k; // Can't resolve
+  };
   const migrate = (obj) => {
     const keys = Object.keys(obj);
     let changed = false;
     for(const k of keys){
-      const ek = f2e[k];
-      if(ek && ek !== k){
+      const ek = resolveKey(k);
+      if(ek !== k){
         if(!obj[ek]){ obj[ek] = obj[k]; }
         delete obj[k];
         changed = true;
@@ -470,8 +489,17 @@ function getLevel(file){
       if(df) return typeof df === 'object' ? df.level : 'read';
     }
     for(const [sk, sv] of Object.entries(done)){
-      const a = DATA.articles.find(a => a.file === sk);
+      const a = DATA.articles.find(a => a.file === sk || a.entity === sk);
       if(a && a.entity === file) return typeof sv === 'object' ? sv.level : 'read';
+      // Try slug matching for old file keys
+      const sm = sk.match(/ch\d+\/\d+-(.+)/);
+      if(sm){
+        const b = DATA.articles.find(a => {
+          const am = a.file.match(/ch\d+\/\d+-(.+)/);
+          return am && am[1] === sm[1];
+        });
+        if(b && b.entity === file) return typeof sv === 'object' ? sv.level : 'read';
+      }
     }
   }
   return null;
@@ -553,8 +581,17 @@ function handleRecall(file, remembered){
     if(article && recallData[article.file]) file = article.file;
     else {
       for(const [sk] of Object.entries(recallData)){
-        const a = DATA.articles.find(a => a.file === sk);
+        const a = DATA.articles.find(a => a.file === sk || a.entity === sk);
         if(a && a.entity === file){ file = sk; break; }
+        // Try slug matching for old file keys
+        const sm = sk.match(/ch\d+\/\d+-(.+)/);
+        if(sm){
+          const b = DATA.articles.find(a => {
+            const am = a.file.match(/ch\d+\/\d+-(.+)/);
+            return am && am[1] === sm[1];
+          });
+          if(b && b.entity === file){ file = sk; break; }
+        }
       }
     }
   }
@@ -749,9 +786,20 @@ function getFeynmanNote(key){
     const article = DATA.articles.find(a => a.entity === key);
     if(article && feynmanData[article.file]) return feynmanData[article.file];
     for(const [sk, sv] of Object.entries(feynmanData)){
-      const a = DATA.articles.find(a => a.file === sk);
+      const a = DATA.articles.find(a => a.file === sk || a.entity === sk);
       if(a && a.entity === key) return sv;
+      // Try slug matching for old file keys
+      const sm = sk.match(/ch\d+\/\d+-(.+)/);
+      if(sm){
+        const b = DATA.articles.find(a => {
+          const am = a.file.match(/ch\d+\/\d+-(.+)/);
+          return am && am[1] === sm[1];
+        });
+        if(b && b.entity === key) return sv;
+      }
     }
+  }
+  return null;
 }
 
 function openFeynmanModal(key, event){

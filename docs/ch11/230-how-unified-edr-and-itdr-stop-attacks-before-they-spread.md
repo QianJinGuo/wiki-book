@@ -23,10 +23,10 @@
 - T1098 — Account Manipulation
 ## 相关实体
 - [Huntress Edr Itdr](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr.md)
-- [Llm Raiders Private Ai Server](ch05/094-ai.html)
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](ch03/077-claude-code.html)
-- [Llm Raiders And How To Repel Them](ch01/797-llm-raiders-and-how-to-repel-them.html)
-- [How To Create Websites With Great Ux Designs](ch01/136-how-to-create-websites-with-great-ux-designs-principles-and.html)
+- [Llm Raiders Private Ai Server](../ch01/1274-llm.html)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/453-how-claude-code-works-in-large-codebases-best-practices-and.html)
+- [Llm Raiders And How To Repel Them](../ch01/797-llm-raiders-and-how-to-repel-them.html)
+- [How To Create Websites With Great Ux Designs](../ch01/136-how-to-create-websites-with-great-ux-designs-principles-and.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/huntress-edr-itdr-unified-detection.md)
 

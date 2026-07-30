@@ -11,16 +11,16 @@
 - 开发者可零成本迁移至 SageMaker，降低 AI 应用部署成本
 
 ## 相关实体
-- [Amazon Bedrock Api Security Guide](ch11/299-bedrock.html)
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch05/094-ai.html)
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch03/035-agent.html)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch05/094-ai.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/1274-llm.html)
+- [Amazon Bedrock Api Security Guide](../ch12/034-amazon-bedrock-api.html)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch05/094-ai.html)
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch04/561-amazon-bedrock-agentcore.html)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/660-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
 
-- [Openai Models And Codex On Amazon Bedrock Are Now Generally ](ch05/094-ai.html)
-- [开始在 Amazon Bedrock 上使用 Openai Gpt 55Gpt 54 模型和 Codex](ch05/094-ai.html)
+- [Openai Models And Codex On Amazon Bedrock Are Now Generally ](../ch11/282-openai-models-and-codex-on-amazon-bedrock-are-now-generally.html)
+- [开始在 Amazon Bedrock 上使用 Openai Gpt 55Gpt 54 模型和 Codex](../ch11/295-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 ## 深度分析
 

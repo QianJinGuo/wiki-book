@@ -38,8 +38,8 @@ Hugging Face 的开放上传机制 + Trending 排名算法创造了两个安全�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [ml-intern — Hugging Face 自主 ML 工程代理](ch04/529-ml-intern-huggingface-autonomous-ml-agent.html)
-- [Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](ch05/094-ai.html)
+- [ml-intern — Hugging Face 自主 ML 工程代理](../ch04/529-ml-intern-huggingface-autonomous-ml-agent.html)
+- [Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](../ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 

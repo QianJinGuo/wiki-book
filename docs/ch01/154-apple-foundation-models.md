@@ -42,7 +42,7 @@ Requests go directly from your app to the Claude API; Apple is not in the reques
 ## 相关实体
 - [from doer to director: the ai mindset shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 - [why internally-built ai fails fund accounting audits](ch01/130-why-internally-built-ai-fails-fund-accounting-audits.html)
-- [back up and restore your amazon eks cluster resources using](ch11/013-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
+- [back up and restore your amazon eks cluster resources using](../ch11/013-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 ---
 

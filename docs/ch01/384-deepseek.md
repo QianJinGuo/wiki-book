@@ -19,14 +19,14 @@
 
 ## 相关实体
 - [Pi Mono Github](ch01/834-pi-mono-github.html)
-- [From Prompt To Harness Claude Official](ch01/976-claude.html)
+- [From Prompt To Harness Claude Official](../ch05/009-harness.html)
 - [Cursor Harness Model Production Floor](ch01/265-cursor-harness-model-production-floor.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/047-coding-agent.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](ch03/077-claude-code.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/451-vibe-coding-agentic-engineering.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md)
 
-- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](ch05/094-ai.html)
+- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](../ch05/111-ai-coding.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析

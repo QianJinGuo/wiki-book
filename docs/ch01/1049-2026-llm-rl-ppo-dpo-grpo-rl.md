@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](ch01/913-20.html)
+- [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](ch01/888-self-taught-rlvr.html)
 - [the distillation panic](ch01/642-the-distillation-panic.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
 
@@ -45,10 +45,10 @@
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1170-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/035-agent.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/035-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

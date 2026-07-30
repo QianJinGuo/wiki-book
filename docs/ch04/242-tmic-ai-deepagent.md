@@ -141,11 +141,11 @@ Tree Action模式的核心洞察是：**工具调用之间存在依赖关系**�
 5. **工具箱需要分层设计**：三层树状结构（业务模块→功能模块→工具）为工具管理提供了清晰的分层抽象，便于按业务场景动态组合。这种设计使得添加新业务模块或新工具时不需要修改核心Agent逻辑，具备良好的可扩展性。 
 
 ## 相关实体
-- [Agent Harness Architecture Design Production Guide](ch03/035-agent.html)
-- [Ai Agent Engineer Capability Map](ch05/094-ai.html)
-- [Claude Code Agent Teams Task Decomposition Ruofei](ch03/077-claude-code.html)
-- [Agent Evolution Four Stages Six Dimensions Aliyun](ch03/035-agent.html)
-- [17 Agent Architectures Evolution](ch03/035-agent.html)
+- [Agent Harness Architecture Design Production Guide](../ch05/058-agent-harness.html)
+- [Ai Agent Engineer Capability Map](ch04/298-ai-agent.html)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/328-claude-code-agent-teams.html)
+- [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/035-agent.html)
+- [17 Agent Architectures Evolution](ch04/699-17-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tmic-ai-xiaoxin-deepagent-architecture-evolution.md)
 

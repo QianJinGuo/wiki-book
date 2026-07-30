@@ -45,8 +45,8 @@ Foundry 的 Voice Live 功能可以让现有文本 Agent 无重建转语音 Agen
 - 第一方 Agent 月活跃量同比增长 6x
 
 ## 相关实体
-- [Microsoft Agent Framework Tools 总览](ch03/035-agent.html)
-- [Microsoft Build 2026：微软 AI 独立日](ch05/094-ai.html)
+- [Microsoft Agent Framework Tools 总览](../ch03/035-agent.html)
+- [Microsoft Build 2026：微软 AI 独立日](../ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bytebytego-microsoft-ships-ai-agents-enterprise-scale-foundry-2026.md)
 

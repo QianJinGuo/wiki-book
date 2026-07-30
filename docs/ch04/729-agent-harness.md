@@ -35,11 +35,11 @@
 
 ## 相关实体
 
-- [Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](ch03/035-agent.html)
-- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](ch03/035-agent.html)
-- [Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环](ch05/009-harness.html)
-- [Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist — 系列第 15 篇收官](ch05/120-harness-engineering.html)
-- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.html)
+- [Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](../ch05/058-agent-harness.html)
+- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](../ch05/009-harness.html)
+- [Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环](../ch05/009-harness.html)
+- [Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist — 系列第 15 篇收官](../ch05/120-harness-engineering.html)
+- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 
 ---
 

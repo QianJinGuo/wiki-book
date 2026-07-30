@@ -33,8 +33,8 @@
 ### 视频与多模态模型
 
 - **JoyAI-Video-Edit**：实时视频编辑模型，用户可以在预览过程中实时修改画面，实现所见即所得的编辑体验
-- **JoyAI-Echo**：长音视频生成框架，支持 5 分钟一致性输出 + 7.5x DMD 加速 + Director Agent，详见 [JoyAI-Echo 框架](ch05/094-ai.html)
-- **JoyAI-VL-Interaction**：全栈开源视频语言交互模型，详见 [JoyAI-VL-Interaction](ch05/094-ai.html)
+- **JoyAI-Echo**：长音视频生成框架，支持 5 分钟一致性输出 + 7.5x DMD 加速 + Director Agent，详见 [JoyAI-Echo 框架](../ch05/094-ai.html)
+- **JoyAI-VL-Interaction**：全栈开源视频语言交互模型，详见 [JoyAI-VL-Interaction](ch01/1276-joyai-vl-interaction.html)
 
 ### 具身数据与训练基础设施
 
@@ -90,11 +90,11 @@ JoyInside 计划接入超 1000 万台硬件设备，本质上是在构建一个 
 
 ## 相关实体
 
-- [JoyAI-VL-Interaction 视频语言交互模型](ch05/094-ai.html)
-- [JoyAI-Echo 长视频生成框架](ch05/094-ai.html)
-- [JoyAI 实时视频交互](ch05/094-ai.html)
+- [JoyAI-VL-Interaction 视频语言交互模型](ch01/1276-joyai-vl-interaction.html)
+- [JoyAI-Echo 长视频生成框架](../ch05/094-ai.html)
+- [JoyAI 实时视频交互](ch01/1276-joyai-vl-interaction.html)
 - [小米机器人汽车工厂操作](ch01/913-20.html)
-- [企业 AI Native 转型](ch05/094-ai.html)
+- [企业 AI Native 转型](../ch05/018-ai-native.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/京东joyai模型矩阵亮相waic-2026.md)
 

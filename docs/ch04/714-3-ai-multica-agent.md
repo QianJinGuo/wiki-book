@@ -6,7 +6,7 @@
 
 # 【揭秘】如何打造一支凌晨3点还在交付的AI军团——腾讯Multica Agent协作实践
 
-腾讯技术工程团队基于[Multica](ch07/069-multica-managed-agents.html)平台，构建了一套组织级AI Agent协作体系。核心命题不再是"每个人会不会用AI"，而是"没有为AI的模式去设计一套新的工作方式"。 该实践展示了AI Agent从"超级个体"辅助到"组织级自动协作"的演进路径——真正的瓶颈不在个体AI使用能力，而在为AI设计新的组织工作方式。
+腾讯技术工程团队基于[Multica](../ch07/069-multica-managed-agents.html)平台，构建了一套组织级AI Agent协作体系。核心命题不再是"每个人会不会用AI"，而是"没有为AI的模式去设计一套新的工作方式"。 该实践展示了AI Agent从"超级个体"辅助到"组织级自动协作"的演进路径——真正的瓶颈不在个体AI使用能力，而在为AI设计新的组织工作方式。
 
 ## 背景：AI进入岗位，但未进入协作链路
 
@@ -61,7 +61,7 @@ AI让每个角色成为"超级个体"，但完整工作的推进并未因此变�
 
 该实践是[Loop Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/loop-engineering-methodology.md)概念在组织级AI协作中的具体落地。传统Loop Engineering聚焦个体开发者的反馈闭环（修改→测试→看错误→再修复），而腾讯的实践将这一理念扩展到团队协作层面——需求、Bug、改进项在Agent间流转而不需要人的干预，最终实现"凌晨3点无人值守的AI军团"。
 
-若将[Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)视为个体Loop的编排方式，本次实践进一步升维为**组织级Loop**：工作事件进入→工作流接手→Agent协作执行→状态判断→验收或返工→指标沉淀→下一轮优化。这与[CodeBuddy的Inner/Outer Loop](ch01/913-20.html)分属不同层级——后者关注单Agent编码循环，此处关注多Agent的组织循环。
+若将[Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)视为个体Loop的编排方式，本次实践进一步升维为**组织级Loop**：工作事件进入→工作流接手→Agent协作执行→状态判断→验收或返工→指标沉淀→下一轮优化。这与[CodeBuddy的Inner/Outer Loop](../ch05/004-loop-engineering.html)分属不同层级——后者关注单Agent编码循环，此处关注多Agent的组织循环。
 
 ## 深度分析
 
@@ -89,15 +89,15 @@ AI让每个角色成为"超级个体"，但完整工作的推进并未因此变�
 
 ## 相关实体
 
-- [Multica 平台](ch07/069-multica-managed-agents.html) — 本次实践的技术底座
+- [Multica 平台](../ch07/069-multica-managed-agents.html) — 本次实践的技术底座
 - [Loop Engineering 方法论](https://github.com/QianJinGuo/wiki/blob/main/concepts/loop-engineering-methodology.md) — 从个体Loop到组织级Loop的升维
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — Agent编排的设计模式体系
 - [多 Agent 协作编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 协作编排的通用框架
-- [CodeBuddy Loop Engineering](ch01/913-20.html) — 腾讯同团队单Agent编码循环实践
-- [Agent Loop 工程手册](ch03/035-agent.html) — 腾讯陈进关于Agent Loop未解问题的探讨
-- [Agentic Loop Engineering 工程手册](ch03/035-agent.html) — Loop工程化的实证框架
+- [CodeBuddy Loop Engineering](../ch05/004-loop-engineering.html) — 腾讯同团队单Agent编码循环实践
+- [Agent Loop 工程手册](../ch05/004-loop-engineering.html) — 腾讯陈进关于Agent Loop未解问题的探讨
+- [Agentic Loop Engineering 工程手册](../ch05/004-loop-engineering.html) — Loop工程化的实证框架
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent工程化的支撑框架
-- [腾讯Harness Engineering落地规范](ch01/1016-spec.html) — 腾讯团队的工程化规范实践
+- [腾讯Harness Engineering落地规范](../ch05/120-harness-engineering.html) — 腾讯团队的工程化规范实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/揭秘如何打造一支凌晨3点还在交付的ai军团.md)
 

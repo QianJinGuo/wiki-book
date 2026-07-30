@@ -135,11 +135,11 @@ MSM 的核心创新在于：**在预训练与对齐微调之间插入一个「�
 - [Agent Security Full Lifecycle System](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-full-lifecycle-system.md) — 清华方寸跃迁的安全体系（Observer × Guard × Skill Ward）vs Anthropic 的 Model Spec 对齐——一个是运行时防护，一个是训练时对齐
 
 ## 相关实体
-- [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/976-claude.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/077-claude-code.html)
+- [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/989-anthropic.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
 - [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/989-anthropic.html)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/077-claude-code.html)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-msm-anti-defection-paper.md)
 

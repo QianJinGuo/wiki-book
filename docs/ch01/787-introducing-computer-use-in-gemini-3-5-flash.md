@@ -102,7 +102,7 @@ Google、Anthropic 和 OpenAI 同时推出 native computer use 能力，标志�
 ## Related
 
 - [Gemini 3.5 Frontier Intelligence](ch01/472-gemini-3-5-frontier-intelligence-with-action.html)
-- [Agent Harness Engineering Survey 2026](ch03/035-agent.html)
+- [Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html)
 
 -> [Original Archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-3-5-flash-computer-use.md)
 

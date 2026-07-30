@@ -28,18 +28,18 @@ Claude Managed Agents 官方发布的三大核心能力——dreaming、outcomes
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-official.md)
 
 ## 相关资源
-- [Agent Memory 架构](ch03/035-agent.html)
+- [Agent Memory 架构](ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Claude Managed Agents 开发者指南](ch04/710-claude-managed-agents.html)
 
 ## 相关实体
-- [Claude Managed Agents 官方 Harness 平台指南](ch01/604-anthropic-claude.html)
+- [Claude Managed Agents 官方 Harness 平台指南](../ch01/212-anthropic-claude-managed-agents.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/710-claude-managed-agents.html)
-- [Anthropic Claude Managed Agents 平台正式发布](ch01/604-anthropic-claude.html)
+- [Anthropic Claude Managed Agents 平台正式发布](../ch01/212-anthropic-claude-managed-agents.html)
 - [claude managed agents](ch04/710-claude-managed-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [从 Prompt 到 Harness：最小实操指南](ch01/976-claude.html)
+- [从 Prompt 到 Harness：最小实操指南](../ch05/009-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

@@ -187,15 +187,15 @@ SynthID 三年累计标记 1000 亿张图片/视频和约 6 万年音频，新�
 
 ## 相关实体
 - [Gemini 3 5 Frontier Intelligence](ch01/472-gemini-3-5-frontier-intelligence-with-action.html)
-- [Building The Agentic Future Developer Highlights From Io 2026](ch03/035-agent.html)
+- [Building The Agentic Future Developer Highlights From Io 2026](../ch04/019-building-the-agentic.html)
 - [Gemini Embedding 2 Multimodal Unified Vector Hyman](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-embedding-2-multimodal-unified-vector-hyman.md)
 - [Google Debuts Gemini Focused Updates At Io 2026](ch01/913-20.html)
-- [Alphaevolve Deepmind Discovery Agent](ch03/035-agent.html)
+- [Alphaevolve Deepmind Discovery Agent](../ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-io-2026-agentic-gemini-era.md)
 
 - [Introducing Gemini Omni](ch01/1292-introducing-gemini-omni.html)
-- [Google Pm 2026 Five Developer Skills Shubham](ch04/271-skill.html)
+- [Google Pm 2026 Five Developer Skills Shubham](ch01/396-pm-2026.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

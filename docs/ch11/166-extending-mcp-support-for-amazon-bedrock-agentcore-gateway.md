@@ -87,11 +87,11 @@ Elicitation 需要同时启用流式传输和会话管理。Gateway 尊重能力
 
 ## 相关实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch05/094-ai.html)
-- [Bedrock Agentcore Secrets Manager Identity](ch03/035-agent.html)
-- [Shared Infrastructure Isolated Tenants Pool Model Multi Tenancy With Amazon Bedrock Agentcore](ch03/035-agent.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Bedrock Agentcore Secrets Manager Identity](ch11/050-bedrock-agentcore.html)
+- [Shared Infrastructure Isolated Tenants Pool Model Multi Tenancy With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
 - [Secure Ai Agents With Policy And Lambda Interceptors In Amaz](ch11/292-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.html)
-- [New In Amazon Bedrock Agentcore Build Agents With Broader Kn](ch03/035-agent.html)
+- [New In Amazon Bedrock Agentcore Build Agents With Broader Kn](../ch04/561-amazon-bedrock-agentcore.html)
 - [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](ch11/011-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.html)
 
 ---

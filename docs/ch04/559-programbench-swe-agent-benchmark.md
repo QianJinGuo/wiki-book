@@ -28,7 +28,7 @@ ProgramBench的核心设计哲学是回答"SWE-bench等现有benchmark无法回�
 **对于担心模型"记忆源代码"问题的评估者：** ProgramBench的"不同语言"消融实验结果表明，当前极低的分数与源代码记忆无关——强制模型用不同语言实现时分数没有显著变化，说明模型确实是在"尝试构建"而非"回忆已有代码"。
 
 ## 相关资源
-- [Agent Memory 架构](ch03/035-agent.html)
+- [Agent Memory 架构](ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Claude Managed Agents 开发者指南](ch04/710-claude-managed-agents.html)
 
 ---

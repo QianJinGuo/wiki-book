@@ -90,8 +90,8 @@ claude-code-go 项目（~19,912 行 Go 代码，23 个 internal packages）：
 
 ## 相关页面
 
-- [SSD Spec 驱动开发 ASD Harness](ch01/1016-spec.html)
-- [术哥三器对比](ch05/094-ai.html)
+- [SSD Spec 驱动开发 ASD Harness](../ch05/009-harness.html)
+- [术哥三器对比](../ch05/111-ai-coding.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-pilot-claude-code-plugin-yangtong-2026-06-17.md)
 
 ## 相关实体

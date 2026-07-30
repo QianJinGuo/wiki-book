@@ -73,11 +73,11 @@ hermes doctor   # 检查环境
 ## Related
 
 ## 相关实体
-- [Hermes Agent Kanban Deep Test](ch03/095-hermes-agent.html)
-- [Hermes Agent Goal Runtime Architecture](ch03/095-hermes-agent.html)
-- [Hermes Agent](ch03/095-hermes-agent.html)
-- [Hermes Agent Kanban Deep Test By Wjjagi 2026](ch03/095-hermes-agent.html)
-- [Hermes Agent Self Evolution Tengxun](ch03/095-hermes-agent.html)
+- [Hermes Agent Kanban Deep Test](../ch03/096-hermes-agent.html)
+- [Hermes Agent Goal Runtime Architecture](../ch04/381-hermes-agent-goal.html)
+- [Hermes Agent](../ch03/096-hermes-agent.html)
+- [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch03/096-hermes-agent.html)
+- [Hermes Agent Self Evolution Tengxun](../ch03/096-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
 

@@ -94,8 +94,8 @@ config.yaml 从"表单"到"模板"的转变是一个被低估的设计原则。�
 
 - **Agent Skill 开发方法论** — Skills 开发的通用原则
 - **Hermes Agent Skills** — Hermes Agent 的 Skills 系统，与 QoderWork Skills 设计相通
-- [AI Native 开发工作流](ch05/094-ai.html) — Skills 驻留的 AI 开发范式
-- [Agent 工程范式](ch03/035-agent.html) — 从传统开发到 AI Agent 开发的范式转变
+- [AI Native 开发工作流](../ch05/018-ai-native.html) — Skills 驻留的 AI 开发范式
+- [Agent 工程范式](../ch05/058-agent-harness.html) — 从传统开发到 AI Agent 开发的范式转变
 - **Prompt Engineering 最佳实践** — Skill.md 编写的基础技能
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoderwork-skills-开发实践从传统数科到-ai-数科的转型探索-我的skills进阶之旅.md)

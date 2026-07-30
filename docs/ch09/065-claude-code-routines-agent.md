@@ -29,7 +29,7 @@ session 跑在 Claude Code 自己的基础设施上，不挂在用户电脑上�
 - 随时去 claude.ai 上看它在干什么
 - 中途插话调整方向
 - 接着上次没完成的继续聊
-- **不用守着，随时可以管** See also [Claude Code Architecture](ch03/077-claude-code.html)
+- **不用守着，随时可以管** See also [Claude Code Architecture](../ch03/078-claude-code.html)
 
 ## 设计 Routine 需想清楚的三件事
 

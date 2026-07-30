@@ -33,7 +33,7 @@ UP-ReAct 最核心的变革在于控制权模型的重构。从分布式决策�
 
 1. **监控可追溯性**：当 Agent 行为异常时，只需 Dump 单一 Policy 的状态日志即可定位问题，不再需要在多个节点间交叉排查
 2. **行为确定性提升**：Policy 节点的单一决策路径意味着系统的动作空间（Action Space）完全可枚举、可校验、可测试
-3. **二次开发简化**：新功能的接入不需要修改核心 DAG 代码，只需注册新的 Tool——这与 [Codex 五层架构](ch01/517-codex.html) 中的"技能注册"模式异曲同工
+3. **二次开发简化**：新功能的接入不需要修改核心 DAG 代码，只需注册新的 Tool——这与 [Codex 五层架构](../ch01/517-codex.html) 中的"技能注册"模式异曲同工
 4. **推理效率优化**：时间复杂度从 O(3 × Model_inference + Tool_exec + IO) 降为 O(Model_inference + Tool_exec + IO)，彻底消除了节点间流转的开销
 
 ### Context Manager：Agent 内存管理的工程哲学
@@ -50,7 +50,7 @@ UP-ReAct 最核心的变革在于控制权模型的重构。从分布式决策�
 
 统一行为层的设计——所有系统行为必须封装为标准 Tool——是一项极具前瞻性的架构决策。当"退出"（exit_and_reply_tool）、"深度思考"（deep_think_tool）、"租户配置加载"（load_tenant_config_tool）都变成了标准 API 时，系统的动作空间变得完全可枚举。
 
-这种设计理念与 [SageMaker RL](ch05/094-ai.html) 中的"动作空间离散化"思路一致——可枚举的动作空间是强化学习微调的前提条件。火山引擎的架构实际上为未来对 Policy 进行 RL 微调铺平了道路。
+这种设计理念与 [SageMaker RL](../ch05/094-ai.html) 中的"动作空间离散化"思路一致——可枚举的动作空间是强化学习微调的前提条件。火山引擎的架构实际上为未来对 Policy 进行 RL 微调铺平了道路。
 
 ### 与行业共识的共振
 
@@ -73,10 +73,10 @@ UP-ReAct 最核心的变革在于控制权模型的重构。从分布式决策�
 
 ## 相关实体
 
-- [腾讯 Harness Engineering 探索之旅](ch05/120-harness-engineering.html)
-- [Codex 五层架构](ch01/517-codex.html)
-- [SageMaker 多轮 RL 实践](ch05/094-ai.html)
-- [LangGraph Agent 操作系统](ch03/035-agent.html)
+- [腾讯 Harness Engineering 探索之旅](../ch05/120-harness-engineering.html)
+- [Codex 五层架构](../ch01/517-codex.html)
+- [SageMaker 多轮 RL 实践](../ch05/094-ai.html)
+- [LangGraph Agent 操作系统](ch04/201-langgraph.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/火山引擎-ai-搜索千万级-agent-架构演进与实践从-react-三节点到-unified-policy.md)

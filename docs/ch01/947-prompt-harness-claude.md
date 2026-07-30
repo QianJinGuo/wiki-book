@@ -12,10 +12,10 @@
 
 ## 相关实体
 - [Claude Code Harness Deep Understanding](ch01/422-claude-code-harness-deep-understanding.html)
-- [Claude Code Harness Deep Dive Founder Park](ch03/077-claude-code.html)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/073-claude-code-harness.html)
 - [Claude Opus 47](ch01/976-claude.html)
-- [Openclaw Prompt Context Harness](ch11/235-openclaw.html)
-- [Anthropic Managed Agents Scaling](ch03/035-agent.html)
+- [Openclaw Prompt Context Harness](../ch11/235-openclaw.html)
+- [Anthropic Managed Agents Scaling](ch01/989-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-prompt-to-harness-claude-official.md)
 

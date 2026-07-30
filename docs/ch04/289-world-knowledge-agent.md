@@ -120,11 +120,11 @@ R(K) = Success(T_E | K) - Success(T_E | ∅)
 5. **将 World Knowledge 视为可版本化的共享资产**：静态 Markdown 格式天然支持 Git 版本化管理，后续可引人动态更新机制（定期 re-explore + diff 合并），使环境知识随网站结构演变保持新鲜度，而非一次性生成后僵化。
 
 ## 相关实体
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch05/094-ai.html)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - [Tencent Skill Writing Complete Playbook Jackjchou](ch04/271-skill.html)
-- [Agent Self Improvement Six Mechanisms](ch03/035-agent.html)
-- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](ch03/095-hermes-agent.html)
-- [Deli Auto Research Skill Deepseek](ch04/271-skill.html)
+- [Agent Self Improvement Six Mechanisms](../ch03/035-agent.html)
+- [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](../ch03/096-hermes-agent.html)
+- [Deli Auto Research Skill Deepseek](../ch01/1091-deepseek.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/world-knowledge-agent-self-evolution-tencent-hkustgz.md)
 

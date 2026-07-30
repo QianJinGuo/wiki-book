@@ -26,7 +26,7 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](ch11/224-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11/224-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/shinyhunters-7-eleven-data-breach.md)
 

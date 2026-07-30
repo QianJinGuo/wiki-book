@@ -70,7 +70,7 @@ Argus 的精度水平（ATE 0.096, 2.5cm）使 3DGS 在室内场景的产品化�
 - [LoopWM 循环世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/loopwm-looped-world-models.md)
 - [Yann LeCun JEPA 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md)
 - [小米 ECCV 2026 人脸修复](ch01/1274-llm.html)
-- [ICRDrag 图像编辑](ch05/094-ai.html)
+- [ICRDrag 图像编辑](ch01/223-rag.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/谁说3dgs必须靠lidar如视argus入选eccv让图像也能提供lidar级位姿约束.md)
 

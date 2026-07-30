@@ -99,9 +99,9 @@ AI Pointer 的更深层战略意义在于：它重新定义了「AI Native 应�
 
 ## 相关实体
 
-- [How Superset built the IDE for AI agents on Vercel](ch05/094-ai.html)
-- [AI-Friendly Architecture](ch05/094-ai.html)
-- [Hermes Agent — 上下文交互协议](ch03/095-hermes-agent.html)
+- [How Superset built the IDE for AI agents on Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [AI-Friendly Architecture](../ch05/022-ai-friendly.html)
+- [Hermes Agent — 上下文交互协议](../ch03/096-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepmind-ai-pointer.md)
 

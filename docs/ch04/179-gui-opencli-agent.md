@@ -128,16 +128,16 @@ opencli cascade https://api.example.com/hot
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](ch03/077-claude-code.html)
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/035-agent.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 - [Agent Reliability Engineering Skillify Continuous Improvement](ch04/271-skill.html)
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](ch01/742-9.html)
-- [Codex Goal Source Code Deep Dive](ch09/046-codex-goal.html)
-- [Impeccable Frontend Design Skill Harness Vibecoder](ch04/271-skill.html)
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/112-harness-2026.html)
+- [Codex Goal Source Code Deep Dive](../ch09/046-codex-goal.html)
+- [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/opencli-browser-automation-jingxing.md)
 - [how developers can build agentic agreement workflows on docu](ch04/304-how-developers-can-build-agentic-agreement-workflows-on-docu.html)

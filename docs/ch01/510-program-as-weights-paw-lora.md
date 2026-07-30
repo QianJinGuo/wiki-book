@@ -70,8 +70,8 @@ PAW 最深层的洞察在于 LLM 推理的经济学重新思考：大模型不�
 
 ## 相关实体
 
-- [Agent Capability Library](ch03/035-agent.html)
-- [Agent Architecture Harness](ch03/035-agent.html)
+- [Agent Capability Library](../ch04/647-an-agent-capability-library.html)
+- [Agent Architecture Harness](../ch05/009-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/program-as-weights-paw-fuzzy-functions-waterloo.md)
 

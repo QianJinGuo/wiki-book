@@ -56,10 +56,10 @@ Nacos Skill Sync 的终极目标是让 Skill 有一份可信来源。这个目�
 
 ## 相关实体
 
-- [Claude Code 深度架构分析](ch03/077-claude-code.html)
-- [Token 不经济](ch12/003-token.html)
-- [AI Coding 效率分析](ch05/094-ai.html)
-- [Hermes Agent](ch03/095-hermes-agent.html)
+- [Claude Code 深度架构分析](../ch03/078-claude-code.html)
+- [Token 不经济](../ch12/003-token.html)
+- [AI Coding 效率分析](../ch05/111-ai-coding.html)
+- [Hermes Agent](../ch03/096-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/别再手动复制-skill-了多-agent-时代的-skill-管理方案.md)
 

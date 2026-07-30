@@ -28,7 +28,7 @@
 
 ### 1. "出码率与提效之间的裂缝"——Harness Engineering的起源问题
 
-文章最深刻的洞察是AI加速与整体提效之间的结构性断裂。这一现象可以用"瓶颈转移定律"解释：局部加速（AI写代码）只会让瓶颈从"写"转移到"理解、对齐、验证、沉淀"——整条链的总时长由未被加速的部分决定。这印证了[Agent落地真相](ch03/035-agent.html)中揭示的关键矛盾：AI能力增长与工程环境成熟度之间的剪刀差。
+文章最深刻的洞察是AI加速与整体提效之间的结构性断裂。这一现象可以用"瓶颈转移定律"解释：局部加速（AI写代码）只会让瓶颈从"写"转移到"理解、对齐、验证、沉淀"——整条链的总时长由未被加速的部分决定。这印证了[Agent落地真相](../ch03/035-agent.html)中揭示的关键矛盾：AI能力增长与工程环境成熟度之间的剪刀差。
 
 Brooks在《人月神话》中区分的附属复杂度（accidental，语法/工具/平台带来的翻译成本）和本质复杂度（essential，概念结构构造/外部世界顺应/需求可变性）在此得到验证——AI砍掉的恰好是附属复杂度，本质复杂度一分未少，甚至因代码产出更多而导致下游review/测试/维护任务加重。
 
@@ -41,7 +41,7 @@ SpecWorker的管线设计体现了一个核心工程判断：**AI工作流编排
 - **输入质量约束**：通过标准化模板（需求模板、方案模板等）约束输入质量
 - **对抗式纪律**：行为铁律 + 评估独立（防止自我高分）+ 自我合理化警报
 
-这种"Fixed Flow + 程序化门禁"的设计哲学，与[Agent配置模型](ch04/271-skill.html)中"渐进式披露"的思路形成对照——前者通过纪律保障可靠性，后者通过结构控制信息密度。
+这种"Fixed Flow + 程序化门禁"的设计哲学，与[Agent配置模型](../ch04/271-skill.html)中"渐进式披露"的思路形成对照——前者通过纪律保障可靠性，后者通过结构控制信息密度。
 
 ### 3. 可监测性的三个维度——信任AI的工程前提
 
@@ -51,7 +51,7 @@ SpecWorker的管线设计体现了一个核心工程判断：**AI工作流编排
 - **可回溯**针对不同失败类型（UI还原偏差、API测试失败、跨阶段重试浪费）设计了不同的SOP路径，而非统一用"日志搜索"兜底
 - **可度量**通过双层Hook（业务级CLI + 平台级Hook Engine）汇聚数据，实现了Token/成本、耗时、重试率、代码改动量的量化追踪
 
-这与[钉钉招聘Agent](ch03/035-agent.html)中"可审计的Agent行为日志"的需求一致——在AI执行关键业务链时，可观测性不是运维锦上添花，而是信任AI的工程前提。
+这与[钉钉招聘Agent](../ch05/058-agent-harness.html)中"可审计的Agent行为日志"的需求一致——在AI执行关键业务链时，可观测性不是运维锦上添花，而是信任AI的工程前提。
 
 ### 4. 知识库作为AI长期记忆的运作机制
 
@@ -77,12 +77,12 @@ SpecWorker的管线设计体现了一个核心工程判断：**AI工作流编排
 
 ## 相关实体
 
-- [Agent落地真相](ch03/035-agent.html)
-- [Agent配置模型](ch04/271-skill.html)
-- [钉钉招聘Agent](ch03/035-agent.html)
-- [AgentCore旅行分配系统](ch03/035-agent.html)
-- [QoderWork Skills开发实践](ch04/271-skill.html)
-- [淘宝数字人Agentic架构](ch03/035-agent.html)
+- [Agent落地真相](../ch03/035-agent.html)
+- [Agent配置模型](../ch04/271-skill.html)
+- [钉钉招聘Agent](../ch05/058-agent-harness.html)
+- [AgentCore旅行分配系统](../ch04/689-agentcore-harness.html)
+- [QoderWork Skills开发实践](../ch03/072-skills.html)
+- [淘宝数字人Agentic架构](../ch04/237-agentic.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - AI原生工程
 

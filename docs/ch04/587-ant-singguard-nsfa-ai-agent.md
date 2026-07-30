@@ -49,11 +49,11 @@ SingGuard-NSFA提供0.8B、2B、4B、9B四个尺寸，核心设计理念是将�
 
 ## 相关实体
 
-- [Agent安全三步序列](ch05/094-ai.html)
-- [AI Agent安全综述](ch05/094-ai.html)
-- [AI工具投毒漏洞](ch05/094-ai.html)
-- [Claude Code Trojan](ch03/077-claude-code.html)
-- [OpenClaw架构](ch03/035-agent.html)
+- [Agent安全三步序列](../ch05/009-harness.html)
+- [AI Agent安全综述](ch04/298-ai-agent.html)
+- [AI工具投毒漏洞](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Claude Code Trojan](../ch01/598-anthropic-claude-code.html)
+- [OpenClaw架构](../ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-security-ant-singguard-nsfa-2026.md)
 

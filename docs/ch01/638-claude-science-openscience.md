@@ -8,13 +8,13 @@
 
 Anthropic 的 Claude Science 上线不到一周，YC 孵化的 AI 科研团队发布「Claude Science 开源平替版」OpenScience。
 
-OpenScience 覆盖文献检索、假设生成、代码实验到论文撰写的全流程 AI 科研工作台，不绑定任何单一模型厂商，支持 DeepSeek、GLM 等多种模型。与 [Claude Science](ch03/077-claude-code.html) 形成开源替代方案。
+OpenScience 覆盖文献检索、假设生成、代码实验到论文撰写的全流程 AI 科研工作台，不绑定任何单一模型厂商，支持 DeepSeek、GLM 等多种模型。与 [Claude Science](../ch03/078-claude-code.html) 形成开源替代方案。
 
 ## 核心功能对比
 
 ### Claude Science 的定位与限制
 
-[Claude Science](ch03/077-claude-code.html) 是 Anthropic 推出的面向科学家的 AI 工作平台，提供研究人员常用的工具链集成：文献检索、Jupyter 代码执行、R 统计分析、SSH 集群任务提交、论文撰写等。其核心集成包括：
+[Claude Science](../ch03/078-claude-code.html) 是 Anthropic 推出的面向科学家的 AI 工作平台，提供研究人员常用的工具链集成：文献检索、Jupyter 代码执行、R 统计分析、SSH 集群任务提交、论文撰写等。其核心集成包括：
 
 - **数据库与工具链**：内置 60+ 科学数据库连接器和预配置技能包，覆盖基因组学、单细胞分析、蛋白质组学、结构生物学、化学信息学等常见科研领域。用户用自然语言提问，专业 Agent 自动跨库查询 UniProt、PDB、Ensembl、ChEMBL、GEO 等数据库
 - **执行架构**：多智能体架构——主 Agent 负责整体规划，子 Agent 并行处理不同任务，Reviewer Agent 负责事实核查（检查引用、验证计算结果、标注潜在错误）
@@ -35,13 +35,13 @@ OpenScience 由 YC 2026 冬季批次毕业的 Synthetic Sciences 团队（2025 �
 
 ### 1. 「模型不可知」策略的竞争意义
 
-OpenScience 最核心的设计决策是模型不可知架构。这不仅降低了使用门槛（国内科研团队不需要购买 Claude 订阅），更在战略层面构建了对抗模型供应商锁定的护城河。当科学 AI 平台可以自由切换底层模型时，用户不会被任何单一模型厂商的定价、政策或能力变化所绑架。这与 [Backend for Agent](ch03/035-agent.html) 强调的「基础设施抽象」理念一致——AI 科研工具的竞争正在从「模型能力」转向「平台生态」
+OpenScience 最核心的设计决策是模型不可知架构。这不仅降低了使用门槛（国内科研团队不需要购买 Claude 订阅），更在战略层面构建了对抗模型供应商锁定的护城河。当科学 AI 平台可以自由切换底层模型时，用户不会被任何单一模型厂商的定价、政策或能力变化所绑架。这与 [Backend for Agent](../ch03/035-agent.html) 强调的「基础设施抽象」理念一致——AI 科研工具的竞争正在从「模型能力」转向「平台生态」
 
 ### 2. 数据飞轮与「研究品味」
 
 Synthetic Sciences 团队的核心判断是：科学基础模型需要具备真正的「研究品味（research taste）」，这种品味靠单纯堆参数堆不出来，必须产品和模型两条腿走路——用产品收集高质量的科研过程数据，再用这些数据训练出有品味的模型。OpenScience 正是这条路线落地的第一个产品
 
-这种「产品→数据→模型→更好的产品」飞轮，与 [Claude Code 的遥测数据策略](ch03/077-claude-code.html) 有异曲同工之处，但 OpenScience 是开源产品，其数据收集策略更加透明。
+这种「产品→数据→模型→更好的产品」飞轮，与 [Claude Code 的遥测数据策略](ch01/598-anthropic-claude-code.html) 有异曲同工之处，但 OpenScience 是开源产品，其数据收集策略更加透明。
 
 ### 3. 科研 AI 的「研二学生」定位
 

@@ -30,7 +30,7 @@ Numbat 直接集成到企业客户端终端上的 agent harness 中，强制执�
 
 ## 相关实体
 
-- 参见 [Agent 工具投毒](ch05/094-ai.html) 了解另一类 AI Agent 安全威胁
+- 参见 [Agent 工具投毒](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 了解另一类 AI Agent 安全威胁
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perplexity-numbat-agent-security-2026-07-29.md)
 

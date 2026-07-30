@@ -55,8 +55,8 @@ Claude Code 将子 Agent 定义为标准 `AgentTool`：
 
 ## 关联
 
-- [AI Agent 工具数量陷阱](ch05/094-ai.html) — 5 个边界清楚的工具胜过 20 个模糊工具，与 Claude Code 工具设计互补
-- [Agent Harness 架构设计与实现](ch03/035-agent.html) — 生产级 Agent 系统设计参考
+- [AI Agent 工具数量陷阱](ch04/298-ai-agent.html) — 5 个边界清楚的工具胜过 20 个模糊工具，与 Claude Code 工具设计互补
+- [Agent Harness 架构设计与实现](../ch05/058-agent-harness.html) — 生产级 Agent 系统设计参考
 
 ---
 

@@ -280,7 +280,7 @@ AI Skill 测评报告是一套**分层置信机制**：用颜色横幅给出确�
 
 ## 关联阅读
 
-→ [AI Skill 测评体系进阶指南](ch04/271-skill.html) — 同系列其他章节
+→ [AI Skill 测评体系进阶指南](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-测评体系进阶指南.md) — 同系列其他章节
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-测评报告解读.md)
 
@@ -400,11 +400,11 @@ Token 级可观测数据对于定位 vLLM/SGLang/TensorRT-LLM 等引擎的并发
 ### 对于推动 OTel 标准的社区贡献者
 LoongSuite 的演进路径——内部验证后贡献社区——是大型企业参与开源标准的最佳实践 。在 OTel 社区提案 Skill 语义的经历表明，社区对有充分生产验证的提案接受度更高，建议其他厂商在类似领域也采用这一路径 。
 ## 相关实体
-- [Loongsuite Genai Semconv](ch05/094-ai.html)
-- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](ch09/047-coding-agent.html)
-- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch05/094-ai.html)
-- [从多智能体编排到Ai自主决策资损防控体系的架构演进](ch05/094-ai.html)
-- [给氛围编程系上安全带阿里集团 Ai 代码评审实践与 Benchmark 开源](ch05/094-ai.html)
+- [Loongsuite Genai Semconv](https://github.com/QianJinGuo/wiki/blob/main/entities/loongsuite-genai-semconv.md)
+- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md)
+- [Deeppotential Alibabacloud Agentrun Scientific Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/deeppotential-alibabacloud-agentrun-scientific-ai.md)
+- [从多智能体编排到Ai自主决策资损防控体系的架构演进](https://github.com/QianJinGuo/wiki/blob/main/entities/从多智能体编排到ai自主决策资损防控体系的架构演进.md)
+- [给氛围编程系上安全带阿里集团 Ai 代码评审实践与 Benchmark 开源](https://github.com/QianJinGuo/wiki/blob/main/entities/给氛围编程系上安全带阿里集团-ai-代码评审实践与-benchmark-开源.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md)
 
@@ -562,12 +562,12 @@ Agent 时代研究焦点从单次生成转向持续运行，三个关键事实�
 
 | 本报告概念 | 本 wiki 已有实体 | 视角关系 |
 |---|---|---|
-| Loop Engineering | [Tsinghua Harness Engineering Report](ch05/120-harness-engineering.html) (清华前一份) | **演进**：Harness → Loop，前者讲"系统层"，后者讲"循环层" |
-| Loop Stack 六件套 | [Agent Harness 12 Components 7 Decisions](ch03/035-agent.html) | **视角互补**：六件套偏"循环骨架"，12 件套偏"工程组件" |
-| Loop Ledger | [Agent Harness Observability Production](ch03/035-agent.html) | **深化**：从可观测性到可审计账本 |
-| Worktree Fleet | [Agent Engineering Principles Architecture Practice](ch03/035-agent.html) | **深化**：从"隔离原则"到"舰队编排" |
-| Entropy Janitor | [Hermes Agent Closed Learning Loop](ch03/095-hermes-agent.html) | **扩展**：闭环学习的"清理步骤"形式化 |
-| Triage 三种输出 | [Agent Harness Context Management Working Set](ch03/035-agent.html) | **深化**：从"上下文管理"到"信号路由" |
+| Loop Engineering | [Tsinghua Harness Engineering Report](https://github.com/QianJinGuo/wiki/blob/main/entities/tsinghua-harness-engineering-report.md) (清华前一份) | **演进**：Harness → Loop，前者讲"系统层"，后者讲"循环层" |
+| Loop Stack 六件套 | [Agent Harness 12 Components 7 Decisions](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-12-components-7-decisions.md) | **视角互补**：六件套偏"循环骨架"，12 件套偏"工程组件" |
+| Loop Ledger | [Agent Harness Observability Production](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-observability-production.md) | **深化**：从可观测性到可审计账本 |
+| Worktree Fleet | [Agent Engineering Principles Architecture Practice](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md) | **深化**：从"隔离原则"到"舰队编排" |
+| Entropy Janitor | [Hermes Agent Closed Learning Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-closed-learning-loop.md) | **扩展**：闭环学习的"清理步骤"形式化 |
+| Triage 三种输出 | [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) | **深化**：从"上下文管理"到"信号路由" |
 | Claude Code /goal | (官方文档：code.claude.com/docs/en/goal) | **产品映射** |
 | Claude Code Routines | (官方文档：code.claude.com/docs/en/routines) | **产品映射** |
 
@@ -611,7 +611,7 @@ Agent 时代研究焦点从单次生成转向持续运行，三个关键事实�
 - **度量**：报告未提供"Loop 好 vs 坏"的量化指标 —— 是体验式而非实证式
 
 ## 相关实体
-- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](ch05/094-ai.html)
+- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](https://github.com/QianJinGuo/wiki/blob/main/entities/tsinghua-ai-self-evolving-organization-corp-paradigm.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tsinghua-loop-engineering-report.md)
 
 ---
@@ -795,20 +795,20 @@ NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一�
 
 ## 相关实体
 
-- [EVA-Bench Data 2.0](ch03/035-agent.html) — 语音 Agent 垂直领域评估
-- [MobileGym](ch03/035-agent.html) — Mobile Agent 训练与评测基础设施
-- [YAML 驱动的 Agent 评估框架](ch03/035-agent.html)
-- [Agent 记忆评估综述](ch03/035-agent.html)
+- [EVA-Bench Data 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/eva-bench-data-2-voice-agent-evaluation.md) — 语音 Agent 垂直领域评估
+- [MobileGym](https://github.com/QianJinGuo/wiki/blob/main/entities/mobilegym-cas-mobile-agent-benchmark.md) — Mobile Agent 训练与评测基础设施
+- [YAML 驱动的 Agent 评估框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation.md)
+- [Agent 记忆评估综述](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-evaluation-landscape-taobao-survey.md)
 - [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
-- [AI 评估的三种方法](ch05/094-ai.html)
-- [Agent Skill 写作评估](ch04/271-skill.html)
-- [AI 工作面试与模型评估](ch05/094-ai.html)
-- [Inngest 2026 AI 评测报告](ch01/561-inngest-ai-in-production-the-2026-benchmark-report.html)
-- [Agent Harness 生产设计指南](ch03/035-agent.html)
-- [Agent 工程原则](ch03/035-agent.html)
-- [SkillClaw Hyman 阿里 Skill 框架](ch04/271-skill.html)
-- [SkillX 浙大 Hyman](ch04/271-skill.html)
-- [Claude Code 最佳社区 Fork 演进](ch03/077-claude-code.html)
+- [AI 评估的三种方法](https://github.com/QianJinGuo/wiki/blob/main/entities/evals-three-methods-of-ai-evaluation.md)
+- [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-evaluation.md)
+- [AI 工作面试与模型评估](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-job-interview-model-evaluation-mollick.md)
+- [Inngest 2026 AI 评测报告](https://github.com/QianJinGuo/wiki/blob/main/entities/inngest-ai-in-production-the-2026-benchmark-report.md)
+- [Agent Harness 生产设计指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture-design-production-guide.md)
+- [Agent 工程原则](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)
+- [SkillClaw Hyman 阿里 Skill 框架](https://github.com/QianJinGuo/wiki/blob/main/entities/skillclaw-hyman-nightly-evolution-alibaba.md)
+- [SkillX 浙大 Hyman](https://github.com/QianJinGuo/wiki/blob/main/entities/skillx-zhejiang-university-hyman.md)
+- [Claude Code 最佳社区 Fork 演进](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-best-community-fork-evolution-vibecoder.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nice-zhejiang-university-social-intelligence-benchmark-hyman-2026-06-12.md)
 
@@ -1064,9 +1064,9 @@ SkillSentry 测评体系的演进折射出一个根本性的工程挑战：如�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-测评体系进阶指南.md)
 
-→ [测评指标体系](ch04/271-skill.html)
+→ [测评指标体系](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-测评指标体系.md)
 
-→ [测评报告解读](ch04/271-skill.html)
+→ [测评报告解读](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-测评报告解读.md)
 
 ## 相关实体
 
@@ -1327,11 +1327,11 @@ Stddev > 0.1 时，按以下顺序排查：
 | Stddev | < 0.05 | 0.08 | 🟡 |
 让决策者一目了然地看到哪些是绿灯放行、哪些需要人工判断。
 ## 相关实体
-- [Ai Skill Metrics System](ch04/271-skill.html)
-- [Ai Skill Evolution Framework](ch04/271-skill.html)
-- [Ai Skill 测评报告解读](ch04/271-skill.html)
-- [Ai Skill Skill Creator 源码拆解](ch04/319-skill-skill.html)
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch03/035-agent.html)
+- [Ai Skill Metrics System](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-metrics-system.md)
+- [Ai Skill Evolution Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-evolution-framework.md)
+- [Ai Skill 测评报告解读](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-测评报告解读.md)
+- [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-测评指标体系.md)
@@ -1437,10 +1437,10 @@ SageMaker 训练 (PyTorch/TensorFlow)
 - 端云协同推理框架的标准化
 
 ## 相关实体
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch05/094-ai.html)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
-- [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](ch04/027-pod.html)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch05/094-ai.html)
+- [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](https://github.com/QianJinGuo/wiki/blob/main/entities/gpu-virtualization-using-mig-technology-on-amazon-sagemaker-hyperpod.md)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](https://github.com/QianJinGuo/wiki/blob/main/entities/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
 - [Aws Sagemaker Sft Dpo Tool Calling](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-sft-dpo-tool-calling.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-sagemaker-qualcomm-ai-hub-edge-npu-deployment.md)
@@ -1671,8 +1671,8 @@ Agent 按内部结构拆解为四个模块，评测指标与架构同构——�
 ## 与现有 wiki 知识的关系
 
 - **填补空白**：wiki 此前没有专门的 Agent 评测体系内容。本文提供了从指标设计→数据集工程→Judge Task→执行引擎→可视化的完整方法论
-- **互补 WorkBuddy**：[WorkBuddy](ch03/035-agent.html) 关注 Agent 产品架构（Harness/Loop/Memory），本文关注"如何评测 Agent 做得好不好"
-- **互补 Loop Engineering**：[Loop Engineering](ch05/094-ai.html) 定义了三层概念，本文将评测拆解到对应模块（感知/规划/记忆/工具）——评测结构应与架构同构
+- **互补 WorkBuddy**：[WorkBuddy](https://github.com/QianJinGuo/wiki/blob/main/entities/workbuddy-product-framework-agent-harness-anne-2026.md) 关注 Agent 产品架构（Harness/Loop/Memory），本文关注"如何评测 Agent 做得好不好"
+- **互补 Loop Engineering**：[Loop Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-next-keyword-for-ai-2026.md) 定义了三层概念，本文将评测拆解到对应模块（感知/规划/记忆/工具）——评测结构应与架构同构
 - **前作关联**：本文是《全球化商品中心智能答疑Agent实践》的续篇，从"验证基础能力"演进到"全链路精细化诊断"
 
 ---
@@ -1728,10 +1728,10 @@ Agent 评测的天然挑战是工具调用的不确定性——真实 API 可能
 
 ## 延伸阅读
 
-- [WorkBuddy：LLM 产品实践](ch03/035-agent.html) — Agent 产品架构对比
-- [Loop Engineering 会是 AI 的下个关键词吗？](ch05/094-ai.html) — Loop/Harness/Graph 三层概念
-- [高德 ABot-AgentOS](ch03/035-agent.html) — 具身 AI 的 Agent OS（含 EmbodiedWorldBench 评测）
-- [后端系统「AI 知识库体系」建设实践](ch05/094-ai.html) — Alibaba 知识库方法论
+- [WorkBuddy：LLM 产品实践](https://github.com/QianJinGuo/wiki/blob/main/entities/workbuddy-product-framework-agent-harness-anne-2026.md) — Agent 产品架构对比
+- [Loop Engineering 会是 AI 的下个关键词吗？](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-next-keyword-for-ai-2026.md) — Loop/Harness/Graph 三层概念
+- [高德 ABot-AgentOS](https://github.com/QianJinGuo/wiki/blob/main/entities/abot-agentos-robot-agent-os-amap-2026.md) — 具身 AI 的 Agent OS（含 EmbodiedWorldBench 评测）
+- [后端系统「AI 知识库体系」建设实践](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-knowledge-base-system-backend-practice-alibaba-2026.md) — Alibaba 知识库方法论
 
 ---
 
@@ -1921,8 +1921,8 @@ hermes gateway start  # 后台
 5. **安全审计应作为可观测性的标配而非附加** — 当 Agent 开始调用外部工具（尤其是有写入能力的工具），异常行为检测和全量日志审计是防止生产事故的最后防线。
 
 ## Related
-- [Hermes Agent](ch03/095-hermes-agent.html) — Nous Research 开源 Agent 框架，可观测性是其生产落地关键能力
-- [Hermes Agent 深度解析](ch03/095-hermes-agent.html) — Self-Evolving/动态 Skill 沉淀/RL 训练闭环等深度解析
+- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent.md) — Nous Research 开源 Agent 框架，可观测性是其生产落地关键能力
+- [Hermes Agent 深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-deep-dive.md) — Self-Evolving/动态 Skill 沉淀/RL 训练闭环等深度解析
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — 无内置可观测方案，对比参考
 - [原始文章存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-observability-aliyun.md)
 
@@ -1933,10 +1933,10 @@ hermes gateway start  # 后台
 > 📊 Level ⭐⭐ | 7.3KB | `entities/ai-skill-evolution-framework.md`
 
 ## 相关实体
-- [AI Skill 测评指标体系](ch04/271-skill.html)
-- [Skill工程化设计：把Agent当算法用](ch04/271-skill.html)
-- [Agentic AI 系统架构与分层模型](ch04/271-skill.html)
-- [AWS Model Agility: 6步LLM跨代际迁移框架](ch11/155-aws-generative-ai-model-agility-framework.html)
+- [AI Skill 测评指标体系](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-metrics-system.md)
+- [Skill工程化设计：把Agent当算法用](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-engineering-ai-as-algorithm.md)
+- [Agentic AI 系统架构与分层模型](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
+- [AWS Model Agility: 6步LLM跨代际迁移框架](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-generative-ai-model-agility-framework.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析
@@ -2110,10 +2110,10 @@ delta 指标（pass_rate / time_seconds / tokens）的标准差同样携带信�
 5. **让 Skill 自己记录成长**：每次从对话中修正一个问题时，显式地将改进固化到 SKILL.md 中，而非仅留在记忆里。Skill 是持续演进的文档而非一次性的产物。
 
 ## 相关实体
-- [Agent Skill 高质量编写规范](ch04/271-skill.html)
-- [Agent Skill 进阶模式与治理](ch04/271-skill.html)
+- [Agent Skill 高质量编写规范](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-practices.md)
+- [Agent Skill 进阶模式与治理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-advanced.md)
 
-- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](ch04/271-skill.html)
+- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](https://github.com/QianJinGuo/wiki/blob/main/entities/skillsieve-agent-skill-security.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---
@@ -2145,7 +2145,7 @@ delta 指标（pass_rate / time_seconds / tokens）的标准差同样携带信�
 
 ### 与形式化验证的深层关联
 
-该挑战兼容形式化验证系统（如 Lean、Coq），这一设计选择极具前瞻性。近年来，[LEAN 在形式化定理证明](ch03/035-agent.html)领域的进展表明，AI 辅助的形式化数学正在成为现实。拉马努金挑战将形式化证明作为可接受的提交形式，实际上是在推动 AI 数学研究向"可机器验证"的方向发展——这不仅降低了人工审校的成本，也为 AI 生成的数学内容建立了一条质量控制基线。
+该挑战兼容形式化验证系统（如 Lean、Coq），这一设计选择极具前瞻性。近年来，[LEAN 在形式化定理证明](https://github.com/QianJinGuo/wiki/blob/main/entities/leap-agentic-formal-theorem-proving-google-2026.md)领域的进展表明，AI 辅助的形式化数学正在成为现实。拉马努金挑战将形式化证明作为可接受的提交形式，实际上是在推动 AI 数学研究向"可机器验证"的方向发展——这不仅降低了人工审校的成本，也为 AI 生成的数学内容建立了一条质量控制基线。
 
 ### 拉马努金机器项目背景
 
@@ -2173,9 +2173,9 @@ delta 指标（pass_rate / time_seconds / tokens）的标准差同样携带信�
 
 ## 相关实体
 
-- [LEAP: Agentic Formal Theorem Proving](ch03/035-agent.html)
-- [CODA Bench: Code Agent Data Benchmark](ch09/105-coda-bench-code-agent.html)
-- [Karpathy LLM Wiki Knowledge Management](ch01/1274-llm.html)
+- [LEAP: Agentic Formal Theorem Proving](https://github.com/QianJinGuo/wiki/blob/main/entities/leap-agentic-formal-theorem-proving-google-2026.md)
+- [CODA Bench: Code Agent Data Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/coda-bench-code-agent-data-benchmark-renmin-2026.md)
+- [Karpathy LLM Wiki Knowledge Management](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-llm-wiki-obsidian-tutorial-shuge-2026.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ramanujan-challenge-ai-gil-kalai-2026-07-02.md)
 
@@ -2205,11 +2205,11 @@ MCG 的核心架构采用 Ingestion → Extraction → Rendering 三阶段流水
 
 **2. 领域专用检索器是精度提升的关键，而非通用 Embedding**
 
-MCG 采用了三路独立检索器（Code Retriever、Config Retriever、Document Retriever）分别处理代码、配置和文档，而非使用单一 Embedding 模型通用检索。这与 [RAG 分块优化](ch01/223-rag.html) 中强调的"入库质量决定系统效果"一致——专业检索器能对不同类型的文档片段进行语义优先级排序，从而为提取阶段提供更高信号的上下文。Nemotron RAG 的 embedding（llama-nemotron-embed-1b-v2）和 reranking（llama-nemotron-rerank-500m-v2）模型均为 NVIDIA 自研，针对代码和文档混合场景做了专项优化。
+MCG 采用了三路独立检索器（Code Retriever、Config Retriever、Document Retriever）分别处理代码、配置和文档，而非使用单一 Embedding 模型通用检索。这与 [RAG 分块优化](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunking-optimization-2025.md) 中强调的"入库质量决定系统效果"一致——专业检索器能对不同类型的文档片段进行语义优先级排序，从而为提取阶段提供更高信号的上下文。Nemotron RAG 的 embedding（llama-nemotron-embed-1b-v2）和 reranking（llama-nemotron-rerank-500m-v2）模型均为 NVIDIA 自研，针对代码和文档混合场景做了专项优化。
 
 **3. "不猜测"原则是合规文档系统的设计底线**
 
-MCG 在无法置信填充字段时，输出 "not found" 或 "information not available" 而非猜测捏造。这一设计选择对监管合规场景至关重要——[治理软规则](ch03/077-claude-code.html) 中同样指出，不确定情况下的"猜测性生成"在审计场景会构成风险。模型卡需要具备完整的审计追溯性，自动生成的内容若是编造而非基于真实数据，反而会加剧监管风险。MCG 将"Gap 发现"功能定位为卖点而非缺陷，这意味着它既适合文档完善的团队加速生产，也适合文档初建的团队识别缺口。
+MCG 在无法置信填充字段时，输出 "not found" 或 "information not available" 而非猜测捏造。这一设计选择对监管合规场景至关重要——[治理软规则](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-governance-soft-rules.md) 中同样指出，不确定情况下的"猜测性生成"在审计场景会构成风险。模型卡需要具备完整的审计追溯性，自动生成的内容若是编造而非基于真实数据，反而会加剧监管风险。MCG 将"Gap 发现"功能定位为卖点而非缺陷，这意味着它既适合文档完善的团队加速生产，也适合文档初建的团队识别缺口。
 
 **4. 灵活性三层解耦使工具具备长期适用性**
 
@@ -2259,11 +2259,11 @@ Oracle 将 MCG 部署在 OCI Container Engine for Kubernetes 上，结合 DAC（
 - **CIO 角色从技术执行者转向业务战略伙伴**：CEO 期望 CIO 能主动发现 AI 机会、创造新的价值主张，而非仅被动配合业务部门需求
 - **量子计算和前沿技术已进入部分 CEO 视野**：在金融、生命科学、物流等行业，CEO 开始要求 CIO 探讨量子计算等下一代技术的潜在机会
 ## 相关实体
-- [Top 10 Design Gadgets Creative Professionals 2026](ch01/913-20.html)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch05/094-ai.html)
+- [Top 10 Design Gadgets Creative Professionals 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](https://github.com/QianJinGuo/wiki/blob/main/entities/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md)
 - [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
-- [Programbench Agent Benchmark](ch04/163-programbench-agent-benchmark.html)
-- [Autoresearch Ai Scientific Discovery L0 L4 Challengehub](ch05/094-ai.html)
+- [Programbench Agent Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/programbench-agent-benchmark.md)
+- [Autoresearch Ai Scientific Discovery L0 L4 Challengehub](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md)
 
@@ -2371,9 +2371,9 @@ EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维
 ## 相关实体
 - [Datacomp For Language Models](https://github.com/QianJinGuo/wiki/blob/main/entities/datacomp-for-language-models.md)
 - [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
-- [Servicenow Ui Is Dead Agent](ch03/035-agent.html)
-- [The Ui Is Dead Long Live The Agent](ch03/035-agent.html)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch03/035-agent.html)
+- [Servicenow Ui Is Dead Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/servicenow-ui-is-dead-agent.md)
+- [The Ui Is Dead Long Live The Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent.md)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](https://github.com/QianJinGuo/wiki/blob/main/entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 
 ---
@@ -2457,7 +2457,7 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 
 ## 与现有实体的关系
 
-- 与 [MiroFlow Deep Research Agent](ch03/035-agent.html) 构成同一主题的评估与实现两极——MiroFlow 是 deep research 脚手架，WANDR 是测评框架
+- 与 [MiroFlow Deep Research Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/miroflow-deep-research-agent-harness-mirothinker.md) 构成同一主题的评估与实现两极——MiroFlow 是 deep research 脚手架，WANDR 是测评框架
 - 补充 [Perplexity Search as Code](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-search-as-code-generation.md) 的评估维度
 - 与 [Agent Evaluation Benchmarks](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) 相比，WANDR 聚焦于"wide"而非"deep"维度
 
@@ -2655,9 +2655,9 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 ## 与 wiki 既有内容的关系
 
 - **与 [CVPR 2026 小米 SVOR 视频掩码](https://github.com/QianJinGuo/wiki/blob/main/entities/cvpr-xiaomi-svor-video-masking.md)**：同属 CVPR 2026 + 顶级中国大厂 + 视频/图像生成；**互补不重复**（小米是视频生成，美团是海报生成）
-- **与 [JOYAI Echo 长视频框架（京东）](ch05/094-ai.html)**：同属顶会论文 + 顶级中国大厂 + 内容生成；美团侧重**海报（静态 + 文字）**，京东侧重**视频**
-- **与 [GPT-Image-2 完全指南](ch04/271-skill.html)**：都讲 AIGC 文生图；GPT-Image-2 是**工具使用**，美团 PosterCraft 是**学术论文级** + 完整技术体系
-- **与 [腾讯陈进 Agent Loop 工程手册](ch03/035-agent.html)**：都强调"评估驱动生成"思想（陈进的 SELF Protocol 30 天实验 / 美团 PosterReward RL 奖励信号）
+- **与 [JOYAI Echo 长视频框架（京东）](https://github.com/QianJinGuo/wiki/blob/main/entities/joyai-echo-long-video-framework-jd.md)**：同属顶会论文 + 顶级中国大厂 + 内容生成；美团侧重**海报（静态 + 文字）**，京东侧重**视频**
+- **与 [GPT-Image-2 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-image-2-完全指南附大量玩法案例顺便开源我的生图-skill.md)**：都讲 AIGC 文生图；GPT-Image-2 是**工具使用**，美团 PosterCraft 是**学术论文级** + 完整技术体系
+- **与 [腾讯陈进 Agent Loop 工程手册](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)**：都强调"评估驱动生成"思想（陈进的 SELF Protocol 30 天实验 / 美团 PosterReward RL 奖励信号）
 
 ## 深度分析
 
@@ -2688,11 +2688,11 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md)
 
 - [CVPR 2026 小米 SVOR 视频掩码](https://github.com/QianJinGuo/wiki/blob/main/entities/cvpr-xiaomi-svor-video-masking.md)
-- [JOYAI Echo 长视频框架（京东）](ch05/094-ai.html)
-- [GPT-Image-2 完全指南](ch04/271-skill.html)
-- [腾讯陈进 Agent Loop 工程手册](ch03/035-agent.html)
-- [Harness Engineering](ch05/120-harness-engineering.html)
-- [ConardLi Harness Engineering 综合性指南（+ Beautiful Article 第 2 来源）](ch05/120-harness-engineering.html)
+- [JOYAI Echo 长视频框架（京东）](https://github.com/QianJinGuo/wiki/blob/main/entities/joyai-echo-long-video-framework-jd.md)
+- [GPT-Image-2 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-image-2-完全指南附大量玩法案例顺便开源我的生图-skill.md)
+- [腾讯陈进 Agent Loop 工程手册](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md)
+- [ConardLi Harness Engineering 综合性指南（+ Beautiful Article 第 2 来源）](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---

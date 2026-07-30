@@ -155,10 +155,10 @@ MoE 的总参数量大意味着需要更多 GPU 内存来存储所有 expert—�
 NIM 专门为 NVIDIA GPU 优化推理——如果你的基础设施是 NVIDIA GPU，NIM 可能比 vLLM/TGI 更高效。
 
 ## 相关实体
-- [Nvidia Agentic Ai Subsurface Engineering](ch04/374-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Agentic Systems Extreme Co Design](ch03/035-agent.html)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch05/094-ai.html)
-- [Nvidia Nemotron 3 Agents Rag Voice Safety](ch03/035-agent.html)
+- [Nvidia Agentic Ai Subsurface Engineering](../ch04/374-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Agentic Systems Extreme Co Design](../ch04/237-agentic.html)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/184-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
+- [Nvidia Nemotron 3 Agents Rag Voice Safety](../ch03/035-agent.html)
 - [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
 
 ---

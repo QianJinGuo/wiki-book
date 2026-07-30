@@ -82,9 +82,9 @@
 
 ## 相关实体
 
-- [Agent Loop Engineering](ch03/035-agent.html)
-- [Agent Evaluation Guide](ch03/035-agent.html)
-- [AWS Agent Eval Kit](ch03/035-agent.html)
+- [Agent Loop Engineering](../ch05/004-loop-engineering.html)
+- [Agent Evaluation Guide](../ch03/035-agent.html)
+- [AWS Agent Eval Kit](../ch03/035-agent.html)
 - [Loop World Models](https://github.com/QianJinGuo/wiki/blob/main/entities/loopwm-looped-world-models.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/acl-2026-predict-before-executing-ml-agents-zju-ant-group.md)

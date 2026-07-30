@@ -65,7 +65,7 @@ Claude Code 的 extended thinking 输出包含一个 600 字符的 `signature` �
 5. **建立 agent 行为的独立观测层**：不依赖任何单一 AI 厂商的内置追踪功能。构建独立的 agent observability 层，记录所有输入、输出、工具调用和决策点，确保即使厂商的追踪功能不可靠，你仍有完整的审计记录。
 
 ## Related
-- [Claude Code large codebase harness](ch03/077-claude-code.html)
+- [Claude Code large codebase harness](../ch03/078-claude-code.html)
 
 ---
 ## 关联

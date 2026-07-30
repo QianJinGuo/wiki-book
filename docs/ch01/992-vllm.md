@@ -22,9 +22,9 @@ vLLM 是一个高性能的 LLM 推理和服务引擎，由 UC Berkeley 开发并
 
 ## 相关实体
 
-- [vLLM 高效推理](ch05/094-ai.html)
-- [ServiceNow vLLM Correctness](ch01/1274-llm.html)
-- [vLLM v0 to v1 Correctness](ch01/1274-llm.html)
+- [vLLM 高效推理](ch01/772-ai-infra.html)
+- [ServiceNow vLLM Correctness](ch01/992-vllm.html)
+- [vLLM v0 to v1 Correctness](ch01/992-vllm.html)
 ## 深度分析
 
 ### PagedAttention 的核心突破：虚拟内存思想在推理中的迁移

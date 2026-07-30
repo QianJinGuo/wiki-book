@@ -36,7 +36,7 @@
 
 ## 与 Bedrock 多模态模型对比测试平台的关系
 
-该方案与 [Bedrock 多模态模型对比测试平台](ch01/913-20.html) 互补：前者关注 Agentic 编排架构和端到端自动化测试流程，后者关注模型在 UI 元素定位（bounding box）精度上的量化对比。两者都在 [Amazon Bedrock](ch11/294-amazon-bedrock.html) 的基础上构建游戏 QA 自动化能力，是同一主题的不同维度。
+该方案与 [Bedrock 多模态模型对比测试平台](../ch11/295-amazon-bedrock.html) 互补：前者关注 Agentic 编排架构和端到端自动化测试流程，后者关注模型在 UI 元素定位（bounding box）精度上的量化对比。两者都在 [Amazon Bedrock](../ch11/295-amazon-bedrock.html) 的基础上构建游戏 QA 自动化能力，是同一主题的不同维度。
 
 ## 关键优势
 

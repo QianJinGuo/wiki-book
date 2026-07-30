@@ -95,9 +95,9 @@ GitHub 的 prompt requests 和 vouching 机制尝试建立新的信任层，但�
 
 ## 相关实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/235-openclaw.html)
-- [两万字详解Claude Code源码核心机制](ch03/077-claude-code.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/035-agent.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

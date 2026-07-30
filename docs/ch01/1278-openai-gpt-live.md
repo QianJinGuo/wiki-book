@@ -19,7 +19,7 @@ GPT-Live 的核心架构创新是将实时语音对话拆分为两个独立模�
 
 ## 核心要点
 
-- **委派（Delegate）架构**：将实时语音交互的"前台"（低延迟对话处理）与"后台"（深度推理）从物理模型层拆分。前台模型负责任何需要即时回应的能力（打断处理、自然语言输出），后台模型在收到委派请求后处理复杂推理并返回结果，前台再以自然语音呈现给用户。这种架构模式在 [Harness Engineering](ch05/120-harness-engineering.html) 中也有关键应用——将不同能力需求的子任务分配给合适的模型。
+- **委派（Delegate）架构**：将实时语音交互的"前台"（低延迟对话处理）与"后台"（深度推理）从物理模型层拆分。前台模型负责任何需要即时回应的能力（打断处理、自然语言输出），后台模型在收到委派请求后处理复杂推理并返回结果，前台再以自然语音呈现给用户。这种架构模式在 [Harness Engineering](../ch05/120-harness-engineering.html) 中也有关键应用——将不同能力需求的子任务分配给合适的模型。
 - **分级模式**：提供 Instant/mini（后台 GPT-5.5 Instant，快速推理）和 Medium/High（后台 GPT-5.5 Thinking，深度推理）两种分级。用户可根据使用场景在响应速度和推理深度之间权衡。
 - **流畅度提升**：官方评测中，对话流畅度从上一代语音模式的 3.80 分提升至 4.96 分（满分 7 分）。内测开发者反馈可与 GPT-Live 连续对话一小时，它能"先接着聊，后台默默把答案跑出来"。
 - **应用场景**：自然对话式信息查询、同声传译、语音助手、复杂多步任务（如"查航班延误信息 + 同时搜索附近的咖啡店"）等。
@@ -32,7 +32,7 @@ GPT-Live 的委派架构是语音 AI 行业的一个分水岭时刻。在此之�
 
 GPT-Live 的解法本质上是一种**异构计算（Heterogeneous Computing）**在 LLM 层面的应用——将不同性质的任务分配给不同特性的模型，通过模型间的协同来突破单一模型的性能天花板。前台模型的优化目标是响应速度（100ms 级），后台模型的优化目标是推理质量（秒级）。两者通过"委派协议"实现松耦合协同。
 
-这种架构在更广泛的 AI 系统中已有先例：[Harness Engineering](ch05/120-harness-engineering.html) 框架中的多 Agent 协作、[Claude Code](ch03/077-claude-code.html) 的 plan mode + 子 agent 编排，都体现了类似的设计思想——将复杂任务拆解为前台（快速交互）和后台（深度处理），通过明确的接口协议实现解耦。
+这种架构在更广泛的 AI 系统中已有先例：[Harness Engineering](../ch05/120-harness-engineering.html) 框架中的多 Agent 协作、[Claude Code](../ch03/070-claude-code-agent.html) 的 plan mode + 子 agent 编排，都体现了类似的设计思想——将复杂任务拆解为前台（快速交互）和后台（深度处理），通过明确的接口协议实现解耦。
 
 ### "快"不是唯一目标——对话节奏感才是
 
@@ -77,9 +77,9 @@ GPT-Live 的发布也揭示了实时语音 Agent 的未来发展方向：
 ## 关联实体
 
 - [GPT-5.6 分层定价模型](ch01/517-codex.html)
-- [Harness Engineering](ch05/120-harness-engineering.html)
-- [Claude Code Agent Engineering](ch03/077-claude-code.html)
-- [CodeX 上位](ch01/517-codex.html)
+- [Harness Engineering](../ch05/120-harness-engineering.html)
+- [Claude Code Agent Engineering](../ch03/070-claude-code-agent.html)
+- [CodeX 上位](ch01/738-chatgpt.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai放出gpt-live背后是gpt55实时语音有点恐怖了.md)
 

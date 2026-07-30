@@ -65,15 +65,15 @@ Karpathy 的"bits"框架揭示了 AI Agent 时代程序员价值重构的核心�
 **评估验证能力**：建立"生成 vs 评估"的技能切换意识。当 Agent 能稳定生成某类代码时，你的价值锚点应立即转向评估——谁能更好地评估，谁就掌握了下一阶段的定价权。
 
 ## 相关实体
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch05/094-ai.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch05/094-ai.html)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/438-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
-- [十年老技术开发的 AI Agent 探索之路](ch05/094-ai.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/271-skill.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/397-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-ai-agent-7-bits-value-decline-2026-allentan.md)
 
-- [ai agent memory systems](ch05/094-ai.html)
+- [ai agent memory systems](ch04/121-agent-memory.html)
 
 ---
 

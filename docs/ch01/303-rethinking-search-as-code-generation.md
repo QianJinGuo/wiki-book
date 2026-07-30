@@ -129,7 +129,7 @@ SaC 范式要求生成的代码在 sandboxed environment 中执行，这是生�
 
 ## 与现有实体/概念的链接
 
-→ [Agentic search models](ch03/035-agent.html) — 同主题概念层 vs 架构层互补
+→ [Agentic search models](../ch04/516-agentic-search-models.html) — 同主题概念层 vs 架构层互补
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perplexity-search-as-code-generation.md)
 
 ## 关键洞察总结

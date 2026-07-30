@@ -91,9 +91,9 @@ Token 涨太快是 winty 列举的四个常见坑之一，根因是 Memory 太�
 Hermes 设计成纯文本读写是刻意降低人工干预门槛。winty 建议"Review Agent 塞噪声 时直接手动删 MEMORY.md"，这一定程度违反了"自进化系统应自主运行"的主流观点，但这恰恰是 Hermes 的务实之处：系统初期运行质量不可控，完全依赖系统自净化会放大噪声影响。人工干预的边界建议限定在"明显错误写入"的纠正，而非主动教导——后者会破坏 Review Agent 的独立判断价值。
 
 ## 相关实体
-- [Hermes Agent 自进化机制源码解析](ch03/095-hermes-agent.html)
+- [Hermes Agent 自进化机制源码解析](../ch03/096-hermes-agent.html)
 
-- [review agent 机制深度解析（winty）](ch03/035-agent.html)
+- [review agent 机制深度解析（winty）](../ch03/035-agent.html)
 
 ## Related
 

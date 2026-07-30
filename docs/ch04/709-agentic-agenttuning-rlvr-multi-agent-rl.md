@@ -59,11 +59,11 @@ Multi-Agent RL的解法是将"做什么"（工具调用）和"怎么说"（回�
 - **Reward设计**：LLM Judge作为奖励模型引入的"评委不稳定性"使奖励更加模糊——同一个回复LLM Judge在不同次调用可能给出不同的打分
 - **稀疏奖励问题**：在长链工具调用中，只有最终结果才获得反馈，中间步骤的奖励信号极度稀疏
 
-这些挑战在[AgentCore旅行分配系统](ch03/035-agent.html)的落地实践中也被反复提及——Agent训练的最大挑战往往不是算法创新，而是工程环境的可靠性。
+这些挑战在[AgentCore旅行分配系统](ch04/689-agentcore-harness.html)的落地实践中也被反复提及——Agent训练的最大挑战往往不是算法创新，而是工程环境的可靠性。
 
 ### 5. 从task-specific训练到通用模型+Skill的演进方向
 
-文章在"未来展望"中提到"从task-specific训练向通用模型 + Skill渐进式披露演进"，这一方向与[QoderWork Skills开发实践](ch04/271-skill.html)中的四层分离架构形成了有趣的呼应：
+文章在"未来展望"中提到"从task-specific训练向通用模型 + Skill渐进式披露演进"，这一方向与[QoderWork Skills开发实践](../ch03/072-skills.html)中的四层分离架构形成了有趣的呼应：
 
 - **task-specific训练**：为每个任务训练专门的模型，精度高但成本高、扩展性差
 - **通用模型 + Skill**：一个底层模型通过不同的SKILL.md/配置适应不同任务，成本低、扩展性好
@@ -84,13 +84,13 @@ Multi-Agent RL的解法是将"做什么"（工具调用）和"怎么说"（回�
 
 ## 相关实体
 
-- [QoderWork Skills开发实践](ch04/271-skill.html)
-- [Harness Engineering探索之旅](ch05/120-harness-engineering.html)
-- [Agent落地真相](ch03/035-agent.html)
-- [AgentCore旅行分配系统](ch03/035-agent.html)
-- [群聊Agent模式](ch03/035-agent.html)
-- [Agent评测方法论](ch03/035-agent.html)
-- [AREAL-2.0 Agent自演进](ch03/035-agent.html)
+- [QoderWork Skills开发实践](../ch03/072-skills.html)
+- [Harness Engineering探索之旅](../ch05/120-harness-engineering.html)
+- [Agent落地真相](../ch03/035-agent.html)
+- [AgentCore旅行分配系统](ch04/689-agentcore-harness.html)
+- [群聊Agent模式](../ch01/976-claude.html)
+- [Agent评测方法论](../ch03/035-agent.html)
+- [AREAL-2.0 Agent自演进](../ch03/035-agent.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - AI原生工程
 

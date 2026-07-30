@@ -12,11 +12,11 @@ Agent 长任务最让人烦的地方，往往不是它不会做，而是它太�
 当任务在同一会话里滚动几十轮，上下文变厚后，模型更容易把噪声当成线索，把未完成事项压到注意力边缘。这段质量下滑区域叫做 **Dumb Zone**。
 
 ## 相关实体
-- [Small Hermes Self Evolving Agent Architecture](ch03/035-agent.html)
-- [Hermes Agent Vs Openclaw Comparison](ch03/095-hermes-agent.html)
-- [Hermes Agent Kanban Deep Test By Wjjagi 2026](ch03/095-hermes-agent.html)
+- [Small Hermes Self Evolving Agent Architecture](../ch03/035-agent.html)
+- [Hermes Agent Vs Openclaw Comparison](../ch03/096-hermes-agent.html)
+- [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch03/096-hermes-agent.html)
 - [Skill System Design Three Way Comparison](ch04/271-skill.html)
-- [Hermes Agent Memory System Vs Openclaw](ch03/095-hermes-agent.html)
+- [Hermes Agent Memory System Vs Openclaw](../ch03/096-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
 

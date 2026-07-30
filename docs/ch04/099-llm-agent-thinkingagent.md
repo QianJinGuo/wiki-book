@@ -217,12 +217,12 @@ CLOSED → OPEN（连续失败超阈值）→ HALF_OPEN（冷却到期，允许�
 
 ## 11. 与库内相关实体的交叉
 
-- [Harness Engineering Core Patterns](ch05/120-harness-engineering.html)：Harness Engineering 核心模式（持久化指令/分层记忆/Session-Harness-Sandbox/凭证安全）— ThinkingAgent 的 Pipeline 架构是 Harness 模式的完整实现
-- [Harness Engineering Paradigm Comprehensive 2026](ch05/120-harness-engineering.html)：Harness Engineering 综合论述（2026 年真正重要的是 Harness）— ThinkingAgent 验证了"可靠性设计前置"的核心论点
-- [Loop Engineering Feedback Control System](ch05/004-loop-engineering.html)：Loop Engineering 4 来源合并 — ThinkingAgent 的三段式循环是 Loop Engineering 的工程实现
-- [Claude Code Tool Call Security Incident Gitignore Redis Anthropic Apology 2026 06 17](ch03/077-claude-code.html)：Claude Code 安全事故 — ThinkingAgent 的 Safeguard 代理模式是直接应对方案
-- [Skills Driven Programming Taobao Enterprise 5 Phase Evolution 2026 06 17](ch04/271-skill.html)：大淘宝 Skills 编程 — ThinkingAgent 的 Anti-Skills 立场与之形成互补视角
-- [Agent Loop Engineering Handbook 8 Questions Chen Jin Tencent Self 2026](ch03/035-agent.html)：Agent Loop 8 个未解问题 — ThinkingAgent 对其中多个问题给出了工程答案
+- [Harness Engineering Core Patterns](../ch05/120-harness-engineering.html)：Harness Engineering 核心模式（持久化指令/分层记忆/Session-Harness-Sandbox/凭证安全）— ThinkingAgent 的 Pipeline 架构是 Harness 模式的完整实现
+- [Harness Engineering Paradigm Comprehensive 2026](../ch05/120-harness-engineering.html)：Harness Engineering 综合论述（2026 年真正重要的是 Harness）— ThinkingAgent 验证了"可靠性设计前置"的核心论点
+- [Loop Engineering Feedback Control System](../ch05/004-loop-engineering.html)：Loop Engineering 4 来源合并 — ThinkingAgent 的三段式循环是 Loop Engineering 的工程实现
+- [Claude Code Tool Call Security Incident Gitignore Redis Anthropic Apology 2026 06 17](../ch03/078-claude-code.html)：Claude Code 安全事故 — ThinkingAgent 的 Safeguard 代理模式是直接应对方案
+- [Skills Driven Programming Taobao Enterprise 5 Phase Evolution 2026 06 17](../ch03/072-skills.html)：大淘宝 Skills 编程 — ThinkingAgent 的 Anti-Skills 立场与之形成互补视角
+- [Agent Loop Engineering Handbook 8 Questions Chen Jin Tencent Self 2026](../ch05/004-loop-engineering.html)：Agent Loop 8 个未解问题 — ThinkingAgent 对其中多个问题给出了工程答案
 
 ---
 

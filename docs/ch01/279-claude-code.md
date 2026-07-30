@@ -78,10 +78,10 @@ Claude Code 在大型代码库中的表现揭示了企业 AI 编程工具部署�
 
 ## 相关实体
 - [How_Claude_Code_Works_In_Large_Codebases](ch01/976-claude.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/077-claude-code.html)
-- [Claude Code Large Codebase Harness Configuration](ch03/077-claude-code.html)
-- [Claude Code Self Repair Hooks Memory Config](ch05/094-ai.html)
-- [Code Review Graph](ch01/732-claude-code-code-review-graph.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/598-anthropic-claude-code.html)
+- [Claude Code Large Codebase Harness Configuration](../ch03/078-claude-code.html)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)
+- [Code Review Graph](ch01/833-code-review-graph-claude-code-6-8-token.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-era-git-version-control-agentic-coding-practices.md)
 

@@ -7,8 +7,8 @@
 ## 核心要点
 -
 ## 相关实体
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch01/820-github.html)
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch01/820-github.html)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 - [Microsoft For Startups Microsoft](ch01/1010-microsoft-for-startups-microsoft.html)
 

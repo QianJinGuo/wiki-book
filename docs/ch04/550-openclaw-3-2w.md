@@ -32,18 +32,18 @@ OpenClaw 的爆火并非偶然，而是精准击中了 AI Agent 落地的三个�
 - 定期 Review 和清理 Skills，避免过时技能导致错误执行路径
 
 ## 相关实体
-- [OpenCLAW 完全指南](ch11/235-openclaw.html)
-- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](ch11/235-openclaw.html)
-- [Harness Engineering 全面解读 — 从 Prompt 到 Context 再到 Harness 的三次演进](ch05/120-harness-engineering.html)
-- [AIAIGC峰会嘉宾阵容](ch05/094-ai.html)
-- [Hermes Agent vs OpenClaw 对比分析](ch03/095-hermes-agent.html)
+- [OpenCLAW 完全指南](../ch11/235-openclaw.html)
+- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/235-openclaw.html)
+- [Harness Engineering 全面解读 — 从 Prompt 到 Context 再到 Harness 的三次演进](../ch05/120-harness-engineering.html)
+- [AIAIGC峰会嘉宾阵容](ch04/528-aiaigc.html)
+- [Hermes Agent vs OpenClaw 对比分析](../ch03/096-hermes-agent.html)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/271-skill.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](ch03/035-agent.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/077-claude-code.html)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1036-openclaw-agent.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/271-skill.html)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Hermes Agent 记忆系统深度拆解](ch03/095-hermes-agent.html)
+- [Hermes Agent 记忆系统深度拆解](../ch03/096-hermes-agent.html)
 
 ---
 

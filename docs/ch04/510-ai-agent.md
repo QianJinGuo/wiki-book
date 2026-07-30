@@ -49,9 +49,9 @@ RunningHub 生态（ComfyUI 起家，10,000+ 模型积累）是 RHTV 的核心�
 ## 相关实体
 - [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/565-score-by-collisions-patch-by-panic.html)
 - [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/271-skill.html)
-- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](ch01/989-anthropic.html)
-- [Starfilm Ai Agent Ai Short Film Platform](ch05/094-ai.html)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](ch01/1274-llm.html)
+- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](../ch01/989-anthropic.html)
+- [Starfilm Ai Agent Ai Short Film Platform](ch04/343-ai-agent-ai.html)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/869-google-adds-llms-txt-check-to-chrome-lighthouse.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-内容创作开始进入画布-agent时代.md)
 

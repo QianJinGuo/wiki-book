@@ -134,12 +134,12 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 ## 相关实体
 
-- [Agentic AI 系统架构：Harness + Skill + MCP](ch04/271-skill.html) — Anthropic/agent 视角的架构总览
-- [AIDLC 范式迁移](ch05/094-ai.html) — 数据工程视角 AIDLC（互补不重叠）
-- [AIDL 范式迁移：平台驱动数据工程](ch05/094-ai.html) — 另一 AIDL 视角
-- [Agent Harness 架构设计生产指南](ch03/035-agent.html) — Aksahy 实战视角
-- [Agent 工程原则与架构实践](ch03/035-agent.html) — 通用 Agent 工程框架
-- [Strands + AgentCore 多区域 GPU 推理调度](ch03/035-agent.html) — 实战案例
+- [Agentic AI 系统架构：Harness + Skill + MCP](../ch05/090-harness-skill.html) — Anthropic/agent 视角的架构总览
+- [AIDLC 范式迁移](../ch05/094-ai.html) — 数据工程视角 AIDLC（互补不重叠）
+- [AIDL 范式迁移：平台驱动数据工程](../ch05/094-ai.html) — 另一 AIDL 视角
+- [Agent Harness 架构设计生产指南](../ch05/058-agent-harness.html) — Aksahy 实战视角
+- [Agent 工程原则与架构实践](../ch03/035-agent.html) — 通用 Agent 工程框架
+- [Strands + AgentCore 多区域 GPU 推理调度](ch04/237-agentic.html) — 实战案例
 
 ## 上线状态 / 链接
 
@@ -156,31 +156,31 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 ### 核心观点："生产力决定生产关系"是 Agentic AI 落地的经济学解释框架
 
-文章用马克思政治经济学经典命题重新框架化 Agentic AI 企业落地问题，这不是修辞手法，而是有实证支撑的分析框架。2788 家中国制造企业纵向研究显示 AI 成为"非人格化监管者"（系数 -0.0290, p<0.01），算法决策架空管理层裁量权——这正是生产关系未能适配新生产力的典型症状。[Ai Native Rd Org Design Xiaobin](ch05/094-ai.html) 从组织变革角度描述同一现象（管理层被绕过），本文的贡献在于给出了**更根本的经济学解释**：当执行层被 AI 接管，如果治理结构不变，信息垄断被瓦解，管理层权威被架空是必然结果。
+文章用马克思政治经济学经典命题重新框架化 Agentic AI 企业落地问题，这不是修辞手法，而是有实证支撑的分析框架。2788 家中国制造企业纵向研究显示 AI 成为"非人格化监管者"（系数 -0.0290, p<0.01），算法决策架空管理层裁量权——这正是生产关系未能适配新生产力的典型症状。[Ai Native Rd Org Design Xiaobin](../ch05/018-ai-native.html) 从组织变革角度描述同一现象（管理层被绕过），本文的贡献在于给出了**更根本的经济学解释**：当执行层被 AI 接管，如果治理结构不变，信息垄断被瓦解，管理层权威被架空是必然结果。
 
 ### 技术要点：AIDLC 是 Agent 时代的软件开发范式转移
 
-传统 SDLC 的三个核心假设在 Agentic AI 场景全部失效：(1) 确定性假设 → Agent 行为是统计性的，Evaluation 替代单元测试；(2) Guardrail 可选假设 → 自主决策系统必须有强制边界；(3) 部署即终点假设 → Agent 需要持续监控而非一次性验收。这个范式转移与 [Ai Engineering Platform Aidlc Migration](ch05/094-ai.html) 中的描述一致，但本文从 Agent 应用层（而非数据工程层）验证了 AIDLC 的必要性。Generative AI → AI Agent → Agentic AI 的三阶段演进，每个阶段都对应更复杂的生命周期管理需求。
+传统 SDLC 的三个核心假设在 Agentic AI 场景全部失效：(1) 确定性假设 → Agent 行为是统计性的，Evaluation 替代单元测试；(2) Guardrail 可选假设 → 自主决策系统必须有强制边界；(3) 部署即终点假设 → Agent 需要持续监控而非一次性验收。这个范式转移与 [Ai Engineering Platform Aidlc Migration](../ch05/094-ai.html) 中的描述一致，但本文从 Agent 应用层（而非数据工程层）验证了 AIDLC 的必要性。Generative AI → AI Agent → Agentic AI 的三阶段演进，每个阶段都对应更复杂的生命周期管理需求。
 
 ### 实践价值：MCP + A2A 是接口标准化层面的 N×M → M 降维
 
-当企业有 N 个 Agent 和 M 个工具时，全连接复杂度是 N×M。MCP 协议（Agent↔工具）和 A2A 协议（Agent↔Agent）将复杂度降为 M（工具层）+ N（Agent 层）。这是 [Agentic Ai System Architecture Harness Skill Mcp](ch04/271-skill.html) 中描述的架构逻辑在接口标准化层面的落地。AWS Bedrock AgentCore 的 Gateway 模块正是这一标准化的基础设施承载。
+当企业有 N 个 Agent 和 M 个工具时，全连接复杂度是 N×M。MCP 协议（Agent↔工具）和 A2A 协议（Agent↔Agent）将复杂度降为 M（工具层）+ N（Agent 层）。这是 [Agentic Ai System Architecture Harness Skill Mcp](../ch05/090-harness-skill.html) 中描述的架构逻辑在接口标准化层面的落地。AWS Bedrock AgentCore 的 Gateway 模块正是这一标准化的基础设施承载。
 
 ### 深层博弈："代理人困境"的微观机制与宏观代价
 
-130 名中层管理者的实验揭示了完整的信息不对称链条：员工用 AI → 绩效更好 → 管理者无法分辨 → 知道用了反而低估员工努力（β₂=-0.387, p<0.01）→ 员工理性选择隐瞒 → AI 使用进入暗处。这与 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](ch05/094-ai.html) 中讨论的 Agent 安全问题（工具毒化、Prompt 注入）共同构成了"AI 影子采纳"的不同切面：安全是技术层的影子，可信度是组织层的影子。
+130 名中层管理者的实验揭示了完整的信息不对称链条：员工用 AI → 绩效更好 → 管理者无法分辨 → 知道用了反而低估员工努力（β₂=-0.387, p<0.01）→ 员工理性选择隐瞒 → AI 使用进入暗处。这与 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](ch04/298-ai-agent.html) 中讨论的 Agent 安全问题（工具毒化、Prompt 注入）共同构成了"AI 影子采纳"的不同切面：安全是技术层的影子，可信度是组织层的影子。
 
 ### 技术判断：框架无关 + 模型无关是战略灵活性而非技术偏好
 
-文章强调"框架无关，模型无关"，这不是营销话术，而是面对 Agent 技术快速迭代的战略选择。专用压缩模型（[Anthropic Prompt Caching Claude Code](ch01/217-anthropic-prompt-caching-claude-code.html)）与通用基础设施的对比在这里有直接意义：锁定单一模型/框架意味着将组织的技术演进路线绑定到供应商的发布周期。分层标准化（接口/身份/可观测性） + 保持灵活性（模型/框架/Prompt）是兼顾控制力和演进速度的最优解，参考 [Agent Harness Architecture Design Production Guide](ch03/035-agent.html) 中的生产级设计原则。
+文章强调"框架无关，模型无关"，这不是营销话术，而是面对 Agent 技术快速迭代的战略选择。专用压缩模型（[Anthropic Prompt Caching Claude Code](../ch01/217-anthropic-prompt-caching-claude-code.html)）与通用基础设施的对比在这里有直接意义：锁定单一模型/框架意味着将组织的技术演进路线绑定到供应商的发布周期。分层标准化（接口/身份/可观测性） + 保持灵活性（模型/框架/Prompt）是兼顾控制力和演进速度的最优解，参考 [Agent Harness Architecture Design Production Guide](../ch05/058-agent-harness.html) 中的生产级设计原则。
 
 ## 实践启示
 
-1. **优先建立 Agent 治理平台，而非推广更多 AI 工具**：单 Agent 跑起来是 Demo，100 Agent 可靠服务是生产。从"工具堆叠"升级到"基础设施"是核心跃迁。没有统一平台的 AI 推广只会加速"探索失控 → 重复造轮子 → 数据/权限混乱"的代理人困境。结合 [Agent Harness Architecture Deep Dive Aksahy](ch03/035-agent.html) 中的 9 模块映射，优先建设 Runtime、Gateway、Policy、Observability 四根支柱。
+1. **优先建立 Agent 治理平台，而非推广更多 AI 工具**：单 Agent 跑起来是 Demo，100 Agent 可靠服务是生产。从"工具堆叠"升级到"基础设施"是核心跃迁。没有统一平台的 AI 推广只会加速"探索失控 → 重复造轮子 → 数据/权限混乱"的代理人困境。结合 [Agent Harness Architecture Deep Dive Aksahy](../ch05/058-agent-harness.html) 中的 9 模块映射，优先建设 Runtime、Gateway、Policy、Observability 四根支柱。
 
 2. **用 MCP + A2A 标准化接口作为集成策略的锚点**：接口标准先行是降低 N×M 集成复杂度的唯一有效路径。MCP 确保 Agent 与工具的连接标准化，A2A 确保多 Agent 协作标准化。[Model Context Protocol Mcp](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) 是当前生态最成熟的接口协议，企业应将 MCP 认证和版本管理纳入 Agent 上线的强制流程，而非可选配置。
 
-3. **AIDLC 流程建设先于规模化部署**：在 3-6 个月内建立 AIDLC 流程（Evaluation 框架 + Guardrail 配置 + 持续监控），比直接扩大 Agent 数量更重要。没有统计评估体系的 Agent 规模化是不可控的扩张。参考 [Agent Harness Architecture Design Production Guide](ch03/035-agent.html) 中的生产级 Checklists，在 AIDLC 早期就嵌入 Evaluation 指标。
+3. **AIDLC 流程建设先于规模化部署**：在 3-6 个月内建立 AIDLC 流程（Evaluation 框架 + Guardrail 配置 + 持续监控），比直接扩大 Agent 数量更重要。没有统计评估体系的 Agent 规模化是不可控的扩张。参考 [Agent Harness Architecture Design Production Guide](../ch05/058-agent-harness.html) 中的生产级 Checklists，在 AIDLC 早期就嵌入 Evaluation 指标。
 
 4. **影子采纳需要制度设计而非技术禁止**：披露 AI 使用会被惩罚 → 员工隐瞒 → 恶性循环。破解路径：强制披露义务 + 风险共担框架 + 激励重设（薪酬政策不能惩罚 AI 使用者）+ AI 素养建设。技术手段（可观测性、审计追踪）配合制度设计（Robert Simons 四类控制杠杆）才能真正解决问题。
 

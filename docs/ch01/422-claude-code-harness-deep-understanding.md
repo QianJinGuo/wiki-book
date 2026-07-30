@@ -12,15 +12,15 @@
 ##  Agent Harness 的核心循环
 
 ## 相关实体
-- [Claude Code Harness Deep Dive Founder Park](ch03/077-claude-code.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/077-claude-code.html)
-- [From Prompt To Harness Claude Official](ch01/976-claude.html)
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](ch03/077-claude-code.html)
-- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](ch03/077-claude-code.html)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/073-claude-code-harness.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/598-anthropic-claude-code.html)
+- [From Prompt To Harness Claude Official](../ch05/009-harness.html)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/078-claude-code.html)
+- [准备开一个新坑从零复刻一个 Claude Codenn目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的Nnclaude ](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-harness-deep-understanding.md)
 
-- [Skillx Zhejiang University Hyman](ch04/271-skill.html)
+- [Skillx Zhejiang University Hyman](../ch07/056-skillx.html)
 ## 深度分析
 
 ### 1. Agent Harness 的本质：围绕 LLM调用的工程化包装

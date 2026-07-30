@@ -31,9 +31,9 @@ Fin 的定位是"最高准确率 + 全配置系统"，面向中大型金融服�
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [How Superset built the IDE for AI agents on Vercel](ch05/094-ai.html)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch03/035-agent.html)
-- [The UI is dead, long live the agent: ServiceNow goes headless](ch03/035-agent.html)
+- [How Superset built the IDE for AI agents on Vercel](../ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/315-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless](ch04/315-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 
 ---
 

@@ -109,11 +109,11 @@ Claude Code 的 1M token 上下文窗口在表面上是一个"充裕"的上限�
 对于已经在使用  或  描述的系统进行上下文管理的团队，这篇文章提供了一个补充视角：它更侧重于**会话级别的即时决策**，而非整体架构层面的设计。在实际工程中，两者需要结合使用——在架构层面确保上下文质量，在会话层面确保决策及时。
 对于使用 Claude Code 进行日常开发的个人开发者，这篇文章的操作建议可以在下一次开发会话中立即实践，而不需要任何工具或流程的改变。
 ## 相关实体
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/077-claude-code.html)
-- [Claude Code Large Codebase Enterprise Deployment](ch03/077-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
+- [Claude Code Large Codebase Enterprise Deployment](../ch03/078-claude-code.html)
 - [Claude Code Agent View](ch09/003-claude-code-agent-view.html)
-- [Claude Code Openclaw Memory Vector Db Doubt](ch03/077-claude-code.html)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/077-claude-code.html)
+- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/078-claude-code.html)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用claude-codesession管理与1m上下文.md)
 

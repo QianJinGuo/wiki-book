@@ -61,7 +61,7 @@ ICML 2026 公布全年论文奖项：杰出论文奖 3 名（含 2 篇扩散模�
 - [扩散模型架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/diffusion-model-architecture.md)
 - [RLHF 与 AI 对齐](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md)
 - **AI 安全与审查工具悖论**
-- [DeepMind](ch05/094-ai.html)
+- [DeepMind](../ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/刚刚deepmind经典巨作再封神icml-2026大奖公布.md)
 

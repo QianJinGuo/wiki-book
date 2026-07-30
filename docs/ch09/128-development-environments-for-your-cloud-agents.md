@@ -53,11 +53,11 @@ Cursor 现在可以自动检测仓库、推断所需工具和依赖，并生成�
 7. **测试环境与生产环境的镜像层应保持一致**：避免测试时用一个镜像层而 agent 实际运行时用另一个。环境配置的一致性是 agent 行为可复现的基础。
 8. **在问题复现场景优先使用云端 agent**：Sentry Seer Agent 展示的"自然语言问答调试"模式，本质上是将人工排查转变为可并行的 LLM 驱动问答。在 Issue 高发期，云端 agent 的并行优势远优于本地调试流。
 ## 相关实体
-- [Cloud Agent Development Environments](ch03/035-agent.html)
-- [Oz Multi Harness Cloud Agent Orchestration](ch03/035-agent.html)
-- [Bedrock Agentcore Coding Agent Hosting](ch09/047-coding-agent.html)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/074-building-ai-agents-for-business-support-using-amazon-bedrock.html)
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch05/094-ai.html)
+- [Cloud Agent Development Environments](../ch03/035-agent.html)
+- [Oz Multi Harness Cloud Agent Orchestration](../ch04/518-agent-orchestration.html)
+- [Bedrock Agentcore Coding Agent Hosting](../ch11/050-bedrock-agentcore.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/074-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](../ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/development-environments-for-your-cloud-agents.md)
