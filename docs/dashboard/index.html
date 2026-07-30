@@ -283,6 +283,7 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 const LS_KEY = 'wiki-learn-progress-v3';
 const USER_KEY = 'wiki-learn-user';
 const RECALL_KEY = 'wiki-learn-recall-v1';
+const MIGRATED_KEY = 'wiki-learn-migrated-v4';
 const COUNTDOWN_KEY = 'wiki-learn-countdown-v1';
 const RECALL_INTERVALS = [1, 2, 4, 7, 15, 30]; // days - Ebbinghaus
 const LEVELS = ['read','explained','taught','mastered'];
@@ -297,6 +298,60 @@ let userId = localStorage.getItem(USER_KEY) || '';
 let countdownCfg = JSON.parse(localStorage.getItem(COUNTDOWN_KEY) || 'null') || { label: '面试', targetDate: new Date(Date.now() + 30 * 86400000).toISOString().slice(0, 10) };
 let recallData = JSON.parse(localStorage.getItem(RECALL_KEY) || '{}');
 let recallPanelOpen = false;
+
+// ── Entity-based key migration ──────────────────────────────────
+// Article file paths change across builds (e.g. ch04/692-... → ch04/698-...)
+// Entity names are stable, so we migrate all user data keys from file→entity.
+function migrateToEntityKeys(){
+  if(localStorage.getItem(MIGRATED_KEY)) return; // already migrated for this data version
+  // We need the entity→file map from articles.json to do the reverse (file→entity)
+  // But DATA isn't loaded yet at this point. We'll do it after init() loads DATA.
+}
+
+function doMigrateToEntityKeys(){
+  if(localStorage.getItem(MIGRATED_KEY)) return;
+  if(!DATA || !DATA.articles) return;
+  // Build file→entity map
+  const f2e = {};
+  for(const a of DATA.articles){
+    if(a.entity) f2e[a.file] = a.entity;
+  }
+  if(Object.keys(f2e).length === 0) return;
+  let changed = false;
+  // Migrate done (progress)
+  const newDone = {};
+  for(const [k,v] of Object.entries(done)){
+    const ek = f2e[k] || k; // if key is a file path, map to entity; else keep
+    if(ek !== k){ changed = true; if(!newDone[ek]) newDone[ek] = v; } // don't overwrite newer
+    else newDone[k] = v;
+  }
+  if(changed){ done = newDone; save(); }
+  // Migrate feynmanData
+  changed = false;
+  const newFeynman = {};
+  for(const [k,v] of Object.entries(feynmanData)){
+    const ek = f2e[k] || k;
+    if(ek !== k){ changed = true; if(!newFeynman[ek]) newFeynman[ek] = v; }
+    else newFeynman[k] = v;
+  }
+  if(changed){ feynmanData = newFeynman; saveFeynmanStorage(); }
+  // Migrate recallData
+  changed = false;
+  const newRecall = {};
+  for(const [k,v] of Object.entries(recallData)){
+    const ek = f2e[k] || k;
+    if(ek !== k){ changed = true; if(!newRecall[ek]) newRecall[ek] = v; }
+    else newRecall[k] = v;
+  }
+  if(changed){ recallData = newRecall; saveRecall(); }
+  localStorage.setItem(MIGRATED_KEY, '1');
+}
+
+// Look up article by entity (stable) or file (fallback)
+function findArticle(key){
+  if(!DATA) return null;
+  return DATA.articles.find(a => a.entity === key) || DATA.articles.find(a => a.file === key);
+}
 
 // ── D1 Sync ──────────────────────────────────────────────────
 function getApiBase(){ return window.location.origin + '/api/user-data'; }
@@ -485,7 +540,7 @@ function getDueRecallArticles(){
   const due = [];
   for(const [file, r] of Object.entries(recallData)){
     if(r.nextReview <= now){
-      const article = DATA ? DATA.articles.find(a => a.file === file) : null;
+      const article = findArticle(file);
       due.push({file, ...r, article});
     }
   }
@@ -531,7 +586,7 @@ function renderRecallPanel(){
     const interval = RECALL_INTERVALS[item.step];
     const overdue = Date.now() - item.nextReview;
     const overdueH = Math.floor(overdue / 3600000);
-    const escFile = item.file.replace(/'/g, "\\'");
+    const escKey = (item.article?.entity || item.file).replace(/'/g, "\\'");
     html += '<div class="recall-card">'+
       '<div class="recall-card-title"><a href="'+url+'" target="_blank" style="color:inherit;text-decoration:none">'+title+'</a></div>'+
       '<div class="recall-card-meta">'+
@@ -540,9 +595,9 @@ function renderRecallPanel(){
         (overdue > 0 ? '<span class="due">超期 '+overdueH+'h</span>' : '')+
       '</div>'+
       '<div class="recall-actions">'+
-        '<button class="recall-btn remembered" onclick="event.stopPropagation();handleRecallWithNote(\''+escFile+'\',true)">✓ 记住了</button>'+
-        '<button class="recall-btn forgot" onclick="event.stopPropagation();handleRecallWithNote(\''+escFile+'\',false)">✗ 忘了</button>'+
-        '<button class="recall-btn" onclick="event.stopPropagation();openFeynmanModal(\''+escFile+'\',null)" style="background:var(--surface2)">📝 笔记</button>'+
+        '<button class="recall-btn remembered" onclick="event.stopPropagation();handleRecallWithNote(\''+escKey+'\',true)">✓ 记住了</button>'+
+        '<button class="recall-btn forgot" onclick="event.stopPropagation();handleRecallWithNote(\''+escKey+'\',false)">✗ 忘了</button>'+
+        '<button class="recall-btn" onclick="event.stopPropagation();openFeynmanModal(\''+escKey+'\',null)" style="background:var(--surface2)">📝 笔记</button>'+
       '</div>'+
     '</div>';
   });
@@ -560,12 +615,12 @@ function getDailyArticle(){
 
   // Return cached if same day and article still unread
   if(stored && stored.date === today){
-    const article = DATA.articles.find(a => a.file === stored.file);
-    if(article && !getLevel(article.file)) return article;
+    const article = findArticle(stored.entity || stored.file);
+    if(article && !getLevel(article.entity)) return article;
   }
 
   // Pick new article: unread, deterministic by date
-  const unread = DATA.articles.filter(a => !getLevel(a.file));
+  const unread = DATA.articles.filter(a => !getLevel(a.entity));
   if(unread.length === 0) return null;
 
   // Seed from date string for deterministic daily pick
@@ -574,7 +629,7 @@ function getDailyArticle(){
   const idx = Math.abs(hash) % unread.length;
   const picked = unread[idx];
 
-  localStorage.setItem(DAILY_KEY, JSON.stringify({date: today, file: picked.file}));
+  localStorage.setItem(DAILY_KEY, JSON.stringify({date: today, entity: picked.entity, file: picked.file}));
   return picked;
 }
 
@@ -583,14 +638,14 @@ function skipDailyArticle(){
   const stored = JSON.parse(localStorage.getItem(DAILY_KEY) || 'null');
   const today = new Date().toISOString().slice(0, 10);
   // Get unread excluding current
-  const unread = DATA.articles.filter(a => !getLevel(a.file) && (!stored || a.file !== stored.file));
+  const unread = DATA.articles.filter(a => !getLevel(a.entity) && (!stored || a.entity !== (stored.entity || stored.file)));
   if(unread.length === 0){ renderDailyCard(); return; }
   let hash = 0;
   const seed = today + '-' + Date.now();
   for(let i = 0; i < seed.length; i++) hash = ((hash << 5) - hash + seed.charCodeAt(i)) | 0;
   const idx = Math.abs(hash) % unread.length;
   const picked = unread[idx];
-  localStorage.setItem(DAILY_KEY, JSON.stringify({date: today, file: picked.file}));
+  localStorage.setItem(DAILY_KEY, JSON.stringify({date: today, entity: picked.entity, file: picked.file}));
   renderDailyCard();
 }
 
@@ -640,14 +695,14 @@ let currentFeynmanFile = null;
 
 function saveFeynmanStorage(){ localStorage.setItem(FEYNMAN_KEY, JSON.stringify(feynmanData)); }
 
-function getFeynmanNote(file){ return feynmanData[file] || null; }
+function getFeynmanNote(key){ return feynmanData[key] || null; }
 
-function openFeynmanModal(file, event){
+function openFeynmanModal(key, event){
   if(event) event.stopPropagation();
-  currentFeynmanFile = file;
-  const article = DATA ? DATA.articles.find(a => a.file === file) : null;
-  const title = article ? article.title : file;
-  const note = getFeynmanNote(file) || {};
+  currentFeynmanFile = key;
+  const article = findArticle(key);
+  const title = article ? article.title : key;
+  const note = getFeynmanNote(key) || {};
   
   document.getElementById('feynman-article-title').textContent = title;
   document.getElementById('feynman-got').value = note.got || '';
@@ -670,7 +725,7 @@ function openFeynmanModal(file, event){
   }
   
   // Set level buttons
-  const currentLevel = getLevel(file) || 'read';
+  const currentLevel = getLevel(key) || 'read';
   document.querySelectorAll('#feynman-level-row .feynman-level-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lv === currentLevel);
   });
@@ -926,8 +981,8 @@ function renderLevelFilters(){
 // ── Stats ─────────────────────────────────────────────────────
 function renderStats(filtered){
   const allDone = Object.keys(done);
-  const doneInFiltered = filtered.filter(a=>getLevel(a.file)).length;
-  const totalWords = filtered.filter(a=>getLevel(a.file)).reduce((s,a)=>s+a.words,0);
+  const doneInFiltered = filtered.filter(a=>getLevel(a.entity)).length;
+  const totalWords = filtered.filter(a=>getLevel(a.entity)).reduce((s,a)=>s+a.words,0);
   const readTime = (totalWords / 500 / 60).toFixed(1);
 
   const rStats = getRecallStats();
@@ -947,8 +1002,8 @@ function renderProgress(){
   let html = '';
   DATA.phases.forEach(p => {
     const articles = DATA.articles.filter(a=>a.phase===p.id);
-    const completed = articles.filter(a=>getLevel(a.file)).length;
-    const mastered = articles.filter(a=>getLevel(a.file)==='mastered').length;
+    const completed = articles.filter(a=>getLevel(a.entity)).length;
+    const mastered = articles.filter(a=>getLevel(a.entity)==='mastered').length;
     const pct = articles.length ? Math.round(completed/articles.length*100) : 0;
     html += `<div class="phase-progress">
       <span class="pname" style="color:${p.color}">${p.name}</span>
@@ -998,7 +1053,7 @@ function render(){
   sortedPhases.forEach(pid => {
     const articles = groups[pid];
     const p = DATA.phases.find(x=>x.id===parseInt(pid));
-    const completed = articles.filter(a=>getLevel(a.file)).length;
+    const completed = articles.filter(a=>getLevel(a.entity)).length;
     const color = phaseColor(parseInt(pid));
 
     html += `<div class="section-header">
@@ -1008,7 +1063,7 @@ function render(){
     html += '<div class="grid">';
 
     articles.forEach(a => {
-      const lv = getLevel(a.file);
+      const lv = getLevel(a.entity);
       const isDone = lv !== null;
       const url = articleUrl(a.file);
       const lvClass = a.level===3?'lv3':a.level===2?'lv2':'lv1';
@@ -1027,12 +1082,13 @@ function render(){
           </div>
           <div class="card-actions">
             <button class="level-btn ${btnClass}" onclick="handleLevelClick('${a.file}',event)">${lv ? levelLabel(lv) : '○ 未读'}</button>
+            <button class="level-btn ${btnClass}" onclick="handleLevelClick('${a.entity}',event)">${lv ? levelLabel(lv) : '○ 未读'}</button>
             ${lv ? (() => { 
-              const fn = getFeynmanNote(a.file); 
+              const fn = getFeynmanNote(a.entity); 
               const hasThreads = fn?.threads?.length;
-              const fileEsc = a.file.replace(/'/g, "\\'");
+              const entityEsc = a.entity.replace(/'/g, "\\'");
               const icon = fn ? (hasThreads ? '📝💬' : '📝✓') : '📝';
-              return `<span class="feynman-badge" onclick="openFeynmanModal('${fileEsc}',event)">${icon}</span>`;
+              return `<span class="feynman-badge" onclick="openFeynmanModal('${entityEsc}',event)">${icon}</span>`;
             })() : ''}
           </div>
 

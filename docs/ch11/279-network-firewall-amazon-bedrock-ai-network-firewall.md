@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch01/1013-spec.html)
+- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch01/1016-spec.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)

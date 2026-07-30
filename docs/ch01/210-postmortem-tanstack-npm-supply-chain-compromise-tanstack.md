@@ -215,8 +215,8 @@ See the GitHub Security Advisory for the full list of affected versions: [GHSA-g
 ## 相关实体
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](../ch12/035-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch01/348-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch01/1089-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch01/757-scarcruft.html)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch01/1092-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch01/759-scarcruft.html)
 - [Semgrep Intercom Php Supply Chain](../ch12/117-semgrep-intercom-php-supply-chain.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/npm-supply-chain-compromise-postmortem.md)

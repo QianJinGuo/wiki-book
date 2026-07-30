@@ -82,10 +82,10 @@ Aris Tsakpinis is a Senior Specialist Solutions Architect for Generative AI focu
 
 ## 相关实体
 - [Amazon Bedrock Agentic Payments Guardrails](../ch11/294-amazon-bedrock.html)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/558-amazon-bedrock-agentcore.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/298-ai-agent.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/558-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/395-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 

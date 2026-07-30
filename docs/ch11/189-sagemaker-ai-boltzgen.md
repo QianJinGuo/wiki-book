@@ -55,8 +55,8 @@ BoltzGen on SageMaker 的设计中，从快速验证（10 个候选，~2 分钟�
 
 ## 关联实体
 
-- [蛋白质研究 Copilot](../ch04/558-amazon-bedrock-agentcore.html)
-- [Claude 化学家](../ch01/626-making-claude-a-chemist.html)
+- [蛋白质研究 Copilot](../ch04/561-amazon-bedrock-agentcore.html)
+- [Claude 化学家](../ch01/627-making-claude-a-chemist.html)
 - [AgentScope 企业级分布式 Harness](../ch05/009-harness.html)
 - [Databricks GPU 可靠性](../ch01/043-how-we-keep-gpus-reliable-across-databricks-ai.html)
 

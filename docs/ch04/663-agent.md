@@ -1,63 +1,50 @@
-# 生产级 Agent 全景框架 (叶小钗)
+# 万级实时推理的商品领域Agent实践思考和总结
 
-## Ch04.663 生产级 Agent 全景框架 (叶小钗)
+## Ch04.663 万级实时推理的商品领域Agent实践思考和总结
 
-> 📊 Level ⭐⭐ | 3.4KB | `entities/production-grade-agent-framework-yexiaochai.md`
+> 📊 Level ⭐⭐ | 3.4KB | `entities/taobao-product-domain-agent-architecture.md`
 
-# 生产级 Agent 全景框架 (叶小钗)
+# 万级实时推理的商品领域Agent实践思考和总结
 
-叶小钗基于 6 场企业培训总结的生产级 Agent 系统性框架，覆盖**架构、Harness 工程、组织与人才**三大维度，回答 "Agent 进入企业后应该做什么、怎样做成可长期运行的生产系统" 这一核心问题。
+## 深度分析
 
-## 核心框架
+本文来自淘天集团商品中心技术团队，详述商品域如何构建"事件驱动的Function-Centric Agent架构"，实现万级实时推理，覆盖亿级商品。
 
-### Agent 在企业中的定位
-传统企业软件 = System of Record。Agent 增加 **认知与行动层**，形成三层结构：用户入口与交互层 + 认知与行动层 + 业务记录层。
+**核心技术架构**：
+- 两层结构：上层workflow编排层 + 下层统一能力供给层，通过AIFunction接口交互
+- 轻量aiagentsdk：@AIWorkflow、@AIAction、@AIFunction、@AIParameter、@AIResult、@AIResultField注解体系
+- 链式调用规范：`registry.item().query().invoke(params)`
 
-### Workflow vs Agent 选型矩阵
-以业务知识专业程度（横轴）× 行动复杂度（纵轴）二维判断：
-- **Workflow**：固定流程、规则稳定
-- **知识工程**：专业知识重（知识库 + Skill + 本体）
-- **通用 Agent**：Deep Research / Coding / 办公助手
-- **业务型 Agent**：金融/法律/医疗（专业知识+多轮行动）
+**商品领域知识库三层**：
+1. 显性事实知识（客观描述）→ 运营决策、prompt增强
+2. 关联情景知识（主配件场景）→ 10个类目10000条案例，53条规则
+3. 隐性经验知识（用户/专家经验）→ 商品卖点、参数说明
 
-## 技术架构
+**在离线统一方案**：
+- Function/Action/Workflow三组件标准化
+- 离线批量推理（调度触发）+ 在线增量推理（实时事件驱动）
+- 统一存储：MySQL（在线）+ ODPS（离线）
 
-8 层架构：Agent Loop → Tool 层 → Context 层 → 编排与会话管理 → Skill 与插件层 → 观测与评估 → 任务与调度 → 治理层。
+**实时推理关键**：精卫链路基于商品ID+事务ID聚合变更，将处理量级降低一个数量级。
 
-其中 **Harness** 是核心概念：模型外围的整套运行机制，负责每次模型调用前组装合适 Context，返回后推动任务继续。大量 Agent 问题出在 Harness 而非模型本身。
+**应用效果**：覆盖亿级商品，搜索转化率提升，新需求1周/人交付。
 
-## Tool / Skill / Pipeline / Agent 四概念
+## 实践启示
 
-| 概念 | 解决的问题 |
-|------|-----------|
-| Tool | Agent 可以执行什么动作 |
-| Skill | 某类任务应该怎样完成 |
-| Pipeline | 谁在什么阶段使用什么能力交付 |
-| Agent | 谁长期承担这类任务 |
+1. **Java生态Agent选型**：spring-ai-alibaba是集团内落地的最优选择，与现有系统集成成本最低
+2. **Function-Centric设计**：通过AIFunction标准化封装工具和领域知识，上层workflow可灵活编排
+3. **事务型事件驱动**：商品领域事件的聚合转发是实现实时推理的关键基础设施
+4. **三层知识库**：显性→情景→隐性的递进设计，覆盖了商品智能化的完整知识需求
+5. **在离线统一**：同一套Workflow逻辑，通过触发源差异区分在线/离线，代码复用率最大化
 
-## AI 原生组织四层
+## 相关实体
+- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/035-agent.html)
+- [Verizon Connect Agentic Ai 100K Users](ch04/109-verizon-connect-agentic-ai-10.html)
+- [Skillos Learning Skill Curation For Self Evolving Agents](ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/582-ai-mollick.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/298-ai-agent.html)
 
-1. **Context Layer**：汇聚跨系统信息，动态装配
-2. **Pipeline Layer**：定义角色/阶段/输入/输出/交付标准
-3. **Skill Layer**：保存组织做事方法
-4. **Agent Governance Layer**：Agent 作为执行单元管理
-
-## 生产级成熟度 6 阶段
-
-聊天 → 调用工具 → 规划产出成果 → 长时间运行（队列/Heartbeat/断点恢复）→ 被治理（身份/权限/审计）→ 沉淀能力（Skill/评测集）
-
-Demo 通常只覆盖前两个阶段。生产系统的大部分工程集中在后四个阶段。
-
-## 多 Agent 设计原则
-
-先回答两个问题：用户是否需要长期认识多个角色（产品形态）？当前任务是否需要多个执行单元协作（运行架构）？
-
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/生产级-agent-全景架构harness-工程组织与人才.md)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/taobao-product-domain-agent-architecture.md)
 
 ---
 

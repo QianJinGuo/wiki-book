@@ -84,9 +84,9 @@ Coinbase Ventures 对 Route 66 的支持表明，其判断是：未来成功的�
 Patrick 关于"loss-y 模型"的问题指出了一个有价值的研究方向：在消息丢失率非零的 WAN 环境下，如何设计既保持安全性（safety）又保证活性（liveness）的共识协议，并进行严格的敏感性分析（不同丢包率下性能的渐变行为）。
 这与 Commonware 宣称的"tractable modification"哲学相契合——框架设计需要支持研究者快速修改共识参数和假设，而不是每次修改都需要从零开始证明。
 ## 相关实体
-- [Thread Openai Devs](../ch01/750-openai.html)
+- [Thread Openai Devs](../ch01/390-openai.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
-- [Thread 0Xcheeezzyyyy](../ch01/1240-0.html)
+- [Thread 0Xcheeezzyyyy](../ch01/1243-0.html)
 - 
 - Axie Infinity Ronin Ethereum Layer2 Migration
 

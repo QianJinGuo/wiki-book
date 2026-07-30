@@ -225,9 +225,9 @@ AI Native 时代，artifact 可见性大幅提升，但"被看见"（被认可�
 
 ## 相关实体
 
-- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/893-agent-ai.html)
+- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/896-agent-ai.html)
 - [AI in Cybersecurity Training Resources | SANS Institute](ch05/094-ai.html)
-- [AI设计的思想实验：权衡与边界](../ch01/912-stochastic-parrot-thought-experiment.html)
+- [AI设计的思想实验：权衡与边界](../ch01/915-stochastic-parrot-thought-experiment.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](ch05/009-harness.html)
 
 ---

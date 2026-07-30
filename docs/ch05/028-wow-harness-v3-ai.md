@@ -171,7 +171,7 @@ ESAA 出现是"好消息"——意味着这个方向不是孤立判断，是领�
 - [Agent Harness 上下文管理](ch05/058-agent-harness.html) —— 工作集视角 + subagent 隔离
 - [Harness Engineering](ch05/120-harness-engineering.html) —— 系统性 harness 实践
 - [Agent Self-Improvement Six Mechanisms](../ch03/035-agent.html) —— 长期连贯性相关
-- [From Agent Protocol to Harness Skill](../ch04/426-from-agent-protocol-to-harness-skill.html) —— 协议 → skill 演化
+- [From Agent Protocol to Harness Skill](../ch04/428-from-agent-protocol-to-harness-skill.html) —— 协议 → skill 演化
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wow-harness-v3-governance-protocol.md)
 

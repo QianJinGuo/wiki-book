@@ -16,8 +16,8 @@ Chris 是这样评论的："ChatGPT 就像个猎人，他出去帮我找食物�
 - [Skill Rag Tsinghua Sra](../ch04/271-skill.html)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/122-useful-memories-become-faulty-when-continuously-updated-by-l.html)
 - [Build Live Translation Apps With Gpt Realtime Translate](ch01/151-build-live-translation-apps-with-gpt-realtime-translate.html)
-- [Chatgpt Search Web Run Fanout Searchengineland](ch01/1164-chatgpt.html)
-- [Stochastic Parrot Thought Experiment](ch01/912-stochastic-parrot-thought-experiment.html)
+- [Chatgpt Search Web Run Fanout Searchengineland](ch01/738-chatgpt.html)
+- [Stochastic Parrot Thought Experiment](ch01/915-stochastic-parrot-thought-experiment.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-autonomous-earning-money.md)
 

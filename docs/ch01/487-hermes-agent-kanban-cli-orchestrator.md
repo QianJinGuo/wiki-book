@@ -85,7 +85,7 @@ Kimi Code CLI 的**多模态输入 + Agent Swarm** 特性，更适合做需要�
 两个层的能力边界清晰，组合起来形成完整的 Agent 闭环。
 
 ## 相关链接
-- [Hermes Agent Goal And Kanban](../ch04/380-hermes-agent-goal.html)
+- [Hermes Agent Goal And Kanban](../ch04/381-hermes-agent-goal.html)
 
 ## 实践启示
 ### 对 Hermes-Agent Kanban 使用者的建议

@@ -18,6 +18,17 @@ RUN mkdocs build
 # Remove flat ch01-NNN-*.html duplicates (subdirs ch01/, ch02/ etc. are kept — links point there)
 RUN cd site && find . -maxdepth 1 -name 'ch[0-9][0-9]-[0-9][0-9][0-9]-*.html' -delete
 
+# Build neighbor graph for RAG (Tier 1)
+RUN if [ -f "site/search/search_index.json" ]; then \
+      python3 scripts/build-neighbor-graph.py \
+        --input site/search/search_index.json \
+        --output site/assets/neighbor_graph.json \
+        --top-k 20; \
+    fi
+
+# Slim search index for faster loading
+RUN python3 scripts/slim-search-index.py
+
 # -- Serve stage --
 FROM nginx:alpine
 

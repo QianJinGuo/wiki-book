@@ -117,15 +117,15 @@ OpenClaw 不是孤例——任何"本地优先、用户自治、跨消息通道"
 
 ## 关联实体
 
-- [AI Agent 的迁移与现代化: OpenClaw → Bedrock AgentCore](../ch04/558-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化: OpenClaw → Bedrock AgentCore](../ch04/561-amazon-bedrock-agentcore.html)
 - [EKS Graviton 多租户 OpenClaw K8s 实践](../ch11/235-openclaw.html)
-- [CI/CD on Bedrock AgentCore OpenClaw 企业智能运营最佳实践](../ch04/558-amazon-bedrock-agentcore.html)
+- [CI/CD on Bedrock AgentCore OpenClaw 企业智能运营最佳实践](../ch04/561-amazon-bedrock-agentcore.html)
 - [Agent Security 三步走: Harness + Governance + Identity](../ch05/009-harness.html)
 - [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Claude Code vs OpenClaw Memory 对比](../ch03/077-claude-code.html)
 - [Claude Code vs OpenClaw Memory 向量数据库之争](../ch03/077-claude-code.html)
 - [Claude Code vs OpenClaw 使用 Ettin](../ch09/033-claude-code-openclaw-usage-ettin.html)
-- [Claude Managed Agents 自托管沙箱企业版](../ch04/539-claude-managed-agents.html)
+- [Claude Managed Agents 自托管沙箱企业版](../ch04/710-claude-managed-agents.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

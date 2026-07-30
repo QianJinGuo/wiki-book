@@ -26,8 +26,8 @@ PHP 生态的供应链攻击揭示了一个深层问题：Composer 的插件机�
 
 ## 相关实体
 - [semgrep intercom php security](ch12/106-semgrep-intercom-php-security.html)
-- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01/757-scarcruft.html)
-- [Semis Memo: Supply Chain Inheritance](../ch01/622-semis-memo-supply-chain-inheritance.html)
+- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01/759-scarcruft.html)
+- [Semis Memo: Supply Chain Inheritance](../ch01/641-semis-memo-supply-chain-inheritance.html)
 - [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](ch12/035-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
 - [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/094-ai.html)
 

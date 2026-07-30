@@ -12,7 +12,7 @@
 - 联邦机构需将身份安全列为 AI 时代最高优先级，同时为 AI Agent 失效做容灾规划
 ## 相关实体
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](ch01/1007-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](ch01/1010-microsoft-for-startups-microsoft.html)
 - [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
 - [How I Moved My Digital Stack To Europe](ch01/106-how-i-moved-my-digital-stack-to-europe.html)
 

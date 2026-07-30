@@ -73,7 +73,7 @@ Agnes-2.5-Flash 定位为"日常主力模型"，而 Agnes-2.5-Pro 面向"专业�
 - [Claude Code 深度架构分析](../ch03/077-claude-code.html)
 - [Harness Engineering 2026 全景](../ch05/120-harness-engineering.html)
 - [Claude Code 技能封装](../ch07/035-claude-code-skills.html)
-- [Anthropic 输出验证瓶颈](ch09/099-anthropic-8x.html)
+- [Anthropic 输出验证瓶颈](ch09/100-anthropic-8x.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ## 第 2 来源 — 新智元报道：Codex 封号潮与 Agnes 替代方案
