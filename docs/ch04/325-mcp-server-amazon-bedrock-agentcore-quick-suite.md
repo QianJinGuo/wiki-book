@@ -14,8 +14,8 @@
 ## 相关实体
 - [AgentCore Runtime部署Apache Doris MCP Server](../ch11/175-apache-doris-mcp-server-quick-suite-ai.html)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/270-aws-bedrock-agentcore.html)
-- [AgentCore Managed Harness](ch04/687-agentcore-harness.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/395-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [AgentCore Managed Harness](ch04/689-agentcore-harness.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/290-aws-devops-agent.html)
 - [OpenClaw多租户迁移: Phase 2&3部署](../ch11/235-openclaw.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/270-aws-bedrock-agentcore.html)
@@ -25,12 +25,12 @@
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/294-amazon-bedrock.html)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/305-amazon-nova.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/688-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/690-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/744-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/299-bedrock.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/558-amazon-bedrock-agentcore.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/561-amazon-bedrock-agentcore.html)
 - [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
 
 ## 深度分析

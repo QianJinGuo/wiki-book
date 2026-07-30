@@ -92,7 +92,7 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 ## 相关实体
 
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1167-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1170-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Karpathy 从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
 - [OpenClaw 多 Agent 协同开发](../ch11/235-openclaw.html)
@@ -103,12 +103,12 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
 - [better decisions at scale: how mathematical optimization del](../ch11/174-better-decisions-at-scale-how-mathematical-optimization-del.html)
 - [farewell ai2](../ch05/094-ai.html)
-- [introducing 1-bit and ternary bonsai image 4b: image generat](ch01/1172-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
+- [introducing 1-bit and ternary bonsai image 4b: image generat](ch01/707-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
 - [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](../ch05/094-ai.html)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](../ch05/094-ai.html)
 - [private fintech has quietly become bigger than public fintec](../ch03/107-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
 - [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/107-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
-- [the inevitable need for an open model consortium](ch01/1185-the-inevitable-need-for-an-open-model-consortium.html)
+- [the inevitable need for an open model consortium](ch01/1188-the-inevitable-need-for-an-open-model-consortium.html)
 
 ---
 

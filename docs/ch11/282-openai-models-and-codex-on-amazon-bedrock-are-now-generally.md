@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](../ch01/910-20.html)
+- [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](../ch01/913-20.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-models-and-codex-on-amazon-bedrock-are-now-generally-.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)

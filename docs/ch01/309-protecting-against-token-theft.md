@@ -170,9 +170,9 @@ Vercel 选择在「请求级」部署 BotID，本质上是把攻击者的破解�
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/235-openclaw.html)
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/009-harness.html)
 - [Apple Siri Private Inference Lethal Trifecta Matthew Green](https://github.com/QianJinGuo/wiki/blob/main/entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/161-automate-progressive-rollouts-with-vercel-flags-vercel.html)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/162-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 - [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)
-- [Ai Infra Llm Efficient Inference Vllm](ch01/770-ai-infra.html)
+- [Ai Infra Llm Efficient Inference Vllm](ch01/772-ai-infra.html)
 - [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](../ch04/237-agentic.html)
 - [Model Inference Comparison](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-inference-comparison.md)
 

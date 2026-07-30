@@ -79,7 +79,7 @@ Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业�
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/009-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/035-agent.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/625-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/1274-llm.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/095-hermes-agent.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)

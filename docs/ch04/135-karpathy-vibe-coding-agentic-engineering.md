@@ -68,7 +68,7 @@ Karpathy 自己做了一个 MenuGen 小应用：拍菜单照片 → OCR 抽菜�
 - [Claude Code Harness Deep Understanding](../ch01/422-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/073-claude-code-harness.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/449-vibe-coding-agentic-engineering.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/451-vibe-coding-agentic-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
 - [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)

@@ -31,7 +31,7 @@ RAG 的工程链路分为离线阶段（文档解析→清洗→分块→向量�
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](ch01/358-codeindex.html)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/396-agent-skills.html)
+- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/397-agent-skills.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/120-harness-engineering.html)
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/077-claude-code.html)

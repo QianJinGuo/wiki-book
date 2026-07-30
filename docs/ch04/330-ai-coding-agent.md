@@ -6,7 +6,7 @@
 
 ## 相关实体
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/095-hermes-agent.html)
-- [Agent 记忆架构](ch04/428-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent 记忆架构](ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Agent 记忆模块化框架](ch04/121-agent-memory.html)
 - [AI Agent 记忆系统](ch04/121-agent-memory.html)
 - [上下文窗口管理](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
@@ -20,7 +20,7 @@
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/664-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
 - [AI Context Layer 框架](../ch05/094-ai.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/095-hermes-agent.html)

@@ -111,9 +111,9 @@
 
 ## 相关实体
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
-- [Codex Can Now Control Other Desktop Devices Via Computer Use](../ch09/142-codex-can-now-control-other-desktop-devices-via-computer-use.html)
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch01/1086-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
-- [Google Debuts Gemini Focused Updates At Io 2026](ch01/910-20.html)
+- [Codex Can Now Control Other Desktop Devices Via Computer Use](../ch09/143-codex-can-now-control-other-desktop-devices-via-computer-use.html)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch01/1089-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
+- [Google Debuts Gemini Focused Updates At Io 2026](ch01/913-20.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workspaceupdates-googleblog-com-google-workspace-updates.md)

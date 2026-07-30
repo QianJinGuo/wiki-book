@@ -118,7 +118,7 @@ skill-up 用**逐层收窄的判定漏斗**承接此类场景：
 - [Agent Skill 评估与迭代](ch04/269-agent-skill.html)
 - [Agent 可靠性工程：Skillify 与持续改进](ch04/271-skill.html)
 - [Agent 评估系统指南](../ch03/035-agent.html)
-- [SWE-bench Agent 评估](ch04/689-swe-bench-agent.html)
+- [SWE-bench Agent 评估](ch04/691-swe-bench-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-skill-up-agent-skill-evaluation-framework-2026.md)
 

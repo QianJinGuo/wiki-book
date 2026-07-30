@@ -39,16 +39,16 @@ Skill 是 Agent 能力的最小封装单元，它把领域知识、工作流程�
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/396-agent-skills.html)
-- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](../ch01/1255-gpt-image-2.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/539-claude-managed-agents.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/397-agent-skills.html)
+- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](../ch01/1258-gpt-image-2.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/710-claude-managed-agents.html)
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/035-agent.html)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/986-anthropic.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/989-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 - [吴恩达：AI 将最先杀死前端](../ch05/094-ai.html)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/986-anthropic.html)
-- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1005-claude.html)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/989-anthropic.html)
+- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/976-claude.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
 - [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [天猫新品营销技术团队AI编码实战指南（上）](../ch05/094-ai.html)

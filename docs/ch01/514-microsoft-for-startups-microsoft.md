@@ -59,9 +59,9 @@ Microsoft for Startups 是微软面向初创企业的支持计划，帮助创始
 ## 相关实体
 - [Microsoft Is Quietly Shopping For An Openai Replac](ch01/036-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [Microsoft Startups](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-startups.md)
-- [Microsoft To Retire Together Mode Its Virtual Meeting Space For Teams](ch01/932-microsoft-to-retire-together-mode-its-virtual-meeting-spa.html)
-- [Microsoft For Startups Microsoft](ch01/1007-microsoft-for-startups-microsoft.html)
-- [2 Year 25 Ai Projects Summary](ch01/1116-5-ai.html)
+- [Microsoft To Retire Together Mode Its Virtual Meeting Space For Teams](ch01/935-microsoft-to-retire-together-mode-its-virtual-meeting-spa.html)
+- [Microsoft For Startups Microsoft](ch01/1010-microsoft-for-startups-microsoft.html)
+- [2 Year 25 Ai Projects Summary](ch01/1119-5-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Microsoft-for-Startups-Microsoft-v2.md)
 

@@ -91,7 +91,7 @@ Amazon Web Services (AWS)
 
 ## 相关实体
 - [AgentCore Runtime部署Apache Doris MCP Server](ch11/175-apache-doris-mcp-server-quick-suite-ai.html)
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04/436-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04/438-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
 - [停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南](../ch05/094-ai.html)
 - [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch04/237-agentic.html)
 

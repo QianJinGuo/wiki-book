@@ -44,7 +44,7 @@ Token 退化的本质是**预训练-后训练数据分布失配**在 token 粒�
 - [Llm Tokenizer](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-tokenizer.md) — 分词器训练与词表构建
 - [Llm Pretraining Vs Sft](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-pretraining-vs-sft.md) — 预训练与后训练的数据分布差异
 - [Catastrophic Forgetting](https://github.com/QianJinGuo/wiki/blob/main/concepts/catastrophic-forgetting.md) — 稀疏 token 退化的理论基础
-- [LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL](ch01/625-llm.html)
+- [LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL](ch01/1274-llm.html)
 
 ## 深度分析
 ### 退化本质：lm_head 而非 embedding

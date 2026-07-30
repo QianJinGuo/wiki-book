@@ -169,7 +169,7 @@ Hermes Agent 的闭环学习循环代表了一种**主动式自我改进**而非
 - [Hermes Agent Vs Openclaw Comparison](../ch03/095-hermes-agent.html)
 - [Skill System Design Three Way Comparison](../ch04/271-skill.html)
 - [Hermes Agent Memory System Vs Openclaw](../ch03/095-hermes-agent.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/380-hermes-agent-goal.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/381-hermes-agent-goal.html)
 - [Small Hermes Self Evolving Agent Architecture](../ch03/035-agent.html)
 
 ---

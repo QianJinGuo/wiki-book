@@ -1,2 +1,4 @@
 mkdocs-material==9.7.7
 mkdocs-minify-plugin==0.8.0
+numpy>=1.26
+scipy>=1.12

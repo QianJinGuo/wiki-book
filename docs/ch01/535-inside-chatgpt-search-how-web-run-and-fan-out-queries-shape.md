@@ -69,7 +69,7 @@ ChatGPT Search 区分「实时网络信息」和「预训练知识」，并只�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
-- [Building web search-enabled agents with Strands and Exa](../ch04/463-building-web-search-enabled-agents-with-strands-and-exa.html)
+- [Building web search-enabled agents with Strands and Exa](../ch04/465-building-web-search-enabled-agents-with-strands-and-exa.html)
 - [Why and how to implement an AI asset rationalization strategy](ch01/579-why-and-how-to-implement-an-ai-asset-rationalization-strateg.html)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/298-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)

@@ -21,8 +21,8 @@ type: entity
 
 ## 相关实体
 - [Openai Models Codex Amazon Bedrock Ga](../ch11/294-amazon-bedrock.html)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/729-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/659-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/731-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/660-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
 - [Amazon Sagemaker Qualcomm Ai Hub Edge Npu Deployment](../ch05/094-ai.html)
 

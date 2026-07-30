@@ -65,13 +65,13 @@ SkillX的三层技能体系（Planning / Functional / Atomic）揭示了Agent经
 
 ## 相关实体
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/269-agent-skill.html)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/417-aws-sagemaker-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/419-aws-sagemaker-ai-agent.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/257-anthropic-agent.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/271-skill.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/271-skill.html)
-- [SkillClaw](../ch04/472-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/474-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/396-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/397-agent-skills.html)
 
 - [Qoder Skills 完全指南](ch07/034-qoder-skills.html)
 - [你写的 Skill，及格了吗？](../ch04/271-skill.html)

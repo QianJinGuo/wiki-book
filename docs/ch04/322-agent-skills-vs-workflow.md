@@ -85,14 +85,14 @@ Workflow平台与Skills系统正在向彼此中间地带演进。Coze已明确�
 - AI输出结果与业务判断的一致性是否可验证（效果可观测）
 - 出问题时，能否准确定位是规则设计缺陷还是模型能力不足（根因可分离）
 ## 相关实体
-- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/396-agent-skills.html)
-- [Anthropic Google Agent Skills Design Patterns](ch04/382-anthropic-google-agent-skills.html)
+- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/397-agent-skills.html)
+- [Anthropic Google Agent Skills Design Patterns](ch04/383-anthropic-google-agent-skills.html)
 - [Agent Skills Teams Architecture Evolution Selection Guide](ch04/238-agent-skills-teams.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/396-agent-skills.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/396-agent-skills.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/397-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/397-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-skills-vs-coze-dify-n8n-lowcode-yexiaocha.md)
-- [2026年最值得关注的15款开发者工具深度解读](../ch01/1323-15.html)
+- [2026年最值得关注的15款开发者工具深度解读](../ch01/1326-15.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

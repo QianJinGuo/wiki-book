@@ -51,7 +51,7 @@ Salesforce 推出的 Headless 360 将 headless 概念推向大众。Notion 也�
 
 这些案例共同指向一个趋势：传统软件公司正在主动"去掉界面"，不是因为界面没有价值，而是因为 agent 作为新的用户群体，对 access pattern 的需求与人完全不同。未来软件可能需要维护两套接口——一套为人（GUI），一套为机器（API/API Agent Interface）。
 
-这与 [Salesforce Headless Software Losing Head A16Z](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md) 讨论的"护城河从界面层迁移到数据层"的趋势一致。[Enterprise Software Moats Agent Era](../ch03/035-agent.html) 进一步分析了五维迁移评估框架。[The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch04/613-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) 则展示了 ServiceNow 在 ITSM 领域的 headless 实践。
+这与 [Salesforce Headless Software Losing Head A16Z](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md) 讨论的"护城河从界面层迁移到数据层"的趋势一致。[Enterprise Software Moats Agent Era](../ch03/035-agent.html) 进一步分析了五维迁移评估框架。[The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch04/315-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) 则展示了 ServiceNow 在 ITSM 领域的 headless 实践。
 
 ## 深度分析
 
@@ -142,10 +142,10 @@ Headless 软件面向 agent，不面向人，但最终仍然需要有人来解�
 - [AI Agent 工具数量陷阱](ch04/298-ai-agent.html) — Agent 工具工程的设计原则与 headless 架构互补
 - [Salesforce 主动砍掉了界面](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md) — 同一议题的延伸讨论，聚焦数据护城河
 - [Enterprise Software Moats in the Agent Era](../ch03/035-agent.html) — 企业软件在 Agent 时代的护城河分析框架
-- [ServiceNow Headless 实践](ch04/613-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) — ITSM 领域的 headless 转型案例
+- [ServiceNow Headless 实践](ch04/315-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) — ITSM 领域的 headless 转型案例
 - [Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md) — 云安全领域的 headless 实践
 - [日抛软件：AI时代的认知滑坡](../ch05/094-ai.html) — 对"AI 替代复杂系统"论调的批判性分析
-- [17种Agent架构演进](ch04/697-17-agent.html) — Agent 控制流设计对 headless 架构的影响
+- [17种Agent架构演进](ch04/699-17-agent.html) — Agent 控制流设计对 headless 架构的影响
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 约束 agent 行为的工程方法论
 
 ---
