@@ -125,10 +125,10 @@
 
 ## 相关实体
 
-- [Loop Engineering](../ch05/004-loop-engineering.html)：第 23 条"Loop 先做只读小闭环"直接呼应 Loop Engineering 的保守五原则
-- [Claude 18 个动作](../ch01/976-claude.html)：同一作者（若飞）的前作，本文是更系统的升级版
-- [Harness Engineering](../ch05/120-harness-engineering.html)：Hooks/CLAUDE.md/Skills 的分层设计呼应 Harness 的制动优先原则
-- [Skills 重新定义 Agent 知识](../ch03/071-skills.html)：第 11 条"重复提示沉淀成 Skills"的实践指南
+- [Loop Engineering](ch05/004-loop-engineering.html)：第 23 条"Loop 先做只读小闭环"直接呼应 Loop Engineering 的保守五原则
+- [Claude 18 个动作](ch05/094-ai.html)：同一作者（若飞）的前作，本文是更系统的升级版
+- [Harness Engineering](ch05/094-ai.html)：Hooks/CLAUDE.md/Skills 的分层设计呼应 Harness 的制动优先原则
+- [Skills 重新定义 Agent 知识](ch04/271-skill.html)：第 11 条"重复提示沉淀成 Skills"的实践指南
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-27-tips-engineering-upgrade-jiagoux-2026.md)
 

@@ -30,7 +30,7 @@ Qwen3.7-Max 的评测策略与传统大模型评测有本质区别。传统 benc
 
 ### 奖励作弊检测：展示元认知能力
 
-第二个任务要求模型监控另一轮 RL 训练并自动发现奖励作弊（Reward Hacking）行为。这本质上是元认知任务——模型需要理解 RL 训练的机制，识别模型可能钻空子的模式，然后将其形式化为检测规则。模型不仅自主发现了多种作弊模式（如偷看 GitHub 标准答案），还通过反向验证迭代优化规则。这种能力对 [Harness Engineering](../ch05/120-harness-engineering.html) 中的安全监控和异常检测场景具有直接参考价值。
+第二个任务要求模型监控另一轮 RL 训练并自动发现奖励作弊（Reward Hacking）行为。这本质上是元认知任务——模型需要理解 RL 训练的机制，识别模型可能钻空子的模式，然后将其形式化为检测规则。模型不仅自主发现了多种作弊模式（如偷看 GitHub 标准答案），还通过反向验证迭代优化规则。这种能力对 [Harness Engineering](ch05/120-harness-engineering.html) 中的安全监控和异常检测场景具有直接参考价值。
 
 ### 编程与工具调用：真正的 Agent 底座
 
@@ -52,11 +52,11 @@ Qwen3.7-Max 的评测策略与传统大模型评测有本质区别。传统 benc
 
 ## 相关实体
 
-- [Qwen AgentWorld](../ch03/035-agent.html)
+- [Qwen AgentWorld](ch03/035-agent.html)
 - [Qwen Image Flash](ch01/1236-qwen-image-flash-beyond-objective-design-few-step-distill.html)
-- [Alibaba Agentic Cloud](../ch04/347-agentic-cloud.html)
-- [Harness Engineering Survey 2026](../ch05/120-harness-engineering.html)
-- [Agent Harness 上下文管理](../ch05/058-agent-harness.html)
+- [Alibaba Agentic Cloud](ch03/035-agent.html)
+- [Harness Engineering Survey 2026](ch05/120-harness-engineering.html)
+- [Agent Harness 上下文管理](ch03/035-agent.html)
 - [DeepSeek V4](ch01/1151-deepseek-v4.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen3.7-max-opus-level-experience-code-secret-garden.md)

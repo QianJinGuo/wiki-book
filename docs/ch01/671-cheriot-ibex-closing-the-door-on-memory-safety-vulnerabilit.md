@@ -47,11 +47,11 @@ Azure Infrastructure Blog
 May 08, 2026
 Memory safety vulner
 ## 相关实体
-- [05 11 The Great Memory Panic Of 2026](ch01/876-the-great-memory-panic-of-2026.html)
+- [05 11 The Great Memory Panic Of 2026](ch01/913-20.html)
 - [Memory In The Llm Era Iclr2026](ch01/1274-llm.html)
 - [Openchronicle Memory Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/openchronicle-memory-layer.md)
 - [Hermes 9 Module Architecture Winty](ch01/742-9.html)
-- [Openclaw Prompt Context Harness](../ch11/235-openclaw.html)
+- [Openclaw Prompt Context Harness](ch11/235-openclaw.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

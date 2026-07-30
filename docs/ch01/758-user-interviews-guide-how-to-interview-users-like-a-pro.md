@@ -13,8 +13,8 @@
 - 分析流程：转录 → 摘要 → 寻找模式 → 情境化 → 定量验证 → 综合洞察 → 头脑风暴下一步 
 ## 相关实体
 - [User Journey Map](ch01/197-user-journey-maps-how-ux-teams-turn-friction-into-better-pr.html)
-- [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/047-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
+- [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch05/094-ai.html)
 - [Unitree Ipo Robotics Market](https://github.com/QianJinGuo/wiki/blob/main/entities/unitree-ipo-robotics-market.md)
 - [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
 

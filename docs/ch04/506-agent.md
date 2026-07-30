@@ -10,11 +10,11 @@
 来自**清华大学人工智能学院、交叉信息研究院**的方寸跃迁团队，提出一套面向 Agent 运行全生命周期的多层安全体系，覆盖事前（Skill Ward）× 事中（Guard × Observer）× 事后（审计）完整链路。
 
 ## 相关实体
-- [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
-- [Canvas Breach Disrupts Schools Colleges Nationwide](../ch12/033-canvas-breach-disrupts-schools-colleges-nationwide.html)
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/071-skills.html)
-- [Aws Bedrock Agentcore Identity Security](../ch11/270-aws-bedrock-agentcore.html)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/820-github.html)
+- [Ath Agent Trust Handshake Protocol](ch03/035-agent.html)
+- [Canvas Breach Disrupts Schools Colleges Nationwide](ch12/033-canvas-breach-disrupts-schools-colleges-nationwide.html)
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](ch04/271-skill.html)
+- [Aws Bedrock Agentcore Identity Security](ch03/035-agent.html)
+- [Github Investigating Teampcp Claimed 17Cc77](ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tsinghua-agent-security-fangcun.md)
 

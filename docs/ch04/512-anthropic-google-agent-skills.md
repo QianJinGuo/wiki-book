@@ -29,14 +29,14 @@ description 是路由契约，不是简介。触发范围太宽，Agent 会乱�
 Skill 适合让 Agent 理解和应用流程，但安全底线、权限控制、审计记录更适合下沉到确定性更强的层。如果某条规则每次都要成立，更适合用 Hook 这类确定性机制强制，而不是只写在提示或 Skill 里 ^。
 
 ## 相关实体
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/397-agent-skills.html)
-- [Anthropic Google Agent Skills Design Patterns](ch04/383-anthropic-google-agent-skills.html)
-- [Anthropic 14 Skill Patterns Best Practices](../ch01/315-anthropic-14-skill.html)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/397-agent-skills.html)
-- [Anthropic Agent Skills Design Patterns 14](ch04/257-anthropic-agent.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/271-skill.html)
+- [Anthropic Google Agent Skills Design Patterns](ch04/271-skill.html)
+- [Anthropic 14 Skill Patterns Best Practices](ch04/271-skill.html)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/271-skill.html)
+- [Anthropic Agent Skills Design Patterns 14](ch04/271-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
-- [nature | anthropic：蒸馏过程潜意识传递行为偏好](../ch05/094-ai.html)
+- [nature | anthropic：蒸馏过程潜意识传递行为偏好](ch05/094-ai.html)
 
 ---
 

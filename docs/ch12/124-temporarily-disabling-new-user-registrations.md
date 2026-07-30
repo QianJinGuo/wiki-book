@@ -23,8 +23,8 @@ Adrian Wong 在另一篇文章（sovereign cloud 事件）中的观察在这里�
 ## 相关实体
 
 - [Temporarily disabling new user registrations](https://github.com/QianJinGuo/wiki/blob/main/entities/rubygems-temp-disable-registrations.md)
-- [IC work is the new career flex](../ch03/009-ic-work-is-the-new-career-flex.html)
-- [New and improved Agent governance intelligent workflows](../ch03/035-agent.html)
+- [IC work is the new career flex](ch03/009-ic-work-is-the-new-career-flex.html)
+- [New and improved Agent governance intelligent workflows](ch03/035-agent.html)
 
 ---
 

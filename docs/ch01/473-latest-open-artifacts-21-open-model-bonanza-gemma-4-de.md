@@ -73,7 +73,7 @@ IRT 校准后的得分更能反映模型的真实能力，减少了"简单题目
 - [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](ch01/235-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
 - [Reading Todays Open Closed Performance Gap](https://github.com/QianJinGuo/wiki/blob/main/entities/reading-todays-open-closed-performance-gap.md)
 - [How Open Model Ecosystems Compound](ch01/917-how-open-model-ecosystems-compound.html)
-- [Wetesteddeepseekv4Proandflashagainstclau](ch01/1091-deepseek.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch05/094-ai.html)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md)

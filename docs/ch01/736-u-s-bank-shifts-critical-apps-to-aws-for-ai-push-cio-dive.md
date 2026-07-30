@@ -38,12 +38,12 @@ Goldman Sachs 将数据准确性列为 AI 运营模型的基础，说明数据�
 当 US Bank、Goldman Sachs、 Citigroup 等头部银行大举投入云基础设施和 AI 时，中小型银行的竞争压力急剧上升。这些大行的 AI 能力提升将重新定义"金融服务体验"的用户期望，中小银行若不及时跟进，将在客户体验维度面临代差级的竞争劣势。
 
 ## 相关实体
-- [AWS Model Agility: 6步LLM跨代际迁移框架](../ch11/155-aws-generative-ai-model-agility-framework.html)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/298-ai-agent.html)
-- [MLflow v3.10：生成式AI开发新特性](../ch11/040-aws-mlflow-v310-generative-ai-development.html)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/060-agentic-ai.html)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
-- [EZConvertBI：Power BI/Tableau到QuickSight的自动迁移](../ch11/214-aws-transform-ezconvertbi-bi-migration.html)
+- [AWS Model Agility: 6步LLM跨代际迁移框架](ch11/155-aws-generative-ai-model-agility-framework.html)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](ch05/094-ai.html)
+- [MLflow v3.10：生成式AI开发新特性](ch11/040-aws-mlflow-v310-generative-ai-development.html)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](ch05/094-ai.html)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch05/094-ai.html)
+- [EZConvertBI：Power BI/Tableau到QuickSight的自动迁移](ch11/214-aws-transform-ezconvertbi-bi-migration.html)
 
 ---
 

@@ -125,13 +125,13 @@ HKUDS 通过 CLI-Anything 建立了在 Agent Tools 领域的技术影响力，St
 
 ## Related
 - [AutoCLI](ch03/124-autocli.html) — 极速网页信息获取 CLI
-- [AgentBrowser](../ch09/071-agent-browser-claude-code-qoderwork.html) — AI 专用浏览器
+- [AgentBrowser](ch09/071-agent-browser-claude-code-qoderwork.html) — AI 专用浏览器
 
 ## 相关实体
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [GBrain](../ch01/251-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [GBrain](ch05/094-ai.html)
 
 ---
 

@@ -68,7 +68,7 @@ Mnilax 最具方法论创新的一点是将"翻车场景"作为规则设计的�
 
 ### Token 预算作为语义漂移的熔断机制
 规则 6（Token 预算）是 12 条规则中最具系统思维的一条。Mnilax 的 90 分钟调试会话案例——模型反复建议早已否决的方案——揭示了一个根本性问题：**LLM 的上下文窗口虽然能容纳大量信息，但模型对"已尝试路径"的记忆并不均匀**。越早的决策上下文在模型的注意力分布中越被稀释。 
-Token 预算的本质不是节省成本，而是一个**语义漂移（Semantic Drift）的熔断机制**。当对话长度接近预算上限时，强制摘要重置的目标是：清除那些在模型注意力中已被稀释但仍在影响生成的"幽灵上下文"。这个机制与 [Harness Engineering](../ch05/120-harness-engineering.html) 中的"状态检查点"概念高度一致——都是在长程任务中防止错误累积的系统性手段。 
+Token 预算的本质不是节省成本，而是一个**语义漂移（Semantic Drift）的熔断机制**。当对话长度接近预算上限时，强制摘要重置的目标是：清除那些在模型注意力中已被稀释但仍在影响生成的"幽灵上下文"。这个机制与 [Harness Engineering](ch05/120-harness-engineering.html) 中的"状态检查点"概念高度一致——都是在长程任务中防止错误累积的系统性手段。 
 
 ### 12 条规则的注意力经济学
 从 4 条扩展到 12 条，合规执行开销仅下降 2%（78%→76%）——这个数字背后有深层的注意力经济学含义。 
@@ -113,12 +113,12 @@ Mnilax 给出的是单任务 4K / 单会话 30K 的基准值，但这个数字�
 **版本 3.0（定期修剪）**：每季度审查时，统计 CLAUDE.md 中每条规则的触发频率（可以在 Claude 的每次输出末尾加上`[规则N被触发]`的标记）。删除从未触发过的规则，或将它们移入 `CLAUDE.md.archive` 作为备选而非active状态。 
 
 ### 与 Harness Engineering 的关联
-CLAUDE.md 本质上是 **Agent 的架构约束层（Architecture Constraints）** 在 Harness Engineering 三支柱中的具体实现。它与 [Agent Harness Context Management Working Set](../ch05/058-agent-harness.html) 中的 working set 管理共同构成 Claude Code 的记忆-约束体系。Mnilax 的 12 条规则可视为对这一约束体系的系统性补全。 
+CLAUDE.md 本质上是 **Agent 的架构约束层（Architecture Constraints）** 在 Harness Engineering 三支柱中的具体实现。它与 [Agent Harness Context Management Working Set](ch03/035-agent.html) 中的 working set 管理共同构成 Claude Code 的记忆-约束体系。Mnilax 的 12 条规则可视为对这一约束体系的系统性补全。 
 规则 6（Token 预算）和规则 10（检查点强制）是 Harness 思维在 CLAUDE.md 中的直接映射——前者防止语义漂移，后者确保长任务的可恢复性。这两条规则与  中定义的"状态管理"和"熔断机制"在逻辑上完全一致，说明 Mnilax 的实践实际上是在用更低成本的方式实现 Harness Engineering 的核心目标。 
 
 ## 相关链接
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-md-12-rules-mnilax-cf2019.md)
-- [CLAUDE Code 创始人 100 条 Harness 规则](../ch03/077-claude-code.html) — 另一位实践者的规则集合，可对比参考
+- [CLAUDE Code 创始人 100 条 Harness 规则](ch03/077-claude-code.html) — 另一位实践者的规则集合，可对比参考
 -  — working set 机制与 CLAUDE.md 的互补关系
 -  — 本文的 Token 预算和检查点机制在此框架中的定位
 

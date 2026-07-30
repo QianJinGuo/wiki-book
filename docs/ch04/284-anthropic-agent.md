@@ -104,20 +104,20 @@ GAN 风格的对抗式架构之所以有效，根本原因在于突破了「谄�
 - `Perplexity Internal Skill Design Guide` — Perplexity 内部 Skill 设计指南（对抗压力也是核心主题）
 
 ## 相关实体
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
-- [Anthropic puts Claude agents on a meter across its subscriptions](ch04/406-anthropic-claude-agent.html)
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/383-anthropic-google-agent-skills.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/077-claude-code.html)
+- [Anthropic puts Claude agents on a meter across its subscriptions](ch01/604-anthropic-claude.html)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/271-skill.html)
 - [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/273-lbs-intentbench.html)
-- [Introducing Claude for Small Business](../ch01/027-introducing-claude-for-small-business.html)
-- [Introducing Claude for Small Business](../ch01/027-introducing-claude-for-small-business.html)
-- [Xero Announces Integration with Anthropic's Claude](../ch01/989-anthropic.html)
-- [Mythos for Offensive Security: XBOW's Evaluation](../ch12/030-mythos.html)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](../ch01/604-anthropic-claude.html)
+- [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.html)
+- [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.html)
+- [Xero Announces Integration with Anthropic's Claude](ch01/976-claude.html)
+- [Mythos for Offensive Security: XBOW's Evaluation](ch12/030-mythos.html)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/604-anthropic-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)
 
-- [Agent 原理、架构与工程实践](../ch03/035-agent.html)
-- [claude opus 4.8: the system card](../ch01/1334-claude-opus-4-8.html)
+- [Agent 原理、架构与工程实践](ch03/035-agent.html)
+- [claude opus 4.8: the system card](ch01/976-claude.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

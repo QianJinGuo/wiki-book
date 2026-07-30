@@ -105,19 +105,19 @@ Code as Agent Harness 可以被视为 Software 2.0（以神经网络替代手工
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/code-as-agent-harness-survey-2026.md)
 
 ## 相关实体
-- [Design Patterns for AI Agents 2026](../ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
-- [Agent Harness 架构](../ch05/058-agent-harness.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
+- [Design Patterns for AI Agents 2026](ch05/094-ai.html)
+- [Agent Harness 架构](ch03/035-agent.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
-- [harness-engineering-systematic-explainer](../ch05/120-harness-engineering.html)
+- [Agent架构关键变化：Harness正在成为新后端](ch03/035-agent.html)
+- [harness-engineering-systematic-explainer](ch05/094-ai.html)
 
-- [Claude Code 架构深度解析](../ch03/077-claude-code.html)
-- [Claude Code Prompt 提示词体系源码解析](ch09/061-claude-code-prompt.html)
-- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/077-claude-code.html)
-- [AgentCore Managed Harness](../ch04/689-agentcore-harness.html)
+- [Claude Code 架构深度解析](ch03/077-claude-code.html)
+- [Claude Code Prompt 提示词体系源码解析](ch03/077-claude-code.html)
+- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](ch03/077-claude-code.html)
+- [AgentCore Managed Harness](ch04/689-agentcore-harness.html)
 - [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
-- [AI Agent 工程师能力地图](../ch04/298-ai-agent.html)
+- [AI Agent 工程师能力地图](ch05/094-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [我把 karpathy 的 autoresearch 搬到了软件开发领域，效果炸了](../ch04/266-karpathy-autoresearch.html)
+- [我把 karpathy 的 autoresearch 搬到了软件开发领域，效果炸了](ch04/266-karpathy-autoresearch.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/imclaw通过微信飞书操控claudecodecodexgeminiclipi-agent蜂群.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
@@ -39,12 +39,12 @@ source_url: https://mp.
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/235-openclaw.html)
+- [两万字详解Claude Code源码核心机制](ch03/077-claude-code.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/235-openclaw.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/077-claude-code.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/235-openclaw.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

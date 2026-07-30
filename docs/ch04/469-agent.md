@@ -57,10 +57,10 @@ AgentRun 开放平台提出的用户组（User Group）→ 用户（User）→ �
 
 ## 相关实体
 - [我用 Skillmd 做了一个简历生成器](ch04/271-skill.html)
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/071-skills.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/397-agent-skills.html)
-- [Aliyun Agentrun 2Line Integration](ch04/003-agentrun.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/397-agent-skills.html)
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](ch04/271-skill.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/271-skill.html)
+- [Aliyun Agentrun 2Line Integration](ch03/035-agent.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/271-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-从能用到管好中间差了什么.md)
 

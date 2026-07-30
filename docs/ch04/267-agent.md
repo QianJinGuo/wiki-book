@@ -110,9 +110,9 @@ ATH 的三个技术优势（三权分立、强制 PKCE、短期令牌）同时�
 
 - [Agent Protocol 到 Harness Skill](ch04/428-from-agent-protocol-to-harness-skill.html)
 - [AgentCore Gateway 认证](ch04/281-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
-- [AI 工具投毒漏洞](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [Harness V3 治理协议](../ch05/009-harness.html)
-- [MCP 12 设计模式](../ch01/989-anthropic.html)
+- [AI 工具投毒漏洞](ch05/094-ai.html)
+- [Harness V3 治理协议](ch05/009-harness.html)
+- [MCP 12 设计模式](ch03/035-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

@@ -62,12 +62,12 @@ Interactive workbench —— 连接仓库 → 生成三层 Handbook → 在同�
 
 ## 与其他 Harness 实体的关系
 
-已有大量 [agent harness 架构](../ch05/058-agent-harness.html) 实体覆盖 harness 的设计模式、组件和工程实践。Harness Handbook 提供了不同的角度——**以 behavior 为核心的导航系统**（而非以组件/模块为核心）。它与以下实体互补：
+已有大量 [agent harness 架构](ch03/035-agent.html) 实体覆盖 harness 的设计模式、组件和工程实践。Harness Handbook 提供了不同的角度——**以 behavior 为核心的导航系统**（而非以组件/模块为核心）。它与以下实体互补：
 
-- [Harness Engineering](../ch05/120-harness-engineering.html)、[Harness Engineering Framework](../ch05/120-harness-engineering.html)（工程范式）
-- [Agentic Loop Engineering](../ch05/004-loop-engineering.html)（loop 工程）
-- [Agent Harness 12 Components](../ch05/058-agent-harness.html)（组件架构）
-- [Better Harness Eval](../ch05/009-harness.html)（评估方法）
+- [Harness Engineering](ch05/120-harness-engineering.html)、[Harness Engineering Framework](ch05/120-harness-engineering.html)（工程范式）
+- [Agentic Loop Engineering](ch03/035-agent.html)（loop 工程）
+- [Agent Harness 12 Components](ch03/035-agent.html)（组件架构）
+- [Better Harness Eval](ch05/009-harness.html)（评估方法）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-handbook-tencent-ruhan-wang-2026.md)
 

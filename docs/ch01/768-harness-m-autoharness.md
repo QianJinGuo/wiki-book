@@ -13,11 +13,11 @@
 - 对话任务（LoCoMo）：实体关系图追踪人物关系
 
 ## 相关实体
-- [Harness Evolution Papers](../ch05/009-harness.html)
-- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.html)
-- [Agentexecutorgooglesdistributedagentruntime](../ch04/003-agentrun.html)
+- [Harness Evolution Papers](ch05/009-harness.html)
+- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/035-agent.html)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch03/035-agent.html)
+- [Agentexecutorgooglesdistributedagentruntime](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/two-harness-papers-microsoft-google.md)
 

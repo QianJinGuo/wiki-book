@@ -44,7 +44,7 @@ AMD 通过免费 GPU 计划切入 AI 私有化部署市场，Radeon PRO W7900（
 
 - [vLLM 推理引擎](ch01/992-vllm.html)
 - [知识蒸馏专题](ch01/642-the-distillation-panic.html)
-- [DeepSeek 推理引擎](ch01/1151-deepseek-v4.html)
+- [DeepSeek 推理引擎](ch01/1091-deepseek.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amd-free-gpu-deepseek-r1-private-deployment-csdn-2026.md)
 

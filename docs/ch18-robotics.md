@@ -73,7 +73,7 @@ AI 最终要从屏幕走进物理世界。
 
 ### 手部操作——具身智能真正的瓶颈
 
-张巍坦承手部操作仍然是当前机器人最大的短板。"机器人小脑能力已经足够支撑导航、巡检、导览等任务，但复杂抓取、整理等操作仍存在明显不足。"原因不在于机器人不会思考，而在于手部技能数据不足。这一判断与 [Video World Model Hand Motion Capture 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/video-world-model-hand-motion-capture-2026.md) 中 ACE-ViDiHand 的研究方向高度一致——后者正是利用视频生成模型从野生视频中提取手部运动数据。手部能力的突破，核心依赖触觉传感器成熟度和大规模数据采集能力，这与触觉感知、灵巧操作等研究方向紧密相关。
+张巍坦承手部操作仍然是当前机器人最大的短板。"机器人小脑能力已经足够支撑导航、巡检、导览等任务，但复杂抓取、整理等操作仍存在明显不足。"原因不在于机器人不会思考，而在于手部技能数据不足。这一判断与 [Video World Model Hand Motion Capture 2026](ch01/913-20.html) 中 ACE-ViDiHand 的研究方向高度一致——后者正是利用视频生成模型从野生视频中提取手部运动数据。手部能力的突破，核心依赖触觉传感器成熟度和大规模数据采集能力，这与触觉感知、灵巧操作等研究方向紧密相关。
 
 ## 实践启示
 
@@ -85,11 +85,11 @@ AI 最终要从屏幕走进物理世界。
 
 4. **世界模型需要"行动导向"而非"视频导向"**。如果你的世界模型只能预测但不产生行动决策，它对机器人的价值有限。这一原则同样适用于 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的 agent 测试——预测与执行之间的 gap 才是真正的技术挑战。
 
-5. **手部操作数据的规模化采集决定了具身智能的落地速度**。结合 [Video World Model Hand Motion Capture 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/video-world-model-hand-motion-capture-2026.md) 和触觉传感器进展，手部技能可能是未来 1-2 年最具差异化价值的技术方向。
+5. **手部操作数据的规模化采集决定了具身智能的落地速度**。结合 [Video World Model Hand Motion Capture 2026](ch01/913-20.html) 和触觉传感器进展，手部技能可能是未来 1-2 年最具差异化价值的技术方向。
 
 ## 相关实体
 
-- [Video World Model Hand Motion Capture 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/video-world-model-hand-motion-capture-2026.md) — 视频世界模型实现手部动捕，与逐际动力强调的手部数据瓶颈直接相关
+- [Video World Model Hand Motion Capture 2026](ch01/913-20.html) — 视频世界模型实现手部动捕，与逐际动力强调的手部数据瓶颈直接相关
 - [Lingbot Vision Spatial Native Vision Foundation Model Ant](https://github.com/QianJinGuo/wiki/blob/main/entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md) — 蚂蚁具身智能空间视觉基础模型
 - [逐际动力原始报道](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zhuji-dl-robot-pre-ipo-2026.md) — 逐际动力 Pre-IPO 融资的原始报道
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化框架与具身智能系统架构的交叉
@@ -163,7 +163,7 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 深度机智更进一步：不仅使用拟人身体，而且通过对照人体测量数据库进行设计尺寸对齐——肩宽0.97、臂展1.02、手掌长度精确到1.00——使人类日常操作的手部到达范围与机器人高度一致。这意味着人类数据中的动作经验在物理层面的迁移误差被系统性地压缩到最小，而非仅仅依赖算法补偿。
 
-这一思路与[AI友好型架构](https://github.com/QianJinGuo/wiki/blob/main/entities/backend-ai-friendly-standards-path-alitech.md)的设计哲学高度一致：与其在软件层面反复适配不匹配的底层抽象，不如在基础架构层面就为目标工作负载做好设计。Robot for AI的本质是"基础设施先行的AI系统设计"。
+这一思路与[AI友好型架构](ch05/094-ai.html)的设计哲学高度一致：与其在软件层面反复适配不匹配的底层抽象，不如在基础架构层面就为目标工作负载做好设计。Robot for AI的本质是"基础设施先行的AI系统设计"。
 
 ### 人类数据→机器人动作：数据瓶颈的根本解法
 
@@ -171,7 +171,7 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 深度机智的Human-as-Humanoid路线给出了根本解法：利用人类本身作为数据源。人类每天演示着最丰富、最自然的操作行为，如果这些动作经验能直接变成机器人的训练数据，数据瓶颈就有了根本解法。关键在于三个环节的连通：本体设计与人类对齐（减少迁移误差）、纯视觉人体动作采集与转换（降低采集门槛）、PhysDex模型消化转换后的数据（实现有效学习）。当三个环节形成闭环后，人类视频就不仅仅是"帮模型理解世界"的辅助信号，而是可直接进入机器人关节空间的执行训练信号。
 
-这与[Agent自演进](https://github.com/QianJinGuo/wiki/blob/main/entities/agent的自演进被刚刚开源的areal-20按下了加速键.md)中的数据飞轮逻辑类似——关键不在于初始数据的规模，而在于能否形成"数据→能力→更多数据"的持续增长循环。
+这与[Agent自演进](ch03/035-agent.html)中的数据飞轮逻辑类似——关键不在于初始数据的规模，而在于能否形成"数据→能力→更多数据"的持续增长循环。
 
 ### 纯视觉动捕：惯性动捕的颠覆者
 
@@ -179,13 +179,13 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 这一发现具有重要的工程意义：采集数据的门槛被彻底拉低了。任何人都可以用普通摄像头录制操作视频，无需昂贵的动捕设备或专业的遥操操作员。配合4.8-7.2倍的采集效率提升，数据规模的增长曲线将变得更加陡峭。
 
-从工程经济学的角度看，这与[阿里云AI实践](https://github.com/QianJinGuo/wiki/blob/main/entities/alicloud-ai-practices.md)中"降低AI应用门槛"的理念一致——技术的普及往往取决于其获取成本的下限，而非性能的上限。
+从工程经济学的角度看，这与[阿里云AI实践](ch05/094-ai.html)中"降低AI应用门槛"的理念一致——技术的普及往往取决于其获取成本的下限，而非性能的上限。
 
 ### DS-HKC双空间约束：高自由度控制的关键创新
 
 60自由度的控制问题本质上是一个高维空间中的运动规划问题。纯关节空间监督会把60个关节当成独立回归目标，忽略它们通过运动学链共同决定腕部位置和指尖接触几何的耦合关系。深度机智的DS-HKC（双空间分层运动学约束）通过可微正向运动学层，将预测的关节角度映射到任务空间，在腕部和指尖两个层级施加几何监督。
 
-消融实验表明，DS-HKC在相同训练预算下取得了更低且更平滑的训练损失。这一创新的核心洞察在于：关节空间的误差不一定反映任务空间的误差，直接监督任务空间的关键点（腕部、指尖）比间接监督关节角度更有效。这与[Agent评测方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-评测方法论与体系设计.md)中的"评测指标应与任务目标对齐"原则一致——关注终端效果而非中间指标。
+消融实验表明，DS-HKC在相同训练预算下取得了更低且更平滑的训练损失。这一创新的核心洞察在于：关节空间的误差不一定反映任务空间的误差，直接监督任务空间的关键点（腕部、指尖）比间接监督关节角度更有效。这与[Agent评测方法论](ch03/035-agent.html)中的"评测指标应与任务目标对齐"原则一致——关注终端效果而非中间指标。
 
 ### 全栈技术闭环的先发优势
 
@@ -193,7 +193,7 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 在行业仍以真机遥操作为主流数据源的背景下，深度机智已经完成了系统性建设并拿出了真机验证结果。这种先发优势不仅体现在技术栈的完整性上，更体现在数据积累的速度上——一旦高质量合成视频也能进入这条链路（深度机智计划中的下一步），数据飞轮的转速还将继续提升。
 
-这与[Agent协作范式](https://github.com/QianJinGuo/wiki/blob/main/entities/agentteams-和-claude-tag-都进入群聊模式是新范式还是新叙事.md)中的"先发者优势"形成对照：在技术范式转换的早期阶段，率先打通全栈闭环的团队往往能够建立起难以追赶的工程和数据壁垒。
+这与[Agent协作范式](ch03/035-agent.html)中的"先发者优势"形成对照：在技术范式转换的早期阶段，率先打通全栈闭环的团队往往能够建立起难以追赶的工程和数据壁垒。
 
 ## 实践启示
 
@@ -209,12 +209,12 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 ## 相关实体
 
-- [AI友好型后端架构](https://github.com/QianJinGuo/wiki/blob/main/entities/backend-ai-friendly-standards-path-alitech.md) — 基础设施先行的系统设计哲学
-- [Agent自演进](https://github.com/QianJinGuo/wiki/blob/main/entities/agent的自演进被刚刚开源的areal-20按下了加速键.md) — 数据飞轮逻辑的类比
-- [阿里云AI实践](https://github.com/QianJinGuo/wiki/blob/main/entities/alicloud-ai-practices.md) — 降低AI应用门槛的工程经济学
-- [Agent评测方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-评测方法论与体系设计.md) — 评测指标与任务目标对齐
-- [Agent协作范式](https://github.com/QianJinGuo/wiki/blob/main/entities/agentteams-和-claude-tag-都进入群聊模式是新范式还是新叙事.md) — 先发者优势的对比
-- [Agent后端架构](https://github.com/QianJinGuo/wiki/blob/main/entities/backend-for-agent.md) — 系统设计中的场景特化优化
+- [AI友好型后端架构](ch05/094-ai.html) — 基础设施先行的系统设计哲学
+- [Agent自演进](ch03/035-agent.html) — 数据飞轮逻辑的类比
+- [阿里云AI实践](ch05/094-ai.html) — 降低AI应用门槛的工程经济学
+- [Agent评测方法论](ch03/035-agent.html) — 评测指标与任务目标对齐
+- [Agent协作范式](ch03/035-agent.html) — 先发者优势的对比
+- [Agent后端架构](ch03/035-agent.html) — 系统设计中的场景特化优化
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/机器人为什么要拟人终于有人正确回答了.md)
 
@@ -297,7 +297,7 @@ Xiaomi-Robotics-U0 最核心的设计决策是**用统一的自回归框架覆�
 
 第二，**推理时灵活组合**。用户可以在一次推理中同时执行场景生成+具身迁移+视频生成，形成完整的"仿真→训练→验证"流水线，无需在多个模型之间切换和协调。
 
-第三，**开源生态的价值倍增**。全量开源意味着社区可以在 U0 基础上进行微调、扩展和组合，将其作为具身生成的基础设施而非一个孤立的模型。这与 [Lingbot Dm05 4B Embodied Foundation Model Zero Shot 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/lingbot-dm05-4b-embodied-foundation-model-zero-shot-2026.md) 所代表的具身基础模型趋势一致——从专用模型走向统一基础模型。
+第三，**开源生态的价值倍增**。全量开源意味着社区可以在 U0 基础上进行微调、扩展和组合，将其作为具身生成的基础设施而非一个孤立的模型。这与 [Lingbot Dm05 4B Embodied Foundation Model Zero Shot 2026](ch01/913-20.html) 所代表的具身基础模型趋势一致——从专用模型走向统一基础模型。
 
 ### 具身数据大规模生成的核心瓶颈被突破
 
@@ -314,7 +314,7 @@ Xiaomi-Robotics-U0 最核心的设计决策是**用统一的自回归框架覆�
 
 ## 相关实体
 
-- [原力灵机 DM0.5 具身基础模型](https://github.com/QianJinGuo/wiki/blob/main/entities/lingbot-dm05-4b-embodied-foundation-model-zero-shot-2026.md)
+- [原力灵机 DM0.5 具身基础模型](ch01/913-20.html)
 - [全球首个 hour-level 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/全球首个小时级世界模型来了中国造已开源.md)
 - [机器人视频基座模型](https://github.com/QianJinGuo/wiki/blob/main/entities/最适合机器人的视频基座模型被中国团队开源了.md)
 - [具身智能空间视觉](https://github.com/QianJinGuo/wiki/blob/main/entities/具身智能空间视觉死穴终于被最新顶会彻底解决.md)
@@ -454,7 +454,7 @@ LingBot-VA 2.0 不是孤立发布，而是蚂蚁灵波"机器人大脑 2.0"系�
 
 ### 与基座模型的互补关系
 
-此实战案例与 [Xiaomi-Robotics-1 具身基座模型](https://github.com/QianJinGuo/wiki/blob/main/entities/xiaomi-robotics-1-embodied-base-model-scaling-2026.md) 形成互补：基座模型提供通用的预训练能力（感知、理解、规划），工厂实战验证这些能力在真实产线上的部署效果。训练-部署的反馈循环使基座模型能够针对工业场景持续改进，而部署中发现的局限性（如当前仿生灵巧手需先调整方向才能折叠料箱第二面）则指明了基座模型和硬件系统下一步的改进方向。
+此实战案例与 [Xiaomi-Robotics-1 具身基座模型](ch01/551-scaling.html) 形成互补：基座模型提供通用的预训练能力（感知、理解、规划），工厂实战验证这些能力在真实产线上的部署效果。训练-部署的反馈循环使基座模型能够针对工业场景持续改进，而部署中发现的局限性（如当前仿生灵巧手需先调整方向才能折叠料箱第二面）则指明了基座模型和硬件系统下一步的改进方向。
 
 ## 实践启示
 
@@ -470,11 +470,11 @@ LingBot-VA 2.0 不是孤立发布，而是蚂蚁灵波"机器人大脑 2.0"系�
 
 ## 相关实体
 
-- [Xiaomi-Robotics-1 具身基座模型](https://github.com/QianJinGuo/wiki/blob/main/entities/xiaomi-robotics-1-embodied-base-model-scaling-2026.md)
+- [Xiaomi-Robotics-1 具身基座模型](ch01/551-scaling.html)
 - [具身智能](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md)
-- [后端 AI 友好架构](https://github.com/QianJinGuo/wiki/blob/main/entities/backend-ai-friendly-standards-path-alitech.md)
-- [京东 JoyAI 模型矩阵](https://github.com/QianJinGuo/wiki/blob/main/entities/京东joyai模型矩阵waic-2026.md)
-- [多智能体 RL 优化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/unitymas-o-multi-agent-rl-optimization-framework-2026.md)
+- [后端 AI 友好架构](ch05/094-ai.html)
+- [京东 JoyAI 模型矩阵](ch05/094-ai.html)
+- [多智能体 RL 优化框架](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/小米机器人汽车工厂柔性操作多机协同-2026.md)
 
@@ -551,7 +551,7 @@ LingBot-Vision 和 LingBot-Depth 2.0 已通过奥比中光深度视觉实验室�
 
 ## 相关实体
 
-- [蚂蚁集团医疗 Agent Afu](https://github.com/QianJinGuo/wiki/blob/main/entities/ant-group-medical-agent-afu.md) — 蚂蚁集团其他 AI 与 Agent 实践
+- [蚂蚁集团医疗 Agent Afu](ch03/035-agent.html) — 蚂蚁集团其他 AI 与 Agent 实践
 - [Attention Collapse 与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md) — 视觉 Transformer 注意力机制相关研究
 
 ---
@@ -710,10 +710,10 @@ LingBot-Vision 的"空间原生"定位与 [具身智能](https://github.com/Qian
 
 ## 相关实体
 
-- [具身智能新阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-native-llm-embodied-intelligence-new-stage.md)
+- [具身智能新阶段](ch01/1274-llm.html)
 - [NVIDIA Isaac Lab + SageMaker 人形机器人强化学习](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [SymSkill 机器人长程操作技能](https://github.com/QianJinGuo/wiki/blob/main/entities/icra26-symskill-robot-long-horizon-manipulation.md)
-- [Genesis AI Gene.25 具身基础模型](https://github.com/QianJinGuo/wiki/blob/main/entities/genesis-ai-gene-25-embodied-foundation-model.md)
+- [SymSkill 机器人长程操作技能](ch04/271-skill.html)
+- [Genesis AI Gene.25 具身基础模型](ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/啊这是机器人的手.md)
 
@@ -732,11 +732,11 @@ LingBot-Vision 的"空间原生"定位与 [具身智能](https://github.com/Qian
 - 四足机器人制造成本从 2022 年约 3,300 降至 2025 年中约 1,800 美元，降幅 46%
 - IPO 融资款约一半（3 亿美元）将用于 AI 模型训练，包括"Embodied Large Model"
 ## 相关实体
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](https://github.com/QianJinGuo/wiki/blob/main/entities/a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes-a-window-opens.md)
+- [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch05/094-ai.html)
 - [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
 - [User Interviews Guide Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/user-interviews-guide-pro.md)
-- [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai.md)
+- [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/unitree-ipo-robotics-market.md)
 
@@ -834,7 +834,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 ## 与现有知识的链接
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/weilan-babyalpha-a3-machine-dog.md)
 - → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
-- → [NVIDIA边缘端LLM for机器人](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-edge-first-llms-av-robotics.md) — 英伟达边缘AI方案对比
+- → [NVIDIA边缘端LLM for机器人](ch01/225-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
 
 ## 深度分析
 ### 异构计算vs单芯片：架构选择的工程哲学
@@ -988,9 +988,9 @@ Xiaomi-Robotics-1 是小米于 2026 年 7 月发布的面向真实移动操作�
 
 ## 与同类工作的对比
 
-与 [Xiaomi-Robotics-U0](https://github.com/QianJinGuo/wiki/blob/main/entities/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代-xiaomi.md)（380B 参数生成式世界模型）不同，Xiaomi-Robotics-1 专注于**具身操作策略**，是机器人的"大脑"而非"生成器"。U0 解决数据生成问题，1 解决任务执行问题，两者在小米具身智能体系中是互补关系。
+与 [Xiaomi-Robotics-U0](ch01/1243-0.html)（380B 参数生成式世界模型）不同，Xiaomi-Robotics-1 专注于**具身操作策略**，是机器人的"大脑"而非"生成器"。U0 解决数据生成问题，1 解决任务执行问题，两者在小米具身智能体系中是互补关系。
 
-在仿真基准上，Xiaomi-Robotics-1 大幅超越 [GENESIS-AI/Gene-25](https://github.com/QianJinGuo/wiki/blob/main/entities/genesis-ai-gene-25-embodied-foundation-model.md)、Cosmos Policy、GR00T N1.6、Pi-0.5 等已有方法。
+在仿真基准上，Xiaomi-Robotics-1 大幅超越 [GENESIS-AI/Gene-25](ch05/094-ai.html)、Cosmos Policy、GR00T N1.6、Pi-0.5 等已有方法。
 
 ## 意义与影响
 
@@ -1049,7 +1049,7 @@ RobotTrack 基于面壁 MiniCPM4-0.5B 模型加 MLP 结构训练，参数规模�
 
 ## 相关实体
 
-- [farewell ai2](https://github.com/QianJinGuo/wiki/blob/main/entities/farewell-ai2.md)
+- [farewell ai2](ch05/094-ai.html)
 - [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
 - [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki/blob/main/entities/untitled-v2.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
@@ -1089,12 +1089,12 @@ Physical AI is moving from research into production.
 
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](https://github.com/QianJinGuo/wiki/blob/main/entities/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1170-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/235-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch05/094-ai.html)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
-- [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey.md)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch03/035-agent.html)
+- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.html)
 
 ## 实践启示
 
@@ -1157,12 +1157,12 @@ Physical AI is moving from research into production.
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/035-agent.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1170-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/035-agent.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/235-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/235-openclaw.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
@@ -1198,9 +1198,9 @@ DM0.5 的设计核心是将被动"采集型数据"转变为真实业务中持续
 
 ## 相关实体
 
-- [LingBot-Video 具身专属 MoE 视频模型](https://github.com/QianJinGuo/wiki/blob/main/entities/lingbot-video-moe-embodied-video-2026.md) — 蚂蚁灵波同期发布的具身视频基础模型
-- [LingBot-VLA 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/lingbot-vla-2-60000h-open-source-vla.md) — 蚂蚁灵波 60,000 小时开源 VLA 模型
-- [具身智能 Sim2Real](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md) — 具身智能领域的 Sim2Real 与行为树方法
+- [LingBot-Video 具身专属 MoE 视频模型](ch01/913-20.html) — 蚂蚁灵波同期发布的具身视频基础模型
+- [LingBot-VLA 2.0](ch01/1243-0.html) — 蚂蚁灵波 60,000 小时开源 VLA 模型
+- [具身智能 Sim2Real](ch01/913-20.html) — 具身智能领域的 Sim2Real 与行为树方法
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zero-shot提升31原力灵机dm05登场15万小时数据喂出.md)
 
@@ -1351,8 +1351,8 @@ VLA 模型在标准评测中动辄 90%+ 的成功率，但相机视角轻微变�
 ## 相关实体
 
 - **具身智能** — 具身智能领域的整体技术路线，覆盖 VLA 模型、世界模型、数据基础设施等方向
-- [景烁科技 — 具身智能数据基础设施](https://github.com/QianJinGuo/wiki/blob/main/entities/jingshuo-tech-embodied-ai-data-infrastructure-2026.md) — 具身智能数据的工业级基础设施建设方案
-- [BAAI ORCA — 下一状态预测世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/baai-orca-next-state-prediction-world-model.md) — 世界模型在物理 AI 中的应用
+- [景烁科技 — 具身智能数据基础设施](ch05/094-ai.html) — 具身智能数据的工业级基础设施建设方案
+- [BAAI ORCA — 下一状态预测世界模型](ch05/094-ai.html) — 世界模型在物理 AI 中的应用
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/具身智能空间视觉死穴终于被最新顶会彻底解决.md)
 
@@ -1404,7 +1404,7 @@ SymSkill 的"离线符号共创 + 在线实时执行"架构，实质上是将 TA
 
 ### 4. 与具身智能前沿的关系
 
-SymSkill 的成功呼应了具身智能领域的一个重要趋势：从"端到端"的纯神经网络方法向"神经符号混合"架构的回归。类似的工作还包括 [NVIDIA EnPire](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-enpire-agentic-robot-policy-self-improvement.md) 和 [NVIDIA Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)，它们都在不同程度上将符号推理与学习结合，以克服纯数据驱动方法的泛化瓶颈。这表明 2026 年机器人学习领域的一个共识正在形成——语言模型时代的机器人控制，需要在数据规模与结构先验之间找到新的平衡点。
+SymSkill 的成功呼应了具身智能领域的一个重要趋势：从"端到端"的纯神经网络方法向"神经符号混合"架构的回归。类似的工作还包括 [NVIDIA EnPire](ch03/035-agent.html) 和 [NVIDIA Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)，它们都在不同程度上将符号推理与学习结合，以克服纯数据驱动方法的泛化瓶颈。这表明 2026 年机器人学习领域的一个共识正在形成——语言模型时代的机器人控制，需要在数据规模与结构先验之间找到新的平衡点。
 
 ## 实践启示
 
@@ -1414,18 +1414,18 @@ SymSkill 的成功呼应了具身智能领域的一个重要趋势：从"端到�
 
 3. **符号抽象是通向组合泛化的桥梁**：SymSkill 从数据中自动学习的符号谓词和操作符，使得系统能够"理解任务结构"而非"记忆动作序列"。在构建更通用的机器人系统时，保留或自动发现某种形式的符号抽象层至关重要。
 
-4. **故障恢复能力是系统稳健运行的关键**：SymSkill 在运动层级和符号层级同时执行故障恢复，配合柔顺控制器实现安全执行。这一点与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-2026-why-it-matters.md) 中的"反馈回路"原则高度一致——任何自动化系统都需要在多个层级内置故障检测和恢复机制。
+4. **故障恢复能力是系统稳健运行的关键**：SymSkill 在运动层级和符号层级同时执行故障恢复，配合柔顺控制器实现安全执行。这一点与 [Harness Engineering](ch05/120-harness-engineering.html) 中的"反馈回路"原则高度一致——任何自动化系统都需要在多个层级内置故障检测和恢复机制。
 
 5. **关注 ICRA 等顶会的最佳论文方向**：ICRA 2026 两项大奖集中在一篇论文，表明"学习 + 规划"融合范式是当前机器人操作领域的核心趋势。跟踪这些获奖工作可以为机器人研发方向提供战略参考。
 
 ## 相关实体
 
-- [NVIDIA EnPire — 机器人策略自改进](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-enpire-agentic-robot-policy-self-improvement.md)
+- [NVIDIA EnPire — 机器人策略自改进](ch03/035-agent.html)
 - [NVIDIA Cosmos 机器人视频生成微调](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)
-- [NVIDIA 边缘优先 LLM 在机器人和自动驾驶中的应用](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-edge-first-llms-av-robotics.md)
-- [NVIDIA Isaac Lab 机器人强化学习](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+- [NVIDIA 边缘优先 LLM 在机器人和自动驾驶中的应用](ch01/225-nvidia-edge-first-llms-av-robotics.html)
+- [NVIDIA Isaac Lab 机器人强化学习](ch01/1170-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [为什么 2026 年真正重要的是 Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-2026-why-it-matters.md)
+- [为什么 2026 年真正重要的是 Harness Engineering](ch05/120-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/icra26双奖加冕华人博士生重新定义机器人长时程操控.md)
 
@@ -1485,8 +1485,8 @@ LingBot-VA 2.0 的推理架构采用异步 Foresight 推理机制——"边想�
 
 ## 相关实体
 
-- [百度搭子 Agent 平台](https://github.com/QianJinGuo/wiki/blob/main/entities/刚刚百度搭子全面升级要让agent接住人类90以上的活.md)
-- [Gemma 4 端侧大模型](https://github.com/QianJinGuo/wiki/blob/main/entities/谷歌gemma-4论文深夜解封31b直逼闭源前沿敲响云端ai丧钟.md)
+- [百度搭子 Agent 平台](ch03/035-agent.html)
+- [Gemma 4 端侧大模型](ch05/094-ai.html)
 - [具身智能前沿](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md)
 - [JEPA 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md)
 

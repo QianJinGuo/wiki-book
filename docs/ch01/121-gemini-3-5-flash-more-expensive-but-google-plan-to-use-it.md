@@ -30,10 +30,10 @@ Google 新推出 Interactions API（Beta），借鉴 OpenAI Responses 的服务�
 4. **利用 Interactions API 构建有状态应用**：Beta 阶段的 Interactions API 提供了服务端历史管理能力，适合需要长期会话上下文、多轮工具调用或复杂 Agent 编排的场景，可显著降低客户端维护会话状态的复杂度 。
 5. **将 1M 输入 tokens 纳入系统设计考量**：超长上下文窗口为 RAG 替代、多文档联合分析、大规模代码库理解等场景提供了新选择，但需注意输出 tokens 上限（65K）仍限制了单次生成的内容量 。
 ## 相关实体
-- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch01/057-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.html)
+- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch05/094-ai.html)
 - [Google Debuts Gemini Focused Updates At Io 2026](ch01/913-20.html)
-- [Computer Use 45X More Expensive Than Structured Apis](../ch04/268-computer-use-45x-more-expensive-than-structured-apis.html)
-- [Google Shipped Gemini 31 Flash Lite In General Availability](../ch05/094-ai.html)
+- [Computer Use 45X More Expensive Than Structured Apis](ch04/268-computer-use-45x-more-expensive-than-structured-apis.html)
+- [Google Shipped Gemini 31 Flash Lite In General Availability](ch05/094-ai.html)
 - [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)

@@ -30,11 +30,11 @@ Claw-SWE-Bench 的核心创新在于将 Harness 作为可独立测量的变量�
 
 ## 相关实体
 
-- [快手 RCA Agent：复杂业务场景下排障 Agent 的探索实践](../ch03/035-agent.html)
+- [快手 RCA Agent：复杂业务场景下排障 Agent 的探索实践](ch05/094-ai.html)
 - [Programbench Swe Agent Benchmark](ch04/559-programbench-swe-agent-benchmark.html)
-- [SciAgentGym：多步科学工具使用的 LLM Agent 评测基准](../ch03/035-agent.html)
+- [SciAgentGym：多步科学工具使用的 LLM Agent 评测基准](ch03/035-agent.html)
 - [Reward hacking is swamping model intelligence gains](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-reward-hacking-coding-benchmarks.md)
-- [AgentEval：YAML驱动的Agent评测框架](../ch03/035-agent.html)
+- [AgentEval：YAML驱动的Agent评测框架](ch03/035-agent.html)
 
 ---
 

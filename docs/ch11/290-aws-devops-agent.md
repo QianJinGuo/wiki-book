@@ -31,10 +31,10 @@ DevOps Agent 自动响应告警事件，执行调查流程，输出 RCA 报告�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/星合互娱借助-aws-devops-agent-构建多游戏智能运维体系.md)
 
 ## 相关实体
-- [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](ch11/290-aws-devops-agent.html)
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch11/290-aws-devops-agent.html)
-- [AWS DevOps Agent 实战：如何使用生成式 AI 加速故障演练](ch11/290-aws-devops-agent.html)
-- [AgentCore Managed Harness](../ch04/689-agentcore-harness.html)
+- [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](ch03/035-agent.html)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch03/035-agent.html)
+- [AWS DevOps Agent 实战：如何使用生成式 AI 加速故障演练](ch05/094-ai.html)
+- [AgentCore Managed Harness](ch04/689-agentcore-harness.html)
 
 ---
 

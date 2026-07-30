@@ -129,8 +129,8 @@ Attention 权重的可视化是理解"模型在看什么"的最佳工具——�
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md)
 - [Gepa Optimize Anything](ch01/295-gepa-optimize-anything.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Aws Sagemaker Azerbaijani Lm](../ch05/094-ai.html)
-- [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
+- [Aws Sagemaker Azerbaijani Lm](ch05/094-ai.html)
+- [Code As Agent Harness Survey](ch09/051-code-as-agent-harness.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 ## 原文链接

@@ -22,7 +22,7 @@ Before you can extract information from documents using intelligent document pro
 - [原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
 
 ## 相关实体
-- [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/137-build-financial-document-processing-with-pulse-ai-and-amazon.html)
+- [Build financial document processing with Pulse AI and Amazon Bedrock](ch05/094-ai.html)
 
 ## 深度分析
 ### 技术架构的核心创新

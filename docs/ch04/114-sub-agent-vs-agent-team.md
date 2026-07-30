@@ -182,11 +182,11 @@ Agent Team 的隐性成本容易在概念阶段被低估：
 - 我的任务的协调成本是否低于并行收益？
 如果答案不确定，从简单结构开始，用监控数据说话，而不是用架构图说话。
 ## 相关实体
-- [Four Sub Agent Patterns](../ch03/035-agent.html)
-- [Minimax Agent Team Mavis Owner Worker Verifier](../ch01/1303-owner-worker-verifier.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/298-ai-agent.html)
-- [Sub Agent Vs Agent Team Selection](ch04/114-sub-agent-vs-agent-team.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/381-hermes-agent-goal.html)
+- [Four Sub Agent Patterns](ch03/035-agent.html)
+- [Minimax Agent Team Mavis Owner Worker Verifier](ch03/035-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/271-skill.html)
+- [Sub Agent Vs Agent Team Selection](ch03/035-agent.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/095-hermes-agent.html)
 
 ---
 

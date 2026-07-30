@@ -36,8 +36,8 @@ QVAC MedPsy（医疗心理）模型在 May 7 发布，May 11 就宣布 grants �
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-launches-developer-grants-program-for-local-first-ai-and-payments-infrastructure.md)
 
 ## 相关实体
-- [Tether launches developer grants program for local-first AI and payments infrastructure](ch11/212-tether-launches-developer-grants-program-for-local-first-ai.html)
-- [Tether launches developer grants program for local AI payments](../ch09/150-tether-launches-developer-grants-program-for-local-ai-paymen.html)
+- [Tether launches developer grants program for local-first AI and payments infrastructure](ch05/094-ai.html)
+- [Tether launches developer grants program for local AI payments](ch09/150-tether-launches-developer-grants-program-for-local-ai-paymen.html)
 
 ---
 

@@ -231,16 +231,16 @@ Cortex Sense 从 Snowflake 已有数据和活动中构建信号，自动增强 A
 
 ## 相关实体
 
-- [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/009-harness.html)（Agent Identity 同源思路 — 治理协议层）
-- [Agentscope Builder Enterprise Self Evolving Agent Harness](../ch05/058-agent-harness.html)（企业级 Agent Harness 同主题）
-- [Asana Agentic Work Management Platform Lettertwo](ch04/237-agentic.html)（Asana — 另一个企业级 Agent 平台视角）
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)（AWS Bedrock AgentCore — 对比平台）
+- [Agent Security Three Step Sequence Harness Governance Identity Crewai](ch05/094-ai.html)（Agent Identity 同源思路 — 治理协议层）
+- [Agentscope Builder Enterprise Self Evolving Agent Harness](ch03/035-agent.html)（企业级 Agent Harness 同主题）
+- [Asana Agentic Work Management Platform Lettertwo](ch03/035-agent.html)（Asana — 另一个企业级 Agent 平台视角）
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/035-agent.html)（AWS Bedrock AgentCore — 对比平台）
 - [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch04/710-claude-managed-agents.html)（Anthropic Managed Agents — 另一家厂商视角）
-- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/018-ai-native.html)（Spec-as-AIOS — 治理即架构同思路）
-- [Taobao Ai Sre Digital Employee Code Quality Governance](../ch01/1127-ai-sre.html)（数字员工治理 — 行业对照）
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/294-amazon-bedrock.html)（AgentOps — 智能体可观测性对照）
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)（企业 Agent 安全风险同主题）
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/222-amazon-quick.html)（Amazon Quick — 另一家企业数据分析平台）
+- [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch05/094-ai.html)（Spec-as-AIOS — 治理即架构同思路）
+- [Taobao Ai Sre Digital Employee Code Quality Governance](ch05/094-ai.html)（数字员工治理 — 行业对照）
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch05/094-ai.html)（AgentOps — 智能体可观测性对照）
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch05/094-ai.html)（企业 Agent 安全风险同主题）
+- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](ch05/094-ai.html)（Amazon Quick — 另一家企业数据分析平台）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/snowflake-agentic-enterprise-summit-2026-infoq.md)
 

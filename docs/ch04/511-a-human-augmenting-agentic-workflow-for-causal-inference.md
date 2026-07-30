@@ -40,14 +40,14 @@ AutoML 自动化的是模型选择和超参数调优，而 OCI-Agent 自动化�
 
 4. **Agent 的可审计性设计应作为第一优先级**：在专业决策场景中，Agent 的输出必须可解释、可追溯。确保每一步操作都有日志记录和审查接口，这比 Agent 的速度或成本优化更重要。
 
-5. **从"AutoML"到"Auto-Science"的范式转变**：Agent 正在从自动化工程任务扩展到自动化科学方法论。关注这一趋势，在 [AgentScope](../ch05/009-harness.html) 等分布式 Agent 框架中嵌入可审计的因果推断能力，可能成为差异化竞争优势。
+5. **从"AutoML"到"Auto-Science"的范式转变**：Agent 正在从自动化工程任务扩展到自动化科学方法论。关注这一趋势，在 [AgentScope](ch03/035-agent.html) 等分布式 Agent 框架中嵌入可审计的因果推断能力，可能成为差异化竞争优势。
 
 ## 相关实体
 
-- [AgentScope 企业级分布式 Harness](../ch05/009-harness.html)
+- [AgentScope 企业级分布式 Harness](ch03/035-agent.html)
 - [Netflix VMAF](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-vmaf-v1-video-quality-metric-upgrade.md)
 - [Netflix Switchboard](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
-- [Netflix ML 平台](../ch11/289-democratizing-machine-learning-at-netflix-building-the-mode.html)
+- [Netflix ML 平台](ch11/289-democratizing-machine-learning-at-netflix-building-the-mode.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/human-augmenting-agentic-workflow-causal-inference-netflix.md)
 

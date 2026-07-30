@@ -59,7 +59,7 @@ devirtualized 代码要被 IDA、Binary Ninja 等工具正常加载，关键约�
 ## 相关实体
 - [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki/blob/main/entities/back-engineering-static-devirtualization-themida.md)
 - [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki/blob/main/entities/static-devirtualization-themida.md)
-- [static devirtualization of themida](ch12/062-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
+- [static devirtualization of themida](ch07/067-neurips-2026-rebuttal-skill-skill.html)
 
 ---
 

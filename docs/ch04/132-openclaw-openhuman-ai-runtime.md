@@ -135,7 +135,7 @@ rm、dd、sudo、ssh、curl、wget 视为高风险命令 。但简单禁止联�
 
 ## 相关技术栈
 
-- [OpenHuman Memory Tree](ch04/121-agent-memory.html) — 记忆框架核心
+- [OpenHuman Memory Tree](ch05/094-ai.html) — 记忆框架核心
 - Composio — SaaS 集成平台
 - Tauri — 桌面壳框架
 - Agent Harness 工程 — 缰绳设计模式

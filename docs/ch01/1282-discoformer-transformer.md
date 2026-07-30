@@ -118,7 +118,7 @@ DiScoFormer 的推理时适应机制是一个优雅的设计：
 - [DiffusionGemma Transparency Audit](https://github.com/QianJinGuo/wiki/blob/main/entities/diffusiongemma-transparency-audit-lesswrong.md)
 - [HuggingFace Torch MLP Fusion](ch01/913-20.html)
 - [Prime Intellect Auto NanoGPT](ch01/742-9.html)
-- [Moneyball for Physical AI](../ch05/094-ai.html)
+- [Moneyball for Physical AI](ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/discoformer.md)
 

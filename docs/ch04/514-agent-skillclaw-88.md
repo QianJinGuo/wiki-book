@@ -12,10 +12,10 @@
 
 ## 相关实体
 - [Skillclaw Collective Intelligence](ch04/271-skill.html)
-- [Skillclaw](ch04/474-skillclaw-nacos-agent-skill-registry.html)
+- [Skillclaw](ch04/271-skill.html)
 - [Skillclaw Alibaba Paperagent](ch04/271-skill.html)
-- [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/381-hermes-agent-goal.html)
+- [Wow Harness V3 Governance Protocol](ch05/009-harness.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/095-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillclaw-hyman-nightly-evolution-alibaba.md)
 

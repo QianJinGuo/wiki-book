@@ -104,9 +104,9 @@ Loop Engineering 将系统运行从「单次交互」变成了「持续运行」
 ## 相关实体
 
 - [Harness Engineering 行业调研](ch05/120-harness-engineering.html)
-- [Claude Code 系统工程指南](../ch03/077-claude-code.html)
-- [Claude Loop 实践](../ch03/077-claude-code.html)
-- [Agent Harness 上下文管理](ch05/058-agent-harness.html)
+- [Claude Code 系统工程指南](ch03/077-claude-code.html)
+- [Claude Loop 实践](ch03/077-claude-code.html)
+- [Agent Harness 上下文管理](ch03/035-agent.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-next-keyword-for-ai-2026.md)

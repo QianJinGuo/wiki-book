@@ -15,10 +15,10 @@ The Founder's Playbook
 
 ## 相关实体
 - [Introducing Claude Platform On Aws](ch01/150-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)
-- [Anthropic Pm Jess Yan Managed Agents](ch01/989-anthropic.html)
-- [Anthropic Claude Managed Agents Platform 2026](ch01/212-anthropic-claude-managed-agents.html)
-- [Claude Code Hackathon Winners 2026](../ch03/077-claude-code.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch03/035-agent.html)
+- [Anthropic Pm Jess Yan Managed Agents](ch03/035-agent.html)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/604-anthropic-claude.html)
+- [Claude Code Hackathon Winners 2026](ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-founder-playbook-ai-native-startup.md)
 

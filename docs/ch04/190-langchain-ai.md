@@ -77,9 +77,9 @@ LangChain 创始人 Harrison Chase 系统分析 AI 智能体与沙盒集成的�
 5. **Nathan Flurry 的 Sandbox Agent SDK**：专门解决"智能体在沙盒内"模式复杂性，支持 Claude Code、Codex、OpenCode、Cursor、Amp、Pi 等多种智能体，提供统一的 HTTP API 来远程控制沙盒内的智能体  ^[https://mp.weixin.qq.com/s/1ts5cEe3qHN0w3-evQMzuQ]
 
 ## 相关主题
-- [Harness Generator Evaluator Anthropic](../ch01/989-anthropic.html) — Generator-Evaluator 架构
-- [Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html) — Agent Harness 工程综述
-- [Pi Openclaw Coding Harness](../ch11/235-openclaw.html) — OpenClaw Coding Harness
+- [Harness Generator Evaluator Anthropic](ch05/009-harness.html) — Generator-Evaluator 架构
+- [Agent Harness Engineering Survey 2026](ch03/035-agent.html) — Agent Harness 工程综述
+- [Pi Openclaw Coding Harness](ch11/235-openclaw.html) — OpenClaw Coding Harness
 
 ## 深度分析
 
@@ -101,7 +101,7 @@ Ben Guo 提到的 GPU 机器需求暗示了一个深层趋势：持久沙盒和�
 
 **5. 智能体行为验证是两种模式共同面临的盲区** ^[https://mp.weixin.qq.com/s/1ts5cEe3qHN0w3-evQMzuQ]
 
-Adish Jain 的观点揭示了一个被忽视的问题：无论选择哪种架构，如何验证智能体在沙盒内实际执行的操作都是核心挑战。这与 [Harness Generator Evaluator Anthropic](../ch01/989-anthropic.html) 中 Anthropic 强调的"eval 优先"理念形成呼应——沙盒提供了隔离，但隔离不等于可控。两种模式都需要额外的行为验证层（如 trajectory logging、deterministic feedback sensors），这是当前架构讨论中缺失的关键维度。
+Adish Jain 的观点揭示了一个被忽视的问题：无论选择哪种架构，如何验证智能体在沙盒内实际执行的操作都是核心挑战。这与 [Harness Generator Evaluator Anthropic](ch05/009-harness.html) 中 Anthropic 强调的"eval 优先"理念形成呼应——沙盒提供了隔离，但隔离不等于可控。两种模式都需要额外的行为验证层（如 trajectory logging、deterministic feedback sensors），这是当前架构讨论中缺失的关键维度。
 
 ## 实践启示
 
@@ -123,11 +123,11 @@ Adish Jain 的观点揭示了一个被忽视的问题：无论选择哪种架构
 
 **5. 建立沙盒行为验证机制作为必要组件** ^[https://mp.weixin.qq.com/s/1ts5cEe3qHN0w3-evQMzuQ]
 
-Adish Jain 强调的行为测试应该成为沙盒集成的标准环节，而非事后考虑。建议实现：工具调用轨迹记录、沙盒内文件变更审计、执行结果确定性校验。这与 [Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html) 中 Verification 层的最佳实践一致。
+Adish Jain 强调的行为测试应该成为沙盒集成的标准环节，而非事后考虑。建议实现：工具调用轨迹记录、沙盒内文件变更审计、执行结果确定性校验。这与 [Agent Harness Engineering Survey 2026](ch03/035-agent.html) 中 Verification 层的最佳实践一致。
 
 ## 关联阅读
-- [Harness Generator Evaluator Anthropic](../ch01/989-anthropic.html) — Anthropic 的 Generator-Evaluator Harness 架构，提供了智能体评测闭环的设计思路，与沙盒行为验证问题直接相关
-- [Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html) — Agent Harness 工程的系统性综述，包含沙盒（Execution environment）层的完整分类，对理解两种沙盒架构的行业上下文很有价值
+- [Harness Generator Evaluator Anthropic](ch05/009-harness.html) — Anthropic 的 Generator-Evaluator Harness 架构，提供了智能体评测闭环的设计思路，与沙盒行为验证问题直接相关
+- [Agent Harness Engineering Survey 2026](ch03/035-agent.html) — Agent Harness 工程的系统性综述，包含沙盒（Execution environment）层的完整分类，对理解两种沙盒架构的行业上下文很有价值
 
 ---
 

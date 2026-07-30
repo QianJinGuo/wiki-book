@@ -14,9 +14,9 @@
 
 ## 与已有实体的关系
 
-- [阿里 Devix Harness Ops Agent](../ch05/009-harness.html) — 互补：Devix 聚焦运维 Agent 7x24，本实体聚焦 **AI 代码的 CI/CD 发布工程**
-- [腾讯 TAB Harness 全链路实战](../ch05/009-harness.html) — 互补：TAB 覆盖从需求到交付的 Harness 流程，本实体聚焦 **CI/CD 门禁与发布工程**维度
-- [Harness Engineering](../ch05/120-harness-engineering.html) — 上位框架：本实体是 Harness 工程在 **CI/CD 发布场景**的具体实现
+- [阿里 Devix Harness Ops Agent](ch03/035-agent.html) — 互补：Devix 聚焦运维 Agent 7x24，本实体聚焦 **AI 代码的 CI/CD 发布工程**
+- [腾讯 TAB Harness 全链路实战](ch05/009-harness.html) — 互补：TAB 覆盖从需求到交付的 Harness 流程，本实体聚焦 **CI/CD 门禁与发布工程**维度
+- [Harness Engineering](ch05/120-harness-engineering.html) — 上位框架：本实体是 Harness 工程在 **CI/CD 发布场景**的具体实现
 
 ## 四层准入门禁
 

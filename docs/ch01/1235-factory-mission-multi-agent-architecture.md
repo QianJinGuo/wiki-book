@@ -87,7 +87,7 @@ worker 做完 feature 必须填写：完成了什么 / 未完成项 / 执行命�
 > **验证独立于实现、交接强制结构化** — 适用于任何想让 agent 持续运行多日的产品，不只限于 coding。
 
 ## 相关框架对比
-- **[DeerFlow vs Hermes vs OpenClaw](../ch04/494-deerflow-hermes-openclaw.html)** — 都是 multi-agent 编排框架，与 Mission 的三角架构有相通之处
+- **[DeerFlow vs Hermes vs OpenClaw](ch11/235-openclaw.html)** — 都是 multi-agent 编排框架，与 Mission 的三角架构有相通之处
 
 ## 深度分析
 ### 1. 核心矛盾：人类注意力 vs 模型并行能力
@@ -130,12 +130,12 @@ Factory 押注模型会持续 speciate（分化），而不是收敛到单一 su
 *评审：Value 8 × Confidence 8 = 64 | ★★★★ | STRONG PASS*
 
 ## 相关实体
-- [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](../ch03/035-agent.html)
+- [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](ch05/094-ai.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/035-agent.html)
-- [OpenClaw 多智能体团队搭建实战经验](../ch04/047-openclaw-multi-agent-team-practice-v2.html)
-- [你不知道的 Agent 原理架构与工程实践](../ch04/355-agent-principle-architecture-engineering-practice.html)
-- [Agent Harness 架构](../ch05/058-agent-harness.html)
+- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](ch03/035-agent.html)
+- [OpenClaw 多智能体团队搭建实战经验](ch03/035-agent.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/355-agent-principle-architecture-engineering-practice.html)
+- [Agent Harness 架构](ch03/035-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

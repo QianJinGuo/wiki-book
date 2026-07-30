@@ -10,13 +10,13 @@ Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo | NVIDI
 ## 相关实体
 - [Nvidia Gemma 4 Edge Ai](ch01/756-nvidia-gemma-4-edge-ai.html)
 - [Nvidia Multimodal Rag Knowledge Systems](ch01/223-rag.html)
-- [Nvidia Agentic Ai Subsurface Engineering](../ch04/374-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/411-nvidia-secure-local-agent-nemoclaw-openclaw.html)
-- [Nvidia Gpu Kernel Translation Cute Python Julia](../ch04/617-python.html)
+- [Nvidia Agentic Ai Subsurface Engineering](ch04/374-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/411-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Gpu Kernel Translation Cute Python Julia](ch04/617-python.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-telco-reasoning-models-nemo.md)
 
-- [emo: pretraining mixture of experts for emergent modularity](../ch05/094-ai.html)
+- [emo: pretraining mixture of experts for emergent modularity](ch05/094-ai.html)
 - [时间序列预测增强方法总结：频域、分解、patch](https://github.com/QianJinGuo/wiki/blob/main/entities/time-series-forecasting-augmentation-methods.md)
 
 ## 深度分析

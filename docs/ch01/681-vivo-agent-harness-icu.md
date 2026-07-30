@@ -83,9 +83,9 @@ Harness 不是马鞍（服务于已成熟的系统），而是 ICU——维持�
 
 ## 与其他实体的关系
 
-- **Harness-as-ICU** 与 [Harness Engineering](../ch05/120-harness-engineering.html) 的"多层重试+可续传机制"互补——Harness Engineering 从"工程落地"侧设计，vivo 从"隐喻/哲学"侧给出定位
-- **四大身体系统问题** 与 [高德扫街榜 HermesAgent](../ch03/035-agent.html) 的"模型感知+代码计算"工程原则一致——都强调感官/运动/调度/自治四大层面的工程化
-- **最佳实践收敛论** 与 [Loop Engineering](../ch05/004-loop-engineering.html) 的"先写刹车再写循环"工程哲学呼应——最佳实践在真实使用中显现，而非一次性设计完成
+- **Harness-as-ICU** 与 [Harness Engineering](ch03/035-agent.html) 的"多层重试+可续传机制"互补——Harness Engineering 从"工程落地"侧设计，vivo 从"隐喻/哲学"侧给出定位
+- **四大身体系统问题** 与 [高德扫街榜 HermesAgent](ch03/035-agent.html) 的"模型感知+代码计算"工程原则一致——都强调感官/运动/调度/自治四大层面的工程化
+- **最佳实践收敛论** 与 [Loop Engineering](ch05/004-loop-engineering.html) 的"先写刹车再写循环"工程哲学呼应——最佳实践在真实使用中显现，而非一次性设计完成
 - **vivoPPT DSL 中间层** 与 [Flow2Spec 结构化知识路由](ch01/1016-spec.html) 的结构化中间表示思想一致
 
 ## 实践启示

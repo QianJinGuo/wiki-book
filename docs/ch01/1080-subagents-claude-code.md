@@ -18,13 +18,13 @@ Daniel San 给出的量化参考很有价值：半小时的探索性会话可能
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/subagents-详解claude-code-如何避免上下文污染-v2.md)
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/077-claude-code.html)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/076-obsidian-claude-code.html)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/089-claude-code-1.html)
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
-- [Claude Code Subagent 上下文卫生](../ch04/311-claude-code-subagent.html)
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
-- [claude-code-kairos-paradigm-2026](ch01/310-claude-code-kairos.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/077-claude-code.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch05/094-ai.html)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](ch03/077-claude-code.html)
+- [Claude Code Subagent 上下文卫生](ch03/077-claude-code.html)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch04/271-skill.html)
+- [claude-code-kairos-paradigm-2026](ch05/094-ai.html)
 
 ---
 

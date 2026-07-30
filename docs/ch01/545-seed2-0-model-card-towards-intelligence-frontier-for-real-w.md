@@ -72,10 +72,10 @@ Seed2.0 采用 Model Card 范式而非传统技术论文，体现了 ByteDance �
 
 ## 相关实体
 
-- [豆包 Seed 2.0 Lite：Agent 多模态](../ch03/035-agent.html) — Seed2.0 的 Lite 变体，专注 Agent 感官层
+- [豆包 Seed 2.0 Lite：Agent 多模态](ch03/035-agent.html) — Seed2.0 的 Lite 变体，专注 Agent 感官层
 - [豆包 Seed 2.0 Lite](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite.md) — Seed 2.0 Lite 版本总览
-- [ByteDance Trae Harness 工程指南](ch01/658-trae-harness-engineering.html) — ByteDance 相关工程实践
-- [Agent-World](../ch04/711-agent-world.html) — Agent 训练环境扩展，提及 Seed2.0 作为对比基线
+- [ByteDance Trae Harness 工程指南](ch05/120-harness-engineering.html) — ByteDance 相关工程实践
+- [Agent-World](ch03/035-agent.html) — Agent 训练环境扩展，提及 Seed2.0 作为对比基线
 
 ---
 

@@ -12,11 +12,11 @@
 - online evaluation 适合生产监控与异常发现
 
 ## 相关实体
-- [Cursor Harness Model Production Floor](../ch01/265-cursor-harness-model-production-floor.html)
+- [Cursor Harness Model Production Floor](ch01/265-cursor-harness-model-production-floor.html)
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch03/035-agent.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
-- [Agent Memory Architecture Past Influence Future Ruofei](../ch04/121-agent-memory.html)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
+- [Agent Memory Architecture Past Influence Future Ruofei](ch03/035-agent.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langsmith-evaluation-concepts.md)
 

@@ -13,10 +13,10 @@
 
 ## 相关实体
 - [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](ch01/976-claude.html)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)
-- [Claude Code Self Repair Hooks Memory Config](../ch03/077-claude-code.html)
-- [Skill Factory Yueheng](../ch04/271-skill.html)
-- [Code Review Graph](ch01/833-code-review-graph-claude-code-6-8-token.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch03/035-agent.html)
+- [Claude Code Self Repair Hooks Memory Config](ch05/094-ai.html)
+- [Skill Factory Yueheng](ch04/271-skill.html)
+- [Code Review Graph](ch01/732-claude-code-code-review-graph.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-vscode-plugin-zero-code.md)
 

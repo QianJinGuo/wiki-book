@@ -43,10 +43,10 @@ Alpamayo 1 使用 Flow Matching 轨迹解码（超越简单回归）、历史轨
 
 ## 相关实体
 - [Nvidia Gemma 4 Edge Ai](ch01/756-nvidia-gemma-4-edge-ai.html)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/184-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
-- [Nvidia Gpu Kernel Translation Cute Python Julia](../ch04/617-python.html)
-- [Nvidia Cut Checkpoint Costs Nvcomp](../ch03/031-nvidia-cut-checkpoint-costs-nvcomp.html)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch05/094-ai.html)
+- [Nvidia Gpu Kernel Translation Cute Python Julia](ch04/617-python.html)
+- [Nvidia Cut Checkpoint Costs Nvcomp](ch03/031-nvidia-cut-checkpoint-costs-nvcomp.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/035-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-misc-topics-frontier.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-edge-first-llms-av-robotics.md)

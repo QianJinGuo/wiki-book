@@ -48,21 +48,21 @@ Agent Protocol → MCP Tool Calling → A2A Collaboration → Harness Skill
 5. **建立 Skill 版本管理和回滚机制**。当 Skill 升级导致回归问题时，需要能快速回退到历史版本。建议每个 Skill 维护独立的版本号（语义化版本），并在 Agent 初始化时锁定 Skill 版本。运行时动态加载最新 Skill 版本的功能应仅在充分测试后开启。
 
 ## 相关实体
-- [Agent Harness 架构](../ch05/058-agent-harness.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/235-openclaw.html)
-- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
+- [Agent Harness 架构](ch03/035-agent.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/235-openclaw.html)
+- [Claude Code 源码核心机制详解](ch03/077-claude-code.html)
 - [你不知道的 Agent 原理架构与工程实践](ch04/355-agent-principle-architecture-engineering-practice.html)
-- [柚漫剧 AI 全流程提效拆解](../ch05/094-ai.html)
+- [柚漫剧 AI 全流程提效拆解](ch05/094-ai.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Design Patterns for AI Agents 2026](ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
+- [Design Patterns for AI Agents 2026](ch05/094-ai.html)
 
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
-- [harness-engineering-systematic-explainer](../ch05/120-harness-engineering.html)
-- [claude-code-7-layer-memory-architecture](../ch03/077-claude-code.html)
-- [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
-- [huashu-design 2.0 — agent skill 反收敛三套逻辑](../ch01/1243-0.html)
-- [introducing the mdn mcp server](../ch01/913-20.html)
-- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/060-agentic-ai.html)
+- [Agent架构关键变化：Harness正在成为新后端](ch03/035-agent.html)
+- [harness-engineering-systematic-explainer](ch05/094-ai.html)
+- [claude-code-7-layer-memory-architecture](ch03/077-claude-code.html)
+- [AI Agent 工程师能力地图](ch05/094-ai.html)
+- [huashu-design 2.0 — agent skill 反收敛三套逻辑](ch01/1243-0.html)
+- [introducing the mdn mcp server](ch01/913-20.html)
+- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch05/094-ai.html)
 
 ---
 

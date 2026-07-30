@@ -60,7 +60,7 @@ Harness 设计应像水流——在明确河道（spec/边界）内自主流动�
 
 本文的独特贡献在于从 LLM 第一性原理（token 采样概率 + 注意力机制）出发推导 Harness 方法论，提出了现有 entities 未覆盖的 three native concepts（反 slop、水流理论、最小混沌单元）。与 [Harness Engineering 综合实体](ch05/120-harness-engineering.html) 的 5 制品/三大阵营互补，与 [阿里云 Java Harness 实践](ch05/120-harness-engineering.html) 同属阿里云生态但视角不同（本文偏方法论而非案例）。
 
-> 参见也（see also）：[生产级 Harness 架构设计](ch05/058-agent-harness.html)、[Harness 综合范式](ch05/120-harness-engineering.html)
+> 参见也（see also）：[生产级 Harness 架构设计](ch03/035-agent.html)、[Harness 综合范式](ch05/120-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/code-is-cheap-ai-native-harness-wuyue-aliyun-2026.md)
 

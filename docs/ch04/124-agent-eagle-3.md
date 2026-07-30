@@ -175,11 +175,11 @@ EAGLE-3 相对 MTP 在 Mean TPOT 上有 59% 改善，但文章更强调 P95/P95 
 ## 相关技术链接
 
 ## 相关实体
-- [Eagle 3 Speculative Decoding Optimization](../ch01/1016-spec.html)
-- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/035-agent.html)
-- [Gemma 4 Multi Token Prediction Drafters](../ch01/245-gemma-4-multi-token-prediction-drafters.html)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch05/094-ai.html)
-- [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
+- [Eagle 3 Speculative Decoding Optimization](ch01/1016-spec.html)
+- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](ch03/035-agent.html)
+- [Gemma 4 Multi Token Prediction Drafters](ch01/245-gemma-4-multi-token-prediction-drafters.html)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](ch05/094-ai.html)
+- [Wow Harness V3 Governance Protocol](ch05/009-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/didi-eagle-3-speculative-decoding-agents.md)
 

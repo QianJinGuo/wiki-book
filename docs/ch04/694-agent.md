@@ -10,7 +10,7 @@
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](../ch05/022-ai-friendly.html)。 相关主题通过 [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](ch05/094-ai.html)。 相关主题通过 [Agent架构关键变化：Harness正在成为新后端](ch03/035-agent.html) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -22,11 +22,11 @@
 
 ## 相关实体
 
-- [后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](../ch05/022-ai-friendly.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
-- [AI 友好架构设计](../ch05/022-ai-friendly.html)
-- [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
+- [后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](ch05/094-ai.html)
+- [Agent架构关键变化：Harness正在成为新后端](ch03/035-agent.html)
+- [AI 友好架构设计](ch05/094-ai.html)
+- [AI Agent 工程师能力地图](ch05/094-ai.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
 
 ---
 

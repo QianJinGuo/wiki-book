@@ -91,7 +91,7 @@ AgentCore Harness GA 是平台级公告，Doris MCP 是具体应用案例。两�
 
 ## 相关主题
 
-- [Doris MCP on AgentCore](../ch11/270-aws-bedrock-agentcore.html)
+- [Doris MCP on AgentCore](ch03/035-agent.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

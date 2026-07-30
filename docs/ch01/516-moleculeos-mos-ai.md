@@ -67,9 +67,9 @@ MoleculeOS 将每一次从研发意图到最终结论的完整链路自动沉淀
 ## 相关实体
 
 - [LingBot-VA 具身原生模型](https://github.com/QianJinGuo/wiki/blob/main/entities/全球首个具身原生世界动作模型来了.md)
-- [MiniMax M2.5 部署指南](../ch11/294-amazon-bedrock.html)
+- [MiniMax M2.5 部署指南](ch11/299-bedrock.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Gemma 4 端侧大模型](ch01/622-gemma-4.html)
+- [Gemma 4 端侧大模型](ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai生物研发进入操作系统时代许锦波团队moleculeos正式开放.md)
 

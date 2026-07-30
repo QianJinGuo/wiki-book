@@ -48,7 +48,7 @@ Loop Engineering 和传统自动化脚本有着本质区别。普通脚本是固
 
 一个典型的 Loop 在每天早晨由 Automation 触发执行。它调用 triage skill 读取 CI 失败、open issues 和最近提交，将发现的问题整理到状态文件中。对于值得处理的问题，Loop 创建独立 worktree，让一个 sub-agent 在阅读项目 skills 后起草修复方案。修改完成后，另一个 sub-agent 接手审查，检查实现是否符合项目约定、是否覆盖边界条件。如果测试失败，失败输出被送回实现 agent 继续修正；如果测试通过，Connectors 打开 PR 并关联 ticket。最终，state file 记录这一轮发生了什么，为下一轮提供起点。
 
-与 [Hermes Agent](../ch03/095-hermes-agent.html) 的自动化流水线理念相似，Loop Engineering 强调系统自主运转而非人工驱动。这一范式也与 [Claude Code 的架构设计](../ch03/077-claude-code.html) 和 Cursor 等 AI 编程工具的实践经验形成互补。
+与 [Hermes Agent](ch03/095-hermes-agent.html) 的自动化流水线理念相似，Loop Engineering 强调系统自主运转而非人工驱动。这一范式也与 [Claude Code 的架构设计](ch03/077-claude-code.html) 和 Cursor 等 AI 编程工具的实践经验形成互补。
 
 ### 风险与边界设计
 
@@ -68,10 +68,10 @@ Loop Engineering 最有吸引力也最危险的地方在于其自动运行能力
 
 ## 相关实体
 
-- [Hermes Agent](../ch03/095-hermes-agent.html)
-- [Claude Code 深度架构分析](../ch03/077-claude-code.html)
-- [Agent Harness 上下文管理](../ch05/058-agent-harness.html)
-- [Backend for Agent](../ch03/035-agent.html)
+- [Hermes Agent](ch03/095-hermes-agent.html)
+- [Claude Code 深度架构分析](ch03/077-claude-code.html)
+- [Agent Harness 上下文管理](ch03/035-agent.html)
+- [Backend for Agent](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一文看懂-ai-编程智能体工程化新范式loop-engineering.md)
 

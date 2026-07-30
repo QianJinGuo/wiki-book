@@ -35,7 +35,7 @@ Priority 和 Fairness 虽然是两个独立概念，但它们的组合才真正�
 
 ## 相关实体
 - [Task Queue Priority and Fairness: Your Task Queue, Your Way](ch11/182-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Task Queue Priority and Fairness: Your Task Queue, your way](ch11/182-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness: Your Task Queue, your way](ch05/094-ai.html)
 
 ---
 

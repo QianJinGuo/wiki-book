@@ -24,8 +24,8 @@
 
 ## 相关实体
 - [Why Internally-Built AI Fails Fund Accounting Audits](ch01/130-why-internally-built-ai-fails-fund-accounting-audits.html)
-- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/130-why-internally-built-ai-fails-fund-accounting-audits.html)
-- [How Superset built the IDE for AI agents on Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)- [agentic code review](ch01/171-agentic-code-review.html)- [apple foundation models](ch01/154-apple-foundation-models.html)- [the oracle and the firm](https://github.com/QianJinGuo/wiki/blob/main/entities/calv-oracle-and-the-firm.md)- [what job interviews taught me about kubernetes](https://github.com/QianJinGuo/wiki/blob/main/entities/notnotp-k8s-interviews-non-technical.md)- [here](https://github.com/QianJinGuo/wiki/blob/main/entities/randsinrepose-we-dont-believe-you-rub.md)- [a backdoor in a linkedin job offer](../ch05/094-ai.html)- [every frame perfect](ch01/169-every-frame-perfect.html)
+- [Why Internally-Built AI Fails Fund Accounting Audits](ch05/094-ai.html)
+- [How Superset built the IDE for AI agents on Vercel](ch05/094-ai.html)- [agentic code review](ch03/035-agent.html)- [apple foundation models](ch01/154-apple-foundation-models.html)- [the oracle and the firm](https://github.com/QianJinGuo/wiki/blob/main/entities/calv-oracle-and-the-firm.md)- [what job interviews taught me about kubernetes](https://github.com/QianJinGuo/wiki/blob/main/entities/notnotp-k8s-interviews-non-technical.md)- [here](https://github.com/QianJinGuo/wiki/blob/main/entities/randsinrepose-we-dont-believe-you-rub.md)- [a backdoor in a linkedin job offer](ch05/094-ai.html)- [every frame perfect](ch01/169-every-frame-perfect.html)
 
 ---
 

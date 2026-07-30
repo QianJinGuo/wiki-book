@@ -13,11 +13,11 @@
 *(Add your notes here)*
 
 ## 相关实体
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](ch11/054-prowler-genai.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](ch05/094-ai.html)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](ch11/141-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [CloudSectiDbits](ch11/252-cloudsectidbits.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/270-aws-bedrock-agentcore.html)
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/034-amazon-bedrock-api.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch03/035-agent.html)
+- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch11/299-bedrock.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 ## 深度分析

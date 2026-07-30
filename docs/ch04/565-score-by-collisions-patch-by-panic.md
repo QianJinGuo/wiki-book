@@ -10,11 +10,11 @@
 - 来源：https://blog.himanshuanand.com/2026/05/score-by-collisions-patch-by-panic/
 
 ## 相关实体
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/869-google-adds-llms-txt-check-to-chrome-lighthouse.html)
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/820-github.html)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/223-rag.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/094-ai.html)
-- [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](ch01/1274-llm.html)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](ch01/820-github.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch05/094-ai.html)
+- [Npm Supply Chain Compromise Postmortem](ch05/094-ai.html)
+- [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)
 

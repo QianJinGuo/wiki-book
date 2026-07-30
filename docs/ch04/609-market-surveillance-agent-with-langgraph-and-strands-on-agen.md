@@ -48,9 +48,9 @@ LangGraph 管理所有 Agent 之间的状态共享，通过 checkpoint 系统提
 - [Strands Agents](ch04/697-strands-agents.html)
 - [AgentCore Harness](ch04/689-agentcore-harness.html)
 - [Building web search agents with Strands and Exa](ch04/465-building-web-search-enabled-agents-with-strands-and-exa.html)
-- [Deep Agents 子 Agent 编排](ch04/518-agent-orchestration.html)
-- [Evaluating AI agents production blueprint](ch04/298-ai-agent.html)
-- [AgentCore Gateway MCP](ch04/561-amazon-bedrock-agentcore.html)
+- [Deep Agents 子 Agent 编排](ch03/035-agent.html)
+- [Evaluating AI agents production blueprint](ch05/094-ai.html)
+- [AgentCore Gateway MCP](ch03/035-agent.html)
 - [Multi-Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)
 - [Multi-Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md)
 

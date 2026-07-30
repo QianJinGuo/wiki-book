@@ -140,11 +140,11 @@ Custom Instructions 不应该写成"你是一个友善的、专业的助手"这�
 ## 相关实体
 
 - [原文链接](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)
-- [Harness Engineering](../ch05/120-harness-engineering.html) — Personal Harness 的工程化版本
-- [Claude Code 源码核心机制](../ch03/077-claude-code.html)
-- [Claude Code 源码中的 Agent Harness 构建](../ch05/058-agent-harness.html)
-- [Agent 记忆系统的工程实践](../ch03/035-agent.html)
-- [Karpathy: 从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Harness Engineering](ch05/120-harness-engineering.html) — Personal Harness 的工程化版本
+- [Claude Code 源码核心机制](ch03/077-claude-code.html)
+- [Claude Code 源码中的 Agent Harness 构建](ch03/077-claude-code.html)
+- [Agent 记忆系统的工程实践](ch03/035-agent.html)
+- [Karpathy: 从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
 - 原始链接: https://mp.weixin.qq.com/s/pAVt6MeapUIDyVu256FI4w
 
 ---

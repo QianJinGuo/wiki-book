@@ -60,10 +60,10 @@ Rebuttal Skill 代表了一类新兴的工具范式：**将专家经验编码为
 
 ## 相关实体
 
-- [Skill 编排与依赖管理](../ch04/271-skill.html)
+- [Skill 编排与依赖管理](ch04/271-skill.html)
 - [Agent Skill 系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [开源模型与学术生态](../ch09/072-kimi-k3.html)
-- [Hermes Agent Skill 设计分析](../ch01/332-hermes-agent-skill.html)
+- [开源模型与学术生态](ch05/094-ai.html)
+- [Hermes Agent Skill 设计分析](ch04/271-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/neurips-2026-rebuttal-skill开源-ac开源.md)
 

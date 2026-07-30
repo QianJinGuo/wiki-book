@@ -30,7 +30,7 @@ Fable 5 发布中最重要的信号不是模型本身的性能提升，而是 An
 - **`/goal`**（Claude Code）：允许设定一个目标并让模型围绕评测反复迭代。
 - **Outcomes**（Claude Managed Agents）：通过独立的评分子 Agent 来验证任务完成度，评分发生在独立上下文窗口中，避免自我评判的偏差。
 
-这个转变的本质是：**从"提示"（一次性指令）转向"编排"（持续优化循环）**。这与 [Harness Engineering](../ch05/120-harness-engineering.html) 中关于"Agent 运行时"的理念完全一致——模型不再是独立的推理引擎，而是嵌入在一个包含反馈、记忆、验证的闭环系统中。
+这个转变的本质是：**从"提示"（一次性指令）转向"编排"（持续优化循环）**。这与 [Harness Engineering](ch03/035-agent.html) 中关于"Agent 运行时"的理念完全一致——模型不再是独立的推理引擎，而是嵌入在一个包含反馈、记忆、验证的闭环系统中。
 
 ### Parameter Golf 实验：验证器子 Agent 优于自我批判
 
@@ -43,7 +43,7 @@ Fable 5 发布中最重要的信号不是模型本身的性能提升，而是 An
 
 为什么独立上下文窗口更好？因为模型在自己的输出上进行批判时，**容易受到"确认偏误"的影响**——它倾向于认为自己之前的推理是正确的。而验证器子 Agent 以"白板"状态进入，仅根据评分标准做客观判断。
 
-这是一个重要的工程启示：**在 Agent 系统中，验证和执行的上下文隔离是质量保障的关键设计模式**。这也呼应了 [Agent 评测方法论与体系设计](../ch03/035-agent.html) 中的"判据与执行分离"原则。
+这是一个重要的工程启示：**在 Agent 系统中，验证和执行的上下文隔离是质量保障的关键设计模式**。这也呼应了 [Agent 评测方法论与体系设计](ch03/035-agent.html) 中的"判据与执行分离"原则。
 
 ### Fable 5 vs Opus 4.7：实验策略的质变
 
@@ -52,7 +52,7 @@ Parameter Golf 实验还揭示了不同模型在实验策略上的根本差异�
 - **Fable 5**：倾向于押注更大、更具结构性的改动（如架构变更）。表现出"韧性"——在量化回归中坚持推进，最终取得最大收益。
 - **Opus 4.7**：第一次实验带来小收益后，几乎所有后续实验都沿着同一模板推进——调整一个标量、测量结果、为正就保留。本质上是在做局部搜索。
 
-这个差异说明 Fable 5 不仅"更聪明"，而且**更有策略性**——它能跳出局部最优的思维陷阱，进行更高层面的探索。这与 [DeepSeek V3 推理模型架构](ch01/1213-moe-architecture.html) 中关于推理链长度与探索质量的关系研究有相通之处。
+这个差异说明 Fable 5 不仅"更聪明"，而且**更有策略性**——它能跳出局部最优的思维陷阱，进行更高层面的探索。这与 [DeepSeek V3 推理模型架构](ch01/1091-deepseek.html) 中关于推理链长度与探索质量的关系研究有相通之处。
 
 ### 记忆递进模型：从失败到通用规则的五阶段
 
@@ -64,7 +64,7 @@ Fable 5 在 Continual Learning Bench 的 SQL 问答任务中表现出清晰的�
 4. **提炼**（④）：将验证结果转化为通用规则。
 5. **查阅**（⑤）：读取规则，而不是重新推导。Fable 5 能完成这个递进——验证覆盖率达 73%（30 个问题中的 22 个）。
 
-这个递进模式揭示了一个关键的 AI 系统设计原则：**记忆系统的价值不在于存储，而在于知识的抽象层级提升**。低级别模型把记忆当作"笔记"（事实存储），高级模型把记忆当作"规则"（知识抽象）。这也是 [Hermes Agent](../ch03/095-hermes-agent.html) 中"技能"（Skills）概念的设计初衷——将可复用的行为模式从上下文中提炼出来，实现跨会话的知识复用。
+这个递进模式揭示了一个关键的 AI 系统设计原则：**记忆系统的价值不在于存储，而在于知识的抽象层级提升**。低级别模型把记忆当作"笔记"（事实存储），高级模型把记忆当作"规则"（知识抽象）。这也是 [Hermes Agent](ch03/095-hermes-agent.html) 中"技能"（Skills）概念的设计初衷——将可复用的行为模式从上下文中提炼出来，实现跨会话的知识复用。
 
 ### 循环的三种层次
 
@@ -92,11 +92,11 @@ Fable 5 在 Continual Learning Bench 的 SQL 问答任务中表现出清晰的�
 
 ## 相关实体
 
-- [Claude Code Vs Kimi Vs Minimaxagent Teams 到底拼的是什么](../ch03/077-claude-code.html) — Agent 产品对比分析
-- [Agent的自演进被刚刚开源的Areal 20按下了加速键](../ch03/035-agent.html) — Agent 自我进化与循环
-- [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](../ch03/035-agent.html) — Agent 落地工程实践
-- [Agent 评测方法论与体系设计](../ch03/035-agent.html) — Agent 评测体系设计
-- [Harness Engineering Survey 2026](../ch05/120-harness-engineering.html) — Harness Engineering 总览
+- [Claude Code Vs Kimi Vs Minimaxagent Teams 到底拼的是什么](ch03/077-claude-code.html) — Agent 产品对比分析
+- [Agent的自演进被刚刚开源的Areal 20按下了加速键](ch03/035-agent.html) — Agent 自我进化与循环
+- [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](ch03/035-agent.html) — Agent 落地工程实践
+- [Agent 评测方法论与体系设计](ch03/035-agent.html) — Agent 评测体系设计
+- [Harness Engineering Survey 2026](ch05/120-harness-engineering.html) — Harness Engineering 总览
 
 ## 相关主题
 

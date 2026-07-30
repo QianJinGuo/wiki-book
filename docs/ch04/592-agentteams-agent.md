@@ -34,7 +34,7 @@
 | Team Leader Agent | 团队调度分配 | VP/TL |
 | Worker Agent | 底层执行 | 一线员工 |
 
-与 [Agent Harness 6 种运行时模式](../ch05/058-agent-harness.html) 中提到的分层委托模式一致，但 AgentTeams 强调 TL 层解决管理幅度问题。
+与 [Agent Harness 6 种运行时模式](ch03/035-agent.html) 中提到的分层委托模式一致，但 AgentTeams 强调 TL 层解决管理幅度问题。
 
 与 Claude Managed Agents（CMA）的关键区别：CMA 只有两层（Lead + Teammates），Lead 不可转移；AgentTeams 的 Manager/TL 均为独立实例可灵活调整。
 

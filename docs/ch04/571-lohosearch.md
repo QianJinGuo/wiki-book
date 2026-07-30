@@ -53,8 +53,8 @@ LoHoSearch 的三项核心贡献：
 
 ## 相关实体
 
-- [美团 LongCat 开源 VitaBench 2.0：长期动态智能体基准新标杆](../ch03/035-agent.html) — 美团 LongCat 团队的另一个智能体基准
-- [Agent 评测体系化指南](../ch03/035-agent.html) — Agent 评测方法论
+- [美团 LongCat 开源 VitaBench 2.0：长期动态智能体基准新标杆](ch03/035-agent.html) — 美团 LongCat 团队的另一个智能体基准
+- [Agent 评测体系化指南](ch03/035-agent.html) — Agent 评测方法论
 
 ---
 

@@ -31,10 +31,10 @@ Ghostty 案例的示范效应值得重视。作为 Mitchell Hashimoto 的个人�
 对于高价值开源项目，制定 GitHub 退出路线图时应评估多维风险。GitHub 的可靠性问题只是表层驱动因素；更深层的是微软商业利益与开源社区价值观的结构性张力。在评估替代方案时，应同时考虑平台的商业模型、治理结构、社区支持和长期路线图，而不仅仅是技术稳定性 ^。
 
 ## 相关实体
-- [Microsoft Copilot Studio Agent Governance](../ch03/035-agent.html)
-- [Microsoft Mxc Execution Containers Agent Sandbox Origin](../ch03/035-agent.html)
-- [Github Copilot Individual Plans Flex Allotments](ch01/782-github-copilot-individual-plans-flex-allotments-in-pro-and.html)
-- [Joyai Echo Long Video Framework Jd](../ch05/094-ai.html)
+- [Microsoft Copilot Studio Agent Governance](ch03/035-agent.html)
+- [Microsoft Mxc Execution Containers Agent Sandbox Origin](ch05/094-ai.html)
+- [Github Copilot Individual Plans Flex Allotments](ch01/820-github.html)
+- [Joyai Echo Long Video Framework Jd](ch05/094-ai.html)
 - [Openchronicle Memory Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/openchronicle-memory-layer.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/open-source-projects-leaving-github.md)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](ch01/820-github.html)

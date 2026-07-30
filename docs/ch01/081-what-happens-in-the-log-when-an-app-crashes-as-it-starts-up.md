@@ -43,9 +43,9 @@ Practical and specific macOS debugging guide from a trusted source, with actiona
 ## 相关实体
 - [Reasoning Lift](ch01/678-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.html)
 - [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/913-20.html)
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/094-ai.html)
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](ch05/094-ai.html)
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
-- [Seangoedeckecom Build Agents Not Pipelines](../ch04/020-build-agents-not-pipelines.html)
+- [Seangoedeckecom Build Agents Not Pipelines](ch03/035-agent.html)
 
 ## 相关主题
 

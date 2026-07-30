@@ -160,16 +160,16 @@ Ruby：`bundler/inline`
 → `Agent Skills Teams Architecture Evolution Selection Guide` — 多 Agent 场景下 Skill 的组合与选择策略
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/419-aws-sagemaker-ai-agent.html)
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/034-qoder-skills.html)
+- [9个Agent技能模块化SageMaker微调生命周期](ch05/094-ai.html)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch07/034-qoder-skills.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Thin Harness Fat Skills](../ch05/085-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](ch04/271-skill.html)
 
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/257-anthropic-agent.html)
-- [SkillX — 层次化技能知识库](../ch07/056-skillx.html)
-- [SkillClaw](ch04/474-skillclaw-nacos-agent-skill-registry.html)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/397-agent-skills.html)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/271-skill.html)
+- [SkillX — 层次化技能知识库](ch04/271-skill.html)
+- [SkillClaw](ch04/271-skill.html)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/271-skill.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/271-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

@@ -60,11 +60,11 @@ Factory 能支持 16 天（目标 30 天）的长任务，核心依赖不是长�
 - human-in-the-loop — 人类注意力作为瓶颈的设计前提
 - golden set evals（黄金集评估）— 验证者使用独立参考答案的评估方法 
 ## 相关实体
-- [Factory Missions Multi Agent Shipping](ch04/162-factory-missions.html)
+- [Factory Missions Multi Agent Shipping](ch03/035-agent.html)
 - [Sap Unveils The Autonomous Enterprise](ch04/105-sap-unveils-the-autonomous-enterprise.html)
-- [Agent Formal Verification Ai Code](../ch03/035-agent.html)
-- [Martin Fowler Ai Rd Harness Nondeterminism Devnote](../ch05/009-harness.html)
-- [Peter Steinberger Openclaw 100 Ai Agents](../ch09/110-peter-steinberger-openclaw-100-ai.html)
+- [Agent Formal Verification Ai Code](ch05/094-ai.html)
+- [Martin Fowler Ai Rd Harness Nondeterminism Devnote](ch05/094-ai.html)
+- [Peter Steinberger Openclaw 100 Ai Agents](ch05/094-ai.html)
 
 ---
 

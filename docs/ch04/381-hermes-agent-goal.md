@@ -55,7 +55,7 @@ Judge 判定故意偏保守——只有三类情况认为完成：Agent 明确�
 Judge API 失败返回 continue、连续解析失败达阈值自动暂停——fail-open 设计不是盲目继续，而是一套分层防御机制：在"遇到一点波动就停止"和"明知判定坏了还继续跑"之间留了合理台阶。paused 态是关键缓冲层，网络抖动、预算耗尽、用户临时插话都不该把目标直接判死。
 
 ## 相关链接
-- [Hermes Agent Goal And Kanban](ch04/381-hermes-agent-goal.html)
+- [Hermes Agent Goal And Kanban](ch03/095-hermes-agent.html)
 
 ## 实践启示
 **何时使用 /goal**
@@ -72,14 +72,14 @@ subgoals 让用户在执行过程中补充约束，不必推翻原目标重来�
 - **Ralph Loop**：长程 Agent 执行模式理念，外部状态+显式停止条件替代聊天记忆
 - **Dumb Zone**：上下文堆积导致 Agent 质量下滑的区域
 - **Judge**：辅助模型负责窄判定（是否继续），可独立配置廉价 provider
-- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/120-harness-engineering.html)
+- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch05/094-ai.html)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
-- [Codeindex · 让大模型更好地理解你的代码](../ch01/358-codeindex.html)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/397-agent-skills.html)
-- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/077-claude-code.html)
-- [Claude Code Agent 工程设计](../ch03/069-claude-code-agent.html)
+- [Codeindex · 让大模型更好地理解你的代码](ch01/358-codeindex.html)
+- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/271-skill.html)
+- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](ch03/077-claude-code.html)
+- [Claude Code Agent 工程设计](ch03/077-claude-code.html)
 - [你不知道的 Agent 原理架构与工程实践](ch04/355-agent-principle-architecture-engineering-practice.html)
-- [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch03/035-agent.html)
+- [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
 

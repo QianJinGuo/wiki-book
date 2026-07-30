@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [agent资本市场：自主agent融资框架与批判](../ch03/035-agent.html)
+- [agent资本市场：自主agent融资框架与批判](ch03/035-agent.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-major-update-appshots-goal-xinzhiyuan.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
@@ -86,7 +86,7 @@ OpenAI 在 2026 年 5 月对 **Codex** 进行了重大升级，标志着它从"�
 
 传统 Codex 是反射式（reactive）：用户给 prompt → AI 生成 → 等待下一个 prompt。/goal 毕业意味着 Codex 进入**目标导向（goal-directed）模式**：用户给里程碑 → AI 自主规划子任务 → 持续推进数小时至数天 → 中途用户可查询/调整/暂停。
 
-这与 [nanobot](../ch03/035-agent.html) 的 subagent 机制本质相同（spawn 长任务到后台），但 OpenAI 把这个机制产品化、规模化，让无技术背景的用户也能用。
+这与 [nanobot](ch03/035-agent.html) 的 subagent 机制本质相同（spawn 长任务到后台），但 OpenAI 把这个机制产品化、规模化，让无技术背景的用户也能用。
 
 对工作流的根本性影响：
 - 早上设目标 → 晚上回来看结果 → 这是新的开发节奏
@@ -98,7 +98,7 @@ OpenAI 在 2026 年 5 月对 **Codex** 进行了重大升级，标志着它从"�
 - 产生大量难以审查的代码变更
 - 跨多个 commit 引入难以回滚的副作用
 
-参见 [天猫团队实战指南](../ch05/094-ai.html)中"AI 一直无法输出正确结果，在错误中不断循环"的"改不动"痛点——这在长周期任务中会被放大。
+参见 [天猫团队实战指南](ch05/094-ai.html)中"AI 一直无法输出正确结果，在错误中不断循环"的"改不动"痛点——这在长周期任务中会被放大。
 
 ### 3. Locked Use 是 Computer Use 的物理空间扩展
 
@@ -126,7 +126,7 @@ OpenAI 的产品策略路径开始清晰：
 3. 用 Codex 的能力扩张到"所有需要操作电脑的知识工作"
 4. 用 ChatGPT for PowerPoint 这类插件回头反向渗透传统办公软件
 
-这与 [同期 a16z 对话 Roblox PM](../ch05/094-ai.html) "工具型 App 首当其冲被 Agent 入口替代" 的判断完全一致。
+这与 [同期 a16z 对话 Roblox PM](ch05/094-ai.html) "工具型 App 首当其冲被 Agent 入口替代" 的判断完全一致。
 
 ### 5. 增长 hack：用 quota reset 强化用户增长
 
@@ -179,13 +179,13 @@ Appshots（屏幕感知） + /goal（长周期自主） + Locked Use（物理边
 
 ## 关联实体
 
-- [Nanobot Agent Framework Architecture Deep Dive](../ch03/035-agent.html) — subagent / 长周期任务的极简框架样本
-- [腾讯研究院Ai速递 20260506](../ch05/094-ai.html) — 同期 AI 行业全景，含"工具型 App 消亡"判断
-- [天猫新品营销技术团队Ai编码实战指南上](../ch05/094-ai.html) — AI 编码全流程工程化方法论
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html) — vibe coding 到 agentic engineering 的演进
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html) — 锯齿智能与 Codex 能力组合
+- [Nanobot Agent Framework Architecture Deep Dive](ch03/035-agent.html) — subagent / 长周期任务的极简框架样本
+- [腾讯研究院Ai速递 20260506](ch05/094-ai.html) — 同期 AI 行业全景，含"工具型 App 消亡"判断
+- [天猫新品营销技术团队Ai编码实战指南上](ch05/094-ai.html) — AI 编码全流程工程化方法论
+- [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html) — vibe coding 到 agentic engineering 的演进
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html) — 锯齿智能与 Codex 能力组合
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent harness 的工程框架
-- [Agent Harness Context Management Working Set](../ch05/058-agent-harness.html) — Appshots 引发的 working set 管理新挑战
+- [Agent Harness Context Management Working Set](ch03/035-agent.html) — Appshots 引发的 working set 管理新挑战
 
 ## 信号判断
 

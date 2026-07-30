@@ -11,11 +11,11 @@ Agent Harness覆盖：数据流水线、训练环境、评测基础设施、跨�
 > M2.7能够胜任30-50%的工作流。
 
 ## 相关实体
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.html)
-- [Harness Engineering 第三代工程范式](../ch05/120-harness-engineering.html)
-- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.html)
-- [Cursor Harness Model Production Floor](../ch01/265-cursor-harness-model-production-floor.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/035-agent.html)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch03/035-agent.html)
+- [Harness Engineering 第三代工程范式](ch05/120-harness-engineering.html)
+- [Agentscope Java Harness Framework Enterprise Distributed](ch03/035-agent.html)
+- [Cursor Harness Model Production Floor](ch01/265-cursor-harness-model-production-floor.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimax-m2-7-self-evolution.md)
 

@@ -32,8 +32,8 @@ PlayerZero 以代码库为核心集成点，Jira、Datadog、Zendesk 等工具�
 Code simulation 对以下场景价值最大：多仓库/多服务的分布式系统（跨服务变更影响难以在单PR范围内评估）；高频部署、每次部署风险较高的团队（需要提前预测而非事后发现）；已有生产遥测数据但缺乏预测能力的团队。如果团队系统复杂度低、单体为主，模拟的边际收益有限。
 
 ## 相关实体
-- [Hs.Playerzero Ai Code Review](../ch05/094-ai.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
+- [Hs.Playerzero Ai Code Review](ch05/094-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch05/094-ai.html)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/069-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 - [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/1243-0.html)

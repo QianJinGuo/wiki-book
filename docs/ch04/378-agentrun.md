@@ -49,8 +49,8 @@ AI 网关的透明化处理（模型路由、负载均衡、内容安全、密�
 如果业务场景涉及事件驱动架构（定时任务、数据更新触发、监控告警等），优先考虑 EventBridge 集成路径。相比轮询或手动触发，事件驱动模式可以显著降低延迟并提高资源利用效率，同时保持 Agent 响应的一致性。
 
 ## 相关实体
-- [Pi Mono Github](../ch01/834-pi-mono-github.html)
-- [Cli Mcp Sdk Agent Tool Selection](../ch03/035-agent.html)
+- [Pi Mono Github](ch01/834-pi-mono-github.html)
+- [Cli Mcp Sdk Agent Tool Selection](ch03/035-agent.html)
 - [Agentcore Managed Harness](ch04/224-agentcore-managed-harness.html)
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 - [我用 Skillmd 做了一个简历生成器](ch04/271-skill.html)

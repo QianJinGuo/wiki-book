@@ -44,7 +44,7 @@ Individual SDD（Spec-Driven Development）向团队级 Harness 演进的完整�
 
 ### 2. "执行者不能做最终裁判"——独立 Verification 的工程哲学
 
-Lattice 架构中最核心的原则是"执行者不能做最终裁判"。同一个 Agent 可以写代码、修失败、补测试，但不能只凭自己的解释宣布"已经通过"。这一原则在 Verification 层的实现是"确定性 gate 优先"：build → lint → unit-test → ac-coverage → drift-check → compliance，每个 gate 由外部信号（而非 Agent 自我评价）决定通过与否。这与 [Agent Harness 架构](ch05/058-agent-harness.html) 中"Harness 作为可信中介"的设计理念一脉相承。
+Lattice 架构中最核心的原则是"执行者不能做最终裁判"。同一个 Agent 可以写代码、修失败、补测试，但不能只凭自己的解释宣布"已经通过"。这一原则在 Verification 层的实现是"确定性 gate 优先"：build → lint → unit-test → ac-coverage → drift-check → compliance，每个 gate 由外部信号（而非 Agent 自我评价）决定通过与否。这与 [Agent Harness 架构](ch03/035-agent.html) 中"Harness 作为可信中介"的设计理念一脉相承。
 
 ### 3. Context 工程的三层结构：地图→知识→依据
 
@@ -65,8 +65,8 @@ Lattice 的 Context 工程提出了一个可操作的三层结构：Context Map�
 4. **Drift Check 应从 spec-lint 阶段开始抓**：Lattice 的 drift 检测覆盖新增 error code、新增 API route、修改 DB schema 三类常见漂移场景，且从 spec-lint 阶段开始检测，不在 CI 中漏掉。建议团队在 CI pipeline 中增加类似的自动化漂移检测门禁。
 
 ## 相关实体
-- [Loop Engineering 半年实战拆解：claude-ship](ch05/004-loop-engineering.html) — 另一 AI Coding 闭环开源实现
-- [Agent Harness 架构](ch05/058-agent-harness.html) — Harness Engineering 概念框架
+- [Loop Engineering 半年实战拆解：claude-ship](ch01/976-claude.html) — 另一 AI Coding 闭环开源实现
+- [Agent Harness 架构](ch03/035-agent.html) — Harness Engineering 概念框架
 
 ---
 

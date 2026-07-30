@@ -14,8 +14,8 @@
 - [Lbs Intentbench](ch04/273-lbs-intentbench.html)
 - [Programbench Agent Benchmark](ch04/163-programbench-agent-benchmark.html)
 - [Computer Use 45X More Expensive Than Structured Apis](ch04/268-computer-use-45x-more-expensive-than-structured-apis.html)
-- [3 Persons 100 Ai Programmers 1 3 Million Openai Pays](../ch01/390-openai.html)
-- [Cursor Harness Model Production Floor](../ch01/265-cursor-harness-model-production-floor.html)
+- [3 Persons 100 Ai Programmers 1 3 Million Openai Pays](ch05/094-ai.html)
+- [Cursor Harness Model Production Floor](ch01/265-cursor-harness-model-production-floor.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lbs-intent-bench-lbs-intentbench.md)
 

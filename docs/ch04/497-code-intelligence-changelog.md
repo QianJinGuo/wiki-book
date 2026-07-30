@@ -30,12 +30,12 @@ Code Intelligence代表了一种工程工具AI化的典型路径：不是用AI�
 管理员在配置时应仔细考虑权限边界：对于高度敏感的代码仓库（如安全相关、内部工具），可能需要限制访问；而对于客户-facing的功能文档已经较为完善的产品，可以更开放地启用访问。Beta期间建议监控使用情况，收集团队反馈，为正式版的功能定价和权限设计提供参考 。
 ## 相关实体
 - [Code Intelligence Changelog](ch04/497-code-intelligence-changelog.html)
-- [Qoder Skills Complete Guide](../ch07/034-qoder-skills.html)
-- [Is Software Losing Its Head](../ch01/651-is-software-losing-its-head.html)
-- [Engineering Roles Shift From Developing Code To Managing Ai](../ch05/080-engineering-roles-shift-from-developing-code-to-managing-ai.html)
+- [Qoder Skills Complete Guide](ch07/034-qoder-skills.html)
+- [Is Software Losing Its Head](ch01/651-is-software-losing-its-head.html)
+- [Engineering Roles Shift From Developing Code To Managing Ai](ch05/080-engineering-roles-shift-from-developing-code-to-managing-ai.html)
 - [Prompt Debugger A B Compare Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-a-b-compare-winty.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/code-intelligence-changelog-1.md)- [linear code intelligence: controlled codebase access for lin](../ch01/913-20.html)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/code-intelligence-changelog-1.md)- [linear code intelligence: controlled codebase access for lin](ch01/742-9.html)
 
 ---
 

@@ -65,10 +65,10 @@ Mythos（Anthropic 的代码生成模型）暴露漏洞的速度远快于人类�
 
 ## 与现有知识的关系
 
-- [Token 经济学与 AI 效率](ch12/003-token.html) — 从 token 效率工程层看同一问题；Arora 提供了宏观市场定价的 CEO 视角
-- [腾讯 Token 经济学与 AI 普惠](ch12/003-token.html) — 腾讯视角的 token 经济分析，可对照 Arora 的硅谷视角
-- [纳德拉 Token 资本论](ch12/003-token.html) — 另一位 CEO 的 AI 经济战略宣言，对比阅读
-- [The Token Economy pt2](../ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html) — AI 经济模式的另一种分析
+- [Token 经济学与 AI 效率](ch05/094-ai.html) — 从 token 效率工程层看同一问题；Arora 提供了宏观市场定价的 CEO 视角
+- [腾讯 Token 经济学与 AI 普惠](ch05/094-ai.html) — 腾讯视角的 token 经济分析，可对照 Arora 的硅谷视角
+- [纳德拉 Token 资本论](ch05/094-ai.html) — 另一位 CEO 的 AI 经济战略宣言，对比阅读
+- [The Token Economy pt2](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html) — AI 经济模式的另一种分析
 
 ---
 

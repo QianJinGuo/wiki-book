@@ -46,12 +46,12 @@ AgentBrowser 的核心价值在于将传统浏览器自动化框架改造为 Age
 4. **隐私与检测规避**：Stealth Mode 是刚需，浏览器指纹和自动化检测会直接影响 Agent 执行可信度，选型时必须测试目标站点的检测规避效果。
 
 ## Related
-- [CLI-Anything](../ch03/100-cli-anything.html) — Agent 工具生态
-- [AutoCLI](../ch03/124-autocli.html) — 信息获取 CLI
-- [Hermes-Agent](../ch03/095-hermes-agent.html) — 可通过 AgentBrowser 扩展能力
+- [CLI-Anything](ch03/100-cli-anything.html) — Agent 工具生态
+- [AutoCLI](ch03/124-autocli.html) — 信息获取 CLI
+- [Hermes-Agent](ch03/095-hermes-agent.html) — 可通过 AgentBrowser 扩展能力
 
 ## 相关实体
-- [GBrain](../ch01/251-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [GBrain](ch05/094-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

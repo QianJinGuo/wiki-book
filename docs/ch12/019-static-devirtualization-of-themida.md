@@ -148,7 +148,7 @@ Back Engineering Labs 方法的核心洞察是：去虚拟化的主要工作量�
 - [Static Devirtualization of Themida](ch12/100-static-devirtualization-of-themida.html)（另一版本）
 
 - [Static Devirtualization 2024](ch12/020-static-devirtualization-2024.html)
-- [static devirtualization of themida](ch12/062-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
+- [static devirtualization of themida](ch07/067-neurips-2026-rebuttal-skill-skill.html)
 
 ---
 

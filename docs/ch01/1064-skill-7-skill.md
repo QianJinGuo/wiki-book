@@ -28,9 +28,9 @@ Skill 的本质是「过程资产」（Process Asset）而非「提示词集合�
 **团队知识沉淀**：Skill 是团队 AI 研发知识沉淀的一等公民。把团队内部的规范、流程、模板具象化为 Skill，比写内部文档更有效——因为 Skill 可以被 Agent 直接执行，而文档只能被人类阅读。
 > ai agent platforms topic map（已删除）
 
-- [你写的 Skill，及格了吗？](../ch04/271-skill.html)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](ch01/1258-gpt-image-2.html)
+- [你写的 Skill，及格了吗？](ch04/271-skill.html)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](ch04/271-skill.html)
 
 ---
 

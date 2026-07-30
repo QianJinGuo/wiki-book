@@ -50,14 +50,14 @@ Stepan Gershuni 在 cyber.fund 发布的这篇创始人指南，提出了 AI 原
 5. **创始人先用**——在会议室讲 PPT 之前，先在真实 context 下现场演示
 
 ## 相关实体
-- [Agent Harness Architecture Design Production Guide](../ch05/058-agent-harness.html)
-- [Schemaflow Openai Cookbook Staged Agentic Workflow](ch04/237-agentic.html)
+- [Agent Harness Architecture Design Production Guide](ch03/035-agent.html)
+- [Schemaflow Openai Cookbook Staged Agentic Workflow](ch05/094-ai.html)
 - [How To Build Audio Transcription Agent](ch04/483-how-to-build-audio-transcription-agent.html)
-- [Gaode Ai Native 7X24 Pipeline Self Healing](../ch05/018-ai-native.html)
-- [Harness Engineering Comprehensive Guide Conardli](../ch05/120-harness-engineering.html)
+- [Gaode Ai Native 7X24 Pipeline Self Healing](ch05/094-ai.html)
+- [Harness Engineering Comprehensive Guide Conardli](ch05/120-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-startup-cyberfund-2026.md)
-- [how frontier teams are reinventing ai-native development](../ch01/260-how-frontier-teams-are-reinventing-ai-native-development.html)
+- [how frontier teams are reinventing ai-native development](ch01/260-how-frontier-teams-are-reinventing-ai-native-development.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

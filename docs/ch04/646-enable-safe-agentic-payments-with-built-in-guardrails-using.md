@@ -35,12 +35,12 @@ Enable safe agentic payments with built-in guardrails using Amazon Bedrock Agent
 - **aws趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
+- [两万字详解Claude Code源码核心机制](ch03/077-claude-code.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/077-claude-code.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/094-ai.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch05/094-ai.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

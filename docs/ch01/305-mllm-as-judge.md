@@ -165,11 +165,11 @@ Strands Evals 的多模态 judge 保持了与文本 judge 完全相同的 `Case`
 - Anthropic Claude 系列
 
 ## 相关实体
-- [Yidian Tianxia Context Engineering Agentic Ai Qcon](../ch04/258-yidian-tianxia-context-engineering-agentic-ai.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
+- [Yidian Tianxia Context Engineering Agentic Ai Qcon](ch05/094-ai.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch03/035-agent.html)
 - [Claude Code Harness Deep Understanding](ch01/422-claude-code-harness-deep-understanding.html)
 - [Aws Reinforcement Fine Tuning Llm As Judge](ch01/1274-llm.html)
-- [Amazon Bedrock Api Security Guide](../ch12/034-amazon-bedrock-api.html)
+- [Amazon Bedrock Api Security Guide](ch11/299-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multimodal-evaluators-mllm-as-judge-image-to-text.md)
 

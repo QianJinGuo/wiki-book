@@ -76,7 +76,7 @@ SSE（Server-Sent Events）流式通信。
 Token = 思考成本，Runtime = 环境成本。
 
 ## 与 PM 视角的关系
-| 视角 | 本文（开发者指南） | [PM 视角](../ch04/477-anthropic-pm-agentic.html) |
+| 视角 | 本文（开发者指南） | [PM 视角](ch03/035-agent.html) |
 |------|-----------------|-----------------|
 | 焦点 | API 接口/代码示例/架构 | PM 工作流/效率提升 |
 | 代码 | ✅ 完整 Python SDK 示例 | ❌ 无代码 |
@@ -118,15 +118,15 @@ Agent SDK（`@anthropic-agents/sdk`）和 Managed Agents 解决的是同一类�
 除非明确需要 unrestricted 网络访问，应默认使用 `limited` 模式并配置域名白名单 。自定义工具（JSON Schema 定义的 `trigger_deploy` 类）应在工具描述中明确标注操作的影响范围，并在工具执行层实现幂等性和权限校验 — 因为一旦工具暴露给 Agent，Agent 可能以非预期方式组合调用。
 
 ## Related
-- [Claude Code Agent 工程设计](../ch03/069-claude-code-agent.html) — Claude Code 的本地 Harness 架构
-- [Agent Harness 上下文管理：工作集视角](../ch05/058-agent-harness.html) — 托管 Harness 与本地 Harness 的上下文管理对比
+- [Claude Code Agent 工程设计](ch03/077-claude-code.html) — Claude Code 的本地 Harness 架构
+- [Agent Harness 上下文管理：工作集视角](ch03/035-agent.html) — 托管 Harness 与本地 Harness 的上下文管理对比
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Managed Agents 的 Harness 工程背景
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-developer-guide.md)
 - [PM 视角原始存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-pm-jess-yan-managed-agents.md)
-- [Agent Skill 设计模式](../ch04/397-agent-skills.html)
+- [Agent Skill 设计模式](ch04/271-skill.html)
 
 ## 相关实体
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/077-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
 

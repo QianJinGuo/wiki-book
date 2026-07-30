@@ -53,7 +53,7 @@ VLA 2.0 的定位是「具身智能领域的通用操作基座」。这一目标
 ## 相关实体
 
 - [GS-Playground 具身仿真](ch01/913-20.html) — 具身智能仿真平台，与 VLA 模型训练互补
-- [算力风洞](../ch05/018-ai-native.html) — GPU 集群稳定性验证，与 VLA 的具身计算需求互补
+- [算力风洞](ch05/094-ai.html) — GPU 集群稳定性验证，与 VLA 的具身计算需求互补
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lingbot-vla-2-60000h-open-source-vla.md)
 

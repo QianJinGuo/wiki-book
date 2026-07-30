@@ -38,7 +38,7 @@ PRISM 的整体架构围绕三个核心设计理念展开：
 
 3. **插件式 CLIntegration 接口**：定义了持续学习方法的完整生命周期（模型初始化、前向钩子、跨任务状态持久化等）。新方法只需在指定目录下实现接口并用装饰器注册，即可接入统一训练流水线，无需修改 `run.py` 或训练器代码。
 
-这套架构的意义在于：它将 MCIT 研究从"为每个方法维护独立代码库"的混乱状态推进到"统一基础设施、插件式扩展"的工程化阶段，大幅降低了领域准入门槛和迭代成本。这与 [Agent Harness 场景](../ch05/058-agent-harness.html) 中的"标准化接口 + 插件式扩展"思路高度一致。
+这套架构的意义在于：它将 MCIT 研究从"为每个方法维护独立代码库"的混乱状态推进到"统一基础设施、插件式扩展"的工程化阶段，大幅降低了领域准入门槛和迭代成本。这与 [Agent Harness 场景](ch03/035-agent.html) 中的"标准化接口 + 插件式扩展"思路高度一致。
 
 ### PRISM 的基准评估体系
 
@@ -56,7 +56,7 @@ PRISM 的工程化思路对 AI 研究基础设施的建设有重要启示：
 
 1. **解耦是工程化的第一原则**：将精度控制、骨干适配、方法逻辑彻底解耦，使各组件可以独立演进和灵活组合。这是 PRISM 能够支持 12 种方法 + 2 种骨干 + 4 种精度模式的技术基础。
 2. **消费级硬件的极致优化可以打开更广阔的参与面**：降低硬件门槛不只是"省钱"的问题——它让小实验室、个人研究者甚至学生都能参与到前沿研究，这对整个领域的人才培养和创新活力有深远影响。
-3. **研究基础设施的标准化是领域成熟度的标志**：当一个领域从"手工打造每个实验"转向"标准化基础设施+插件式扩展"时，意味着该领域进入了工程化成熟阶段。[Harness Engineering 全景](../ch05/120-harness-engineering.html) 中提到的 AI 工程化趋势，在 MCIT 领域以 PRISM 的形式得到了充分体现。
+3. **研究基础设施的标准化是领域成熟度的标志**：当一个领域从"手工打造每个实验"转向"标准化基础设施+插件式扩展"时，意味着该领域进入了工程化成熟阶段。[Harness Engineering 全景](ch05/120-harness-engineering.html) 中提到的 AI 工程化趋势，在 MCIT 领域以 PRISM 的形式得到了充分体现。
 
 ## 实践启示
 
@@ -70,12 +70,12 @@ PRISM 的工程化思路对 AI 研究基础设施的建设有重要启示：
 
 ## 相关实体
 
-- [Agent Harness 场景](../ch05/058-agent-harness.html)
-- [Harness Engineering 2026 全景](../ch05/120-harness-engineering.html)
+- [Agent Harness 场景](ch03/035-agent.html)
+- [Harness Engineering 2026 全景](ch05/120-harness-engineering.html)
 - [Fine-tuning 工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemo-automodel-fine-tuning.md)
-- [多模态评估器](ch01/305-mllm-as-judge.html)
-- [Agent 评测方法论](../ch03/035-agent.html)
-- [BAAI ORCA 世界模型](../ch05/094-ai.html)
+- [多模态评估器](ch01/1274-llm.html)
+- [Agent 评测方法论](ch03/035-agent.html)
+- [BAAI ORCA 世界模型](ch05/094-ai.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

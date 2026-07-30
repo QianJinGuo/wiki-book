@@ -30,11 +30,11 @@ Vibe Coding 放大了缺乏工程约束的风险：没有版本控制的迭代�
 
 ## 相关实体
 
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [Vibe Coding and Agentic Engineering Convergence: Simon Willison Interview](../ch04/451-vibe-coding-agentic-engineering.html)
-- [无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时](../ch01/913-20.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
+- [Vibe Coding and Agentic Engineering Convergence: Simon Willison Interview](ch09/047-coding-agent.html)
+- [无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时](ch01/913-20.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 
 ---
 

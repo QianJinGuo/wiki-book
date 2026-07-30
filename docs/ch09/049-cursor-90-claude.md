@@ -99,9 +99,9 @@ eval 的核心价值不是衡量，而是**对齐团队认知**：当一个团�
 
 ## 与 Wiki 已有内容的关联
 - 补充 [Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) 的 Anthropic 内部视角（OpenClaw 限制订阅用户使用的背景逻辑）
-- 补充 [Claude Code Prompt Context Harness](ch09/061-claude-code-prompt.html) 的产品方法论维度（日更发布、研究预览、eval 驱动）
+- 补充 [Claude Code Prompt Context Harness](ch03/077-claude-code.html) 的产品方法论维度（日更发布、研究预览、eval 驱动）
 - 补充 Claude Cowork 的使用边界和使用场景（Cat Wu 一手用例）
-- 为 [Agent Self Improvement Six Mechanisms](../ch03/035-agent.html) 提供企业级 Agent 内部工作流参考
+- 为 [Agent Self Improvement Six Mechanisms](ch03/035-agent.html) 提供企业级 Agent 内部工作流参考
 
 ## 评分维度
 | 维度 | 分数 | 理由 |
@@ -111,7 +111,7 @@ eval 的核心价值不是衡量，而是**对齐团队认知**：当一个团�
 | **总分** | **81** | 强烈推荐入库 |
 
 ## 相关实体
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/077-claude-code.html)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](ch03/077-claude-code.html)
 
 ---
 

@@ -69,9 +69,9 @@ KAUST + 吉林大学 + Jürgen Schmidhuber 团队于 2026 年 7 月发表的系�
 
 ## 相关实体
 
-- [DataFlow-Harness](../ch05/009-harness.html)
-- [Harness Engineering](../ch05/120-harness-engineering.html)
-- [Harness Engineering & Self-Improvement Survey (Lilian Weng)](../ch05/120-harness-engineering.html)
+- [DataFlow-Harness](ch03/035-agent.html)
+- [Harness Engineering](ch05/120-harness-engineering.html)
+- [Harness Engineering & Self-Improvement Survey (Lilian Weng)](ch05/120-harness-engineering.html)
 
 ---
 

@@ -75,26 +75,26 @@ OpenCLAW 设计之初主要面向个人用户，但随着多客户场景需求�
 - **跨境部署与合规**：如果面向全球用户提供服务，需要考虑数据驻留要求（GDPR、数据本地化等），此时 Serverless 部署形态的多租户架构更具优势
 
 ## 相关概念
-- → [Agent Harness Architecture](../ch05/058-agent-harness.html)
+- → [Agent Harness Architecture](ch03/035-agent.html)
 - → [Multi Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1036-openclaw-agent.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](ch03/035-agent.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/077-claude-code.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/271-skill.html)
-- [四种 Sub Agent 模式](../ch03/035-agent.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/397-agent-skills.html)
+- [四种 Sub Agent 模式](ch03/035-agent.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/271-skill.html)
 ---
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-comprehensive-guide-32k-chars.md)
 
 ## 相关实体
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/235-openclaw.html)
-- [Harness Engineering 全面解读 — 从 Prompt 到 Context 再到 Harness 的三次演进](../ch05/120-harness-engineering.html)
-- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/235-openclaw.html)
-- [Hermes Agent vs OpenClaw 对比分析](../ch03/095-hermes-agent.html)
-- [AIAIGC峰会嘉宾阵容](ch04/528-aiaigc.html)
-- [OpenClaw 多智能体团队搭建实战经验](ch04/047-openclaw-multi-agent-team-practice-v2.html)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](ch11/235-openclaw.html)
+- [Harness Engineering 全面解读 — 从 Prompt 到 Context 再到 Harness 的三次演进](ch05/120-harness-engineering.html)
+- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](ch11/235-openclaw.html)
+- [Hermes Agent vs OpenClaw 对比分析](ch03/095-hermes-agent.html)
+- [AIAIGC峰会嘉宾阵容](ch05/094-ai.html)
+- [OpenClaw 多智能体团队搭建实战经验](ch03/035-agent.html)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/271-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
 

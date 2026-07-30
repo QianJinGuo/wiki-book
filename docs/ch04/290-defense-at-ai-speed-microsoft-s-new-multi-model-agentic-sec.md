@@ -62,7 +62,7 @@ MDASH 的设计哲学是**管道是产品，模型是输入之一**。整个系�
 **多模型 ensemble 作为防御姿态**：单一模型 harness 存在系统性盲区（跨文件推理、非平凡控制流、长生命周期依赖）；ensemble 架构通过 disagreement-as-signal 的方式实际上内置了交叉验证机制 。
 ## 相关实体
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md)
-- [Where Openclaw Security Is Heading Openclaw Blog](../ch12/032-where-openclaw-security-is-heading-openclaw-blog.html)
+- [Where Openclaw Security Is Heading Openclaw Blog](ch12/032-where-openclaw-security-is-heading-openclaw-blog.html)
 - [Disgruntled Researcher Microsoft Zero Days](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
 - [Microsoft Zero Days Researcher Disgruntled](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled.md)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md)
@@ -70,7 +70,7 @@ MDASH 的设计哲学是**管道是产品，模型是输入之一**。整个系�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/defense_at_ai_speed_microsofts_new_multi.md)
 
 - [The Agency Model Dangers](https://github.com/QianJinGuo/wiki/blob/main/concepts/the-agency-model-dangers.md)
-- [企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取](../ch03/035-agent.html)
+- [企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取](ch05/094-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

@@ -46,9 +46,9 @@ Batch 多样性 > Batch 大小：10 diverse 任务在 ID 和 OOD 上均达到最
 
 - [Lilian Weng Harness Engineering for Self-Improvement](ch05/120-harness-engineering.html)
 - [Harness Engineering for Self-Improvement 研究全景](ch05/120-harness-engineering.html)
-- [Agent Self-Improvement 六种机制](../ch03/035-agent.html)
-- [AgentScope: 企业级自进化 Agent Harness](ch05/058-agent-harness.html)
-- [AREAL-2: Agentic RL 在线学习与自进化](../ch04/327-agentic-rl.html)
+- [Agent Self-Improvement 六种机制](ch03/035-agent.html)
+- [AgentScope: 企业级自进化 Agent Harness](ch03/035-agent.html)
+- [AREAL-2: Agentic RL 在线学习与自进化](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/seagym-self-evolving-agent-evaluation-environment-tsinghua-2026.md)
 

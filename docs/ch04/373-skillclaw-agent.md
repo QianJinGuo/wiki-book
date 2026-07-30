@@ -15,9 +15,9 @@
 ## 相关实体
 - [Skillclaw Alibaba Paperagent](ch04/271-skill.html)
 - [Skillclaw Collective Intelligence](ch04/271-skill.html)
-- [Claude Code Search Architecture Tencent 2026](../ch03/077-claude-code.html)
+- [Claude Code Search Architecture Tencent 2026](ch03/077-claude-code.html)
 - [Perplexity Search As Code Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-search-as-code-generation.md)
-- [Ai Agent Engineer Capability Map](ch04/298-ai-agent.html)
+- [Ai Agent Engineer Capability Map](ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillclaw.md)
 

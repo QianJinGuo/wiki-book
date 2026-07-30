@@ -53,10 +53,10 @@ MiniCPM-V 4.6（1.3B）的核心价值主张是"在端侧可运行的GPT-4V级�
 - `MiniCPM微信解析` — 面壁多模态模型的完整解析
 
 ## 相关实体
-- [Hermes Agent Closed Learning Loop](../ch03/095-hermes-agent.html)
+- [Hermes Agent Closed Learning Loop](ch03/095-hermes-agent.html)
 - [How Open Model Ecosystems Compound](ch01/917-how-open-model-ecosystems-compound.html)
 - [Factory Mission Multi Agent Architecture](ch01/1235-factory-mission-multi-agent-architecture.html)
-- [Agentium Agent Framework](ch01/1242-agentium-agent.html)
+- [Agentium Agent Framework](ch03/035-agent.html)
 - [Cheriot Ibex Memory Safety Hardware Enforcement](https://github.com/QianJinGuo/wiki/blob/main/entities/cheriot-ibex-memory-safety-hardware-enforcement.md)
 
 ---

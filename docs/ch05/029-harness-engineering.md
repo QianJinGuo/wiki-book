@@ -221,10 +221,10 @@ Harness Engineering的六层架构（Rule/Skill/Sub Agent/Workflow/Scripts/MCP�
 
 ## 相关实体
 - [Harness Engineering Alibaba Java Case Study](ch05/120-harness-engineering.html)
-- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](ch05/120-harness-engineering.html)
-- [Agent Harness Engineering Survey 2026](ch05/120-harness-engineering.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch05/120-harness-engineering.html)
-- [Baidu Comate Coding Agent Feedback Loop Wanpeng](../ch09/047-coding-agent.html)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](ch05/094-ai.html)
+- [Agent Harness Engineering Survey 2026](ch03/035-agent.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch05/094-ai.html)
+- [Baidu Comate Coding Agent Feedback Loop Wanpeng](ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-jk-launcher-baijiajie.md)
 

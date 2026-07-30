@@ -261,7 +261,7 @@ GUI Agent 的感知模型是屏幕截图，动作空间是点击/滑动/输入�
 
 核心原因在于：MobileGym 仿真的是**状态转换逻辑**而非像素级视觉外观。Agent 在 MobileGym 中学习到的是"在某个界面执行某个操作后，目标状态会如何变化"——这与真实手机的逻辑完全一致，因为两者面对的是相同的 App 业务逻辑（微信消息发送、支付宝转账、小红书点赞）。
 
-[Se Ga Memory Augmented Self Evolution Gui Agents](../ch03/035-agent.html) 讨论的记忆增强自我进化框架同样依赖环境状态的可观测性和可复现性——这与 MobileGym 的 JSON 状态架构在哲学上高度一致，都是通过**结构化环境状态**来支撑 Agent 的学习和推理。
+[Se Ga Memory Augmented Self Evolution Gui Agents](ch03/035-agent.html) 讨论的记忆增强自我进化框架同样依赖环境状态的可观测性和可复现性——这与 MobileGym 的 JSON 状态架构在哲学上高度一致，都是通过**结构化环境状态**来支撑 Agent 的学习和推理。
 
 ## 实践启示
 
@@ -293,13 +293,13 @@ USE 指标让"顺手作恶"第一次可被量化捕获。建议在 Mobile GUI Ag
 
 MobileGym 证明了**浏览器内仿真**是实现高并发、低成本、移动端 App 覆盖的最优工程路径。相比原生模拟器，浏览器技术栈具备：快速启动（3s vs 分钟级）、低内存（400MB vs 4.5GB+）、天然支持 Web 技术栈 App 仿真、以及跨平台一致性等优势。
 
-**落地建议**：对于正在搭建 Mobile GUI Agent 基础设施的团队，优先考虑基于 Chromium/WebKit 的浏览器仿真路线，而非传统的安卓模拟器路线。MobileGym 的技术报告和开源代码（github.com/Purewhiter/mobilegym）提供了可直接参考的实现路径。同时关注 [Agent Harness Architecture Design Production Guide](../ch05/058-agent-harness.html) 中关于 Harness Architecture 的设计原则，可以在 MobileGym 之上构建更复杂的 Agent 训练和评测工作流。
+**落地建议**：对于正在搭建 Mobile GUI Agent 基础设施的团队，优先考虑基于 Chromium/WebKit 的浏览器仿真路线，而非传统的安卓模拟器路线。MobileGym 的技术报告和开源代码（github.com/Purewhiter/mobilegym）提供了可直接参考的实现路径。同时关注 [Agent Harness Architecture Design Production Guide](ch03/035-agent.html) 中关于 Harness Architecture 的设计原则，可以在 MobileGym 之上构建更复杂的 Agent 训练和评测工作流。
 
 ---
 
 ## 相关实体
 
-- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](../ch01/1295-icml-2026.html)
+- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](ch05/094-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mobilegym-cas-mobile-agent-benchmark.md)
 

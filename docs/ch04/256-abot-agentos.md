@@ -21,16 +21,16 @@
 | 组件 | 功能 | 类似概念 |
 |------|------|---------|
 | Edge-Cloud LLM Routing | 边端低延迟 ↔ 云端强推理动态权衡 | MoE routing |
-| Agent Harness | 推理→执行→验证闭环 | [Loop Engineering](../ch05/004-loop-engineering.html) 的具身实现 |
+| Agent Harness | 推理→执行→验证闭环 | [Loop Engineering](ch05/094-ai.html) 的具身实现 |
 | Skills and Tools Layer | 抽象导航/操作/运动/视觉/对话 | MCP / 工具抽象 |
-| Multi-modal Memory | 图记忆（实体/事件/视觉/时空/溯源） | [Context Engineering Memory 层](../ch05/058-agent-harness.html) |
+| Multi-modal Memory | 图记忆（实体/事件/视觉/时空/溯源） | [Context Engineering Memory 层](ch03/035-agent.html) |
 | Robot Hardware Interface | 异构本体适配 | 硬件抽象层 |
 
 ### 2. Agent Harness：具身版的推理-执行-验证闭环
 
 具身任务中 LLM 直接调用工具不够（机器人可能"以为"走完了实际还在原地）。Agent Harness 引入 **Verifier** 组件对执行结果进行物理世界验证，形成闭环：Main LLM → Skill Runner → Verifier → 反馈到推理。
 
-与 [Loop Engineering](../ch05/004-loop-engineering.html) 中的 Loop/Harness 概念高度一致，但在具身领域增加了**物理世界验证**这一不可或缺的环节（Verifier）。
+与 [Loop Engineering](ch05/094-ai.html) 中的 Loop/Harness 概念高度一致，但在具身领域增加了**物理世界验证**这一不可或缺的环节（Verifier）。
 
 ### 3. 多模态图记忆系统
 
@@ -55,9 +55,9 @@
 
 ## 与现有 wiki 知识的关系
 
-- **具身化 Loop/Harness**：[Loop Engineering 实体](../ch05/004-loop-engineering.html) 讨论了 Graph/Loop/Harness 三层概念。ABot-AgentOS 是 Loop 概念在**物理世界**的具身实现——增加了物理验证（Verifier）这一关键环节
+- **具身化 Loop/Harness**：[Loop Engineering 实体](ch05/094-ai.html) 讨论了 Graph/Loop/Harness 三层概念。ABot-AgentOS 是 Loop 概念在**物理世界**的具身实现——增加了物理验证（Verifier）这一关键环节
 - **填补空白**：wiki 此前没有机器人/具身 AI 领域的内容。ABot-AgentOS 作为 Alibaba 系 1st-party 的完整系统级方案，填补了这一维度
-- **记忆系统另一分支**：[WorkBuddy](../ch05/058-agent-harness.html) 讨论了 Context Engineering 中的记忆分类（短期/长期/工作/情景/外部），ABot-AgentOS 提供了**多模态图记忆**这一具体实现方案
+- **记忆系统另一分支**：[WorkBuddy](ch03/035-agent.html) 讨论了 Context Engineering 中的记忆分类（短期/长期/工作/情景/外部），ABot-AgentOS 提供了**多模态图记忆**这一具体实现方案
 
 ---
 
@@ -112,9 +112,9 @@ ABot-AgentOS 的自进化机制不是简单的模型微调，而是将每个评�
 
 ## 延伸阅读
 
-- [Loop Engineering 会是 AI 的下个关键词吗？](../ch05/004-loop-engineering.html) — Loop/Harness/Graph 三层概念
-- [WorkBuddy：LLM 产品实践](../ch05/058-agent-harness.html) — Context Engineering 和 Memory 五类分类
-- [后端系统「AI 知识库体系」建设实践](../ch05/094-ai.html) — Alibaba 的另一篇知识库方法论姊妹篇
+- [Loop Engineering 会是 AI 的下个关键词吗？](ch05/094-ai.html) — Loop/Harness/Graph 三层概念
+- [WorkBuddy：LLM 产品实践](ch03/035-agent.html) — Context Engineering 和 Memory 五类分类
+- [后端系统「AI 知识库体系」建设实践](ch05/094-ai.html) — Alibaba 的另一篇知识库方法论姊妹篇
 - [ABot-AgentOS arXiv](https://arxiv.org/abs/2607.10350) | [GitHub](https://github.com/amap-cvlab/ABot-AgentOS) | [项目主页](https://amap-cvlab.github.io/ABot-AgentOS)
 
 ---
