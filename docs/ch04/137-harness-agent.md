@@ -112,7 +112,7 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 
 ## 相关实体
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/077-claude-code.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1005-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/976-claude.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/035-agent.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
@@ -125,7 +125,7 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/077-claude-code.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/396-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/397-agent-skills.html)
 - [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)

@@ -51,7 +51,7 @@ Higress已在多种环境中展现出足以投入生产的可靠性，企业采�
 ## 相关实体
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](ch11/080-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
 - aigatewayproductionindex.md-1
-- [Hiclaw V110 K8S Hermes Worker](../ch01/1240-0.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/1243-0.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/higress-cncf-sandbox-ingress-nginx-replacement.md)
 

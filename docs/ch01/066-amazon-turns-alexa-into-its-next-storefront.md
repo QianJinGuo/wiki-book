@@ -12,7 +12,7 @@
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/069-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
 - [Notion Ai Agents](../ch04/298-ai-agent.html)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/098-code-simulation-for-enterprise-engineering-playerzero.html)
-- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/1240-0.html)
+- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/1243-0.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 

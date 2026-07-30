@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [dean ball on open models and government control](ch01/840-dean-ball-on-open-models-and-government-control.html)
+- [dean ball on open models and government control](ch01/842-dean-ball-on-open-models-and-government-control.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/my-bets-on-open-models-mid-2026.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)

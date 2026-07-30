@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3496 篇编撰实体系统编撰的开源读物。
+> 全球第一部基于 3502 篇编撰实体系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,8 +10,8 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1534 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1254 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1537 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1257 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 496 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 168 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 44 篇 |
@@ -20,7 +20,7 @@
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1359 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1362 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ 快手首个打工人Agent
   - ⭐ 这个五一节我做了个总结，在 2 年多的创业里，我一共做了 25 个 AI 项目
-  - ... 共 **1359** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1362** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 39 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **136** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1534 篇**
+> 📖 **本篇共 1537 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 730 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 733 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ Building AI Agents in Accounting
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
-  - ... 共 **730** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **733** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 136 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -156,7 +156,7 @@
   - ⭐⭐ RAG Chunk Embedding Rerank Pipeline
   - ... 共 **34** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1254 篇**
+> 📖 **本篇共 1257 篇**
 
 ---
 
@@ -308,6 +308,6 @@
 
 ---
 
-**📊 全书收录：3496 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3502 篇编撰实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-07-30 | 来源: ~/wiki/entities/
+生成时间: 2026-07-31 | 来源: ~/wiki/entities/

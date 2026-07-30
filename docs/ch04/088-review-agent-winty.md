@@ -144,7 +144,7 @@ Review Agent 优先 patch 已有的 Memory/Skill，避免了"同一个事实被�
 
 ## 相关实体
 - [Skill 系统](../ch07/017-hermes-skill.html) — Skill 的触发条件、Patch 机制、版本管理
-- [Hermes 九模块架构](../ch01/740-9.html) — 架构全图，Review Agent 在第 7 模块
+- [Hermes 九模块架构](../ch01/742-9.html) — 架构全图，Review Agent 在第 7 模块
 
 ---
 

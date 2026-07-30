@@ -14,6 +14,19 @@ RUN mkdocs build
 # Remove old ch*/ subdirectories (MkDocs generates both flat and nested)
 RUN cd site && for d in ch01 ch02 ch03 ch04 ch05 ch06 ch07 ch08 ch09 ch10 ch11 ch12 ch13 ch14 ch15 ch16 ch17 ch18 ch19 ch20 references; do rm -rf "$d" 2>/dev/null; done
 
+# Build neighbor graph for RAG
+COPY scripts/build-neighbor-graph.py /tmp/
+RUN if [ -f "site/search/search_index.json" ]; then \
+      python3 /tmp/build-neighbor-graph.py \
+        --input site/search/search_index.json \
+        --output site/assets/neighbor_graph.json \
+        --top-k 20; \
+    fi
+
+# Slim search index for faster loading
+COPY scripts/slim-search-index.py /tmp/
+RUN python3 /tmp/slim-search-index.py
+
 # -- Serve stage --
 FROM nginx:alpine
 

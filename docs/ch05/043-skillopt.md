@@ -109,7 +109,7 @@ SkillOpt 把 skill 文件变成**可训练 / 可验证 / 可审计的工程资�
 - [Agent Skill 高质量编写规范](../ch04/269-agent-skill.html)
 - [Agent 可靠性的工程解法：Skillify 持续改进](../ch04/271-skill.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html) —— SkillOpt 是一种新路径
-- [Agent Skills 系统性综述](../ch04/396-agent-skills.html)
+- [Agent Skills 系统性综述](../ch04/397-agent-skills.html)
 
 ## 第 2 来源 — 实战教程（@hooeem）
 

@@ -10,8 +10,8 @@ Building for the Rising Complexity of Agentic Systems with Extreme Co&#x2d;Desig
 ## 相关实体
 - [Nvidia Agentic Systems Extreme Co Design](ch04/237-agentic.html)
 - [Nvidia Multimodal Rag Knowledge Systems](../ch01/223-rag.html)
-- [Nvidia Agentic Ai Subsurface Engineering](ch04/373-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/410-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Agentic Ai Subsurface Engineering](ch04/374-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/411-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Nvidia Telco Reasoning Models Nemo](../ch01/209-nvidia-telco-reasoning-models-nemo.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-extreme-co-design-agentic-systems.md)

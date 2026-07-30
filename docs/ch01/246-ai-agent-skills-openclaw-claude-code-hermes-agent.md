@@ -126,7 +126,7 @@ Hermes 的模型在信任方面处于中间地带——Skills 由你的 Agent �
 **强制结构化**。即使框架不要求，也应该用统一的格式组织 Skill 内容：问题描述（什么情况下用）、执行步骤（怎么做）、约束条件（什么情况下不要用）、预期输出（做完后应该是什么样）。
 **定期淘汰**。Skills 库需要新陈代谢。当某个 Skill 长期未被调用，或者它描述的工作流程已经被 Agent 熟练掌握时，应该将其归档或删除。低质量的 Skills 积累会降低 Agent 的判断效率。
 ## 相关实体
-- [Openclaw Agent Loop Design Patterns](ch01/1033-openclaw-agent.html)
+- [Openclaw Agent Loop Design Patterns](ch01/1036-openclaw-agent.html)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/235-openclaw.html)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/120-harness-engineering.html)
 - [Claude Code Source Architecture](../ch03/077-claude-code.html)

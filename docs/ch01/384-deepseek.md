@@ -18,10 +18,10 @@
 说起来，赶在五一长假之前丢个重磅论文，这风格还真挺特么DeepSeek的，熟悉的味道又回来了。以及，这次内容真的太长了，建议你可以先收藏了，假期里无聊的时候慢慢读，我这五一期间尽量...尽量不卷了，不给各位增加阅读负担。
 
 ## 相关实体
-- [Pi Mono Github](ch01/832-pi-mono-github.html)
+- [Pi Mono Github](ch01/834-pi-mono-github.html)
 - [From Prompt To Harness Claude Official](../ch05/009-harness.html)
 - [Cursor Harness Model Production Floor](ch01/265-cursor-harness-model-production-floor.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/449-vibe-coding-agentic-engineering.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/451-vibe-coding-agentic-engineering.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md)

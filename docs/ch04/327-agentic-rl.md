@@ -110,9 +110,9 @@ Wolfe 框架未深入讨论的治理层问题：训练分数上升不能直接�
 
 ## 关联
 
-- [Agentic RL: Token-In, Token-Out Done Right](ch04/722-agentic-rl-token-in-token-out-done-right.html) — 同主题早期文章，本文是更全面的系统综述
+- [Agentic RL: Token-In, Token-Out Done Right](ch04/724-agentic-rl-token-in-token-out-done-right.html) — 同主题早期文章，本文是更全面的系统综述
 - [港中文 SLIM：动态技能生命周期管理](ch04/327-agentic-rl.html) — Agentic RL 中的技能管理
-- [LLM-as-a-Verifier](../ch01/625-llm.html) — Agent 轨迹验证方法
+- [LLM-as-a-Verifier](../ch01/1274-llm.html) — Agent 轨迹验证方法
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — harness 设计在 Agentic RL 中的关键作用
 
 ---

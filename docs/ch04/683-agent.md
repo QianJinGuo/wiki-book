@@ -1,62 +1,50 @@
-# 万字长文拆解 Agent 架构设计（二）：工具系统设计
+# Agent落地真相：协议、成本与进化——关于智能体从能跑通到能投产的讨论
 
-## Ch04.683 万字长文拆解 Agent 架构设计（二）：工具系统设计
+## Ch04.683 Agent落地真相：协议、成本与进化——关于智能体从能跑通到能投产的讨论
 
-> 📊 Level ⭐⭐ | 3.0KB | `entities/claude-code-tool-system-architecture-deep-dive.md`
+> 📊 Level ⭐⭐ | 3.1KB | `entities/agent落地真相-协议-成本与进化-关于智能体从能跑通到能投产的讨论.md`
 
-# Claude Code 工具系统架构深度拆解
+# Agent落地真相：协议、成本与进化——关于智能体从能跑通到能投产的讨论
 
-> Claude Code 的工具系统不是简单的"函数注册表 + 调用分发器"，而是包含权限分级、运行时风险评估、子 Agent 递归和两阶段安全分类器的完整架构。
+> **v×c=64** | value=8 confidence=8 stars=4 | 2026-07-05
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-tool-system-architecture-source-code.md)
+---
+source: wechat
+source_url: https://mp.weixin.qq.com/s/CyA5UUXhH7MzLwes1XPgnQ
+ingested: 2026-07-05
+source_published: 2026年6月30日 17:00
+---
 
-## 核心组件
+直播推荐  
 
-### AgentTool 接口
+从金融风控到数据语义，再到自进化工程，谈谈智能体的“进化与防退化”
 
-每个工具的基础契约，核心字段：
+扫码加入直播交流群，更有精华资料免费领！
 
-- **name/description**：注入系统提示，让模型知道何时调用
-- **inputSchema**：JSON Schema，模型按此格式输出参数
-- **defaultPermission**：权限等级（auto/confirm/block），工具自带属性
-- **execute()**：执行逻辑
-- **assessRisk()**：可选，运行前快速风险评估
+2026年6月25日晚，DataFun 技术社区举办了一场关于 Agent 智能体企业级落地的深度对话。主持人古永丰——FoundationAgents 开源社区核心成员、DeepWisdom 学术研究员——与两位来自一线实战派的技术负责人：深圳价值网络科技技术副总监况雨平，以及碧桂园服务集团技术总监毛卓，围绕 Agent 落地的三个核心命题——协议协作、自进化能力与成本控制——展开了一场长达90分钟的坦诚讨论。
 
-### 三档权限分级
+这场对话没有回避任何尖锐问题：Agent 跑通了 Demo 却无法投产，到底缺什么？60%以上的 Token 都是无效消耗，这是技术问题还是管理问题？当 AI Coding 大规模铺开，产品经理、开发、测试的角色究竟谁被强化、谁被弱化？三位嘉宾从协议层、工程层、管理层三个维度，用各自的实战经验，描绘了 Agent 在理想与现实之间的真实图景。
 
-| 等级 | 说明 | 示例 |
-|------|------|------|
-| **auto** | 自动执行（只读/无副作用） | ReadFile |
-| **confirm** | 默认需用户确认 | WriteFile |
-| **block** | 默认拦截，需明确授权 | Bash |
+本文完整记录了这场讨论的核心内容，力求以对话的形式还原现场的思辨氛围，为正在推动 AI 落地的技术团队提供有温度的实战参考。
 
-运行时风险评估 `assessRisk()` 可动态覆盖默认权限。例如 Bash 对 `ls` 返回 auto，对 `rm -rf /` 返回 block。
+扫码报名
 
-### 子 Agent 作为普通工具
+**01  
+**
 
-Claude Code 将子 Agent 定义为标准 `AgentTool`：
+**话题一：Agent 进入业务，最被忽视的短板是什么？  
+**
 
-- 和 ReadFile 在同一个工具列表里，父 Agent 通过 tool_use 调用
-- 子 Agent 的 `execute()` 内部是一个完整的 Agent 循环
-- 递归 Agent 没有增加额外的架构复杂度
+当主持人古永丰抛出第一个问题时，三位嘉宾几乎不约而同地指向了同一个方向——但角度完全不同。
 
-### 两阶段安全分类器
+毛卓从成本维度切入，语气沉稳却直击要害：“对传统企业来说，一个 Agent 能不能落地，首先
 
-1. **Phase 1（快速分类）**：轻量级规则匹配，拦截明显有害命令
-2. **Phase 2（LLM 分类）**：调用 LLM 分析意图，输出 SAFE/UNSAFE
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent落地真相-协议-成本与进化-关于智能体从能跑通到能投产的讨论.md)
 
-## 设计原则
-
-1. **权限绑定工具而非用户/场景**：defaultPermission 是工具本身属性
-2. **运行时覆盖优于静态配置**：assessRisk() 根据实际输入动态调整
-3. **子 Agent 即工具**：复用工具抽象，无需特化框架
-4. **安全 vs 效率的工程平衡**：先快速分类器过滤，再用 LLM 深度分析
-5. **默认安全**：block 级工具不会被绕过
-
+---
 ## 关联
-
-- [AI Agent 工具数量陷阱](ch04/298-ai-agent.html) — 5 个边界清楚的工具胜过 20 个模糊工具，与 Claude Code 工具设计互补
-- [Agent Harness 架构设计与实现](../ch05/058-agent-harness.html) — 生产级 Agent 系统设计参考
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

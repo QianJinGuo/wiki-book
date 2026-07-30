@@ -167,9 +167,9 @@ DynamoDB 的优势在于弹性扩展和细粒度的分区键设计，适合租�
 ---
 
 ## 相关实体
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/558-amazon-bedrock-agentcore.html)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/558-amazon-bedrock-agentcore.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/558-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/561-amazon-bedrock-agentcore.html)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/298-ai-agent.html)
 - [Amazon Bedrock Agentic Payments Guardrails](../ch11/294-amazon-bedrock.html)
 

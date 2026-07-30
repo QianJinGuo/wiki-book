@@ -215,7 +215,7 @@ Skills + Shell + 开放网络访问是高风险组合。  推荐默认安全姿�
 Skills 同时适用于托管 Shell 和本地 Shell 模式，且在同一 API 下保持行为一致。  推荐的开发节奏是：本地环境下快速迭代技能定义和示例 → 验证无误后迁移到托管容器获得可重复性和部署一致性。对于企业级技能，建议在 CI/CD 流程中加入"本地验证 → 托管验证"的双阶段门禁。
 
 ## 相关主题
-- [Skills Anthropic Openai Comparison Frontend Design](../ch01/717-skills-anthropic-openai-comparison-frontend-design.html) — Anthropic/Google Skills 设计模式对比
+- [Skills Anthropic Openai Comparison Frontend Design](../ch01/719-skills-anthropic-openai-comparison-frontend-design.html) — Anthropic/Google Skills 设计模式对比
 - [Claude Code Openclaw Memory Comparison](../ch03/077-claude-code.html) — OpenClaw vs Claude Code 内存对比
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md) — 上下文窗口管理方案对比
 - [Harness Engineering Long Term Agent Tasks](ch05/120-harness-engineering.html) — 长周期 Agent 的 Harness 设计

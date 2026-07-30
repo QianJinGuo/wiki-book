@@ -177,7 +177,7 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [Agent Harness 解析：智能体架构深度拆解](../ch05/058-agent-harness.html)
-- [From Agent Protocol to Harness Skill](ch04/426-from-agent-protocol-to-harness-skill.html)
+- [From Agent Protocol to Harness Skill](ch04/428-from-agent-protocol-to-harness-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/1-million-exposed-ai-services-hackernews.md)
 

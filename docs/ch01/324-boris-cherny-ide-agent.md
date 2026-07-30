@@ -179,9 +179,9 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](../ch03/035-agent.html)
 - [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [Anthropic 内部实践](ch01/740-9.html)
-- [DeepSeek V4 Flash Pro](ch01/1070-deepseek-v4-flash-pro.html)
-- [加速 LLM 模型加载与上下文窗口](ch01/1169-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
+- [Anthropic 内部实践](ch01/742-9.html)
+- [DeepSeek V4 Flash Pro](ch01/1073-deepseek-v4-flash-pro.html)
+- [加速 LLM 模型加载与上下文窗口](ch01/1172-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
 - [大型表格模型基础](../ch05/094-ai.html)
 
 ---

@@ -9,9 +9,10 @@
   var RAG_URL = "/rag-query";
 
   // ========== Provider 配置 ==========
-  var PRESETS = [
-    { name: "默认 (站点内置)", endpoint: "", apiKey: "", model: "" },
-    { name: "DeepSeek", endpoint: "https://api.deepseek.com/v1/chat/completions", apiKey: "", model: "deepseek-chat" },
+ var PRESETS = [
+   { name: "默认 (站点内置)", endpoint: "", apiKey: "", model: "" },
+   { name: "OpenCode (DeepSeek)", endpoint: "", apiKey: "", model: "deepseek-v4-flash-free", _provider: "opencode" },
+   { name: "DeepSeek", endpoint: "https://api.deepseek.com/v1/chat/completions", apiKey: "", model: "deepseek-chat" },
     { name: "讯飞星火", endpoint: "https://spark-api-open.xf-yun.com/v1/chat/completions", apiKey: "", model: "generalv3.5" },
     { name: "MiMo (OpenRouter)", endpoint: "https://openrouter.ai/api/v1/chat/completions", apiKey: "", model: "xiaomi/mimo-v2.5-pro" },
     { name: "OpenAI 兼容", endpoint: "", apiKey: "", model: "" }
@@ -21,9 +22,9 @@
     try {
       var saved = localStorage.getItem("ai-chat-config");
       if (saved) return JSON.parse(saved);
-    } catch(e) {}
-    return { endpoint: "", apiKey: "", model: "", ttsEndpoint: "", ttsKey: "", ttsModel: "" };
-  }
+   } catch(e) {}
+   return { endpoint: "", apiKey: "", model: "", ttsEndpoint: "", ttsKey: "", ttsModel: "", _provider: "" };
+ }
   function saveConfig(cfg) {
     try { localStorage.setItem("ai-chat-config", JSON.stringify(cfg)); } catch(e) {}
   }
@@ -58,21 +59,25 @@
   }
 
   // ========== API 调用 ==========
-  function chat(messages, onChunk, onDone, onError) {
-    var cfg = getConfig();
-    var endpoint = cfg.endpoint || PROXY_URL;
-    var headers = { "Content-Type": "application/json" };
-    if (cfg.apiKey) headers["Authorization"] = "Bearer " + cfg.apiKey;
+ function chat(messages, onChunk, onDone, onError) {
+   var cfg = getConfig();
+   var endpoint = cfg.endpoint || PROXY_URL;
+   var headers = { "Content-Type": "application/json" };
+   if (cfg.apiKey) headers["Authorization"] = "Bearer " + cfg.apiKey;
 
-    var body = {
-      messages: messages,
-      stream: true,
-      max_tokens: 2048,
-      temperature: 0.7
-    };
-    if (cfg.model) body.model = cfg.model;
+   var body = {
+     messages: messages,
+     stream: true,
+     max_tokens: 2048,
+     temperature: 0.7
+   };
+  if (cfg.model) body.model = cfg.model;
+   // 如果配置中有 _provider，传递给代理
+   if (!cfg.endpoint && cfg._provider) {
+     body._provider = cfg._provider;
+   }
 
-    fetch(endpoint, {
+   fetch(endpoint, {
       method: "POST",
       headers: headers,
       body: JSON.stringify(body)
@@ -294,17 +299,19 @@
     header.style.cursor = "grab";
 
     // 预设选择 → 自动填充
-    var presetSelect = panel.querySelector("#ai-cfg-preset");
-    if (presetSelect) {
-      presetSelect.addEventListener("change", function() {
-        var p = PRESETS[parseInt(presetSelect.value)];
-        if (p) {
-          panel.querySelector("#ai-cfg-endpoint").value = p.endpoint;
-          panel.querySelector("#ai-cfg-model").value = p.model;
-          if (p.apiKey) panel.querySelector("#ai-cfg-apikey").value = p.apiKey;
-        }
-      });
-    }
+   var presetSelect = panel.querySelector("#ai-cfg-preset");
+   if (presetSelect) {
+     presetSelect.addEventListener("change", function() {
+       var p = PRESETS[parseInt(presetSelect.value)];
+       if (p) {
+         panel.querySelector("#ai-cfg-endpoint").value = p.endpoint;
+         panel.querySelector("#ai-cfg-model").value = p.model;
+         if (p.apiKey) panel.querySelector("#ai-cfg-apikey").value = p.apiKey;
+         // 保存 _provider 到 data 属性
+         panel.dataset._provider = p._provider || "";
+       }
+     });
+   }
 
     // 事件委托
     panel.addEventListener("click", function(e) {
@@ -319,16 +326,19 @@
         if (settings) settings.style.display = settings.style.display === "none" ? "block" : "none";
       }
 
-      if (action === "save-config") {
-        var newCfg = {
-          endpoint: panel.querySelector("#ai-cfg-endpoint").value.trim(),
-          apiKey: panel.querySelector("#ai-cfg-apikey").value.trim(),
-          model: panel.querySelector("#ai-cfg-model").value.trim(),
-          ttsEndpoint: panel.querySelector("#ai-cfg-tts-endpoint").value.trim(),
-          ttsKey: panel.querySelector("#ai-cfg-tts-key").value.trim(),
-          ttsModel: panel.querySelector("#ai-cfg-tts-model").value.trim()
-        };
-        saveConfig(newCfg);
+     if (action === "save-config") {
+       var presetSelect = panel.querySelector("#ai-cfg-preset");
+       var preset = presetSelect ? PRESETS[parseInt(presetSelect.value)] : null;
+       var newCfg = {
+         endpoint: panel.querySelector("#ai-cfg-endpoint").value.trim(),
+         apiKey: panel.querySelector("#ai-cfg-apikey").value.trim(),
+         model: panel.querySelector("#ai-cfg-model").value.trim(),
+         ttsEndpoint: panel.querySelector("#ai-cfg-tts-endpoint").value.trim(),
+         ttsKey: panel.querySelector("#ai-cfg-tts-key").value.trim(),
+         ttsModel: panel.querySelector("#ai-cfg-tts-model").value.trim(),
+         _provider: preset && preset._provider ? preset._provider : ""
+       };
+       saveConfig(newCfg);
         var status = panel.querySelector(".ai-chat__form-status");
         if (status) { status.textContent = "已保存 ✓"; setTimeout(function() { status.textContent = ""; }, 2000); }
       }
