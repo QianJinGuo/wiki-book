@@ -12,6 +12,15 @@ n8n 发布的 2026 年企业 AI Agent 开发工具报告（第二版），由独
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 企业级 Agent 的定义
 
 报告明确区分了两个维度：

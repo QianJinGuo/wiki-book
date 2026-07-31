@@ -14,6 +14,21 @@ Thinking Machines Lab 发布了交互模型（Interaction Models）的研究预�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **交互不应是事后考虑**：AI 实验室过度追求自主能力，忽略了人类在循环中（human-in-the-loop）的协作价值
 - **时间对齐微回合**：200ms 块交错处理输入/输出，消除人工回合边界，实现真正的全双工交互
 - **无编码器早期融合**：音频直接以 dMel 输入，图像以 40×40 patch 编码，与 Transformer 联合训练，避免独立编码器的延迟开销

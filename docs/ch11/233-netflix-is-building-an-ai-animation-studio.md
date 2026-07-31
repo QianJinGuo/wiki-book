@@ -5,6 +5,20 @@
 > 📊 Level ⭐⭐ | 5.1KB | `entities/netflix-is-building-an-ai-animation-studio.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 - 来自 newsletter 推荐的优质文章
 - 评分: v×c = 49
 ## 相关实体

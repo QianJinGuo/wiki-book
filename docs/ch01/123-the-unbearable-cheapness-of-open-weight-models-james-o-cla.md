@@ -19,6 +19,21 @@ Are these models cheap because they are open weight and having hundreds or peopl
 
 ## How do you keep prices high for commodity products?
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 You manufacture scarcity. You sell luxury and premium branding. This is what OpenAI and Anthropic seem to be doing by gating ‘frontier’ model usage behind higher walls.
 
 This is how luxury brands have sold cars and hand bags forever. They are clubs and status symbols for the rich and not meant to be widely distributed.

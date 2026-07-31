@@ -26,6 +26,20 @@ type: entity
 - [Interconnects The Inevitable Need For An Open Model Consortium](ch01/1188-the-inevitable-need-for-an-open-model-consortium.html)
 ## 深度分析
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 术语污名化的系统性风险
 
 "蒸馏攻击"这一术语的选择绝非中立——它将一项在整个AI生态系统中无处不在的基础技术，与少数实体的越界行为强行绑定。这种语言策略与此前"开源"vs"开放权重"辩论中的术语磨损如出一辙：随着时间推移，专业区分消失，政策讨论中的词汇被简化为最粗糙的共识 。

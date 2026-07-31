@@ -10,6 +10,15 @@ Amazon Bedrock 现支持 MiniMax M2 系列三款开源权重模型（M2、M2.1�
 
 ## MiniMax M2 系列
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 MiniMax 是一家全球性 AI 技术公司，专注于多模态基础模型的高效架构研究。其 M2 系列采用 Mixture-of-Experts（MoE）架构，每个 token 仅激活一小部分参数，以较低推理成本提供大容量密集模型的知识能力。
 
 - **MiniMax M2**：首个推出的模型，具备强大多语言文本生成、扎实的推理编码能力，以及 100 万 token 上下文窗口。

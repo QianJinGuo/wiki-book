@@ -15,6 +15,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion.md)
 
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [Affirm Maps Road to $100B GMV With Card, AI Commerce](ch03/090-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.html)
 
 ## 深度分析

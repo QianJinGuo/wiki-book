@@ -13,6 +13,15 @@
 - **官方文章**: https://mp.weixin.qq.com/s/Xfsq8YDP7xkOLzbh1HwdjA
 
 ## 核心能力
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 | 能力 | 亮点 |
 |------|------|
 | 自我进化 | 模型自主构建Harness并驱动RL训练，100轮迭代+30%效果提升 |

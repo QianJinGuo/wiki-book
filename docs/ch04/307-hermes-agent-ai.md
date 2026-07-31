@@ -40,6 +40,21 @@ Hermes 的记忆系统由三个层级堆叠而成，每层解决不同层次的�
 
 ## 冻结快照模式：解决 Prefix Cache 失效问题
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 这是整个系统最精妙的设计。
 
 问题是：如果 Agent 在会话中途写入新记忆后立即更新系统提示，LLM 的 prefix cache 会整个失效。Prefix cache 是 Claude、GPT、Gemini 等现代 LLM API 的核心优化——同样的系统提示前缀会被缓存 KV，后续调用命中缓存的成本通常只有原价的 10%。

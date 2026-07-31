@@ -20,6 +20,15 @@ Apache RocketMQ 5.5.0 社区提案 RIP-83 定义的全新消息模型 LiteTopic 
 
 ## LiteTopic：AI 时代的核心创新
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 一句话概括：**在一个父 Topic 下动态创建百万级轻量子主题，每个子主题对应一个会话或一个 Agent**。
 
 ### Session-as-Topic 模型

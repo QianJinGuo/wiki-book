@@ -10,6 +10,16 @@
 小米SVOR视频消除技术，CVPR冠军代码开源。
 
 ## Key Points
+
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
 - CVPR冠军代码开源
 - 小米SVOR
 - 视频消除三大顽疾

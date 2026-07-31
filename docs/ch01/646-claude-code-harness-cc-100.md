@@ -10,6 +10,15 @@
 Claude Code创始人关于Harness和编程未来的观点。
 
 ## Key Points
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - Claude Code创始人观点
 - Harness重要性降低
 - 未来100行代码愿景

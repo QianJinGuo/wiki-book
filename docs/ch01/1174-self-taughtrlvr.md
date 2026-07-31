@@ -15,6 +15,20 @@
 1. # 让大模型学会「自己教自己」！
 2. 京东&中科院信工所连发三篇论文定义Self-TaughtRLVR
 ## 核心命题
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 Self-Taught RLVR系列研究核心：**如何让大模型自我指导，实现迭代演化？
 3. **RLSD（informed self）**：由特权信息增强的自身来教自己
 2.

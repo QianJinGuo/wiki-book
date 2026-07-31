@@ -42,6 +42,15 @@ vivo AI Lab 团队 投稿 量子位 | 公众号 QbitAI
 
 ## 方法：在静态数据中模拟在线反馈
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 我们将GUI导航建模为部分可观测马尔可夫决策过程  （POMDP）  ，SOLAR-RL由两个关键组件构成。
 
 - 离线轨迹重构（Offline Trajectory Reconstruction）

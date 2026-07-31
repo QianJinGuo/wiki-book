@@ -14,6 +14,15 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 - **MCP 的战略定位**：不是让 Agent 调用更多工具，而是标准化 Agent 与外部系统的连接方式——降低集成复杂度、提高安全性、简化权限管理
 - **12 模式覆盖 5 大领域**：工具交互面（远程优先、意图组织、薄交互面）、交互语义（内联 UI、引导输入、外部跳转）、认证凭证（可发现认证、Vault 托管）、上下文经济（按需加载、程序化调用）、打包分发（插件包、Server 分发 Skills）
 - **Claude Code 源码验证**：这些模式从 Claude Code 源码泄露事件中结合 Anthropic 官方 Agent Skills 指南提取，具有实际工程验证

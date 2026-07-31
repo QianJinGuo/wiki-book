@@ -14,6 +14,15 @@ Blue Dot Investors 与 FT Partners 联合发布的报告显示，全球前 100 �
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 1. 私人金融科技的规模超越
 
 报告的核心发现：

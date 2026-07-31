@@ -10,6 +10,15 @@
 OpenAI三个语音模型发布同传被杀死
 
 ## 关键要点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-three-voice-models-kill-simultaneous-translation.md)
 
 ## 深度分析

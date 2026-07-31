@@ -22,6 +22,15 @@ Skill = **可复用指令单元**。不是"工具"，是"知识的打包"[^1]。
 
 ## 两种类型：Reference vs Action
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 | 类型 | 目的 | 加载时机 | 典型用途 |
 |------|------|----------|----------|
 | Reference Skill | 贯穿 session 的知识 | Session 开始就加载 description，body 按需 | API 风格指南、术语表、合规要求 |

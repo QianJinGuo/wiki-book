@@ -14,6 +14,20 @@ Claude 没有跨会话记忆。每次新会话都从零开始，昨天花 20 分
 
 ## 六层配置体系
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 ### 1. CLAUDE.md 持续累积规则
 
 CLAUDE.md 应该随着每次错误不断扩充。关键是「从错误中学到的」这一节——每次纠正 Claude 后加一句「更新 CLAUDE.md」。

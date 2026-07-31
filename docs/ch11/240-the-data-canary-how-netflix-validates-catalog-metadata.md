@@ -2,6 +2,16 @@
 
 ## Ch11.240 The Data Canary: How Netflix Validates Catalog Metadata
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考]
+    TH --> AC[行动]
+    AC --> OB[观察]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+```
+
+
 > 📊 Level ⭐⭐ | 4.5KB | `entities/the-data-canary-how-netflix-validates-catalog-metadata.md`
 
 # The Data Canary: How Netflix Validates Catalog Metadata

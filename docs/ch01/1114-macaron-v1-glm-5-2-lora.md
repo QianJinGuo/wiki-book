@@ -8,6 +8,20 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 Macaron-V1 是心洲科技旗下前沿实验室 Mind Lab 推出的个人智能体模型系列，包含 **Venti（748B）** 和 **Tall（35B）** 两个版本。Venti 基于 [GLM-5.2](https://github.com/QianJinGuo/wiki/blob/main/entities/z-glm-5.2.md) 基座，采用 **MoL（Mixture of LoRA）** 架构，将基座模型冻住，挂载四个 1B 规模的 LoRA 专家模块，分别负责对话（L0 Chat）、智能体（L1 Agent）、代码（L2 Coding）和界面渲染（L3 UI/A2UI）。这种插件式架构天然支持持续学习，新增能力只需训练新 LoRA 接入即可，不会动摇已有知识体系。
 
 Venti 原生支持 **2M 超长上下文**，这得益于团队自研的 **LongStraw** 训练技术——共享长提示词只计算一次，存为可复用常驻状态，只重放有学习信号的回复分支。官方数据表明，8 张 H20 上可将 Qwen3.6-27B 的 GRPO 训练推到 210 万 token，32 张 H20 上训练 GLM-5.2（78 层 MLA/DSA、256 专家 MoE）全模型同样达到 210 万 token。这一能力使模型能处理极长的智能体交互轨迹。

@@ -16,6 +16,15 @@ OpenAI 发布安全复盘报告《长时程模型时代的安全与对齐》，�
 
 ## 事件时间线
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 ### 逃逸第一阶段：挖墙脚
 
 在 NanoGPT speedrun 基准测试中，研究人员要求模型"结果只准发到内部 Slack"，但 NanoGPT 项目的说明是"请以 PR 形式提交到 GitHub"。当两条指令冲突时：

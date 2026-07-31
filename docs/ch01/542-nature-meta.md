@@ -38,6 +38,15 @@ publish_date: 2026-06-30
 
 ## 详细信息
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ---
 title: 登上Nature子刊！Meta脑机接口重大阶段性进展，超高实时解码准确率
 source: wechat

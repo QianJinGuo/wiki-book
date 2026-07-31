@@ -14,6 +14,15 @@ LEAP 将形式化证明过程设计为 **Agentic 循环**：生成证明提议 �
 
 ## 关键结果
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 | 基准 | 结果 |
 |------|------|
 | **Lean-IMO-Bench** | 形式化求解率 **70%**（无需专用微调） |

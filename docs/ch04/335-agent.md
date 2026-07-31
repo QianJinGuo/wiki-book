@@ -41,6 +41,20 @@ source_url: https://mp.weixin.qq.com/s/kNZE9fzCvOi3Em6JlueB0g
 - [一次构建，随处复用：python 中的泛型仓库模式](ch04/617-python.html)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 本文从**环境工程**视角重新定义了企业级 Agent 的核心瓶颈：不是模型能力不足，而是**上下文供给能力**的缺失。与软件工程天然数字化不同，传统行业的 Agent 处于"半失明"状态——缺乏对真实业务环境的持续感知能力。
 文章提出的五大维度形成一条递进逻辑链：
 

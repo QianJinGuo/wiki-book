@@ -6,6 +6,15 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 **多租户Cognito User Pool的组合风险远超预期。** Doyensec团队在新加坡DEFCON DemoLabs分享的研究揭示了一个正在成为SaaS默认部署模式的架构：一个User Pool支撑多租户，每个租户自带外部IdP。这种组合将OIDC/SAML外部身份提供商注册、Cognito托管UI（或自定义登录页）、Lambda触发器链三个技术层叠加在一起，任何一层的配置疏漏都会在整个认证流程中产生连锁反应 。
 
 **PreSignUp_ExternalProvider是唯一的用户创建前安全闸门。** 在Cognito的众多触发器中，PreSignUp_ExternalProvider是唯一在用户记录被持久化之前执行的钩子。一旦攻击者在PreSignUp窗口内完成身份注入，即使后续的PostConfirmation等触发器检测到异常并阻断会话，用户记录本身已存在于User Pool中，攻击者仍可通过强制密码重置等路径获得非SSO认证能力。联邦登录不会触发migrate user、custom message、custom sender等触发器，进一步缩小了异常检测的覆盖范围 。

@@ -58,6 +58,15 @@ source_published: 2026-04-01
 
 ## 实践启示
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **Agent 设计**: 关注控制流与上下文工程的平衡，Harness 约束比模型能力更影响成功率
 2. **可观测性**: Agent 行为调试应优先检查工具定义和上下文质量
 3. **渐进式部署**: 从简单 ReAct 循环起步，逐步引入多 Agent 编排

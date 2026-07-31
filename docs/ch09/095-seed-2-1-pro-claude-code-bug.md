@@ -18,6 +18,15 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 模型混用的工程路径与行业意义
 
 Seed 2.1 Pro 接入 Claude Code 框架的过程展示了**模型即插即用（pluggable model）**的工程可行性。火山方舟提供的 Anthropic 协议兼容端点，使得任何符合该协议规范的模型都能无缝集成到 Claude Code 的开发工作流中。这对行业生态有深远影响：

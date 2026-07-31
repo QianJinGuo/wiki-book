@@ -14,6 +14,15 @@ Claude Code 团队 2026 年 6 月 30 日发布官方博客 "Getting started with
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - Loop 工程的核心不是让 Agent 多跑几轮，而是**人从哪个位置退出来，每退一步系统都要补上一段更清楚的工程边界**
 - 四种 loop 类型对应四个工程交接点：检查（Skill）→ 停止（/goal）→ 等待（/loop）→ 决策（/schedule & routine）
 - `/goal` 的评估器不读文件也不跑命令，只评估对话中的内容——验证证据必须暴露给评估器可见

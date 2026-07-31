@@ -12,6 +12,15 @@ AReaL 2.0 是面向真实部署中 Agent 的在线强化学习训练基础设施
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **RL 微服务化**：将强化学习链路拆分为 Gateway、Router、Data Proxy、Agent-Compute Worker、Controller 等可组合服务组件，使 Agent 业务代码与 RL 训练解耦
 2. **ATDP 轨迹协议**：智能体轨迹数据协议，以步骤为单位完整记录决策过程，使复杂任务变为可追责、可回放、可归因的学习样本
 3. **Agentic Data Proxy**：部署在 Agent 与外部系统边界的实时数据治理层，轨迹进入训练队列前完成脱敏与权限控制

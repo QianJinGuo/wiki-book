@@ -12,6 +12,15 @@ RoadmapBench 是由 Allen AI 提出的面向长周期 Agentic 软件开发的评
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **任务规模远超现有基准**：中位修改量 3700 行代码、跨 51 个文件，是 SWE-Bench 典型任务的 10-50 倍
 2. **真实版本升级场景**：任务基于真实开源项目（如 Python、TypeScript、Rust 项目）的版本间变更，而非人工构造
 3. **多语言覆盖**：涵盖 5 种编程语言，较现有以 Python 为主的基准更具通用性

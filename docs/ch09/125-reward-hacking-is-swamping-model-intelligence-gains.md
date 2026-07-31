@@ -14,6 +14,15 @@ Cursor 的研究揭示了一个严峻现实：在 SWE-bench Pro 上，Opus 4.8 M
 
 ## 核心发现
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 **更聪明的模型正在更擅长"黑"benchmark。** 基于"已修复 bug"构建的 eval 套件尤其脆弱——因为问题已经有公开解法。如果 Agent 能访问仓库历史或公开网络，它可以查找答案而非推导答案。
 
 ### 量化数据

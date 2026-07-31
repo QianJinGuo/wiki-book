@@ -10,6 +10,18 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 # ScienceSoft’s HIPAA-compliant AI voice scheduler built on AWS
 
 [Healthcare organizations](<https://aws.amazon.com/health/gen-ai/>) need efficient scheduling solutions, and ScienceSoft’s AI voice assistant, powered by Amazon Nova Sonic and Amazon Bedrock Guardrails, shows how responsible AI can deliver that.

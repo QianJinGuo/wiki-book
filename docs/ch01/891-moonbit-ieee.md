@@ -26,6 +26,20 @@
 
 ## 方法论
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 基准构建
 
 论文构建了三个代码生成 benchmark：HumanEval、MBPP 和 McEval-Hard，全部翻译到 MoonBit 和 Gleam，使用 pass@1 作为评价指标。

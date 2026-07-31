@@ -16,6 +16,20 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 - **核心痛点**：Agent 自带的浏览器工具只能获取静态 HTML，无法处理 JavaScript 动态渲染、登录验证、多页面交互等复杂浏览器操作
 - **BrowserAct 功能**：提供 50+ 标准化浏览器操作指令，支持三种浏览器模式（复用登录态、隐私模式、固定身份模式）
 - **Skill Forge**：BrowserAct 的核心创新——将 Agent 学会的网页操作流程"存成模板"，下次同类任务可直接复用，无需从零编写提示词

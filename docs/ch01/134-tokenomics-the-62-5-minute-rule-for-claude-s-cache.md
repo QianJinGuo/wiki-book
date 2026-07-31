@@ -7,6 +7,21 @@
 ## 核心要点
 -
 ## 相关实体
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - [Tokenomics The 625 Minute Rule For Claudes Cache](ch01/976-claude.html)
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch01/057-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.html)

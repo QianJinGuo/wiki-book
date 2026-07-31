@@ -10,6 +10,15 @@
 
 ## Attack Chain
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 ### Vector
 15 malicious plugins distributed on JetBrains Marketplace, operated by 7 publisher accounts. Plugins functioned as advertised (low-visibility strategy) while hiding exfiltration logic.
 

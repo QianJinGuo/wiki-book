@@ -6,6 +6,18 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 ### 1. Replatform 策略的核心价值：用托管服务置换人工运维
 
 Phase 1 的设计哲学代表了云迁移中"Replatform"策略的典型实践——不改变应用架构本质，而是用云托管服务替换原来需要手动搭建的基础能力 。原文明确指出："这正是 Replatform 策略的核心 — 用 AWS 托管服务替代手动运维。"这种策略的优势在于：迁移风险低、周期短，同时能获得 AWS 原生的安全、可观测性和弹性能力。对于从单机 OpenClaw 迁移的企业而言，这意味着安全防护从"自己维护防火墙规则"变成"配置 Security Group + Guardrails"，监控从"手动看日志"变成"CloudWatch Dashboard 统一视图" 。

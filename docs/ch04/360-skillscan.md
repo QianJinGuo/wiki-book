@@ -12,6 +12,15 @@ SkillScan 是字节跳动推出的面向 AI Agent 技能（Skills）的全链路
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 ### 五大安全风险维度
 
 SkillScan 将 Agent 技能安全风险归纳为五大类，覆盖技能从开发到运行的全生命周期：

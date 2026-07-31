@@ -12,6 +12,16 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-1-ai-agent-for-financial-services-fin.md)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    REQ[法规要求] --> MAP[映射]
+    MAP --> IMPL[实施]
+    IMPL --> AUD[审计]
+    AUD --> RPT[报告]
+    RPT -->|"更新"| MAP
+```
+
 Fin 代表了当前 AI Agent 在垂直行业落地的一种成熟范式：领域适配型 Agent 系统。其核心架构（Fin AI Engine + Procedures）揭示了几个关键设计决策：
 **1. 精准度优先于通用性的工程选择**
 Fin 强调"never hallucinate"——这个定位本身就说明了金融服务的容错门槛远高于一般客服场景。Fin AI Engine 通过多阶段验证（intent detection → content retrieval → multi-stage validation）将幻觉率降至可接受范围，而非依赖基础模型的概率输出。

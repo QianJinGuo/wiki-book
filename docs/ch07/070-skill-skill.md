@@ -64,6 +64,15 @@ user happy
 
 ## 实践启示
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **Skill 描述简洁性直接影响 Agent 选对率**：过长描述（90+ 词）导致 Agent 选错；40 词以内反而一次成功。Skill 应作为路标而非说明书。
 2. **用脚本实现 Skill 逻辑而非提示词**：skill-cleaner 示例：56 行 Skill.md + 近千行脚本。逻辑越复杂，越应封装在代码而非提示词里。
 3. **定期审计 Skill 预算**：基于 Codex 官方计费规则（UTF8 字节/4 向上取整，2% 上下文预算）计算技能占用，及时发现冗余。

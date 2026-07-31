@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 7.4KB | `entities/teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-shai-hulud-attack-1.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - TeamPCP 在黑客论坛上声称出售约 5GB 的 Mistral AI 内部代码库存档，标价 $25,000，威胁一周内公开泄露 
 - 存档据称包含约 450 个仓库，覆盖训练系统、微调项目、基准测试工具、仪表板、推理基础设施和实验性 AI 项目 
 - Mistral AI 随后确认 2026 年 5 月 12 日因第三方软件供应链攻击，其代码库管理系统被短暂攻破，仅非核心代码仓库被访问 

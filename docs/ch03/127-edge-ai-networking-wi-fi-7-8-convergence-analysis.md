@@ -16,6 +16,15 @@
 
 ## Technical Requirements for Edge AI Networking
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 **Determinism** — bounded latency, no packet loss under load. Edge AI workloads cannot tolerate best-effort delivery.
 
 **Reliability** — high MTBF required for industrial deployments (factories, robotics) where downtime costs are high.

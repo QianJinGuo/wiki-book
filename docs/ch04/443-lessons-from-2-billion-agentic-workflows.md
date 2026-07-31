@@ -14,6 +14,15 @@ CrewAI 创始人 João Moura 基于 20 亿次 Agentic 工作流执行和多家�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 为什么很多 Agent 永远无法上线
 
 行业数据一致指向同一瓶颈：**信任**（而非智能）是 Agent 上生产的最大障碍。具体表现：

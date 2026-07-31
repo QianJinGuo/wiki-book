@@ -19,6 +19,21 @@ Nic Benders 将 observability 的演进划分为三个时代：
 
 ## Dashboards 和 Alerts 的尽头
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 核心洞察：现在的 dashboards 本质上和 90 年代做的没什么区别——区别只是从 3 个图变成了 300 个图。没有任何一个 dashboard 小到可以让你"看见一切"。以 dashboards 和 alerts 为核心的 observability，已经走到尽头了。
 
 ## 统计方法、ML 与 Neural Networks 三层

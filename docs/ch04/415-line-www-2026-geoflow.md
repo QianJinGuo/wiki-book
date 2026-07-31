@@ -15,6 +15,15 @@
 
 ## 技术演化路径
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 LINE（2015，图嵌入，7300+ 引用） → RotatE（知识图谱推理） → TorchDrug/TorchProtein（开源平台） → GeoFlow（微观世界模型）
 
 这条路径的统一逻辑：分子天生就是三维的图，在图上理解与生成结构的能力，可以被改写成设计分子的能力。

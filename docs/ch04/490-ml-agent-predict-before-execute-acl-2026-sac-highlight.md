@@ -14,6 +14,21 @@
 
 ## 核心洞察：执行前预测
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 人类机器学习专家在动手前，常常已经能排除掉明显不合适的方案——这是一种内化的执行经验。论文希望将这种"未卜先知"移植给 LLM。
 
 ### Data-centric Solution Preference

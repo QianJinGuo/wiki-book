@@ -8,6 +8,20 @@
 浙大研究团队提出的 Agent 经验复用框架（arXiv:2604.04804，GitHub: zjunlp/SkillX）。核心主张：**结构化经验比原始轨迹更关键**。通过将轨迹蒸馏为三层技能体系，实现跨模型、跨任务的高效经验复用与泛化能力提升。
 
 ## 三层技能设计（Multi-Level Skills）
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 | 层级 | 类型 | 说明 |
 |------|------|------|
 | L3 | Planning Skills | 任务规划，高层策略抽象 |

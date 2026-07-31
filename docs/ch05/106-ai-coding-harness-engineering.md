@@ -21,6 +21,15 @@
 
 ## AI Coding 一体化架构（5 层）
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 输入层 → 工作台（CodeBuddy：配置中心+模式引擎+Agent核心）→ MCP 层（DB/API/Wiki/CI/CD）→ 输出层（代码/测试/文档）→ 度量层（AI占比/交付量/Bug率）→ 反馈优化配置中心。
 
 ## "3+1 Phase" 多 Agent 协作

@@ -8,6 +8,15 @@
 Google I/O 2026 于 5 月 19-20 日在加州山景城 Shoreline Amphitheatre 举行，主题演讲定 于 5 月 19 日上午 10 点（太平洋时间）。据 Gizmodo、Android Authority、Mashable、TechRadar 等多家媒体报道，本届 I/O 将以 **Gemini 模型升级** 为核心，并加速 Gemini 在 Android、ChromeOS 及新硬件平台上的深度整合。
 
 ## 主要发布内容
+
+```mermaid
+graph LR
+    TRAIN[训练] --> EVAL[评估]
+    EVAL --> DEPLOY[部署]
+    DEPLOY --> MON[监控]
+    MON -->|"回传"| EVAL
+```
+
 ### Gemini 模型更新
 据 Gizmodo 记录，Google 此前已发布 Gemini 2.5 系列（包括 Gemini 2.5 Flash 和 2.5 Pro），2025 年底推出 Gemini 3，并预览了 Gemini 3.1 Pro 和 3.1 Flash-Lite。多方报道推测本次 I/O 可能公布新模型（Gemini 4 或 Gemini 3.x 增量版本），具体命名和性能数据尚未官方确认。
 

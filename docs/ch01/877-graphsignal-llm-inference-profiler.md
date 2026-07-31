@@ -12,6 +12,15 @@ Graphsignal 是一个生产级推理性能分析平台，专注于 LLM 推理栈
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 功能矩阵
 
 | 能力维度 | 具体功能 | 价值 |

@@ -18,6 +18,15 @@ Matt Pocock 提出的 **Skill Hell** 概念：当 Skill 越来越容易下载、
 
 ## 信息分层（Progressive Disclosure）
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Skill 应遵循三层信息架构，与 `CLAUDE.md 入口上下文`、`Loop 工程`、`Harness 工程`形成互补：
 
 | 层级 | 功能 | 典型材料 |

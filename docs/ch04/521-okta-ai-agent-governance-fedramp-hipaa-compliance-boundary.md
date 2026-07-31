@@ -12,6 +12,15 @@ Okta 发布 AI Agents - Core 平台，成为首个在 FedRAMP 和 HIPAA 合规�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 三大治理维度
 
 平台围绕三个核心治理问题组织：

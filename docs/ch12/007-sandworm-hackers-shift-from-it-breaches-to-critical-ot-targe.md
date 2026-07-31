@@ -5,6 +5,15 @@
 > 📊 Level ⭐ | 7.4KB | `entities/gbhackers-sandworm-shift-from-it-breaches.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - 俄罗斯国家级 APT 组织 Sandworm（又称 APT44、Seashell Blizzard、Voodoo Bear）正在从传统 IT 网络入侵转向攻击运营技术（OT）环境
 - 攻击目标涵盖工业控制系统（ICS）、工程工作站、人机界面（HMI）、PLC 和 RTU 等现场控制器
 - 战术特征：横向移动激进（单台感染主机可 targeting 上百台内部系统）；依赖已泄露工具而非零日漏洞；被发现后不撤退反而升级攻击；利用 EternalBlue、DoublePulsar、WannaCry 等老旧漏洞链

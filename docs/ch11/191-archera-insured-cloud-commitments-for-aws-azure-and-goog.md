@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 6.6KB | `entities/3rdfsmp.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
 - Archera 提供一种新型云成本优化产品：「Insured Commitments」——保险背书的灵活期限云承诺
 - 核心价值主张：承诺云消费（Commitments）可以享受折扣，同时无需承担利用率不足（underutilization）风险
 - 覆盖 AWS、Azure、Google Cloud 三大云厂商

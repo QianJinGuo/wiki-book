@@ -14,6 +14,20 @@
 ### 核心观点
 1. # 手把手：用 Hermes Skills + Karpathy 的 LLM Wiki 让 AI 越用越懂你
 ## 整体结构：三层互相喂养
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 - **Memory**：记住你是谁（事实类）
 - **Skills**：记住怎么干活（方法类）
 - **Wiki**：目录把零散知识组织起来（空间+时间维度）

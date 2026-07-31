@@ -19,6 +19,15 @@ We want to survive, thrive, and reproduce....
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-main-path-to-truly-creative-ai.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 **1. 创造力根植于内在驱动力，而非算法优化**
 Miessler 认为 AI 无法像人类一样创造，根本原因在于人类的创造力由内在驱动力驱动——生存、繁荣、繁衍的本能，以及与之关联的恐惧和渴望。这些进化赋予的驱动力不仅是客观存在的，更是被主观体验的。正是这种「被驱动」的主观体验，赋予了人类创作过程中的情感重量。AI 缺乏这类内在硬编码的驱动力，因此它可以模仿创造力，但无法真正「被创造力驱动」 。
 **2. 主观体验是进化的「最佳操作系统特性」，用于生成创造力**

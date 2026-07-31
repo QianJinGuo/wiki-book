@@ -13,6 +13,15 @@
 - Workflow as Code：基础设施团队可以编程方式定义工作流，版本控制，CI/CD 部署
 
 ## 技术细节
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - **Agent Handlers**: 原生支持将 agent 行为注册为 workflow 步骤
 - **Event-driven Triggers**: 工作流基于系统事件触发，而非人工手动启动
 - **Context Propagation**: AI agent 跨步骤维护 workflow context，减少 hallucination 和错误率

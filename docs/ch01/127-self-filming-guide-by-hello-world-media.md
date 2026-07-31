@@ -15,6 +15,16 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa6efcef23c882e57.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
 ### 专业级手机拍摄的民主化趋势
 本指南展示了消费级硬件（iPhone、Pixel）已足够支撑专业级视频输出，关键在于 Log 格式的合理运用。Log 录制通过保留高光和阴影的更多细节，为后期调色提供最大灵活性，这是传统"直出"视频无法实现的。
 

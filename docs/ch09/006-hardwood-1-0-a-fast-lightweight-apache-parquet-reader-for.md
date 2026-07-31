@@ -19,6 +19,15 @@ Today, **Hardwood reaches 1.0**. After five preview releases since the start of 
 
 ## Why Hardwood[](http://www.morling.dev/blog/hardwood-1-0-fast-lightweight-apache-parquet-reader-for-the-jvm#_why_hardwood)
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Working with the [Apache Parquet](https://parquet.apache.org/) columnar file format on the JVM has traditionally come with a fairly heavyweight stack: a large number of dependencies on the classpath and a single-threaded reader at the core. Hardwood explores a different set of tradeoffs. The full rationale is in the [original project announcement](https://www.morling.dev/blog/hardwood-new-parser-for-apache-parquet/); in a nutshell, the goals are:
 
 *   **Implement a Parquet library without any mandatory dependencies:**1 Parquet files which are either uncompressed or gzip-compressed don’t require any 3rd party libraries at all; for parsing files compressed with Snappy/Zstd/LZ4/Brotli you only need to provide the (typically single-JAR) codec of your choosing

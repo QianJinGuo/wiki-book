@@ -17,6 +17,20 @@
 - 来源：GitHub 文章 *The 200k Ghost*
 
 ## Harness 治理对策
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 ### Anthropic 的 Harness 设计
 1. **上下文重置（context resets）**：清空上下文 + 新 Agent + 结构化交接文件，而非压缩
 2. **三角色分离**：规划者（扩展规格）→ 生成者（构建）→ 评估者（QA）

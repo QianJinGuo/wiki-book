@@ -12,6 +12,15 @@ Claude Science 是 Anthropic 面向科研人员推出的 AI 平台，定位为�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **科学成果可复现**：生成图表和手稿的同时提供完整代码、运行环境、生成过程描述和全部对话历史。原生支持渲染 3D 蛋白质结构、基因组浏览器轨迹、化学结构等专业格式。用户可用自然语言随时讨论细节、在线注释修改，智能体自动调整代码使成果达到发表水准。
 - **算力智能调度**：蛋白质折叠、海量基因组分析等大型任务不再需要手动折腾集群。Claude Science 先制定计划、征求确认，再提交到 HPC（SSH）或 Modal 云端，支持从单个 GPU 扩展到数百个 GPU。上下文常驻内存，敏感数据留在本地。
 - **科研开箱即用**：预置 60+ 科学技能和连接器，直连 UniProt、PDB、Ensembl、Reactome、ClinVar、ChEMBL、GEO 等数百个权威数据库。集成 NVIDIA BioNeMo Agent Toolkit，支持 Evo 2、Boltz-2、OpenFold3 等专业模型。

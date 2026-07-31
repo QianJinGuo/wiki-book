@@ -12,6 +12,15 @@ Coding Agent 之所以能走向 Anything，是因为 Coding 场景已验证出�
 
 ## 四大分享主题
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ### 1. Qoder Desktop：多 Agent 协作与 Harness 实践
 阿里巴巴高级技术专家左志鹏分享。从辅助编程→协同编程→自主交付的演进路径。Agent 任务链路：需求理解→方案调研→SPEC→编码→编译→启动→测试→自我代码审查。**瓶颈已从"模型能不能生成更好代码"转向"能不能形成稳定可控可交付的任务系统"。**
 

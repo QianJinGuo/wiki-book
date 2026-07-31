@@ -14,6 +14,21 @@
 
 ## 整体架构：三个专域 Agent
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 | Agent | 职责 |
 |-------|------|
 | **查数 Agent** | NL2SQL：自然语言→选表→SQL生成→执行→结果校验 |

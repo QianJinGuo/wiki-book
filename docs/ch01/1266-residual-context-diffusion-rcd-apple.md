@@ -16,6 +16,14 @@
 
 ## 核心方法：RCD
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+```
+
+
 Residual Context Diffusion (RCD) 的核心洞察在于：被丢弃的 token 表示仍然保留了对后续解码迭代有用的上下文信息。RCD 模块将这些丢弃的 token 表示转换为上下文残差(contextual residuals)，并在下一个去噪步骤中重新注入到模型中。
 
 **关键技术特点**：

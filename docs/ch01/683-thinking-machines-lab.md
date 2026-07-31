@@ -17,6 +17,20 @@
 
 ## 创始团队背景
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 - **Mira Murati**：前 OpenAI CTO，是 OpenAI 核心技术领导者之一
 - **John Schulman**：OpenAI 强化学习核心人物，负责 RLHF 和训练方法论
 - **Soumith Chintala**：PyTorch 创始人，工程生态的核心构建者

@@ -12,6 +12,20 @@ CoDA-Bench 是中国人民大学研究团队提出的 Code Agent 联合评估基
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 - **双维度评测**：CoDA-Bench 将 Code Agent 能力拆分为两个正交维度——Code Intelligence（给定明确数据文件和查询时编写正确分析代码的能力）和 Data Intelligence（在复杂目录结构中自主探索文件系统、定位相关数据文件、理解数据 schema 的能力）。
 - **真实数据环境**：基准基于 Kaggle 生态构建数据环境，利用数据集的社区共现关系构建语义相关数据社区。Agent 面对的不是垃圾噪声文件，而是一批"看起来都合理的候选数据"——目标数据和干扰数据往往主题相近、结构相似。
 - **逆向构造任务**：从真实 Kaggle notebooks 中提取可复现的分析结果作为 solution anchor，再反向构造自然语言问题，保证任务来自真实分析流程且答案可验证。

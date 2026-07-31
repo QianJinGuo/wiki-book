@@ -12,6 +12,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-agentic-trust-management-platform-drata.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 Drata 的"Agentic Trust Management"定位揭示了 GRC（治理、风险、合规）领域正在发生结构性转变：
 **1. 从周期性审计到持续性证明**
 传统 GRC 模式下，企业每年接受一次审计——这意味着 364 天的安全状态是未知数。Drata 的核心价值主张是"每天都在证明你的安全状态，而非一年一次"。Continuous Real-Time Trust 意味着控制项被实时监控，证据被自动采集，风险被即时标记。这不只是效率提升，而是合规范式的根本转变。

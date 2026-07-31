@@ -13,6 +13,20 @@
 - 可通过 Skill Creator 自动分析已有文档站并生成定制检索 Skill 
 
 ## 深度分析
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 ### 传统 RAG 的结构性困境
 传统 Chunk + Embedding RAG 模式的核心缺陷在于"预索引"的刚性。作者在文中坦承自己对这套方案的偏见源于真实的调优痛苦——调优过程极其折腾，最终效果仍难保证。这并非个别现象，而是向量检索范式本身的结构性局限：分块大小固定、语义边界难以对齐、Embedding 模型对领域术语的理解有限、检索结果依赖向量相似度而非真实语义匹配 。
 LlamaIndex 创始人 Jerry Liu 的判断佐证了这一判断：RAG 本身没死，但固定 Chunk + Embedding 那套模式已走到尽头。如果 Agent 能动态扩展文件周围的上下文，过度考虑数据块大小就失去了意义 。这一转变的本质是从"检索后总结"（Retrieve-then-Read）到"自主式检索+理解"（Agentic Retrieve）的范式跃迁。

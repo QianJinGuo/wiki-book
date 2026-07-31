@@ -18,6 +18,21 @@ Loop Engineering 是 AI 编程领域从 Prompt Engineering 演进而来的新范
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **范式转移**：AI 编程的关键能力正在从「写好提示词」升级为「设计可持续运转的智能体工作系统」
 - **定义**：Loop Engineering 是围绕 AI 编程智能体设计可重复、可观察、可验证、可修正的工作循环，关心提示词怎么写之外，还包括触发条件、上下文读取、工具调用、验证反馈、错误修正和人工确认点
 - **六大核心构件**：Automations（心跳）、Worktrees（隔离层）、Skills（知识沉淀）、Plugins/Connectors（工具链）、Sub-agents（执行与检查分离）、Memory（跨轮次延续）

@@ -13,6 +13,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-raiders-and-how-to-repel-them.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 **1. LLMjacking 的攻击经济学使其成为工业级威胁**
 LLMjacking 的核心优势在于成本套利：攻击者使用被盗 API 密钥访问第三方 LLM 服务，其费用比自行运行模型低 10 倍。随着 AI 推理成本持续攀升（文章引用预测将「surge dramatically」），这一套利空间将进一步扩大，驱动更多攻击者入场。类比 cryptojacking 市场规模在 2025 年增长 20%，LLMjacking 完全有可能复制这一增长轨迹。
 **2. 开放网络接口的 AI 服务器是主要攻击面**

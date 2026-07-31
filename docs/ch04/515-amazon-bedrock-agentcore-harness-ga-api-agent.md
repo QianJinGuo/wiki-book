@@ -19,6 +19,20 @@ Agent 运行在独立的 microVM 环境中，自带文件系统和 shell，可�
 
 ## 模型切换：mid-session provider 无感切换
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 支持四种模型后端，且可在同一会话中无缝切换而不丢失上下文：
 
 | Provider | 配置字段 | 支持模型 |

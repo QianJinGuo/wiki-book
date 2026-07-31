@@ -26,6 +26,21 @@ Patrick McCanna investigated Claude Code's session logs and discovered that the 
 - This affects trust in agent reasoning traces for debugging and auditing
 
 ## Relevance to Agent Engineering
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - Agent builders relying on thinking blocks for observability should verify actual content
 - Extended thinking may be a compliance artifact rather than genuine reasoning transparency
 - Important for anyone building on Claude Code's API and expecting traceable reasoning

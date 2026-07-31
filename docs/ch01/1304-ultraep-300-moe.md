@@ -16,6 +16,21 @@ MoE 热点专家导致负载倾斜，实际吞吐与理想状态可达 2 倍差�
 
 ## 核心设计
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 Gate 完成后获取当前层真实负载，在 token dispatch 前完成副本求解和分流。关键路径额外开销 ~300µs。
 
 ### GPU-native 在线求解器

@@ -10,6 +10,20 @@ DeepSeek-V3 是 DeepSeek（深度求索）于 2024 年 12 月发布的开源大�
 
 ## 核心范式
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 - **DeepSeekMoE 架构**：细粒度专家分割（256 个路由专家 + 1 个共享专家），每个 token 激活 8 个路由专家
 - **Multi-head Latent Attention (MLA)**：创新的注意力机制，通过低秩压缩 KV cache 将显存占用降低 93%
 - **无辅助损失负载均衡**：引入 bias-based 路由策略，避免传统辅助损失对模型性能的负面影响

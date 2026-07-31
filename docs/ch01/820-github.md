@@ -18,6 +18,16 @@
 
 ## 实践启示
 
+```mermaid
+graph TB
+    SRC[源码] --> FORK[Fork]
+    FORK --> CONTR[贡献]
+    CONTR --> REV[Review]
+    REV --> MERGE[合并]
+    MERGE --> REL[发布]
+```
+
+
 **建立代码托管多平台存在策略**。不要将所有代码和社区活动集中在单一平台。对于核心仓库，保持在不同平台（如GitHub + GitLab）的镜像同步。对于文档和社区讨论，可以考虑使用独立托管的方案（如自建GitLab实例或使用Codeberg）。这种策略不仅降低单点风险，也能扩大项目的潜在用户触达范围。
 
 **将CI/CD和自动化流水线与具体平台解耦**。使用跨平台的CI配置格式（如GitHub Actions的YAML可以相对容易地迁移到GitLab CI或Jenkins），避免深度绑定某一平台的特定功能。对于依赖平台内建能力的自动化流程（如GitHub Pages），评估替代方案并准备迁移预案。基础设施即代码的原则同样适用于代码托管平台。

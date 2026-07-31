@@ -10,6 +10,15 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Gartner 副总裁分析师 Douglas Toombs 在悉尼 IT 基础设施、运营与云策略大会上指出，只有美国和中国具备构建完全主权云所需的全部技术栈，其他国家和地区无法脱离外国供应商实现真正的云主权。即便采用本地部署方案（AWS Outposts、Azure Local、Oracle Dedicated Cloud Regions），仍需"打电话回家"（phone home），无法实现真正独立。
 
 ## 核心要点

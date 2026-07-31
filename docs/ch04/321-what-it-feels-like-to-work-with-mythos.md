@@ -14,6 +14,15 @@ XBow 团队的评测揭示了 Mythos 在实际安全场景中的表现：Mythos 
 
 ## 与现有 Mythos 实体的关系
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 本文提供了一个独立第三方对 Mythos 能力的实测评估，与 Anthropic 官方发布的 Mythos 能力描述形成了对照补充。它显示了 Mythos 能力的实际边界，包括其在真实漏洞环境中的表现和其他 AI 安全工具的对比。
 
 ## 安全影响

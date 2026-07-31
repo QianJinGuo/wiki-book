@@ -13,6 +13,20 @@
 
 ## 技术背景
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### RLHF 训练机制
 
 ChatGPT 的训练方式决定了它会倾向于给出有帮助且安全的回复。RLHF（基于人类反馈的强化学习）训练让模型学会了避免给出可能有害、有争议或敏感的内容。

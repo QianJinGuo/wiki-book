@@ -10,6 +10,15 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
+
 AWS Generative AI Innovation Center 介绍了数学优化（Mathematical Optimization）作为 AI 的重要子领域——与机器学习互补的"演绎式 AI"。ML 从数据中归纳模式并给出概率预测，而数学优化在给定约束下寻找数学上可证明的最优决策。文章展示了多个真实案例：BMW 机器人路径优化（10% 周期时间改进）、Delivery Hero 中间里程物流（24% 成本节省）、Amazon 欧盟物流网络（数千万美元价值）、澳大利亚红交叉排班优化（7% 理论成本降低）。
 
 ## 核心要点

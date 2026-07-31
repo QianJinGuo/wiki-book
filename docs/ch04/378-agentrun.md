@@ -38,6 +38,15 @@ AI 网关的透明化处理（模型路由、负载均衡、内容安全、密�
 
 ## 实践启示
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 对于已有 OpenAI 代码的团队，最直接的迁移路径是替换 `base_url` 和 `api_key`，然后验证功能一致性。不需要修改任何业务逻辑代码，也不需要引入新的 SDK。这种低摩擦迁移策略是评估 Agent 平台时的首要考量因素。
 
 在设计多轮对话场景时，应尽早确定 session-id 的生成策略。建议将 session-id 与业务层面的用户 ID 或会话 ID 关联，而非随机生成，以便后续进行对话历史的追溯和分析。平台负责 TTL 管理，但业务层面的会话组织仍需要应用自己设计。

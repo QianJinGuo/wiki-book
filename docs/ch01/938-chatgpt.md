@@ -14,6 +14,21 @@
 其中，大家「讨伐」声量最大的莫过于 ChatGPT 了，从 AI 味儿熏人的经典破折号、「不是 A，而是 B」句式，以及前段... [内容已截断，原文存档]
 
 ## 标签
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - source/wechat
 
 ## 相关实体

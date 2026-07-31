@@ -13,6 +13,18 @@
 
 ## 相关实体
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/298-ai-agent.html)
 - [LLM raiders and how to repel them](ch01/1274-llm.html)
 - [LLM raiders and how to repel them](ch01/797-llm-raiders-and-how-to-repel-them.html)

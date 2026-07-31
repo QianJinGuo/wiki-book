@@ -10,6 +10,21 @@ Karpathy 的看法：音频是大语言模型最好的输入，视觉是最好�
 
 ## 为什么 Markdown 最适合 AI
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ## 相关实体
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)

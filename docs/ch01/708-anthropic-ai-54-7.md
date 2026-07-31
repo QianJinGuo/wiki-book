@@ -14,6 +14,20 @@ Anthropic让AI先读员工手册再上岗：失控率从54%降到7%
 
 ## 技术分析
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ---
 title: Anthropic让AI先读员工手册再上岗：失控率从54%降到7%
 source: wechat

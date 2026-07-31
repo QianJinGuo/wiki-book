@@ -17,6 +17,20 @@ MoE-based MCIT 中存在两个核心漂移问题：
 
 ## 三个创新
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 SAME（Stabilized Mixture-of-Experts）从三方面稳定 MoE 持续学习过程：
 
 1. **谱感知路由（Spectral-aware Routing）**：利用历史输入协方差的 SVD 分解，在谱子空间中约束路由器更新，减少旧样本被重新分配到错误专家

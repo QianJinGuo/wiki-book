@@ -10,6 +10,20 @@
 
 ## AI Infra 黄金组合
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 **K8s + Ray + PyTorch + vLLM** 贯穿大模型全生命周期。
 
 国内头部厂商在多模态数据处理几乎全面采用 Ray；90% 以上 RL 训练框架基于 Ray 构建；阿里等企业探索基于 Ray 构建 Agent Sandbox。

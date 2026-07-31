@@ -14,6 +14,14 @@ Netflix AI Platform 团队自建了完整的 LLM Serving 平台——从模型�
 
 ## 架构概览
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+```
+
+
 Netflix 的 ML Serving 由统一的 JVM-based serving system 处理端到端流程：路由、A/B test、候选生成、特征提取、推理、后处理和日志。小模型 CPU 进程内推理；大模型走 GPU，由 **Model Scoring Service (MSS)** 统一后端处理，底层基于 NVIDIA Triton Inference Server。
 
 ## 四个核心设计决策

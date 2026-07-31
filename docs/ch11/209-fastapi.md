@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 6.0KB | `entities/fastapi-auth-rate-limit-zero-downtime.md`
 
 ## 核心洞察
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 FastAPI生产级认证+限流实战；零停机部署方案；一套代码覆盖API安全。本文来自 WeChat data-flow 频道。
 
 ## 关键要点

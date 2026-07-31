@@ -16,6 +16,15 @@ DeepMind 发布了 AI Control Roadmap，提出一套"纵深防御"(defense-in-de
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 ### 1. AI Control 框架的三层防御
 
 - **基础层**: 传统安全措施——sandboxing、endpoint security、prompt injection resistance

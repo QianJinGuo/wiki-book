@@ -50,6 +50,16 @@ DeepSeek-VL训练可分为3个阶段（不同VLM训练的阶段数和每个阶�
 
 ---
 ## 关联
+
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

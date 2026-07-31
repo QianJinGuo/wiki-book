@@ -14,6 +14,15 @@
 
 ## 三种部署场景
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 同一套代码，靠环境变量切换三种场景:
 
 | 场景 | 通信方式 | 存储 | 适合谁 |

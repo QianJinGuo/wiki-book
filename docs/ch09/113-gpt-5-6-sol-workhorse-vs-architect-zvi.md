@@ -23,6 +23,21 @@ Zvi 的核心框架将 Sol 和 Fable 定位为互补而非竞争对手：
 
 ## 基准测试对比
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 两种模型在不同基准测试中展现出截然不同的优势：
 
 - Sol 在 Agents' Last Exam、AA Agent Coding Index v1.1、BrowseComp 上领先——这些评测偏向任务路径清晰、步骤可拆分的场景

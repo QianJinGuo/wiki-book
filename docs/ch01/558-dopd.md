@@ -12,6 +12,20 @@ DOPD（Dual On-policy Distillation）由新加坡国立大学、香港中文大�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 - **特权幻觉（Privilege Illusion）**：教师获得特权信息后表面更强，但学生模仿的是"信息不对称带来的捷径"而非真正的可迁移能力。这种幻觉还导致熵崩塌、效果退化、泛化变差。
 - **四类 Token 分类蒸馏**：DOPD 将 token 分为四类——关键知识 token（高优势差+教师高置信）、共识 token（低优势差+双高置信）、不确定 token（低优势差+双低置信）、探索性 token（高优势差+学生高置信）——每类使用不同的蒸馏策略。
 - **显著实验提升**：在 8 个基准上平均得分 51.4，比 Vanilla OPD 高出 7.5 分。部分推理和编码任务上甚至超越原始教师模型。

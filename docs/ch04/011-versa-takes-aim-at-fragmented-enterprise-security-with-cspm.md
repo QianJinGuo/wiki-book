@@ -10,6 +10,15 @@
 Versa Networks 在 2026 年 5 月为其 VersaONE Universal SASE 平台发布三项协同更新：Cloud Security Posture Management (CSPM) 云安全态势管理、Concerto 13.1.1 编排平台升级，以及将于 5 月 21 日推出的 AI Agent 信任与验证框架。该公司同期发布首届《State of SASE + AI Report》，调查 525 名美国企业 IT 和安全决策者，结果显示 35% 的组织在过去一年因网络与安全团队之间的协调缺口而遭受安全漏洞，99% 将融合列为战略优先级，但仅有 30% 实现落地。
 
 ## 关键数据
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - **35%** 的企业因网络与安全团队协调缺口导致安全漏洞 
 - **73%** 的企业表示技术集成复杂性延误或搁置了关键项目 
 - **99%** 将 SASE 融合列为战略优先级，但仅 **30%** 实现了共享所有权 

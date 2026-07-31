@@ -12,6 +12,20 @@ CAMEL（Confidence-gAted RefLection for Reward Modeling）由 TikTok 与新加�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 - **置信度门控反思**：模型先输出初始 verdict（单 token），利用 verdict token 间的 log-probability margin 作为置信度信号；高置信度直接输出（CAMEL-Fast），低置信度才进入 reflection（CAMEL-Reflection）。
 - **Counterfactual Prefix Augmentation**：对每个样本构造强制初判为 A/B 的两个版本，用 GRPO 训练，奖励只取决于最终 verdict 是否正确。这使反思成为真正的自我修正机制，无需额外人工解释标注。
 - **14B 超过 70B**：CAMEL-Reflection 在三个 benchmark 上平均 82.9%，超过 LLaMA-3.1-Nemotron-70B、INF-ORM-LLaMA3.1-70B 等 70B 级模型。

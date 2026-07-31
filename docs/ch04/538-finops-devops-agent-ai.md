@@ -16,6 +16,18 @@
 
 ## 双Agent 协作架构
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 ### 关注点分离
 
 | 维度 | FinOps Agent | DevOps Agent |

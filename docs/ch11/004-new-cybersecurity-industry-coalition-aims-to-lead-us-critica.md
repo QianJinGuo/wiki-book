@@ -5,6 +5,15 @@
 > 📊 Level ⭐ | 5.1KB | `entities/new-cybersecurity-coalition-us-policy.md`
 
 ## 摘要
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 New cybersecurity industry coalition aims to lead US critical infrastructure protection | Cybersecurity Dive
 Opens in a new window Opens an external website Opens an external website in a new window
 This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. Privacy Policy

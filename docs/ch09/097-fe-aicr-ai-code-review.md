@@ -24,6 +24,15 @@
 
 ## 多智能体协作审查架构
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 & W3 --> MSG[消息]
+```
+
+
 ```
 三路并行审查 Agent ──→ 聚合整理 Agent ──→ 核实 Agent ──→ 复核 Agent
     运行时风险                       反向验证       二次复核（防漏报）

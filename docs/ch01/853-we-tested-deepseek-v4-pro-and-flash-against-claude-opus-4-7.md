@@ -12,6 +12,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-pro-vs-claude.md)
 
 ## 相关实体
+
+```mermaid
+graph LR
+    TRAIN[训练] --> EVAL[评估]
+    EVAL --> DEPLOY[部署]
+    DEPLOY --> MON[监控]
+    MON -->|"回传"| EVAL
+```
+
 - We Tested DeepSeek V4 Pro and Flash Against Claude
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1091-deepseek.html)
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/1151-deepseek-v4.html)

@@ -16,6 +16,18 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 - **开源内容**：T-Head SAIL 软件栈完整开源，包括 PPU Driver/ Runtime、C/C++/Python 编程接口、Compiler + Debugger、高性能库（acBLAS/acDNN/acFFT 等）、开发者工具（Asight Compute/Systems、PPU-SMI、PPU-DCGM）
 - **出货规模**：真武 AI 芯片累计出货 56 万片，服务 400+ 客户，覆盖 20+ 行业——说明已越过实验室阶段进入大规模商用
 - **生产验证**：已在阿里云及多家头部客户的生产环境中经受大规模流量、复杂场景和严苛 SLA 考验

@@ -12,6 +12,15 @@
 - Effective Tokens (ET) 指标：考虑模型成本差异，输出 token 加 4 倍权重
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 ### token 效率问题的本质
 Agentic workflows 的 token 效率问题不是简单的"用少一点"，而是结构性问题。GitHub 的经验表明，最大效率来源是**消除不必要的 LLM 调用**，而不是减少单次调用的 token 消耗。最便宜的 LLM 调用是根本不做的调用。
 

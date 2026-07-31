@@ -16,6 +16,15 @@ External agents 的集成方式暗示了 Notion 正在将自己定位为企业 A
 
 ## 实践启示
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **在设计面向 AI Agent 的数据平台时，优先考虑声明式接口**。Notion Workers 的 declarative schema 模式让 AI 可以更容易地理解和操作数据同步逻辑。当你的系统需要被 AI 调用时，声明式 API 比命令式 API 更适合 AI 的推理模式——它把「做什么」（what）从「怎么做」（how）中分离出来，降低了 AI 理解和修改同步行为的认知负担。
 
 - **结构化数据与 AI 的交互应该采用 schema-first 设计**。Notion 的 managed database 类型要求先定义 Schema，再进行数据操作。这种 schema-first 的设计确保了 AI 处理的数据具有可预测的结构，是实现可靠 AI 工作流的基础。在构建任何需要 AI 处理的数据系统时，优先定义清晰的结构化 Schema。

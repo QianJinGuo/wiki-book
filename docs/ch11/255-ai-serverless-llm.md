@@ -10,6 +10,18 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 登录后的主控制台以统计卡片概览全部测试场景的运行状态，并提供快速HTTP测试、JMeter脚本上传和AI生成脚本三种快捷入口：
 
 [](<https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/07/21/deploy-ai-based-on-serverless-architecture-llm-analytics-platform-load-testing-pilot-2.png>) [图2 Load Testing Pilot主控制台——场景概览、运行状态统计与快捷操作入口]  

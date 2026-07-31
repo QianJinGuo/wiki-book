@@ -11,6 +11,20 @@
 - 不同 reasoning 模式下引用的域名重叠仅 25.6%，几乎完全不同
 - TOFU 内容在 reasoning 模式下具有新的战略价值：品牌可持续从 Problem 阶段延续到 Selection 阶段
 ## 相关实体
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 - [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/913-20.html)
 - [Npm Supply Chain Compromise Postmortem](../ch05/094-ai.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)

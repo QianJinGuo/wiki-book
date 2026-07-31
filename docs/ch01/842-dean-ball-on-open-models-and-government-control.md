@@ -12,6 +12,21 @@ Dean Ball 是 AI 治理领域的重要思想家，其博客 *Hyperdimensional* �
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 三大核心直觉
 
 Ball 的政策思想建立在三个相互关联的直觉之上：

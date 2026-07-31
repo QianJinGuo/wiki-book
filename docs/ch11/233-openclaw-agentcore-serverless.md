@@ -6,6 +6,18 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 **1. AgentCore Runtime 代表了 Serverless 在 AI Agent 领域的关键落地**
 
 AgentCore Runtime 将 OpenClaw 从"一台服务器上的 Node.js 进程"变成 AWS 托管的 Serverless 容器，实现了从手动管理进程到自动按需启停 microVM 的根本转变 。这意味着 AI Agent 的运行时管理正式进入了 Serverless 时代——用户无需为闲置容量付费，空闲超时自动销毁，成本模型从"包月服务器"变为"按调用计费" 。

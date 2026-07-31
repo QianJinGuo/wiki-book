@@ -16,6 +16,15 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Google brings local AI agents to laptops with Gemma 4 12B 涉及agent领域的核心技术议题。
 ### 核心观点
 1. Google has released new tools that allow developers to run agentic AI workflows locally using Gemma 4 12B, a 12-billion-parameter model from Google DeepMind.

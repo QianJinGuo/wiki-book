@@ -37,6 +37,15 @@ SkillOpt-Lite 将 Agent 技能优化重构为**零阶优化 + 文件系统调试
 
 ## 关键实验结果
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 | 任务 | 最好成绩 | 提升幅度 |
 |------|---------|---------|
 | SpreadsheetBench | GPT-5.4-nano 66.2（+36.3） | 联合优化超越 GPT-5.5+完整 SkillOpt |

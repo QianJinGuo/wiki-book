@@ -19,6 +19,34 @@
 
 ## 导读
 
+```mermaid
+graph TB
+    subgraph "前沿方向"
+        AGI[AGI 路径] --> EMB[具身智能]
+        AGI --> NEU[神经符号]
+        AGI --> SELF[自我改进]
+    end
+    subgraph "理论"
+        SCAL[Scaling Laws]
+        EME[涌现能力]
+        COMP[复杂性理论]
+    end
+    SELF --> SCAL & EME
+    subgraph "挑战"
+        ALIGN[对齐]
+        INT[可解释性]
+        SAF[安全]
+    end
+    AGI --> ALIGN & INT & SAF
+    classDef dir fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef theory fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef challenge fill:#fef3c7,stroke:#d97706,color:#78350f
+    class AGI,EMB,NEU,SELF dir
+    class SCAL,EME,COMP theory
+    class ALIGN,INT,SAF challenge
+```
+
+
 这一章属于那些想知道"AI 的边界在哪里"的人。
 
 本章收录了最前沿的 AI 研究：Scaling Law 的最新理解、涌现能力的理论解释、世界模型（LoopWM 循环 Transformer）、自我博弈（Self-Play）、以及 Prime Intellect 的递归自改进实验。

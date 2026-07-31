@@ -13,6 +13,15 @@ Markdown Content:
 ESET researchers uncovered a multiplatform supply-chain attack by North Korea-aligned APT group ScarCruft, targeting the Yanbian region in China – home to ethnic Koreans and a crossing point for North Korean refugees and defectors. In the attack, probably ongoing si...
 
 ## 关键要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - 技术领域：AI / Newsletter
 - 来源：Newsletter
 - 评分：value=7, confidence=9, product=63

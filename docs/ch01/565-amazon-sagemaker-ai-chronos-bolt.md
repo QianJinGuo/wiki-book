@@ -14,6 +14,18 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 - **零样本预测范式转变**：Chronos-Bolt 将时序预测从"先训练再推理"简化为"直接推理"，消除训练数据量要求高（DeepAR 需 300+ 时间点、10+ 条相关时序）、训练周期长、持续维护成本等传统方案痛点
 - **直接多步预测架构**：核心创新在于从自回归（Autoregressive）改为直接多步预测（Direct Multi-Step Forecasting），通过 Patch 分块机制压缩历史时序为向量表示，解码器直接并行生成未来多步分位数预测
 - **推理速度提升 250 倍**：相比原始 Chronos 需逐步解码 H 次前向传播，Bolt 通过单次前向传播直接输出整个预测区间，同时内存效率提升 20 倍，预测精度（WQL）误差降低 5%

@@ -8,6 +8,16 @@
 @ZeusRWA 观察到 RWA（现实世界资产）赛道的一个关键分化：项目建设层面百花齐放（多产品线、成熟基础设施、用户 onboarding），但 token 价格表现却参差不齐。少数 RWA token 逆势大涨，其背后的逻辑是：市场不再仅将 token 视为"utility token"，而是将其定价为对未来金融基础设施的早期股权类投资。
 
 ## Key Points
+
+```mermaid
+graph TB
+    REQ[法规要求] --> MAP[映射]
+    MAP --> IMPL[实施]
+    IMPL --> AUD[审计]
+    AUD --> RPT[报告]
+    RPT -->|"更新"| MAP
+```
+
 - RWA 项目建设蓬勃：多家公司已建立多产品线、完善基础设施、成熟用户 onboarding 体系
 - Token 价格表现分化：项目建设强 ≠ token 价格强，部分 token 表现挣扎
 - 少数 RWA token 逆势大涨：市场对头部 tokenization 公司的估值逻辑正在转变

@@ -10,6 +10,20 @@
 [Leaderboard](/) [Paper](https://arxiv.org/abs/2605.03546) [GitHub](https://github.com/facebookresearch/ProgramBench) [Team](/team/) [Blog](/blog/) [H...
 
 ## 原文存档
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/programbench-swe-agent-benchmark.md)
 
 ## 相关资源

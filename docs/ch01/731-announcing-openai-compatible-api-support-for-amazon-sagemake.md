@@ -11,6 +11,20 @@
 - 开发者可零成本迁移至 SageMaker，降低 AI 应用部署成本
 
 ## 相关实体
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 - [Amazon Bedrock Api Security Guide](../ch12/034-amazon-bedrock-api.html)
 - [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch05/094-ai.html)
 - [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch04/561-amazon-bedrock-agentcore.html)

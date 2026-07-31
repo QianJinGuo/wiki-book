@@ -16,6 +16,16 @@ LA4VLA（Learning to Act without Seeing via Language-Action Pretraining）由上
 
 ## 核心要点
 
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
+
 - **标准 VLA 训练中的语言监督不足问题**：一条机器人示范轨迹对应一句高层任务指令（如 "clean the table"），但轨迹内部包含抓取、抬起、移动等多个局部动作阶段。视觉和动作信号逐帧变化，语言信号整条轨迹不变——语言-动作对应关系未被显式标注，模型更容易依赖视觉-动作关联做预测。
 - **诊断实验证明视觉依赖**：在语言指令保持不变但视觉输入被移除、替换或与语言冲突时，模型预测轨迹明显偏向视觉暗示的方向而非语言指令方向。模型「看起来在听指令」，实际高度依赖配对视觉输入。
 - **解耦式预训练：先学语言-动作，再看世界**：LA4VLA 将 Language-Action Pretraining 从标准 VLA 中解耦，在无视觉输入下让模型仅根据语言指令和机器人状态预测动作轨迹，形成 vision-agnostic 的 language-action priors。

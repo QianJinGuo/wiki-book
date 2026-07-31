@@ -12,6 +12,18 @@
 - Pro 用户 $20 积分，Max 5x $100，Max 20x $200
 - 之前程序化负载与交互式 Claude 使用共享同一订阅池
 ## 相关实体
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - [Anthropic Claude Agents Meter Infoworld](../ch04/406-anthropic-claude-agent.html)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)
 - [Notion Ai Agents](../ch04/298-ai-agent.html)

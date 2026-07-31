@@ -16,6 +16,20 @@ Giles Thomas 在从零训练 LLM 的项目中发现一个反直觉现象：OpenA
 
 ## 实验设置
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 作者使用 Build a Large Language Model (from Scratch) 一书第 7 章的指令微调代码，在 Alpaca 指令跟随数据集上训练模型，直到验证损失开始上升。然后使用 LLM 作为评判（LLM-as-judge）来比较不同模型的生成结果。
 
 ## 意义

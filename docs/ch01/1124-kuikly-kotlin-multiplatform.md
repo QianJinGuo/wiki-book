@@ -17,6 +17,16 @@
 
 ## AI 编程基础设施
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考]
+    TH --> AC[行动]
+    AC --> OB[观察]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+```
+
+
 Kuikly AI 编程的核心是 **Skills 和 Rules** 机制:
 
 ```bash

@@ -18,6 +18,15 @@ Note: All Multi-Dataset relationships in the current release use inner join. Onl
 
 ## Supported patterns
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 The following seven scenarios are natively supported by Quick Sight Multi-Dataset Relationships. Each scenario maps to a common data modeling pattern, with concrete implementation guidance and sample SQL.
 
 ### Scenario 1: Simple star schema

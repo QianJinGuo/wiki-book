@@ -14,6 +14,15 @@ olmo-eval 是 Allen AI (Ai2) 发布的开源 LLM 评估工作台，构建于此�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **为开发循环而非排行榜而生** — 大多数评估工具面向已发布的模型跑 benchmark，olmo-eval 面向的是不断迭代的 checkpoint：添加 benchmark、配置参数、跨 checkpoint 运行、逐题分析结果。它解决了"2.4pp 的变化到底是真实提升还是噪声"这一核心问题。
 
 2. **Task/Suite/Harness 三层解耦** — Task 定义评估内容（数据集、prompt 格式、评分逻辑），Suite 将多个 Task 组合为标准集，Harness 控制运行方式（模型 provider、工具、scaffold、sandbox）。同一 Task 可以在不同 Harness 下运行而不改变评估指标。

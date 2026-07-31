@@ -18,6 +18,15 @@ Thariq 认为，Fable 是第一个让他明显感觉到工作质量的瓶颈在�
 
 ## 四类未知数
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 面对一个问题，Thariq 习惯把自己的认知拆成四类：
 
 | 类别 | 含义 | 应对方式 |

@@ -10,6 +10,15 @@
 - 来源：https://searchengineland.com/google-llms-txt-chrome-lighthouse-478246
 
 ## 相关实体
+
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
 - [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](ch01/820-github.html)
 - [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/565-score-by-collisions-patch-by-panic.html)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch01/223-rag.html)

@@ -5,6 +5,18 @@
 > 📊 Level ⭐⭐ | 7.6KB | `entities/blog-03-kiro-ai-cdk-development.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 by awschina on 17 12月 2025 in AWS Big Data Permalink Share 概述 本文记录了一次真实的 AI 辅助开发过程：如何使用 Kiro AI IDE 从一个模糊的部署需求开始，通过人机协作，逐步设计出三层堆栈架构，并完成基于Amazon EMR Flink 智能监控系统的AWS CDK 部署代码。 开发成果 ： – 开发时间：从 10 小时缩短到 1.5 小时（效率提升 6-7 倍） – 代码质量：自动应用 AWS 最佳实践 – 架构演进：从单堆栈到三层堆栈的优化过程 项目地址 ： https://github.com/yangguangfu007/emr-flink-monitoring-agent 背景：什么是 AWS CDK 和 Kiro？
 
 ## 核心技术

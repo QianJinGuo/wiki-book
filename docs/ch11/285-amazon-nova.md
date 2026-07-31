@@ -10,6 +10,20 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 本文详细介绍了 Parcel Perform 与 AWS GenAIIC 合作，使用 Amazon SageMaker AI 对 Amazon Nova 模型进行参数高效微调（PEFT/LoRA），实现从电商邮件中精准提取结构化数据的完整方案。微调后的 Nova Micro 模型在测试集上达到 94.77% 的提取准确率，相比基线提升高达 16.6 个百分点，同时推理延迟降低 32%，成本降低 50%。这一案例证明了"小模型 + 领域微调"策略在生产场景中的巨大潜力。
 
 ## 核心要点

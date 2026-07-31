@@ -30,6 +30,15 @@
 
 ## agent 会怎么犯蠢
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 1. 任务前：上下文没吃够 (Pre-Task)
 
 Agent 在任务开始前没有拿到足够上下文，于是还没正式开工，就已经建立在错误信息或缺失信息上行动了。

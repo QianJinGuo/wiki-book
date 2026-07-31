@@ -12,6 +12,15 @@ Latent Space 对 Gray Swan 联合创始人 Zico Kolter（CMU 教授、OpenAI 董
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 ### Gray Swan 公司画像
 
 Gray Swan 是一家从 CMU 研究中孵化的 AI 安全公司，已完成 Series A 融资（Snowflake 为投资方）。其产品矩阵覆盖 AI 安全的多个层面：

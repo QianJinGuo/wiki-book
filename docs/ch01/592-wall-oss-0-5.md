@@ -14,6 +14,20 @@
 
 ## 四项核心技术
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 **梯度桥接**：动作离散化为 Token 与文本拼接到同一序列，用交叉熵损失训练——强迫主干把"看、说、动"统一在同一表征空间
 
 **视觉对齐动作 Tokenizer**：动作 Token 同时承载「电机怎么转」+「画面怎么变」，进入与视觉、语言同一语义空间

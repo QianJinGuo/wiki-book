@@ -12,6 +12,15 @@ Agent Harness 正经历从"硬编码框架"到"声明式配置驱动"再到"纠�
 
 ## 核心论点：Harness 的商品化周期
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 框架→脚手架→Harness 的术语轮回
 
 行业术语以越来越快的速度迭代：Framework → Scaffold → Harness。每一代都比上一代更"有主见"（opinionated），Harness 内置了规划、记忆、文件系统和压缩能力。但底层的经济规律没有变——构建层越来越便宜，任何可被 API 封装的层最终都会被商品化。

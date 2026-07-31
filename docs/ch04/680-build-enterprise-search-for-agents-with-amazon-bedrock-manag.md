@@ -20,6 +20,18 @@ In this post, we walk through the three pillars that make this possible: simplif
 
 ## Simplified setup
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 Developers today typically procure and bui
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-enterprise-search-for-agents-with-amazon-bedrock-manag.md)

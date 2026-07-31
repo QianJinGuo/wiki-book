@@ -14,6 +14,15 @@ AR 眼镜和可穿戴 XR 设备的硬件已成熟，但开发者面临基础设�
 
 ## 架构设计
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 XR AI 提供可复用的基础层，连接 XR 设备与 GPU 加速 AI 服务（云端/数据中心/工作站/边缘）：
 
 ```

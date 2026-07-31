@@ -14,6 +14,15 @@ AI Coding Agent Token 成本优化的完整五层模型：使用习惯→模型�
 
 ## 五层优化模型
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 | 层级 | 解决什么 | 方法 |
 |------|---------|------|
 | 使用习惯 | 无意义历史和废 Token | 一 session 一事 / 及时 compact / 外置长期信息 / CLI 优先 |

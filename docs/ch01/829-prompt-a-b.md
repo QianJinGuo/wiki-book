@@ -25,6 +25,15 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Prompt 调试的本质是工程化实验，而非艺术化的直觉迭代。 将"凭感觉调 Prompt"变成"有数据对比的 A/B 测试"，意味着 Prompt 工程正式从经验主义进入实验科学时代。数据库设计（experiments 表 + experiment_runs 表）将实验管理系统的核心抽象引入 Prompt 工程，使得任意变体之间的对比成为可能，这是工程化 Prompt 调试的基础设施前提。
 
 Temperature 参数的模型间差异揭示了模型行为不是参数位置的简单函数。 同一个 Prompt 在 GPT-4o 上 0.5 刚好，在 Claude 上可能偏放飞，需要降到 0.3。这说明不同模型的概率分布形态存在显著差异，Temperature 的绝对值不具有跨模型可比性。在做 Prompt 调试时，应先对目标模型进行 Temperature calibration，再进行 Prompt 变体对比，否则对比结论会因参数混淆而失效。

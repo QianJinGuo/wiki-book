@@ -19,6 +19,20 @@ SkillOpt：把 Agent 技能文档变成可训练对象 涉及agent领域的核�
 > 论文：Microsoft × 上海交大 × 同济 × 复旦
 > 推特点评：Rohan Paul「像训练小程序一样训练 agent 技能」
 ## 一句话定位
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 **SkillOpt = 冻结模型参数，把 agent 外部技能文档当作可训练对象，用验证集门控每一次编辑。
 3. ** 部署阶段零额外模型调用（optimizer 只在训练阶段参与）。
 4. > 类比：LoRA 冻结模型主体、只训练一个小参数适配层；**SkillOpt 冻结全部模型参数、只训练一份外挂 skill 文件** —— 社区直接称"LoRA for skills"。

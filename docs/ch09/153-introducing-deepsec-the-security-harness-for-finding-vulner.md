@@ -14,6 +14,15 @@ deepsec 的架构代表了一种新型 AI-native 安全扫描范式：不是用 
 **Vercel Sandboxes 的 fanout 能力**：对于超大型 monorepo（Vercel 自身跑出 1000+ concurrent sandboxes），并行化扫描解决了 agentic scanning 的时间瓶颈。但需要注意：fanout 到 Vercel Cloud Sandbox 意味着你的代码会离开你的基础设施——对于金融、医疗、政府等强合规要求的行业，这是一个需要评估的 data residency 问题。
 
 ## 实践启示
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - **适用场景判断**：deepsec 最适合应用层代码（web apps、后端 services），特别是有认证、数据访问、支付等高价值攻击面的系统。对于 library/framework 代码，需要自定义 scanner 和 prompt，效果可能不如应用层。
 - **集成到 SDLC**：建议将 deepsec 作为 CI 的 pre-merge gate，而非 post-deploy 扫描。越早发现安全漏洞，修复成本越低。但需要配置好 revalidate 阶段以避免阻断正常开发流程。
 - **自定义 scanner 是关键护城河**：开箱即用的 scanner 覆盖面有限。Vercel 自身在扫描自己代码库后专门开发了覆盖所有认证路径的 custom plugin。建议：用 initial scan 发现共性问题 → 让 coding agent 分析 pattern → 生成针对你 codebase 的 custom matchers。

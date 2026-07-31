@@ -56,6 +56,16 @@
 
 ## 应用案例
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考]
+    TH --> AC[行动]
+    AC --> OB[观察]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+```
+
+
 ### 快捷回复功能的三轮验证
 
 Agent 经历"发现问题→修复→再验证"循环：运行时错误导致 React 崩溃（console-check 捕获）→ 面板被 overflow:hidden 裁切（annotate-screenshot 定位）→ 全功能验证通过。

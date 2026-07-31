@@ -12,6 +12,18 @@ Couchbase 的 Capella iQ 是一个 AI-powered 开发者助手，能够生成 SQL
 
 ## 架构设计
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 Capella iQ 的推理架构基于 Amazon EKS 集群部署在 AWS 双 Region（us-east-1, us-west-2）控制平面内：
 
 - **cp-api pod**：主 API 服务，接收开发者请求、编排推理调用

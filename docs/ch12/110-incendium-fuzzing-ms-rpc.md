@@ -10,6 +10,15 @@
 Incendium: Microsoft RPC 接口深度模糊测试，漏洞发现方法论
 
 ## 摘要
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 [](/) [Remco van der Meer](/) Ethical Hacker, Security researcher
 
 ## 深度分析

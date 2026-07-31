@@ -14,6 +14,21 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **三模型同台竞技**：GPT-5.6 Sol（98.2% pass@1，84.8s）、Claude Opus 4.8（97.0%，135.2s）、Claude Sonnet 5（97.0%，146.7s）。GPT-5.6 Sol 在速度和准确率上均领先。
 2. **Prompt Caching 巨大成本节约**：通过注入 ~5500 tokens 的可缓存系统提示，在 164 题评估中将输入成本减少 84% 以上。缓存命中率 93.6%。
 3. **Sweep 模式自动参数调优**：12 种配置组合的网格搜索（apply_chat_template × thinking × max_gen_toks），自动推荐最优参数。

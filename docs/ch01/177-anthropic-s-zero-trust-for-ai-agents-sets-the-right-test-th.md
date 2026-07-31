@@ -15,6 +15,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 1. **Anthropic's policy paper on AI agent security** — Anthropic published a position paper advocating Zero Trust architecture for AI agents: every tool call should be authenticated, authorized, and audited independently, not relying on session-based trust.
 2. **The bearer token problem** — The author argues that long-lived bearer tokens (OAuth access tokens, API keys) are fundamentally incompatible with agentic AI. Agents accumulate tokens across services; if one token is compromised, the attacker has the agent's full delegated authority. The paper calls for short-lived, scoped, refresh-able credentials.
 3. **The test the bearer token fails** — A Zero Trust agent should NOT be able to perform an action it wasn't specifically authorized for in the current scope, even with a valid token. Current bearer token models fail this test: a valid `repo:read` token can sometimes be escalated to `repo:write` via confused deputy attacks.

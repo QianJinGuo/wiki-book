@@ -23,6 +23,15 @@ Published Time: Wed, 13 May 2026 15:55:13 GMT
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-misc-topics-frontier.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 Open Defense Initiative的核心判断是：AI安全攻防的时间窗口正在收窄。Mythos和GPT-5.5 Cyber已经展示了自主发现和利用漏洞的能力，而开源模型正在快速追赶。当这些能力落入恶意行为者手中时，critical开源软件将面临前所未有的攻击压力。这个判断的战略价值在于它把"防御"从被动响应升级为主动赛跑——不是在漏洞出现后修补，而是在能力扩散前加固。
 
 depthfirst的成本效率对比揭示了一个关键洞察：$1,000对$10,000的差异不仅仅是价格战，而是系统设计的胜利。在FFmpeg漏洞发现任务中，depthfirst用了1/10的成本发现了Anthropic Mythos扫描后遗漏的12个内存损坏漏洞。这说明在安全领域，模型强度不是唯一变量——专门为安全任务优化的harness（工具链）和上下文理解能力，往往比通用模型能力更能产生实际效果。

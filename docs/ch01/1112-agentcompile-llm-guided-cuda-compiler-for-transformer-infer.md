@@ -23,6 +23,21 @@ The pipeline consists of:
 
 ## Performance
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 On NVIDIA A800 SXM4 80GB GPUs, testing Qwen3-1.7B, Qwen3-4B, and Llama-3.2-1B-Instruct:
 
 | Comparison | Qwen3-1.7B | Qwen3-4B | Llama-3.2-1B |

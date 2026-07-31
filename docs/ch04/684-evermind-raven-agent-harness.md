@@ -21,6 +21,15 @@ EverMind 提出的 AI 智能体发展四阶段划分：
 
 ## EverOS 记忆系统
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 四层仿生架构：代理层 → 记忆层 → 索引层 → 接口层。核心技术：
 
 - 以传统方案 **1/10 Token 消耗**实现超越全量上下文的准确率

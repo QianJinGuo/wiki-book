@@ -17,6 +17,20 @@
 通过组合 Obsidian（声明性记忆）+ Graphify（结构性记忆）为 Claude Code 建立持久化记忆系统，将查询 token 成本从 20,000+ 降至约 280，实现 71.5 倍效率提升。
 
 ## 核心要点
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 ### 两层记忆架构
 - **Obsidian（声明性记忆）**：Zettelkasten 风格原子笔记、会话日志、架构决策；通过 /resume 和 /save 命令在会话间传递记忆
 - **Graphify（结构性记忆）**：基于 tree-sitter 的代码知识图谱生成 CLI，支持 20+ 编程语言；126 个 TypeScript 文件 → 172KB 图谱（332 节点、258 条边）

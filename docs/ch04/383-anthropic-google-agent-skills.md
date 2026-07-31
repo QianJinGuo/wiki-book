@@ -21,6 +21,15 @@ Google Cloud Tech 前些日子发布了一篇 Agent Skill 设计模式文章：�
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Google 的 5 个 Agent Skill 设计模式补上了 Skill 生态中的关键缺口：Anthropic 解决了 Skill 的格式、加载和跨产品使用问题，而 Google 补上的是 Skill 内容内部的工作流设计模式。 Skill 作为一种「过程资产」而非「提示词模板」，其内部组织结构直接决定了 Agent 能否稳定复用团队经验。格式统一之后，难点就转移到了：这个 Skill 的工作流逻辑，到底该按什么结构组织。
 
 每个设计模式背后都对应着一种常见的 Agent 失败模式。Tool Wrapper 解决「Agent 不懂某个领域」的问题，将 API 规范、框架手册等长篇参考资料从系统提示词中分离，按需加载；Generator 解决「输出格式不稳定」的问题，通过模板和风格指南分离让每次输出可预期；Reviewer 解决「审查标准难复用」的问题，将检查清单版本化，Agent 负责应用标准而非临时发明标准；Inversion 解决「Agent 没问清需求就开始生成」的问题，通过阶段化访谈强制 Agent 在进入最终方案前收集足够约束；Pipeline 解决「复杂任务跳步骤」的问题，通过检查点确保前置条件满足后才进入下一阶段。

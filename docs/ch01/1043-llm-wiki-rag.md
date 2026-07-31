@@ -45,6 +45,20 @@ RAG在网上已经死过很多遍了，谁用谁Low，但是实际上很多的�
 其中BM25算法公式如下，但对大多数同学来说略微复
 ## 相关链接
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 - [RAG 检索增强生成](https://github.com/QianJinGuo/wiki/blob/main/concepts/rag-retrieval-augmented-generation.md)
 - [知识图谱 RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/knowledge-graph-rag.md)
 

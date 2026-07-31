@@ -19,6 +19,15 @@ vivo 互联网项目团队 Jiang Zuohan 提出以 **"大模型是大脑，Agent 
 
 ## 四大身体系统问题
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 当前 Agent 系统的四个核心工程缺陷：
 
 | 身体系统 | Agent 对应 | 问题表现 |

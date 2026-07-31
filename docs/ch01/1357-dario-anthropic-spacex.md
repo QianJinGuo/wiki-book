@@ -12,6 +12,20 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 合作规模与背景
 
 - **算力交付**：SpaceX Colossus 1 全部容量——22 万+ NVIDIA GPU（H100、H200、GB200），300+ MW，一个月内部署

@@ -18,6 +18,21 @@ Harness 架构——由 Mitchell Hashimoto 命名、OpenAI 验证、Martin Fowle
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **医疗 AI 的四道门槛**：长时程（服务以月/年为单位）、可追溯（建议来源和调用链路清晰）、可执行（必须接设备、接系统、接流程）、可治理（权限、脱敏、审计一个不能少）
 - **WiseClaw 2.0**：智诊科技推出的医疗 Agent OS，底层基于 OpenClaw 连接调度 + Harness 运行治理
 - **三层流水线架构**：Triage 分诊识别 → Clinical 临床执行 → Evaluator 校验拦截，关键节点可插入人工复核

@@ -16,6 +16,21 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch-2-12-release-blog.md)
 
 ## 相关实体
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - [Pytorch 2 12 Release](ch01/090-pytorch-2-12-release-blog-pytorch.html) — 同一博客的平行存档
 
 - [profiling in pytorch (part 2): from nn.linear to a fused mlp](ch01/913-20.html)

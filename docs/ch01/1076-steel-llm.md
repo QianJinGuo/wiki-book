@@ -56,6 +56,15 @@ C = 1.81014 3600 24  25M_opt = 0.1715C0.5243 # 10701818976D_opt = 5.8316C0.4757 
 
 ---
 ## 关联
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

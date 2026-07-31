@@ -12,6 +12,20 @@ AMD "AI 开发者计划"提供免费 200 小时的云 GPU 资源（Radeon PRO W7
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 1. **AMD 免费云 GPU 入口**：AMD AI 开发者计划提供 48GB VRAM 的 Radeon PRO W7900，预装 ROCm 7.2.1 + vLLM，免费 200 小时，足以运行 14B 参数模型
 2. **ROCm 环境关键配置**：`PYTORCH_ROCM_ARCH="gfx1100"` + `HSA_OVERRIDE_GFX_VERSION=11.0.0` 是 gfx1100 的必要环境变量，缺一不可
 3. **ModelScope 国内镜像**：国内用户推荐 ModelScope 下载模型（速度几十 MB/s），避免 HuggingFace 的 GFW 限速

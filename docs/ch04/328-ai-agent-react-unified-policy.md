@@ -12,6 +12,21 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **旧架构三大原罪**：ReAct 三节点在千万级并发下暴露极高时间复杂度、上下文震荡（Context Thrashing）及控制流破碎
 - **UP-ReAct 架构**：将 Thought→Action→Iteration 三节点收敛为单一 Policy 节点，单次前向传递完成全局规划、动作选择与终止判定
 - **三个统一**：统一控制（Policy 决策中心）、统一行为（万物皆 Tool）、统一状态（Context Manager 内存管理）

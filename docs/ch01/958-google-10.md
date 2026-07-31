@@ -21,6 +21,21 @@ https://developers.google.com/program/my-benefits
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 **1. Gemini 会员订阅是获取 Google 开发者生态福利的门槛条件。** 文章明确指出"只要是订阅了 Gemini 会员的，通通可以领取"，说明 Google 将 API  Credits 作为会员权益的一部分，而非独立的开发者奖励计划。这种绑定策略既提升了 Gemini 会员的感知价值，又引导开发者深度使用 Google 的模型生态。
 
 **2. 月度手动领取机制对用户形成了定期回访的牵引。** 每月 10 美金的额度需要用户主动进入 https://developers.google.com/program/my-benefits 领取，而非自动发放。这种设计迫使开发者至少每月访问一次 Google Developers 网站，增加其他产品（Gemini 新功能、Google Cloud 更新）的曝光机会，是低成本的用户留存策略。

@@ -14,6 +14,21 @@ CADDesigner是浙江大学计算机辅助设计与图形系统全国重点实验
 
 ## ECIP（显式上下文命令式范式）
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 CADDesigner的核心创新是提出一种大模型亲和的CAD建模脚本新范式——**显式上下文命令式范式（Explicit Context Imperative Paradigm，ECIP）**。该范式致力于让LLM在生成CAD建模代码时减少猜测和错误，稳定输出可靠的几何建模结果。
 
 ECIP的三个核心设计原则：

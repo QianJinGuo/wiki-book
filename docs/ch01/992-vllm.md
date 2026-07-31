@@ -15,6 +15,21 @@ vLLM 是一个高性能的 LLM 推理和服务引擎，由 UC Berkeley 开发并
 
 ## 性能特点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - 吞吐量比 HuggingFace Transformers 高 2-24 倍
 - 支持主流开源模型（LLaMA、Mistral、Qwen、DeepSeek 等）
 - 兼容 OpenAI API 格式

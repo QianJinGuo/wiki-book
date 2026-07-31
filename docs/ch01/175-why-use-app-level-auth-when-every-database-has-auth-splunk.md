@@ -15,6 +15,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 1. **Pre-auth RCE via Splunk Enterprise search companion — CVE-2026-20253** — Splunk's `splunkd` management port (8089) exposed Python code paths (search assistant, deployment client) that didn't enforce app-level auth context. An unauthenticated attacker could trigger code execution by sending crafted JSON RPC calls.
 2. **The systemic anti-pattern: 'database has auth, so app can skip it'** — Many enterprise apps assume the underlying DB authenticates connections, so they don't re-validate user identity at the app layer. The Splunk CVE shows this is wrong: an attacker can issue RPC calls that bypass the DB layer entirely, hitting the app's internal API directly.
 3. **watchtowr's research methodology** — Black-box recon of Splunk Enterprise 9.x instances, mapping management endpoints, finding ones that returned data without proper auth context. Identified `/services/search/parser` and `/services/deploymentserver` as pre-auth reachable.

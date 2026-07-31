@@ -19,6 +19,20 @@
 
 ## 四道安全防线（零信任 Agent 管理底座）
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 这是 AgentTeams 与市面上大多数多 Agent 框架的最大差异所在：
 
 1. **AI 网关（零凭证持有）** — LLM 调用和密钥统一网关加密托管，Agent 零明文持有凭证；身份认证 + Skill/MCP 指令级拦截

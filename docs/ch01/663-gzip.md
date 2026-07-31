@@ -12,6 +12,21 @@ Nathan Barry 用 gzip（准确说是 zlib/DEFLATE）实现了语言模型——�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **压缩-预测等价性**：最优编码长度 = -log₂(p)，因此能很好压缩文本的算法本质上已建模了文本的概率分布——这就是语言模型所做的事
 2. **DEFLATE 的隐式预测**：gzip 使用 32 KiB 滑动窗口的 LZ77 算法，通过反向引用匹配已见文本——匹配越好的续写压缩越小，等价于"预测置信度越高"
 3. **Beam Search 生成**：逐字节贪心选择失败（gzip 只输出整数字节长度，量化噪声淹没信号），需要前瞻多个字节的 beam search

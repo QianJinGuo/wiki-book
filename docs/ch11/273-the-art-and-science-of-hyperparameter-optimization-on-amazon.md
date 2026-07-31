@@ -10,6 +10,20 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 The art and science of hyperparameter optimization on Amazon Nova Forge 涉及aws领域的核心技术议题。
 ### 核心观点
 1. Amazon Nova Forge addresses this by enabling you to build your own frontier models using Amazon Nova.

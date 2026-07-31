@@ -25,6 +25,15 @@ AgentCore Memory 通过三层生命周期管理元数据：配置（configuratio
 
 ## 实测效果
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 在一个基于 LoCoMo 风格多轮对话的 151 问题测试集上：
 
 - **总体 QA 准确率**：40% → 64%（+24pp）

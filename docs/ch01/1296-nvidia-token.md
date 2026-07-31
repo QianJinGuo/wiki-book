@@ -14,6 +14,14 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+```
+
+
 1. **从峰值算力到每 Token 成本的思维转变**：基础设施选型的核心指标已从 FLOPS 等峰值规格转向实际可交付的有用 Token 数量/美元
 2. **软件定义的 GPU 性能提升**：NVIDIA TensorRT LLM 开源库在 Blackwell GPU 上可将每秒生成 Token 数量提升高达 50%（Baseten 实测）
 3. **推理框架管理 GPU 集群**：NVIDIA Dynamo 推理框架为 Cognition 等客户提供了现成的 GPU 集群管理路径，无需从头构建基础设施

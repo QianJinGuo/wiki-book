@@ -8,6 +8,15 @@
 AgentBrowser 是专供 AI Agent 使用的浏览器运行时，从通用浏览器自动化演进而来，具备语义理解、站点记忆、自愈执行等能力。
 
 ## Implementations
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 ### elizaOS/agentbrowser (~25 stars)
 "A browser for your agent" — 定位最明确，有独立项目页面。
 

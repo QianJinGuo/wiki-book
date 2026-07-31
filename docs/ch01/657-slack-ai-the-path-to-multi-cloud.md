@@ -12,6 +12,21 @@ Slack AI 从单云 AWS SageMaker 到多云 LLM 推理的演进历程跨越三年
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **四阶段演进**：SageMaker 自托管 → Amazon Bedrock PT（预置吞吐） → Bedrock On-Demand 混合模式 → GCP Vertex AI 多云架构
 - **智能路由层**：指标驱动的模型选择（质量基准决定主模型）+ 自动熔断器（监测 TTFT、5xx 错误率、P90 延迟）+ A/B 测试能力
 - **多云收益**：消除单云单点故障、复杂推理任务质量提升 ~10%、高吞吐低 Token 工作负载延迟降低 ~67%

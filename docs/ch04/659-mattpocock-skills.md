@@ -32,6 +32,15 @@ MattPocock Skills 是 Total TypeScript 创始人 Matt Pocock 开源的 AI Agent 
 
 ## 关键技能
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ### wayfinder（v1.1.0）
 绿地项目/巨型功能的规划 skill，借鉴战争迷雾概念。铁律：never resolve more than one ticket per session。定位：plan, don't do。
 

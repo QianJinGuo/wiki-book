@@ -20,6 +20,16 @@ Nathan Lambert 在 Interconnects 发表的评论文章，反对美国政府对�
 
 ## 背景
 
+```mermaid
+graph TB
+    SRC[源码] --> FORK[Fork]
+    FORK --> CONTR[贡献]
+    CONTR --> REV[Review]
+    REV --> MERGE[合并]
+    MERGE --> REL[发布]
+```
+
+
 2026 年 6 月，适逢美国政府签署 AI 模型审查行政令、国会立法提案推进、以及限制外国人访问 Anthropic 模型等监管行动密集涌现。Lambert 认为这些行动可能"不经意或有意地"限制开源 AI。
 
 具体事件包括：

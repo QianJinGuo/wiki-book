@@ -14,6 +14,20 @@ James Wang 提出的 "Knowledge Agent" 模式是一种将领域专业知识预�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 ### Knowledge Agent 的知识架构
 
 Knowledge Agent 的核心创新不在于检索算法本身，而在于**知识的预处理和组织方式**。James Wang 将原始文档转化为四层结构：

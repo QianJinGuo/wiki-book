@@ -30,6 +30,15 @@ Agent Framework 是微软面向 .NET / Python 的统一 Agent 开发框架，承
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 微软 Agent Framework 的推出代表了微软在 Agent 开发领域的战略整合。通过承接 Semantic Kernel 的编排能力与 AutoGen 的多 Agent 协作机制，Framework 在单一技术栈内覆盖了从单 Agent 推理到多步编排再到服务暴露的完整能力链。这种整合并非简单合并，而是在架构层面重新划分了 Agent（开放域推理+工具自主选择）、Workflow（确定性多步编排）和 Hosting（标准化暴露）三个清晰层次，解决了此前微软 Agent 工具链碎片化的问题。
 
 框架的工具集成体系体现了对函数调用模式的成熟理解。`@tool` 装饰器配合 Pydantic `Field` 描述构建了一套自文档化的 schema，直接输入模型的 function definition，弥合了开发者意图与模型理解之间的语义鸿沟。`approval_mode` 的设计引入了一个关键的安全边界机制——在本地 Demo 可用 `never_require` 直接执行，生产环境切换为 `always_require` 或自定义审批流，这一模式与 DevSecOps 的"安全默认"理念一致。

@@ -12,6 +12,15 @@
 - **Microsoft Agent 365 GA**：成为管理所有 Agent 的集中控制平面，实现了跨 Copilot Studio、Microsoft 365 和合作伙伴生态系统的统一治理
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 这篇文章揭示了企业 AI Agent 治理的本质挑战：**可见性与控制力的永恒矛盾**。Analytics Viewer role 的推出（read-only access to agent Analytics page）是一个务实的设计选择——它将运营可见性与 Agent 配置权分离，让业务干系人获取洞察的同时不危及生产环境治理。
 Agent 365 的 GA 标志着 Microsoft 的战略重心：**不只做 Agent 构建平台（Copilot Studio），更要做企业级 Agent 控制平面**。这对企业客户的意义是：无论 Agent 在哪里构建（Copilot Studio、自研、合作伙伴），都可以用统一的策略、权限和生命周期管理。这与 ServiceNow 的 Action Fabric 战略方向高度一致——平台之战正在从"谁有最好的 UX"转向"谁有最丰富的执行层和数据"。
 另一个值得注意的细节是 Work IQ API 和 Agent-to-Agent (A2A) 通信的推进——这表明 Microsoft 正在构建多 Agent 协作的企业级基础设施，而非单一 Agent 的能力堆砌。

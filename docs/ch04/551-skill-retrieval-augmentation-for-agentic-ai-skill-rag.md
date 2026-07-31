@@ -22,6 +22,15 @@ RAG改换换了！清华提出Skill-RAG
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 **1. 技能库规模爆炸导致上下文窗口成为 Agent 瓶颈。** 截至 2026 年 4 月，仅 SkillsMP 平台就托管超过一百万个技能，OpenClaw、Claude Code 等系统也在快速增长。当技能数量从十几个增长到成千上万个时，将所有技能摘要塞进上下文的传统方法导致判断准确率断崖式下降。SRA-Bench 规模达到 26,262 个干扰技能——这不是夸张，而是真实场景的准确刻画。
 
 **2. SRA 与 RAG 有本质区别，不能简单套用。** RAG 检索的是陈述性知识（支撑文本生成），SRA 检索的是可执行能力（扩展 Agent 功能边界）。RAG 的评估指标是语义相似度，但 SRA 必须看最终任务有没有变好。这一本质差异意味着：把 RAG 系统的设计经验直接搬过来会出问题。

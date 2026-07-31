@@ -19,6 +19,27 @@
 
 ## 导读
 
+```mermaid
+graph LR
+    TRAIN[训练] --> EVAL[评估]
+    EVAL --> DEPLOY[部署]
+    DEPLOY --> MON[监控]
+    MON -->|"反馈"| EVAL
+    subgraph "工具链"
+        EXP[实验追踪<br/>MLflow/W&B]
+        CI[CI/CD]
+        OBS[可观测性]
+    end
+    EVAL --> EXP
+    DEPLOY --> CI
+    MON --> OBS
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class TRAIN,EVAL,DEPLOY,MON flow
+    class EXP,CI,OBS tool
+```
+
+
 你无法改进你无法测量的东西。
 
 本章探讨 AI 系统的评估与运维：Agent-Memory 评测全景、Skill 版本对比五大原则、Claw-SWE-Bench（首个独立测量 Harness 对编程 Agent 影响的基准）、以及 Spotify 的 LLM Eval 实践。

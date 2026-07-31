@@ -10,6 +10,21 @@
 
 ## 相关实体
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - [SEO is a product, AEO is brand](https://github.com/QianJinGuo/wiki/blob/main/entities/seo-product-aeo-brand-productledseo.md)
 
 - [Spotify Logo Gets A Makeover Turns Into A Disco Ball](../ch03/129-spotify-logo-gets-a-makeover-turns-into-a-disco-ball.html)

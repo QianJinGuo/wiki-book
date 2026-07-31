@@ -23,6 +23,21 @@ J-Space 是一小组特殊的内部神经激活模式，每个模式对应一个
 
 ## 全局工作空间理论
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 这一发现与神经科学中的「全局工作空间理论」（Global Workspace Theory）形成呼应。在认知科学中，全局工作空间是一个理论框架——大脑中大量无意识的处理过程在后台运行，只有一小部分进入意识层面的「工作空间」被我们感知到。
 
 Anthropic 发现 Claude 内部存在类似的分层结构：绝大部分激活活动在无意识中持续进行，而 J-Space 扮演着类似于「工作空间」的角色。

@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 5.0KB | `entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - 2024 年 FBI 数据：钓鱼诈骗为 top cybercrime，且随 AI 上升趋势加剧
 - 60% 的安全漏洞源于人为错误（Verizon）
 - 每次钓鱼攻击平均损失 $488 万（2024 Data Breach Report）

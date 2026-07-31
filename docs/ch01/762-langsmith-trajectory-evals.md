@@ -18,6 +18,15 @@ LangSmith Trajectory Evaluations 是一种评估 AI Agent 行为的方法，特�
 
 ## 评估模式
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 | 模式 | 说明 |
 |------|------|
 | strict | 严格匹配，要求每一步完全一致 |

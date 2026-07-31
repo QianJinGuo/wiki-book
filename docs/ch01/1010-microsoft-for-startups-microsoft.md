@@ -9,6 +9,15 @@
 - 涉及 AI 在金融领域的应用
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 Microsoft for Startups 是微软面向早期创业公司提供的综合支持计划，核心定位是"帮助创始人快速构建、智能扩展、更多销售"，通过云资源 credit + 技术支持 + 市场渠道三重维度赋能 AI 初创企业。
 
 ### 价值主张的三层结构

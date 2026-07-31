@@ -10,6 +10,15 @@
 
 ## 背景与迁移目标
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 自建 Elasticsearch 集群面临版本升级困难、跨云迁移复杂、向量搜索能力受限等挑战。典型案例场景：云上使用 ES 8.17 承载核心搜索业务，数据规模约 1TB，包含 k-NN 向量搜索（1024 维 Embedding），目标是将搜索服务迁移到 Amazon OpenSearch Service，同时将 Embedding 模型切换到 Amazon Bedrock Titan Text Embeddings V2。
 
 迁移面临三个核心挑战：数据同步（ES 8.x snapshot 不能通过 OpenSearch 原生 API 直接恢复）、查询兼容性（k-NN 向量搜索查询语法存在结构性差异）、Embedding 模型切换（向量空间不同，需分阶段切换）。

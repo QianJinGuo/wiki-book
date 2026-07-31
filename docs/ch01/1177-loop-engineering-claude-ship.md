@@ -12,6 +12,15 @@ Peakstone Labs（AI 原生量化研究实验室）开源的 claude-ship 系统�
 
 ## 七 Agent 流水线
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Seven slash commands: `/clarify` → `/architect` → (`/third_party_review`) → `/ship` → `/retro`。每个 agent 有独立人格定义、工具权限、模型分配。
 
 ### 五大设计决策

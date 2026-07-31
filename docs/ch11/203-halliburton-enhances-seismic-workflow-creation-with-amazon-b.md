@@ -9,6 +9,18 @@ Seismic data analysis is an essential component of energy exploration, but confi
 (Halliburton Bedrock GenAI article content - 15,222 chars fetched from AWS)
 
 ## 相关实体
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - [Amazon Quick Research Agentic Multi Source Citation](ch11/220-amazon-quick.html)
 - [Build Financial Document Processing With Pulse Ai And Amazon Bedrock](ch11/136-build-financial-document-processing-with-pulse-ai-and-amazon.html)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/298-ai-agent.html)

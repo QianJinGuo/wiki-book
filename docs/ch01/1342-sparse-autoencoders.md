@@ -10,6 +10,21 @@
 - [Mechanistic Interpretability](https://github.com/QianJinGuo/wiki/blob/main/concepts/mechanistic-interpretability.md) — 所属研究领域
 
 ## 深度分析
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 **SAE 是可解释性研究的"特征发现"工具**   ^[raw/anthropic-nla-natural-language-autoencoders-interpretability]
 SAE 的核心思想是：神经网络的激活向量可以被分解为大量稀疏特征的线性组合。传统上我们只能观察模型在输入上的整体激活，但无法知道模型内部具体在识别什么特征。SAE 通过训练一个编码器（将激活映射到稀疏特征）和一个解码器（将稀疏特征重建回原始激活），实现对"模型在想什么"的分解。一个典型的 SAE 可能从 GPT-4 的某个层中分解出数万个可解释的特征——比如"与 DNA 序列相关"、"与代码中的函数调用相关"、"与情感分析相关"。   ^[raw/anthropic-nla-natural-language-autoencoders-interpretability]
 **SAE 的稀疏性是工程与理论的交汇点**   ^[raw/anthropic-nla-natural-language-autoencoders-interpretability]

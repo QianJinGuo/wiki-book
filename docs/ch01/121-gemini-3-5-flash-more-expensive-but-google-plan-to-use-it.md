@@ -12,6 +12,21 @@
 - 支持 1,048,576 输入 tokens 和 65,536 最大输出 tokens，知识截止 2025 年 1 月 
 
 ## 深度分析
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 **1. Flash 系列定价激进上涨，反映 AI 模型的通胀趋势**
 Gemini 3.5 Flash 的定价是 3.1 Flash-Lite 的 6 倍，达到 $1.50/百万输入、$9/百万输出。这并非孤立现象：GPT-5.5 是 GPT-5.4 的 2 倍价格，Claude Opus 4.7 相对 4.6 涨价约 1.46 倍。三大 AI 实验室均在同步探测 API 客户的价格容忍度，高端模型涨价趋势明确 。
 **2. Google 战略：用高性能模型覆盖全部产品线，免费产品也不例外**

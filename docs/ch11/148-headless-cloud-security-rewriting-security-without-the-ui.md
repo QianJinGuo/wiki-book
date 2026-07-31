@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 7.8KB | `entities/sysdig-headless-cloud-security.md`
 
 ## 摘要
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 （见原文）
 
 ## 要点

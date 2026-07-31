@@ -27,6 +27,20 @@ vime沿用slime的核心架构思想，采用训推解耦的三段式架构，�
 
 ## 技术洞察
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 本文的核心技术价值在于：
 - 大模型RL后训练，正在从”能跑起来”走向稳定可训、高效可推、云端可及。vLLM社区推出的Vime，将slime的训练范式与vLLM的推理引擎整合为统一流水线；华为云ModelArts与昇腾计算在此基础...
 

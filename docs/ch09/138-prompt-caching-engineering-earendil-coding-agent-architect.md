@@ -16,6 +16,15 @@ Prompt caching 使这变得经济，但极为脆弱：一个 tool definition 的
 
 ## KV Cache 基础设施两种模式
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 | 模式 | 机制 | 优势 | 劣势 |
 |------|------|------|------|
 | **Session Affinity** | KV cache 保持在计算的 GPU 上/附近，后续请求路由回同一 worker | 快速，无需跨网络搬运 KV blocks | 调度受限：worker 过载、重启、evict 都会导致缓存丢失 |

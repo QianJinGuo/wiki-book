@@ -49,6 +49,21 @@ const messages: MessageParam[] = [{ role: "user", content: userInput }];while�
 
 ## 实践启示
 
+```mermaid
+graph TB
+    IN[意图] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察]
+    OB -->|"反思"| PL
+    subgraph "支撑"
+        M[记忆]
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+```
+
+
 1. **Agent 设计**: 关注控制流与上下文工程的平衡，Harness 约束比模型能力更影响成功率
 2. **可观测性**: Agent 行为调试应优先检查工具定义和上下文质量
 3. **渐进式部署**: 从简单 ReAct 循环起步，逐步引入多 Agent 编排

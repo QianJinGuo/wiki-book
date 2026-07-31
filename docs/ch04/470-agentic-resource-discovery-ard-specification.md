@@ -12,6 +12,15 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ### 从部署到发现的断层
 
 - AI 客户端已能调用外部工具、MCP 服务器、API、工作流和 Agent

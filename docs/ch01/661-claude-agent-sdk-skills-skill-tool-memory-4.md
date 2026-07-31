@@ -20,6 +20,15 @@ Claude Agent SDK 系列第 11 篇，系统阐述 Skills 在 Agent 架构中的�
 
 ## 渐进加载：Skill 的核心工程价值
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 Skill 最大的工程价值不是"把 prompt 存成文件"，而是**渐进加载**（progressive loading）——避免一启动就把所有规范塞进上下文：
 
 1. **第一层**：只暴露 Skill 目录 + 简短描述

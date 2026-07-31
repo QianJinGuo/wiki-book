@@ -51,6 +51,15 @@ MCP 放弃会引发：身份验证碎片化、无审计追踪、供应商锁定�
 
 ## 实践启示
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 1. **不要在 MCP vs CLI 之间选择，而是三层全用**：根据任务类型选择正确层——预训练工具用 CLI，复杂上下文用 Skill，企业级集成用 MCP。
 2. **渐进式发现减少上下文消耗**：使用 `tool_search` 按需加载工具，而非预加载全部，可减少 5 倍上下文使用。
 3. **Annotated 参数描述提升 MCP 工具调用成功率**：描述性函数名/参数名 + 类型标注，让 LLM 精确知道期望，减少推理失败。

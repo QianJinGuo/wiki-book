@@ -9,6 +9,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-comprehensive-guide-32k-chars.md)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 OpenClaw 的爆火并非偶然，而是精准击中了 AI Agent 落地的三个核心矛盾。
 **隐私与能力的平衡**：传统 AI 产品将数据和计算都锁在云端，用户要么牺牲隐私换取便利，要么放弃能力保安全。OpenClaw 的"本地部署 + 开源可控"模式打破了这一二元对立——数据留在本地，模型能力通过自托管实现自主控制。
 **工具调用到真正自主执行的跨越**：MCP 协议解决了"AI 能否调用工具"的问题，但 OpenClaw 的创新在于将 Skills 与 MCP 深度整合——Skills 不仅是操作手册，更是渐进式加载机制，解决了多工具同时连接时的调用不准确问题。这与"Thin Harness Fat Skills"架构理念高度一致。

@@ -19,6 +19,21 @@
 
 ## 核心工程原则
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 愿望句 vs 条件句
 - **愿望句**：把判断留给模型（"帮我把页面优化一下"）
 - **条件句**：把判断落到证据上（"首页 Lighthouse performance 提到 90 以上，最多尝试 5 次"）

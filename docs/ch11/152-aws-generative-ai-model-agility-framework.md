@@ -6,6 +6,18 @@
 
 # AWS Model Agility: 6步LLM跨代际迁移框架
 ## 核心内容
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 AWS Generative AI Model Agility Solution提供6步框架：评估→选择→迁移→验证→部署→监控，实现LLM在代际间（GPT-4→Claude/GPT-4o等）的自动化迁移与评估，降低模型更换成本。
 ## 三个关键洞察
 ### 1. 自动化评估pipeline

@@ -20,6 +20,18 @@ AI 完全颠覆了这一逻辑。关键不是技术基础（模型）的变化�
 
 ## Tao of HashiCorp：原语设计哲学
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 HashiCorp 15 年前就明白了这个道理：
 
 > "用户不想要功能，用户想要结果。"

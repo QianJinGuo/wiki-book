@@ -23,6 +23,15 @@ To learn more about the background of this book, see [Appendix C](http://w.pitul
 
 ## Principles[](http://w.pitula.me/fintech-engineering-handbook#principles)
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Everything you will read below is a way to adhere to the three principles:
 
 1.   **No invented data.** Money can’t be created out of nowhere, so we can’t tolerate duplicates or arbitrary balance updates. We enforce this with idempotency, deduplication, and reconciliation.

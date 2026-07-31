@@ -18,6 +18,15 @@ gen_ai.skill.* 属性（name/id/description/version）附着在 execute_tool Spa
 统一 Invocation + Context Manager 编程模型，插桩库只需数据提取，规范升级只改一处。支持 DashScope、Dify、AgentScope、Mem0、MCP、Agno、Google ADK、LangChain。
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 ### 为什么现有 OTel SemConv 不足以支撑 AI Agent 可观测
 传统 OTel HTTP Span 模型无法映射 AI Agent 的长程任务。一轮 ReAct 循环可能跨越数百个内部调用——模型推理、工具选择、记忆回溯——全部压缩在一条扁平 Trace 里，排查问题时无从下手。LoongSuite 引入 Entry/Step 分层：Entry Span 站在 Agent 入口锚定用户意图，Step Span 按 ReAct 阶段展开父子关系，让 trace 从"一团乱麻"变成"可折叠的目录树"。
 

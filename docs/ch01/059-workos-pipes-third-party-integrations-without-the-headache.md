@@ -12,6 +12,15 @@
 - 与 WorkOS 既有 OAuth Provider 功能的区别：OAuth Provider 依赖用户登录方式（Google 登录 → Google 数据），Pipes 完全解耦
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 ### 市场定位：API Economy 的"钻井平台"思维
 WorkOS 将自己定位为 SaaS 产品的"公用设施层"——类似 Stripe 之于支付、Plaid 之于银行账户。Pipes 的核心逻辑是：第三方服务集成是所有 SaaS 的标配，但没有任何差异化价值，应该被外包而不是自建。
 这一判断在 2024-2025 年的 AI 应用浪潮中得到强化：AI 助手需要聚合多个数据源（Calendar、Gmail、GitHub、CRM），集成的数量和复杂度远超传统 SaaS。自建方案的成本从"几天"变成"几周"，且维护负担随提供商 API 变更持续叠加。

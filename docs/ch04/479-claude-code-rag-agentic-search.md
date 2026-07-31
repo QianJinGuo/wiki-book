@@ -14,6 +14,20 @@ Boris Cherny（Claude Code 开发负责人）在 X 上分享了 Anthropic 在 Cl
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 1. **Anthropic 的技术选择** — Claude Code 团队从 RAG（向量数据库 + 检索增强生成）转向 Agentic Search（让 Agent 自主决定何时检索、检索什么），核心驱动力是简化架构并解决 RAG 的运维复杂度问题。
 
 2. **RAG 的四大结构性缺陷** — 数据管道维护复杂（清洗、分块、embedding、索引更新）、检索结果不稳定（语义相似≠相关）、无法处理需要推理的复杂查询、向量数据库本身带来安全和运维负担。

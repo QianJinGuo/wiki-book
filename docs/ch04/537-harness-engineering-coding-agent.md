@@ -7,6 +7,15 @@
 ## 核心要点
 微信文章：Harness Engineering: 让 Coding Agent 可靠完成长程任务
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [Harness Engineering耗时一周我是如何将应用的Ai Coding率提升至90的](../ch05/120-harness-engineering.html)
 - [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch04/710-claude-managed-agents.html)
 - [Agent架构关键变化Harness正在成为新后端](../ch05/009-harness.html)

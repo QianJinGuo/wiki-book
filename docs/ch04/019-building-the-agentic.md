@@ -18,6 +18,15 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 1. Gemini 3.5 Flash：面向 Agentic 工作流的速度优化
 
 Gemini 3.5 Flash 的核心定位是成为 agentic 工作流的"高速引擎"。与 3.1 Pro 相比，它在几乎所有基准测试中都有提升，同时运行速度比其他前沿模型快 4 倍。这种速度-智能的平衡对于需要实时响应的多智能体场景至关重要 。

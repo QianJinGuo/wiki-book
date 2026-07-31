@@ -14,6 +14,21 @@
 
 ## 核心观点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 1. 注意力坍塌（Attention Collapse）
 
 - Transformer架构的计算复杂度为O(n²)，上下文越长性能下降越明显

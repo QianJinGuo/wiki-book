@@ -14,6 +14,21 @@ The key innovation is repositioning the harness from a peripheral engineering fr
 
 ## Locally In-Distribution (LID) Design
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 The core architectural principle is **Locally In-Distribution** (LID): while the overall long task may be out-of-distribution, each individual model call is kept close to the training input distribution through two mechanisms:
 
 1. **Context Unloading** — Task data is stored as variables in the external program environment. The root model first encounters the task structure, while domain-specific content remains external.

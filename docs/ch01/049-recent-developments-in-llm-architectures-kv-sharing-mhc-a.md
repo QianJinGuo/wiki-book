@@ -8,6 +8,21 @@
 -
 
 ## 深度分析
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 2026年4月至5月间集中发布的新一代开源LLM架构，呈现出清晰的共同趋向：**在不影响模型质量的前提下，系统性降低长上下文场景下的KV-cache占用与计算成本**。这一转向的背景是推理模型（reasoning models）和Agent工作流需要保留大量token作为上下文，传统注意力机制的资源消耗已成为扩展瓶颈。
 当前主流的架构优化思路可归纳为四类：
 

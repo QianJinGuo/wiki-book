@@ -12,6 +12,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-8-closer-than-you-think.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 **1. Wi-Fi 8 代表从"更快"到"更可靠"的范式转变**
 David Coleman 在 Extreme Connect 2026 上将 Wi-Fi 8 定调为"Ultra High Reliability"，明确将技术目标从单纯追求 PHY 速率转向可预测的可靠性。核心技术指标包括：吞吐量提升 25%（rate over range）、延迟峰值降低 25%、丢包率降低约 25%。这意味着 Wi-Fi 8 的核心价值不在于峰值速率的营销宣传，而在于减少 Zoom 卡顿、视频流畅性和边缘一致性体验的改善。对于企业网络而言，这意味着 Wi-Fi 正从"尽力而为"的接入技术向"关键业务级"可靠连接演进。
 **2. 频谱效率智能化：非主信道接入与动态子带操作**

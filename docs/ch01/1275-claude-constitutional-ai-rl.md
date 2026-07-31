@@ -14,6 +14,20 @@ Claude 的代码领先不是单一技术突破，而是 **Constitutional AI 约�
 
 ## 核心论点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 作者叶强盛（腾讯云开发者）基于 Anthropic 公开论文 + 第一性原理推理，提出 Claude 代码能力的三层引擎模型：
 
 ```

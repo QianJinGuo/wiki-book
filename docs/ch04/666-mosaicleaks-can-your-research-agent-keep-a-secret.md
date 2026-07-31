@@ -14,6 +14,15 @@
 
 ## MosaicLeaks Benchmark
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ServiceNow 团队构建了 MosaicLeaks benchmark，专门评估研究 Agent 在以下场景下的隐私泄露程度：
 
 1. **PII 泄露**：Agent 在查询中暴露用户个人身份信息

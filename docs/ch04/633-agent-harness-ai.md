@@ -28,6 +28,21 @@
 
 ## 实践启示
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **Trace > 日志**：时间线日志需要靠猜，Trace 调用树靠 model_call_id/tool_call_id/delegation_id 字段直接关联
 2. **决策归因的价值**：让模型自己输出选择原因，等同于大模型自我反思，正确率也会变高
 3. **异常检测核心**：不是工具调用失败本身，而是连续失败不能收敛还在不停执行

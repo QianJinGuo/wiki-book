@@ -10,6 +10,15 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 臭名昭著的黑客组织 ShinyHunters 在对 Instructure 的 Canvas LMS 平台发起大规模入侵和篡改攻击后，其官方明网（clearnet）域名 `shinyhunte.rs` 被域名注册局暂停。事件发生在 2026 年 5 月 11 日（周一），域名为塞尔维亚的 `.rs` ccTLD，由塞尔维亚国家互联网域名注册局（RNIDS）管理。ShinyHunters 在暗网（.onion）站点发布公告，警告未来该明网域名可能被未知行为者重新注册用于恶意活动，并宣布将"仅通过 onion 基础设施运营"。
 
 ## 核心要点

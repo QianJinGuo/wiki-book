@@ -64,6 +64,15 @@ CVE-2026-24763，CVSS 8.8， Docker 沙箱逃逸。你以为在 Docker 里就安
 
 ---
 ## 关联
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

@@ -31,6 +31,21 @@ Agent 依赖无障碍树（accessibility tree）作为其主要数据模型。Li
 
 ## 评分机制（非传统模式）
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 与传统 Lighthouse 类别不同，Agentic Browsing 不输出加权平均分：
 - **分数形式**：通过比例（pass ratio），显示网站通过了多少 agentic 就绪检查
 - **Pass/Fail 状态**：特定审计可能因技术要求（如 WebMCP schema 有效性）不满足而报错/警告

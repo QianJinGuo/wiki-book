@@ -8,6 +8,21 @@
 - 评分：v=7 × c=8 = 56
 - Well-structured technical article explaining steering vectors with good clarity and logical flow. Demonstrates solid understanding of both naive and sophisticated steering approaches, referencing rele
 ## 相关实体
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - [Llm Steering Behavior Guidance](ch01/538-llm-steering.html)
 - [Wetesteddeepseekv4Proandflashagainstclau](ch01/1091-deepseek.html)
 - [Wetesteddeepseekv4Proandflashagainstclau](ch01/1091-deepseek.html)

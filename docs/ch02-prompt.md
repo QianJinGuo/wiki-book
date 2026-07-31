@@ -18,6 +18,32 @@
 
 ## 导读
 
+```mermaid
+graph TB
+    subgraph "提示词工程层次"
+        P1["L1 指令设计<br/>Zero/Few-shot"] --> P2["L2 上下文工程<br/>RAG + 长上下文"]
+        P2 --> P3["L3 Agent Loop<br/>自主循环"]
+    end
+    subgraph "技术"
+        COC["Chain-of-Thought"]
+        TOT["Tree-of-Thought"]
+        RAG["RAG 检索增强"]
+    end
+    P1 --> COC & TOT
+    P2 --> RAG
+    subgraph "趋势"
+        INS["从 Prompt → Agent"]
+    end
+    P3 --> INS
+    classDef level fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef tech fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef trend fill:#d1fae5,stroke:#059669,color:#064e3b
+    class P1,P2,P3 level
+    class COC,TOT,RAG tech
+    class INS trend
+```
+
+
 一个精心设计的提示词，可以让同一个模型的表现相差 10 倍。
 
 本章从最基础的 Prompt 写法开始：如何给模型足够的上下文、如何用 Few-shot 示例引导输出格式、如何用 Chain-of-Thought 让模型"展示推理过程"。然后进入更高阶的 Context Engineering——不是"写更好的提示词"，而是"设计更好的信息环境"。

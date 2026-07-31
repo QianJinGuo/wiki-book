@@ -17,6 +17,15 @@ Harness 模式的三个核心转变：
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 从 Vibe Coding 到 Harness 的必然跃迁
 
 Vibe Coding 阶段团队面临的核心痛点不是 "AI 写不好代码"，而是 **沟通成本转移而非消除**。当 AI 代写了代码实现后，前后端联调、需求拆解、Bug 修复仍然依赖人工沟通，且由于 AI 产出的代码缺乏一致性和可预测性，调试成本反而上升。

@@ -16,6 +16,15 @@
 
 ## Hook 链护栏体系
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 基于 Agent 框架的 Callback 切面（beforeTool/afterTool/beforeModel/afterModel），DECO 挂了十余个 Hook。
 
 ### 长文本完整性护栏（读写两侧 Offload）

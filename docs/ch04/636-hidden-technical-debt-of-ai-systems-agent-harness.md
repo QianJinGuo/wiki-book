@@ -14,6 +14,15 @@ Agent 系统的 Harness 层（系统提示词、工具包装器、规划-执行�
 
 ## Harness 层的五个技术债务维度
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 1. System Prompt 膨胀
 - 系统提示词持续增长，团队不断添加新规则和边界条件
 - 每次新增工具或功能都需要更新 prompt，导致维护成本指数增长

@@ -34,6 +34,15 @@ Since this is preliminary work, we do not compare against EDW or other methods i
 
 ## A short summary of our main results:
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 We focus our analysis on a dataset of 100k chat transcripts, for which we generate 20k user, thought, and response features.
 
 We find that:

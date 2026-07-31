@@ -70,6 +70,15 @@ Associate 初级
 
 ## 技术洞察
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 本文的核心技术价值在于：
 - 想从事 AI 基础架构、AI 工厂或 AI 网络相关工作，需要具备哪些核心技能？从 AI 数据中心设计、GPU 集群部署到高性能网络和 AI 运维管理，相关岗位对专业技能的要求不断提升。NVIDIA ...
 

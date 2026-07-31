@@ -20,6 +20,14 @@ NDS（Neural Dynamical Systems）方法利用神经网络嵌入连续时间微�
 
 ## 性能数据
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+```
+
+
 | 指标 | 数字 |
 |------|------|
 | 制程节点 | 40nm CMOS |

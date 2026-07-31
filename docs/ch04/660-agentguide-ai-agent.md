@@ -16,6 +16,15 @@ AgentGuide AI Agent 核心概念速查 涉及agent领域的核心技术议题。
 **来源：** AgentGuide | 2026年5月18日
 **类型：** 面试速查材料
 ## 13个核心概念速览
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 ### 1.
 2. Agent
 以LLM为核心，具备规划（Planning）、记忆（Memory）和工具调用（Tool Use）能力，能够自主拆解复杂任务、循环执行、感知反馈并持续推进任务直到完成。

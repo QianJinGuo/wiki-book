@@ -18,6 +18,26 @@
 
 ## 导读
 
+```mermaid
+graph LR
+    DATA[数据准备] --> SFT[SFT 监督微调]
+    SFT --> RL[RLHF/DPO 对齐]
+    RL --> EVAL[评估]
+    subgraph "高效训练"
+        LORA[LoRA/QLoRA]
+        DS[知识蒸馏]
+        DIST[分布式训练]
+    end
+    SFT --> LORA
+    EVAL --> DS
+    SFT --> DIST
+    classDef pipeline fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef efficient fill:#d1fae5,stroke:#059669,color:#064e3b
+    class DATA,SFT,RL,EVAL pipeline
+    class LORA,DS,DIST efficient
+```
+
+
 通用模型很强，但你的场景需要专属模型。
 
 本章从 RLHF 的经典 PPO 开始，经过 DPO（直接偏好优化）、GRPO（群组相对策略优化），到 Self-Taught RLVR（自我教学的强化学习与验证奖励）。你会看到在线蒸馏 vs 离线蒸馏的数学原理与实战对比，以及 PRISM（ICML 2026 的并行残差迭代序列模型）如何用线性注意力突破 Transformer 瓶颈。

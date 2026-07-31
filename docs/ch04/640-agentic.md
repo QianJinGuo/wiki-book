@@ -14,6 +14,21 @@
 
 ## LLM Agent作为用户侧数据理解与决策代理
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 LLM Agent使User-Governed Personalization第一次具备可操作性：Agent能读取JSON、CSV、HTML等不同格式的个人数据，将跨平台数据与用户自然语言指令结合，执行偏好建模、总结、推理、解释，并调用外部工具执行搜索、筛选和推荐任务。核心不对称性在于：平台和用户都可以使用同样的大模型，但只有用户能合法、自然地聚合跨平台与线下信息——给定同样的大模型，谁拥有更完整的用户上下文，谁就更有可能做出更好的个性化判断。
 
 ## 实验验证

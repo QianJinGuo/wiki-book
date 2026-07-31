@@ -16,6 +16,21 @@
 
 ## 核心发现
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 1. GLM 5.2 逼近 Opus 4.8，开源模型迎来突破
 
 测试中，GLM 5.2 成功跻身顶级能力梯队，在质量上与 Opus 4.8 基本持平，但单次任务成本仅1.28美元（Opus 4.8为1.94美元）。团队已着手将开源模型部署为日常开发主力。

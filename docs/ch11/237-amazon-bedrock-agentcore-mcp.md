@@ -10,6 +10,18 @@ AWS China Blog 2026-07-29 发布的深度技术文章，系统地介绍了使用
 
 ## 四种架构模式
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 ### Method 1：直接 Lambda 调用（演示和测试专用）
 绕过所有中间层，MCP 客户端直接通过 AWS SDK 调用 Lambda 函数。最快上手，但不支持标准 MCP 客户端、多用户场景和公网暴露。仅用于 PoC 和开发调试。
 

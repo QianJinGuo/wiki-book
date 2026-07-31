@@ -35,6 +35,15 @@ Agent Protocol → MCP Tool Calling → A2A Collaboration → Harness Skill
 协议层解决连通性问题，技能层解决能力复用问题。
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 1. **MCP 的出现填补了"工具调用"协议层的空白**。在 MCP 出现之前，每个 Agent 框架（LangChain、LlamaIndex、AutoGen）都自己定义工具调用的格式和流程，导致工具开发者的实现只能适配特定框架。MCP 作为通用协议，使得工具开发者只需实现一次，即可被任何支持 MCP 的 Agent 调用。这是协议标准化的典型价值——降低生态系统的交易成本。
 2. **A2A 与 MCP 的分工体现了"工具"与"协作"的概念分离**。MCP 处理 Agent 与世界的接口（Tools），A2A 处理 Agent 与 Agent 的接口（Collaborators）。这种分离是正确抽象——工具是相对静态的能力扩展，Agent 协作是动态的意图协商。将两者混用（如用 MCP 协议实现 Agent 间通信）会导致协议语义混乱和扩展性瓶颈。
 3. **Harness Skill 是 Agent 架构从"单体"向"微服务"演进的里程碑**。单体 Agent 将所有能力（prompt、tools、memory、guardrails）耦合在一起，升级任何一部分都需要修改整体。Harness Skill 将技能封装为独立单元，通过 Skill Manifest 声明能力边界和依赖关系，支持运行时动态加载和组合。这与软件架构从单体到微服务的演进路径高度相似。

@@ -16,6 +16,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **四层架构**：文档处理层（Amazon Bedrock Knowledge Base + Claude 4.5 Sonnet 生成测试场景）→ 编排层（DynamoDB + Lambda + ECS）→ 执行层（Nova Act 智能体并行执行）→ 分析层（自动化结果分析 + React Dashboard）
 - **Nova Act 的核心差异化**：基于视觉理解的浏览器交互（而非 DOM 选择器），能够像人类一样"看"页面布局并做上下文决策
 - **三级指令粒度**：从高层用户目标到详细步骤，Nova Act 在不同粒度级别上执行，便于对比分析指令细节度对执行成功率的影响

@@ -18,6 +18,25 @@
 
 ## 导读
 
+```mermaid
+graph LR
+    SRC[数据源] --> ING[采集/ETL]
+    ING --> PROC[处理/计算]
+    PROC --> STO[存储<br/>湖/仓/库]
+    STO --> SERV[服务/API]
+    subgraph "质量"
+        VAL[验证] 
+        GOV[治理]
+    end
+    ING --> VAL
+    STO --> GOV
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef qual fill:#fef3c7,stroke:#d97706,color:#78350f
+    class SRC,ING,PROC,STO,SERV flow
+    class VAL,GOV qual
+```
+
+
 没有好数据，就没有好模型。
 
 本章覆盖 AI 系统背后的数据工程：阿里云 Kafka × Iceberg 零 ETL 实时入湖、CDC（Change Data Capture）的 Write-Ahead Log 设计、ClickHouse 大规模摄取、以及 TiDB Cloud 的 Agent-Native 数据库设计。

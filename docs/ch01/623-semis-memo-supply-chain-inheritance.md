@@ -14,6 +14,15 @@
 - [semgrep intercom php supply chain](../ch12/117-semgrep-intercom-php-supply-chain.html)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 本文是Citrini Research发布的半导体Memo系列文章，深入分析了AI基础设施时代模拟和功率半导体的投资逻辑，特别是提出了"Supply Chain Inheritance"（供应链继承）这一核心投资框架。
 **投资范式转变：从简单识别到深度理解**
 文章回顾了AI基础设施投资的第一阶段：只需了解基本逻辑——大语言模型运行在GPU上买英伟达、AI计算带动光互联买相关股票、内存OEM受益买美光和SK海力士。这一简单逻辑在估值宽容的环境中获得了显著收益。然而，作者指出当前环境已发生变化，在AI基础设施领域获得超额收益需要超越"识别当前瓶颈"的深度理解能力。

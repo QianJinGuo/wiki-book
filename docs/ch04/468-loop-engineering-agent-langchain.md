@@ -14,6 +14,15 @@ Loopcraft（循环工艺）指围绕 Agent 叠加循环以成倍放大效能的�
 
 ## 四层循环栈
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ### 第一层：Agent 循环（模型 + 工具）
 
 最基本的循环：模型反复调用工具直到任务完成。LangChain 原语：`create_agent`，选择任意模型接入工具即可运行。

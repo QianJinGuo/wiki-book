@@ -14,6 +14,14 @@ DSpark 是 DeepSeek-V4-Pro 的推测性解码模块，**重点在工程落地而
 
 ## 核心要点
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+```
+
+
 ### 半自回归生成架构（Semi-Autoregressive Generation）
 
 推测性解码的经典困境：并行草稿模型（draft model）吞吐高，但后续位置的 token 接受率随位置衰减严重。DSpark 的解决方案是**混合架构**：

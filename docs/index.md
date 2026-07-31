@@ -20,6 +20,19 @@
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
+```mermaid
+graph LR
+    subgraph "五篇二十章"
+        P1["入门篇<br/>Ch01-03"] --> P2["工程师篇<br/>Ch04-10"]
+        P2 --> P3["专家篇<br/>Ch11-14"]
+        P3 --> P4["科学家篇<br/>Ch15-18"]
+        P4 --> P5["大师篇<br/>Ch19-20"]
+    end
+    classDef part fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class P1,P2,P3,P4,P5 part
+```
+
+
 ### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1362 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 

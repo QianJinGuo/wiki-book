@@ -12,6 +12,18 @@ Cloudflare 于 2026 年 6 月推出 Temporary Accounts for Agents 功能，允�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 ### 问题定义：Agent 的「人类墙壁」
 
 当前 AI 编码代理面临一个根本性障碍：几乎所有云服务的注册和认证流程都是为人类设计的——浏览器 OAuth 流程、Dashboard 点击、API Token 复制粘贴、多因素认证提示。对于坐在开发者旁边的交互式 copilot，这只是「烦人」；对于后台自主运行的 Agent，这是**硬性阻碍**。

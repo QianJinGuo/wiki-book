@@ -11,6 +11,15 @@
 - 产品定位：结构化记录和摘要助手，而非试图完全接管会议
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 Granola 的产品定位揭示了一个垂直场景 AI 原生应用的机会窗口：高频、重复、信息密集的会议记录场景。
 
 **"AI 增强而非 AI 全替代"的设计哲学**：

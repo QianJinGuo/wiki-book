@@ -27,6 +27,21 @@ Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 Anthropic 此次升级揭示了一个重要的模型优化规律：**模型能力的提升往往不是全面的，而是通过 trade-off 实现的**。Claude 4.7 在编程（SWE-bench Pro +10.9%）和视觉（XBOW +44%）上的显著提升，是以长上下文检索能力大幅退步为代价的（MRCR v2 256k 下 -32.7%，1M 下 -46.1%）。这种「此消彼长」的现象在 AI 模型迭代中并不罕见——当团队将更多参数和训练资源投向特定能力时，其他能力可能成为牺牲品。对于 AI 应用开发者而言，这意味着不能盲目追新，而需要根据自家产品的核心场景选择合适的模型版本。
 
 指令遵循能力的增强是 4.7 最容易被忽视的亮点。官方提醒旧 prompt 直接切换可能产生意外结果——以前模型会「脑补」你的意思，现在模型直接照做。这个变化对 Agent 系统影响深远：更强的指令遵循意味着更可预测的 Agent 行为，但同时也意味着 prompt 工程需要重新校准。过度模糊或带有隐含期望的 prompt 在 4.7 上可能失效，开发者需要习惯更精确、更显式的指令表达方式。

@@ -6,6 +6,18 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 **MCP 协议正在成为 AI 数据分析的标准接入层。** 业务人员希望"用自然语言就能查数据、看趋势、做归因"，而不是每次都找数据工程师、写 SQL 或打开 BI 工具。MCP（Model Context Protocol）作为 Anthropic 提出的开放协议，被 Amazon Q、Kiro、Cursor、Amazon Quick Suite 等主流 AI 产品广泛采纳，正成为大模型对接企业数据源的标准路径。 Apache Doris 社区维护的 `apache/doris-mcp-server` 提供了 25 个覆盖 SQL 执行、元数据查询、查询分析、集群监控、数据治理的原生工具集，是目前最权威的 Doris MCP 实现。这意味着 MCP 协议不只是一个技术协议，而是一个正在形成的数据分析入口标准。
 
 **轻量 API 方案无法承载"重工具"型 MCP Server。** 原生 doris-mcp-server 是一个有状态的 Python 应用，内部维护着 aiomysql 连接池，需要通过 VPC 内网访问 Doris 的 9030 查询端口。这种"有状态 + 内网访问 + 复杂业务逻辑"的组合，使得传统的 API Gateway、Lambda 或无状态容器都难以无缝承载。 `doris-mcp-server` 的 25 个工具封装了复杂业务逻辑（如 SQL 解析、慢查询归因、资源增长预测），不是简单的 REST 转发，而是需要维持数据库连接池、能长时间驻留的"重工具"。这与 Agentic Engineering 中选择 AgentCore Runtime 而非 Lambda 的逻辑完全一致——当工具本身有状态且需要复杂执行上下文时，Serverless 形态反而是约束而非优势。

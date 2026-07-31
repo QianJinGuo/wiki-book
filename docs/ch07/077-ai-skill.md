@@ -25,6 +25,21 @@ Agent 在模糊需求前反复揣摩、多轮尝试、走了一半发现方向�
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 **1. 概率模型与确定性执行的根本矛盾**
 LLM 是概率模型，每次调用在概率空间"掷骰子"；而工程化生产需要的是输入→输出的确定性映射。这个矛盾不能靠提示词优化解决，必须在架构层面把不确定性封装在最小范围内 ^
 

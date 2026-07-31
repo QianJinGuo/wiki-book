@@ -14,6 +14,21 @@ Ethan Mollick（沃顿商学院教授、AI 应用领域的权威声音）发布�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **Models / Apps / Harnesses 三分法** — 这是理解当前 AI 生态的核心框架。Models 是底层 AI 大脑（GPT-5.2、Claude Opus 4.6、Gemini 3 Pro），Apps 是用户界面（网站、桌面应用），Harnesses 是让模型能"做事"的系统（工具访问、多步任务执行）。同一模型在不同 Harness 下的表现可能天差地别。
 
 2. **三大前沿模型趋同** — Claude Opus 4.6、GPT-5.2 Thinking、Gemini 3 Pro 在整体能力上已相当接近。对大多数人而言，**App 和 Harness 的差异比模型差异更重要**。免费模型经过聊天优化，速度快但准确度显著低于付费模型。

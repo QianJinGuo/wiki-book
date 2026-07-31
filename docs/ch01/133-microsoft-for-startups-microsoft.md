@@ -12,6 +12,15 @@
 - 支持与现有云提供商并行使用，无需一次性迁移 
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 Microsoft for Startups 是微软面向早期初创企业打造的综合性支持计划，核心差异化在于将云基础设施资源与技术赋能、市场通路深度整合。与传统云厂商仅提供积分补贴不同，微软的创业支持体系呈现出三层递进结构：
 **第一层：快速启动（Build Fast）**
 通过 Startup Credits 覆盖 Azure 核心开发资源，包括虚拟机、存储、网络，以及 GitHub 和 Azure DevOps 的开发者工作流。对于 AI 方向的初创，积分还可用于 Azure AI 服务、Azure OpenAI Service 和 Azure Machine Learning 。这意味着初创可以在极低成本下完成从创意到 MVP 的完整闭环。

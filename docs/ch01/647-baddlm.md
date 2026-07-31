@@ -18,6 +18,15 @@ DLM（如 Gemini Diffusion、SEED Diffusion、LLaDA、Dream 等）通过迭代�
 
 ## 技术方案
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 ### 诱导前向掩码分布
 
 从理论上证明：DLM 的后门训练可以等价地通过构造诱导前向掩码分布（Induced Forward Masking Distribution）来实现，揭示出区别于 AR 语言模型的全新威胁面。

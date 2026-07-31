@@ -14,6 +14,15 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 1. **记忆是 Agent 从"工具"变为"伙伴"的关键基础设施**：没有记忆的 Agent 每次对话都从零开始，用户反复自我介绍、需求重复，Agent 也无法积累经验变好。
 
 2. **双方案架构**：(1) Token 效率方案——AgentCore Runtime + 纯 OpenViking 记忆，节省约 77% Token；(2) Agent 进化方案——AgentCore 短期记忆 + OpenViking 长期记忆，兼顾可靠性与自进化。

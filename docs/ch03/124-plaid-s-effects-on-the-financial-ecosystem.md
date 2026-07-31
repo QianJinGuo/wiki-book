@@ -11,6 +11,16 @@
 - 参会方涵盖传统银行（FICO、TD Bank、Truist）、金融科技（Ramp、Affirm、Brex、Copilot）、Big Tech（Databricks）及支付/加密（MoonPay）等多元生态
 
 ## 深度分析
+
+```mermaid
+graph LR
+    PROB[问题] --> SOL[方案]
+    SOL --> MKT[验证]
+    MKT --> GROW[增长]
+    GROW --> REV[收入]
+    REV -->|"再投入"| SOL
+```
+
 **Plaid 的生态位：从 API 中间件到 AI 基础设施**
 Plaid 起家于银行账户数据连接（Auth、Identity、Transactions），但 Effects 大会的议题结构揭示了其战略跃迁：从「让应用连接银行」的工具层，演进为「为 AI 提供金融数据燃料」的基础设施层。整场活动的主线并非某一款具体产品更新，而是系统性传递一个信息——Plaid 的网络是 AI 在金融场景落地的数据地基。
 这一判断有三条证据支撑：

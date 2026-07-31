@@ -15,6 +15,15 @@ Published Time: Sun, 28 Jun 2026 20:39:31 GMT
 Markdown Content:
 ## [alganet](https://alganet.github.io/)
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 [English](https://alganet.github.io/blog/2026-06-28-12-POSIX-Is-Not-A-Shell.html)[Português](https://alganet.github.io/blog/2026-06-28-12-POSIX-Nao-E-Um-Shell.pt.html)
 _Alexandre Gomes Gaigalas_ – _June 28, 2026_
 

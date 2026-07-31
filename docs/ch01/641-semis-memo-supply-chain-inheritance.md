@@ -10,6 +10,15 @@
 7×7=49 - Article ingested from newsletter candidate pipeline.
 
 ## Notes
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/citriniresearch-supply-chain-inheritance.md)
 
 ## 深度分析

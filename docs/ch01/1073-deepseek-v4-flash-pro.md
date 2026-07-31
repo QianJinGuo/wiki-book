@@ -14,6 +14,21 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 DeepSeek V4 (Flash & Pro) ：通往百万级上下文与万亿参数推理的新纪元 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # DeepSeek V4 (Flash & Pro) ：通往百万级上下文与万亿参数推理的新纪元

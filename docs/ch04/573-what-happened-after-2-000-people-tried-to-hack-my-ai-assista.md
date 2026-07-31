@@ -22,6 +22,15 @@ The secrets never leaked. No attacker managed to make Fiu send an unauthorized r
 
 ## The setup
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 I enjoy using OpenClaw and Hermes, but I’m also concerned about the security implications. AI assistants have access to emails, calendars, files, and the web. If an attacker can trick your AI into doing something it shouldn’t, that’s bad news.
 
 The goal of the exercise was to get Fiu to reveal the contents of a `secrets.env` file. Fiu was instructed not to reply to emails (it was too expensive to reply to every email), but it had the ability to do so. Part of the challenge was convincing it to respond.

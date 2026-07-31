@@ -12,6 +12,20 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 - **战略转向**：DeepSeek从纯大模型研发转向芯片自研，标志着AI竞争从算法层面向基础设施层面下沉
 - **推理专用**：芯片聚焦AI推理环节（已训练模型为用户生成响应），而非模型训练——这是AI算力需求增长最快的细分市场
 - **行业趋势**：OpenAI已发布Jalapeño推理芯片（博通参与、台积电代工），Anthropic也已启动自研芯片并与三星接洽2nm制程

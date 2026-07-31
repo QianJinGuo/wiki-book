@@ -12,6 +12,15 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 - **协议层 vs 流程层**：Foundation Protocol（FP）解决 Agent 之间的连接、发现、协作问题，属于长期基础设施；Spec-First 流程解决 Agent 进入研发流程后如何做事，属于当下的落地切入点
 - **Token 成本失控的三个源头**：重复注入（每次塞入全部上下文）、知识未分层（需求阶段混入开发规范）、过程资产不可复用（关掉对话框就丢失）
 - **降本增效可兼得**：毛卓分享了月度成本下降88%、开发效率提升3-4倍的实战案例，核心在于"写好需求一把喂给 AI"，而非反复的 Vibe Coding 式试错

@@ -12,6 +12,20 @@ AI 编码助手生成的代码可能包含 unsafe code patterns。Amazon Bedrock
 
 ## 核心概念：Text Units
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 Guardrail 消费按 text units 计算：1 text unit = 1,000 字符。每次 API 调用（无论是 1 字符还是 999 字符）都至少消耗 1 个 text unit。理解这一点是优化成本的基础。
 
 ## 架构模式 1：Pre-commit Hook 模型

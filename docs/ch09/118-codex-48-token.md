@@ -12,6 +12,21 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **后台任务偷跑额度**：即使无用户操作，后台代码审查和记忆预览功能持续消耗 token
 - **幽灵额度**：失败/超时的任务不会退回已消耗 token，导致"无产出也有消耗"
 - **统计偏差**：用量显示与实际消耗不一致，auto-review 被错误归类到模型统计中

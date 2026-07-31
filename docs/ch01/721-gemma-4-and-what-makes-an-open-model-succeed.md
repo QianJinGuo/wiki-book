@@ -14,6 +14,21 @@ Sebastian Raschka（Interconnects AI）在这篇文章中分析了 Google Gemma 
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 1. 开放模型的竞争格局已经质变
 
 2024 年开放模型发布时，竞争对手寥寥无几。2026 年，Gemma 4 面对的是：Qwen 3.5、Kimi K2.5、GLM 5、MiniMax M2.5、GPT-OSS、Arcee Large、Nemotron 3、Olmo 3 等等。开放模型的空间已经"被填充"，但仍然充满隐藏机会——开放模型的潜力像暗物质，我们知道它巨大，但解锁它的清晰配方和案例还很少。

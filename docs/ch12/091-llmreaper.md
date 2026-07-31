@@ -10,6 +10,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 演示浏览器扩展通过 DOM 访问静默窃取 LLM 对话的安全研究，涵盖 MutationObserver 攻击向量和已知供应链事件
 
 ---

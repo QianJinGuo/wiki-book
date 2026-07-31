@@ -12,6 +12,15 @@ Anthropic 发布了 Claude Cowork 的重大更新，标志着 Coding Agent 从"�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **云端持久化**：任务提交后，Cowork 在 Anthropic 云端异步执行。开发者合上电脑后，AI 继续工作，不需要保持终端连接。
 
 2. **多端覆盖**：Cowork 正式登陆手机和网页端。桌面是深度工作的主阵地（有本地文件和浏览器的完整权限），手机和网页是跟进和轻交互的子集。

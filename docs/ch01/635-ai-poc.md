@@ -23,6 +23,15 @@ AI 项目最常见的误判，是把 Demo 跑通，当成落地已经开始。
 如果你最近也在推进企业 AI 项目，下面这 4 个坎，大概...
 
 ## 关键要点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - 技术领域：AI / WeChat
 - 来源：微信公众号
 - 评分：value=7, confidence=7, product=49

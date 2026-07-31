@@ -21,6 +21,15 @@ AgentRun 是以高代码为核心、生态开放、灵活组装的一站式 Agen
 
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ### 托管 Agent 的工程化拐点
 
 AgentRun CLI 的发布标志着托管 Agent 平台从「概念验证」走向「工程化生产」的关键转折。 此前托管 Agent 的调试流程需要浏览器登录控制台、多次点击交互，而 CLI 将这一流程压缩为 63 秒即可获取首条回复。这种效率提升的本质，是将「人机交互」转变为「机器与机器之间的确定性交互」——这正是 DevOps 实践移植到 AI 运维的典型路径。

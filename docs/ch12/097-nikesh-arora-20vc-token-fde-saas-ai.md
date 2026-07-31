@@ -10,6 +10,15 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 Palo Alto Networks CEO Nikesh Arora 做客 20VC 播客，深入讨论 AI 行业的核心经济与战略议题。本文提炼六大主题：Token 定价趋势、FDE 的本质、SaaS→AI 应用转型、记忆/上下文作为护城河、分化模型世界、以及 AI 对网络安全的影响。
 
 ## 核心观点

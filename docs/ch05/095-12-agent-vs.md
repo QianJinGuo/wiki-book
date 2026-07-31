@@ -14,6 +14,15 @@ Bilgin Ibryam 提炼 Claude Code 12 个设计模式的中文深度解读，增�
 
 ## 核心隐喻
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **模式 1-11 = 脚手架**：帮 Agent 更好地工作，拆了房子还能站
 - **模式 12 = 承重墙**：系统级兜底，不依赖 Agent 记性，拆了直接塌
 

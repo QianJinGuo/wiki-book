@@ -7,6 +7,18 @@
 → （无原始来源）
 
 ## 核心内容
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 ### 云游戏与渲染技术
 AWS 在 Reinvent 上展示的云游戏 Demo 聚焦于降低延迟和提升画质：
 

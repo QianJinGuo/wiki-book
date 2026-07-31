@@ -45,6 +45,15 @@ token-level theme prototype 可能被恶意 Agents 带偏，因此 XG-Guard 引�
 
 ## 深度分析
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 & W3 --> MSG[消息]
+```
+
+
 ### 1. 无监督防御是 MAS 安全的实用起点
 
 XG-Guard 在严格无监督设定下（训练集仅包含正常对话，无人工攻击标签）即可取得高检测率。这对于 MAS 安全有现实意义——在实际部署中，攻击模式是未知的、持续演化的，依赖预设攻击模式的规则检测注定滞后。基于正常行为建模来检测偏离的方法，更适应 MAS 动态变化的安全需求。

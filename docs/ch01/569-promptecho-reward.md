@@ -36,6 +36,16 @@ publish_date: 2026-05-06
 
 ## 详细信息
 
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
+
 ---
 title: 阿里开源PromptEcho：用冻结多模态大模型为文生图训练提供高质量Reward
 source: wechat

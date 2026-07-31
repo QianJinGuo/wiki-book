@@ -10,6 +10,21 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[意图] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察]
+    OB -->|"反思"| PL
+    subgraph "支撑"
+        M[记忆]
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+```
+
+
 使用 Amazon Cognito 多区域复制提高应用程序韧性 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # 使用 Amazon Cognito 多区域复制提高应用程序韧性

@@ -14,6 +14,15 @@ Interconnects 第 22 期开放模型生态快报揭示了开放模型生态系�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **开放模型生态多元化**：模型制造者从少数中国玩家扩展到全球范围的"纯粹模型制造商"（DeepSeek、Zyphra、Poolside）、"大科技公司"（阿里 Qwen、Google Gemma）和"产品公司"（JetBrains、Zed、Krea）三类参与者。
 - **Cohere 转向完全开源**：Command A+（218B-A25B MoE）以 Apache 2.0 发布，此前版本使用非商业许可证，这一转变意义重大。模型支持多模态、多语言和 Agent 能力，可在单张 B200（4-bit）上运行。
 - **Zyphra 的 AMD GPU 训练路线**：ZAYA1-74B-preview（74B-A4B MoE）和 ZAYA1-8B（8B-A0.6B MoE）在 AMD GPU 上训练，其技术报告以有趣的架构选择著称，是研究社区中的"内幕推荐"。

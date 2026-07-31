@@ -27,6 +27,21 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？ 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？

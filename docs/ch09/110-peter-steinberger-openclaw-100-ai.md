@@ -8,6 +8,15 @@
 OpenClaw之父Peter Steinberger（@steipete）用3人团队+100个Codex AI agent运行软件开发流水线，30天花费$130万（OpenAI报销）。展示了token作为新生产资料的可能性。
 
 ## 关键数据
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - **团队规模**：3人
 - **AI agent数量**：约100个Codex实例
 - **30天成本**：$1,305,088.81（约900万人民币）

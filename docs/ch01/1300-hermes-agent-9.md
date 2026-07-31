@@ -12,6 +12,15 @@
 | **拼装链** | Prompt Assembly + SOUL.md | 知识注入 | 
 
 ## 9 大模块速览
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 | # | 模块 | 一句话 | 
 |---|------|--------| 
 | 1 | **Agent Loop** | ReAct 循环心脏，每轮与其他 8 模块对话 | 

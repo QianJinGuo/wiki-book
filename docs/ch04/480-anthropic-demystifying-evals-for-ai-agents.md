@@ -23,6 +23,15 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Anthropic 这篇文章系统性地拆解了 AI Agent 评估的核心概念框架，其价值在于将评估问题从「模糊的质量判断」转化为「可度量的工程系统」。
 
 **评估的层次结构**

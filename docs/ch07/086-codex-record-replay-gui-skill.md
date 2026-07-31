@@ -18,6 +18,15 @@ OpenAI 为 Codex 上线 Record & Replay 功能：在 macOS 上演示一次 GUI w
 
 ## 生态定位
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Record & Replay 在 Codex 生态中的位置：
 
 | 层级 | 组件 | 职责 |

@@ -8,6 +8,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 - 来源: MIT Technology Review
 - 技术领域: 网络安全、金融欺诈
 

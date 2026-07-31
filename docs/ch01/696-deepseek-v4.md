@@ -26,6 +26,21 @@ DeepSeek-V4的论文试图同时完成多件事，而且这些事之间的联系
 它们的特征是：规模极大、极度稀疏的混合专家架构（MoE），能够在保持可服务性的前提下维持前所未有的宽搜索空间。
 
 ## 关键要点
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - 技术领域：AI / WeChat
 - 来源：微信公众号
 - 评分：value=7, confidence=8, product=56

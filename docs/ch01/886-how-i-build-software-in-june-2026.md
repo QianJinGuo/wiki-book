@@ -14,6 +14,15 @@ Stafford Williams 在 2026 年 6 月分享了他当前的软件开发工作流�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 编排器驱动的工作流
 
 Williams 在 Addy Osmani 定义的 [AI 采用层级](https://addyosmani.com/blog/code-agent-orchestra/) 中处于最高级——构建了一个完整的编排器。assist 最初是 CLI/技能辅助工具，配合 Claude Code 使用；2026 年 4 月实现编排功能后，转变为控制 Claude Code 和 Codex 的中心枢纽，管理工作流在 Agent 之间的流转。

@@ -11,6 +11,15 @@ AI 智能体是一匹潜力近乎无限的「野马」，Harness Engineering 是
 AI 智能体 = SOTA 模型（野马）+ Harness（控制系统）= 卓越执行者
 
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [Harness Engineering Systematic Explainer](../ch05/120-harness-engineering.html)
 - [Harness Engineering 第三代工程范式](../ch05/120-harness-engineering.html)
 - [Harness Engineering Reliable Long Term Agent](../ch05/120-harness-engineering.html)

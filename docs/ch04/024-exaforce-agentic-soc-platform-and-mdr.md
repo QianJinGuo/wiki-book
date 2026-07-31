@@ -12,6 +12,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/exaforce-agentic-soc-platform-and-mdr.md)
 
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [The Agentic Trust Management Platform | Drata](ch04/022-the-agentic-trust-management-platform-drata.html)
 
 ## 深度分析

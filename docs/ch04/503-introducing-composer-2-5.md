@@ -11,6 +11,15 @@
 - 定价：$0.50/M input, $2.50/M output tokens
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 ### 1. Targeted RL with Textual Feedback：解决长上下文信用分配难题
 Composer 2.5 的核心技术创新之一是"Targeted RL with textual feedback"。这解决了一个关键问题：当 rollout 扩展到数十万 token 时，传统的 RL 只给出一个端到端 reward signal，但无法定位**具体哪个决策导致了reward的变化**。
 举例：如果在 500 次 tool calls 中，第 247 次调用了一个不存在的 tool，传统的 RL reward 机制只能告诉模型"这次 rollout 有问题"，但无法让模型知道"问题出在第 247 次 tool call"。结果是模型要么过度penalize自己，要么无法针对性地改进。

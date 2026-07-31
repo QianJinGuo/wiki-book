@@ -18,6 +18,20 @@ User / Project / Local 三层作用域的设计解决了协作场景中的核心
 v2.1.85 引入的 `if` 字段是配置复杂度管理的重要里程碑。以前要么用 `matcher` 全量匹配导致触发过泛，要么把判断逻辑写在脚本里导致配置与实现耦合。现在可以直接在配置层声明式地表达「当 tool_input.command matches 'git push' 时触发」，这是从命令式到声明式配置思维的转变，也是 DevOps 实践中 IaC（基础设施即代码）理念在 AI 工具链中的延伸。
 
 ## 实践启示
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 **生产环境 CI 化**：
 1. **文件保护是起点**：在 PreToolUse(Write/Edit) 中配置敏感文件拦截（.env、package-lock.json 等），exit 2 直接阻止操作并返回 JSON 反馈，这是防止 AI 误操作的第一道防线
 2. **分支保护强制执行**：PreToolUse(Bash) + `if: "tool_input.command matches 'git push.*(main|master)'"` 拦截受保护分支直推，配合功能分支工作流

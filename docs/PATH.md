@@ -28,6 +28,17 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 ## 1. 总体路线图
 
+```mermaid
+graph LR
+    BEGIN["开始"] --> FUND["基础<br/>LLM+编程"]
+    FUND --> ENG["工程<br/>Agent+Harness"]
+    ENG --> SPEC["专精<br/>训练/安全/infra"]
+    SPEC --> MAST["大师<br/>前沿+哲学"]
+    classDef stage fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class BEGIN,FUND,ENG,SPEC,MAST stage
+```
+
+
 | 阶段 | 时间建议 | 身份目标 | 核心问题 | 产出物 |
 |---|---:|---|---|---|
 | Level 0 准备期 | 1 周 | 学习者 | 如何用 wiki-book 高效学习？ | 学习表、术语卡、每周复盘模板 |

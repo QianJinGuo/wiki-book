@@ -25,6 +25,15 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **Harness 工程是 2026 年 AI Agent 领域的重心转移**
    从 Prompt Engineering（如何跟模型说话）到 Context Engineering（如何给模型喂信息），再到 Harness Engineering（如何让 Agent 真正跑起来），工程重心一直在往"让 Agent 真正能落地"的方向移动 。这反映了行业从"模型能力崇拜"向"系统工程能力"的成熟化转变。
 

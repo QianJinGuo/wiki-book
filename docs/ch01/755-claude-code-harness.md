@@ -10,6 +10,15 @@ Claude Code 的核心是 Think-Act-Observe-Repeat（TAOR）循环：模型控制
 
 ## Context 管理
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Claude Code 实现 Auto-compaction 在 50% 上下文水位时自动触发，由 LLM 摘要替代原始对话而非简单截断。Sub-Agent 使用独立 Context 预算实现隔离。Prompt Cache 经济学涉及 14 种 cache-break 向量。Session Continuity 实现了类似 git branch 的 checkpoint/rollback/fork 机制 。
 
 ## 六层记忆系统

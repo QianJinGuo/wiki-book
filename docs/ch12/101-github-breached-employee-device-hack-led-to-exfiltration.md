@@ -6,6 +6,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 - thehackernews.com 技术文章
 - 来源：https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html
 

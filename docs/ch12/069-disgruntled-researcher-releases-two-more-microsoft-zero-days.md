@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 7.1KB | `entities/disgruntled-researcher-microsoft-zero-days.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - 安全研究文章：高调白帽/灰帽研究者通过 GitHub 和博客公开 Microsoft 零日漏洞
 - v=8, c=9
 - YellowKey：BitLocker 绕过攻击，可在物理访问条件下获取 SYSTEM shell 权限

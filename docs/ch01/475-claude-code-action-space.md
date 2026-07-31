@@ -12,6 +12,20 @@
 真正上线后你会发现，最先出问题的往往是两件事：
 
 ## 相关实体
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/598-anthropic-claude-code.html)
 - [Claude Code Agent Teams Task Decomposition Ruofei](ch01/328-claude-code-agent-teams.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/078-claude-code.html)

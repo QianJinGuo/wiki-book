@@ -14,6 +14,21 @@
 - **相关实体**: [Minimax M2 7](../ch03/110-minimax-m2-7.html)（MiniMax的自我进化实践）
 
 ## M⋆ — 微软记忆Harness进化
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 **论文核心**：为每个任务自动进化专属记忆Harness程序。
 
 - **记忆程序三组件**：Schema（数据格式）+ Logic（后台操作）+ Instruction（交互提示词）

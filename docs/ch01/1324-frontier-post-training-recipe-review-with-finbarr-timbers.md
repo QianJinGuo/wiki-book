@@ -18,6 +18,20 @@
 
 ## 与现有实体的差异化
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 - **[Olmo Hybrid](ch01/428-olmo-hybrid-and-future-llm-architectures.html)**：Olmo Hybrid 重点在 architecture（hybrid GDN + attention），本文重点在 post-training recipe 维度。
 - **OLMO 系列**：Open-weight 模型的架构/训练，但 post-training 工程视角更稀缺，本文填补该角度。
 

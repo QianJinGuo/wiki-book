@@ -14,6 +14,21 @@
 
 ## 核心亮点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 1.6T 总参数 / 动态激活
 LongCat-2.0 采用 MoE 架构，总参数达 **1.6T**，通过零计算专家 + ScMoE 实现 token 级动态激活（33B~56B），简单 token 不消耗算力，复杂 token 自动获得更多计算资源。
 

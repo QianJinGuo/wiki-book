@@ -57,6 +57,15 @@ AgentCore Web Search | Amazon Bedrock AgentCore Gateway @ us-east-1
 
 ## **2\. 方案概述与原理**
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ### 2.1 问题背景
 
 许多团队通过 [LiteLLM](<https://docs.litellm.ai/>) 代理统一接入 [Amazon Bedrock](<https://aws.amazon.com/cn/bedrock/>) 上的 Claude。 但 Claude on Bedrock 不具备原生的 server-side web search——模型无法像调用工具一样自动联网搜索。 LiteLLM 为此提供了 websearch interception 机制：客户端照常发送普通对话请求，LiteLLM 在服务端 拦截模型产生的 web_search 工具调用、代为执行一次搜索、将结果拼接回上下文后再交由模型续写。整个 过程对客户端（如 Claude Code）完全透明、无需任何改动。

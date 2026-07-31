@@ -6,6 +6,15 @@
 
 > -> [offensive-security-blog](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/offensive-security-blog.md)
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [CloudSectiDbits: Masso - Cognito SSO Bypass](../ch11/252-cloudsectidbits.html)

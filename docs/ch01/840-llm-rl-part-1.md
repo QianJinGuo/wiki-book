@@ -10,6 +10,20 @@
 LLM RL中的熵：模型rollout多样性调控。熵随训练下降，维持适当熵水平重要。
 
 ## Notes
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 * Part 1 of a series on entropy in LLM reinforcement learning
 * Feed: 炼钢AI
 

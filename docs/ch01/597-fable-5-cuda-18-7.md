@@ -25,6 +25,21 @@ Fable 5 把第二名 Claude Opus 4.8 甩开了 4 倍以上的身位，实现了�
 
 ## 技术突破：首个真正的「超级内核」
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 Fable 5 写出的，是 KernelBench-Mega 历史上第一个真正的「超级内核」（megakernel）。所谓超级内核，就是把整套推理流程压进一个内核里一口气跑完，中间不落地、不切换。这是 GPU 编程里公认最难啃的写法之一，此前没有任何模型实现过。
 
 通过 `torch.profiler` 可以看到一个惊人的细节：解码每一个 Token 时，Fable 5 的内核只启动了「刚好一次」。int4 解量化、卷积、SiLU、KDA 门控 delta 状态、MLA 吸收隐变量注意力、MoE 路由加 top-8 专家、RMSNorm、KV 缓存的写入——全都塞进这一次启动里，靠 14 道网格屏障分阶段跑完。而其他所有高分模型，全都要把问题拆成 4-14 次独立的内核启动。

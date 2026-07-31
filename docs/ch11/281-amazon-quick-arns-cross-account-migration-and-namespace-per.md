@@ -8,6 +8,16 @@
 
 ## 相关实体
 
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    DEC --> RL[强化学习]
+```
+
+
 - [amazon quick arns: cross-account migration and namespace per](ch11/221-amazon-quick.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-quick-arns-cross-account-migration-and-namespace-perm.md)
 

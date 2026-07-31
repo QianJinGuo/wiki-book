@@ -14,6 +14,15 @@ Claude Code Top 1% 用户指南：从"自动补全助手"升级为一支可编�
 
 ## Claude Code 分层架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **A - 基础设施层**: CLAUDE.md 系统提示 + 工具配置
 2. **B - 交互层**: 核心对话 + 代码生成（大多数开发者止步于此）
 3. **C - 质量层**: Hooks 自动化质量门禁 + CI 集成

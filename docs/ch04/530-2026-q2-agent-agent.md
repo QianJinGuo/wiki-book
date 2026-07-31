@@ -18,6 +18,15 @@ Codex 用户中 20% 从不做编程工作，成长速度是编程用户的 3 倍
 
 ## 二、垂直行业批量装配
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 Anthropic 四月推出 Claude Design，随后推出按岗位拆分的金融 Agent（估值审核/总账核对/KYC）和法律 Agent。通用 Agent → 行业 Agent 的模式确立：只需替换行业知识、数据和工作规则，运行环境可完全复用。
 
 护城河变化：MCP 和 Harness 使垂直软件壁垒降低，企业自身的数据、权限和验收记录成为更难被复制的竞争优势。

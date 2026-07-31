@@ -5,6 +5,18 @@
 > 📊 Level ⭐⭐ | 7.3KB | `entities/higress-cncf-sandbox-ingress-nginx-replacement.md`
 
 ## 事件概述
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 近期，Higress已正式通过TOC投票表决，加入云原生计算基金会（CNCF）Sandbox项目，成为CNCF生态的一员。Higress是一款基于Envoy和Istio构建的AI原生、高性能API网关，将流量网关、微服务网关与AI网关统一于单一控制面。
 
 ## 深度分析

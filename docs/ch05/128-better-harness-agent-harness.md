@@ -10,6 +10,15 @@ Karpathy Autoresearch 证明自动优化需要实验循环，但循环能跑起�
 Better-Harness 补上了更难的一半——当评价信号错了，系统会沿着错误方向跑得更快。 
 
 ## 六步法
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 ``` 
 ①收集标注 eval 
   ↓ 

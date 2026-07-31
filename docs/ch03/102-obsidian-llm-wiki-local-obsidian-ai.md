@@ -14,6 +14,21 @@ LLM Wiki 的思路是"管理员"：AI 主动读笔记，提炼概念，写成结
 
 ## obsidian-llm-wiki-local 工作流
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 **三步流水线**（全程本地 Ollama）：
 
 1. **读取**：指定 raw/ 或 inbox 文件夹，遍历所有 .md 文件

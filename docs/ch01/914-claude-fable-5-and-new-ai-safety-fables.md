@@ -27,6 +27,21 @@ Claude Fable 5 与 AI 安全寓言新篇：通过寓言式叙事探讨 AI 安全
 
 ## 实践启示
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **工程落地**: llm方案需关注可观测性与可维护性
 2. **技术选型**: 根据场景需求选择合适方案，避免过度设计
 3. **持续迭代**: 建立反馈闭环，数据驱动优化

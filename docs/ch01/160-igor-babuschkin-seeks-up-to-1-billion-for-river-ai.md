@@ -8,6 +8,16 @@
 - 来源：https://letsdatascience.com/news/igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09
 - 评分：v=7 × c=8 = 56
 ## 相关实体
+
+```mermaid
+graph LR
+    PROB[问题] --> SOL[方案]
+    SOL --> MKT[验证]
+    MKT --> GROW[增长]
+    GROW --> REV[收入]
+    REV -->|"再投入"| SOL
+```
+
 - [Letsdatascience Igor Babuschkin Seeks Up To 1 Billion For River Ai 8C36Ce09](ch01/069-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)

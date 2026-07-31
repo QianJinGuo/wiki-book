@@ -12,6 +12,21 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **核心创新**：Domino 提出"并行 draft backbone + 轻量 causal correction"的分离式架构，在保持并行低开销的同时补回 token 间依赖
 - **关键组件**：Parallel Draft Backbone（一次 forward 生成整个 draft block 的 hidden states）+ Domino Head（轻量 GRU causal encoder + low-rank correction head）
 - **训练策略**：Teacher-forced Causal Encoding（在正确前缀条件下学习修正）+ Base-anchored Curriculum（先强化 backbone，再逐渐转向修正后的 final logits）

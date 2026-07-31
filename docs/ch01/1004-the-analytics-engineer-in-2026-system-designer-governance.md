@@ -17,6 +17,15 @@ That clarifies the role rather than shrinking it. With the repetitive work no lo
 
 ## The three new responsibilities of the analytics engineer in 2026
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 The analytics engineer in 2026 focuses less on individual model implementation and more on how the system of models works. Which models are the source of truth for which metrics? Where are the boundaries between domains? How should the [semantic layer](https://www.getdbt.com/product/semantic-layer "semantic layer") be structured so downstream AI queries return consistent answers? These are architecture decisions that require business judgment and an understanding of how the data gets used, not just how it gets built.
 
 AI can scaffold a model. It can't decide whether revenue should be defined at the order line level or the order level, or which grain is correct for a retention metric. That judgment requires understanding the business, which remains a human capability. (For a real-world look at the tradeoffs, see [who should own the semantic layer](https://www.getdbt.com/blog/semantic-layer-ownership "who should own the semantic layer").)

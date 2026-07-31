@@ -11,6 +11,16 @@
 - 评分：56（价值 × 置信度）
 - 类型：strong 级别推荐
 ## 知识关联
+
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    DEC --> RL[强化学习]
+```
+
 本文档来自 RSS 评估入库的 NVIDIA 开发者博客文章。
 ## 来源
 [原文存档（NVIDIA Developer Blog）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-agentic-ai-subsurface-engineering.md)

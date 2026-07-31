@@ -24,6 +24,20 @@ Vibe Coding 放大了缺乏工程约束的风险：没有版本控制的迭代�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 1. **为 Vibe Coding 设置护栏**：即使在使用 Vibe Coding 时，也应至少保证版本控制（git 每步 commit）和基本测试覆盖（至少一个冒烟测试）。
 2. **建立"退出 Vibe Coding"的信号**：当代码被第二次阅读、被其他人修改、或进入生产环境时，应主动切换为结构化开发模式。
 3. **Vibe 用于探索，Loop 用于交付**：用 Vibe Coding 快速探索"做什么"，用 Loop Engineering 可靠交付"怎么做"。

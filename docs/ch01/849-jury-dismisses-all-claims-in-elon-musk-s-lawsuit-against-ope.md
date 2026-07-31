@@ -11,6 +11,16 @@
 - 潜在风险：若败诉，OpenAI 和 Microsoft 可能被迫"disgorge"高达 $1500 亿
 - Musk 已表示将上诉
 ## 相关实体
+
+```mermaid
+graph LR
+    PROB[问题] --> SOL[方案]
+    SOL --> MKT[验证]
+    MKT --> GROW[增长]
+    GROW --> REV[收入]
+    REV -->|"再投入"| SOL
+```
+
 - [奥特曼最险一战 前女Cto当庭翻脸 Openai权斗彻底打到台前 6Bf26E92E29B](ch01/390-openai.html)
 - [Thehackernews Fake Openai Privacy Filter](ch01/390-openai.html)
 - [Openai Buys Ai Consultancy Enterprises](ch01/390-openai.html)

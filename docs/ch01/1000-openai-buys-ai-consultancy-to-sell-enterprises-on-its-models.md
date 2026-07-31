@@ -8,6 +8,18 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.md)
 
 ## Notes
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - Value: 7/10, Confidence: 8/10
 
 ## 相关实体
