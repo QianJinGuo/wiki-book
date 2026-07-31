@@ -63,23 +63,33 @@ Evaluator 接入 Playwright MCP，实际操作页面而非看静态截图，5-15
 ### 全栈三代理架构
 
 ```mermaid
-graph TD
-    PL["Planner<br/>1-4句提示→完整产品规格"]
-    GN["Generator<br/>按Sprint工作·React/Vite/FastAPI"]
-    EV["Evaluator<br/>Playwright MCP操作真实应用<br/> skeptic tuning"]
-    SC["Sprint Contract<br/>生成前协商完成标准"]
-    PL -->|"产品规格"| GN
-    GN --> SC
-    EV --> SC
-    GN <-->|"迭代5-15轮"| EV
-    subgraph "Context策略"
-        CR["Context Reset<br/>清空+结构化交接<br/>给模型干净上下文"]
-        CP["Compaction<br/>原地压缩总结<br/>保留连续性"]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    CR -.->|"Opus 4.5必须"| GN
-    CP -.->|"Opus 4.6可用"| GN
-    style EV fill:#ef4444,stroke:#333,color:#fff
-    style SC fill:#22c55e,stroke:#333,color:#fff
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 ```

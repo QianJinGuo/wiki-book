@@ -32,25 +32,33 @@ browser-use v0.13 的设计挑战了一个广泛假设：更好的 AI 工具 = �
 ## Browser Harness 架构（~600 行）
 
 ```mermaid
-graph TD
-    subgraph "四文件架构 ~600行"
-        RUN["run.py ~13行<br/>入口·预加载helpers"]
-        HELP["helpers.py ~192行<br/>薄CDP包装: goto/click/type/screenshot"]
-        DAEM["daemon.py ~220行<br/>CDP WebSocket长连接·崩溃检测+重连"]
-        SKI["SKILL.md<br/>LLM运行时指令"]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    subgraph "四步循环"
-        OB["Observe<br/>截图+页面信息"]
-        DE["Decide<br/>最多3个动作/步"]
-        AC["Act<br/>CDP坐标点击穿透一切"]
-        VE["Verify<br/>截图确认"]
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
     end
-    OB --> DE --> AC --> VE --> OB
-    RUN --> HELP --> DAEM
-    HELP --> AC
-    SKI --> DE
-    style HELP fill:#22c55e,stroke:#333,color:#fff
-    style AC fill:#f97316,stroke:#333,color:#fff
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 

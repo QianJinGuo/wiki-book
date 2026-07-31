@@ -36,21 +36,34 @@ mindmap
 Luke Alvoeiro 在 AI Engineer 大会上系统阐述了 Factory Mission 系统的设计哲学——当 Agent 需要完成比单个 Agent 难一两个数量级的任务时，组织方式比单点智能更重要。本文整合其演讲的核心内容：五种 Multi-Agent 协作策略、Orchestrator/Worker/Validator 三角架构、Validation Contract 与结构化 Handoff、"串行优于并行"的反直觉结论、Droid Whispering 模型选择策略，以及声明式编排逻辑。
 
 ```mermaid
-graph TD
-    ORC["Orchestrator<br/>规划·拆解·验收<br/>慢模型·深度推理"]
-    W1["Worker 1<br/>Feature 实现<br/>快模型·广度优先"]
-    W2["Worker 2<br/>Feature 实现<br/>快模型·广度优先"]
-    V1["Validator: Scrutiny<br/>代码审查·对抗性<br/>最精确模型"]
-    V2["Validator: User Testing<br/>交互验证<br/>等待人类反馈"]
-    ORC -->|"Validation Contract<br/>正确性锚定在实现之前"| W1
-    ORC -->|"Validation Contract"| W2
-    W1 -->|"Structured Handoff<br/>完成项/未完成项/退出码/问题"| V1
-    W2 -->|"Structured Handoff"| V2
-    V1 -->|"通过/拒绝"| ORC
-    V2 -->|"通过/拒绝"| ORC
-    style ORC fill:#8b5cf6,stroke:#333,color:#fff
-    style V1 fill:#ef4444,stroke:#333,color:#fff
-    style V2 fill:#ef4444,stroke:#333,color:#fff
+graph TB
+    subgraph "编排层"
+        COORD[协调器<br/>Orchestrator]
+        QUEUE[消息队列]
+    end
+    subgraph "Agent 团队"
+        W1["Worker A<br/>专项能力1"]
+        W2["Worker B<br/>专项能力2"]
+        W3["Worker C<br/>专项能力3"]
+    end
+    COORD --> QUEUE
+    QUEUE --> W1 & W2 & W3
+    W1 & W2 & W3 -->|"结果"| QUEUE
+    QUEUE -->|"汇总"| COORD
+    subgraph "共享层"
+        SHARED_MEM[共享记忆]
+        TOOL_BUS[工具总线]
+    end
+    W1 & W2 & W3 --> SHARED_MEM
+    W1 & W2 & W3 --> TOOL_BUS
+    IN[任务输入] --> COORD
+    COORD --> OUT[结果输出]
+    classDef coord fill:#dbeafe,stroke:#2563eb
+    classDef worker fill:#ede9fe,stroke:#7c3aed
+    classDef shared fill:#fef3c7,stroke:#d97706
+    class COORD,QUEUE coord
+    class W1,W2,W3 worker
+    class SHARED_MEM,TOOL_BUS shared
 ```
 
 

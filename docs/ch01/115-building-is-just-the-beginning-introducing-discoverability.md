@@ -23,39 +23,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "输入处理"
+        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
+        EMB --> POS[位置编码<br/>RoPE/ALiBi]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "Transformer Block ×N"
+        ATT[Multi-Head Attention<br/>自注意力]
+        ADD1[残差连接+LayerNorm]
+        FFN[FFN / MoE<br/>前馈/混合专家]
+        ADD2[残差连接+LayerNorm]
+        POS --> ATT --> ADD1 --> FFN --> ADD2
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    subgraph "输出"
+        PROJ[输出投影]
+        SOFT[Softmax / Sampling]
+        NEXT[Next-Token]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
+    ADD2 --> PROJ --> SOFT --> NEXT
+    subgraph "优化技术"
+        KV[KV Cache<br/>PagedAttention]
+        QUANT[量化 INT4/8]
+        SPEC[投机解码]
     end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    ATT --> KV
+    FFN --> QUANT
+    SOFT --> SPEC
+    classDef input fill:#fef3c7,stroke:#d97706
+    classDef block fill:#dbeafe,stroke:#2563eb
+    classDef output fill:#d1fae5,stroke:#059669
+    classDef opt fill:#ede9fe,stroke:#7c3aed
+    class TOK,EMB,POS input
+    class ATT,ADD1,FFN,ADD2 block
+    class PROJ,SOFT,NEXT output
+    class KV,QUANT,SPEC opt
 ```
 
 **1. "Later" 营销思维的终结** — 文章开篇即指出传统的「先做产品，SEO/品牌放到以后再说」模式已死 。在搜索渠道高度碎片化、AI 介入内容分发的时代，竞争优势窗口极短，发布即意味着需要被检索到。这对 AI 应用开发者的启示是：内容可发现性必须在架构层面而非运营层面解决。

@@ -41,32 +41,37 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
+    subgraph "项目生命周期"
+        INIT[项目创建<br/>License选择]
+        FORK[Fork/Clone<br/>本地开发]
+        CONTR[贡献代码<br/>PR流程]
     end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
+    subgraph "质量门禁"
+        CI[CI自动化<br/>测试+Lint]
+        REVIEW[Code Review<br/>同行评审]
+        MERGE[合并决策<br/>维护者审批]
     end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+    CONTR --> CI --> REVIEW --> MERGE
+    subgraph "发布"
+        VERSION[版本管理<br/>SemVer]
+        REL[发布<br/>Changelog]
+        DIST[分发<br/>PyPI/npm]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    MERGE --> VERSION --> REL --> DIST
+    subgraph "社区"
+        DISCUSS[讨论区<br/>Issue/Discord]
+        GOV[治理模型<br/>BDFL/委员会]
+    end
+    DIST --> DISCUSS --> GOV
+    GOV -->|"方向反馈"| INIT
+    classDef life fill:#dbeafe,stroke:#2563eb
+    classDef quality fill:#ede9fe,stroke:#7c3aed
+    classDef release fill:#fef3c7,stroke:#d97706
+    classDef community fill:#d1fae5,stroke:#059669
+    class INIT,FORK,CONTR life
+    class CI,REVIEW,MERGE quality
+    class VERSION,REL,DIST release
+    class DISCUSS,GOV community
 ```
 
 Mythos 发布后社区迅速将其上升为"开源 AI 太危险"的宏观叙事，但 Lambert 认为这是 composition of issues 谬误：即便承认 Claude Mythos 在网络安全场景的滥用风险是真实的，将其上升为"全国范围内禁止开源模型"的建议仍然过于宽泛。任何此类通用禁令会立即剥夺该实体影响关键技术的全部能力，而其他国家会继续构建最强开源模型——你无法杀死开源，只能影响和引导它。

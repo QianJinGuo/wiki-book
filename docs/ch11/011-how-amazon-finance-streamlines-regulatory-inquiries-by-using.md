@@ -42,32 +42,31 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
+    subgraph "法规要求"
+        GDPR[GDPR<br/>数据保护]
+        INDUSTRY[行业标准<br/>金融/医疗]
+        LOCAL[地方法规<br/>网安法/个保法]
     end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
+    subgraph "实施层"
+        MAP[合规映射<br/>要求→措施]
+        IMPL[技术实施<br/>加密/脱敏/审计]
+        TRAIN[人员培训<br/>意识提升]
     end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+    GDPR & INDUSTRY & LOCAL --> MAP
+    MAP --> IMPL & TRAIN
+    subgraph "审计层"
+        INTERNAL[内部审计<br/>自查自纠]
+        EXTERNAL[外部审计<br/>第三方认证]
+        REPORT[合规报告<br/>持续更新]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    IMPL --> INTERNAL --> EXTERNAL --> REPORT
+    REPORT -->|"法规变化"| MAP
+    classDef req fill:#fee2e2,stroke:#dc2626
+    classDef impl fill:#dbeafe,stroke:#2563eb
+    classDef audit fill:#d1fae5,stroke:#059669
+    class GDPR,INDUSTRY,LOCAL req
+    class MAP,IMPL,TRAIN impl
+    class INTERNAL,EXTERNAL,REPORT audit
 ```
 
 The scale and complexity of managing regulatory inquiries presented several interconnected challenges:

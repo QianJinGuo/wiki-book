@@ -41,32 +41,41 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
+    subgraph "数据源"
+        API[API 接口]
+        DB_SRC[(数据库)]
+        STREAM[流式数据]
+        FILES[文件/日志]
     end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
+    subgraph "采集层"
+        INGEST[数据摄入<br/>Kafka/Flink]
+        CDC[变更捕获<br/>CDC]
     end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+    API & DB_SRC --> INGEST
+    DB_SRC --> CDC
+    STREAM & FILES --> INGEST
+    subgraph "处理层"
+        CLEAN[清洗/去重]
+        TRANSFORM[转换/计算]
+        QUALITY[质量校验]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    INGEST & CDC --> CLEAN --> TRANSFORM --> QUALITY
+    subgraph "存储层"
+        LAKE[数据湖<br/>Iceberg/Delta]
+        WH[数据仓库<br/>ClickHouse]
+        FEAT[特征存储<br/>Feast]
+    end
+    QUALITY --> LAKE
+    QUALITY --> WH
+    QUALITY --> FEAT
+    classDef src fill:#fef3c7,stroke:#d97706
+    classDef ing fill:#dbeafe,stroke:#2563eb
+    classDef proc fill:#ede9fe,stroke:#7c3aed
+    classDef sto fill:#d1fae5,stroke:#059669
+    class API,DB_SRC,STREAM,FILES src
+    class INGEST,CDC ing
+    class CLEAN,TRANSFORM,QUALITY proc
+    class LAKE,WH,FEAT sto
 ```
 
 1. **AI投资前先做数据健康检查**：在启动任何AI项目前，系统性地评估数据的完整性、一致性、时效性和可访问性

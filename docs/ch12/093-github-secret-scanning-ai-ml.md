@@ -28,39 +28,37 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "项目生命周期"
+        INIT[项目创建<br/>License选择]
+        FORK[Fork/Clone<br/>本地开发]
+        CONTR[贡献代码<br/>PR流程]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "质量门禁"
+        CI[CI自动化<br/>测试+Lint]
+        REVIEW[Code Review<br/>同行评审]
+        MERGE[合并决策<br/>维护者审批]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    CONTR --> CI --> REVIEW --> MERGE
+    subgraph "发布"
+        VERSION[版本管理<br/>SemVer]
+        REL[发布<br/>Changelog]
+        DIST[分发<br/>PyPI/npm]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
+    MERGE --> VERSION --> REL --> DIST
+    subgraph "社区"
+        DISCUSS[讨论区<br/>Issue/Discord]
+        GOV[治理模型<br/>BDFL/委员会]
     end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    DIST --> DISCUSS --> GOV
+    GOV -->|"方向反馈"| INIT
+    classDef life fill:#dbeafe,stroke:#2563eb
+    classDef quality fill:#ede9fe,stroke:#7c3aed
+    classDef release fill:#fef3c7,stroke:#d97706
+    classDef community fill:#d1fae5,stroke:#059669
+    class INIT,FORK,CONTR life
+    class CI,REVIEW,MERGE quality
+    class VERSION,REL,DIST release
+    class DISCUSS,GOV community
 ```
 
 

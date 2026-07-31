@@ -62,24 +62,37 @@ Planner、Coder、Reviewer、Tester 各一个 agent，消息总线编排。结�
 ## 7 个关键工程决策
 
 ```mermaid
-graph TD
-    subgraph "Cache命中率优化"
-        D1["1.双Cache标记<br/>滚动双缓冲·单步回退仍命中"]
-        D2["2.System Prompt字节冻结<br/>动态信息写成普通消息"]
-        D3["3.Skill子Agent<br/>invoke_skill·状态隔离·16工具"]
-        D4["4.固定16个工具<br/>schema稳定·cache前缀不变"]
-        D5["5.压缩不换模型<br/>同模型做摘要·共享前缀"]
+graph TB
+    subgraph "查询处理"
+        Q[用户查询] --> REWRITE[查询改写]
+        REWRITE --> EXPAND[查询扩展]
     end
-    subgraph "失败教训"
-        F1["❌ RAG/知识库<br/>90%召回率不够·延迟+部件"]
-        F2["❌ 多Agent编排<br/>交接即miss·成本翻6倍"]
+    subgraph "多路召回"
+        BM25[BM25<br/>关键词检索]
+        VDB[向量检索<br/>语义相似度]
+        GRAPH[近邻图<br/>TF-IDF余弦]
     end
-    D1 --> D2 --> D3 --> D4 --> D5
-    F1 -.->|"不要搞RAG"| D3
-    F2 -.->|"不要做多Agent"| D3
-    style D3 fill:#8b5cf6,stroke:#333,color:#fff
-    style F1 fill:#ef4444,stroke:#333,color:#fff
-    style F2 fill:#ef4444,stroke:#333,color:#fff
+    EXPAND --> BM25 & VDB & GRAPH
+    subgraph "重排序与融合"
+        RERANK[Reranker<br/>交叉编码器]
+        MERGE[分数融合<br/>RRF/加权]
+    end
+    BM25 & VDB & GRAPH --> RERANK --> MERGE
+    subgraph "上下文工程"
+        INJECT[上下文注入]
+        COMPRESS[压缩/摘要]
+    end
+    MERGE --> INJECT --> COMPRESS
+    COMPRESS --> LLM[LLM 生成]
+    LLM --> ANS[回答]
+    classDef query fill:#dbeafe,stroke:#2563eb
+    classDef recall fill:#ede9fe,stroke:#7c3aed
+    classDef rerank fill:#fef3c7,stroke:#d97706
+    classDef ctx fill:#d1fae5,stroke:#059669
+    class Q,REWRITE,EXPAND query
+    class BM25,VDB,GRAPH recall
+    class RERANK,MERGE rerank
+    class INJECT,COMPRESS,LLM ctx
 ```
 
 

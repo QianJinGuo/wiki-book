@@ -29,23 +29,33 @@ mindmap
 跨框架反复出现的 6 个稳定对象：
 
 ```mermaid
-graph TD
-    TH["Thread / Session<br/>一段长期上下文<br/>这是谁的哪段任务？"]
-    RU["Run / Task<br/>一次具体执行<br/>这次跑了什么？"]
-    ST["Step<br/>可观测步骤<br/>哪一步调了模型/工具？"]
-    EV["Event<br/>进展变化<br/>现在发生了什么？"]
-    AR["Artifact<br/>正式结果<br/>结果在哪里？"]
-    CK["Checkpoint<br/>可恢复快照<br/>中断后从哪继续？"]
-    TH --> RU --> ST --> EV
-    RU --> AR
-    RU --> CK
-    CK -.->|"resume"| RU
-    style TH fill:#ef4444,stroke:#333,color:#fff
-    style RU fill:#f97316,stroke:#333,color:#fff
-    style ST fill:#eab308,stroke:#333,color:#000
-    style EV fill:#22c55e,stroke:#333,color:#fff
-    style AR fill:#3b82f6,stroke:#333,color:#fff
-    style CK fill:#8b5cf6,stroke:#333,color:#fff
+graph TB
+    subgraph "Agent 内核"
+        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
+        EX --> OB[观察器<br/>Observer]
+        OB -->|"反馈"| PL
+    end
+    subgraph "能力层"
+        SK[技能<br/>Skills]
+        TL[工具<br/>Tools]
+        MM[记忆<br/>Memory]
+    end
+    PL --> SK
+    PL --> MM
+    EX --> TL
+    OB --> MM
+    subgraph "护栏"
+        GRD[输入校验]
+        OUT_GRD[输出过滤]
+    end
+    IN[用户意图] --> GRD --> PL
+    OUT[响应] --> OUT_GRD --> USR[用户]
+    classDef core fill:#dbeafe,stroke:#2563eb
+    classDef cap fill:#ede9fe,stroke:#7c3aed
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    class PL,EX,OB core
+    class SK,TL,MM cap
+    class GRD,OUT_GRD guard
 ```
 
 

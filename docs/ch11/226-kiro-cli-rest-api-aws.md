@@ -22,39 +22,36 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "意图理解"
+        NAT[自然语言描述] --> PARSE[意图解析]
+        PARSE --> CTX[上下文收集<br/>代码库/配置]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "代码生成"
+        PLAN[任务分解] --> GEN[代码生成]
+        GEN --> REVIEW[静态分析]
+        REVIEW -->|"问题"| GEN
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    subgraph "验证闭环"
+        TEST[运行测试]
+        LINT[风格检查]
+        FIX[自动修复]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
+    GEN --> TEST & LINT
+    TEST -->|"失败"| FIX --> GEN
+    subgraph "知识库"
+        SKILLS[技能/模板]
+        DOCS[文档/示例]
     end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    CTX --> PLAN
+    PLAN --> SKILLS & DOCS
+    classDef intent fill:#dbeafe,stroke:#2563eb
+    classDef gen fill:#ede9fe,stroke:#7c3aed
+    classDef verify fill:#d1fae5,stroke:#059669
+    classDef kb fill:#fef3c7,stroke:#d97706
+    class NAT,PARSE,CTX intent
+    class PLAN,GEN,REVIEW gen
+    class TEST,LINT,FIX verify
+    class SKILLS,DOCS kb
 ```
 
 将 Kiro CLI 封装为 REST API：双通道架构实践 by awschina on 26 3月 2026 in Artificial Intelligence Permalink Share 摘要：Kiro CLI 是 AWS 推出的终端 AI 编码工具，原生只支持 stdio 交互，无法被程序化调用。本文介绍将其封装为标准 REST API 的完整实现方案，重点说明双通道架构的设计决策，以及 ACP 协议通信中的关键技术细节。 目录 01 1. 引言 02 2. 核心挑战：ACP 协议与模型切换 03 3. 双通道架构设计 04 4. 关键实现细节 05 5. 对外接口与已知限制 06 6. 总结 07 7. 致谢与参考 1. 引言 随着 AI 编码工具的普及，如何将这些工具集成到现有的自动化流程和团队工作流中，已成为工程实践中的实际需求。Kiro CLI 是 AWS 推出的终

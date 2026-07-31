@@ -44,32 +44,34 @@ source_url: https://mp.weixin.qq.com/s/ieQhpziDVspRQ0Kun_mYzw
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
+    subgraph "Agent 核心"
+        INT[意图理解] --> PLAN[任务规划]
+        PLAN --> EXEC[工具选择与调用]
+        EXEC --> VERIFY[结果验证]
+        VERIFY -->|"失败重试"| PLAN
     end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
+    subgraph "工具层"
+        direction LR
+        FT[Function<br/>自定义函数]
+        MT[MCP Server<br/>外部服务]
+        API[REST API<br/>HTTP调用]
     end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+    EXEC --> FT
+    EXEC --> MT
+    EXEC --> API
+    subgraph "安全层"
+        AUTH[权限检查]
+        SANDBOX[沙箱隔离]
+        AUDIT[审计日志]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    EXEC --> AUTH --> SANDBOX
+    SANDBOX --> AUDIT
+    classDef agent fill:#dbeafe,stroke:#2563eb
+    classDef tool fill:#d1fae5,stroke:#059669
+    classDef sec fill:#fee2e2,stroke:#dc2626
+    class INT,PLAN,EXEC,VERIFY agent
+    class FT,MT,API tool
+    class AUTH,SANDBOX,AUDIT sec
 ```
 
 **Skill 生态正在经历从"数量"到"质量"的筛选节点。** 文章开篇指出了一个关键判断：开发者面临的主要问题已从"工具不足"转变为"选择困难"。Skill 数量正在快速增长，但质量参差不齐，缺乏统一标准。这意味着 Skill 市场的竞争焦点正在从"谁有更多 Skill"转向"谁的 Skill 质量更高、更可落地"。未来 Skill 的核心竞争力不在于功能数量，而在于场景贴合度、执行可靠性和可维护性。
