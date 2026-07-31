@@ -2,6 +2,19 @@
 
 ## Ch05.022 AI Friendly 架构设计：后端系统面向无人值守开发时代的标准与路径
 
+```mermaid
+graph TB
+    subgraph AIFriendly["AI Friendly 架构"]
+        DISC[可发现性: 清晰目录/命名/类型]
+        DISC --> PRED[可预测性: 稳定接口/约定优于配置]
+        PRED --> ISOL[可隔离性: 沙箱/幂等/回滚]
+        ISOL --> OBS2[可观测性: 结构化日志/trace]
+    end
+    subgraph Anti["反模式"]
+        IMPL[隐式约定] --> FRAG[脆弱集成]
+    end
+```
+
 > 📊 Level ⭐⭐ | 17.6KB | `entities/ai-friendly-architecture-design.md`
 
 # AI Friendly架构设计

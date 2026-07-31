@@ -2,6 +2,21 @@
 
 ## Ch05.005 Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
 
+```mermaid
+graph TB
+    subgraph ECC["ECC 开源实现"]
+        E[Execute: 执行层] --> C[Control: 控制层]
+        C --> CC[Constrain: 约束层]
+    end
+    subgraph Pipeline["交付管线"]
+        SPEC[Spec 定义] --> PLAN[Plan 规划]
+        PLAN --> CODE[Code 实现]
+        CODE --> VERIFY[Verify 验证]
+        VERIFY --> DEPLOY[Deploy 部署]
+    end
+    ECC --> Pipeline
+```
+
 > 📊 Level ⭐⭐ | 31.1KB | `entities/harness-engineering-paradigm-comprehensive-2026.md`
 
 # Harness Engineering 综合论述：为什么 2026 年真正重要的是它

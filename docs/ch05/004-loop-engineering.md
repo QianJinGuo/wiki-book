@@ -2,6 +2,21 @@
 
 ## Ch05.004 Loop Engineering: 把反馈循环放进工程现场
 
+```mermaid
+graph TB
+    subgraph Loop["反馈循环工程"]
+        OBS[观察: 收集信号] --> MEA[测量: 量化偏差]
+        MEA --> ACT[行动: 调整策略]
+        ACT --> OBS
+    end
+    subgraph Types["三类循环"]
+        INNER[内循环: 单步质量]
+        MID[中循环: 任务级反馈]
+        OUTER[外循环: 系统自改进]
+    end
+    INNER --> MID --> OUTER
+```
+
 > 📊 Level ⭐⭐ | 32.2KB | `entities/loop-engineering-feedback-control-system.md`
 
 # Loop Engineering: 把反馈循环放进工程现场

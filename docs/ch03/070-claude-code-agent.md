@@ -2,6 +2,19 @@
 
 ## Ch03.070 花叔的 Claude Code 多 Agent 用量画像
 
+```mermaid
+graph TB
+    subgraph Usage["Claude Code 用量画像"]
+        COORD[Coordinator Agent] --> W1[Worker: 文件编辑]
+        COORD --> W2[Worker: 测试运行]
+        COORD --> W3[Worker: 代码搜索]
+    end
+    subgraph Patterns["使用模式"]
+        P1[单Agent: 快速修复] --> P2[双Agent: 编辑+验证]
+        P2 --> P3[多Agent: 复杂功能]
+    end
+```
+
 > 📊 Level ⭐⭐ | 12.3KB | `entities/claude-code-agent-view-huashu.md`
 
 > 花叔：AI 编程进入多 Agent 阶段后，真正稀缺的不是执行力，而是人类的注意力、判断力和调度力。

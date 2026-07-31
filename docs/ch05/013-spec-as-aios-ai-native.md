@@ -2,6 +2,20 @@
 
 ## Ch05.013 Spec as AIOS：AI-Native 全栈交付的抗熵架构（高德技术系列第二期）
 
+```mermaid
+graph TB
+    subgraph AIOS["Spec as AIOS 抗熵架构"]
+        SPEC2[Spec 唯一真源] --> L1[三层递进: L1基础规范]
+        L1 --> L2[L2 进程规范]
+        L2 --> L3[L3 项目规范]
+    end
+    subgraph Gate["三级门禁"]
+        G1[自动门禁: lint/type] --> G2[Agent门禁: 架构合规]
+        G2 --> G3[人工门禁: 关键决策]
+    end
+    L3 --> Gate
+```
+
 > 📊 Level ⭐⭐ | 23.1KB | `entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md`
 
 # Spec as AIOS：AI-Native 全栈交付的抗熵架构

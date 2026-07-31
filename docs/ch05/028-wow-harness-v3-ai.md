@@ -13,6 +13,24 @@
 
 ## 一句话定位
 
+```mermaid
+graph TB
+    subgraph V3["wow-harness v3 治理协议"]
+        TL[事件时间线: 唯一真相源] --> CG[概念图: 工程概念生命周期]
+        CG --> V[双层验证: 自检+cross-validator]
+        V --> AUTO[自动扩张图: 协议驱动调度]
+    end
+    subgraph Lifecycle["概念生命周期"]
+        CRE[创建] --> MOD[修改]
+        MOD --> REP[被替换]
+        REP --> RET[退役]
+    end
+    AUTO -->|事件触发| SPAWN[自动spawn新session]
+    SPAWN -->|无状态| CAPSULE[上下文胶囊]
+    
+    style V3 fill:#e8f5e9
+```
+
 **"AI 写得越多，我维护它越累"** —— 不是 AI 不够聪明，是它每次都重新发明你之前已经建立过的约定。v3 用**协议 + 物理拦截 + 事件溯源**解决这个问题。
 
 ## 设计哲学：套具比模型重要

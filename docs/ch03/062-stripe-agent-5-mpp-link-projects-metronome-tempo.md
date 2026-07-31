@@ -2,6 +2,16 @@
 
 ## Ch03.062 Stripe Agent 经济基础设施 5 套图谱：MPP + Link + Projects + Metronome/Tempo + Radar
 
+```mermaid
+graph TB
+    subgraph Stripe["Stripe Agent 经济基础设施"]
+        MPP[MPP: 商户到平台] --> LINK[Link: 身份与支付]
+        LINK --> PROJ[Projects: 多方协作]
+        PROJ --> MET[Metronome: 计量计费]
+        MET --> RAD[Radar: 风控]
+    end
+```
+
 > 📊 Level ⭐⭐ | 15.5KB | `entities/stripe-agent-economic-infrastructure-5-products.md`
 
 # Stripe Agent 经济基础设施 5 套图谱

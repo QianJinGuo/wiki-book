@@ -2,6 +2,24 @@
 
 ## Ch05.003 Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
 
+```mermaid
+graph LR
+    subgraph G1["第一代: Prompt Engineering"]
+        P[提示词优化] --> M[模型输出]
+    end
+    subgraph G2["第二代: Agent Loops"]
+        M2[模型] --> T[工具调用]
+        T -->|反馈| M2
+    end
+    subgraph G3["第三代: Harness Engineering"]
+        H[Harness 承重层] -->|编排| M3[模型]
+        M3 -->|受控执行| T3[工具+沙箱]
+        T3 -->|验证| V[检查点]
+        V -->|回写| H
+    end
+    G1 --> G2 --> G3
+```
+
 > 📊 Level ⭐⭐ | 37.1KB | `entities/harness-engineering.md`
 
 ## 核心命题
