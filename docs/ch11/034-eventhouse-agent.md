@@ -2,6 +2,20 @@
 
 ## Ch11.034 阿里云 EventHouse 企业级 Agent 上下文构建五维框架
 
+```mermaid
+graph TB
+    subgraph Five["五维上下文框架"]
+        D1[维度1: 时序上下文]
+        D2[维度2: 实体关系]
+        D3[维度3: 环境状态]
+        D4[维度4: 用户画像]
+        D5[维度5: 任务意图]
+    end
+    Five --> AG[Agent 决策]
+    AG --> |反馈| EventHouse[EventHouse 存储]
+    EventHouse --> |增量更新| Five
+```
+
 > 📊 Level ⭐⭐ | 14.5KB | `entities/alibaba-eventhouse-enterprise-agent-context.md`
 
 ## 为什么 AI Coding 先跑通，行业 Agent 落地难

@@ -2,6 +2,20 @@
 
 ## Ch04.033 Powering agentic AI sales strategy with Amazon Bedrock AgentCore
 
+```mermaid
+graph TB
+    subgraph AgentCore["Amazon Bedrock AgentCore"]
+        G[Gateway] --> K[Knowledge Base]
+        G --> B[Browser Tool]
+        G --> C[Code Interpreter]
+    end
+    subgraph Sales["销售策略"]
+        CRM[CRM 数据] --> KB[客户洞察]
+        KB --> REC[推荐引擎]
+    end
+    AgentCore --> Sales
+```
+
 > 📊 Level ⭐⭐ | 35.7KB | `entities/powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md`
 
 # Powering agentic AI sales strategy with Amazon Bedrock AgentCore

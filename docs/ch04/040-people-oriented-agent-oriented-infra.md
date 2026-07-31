@@ -16,6 +16,23 @@
 
 ## 一句话定位
 
+```mermaid
+graph LR
+    subgraph Traditional["传统: People-Oriented"]
+        INT1[意图] -->|人翻译| CODE1[代码沉淀]
+        CODE1 -->|月级循环| INT1
+    end
+    subgraph Agent["Agent: Agent-Oriented"]
+        INT2[意图] -->|Agent理解| CODE2[代码生成+沉淀]
+        CODE2 -->|分钟级循环| INT2
+    end
+    
+    subgraph Sawtooth["Agent 占比锯齿形"]
+        direction TB
+        UP[意图涌入 → Agent占比陡升] --> DOWN[逻辑固化 → 代码沉淀缓降]
+    end
+```
+
 **"软件一直是'意图驱动 + 代码沉淀'的进化体"**——这个模式从未改变，改变的只是**驱动和沉淀的速度与机制**。Agent 革命的本质是**把循环速度从月级压缩到分钟级**。
 
 ## 0. 从一个周报系统说起

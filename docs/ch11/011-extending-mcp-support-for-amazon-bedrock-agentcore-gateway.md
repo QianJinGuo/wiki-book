@@ -2,6 +2,19 @@
 
 ## Ch11.011 Extending MCP support for Amazon Bedrock AgentCore Gateway
 
+```mermaid
+graph LR
+    subgraph MCP["MCP 生态"]
+        S1[MCP Server 1]
+        S2[MCP Server 2]
+        S3[MCP Server N]
+    end
+    GW[AgentCore Gateway] -->|MCP 协议| MCP
+    AG[Agent] -->|请求| GW
+    GW -->|工具发现| AG
+    GW -->|认证+审计| POL[策略引擎]
+```
+
 > 📊 Level ⭐⭐ | 32.1KB | `entities/amazon-bedrock-agentcore-gateway-mcp-extension.md`
 
 # Extending MCP support for Amazon Bedrock AgentCore Gateway

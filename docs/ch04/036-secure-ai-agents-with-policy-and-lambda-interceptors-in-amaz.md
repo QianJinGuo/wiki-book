@@ -2,6 +2,22 @@
 
 ## Ch04.036 Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock
 
+```mermaid
+sequenceDiagram
+    participant User as 用户
+    participant Policy as Policy Interceptor
+    participant Lambda as Lambda Interceptor
+    participant Agent as Bedrock Agent
+    User->>Policy: 请求
+    Policy->>Policy: 检查策略合规
+    Policy->>Lambda: 通过策略检查
+    Lambda->>Lambda: 执行预处理逻辑
+    Lambda->>Agent: 转发请求
+    Agent-->>Lambda: 返回结果
+    Lambda-->>Policy: 后处理
+    Policy-->>User: 响应
+```
+
 > 📊 Level ⭐⭐ | 32.4KB | `entities/secure-ai-agents-policy-lambda-interceptors-aws.md`
 
 # Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock

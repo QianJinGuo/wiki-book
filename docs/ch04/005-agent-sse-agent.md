@@ -12,6 +12,22 @@
 
 ## 核心要点
 
+```mermaid
+sequenceDiagram
+    participant 前端
+    participant 后端
+    participant Agent
+    前端->>后端: POST /chat (fetch + ReadableStream)
+    后端->>Agent: 启动 generator
+    loop 事件流
+        Agent-->>后端: yield 事件 (token/tool_start/tool_result)
+        后端-->>前端: SSE data: 事件行
+        前端->>前端: buffer拼接 + 前缀分发
+    end
+    Agent-->>后端: yield __done__
+    后端-->>前端: SSE data: __done__
+```
+
 - **事件驱动架构**：Agent 运行过程中不断 yield 事件（文本 token、推理片段、工具调用、工具结果），前端通过 SSE 流实时消费，而非等待完整响应
 - **fetch + ReadableStream 替代 EventSource**：因为聊天接口需要使用 POST 方法携带用户输入和 Agent ID，原生 EventSource 仅支持 GET，故采用 `fetch + response.body.getReader()` 自行实现流式解析
 - **流式解码与缓冲拼接**：使用 `TextDecoder` 的 `{ stream: true }` 模式处理多字节字符跨 chunk 截断问题，维护 buffer 变量实现跨 chunk 事件完整性

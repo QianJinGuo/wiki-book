@@ -12,6 +12,20 @@ Autoresearch is the paradigm where AI agents build feedback loops to improve the
 
 ## 核心要点
 
+```mermaid
+graph TB
+    subgraph Inner["Inner Loop — 生产系统"]
+        U[用户请求] --> A[Agent 执行任务]
+        A --> R[返回结果]
+    end
+    subgraph Outer["Outer Loop — 自改进系统"]
+        S[信号采集] --> E[Eval 评估]
+        E --> J[Judge 判断]
+        J -->|反馈优化| A
+    end
+    R --> S
+```
+
 1. Autoresearch extends the concept of agent loops from "agent doing work" to "agent improving how it does work"
 2. The key architectural insight is the split between an **inner loop** (primary system serving users) and an **outer loop** (meta-system that studies and improves the primary system)
 3. **Agent recipes** are proposed as a portable format for capturing the full evolution of an agent system — including evals, judges, signal processing, and human expertise

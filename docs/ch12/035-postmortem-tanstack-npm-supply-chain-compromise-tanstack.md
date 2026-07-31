@@ -2,6 +2,20 @@
 
 ## Ch12.035 Postmortem: TanStack npm supply-chain compromise | TanStack Blog
 
+```mermaid
+graph LR
+    subgraph Attack["npm 供应链攻击"]
+        COMP[账号入侵] -->|篡改| PKG[npm 包]
+        PKG -->|install| VICTIM[受害者项目]
+        VICTIM -->|CI/CD| PROD[生产环境]
+    end
+    subgraph Fix["事后修复"]
+        REVOKE[撤销恶意版本] --> AUDIT2[依赖审计]
+        AUDIT2 --> 2FA[强制 2FA]
+        2FA --> SIG2[包签名验证]
+    end
+```
+
 > 📊 Level ⭐⭐ | 10.5KB | `entities/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)

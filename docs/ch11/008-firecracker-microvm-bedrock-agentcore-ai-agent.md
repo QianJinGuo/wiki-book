@@ -2,6 +2,23 @@
 
 ## Ch11.008 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
 
+```mermaid
+graph TB
+    subgraph Tenant1["租户 A"]
+        A1[Agent] --> VM1[Firecracker microVM]
+        VM1 --> FS1[隔离文件系统]
+    end
+    subgraph Tenant2["租户 B"]
+        A2[Agent] --> VM2[Firecracker microVM]
+        VM2 --> FS2[隔离文件系统]
+    end
+    subgraph Core["Bedrock AgentCore"]
+        GW[Gateway] --> ORC[编排器]
+        ORC -->|调度| VM1
+        ORC -->|调度| VM2
+    end
+```
+
 > 📊 Level ⭐⭐ | 39.8KB | `entities/firecracker-bedrock-agentcore-multi-tenant.md`
 
 # 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
