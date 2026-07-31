@@ -50,6 +50,15 @@ Thariq 在文中表示：  Fable 5 的能力上限，取决于你能发现多少
 
 ##  四种「未知」
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 你的未知到底有哪些呢？当我带着一个问题来找 Claude 时，我倾向于从四个维度来拆解：
 
 •  ** 已知的已知（Known Knowns）  ** ：这基本就是你 prompt 里写的东西，你告诉 agent 你想要什么了。

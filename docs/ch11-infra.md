@@ -18,6 +18,33 @@
 
 ## 导读
 
+```mermaid
+graph TB
+    subgraph "云基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[Serverless/Container]
+        SVC --> DB[RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent] --> SB[沙箱/VM]
+        SB --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    subgraph "提供商"
+        AWS["AWS"]
+        CF["Cloudflare"]
+        GCP["GCP"]
+    end
+    LB --> AWS & CF & GCP
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef prov fill:#d1fae5,stroke:#059669,color:#064e3b
+    class LB,GW,SVC,DB infra
+    class AGT,SB,FS runtime
+    class AWS,CF,GCP prov
+```
+
+
 Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 
 本章覆盖 Agent 上生产所需的基础设施：AWS Bedrock AgentCore（多租户、支付、浏览器）、Firecracker microVM 沙箱（安全隔离）、MXC（微软的 eXecution Containers）、以及 Netflix 的一系列工程实践（Druid 缓存、Switchboard 路由、VMAF 视频质量）。

@@ -6,6 +6,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 - v×c = 7×8 = 56，stars = 4
 
 ## 相关实体

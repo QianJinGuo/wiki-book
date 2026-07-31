@@ -14,6 +14,15 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
+
 ### 增长背后的战略逻辑
 
 Deel的核心竞争力建立在**人力资源与 Payroll 系统**之上，这为其他业务扩展提供了天然的"系统 of record"基础。通过收购与自研结合，Deel正在将单一 Payroll 服务扩展为"工作操作系统"。

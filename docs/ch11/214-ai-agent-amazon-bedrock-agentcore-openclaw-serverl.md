@@ -5,6 +5,18 @@
 > 📊 Level ⭐⭐ | 5.9KB | `entities/using-amazon-bedrock-agentcore-openclaw-multi-3.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 by awschina on 08 5月 2026 in Migration Transfer Services Permalink Share 摘要：基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第三篇：Phase 1 — 部署基础设施，deploy.sh 脚本解析、CDK 部署 5 个基础 Stack（VPC / Security / Guardrails / AgentCore / Observability）及其创建的资源详解
 
 ## 核心技术

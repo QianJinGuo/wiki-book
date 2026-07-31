@@ -28,6 +28,15 @@ PresentBench（A Fine-Grained Rubric-Based Benchmark for Slide Generation）由�
 
 ## hwc-mmi-aippt 系统架构
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 & W3 --> MSG[消息]
+```
+
+
 hwc-mmi-aippt 构建了覆盖"解析—策划—生成—校验—导出"的完整智能创作流程，由 multi-Agent 驱动：
 
 1. **材料解析**：从原始文档提取关键数字、事实、命名实体和引用信息，形成结构化数据资产清单

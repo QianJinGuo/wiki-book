@@ -24,6 +24,15 @@ Claw-SWE-Bench 的核心创新在于将 Harness 作为可独立测量的变量�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **在评测时分离 Harness 变量**：评估 Agent 编码能力时，确保 Harness 配置一致——否则你比较的是 Harness 而非 Agent。
 2. **建立性价比度量**：不要只看 Pass@1 分数，同时记录 Token 总消耗、运行时间、API 成本，构建成本-性能 Pareto 前沿。
 3. **SWE-bench 分数有上限效应**：当分数超过一定阈值后，提升更多来自 Harness 优化而非模型能力提升。

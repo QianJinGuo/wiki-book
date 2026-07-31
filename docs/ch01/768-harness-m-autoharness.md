@@ -13,6 +13,21 @@
 - 对话任务（LoCoMo）：实体关系图追踪人物关系
 
 ## 相关实体
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - [Harness Evolution Papers](../ch05/009-harness.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)

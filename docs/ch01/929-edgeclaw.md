@@ -14,6 +14,15 @@
 - **核心模型**: MiniCPM系列（端侧）+ 云端大模型
 
 ## 核心设计
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 **隐私路由（Privacy Routing）**：S1/S2/S3三级数据分类，决定本地还是云端处理。
 **本地引擎**：MiniCPM系列，处理绝密数据和日常琐事，零Token消耗，断网可用。
 

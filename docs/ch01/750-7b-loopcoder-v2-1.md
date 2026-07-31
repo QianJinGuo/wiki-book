@@ -27,6 +27,21 @@ source_published: 2026-06-30
 
 ## 详细信息
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ---
 source: wechat
 source_url: https://mp.weixin.qq.com/s/L_Bmxw44h4PFCQTO68lrpg

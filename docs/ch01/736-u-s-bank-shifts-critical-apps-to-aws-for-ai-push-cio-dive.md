@@ -10,6 +10,18 @@
 US Bank is shifting critical applications to AWS as part of its AI adoption push.
 
 ## Notes
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 Article about US Bank's multi-year migration to AWS cloud infrastructure for AI workloads.
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/us-bank-aws-ai-migration.md)
 

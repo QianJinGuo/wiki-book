@@ -20,6 +20,15 @@ Anthropic's official Claude managed agents: persistent sessions, tool use, memor
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 Claude Managed Agents 的发布标志着 Anthropic 从模型提供商向平台提供商的关键跃迁。2026年5月6日的更新引入三项核心能力：**Dreaming**（自省式记忆优化）、**Outcomes**（基于评分 rubric 的结果导向执行）和**Multi-Agent Orchestration**（多智能体协作编排），三者共同构成了一个完整的 Agent 生命周期管理系统。
 **Dreaming 的意义**超出自愈记忆本身——它是一种跨会话的元学习机制。Agent 在会话结束后，系统性地回顾记忆存储、提取模式、重组高价值记忆，使后续会话的起点持续提升。这与人类认知中的"睡眠时记忆巩固"高度类比，区别在于 AI 可以精确追踪每一次工具调用失败的原因并显式改写记忆结构。Harvey 在测试中将完成率提升约 6 倍印证了这一机制的有效性。
 **Outcomes 范式**将 AI 执行从"过程导向"转变为"结果导向"。传统的 Agent 循环依赖人类的中间步骤审查，而 Outcomes 引入了独立 Grader——一个在独立上下文中评估输出的模型，不受 Agent 推理过程的影响。这一设计解决了 AI Agent 自我评估时的"确认偏误"问题。Spiral 团队使用 Haiku 作为调度层、Opus 作为写作执行层的架构，表明不同模型可以承担不同认知成本的子任务。

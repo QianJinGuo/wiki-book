@@ -10,6 +10,18 @@
 
 ## 背景与问题
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 企业在多个团队、供应商和基础设施上部署 AI agent 后，agent 间的通信管理成为越来越大的运维负担。如果没有中心化的通信层，每个新 agent 的集成都需要：
 
 - **点对点连接**：20 个 agent 最多需 190 个点对点连接（20×19/2）

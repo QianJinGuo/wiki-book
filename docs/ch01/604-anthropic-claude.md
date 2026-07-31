@@ -24,6 +24,20 @@ Anthropic 的 Alex Albert 最近上了一期播客，聊了聊他们内部是怎
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 **1. 模型即产品的开发范式**
 
 Anthropic 将模型视为产品而非单纯的研究成果，这一理念贯穿整个研发流程。研究 PM 在模型训练前就介入，制定详细的产品需求，包括能力分类和迭代目标。编程一直是重点方向，知识工作则是近期新增的战略方向。这种「模型产品化」的思路意味着，模型的能力边界从一开始就被商业目标和用户场景所定义，而非纯粹由技术可能性驱动。

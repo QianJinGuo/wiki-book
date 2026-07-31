@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 5.3KB | `entities/huntress-edr-itdr-unified-detection.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - EDR（Endpoint Detection and Response）和 ITDR（Identity Threat Detection and Response）正在融合，因为攻击者越来越多地使用基于身份的技术进行横向移动
 - Huntress 分析发现：67% 的攻击涉及凭证盗窃和通过身份基础设施的横向移动
 - EDR 聚焦端点遥测（进程创建、文件写入、网络连接），ITDR 监控身份基础设施（Active Directory、LDAP、Kerberos、OAuth token）

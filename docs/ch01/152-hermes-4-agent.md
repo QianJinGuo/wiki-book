@@ -10,6 +10,14 @@
 我给Hermes配了4个Agent
 
 ## 关键要点
+
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+```
+
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-four-agents-setup.md)
 
 ## 相关实体

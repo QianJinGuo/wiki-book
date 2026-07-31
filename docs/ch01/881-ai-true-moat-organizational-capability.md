@@ -9,6 +9,20 @@
 AI 行业快速收敛，产品/技术/界面几个月内消失。真正难以复制的是**组织能力**。
 
 ## 组织发明
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 - **OpenAI**：frontier model training 组织，塑造出横跨科学/工程/文明议题的新角色 
 - **Palantir**：Forward Deployment 文化，创造能同时理解技术/组织/现实系统的人才 
 - 伟大的公司让某类人第一次真正发挥自己的能力 

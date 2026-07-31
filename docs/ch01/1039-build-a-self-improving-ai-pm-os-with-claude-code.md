@@ -10,6 +10,20 @@
 
 ## 相关实体
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 - [Hermes Agent 深度解析（阿里云/飞樰）](../ch03/096-hermes-agent.html)
 - [Build Live Translation Apps with gpt-realtime-translate](ch01/151-build-live-translation-apps-with-gpt-realtime-translate.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)

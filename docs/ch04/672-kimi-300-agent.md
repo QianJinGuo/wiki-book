@@ -17,6 +17,20 @@ Kimi 决定，要用 300 个 Agent 解救非程序员们 涉及agent领域的核
 > AGI Hunt 标语：关注AGI 的沿途风景！
 2. 前网易资深技术专家；AI 初创公司 CTO；佛系分享
 ## 核心断言
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 > "2026 年的 AI，已经忽略程序员了。
 3. "
 OpenAI Codex 增速最快的用户群体不是程序员（知识工作者增速 = 程序员 3 倍）。

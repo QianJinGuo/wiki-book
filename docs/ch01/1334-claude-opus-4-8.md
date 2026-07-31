@@ -16,6 +16,15 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 ### 1. RSP v3.3 门槛放松：风险评估框架的系统性弱化
 
 Anthropic 将 RSP（Responsible Scaling Protocol）从 v3.2 升级至 v3.3，最核心的变更在于对新型生物/化学威胁的描述门槛：从"显著帮助威胁行为体"泛化表述，收窄为"仅在稀缺的世界顶尖专家级别才能功能替代"。这一改动的影响深远。

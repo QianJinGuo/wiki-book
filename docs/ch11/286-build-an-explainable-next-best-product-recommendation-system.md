@@ -10,6 +10,20 @@
 
 ## 核心架构
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 该系统采用 **多塔神经网络（Multi-Tower NN）** 架构，包含四个专用塔：
 
 - **Sequence Tower**：使用 2 层 GRU 处理客户产品采用序列，捕捉时序模式

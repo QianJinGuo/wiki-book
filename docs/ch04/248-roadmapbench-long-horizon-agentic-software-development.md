@@ -14,6 +14,21 @@
 
 ## 研究背景
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 现有基准的局限
 
 当前编码 Agent 基准（如 SWE-bench、HumanEval）存在以下问题：

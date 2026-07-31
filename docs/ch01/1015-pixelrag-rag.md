@@ -15,6 +15,20 @@ PixelRAG：页面/PDF → 无头浏览器渲染截图切片 → 视觉大模型�
 
 ## 技术架构
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 两大核心模块：
 
 1. **Pixelshot（文档渲染模块）**：负责将网页/PDF 渲染为截图切片

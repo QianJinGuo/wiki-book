@@ -18,6 +18,20 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 - **核心痛点**：工具可以无缝切换，Skill 却无法自动跟随；多 Agent 并行使用时，Skill 在不同工具间存在多个版本
 - **Nacos Skill Sync**：阿里云开源的中心化 Skill 管理方案，将 Skill 收敛为单一信源（Single Source of Truth）
 - **Local mode**：本机中心仓库 + 软链接同步，改一处即全局生效，无需服务端部署

@@ -15,6 +15,21 @@ Note: Voice-overs for paywalled posts are available for paid subscribes in podca
 Most of the compute to build a leading frontier model comes from R&D costs, rather than the compute to train the final, big model end-to-...
 
 ## 关键要点
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - 技术领域：AI / Open Source Models / Ecosystem
 - 来源：Interconnects
 - 评分：value=7, confidence=7, product=49

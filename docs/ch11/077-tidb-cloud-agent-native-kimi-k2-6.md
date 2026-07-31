@@ -5,6 +5,20 @@
 > 📊 Level ⭐⭐ | 10.7KB | `entities/tidb-cloud-agent-database.md`
 
 ## 核心概念
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 ### Agent-native 时代的数据 Infra 竞争逻辑
 过去 30 年：比单点性能（TPS、延迟、单库容量）。
 现在比的是当以下四件事**同时发生时**，谁能提供最顺畅的体验：

@@ -7,6 +7,15 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
 
 ## 标签
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 #aws #devops-agent #china-region #mcp
 **原文**: [将 Aws Devops Agent 智能运维能力延伸到中国区](ch11/267-aws-devops-agent.html)(raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
 

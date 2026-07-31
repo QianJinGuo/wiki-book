@@ -12,6 +12,20 @@
 - Claude Code 开发工具
 
 ## 核心研究
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 - [Natural Language Autoencoders（NLAs）](ch01/1330-natural-language-autoencoders-anthropic.html) — 激活→文字翻译
 - [LLM 内省意识检测](../ch04/166-anthropic-llm.html)
 - [MCP 协议](../ch07/016-anthropic-mcp.html)

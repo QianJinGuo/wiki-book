@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 7.6KB | `entities/here-comes-forward-deployed-everybody.md`
 
 ## 核心要点
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 - Forward Deployed Engineer (FDE) 概念成为 Salesforce Headless 360 发布的核心理念
 - 企业软件正在从套装走向模块化解耦
 - 头部客户对定制化需求推动"贴身工程团队"模式兴起

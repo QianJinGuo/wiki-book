@@ -9,6 +9,15 @@ Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Ch
 与 [AgentBrowser](../ch09/071-agent-browser-claude-code-qoderwork.html)、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互。
 
 ## 架构
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 ```
 [Agent (Claude Code / Codex)]
         │

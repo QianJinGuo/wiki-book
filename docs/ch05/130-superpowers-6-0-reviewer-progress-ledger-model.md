@@ -16,6 +16,15 @@
 
 ## 六大技术杠杆
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 1. 两个 reviewer 合并为一：一次 diff 出两个裁决
 
 5.x 跑两轮独立 review（spec-compliance + code-quality），各读一遍 diff。6.0 合并为单一 `task-reviewer`，一次 diff 出 spec compliance 和 code quality 两个裁决。省下一个 subagent + 一遍 diff 读取。

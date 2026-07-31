@@ -16,6 +16,21 @@ Google 2026-06-10 发布的实验性开放模型，Apache 2.0 协议，基于 Ge
 
 ## 关键架构特性
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **26B MoE 总参 / 3.8B 激活**：高稀疏度 MoE 设计，量化后 18GB VRAM 可装入消费级 GPU
 - **并行生成 256 tokens**：每个前向传播生成整段文本块
 - **双向注意力**：所有 token 相互 attend，特别适合非线性的内联编辑、代码填充、氨基酸序列、数学图等任务

@@ -7,6 +7,20 @@
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
 
 ## 核心要点
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 - Tomofun（Furbo 智能宠物相机）将 VLM 推理从 GPU 实例迁移到 AWS Inferentia2
 - 使用 BLIP（Bootstrapping Language-Image Pre-training）模型进行宠物行为检测
 - 通过 Neuron SDK 编译 PyTorch 模型，保留原有架构，仅添加轻量 wrapper

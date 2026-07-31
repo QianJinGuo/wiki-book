@@ -10,6 +10,16 @@
 Agent闭环文生3D研究，英伟达与普渡大学合作。
 
 ## Key Points
+
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    DEC --> RL[强化学习]
+```
+
 - ICLR 2026 论文
 - 英伟达×普渡大学
 - 用Agent闭环实现文生3D

@@ -14,6 +14,16 @@ Google DeepMind 论文（arXiv 2605.27295）：一个原生多模态 embedding �
 
 ## 核心价值
 
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
+
 **过去**：每个模态单独配 encoder——文本一套、图文一套、语音先 ASR、视频抽帧。
 
 **Gemini Embedding 2**：一个模型原生处理多模态输入，减少中间转换，统一向量空间用于召回/聚类/分类/排序。

@@ -19,6 +19,20 @@ Claude Code Dynamic Workflows 第 6 译本（玉澄 / 51CTO 视角） 涉及agen
 > 编辑：玉澄
 > 系列：同一 Anthropic Thariq / Sid 官方研究 "A harness for every task"（Dynamic Workflows）的**第 6 个中文译本**
 ## 一句话定位
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 本译本是同一篇 Anthropic 官方研究（Dynamic Workflows / "A harness for every task"）的第 6 个中文译本。
 3. **主体内容与前 5 个译本高度重叠**（6 模式 / 3 失败模式 / 8 Prompt / 10 场景 / 静态 vs 动态 / 提示词最佳实践）。
 4. **本译本独特补充**：

@@ -30,6 +30,18 @@
 
 ## **一、为什么需要关注 Instance Store 数据保护？**
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 许多高性能工作负载选择 EC2 Instance Store（Local NVMe SSD）作为本地数据存储，以获取极致的 IOPS 和低延迟。典型场景包括：
 
   * 基于 RocksDB 的分布式存储：如 Apache Kvrocks（Redis 兼容的磁盘 KV 存储）、TiKV 等，RocksDB 本身是磁盘密集型引擎，对 IOPS 和延迟有极高要求，是 Instance Store 的典型用户

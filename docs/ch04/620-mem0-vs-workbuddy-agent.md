@@ -38,6 +38,20 @@ Mem0（59.9k GitHub stars）是开源的 Agent 记忆框架，核心组件：
 
 ## WorkBuddy 对比
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 | 维度 | Mem0 | WorkBuddy（专家团） |
 |------|------|-------------------|
 | 记忆来源 | 从单轮对话抽取事实 | 专家团提示词定义记忆逻辑 |

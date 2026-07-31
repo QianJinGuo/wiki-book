@@ -14,6 +14,15 @@ AI Agent 创业领域正在经历一个反复出现的模式：高调发布 → 
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 1. Agent 产品的"糖衣"增长周期
 
 当前 AI Agent 创业公司的典型生命周期呈现出一个危险的模式：

@@ -10,6 +10,16 @@
 *A²RD (Agentic Autoregressive Diffusion) — a method for long video consistency using agentic autoregressive diffusion models.*
 
 ## Key Points
+
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
 - Agentic approach to video generation
 - Autoregressive diffusion for temporal consistency
 - Long video synthesis

@@ -21,6 +21,20 @@ NeurIPS 2026 使用闭源 AI 检测器 Pangram 批量 desk-reject 论文事件 �
 > NeurIPS 官方博客：https://blog.
 4. cc/2026/06/02/ai-generated-papers-in-the-neurips-2026-position-paper-track/
 ## 一句话定位
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 **NeurIPS 2026 Position Paper Track 引入闭源 AI 检测器 Pangram 做 desk rejection；结果：178 篇直接拒稿（18.
 5. 4%），123 篇被要求提供人类参与证据（12.
 

@@ -18,6 +18,21 @@
 
 ## 部署与生态
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 支持 vLLM、SGLang、TensorRT-LLM、HuggingFace Transformers、Ollama。提供三种量化版本：FP8、INT4、NVFP4。开源 DFlash speculator 模型使本地推理 tok/s 翻倍。
 
 - 许可证：**OpenMDW-1.1**（完全宽松）

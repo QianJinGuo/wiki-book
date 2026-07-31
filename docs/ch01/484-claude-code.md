@@ -21,6 +21,15 @@
 MCP、Skill、Plugin 都可能持续变化，但进入主系统后，必须尽量映射为统一抽象。
 
 ## 与 Harness Engineering 的对应关系
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 | Claude Code 模块 | 对应 Harness 能力 |
 |---|---|
 | 启动链路 | 编排入口、会话装配、宿主初始化 |

@@ -15,6 +15,21 @@ The Token Economy: Tokenmaxxing Is Stupid Until It Isn't
 _Meta engineers burned 60 trillion AI tokens in 30 days. Anthropic has compressed product cycles from months to days. Meanwhile, nearly 90% of firms say AI has had no impact on productivity or employment. All three things are true. The difference is not...
 
 ## 标签
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - source/newsletter
 
 ## 相关实体

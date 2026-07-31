@@ -38,6 +38,15 @@ A社把它定位成迄今为止“最能干活”的Sonnet，能自己规划任�
 
 ## 详细信息
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ---
 source: wechat
 source_url: https://mp.weixin.qq.com/s/3zQr82n9hSWcCrXmf4nc7g

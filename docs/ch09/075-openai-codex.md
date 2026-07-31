@@ -13,6 +13,21 @@
 OpenAI 正在将 Codex 升级为掌控所有硬件设备的「超级控制平面」——所有 Mac Mini、台式机、旧电脑组成完全属于你个人的 Codex 网络，成为一整个算力系统，即使锁屏都不怕。
 
 ## Codex 将所有设备连接成巨大网络
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 **5月14日**，OpenAI 给 ChatGPT 手机 App 更新了远程控制功能：在外面可以查看家里/公司 Mac 上 Codex 的运行状态，审批命令，派发新任务。
 随后 TestingCatalog 创始人 Alexey Shabanov 爆料：OpenAI 正在为 Codex 秘密开发**跨设备控制能力**，彻底干掉 SSH 等传统连接方式。
 **设置界面入口**：`设置` -> `连接` -> `控制其他设备`

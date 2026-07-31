@@ -29,6 +29,18 @@ Anthropic宣布与SpaceX达成合作协议，将大幅提升算力储备。
 
 ## 深度分析
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 Anthropic 拿下 Colossus 1 全部算力，本质上是全球 AI 算力资源的再分配。马斯克的 SpaceX 通过租赁闲置算力获得了可观的收益，而 Anthropic 则获得了超过 22 万张 NVIDIA GPU 的紧急补给。 这一合作的背景是 Anthropic 此前已与亚马逊、谷歌、微软、英伟达等厂商签署了总规模数十 GW 的算力协议，显示了算力竞争已从"囤卡"升级为"锁定产能"的阶段。
 
 Claude Code 和 Claude API 使用限制全面上调，是算力扩张后的直接结果。 5 小时频率限制翻倍、高峰时段限速解除、Claude Opus API 上限提升——这些变化说明此前限制的主要原因是算力不足而非商业策略考量。当算力供给跟上后，Anthropic 选择了快速释放红利来扩大用户基数和开发者生态，这是一种典型的"算力-用户"正反馈循环策略。

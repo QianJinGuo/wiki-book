@@ -11,6 +11,15 @@
 - 提供预构建的 Pipes Widget UI，降低前端集成成本 
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 **定位与市场空间**
 WorkOS Pipes 属于 **OAuth aggregator** 赛道，本质上是把"连接用户第三方账户"这件事做成托管服务。类似的产品包括 Stitch Fix 的 auth-portal、Nango、以及一些开源方案如 NextAuth 的 provider 生态。Pipes 的差异化在于：(1) 预建的 Widget UI 让终端用户交互开箱即用；(2) WorkOS 本身的 SSO/JIT provisioning 产品矩阵提供了天然的交叉销售场景。
 **技术抽象层次**

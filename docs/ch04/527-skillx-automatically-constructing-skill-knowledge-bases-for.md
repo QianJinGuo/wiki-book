@@ -21,6 +21,15 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 **1. 三层技能设计重构经验复用粒度。** SkillX 将 Agent 经验垂直分解为 Planning Skills（任务规划层）、Functional Skills（子任务工具调用层）和 Atomic Skills（底层工具使用模式层），同时每层内部支持水平分解（如分解为多个 Functional Skills 并行执行）。这种多维分解使跨任务的经验复用成为可能——一个任务的 Planning Skill 可以迁移到另一个任务，而无需重新学习底层工具使用模式。
 
 **2. 迭代精炼机制解决技能质量维护问题。** 传统经验学习方法（如 A-Mem、AWM、ExpeL）将经验以原始形式存储，容易积累噪声和质量参差。SkillX 的 Iterative Skills Refinement 通过 merge、filter 和 update 三种操作在多轮 rollout 中持续优化技能质量，实质上是在构建一个自清洁的经验库。实验证明这一机制使 SkillX 在 Qwen3-32B 上平均提升约 10 个百分点，显著增强弱模型能力边界。

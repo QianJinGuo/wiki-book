@@ -8,6 +8,15 @@
 腾讯CDN LEGO项目是Harness Engineering在超大型高风险后端系统中的深度实践。LEGO作为腾讯CDN核心接入层，承载100万行核心C++代码+300万行深度改造第三方库，日均万亿请求，理论组合路径高达13,824×N种。核心命题：从"AI能写"到"AI写了敢用"。
 
 ## 核心成果
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 ### Nonstop项目
 用AI零人工代码在20天内完成Rust版Nonstop代理框架：
 

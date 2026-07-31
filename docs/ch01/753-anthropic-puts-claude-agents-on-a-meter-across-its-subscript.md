@@ -10,6 +10,21 @@
 Anthropic 宣布从 6 月 15 日起，将把程序化 Claude 使用（Agent SDK、GitHub Actions、OpenClaw 等第三方框架）与标准聊天订阅分开计费，引入独立的月度信用额度系统，费率对标 API 定价模式 。Program 用户月费 $20 获得 $20 额度，Max 5x 用户 $100，Max 20x 用户 $200 。此前，程序化工作负载与交互式 Claude 使用共享同一订阅池，使开发者能够以相对可预测的订阅价格运行大规模自动化 。
 
 ## 深度分析
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 **1. "无限制"订阅模式在经济上不可持续**
 Anthropic 此举的核心原因是重度的 agent 性用户消耗的计算资源远超 $20 或 $100 订阅所能支撑的范围 。一位 SRE 工程师指出，无限包月套餐对于程序化使用从来都不是可持续的商业模式 。这表明 AI 供应商正在重新评估 "all-you-can-eat" 订阅在 agent 时代的经济学可行性。
 **2. 行业整体向计量定价转型的信号**

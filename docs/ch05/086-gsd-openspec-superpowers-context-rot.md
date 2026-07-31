@@ -61,6 +61,20 @@ GSD          → 防注意力本身被噪声稀释（最内层）
 
 ## 源码实测数字澄清
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 针对流传叙事的纠正：
 - GSD 有 33 个 Agent → ls agents/ 实测 **34 个**
 - GSD 有 86 个命令 → commands/gsd/ 实测 **70 个**

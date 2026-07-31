@@ -14,6 +14,18 @@ Yum Brands（Taco Bell、KFC、Pizza Hut 母公司）首席数字与技术官 Ji
 
 ## 核心要点
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 ### 数字化转型规模
 
 Yum Brands 的技术历史可追溯到 32 年前 Pizza Hut 的 PizzaNet（首个在线餐厅订单），但大部分数字战略在最近几年才成形：

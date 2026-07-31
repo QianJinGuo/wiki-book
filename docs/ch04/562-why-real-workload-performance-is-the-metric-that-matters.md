@@ -23,6 +23,15 @@ Here’s the framework we use to evaluate any benchmark, including our own.
 
 ## Defining the problem: What real-time analytics actually requires
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Interactive Analytics involves serving thousands of concurrent users, applications, dashboards and AI agents with sub-second latency, on data that changes continuously, with a query mix you can't fully predict. That combination stresses systems in ways traditional analytical benchmarks were not designed to expose: concurrency collapse, p95/p99 latency spikes, freshness gaps, cache dependence, queueing behavior and cost anomalies under bursty demand.
 
 The [TPC-inspired benchmarks](https://www.tpc.org/) that we often see in comparisons typically measure raw single-user throughput on a known workload and simple concurrency simulations based on a subset of data, often only a subset of query patterns. While this exercises a significant part of the functionality for data engines and are useful regression tests, it doesn't measure behavior under real-world load, latency distribution as users multiply, or cost as data scales from hundreds of gigabytes to hundreds of terabytes.

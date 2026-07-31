@@ -43,6 +43,15 @@ Stepan Gershuni 在 cyber.fund 发布的这篇创始人指南，提出了 AI 原
 
 ## 实践启示
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 1. **从高频低风险工作开始自动化**——工单分类比董事会战略决策更适合优先自动化
 2. **context 压缩优先**——先做提炼数据层（决策/反对意见/风险），不要让原始数据淹没智能体
 3. **eval 先行**——在调提示词之前，先建立接受率评估体系

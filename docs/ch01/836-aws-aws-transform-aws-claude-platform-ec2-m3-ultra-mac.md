@@ -10,6 +10,18 @@ AWS 官方周综述，涵盖 AWS Transform、Claude Platform 云端部署、EC2 
 
 ## 要点
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 - **AWS Transform 周年**：累计迁移数十万服务器，节省 160 万小时工时，45 亿行代码
 - **Claude Platform on AWS**：AWS 云端运行 Claude AI 助手
 - **EC2 M3 Ultra Mac**：新一代 Mac 计算实例

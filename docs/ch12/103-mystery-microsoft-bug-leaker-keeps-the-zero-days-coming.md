@@ -10,6 +10,15 @@ Security pros warn YellowKey claim could make stolen laptops a much bigger probl
 Cybersecurity reporter
 
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - [Microsoft Zero Days Researcher Disgruntled Theregister](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled-theregister.md)
 - [Disgruntled Researcher Microsoft Zero Days](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
 - [13 Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](ch12/040-disgruntled-researcher-releases-two-more-microsoft-zero-days.html)

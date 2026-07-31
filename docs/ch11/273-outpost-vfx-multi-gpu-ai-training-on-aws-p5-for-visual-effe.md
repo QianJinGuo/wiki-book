@@ -10,6 +10,20 @@ Outpost VFX 与 AWS Generative AI Innovation Center 合作，通过多 GPU 分�
 
 ## 挑战背景
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 传统面部替换工作流需要 5 天以上合成时间才能获得导演初审版本。Outpost VFX 开发的 AI 模型受限于单 GPU 计算能力：
 
 - **单 GPU 瓶颈**：原有工具仅利用一块 GPU，VRAM 和计算容量受限

@@ -23,6 +23,15 @@ Agent 需要在三层之间自由切换——CLI 是创新的试验场，MCP 是
 
 ## Agent + CLI 五大结构性优势
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 1. **天然同构**：LLM 和终端都是 text-in/text-out，让 AI 操作 GUI 需要截图→视觉识别→模拟点击，一行命令拆成四步
 2. **自描述性**（最被低估的优势）：`--help` 就是文档，工具即说明书。API 需要额外注入文档
 3. **Unix 管道与组合**：管道组合实现即兴编排，MCP 适合标准操作但缺乏这种灵活性

@@ -14,6 +14,15 @@
 
 ## 核心论点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **数据有重力**：企业数据不愿移动，存在于数据湖、SaaS 应用、Snowflake、Salesforce 和内部系统中
 - **治理困境**：Agent 跨边界拉取上下文时治理崩溃；Agent 困在单一系统时无法触及足够远以完成有用工作
 - **DocuSign 案例**：在 CrewAI、Snowflake、Salesforce 和内部系统之间构建运营循环，Agent 工作嵌入业务流程而非假装流程不存在

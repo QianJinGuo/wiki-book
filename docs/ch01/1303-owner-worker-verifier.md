@@ -12,6 +12,15 @@
 | **Verifier** | 质量检查、对抗式验证 | 与 Worker 对抗 | 
 
 ## 核心原则
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - Worker-Verifier 是对抗关系，非可选附加步骤
 - 适用于需要严格质量控制的场景
 

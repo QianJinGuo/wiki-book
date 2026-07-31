@@ -14,6 +14,15 @@
 
 ## 三种回归机制
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ### 1. Skill-Description Osmosis（技能描述渗透）
 技能的描述文本常驻在系统提示词中，即使技能本身从未被调用，其描述内容持续参与模型的上下文推理，影响模型行为。
 

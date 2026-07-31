@@ -12,6 +12,21 @@ Anthropic 推出的 Claude Science 是一款面向科研人员的 AI 工作台�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 产品定位
 
 Claude Science 是 Anthropic 从通用编程助手向领域专用 Agent 扩展的关键产品。正如 Claude Code 是程序员的 AI 同事，Claude Science 是科研人员的 AI 同事。它将科研工作中最为耗时的"中间环节"——查文献、数据处理、环境调试、跑分析、生成图表、写手稿、校验结果——整合成了一条可控、可复现的"科研流水线"。

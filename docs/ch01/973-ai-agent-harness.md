@@ -42,6 +42,15 @@ Beren Millidge 在 2023 年的文章里把这个类比讲得更精确。他把�
 
 ## 工程三层论
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 围绕着模型，有三个同心圆式的工程层次：
 
 - •

@@ -14,6 +14,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/designers-are-a-rare-breed.md)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 ### 设计师稀缺性的数据支撑
 设计师约占美国劳动力的 0.25%（即约 1/400），且仅有 16% 的美国企业将设计作为结构化流程来追求。这不是主观判断，而是有 BLS（美国劳工统计局）和 NCES（国家科学基金会）数据支撑的客观现实。这种稀缺性不是市场失灵，而是设计工作的本质特征决定的：它需要特定知识积累和实践 reps，而非短期培训可复制。
 

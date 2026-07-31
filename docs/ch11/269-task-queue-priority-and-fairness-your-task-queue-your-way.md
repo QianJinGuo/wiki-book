@@ -7,6 +7,15 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/task-queue-priority-and-fairness-your-task-queue.md)
 
 ## 核心要点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - Temporal.io 详细解释了其任务队列的优先级和公平性设计
 - 多租户环境下如何保证任务队列的公平调度
 - 优先级队列的实现：weighted fair queuing + backpressure

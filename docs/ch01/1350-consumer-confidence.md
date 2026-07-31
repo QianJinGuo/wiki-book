@@ -13,6 +13,20 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/consumer-confidence-us-economy-inflation-iran-war-trade-html.md)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 **为什么通胀率回落无法修复消费者信心**
 传统经济学框架假设通胀率下降将同步提升消费者信心，因为购买力在名义价格回落时会得到修复。然而，当前美国消费者信心的持续低迷暴露了这一框架的结构性缺陷：密歇根大学消费者调查主任 Joanne Hsu 指出，"消费者信心并非唯一在疫情期间崩溃的指标，公众对机构的信任和自我报告的幸福感同样出现了历史性下滑" 。
 Kyla Scanlon（"vibecession"概念的提出者）给出了更直观的解释："人们开始听说通胀在下降，但他们购买的一盒麦片仍然非常昂贵" 。这揭示了通胀预期（inflation expectation）与实际通胀率（actual inflation rate）之间的认知鸿沟：货币政策以同比通胀率为锚，但消费者的心理价格锚定在疫情前水平。当同比通胀率从 9.1% 降至 3% 左右时，消费者感受到的是"价格从高点小幅回落，但仍远高于记忆中的水平"。Brian LeBlanc（PNC 高级经济学家）补充道："在通胀成为问题之前，没有人在意它。现在，这个国家的每个人都在想着这件事" ——这种心理重置是不可逆的，它从根本上改变了消费者对"正常价格水平"的感知基准。

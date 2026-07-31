@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 5.0KB | `entities/cybersecqwen-4b.md`
 
 ## Key Capabilities
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - **CWE Classification**: Maps vulnerability descriptions (CVEs, advisories) to MITRE CWE categories
 - **CTI Q&A**: Structured question answering about cybersecurity concepts, attacks, controls
 - **Defensive triage assistance**: Supports human analysts triaging CVEs, prioritizing patches

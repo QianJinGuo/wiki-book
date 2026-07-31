@@ -7,6 +7,18 @@
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
 
 ## 摘要
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 Title: Automate schema generation for intelligent document processing | Amazon Web Services
 URL Source: https://aws.amazon.com/blogs/machine-learning/automate-schema-generation-for-intelligent-document-processing/
 Published Time: 2026-05-12T07:54:08-08:00

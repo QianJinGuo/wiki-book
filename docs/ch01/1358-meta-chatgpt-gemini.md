@@ -28,6 +28,16 @@ WIRED 审阅了其中 3,748 条提示词。Humane Intelligence 的 CEO Rumman Ch
 
 ## 行业影响
 
+```mermaid
+graph TB
+    REQ[法规要求] --> MAP[映射]
+    MAP --> IMPL[实施]
+    IMPL --> AUD[审计]
+    AUD --> RPT[报告]
+    RPT -->|"更新"| MAP
+```
+
+
 三家被测试的竞品均对此不知情：Character.AI 表示测试违反了服务条款；OpenAI 称正在调查；谷歌声明未授权第三方测试。
 
 Meta 给出的辩解是「负责任的行业标准做法」。但参与项目的前承包商表示，他们最害怕的不是内容本身，而是万一 AI 真的回应了涉及未成年人的性提示词，他们可能正在生成儿童性虐待材料（CSAM）。

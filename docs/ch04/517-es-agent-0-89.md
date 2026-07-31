@@ -12,6 +12,20 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 1. **三索引分型不是设计选择，是不能省的分型逻辑**：episodic（原始消息，高频写不更新）、semantic（提炼稳定事实，低频写高频更新）、procedural（多步操作 playbook，免衰减）、catalog（公共共享知识，无 user_id 隔离）— 四个索引字段语义不同、衰减策略不同、更新模式不同，合并成一个索引会产生字段语义污染、生命周期冲突、mapping 无法承载三组问题
 2. **混合检索 BM25+dense 双通路**：BM25 抓精确 token（版本号/错误码/人名），dense 抓语义意图 — 两条腿不可省略。BM25 单腿 R@10=0.708，dense 单腿 0.845，混合后 0.889。query expansion 反效果已通过 ablation 验证
 3. **关键变量 RECALL_OVER_FETCH_K=80**：候选池太窄（如 K=10）时近重复 doc 可能把 gold doc 挤出 reranker 视线。80 候选在 ~250 docs/用户语料上 32% 覆盖率

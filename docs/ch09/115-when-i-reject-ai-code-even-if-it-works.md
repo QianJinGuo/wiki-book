@@ -12,6 +12,15 @@ Vinicius Brasil 在本文中提出了一个在 AI 辅助编码时代日益重要
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 认知过载问题
 
 在 AI 编码代理（如 Copilot、Cursor、Claude Code）普及之前，开发者面对一个任务会经历「探索 → 思考 → 实验 → 实现」的完整过程。这个过程虽然耗时数天，但在提交 PR 时，开发者对每一行代码都有深入的理解，向同事解释变更也更加自信。

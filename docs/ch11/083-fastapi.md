@@ -8,6 +8,15 @@
 从微信文章 [FastAPI上线实战：认证、限流、零停机，一套代码搞定](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md) 提取。
 
 ## 核心内容
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 source_url: https://mp.weixin.qq.com/s/zYnWWSUptDtRMOelZMLkVw
 
 ### 主要章节

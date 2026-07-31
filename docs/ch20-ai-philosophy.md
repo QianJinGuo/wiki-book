@@ -20,6 +20,34 @@
 
 ## 导读
 
+```mermaid
+graph TB
+    subgraph "核心问题"
+        WHAT["AI是什么?"] --> CON["意识问题"]
+        CON --> VAL["价值对齐"]
+        VAL --> FUT["未来图景"]
+    end
+    subgraph "伦理框架"
+        UTI[功利主义] 
+        DEO[义务论]
+        VIR[美德伦理]
+    end
+    VAL --> UTI & DEO & VIR
+    subgraph "治理"
+        REG[监管]
+        OPEN[开源]
+        GLO[全球协作]
+    end
+    FUT --> REG & OPEN & GLO
+    classDef question fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef ethic fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef gov fill:#d1fae5,stroke:#059669,color:#064e3b
+    class WHAT,CON,VAL,FUT question
+    class UTI,DEO,VIR ethic
+    class REG,OPEN,GLO gov
+```
+
+
 最后一章，我们跳出技术，思考更大的问题。
 
 本章收录了 AI 哲学、安全与治理的深度思考：存在风险（Existential Risk）、AI 对齐（Alignment）、AI 治理框架、以及"人类配额制"等前沿讨论。

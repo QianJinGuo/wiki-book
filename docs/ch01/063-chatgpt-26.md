@@ -10,6 +10,15 @@
 ChatGPT官宣26位未来之星
 
 ## 关键要点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-26-future-stars.md)
 
 ## 深度分析

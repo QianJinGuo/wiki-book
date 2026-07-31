@@ -46,6 +46,15 @@ source_published: 2026年7月10日 05:59
 
 ## Muse Spark 1.1：不砌墙，想当包工头
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Meta的模型，Alexandr Wang接手后第一个开放API的作品。它最大的新闻点不在能力，在商业模式：**这是Meta历史上第一次对模型访问收费** 。做了三年开源Llama的Meta，这次不开源了，彭博社直接把「Meta starts charging」做成标题。扎克伯格为了宣布这件事，时隔3年回X发了帖。跑到马斯克的地盘上给自家模型吆喝，这本身又成了一条新闻，光第一条帖子就840万浏览。上一次这两人靠这么近，还是约笼斗那回。这次小扎没练柔术，带了张benchmark表。
 
 分数很偏科，但偏得有性格。扎克伯格帖子里贴的就是官方对比表（注意对比对象是GPT-5.5，不是同天才发的5.6）。工具编排类是真领先：MCP Atlas 88.1，Opus 4.8才82.2；带工具的Humanity's Last Exam 62.1，也是第一；金融、医疗这类专业agent评测同样压过Opus 4.8。但纯写代码立刻掉下来，SWE-Bench Pro 61.5，比Opus 4.8低了近8个点；长上下文检索MRCR被GPT-5.5甩开20个点。

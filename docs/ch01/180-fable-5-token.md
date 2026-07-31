@@ -26,6 +26,21 @@
 
 ## 三年前的 AGI Hunt
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 这个网站叫 AGI Hunt（没错，我公众号的同名网站），网址是：
 
 https://i.agihunt.info/feeds/ai/2026-07-05/zh （为什么是这个奇怪的链接不是纯域名，下面会讲，因为有个 bug……）

@@ -16,6 +16,15 @@ Harness 是模型之外的一切：运行时、工具、上下文检索、身份
 
 ## 从 Chatbot 到 Agent 的范式跃迁
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Chatbot 出错的代价是"糟糕的体验"；Agent 出错的代价是"业务事故"。这个差异驱动了工程要求的根本变化。
 
 Foundry 的 Voice Live 功能可以让现有文本 Agent 无重建转语音 Agent，反映行业正在离开 Chatbot 时代进入 Agent 执行时代。

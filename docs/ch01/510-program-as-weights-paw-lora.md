@@ -14,6 +14,20 @@ Waterloo 等团队提出的 **Program-as-Weights (PAW)** 开创性地将「模�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 - **核心思路**：传统编程对「模糊函数」束手无策，现有做法调 API 每条输入推理一次，昂贵且不可离线。PAW 三步走：自然语言描述函数需求 → 神经编译器编译为 LoRA 权重 → 小解释器加载执行。
 - **编译产物**：伪程序（任务重述+输入输出样例，约 50% 信息量）+ LoRA 权重（~38.5M 参数，约 23MB Q4_0 量化）。底座模型只需下载一次，换函数只需重新编译。
 - **核心数据**：PAW 0.6B 在 FuzzyBench EM 达 73.78%，超越 Qwen3-32B 直推的 68.70%。WRENCH 真实任务（YouTube/SMS/Yelp/IMDB）上整体与 4B-32B 直推同档。

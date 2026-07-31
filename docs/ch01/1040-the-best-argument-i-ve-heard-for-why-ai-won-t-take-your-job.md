@@ -10,6 +10,18 @@
 - value=7, confidence=8, product=56
 - Well-written Platformer article on AI job impact
 ## 相关实体
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/047-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 - [Principals Ai Education](../ch05/094-ai.html)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/047-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)

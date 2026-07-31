@@ -9,6 +9,15 @@
 → [（来源：raw）]
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 **Software Going Headless 的本质是价值层级的重新洗牌。** a16z 这篇文章的核心论点并非"SaaS 要死了"，而是：当 AI Agent 能直接读写数据库时，过去靠 UI/人肉惯性建立的护城河将被迫下沉到数据模型、权限体系、工作流逻辑和合规层。
 传统 System of Record 的黏性来源是 **人机界面** —— 仪表盘、Pipeline 视图、销售动作_feed，核心是给人看的。但 Agent 不需要眼睛，它只需要 API、context、instructions 和 action 能力。这意味着 Salesforce 的价值不再是"让销售管理者跑团队"，而是"谁是数据的 authoritative source"。
 文章拆解了五层黏性打分卡：**访问频率**（CRM 每天被 GTM 团队使用）、**读写双向流**（实时运营数据无法平滑迁移）、**未文档化 SOP**（多年积累的工作流规则是机构记忆最难迁移的部分）、**内外依赖度**（下游系统和监管方的接入程度）、**合规关键性**（工资、ERP、HR 数据具有法律属性）。这条打分卡在 Agent 时代并没有消失，而是 **人肉维度淡化，逻辑维度强化** —— Agent 同样需要 explicit rules、permissions 和 process definitions 才能安全地替代人。

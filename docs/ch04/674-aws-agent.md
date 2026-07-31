@@ -15,6 +15,21 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[意图] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察]
+    OB -->|"反思"| PL
+    subgraph "支撑"
+        M[记忆]
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+```
+
+
 1. **消费级 Agent 在社交渠道（微信、抖音、小红书）的触达架构** — 通过智能设备助手行业资产（IoT + device shadow）作为 agent runtime，跨社交平台触达终端消费者。
 2. **AWS IoT + Bedrock AgentCore 的设备侧 agent 模式** — 利用 AWS IoT Core 的设备注册 + Bedrock AgentCore 的 multi-agent 编排，把设备控制与社交对话合并为一个 agent runtime。
 3. **行业资产（Industry Assets）复用** — 将已有的智能设备行业资产（设备能力 API、设备状态模型）作为 agent tools，避免重复开发；这是 AWS 行业的核心优势。

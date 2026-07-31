@@ -14,6 +14,18 @@ AgentENV 解决的是 Agentic RL 训练中"执行环境"这一基础设施瓶颈
 
 ## 关键设计决策
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 ### 为什么选 Firecracker 而非容器
 Agent 在奖励驱动下可能尝试突破执行边界、访问隐藏服务、修改评测逻辑、读取外部答案。容器的共享内核存在更大攻击面，Firecracker 的微虚拟机提供硬件级强隔离，确保训练信号不被污染。
 

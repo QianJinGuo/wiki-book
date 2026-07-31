@@ -18,6 +18,30 @@
 
 ## 导读
 
+```mermaid
+graph LR
+    subgraph "AI 工具生态"
+        CLI["CLI Agent<br/>Codex/Claude Code"]
+        IDE["IDE 插件<br/>Cursor/Windsurf"]
+        PLT["平台<br/>OpenClaw/Hermes"]
+        MCP["MCP<br/>工具协议"]
+    end
+    CLI & IDE & PLT --> MCP
+    subgraph "能力"
+        CODE["代码"] 
+        BROWSER["浏览器"]
+        DATA["数据"]
+    end
+    CLI --> CODE
+    IDE --> CODE
+    PLT --> BROWSER & DATA
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef cap fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class CLI,IDE,PLT,MCP tool
+    class CODE,BROWSER,DATA cap
+```
+
+
 AI 工具正在重新定义"开发者工具"的边界。
 
 本章收录了 2024-2026 年最重要的 AI 工具和产品：从 Claude Code 到 Cursor，从 Obsidian + AI 到 Notion AI，从 n8n 工作流自动化到飞书多维表格集成。每一个工具背后都有一个产品判断——为什么它选择这样而不是那样设计？

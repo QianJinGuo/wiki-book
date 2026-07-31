@@ -23,6 +23,21 @@ Custom Objects 允许商家将自定义业务数据和逻辑建模进 Stripe 内
 Machine Payments Protocol（MPP，Stripe 与 Tempo 联合起草）和 Universal Commerce Protocol（UCP，与 Google 合作）容易被低估。前者让 Agent 之间可以基于智能合约进行 microtransaction 和 streaming payment，后者将 AI 对话中的购买意图直接映射为支付指令。两者共同指向一个未来：AI Agent 之间的经济往来不需要人类介入，支付将成为机器工作流的原生能力——这与 Web3 智能合约的愿景殊途同归，但落地路径更实际。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 **1. 立即将 Agentic Commerce Suite 纳入 AI Native 产品路线图** 
 Agentic Commerce Suite（catalog 上传、Dashboard 管控、fraud detection）是目前让 AI Agent 直接完成商业闭环的最小阻力路径。建议在产品设计阶段就评估：AI Agent 在哪些环节触发交易？Stripe 的 Agentic Commerce Suite 能否覆盖？目前 Meta checkout 和 Google UCP 的整合通道已打开，提前对接意味着优先获得 AI Mode/Gemini 的流量入口。 
 **2. 在 Sandbox 环境中测试 Stripe MCP + Custom Objects 的组合边界** 

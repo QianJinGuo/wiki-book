@@ -12,6 +12,18 @@ AWS China Blog（2026-07-14）发表了一篇深度文章，介绍如何用 **BM
 
 ## 核心架构：AIDLC 三阶段 + Review Gate
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 AIDLC 将开发过程划分为三个阶段，阶段之间由不可跳过的 **Review Gate（评审门禁）** 隔开：
 
 1. **Inception（启动阶段）** — AI Agent 基于 Product Brief 并行产出 PRD、架构文档、测试策略；人定义约束、回应澄清、做即时反馈

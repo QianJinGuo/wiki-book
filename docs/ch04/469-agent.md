@@ -35,6 +35,21 @@ AgentRun 开放平台提出的用户组（User Group）→ 用户（User）→ �
 
 ## 实践启示
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 **1. 从规划阶段就设计多租户隔离，而非事后补救**
 
 在企业级 Agent 部署初期就应规划用户组、用户、用户空间的三层隔离架构。事后改造隔离体系的成本远高于初始设计，且面临数据迁移和权限迁移的复杂风险。

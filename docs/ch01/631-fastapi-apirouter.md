@@ -28,6 +28,15 @@ source_url: https://mp.weixin.qq.com/s/qkMW9of3yj_sk1f3rKBQEg
 - ##  写在最后
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 ### 1. APIRouter 的本质：模块化路由容器
 APIRouter 的核心价值在于将"路由定义"与"应用装配"解耦。传统写法中，`main.py` 承担了路由定义、业务逻辑、配置加载等多重职责，导致职责膨胀。APIRouter 将路由抽离为独立模块，主应用只负责组装，这体现了**关注点分离（Separation of Concerns）**的设计原则。
 从架构角度看，APIRouter 实现了**门面模式（Facade Pattern）**的变体：主应用作为门面，对外暴露统一入口，内部路由模块各自封装独立功能域。这种设计使系统具备更好的可扩展性和可测试性。

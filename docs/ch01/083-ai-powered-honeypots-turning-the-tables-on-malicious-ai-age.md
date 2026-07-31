@@ -15,6 +15,15 @@
 - [How Superset built the IDE for AI agents on Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 ### 核心逻辑：AI 时代防御的范式转换
 传统蜜罐依赖手工构建欺骗环境，部署复杂、扩展性差。而生成式 AI 让防守方能通过简单文本提示即时创建多样化蜜罐（Linux shell、IoT 设备等），大幅降低了欺骗防御的门槛。
 关键洞察在于：AI 驱动的攻击以速度换能力，牺牲了隐蔽性。这使得攻击者高度容易被模拟系统欺骗——因为 AI 系统没有自我意识，只能在给定上下文和输入下生成合理响应，容易被 prompt injection 或伪装系统所误导。

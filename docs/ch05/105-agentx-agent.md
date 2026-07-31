@@ -24,6 +24,15 @@ Semantic-Gradient-based Prompt Optimization——从历史轨迹中找出 Agent 
 
 ## 生产级量化结果
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 3 个 AgentX worker 在主站推荐 + 生活服务场景：
 
 | 指标 | 人工 | AgentX | 提升 |

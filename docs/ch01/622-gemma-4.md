@@ -14,6 +14,21 @@ Gemma 4 的 31B 参数版本在多个 NLP 基准测试中与更大规模的闭�
 
 ## 行业意义
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 Gemma 4 的发布标志着开源模型正在快速缩小与闭源模型的差距。31B 参数的开放权重模型逼近前沿性能，对降低 AI 部署成本、推动 AI 民主化具有实际意义。
 
 ## 深度分析

@@ -13,6 +13,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
 
 ## 事件经过
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 ### 意外泄露与 A/B 测试
 2026 年 5 月的某个周末，Reddit 用户在 Gemini 界面中发现了新模型卡片的截图，描述文字为："Create with Gemini Omni: meet our new video model, remix your videos, edit directly in chat, try templates, and more" 。这一发现揭示了 Google 长期筹备的统一多模态策略。发布形式要么是意外事故，要么是受控的有限 A/B 测试 。与此同时，用户还在设置中发现了新的用量限制标签页，暗示将采用类似其他 Gemini 表面的计量收费系统 。
 

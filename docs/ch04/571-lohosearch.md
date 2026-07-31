@@ -18,6 +18,21 @@ LoHoSearch 的核心创新是**让机器自己出题**——以大规模知识�
 
 ## 构建流程
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 整个构建流程分为四个环节：
 
 1. **建图**：从完整英文维基百科出发搭建大规模知识图谱，包含 **762 万个实体**、**2.65 亿条有向边**。每个实体类型取自 Wikidata P31 类别，热度用入度衡量。

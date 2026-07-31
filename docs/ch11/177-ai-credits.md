@@ -10,6 +10,15 @@
 
 ## 核心设计
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **Token 级计量**：以 Token 为最小可度量单位，通过 Credits 抽象层屏蔽不同模型的 Token 权重差异
 - **跨模型可比口径**：不同模型、不同档位的 Tokens 权重不同，Credits 提供统一可比口径
 - **周期用量上限**：支持按消费者/业务设定周期用量上限，超限即拦截

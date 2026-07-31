@@ -47,6 +47,20 @@ Harness 本身成为可搜索对象。**DGM（Darwin Gödel Machine）**：codin
 
 ## 与现有实体的关系
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 Harness Engineering 的递进链条（Context→Workflow→Self-Harness→Evolution）与 [Loop Engineering](ch05/004-loop-engineering.html) 的反馈控制理念一脉相承。Self-Harness 的 Weakness Mining→Proposal→Validation 循环是对 ACE/MCE 的进一步抽象——从优化上下文升级为优化 Harness 本身。
 
 DGM 的进化搜索路径与 Spec-Kit 的开源框架路线在"Harness 可搜索、可编程"上形成互补：前者在 Harness 代码空间进化，后者在 Spec/PRD 空间约束。

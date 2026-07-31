@@ -19,6 +19,20 @@ Reflect 背后的核心思维框架是 Anthropic 提出的 **4D AI Fluency Frame
 
 ## 功能设计
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 Reflect 面板隐藏在 Claude 设置中，提供以下能力：
 
 - **使用统计**：活跃在周几、高峰时段、对话频率分布

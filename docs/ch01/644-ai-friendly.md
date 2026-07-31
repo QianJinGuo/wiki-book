@@ -14,6 +14,15 @@
 
 ## 核心内容
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### AI Friendly架构特征
 
 **可解释性（Explainability）**

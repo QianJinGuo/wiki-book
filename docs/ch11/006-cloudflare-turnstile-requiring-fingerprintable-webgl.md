@@ -8,6 +8,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 Niche but well-documented analysis of Cloudflare Turnstile WebGL fingerprinting requirements that effectively bans privacy-focused browsers, with specific browser bug references and screenshots.
 
 ## 深入分析

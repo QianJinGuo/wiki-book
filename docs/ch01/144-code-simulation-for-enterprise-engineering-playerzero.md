@@ -9,6 +9,18 @@
 - 评分：v=7 × c=8 = 56
 
 ## 深度分析
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 ### Code Review 与 Code Simulation 的本质差异
 Code review 在隔离环境下评估单个变更是否正确（静态分析），Code simulation 则建模变更进入真实系统后的行为——追踪数据流跨服务传播、预测状态变化、暴露静态分析无法看到的集成风险。两者的核心差异是"代码写对了没有"vs"代码在实际生产里会不会 work"。这是从被动观测到主动预测的方法论转变。
 

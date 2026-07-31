@@ -12,6 +12,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - 赞成者看重效率，反对者担心工程师失去独立看法和系统掌控力
 - "Cognitive Surrender"（认知投降）：AI 给出答案后，人直接接受而不形成自己的判断
 - Wharton 实验：AI 给出错误建议时，73.2% 参与者跟随错误答案

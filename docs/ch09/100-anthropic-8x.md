@@ -16,6 +16,15 @@
 
 ## 与现有实体的关系
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 与 `Claude Code 27 Tips Engineering Upgrade Jiagoux 2026`（同作者若飞）互补——27 条技巧聚焦个体效率提升，本实体聚焦 Fiona Fung 访谈揭示的组织级变化：验证取代编写成为新瓶颈、Spec 即验证接口、Routines 重构反馈流程、Bad/Sad 质量框架、6 个协作接口（SPEC/STATE/EVIDENCE/IMPACT/PERMISSION/HANDOFF）。也与 `Claude Code Demo To Production 8 Gates Huang Jia Csdn 2026`（黄佳 8 关卡）互补——8 关卡聚焦企业门禁，本实体聚焦 Anthropic 内部的组织演进和未解问题。
 
 ## 深度分析

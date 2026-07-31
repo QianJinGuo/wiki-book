@@ -20,6 +20,21 @@ PydanticAI 是 FastAPI 创始人 Samuel Colvin 打造的 Agent 框架，核心�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **输出合约取代 prompt 引导**：通过 `result_type=MyModel` 声明输出形状，Pydantic 自动校验，不通过则 `ModelRetry` 让模型重来，无需手写 try/except 解析逻辑
 - **类型参数泛型设计**：`Agent[DepsT, OutputT]` 双类型参数，DepsT 实现依赖注入（类似 FastAPI Depends），OutputT 定义输出合约
 - **三节点执行图**：UserPromptNode（拼装 system prompt + schema + tools）→ ModelRequestNode（调用 25+ provider 的 native structured output API）→ CallToolsNode（Pydantic 校验 + tool 执行 + ModelRetry 循环）

@@ -29,6 +29,15 @@ AgentCore 通过三层知识架构扩展 agent 的可达性：
 - **战略意义**：构建 agent economy 的双边基础设施
 
 ## 三个独有贡献（不应合并到现有 entity）
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 1. **三层知识架构抽象** — 组织/世界/付费三层分类，是 AWS 对 agent 可达性问题的系统化分类法
 2. **Agentic retriever vs 传统 RAG** — 主动 query planning + 中间结果评估，而非被动相似度匹配
 3. **Agent economy 基础设施** — WAF AI traffic monetization + AgentCore payments 双边架构，是 agent 商业化的产品级实现

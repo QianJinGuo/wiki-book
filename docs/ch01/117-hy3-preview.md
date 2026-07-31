@@ -10,6 +10,21 @@
 腾讯混元 Hy3-preview 发布并开源，这是一个快慢思考融合的混合专家模型（MoE），总参数 295B，激活参数 21B，最大支持 256K 上下文长度，在复杂推理、指令遵循、上下文学习、代码、智能体等能力上实现大幅提升。
 
 ## 关键要点
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - 混元 MoE 架构：总参数 295B，激活 21B，支持 256K 上下文
 - 强化学习驱动：2026 年 2 月完成预训练和 RL 基础设施重建
 - Agent 能力全面提升：SWE-Bench Verified、Terminal-Bench 2.0、ClawEval 等基准表现竞争力

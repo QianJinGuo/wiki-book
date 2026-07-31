@@ -8,6 +8,15 @@
 AutoClaw 是智谱推出的 OpenClaw 本地客户端，旨在降低 AI Agent 的使用门槛。用户只需 1 分钟即可在本地电脑安装完整的 OpenClaw 环境，自带 66 个内置 Skill，支持接入飞书等办公协作工具，数据全程留在本地，安全性高。相比云端方案，AutoClaw 在启动成本、响应速度、数据安全和模型自由度方面具有明显优势。
 
 ## 核心要点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - **零门槛安装**：下载客户端 → 注册登录 → 选择模型，1 分钟完成安装^
 - **66 个内置 Skill**：覆盖大多数日常办公和创作需求^
 - **多模型支持**：智谱 GLM/ Pony2、DeepSeek、Kimi、MiniMax、Google Banana2 等^

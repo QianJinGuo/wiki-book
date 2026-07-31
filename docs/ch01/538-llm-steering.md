@@ -17,6 +17,20 @@ Steering（行为引导）指在**模型推理阶段**对内部表示/激活进�
 
 ## 统一机理解释
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 三阶段规律
 
 逐步增大 Steering 强度时，模型行为呈现高度一致的三阶段变化：

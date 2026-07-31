@@ -8,6 +8,15 @@
 SkillsUI（兔展智能）是一个企业 Agent 中间层平台，定位为"企业 Agent 最后一公里"——解决 function calling/MCP 等底层协议到企业存量系统之间的工程层缺口。官网：https://skillsui.rabbitpre.com.cn/
 
 ## Key Facts
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 | Fact | Detail |
 |------|--------|
 | 定位 | 企业 Agent 应用/中间层 |

@@ -8,6 +8,15 @@
 cURL 项目创始人 Daniel Stenberg 测试了 Anthropic 的 Mythos 漏洞挖掘 AI。Anthropic 此前宣称 Mythos 能力太强不适合公开，在对 cURL 的扫描中却仅发现 1 个低危漏洞。Stenberg 认为围绕 Mythos 的炒作"主要是营销"，而非真正的 AI 安全突破。
 
 ## 关键要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - 技术领域：AI / 安全 / Newsletter
 - 来源：The Register
 - 评分：value=8, confidence=8, product=64

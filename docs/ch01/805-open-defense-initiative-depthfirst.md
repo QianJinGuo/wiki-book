@@ -12,6 +12,15 @@ depthfirst 于 2026 年 5 月发布 **Open Defense Initiative**（开放防御�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 ### 时间窗口论
 
 - Frontier AI 模型（Mythos、GPT-5.5 Cyber）已展示**自主漏洞发现和利用**能力

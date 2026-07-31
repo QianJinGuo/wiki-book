@@ -16,6 +16,15 @@
 
 ## SingGuard-NSFA: 智能体行为安全护栏
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 SingGuard-NSFA提供0.8B、2B、4B、9B四个尺寸，核心设计理念是将安全检查**前置到智能体执行之前**，在请求拦截和响应兜底两端同时设卡。
 
 ### 风险分类体系

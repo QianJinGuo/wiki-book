@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 8.8KB | `entities/cloud-ai-mobile-testing-new-era-amazon-device-farm-mcp-server-practical-guide-en.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 The New Era of Cloud AI Mobile Testing: Amazon Device Farm MCP Server Practical Guide by awschina on 19 12月 2025 in Developer Tools Permalink Share English version | 中文版本 Introduction: The Mobile Automation Wave in the AI Era The Rise of AI Mobile Automation In today’s rapidly evolving artificial intelligence landscape, mobile automation testing is undergoing significant technological transformati
 
 ## 核心技术

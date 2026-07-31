@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 4.0KB | `entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - Sandworm 是俄罗斯军事情报局 (GRU) 关联的知名黑客组织
 - 近期活动显示从传统 IT 网络转向工业控制系统 (ICS) 和操作技术 (OT)
 - 曾于 2015、2016 年对乌克兰电网发起攻击导致大范围停电

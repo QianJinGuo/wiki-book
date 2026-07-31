@@ -18,6 +18,20 @@ OpenAI Codex（编程 Agent）的 SQLite 反馈日志 (`logs_2.sqlite`) 存在�
 
 ## 修复状态
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 Anthropic 在收到报告后进行了修复，削减了约 85% 的日志写入量。但用户无法自行修改（Codex 桌面端闭源）。该问题在 Hacker News 上被评论为典型的劣质软件（slopware）。
 
 ## 深度分析

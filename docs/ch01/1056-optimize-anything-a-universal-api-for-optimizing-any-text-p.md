@@ -14,6 +14,16 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
+
 optimize_anything: A Universal API for Optimizing any Text Parameter 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # optimize_anything: A Universal API for Optimizing any Text Parameter

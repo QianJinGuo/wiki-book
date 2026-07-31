@@ -23,6 +23,15 @@ review_stars: 3
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 **1. Computer Use 范式转移：从工具到工作台**
 
 2025 年底的讨论焦点是「哪个模型更聪明」，2026 年初已经全面转向「Computer Use」——让 AI 操控电脑自己去干活。

@@ -27,6 +27,20 @@ OpenSquilla 推出 **9 个内置 Meta Skill**，代表从 Skill 1.0（单 Skill 
 **范式三线交点**：(1) 模型复杂指令理解能力飞升 (2) 社区 Skill 爆发需要更高抽象 (3) 大模型成本压力大 → Meta Skill 把 trial-and-error 烧 token 前置到 Skill 层。详见 [Meta Skill](../ch07/025-meta-skill.html) 实体页。
 
 ## 深度分析
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 ### 1. 路由决策的分层复杂性
 OpenSquilla 的 token 节省并非来自单一技术，而是多层路由策略的协同效果：ML 分类器基于消息长度、代码块存在性、关键词模式等手工特征，结合基于 embedding 的语义特征对请求复杂度打分。简单查询路由至廉价模型，轻量任务禁用深度推理（chain-of-thought），Skills 按需加载而非全量塞入上下文。这与 [GitHub Agentic Token 效率](ch04/237-agentic.html) 中"消灭未使用的 MCP 工具注册"思路一脉相承——都是在 proxy 层削减不必要的 token 消耗。
 

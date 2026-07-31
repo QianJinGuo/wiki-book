@@ -13,6 +13,15 @@
 **智能标准**：系统必须能预测自己行动的后果
 
 ## 关键计算
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 四岁孩子视觉信息量 ≈ 10^14字节 ≈ 最大LLM训练语料
 结论：靠训练文本永远不可能到达人类级别AI
 

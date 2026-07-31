@@ -13,6 +13,20 @@ Mert Cobanov: AI Agent Memory Systems 完整综述，向量DB/知识图谱/摘�
 [](https://github.com/cobanov "GitHub")[](https://x.com/mertcobanov "Twitter") Language models forget the moment they finish replying. Memory is every...
 
 ## 原文存档
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 ## 深度分析
 Mert Cobanov 的综述覆盖了 Agent 记忆系统的四种主流范式：向量数据库（Vector DB）、知识图谱（Knowledge Graph）、摘要压缩（Summary Compression）、外部记忆（External Memory）。这四种范式并非互相替代，而是覆盖了不同的记忆需求层级——向量 DB 擅长语义检索但丢失时序，知识图谱保留结构关系但构建成本高，摘要压缩节省 token 但有信息损失风险，外部记忆最灵活但引入了系统复杂度。
 一个关键的系统设计洞察是：这四种记忆范式对应了人类认知中的不同记忆系统类型。向量 DB 更像人类的「情境记忆」（Episodic Memory）——以经验片段存储，通过相似性检索；知识图谱更像「语义记忆」（Semantic Memory）——结构化的概念和关系；外部记忆则对应「工作记忆」（Working Memory）和「长期记忆」的混合。理解这个类比有助于在实际系统中选择正确的记忆架构。

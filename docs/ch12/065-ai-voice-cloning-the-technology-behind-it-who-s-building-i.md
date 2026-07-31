@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 7.2KB | `entities/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - Published Time: 2026-05-16T11:13:31+01:00
 - Voice cloning 从需要数小时训练的复杂语音模型，到现在只需短音频片段几分钟即可复制的 DIY 工具
 - 零样本克隆（Zero-shot）只需 3-10 秒音频；少样本克隆（Few-shot）需要 1-5 分钟；完全微调需要 1 小时以上

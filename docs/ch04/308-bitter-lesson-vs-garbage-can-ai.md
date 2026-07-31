@@ -27,6 +27,21 @@ Richard Sutton 2019 年 essays 指出的模式：AI 研究者一次次试图用�
 
 ## Agents 的两种路线
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### Manus：精心手工构建的 Agent
 
 Manus 用 Claude + 系列巧妙方法构建通用 Agent。系统提示中有数百行定制文本，包括如何构建待办事项的详细指令。体现了"精心制作"、"定制"、"融入来之不易的知识"——正是 Bitter Lesson 告诉我们要避免的。

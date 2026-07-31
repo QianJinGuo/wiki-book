@@ -12,6 +12,15 @@
 
 ## AI Coding L0-L5 自动化分级
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 借用自动驾驶分级，业界最清晰的 AI Coding 阶段定义：
 - **L0** 全手动
 - **L1** 代码补全与辅助（Copilot 级别）

@@ -12,6 +12,20 @@ SpaceXAI（原 xAI）于 2026 年 7 月正式发布 Grok 4.5，这是更名后�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 - **Opus 级别性能**：在 DeepSWE 1.0（62.0%）、SWE Marathon（29.0%）、Terminal Bench（83.3%）上击败 Opus 4.8，在 SWE-Bench Pro（64.7%）和 DeepSWE 1.1 上略低于 Opus 4.8，整体三胜两负
 - **Cursor 联合训练**：与 Cursor 合作，注入海量真实开发者行为数据——如何定位 bug、跨多文件修改代码、人类如何修正 AI 错误等，解决了 Grok 过去"跑分强、实战弱"的问题
 - **极致性价比**：输入 2 美元/百万 token，输出 6 美元/百万 token，GDPval 任务平均仅耗时 0.49 美元，低于 GLM-5.2 和 Kimi K2.6 等国产模型

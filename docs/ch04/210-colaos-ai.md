@@ -19,6 +19,15 @@
 
 ## 产品：从工具到关系
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 关键问题
 
 > "Claude Code 这类能力已经能做很多事，为什么大多数普通人仍然用不起来？"

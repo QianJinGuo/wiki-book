@@ -17,6 +17,16 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考]
+    TH --> AC[行动]
+    AC --> OB[观察]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+```
+
+
 Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环

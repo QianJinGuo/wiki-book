@@ -23,6 +23,15 @@
 - [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)- [四种 Sub Agent 模式](../ch03/035-agent.html) 
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 ### 范式转移：人是瓶颈，但解决方式不是替代人
 作者的核心洞察不是"AI 能做什么"，而是重新定义了问题本身——人的瓶颈不是能力不够，而是注意力有限。4-6 个终端并发是硬上限，原因不在于不努力，而在于人脑的并发模型本身就是这样。解决方案不是让 AI 替代人，而是让系统不再依赖人的实时在场。
 这条思路从一开始就跳出了"AI 替代人"的误区，走向了"人机协同系统化"的方向。

@@ -11,6 +11,16 @@
 - 支持 SSR，无 Shadow DOM 障碍，天然可访问
 - 设计目标：跨框架组件库与设计系统
 ## 相关实体
+
+```mermaid
+graph LR
+    IN[输入] --> TH[思考]
+    TH --> AC[行动]
+    AC --> OB[观察]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+```
+
 - [Impeccable](../ch05/001-impeccable.html)
 - [Impeccable Vibe Design Philosophy Anomaly](../ch05/001-impeccable.html)
 

@@ -14,6 +14,21 @@
 
 ## R-SWA 机制
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 人类抄书时不会每写一个字翻阅前面几十页——只保留当前状态和最近几行。论文称之为**软遗忘（Soft Forgetting）**。
 
 ### 两层注意力分离

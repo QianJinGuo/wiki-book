@@ -18,6 +18,15 @@ code秘密花园（ConardLi）延续视频 Skill 的 Harness 骨架，为「将�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **Reacticle 协议**：React + Article 的组件契约，提供 Article / Hero / Lead / Section / Subsection / Table / Quote / CodeBlock 等语义组件，AI 只负责「组合」，结构和排版由库保证。
 - **Raw 逃生舱**：在组件约束之外提供 Raw 组件，允许任意 HTML/SVG/CSS/React，但必须消费主题 token，兼顾自由度与稳定性。
 - **11 套编辑级主题**：每套主题包含 CSS token 包 + AI 可读的 Markdown profile（配色风格、代码高亮、Raw 惯用法、反模式说明）。

@@ -12,6 +12,20 @@ Alex Wang，Meta AI 负责人，此前是 Scale AI 的联合创始人兼 CEO。 
 入职后，Wang 从旧金山搬到南湾（South Bay），靠近 Meta 总部，全力投入工作。 他在 Scale AI 时期被称为"瑞士"，在某些立场上声音很大，但并不总是直接谈论 AI 本身。
 
 ## Muse Spark 模型
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 Meta 近期发布了新一代模型 **Muse Spark**，这是 Wang 入职后首个对外公布的成果。 该模型以语音模式（Voice Mode）和 Meta Glasses 为载体对外展示。 业界对 Meta 能否追上竞争对手仍有疑问，但 Muse Spark 被视为 Meta AI 复兴的第一个可见成果。
 
 ## 与 Sam Altman 的私人矛盾

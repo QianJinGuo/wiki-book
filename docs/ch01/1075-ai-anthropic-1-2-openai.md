@@ -14,6 +14,20 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 全球AI新王诞生！Anthropic估值冲爆1.2万亿，首次反超OpenAI 涉及agent领域的核心技术议题。
 ### 核心观点
 1. Anthropic估值冲爆1.

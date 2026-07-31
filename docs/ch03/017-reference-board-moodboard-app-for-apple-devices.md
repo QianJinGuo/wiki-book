@@ -10,6 +10,15 @@ Reference Board 定位为「私人灵感库」，强调不追踪用户数据、�
 
 ## 主要功能
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 ### 无限画布（Infinite Canvas）
 应用提供无限画布，用户可在 Mac 上自由展开多个 moodboard，不受边界限制地收集和探索视觉灵感。
 

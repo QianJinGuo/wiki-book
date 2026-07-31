@@ -16,6 +16,15 @@
 > 来源：新世界圆圆圆 - 赛博虾酱，2026-03-24
 > 评分：v=6, c=7, v×c=42 → 作为 [Superpowers entity](ch01/490-claude-code-skills-superpowers.html) 的补充
 ## 核心洞察
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 Claude Code 不只是需要一个会写代码的助手，它需要一个会干活的人。
 2. com/obra/superpowers.
 3. claude/skills

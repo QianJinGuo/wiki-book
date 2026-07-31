@@ -16,6 +16,21 @@ NOVELQR（Novelty-aware Quote Recommendation）是一个两阶段引据推荐框
 
 ## 两阶段框架
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 阶段一：离线构建 — 生成式标签智能体（Label Agent）
 
 为每条引据生成七维语义标签：

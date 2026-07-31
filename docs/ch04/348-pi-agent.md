@@ -12,6 +12,15 @@ Pi 是一个轻量级开源 Agent 项目，定位为个人开发者的 Agent 底
 
 ## 架构特点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 ### 核心设计
 
 Pi 不是大而全的 Agent 框架，也不是黑盒产品。它拆得比较清楚，方便二次开发：

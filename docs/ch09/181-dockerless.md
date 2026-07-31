@@ -12,6 +12,20 @@ Dockerless 是上海交通大学与抖音集团提出的免环境（environment-
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 1. **方法**：两阶段 Agent 流水线——(1) 从 Issue 提炼 2-4 个验证问题，派子 Agent 用只读 shell 工具搜代码库证据；(2) 综合判决输出 0-1 连续分数
 2. **训练**：GLM-5 教师生成轨迹 → 拒绝采样（只保留判对轨迹）→ Qwen3.5-9B 骨干端到端微调，共 3.7K Issue 数据
 3. **免环境 SFT**：16K 免环境轨迹中 Dockerless 打分 top 25% 做 SFT，效果与有 Docker 环境采集几乎持平 (60.6 vs 60.0 Verified)

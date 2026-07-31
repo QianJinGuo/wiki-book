@@ -2,6 +2,16 @@
 
 ## Ch11.262 The Evolution of Cassandra Data Movement at Netflix
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考]
+    TH --> AC[行动]
+    AC --> OB[观察]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+```
+
+
 > 📊 Level ⭐⭐ | 3.9KB | `entities/the-evolution-of-cassandra-data-movement-at-netflix.md`
 
 # The Evolution of Cassandra Data Movement at Netflix

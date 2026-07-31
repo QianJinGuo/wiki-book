@@ -29,6 +29,15 @@ In this post, we cover data modeling concepts, supported patterns, and best prac
 
 ## Why a runtime, relationship-based model
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 The traditional single-dataset model has three recurring costs:
 
   * **Upfront preparation:** You must decide the join shape before you know every question, often pushing logic into custom SQL or database views.

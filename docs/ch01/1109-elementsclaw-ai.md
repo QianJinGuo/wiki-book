@@ -17,6 +17,15 @@
 
 ## 技术架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ElementsClaw 采用「通专融合」架构：
 
 - **专用模型 Elements**：10 亿参数几何深度图神经网络，预训练 1.25 亿分子/晶体结构，22 个材料学基准达 SOTA，首次在非 LLM 架构验证 Scaling Law

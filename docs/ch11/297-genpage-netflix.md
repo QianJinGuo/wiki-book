@@ -8,6 +8,21 @@
 
 ## 核心洞察
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 Netflix 用单一 decoder-only Transformer 模型替代传统的多阶段推荐流水线（候选生成 → 行级排序 → 实体级排序），将首页构建视为**自回归序列生成问题**：用户上下文作为 prompt，整页布局作为 response。
 
 **关键突破**：不是生成扁平排序列表（如 TIGER、HSTU、OneRec），而是同时生成行（rows）、实体（entities）和布局（layout），实现真正的端到端页面构建。

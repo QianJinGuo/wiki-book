@@ -14,6 +14,20 @@ Founder Park 发布的对谈记录。股票分析师 Michael Morton（MoffettNat
 
 ## 五大核心观点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 ### 1. AI 导流 4-8 倍偏向品牌官网
 
 AI 平台（ChatGPT、Google AI Mode 等）向 brand.com 输送的流量增速是传统电商平台的 4-8 倍。用户带着更强的购买意图被直接导向品牌自建站，绕过了 marketplace 中间层。

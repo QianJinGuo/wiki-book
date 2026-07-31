@@ -12,6 +12,20 @@ GrowLoop 提出用少量种子样例 + Rubrics 自动生长机制来解决开放
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 1. 真人感评测是开放域对话领域的开放难题 — 标准难以制定、难以量化、难以统一
 2. GrowLoop 通过有限的种子 + Rubrics 自动生长机制，将感性标准转化为理性 Benchmark
 3. 方法超越了对话评测，适用于艺术评价、教育评估、科研评审等难以制定客观标准的场景

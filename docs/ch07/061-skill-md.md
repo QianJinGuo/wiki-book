@@ -23,6 +23,21 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 SKILL.md 规范的核心理念是"渐进式披露"（Progressive Disclosure）——这是一个在 UI 设计领域早已成熟的模式，核心思想是只展示当前步骤需要的信息，不提前加载无关内容。在 AI Skill 场景下，这个模式的价值被进一步放大：LLM 的上下文窗口是稀缺资源，Skill 的设计者需要决定什么信息在什么时候进入上下文。文章演示的三层架构（前置元数据 ~100 token → 正文 ~1350 token → 按需加载的外部文件）本质上是一套严格的资源分配协议，确保每个 token 都花在刀刃上^。
 
 description 字段的设计是整个 Skill 的灵魂。与其说它是描述，不如说它是一个"触发条件清单"。文章强调要同时包含正向触发词（resume、CV、ATS-friendly）和负向边界（Do NOT use for: cover letters、job searching），这种正负清单的设计让 LLM 可以在不做算法判断的情况下完成路由决策。这是一种把复杂推理转化为查表的策略——查表的速度远快于推理，且可预测性更高。对于企业级 Skill 场景，这种确定性比"聪明的推理"更重要，因为一次误触发可能导致生产环境的错误行为^。

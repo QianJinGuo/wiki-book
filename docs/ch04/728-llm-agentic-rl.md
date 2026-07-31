@@ -23,6 +23,20 @@
 
 ## 七条实战清单
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 1. **动作掩码（Action Mask）是底线**：损失只算模型自己生成的 token，避免对环境 token 的错误学习。进阶做法：环境 token 用 SFT 目标学。
 
 2. **优势归一化拉宽口径**：在同任务全部轨迹上做归一化，解决多任务奖励尺度不一致的问题。

@@ -22,6 +22,15 @@ CaRE（Scalable Continual Learner with efficient Bi-Level Routing Mixture-of-Exp
 
 ## 方法设计
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 双阶段路由机制
 
 - **第一阶段 — 动态路由器选择**：对任意输入，BR-MoE 将其 [CLS] Token 送入所有历史任务的类感知器，逐层计算预测熵值，选取熵最小的 Top-M 个路由网络。无需显式任务标签。

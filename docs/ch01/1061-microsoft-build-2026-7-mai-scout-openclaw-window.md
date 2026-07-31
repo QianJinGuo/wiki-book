@@ -18,6 +18,16 @@ Microsoft Build 2026 全景：7 款 MAI 模型 + Scout + OpenClaw 登 Windows + 
 2. com/s/qeb0jxNQIUYPVZum0guvfg
 > 来源：量子位（QbitAI）· 梦瑶 闻乐
 ## 一句话定位
+
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    DEC --> RL[强化学习]
+```
+
 **Microsoft Build 2026 = 微软 AI 自立门户大会**——同一事件的更全景视角。
 3. > "（Peter 苦笑说：）我还挺高兴它没能删除桌面文件，因为六个月前这绝对能成功哈……" —— MXC 沙箱成功拦截 OpenClaw 危险指令
 ## 1.

@@ -67,6 +67,15 @@
 
 ## 关键发现（12 模型实测）
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 基于 React Agent 框架，评估 GPT 系列、Claude 系列、Gemini 系列、DeepSeek 系列、Qwen 系列共 12 个主流大模型。
 
 ### 发现一：能完成任务，但猜不准你

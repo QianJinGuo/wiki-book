@@ -12,6 +12,15 @@ Parsiya 延续 Semgrep 的 Mythos 实验，用 26 种 Claude 4.6/4.7/4.8 和 GPT
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 1. **推理努力悖论**：low 推理努力在所有模型上表现最差，但 medium 有时优于 high/xhigh——GPT-5.5-med 胜过 GPT-5.5 的 high/xhigh
 2. **LLM 委员会机制**：四模型投票达 86.2% 一致率，仅 2.8%（59 票）无多数；奇数模型委员会可能更优
 3. **粒度效应**：函数级分析（LLM 只看目标函数）性能远优于文件级分析（LLM 看整个文件）——70.8% 部分发现率 vs 1.9% 完全解出率

@@ -16,6 +16,20 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 How to Automate AI Model Documentation with the NVIDIA MCG Toolkit 涉及architecture领域的核心技术议题。
 ### 核心观点
 1. Model cards describe how a model works, its intended use and license, training data, performance, and limitations.

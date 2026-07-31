@@ -14,6 +14,14 @@
 
 ## 核心方法论
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+```
+
+
 **三阶段**：
 1. 采集关键数据 → 形成评测 Harness
 2. 构建二进制一致版本（已比 Megatron 快 10%）

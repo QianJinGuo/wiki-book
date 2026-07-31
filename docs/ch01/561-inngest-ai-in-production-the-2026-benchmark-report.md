@@ -9,6 +9,15 @@
 - 来源：inngest
 
 ## 关键发现
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 ### 1. 信心悖论（The Confidence Paradox）
 仅有 19% 的 AI 生产团队对自身技术栈应对 2-3 倍规模扩展的能力充满信心。在 500+ 工程师规模的大型组织中，这一比例骤降至 **0%**。
 

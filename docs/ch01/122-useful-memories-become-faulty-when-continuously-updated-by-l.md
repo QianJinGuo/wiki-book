@@ -23,6 +23,20 @@
 对于所有依赖长期记忆进行 self-improving 的 AI Agent 系统——无论是客服 Agent、编码 Agent 还是研究 Agent——这项研究意味着"让 Agent 不断从经验中学习"的设计可能正在积累错误而非提升性能。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 - **不要强制要求 Agent 在每次任务后进行记忆抽象**：强制 consolidation（当前多数系统的默认值）会主动破坏记忆质量。让 Agent 选择性地保留或删除 raw episodes，禁用自动抽象。
 - **评估 Agent 记忆系统时，用"有记忆 vs 无记忆"的 baseline 对比是不够的**：必须测试"新问题 vs 相邻变体 vs 相同问题"三种场景的准确率。如果记忆只在 exact repeat 上有效，在变体上反而造成干扰，则该记忆系统是净负担。
 - **Consolidator 的 schedule 至关重要**：如果必须进行 abstraction，Static-Group（按任务族分组后一次性抽象）远优于 Stream（增量式）。批次越大、越异质，抽象质量越低。

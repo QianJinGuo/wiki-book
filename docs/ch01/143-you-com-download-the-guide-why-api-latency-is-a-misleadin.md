@@ -13,6 +13,15 @@
 **Quality-adjusted latency 是最重要的指标。** 一个快速但错误的答案（幻觉）带来的成本，远高于一个稍慢但准确的答案。因为错误的答案需要用户重新查询、验证、纠错，这个成本在生产环境中会成倍放大。文章称之为"隐藏的延迟税"（hidden latency tax）：requeries、error recovery、ungrounded responses——这些都不会出现在基准表格里，但会在生产日志里准时出现。
 
 ## 相关链接
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [Inngest Ai In Production The 2026 Benchmark Report](ch01/561-inngest-ai-in-production-the-2026-benchmark-report.html)
 
 ## 实践启示

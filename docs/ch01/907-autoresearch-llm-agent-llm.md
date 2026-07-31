@@ -21,6 +21,20 @@
 
 ## 架构设计
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 三阶段流水线
 
 **阶段 1：场景理解与基线分析** — 7 维诊断 + baseline 跑分。关键规则：基座模型在本阶段锁定，后续整个实验序列不再可调。

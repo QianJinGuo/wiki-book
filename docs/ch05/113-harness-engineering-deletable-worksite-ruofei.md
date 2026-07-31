@@ -14,6 +14,21 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[意图] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察]
+    OB -->|"反思"| PL
+    subgraph "支撑"
+        M[记忆]
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+```
+
+
 Harness Engineering Deletable Worksite Ruofei 涉及agent领域的核心技术议题。
 ### 核心观点
 1. ## 再看 Harness Engineering：真正要设计的不是约束，而是可删的工作现场

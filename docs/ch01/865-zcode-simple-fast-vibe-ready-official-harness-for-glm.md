@@ -14,6 +14,20 @@ ZCode 是智谱（Zhipu AI）为 GLM-5.2 推出的官方编程助手（coding ha
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 - **官方 Harness**：ZCode 是智谱官方为 GLM-5.2 打造的编程环境，与模型深度集成
 - **Vibe Coding 友好**：强调"氛围编程"体验，支持自然语言驱动的代码生成
 - **快速启动**：开箱即用，简化配置流程，降低 AI 编码入门门槛

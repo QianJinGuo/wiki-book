@@ -16,6 +16,16 @@
 
 ## 内容提炼
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考]
+    TH --> AC[行动]
+    AC --> OB[观察]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+```
+
+
 Published Time: 2026-06-15T11:29:20-07:00
 
 Markdown Content:

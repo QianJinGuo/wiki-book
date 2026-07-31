@@ -25,6 +25,21 @@ TOPICS
       ...
 
 ## 关键要点
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - 技术领域：AI / Newsletter
 - 来源：Newsletter
 - 评分：value=7, confidence=8, product=56

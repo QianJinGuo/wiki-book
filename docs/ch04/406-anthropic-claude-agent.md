@@ -14,6 +14,18 @@ Anthropic 此次发布的意义远不止功能更新，而是清晰定义了"AI 
 ---
 
 ## 实践启示
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 **对于平台/基础架构团队**：Managed Agents 是将 AI 能力落地到企业业务的现成框架，无需从零构建 Agent 基础设施。可以先在非关键业务场景验证，比如内部文档处理、代码审查自动化。
 **对于 AI 产品经理**：Multiagent Sessions 适合复杂协作场景——比如同时需要研究、分析、写作的多步骤任务。但要警惕过度设计：简单任务不要引入多 Agent 复杂度。
 **对于开发者**：Outcomes Loop 是质量保障利器，特别适合有明确验收标准的场景（报告生成、数据分析、代码测试）。建议用真实的业务 Rubric 替代模糊的"做完了"判断。

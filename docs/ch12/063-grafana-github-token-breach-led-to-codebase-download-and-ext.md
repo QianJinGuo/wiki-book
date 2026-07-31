@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 7.3KB | `entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md`
 
 ## 事件概要
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 Grafana 于 2026 年 5 月披露，公司遭 unauthorized party 获取了可访问其 GitHub 环境的 token，并下载了代码库。调查显示无客户数据或个人信息的访问痕迹，Grafana 随即启动取证分析、定位泄露源头、作废凭证并强化安全管控。攻击者随后试图勒索 Grafana，要求支付赎金以阻止被盗数据库公开，Grafana 拒绝支付并遵循 FBI 一贯立场——不与勒索者谈判。
 CoinbaseCartel 宣称对此次事件负责。该组织于 2025 年 9 月崛起，被评估为 ShinyHunters、Scattered Spider 和 LAPSUS$ 生态的分支，专注于数据窃取和勒索而非传统勒索软件，已累计受害 170 家机构，遍布医疗、科技、交通、制造和商业服务领域。
 

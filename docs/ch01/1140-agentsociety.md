@@ -33,6 +33,15 @@ AgentSociety的关键意义在于，它让AI智能体第一次以较大规模进
 这也是Age
 ## 相关链接
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 & W3 --> MSG[消息]
+```
+
+
 - [多智能体系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
 - [Agent 自进化循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)
 

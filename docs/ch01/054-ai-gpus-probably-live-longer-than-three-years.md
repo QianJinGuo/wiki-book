@@ -14,6 +14,20 @@ Sean Goedecke 2026 年发表的反主流分析：被 AI 怀疑论者反复引用
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 - **作者**: Sean Goedecke
 - **来源**: [https://www.seangoedecke.com/ai-gpus-live-longer-than-three-years/](https://www.seangoedecke.com/ai-gpus-live-longer-than-three-years/)
 - **评分**: v=8, c=8, v×c=64, stars=4

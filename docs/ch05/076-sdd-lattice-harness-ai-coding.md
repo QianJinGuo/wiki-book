@@ -12,6 +12,15 @@ Individual SDD（Spec-Driven Development）向团队级 Harness 演进的完整�
 
 ## 五大工程缺口
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **Context 缺口** — 关键业务规则没进 Spec → 可审计的项目上下文
 2. **裁判缺口** — 谁判断做对了 → 独立 Verification（执行者不能做最终裁判）
 3. **追踪缺口** — 验收标准、测试、代码、证据没有链路 → AC 覆盖（AC-1/AC-2 编号追踪）

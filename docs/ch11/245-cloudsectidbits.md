@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 4.3KB | `entities/cloudsectidbits.md`
 
 ## Key Research
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 ### Masso: Cognito SSO Bypass
 A vulnerability in AWS Cognito's SSO implementation allowing authentication bypass.   ^[raw/cloudsectidbits-masso-cognito-sso.html]
 

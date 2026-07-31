@@ -12,6 +12,21 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifier-a-general-purpose-verification-framework.md)
 
 ## 相关实体
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - [LLM-as-a-Verifier: A General-Purpose Verification](ch01/1071-llm-as-a-verifier-a-general-purpose-verification.html)
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1274-llm.html)
 

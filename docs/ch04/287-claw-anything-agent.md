@@ -20,6 +20,21 @@
 
 ## 三维上下文扩展
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 | 维度 | 内容 | 规模 |
 |------|------|------|
 | 长程事件流 | 模拟长达数月的连贯生活轨迹 | 上下文 191.7k 字 |

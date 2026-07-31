@@ -12,6 +12,15 @@ BrowserAct 是一个专门面向 AI Agent 的浏览器自动化 CLI 工具，在
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 - **三层架构设计**：最底层是 BrowserAct CLI（真实浏览器执行层），中间是 `browser-act` Skill（Agent 操作向导），顶层是 `browser-act-skill-forge` Skill（将已跑通的流程封装为新 Skill）。
 - **真实浏览器环境**：Agent 进入的是一个真实浏览器的运行现场，而非静态的 HTML 文本。支持等待页面动态加载完成、观察 DOM 变化、处理 AJAX 请求等待的内容。解决了 Agent 读取动态网页时的"只看到框架没看到内容"问题。
 - **身份与任务隔离**：浏览器被抽象为账号身份的容器，Session 是具体任务的工作区。同一账号可并行处理多个任务，不同账号间的登录状态、Cookie、代理和浏览器配置互不干扰。

@@ -16,6 +16,16 @@
 
 ## 搜索自迭代闭环
 
+```mermaid
+graph TB
+    SRC[源码] --> FORK[Fork]
+    FORK --> CONTR[贡献]
+    CONTR --> REV[Review]
+    REV --> MERGE[合并]
+    MERGE --> REL[发布]
+```
+
+
 Agent 驱动：将"发现问题→提出假设→分配评测预算→筛选候选→验证收益→输出候选配置"变成可重复运行、结果可审阅的闭环。生产变更保留 dry-run + 手动确认。
 
 ## 三层架构

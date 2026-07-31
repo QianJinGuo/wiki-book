@@ -10,6 +10,15 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 1. AI 是陌生领域的知识倍增器，而非替代者
 
 作者面对的三大盲区——VSCode 插件开发、Chrome Cookie 加密机制（v10 + AES-128-CBC + PBKDF2 + M118+ origin binding）、UUAP SSO 多域 cookie 分散——每一项都是独立的知识壁垒。Claude 的核心价值在于它能覆盖"广为人知但我不知道"的细节，例如 Chrome M118+ 的 32 字节 SHA256(host_key) origin binding，这种细节在传统独立开发中可能让人卡关数天。

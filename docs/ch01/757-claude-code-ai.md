@@ -31,6 +31,15 @@ source_published: 2026-07-01
 
 ## 详细信息
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ---
 source: wechat
 source_url: https://mp.weixin.qq.com/s/Rpo7Ig3NJmTc7rR6j9q82Q

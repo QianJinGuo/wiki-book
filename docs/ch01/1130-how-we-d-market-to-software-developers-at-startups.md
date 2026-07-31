@@ -15,6 +15,15 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 How We’d Market to Software Developers at Startups 涉及article领域的核心技术议题。
 ### 核心观点
 1. How do you market to developers?

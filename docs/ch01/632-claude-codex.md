@@ -12,6 +12,20 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 - 多模型协作的真实瓶颈是交接损耗，而非模型能力差距
 - Unibase Memory 能跨 ChatGPT/Claude/Gemini 保存和检索对话，但带不走仓库、测试、权限等工程现场
 - 完整聊天历史属于事件日志，工作现场需要结构化的 HANDOFF 快照

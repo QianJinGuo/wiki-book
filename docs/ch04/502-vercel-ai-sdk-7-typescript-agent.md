@@ -14,6 +14,15 @@ AI SDK 7 将自身定位为 **Agent 开发的统一抽象层**——在任意模
 
 ## 五大能力域
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 1. Develop Agents — 开发控制
 
 **Reasoning Control（推理控制）**：标准化 `reasoning` 选项，统一不同模型提供商的推理能力配置。一行代码即可控制推理强度：

@@ -16,6 +16,18 @@ In this post, you build an AWS Support Companion using [Amazon Bedrock AgentCore
 
 ## The incident investigation bottleneck
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 AWS support and operations teams follow a repetitive pattern for every incident:
 
   1. Open the AWS Management Console and navigate to the affected service.

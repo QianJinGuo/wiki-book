@@ -14,6 +14,15 @@ GIAC 2026 圆满落幕：AI Native 进入深水区，技术组织如何重构？
 
 ## 技术分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ---
 title: GIAC 2026 圆满落幕：AI Native 进入深水区，技术组织如何重构？
 source: wechat

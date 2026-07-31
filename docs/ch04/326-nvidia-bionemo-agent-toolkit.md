@@ -22,6 +22,15 @@ NVIDIA 推出 BioNeMo Agent Toolkit，这是一个汇集了 NVIDIA 十多年生�
 
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ### 科学发现领域的 Agent 化拐点
 
 BioNeMo Agent Toolkit 的推出标志着**科学计算领域正在经历 Agent 化拐点**。传统上，科学发现涉及大量人工操作：文献检索→假设生成→实验设计→计算模拟→结果分析→迭代优化。Agent 可以将这一流程中的多个环节自动化，甚至自主决定下一步该做什么。

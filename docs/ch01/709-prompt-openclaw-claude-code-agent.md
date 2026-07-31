@@ -14,6 +14,20 @@ OpenClaw 创始人 Peter Steinberger 的推文引发 AI Coding 圈热议（阅�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 ### Boris Cherny 的进化三阶段
 
 1. **一年前**：手动编写代码，使用自动补全

@@ -7,6 +7,16 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-launches-developer-grants-program-for-local-first-ai-and-payments-infrastructure.md)
 
 ## 核心要点
+
+```mermaid
+graph TB
+    SRC[源码] --> FORK[Fork]
+    FORK --> CONTR[贡献]
+    CONTR --> REV[Review]
+    REV --> MERGE[合并]
+    MERGE --> REL[发布]
+```
+
 - Tether launches developer grants program for local-first AI and payments infrastructure
 - v×c=63 分
 

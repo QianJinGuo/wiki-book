@@ -14,6 +14,16 @@ xAI 联合创始人 Igor Babuschkin 正在洽谈为其新 AI 研究初创公司 
 
 ## 核心要点
 
+```mermaid
+graph LR
+    PROB[问题] --> SOL[方案]
+    SOL --> MKT[验证]
+    MKT --> GROW[增长]
+    GROW --> REV[收入]
+    REV -->|"再投入"| SOL
+```
+
+
 ### 事件要素
 
 - **创始人**：Igor Babuschkin，xAI 联合创始人，此前在 DeepMind 任职

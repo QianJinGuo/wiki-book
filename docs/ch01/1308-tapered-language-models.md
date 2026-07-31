@@ -14,6 +14,20 @@ Mila（魁北克人工智能研究所）、康奈尔大学、蒙特利尔大学�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 问题动机：层重要性的不均匀性
 
 Transformer 及几乎所有后续架构都采用均匀层结构——每层参数量完全相同。但大量实验证据表明层重要性并不均匀：

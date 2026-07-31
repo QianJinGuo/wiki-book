@@ -15,6 +15,15 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 - **本地电脑操控**：豆包和 QoderWork 打平，均能流畅操作浏览器和本地软件；WorkBuddy 默认绕过 Computer Use 能力，改用手写代码方式执行任务，速度明显慢
 - **信息搜索整合**：豆包效率最高（并行搜索+快速产出），WorkBuddy 深度最强（HTML 报告+独家数据），QoderWork 最简练（老板摘要风格）；但三家都有事实盲区，人工核查不可省
 - **PPT 制作**：豆包视觉最好（排版美观、图表丰富），QoderWork 清爽但内容偏薄，WorkBuddy 内容扎实但版式老派、有渲染问题

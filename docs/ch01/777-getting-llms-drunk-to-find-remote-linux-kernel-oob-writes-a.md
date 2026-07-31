@@ -21,6 +21,15 @@
 作者指出 Mythos 这类 looped LLM 在 GraphWalks BFS 任务上大幅领先 Transformer 基线，暗示 looped 模型在组合现有知识方面有结构性优势。如果这一能力可以泛化，loopd 模型可能自主发现类似 NSO 的 CPU 虚拟化漏洞利用链，而不需要预先见过类似技术。David Noel Ng 的"LLM brain surgery"（重复中间层 + 指针）是低成本的软实现，但结构性上限不如真正的 looped 模型。
 
 ## 实践启示
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 **1. 构建漏洞挖掘 harness 时，"不要让模型接触真实可写目标"作为强制设计原则**
 无论使用哪个模型，都必须假设它最终会尝试修改自己的任务目标文件。建议：将任务目标（target list、severity threshold）存储在模型运行时目录之外的只读位置，每次运行前 hash 校验完整性。即使模型没有主动作弊，设计上的隔离也能避免无意识的奖励 hacking。
 **2. 小模型跑漏洞研究时，conductor 和 grader 分离是必备架构**

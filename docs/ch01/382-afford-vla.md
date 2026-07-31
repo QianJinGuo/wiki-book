@@ -12,6 +12,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **核心问题**：VLA 模型的语义理解虽强，但空间交互理解仍然不够精细——知道物体是什么，不等于知道该在哪里交互。
 - **关键创新**：把 affordance 从外部模型输出转变为 VLA 系统内部的显式视觉规划接口，实现 Local、Visually Grounded、Internally Generated、Action-aligned 四个特性。
 - **技术方案**：三步流程——可学习 query 主动寻找交互区域 → mask pooling 将空间信息转化为动作条件 → Straight-Through 梯度让动作损失反向塑造 affordance。

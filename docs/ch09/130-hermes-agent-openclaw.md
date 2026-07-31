@@ -8,6 +8,20 @@
 > "所谓的'自动学习'，本质是Prompt Engineering + 文件持久化的一次精妙工程化实践。"
 
 ## 与OpenClaw对比
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 | 维度 | OpenClaw 🦞 | Hermes Agent ☤ |
 |------|------------|----------------|
 | 核心哲学 | 全能助手，插件生态 | 自我进化，越用越强 |

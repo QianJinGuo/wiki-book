@@ -16,6 +16,15 @@ BigQuery 威胁模型覆盖了完整的 STRIDE 分类（Spoofing、Tampering、R
 
 ## 实践启示
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 1. **默认启用 VPC Service Controls 创建边界，限制数据流出到 perimeter 外的 Google Cloud 服务或外部互联网**。这是缓解数据外泄（Threat 4、8）的结构性控制，不依赖 IAM 细粒度管理，无论 IAM 配置是否有漏洞，perimeter 都能阻断数据流向未授权位置 。
 
 2. **始终在最细粒度级别授予 BigQuery IAM 权限——dataset 级优于项目级，table 级优于 dataset 级**。避免授予项目级 `bigquery.dataViewer` 或 `bigquery.dataEditor`，为每个业务功能创建专用的数据集和有限权限服务账号 。

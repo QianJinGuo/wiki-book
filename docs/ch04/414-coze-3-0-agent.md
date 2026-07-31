@@ -19,6 +19,15 @@ coze-bridge 本质是一个运行在本地的小服务进程，充当云端扣�
 
 ## 项目内多 Agent 接力
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 实测流水线：AI4S 研究项目（6 Agent）
 
 | 步骤 | Agent | 任务 | 关键细节 |

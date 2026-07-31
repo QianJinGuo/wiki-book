@@ -16,6 +16,21 @@ LLM 缓存技术的完整梳理，从 KV Cache 第一性原理到 Prefix Caching
 
 ## 核心内容
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### KV Cache：推理地基
 
 自回归模型每生成一个新 token，都需要"回看"前面所有 token 计算注意力。KV Cache 将历史 token 的 Key/Value 缓存下来避免重算，把每步计算从 O(n²) 降到 O(n)。但局限是默认只在单请求内有效，无法跨请求复用。

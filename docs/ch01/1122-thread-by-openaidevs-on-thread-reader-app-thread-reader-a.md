@@ -16,6 +16,15 @@ Programmatic Access Tokens 的推出是此次更新的另一条主线：Scoped c
 
 ## 实践启示
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 - **在 Codex 项目中部署 Hooks**：在项目根目录的 `.codex/` 目录编写 Shell 脚本注册到 `PreToolUse` 等事件节点，实现 lint/格式化自动化、敏感信息扫描或自定义记忆系统，比依赖模型内化指令更稳定可靠 。
 
 - **利用 Programmatic Access Tokens 打通 CI/CD**：为企业级 ChatGPT Workspace 创建带过期时间的 scoped token，在 GitHub Actions 或 Jenkins pipeline 中调用 Codex 进行自动化 code review 或测试生成，实现"零手写代码"的 DevOps 流程 。

@@ -17,6 +17,15 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 **从"提示即祈祷"到"结构化执行"的范式转变。** Vibe Coding 本质上是将需求直接扔给 AI 对话框，靠自然语言驱动代码生成，其核心特征是"提示即祈祷"（prompt-and-pray）——开发者把需求描述交给 AI，然后祈祷输出质量可接受。 这种方式在原型验证阶段确实爽，但一旦进入生产环境，代码质量不可控、审查流程缺失、commit message 混乱等问题接踵而至。Agentic Engineering 的出现代表了行业对这一问题的系统性反思：不是让 AI 自由发挥，而是把人定位为"编排者"（Orchestrator），AI 作为自主智能体在结构化流程中执行规划、编码、测试和迭代，每个关键节点都有人工审核。
 
 **三层工具体系的精妙分层。** 文章揭示了一套分层工具架构：Skill（技能）承载核心业务逻辑，由系统根据上下文自动触发或被 Command 调用，每个 Skill 有独立的工具权限白名单和执行流程；Command（斜杠命令）是用户主动调用的薄入口，委托给对应 Skill 执行；MCP Server 则是通过 Model Context Protocol 连接外部平台 API，为 Skill 提供数据和操作能力。 更值得注意的是 Superpowers 插件提供的结构化工作流 Skill（brainstorming、writing-plans、executing-plans），它们定义了从需求澄清到代码交付的标准流程，本质上是在 AI 执行层之上增加了一层"工程纪律"，防止 AI 跳过关键步骤自由发挥。

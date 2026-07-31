@@ -12,6 +12,18 @@ AWS 官方博客展示了一个名为 **Chaplin**（Customer Health and Planned 
 
 ## 核心要点
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 ### 问题定义
 
 企业运维团队面临的核心挑战：

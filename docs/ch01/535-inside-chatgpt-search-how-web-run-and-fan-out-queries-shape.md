@@ -12,6 +12,20 @@
 - **局限性** — fan-out 方式可能引入延迟，综合过程可能产生不准确的归属
 
 ## 技术洞察
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 **搜索引擎从检索到综合的范式转变**：
 ChatGPT Search 的核心技术创新：**web.run 查询广播 + 多源综合**。
 与传统搜索的本质区别：

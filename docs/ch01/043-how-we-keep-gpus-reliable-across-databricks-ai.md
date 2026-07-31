@@ -14,6 +14,20 @@ Databricks AI 团队分享了其在大规模 GPU 训练可靠性方面的实践�
 
 ## 背景
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 分布式 GPU 训练已成为行业常规操作。团队现在训练基础模型、微调前沿模型、构建大规模视觉系统和运行深度推荐网络——规模之大曾是前沿实验室的专属。Databricks AI 每周运行大规模训练工作负载，故障持续出现在硬件、网络和软件层面。
 
 ## GPU 训练负载下的三种故障模式

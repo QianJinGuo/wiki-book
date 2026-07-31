@@ -20,6 +20,21 @@ GPT 5.4 在所有四个维度都感觉是意义重大的进步，不只是纸面
 
 ## 为什么之前离开 OpenAI Agent
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 作者之前总是从 OpenAI Agent 切换离开——死于千刀（death by a thousand cuts）：git 操作失败需要重置，各种小问题累积成挫折感。GPT 5.4 之前那些硬边缘不再存在。
 
 ## GPT 5.4 vs Claude 的个性差异

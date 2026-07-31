@@ -27,6 +27,20 @@ Google Workspace 此次推出的 Microsoft 用户导入功能，是其针对中�
 
 ## 实践启示
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 ### 对 IT 管理员
 
 - **迁移前准备**：确保完成域名验证（domain verification），这是导入用户的前置条件

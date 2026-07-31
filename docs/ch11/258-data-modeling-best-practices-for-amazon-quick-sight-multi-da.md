@@ -29,6 +29,15 @@ In this post, we cover data modeling concepts, supported patterns, and best prac
 
 ## Why a runtime, relationship-based model
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 The traditional single-dataset model has three recurring costs:
 
   * **Upfront preparation:** You must decide the join shape before you know every question, often pushing logic into custom SQL or database views.

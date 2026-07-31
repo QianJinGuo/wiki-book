@@ -14,6 +14,21 @@ Realsee（如视）团队的 Argus 系统入选 ECCV 2026。Argus 面向室内�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **纯图像方案达到 LiDAR 级精度**：在如视积累的千万级室内数据训练下，Argus 的位姿误差低至 2.5cm，接近 LiDAR 的 2cm 水平——误差差距从数量级缩小到了近乎同等的范围内。
 
 2. **解决传统 SfM 的四大痛点**：弱纹理/重复纹理、全景畸变、多房间连接场景下的相机轨迹漂移、墙体错位、高斯点云堆叠肿胀。

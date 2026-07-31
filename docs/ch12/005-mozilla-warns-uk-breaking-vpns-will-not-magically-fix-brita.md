@@ -5,6 +5,15 @@
 > 📊 Level ⭐ | 8.6KB | `entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess.md`
 
 ## 背景与事件
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 Mozilla 于 2026 年 5 月向英国科学、创新与技术部（Department for Science, Innovation and Technology）提交的"Growing up in the online world"consultation 提交了书面意见，反对对 VPS 提供商强制实施 VPN 阻断措施。
 Mozilla 在意见书中明确指出：VPN 是"essential privacy and security tools"，被全球数百万人用于日常网络安全需求，包括公共 Wi-Fi 防护、远程办公流量保护，以及记者、活动人士等弱势群体的安全通信。
 Svea Windwehr，Mozilla 政策经理，在意见书中引用了 Mozilla 长期坚持的立场：

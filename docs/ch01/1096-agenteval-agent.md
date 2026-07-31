@@ -18,6 +18,20 @@
 2. com/wallezhang/agent-eval | 官网：https://agent-eval.
 3. space
 ## 核心问题
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 Claude/Agent 评测的核心痛点：
 - **非确定性**：同一 prompt 跑两次结果可能不同
 - **传播效应**：改一个词可能导致整个行为链路变化，且不可预测

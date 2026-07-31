@@ -16,6 +16,18 @@ Traditional keyword expansion approaches struggle with outdated vocabulary, limi
 
 ## Technical Implementation
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 Yahoo implemented Amazon Bedrock to enhance their SRT capabilities using:
 
 - **ML-based audience segmentation**: Using advertiser-defined rules, ML, and generative AI to define audience segments

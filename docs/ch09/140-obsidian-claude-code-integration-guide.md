@@ -13,6 +13,20 @@ Obsidian Claude Code 集成：双向链接 + 块引用 + 本地模型支持
 大家平时在使用 Claude Code 的过程中，会有大量的跟知识相关的文件需要去管理，也相信大家找到的答案肯定是 Obsidian 。这两个工具本身都很好用，Claude Code 主要负责生成 Markdown （比如计划、记忆、 CLAUDE.md ），而 Obsidian 更擅长管理这些内容...
 
 ## 原文存档
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/obsidian-claude-code-integration-guide.md)
 
 ## 相关资源

@@ -10,6 +10,15 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 Thinkst 推出了 [Package Proxy](https://packageproxy.dev/)——一个基于 Cloudflare Workers 的透明代理层，在 npm、pip、uv、cargo 等包管理器安装依赖前执行安全检查。核心机制是拦截包管理器的 index URL 请求，对每个包执行策略检查（包龄、上传方式、黑白名单），不合格的包返回 404。无需客户端软件，仅需配置变更即可部署。上线后已成功防御 TanStack、BitWarden、TeamPCP 等多起供应链攻击。
 
 ## 核心要点

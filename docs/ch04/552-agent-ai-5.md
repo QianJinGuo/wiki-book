@@ -13,6 +13,16 @@
 5. **GEA 架构** — Lead Agent + Sub-Agent + Skills + Context，7×24 虚拟公司
 
 ## 组织变革关键
+
+```mermaid
+graph TB
+    SRC[源码] --> FORK[Fork]
+    FORK --> CONTR[贡献]
+    CONTR --> REV[Review]
+    REV --> MERGE[合并]
+    MERGE --> REL[发布]
+```
+
 - **AI 反工业革命** — 打破"一人一岗、逐级晋升"的工业时代组织假设
 - **Pod Leader 新能力** — P&L、商业直觉、耐心、管理 Agent 比管理人多更难
 - **场景驱动** — Pod leader 30%-40% 时间收集客户场景，SPIS 方法论结构化

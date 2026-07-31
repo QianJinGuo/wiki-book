@@ -15,6 +15,15 @@ Codex 团队负责人 Tibo 在 2026 年 7 月公开转发教程，教用户使�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **CLIProxyAPI 反代**：开源代理工具（GitHub 41K+ Star）可将 Codex 订阅包装成标准 API 接口，接入其他 Harness Agent 使用
 - **Tibo 的态度**：Codex 团队负责人亲自转发教程、承诺翻车赔额度，表态「我们对框架没有限制」
 - **竞争逻辑**：与其逼用户换壳，不如让 GPT 坐进竞争对手的外壳——用户每跑一次 GPT-5.6 Sol 就是一次真实任务数据

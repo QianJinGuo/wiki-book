@@ -10,6 +10,15 @@
 - GitHub超10万星，同时担任YC CEO + 每月交付数十万行代码
 
 ## 核心概念
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 ### Token Maxxing（Token 极大化）
 "如果增量的工作能让事情更完整、更出色，那就值得。" Token是买机器的意识时间，换回自己的时间。
 

@@ -12,6 +12,21 @@ Anthropic 于 2026 年 7 月发布研究论文，通过对 309,815 条 Claude.ai
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **研究规模**：309,815 条匿名对话，三个模型（Sonnet 4.6、Opus 4.6、Opus 4.7），20 种语言
 - **方法论**：3307 种价值观特质 → 聚类为 339 类 → 降维至 4 条主轴
 - **模型差异**：Sonnet 4.6 最顺从温暖（"最会来事"），Opus 4.6 闷头干活，Opus 4.7 最冲（谨慎+0.24σ、深度+0.23σ）

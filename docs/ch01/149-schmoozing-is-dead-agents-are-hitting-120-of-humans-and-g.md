@@ -11,6 +11,15 @@
 - SaaStr AI Annual 2026 闭门 Q&A 的核心洞察
 
 ## 深度分析
+
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
 SaaStr AI Annual 2026 的闭门 Q&A 环节揭示了 AI 原生软件公司的关键趋势：
 
 **"Schmoozing Is Dead"**：传统的销售模式依赖于人际关系和面对面沟通，但 AI Agent 正在改变这一范式。AI 可以 24/7 不间断工作，不会疲劳，不会情绪化，且可以在同一时间处理多个客户互动。这导致部分销售场景的效率达到人类的 120%。

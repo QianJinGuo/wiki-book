@@ -8,6 +8,20 @@
 本文档从微信平台抓取，原始URL: https://mp.weixin.qq.com/s/7SKBhIUrxI1SD1_svAxvtQ
 
 ## 元数据
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 - **来源**: 微信 (WeChat)
 - **原始URL**: https://mp.weixin.qq.com/s/7SKBhIUrxI1SD1_svAxvtQ
 - **入库时间**: 2026-05-11

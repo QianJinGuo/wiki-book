@@ -6,6 +6,18 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 **1. OpenClaw 从"个人工具"到"多租户平台"的演变揭示了 AI Agent 的扩展路径**
 
 OpenClaw 默认单进程部署（npm install + daemon），所有用户共享一个 Node.js 进程和同一个文件系统 。当企业需要支持多用户时，面临用户隔离、弹性扩缩、数据持久化、安全防护、运维可观测性五个维度的挑战 。这五个挑战几乎是所有从"个人工具"走向"企业服务"的 AI 项目的必经之路，理解这个框架有助于提前规划架构演进路线 。

@@ -10,6 +10,18 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 AWS IAM Temporary Delegation 是 AWS 在 2026 年推出的新型 IAM 能力，专为跨账户的支持访问场景设计。Deepgram 将其内建于支持工单系统中，实现了从工单发起、客户批准到临时凭证颁发和自动过期的一站式流程。该集成消除了长期跨账户 IAM 角色的运维负担，解决了自托管语音 AI 生产环境中"既需要数据驻留和网络隔离，又不愿牺牲托管服务运维便利性"的核心矛盾。
 
 ## 核心要点

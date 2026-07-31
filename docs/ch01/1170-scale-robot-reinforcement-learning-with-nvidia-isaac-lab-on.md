@@ -46,6 +46,20 @@ Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI 
 
 ## 实践启示
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 1. **工程落地**: 将agent领域的理论转化为可执行方案时，需关注可观测性和可维护性
 2. **技术选型**: 根据实际场景需求选择合适的技术栈，避免过度工程化
 3. **持续迭代**: 建立反馈闭环，通过数据驱动的方式持续优化系统表现

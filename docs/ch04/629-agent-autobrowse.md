@@ -14,6 +14,20 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能 涉及agent领域的核心技术议题。
 ### 核心观点
 1. > **Source**: https://mp.

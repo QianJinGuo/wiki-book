@@ -10,6 +10,15 @@ In-depth security research on ExifTool vulnerability enabling Mac compromise. De
 
 ## 标签
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 security, agent, ai
 
 ## 深度分析

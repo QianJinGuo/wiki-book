@@ -21,6 +21,15 @@ In this story, we’ll explain how we set up the evaluation layer, calibrated ju
 
 ## The hidden complexity of agent evals
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Agent evaluation is significantly more complex than traditional search relevance evaluation because the object being judged is no longer a single, isolated output. Instead, it is the result of a multi-step process. The agent must interpret user intent, gather context, and decide when and how to use tools. It also needs to synthesize information across sources before determining whether to answer directly, search for more information, summarize its findings, or ask for clarification.
 
 This makes evaluation much broader. A good agent response might depend on multiple knowledge sources, including documents, prior messages, meeting notes, or tool calls such as search and read documents. The quality of the final answer depends not only on what information was found, but also on how the

@@ -38,6 +38,15 @@
 - Prompt Caching：重复上下文计算降低 98%（Claude Code 场景）
 
 ## 千问云新官网
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - 定位：AI 时代版 Stripe/Linear
 - 200+ 主流模型 API（Qwen、GLM、Kimi、DeepSeek、Wan）
 - 模型服务打包成 Skills 和 CLI → Agent 可直接调用

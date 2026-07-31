@@ -12,6 +12,20 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 ### 终端意外胜出：IDE vs CLI 的范式反转
 
 2024 年行业共识押注 IDE 内嵌代理（Copilot、Cursor），认为编码代理的最佳交互界面是编辑器。到 2026 年中，现实却是 CLI 代理从 CI/CD 管道、SSH 会话、无 GUI 环境中爆发——终端成为了重型使用场景的事实标准。这一反转揭示了编码代理的真实使用模式：**自动化优先于交互**。CI 中的批量代码修改、远程服务器的故障排查、脚本化的工作流程都不需要 IDE 的 GUI 层。CLI 代理的可脚本性（scriptable）、可管道化（pipeable）特性使其与现有 DevOps 工作流无缝融合，而 IDE 代理始终被困在"开发者手动触发"的使用模式中。

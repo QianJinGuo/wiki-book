@@ -20,6 +20,15 @@ ByteDance Seed 于 2026 年 6 月发布了 Seed2.0 模型系列 Model Card，标
 
 ## 模型系列架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Seed2.0 是一个模型系列（model series），包含不同规模和能力等级的变体。完整的架构细节和技术规格需参考原始论文。模型卡范式本身也代表了 ByteDance 对模型透明度的一种承诺——以真实世界用例文档化替代纯 benchmark 报告。
 
 ## 深度分析

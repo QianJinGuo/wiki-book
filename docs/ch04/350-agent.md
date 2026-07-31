@@ -12,6 +12,21 @@
 
 ## 核心见解
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### Bad Case 的普遍特征
 
 - **极端边界**：常规路径正常，边界条件出问题

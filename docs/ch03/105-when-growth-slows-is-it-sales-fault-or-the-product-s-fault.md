@@ -8,6 +8,15 @@
 - When Growth Slows, Is It Sales' Fault or the Product's Fault? The Answer Has Changed.
 
 ## 关键洞察
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 When Growth Slows, Is It Sales' Fault or the Product's Fault? The Answer Has Changed.
 Jason Lemkin / SaaStr
 For most of B2B history, products were essentially static. Sales and marketing were the primary lever. A great VP of Sales could double revenue in 90 days without changing the product.

@@ -9,6 +9,15 @@
 - 营销技术（Martech）系统的复杂性已堪比企业级 IT 环境，但营销团队仍采用项目制思维而非服务制思维来管理技术栈 
 
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
 - [Workspaceupdates Googleblog Com Google Workspace Updates](https://github.com/QianJinGuo/wiki/blob/main/entities/workspaceupdates-googleblog-com-google-workspace-updates.md)
 - [B2B Email Marketing What Still Works](../ch01/157-b2b-email-marketing-what-still-works.html)

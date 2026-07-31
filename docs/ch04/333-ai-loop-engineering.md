@@ -14,6 +14,21 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **范式转变**：从「人反复输入 Prompt」转向「人设计一个持续运行的工作循环」。Prompt Engineering 关注的是「这一轮怎么问得更好」，Loop Engineering 关注的是「整个流程怎么持续变好」。
 - **Six Core Components**：Automations（定时触发）、Worktrees（并行隔离）、Skills（知识沉淀）、Connectors（工具链连接）、Sub-agents（执行与审查分离）、Memory（跨轮次延续）。
 - **执行与审查分离**：写代码的 Agent 不适合完全负责评价自己的代码。在无人值守的 Loop 里，让一个 Agent 负责实现，另一个 Agent 负责审查（使用不同提示词、不同模型、不同关注点）是最重要的结构之一。

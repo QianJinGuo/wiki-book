@@ -13,6 +13,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 **1. Action Fabric 本质是"工作流即资产"战略的开放化**
 ServiceNow 将其核心护城河——数十年积累的数万条企业工作流、剧本（playbooks）和业务流程——通过 Action Fabric 的 MCP Server 全面向外部 AI Agent 开放。这意味着一个企业在 ServiceNow 上构建的 ITIL 工作流、人力资源入职流程、财务审批链，现在可以被任何连接到 Action Fabric 的第三方 Agent 直接调用。这将企业软件的价值从"界面"迁移到了"执行逻辑层"，是一种平台战略的根本性重置 。
 **2. Headless 架构的核心逻辑：接口不是产品，执行层才是**

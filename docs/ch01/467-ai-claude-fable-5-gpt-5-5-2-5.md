@@ -12,6 +12,21 @@ CAIS（AI安全中心）与 Scale AI 联合发布的远程劳动力指数（Remo
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **RLI 与经济价值校准**：与传统的 AI Benchmark（如 MMLU、HumanEval）不同，RLI 测试的是 AI 能否从头到尾独立完成一份"甲方会买单"的工作。每个项目都是完整的商业委托，含客户 Brief、输入文件、多格式交付物，人类专业人员的中位完成时间为 11.5 小时。
 2. **Worker-critic Loop 是关键变量**：Fable 5 的 16.1% 背后，Agent 框架引入了"执行 Agent + 评审 Agent"的双 Agent 循环。评审 Agent 以苛刻客户视角检查交付物，发现问题后打回修改，循环直到满意或预算耗尽。
 3. **自动化评审不可靠**：用 AI 裁判替代人类评审时，对 GPT-5.5 的评分高估了近 3 倍，对 Opus 4.8 高估了约 2.5 倍。评审本身是高难度的 Agentic 任务，需要专业软件操作和像客户一样判断的能力。

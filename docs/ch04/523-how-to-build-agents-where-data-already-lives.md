@@ -12,6 +12,20 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 1. 数据驻留优先（Data-Locality-First）原则
 
 数据驻留优先是该架构的核心设计原则：

@@ -12,6 +12,21 @@ DiScoFormer（Density and Score Transformer）是 Allen AI 提出的一种新方
 
 ## 核心技术创新
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 统一架构：共享骨干 + 双输出头
 
 DiScoFormer 采用共享 Transformer 骨干网络搭配两个输出头——density head 和 score head。这一设计使得模型在单次前向传播中同时完成两种估计，不仅节省了计算资源，还利用了两个任务之间的数学耦合关系来提升彼此的表现。

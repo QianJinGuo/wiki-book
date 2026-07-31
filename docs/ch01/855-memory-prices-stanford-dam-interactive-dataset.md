@@ -12,6 +12,15 @@ Stanford Digital Art Museum (DAM) 维护的交互式数据集，追踪 1957 年�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 数据覆盖范围
 
 | 维度 | 详情 |

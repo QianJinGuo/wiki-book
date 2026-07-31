@@ -14,6 +14,15 @@ cURL 项目创始人 Daniel Stenberg 测试了 Anthropic 的 Mythos AI 安全扫
 
 ## 深度分析
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 1. **Mythos 实际效果远低于宣传**: Anthropic 声称 Mythos 过于强大不能公开，但实际扫描 cURL 代码库只发现 1 个确认漏洞（计划6月底发布为低危 CVE），而Mythos 最初报告的5个"确认安全漏洞"中，3个是误报，1个只是普通 Bug。
 
 2. **AI 代码分析工具整体已有显著进步**: Stenberg 指出"AI 驱动的代码分析器在发现源代码安全漏洞方面显著优于过去的传统代码分析器"，但他强调"所有现代 AI 模型现在都很擅长这一点"——Mythos 并无特别突出之处。

@@ -20,6 +20,18 @@ In this post, we show how to set up and run Claude apps gateway for AWS with Ama
 
 ## How the Claude apps gateway works
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 The gateway is delivered by Anthropic inside the same [Claude Code CLI](<https://code.claude.com/docs/en/quickstart>) binary your developers already use. You can run it in one stateless container on your infrastructure, backed by a [PostgreSQL](<https://www.postgresql.org/>) database that stores short-lived sign-in state and rate-limit counters. Because the gateway and the client are built together, the `/login` flow is gateway-aware. The client applies managed settings automatically at sign-in, and policy is enforced consistently on every request.
 
 Onboarding and offboarding follow your existing identity workflows. To grant access, add a developer to your identity provider (IdP). To revoke it, remove them, and their session expires within the configured token lifetime (one hour by default). No long-lived secrets live on developer machines.

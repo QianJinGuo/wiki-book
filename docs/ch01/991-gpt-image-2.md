@@ -26,6 +26,16 @@ A crisp, printmaking-like aesthetic with bold outlines and natural deformation. 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
+
 这篇分享的核心是一个**版画风格（printmaking aesthetic）的图像生成提示词**。其设计逻辑值得拆解：
 
 1. **风格锁定精准**：提示词明确指定了"printmaking-like"（版画风格），这直接约束了 AI 的生成方向，避免风格漂移

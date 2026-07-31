@@ -16,6 +16,15 @@
 
 ## 四件套架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 知识底座：让 AI 看到正确上下文
 
 紫讯将项目知识分为五类，面向 AI 和 Agent 可消费的工程事实：

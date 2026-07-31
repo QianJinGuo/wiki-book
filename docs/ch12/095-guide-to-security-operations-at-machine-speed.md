@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 5.4KB | `entities/arctic-wolf-security-operations-machine-speed.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - AI/机器学习正在变革安全运营（SOC），实现机器级速度的威胁检测与响应
 - 成熟度评估框架：评估组织安全运营成熟度的关键维度
 - 自动化在安全运营中的应用场景：检测工程、事件响应、威胁情报

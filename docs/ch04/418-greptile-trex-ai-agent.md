@@ -12,6 +12,15 @@ Greptile 构建了 TREX（Test, Run, Execute）——一个嵌入代码审查流
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **Tests ≠ Bug-finding**：生成测试和发现 bug 是不同的活动——独立的测试生成 Agent 产生了无关噪声，未能找到真正的问题
 2. **Agent 内嵌 Agent 架构**：主编排 Agent（Greptile reviewer）识别值得调查的问题，并行启动多个 TREX 子 Agent，每个子 Agent 继承编排 Agent 的上下文但拥有独立的上下文窗口
 3. **多模态 Artifact 证据**：每个 TREX 发现附带截图、日志、API trace、执行脚本、视频——像"展示解题步骤"一样让下游 Agent 或人类可以验证

@@ -12,6 +12,15 @@ Practical and specific macOS debugging guide from a trusted source, with actiona
 
 ## 深入分析
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
 
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=8, stars=4。

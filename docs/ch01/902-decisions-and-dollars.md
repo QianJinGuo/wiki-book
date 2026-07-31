@@ -14,6 +14,15 @@ Agent 正在成为软件的主要用户。Cloudflare 数据显示 agent traffic 
 
 ## Context -> Harness -> Judgment 三层演化
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 知识从人转移到模型经历了三个阶段：
 
 1. **Context（上下文）**：检索增强，将正确信息放在模型面前 — 已成 table stakes

@@ -18,6 +18,15 @@
 
 ## 演进路径
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 从 Coding 到 Vibe Coding，是从「写代码」变成了「提需求」；而从 Vibe Coding 到 Loop Engineering，则是从"提一个需求"变成了"提一套闭环流程"。
 
 Loop Engineering 本质上就是一种可以循环起来的 Pipeline，触发方式有两种：人工触发和定时触发。

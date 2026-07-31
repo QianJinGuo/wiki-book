@@ -15,6 +15,20 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 问题本质：两阶段瓶颈迁移
 
 以往的视频 token 压缩方法（如 token pooling、spatial abstraction）主要在后处理阶段对已提取的视觉特征进行压缩，属于"事后补救"思路。LiteFrame 指出这类方法的盲点：当视觉 token 数量大幅减少后，计算瓶颈从 LLM 端（prefilling）转移到了 ViT 编码器端——因为此时每帧的处理成本占比反而上升。换言之，传统方法只是把瓶颈从 LLM 挪到了 ViT，并未被真正消除。

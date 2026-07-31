@@ -38,6 +38,15 @@ Agent 的行为比传统代码更不透明。我们用确定性换取了自主�
 
 ## LangChain 实践
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **Trace Judge Model**：微调开源小模型处理大规模 Trace，在窄任务上优于闭源前沿模型且成本低数个数量级
 - **LangSmith Engine**：专用 Agent 阅读每条 Trace，发现信号、生成修复、生成评测集
 - **Terminal Bench 2.0**：通过 Harness 调优 + Trace 理解取得 13.7% 提升

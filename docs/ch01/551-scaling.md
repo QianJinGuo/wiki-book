@@ -44,6 +44,21 @@ Scaling即正义？ 智谱 挠了挠头——
 
 ## 详细信息
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ---
 title: 智谱公布“降智”的秘密：Scaling不可避免的痛
 source: wechat

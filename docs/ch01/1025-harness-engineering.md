@@ -16,6 +16,15 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 深入浅出 Harness Engineering 之核心模式与理念 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # 深入浅出 Harness Engineering 之核心模式与理念

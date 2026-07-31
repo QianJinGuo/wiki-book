@@ -39,6 +39,21 @@ publish_date: 2026-05-06
 
 ## 详细信息
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ---
 title: 刷榜AI全挂了！Meta斯坦福地狱级测试，GPT/Claude/Gemini交出0分
 source: wechat

@@ -8,6 +8,15 @@
 - 评分：v=7 × c=9 = 63
 - 来源：venturebeat
 ## 相关实体
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01/011-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/1089-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01/011-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)

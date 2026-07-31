@@ -17,6 +17,20 @@ Loongsuite Pilot Sls Ai Coding Metrics Practice 涉及agent领域的核心技术
 > 原文：https://mp.
 2. com/s/SEOGc3KIGm7eFpyUK6nR4g
 ## 引子：Coding 变快了，组织为什么没跟上？
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 3. 2026 年 5 月，Google Cloud DORA 团队发布了《ROI of AI-Assisted Software Development》。
 4. 报告引入了 **J-Curve（先降后升曲线）** 概念：团队在采纳 AI 工具的初期会经历一段生产力下降期（工作流适配、习惯切换、prompt 调优），只有度过这段谷底，ROI 才会在曲线后段兑现。
 5. "正是当前多数研发组织的困境：手里只有两类数据 —— 主观满意度问卷和 CI/CD 聚合 KPI，缺的是事件级的、可下钻到 Agent/模型/Skill/部门的 AI Coding 使用行为度量。

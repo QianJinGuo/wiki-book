@@ -19,6 +19,35 @@
 
 ## 导读
 
+```mermaid
+graph TB
+    subgraph "AI 安全防线"
+        ATK[威胁建模] --> DEF[防御层]
+        DEF --> DET[检测]
+        DET --> RSP[响应]
+    end
+    subgraph "威胁类型"
+        INJ[Prompt注入]
+        POI[工具投毒]
+        DAT[数据泄露]
+        ADV[对抗攻击]
+    end
+    ATK --> INJ & POI & DAT & ADV
+    subgraph "治理"
+        RBAC[权限控制]
+        AUD[审计日志]
+        CMP[合规]
+    end
+    RSP --> RBAC & AUD & CMP
+    classDef threat fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef defense fill:#d1fae5,stroke:#059669,color:#064e3b
+    classDef gov fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class ATK,INJ,POI,DAT,ADV threat
+    class DEF,DET,RSP defense
+    class RBAC,AUD,CMP gov
+```
+
+
 AI Agent 正在获得越来越多的权限——执行代码、访问数据库、发送邮件、操作文件系统。
 
 权限越大，攻击面越大。本章覆盖 Agent 安全的完整谱系：凭据管理（1Password 的机器身份方案）、Prompt 注入防御、供应链攻击（TanStack npm 事件）、恶意软件分析（GlassWASM WebAssembly 恶意代码）、逆向工程（Themida 脱壳）。

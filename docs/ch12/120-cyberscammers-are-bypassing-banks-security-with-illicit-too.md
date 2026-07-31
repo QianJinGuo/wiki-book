@@ -8,6 +8,20 @@
 
 ## 相关实体
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 - [canvas hackers shinyhunters say their official domain was su](../ch05/094-ai.html)
 - [canvas hackers shinyhunters say their official domain was su](ch12/037-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html)
 - [private fintech has quietly become bigger than public fintec](../ch03/108-private-fintech-has-quietly-become-bigger-than-public-fintec.html)

@@ -11,6 +11,16 @@
 Tether 于 2026 年 5 月 11 日推出开发者资助计划，资助在本地优先 AI（local-first AI）和自托管支付基础设施领域构建开源工具的项目。该计划的核心是 Tether 的 QVAC 平台——一个设备端 AI 推理平台，使 AI 模型能够直接在用户硬件上运行，而非每次响应都需访问远程服务器。
 
 ## 资助机制
+
+```mermaid
+graph TB
+    SRC[源码] --> FORK[Fork]
+    FORK --> CONTR[贡献]
+    CONTR --> REV[Review]
+    REV --> MERGE[合并]
+    MERGE --> REL[发布]
+```
+
 | 项目 | 内容 |
 |------|------|
 | 单个交付物报酬 | $1,500 至 $4,000 |

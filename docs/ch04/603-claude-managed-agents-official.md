@@ -13,6 +13,15 @@ Anthropic Claude Managed Agents 官方平台发布，Harness 架构 + 企业级�
 [](https://claude.com) * [Claude](/product/overview)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 Claude Managed Agents 官方发布的三大核心能力——dreaming、outcomes、multiagent orchestration——构成了一个完整的企业级 Agent 开发平台，分别解决记忆巩固、质量保证和任务编排三大问题。
 **Dreaming（自改进机制）**：这是最有战略意义的能力。Dreaming 在后台定期回顾 Agent 会话和记忆存储，提取模式（recurring mistakes、converged workflows、shared preferences），主动优化记忆结构。关键设计：用户可选择完全自动更新或人工审核后生效，既保证了进化能力又防止记忆污染。Harvey 在测试中通过 Dreaming 实现 completion rates 提升约 6 倍，验证了跨会话学习对复杂法律工作的实际价值。
 **Outcomes（质量Rubric）**：通过独立的 grader 在独立 context window 中评估输出质量，避免 grader 被 Agent 推理过程影响。实测任务成功率提升最高 10 个点，docx 生成质量 +8.4%，pptx +10.1%。这个机制解决了"AI 输出质量难以量化控制"的核心痛点。

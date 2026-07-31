@@ -41,6 +41,21 @@ Recurrent neural networks take this one step further, with a built-in memory loo
 
 ## 原文存档
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/senior-engineer-guide-inside-llm.md)
 
 ---

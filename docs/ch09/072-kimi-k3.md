@@ -16,6 +16,21 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **项目规模**：27 个文件、七千多行代码的原生 macOS App，从零到提交苹果审核不足一天
 - **对标产品**：ScreenStudio（月费 29 美元的专业录屏工具）——可自动剪辑、运镜、重绘鼠标轨迹、添加壁纸背景
 - **系统级开发**：原生 macOS App 需要直接操作屏幕捕获、鼠标事件、实时视频合成等底层系统 API，无法依赖浏览器沙箱保护

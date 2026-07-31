@@ -71,6 +71,15 @@
 很多网页不是打开就把所有内容摆出来，而是先加载一个框架，再由浏览器继
 ## 相关链接
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 - [Skill 工程原则](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-engineering-principles.md)
 - [Agent 工具使用模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/tool-use-patterns-ai-agents.md)
 

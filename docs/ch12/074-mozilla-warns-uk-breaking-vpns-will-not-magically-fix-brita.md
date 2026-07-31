@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 6.9KB | `entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britai.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - Mozilla 向英国 DSIT（科学、创新和技术部）提交正式意见，反对对 VPN 进行年龄限制
 - VPN 用途：公共 Wi-Fi 安全、远程办公、新闻工作者保护、 activists、规避审查——属于"essential privacy and security tools"
 - UK Online Safety Act 年龄核查导致 VPN 使用量急剧上升，用户为避免向成人网站提交身份数据

@@ -15,6 +15,20 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart

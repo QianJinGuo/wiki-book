@@ -9,6 +9,15 @@ LangGraph 通过**状态机**机制让 LLM 实现「想一步、停一步、判�
 与 LangChain 早期线性 Chain 的根本区别：LangChain 控制流固定，LangGraph 支持**带状态的循环控制流**，能根据运行时状态动态决策下一步。
 
 ## 核心概念解析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 ### StateGraph 三要素
 | 要素 | 作用 | LangGraph 表示 |
 |------|------|---------------|

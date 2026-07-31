@@ -10,6 +10,15 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 RFC 9958 是 IETF 于 2026 年 6 月发布的 Informational RFC，由 Banerjee 等人撰写，面向密码学工程师的后量子密码学（PQC）实施指南。该文档的核心论点是：PQC 过渡不是简单的算法替换（drop-in replacement），而是需要**协议级别的重新设计**。文档覆盖了 CRQC 威胁模型、NIST/ISO 标准化算法、KEM 与签名方案的工程差异、PQ/T 混合方案、以及从 Mosca 模型推导的过渡时间线。
 
 ## 核心要点

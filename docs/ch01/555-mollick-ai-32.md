@@ -24,6 +24,21 @@ AI 不再是单一「聊天机器人」概念，而是分化为四类：图像�
 
 ## 水獭基准（Otter Benchmark）方法论
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - 简单性：「otter on a plane using wifi」一句话即覆盖：物体识别 + 场景组合 + 物理合理 + 文本渲染能力。
 - 可重复：Midjourney 公开 top of week，任何人都能验证历史快照。
 - 跨模态：同一 prompt 可在图像、视频、LLM 文本上重复使用。

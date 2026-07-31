@@ -14,6 +14,14 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+```
+
+
 ### 1. 电力成本：几乎可以忽略
 
 Northern Virginia 住宅电价约 $0.18/kWh（EIA 2025 年美国平均为 $0.1730/kWh）。M5 MacBook Pro 满载推理功耗 50-100W，每小时电费仅 $0.009-$0.018，即每天 24 小时满载推理的电费约 $0.48。电力成本在总拥有成本中占比极小。

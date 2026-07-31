@@ -14,6 +14,20 @@
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
 ## 深度分析
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 ### 专用算子 vs 通用查询重写：性能差距的本质
 QuestDB WINDOW JOIN 展现出比 Timescale、DuckDB、ClickHouse 快 25 倍的性能，其根本原因在于**专用算子知道窗口结构而通用查询重写不知道** ^。
 基准测试揭示了一个重要洞察：即使其他引擎使用了正确的计划形状（ClickHouse 的 UNION ALL + 窗口函数），仍无法匹敌专用算子的数据级并行性加连续切片 SIMD ^。这是因为：

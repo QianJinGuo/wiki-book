@@ -15,6 +15,16 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    DEC --> RL[强化学习]
+```
+
 ### 1. 数据主权与合规压力交织
 越南当前存在一个结构性悖论：其本国法律要求个人数据本地存储，但政府工作负载却大规模运行在 Microsoft、Google、Tencent Cloud 等境外大厂之上。Decision 808 的出台直接揭示了这一合规黑洞——政府一边在法律上要求数据本地化，一边又不得不依赖外国云基础设施。这种张力是推动国内云建设的核心驱动力，而非单纯的技术自主愿景。
 

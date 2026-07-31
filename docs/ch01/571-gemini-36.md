@@ -14,6 +14,21 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **三款模型齐发**：Gemini 3.6 Flash（通用）、Gemini 3.5 Flash-Lite（低成本高吞吐）、Gemini 3.5 Flash Cyber（代码安全专用）
 2. **智能未升，效率翻倍**：Gemini 3.6 Flash 在 Intelligence Index 上与 Gemini 3.5 Flash 均获 50 分，但单任务速度从 2.7 分钟降至 1.3 分钟
 3. **代码能力有限进步**：前端代码竞技场排名从第 21 名升至第 12 名（1537 分），有一定提升但未达到代际跃迁

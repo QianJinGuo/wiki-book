@@ -10,6 +10,15 @@ Amazon S3 推出 Annotations 功能，允许直接在对象上附加大量结构
 
 ## 核心能力
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 | 维度 | 规格 |
 |------|------|
 | 每对象注释数 | 最多 1000 个命名注释 |

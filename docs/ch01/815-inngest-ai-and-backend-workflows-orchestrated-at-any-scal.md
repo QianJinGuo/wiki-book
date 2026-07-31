@@ -12,6 +12,18 @@
 - 目标客户：Replit、SoundCloud、Cohere、GitBook 等
 
 ## 深度分析
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 **定位与竞争格局**
 Inngest 定位为下一代工作流编排引擎，与 Temporal 形成直接竞争。相比传统消息队列（Kafka、RabbitMQ）和老牌编排工具，Inngest 强调"让任意代码变得可靠"——通过代码级别的 `step.run` 声明式事务，自动处理重试、恢复和状态管理。
 **技术架构特点**

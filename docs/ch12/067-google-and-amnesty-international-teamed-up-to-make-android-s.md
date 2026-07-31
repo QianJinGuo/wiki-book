@@ -7,6 +7,15 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - 这是主流设备厂商首次推出专门用于法证检测高级威胁的功能
 - 针对商业间谍软件（如 NSO Group 的 Pegasus）提供持久化取证日志
 - 目前仅支持 Pixel 设备，需要 Android 16 和 Google 账户

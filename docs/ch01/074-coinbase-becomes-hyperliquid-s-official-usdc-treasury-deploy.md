@@ -11,6 +11,18 @@
 - HYPE 代币涨至约 $44，日内涨幅 12% 
 
 ## 事件背景
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 2026 年 5 月 15 日，Coinbase 正式成为 Hyperliquid 的官方 USDC treasury deployer，并获得收购 USDH 品牌资产的权利。USDH 是 Native Markets 在 2025 年 9 月通过竞争性治理投票后发行的 Hyperliquid 原生稳定币，但未能获得足够的市场采用，在与 USDC 的竞争中彻底落败。
 Hyperliquid 是目前规模最大的链上永续期货交易所之一，其 USDC 供应量在过去一年翻倍至约 $50 亿，占平台上绝大部分稳定币活动。相比之下，USDH 供应量停滞在约 $1 亿，始终未能实现有意义的市场份额突破。
 

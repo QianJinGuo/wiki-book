@@ -10,6 +10,15 @@ Sebastian Cuadros 基于 LinkedIn 5306 人数据筛选出 1680 名 Anthropic 工
 
 ## 一句话
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 **Anthropic 工程团队 = 12 年经验资深工程师 + 10 个月任职中位数 + 40% Infra 背景 + 13.7% 博士 + 80% MoTS 平级 + Google 系第一大来源。**
 
 ## 核心数据

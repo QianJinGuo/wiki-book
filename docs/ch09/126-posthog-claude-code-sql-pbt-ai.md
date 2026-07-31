@@ -14,6 +14,21 @@ PostHog 允许用户直接使用 SQL 访问数据，其 SQL 解析器是将用�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **性能飞跃**：生产环境平均快 **454 倍**，笔记本电脑基准测试约 70 倍，所有实际查询与旧解析器完全等效
 - **双方法并行**：Claude 同时生成"性能优先"（递归下降 + Pratt 表达式循环）和"成功率优先"（尽可能遵循 ANTLR 行为，但用显式代码而非通用图遍历）两种实现，最终效果相近
 - **PBT 驱动开发**：使用 Hypothesis 库定义属性（新解析器输出与 oracle 一致），并基于 ANTLR `.g4` 语法文件自动生成 SQL 生成器

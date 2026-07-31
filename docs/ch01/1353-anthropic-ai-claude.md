@@ -32,6 +32,21 @@ Anthropic 可解释性团队在 Claude 的神经网络内部定位到了一小�
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### Global Workspace Theory 在 LLM 中的实证
 
 论文标题中的"Global Workspace in Language Models"直接指向认知科学中的**全局工作空间理论（Global Workspace Theory, GWT）**——这是 Bernard Baars 在 1988 年提出的人类意识理论，认为意识对应于大脑中一个"全局工作空间"，信息在这里被广播到全脑各模块。

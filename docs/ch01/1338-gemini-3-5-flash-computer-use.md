@@ -14,6 +14,20 @@ Gemini 3.5 Flash 将 Computer Use 作为模型原生能力（而非独立模型�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 架构升级：从独立模型到原生能力
 
 Computer Use 在 Gemini 生态中的定位发生了根本变化：

@@ -19,6 +19,21 @@ Agent Skill 兴起后，"写一个能跑起来的 Skill"已不困难，但"它�
 
 ## 设计概览
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 skill-up 是阿里巴巴开源的独立 CLI 评测框架。目标：用声明式配置，让 Agent Skill 的每一次迭代都可被验证、可被回归。
 
 一份最小 `eval.yaml`：

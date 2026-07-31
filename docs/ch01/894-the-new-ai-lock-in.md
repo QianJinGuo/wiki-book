@@ -7,6 +7,15 @@
 ## 核心要点
 - Published Time: 2026-05-16T22:36:49-06:00 Even as models get easier to swap, the work that surrounds them is not. Developers already move among Claude Code, Codex, Gemini, and local models with less c
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [New Lock](https://github.com/QianJinGuo/wiki/blob/main/entities/new-lock.md)
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/989-anthropic.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)

@@ -12,6 +12,21 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 1. 问题：为什么"逐个工具审批"不够？
 
 当前 Agent runtime 把工具调用当成孤立 RPC：Agent 请求工具 → runtime 检查 → 工具立即执行 → 结果放回上下文。这给了 runtime 一个错误的安全边界。

@@ -28,6 +28,15 @@ Strands Agent (Bedrock AgentCore Runtime)
 
 ## 技术栈
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 | 组件 | 技术选型 | 说明 |
 |------|---------|------|
 | Agent 框架 | Strands Agents SDK | AWS 开源 Agent SDK，支持 tool-use 模式 |

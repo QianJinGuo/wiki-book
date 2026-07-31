@@ -21,6 +21,20 @@ KAUST + 吉林大学 + Jürgen Schmidhuber 团队于 2026 年 7 月发表的系�
 
 ## 双路径分类法（核心贡献）
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 路径 A：基础模型改进（θ 更新，Σ 冻结）
 
 | 子类 | 信号形式 | 代表方法 | 关键挑战 |

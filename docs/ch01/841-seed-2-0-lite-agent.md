@@ -22,6 +22,21 @@
 
 ## 实践启示
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **上下文即壁垒**：豆包 Seed 2.0 Lite 的能力解锁依赖 prompt 中的背景信息（术语清单、说话人风格、录制场景）。不写 prompt 直接跑，效果只比剪辑软件好一点。生产级使用必须做上下文工程，这是必要工序而非可选项。
 
 2. **多模态是 Coding Agent 的缺失一环**：视频/音频 → 豆包 Seed 2.0 Lite → 结构化文本 → Claude Code/Codex/OpenClaw/Trae，这套架构让你无需更换工作台，只需在现有流程前加一层感知层。

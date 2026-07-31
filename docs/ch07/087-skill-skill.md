@@ -22,6 +22,20 @@
 
 ## Nacos AI Registry 三步治理路径
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 ### 第一步：本机统一 → Local mode
 
 Nacos Skill Sync 的 Local mode 在本机建立中心仓库，通过软链接或复制方式关联多 Agent 目录。同一份 Skill 只维护一份，修改同步到所有 Agent，减少手动复制和同名副本冲突。

@@ -14,6 +14,15 @@ Valkey 是 Redis 的开源 fork，作为 Amazon ElastiCache 的核心引擎，�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 五层系统架构
 
 ```

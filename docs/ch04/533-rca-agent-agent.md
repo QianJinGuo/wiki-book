@@ -14,6 +14,21 @@
 
 ## 核心洞察
 
+```mermaid
+graph TB
+    IN[意图] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察]
+    OB -->|"反思"| PL
+    subgraph "支撑"
+        M[记忆]
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+```
+
+
 - **AI Coding 攻克了编码，排障是下一个生产力瓶颈** — DORA 报告：个人效能显著提升但组织效能有限
 - **AI 代码掌控度下降→AI 排障从可选项变必选项** — OpenClaw v2.0 重构后大量插件瘫痪，代码由 AI 生成
 - **Agent 对 Workflow 不是取代关系** — Workflow 确定可控但缺灵活性，Agent 灵活但不确定/延迟高/Token 大

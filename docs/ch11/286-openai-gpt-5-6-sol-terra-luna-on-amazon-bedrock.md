@@ -11,6 +11,18 @@
 
 ## Summary
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 本文是 AWS 官方博客，详细介绍 OpenAI GPT-5.6 家族（Sol/Terra/Luna）在 Amazon Bedrock 上的部署与使用指南。文章覆盖模型选型建议（Sol 适合自主编码 Agent 和长程推理、Terra 适合日常生产工作负载、Luna 适合高吞吐低延迟推理）、通过 Responses API 进行推理调用、利用 Prompt Caching 降低成本的策略、连接 OpenAI Codex 编码 Agent、以及配额管理与扩展规划。
 
 ## Key Points

@@ -14,6 +14,21 @@ SANA-Video 2.0 是 NVIDIA 在视频生成效率-质量权衡方面的最新进�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **混合线性-软注意力（Hybrid Linear-Softmax Attention）**：以 3:1 比例交替使用门控线性注意力（O(N) 复杂度）与门控软注意力锚点（恢复全秩 token 交互），解决了纯线性注意力表达受限的问题
 - **块注意力残差（Block Attention Residuals / AttnRes）**：将已完成块的 attention summary 路由到后续线性层，实现锚点特征复用，深层有效秩提升约 12%
 - **性能指标**：VBench 总分 84.30，480p/40 步仅需 13.2 秒（单 H100）；编译后 DiT 前向传播比匹配的全 Softmax 基线在 720p/60s 下快 3.2×，差距随视频时长扩大

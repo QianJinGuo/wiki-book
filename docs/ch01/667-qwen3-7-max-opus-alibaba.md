@@ -14,6 +14,15 @@ Qwen3.7-Max 是阿里云 2026 年 7 月发布的旗舰大模型，在编程工�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 - **定位**：对标 Claude Opus 4.6 的旗舰级智能体底座，而非单纯的语言模型
 - **三项长程任务**：35 小时 GPU 代码加速 10×、80+ 小时 RL 作弊检测识别 1618 个样本、YC-Bench 模拟经营营收 208 万美元 — 均展示出超长链路稳定性
 - **关键基准**：SWE-Pro #1（60.6）、MCP-Atlas 超越 Opus 4.6（76.4 vs 75.8）、GPQA Diamond 92.4、HMMT 2026 数学竞赛 97.1

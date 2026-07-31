@@ -57,6 +57,21 @@ GenericAgent 的 **5类9个互不重叠原子工具**：
 
 ## 基准测试
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 | 指标 | GenericAgent | Claude Code | OpenClaw |
 |------|-------------|-------------|----------|
 | Token消耗占比 | **100%** (基准) | 27.7% | 15.5% |

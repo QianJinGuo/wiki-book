@@ -10,6 +10,21 @@
 xAI 解散但 Grok 还活着。2026年5月6日马斯克官宣 xAI 解散并入 SpaceX，更名 SpaceXAI。次日他把 Colossus 1 全部算力租给 Anthropic。第三天他发推反驳 Grok 死亡论，强调 Colossus 2 正在同时训练多款新 Grok。三天内三件事：xAI 公司解散，Colossus 1 的 Hopper 老卡折现，但 Grok 产品线没死。
 
 ## 关键要点
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - xAI 作为独立公司于 2026年5月7日解散，品牌并入 SpaceX 更名 SpaceXAI
 - 解散早有苗头：2026年2月资本结构并入，3月底创始团队全员清零，5月6日品牌并入
 - Colossus 1（22万GPU，300+兆瓦）租给 Anthropic，但全部是 Hopper 架构老卡，已非前沿

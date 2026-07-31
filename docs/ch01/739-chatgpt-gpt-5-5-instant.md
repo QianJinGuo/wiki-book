@@ -30,6 +30,20 @@ GPT-5.5 Instant的升级体现了OpenAI在模型优化方向上的重大转变�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 基于GPT-5.5 Instant的能力升级，以下几个实践方向值得关注：
 
 **针对开发者与AI应用构建者：**

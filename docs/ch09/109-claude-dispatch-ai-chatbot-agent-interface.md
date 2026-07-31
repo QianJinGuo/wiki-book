@@ -16,6 +16,15 @@ AI 能力已远超大众实际使用水平。能力过剩的根源不在模型�
 
 ## 接口类型 1：专业化工具
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 最完整的专业化 AI 接口在**编程**领域（Codex、Claude Code、Antigravity）。但这些工具假设用户懂 Python 和 Git，界面像 1980 年代电脑教室，对 99% 非开发者知识工作者不友好。
 
 Google 的实验性专业化接口：

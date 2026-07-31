@@ -43,6 +43,20 @@ Flow2Spec 不要求先做大规模文档工程。知识在使用过程中自然�
 
 ## 与现有知识库的关联
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 - [Hermes Agent](../ch03/096-hermes-agent.html) — Flow2Spec 的 .Knowledge/ 路由协议与 Hermes 的 Skill 系统形成互补：Hermes 管理 Agent 能力单元（Skills），Flow2Spec 管理项目层面的知识路由和开发流程
 - [Skill 设计模式](ch04/271-skill.html) — Flow2Spec 的 f2s-* 命令本质上是预定义的 Skill，但其知识路由协议是比 Skill 更高一层的组织抽象
 - [AI Agent Skill 系统设计：淘宝技术工程实践](ch04/271-skill.html) — Flow2Spec 的 HARD-GATE 等价物是五层约束，前向测试等价于 verify 步骤

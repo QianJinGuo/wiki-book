@@ -19,6 +19,15 @@
 
 ## 工程流水线
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 五步链路：/grill-with-docs（连环拷问）→ /to-prd（合成 PRD）→ /to-issues（切分 issue）→ /implement（独立执行）→ /code-review（审查收官）
 
 ## 三个精巧设计

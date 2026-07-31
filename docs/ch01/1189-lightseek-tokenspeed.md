@@ -11,6 +11,21 @@ TokenSpeed 的核心竞争力来自三个正交的技术决策，针对 agentic 
 **Benchmark 的局限性**：官方数据基于 SWE-smith traces（Kimi K2.5），这是 coding agent 场景，不代表通用推理或长文本生成场景。TokenSpeed 在其他模型架构（如 DeepSeek V4、Qwen 3.6）上的 Pareto frontier 是否同样优于 TensorRT-LLM，需要独立验证。另外官方明确说明生产 hardening 还在进行中——这是 2026 年 5 月的预览版，工程化程度待观察。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - **选型评估**：对于日均 GPU 消耗量大、coding agent 场景占比高的基础设施团队，TokenSpeed 是值得关注的选项。但建议等待生产 hardening 完成（官方预期 1 个月后）再做大规模部署。
 - **benchmark 验证**：在采用 TokenSpeed 前，需要在自己的真实 traffic 分布上做 benchmark，特别是非 coding 场景的尾延迟（p99）。官方数据是 Kimi K2.5 单模型，你的 workload 可能差异很大。
 - **MLA 关注**：TokenSpeed MLA 已进入 vLLM，意味着 Blackwell 架构的 MLA 优化不再只有 TensorRT-LLM 一条路。如果你在使用支持 MLA 的模型（Kimi 系列为主），TokenSpeed 或其 MLA kernel 是可迁移的优化路径。

@@ -56,6 +56,21 @@ V4 这次最该细看的，不是窗口大小。是它把"百万上下文够不�
 
 ## 先别被"1M"这个数字带跑
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 这两年长上下文几乎成了发布会的固定节目。200K、1M、2M、4M，数字越写越大。
 
 但只要真跑过长任务 Agent 的人都知道，窗口大只是第一步。

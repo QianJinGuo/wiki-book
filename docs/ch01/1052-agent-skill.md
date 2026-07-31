@@ -63,6 +63,15 @@ Skill 最精妙的设计在于它的三级渐进式披露（Progressive Disclosu
 
 ---
 ## 关联
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

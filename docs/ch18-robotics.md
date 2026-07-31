@@ -18,6 +18,25 @@
 
 ## 导读
 
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策规划]
+    DEC --> ACT[动作执行]
+    ACT --> ENV[环境反馈]
+    ENV --> PER
+    subgraph "学习"
+        RL[强化学习]
+        SIM[仿真训练]
+        IMI[模仿学习]
+    end
+    DEC --> RL & SIM & IMI
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef learn fill:#d1fae5,stroke:#059669,color:#064e3b
+    class PER,DEC,ACT,ENV core
+    class RL,SIM,IMI learn
+```
+
+
 AI 最终要从屏幕走进物理世界。
 
 本章收录了机器人与具身智能的前沿进展：NVIDIA Isaac Lab 的机器人强化学习、蔚蓝 BabyAlpha A3 消费级机器狗、Wall-OSS-0.5 零样本具身大模型、以及 Unitree 的 IPO 招股书。

@@ -40,6 +40,21 @@ MetaCompress团队 投稿 凹非寺 量子位 | 公众号 QbitAI
 
 ## 详细信息
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ---
 title: 只看图片就能学会压缩Token！浙大&阿里新框架多轮VQA压缩率90%，精度不掉｜CVPR 2026
 source: wechat

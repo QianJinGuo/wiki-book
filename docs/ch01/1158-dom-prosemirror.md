@@ -18,6 +18,16 @@
 2. com/s/7db3l9s9MfMonr0BYwyouQ
 > 背景：知识库问答输入框的 @文档 mention 能力 —— 表面是"输入 @ 后选一个文档"，实则是编辑器稳定性的工程问题
 ## 一句话定位
+
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    DEC --> RL[强化学习]
+```
+
 **从 DOM 方案转向 ProseMirror** 是因为"文本 + 原子节点"混排后，复杂度会从"能不能插进去"转移到"能不能一直稳定"——光标恢复、IME、`innerHTML` 污染 undo 栈、临时交互态混入文档，每一项都让裸 `contenteditable` 不可维护。
 3. ## 为什么不用 DOM 方案
 1.

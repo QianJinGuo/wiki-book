@@ -8,6 +8,18 @@ AWS Bedrock AgentCore 是 AWS 推出的 Agent 基础设施平台，旨在为开�
 
 ## 核心能力
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 - **Sandbox 运行时**：安全隔离的代码执行环境
 - **Memory**：Agent 记忆管理，支持短期和长期记忆
 - **Gateway**：MCP 协议网关，连接外部工具和服务

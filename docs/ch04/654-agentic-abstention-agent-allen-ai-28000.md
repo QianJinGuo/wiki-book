@@ -12,6 +12,21 @@
 
 ## 与 LLM Abstention 的关键区别
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 | 维度 | LLM Abstention | Agentic Abstention |
 |------|---------------|-------------------|
 | 动作空间 | 只有 ANSWER/ABSTAIN | 多了 ACT（搜索、点击、执行命令） |

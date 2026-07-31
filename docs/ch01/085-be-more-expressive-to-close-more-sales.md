@@ -14,6 +14,20 @@
 一项来自维也纳大学（University of Vienna）和维也纳莫德尔大学（Modul University Vienna）的销售演示实验，分析了 847 名受试者观看 14 场不同行业（App、硬件、营销咨询等）销售视频后的反应。核心问题是：销售人员的表达力（expressiveness）究竟如何影响成交率。
 
 ## 核心发现
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 实验将销售员分为"高表达力"（ energetic speaking、body language、手势、眼神接触）和"低表达力"两组。结果显示：
 
 - 受试者对产品的评价**提升 31.8%**
