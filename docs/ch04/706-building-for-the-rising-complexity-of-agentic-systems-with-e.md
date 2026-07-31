@@ -12,6 +12,27 @@ NVIDIA 2026 年技术博客指出，生成式 AI 的第一章由「人类发请�
 
 ### 三种 AI 交互模式（按复杂度排序）
 
+```mermaid
+graph LR
+    subgraph "交互模式演进"
+        CB["标准Chatbot<br/>线性交互·可预测"]
+        CT["Chat+Tools<br/>有界可变·工具输出"]
+        AG["Agentic<br/>链式高熵·自主决策"]
+    end
+    CB -->|"加工具"| CT -->|"Agent自主编排"| AG
+    subgraph "Agentic资源消耗"
+        PA["Primary Agent<br/>58 turns"]
+        SA["Sub-Agent<br/>225次调用"]
+        CTX["上下文窗口<br/>15K→156K→压缩20K"]
+    end
+    PA --> SA
+    PA --> CTX
+    CTX -->|"Prompt Caching<br/>95%命中率·成本-85%"| PC["缓存优化"]
+    style AG fill:#f97316,stroke:#333,color:#fff
+    style PC fill:#22c55e,stroke:#333,color:#fff
+```
+
+
 博客将 AI 交互模式划分为三个递进层级：
 
 1. **标准 Chatbot**：线性交互——一次用户消息，一次模型响应，循环往复，行为高度可预测。

@@ -14,6 +14,27 @@
 
 跨框架反复出现的 6 个稳定对象：
 
+```mermaid
+graph TD
+    TH["Thread / Session<br/>一段长期上下文<br/>这是谁的哪段任务？"]
+    RU["Run / Task<br/>一次具体执行<br/>这次跑了什么？"]
+    ST["Step<br/>可观测步骤<br/>哪一步调了模型/工具？"]
+    EV["Event<br/>进展变化<br/>现在发生了什么？"]
+    AR["Artifact<br/>正式结果<br/>结果在哪里？"]
+    CK["Checkpoint<br/>可恢复快照<br/>中断后从哪继续？"]
+    TH --> RU --> ST --> EV
+    RU --> AR
+    RU --> CK
+    CK -.->|"resume"| RU
+    style TH fill:#ef4444,stroke:#333,color:#fff
+    style RU fill:#f97316,stroke:#333,color:#fff
+    style ST fill:#eab308,stroke:#333,color:#000
+    style EV fill:#22c55e,stroke:#333,color:#fff
+    style AR fill:#3b82f6,stroke:#333,color:#fff
+    style CK fill:#8b5cf6,stroke:#333,color:#fff
+```
+
+
 | 对象 | 人话解释 | 回答的问题 |
 |------|---------|-----------|
 | **Thread/Session** | 一段长期上下文 | 这是谁的哪段任务？ |

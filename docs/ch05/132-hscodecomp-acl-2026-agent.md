@@ -11,6 +11,25 @@
 ## 核心贡献
 
 ### 知识复杂度三层模型
+
+```mermaid
+graph TD
+    L1["Level 1: 开放域数据<br/>BrowseComp, GAIA"]
+    L2["Level 2: 结构化数据<br/>MedBrowseComp, FinSearchComp"]
+    L3["Level 3: 分层规则数据<br/>HSCodeComp<br/>层级深·语义边界模糊·逻辑耦合"]
+    L1 --> L2 --> L3
+    subgraph "三类信号重要性"
+        AH["1. Agent Harness<br/>检索并应用规则 → +8.5pt"]
+        CR["2. CROSS历史裁定库<br/>few-shot判例 → +5~10pt"]
+        VI["3. 视觉信息<br/>仅限强VLM → +4pt"]
+    end
+    AH --> CR --> VI
+    AG["最强Agent ~49.4%"] --- HU["人类专家 95%"]
+    TTS["Test-Time Scaling ❌<br/>推理漂移: GPT-5 40.82%→35.44%"]
+    style L3 fill:#ef4444,stroke:#333,color:#fff
+    style AH fill:#22c55e,stroke:#333,color:#fff
+```
+
 | 层次 | 知识类型 | 代表 |
 |------|---------|------|
 | Level 1 | 开放域数据 | BrowseComp, GAIA |

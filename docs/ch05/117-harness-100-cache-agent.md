@@ -28,6 +28,28 @@ Planner、Coder、Reviewer、Tester 各一个 agent，消息总线编排。结�
 
 ## 7 个关键工程决策
 
+```mermaid
+graph TD
+    subgraph "Cache命中率优化"
+        D1["1.双Cache标记<br/>滚动双缓冲·单步回退仍命中"]
+        D2["2.System Prompt字节冻结<br/>动态信息写成普通消息"]
+        D3["3.Skill子Agent<br/>invoke_skill·状态隔离·16工具"]
+        D4["4.固定16个工具<br/>schema稳定·cache前缀不变"]
+        D5["5.压缩不换模型<br/>同模型做摘要·共享前缀"]
+    end
+    subgraph "失败教训"
+        F1["❌ RAG/知识库<br/>90%召回率不够·延迟+部件"]
+        F2["❌ 多Agent编排<br/>交接即miss·成本翻6倍"]
+    end
+    D1 --> D2 --> D3 --> D4 --> D5
+    F1 -.->|"不要搞RAG"| D3
+    F2 -.->|"不要做多Agent"| D3
+    style D3 fill:#8b5cf6,stroke:#333,color:#fff
+    style F1 fill:#ef4444,stroke:#333,color:#fff
+    style F2 fill:#ef4444,stroke:#333,color:#fff
+```
+
+
 ### 决策 1：双 Cache 标记
 
 大模型的 prompt cache 是按前缀匹配的——前缀里改一个字节，从那里往后全部失效。最直觉的做法是每轮在消息末尾打一个标记。但这个做法在三个场景下会失效：历史消息追加后原标记位置的内容变了；模型回退一次工具调用后标记直接作废；切换模型时标记抖动导致额外的 miss。
