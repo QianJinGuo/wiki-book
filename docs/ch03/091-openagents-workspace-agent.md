@@ -12,6 +12,20 @@ OpenAgents（3.3k Star, Apache 2.0）定位不是 Agent 框架，而是 **多 Ag
 
 ## 核心要点
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 ### 1. 问题定义：Agent 孤岛
 
 当前 AI Agent 生态的核心痛点是**上下文隔离**：

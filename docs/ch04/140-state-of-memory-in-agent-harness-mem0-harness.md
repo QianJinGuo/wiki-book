@@ -15,6 +15,24 @@ mem0 团队系统横评了 9 个主流 [agent harness](https://github.com/QianJi
 
 ## Memory 三层分类法
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 文章先建立分析框架：把 memory 按"**存在哪里**"而非"**存什么**"划三层，因为失败模式不同。
 
 | 层 | 载体 | 边界 | Production 现状 (2026) |

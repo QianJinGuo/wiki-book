@@ -18,6 +18,24 @@ AlphaEvolve: Gemini-powered coding agent scaling impact across fields — Google
 
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 AlphaEvolve 的案例揭示了 AI 编码代理从「辅助工具」演进为「科学发现伙伴」的关键转折。传统算法设计依赖人类专家的领域知识和数学直觉，而 AlphaEvolve 通过大规模探索和评估，发现了人类未曾考虑的解决方案。这种「AI 科学家」模式的价值不在于替代人类，而在于将人类从穷举式搜索中解放，专注于更高层的假设形成和结果解释。
 
 从技术架构看，AlphaEvolve 的核心能力建立在 Gemini 的代码生成与推理能力之上，结合了进化算法的大规模并行搜索范式。这种混合架构的优势在于：进化搜索提供了探索多样性，避免了纯优化方法容易陷入局部最优的问题；而 LLM 的语义理解能力则保证了生成的候选解具有基本的语法和逻辑有效性。两者结合，使得在离散搜索空间（如算法设计）中实现高效探索成为可能。

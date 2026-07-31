@@ -61,6 +61,19 @@ npx skills add HKUDS/CLI-Anything --skill cli-hub-meta-skill -g -y
 
 ## 二、OpenCLI — 万物皆可 CLI 的 AI 原生运行时
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 **GitHub**：https://github.com/jackwener/OpenCLI
 **Stars**：17.1k
 **标签**：`cli` `ai-agents` `ai-tools`

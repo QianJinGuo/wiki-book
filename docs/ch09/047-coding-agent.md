@@ -14,6 +14,22 @@
 
 ## 双层Loop架构
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - 内层Loop：工具+环境+模型=基本Agent闭环
 - 外层Loop：Memory/Skill/Rules/MCP/Agents=边界条件
 - Claude Code：大量边界条件if-else，Harness=帮助Agent完成脏活累活的工程设施

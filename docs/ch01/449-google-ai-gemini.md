@@ -12,6 +12,25 @@
 
 ## 核心内容
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 ### 技术的本质：什么被"焊"进了芯片
 
 大模型由两样核心东西组成——**权重**（模型知道什么）和**架构**（模型怎么算）。Frozen v2 想固化的是架构中相对稳定、反复执行的计算路径，而非权重本身。权重仍然可以更新，模型也能继续训练，但"怎么算"这条主干会被更深地写进电路。

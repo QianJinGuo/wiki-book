@@ -14,6 +14,19 @@
 --- See also [Claude Code Architecture](../ch03/078-claude-code.html)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 1. 定价结构的数学本质
 Claude 的提示缓存定价遵循一套固定的倍率体系，而非绝对价格：
 | 操作 | 倍率（相对 base input） |

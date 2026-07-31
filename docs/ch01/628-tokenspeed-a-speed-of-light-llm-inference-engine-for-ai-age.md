@@ -12,6 +12,24 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### 为什么需要专门的 Agentic 推理引擎？
 
 Agentic Coding 已从 Demo 阶段进入规模化生产。Claude Code、Codex、Cursor 等系统产生了海量 token 需求，推动了数十 GW 级数据中心建设。在这个规模下，推理编排效率至关重要——即使 GPU 吞吐量的小幅提升，也能在整个生产集群中转化为显著的容量节省。

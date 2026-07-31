@@ -8,6 +8,20 @@
 Karpathy AutoResearch 把 ML 研究变成"写 train.py → 跑 5 分钟实验 → val loss 改善才保留"的自动循环。本项目将此方法迁移到软件开发：GitHub Issue → 多 Agent 交叉审核 → 5 维度量化评分达标 → 自动 PR + 合并。约 10 分钟完成中等复杂度 Issue，全程零人工干预。
 
 ## 核心对比：AutoResearch vs 传统 Agentic Coding
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
 | 模式 | 循环方式 | 质量保证 | 人的参与 |
 |------|---------|---------|---------|
 | 传统 Vibe Coding | 单 Agent 自己写、自己改 | 测试 backpressure | 全程绑在循环里 |

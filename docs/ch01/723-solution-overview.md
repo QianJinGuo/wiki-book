@@ -30,6 +30,22 @@ AML analysts at mid-to-large banks typically spend 30 to 90 minutes per alert ma
 
 ## Solution overview
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 The following diagram illustrates the end-to-end integration architecture connecting Amazon Quick to Snowflake through the Model Context Protocol (MCP).
 
 ![Architecture diagram showing Amazon Quick integrating with a Snowflake-managed MCP server through Model Context Protocol over OAuth, with Cortex Analyst and Cortex Search as backend tools](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/23/ML-20391-1.png)

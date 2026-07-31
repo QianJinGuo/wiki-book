@@ -9,6 +9,24 @@
 DeepSeek 2026年4月30日发布论文 *Thinking with Visual Primitives*，提出「视觉原语」概念——将坐标和边界框作为视觉推理的最小单元，让模型一边推理一边「用手指着图说话」。这是 DeepSeek 补齐多模态能力的核心动作，同时也是一种反共识的技术路线选择：主流在堆图像分辨率，DeepSeek 在堆指代精度。
 
 ## 背景时间线
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 | 时间 | 事件 | 
 |---|---| 
 | 4月24日 | DeepSeek V4 论文发布（58页） | 

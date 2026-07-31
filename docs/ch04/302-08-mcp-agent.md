@@ -12,6 +12,22 @@ MCP（Model Context Protocol）是 Anthropic 于 2024 年 11 月开源的一项�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - **MCP 定位**：不是替代 Tools，而是为 Tools 提供了跨进程、跨项目、跨生态暴露的统一协议
 - **三大核心概念**：Server（暴露 tools/resources/prompts 三類能力）、Client（通过 JSON-RPC 发起请求）、Transport（决定消息传输方式：stdio 或 streamable HTTP）
 - **与本地 Tools 的主要区别**：本地工具在 Agent 进程内直接调用，MCP 工具通过独立 Server 进程/服务调用，中间层通过 MCP 协议通信

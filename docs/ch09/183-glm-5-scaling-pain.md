@@ -8,6 +8,16 @@
 智谱团队 2026 年披露 GLM-5 在高并发 Coding Agent 场景下遭遇的推理稳定性问题及修复方案。核心问题：乱码（garbled output）、复读（repetition）、生僻字（rare character）三类异常，根因分别定位到 PD 分离架构下 KV Cache 竞态和 HiCache 加载时序两个独立 Bug，以及 LayerSplit KV Cache 分层存储优化。
 
 ## 三类异常现象
+
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
 | 异常 | 特征 | 检测信号 |
 |------|------|---------|
 | 乱码 | 随机字符异常 | spec_accept_length 极低 |

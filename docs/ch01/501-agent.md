@@ -16,6 +16,22 @@ CLI-Anything 是香港大学数据科学实验室（HKUDS）的开源项目，�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 ### 7 阶段全自动流水线
 
 1. **🔍 Analyze** — 扫描源码，将 GUI 操作映射到底层 API

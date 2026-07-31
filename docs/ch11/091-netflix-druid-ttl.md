@@ -11,6 +11,20 @@
 > **Core insight**: 滚动窗口仪表板的每次刷新只变化最后几分钟数据，其余"历史"数据已凝固。区间感知缓存将查询结果按时间粒度分桶存储，用指数递增 TTL（最近 2 分钟仅 5s，最远可达 1h）使 Druid 仅需扫描最fresh的未缓存数据，实验中 Druid 查询量降低 33%、P90 延迟改善 66%
 
 ## 问题背景：Druid 标准缓存在滚动窗口下的失效
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
 Netflix Druid 集群每日处理 10T 行数据、15M events/sec 写入，26 个图表的热门仪表板每次加载产生 64 次查询，30 人同时查看、每 10 秒刷新，产生 192 qps。 Druid 内置的全结果缓存和段级缓存对滚动窗口失效：时间窗口轻微移动即构成不同的查询字符串导致缓存未命中；Druid 为保证查询正确性主动拒绝缓存含实时段的数据。这类近重复查询构成隐式 DDoS，在不扩容硬件的前提下无法简单解决。
 
 ## 核心设计：区间感知缓存拦截代理

@@ -11,6 +11,24 @@
 Browserbase（Kyle Jeong, 2026-05-07）提出。核心命题：**让浏览器 Agent 的每次探索都变成可复用的永久技能**——不是向量，不是会话录像，而是任何人都能读懂的 markdown 技能文件。
 
 ## 核心问题：探索税（Discovery Tax）
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 **定义**：浏览器 Agent 每次会话结束后学到的一切都跟着蒸发，下次运行还得从零开始探索同一个网站。推理能力越来越强，但记忆没有改善。
 **凯恩斯思想实验**：没有海马体的天才，每次从零推导出同样精妙的结论，却无法在昨天的洞察上继续前进。
 **根本瓶颈**：不是推理能力，而是**记忆形式**——现有方案（会话录像、trace、embedding 向量）要么不可读、要么不可复用、要么两者兼有。

@@ -8,6 +8,24 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 2026 年 6 月，Business Insider 独家披露：Microsoft 正在把 GitHub 部分负载路由到 AWS，以应对 AI 编码工作流（agentic development）爆发带来的基础设施压力。这一举动与 Microsoft 在 2018 年收购 GitHub 时承诺的"垂直整合到 Azure"叙事形成明显反差，是超大规模云厂商（hyperscaler）之间互相借用 GPU 容量这一新阶段的关键标志事件。RuntimeWire 在其 2026-06 文章中围绕"收购承诺 vs 现实"的张力展开分析，指出即使是最有战略纵深的云厂商也无法在 AI 推理需求面前维持单一云供给的边界。
 
 ## 核心要点

@@ -9,6 +9,22 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-20000-char-source-analysis.md)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：不是依赖模型自身的推理能力来管理复杂任务，而是通过多层机制将不确定性转化为可控行为。与 OpenCode、Codex、Gemini-CLI 等竞品相比，Claude Code 在以下维度展现了更成熟的工程思考。
 **动态 System Prompt 机制**是理解 Claude Code 的第一个关键。传统框架使用静态 prompt，启动后不变；Claude Code 则通过 `buildEffectiveSystemPrompt` 函数在每次会话启动时动态组装内容，涵盖工具描述、MCP 服务器指令、Skill 索引、环境信息等六层优先级。这一设计使系统能够根据当前环境状态调整模型的行为契约，而非用一套固定规则应对所有场景。
 **并发调度与延迟加载**构成了工具层的核心创新。每个工具通过 `isConcurrencySafe` 声明并发安全性，调度层据此将工具调用分成批次——只读工具并行执行、写操作串行执行。更精妙的是 `shouldDefer + ToolSearch` 的延迟加载机制：非必需的复杂工具（如 Plan Mode）在初始请求中只携带空壳 schema，模型通过 `ToolSearch` 发现后才会注入完整描述。这套机制通过独立的 `deferred_tools_delta` attachment 发送，避免破坏 prompt cache 的前缀复用。Token 优化效果显著：对于接入十几个 MCP 服务器的企业场景，每次任务只注入实际用到的工具描述。

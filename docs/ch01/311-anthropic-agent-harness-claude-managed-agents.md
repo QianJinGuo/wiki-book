@@ -40,6 +40,22 @@ source_url: https://mp.weixin.qq.com/s/A_ksLCNmIL4lXLcZeVSPsQ
 - ##  可以构建什么
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 架构哲学：从"模型调用"到"平台托管"
 Managed Agents 的核心转变在于将 Agent 的基础设施责任从用户转移到平台。这与 AWS 从 EC2 到 Lambda 的演进路径高度相似。
 传统 Agent 开发需要自行处理循环控制、工具调用、执行环境、上下文管理四大难题。Managed Agents 通过 Harness 引擎将这些封装为平台能力，开发者只需定义任务本身。

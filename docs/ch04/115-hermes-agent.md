@@ -12,6 +12,18 @@ Hermes 是 Nous Research 打造的一套自治式 AI Agent 运行框架。它不
 Hermes 的一次运行并不是一次普通的模型调用。一次看似简单的交互，背后可能包含多轮推理、工具调用、结果回注、上下文膨胀，以及新的推理循环。如果系统只能提供最终回复、几条分散的日志，或者一次调用的 usage 汇总，那么 Hermes 依然是一个黑盒。
 
 ## 要解决的四个核心问题
+
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
 **第一类：过程不可见**
 很多系统在接入大模型之后，依然只能看到用户输入、最终输出和一条 usage 汇总。Hermes 的真实运行远不止如此。没有调用链时，中间过程基本就是空白的。
 **第二类：成本不可归因**

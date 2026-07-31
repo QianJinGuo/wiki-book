@@ -40,6 +40,22 @@
 
 ## 实验结果
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 Agent-World 在 23 个挑战性基准上进行了全面评估，涵盖 5 大领域：
 
 - **智能体工具使用**：MCP-Mark, BFCL V4, τ²-Bench

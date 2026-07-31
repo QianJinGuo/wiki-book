@@ -18,6 +18,19 @@ Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes fr
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Nathan Lambert 的中国 AI 实验室之行揭示了一个长期被西方科技界低估的现实：中美 AI 竞争力的差距不是技术能力的根本性差异，而是组织文化和工作方式的系统性不同。西方媒体倾向于将中国 AI 描述为「模仿者」或「跟随者」，但 Lambert 的第一手观察指向一个更微妙的事实——快速跟随本身就是一种卓越的能力，它要求在消化吸收他人创新的同时保持自主探索的平衡。这种「建设性跟随」的智慧很少被西方分析框架所重视。
 
 中国实验室在组织结构上的一个关键特征是对人才的极高密度配置。Lambert 提到的「excellent scientists, large-scale data, and accelerated computing」三要素中，人才密度的作用往往被忽视。在中国顶级实验室，研究人员通常以更小的团队规模运作，决策链更短，这使得从研究到工程部署的周期可以大幅压缩。这种组织效率在应对快速变化的技术环境时是一种显著优势，尤其在需要快速迭代模型和产品的 AI 领域。

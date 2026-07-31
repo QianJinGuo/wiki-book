@@ -12,6 +12,19 @@ AWS DevOps Agent 正式 GA（Generally Available），与 Datadog MCP Server 深
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 从 Preview 到 GA 的关键进展
 
 AWS DevOps Agent 在 GA 版本中增加了多项关键能力：

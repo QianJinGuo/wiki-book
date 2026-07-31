@@ -14,6 +14,24 @@ Vincent Schmalbach 通过逆向工程发现，Claude Code 从 v2.1.91 开始嵌�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 1. **检测触发条件**：`ANTHROPIC_BASE_URL` 被设置为非 `api.anthropic.com` 的自定义端点
 2. **三层信号融合**：域名匹配（147 条中国相关域名列表） + 关键词匹配（11 个中国 AI 服务商名称） + 时区检测（Asia/Shanghai 或 Asia/Urumqi）
 3. **隐藏标记方式**：日期行 `Today's date is YYYY-MM-DD.` 中的撇号替换为 Unicode 变体 + 日期分隔符从 `-` 改为 `/`，构成 4 种信号组合

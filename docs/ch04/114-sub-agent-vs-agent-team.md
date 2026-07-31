@@ -8,6 +8,19 @@
 > 多智能体架构里，最先该判断的不是"要拆几个"，而是这些子任务之间是否共享同一段上下文。能干净切开的用 Sub-Agent，必须共享状态的才上 Agent Team。
 
 ## Sub-Agent vs Agent Team 本质区别
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 | 维度 | Sub-Agent | Agent Team |
 |------|-----------|------------|
 | 上下文 | 各有独立上下文 | 共享上下文 |

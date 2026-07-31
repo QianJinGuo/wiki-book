@@ -16,6 +16,19 @@ Adobe Marketing Agent 通过 MCP (Model Context Protocol) 协议与 Amazon Quick
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 1. **MCP 作为企业集成协议**：Amazon Quick 作为 MCP 客户端连接 Adobe 远程 MCP 服务器，自动发现并注册营销工具为 actions
 2. **五大营销分析能力**：受众排名 (Audience Ranking)、忠诚度分析 (Loyalty Analysis)、旅程查询 (Journey Lookup)、冲突分析 (Conflict Analysis)、内容绩效 (Content Effectiveness)
 3. **端到端治理控制**：最小权限、租户隔离、审计日志、Schema 版本控制、人工审核——贯穿请求全链路

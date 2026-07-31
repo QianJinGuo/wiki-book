@@ -19,6 +19,26 @@
 - 适用：个人/小团队快速验证
 
 ## 核心洞察
+
+```mermaid
+graph TB
+    IN[意图输入] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察结果]
+    OB -->|"反思调整"| PL
+    PL --> OUT[交付]
+    subgraph "支撑"
+        M[记忆] 
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef sup fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class IN,PL,EX,OB,OUT core
+    class M,S,T sup
+```
+
 1. **Skill是Workflow的另一种表达**：HR简历筛选skill的执行步骤（解析→提取→评分→写入）本身就是Workflow。没有Skills工程机制前，Agent稳定性更差。 ^[https://mp.weixin.qq.com/s/4OtZSJPK6-LGHjyNYfRjJw]
 2. **Skills不会淘汰Workflow平台**：会给压力倒逼升级（Coze已在用AI Coding方式实现Workflow搭建，不再手动拖拉拽）。两边会向中间靠拢：Workflow平台Agent化，Skills系统平台化/可治理化。 ^[https://mp.weixin.qq.com/s/4OtZSJPK6-LGHjyNYfRjJw]
 3. **企业选型原则**：个人/小团队→Skills；企业生产→Workflow（涉及隐私/权限/合规/协作/可追溯） ^[https://mp.weixin.qq.com/s/4OtZSJPK6-LGHjyNYfRjJw]

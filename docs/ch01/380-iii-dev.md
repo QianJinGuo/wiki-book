@@ -8,6 +8,18 @@
 AI 基础设施创业公司，构建用 **Worker / Trigger / Function** 三个原语统一 Agent 与传统后端架构的开源框架。核心主张：Harness 不是后端之上的一层，而是后端本身的一部分。当 Agent 也是 Worker 时，harness 与后端的边界消解为同一套 primitives。
 
 ## 创始人
+
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
 **Mike Piccolo** — iii.dev 创始人，同时担任另一家公司联合创始人兼董事会成员。专注于探索 Agent 与传统后端的融合架构。
 
 ## 核心原语

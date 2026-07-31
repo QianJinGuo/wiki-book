@@ -14,6 +14,18 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 1. **卡顿根因：主线程过载**：滑动卡顿的核心原因是主线程承担了节点创建、属性设置、系统递归测量布局三重任务，在低端机型上帧渲染无法在16.6ms内完成
 2. **方案一：节点树静态布局+拦截系统测量**：利用render线程已完成的yoga测量结果直接作为最终布局依据，通过CustomNode的`OnMeasure`/`OnLayout`自定义回调拦截系统对CAPI Node Tree的递归测量，跳过主线程OnVSync阶段的重复测量
 3. **方案二：字体测量缓存**：将文本测量完全前移至render线程，使用ArkGraphics 2D自研文本引擎缓存`ArkUI_StyledString`结果，主线程直接应用缓存值，不再重复测量。主线程耗时降低≈4ms+

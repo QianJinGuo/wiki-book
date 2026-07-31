@@ -33,6 +33,26 @@ hermes kanban watch
 - 内置 Dashboard（`hermes dashboard`，类似 Linear 界面）
 
 ## 常见坑
+
+```mermaid
+graph TB
+    IN[意图输入] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察结果]
+    OB -->|"反思调整"| PL
+    PL --> OUT[交付]
+    subgraph "支撑"
+        M[记忆] 
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef sup fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class IN,PL,EX,OB,OUT core
+    class M,S,T sup
+```
+
 | 坑 | 原因 | 解法 |
 |----|------|------|
 | 裁判误判完成 | 目标写得太模糊 | 写具体可验证的指令，如 `ruff check src/ 零报错` |

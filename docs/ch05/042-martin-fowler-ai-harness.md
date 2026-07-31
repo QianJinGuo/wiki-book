@@ -13,6 +13,19 @@
 - 团队这边可以先慢一点：与其急着搭"全自动 AI 团队"，不如先把六件小事补上——小切片、强验证、仓库内知识、权限边界、错误分类、持续清理。
 
 ## 核心观点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 非确定性进入工程链路
 软件工程过去几十年都建立在一台确定性机器上。现在，我们把一个非确定性的协作者接进了研发链路。
 AI 研发主线从代码生成更快转向非确定性进入工程系统。

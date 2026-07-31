@@ -14,6 +14,24 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 摘要
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 OpenAI 在 2026 年 5 月对 **Codex** 进行了重大升级，标志着它从"代码助手"正式蜕变为**全天候 AI 队友平台**。五大能力同时上线：**Appshots**（双击 Command 截屏并读取屏幕外隐藏文本）、**/goal 毕业**（长周期自主编码）、**Locked Use**（Mac 锁屏状态下远程操控）、**应用内浏览器高级标注模式**、**插件共享与 Analytics 升级**。同日 ChatGPT 以插件形式杀入 PowerPoint，进一步扩张 OpenAI 在生产力领域的边界。
 
 关键数据：截至 2026-05，Codex 周活跃开发者突破 **400 万**（两周前还是 300 万）；今年 1-4 月在 ChatGPT Business/Enterprise 中用户数暴增 6 倍；**50% 的 Codex 用户做的事已不是写代码**。

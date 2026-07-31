@@ -10,6 +10,19 @@
 
 ## 核心反常识：Agent式搜索 vs RAG
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Claude Code 在大型代码库里找东西的方式与传统的 RAG 系统有本质区别。
 
 Claude Code 的工作方式是遍历文件系统、读文件、grep 搜索、追踪引用——跟真人工程师一样，跑在开发者本地，不需要预先构建索引，不需要把代码库上传到服务器。

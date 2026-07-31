@@ -14,6 +14,19 @@
 
 ## 五层架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ```
 L5: 业务层 (Uplift 模型迭代生命周期)
 L4: 多 Agent 协作层 (8 个 LLM Sub-Agents)

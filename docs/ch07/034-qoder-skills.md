@@ -23,6 +23,22 @@
 - ✅ Claude API（通过 `container.skills` 参数）
 
 ## 三大关键对比
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 | 维度 | Skill | Slash Command | MCP | Rules |
 |------|-------|---------------|-----|-------|
 | 触发方式 | AI 自主判断 + 可主动 `/` 调用 | 用户主动输入 `/xxx` | 工具调用时自动触发 | 始终在上下文中生效 |

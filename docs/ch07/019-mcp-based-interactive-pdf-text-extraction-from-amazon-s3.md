@@ -14,6 +14,19 @@ AWS 推出的基于 Model Context Protocol (MCP) 的交互式 PDF 文本提取�
 
 ## 核心能力
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 实时文本提取
 
 该方案通过 MCP 服务器提供程序化文档访问能力，使 AI 助手能够直接查询存储在 S3 中的 PDF 文件：

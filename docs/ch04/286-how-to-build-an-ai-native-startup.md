@@ -12,6 +12,22 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 ### 一、先画地图：频率胜过重要性
 
 把过去两周公司里重复发生的所有工作列出来——客户通话整理、线索调研、支持工单分类、产品测试、候选人初筛、发票审核、竞品监控。创始人的日历里通常有 20-40 项这样的工作，诚实列下来会发现有 10-15 项已不知不觉变成例行工作。

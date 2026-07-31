@@ -11,6 +11,20 @@
 Agentium 是一个的教学型开源 Agent 框架，用来演示「如何把 Chat 包装成一套可上线的多平面软件系统」。不是生产级框架，但架构分层思路值得借鉴。
 
 ## 三张架构读图尺子
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
 ### 1. 操作系统尺子
 把 Agent 的多轮对话类比成**用户态进程**，关注：
 | 问题 | 对应架构关切 |

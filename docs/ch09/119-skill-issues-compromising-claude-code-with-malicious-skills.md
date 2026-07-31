@@ -11,6 +11,19 @@
 - **影响范围**：任何通过 `npx skills add`、GitHub仓库或 skills.sh 等平台安装未审查 Skill 的用户均受影响
 - **攻击前提**：用户需主动触发恶意 Skill，且 Claude Code 未启用沙箱隔离
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/844-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Skill System Design Three Way Comparison](../ch04/271-skill.html)
 - [Claude Code Skills Mcp Rules Source Analysis](../ch07/006-claude-code-skills-mcp-rules.html)

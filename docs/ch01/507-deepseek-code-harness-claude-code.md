@@ -12,6 +12,24 @@ Claude Code 定义了当前 AI 编程工具的上限，但它不对中国开发�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### DeepSeek 公开招兵买马
 
 2026 年 5 月中下旬，DeepSeek 在官网、小红书、X 三个平台同步放出招聘信息，目标是组建全新的 Harness 团队。官网发布的「Agent Harness 产品经理」和「Agent Harness 研发工程师」职位，开头写着醒目的公式：**Model + Harness = Agent**。团队定义很清楚：把 DeepSeek 的前沿模型能力转化为领先的 Agent 产品，除模型本身以外的所有工作都属于 Harness 范畴。

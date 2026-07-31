@@ -6,6 +6,19 @@
 
 ## 事件概述
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 2026 年 5 月 15 日，网络安全研究员 Guillaume Valadon（GitGuardian 安全研究员）联系 KrebsOnSecurity，反映其公司扫描到 GitHub 上存在一个名为 **"Private-CISA"** 的公开仓库，其中暴露了大量 CISA（网络安全与基础设施安全局）内部敏感凭证。
 
 该仓库由 Nightwing 公司（CISA 签约商）员工创建，包含云密钥、令牌、明文密码、日志以及其他敏感资产。Valadon 多次尝试联系涉事者未果，鉴于暴露信息的敏感性，决定上报。

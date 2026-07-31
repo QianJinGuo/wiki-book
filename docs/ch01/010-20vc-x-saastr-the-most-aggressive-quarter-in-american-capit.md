@@ -14,6 +14,18 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    PROB[问题] --> SOL[解决方案]
+    SOL --> MKT[市场验证]
+    MKT --> GROW[增长飞轮]
+    GROW --> REV[收入]
+    REV -->|"再投入"| SOL
+    classDef s fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class PROB,SOL,MKT,GROW,REV s
+```
+
 ### 超大规模资本支出的结构性逻辑
 本文揭示了当前 AI 时代的资本支出逻辑发生了根本性转变。五大科技公司（Google、Microsoft、Amazon、Meta、Apple）在同一周报告财报，合计季度收入 $540B，2026 年 AI 资本支出 $700B。正常情况下，应该是初创公司激进、巨头防御；但这一次，六家最大市值的公司同时宣布"我们也要押注"。这说明 AI 转型已经进入"必须参与"阶段——不是选择问题，而是生存问题。
 

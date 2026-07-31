@@ -14,6 +14,18 @@
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-system-of-record-to-system-of-intelligence-1.md)
 
 ## 背景：CRM 作为"数据积累护城河"的历史逻辑
+
+```mermaid
+graph LR
+    PROB[问题] --> SOL[解决方案]
+    SOL --> MKT[市场验证]
+    MKT --> GROW[增长飞轮]
+    GROW --> REV[收入]
+    REV -->|"再投入"| SOL
+    classDef s fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class PROB,SOL,MKT,GROW,REV s
+```
+
 过去三十年，企业软件领域有一个普遍规律：谁拥有数据库，谁就拥有最大价值 。
 Salesforce 和 HubSpot 之所以能分别达到约 1400 亿美元和约 90 亿美元的估值，根本原因在于它们控制了核心数据资产 。每一次通话记录、每一个定价先例、每一个联系人、每一个关于交易停滞原因的偶然观察——都被录入系统，而离开这个系统的成本变得极其高昂 。一旦该数据库积累了数年的运营上下文，换系统的高昂成本使得用户成为 a16z 合伙人 Alex Rampell 所描述的"人质而非客户" 。
 Salesforce AppExchange 和 HubSpot Marketplace 上的每一个应用，本质上都在为接入他人数据库的权利支付"租金" 。随后，两家公司像每个时代的 dominant 平台所有者一样，向外扩张：添加营销、服务、分析、商务等功能模块，每个新模块都建立在相同的数据基础上，并进一步推高了离开的决策成本 。

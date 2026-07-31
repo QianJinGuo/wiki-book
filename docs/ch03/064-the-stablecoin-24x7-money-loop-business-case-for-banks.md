@@ -16,6 +16,19 @@ The article documents a "subtle vibe shift" in banks over 2026 Q1-Q2: from loudl
 
 ## 银行业务对比矩阵（Business Trade-off Matrix）
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 | 维度 | Tokenized Deposits | Stablecoins |
 |------|---------------------|-------------|
 | 存在范围 | 仅在银行内 | 任何兼容钱包/平台/国家 |

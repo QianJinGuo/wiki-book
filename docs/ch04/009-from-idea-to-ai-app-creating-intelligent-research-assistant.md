@@ -20,6 +20,22 @@ Strands Agents is an open source framework that directly addresses these develop
 
 ## Why choose Strands Agents: Simplified AI development for AWS environments
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 Strands Agents addresses the core challenges you face when building AI applications through its model-driven approach. Instead of complex hardcoding, it uses LLMs for autonomous reasoning and planning, so you can create agents with only a prompt and tools list while the LLM handles the logic and tool usage.
 
 The framework's flexible architecture supports everything from single agents to multi-agent networks and hierarchical systems, making it suitable for projects of various scale. You can integrate external functions and APIs through the @tool decorator, while the model-agnostic design works with various LLM providers including Amazon Bedrock, Anthropic, and OpenAI.

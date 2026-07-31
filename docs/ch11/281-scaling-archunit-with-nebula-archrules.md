@@ -10,6 +10,19 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 Netflix JVM Ecosystem 团队通过 Nebula ArchRules 插件，将 ArchUnit 架构规则从单仓库 JUnit 测试扩展到跨 5,000+ 仓库的规模化治理。核心创新：规则库与业务代码解耦、通过 ServiceLoader 自动发现、Gradle Module Metadata 实现变体发布。当前已在生产环境运行 358 条规则，检测近 100 万个问题。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scaling-archunit-with-nebula-archrules.md)

@@ -10,6 +10,24 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 Gateway API 是 K8s 官方推出的下一代 Ingress 标准，通过 **GatewayClass / Gateway / HTTPRoute 三层资源模型**实现角色分层、表达力增强与跨控制器可移植。阿里云云原生 API 网关基于开源 Higress 提供 Ingress 与 Gateway API 双模并行、灰度切流与一键回滚能力，**配套兼容主流 Nginx Ingress 注解的迁移工具链**。
 
 ## 核心要点

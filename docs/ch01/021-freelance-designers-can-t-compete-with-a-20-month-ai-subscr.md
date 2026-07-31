@@ -10,6 +10,19 @@
 本文提出了**创意压缩模型（Creative Compression Model）**：自由设计师市场正在发生结构性分裂，商品化设计工作几乎完全被 AI 取代，而战略层设计依然由人类主导。处于两者之间的中间层——以执行为核心、缺乏战略深度的设计师——正在经历市场塌陷，且这一过程比直觉判断更快、更彻底。
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 1. 数据验证：市场收缩是结构性的而非周期性
 多项独立研究交叉验证了设计的商品层正在塌陷：Brookings Institution 研究发现，接触 AI 的自由职业者合同量下降 2%、收入下降 5%；Harvard 和 Imperial College 联合研究追踪 61 个国家 200 万个自由职业职位发布，ChatGPT 发布后 8 个月内图形设计工作减少 17%，写作减少 30%，软件开发减少 21%；Ramp「Payrolls to Prompts」研究显示，2022 年在自由职业平台上有支出的企业超过一半在 2025 年已完全停止使用自由职业者，同期自由职业平台支出占企业预算比例从 0.66% 降至 0.14%，而 AI 模型支出从零增长至 2.85%。
 三组数据的一致性指向一个核心结论：**客户并非不再需要创意工作——他们不再为 AI 已经能处理的那部分工作付钱给自由职业者**。

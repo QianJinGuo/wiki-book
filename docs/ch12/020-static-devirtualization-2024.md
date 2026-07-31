@@ -8,6 +8,24 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 Static Devirtualization（静态去虚拟化）是一种针对基于虚拟机的代码混淆保护器的逆向工程方法论。其核心思想是将虚拟机（VM）保护的原生代码通过符号执行（Symbolic Evaluation）提升（lift）至中间表示（IR），利用通用编译器优化 passes 逐步消除 VM 脚手架，最终恢复出可读的原生代码。该方法在 2024 年已达到成熟实用阶段，可跨 Themida、VMProtect、CodeVirtualizer 等多种基于虚拟机的代码保护器工作，仅需极少的 VM 特定知识。
 
 ## 技术背景

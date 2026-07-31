@@ -21,6 +21,22 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 ### 仓库定位：不是框架，是岗位封装
 
 knowledge-work-plugins 2026 年 1 月底创建，5 个月内拿到近 2 万 Stars，截至 2026-06-09。不是什么 AI 框架，也不是模型——是一堆 Markdown 文件和 JSON 配置。每个插件对应一个企业职能（销售、客服、产品、法务、金融、数据、营销、HR、工程），装了一个插件，Claude 就具备该岗位的日常操作能力，而不只是会写代码。这是「岗位封装」而非「功能增强」的设计取向。

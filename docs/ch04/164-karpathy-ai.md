@@ -14,6 +14,22 @@
 
 ## Karpathy焦虑的本质
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - 「我从未像现在这样，觉得自己作为一个程序员如此落后」
 - 新编程抽象层爆炸：agents/subagents/提示词/上下文/内存/权限/工具/插件/技能/hooks/MCP/LSP/斜杠命令/工作流/IDE集成
 - 「9级大地震」：这座山没有山顶，或者山顶每天都在往上长

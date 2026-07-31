@@ -10,6 +10,22 @@ Airbyte Agents 是 Airbyte 推出的 AI Agent 上下文层（Context Layer），
 
 ## 为什么 Agents 会失败
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 传统观点认为 AI Agent 的瓶颈在模型本身，但作者 Michel Tricot（Airbyte CEO & Co-Founder）指出：**Frontier models 已大幅改进，真正的问题在于喂给模型的数据**。
 
 当前数据架构的三大问题：

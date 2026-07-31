@@ -19,6 +19,16 @@ Gemma 4 是 Google DeepMind 推出的新一代开源权重、原生多模态语�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 - **架构多样性**：包含 5 个版本——E2B（2.3B有效参数）、E4B（4.5B有效）、12B（密集）、26B-A4B（MoE，3.8B激活/26B总参）、31B（密集）。E2B 和 E4B 使用每层嵌入（Per-Layer Embeddings）设计。
 - **思考模式**：所有 IT 模型支持在回答前生成推理轨迹（Reasoning Trace），大幅提升数学和编程领域的表现。AIME 2026 无工具场景下 31B 达 89.2%，较 Gemma 3 27B 的 20.8% 提升超过 4 倍。
 - **无编码器架构**：12B 模型采用全新的统一无编码器范式，以 35M 参数的轻量投影模块替代 550M 视觉编码器，以 640 维向量投影替代 305M 音频编码器，大幅减少内存碎片和推理开销。

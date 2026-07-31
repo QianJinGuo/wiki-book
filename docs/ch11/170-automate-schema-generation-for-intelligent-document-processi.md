@@ -7,6 +7,19 @@
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
 
 ## 摘要
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 Title: Automate schema generation for intelligent document processing | Amazon Web Services
 URL Source: https://aws.amazon.com/blogs/machine-learning/automate-schema-generation-for-intelligent-document-processing/
 Published Time: 2026-05-12T07:54:08-08:00

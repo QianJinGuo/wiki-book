@@ -5,6 +5,22 @@
 > 📊 Level ⭐⭐ | 11.0KB | `entities/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 by awschina on 08 12月 2025 in Case Study Permalink Share 摘要 随着企业级前端开发的复杂度不断提升，设计到代码（Design-to-Code, D2C）工具虽然能够自动生成代码，但往往无法理解和利用企业内部的组件库。本文探讨了如何利用 AWS Kiro IDE、Model Context Protocol (MCP) 和 Skills 构建新一代智能 D2C 平台。核心创新在于通过 Skills 将组件知识封装为可调用工具 ，结合 Steering 策略引导，使 AI 能够自动发现、理解并正确使用企业组件库。我们成功将组件库利用率从接近 0% 提升到 80% 以上，开发时间从数小时缩短到数分钟。 背景 传统 D2C 工具
 
 ## 核心技术

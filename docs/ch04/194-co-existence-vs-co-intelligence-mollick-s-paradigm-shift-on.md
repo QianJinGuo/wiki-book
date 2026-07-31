@@ -29,6 +29,24 @@ Ethan Mollick（沃顿商学院教授、One Useful Thing 作者）2024 年出版
 
 ## 三个独有贡献（不应合并到现有 entity）
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 1. **从「Co-Intelligence」到「Co-Existence」的范式命名** — Mollick 给出了 AI 协作模式跃迁的可引用学术命名，便于后续讨论参考。Co-Intelligence（2024）是 prompt-loop；Co-Existence（2026）是 accept/reject-loop——人类不再是 prompt-engineer 而是 output-curator。
 2. **Anthropic 80% / 8x 一手叙述 + 17x SSRN 论文互证** — 这是 2026-06 出现的**首次由著名 AI 研究者引用的双源基准**，把"AI 写大多数代码"从传闻升级为可引用的工程现实。区别于 [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch05/094-ai.html) 的"自举训练"叙事，Mollick 强调的是**"AI 在生产环境直接生产商品代码"**的工程落地（与 harness/skill 体系互补但维度不同）。
 3. **"AI-as-reader / AI-as-gatekeeper" 问题** — Mollick 提出并亲身实验：随着 AI 越来越多地"读我的内容并决定是否推荐给人类用户"，**作者需要思考如何让 AI 喜欢自己的工作**。他从"隐藏 prompt injection（白底白字指令）"升级到"为 AI 单独写一版内容（co-existence.ai/for-ai）"——这是一个新生的 web 设计模式（"for-ai page"）。

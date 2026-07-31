@@ -8,6 +8,19 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 2026 年 5 月 11 日，知名黑客组织 ShinyHunters 的官方 clearnet 域名 `shinyhunte.rs` 突然离线。事件发生在该组织声称对 Instructure Canvas LMS 平台实施大规模破坏与数据窃取攻击后不久——多家大学受影响，Canvas 门户被替换为 ShinyHunters 的声明信息与赎金威胁。ShinyHunters 在其 Tor onion 服务上发布公告，声称该 `.rs` 域名已被注册局（RNIDS，塞尔维亚国家互联网域名注册局）暂停，且该组织从此将只通过 onion 服务运营。
 
 ## 核心要点

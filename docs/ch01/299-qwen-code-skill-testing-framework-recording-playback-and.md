@@ -9,6 +9,25 @@ qwen-code 代码库管理数百个 Skill，缺少自动化测试机制。PR 提�
 Issue 最初提出 JUnit-like Skill 测试框架，后续讨论扩展为**通用场景回归测试框架**（scenario-based），覆盖 Skill 测试、模型升级验证、CLI 改动验证。
 
 ## 核心架构
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 ```
 录制来源 → LLM+规则分析 → 可编辑 DSL → 人工微调 → 测试执行引擎
                                                          ↓

@@ -20,6 +20,22 @@ Agnes AI 于 2026 年 7 月发布新一代文本模型 Agnes-2.5-Flash，定位�
 
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 ### 免费策略的市场扰动效应
 
 Agnes-2.5-Flash 的"不限期免费"策略并非简单的价格战，而是对当前 AI Coding 市场定价体系的一次结构性冲击。当前市场格局中，Claude Pro 月费 $20、GitHub Copilot $10-39/月、Cursor Pro $20/月——主流工具的年使用成本在 $120-480 区间。Agnes 将同等甚至更优的 Coding 能力以零边际成本提供，迫使竞争对手重新审视定价策略。

@@ -48,6 +48,24 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 1. **从工具选择到任务匹配：coding agent 最适合「结构化知识生产」任务。** 如果你的任务有明确的输出格式、可拆分的子步骤、以及对引用/溯源的要求，Claude Code 等 coding agent 即使不是为学术写作设计的，也能胜任。选择 AI 工具时，不应只看「这个工具本来的用途」，而应看「这个工具的核心能力是否匹配我的任务结构」。对于需要开放创造力的任务（如提出新的理论框架、设计实验方案），coding agent 的价值有限；但对于需要结构化输出的知识组织工作，它可能是最优解。
 
 2. **Modular Composition 是长文档生成的关键模式。** 45 页综述不是一次性生成的，而是通过将文档拆分为独立子模块、逐个生成、再组合拼接的方式完成的。对于任何涉及长篇幅输出的 AI 工作流，都应采用「按模块生成 → 逐模块审查 → 汇总组合」的模式，而非试图一次输出全部内容。这种模式既提高了输出质量（每个模块可独立迭代优化），也使得人的审查和干预可以在模块级别进行——这是任何追求出版级质量的 AI 写作项目不可跳过的工程选择。

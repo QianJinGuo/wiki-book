@@ -5,6 +5,24 @@
 > 📊 Level ⭐⭐ | 11.6KB | `entities/openclaw-service-enterprise-share-system-design.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 当 OpenClaw 学会”团队记忆”：一个面向多客户服务的企业级共享记忆系统设计 by awschina on 17 4月 2026 in Artificial Intelligence Permalink Share 摘要：本文围绕 AI Agent 在多客户、多 Agent 协作场景下的”记忆困境”，介绍基于 Amazon AgentCore Memory 的 OpenClaw 企业级共享记忆插件 memory-agentcore，逐一拆解记忆系统的五个核心问题：记什么（Amazon AgentCore 4 策略自动提取 + 本地三层噪音预过滤）、怎么存（Event → Memory Record 的全托管数据路径）、怎么找（auto-recall 自动召回 + 肘点算法分数间隙过滤）、谁能看（层级命名空间 + actorId 驱动的最小权限隔离）、怎么管（8 个 Agent 工具
 
 ## 核心技术

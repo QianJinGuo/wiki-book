@@ -14,6 +14,24 @@
 > "如何在一个确定性要求极高的复杂企业架构中，有效驯服 Agent 固有的'幻觉'与'遗忘'，让概率性的智能稳定地跑在确定性的生产系统之上？"
 
 ## 一、底层支撑：多云共生的确定性架构
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 易点天下核心业务覆盖全球 230+ 国家和地区，底层 **Cycor 平台**采用 Multi-cloud 战略：
 
 - 无缝接入 AWS、GCP、阿里云、腾讯云、华为云

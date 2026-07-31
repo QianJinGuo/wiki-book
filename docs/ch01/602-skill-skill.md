@@ -16,6 +16,24 @@ SkillOpt 将深度学习的训练范式映射到文本空间：Skill 文档是�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### Skill 的现状问题
 
 Claude Code 的 CLAUDE.md、Codex 的 Agents.md、各种 Skill 文档——它们的共性是一段纯文本指令，告诉 Agent 遇到什么情况该怎么做。问题在于：**你怎么知道自己写的那几条规则就是最好的？** 凭经验写的规则可能漏了关键条目，写得不够精准，且你无法穷举所有可能的写法。

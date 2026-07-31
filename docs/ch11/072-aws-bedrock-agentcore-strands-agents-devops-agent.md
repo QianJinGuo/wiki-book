@@ -10,6 +10,22 @@
 
 ## 核心叙事
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 某客户接入多账户巡检后，系统识别出**超万美元/月**的 ElastiCache 缩容空间，最终处置约 50%。方案设计目标是"系统识别 + 人工决策"的协作模式，AI Agent 转化为日常自动化能力。
 
 **问题域**：

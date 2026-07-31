@@ -9,6 +9,21 @@
 与"时间有界熵"（time-bounded entropy）相对：loss 不再下降后的残余 = 不可预测的随机噪声。
 
 ## 理论背景
+
+```mermaid
+graph LR
+    T[文本] --> ENC[多模态编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合层]
+    FUS --> DEC[解码器]
+    DEC --> OUT[输出]
+    classDef in fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class T,I,A in
+    class ENC,FUS,DEC,OUT core
+```
+
 Shannon 1948 年信息论隐含假设：**观察者有无限算力**。这个假设在通信领域完全无害，但对 LLM 时代的核心问题"给定数据能学到多少"而言，"谁在学"变得至关重要。
 2026年1月，CMU/NYU 六位研究者（Finzi, Qiu, Jiang, Izmailov, Wilson, Kolter）在 arXiv:2601.03220 中正式提出 epiplexity 框架，补上了这个 78 年的缺口。
 

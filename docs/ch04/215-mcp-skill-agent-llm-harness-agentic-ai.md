@@ -24,6 +24,24 @@ External → MCP → Skill → Agent → Memory → LLM
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 核心架构（三层结构）
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 ### 1. 能力执行主链
 Agent → LLM → Skill → MCP → External World
 逐层下沉：Agent（任务编排）→ LLM（认知推理）→ Skill（能力封装）→ MCP（连接协议）→ External（真实世界）

@@ -14,6 +14,25 @@ Ethan Mollick（One Useful Thing / Wharton Generative AI Lab）每几个月更�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 - **三选一原则**：对大多数人来说，Claude、Gemini、ChatGPT 任选其一都不会错，关键是开始用；$20/月订阅是认真使用的前提。
 - **模型分级 = 跑车 vs 皮卡**：fast 模型（Claude Sonnet / GPT-4o / Gemini Flash）用于闲聊，powerful 模型（Claude Opus / o3 / Gemini Pro）用于严肃工作，ultra-powerful（o3-pro）用于最难问题，可思考 20+ 分钟。
 - **Deep Research 是被低估的杀手锏**：能产出"让律师、会计、咨询师印象深刻"的高质量报告，连法律/医学领域都开始用作 second opinion。

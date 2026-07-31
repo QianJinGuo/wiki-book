@@ -14,6 +14,24 @@ DeepSeek 值得看的地方，已经越过模型便宜本身，落到了"模型�
 
 ## 技术主线：成本如何从模型侧搬到系统层
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 ### V2→V4 效率演进
 - **V2 论文**：MLA（低秩潜在表示压缩 KV Cache）+ DeepSeekMoE（稀疏计算）
   - 相比 DeepSeek 67B：训练成本↓42.5%，KV Cache↓93.3%，生成吞吐↑5.76倍

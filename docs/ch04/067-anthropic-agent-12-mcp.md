@@ -72,6 +72,22 @@ Anthropic 官方最近那篇关于 MCP 的文章《  Building agents that reach 
 大多数团队在 L1-L2。有一些在 L3。L4-L5 是生产级 Agent 的真正门槛。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 从这 12 个模式里可以提炼出的工程原则
 **原则一：先设计工具面，再写 Server**
 不要从「这个系统有哪些 API」出发，而要从「Agent 要完成哪些任务」出发。工具名称、参数结构、返回结果都要围绕 Agent 体验重新组织。这需要产品思维，不是代理思维。

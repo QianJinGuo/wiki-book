@@ -18,6 +18,19 @@ Markdown Content:
 
 ## Google Open-Sources a Knowledge Format and Wires It Into Its Catalog
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Google's Open Knowledge Format makes AI-agent knowledge a free, vendor-neutral markdown standard. The same day it shipped, Google wired the format into the Knowledge Catalog it charges to run, and the spec leaves the paid serving layer out of scope. Openness, it turns out, is the strategy.
 
 [![Image 1: Marcus Schuler](https://www.implicator.ai/content/images/2025/12/marcus_schuler_impli.jpg)](https://www.implicator.ai/author/marcus-schuler/)

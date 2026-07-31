@@ -12,6 +12,19 @@ Open Code Review 是阿里集团内部孵化并开源的 AI 驱动代码评审 C
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 1. **确定性工程 × Agent 混合驱动**：核心设计理念，将评审流程中确定性环节与 Agent 动态决策区分离
 2. **三大核心痛点**：覆盖不全（Agent 选择性评审）、位置漂移（行号不准确）、效果不稳定（prompt 敏感性）
 3. **生产级验证**：内部月活 2 万用户、累计 370 万次评审、用户采纳率超 30%、有效 AI 评论占比近 80%

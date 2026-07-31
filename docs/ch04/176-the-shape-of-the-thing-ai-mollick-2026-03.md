@@ -22,6 +22,24 @@ Mollick 用多个 diverse benchmarks 证明 AI 能力呈指数上升：
 
 ## StrongDM Software Factory 案例
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 三人团队构建了**完全不需要人类写代码或 review** 的软件工厂：
 
 **规则**：

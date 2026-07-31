@@ -19,6 +19,24 @@ OpenClaw 在 pi-mono（嵌入式 Agent 引擎）之上构建三层：
 
 ## Agent 执行引擎
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 **双入口同流程**：CLI 和 Gateway/API 走同一条执行路径。runWithModelFallback 提供多 Auth Profile 轮换。
 
 **ReAct 循环**（pi-embedded-runner/run.ts）：Reasoning → Acting → Observation。MAX_RUN_LOOP_ITERATIONS 根据可用 Auth Profile 数量动态缩放（更多 Key = 更大重试空间）。

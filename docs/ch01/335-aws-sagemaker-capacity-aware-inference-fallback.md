@@ -13,6 +13,22 @@
 ### 3. Multi-instance并发控制
 单个推理请求可能需要多个实例（模型并行），capacity-aware机制需要跟踪全局实例占用状态，避免oversubscription。
 ## 与知识库的连接
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 - → [SQS异步管道](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-serverless-async-inference-sqs-lambda.md)：同样是高并发推理场景，但侧重点不同（管道式队列 vs 实例池调度）
 ---
 ## 深度分析

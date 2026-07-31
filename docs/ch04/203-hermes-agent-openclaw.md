@@ -12,6 +12,24 @@ OpenClaw（开源龙虾）GitHub 上 37 万星，坐稳第一把交椅。Hermes 
 
 ## 名字先赢一半：爱马仕 vs 龙虾
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 OpenClaw，直译是"开源爪子"，社区给它起了个外号叫"龙虾"。Hermes 呢？希腊神话里的信使之神，同时也是奢侈品牌爱马仕的同名。中文社区直接叫它"爱马仕"。
 
 名字带来的心理锚定是真实的：**龙虾听起来像是个开源极客项目——实用、接地气、但不会有"高级感"；爱马仕天然带着"精致、高端、品质"的标签**。这个命名策略让 Hermes 在中文社区自带品牌溢价，降低了向他人解释"我用什么 Agent"的社交成本。

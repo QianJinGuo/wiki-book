@@ -10,6 +10,24 @@ ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive 
 
 ## 深度分析
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 **真实 LLM 的形式化 = 三元组 (T, D, C)**。论文把"真实模型"严格定义为三个组件：T = 上下文窗口/权重/数值精度都不变的固定预训练 Transformer；D = 固定解码规则（贪心 / top-p / 温度）；**C = 上下文管理器**（负责决定每一步把哪些 token 放窗口、旧信息怎么处理）。C 平时藏在推理框架里，可能是 `/compact` / `/compress` 命令，也可能是检索记忆等机制——**都是不同形式的 Harness**。这一抽象把"模型能力"从单一权重视角扩展为**系统视角**。
 
 **T 不变只换 C，系统能力跨 3 个复杂度层级**。论文证明 5 种上下文管理模式对应 5 种能力层级：(1) **摘要式 (C₁) → 常数空间 TM，至多识别正则语言 (REG)**，无法判断长字符串相等、无法识别回文、无法二进制加法；(2) **追加式滑动 (C₂) → 等价线性空间 TM，能识别确定型上下文相关语言 (DCSL)**；(3) **外部存储 (C₃) → 图灵完备** (Schuurmans 2023)；(4) **工具调用 (C₄) → 图灵完备**（如执行任意 Python）；(5) **多 token 解码 + 追加 (C₅) → K=1 等价线性空间 TM，K≥2 图灵完备** (Schuurmans 2024)。**关键洞察**："真正改变系统能力的未必是 Transformer 权重本身，也可能是'每步能生成几个 token'这样的解码接口"——这为多 token 解码、并行解码等"非标准"推理模式提供了理论合法性。

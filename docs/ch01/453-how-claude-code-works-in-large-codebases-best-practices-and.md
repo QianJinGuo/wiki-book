@@ -8,6 +8,24 @@
 - 评分：v=7 × c=8 = 56
 - The article is a well-structured, informative piece on deploying Claude Code at scale. It provides practical patterns, clear explanations of technical concepts (harness, extension points, LSP integrat
 ## 相关实体
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 - [How_Claude_Code_Works_In_Large_Codebases](ch01/976-claude.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)
 - [Code Review Graph](ch01/833-code-review-graph-claude-code-6-8-token.html)

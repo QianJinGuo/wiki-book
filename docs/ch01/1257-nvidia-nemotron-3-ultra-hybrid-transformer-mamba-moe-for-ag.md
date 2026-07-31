@@ -23,6 +23,24 @@
 
 ## 架构创新：Hybrid Transformer-Mamba MoE
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 **Transformer-Mamba 混合** 不同于纯 Transformer 或纯 Mamba：
 
 - **Transformer 注意力层**：处理需要全局依赖建模的部分（如 plan 步骤间的逻辑关系）

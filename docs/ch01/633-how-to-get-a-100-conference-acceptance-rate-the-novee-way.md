@@ -17,6 +17,19 @@ _A walkthrough of how Novee finds the type of chained exploit that SAST and DAST
 
 ## What you need to know
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 *   The Novee Security research team disclosed a high-severity stored XSS – leading to **account takeover** – in **pretalx,** the open-source conference management platform used by a long list of technical events to run their CFPs and schedules.
 *   Any registered user could plant HTML or JavaScript in the organizer-side search result dropdown, and have it execute in an organizer’s browser when the organizer’s typeahead query matched the record.
 *   The moment a program chair typed a query that matched a malicious record, the payload executed in the organizer’s browser with the ability to call authenticated endpoints on the organizer’s behalf – including **the endpoint that accepts a submission and account takeover.**

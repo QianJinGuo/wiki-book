@@ -14,6 +14,22 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - **NL2DSL2SQL 路线**：自然语言 → 标准化的指标-维度语义（DSL）→ SQL。语义层解决自然语言中缺少关键信息的问题，是准确度的核心保障。
 - **7 Agent 多 Agent 工作流**：顺序协作 + 反馈循环组合。Agent 设计包括老架（需求分析）→ 小需（SPEC）→ 老架审核 → 小语（资产盘点）→ 老架（技术方案）→ ... 关键节点设人工 Gate 审批，「AI 做执行，人做决策」。
 - **三层知识架构**：方法论层（Spec/Plan/Task）→ 协作机制（文档状态机 + 人工校验飞轮）→ 执行原则（经验初始化，持续优化）。核心原则是「文档即接口」，研发即沉淀。

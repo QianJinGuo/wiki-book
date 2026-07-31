@@ -8,6 +8,22 @@
 
 ## 概览
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 Amazon Bedrock 重新设计的控制台——**针对 OpenAI / Anthropic 兼容 API 优化**的新工作流，包括模型目录、并排比较、基于项目的组织、预填代码片段的项目感知文档。这是 AWS 在 2026 年 Q2 推进 Bedrock 平台化的核心 UI 升级。
 
 ## 五大新能力

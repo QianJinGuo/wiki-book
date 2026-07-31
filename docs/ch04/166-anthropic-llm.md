@@ -15,6 +15,24 @@ Anthropic + MIT 联合研究，首次从机械可解释性角度系统揭示 LLM
 **核心机制**：Gate 特征默认推动"No"回答，被 Evidence Carrier 抑制；两者组成两阶段因果回路，实现对注入扰动的检测。
 
 ## 关键数据
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 | 指标 | 数值 |
 |------|------|
 | 研究机构 | Anthropic + MIT |

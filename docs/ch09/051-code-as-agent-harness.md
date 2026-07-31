@@ -13,6 +13,22 @@
 | **Scaling Harness** | 多智能体围绕共享代码协作 |
 
 ## 关键洞察
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 代码作为 Harness 的三个自然属性
 1. **可执行**：能跑起来，能产生结果
 2. **可检查**：中间状态、错误、日志、diff、trace 都能被读取

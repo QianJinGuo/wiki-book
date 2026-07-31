@@ -8,6 +8,24 @@
 Agent Memory 不是"把聊天记录存起来"，而是一个完整的 **write–manage–read 闭环**，决定什么信息被允许持续影响未来决策。核心问题不是容量，而是**治理**——谁被允许持续影响未来。
 
 ## 核心命题
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 **Context window 扩展解决的是带宽问题，不是建模问题。** benchmark 已证实：拉到 35 session、300 turn 的尺度，长上下文和 RAG 在时间推理、长程一致性上仍明显落后于人类。Memory 正在从附加功能变成 Agent 架构的核心子系统。
 
 ## 边界划定

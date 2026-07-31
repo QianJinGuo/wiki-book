@@ -13,6 +13,22 @@
 
 ## 技术细节
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 ### Agentic Workflow 架构
 
 传统 DocuSign 集成依赖人工触发的信封创建和签名流程。Agentic approach 允许 AI Agent 自主驱动完整生命周期：

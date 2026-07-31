@@ -14,6 +14,24 @@ NVIDIA 与 Hugging Face 联合发布 Nemotron 3.5 Content Safety 模型——一
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 - **可定制策略**：企业可根据本地法规、行业标准、品牌调性定制安全规则——这是与传统"一刀切"内容安全方案的关键差异。
 - **多语言覆盖**：面向全球市场的内容安全检测，不再局限于英语圈。
 - **推理轨迹（Reasoning Traces）**：模型不仅给出分类结果，还输出决策链条——这是企业级审计与合规留痕的关键能力。

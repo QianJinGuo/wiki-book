@@ -25,6 +25,22 @@
 
 ## 议题一：基于 HiClaw 实现企业级多 Agent 协作 & Harness 工程最佳实践
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 **分享人**：王泉力，HiClaw Maintainer，阿里云智能产品解决方案架构师
 
 ### HiClaw 核心架构

@@ -10,6 +10,22 @@
 <p>AI agents that automate web workflows operate within the browser’s web layer, the DOM that Playwright and the Chrome DevTools Protocol (CDP) expose. AgentCore Browser provides a secure, isolated browser environment for this, and it works well for the vast majority of automation: navigating pages,...
 
 ## 深度分析
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 OS Level Actions 的发布标志着**浏览器自动化能力的最后一次关键补全**。在 AgentCore Browser 之前，浏览器自动化经历了三个阶段：DOM 操作（Playwright/CDP）→ 视觉理解（Vision Model）→ OS 层交互（现在）。
 **核心突破**：原生操作系统 UI（对话框、安全提示、证书选择器、右键菜单）是 DOM 层无法触及的"盲区"。OS Level Actions 通过 `InvokeBrowser` API 将控制力延伸到这个盲区，形成了**完整的 Action-Screenshot-Reaction 闭环**。
 **架构设计的关键选择**：

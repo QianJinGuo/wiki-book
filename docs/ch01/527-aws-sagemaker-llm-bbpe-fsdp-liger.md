@@ -14,6 +14,24 @@
 阿塞拜疆语形态丰富，单词通过后缀编码语法含义，标准英语优化分词器将其拆解为多个子词碎片。BBPE（Byte-Level Byte-Pair Encoding）从原始字节而非预定义字符集开始迭代合并最频繁字节对，完全覆盖阿塞拜疆语特殊字符。实验了 50k-100k 词汇量，100k 最终选中。评估指标采用 BPB（Bits-Per-Byte）而非 perplexity，因 BPB 以字节级归一化消除词汇差异影响：自定义 tokenizer BPB 0.5795 vs baseline 0.6830，证明效率提升未牺牲建模质量。
 
 ## 阶段二：FSDP + Liger 的 CPT 分布式训练
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 继续预训练（CPT）阶段主要瓶颈是 GPU 显存：DDP 在 ml.p4d.24xlarge 每 GPU 最高 batch_size=2，FSDP 将参数/梯度/优化器状态分片后降至每 GPU 1.17 GB 模型状态（从 9.23 GB），batch_size 可提升至 14。Liger Kernels 是 LinkedIn 开源的 Triton 实现融合核，将多层 fused 成单次 GPU kernel 发射，进一步减少中间显存分配，ml.p5.48xlarge 上峰值显存从 64GB 降至 27GB（-58%），每 GPU 吞吐量从 63,771 升至 78,319 tokens/s（+23%）。
 
 ## 两阶段 CPT 配置

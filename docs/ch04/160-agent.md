@@ -9,6 +9,24 @@
 **核心洞察：** 上下文不再只是 transcript 里刚好能放下的内容。它变成了系统必须主动管理的对象。最佳设计应让模型自主管理上下文预算，类似于内存管理系统对程序不可见的分层管理。
 
 ## 文件读取策略对比
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 | 框架 | 截断策略 | 上限 | 特色 |
 |------|---------|------|------|
 | Pi | 头部截断 + 继续提示 | 2,000行 / 50KB | harness 优先，主动保护+教模型分页 |

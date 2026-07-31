@@ -12,6 +12,20 @@ OMEGA（Orchestration system for Multiple Embodied Generalist Agents）是一套
 
 ## 核心要点
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 - **协作系统而非动作模型**：OMEGA 不是再做一个机器人动作模型，而是为多机器人团队提供一层可执行的协作系统，解决"多台机器人的动作如何组成一次协作"的问题，而非"一台机器人的感知如何变成一次动作"。
 - **Harness 架构类比**：与 Claude Code/Codex 等 coding agent 的协作模式类似——主 agent 将任务拆成子任务分给 subagent，OMEGA 将类似的系统能力带到机器人协作中，把工程师脑中的调度经验变成系统中可执行的流程。
 - **三层分工**：Skills（每个 worker 能做什么）、A2A（orchestrator 与 worker 之间的任务派发与状态同步）、MCP（worker 内部连接机器人 runtime）。这种分层让 orchestrator 不需要知道每台机器人的内部实现。

@@ -20,6 +20,24 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 ### MCIT 领域的两大隐性壁垒
 
 多模态持续指令微调（MCIT）旨在使 MLLM 能够按序学习新任务而不遗忘旧能力（避免灾难性遗忘），是连接大模型能力与现实部署需求的核心技术。然而，该领域长期受制于两道隐性壁垒：

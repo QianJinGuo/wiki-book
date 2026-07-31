@@ -12,6 +12,19 @@ AWS blog post (2026-07-22) by Claudio Mazzoni, Ofek Dayan, Netanel Abergel, Mora
 
 ## Three Levels of AI Engineering
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **L1 (Assistant)** — Engineers use AI as pair programmers: Cursor for fast reflexive work, Claude Code for heavy lifts; adoption nearly doubled YoY
 - **L2 (Skills & Sub-agents)** — Teams build reusable agents for repeated work; engineers remain in the driver's seat; per-developer PR throughput stepped up by more than half
 - **L3 (Multi-agent)** — Fully agentic; agents own delivery end-to-end while engineers orchestrate; agents take tasks from boards, communicate in Slack and monday, ship code alongside humans

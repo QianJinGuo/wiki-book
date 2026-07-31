@@ -120,6 +120,19 @@ TIR-Judge-Zero、OpenRS 等已有 agentic judge路线，但 Skill-RM 的差异�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 1. **RL管线已有 reference/verifier 的——封装成 Skill 接口，别直接 append 进 prompt**：消融数据已证明 append 模式平均掉 2.9 分；编排才是提升来源，不是资源数量
 
 2. **Best-of-N 重排优先接入 IFEval/HumanEval 收益明确的场景**：Oracle@10 在 GSM8K 类饱和任务上收益极小，在 IF 场景收益最明确——先算 ROI 再上线

@@ -22,6 +22,21 @@ PRA 通过系统实验分析了制约 pixel-space AR 生成效果的瓶颈并提
 
 ## 技术背景：Pixel-Space AR 的困境
 
+```mermaid
+graph LR
+    T[文本] --> ENC[多模态编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合层]
+    FUS --> DEC[解码器]
+    DEC --> OUT[输出]
+    classDef in fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class T,I,A in
+    class ENC,FUS,DEC,OUT core
+```
+
+
 Pixel-space AR 将图像视为 pixel patch 序列，以自回归方式逐个生成。与 latent-space AR（如 VAR、LlamaGen）不同，它不依赖外部 VAE/VQ-VAE tokenizer，而是直接在原始像素空间建模。这种方法更"纯粹"——绕过额外的编码-量化-解码流程，减少了信息损失和系统复杂性。然而，在 PRA 提出之前，pixel-space AR 的生成质量始终远低于 diffusion 模型和 latent-space AR。
 
 作者通过实验诊断揭示了两个核心困难：

@@ -5,6 +5,19 @@
 > 📊 Level ⭐⭐ | 10.9KB | `entities/13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 - Nightmare-Eclipse（又名 Chaotic Eclipse）继 BlueHammer、RedSun、UnDefend 之后，2026 年 5 月 13 日再次发布两个 Microsoft 零日漏洞：YellowKey 和 GreenPlasma
 - YellowKey：BitLocker 绕过攻击，物理接触条件下可通过 USB 设备获取 BitLocker 保护机器的无限制 shell 访问
 - GreenPlasma：权限提升漏洞，提供 SYSTEM 级别访问，已发布部分利用代码

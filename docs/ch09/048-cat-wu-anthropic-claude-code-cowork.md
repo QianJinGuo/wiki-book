@@ -119,6 +119,19 @@ Cat 常用策略：问模型"你为什么这么做？"
 6. 接受发布有 Bug 的功能，快速获取反馈迭代
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 流程作为竞争优势
 Anthropic 的高发布速度并非源于 Mythos 模型的神秘力量，而是源于**流程精简**——移除一切发布障碍，让每个团队成员能在一天内把想法变成生产就绪的产品。这意味着他们建立了**信任架构**：相信员工会做正确的事，同时建立防护栏防止灾难。这种文化允许快速实验和快速失败。
 

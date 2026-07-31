@@ -10,6 +10,18 @@ TMIC AI小新从定制化workflow演进到DeepAgent模式，核心转变是：**
 
 ## 产品背景
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 AI小新是TMIC平台的核心AI问答产品，通过问答方式让商家利用平台数据快速进行数据洞察，降低使用门槛。
 
 **复杂问题示例**：

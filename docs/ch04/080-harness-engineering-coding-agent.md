@@ -31,6 +31,19 @@
 - [Design Patterns for AI Agents 2026](ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 
 ## 核心定义
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 Harness Engineering 是针对 AI Coding Agent 在大规模、长周期任务中的可靠性工程化实践。Harness（缰绳）的隐喻表明：模型能力本身已足够强大，关键在于提供一个稳定、可控的框架，使其在安全边界内被稳定地引导和复用。
 长程任务的三个共同特征：
 

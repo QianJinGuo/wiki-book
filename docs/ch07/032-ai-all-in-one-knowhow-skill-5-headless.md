@@ -16,6 +16,22 @@
 
 ## 行业背景：AI 工具的「摩尔定律」
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 2025 到 2026 年，**AI 工具的供给密度提升，正以远超摩尔定律晶体管密度提升的速度一路狂奔**。
 
 电商运营的典型一天：独立站 + 淘宝 + 亚马逊 + 京东 + 拼多多 + 推特 + 小红书 + 抖音 + TikTok → 数据来回下载导出 → ChatGPT 写文案 → Midjourney 出图 → Claude 读表格 → Jasper 写 Listing → Helium10 查关键词。

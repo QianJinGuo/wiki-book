@@ -5,6 +5,24 @@
 > 📊 Level ⭐⭐ | 7.6KB | `entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" by awschina on 04 3月 2026 in Case Study Permalink Share 摘要：AI Agent 的记忆管理面临"全记则爆、简删则丢"的困境。Amazon Bedrock AgentCore Memory 通过双层架构（短期事件 + 长期记忆）与 Intelligent Consolidation 机制，实现智能记忆、语义去重和冲突更新。本文解析其四种内置策略（Semantic、User Preference、Summary、Episodic）的工作原理，并通过实战场景验证记忆的智能合并能力。 目录 01 一、引言 02 二、双层架构：素材与知识的分离 03 三、长期记忆内置策略体系 04 四、实战：三个场景验证记忆智能 05 五、进阶能力
 
 ## 核心技术

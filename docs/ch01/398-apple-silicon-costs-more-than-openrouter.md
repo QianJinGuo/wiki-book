@@ -38,6 +38,16 @@ OpenRouter 上 Gemma 4 31b 的价格约为 $0.38~$0.50/百万 token，这意味�
 
 ## 为什么本地推理仍然有吸引力
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 尽管数字不划算，作者指出了本地部署的不可替代价值 ：
 
 - **隐私合规**：数据不离本地，适合处理敏感信息

@@ -5,6 +5,24 @@
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/agentscope-java-harness-framework.md`
 
 ## 核心定位
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 个人助手型 Agent 和企业级 Agent 是两种不同的工程形态。AgentScope Java Harness 的设计目标：**同一套逻辑，按需切换部署形态**（单机 → 多副本 → 隔离沙箱）。
 
 ## 两大核心支柱

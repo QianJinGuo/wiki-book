@@ -82,6 +82,22 @@ They go over the evals and keep saying ‘Mythos is better.’ Again, reasonably
 I don’t love that they used this as a reason to skip a bunch
 
 ## 相关实体
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 - [Claude Opus 47](ch01/976-claude.html)
 - [Claude 4 5 Sonnet Opus Release Notes](ch01/234-claude-4-5-sonnet-opus-release-notes.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/078-claude-code.html)

@@ -9,6 +9,24 @@ API 缓存从请求开头到每个 `cache_control` 断点之间的所有内容�
 Claude Code 是长对话 Agent，用户在一个 session 里聊几十轮，每轮都带完整上下文重新发请求。没有缓存，延迟和成本都会爆炸。
 
 ## 9条工程经验
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### 1. 缓存即基建
 Anthropic 内部把 Prompt Cache 命中率当作 `uptime` 级别的指标监控，一旦下降就触发 oncall 告警，工程师得像处理线上事故一样排查。
 

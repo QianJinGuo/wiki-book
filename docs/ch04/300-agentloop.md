@@ -20,6 +20,24 @@ AgentLoop 是阿里云面向企业级智能体推出的一站式自进化平台�
 
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### Agent 优化面临的三大核心挑战
 
 AgentLoop 的产品设计源于对 Agent 优化三个层次挑战的深刻理解：

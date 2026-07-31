@@ -13,6 +13,22 @@
 
 ## 背景
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 本文报道 2026 年 OpenAI 内部权力斗争公开化的关键庭审过程，涉及 Musk 对 OpenAI 改组的诉讼以及公司内部高管矛盾的公开化。来源为新智元（量子位公众号），属于科技媒体对公开庭审事件的报道性文章。
 
 ## 相关实体

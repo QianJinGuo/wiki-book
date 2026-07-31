@@ -20,6 +20,25 @@ API 会缓存从请求开头到每个 `cache_control` 断点之间的所有内�
 而所有经验中最重要的一条，也就从这个原理生长出来。
 
 ## 02 排好队形
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 既然缓存靠前缀匹配，那 prompt 里内容的排列顺序就至关重要了。
 Anthropic 给出的最佳实践是这样排的：
 1. **静态系统 prompt 和工具定义**（全局缓存，所有 session 共享）

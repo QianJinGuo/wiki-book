@@ -15,6 +15,24 @@
 - [微信读书官方skill与huashu-weread增强版](../ch04/271-skill.html)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### 1. 核心矛盾：两个工具的原生设计目标不同
 Claude Code 和 Obsidian 虽然都以 Markdown 为核心载体，但它们的**设计正交性**导致了集成摩擦。Claude Code 是**执行代理**，擅长生成、修改、搜索文件；Obsidian 是**知识库**，擅长链接、检索、结构化沉淀。当两者简单叠加时，Claude Code 生成的大量临时产物（plans、session logs、hooks）会污染 Vault 的知识纯净度。
 这本质上不是一个技术问题，而是**工作流边界**的问题。社区的五种策略，其实都在尝试划定"Claude Code 的输出该往哪放"的边界。

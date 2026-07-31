@@ -12,6 +12,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **Loop Engineering 定义**：以「任务执行—结果评估—状态更新—再次执行」闭环驱动 Agent 持续自治运行的工程范式
 - **行业背书**：Boris Cherny、Peter Steinberger、黄仁勋、吴恩达等核心人物在 2026 年 6 月集中发声
 - **与 Harness Engineering 的关键差异**：Harness 聚焦「构建完整 Agent 系统」，Loop 聚焦「系统在执行中通过反馈持续修正策略」

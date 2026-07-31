@@ -52,6 +52,24 @@ Hy3 preview可以视为混元快速探索实用性大模型、解决真实世界
 **性价比战争开启**：TokenHub 上输入价格最低 1.2 元/百万 tokens、输出 4 元/百万 tokens 的定价，结合 28 元/月的个人版套餐，将大模型使用成本推向新低。这种"智能密度最优"策略，将推动行业进入以性价比为核心竞争维度的阶段。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### 对 AI 开发团队的启示
 1. **智能体能力是核心竞争力**：Hy3 preview 在 SWE-Bench、Terminal-Bench、ClawEval 等智能体基准上的表现说明，Agent 能力正在成为评估大模型实用价值的关键维度。开发团队应将智能体能力纳入模型选型的核心指标。
 2. **强化学习规模化是提升路径**：腾讯混元的实践经验表明，强化学习任务规模的系统性提升，是驱动智能体能力突破的有效路径。这为模型优化提供了明确的技术方向。

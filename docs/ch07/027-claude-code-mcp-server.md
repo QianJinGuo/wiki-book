@@ -9,6 +9,22 @@
 MCP 在 Claude Code 中占据两个 API 位置：`tools[]` 注册工具 + `system` 动态区域注入 Server 级 instructions。这是 Claude Code 四个被分析框架（Codex、OpenCode、Gemini-CLI）中**唯一对 MCP 有完整原生实现**的。
 
 ## MCP 实现机制
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 配置与连接
 MCP 服务器定义在 `~/.claude.json`（user scope）或项目根目录的 `.mcp.json`（project scope）中。连接建立后，Claude Code 通过 MCP SDK 与 Server 完成 `initialize` 握手，获取工具列表和 Server 返回的 **instructions 字段**。
 

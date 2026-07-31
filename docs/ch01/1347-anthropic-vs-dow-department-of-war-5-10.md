@@ -19,6 +19,25 @@ Lambert 与 Ball 在多个关键观点上一致：
 
 ## 核心论点：开源是 5-10 年稳定均衡
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 Lambert 指出：
 
 > "If AI is the most powerful technology, why would any global entity let a single U.S. company (or government) control their relationship to it?"

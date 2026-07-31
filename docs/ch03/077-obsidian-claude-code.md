@@ -16,6 +16,19 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **核心痛点**：Claude Code 配置在 5+ 个位置之间分散，跨仓库无法统一搜索；Obsidian 直接打开代码仓库时被非 Markdown 文件淹没
 - **策略 1（独立 Vault + 符号链接）**：建一个 `~/Developer-Vault`，用 `ln -s` 把关心的内容拉进来，配合 `userIgnoreFilters` 过滤代码噪音
 - **策略 2（Vault = Claude Code 工作目录）**：把 Obsidian Vault 当作 Claude Code 的工作目录，根目录 `CLAUDE.md` 既是 Claude 指令也是 Obsidian 笔记

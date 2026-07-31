@@ -12,6 +12,19 @@
 Subagent 的本质不是"多一个 Agent 帮忙"，而是把**必须发生但留在主窗口就是污染的探索过程**，隔离到独立工作区，主窗口只拿回结果。
 
 ## 三层价值
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 1. **隔离**：子代理在自己的上下文窗口里读20个文件、跑30次搜索，主会话完全不看见过程，只接收结论
 2. **压缩**：50次工具调用的过程被压成3行结论，噪音被自然丢弃
 3. **并行**：几条调查路径互不依赖时可以并行跑

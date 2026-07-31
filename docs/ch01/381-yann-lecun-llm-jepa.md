@@ -14,6 +14,25 @@ Yann LeCun（杨立昆）2026 年关于 LLM 本质局限性的核心论述：LLM
 
 ## 核心要点
 
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    subgraph "学习"
+        RL[强化学习]
+        SIM[仿真训练]
+    end
+    DEC --> RL
+    RL --> SIM
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef l fill:#d1fae5,stroke:#059669,color:#064e3b
+    class PER,DEC,ACT,ENV c
+    class RL,SIM l
+```
+
+
 - **核心论点**：LLM 只是一个接口，而不是智能本身。语言将会成为一个会思考的系统的接口，真正的核心是世界模型。
 - **关键计算**：四岁孩子醒着累计约 16000 小时，视神经每秒传输约 1 字节/纤维 × 100 万根纤维，四岁前视觉原始信息量约 10^14 字节——与现代主流 LLM 预训练语料量级相同。
 - **LLM 智能标准缺失**：一个系统想要表现出智能，必须能预测自己行动的后果。LLM 做不到——只产出 token，不做世界状态预测；没有"如果我这样做，会发生什么"的内部模拟；积累的是陈述性知识，不是对世界的理解。

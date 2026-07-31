@@ -91,6 +91,24 @@ Claude Code 的 1M token 上下文窗口在表面上是一个"充裕"的上限�
 综合全文，Thariq 的建议指向一个共同主题：**上下文管理需要系统化、工程化的方法**，而不是依赖直觉或事后补救。这与 `Context Window Management` 中描述的"上下文工程"（Context Engineering）范式高度一致——将上下文视为需要主动管理的资源，而非被动累积的副作用。  1M 上下文的到来并没有消除管理的重要性，反而因为更大的绝对空间而更需要主动维护。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### 即刻可用的操作建议
 1. **在每个回复后强制评估决策点**。当你准备发送下一条消息时，暂停并明确回答：我应该继续、回退、清除、压缩还是派生子智能体？这个习惯比任何工具层面的优化都更重要。
 2. **优先使用回退而非修正**。当 Claude 的方法行不通时，用 `/rewind` 回退到正确的节点重新开始，而不是追加"不要用 A 方法，用 B"这样的修正指令。

@@ -14,6 +14,24 @@ Ethan Mollick（One Useful Thing）2025 年 12 月的这篇文章把 AI 能力�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### 1. Jagged Frontier 是 AI 的持久特征
 
 Mollick 与合作者 2023 年提出 "Jagged Frontier"（参差不齐的边界）描述 AI 在某些任务超人、某些任务远低于人类直觉预期的能力分布。两年后这个特征依然存在 — AI 既能在医学诊断上超人、又能在金奖数学奥赛上超人，同时在"相对简单的视觉谜题"和"开售货机"上表现糟糕。

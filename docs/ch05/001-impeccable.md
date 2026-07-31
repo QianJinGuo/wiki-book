@@ -22,6 +22,19 @@ AI 编码助手做前端时，代码能跑只是第一步——更麻烦的是�
 这些单独看不一定错，叠在一起就很像模板。Impeccable 把"反 AI 模板审美"工程化。
 
 ## 架构：四层叠加在 harness 之上
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 | 层 | 路径 | 职责 |
 |---|---|---|
 | **L1 知识层** | `skill/SKILL.src.md` | 入口：setup + 通用设计规则 + provider 特定规则 + 23 命令表 + 路由规则 |

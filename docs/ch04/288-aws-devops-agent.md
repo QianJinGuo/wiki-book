@@ -14,6 +14,19 @@
 - Agent 所有 skill 均为只读操作，修复方案以结构化文本输出，不执行任何写操作 
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 混合云网络故障的特殊复杂性
 混合云网络故障之所以难以排查，根本原因在于"控制平面和数据平面的分离"。当 TGW 静态路由覆盖 DXGW 传播路由导致 IDC 流量黑洞时，VPC、DX Gateway、VPN Connection 的状态指标全部显示健康——控制平面完全正常，数据平面已经不可达 。这种"gray failure"是混合云环境中最危险也最难检测的故障类型。
 作者通过 6 个真实故障场景验证了一个核心原则：**AWS 服务级健康指标只能回答"服务自身是否正常"，不能回答"服务间流量是否真正到达对端"** 。唯一的解决方案是在两端之间部署端到端主动探测。

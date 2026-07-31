@@ -15,6 +15,24 @@ source_url: https://mp.weixin.qq.com/s/JFvYo9RCn9Xm8ilx1Chd6g
 * ** karpathy/autoresearch  ** — 核心循环：只保留可测量的改进，其余全部回滚
 
 ## 深度分析
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
 **Karpathy AutoResearch 的核心哲学：可量化目标 + 自主循环 + 只保留改进。** Karpathy 的 autoresearch 项目把 AI 研究本身交给 AI 自主完成，核心循环极简：给 AI 一个 LLM 训练环境（单 GPU、5 分钟训练预算）→ AI 自主修改 train.py → 跑实验 → 检查 val loss 是否改善 → 改善才 commit，否则 git revert 回滚。这个设计的精髓在于三个"只有"：只有可量化的目标才能被自动判定（val loss 是唯一判断标准）；只有自主循环才能实现规模化（不需要每轮人类介入）；只有只保留改进才能避免噪声积累（退化的实验结果直接丢弃）。这个框架的底层逻辑是：让 AI 自己管理探索方向，而不是人类指定搜索空间。
 **迁移到软件开发的等价替换：val loss → 多维评分，训练环境 → GitHub Issue。** 作者把"验证集损失改善"替换成"多维评分达标"，把"5分钟训练实验"替换成"实现 GitHub Issue + 跑测试"。等价的模式是：program.md 作为规则核心（相当于 Karpathy 的研究章程）→ Agent 自主识别 GitHub Issue → 实现代码 → 运行测试套件 → 多维评分达标才合并代码。实测 10 分钟完成一个中等复杂度 Issue，全程零人工干预，最终评分 9.0/10。这个替换的本质是把 ML 领域的"实验自动管理"框架迁移到了软件工程的"开发任务自动管理"。
 **三大改进让 AutoResearch 更适应软件开发。** 作者在 Karpathy 原始设计基础上做了三个重要改进：① 多 AI Agent 交叉审核（多个 Coding Agent 同时审查对方代码，避免单一 Agent 的盲区）；② 5 维度量化评分（不只是编译通过，而是从正确性、可读性、安全性、性能、测试覆盖等多个维度量化评分）；③ 反馈驱动迭代（评分不达标时自动回到实现阶段重做，直到达标才进入审核）。这三点改进对应的是软件开发比 ML 研究更复杂的验收标准——ML 研究只有 loss 一个指标，软件工程有多个质量维度。

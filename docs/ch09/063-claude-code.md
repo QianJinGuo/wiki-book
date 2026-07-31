@@ -27,6 +27,22 @@ Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其
 
 ## CLAUDE.md：控制在 200 行以内
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - **根目录 CLAUDE.md**：始终加载，压缩后重新读取。适合构建命令、monorepo 结构、团队规范
 - **子目录 CLAUDE.md**：按需加载（读取该子目录文件时）。适合子目录专属约定
 - monorepo 中给每个团队目录放自己的子目录 CLAUDE.md，用 `claudeMdExcludes` 跳过不相关团队文件

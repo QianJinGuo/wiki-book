@@ -11,6 +11,24 @@
 - 产业特点：开源是实用主义而非信仰；自研+开源是标准路径；数据产业质量参差不齐导致自建 RL 环境成为普遍选择
 - Nathan 的焦虑：硅谷能否在开源模型领域保持领导地位？
 ## 相关实体
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 - [Deepseek Code Harness](../ch09/092-deepseek-code-harness.html)
 - [Nathan Lambert Claude Mythos Open Weights](ch01/403-nathan-lambert.html)
 - [Deepseek V4 Pro Vs Claude](ch01/1151-deepseek-v4.html)

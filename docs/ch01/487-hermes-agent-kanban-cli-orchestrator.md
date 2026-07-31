@@ -10,6 +10,22 @@
 3. **推荐架构**：上层用商业 Code CLI（Claude Code/Kimi Code CLI）做 Orchestrator，下层用 Hermes-Agent 做执行框架，中间用 Gateway API + MCP 协议打通
 
 ## Kanban 技术架构
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 数据库与状态机
 | 组件 | 实现 |
 |------|------|

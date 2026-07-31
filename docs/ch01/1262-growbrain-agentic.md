@@ -14,6 +14,20 @@ GrowBrain 是淘宝构建的以 LLM Agent 为决策中枢的全自动内容成�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 - **业务痛点**：传统规则 + 单点模型模式面临三大瓶颈——多信号融合困难、决策不可解释、新场景接入慢（周级）
 - **PES 架构**：将 Agent 执行拆解为 Planning（仅拆任务，不关心工具细节）、Execute（确定性地按序执行）、Summarize（收口结果）三阶段，避免小模型在 ReAct 循环中频繁幻觉
 - **Agent 矩阵**：潜力预估 Agent（基于多模态 LLM 直接打分）、流量分配 Agent（CoT Distillation 驱动差异化策略）、流量诊断 Agent（全链路漏斗归因）

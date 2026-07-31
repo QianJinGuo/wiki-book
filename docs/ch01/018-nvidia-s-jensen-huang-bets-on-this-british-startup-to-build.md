@@ -8,6 +8,25 @@
 - Published Time: 2026-05-13T13:00:01+0000
 
 ## 文章概要
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 Nvidia 宣布与英国 AI 创业公司 Ineffable Intelligence 建立战略合作伙伴关系，共同开发新一代 AI 系统。这家成立于 2025 年底的初创公司由前 Google DeepMind 强化学习团队负责人 David Silver 教授创立，专注于通过强化学习（reinforcement learning）让 AI 系统从经验中自主学习，而非依赖人类数据。
 2026 年 4 月，Ineffable Intelligence 宣布完成 11 亿美元种子轮融资，由红杉资本（Sequoia）和 Lightspeed 联合领投，Nvidia、Google、英国主权 AI 基金（U.K. Sovereign AI Fund）等参与跟投。
 Jensen Huang 表示：「AI 的下一个前沿是超级学习者（superlearners）—— 能够从经验中持续学习的系统。我们很高兴与 Ineffable Intelligence 合作，共同设计大规模强化学习的基础设施。」

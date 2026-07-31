@@ -14,6 +14,24 @@ Simon Willison（Django 联合创始人、Pelican Riding a Bicycle 测试基准�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 - **AI 写代码已不容置疑**：2025-02 Claude Code 发布，2025-11 Opus 4.5 + GPT 5.1 同时发布是临界点，2026 年很多工程师 70-80% 的代码由 Agent 生成，「以前两周出原型，现在 2-4 小时」。
 - **Vibe Coding ≠ Agentic Engineering**：前者不看代码、不在乎维护性，给个人工具/原型用；后者是专业工程师打安全可维护性运维性能这张牌。两者融合的关键是 Simon「开始把 Agent 当半黑盒合作伙伴」。
 - **两个新概念**：**偏差正常化**（AI 每次写对都让未来更盲目信任它）和 **承重墙**（Load bearing code，涉安全代码必须亲自 Review，判断哪些是承重墙需要深厚工程经验）。

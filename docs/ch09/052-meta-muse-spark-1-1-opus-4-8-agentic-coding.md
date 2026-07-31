@@ -20,6 +20,22 @@ Coding 方面：SWE-Bench Pro 61.5（Opus 4.8 为 69.2），编程水平约为 [
 
 ## 从 1.0 到 1.1 的飞跃
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 Muse Spark 1.0 年初发布时表现平平。1.1 版本实现脱胎换骨的提升：JobBench 从 17 涨到 54.7，OSWorld 从 53.3 涨到 80.8，DeepSWE 长程编码从 10 涨到 53.3，Vibe Code Bench 从 19.7 到 72.2。Meta 内部编码基准 68.3（Opus 4.8 为 69.0）。
 
 这些提升幅度行业罕见——JobBench 3.2 倍、DeepSWE 5.3 倍、Vibe Code Bench 3.7 倍，显示 Meta 在 Agent 和编码能力上找到了有效的 scaling 方向。据透露，Meta 内部已在使用该模型自动化模型开发与评估工作流。

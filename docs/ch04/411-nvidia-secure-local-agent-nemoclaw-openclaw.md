@@ -18,6 +18,25 @@ Build a More Secure, Always&#x2d;On Local AI Agent with OpenClaw and NVIDIA Nemo
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 **一、安全Agent部署的核心矛盾在于自主性与隔离性的张力**：传统Agent应用强调「多功能」——读取文件、执行命令、调用API，但这种开放性与安全性天然冲突。NemoClaw的解决思路是通过OpenShell的sandbox机制将Agent的「能力」与「权限」分离——Agent可以执行多样化操作，但每一项外部操作都需要经过策略层的实时审批。这种「默认拒绝、按需授权」的模型比传统VPS或容器隔离更细粒度，因为它是在应用层而非基础设施层实施访问控制。
 
 **二、Telegram集成作为入口反映了自托管Agent的实用主义设计**：选择Telegram而非开发专用客户端，是因为Telegram本身就是一个成熟的、跨平台的、用户熟悉的消息入口。对于自托管Agent来说，最大的使用障碍不是技术复杂度，而是「如何让用户方便地与本地运行的服务交互」。通过Telegram Bot API，NemoClaw将复杂的本地部署简化为「部署 → 连接Telegram → 开始使用」的三步流程，大幅降低了使用门槛。

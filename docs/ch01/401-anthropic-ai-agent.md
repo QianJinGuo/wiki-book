@@ -14,6 +14,20 @@ Anthropic 工程师 Ash Prabaker 与 Andrew Wilson 在 RetroForge 大会上分�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 ### 三大失败根因
 
 Andrew 将 Agent 长时运行失败归纳为三个工程问题：

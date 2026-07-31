@@ -22,6 +22,20 @@
 
 ## 群智能体生态
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 **Inbound 营销 + Outbound 触达 + 社媒运营 + 询盘回复 + 投流优化**——这些原本分散在不同工具里的能力，在 OntoZ 中被**重组为一个分层协同的群智能体生态**。
 
 它们共享同一套优先级、产出标准和上下文记忆，**消除不同岗位、不同系统之间的信息冲突**，最终组装成企业层级的超级智能。

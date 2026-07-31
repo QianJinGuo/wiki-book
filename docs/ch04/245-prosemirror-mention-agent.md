@@ -15,6 +15,19 @@
 **@文档 表面是"输入 @ 后选一个文档"，实则是编辑器稳定性的工程问题**。当交互从"插得进去"变成"一直稳定"，抽象层级必须从裸 `contenteditable` 提升到 ProseMirror 这类不可变文档模型。
 
 ## 为什么不用 DOM 方案
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 直觉路径（用 `contenteditable` + `@` 监听 + 候选弹窗）做出来的版本会暴露 4 类坑：
 
 | 坑 | 表现 |

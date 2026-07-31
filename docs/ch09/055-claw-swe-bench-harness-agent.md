@@ -17,6 +17,19 @@ Claw-SWE-Bench 是由基元律动（TokenRhythm，创始人王云鹤，原华为
 
 ## 适配器设计
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 OpenClaw 式通用 Agent 无法原生进入 SWE-bench 评分流程的原因有三：
 
 - SWE-bench 需要干净、可复现的 Docker 工作区，通用 Agent 依赖自己的运行环境

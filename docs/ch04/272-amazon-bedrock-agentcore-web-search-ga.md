@@ -17,6 +17,24 @@ Amazon Bedrock AgentCore Web Search 以全托管 MCP 兼容方式为 AI Agent �
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 1. **解决 Agent 知识冻结问题**：Agent 的知识停留在训练时间，无法获取实时信息（股价、比分、刚发布的版本）。Web Search on AgentCore 直接解决这一结构性限制
 2. **零基础设施开销**：作为 AgentCore Gateway 的 managed target/connector，Agent 通过标准 `tools/list` 发现，像其他 [MCP](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) 工具一样调用
 3. **Amazon 自建搜索索引**：非第三方搜索 API wrapper，覆盖数百亿文档，持续分钟级刷新

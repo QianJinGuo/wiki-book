@@ -12,6 +12,19 @@
 - **推荐配置**：Codex App配合GPT 5.5 xHigh使用，前端设计用Claude Design 
 
 ## Codex Goals工作原理解析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### Ralph Loop的技术本质
 Codex的goals功能于2026年5月1日进入Codex CLI 0.128.0，本质是让一个goal跨越多轮持续存在，在达成之前不停止 。
 Codex底层使用SQLite设计：创建`thread_goals`表存储每个goal的目标、ID、状态和可选token预算。通过`get_goal`和`update_goal`工具记录进展并更新数据库状态 。

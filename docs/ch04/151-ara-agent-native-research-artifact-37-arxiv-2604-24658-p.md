@@ -15,6 +15,20 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 ### 1. 37 作者的协作规模信号
 ARA（Agent-native Research Artifact）论文的 37 位作者规模反映了 AI agent 研究的跨团队协作特性——agent 研究需要 AI、HCI、安全、工程等多个领域的专业知识。这种大规模协作可能成为 AI agent 论文的常态。
 

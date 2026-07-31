@@ -12,6 +12,19 @@ Agent Harness 实现对比系列第三篇，聚焦 SubAgent 功能。覆盖 Clau
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 导言：SubAgent 的三个核心目的
 
 SubAgent 与 Agent As Tool、MultiAgent 有交集但概念范围不完全一致。三个核心目的：

@@ -8,6 +8,25 @@
 NotebookLM 是 Google Labs 开发的研究与笔记在线工具，基于 Google Gemini 大模型，帮助用户与文档进行 AI 交互。Google 将其描述为"虚拟研究助手"（Virtual Research Assistant）。
 
 ## Key Facts
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 | Fact | Detail |
 |------|--------|
 | 开发商 | Google Labs |

@@ -14,6 +14,19 @@ LLMReaper 是由安全研究员 thewhiteh4t 发布的 PoC 项目，演示了恶�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 - 三大 LLM 平台（ChatGPT、Claude、Gemini）都把用户对话和模型回复渲染在 DOM 中，任何拥有 `read and change all your data on websites you visit` 权限的扩展都能读取
 - 攻击利用浏览器标准 `MutationObserver` API 监听 DOM 变化，无需恶意权限，用户授权行为本身已成为攻击入口
 - 关键技巧：通过检测"停止生成按钮"（aria-label="Stop response" 等）的状态变化判断响应是否结束，避免流式输出造成的重复抓取

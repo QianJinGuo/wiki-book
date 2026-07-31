@@ -11,6 +11,24 @@
 - **参考**：Hermes Agent v0.13.0 Release Notes、Claude Code /goal、Codex /goal
 
 ## 核心洞察
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 Agent 长任务的核心瓶颈不在 Token，而在**会话记忆堆积导致的 Dumb Zone**。Ralph Loop 的解决方向：不要把长期记忆放在聊天记录里，文件系统和 Git 比模型上下文更适合承载长期状态。
 **/goal 的本质**：把 Agent 的交互单位从"回复"改成"完成条件"。目标被系统外化，Agent 不需要在聊天里"记住自己还有一个目标"。
 

@@ -19,6 +19,24 @@ In practice, creating model cards manually is tedious and slow. Documentation la
 
 ## Introducing the NVIDIA MCG toolkit[](https://developer.nvidia.com/blog/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-toolkit/#introducing_the_nvidia_mcg_toolkit)
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 The MCG toolkit is a containerized pipeline that automates the generation of model cards by reading in the model source code. It follows a modular Ingestion → Extraction → Rendering pipeline. A central orchestrator receives your request—either a URL or an uploaded file—coordinates the workflow, and returns a complete model card. Each stage runs as a separate service, so you can update or swap individual components without affecting the rest of the pipeline.
 
 ## How the MCG toolkit works[](https://developer.nvidia.com/blog/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-toolkit/#how_the_mcg_toolkit_works)

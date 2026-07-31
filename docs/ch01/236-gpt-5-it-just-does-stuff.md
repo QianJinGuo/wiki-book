@@ -20,6 +20,19 @@ Mollick 拿到了 GPT-5 早期访问权，开篇用一个隐喻实验切入：�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. GPT-5 不是单一模型，而是一个开关
 
 GPT-5 不是「一个模型」，更像是一个在你请求时自动选择 GPT-5 系列多个不同尺寸/能力模型的开关，并由 AI 决定用哪个模型、投入多少「思考」。对大多数人来说，这种自动化很有帮助 — 有些人过去只用过 GPT-4o 之类的旧默认模型，从来没见过「好模型」能做什么；现在他们能看到 Reasoner 在难题上能做到什么。

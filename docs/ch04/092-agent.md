@@ -14,6 +14,22 @@
 
 ## 一、上下文漂移（Context Drift）
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 ### 1.1 现象描述
 
 在理想情况下，Agent 执行多步骤任务的流程应当是：**读数据 → 分析趋势 → 定位原因 → 输出报告**。但实际运行中更常见的轨迹是：

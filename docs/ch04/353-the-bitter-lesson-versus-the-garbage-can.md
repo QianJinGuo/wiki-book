@@ -14,6 +14,19 @@ Ethan Mollick 借用 Richard Sutton 2019 年的"苦味教训"（Bitter Lesson）
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **Garbage Can Model 的现实**：组织并非理性机器，而是"垃圾筒"——问题、方案、决策者被随机倒在一起，决策是这些元素偶然碰撞的结果。组织理论家 Cohen, March, Olsen 1972 年提出。
 - **传统自动化的痛点**：43% 美国职场人用过 AI，但都是非正式地解决自己工作问题。企业级扩展难——传统自动化要求**清晰规则与定义流程**，而这正是 Garbage Can 组织所缺的。
 - **苦味教训的历史回放**：1997 年 Deep Blue 用 200M positions/sec 暴力搜索 + 一些人类 chess 知识击败 Kasparov；2017 年 AlphaZero 用零先验知识自博弈训练，横扫 chess、shogi、go。**纯算力 + 通用 ML 击败了几百年 chess 智慧的编码**。

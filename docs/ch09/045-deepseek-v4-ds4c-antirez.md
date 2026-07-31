@@ -22,6 +22,16 @@ antirez 发布 **ds4.c**——专为 DeepSeek V4 Flash 打造的本地推理引�
 
 ## 关键技术细节
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 ### 1. 非对称 MoE 量化
 
 ds4.c 采用了非对称混合量化策略，专门针对 MoE（Mixture of Experts）架构设计：

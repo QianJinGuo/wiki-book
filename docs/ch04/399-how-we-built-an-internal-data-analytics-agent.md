@@ -38,6 +38,19 @@ In this blog post, we’ll go over how we built Qubot, how it’s changed, and w
 
 ## How Qubot works
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 The architecture has three main components: user interface, context layer, and query engine.
 
 ![Image 1: Diagram showing the architecture of the Qubot analytics agent. Context and users feed into Qubot, which references Trino and Kusto for answers.](https://github.blog/wp-content/uploads/2026/06/architecture.png?resize=1024%2C753)

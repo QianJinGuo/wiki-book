@@ -12,6 +12,19 @@ Agent Teams 概念近期持续升温——Claude Code 在推 agent teams，Kimi 
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **Agent Teams 的第一性问题**：不是「能开几个 agent」，而是谁来决定任务拆分、谁来决定何时停止、谁来隔离上下文、谁来验收结果。多 agent 的价值在于把混乱变成流程，而非人多。
 - **Agent = Model + Harness 公式**：Model 是大脑，Harness 是控制平面，涵盖工具权限、上下文隔离、任务队列、状态机、审批门禁、日志观测、成本控制等关键能力。
 - **Agent Teams 六层必备架构**：调度流（状态机/任务队列）、工具层（MCP/沙盒/权限分级）、记忆层（文件即内存/摘要落盘）、门控层（Plan-Execute-Verify 分阶段）、安全层（approval gate/凭据隔离）、观测层（telemetry/任务日志/成本统计）。

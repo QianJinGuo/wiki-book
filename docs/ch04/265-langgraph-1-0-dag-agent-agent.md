@@ -14,6 +14,26 @@ LangChain Expression Language（LCEL）底层的 DAG（有向无环图）模型�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[意图输入] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察结果]
+    OB -->|"反思调整"| PL
+    PL --> OUT[交付]
+    subgraph "支撑"
+        M[记忆] 
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef sup fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class IN,PL,EX,OB,OUT core
+    class M,S,T sup
+```
+
+
 - **DAG 的天花板是数学性的**：无环图这个数学模型不允许回边——它被设计来处理数据流，不是控制流。循环、反思、重试、恢复等 Agent 核心需求需要回边支持
 - **StateGraph 的三个核心差别**：共享状态（任意节点可读完整 state）、Reducer 合并策略（覆盖/追加/自定义）、Conditional Edge（运行时状态决定控制流）
 - **Pregel BSP 执行循环**：Plan（确定哪些节点的输入已变化）→ Execute（并行运行选中节点）→ Update（原子化写入 channel + checkpoint）

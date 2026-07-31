@@ -12,6 +12,19 @@ winty 实现的 Skill Hub MVP（~400 行 Python）是 Agent Skill 工程化治�
 
 ## 六组件架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 | 组件 | 职责 | 核心接口 |
 |------|------|----------|
 | **SkillRegistry** | 文件系统版本管理 | register(name, version, content) / load_skill(name, version) |

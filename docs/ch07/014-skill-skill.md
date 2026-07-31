@@ -14,6 +14,22 @@
 
 ## K 型分化(开篇核心洞察,本实体独家)
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 **核心命题**: Agent 不是抹平能力差距，而是**放大能力差距**。
 
 - **头部用户**: 默认理解文档/规则/memory/loop/MCP/CLI/工具调用/权限/安全沙箱/上下文工程/定时任务/心跳/文件系统/代码执行/Skill

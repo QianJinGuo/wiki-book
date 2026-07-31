@@ -10,6 +10,22 @@
 pi 的设计哲学很简单：**核心引擎只做最小必要的事情，复杂能力通过 Extension API 交给插件。** 把核心做轻，稳定性才有保障；把扩展口留足，未来演进不需要重构。
 
 ## 17 个工程维度
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 1. 任务规划：单体优先
 pi 默认是单体 ReAct Agent，没有内置的 Planner/Router 节点。Extension API 开放任务规划能力——把"调用子 Agent"封装成一个普通工具插进工具列表，交给 LLM 自己决定。
 

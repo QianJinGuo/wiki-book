@@ -8,6 +8,24 @@
 DeepSeek 2026-04-30 发布的视觉原语论文。核心创新：让模型在思考过程中输出坐标（bounding box / point）作为"用手指着图说话"的媒介，把 grounding 从 post-hoc verification 变成 intrinsic medium of thought。 ^["raw/articles/deepseek-visual-primitives-thinking"]
 
 ## 核心概念：Reference Gap
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 ### Perception Gap vs Reference Gap
 | 术语 | 含义 | 主流解决方案 |
 |------|------|------------|

@@ -12,6 +12,24 @@ Harness 在此语境下指围绕模型的所有高价值元素——包括 [prom
 
 ## 国内模型格局：七国八制与异构竞争
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 国内基础模型生态呈现高度异质性特征。不同厂商根据自身业务属性、训练数据和技术路线产生了显著特异化：
 
 - **数学推理**：部分模型在数学任务上表现突出

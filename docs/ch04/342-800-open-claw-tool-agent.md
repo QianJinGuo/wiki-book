@@ -14,6 +14,20 @@ Open Claw 是一个用约 800 行 TypeScript 代码实现的 Agent 运行时，�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 ### 1. Tool 层：四要素抽象与零依赖设计
 
 Open Claw 的 Tool 抽象类仅包含 `name`、`description`、`input_schema`、`execute` 四个要素，`input_schema` 直接取自 `@anthropic-ai/sdk` 的 `Tool` 类型定义，无中间层转换。这是一个刻意的取舍：schema 使用运行时普通对象而非 Zod，好处是零依赖、直接对齐 SDK 类型；代价是放弃了运行时参数校验。

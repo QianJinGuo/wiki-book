@@ -12,6 +12,19 @@ GitLab 裁减约 14% 员工（~350 人），同时宣布 FY2027 Q1 营收同比 
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 裁员+AI 平台扩张的信号矛盾
 GitLab 14% 裁员与 Duo Agent Platform 扩张同时发生，表面矛盾但逻辑一致：削减传统工程人力，投资 AI 驱动的自动化——这正是 `Co Existence Paradigm Shift Agentic Ai Mollick 2026` 中"Co-Existence"范式在组织层面的体现。
 

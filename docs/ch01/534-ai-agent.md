@@ -68,6 +68,24 @@ OBI 在实际接入中解决了三个典型问题：
 
 ## 实践启示
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 1. **AI Agent 的可观测性不能靠 SDK 埋点解决**——SDK 方案在 Provider 多样化、裸 HTTP 调用的现实面前存在根本性的覆盖盲区。内核级观测是唯一能覆盖所有场景的通用方案。
 
 2. **eBPF + uprobe 是零侵扰观测的关键技术栈**——通过在内核和用户态密码库的"加密前/解密后"接口挂探针，OBI 解决了 HTTPS 加密流量的明文捕获难题，不需要中间人证书或私钥。

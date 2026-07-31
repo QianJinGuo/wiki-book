@@ -12,6 +12,24 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 - **定位**：首个面向长期动态用户建模的智能体评测基准，聚焦「持续理解一个动态的人」而非「单次任务完成」
 - **数据规模**：56 名真实特征用户、819 个复杂任务、超 2000 个动态偏好、66 个可执行工具、平均交互周期 1580 天
 - **核心发现 1**：最强模型 Claude-Opus-4.6 在能看全部历史记录的「开卷」模式下平均分刚过 0.5，说明从海量信息中准确提炼偏好本身就非常困难

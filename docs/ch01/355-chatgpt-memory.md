@@ -9,6 +9,24 @@
 OpenAI ChatGPT 提供了一系列记忆和知识管理功能：Memory（跨对话记忆）、Custom GPTs（自定义 GPT）、Projects（项目文件夹）。这些功能让 ChatGPT 从一个对话工具演变为一个持久化的个人 AI 助手。
 
 ## Key Features
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### ChatGPT Memory
 ChatGPT 会主动学习并记住用户在不同对话中提供的信息。记忆分为两类：
 1. **自动记忆**：ChatGPT 自动从对话中提取关于用户的事实（偏好、工作、兴趣等）

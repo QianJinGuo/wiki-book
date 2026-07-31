@@ -11,6 +11,24 @@ Claude Code 与 Codex 在"如何让模型看到需要的信息"上给出了方�
 - **Codex**：容器文件系统绕开上下文限制，按需读取，理论上无上限
 
 ## Claude Code：上下文窗口是一切的边界
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 Claude 4.6 系列上下文窗口 100 万 token，但在实际软件工程任务（反复读取大文件、运行命令、解析输出）里比预想更快填满。
 
 ### CLAUDE.md 四层结构

@@ -8,6 +8,24 @@
 系统性整理 Claude Code 与 Obsidian 集成的五种策略及配套插件工具链，来源为中文社区实战经验的汇总文章。核心价值在于帮助开发者根据自身场景（多项目 vs 单项目 vs 个人知识管理）选择最适合的集成路径。
 
 ## 核心痛点
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 Claude Code 生成的配置文件分散在多个位置：
 | 位置 | 用途 |
 |------|------|

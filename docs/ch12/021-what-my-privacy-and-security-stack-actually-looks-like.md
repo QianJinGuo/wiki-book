@@ -8,6 +8,19 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 资深隐私/安全记者 Yael 在博文中分享了她"实际在用"的隐私与安全实践，区别于常规的"工具推荐清单"。她的栈覆盖日常行为（情绪直觉、线下会面习惯）、个人信息保护（PO Box、数据经纪商退订）、隐私卫生（隐私屏、耳机通话、删除旧账号）、设备卫生（磁盘加密、iVerify、权限审计）、认证（YubiKey + 1Password/Bitwarden + Authy）、浏览（Mullvad VPN、uBlock Origin、Privacy Badger、多浏览器轮换）、通信保护（Signal 消失消息、Google Advanced Protection Program、Apple Lockdown Mode）、支付（信用卡优先、冻结信用）。
 
 ## 核心要点

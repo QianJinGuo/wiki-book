@@ -12,6 +12,24 @@
 
 ## 问题：碎片化的 ML 景观
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 随着 Netflix ML 从单一 personalization 扩展到 Studio、Ads、Payments 等多个业务域，各域使用不同 tech stack、metrics 和组织结构。ML 工具存在于 silos 中：model registry 不知道哪些 A/B 测试在使用它，pipeline orchestrator 不知道下游模型依赖，practitioners 必须跨多个系统才能回答基本问题。
 
 在没有 discovery infrastructure 的情况下，ML 从业者无法跨业务垂直领域协作或共享工作。内容 embedding 就是一个典型例子：Studio 团队构建的 embedding 本可同时服务于 Ads 的上下文匹配和 Personalization 的节目推荐，但跨域复用极其困难。

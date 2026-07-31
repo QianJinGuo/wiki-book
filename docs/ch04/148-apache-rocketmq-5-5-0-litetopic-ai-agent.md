@@ -10,6 +10,22 @@ Anthropic MCP 2026 Roadmap 与 Google ADK Long Running Agent 方案不约而同�
 
 ## LiteTopic 核心设计
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 ### 双层结构：父 Topic + 动态子 Topic
 
 LiteTopic 采用「父 Topic 命名空间 + 轻量子 Topic 会话通道」双层结构。父 Topic 承担同一业务域的集中管控和服务发现；子 LiteTopic 支持按需创建，底层以 RocksDB 替代传统 ConsumeQueue 文件，提升单个 Broker 对海量 LiteTopic 的承载能力。

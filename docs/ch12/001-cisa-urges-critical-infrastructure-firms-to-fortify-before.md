@@ -5,6 +5,19 @@
 > 📊 Level ⭐ | 11.9KB | `entities/cisa-urges-critical-infrastructure-firms-to-fortify-before-i.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 - **地缘政治驱动**：CISA 发布 CI Fortify 指南的核心背景是担忧中国可能在美国介入台海冲突时，对西方关键基础设施发动网络 sabotage
 - **Volt Typhoon 预警**：中国的 Volt Typhoon 黑客行动已被确认在西方关键基础设施中部署了持久化访问，为潜在 disruption 做准备
 - **假设前提**：CISA 明确指出，在冲突场景下，第三方连接（电信、互联网、供应商、服务提供商、上游依赖）都不可靠，威胁行为者可能已获得 OT 网络访问权限

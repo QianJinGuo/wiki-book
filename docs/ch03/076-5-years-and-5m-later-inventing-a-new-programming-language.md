@@ -16,6 +16,18 @@ Wasp 想做的是 "Rails / Laravel for JS"，但拉伸到前端——一个跨�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 - **失败本质**：DSL 在工程上没问题，错的是**包装与定位**——开发者根本来不及评估技术优劣，看到 `-lang` 就把它分到了「Rust / Java」那一类的 mental bucket
 - **三大客户异议反复出现**：
   1. "wasp-lang" 是要替代 JavaScript 吗？（不是，但定位太强难纠正）

@@ -23,6 +23,24 @@
 
 ## Prompts：四层分层组合架构
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 Chromium 使用本地 `GEMINI.md` 文件通过 `@` 引用组合不同层级 prompt，最终递归展开为完整的 System Instruction 注入 AI。
 
 ### 四层结构

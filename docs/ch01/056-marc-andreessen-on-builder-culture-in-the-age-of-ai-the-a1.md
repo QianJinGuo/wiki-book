@@ -14,6 +14,19 @@ Erik Torenberg interviews Marc Andreessen on the a16z Show, covering AI's impact
 
 ## Key Points
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. AI Expands Work, Not Eliminates It
 
 Andreessen's central thesis is that AI does not replace human work — it **expands the frontier of what's possible**. This mirrors the pattern of every prior technology revolution: the tractor didn't eliminate farming jobs, it enabled farmers to cultivate vastly more land. Similarly, AI enables workers to take on more complex, higher-value tasks.

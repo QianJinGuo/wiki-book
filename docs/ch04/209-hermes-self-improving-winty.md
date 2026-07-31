@@ -8,6 +8,24 @@
 **自进化的工程标准：** 同一个用户，同一个 Agent 实例，不同时间做同类任务，后做的明显比先做的更准更快。排除 prompt 优化、模型升级、任务难度变化三个干扰因素。按这个标准，市面上 95% 的 Agent 不算自进化。
 
 ## 四组件闭环
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 | 角色 | 类比 | 功能 |
 |------|------|------|
 | **Memory** | 团队 wiki | 存储事实级认知，自动注入 system prompt |

@@ -19,6 +19,24 @@ Garry Tan 是 Y Combinator（YC）的现任 CEO，同时也是一位连续创业
 
 ## 核心工作流：Token Maxxing
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 Garry Tan 在实践中发展出一套称为 **Token Maxxing**（Token 极大化）的方法论。其核心思想是：如果你能"煮干大海"（Boil the Ocean），即进行极致的完美主义研究，结果将会大不相同。对于人类而言，这种程度的研究可能需要一个月，但通过投入更多算力，AI 可以在更短时间内完成同等深度的研究。
 
 Token Maxxing 的具体实践包括：

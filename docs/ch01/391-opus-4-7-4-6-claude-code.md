@@ -14,6 +14,19 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 ## 摘要
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Anthropic 于 2026-04-16 发布 Opus 4.7，定价保持 $5/$25 per million tokens 不变，定位为公开可用的最强通用模型。本文汇总 Opus 4.7 相对 4.6 的核心能力升级（自我验证、视觉、指令遵循、长程记忆、金融/法律知识工作），Claude Code 配套新功能（xhigh effort、auto mode、`/ultrareview`、`/fewer-permission-prompts`、`/focus`、Recaps），以及 Anthropic 官方推荐的 Claude Code 最佳实践。
 
 ## 核心要点

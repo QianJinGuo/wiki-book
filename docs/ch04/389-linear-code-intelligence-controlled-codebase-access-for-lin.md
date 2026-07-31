@@ -14,6 +14,22 @@ Linear 在 2026-05-14 发布 Code Intelligence 功能，给 Linear Agent 提供�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - Code Intelligence 让 Linear Agent 能推理"产品实际是怎么工作的"，而不仅是 issue/project 中捕获的信息
 - PM 可以写更尖锐的 spec，Support/Sales 能更有信心回答技术问题，Engineering 能更快调查 bug、regression、不熟悉的部分
 - 设置流程：安装 GitHub 集成并启用 code access → AI Settings 中打开 Code Intelligence → 选择包含的仓库 + 访问权限范围

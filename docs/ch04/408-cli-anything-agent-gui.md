@@ -14,6 +14,22 @@ CLI-Anything 是香港大学数据科学实验室（HKUDS）开发的开源项�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 1. **问题本质**：AI Agent 是文本进文本出的系统，遇到带 GUI 的专业软件只能绕道走——要么手写 wrapper（工作量大），要么 RPA 截图点击（脆弱）。CLI-Anything 将 GUI 操作映射为结构化 CLI 命令，Agent 输入命令、拿回 JSON 结果。
 
 2. **7 阶段全自动流水线**：Analyze（源码扫描）→ Design（命令分组与状态模型）→ Implement（Click 框架实现，含 REPL/JSON/undo-redo）→ Plan Tests → Write Tests → Document → Publish（生成 pip 包）。

@@ -20,6 +20,22 @@ source_published: 2026-05-26T05:25:20Z
 
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 摘要：滴滴国际化事业部客户体验部门与 AWS 合作，基于 Amazon Bedrock 构建了一套覆盖西班牙语和葡萄牙语、横跨出行、外卖、金融三大业务线的智能客服质检系统，将客服质检能力从依赖第三方的黑盒方案迁移为透明可控的自研 AI 架构。系统包含三条核心管线——意图验证、合规评估和 VOC 聚合分析：进线原因验证准确率从 38% 大幅提升至 86%，合规评分准确率达 90% 以上，VOC 聚合分析则将原本耗费数小时的人工汇总工作缩短至数分钟完成。
 
 **目录**

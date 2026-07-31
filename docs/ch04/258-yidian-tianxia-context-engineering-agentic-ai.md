@@ -9,6 +9,24 @@
 易点天下 QCon 2026 演讲，核心命题：**如何驯服 Agent 的"幻觉"与"遗忘"，让概率性 AI 稳定运行在确定性企业生产系统上**。
 
 ## 六层上下文体系（L1–L6）
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 | 层级 | 名称 | 技术 | 核心作用 |
 |------|------|------|---------|
 | L1 | Session Memory | PostgreSQL（session_id 硬隔离）| 当前会话读写 |

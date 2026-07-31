@@ -14,6 +14,22 @@ Vivek Haldar 展示了一个具体的工作流案例：将 Agent Skill 从**纯�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - **94% token 减少**：从编译前到编译后，token 用量降低了 94%
 - **87% 延迟降低**：同样的任务完成时间减少了 87%
 - **输出质量基本不变**：在多次运行中验证，输出质量与原始版本基本一致

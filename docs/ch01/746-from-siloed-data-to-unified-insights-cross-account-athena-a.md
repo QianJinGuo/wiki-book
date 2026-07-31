@@ -12,6 +12,22 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
 
 ## 相关实体
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 - [基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理与增量同步](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)
 - [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](../ch11/222-amazon-quick.html)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/306-amazon-nova.html)

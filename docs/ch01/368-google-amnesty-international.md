@@ -14,6 +14,19 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-amnesty-spyware-detection.md)
 
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 - [Google and Amnesty International teamed up to make Android spyware detectable](../ch12/067-google-and-amnesty-international-teamed-up-to-make-android-s.html)
 
 ## 深度分析

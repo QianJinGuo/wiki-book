@@ -9,6 +9,22 @@ Coding harness 是模型从"建议你怎么修"走到"自己去修"所必须的�
 **Pi 这个顺序把 Agent 的底层工程暴露得很清楚：能力不会从概念里自动长出来，它靠一层层工程边界托住。**
 
 ## Pi 分层架构
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ```
 Provider API -> agent loop -> coding tools
 -> session / context / compaction

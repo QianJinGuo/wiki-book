@@ -19,6 +19,19 @@
 
 ## 3 个真实坑 (工业级失败案例)
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 坑一 · 设计收敛成"安全极简"
 
 **v1 失败模式**: 内置 20 种设计风格让 agent 随机挑, 想法是"多样性". 实际结果: 模糊需求面前, AI 自动躲进最熟、最不会出错的安全角落 — 10 个长得都差不多 (米白底 + 大量留白 + 点缀色, Anthropic 官网味儿).

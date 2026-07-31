@@ -8,6 +8,22 @@
 
 ## 概述
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 Amazon Nova 2 Lite 是 AWS Bedrock 上的多模态基础模型，通过**自然语言 prompt** 实现零训练目标检测 —— 无需数据标注、无需训练、无需基础设施管理。给定图像和目标列表（如 "vehicle"、"person"、"dent"），模型返回结构化 JSON 的精确 bounding box 坐标。
 
 ## 核心架构

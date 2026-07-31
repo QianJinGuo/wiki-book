@@ -14,6 +14,22 @@ AWS 官方博客展示了如何在现代 data mesh 架构上构建受治理的 a
 
 ## 核心要点
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 ### Agentic AI 为何需要新的治理模型
 
 RAG 架构在单一检查点执行治理：metadata-filtered vector retrieval。但 Agentic AI 引入了五步链路：

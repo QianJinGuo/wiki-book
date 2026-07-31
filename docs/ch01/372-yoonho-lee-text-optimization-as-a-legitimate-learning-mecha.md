@@ -14,6 +14,24 @@ Yoonho Lee (BAIR) 在 2026-06-08 发表立场论文，把 text optimization（pr
 
 ## 核心论证（三层）
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 ### 1. Text optimization 是合法的 update mechanism
 
 - 部署中的 AI 系统不再是隔离的 parameter vector，而是 stateful compound AI system（参引 BAIR 2024 博客）

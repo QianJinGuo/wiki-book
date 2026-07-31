@@ -12,6 +12,24 @@ Karpathy 在 2026 年红杉 AI Ascent 访谈中提出 Agent 时代的关键转�
 4. **可验证性决定自动化上限** — 没有验证体系托底，Agentic Engineering 顶多算更高级的 Vibe Coding
 
 ## 三个提醒
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
 1. **跨越中间层** — 从 Agent 直接输出到真实交付之间的工程层（权限、工具、验证、审计）
 2. **遵守工程纪律** — 像 review 人类 PR 一样 review AI 输出
 3. **别把理解力外包出去** — 理解代码的能力不能被替代

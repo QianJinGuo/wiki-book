@@ -12,6 +12,25 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 1. **R-SWA 的核心思想**：视觉参考 token 全程静态可见（保留完整 prefill cache），已生成文本只保留最近 128 token 的滑动窗口——输出侧 KV cache 变为常量上界
 2. **性能提升**：在 OmniDocBench v1.5 上总体分从 87.01 提升到 93.23，文本编辑距离从 0.073 降到 0.038，公式 CDM 从 83.37 升到 92.61
 3. **长文档能力**：40+ 页文档 Distinct-35 达 96.90%，Edit Distance 为 0.1069，输出不崩为重复循环或越跑越慢

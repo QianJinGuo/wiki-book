@@ -20,6 +20,19 @@ Vercel 在自家 API 上见过这类攻击。任何暴露在公网上、给调�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ### 1. 经济学差异决定了防御形态
 
 HTTP 请求便宜到几乎可以忽略，AI 推理贵到成为产品里最贵的资源。这条经济学曲线彻底改变了攻击与防御的回报结构。

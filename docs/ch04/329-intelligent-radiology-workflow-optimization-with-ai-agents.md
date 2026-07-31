@@ -9,6 +9,22 @@
 - v×c = 7×8 = 56，stars = 4
 
 ## 相关实体
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 - [Google Deepmind Accelerator Asia Pacific](https://github.com/QianJinGuo/wiki/blob/main/entities/google-deepmind-accelerator-asia-pacific.md)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)

@@ -55,6 +55,21 @@ Task Completion
 
 ## Comparison with Other Computer Use Implementations
 
+```mermaid
+graph LR
+    T[文本] --> ENC[多模态编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合层]
+    FUS --> DEC[解码器]
+    DEC --> OUT[输出]
+    classDef in fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class T,I,A in
+    class ENC,FUS,DEC,OUT core
+```
+
+
 | Feature | Gemini 3.5 Flash | Claude Computer Use | OpenAI Operator |
 |---------|-----------------|--------------------|----|
 | Native integration | Yes | Yes | Yes |

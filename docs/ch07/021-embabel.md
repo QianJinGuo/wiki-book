@@ -16,6 +16,19 @@
 
 ## 关键设计选择
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 为什么不用状态机（LangGraph 风格）
 - 状态机需要提前定义 → 修改必须重新连线 → 难扩展
 - 状态转换 + 每个动作状态所需类型正交 → 类型系统麻烦

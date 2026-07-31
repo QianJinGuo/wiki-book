@@ -52,6 +52,24 @@ Interconnects 主编 Nathan Lambert 2026 年春季综合 10+ 篇前文，列出�
 
 ## 关键论点：经济 > 能力
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 Nathan 的核心论点：
 
 > "The reality is complex. Only real AI revenue begets more investment, eventually that'll be linked to the ability to keep improving models at a rapid rate. Economic realities have not yet impacted scaling open models, as a general category."

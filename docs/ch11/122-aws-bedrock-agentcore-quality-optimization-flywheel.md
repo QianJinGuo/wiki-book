@@ -12,6 +12,19 @@ AgentCore is the platform to build, connect, and optimize agents at scale, with 
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 AgentCore 的质量优化飞轮代表了一种从直觉驱动到数据驱动的根本范式转变。传统 AI agent 优化严重依赖开发者个人经验——阅读 trace、形成假设、重写 prompt、测试少量案例后部署。这种手动循环不仅效率低下，而且容易引入新的问题，尤其在没有自动反馈机制的情况下，每次修复都可能为另一类用户创造新的边缘案例。AgentCore 的新能力通过三个核心组件构建了完整的自动化优化闭环：Recommendations 从生产环境 trace 和评估输出中学习，自动生成针对特定 evaluator 的系统 prompt 或工具描述优化建议；Batch Evaluation 在离线环境中使用预定义测试数据集验证推荐质量；A/B Testing 则通过 AgentCore Gateway 在生产流量上进行统计显著的对照实验。这种"观察-评估-改进"的三阶段循环将优化周期从周级别缩短到天级别，同时确保每一步决策都有数据支撑而非主观臆断。
 
 从架构角度看，AgentCore 的设计将配置与代码解耦——配置以不可变版本化 bundle 的形式存储，包含模型 ID、系统 prompt、工具描述等运行时参数，agent 通过 SDK 动态读取活跃配置。这意味着切换 prompt 或模型只是配置变更而非代码变更，大幅降低了实验和回滚的复杂度。结合 OpenTelemetry 兼容的 trace 收集机制，每个模型调用、工具调用和推理步骤都被完整记录，为Recommendations 的分析和优化提供了丰富的原始数据。

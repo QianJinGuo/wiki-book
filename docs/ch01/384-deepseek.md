@@ -31,6 +31,24 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 主流多模态模型在视觉能力上的竞争维度，长期被锁定在「看得更清楚」这一条路上——通过高分辨率切割、动态分块将图像 token 数量不断推高，以求在 VQA 任务上刷新 benchmark 分数。Anthropic 将 Opus 4.7 的图像内部分辨率从 1568px 提升到 2576px，Google 的 Gemini 从初代发布起就走 natively multimodal 路线，这些动作都在强化一个隐含前提：视觉推理的瓶颈在于感知清晰度。DeepSeek 这篇论文的核心反驳是「看见 ≠ 看清楚 ≠ 说清楚指哪个」，论文原文直接点破：「The inherent ambiguity of natural language often fails to provide precise, unambiguous pointers to complex spatial layouts, leading to logical collapse in tasks requiring rigorous grounding.」这个 Reference Gap（指代鸿沟）才是真正卡住多模态推理的地方，而非 Perception Gap（感知鸿沟）。
 
 DeepSeek 提出的视觉原语范式，本质上是将视觉 grounding 从「事后验证」（post-hoc verification）转变为「思考的内在媒介」（intrinsic medium of thought）。在此之前，Visual CoT、CogCom、GRIT 等工作都将 grounding 当作模型先想完、再用框来确认答案是否正确的工具——这是脚注式的使用。DeepSeek 的范式里，坐标是边推理边出现的，「指」和「想」是同一件事：「我看到左边的皮卡丘」这句话后面跟着的是 `<|ref|>皮卡丘<|/ref|><|box|>[[215,483,368,711]<|/box|>]`，坐标是思考过程的组成部分，而非附注。论文里两个关键术语精确地描述了这个区别：先前工作是 post-hoc verification，DeepSeek 让视觉原语成为 intrinsic medium of thought。这一区别在拓扑推理任务上造成了 16-26 个百分点的差距，因为这类任务要求模型在每一步推理中都维持精确的空间状态，无法承受「中间偏左」这类模糊表述的累积误差。

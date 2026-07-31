@@ -5,6 +5,24 @@
 > 📊 Level ⭐⭐ | 14.0KB | `entities/integrate-atlassian-confluence-cloud-with-amazon-quick.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 Amazon Quick 与 Atlassian Confluence Cloud 的集成旨在消除多系统切换带来的上下文丢失问题。当文档集中在 Confluence，而相关数据散布在其他系统时，团队需要频繁切换工具、重复检索、手动聚合信息——这些中断会拖慢决策速度，拉大「已有知识」与「可操作洞察」之间的差距。
 Quick 通过两种互补机制提供集成能力：
 

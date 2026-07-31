@@ -32,6 +32,22 @@ Loop Engineering（Outer Loop）
 
 ## ReAct 四大局限 → Loop Engineering 四大补位
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 | 局限 | 症状 | Loop Engineering 解法 | CodeBuddy 实现 |
 |------|------|---------------------|---------------|
 | 上下文窗口有限 | 长任务遗忘早期信息 | **状态外置**：每次迭代从全新上下文开始 | Memory / CODEBUDDY.md / Rules |

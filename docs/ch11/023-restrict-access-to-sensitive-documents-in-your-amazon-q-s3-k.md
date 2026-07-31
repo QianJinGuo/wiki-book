@@ -6,6 +6,19 @@
 
 ## 概述
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 Amazon Q 的 S3 知识库文档级 ACL（Access Control List）功能是企业级 RAG（检索增强生成）系统在**权限收敛层**的关键工程实践。该功能解决了两个核心问题：知识库级别的粗粒度权限控制无法满足敏感文档的隔离需求，以及传统 S3 bucket 权限与 AI 查询层的联动缺失。
 
 通过文档级 ACL，管理员可以在同一知识库内实现"部分用户可见 / 部分用户不可见"的差异化访问策略，适用于 HR、财务、法律等受监管数据的隔离场景。

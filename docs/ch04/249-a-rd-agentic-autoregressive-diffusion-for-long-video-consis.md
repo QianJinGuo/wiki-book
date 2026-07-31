@@ -11,6 +11,21 @@
 A²RD (Agentic Autoregressive Diffusion) 是 Google Cloud AI Research 与新加坡国立大学联合提出的长视频生成架构，通过"检索-合成-精炼-更新"闭环Cycle实现分钟级视频的自一致性。核心创新包括 Multimodal Video Memory（多模态视频记忆）、Adaptive Segment Generation（自适应片段生成）和 Hierarchical Test-Time Self-Improvement（分层测试时自改进），在 1-10 分钟视频上较 SOTA 提升 30% 一致性、20% 叙事连贯性。
 
 ## 核心架构解析
+
+```mermaid
+graph LR
+    T[文本] --> ENC[多模态编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合层]
+    FUS --> DEC[解码器]
+    DEC --> OUT[输出]
+    classDef in fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class T,I,A in
+    class ENC,FUS,DEC,OUT core
+```
+
 ### Multimodal Video Memory：跨越长距离的多模态追踪
 传统视频生成模型仅存储视觉参考帧，在长 horizon 下会丢失叙事上下文。A²RD 的 Multimodal Video Memory 将每个合成片段解耦为三种模态进行存储：
 

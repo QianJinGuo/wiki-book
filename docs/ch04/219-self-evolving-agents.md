@@ -10,6 +10,24 @@
 厦门大学、香港理工大学、马里兰大学、华盛顿大学圣路易斯分校、UIUC、新加坡管理大学等多机构联合发布系统性综述，系统回答：当 LLM Agent 能够主动探索、获得反馈、更新策略、积累经验时，如何理解其"自进化"？
 
 ## 核心概念：Self-Evolving Agents 两个核心特征
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 1. **Strong autonomy with minimal human supervision**：尽量减少对外部人工监督的依赖
 2. **Active exploration through interaction**：通过内部推理或外部环境交互主动探索和改进
 

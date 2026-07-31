@@ -11,6 +11,19 @@
 
 ## Anthropic 实践
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 上下文焦虑：Compaction vs Reset
 
 任务一长，模型上下文窗口越来越满，开始丢细节、丢重点、急着收尾。Compaction（同一 Agent，历史变短，心理状态延续）与 Reset（直接换干净上下文的新 Agent，交班时交接清楚）两种策略的选择，决定了长程任务的可靠性。对于某些模型（如 Claude Sonnet 4.5），Reset 才能真正"清空包袱、重新出发"——压缩历史会丢失 Agent 对任务的心理模型，这些无法被显式压缩保存。

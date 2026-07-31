@@ -8,6 +8,22 @@
 Anthropic 2026年5月18日更新 Claude Managed Agents，新增 self-hosted sandboxes 和 MCP tunnels 功能。本质是"brain Anthropic化、hand 企业侧化"的混合控制平面架构落地。 ^[https://mp.weixin.qq.com/s/dqg5rr2V073oloyAZVPB9Q]
 
 ## 核心架构：混合控制平面
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 | 组件 | 归属 |
 |------|------|
 | agent loop、session、编排、模型调用、事件流、控制台 | Anthropic（平台） |

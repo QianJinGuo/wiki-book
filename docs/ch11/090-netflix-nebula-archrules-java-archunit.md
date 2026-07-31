@@ -12,6 +12,20 @@
 
 ## 为什么选择 ArchUnit
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 Netflix 采用 polyrepo 策略，拥有数万个 Java 仓库。JVM Ecosystem 团队构建 Nebula Gradle 插件套件，为这些仓库提供构建逻辑共享、标准构建方式和 artifact 发布能力。但在一次与 library backwards-incompatible change 相关的 incident 后，团队需要更好的 API lifecycle 管理工具。
 
 ArchUnit 是流行的 OSS 库（3.5k stars, 84 contributors），用于在 JUnit suite 中强制执行"架构"代码规则。它使用 ASM（而非 AST）分析实际编译后的 bytecode，这意味着无论代码如何产生，都分析的是实际将运行的代码。这带来了三个 distinctive features：1) Works cross-language (JVM)，不依赖特定语言语法；2) 暴露 builder API 模式，写规则容易；3) 也有 lower-level API 用于编写更复杂的自定义规则。

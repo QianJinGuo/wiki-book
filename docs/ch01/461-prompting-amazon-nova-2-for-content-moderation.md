@@ -10,6 +10,21 @@
 - Structured（XML/JSON）与 Free-form 两种 prompt 策略对比
 - Nova 2 Lite 三项公开基准测试平均 F1 75.70%，优于同期对照模型
 ## 相关实体
+
+```mermaid
+graph LR
+    T[文本] --> ENC[多模态编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合层]
+    FUS --> DEC[解码器]
+    DEC --> OUT[输出]
+    classDef in fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class T,I,A in
+    class ENC,FUS,DEC,OUT core
+```
+
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
 - [Build An Enterprise Observability Solution For Amazon Quick](../ch11/021-build-an-enterprise-observability-solution-for-amazon-quick.html)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html)

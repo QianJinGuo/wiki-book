@@ -21,6 +21,19 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 范凌的核心洞见"AI 是反工业革命的"揭示了这场组织变革的本质。工业革命以来，"一人一岗、逐级晋升"的组织假设建立在专业分工可以提高效率的前提上。然而，当 AI 工具（如 Cursor）让产品经理和设计师能够跨越到原本属于研发的领域时，这种假设开始动摇。AI 不是让专业分工更快，而是让一个人跨越多个角色——这意味着组织设计的底层逻辑需要重新思考 。
 
 特赞的 pod + community 双轨制代表了一种新的组织形态。pod（3-10 人跨职能小队）追求高内聚、低耦合，内部闭环交付，减少跨部门协调成本。community 则承担能力补齐和文化传承的功能，尤其是 Leadership community 专门培养 AI 时代的管理者。范凌的洞察是：AI 时代带 100 个 Agent 比带 10 个人更难，因为 pod leader 需要同时具备 AI 能力、P&L 视角、商业直觉和耐心等复合素质 。

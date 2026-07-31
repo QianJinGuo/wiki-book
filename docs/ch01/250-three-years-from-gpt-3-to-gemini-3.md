@@ -17,6 +17,19 @@ Ethan Mollick 通过让 Gemini 3 复刻自己三年前 GPT-3 时代的"糖果驱
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **三年跨越式进步**：2022 年 ChatGPT 发布时 AI 能写连贯段落；2025 年 Gemini 3 能编码引擎、设计界面、让你实际驾驶飞船。
 - **"编写代码的能力不仅是编程"**：所有在计算机上做的事情最终都是代码——构建仪表板、操作网站、创建 PowerPoint、读取文件。**这使任何能编码的 Agent 变成通用工具**。
 - **Antigravity 的 Inbox 概念**：可以给 AI Agent 分配任务、需要权限或帮助时它们会 ping 你——人从"通过聊天界面提示 AI"演化为"管理数字同事"。

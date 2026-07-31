@@ -10,6 +10,22 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 Amazon Bedrock AgentCore Gateway 是 MCP 服务器与客户端之间的集中网关，统一管理凭证、可观测性和安全连接。本文覆盖其新扩展能力：MCP tool schema 扩展支持、MCP prompts 和 resources 作为一等原语、动态列表运行时发现、Streamable HTTP 流式传输、会话管理、elicitation 中途输入请求、以及 OAuth 2.0 on-behalf-of token exchange 委托认证。
 
 ## 核心要点

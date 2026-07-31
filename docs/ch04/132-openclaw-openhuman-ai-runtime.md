@@ -12,6 +12,19 @@
 
 ## 上下文层：先把你的世界变成 AI 能用的材料
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 私人 AI 的第一道坎是上下文供应链，必须回答四个问题：数据从哪里来？怎么变干净？什么该记？以后怎么找回来？
 
 OpenHuman 走"应用集成 + 本地记忆"的路线。外部应用接入主要靠 Composio（Gmail、Notion、GitHub、Slack、日历、Drive、Linear、Jira）。集成层分两边：云端管账号、OAuth、webhook、计费、toolkit allowlist 和 HMAC webhook verification；Rust core 里管本地 controller、agent tools、event bus、periodic sync 和 provider-specific sync。

@@ -11,6 +11,24 @@ Demo 级 chatbot 没问题，但一进入生产环境：模型忘掉三步之前
 **关键证据**: LangChain 只调整 LLM 外层的 infrastructure，不改模型权重，TerminalBench 2.0 排名从 30 名外跳到第 5。还有研究项目让 LLM 反过来优化基础设施本身，通过率超过人工设计系统。
 
 ## 2. 什么是 Agent Harness
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### 2.1 不只是 prompt 外壳，更是一整套运行时
 Anthropic 在 Claude Code 文档里把 SDK 叫成"驱动 Claude Code 的 agent harness"。OpenAI 的 Codex 团队也把 "agent" 和 "harness" 放进同一个语境，指的都是那套让模型真正可用的非模型基础设施。
 LangChain 的 Vivek Trivedy: "If you're not the model, you're the harness."

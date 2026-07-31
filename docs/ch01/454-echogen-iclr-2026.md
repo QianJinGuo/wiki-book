@@ -14,6 +14,16 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 - **双路径主体注入**：将主体信息解耦为"高层语义"（DINOv2）和"低层细节"（FLUX.1-dev VAE），分别通过解耦交叉注意力和多模态注意力注入生成过程
 - **Subject-Text CFG**：在标准 CFG 基础上引入双系数引导，分别调控文本与主体的引导强度，推理时可动态切换控制偏好
 - **主体分割流水线**：Qwen2.5-VL 识别主体语义 → GroundingDINO 定位边界框 → 裁剪并替换背景，解决真实场景中复杂背景的干扰

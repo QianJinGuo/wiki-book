@@ -10,6 +10,19 @@
 
 ## 核心发现
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
  Published Time: 2026-04-15T07:26:12-04:00 Markdown Content: From inside a money-laundering center in Cambodia, an employee opens a popular Vietnamese banking app on his phone. The app asks him to upload a photo associated with the account, so he clicks on a picture of a 30-something Asian man. Next, the app requests to open the camera for a video "liveness" check. The scammer holds up a static image of a woman bearing no resemblance to the man who owns the account. After a 90-second wait—as the...
 
 ## 技术分析

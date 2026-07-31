@@ -9,6 +9,20 @@
 这一分工逻辑在产品层面的直接体现就是「快速创建」模式——通过可视化配置，无需编码即可上线一个运行在生产级 Serverless 运行时上的 Agent。
 
 ## 5 种创建模式
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
 | 模式 | 定位 | 适合谁 |
 |---|---|---|
 | 快速创建 | 可视化配置，零编码 | 产品、业务、想先验证想法的人 |

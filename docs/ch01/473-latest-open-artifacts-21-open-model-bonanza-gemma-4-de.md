@@ -18,6 +18,19 @@ CAISI（Center for AI Standards and Innovation）使用 Item Response Theory 在
 
 ## Harness 选择扭曲能力评估
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 真正的问题在于标准化评估 setup 与模型实际训练/使用环境之间的系统性错配。编码任务使用 bash 和固定 token 预算的 for-loop 进行评估，而非使用 Claude Code 或 OpenCode 这类模型实际训练时使用的 harness。CAISI 和 ECI 都使用标准化（且过于简单）的 setup 来比较模型能力——ProgBench 基于此方法论声称将应用移植到另一种语言"目前不可能"，而实际上 Bun 已从 Zig 移植到 Rust，涉及 100 万行代码修改。
 
 这意味着前沿模型对比需要使用偏好的 harness 以及模型特定的 prompting，而不仅仅是标准化测试环境。评估框架的选择本身就是一种选择偏见，会系统性地低估在真实使用环境中训练的模型的真实能力。

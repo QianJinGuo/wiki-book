@@ -16,6 +16,24 @@
 何恺明团队提出首个连续扩散语言模型 ELF（Embedded Language Flows），将所有去噪过程保留在连续 embedding 空间，仅在最后一步 t=1 才离散化输出 token，用 105M 参数 + 45B 训练 token + 32 步采样实现生成困惑度 24（需对比其他模型数千步才能接近）。
 
 ## 核心创新
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 ### 核心洞察
 **问题不是"语言必须离散"，而是前人没让连续路线连续到底。**
 

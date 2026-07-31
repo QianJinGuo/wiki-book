@@ -21,6 +21,22 @@ sha256: 70061409c093a01f
 
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 摘要：本文介绍如何基于 Strands Agents SDK 和 AWS 官方 MCP 工具，构建一个支持自然语言交互的云成本分析 AI 助手，实现费用查询、图表可视化和优化建议的端到端体验，并适配亚马逊云科技中国区部署。
 
 **目录**

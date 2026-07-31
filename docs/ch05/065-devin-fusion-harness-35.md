@@ -14,6 +14,19 @@
 
 ## 核心方法
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### Sidekick 架构：双 Agent 并行
 
 Devin Fusion 的核心创新是 Sidekick 架构——同时运行两个并行 Agent：

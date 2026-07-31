@@ -24,6 +24,24 @@
 基于LangGraph4J搭建层级式多Agent协同框架：一个中心Supervisor负责任务路由、执行边界和结果聚合。
 
 ## ReAct推理引擎优化
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 ### 业界方案对比
 | 方案 | 特点 | 适用性 |
 |------|------|--------|

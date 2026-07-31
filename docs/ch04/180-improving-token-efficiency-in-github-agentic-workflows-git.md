@@ -11,6 +11,26 @@ Landon Cox（Microsoft Research）和 Mara Kiefer（GitHub）分享 GitHub 内�
 
 ## 核心优化技术
 
+```mermaid
+graph TB
+    IN[意图输入] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察结果]
+    OB -->|"反思调整"| PL
+    PL --> OUT[交付]
+    subgraph "支撑"
+        M[记忆] 
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef sup fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class IN,PL,EX,OB,OUT core
+    class M,S,T sup
+```
+
+
 ### 1. 消灭未使用的 MCP 工具注册
 
 **问题**：Agent runtime 在每次请求中都会携带所有注册的 MCP 工具名和 JSON schema。GitHub MCP server 有 40 个工具时，每轮对话额外携带 10-15 KB schema 开销。如果 agent 只用其中 2 个，剩下 38 个就是纯浪费。

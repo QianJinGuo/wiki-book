@@ -14,6 +14,24 @@ Impeccable 是 VibeCoder 整理的 33.4k Star 开源项目（pbakaus/impeccable�
 
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### 1. 一句话定位：harness 之上的"设计同事"
 
 Claude Code、Codex、Cursor、OpenCode 这些 harness 负责"读代码、改代码、跑命令"。Impeccable 负责告诉它们"做前端时先读什么上下文、什么设计词汇代表什么动作、哪些 UI 反模式应该被拦住、浏览器里选中的元素如何变成源码里的修改"。类比：Impeccable 是 harness 之上的"设计同事"——给它上下文、命令、检测器、浏览器反馈闭环；底层 agent 只管执行。

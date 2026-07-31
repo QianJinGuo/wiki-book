@@ -14,6 +14,20 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 - **"跑通一次，变成应用"**：用户跟 KroWork 说一遍需求，它帮你把活儿干完，然后直接把整个流程变成一个有界面、可反复使用的本地软件。第一次生成调用大模型，之后应用住在用户电脑里，打开如同普通软件，**完全不用消耗 token**。
 - **典型案例：股票智能分析台**：输入股票代码、时间范围，自动展示价格趋势并生成普通人能看懂的报告；几分钟内生成完整深色科技风桌面应用，支持设置价格波动提醒弹窗。
 - **典型案例：AI 热点追踪器**：自动抓取 X、Hacker News、Google News 上过去 24 小时讨论最多的 AI 话题，提取前 10 条并按热度排序。KroWork 在执行前会**主动规划**——发现 X/Twitter API 需付费，主动建议改用 Google News RSS。

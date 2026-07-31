@@ -13,6 +13,22 @@
 - ACP（Agent Client Protocol）协议：统一多种 AI Agent 的交互规范
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 1. ACP 协议：多 Agent 集成的标准化尝试
 ACP 协议的核心价值在于**解耦 IM 交互层与 Agent 执行层**。传统方案中，每种 IM 工具（如微信、飞书）需要与每种 Agent（Claude Code、Codex、Gemini CLI）做定制集成，导致 N×M 的集成复杂度。ACP 协议通过定义标准化的消息格式、会话管理、权限控制和工具调用规范，将复杂度降低为 N+M。
 这个设计思路与 MCP（Model Context Protocol）在概念上相似，但侧重点不同：MCP 侧重于 Tool 的标准化发现和调用，而 ACP 侧重于 Client-to-Agent 的会话管理和远程调用。两者可以在不同层次上协同。

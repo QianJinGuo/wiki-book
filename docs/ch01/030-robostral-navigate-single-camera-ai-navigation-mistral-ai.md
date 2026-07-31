@@ -19,6 +19,25 @@ Robostral Navigate 是 Mistral AI 推出的首个具身导航模型，规模为 
 
 ## 核心要点
 
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    subgraph "学习"
+        RL[强化学习]
+        SIM[仿真训练]
+    end
+    DEC --> RL
+    RL --> SIM
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef l fill:#d1fae5,stroke:#059669,color:#064e3b
+    class PER,DEC,ACT,ENV c
+    class RL,SIM l
+```
+
+
 - **Sensor 极简主义**：仅使用单目 RGB 摄像头，不依赖 LiDAR、深度传感器或多摄像头系统。在 R2R-CE unseen 上 76.6% 超越深度传感器/多摄像头方案（最佳约 72.1%），证明了纯视觉导航的可行性。
 - **指向导航（Pointing）**：模型通过推断目标位置在当前摄像头视角中的图像坐标以及到达时的期望朝向（Orientation）来导航。这种方法使策略对相机内参和世界尺度变化天然鲁棒。当目标超出视野时，模型回退到机器人局部坐标系中的位移命令（如"前进 2 米，左移 1.5 米，左转 25 度"）。
 - **22× Token 效率提升**：基于前缀缓存的树状注意力掩码策略（Tree-based Attention Masking），将整个 episode 压缩为单个序列，在一次前向传播中训练所有时间步，同时防止时间步间的信息泄露。使数月训练缩短为数天。

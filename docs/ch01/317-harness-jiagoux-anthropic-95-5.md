@@ -14,6 +14,19 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 95% 这个数字到底在说什么
 
 Anthropic 原文披露：内部约 95% 的业务分析查询已由 Claude 自动化处理，整体准确率约 95%。JiaGouX 提醒的口径是：

@@ -10,6 +10,24 @@
 Anthropic 2026 年可解释性研究突破。核心命题：**将 AI 内部激活值翻译为人类可读语言**，从而读取模型"不会主动展示"的隐藏想法。论文发表于 transformer-circuits.pub，代码与 Neuronpedia 前端已开源。
 
 ## 核心技术架构：AV + AR 双模块闭环（NLA 方法）
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 核心闭环：**原始激活 → 文本解释 → 重构激活**
 ```
 原始激活 → [AV 激活说明器] → 文本解释

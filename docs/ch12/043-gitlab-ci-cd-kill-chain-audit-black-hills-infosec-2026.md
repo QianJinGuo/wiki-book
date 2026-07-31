@@ -10,6 +10,19 @@
 
 ## 研究规模与方法
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 Black Hills Info Security 在 2026-06-03 发布的审计研究是 GitLab 生态**最大规模的第三方安全审计**之一：
 
 | 指标 | 数值 | 备注 |

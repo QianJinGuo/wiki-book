@@ -8,6 +8,22 @@
 
 ## 概述
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 2026 年 6 月，AWS 同时拥有了两个能"安全运行 AI 生成代码"的 Serverless 产品——**Lambda MicroVMs** 和 **Bedrock AgentCore Runtime**。它们底层都基于 Firecracker microVM，却处在完全不同的抽象层。理解两者的定位差异对于 AI Agent 架构设计至关重要。
 
 ## 核心差异：计算原语 vs Agent 框架

@@ -21,6 +21,22 @@ Stochastic Parrot is a reader-supported publication. To receive new posts and su
 
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 Marcus 和 Bjarnason 的批评模式值得警惕：两人仅引用了 Upwork 报告中的三组统计数据—— 47% 的 AI 使用者不知道如何实现预期的生产力提升、 77% 表示 AI 工具降低了生产力、 71% 感到倦怠——就得出" Gen AI 本身存在问题"的结论。这种引用方式在逻辑上存在典型的"摘樱桃"谬误：用支持预设结论的局部数据替代完整研究的整体语境，忽略了 Upwork 报告同时呈现的积极指标（ 81% 已部署 AI 的公司报告生产力提升）以及管理层与员工之间关于 AI 价值的认知鸿沟。
 
 报告的核心发现指向一个截然不同的叙事：问题不在于 AI 工具本身，而在于组织系统和模型的缺位。 Upwork 研究显示 84% 的高管认为公司重视员工福祉，但仅有 60% 的员工认同这种看法——这一脱节揭示了管理层对 AI 价值与员工实际体验之间的系统性错位。更关键的是， 51% 的高管认为自己在竞争中落后， 50% 认为员工若更有技能就能释放更多生产力，但只有 26% 的高管提供了 AI 培训，仅 13% 有完善的 AI 战略。这种"期望员工用 AI 但不教他们怎么用"的矛盾，本身就是独立于 AI 工具质量之外的組織失败。

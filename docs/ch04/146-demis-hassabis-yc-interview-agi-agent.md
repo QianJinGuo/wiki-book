@@ -14,6 +14,19 @@ Google DeepMind CEO Demis Hassabis 与 YC 总裁 Garry Tan 的深度访谈，涵
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - AGI 时间线预期：2030 年——深科技创业者必须考虑 AGI 在 10 年周期中点出现的可能性
 - 当前大模型的核心局限：持续学习、长期推理、记忆仍未根本解决
 - 思维链推理是 AlphaGo 搜索模式的回归，DeepMind 正在重新审视 MCTS

@@ -26,6 +26,24 @@ user agent和assistant交互过程中，critic model作为第三者，用来选�
 上述内容已涵盖OWL框架的核心机制。
 
 ## 深度分析
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### 核心架构设计思想
 OWL框架的设计精髓在于**角色解耦与协作机制**。传统的单Agent架构中，一个Agent既要理解用户意图、又要执行任务、还要判断完成度，容易出现角色混淆导致的行为不一致。OWL通过将User Agent（监督者）与Assistant Agent（执行者）严格分离，配合Critic机制，实现了类似"产品经理-工程师-技术评审"的三方协作模式。
 这种设计的核心优势在于：

@@ -11,6 +11,22 @@
 > **Core insight**: Netflix Live 运营经历了四代演进：从工程师值守（All-Hands）→ 专业工程团队（SOE+BOE）→ 飞机驾驶舱模式（1:1 双人操作）→ TOC Fleet Model（三专分工：TCO/SCO/BCO），配合 Live Command Center 的全链路可观测性与 LOL 四级预警机制，实现从月均 1 场到日均 70 场的运营规模化
 
 ## BOC 广播运营中心：信号冗余架构
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 Broadcast Operations Center（BOC）是直播事件的核心指挥舱，从场馆接收完整制作信号后进行信号接入、检查、 conditioning、字幕处理、图形插入和广告管理。BOC 使用 hub-and-spoke 架构，通过 SMPTE 2022-7 无缝切换（双独立网络路径）和 SRT 贡献系统实现信号传输的高冗余。场馆端要求三路完全独立的传输路径（主备光纤 + 卫星 + 企业互联网 + SRT），所有硬件使用双路独立电源（UPS 保护），并要求在每次播出前执行 FACS/FAX 设施检查验证音视频同步、字幕和备用切换器输入。
 
 ## TOC Fleet Model：大规模并发运营分工

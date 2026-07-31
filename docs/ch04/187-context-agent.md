@@ -11,6 +11,24 @@
 
 ## 核心问题：原始 API 响应并非为智能体输入而设计
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 **问题现象**：
 - 100 页变更单解析后产生 20 万行 JSON
 - JSON 包含大量：边界框坐标、OCR 置信度浮点数、块类型分类、坐标数据

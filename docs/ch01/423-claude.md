@@ -16,6 +16,24 @@
 
 ## 核心案例：非程序员用AI构建生产级应用
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### 6个月的项目，一个周末完成
 
 开发者@TukiFromKL分享：使用Claude Code后，原本计划6个月开发的移动应用在一个周末完成，没有手写任何核心逻辑代码。

@@ -16,6 +16,19 @@
 
 ## 一句话
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 **AI 用得好不好，越来越像环境工程问题 —— 给它一个稳定的工作现场，比优化每次的提示词更重要。**
 
 ## 核心要点

@@ -12,6 +12,19 @@ AWS blog post (2026-07-23) by Amit Deol, Hin Yee Liu, and Ryan Cormack presentin
 
 ## Three-Layer Build-Time Assessment
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 The evaluation framework operates across three distinct layers with pass/fail thresholds:
 
 **Layer 1: Tool Usage (>95% threshold)** — Validates correct tool selection and parameter passing. Uses deterministic code-based graders (`ToolSelectionGrader`, `TrajectoryOrderGrader`) to verify which tools were called and the call sequence. Example: "Diesel vehicles from £7,000 to £20,000" should use `search_vehicles` with typed filters.

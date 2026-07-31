@@ -14,6 +14,19 @@ BBuf 在 GiantPandaLLM 发文介绍 AI-Infra-Auto-Driven-SKILLS v0.1.0——将�
 
 ## 核心价值
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 **问题**：性能优化不适合直接从现象进入源码修改，链条中任何一步缺失，后续结论都不可靠。
 
 **解决**：将 benchmark→profile→源码修改→复测的完整流程编码为 Agent 可执行的 skill，保留人工检查入口。

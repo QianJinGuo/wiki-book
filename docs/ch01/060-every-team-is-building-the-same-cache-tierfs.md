@@ -37,6 +37,19 @@ This is the arc. We've seen it told to us by different people who didn't realize
 
 ## Why does it keep happening
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 You'd think, given that everyone ends up at the same place, somebody would have built the thing and shared it by now. And to be fair, some pieces exist. The cloud providers ship their own managed-cache products in front of object storage, but each one is tied to its provider. Several open-source projects have built filesystem-shaped abstractions over object stores, each with its own trade-offs in data format, deployment model, or feature gating. There are options. None of them are quite the thing the agentic stack needs.
 
 So everyone keeps building. And the builds are private, because they're _"specific to our setup,"_ even though when you look at them they're 80% the same code with different names.

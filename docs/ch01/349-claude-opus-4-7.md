@@ -14,6 +14,22 @@
 - **现实世界知识工作**：Finance Agent 和 GDPval-AA（金融/法律领域）达到 SOTA
 
 ## Benchmark 跃进
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 | 基准 | Opus 4.6 | Opus 4.7 | 提升 |
 |------|----------|----------|------|
 | SWE-bench Pro | ~53% | 64.3% | +11pp |

@@ -12,6 +12,19 @@
 - 核心结论：**系统的工程价值在模型本身，而非任何一个模型** 
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 ### 背景：从 DARPA AI Cyber Challenge 到微软内部规模化
 MDASH 背后的团队（Autonomous Code Security，ACS）部分成员来自 Team Atlanta——后者在 DARPA AI Cyber Challenge 中赢得 2,950 万美元奖金，展示了可自主发现并修复复杂开源项目中真实漏洞的 AI 系统。MDASH 代表这一技术路线从研究演示向微软生产环境的工程化迁移 。
 微软自身代码库的安全审计面临三个独特挑战 ：

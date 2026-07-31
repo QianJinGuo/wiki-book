@@ -12,6 +12,19 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 两个前提：重新理解 AI Coding 的成本结构
 
 **前提一：意图→代码是有损管道，AI 时代损耗位置变了**。古法编程时写代码的人同时也是意图持有者，隐性知识在实现时被自动补完。AI 时代意图持有者还是人，代码编写者变成了模型——模型不持有隐性知识，session 结束就忘。Spec 的本质是对"可接受实现空间"的最小、可验证的显式编码，四个关键词：最小（约束太厚维护成本逼近代码）、显式（不写出来的规则 AI 只能猜）、可验证（不能判定对错的不是 Spec 是愿望）、实现空间（Spec 不是复写代码而是划边界）。

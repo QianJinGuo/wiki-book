@@ -5,6 +5,22 @@
 > 📊 Level ⭐⭐ | 10.4KB | `entities/from-kubernetes-dev-setup-to-production-what-actually-change.md`
 
 ## 核心要点
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 - **在 Kubernetes 上运行 ≠ 生产就绪**：开发风格部署（local minikube、自签名证书、bundled 依赖、手动 Helm 序列）和生产平台的差距是系统性的，不是加几个配置项就能弥合
 - **时序很重要**：能力建设遵循一个顺序——先让构建块可用 → 再让产品端到端可用 → 再让变更加受控 → 最后让运维可恢复可观测
 - **GitOps 是杠杆，但不是银弹**：引入 Flux/SOPS 改变了变更管理的质量，但前提是底层组件（数据库、存储、身份提供者）已经可重复安装

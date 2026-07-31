@@ -10,6 +10,19 @@
 
 ## 核心架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 SageMaker 推理端点原生发射 OpenTelemetry 格式指标到 CloudWatch，覆盖两大端点架构：
 
 - **Single-model endpoints (SME)** — 单模型独占实例，简单但每模型需独立 GPU 节点

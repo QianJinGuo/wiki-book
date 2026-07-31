@@ -43,6 +43,19 @@ ClickHouse also opens the door to more complex analytical queries on trace data.
 
 ## Designing the schema
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Schema design was where things got tricky. We needed to optimize for Jaeger’s core query patterns: trace lookup by trace ID, service, and operation; attribute filtering; time-range queries; and the aggregation powering the[Service Performance Monitoring (SPM)](https://www.jaegertracing.io/docs/2.17/architecture/spm/)feature. These constraints don’t all pull in the same direction.
 
 There’s an excellent earlier[post](https://medium.com/jaegertracing/making-design-decisions-for-clickhouse-as-a-core-storage-backend-in-jaeger-62bf90a979d)by Ha Anh Vu that benchmarked ClickHouse schemas for Jaeger v1, and that work laid the foundation. However, Jaeger v2 adopts the OpenTelemetry data model, which forces us to revisit several decisions.

@@ -19,6 +19,21 @@
 
 ## 背景与动机
 
+```mermaid
+graph LR
+    T[文本] --> ENC[多模态编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合层]
+    FUS --> DEC[解码器]
+    DEC --> OUT[输出]
+    classDef in fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class T,I,A in
+    class ENC,FUS,DEC,OUT core
+```
+
+
 随着企业软件向多模态迁移（Gartner 预测2030年80%企业软件将具备多模态能力），传统 LLM-as-a-Judge 只能评估文本流畅度，无法验证模型输出是否真正基于源图像。这种 text-only 评估的局限性导致：
 
 - 模型自信地描述图表中不存在趋势

@@ -16,6 +16,19 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 1. **模型开发进入"产品化"阶段**：Anthropic 每代 Claude 在训练前都有明确规格定义、目标能力和评测路线，由研究产品经理全程跟进。这标志着 AI 开发从"炼金术"向系统工程转型
 
 2. **Adaptive Thinking 重新定义"何时思考"**：模型不再被动响应，而是主动判断问题复杂度并决定是否进入深度推理。关键洞察是"判断是否需要深度思考"本身依赖上下文——没有足够用户上下文就无法准确判断

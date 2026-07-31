@@ -18,6 +18,24 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 1. **出码率≠提效**：AI写出的代码占比持续走高，但版本节奏提效远不及预期。根因在于研发瓶颈从来不在"写代码"环节，而在理解、对齐、验证、沉淀等非编码环节——AI加速的恰恰是最不关键的环节
 2. **Harness Engineering的三次迁移**：AI工程关注点经历了Prompt Engineering（2022-2024，关注单次调用）→ Context Engineering（2025，关注上下文信息组织）→ Harness Engineering（2026，关注整个任务执行环境）的连续迁移
 3. **Agent = Model + Harness**：Mitchell Hashimoto给出的定义——"每当你发现Agent犯了一个错，你就花时间在它外面工程化一个方案，让它永远不再犯同样的错"——将工程关注点从"模型这一句说得对不对"挪到了"模型这一整段活干得稳不稳"

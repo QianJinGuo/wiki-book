@@ -43,6 +43,25 @@ Every layer in the stack now has to price the same way the customer thinks : per
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 - **双维度基准测试正在成为行业标准** — Microsoft 在模型发布卡片上新增"平均 token 用量"指标，标志着基准测试从单一性能维度转向"性能 + 成本"双维度评估。这一转变意味着模型评估范式的根本性变化：不再仅问"哪个模型最强"，而是同时问"哪个模型性价比最高"。
 
 - **补贴时代终结，效率竞争开启** — 文章指出 AI 补贴时代（token 价格人为压低）已结束，tokenmaxxing（通过超额 token 消耗换取基准测试高分）的策略正在失效。即使是最有价值的企业（Uber、Salesforce）也已感受到 AI 成本的压力，被迫限制使用量或冻结招聘。这标志着 AI 应用从"技术领先"向"经济理性"的转型。

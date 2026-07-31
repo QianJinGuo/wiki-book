@@ -14,6 +14,18 @@ Murphy Trueman 在 2025 年预测设计系统的下一个用户将是 Agent—�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 1. **四层能力叠加**：Figma MCP (`use_figma`) + Storybook MCP + Google DESIGN.md + Anthropic SKILL.md 构成 Agent 写入设计系统的完整技术栈
 2. **四种写入模式**：画布修改（直接放置组件到 Figma 画布）、Token 编写（读写设计 Token）、文档编写（自动生成组件描述和注释）、Agent 面向文件的编写（Agent 自我生成 SKILL.md/DESIGN.md）
 3. **治理挑战**：Agent 写入打破了传统"设计师起草→团队审查→代码所有者批准"的治理模型，审查环节的缺失成为最大瓶颈

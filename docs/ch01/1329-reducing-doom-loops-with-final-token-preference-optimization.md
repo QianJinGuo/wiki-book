@@ -19,6 +19,24 @@ Doom Loop（毁灭循环）是推理模型在推理过程中常见的退化失�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 - **Doom Loop 三大机制**：①过训练 token（如 "delve"、"testament"、推理模型中的 "Wait"、"Alternatively"）在模型不确定时成为高先验延续；②循环的上下文强化——已出现的序列会提高该序列后续出现的概率，直到概率趋近于 1；③贪心采样（低温）使模型无法跳出已建立的循环，即使提高温度也难以逃脱（实验显示 temp=0.67 仍有显著循环）。
 - **精准定位循环起点**：检测逻辑为——同一文本段重复至少 4 次、总长度至少 60 字符。定位到首次重复的**第一个 token**，从该位置取基座模型的 top-k 对数概率替代项，过滤后保留最多 20 个合理替代作为"chosen" tokens。
 - **FTPO 算法创新**：与传统 DPO 不同，FTPO ①仅训练生成过程中间位置的末尾 token；②每样本支持多个 chosen 完成 token（将概率分散至一组替代 token）；③使用 logit 空间的 KL 散度而非完整 softmax，避免对无关 token 产生梯度压力；④两阶段正则化——chosen/rejected token 可相对自由移动，其余词汇更紧密约束。

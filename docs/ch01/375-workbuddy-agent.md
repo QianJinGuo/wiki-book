@@ -12,6 +12,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **WorkBuddy 的专家 = 封装好的单 Agent**：将提示词、工具、Skills 等基础能力包装成用户可直接选择的产品化角色。提示词设计包括身份锚定、工作方法、交付标准三大层面。
 - **WorkBuddy 的专家团 = 封装好的多 Agent 协作流程**：采用编排者模式（主理人调度、成员执行），包含任务预检、预设 Workflow、通信管控等机制。
 - **身份锚定（Role Override）**：提示词开头的优先级声明确保 Agent 不受长对话中的上下文污染影响，重置角色为当前专家定义。

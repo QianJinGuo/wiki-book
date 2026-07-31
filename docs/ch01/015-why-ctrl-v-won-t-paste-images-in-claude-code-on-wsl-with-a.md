@@ -12,6 +12,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **三层故障链**：WSL 只转发 BMP 格式 → Claude Code 的 sharp WASM 构建不支持 BMP → Windows Terminal 拦截 Ctrl+V。每一层单独作用无害，叠加后导致粘贴完全失效。
 - **WSLg 的剪贴板限制**：WSLg 仅定义了 5 种 Windows→Linux 格式映射，其中唯一的图片映射是 `CF_DIB → image/bmp`。自 2022 年起就有上游 issue（microsoft/wslg#833）未解决。
 - **静默覆写问题**：手动将 PNG 推送到 Linux 剪贴板后，WSLg 的同步机制会将 Windows 侧的上一次 BMP 覆盖回来，使修复短暂生效后失效。

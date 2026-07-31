@@ -11,6 +11,24 @@
 根本瓶颈不是推理，而是**记忆**——一种人类和 Agent 都能读懂、都能信任的记忆形式。
 
 ## Autobrowse 是什么
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 Autobrowse 是 Browserbase 内部工程师 Shubhankar 开发、后来开源的工作流——受 Andrej Karpathy 的 autoresearch harness 启发。
 **核心思路**：
 1. 给 Agent 一个真实任务，让它在真实网站上反复尝试

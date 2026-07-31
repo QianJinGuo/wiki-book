@@ -6,6 +6,22 @@
 
 # SQS+Lambda异步管道：2000并发0%限流的工程细节
 ## 三个关键洞察
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 ### 1. max_concurrency计算公式
 mc = min(mc_rpm, mc_tpm)，其中 mc_rpm = RPM额度 × avg_time / 60，mc_tpm = TPM额度 × avg_time / (token_per_request × 60)。这个公式是控制限流的核心工程工具。
 ### 2. 三层timeout链路

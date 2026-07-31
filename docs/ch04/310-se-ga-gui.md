@@ -22,6 +22,24 @@ GUI 导航任务本质上是**部分可观察马尔可夫决策过程（POMDP）
 
 ## TTME：三层记忆结构
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 **Test-Time Memory Extension** — 借鉴人类认知架构：情景记忆对应前额叶工作记忆，语义记忆对应颞叶结构，经验记忆则类似海马体的情景编码系统，形成完整的时间-空间-语义三维记忆框架
 
 ### 三层记忆

@@ -6,6 +6,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 - NVIDIA NemoClaw 安全沙箱架构（Landlock/seccomp/网络命名空间三层隔离）
 - AWS EC2 GPU 实例 + Amazon Bedrock 混合推理架构
 - LLM Router Blueprint 实现请求级别智能路由

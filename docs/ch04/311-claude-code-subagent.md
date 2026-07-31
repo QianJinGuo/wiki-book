@@ -14,6 +14,22 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - **核心定位**：Subagent = 独立工作区调用，不是"多一个 Agent 帮忙"。子代理有自己的上下文、系统提示词、工具集合、权限范围，主代理只回收结论
 - **三类内置子代理**：Claude Code 自带 Explore、Plan 等内置子代理，已把最脏的探索阶段挡在主窗口之外
 - **两种调用模式**：fresh subagent（默认，隔离输入）vs fork subagent（继承父会话完整背景，但放弃部分输入隔离）

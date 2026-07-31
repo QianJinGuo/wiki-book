@@ -8,6 +8,22 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 AWS 于 2026 年 6 月推出 Lambda MicroVMs，解决了"如何安全运行 AI 生成或用户提供的代码"这一紧迫问题。它结合了 VM 级隔离（Firecracker）、快速启动（SnapStart 快照）和有状态会话（最长 8 小时），为 coding assistants、AI notebooks、agent sandboxes 等场景提供了理想的计算原语。与 AgentCore Runtime 的区别在于抽象层级：AgentCore 是托管 agent 平台，Lambda MicroVMs 是底层 VM 原语。
 
 ## 核心要点
