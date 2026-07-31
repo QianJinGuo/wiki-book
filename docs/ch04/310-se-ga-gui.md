@@ -114,7 +114,7 @@ SE-GA 的创新不仅在于 TTME 或 MASE 各自的效果，更在于两者协�
 - 未来：扩大数据集、分层任务分解、跨平台迁移学习
 
 ## 相关实体
-- [Hermes Agent Self Evolution Tengxun](../ch03/095-hermes-agent.html)
+- [Hermes Agent Self Evolution Tengxun](../ch03/096-hermes-agent.html)
 - [Self Learning Evolvable Agents For Cultural Tourism Info Extraction With Agentcore](../ch03/035-agent.html)
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/710-claude-managed-agents.html)

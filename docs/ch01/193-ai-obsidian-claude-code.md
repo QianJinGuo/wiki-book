@@ -298,10 +298,10 @@ QMD 语义搜索的价值在于 token 成本控制。开发者反馈显示，使
 **自定义命令沉淀工作流**：`/my-world` 、 `/today` 、 `/close` 、 `/trace` 、 `/ghost` 这类命令将 Claude Code 融入了 Obsidian 的日常笔记生态，让 AI 不是孤立的生成工具，而是知识循环的一部分。^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:356-362]
 ## 相关实体
 - [Obsidian Claude Code Integration Guide](../ch09/140-obsidian-claude-code-integration-guide.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/077-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](../ch03/077-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](../ch03/078-claude-code.html)
 
 ---
 

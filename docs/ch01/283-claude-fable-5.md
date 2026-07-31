@@ -133,7 +133,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 - **同护栏 / 安全主题**：
   - [AI Gateway vs MCP Gateway 安全分析](../ch11/080-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
   - [NVIDIA Nemotron 3 Agents RAG Voice Safety](../ch03/035-agent.html)
-  - [Amazon Bedrock Agentic Payments Guardrails](../ch11/294-amazon-bedrock.html)
+  - [Amazon Bedrock Agentic Payments Guardrails](../ch11/295-amazon-bedrock.html)
   - [Enable Safe Agentic Payments with Built-in Guardrails](../ch04/646-enable-safe-agentic-payments-with-built-in-guardrails-using.html)
   - [Nemotron 3.5 Content Safety](ch01/479-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
   - [阿里集团 AI 代码评审安全带](../ch05/094-ai.html)

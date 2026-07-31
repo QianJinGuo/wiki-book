@@ -112,7 +112,7 @@ HTML artifact 是一种解决方案：它把线性信息变成空间化信息，
 
 - [What is AX?](ch01/913-20.html)
 - [Claude Dispatch and the Power of Interfaces](ch01/518-claude-dispatch-and-the-power-of-interfaces.html)
-- [Claude Code 源码解析](../ch03/077-claude-code.html)
+- [Claude Code 源码解析](../ch03/078-claude-code.html)
 - [MOC: Coding Agent Practice](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

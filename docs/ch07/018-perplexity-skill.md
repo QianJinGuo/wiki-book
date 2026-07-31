@@ -146,10 +146,10 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 - [AI Skill 测评指标体系](../ch01/452-ai-skill.html)
 - [SkillClaw](../ch04/474-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
-- [Skills赏析：使用skills-refiner提升skill质量](../ch03/071-skills.html)
+- [Skills赏析：使用skills-refiner提升skill质量](../ch03/072-skills.html)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/397-agent-skills.html)
 
-- [Hermes Agent](../ch03/095-hermes-agent.html)
+- [Hermes Agent](../ch03/096-hermes-agent.html)
 - [Qoder Skills 完全指南](ch07/034-qoder-skills.html)
 - [AgentEval：YAML驱动的Agent评测框架](../ch03/035-agent.html)
 - [你写的 Skill，及格了吗？](../ch04/271-skill.html)

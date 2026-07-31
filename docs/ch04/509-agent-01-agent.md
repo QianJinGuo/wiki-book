@@ -48,7 +48,7 @@ HTTP/CLI 只是字节翻译器，真正业务逻辑在协调与治理层。包�
 5. **上线前必补四件事**：治理与安全、异步与后台、控制面、可替身存储——不是每面都要独立部署，但箭头方向和知情边界必须想清楚
 
 ## 相关实体
-- [Claude Code Search Architecture Tencent 2026](../ch03/077-claude-code.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
 - [Openclaw Prompt Context Harness](../ch11/235-openclaw.html)
 - [Hermes 9 Module Architecture Winty](../ch01/742-9.html)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/381-hermes-agent-goal.html)

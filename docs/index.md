@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3502 篇编撰实体系统编撰的开源读物。
+> 全球第一部基于 3504 篇编撰实体系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,9 +10,9 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1537 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1538 篇 |
 | 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1257 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 496 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 497 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 168 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 44 篇 |
 
@@ -46,7 +46,7 @@
   - ⭐⭐ Hermes Agent 深度解析（阿里云/飞樰）
   - ... 共 **39** 篇 → [完整章节](ch02-prompt.md)
 
-### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 136 篇
+### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 137 篇
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
 
   - ⭐ The Interface Is No Longer the Product
@@ -57,9 +57,9 @@
   - ⭐ The 2026 SaaSOps checklist: Managing and securing your enterprise SaaS
   - ⭐ What the design-to-code loop unlocks
   - ⭐ Choosing to Stay Human
-  - ... 共 **136** 篇 → [完整章节](ch03-ai-tools.md)
+  - ... 共 **137** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1537 篇**
+> 📖 **本篇共 1538 篇**
 
 ---
 
@@ -123,9 +123,9 @@
   - ⭐ Hermes+Kimi K2.6 多Agent军团实战教程
   - ⭐ OpenClaw 多智能体团队搭建实战经验
   - ⭐⭐ Oz Multi-Harness Cloud Agent Orchestration (Warp)
+  - ⭐⭐ Graph Engineering：从单循环到多节点编排
   - ⭐⭐ Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
   - ⭐⭐ ICML 2026 HOI-Edit & SCPE — 图像编辑的认知评测基准与智能体自纠错框架
-  - ⭐⭐ Graph Engineering：从单循环到多节点编排
   - ⭐⭐ 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
   - ⭐⭐ Multi-agent social intelligence with Strands Agents and Amazon Bedrock
   - ... 共 **35** 篇 → [完整章节](ch08-multi-agent.md)
@@ -162,7 +162,7 @@
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 308 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 309 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
@@ -173,7 +173,7 @@
   - ⭐ Cloudflare Turnstile requiring fingerprintable WebGL
   - ⭐⭐ 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
   - ⭐⭐ 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
-  - ... 共 **308** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **309** 篇 → [完整章节](ch11-infra.md)
 
 ### [Ch12 安全与治理](ch12-security.md) — 126 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
@@ -214,7 +214,7 @@
   - ⭐⭐ Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
   - ... 共 **40** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 496 篇**
+> 📖 **本篇共 497 篇**
 
 ---
 
@@ -308,6 +308,6 @@
 
 ---
 
-**📊 全书收录：3502 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3504 篇编撰实体 | 20 章 5 篇 | 开源读物**
 
 生成时间: 2026-07-31 | 来源: ~/wiki/entities/

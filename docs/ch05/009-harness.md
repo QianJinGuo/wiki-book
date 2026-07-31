@@ -276,7 +276,7 @@ OpenAI 提出的"Entropy Garbage Collection"是一个极具工程价值的概念
 - [Agent Harness Engineering Survey 2026](ch05/120-harness-engineering.html)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](ch05/120-harness-engineering.html)
 - [Harness Engineering Systematic Framework](ch05/120-harness-engineering.html)
-- [Agentscope Java Harness Framework](../ch03/052-agentscope-java-harness-framework-2-0-agent-harness.html)
+- [Agentscope Java Harness Framework](../ch03/053-agentscope-java-harness-framework-2-0-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-alibaba-java-case-study.md)
 → [原文存档 (杜学友 6 层架构)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-alibaba-6-layer-architecture-duxueyou.md)

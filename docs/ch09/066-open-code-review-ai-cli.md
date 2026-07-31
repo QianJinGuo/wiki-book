@@ -93,7 +93,7 @@ Open Code Review 的关键创新是**反思模型（Reflection Model）**：利�
 ## 相关实体
 
 - [Claude Code 深度架构分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md) — 对比 Open Code Review 与通用 Agent 在代码评审场景的架构差异
-- [Claude Code 治理软规则](../ch03/077-claude-code.html) — 探讨 Agent 行为治理模式，与 Open Code Review 的确定性约束形成对比
+- [Claude Code 治理软规则](../ch03/078-claude-code.html) — 探讨 Agent 行为治理模式，与 Open Code Review 的确定性约束形成对比
 - [复杂任务规范（gufabiancheng）](../ch01/517-codex.html) — 探讨 Agent 在复杂任务中的规范执行
 - [Harness Engineering](../ch05/120-harness-engineering.html) — Agent 工程化的核心理念，与确定性工程 × Agent 混合驱动设计相关
 

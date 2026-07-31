@@ -94,7 +94,7 @@ GLM-5 由智谱 Z.ai 推出：
 - [CybersecQwen 4B](../ch12/102-cybersecqwen-4b.html) — Qwen 在安全垂域的专用模型
 - [OpenClaw 完全指南](../ch11/235-openclaw.html) — Agent 工具栈的实践参考
 - [Agent 记忆系统的工程实践](../ch03/035-agent.html) — 长上下文在 Agent 记忆中的工程化
-- [Claude Code 源码核心机制](../ch03/077-claude-code.html) — 编码场景的 Agent 实现细节
+- [Claude Code 源码核心机制](../ch03/078-claude-code.html) — 编码场景的 Agent 实现细节
 - [Agent 循环设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) — Agent 评测与训练的核心范式
 
 ---

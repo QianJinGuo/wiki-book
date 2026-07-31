@@ -57,7 +57,7 @@ source_published: 2026-03-11
 
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/235-openclaw.html)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/094-ai.html)
-- [Hermes Agent V014 Architecture Shugex](../ch03/095-hermes-agent.html)
+- [Hermes Agent V014 Architecture Shugex](../ch03/096-hermes-agent.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/022-ai-friendly.html)
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/235-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
 - [Deepseek Code Harness Competitor Tina](../ch09/092-deepseek-code-harness.html)

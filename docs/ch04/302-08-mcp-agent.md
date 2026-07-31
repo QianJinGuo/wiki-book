@@ -91,9 +91,9 @@ MCP 自 2024 年 11 月发布以来，已经从概念验证阶段进入了初步
 
 ## 相关实体
 
-- [Claude Code 系统工程指南](../ch03/077-claude-code.html)
+- [Claude Code 系统工程指南](../ch03/078-claude-code.html)
 - [MCP 再探索](../ch07/016-anthropic-mcp.html)
-- [Hermes Agent 配置指南](../ch03/095-hermes-agent.html)
+- [Hermes Agent 配置指南](../ch03/096-hermes-agent.html)
 - [MCP 生产模式 12 种](../ch01/989-anthropic.html)
 - [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)
 

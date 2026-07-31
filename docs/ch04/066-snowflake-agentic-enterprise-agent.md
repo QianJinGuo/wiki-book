@@ -238,7 +238,7 @@ Cortex Sense 从 Snowflake 已有数据和活动中构建信号，自动增强 A
 - [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch04/710-claude-managed-agents.html)（Anthropic Managed Agents — 另一家厂商视角）
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/018-ai-native.html)（Spec-as-AIOS — 治理即架构同思路）
 - [Taobao Ai Sre Digital Employee Code Quality Governance](../ch01/1127-ai-sre.html)（数字员工治理 — 行业对照）
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/294-amazon-bedrock.html)（AgentOps — 智能体可观测性对照）
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/295-amazon-bedrock.html)（AgentOps — 智能体可观测性对照）
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)（企业 Agent 安全风险同主题）
 - [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/222-amazon-quick.html)（Amazon Quick — 另一家企业数据分析平台）
 

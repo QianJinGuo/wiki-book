@@ -41,7 +41,7 @@ ai, agent, runtime
 - [Architecture Data Foundations For Ai Powered Search](ch01/919-architecture-data-foundations-for-ai-powered-search.html)
 - [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
 - [Minimax Agent Team Mavis Owner Worker Verifier](ch01/1303-owner-worker-verifier.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a-bitter-lesson-for-data-filtering-e8807d.md)
 

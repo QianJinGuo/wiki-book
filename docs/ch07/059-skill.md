@@ -102,7 +102,7 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/397-agent-skills.html)
 - [Garry Tan](../ch01/662-garry-tan.html)
 - [Agent Workflows](../ch04/364-agent-workflows.html)
-- [Hermes Agent](../ch03/095-hermes-agent.html)
+- [Hermes Agent](../ch03/096-hermes-agent.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [你写的 Skill，及格了吗？](../ch04/271-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)

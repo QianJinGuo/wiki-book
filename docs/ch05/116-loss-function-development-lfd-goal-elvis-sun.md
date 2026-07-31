@@ -299,9 +299,9 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 - [Loop Engineering Addy Osmani Challengehub](ch05/004-loop-engineering.html)（Loop Engineering — Addy Osmani 同主线）
 - [Openspec Spec Driven Development Trae Solo](ch05/050-openspec.html)（Spec-driven 同对照）
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch05/018-ai-native.html)（Spec-as-AIOS — 抗熵增架构）
-- [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/077-claude-code.html)（session vs goal lifecycle 对照）
+- [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/078-claude-code.html)（session vs goal lifecycle 对照）
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/381-hermes-agent-goal.html)（Hermes Agent Goal runtime 对照）
-- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](../ch03/077-claude-code.html)（Claude Code 100 行 loop 同主线）
+- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](../ch03/078-claude-code.html)（Claude Code 100 行 loop 同主线）
 - [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/601-agent-loop.html)（OpenClaw agent loop 对照）
 - [Mimo Code Xiaomi Coding Harness 2026](ch05/112-harness-2026.html)（MiMo Code Max Mode + Goal 机制同主线）
 - [Snowflake Agentic Enterprise Summit 2026](../ch04/237-agentic.html)（Snowflake — 可审计治理同主线）

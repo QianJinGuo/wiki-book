@@ -147,7 +147,7 @@ TIR-Judge-Zero、OpenRS 等已有 agentic judge路线，但 Skill-RM 的差异�
 - **公众号转载**：Hyman的杂货铺（2026-06-10）
 ## 相关实体
 
-- [面向 skills 编程：大淘宝企业购 5 阶段演进与 anthropic agent skills 标准实战](../ch03/071-skills.html)
+- [面向 skills 编程：大淘宝企业购 5 阶段演进与 anthropic agent skills 标准实战](../ch03/072-skills.html)
 
 ---
 

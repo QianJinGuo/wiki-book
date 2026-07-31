@@ -34,7 +34,7 @@ Storage Agent Family 最值得关注的不是技术实现，而是其产品设�
 
 "统一大 Agent"方案在跨产品场景中存在天然的限制：每个产品的 API、数据结构、错误码体系差异巨大，一个中央 Agent 需要理解所有产品的细节，维护成本随产品数量线性增长。Storage Agent Family 的"去中心化家族"架构巧妙地回避了这一问题——每个 Agent 只精通自己的产品领域，家族约定只在交互范式和安全机制层面做统一 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:31-32]。
 
-这本质上是 [多 Agent 协作架构](../ch11/299-bedrock.html) 中"专业化分工"思路的体现。每个 Agent 的能力边界明确（只做自己产品的事），但通过统一的交互入口和产品间引导机制（跨产品问题主动引导跳转），用户获得的是"多个专家协同服务"的体验，而非"一个什么都懂一点但都不精的通才"。
+这本质上是 [多 Agent 协作架构](../ch11/300-bedrock.html) 中"专业化分工"思路的体现。每个 Agent 的能力边界明确（只做自己产品的事），但通过统一的交互入口和产品间引导机制（跨产品问题主动引导跳转），用户获得的是"多个专家协同服务"的体验，而非"一个什么都懂一点但都不精的通才"。
 
 ### 安全模型的核心创新：凭证贯穿而非权限放大
 
@@ -71,7 +71,7 @@ Sandbox 执行环境支持运行命令、保存中间文件、读取输出、失
 ## 相关实体
 
 - [Agent Harness 生产级实践](../ch05/058-agent-harness.html)
-- [多 Agent 协作架构](../ch11/299-bedrock.html)
+- [多 Agent 协作架构](../ch11/300-bedrock.html)
 - [Amazon Bedrock AgentCore](ch04/515-amazon-bedrock-agentcore-harness-ga-api-agent.html)
 - Agentic RAG 模式
 - [Agent Harness 运行时模式](../ch05/058-agent-harness.html)

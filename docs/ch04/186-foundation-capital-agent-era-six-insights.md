@@ -124,7 +124,7 @@ Aparna 提出的"Agent as new hire"管理框架的真正价值在于：它把一
 ## 相关实体
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/035-agent.html)
-- [Agent 时代架构师技能指南](../ch03/071-skills.html)
+- [Agent 时代架构师技能指南](../ch03/072-skills.html)
 
 ---
 

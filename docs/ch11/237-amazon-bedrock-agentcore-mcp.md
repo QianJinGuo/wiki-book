@@ -54,7 +54,7 @@ AWS China Blog 2026-07-29 发布的深度技术文章，系统地介绍了使用
 - [Bedrock AgentCore 质量评估与策略控制](../ch04/561-amazon-bedrock-agentcore.html) — AgentCore 的评估治理能力
 - [Bedrock AgentCore Gateway MCP Extension](../ch04/561-amazon-bedrock-agentcore.html) — AgentCore Gateway MCP 扩展
 - [Anthropic 12 MCP Production Patterns](../ch01/989-anthropic.html) — MCP 生产模式参考
-- [AgentOps + Bedrock](ch11/294-amazon-bedrock.html) — Agent 运维
+- [AgentOps + Bedrock](ch11/295-amazon-bedrock.html) — Agent 运维
 - [Smartsheet Remote MCP Server on AWS](https://github.com/QianJinGuo/wiki/blob/main/entities/smartsheet-remote-mcp-server-aws-architecture.md) — MCP 服务器架构参考
 
 ---

@@ -50,14 +50,14 @@ Claude 的自我评估不是"不够准确"，而是方向性的：它倾向于�
 - → [Claude Code 可控性：软规则陷阱（InfoQ 编译）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-governance-soft-rules-hard-constraints.md)
 
 ## 相关实体
-- [Claude Code Session Management 1M Context](../ch03/077-claude-code.html) — context rot 管理
+- [Claude Code Session Management 1M Context](../ch03/078-claude-code.html) — context rot 管理
 - [Agent Harness 12 组件](../ch05/058-agent-harness.html) — 12 个 harness 设计模式
 - [Harness Engineering 可靠长程Agent](../ch05/120-harness-engineering.html) — 治理方法论
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/035-agent.html)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
-- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/078-claude-code.html)
+- [Claude Code 设计原则与对照分析](../ch03/078-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)

@@ -57,7 +57,7 @@ CodeArts 新增 Linux CLI 支持的深层价值在于打通了**开发环境的�
 - [Harness Engineering](../ch05/120-harness-engineering.html)
 - [AI-Friendly 后端标准](../ch05/022-ai-friendly.html)
 - [Claude Code Skills Guide](../ch07/035-claude-code-skills.html)
-- [Claude Code Agent Engineering](../ch03/069-claude-code-agent.html)
+- [Claude Code Agent Engineering](../ch03/070-claude-code-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/华为云码道商用新版本发布聚焦企业级开发让ai真正融入存量项目.md)
 

@@ -100,7 +100,7 @@ Qwen3.5-35B-A3B 在 POI 语义理解和事实检索上逼近顶级闭源模型�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-tools-research.md)
 
-- [Skills赏析：使用skills-refiner提升skill质量](../ch03/071-skills.html)
+- [Skills赏析：使用skills-refiner提升skill质量](../ch03/072-skills.html)
 
 ---
 

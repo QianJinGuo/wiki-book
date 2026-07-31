@@ -54,8 +54,8 @@ Xero is
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/222-amazon-quick.html)
 - [Gemini 3 5 Frontier Intelligence](ch01/472-gemini-3-5-frontier-intelligence-with-action.html)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/094-ai.html)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/294-amazon-bedrock.html)
-- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/294-amazon-bedrock.html)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/295-amazon-bedrock.html)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/295-amazon-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-3-5-frontier-intelligence-with-action.md)
 

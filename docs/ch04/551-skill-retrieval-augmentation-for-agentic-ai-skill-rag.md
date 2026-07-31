@@ -11,9 +11,9 @@
 RAG改换换了！清华提出Skill-RAG
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/077-claude-code.html)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/077-claude-code.html)
-- [Hermes Agent Newbie Guide Dotta](../ch03/095-hermes-agent.html)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/078-claude-code.html)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/078-claude-code.html)
+- [Hermes Agent Newbie Guide Dotta](../ch03/096-hermes-agent.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/330-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [Three Rag Architectures Classic Graph Agentic](ch04/237-agentic.html)
 

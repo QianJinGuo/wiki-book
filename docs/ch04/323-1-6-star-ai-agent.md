@@ -12,7 +12,7 @@ GitHub 描述写的是 "Your Personal AI super intelligence. Private, Simple and
 
 ## 相关实体
 - [Claude 17 Capabilities Workflow Checklist Ruofei](../ch01/976-claude.html)
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/077-claude-code.html)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/078-claude-code.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/271-skill.html)
 - [Agent Memory Architecture Past Influence Future Ruofei](ch04/121-agent-memory.html)
 - [Agent Memory Architecture Ruofei](ch04/121-agent-memory.html)

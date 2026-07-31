@@ -28,7 +28,7 @@ WorkBuddy 的专家系统设计回答了 Agent 产品化的一个核心问题：
 1. **能力封装**：将提示词、工具、记忆、Skills 组合成具有特定领域能力的"专家"。
 2. **体验封装**：让用户不需要理解底层运行机制，只需选择一个专家或专家团就能直接开始工作。
 
-WorkBuddy 的解法是在提示词层面做文章——不是让模型自由发挥，而是通过精心设计的提示词模板，将**专业行为模式**固定下来。这种方式与 [Hermes Agent 的 Skills 机制](../ch03/095-hermes-agent.html) 有异曲同工之妙：都是将可复用的行为模式从零散的上下文描述中提取为结构化、可加载的能力单元。
+WorkBuddy 的解法是在提示词层面做文章——不是让模型自由发挥，而是通过精心设计的提示词模板，将**专业行为模式**固定下来。这种方式与 [Hermes Agent 的 Skills 机制](../ch03/096-hermes-agent.html) 有异曲同工之妙：都是将可复用的行为模式从零散的上下文描述中提取为结构化、可加载的能力单元。
 
 ### 提示词的"四层架构"
 
@@ -111,8 +111,8 @@ WorkBuddy 专家团预设了 8 个 Workflow，覆盖最常见的协作场景。�
 ## 相关实体
 
 - [Agentcore Harness Trip Allocation Multi Agent System Aws](../ch04/689-agentcore-harness.html) — 多 Agent 系统的 AWS 实践
-- [Hermes Agent](../ch03/095-hermes-agent.html) — Agent Skills 机制与 WorkBuddy 的对比
-- [Claude Code Vs Kimi Vs Minimaxagent Teams 到底拼的是什么](../ch03/077-claude-code.html) — 桌面 Agent 产品的工程设计对比
+- [Hermes Agent](../ch03/096-hermes-agent.html) — Agent Skills 机制与 WorkBuddy 的对比
+- [Claude Code Vs Kimi Vs Minimaxagent Teams 到底拼的是什么](../ch03/078-claude-code.html) — 桌面 Agent 产品的工程设计对比
 - [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](../ch03/035-agent.html) — Agent 工程化落地讨论
 - [Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html) — Harness Engineering 与多 Agent 编排
 

@@ -92,7 +92,7 @@ Skill Craft 的 fix 回归验证逻辑与 Harness 的 Generator/Evaluator 循环
 ## 相关实体
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/844-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Claude Design Skill Web Design Engineer](../ch01/1150-claude-design-skill.html)
-- [Claude Code Skill Writing Guide](../ch03/077-claude-code.html)
+- [Claude Code Skill Writing Guide](../ch03/078-claude-code.html)
 - [Claude Design Skill](../ch01/1150-claude-design-skill.html)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents](../ch01/844-skill-issues-compromising-claude-code-with-malicious-skills.html)
 

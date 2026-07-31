@@ -125,7 +125,7 @@ Agent 在执行过程中被中断时，状态会停留在 IN_PROGRESS，但实�
 - [Thin Harness Fat Skills](../ch05/085-thin-harness-fat-skills-ai.html)
 - [Design Patterns for AI Agents 2026](ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)

@@ -9,9 +9,9 @@
 ## 相关实体
 - [New Lock](https://github.com/QianJinGuo/wiki/blob/main/entities/new-lock.md)
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/989-anthropic.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
 - [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/989-anthropic.html)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/077-claude-code.html)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-new-ai-lock-in.md)
 

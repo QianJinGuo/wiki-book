@@ -12,10 +12,10 @@
 
 ## 相关实体
 - [我用 Skillmd 做了一个简历生成器](../ch04/271-skill.html)
-- [Claude Code Search Architecture Tencent 2026](../ch03/077-claude-code.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
 - [Skill Engineering Ai As Algorithm](../ch04/271-skill.html)
 - [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
-- [Hermes Agent Getting Started Guide 2026](../ch03/095-hermes-agent.html)
+- [Hermes Agent Getting Started Guide 2026](../ch03/096-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillx-zhejiang-university-hyman.md)
 

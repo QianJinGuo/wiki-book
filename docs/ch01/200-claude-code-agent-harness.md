@@ -301,7 +301,7 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 
 ## 相关实体
 
-- [两万字详解 Claude Code 源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解 Claude Code 源码核心机制](../ch03/078-claude-code.html)
 - [Claude Code Harness 深度解析](../ch05/073-claude-code-harness.html)
 - [Claude Code Harness 深度理解](ch01/422-claude-code-harness-deep-understanding.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)

@@ -118,7 +118,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 ---
 
 ## 相关页面
-→ [Hermes Agent 自进化机制](../ch03/095-hermes-agent.html)（Skills 系统概述）
+→ [Hermes Agent 自进化机制](../ch03/096-hermes-agent.html)（Skills 系统概述）
 → [winty·Hermes Self-Improving 概览](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-self-improving-overview-winty.md)（同系列）
 
 ## 相关实体
@@ -140,11 +140,11 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 
 - [你写的 Skill，及格了吗？](ch04/271-skill.html)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
-- [Hermes Agent](../ch03/095-hermes-agent.html)
+- [Hermes Agent](../ch03/096-hermes-agent.html)
 - [Qoder Skills 完全指南](../ch07/034-qoder-skills.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
-- [hermes-agent-self-evolving-source-analysis](../ch03/095-hermes-agent.html)
+- [hermes-agent-self-evolving-source-analysis](../ch03/096-hermes-agent.html)
 - [Claude Code Prompt 提示词体系源码解析](../ch09/061-claude-code-prompt.html)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)
 

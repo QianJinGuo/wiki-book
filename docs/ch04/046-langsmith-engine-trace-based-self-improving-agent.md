@@ -314,7 +314,7 @@ final_answer_mismatch
 
 ## 相关实体
 
-- [Hermes Agent Operator](../ch03/095-hermes-agent.html) — "模型侧自改进"路径（定时任务把对话总结成 Skill），与本文"系统侧自改进"互补
+- [Hermes Agent Operator](../ch03/096-hermes-agent.html) — "模型侧自改进"路径（定时任务把对话总结成 Skill），与本文"系统侧自改进"互补
 - [Agent Evolution 四阶段六维](../ch03/035-agent.html) — 第四阶段"自进化 Agent"包含本文的系统侧自改进机制
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 第五层"评估与观测"对应本文的 trace 分析
 - [Agent YAML 评测](../ch03/035-agent.html) — YAML-driven evaluation 是 Evaluator 工程化的一种

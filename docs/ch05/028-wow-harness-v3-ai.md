@@ -167,7 +167,7 @@ ESAA 出现是"好消息"——意味着这个方向不是孤立判断，是领�
 
 ## 相关对照
 - [Agent Harness 架构](ch05/058-agent-harness.html) —— 7 层 harness 模型
-- [Claude Code 20000 字符源码分析](../ch03/077-claude-code.html) —— 98.4% 基础设施论据
+- [Claude Code 20000 字符源码分析](../ch03/078-claude-code.html) —— 98.4% 基础设施论据
 - [Agent Harness 上下文管理](ch05/058-agent-harness.html) —— 工作集视角 + subagent 隔离
 - [Harness Engineering](ch05/120-harness-engineering.html) —— 系统性 harness 实践
 - [Agent Self-Improvement Six Mechanisms](../ch03/035-agent.html) —— 长期连贯性相关

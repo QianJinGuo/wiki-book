@@ -72,7 +72,7 @@ Anthropic 整理的打造 **AI 原生创业公司**实用手册，针对 2026 �
 | **Chat** | 快速交流、一次改写、头脑风暴 | 短上下文、单轮交互 |
 | **Claude Cowork** | 研究、分析、成稿文档 | 长上下文、多轮协作 |
 | **Claude Code** | 编写/测试/发布软件、代码库访问 | Agent 模式、工具执行 |
-Cowork 是手册中最值得关注的工具形态——它是 Chat 和 Code 之间的中间态，专门针对"耗时的知识工作"。这与 [CLAUDE Code 100 条规则](../ch03/077-claude-code.html) 中倡导的"研究伙伴"角色高度一致。
+Cowork 是手册中最值得关注的工具形态——它是 Chat 和 Code 之间的中间态，专门针对"耗时的知识工作"。这与 [CLAUDE Code 100 条规则](../ch03/078-claude-code.html) 中倡导的"研究伙伴"角色高度一致。
 
 ### PMF 验证的严格化
 Sean Ellis 测试（>40% 用户回答"如果不能继续使用会非常失望"）作为 PMF 退出标准，比 DAU/MAU 或功能完成率更直接地衡量了**真实的用户留存动机**。这个指标在 2026 年已经成为 SaaS 行业的标准，与传统"40% NPS"的粗糙衡量相比更具区分度。
@@ -129,12 +129,12 @@ Sean Ellis 测试（>40% 用户回答"如果不能继续使用会非常失望"�
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/298-ai-agent.html)
 - [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
 - [Claude Opus 4.7 发布分析](ch01/349-claude-opus-4-7.html)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/078-claude-code.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/397-agent-skills.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/976-claude.html)
 
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/077-claude-code.html)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/078-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)

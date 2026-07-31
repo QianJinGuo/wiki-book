@@ -77,10 +77,10 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 
 ## 与现有实体的关系
 
-- **与 [Claude Code 1 周年回顾](../ch03/077-claude-code.html)** 互补：1 周年是时间线 + 团队视角；本文是开发者工作流哲学
+- **与 [Claude Code 1 周年回顾](../ch03/078-claude-code.html)** 互补：1 周年是时间线 + 团队视角；本文是开发者工作流哲学
 - **与 [Harness Engineering 核心模式](../ch05/120-harness-engineering.html)** 互补：CE plan.md 循环是 harness engineering 的具体实现
 - **与 [工作流 Skill 模式](../ch04/271-skill.html)** 呼应：「任何做超过 2 次的事 → 做成技能」是 SkillOS 哲学的实战版
-- **与 [Hermes 自进化](../ch03/095-hermes-agent.html)** 平行：Matt 用 OpenClaw + Hermes 跑远程工作
+- **与 [Hermes 自进化](../ch03/096-hermes-agent.html)** 平行：Matt 用 OpenClaw + Hermes 跑远程工作
 - **与 [Agent 六机制](../ch03/035-agent.html)** 呼应：「先 plan 后 work」是六机制中"计划-执行分离"的具体实现
 
 ## 工程可复现项

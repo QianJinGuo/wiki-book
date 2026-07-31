@@ -232,7 +232,7 @@ agent 截断/摘要旧消息时，应该豁免 skill 内容（skill 指令是持
 
 ## 相关实体
 
-- [Claude Code Skill 编写指南](../ch03/077-claude-code.html) — Anthropic 官方 skill 编写指南
+- [Claude Code Skill 编写指南](../ch03/078-claude-code.html) — Anthropic 官方 skill 编写指南
 - [Superpowers 深度解读](../ch05/094-ai.html) — Rule/Gate/Hook 与 Iron Law 方法论
 - [Anthropic Skill 设计模式](ch01/989-anthropic.html) — 官方推荐的技巧和模式
 

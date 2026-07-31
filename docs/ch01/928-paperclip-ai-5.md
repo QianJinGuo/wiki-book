@@ -32,7 +32,7 @@
 - [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](../ch03/035-agent.html)
 - [Skill Rag Tsinghua Sra](../ch04/271-skill.html)
 - [Doubao Seed 2 Lite Agent Multimodal](../ch03/035-agent.html)
-- [Claude Code Search Architecture Tencent 2026](../ch03/077-claude-code.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04/710-claude-managed-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-newbie-guide-dotta.md)

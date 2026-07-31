@@ -89,7 +89,7 @@
 ## 关联实体
 
 - [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/094-claude-code-dynamic-workflows.html) — 主条目，51KB 完整多 Agent 编排指南
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html) — Claude Code 源码级机制
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html) — Claude Code 源码级机制
 - [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html) — Claude Code 中的 agent harness 构建
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html) — Agent 记忆系统

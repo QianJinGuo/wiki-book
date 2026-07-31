@@ -44,7 +44,7 @@ OpenMDW-1.1 许可证赋予了开发者最大的使用自由度，而 API 定价
 
 ### 5. 与开源 Agent 生态系统深度集成
 
-支持 vLLM、SGLang、TensorRT-LLM、Ollama 和 HuggingFace Transformers 等主流推理框架，意味着开发者可以无缝接入 [Claude Code](../ch03/077-claude-code.html)、[Codex](../ch01/517-codex.html) 或其他支持 BYOM 的 Agent 系统，而不受限于 Poolside 自身的工具链。这种生态兼容策略有助于其在快速演变的开源 Agent 工具链中保持长期相关性。
+支持 vLLM、SGLang、TensorRT-LLM、Ollama 和 HuggingFace Transformers 等主流推理框架，意味着开发者可以无缝接入 [Claude Code](../ch03/078-claude-code.html)、[Codex](../ch01/517-codex.html) 或其他支持 BYOM 的 Agent 系统，而不受限于 Poolside 自身的工具链。这种生态兼容策略有助于其在快速演变的开源 Agent 工具链中保持长期相关性。
 
 ## 实践启示
 
@@ -65,7 +65,7 @@ Laguna XS 2.1 是 Agentic Coding 领域当前最具竞争力的开源模型之�
 ## 相关实体
 
 - [Codex 五层架构](../ch01/517-codex.html)
-- [Claude Code 深度架构分析](../ch03/077-claude-code.html)
+- [Claude Code 深度架构分析](../ch03/078-claude-code.html)
 - [Pi Agent](../ch04/348-pi-agent.html)
 - [LLM Post-Training](../ch01/1274-llm.html)
 

@@ -15,7 +15,7 @@ https://developers.google.com/program/my-benefits
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
 - [Edgeclaw Bemit Lobster](../ch04/545-edgeclaw.html)
 - [Claude Opus 47](ch01/976-claude.html)
-- [Hermes Agent Getting Started Guide 2026](../ch03/095-hermes-agent.html)
+- [Hermes Agent Getting Started Guide 2026](../ch03/096-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-开发者福利每月免费领取-10-美金别忘了来领啊.md)
 

@@ -10,8 +10,8 @@
 
 - [canvas hackers shinyhunters say their official domain was su](../ch05/094-ai.html)
 - [canvas hackers shinyhunters say their official domain was su](ch12/037-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html)
-- [private fintech has quietly become bigger than public fintec](../ch03/107-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
-- [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/107-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
+- [private fintech has quietly become bigger than public fintec](../ch03/108-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
+- [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/108-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-04-15.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
@@ -42,7 +42,7 @@ Cyberscammers are bypassing banks’ security with illicit tools sold on Telegra
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/235-openclaw.html)
 
 ## 实践启示

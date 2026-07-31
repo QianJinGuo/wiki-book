@@ -8,7 +8,7 @@
 
 Hermes-Agent 的真正核心是 **Gateway（端口 8642）**，Chat 和 TUI 只是两个不同的前端载体。 上层用商业 Code CLI 做 Orchestrator（认知/控制层），下层用 Hermes-Agent 做执行框架（执行层），中间用 Gateway API + MCP 协议打通。
 
-这种分层架构的优势在于：商业 CLI 工具（如 [Claude Code](../ch03/077-claude-code.html)）具备深度推理和子代理分发能力，适合做认知层；而 Hermes-Agent 的 Kanban 系统提供稳定的多 worker 并发执行能力，适合做执行层。
+这种分层架构的优势在于：商业 CLI 工具（如 [Claude Code](../ch03/078-claude-code.html)）具备深度推理和子代理分发能力，适合做认知层；而 Hermes-Agent 的 Kanban 系统提供稳定的多 worker 并发执行能力，适合做执行层。
 
 ## Kanban 架构设计
 

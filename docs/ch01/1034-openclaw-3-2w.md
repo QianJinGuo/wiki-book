@@ -48,7 +48,7 @@
 - [Ai Agent Harness Construction Akshay Baoyu](ch01/973-ai-agent-harness.html)
 - [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch05/094-ai.html)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/094-ai.html)
-- [Hermes Agent V014 Architecture Shugex](../ch03/095-hermes-agent.html)
+- [Hermes Agent V014 Architecture Shugex](../ch03/096-hermes-agent.html)
 
 ## 实践启示
 

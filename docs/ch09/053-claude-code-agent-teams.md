@@ -206,7 +206,7 @@ Context 隔离不只是防止污染，还有另一层价值：**它让并行变�
 - [Claude Code Dynamic Workflows Multi Agent Orchestration](ch09/094-claude-code-dynamic-workflows.html)
 - [Claude Code Agent View](ch09/003-claude-code-agent-view.html)
 - [Claude Code Agent View Huashu](ch09/003-claude-code-agent-view.html)
-- [Claude Code Architecture](../ch03/077-claude-code.html)
+- [Claude Code Architecture](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agent-teams-xingxiaozhao.md)
 - [routa 多智能体协同交付平台](../ch03/035-agent.html)

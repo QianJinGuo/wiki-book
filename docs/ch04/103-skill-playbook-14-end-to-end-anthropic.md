@@ -213,10 +213,10 @@ Skill 没触发
 - Skill 系统综述 — [Agent Skills Comprehensive Survey](ch04/397-agent-skills.html)
 - Skill 元技能 — [Meta Skill](../ch07/025-meta-skill.html)
 - Skill vs Coze/Dify/n8n — [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](ch04/397-agent-skills.html)
-- Skill 质量优化 — [Skills Refiner Design Quality Evaluation Framework](../ch03/071-skills.html)
+- Skill 质量优化 — [Skills Refiner Design Quality Evaluation Framework](../ch03/072-skills.html)
 - Anthropic 95% 数据分析 Skill 栈 — [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/989-anthropic.html)
 - AI 技能自动演进 — [Ai Skill Evolution Framework](../ch07/010-ai-skill-evolution.html)
-- Claude Code 架构 — [Claude Code Architecture](../ch03/077-claude-code.html)
+- Claude Code 架构 — [Claude Code Architecture](../ch03/078-claude-code.html)
 - AHE 通用 Harness — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 
 ---

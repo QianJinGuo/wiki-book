@@ -134,7 +134,7 @@ OpenAI 2026年初提出：工程团队首要职责不再是写代码，而是**�
 
 ## Reference
 ## 相关实体
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
 - [Agent Memory Architecture Ruofei](../ch04/121-agent-memory.html)
 - [Gepa Optimize Anything](ch01/295-gepa-optimize-anything.html)
 - [Tmall Marketing Ai Workflow Best Practices](../ch05/094-ai.html)

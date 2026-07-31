@@ -70,7 +70,7 @@ OpenAI 评估了内核旁路（DPDK 等）但最终选择留在用户态，理�
 
 - [多区域 GPU 推理调度](../ch04/237-agentic.html)
 - [TokenSpeed 推理引擎](../ch04/705-tokenspeed-agentic-inference-engine.html)
-- [跨区域推理](../ch11/294-amazon-bedrock.html)
+- [跨区域推理](../ch11/295-amazon-bedrock.html)
 - [CloudFront 全球部署](../ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-low-latency-voice-ai-900m-users-bytebytego.md)

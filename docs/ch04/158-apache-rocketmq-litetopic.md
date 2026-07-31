@@ -201,7 +201,7 @@ LiteTopic 适合以下场景：
 - [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Agent Skills Teams Architecture Evolution Selection Guide](ch04/238-agent-skills-teams.html)
-- [Hermes Agent K2 6 Multi Agent](../ch03/095-hermes-agent.html)
+- [Hermes Agent K2 6 Multi Agent](../ch03/096-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rocketmq-5-5-0-litetopics-ai-agent-messaging.md)
 

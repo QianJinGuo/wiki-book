@@ -76,8 +76,8 @@ Gemini Spark 通过 Antigravity 框架（Tasks + Skills + Schedules）来应对�
 
 ## 相关实体
 
-- [Agent Teams 对比](../ch03/077-claude-code.html) — 三家 Agent 产品路线对比
-- [Claude Science](../ch03/077-claude-code.html) — Anthropic 的 Agent 平台化路径
+- [Agent Teams 对比](../ch03/078-claude-code.html) — 三家 Agent 产品路线对比
+- [Claude Science](../ch03/078-claude-code.html) — Anthropic 的 Agent 平台化路径
 - [Harness Engineering](../ch05/120-harness-engineering.html) — Agent 控制面板的系统方法论
 - [Agent落地真相](../ch03/035-agent.html) — Agent 从演示到投产的核心挑战
 - [Agent Harness 招聘实践](../ch05/058-agent-harness.html) — Agent 在企业场景的工程实践

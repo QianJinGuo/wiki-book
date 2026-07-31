@@ -76,8 +76,8 @@ subgoals 让用户在执行过程中补充约束，不必推翻原目标重来�
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](../ch01/358-codeindex.html)
 - [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/397-agent-skills.html)
-- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/077-claude-code.html)
-- [Claude Code Agent 工程设计](../ch03/069-claude-code-agent.html)
+- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/078-claude-code.html)
+- [Claude Code Agent 工程设计](../ch03/070-claude-code-agent.html)
 - [你不知道的 Agent 原理架构与工程实践](ch04/355-agent-principle-architecture-engineering-practice.html)
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch03/035-agent.html)
 

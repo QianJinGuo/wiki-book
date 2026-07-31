@@ -64,7 +64,7 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 
 这一设计直接解决 SRE 实践中的核心痛点：**shift handoff 时的 knowledge loss**。无论当班工程师是谁，AI 生成的 RCA 都遵循相同结构，下一班工程师可在 30 秒内快速理解 incident 状态。
 
-与 [Hermes Agent Tool System Architecture](../ch03/095-hermes-agent.html) 等"工具架构"主题 entity 的差异：本 entity 关注 **incident response 流程标准化** 而非 agent 内部工具系统设计。
+与 [Hermes Agent Tool System Architecture](../ch03/096-hermes-agent.html) 等"工具架构"主题 entity 的差异：本 entity 关注 **incident response 流程标准化** 而非 agent 内部工具系统设计。
 
 ### 4. 异步补全 vs 实时编排的对比
 

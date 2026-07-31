@@ -18,7 +18,7 @@ The Founder's Playbook
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)
 - [Anthropic Pm Jess Yan Managed Agents](ch01/989-anthropic.html)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/212-anthropic-claude-managed-agents.html)
-- [Claude Code Hackathon Winners 2026](../ch03/077-claude-code.html)
+- [Claude Code Hackathon Winners 2026](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-founder-playbook-ai-native-startup.md)
 

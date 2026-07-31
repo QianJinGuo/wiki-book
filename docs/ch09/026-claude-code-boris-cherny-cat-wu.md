@@ -144,7 +144,7 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [Boris Cherny Interview 2026: 从 IDE 到 Agent Console](../ch03/035-agent.html)
 - [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台 v2](../ch03/035-agent.html)
 - [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude Code 一周年回顾 Boris+Cat 2026](../ch03/077-claude-code.html)
+- [Claude Code 一周年回顾 Boris+Cat 2026](../ch03/078-claude-code.html)
 - [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/601-agent-loop.html)
 - [Claude Code Prompt 源码分析](ch09/061-claude-code-prompt.html)
 - [Claude Code Prompt 源码分析 fanone](ch09/061-claude-code-prompt.html)

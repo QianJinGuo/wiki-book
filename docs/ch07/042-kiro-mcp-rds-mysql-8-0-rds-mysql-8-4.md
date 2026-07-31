@@ -22,7 +22,7 @@
 
 ## 相关实体
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/561-amazon-bedrock-agentcore.html)
-- [How A Mid Tier Enterprise Saas Provider Automates Cloud Supp](../ch03/064-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.html)
+- [How A Mid Tier Enterprise Saas Provider Automates Cloud Supp](../ch03/065-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.html)
 - [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/290-aws-devops-agent.html)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/281-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)

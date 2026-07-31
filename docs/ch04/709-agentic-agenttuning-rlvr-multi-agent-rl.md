@@ -63,7 +63,7 @@ Multi-Agent RL的解法是将"做什么"（工具调用）和"怎么说"（回�
 
 ### 5. 从task-specific训练到通用模型+Skill的演进方向
 
-文章在"未来展望"中提到"从task-specific训练向通用模型 + Skill渐进式披露演进"，这一方向与[QoderWork Skills开发实践](../ch03/071-skills.html)中的四层分离架构形成了有趣的呼应：
+文章在"未来展望"中提到"从task-specific训练向通用模型 + Skill渐进式披露演进"，这一方向与[QoderWork Skills开发实践](../ch03/072-skills.html)中的四层分离架构形成了有趣的呼应：
 
 - **task-specific训练**：为每个任务训练专门的模型，精度高但成本高、扩展性差
 - **通用模型 + Skill**：一个底层模型通过不同的SKILL.md/配置适应不同任务，成本低、扩展性好
@@ -84,7 +84,7 @@ Multi-Agent RL的解法是将"做什么"（工具调用）和"怎么说"（回�
 
 ## 相关实体
 
-- [QoderWork Skills开发实践](../ch03/071-skills.html)
+- [QoderWork Skills开发实践](../ch03/072-skills.html)
 - [Harness Engineering探索之旅](../ch05/120-harness-engineering.html)
 - [Agent落地真相](../ch03/035-agent.html)
 - [AgentCore旅行分配系统](ch04/689-agentcore-harness.html)

@@ -36,7 +36,7 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/034-qoder-skills.html)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/269-agent-skill.html)
 - [Qoder Skills 完全指南](../ch07/034-qoder-skills.html)
-- [Hermes Agent](../ch03/095-hermes-agent.html)
+- [Hermes Agent](../ch03/096-hermes-agent.html)
 - [你写的 Skill，及格了吗？](ch04/271-skill.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch12/030-mythos.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)

@@ -43,10 +43,10 @@ Anthropic 的 Harness 方法论体现了从问题诊断到机制设计的完整�
 7. **200k 是当前的实际可靠边界**：即使模型宣称支持 1M token，在 Agent 模式下约 200k 处开始退化。在设计任务拆解时，以 150k-200k token 为一个执行单元，上下文重置为默认策略而非补救手段。
 8. **成本问题已升级为一级风险**：过去模型绕路损失的是时间，现在错误尝试直接消耗 token credits 和账号稳定性。预算控制和异常终止应该是 Harness 的内置组件。
 ## 相关实体
-- [Claude Code Governance Soft Rules](../ch03/077-claude-code.html)
-- [Claude Code Large Codebase Enterprise Deployment](../ch03/077-claude-code.html)
+- [Claude Code Governance Soft Rules](../ch03/078-claude-code.html)
+- [Claude Code Large Codebase Enterprise Deployment](../ch03/078-claude-code.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/598-anthropic-claude-code.html)
-- [Claude Code Founder Harness 100 Lines](../ch03/077-claude-code.html)
+- [Claude Code Founder Harness 100 Lines](../ch03/078-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/058-agent-harness.html)
 
 ---

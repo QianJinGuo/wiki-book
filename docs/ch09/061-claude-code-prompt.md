@@ -157,8 +157,8 @@ coordinator/worker/verifier/planner 四种 Agent 角色通过强角色边界 SOP
 - [Anthropic Prompt Caching Claude Code Agihunt](../ch01/217-anthropic-prompt-caching-claude-code.html)
 - [Anthropic Prompt Caching Claude Code](../ch01/217-anthropic-prompt-caching-claude-code.html)
 - [Claude Code Prompt Source Analysis](ch09/061-claude-code-prompt.html)
-- [Claude Code Self Repair Hooks Memory Config](../ch03/077-claude-code.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
 
 ---
 

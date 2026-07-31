@@ -133,7 +133,7 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 - [腾讯研究院Ai速递 20260507](../ch05/094-ai.html)
 - [Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](../ch04/164-karpathy-ai.html)
 - [Kasra Blog Llm Hacking Empirical Test](ch01/1274-llm.html)
-- [Hermes Agent V014 Architecture Shugex](../ch03/095-hermes-agent.html)
+- [Hermes Agent V014 Architecture Shugex](../ch03/096-hermes-agent.html)
 ## 与 Hermes Agent Skill 互优化的关联
 
 **[Hermes Agent Skill 互优化](ch01/332-hermes-agent-skill.html)**（KK大叔 4 轮互优化实验，2026-06）是 GEPA 通用优化方法论在 **Skill 自进化场景**的具体落地。

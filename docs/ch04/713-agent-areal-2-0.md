@@ -91,8 +91,8 @@ AReaL 2.0 在 Hermes Agent 上展示了低侵入式接入方式——把演示�
 ## 相关实体
 
 - [Agent自我改进循环](../ch05/009-harness.html) — Agent 通过运行轨迹持续优化的核心理念
-- [Hermes Agent](../ch03/095-hermes-agent.html) — AReaL 2.0 的 Hermes 接入范例
-- [Claude Code 架构分析](../ch03/077-claude-code.html) — Claude Code 的 Agent RL 训练范例
+- [Hermes Agent](../ch03/096-hermes-agent.html) — AReaL 2.0 的 Hermes 接入范例
+- [Claude Code 架构分析](../ch03/078-claude-code.html) — Claude Code 的 Agent RL 训练范例
 - [Agent落地真相](../ch03/035-agent.html) — Agent 从演示到投产的挑战
 - [Harness Engineering](../ch05/120-harness-engineering.html) — Agent 控制平面的系统方法论
 

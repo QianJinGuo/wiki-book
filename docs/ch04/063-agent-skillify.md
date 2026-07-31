@@ -99,14 +99,14 @@ OpenAI 的"garbage collection"思路值得借鉴：后台定期运行清理 Agen
 - [AIAIGC峰会嘉宾阵容](ch04/528-aiaigc.html)
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/235-openclaw.html)
 - [从提需求到部署发布全AI全自动化后研发效能全面跃升](../ch05/094-ai.html)
-- [Hermes Agent vs OpenClaw 对比分析](../ch03/095-hermes-agent.html)
+- [Hermes Agent vs OpenClaw 对比分析](../ch03/096-hermes-agent.html)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/271-skill.html)
 - [Harness Engineering 实战：AI Coding 率从 25% 提升至 90%](../ch05/120-harness-engineering.html)
 - [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
 - [OpenCLAW 完全指南](../ch11/235-openclaw.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1036-openclaw-agent.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
 
 ## 深度分析

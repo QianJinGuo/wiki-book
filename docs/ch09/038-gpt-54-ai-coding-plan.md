@@ -112,7 +112,7 @@
 - [Pi Openclaw Coding Harness](../ch11/235-openclaw.html)
 - [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](../ch01/976-claude.html)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/235-openclaw.html)
-- [Hermes Agent Vs Openclaw Comparison](../ch03/095-hermes-agent.html)
+- [Hermes Agent Vs Openclaw Comparison](../ch03/096-hermes-agent.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](../ch05/050-openspec.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-54-烧完额度后我把七家国产-ai-公司-coding-plan-对比了一遍想不到最应该买的竟然是这家.md)

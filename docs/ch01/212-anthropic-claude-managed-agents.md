@@ -105,7 +105,7 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 ## 相关产品/人物
 - [Claude Managed Agents 开发者指南](../ch04/710-claude-managed-agents.html)
 - [Anthropic Computer Use 最佳实践](ch01/937-anthropic-computer-use.html)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/989-anthropic.html) — 另一篇技术解读，覆盖 API 细节和定价
 - [Anthropic PM 的 Agentic 工作流](../ch04/477-anthropic-pm-agentic.html) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-managed-agents-platform-launch.md)

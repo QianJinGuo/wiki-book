@@ -34,10 +34,10 @@ Obsidian与Claude Code的集成本质上解决了AI编程工具的一个核心�
 
 ## 相关实体
 - [Obsidian + Claude Code 集成指南](ch09/140-obsidian-claude-code-integration-guide.html)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/076-obsidian-claude-code.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
 - [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/957-claude-code-memory-setup-obsidian-graphify.html)
-- [Claude Code 命令完全指南](../ch03/077-claude-code.html)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/077-claude-code.html)
+- [Claude Code 命令完全指南](../ch03/078-claude-code.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/078-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/089-claude-code-1.html)
 
 ---

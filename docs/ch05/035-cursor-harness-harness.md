@@ -75,8 +75,8 @@ Cursor 另外看了两个代理指标：
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
 
 ## 相关实体
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
-- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/095-hermes-agent.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/096-hermes-agent.html)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/009-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch05/009-harness.html)
@@ -92,7 +92,7 @@ Cursor 另外看了两个代理指标：
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/989-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](ch05/009-harness.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
 - [吴恩达：AI 将最先杀死前端](ch05/094-ai.html)
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/397-agent-skills.html)
 - [天猫新品营销技术团队AI编码实战指南（上）](ch05/094-ai.html)

@@ -328,7 +328,7 @@
 - [PilotDeck](../ch03/035-agent.html) —— 多项目隔离
 - [Rein](../ch03/035-agent.html) —— 4 模块 + 5 类型边界
 - [Microsoft Build 2026](../ch03/035-agent.html) —— 全栈 AI
-- [Claude Code 20000 字符源码分析](../ch03/077-claude-code.html) —— 98.4% 基础设施
+- [Claude Code 20000 字符源码分析](../ch03/078-claude-code.html) —— 98.4% 基础设施
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-oriented-infra-intent-driven-code-sedimentation.md)
 

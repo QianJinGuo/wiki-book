@@ -37,7 +37,7 @@ CEO 盛颖是 LMSYS Org 发起者、SGLang 主要创始人之一，博士期间�
 - [Nvidia Embraces Ai Investor Topping 40 Billion In Equity Bets 2026](../ch05/094-ai.html)
 - [Edgeclaw Bemit Lobster](../ch04/545-edgeclaw.html)
 - [Claude Opus 47](ch01/976-claude.html)
-- [Hermes Agent Getting Started Guide 2026](../ch03/095-hermes-agent.html)
+- [Hermes Agent Getting Started Guide 2026](../ch03/096-hermes-agent.html)
 - [Gpt 54 烧完额度后我把七家国产 Ai 公司 Coding Plan 对比了一遍想不到最应该买的竟然是这家](../ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/拿下1亿美元种子轮SGLang团队创立RadixArk打造下一代开放AI基础设施.md)

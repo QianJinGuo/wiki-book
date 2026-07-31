@@ -51,7 +51,7 @@ Furbo 的系统架构采用双层设计：
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
 
 ## 相关实体
-- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](ch11/305-amazon-nova.html)
+- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](ch11/306-amazon-nova.html)
 - [Reinforcing Recursive Language Models | alphaXiv](../ch01/878-reinforcing-recursive-language-models-alphaxiv.html)
 - [Language Models and Meaning](../ch01/433-language-models-and-meaning.html)
 

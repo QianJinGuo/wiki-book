@@ -17,8 +17,8 @@
 - [Anthropic Computer Use 最佳实践](../ch01/937-anthropic-computer-use.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/976-claude.html)
 
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
-- [Claude Code Agent 工程设计](../ch03/069-claude-code-agent.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
+- [Claude Code Agent 工程设计](../ch03/070-claude-code-agent.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/034-qoder-skills.html)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/094-ai.html)
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01/989-anthropic.html)

@@ -262,12 +262,12 @@ regression_failures | rejection_reason | review_notes
 | [Darwin Skill 2 Huashu](ch04/271-skill.html) | **Darwin Skill 2** | Darwin Skill 进化 |
 | [Embabel](../ch07/021-embabel.html) | **Embabel** | Embabel 自进化框架 |
 | [Pith Train Agent Native Moe Training Framework](../ch03/035-agent.html) | **Pith 训练框架** | Agent 原生 MoE 训练 |
-| [Hermes Agent 12 Layer Full Configuration Guide](../ch03/095-hermes-agent.html) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
+| [Hermes Agent 12 Layer Full Configuration Guide](../ch03/096-hermes-agent.html) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
 | [Hermes 9 Module Architecture](../ch01/742-9.html) | **Hermes 9 模块** | Hermes 9 模块架构 |
 | [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/120-harness-engineering.html) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
 | [Slim Cuhk Skill Lifecycle Agentic Rl](ch04/327-agentic-rl.html) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
 | [Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/271-skill.html) | **Deli Auto Research** | Continual learning + self-improvement |
-| [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/077-claude-code.html) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |
+| [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/078-claude-code.html) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |
 
 ## 十四、关键金句
 

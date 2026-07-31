@@ -80,7 +80,7 @@ CCC 在文中提到了 Matt Pocock 的 grilling 方式（在约束中生长）�
 
 ## 相关实体
 
-- [Matt Pocock Skills vs Superpowers](../ch03/071-skills.html) — 同一路线对比的另一视角
+- [Matt Pocock Skills vs Superpowers](../ch03/072-skills.html) — 同一路线对比的另一视角
 - [Superpowers 三器合一](ch05/111-ai-coding.html) — Superpowers 在 Comet+OpenSpec 流水线中的角色
 - [Agent vs Workflow 控制权连续谱](../ch04/678-agent-vs-workflow.html) — 架构选择的底层框架
 - [Agent Harness 生产化](ch05/058-agent-harness.html) — 生产环境中的 Agent 约束与可观测性设计

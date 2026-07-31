@@ -47,9 +47,9 @@ AWS Generative AI Model Agility Solution提供6步框架：评估→选择→迁
 - [MLflow v3.10：生成式AI开发新特性](ch11/040-aws-mlflow-v310-generative-ai-development.html)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/298-ai-agent.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/060-agentic-ai.html)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)
 - [Building Blocks for Foundation Model Training and Inference on AWS](ch11/121-building-blocks-for-foundation-model-training-and-inference.html)
-- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](../ch03/071-skills.html)
+- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](../ch03/072-skills.html)
 
 ---
 

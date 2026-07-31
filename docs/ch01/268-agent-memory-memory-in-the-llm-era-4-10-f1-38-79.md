@@ -50,9 +50,9 @@
 
 ## 相关实体
 - [memory agent systems cobanov](../ch04/604-memory-agent-systems-cobanov.html)
-- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/095-hermes-agent.html)
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/096-hermes-agent.html)
 - [AI Agent 记忆系统架构](../ch04/156-how-ai-agent-memory-works.html)
-- [深度拆解 Hermes Agent 记忆系统](../ch03/095-hermes-agent.html)
+- [深度拆解 Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 
 - [ai agent memory systems](../ch04/121-agent-memory.html)
 

@@ -96,7 +96,7 @@ memory-agentcore 的核心架构决策是**不占用 OpenClaw 独占 Slot**，�
 - [Agentic Design System - From Chatbot to Orchestration](../ch01/009-agentic-design-system-from-chatbot-to-orchestration.html)
 - [快时尚电商行业智能体设计思路与应用实践（八）基于 WebSocket 的语音系统：Nova 2 Sonic, AgentCore, Strands Agents 企业级架构实践 | 亚马逊AWS官方博客](../ch03/035-agent.html)
 - [把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 | 亚马逊AWS官方博客](ch11/235-openclaw.html)
-- [深度拆解 Hermes Agent 记忆系统](../ch03/095-hermes-agent.html)
+- [深度拆解 Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
 ## Related

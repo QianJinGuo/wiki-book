@@ -90,7 +90,7 @@ Thrashing 系数取决于 Loop 设计质量——Skills 是否充分、终止逻
 ## 相关实体
 
 - [Agent Loop 工程手册](ch05/004-loop-engineering.html) — 腾讯陈进的8个未解问题 + SELF Protocol
-- [Claude Code 之父访谈](../ch03/077-claude-code.html) — Boris Cherny 关于 Loop 的原始论述
+- [Claude Code 之父访谈](../ch03/078-claude-code.html) — Boris Cherny 关于 Loop 的原始论述
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Loop 的前身概念
 
 ---

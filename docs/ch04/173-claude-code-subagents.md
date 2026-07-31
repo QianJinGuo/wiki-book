@@ -160,11 +160,11 @@ Kaxil Naik 的判断"Harness matters more than the model"是本文最被低估�
 3. 逐步扩大子代理职责范围
 ---
 ## 相关实体
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/077-claude-code.html)
-- [Subagents 详解Claude Code 如何避免上下文污染](../ch03/077-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
-- [Claude Code Source Architecture](../ch03/077-claude-code.html)
-- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/077-claude-code.html)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/078-claude-code.html)
+- [Subagents 详解Claude Code 如何避免上下文污染](../ch03/078-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
+- [Claude Code Source Architecture](../ch03/078-claude-code.html)
+- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-subagents-context-hygiene.md)
 

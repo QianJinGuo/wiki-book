@@ -112,12 +112,12 @@ Kimi Code CLI 的**多模态输入 + Agent Swarm** 特性，更适合做需要�
 - 发布：2026-05-10
 
 ## 相关实体
-- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
-- [Claude Code 架构解析](../ch03/077-claude-code.html)
+- [Claude Code 设计原则与对照分析](../ch03/078-claude-code.html)
+- [Claude Code 架构解析](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-kanban-deep-test-by-wjjagi-2026.md)
 
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/078-claude-code.html)
 
 ---
 

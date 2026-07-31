@@ -13,9 +13,9 @@ Mohamed bin Zayed AI University VILA-Lab 发表的论文（arxiv: 2604.14228）�
 
 ## 相关实体
 - [Andrej Karpathy Claude Md 134K Stars 2026](ch01/237-claude-md.html)
-- [Claude Code Self Repair Hooks Memory Config](../ch03/077-claude-code.html)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)
 - [Code Review Graph](ch01/833-code-review-graph-claude-code-6-8-token.html)
-- [Claude Code Hackathon Winners 2026](../ch03/077-claude-code.html)
+- [Claude Code Hackathon Winners 2026](../ch03/078-claude-code.html)
 - [Claude Code Harness Deep Understanding](ch01/422-claude-code-harness-deep-understanding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-engineering-truth-1.6-98.4.md)

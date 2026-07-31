@@ -114,7 +114,7 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 - [The Bitter Lesson Versus The Garbage Can](../ch04/353-the-bitter-lesson-versus-the-garbage-can.html)
 - [Management As Ai Superpower](ch01/499-management-as-ai-superpower.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Co Existence And The End Of Co Intelligence](ch01/639-co-existence-and-the-end-of-co-intelligence.html)

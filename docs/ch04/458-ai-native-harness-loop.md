@@ -80,7 +80,7 @@ Agent 持续采集运行数据，AI 自动分析高频问题/质量/效率，生
 - [Harness Engineering](../ch05/120-harness-engineering.html) — Harness 工程基础概念
 - [Loop Engineering 深度解读](../ch05/004-loop-engineering.html) — 循环工程方法论
 - [腾讯 Harness 工程实践](../ch05/072-cdn-lego-harness-engineering.html) — 腾讯 Harness 落地经验
-- [Claude Code 大代码库 Harness 配置](../ch03/077-claude-code.html) — Harness 配置实践
+- [Claude Code 大代码库 Harness 配置](../ch03/078-claude-code.html) — Harness 配置实践
 
 ---
 
