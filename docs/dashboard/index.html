@@ -214,6 +214,34 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
   .daily-card{flex-direction:column}
   .daily-icon{font-size:1.5rem}
 }
+
+/* ── Visualization Section ─────────────────────────── */
+.viz-section{max-width:1400px;margin:0 auto .8rem;padding:0 1rem}
+.viz-header{display:flex;justify-content:space-between;align-items:center;cursor:pointer;padding:.6rem 0;border-bottom:1px solid var(--border);margin-bottom:.6rem;user-select:none}
+.viz-header h2{font-size:1rem;font-weight:700;color:var(--accent2);margin:0}
+.viz-toggle-icon{font-size:.78rem;color:var(--text3);transition:transform .2s}
+.viz-panels{display:none;padding-bottom:.5rem}
+.viz-panels.open{display:block}
+.viz-tabs{display:flex;gap:.4rem;margin-bottom:.8rem;flex-wrap:wrap}
+.viz-tab{padding:.4rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text2);cursor:pointer;font-size:.78rem;transition:all .2s}
+.viz-tab:hover{border-color:var(--accent);color:var(--text)}
+.viz-tab.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.viz-panel{display:none}
+.viz-panel.active{display:block}
+.viz-hint{font-size:.72rem;color:var(--text3);margin-bottom:.6rem}
+.mermaid-container{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem;overflow-x:auto;min-height:120px}
+.mermaid-container svg{max-width:100%;height:auto}
+.sankey-container{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem;overflow-x:auto;min-height:200px}
+.coverage-container{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem}
+.cov-row{display:flex;align-items:center;gap:.5rem;padding:.35rem 0;border-bottom:1px solid var(--surface2)}
+.cov-row:last-child{border-bottom:none}
+.cov-label{font-size:.75rem;min-width:100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--text2)}
+.cov-bar-wrap{flex:1;height:14px;background:var(--surface2);border-radius:7px;overflow:hidden;position:relative}
+.cov-bar-fill{height:100%;border-radius:7px;transition:width .5s;position:relative}
+.cov-bar-read{position:absolute;top:0;left:0;height:100%;border-radius:7px;opacity:.5}
+.cov-num{font-size:.72rem;color:var(--text3);min-width:55px;text-align:right}
+.cov-tooltip{position:absolute;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .6rem;font-size:.72rem;color:var(--text);z-index:10;pointer-events:none;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+
 </style>
 </head>
 <body>
@@ -250,7 +278,31 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
   <div class="progress-bars" id="progress-bars"></div>
 </div>
 
-
+<div class="viz-section" id="viz-section">
+  <div class="viz-header" id="viz-toggle">
+    <h2>📊 知识图谱与学习分析</h2>
+    <span class="viz-toggle-icon" id="viz-toggle-icon">▶ 展开</span>
+  </div>
+  <div class="viz-panels" id="viz-panels">
+    <div class="viz-tabs">
+      <button class="viz-tab active" data-tab="graph">🗺️ 章节图谱</button>
+      <button class="viz-tab" data-tab="flow">🔄 阅读流</button>
+      <button class="viz-tab" data-tab="coverage">📈 章节覆盖</button>
+    </div>
+    <div class="viz-panel active" id="viz-graph">
+      <div class="viz-hint">20 章知识图谱 · 节点大小=文章数 · 连线=共享阶段</div>
+      <div id="mermaid-graph" class="mermaid-container"></div>
+    </div>
+    <div class="viz-panel" id="viz-flow">
+      <div class="viz-hint">阅读进度流 · 从未读到掌握的漏斗</div>
+      <div id="sankey-container" class="sankey-container"></div>
+    </div>
+    <div class="viz-panel" id="viz-coverage">
+      <div class="viz-hint">各章节阅读覆盖率 · 悬浮查看详情</div>
+      <div id="coverage-container" class="coverage-container"></div>
+    </div>
+  </div>
+</div>
 
 <div class="daily-section" id="daily-section">
   <div class="daily-card" id="daily-card">
@@ -975,6 +1027,7 @@ async function init(){
   render();
   renderRecallPanel();
   renderDailyCard();
+  if(vizOpen) renderActiveViz();
 }
 
 // ── Countdown ─────────────────────────────────────────────────
@@ -1138,6 +1191,7 @@ function render(){
   renderProgress();
   renderRecallPanel();
   renderDailyCard();
+  if(vizOpen) renderActiveViz();
 
   const content = document.getElementById('content');
   if(filtered.length === 0){
@@ -1231,6 +1285,269 @@ document.getElementById('user-id').addEventListener('change', e => {
 
 document.getElementById('sync-push').addEventListener('click', pushToCloud);
 document.getElementById('sync-pull').addEventListener('click', pullFromCloud);
+
+
+// ── Visualization Section ─────────────────────────────────────
+let vizOpen = false;
+// Visualization rendering: pure SVG, no external dependencies
+
+function toggleViz(){
+  vizOpen = !vizOpen;
+  const panels = document.getElementById('viz-panels');
+  const icon = document.getElementById('viz-toggle-icon');
+  panels.classList.toggle('open', vizOpen);
+  icon.textContent = vizOpen ? '\u25BC \u6536\u8D77' : '\u25B6 \u5C55\u5F00';
+  if(vizOpen) renderActiveViz();
+}
+
+function switchVizTab(tab){
+  document.querySelectorAll('.viz-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  document.querySelectorAll('.viz-panel').forEach(p => p.classList.toggle('active', p.id === 'viz-' + tab));
+  renderActiveViz();
+}
+
+function renderActiveViz(){
+  const activeTab = document.querySelector('.viz-tab.active')?.dataset.tab;
+  if(activeTab === 'graph') renderKnowledgeGraph();
+  else if(activeTab === 'flow') renderReadingFlow();
+  else if(activeTab === 'coverage') renderCoverage();
+}
+
+function renderKnowledgeGraph(){
+  if(!DATA) return;
+  const el = document.getElementById('mermaid-graph');
+  
+  // Build chapter node data
+  const chData = {};
+  for(const [ch, name] of Object.entries(DATA.chapters)){
+    const arts = DATA.articles.filter(a => a.chapter === ch);
+    if(arts.length === 0) continue;
+    chData[ch] = { name: name.replace(/^[^\s]+\s/, ''), count: arts.length, ch };
+  }
+  
+  // Build edges: chapters that share phases
+  const phaseChapters = {};
+  for(const a of DATA.articles){
+    if(!phaseChapters[a.phase]) phaseChapters[a.phase] = new Set();
+    phaseChapters[a.phase].add(a.chapter);
+  }
+  const edgePairs = [];
+  const edgeSet = new Set();
+  for(const [pid, chs] of Object.entries(phaseChapters)){
+    const arr = [...chs].filter(c => chData[c]);
+    for(let i = 0; i < arr.length; i++){
+      for(let j = i + 1; j < arr.length; j++){
+        const key = [arr[i], arr[j]].sort().join('--');
+        if(!edgeSet.has(key)){
+          edgeSet.add(key);
+          edgePairs.push([arr[i], arr[j]]);
+        }
+      }
+    }
+  }
+  
+  // Render as SVG force-directed-like layout
+  const chKeys = Object.keys(chData);
+  const W = 780, H = 420;
+  const cx = W / 2, cy = H / 2;
+  const R = 150; // orbit radius
+  
+  // Position chapters in a circle
+  const nodes = {};
+  chKeys.forEach((ch, i) => {
+    const angle = (i / chKeys.length) * Math.PI * 2 - Math.PI / 2;
+    nodes[ch] = {
+      x: cx + R * Math.cos(angle),
+      y: cy + R * Math.sin(angle),
+      d: chData[ch]
+    };
+  });
+  
+  const maxCount = Math.max(...Object.values(chData).map(d => d.count));
+  
+  let svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" style="width:100%;max-width:780px;margin:0 auto;display:block" xmlns="http://www.w3.org/2000/svg">';
+  svg += '<rect width="' + W + '" height="' + H + '" fill="#111827" rx="8"/>';
+  
+  // Draw edges
+  for(const [a, b] of edgePairs){
+    if(!nodes[a] || !nodes[b]) continue;
+    const na = nodes[a], nb = nodes[b];
+    svg += '<line x1="' + na.x + '" y1="' + na.y + '" x2="' + nb.x + '" y2="' + nb.y + '" stroke="#334155" stroke-width="1" opacity="0.5"/>';
+  }
+  
+  // Draw nodes
+  const colors = {
+    'ch01': '#8b5cf6', 'ch02': '#6366f1', 'ch03': '#3b82f6', 'ch04': '#ef4444',
+    'ch05': '#f97316', 'ch06': '#eab308', 'ch07': '#22c55e', 'ch08': '#14b8a6',
+    'ch09': '#06b6d4', 'ch10': '#0ea5e9', 'ch11': '#a855f7', 'ch12': '#ec4899',
+    'ch13': '#f43f5e', 'ch14': '#d946ef', 'ch15': '#8b5cf6', 'ch16': '#6366f1',
+    'ch17': '#3b82f6', 'ch18': '#06b6d4', 'ch19': '#22c55e', 'ch20': '#f59e0b'
+  };
+  
+  for(const [ch, node] of Object.entries(nodes)){
+    const d = node.d;
+    const color = colors[ch] || '#8b5cf6';
+    const r = Math.max(14, 10 + (d.count / maxCount) * 28);
+    const readCount = DATA.articles.filter(a => a.chapter === ch && getLevel(a.entity)).length;
+    const pct = d.count ? Math.round(readCount / d.count * 100) : 0;
+    
+    // Outer ring (read progress)
+    if(pct > 0){
+      const arcLen = pct / 100 * Math.PI * 2;
+      const largeArc = pct > 50 ? 1 : 0;
+      const x2 = node.x + r * Math.sin(arcLen);
+      const y2 = node.y - r * Math.cos(arcLen);
+      svg += '<path d="M' + node.x + ',' + (node.y - r) + ' A' + r + ',' + r + ' 0 ' + largeArc + ' 1 ' + x2 + ',' + y2 + '" fill="none" stroke="' + color + '" stroke-width="3" opacity="0.8"/>';
+    }
+    
+    // Node circle
+    svg += '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + r + '" fill="' + color + '22" stroke="' + color + '" stroke-width="1.5"/>';
+    
+    // Count
+    svg += '<text x="' + node.x + '" y="' + (node.y + 4) + '" text-anchor="middle" fill="' + color + '" font-size="' + (r > 20 ? 11 : 9) + '" font-weight="700">' + d.count + '</text>';
+    
+    // Label (positioned outside circle)
+    const labelAngle = Math.atan2(node.y - cy, node.x - cx);
+    const labelR = r + 14;
+    const lx = node.x + labelR * Math.cos(labelAngle);
+    const ly = node.y + labelR * Math.sin(labelAngle);
+    const anchor = lx > cx ? 'start' : lx < cx ? 'end' : 'middle';
+    svg += '<text x="' + lx + '" y="' + (ly + 3) + '" text-anchor="' + anchor + '" fill="#94a3b8" font-size="9">' + d.name + '</text>';
+  }
+  
+  // Legend
+  svg += '<circle cx="20" cy="' + (H - 40) + '" r="8" fill="#8b5cf622" stroke="#8b5cf6"/>';
+  svg += '<text x="32" y="' + (H - 37) + '" fill="#94a3b8" font-size="9">节点大小=文章数</text>';
+  svg += '<line x1="14" y1="' + (H - 20) + '" x2="26" y2="' + (H - 20) + '" stroke="#334155" stroke-width="1"/>';
+  svg += '<text x="32" y="' + (H - 17) + '" fill="#94a3b8" font-size="9">连线=共享阶段</text>';
+  
+  svg += '</svg>';
+  el.innerHTML = svg;
+}
+
+function renderReadingFlow(){
+  if(!DATA) return;
+  const el = document.getElementById('sankey-container');
+  
+  const levelCounts = { unread: 0, read: 0, explained: 0, taught: 0, mastered: 0 };
+  for(const a of DATA.articles){
+    const lv = getLevel(a.entity);
+    if(!lv) levelCounts.unread++;
+    else levelCounts[lv]++;
+  }
+  const total = DATA.articles.length;
+  
+  const W = 700, H = 280, pad = 30;
+  const stages = [
+    { key: 'unread', label: '\u25CB \u672A\u8BFB', count: levelCounts.unread, color: '#475569' },
+    { key: 'read', label: '\uD83D\uDCD6 \u5DF2\u8BFB', count: levelCounts.read, color: '#06b6d4' },
+    { key: 'explained', label: '\u270D\uFE0F \u89E3\u91CA', count: levelCounts.explained, color: '#eab308' },
+    { key: 'taught', label: '\uD83C\uDF93 \u6559\u6388', count: levelCounts.taught, color: '#f97316' },
+    { key: 'mastered', label: '\uD83C\uDFC6 \u638C\u63E1', count: levelCounts.mastered, color: '#22c55e' },
+  ];
+  
+  const maxCount = Math.max(...stages.map(s => s.count), 1);
+  const maxBarH = H - pad * 2;
+  const barW = 50;
+  const gap = (W - pad * 2 - barW * stages.length) / (stages.length - 1);
+  
+  let svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" style="width:100%;max-width:700px;margin:0 auto;display:block" xmlns="http://www.w3.org/2000/svg">';
+  svg += '<rect width="' + W + '" height="' + H + '" fill="#111827" rx="8"/>';
+  
+  for(let i = 0; i < stages.length - 1; i++){
+    const s = stages[i], n = stages[i+1];
+    const x1 = pad + i * (barW + gap) + barW;
+    const x2 = pad + (i + 1) * (barW + gap);
+    const h1 = Math.max(4, (s.count / maxCount) * maxBarH);
+    const h2 = Math.max(4, (n.count / maxCount) * maxBarH);
+    const y1 = pad + (maxBarH - h1) / 2;
+    const y2 = pad + (maxBarH - h2) / 2;
+    const flowH = Math.min(h1, h2);
+    const flowY1 = y1 + (h1 - flowH) / 2;
+    const flowY2 = y2 + (h2 - flowH) / 2;
+    
+    const gid = 'g' + i;
+    svg += '<defs><linearGradient id="' + gid + '" x1="0" y1="0" x2="1" y2="0">';
+    svg += '<stop offset="0%" stop-color="' + s.color + '" stop-opacity="0.4"/>';
+    svg += '<stop offset="100%" stop-color="' + n.color + '" stop-opacity="0.4"/>';
+    svg += '</linearGradient></defs>';
+    
+    const cx1 = x1 + (x2 - x1) * 0.4;
+    const cx2 = x1 + (x2 - x1) * 0.6;
+    svg += '<path d="M' + x1 + ',' + flowY1 + ' C' + cx1 + ',' + flowY1 + ' ' + cx2 + ',' + flowY2 + ' ' + x2 + ',' + flowY2 + ' L' + x2 + ',' + (flowY2 + flowH) + ' C' + cx2 + ',' + (flowY2 + flowH) + ' ' + cx1 + ',' + (flowY1 + flowH) + ' ' + x1 + ',' + (flowY1 + flowH) + ' Z" fill="url(#' + gid + ')"/>';
+  }
+  
+  for(let i = 0; i < stages.length; i++){
+    const s = stages[i];
+    const x = pad + i * (barW + gap);
+    const h = Math.max(4, (s.count / maxCount) * maxBarH);
+    const y = pad + (maxBarH - h) / 2;
+    const pct = total ? Math.round(s.count / total * 100) : 0;
+    
+    svg += '<rect x="' + x + '" y="' + y + '" width="' + barW + '" height="' + h + '" rx="6" fill="' + s.color + '" opacity="0.85"/>';
+    svg += '<text x="' + (x + barW/2) + '" y="' + (y + h/2 + 4) + '" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">' + s.count + '</text>';
+    svg += '<text x="' + (x + barW/2) + '" y="' + (H - 8) + '" text-anchor="middle" fill="' + s.color + '" font-size="10" font-weight="600">' + s.label + '</text>';
+    svg += '<text x="' + (x + barW/2) + '" y="' + (y - 6) + '" text-anchor="middle" fill="#94a3b8" font-size="9">' + pct + '%</text>';
+  }
+  
+  svg += '<text x="' + (W/2) + '" y="16" text-anchor="middle" fill="#94a3b8" font-size="11">\u5B66\u4E60\u8FDB\u5EA6\u6F0F\u6597 \xB7 ' + total + ' \u7BC7\u6587\u7AE0</text>';
+  svg += '</svg>';
+  el.innerHTML = svg;
+}
+
+function renderCoverage(){
+  if(!DATA) return;
+  const el = document.getElementById('coverage-container');
+  
+  const chStats = [];
+  for(const [ch, name] of Object.entries(DATA.chapters)){
+    const arts = DATA.articles.filter(a => a.chapter === ch);
+    if(arts.length === 0) continue;
+    const read = arts.filter(a => getLevel(a.entity)).length;
+    const mastered = arts.filter(a => getLevel(a.entity) === 'mastered').length;
+    const pct = Math.round(read / arts.length * 100);
+    const mPct = Math.round(mastered / arts.length * 100);
+    chStats.push({ ch, name: name.replace(/^[^\s]+\s/, ''), total: arts.length, read, mastered, pct, mPct });
+  }
+  
+  chStats.sort((a, b) => b.pct - a.pct);
+  
+  const colors = {
+    'ch01': '#8b5cf6', 'ch02': '#6366f1', 'ch03': '#3b82f6', 'ch04': '#ef4444',
+    'ch05': '#f97316', 'ch06': '#eab308', 'ch07': '#22c55e', 'ch08': '#14b8a6',
+    'ch09': '#06b6d4', 'ch10': '#0ea5e9', 'ch11': '#a855f7', 'ch12': '#ec4899',
+    'ch13': '#f43f5e', 'ch14': '#d946ef', 'ch15': '#8b5cf6', 'ch16': '#6366f1',
+    'ch17': '#3b82f6', 'ch18': '#06b6d4', 'ch19': '#22c55e', 'ch20': '#f59e0b'
+  };
+  
+  let html = '';
+  for(const s of chStats){
+    const color = colors[s.ch] || '#8b5cf6';
+    html += '<div class="cov-row">';
+    html += '<span class="cov-label" style="color:' + color + '" title="' + s.name + '">' + s.name + '</span>';
+    html += '<div class="cov-bar-wrap">';
+    html += '<div class="cov-bar-fill" style="width:' + s.pct + '%;background:' + color + '"></div>';
+    html += '<div class="cov-bar-read" style="width:' + s.mPct + '%;background:' + color + ';opacity:.3;right:0;left:auto"></div>';
+    html += '</div>';
+    html += '<span class="cov-num">' + s.read + '/' + s.total + ' \xB7 ' + s.pct + '%</span>';
+    html += '</div>';
+  }
+  
+  const totalRead = chStats.reduce((s, c) => s + c.read, 0);
+  const totalAll = chStats.reduce((s, c) => s + c.total, 0);
+  const overallPct = totalAll ? Math.round(totalRead / totalAll * 100) : 0;
+  html += '<div style="margin-top:.8rem;padding-top:.5rem;border-top:1px solid #1e293b;font-size:.78rem;color:#94a3b8;text-align:center">';
+  html += '\u603B\u8986\u76D6\u7387: <b style="color:#8b5cf6">' + totalRead + '/' + totalAll + '</b> \u7BC7 \xB7 <b style="color:#22c55e">' + overallPct + '%</b>';
+  html += '</div>';
+  
+  el.innerHTML = html;
+}
+
+// Viz event handlers
+document.getElementById('viz-toggle').addEventListener('click', toggleViz);
+document.querySelectorAll('.viz-tab').forEach(tab => {
+  tab.addEventListener('click', () => switchVizTab(tab.dataset.tab));
+});
 
 // ── Start ─────────────────────────────────────────────────────
 init();

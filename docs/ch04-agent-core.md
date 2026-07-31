@@ -34,6 +34,31 @@ Karpathy 把它称为"从 Vibe Coding 到 Agentic Engineering"：不是让 AI �
 
 ---
 
+
+## 架构图
+
+```mermaid
+graph TB
+    subgraph "Agent 核心架构演化"
+        R[ReAct<br/>推理+行动] --> PE[Plan-and-Execute<br/>规划+执行]
+        PE --> RF[Reflection<br/>自省循环]
+        RF --> DW[Dynamic Workflows<br/>动态工作流]
+        DW --> MA[Multi-Agent<br/>多 Agent 协作]
+    end
+    subgraph "关键组件"
+        H[Harness<br/>编排层] --> M[Memory<br/>记忆层]
+        M --> S[Skill<br/>技能层]
+        S --> T[Tool/MCP<br/>工具层]
+    end
+    R & PE & RF --> H
+    DW & MA --> H
+    H -.->|"Big Harness > Big Model"| PE
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef infra fill:#d1fae5,stroke:#059669,color:#064e3b
+    class R,PE,RF,DW,MA core
+    class H,M,S,T infra
+```
+
 ## 本章内容
 
 - [001. 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始](ch04/001-agent)

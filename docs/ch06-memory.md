@@ -15,6 +15,33 @@
 
 ---
 
+## 架构图
+
+```mermaid
+graph TB
+    subgraph "三种记忆范式"
+        WM[Working Memory<br/>工作记忆<br/>上下文窗口] --> SM[Short-term Memory<br/>短期记忆<br/>Session 级]
+        SM --> PM[Long-term Memory<br/>长期记忆<br/>跨 Session]
+    end
+    subgraph "实现方案"
+        C1[Letta Code<br/>Agent 绑定] 
+        C2[Hermes Skill<br/>技能提炼]
+        C3[Memory Files<br/>文件持久化]
+    end
+    PM --> C1 & C2 & C3
+    subgraph "核心命题"
+        INS[权重冻结下<br/>外部状态层积累能力]
+    end
+    PM --> INS
+    classDef mem fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef impl fill:#d1fae5,stroke:#059669,color:#064e3b
+    classDef insight fill:#fef9c3,stroke:#ca8a04,color:#713f12
+    class WM,SM,PM mem
+    class C1,C2,C3 impl
+    class INS insight
+```
+
+
 ## 导读
 
 一个没有记忆的 Agent，每次对话都是一张白纸。

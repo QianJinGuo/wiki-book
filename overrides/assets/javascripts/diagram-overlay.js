@@ -34,31 +34,43 @@
   // Extract inline mermaid SVGs from the page (already rendered by MkDocs)
   function extractInlineMermaid() {
     const blocks = [];
-    // MkDocs Material renders mermaid blocks as SVGs inside pre.mermaid or .mermaid containers
+    // Collect mermaid blocks: rendered SVGs, or raw code for later rendering
     const mermaidContainers = document.querySelectorAll('pre.mermaid, .mermaid');
     
     mermaidContainers.forEach(function(container, idx) {
       // Find the SVG inside
       const svg = container.querySelector('svg') || (container.tagName === 'SVG' ? container : null);
-      if (svg) {
-        // Get title from preceding heading
-        let title = '图 ' + (idx + 1);
-        let prev = container.previousElementSibling;
-        for (let i = 0; i < 5 && prev; i++) {
-          if (prev.tagName && /^H[1-6]$/.test(prev.tagName)) {
-            title = prev.textContent.trim().slice(0, 40);
-            break;
-          }
-          prev = prev.previousElementSibling;
+      
+      // Get title from preceding heading
+      var title = '图 ' + (idx + 1);
+      var prev = container.previousElementSibling;
+      for (var i = 0; i < 5 && prev; i++) {
+        if (prev.tagName && /^H[1-6]$/.test(prev.tagName)) {
+          title = prev.textContent.trim().slice(0, 40);
+          break;
         }
-        
-        // Clone SVG and store it
+        prev = prev.previousElementSibling;
+      }
+      
+      if (svg) {
+        // Already rendered by MkDocs Material
         const svgClone = svg.cloneNode(true);
         blocks.push({ 
           title: title, 
           svg: svgClone.outerHTML,
           isSvg: true 
         });
+      } else {
+        // Not rendered yet — extract raw mermaid code for lazy rendering
+        var codeEl = container.querySelector('code');
+        var code = codeEl ? codeEl.textContent.trim() : container.textContent.trim();
+        if (code && code.length > 3) {
+          blocks.push({
+            title: title,
+            code: code,
+            isSvg: false
+          });
+        }
       }
     });
     

@@ -31,6 +31,36 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 
 ---
 
+
+## 架构图
+
+```mermaid
+graph TB
+    subgraph "Agent 技能栈"
+        SK[Skill<br/>可复用能力] --> TL[Tool<br/>原子操作]
+        TL --> MCP[MCP Protocol<br/>工具协议]
+    end
+    subgraph "技能生命周期"
+        D[Discovery<br/>发现] --> A[Acquisition<br/>习得]
+        A --> R[Refinement<br/>提炼]
+        R --> E[Evolution<br/>进化]
+    end
+    E -.-> D
+    SK --> D
+    subgraph "MCP 生态"
+        M1[Anthropic 12 模式]
+        M2[OpenClaw 工具链]
+        M3[社区 MCP Server]
+    end
+    MCP --> M1 & M2 & M3
+    classDef skill fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef lifecycle fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef mcp fill:#d1fae5,stroke:#059669,color:#064e3b
+    class SK,TL,MCP skill
+    class D,A,R,E lifecycle
+    class M1,M2,M3 mcp
+```
+
 ## 本章内容
 
 - [001. Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理](ch07/001-skill-hub-ai-winty-q-3-4-6)
