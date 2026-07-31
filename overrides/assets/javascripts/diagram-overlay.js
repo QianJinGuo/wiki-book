@@ -31,15 +31,19 @@
 
   // ════════════════════════════════════════════════════
 
-  // Extract inline mermaid blocks from the page
+  // Extract inline mermaid SVGs from the page (already rendered by MkDocs)
   function extractInlineMermaid() {
     const blocks = [];
-    const mermaidPres = document.querySelectorAll('pre.mermaid');
-    mermaidPres.forEach(function(pre, idx) {
-      const code = pre.textContent || pre.innerText;
-      if (code && code.trim()) {
+    // MkDocs Material renders mermaid blocks as SVGs inside pre.mermaid or .mermaid containers
+    const mermaidContainers = document.querySelectorAll('pre.mermaid, .mermaid');
+    
+    mermaidContainers.forEach(function(container, idx) {
+      // Find the SVG inside
+      const svg = container.querySelector('svg') || (container.tagName === 'SVG' ? container : null);
+      if (svg) {
+        // Get title from preceding heading
         let title = '图 ' + (idx + 1);
-        let prev = pre.previousElementSibling;
+        let prev = container.previousElementSibling;
         for (let i = 0; i < 5 && prev; i++) {
           if (prev.tagName && /^H[1-6]$/.test(prev.tagName)) {
             title = prev.textContent.trim().slice(0, 40);
@@ -47,9 +51,17 @@
           }
           prev = prev.previousElementSibling;
         }
-        blocks.push({ title: title, code: code.trim() });
+        
+        // Clone SVG and store it
+        const svgClone = svg.cloneNode(true);
+        blocks.push({ 
+          title: title, 
+          svg: svgClone.outerHTML,
+          isSvg: true 
+        });
       }
     });
+    
     return blocks.length > 0 ? blocks : null;
   }
   // Resizable + Draggable overlay
@@ -302,6 +314,15 @@
 
     const body = document.getElementById('diagram-lb-body');
     currentZoom = 1;
+    
+    const d = diagrams[currentLbIndex];
+    
+    // If we have a pre-rendered SVG, use it directly
+    if (d.isSvg) {
+      body.innerHTML = '<div id="diagram-lb-wrapper" class="diagram-lb-wrapper">' + d.svg + '</div>';
+      body.scrollTop = 0;
+      return;
+    }
 
     // Clone the SVG from the rendered card
     const sourceCard = document.querySelector('#mermaid-d-' + currentLbIndex);
@@ -328,7 +349,7 @@
       }
     }
     // Fallback
-    body.innerHTML = '<div id="diagram-lb-wrapper" class="diagram-lb-wrapper"><pre class="mermaid" id="mermaid-lb">' + diagrams[currentLbIndex].code + '</pre></div>';
+    body.innerHTML = '<div id="diagram-lb-wrapper" class="diagram-lb-wrapper"><pre class="mermaid" id="mermaid-lb">' + d.code + '</pre></div>';
     if (mermaidAPI) mermaidAPI.run({ querySelector: '#mermaid-lb' }).catch(function() {});
   }
 
@@ -362,7 +383,9 @@
           '<span class="diagram-card-title">' + (i + 1) + '. ' + d.title + '</span>' +
           '<button class="diagram-card-zoom" title="放大查看">🔍</button>' +
         '</div>' +
-        '<div class="diagram-card-body"><pre class="mermaid" id="mermaid-d-' + i + '">' + d.code + '</pre></div>';
+        d.isSvg 
+        ? '<div class="diagram-card-body">' + d.svg + '</div>'
+        : '<div class="diagram-card-body"><pre class="mermaid" id="mermaid-d-' + i + '">' + d.code + '</pre></div>';
       grid.appendChild(card);
     }
     body.appendChild(grid);
@@ -376,15 +399,20 @@
       if (card) openLightbox(parseInt(card.getAttribute('data-index')));
     });
 
-    try {
-      await mermaidAPI.run({ querySelector: '#diagram-body .mermaid' });
-    } catch(e) {
-      for (let i = 0; i < diagrams.length; i++) {
-        try {
-          const { svg } = await mermaidAPI.render('mermaid-fb-' + i, diagrams[i].code);
-          const el = document.getElementById('mermaid-d-' + i);
-          if (el) el.innerHTML = svg;
-        } catch(err) {}
+    // Only run mermaid for items that don't have pre-rendered SVGs
+    const needsRender = diagrams.some(d => !d.isSvg);
+    if (needsRender) {
+      try {
+        await mermaidAPI.run({ querySelector: '#diagram-body .mermaid' });
+      } catch(e) {
+        for (let i = 0; i < diagrams.length; i++) {
+          if (diagrams[i].isSvg) continue;
+          try {
+            const { svg } = await mermaidAPI.render('mermaid-fb-' + i, diagrams[i].code);
+            const el = document.getElementById('mermaid-d-' + i);
+            if (el) el.innerHTML = svg;
+          } catch(err) {}
+        }
       }
     }
     rendered = true;
