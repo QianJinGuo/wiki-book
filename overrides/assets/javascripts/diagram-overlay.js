@@ -30,6 +30,28 @@
   }
 
   // ════════════════════════════════════════════════════
+
+  // Extract inline mermaid blocks from the page
+  function extractInlineMermaid() {
+    const blocks = [];
+    const mermaidPres = document.querySelectorAll('pre.mermaid');
+    mermaidPres.forEach(function(pre, idx) {
+      const code = pre.textContent || pre.innerText;
+      if (code && code.trim()) {
+        let title = '图 ' + (idx + 1);
+        let prev = pre.previousElementSibling;
+        for (let i = 0; i < 5 && prev; i++) {
+          if (prev.tagName && /^H[1-6]$/.test(prev.tagName)) {
+            title = prev.textContent.trim().slice(0, 40);
+            break;
+          }
+          prev = prev.previousElementSibling;
+        }
+        blocks.push({ title: title, code: code.trim() });
+      }
+    });
+    return blocks.length > 0 ? blocks : null;
+  }
   // Resizable + Draggable overlay
   // ════════════════════════════════════════════════════
   function makeResizable(el, opts) {
@@ -546,7 +568,11 @@
   // ════════════════════════════════════════════════════
   async function init() {
     if (!isArticlePage()) return;
-    const data = await loadDiagrams();
+    // Try loading from JSON first, then fall back to inline mermaid blocks
+    let data = await loadDiagrams();
+    if (!data || data.length === 0) {
+      data = extractInlineMermaid();
+    }
     if (!data || data.length === 0) return;
     diagrams = data;
     injectCSS();
